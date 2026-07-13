@@ -13,6 +13,7 @@
 #include "battle_stat_change.h"
 #include "battle_move_resolution.h"
 #include "item.h"
+#include "banking_system.h"
 #include "item_menu.h"
 #include "util.h"
 #include "pokemon.h"
@@ -5319,6 +5320,7 @@ static void Cmd_getmoneyreward(void)
     CMD_ARGS();
 
     u32 money;
+    u32 deposit = 0;
     u8 sPartyLevel = 1;
 
     if (gBattleOutcome == B_OUTCOME_WON)
@@ -5326,6 +5328,13 @@ static void Cmd_getmoneyreward(void)
         money = GetTrainerMoneyToGive(TRAINER_BATTLE_PARAM.opponentA);
         if (gBattleTypeFlags & BATTLE_TYPE_TWO_OPPONENTS)
             money += GetTrainerMoneyToGive(TRAINER_BATTLE_PARAM.opponentB);
+
+        if (IsSavingMoney()) {
+            deposit = CalcAmountToDeposit(money);
+            money -= deposit;
+            TriggerBankingPurchase(deposit);
+            DepositAndTrackMoney(deposit);
+        }
         AddMoney(&gSaveBlock1Ptr->money, money);
     }
     else
@@ -5359,6 +5368,7 @@ static void Cmd_getmoneyreward(void)
     }
 
     PREPARE_WORD_NUMBER_BUFFER(gBattleTextBuff1, 5, money);
+    PREPARE_WORD_NUMBER_BUFFER(gBattleTextBuff2, 5, deposit);
     gBattlescriptCurrInstr = cmd->nextInstr;
 }
 
@@ -13882,6 +13892,7 @@ void BS_RestoreStatChangeQueue(void)
     gBattlescriptCurrInstr = cmd->nextInstr;
 }
 
+
 void BS_CatchAfterVictory(void)
 {
     NATIVE_ARGS();
@@ -14070,6 +14081,15 @@ static void Cmd_jumpifterrain(void)
 
 
     if (ret)
+        gBattlescriptCurrInstr = cmd->jumpInstr;
+    else
+        gBattlescriptCurrInstr = cmd->nextInstr;
+}
+
+void BS_JumpIfNotSavingMoney(void)
+{
+    NATIVE_ARGS(const u8 *jumpInstr);
+    if (!IsSavingMoney())
         gBattlescriptCurrInstr = cmd->jumpInstr;
     else
         gBattlescriptCurrInstr = cmd->nextInstr;
