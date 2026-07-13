@@ -721,7 +721,7 @@ static inline void CalcDynamicMoveDamage(struct DamageContext *ctx, struct Simul
     }
     else if (IsMultiHitMove(ctx->move))
     {
-        if (GetMoveEffect(ctx->move) == EFFECT_SPECIES_POWER_OVERRIDE && gBattleMons[ctx->battlerAtk].species == GetMoveSpeciesPowerOverride_Species(ctx->move))
+        if (effect == EFFECT_SPECIES_POWER_OVERRIDE && gBattleMons[ctx->battlerAtk].species == GetMoveSpeciesPowerOverride_Species(ctx->move))
         {
             u32 basePowerOverride = GetMoveSpeciesPowerOverride_NumOfHits(ctx->move);
             median *= basePowerOverride;
@@ -848,7 +848,10 @@ struct SimulatedDamage AI_CalcDamage(enum Move move, enum BattlerId battlerAtk, 
         return simDamage;
 
     if (moveEffect == EFFECT_NATURE_POWER)
+    {
         move = GetNaturePowerMove();
+        moveEffect = GetMoveEffect(move);
+    }
 
     // Temporarily enable gimmicks for damage calcs if planned
     if (gBattleStruct->gimmick.usableGimmick[battlerAtk] && GetActiveGimmick(battlerAtk) == GIMMICK_NONE
@@ -897,7 +900,6 @@ struct SimulatedDamage AI_CalcDamage(enum Move move, enum BattlerId battlerAtk, 
 
     ctx.isCrit = ShouldCalcCritDamage(&ctx);
     ctx.typeEffectivenessModifier = CalcTypeEffectivenessMultiplier(&ctx);
-
 
     u32 movePower = GetMovePower(move);
 
@@ -966,12 +968,12 @@ struct SimulatedDamage AI_CalcDamage(enum Move move, enum BattlerId battlerAtk, 
     // convert multiper to AI_EFFECTIVENESS_xX
     *typeEffectiveness = ctx.typeEffectivenessModifier;
 
+    // Undo temporary settings
     if (toggledGimmickAtk)
         SetActiveGimmick(battlerAtk, GIMMICK_NONE);
     if (toggledGimmickDef)
         SetActiveGimmick(battlerDef, GIMMICK_NONE);
 
-    // Undo temporary settings
     gBattleStruct->dynamicMoveType = TYPE_NONE;
     gBattleStruct->dynamicMoveCategory = DAMAGE_CATEGORY_NONE;
     gBattleStruct->battlerState[battlerAtk].ateBoost = FALSE;
@@ -4066,18 +4068,6 @@ bool32 IsTargetingPartner(enum BattlerId battlerAtk, enum BattlerId battlerDef)
     return ((battlerAtk) == (battlerDef ^ BIT_FLANK));
 }
 
-enum Move GetAllyChosenMove(enum BattlerId battlerId)
-{
-    enum BattlerId partnerBattler = BATTLE_PARTNER(battlerId);
-
-    if (!IsBattlerAlive(partnerBattler) || !IsAiBattlerAware(partnerBattler))
-        return MOVE_NONE;
-    else if (partnerBattler > battlerId) // Battler with the lower id chooses the move first.
-        return gAiLogicData->lastUsedMove[partnerBattler];
-    else
-        return GetBattlerChosenMove(partnerBattler);
-}
-
 bool32 AreMovesEquivalent(enum BattlerId battlerAtk, enum BattlerId battlerAtkPartner, enum Move move, enum Move partnerMove)
 {
     if (!IsBattlerAlive(battlerAtkPartner) || partnerMove == MOVE_NONE)
@@ -5371,7 +5361,7 @@ enum AIConsiderGimmick ShouldTeraFromCalcs(enum BattlerId battler, enum BattlerI
         {
             enum Move predictedMove = GetPredictedMove(battler, opposingBattler, gAiLogicData);
             // will we go first?
-            if (AI_WhoStrikesFirst(battler, opposingBattler, killingMove, predictedMove, CONSIDER_PRIORITY) == AI_IS_FASTER && GetBattleMovePriority(battler, gAiLogicData->abilities[battler], killingMove) >= GetBattleMovePriority(opposingBattler, gAiLogicData->abilities[opposingBattler], hardPunishingMove))
+            if (AI_IsFaster(battler, opposingBattler, killingMove, predictedMove, CONSIDER_PRIORITY) && GetBattleMovePriority(battler, gAiLogicData->abilities[battler], killingMove) >= GetBattleMovePriority(opposingBattler, gAiLogicData->abilities[opposingBattler], hardPunishingMove))
                 return USE_GIMMICK;
         }
     }
@@ -6452,6 +6442,120 @@ bool32 AI_CanAnyStatChange(enum BattlerId battlerAtk, enum BattlerId battlerDef,
 
             if (CanStatChange(&cv, &st))
                 return TRUE;
+        }
+    }
+
+    return FALSE;
+}
+
+static bool32 WillPartnerActBeforeOrAfter(enum BattlerId battler, enum BattlerId partner)
+{
+    battler = gAiLogicData->turnOrder[battler];
+    partner = gAiLogicData->turnOrder[partner];
+
+    if (battler + 1 == partner || battler - 1 == partner)
+        return TRUE;
+
+    return FALSE;
+}
+
+bool32 ShouldUseFusionMove(enum BattlerId battler)
+{
+    enum BattlerId partner = BATTLE_PARTNER(battler);
+    enum Move partnerMove = gAiLogicData->partnerMove;
+
+    if (!IsBattlerAlive(partner))
+        return FALSE;
+
+    if (!WillPartnerActBeforeOrAfter(battler, partner))
+        return FALSE;
+
+    if (gAiLogicData->partnerMoveSimulation)
+        return HasMoveWithEffect(partner, EFFECT_FUSION_COMBO);
+
+    if (GetMoveEffect(partnerMove) == EFFECT_FUSION_COMBO)
+        return TRUE;
+
+    return FALSE;
+}
+
+bool32 ShouldUseRound(enum BattlerId battler, enum BattleMoveEffects moveEffect)
+{
+    enum BattlerId partner = BATTLE_PARTNER(battler);
+    enum Move partnerMove = gAiLogicData->partnerMove;
+
+    if (!IsBattlerAlive(partner))
+        return FALSE;
+
+    // First battler check, so check moveset of partner
+    if (gAiLogicData->partnerMoveSimulation)
+        return HasMoveWithEffect(partner, moveEffect);
+
+    // Check if partner actually chose the combo move
+    if (GetMoveEffect(partnerMove) == moveEffect)
+        return TRUE;
+
+    return FALSE;
+}
+
+bool32 ShouldUsePledgeMove(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move)
+{
+    enum BattlerId partner = BATTLE_PARTNER(battlerAtk);
+    enum Move partnerMove = gAiLogicData->partnerMove;
+
+    u32 atkSide = GetBattlerSide(battlerAtk);
+    u32 defSide = GetBattlerSide(battlerDef);
+
+    if (gAiLogicData->partnerMoveSimulation)
+    {
+        switch (move)
+        {
+        case MOVE_GRASS_PLEDGE:
+            if (HasMove(partner, MOVE_FIRE_PLEDGE))
+                return gSideTimers[defSide].seaOfFireTimer == 0;
+            if (HasMove(partner, MOVE_WATER_PLEDGE))
+                return gSideTimers[defSide].swampTimer == 0;
+            break;
+        case MOVE_FIRE_PLEDGE:
+            if (HasMove(partner, MOVE_WATER_PLEDGE))
+                return gSideTimers[atkSide].rainbowTimer == 0;
+            if (HasMove(partner, MOVE_GRASS_PLEDGE))
+                return gSideTimers[defSide].seaOfFireTimer == 0;
+            break;
+        case MOVE_WATER_PLEDGE:
+            if (HasMove(partner, MOVE_GRASS_PLEDGE))
+                return gSideTimers[defSide].swampTimer == 0;
+            if (HasMove(partner, MOVE_FIRE_PLEDGE))
+                return gSideTimers[atkSide].rainbowTimer == 0;
+            break;
+        default:
+            break;
+        }
+    }
+    else if (GetMoveEffect(partnerMove) == EFFECT_PLEDGE)
+    {
+        switch (move)
+        {
+        case MOVE_GRASS_PLEDGE:
+            if (partnerMove == MOVE_FIRE_PLEDGE)
+                return gSideTimers[defSide].seaOfFireTimer == 0;
+            if (partnerMove == MOVE_WATER_PLEDGE)
+                return gSideTimers[defSide].swampTimer == 0;
+            break;
+        case MOVE_FIRE_PLEDGE:
+            if (partnerMove == MOVE_WATER_PLEDGE)
+                return gSideTimers[atkSide].rainbowTimer == 0;
+            if (partnerMove == MOVE_GRASS_PLEDGE)
+                return gSideTimers[defSide].seaOfFireTimer == 0;
+            break;
+        case MOVE_WATER_PLEDGE:
+            if (partnerMove == MOVE_GRASS_PLEDGE)
+                return gSideTimers[defSide].swampTimer == 0;
+            if (partnerMove == MOVE_FIRE_PLEDGE)
+                return gSideTimers[atkSide].rainbowTimer == 0;
+            break;
+        default:
+            break;
         }
     }
 
