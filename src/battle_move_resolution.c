@@ -3086,6 +3086,8 @@ static enum MoveEndResult MoveEndSetValues(struct BattleCalcValues *cv)
 
 static bool32 GetProtectBypassMethod(enum BattlerId battlerDef, enum Ability abilityAtk)
 {
+    if (IsBattlerUnaffectedByMove(battlerDef))
+        return PROTECT_BYPASS_NONE;
     if (MoveIgnoresProtect(gCurrentMove))
         return PROTECT_BYPASS_MOVE_IGNORES;
     if (GetProtectType(gProtectStructs[battlerDef].protected) == PROTECT_TYPE_SINGLE
@@ -3142,6 +3144,12 @@ static enum MoveEndResult MoveEndProtectLikeEffect(struct BattleCalcValues *cv)
      && (cv->abilities[cv->battlerAtk] == ABILITY_UNSEEN_FIST || cv->abilities[cv->battlerAtk] == ABILITY_PIERCING_DRILL)
      && IsMoveMakingContact(cv->battlerAtk, cv->battlerDef, cv->abilities[cv->battlerAtk], cv->holdEffects[cv->battlerAtk], cv->move)
      && GetConfig(B_UNSEEN_FIST_PIERCING_DRILL) <= GEN_9)
+    {
+        gBattleScripting.moveendState++;
+        return result;
+    }
+
+    if (gBattleStruct->unableToUseMove)
     {
         gBattleScripting.moveendState++;
         return result;
