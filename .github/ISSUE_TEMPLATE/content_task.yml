@@ -1,0 +1,51 @@
+name: Tarefa de conteúdo
+description: Planeje mapa, personagem, diálogo, batalha, arte ou localização.
+title: "[CONTENT] "
+labels: ["documentation"]
+body:
+  - type: dropdown
+    id: category
+    attributes:
+      label: Categoria
+      options:
+        - História e diálogo
+        - Mapa e evento
+        - Pokémon e batalha
+        - Arte e animação
+        - Localização
+        - Áudio
+        - Testes
+    validations:
+      required: true
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objetivo
+      description: Qual experiência ou necessidade esta tarefa atende?
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Critérios de aceitação
+      placeholder: Use uma lista verificável.
+    validations:
+      required: true
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependências e referências
+      description: Registre decisões, Issues, assets e licenças relacionados.
+  - type: dropdown
+    id: milestone
+    attributes:
+      label: Fase
+      options:
+        - M0 — Pré-produção
+        - M1 — Fundação técnica
+        - M2 — Laboratório
+        - M3 — Greybox
+        - M4 — Vertical slice
+        - Backlog futuro
+    validations:
+      required: true

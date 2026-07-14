@@ -1,0 +1,50 @@
+name: Bug do jogo
+description: Registre um erro reproduzível de build, mapa, evento, batalha ou texto.
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: O que aconteceu?
+      description: Descreva o comportamento observado e o comportamento esperado.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Passos para reproduzir
+      placeholder: |
+        1. Inicie um save novo...
+        2. Entre em...
+        3. Fale com...
+    validations:
+      required: true
+  - type: input
+    id: commit
+    attributes:
+      label: Commit ou versão
+      placeholder: SHA, tag ou nome da versão
+    validations:
+      required: true
+  - type: dropdown
+    id: language
+    attributes:
+      label: Idioma
+      options:
+        - pt-BR
+        - en
+        - Ambos
+        - Não se aplica
+    validations:
+      required: true
+  - type: input
+    id: emulator
+    attributes:
+      label: Emulador e versão
+      placeholder: mGBA 0.x
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Logs, imagens ou vídeo
+      description: Nunca anexe ROM, save privado ou credenciais.
