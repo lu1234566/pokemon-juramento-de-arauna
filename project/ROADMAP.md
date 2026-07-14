@@ -38,7 +38,7 @@ As estimativas consideram trabalho em tempo livre e serão revistas após o vert
 
 ## M2 — Laboratório de aprendizado
 
-- [ ] Alterar um diálogo.
+- [x] Alterar, compilar e testar visualmente um diálogo bilíngue.
 - [ ] Criar um NPC.
 - [ ] Modificar um mapa.
 - [ ] Criar uma batalha de treinador.

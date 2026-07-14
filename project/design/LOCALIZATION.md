@@ -38,7 +38,13 @@ data/text/arauna/
 
 `data/text/birch_speech.inc` seleciona exatamente uma fonte durante o build. O script `scripts/check_localization.py` confirma que os idiomas possuem os mesmos identificadores e placeholders e rejeita linhas acima do limite conservador do protótipo.
 
+O banco também contém as três strings da criação de personagem que o motor originalmente declarava em `src/strings.c`: a apresentação do Pokémon e as opções `GAROTO/GAROTA` ou `BOY/GIRL`. O validador exige explicitamente essas chaves para impedir que a introdução volte a misturar idiomas.
+
 O nome interno `Birch` e o sprite original permanecem placeholders técnicos. Eles não definem o pesquisador final de Arauna.
+
+### Limite atual do protótipo
+
+A localização termina ao concluir a criação do personagem. A tela de título de *Pokémon Emerald*, os mapas de Littleroot e os demais textos vanilla ainda são placeholders em inglês. Eles não serão traduzidos integralmente: o fluxo inicial de Hoenn será substituído pelo greybox autoral de Arauna, e todo conteúdo novo será criado simultaneamente em `pt-BR` e `en`.
 
 ### Limitação tipográfica conhecida
 
@@ -78,7 +84,8 @@ Os identificadores não devem conter o texto traduzido. Uma ferramenta de valida
 - [x] escolher organização compatível com o build;
 - [x] criar glossário inicial;
 - [x] implementar um diálogo de teste em cada idioma;
-- [ ] compilar as duas builds na CI;
+- [x] compilar as duas builds na CI;
+- [x] testar visualmente a introdução pt-BR, incluindo a variável do jogador;
 - [ ] medir diferença de tamanho e comportamento no emulador.
 
 ### Fase 2 — Vertical slice

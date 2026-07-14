@@ -16,10 +16,15 @@ SOURCES = {
 }
 MAX_VISIBLE_LINE_LENGTH = 32
 PLACEHOLDER_WIDTHS = {"PLAYER": 7}
+REQUIRED_RUNTIME_LABELS = {
+    "gText_ThisIsAPokemon",
+    "gText_Boy",
+    "gText_Girl",
+}
 
 LABEL_RE = re.compile(r"^([A-Za-z_][A-Za-z0-9_]*)::$")
 STRING_RE = re.compile(r'^\s*\.string\s+"(.*)"\s*$')
-PLACEHOLDER_RE = re.compile(r"\{([A-Za-z0-9_]+)\}")
+TOKEN_RE = re.compile(r"\{([^{}]+)\}")
 LINE_BREAK_RE = re.compile(r"\\[nlp]")
 CHARMAP_ENTRY_RE = re.compile(r"^'((?:\\.|[^'])*)'\s*=")
 
@@ -54,11 +59,14 @@ def parse_source(path: Path) -> tuple[list[str], dict[str, str]]:
 def expanded_length(line: str) -> int:
     line = line.replace("$", "")
 
-    def replace_placeholder(match: re.Match[str]) -> str:
-        name = match.group(1)
+    def replace_token(match: re.Match[str]) -> str:
+        token = match.group(1)
+        if " " in token:
+            return ""
+        name = token
         return "X" * PLACEHOLDER_WIDTHS.get(name, len(name) + 2)
 
-    return len(PLACEHOLDER_RE.sub(replace_placeholder, line))
+    return len(TOKEN_RE.sub(replace_token, line))
 
 
 def load_supported_characters() -> set[str]:
@@ -78,7 +86,7 @@ def load_supported_characters() -> set[str]:
 def validate_characters(language: str, texts: dict[str, str], supported: set[str]) -> list[str]:
     errors: list[str] = []
     for label, text in texts.items():
-        visible_text = PLACEHOLDER_RE.sub("", LINE_BREAK_RE.sub("", text))
+        visible_text = TOKEN_RE.sub("", LINE_BREAK_RE.sub("", text))
         unsupported = sorted({character for character in visible_text if character not in supported})
         if unsupported:
             rendered = ", ".join(f"U+{ord(character):04X} {character!r}" for character in unsupported)
@@ -106,16 +114,27 @@ def main() -> int:
     reference_labels, reference_texts = parsed[reference_language]
     errors: list[str] = []
 
+    missing_runtime_labels = REQUIRED_RUNTIME_LABELS - set(reference_labels)
+    if missing_runtime_labels:
+        errors.append(
+            "en: missing required runtime labels: "
+            + ", ".join(sorted(missing_runtime_labels))
+        )
+
     for language, (labels, texts) in parsed.items():
         if labels != reference_labels:
             errors.append(f"{language}: label order differs from {reference_language}")
 
+        for label, text in texts.items():
+            if not text.endswith("$"):
+                errors.append(f"{language}:{label}: localized string is not terminated with $")
+
         for label in set(reference_texts) & set(texts):
-            expected = Counter(PLACEHOLDER_RE.findall(reference_texts[label]))
-            actual = Counter(PLACEHOLDER_RE.findall(texts[label]))
+            expected = Counter(TOKEN_RE.findall(reference_texts[label]))
+            actual = Counter(TOKEN_RE.findall(texts[label]))
             if actual != expected:
                 errors.append(
-                    f"{language}:{label}: placeholders {dict(actual)} differ from "
+                    f"{language}:{label}: tokens {dict(actual)} differ from "
                     f"{reference_language} {dict(expected)}"
                 )
 
