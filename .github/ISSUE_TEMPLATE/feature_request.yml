@@ -1,0 +1,36 @@
+name: Proposta de sistema
+description: Proponha uma mecânica ou mudança técnica com impacto e escopo claros.
+title: "[FEATURE] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problema ou oportunidade
+      description: O que precisa ser resolvido antes de falar na solução?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposta
+    validations:
+      required: true
+  - type: textarea
+    id: player_impact
+    attributes:
+      label: Impacto para o jogador
+    validations:
+      required: true
+  - type: textarea
+    id: technical_impact
+    attributes:
+      label: Impacto técnico
+      description: Considere ROM, RAM, save, localização, mapas, testes e atualização upstream.
+  - type: textarea
+    id: smallest_version
+    attributes:
+      label: Menor versão funcional
+      description: Como testar a ideia sem implementar sua versão máxima?
+    validations:
+      required: true

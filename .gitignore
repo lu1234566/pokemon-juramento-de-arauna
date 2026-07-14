@@ -66,3 +66,18 @@ tools/aif2pcm/aif2pcm
 *.smolTM
 __pycache__
 .map_version
+
+# Pokémon: Juramento de Arauna — arquivos locais e distribuíveis
+*.sav
+*.state
+*.bps
+*.ups
+*.ips
+*.xdelta
+*.zip
+*.7z
+*.env
+.env.*
+dist/
+releases/
+local-roms/
