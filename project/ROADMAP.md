@@ -22,7 +22,7 @@ As estimativas consideram trabalho em tempo livre e serão revistas após o vert
 
 ## M1 — Fundação técnica
 
-**Estado:** em andamento.
+**Estado:** concluído.
 
 - [x] Fixar `pokeemerald-expansion` 1.16.2.
 - [x] Preservar histórico upstream.
@@ -34,7 +34,7 @@ As estimativas consideram trabalho em tempo livre e serão revistas após o vert
 - [x] Publicar branch e abrir PR de fundação.
 - [x] Integrar a fundação na branch `main`.
 - [x] Confirmar build e testes na CI.
-- [ ] Proteger `main` com o check `build-and-test`.
+- [x] Proteger `main` com os checks do projeto.
 
 ## M2 — Laboratório de aprendizado
 

@@ -19,7 +19,6 @@ concurrency:
 
 env:
   GAME_REVISION: 0
-  GAME_LANGUAGE: ENGLISH
   GAME_VERSION: EMERALD
   COMPARE: 0
   UNUSED_ERROR: 1
@@ -33,6 +32,8 @@ jobs:
         uses: actions/checkout@v4
       - name: Reject ROMs, saves, patches and secrets
         run: bash scripts/check_no_proprietary_files.sh
+      - name: Validate localized text sources
+        run: python3 scripts/check_localization.py
 
   build-and-test:
     runs-on: ubuntu-latest
@@ -73,13 +74,18 @@ jobs:
             tools/mgba-rom-test-hydra/mgba-rom-test-hydra
           key: arauna-tools-${{ runner.os }}-${{ hashFiles('tools/*/Makefile', 'tools/**/*.c', 'tools/**/*.cpp', 'tools/**/*.h') }}
 
-      - name: Build Emerald
-        run: make -j$(nproc) -O all
+      - name: Build English Emerald
+        run: make ARAUNA_LANGUAGE=ENGLISH -j$(nproc) -O all
+
+      - name: Build Portuguese Emerald
+        run: make ARAUNA_LANGUAGE=PORTUGUESE -j$(nproc) -O all
 
       - name: Run engine tests
         env:
           TEST: 1
-        run: make -j$(nproc) check
+        run: make ARAUNA_LANGUAGE=ENGLISH -j$(nproc) check
 
-      - name: Confirm generated ROM is not uploaded
-        run: test -f pokeemerald.gba
+      - name: Confirm both generated ROMs exist locally
+        run: |
+          test -f pokeemerald-en.gba
+          test -f pokeemerald-ptbr.gba
