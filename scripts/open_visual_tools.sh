@@ -21,6 +21,7 @@ fi
 readonly ACTION="$1"
 readonly REPO_ROOT="$(git rev-parse --show-toplevel)"
 readonly LOG_DIR="${HOME}/.cache/arauna-visual"
+readonly MGBA_CONFIG_ROOT="${HOME}/.config/arauna-mgba-sdl"
 
 export PATH="${HOME}/.local/bin:/usr/local/games:/usr/games:${PATH}"
 export DISPLAY="${DISPLAY:-:1}"
@@ -44,7 +45,7 @@ open_porymap() {
 }
 
 open_mgba() {
-    if ! command -v mgba-qt >/dev/null 2>&1; then
+    if ! command -v mgba >/dev/null 2>&1; then
         printf 'mGBA não encontrado. Execute: bash .devcontainer/setup-visual-tools.sh\n' >&2
         exit 1
     fi
@@ -59,9 +60,28 @@ open_mgba() {
         exit 1
     fi
 
-    nohup mgba-qt "${rom_path}" >"${LOG_DIR}/mgba.log" 2>&1 </dev/null &
-    printf '%s\n' "$!" >"${LOG_DIR}/mgba.pid"
-    printf 'mGBA iniciado com %s. Log: %s\n' "${rom_path}" "${LOG_DIR}/mgba.log"
+    mkdir -p "${MGBA_CONFIG_ROOT}"
+
+    # O frontend Qt apresenta uma tela branca no desktop noVNC. O frontend SDL,
+    # com vídeo X11 e renderização por software, funciona no mesmo ambiente.
+    # O driver de áudio dummy mantém a sincronização sem depender de ALSA.
+    nohup env \
+        DISPLAY="${DISPLAY}" \
+        XDG_CONFIG_HOME="${MGBA_CONFIG_ROOT}" \
+        SDL_VIDEODRIVER=x11 \
+        SDL_RENDER_DRIVER=software \
+        SDL_AUDIODRIVER=dummy \
+        LIBGL_ALWAYS_SOFTWARE=1 \
+        mgba \
+        -3 \
+        -C fullscreen=0 \
+        -C pauseOnFocusLost=0 \
+        -C pauseOnMinimize=0 \
+        "${rom_path}" \
+        >"${LOG_DIR}/mgba-sdl.log" 2>&1 </dev/null &
+    printf '%s\n' "$!" >"${LOG_DIR}/mgba-sdl.pid"
+    printf 'mGBA SDL iniciado em janela com %s. Log: %s\n' \
+        "${rom_path}" "${LOG_DIR}/mgba-sdl.log"
 }
 
 case "${ACTION}" in
