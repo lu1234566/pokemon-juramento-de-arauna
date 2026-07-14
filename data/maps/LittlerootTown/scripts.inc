@@ -242,7 +242,19 @@ LittlerootTown_EventScript_SetRivalBirchPosForDexUpgradeFemale::
 	end
 
 LittlerootTown_EventScript_FatMan::
-	msgbox LittlerootTown_Text_CanUsePCToStoreItems, MSGBOX_NPC
+	lock
+	faceplayer
+	msgbox AraunaMapLab_Text_EntryPrompt, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, LittlerootTown_EventScript_AraunaMapLabDeclined
+	setflag FLAG_ARAUNA_MAP_LAB_VISITED
+	closemessage
+	warp MAP_ARAUNA_MAP_LAB, 255, 10, 13
+	waitstate
+	end
+
+LittlerootTown_EventScript_AraunaMapLabDeclined::
+	msgbox AraunaMapLab_Text_EntryDeclined, MSGBOX_DEFAULT
+	release
 	end
 
 LittlerootTown_EventScript_Boy::
@@ -1013,4 +1025,3 @@ LittlerootTown_Text_BirchSomethingToShowYouAtLab:
 	.string "I gave you?\p"
 	.string "I have something to show you.\n"
 	.string "Let's go to my LAB.$"
-
