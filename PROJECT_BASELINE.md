@@ -22,3 +22,14 @@ Engine upgrades must be performed in an isolated branch, one released version at
 ## First local build observation
 
 The source was checked out exactly at the tag above. The initial build command reached dependency discovery and correctly reported that the disposable workspace lacked `arm-none-eabi-gcc`, `pkg-config` and `libpng` headers. The filesystem did not permit system package installation, so the clean baseline build is delegated to GitHub Actions and must pass before engine modifications are merged.
+
+## Remote foundation
+
+- Repository: `lu1234566/pokemon-juramento-de-arauna`
+- Visibility: private during initial development
+- Stable branch: `main`
+- Foundation branch: `agent/bootstrap-project`
+- Foundation pull request: `#1`
+- First remote foundation commit: `c862d5903fd768bdd09dcb70d6e276a62a5dc263`
+
+The repository was imported with upstream history intact. The project branches were then created directly from the fixed 1.16.2 baseline.

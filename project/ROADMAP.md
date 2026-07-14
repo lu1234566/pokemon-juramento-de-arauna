@@ -30,8 +30,8 @@ As estimativas consideram trabalho em tempo livre e serão revistas após o vert
 - [x] Documentar baseline.
 - [x] Proteger o repositório contra ROMs, saves, patches e segredos.
 - [x] Preparar CI do alvo Emerald sem upload da ROM.
-- [ ] Criar repositório privado no GitHub.
-- [ ] Publicar branch e abrir PR de fundação.
+- [x] Criar repositório privado no GitHub.
+- [x] Publicar branch e abrir PR de fundação.
 - [ ] Confirmar build e testes na CI.
 - [ ] Proteger `main` com o check `build-and-test`.
 
