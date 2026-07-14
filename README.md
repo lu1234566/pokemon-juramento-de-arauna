@@ -2,7 +2,7 @@
 
 ROM hack bilíngue de Pokémon Emerald ambientada em uma região original inspirada no sul do Brasil. O projeto combina fantasia sombria, investigação, batalhas planejadas e escolhas narrativas por meio do Sistema de Vínculos.
 
-> Estado atual: pré-produção e fundação técnica. Ainda não há uma versão pública jogável.
+> Estado atual: pré-produção, fundação técnica validada e primeiro protótipo bilíngue em desenvolvimento. Ainda não há uma versão pública jogável.
 
 ## Visão
 
@@ -39,10 +39,17 @@ O histórico upstream foi preservado. O remoto `upstream` deve continuar apontan
 Dependências e instruções de compilação continuam documentadas no [INSTALL.md](INSTALL.md) original. Depois de preparar o ambiente:
 
 ```bash
-make -j$(nproc)
+make ARAUNA_LANGUAGE=PORTUGUESE -j$(nproc)
+make ARAUNA_LANGUAGE=ENGLISH -j$(nproc)
 ```
 
-A CI compila o alvo Emerald e executa os testes oficiais sem publicar a ROM como artefato.
+Os comandos geram, respectivamente, `pokeemerald-ptbr.gba` e `pokeemerald-en.gba` em diretórios de build separados. A CI compila os dois idiomas e executa os testes oficiais em inglês sem publicar nenhuma ROM como artefato.
+
+Valide os textos localizados antes de compilar:
+
+```bash
+python3 scripts/check_localization.py
+```
 
 ### Branches
 

@@ -15,18 +15,34 @@ Não serão mantidas branches permanentes por idioma.
 - Nomes, termos e pronomes são registrados no glossário.
 - Uma mudança narrativa não é concluída até existir nos dois idiomas ou estar marcada explicitamente como pendente.
 
-## Estrutura pretendida
+## Estrutura implementada no primeiro protótipo
 
-A estrutura final será definida depois de mapear o sistema de textos do motor. O objetivo conceitual é equivalente a:
+O idioma é escolhido em tempo de compilação. As duas builds usam o mesmo commit, lógica e dados compartilhados:
 
-```text
-project/localization/
-  glossary.csv
-  pt-BR/
-  en/
+```bash
+make ARAUNA_LANGUAGE=PORTUGUESE -j$(nproc)
+make ARAUNA_LANGUAGE=ENGLISH -j$(nproc)
 ```
 
-Arquivos compilados pelo motor poderão permanecer nas pastas nativas. A organização acima representa a fonte autoral, não uma alteração antecipada do pipeline.
+Os resultados são `pokeemerald-ptbr.gba` e `pokeemerald-en.gba`. Cada idioma possui seu próprio diretório de objetos para impedir que arquivos compilados de uma língua sejam reutilizados pela outra.
+
+Os primeiros textos autorais estão organizados assim:
+
+```text
+data/text/arauna/
+  en/
+    birch_speech.inc
+  pt_br/
+    birch_speech.inc
+```
+
+`data/text/birch_speech.inc` seleciona exatamente uma fonte durante o build. O script `scripts/check_localization.py` confirma que os idiomas possuem os mesmos identificadores e placeholders e rejeita linhas acima do limite conservador do protótipo.
+
+O nome interno `Birch` e o sprite original permanecem placeholders técnicos. Eles não definem o pesquisador final de Arauna.
+
+### Limitação tipográfica conhecida
+
+O charmap herdado contém vários acentos latinos, mas ainda não possui glifos para `ã`, `õ` e suas formas maiúsculas. O protótipo usa redação natural que evita temporariamente esses caracteres; a versão pública deverá implementar e testar os glifos em vez de remover acentos corretos do português.
 
 ## Identificadores
 
@@ -58,11 +74,12 @@ Os identificadores não devem conter o texto traduzido. Uma ferramenta de valida
 
 ### Fase 1 — Fundação
 
-- inventariar textos e charmap;
-- escolher organização compatível com Poryscript e o build;
-- criar glossário;
-- compilar um diálogo de teste em cada idioma;
-- medir diferença de tamanho e comportamento.
+- [x] inventariar o fluxo da introdução e o charmap;
+- [x] escolher organização compatível com o build;
+- [x] criar glossário inicial;
+- [x] implementar um diálogo de teste em cada idioma;
+- [ ] compilar as duas builds na CI;
+- [ ] medir diferença de tamanho e comportamento no emulador.
 
 ### Fase 2 — Vertical slice
 
