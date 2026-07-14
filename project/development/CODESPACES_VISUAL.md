@@ -9,7 +9,7 @@ Este ambiente permite editar mapas no Porymap e testar a ROM no mGBA diretamente
 | Ubuntu | Dev Container `ubuntu-24.04` | Base reproduzível do Codespace |
 | Desktop | `desktop-lite:1`, noVNC `1.2.0` | Interface gráfica pelo navegador |
 | Porymap | tag `6.3.1` oficial | Edição de mapas, eventos e conexões |
-| mGBA | pacote `mgba-qt` do Ubuntu 24.04 | Teste da ROM gerada localmente |
+| mGBA | pacotes `mgba-sdl` e `mgba-qt` do Ubuntu 24.04 | Teste da ROM gerada localmente |
 | ARM GCC | pacotes do Ubuntu 24.04 | Compilação do projeto |
 
 O Porymap é compilado em `~/.local/share/arauna-tools`, fora do repositório. ROMs, saves e outros arquivos proprietários continuam proibidos no Git.
@@ -57,6 +57,20 @@ Para testar o build português no mGBA:
 bash scripts/open_visual_tools.sh mgba pokeemerald-ptbr.gba
 ```
 
+O comando usa o frontend SDL em uma janela de tamanho 3x. Essa é a variante
+compatível com o desktop noVNC: o vídeo é renderizado por software e o áudio é
+desativado, pois o Codespace não possui um dispositivo de som. O jogo continua
+sincronizado na velocidade normal.
+
+Controles padrão do frontend SDL:
+
+| Game Boy Advance | Teclado |
+| --- | --- |
+| Direcional | Setas |
+| A / B | `X` / `Z` |
+| L / R | `A` / `S` |
+| Start / Select | `Enter` / `Backspace` |
+
 Para abrir as duas ferramentas de uma vez:
 
 ```bash
@@ -88,7 +102,7 @@ Se um programa não aparecer, mantenha a página da porta `6080` aberta e rode n
 
 ```text
 ~/.cache/arauna-visual/porymap.log
-~/.cache/arauna-visual/mgba.log
+~/.cache/arauna-visual/mgba-sdl.log
 ```
 
 Verificações úteis:
@@ -96,9 +110,15 @@ Verificações úteis:
 ```bash
 echo "$DISPLAY"
 command -v porymap
+command -v mgba
 command -v mgba-qt
 command -v arm-none-eabi-gcc
 ```
+
+Se a janela do mGBA precisar ser encerrada pelo terminal, execute `pkill -x mgba`.
+Se ela for aberta em tela cheia por uma configuração antiga, `Alt+Enter` alterna
+de volta para o modo janela; o lançador do projeto usa uma configuração isolada
+para impedir que isso se repita.
 
 Se faltar alguma ferramenta, execute novamente `bash .devcontainer/setup-visual-tools.sh`. Se a porta `6080` não existir, reconstrua o container para que o recurso `desktop-lite` seja aplicado.
 
