@@ -7,10 +7,16 @@ gText_Birch_Welcome::
 	.string "PROFESSOR.\p"
 	.string "$"
 
-gText_Birch_Pokemon::
-	.string "This is what we call a POKéMON.\p"
-	.string "\n"
+gText_ThisIsAPokemon::
+	.string "This is what we call a POKéMON."
+	.string "{PAUSE 96}\p"
 	.string "$"
+
+gText_Boy::
+	.string "BOY$"
+
+gText_Girl::
+	.string "GIRL$"
 
 gText_Birch_MainSpeech::
 	.string "In ARAUNA, people and POKéMON\n"
