@@ -9,6 +9,8 @@ readonly PORYMAP_BUILD="${TOOLS_ROOT}/porymap-${PORYMAP_VERSION}/build"
 readonly PORYMAP_INSTALL="${TOOLS_ROOT}/porymap-${PORYMAP_VERSION}/install"
 readonly LOCAL_BIN="${HOME}/.local/bin"
 
+export PATH="${LOCAL_BIN}:/usr/local/games:/usr/games:${PATH}"
+
 printf 'Instalando dependências de compilação e ferramentas visuais...\n'
 sudo apt-get update
 sudo DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
