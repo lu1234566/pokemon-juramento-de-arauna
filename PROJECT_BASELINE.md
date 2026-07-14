@@ -29,7 +29,10 @@ The source was checked out exactly at the tag above. The initial build command r
 - Visibility: private during initial development
 - Stable branch: `main`
 - Foundation branch: `agent/bootstrap-project`
-- Foundation pull request: `#1`
+- Foundation pull request: `#1` (merged)
 - First remote foundation commit: `c862d5903fd768bdd09dcb70d6e276a62a5dc263`
+- Merge commit on `main`: `f0f2f1dc12932de23c449fda4d6e727059994212`
 
 The repository was imported with upstream history intact. The project branches were then created directly from the fixed 1.16.2 baseline.
+
+CI confirmation is tracked in issue `#4` and in a focused follow-up pull request. The workflow also supports manual runs so the pinned baseline can be revalidated independently of a source change.
