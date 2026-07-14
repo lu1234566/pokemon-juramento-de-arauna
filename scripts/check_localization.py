@@ -10,9 +10,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 CHARMAP = ROOT / "charmap.txt"
-SOURCES = {
-    "en": ROOT / "data/text/arauna/en/birch_speech.inc",
-    "pt-BR": ROOT / "data/text/arauna/pt_br/birch_speech.inc",
+SOURCE_DIRECTORIES = {
+    "en": ROOT / "data/text/arauna/en",
+    "pt-BR": ROOT / "data/text/arauna/pt_br",
 }
 MAX_VISIBLE_LINE_LENGTH = 32
 PLACEHOLDER_WIDTHS = {"PLAYER": 7}
@@ -29,29 +29,31 @@ LINE_BREAK_RE = re.compile(r"\\[nlp]")
 CHARMAP_ENTRY_RE = re.compile(r"^'((?:\\.|[^'])*)'\s*=")
 
 
-def parse_source(path: Path) -> tuple[list[str], dict[str, str]]:
+def parse_sources(paths: list[Path]) -> tuple[list[str], dict[str, str]]:
     labels: list[str] = []
     text_by_label: dict[str, list[str]] = {}
     current_label: str | None = None
 
-    for line_number, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
-        label_match = LABEL_RE.match(line)
-        if label_match:
-            current_label = label_match.group(1)
-            if current_label in text_by_label:
-                raise ValueError(f"{path}:{line_number}: duplicate label {current_label}")
-            labels.append(current_label)
-            text_by_label[current_label] = []
-            continue
+    for path in paths:
+        current_label = None
+        for line_number, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
+            label_match = LABEL_RE.match(line)
+            if label_match:
+                current_label = label_match.group(1)
+                if current_label in text_by_label:
+                    raise ValueError(f"{path}:{line_number}: duplicate label {current_label}")
+                labels.append(current_label)
+                text_by_label[current_label] = []
+                continue
 
-        string_match = STRING_RE.match(line)
-        if string_match:
-            if current_label is None:
-                raise ValueError(f"{path}:{line_number}: string without a label")
-            text_by_label[current_label].append(string_match.group(1))
+            string_match = STRING_RE.match(line)
+            if string_match:
+                if current_label is None:
+                    raise ValueError(f"{path}:{line_number}: string without a label")
+                text_by_label[current_label].append(string_match.group(1))
 
     if not labels:
-        raise ValueError(f"{path}: no localized labels found")
+        raise ValueError("no localized labels found")
 
     return labels, {label: "".join(parts) for label, parts in text_by_label.items()}
 
@@ -108,7 +110,11 @@ def validate_line_lengths(language: str, texts: dict[str, str]) -> list[str]:
 
 
 def main() -> int:
-    parsed = {language: parse_source(path) for language, path in SOURCES.items()}
+    sources = {
+        language: sorted(directory.glob("*.inc"))
+        for language, directory in SOURCE_DIRECTORIES.items()
+    }
+    parsed = {language: parse_sources(paths) for language, paths in sources.items()}
     supported_characters = load_supported_characters()
     reference_language = "en"
     reference_labels, reference_texts = parsed[reference_language]
