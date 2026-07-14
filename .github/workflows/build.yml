@@ -34,6 +34,11 @@ jobs:
         run: bash scripts/check_no_proprietary_files.sh
       - name: Validate localized text sources
         run: python3 scripts/check_localization.py
+      - name: Validate Codespaces configuration
+        run: |
+          python3 -m json.tool .devcontainer/devcontainer.json >/dev/null
+          bash -n .devcontainer/setup-visual-tools.sh
+          bash -n scripts/open_visual_tools.sh
 
   build-and-test:
     runs-on: ubuntu-latest

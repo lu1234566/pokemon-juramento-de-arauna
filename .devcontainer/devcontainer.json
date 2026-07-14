@@ -1,0 +1,25 @@
+{
+  "name": "Pokémon: Juramento de Arauna",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
+  "features": {
+    "ghcr.io/devcontainers/features/desktop-lite:1": {
+      "noVncVersion": "1.2.0",
+      "password": "vscode",
+      "webPort": "6080",
+      "vncPort": "5901"
+    }
+  },
+  "forwardPorts": [6080],
+  "portsAttributes": {
+    "6080": {
+      "label": "Arauna — ambiente visual",
+      "onAutoForward": "notify"
+    },
+    "5901": {
+      "label": "VNC interno",
+      "onAutoForward": "ignore"
+    }
+  },
+  "postCreateCommand": "bash .devcontainer/setup-visual-tools.sh",
+  "remoteUser": "vscode"
+}

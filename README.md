@@ -51,6 +51,10 @@ Valide os textos localizados antes de compilar:
 python3 scripts/check_localization.py
 ```
 
+### Ambiente visual no Chromebook
+
+O Codespace pode oferecer um desktop privado no navegador com Porymap e mGBA. As instruções de ativação, uso seguro e solução de problemas estão no [manual do ambiente visual](project/development/CODESPACES_VISUAL.md).
+
 ### Branches
 
 - `main`: estado estável e compilável.
