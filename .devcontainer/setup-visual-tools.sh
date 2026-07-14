@@ -25,6 +25,7 @@ sudo DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
     libpng-dev \
     mesa-utils \
     mgba-qt \
+    mgba-sdl \
     pkg-config \
     python3 \
     qt6-base-dev \
@@ -73,10 +74,12 @@ fi
 ln -sfn "${PORYMAP_INSTALL}/porymap" "${LOCAL_BIN}/porymap"
 
 command -v arm-none-eabi-gcc >/dev/null
+command -v mgba >/dev/null
 command -v mgba-qt >/dev/null
 test -x "${LOCAL_BIN}/porymap"
 
 printf '\nAmbiente visual pronto.\n'
 printf 'Porymap: %s\n' "${LOCAL_BIN}/porymap"
-printf 'mGBA:    %s\n' "$(command -v mgba-qt)"
+printf 'mGBA SDL: %s\n' "$(command -v mgba)"
+printf 'mGBA Qt:  %s\n' "$(command -v mgba-qt)"
 printf 'Manual:  project/development/CODESPACES_VISUAL.md\n'
