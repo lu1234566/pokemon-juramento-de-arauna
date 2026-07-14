@@ -32,6 +32,7 @@ As estimativas consideram trabalho em tempo livre e serão revistas após o vert
 - [x] Preparar CI do alvo Emerald sem upload da ROM.
 - [x] Criar repositório privado no GitHub.
 - [x] Publicar branch e abrir PR de fundação.
+- [x] Integrar a fundação na branch `main`.
 - [ ] Confirmar build e testes na CI.
 - [ ] Proteger `main` com o check `build-and-test`.
 
