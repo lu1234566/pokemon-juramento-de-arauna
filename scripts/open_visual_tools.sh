@@ -22,7 +22,7 @@ readonly ACTION="$1"
 readonly REPO_ROOT="$(git rev-parse --show-toplevel)"
 readonly LOG_DIR="${HOME}/.cache/arauna-visual"
 
-export PATH="${HOME}/.local/bin:${PATH}"
+export PATH="${HOME}/.local/bin:/usr/local/games:/usr/games:${PATH}"
 export DISPLAY="${DISPLAY:-:1}"
 export LIBGL_ALWAYS_SOFTWARE="${LIBGL_ALWAYS_SOFTWARE:-1}"
 export QT_X11_NO_MITSHM="${QT_X11_NO_MITSHM:-1}"
