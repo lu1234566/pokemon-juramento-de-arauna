@@ -72,7 +72,7 @@
     },
     {
       "x": 18,
-      "y": 13,
+      "y": 10,
       "elevation": 3,
       "dest_map": "MAP_ARAUNA_MIST_ROUTE",
       "dest_warp_id": "0"
@@ -100,7 +100,7 @@
     {
       "type": "trigger",
       "x": 19,
-      "y": 13,
+      "y": 10,
       "elevation": 3,
       "var": "VAR_TEMP_0",
       "var_value": "0",
