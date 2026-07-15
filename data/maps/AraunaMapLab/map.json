@@ -55,7 +55,57 @@
       "flag": "0"
     }
   ],
-  "warp_events": [],
-  "coord_events": [],
+  "warp_events": [
+    {
+      "x": 5,
+      "y": 6,
+      "elevation": 3,
+      "dest_map": "MAP_ARAUNA_PLAYER_HOUSE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 5,
+      "y": 12,
+      "elevation": 3,
+      "dest_map": "MAP_ARAUNA_RESEARCH_CENTER",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 17,
+      "y": 11,
+      "elevation": 3,
+      "dest_map": "MAP_ARAUNA_MIST_ROUTE",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 5,
+      "y": 5,
+      "elevation": 3,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "AraunaMapLab_EventScript_EnterPlayerHouse"
+    },
+    {
+      "type": "trigger",
+      "x": 5,
+      "y": 13,
+      "elevation": 3,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "AraunaMapLab_EventScript_EnterResearchCenter"
+    },
+    {
+      "type": "trigger",
+      "x": 17,
+      "y": 10,
+      "elevation": 3,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "AraunaMapLab_EventScript_EnterMistRoute"
+    }
+  ],
   "bg_events": []
 }

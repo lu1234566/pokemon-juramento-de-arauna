@@ -57,3 +57,18 @@ AraunaMapLab_EventScript_Nilo::
 AraunaMapLab_EventScript_NeedPartner::
 	msgbox AraunaMapLab_Text_NeedPartner, MSGBOX_NPC
 	end
+
+AraunaMapLab_EventScript_EnterPlayerHouse::
+	warp MAP_ARAUNA_PLAYER_HOUSE, 255, 8, 7
+	waitstate
+	end
+
+AraunaMapLab_EventScript_EnterResearchCenter::
+	warp MAP_ARAUNA_RESEARCH_CENTER, 255, 6, 11
+	waitstate
+	end
+
+AraunaMapLab_EventScript_EnterMistRoute::
+	warp MAP_ARAUNA_MIST_ROUTE, 255, 10, 18
+	waitstate
+	end

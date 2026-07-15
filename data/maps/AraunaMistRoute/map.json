@@ -1,0 +1,73 @@
+{
+  "id": "MAP_ARAUNA_MIST_ROUTE",
+  "name": "AraunaMistRoute",
+  "layout": "LAYOUT_ARAUNA_MIST_ROUTE",
+  "music": "MUS_ROUTE101",
+  "region": "REGION_HOENN",
+  "region_map_section": "MAPSEC_ROUTE_101",
+  "requires_flash": false,
+  "weather": "WEATHER_FOG_HORIZONTAL",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 10,
+      "y": 18,
+      "elevation": 3,
+      "dest_map": "MAP_ARAUNA_MAP_LAB",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 10,
+      "y": 1,
+      "elevation": 3,
+      "dest_map": "MAP_ARAUNA_FIRST_LINK_RUIN",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 10,
+      "y": 19,
+      "elevation": 3,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "AraunaMistRoute_EventScript_ReturnToVillage"
+    },
+    {
+      "type": "trigger",
+      "x": 11,
+      "y": 19,
+      "elevation": 3,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "AraunaMistRoute_EventScript_ReturnToVillage"
+    },
+    {
+      "type": "trigger",
+      "x": 10,
+      "y": 0,
+      "elevation": 3,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "AraunaMistRoute_EventScript_EnterRuin"
+    },
+    {
+      "type": "trigger",
+      "x": 11,
+      "y": 0,
+      "elevation": 3,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "AraunaMistRoute_EventScript_EnterRuin"
+    }
+  ],
+  "bg_events": []
+}

@@ -34,6 +34,8 @@ jobs:
         run: bash scripts/check_no_proprietary_files.sh
       - name: Validate localized text sources
         run: python3 scripts/check_localization.py
+      - name: Validate vertical slice map shells
+        run: python3 scripts/validate_vertical_slice_shells.py
       - name: Validate Codespaces configuration
         run: |
           python3 -m json.tool .devcontainer/devcontainer.json >/dev/null
