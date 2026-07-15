@@ -459,6 +459,24 @@
 #define METATILE_PalletTown_Door         0x2A3
 #define METATILE_PalletTown_OaksLabDoor  0x2AC
 
+// gTileset_AraucariaVillage
+#define METATILE_AraucariaVillage_DarkEarth            0x200
+#define METATILE_AraucariaVillage_DarkEarth_Variant    0x201
+#define METATILE_AraucariaVillage_MossGround           0x202
+#define METATILE_AraucariaVillage_BasaltPath           0x203
+#define METATILE_AraucariaVillage_BasaltSteps          0x204
+#define METATILE_AraucariaVillage_ForestWall           0x205
+#define METATILE_AraucariaVillage_Fern                 0x206
+#define METATILE_AraucariaVillage_Puddle               0x207
+#define METATILE_AraucariaVillage_HouseA_Start         0x208
+#define METATILE_AraucariaVillage_HouseB_Start         0x214
+#define METATILE_AraucariaVillage_ResearchPost_Start   0x220
+#define METATILE_AraucariaVillage_Lantern              0x22F
+#define METATILE_AraucariaVillage_AncientTree_Start    0x230
+#define METATILE_AraucariaVillage_SmallTreeA_Start     0x244
+#define METATILE_AraucariaVillage_SmallTreeB_Start     0x24A
+#define METATILE_AraucariaVillage_Fence                0x250
+
 // gTileset_Petalburg
 #define METATILE_Petalburg_Door_BirchsLab   0x249
 #define METATILE_Petalburg_Door_Littleroot  0x248
