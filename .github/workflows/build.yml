@@ -11,7 +11,7 @@ on:
   pull_request:
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
   group: project-ci-${{ github.ref }}
@@ -30,6 +30,25 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Materialize Araucaria terrain pass
+        if: github.ref == 'refs/heads/feature/m3-organic-village-pass'
+        run: |
+          python3 scripts/materialize_araucaria_pass.py
+          if ! git diff --quiet -- \
+            data/tilesets/secondary/araucaria_village/tiles.png \
+            data/tilesets/secondary/araucaria_village/metatiles.bin \
+            data/tilesets/secondary/araucaria_village/metatile_attributes.bin \
+            data/layouts/AraunaMapLab/map.bin; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add \
+              data/tilesets/secondary/araucaria_village/tiles.png \
+              data/tilesets/secondary/araucaria_village/metatiles.bin \
+              data/tilesets/secondary/araucaria_village/metatile_attributes.bin \
+              data/layouts/AraunaMapLab/map.bin
+            git commit -m "feat(art): add organic Araucaria terrain"
+            git push origin HEAD:feature/m3-organic-village-pass
+          fi
       - name: Reject ROMs, saves, patches and secrets
         run: bash scripts/check_no_proprietary_files.sh
       - name: Validate localized text sources
