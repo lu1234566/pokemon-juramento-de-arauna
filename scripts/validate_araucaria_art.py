@@ -9,7 +9,8 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-TILESET = ROOT / "data/tilesets/secondary/araucaria_village"
+SOURCE_TILESET = ROOT / "data/tilesets/secondary/araucaria_village"
+TILESET = ROOT / "build/generated/araucaria"
 MATERIAL_PALETTES = tuple(range(6, 14))
 
 
@@ -42,7 +43,7 @@ def expected_bank(metatile_id: int) -> int:
 
 
 def read_palette(bank: int) -> tuple[tuple[int, int, int], ...]:
-    path = TILESET / "palettes" / f"{bank:02}.pal"
+    path = SOURCE_TILESET / "palettes" / f"{bank:02}.pal"
     lines = path.read_text(encoding="utf-8").splitlines()
     if lines[:3] != ["JASC-PAL", "0100", "16"]:
         fail(f"{path.relative_to(ROOT)} must be a 16-color JASC palette")
@@ -103,7 +104,7 @@ def validate_transition_behaviors() -> None:
 
 
 def validate_village_terrain() -> None:
-    path = ROOT / "data/layouts/AraunaMapLab/map.bin"
+    path = ROOT / "build/generated/araucaria/map.bin"
     data = path.read_bytes()
     if len(data) != 800:
         fail(f"{path.relative_to(ROOT)} must remain a 20x20 layout")
