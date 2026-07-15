@@ -195,9 +195,9 @@ def main() -> int:
     village = maps["AraunaMapLab"]
     village_warps = [(event["x"], event["y"]) for event in village["warp_events"]]
     village_triggers = [(event["x"], event["y"]) for event in village["coord_events"]]
-    if village_warps != [(5, 6), (5, 18), (18, 13)]:
+    if village_warps != [(5, 6), (5, 18), (18, 10)]:
         fail(f"village return anchors are misaligned: {village_warps}")
-    if village_triggers != [(5, 5), (5, 17), (19, 13)]:
+    if village_triggers != [(5, 5), (5, 17), (19, 10)]:
         fail(f"village entrance triggers are misaligned: {village_triggers}")
 
     for source_name, map_data in maps.items():
