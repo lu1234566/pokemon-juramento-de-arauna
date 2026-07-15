@@ -180,8 +180,15 @@ def main() -> int:
         expected_prefix = f"data/layouts/{name}/"
         blockdata = layout.get("blockdata_filepath", "")
         border = layout.get("border_filepath", "")
-        if not blockdata.startswith(expected_prefix) or not border.startswith(expected_prefix):
-            fail(f"{layout_id} must use independent files below {expected_prefix}")
+        expected_blockdata = (
+            "build/generated/araucaria/"
+            if name == "AraunaMapLab"
+            else expected_prefix
+        )
+        if not blockdata.startswith(expected_blockdata):
+            fail(f"{layout_id} must use blockdata below {expected_blockdata}")
+        if not border.startswith(expected_prefix):
+            fail(f"{layout_id} must use its border below {expected_prefix}")
         if blockdata in blockdata_paths or border in border_paths:
             fail(f"{layout_id} reuses another Arauna layout path")
         blockdata_paths.add(blockdata)
