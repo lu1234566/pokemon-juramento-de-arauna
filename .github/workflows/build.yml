@@ -31,8 +31,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Materialize Araucaria terrain pass
-        if: github.ref == 'refs/heads/feature/m3-organic-village-pass'
+        if: github.ref == 'refs/heads/feature/m3-organic-village-pass' || (github.event_name == 'pull_request' && github.head_ref == 'feature/m3-organic-village-pass')
         run: |
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            git fetch origin feature/m3-organic-village-pass
+            git checkout -B feature/m3-organic-village-pass origin/feature/m3-organic-village-pass
+          fi
           python3 scripts/materialize_araucaria_pass.py
           if ! git diff --quiet -- \
             data/tilesets/secondary/araucaria_village/tiles.png \
