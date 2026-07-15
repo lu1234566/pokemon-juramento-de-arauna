@@ -182,7 +182,7 @@ def main() -> int:
         border = layout.get("border_filepath", "")
         expected_blockdata = (
             "build/generated/araucaria/"
-            if name == "AraunaMapLab"
+            if name in {"AraunaMapLab", "AraunaResearchCenter"}
             else expected_prefix
         )
         if not blockdata.startswith(expected_blockdata):
