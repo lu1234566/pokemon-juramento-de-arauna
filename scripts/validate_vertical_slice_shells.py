@@ -192,6 +192,14 @@ def main() -> int:
         validate_transition_paths(name, layout, warps, coord_events)
         maps[name] = map_data
 
+    village = maps["AraunaMapLab"]
+    village_warps = [(event["x"], event["y"]) for event in village["warp_events"]]
+    village_triggers = [(event["x"], event["y"]) for event in village["coord_events"]]
+    if village_warps != [(5, 6), (5, 18), (18, 13)]:
+        fail(f"village return anchors are misaligned: {village_warps}")
+    if village_triggers != [(5, 5), (5, 17), (19, 13)]:
+        fail(f"village entrance triggers are misaligned: {village_triggers}")
+
     for source_name, map_data in maps.items():
         for warp_id, warp in enumerate(map_data["warp_events"]):
             destination_name = map_ids.get(warp["dest_map"])

@@ -17,8 +17,8 @@ não fazem parte desta etapa.
 | Origem | Ponto provisório | Destino | Retorno esperado |
 |---|---|---|---|
 | Vila | caminho abaixo da casa noroeste | Casa do Protagonista | porta inferior retorna à vila |
-| Vila | caminho acima do posto ao sul | Centro de Pesquisa | porta inferior retorna à vila |
-| Vila | caminho a leste da clareira | Rota da Neblina | saída sul retorna à vila |
+| Vila | soleira sul do centro de pesquisa | Centro de Pesquisa | porta inferior retorna à soleira |
+| Vila | estrada aberta na borda leste | Rota da Neblina | saída sul retorna à estrada |
 | Rota da Neblina | saída norte | Ruína do Primeiro Elo | entrada sul retorna à rota |
 | Ruína do Primeiro Elo | escada superior | Câmara do Primeiro Elo | saída inferior retorna à ruína |
 
