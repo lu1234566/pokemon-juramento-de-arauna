@@ -134,6 +134,10 @@ def main() -> int:
     map_ids: dict[str, str] = {}
     blockdata_paths: set[str] = set()
     border_paths: set[str] = set()
+    try:
+        event_script_index = (ROOT / "data/event_scripts.s").read_text(encoding="utf-8")
+    except OSError as error:
+        fail(f"cannot read data/event_scripts.s: {error}")
 
     for name, (map_id, layout_id, warp_count, coord_count) in EXPECTED_MAPS.items():
         map_path = ROOT / "data/maps" / name / "map.json"
@@ -153,6 +157,9 @@ def main() -> int:
             fail(f"cannot read {script_path.relative_to(ROOT)}: {error}")
         if f"{name}_MapScripts::" not in script:
             fail(f"{script_path.relative_to(ROOT)} lacks {name}_MapScripts")
+        include = f\'\\t.include "data/maps/{name}/scripts.inc"\'
+        if include not in event_script_index:
+            fail(f"data/event_scripts.s does not include {name}/scripts.inc")
 
         warps = map_data.get("warp_events") or []
         if len(warps) != warp_count:
