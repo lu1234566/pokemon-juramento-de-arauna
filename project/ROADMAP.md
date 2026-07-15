@@ -12,10 +12,10 @@ As estimativas consideram trabalho em tempo livre e serão revistas após o vert
 - [x] Protagonista falante confirmado.
 - [x] Três linhas de iniciais originais confirmadas.
 - [x] Direção conceitual do trio aprovada.
-- [ ] Definir protagonista.
-- [ ] Definir rival.
-- [ ] Definir limites temáticos.
-- [ ] Aprovar sinopse de uma página.
+- [x] Definir protagonista provisório para o greybox.
+- [x] Definir Nilo como rival provisório do greybox.
+- [x] Definir limites temáticos.
+- [x] Aprovar sinopse de trabalho para o vertical slice.
 - [ ] Aprovar conceitos e silhuetas das três primeiras formas.
 - [ ] Selecionar Pokémon oficiais indispensáveis.
 - [ ] Decidir mecânica moderna principal.
@@ -38,16 +38,23 @@ As estimativas consideram trabalho em tempo livre e serão revistas após o vert
 
 ## M2 — Laboratório de aprendizado
 
+**Estado:** concluído.
+
 - [x] Alterar, compilar e testar visualmente um diálogo bilíngue.
-- [ ] Criar um NPC.
-- [ ] Modificar um mapa.
-- [ ] Criar uma batalha de treinador.
-- [ ] Entregar um item por evento.
-- [ ] Impedir repetição com flag.
-- [ ] Testar save e carregamento.
+- [x] Criar um NPC.
+- [x] Modificar um mapa.
+- [x] Criar uma batalha de treinador.
+- [x] Entregar um item por evento.
+- [x] Impedir repetição com flag.
+- [x] Testar save e carregamento.
+- [x] Criar layout independente e primeiro tileset autoral.
+- [x] Validar o mapa-laboratório no Porymap e no mGBA.
 
 ## M3 — Greybox do vertical slice
 
+**Estado:** em andamento.
+
+- [x] Definir e documentar o fluxo jogável.
 - [ ] Criar os mapas provisórios.
 - [ ] Implementar o fluxo inicial.
 - [ ] Integrar a primeira forma dos três iniciais com placeholders.
