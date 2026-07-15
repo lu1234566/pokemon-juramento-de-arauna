@@ -9332,7 +9332,7 @@
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_AraucariaVillage",
       "border_filepath": "data/layouts/AraunaMapLab/border.bin",
-      "blockdata_filepath": "data/layouts/AraunaMapLab/map.bin",
+      "blockdata_filepath": "build/generated/araucaria/map.bin",
       "layout_version": "emerald"
     },
     {
