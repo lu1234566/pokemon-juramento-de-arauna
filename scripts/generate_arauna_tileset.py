@@ -491,9 +491,9 @@ def build_map() -> list[list[int]]:
 
     # Atmosphere and guidance accents.
     for x in (7, 12, 15, 18):
-        grid[10][x] = map_entry(3 if x % 2 else 83)
-    grid[12][7] = map_entry(47)
-    grid[12][13] = map_entry(47)
+        grid[10][x] = map_entry(3 if x % 2 else 83, collision=1, elevation=0)
+    grid[12][7] = map_entry(47, collision=1, elevation=0)
+    grid[12][13] = map_entry(47, collision=1, elevation=0)
     grid[16][12] = map_entry(6)
     grid[17][15] = map_entry(7)
     grid[11][15] = map_entry(6)
