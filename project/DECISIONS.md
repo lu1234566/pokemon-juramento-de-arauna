@@ -18,14 +18,18 @@ Este arquivo registra decisões que não devem ser reabertas silenciosamente. Al
 | ADR-012 | 2026-07-13 | Vínculos começam como sistema narrativo antes de afetar batalhas | Aceita |
 | ADR-013 | 2026-07-13 | Nenhuma ROM, save ou patch será commitado | Aceita |
 | ADR-014 | 2026-07-13 | CI compila e testa, mas não publica a ROM como artefato | Aceita |
+| ADR-015 | 2026-07-15 | Protagonista do greybox tem 16 anos, vive na Vila das Araucárias e mantém nome e aparência selecionáveis com uma voz autoral comum | Aceita para o greybox |
+| ADR-016 | 2026-07-15 | Nilo será o rival provisório: amigo de infância, aprendiz de guarda-florestal e contraponto às decisões de Vínculo | Aceita para o greybox |
+| ADR-017 | 2026-07-15 | Temas sombrios não usarão violência gráfica, crueldade gratuita ou choque como substituto de narrativa | Aceita |
+| ADR-018 | 2026-07-15 | A sinopse de trabalho e a sequência Vila–Rota da Neblina–Ruína do Primeiro Elo orientam o greybox do vertical slice | Aceita para o greybox |
 
 ## Decisões abertas
 
-- Idade, aparência, origem e opções do protagonista.
-- Relação e trajetória do rival.
-- Intensidade explícita dos temas sombrios.
+- Aparência original final do protagonista e opções da versão apresentável.
+- Trajetória de longo prazo de Nilo depois do primeiro arco.
 - Tipos secundários e nomes do trio.
-- Pokémon oficiais indispensáveis.
+- Conceitos e silhuetas das três primeiras formas.
+- Pokémon oficiais indispensáveis além do conjunto provisório do vertical slice.
 - Líderes por tipo ou por estratégia.
 - Mecânica moderna principal.
 - Requisito ou não de seleção interna de idioma para a primeira versão pública.
