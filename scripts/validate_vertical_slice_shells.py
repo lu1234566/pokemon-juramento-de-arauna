@@ -14,23 +14,36 @@ ROOT = Path(__file__).resolve().parents[1]
 MAP_GROUP = "gMapGroup_AraunaPrototype"
 
 EXPECTED_MAPS = {
-    "AraunaMapLab": ("MAP_ARAUNA_MAP_LAB", "LAYOUT_ARAUNA_MAP_LAB", 3),
-    "AraunaPlayerHouse": ("MAP_ARAUNA_PLAYER_HOUSE", "LAYOUT_ARAUNA_PLAYER_HOUSE", 2),
+    "AraunaMapLab": ("MAP_ARAUNA_MAP_LAB", "LAYOUT_ARAUNA_MAP_LAB", 3, 3),
+    "AraunaPlayerHouse": (
+        "MAP_ARAUNA_PLAYER_HOUSE",
+        "LAYOUT_ARAUNA_PLAYER_HOUSE",
+        2,
+        0,
+    ),
     "AraunaResearchCenter": (
         "MAP_ARAUNA_RESEARCH_CENTER",
         "LAYOUT_ARAUNA_RESEARCH_CENTER",
         2,
+        0,
     ),
-    "AraunaMistRoute": ("MAP_ARAUNA_MIST_ROUTE", "LAYOUT_ARAUNA_MIST_ROUTE", 4),
+    "AraunaMistRoute": (
+        "MAP_ARAUNA_MIST_ROUTE",
+        "LAYOUT_ARAUNA_MIST_ROUTE",
+        2,
+        4,
+    ),
     "AraunaFirstLinkRuin": (
         "MAP_ARAUNA_FIRST_LINK_RUIN",
         "LAYOUT_ARAUNA_FIRST_LINK_RUIN",
         2,
+        0,
     ),
     "AraunaFirstLinkChamber": (
         "MAP_ARAUNA_FIRST_LINK_CHAMBER",
         "LAYOUT_ARAUNA_FIRST_LINK_CHAMBER",
         1,
+        0,
     ),
 }
 
@@ -68,9 +81,13 @@ def collision(entry: int) -> int:
     return (entry >> 10) & 0x3
 
 
-def validate_warp_paths(name: str, layout: dict, warps: list[dict]) -> None:
+def validate_transition_paths(
+    name: str, layout: dict, warps: list[dict], coord_events: list[dict]
+) -> None:
     width, height, entries = read_entries(layout)
-    coordinates = [(int(warp["x"]), int(warp["y"])) for warp in warps]
+    coordinates = [
+        (int(event["x"]), int(event["y"])) for event in [*warps, *coord_events]
+    ]
     if len(coordinates) != len(set(coordinates)):
         fail(f"{name} contains duplicate warp coordinates")
 
@@ -81,7 +98,7 @@ def validate_warp_paths(name: str, layout: dict, warps: list[dict]) -> None:
             fail(f"{name} warp {(x, y)} is placed on a solid block")
 
     if not coordinates:
-        fail(f"{name} must contain at least one warp")
+        fail(f"{name} must contain at least one transition")
 
     start = coordinates[0]
     reached = {start}
@@ -118,7 +135,7 @@ def main() -> int:
     blockdata_paths: set[str] = set()
     border_paths: set[str] = set()
 
-    for name, (map_id, layout_id, warp_count) in EXPECTED_MAPS.items():
+    for name, (map_id, layout_id, warp_count, coord_count) in EXPECTED_MAPS.items():
         map_path = ROOT / "data/maps" / name / "map.json"
         script_path = ROOT / "data/maps" / name / "scripts.inc"
         map_data = load_json(map_path)
@@ -140,6 +157,15 @@ def main() -> int:
         warps = map_data.get("warp_events") or []
         if len(warps) != warp_count:
             fail(f"{name} must contain {warp_count} warps; got {len(warps)}")
+        coord_events = map_data.get("coord_events") or []
+        if len(coord_events) != coord_count:
+            fail(
+                f"{name} must contain {coord_count} coordinate transitions; "
+                f"got {len(coord_events)}"
+            )
+        for event in coord_events:
+            if event.get("type") != "trigger" or not event.get("script"):
+                fail(f"{name} contains a coordinate event without a trigger script")
 
         layout = layouts.get(layout_id)
         if layout is None:
@@ -156,7 +182,7 @@ def main() -> int:
         if not (ROOT / border).is_file():
             fail(f"missing {border}")
 
-        validate_warp_paths(name, layout, warps)
+        validate_transition_paths(name, layout, warps, coord_events)
         maps[name] = map_data
 
     for source_name, map_data in maps.items():
@@ -192,8 +218,9 @@ def main() -> int:
         fail(f"map graph is disconnected; reachable maps: {sorted(reachable)}")
 
     print(
-        "Validated 6 independent Arauna layouts, 14 reciprocal warps, "
-        "passable endpoints, and a connected vertical-slice map graph."
+        "Validated 6 independent Arauna layouts, 12 reciprocal warp anchors, "
+        "7 coordinate transitions, passable endpoints, and a connected "
+        "vertical-slice map graph."
     )
     return 0
 

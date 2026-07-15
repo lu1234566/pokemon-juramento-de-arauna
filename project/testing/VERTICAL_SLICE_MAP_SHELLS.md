@@ -18,7 +18,7 @@ não fazem parte desta etapa.
 |---|---|---|---|
 | Vila | caminho abaixo da casa noroeste | Casa do Protagonista | porta inferior retorna à vila |
 | Vila | caminho acima do posto ao sul | Centro de Pesquisa | porta inferior retorna à vila |
-| Vila | abertura leste | Rota da Neblina | saída sul retorna à vila |
+| Vila | caminho a leste da clareira | Rota da Neblina | saída sul retorna à vila |
 | Rota da Neblina | saída norte | Ruína do Primeiro Elo | entrada sul retorna à rota |
 | Ruína do Primeiro Elo | escada superior | Câmara do Primeiro Elo | saída inferior retorna à ruína |
 
@@ -30,6 +30,7 @@ não fazem parte desta etapa.
 - [ ] Rota, ruína e câmara não preservam itens, treinadores ou scripts de Hoenn.
 - [ ] Toda entrada coloca o jogador em uma célula transitável.
 - [ ] Toda saída possui caminho de volta.
+- [ ] Caminhos externos acionam transições sem depender de metatile de porta.
 - [ ] O acesso técnico de Littleroot continua entrando na vila.
 - [ ] A pesquisadora, Nilo e o item técnico da vila continuam funcionando.
 - [ ] O percurso completo pode ser feito sem menu de debug.
