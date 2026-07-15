@@ -2,7 +2,7 @@ AraunaMistRoute_MapScripts::
 	.byte 0
 
 AraunaMistRoute_EventScript_ReturnToVillage::
-	warp MAP_ARAUNA_MAP_LAB, 255, 18, 13
+	warp MAP_ARAUNA_MAP_LAB, 255, 17, 10
 	waitstate
 	end
 
