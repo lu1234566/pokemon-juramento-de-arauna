@@ -12,8 +12,8 @@ const u16 gMetatileAttributes_General[] = INCBIN_U16("data/tilesets/primary/gene
 const u16 gMetatiles_Petalburg[] = INCBIN_U16("data/tilesets/secondary/petalburg/metatiles.bin");
 const u16 gMetatileAttributes_Petalburg[] = INCBIN_U16("data/tilesets/secondary/petalburg/metatile_attributes.bin");
 
-const u16 gMetatiles_AraucariaVillage[] = INCBIN_U16("data/tilesets/secondary/araucaria_village/metatiles.bin");
-const u16 gMetatileAttributes_AraucariaVillage[] = INCBIN_U16("data/tilesets/secondary/araucaria_village/metatile_attributes.bin");
+const u16 gMetatiles_AraucariaVillage[] = INCBIN_U16("build/generated/araucaria/metatiles.bin");
+const u16 gMetatileAttributes_AraucariaVillage[] = INCBIN_U16("build/generated/araucaria/metatile_attributes.bin");
 
 const u16 gMetatiles_Rustboro[] = INCBIN_U16("data/tilesets/secondary/rustboro/metatiles.bin");
 const u16 gMetatileAttributes_Rustboro[] = INCBIN_U16("data/tilesets/secondary/rustboro/metatile_attributes.bin");
