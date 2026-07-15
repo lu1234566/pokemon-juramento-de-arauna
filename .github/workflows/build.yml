@@ -36,6 +36,8 @@ jobs:
         run: python3 scripts/check_localization.py
       - name: Validate vertical slice map shells
         run: python3 scripts/validate_vertical_slice_shells.py
+      - name: Validate Araucaria art assets
+        run: python3 scripts/validate_araucaria_art.py
       - name: Validate Codespaces configuration
         run: |
           python3 -m json.tool .devcontainer/devcontainer.json >/dev/null
