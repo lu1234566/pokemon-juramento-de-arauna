@@ -36,6 +36,8 @@ def expected_bank(metatile_id: int) -> int:
         return 12
     if metatile_id == 0x253:
         return 13
+    if 0x254 <= metatile_id <= 0x266:
+        return 7
     return 6
 
 
@@ -74,7 +76,7 @@ def validate_metatile_banks() -> None:
     if len(data) != 2304:
         fail(f"{path.relative_to(ROOT)} must contain 144 eight-tile metatiles")
     entries = struct.unpack(f"<{len(data) // 2}H", data)
-    for index in range(0x54):
+    for index in range(0x67):
         metatile_id = 0x200 + index
         expected = expected_bank(metatile_id)
         for entry in entries[index * 8 : index * 8 + 8]:
@@ -85,15 +87,51 @@ def validate_metatile_banks() -> None:
                 )
 
 
+def validate_transition_behaviors() -> None:
+    attributes_path = TILESET / "metatile_attributes.bin"
+    attributes = attributes_path.read_bytes()
+    if len(attributes) != 288:
+        fail(f"{attributes_path.relative_to(ROOT)} must contain 144 attributes")
+    expected = {0x264: 0x69, 0x265: 0x69, 0x266: 0x62}
+    for metatile_id, behavior in expected.items():
+        actual = attributes[(metatile_id - 0x200) * 2]
+        if actual != behavior:
+            fail(
+                f"metatile {metatile_id:#05x} behavior is {actual:#04x}; "
+                f"expected {behavior:#04x}"
+            )
+
+
+def validate_village_terrain() -> None:
+    path = ROOT / "data/layouts/AraunaMapLab/map.bin"
+    data = path.read_bytes()
+    if len(data) != 800:
+        fail(f"{path.relative_to(ROOT)} must remain a 20x20 layout")
+    blocks = struct.unpack("<400H", data)
+    flat_paths = [index for index, block in enumerate(blocks) if block & 0x3FF in {0x200, 0x201}]
+    if flat_paths:
+        fail(f"village still uses flat path metatiles at {flat_paths[:8]}")
+    expected = {(5, 6): 0x264, (5, 18): 0x265, (18, 10): 0x266}
+    for (x, y), metatile_id in expected.items():
+        actual = blocks[y * 20 + x] & 0x3FF
+        if actual != metatile_id:
+            fail(
+                f"village transition {(x, y)} uses {actual:#05x}; "
+                f"expected {metatile_id:#05x}"
+            )
+
+
 def main() -> int:
     validate_png()
     palettes = [read_palette(bank) for bank in MATERIAL_PALETTES]
     if len(set(palettes)) != len(palettes):
         fail("material palettes 06..13 must remain visually distinct")
     validate_metatile_banks()
+    validate_transition_behaviors()
+    validate_village_terrain()
     print(
-        "Validated the 4bpp Araucaria tilesheet, 8 distinct material palettes, "
-        "and palette assignments for village metatiles 0x200..0x253."
+        "Validated the 4bpp Araucaria tilesheet, material palettes, organic "
+        "road masks, textured ground, and three functional transition tiles."
     )
     return 0
 
