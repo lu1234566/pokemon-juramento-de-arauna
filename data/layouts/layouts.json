@@ -9334,6 +9334,61 @@
       "border_filepath": "data/layouts/AraunaMapLab/border.bin",
       "blockdata_filepath": "data/layouts/AraunaMapLab/map.bin",
       "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_PLAYER_HOUSE",
+      "name": "AraunaPlayerHouse_Layout",
+      "width": 11,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/AraunaPlayerHouse/border.bin",
+      "blockdata_filepath": "data/layouts/AraunaPlayerHouse/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_RESEARCH_CENTER",
+      "name": "AraunaResearchCenter_Layout",
+      "width": 13,
+      "height": 13,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Lab",
+      "border_filepath": "data/layouts/AraunaResearchCenter/border.bin",
+      "blockdata_filepath": "data/layouts/AraunaResearchCenter/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_MIST_ROUTE",
+      "name": "AraunaMistRoute_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/AraunaMistRoute/border.bin",
+      "blockdata_filepath": "data/layouts/AraunaMistRoute/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_FIRST_LINK_RUIN",
+      "name": "AraunaFirstLinkRuin_Layout",
+      "width": 21,
+      "height": 17,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_MirageTower",
+      "border_filepath": "data/layouts/AraunaFirstLinkRuin/border.bin",
+      "blockdata_filepath": "data/layouts/AraunaFirstLinkRuin/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_FIRST_LINK_CHAMBER",
+      "name": "AraunaFirstLinkChamber_Layout",
+      "width": 21,
+      "height": 23,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/AraunaFirstLinkChamber/border.bin",
+      "blockdata_filepath": "data/layouts/AraunaFirstLinkChamber/map.bin",
+      "layout_version": "emerald"
     }
   ]
 }

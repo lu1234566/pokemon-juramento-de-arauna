@@ -55,7 +55,29 @@
       "flag": "0"
     }
   ],
-  "warp_events": [],
+  "warp_events": [
+    {
+      "x": 5,
+      "y": 5,
+      "elevation": 3,
+      "dest_map": "MAP_ARAUNA_PLAYER_HOUSE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 5,
+      "y": 13,
+      "elevation": 3,
+      "dest_map": "MAP_ARAUNA_RESEARCH_CENTER",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 19,
+      "y": 10,
+      "elevation": 3,
+      "dest_map": "MAP_ARAUNA_MIST_ROUTE",
+      "dest_warp_id": "0"
+    }
+  ],
   "coord_events": [],
   "bg_events": []
 }
