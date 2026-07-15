@@ -20,7 +20,7 @@ const u16 gTilesetPalettes_Petalburg[][16] =
     INCGFX_U16("data/tilesets/secondary/petalburg/palettes/15.pal", ".gbapal"),
 };
 
-const u32 gTilesetTiles_AraucariaVillage[] = INCGFX_U32("build/generated/araucaria/tiles.png", ".4bpp.fastSmol", "-num_tiles 297 -Wnum_tiles");
+const u32 gTilesetTiles_AraucariaVillage[] = INCGFX_U32("build/generated/araucaria/tiles.png", ".4bpp.fastSmol", "-num_tiles 304 -Wnum_tiles");
 
 const u16 gTilesetPalettes_AraucariaVillage[][16] =
 {
