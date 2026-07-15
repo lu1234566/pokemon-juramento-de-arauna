@@ -157,7 +157,7 @@ def main() -> int:
             fail(f"cannot read {script_path.relative_to(ROOT)}: {error}")
         if f"{name}_MapScripts::" not in script:
             fail(f"{script_path.relative_to(ROOT)} lacks {name}_MapScripts")
-        include = f\'\\t.include "data/maps/{name}/scripts.inc"\'
+        include = f'\t.include "data/maps/{name}/scripts.inc"'
         if include not in event_script_index:
             fail(f"data/event_scripts.s does not include {name}/scripts.inc")
 
