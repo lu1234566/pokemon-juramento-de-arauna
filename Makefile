@@ -33,6 +33,11 @@ endif
 
 BUILD_NAME := $(BUILD_NAME)-$(ARAUNA_LANGUAGE_SUFFIX)
 
+ARAUNA_ART_GENERATOR := scripts/materialize_araucaria_pass.py
+ifneq ($(wildcard $(ARAUNA_ART_GENERATOR)),)
+  $(shell python3 $(ARAUNA_ART_GENERATOR))
+endif
+
 # GBA rom header
 MAKER_CODE  := 01
 REVISION    := 0
