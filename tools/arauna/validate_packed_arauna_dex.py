@@ -36,6 +36,25 @@ STARTERS = {
     8: ("Bicopau", "grass"),
     9: ("Petropico", "grass/rock"),
 }
+BLOCKED_ORDINARY_ENCOUNTERS = {
+    "SPECIES_KINGLER",      # Iemanja
+    "SPECIES_PUPITAR",      # Iemanja-Pequena
+    "SPECIES_POOCHYENA",    # Curupira-Anciao
+    "SPECIES_ZIGZAGOON",    # Pomba-Gira
+    "SPECIES_WURMPLE",      # Preto-Velho
+    "SPECIES_BRELOOM",      # Iara-Mae
+    "SPECIES_VIBRAVA", "SPECIES_FLYGON", "SPECIES_CACNEA",
+    "SPECIES_CACTURNE", "SPECIES_SWABLU", "SPECIES_ALTARIA",
+    "SPECIES_ZANGOOSE", "SPECIES_SEVIPER", "SPECIES_LUNATONE",
+    "SPECIES_SOLROCK", "SPECIES_BARBOACH", "SPECIES_WHISCASH",
+    "SPECIES_CORPHISH", "SPECIES_CRAWDAUNT", "SPECIES_BALTOY",
+    "SPECIES_CLAYDOL", "SPECIES_LILEEP", "SPECIES_CRADILY",
+    "SPECIES_ANORITH", "SPECIES_ARMALDO", "SPECIES_METAGROSS",
+    "SPECIES_REGIROCK", "SPECIES_REGICE", "SPECIES_REGISTEEL",
+    "SPECIES_LATIAS", "SPECIES_LATIOS", "SPECIES_KYOGRE",
+    "SPECIES_GROUDON", "SPECIES_RAYQUAZA", "SPECIES_JIRACHI",
+    "SPECIES_DEOXYS",
+}
 
 
 class ValidationError(RuntimeError):
@@ -191,12 +210,67 @@ def validate_packed_graphics() -> None:
             "original Gen 1-3 family tables are still enabled")
 
 
+def validate_runtime_integration() -> None:
+    constants = read_text("include/constants/pokedex.h")
+    regional_match = re.search(
+        r"#define FOREACH_SPECIES_IN_HOENN_DEX_ORDER\(F\) \\\n"
+        r"(?P<body>.*?)(?=\n\n// Arauna regional Pokédex order)",
+        constants,
+        flags=re.DOTALL,
+    )
+    require(regional_match is not None, "Arauna regional Dex macro is missing")
+    regional = re.findall(r"F\(([A-Z0-9_]+)\)", regional_match.group("body"))
+
+    national_match = re.search(
+        r"enum NationalDexOrder\s*\{(?P<body>.*?)\n\};",
+        constants,
+        flags=re.DOTALL,
+    )
+    require(national_match is not None, "National Dex enum is missing")
+    national = re.findall(r"NATIONAL_DEX_([A-Z0-9_]+),", national_match.group("body"))
+    national = [name for name in national if name != "NONE"][:DEX_SIZE]
+    require(len(regional) == DEX_SIZE, f"Arauna regional Dex has {len(regional)} slots")
+    require(regional == national,
+            "Arauna regional Dex must map slots 001-386 in National order")
+
+    research_center = read_text("data/maps/AraunaResearchCenter/scripts.inc")
+    require("EnableNationalPokedex" not in research_center,
+            "research center still enables the unstable National Dex mode")
+    require("special SetUnlockedPokedexFlags" in research_center,
+            "research center no longer unlocks the Arauna Dex")
+
+    strings = read_text("src/strings.c")
+    require('gText_DexHoennTitle[] = _("ARAUNA DEX")' in strings,
+            "regional Dex title is not ARAUNA DEX")
+    require('gText_DexHoennDescription[] = _("ARAUNA region\'s POKéDEX")' in strings,
+            "regional Dex description is not branded for Arauna")
+
+    for relative in ("src/data/wild_encounters.json", "src/data/trainers.party"):
+        text = read_text(relative)
+        found = sorted(species for species in BLOCKED_ORDINARY_ENCOUNTERS
+                       if re.search(rf"\b{species}\b", text))
+        require(not found,
+                f"{relative} still uses story-only species: {', '.join(found)}")
+
+    battle_controllers = read_text("src/battle_controllers.c")
+    field_specials = read_text("src/field_specials.c")
+    require("CreateWildMon(SPECIES_ZIGZAGOON, 2);" not in battle_controllers,
+            "battle tutorial still presents Pomba-Gira as a common wild species")
+    require("CreateWildMon(SPECIES_BULBASAUR, 2);" in battle_controllers,
+            "battle tutorial does not use the approved common placeholder")
+    require("SPECIES_ZIGZAGOON, 7" not in field_specials,
+            "catching tutorial still uses Pomba-Gira")
+    require("SPECIES_BULBASAUR, 7" in field_specials,
+            "catching tutorial does not use the approved common placeholder")
+
+
 def main() -> int:
     try:
         validate_sources()
         validate_mapping_and_manifest()
         validate_species_table()
         validate_packed_graphics()
+        validate_runtime_integration()
     except (OSError, UnicodeError, json.JSONDecodeError, csv.Error, ValidationError, ValueError) as exc:
         print(f"Arauna packed Dex validation failed: {exc}", file=sys.stderr)
         return 1
