@@ -50,6 +50,8 @@ jobs:
         run: python3 scripts/validate_first_link_chamber.py
       - name: Validate vertical-slice epilogue
         run: python3 scripts/validate_vertical_slice_epilogue.py
+      - name: Validate Mist Route encounters
+        run: python3 scripts/validate_mist_route_encounters.py
       - name: Validate Araucaria art assets
         run: python3 scripts/validate_araucaria_art.py
       - name: Validate Codespaces configuration
