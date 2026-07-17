@@ -95,3 +95,53 @@ AraunaMapLab_Text_RouteLocked::
 	.string "NILO bloqueou a saída.\p"
 	.string "Escolha um parceiro no CENTRO\n"
 	.string "e fale com ele na praça.$"
+
+AraunaMapLab_Text_ObjectiveNiloReturn::
+	.string "NILO voltou à praça.\p"
+	.string "Conte a ele o que aconteceu\n"
+	.string "na CÂMARA DO PRIMEIRO ELO.$"
+
+AraunaMapLab_Text_ObjectiveSliceComplete::
+	.string "O primeiro trecho foi concluído.\p"
+	.string "A memória do CAMPEÃO abriu\n"
+	.string "uma investigação maior.$"
+
+AraunaMapLab_Text_NiloReturnIntro::
+	.string "NILO: Eu vi o clarão da vila.\p"
+	.string "Pelas suas marcas, a ruína\n"
+	.string "também viu você.$"
+
+AraunaMapLab_Text_NiloCourageReaction::
+	.string "Você entrou antes do colapso.\p"
+	.string "CORAGEM abriu o caminho, mas\n"
+	.string "parte dele ficou soterrada.\p"
+	.string "Sua escolha deixou uma marca.$"
+
+AraunaMapLab_Text_NiloWisdomReaction::
+	.string "Você decifrou o mecanismo.\p"
+	.string "SABEDORIA preservou a ruína\n"
+	.string "e as inscrições do caminho.\p"
+	.string "Sua escolha salvou respostas.$"
+
+AraunaMapLab_Text_NiloCompassionReaction::
+	.string "Você ouviu o POKéMON primeiro.\p"
+	.string "COMPAIXAO revelou uma saída\n"
+	.string "que o agente não conhecia.\p"
+	.string "Sua escolha criou confiança.$"
+
+AraunaMapLab_Text_NiloMemoryConclusion::
+	.string "NILO: Se a memória é real, a\n"
+	.string "versão da Liga está incompleta.\p"
+	.string "O CAMPEÃO não desapareceu antes\n"
+	.string "da Noite Sem Estrelas.\p"
+	.string "Ele estava lá. E rompeu o Elo.$"
+
+AraunaMapLab_Text_VerticalSliceComplete::
+	.string "FIM DO VERTICAL SLICE ATUAL.\p"
+	.string "A jornada seguirá após os\n"
+	.string "próximos testes e aprovações.$"
+
+AraunaMapLab_Text_NiloAfterSlice::
+	.string "Ainda temos só uma memória.\p"
+	.string "O próximo passo é descobrir\n"
+	.string "quem tentou apagá-la.$"
