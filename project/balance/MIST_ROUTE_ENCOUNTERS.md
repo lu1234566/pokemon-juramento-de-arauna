@@ -34,3 +34,14 @@ pedras permanecem sem tabela própria neste primeiro trecho.
 
 Quando os fakemon forem aprovados e integrados, cada substituto será trocado
 pelo identificador do respectivo slot, preservando nível, chance e função.
+
+## Batalhas obrigatórias
+
+- Nilo usa Poochyena no nível 4, abaixo do inicial de nível 5.
+- O agente técnico usa Poochyena no nível 5 e Voltorb no nível 6.
+- O Voltorb conserva sua identidade técnica com Tackle, Charge e Eerie
+  Impulse, mas não usa Thunder Shock neste encontro. Assim, Querô/Mudkip não
+  recebe uma desvantagem de tipo que Caramelo/Torchic e Pimpau/Treecko não
+  enfrentariam.
+- O sigilo da câmara cura a equipe antes do miniboss, então a rota serve para
+  treinamento e não para desgaste obrigatório.
