@@ -34,6 +34,8 @@ A primeira forma explora troncos e pedras macias. A intermediária ganha um bico
 
 ## Slots 004–006 — Inicial Fogo: Projeto Caramelo
 
+**Estado visual:** proposta B aprovada como silhueta-base em 2026-07-17. Ela segue para refinamento individual; nenhum sprite foi integrado.
+
 ### Conceito
 
 Um pequeno vira-lata caramelo, amistoso e resistente, que protege caminhos e pessoas mesmo quando ninguém pede. Uma brasa surge na ponta de sua cauda e reage à coragem: tremula quando ele está alerta e se concentra quando decide enfrentar um perigo maior.
@@ -119,4 +121,4 @@ A aprovação de uma etapa não autoriza automaticamente a seguinte.
 
 ## Próxima decisão visual
 
-Produzir e aprovar três variações de silhueta da primeira forma do Projeto Caramelo. O sprite anterior pode servir como referência, mas não será integrado sem nova aprovação dentro deste fluxo.
+Refinar individualmente a proposta B do Projeto Caramelo em uma folha limpa, mantendo corpo compacto, pose baixa, orelhas assimétricas, peito claro e cauda em brasa. A folha refinada ainda precisará de aprovação antes da conversão para o sprite frontal final de 64 × 64 pixels.
