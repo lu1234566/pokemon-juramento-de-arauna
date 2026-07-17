@@ -55,7 +55,6 @@ ENGINE_NAME_ALIASES = {
     266: "CabocGuerro", 273: "BumbaMeuBoi", 282: "DraguaráAlfa",
     283: "TerolRainha", 284: "PetropAncião", 297: "CorcovAncião",
 }
-NON_CAPTURABLE_IDS = {265, 381, 382, 383}
 
 
 def slugify(value: str) -> str:
@@ -174,6 +173,19 @@ def apply_localization(entries: list[dict], path: Path) -> list[dict]:
     return result
 
 
+def apply_story_roles(entries: list[dict], path: Path) -> list[dict]:
+    data = json.loads(path.read_text(encoding="utf-8"))
+    non_capturable = {int(entry["id"]) for entry in data["nonCapturable"]}
+    if not non_capturable:
+        raise ValueError("story roles must declare the non-capturable Census entries")
+    result = []
+    for source in entries:
+        merged = dict(source)
+        merged["capturable"] = int(source["id"]) not in non_capturable
+        result.append(merged)
+    return result
+
+
 def evolution_level(method: str) -> int:
     match = re.search(r"(\d+)", method)
     if not match:
@@ -181,14 +193,10 @@ def evolution_level(method: str) -> int:
     return int(match.group(1))
 
 
-def build_block(entry: dict, target: str, nat_slot: str, target_for_id: dict[int, str], original: str, profile: dict) -> str:
+def build_block(entry: dict, target: str, nat_slot: str, target_for_id: dict[int, str], original: str, profile: dict, battle_profile: dict) -> str:
     stats = entry["stats"]
     types = entry.get("types") or ["normal"]
     type_values = ", ".join(TYPE_CONSTANT[t] for t in types[:2])
-    abilities = [TYPE_ABILITY[types[0]], TYPE_ABILITY[types[-1]]]
-    bst = sum(int(stats[key]) for key in ("hp", "atk", "def", "spa", "spd", "spe"))
-    catch_rate = 0 if int(entry["id"]) in NON_CAPTURABLE_IDS else 45 if bst >= 560 else 90 if bst >= 490 else 180
-    exp_yield = min(255, max(40, round(bst / 3)))
     lines = wrapped_description(entry.get("dex", ""))
     description = "\n".join(f'            "{line}\\n"' for line in lines[:-1])
     if lines:
@@ -206,8 +214,9 @@ def build_block(entry: dict, target: str, nat_slot: str, target_for_id: dict[int
     palette = field(original, "palette", "gMonPalette_CircledQuestionMark")
     shiny = field(original, "shinyPalette", "gMonShinyPalette_CircledQuestionMark")
     icon = field(original, "iconSprite", "gMonIcon_QuestionMark")
+    level = f"sArauna{int(entry['id']):03d}LevelUpLearnset"
     teachable = field(original, "teachableLearnset", "sNoneTeachableLearnset")
-    egg = field(original, "eggMoveLearnset", "sNoneEggMoveLearnset")
+    egg = "sNoneEggMoveLearnset"
     footprint = footprint_symbol(original)
     name = engine_name(entry).replace('"', "'")
     cat = category(entry).replace('"', "'")
@@ -221,14 +230,14 @@ def build_block(entry: dict, target: str, nat_slot: str, target_for_id: dict[int
         .baseSpAttack  = {int(stats['spa'])},
         .baseSpDefense = {int(stats['spd'])},
         .types = MON_TYPES({type_values}),
-        .catchRate = {catch_rate},
-        .expYield = {exp_yield},
-        .genderRatio = PERCENT_FEMALE(50),
-        .eggCycles = 20,
+        .catchRate = {battle_profile['catch_rate']},
+        .expYield = {battle_profile['exp_yield']},
+        .genderRatio = {battle_profile['gender_ratio']},
+        .eggCycles = {battle_profile['egg_cycles']},
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_MEDIUM_FAST,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = {{ {abilities[0]}, ABILITY_NONE, {abilities[1]} }},
+        .growthRate = {battle_profile['growth_rate']},
+        .eggGroups = MON_EGG_GROUPS({battle_profile['egg_group1']}{'' if battle_profile['egg_group1'] == battle_profile['egg_group2'] else ', ' + battle_profile['egg_group2']}),
+        .abilities = {{ {battle_profile['ability1']}, {battle_profile['ability2']}, {battle_profile['hidden_ability']} }},
         .bodyColor = {TYPE_COLOR[types[0]]},
         .speciesName = _("{name}"),
         .cryId = {cry},
@@ -262,7 +271,7 @@ def build_block(entry: dict, target: str, nat_slot: str, target_for_id: dict[int
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT({footprint})
-        .levelUpLearnset = sArauna{int(entry['id']):03d}LevelUpLearnset,
+        .levelUpLearnset = {level},
         .teachableLearnset = {teachable},
         .eggMoveLearnset = {egg},{evolution_line}
     }},
@@ -284,6 +293,8 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--dex", type=Path, default=Path("arauna_dex_import/pokedex.json"))
     parser.add_argument("--localization", type=Path, default=Path("docs/arauna/source/pokedex.en.json"))
+    parser.add_argument("--story-roles", type=Path, default=Path("docs/arauna/source/story_roles.json"))
+    parser.add_argument("--battle-profiles", type=Path, default=Path("docs/arauna/ARAUNA_BATTLE_PROFILES.csv"))
     parser.add_argument("--packages", type=Path, default=Path("art_candidates/full_dex/gba"))
     parser.add_argument("--engine", type=Path, default=Path("engine-reference"))
     parser.add_argument("--out", type=Path, default=Path("full_dex_build/repo_overlay"))
@@ -291,6 +302,11 @@ def main() -> None:
 
     entries = json.loads(args.dex.read_text(encoding="utf-8"))["pokemon"]
     entries = apply_localization(entries, args.localization)
+    entries = apply_story_roles(entries, args.story_roles)
+    with args.battle_profiles.open(encoding="utf-8", newline="") as source:
+        battle_profiles = {int(row["id"]): row for row in csv.DictReader(source)}
+    if set(battle_profiles) != set(range(1, 387)):
+        raise ValueError("battle profiles must contain IDs 001-386")
     nat = national_suffixes(args.engine / "include/constants/pokedex.h")
     targets = STARTER_TARGETS + [suffix for suffix in nat if suffix not in STARTER_TARGETS]
     if len(targets) != 386 or len(set(targets)) != 386:
@@ -313,7 +329,7 @@ def main() -> None:
         folder = str(Path(front_paths[0]).parent).removeprefix("graphics/pokemon/")
         package = args.packages / f"{entry['id']:03d}_{slugify(entry['name'])}"
         profile = json.loads((package / "candidate_profile.json").read_text(encoding="utf-8"))
-        header_blocks.append(build_block(entry, target, nat_slot, target_for_id, original, profile))
+        header_blocks.append(build_block(entry, target, nat_slot, target_for_id, original, profile, battle_profiles[int(entry["id"])]))
 
         symbol_sources = {
             front_symbol: "anim_front.png",
@@ -337,6 +353,7 @@ def main() -> None:
             "engine_name": engine_name(entry), "species_constant": f"SPECIES_{target}",
             "national_slot": f"NATIONAL_DEX_{nat_slot}", "graphics_folder": folder,
             "types": "/".join(entry.get("types", [])), "production_method": profile["productionMethod"],
+            "capturable": "yes" if entry.get("capturable", True) else "no",
         })
 
     header = """// Auto-generated by tools/integrate_full_arauna_dex.py.\n// Complete Arauna replacement for National Dex slots 001-386.\n\n""" + "\n".join(header_blocks)
