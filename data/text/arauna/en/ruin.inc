@@ -1,5 +1,5 @@
 AraunaFirstLinkRuin_Text_Situation::
-	.string "The POOCHYENA is trapped between\n"
+	.string "The affected POKéMON is trapped\n"
 	.string "an old seal and loose stones.\p"
 	.string "The structure starts to give.\n"
 	.string "You must choose how to act.$"
