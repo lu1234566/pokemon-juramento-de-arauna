@@ -16,6 +16,8 @@ O validador confirma:
 - ausência de tabelas de água, pesca e quebra de pedras;
 - mapa ainda idêntico ao casco aprovado da Rota 101;
 - nomes e números dos três iniciais nos textos português e inglês.
+- Nilo nos níveis 4 e o agente nos níveis 5–6;
+- Voltorb sem ataque elétrico de dano neste primeiro miniboss.
 
 ## Teste manual no mGBA
 
@@ -27,6 +29,9 @@ O validador confirma:
    Murkrow.
 6. Atravesse a rota e enfrente o agente técnico; confirme que o percurso dá
    oportunidade suficiente de chegar preparado à equipe de níveis 5 e 6.
+7. Repita o miniboss com Treecko/Pimpau, Torchic/Caramelo e Mudkip/Querô;
+   confirme que Voltorb usa somente Tackle, Charge ou Eerie Impulse e que
+   nenhum inicial recebe uma fraqueza exclusiva nessa batalha.
 
 O teste manual não aprova sprites. Os gráficos exibidos continuam sendo os
 oficiais usados como substitutos técnicos.
