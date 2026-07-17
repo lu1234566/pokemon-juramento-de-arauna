@@ -21,7 +21,7 @@
 'ß'         = 15
 'à'         = 16
 'á'         = 17
-'ã'         = D5 // Temporary fallback to 'a' until an approved glyph pass
+'ã'         = D5
 'ç'         = 19
 'è'         = 1A
 'é'         = 1B
@@ -32,7 +32,7 @@
 'ï'         = 21
 'ò'         = 22
 'ó'         = 23
-'õ'         = E3 // Temporary fallback to 'o' until an approved glyph pass
+'õ'         = E3
 'ô'         = 24
 'œ'         = 25
 'ù'         = 26
