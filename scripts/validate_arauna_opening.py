@@ -117,6 +117,11 @@ def main() -> int:
     if "Nenhum sprite de ARAUNA" not in pt or "No ARAUNA sprite" not in en:
         fail("both languages must preserve the sprite-approval safeguard")
 
+    charmap = read("charmap.txt")
+    for character in ("ã", "õ"):
+        if f"'{character}'" not in charmap:
+            fail(f"charmap.txt must define a temporary fallback for {character!r}")
+
     event_scripts = read("data/event_scripts.s")
     if '\t.include "data/text/arauna/opening.inc"' not in event_scripts:
         fail("data/event_scripts.s must include the localized opening bank")
@@ -124,7 +129,7 @@ def main() -> int:
     print(
         "Validated Arauna opening stages 0–4, one-time starter choice, "
         "route gate, bilingual text, vanilla-only NPC graphics, and explicit "
-        "placeholder disclosure."
+        "placeholder disclosure with Portuguese tilde fallbacks."
     )
     return 0
 
