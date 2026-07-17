@@ -22,14 +22,14 @@
         .speciesName = _("Caramelo"),
         .cryId = CRY_TORCHIC,
         .natDexNum = NATIONAL_DEX_BULBASAUR,
-        .categoryName = _("Vira-lata"),
+        .categoryName = _("Stray"),
         .height = 5,
         .weight = 82,
         .description = COMPOUND_STRING(
-            "Filhote de rua de pelagem cor de\n"
-            "caramelo. Quando confia em seu\n"
-            "treinador, a ponta do rabo acende\n"
-            "uma chama pequena e constante que..."),
+            "A caramel-coated street pup. When it\n"
+            "trusts a Trainer, its tail lights a\n"
+            "small, steady flame that never burns\n"
+            "a friendly hand."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -82,14 +82,14 @@
         .speciesName = _("Caramelão"),
         .cryId = CRY_COMBUSKEN,
         .natDexNum = NATIONAL_DEX_IVYSAUR,
-        .categoryName = _("Guardião"),
+        .categoryName = _("Guardian"),
         .height = 10,
         .weight = 284,
         .description = COMPOUND_STRING(
-            "Guardião das feiras livres. Suas\n"
-            "costas ficam salpicadas de brasas\n"
-            "que ele controla como se fossem\n"
-            "pulgas - só mordem quem tenta..."),
+            "It guards open-air markets. The\n"
+            "embers across its back move like\n"
+            "fleas and bite only those who try to\n"
+            "steal."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -142,14 +142,14 @@
         .speciesName = _("Draguará"),
         .cryId = CRY_BLAZIKEN,
         .natDexNum = NATIONAL_DEX_VENUSAUR,
-        .categoryName = _("Cão-Dragão"),
+        .categoryName = _("Dragon-Dog"),
         .height = 21,
         .weight = 1420,
         .description = COMPOUND_STRING(
-            "Lendas contam que todo cachorro\n"
-            "caramelo que salvou uma vida renasce\n"
-            "como um Draguará. Suas chamas\n"
-            "turquesa aquecem, mas nunca ferem..."),
+            "Legends say every caramel dog that\n"
+            "saves a life is reborn as Draguará.\n"
+            "Its turquoise flames warm but never\n"
+            "harm the innocent."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -201,14 +201,14 @@
         .speciesName = _("Querô"),
         .cryId = CRY_MUDKIP,
         .natDexNum = NATIONAL_DEX_CHARMANDER,
-        .categoryName = _("Sentinela"),
+        .categoryName = _("Sentinel"),
         .height = 4,
         .weight = 31,
         .description = COMPOUND_STRING(
-            "Nunca dorme por completo. Um olho\n"
-            "fica aberto vigiando o ninho - se\n"
-            "algo se aproxima, dispara o grito\n"
-            "'quero-quero!' que ecoa por..."),
+            "It never fully sleeps. One eye\n"
+            "watches its nest, and its\n"
+            "quero-quero cry can echo for miles\n"
+            "when danger approaches."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -261,14 +261,14 @@
         .speciesName = _("Queribela"),
         .cryId = CRY_MARSHTOMP,
         .natDexNum = NATIONAL_DEX_CHARMELEON,
-        .categoryName = _("Vigia"),
+        .categoryName = _("Watchman"),
         .height = 9,
         .weight = 120,
         .description = COMPOUND_STRING(
-            "Após a primeira muda, suas penas se\n"
-            "transformam em membranas\n"
-            "iridescentes de libélula. Paira\n"
-            "sobre a água caçando com precisão..."),
+            "After its first molt, its feathers\n"
+            "become iridescent dragonfly\n"
+            "membranes. It hovers above water and\n"
+            "hunts with exact precision."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -321,14 +321,14 @@
         .speciesName = _("Terolibra"),
         .cryId = CRY_SWAMPERT,
         .natDexNum = NATIONAL_DEX_CHARIZARD,
-        .categoryName = _("Sentinela"),
+        .categoryName = _("Sentinel"),
         .height = 17,
         .weight = 480,
         .description = COMPOUND_STRING(
-            "Quatro asas de libélula sustentam um\n"
-            "corpo esguio de quero-quero adulto.\n"
-            "Um único bater de asas cria uma\n"
-            "rajada d'água capaz de partir..."),
+            "Four dragonfly wings support its\n"
+            "slender lapwing body. A single\n"
+            "wingbeat can launch a stream strong\n"
+            "enough to split a trunk."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -380,14 +380,14 @@
         .speciesName = _("Pimpau"),
         .cryId = CRY_TREECKO,
         .natDexNum = NATIONAL_DEX_SQUIRTLE,
-        .categoryName = _("Marteleta"),
+        .categoryName = _("Hammer-Beak"),
         .height = 4,
         .weight = 28,
         .description = COMPOUND_STRING(
-            "Fura cascas de árvore atrás de\n"
-            "larvas com um bico ainda mole.\n"
-            "Treina o dia inteiro batendo em\n"
-            "tocos secos, e volta pro ninho co..."),
+            "Its soft beak drills bark for\n"
+            "larvae. It trains by hammering dry\n"
+            "stumps all day, then returns to its\n"
+            "nest with a headache."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -440,14 +440,14 @@
         .speciesName = _("Bicopau"),
         .cryId = CRY_GROVYLE,
         .natDexNum = NATIONAL_DEX_WARTORTLE,
-        .categoryName = _("Marteleta"),
+        .categoryName = _("Hammer-Beak"),
         .height = 9,
         .weight = 140,
         .description = COMPOUND_STRING(
-            "O bico endurece até virar\n"
-            "madeira-de-lei. Percute os troncos\n"
-            "em ritmos complexos que outros\n"
-            "Bicopau reconhecem como mensagens."),
+            "Its beak hardens like ironwood. It\n"
+            "drums complex rhythms on trees that\n"
+            "other Bicopau understand as\n"
+            "messages."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -500,14 +500,14 @@
         .speciesName = _("Petropico"),
         .cryId = CRY_SCEPTILE,
         .natDexNum = NATIONAL_DEX_BLASTOISE,
-        .categoryName = _("Escultor"),
+        .categoryName = _("Sculptor"),
         .height = 16,
         .weight = 880,
         .description = COMPOUND_STRING(
-            "Seu bico se calcificou em uma cunha\n"
-            "de granito. Escava cavernas em\n"
-            "paredões de pedra com pancadas que\n"
-            "ecoam como sinos."),
+            "Its beak calcified into a granite\n"
+            "wedge. It carves caves into stone\n"
+            "cliffs with blows that ring like\n"
+            "bells."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -559,14 +559,14 @@
         .speciesName = _("Formilim"),
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_CATERPIE,
-        .categoryName = _("Formigueiro"),
+        .categoryName = _("Anthill"),
         .height = 3,
         .weight = 24,
         .description = COMPOUND_STRING(
-            "Não é uma formiga - é uma colônia\n"
-            "inteira andando em formato de\n"
-            "formiga gigante. Se dispersa quando\n"
-            "ameaçada."),
+            "It is not a single ant, but an\n"
+            "entire colony walking in the shape\n"
+            "of a giant one. The colony scatters\n"
+            "when threatened."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -619,13 +619,13 @@
         .speciesName = _("Saúvarco"),
         .cryId = CRY_IVYSAUR,
         .natDexNum = NATIONAL_DEX_METAPOD,
-        .categoryName = _("Rainha"),
+        .categoryName = _("Queen"),
         .height = 12,
         .weight = 420,
         .description = COMPOUND_STRING(
-            "A rainha das saúvas. Comanda\n"
-            "exércitos que desfolham árvores\n"
-            "inteiras em uma única noite."),
+            "The queen of the leaf-cutter ants.\n"
+            "It commands armies able to strip\n"
+            "every leaf from a tree in one night."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -677,14 +677,13 @@
         .speciesName = _("Capivim"),
         .cryId = CRY_VENUSAUR,
         .natDexNum = NATIONAL_DEX_BUTTERFREE,
-        .categoryName = _("Preguiçoso"),
+        .categoryName = _("Lazy"),
         .height = 8,
         .weight = 220,
         .description = COMPOUND_STRING(
-            "Vive em bandos beira-rio. Aceita\n"
-            "qualquer outro Pokémon em suas\n"
-            "costas - inclusive treinadores\n"
-            "cansados."),
+            "It lives in riverside groups and\n"
+            "lets any friendly POKéMON rest on\n"
+            "its back, including tired Trainers."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -736,14 +735,14 @@
         .speciesName = _("Tucanhão"),
         .cryId = CRY_CHARMANDER,
         .natDexNum = NATIONAL_DEX_WEEDLE,
-        .categoryName = _("Frutífero"),
+        .categoryName = _("Fruit-Bearer"),
         .height = 11,
         .weight = 180,
         .description = COMPOUND_STRING(
-            "Seu bico gigante é oco e leve.\n"
-            "Consegue engolir uma fruta inteira e\n"
-            "cuspir a semente a 40 metros de\n"
-            "distância - planta florestas..."),
+            "Its huge beak is hollow and light.\n"
+            "It swallows fruit whole and spits\n"
+            "seeds far away, planting forests on\n"
+            "its own."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -795,13 +794,14 @@
         .speciesName = _("Sagüim"),
         .cryId = CRY_CHARMELEON,
         .natDexNum = NATIONAL_DEX_KAKUNA,
-        .categoryName = _("Traquinas"),
+        .categoryName = _("Prankster"),
         .height = 3,
         .weight = 15,
         .description = COMPOUND_STRING(
-            "Rouba tudo que brilha. Treinadores\n"
-            "aprendem cedo a guardar as medalhas\n"
-            "de ginásio no fundo da mochila."),
+            "It steals anything that shines.\n"
+            "Trainers quickly learn to keep their\n"
+            "Gym Badges at the bottom of their\n"
+            "bags."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -854,14 +854,14 @@
         .speciesName = _("Micuiras"),
         .cryId = CRY_CHARIZARD,
         .natDexNum = NATIONAL_DEX_BEEDRILL,
-        .categoryName = _("Xamã"),
+        .categoryName = _("Shaman"),
         .height = 9,
         .weight = 120,
         .description = COMPOUND_STRING(
-            "Anciã da tribo dos Sagüim. Enxerga o\n"
-            "futuro em reflexos de rios e prevê\n"
-            "chuvas com uma semana de\n"
-            "antecedência."),
+            "The elder of the Sagüim troop. It\n"
+            "reads the future in river\n"
+            "reflections and can predict rain a\n"
+            "week ahead."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -913,14 +913,14 @@
         .speciesName = _("Boitatá"),
         .cryId = CRY_SQUIRTLE,
         .natDexNum = NATIONAL_DEX_PIDGEY,
-        .categoryName = _("Cobra-Fogo"),
+        .categoryName = _("Fire-Snake"),
         .height = 35,
         .weight = 5,
         .description = COMPOUND_STRING(
-            "Aparece após queimadas. Seu corpo é\n"
-            "uma cobra feita de fogo azul que\n"
-            "devora quem provoca incêndios\n"
-            "florestais."),
+            "It appears after wildfires. Its body\n"
+            "is a blue flame-serpent that hunts\n"
+            "those who deliberately burn the\n"
+            "forest."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -972,14 +972,13 @@
         .speciesName = _("Curupim"),
         .cryId = CRY_WARTORTLE,
         .natDexNum = NATIONAL_DEX_PIDGEOTTO,
-        .categoryName = _("Guardião"),
+        .categoryName = _("Guardian"),
         .height = 6,
         .weight = 80,
         .description = COMPOUND_STRING(
-            "Seus pés apontam para trás. Confunde\n"
-            "caçadores fazendo pegadas que levam\n"
-            "pra dentro da mata em vez de pra\n"
-            "fora."),
+            "Its feet point backward. The tracks\n"
+            "it leaves confuse hunters and guide\n"
+            "them deeper into the forest."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -1032,13 +1031,13 @@
         .speciesName = _("Curupira"),
         .cryId = CRY_BLASTOISE,
         .natDexNum = NATIONAL_DEX_PIDGEOT,
-        .categoryName = _("Guardião"),
+        .categoryName = _("Guardian"),
         .height = 12,
         .weight = 220,
         .description = COMPOUND_STRING(
-            "O verdadeiro senhor da mata. Onde\n"
-            "ele pisa, uma árvore centenária\n"
-            "brota em uma noite."),
+            "The true lord of the forest.\n"
+            "Wherever it steps, a century-old\n"
+            "tree can rise in a single night."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -1090,13 +1089,13 @@
         .speciesName = _("Iaraço"),
         .cryId = CRY_CATERPIE,
         .natDexNum = NATIONAL_DEX_RATTATA,
-        .categoryName = _("Sereia"),
+        .categoryName = _("Mermaid"),
         .height = 18,
         .weight = 450,
         .description = COMPOUND_STRING(
-            "Encanta pescadores com um canto.\n"
-            "Quem cai no rio atrás dela vira\n"
-            "parte de sua corte para sempre."),
+            "Its song enchants fishers. Those who\n"
+            "follow it into the river are said to\n"
+            "join its court forever."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -1148,14 +1147,14 @@
         .speciesName = _("Sacizinho"),
         .cryId = CRY_METAPOD,
         .natDexNum = NATIONAL_DEX_RATICATE,
-        .categoryName = _("Traquinas"),
+        .categoryName = _("Prankster"),
         .height = 7,
         .weight = 50,
         .description = COMPOUND_STRING(
-            "Só tem uma perna. Se movimenta em\n"
-            "redemoinhos e adora atrapalhar\n"
-            "treinadores desatentos - apagando\n"
-            "fogueiras ou soltando Pokémon..."),
+            "It has only one leg and rides inside\n"
+            "whirlwinds. It loves putting out\n"
+            "campfires and teasing careless\n"
+            "Trainers."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -1207,13 +1206,14 @@
         .speciesName = _("Cactula"),
         .cryId = CRY_BUTTERFREE,
         .natDexNum = NATIONAL_DEX_SPEAROW,
-        .categoryName = _("Cacto"),
+        .categoryName = _("Cactus"),
         .height = 5,
         .weight = 60,
         .description = COMPOUND_STRING(
-            "Sobrevive meses sem chuva. Seus\n"
-            "espinhos guardam gotas de veneno\n"
-            "adocicado que atrai Pokémon-inseto."),
+            "Cactula lives in Arauna Caatinga.\n"
+            "This Grass/Poison POKéMON embodies a\n"
+            "part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -1265,14 +1265,14 @@
         .speciesName = _("Muriçoco"),
         .cryId = CRY_WEEDLE,
         .natDexNum = NATIONAL_DEX_FEAROW,
-        .categoryName = _("Ferroada"),
+        .categoryName = _("Stinger"),
         .height = 3,
         .weight = 4,
         .description = COMPOUND_STRING(
-            "Enxames inteiros perseguem\n"
-            "treinadores por dias. O único jeito\n"
-            "de fugir é entrar num rio - e torcer\n"
-            "para não ter Terolibra por perto."),
+            "Muriçoco, the Stinger POKéMON,\n"
+            "inhabits Arauna Amazon. Its\n"
+            "Bug/Poison nature reflects Brazil's\n"
+            "wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -1324,14 +1324,13 @@
         .speciesName = _("Onçaléu"),
         .cryId = CRY_KAKUNA,
         .natDexNum = NATIONAL_DEX_EKANS,
-        .categoryName = _("Caçador"),
+        .categoryName = _("Hunter"),
         .height = 14,
         .weight = 780,
         .description = COMPOUND_STRING(
-            "A onça-pintada da região. Caça em\n"
-            "silêncio absoluto - treinadores só\n"
-            "percebem quando o Pokémon já está no\n"
-            "chão."),
+            "Found in Arauna Pantanal, Onçaléu is\n"
+            "known as the Hunter POKéMON. It\n"
+            "carries a distinct Dark affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -1387,10 +1386,10 @@
         .height = 12,
         .weight = 550,
         .description = COMPOUND_STRING(
-            "Suas garras cortam aço. Come\n"
-            "Formilim inteiros de uma lambida -\n"
-            "mas evita Saúvarco: já perdeu a\n"
-            "língua uma vez."),
+            "Tamanduá lives in Arauna Cerrado.\n"
+            "This Ground/Steel POKéMON embodies a\n"
+            "part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -1442,13 +1441,14 @@
         .speciesName = _("Botim"),
         .cryId = CRY_PIDGEY,
         .natDexNum = NATIONAL_DEX_PIKACHU,
-        .categoryName = _("Boto"),
+        .categoryName = _("RiverDolphin"),
         .height = 11,
         .weight = 395,
         .description = COMPOUND_STRING(
-            "Nasce cinza e vai ficando rosa\n"
-            "conforme ganha confiança. Brinca com\n"
-            "bolhas que ele mesmo sopra."),
+            "Botim, the RiverDolphin POKéMON,\n"
+            "inhabits Arauna Amazon River. Its\n"
+            "Water nature reflects Brazil's\n"
+            "wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -1501,13 +1501,14 @@
         .speciesName = _("Botão"),
         .cryId = CRY_PIDGEOTTO,
         .natDexNum = NATIONAL_DEX_RAICHU,
-        .categoryName = _("Boto"),
+        .categoryName = _("RiverDolphin"),
         .height = 12,
         .weight = 410,
         .description = COMPOUND_STRING(
-            "Sai à noite em bandos. Diz o\n"
-            "folclore que se transforma em rapaz\n"
-            "nas festas de beira-rio."),
+            "Found in Arauna Amazon River, Botão\n"
+            "is known as the RiverDolphin\n"
+            "POKéMON. It carries a distinct\n"
+            "Water/Psychic affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -1560,13 +1561,14 @@
         .speciesName = _("Botogaláu"),
         .cryId = CRY_PIDGEOT,
         .natDexNum = NATIONAL_DEX_SANDSHREW,
-        .categoryName = _("Encantado"),
+        .categoryName = _("Enchanted"),
         .height = 14,
         .weight = 425,
         .description = COMPOUND_STRING(
-            "Chapéu branco esconde o buraco do\n"
-            "topo da cabeça. Encanta moças e some\n"
-            "no rio ao amanhecer."),
+            "Botogaláu lives in Arauna Amazon\n"
+            "River. This Water/Psychic POKéMON\n"
+            "embodies a part of Brazil's nature,\n"
+            "folklore, or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -1618,13 +1620,14 @@
         .speciesName = _("Tatuim"),
         .cryId = CRY_RATTATA,
         .natDexNum = NATIONAL_DEX_SANDSLASH,
-        .categoryName = _("Bolinha"),
+        .categoryName = _("Rolling"),
         .height = 15,
         .weight = 440,
         .description = COMPOUND_STRING(
-            "Se enrola numa bola do tamanho de\n"
-            "uma laranja. Rola morro abaixo pra\n"
-            "fugir."),
+            "Tatuim, the Rolling POKéMON,\n"
+            "inhabits Arauna Caatinga. Its Ground\n"
+            "nature reflects Brazil's wildlife\n"
+            "and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -1677,13 +1680,14 @@
         .speciesName = _("Tatubola"),
         .cryId = CRY_RATICATE,
         .natDexNum = NATIONAL_DEX_NIDORAN_F,
-        .categoryName = _("Fortaleza"),
+        .categoryName = _("Fortress"),
         .height = 16,
         .weight = 455,
         .description = COMPOUND_STRING(
-            "A carapaça vira aço quando ameaçado.\n"
-            "Ricocheteia ataques físicos de\n"
-            "volta."),
+            "Found in Arauna Caatinga, Tatubola\n"
+            "is known as the Fortress POKéMON. It\n"
+            "carries a distinct Ground/Steel\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -1736,13 +1740,14 @@
         .speciesName = _("Tatuçu"),
         .cryId = CRY_SPEAROW,
         .natDexNum = NATIONAL_DEX_NIDORINA,
-        .categoryName = _("Escavador"),
+        .categoryName = _("Burrower"),
         .height = 18,
         .weight = 470,
         .description = COMPOUND_STRING(
-            "Escava túneis de 20 metros por\n"
-            "noite. Aldeias inteiras já sumiram\n"
-            "sob suas galerias."),
+            "Tatuçu lives in Arauna Caatinga.\n"
+            "This Ground/Steel POKéMON embodies a\n"
+            "part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -1794,13 +1799,14 @@
         .speciesName = _("Ararinha"),
         .cryId = CRY_FEAROW,
         .natDexNum = NATIONAL_DEX_NIDOQUEEN,
-        .categoryName = _("Papagaio"),
+        .categoryName = _("Parrot"),
         .height = 19,
         .weight = 485,
         .description = COMPOUND_STRING(
-            "Imita qualquer som que ouve -\n"
-            "inclusive gritos de treinadores\n"
-            "caindo do barranco."),
+            "Ararinha, the Parrot POKéMON,\n"
+            "inhabits Arauna Pantanal. Its Flying\n"
+            "nature reflects Brazil's wildlife\n"
+            "and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -1853,12 +1859,14 @@
         .speciesName = _("Arará"),
         .cryId = CRY_EKANS,
         .natDexNum = NATIONAL_DEX_NIDORAN_M,
-        .categoryName = _("Chamuscado"),
+        .categoryName = _("Scorched"),
         .height = 21,
         .weight = 500,
         .description = COMPOUND_STRING(
-            "Penas vermelhas soltam faíscas\n"
-            "quando bate as asas com força."),
+            "Found in Arauna Pantanal, Arará is\n"
+            "known as the Scorched POKéMON. It\n"
+            "carries a distinct Flying/Fire\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -1911,13 +1919,14 @@
         .speciesName = _("Araracanga"),
         .cryId = CRY_ARBOK,
         .natDexNum = NATIONAL_DEX_NIDORINO,
-        .categoryName = _("Flamejante"),
+        .categoryName = _("Blazing"),
         .height = 22,
         .weight = 515,
         .description = COMPOUND_STRING(
-            "Voa entre as nuvens do cerrado. Suas\n"
-            "penas caídas incendeiam a grama\n"
-            "seca."),
+            "Araracanga lives in Arauna Pantanal.\n"
+            "This Flying/Fire POKéMON embodies a\n"
+            "part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -1969,13 +1978,14 @@
         .speciesName = _("Jacarim"),
         .cryId = CRY_PIKACHU,
         .natDexNum = NATIONAL_DEX_NIDOKING,
-        .categoryName = _("Réptil"),
+        .categoryName = _("Reptile"),
         .height = 24,
         .weight = 530,
         .description = COMPOUND_STRING(
-            "Fica boiando com só os olhos de\n"
-            "fora. Confunde treinadores com um\n"
-            "tronco flutuante."),
+            "Jacarim, the Reptile POKéMON,\n"
+            "inhabits Arauna Pantanal. Its Water\n"
+            "nature reflects Brazil's wildlife\n"
+            "and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -2028,13 +2038,14 @@
         .speciesName = _("Jacarão"),
         .cryId = CRY_RAICHU,
         .natDexNum = NATIONAL_DEX_CLEFAIRY,
-        .categoryName = _("Emboscada"),
+        .categoryName = _("Ambush"),
         .height = 25,
         .weight = 545,
         .description = COMPOUND_STRING(
-            "Espera horas imóvel. Quando ataca,\n"
-            "arrasta a presa pro fundo em uma\n"
-            "pirueta."),
+            "Found in Arauna Pantanal, Jacarão is\n"
+            "known as the Ambush POKéMON. It\n"
+            "carries a distinct Water/Dark\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -2091,9 +2102,10 @@
         .height = 27,
         .weight = 560,
         .description = COMPOUND_STRING(
-            "Descendente direto dos dinossauros.\n"
-            "Suas mandíbulas quebram cascos de\n"
-            "Tatuçu."),
+            "Jacarodon lives in Arauna Pantanal.\n"
+            "This Water/Dragon POKéMON embodies a\n"
+            "part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -2145,13 +2157,14 @@
         .speciesName = _("Preguicim"),
         .cryId = CRY_SANDSLASH,
         .natDexNum = NATIONAL_DEX_VULPIX,
-        .categoryName = _("Lento"),
+        .categoryName = _("Slow"),
         .height = 28,
         .weight = 575,
         .description = COMPOUND_STRING(
-            "Se move tão devagar que musgo cresce\n"
-            "em seu pelo. Serve de casa pra\n"
-            "insetos."),
+            "Preguicim, the Slow POKéMON,\n"
+            "inhabits Arauna Atlantic Forest. Its\n"
+            "Grass nature reflects Brazil's\n"
+            "wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -2204,13 +2217,14 @@
         .speciesName = _("Preguicão"),
         .cryId = CRY_NIDORAN_F,
         .natDexNum = NATIONAL_DEX_NINETALES,
-        .categoryName = _("Sonhador"),
+        .categoryName = _("Dreamer"),
         .height = 30,
         .weight = 590,
         .description = COMPOUND_STRING(
-            "Passa 20 horas por dia dormindo. Nos\n"
-            "sonhos, prevê chuvas com semanas de\n"
-            "antecedência."),
+            "Found in Arauna Atlantic Forest,\n"
+            "Preguicão is known as the Dreamer\n"
+            "POKéMON. It carries a distinct\n"
+            "Grass/Psychic affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -2263,13 +2277,14 @@
         .speciesName = _("BichoPregça"),
         .cryId = CRY_NIDORINA,
         .natDexNum = NATIONAL_DEX_JIGGLYPUFF,
-        .categoryName = _("Xamã"),
+        .categoryName = _("Shaman"),
         .height = 31,
         .weight = 605,
         .description = COMPOUND_STRING(
-            "Do tamanho de um elefante. Anda uma\n"
-            "vez por lua e sabe onde toda árvore\n"
-            "centenária brota."),
+            "Bicho-Preguiça lives in Arauna\n"
+            "Atlantic Forest. This Grass/Psychic\n"
+            "POKéMON embodies a part of Brazil's\n"
+            "nature, folklore, or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -2321,13 +2336,14 @@
         .speciesName = _("Papaguim"),
         .cryId = CRY_NIDOQUEEN,
         .natDexNum = NATIONAL_DEX_WIGGLYTUFF,
-        .categoryName = _("Falante"),
+        .categoryName = _("Talker"),
         .height = 3,
         .weight = 620,
         .description = COMPOUND_STRING(
-            "Aprende a repetir palavras em três\n"
-            "dias. Aprende palavrões em uma\n"
-            "tarde."),
+            "Papaguim, the Talker POKéMON,\n"
+            "inhabits Arauna Atlantic Forest. Its\n"
+            "Flying nature reflects Brazil's\n"
+            "wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -2380,13 +2396,14 @@
         .speciesName = _("Papagaio"),
         .cryId = CRY_NIDORAN_M,
         .natDexNum = NATIONAL_DEX_ZUBAT,
-        .categoryName = _("Falante"),
+        .categoryName = _("Talker"),
         .height = 4,
         .weight = 635,
         .description = COMPOUND_STRING(
-            "Memoriza conversas inteiras e as\n"
-            "repete pra pessoas erradas. Causa\n"
-            "muita confusão."),
+            "Found in Arauna Atlantic Forest,\n"
+            "Papagaio is known as the Talker\n"
+            "POKéMON. It carries a distinct\n"
+            "Flying/Psychic affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -2439,13 +2456,14 @@
         .speciesName = _("Papagaião"),
         .cryId = CRY_NIDORINO,
         .natDexNum = NATIONAL_DEX_GOLBAT,
-        .categoryName = _("Conselheiro"),
+        .categoryName = _("Advisor"),
         .height = 6,
         .weight = 650,
         .description = COMPOUND_STRING(
-            "Vive 200 anos. Guarda segredos de\n"
-            "gerações de treinadores em sua\n"
-            "memória."),
+            "Papagaião lives in Arauna Atlantic\n"
+            "Forest. This Flying/Psychic POKéMON\n"
+            "embodies a part of Brazil's nature,\n"
+            "folklore, or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -2497,13 +2515,14 @@
         .speciesName = _("Antinha"),
         .cryId = CRY_NIDOKING,
         .natDexNum = NATIONAL_DEX_ODDISH,
-        .categoryName = _("Bochechudo"),
+        .categoryName = _("Chubby-Cheek"),
         .height = 8,
         .weight = 665,
         .description = COMPOUND_STRING(
-            "Listrada como um javali pequeno. Sua\n"
-            "tromba curta cheira frutas a 100\n"
-            "metros."),
+            "Antinha, the Chubby-Cheek POKéMON,\n"
+            "inhabits Arauna Amazon. Its Normal\n"
+            "nature reflects Brazil's wildlife\n"
+            "and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -2556,13 +2575,14 @@
         .speciesName = _("Anta"),
         .cryId = CRY_CLEFAIRY,
         .natDexNum = NATIONAL_DEX_GLOOM,
-        .categoryName = _("Nadador"),
+        .categoryName = _("Swimmer"),
         .height = 9,
         .weight = 680,
         .description = COMPOUND_STRING(
-            "Atravessa rios inteiros submersa.\n"
-            "Come até 40 quilos de folhas por\n"
-            "dia."),
+            "Found in Arauna Amazon, Anta is\n"
+            "known as the Swimmer POKéMON. It\n"
+            "carries a distinct Normal/Water\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -2614,12 +2634,14 @@
         .speciesName = _("Antaraú"),
         .cryId = CRY_CLEFABLE,
         .natDexNum = NATIONAL_DEX_VILEPLUME,
-        .categoryName = _("Espírito"),
+        .categoryName = _("Spirit"),
         .height = 11,
         .weight = 695,
         .description = COMPOUND_STRING(
-            "Espírito da mata. Guia treinadores\n"
-            "perdidos até a borda da floresta."),
+            "Antaraú lives in Arauna Amazon. This\n"
+            "Normal/Water POKéMON embodies a part\n"
+            "of Brazil's nature, folklore, or\n"
+            "culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -2671,12 +2693,14 @@
         .speciesName = _("Sucurim"),
         .cryId = CRY_VULPIX,
         .natDexNum = NATIONAL_DEX_PARAS,
-        .categoryName = _("Serpente"),
+        .categoryName = _("Serpent"),
         .height = 12,
         .weight = 710,
         .description = COMPOUND_STRING(
-            "Já nasce com 2 metros. Se enrola em\n"
-            "galhos esperando presas."),
+            "Sucurim, the Serpent POKéMON,\n"
+            "inhabits Arauna Rivers. Its\n"
+            "Water/Poison nature reflects\n"
+            "Brazil's wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -2729,13 +2753,14 @@
         .speciesName = _("Sucuri"),
         .cryId = CRY_NINETALES,
         .natDexNum = NATIONAL_DEX_PARASECT,
-        .categoryName = _("Constritora"),
+        .categoryName = _("Constrictor"),
         .height = 35,
         .weight = 960,
         .description = COMPOUND_STRING(
-            "Sufoca a presa e engole inteira. Se\n"
-            "torna Boiúna após anos absorvendo\n"
-            "lendas do rio."),
+            "Found in Arauna Rivers, Sucuri is\n"
+            "known as the Constrictor POKéMON. It\n"
+            "carries a distinct Water/Poison\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -2788,14 +2813,14 @@
         .speciesName = _("Boiuna"),
         .cryId = CRY_JIGGLYPUFF,
         .natDexNum = NATIONAL_DEX_VENONAT,
-        .categoryName = _("Cobra-Grande"),
+        .categoryName = _("Great-Snake"),
         .height = 82,
         .weight = 3800,
         .description = COMPOUND_STRING(
-            "Cobra-Grande da mitologia amazônica.\n"
-            "Olhos brilham como faróis de barco\n"
-            "em noite de igarapé. Diz a lenda que\n"
-            "sua passagem forma novos rios."),
+            "Boiuna lives in Arauna Amazon. This\n"
+            "Water/Dragon POKéMON embodies a part\n"
+            "of Brazil's nature, folklore, or\n"
+            "culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -2847,12 +2872,14 @@
         .speciesName = _("Borbolim"),
         .cryId = CRY_WIGGLYTUFF,
         .natDexNum = NATIONAL_DEX_VENOMOTH,
-        .categoryName = _("Lagarta"),
+        .categoryName = _("Caterpillar"),
         .height = 16,
         .weight = 755,
         .description = COMPOUND_STRING(
-            "Come folhas de urtiga sem se\n"
-            "envenenar. Guarda o veneno na pele."),
+            "Borbolim, the Caterpillar POKéMON,\n"
+            "inhabits Arauna Atlantic Forest. Its\n"
+            "Bug nature reflects Brazil's\n"
+            "wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -2905,13 +2932,14 @@
         .speciesName = _("Casulete"),
         .cryId = CRY_ZUBAT,
         .natDexNum = NATIONAL_DEX_DIGLETT,
-        .categoryName = _("Casulo"),
+        .categoryName = _("Cocoon"),
         .height = 18,
         .weight = 770,
         .description = COMPOUND_STRING(
-            "Casulo iridescente que reflete o\n"
-            "azul do céu. Não se move, mas dá\n"
-            "choque se tocado."),
+            "Found in Arauna Atlantic Forest,\n"
+            "Casulete is known as the Cocoon\n"
+            "POKéMON. It carries a distinct Bug\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -2964,13 +2992,14 @@
         .speciesName = _("Morphália"),
         .cryId = CRY_GOLBAT,
         .natDexNum = NATIONAL_DEX_DUGTRIO,
-        .categoryName = _("Iridescente"),
+        .categoryName = _("Iridescent"),
         .height = 19,
         .weight = 785,
         .description = COMPOUND_STRING(
-            "Asas do tamanho de mãos humanas.\n"
-            "Suas escamas azuis viram poeira\n"
-            "mágica curativa."),
+            "Morphália lives in Arauna Atlantic\n"
+            "Forest. This Bug/Fairy POKéMON\n"
+            "embodies a part of Brazil's nature,\n"
+            "folklore, or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -3022,13 +3051,14 @@
         .speciesName = _("Guaracim"),
         .cryId = CRY_ODDISH,
         .natDexNum = NATIONAL_DEX_MEOWTH,
-        .categoryName = _("Perna-longa"),
+        .categoryName = _("Long-Legged"),
         .height = 21,
         .weight = 800,
         .description = COMPOUND_STRING(
-            "Pernas desproporcionalmente longas.\n"
-            "Corre de galope pelo cerrado atrás\n"
-            "de frutas."),
+            "Guaracim, the Long-Legged POKéMON,\n"
+            "inhabits Arauna Cerrado. Its Fire\n"
+            "nature reflects Brazil's wildlife\n"
+            "and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -3085,9 +3115,10 @@
         .height = 22,
         .weight = 815,
         .description = COMPOUND_STRING(
-            "Uiva ao entardecer. Come lobeira,\n"
-            "uma fruta doce, e planta a floresta\n"
-            "com suas fezes."),
+            "Found in Arauna Cerrado, Guará is\n"
+            "known as the Cerrado POKéMON. It\n"
+            "carries a distinct Fire/Normal\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -3139,12 +3170,14 @@
         .speciesName = _("Guaraflama"),
         .cryId = CRY_VILEPLUME,
         .natDexNum = NATIONAL_DEX_PSYDUCK,
-        .categoryName = _("Espírito"),
+        .categoryName = _("Spirit"),
         .height = 24,
         .weight = 830,
         .description = COMPOUND_STRING(
-            "Aparece nas noites de lua nova. Suas\n"
-            "patas deixam pegadas em brasa."),
+            "Guaraflama lives in Arauna Cerrado.\n"
+            "This Fire/Ghost POKéMON embodies a\n"
+            "part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -3196,12 +3229,14 @@
         .speciesName = _("Peixim"),
         .cryId = CRY_PARAS,
         .natDexNum = NATIONAL_DEX_GOLDUCK,
-        .categoryName = _("Manso"),
+        .categoryName = _("Gentle"),
         .height = 25,
         .weight = 845,
         .description = COMPOUND_STRING(
-            "Nada devagar mamando na mãe. Chora\n"
-            "com voz de bebê quando se perde."),
+            "Peixim, the Gentle POKéMON, inhabits\n"
+            "Arauna Amazon. Its Water nature\n"
+            "reflects Brazil's wildlife and\n"
+            "legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -3254,12 +3289,13 @@
         .speciesName = _("Peixeboi"),
         .cryId = CRY_PARASECT,
         .natDexNum = NATIONAL_DEX_MANKEY,
-        .categoryName = _("Manso"),
+        .categoryName = _("Gentle"),
         .height = 27,
         .weight = 860,
         .description = COMPOUND_STRING(
-            "Herbívoro pacífico. Come até 50\n"
-            "quilos de plantas aquáticas por dia."),
+            "Found in Arauna Amazon, Peixeboi is\n"
+            "known as the Gentle POKéMON. It\n"
+            "carries a distinct Water affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -3311,12 +3347,14 @@
         .speciesName = _("Mãe-d'Água"),
         .cryId = CRY_VENONAT,
         .natDexNum = NATIONAL_DEX_PRIMEAPE,
-        .categoryName = _("Guardiã"),
+        .categoryName = _("Guardian"),
         .height = 28,
         .weight = 875,
         .description = COMPOUND_STRING(
-            "Protetora dos rios. Diz o folclore\n"
-            "que amamentou crianças perdidas."),
+            "Mãe-d'Água lives in Arauna Amazon.\n"
+            "This Water/Fairy POKéMON embodies a\n"
+            "part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -3368,12 +3406,14 @@
         .speciesName = _("Mandim"),
         .cryId = CRY_VENOMOTH,
         .natDexNum = NATIONAL_DEX_GROWLITHE,
-        .categoryName = _("Bigode"),
+        .categoryName = _("Whisker"),
         .height = 30,
         .weight = 890,
         .description = COMPOUND_STRING(
-            "Bigodes farejam comida no lodo do\n"
-            "fundo. Meio cego."),
+            "Mandim, the Whisker POKéMON,\n"
+            "inhabits Arauna Rivers. Its Water\n"
+            "nature reflects Brazil's wildlife\n"
+            "and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -3426,12 +3466,14 @@
         .speciesName = _("Mandí"),
         .cryId = CRY_DIGLETT,
         .natDexNum = NATIONAL_DEX_ARCANINE,
-        .categoryName = _("Ferroada"),
+        .categoryName = _("Stinger"),
         .height = 31,
         .weight = 905,
         .description = COMPOUND_STRING(
-            "Espinhos venenosos nas nadadeiras.\n"
-            "Uma picada tira o sono por dias."),
+            "Found in Arauna Rivers, Mandí is\n"
+            "known as the Stinger POKéMON. It\n"
+            "carries a distinct Water/Poison\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -3484,12 +3526,14 @@
         .speciesName = _("Mandubé"),
         .cryId = CRY_DUGTRIO,
         .natDexNum = NATIONAL_DEX_POLIWAG,
-        .categoryName = _("Devorador"),
+        .categoryName = _("Devourer"),
         .height = 3,
         .weight = 20,
         .description = COMPOUND_STRING(
-            "Do tamanho de um homem. Nada no\n"
-            "escuro absoluto do fundo dos rios."),
+            "Mandubé lives in Arauna Rivers. This\n"
+            "Water/Dark POKéMON embodies a part\n"
+            "of Brazil's nature, folklore, or\n"
+            "culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -3541,13 +3585,14 @@
         .speciesName = _("Preguim"),
         .cryId = CRY_MEOWTH,
         .natDexNum = NATIONAL_DEX_POLIWHIRL,
-        .categoryName = _("Traquinas"),
+        .categoryName = _("Prankster"),
         .height = 4,
         .weight = 35,
         .description = COMPOUND_STRING(
-            "Aprende a usar galhos como\n"
-            "ferramentas ainda filhote. Rouba\n"
-            "comida de acampamentos."),
+            "Preguim, the Prankster POKéMON,\n"
+            "inhabits Arauna Atlantic Forest. Its\n"
+            "Normal nature reflects Brazil's\n"
+            "wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -3600,13 +3645,14 @@
         .speciesName = _("Prego"),
         .cryId = CRY_PERSIAN,
         .natDexNum = NATIONAL_DEX_POLIWRATH,
-        .categoryName = _("Ferramenteir"),
+        .categoryName = _("Toolmaker"),
         .height = 6,
         .weight = 50,
         .description = COMPOUND_STRING(
-            "Usa pedras pra quebrar castanhas.\n"
-            "Ensina técnicas a filhotes por\n"
-            "gerações."),
+            "Found in Arauna Atlantic Forest,\n"
+            "Prego is known as the Toolmaker\n"
+            "POKéMON. It carries a distinct\n"
+            "Fighting/Normal affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -3659,13 +3705,14 @@
         .speciesName = _("Pregarcanjo"),
         .cryId = CRY_PSYDUCK,
         .natDexNum = NATIONAL_DEX_ABRA,
-        .categoryName = _("Sábio"),
+        .categoryName = _("Sage"),
         .height = 8,
         .weight = 65,
         .description = COMPOUND_STRING(
-            "Considerado o mais inteligente dos\n"
-            "primatas de Arauana. Resolve enigmas\n"
-            "humanos."),
+            "Pregarcanjo lives in Arauna Atlantic\n"
+            "Forest. This Fighting/Psychic\n"
+            "POKéMON embodies a part of Brazil's\n"
+            "nature, folklore, or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -3717,12 +3764,14 @@
         .speciesName = _("Aranin"),
         .cryId = CRY_GOLDUCK,
         .natDexNum = NATIONAL_DEX_KADABRA,
-        .categoryName = _("Fios"),
+        .categoryName = _("Threads"),
         .height = 9,
         .weight = 80,
         .description = COMPOUND_STRING(
-            "Tece teias em galhos secos. Come\n"
-            "pequenas Formilim."),
+            "Aranin, the Threads POKéMON,\n"
+            "inhabits Arauna Cerrado. Its Bug\n"
+            "nature reflects Brazil's wildlife\n"
+            "and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -3775,12 +3824,14 @@
         .speciesName = _("Caraninha"),
         .cryId = CRY_MANKEY,
         .natDexNum = NATIONAL_DEX_ALAKAZAM,
-        .categoryName = _("Peluda"),
+        .categoryName = _("Hairy"),
         .height = 11,
         .weight = 95,
         .description = COMPOUND_STRING(
-            "Pelos urticantes causam coceira\n"
-            "insuportável em contato."),
+            "Found in Arauna Cerrado, Caraninha\n"
+            "is known as the Hairy POKéMON. It\n"
+            "carries a distinct Bug/Poison\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -3833,12 +3884,14 @@
         .speciesName = _("Caranga"),
         .cryId = CRY_PRIMEAPE,
         .natDexNum = NATIONAL_DEX_MACHOP,
-        .categoryName = _("Peluda"),
+        .categoryName = _("Hairy"),
         .height = 12,
         .weight = 110,
         .description = COMPOUND_STRING(
-            "Do tamanho de um prato. Presas\n"
-            "perfuram até luvas de couro."),
+            "Caranga lives in Arauna Cerrado.\n"
+            "This Bug/Poison POKéMON embodies a\n"
+            "part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -3890,12 +3943,14 @@
         .speciesName = _("Gatim"),
         .cryId = CRY_GROWLITHE,
         .natDexNum = NATIONAL_DEX_MACHOKE,
-        .categoryName = _("Miado"),
+        .categoryName = _("Mewing"),
         .height = 14,
         .weight = 125,
         .description = COMPOUND_STRING(
-            "Mia igual gato doméstico, mas não\n"
-            "deixa ninguém chegar perto."),
+            "Gatim, the Mewing POKéMON, inhabits\n"
+            "Arauna Atlantic Forest. Its Normal\n"
+            "nature reflects Brazil's wildlife\n"
+            "and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -3948,12 +4003,14 @@
         .speciesName = _("Gato-do-mato"),
         .cryId = CRY_ARCANINE,
         .natDexNum = NATIONAL_DEX_MACHAMP,
-        .categoryName = _("Furtivo"),
+        .categoryName = _("Stealth"),
         .height = 15,
         .weight = 140,
         .description = COMPOUND_STRING(
-            "Caça pássaros no meio da noite. Suas\n"
-            "pupilas brilham verde nas lanternas."),
+            "Found in Arauna Atlantic Forest,\n"
+            "Gato-do-mato is known as the Stealth\n"
+            "POKéMON. It carries a distinct\n"
+            "Normal/Dark affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -4005,13 +4062,14 @@
         .speciesName = _("Jaguatirica"),
         .cryId = CRY_POLIWAG,
         .natDexNum = NATIONAL_DEX_BELLSPROUT,
-        .categoryName = _("Manchada"),
+        .categoryName = _("Spotted"),
         .height = 16,
         .weight = 155,
         .description = COMPOUND_STRING(
-            "Manchas em roseta como uma\n"
-            "onça-pintada em miniatura. Sobe em\n"
-            "árvores atrás de macacos."),
+            "Jaguatirica lives in Arauna Atlantic\n"
+            "Forest. This Dark/Normal POKéMON\n"
+            "embodies a part of Brazil's nature,\n"
+            "folklore, or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -4063,13 +4121,14 @@
         .speciesName = _("Cutim"),
         .cryId = CRY_POLIWHIRL,
         .natDexNum = NATIONAL_DEX_WEEPINBELL,
-        .categoryName = _("Roedor"),
+        .categoryName = _("Rodent"),
         .height = 18,
         .weight = 170,
         .description = COMPOUND_STRING(
-            "Enterra sementes de castanha e\n"
-            "esquece onde colocou. Planta a\n"
-            "floresta sem querer."),
+            "Cutim, the Rodent POKéMON, inhabits\n"
+            "Arauna Atlantic Forest. Its Normal\n"
+            "nature reflects Brazil's wildlife\n"
+            "and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -4122,12 +4181,14 @@
         .speciesName = _("Cutia"),
         .cryId = CRY_POLIWRATH,
         .natDexNum = NATIONAL_DEX_VICTREEBEL,
-        .categoryName = _("Roedor"),
+        .categoryName = _("Rodent"),
         .height = 19,
         .weight = 185,
         .description = COMPOUND_STRING(
-            "Roe qualquer coisa. Dentes crescem a\n"
-            "vida inteira."),
+            "Found in Arauna Atlantic Forest,\n"
+            "Cutia is known as the Rodent\n"
+            "POKéMON. It carries a distinct\n"
+            "Normal affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -4179,12 +4240,14 @@
         .speciesName = _("Paca"),
         .cryId = CRY_ABRA,
         .natDexNum = NATIONAL_DEX_TENTACOOL,
-        .categoryName = _("Noturno"),
+        .categoryName = _("Nocturnal"),
         .height = 21,
         .weight = 200,
         .description = COMPOUND_STRING(
-            "Só sai de noite. Correndo assobiando\n"
-            "pela mata escura."),
+            "Paca lives in Arauna Atlantic\n"
+            "Forest. This Normal/Dark POKéMON\n"
+            "embodies a part of Brazil's nature,\n"
+            "folklore, or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -4236,13 +4299,14 @@
         .speciesName = _("Formigão"),
         .cryId = CRY_KADABRA,
         .natDexNum = NATIONAL_DEX_TENTACRUEL,
-        .categoryName = _("Mandíbula"),
+        .categoryName = _("Jaw"),
         .height = 22,
         .weight = 215,
         .description = COMPOUND_STRING(
-            "Mordida dolorida como levar 24 horas\n"
-            "de cãibra. Nome popular: 'formiga\n"
-            "bala'."),
+            "Formigão, the Jaw POKéMON, inhabits\n"
+            "Arauna Amazon. Its Bug/Fighting\n"
+            "nature reflects Brazil's wildlife\n"
+            "and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -4294,12 +4358,14 @@
         .speciesName = _("Marimbondo"),
         .cryId = CRY_ALAKAZAM,
         .natDexNum = NATIONAL_DEX_GEODUDE,
-        .categoryName = _("Ferroada"),
+        .categoryName = _("Stinger"),
         .height = 24,
         .weight = 230,
         .description = COMPOUND_STRING(
-            "Enxame agressivo. Persegue ameaças\n"
-            "por quilômetros."),
+            "Found in Arauna Cerrado, Marimbondo\n"
+            "is known as the Stinger POKéMON. It\n"
+            "carries a distinct Bug/Poison\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -4351,13 +4417,14 @@
         .speciesName = _("Abelhinha"),
         .cryId = CRY_MACHOP,
         .natDexNum = NATIONAL_DEX_GRAVELER,
-        .categoryName = _("Mel"),
+        .categoryName = _("Honey"),
         .height = 25,
         .weight = 245,
         .description = COMPOUND_STRING(
-            "Não tem ferrão. Faz mel doce que\n"
-            "treinadores usam pra recuperar\n"
-            "Pokémon feridos."),
+            "Abelhinha lives in Arauna Cerrado.\n"
+            "This Bug/Flying POKéMON embodies a\n"
+            "part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -4409,12 +4476,14 @@
         .speciesName = _("Quatim"),
         .cryId = CRY_MACHOKE,
         .natDexNum = NATIONAL_DEX_GOLEM,
-        .categoryName = _("Focinho-long"),
+        .categoryName = _("Long-Snout"),
         .height = 27,
         .weight = 260,
         .description = COMPOUND_STRING(
-            "Bando de 15 andando pelas trilhas.\n"
-            "Fura mochila atrás de biscoito."),
+            "Quatim, the Long-Snout POKéMON,\n"
+            "inhabits Arauna Atlantic Forest. Its\n"
+            "Normal nature reflects Brazil's\n"
+            "wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -4467,12 +4536,14 @@
         .speciesName = _("Quati"),
         .cryId = CRY_MACHAMP,
         .natDexNum = NATIONAL_DEX_PONYTA,
-        .categoryName = _("Ladrão"),
+        .categoryName = _("Thief"),
         .height = 28,
         .weight = 275,
         .description = COMPOUND_STRING(
-            "Aprende a abrir zíperes de tenda.\n"
-            "Rouba tudo que brilha."),
+            "Found in Arauna Atlantic Forest,\n"
+            "Quati is known as the Thief POKéMON.\n"
+            "It carries a distinct Normal/Dark\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -4524,12 +4595,14 @@
         .speciesName = _("Coati"),
         .cryId = CRY_BELLSPROUT,
         .natDexNum = NATIONAL_DEX_RAPIDASH,
-        .categoryName = _("Caverna"),
+        .categoryName = _("Cave"),
         .height = 30,
         .weight = 290,
         .description = COMPOUND_STRING(
-            "Vive em cavernas escuras. Focinho\n"
-            "longuíssimo pra caçar morcegos."),
+            "Coati lives in Arauna Caves. This\n"
+            "Dark/Ground POKéMON embodies a part\n"
+            "of Brazil's nature, folklore, or\n"
+            "culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -4581,13 +4654,14 @@
         .speciesName = _("Gambá"),
         .cryId = CRY_WEEPINBELL,
         .natDexNum = NATIONAL_DEX_SLOWPOKE,
-        .categoryName = _("Fedido"),
+        .categoryName = _("Stench"),
         .height = 31,
         .weight = 305,
         .description = COMPOUND_STRING(
-            "Solta um cheiro nauseante quando\n"
-            "ameaçado. Treinadores fogem antes do\n"
-            "Pokémon."),
+            "Gambá, the Stench POKéMON, inhabits\n"
+            "Arauna Atlantic Forest. Its\n"
+            "Poison/Normal nature reflects\n"
+            "Brazil's wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -4640,12 +4714,14 @@
         .speciesName = _("Cangambá"),
         .cryId = CRY_VICTREEBEL,
         .natDexNum = NATIONAL_DEX_SLOWBRO,
-        .categoryName = _("Mefítico"),
+        .categoryName = _("Noxious"),
         .height = 3,
         .weight = 320,
         .description = COMPOUND_STRING(
-            "Jato de fedor atinge 3 metros de\n"
-            "distância. Dura semanas na roupa."),
+            "Found in Arauna Cerrado, Cangambá is\n"
+            "known as the Noxious POKéMON. It\n"
+            "carries a distinct Poison/Dark\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -4697,12 +4773,14 @@
         .speciesName = _("Sarué"),
         .cryId = CRY_TENTACOOL,
         .natDexNum = NATIONAL_DEX_MAGNEMITE,
-        .categoryName = _("Farsante"),
+        .categoryName = _("Trickster"),
         .height = 4,
         .weight = 335,
         .description = COMPOUND_STRING(
-            "Se finge de morto por horas quando\n"
-            "ameaçado. Enganou até Onçaléu."),
+            "Sarué lives in Arauna Cerrado. This\n"
+            "Poison/Ghost POKéMON embodies a part\n"
+            "of Brazil's nature, folklore, or\n"
+            "culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -4754,12 +4832,14 @@
         .speciesName = _("Tuquinho"),
         .cryId = CRY_TENTACRUEL,
         .natDexNum = NATIONAL_DEX_MAGNETON,
-        .categoryName = _("Bicudo"),
+        .categoryName = _("Big-Beak"),
         .height = 6,
         .weight = 350,
         .description = COMPOUND_STRING(
-            "Bico colorido chama fêmeas de longe.\n"
-            "Come frutas silvestres."),
+            "Tuquinho, the Big-Beak POKéMON,\n"
+            "inhabits Arauna Amazon. Its Flying\n"
+            "nature reflects Brazil's wildlife\n"
+            "and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -4812,12 +4892,14 @@
         .speciesName = _("Aracari"),
         .cryId = CRY_GEODUDE,
         .natDexNum = NATIONAL_DEX_FARFETCHD,
-        .categoryName = _("Bicudo"),
+        .categoryName = _("Big-Beak"),
         .height = 8,
         .weight = 365,
         .description = COMPOUND_STRING(
-            "Voa em bando de 6. Todos comem da\n"
-            "mesma fruta ao mesmo tempo."),
+            "Found in Arauna Amazon, Aracari is\n"
+            "known as the Big-Beak POKéMON. It\n"
+            "carries a distinct Flying/Grass\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -4869,13 +4951,14 @@
         .speciesName = _("Curicaca"),
         .cryId = CRY_GRAVELER,
         .natDexNum = NATIONAL_DEX_DODUO,
-        .categoryName = _("Alarmante"),
+        .categoryName = _("Raucous"),
         .height = 9,
         .weight = 380,
         .description = COMPOUND_STRING(
-            "Grito estridente ao amanhecer. Toda\n"
-            "fazenda de Arauana odeia esse\n"
-            "Pokémon."),
+            "Curicaca lives in Arauna Pantanal.\n"
+            "This Flying/Normal POKéMON embodies\n"
+            "a part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -4927,12 +5010,14 @@
         .speciesName = _("Sapim"),
         .cryId = CRY_GOLEM,
         .natDexNum = NATIONAL_DEX_DODRIO,
-        .categoryName = _("Girino"),
+        .categoryName = _("Tadpole"),
         .height = 11,
         .weight = 395,
         .description = COMPOUND_STRING(
-            "Nada em cardumes. Vira Sapão quando\n"
-            "as patas crescem."),
+            "Sapim, the Tadpole POKéMON, inhabits\n"
+            "Arauna Rivers. Its Water nature\n"
+            "reflects Brazil's wildlife and\n"
+            "legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -4985,12 +5070,14 @@
         .speciesName = _("Sapão"),
         .cryId = CRY_PONYTA,
         .natDexNum = NATIONAL_DEX_SEEL,
-        .categoryName = _("Sapo"),
+        .categoryName = _("Toad"),
         .height = 12,
         .weight = 410,
         .description = COMPOUND_STRING(
-            "Glândulas atrás dos olhos soltam\n"
-            "veneno branco. Nunca lamba um Sapão."),
+            "Found in Arauna Cerrado, Sapão is\n"
+            "known as the Toad POKéMON. It\n"
+            "carries a distinct Water/Poison\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -5043,12 +5130,14 @@
         .speciesName = _("Cururu"),
         .cryId = CRY_RAPIDASH,
         .natDexNum = NATIONAL_DEX_DEWGONG,
-        .categoryName = _("Sapo"),
+        .categoryName = _("Toad"),
         .height = 14,
         .weight = 425,
         .description = COMPOUND_STRING(
-            "Do tamanho de uma bola de futebol.\n"
-            "Come Muriçoco aos milhares."),
+            "Cururu lives in Arauna Cerrado. This\n"
+            "Poison/Ground POKéMON embodies a\n"
+            "part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -5100,13 +5189,14 @@
         .speciesName = _("Teiuzim"),
         .cryId = CRY_SLOWPOKE,
         .natDexNum = NATIONAL_DEX_GRIMER,
-        .categoryName = _("Lagarto"),
+        .categoryName = _("Lizard"),
         .height = 15,
         .weight = 440,
         .description = COMPOUND_STRING(
-            "Corre em duas patas quando\n"
-            "assustado. Rabo destaca pra\n"
-            "despistar predadores."),
+            "Teiuzim, the Lizard POKéMON,\n"
+            "inhabits Arauna Cerrado. Its Normal\n"
+            "nature reflects Brazil's wildlife\n"
+            "and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -5159,13 +5249,14 @@
         .speciesName = _("Teiú"),
         .cryId = CRY_SLOWBRO,
         .natDexNum = NATIONAL_DEX_MUK,
-        .categoryName = _("Lagarto"),
+        .categoryName = _("Lizard"),
         .height = 16,
         .weight = 455,
         .description = COMPOUND_STRING(
-            "Come tudo: frutas, ovos, pequenos\n"
-            "animais. Come até serpentes\n"
-            "venenosas."),
+            "Found in Arauna Cerrado, Teiú is\n"
+            "known as the Lizard POKéMON. It\n"
+            "carries a distinct Normal/Dark\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -5217,13 +5308,14 @@
         .speciesName = _("Camaleão"),
         .cryId = CRY_MAGNEMITE,
         .natDexNum = NATIONAL_DEX_SHELLDER,
-        .categoryName = _("Camaleão"),
+        .categoryName = _("Chameleon"),
         .height = 18,
         .weight = 470,
         .description = COMPOUND_STRING(
-            "Muda de cor pra combinar com o\n"
-            "ambiente. Também muda de humor de\n"
-            "segundo em segundo."),
+            "Camaleão lives in Arauna Amazon.\n"
+            "This Normal/Psychic POKéMON embodies\n"
+            "a part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -5275,12 +5367,14 @@
         .speciesName = _("Morcim"),
         .cryId = CRY_MAGNETON,
         .natDexNum = NATIONAL_DEX_CLOYSTER,
-        .categoryName = _("Noturno"),
+        .categoryName = _("Nocturnal"),
         .height = 19,
         .weight = 485,
         .description = COMPOUND_STRING(
-            "Dorme de cabeça pra baixo agarrado\n"
-            "no teto da caverna."),
+            "Morcim, the Nocturnal POKéMON,\n"
+            "inhabits Arauna Caves. Its Flying\n"
+            "nature reflects Brazil's wildlife\n"
+            "and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -5333,12 +5427,14 @@
         .speciesName = _("Morcego"),
         .cryId = CRY_FARFETCHD,
         .natDexNum = NATIONAL_DEX_GASTLY,
-        .categoryName = _("Ecolocalizad"),
+        .categoryName = _("Echolocator"),
         .height = 21,
         .weight = 500,
         .description = COMPOUND_STRING(
-            "Enxerga com som. Voa no escuro\n"
-            "absoluto sem bater em nada."),
+            "Found in Arauna Caves, Morcego is\n"
+            "known as the Echolocator POKéMON. It\n"
+            "carries a distinct Flying/Psychic\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -5391,13 +5487,14 @@
         .speciesName = _("Vampiro"),
         .cryId = CRY_DODUO,
         .natDexNum = NATIONAL_DEX_HAUNTER,
-        .categoryName = _("Vampiro"),
+        .categoryName = _("Vampire"),
         .height = 22,
         .weight = 515,
         .description = COMPOUND_STRING(
-            "Suga sangue de mamíferos\n"
-            "adormecidos. Deixa o dono anêmico se\n"
-            "convive muito tempo."),
+            "Vampiro lives in Arauna Caves. This\n"
+            "Flying/Dark POKéMON embodies a part\n"
+            "of Brazil's nature, folklore, or\n"
+            "culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -5449,13 +5546,14 @@
         .speciesName = _("Piuiuim"),
         .cryId = CRY_DODRIO,
         .natDexNum = NATIONAL_DEX_GENGAR,
-        .categoryName = _("Perneta"),
+        .categoryName = _("One-Legged"),
         .height = 24,
         .weight = 530,
         .description = COMPOUND_STRING(
-            "Fica em uma perna só a maior parte\n"
-            "do tempo. Cai se um vento forte\n"
-            "pega."),
+            "Piuiuim, the One-Legged POKéMON,\n"
+            "inhabits Arauna Pantanal. Its Flying\n"
+            "nature reflects Brazil's wildlife\n"
+            "and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -5508,12 +5606,14 @@
         .speciesName = _("Tuiuiú"),
         .cryId = CRY_SEEL,
         .natDexNum = NATIONAL_DEX_ONIX,
-        .categoryName = _("Colhereiro"),
+        .categoryName = _("Spoonbill"),
         .height = 25,
         .weight = 545,
         .description = COMPOUND_STRING(
-            "Ave símbolo do Pantanal. Bico enorme\n"
-            "pesca peixes com uma bicada só."),
+            "Found in Arauna Pantanal, Tuiuiú is\n"
+            "known as the Spoonbill POKéMON. It\n"
+            "carries a distinct Flying/Water\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -5565,12 +5665,14 @@
         .speciesName = _("Colhereiro"),
         .cryId = CRY_DEWGONG,
         .natDexNum = NATIONAL_DEX_DROWZEE,
-        .categoryName = _("Colhereiro"),
+        .categoryName = _("Spoonbill"),
         .height = 27,
         .weight = 560,
         .description = COMPOUND_STRING(
-            "Rosa por comer crustáceos. Bico em\n"
-            "formato de colher."),
+            "Colhereiro lives in Arauna Pantanal.\n"
+            "This Flying/Fairy POKéMON embodies a\n"
+            "part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -5622,12 +5724,14 @@
         .speciesName = _("Mulinha"),
         .cryId = CRY_GRIMER,
         .natDexNum = NATIONAL_DEX_HYPNO,
-        .categoryName = _("Cavalgadura"),
+        .categoryName = _("Mount"),
         .height = 28,
         .weight = 575,
         .description = COMPOUND_STRING(
-            "Filhote inocente. Nada indica o que\n"
-            "vai virar quando crescer."),
+            "Mulinha, the Mount POKéMON, inhabits\n"
+            "Arauna Cerrado. Its Normal nature\n"
+            "reflects Brazil's wildlife and\n"
+            "legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -5680,12 +5784,14 @@
         .speciesName = _("Mula"),
         .cryId = CRY_MUK,
         .natDexNum = NATIONAL_DEX_KRABBY,
-        .categoryName = _("Corredora"),
+        .categoryName = _("Runner"),
         .height = 30,
         .weight = 590,
         .description = COMPOUND_STRING(
-            "Cavalga mais rápido que um cavalo.\n"
-            "Zurro assustador."),
+            "Found in Arauna Cerrado, Mula is\n"
+            "known as the Runner POKéMON. It\n"
+            "carries a distinct Normal/Fire\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -5738,12 +5844,14 @@
         .speciesName = _("Mula-Cabeça"),
         .cryId = CRY_SHELLDER,
         .natDexNum = NATIONAL_DEX_KINGLER,
-        .categoryName = _("Amaldiçoado"),
+        .categoryName = _("Cursed"),
         .height = 31,
         .weight = 605,
         .description = COMPOUND_STRING(
-            "Solta fogo do pescoço no lugar da\n"
-            "cabeça. Aparece nas sextas-feiras."),
+            "Mula-sem-Cabeça lives in Arauna\n"
+            "Cerrado. This Fire/Ghost POKéMON\n"
+            "embodies a part of Brazil's nature,\n"
+            "folklore, or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -5795,12 +5903,14 @@
         .speciesName = _("Corcovado"),
         .cryId = CRY_CLOYSTER,
         .natDexNum = NATIONAL_DEX_VOLTORB,
-        .categoryName = _("Montanha"),
+        .categoryName = _("Mountain"),
         .height = 3,
         .weight = 620,
         .description = COMPOUND_STRING(
-            "Espírito de uma montanha inteira.\n"
-            "Costas cobertas de mata que respira."),
+            "Corcovado, the Mountain POKéMON,\n"
+            "inhabits Arauna Highlands. Its\n"
+            "Rock/Dragon nature reflects Brazil's\n"
+            "wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -5852,13 +5962,13 @@
         .speciesName = _("Cerválo"),
         .cryId = CRY_GASTLY,
         .natDexNum = NATIONAL_DEX_ELECTRODE,
-        .categoryName = _("Cervo"),
+        .categoryName = _("Deer"),
         .height = 4,
         .weight = 635,
         .description = COMPOUND_STRING(
-            "Chifres pontudos ainda em\n"
-            "desenvolvimento. Salta arbustos com\n"
-            "facilidade."),
+            "Found in Arauna Caatinga, Cerválo is\n"
+            "known as the Deer POKéMON. It\n"
+            "carries a distinct Normal affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -5911,12 +6021,14 @@
         .speciesName = _("Catingueiro"),
         .cryId = CRY_HAUNTER,
         .natDexNum = NATIONAL_DEX_EXEGGCUTE,
-        .categoryName = _("Cervo"),
+        .categoryName = _("Deer"),
         .height = 6,
         .weight = 650,
         .description = COMPOUND_STRING(
-            "Chifres se ramificam com a idade.\n"
-            "Come cactos sem se machucar."),
+            "Catingueiro lives in Arauna\n"
+            "Caatinga. This Normal/Grass POKéMON\n"
+            "embodies a part of Brazil's nature,\n"
+            "folklore, or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -5968,13 +6080,14 @@
         .speciesName = _("Suçuapara"),
         .cryId = CRY_GENGAR,
         .natDexNum = NATIONAL_DEX_EXEGGUTOR,
-        .categoryName = _("Cervo"),
+        .categoryName = _("Deer"),
         .height = 8,
         .weight = 665,
         .description = COMPOUND_STRING(
-            "Chifres tão grandes que precisam\n"
-            "levantar a cabeça pra passar pela\n"
-            "mata."),
+            "Suçuapara, the Deer POKéMON,\n"
+            "inhabits Arauna Atlantic Forest. Its\n"
+            "Normal/Fighting nature reflects\n"
+            "Brazil's wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -6026,12 +6139,13 @@
         .speciesName = _("Cabocim"),
         .cryId = CRY_ONIX,
         .natDexNum = NATIONAL_DEX_CUBONE,
-        .categoryName = _("Aquático"),
+        .categoryName = _("Aquatic"),
         .height = 9,
         .weight = 680,
         .description = COMPOUND_STRING(
-            "Espírito das águas em forma\n"
-            "humanoide. Nada como um peixe."),
+            "Found in Arauna Rivers, Cabocim is\n"
+            "known as the Aquatic POKéMON. It\n"
+            "carries a distinct Water affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -6084,12 +6198,14 @@
         .speciesName = _("Caboclo"),
         .cryId = CRY_DROWZEE,
         .natDexNum = NATIONAL_DEX_MAROWAK,
-        .categoryName = _("Aquático"),
+        .categoryName = _("Aquatic"),
         .height = 11,
         .weight = 695,
         .description = COMPOUND_STRING(
-            "Puxa canoas pra fundo quando\n"
-            "pescadores desrespeitam o rio."),
+            "Caboclo lives in Arauna Rivers. This\n"
+            "Water/Fighting POKéMON embodies a\n"
+            "part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -6141,12 +6257,14 @@
         .speciesName = _("Cangaço"),
         .cryId = CRY_HYPNO,
         .natDexNum = NATIONAL_DEX_HITMONLEE,
-        .categoryName = _("Bandido"),
+        .categoryName = _("Bandit"),
         .height = 12,
         .weight = 710,
         .description = COMPOUND_STRING(
-            "Ave que rouba dos ricos e distribui\n"
-            "pros pobres - segundo os sertanejos."),
+            "Cangaço, the Bandit POKéMON,\n"
+            "inhabits Arauna Caatinga. Its\n"
+            "Dark/Flying nature reflects Brazil's\n"
+            "wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -6198,12 +6316,14 @@
         .speciesName = _("Xangô"),
         .cryId = CRY_KRABBY,
         .natDexNum = NATIONAL_DEX_HITMONCHAN,
-        .categoryName = _("Trovão"),
+        .categoryName = _("Thunder"),
         .height = 14,
         .weight = 725,
         .description = COMPOUND_STRING(
-            "Domina raios e trovões. Machado\n"
-            "bipene solta faíscas ao golpear."),
+            "Found in Arauna Highlands, Xangô is\n"
+            "known as the Thunder POKéMON. It\n"
+            "carries a distinct Electric/Fighting\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -6255,12 +6375,14 @@
         .speciesName = _("Iemanjá"),
         .cryId = CRY_KINGLER,
         .natDexNum = NATIONAL_DEX_LICKITUNG,
-        .categoryName = _("Mãe-d'Água"),
+        .categoryName = _("Water-Mother"),
         .height = 15,
         .weight = 740,
         .description = COMPOUND_STRING(
-            "Deusa dos oceanos. Filhas peixes\n"
-            "seguem-na em cortejo."),
+            "Iemanjá lives in Arauna Coast. This\n"
+            "Water/Fairy POKéMON embodies a part\n"
+            "of Brazil's nature, folklore, or\n"
+            "culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -6312,12 +6434,14 @@
         .speciesName = _("Oxum"),
         .cryId = CRY_VOLTORB,
         .natDexNum = NATIONAL_DEX_KOFFING,
-        .categoryName = _("Rainha"),
+        .categoryName = _("Queen"),
         .height = 16,
         .weight = 755,
         .description = COMPOUND_STRING(
-            "Rainha das águas doces. Cabelo de\n"
-            "ouro molhado escorre pra sempre."),
+            "Oxum, the Queen POKéMON, inhabits\n"
+            "Arauna Rivers. Its Water/Fairy\n"
+            "nature reflects Brazil's wildlife\n"
+            "and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -6369,12 +6493,14 @@
         .speciesName = _("Ogum"),
         .cryId = CRY_ELECTRODE,
         .natDexNum = NATIONAL_DEX_WEEZING,
-        .categoryName = _("Guerreiro"),
+        .categoryName = _("Warrior"),
         .height = 18,
         .weight = 770,
         .description = COMPOUND_STRING(
-            "Ferreiro divino. Forjou espadas que\n"
-            "cortam a alma dos malfeitores."),
+            "Found in Arauna Highlands, Ogum is\n"
+            "known as the Warrior POKéMON. It\n"
+            "carries a distinct Steel/Fire\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -6426,12 +6552,14 @@
         .speciesName = _("Cavalim"),
         .cryId = CRY_EXEGGCUTE,
         .natDexNum = NATIONAL_DEX_RHYHORN,
-        .categoryName = _("Corredor"),
+        .categoryName = _("Runner"),
         .height = 19,
         .weight = 785,
         .description = COMPOUND_STRING(
-            "Crina longa esvoaça no vento.\n"
-            "Aprende a galopar em uma semana."),
+            "Cavalim lives in Arauna Pampas. This\n"
+            "Normal POKéMON embodies a part of\n"
+            "Brazil's nature, folklore, or\n"
+            "culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -6484,12 +6612,14 @@
         .speciesName = _("Cavalgado"),
         .cryId = CRY_EXEGGUTOR,
         .natDexNum = NATIONAL_DEX_RHYDON,
-        .categoryName = _("Corredor"),
+        .categoryName = _("Runner"),
         .height = 21,
         .weight = 800,
         .description = COMPOUND_STRING(
-            "Corre 60 km/h por horas. Domesticado\n"
-            "por gaúchos de Arauana."),
+            "Cavalgado, the Runner POKéMON,\n"
+            "inhabits Arauna Pampas. Its\n"
+            "Normal/Fighting nature reflects\n"
+            "Brazil's wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -6541,12 +6671,13 @@
         .speciesName = _("Zebuim"),
         .cryId = CRY_CUBONE,
         .natDexNum = NATIONAL_DEX_CHANSEY,
-        .categoryName = _("Boi"),
+        .categoryName = _("Ox"),
         .height = 22,
         .weight = 815,
         .description = COMPOUND_STRING(
-            "Corcova enorme já visível no\n"
-            "filhote. Ainda inseguro nas patas."),
+            "Found in Arauna Pampas, Zebuim is\n"
+            "known as the Ox POKéMON. It carries\n"
+            "a distinct Normal affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -6599,12 +6730,14 @@
         .speciesName = _("Zebu"),
         .cryId = CRY_MAROWAK,
         .natDexNum = NATIONAL_DEX_TANGELA,
-        .categoryName = _("Boi"),
+        .categoryName = _("Ox"),
         .height = 24,
         .weight = 830,
         .description = COMPOUND_STRING(
-            "Corcova gigante. Aguenta calor\n"
-            "extremo do cerrado sem se cansar."),
+            "Zebu lives in Arauna Pampas. This\n"
+            "Normal/Fighting POKéMON embodies a\n"
+            "part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -6656,12 +6789,14 @@
         .speciesName = _("Ovelhinha"),
         .cryId = CRY_HITMONLEE,
         .natDexNum = NATIONAL_DEX_KANGASKHAN,
-        .categoryName = _("Lã"),
+        .categoryName = _("Wool"),
         .height = 25,
         .weight = 845,
         .description = COMPOUND_STRING(
-            "Lã grossa protege do frio serrano.\n"
-            "Docilíssima."),
+            "Ovelhinha, the Wool POKéMON,\n"
+            "inhabits Arauna Pampas. Its\n"
+            "Normal/Fairy nature reflects\n"
+            "Brazil's wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -6713,12 +6848,14 @@
         .speciesName = _("Cabrita"),
         .cryId = CRY_HITMONCHAN,
         .natDexNum = NATIONAL_DEX_HORSEA,
-        .categoryName = _("Cabra"),
+        .categoryName = _("Goat"),
         .height = 27,
         .weight = 860,
         .description = COMPOUND_STRING(
-            "Sobe morros impossíveis. Come galhos\n"
-            "secos."),
+            "Found in Arauna Caatinga, Cabrita is\n"
+            "known as the Goat POKéMON. It\n"
+            "carries a distinct Normal/Rock\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -6770,12 +6907,14 @@
         .speciesName = _("Chocalhão"),
         .cryId = CRY_LICKITUNG,
         .natDexNum = NATIONAL_DEX_SEADRA,
-        .categoryName = _("Chocalho"),
+        .categoryName = _("Rattle"),
         .height = 28,
         .weight = 875,
         .description = COMPOUND_STRING(
-            "Chocalho no rabo ainda pequeno.\n"
-            "Aprende a tocar aos poucos."),
+            "Chocalhão lives in Arauna Caatinga.\n"
+            "This Poison POKéMON embodies a part\n"
+            "of Brazil's nature, folklore, or\n"
+            "culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -6828,12 +6967,14 @@
         .speciesName = _("Cascavelim"),
         .cryId = CRY_KOFFING,
         .natDexNum = NATIONAL_DEX_GOLDEEN,
-        .categoryName = _("Chocalho"),
+        .categoryName = _("Rattle"),
         .height = 30,
         .weight = 890,
         .description = COMPOUND_STRING(
-            "Veneno neurotóxico já plenamente\n"
-            "ativo. Chocalho intimida predadores."),
+            "Cascavelim, the Rattle POKéMON,\n"
+            "inhabits Arauna Caatinga. Its Poison\n"
+            "nature reflects Brazil's wildlife\n"
+            "and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -6886,12 +7027,14 @@
         .speciesName = _("Cascavão"),
         .cryId = CRY_WEEZING,
         .natDexNum = NATIONAL_DEX_SEAKING,
-        .categoryName = _("Chocalho"),
+        .categoryName = _("Rattle"),
         .height = 31,
         .weight = 905,
         .description = COMPOUND_STRING(
-            "Uma mordida paralisa até Onçaléu.\n"
-            "Chocalho ouve-se a 100 metros."),
+            "Found in Arauna Caatinga, Cascavão\n"
+            "is known as the Rattle POKéMON. It\n"
+            "carries a distinct Poison/Dark\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -6943,12 +7086,14 @@
         .speciesName = _("Jararaca"),
         .cryId = CRY_RHYHORN,
         .natDexNum = NATIONAL_DEX_STARYU,
-        .categoryName = _("Emboscada"),
+        .categoryName = _("Ambush"),
         .height = 3,
         .weight = 20,
         .description = COMPOUND_STRING(
-            "Camufla-se em folhas caídas. Não\n"
-            "avisa antes de morder."),
+            "Jararaca lives in Arauna Atlantic\n"
+            "Forest. This Poison/Grass POKéMON\n"
+            "embodies a part of Brazil's nature,\n"
+            "folklore, or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -7000,12 +7145,14 @@
         .speciesName = _("Pirarim"),
         .cryId = CRY_RHYDON,
         .natDexNum = NATIONAL_DEX_STARMIE,
-        .categoryName = _("Gigante"),
+        .categoryName = _("Giant"),
         .height = 4,
         .weight = 35,
         .description = COMPOUND_STRING(
-            "Nasce com 30 cm. Cresce um metro por\n"
-            "ano em rio bem alimentado."),
+            "Pirarim, the Giant POKéMON, inhabits\n"
+            "Arauna Amazon. Its Water nature\n"
+            "reflects Brazil's wildlife and\n"
+            "legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -7058,12 +7205,14 @@
         .speciesName = _("Pirarucu"),
         .cryId = CRY_CHANSEY,
         .natDexNum = NATIONAL_DEX_MR_MIME,
-        .categoryName = _("Gigante"),
+        .categoryName = _("Giant"),
         .height = 6,
         .weight = 50,
         .description = COMPOUND_STRING(
-            "Até 3 metros de comprimento. Respira\n"
-            "ar da superfície como um mamífero."),
+            "Found in Arauna Amazon, Pirarucu is\n"
+            "known as the Giant POKéMON. It\n"
+            "carries a distinct Water/Dragon\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -7115,12 +7264,14 @@
         .speciesName = _("Piranha"),
         .cryId = CRY_TANGELA,
         .natDexNum = NATIONAL_DEX_SCYTHER,
-        .categoryName = _("Devorador"),
+        .categoryName = _("Devourer"),
         .height = 8,
         .weight = 65,
         .description = COMPOUND_STRING(
-            "Ataca em cardume. Descarnam uma vaca\n"
-            "em minutos."),
+            "Piranha lives in Arauna Rivers. This\n"
+            "Water/Dark POKéMON embodies a part\n"
+            "of Brazil's nature, folklore, or\n"
+            "culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -7172,12 +7323,14 @@
         .speciesName = _("Tambaqui"),
         .cryId = CRY_KANGASKHAN,
         .natDexNum = NATIONAL_DEX_JYNX,
-        .categoryName = _("Frugívoro"),
+        .categoryName = _("Fruit-Eater"),
         .height = 9,
         .weight = 80,
         .description = COMPOUND_STRING(
-            "Come frutas que caem dos igapós.\n"
-            "Dentes triturando sementes."),
+            "Tambaqui, the Fruit-Eater POKéMON,\n"
+            "inhabits Arauna Amazon. Its\n"
+            "Water/Normal nature reflects\n"
+            "Brazil's wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -7229,12 +7382,14 @@
         .speciesName = _("Aruanã"),
         .cryId = CRY_HORSEA,
         .natDexNum = NATIONAL_DEX_ELECTABUZZ,
-        .categoryName = _("Saltador"),
+        .categoryName = _("Jumper"),
         .height = 11,
         .weight = 95,
         .description = COMPOUND_STRING(
-            "Salta 2 metros fora d'água pra pegar\n"
-            "insetos em galhos."),
+            "Found in Arauna Amazon, Aruanã is\n"
+            "known as the Jumper POKéMON. It\n"
+            "carries a distinct Water/Flying\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -7286,12 +7441,14 @@
         .speciesName = _("Poraquê"),
         .cryId = CRY_SEADRA,
         .natDexNum = NATIONAL_DEX_MAGMAR,
-        .categoryName = _("Choque"),
+        .categoryName = _("Shock"),
         .height = 12,
         .weight = 110,
         .description = COMPOUND_STRING(
-            "Solta choque de 600 volts. Paralisa\n"
-            "qualquer coisa que toque a água."),
+            "Poraquê lives in Arauna Amazon. This\n"
+            "Electric/Water POKéMON embodies a\n"
+            "part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -7343,12 +7500,14 @@
         .speciesName = _("Curimbatá"),
         .cryId = CRY_GOLDEEN,
         .natDexNum = NATIONAL_DEX_PINSIR,
-        .categoryName = _("Cardume"),
+        .categoryName = _("Schooling"),
         .height = 14,
         .weight = 125,
         .description = COMPOUND_STRING(
-            "Nada em cardumes gigantes. Migra rio\n"
-            "acima na piracema."),
+            "Curimbatá, the Schooling POKéMON,\n"
+            "inhabits Arauna Rivers. Its\n"
+            "Water/Ground nature reflects\n"
+            "Brazil's wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -7400,13 +7559,14 @@
         .speciesName = _("Traíra"),
         .cryId = CRY_SEAKING,
         .natDexNum = NATIONAL_DEX_TAUROS,
-        .categoryName = _("Emboscada"),
+        .categoryName = _("Ambush"),
         .height = 15,
         .weight = 140,
         .description = COMPOUND_STRING(
-            "Espera imóvel entre folhas\n"
-            "submersas. Dentes afiados travam a\n"
-            "presa."),
+            "Found in Arauna Rivers, Traíra is\n"
+            "known as the Ambush POKéMON. It\n"
+            "carries a distinct Water/Dark\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -7458,13 +7618,14 @@
         .speciesName = _("Dourado"),
         .cryId = CRY_STARYU,
         .natDexNum = NATIONAL_DEX_MAGIKARP,
-        .categoryName = _("Lutador"),
+        .categoryName = _("Fighter"),
         .height = 16,
         .weight = 155,
         .description = COMPOUND_STRING(
-            "Salta em cachoeiras rio acima.\n"
-            "Escamas douradas brilham como\n"
-            "moedas."),
+            "Dourado lives in Arauna Rivers. This\n"
+            "Water/Fighting POKéMON embodies a\n"
+            "part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -7520,9 +7681,10 @@
         .height = 18,
         .weight = 170,
         .description = COMPOUND_STRING(
-            "Mancha ocelada na cauda espanta\n"
-            "predadores. Ataca qualquer coisa que\n"
-            "entre no território."),
+            "Tucunaré, the Territorial POKéMON,\n"
+            "inhabits Arauna Amazon. Its\n"
+            "Water/Dark nature reflects Brazil's\n"
+            "wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -7574,12 +7736,14 @@
         .speciesName = _("Pacu"),
         .cryId = CRY_MR_MIME,
         .natDexNum = NATIONAL_DEX_LAPRAS,
-        .categoryName = _("Frugívoro"),
+        .categoryName = _("Fruit-Eater"),
         .height = 19,
         .weight = 185,
         .description = COMPOUND_STRING(
-            "Dentes humanos triturando castanhas.\n"
-            "Confunde treinadores nadando."),
+            "Found in Arauna Amazon, Pacu is\n"
+            "known as the Fruit-Eater POKéMON. It\n"
+            "carries a distinct Water/Grass\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -7631,13 +7795,14 @@
         .speciesName = _("Matrinxã"),
         .cryId = CRY_SCYTHER,
         .natDexNum = NATIONAL_DEX_DITTO,
-        .categoryName = _("Cardume"),
+        .categoryName = _("Schooling"),
         .height = 21,
         .weight = 200,
         .description = COMPOUND_STRING(
-            "Cardumes escuros deslizam pelas\n"
-            "corredeiras. Pesca esportiva\n"
-            "popular."),
+            "Matrinxã lives in Arauna Rivers.\n"
+            "This Water/Normal POKéMON embodies a\n"
+            "part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -7689,12 +7854,14 @@
         .speciesName = _("Piau"),
         .cryId = CRY_JYNX,
         .natDexNum = NATIONAL_DEX_EEVEE,
-        .categoryName = _("Cardume"),
+        .categoryName = _("Schooling"),
         .height = 22,
         .weight = 215,
         .description = COMPOUND_STRING(
-            "Listras douradas laterais. Come tudo\n"
-            "que cai na água."),
+            "Piau, the Schooling POKéMON,\n"
+            "inhabits Arauna Rivers. Its\n"
+            "Water/Normal nature reflects\n"
+            "Brazil's wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -7746,12 +7913,14 @@
         .speciesName = _("Cascudo"),
         .cryId = CRY_ELECTABUZZ,
         .natDexNum = NATIONAL_DEX_VAPOREON,
-        .categoryName = _("Placa"),
+        .categoryName = _("Armor-Plate"),
         .height = 24,
         .weight = 230,
         .description = COMPOUND_STRING(
-            "Placas duras cobrem o corpo. Roi\n"
-            "lodo dos aquários."),
+            "Found in Arauna Rivers, Cascudo is\n"
+            "known as the Armor-Plate POKéMON. It\n"
+            "carries a distinct Water/Rock\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -7803,12 +7972,14 @@
         .speciesName = _("Acará"),
         .cryId = CRY_MAGMAR,
         .natDexNum = NATIONAL_DEX_JOLTEON,
-        .categoryName = _("Disco"),
+        .categoryName = _("Disc"),
         .height = 25,
         .weight = 245,
         .description = COMPOUND_STRING(
-            "Formato de disco colorido. Cria os\n"
-            "filhotes no próprio muco da pele."),
+            "Acará lives in Arauna Amazon. This\n"
+            "Water/Psychic POKéMON embodies a\n"
+            "part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -7860,12 +8031,14 @@
         .speciesName = _("Vagalumim"),
         .cryId = CRY_PINSIR,
         .natDexNum = NATIONAL_DEX_FLAREON,
-        .categoryName = _("Lanterna"),
+        .categoryName = _("Lantern"),
         .height = 27,
         .weight = 260,
         .description = COMPOUND_STRING(
-            "Bumbum acende só quando fica com\n"
-            "medo. Ilumina caminhos na mata."),
+            "Vagalumim, the Lantern POKéMON,\n"
+            "inhabits Arauna Atlantic Forest. Its\n"
+            "Bug/Electric nature reflects\n"
+            "Brazil's wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -7918,12 +8091,14 @@
         .speciesName = _("Vagalume"),
         .cryId = CRY_TAUROS,
         .natDexNum = NATIONAL_DEX_PORYGON,
-        .categoryName = _("Lanterna"),
+        .categoryName = _("Lantern"),
         .height = 28,
         .weight = 275,
         .description = COMPOUND_STRING(
-            "Piscadas em código atraem fêmeas.\n"
-            "Ilumina 5 metros ao redor."),
+            "Found in Arauna Atlantic Forest,\n"
+            "Vagalume is known as the Lantern\n"
+            "POKéMON. It carries a distinct\n"
+            "Bug/Electric affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -7975,12 +8150,14 @@
         .speciesName = _("Cigarrinho"),
         .cryId = CRY_MAGIKARP,
         .natDexNum = NATIONAL_DEX_OMANYTE,
-        .categoryName = _("Cantor"),
+        .categoryName = _("Singer"),
         .height = 30,
         .weight = 290,
         .description = COMPOUND_STRING(
-            "Vive 7 anos debaixo da terra antes\n"
-            "de virar Cigarrão."),
+            "Cigarrinho lives in Arauna Atlantic\n"
+            "Forest. This Bug POKéMON embodies a\n"
+            "part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -8033,12 +8210,14 @@
         .speciesName = _("Cigarrão"),
         .cryId = CRY_GYARADOS,
         .natDexNum = NATIONAL_DEX_OMASTAR,
-        .categoryName = _("Cantor"),
+        .categoryName = _("Singer"),
         .height = 31,
         .weight = 305,
         .description = COMPOUND_STRING(
-            "Canto de 100 decibéis. Sinal do\n"
-            "verão em Arauana."),
+            "Cigarrão, the Singer POKéMON,\n"
+            "inhabits Arauna Atlantic Forest. Its\n"
+            "Bug/Flying nature reflects Brazil's\n"
+            "wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -8090,12 +8269,13 @@
         .speciesName = _("Louvadinha"),
         .cryId = CRY_LAPRAS,
         .natDexNum = NATIONAL_DEX_KABUTO,
-        .categoryName = _("Foice"),
+        .categoryName = _("Scythe"),
         .height = 3,
         .weight = 320,
         .description = COMPOUND_STRING(
-            "Foices ainda pequenas mas afiadas.\n"
-            "Come formigas."),
+            "Found in Arauna Cerrado, Louvadinha\n"
+            "is known as the Scythe POKéMON. It\n"
+            "carries a distinct Bug affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -8148,12 +8328,14 @@
         .speciesName = _("Louvadeus"),
         .cryId = CRY_DITTO,
         .natDexNum = NATIONAL_DEX_KABUTOPS,
-        .categoryName = _("Foice"),
+        .categoryName = _("Scythe"),
         .height = 4,
         .weight = 335,
         .description = COMPOUND_STRING(
-            "Reza antes de decapitar a presa.\n"
-            "Fêmea come o macho após acasalar."),
+            "Louvadeus lives in Arauna Cerrado.\n"
+            "This Bug/Psychic POKéMON embodies a\n"
+            "part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -8205,12 +8387,14 @@
         .speciesName = _("Escorpim"),
         .cryId = CRY_EEVEE,
         .natDexNum = NATIONAL_DEX_AERODACTYL,
-        .categoryName = _("Ferrão"),
+        .categoryName = _("Stinger"),
         .height = 6,
         .weight = 350,
         .description = COMPOUND_STRING(
-            "Ferrão translúcido no rabo. Uma\n"
-            "picada tira o sono da noite."),
+            "Escorpim, the Stinger POKéMON,\n"
+            "inhabits Arauna Caatinga. Its Poison\n"
+            "nature reflects Brazil's wildlife\n"
+            "and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -8263,12 +8447,14 @@
         .speciesName = _("Escorpião"),
         .cryId = CRY_VAPOREON,
         .natDexNum = NATIONAL_DEX_SNORLAX,
-        .categoryName = _("Ferrão"),
+        .categoryName = _("Stinger"),
         .height = 8,
         .weight = 365,
         .description = COMPOUND_STRING(
-            "Pinças esmagam besouros. Ferrão\n"
-            "paralisa até um Cavalgado."),
+            "Found in Arauna Caatinga, Escorpião\n"
+            "is known as the Stinger POKéMON. It\n"
+            "carries a distinct Poison/Dark\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -8320,12 +8506,14 @@
         .speciesName = _("Caramulão"),
         .cryId = CRY_JOLTEON,
         .natDexNum = NATIONAL_DEX_ARTICUNO,
-        .categoryName = _("Concha"),
+        .categoryName = _("Shell"),
         .height = 9,
         .weight = 380,
         .description = COMPOUND_STRING(
-            "Concha espiralada com padrão\n"
-            "folclórico. Come alface das margens."),
+            "Caramulão lives in Arauna Amazon.\n"
+            "This Bug/Water POKéMON embodies a\n"
+            "part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -8377,12 +8565,14 @@
         .speciesName = _("Piolhão"),
         .cryId = CRY_FLAREON,
         .natDexNum = NATIONAL_DEX_ZAPDOS,
-        .categoryName = _("Anelídeo"),
+        .categoryName = _("Annelid"),
         .height = 11,
         .weight = 395,
         .description = COMPOUND_STRING(
-            "Se enrola em bola quando ameaçado.\n"
-            "Solta cheiro de amêndoa amarga."),
+            "Piolhão, the Annelid POKéMON,\n"
+            "inhabits Arauna Atlantic Forest. Its\n"
+            "Bug/Poison nature reflects Brazil's\n"
+            "wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -8434,12 +8624,14 @@
         .speciesName = _("Barata"),
         .cryId = CRY_PORYGON,
         .natDexNum = NATIONAL_DEX_MOLTRES,
-        .categoryName = _("Resiliente"),
+        .categoryName = _("Resilient"),
         .height = 12,
         .weight = 410,
         .description = COMPOUND_STRING(
-            "Sobrevive a qualquer coisa.\n"
-            "Radiação, veneno, chinelo."),
+            "Found in Arauna Cities, Barata is\n"
+            "known as the Resilient POKéMON. It\n"
+            "carries a distinct Bug/Dark\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -8491,12 +8683,14 @@
         .speciesName = _("Grilim"),
         .cryId = CRY_OMANYTE,
         .natDexNum = NATIONAL_DEX_DRATINI,
-        .categoryName = _("Salto"),
+        .categoryName = _("Leaping"),
         .height = 14,
         .weight = 425,
         .description = COMPOUND_STRING(
-            "Salta 30 vezes o próprio tamanho.\n"
-            "Toca música com as pernas."),
+            "Grilim lives in Arauna Cerrado. This\n"
+            "Bug POKéMON embodies a part of\n"
+            "Brazil's nature, folklore, or\n"
+            "culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -8549,12 +8743,14 @@
         .speciesName = _("Grilão"),
         .cryId = CRY_OMASTAR,
         .natDexNum = NATIONAL_DEX_DRAGONAIR,
-        .categoryName = _("Cantor"),
+        .categoryName = _("Singer"),
         .height = 15,
         .weight = 440,
         .description = COMPOUND_STRING(
-            "Canto ininterrupto à noite. Anuncia\n"
-            "chuva."),
+            "Grilão, the Singer POKéMON, inhabits\n"
+            "Arauna Cerrado. Its Bug/Normal\n"
+            "nature reflects Brazil's wildlife\n"
+            "and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -8606,12 +8802,14 @@
         .speciesName = _("Aranhão"),
         .cryId = CRY_KABUTO,
         .natDexNum = NATIONAL_DEX_DRAGONITE,
-        .categoryName = _("Ataque"),
+        .categoryName = _("Attack"),
         .height = 16,
         .weight = 455,
         .description = COMPOUND_STRING(
-            "Levanta as patas dianteiras antes de\n"
-            "atacar. Veneno neurotóxico grave."),
+            "Found in Arauna Atlantic Forest,\n"
+            "Aranhão is known as the Attack\n"
+            "POKéMON. It carries a distinct\n"
+            "Bug/Poison affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -8663,12 +8861,14 @@
         .speciesName = _("Vespão"),
         .cryId = CRY_KABUTOPS,
         .natDexNum = NATIONAL_DEX_MEWTWO,
-        .categoryName = _("Caçador"),
+        .categoryName = _("Hunter"),
         .height = 18,
         .weight = 470,
         .description = COMPOUND_STRING(
-            "Caça aranhas do tamanho de mãos e as\n"
-            "arrasta pro ninho."),
+            "Vespão lives in Arauna Amazon. This\n"
+            "Bug/Flying POKéMON embodies a part\n"
+            "of Brazil's nature, folklore, or\n"
+            "culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -8720,12 +8920,14 @@
         .speciesName = _("Marimbondão"),
         .cryId = CRY_AERODACTYL,
         .natDexNum = NATIONAL_DEX_MEW,
-        .categoryName = _("Ferrão"),
+        .categoryName = _("Stinger"),
         .height = 19,
         .weight = 485,
         .description = COMPOUND_STRING(
-            "Ferroada dolorosa por horas. Faz\n"
-            "ninho de barro em telhados."),
+            "Marimbondão, the Stinger POKéMON,\n"
+            "inhabits Arauna Cerrado. Its\n"
+            "Bug/Poison nature reflects Brazil's\n"
+            "wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -8777,12 +8979,14 @@
         .speciesName = _("Traça"),
         .cryId = CRY_SNORLAX,
         .natDexNum = NATIONAL_DEX_CHIKORITA,
-        .categoryName = _("Roedora"),
+        .categoryName = _("Rodent"),
         .height = 21,
         .weight = 500,
         .description = COMPOUND_STRING(
-            "Come móveis por dentro. Só se\n"
-            "percebe quando desmorona."),
+            "Found in Arauna Cities, Traça is\n"
+            "known as the Rodent POKéMON. It\n"
+            "carries a distinct Bug/Normal\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -8834,12 +9038,14 @@
         .speciesName = _("Corupião"),
         .cryId = CRY_ARTICUNO,
         .natDexNum = NATIONAL_DEX_BAYLEEF,
-        .categoryName = _("Rainha"),
+        .categoryName = _("Queen"),
         .height = 22,
         .weight = 515,
         .description = COMPOUND_STRING(
-            "Vive 30 anos botando ovos sem parar.\n"
-            "Cupinzeiro cresce em torno dela."),
+            "Corupião lives in Arauna Cerrado.\n"
+            "This Bug/Ground POKéMON embodies a\n"
+            "part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -8891,12 +9097,14 @@
         .speciesName = _("Cupinzim"),
         .cryId = CRY_ZAPDOS,
         .natDexNum = NATIONAL_DEX_MEGANIUM,
-        .categoryName = _("Soldado"),
+        .categoryName = _("Soldier"),
         .height = 24,
         .weight = 530,
         .description = COMPOUND_STRING(
-            "Mandíbulas gigantes protegem a\n"
-            "rainha. Não come - só briga."),
+            "Cupinzim, the Soldier POKéMON,\n"
+            "inhabits Arauna Cerrado. Its\n"
+            "Bug/Ground nature reflects Brazil's\n"
+            "wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -8948,12 +9156,14 @@
         .speciesName = _("FormigãoPrto"),
         .cryId = CRY_MOLTRES,
         .natDexNum = NATIONAL_DEX_CYNDAQUIL,
-        .categoryName = _("Corredora"),
+        .categoryName = _("Runner"),
         .height = 25,
         .weight = 545,
         .description = COMPOUND_STRING(
-            "Corre em fila indiana por\n"
-            "quilômetros. Devora tudo no caminho."),
+            "Found in Arauna Cerrado,\n"
+            "Formigão-Preto is known as the\n"
+            "Runner POKéMON. It carries a\n"
+            "distinct Bug/Dark affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -9005,12 +9215,14 @@
         .speciesName = _("Beija-flor"),
         .cryId = CRY_DRATINI,
         .natDexNum = NATIONAL_DEX_QUILAVA,
-        .categoryName = _("Colibri"),
+        .categoryName = _("Hummingbird"),
         .height = 27,
         .weight = 560,
         .description = COMPOUND_STRING(
-            "Bate as asas 80 vezes por segundo.\n"
-            "Voa pra trás e de cabeça pra baixo."),
+            "Beija-flor lives in Arauna Atlantic\n"
+            "Forest. This Flying/Fairy POKéMON\n"
+            "embodies a part of Brazil's nature,\n"
+            "folklore, or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -9062,12 +9274,14 @@
         .speciesName = _("Sabiá"),
         .cryId = CRY_DRAGONAIR,
         .natDexNum = NATIONAL_DEX_TYPHLOSION,
-        .categoryName = _("Cantor"),
+        .categoryName = _("Singer"),
         .height = 28,
         .weight = 575,
         .description = COMPOUND_STRING(
-            "Canto conhecido como o mais bonito\n"
-            "do Brasil. Anuncia a primavera."),
+            "Sabiá, the Singer POKéMON, inhabits\n"
+            "Arauna Atlantic Forest. Its\n"
+            "Flying/Normal nature reflects\n"
+            "Brazil's wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -9119,12 +9333,14 @@
         .speciesName = _("Bem-te-vi"),
         .cryId = CRY_DRAGONITE,
         .natDexNum = NATIONAL_DEX_TOTODILE,
-        .categoryName = _("Curioso"),
+        .categoryName = _("Curious"),
         .height = 30,
         .weight = 590,
         .description = COMPOUND_STRING(
-            "Grita o próprio nome. Delator de\n"
-            "tudo que acontece no quintal."),
+            "Found in Arauna Cities, Bem-te-vi is\n"
+            "known as the Curious POKéMON. It\n"
+            "carries a distinct Flying/Normal\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -9176,12 +9392,14 @@
         .speciesName = _("Urutau"),
         .cryId = CRY_MEWTWO,
         .natDexNum = NATIONAL_DEX_CROCONAW,
-        .categoryName = _("Camuflado"),
+        .categoryName = _("Camouflage"),
         .height = 31,
         .weight = 605,
         .description = COMPOUND_STRING(
-            "Se disfarça de galho seco. Canto\n"
-            "lamentoso à noite assusta viajantes."),
+            "Urutau lives in Arauna Atlantic\n"
+            "Forest. This Flying/Ghost POKéMON\n"
+            "embodies a part of Brazil's nature,\n"
+            "folklore, or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -9233,12 +9451,14 @@
         .speciesName = _("Carcará"),
         .cryId = CRY_MEW,
         .natDexNum = NATIONAL_DEX_FERALIGATR,
-        .categoryName = _("Ave-de-Rapin"),
+        .categoryName = _("Raptor"),
         .height = 3,
         .weight = 620,
         .description = COMPOUND_STRING(
-            "Come cobras, ratos e até cordeiros\n"
-            "pequenos. Símbolo do sertão."),
+            "Carcará, the Raptor POKéMON,\n"
+            "inhabits Arauna Caatinga. Its\n"
+            "Flying/Dark nature reflects Brazil's\n"
+            "wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -9290,12 +9510,14 @@
         .speciesName = _("Gavião"),
         .cryId = CRY_CHIKORITA,
         .natDexNum = NATIONAL_DEX_SENTRET,
-        .categoryName = _("Águia"),
+        .categoryName = _("Eagle"),
         .height = 4,
         .weight = 635,
         .description = COMPOUND_STRING(
-            "Maior ave de rapina das Américas.\n"
-            "Come macacos e preguiças."),
+            "Found in Arauna Amazon, Gavião is\n"
+            "known as the Eagle POKéMON. It\n"
+            "carries a distinct Flying/Fighting\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -9347,12 +9569,14 @@
         .speciesName = _("Urubu"),
         .cryId = CRY_BAYLEEF,
         .natDexNum = NATIONAL_DEX_FURRET,
-        .categoryName = _("Carniceiro"),
+        .categoryName = _("Scavenger"),
         .height = 6,
         .weight = 650,
         .description = COMPOUND_STRING(
-            "Come qualquer carne podre. Faz\n"
-            "limpeza dos campos."),
+            "Urubu lives in Arauna Cities. This\n"
+            "Flying/Dark POKéMON embodies a part\n"
+            "of Brazil's nature, folklore, or\n"
+            "culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -9404,12 +9628,14 @@
         .speciesName = _("Corurupim"),
         .cryId = CRY_MEGANIUM,
         .natDexNum = NATIONAL_DEX_HOOTHOOT,
-        .categoryName = _("Coruja"),
+        .categoryName = _("Owl"),
         .height = 8,
         .weight = 665,
         .description = COMPOUND_STRING(
-            "Olhos giram 270 graus. Vê no escuro\n"
-            "total."),
+            "Corurupim, the Owl POKéMON, inhabits\n"
+            "Arauna Atlantic Forest. Its\n"
+            "Flying/Psychic nature reflects\n"
+            "Brazil's wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -9462,12 +9688,13 @@
         .speciesName = _("Coruja"),
         .cryId = CRY_CYNDAQUIL,
         .natDexNum = NATIONAL_DEX_NOCTOWL,
-        .categoryName = _("Coruja"),
+        .categoryName = _("Owl"),
         .height = 9,
         .weight = 680,
         .description = COMPOUND_STRING(
-            "Vive em buracos no chão do cerrado.\n"
-            "Voa em silêncio absoluto."),
+            "Found in Arauna Cerrado, Coruja is\n"
+            "known as the Owl POKéMON. It carries\n"
+            "a distinct Flying/Psychic affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -9519,12 +9746,14 @@
         .speciesName = _("Jaburu"),
         .cryId = CRY_QUILAVA,
         .natDexNum = NATIONAL_DEX_LEDYBA,
-        .categoryName = _("Cegonha"),
+        .categoryName = _("Stork"),
         .height = 11,
         .weight = 695,
         .description = COMPOUND_STRING(
-            "Voa em bandos de centenas. Pesca\n"
-            "peixes com bico de espada."),
+            "Jaburu lives in Arauna Pantanal.\n"
+            "This Flying/Water POKéMON embodies a\n"
+            "part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -9576,12 +9805,14 @@
         .speciesName = _("Ema"),
         .cryId = CRY_TYPHLOSION,
         .natDexNum = NATIONAL_DEX_LEDIAN,
-        .categoryName = _("Corredora"),
+        .categoryName = _("Runner"),
         .height = 12,
         .weight = 710,
         .description = COMPOUND_STRING(
-            "Maior ave do Brasil. Corre 60 km/h\n"
-            "em fuga."),
+            "Ema, the Runner POKéMON, inhabits\n"
+            "Arauna Cerrado. Its Normal/Flying\n"
+            "nature reflects Brazil's wildlife\n"
+            "and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -9633,12 +9864,14 @@
         .speciesName = _("Seriema"),
         .cryId = CRY_TOTODILE,
         .natDexNum = NATIONAL_DEX_SPINARAK,
-        .categoryName = _("Perneta"),
+        .categoryName = _("One-Legged"),
         .height = 14,
         .weight = 725,
         .description = COMPOUND_STRING(
-            "Bate cobras venenosas contra o chão\n"
-            "até matar. Só depois come."),
+            "Found in Arauna Cerrado, Seriema is\n"
+            "known as the One-Legged POKéMON. It\n"
+            "carries a distinct Flying/Fighting\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -9690,12 +9923,14 @@
         .speciesName = _("Anú"),
         .cryId = CRY_CROCONAW,
         .natDexNum = NATIONAL_DEX_ARIADOS,
-        .categoryName = _("Bando"),
+        .categoryName = _("Pack"),
         .height = 15,
         .weight = 740,
         .description = COMPOUND_STRING(
-            "Vive em bandos ruidosos. Come\n"
-            "carrapatos das costas de vacas."),
+            "Anú lives in Arauna Cerrado. This\n"
+            "Flying/Dark POKéMON embodies a part\n"
+            "of Brazil's nature, folklore, or\n"
+            "culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -9747,12 +9982,14 @@
         .speciesName = _("Trinca-Ferro"),
         .cryId = CRY_FERALIGATR,
         .natDexNum = NATIONAL_DEX_CROBAT,
-        .categoryName = _("Cantor"),
+        .categoryName = _("Singer"),
         .height = 16,
         .weight = 755,
         .description = COMPOUND_STRING(
-            "Canto tão forte que treinadores\n"
-            "premiam pelo timbre em concursos."),
+            "Trinca-Ferro, the Singer POKéMON,\n"
+            "inhabits Arauna Atlantic Forest. Its\n"
+            "Flying/Steel nature reflects\n"
+            "Brazil's wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -9804,12 +10041,14 @@
         .speciesName = _("Curió"),
         .cryId = CRY_SENTRET,
         .natDexNum = NATIONAL_DEX_CHINCHOU,
-        .categoryName = _("Cantor"),
+        .categoryName = _("Singer"),
         .height = 18,
         .weight = 770,
         .description = COMPOUND_STRING(
-            "Canto elaborado com trinados. Ave\n"
-            "mais valiosa em disputas de canto."),
+            "Found in Arauna Cerrado, Curió is\n"
+            "known as the Singer POKéMON. It\n"
+            "carries a distinct Flying/Normal\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -9861,12 +10100,14 @@
         .speciesName = _("Sanhaço"),
         .cryId = CRY_FURRET,
         .natDexNum = NATIONAL_DEX_LANTURN,
-        .categoryName = _("Azulzinho"),
+        .categoryName = _("Blue"),
         .height = 19,
         .weight = 785,
         .description = COMPOUND_STRING(
-            "Azul cintilante brilha no sol. Come\n"
-            "frutas em quintais."),
+            "Sanhaço lives in Arauna Atlantic\n"
+            "Forest. This Flying/Fairy POKéMON\n"
+            "embodies a part of Brazil's nature,\n"
+            "folklore, or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -9918,12 +10159,14 @@
         .speciesName = _("Papa-Formiga"),
         .cryId = CRY_HOOTHOOT,
         .natDexNum = NATIONAL_DEX_PICHU,
-        .categoryName = _("Insetívoro"),
+        .categoryName = _("Insectivore"),
         .height = 21,
         .weight = 800,
         .description = COMPOUND_STRING(
-            "Come exclusivamente formigas\n"
-            "correição. Segue enxames por dias."),
+            "Papa-Formiga, the Insectivore\n"
+            "POKéMON, inhabits Arauna Atlantic\n"
+            "Forest. Its Flying/Bug nature\n"
+            "reflects Brazil's wildlife and..."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -9975,12 +10218,14 @@
         .speciesName = _("Choca"),
         .cryId = CRY_NOCTOWL,
         .natDexNum = NATIONAL_DEX_CLEFFA,
-        .categoryName = _("Sombra"),
+        .categoryName = _("Shadow"),
         .height = 22,
         .weight = 815,
         .description = COMPOUND_STRING(
-            "Vive na sombra baixa. Assusta\n"
-            "borboletas com bater de asas."),
+            "Found in Arauna Atlantic Forest,\n"
+            "Choca is known as the Shadow\n"
+            "POKéMON. It carries a distinct\n"
+            "Flying/Normal affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -10032,12 +10277,14 @@
         .speciesName = _("Bacurau"),
         .cryId = CRY_LEDYBA,
         .natDexNum = NATIONAL_DEX_IGGLYBUFF,
-        .categoryName = _("Noturno"),
+        .categoryName = _("Nocturnal"),
         .height = 24,
         .weight = 830,
         .description = COMPOUND_STRING(
-            "Voa rasante caçando insetos. Boca\n"
-            "gigante abre no ar."),
+            "Bacurau lives in Arauna Cerrado.\n"
+            "This Flying/Dark POKéMON embodies a\n"
+            "part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -10089,13 +10336,14 @@
         .speciesName = _("João-Barro"),
         .cryId = CRY_LEDIAN,
         .natDexNum = NATIONAL_DEX_TOGEPI,
-        .categoryName = _("Pedreiro"),
+        .categoryName = _("Builder"),
         .height = 25,
         .weight = 845,
         .description = COMPOUND_STRING(
-            "Constrói ninho de barro em forma de\n"
-            "forno. Vira símbolo em pátios\n"
-            "rurais."),
+            "João-de-Barro, the Builder POKéMON,\n"
+            "inhabits Arauna Cerrado. Its\n"
+            "Flying/Ground nature reflects\n"
+            "Brazil's wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -10147,12 +10395,13 @@
         .speciesName = _("Sementim"),
         .cryId = CRY_SPINARAK,
         .natDexNum = NATIONAL_DEX_TOGETIC,
-        .categoryName = _("Semente"),
+        .categoryName = _("Seed"),
         .height = 27,
         .weight = 860,
         .description = COMPOUND_STRING(
-            "Semente-de-jequitibá que aprendeu a\n"
-            "andar em duas raízes."),
+            "Found in Arauna Cerrado, Sementim is\n"
+            "known as the Seed POKéMON. It\n"
+            "carries a distinct Grass affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -10205,12 +10454,14 @@
         .speciesName = _("Muda"),
         .cryId = CRY_ARIADOS,
         .natDexNum = NATIONAL_DEX_NATU,
-        .categoryName = _("Broto"),
+        .categoryName = _("Sprout"),
         .height = 28,
         .weight = 875,
         .description = COMPOUND_STRING(
-            "Broto de árvore com folhinhas de\n"
-            "sol. Rega-se sozinha nas chuvas."),
+            "Muda lives in Arauna Cerrado. This\n"
+            "Grass POKéMON embodies a part of\n"
+            "Brazil's nature, folklore, or\n"
+            "culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -10263,12 +10514,14 @@
         .speciesName = _("Jequitibá"),
         .cryId = CRY_CROBAT,
         .natDexNum = NATIONAL_DEX_XATU,
-        .categoryName = _("Árvore"),
+        .categoryName = _("Tree"),
         .height = 30,
         .weight = 890,
         .description = COMPOUND_STRING(
-            "Árvore centenária ambulante. Passa\n"
-            "mais tempo parada do que andando."),
+            "Jequitibá, the Tree POKéMON,\n"
+            "inhabits Arauna Atlantic Forest. Its\n"
+            "Grass/Rock nature reflects Brazil's\n"
+            "wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -10320,12 +10573,14 @@
         .speciesName = _("Bromelinha"),
         .cryId = CRY_CHINCHOU,
         .natDexNum = NATIONAL_DEX_MAREEP,
-        .categoryName = _("Bromélia"),
+        .categoryName = _("Bromeliad"),
         .height = 31,
         .weight = 905,
         .description = COMPOUND_STRING(
-            "Copo natural que junta água da\n"
-            "chuva. Sapos vivem dentro."),
+            "Found in Arauna Atlantic Forest,\n"
+            "Bromelinha is known as the Bromeliad\n"
+            "POKéMON. It carries a distinct\n"
+            "Grass/Water affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -10377,12 +10632,14 @@
         .speciesName = _("Orquidina"),
         .cryId = CRY_LANTURN,
         .natDexNum = NATIONAL_DEX_FLAAFFY,
-        .categoryName = _("Flor"),
+        .categoryName = _("Flower"),
         .height = 3,
         .weight = 20,
         .description = COMPOUND_STRING(
-            "Pétalas iridescentes. Aroma atrai\n"
-            "polinizadores por quilômetros."),
+            "Orquidina lives in Arauna Amazon.\n"
+            "This Grass/Fairy POKéMON embodies a\n"
+            "part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -10434,12 +10691,14 @@
         .speciesName = _("Vitóriarégia"),
         .cryId = CRY_PICHU,
         .natDexNum = NATIONAL_DEX_AMPHAROS,
-        .categoryName = _("Nenúfar"),
+        .categoryName = _("Water-Lily"),
         .height = 4,
         .weight = 35,
         .description = COMPOUND_STRING(
-            "Folha do tamanho de uma cama de\n"
-            "casal. Aguenta uma criança em pé."),
+            "Vitóriarégia, the Water-Lily\n"
+            "POKéMON, inhabits Arauna Amazon. Its\n"
+            "Grass/Water nature reflects Brazil's\n"
+            "wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -10491,12 +10750,14 @@
         .speciesName = _("Ipê"),
         .cryId = CRY_CLEFFA,
         .natDexNum = NATIONAL_DEX_BELLOSSOM,
-        .categoryName = _("Florido"),
+        .categoryName = _("Blooming"),
         .height = 6,
         .weight = 50,
         .description = COMPOUND_STRING(
-            "Perde as folhas e floresce amarelo\n"
-            "no inverno seco."),
+            "Found in Arauna Cerrado, Ipê is\n"
+            "known as the Blooming POKéMON. It\n"
+            "carries a distinct Grass/Fairy\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -10548,12 +10809,14 @@
         .speciesName = _("Cipó"),
         .cryId = CRY_IGGLYBUFF,
         .natDexNum = NATIONAL_DEX_MARILL,
-        .categoryName = _("Trepadeira"),
+        .categoryName = _("Vine"),
         .height = 8,
         .weight = 65,
         .description = COMPOUND_STRING(
-            "Se enrosca em árvores e sufoca.\n"
-            "Longuíssimo - dá volta em morros."),
+            "Cipó lives in Arauna Amazon. This\n"
+            "Grass/Poison POKéMON embodies a part\n"
+            "of Brazil's nature, folklore, or\n"
+            "culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -10605,13 +10868,14 @@
         .speciesName = _("Palmito"),
         .cryId = CRY_TOGEPI,
         .natDexNum = NATIONAL_DEX_AZUMARILL,
-        .categoryName = _("Palmeira"),
+        .categoryName = _("Palm"),
         .height = 9,
         .weight = 80,
         .description = COMPOUND_STRING(
-            "Coração da palmeira é iguaria\n"
-            "disputada. Se defende com espinhos\n"
-            "no tronco."),
+            "Palmito, the Palm POKéMON, inhabits\n"
+            "Arauna Atlantic Forest. Its\n"
+            "Grass/Fighting nature reflects\n"
+            "Brazil's wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -10663,12 +10927,14 @@
         .speciesName = _("Babaçu"),
         .cryId = CRY_TOGETIC,
         .natDexNum = NATIONAL_DEX_SUDOWOODO,
-        .categoryName = _("Palmeira"),
+        .categoryName = _("Palm"),
         .height = 11,
         .weight = 95,
         .description = COMPOUND_STRING(
-            "Coco duríssimo. Só Petropico\n"
-            "consegue quebrar."),
+            "Found in Arauna Caatinga, Babaçu is\n"
+            "known as the Palm POKéMON. It\n"
+            "carries a distinct Grass/Ground\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -10720,12 +10986,14 @@
         .speciesName = _("Buriti"),
         .cryId = CRY_NATU,
         .natDexNum = NATIONAL_DEX_POLITOED,
-        .categoryName = _("Palmeira"),
+        .categoryName = _("Palm"),
         .height = 12,
         .weight = 110,
         .description = COMPOUND_STRING(
-            "Cresce onde tem água doce escondida.\n"
-            "Sinaliza oásis no cerrado."),
+            "Buriti lives in Arauna Cerrado. This\n"
+            "Grass/Water POKéMON embodies a part\n"
+            "of Brazil's nature, folklore, or\n"
+            "culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -10777,12 +11045,14 @@
         .speciesName = _("Cajuzim"),
         .cryId = CRY_XATU,
         .natDexNum = NATIONAL_DEX_HOPPIP,
-        .categoryName = _("Fruta"),
+        .categoryName = _("Fruit"),
         .height = 14,
         .weight = 125,
         .description = COMPOUND_STRING(
-            "Fruta que anda. Castanha na cabeça\n"
-            "balança como topete."),
+            "Cajuzim, the Fruit POKéMON, inhabits\n"
+            "Arauna Caatinga. Its Grass nature\n"
+            "reflects Brazil's wildlife and\n"
+            "legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -10835,12 +11105,14 @@
         .speciesName = _("Cajueiro"),
         .cryId = CRY_MAREEP,
         .natDexNum = NATIONAL_DEX_SKIPLOOM,
-        .categoryName = _("Fruta"),
+        .categoryName = _("Fruit"),
         .height = 15,
         .weight = 140,
         .description = COMPOUND_STRING(
-            "Assa a própria castanha ao sol da\n"
-            "caatinga. Aroma inebriante."),
+            "Found in Arauna Caatinga, Cajueiro\n"
+            "is known as the Fruit POKéMON. It\n"
+            "carries a distinct Grass/Fire\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -10892,13 +11164,14 @@
         .speciesName = _("Açaí"),
         .cryId = CRY_FLAAFFY,
         .natDexNum = NATIONAL_DEX_JUMPLUFF,
-        .categoryName = _("Palmeira"),
+        .categoryName = _("Palm"),
         .height = 16,
         .weight = 155,
         .description = COMPOUND_STRING(
-            "Cacho roxo escuro no topo.\n"
-            "Energético natural pros Pokémon\n"
-            "lutadores."),
+            "Açaí lives in Arauna Amazon. This\n"
+            "Grass/Dark POKéMON embodies a part\n"
+            "of Brazil's nature, folklore, or\n"
+            "culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -10950,12 +11223,14 @@
         .speciesName = _("Cacauim"),
         .cryId = CRY_AMPHAROS,
         .natDexNum = NATIONAL_DEX_AIPOM,
-        .categoryName = _("Fruta"),
+        .categoryName = _("Fruit"),
         .height = 18,
         .weight = 170,
         .description = COMPOUND_STRING(
-            "Fruto amarelo com sementes doces.\n"
-            "Vira Chocolat na fermentação."),
+            "Cacauim, the Fruit POKéMON, inhabits\n"
+            "Arauna Amazon. Its Grass nature\n"
+            "reflects Brazil's wildlife and\n"
+            "legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -11012,8 +11287,10 @@
         .height = 19,
         .weight = 185,
         .description = COMPOUND_STRING(
-            "Vagens roxas quando maduras. Origem\n"
-            "do chocolate de Arauana."),
+            "Found in Arauna Amazon, Cacaueiro is\n"
+            "known as the Chocolate POKéMON. It\n"
+            "carries a distinct Grass/Normal\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -11065,12 +11342,14 @@
         .speciesName = _("Guaraná"),
         .cryId = CRY_MARILL,
         .natDexNum = NATIONAL_DEX_SUNFLORA,
-        .categoryName = _("Energético"),
+        .categoryName = _("Energetic"),
         .height = 21,
         .weight = 200,
         .description = COMPOUND_STRING(
-            "Semente pretíssima parece um olho.\n"
-            "Energia natural pura."),
+            "Guaraná lives in Arauna Amazon. This\n"
+            "Grass/Electric POKéMON embodies a\n"
+            "part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -11122,12 +11401,14 @@
         .speciesName = _("Mate"),
         .cryId = CRY_AZUMARILL,
         .natDexNum = NATIONAL_DEX_YANMA,
-        .categoryName = _("Chá"),
+        .categoryName = _("Tea"),
         .height = 22,
         .weight = 215,
         .description = COMPOUND_STRING(
-            "Folhas amargas viram chimarrão.\n"
-            "Companheiro dos gaúchos de Arauana."),
+            "Mate, the Tea POKéMON, inhabits\n"
+            "Arauna Pampas. Its Grass/Water\n"
+            "nature reflects Brazil's wildlife\n"
+            "and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -11179,12 +11460,14 @@
         .speciesName = _("Milho"),
         .cryId = CRY_SUDOWOODO,
         .natDexNum = NATIONAL_DEX_WOOPER,
-        .categoryName = _("Espiga"),
+        .categoryName = _("Grain"),
         .height = 24,
         .weight = 230,
         .description = COMPOUND_STRING(
-            "Espigas coloridas amarela, vermelha,\n"
-            "roxa. Alimento das aldeias."),
+            "Found in Arauna Cerrado, Milho is\n"
+            "known as the Grain POKéMON. It\n"
+            "carries a distinct Grass/Normal\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -11236,12 +11519,14 @@
         .speciesName = _("Mandioca"),
         .cryId = CRY_POLITOED,
         .natDexNum = NATIONAL_DEX_QUAGSIRE,
-        .categoryName = _("Raiz"),
+        .categoryName = _("Root"),
         .height = 25,
         .weight = 245,
         .description = COMPOUND_STRING(
-            "Raiz alongada parece perna. Enterra\n"
-            "a si mesma pra dormir."),
+            "Mandioca lives in Arauna Cerrado.\n"
+            "This Grass/Ground POKéMON embodies a\n"
+            "part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -11293,12 +11578,14 @@
         .speciesName = _("Pedrinha"),
         .cryId = CRY_HOPPIP,
         .natDexNum = NATIONAL_DEX_ESPEON,
-        .categoryName = _("Seixo"),
+        .categoryName = _("Pebble"),
         .height = 27,
         .weight = 260,
         .description = COMPOUND_STRING(
-            "Pedra rolada por milênios.\n"
-            "Perfeitamente lisa."),
+            "Pedrinha, the Pebble POKéMON,\n"
+            "inhabits Arauna Rivers. Its Rock\n"
+            "nature reflects Brazil's wildlife\n"
+            "and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -11351,12 +11638,13 @@
         .speciesName = _("Rochão"),
         .cryId = CRY_SKIPLOOM,
         .natDexNum = NATIONAL_DEX_UMBREON,
-        .categoryName = _("Rocha"),
+        .categoryName = _("Rock"),
         .height = 28,
         .weight = 275,
         .description = COMPOUND_STRING(
-            "Rocha ambulante que ronca ao rolar.\n"
-            "Faz tremer o chão."),
+            "Found in Arauna Plateaus, Rochão is\n"
+            "known as the Rock POKéMON. It\n"
+            "carries a distinct Rock affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -11408,13 +11696,14 @@
         .speciesName = _("Cristalim"),
         .cryId = CRY_JUMPLUFF,
         .natDexNum = NATIONAL_DEX_MURKROW,
-        .categoryName = _("Cristal"),
+        .categoryName = _("Crystal"),
         .height = 30,
         .weight = 290,
         .description = COMPOUND_STRING(
-            "Cristal transparente. Cresce um\n"
-            "centímetro por ano em cavernas\n"
-            "úmidas."),
+            "Cristalim lives in Arauna Caves.\n"
+            "This Rock/Fairy POKéMON embodies a\n"
+            "part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -11467,12 +11756,14 @@
         .speciesName = _("Ametista"),
         .cryId = CRY_AIPOM,
         .natDexNum = NATIONAL_DEX_SLOWKING,
-        .categoryName = _("Cristal"),
+        .categoryName = _("Crystal"),
         .height = 31,
         .weight = 305,
         .description = COMPOUND_STRING(
-            "Geodo roxo brilhante. Refrata o sol\n"
-            "em arco-íris."),
+            "Ametista, the Crystal POKéMON,\n"
+            "inhabits Arauna Highlands. Its\n"
+            "Rock/Psychic nature reflects\n"
+            "Brazil's wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -11528,8 +11819,10 @@
         .height = 3,
         .weight = 320,
         .description = COMPOUND_STRING(
-            "Pepita ambulante. Bandidos perseguem\n"
-            "por Arauana inteira."),
+            "Found in Arauna Highlands, Ouríço is\n"
+            "known as the Metal POKéMON. It\n"
+            "carries a distinct Steel/Electric\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -11585,8 +11878,10 @@
         .height = 4,
         .weight = 335,
         .description = COMPOUND_STRING(
-            "Rocha pesadíssima. Ficha em pé só se\n"
-            "plantar as raízes."),
+            "Ferrolho lives in Arauna Highlands.\n"
+            "This Steel/Ground POKéMON embodies a\n"
+            "part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -11638,12 +11933,14 @@
         .speciesName = _("Diamantina"),
         .cryId = CRY_YANMA,
         .natDexNum = NATIONAL_DEX_WOBBUFFET,
-        .categoryName = _("Cristal"),
+        .categoryName = _("Crystal"),
         .height = 6,
         .weight = 350,
         .description = COMPOUND_STRING(
-            "Pedra preciosíssima. Reflete\n"
-            "arco-íris em qualquer luz."),
+            "Diamantina, the Crystal POKéMON,\n"
+            "inhabits Arauna Highlands. Its\n"
+            "Rock/Fairy nature reflects Brazil's\n"
+            "wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -11699,8 +11996,10 @@
         .height = 8,
         .weight = 365,
         .description = COMPOUND_STRING(
-            "Cor terracota. Se descama em placas\n"
-            "metálicas."),
+            "Found in Arauna Amazon, Bauxito is\n"
+            "known as the Metal POKéMON. It\n"
+            "carries a distinct Steel/Ground\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -11756,8 +12055,10 @@
         .height = 9,
         .weight = 380,
         .description = COMPOUND_STRING(
-            "Preto brilhante. Absorve luz ao\n"
-            "redor."),
+            "Manganim lives in Arauna Highlands.\n"
+            "This Steel/Dark POKéMON embodies a\n"
+            "part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -11809,12 +12110,14 @@
         .speciesName = _("Salitre"),
         .cryId = CRY_ESPEON,
         .natDexNum = NATIONAL_DEX_FORRETRESS,
-        .categoryName = _("Sal"),
+        .categoryName = _("Salt"),
         .height = 11,
         .weight = 395,
         .description = COMPOUND_STRING(
-            "Cristaliza sozinho em salinas. Doce\n"
-            "e amargo ao mesmo tempo."),
+            "Salitre, the Salt POKéMON, inhabits\n"
+            "Arauna Coast. Its Rock/Water nature\n"
+            "reflects Brazil's wildlife and\n"
+            "legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -11866,12 +12169,14 @@
         .speciesName = _("Enxofrino"),
         .cryId = CRY_UMBREON,
         .natDexNum = NATIONAL_DEX_DUNSPARCE,
-        .categoryName = _("Enxofre"),
+        .categoryName = _("Sulfur"),
         .height = 12,
         .weight = 410,
         .description = COMPOUND_STRING(
-            "Cheiro de ovo podre. Cresce em\n"
-            "fumarolas."),
+            "Found in Arauna Highlands, Enxofrino\n"
+            "is known as the Sulfur POKéMON. It\n"
+            "carries a distinct Fire/Poison\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -11923,12 +12228,14 @@
         .speciesName = _("Argilim"),
         .cryId = CRY_MURKROW,
         .natDexNum = NATIONAL_DEX_GLIGAR,
-        .categoryName = _("Argila"),
+        .categoryName = _("Clay"),
         .height = 14,
         .weight = 425,
         .description = COMPOUND_STRING(
-            "Se molda em qualquer forma. Vira\n"
-            "Boneco quando um humano brinca."),
+            "Argilim lives in Arauna Cerrado.\n"
+            "This Ground POKéMON embodies a part\n"
+            "of Brazil's nature, folklore, or\n"
+            "culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -11981,12 +12288,14 @@
         .speciesName = _("Boneco"),
         .cryId = CRY_SLOWKING,
         .natDexNum = NATIONAL_DEX_STEELIX,
-        .categoryName = _("Boneco"),
+        .categoryName = _("Puppet"),
         .height = 15,
         .weight = 440,
         .description = COMPOUND_STRING(
-            "Argila animada por brincadeiras de\n"
-            "criança. Guarda memórias afetivas."),
+            "Boneco, the Puppet POKéMON, inhabits\n"
+            "Arauna Cerrado. Its Ground/Psychic\n"
+            "nature reflects Brazil's wildlife\n"
+            "and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -12038,12 +12347,14 @@
         .speciesName = _("Estalactite"),
         .cryId = CRY_MISDREAVUS,
         .natDexNum = NATIONAL_DEX_SNUBBULL,
-        .categoryName = _("Caverna"),
+        .categoryName = _("Cave"),
         .height = 16,
         .weight = 455,
         .description = COMPOUND_STRING(
-            "Cresce uma gota por século. Se\n"
-            "ofende se chamada de estalagmite."),
+            "Found in Arauna Caves, Estalactite\n"
+            "is known as the Cave POKéMON. It\n"
+            "carries a distinct Rock/Water\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -12095,12 +12406,14 @@
         .speciesName = _("Estalagmite"),
         .cryId = CRY_UNOWN,
         .natDexNum = NATIONAL_DEX_GRANBULL,
-        .categoryName = _("Caverna"),
+        .categoryName = _("Cave"),
         .height = 18,
         .weight = 470,
         .description = COMPOUND_STRING(
-            "Cresce apontando pra cima. Não gosta\n"
-            "de estalactites."),
+            "Estalagmite lives in Arauna Caves.\n"
+            "This Rock/Ground POKéMON embodies a\n"
+            "part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -12152,12 +12465,14 @@
         .speciesName = _("Fóssil"),
         .cryId = CRY_WOBBUFFET,
         .natDexNum = NATIONAL_DEX_QWILFISH,
-        .categoryName = _("Fóssil"),
+        .categoryName = _("Fossil"),
         .height = 19,
         .weight = 485,
         .description = COMPOUND_STRING(
-            "Osso de dinossauro que voltou a\n"
-            "andar. Ninguém sabe como."),
+            "Fóssil, the Fossil POKéMON, inhabits\n"
+            "Arauna Plateaus. Its Rock/Dragon\n"
+            "nature reflects Brazil's wildlife\n"
+            "and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -12209,12 +12524,14 @@
         .speciesName = _("Meteorito"),
         .cryId = CRY_GIRAFARIG,
         .natDexNum = NATIONAL_DEX_SCIZOR,
-        .categoryName = _("Estelar"),
+        .categoryName = _("Stellar"),
         .height = 21,
         .weight = 500,
         .description = COMPOUND_STRING(
-            "Caiu do céu há milênios. Ainda\n"
-            "quente ao toque."),
+            "Found in Arauna Highlands, Meteorito\n"
+            "is known as the Stellar POKéMON. It\n"
+            "carries a distinct Rock/Psychic\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -12266,12 +12583,14 @@
         .speciesName = _("Vulcanite"),
         .cryId = CRY_PINECO,
         .natDexNum = NATIONAL_DEX_SHUCKLE,
-        .categoryName = _("Vulcão"),
+        .categoryName = _("Volcano"),
         .height = 22,
         .weight = 515,
         .description = COMPOUND_STRING(
-            "Formada em erupção antiga. Guarda\n"
-            "calor por séculos."),
+            "Vulcanite lives in Arauna Highlands.\n"
+            "This Fire/Rock POKéMON embodies a\n"
+            "part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -12323,12 +12642,14 @@
         .speciesName = _("Marmim"),
         .cryId = CRY_FORRETRESS,
         .natDexNum = NATIONAL_DEX_HERACROSS,
-        .categoryName = _("Escultura"),
+        .categoryName = _("Sculpture"),
         .height = 24,
         .weight = 530,
         .description = COMPOUND_STRING(
-            "Escultura clássica ganhou vida por\n"
-            "magia. Elegantíssimo."),
+            "Marmim, the Sculpture POKéMON,\n"
+            "inhabits Arauna Highlands. Its\n"
+            "Rock/Fairy nature reflects Brazil's\n"
+            "wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -12380,12 +12701,14 @@
         .speciesName = _("Granito"),
         .cryId = CRY_DUNSPARCE,
         .natDexNum = NATIONAL_DEX_SNEASEL,
-        .categoryName = _("Rocha"),
+        .categoryName = _("Rock"),
         .height = 25,
         .weight = 545,
         .description = COMPOUND_STRING(
-            "Rachaduras naturais formam rostos\n"
-            "zangados."),
+            "Found in Arauna Plateaus, Granito is\n"
+            "known as the Rock POKéMON. It\n"
+            "carries a distinct Rock/Fighting\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -12437,12 +12760,14 @@
         .speciesName = _("Caranguim"),
         .cryId = CRY_GLIGAR,
         .natDexNum = NATIONAL_DEX_TEDDIURSA,
-        .categoryName = _("Pinça"),
+        .categoryName = _("Pincer"),
         .height = 27,
         .weight = 560,
         .description = COMPOUND_STRING(
-            "Bebê caranguejo saltitante. Pinça já\n"
-            "mordisca dedos."),
+            "Caranguim lives in Arauna Coast.\n"
+            "This Water POKéMON embodies a part\n"
+            "of Brazil's nature, folklore, or\n"
+            "culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -12495,12 +12820,14 @@
         .speciesName = _("Guaiamum"),
         .cryId = CRY_STEELIX,
         .natDexNum = NATIONAL_DEX_URSARING,
-        .categoryName = _("Pinça"),
+        .categoryName = _("Pincer"),
         .height = 28,
         .weight = 575,
         .description = COMPOUND_STRING(
-            "Vive em tocas no manguezal. Sai à\n"
-            "noite em bandos."),
+            "Guaiamum, the Pincer POKéMON,\n"
+            "inhabits Arauna Coast. Its\n"
+            "Water/Ground nature reflects\n"
+            "Brazil's wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -12552,12 +12879,13 @@
         .speciesName = _("Siri"),
         .cryId = CRY_SNUBBULL,
         .natDexNum = NATIONAL_DEX_SLUGMA,
-        .categoryName = _("Nadador"),
+        .categoryName = _("Swimmer"),
         .height = 30,
         .weight = 590,
         .description = COMPOUND_STRING(
-            "Nada de lado. Pinças azuis\n"
-            "brilhantes."),
+            "Found in Arauna Coast, Siri is known\n"
+            "as the Swimmer POKéMON. It carries a\n"
+            "distinct Water/Fighting affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -12609,12 +12937,14 @@
         .speciesName = _("Camarão"),
         .cryId = CRY_GRANBULL,
         .natDexNum = NATIONAL_DEX_MAGCARGO,
-        .categoryName = _("Crustáceo"),
+        .categoryName = _("Crustacean"),
         .height = 31,
         .weight = 605,
         .description = COMPOUND_STRING(
-            "Nada em bandos rosados. Delícia\n"
-            "grelhada - segundo turistas."),
+            "Camarão lives in Arauna Coast. This\n"
+            "Water POKéMON embodies a part of\n"
+            "Brazil's nature, folklore, or\n"
+            "culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -12666,12 +12996,14 @@
         .speciesName = _("Polvim"),
         .cryId = CRY_QWILFISH,
         .natDexNum = NATIONAL_DEX_SWINUB,
-        .categoryName = _("Tentáculo"),
+        .categoryName = _("Tentacle"),
         .height = 3,
         .weight = 620,
         .description = COMPOUND_STRING(
-            "Muda de cor pra combinar com o fundo\n"
-            "do mar. Solta tinta."),
+            "Polvim, the Tentacle POKéMON,\n"
+            "inhabits Arauna Coast. Its\n"
+            "Water/Psychic nature reflects\n"
+            "Brazil's wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -12724,12 +13056,14 @@
         .speciesName = _("Polvão"),
         .cryId = CRY_SCIZOR,
         .natDexNum = NATIONAL_DEX_PILOSWINE,
-        .categoryName = _("Tentáculo"),
+        .categoryName = _("Tentacle"),
         .height = 4,
         .weight = 635,
         .description = COMPOUND_STRING(
-            "8 braços resolvem quebra-cabeças.\n"
-            "Abre potes com tampa."),
+            "Found in Arauna Coast, Polvão is\n"
+            "known as the Tentacle POKéMON. It\n"
+            "carries a distinct Water/Psychic\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -12781,12 +13115,14 @@
         .speciesName = _("Águaviva"),
         .cryId = CRY_SHUCKLE,
         .natDexNum = NATIONAL_DEX_CORSOLA,
-        .categoryName = _("Flutuante"),
+        .categoryName = _("Floating"),
         .height = 6,
         .weight = 650,
         .description = COMPOUND_STRING(
-            "Tentáculos urticantes de metros.\n"
-            "Flutua com as correntes."),
+            "Águaviva lives in Arauna Coast. This\n"
+            "Water/Poison POKéMON embodies a part\n"
+            "of Brazil's nature, folklore, or\n"
+            "culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -12838,12 +13174,14 @@
         .speciesName = _("CavalMarinho"),
         .cryId = CRY_HERACROSS,
         .natDexNum = NATIONAL_DEX_REMORAID,
-        .categoryName = _("Marinho"),
+        .categoryName = _("Marine"),
         .height = 8,
         .weight = 665,
         .description = COMPOUND_STRING(
-            "Macho engravida e cuida dos\n"
-            "filhotes. Nada em pé."),
+            "Cavalim-Marinho, the Marine POKéMON,\n"
+            "inhabits Arauna Coast. Its\n"
+            "Water/Fairy nature reflects Brazil's\n"
+            "wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -12895,12 +13233,13 @@
         .speciesName = _("Tartaruguim"),
         .cryId = CRY_SNEASEL,
         .natDexNum = NATIONAL_DEX_OCTILLERY,
-        .categoryName = _("Casco"),
+        .categoryName = _("Shell"),
         .height = 9,
         .weight = 680,
         .description = COMPOUND_STRING(
-            "Nasce na praia e corre pro mar por\n"
-            "instinto. Frágil demais."),
+            "Found in Arauna Coast, Tartaruguim\n"
+            "is known as the Shell POKéMON. It\n"
+            "carries a distinct Water affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -12953,12 +13292,14 @@
         .speciesName = _("Tartaruga"),
         .cryId = CRY_TEDDIURSA,
         .natDexNum = NATIONAL_DEX_DELIBIRD,
-        .categoryName = _("Casco"),
+        .categoryName = _("Shell"),
         .height = 11,
         .weight = 695,
         .description = COMPOUND_STRING(
-            "Vive 100 anos. Volta à praia onde\n"
-            "nasceu pra desovar."),
+            "Tartaruga lives in Arauna Coast.\n"
+            "This Water/Rock POKéMON embodies a\n"
+            "part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -13010,12 +13351,14 @@
         .speciesName = _("Golfinho"),
         .cryId = CRY_URSARING,
         .natDexNum = NATIONAL_DEX_MANTINE,
-        .categoryName = _("Inteligente"),
+        .categoryName = _("Clever"),
         .height = 12,
         .weight = 710,
         .description = COMPOUND_STRING(
-            "Salta em piruetas. Se comunica em\n"
-            "cliques agudos."),
+            "Golfinho, the Clever POKéMON,\n"
+            "inhabits Arauna Coast. Its\n"
+            "Water/Psychic nature reflects\n"
+            "Brazil's wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -13067,12 +13410,14 @@
         .speciesName = _("Baleia"),
         .cryId = CRY_SLUGMA,
         .natDexNum = NATIONAL_DEX_SKARMORY,
-        .categoryName = _("Gigante"),
+        .categoryName = _("Giant"),
         .height = 14,
         .weight = 725,
         .description = COMPOUND_STRING(
-            "Canta canções que percorrem oceanos.\n"
-            "Migra sazonalmente."),
+            "Found in Arauna Coast, Baleia is\n"
+            "known as the Giant POKéMON. It\n"
+            "carries a distinct Water/Normal\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -13124,12 +13469,14 @@
         .speciesName = _("Tubarim"),
         .cryId = CRY_MAGCARGO,
         .natDexNum = NATIONAL_DEX_HOUNDOUR,
-        .categoryName = _("Predador"),
+        .categoryName = _("Predator"),
         .height = 15,
         .weight = 740,
         .description = COMPOUND_STRING(
-            "Já nasce nadando e caçando. Sem\n"
-            "infância."),
+            "Tubarim lives in Arauna Coast. This\n"
+            "Water/Dark POKéMON embodies a part\n"
+            "of Brazil's nature, folklore, or\n"
+            "culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -13182,12 +13529,14 @@
         .speciesName = _("Tubarão"),
         .cryId = CRY_SWINUB,
         .natDexNum = NATIONAL_DEX_HOUNDOOM,
-        .categoryName = _("Predador"),
+        .categoryName = _("Predator"),
         .height = 16,
         .weight = 755,
         .description = COMPOUND_STRING(
-            "Rei do mar. Dentes serrilhados\n"
-            "regeneram infinitamente."),
+            "Tubarão, the Predator POKéMON,\n"
+            "inhabits Arauna Coast. Its\n"
+            "Water/Dark nature reflects Brazil's\n"
+            "wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -13239,12 +13588,14 @@
         .speciesName = _("Arraia"),
         .cryId = CRY_PILOSWINE,
         .natDexNum = NATIONAL_DEX_KINGDRA,
-        .categoryName = _("Choque"),
+        .categoryName = _("Shock"),
         .height = 18,
         .weight = 770,
         .description = COMPOUND_STRING(
-            "Se camufla no fundo. Choque paralisa\n"
-            "banhistas descuidados."),
+            "Found in Arauna Coast, Arraia is\n"
+            "known as the Shock POKéMON. It\n"
+            "carries a distinct Water/Electric\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -13296,12 +13647,14 @@
         .speciesName = _("Peixe-Espada"),
         .cryId = CRY_CORSOLA,
         .natDexNum = NATIONAL_DEX_PHANPY,
-        .categoryName = _("Lâmina"),
+        .categoryName = _("Blade"),
         .height = 19,
         .weight = 785,
         .description = COMPOUND_STRING(
-            "Rostro em forma de espada. Perfura\n"
-            "cascos de barco."),
+            "Peixe-Espada lives in Arauna Coast.\n"
+            "This Water/Steel POKéMON embodies a\n"
+            "part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -13353,12 +13706,14 @@
         .speciesName = _("Pargo"),
         .cryId = CRY_REMORAID,
         .natDexNum = NATIONAL_DEX_DONPHAN,
-        .categoryName = _("Cardume"),
+        .categoryName = _("Schooling"),
         .height = 21,
         .weight = 800,
         .description = COMPOUND_STRING(
-            "Escamas vermelhas brilham no sol.\n"
-            "Cardume gigante nos recifes."),
+            "Pargo, the Schooling POKéMON,\n"
+            "inhabits Arauna Coast. Its\n"
+            "Water/Fire nature reflects Brazil's\n"
+            "wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -13410,12 +13765,14 @@
         .speciesName = _("Pescadão"),
         .cryId = CRY_OCTILLERY,
         .natDexNum = NATIONAL_DEX_PORYGON2,
-        .categoryName = _("Isca"),
+        .categoryName = _("Lure"),
         .height = 22,
         .weight = 815,
         .description = COMPOUND_STRING(
-            "Antena com isca luminosa engana\n"
-            "peixes menores."),
+            "Found in Arauna Coast, Pescadão is\n"
+            "known as the Lure POKéMON. It\n"
+            "carries a distinct Water/Dark\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -13467,12 +13824,14 @@
         .speciesName = _("Loirinha"),
         .cryId = CRY_DELIBIRD,
         .natDexNum = NATIONAL_DEX_STANTLER,
-        .categoryName = _("Espectro"),
+        .categoryName = _("Specter"),
         .height = 24,
         .weight = 830,
         .description = COMPOUND_STRING(
-            "Aparece em espelhos de escolas à\n"
-            "noite. Chama seu nome."),
+            "Loirinha lives in Arauna Cities.\n"
+            "This Ghost/Fairy POKéMON embodies a\n"
+            "part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -13524,12 +13883,14 @@
         .speciesName = _("Cuca"),
         .cryId = CRY_MANTINE,
         .natDexNum = NATIONAL_DEX_SMEARGLE,
-        .categoryName = _("Bruxa"),
+        .categoryName = _("Witch"),
         .height = 25,
         .weight = 845,
         .description = COMPOUND_STRING(
-            "Rouba crianças que não dormem. Nem\n"
-            "sempre é real."),
+            "Cuca, the Witch POKéMON, inhabits\n"
+            "Arauna Cerrado. Its Dark/Psychic\n"
+            "nature reflects Brazil's wildlife\n"
+            "and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -13585,8 +13946,10 @@
         .height = 27,
         .weight = 860,
         .description = COMPOUND_STRING(
-            "Vive embaixo de camas. Só assusta\n"
-            "crianças desobedientes."),
+            "Found in Arauna Cities, Bicho-Papão\n"
+            "is known as the Terror POKéMON. It\n"
+            "carries a distinct Dark/Ghost\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -13638,12 +14001,14 @@
         .speciesName = _("Lobisomem"),
         .cryId = CRY_HOUNDOUR,
         .natDexNum = NATIONAL_DEX_HITMONTOP,
-        .categoryName = _("Amaldiçoado"),
+        .categoryName = _("Cursed"),
         .height = 28,
         .weight = 875,
         .description = COMPOUND_STRING(
-            "Sétimo filho homem em lua cheia.\n"
-            "Uivo faz cães fugirem."),
+            "Lobisomem lives in Arauna Cerrado.\n"
+            "This Dark/Normal POKéMON embodies a\n"
+            "part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -13695,12 +14060,14 @@
         .speciesName = _("Corpo-Seco"),
         .cryId = CRY_HOUNDOOM,
         .natDexNum = NATIONAL_DEX_SMOOCHUM,
-        .categoryName = _("Amaldiçoado"),
+        .categoryName = _("Cursed"),
         .height = 30,
         .weight = 890,
         .description = COMPOUND_STRING(
-            "Alma tão ruim que nem a terra\n"
-            "aceita. Vaga eternamente."),
+            "Corpo-Seco, the Cursed POKéMON,\n"
+            "inhabits Arauna Cerrado. Its\n"
+            "Ghost/Dark nature reflects Brazil's\n"
+            "wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -13752,12 +14119,14 @@
         .speciesName = _("Mão-Peluda"),
         .cryId = CRY_KINGDRA,
         .natDexNum = NATIONAL_DEX_ELEKID,
-        .categoryName = _("Assombração"),
+        .categoryName = _("Haunting"),
         .height = 31,
         .weight = 905,
         .description = COMPOUND_STRING(
-            "Mão gigante peluda sai debaixo da\n"
-            "cama. Pega os pés."),
+            "Found in Arauna Cities, Mão-Peluda\n"
+            "is known as the Haunting POKéMON. It\n"
+            "carries a distinct Ghost/Fighting\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -13809,12 +14178,14 @@
         .speciesName = _("PernaCabelda"),
         .cryId = CRY_PHANPY,
         .natDexNum = NATIONAL_DEX_MAGBY,
-        .categoryName = _("Assombração"),
+        .categoryName = _("Haunting"),
         .height = 3,
         .weight = 20,
         .description = COMPOUND_STRING(
-            "Perna cabeluda anda sozinha à noite.\n"
-            "Persegue solitários."),
+            "Perna-Cabeluda lives in Arauna\n"
+            "Cities. This Ghost/Normal POKéMON\n"
+            "embodies a part of Brazil's nature,\n"
+            "folklore, or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -13866,12 +14237,14 @@
         .speciesName = _("Comadre"),
         .cryId = CRY_DONPHAN,
         .natDexNum = NATIONAL_DEX_MILTANK,
-        .categoryName = _("Espírito"),
+        .categoryName = _("Spirit"),
         .height = 4,
         .weight = 35,
         .description = COMPOUND_STRING(
-            "Espírito de mulher que morreu no\n"
-            "parto. Sequestra bebês."),
+            "Comadre, the Spirit POKéMON,\n"
+            "inhabits Arauna Cerrado. Its\n"
+            "Ghost/Fairy nature reflects Brazil's\n"
+            "wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -13923,12 +14296,14 @@
         .speciesName = _("Anhangá"),
         .cryId = CRY_PORYGON2,
         .natDexNum = NATIONAL_DEX_BLISSEY,
-        .categoryName = _("Espírito"),
+        .categoryName = _("Spirit"),
         .height = 6,
         .weight = 50,
         .description = COMPOUND_STRING(
-            "Protetor dos animais. Amaldiçoa\n"
-            "caçadores gulosos."),
+            "Found in Arauna Amazon, Anhangá is\n"
+            "known as the Spirit POKéMON. It\n"
+            "carries a distinct Ghost/Grass\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -13980,12 +14355,14 @@
         .speciesName = _("Jurupari"),
         .cryId = CRY_STANTLER,
         .natDexNum = NATIONAL_DEX_RAIKOU,
-        .categoryName = _("Deus"),
+        .categoryName = _("God"),
         .height = 8,
         .weight = 65,
         .description = COMPOUND_STRING(
-            "Deus tupi da noite. Só homens podem\n"
-            "ver o rosto."),
+            "Jurupari lives in Arauna Amazon.\n"
+            "This Dark/Fairy POKéMON embodies a\n"
+            "part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -14037,12 +14414,14 @@
         .speciesName = _("Tupã"),
         .cryId = CRY_SMEARGLE,
         .natDexNum = NATIONAL_DEX_ENTEI,
-        .categoryName = _("Trovão"),
+        .categoryName = _("Thunder"),
         .height = 9,
         .weight = 80,
         .description = COMPOUND_STRING(
-            "Deus supremo tupi-guarani. Solta\n"
-            "relâmpagos com um piscar."),
+            "Tupã, the Thunder POKéMON, inhabits\n"
+            "Arauna Highlands. Its\n"
+            "Electric/Dragon nature reflects\n"
+            "Brazil's wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -14098,8 +14477,10 @@
         .height = 11,
         .weight = 95,
         .description = COMPOUND_STRING(
-            "Deusa da lua. Cabelo prateado brilha\n"
-            "nas noites de lua cheia."),
+            "Found in Arauna Highlands, Jaci is\n"
+            "known as the Lunar POKéMON. It\n"
+            "carries a distinct Fairy/Psychic\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -14155,8 +14536,10 @@
         .height = 12,
         .weight = 110,
         .description = COMPOUND_STRING(
-            "Deus do sol. Coroa dourada ilumina\n"
-            "Arauana inteira."),
+            "Guaraci lives in Arauna Highlands.\n"
+            "This Fire/Fairy POKéMON embodies a\n"
+            "part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -14208,12 +14591,14 @@
         .speciesName = _("Rudá"),
         .cryId = CRY_SMOOCHUM,
         .natDexNum = NATIONAL_DEX_PUPITAR,
-        .categoryName = _("Amor"),
+        .categoryName = _("Love"),
         .height = 14,
         .weight = 125,
         .description = COMPOUND_STRING(
-            "Deus do amor. Flecha de flor faz\n"
-            "corações se encontrarem."),
+            "Rudá, the Love POKéMON, inhabits\n"
+            "Arauna Coast. Its Fairy/Psychic\n"
+            "nature reflects Brazil's wildlife\n"
+            "and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -14265,12 +14650,14 @@
         .speciesName = _("Aluá"),
         .cryId = CRY_ELEKID,
         .natDexNum = NATIONAL_DEX_TYRANITAR,
-        .categoryName = _("Fermentação"),
+        .categoryName = _("Ferment"),
         .height = 15,
         .weight = 140,
         .description = COMPOUND_STRING(
-            "Espírito da bebida fermentada.\n"
-            "Alegra festas em pajelanças."),
+            "Found in Arauna Amazon, Aluá is\n"
+            "known as the Ferment POKéMON. It\n"
+            "carries a distinct Water/Poison\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -14322,12 +14709,14 @@
         .speciesName = _("Jenipapo"),
         .cryId = CRY_MAGBY,
         .natDexNum = NATIONAL_DEX_LUGIA,
-        .categoryName = _("Pintura"),
+        .categoryName = _("Paint"),
         .height = 16,
         .weight = 155,
         .description = COMPOUND_STRING(
-            "Tinta preta que dura semanas na\n"
-            "pele. Pinta padrões de bênção."),
+            "Jenipapo lives in Arauna Amazon.\n"
+            "This Dark/Grass POKéMON embodies a\n"
+            "part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -14379,12 +14768,14 @@
         .speciesName = _("Urucum"),
         .cryId = CRY_MILTANK,
         .natDexNum = NATIONAL_DEX_HO_OH,
-        .categoryName = _("Pintura"),
+        .categoryName = _("Paint"),
         .height = 18,
         .weight = 170,
         .description = COMPOUND_STRING(
-            "Tinta vermelha ancestral. Repele\n"
-            "insetos."),
+            "Urucum, the Paint POKéMON, inhabits\n"
+            "Arauna Amazon. Its Fire/Grass nature\n"
+            "reflects Brazil's wildlife and\n"
+            "legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -14436,13 +14827,14 @@
         .speciesName = _("Caipora"),
         .cryId = CRY_BLISSEY,
         .natDexNum = NATIONAL_DEX_CELEBI,
-        .categoryName = _("Caçador"),
+        .categoryName = _("Hunter"),
         .height = 19,
         .weight = 185,
         .description = COMPOUND_STRING(
-            "Monta em porco-do-mato. Protege a\n"
-            "caça - persegue caçadores que\n"
-            "exageram."),
+            "Found in Arauna Cerrado, Caipora is\n"
+            "known as the Hunter POKéMON. It\n"
+            "carries a distinct Grass/Fighting\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -14494,12 +14886,14 @@
         .speciesName = _("Anhangá-Pitã"),
         .cryId = CRY_RAIKOU,
         .natDexNum = NATIONAL_DEX_TREECKO,
-        .categoryName = _("Espírito"),
+        .categoryName = _("Spirit"),
         .height = 21,
         .weight = 200,
         .description = COMPOUND_STRING(
-            "Forma vermelha do Anhangá quando\n"
-            "enfurecido."),
+            "Anhangá-Pitã lives in Arauna Amazon.\n"
+            "This Ghost/Fire POKéMON embodies a\n"
+            "part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -14551,12 +14945,14 @@
         .speciesName = _("Yara-Pindá"),
         .cryId = CRY_ENTEI,
         .natDexNum = NATIONAL_DEX_GROVYLE,
-        .categoryName = _("Pescadora"),
+        .categoryName = _("Fisher"),
         .height = 22,
         .weight = 215,
         .description = COMPOUND_STRING(
-            "Yara em forma de pescadora. Ensina\n"
-            "jovens a respeitar o rio."),
+            "Yara-Pindá, the Fisher POKéMON,\n"
+            "inhabits Arauna Amazon. Its\n"
+            "Water/Fairy nature reflects Brazil's\n"
+            "wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -14608,12 +15004,14 @@
         .speciesName = _("Pisadeira"),
         .cryId = CRY_SUICUNE,
         .natDexNum = NATIONAL_DEX_SCEPTILE,
-        .categoryName = _("Assombração"),
+        .categoryName = _("Haunting"),
         .height = 24,
         .weight = 230,
         .description = COMPOUND_STRING(
-            "Pisa no peito de quem dorme de\n"
-            "barriga cheia. Paralisia."),
+            "Found in Arauna Cities, Pisadeira is\n"
+            "known as the Haunting POKéMON. It\n"
+            "carries a distinct Ghost/Fighting\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -14665,12 +15063,14 @@
         .speciesName = _("Zumbi"),
         .cryId = CRY_LARVITAR,
         .natDexNum = NATIONAL_DEX_TORCHIC,
-        .categoryName = _("Guerreiro"),
+        .categoryName = _("Warrior"),
         .height = 25,
         .weight = 245,
         .description = COMPOUND_STRING(
-            "Espírito líder de quilombo. Inspira\n"
-            "coragem em quem luta pela liberdade."),
+            "Zumbi lives in Arauna Highlands.\n"
+            "This Ghost/Fighting POKéMON embodies\n"
+            "a part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -14722,12 +15122,14 @@
         .speciesName = _("Iemanjá-Pq"),
         .cryId = CRY_PUPITAR,
         .natDexNum = NATIONAL_DEX_COMBUSKEN,
-        .categoryName = _("Mãe"),
+        .categoryName = _("Mother"),
         .height = 27,
         .weight = 260,
         .description = COMPOUND_STRING(
-            "Forma jovem da deusa Iemanjá. Rege\n"
-            "marés menores."),
+            "Iemanjá-Pequena, the Mother POKéMON,\n"
+            "inhabits Arauna Coast. Its\n"
+            "Water/Fairy nature reflects Brazil's\n"
+            "wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -14779,13 +15181,14 @@
         .speciesName = _("Ossanha"),
         .cryId = CRY_TYRANITAR,
         .natDexNum = NATIONAL_DEX_BLAZIKEN,
-        .categoryName = _("Ervas"),
+        .categoryName = _("Herbal"),
         .height = 28,
         .weight = 275,
         .description = COMPOUND_STRING(
-            "Domina o poder das folhas\n"
-            "medicinais. Cura Pokémon\n"
-            "envenenados."),
+            "Found in Arauna Atlantic Forest,\n"
+            "Ossanha is known as the Herbal\n"
+            "POKéMON. It carries a distinct\n"
+            "Grass/Fairy affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -14837,12 +15240,14 @@
         .speciesName = _("Oxalá"),
         .cryId = CRY_LUGIA,
         .natDexNum = NATIONAL_DEX_MUDKIP,
-        .categoryName = _("Criador"),
+        .categoryName = _("Creator"),
         .height = 30,
         .weight = 290,
         .description = COMPOUND_STRING(
-            "Espírito criador. Vestido de branco,\n"
-            "benze quem se aproxima."),
+            "Oxalá lives in Arauna Highlands.\n"
+            "This Normal/Fairy POKéMON embodies a\n"
+            "part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -14894,12 +15299,14 @@
         .speciesName = _("Saciamigo"),
         .cryId = CRY_HO_OH,
         .natDexNum = NATIONAL_DEX_MARSHTOMP,
-        .categoryName = _("Traquinas"),
+        .categoryName = _("Prankster"),
         .height = 31,
         .weight = 305,
         .description = COMPOUND_STRING(
-            "Filhote de Saci. Ainda não domina os\n"
-            "redemoinhos."),
+            "Saciamigo, the Prankster POKéMON,\n"
+            "inhabits Arauna Cerrado. Its\n"
+            "Dark/Fairy nature reflects Brazil's\n"
+            "wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -14951,12 +15358,14 @@
         .speciesName = _("Sacipererê"),
         .cryId = CRY_CELEBI,
         .natDexNum = NATIONAL_DEX_SWAMPERT,
-        .categoryName = _("Traquinas"),
+        .categoryName = _("Prankster"),
         .height = 3,
         .weight = 320,
         .description = COMPOUND_STRING(
-            "Chapéu vermelho, cachimbo, uma\n"
-            "perna. Solto pelo folclore inteiro."),
+            "Found in Arauna Cerrado, Sacipererê\n"
+            "is known as the Prankster POKéMON.\n"
+            "It carries a distinct Dark/Fairy\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -15008,12 +15417,14 @@
         .speciesName = _("CurupAncião"),
         .cryId = CRY_POOCHYENA,
         .natDexNum = NATIONAL_DEX_POOCHYENA,
-        .categoryName = _("Guardião"),
+        .categoryName = _("Guardian"),
         .height = 4,
         .weight = 335,
         .description = COMPOUND_STRING(
-            "Curupira ancião cabeludo. Sabe onde\n"
-            "toda árvore ancestral cresce."),
+            "Curupira-Ancião lives in Arauna\n"
+            "Amazon. This Grass/Fairy POKéMON\n"
+            "embodies a part of Brazil's nature,\n"
+            "folklore, or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -15065,12 +15476,14 @@
         .speciesName = _("CaiporaFêm"),
         .cryId = CRY_MIGHTYENA,
         .natDexNum = NATIONAL_DEX_MIGHTYENA,
-        .categoryName = _("Caçadora"),
+        .categoryName = _("Huntress"),
         .height = 6,
         .weight = 350,
         .description = COMPOUND_STRING(
-            "Forma feminina do Caipora. Ainda\n"
-            "mais rígida com caçadores gulosos."),
+            "Caipora-Fêmea, the Huntress POKéMON,\n"
+            "inhabits Arauna Cerrado. Its\n"
+            "Grass/Fighting nature reflects\n"
+            "Brazil's wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -15122,12 +15535,14 @@
         .speciesName = _("Pomba-Gira"),
         .cryId = CRY_ZIGZAGOON,
         .natDexNum = NATIONAL_DEX_ZIGZAGOON,
-        .categoryName = _("Encantadora"),
+        .categoryName = _("Enchantress"),
         .height = 8,
         .weight = 365,
         .description = COMPOUND_STRING(
-            "Espírito feminino sedutor. Ri alto\n"
-            "nas encruzilhadas."),
+            "Found in Arauna Cities, Pomba-Gira\n"
+            "is known as the Enchantress POKéMON.\n"
+            "It carries a distinct Dark/Fairy\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -15179,12 +15594,14 @@
         .speciesName = _("Exu"),
         .cryId = CRY_LINOONE,
         .natDexNum = NATIONAL_DEX_LINOONE,
-        .categoryName = _("Mensageiro"),
+        .categoryName = _("Messenger"),
         .height = 9,
         .weight = 380,
         .description = COMPOUND_STRING(
-            "Guardião das encruzilhadas. Nada\n"
-            "passa sem seu aval."),
+            "Exu lives in Arauna Cities. This\n"
+            "Dark/Fighting POKéMON embodies a\n"
+            "part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -15236,12 +15653,14 @@
         .speciesName = _("Preto-Velho"),
         .cryId = CRY_WURMPLE,
         .natDexNum = NATIONAL_DEX_WURMPLE,
-        .categoryName = _("Sábio"),
+        .categoryName = _("Sage"),
         .height = 11,
         .weight = 395,
         .description = COMPOUND_STRING(
-            "Espírito ancestral. Fuma cachimbo e\n"
-            "dá conselhos milenares."),
+            "Preto-Velho, the Sage POKéMON,\n"
+            "inhabits Arauna Cities. Its\n"
+            "Ghost/Psychic nature reflects\n"
+            "Brazil's wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -15293,12 +15712,14 @@
         .speciesName = _("CabocGuerro"),
         .cryId = CRY_SILCOON,
         .natDexNum = NATIONAL_DEX_SILCOON,
-        .categoryName = _("Guerreiro"),
+        .categoryName = _("Warrior"),
         .height = 12,
         .weight = 410,
         .description = COMPOUND_STRING(
-            "Guerreiro indígena espectral. Cocar\n"
-            "de penas coloridas."),
+            "Found in Arauna Atlantic Forest,\n"
+            "Caboclo-Guerreiro is known as the\n"
+            "Warrior POKéMON. It carries a\n"
+            "distinct Grass/Fighting affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -15350,12 +15771,14 @@
         .speciesName = _("Marinheiro"),
         .cryId = CRY_BEAUTIFLY,
         .natDexNum = NATIONAL_DEX_BEAUTIFLY,
-        .categoryName = _("Marujo"),
+        .categoryName = _("Sailor"),
         .height = 14,
         .weight = 425,
         .description = COMPOUND_STRING(
-            "Espírito de marujo afogado. Conta\n"
-            "histórias de tempestades."),
+            "Marinheiro lives in Arauna Coast.\n"
+            "This Water/Dark POKéMON embodies a\n"
+            "part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -15407,12 +15830,14 @@
         .speciesName = _("Baiano"),
         .cryId = CRY_CASCOON,
         .natDexNum = NATIONAL_DEX_CASCOON,
-        .categoryName = _("Alegria"),
+        .categoryName = _("Joy"),
         .height = 15,
         .weight = 440,
         .description = COMPOUND_STRING(
-            "Espírito festeiro. Toca berimbau sem\n"
-            "parar."),
+            "Baiano, the Joy POKéMON, inhabits\n"
+            "Arauna Coast. Its Fire/Fighting\n"
+            "nature reflects Brazil's wildlife\n"
+            "and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -15464,12 +15889,14 @@
         .speciesName = _("Cangaceiro"),
         .cryId = CRY_DUSTOX,
         .natDexNum = NATIONAL_DEX_DUSTOX,
-        .categoryName = _("Bandido"),
+        .categoryName = _("Bandit"),
         .height = 16,
         .weight = 455,
         .description = COMPOUND_STRING(
-            "Espírito de Lampião. Chapéu de couro\n"
-            "tachonado."),
+            "Found in Arauna Caatinga, Cangaceiro\n"
+            "is known as the Bandit POKéMON. It\n"
+            "carries a distinct Dark/Fighting\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -15521,12 +15948,14 @@
         .speciesName = _("Beata"),
         .cryId = CRY_LOTAD,
         .natDexNum = NATIONAL_DEX_LOTAD,
-        .categoryName = _("Beata"),
+        .categoryName = _("Devout"),
         .height = 18,
         .weight = 470,
         .description = COMPOUND_STRING(
-            "Espírito de Padre Cícero. Benze com\n"
-            "terço de mandacaru."),
+            "Beata lives in Arauna Caatinga. This\n"
+            "Fairy/Psychic POKéMON embodies a\n"
+            "part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -15578,12 +16007,14 @@
         .speciesName = _("Menino-Deus"),
         .cryId = CRY_LOMBRE,
         .natDexNum = NATIONAL_DEX_LOMBRE,
-        .categoryName = _("Divino"),
+        .categoryName = _("Divine"),
         .height = 19,
         .weight = 485,
         .description = COMPOUND_STRING(
-            "Espírito de criança inocente.\n"
-            "Aparece em folias de reis."),
+            "Menino-Deus, the Divine POKéMON,\n"
+            "inhabits Arauna Cerrado. Its\n"
+            "Fairy/Normal nature reflects\n"
+            "Brazil's wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -15635,11 +16066,14 @@
         .speciesName = _("Rei-Momo"),
         .cryId = CRY_LUDICOLO,
         .natDexNum = NATIONAL_DEX_LUDICOLO,
-        .categoryName = _("Festeiro"),
+        .categoryName = _("Reveler"),
         .height = 21,
         .weight = 500,
         .description = COMPOUND_STRING(
-            "Rei do carnaval. Trono de purpurina."),
+            "Found in Arauna Cities, Rei-Momo is\n"
+            "known as the Reveler POKéMON. It\n"
+            "carries a distinct Normal/Fire\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -15691,12 +16125,14 @@
         .speciesName = _("BumbaMeuBoi"),
         .cryId = CRY_SEEDOT,
         .natDexNum = NATIONAL_DEX_SEEDOT,
-        .categoryName = _("Festeiro"),
+        .categoryName = _("Reveler"),
         .height = 22,
         .weight = 515,
         .description = COMPOUND_STRING(
-            "Espírito do boi de folia. Ressuscita\n"
-            "em cada apresentação."),
+            "Bumba-Meu-Boi lives in Arauna\n"
+            "Amazon. This Normal/Fire POKéMON\n"
+            "embodies a part of Brazil's nature,\n"
+            "folklore, or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -15748,12 +16184,14 @@
         .speciesName = _("Reisado"),
         .cryId = CRY_NUZLEAF,
         .natDexNum = NATIONAL_DEX_NUZLEAF,
-        .categoryName = _("Festeiro"),
+        .categoryName = _("Reveler"),
         .height = 24,
         .weight = 530,
         .description = COMPOUND_STRING(
-            "Espírito folia de reis. Sanfona toca\n"
-            "sozinha."),
+            "Reisado, the Reveler POKéMON,\n"
+            "inhabits Arauna Caatinga. Its\n"
+            "Fairy/Normal nature reflects\n"
+            "Brazil's wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -15805,12 +16243,14 @@
         .speciesName = _("Frevinho"),
         .cryId = CRY_SHIFTRY,
         .natDexNum = NATIONAL_DEX_SHIFTRY,
-        .categoryName = _("Passistas"),
+        .categoryName = _("Dancer"),
         .height = 25,
         .weight = 545,
         .description = COMPOUND_STRING(
-            "Espírito do frevo pernambucano.\n"
-            "Dança acrobática sem parar."),
+            "Found in Arauna Coast, Frevinho is\n"
+            "known as the Dancer POKéMON. It\n"
+            "carries a distinct Fighting/Fire\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -15862,12 +16302,14 @@
         .speciesName = _("Maracatu"),
         .cryId = CRY_TAILLOW,
         .natDexNum = NATIONAL_DEX_TAILLOW,
-        .categoryName = _("Cortejo"),
+        .categoryName = _("Procession"),
         .height = 27,
         .weight = 560,
         .description = COMPOUND_STRING(
-            "Cortejo real espectral. Coroa\n"
-            "dourada e vestes bordadas."),
+            "Maracatu lives in Arauna Coast. This\n"
+            "Dark/Fairy POKéMON embodies a part\n"
+            "of Brazil's nature, folklore, or\n"
+            "culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -15919,12 +16361,14 @@
         .speciesName = _("Congada"),
         .cryId = CRY_SWELLOW,
         .natDexNum = NATIONAL_DEX_SWELLOW,
-        .categoryName = _("Guerreiro"),
+        .categoryName = _("Warrior"),
         .height = 28,
         .weight = 575,
         .description = COMPOUND_STRING(
-            "Espírito guerreiro em cortejo.\n"
-            "Bastões batem em ritmo."),
+            "Congada, the Warrior POKéMON,\n"
+            "inhabits Arauna Cerrado. Its\n"
+            "Fighting/Fire nature reflects\n"
+            "Brazil's wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -15976,12 +16420,14 @@
         .speciesName = _("Folião"),
         .cryId = CRY_WINGULL,
         .natDexNum = NATIONAL_DEX_WINGULL,
-        .categoryName = _("Festeiro"),
+        .categoryName = _("Reveler"),
         .height = 30,
         .weight = 590,
         .description = COMPOUND_STRING(
-            "Espírito que percorre festas. Nunca\n"
-            "cansa de dançar."),
+            "Found in Arauna Cities, Folião is\n"
+            "known as the Reveler POKéMON. It\n"
+            "carries a distinct Normal/Fairy\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -16033,12 +16479,14 @@
         .speciesName = _("Onçuma"),
         .cryId = CRY_PELIPPER,
         .natDexNum = NATIONAL_DEX_PELIPPER,
-        .categoryName = _("Caçadora"),
+        .categoryName = _("Huntress"),
         .height = 31,
         .weight = 605,
         .description = COMPOUND_STRING(
-            "Onça-preta lendária. Deusa das\n"
-            "florestas noturnas."),
+            "Onçuma lives in Arauna Amazon. This\n"
+            "Dark/Ghost POKéMON embodies a part\n"
+            "of Brazil's nature, folklore, or\n"
+            "culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -16090,12 +16538,14 @@
         .speciesName = _("Sucuriaçu"),
         .cryId = CRY_RALTS,
         .natDexNum = NATIONAL_DEX_RALTS,
-        .categoryName = _("Cobra-grande"),
+        .categoryName = _("Great-Snake"),
         .height = 3,
         .weight = 620,
         .description = COMPOUND_STRING(
-            "Sucuri de 10 metros. Engole\n"
-            "capivaras inteiras."),
+            "Sucuriaçu, the Great-Snake POKéMON,\n"
+            "inhabits Arauna Amazon. Its\n"
+            "Water/Dragon nature reflects\n"
+            "Brazil's wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -16147,12 +16597,14 @@
         .speciesName = _("Pirarumbá"),
         .cryId = CRY_KIRLIA,
         .natDexNum = NATIONAL_DEX_KIRLIA,
-        .categoryName = _("Peixe"),
+        .categoryName = _("Fish"),
         .height = 4,
         .weight = 635,
         .description = COMPOUND_STRING(
-            "Pirarucu-rei. 5 metros e escamas de\n"
-            "armadura."),
+            "Found in Arauna Amazon, Pirarumbá is\n"
+            "known as the Fish POKéMON. It\n"
+            "carries a distinct Water/Dragon\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -16204,12 +16656,14 @@
         .speciesName = _("DraguaráAlfa"),
         .cryId = CRY_GARDEVOIR,
         .natDexNum = NATIONAL_DEX_GARDEVOIR,
-        .categoryName = _("Cão-Dragão"),
+        .categoryName = _("Dragon-Dog"),
         .height = 6,
         .weight = 650,
         .description = COMPOUND_STRING(
-            "Draguará alfa da matilha lendária.\n"
-            "Fogo turquesa esverdeado."),
+            "Draguará-Alfa lives in Arauna\n"
+            "Highlands. This Fire/Dragon POKéMON\n"
+            "embodies a part of Brazil's nature,\n"
+            "folklore, or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -16261,12 +16715,14 @@
         .speciesName = _("TerolRainha"),
         .cryId = CRY_SURSKIT,
         .natDexNum = NATIONAL_DEX_SURSKIT,
-        .categoryName = _("Rainha"),
+        .categoryName = _("Queen"),
         .height = 8,
         .weight = 665,
         .description = COMPOUND_STRING(
-            "Rainha enorme dos Terolibra. Comanda\n"
-            "enxames."),
+            "Terolibra-Rainha, the Queen POKéMON,\n"
+            "inhabits Arauna Wetlands. Its\n"
+            "Water/Bug nature reflects Brazil's\n"
+            "wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -16318,12 +16774,14 @@
         .speciesName = _("PetropAncião"),
         .cryId = CRY_MASQUERAIN,
         .natDexNum = NATIONAL_DEX_MASQUERAIN,
-        .categoryName = _("Escultor"),
+        .categoryName = _("Sculptor"),
         .height = 9,
         .weight = 680,
         .description = COMPOUND_STRING(
-            "Petropico centenário. Bico esculpiu\n"
-            "chapadas inteiras."),
+            "Found in Arauna Plateaus,\n"
+            "Petropico-Ancião is known as the\n"
+            "Sculptor POKéMON. It carries a\n"
+            "distinct Grass/Rock affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -16375,12 +16833,14 @@
         .speciesName = _("Boitatá-Puro"),
         .cryId = CRY_SHROOMISH,
         .natDexNum = NATIONAL_DEX_SHROOMISH,
-        .categoryName = _("Cobra-Fogo"),
+        .categoryName = _("Fire-Snake"),
         .height = 11,
         .weight = 695,
         .description = COMPOUND_STRING(
-            "Boitatá primordial. Fogo azul que\n"
-            "devora bosques inteiros."),
+            "Boitatá-Puro lives in Arauna\n"
+            "Cerrado. This Fire/Dragon POKéMON\n"
+            "embodies a part of Brazil's nature,\n"
+            "folklore, or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -16432,12 +16892,14 @@
         .speciesName = _("Iara-Mãe"),
         .cryId = CRY_BRELOOM,
         .natDexNum = NATIONAL_DEX_BRELOOM,
-        .categoryName = _("Deusa"),
+        .categoryName = _("Goddess"),
         .height = 12,
         .weight = 710,
         .description = COMPOUND_STRING(
-            "Iara mãe de todas. Canto ouvido só\n"
-            "uma vez por vida."),
+            "Iara-Mãe, the Goddess POKéMON,\n"
+            "inhabits Arauna Amazon. Its\n"
+            "Water/Fairy nature reflects Brazil's\n"
+            "wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -16489,12 +16951,14 @@
         .speciesName = _("Curupira-Rei"),
         .cryId = CRY_SLAKOTH,
         .natDexNum = NATIONAL_DEX_SLAKOTH,
-        .categoryName = _("Rei"),
+        .categoryName = _("King"),
         .height = 14,
         .weight = 725,
         .description = COMPOUND_STRING(
-            "Curupira rei da floresta. Cabelos de\n"
-            "fogo cor de urucum."),
+            "Found in Arauna Atlantic Forest,\n"
+            "Curupira-Rei is known as the King\n"
+            "POKéMON. It carries a distinct\n"
+            "Grass/Fairy affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -16546,12 +17010,14 @@
         .speciesName = _("Saci-Rei"),
         .cryId = CRY_VIGOROTH,
         .natDexNum = NATIONAL_DEX_VIGOROTH,
-        .categoryName = _("Rei"),
+        .categoryName = _("King"),
         .height = 15,
         .weight = 740,
         .description = COMPOUND_STRING(
-            "Saci-Pererê ancestral. Chapéu\n"
-            "vermelho lendário."),
+            "Saci-Rei lives in Arauna Cerrado.\n"
+            "This Dark/Fairy POKéMON embodies a\n"
+            "part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -16603,12 +17069,14 @@
         .speciesName = _("Anhangaú"),
         .cryId = CRY_SLAKING,
         .natDexNum = NATIONAL_DEX_SLAKING,
-        .categoryName = _("Supremo"),
+        .categoryName = _("Supreme"),
         .height = 16,
         .weight = 755,
         .description = COMPOUND_STRING(
-            "Anhangá supremo. Veados brancos o\n"
-            "seguem."),
+            "Anhangaú, the Supreme POKéMON,\n"
+            "inhabits Arauna Amazon. Its\n"
+            "Ghost/Grass nature reflects Brazil's\n"
+            "wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -16664,7 +17132,10 @@
         .height = 18,
         .weight = 770,
         .description = COMPOUND_STRING(
-            "Amor amazônico convertido em árvore."),
+            "Found in Arauna Amazon, Muirá-Kytã\n"
+            "is known as the Ancestral POKéMON.\n"
+            "It carries a distinct Grass/Fairy\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -16716,12 +17187,14 @@
         .speciesName = _("Cobra-Norato"),
         .cryId = CRY_NINJASK,
         .natDexNum = NATIONAL_DEX_NINJASK,
-        .categoryName = _("Serpente"),
+        .categoryName = _("Serpent"),
         .height = 19,
         .weight = 785,
         .description = COMPOUND_STRING(
-            "Homem-serpente. Boiuna vira homem\n"
-            "nas festas."),
+            "Cobra-Norato lives in Arauna Amazon.\n"
+            "This Water/Dragon POKéMON embodies a\n"
+            "part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -16777,8 +17250,10 @@
         .height = 21,
         .weight = 800,
         .description = COMPOUND_STRING(
-            "Preguiça-gigante primordial. Boca no\n"
-            "peito, cheiro de morte."),
+            "Mapinguari, the Terror POKéMON,\n"
+            "inhabits Arauna Amazon. Its\n"
+            "Grass/Fighting nature reflects\n"
+            "Brazil's wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -16830,12 +17305,14 @@
         .speciesName = _("Ipupiara"),
         .cryId = CRY_WHISMUR,
         .natDexNum = NATIONAL_DEX_WHISMUR,
-        .categoryName = _("Marinho"),
+        .categoryName = _("Marine"),
         .height = 22,
         .weight = 815,
         .description = COMPOUND_STRING(
-            "Homem-peixe canibal. Terror dos\n"
-            "pescadores antigos."),
+            "Found in Arauna Coast, Ipupiara is\n"
+            "known as the Marine POKéMON. It\n"
+            "carries a distinct Water/Dark\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -16887,12 +17364,14 @@
         .speciesName = _("Uirapuru"),
         .cryId = CRY_LOUDRED,
         .natDexNum = NATIONAL_DEX_LOUDRED,
-        .categoryName = _("Milagre"),
+        .categoryName = _("Miracle"),
         .height = 24,
         .weight = 830,
         .description = COMPOUND_STRING(
-            "Ave lendária. Canto silencia toda a\n"
-            "mata quando canta."),
+            "Uirapuru lives in Arauna Amazon.\n"
+            "This Flying/Fairy POKéMON embodies a\n"
+            "part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -16944,12 +17423,14 @@
         .speciesName = _("Muiraquitã"),
         .cryId = CRY_EXPLOUD,
         .natDexNum = NATIONAL_DEX_EXPLOUD,
-        .categoryName = _("Amuleto"),
+        .categoryName = _("Charm"),
         .height = 25,
         .weight = 845,
         .description = COMPOUND_STRING(
-            "Amuleto verde-jade das Icamiabas.\n"
-            "Traz sorte em batalhas."),
+            "Muiraquitã, the Charm POKéMON,\n"
+            "inhabits Arauna Amazon. Its\n"
+            "Rock/Fairy nature reflects Brazil's\n"
+            "wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -17001,13 +17482,14 @@
         .speciesName = _("Amazona"),
         .cryId = CRY_MAKUHITA,
         .natDexNum = NATIONAL_DEX_MAKUHITA,
-        .categoryName = _("Guerreira"),
+        .categoryName = _("Warrior"),
         .height = 27,
         .weight = 860,
         .description = COMPOUND_STRING(
-            "Guerreira sem seio esquerdo pra\n"
-            "atirar arco. Rainha de tribo\n"
-            "lendária."),
+            "Found in Arauna Amazon, Amazona is\n"
+            "known as the Warrior POKéMON. It\n"
+            "carries a distinct Fighting/Fairy\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -17059,12 +17541,14 @@
         .speciesName = _("CorcovAncião"),
         .cryId = CRY_HARIYAMA,
         .natDexNum = NATIONAL_DEX_HARIYAMA,
-        .categoryName = _("Montanha"),
+        .categoryName = _("Mountain"),
         .height = 28,
         .weight = 875,
         .description = COMPOUND_STRING(
-            "Corcovado antigo. Costa cheia de\n"
-            "árvores primárias."),
+            "Corcovado-Ancião lives in Arauna\n"
+            "Highlands. This Rock/Dragon POKéMON\n"
+            "embodies a part of Brazil's nature,\n"
+            "folklore, or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -17116,12 +17600,14 @@
         .speciesName = _("Cristo"),
         .cryId = CRY_AZURILL,
         .natDexNum = NATIONAL_DEX_AZURILL,
-        .categoryName = _("Redentor"),
+        .categoryName = _("Redeemer"),
         .height = 30,
         .weight = 890,
         .description = COMPOUND_STRING(
-            "Espírito de mãos abertas. Abençoa\n"
-            "quem vê o nascer do sol."),
+            "Cristo, the Redeemer POKéMON,\n"
+            "inhabits Arauna Highlands. Its\n"
+            "Fairy/Psychic nature reflects\n"
+            "Brazil's wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -17173,12 +17659,13 @@
         .speciesName = _("Ratão"),
         .cryId = CRY_NOSEPASS,
         .natDexNum = NATIONAL_DEX_NOSEPASS,
-        .categoryName = _("Rato"),
+        .categoryName = _("Rat"),
         .height = 31,
         .weight = 905,
         .description = COMPOUND_STRING(
-            "Vive em esgotos. Come qualquer\n"
-            "coisa."),
+            "Found in Arauna Cities, Ratão is\n"
+            "known as the Rat POKéMON. It carries\n"
+            "a distinct Dark/Poison affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -17230,12 +17717,14 @@
         .speciesName = _("Pombim"),
         .cryId = CRY_SKITTY,
         .natDexNum = NATIONAL_DEX_SKITTY,
-        .categoryName = _("Pomba"),
+        .categoryName = _("Pigeon"),
         .height = 3,
         .weight = 20,
         .description = COMPOUND_STRING(
-            "Fura sacos de lixo. Cocô arruína\n"
-            "estátuas."),
+            "Pombim lives in Arauna Cities. This\n"
+            "Flying/Normal POKéMON embodies a\n"
+            "part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -17288,12 +17777,14 @@
         .speciesName = _("Pombão"),
         .cryId = CRY_DELCATTY,
         .natDexNum = NATIONAL_DEX_DELCATTY,
-        .categoryName = _("Pomba"),
+        .categoryName = _("Pigeon"),
         .height = 4,
         .weight = 35,
         .description = COMPOUND_STRING(
-            "Pomba enorme. Domina praças\n"
-            "inteiras."),
+            "Pombão, the Pigeon POKéMON, inhabits\n"
+            "Arauna Cities. Its Flying/Poison\n"
+            "nature reflects Brazil's wildlife\n"
+            "and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -17349,8 +17840,10 @@
         .height = 6,
         .weight = 50,
         .description = COMPOUND_STRING(
-            "Barata voadora do apocalipse. Voa em\n"
-            "direção a pessoas gritando."),
+            "Found in Arauna Cities, Baratão is\n"
+            "known as the Terror POKéMON. It\n"
+            "carries a distinct Bug/Flying\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -17402,12 +17895,14 @@
         .speciesName = _("Mosquim"),
         .cryId = CRY_MAWILE,
         .natDexNum = NATIONAL_DEX_MAWILE,
-        .categoryName = _("Vetor"),
+        .categoryName = _("Vector"),
         .height = 8,
         .weight = 65,
         .description = COMPOUND_STRING(
-            "Rajadinho listrado. Transmite\n"
-            "doenças."),
+            "Mosquim lives in Arauna Cities. This\n"
+            "Bug/Poison POKéMON embodies a part\n"
+            "of Brazil's nature, folklore, or\n"
+            "culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -17459,12 +17954,14 @@
         .speciesName = _("Cão-Bravo"),
         .cryId = CRY_ARON,
         .natDexNum = NATIONAL_DEX_ARON,
-        .categoryName = _("Rua"),
+        .categoryName = _("Street"),
         .height = 9,
         .weight = 80,
         .description = COMPOUND_STRING(
-            "Contraparte selvagem do Caramelo.\n"
-            "Vive em bando defendendo território."),
+            "Cão-Bravo, the Street POKéMON,\n"
+            "inhabits Arauna Cities. Its\n"
+            "Dark/Normal nature reflects Brazil's\n"
+            "wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -17516,11 +18013,14 @@
         .speciesName = _("Gato-Preto"),
         .cryId = CRY_LAIRON,
         .natDexNum = NATIONAL_DEX_LAIRON,
-        .categoryName = _("Superstição"),
+        .categoryName = _("Bad-Omen"),
         .height = 11,
         .weight = 95,
         .description = COMPOUND_STRING(
-            "Diz que dá azar cruzar caminho. Diz."),
+            "Found in Arauna Cities, Gato-Preto\n"
+            "is known as the Bad-Omen POKéMON. It\n"
+            "carries a distinct Dark/Psychic\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -17572,12 +18072,14 @@
         .speciesName = _("Perereca"),
         .cryId = CRY_AGGRON,
         .natDexNum = NATIONAL_DEX_AGGRON,
-        .categoryName = _("Anfíbio"),
+        .categoryName = _("Amphibian"),
         .height = 12,
         .weight = 110,
         .description = COMPOUND_STRING(
-            "Aparece em vasos sanitários. Salta\n"
-            "na cara de quem senta."),
+            "Perereca lives in Arauna Cities.\n"
+            "This Water/Poison POKéMON embodies a\n"
+            "part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -17629,12 +18131,14 @@
         .speciesName = _("Lagartixa"),
         .cryId = CRY_MEDITITE,
         .natDexNum = NATIONAL_DEX_MEDITITE,
-        .categoryName = _("Parede"),
+        .categoryName = _("Wall"),
         .height = 14,
         .weight = 125,
         .description = COMPOUND_STRING(
-            "Come mosquitos. Rabo cai e continua\n"
-            "se mexendo."),
+            "Lagartixa, the Wall POKéMON,\n"
+            "inhabits Arauna Cities. Its\n"
+            "Normal/Psychic nature reflects\n"
+            "Brazil's wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -17686,12 +18190,14 @@
         .speciesName = _("Traça-Papel"),
         .cryId = CRY_MEDICHAM,
         .natDexNum = NATIONAL_DEX_MEDICHAM,
-        .categoryName = _("Erudita"),
+        .categoryName = _("Scholar"),
         .height = 15,
         .weight = 140,
         .description = COMPOUND_STRING(
-            "Come papel antigo. Absorve o\n"
-            "conhecimento dos livros."),
+            "Found in Arauna Cities, Traça-Papel\n"
+            "is known as the Scholar POKéMON. It\n"
+            "carries a distinct Bug/Psychic\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -17743,12 +18249,14 @@
         .speciesName = _("Poeirão"),
         .cryId = CRY_ELECTRIKE,
         .natDexNum = NATIONAL_DEX_ELECTRIKE,
-        .categoryName = _("Poeira"),
+        .categoryName = _("Dust"),
         .height = 16,
         .weight = 155,
         .description = COMPOUND_STRING(
-            "Bola de poeira ambulante. Aumenta em\n"
-            "salas fechadas."),
+            "Poeirão lives in Arauna Cities. This\n"
+            "Ground/Dark POKéMON embodies a part\n"
+            "of Brazil's nature, folklore, or\n"
+            "culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -17800,12 +18308,14 @@
         .speciesName = _("Ferrugem"),
         .cryId = CRY_MANECTRIC,
         .natDexNum = NATIONAL_DEX_MANECTRIC,
-        .categoryName = _("Corrosão"),
+        .categoryName = _("Corrosion"),
         .height = 18,
         .weight = 170,
         .description = COMPOUND_STRING(
-            "Come metal de dentro. Pontes desabam\n"
-            "sem aviso."),
+            "Ferrugem, the Corrosion POKéMON,\n"
+            "inhabits Arauna Cities. Its\n"
+            "Steel/Water nature reflects Brazil's\n"
+            "wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -17857,12 +18367,14 @@
         .speciesName = _("Fumacento"),
         .cryId = CRY_PLUSLE,
         .natDexNum = NATIONAL_DEX_PLUSLE,
-        .categoryName = _("Poluição"),
+        .categoryName = _("Pollution"),
         .height = 19,
         .weight = 185,
         .description = COMPOUND_STRING(
-            "Nuvem de fumaça de ônibus. Escurece\n"
-            "céus urbanos."),
+            "Found in Arauna Cities, Fumacento is\n"
+            "known as the Pollution POKéMON. It\n"
+            "carries a distinct Poison/Flying\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -17914,12 +18426,14 @@
         .speciesName = _("Óleoso"),
         .cryId = CRY_MINUN,
         .natDexNum = NATIONAL_DEX_MINUN,
-        .categoryName = _("Mancha"),
+        .categoryName = _("Stain"),
         .height = 21,
         .weight = 200,
         .description = COMPOUND_STRING(
-            "Mancha de vazamento. Mata Pokémon\n"
-            "marinhos."),
+            "Óleoso lives in Arauna Coast. This\n"
+            "Poison/Water POKéMON embodies a part\n"
+            "of Brazil's nature, folklore, or\n"
+            "culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -17971,12 +18485,14 @@
         .speciesName = _("Lixão"),
         .cryId = CRY_VOLBEAT,
         .natDexNum = NATIONAL_DEX_VOLBEAT,
-        .categoryName = _("Depósito"),
+        .categoryName = _("Dump"),
         .height = 22,
         .weight = 215,
         .description = COMPOUND_STRING(
-            "Pilha viva de lixo urbano. Vira\n"
-            "Chorume quando chove."),
+            "Lixão, the Dump POKéMON, inhabits\n"
+            "Arauna Cities. Its Poison/Ground\n"
+            "nature reflects Brazil's wildlife\n"
+            "and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -18029,12 +18545,14 @@
         .speciesName = _("Chorume"),
         .cryId = CRY_ILLUMISE,
         .natDexNum = NATIONAL_DEX_ILLUMISE,
-        .categoryName = _("Chorume"),
+        .categoryName = _("Leachate"),
         .height = 24,
         .weight = 230,
         .description = COMPOUND_STRING(
-            "Líquido preto que sai do lixão.\n"
-            "Envenena tudo por onde passa."),
+            "Found in Arauna Cities, Chorume is\n"
+            "known as the Leachate POKéMON. It\n"
+            "carries a distinct Poison/Dark\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -18086,12 +18604,14 @@
         .speciesName = _("Bituca"),
         .cryId = CRY_ROSELIA,
         .natDexNum = NATIONAL_DEX_ROSELIA,
-        .categoryName = _("Descarte"),
+        .categoryName = _("Litter"),
         .height = 25,
         .weight = 245,
         .description = COMPOUND_STRING(
-            "Ainda queima quando jogada. Causa\n"
-            "incêndios em pastos."),
+            "Bituca lives in Arauna Cities. This\n"
+            "Fire/Poison POKéMON embodies a part\n"
+            "of Brazil's nature, folklore, or\n"
+            "culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -18143,12 +18663,14 @@
         .speciesName = _("Latinha"),
         .cryId = CRY_GULPIN,
         .natDexNum = NATIONAL_DEX_GULPIN,
-        .categoryName = _("Recicla"),
+        .categoryName = _("Recycler"),
         .height = 27,
         .weight = 260,
         .description = COMPOUND_STRING(
-            "Vive procurando outra Latinha pra\n"
-            "brigar. Recompensa quem recicla."),
+            "Latinha, the Recycler POKéMON,\n"
+            "inhabits Arauna Cities. Its\n"
+            "Steel/Normal nature reflects\n"
+            "Brazil's wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -18200,12 +18722,14 @@
         .speciesName = _("Sacolim"),
         .cryId = CRY_SWALOT,
         .natDexNum = NATIONAL_DEX_SWALOT,
-        .categoryName = _("Poluição"),
+        .categoryName = _("Pollution"),
         .height = 28,
         .weight = 275,
         .description = COMPOUND_STRING(
-            "Voa com o vento. Enrosca em árvores\n"
-            "por décadas."),
+            "Found in Arauna Cities, Sacolim is\n"
+            "known as the Pollution POKéMON. It\n"
+            "carries a distinct Poison/Flying\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -18257,12 +18781,14 @@
         .speciesName = _("Garrafão"),
         .cryId = CRY_CARVANHA,
         .natDexNum = NATIONAL_DEX_CARVANHA,
-        .categoryName = _("Reciclável"),
+        .categoryName = _("Recyclable"),
         .height = 30,
         .weight = 290,
         .description = COMPOUND_STRING(
-            "Vive boiando em rios. Desce até o\n"
-            "mar."),
+            "Garrafão lives in Arauna Rivers.\n"
+            "This Water/Poison POKéMON embodies a\n"
+            "part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -18314,12 +18840,14 @@
         .speciesName = _("Netzero"),
         .cryId = CRY_SHARPEDO,
         .natDexNum = NATIONAL_DEX_SHARPEDO,
-        .categoryName = _("Reciclável"),
+        .categoryName = _("Recyclable"),
         .height = 31,
         .weight = 305,
         .description = COMPOUND_STRING(
-            "Ave feita de plástico do estômago.\n"
-            "Símbolo da poluição."),
+            "Netzero, the Recyclable POKéMON,\n"
+            "inhabits Arauna Coast. Its\n"
+            "Flying/Poison nature reflects\n"
+            "Brazil's wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -18371,12 +18899,14 @@
         .speciesName = _("Pilhoso"),
         .cryId = CRY_WAILMER,
         .natDexNum = NATIONAL_DEX_WAILMER,
-        .categoryName = _("Bateria"),
+        .categoryName = _("Battery"),
         .height = 3,
         .weight = 320,
         .description = COMPOUND_STRING(
-            "Vaza ácido corrosivo. Não deve ser\n"
-            "tocada."),
+            "Found in Arauna Cities, Pilhoso is\n"
+            "known as the Battery POKéMON. It\n"
+            "carries a distinct Electric/Poison\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -18428,12 +18958,14 @@
         .speciesName = _("Cabofio"),
         .cryId = CRY_WAILORD,
         .natDexNum = NATIONAL_DEX_WAILORD,
-        .categoryName = _("Fio"),
+        .categoryName = _("Wire"),
         .height = 4,
         .weight = 335,
         .description = COMPOUND_STRING(
-            "Fios elétricos emaranhados.\n"
-            "Curto-circuito ambulante."),
+            "Cabofio lives in Arauna Cities. This\n"
+            "Electric/Steel POKéMON embodies a\n"
+            "part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -18485,12 +19017,14 @@
         .speciesName = _("Bugão"),
         .cryId = CRY_NUMEL,
         .natDexNum = NATIONAL_DEX_NUMEL,
-        .categoryName = _("Praga"),
+        .categoryName = _("Pest"),
         .height = 6,
         .weight = 350,
         .description = COMPOUND_STRING(
-            "Bug urbano gigante. Aparece em\n"
-            "cozinhas mal cuidadas."),
+            "Bugão, the Pest POKéMON, inhabits\n"
+            "Arauna Cities. Its Bug/Dark nature\n"
+            "reflects Brazil's wildlife and\n"
+            "legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -18546,8 +19080,10 @@
         .height = 8,
         .weight = 365,
         .description = COMPOUND_STRING(
-            "Papel alumínio dobrado voa como\n"
-            "pipa."),
+            "Found in Arauna Cities, Aluminio is\n"
+            "known as the Metal POKéMON. It\n"
+            "carries a distinct Steel/Flying\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -18599,12 +19135,14 @@
         .speciesName = _("Concretim"),
         .cryId = CRY_TORKOAL,
         .natDexNum = NATIONAL_DEX_TORKOAL,
-        .categoryName = _("Cimento"),
+        .categoryName = _("Cement"),
         .height = 9,
         .weight = 380,
         .description = COMPOUND_STRING(
-            "Pedaço de calçada quebrada. Tropeça\n"
-            "pessoas."),
+            "Concretim lives in Arauna Cities.\n"
+            "This Rock/Steel POKéMON embodies a\n"
+            "part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -18656,12 +19194,14 @@
         .speciesName = _("Bueiro"),
         .cryId = CRY_SPOINK,
         .natDexNum = NATIONAL_DEX_SPOINK,
-        .categoryName = _("Esgoto"),
+        .categoryName = _("Sewer"),
         .height = 11,
         .weight = 395,
         .description = COMPOUND_STRING(
-            "Espírito das águas residuais. Sobe\n"
-            "em enchentes."),
+            "Bueiro, the Sewer POKéMON, inhabits\n"
+            "Arauna Cities. Its Water/Dark nature\n"
+            "reflects Brazil's wildlife and\n"
+            "legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -18713,12 +19253,14 @@
         .speciesName = _("Sinal"),
         .cryId = CRY_GRUMPIG,
         .natDexNum = NATIONAL_DEX_GRUMPIG,
-        .categoryName = _("Sinal"),
+        .categoryName = _("Signal"),
         .height = 12,
         .weight = 410,
         .description = COMPOUND_STRING(
-            "Semáforo que muda de cor sem motivo.\n"
-            "Causa confusão no trânsito."),
+            "Found in Arauna Cities, Sinal is\n"
+            "known as the Signal POKéMON. It\n"
+            "carries a distinct Electric/Psychic\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -18770,12 +19312,14 @@
         .speciesName = _("Poste"),
         .cryId = CRY_SPINDA,
         .natDexNum = NATIONAL_DEX_SPINDA,
-        .categoryName = _("Iluminação"),
+        .categoryName = _("Lighting"),
         .height = 14,
         .weight = 425,
         .description = COMPOUND_STRING(
-            "Poste de luz que anda. Ilumina ruas\n"
-            "escuras."),
+            "Poste lives in Arauna Cities. This\n"
+            "Steel/Electric POKéMON embodies a\n"
+            "part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -18827,12 +19371,14 @@
         .speciesName = _("Grafiteiro"),
         .cryId = CRY_TRAPINCH,
         .natDexNum = NATIONAL_DEX_TRAPINCH,
-        .categoryName = _("Arte"),
+        .categoryName = _("Art"),
         .height = 15,
         .weight = 440,
         .description = COMPOUND_STRING(
-            "Espírito da arte urbana. Muda de\n"
-            "forma conforme o desenho."),
+            "Grafiteiro, the Art POKéMON,\n"
+            "inhabits Arauna Cities. Its\n"
+            "Dark/Fairy nature reflects Brazil's\n"
+            "wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -18884,12 +19430,14 @@
         .speciesName = _("Guaraciana"),
         .cryId = CRY_VIBRAVA,
         .natDexNum = NATIONAL_DEX_VIBRAVA,
-        .categoryName = _("Sol"),
+        .categoryName = _("Sun"),
         .height = 16,
         .weight = 455,
         .description = COMPOUND_STRING(
-            "Consorte de Guaraci. Brilha ao\n"
-            "amanhecer."),
+            "Found in Arauna Highlands,\n"
+            "Guaraciana is known as the Sun\n"
+            "POKéMON. It carries a distinct\n"
+            "Fire/Fairy affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -18941,12 +19489,14 @@
         .speciesName = _("Jaciana"),
         .cryId = CRY_FLYGON,
         .natDexNum = NATIONAL_DEX_FLYGON,
-        .categoryName = _("Lua"),
+        .categoryName = _("Moon"),
         .height = 18,
         .weight = 470,
         .description = COMPOUND_STRING(
-            "Consorte de Jaci. Brilha à\n"
-            "meia-noite."),
+            "Jaciana lives in Arauna Highlands.\n"
+            "This Fairy/Water POKéMON embodies a\n"
+            "part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -18998,12 +19548,14 @@
         .speciesName = _("Tupanaú"),
         .cryId = CRY_CACNEA,
         .natDexNum = NATIONAL_DEX_CACNEA,
-        .categoryName = _("Trovão"),
+        .categoryName = _("Thunder"),
         .height = 19,
         .weight = 485,
         .description = COMPOUND_STRING(
-            "Tupã em forma primordial. Um trovão\n"
-            "só destrói montes."),
+            "Tupanaú, the Thunder POKéMON,\n"
+            "inhabits Arauna Highlands. Its\n"
+            "Electric/Dragon nature reflects\n"
+            "Brazil's wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -19055,12 +19607,14 @@
         .speciesName = _("Iaraú"),
         .cryId = CRY_CACTURNE,
         .natDexNum = NATIONAL_DEX_CACTURNE,
-        .categoryName = _("Suprema"),
+        .categoryName = _("Supreme"),
         .height = 21,
         .weight = 500,
         .description = COMPOUND_STRING(
-            "Iara em forma suprema. Rio inteiro\n"
-            "obedece ao canto."),
+            "Found in Arauna Amazon, Iaraú is\n"
+            "known as the Supreme POKéMON. It\n"
+            "carries a distinct Water/Fairy\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -19112,12 +19666,14 @@
         .speciesName = _("Kuarahy"),
         .cryId = CRY_SWABLU,
         .natDexNum = NATIONAL_DEX_SWABLU,
-        .categoryName = _("Sol"),
+        .categoryName = _("Sun"),
         .height = 22,
         .weight = 515,
         .description = COMPOUND_STRING(
-            "Sol dos primeiros dias. Deu vida ao\n"
-            "continente."),
+            "Kuarahy lives in Arauna Highlands.\n"
+            "This Fire/Psychic POKéMON embodies a\n"
+            "part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -19169,12 +19725,14 @@
         .speciesName = _("Yasy"),
         .cryId = CRY_ALTARIA,
         .natDexNum = NATIONAL_DEX_ALTARIA,
-        .categoryName = _("Lua"),
+        .categoryName = _("Moon"),
         .height = 24,
         .weight = 530,
         .description = COMPOUND_STRING(
-            "Lua dos primeiros dias. Rege marés e\n"
-            "sonhos."),
+            "Yasy, the Moon POKéMON, inhabits\n"
+            "Arauna Highlands. Its Fairy/Dark\n"
+            "nature reflects Brazil's wildlife\n"
+            "and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -19226,12 +19784,14 @@
         .speciesName = _("Rudarauna"),
         .cryId = CRY_ZANGOOSE,
         .natDexNum = NATIONAL_DEX_ZANGOOSE,
-        .categoryName = _("Amor"),
+        .categoryName = _("Love"),
         .height = 25,
         .weight = 545,
         .description = COMPOUND_STRING(
-            "Amor primordial. Une casais\n"
-            "destinados."),
+            "Found in Arauna Coast, Rudarauna is\n"
+            "known as the Love POKéMON. It\n"
+            "carries a distinct Fairy/Psychic\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -19283,12 +19843,14 @@
         .speciesName = _("Perybé"),
         .cryId = CRY_SEVIPER,
         .natDexNum = NATIONAL_DEX_SEVIPER,
-        .categoryName = _("Rio"),
+        .categoryName = _("River"),
         .height = 27,
         .weight = 560,
         .description = COMPOUND_STRING(
-            "Espírito da bacia amazônica inteira.\n"
-            "Um só corpo, milhares de afluentes."),
+            "Perybé lives in Arauna Amazon. This\n"
+            "Water/Psychic POKéMON embodies a\n"
+            "part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -19340,13 +19902,14 @@
         .speciesName = _("Arauanaú"),
         .cryId = CRY_LUNATONE,
         .natDexNum = NATIONAL_DEX_LUNATONE,
-        .categoryName = _("Guardião"),
+        .categoryName = _("Guardian"),
         .height = 28,
         .weight = 575,
         .description = COMPOUND_STRING(
-            "Guardião supremo da região. Só\n"
-            "aparece quando Arauana está em\n"
-            "perigo."),
+            "Arauanaú, the Guardian POKéMON,\n"
+            "inhabits Arauna Highlands. Its\n"
+            "Fairy/Dragon nature reflects\n"
+            "Brazil's wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -19398,13 +19961,14 @@
         .speciesName = _("Verdejante"),
         .cryId = CRY_SOLROCK,
         .natDexNum = NATIONAL_DEX_SOLROCK,
-        .categoryName = _("Verde"),
+        .categoryName = _("Verdant"),
         .height = 30,
         .weight = 590,
         .description = COMPOUND_STRING(
-            "Espírito da mata atlântica\n"
-            "primordial. Brota das cinzas de\n"
-            "queimadas."),
+            "Found in Arauna Amazon, Verdejante\n"
+            "is known as the Verdant POKéMON. It\n"
+            "carries a distinct Grass/Dragon\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -19456,12 +20020,14 @@
         .speciesName = _("Chuvão"),
         .cryId = CRY_BARBOACH,
         .natDexNum = NATIONAL_DEX_BARBOACH,
-        .categoryName = _("Tempestade"),
+        .categoryName = _("Storm"),
         .height = 31,
         .weight = 605,
         .description = COMPOUND_STRING(
-            "Espírito da chuva de dezembro.\n"
-            "Encharca Arauana em três dias."),
+            "Chuvão lives in Arauna Highlands.\n"
+            "This Water/Electric POKéMON embodies\n"
+            "a part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -19513,12 +20079,14 @@
         .speciesName = _("Solzão"),
         .cryId = CRY_WHISCASH,
         .natDexNum = NATIONAL_DEX_WHISCASH,
-        .categoryName = _("Seca"),
+        .categoryName = _("Drought"),
         .height = 3,
         .weight = 620,
         .description = COMPOUND_STRING(
-            "Espírito da estiagem. Queima os\n"
-            "campos por meses."),
+            "Solzão, the Drought POKéMON,\n"
+            "inhabits Arauna Caatinga. Its\n"
+            "Fire/Ground nature reflects Brazil's\n"
+            "wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -19570,12 +20138,14 @@
         .speciesName = _("Ventania"),
         .cryId = CRY_CORPHISH,
         .natDexNum = NATIONAL_DEX_CORPHISH,
-        .categoryName = _("Vento"),
+        .categoryName = _("Wind"),
         .height = 4,
         .weight = 635,
         .description = COMPOUND_STRING(
-            "Vento sul que traz frio no inverno.\n"
-            "Assobia melodias mortais."),
+            "Found in Arauna Cerrado, Ventania is\n"
+            "known as the Wind POKéMON. It\n"
+            "carries a distinct Flying/Dragon\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -19627,12 +20197,14 @@
         .speciesName = _("Terraão"),
         .cryId = CRY_CRAWDAUNT,
         .natDexNum = NATIONAL_DEX_CRAWDAUNT,
-        .categoryName = _("Terra"),
+        .categoryName = _("Earth"),
         .height = 6,
         .weight = 650,
         .description = COMPOUND_STRING(
-            "Terra fértil ambulante. Onde pisa,\n"
-            "brota lavoura."),
+            "Terraão lives in Arauna Plateaus.\n"
+            "This Ground/Rock POKéMON embodies a\n"
+            "part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -19684,12 +20256,14 @@
         .speciesName = _("Fogaréu"),
         .cryId = CRY_BALTOY,
         .natDexNum = NATIONAL_DEX_BALTOY,
-        .categoryName = _("Fogo"),
+        .categoryName = _("Fire"),
         .height = 8,
         .weight = 665,
         .description = COMPOUND_STRING(
-            "Fogo primordial que aqueceu Arauana\n"
-            "no início."),
+            "Fogaréu, the Fire POKéMON, inhabits\n"
+            "Arauna Highlands. Its Fire/Dragon\n"
+            "nature reflects Brazil's wildlife\n"
+            "and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -19741,12 +20315,13 @@
         .speciesName = _("Marulho"),
         .cryId = CRY_CLAYDOL,
         .natDexNum = NATIONAL_DEX_CLAYDOL,
-        .categoryName = _("Mar"),
+        .categoryName = _("Sea"),
         .height = 9,
         .weight = 680,
         .description = COMPOUND_STRING(
-            "Espírito do oceano Atlântico. Ondas\n"
-            "obedecem seu compasso."),
+            "Found in Arauna Coast, Marulho is\n"
+            "known as the Sea POKéMON. It carries\n"
+            "a distinct Water/Dragon affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -19798,12 +20373,14 @@
         .speciesName = _("Alvorecer"),
         .cryId = CRY_LILEEP,
         .natDexNum = NATIONAL_DEX_LILEEP,
-        .categoryName = _("Aurora"),
+        .categoryName = _("Dawn"),
         .height = 11,
         .weight = 695,
         .description = COMPOUND_STRING(
-            "Espírito do amanhecer. Cor rosa\n"
-            "dourada preenche o céu."),
+            "Alvorecer lives in Arauna Coast.\n"
+            "This Fairy/Fire POKéMON embodies a\n"
+            "part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -19855,12 +20432,14 @@
         .speciesName = _("Poente"),
         .cryId = CRY_CRADILY,
         .natDexNum = NATIONAL_DEX_CRADILY,
-        .categoryName = _("Crepúsculo"),
+        .categoryName = _("Twilight"),
         .height = 12,
         .weight = 710,
         .description = COMPOUND_STRING(
-            "Espírito do pôr do sol. Cores\n"
-            "queimadas em fim de tarde."),
+            "Poente, the Twilight POKéMON,\n"
+            "inhabits Arauna Coast. Its Dark/Fire\n"
+            "nature reflects Brazil's wildlife\n"
+            "and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -19912,12 +20491,14 @@
         .speciesName = _("Estrelinha"),
         .cryId = CRY_ANORITH,
         .natDexNum = NATIONAL_DEX_ANORITH,
-        .categoryName = _("Estrela"),
+        .categoryName = _("Star"),
         .height = 14,
         .weight = 725,
         .description = COMPOUND_STRING(
-            "Estrela cadente que fez ninho. Faz\n"
-            "desejos se realizarem."),
+            "Found in Arauna Highlands,\n"
+            "Estrelinha is known as the Star\n"
+            "POKéMON. It carries a distinct\n"
+            "Fairy/Psychic affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -19969,12 +20550,14 @@
         .speciesName = _("Arauanamon"),
         .cryId = CRY_ARMALDO,
         .natDexNum = NATIONAL_DEX_ARMALDO,
-        .categoryName = _("Divino"),
+        .categoryName = _("Divine"),
         .height = 15,
         .weight = 740,
         .description = COMPOUND_STRING(
-            "Encarnação de toda a região de\n"
-            "Arauana. Só existe um."),
+            "Arauanamon lives in Arauna\n"
+            "Highlands. This Dragon/Fairy POKéMON\n"
+            "embodies a part of Brazil's nature,\n"
+            "folklore, or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -20026,12 +20609,14 @@
         .speciesName = _("Aracuã"),
         .cryId = CRY_FEEBAS,
         .natDexNum = NATIONAL_DEX_FEEBAS,
-        .categoryName = _("Alarme"),
+        .categoryName = _("Alarm"),
         .height = 16,
         .weight = 755,
         .description = COMPOUND_STRING(
-            "Grita ao amanhecer alertando o\n"
-            "bando. Serve de despertador da mata."),
+            "Aracuã, the Alarm POKéMON, inhabits\n"
+            "Arauna Cerrado. Its Flying/Normal\n"
+            "nature reflects Brazil's wildlife\n"
+            "and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -20083,12 +20668,14 @@
         .speciesName = _("Bugio"),
         .cryId = CRY_MILOTIC,
         .natDexNum = NATIONAL_DEX_MILOTIC,
-        .categoryName = _("Uivador"),
+        .categoryName = _("Howler"),
         .height = 18,
         .weight = 770,
         .description = COMPOUND_STRING(
-            "Uiva ao alvorecer. Marca território\n"
-            "a quilômetros."),
+            "Found in Arauna Amazon, Bugio is\n"
+            "known as the Howler POKéMON. It\n"
+            "carries a distinct Normal/Dark\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -20140,12 +20727,14 @@
         .speciesName = _("Tuim"),
         .cryId = CRY_CASTFORM,
         .natDexNum = NATIONAL_DEX_CASTFORM,
-        .categoryName = _("Periquito"),
+        .categoryName = _("Parakeet"),
         .height = 3,
         .weight = 15,
         .description = COMPOUND_STRING(
-            "Menor papagaio do Brasil. Voa em\n"
-            "bandos verdes ruidosos."),
+            "Tuim lives in Arauna Cerrado. This\n"
+            "Grass POKéMON embodies a part of\n"
+            "Brazil's nature, folklore, or\n"
+            "culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -20198,12 +20787,14 @@
         .speciesName = _("Periquitão"),
         .cryId = CRY_KECLEON,
         .natDexNum = NATIONAL_DEX_KECLEON,
-        .categoryName = _("Periquito"),
+        .categoryName = _("Parakeet"),
         .height = 7,
         .weight = 40,
         .description = COMPOUND_STRING(
-            "Papagaio esperdo. Imita vozes\n"
-            "humanas para enganar predadores."),
+            "Periquitão, the Parakeet POKéMON,\n"
+            "inhabits Arauna Cerrado. Its\n"
+            "Grass/Flying nature reflects\n"
+            "Brazil's wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -20256,12 +20847,14 @@
         .speciesName = _("Ararunão"),
         .cryId = CRY_SHUPPET,
         .natDexNum = NATIONAL_DEX_SHUPPET,
-        .categoryName = _("Arara"),
+        .categoryName = _("Macaw"),
         .height = 12,
         .weight = 150,
         .description = COMPOUND_STRING(
-            "Arara azul de bico curvo. Casais\n"
-            "permanecem juntos por toda a vida."),
+            "Found in Arauna Amazon, Ararunão is\n"
+            "known as the Macaw POKéMON. It\n"
+            "carries a distinct Grass/Flying\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -20313,12 +20906,14 @@
         .speciesName = _("Preazinho"),
         .cryId = CRY_BANETTE,
         .natDexNum = NATIONAL_DEX_BANETTE,
-        .categoryName = _("Roedor"),
+        .categoryName = _("Rodent"),
         .height = 4,
         .weight = 30,
         .description = COMPOUND_STRING(
-            "Roedor tímido de olhos redondos.\n"
-            "Vive em tocas nos campos."),
+            "Preazinho lives in Arauna Pampas.\n"
+            "This Normal POKéMON embodies a part\n"
+            "of Brazil's nature, folklore, or\n"
+            "culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -20371,12 +20966,14 @@
         .speciesName = _("Capivarão"),
         .cryId = CRY_DUSKULL,
         .natDexNum = NATIONAL_DEX_DUSKULL,
-        .categoryName = _("Capivara"),
+        .categoryName = _("Capybara"),
         .height = 14,
         .weight = 680,
         .description = COMPOUND_STRING(
-            "O maior roedor do mundo. Serve de\n"
-            "assento pra aves e macacos."),
+            "Capivarão, the Capybara POKéMON,\n"
+            "inhabits Arauna Rivers. Its\n"
+            "Normal/Water nature reflects\n"
+            "Brazil's wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -20428,13 +21025,13 @@
         .speciesName = _("Tamanduí"),
         .cryId = CRY_DUSCLOPS,
         .natDexNum = NATIONAL_DEX_DUSCLOPS,
-        .categoryName = _("Formigueiro"),
+        .categoryName = _("Anthill"),
         .height = 5,
         .weight = 40,
         .description = COMPOUND_STRING(
-            "Filhote monta nas costas da mãe até\n"
-            "crescer. Lambe formigas o dia\n"
-            "inteiro."),
+            "Found in Arauna Cerrado, Tamanduí is\n"
+            "known as the Anthill POKéMON. It\n"
+            "carries a distinct Bug affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -20487,12 +21084,14 @@
         .speciesName = _("Tamanduá"),
         .cryId = CRY_TROPIUS,
         .natDexNum = NATIONAL_DEX_TROPIUS,
-        .categoryName = _("Formigueiro"),
+        .categoryName = _("Anthill"),
         .height = 14,
         .weight = 350,
         .description = COMPOUND_STRING(
-            "Língua pegajosa de 60cm. Cheira\n"
-            "formigueiro a quilômetros."),
+            "Tamanduá lives in Arauna Cerrado.\n"
+            "This Bug/Ground POKéMON embodies a\n"
+            "part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -20545,12 +21144,14 @@
         .speciesName = _("Tamanduão"),
         .cryId = CRY_CHIMECHO,
         .natDexNum = NATIONAL_DEX_CHIMECHO,
-        .categoryName = _("Devora"),
+        .categoryName = _("Devourer"),
         .height = 25,
         .weight = 900,
         .description = COMPOUND_STRING(
-            "Garras dianteiras enormes. Espanta\n"
-            "onças de pé em pé."),
+            "Tamanduão, the Devourer POKéMON,\n"
+            "inhabits Arauna Cerrado. Its\n"
+            "Bug/Ground nature reflects Brazil's\n"
+            "wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -20602,12 +21203,13 @@
         .speciesName = _("Preguicinha"),
         .cryId = CRY_ABSOL,
         .natDexNum = NATIONAL_DEX_ABSOL,
-        .categoryName = _("Lenta"),
+        .categoryName = _("Slow"),
         .height = 4,
         .weight = 35,
         .description = COMPOUND_STRING(
-            "Move-se tão devagar que musgo cresce\n"
-            "no pelo."),
+            "Found in Arauna Amazon, Preguicinha\n"
+            "is known as the Slow POKéMON. It\n"
+            "carries a distinct Grass affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -20664,8 +21266,10 @@
         .height = 10,
         .weight = 100,
         .description = COMPOUND_STRING(
-            "Dorme 20 horas por dia. Sonhos\n"
-            "alteram o clima ao redor."),
+            "Preguiçoso lives in Arauna Amazon.\n"
+            "This Grass/Psychic POKéMON embodies\n"
+            "a part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -20717,12 +21321,14 @@
         .speciesName = _("Beija-Flor"),
         .cryId = CRY_SNORUNT,
         .natDexNum = NATIONAL_DEX_SNORUNT,
-        .categoryName = _("Colibri"),
+        .categoryName = _("Hummingbird"),
         .height = 1,
         .weight = 3,
         .description = COMPOUND_STRING(
-            "Bate as asas 80 vezes por segundo.\n"
-            "Bebe néctar em pleno voo."),
+            "Beija-Flor, the Hummingbird POKéMON,\n"
+            "inhabits Arauna Cerrado. Its\n"
+            "Fairy/Flying nature reflects\n"
+            "Brazil's wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -20775,12 +21381,14 @@
         .speciesName = _("Beija-Luz"),
         .cryId = CRY_GLALIE,
         .natDexNum = NATIONAL_DEX_GLALIE,
-        .categoryName = _("Colibri"),
+        .categoryName = _("Hummingbird"),
         .height = 3,
         .weight = 10,
         .description = COMPOUND_STRING(
-            "Penas refletem luz solar em\n"
-            "espectros iridescentes."),
+            "Found in Arauna Cerrado, Beija-Luz\n"
+            "is known as the Hummingbird POKéMON.\n"
+            "It carries a distinct Fairy/Fire\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -20833,12 +21441,14 @@
         .speciesName = _("Beija-Sol"),
         .cryId = CRY_SPHEAL,
         .natDexNum = NATIONAL_DEX_SPHEAL,
-        .categoryName = _("Sol"),
+        .categoryName = _("Sun"),
         .height = 6,
         .weight = 25,
         .description = COMPOUND_STRING(
-            "Núcleo do peito guarda uma centelha\n"
-            "do próprio sol."),
+            "Beija-Sol lives in Arauna Highlands.\n"
+            "This Fairy/Fire POKéMON embodies a\n"
+            "part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -20890,12 +21500,14 @@
         .speciesName = _("Sarará"),
         .cryId = CRY_SEALEO,
         .natDexNum = NATIONAL_DEX_SEALEO,
-        .categoryName = _("Cabelim"),
+        .categoryName = _("Curly-Hair"),
         .height = 9,
         .weight = 120,
         .description = COMPOUND_STRING(
-            "Cabelos loiros cacheados. Traz sorte\n"
-            "a quem pesca perto."),
+            "Sarará, the Curly-Hair POKéMON,\n"
+            "inhabits Arauna Coast. Its\n"
+            "Fairy/Water nature reflects Brazil's\n"
+            "wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -20951,8 +21563,10 @@
         .height = 11,
         .weight = 250,
         .description = COMPOUND_STRING(
-            "Ginga sem parar. Chuta enquanto\n"
-            "dança."),
+            "Found in Arauna Cities, Cambota is\n"
+            "known as the Capoeira POKéMON. It\n"
+            "carries a distinct Fighting/Normal\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -21004,12 +21618,14 @@
         .speciesName = _("Berimbau"),
         .cryId = CRY_CLAMPERL,
         .natDexNum = NATIONAL_DEX_CLAMPERL,
-        .categoryName = _("Instrumento"),
+        .categoryName = _("Instrument"),
         .height = 15,
         .weight = 180,
         .description = COMPOUND_STRING(
-            "Cabaça viva que toca sozinha. Impõe\n"
-            "o ritmo da roda."),
+            "Berimbau lives in Arauna Cities.\n"
+            "This Fairy/Fighting POKéMON embodies\n"
+            "a part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -21061,12 +21677,14 @@
         .speciesName = _("Atabaque"),
         .cryId = CRY_HUNTAIL,
         .natDexNum = NATIONAL_DEX_HUNTAIL,
-        .categoryName = _("Tambor"),
+        .categoryName = _("Drum"),
         .height = 13,
         .weight = 450,
         .description = COMPOUND_STRING(
-            "Cada batida faz o chão tremer. Marca\n"
-            "o compasso do candomblé."),
+            "Atabaque, the Drum POKéMON, inhabits\n"
+            "Arauna Cities. Its Fighting/Ground\n"
+            "nature reflects Brazil's wildlife\n"
+            "and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -21118,11 +21736,14 @@
         .speciesName = _("Pandeirim"),
         .cryId = CRY_GOREBYSS,
         .natDexNum = NATIONAL_DEX_GOREBYSS,
-        .categoryName = _("Ritmo"),
+        .categoryName = _("Rhythm"),
         .height = 6,
         .weight = 50,
         .description = COMPOUND_STRING(
-            "Rodopia sozinho tocando samba."),
+            "Found in Arauna Cities, Pandeirim is\n"
+            "known as the Rhythm POKéMON. It\n"
+            "carries a distinct Fairy/Normal\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -21174,12 +21795,14 @@
         .speciesName = _("Sanfoninha"),
         .cryId = CRY_RELICANTH,
         .natDexNum = NATIONAL_DEX_RELICANTH,
-        .categoryName = _("Fole"),
+        .categoryName = _("Bellows"),
         .height = 10,
         .weight = 120,
         .description = COMPOUND_STRING(
-            "Sopra melodias que fazem quem escuta\n"
-            "chorar de saudade."),
+            "Sanfoninha lives in Arauna\n"
+            "Backlands. This Normal/Fairy POKéMON\n"
+            "embodies a part of Brazil's nature,\n"
+            "folklore, or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -21235,8 +21858,10 @@
         .height = 14,
         .weight = 200,
         .description = COMPOUND_STRING(
-            "Viola caipira ambulante. Canta modas\n"
-            "de causos antigos."),
+            "Violeiro, the Viola POKéMON,\n"
+            "inhabits Arauna Backlands. Its\n"
+            "Grass/Fairy nature reflects Brazil's\n"
+            "wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -21288,12 +21913,14 @@
         .speciesName = _("Zabumba"),
         .cryId = CRY_BAGON,
         .natDexNum = NATIONAL_DEX_BAGON,
-        .categoryName = _("Forró"),
+        .categoryName = _("Forro"),
         .height = 16,
         .weight = 500,
         .description = COMPOUND_STRING(
-            "Tambor grave que puxa o forró. Faz\n"
-            "corações baterem em compasso."),
+            "Found in Arauna Backlands, Zabumba\n"
+            "is known as the Forro POKéMON. It\n"
+            "carries a distinct Ground/Fighting\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -21345,12 +21972,14 @@
         .speciesName = _("Cordelim"),
         .cryId = CRY_SHELGON,
         .natDexNum = NATIONAL_DEX_SHELGON,
-        .categoryName = _("Poeta"),
+        .categoryName = _("Poet"),
         .height = 7,
         .weight = 40,
         .description = COMPOUND_STRING(
-            "Panfleto de cordel que se lê sozinho\n"
-            "em voz alta."),
+            "Cordelim lives in Arauna Backlands.\n"
+            "This Psychic/Fairy POKéMON embodies\n"
+            "a part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -21402,12 +22031,14 @@
         .speciesName = _("Rendeira"),
         .cryId = CRY_SALAMENCE,
         .natDexNum = NATIONAL_DEX_SALAMENCE,
-        .categoryName = _("Renda"),
+        .categoryName = _("Lace"),
         .height = 10,
         .weight = 80,
         .description = COMPOUND_STRING(
-            "Tece rendas invisíveis que capturam\n"
-            "sonhos ruins."),
+            "Rendeira, the Lace POKéMON, inhabits\n"
+            "Arauna Coast. Its Fairy/Bug nature\n"
+            "reflects Brazil's wildlife and\n"
+            "legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -21459,12 +22090,14 @@
         .speciesName = _("Escamoso"),
         .cryId = CRY_BELDUM,
         .natDexNum = NATIONAL_DEX_BELDUM,
-        .categoryName = _("Peixe"),
+        .categoryName = _("Fish"),
         .height = 13,
         .weight = 320,
         .description = COMPOUND_STRING(
-            "Pele coberta de escamas afiadas.\n"
-            "Pescadores respeitam."),
+            "Found in Arauna Rivers, Escamoso is\n"
+            "known as the Fish POKéMON. It\n"
+            "carries a distinct Water/Dark\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -21516,12 +22149,14 @@
         .speciesName = _("Piranhita"),
         .cryId = CRY_METANG,
         .natDexNum = NATIONAL_DEX_METANG,
-        .categoryName = _("Cardume"),
+        .categoryName = _("Schooling"),
         .height = 5,
         .weight = 30,
         .description = COMPOUND_STRING(
-            "Nada em cardumes de dezenas. Come\n"
-            "vaca inteira em minutos."),
+            "Piranhita lives in Arauna Rivers.\n"
+            "This Water/Dark POKéMON embodies a\n"
+            "part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -21573,12 +22208,14 @@
         .speciesName = _("Boitatã"),
         .cryId = CRY_METAGROSS,
         .natDexNum = NATIONAL_DEX_METAGROSS,
-        .categoryName = _("Serpente"),
+        .categoryName = _("Serpent"),
         .height = 45,
         .weight = 2200,
         .description = COMPOUND_STRING(
-            "Cobra de fogo que castiga quem\n"
-            "queima a mata. Olhos brasas."),
+            "Boitatã, the Serpent POKéMON,\n"
+            "inhabits Arauna Cerrado. Its\n"
+            "Fire/Dragon nature reflects Brazil's\n"
+            "wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -21630,12 +22267,14 @@
         .speciesName = _("Piraruaçu"),
         .cryId = CRY_REGIROCK,
         .natDexNum = NATIONAL_DEX_REGIROCK,
-        .categoryName = _("Rio"),
+        .categoryName = _("River"),
         .height = 52,
         .weight = 3400,
         .description = COMPOUND_STRING(
-            "Pirarucu ancestral. Um único golpe\n"
-            "de cauda esvazia um lago."),
+            "Found in Arauna Amazon, Piraruaçu is\n"
+            "known as the River POKéMON. It\n"
+            "carries a distinct Water/Dragon\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -21687,12 +22326,14 @@
         .speciesName = _("Mata-Mata"),
         .cryId = CRY_REGICE,
         .natDexNum = NATIONAL_DEX_REGICE,
-        .categoryName = _("Guardião"),
+        .categoryName = _("Guardian"),
         .height = 38,
         .weight = 1900,
         .description = COMPOUND_STRING(
-            "Cágado antigo. Casco esconde uma\n"
-            "floresta em miniatura."),
+            "Mata-Mata lives in Arauna Amazon.\n"
+            "This Grass/Dragon POKéMON embodies a\n"
+            "part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -21744,12 +22385,14 @@
         .speciesName = _("Solaris"),
         .cryId = CRY_REGISTEEL,
         .natDexNum = NATIONAL_DEX_REGISTEEL,
-        .categoryName = _("Astro"),
+        .categoryName = _("Celestial"),
         .height = 32,
         .weight = 1800,
         .description = COMPOUND_STRING(
-            "Corpo é uma esfera solar viva. Apaga\n"
-            "estrelas ao surgir."),
+            "Solaris, the Celestial POKéMON,\n"
+            "inhabits Arauna Highlands. Its\n"
+            "Fire/Psychic nature reflects\n"
+            "Brazil's wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -21801,12 +22444,14 @@
         .speciesName = _("Selenê"),
         .cryId = CRY_LATIAS,
         .natDexNum = NATIONAL_DEX_LATIAS,
-        .categoryName = _("Astro"),
+        .categoryName = _("Celestial"),
         .height = 30,
         .weight = 1700,
         .description = COMPOUND_STRING(
-            "Corpo é uma lua crescente prateada.\n"
-            "Domina marés e sonhos."),
+            "Found in Arauna Highlands, Selenê is\n"
+            "known as the Celestial POKéMON. It\n"
+            "carries a distinct Dark/Psychic\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -21862,8 +22507,10 @@
         .height = 24,
         .weight = 1500,
         .description = COMPOUND_STRING(
-            "Rei de Palmares reencarnado. Símbolo\n"
-            "da liberdade."),
+            "Zumbi-Rei lives in Arauna Cities.\n"
+            "This Fighting/Dark POKéMON embodies\n"
+            "a part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -21915,12 +22562,14 @@
         .speciesName = _("Iemanjã"),
         .cryId = CRY_KYOGRE,
         .natDexNum = NATIONAL_DEX_KYOGRE,
-        .categoryName = _("Rainha"),
+        .categoryName = _("Queen"),
         .height = 28,
         .weight = 1600,
         .description = COMPOUND_STRING(
-            "Rainha do mar. Recebe oferendas em\n"
-            "fevereiro."),
+            "Iemanjã, the Queen POKéMON, inhabits\n"
+            "Arauna Coast. Its Water/Fairy nature\n"
+            "reflects Brazil's wildlife and\n"
+            "legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -21972,12 +22621,14 @@
         .speciesName = _("Oxumará"),
         .cryId = CRY_GROUDON,
         .natDexNum = NATIONAL_DEX_GROUDON,
-        .categoryName = _("Arco-íris"),
+        .categoryName = _("Rainbow"),
         .height = 35,
         .weight = 1750,
         .description = COMPOUND_STRING(
-            "Serpente arco-íris. Une céu e terra\n"
-            "em ponte colorida."),
+            "Found in Arauna Coast, Oxumará is\n"
+            "known as the Rainbow POKéMON. It\n"
+            "carries a distinct Dragon/Fairy\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -22029,13 +22680,14 @@
         .speciesName = _("Curupixel"),
         .cryId = CRY_RAYQUAZA,
         .natDexNum = NATIONAL_DEX_RAYQUAZA,
-        .categoryName = _("Mítico"),
+        .categoryName = _("Mythical"),
         .height = 4,
         .weight = 30,
         .description = COMPOUND_STRING(
-            "Filhote de Curupira em forma\n"
-            "primordial. Só aparece a crianças\n"
-            "puras."),
+            "Curupixel lives in Arauna Amazon.\n"
+            "This Grass/Fairy POKéMON embodies a\n"
+            "part of Brazil's nature, folklore,\n"
+            "or culture."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -22087,12 +22739,14 @@
         .speciesName = _("Sacinho"),
         .cryId = CRY_JIRACHI,
         .natDexNum = NATIONAL_DEX_JIRACHI,
-        .categoryName = _("Mítico"),
+        .categoryName = _("Mythical"),
         .height = 3,
         .weight = 25,
         .description = COMPOUND_STRING(
-            "Saci recém-nascido. Redemoinhos onde\n"
-            "passa."),
+            "Sacinho, the Mythical POKéMON,\n"
+            "inhabits Arauna Cerrado. Its\n"
+            "Dark/Fairy nature reflects Brazil's\n"
+            "wildlife and legends."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -22144,12 +22798,14 @@
         .speciesName = _("Arauá"),
         .cryId = CRY_DEOXYS,
         .natDexNum = NATIONAL_DEX_DEOXYS,
-        .categoryName = _("Origem"),
+        .categoryName = _("Origin"),
         .height = 18,
         .weight = 880,
         .description = COMPOUND_STRING(
-            "O primeiro Pokémon de Arauana.\n"
-            "Contém a essência de toda a região."),
+            "Found in Arauna Highlands, Arauá is\n"
+            "known as the Origin POKéMON. It\n"
+            "carries a distinct Dragon/Psychic\n"
+            "affinity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
