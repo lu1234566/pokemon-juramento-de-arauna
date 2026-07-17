@@ -29,6 +29,7 @@ def main() -> None:
     parser.add_argument("--header", type=Path, default=Path("src/data/pokemon/species_info/arauna_dex.h"))
     parser.add_argument("--text-dir", type=Path, default=Path("data/text/arauna/en"))
     parser.add_argument("--event-scripts", type=Path, default=Path("data/event_scripts.s"))
+    parser.add_argument("--story-roles", type=Path, default=Path("docs/arauna/source/story_roles.json"))
     args = parser.parse_args()
 
     source = json.loads(args.source.read_text(encoding="utf-8"))["pokemon"]
@@ -58,6 +59,13 @@ def main() -> None:
     for entry in localized:
         if f'.categoryName = _("{entry["category"]}"),' not in header:
             raise ValueError(f"generated category missing for #{entry['id']:03d}")
+
+    roles = json.loads(args.story_roles.read_text(encoding="utf-8"))
+    non_capturable = {int(entry["id"]) for entry in roles["nonCapturable"]}
+    _, *blocks = re.split(r"(?=    \[SPECIES_)", header)
+    for species_id in non_capturable:
+        if ".catchRate = 0," not in blocks[species_id - 1]:
+            raise ValueError(f"non-capturable Census entry #{species_id:03d} has a usable catch rate")
 
     required_story_files = ("birch_speech.inc", "map_lab.inc", "opening.inc", "route.inc", "ruin.inc", "chamber.inc")
     story = "\n".join((args.text_dir / name).read_text(encoding="utf-8") for name in required_story_files)
