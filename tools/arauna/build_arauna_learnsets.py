@@ -1,0 +1,144 @@
+#!/usr/bin/env python3
+"""Generate deterministic, type-aware level-up learnsets for all 386 Fakemon."""
+
+from __future__ import annotations
+
+import argparse
+import json
+import re
+from pathlib import Path
+
+
+ROOT = Path(__file__).resolve().parents[2]
+DEX_SIZE = 386
+
+# low, physical mid/high/finisher, special mid/high/finisher, early/late status
+TYPE_MOVES = {
+    "normal": ("TACKLE", "BODY_SLAM", "DOUBLE_EDGE", "GIGA_IMPACT",
+               "SWIFT", "HYPER_VOICE", "HYPER_BEAM", "GROWL", "WORK_UP"),
+    "fire": ("EMBER", "FLAME_WHEEL", "BLAZE_KICK", "FLARE_BLITZ",
+             "FLAME_BURST", "FLAMETHROWER", "FIRE_BLAST", "SMOKESCREEN", "SUNNY_DAY"),
+    "water": ("WATER_GUN", "AQUA_JET", "AQUA_TAIL", "LIQUIDATION",
+              "BUBBLE_BEAM", "SCALD", "HYDRO_PUMP", "TAIL_WHIP", "RAIN_DANCE"),
+    "grass": ("ABSORB", "RAZOR_LEAF", "LEAF_BLADE", "POWER_WHIP",
+              "MEGA_DRAIN", "ENERGY_BALL", "SOLAR_BEAM", "GROWTH", "SYNTHESIS"),
+    "electric": ("THUNDER_SHOCK", "SPARK", "THUNDER_FANG", "WILD_CHARGE",
+                 "SHOCK_WAVE", "DISCHARGE", "THUNDER", "THUNDER_WAVE", "CHARGE"),
+    "ice": ("POWDER_SNOW", "ICE_SHARD", "ICE_FANG", "ICICLE_CRASH",
+            "ICY_WIND", "ICE_BEAM", "BLIZZARD", "MIST", "HAIL"),
+    "fighting": ("ARM_THRUST", "KARATE_CHOP", "BRICK_BREAK", "CLOSE_COMBAT",
+                 "VACUUM_WAVE", "AURA_SPHERE", "FOCUS_BLAST", "FOCUS_ENERGY", "BULK_UP"),
+    "poison": ("POISON_STING", "POISON_FANG", "POISON_JAB", "GUNK_SHOT",
+               "ACID", "SLUDGE_BOMB", "SLUDGE_WAVE", "POISON_POWDER", "TOXIC"),
+    "ground": ("MUD_SLAP", "DIG", "BULLDOZE", "EARTHQUAKE",
+               "MUD_SHOT", "EARTH_POWER", "SCORCHING_SANDS", "SAND_ATTACK", "SANDSTORM"),
+    "flying": ("GUST", "WING_ATTACK", "AERIAL_ACE", "BRAVE_BIRD",
+               "AIR_CUTTER", "AIR_SLASH", "HURRICANE", "LEER", "TAILWIND"),
+    "psychic": ("CONFUSION", "ZEN_HEADBUTT", "PSYCHO_CUT", "PSYCHIC_FANGS",
+                "PSYBEAM", "PSYCHIC", "FUTURE_SIGHT", "MEDITATE", "CALM_MIND"),
+    "bug": ("STRUGGLE_BUG", "BUG_BITE", "X_SCISSOR", "MEGAHORN",
+            "SIGNAL_BEAM", "BUG_BUZZ", "POLLEN_PUFF", "STRING_SHOT", "QUIVER_DANCE"),
+    "rock": ("ROCK_THROW", "ROCK_TOMB", "ROCK_SLIDE", "STONE_EDGE",
+             "ANCIENT_POWER", "POWER_GEM", "METEOR_BEAM", "HARDEN", "ROCK_POLISH"),
+    "ghost": ("ASTONISH", "SHADOW_SNEAK", "SHADOW_CLAW", "POLTERGEIST",
+              "NIGHT_SHADE", "SHADOW_BALL", "HEX", "CONFUSE_RAY", "CURSE"),
+    "dragon": ("TWISTER", "DRAGON_CLAW", "DRAGON_RUSH", "OUTRAGE",
+               "DRAGON_BREATH", "DRAGON_PULSE", "DRACO_METEOR", "LEER", "DRAGON_DANCE"),
+    "dark": ("BITE", "PURSUIT", "NIGHT_SLASH", "SUCKER_PUNCH",
+             "SNARL", "DARK_PULSE", "FOUL_PLAY", "TAUNT", "NASTY_PLOT"),
+    "steel": ("METAL_CLAW", "BULLET_PUNCH", "IRON_HEAD", "METEOR_MASH",
+              "MIRROR_SHOT", "FLASH_CANNON", "STEEL_BEAM", "HARDEN", "IRON_DEFENSE"),
+    "fairy": ("FAIRY_WIND", "PLAY_ROUGH", "PLAY_ROUGH", "MISTY_EXPLOSION",
+              "DISARMING_VOICE", "DAZZLING_GLEAM", "MOONBLAST", "CHARM", "MISTY_TERRAIN"),
+}
+
+
+def move_constants(path: Path) -> set[str]:
+    return set(re.findall(r"\bMOVE_([A-Z0-9_]+)\b", path.read_text(encoding="utf-8")))
+
+
+def choose_moves(entry: dict) -> list[tuple[int, str]]:
+    types = entry.get("types") or ["normal"]
+    primary = TYPE_MOVES[types[0]]
+    secondary = TYPE_MOVES[types[1]] if len(types) > 1 else None
+    physical = int(entry["stats"]["atk"]) >= int(entry["stats"]["spa"])
+    mid = 1 if physical else 4
+    high = 2 if physical else 5
+    finisher = 3 if physical else 6
+    opposite_finisher = 6 if physical else 3
+
+    candidates = [
+        (1, "TACKLE"),
+        (1, primary[7]),
+        (5, primary[0]),
+        (9, secondary[7] if secondary else primary[8]),
+        (13, primary[mid]),
+        (17, secondary[0] if secondary else "QUICK_ATTACK"),
+        (22, primary[8]),
+        (27, primary[high]),
+        (32, secondary[mid] if secondary else "PROTECT"),
+        (38, secondary[high] if secondary else primary[finisher]),
+        (45, primary[finisher]),
+        (52, secondary[finisher] if secondary else primary[opposite_finisher]),
+    ]
+
+    result = []
+    seen = set()
+    for level, move in candidates:
+        if move not in seen:
+            result.append((level, move))
+            seen.add(move)
+    return result
+
+
+def render(entries: list[dict], known_moves: set[str]) -> str:
+    if len(entries) != DEX_SIZE or {int(entry["id"]) for entry in entries} != set(range(1, DEX_SIZE + 1)):
+        raise ValueError("Arauna source must contain IDs 001-386 exactly")
+
+    unknown = {
+        move
+        for values in TYPE_MOVES.values()
+        for move in values
+        if move not in known_moves
+    } | {"TACKLE", "QUICK_ATTACK", "PROTECT"} - known_moves
+    if unknown:
+        raise ValueError(f"unknown move constants: {', '.join(sorted(unknown))}")
+
+    chunks = [
+        "// Auto-generated by tools/arauna/build_arauna_learnsets.py.",
+        "// Type-aware level-up moves for Arauna Dex slots 001-386.",
+        "",
+        "#ifndef GUARD_ARAUNA_LEVEL_UP_LEARNSETS_H",
+        "#define GUARD_ARAUNA_LEVEL_UP_LEARNSETS_H",
+        "",
+    ]
+    for entry in entries:
+        number = int(entry["id"])
+        chunks.append(f"static const struct LevelUpMove sArauna{number:03d}LevelUpLearnset[] = {{")
+        for level, move in choose_moves(entry):
+            chunks.append(f"    LEVEL_UP_MOVE({level:2d}, MOVE_{move}),")
+        chunks.extend(("    LEVEL_UP_END", "};", ""))
+    chunks.extend(("#endif // GUARD_ARAUNA_LEVEL_UP_LEARNSETS_H", ""))
+    return "\n".join(chunks)
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--dex", type=Path, default=ROOT / "docs/arauna/source/pokedex.json")
+    parser.add_argument("--moves", type=Path, default=ROOT / "include/constants/moves.h")
+    parser.add_argument(
+        "--out",
+        type=Path,
+        default=ROOT / "src/data/pokemon/level_up_learnsets/arauna.h",
+    )
+    args = parser.parse_args()
+
+    entries = json.loads(args.dex.read_text(encoding="utf-8"))["pokemon"]
+    output = render(entries, move_constants(args.moves))
+    args.out.parent.mkdir(parents=True, exist_ok=True)
+    args.out.write_text(output, encoding="utf-8")
+    print(f"generated {len(entries)} Arauna learnsets at {args.out}")
+
+
+if __name__ == "__main__":
+    main()
