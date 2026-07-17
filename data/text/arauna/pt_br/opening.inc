@@ -57,6 +57,13 @@ AraunaResearchCenter_Text_PlaceholderNotice::
 	.string "placeholder técnico.\p"
 	.string "Nenhum sprite de ARAUNA foi\n"
 	.string "integrado sem aprovação.$"
+AraunaResearchCenter_Text_DexActivated::
+	.string "DRA. MAIA: A DEX DE ARAUNA\n"
+	.string "foi ativada para você.\p"
+	.string "Neste protótipo, os 386 slots\n"
+	.string "usam POKéMON substitutos.\p"
+	.string "Cada um será trocado pelo\n"
+	.string "fakemon do mesmo número.$"
 
 AraunaResearchCenter_Text_SelectionLocked::
 	.string "Aguarde o chamado da DRA. MAIA\n"
