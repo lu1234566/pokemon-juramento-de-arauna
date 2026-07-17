@@ -13,7 +13,8 @@ ROM hack bilíngue de Pokémon Emerald ambientada em uma região original inspir
 - 386 espécies de Arauna substituindo os 386 slots da Pokédex do Emerald.
 - Trio inicial original: cachorro caramelo de Fogo, quero-quero de Água e pica-pau brasileiro de Planta.
 - Vínculos de Coragem, Sabedoria e Compaixão com consequências narrativas.
-- Direção visual compatível com o GBA e legível como Pokémon Emerald, sem copiar mapas de Hoenn.
+- Mapas novos construídos principalmente com os tilesets e a linguagem visual original do Emerald.
+- Arte gráfica inédita concentrada primeiro nas espécies de Arauna; cenários autorais entram apenas quando forem realmente necessários.
 
 O primeiro objetivo continua sendo um vertical slice de 30 a 60 minutos. Ele será reconstruído como prova de qualidade da versão definitiva antes da produção em massa da região e da Pokédex.
 
@@ -53,6 +54,8 @@ Os builds `pt-BR` e `en` são gerados da mesma fonte. A CI compila os dois idiom
 ### Regra de arte
 
 Nenhum sprite novo ou modificado pode entrar no jogo antes de existir uma prévia identificada e uma aprovação explícita de Lucas Barcelar. A aprovação de conceito não equivale automaticamente à aprovação do sprite final.
+
+Os cenários reutilizam prioritariamente os tiles, objetos e interfaces do Emerald. Isso não significa reutilizar Hoenn como região: layouts, conexões, nomes, eventos, encontros e história serão próprios de Arauna.
 
 ## Segurança e distribuição
 
