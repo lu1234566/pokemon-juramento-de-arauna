@@ -205,7 +205,6 @@ def build_block(entry: dict, target: str, nat_slot: str, target_for_id: dict[int
     palette = field(original, "palette", "gMonPalette_CircledQuestionMark")
     shiny = field(original, "shinyPalette", "gMonShinyPalette_CircledQuestionMark")
     icon = field(original, "iconSprite", "gMonIcon_QuestionMark")
-    level = field(original, "levelUpLearnset", "sNoneLevelUpLearnset")
     teachable = field(original, "teachableLearnset", "sNoneTeachableLearnset")
     egg = field(original, "eggMoveLearnset", "sNoneEggMoveLearnset")
     footprint = footprint_symbol(original)
@@ -262,7 +261,7 @@ def build_block(entry: dict, target: str, nat_slot: str, target_for_id: dict[int
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT({footprint})
-        .levelUpLearnset = {level},
+        .levelUpLearnset = sArauna{int(entry['id']):03d}LevelUpLearnset,
         .teachableLearnset = {teachable},
         .eggMoveLearnset = {egg},{evolution_line}
     }},
