@@ -36,19 +36,19 @@ AraunaResearchCenter_Text_RouteOpen::
 	.string "tentar esconder.$"
 
 AraunaResearchCenter_Text_PicaPauPrompt::
-	.string "PIMPAU #007: GRASS.\p"
+	.string "PIMPAU No. 007: GRASS.\p"
 	.string "Usa madeira e pedra para\n"
 	.string "controlar o terreno.\p"
 	.string "Escolher como parceiro?$"
 
 AraunaResearchCenter_Text_CarameloPrompt::
-	.string "CARAMELO #001: FIRE.\p"
+	.string "CARAMELO No. 001: FIRE.\p"
 	.string "Um cão protetor que um dia\n"
 	.string "alcançará FIRE/DRAGON.\p"
 	.string "Escolher como parceiro?$"
 
 AraunaResearchCenter_Text_QueroQueroPrompt::
-	.string "QUERÔ #004: WATER.\p"
+	.string "QUERÔ No. 004: WATER.\p"
 	.string "Veloz e territorial; um dia\n"
 	.string "alcançará WATER/BUG.\p"
 	.string "Escolher como parceiro?$"
@@ -112,7 +112,7 @@ AraunaMapLab_Text_ObjectiveNiloReturn::
 
 AraunaMapLab_Text_ObjectiveSliceComplete::
 	.string "O primeiro trecho foi concluído.\p"
-	.string "A memória do CAMPEÃO abriu\n"
+	.string "A memória do CAMPEAO abriu\n"
 	.string "uma investigação maior.$"
 
 AraunaMapLab_Text_NiloReturnIntro::
@@ -141,7 +141,7 @@ AraunaMapLab_Text_NiloCompassionReaction::
 AraunaMapLab_Text_NiloMemoryConclusion::
 	.string "NILO: Se a memória é real, a\n"
 	.string "versão da Liga está incompleta.\p"
-	.string "O CAMPEÃO não desapareceu antes\n"
+	.string "O CAMPEAO não desapareceu antes\n"
 	.string "da Noite Sem Estrelas.\p"
 	.string "Ele estava lá. E rompeu o Elo.$"
 
