@@ -37,7 +37,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_POTION",
+      "trainer_sight_or_berry_tree_id": "ITEM_POKE_BALL",
       "script": "AraunaMapLab_EventScript_FieldKit",
       "flag": "FLAG_ARAUNA_MAP_LAB_FIELD_KIT_TAKEN"
     },
