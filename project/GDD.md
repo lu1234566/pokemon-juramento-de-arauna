@@ -25,7 +25,7 @@ O jogador atravessa uma versão fantástica e viva do Brasil, forma uma equipe i
 3. **Exploração com identidade:** mapas, encontros e personagens contam a história de Arauna.
 4. **Vínculos com consequências:** escolhas são lembradas e produzem mudanças visíveis.
 5. **Batalhas planejadas:** líderes e chefes utilizam estratégias, não apenas níveis maiores.
-6. **Leitura autêntica de GBA:** cenários e sprites respeitam limites, contraste e linguagem visual de Pokémon Emerald.
+6. **Leitura autêntica de GBA:** mapas novos reutilizam prioritariamente os tilesets, objetos e linguagem visual original de Pokémon Emerald.
 7. **Produção em etapas:** nenhum lote grande de arte entra no jogo antes de um pequeno lote provar o fluxo completo.
 
 ## Tom e limites
@@ -58,6 +58,8 @@ Arauna não reproduz o mapa político do Brasil. Ela reorganiza referências bra
 
 O percurso começa na Mata das Araucárias e se expande para Mata Atlântica, Pampas, litoral e manguezais, Cerrado, Pantanal, Caatinga, Floresta Amazônica, serras, cavernas e grandes centros urbanos.
 
+A região terá layouts, conexões e progressão próprios, mas não exige um tileset inédito para cada bioma. Árvores, casas, água, cavernas, interiores, objetos e interface do Emerald serão recombinados em mapas novos. Paletas ou tiles autorais de cenário só entram quando uma área essencial não puder ser comunicada com os recursos existentes.
+
 ## Facções
 
 | Facção | Crença | Papel |
@@ -83,7 +85,7 @@ O percurso começa na Mata das Araucárias e se expande para Mata Atlântica, Pa
 
 30 a 60 minutos:
 
-- Vila das Araucárias reconstruída com linguagem visual de GBA;
+- Vila das Araucárias reconstruída como mapa novo usando prioritariamente tilesets originais do Emerald;
 - centro de pesquisa e escolha do inicial;
 - rival Nilo;
 - Rota da Neblina;
