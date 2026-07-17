@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import argparse
 import struct
+from collections import deque
 from pathlib import Path
 
 
@@ -108,6 +109,30 @@ def build(source_path: Path) -> list[list[int]]:
         actual = grid[y][x]
         if actual != expected:
             raise ValueError(f"{name} anchor at {(x, y)} is {actual:#06x}, expected {expected:#06x}")
+
+    def walkable(x: int, y: int) -> bool:
+        entry = grid[y][x]
+        collision = (entry >> 10) & 0x3
+        metatile = entry & 0x3FF
+        return collision == 0 or metatile in {0x248, 0x249}
+
+    required = {(5, 8), (14, 7), (18, 11), (19, 11)}
+    reached = {(5, 8)}
+    queue = deque(reached)
+    while queue:
+        x, y = queue.popleft()
+        for nx, ny in ((x - 1, y), (x + 1, y), (x, y - 1), (x, y + 1)):
+            if (
+                0 <= nx < WIDTH
+                and 0 <= ny < HEIGHT
+                and (nx, ny) not in reached
+                and walkable(nx, ny)
+            ):
+                reached.add((nx, ny))
+                queue.append((nx, ny))
+    missing = required - reached
+    if missing:
+        raise ValueError(f"village anchors are disconnected: {sorted(missing)}")
 
     if grid == source:
         raise ValueError("Arauna village must not duplicate Littleroot")
