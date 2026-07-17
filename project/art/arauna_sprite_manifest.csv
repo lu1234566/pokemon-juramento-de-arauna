@@ -1,11 +1,11 @@
 dex,name,types,biome_or_region,reference_file,reference_status,reference_width,reference_height,reference_mode,production_status,needs_front,needs_back,needs_icon,needs_shiny,needs_animation
-001,Caramelo,fire,Periferia de Arauana,001_caramelo.png,available,1024,1024,RGB,pilot-awaiting-approval,candidate-awaiting-approval,candidate-awaiting-approval,candidate-awaiting-approval,candidate-awaiting-approval,candidate-awaiting-approval
+001,Caramelo,fire,Periferia de Arauana,001_caramelo.png,available,1024,1024,RGB,approved-integrated,no,no,no,no,no
 002,Caramelão,fire,Periferia de Arauana,002_caramelao.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
 003,Draguará,fire/dragon,Serra de Arauana,003_draguara.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
-004,Querô,water,Pampas de Arauana,004_quero.png,available,1024,1024,RGB,pilot-awaiting-approval,candidate-awaiting-approval,candidate-awaiting-approval,candidate-awaiting-approval,candidate-awaiting-approval,candidate-awaiting-approval
+004,Querô,water,Pampas de Arauana,004_quero.png,available,1024,1024,RGB,approved-integrated,no,no,no,no,no
 005,Queribela,water/bug,Banhados de Arauana,005_queribela.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
 006,Terolibra,water/bug,Banhados de Arauana,006_terolibra.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
-007,Pimpau,grass,Cerrado de Arauana,007_pimpau.png,available,1024,1024,RGB,pilot-awaiting-approval,candidate-awaiting-approval,candidate-awaiting-approval,candidate-awaiting-approval,candidate-awaiting-approval,candidate-awaiting-approval
+007,Pimpau,grass,Cerrado de Arauana,007_pimpau.png,available,1024,1024,RGB,approved-integrated,no,no,no,no,no
 008,Bicopau,grass,Cerrado de Arauana,008_bicopau.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
 009,Petropico,grass/rock,Chapadas de Arauana,009_petropico.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
 010,Formilim,bug,Cerrado de Arauana,010_formilim.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes

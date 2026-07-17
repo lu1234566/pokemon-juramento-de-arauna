@@ -20,21 +20,22 @@ O inventário completo está em `project/art/arauna_sprite_manifest.csv`.
 | Shiny | troca de paleta, sem mudar a silhueta | 15 cores visíveis + transparência |
 | Animação | quadros frontais + `frontAnimId`/`backAnimId` | movimentos já suportados pelo motor |
 
-## Lote-piloto aguardando aprovação
+## Lote-piloto aprovado e integrado
 
 | Dex | Pokémon | Frontal | Traseira | Ícone | Shiny | Animação proposta |
 | --- | --- | --- | --- | --- | --- | --- |
-| #001 | Caramelo | candidata | candidata | candidato | candidata | `ANIM_V_JUMPS_SMALL` / `BACK_ANIM_CONCAVE_ARC_SMALL` |
-| #004 | Querô | candidata | candidata | candidato | candidata | `ANIM_V_JUMPS_BIG` / `BACK_ANIM_CONCAVE_ARC_SMALL` |
-| #007 | Pimpau | candidata | candidata | candidato | candidata | `ANIM_H_PIVOT` / `BACK_ANIM_H_SLIDE` |
+| #001 | Caramelo | aprovada | aprovada | aprovado | aprovada | `ANIM_V_JUMPS_SMALL` / `BACK_ANIM_CONCAVE_ARC_SMALL` |
+| #004 | Querô | aprovada | aprovada | aprovado | aprovada | `ANIM_V_JUMPS_BIG` / `BACK_ANIM_CONCAVE_ARC_SMALL` |
+| #007 | Pimpau | aprovada | aprovada | aprovado | aprovada | `ANIM_H_PIVOT` / `BACK_ANIM_H_SLIDE` |
 
-Os arquivos do lote-piloto permanecem fora da árvore do jogo até a aprovação visual. Depois da aprovação, entram nos slots dos Pokémon originais equivalentes e passam pela validação do compilador gráfico.
+O lote foi aprovado em 17 de julho de 2026. Caramelo ocupa a casca de Torchic,
+Querô ocupa Mudkip e Pimpau ocupa Treecko, preservando os IDs internos já usados
+pelos scripts. Os gráficos foram aplicados às variantes normal e GBA; o projeto
+usa o modo GBA para manter a linguagem visual de Pokémon Emerald.
 
 ## Próxima ordem de produção
 
-1. Aprovar ou corrigir o lote-piloto `#001`, `#004` e `#007`.
-2. Integrar o lote aprovado e validar as três linhas iniciais em batalha, menu e Pokédex.
-3. Produzir as evoluções `#002`, `#003`, `#005`, `#006`, `#008` e `#009` com a mesma linguagem visual.
-4. Processar os demais `#010`–`#314` em lotes pequenos para aprovação.
-5. Aguardar ou produzir referências definitivas para `#315`–`#386` antes de criar seus pacotes GBA.
-
+1. Validar o lote integrado em batalha, menu e Pokédex quando o toolchain estiver disponível.
+2. Produzir as evoluções `#002`, `#003`, `#005`, `#006`, `#008` e `#009` com a mesma linguagem visual.
+3. Processar os demais `#010`–`#314` em lotes pequenos para aprovação.
+4. Aguardar ou produzir referências definitivas para `#315`–`#386` antes de criar seus pacotes GBA.
