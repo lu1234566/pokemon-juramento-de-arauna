@@ -29,6 +29,9 @@ Este arquivo registra decisões que não devem ser reabertas silenciosamente. Al
 | ADR-023 | 2026-07-17 | Nenhum sprite novo ou modificado será integrado antes de prévia identificada e aprovação explícita de Lucas Barcelar | Aceita |
 | ADR-024 | 2026-07-17 | Aprovação de conceito, aprovação de sprite e aprovação de integração são etapas distintas | Aceita |
 | ADR-025 | 2026-07-17 | A ROM limpa fornecida pelo proprietário será usada somente localmente; distribuição ocorrerá por patches | Aceita |
+| ADR-026 | 2026-07-17 | A proposta B, compacta e em pose baixa, é a silhueta-base aprovada para a primeira forma do Projeto Caramelo | Aceita para refinamento; não integrada |
+| ADR-027 | 2026-07-17 | Arauna terá mapas e conexões novos, mas reutilizará prioritariamente tilesets, objetos, interiores e interface originais do Emerald | Aceita |
+| ADR-028 | 2026-07-17 | Arte inédita será concentrada primeiro nos Pokémon; gráficos de cenário autorais serão exceção quando os assets existentes não resolverem uma necessidade essencial | Aceita |
 
 ## Decisões abertas
 
