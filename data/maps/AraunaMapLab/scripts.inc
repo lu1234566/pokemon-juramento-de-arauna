@@ -4,30 +4,25 @@ AraunaMapLab_MapScripts::
 AraunaMapLab_EventScript_Guide::
 	lock
 	faceplayer
-	goto_if_set FLAG_ARAUNA_MAP_LAB_GUIDE_MET, AraunaMapLab_EventScript_ReturnPrompt
-	setflag FLAG_ARAUNA_MAP_LAB_GUIDE_MET
-	getpartysize
-	goto_if_ne VAR_RESULT, 0, AraunaMapLab_EventScript_GuideIntroduction
-	msgbox AraunaMapLab_Text_TestPartner, MSGBOX_DEFAULT
-	givemon SPECIES_TREECKO, 5, ITEM_NONE
-	setflag FLAG_SYS_POKEMON_GET
-	special HealPlayerParty
-
-AraunaMapLab_EventScript_GuideIntroduction::
-	msgbox AraunaMapLab_Text_GuideIntroduction, MSGBOX_DEFAULT
+	goto_if_eq VAR_ARAUNA_STORY_STAGE, 0, AraunaMapLab_EventScript_ObjectiveHome
+	goto_if_eq VAR_ARAUNA_STORY_STAGE, 1, AraunaMapLab_EventScript_ObjectiveCenter
+	goto_if_eq VAR_ARAUNA_STORY_STAGE, 2, AraunaMapLab_EventScript_ObjectiveNilo
+	msgbox AraunaMapLab_Text_ObjectiveRoute, MSGBOX_DEFAULT
 	release
 	end
 
-AraunaMapLab_EventScript_ReturnPrompt::
-	msgbox AraunaMapLab_Text_ReturnPrompt, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, AraunaMapLab_EventScript_Stay
-	closemessage
-	warp MAP_LITTLEROOT_TOWN, 255, 11, 13
-	waitstate
+AraunaMapLab_EventScript_ObjectiveHome::
+	msgbox AraunaMapLab_Text_ObjectiveHome, MSGBOX_DEFAULT
+	release
 	end
 
-AraunaMapLab_EventScript_Stay::
-	msgbox AraunaMapLab_Text_Stay, MSGBOX_DEFAULT
+AraunaMapLab_EventScript_ObjectiveCenter::
+	msgbox AraunaMapLab_Text_ObjectiveCenter, MSGBOX_DEFAULT
+	release
+	end
+
+AraunaMapLab_EventScript_ObjectiveNilo::
+	msgbox AraunaMapLab_Text_ObjectiveNilo, MSGBOX_DEFAULT
 	release
 	end
 
@@ -48,14 +43,19 @@ AraunaMapLab_EventScript_BagFull::
 	end
 
 AraunaMapLab_EventScript_Nilo::
-	getpartysize
-	goto_if_eq VAR_RESULT, 0, AraunaMapLab_EventScript_NeedPartner
+	goto_if_lt VAR_ARAUNA_STORY_STAGE, 2, AraunaMapLab_EventScript_NeedPartner
+	goto_if_ge VAR_ARAUNA_STORY_STAGE, 3, AraunaMapLab_EventScript_NiloAfterBattle
 	trainerbattle_single TRAINER_ARAUNA_SCOUT_NILO, AraunaMapLab_Text_NiloIntro, AraunaMapLab_Text_NiloDefeat
+	setvar VAR_ARAUNA_STORY_STAGE, 3
 	msgbox AraunaMapLab_Text_NiloPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 AraunaMapLab_EventScript_NeedPartner::
 	msgbox AraunaMapLab_Text_NeedPartner, MSGBOX_NPC
+	end
+
+AraunaMapLab_EventScript_NiloAfterBattle::
+	msgbox AraunaMapLab_Text_NiloAfterBattle, MSGBOX_NPC
 	end
 
 AraunaMapLab_EventScript_EnterPlayerHouse::
@@ -69,6 +69,19 @@ AraunaMapLab_EventScript_EnterResearchCenter::
 	end
 
 AraunaMapLab_EventScript_EnterMistRoute::
+	goto_if_ge VAR_ARAUNA_STORY_STAGE, 3, AraunaMapLab_EventScript_WarpToMistRoute
+	lockall
+	msgbox AraunaMapLab_Text_RouteLocked, MSGBOX_DEFAULT
+	applymovement LOCALID_PLAYER, AraunaMapLab_Movement_StepBackFromRoute
+	waitmovement 0
+	releaseall
+	end
+
+AraunaMapLab_EventScript_WarpToMistRoute::
 	warp MAP_ARAUNA_MIST_ROUTE, 255, 10, 18
 	waitstate
 	end
+
+AraunaMapLab_Movement_StepBackFromRoute:
+	walk_left
+	step_end
