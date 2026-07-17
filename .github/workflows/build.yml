@@ -40,6 +40,8 @@ jobs:
         run: |
           python3 scripts/generate_arauna_vanilla_village.py --out /tmp/arauna-village-map.bin
           cmp /tmp/arauna-village-map.bin data/layouts/AraunaMapLab/map.bin
+      - name: Validate Arauna opening flow
+        run: python3 scripts/validate_arauna_opening.py
       - name: Validate Araucaria art assets
         run: python3 scripts/validate_araucaria_art.py
       - name: Validate Codespaces configuration
