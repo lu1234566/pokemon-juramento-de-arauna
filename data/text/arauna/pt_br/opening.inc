@@ -34,19 +34,19 @@ AraunaResearchCenter_Text_RouteOpen::
 	.string "tentar esconder.$"
 
 AraunaResearchCenter_Text_PicaPauPrompt::
-	.string "PROJETO PICA-PAU: GRASS.\p"
+	.string "PIMPAU #007: GRASS.\p"
 	.string "Usa madeira e pedra para\n"
 	.string "controlar o terreno.\p"
 	.string "Escolher como parceiro?$"
 
 AraunaResearchCenter_Text_CarameloPrompt::
-	.string "PROJETO CARAMELO: FIRE.\p"
+	.string "CARAMELO #001: FIRE.\p"
 	.string "Um cão protetor que um dia\n"
 	.string "alcançará FIRE/DRAGON.\p"
 	.string "Escolher como parceiro?$"
 
 AraunaResearchCenter_Text_QueroQueroPrompt::
-	.string "PROJETO QUERO-QUERO: WATER.\p"
+	.string "QUERÔ #004: WATER.\p"
 	.string "Veloz e territorial; um dia\n"
 	.string "alcançará WATER/BUG.\p"
 	.string "Escolher como parceiro?$"
