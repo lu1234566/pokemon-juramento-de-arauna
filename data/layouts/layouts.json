@@ -9330,7 +9330,7 @@
       "width": 20,
       "height": 20,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_AraucariaVillage",
+      "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/AraunaMapLab/border.bin",
       "blockdata_filepath": "data/layouts/AraunaMapLab/map.bin",
       "layout_version": "emerald"
