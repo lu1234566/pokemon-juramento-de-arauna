@@ -8,8 +8,8 @@ AraunaMapLab_Text_EntryDeclined::
 
 AraunaMapLab_Text_TestPartner::
 	.string "Your party is empty.\p"
-	.string "Take this temporary TREECKO.\n"
-	.string "It exists only for this test.$"
+	.string "Take this PIMPAU as your partner.\n"
+	.string "It will help you explore here.$"
 
 AraunaMapLab_Text_GuideIntroduction::
 	.string "Welcome to ARAUNA's first\n"
