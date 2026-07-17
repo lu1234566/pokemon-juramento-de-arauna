@@ -14,6 +14,8 @@ As estimativas serão revistas após o vertical slice definitivo. A Pokédex de 
 - [x] Confirmar substituição dos 386 slots do Emerald.
 - [x] Confirmar as inspirações e tipos finais do novo trio.
 - [x] Formalizar aprovação obrigatória de sprites.
+- [x] Confirmar mapas novos com reutilização prioritária dos gráficos de cenário do Emerald.
+- [x] Aprovar a proposta B como silhueta-base do Projeto Caramelo.
 - [ ] Aprovar ordem dos macrobiomas e dos oito Selos.
 - [ ] Decidir mecânica moderna principal.
 
@@ -43,7 +45,7 @@ As estimativas serão revistas após o vertical slice definitivo. A Pokédex de 
 
 - [x] Manter o fluxo Vila–Rota da Neblina–Ruína do Primeiro Elo.
 - [ ] Corrigir entradas, colisões e retornos ainda pendentes.
-- [ ] Reconstruir a Vila das Araucárias com volumes e textura compatíveis com Emerald.
+- [ ] Remontar a Vila das Araucárias com tilesets originais e estáveis do Emerald, preservando identidade por layout, eventos e encontros.
 - [ ] Definir 12 a 18 espécies do ecossistema inicial.
 - [ ] Implementar o fluxo completo com placeholders identificados.
 - [ ] Implementar escolha de Vínculo, rival, miniboss e encerramento.
@@ -51,7 +53,8 @@ As estimativas serão revistas após o vertical slice definitivo. A Pokédex de 
 
 ## M4 — Lote 0: trio inicial
 
-- [ ] Aprovar três silhuetas para cada primeira forma.
+- [x] Aprovar a silhueta-base da primeira forma do Projeto Caramelo.
+- [ ] Aprovar três silhuetas para as primeiras formas de Pica-pau e Quero-quero.
 - [ ] Aprovar concept art das formas escolhidas.
 - [ ] Aprovar paletas normal e shiny.
 - [ ] Aprovar sprites frontais.
