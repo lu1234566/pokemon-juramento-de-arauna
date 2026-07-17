@@ -320,39 +320,6 @@ CUSTOM_DEX = {
     18: "The true lord of the forest. Wherever it steps, a century-old tree can rise in a single night.",
     19: "Its song enchants fishers. Those who follow it into the river are said to join its court forever.",
     20: "It has only one leg and rides inside whirlwinds. It loves putting out campfires and teasing careless Trainers.",
-    99: "Born from a town's cruel gossip, this headless mare now guards people harmed by lies and public condemnation.",
-    237: "It fades when its story goes untold. Its howl is less a curse than a plea to remember the person behind the beast.",
-    261: "An ancient Curupira that remembers paths erased from every map. Its final backward tracks always point the next guardian forward.",
-    265: "A revered ancestor who safeguards stories omitted from official records. It asks impatient listeners to sit and hear them again.",
-    269: "It carries the anger of forgotten backlands communities. It lowers its weapon only when drought and injustice are truly faced.",
-    286: "The eldest voice beneath the river. Its song can restore poisoned water, but it teaches that grief must be carried by memory.",
-    291: "It moves between human and serpent forms. Old records say the first great dam was built across its sleeping place.",
-    329: "A solar guardian that wakes with the first light. Its glow is one of twenty signs that Arauna still remembers itself.",
-    330: "A lunar guardian that watches tides and dreams. It dims whenever the stories of the night are treated as worthless.",
-    331: "A primordial thunder guardian. One call can shake the highlands and awaken stories buried beneath stone.",
-    332: "A supreme river singer. Every current in its domain bends toward a story spoken with honesty.",
-    333: "Said to carry the light of Arauna's first morning. It gives warmth to new tales without erasing the old ones.",
-    334: "Keeper of the first moonlit night. Its silver light preserves dreams that would otherwise be forgotten at dawn.",
-    335: "A guardian of bonds freely chosen. It cannot force affection, but it can reveal promises made in good faith.",
-    336: "Its body mirrors an entire river basin, with countless tributaries moving like veins beneath its skin.",
-    337: "Arauna's regional guardian. It appears only when many communities remember the same danger at once.",
-    338: "A forest spirit born again after every fire. New leaves emerge wherever its fading green light touches ash.",
-    339: "Guardian of the summer rains. When imprisoned, clouds become a product and the backlands begin to crack.",
-    340: "Guardian of drought and endurance. Without Chuvão to balance it, its heat can rule the fields for months.",
-    341: "The southern wind given form. Its whistle carries cold weather, distant voices, and warnings between biomes.",
-    342: "Living fertile earth. Crops rise in its footsteps, but only where the ground is treated with care.",
-    343: "The first hearth-fire of Arauna. It warms gatherings where stories are shared and turns pale when they fall silent.",
-    344: "The Atlantic tide given memory. Waves follow its rhythm and return lost stories to the coast.",
-    345: "Guardian of daybreak. Rose-gold light spreads from its body whenever a forgotten story is told again.",
-    346: "Guardian of sunset. It gathers the day's final colors so that darkness arrives without erasing what came before.",
-    347: "A fallen star that grants one honest wish. It cannot return the dead, but it may let their voice be heard once more.",
-    348: "An embodiment of Arauna's many biomes. It exists only while no single story claims to speak for the whole region.",
-    381: "A revered ancestor whose memory became a symbol of freedom. It stands beside those who preserve histories of resistance.",
-    382: "A revered queen of the sea. It is recorded by the Census, but no Trainer may claim it as a possession.",
-    383: "A revered rainbow serpent joining sky and earth. It may bless a journey, but it can never be captured.",
-    384: "A newborn forest guardian that appears before a child who truly believes. Its first footprints face forward.",
-    385: "A newborn Saci still learning to ride the wind. Small whirlwinds and harmless pranks mark every path it takes.",
-    386: "It is not Arauna's oldest legend, but the next story the region needs to hear. It awakens when a new tale is shared.",
 }
 
 
@@ -416,7 +383,7 @@ def wrapped_description(text: str, width: int = 36, lines: int = 4) -> list[str]
     return wrapped
 
 
-def replace_header_localization(header: str, localization: dict, non_capturable: set[int]) -> str:
+def replace_header_localization(header: str, localization: dict) -> str:
     prefix, *blocks = re.split(r"(?=    \[SPECIES_)", header)
     if len(blocks) != 386:
         raise ValueError(f"expected 386 species blocks, found {len(blocks)}")
@@ -444,15 +411,6 @@ def replace_header_localization(header: str, localization: dict, non_capturable:
         )
         if category_count != 1 or dex_count != 1:
             raise ValueError(f"could not localize species {localized['id']:03d}")
-        if int(localized["id"]) in non_capturable:
-            block, catch_count = re.subn(
-                r"(\.catchRate\s*=\s*)\d+",
-                r"\g<1>0",
-                block,
-                count=1,
-            )
-            if catch_count != 1:
-                raise ValueError(f"could not lock capture rate for species {localized['id']:03d}")
         output.append(block)
     return "".join(output)
 
@@ -462,7 +420,6 @@ def main() -> None:
     parser.add_argument("--source", type=Path, default=Path("docs/arauna/source/pokedex.json"))
     parser.add_argument("--out", type=Path, default=Path("docs/arauna/source/pokedex.en.json"))
     parser.add_argument("--header", type=Path)
-    parser.add_argument("--story-roles", type=Path, default=Path("docs/arauna/source/story_roles.json"))
     args = parser.parse_args()
 
     source = json.loads(args.source.read_text(encoding="utf-8"))
@@ -472,9 +429,7 @@ def main() -> None:
 
     if args.header:
         header = args.header.read_text(encoding="utf-8")
-        roles = json.loads(args.story_roles.read_text(encoding="utf-8"))
-        non_capturable = {int(entry["id"]) for entry in roles["nonCapturable"]}
-        args.header.write_text(replace_header_localization(header, localization, non_capturable), encoding="utf-8")
+        args.header.write_text(replace_header_localization(header, localization), encoding="utf-8")
 
     print(f"wrote {len(localization['pokemon'])} English entries to {args.out}")
 
