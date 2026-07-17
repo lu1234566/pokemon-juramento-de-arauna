@@ -27,9 +27,14 @@ AraunaMapLab_Text_Stay::
 	.string "Explore no seu ritmo.$"
 
 AraunaMapLab_Text_FieldKit::
-	.string "Você achou um KIT DE CAMPO!\p"
-	.string "Uma POTION foi guardada\n"
-	.string "na MOCHILA.$"
+	.string "Você recebeu o KIT DE CAMPO!\p"
+	.string "5 POKé BALLS e 3 POTIONS\n"
+	.string "foram guardadas na MOCHILA.$"
+
+AraunaMapLab_Text_FieldKitLocked::
+	.string "O KIT está selado.\p"
+	.string "Registre um parceiro com\n"
+	.string "a DRA. MAIA primeiro.$"
 
 AraunaMapLab_Text_BagFull::
 	.string "Sua MOCHILA está cheia.\n"
