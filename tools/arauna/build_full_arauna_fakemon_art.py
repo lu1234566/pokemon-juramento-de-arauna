@@ -409,7 +409,18 @@ def copy_prepared_package(source: Path, destination: Path, entry: dict) -> dict:
     for name in ("anim_front.png", "back.png", "icon.png", "normal.pal", "shiny.pal"):
         shutil.copy2(source / name, destination / name)
     profile = json.loads((source / "candidate_profile.json").read_text(encoding="utf-8"))
-    profile.update({"status": "integrated", "productionMethod": "hand-prepared-approved", "referenceStatus": "available"})
+    profile.update(
+        {
+            "dex": entry["id"],
+            "name": entry["name"],
+            "types": entry.get("types", []),
+            "status": "integrated",
+            "productionMethod": "hand-prepared-approved",
+            "referenceStatus": "available",
+            "animation": profile.get("animation") or "two-frame-idle-lift",
+            "shiny": profile.get("shiny") or "type-directed-palette",
+        }
+    )
     (destination / "candidate_profile.json").write_text(json.dumps(profile, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return profile
 
