@@ -22,4 +22,4 @@ As folhas de contato ficam em `docs/arauna/previews`, e o mapeamento exato entre
 
 - Os 72 conceitos de 315–386 foram criados a partir de nome, tipos, categoria e inspiração porque não havia imagem de referência no pacote recebido.
 - As traseiras de 010–314 são reconstruções de produção; podem ser trocadas uma a uma sem alterar a Pokédex.
-- Golpes e habilidades continuam herdados dos Pokémon usados como slots de batalha. Nomes, tipos, atributos, dimensões, textos e evoluções já são de Arauna.
+- Golpes, habilidades e cries continuam herdados dos Pokémon usados como slots de batalha. Nomes, tipos, atributos, dimensões, textos e evoluções já são de Arauna.

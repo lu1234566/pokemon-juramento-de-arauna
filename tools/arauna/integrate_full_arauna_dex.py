@@ -110,6 +110,11 @@ def field(block: str, name: str, default: str) -> str:
     return match.group(1) if match else default
 
 
+def footprint_symbol(block: str) -> str:
+    match = re.search(r"FOOTPRINT\(([A-Za-z0-9_]+)\)", block)
+    return match.group(1) if match else "QuestionMark"
+
+
 def source_block(family_text: str, target: str) -> str:
     if target == "UNOWN":
         return """
@@ -119,6 +124,7 @@ def source_block(family_text: str, target: str) -> str:
         .palette = gMonPalette_Unown,
         .shinyPalette = gMonShinyPalette_Unown,
         .iconSprite = gMonIcon_UnownA,
+        FOOTPRINT(Unown)
         .levelUpLearnset = sUnownLevelUpLearnset,
         .teachableLearnset = sUnownTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -185,6 +191,7 @@ def build_block(entry: dict, target: str, nat_slot: str, target_for_id: dict[int
     level = field(original, "levelUpLearnset", "sNoneLevelUpLearnset")
     teachable = field(original, "teachableLearnset", "sNoneTeachableLearnset")
     egg = field(original, "eggMoveLearnset", "sNoneEggMoveLearnset")
+    footprint = footprint_symbol(original)
     name = engine_name(entry).replace('"', "'")
     cat = category(entry).replace('"', "'")
 
@@ -237,7 +244,7 @@ def build_block(entry: dict, target: str, nat_slot: str, target_for_id: dict[int
         .iconPalIndex = {int(profile['iconPalIndex'])},
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT({footprint})
         .levelUpLearnset = {level},
         .teachableLearnset = {teachable},
         .eggMoveLearnset = {egg},{evolution_line}

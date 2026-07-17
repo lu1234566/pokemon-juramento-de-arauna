@@ -53,7 +53,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Torchic)
         .levelUpLearnset = sTorchicLevelUpLearnset,
         .teachableLearnset = sTorchicTeachableLearnset,
         .eggMoveLearnset = sTorchicEggMoveLearnset,
@@ -113,7 +113,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Combusken)
         .levelUpLearnset = sCombuskenLevelUpLearnset,
         .teachableLearnset = sCombuskenTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -173,7 +173,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Blaziken)
         .levelUpLearnset = sBlazikenLevelUpLearnset,
         .teachableLearnset = sBlazikenTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -232,7 +232,7 @@
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Mudkip)
         .levelUpLearnset = sMudkipLevelUpLearnset,
         .teachableLearnset = sMudkipTeachableLearnset,
         .eggMoveLearnset = sMudkipEggMoveLearnset,
@@ -292,7 +292,7 @@
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Marshtomp)
         .levelUpLearnset = sMarshtompLevelUpLearnset,
         .teachableLearnset = sMarshtompTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -352,7 +352,7 @@
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Swampert)
         .levelUpLearnset = sSwampertLevelUpLearnset,
         .teachableLearnset = sSwampertTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -411,7 +411,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Treecko)
         .levelUpLearnset = sTreeckoLevelUpLearnset,
         .teachableLearnset = sTreeckoTeachableLearnset,
         .eggMoveLearnset = sTreeckoEggMoveLearnset,
@@ -471,7 +471,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Grovyle)
         .levelUpLearnset = sGrovyleLevelUpLearnset,
         .teachableLearnset = sGrovyleTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -531,7 +531,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Sceptile)
         .levelUpLearnset = sSceptileLevelUpLearnset,
         .teachableLearnset = sSceptileTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -590,7 +590,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Bulbasaur)
         .levelUpLearnset = sBulbasaurLevelUpLearnset,
         .teachableLearnset = sBulbasaurTeachableLearnset,
         .eggMoveLearnset = sBulbasaurEggMoveLearnset,
@@ -649,7 +649,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Ivysaur)
         .levelUpLearnset = sIvysaurLevelUpLearnset,
         .teachableLearnset = sIvysaurTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -708,7 +708,7 @@
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Venusaur)
         .levelUpLearnset = sVenusaurLevelUpLearnset,
         .teachableLearnset = sVenusaurTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -767,7 +767,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Charmander)
         .levelUpLearnset = sCharmanderLevelUpLearnset,
         .teachableLearnset = sCharmanderTeachableLearnset,
         .eggMoveLearnset = sCharmanderEggMoveLearnset,
@@ -825,7 +825,7 @@
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Charmeleon)
         .levelUpLearnset = sCharmeleonLevelUpLearnset,
         .teachableLearnset = sCharmeleonTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -885,7 +885,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Charizard)
         .levelUpLearnset = sCharizardLevelUpLearnset,
         .teachableLearnset = sCharizardTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -944,7 +944,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Squirtle)
         .levelUpLearnset = sSquirtleLevelUpLearnset,
         .teachableLearnset = sSquirtleTeachableLearnset,
         .eggMoveLearnset = sSquirtleEggMoveLearnset,
@@ -1003,7 +1003,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Wartortle)
         .levelUpLearnset = sWartortleLevelUpLearnset,
         .teachableLearnset = sWartortleTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -1062,7 +1062,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Blastoise)
         .levelUpLearnset = sBlastoiseLevelUpLearnset,
         .teachableLearnset = sBlastoiseTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -1120,7 +1120,7 @@
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Caterpie)
         .levelUpLearnset = sCaterpieLevelUpLearnset,
         .teachableLearnset = sCaterpieTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -1179,7 +1179,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Metapod)
         .levelUpLearnset = sMetapodLevelUpLearnset,
         .teachableLearnset = sMetapodTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -1237,7 +1237,7 @@
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Butterfree)
         .levelUpLearnset = sButterfreeLevelUpLearnset,
         .teachableLearnset = sButterfreeTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -1296,7 +1296,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Weedle)
         .levelUpLearnset = sWeedleLevelUpLearnset,
         .teachableLearnset = sWeedleTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -1355,7 +1355,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Kakuna)
         .levelUpLearnset = sKakunaLevelUpLearnset,
         .teachableLearnset = sKakunaTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -1414,7 +1414,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Beedrill)
         .levelUpLearnset = sBeedrillLevelUpLearnset,
         .teachableLearnset = sBeedrillTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -1472,7 +1472,7 @@
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Pidgey)
         .levelUpLearnset = sPidgeyLevelUpLearnset,
         .teachableLearnset = sPidgeyTeachableLearnset,
         .eggMoveLearnset = sPidgeyEggMoveLearnset,
@@ -1531,7 +1531,7 @@
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Pidgeotto)
         .levelUpLearnset = sPidgeottoLevelUpLearnset,
         .teachableLearnset = sPidgeottoTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -1590,7 +1590,7 @@
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Pidgeot)
         .levelUpLearnset = sPidgeotLevelUpLearnset,
         .teachableLearnset = sPidgeotTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -1648,7 +1648,7 @@
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Rattata)
         .levelUpLearnset = sRattataLevelUpLearnset,
         .teachableLearnset = sRattataTeachableLearnset,
         .eggMoveLearnset = sRattataEggMoveLearnset,
@@ -1707,7 +1707,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Raticate)
         .levelUpLearnset = sRaticateLevelUpLearnset,
         .teachableLearnset = sRaticateTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -1766,7 +1766,7 @@
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Spearow)
         .levelUpLearnset = sSpearowLevelUpLearnset,
         .teachableLearnset = sSpearowTeachableLearnset,
         .eggMoveLearnset = sSpearowEggMoveLearnset,
@@ -1824,7 +1824,7 @@
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Fearow)
         .levelUpLearnset = sFearowLevelUpLearnset,
         .teachableLearnset = sFearowTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -1882,7 +1882,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Ekans)
         .levelUpLearnset = sEkansLevelUpLearnset,
         .teachableLearnset = sEkansTeachableLearnset,
         .eggMoveLearnset = sEkansEggMoveLearnset,
@@ -1941,7 +1941,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Arbok)
         .levelUpLearnset = sArbokLevelUpLearnset,
         .teachableLearnset = sArbokTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -1999,7 +1999,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Pikachu)
         .levelUpLearnset = sPikachuLevelUpLearnset,
         .teachableLearnset = sPikachuTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -2058,7 +2058,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Raichu)
         .levelUpLearnset = sRaichuLevelUpLearnset,
         .teachableLearnset = sRaichuTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -2117,7 +2117,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Sandshrew)
         .levelUpLearnset = sSandshrewLevelUpLearnset,
         .teachableLearnset = sSandshrewTeachableLearnset,
         .eggMoveLearnset = sSandshrewEggMoveLearnset,
@@ -2175,7 +2175,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Sandslash)
         .levelUpLearnset = sSandslashLevelUpLearnset,
         .teachableLearnset = sSandslashTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -2234,7 +2234,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(NidoranF)
         .levelUpLearnset = sNidoranFLevelUpLearnset,
         .teachableLearnset = sNidoranFTeachableLearnset,
         .eggMoveLearnset = sNidoranFEggMoveLearnset,
@@ -2293,7 +2293,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Nidorina)
         .levelUpLearnset = sNidorinaLevelUpLearnset,
         .teachableLearnset = sNidorinaTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -2351,7 +2351,7 @@
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Nidoqueen)
         .levelUpLearnset = sNidoqueenLevelUpLearnset,
         .teachableLearnset = sNidoqueenTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -2410,7 +2410,7 @@
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(NidoranM)
         .levelUpLearnset = sNidoranMLevelUpLearnset,
         .teachableLearnset = sNidoranMTeachableLearnset,
         .eggMoveLearnset = sNidoranMEggMoveLearnset,
@@ -2469,7 +2469,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Nidorino)
         .levelUpLearnset = sNidorinoLevelUpLearnset,
         .teachableLearnset = sNidorinoTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -2527,7 +2527,7 @@
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Nidoking)
         .levelUpLearnset = sNidokingLevelUpLearnset,
         .teachableLearnset = sNidokingTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -2586,7 +2586,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Clefairy)
         .levelUpLearnset = sClefairyLevelUpLearnset,
         .teachableLearnset = sClefairyTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -2643,7 +2643,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Clefable)
         .levelUpLearnset = sClefableLevelUpLearnset,
         .teachableLearnset = sClefableTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -2700,7 +2700,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Vulpix)
         .levelUpLearnset = sVulpixLevelUpLearnset,
         .teachableLearnset = sVulpixTeachableLearnset,
         .eggMoveLearnset = sVulpixEggMoveLearnset,
@@ -2759,7 +2759,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Ninetales)
         .levelUpLearnset = sNinetalesLevelUpLearnset,
         .teachableLearnset = sNinetalesTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -2819,7 +2819,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Jigglypuff)
         .levelUpLearnset = sJigglypuffLevelUpLearnset,
         .teachableLearnset = sJigglypuffTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -2876,7 +2876,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Wigglytuff)
         .levelUpLearnset = sWigglytuffLevelUpLearnset,
         .teachableLearnset = sWigglytuffTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -2935,7 +2935,7 @@
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Zubat)
         .levelUpLearnset = sZubatLevelUpLearnset,
         .teachableLearnset = sZubatTeachableLearnset,
         .eggMoveLearnset = sZubatEggMoveLearnset,
@@ -2994,7 +2994,7 @@
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Golbat)
         .levelUpLearnset = sGolbatLevelUpLearnset,
         .teachableLearnset = sGolbatTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -3052,7 +3052,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Oddish)
         .levelUpLearnset = sOddishLevelUpLearnset,
         .teachableLearnset = sOddishTeachableLearnset,
         .eggMoveLearnset = sOddishEggMoveLearnset,
@@ -3111,7 +3111,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Gloom)
         .levelUpLearnset = sGloomLevelUpLearnset,
         .teachableLearnset = sGloomTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -3168,7 +3168,7 @@
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Vileplume)
         .levelUpLearnset = sVileplumeLevelUpLearnset,
         .teachableLearnset = sVileplumeTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -3225,7 +3225,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Paras)
         .levelUpLearnset = sParasLevelUpLearnset,
         .teachableLearnset = sParasTeachableLearnset,
         .eggMoveLearnset = sParasEggMoveLearnset,
@@ -3283,7 +3283,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Parasect)
         .levelUpLearnset = sParasectLevelUpLearnset,
         .teachableLearnset = sParasectTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -3340,7 +3340,7 @@
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Venonat)
         .levelUpLearnset = sVenonatLevelUpLearnset,
         .teachableLearnset = sVenonatTeachableLearnset,
         .eggMoveLearnset = sVenonatEggMoveLearnset,
@@ -3397,7 +3397,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Venomoth)
         .levelUpLearnset = sVenomothLevelUpLearnset,
         .teachableLearnset = sVenomothTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -3455,7 +3455,7 @@
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Diglett)
         .levelUpLearnset = sDiglettLevelUpLearnset,
         .teachableLearnset = sDiglettTeachableLearnset,
         .eggMoveLearnset = sDiglettEggMoveLearnset,
@@ -3513,7 +3513,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Dugtrio)
         .levelUpLearnset = sDugtrioLevelUpLearnset,
         .teachableLearnset = sDugtrioTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -3571,7 +3571,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Meowth)
         .levelUpLearnset = sMeowthLevelUpLearnset,
         .teachableLearnset = sMeowthTeachableLearnset,
         .eggMoveLearnset = sMeowthEggMoveLearnset,
@@ -3630,7 +3630,7 @@
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Persian)
         .levelUpLearnset = sPersianLevelUpLearnset,
         .teachableLearnset = sPersianTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -3689,7 +3689,7 @@
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Psyduck)
         .levelUpLearnset = sPsyduckLevelUpLearnset,
         .teachableLearnset = sPsyduckTeachableLearnset,
         .eggMoveLearnset = sPsyduckEggMoveLearnset,
@@ -3746,7 +3746,7 @@
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Golduck)
         .levelUpLearnset = sGolduckLevelUpLearnset,
         .teachableLearnset = sGolduckTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -3804,7 +3804,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Mankey)
         .levelUpLearnset = sMankeyLevelUpLearnset,
         .teachableLearnset = sMankeyTeachableLearnset,
         .eggMoveLearnset = sMankeyEggMoveLearnset,
@@ -3862,7 +3862,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Primeape)
         .levelUpLearnset = sPrimeapeLevelUpLearnset,
         .teachableLearnset = sPrimeapeTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -3919,7 +3919,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Growlithe)
         .levelUpLearnset = sGrowlitheLevelUpLearnset,
         .teachableLearnset = sGrowlitheTeachableLearnset,
         .eggMoveLearnset = sGrowlitheEggMoveLearnset,
@@ -3977,7 +3977,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Arcanine)
         .levelUpLearnset = sArcanineLevelUpLearnset,
         .teachableLearnset = sArcanineTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -4035,7 +4035,7 @@
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Poliwag)
         .levelUpLearnset = sPoliwagLevelUpLearnset,
         .teachableLearnset = sPoliwagTeachableLearnset,
         .eggMoveLearnset = sPoliwagEggMoveLearnset,
@@ -4093,7 +4093,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Poliwhirl)
         .levelUpLearnset = sPoliwhirlLevelUpLearnset,
         .teachableLearnset = sPoliwhirlTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -4151,7 +4151,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Poliwrath)
         .levelUpLearnset = sPoliwrathLevelUpLearnset,
         .teachableLearnset = sPoliwrathTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -4208,7 +4208,7 @@
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Abra)
         .levelUpLearnset = sAbraLevelUpLearnset,
         .teachableLearnset = sAbraTeachableLearnset,
         .eggMoveLearnset = sAbraEggMoveLearnset,
@@ -4266,7 +4266,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Kadabra)
         .levelUpLearnset = sKadabraLevelUpLearnset,
         .teachableLearnset = sKadabraTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -4323,7 +4323,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Alakazam)
         .levelUpLearnset = sAlakazamLevelUpLearnset,
         .teachableLearnset = sAlakazamTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -4381,7 +4381,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Machop)
         .levelUpLearnset = sMachopLevelUpLearnset,
         .teachableLearnset = sMachopTeachableLearnset,
         .eggMoveLearnset = sMachopEggMoveLearnset,
@@ -4438,7 +4438,7 @@
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Machoke)
         .levelUpLearnset = sMachokeLevelUpLearnset,
         .teachableLearnset = sMachokeTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -4496,7 +4496,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Machamp)
         .levelUpLearnset = sMachampLevelUpLearnset,
         .teachableLearnset = sMachampTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -4553,7 +4553,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Bellsprout)
         .levelUpLearnset = sBellsproutLevelUpLearnset,
         .teachableLearnset = sBellsproutTeachableLearnset,
         .eggMoveLearnset = sBellsproutEggMoveLearnset,
@@ -4611,7 +4611,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Weepinbell)
         .levelUpLearnset = sWeepinbellLevelUpLearnset,
         .teachableLearnset = sWeepinbellTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -4669,7 +4669,7 @@
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Victreebel)
         .levelUpLearnset = sVictreebelLevelUpLearnset,
         .teachableLearnset = sVictreebelTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -4726,7 +4726,7 @@
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Tentacool)
         .levelUpLearnset = sTentacoolLevelUpLearnset,
         .teachableLearnset = sTentacoolTeachableLearnset,
         .eggMoveLearnset = sTentacoolEggMoveLearnset,
@@ -4783,7 +4783,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Tentacruel)
         .levelUpLearnset = sTentacruelLevelUpLearnset,
         .teachableLearnset = sTentacruelTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -4841,7 +4841,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Geodude)
         .levelUpLearnset = sGeodudeLevelUpLearnset,
         .teachableLearnset = sGeodudeTeachableLearnset,
         .eggMoveLearnset = sGeodudeEggMoveLearnset,
@@ -4899,7 +4899,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Graveler)
         .levelUpLearnset = sGravelerLevelUpLearnset,
         .teachableLearnset = sGravelerTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -4956,7 +4956,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Golem)
         .levelUpLearnset = sGolemLevelUpLearnset,
         .teachableLearnset = sGolemTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -5014,7 +5014,7 @@
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Ponyta)
         .levelUpLearnset = sPonytaLevelUpLearnset,
         .teachableLearnset = sPonytaTeachableLearnset,
         .eggMoveLearnset = sPonytaEggMoveLearnset,
@@ -5072,7 +5072,7 @@
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Rapidash)
         .levelUpLearnset = sRapidashLevelUpLearnset,
         .teachableLearnset = sRapidashTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -5130,7 +5130,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Slowpoke)
         .levelUpLearnset = sSlowpokeLevelUpLearnset,
         .teachableLearnset = sSlowpokeTeachableLearnset,
         .eggMoveLearnset = sSlowpokeEggMoveLearnset,
@@ -5189,7 +5189,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Slowbro)
         .levelUpLearnset = sSlowbroLevelUpLearnset,
         .teachableLearnset = sSlowbroTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -5247,7 +5247,7 @@
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Magnemite)
         .levelUpLearnset = sMagnemiteLevelUpLearnset,
         .teachableLearnset = sMagnemiteTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -5304,7 +5304,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Magneton)
         .levelUpLearnset = sMagnetonLevelUpLearnset,
         .teachableLearnset = sMagnetonTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -5362,7 +5362,7 @@
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Farfetchd)
         .levelUpLearnset = sFarfetchdLevelUpLearnset,
         .teachableLearnset = sFarfetchdTeachableLearnset,
         .eggMoveLearnset = sFarfetchdEggMoveLearnset,
@@ -5421,7 +5421,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Doduo)
         .levelUpLearnset = sDoduoLevelUpLearnset,
         .teachableLearnset = sDoduoTeachableLearnset,
         .eggMoveLearnset = sDoduoEggMoveLearnset,
@@ -5479,7 +5479,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Dodrio)
         .levelUpLearnset = sDodrioLevelUpLearnset,
         .teachableLearnset = sDodrioTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -5537,7 +5537,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Seel)
         .levelUpLearnset = sSeelLevelUpLearnset,
         .teachableLearnset = sSeelTeachableLearnset,
         .eggMoveLearnset = sSeelEggMoveLearnset,
@@ -5594,7 +5594,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Dewgong)
         .levelUpLearnset = sDewgongLevelUpLearnset,
         .teachableLearnset = sDewgongTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -5651,7 +5651,7 @@
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Grimer)
         .levelUpLearnset = sGrimerLevelUpLearnset,
         .teachableLearnset = sGrimerTeachableLearnset,
         .eggMoveLearnset = sGrimerEggMoveLearnset,
@@ -5709,7 +5709,7 @@
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Muk)
         .levelUpLearnset = sMukLevelUpLearnset,
         .teachableLearnset = sMukTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -5767,7 +5767,7 @@
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Shellder)
         .levelUpLearnset = sShellderLevelUpLearnset,
         .teachableLearnset = sShellderTeachableLearnset,
         .eggMoveLearnset = sShellderEggMoveLearnset,
@@ -5824,7 +5824,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Cloyster)
         .levelUpLearnset = sCloysterLevelUpLearnset,
         .teachableLearnset = sCloysterTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -5882,7 +5882,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Gastly)
         .levelUpLearnset = sGastlyLevelUpLearnset,
         .teachableLearnset = sGastlyTeachableLearnset,
         .eggMoveLearnset = sGastlyEggMoveLearnset,
@@ -5940,7 +5940,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Haunter)
         .levelUpLearnset = sHaunterLevelUpLearnset,
         .teachableLearnset = sHaunterTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -5998,7 +5998,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Gengar)
         .levelUpLearnset = sGengarLevelUpLearnset,
         .teachableLearnset = sGengarTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -6055,7 +6055,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Onix)
         .levelUpLearnset = sOnixLevelUpLearnset,
         .teachableLearnset = sOnixTeachableLearnset,
         .eggMoveLearnset = sOnixEggMoveLearnset,
@@ -6113,7 +6113,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Drowzee)
         .levelUpLearnset = sDrowzeeLevelUpLearnset,
         .teachableLearnset = sDrowzeeTeachableLearnset,
         .eggMoveLearnset = sDrowzeeEggMoveLearnset,
@@ -6170,7 +6170,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Hypno)
         .levelUpLearnset = sHypnoLevelUpLearnset,
         .teachableLearnset = sHypnoTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -6227,7 +6227,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Krabby)
         .levelUpLearnset = sKrabbyLevelUpLearnset,
         .teachableLearnset = sKrabbyTeachableLearnset,
         .eggMoveLearnset = sKrabbyEggMoveLearnset,
@@ -6284,7 +6284,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Kingler)
         .levelUpLearnset = sKinglerLevelUpLearnset,
         .teachableLearnset = sKinglerTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -6341,7 +6341,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Voltorb)
         .levelUpLearnset = sVoltorbLevelUpLearnset,
         .teachableLearnset = sVoltorbTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -6398,7 +6398,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Electrode)
         .levelUpLearnset = sElectrodeLevelUpLearnset,
         .teachableLearnset = sElectrodeTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -6455,7 +6455,7 @@
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Exeggcute)
         .levelUpLearnset = sExeggcuteLevelUpLearnset,
         .teachableLearnset = sExeggcuteTeachableLearnset,
         .eggMoveLearnset = sExeggcuteEggMoveLearnset,
@@ -6513,7 +6513,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Exeggutor)
         .levelUpLearnset = sExeggutorLevelUpLearnset,
         .teachableLearnset = sExeggutorTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -6570,7 +6570,7 @@
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Cubone)
         .levelUpLearnset = sCuboneLevelUpLearnset,
         .teachableLearnset = sCuboneTeachableLearnset,
         .eggMoveLearnset = sCuboneEggMoveLearnset,
@@ -6628,7 +6628,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Marowak)
         .levelUpLearnset = sMarowakLevelUpLearnset,
         .teachableLearnset = sMarowakTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -6685,7 +6685,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Hitmonlee)
         .levelUpLearnset = sHitmonleeLevelUpLearnset,
         .teachableLearnset = sHitmonleeTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -6742,7 +6742,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Hitmonchan)
         .levelUpLearnset = sHitmonchanLevelUpLearnset,
         .teachableLearnset = sHitmonchanTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -6799,7 +6799,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Lickitung)
         .levelUpLearnset = sLickitungLevelUpLearnset,
         .teachableLearnset = sLickitungTeachableLearnset,
         .eggMoveLearnset = sLickitungEggMoveLearnset,
@@ -6857,7 +6857,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Koffing)
         .levelUpLearnset = sKoffingLevelUpLearnset,
         .teachableLearnset = sKoffingTeachableLearnset,
         .eggMoveLearnset = sKoffingEggMoveLearnset,
@@ -6915,7 +6915,7 @@
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Weezing)
         .levelUpLearnset = sWeezingLevelUpLearnset,
         .teachableLearnset = sWeezingTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -6972,7 +6972,7 @@
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Rhyhorn)
         .levelUpLearnset = sRhyhornLevelUpLearnset,
         .teachableLearnset = sRhyhornTeachableLearnset,
         .eggMoveLearnset = sRhyhornEggMoveLearnset,
@@ -7029,7 +7029,7 @@
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Rhydon)
         .levelUpLearnset = sRhydonLevelUpLearnset,
         .teachableLearnset = sRhydonTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -7087,7 +7087,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Chansey)
         .levelUpLearnset = sChanseyLevelUpLearnset,
         .teachableLearnset = sChanseyTeachableLearnset,
         .eggMoveLearnset = sChanseyEggMoveLearnset,
@@ -7144,7 +7144,7 @@
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Tangela)
         .levelUpLearnset = sTangelaLevelUpLearnset,
         .teachableLearnset = sTangelaTeachableLearnset,
         .eggMoveLearnset = sTangelaEggMoveLearnset,
@@ -7201,7 +7201,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Kangaskhan)
         .levelUpLearnset = sKangaskhanLevelUpLearnset,
         .teachableLearnset = sKangaskhanTeachableLearnset,
         .eggMoveLearnset = sKangaskhanEggMoveLearnset,
@@ -7258,7 +7258,7 @@
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Horsea)
         .levelUpLearnset = sHorseaLevelUpLearnset,
         .teachableLearnset = sHorseaTeachableLearnset,
         .eggMoveLearnset = sHorseaEggMoveLearnset,
@@ -7315,7 +7315,7 @@
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Seadra)
         .levelUpLearnset = sSeadraLevelUpLearnset,
         .teachableLearnset = sSeadraTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -7372,7 +7372,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Goldeen)
         .levelUpLearnset = sGoldeenLevelUpLearnset,
         .teachableLearnset = sGoldeenTeachableLearnset,
         .eggMoveLearnset = sGoldeenEggMoveLearnset,
@@ -7430,7 +7430,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Seaking)
         .levelUpLearnset = sSeakingLevelUpLearnset,
         .teachableLearnset = sSeakingTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -7488,7 +7488,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Staryu)
         .levelUpLearnset = sStaryuLevelUpLearnset,
         .teachableLearnset = sStaryuTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -7546,7 +7546,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Starmie)
         .levelUpLearnset = sStarmieLevelUpLearnset,
         .teachableLearnset = sStarmieTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -7603,7 +7603,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(MrMime)
         .levelUpLearnset = sMrMimeLevelUpLearnset,
         .teachableLearnset = sMrMimeTeachableLearnset,
         .eggMoveLearnset = sMrMimeEggMoveLearnset,
@@ -7661,7 +7661,7 @@
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Scyther)
         .levelUpLearnset = sScytherLevelUpLearnset,
         .teachableLearnset = sScytherTeachableLearnset,
         .eggMoveLearnset = sScytherEggMoveLearnset,
@@ -7718,7 +7718,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Jynx)
         .levelUpLearnset = sJynxLevelUpLearnset,
         .teachableLearnset = sJynxTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -7775,7 +7775,7 @@
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Electabuzz)
         .levelUpLearnset = sElectabuzzLevelUpLearnset,
         .teachableLearnset = sElectabuzzTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -7832,7 +7832,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Magmar)
         .levelUpLearnset = sMagmarLevelUpLearnset,
         .teachableLearnset = sMagmarTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -7889,7 +7889,7 @@
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Pinsir)
         .levelUpLearnset = sPinsirLevelUpLearnset,
         .teachableLearnset = sPinsirTeachableLearnset,
         .eggMoveLearnset = sPinsirEggMoveLearnset,
@@ -7947,7 +7947,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Tauros)
         .levelUpLearnset = sTaurosLevelUpLearnset,
         .teachableLearnset = sTaurosTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -8004,7 +8004,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Magikarp)
         .levelUpLearnset = sMagikarpLevelUpLearnset,
         .teachableLearnset = sMagikarpTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -8062,7 +8062,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Gyarados)
         .levelUpLearnset = sGyaradosLevelUpLearnset,
         .teachableLearnset = sGyaradosTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -8119,7 +8119,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Lapras)
         .levelUpLearnset = sLaprasLevelUpLearnset,
         .teachableLearnset = sLaprasTeachableLearnset,
         .eggMoveLearnset = sLaprasEggMoveLearnset,
@@ -8177,7 +8177,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Ditto)
         .levelUpLearnset = sDittoLevelUpLearnset,
         .teachableLearnset = sDittoTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -8234,7 +8234,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Eevee)
         .levelUpLearnset = sEeveeLevelUpLearnset,
         .teachableLearnset = sEeveeTeachableLearnset,
         .eggMoveLearnset = sEeveeEggMoveLearnset,
@@ -8292,7 +8292,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Vaporeon)
         .levelUpLearnset = sVaporeonLevelUpLearnset,
         .teachableLearnset = sVaporeonTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -8349,7 +8349,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Jolteon)
         .levelUpLearnset = sJolteonLevelUpLearnset,
         .teachableLearnset = sJolteonTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -8406,7 +8406,7 @@
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Flareon)
         .levelUpLearnset = sFlareonLevelUpLearnset,
         .teachableLearnset = sFlareonTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -8463,7 +8463,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Porygon)
         .levelUpLearnset = sPorygonLevelUpLearnset,
         .teachableLearnset = sPorygonTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -8520,7 +8520,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Omanyte)
         .levelUpLearnset = sOmanyteLevelUpLearnset,
         .teachableLearnset = sOmanyteTeachableLearnset,
         .eggMoveLearnset = sOmanyteEggMoveLearnset,
@@ -8578,7 +8578,7 @@
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Omastar)
         .levelUpLearnset = sOmastarLevelUpLearnset,
         .teachableLearnset = sOmastarTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -8635,7 +8635,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Kabuto)
         .levelUpLearnset = sKabutoLevelUpLearnset,
         .teachableLearnset = sKabutoTeachableLearnset,
         .eggMoveLearnset = sKabutoEggMoveLearnset,
@@ -8692,7 +8692,7 @@
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Kabutops)
         .levelUpLearnset = sKabutopsLevelUpLearnset,
         .teachableLearnset = sKabutopsTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -8749,7 +8749,7 @@
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Aerodactyl)
         .levelUpLearnset = sAerodactylLevelUpLearnset,
         .teachableLearnset = sAerodactylTeachableLearnset,
         .eggMoveLearnset = sAerodactylEggMoveLearnset,
@@ -8806,7 +8806,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Snorlax)
         .levelUpLearnset = sSnorlaxLevelUpLearnset,
         .teachableLearnset = sSnorlaxTeachableLearnset,
         .eggMoveLearnset = sSnorlaxEggMoveLearnset,
@@ -8863,7 +8863,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Articuno)
         .levelUpLearnset = sArticunoLevelUpLearnset,
         .teachableLearnset = sArticunoTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -8920,7 +8920,7 @@
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Zapdos)
         .levelUpLearnset = sZapdosLevelUpLearnset,
         .teachableLearnset = sZapdosTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -8977,7 +8977,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Moltres)
         .levelUpLearnset = sMoltresLevelUpLearnset,
         .teachableLearnset = sMoltresTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -9034,7 +9034,7 @@
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Dratini)
         .levelUpLearnset = sDratiniLevelUpLearnset,
         .teachableLearnset = sDratiniTeachableLearnset,
         .eggMoveLearnset = sDratiniEggMoveLearnset,
@@ -9091,7 +9091,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Dragonair)
         .levelUpLearnset = sDragonairLevelUpLearnset,
         .teachableLearnset = sDragonairTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -9148,7 +9148,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Dragonite)
         .levelUpLearnset = sDragoniteLevelUpLearnset,
         .teachableLearnset = sDragoniteTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -9205,7 +9205,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Mewtwo)
         .levelUpLearnset = sMewtwoLevelUpLearnset,
         .teachableLearnset = sMewtwoTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -9262,7 +9262,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Mew)
         .levelUpLearnset = sMewLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -9319,7 +9319,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Chikorita)
         .levelUpLearnset = sChikoritaLevelUpLearnset,
         .teachableLearnset = sChikoritaTeachableLearnset,
         .eggMoveLearnset = sChikoritaEggMoveLearnset,
@@ -9376,7 +9376,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Bayleef)
         .levelUpLearnset = sBayleefLevelUpLearnset,
         .teachableLearnset = sBayleefTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -9433,7 +9433,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Meganium)
         .levelUpLearnset = sMeganiumLevelUpLearnset,
         .teachableLearnset = sMeganiumTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -9491,7 +9491,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Cyndaquil)
         .levelUpLearnset = sCyndaquilLevelUpLearnset,
         .teachableLearnset = sCyndaquilTeachableLearnset,
         .eggMoveLearnset = sCyndaquilEggMoveLearnset,
@@ -9548,7 +9548,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Quilava)
         .levelUpLearnset = sQuilavaLevelUpLearnset,
         .teachableLearnset = sQuilavaTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -9605,7 +9605,7 @@
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Typhlosion)
         .levelUpLearnset = sTyphlosionLevelUpLearnset,
         .teachableLearnset = sTyphlosionTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -9662,7 +9662,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Totodile)
         .levelUpLearnset = sTotodileLevelUpLearnset,
         .teachableLearnset = sTotodileTeachableLearnset,
         .eggMoveLearnset = sTotodileEggMoveLearnset,
@@ -9719,7 +9719,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Croconaw)
         .levelUpLearnset = sCroconawLevelUpLearnset,
         .teachableLearnset = sCroconawTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -9776,7 +9776,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Feraligatr)
         .levelUpLearnset = sFeraligatrLevelUpLearnset,
         .teachableLearnset = sFeraligatrTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -9833,7 +9833,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Sentret)
         .levelUpLearnset = sSentretLevelUpLearnset,
         .teachableLearnset = sSentretTeachableLearnset,
         .eggMoveLearnset = sSentretEggMoveLearnset,
@@ -9890,7 +9890,7 @@
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Furret)
         .levelUpLearnset = sFurretLevelUpLearnset,
         .teachableLearnset = sFurretTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -9947,7 +9947,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Hoothoot)
         .levelUpLearnset = sHoothootLevelUpLearnset,
         .teachableLearnset = sHoothootTeachableLearnset,
         .eggMoveLearnset = sHoothootEggMoveLearnset,
@@ -10004,7 +10004,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Noctowl)
         .levelUpLearnset = sNoctowlLevelUpLearnset,
         .teachableLearnset = sNoctowlTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -10061,7 +10061,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Ledyba)
         .levelUpLearnset = sLedybaLevelUpLearnset,
         .teachableLearnset = sLedybaTeachableLearnset,
         .eggMoveLearnset = sLedybaEggMoveLearnset,
@@ -10119,7 +10119,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Ledian)
         .levelUpLearnset = sLedianLevelUpLearnset,
         .teachableLearnset = sLedianTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -10176,7 +10176,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Spinarak)
         .levelUpLearnset = sSpinarakLevelUpLearnset,
         .teachableLearnset = sSpinarakTeachableLearnset,
         .eggMoveLearnset = sSpinarakEggMoveLearnset,
@@ -10234,7 +10234,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Ariados)
         .levelUpLearnset = sAriadosLevelUpLearnset,
         .teachableLearnset = sAriadosTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -10292,7 +10292,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Crobat)
         .levelUpLearnset = sCrobatLevelUpLearnset,
         .teachableLearnset = sCrobatTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -10349,7 +10349,7 @@
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Chinchou)
         .levelUpLearnset = sChinchouLevelUpLearnset,
         .teachableLearnset = sChinchouTeachableLearnset,
         .eggMoveLearnset = sChinchouEggMoveLearnset,
@@ -10406,7 +10406,7 @@
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Lanturn)
         .levelUpLearnset = sLanturnLevelUpLearnset,
         .teachableLearnset = sLanturnTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -10463,7 +10463,7 @@
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Pichu)
         .levelUpLearnset = sPichuLevelUpLearnset,
         .teachableLearnset = sPichuTeachableLearnset,
         .eggMoveLearnset = sPichuEggMoveLearnset,
@@ -10520,7 +10520,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Cleffa)
         .levelUpLearnset = sCleffaLevelUpLearnset,
         .teachableLearnset = sCleffaTeachableLearnset,
         .eggMoveLearnset = sCleffaEggMoveLearnset,
@@ -10577,7 +10577,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Igglybuff)
         .levelUpLearnset = sIgglybuffLevelUpLearnset,
         .teachableLearnset = sIgglybuffTeachableLearnset,
         .eggMoveLearnset = sIgglybuffEggMoveLearnset,
@@ -10635,7 +10635,7 @@
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Togepi)
         .levelUpLearnset = sTogepiLevelUpLearnset,
         .teachableLearnset = sTogepiTeachableLearnset,
         .eggMoveLearnset = sTogepiEggMoveLearnset,
@@ -10692,7 +10692,7 @@
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Togetic)
         .levelUpLearnset = sTogeticLevelUpLearnset,
         .teachableLearnset = sTogeticTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -10749,7 +10749,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Natu)
         .levelUpLearnset = sNatuLevelUpLearnset,
         .teachableLearnset = sNatuTeachableLearnset,
         .eggMoveLearnset = sNatuEggMoveLearnset,
@@ -10806,7 +10806,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Xatu)
         .levelUpLearnset = sXatuLevelUpLearnset,
         .teachableLearnset = sXatuTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -10864,7 +10864,7 @@
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Mareep)
         .levelUpLearnset = sMareepLevelUpLearnset,
         .teachableLearnset = sMareepTeachableLearnset,
         .eggMoveLearnset = sMareepEggMoveLearnset,
@@ -10922,7 +10922,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Flaaffy)
         .levelUpLearnset = sFlaaffyLevelUpLearnset,
         .teachableLearnset = sFlaaffyTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -10979,7 +10979,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Ampharos)
         .levelUpLearnset = sAmpharosLevelUpLearnset,
         .teachableLearnset = sAmpharosTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -11037,7 +11037,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Bellossom)
         .levelUpLearnset = sBellossomLevelUpLearnset,
         .teachableLearnset = sBellossomTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -11094,7 +11094,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Marill)
         .levelUpLearnset = sMarillLevelUpLearnset,
         .teachableLearnset = sMarillTeachableLearnset,
         .eggMoveLearnset = sMarillEggMoveLearnset,
@@ -11151,7 +11151,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Azumarill)
         .levelUpLearnset = sAzumarillLevelUpLearnset,
         .teachableLearnset = sAzumarillTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -11208,7 +11208,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Sudowoodo)
         .levelUpLearnset = sSudowoodoLevelUpLearnset,
         .teachableLearnset = sSudowoodoTeachableLearnset,
         .eggMoveLearnset = sSudowoodoEggMoveLearnset,
@@ -11265,7 +11265,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Politoed)
         .levelUpLearnset = sPolitoedLevelUpLearnset,
         .teachableLearnset = sPolitoedTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -11322,7 +11322,7 @@
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Hoppip)
         .levelUpLearnset = sHoppipLevelUpLearnset,
         .teachableLearnset = sHoppipTeachableLearnset,
         .eggMoveLearnset = sHoppipEggMoveLearnset,
@@ -11380,7 +11380,7 @@
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Skiploom)
         .levelUpLearnset = sSkiploomLevelUpLearnset,
         .teachableLearnset = sSkiploomTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -11438,7 +11438,7 @@
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Jumpluff)
         .levelUpLearnset = sJumpluffLevelUpLearnset,
         .teachableLearnset = sJumpluffTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -11496,7 +11496,7 @@
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Aipom)
         .levelUpLearnset = sAipomLevelUpLearnset,
         .teachableLearnset = sAipomTeachableLearnset,
         .eggMoveLearnset = sAipomEggMoveLearnset,
@@ -11553,7 +11553,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Sunkern)
         .levelUpLearnset = sSunkernLevelUpLearnset,
         .teachableLearnset = sSunkernTeachableLearnset,
         .eggMoveLearnset = sSunkernEggMoveLearnset,
@@ -11610,7 +11610,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Sunflora)
         .levelUpLearnset = sSunfloraLevelUpLearnset,
         .teachableLearnset = sSunfloraTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -11667,7 +11667,7 @@
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Yanma)
         .levelUpLearnset = sYanmaLevelUpLearnset,
         .teachableLearnset = sYanmaTeachableLearnset,
         .eggMoveLearnset = sYanmaEggMoveLearnset,
@@ -11724,7 +11724,7 @@
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Wooper)
         .levelUpLearnset = sWooperLevelUpLearnset,
         .teachableLearnset = sWooperTeachableLearnset,
         .eggMoveLearnset = sWooperEggMoveLearnset,
@@ -11781,7 +11781,7 @@
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Quagsire)
         .levelUpLearnset = sQuagsireLevelUpLearnset,
         .teachableLearnset = sQuagsireTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -11838,7 +11838,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Espeon)
         .levelUpLearnset = sEspeonLevelUpLearnset,
         .teachableLearnset = sEspeonTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -11895,7 +11895,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Umbreon)
         .levelUpLearnset = sUmbreonLevelUpLearnset,
         .teachableLearnset = sUmbreonTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -11952,7 +11952,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Murkrow)
         .levelUpLearnset = sMurkrowLevelUpLearnset,
         .teachableLearnset = sMurkrowTeachableLearnset,
         .eggMoveLearnset = sMurkrowEggMoveLearnset,
@@ -12010,7 +12010,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Slowking)
         .levelUpLearnset = sSlowkingLevelUpLearnset,
         .teachableLearnset = sSlowkingTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -12067,7 +12067,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Misdreavus)
         .levelUpLearnset = sMisdreavusLevelUpLearnset,
         .teachableLearnset = sMisdreavusTeachableLearnset,
         .eggMoveLearnset = sMisdreavusEggMoveLearnset,
@@ -12124,7 +12124,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Unown)
         .levelUpLearnset = sUnownLevelUpLearnset,
         .teachableLearnset = sUnownTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -12181,7 +12181,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Wobbuffet)
         .levelUpLearnset = sWobbuffetLevelUpLearnset,
         .teachableLearnset = sWobbuffetTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -12238,7 +12238,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Girafarig)
         .levelUpLearnset = sGirafarigLevelUpLearnset,
         .teachableLearnset = sGirafarigTeachableLearnset,
         .eggMoveLearnset = sGirafarigEggMoveLearnset,
@@ -12295,7 +12295,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Pineco)
         .levelUpLearnset = sPinecoLevelUpLearnset,
         .teachableLearnset = sPinecoTeachableLearnset,
         .eggMoveLearnset = sPinecoEggMoveLearnset,
@@ -12352,7 +12352,7 @@
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Forretress)
         .levelUpLearnset = sForretressLevelUpLearnset,
         .teachableLearnset = sForretressTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -12409,7 +12409,7 @@
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Dunsparce)
         .levelUpLearnset = sDunsparceLevelUpLearnset,
         .teachableLearnset = sDunsparceTeachableLearnset,
         .eggMoveLearnset = sDunsparceEggMoveLearnset,
@@ -12466,7 +12466,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Gligar)
         .levelUpLearnset = sGligarLevelUpLearnset,
         .teachableLearnset = sGligarTeachableLearnset,
         .eggMoveLearnset = sGligarEggMoveLearnset,
@@ -12524,7 +12524,7 @@
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Steelix)
         .levelUpLearnset = sSteelixLevelUpLearnset,
         .teachableLearnset = sSteelixTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -12581,7 +12581,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Snubbull)
         .levelUpLearnset = sSnubbullLevelUpLearnset,
         .teachableLearnset = sSnubbullTeachableLearnset,
         .eggMoveLearnset = sSnubbullEggMoveLearnset,
@@ -12638,7 +12638,7 @@
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Granbull)
         .levelUpLearnset = sGranbullLevelUpLearnset,
         .teachableLearnset = sGranbullTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -12695,7 +12695,7 @@
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Qwilfish)
         .levelUpLearnset = sQwilfishLevelUpLearnset,
         .teachableLearnset = sQwilfishTeachableLearnset,
         .eggMoveLearnset = sQwilfishEggMoveLearnset,
@@ -12753,7 +12753,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Scizor)
         .levelUpLearnset = sScizorLevelUpLearnset,
         .teachableLearnset = sScizorTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -12810,7 +12810,7 @@
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Shuckle)
         .levelUpLearnset = sShuckleLevelUpLearnset,
         .teachableLearnset = sShuckleTeachableLearnset,
         .eggMoveLearnset = sShuckleEggMoveLearnset,
@@ -12867,7 +12867,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Heracross)
         .levelUpLearnset = sHeracrossLevelUpLearnset,
         .teachableLearnset = sHeracrossTeachableLearnset,
         .eggMoveLearnset = sHeracrossEggMoveLearnset,
@@ -12924,7 +12924,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Sneasel)
         .levelUpLearnset = sSneaselLevelUpLearnset,
         .teachableLearnset = sSneaselTeachableLearnset,
         .eggMoveLearnset = sSneaselEggMoveLearnset,
@@ -12982,7 +12982,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Teddiursa)
         .levelUpLearnset = sTeddiursaLevelUpLearnset,
         .teachableLearnset = sTeddiursaTeachableLearnset,
         .eggMoveLearnset = sTeddiursaEggMoveLearnset,
@@ -13039,7 +13039,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Ursaring)
         .levelUpLearnset = sUrsaringLevelUpLearnset,
         .teachableLearnset = sUrsaringTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -13096,7 +13096,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Slugma)
         .levelUpLearnset = sSlugmaLevelUpLearnset,
         .teachableLearnset = sSlugmaTeachableLearnset,
         .eggMoveLearnset = sSlugmaEggMoveLearnset,
@@ -13153,7 +13153,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Magcargo)
         .levelUpLearnset = sMagcargoLevelUpLearnset,
         .teachableLearnset = sMagcargoTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -13211,7 +13211,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Swinub)
         .levelUpLearnset = sSwinubLevelUpLearnset,
         .teachableLearnset = sSwinubTeachableLearnset,
         .eggMoveLearnset = sSwinubEggMoveLearnset,
@@ -13268,7 +13268,7 @@
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Piloswine)
         .levelUpLearnset = sPiloswineLevelUpLearnset,
         .teachableLearnset = sPiloswineTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -13325,7 +13325,7 @@
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Corsola)
         .levelUpLearnset = sCorsolaLevelUpLearnset,
         .teachableLearnset = sCorsolaTeachableLearnset,
         .eggMoveLearnset = sCorsolaEggMoveLearnset,
@@ -13382,7 +13382,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Remoraid)
         .levelUpLearnset = sRemoraidLevelUpLearnset,
         .teachableLearnset = sRemoraidTeachableLearnset,
         .eggMoveLearnset = sRemoraidEggMoveLearnset,
@@ -13439,7 +13439,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Octillery)
         .levelUpLearnset = sOctilleryLevelUpLearnset,
         .teachableLearnset = sOctilleryTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -13496,7 +13496,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Delibird)
         .levelUpLearnset = sDelibirdLevelUpLearnset,
         .teachableLearnset = sDelibirdTeachableLearnset,
         .eggMoveLearnset = sDelibirdEggMoveLearnset,
@@ -13553,7 +13553,7 @@
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Mantine)
         .levelUpLearnset = sMantineLevelUpLearnset,
         .teachableLearnset = sMantineTeachableLearnset,
         .eggMoveLearnset = sMantineEggMoveLearnset,
@@ -13610,7 +13610,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Skarmory)
         .levelUpLearnset = sSkarmoryLevelUpLearnset,
         .teachableLearnset = sSkarmoryTeachableLearnset,
         .eggMoveLearnset = sSkarmoryEggMoveLearnset,
@@ -13667,7 +13667,7 @@
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Houndour)
         .levelUpLearnset = sHoundourLevelUpLearnset,
         .teachableLearnset = sHoundourTeachableLearnset,
         .eggMoveLearnset = sHoundourEggMoveLearnset,
@@ -13724,7 +13724,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Houndoom)
         .levelUpLearnset = sHoundoomLevelUpLearnset,
         .teachableLearnset = sHoundoomTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -13781,7 +13781,7 @@
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Kingdra)
         .levelUpLearnset = sKingdraLevelUpLearnset,
         .teachableLearnset = sKingdraTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -13838,7 +13838,7 @@
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Phanpy)
         .levelUpLearnset = sPhanpyLevelUpLearnset,
         .teachableLearnset = sPhanpyTeachableLearnset,
         .eggMoveLearnset = sPhanpyEggMoveLearnset,
@@ -13895,7 +13895,7 @@
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Donphan)
         .levelUpLearnset = sDonphanLevelUpLearnset,
         .teachableLearnset = sDonphanTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -13952,7 +13952,7 @@
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Porygon2)
         .levelUpLearnset = sPorygon2LevelUpLearnset,
         .teachableLearnset = sPorygon2TeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -14009,7 +14009,7 @@
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Stantler)
         .levelUpLearnset = sStantlerLevelUpLearnset,
         .teachableLearnset = sStantlerTeachableLearnset,
         .eggMoveLearnset = sStantlerEggMoveLearnset,
@@ -14066,7 +14066,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Smeargle)
         .levelUpLearnset = sSmeargleLevelUpLearnset,
         .teachableLearnset = sSmeargleTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -14123,7 +14123,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Tyrogue)
         .levelUpLearnset = sTyrogueLevelUpLearnset,
         .teachableLearnset = sTyrogueTeachableLearnset,
         .eggMoveLearnset = sTyrogueEggMoveLearnset,
@@ -14180,7 +14180,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Hitmontop)
         .levelUpLearnset = sHitmontopLevelUpLearnset,
         .teachableLearnset = sHitmontopTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -14237,7 +14237,7 @@
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Smoochum)
         .levelUpLearnset = sSmoochumLevelUpLearnset,
         .teachableLearnset = sSmoochumTeachableLearnset,
         .eggMoveLearnset = sSmoochumEggMoveLearnset,
@@ -14294,7 +14294,7 @@
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Elekid)
         .levelUpLearnset = sElekidLevelUpLearnset,
         .teachableLearnset = sElekidTeachableLearnset,
         .eggMoveLearnset = sElekidEggMoveLearnset,
@@ -14351,7 +14351,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Magby)
         .levelUpLearnset = sMagbyLevelUpLearnset,
         .teachableLearnset = sMagbyTeachableLearnset,
         .eggMoveLearnset = sMagbyEggMoveLearnset,
@@ -14408,7 +14408,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Miltank)
         .levelUpLearnset = sMiltankLevelUpLearnset,
         .teachableLearnset = sMiltankTeachableLearnset,
         .eggMoveLearnset = sMiltankEggMoveLearnset,
@@ -14466,7 +14466,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Blissey)
         .levelUpLearnset = sBlisseyLevelUpLearnset,
         .teachableLearnset = sBlisseyTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -14523,7 +14523,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Raikou)
         .levelUpLearnset = sRaikouLevelUpLearnset,
         .teachableLearnset = sRaikouTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -14580,7 +14580,7 @@
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Entei)
         .levelUpLearnset = sEnteiLevelUpLearnset,
         .teachableLearnset = sEnteiTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -14637,7 +14637,7 @@
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Suicune)
         .levelUpLearnset = sSuicuneLevelUpLearnset,
         .teachableLearnset = sSuicuneTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -14694,7 +14694,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Larvitar)
         .levelUpLearnset = sLarvitarLevelUpLearnset,
         .teachableLearnset = sLarvitarTeachableLearnset,
         .eggMoveLearnset = sLarvitarEggMoveLearnset,
@@ -14751,7 +14751,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Pupitar)
         .levelUpLearnset = sPupitarLevelUpLearnset,
         .teachableLearnset = sPupitarTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -14809,7 +14809,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Tyranitar)
         .levelUpLearnset = sTyranitarLevelUpLearnset,
         .teachableLearnset = sTyranitarTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -14866,7 +14866,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Lugia)
         .levelUpLearnset = sLugiaLevelUpLearnset,
         .teachableLearnset = sLugiaTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -14923,7 +14923,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(HoOh)
         .levelUpLearnset = sHoOhLevelUpLearnset,
         .teachableLearnset = sHoOhTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -14980,7 +14980,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Celebi)
         .levelUpLearnset = sCelebiLevelUpLearnset,
         .teachableLearnset = sCelebiTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -15037,7 +15037,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Poochyena)
         .levelUpLearnset = sPoochyenaLevelUpLearnset,
         .teachableLearnset = sPoochyenaTeachableLearnset,
         .eggMoveLearnset = sPoochyenaEggMoveLearnset,
@@ -15094,7 +15094,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Mightyena)
         .levelUpLearnset = sMightyenaLevelUpLearnset,
         .teachableLearnset = sMightyenaTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -15151,7 +15151,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Zigzagoon)
         .levelUpLearnset = sZigzagoonLevelUpLearnset,
         .teachableLearnset = sZigzagoonTeachableLearnset,
         .eggMoveLearnset = sZigzagoonEggMoveLearnset,
@@ -15208,7 +15208,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Linoone)
         .levelUpLearnset = sLinooneLevelUpLearnset,
         .teachableLearnset = sLinooneTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -15265,7 +15265,7 @@
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Wurmple)
         .levelUpLearnset = sWurmpleLevelUpLearnset,
         .teachableLearnset = sWurmpleTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -15322,7 +15322,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Silcoon)
         .levelUpLearnset = sSilcoonLevelUpLearnset,
         .teachableLearnset = sSilcoonTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -15379,7 +15379,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Beautifly)
         .levelUpLearnset = sBeautiflyLevelUpLearnset,
         .teachableLearnset = sBeautiflyTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -15436,7 +15436,7 @@
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Cascoon)
         .levelUpLearnset = sCascoonLevelUpLearnset,
         .teachableLearnset = sCascoonTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -15493,7 +15493,7 @@
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Dustox)
         .levelUpLearnset = sDustoxLevelUpLearnset,
         .teachableLearnset = sDustoxTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -15550,7 +15550,7 @@
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Lotad)
         .levelUpLearnset = sLotadLevelUpLearnset,
         .teachableLearnset = sLotadTeachableLearnset,
         .eggMoveLearnset = sLotadEggMoveLearnset,
@@ -15607,7 +15607,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Lombre)
         .levelUpLearnset = sLombreLevelUpLearnset,
         .teachableLearnset = sLombreTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -15663,7 +15663,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Ludicolo)
         .levelUpLearnset = sLudicoloLevelUpLearnset,
         .teachableLearnset = sLudicoloTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -15720,7 +15720,7 @@
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Seedot)
         .levelUpLearnset = sSeedotLevelUpLearnset,
         .teachableLearnset = sSeedotTeachableLearnset,
         .eggMoveLearnset = sSeedotEggMoveLearnset,
@@ -15777,7 +15777,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Nuzleaf)
         .levelUpLearnset = sNuzleafLevelUpLearnset,
         .teachableLearnset = sNuzleafTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -15834,7 +15834,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Shiftry)
         .levelUpLearnset = sShiftryLevelUpLearnset,
         .teachableLearnset = sShiftryTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -15891,7 +15891,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Taillow)
         .levelUpLearnset = sTaillowLevelUpLearnset,
         .teachableLearnset = sTaillowTeachableLearnset,
         .eggMoveLearnset = sTaillowEggMoveLearnset,
@@ -15948,7 +15948,7 @@
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Swellow)
         .levelUpLearnset = sSwellowLevelUpLearnset,
         .teachableLearnset = sSwellowTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -16005,7 +16005,7 @@
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Wingull)
         .levelUpLearnset = sWingullLevelUpLearnset,
         .teachableLearnset = sWingullTeachableLearnset,
         .eggMoveLearnset = sWingullEggMoveLearnset,
@@ -16062,7 +16062,7 @@
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Pelipper)
         .levelUpLearnset = sPelipperLevelUpLearnset,
         .teachableLearnset = sPelipperTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -16119,7 +16119,7 @@
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Ralts)
         .levelUpLearnset = sRaltsLevelUpLearnset,
         .teachableLearnset = sRaltsTeachableLearnset,
         .eggMoveLearnset = sRaltsEggMoveLearnset,
@@ -16176,7 +16176,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Kirlia)
         .levelUpLearnset = sKirliaLevelUpLearnset,
         .teachableLearnset = sKirliaTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -16233,7 +16233,7 @@
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Gardevoir)
         .levelUpLearnset = sGardevoirLevelUpLearnset,
         .teachableLearnset = sGardevoirTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -16290,7 +16290,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Surskit)
         .levelUpLearnset = sSurskitLevelUpLearnset,
         .teachableLearnset = sSurskitTeachableLearnset,
         .eggMoveLearnset = sSurskitEggMoveLearnset,
@@ -16347,7 +16347,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Masquerain)
         .levelUpLearnset = sMasquerainLevelUpLearnset,
         .teachableLearnset = sMasquerainTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -16404,7 +16404,7 @@
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Shroomish)
         .levelUpLearnset = sShroomishLevelUpLearnset,
         .teachableLearnset = sShroomishTeachableLearnset,
         .eggMoveLearnset = sShroomishEggMoveLearnset,
@@ -16461,7 +16461,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Breloom)
         .levelUpLearnset = sBreloomLevelUpLearnset,
         .teachableLearnset = sBreloomTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -16518,7 +16518,7 @@
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Slakoth)
         .levelUpLearnset = sSlakothLevelUpLearnset,
         .teachableLearnset = sSlakothTeachableLearnset,
         .eggMoveLearnset = sSlakothEggMoveLearnset,
@@ -16575,7 +16575,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Vigoroth)
         .levelUpLearnset = sVigorothLevelUpLearnset,
         .teachableLearnset = sVigorothTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -16632,7 +16632,7 @@
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Slaking)
         .levelUpLearnset = sSlakingLevelUpLearnset,
         .teachableLearnset = sSlakingTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -16688,7 +16688,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Nincada)
         .levelUpLearnset = sNincadaLevelUpLearnset,
         .teachableLearnset = sNincadaTeachableLearnset,
         .eggMoveLearnset = sNincadaEggMoveLearnset,
@@ -16745,7 +16745,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Ninjask)
         .levelUpLearnset = sNinjaskLevelUpLearnset,
         .teachableLearnset = sNinjaskTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -16802,7 +16802,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Shedinja)
         .levelUpLearnset = sShedinjaLevelUpLearnset,
         .teachableLearnset = sShedinjaTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -16859,7 +16859,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Whismur)
         .levelUpLearnset = sWhismurLevelUpLearnset,
         .teachableLearnset = sWhismurTeachableLearnset,
         .eggMoveLearnset = sWhismurEggMoveLearnset,
@@ -16916,7 +16916,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Loudred)
         .levelUpLearnset = sLoudredLevelUpLearnset,
         .teachableLearnset = sLoudredTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -16973,7 +16973,7 @@
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Exploud)
         .levelUpLearnset = sExploudLevelUpLearnset,
         .teachableLearnset = sExploudTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -17031,7 +17031,7 @@
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Makuhita)
         .levelUpLearnset = sMakuhitaLevelUpLearnset,
         .teachableLearnset = sMakuhitaTeachableLearnset,
         .eggMoveLearnset = sMakuhitaEggMoveLearnset,
@@ -17088,7 +17088,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Hariyama)
         .levelUpLearnset = sHariyamaLevelUpLearnset,
         .teachableLearnset = sHariyamaTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -17145,7 +17145,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Azurill)
         .levelUpLearnset = sAzurillLevelUpLearnset,
         .teachableLearnset = sAzurillTeachableLearnset,
         .eggMoveLearnset = sAzurillEggMoveLearnset,
@@ -17202,7 +17202,7 @@
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Nosepass)
         .levelUpLearnset = sNosepassLevelUpLearnset,
         .teachableLearnset = sNosepassTeachableLearnset,
         .eggMoveLearnset = sNosepassEggMoveLearnset,
@@ -17259,7 +17259,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Skitty)
         .levelUpLearnset = sSkittyLevelUpLearnset,
         .teachableLearnset = sSkittyTeachableLearnset,
         .eggMoveLearnset = sSkittyEggMoveLearnset,
@@ -17317,7 +17317,7 @@
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Delcatty)
         .levelUpLearnset = sDelcattyLevelUpLearnset,
         .teachableLearnset = sDelcattyTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -17374,7 +17374,7 @@
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Sableye)
         .levelUpLearnset = sSableyeLevelUpLearnset,
         .teachableLearnset = sSableyeTeachableLearnset,
         .eggMoveLearnset = sSableyeEggMoveLearnset,
@@ -17431,7 +17431,7 @@
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Mawile)
         .levelUpLearnset = sMawileLevelUpLearnset,
         .teachableLearnset = sMawileTeachableLearnset,
         .eggMoveLearnset = sMawileEggMoveLearnset,
@@ -17488,7 +17488,7 @@
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Aron)
         .levelUpLearnset = sAronLevelUpLearnset,
         .teachableLearnset = sAronTeachableLearnset,
         .eggMoveLearnset = sAronEggMoveLearnset,
@@ -17544,7 +17544,7 @@
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Lairon)
         .levelUpLearnset = sLaironLevelUpLearnset,
         .teachableLearnset = sLaironTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -17601,7 +17601,7 @@
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Aggron)
         .levelUpLearnset = sAggronLevelUpLearnset,
         .teachableLearnset = sAggronTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -17658,7 +17658,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Meditite)
         .levelUpLearnset = sMedititeLevelUpLearnset,
         .teachableLearnset = sMedititeTeachableLearnset,
         .eggMoveLearnset = sMedititeEggMoveLearnset,
@@ -17715,7 +17715,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Medicham)
         .levelUpLearnset = sMedichamLevelUpLearnset,
         .teachableLearnset = sMedichamTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -17772,7 +17772,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Electrike)
         .levelUpLearnset = sElectrikeLevelUpLearnset,
         .teachableLearnset = sElectrikeTeachableLearnset,
         .eggMoveLearnset = sElectrikeEggMoveLearnset,
@@ -17829,7 +17829,7 @@
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Manectric)
         .levelUpLearnset = sManectricLevelUpLearnset,
         .teachableLearnset = sManectricTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -17886,7 +17886,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Plusle)
         .levelUpLearnset = sPlusleLevelUpLearnset,
         .teachableLearnset = sPlusleTeachableLearnset,
         .eggMoveLearnset = sPlusleEggMoveLearnset,
@@ -17943,7 +17943,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Minun)
         .levelUpLearnset = sMinunLevelUpLearnset,
         .teachableLearnset = sMinunTeachableLearnset,
         .eggMoveLearnset = sMinunEggMoveLearnset,
@@ -18000,7 +18000,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Volbeat)
         .levelUpLearnset = sVolbeatLevelUpLearnset,
         .teachableLearnset = sVolbeatTeachableLearnset,
         .eggMoveLearnset = sVolbeatEggMoveLearnset,
@@ -18058,7 +18058,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Illumise)
         .levelUpLearnset = sIllumiseLevelUpLearnset,
         .teachableLearnset = sIllumiseTeachableLearnset,
         .eggMoveLearnset = sIllumiseEggMoveLearnset,
@@ -18115,7 +18115,7 @@
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Roselia)
         .levelUpLearnset = sRoseliaLevelUpLearnset,
         .teachableLearnset = sRoseliaTeachableLearnset,
         .eggMoveLearnset = sRoseliaEggMoveLearnset,
@@ -18172,7 +18172,7 @@
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Gulpin)
         .levelUpLearnset = sGulpinLevelUpLearnset,
         .teachableLearnset = sGulpinTeachableLearnset,
         .eggMoveLearnset = sGulpinEggMoveLearnset,
@@ -18229,7 +18229,7 @@
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Swalot)
         .levelUpLearnset = sSwalotLevelUpLearnset,
         .teachableLearnset = sSwalotTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -18286,7 +18286,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Carvanha)
         .levelUpLearnset = sCarvanhaLevelUpLearnset,
         .teachableLearnset = sCarvanhaTeachableLearnset,
         .eggMoveLearnset = sCarvanhaEggMoveLearnset,
@@ -18343,7 +18343,7 @@
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Sharpedo)
         .levelUpLearnset = sSharpedoLevelUpLearnset,
         .teachableLearnset = sSharpedoTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -18400,7 +18400,7 @@
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Wailmer)
         .levelUpLearnset = sWailmerLevelUpLearnset,
         .teachableLearnset = sWailmerTeachableLearnset,
         .eggMoveLearnset = sWailmerEggMoveLearnset,
@@ -18457,7 +18457,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Wailord)
         .levelUpLearnset = sWailordLevelUpLearnset,
         .teachableLearnset = sWailordTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -18514,7 +18514,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Numel)
         .levelUpLearnset = sNumelLevelUpLearnset,
         .teachableLearnset = sNumelTeachableLearnset,
         .eggMoveLearnset = sNumelEggMoveLearnset,
@@ -18571,7 +18571,7 @@
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Camerupt)
         .levelUpLearnset = sCameruptLevelUpLearnset,
         .teachableLearnset = sCameruptTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -18628,7 +18628,7 @@
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Torkoal)
         .levelUpLearnset = sTorkoalLevelUpLearnset,
         .teachableLearnset = sTorkoalTeachableLearnset,
         .eggMoveLearnset = sTorkoalEggMoveLearnset,
@@ -18685,7 +18685,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Spoink)
         .levelUpLearnset = sSpoinkLevelUpLearnset,
         .teachableLearnset = sSpoinkTeachableLearnset,
         .eggMoveLearnset = sSpoinkEggMoveLearnset,
@@ -18742,7 +18742,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Grumpig)
         .levelUpLearnset = sGrumpigLevelUpLearnset,
         .teachableLearnset = sGrumpigTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -18799,7 +18799,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Spinda)
         .levelUpLearnset = sSpindaLevelUpLearnset,
         .teachableLearnset = sSpindaTeachableLearnset,
         .eggMoveLearnset = sSpindaEggMoveLearnset,
@@ -18856,7 +18856,7 @@
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Trapinch)
         .levelUpLearnset = sTrapinchLevelUpLearnset,
         .teachableLearnset = sTrapinchTeachableLearnset,
         .eggMoveLearnset = sTrapinchEggMoveLearnset,
@@ -18913,7 +18913,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Vibrava)
         .levelUpLearnset = sVibravaLevelUpLearnset,
         .teachableLearnset = sVibravaTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -18970,7 +18970,7 @@
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Flygon)
         .levelUpLearnset = sFlygonLevelUpLearnset,
         .teachableLearnset = sFlygonTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -19027,7 +19027,7 @@
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Cacnea)
         .levelUpLearnset = sCacneaLevelUpLearnset,
         .teachableLearnset = sCacneaTeachableLearnset,
         .eggMoveLearnset = sCacneaEggMoveLearnset,
@@ -19084,7 +19084,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Cacturne)
         .levelUpLearnset = sCacturneLevelUpLearnset,
         .teachableLearnset = sCacturneTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -19141,7 +19141,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Swablu)
         .levelUpLearnset = sSwabluLevelUpLearnset,
         .teachableLearnset = sSwabluTeachableLearnset,
         .eggMoveLearnset = sSwabluEggMoveLearnset,
@@ -19198,7 +19198,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Altaria)
         .levelUpLearnset = sAltariaLevelUpLearnset,
         .teachableLearnset = sAltariaTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -19255,7 +19255,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Zangoose)
         .levelUpLearnset = sZangooseLevelUpLearnset,
         .teachableLearnset = sZangooseTeachableLearnset,
         .eggMoveLearnset = sZangooseEggMoveLearnset,
@@ -19312,7 +19312,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Seviper)
         .levelUpLearnset = sSeviperLevelUpLearnset,
         .teachableLearnset = sSeviperTeachableLearnset,
         .eggMoveLearnset = sSeviperEggMoveLearnset,
@@ -19370,7 +19370,7 @@
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Lunatone)
         .levelUpLearnset = sLunatoneLevelUpLearnset,
         .teachableLearnset = sLunatoneTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -19428,7 +19428,7 @@
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Solrock)
         .levelUpLearnset = sSolrockLevelUpLearnset,
         .teachableLearnset = sSolrockTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -19485,7 +19485,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Barboach)
         .levelUpLearnset = sBarboachLevelUpLearnset,
         .teachableLearnset = sBarboachTeachableLearnset,
         .eggMoveLearnset = sBarboachEggMoveLearnset,
@@ -19542,7 +19542,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Whiscash)
         .levelUpLearnset = sWhiscashLevelUpLearnset,
         .teachableLearnset = sWhiscashTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -19599,7 +19599,7 @@
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Corphish)
         .levelUpLearnset = sCorphishLevelUpLearnset,
         .teachableLearnset = sCorphishTeachableLearnset,
         .eggMoveLearnset = sCorphishEggMoveLearnset,
@@ -19656,7 +19656,7 @@
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Crawdaunt)
         .levelUpLearnset = sCrawdauntLevelUpLearnset,
         .teachableLearnset = sCrawdauntTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -19713,7 +19713,7 @@
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Baltoy)
         .levelUpLearnset = sBaltoyLevelUpLearnset,
         .teachableLearnset = sBaltoyTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -19770,7 +19770,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Claydol)
         .levelUpLearnset = sClaydolLevelUpLearnset,
         .teachableLearnset = sClaydolTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -19827,7 +19827,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Lileep)
         .levelUpLearnset = sLileepLevelUpLearnset,
         .teachableLearnset = sLileepTeachableLearnset,
         .eggMoveLearnset = sLileepEggMoveLearnset,
@@ -19884,7 +19884,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Cradily)
         .levelUpLearnset = sCradilyLevelUpLearnset,
         .teachableLearnset = sCradilyTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -19941,7 +19941,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Anorith)
         .levelUpLearnset = sAnorithLevelUpLearnset,
         .teachableLearnset = sAnorithTeachableLearnset,
         .eggMoveLearnset = sAnorithEggMoveLearnset,
@@ -19998,7 +19998,7 @@
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Armaldo)
         .levelUpLearnset = sArmaldoLevelUpLearnset,
         .teachableLearnset = sArmaldoTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -20055,7 +20055,7 @@
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Feebas)
         .levelUpLearnset = sFeebasLevelUpLearnset,
         .teachableLearnset = sFeebasTeachableLearnset,
         .eggMoveLearnset = sFeebasEggMoveLearnset,
@@ -20112,7 +20112,7 @@
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Milotic)
         .levelUpLearnset = sMiloticLevelUpLearnset,
         .teachableLearnset = sMiloticTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -20169,7 +20169,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Castform)
         .levelUpLearnset = sCastformLevelUpLearnset,
         .teachableLearnset = sCastformTeachableLearnset,
         .eggMoveLearnset = sCastformEggMoveLearnset,
@@ -20227,7 +20227,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Kecleon)
         .levelUpLearnset = sKecleonLevelUpLearnset,
         .teachableLearnset = sKecleonTeachableLearnset,
         .eggMoveLearnset = sKecleonEggMoveLearnset,
@@ -20285,7 +20285,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Shuppet)
         .levelUpLearnset = sShuppetLevelUpLearnset,
         .teachableLearnset = sShuppetTeachableLearnset,
         .eggMoveLearnset = sShuppetEggMoveLearnset,
@@ -20342,7 +20342,7 @@
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Banette)
         .levelUpLearnset = sBanetteLevelUpLearnset,
         .teachableLearnset = sBanetteTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -20400,7 +20400,7 @@
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Duskull)
         .levelUpLearnset = sDuskullLevelUpLearnset,
         .teachableLearnset = sDuskullTeachableLearnset,
         .eggMoveLearnset = sDuskullEggMoveLearnset,
@@ -20458,7 +20458,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Dusclops)
         .levelUpLearnset = sDusclopsLevelUpLearnset,
         .teachableLearnset = sDusclopsTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -20516,7 +20516,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Tropius)
         .levelUpLearnset = sTropiusLevelUpLearnset,
         .teachableLearnset = sTropiusTeachableLearnset,
         .eggMoveLearnset = sTropiusEggMoveLearnset,
@@ -20574,7 +20574,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Chimecho)
         .levelUpLearnset = sChimechoLevelUpLearnset,
         .teachableLearnset = sChimechoTeachableLearnset,
         .eggMoveLearnset = sChimechoEggMoveLearnset,
@@ -20631,7 +20631,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Absol)
         .levelUpLearnset = sAbsolLevelUpLearnset,
         .teachableLearnset = sAbsolTeachableLearnset,
         .eggMoveLearnset = sAbsolEggMoveLearnset,
@@ -20689,7 +20689,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Wynaut)
         .levelUpLearnset = sWynautLevelUpLearnset,
         .teachableLearnset = sWynautTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -20746,7 +20746,7 @@
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Snorunt)
         .levelUpLearnset = sSnoruntLevelUpLearnset,
         .teachableLearnset = sSnoruntTeachableLearnset,
         .eggMoveLearnset = sSnoruntEggMoveLearnset,
@@ -20804,7 +20804,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Glalie)
         .levelUpLearnset = sGlalieLevelUpLearnset,
         .teachableLearnset = sGlalieTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -20862,7 +20862,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Spheal)
         .levelUpLearnset = sSphealLevelUpLearnset,
         .teachableLearnset = sSphealTeachableLearnset,
         .eggMoveLearnset = sSphealEggMoveLearnset,
@@ -20919,7 +20919,7 @@
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Sealeo)
         .levelUpLearnset = sSealeoLevelUpLearnset,
         .teachableLearnset = sSealeoTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -20976,7 +20976,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Walrein)
         .levelUpLearnset = sWalreinLevelUpLearnset,
         .teachableLearnset = sWalreinTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -21033,7 +21033,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Clamperl)
         .levelUpLearnset = sClamperlLevelUpLearnset,
         .teachableLearnset = sClamperlTeachableLearnset,
         .eggMoveLearnset = sClamperlEggMoveLearnset,
@@ -21090,7 +21090,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Huntail)
         .levelUpLearnset = sHuntailLevelUpLearnset,
         .teachableLearnset = sHuntailTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -21146,7 +21146,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Gorebyss)
         .levelUpLearnset = sGorebyssLevelUpLearnset,
         .teachableLearnset = sGorebyssTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -21203,7 +21203,7 @@
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Relicanth)
         .levelUpLearnset = sRelicanthLevelUpLearnset,
         .teachableLearnset = sRelicanthTeachableLearnset,
         .eggMoveLearnset = sRelicanthEggMoveLearnset,
@@ -21260,7 +21260,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Luvdisc)
         .levelUpLearnset = sLuvdiscLevelUpLearnset,
         .teachableLearnset = sLuvdiscTeachableLearnset,
         .eggMoveLearnset = sLuvdiscEggMoveLearnset,
@@ -21317,7 +21317,7 @@
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Bagon)
         .levelUpLearnset = sBagonLevelUpLearnset,
         .teachableLearnset = sBagonTeachableLearnset,
         .eggMoveLearnset = sBagonEggMoveLearnset,
@@ -21374,7 +21374,7 @@
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Shelgon)
         .levelUpLearnset = sShelgonLevelUpLearnset,
         .teachableLearnset = sShelgonTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -21431,7 +21431,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Salamence)
         .levelUpLearnset = sSalamenceLevelUpLearnset,
         .teachableLearnset = sSalamenceTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -21488,7 +21488,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Beldum)
         .levelUpLearnset = sBeldumLevelUpLearnset,
         .teachableLearnset = sBeldumTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -21545,7 +21545,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Metang)
         .levelUpLearnset = sMetangLevelUpLearnset,
         .teachableLearnset = sMetangTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -21602,7 +21602,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Metagross)
         .levelUpLearnset = sMetagrossLevelUpLearnset,
         .teachableLearnset = sMetagrossTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -21659,7 +21659,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Regirock)
         .levelUpLearnset = sRegirockLevelUpLearnset,
         .teachableLearnset = sRegirockTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -21716,7 +21716,7 @@
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Regice)
         .levelUpLearnset = sRegiceLevelUpLearnset,
         .teachableLearnset = sRegiceTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -21773,7 +21773,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Registeel)
         .levelUpLearnset = sRegisteelLevelUpLearnset,
         .teachableLearnset = sRegisteelTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -21830,7 +21830,7 @@
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Latias)
         .levelUpLearnset = sLatiasLevelUpLearnset,
         .teachableLearnset = sLatiasTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -21887,7 +21887,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Latios)
         .levelUpLearnset = sLatiosLevelUpLearnset,
         .teachableLearnset = sLatiosTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -21944,7 +21944,7 @@
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Kyogre)
         .levelUpLearnset = sKyogreLevelUpLearnset,
         .teachableLearnset = sKyogreTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -22001,7 +22001,7 @@
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Groudon)
         .levelUpLearnset = sGroudonLevelUpLearnset,
         .teachableLearnset = sGroudonTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -22059,7 +22059,7 @@
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Rayquaza)
         .levelUpLearnset = sRayquazaLevelUpLearnset,
         .teachableLearnset = sRayquazaTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -22116,7 +22116,7 @@
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Jirachi)
         .levelUpLearnset = sJirachiLevelUpLearnset,
         .teachableLearnset = sJirachiTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
@@ -22173,7 +22173,7 @@
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
-        FOOTPRINT(QuestionMark)
+        FOOTPRINT(Deoxys)
         .levelUpLearnset = sDeoxysNormalLevelUpLearnset,
         .teachableLearnset = sDeoxysNormalTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
