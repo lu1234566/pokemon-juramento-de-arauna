@@ -150,9 +150,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
 
-    #include "species_info/gen_1_families.h"
-    #include "species_info/gen_2_families.h"
-    #include "species_info/gen_3_families.h"
+    // Arauna replaces National Dex slots 001-386.
+    #include "species_info/arauna_dex.h"
     #include "species_info/gen_4_families.h"
     #include "species_info/gen_5_families.h"
     #include "species_info/gen_6_families.h"
