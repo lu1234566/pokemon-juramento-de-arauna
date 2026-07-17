@@ -21,6 +21,7 @@ O primeiro objetivo continua sendo um vertical slice de 30 a 60 minutos. Ele ser
 ## Documentação do projeto
 
 - [Documento de design](project/GDD.md)
+- [Plano de ação da versão definitiva](project/ACTION_PLAN.md)
 - [Roadmap](project/ROADMAP.md)
 - [Decisões técnicas e criativas](project/DECISIONS.md)
 - [Sinopse](project/story/SYNOPSIS.md)
