@@ -41,11 +41,21 @@ AraunaMapLab_EventScript_ObjectiveSliceComplete::
 AraunaMapLab_EventScript_FieldKit::
 	lock
 	faceplayer
-	giveitem ITEM_POTION
+	goto_if_lt VAR_ARAUNA_STORY_STAGE, 2, AraunaMapLab_EventScript_FieldKitLocked
+	checkitemspace ITEM_POKE_BALL, 5
 	goto_if_eq VAR_RESULT, FALSE, AraunaMapLab_EventScript_BagFull
+	checkitemspace ITEM_POTION, 3
+	goto_if_eq VAR_RESULT, FALSE, AraunaMapLab_EventScript_BagFull
+	giveitem ITEM_POKE_BALL, 5
+	giveitem ITEM_POTION, 3
 	setflag FLAG_ARAUNA_MAP_LAB_FIELD_KIT_TAKEN
 	removeobject VAR_LAST_TALKED
 	msgbox AraunaMapLab_Text_FieldKit, MSGBOX_DEFAULT
+	release
+	end
+
+AraunaMapLab_EventScript_FieldKitLocked::
+	msgbox AraunaMapLab_Text_FieldKitLocked, MSGBOX_DEFAULT
 	release
 	end
 
