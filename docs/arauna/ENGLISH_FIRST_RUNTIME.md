@@ -8,5 +8,6 @@ The first playable build of **Pokémon Juramento de Arauna** targets English.
 - The original Portuguese export remains in pokedex.json for the later Brazilian Portuguese localization.
 - tools/arauna/integrate_full_arauna_dex.py requires the English localization when rebuilding the species header.
 - tools/arauna/validate_english_runtime.py rejects missing entries, Portuguese fallback prose, obsolete placeholder messages, and incorrectly selected language wrappers.
+- docs/arauna/source/story_roles.json separates Census registration from capture and locks the explicitly revered entities out of normal capture data.
 
 The English build does not delete the Portuguese work. It keeps that material out of the active ROM while the English version is stabilized.
