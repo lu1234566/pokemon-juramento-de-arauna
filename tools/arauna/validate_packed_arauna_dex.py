@@ -210,6 +210,46 @@ def validate_packed_graphics() -> None:
             "original Gen 1-3 family tables are still enabled")
 
 
+def validate_learnsets() -> None:
+    text = read_text("src/data/pokemon/level_up_learnsets/arauna.h")
+    declarations = set(matches(
+        text,
+        r"^static const struct LevelUpMove sArauna(\d{3})LevelUpLearnset\[\]",
+    ))
+    require(declarations == EXPECTED_SYMBOL_IDS,
+            "Arauna level-up learnsets do not cover 001-386")
+    require(text.count("LEVEL_UP_END") == DEX_SIZE,
+            "each Arauna learnset must contain exactly one terminator")
+
+    for number, block in re.findall(
+        r"sArauna(\d{3})LevelUpLearnset\[\]\s*=\s*\{(.*?)\n\};",
+        text,
+        flags=re.DOTALL,
+    ):
+        require(block.count("LEVEL_UP_MOVE") >= 8,
+                f"Arauna learnset #{number} has fewer than eight moves")
+
+    forbidden_field_moves = {
+        "MOVE_CUT", "MOVE_FLY", "MOVE_SURF", "MOVE_STRENGTH",
+        "MOVE_ROCK_SMASH", "MOVE_WATERFALL", "MOVE_DIVE",
+    }
+    found = sorted(move for move in forbidden_field_moves if move in text)
+    require(not found,
+            f"level-up learnsets would bypass field progression: {', '.join(found)}")
+
+    species = read_text("src/data/pokemon/species_info/arauna_dex.h")
+    references = set(matches(
+        species,
+        r"\.levelUpLearnset\s*=\s*sArauna(\d{3})LevelUpLearnset",
+    ))
+    require(references == EXPECTED_SYMBOL_IDS,
+            "species table is not wired to all 386 Arauna learnsets")
+
+    pokemon = read_text("src/pokemon.c")
+    require('#include "data/pokemon/level_up_learnsets/arauna.h"' in pokemon,
+            "src/pokemon.c does not load the Arauna learnsets")
+
+
 def validate_runtime_integration() -> None:
     constants = read_text("include/constants/pokedex.h")
     regional_match = re.search(
@@ -270,12 +310,13 @@ def main() -> int:
         validate_mapping_and_manifest()
         validate_species_table()
         validate_packed_graphics()
+        validate_learnsets()
         validate_runtime_integration()
     except (OSError, UnicodeError, json.JSONDecodeError, csv.Error, ValidationError, ValueError) as exc:
         print(f"Arauna packed Dex validation failed: {exc}", file=sys.stderr)
         return 1
 
-    print("Arauna packed Dex validation passed: 386 species, 81 evolutions, 1,930 graphic resources.")
+    print("Arauna packed Dex validation passed: 386 species, 386 learnsets, 81 evolutions, 1,930 graphic resources.")
     return 0
 
 
