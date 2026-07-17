@@ -34,19 +34,19 @@ AraunaResearchCenter_Text_RouteOpen::
 	.string "tries to hide.$"
 
 AraunaResearchCenter_Text_PicaPauPrompt::
-	.string "WOODPECKER PROJECT: GRASS.\p"
+	.string "PIMPAU #007: GRASS.\p"
 	.string "Uses wood and stone to\n"
 	.string "control the terrain.\p"
 	.string "Choose it as your partner?$"
 
 AraunaResearchCenter_Text_CarameloPrompt::
-	.string "CARAMELO PROJECT: FIRE.\p"
+	.string "CARAMELO #001: FIRE.\p"
 	.string "A protective dog that will\n"
 	.string "one day reach FIRE/DRAGON.\p"
 	.string "Choose it as your partner?$"
 
 AraunaResearchCenter_Text_QueroQueroPrompt::
-	.string "LAPWING PROJECT: WATER.\p"
+	.string "QUERÔ #004: WATER.\p"
 	.string "Fast and territorial; it will\n"
 	.string "one day reach WATER/BUG.\p"
 	.string "Choose it as your partner?$"
