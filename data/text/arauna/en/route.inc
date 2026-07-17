@@ -35,10 +35,10 @@ AraunaMistRoute_Text_NotebookThanks::
 	.string "you recovered my memories.$"
 
 AraunaMistRoute_Text_AffectedPokemon::
-	.string "The POOCHYENA trembles before\n"
+	.string "An affected POKéMON trembles as\n"
 	.string "a pulse from the ruins.\p"
-	.string "It is a technical placeholder\n"
-	.string "for the affected encounter.$"
+	.string "A strange mark flickers across\n"
+	.string "its body.$"
 
 AraunaMistRoute_Text_RuinOpened::
 	.string "The POKéMON flees north.\p"
