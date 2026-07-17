@@ -14,7 +14,7 @@ ROOT = Path(__file__).resolve().parents[1]
 MAP_GROUP = "gMapGroup_AraunaPrototype"
 
 EXPECTED_MAPS = {
-    "AraunaMapLab": ("MAP_ARAUNA_MAP_LAB", "LAYOUT_ARAUNA_MAP_LAB", 3, 3),
+    "AraunaMapLab": ("MAP_ARAUNA_MAP_LAB", "LAYOUT_ARAUNA_MAP_LAB", 3, 1),
     "AraunaPlayerHouse": (
         "MAP_ARAUNA_PLAYER_HOUSE",
         "LAYOUT_ARAUNA_PLAYER_HOUSE",
@@ -81,6 +81,10 @@ def collision(entry: int) -> int:
     return (entry >> 10) & 0x3
 
 
+def metatile_id(entry: int) -> int:
+    return entry & 0x3FF
+
+
 def validate_transition_paths(
     name: str, layout: dict, warps: list[dict], coord_events: list[dict]
 ) -> None:
@@ -94,7 +98,9 @@ def validate_transition_paths(
     for x, y in coordinates:
         if not (0 <= x < width and 0 <= y < height):
             fail(f"{name} warp {(x, y)} is outside its {width}x{height} layout")
-        if collision(entries[y * width + x]) != 0:
+        entry = entries[y * width + x]
+        vanilla_door = metatile_id(entry) in {0x248, 0x249}
+        if collision(entry) != 0 and not vanilla_door:
             fail(f"{name} warp {(x, y)} is placed on a solid block")
 
     if not coordinates:
@@ -195,10 +201,16 @@ def main() -> int:
     village = maps["AraunaMapLab"]
     village_warps = [(event["x"], event["y"]) for event in village["warp_events"]]
     village_triggers = [(event["x"], event["y"]) for event in village["coord_events"]]
-    if village_warps != [(5, 6), (5, 18), (18, 13)]:
+    if village_warps != [(5, 8), (14, 7), (18, 11)]:
         fail(f"village return anchors are misaligned: {village_warps}")
-    if village_triggers != [(5, 5), (5, 17), (19, 13)]:
+    if village_triggers != [(19, 11)]:
         fail(f"village entrance triggers are misaligned: {village_triggers}")
+
+    village_layout = layouts["LAYOUT_ARAUNA_MAP_LAB"]
+    if village_layout["primary_tileset"] != "gTileset_General":
+        fail("AraunaMapLab must use the vanilla General primary tileset")
+    if village_layout["secondary_tileset"] != "gTileset_Petalburg":
+        fail("AraunaMapLab must use the vanilla Petalburg secondary tileset")
 
     for source_name, map_data in maps.items():
         for warp_id, warp in enumerate(map_data["warp_events"]):
@@ -234,7 +246,7 @@ def main() -> int:
 
     print(
         "Validated 6 independent Arauna layouts, 12 reciprocal warp anchors, "
-        "7 coordinate transitions, passable endpoints, and a connected "
+        "5 coordinate transitions, vanilla village doors, passable endpoints, and a connected "
         "vertical-slice map graph."
     )
     return 0
