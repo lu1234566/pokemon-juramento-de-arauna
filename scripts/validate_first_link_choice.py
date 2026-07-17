@@ -30,7 +30,11 @@ def require(source: str, tokens: list[str], name: str) -> None:
 
 def main() -> int:
     flags = read("include/constants/flags.h")
-    if "FLAG_ARAUNA_FIRST_LINK_RESCUE_COMPLETE  0x25" not in flags:
+    if not re.search(
+        r"^#define\s+FLAG_ARAUNA_FIRST_LINK_RESCUE_COMPLETE\s+0x25\b",
+        flags,
+        re.MULTILINE,
+    ):
         fail("the first-link rescue flag must be allocated at 0x25")
 
     map_data = json.loads(read("data/maps/AraunaFirstLinkRuin/map.json"))
