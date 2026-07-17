@@ -1,76 +1,108 @@
-# Trio de iniciais original
+# Trio de iniciais da versão definitiva
 
 ## Objetivo
 
-Criar três linhas evolutivas inéditas que representem Arauna, funcionem visualmente no GBA e ofereçam estilos de batalha diferentes. São nove Fakemon no escopo total.
+Criar três linhas evolutivas inéditas que representem Arauna, funcionem visualmente no GBA e ofereçam estilos de batalha diferentes. Os nove primeiros slots da Pokédex são reservados ao trio.
 
-Os codinomes abaixo não são nomes finais.
+Os nomes ainda não estão definidos. Nenhum sprite será integrado antes de aprovação explícita.
 
-## Inicial Planta — Projeto Capivara
-
-### Conceito
-
-Uma pequena criatura semiaquática de temperamento sereno. Brotos semelhantes a ramos de araucária crescem em suas costas, enquanto musgo retém umidade ao redor do corpo. Ela percebe mudanças emocionais em grupos próximos e tenta reduzir conflitos.
-
-### Leitura temática
-
-- associação: Compaixão;
-- inspirações: capivara, pinhão, musgo e mata úmida;
-- silhueta: corpo arredondado, focinho curto e três brotos verticais;
-- função inicial: resistente, suporte e recuperação;
-- tipo inicial: Grass;
-- tipos finais candidatos: Grass/Ground, Grass/Fairy ou Grass/Water.
-
-### Arco evolutivo
-
-Começa acolhedora e baixa; a forma intermediária desenvolve uma carapaça vegetal; a final se torna uma guardiã de bosque com uma coroa de araucária estilizada. Deve transmitir força protetora, não agressividade.
-
-## Inicial Fogo — Projeto Gato-do-mato
+## Slots 001–003 — Inicial Planta: Projeto Pica-pau
 
 ### Conceito
 
-Um pequeno felino noturno cuja cauda solta faíscas azuladas semelhantes a fogo-fátuo. Ele é desconfiado, atento a sons e extremamente leal depois de estabelecer confiança.
+Um pequeno pica-pau brasileiro que cultiva brotos e líquens nas penas. Seu bico começa semelhante a madeira recém-endurecida e ganha minerais a cada evolução, permitindo que encontre água, raízes e cavidades escondidas dentro de rochas.
 
 ### Leitura temática
 
-- associação: Coragem;
-- inspirações: gato-do-mato, brasas, âmbar e fogo-fátuo;
-- silhueta: orelhas grandes, corpo ágil e cauda-lanterna;
-- função inicial: velocidade, pressão e risco calculado;
-- tipo inicial: Fire;
-- tipos finais candidatos: Fire/Dark, Fire/Psychic ou Fire/Ghost.
+- inspiração principal: pica-pau-do-campo e outros pica-paus brasileiros;
+- elementos: casca, sementes, líquen, arenito e percussão;
+- primeira forma: `Grass`;
+- forma intermediária: `Grass` ou `Grass/Rock`, após teste de balanceamento;
+- forma final: `Grass/Rock`;
+- silhueta inicial: ave pequena, topete de folhas e bico curto de madeira;
+- função de batalha: ataque físico, defesa e controle de campo.
 
 ### Arco evolutivo
 
-O fogo instável da primeira forma passa a responder à vontade do Pokémon. A evolução final deve parecer um caçador de sombras que usa sua chama para revelar caminhos e mentiras, evitando a imagem de um vilão cruel.
+A primeira forma explora troncos e pedras macias. A intermediária ganha um bico mineral e placas semelhantes a casca. A final se torna uma ave guardiã robusta, capaz de talhar símbolos dos Juramentos em paredões sem perder a leitura de pica-pau.
 
-## Inicial Água — Projeto Lontra
+### Restrições visuais
+
+- permanecer claramente aviana e não humanoide;
+- mineralização concentrada no bico, topete, peito e cauda, sem virar um bloco de pedra;
+- folhagem com poucos volumes grandes para funcionar em 64 × 64 pixels.
+
+## Slots 004–006 — Inicial Fogo: Projeto Caramelo
 
 ### Conceito
 
-Uma lontra curiosa que coleta pedras marcadas por símbolos antigos. Ela produz anéis de água ao tocar as runas e parece compreender padrões que humanos ainda não decifraram.
+Um pequeno vira-lata caramelo, amistoso e resistente, que protege caminhos e pessoas mesmo quando ninguém pede. Uma brasa surge na ponta de sua cauda e reage à coragem: tremula quando ele está alerta e se concentra quando decide enfrentar um perigo maior.
 
 ### Leitura temática
 
-- associação: Sabedoria;
-- inspirações: lontra-neotropical, rios, seixos, runas e ruínas submersas;
-- silhueta: corpo alongado, cauda em forma de remo e pedra rúnica no peito;
-- função inicial: controle, técnica e adaptação;
-- tipo inicial: Water;
-- tipos finais candidatos: Water/Psychic, Water/Steel ou Water/Ghost.
+- inspiração principal: cachorro caramelo brasileiro;
+- elementos: brasa, asfalto aquecido, proteção, sobrevivência e dragão;
+- primeira forma: `Fire`;
+- forma intermediária: `Fire`;
+- forma final: `Fire/Dragon`;
+- silhueta inicial: uma orelha erguida, outra caída, peito claro e cauda levemente curva;
+- função de batalha: versatilidade, ofensiva equilibrada e adaptação.
 
 ### Arco evolutivo
 
-A pequena colecionadora aprende a organizar as runas e, na forma final, manipula correntes como uma escriba ou guardiã de arquivos submersos. O design deve continuar reconhecível como animal, sem se tornar excessivamente humanoide.
+O filhote começa pequeno e improvisador. A forma intermediária ganha musculatura, marcas de carvão e uma juba curta de calor. A final assume traços dracônicos naturais — escamas localizadas, cauda incandescente e perfil mais imponente — mas continua inequivocamente canina e caramelo.
 
-## Regras do trio
+### Restrições visuais
 
-- A escolha do inicial não determina a tendência de Vínculo do protagonista.
-- As primeiras formas precisam funcionar em 64 × 64 pixels.
-- As evoluções não serão desenhadas em detalhe antes da aprovação das silhuetas iniciais.
-- Tipos secundários serão escolhidos em conjunto, considerando o equilíbrio do trio completo.
-- Nenhuma linha pode exigir uma mecânica exclusiva para funcionar.
-- Nomes devem ser pronunciáveis em português e inglês.
+- não transformar a evolução final em dragão genérico ou cão humanoide;
+- preservar cor caramelo, peito claro e assimetria das orelhas ao longo da linha;
+- traços dracônicos devem crescer organicamente a partir da brasa e da silhueta canina.
+
+## Slots 007–009 — Inicial Água: Projeto Quero-quero
+
+### Conceito
+
+Um quero-quero territorial que usa água para marcar círculos de proteção ao redor do ninho. Ele caça pequenos insetos nas margens e aprende a reproduzir seus movimentos, desenvolvendo penas e membranas que lembram asas de libélula sem deixar de ser uma ave.
+
+### Leitura temática
+
+- inspiração principal: quero-quero;
+- elementos: banhados, chuva, alarme, ninho, insetos e voo rasante;
+- primeira forma: `Water`;
+- forma intermediária: `Water` ou `Water/Bug`, após teste de balanceamento;
+- forma final: `Water/Bug`;
+- silhueta inicial: pernas longas, peito projetado, pequeno esporão e topete reconhecível;
+- função de batalha: velocidade, interrupção, utilidade e ataques especiais.
+
+### Arco evolutivo
+
+A primeira forma é vigilante e barulhenta. A intermediária domina lâminas de água e padrões de voo inspirados em insetos. A final protege grandes áreas alagadas, usando penas translúcidas e reflexos que evocam élitros ou asas de libélula.
+
+### Restrições visuais
+
+- preservar anatomia e leitura de quero-quero em todos os estágios;
+- o tipo Bug deve aparecer por padrões, comportamento e estruturas leves, não por colar partes aleatórias de inseto;
+- não transformar a ave em inseto completo.
+
+## Equilíbrio do trio
+
+O triângulo primário continua clássico: Fire vence Grass, Grass vence Water e Water vence Fire. Os tipos finais criam respostas cruzadas: Rock ameaça Fire, Fire ameaça Bug e Bug ameaça Grass.
+
+O objetivo não é fazer cada confronto se anular automaticamente, mas permitir escolhas de golpes, habilidades e velocidade que evitem batalhas totalmente determinadas pela seleção inicial.
+
+## Fluxo obrigatório de aprovação
+
+1. ficha textual e referências;
+2. três propostas de silhueta para a primeira forma;
+3. concept art da opção escolhida;
+4. proposta de paleta normal e shiny;
+5. prévia do sprite frontal;
+6. aprovação explícita do sprite frontal;
+7. sprite traseiro, ícone e animações;
+8. nova aprovação explícita;
+9. integração em branch isolada e teste no mGBA.
+
+A aprovação de uma etapa não autoriza automaticamente a seguinte.
 
 ## Entregáveis por linha
 
@@ -85,6 +117,6 @@ A pequena colecionadora aprende a organizar as runas e, na forma final, manipula
 - cry original ou provisório licenciado;
 - testes de batalha, evolução, Pokédex e save.
 
-## Próxima decisão
+## Próxima decisão visual
 
-Aprovar uma de três variações visuais para cada primeira forma. Somente depois serão escolhidos nomes, paletas finais e tipos secundários.
+Produzir e aprovar três variações de silhueta da primeira forma do Projeto Caramelo. O sprite anterior pode servir como referência, mas não será integrado sem nova aprovação dentro deste fluxo.
