@@ -156,6 +156,23 @@ def category(entry: dict) -> str:
     return value[:12]
 
 
+def apply_localization(entries: list[dict], path: Path) -> list[dict]:
+    data = json.loads(path.read_text(encoding="utf-8"))
+    if data.get("language") != "en":
+        raise ValueError("the English-first build requires an English Dex localization")
+    localized = {int(entry["id"]): entry for entry in data["pokemon"]}
+    if set(localized) != set(range(1, 387)):
+        raise ValueError("English Dex localization must contain IDs 001-386")
+    result = []
+    for source in entries:
+        merged = dict(source)
+        translated = localized[int(source["id"])]
+        for field_name in ("category", "region", "dex"):
+            merged[field_name] = translated[field_name]
+        result.append(merged)
+    return result
+
+
 def evolution_level(method: str) -> int:
     match = re.search(r"(\d+)", method)
     if not match:
@@ -266,12 +283,14 @@ def graphics_asset_paths(path: Path) -> dict[str, list[str]]:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--dex", type=Path, default=Path("arauna_dex_import/pokedex.json"))
+    parser.add_argument("--localization", type=Path, default=Path("docs/arauna/source/pokedex.en.json"))
     parser.add_argument("--packages", type=Path, default=Path("art_candidates/full_dex/gba"))
     parser.add_argument("--engine", type=Path, default=Path("engine-reference"))
     parser.add_argument("--out", type=Path, default=Path("full_dex_build/repo_overlay"))
     args = parser.parse_args()
 
     entries = json.loads(args.dex.read_text(encoding="utf-8"))["pokemon"]
+    entries = apply_localization(entries, args.localization)
     nat = national_suffixes(args.engine / "include/constants/pokedex.h")
     targets = STARTER_TARGETS + [suffix for suffix in nat if suffix not in STARTER_TARGETS]
     if len(targets) != 386 or len(set(targets)) != 386:
