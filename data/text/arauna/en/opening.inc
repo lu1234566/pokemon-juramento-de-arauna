@@ -55,17 +55,16 @@ AraunaResearchCenter_Text_QueroQueroPrompt::
 
 AraunaResearchCenter_Text_PlaceholderNotice::
 	.string "Partner registered.\p"
-	.string "The POKéMON shown now is a\n"
-	.string "technical placeholder.\p"
-	.string "No ARAUNA sprite was added\n"
-	.string "without approval.$"
+	.string "Its data and artwork are linked\n"
+	.string "to its numbered ARAUNA DEX\n"
+	.string "entry.$"
 AraunaResearchCenter_Text_DexActivated::
 	.string "DR. MAIA: The ARAUNA DEX\n"
 	.string "is now active.\p"
-	.string "For now, its 386 slots use\n"
-	.string "official POKéMON placeholders.\p"
-	.string "Each one will be replaced by\n"
-	.string "the fakemon with that number.$"
+	.string "All 386 native species can now\n"
+	.string "be recorded by their own number.\p"
+	.string "Observe their habitats and help\n"
+	.string "us complete every entry.$"
 
 AraunaResearchCenter_Text_SelectionLocked::
 	.string "Wait for DR. MAIA's call before\n"
