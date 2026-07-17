@@ -173,9 +173,9 @@ def validate_packed_graphics() -> None:
     declarations = {
         "front": r"^const\s+u32\s+gAraunaFrontPic_(\d{3})\[\]",
         "back": r"^const\s+u32\s+gAraunaBackPic_(\d{3})\[\]",
-        "palette": r"^const\s+u32\s+gAraunaPalette_(\d{3})\[\]",
-        "shiny palette": r"^const\s+u32\s+gAraunaShinyPalette_(\d{3})\[\]",
-        "icon": r"^const\s+u32\s+gAraunaIcon_(\d{3})\[\]",
+        "palette": r"^const\s+u16\s+gAraunaPalette_(\d{3})\[\]",
+        "shiny palette": r"^const\s+u16\s+gAraunaShinyPalette_(\d{3})\[\]",
+        "icon": r"^const\s+u8\s+gAraunaIcon_(\d{3})\[\]",
     }
     for label, pattern in declarations.items():
         ids = set(matches(text, pattern))
