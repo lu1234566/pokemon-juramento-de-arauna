@@ -24,11 +24,13 @@ AraunaResearchCenter_Text_MaiaIntroduction::
 	.string "somente quando tiver certeza.$"
 
 AraunaResearchCenter_Text_AfterChoice::
+	.string "Sua equipe foi recuperada.\p"
 	.string "NILO espera você na praça.\p"
 	.string "Ele vai testar seu preparo\n"
 	.string "antes de liberar a rota.$"
 
 AraunaResearchCenter_Text_RouteOpen::
+	.string "Sua equipe foi recuperada.\p"
 	.string "A estrada leste está aberta.\p"
 	.string "Registre tudo que a neblina\n"
 	.string "tentar esconder.$"
