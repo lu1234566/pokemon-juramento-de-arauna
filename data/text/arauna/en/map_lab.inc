@@ -27,9 +27,14 @@ AraunaMapLab_Text_Stay::
 	.string "Explore at your own pace.$"
 
 AraunaMapLab_Text_FieldKit::
-	.string "You found a FIELD KIT!\p"
-	.string "A POTION was placed in\n"
-	.string "your BAG.$"
+	.string "You received the FIELD KIT!\p"
+	.string "5 POKé BALLS and 3 POTIONS\n"
+	.string "were placed in your BAG.$"
+
+AraunaMapLab_Text_FieldKitLocked::
+	.string "The FIELD KIT is sealed.\p"
+	.string "Register a partner with\n"
+	.string "DR. MAIA first.$"
 
 AraunaMapLab_Text_BagFull::
 	.string "Your BAG is full.\n"
