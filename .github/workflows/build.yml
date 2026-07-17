@@ -36,6 +36,8 @@ jobs:
         run: python3 scripts/check_localization.py
       - name: Validate vertical slice map shells
         run: python3 scripts/validate_vertical_slice_shells.py
+      - name: Validate 386-slot Pokedex registry
+        run: python3 scripts/validate_pokedex_registry.py project/design/pokedex/pokedex_registry.csv
       - name: Validate Araucaria art assets
         run: python3 scripts/validate_araucaria_art.py
       - name: Validate Codespaces configuration
