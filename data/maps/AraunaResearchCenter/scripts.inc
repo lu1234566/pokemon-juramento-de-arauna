@@ -7,9 +7,7 @@ AraunaResearchCenter_EventScript_Maia::
 	goto_if_lt VAR_ARAUNA_STORY_STAGE, 1, AraunaResearchCenter_EventScript_BeforeCall
 	goto_if_eq VAR_ARAUNA_STORY_STAGE, 1, AraunaResearchCenter_EventScript_Introduction
 	goto_if_eq VAR_ARAUNA_STORY_STAGE, 2, AraunaResearchCenter_EventScript_AfterChoice
-	msgbox AraunaResearchCenter_Text_RouteOpen, MSGBOX_DEFAULT
-	release
-	end
+	goto AraunaResearchCenter_EventScript_RouteOpen
 
 AraunaResearchCenter_EventScript_BeforeCall::
 	msgbox AraunaResearchCenter_Text_BeforeCall, MSGBOX_DEFAULT
@@ -22,7 +20,14 @@ AraunaResearchCenter_EventScript_Introduction::
 	end
 
 AraunaResearchCenter_EventScript_AfterChoice::
+	special HealPlayerParty
 	msgbox AraunaResearchCenter_Text_AfterChoice, MSGBOX_DEFAULT
+	release
+	end
+
+AraunaResearchCenter_EventScript_RouteOpen::
+	special HealPlayerParty
+	msgbox AraunaResearchCenter_Text_RouteOpen, MSGBOX_DEFAULT
 	release
 	end
 
@@ -69,6 +74,7 @@ AraunaResearchCenter_EventScript_CompleteChoice::
 	setflag FLAG_SYS_POKEDEX_GET
 	special SetUnlockedPokedexFlags
 	special EnableNationalPokedex
+	setrespawn HEAL_LOCATION_ARAUNA_RESEARCH_CENTER
 	setvar VAR_ARAUNA_STORY_STAGE, 2
 	special HealPlayerParty
 	msgbox AraunaResearchCenter_Text_PlaceholderNotice, MSGBOX_DEFAULT
