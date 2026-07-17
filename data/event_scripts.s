@@ -1739,7 +1739,7 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/scripts/test_signpost.inc"
 	.include "data/scripts/follower.inc"
 	.include "data/text/save.inc"
-	.include "data/text/birch_speech.inc"
+#include "data/text/birch_speech.inc"
 #include "data/text/arauna/map_lab.inc"
 #include "data/text/arauna/opening.inc"
 #include "data/text/arauna/route.inc"
