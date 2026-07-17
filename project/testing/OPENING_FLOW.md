@@ -41,4 +41,5 @@ Este roteiro valida somente a progressão da casa até a entrada da Rota da Nebl
 - [ ] Save/reload preserva objetivo, escolha, batalha e liberação da rota.
 - [ ] O mesmo fluxo funciona na build inglesa.
 - [ ] Nenhuma fala autoral mistura idiomas ou ultrapassa a caixa de texto.
+- [ ] `ã/õ` são aceitos pelo `charmap`; temporariamente aparecem como `a/o` até um passe de glifos aprovado.
 - [ ] Nenhum sprite, ícone, paleta ou dado definitivo de espécie foi adicionado.
