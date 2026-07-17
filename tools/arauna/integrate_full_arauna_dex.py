@@ -55,6 +55,7 @@ ENGINE_NAME_ALIASES = {
     266: "CabocGuerro", 273: "BumbaMeuBoi", 282: "DraguaráAlfa",
     283: "TerolRainha", 284: "PetropAncião", 297: "CorcovAncião",
 }
+NON_CAPTURABLE_IDS = {265, 381, 382, 383}
 
 
 def slugify(value: str) -> str:
@@ -186,7 +187,7 @@ def build_block(entry: dict, target: str, nat_slot: str, target_for_id: dict[int
     type_values = ", ".join(TYPE_CONSTANT[t] for t in types[:2])
     abilities = [TYPE_ABILITY[types[0]], TYPE_ABILITY[types[-1]]]
     bst = sum(int(stats[key]) for key in ("hp", "atk", "def", "spa", "spd", "spe"))
-    catch_rate = 45 if bst >= 560 else 90 if bst >= 490 else 180
+    catch_rate = 0 if int(entry["id"]) in NON_CAPTURABLE_IDS else 45 if bst >= 560 else 90 if bst >= 490 else 180
     exp_yield = min(255, max(40, round(bst / 3)))
     lines = wrapped_description(entry.get("dex", ""))
     description = "\n".join(f'            "{line}\\n"' for line in lines[:-1])
