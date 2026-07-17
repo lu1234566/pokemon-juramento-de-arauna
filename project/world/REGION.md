@@ -12,7 +12,9 @@ O jogador deve reconhecer o Brasil nos materiais, espécies, climas, ritmos e mo
 - Luz quente em espaços seguros e sombras frias em áreas corrompidas.
 - Símbolos circulares e linhas entrelaçadas para representar Vínculos.
 - Tecnologia geométrica contrastando com ruínas orgânicas.
-- Tiles com textura, bordas e volumes legíveis na escala do Emerald; evitar grandes superfícies que pareçam apenas pintadas.
+- Utilizar prioritariamente tiles, objetos e interiores originais do Emerald para preservar textura, volume e leitura autêntica de GBA.
+- Criar novos layouts com essas peças; não copiar a geografia, os nomes ou a progressão de Hoenn.
+- Evitar grandes superfícies que pareçam apenas pintadas e evitar tiles autorais quando uma combinação existente comunicar o bioma adequadamente.
 - Cada bioma possui paletas próprias, mas compartilha materiais e motivos que mantêm Arauna reconhecível.
 
 ## Macrobiomas
@@ -37,6 +39,8 @@ Os nomes são de trabalho e podem mudar antes da produção final dos mapas.
 
 Arauna será construída como uma rede de biomas, não como uma linha reta. Rios, ferrovias, estradas, cavernas e rotas marítimas recontextualizam áreas antigas depois da obtenção de habilidades de campo.
 
+Os macrobiomas são definidos primeiro por composição, clima, encontros, nomes, eventos e história. Um mesmo tileset pode representar áreas diferentes quando o layout, a paleta disponível, os Pokémon e a narrativa produzirem identidades distintas.
+
 - O início permanece na Mata das Araucárias.
 - A primeira metade apresenta contrastes entre mata, campos, litoral e Cerrado.
 - Pantanal, Caatinga e Amazônia ampliam a escala ecológica e política.
@@ -47,7 +51,7 @@ Arauna será construída como uma rede de biomas, não como uma linha reta. Rios
 
 ### Vila das Araucárias
 
-Local inicial pequeno, serrano e úmido. Apresenta o protagonista, a pesquisa Pokémon e a tensão entre tradição e modernização. Casas, centro de pesquisa, araucária ancestral e caminhos precisam formar volumes e silhuetas reconhecíveis no GBA.
+Local inicial pequeno, serrano e úmido. Apresenta o protagonista, a pesquisa Pokémon e a tensão entre tradição e modernização. Será remontado com tilesets estáveis do Emerald, preservando casas, centro de pesquisa, árvores e caminhos com volumes reconhecíveis no GBA.
 
 ### Rota da Neblina
 
