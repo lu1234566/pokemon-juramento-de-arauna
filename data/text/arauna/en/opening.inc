@@ -24,11 +24,13 @@ AraunaResearchCenter_Text_MaiaIntroduction::
 	.string "when you are certain.$"
 
 AraunaResearchCenter_Text_AfterChoice::
+	.string "Your party was restored.\p"
 	.string "NILO is waiting in the plaza.\p"
 	.string "He will test your preparation\n"
 	.string "before opening the route.$"
 
 AraunaResearchCenter_Text_RouteOpen::
+	.string "Your party was restored.\p"
 	.string "The eastern road is open.\p"
 	.string "Record everything the mist\n"
 	.string "tries to hide.$"
