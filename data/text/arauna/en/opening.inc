@@ -95,3 +95,55 @@ AraunaMapLab_Text_RouteLocked::
 	.string "NILO blocked the exit.\p"
 	.string "Choose a partner at the CENTER\n"
 	.string "and meet him in the plaza.$"
+
+AraunaMapLab_Text_ObjectiveNiloReturn::
+	.string "NILO is back in the plaza.\p"
+	.string "Tell him what happened inside\n"
+	.string "the FIRST LINK CHAMBER.$"
+
+AraunaMapLab_Text_ObjectiveSliceComplete::
+	.string "The first segment is complete.\p"
+	.string "The CHAMPION's memory opened\n"
+	.string "a much larger investigation.$"
+
+AraunaMapLab_Text_NiloReturnIntro::
+	.string "NILO: I saw the flash from town.\p"
+	.string "From those marks, the ruin\n"
+	.string "saw you too.$"
+
+AraunaMapLab_Text_NiloCourageReaction::
+	.string "You entered before the collapse.\p"
+	.string "COURAGE opened the path, but\n"
+	.string "part of it was buried.\p"
+	.string "Your choice left a mark.$"
+
+AraunaMapLab_Text_NiloWisdomReaction::
+	.string "You decoded the mechanism.\p"
+	.string "WISDOM preserved the ruin and\n"
+	.string "the inscriptions on the path.\p"
+	.string "Your choice saved answers.$"
+
+AraunaMapLab_Text_NiloCompassionReaction::
+	.string "You listened to the POKéMON.\p"
+	.string "COMPASSION revealed an exit\n"
+	.string "the agent did not know.\p"
+	.string "Your choice earned trust.$"
+
+AraunaMapLab_Text_NiloMemoryConclusion::
+	.string "NILO: If that memory is real,\n"
+	.string "the League told only part of it.\p"
+	.string "The CHAMPION did not vanish\n"
+	.string "before the Starless Night.\p"
+	.string "He was there.\n"
+	.string "He broke the Bond.$"
+
+AraunaMapLab_Text_VerticalSliceComplete::
+	.string "END OF THE CURRENT\n"
+	.string "VERTICAL SLICE.\p"
+	.string "The journey will continue after\n"
+	.string "the next tests and approvals.$"
+
+AraunaMapLab_Text_NiloAfterSlice::
+	.string "We still have only one memory.\p"
+	.string "Next, we find out who tried\n"
+	.string "to erase it.$"
