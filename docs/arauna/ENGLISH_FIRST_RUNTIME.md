@@ -10,3 +10,15 @@ The first playable build of **Pokémon Juramento de Arauna** targets English.
 - tools/arauna/validate_english_runtime.py rejects missing entries, Portuguese fallback prose, obsolete placeholder messages, and incorrectly selected language wrappers.
 
 The English build does not delete the Portuguese work. It keeps that material out of the active ROM while the English version is stabilized.
+
+## Pre-build check in Codespaces
+
+Run the two standard-library checks before compiling:
+
+```sh
+python3 tools/arauna/validate_english_runtime.py
+python3 tools/arauna/validate_packed_arauna_dex.py
+make ARAUNA_LANGUAGE=ENGLISH -j2
+```
+
+The playable output is `pokeemerald-en.gba`. The English-first CI intentionally does not build the Portuguese ROM yet.
