@@ -1,0 +1,2324 @@
+{
+  "language": "en",
+  "region": "Arauna",
+  "total": 386,
+  "notes": "Names remain Brazilian proper nouns. Player-facing category, habitat, and Dex text are English.",
+  "pokemon": [
+    {
+      "id": 1,
+      "category": "Stray",
+      "region": "Arauna Outskirts",
+      "dex": "A caramel-coated street pup. When it trusts a Trainer, its tail lights a small, steady flame that never burns a friendly hand."
+    },
+    {
+      "id": 2,
+      "category": "Guardian",
+      "region": "Arauna Outskirts",
+      "dex": "It guards open-air markets. The embers across its back move like fleas and bite only those who try to steal."
+    },
+    {
+      "id": 3,
+      "category": "Dragon-Dog",
+      "region": "Arauna Highlands",
+      "dex": "Legends say every caramel dog that saves a life is reborn as Draguará. Its turquoise flames warm but never harm the innocent."
+    },
+    {
+      "id": 4,
+      "category": "Sentinel",
+      "region": "Arauna Pampas",
+      "dex": "It never fully sleeps. One eye watches its nest, and its quero-quero cry can echo for miles when danger approaches."
+    },
+    {
+      "id": 5,
+      "category": "Watchman",
+      "region": "Arauna Wetlands",
+      "dex": "After its first molt, its feathers become iridescent dragonfly membranes. It hovers above water and hunts with exact precision."
+    },
+    {
+      "id": 6,
+      "category": "Sentinel",
+      "region": "Arauna Wetlands",
+      "dex": "Four dragonfly wings support its slender lapwing body. A single wingbeat can launch a stream strong enough to split a trunk."
+    },
+    {
+      "id": 7,
+      "category": "Hammer-Beak",
+      "region": "Arauna Cerrado",
+      "dex": "Its soft beak drills bark for larvae. It trains by hammering dry stumps all day, then returns to its nest with a headache."
+    },
+    {
+      "id": 8,
+      "category": "Hammer-Beak",
+      "region": "Arauna Cerrado",
+      "dex": "Its beak hardens like ironwood. It drums complex rhythms on trees that other Bicopau understand as messages."
+    },
+    {
+      "id": 9,
+      "category": "Sculptor",
+      "region": "Arauna Plateaus",
+      "dex": "Its beak calcified into a granite wedge. It carves caves into stone cliffs with blows that ring like bells."
+    },
+    {
+      "id": 10,
+      "category": "Anthill",
+      "region": "Arauna Cerrado",
+      "dex": "It is not a single ant, but an entire colony walking in the shape of a giant one. The colony scatters when threatened."
+    },
+    {
+      "id": 11,
+      "category": "Queen",
+      "region": "Arauna Cerrado",
+      "dex": "The queen of the leaf-cutter ants. It commands armies able to strip every leaf from a tree in one night."
+    },
+    {
+      "id": 12,
+      "category": "Lazy",
+      "region": "Arauna Rivers",
+      "dex": "It lives in riverside groups and lets any friendly POKéMON rest on its back, including tired Trainers."
+    },
+    {
+      "id": 13,
+      "category": "Fruit-Bearer",
+      "region": "Arauna Atlantic Forest",
+      "dex": "Its huge beak is hollow and light. It swallows fruit whole and spits seeds far away, planting forests on its own."
+    },
+    {
+      "id": 14,
+      "category": "Prankster",
+      "region": "Arauna Atlantic Forest",
+      "dex": "It steals anything that shines. Trainers quickly learn to keep their Gym Badges at the bottom of their bags."
+    },
+    {
+      "id": 15,
+      "category": "Shaman",
+      "region": "Arauna Atlantic Forest",
+      "dex": "The elder of the Sagüim troop. It reads the future in river reflections and can predict rain a week ahead."
+    },
+    {
+      "id": 16,
+      "category": "Fire-Snake",
+      "region": "Arauna Burned Fields",
+      "dex": "It appears after wildfires. Its body is a blue flame-serpent that hunts those who deliberately burn the forest."
+    },
+    {
+      "id": 17,
+      "category": "Guardian",
+      "region": "Arauna Atlantic Forest",
+      "dex": "Its feet point backward. The tracks it leaves confuse hunters and guide them deeper into the forest."
+    },
+    {
+      "id": 18,
+      "category": "Guardian",
+      "region": "Arauna Atlantic Forest",
+      "dex": "The true lord of the forest. Wherever it steps, a century-old tree can rise in a single night."
+    },
+    {
+      "id": 19,
+      "category": "Mermaid",
+      "region": "Arauna Solimoes River",
+      "dex": "Its song enchants fishers. Those who follow it into the river are said to join its court forever."
+    },
+    {
+      "id": 20,
+      "category": "Prankster",
+      "region": "Arauna Cerrado",
+      "dex": "It has only one leg and rides inside whirlwinds. It loves putting out campfires and teasing careless Trainers."
+    },
+    {
+      "id": 21,
+      "category": "Cactus",
+      "region": "Arauna Caatinga",
+      "dex": "Cactula lives in Arauna Caatinga. This Grass/Poison POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 22,
+      "category": "Stinger",
+      "region": "Arauna Amazon",
+      "dex": "Muriçoco, the Stinger POKéMON, inhabits Arauna Amazon. Its Bug/Poison nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 23,
+      "category": "Hunter",
+      "region": "Arauna Pantanal",
+      "dex": "Found in Arauna Pantanal, Onçaléu is known as the Hunter POKéMON. It carries a distinct Dark affinity."
+    },
+    {
+      "id": 24,
+      "category": "Anteater",
+      "region": "Arauna Cerrado",
+      "dex": "Tamanduá lives in Arauna Cerrado. This Ground/Steel POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 25,
+      "category": "RiverDolphin",
+      "region": "Arauna Amazon River",
+      "dex": "Botim, the RiverDolphin POKéMON, inhabits Arauna Amazon River. Its Water nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 26,
+      "category": "RiverDolphin",
+      "region": "Arauna Amazon River",
+      "dex": "Found in Arauna Amazon River, Botão is known as the RiverDolphin POKéMON. It carries a distinct Water/Psychic affinity."
+    },
+    {
+      "id": 27,
+      "category": "Enchanted",
+      "region": "Arauna Amazon River",
+      "dex": "Botogaláu lives in Arauna Amazon River. This Water/Psychic POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 28,
+      "category": "Rolling",
+      "region": "Arauna Caatinga",
+      "dex": "Tatuim, the Rolling POKéMON, inhabits Arauna Caatinga. Its Ground nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 29,
+      "category": "Fortress",
+      "region": "Arauna Caatinga",
+      "dex": "Found in Arauna Caatinga, Tatubola is known as the Fortress POKéMON. It carries a distinct Ground/Steel affinity."
+    },
+    {
+      "id": 30,
+      "category": "Burrower",
+      "region": "Arauna Caatinga",
+      "dex": "Tatuçu lives in Arauna Caatinga. This Ground/Steel POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 31,
+      "category": "Parrot",
+      "region": "Arauna Pantanal",
+      "dex": "Ararinha, the Parrot POKéMON, inhabits Arauna Pantanal. Its Flying nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 32,
+      "category": "Scorched",
+      "region": "Arauna Pantanal",
+      "dex": "Found in Arauna Pantanal, Arará is known as the Scorched POKéMON. It carries a distinct Flying/Fire affinity."
+    },
+    {
+      "id": 33,
+      "category": "Blazing",
+      "region": "Arauna Pantanal",
+      "dex": "Araracanga lives in Arauna Pantanal. This Flying/Fire POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 34,
+      "category": "Reptile",
+      "region": "Arauna Pantanal",
+      "dex": "Jacarim, the Reptile POKéMON, inhabits Arauna Pantanal. Its Water nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 35,
+      "category": "Ambush",
+      "region": "Arauna Pantanal",
+      "dex": "Found in Arauna Pantanal, Jacarão is known as the Ambush POKéMON. It carries a distinct Water/Dark affinity."
+    },
+    {
+      "id": 36,
+      "category": "Ancestral",
+      "region": "Arauna Pantanal",
+      "dex": "Jacarodon lives in Arauna Pantanal. This Water/Dragon POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 37,
+      "category": "Slow",
+      "region": "Arauna Atlantic Forest",
+      "dex": "Preguicim, the Slow POKéMON, inhabits Arauna Atlantic Forest. Its Grass nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 38,
+      "category": "Dreamer",
+      "region": "Arauna Atlantic Forest",
+      "dex": "Found in Arauna Atlantic Forest, Preguicão is known as the Dreamer POKéMON. It carries a distinct Grass/Psychic affinity."
+    },
+    {
+      "id": 39,
+      "category": "Shaman",
+      "region": "Arauna Atlantic Forest",
+      "dex": "Bicho-Preguiça lives in Arauna Atlantic Forest. This Grass/Psychic POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 40,
+      "category": "Talker",
+      "region": "Arauna Atlantic Forest",
+      "dex": "Papaguim, the Talker POKéMON, inhabits Arauna Atlantic Forest. Its Flying nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 41,
+      "category": "Talker",
+      "region": "Arauna Atlantic Forest",
+      "dex": "Found in Arauna Atlantic Forest, Papagaio is known as the Talker POKéMON. It carries a distinct Flying/Psychic affinity."
+    },
+    {
+      "id": 42,
+      "category": "Advisor",
+      "region": "Arauna Atlantic Forest",
+      "dex": "Papagaião lives in Arauna Atlantic Forest. This Flying/Psychic POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 43,
+      "category": "Chubby-Cheek",
+      "region": "Arauna Amazon",
+      "dex": "Antinha, the Chubby-Cheek POKéMON, inhabits Arauna Amazon. Its Normal nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 44,
+      "category": "Swimmer",
+      "region": "Arauna Amazon",
+      "dex": "Found in Arauna Amazon, Anta is known as the Swimmer POKéMON. It carries a distinct Normal/Water affinity."
+    },
+    {
+      "id": 45,
+      "category": "Spirit",
+      "region": "Arauna Amazon",
+      "dex": "Antaraú lives in Arauna Amazon. This Normal/Water POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 46,
+      "category": "Serpent",
+      "region": "Arauna Rivers",
+      "dex": "Sucurim, the Serpent POKéMON, inhabits Arauna Rivers. Its Water/Poison nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 47,
+      "category": "Constrictor",
+      "region": "Arauna Rivers",
+      "dex": "Found in Arauna Rivers, Sucuri is known as the Constrictor POKéMON. It carries a distinct Water/Poison affinity."
+    },
+    {
+      "id": 48,
+      "category": "Great-Snake",
+      "region": "Arauna Amazon",
+      "dex": "Boiuna lives in Arauna Amazon. This Water/Dragon POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 49,
+      "category": "Caterpillar",
+      "region": "Arauna Atlantic Forest",
+      "dex": "Borbolim, the Caterpillar POKéMON, inhabits Arauna Atlantic Forest. Its Bug nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 50,
+      "category": "Cocoon",
+      "region": "Arauna Atlantic Forest",
+      "dex": "Found in Arauna Atlantic Forest, Casulete is known as the Cocoon POKéMON. It carries a distinct Bug affinity."
+    },
+    {
+      "id": 51,
+      "category": "Iridescent",
+      "region": "Arauna Atlantic Forest",
+      "dex": "Morphália lives in Arauna Atlantic Forest. This Bug/Fairy POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 52,
+      "category": "Long-Legged",
+      "region": "Arauna Cerrado",
+      "dex": "Guaracim, the Long-Legged POKéMON, inhabits Arauna Cerrado. Its Fire nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 53,
+      "category": "Cerrado",
+      "region": "Arauna Cerrado",
+      "dex": "Found in Arauna Cerrado, Guará is known as the Cerrado POKéMON. It carries a distinct Fire/Normal affinity."
+    },
+    {
+      "id": 54,
+      "category": "Spirit",
+      "region": "Arauna Cerrado",
+      "dex": "Guaraflama lives in Arauna Cerrado. This Fire/Ghost POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 55,
+      "category": "Gentle",
+      "region": "Arauna Amazon",
+      "dex": "Peixim, the Gentle POKéMON, inhabits Arauna Amazon. Its Water nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 56,
+      "category": "Gentle",
+      "region": "Arauna Amazon",
+      "dex": "Found in Arauna Amazon, Peixeboi is known as the Gentle POKéMON. It carries a distinct Water affinity."
+    },
+    {
+      "id": 57,
+      "category": "Guardian",
+      "region": "Arauna Amazon",
+      "dex": "Mãe-d'Água lives in Arauna Amazon. This Water/Fairy POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 58,
+      "category": "Whisker",
+      "region": "Arauna Rivers",
+      "dex": "Mandim, the Whisker POKéMON, inhabits Arauna Rivers. Its Water nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 59,
+      "category": "Stinger",
+      "region": "Arauna Rivers",
+      "dex": "Found in Arauna Rivers, Mandí is known as the Stinger POKéMON. It carries a distinct Water/Poison affinity."
+    },
+    {
+      "id": 60,
+      "category": "Devourer",
+      "region": "Arauna Rivers",
+      "dex": "Mandubé lives in Arauna Rivers. This Water/Dark POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 61,
+      "category": "Prankster",
+      "region": "Arauna Atlantic Forest",
+      "dex": "Preguim, the Prankster POKéMON, inhabits Arauna Atlantic Forest. Its Normal nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 62,
+      "category": "Toolmaker",
+      "region": "Arauna Atlantic Forest",
+      "dex": "Found in Arauna Atlantic Forest, Prego is known as the Toolmaker POKéMON. It carries a distinct Fighting/Normal affinity."
+    },
+    {
+      "id": 63,
+      "category": "Sage",
+      "region": "Arauna Atlantic Forest",
+      "dex": "Pregarcanjo lives in Arauna Atlantic Forest. This Fighting/Psychic POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 64,
+      "category": "Threads",
+      "region": "Arauna Cerrado",
+      "dex": "Aranin, the Threads POKéMON, inhabits Arauna Cerrado. Its Bug nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 65,
+      "category": "Hairy",
+      "region": "Arauna Cerrado",
+      "dex": "Found in Arauna Cerrado, Caraninha is known as the Hairy POKéMON. It carries a distinct Bug/Poison affinity."
+    },
+    {
+      "id": 66,
+      "category": "Hairy",
+      "region": "Arauna Cerrado",
+      "dex": "Caranga lives in Arauna Cerrado. This Bug/Poison POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 67,
+      "category": "Mewing",
+      "region": "Arauna Atlantic Forest",
+      "dex": "Gatim, the Mewing POKéMON, inhabits Arauna Atlantic Forest. Its Normal nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 68,
+      "category": "Stealth",
+      "region": "Arauna Atlantic Forest",
+      "dex": "Found in Arauna Atlantic Forest, Gato-do-mato is known as the Stealth POKéMON. It carries a distinct Normal/Dark affinity."
+    },
+    {
+      "id": 69,
+      "category": "Spotted",
+      "region": "Arauna Atlantic Forest",
+      "dex": "Jaguatirica lives in Arauna Atlantic Forest. This Dark/Normal POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 70,
+      "category": "Rodent",
+      "region": "Arauna Atlantic Forest",
+      "dex": "Cutim, the Rodent POKéMON, inhabits Arauna Atlantic Forest. Its Normal nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 71,
+      "category": "Rodent",
+      "region": "Arauna Atlantic Forest",
+      "dex": "Found in Arauna Atlantic Forest, Cutia is known as the Rodent POKéMON. It carries a distinct Normal affinity."
+    },
+    {
+      "id": 72,
+      "category": "Nocturnal",
+      "region": "Arauna Atlantic Forest",
+      "dex": "Paca lives in Arauna Atlantic Forest. This Normal/Dark POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 73,
+      "category": "Jaw",
+      "region": "Arauna Amazon",
+      "dex": "Formigão, the Jaw POKéMON, inhabits Arauna Amazon. Its Bug/Fighting nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 74,
+      "category": "Stinger",
+      "region": "Arauna Cerrado",
+      "dex": "Found in Arauna Cerrado, Marimbondo is known as the Stinger POKéMON. It carries a distinct Bug/Poison affinity."
+    },
+    {
+      "id": 75,
+      "category": "Honey",
+      "region": "Arauna Cerrado",
+      "dex": "Abelhinha lives in Arauna Cerrado. This Bug/Flying POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 76,
+      "category": "Long-Snout",
+      "region": "Arauna Atlantic Forest",
+      "dex": "Quatim, the Long-Snout POKéMON, inhabits Arauna Atlantic Forest. Its Normal nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 77,
+      "category": "Thief",
+      "region": "Arauna Atlantic Forest",
+      "dex": "Found in Arauna Atlantic Forest, Quati is known as the Thief POKéMON. It carries a distinct Normal/Dark affinity."
+    },
+    {
+      "id": 78,
+      "category": "Cave",
+      "region": "Arauna Caves",
+      "dex": "Coati lives in Arauna Caves. This Dark/Ground POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 79,
+      "category": "Stench",
+      "region": "Arauna Atlantic Forest",
+      "dex": "Gambá, the Stench POKéMON, inhabits Arauna Atlantic Forest. Its Poison/Normal nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 80,
+      "category": "Noxious",
+      "region": "Arauna Cerrado",
+      "dex": "Found in Arauna Cerrado, Cangambá is known as the Noxious POKéMON. It carries a distinct Poison/Dark affinity."
+    },
+    {
+      "id": 81,
+      "category": "Trickster",
+      "region": "Arauna Cerrado",
+      "dex": "Sarué lives in Arauna Cerrado. This Poison/Ghost POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 82,
+      "category": "Big-Beak",
+      "region": "Arauna Amazon",
+      "dex": "Tuquinho, the Big-Beak POKéMON, inhabits Arauna Amazon. Its Flying nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 83,
+      "category": "Big-Beak",
+      "region": "Arauna Amazon",
+      "dex": "Found in Arauna Amazon, Aracari is known as the Big-Beak POKéMON. It carries a distinct Flying/Grass affinity."
+    },
+    {
+      "id": 84,
+      "category": "Raucous",
+      "region": "Arauna Pantanal",
+      "dex": "Curicaca lives in Arauna Pantanal. This Flying/Normal POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 85,
+      "category": "Tadpole",
+      "region": "Arauna Rivers",
+      "dex": "Sapim, the Tadpole POKéMON, inhabits Arauna Rivers. Its Water nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 86,
+      "category": "Toad",
+      "region": "Arauna Cerrado",
+      "dex": "Found in Arauna Cerrado, Sapão is known as the Toad POKéMON. It carries a distinct Water/Poison affinity."
+    },
+    {
+      "id": 87,
+      "category": "Toad",
+      "region": "Arauna Cerrado",
+      "dex": "Cururu lives in Arauna Cerrado. This Poison/Ground POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 88,
+      "category": "Lizard",
+      "region": "Arauna Cerrado",
+      "dex": "Teiuzim, the Lizard POKéMON, inhabits Arauna Cerrado. Its Normal nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 89,
+      "category": "Lizard",
+      "region": "Arauna Cerrado",
+      "dex": "Found in Arauna Cerrado, Teiú is known as the Lizard POKéMON. It carries a distinct Normal/Dark affinity."
+    },
+    {
+      "id": 90,
+      "category": "Chameleon",
+      "region": "Arauna Amazon",
+      "dex": "Camaleão lives in Arauna Amazon. This Normal/Psychic POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 91,
+      "category": "Nocturnal",
+      "region": "Arauna Caves",
+      "dex": "Morcim, the Nocturnal POKéMON, inhabits Arauna Caves. Its Flying nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 92,
+      "category": "Echolocator",
+      "region": "Arauna Caves",
+      "dex": "Found in Arauna Caves, Morcego is known as the Echolocator POKéMON. It carries a distinct Flying/Psychic affinity."
+    },
+    {
+      "id": 93,
+      "category": "Vampire",
+      "region": "Arauna Caves",
+      "dex": "Vampiro lives in Arauna Caves. This Flying/Dark POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 94,
+      "category": "One-Legged",
+      "region": "Arauna Pantanal",
+      "dex": "Piuiuim, the One-Legged POKéMON, inhabits Arauna Pantanal. Its Flying nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 95,
+      "category": "Spoonbill",
+      "region": "Arauna Pantanal",
+      "dex": "Found in Arauna Pantanal, Tuiuiú is known as the Spoonbill POKéMON. It carries a distinct Flying/Water affinity."
+    },
+    {
+      "id": 96,
+      "category": "Spoonbill",
+      "region": "Arauna Pantanal",
+      "dex": "Colhereiro lives in Arauna Pantanal. This Flying/Fairy POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 97,
+      "category": "Mount",
+      "region": "Arauna Cerrado",
+      "dex": "Mulinha, the Mount POKéMON, inhabits Arauna Cerrado. Its Normal nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 98,
+      "category": "Runner",
+      "region": "Arauna Cerrado",
+      "dex": "Found in Arauna Cerrado, Mula is known as the Runner POKéMON. It carries a distinct Normal/Fire affinity."
+    },
+    {
+      "id": 99,
+      "category": "Cursed",
+      "region": "Arauna Cerrado",
+      "dex": "Mula-sem-Cabeça lives in Arauna Cerrado. This Fire/Ghost POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 100,
+      "category": "Mountain",
+      "region": "Arauna Highlands",
+      "dex": "Corcovado, the Mountain POKéMON, inhabits Arauna Highlands. Its Rock/Dragon nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 101,
+      "category": "Deer",
+      "region": "Arauna Caatinga",
+      "dex": "Found in Arauna Caatinga, Cerválo is known as the Deer POKéMON. It carries a distinct Normal affinity."
+    },
+    {
+      "id": 102,
+      "category": "Deer",
+      "region": "Arauna Caatinga",
+      "dex": "Catingueiro lives in Arauna Caatinga. This Normal/Grass POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 103,
+      "category": "Deer",
+      "region": "Arauna Atlantic Forest",
+      "dex": "Suçuapara, the Deer POKéMON, inhabits Arauna Atlantic Forest. Its Normal/Fighting nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 104,
+      "category": "Aquatic",
+      "region": "Arauna Rivers",
+      "dex": "Found in Arauna Rivers, Cabocim is known as the Aquatic POKéMON. It carries a distinct Water affinity."
+    },
+    {
+      "id": 105,
+      "category": "Aquatic",
+      "region": "Arauna Rivers",
+      "dex": "Caboclo lives in Arauna Rivers. This Water/Fighting POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 106,
+      "category": "Bandit",
+      "region": "Arauna Caatinga",
+      "dex": "Cangaço, the Bandit POKéMON, inhabits Arauna Caatinga. Its Dark/Flying nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 107,
+      "category": "Thunder",
+      "region": "Arauna Highlands",
+      "dex": "Found in Arauna Highlands, Xangô is known as the Thunder POKéMON. It carries a distinct Electric/Fighting affinity."
+    },
+    {
+      "id": 108,
+      "category": "Water-Mother",
+      "region": "Arauna Coast",
+      "dex": "Iemanjá lives in Arauna Coast. This Water/Fairy POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 109,
+      "category": "Queen",
+      "region": "Arauna Rivers",
+      "dex": "Oxum, the Queen POKéMON, inhabits Arauna Rivers. Its Water/Fairy nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 110,
+      "category": "Warrior",
+      "region": "Arauna Highlands",
+      "dex": "Found in Arauna Highlands, Ogum is known as the Warrior POKéMON. It carries a distinct Steel/Fire affinity."
+    },
+    {
+      "id": 111,
+      "category": "Runner",
+      "region": "Arauna Pampas",
+      "dex": "Cavalim lives in Arauna Pampas. This Normal POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 112,
+      "category": "Runner",
+      "region": "Arauna Pampas",
+      "dex": "Cavalgado, the Runner POKéMON, inhabits Arauna Pampas. Its Normal/Fighting nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 113,
+      "category": "Ox",
+      "region": "Arauna Pampas",
+      "dex": "Found in Arauna Pampas, Zebuim is known as the Ox POKéMON. It carries a distinct Normal affinity."
+    },
+    {
+      "id": 114,
+      "category": "Ox",
+      "region": "Arauna Pampas",
+      "dex": "Zebu lives in Arauna Pampas. This Normal/Fighting POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 115,
+      "category": "Wool",
+      "region": "Arauna Pampas",
+      "dex": "Ovelhinha, the Wool POKéMON, inhabits Arauna Pampas. Its Normal/Fairy nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 116,
+      "category": "Goat",
+      "region": "Arauna Caatinga",
+      "dex": "Found in Arauna Caatinga, Cabrita is known as the Goat POKéMON. It carries a distinct Normal/Rock affinity."
+    },
+    {
+      "id": 117,
+      "category": "Rattle",
+      "region": "Arauna Caatinga",
+      "dex": "Chocalhão lives in Arauna Caatinga. This Poison POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 118,
+      "category": "Rattle",
+      "region": "Arauna Caatinga",
+      "dex": "Cascavelim, the Rattle POKéMON, inhabits Arauna Caatinga. Its Poison nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 119,
+      "category": "Rattle",
+      "region": "Arauna Caatinga",
+      "dex": "Found in Arauna Caatinga, Cascavão is known as the Rattle POKéMON. It carries a distinct Poison/Dark affinity."
+    },
+    {
+      "id": 120,
+      "category": "Ambush",
+      "region": "Arauna Atlantic Forest",
+      "dex": "Jararaca lives in Arauna Atlantic Forest. This Poison/Grass POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 121,
+      "category": "Giant",
+      "region": "Arauna Amazon",
+      "dex": "Pirarim, the Giant POKéMON, inhabits Arauna Amazon. Its Water nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 122,
+      "category": "Giant",
+      "region": "Arauna Amazon",
+      "dex": "Found in Arauna Amazon, Pirarucu is known as the Giant POKéMON. It carries a distinct Water/Dragon affinity."
+    },
+    {
+      "id": 123,
+      "category": "Devourer",
+      "region": "Arauna Rivers",
+      "dex": "Piranha lives in Arauna Rivers. This Water/Dark POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 124,
+      "category": "Fruit-Eater",
+      "region": "Arauna Amazon",
+      "dex": "Tambaqui, the Fruit-Eater POKéMON, inhabits Arauna Amazon. Its Water/Normal nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 125,
+      "category": "Jumper",
+      "region": "Arauna Amazon",
+      "dex": "Found in Arauna Amazon, Aruanã is known as the Jumper POKéMON. It carries a distinct Water/Flying affinity."
+    },
+    {
+      "id": 126,
+      "category": "Shock",
+      "region": "Arauna Amazon",
+      "dex": "Poraquê lives in Arauna Amazon. This Electric/Water POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 127,
+      "category": "Schooling",
+      "region": "Arauna Rivers",
+      "dex": "Curimbatá, the Schooling POKéMON, inhabits Arauna Rivers. Its Water/Ground nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 128,
+      "category": "Ambush",
+      "region": "Arauna Rivers",
+      "dex": "Found in Arauna Rivers, Traíra is known as the Ambush POKéMON. It carries a distinct Water/Dark affinity."
+    },
+    {
+      "id": 129,
+      "category": "Fighter",
+      "region": "Arauna Rivers",
+      "dex": "Dourado lives in Arauna Rivers. This Water/Fighting POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 130,
+      "category": "Territorial",
+      "region": "Arauna Amazon",
+      "dex": "Tucunaré, the Territorial POKéMON, inhabits Arauna Amazon. Its Water/Dark nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 131,
+      "category": "Fruit-Eater",
+      "region": "Arauna Amazon",
+      "dex": "Found in Arauna Amazon, Pacu is known as the Fruit-Eater POKéMON. It carries a distinct Water/Grass affinity."
+    },
+    {
+      "id": 132,
+      "category": "Schooling",
+      "region": "Arauna Rivers",
+      "dex": "Matrinxã lives in Arauna Rivers. This Water/Normal POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 133,
+      "category": "Schooling",
+      "region": "Arauna Rivers",
+      "dex": "Piau, the Schooling POKéMON, inhabits Arauna Rivers. Its Water/Normal nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 134,
+      "category": "Armor-Plate",
+      "region": "Arauna Rivers",
+      "dex": "Found in Arauna Rivers, Cascudo is known as the Armor-Plate POKéMON. It carries a distinct Water/Rock affinity."
+    },
+    {
+      "id": 135,
+      "category": "Disc",
+      "region": "Arauna Amazon",
+      "dex": "Acará lives in Arauna Amazon. This Water/Psychic POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 136,
+      "category": "Lantern",
+      "region": "Arauna Atlantic Forest",
+      "dex": "Vagalumim, the Lantern POKéMON, inhabits Arauna Atlantic Forest. Its Bug/Electric nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 137,
+      "category": "Lantern",
+      "region": "Arauna Atlantic Forest",
+      "dex": "Found in Arauna Atlantic Forest, Vagalume is known as the Lantern POKéMON. It carries a distinct Bug/Electric affinity."
+    },
+    {
+      "id": 138,
+      "category": "Singer",
+      "region": "Arauna Atlantic Forest",
+      "dex": "Cigarrinho lives in Arauna Atlantic Forest. This Bug POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 139,
+      "category": "Singer",
+      "region": "Arauna Atlantic Forest",
+      "dex": "Cigarrão, the Singer POKéMON, inhabits Arauna Atlantic Forest. Its Bug/Flying nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 140,
+      "category": "Scythe",
+      "region": "Arauna Cerrado",
+      "dex": "Found in Arauna Cerrado, Louvadinha is known as the Scythe POKéMON. It carries a distinct Bug affinity."
+    },
+    {
+      "id": 141,
+      "category": "Scythe",
+      "region": "Arauna Cerrado",
+      "dex": "Louvadeus lives in Arauna Cerrado. This Bug/Psychic POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 142,
+      "category": "Stinger",
+      "region": "Arauna Caatinga",
+      "dex": "Escorpim, the Stinger POKéMON, inhabits Arauna Caatinga. Its Poison nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 143,
+      "category": "Stinger",
+      "region": "Arauna Caatinga",
+      "dex": "Found in Arauna Caatinga, Escorpião is known as the Stinger POKéMON. It carries a distinct Poison/Dark affinity."
+    },
+    {
+      "id": 144,
+      "category": "Shell",
+      "region": "Arauna Amazon",
+      "dex": "Caramulão lives in Arauna Amazon. This Bug/Water POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 145,
+      "category": "Annelid",
+      "region": "Arauna Atlantic Forest",
+      "dex": "Piolhão, the Annelid POKéMON, inhabits Arauna Atlantic Forest. Its Bug/Poison nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 146,
+      "category": "Resilient",
+      "region": "Arauna Cities",
+      "dex": "Found in Arauna Cities, Barata is known as the Resilient POKéMON. It carries a distinct Bug/Dark affinity."
+    },
+    {
+      "id": 147,
+      "category": "Leaping",
+      "region": "Arauna Cerrado",
+      "dex": "Grilim lives in Arauna Cerrado. This Bug POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 148,
+      "category": "Singer",
+      "region": "Arauna Cerrado",
+      "dex": "Grilão, the Singer POKéMON, inhabits Arauna Cerrado. Its Bug/Normal nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 149,
+      "category": "Attack",
+      "region": "Arauna Atlantic Forest",
+      "dex": "Found in Arauna Atlantic Forest, Aranhão is known as the Attack POKéMON. It carries a distinct Bug/Poison affinity."
+    },
+    {
+      "id": 150,
+      "category": "Hunter",
+      "region": "Arauna Amazon",
+      "dex": "Vespão lives in Arauna Amazon. This Bug/Flying POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 151,
+      "category": "Stinger",
+      "region": "Arauna Cerrado",
+      "dex": "Marimbondão, the Stinger POKéMON, inhabits Arauna Cerrado. Its Bug/Poison nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 152,
+      "category": "Rodent",
+      "region": "Arauna Cities",
+      "dex": "Found in Arauna Cities, Traça is known as the Rodent POKéMON. It carries a distinct Bug/Normal affinity."
+    },
+    {
+      "id": 153,
+      "category": "Queen",
+      "region": "Arauna Cerrado",
+      "dex": "Corupião lives in Arauna Cerrado. This Bug/Ground POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 154,
+      "category": "Soldier",
+      "region": "Arauna Cerrado",
+      "dex": "Cupinzim, the Soldier POKéMON, inhabits Arauna Cerrado. Its Bug/Ground nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 155,
+      "category": "Runner",
+      "region": "Arauna Cerrado",
+      "dex": "Found in Arauna Cerrado, Formigão-Preto is known as the Runner POKéMON. It carries a distinct Bug/Dark affinity."
+    },
+    {
+      "id": 156,
+      "category": "Hummingbird",
+      "region": "Arauna Atlantic Forest",
+      "dex": "Beija-flor lives in Arauna Atlantic Forest. This Flying/Fairy POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 157,
+      "category": "Singer",
+      "region": "Arauna Atlantic Forest",
+      "dex": "Sabiá, the Singer POKéMON, inhabits Arauna Atlantic Forest. Its Flying/Normal nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 158,
+      "category": "Curious",
+      "region": "Arauna Cities",
+      "dex": "Found in Arauna Cities, Bem-te-vi is known as the Curious POKéMON. It carries a distinct Flying/Normal affinity."
+    },
+    {
+      "id": 159,
+      "category": "Camouflage",
+      "region": "Arauna Atlantic Forest",
+      "dex": "Urutau lives in Arauna Atlantic Forest. This Flying/Ghost POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 160,
+      "category": "Raptor",
+      "region": "Arauna Caatinga",
+      "dex": "Carcará, the Raptor POKéMON, inhabits Arauna Caatinga. Its Flying/Dark nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 161,
+      "category": "Eagle",
+      "region": "Arauna Amazon",
+      "dex": "Found in Arauna Amazon, Gavião is known as the Eagle POKéMON. It carries a distinct Flying/Fighting affinity."
+    },
+    {
+      "id": 162,
+      "category": "Scavenger",
+      "region": "Arauna Cities",
+      "dex": "Urubu lives in Arauna Cities. This Flying/Dark POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 163,
+      "category": "Owl",
+      "region": "Arauna Atlantic Forest",
+      "dex": "Corurupim, the Owl POKéMON, inhabits Arauna Atlantic Forest. Its Flying/Psychic nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 164,
+      "category": "Owl",
+      "region": "Arauna Cerrado",
+      "dex": "Found in Arauna Cerrado, Coruja is known as the Owl POKéMON. It carries a distinct Flying/Psychic affinity."
+    },
+    {
+      "id": 165,
+      "category": "Stork",
+      "region": "Arauna Pantanal",
+      "dex": "Jaburu lives in Arauna Pantanal. This Flying/Water POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 166,
+      "category": "Runner",
+      "region": "Arauna Cerrado",
+      "dex": "Ema, the Runner POKéMON, inhabits Arauna Cerrado. Its Normal/Flying nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 167,
+      "category": "One-Legged",
+      "region": "Arauna Cerrado",
+      "dex": "Found in Arauna Cerrado, Seriema is known as the One-Legged POKéMON. It carries a distinct Flying/Fighting affinity."
+    },
+    {
+      "id": 168,
+      "category": "Pack",
+      "region": "Arauna Cerrado",
+      "dex": "Anú lives in Arauna Cerrado. This Flying/Dark POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 169,
+      "category": "Singer",
+      "region": "Arauna Atlantic Forest",
+      "dex": "Trinca-Ferro, the Singer POKéMON, inhabits Arauna Atlantic Forest. Its Flying/Steel nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 170,
+      "category": "Singer",
+      "region": "Arauna Cerrado",
+      "dex": "Found in Arauna Cerrado, Curió is known as the Singer POKéMON. It carries a distinct Flying/Normal affinity."
+    },
+    {
+      "id": 171,
+      "category": "Blue",
+      "region": "Arauna Atlantic Forest",
+      "dex": "Sanhaço lives in Arauna Atlantic Forest. This Flying/Fairy POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 172,
+      "category": "Insectivore",
+      "region": "Arauna Atlantic Forest",
+      "dex": "Papa-Formiga, the Insectivore POKéMON, inhabits Arauna Atlantic Forest. Its Flying/Bug nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 173,
+      "category": "Shadow",
+      "region": "Arauna Atlantic Forest",
+      "dex": "Found in Arauna Atlantic Forest, Choca is known as the Shadow POKéMON. It carries a distinct Flying/Normal affinity."
+    },
+    {
+      "id": 174,
+      "category": "Nocturnal",
+      "region": "Arauna Cerrado",
+      "dex": "Bacurau lives in Arauna Cerrado. This Flying/Dark POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 175,
+      "category": "Builder",
+      "region": "Arauna Cerrado",
+      "dex": "João-de-Barro, the Builder POKéMON, inhabits Arauna Cerrado. Its Flying/Ground nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 176,
+      "category": "Seed",
+      "region": "Arauna Cerrado",
+      "dex": "Found in Arauna Cerrado, Sementim is known as the Seed POKéMON. It carries a distinct Grass affinity."
+    },
+    {
+      "id": 177,
+      "category": "Sprout",
+      "region": "Arauna Cerrado",
+      "dex": "Muda lives in Arauna Cerrado. This Grass POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 178,
+      "category": "Tree",
+      "region": "Arauna Atlantic Forest",
+      "dex": "Jequitibá, the Tree POKéMON, inhabits Arauna Atlantic Forest. Its Grass/Rock nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 179,
+      "category": "Bromeliad",
+      "region": "Arauna Atlantic Forest",
+      "dex": "Found in Arauna Atlantic Forest, Bromelinha is known as the Bromeliad POKéMON. It carries a distinct Grass/Water affinity."
+    },
+    {
+      "id": 180,
+      "category": "Flower",
+      "region": "Arauna Amazon",
+      "dex": "Orquidina lives in Arauna Amazon. This Grass/Fairy POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 181,
+      "category": "Water-Lily",
+      "region": "Arauna Amazon",
+      "dex": "Vitóriarégia, the Water-Lily POKéMON, inhabits Arauna Amazon. Its Grass/Water nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 182,
+      "category": "Blooming",
+      "region": "Arauna Cerrado",
+      "dex": "Found in Arauna Cerrado, Ipê is known as the Blooming POKéMON. It carries a distinct Grass/Fairy affinity."
+    },
+    {
+      "id": 183,
+      "category": "Vine",
+      "region": "Arauna Amazon",
+      "dex": "Cipó lives in Arauna Amazon. This Grass/Poison POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 184,
+      "category": "Palm",
+      "region": "Arauna Atlantic Forest",
+      "dex": "Palmito, the Palm POKéMON, inhabits Arauna Atlantic Forest. Its Grass/Fighting nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 185,
+      "category": "Palm",
+      "region": "Arauna Caatinga",
+      "dex": "Found in Arauna Caatinga, Babaçu is known as the Palm POKéMON. It carries a distinct Grass/Ground affinity."
+    },
+    {
+      "id": 186,
+      "category": "Palm",
+      "region": "Arauna Cerrado",
+      "dex": "Buriti lives in Arauna Cerrado. This Grass/Water POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 187,
+      "category": "Fruit",
+      "region": "Arauna Caatinga",
+      "dex": "Cajuzim, the Fruit POKéMON, inhabits Arauna Caatinga. Its Grass nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 188,
+      "category": "Fruit",
+      "region": "Arauna Caatinga",
+      "dex": "Found in Arauna Caatinga, Cajueiro is known as the Fruit POKéMON. It carries a distinct Grass/Fire affinity."
+    },
+    {
+      "id": 189,
+      "category": "Palm",
+      "region": "Arauna Amazon",
+      "dex": "Açaí lives in Arauna Amazon. This Grass/Dark POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 190,
+      "category": "Fruit",
+      "region": "Arauna Amazon",
+      "dex": "Cacauim, the Fruit POKéMON, inhabits Arauna Amazon. Its Grass nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 191,
+      "category": "Chocolate",
+      "region": "Arauna Amazon",
+      "dex": "Found in Arauna Amazon, Cacaueiro is known as the Chocolate POKéMON. It carries a distinct Grass/Normal affinity."
+    },
+    {
+      "id": 192,
+      "category": "Energetic",
+      "region": "Arauna Amazon",
+      "dex": "Guaraná lives in Arauna Amazon. This Grass/Electric POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 193,
+      "category": "Tea",
+      "region": "Arauna Pampas",
+      "dex": "Mate, the Tea POKéMON, inhabits Arauna Pampas. Its Grass/Water nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 194,
+      "category": "Grain",
+      "region": "Arauna Cerrado",
+      "dex": "Found in Arauna Cerrado, Milho is known as the Grain POKéMON. It carries a distinct Grass/Normal affinity."
+    },
+    {
+      "id": 195,
+      "category": "Root",
+      "region": "Arauna Cerrado",
+      "dex": "Mandioca lives in Arauna Cerrado. This Grass/Ground POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 196,
+      "category": "Pebble",
+      "region": "Arauna Rivers",
+      "dex": "Pedrinha, the Pebble POKéMON, inhabits Arauna Rivers. Its Rock nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 197,
+      "category": "Rock",
+      "region": "Arauna Plateaus",
+      "dex": "Found in Arauna Plateaus, Rochão is known as the Rock POKéMON. It carries a distinct Rock affinity."
+    },
+    {
+      "id": 198,
+      "category": "Crystal",
+      "region": "Arauna Caves",
+      "dex": "Cristalim lives in Arauna Caves. This Rock/Fairy POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 199,
+      "category": "Crystal",
+      "region": "Arauna Highlands",
+      "dex": "Ametista, the Crystal POKéMON, inhabits Arauna Highlands. Its Rock/Psychic nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 200,
+      "category": "Metal",
+      "region": "Arauna Highlands",
+      "dex": "Found in Arauna Highlands, Ouríço is known as the Metal POKéMON. It carries a distinct Steel/Electric affinity."
+    },
+    {
+      "id": 201,
+      "category": "Metal",
+      "region": "Arauna Highlands",
+      "dex": "Ferrolho lives in Arauna Highlands. This Steel/Ground POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 202,
+      "category": "Crystal",
+      "region": "Arauna Highlands",
+      "dex": "Diamantina, the Crystal POKéMON, inhabits Arauna Highlands. Its Rock/Fairy nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 203,
+      "category": "Metal",
+      "region": "Arauna Amazon",
+      "dex": "Found in Arauna Amazon, Bauxito is known as the Metal POKéMON. It carries a distinct Steel/Ground affinity."
+    },
+    {
+      "id": 204,
+      "category": "Metal",
+      "region": "Arauna Highlands",
+      "dex": "Manganim lives in Arauna Highlands. This Steel/Dark POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 205,
+      "category": "Salt",
+      "region": "Arauna Coast",
+      "dex": "Salitre, the Salt POKéMON, inhabits Arauna Coast. Its Rock/Water nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 206,
+      "category": "Sulfur",
+      "region": "Arauna Highlands",
+      "dex": "Found in Arauna Highlands, Enxofrino is known as the Sulfur POKéMON. It carries a distinct Fire/Poison affinity."
+    },
+    {
+      "id": 207,
+      "category": "Clay",
+      "region": "Arauna Cerrado",
+      "dex": "Argilim lives in Arauna Cerrado. This Ground POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 208,
+      "category": "Puppet",
+      "region": "Arauna Cerrado",
+      "dex": "Boneco, the Puppet POKéMON, inhabits Arauna Cerrado. Its Ground/Psychic nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 209,
+      "category": "Cave",
+      "region": "Arauna Caves",
+      "dex": "Found in Arauna Caves, Estalactite is known as the Cave POKéMON. It carries a distinct Rock/Water affinity."
+    },
+    {
+      "id": 210,
+      "category": "Cave",
+      "region": "Arauna Caves",
+      "dex": "Estalagmite lives in Arauna Caves. This Rock/Ground POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 211,
+      "category": "Fossil",
+      "region": "Arauna Plateaus",
+      "dex": "Fóssil, the Fossil POKéMON, inhabits Arauna Plateaus. Its Rock/Dragon nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 212,
+      "category": "Stellar",
+      "region": "Arauna Highlands",
+      "dex": "Found in Arauna Highlands, Meteorito is known as the Stellar POKéMON. It carries a distinct Rock/Psychic affinity."
+    },
+    {
+      "id": 213,
+      "category": "Volcano",
+      "region": "Arauna Highlands",
+      "dex": "Vulcanite lives in Arauna Highlands. This Fire/Rock POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 214,
+      "category": "Sculpture",
+      "region": "Arauna Highlands",
+      "dex": "Marmim, the Sculpture POKéMON, inhabits Arauna Highlands. Its Rock/Fairy nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 215,
+      "category": "Rock",
+      "region": "Arauna Plateaus",
+      "dex": "Found in Arauna Plateaus, Granito is known as the Rock POKéMON. It carries a distinct Rock/Fighting affinity."
+    },
+    {
+      "id": 216,
+      "category": "Pincer",
+      "region": "Arauna Coast",
+      "dex": "Caranguim lives in Arauna Coast. This Water POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 217,
+      "category": "Pincer",
+      "region": "Arauna Coast",
+      "dex": "Guaiamum, the Pincer POKéMON, inhabits Arauna Coast. Its Water/Ground nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 218,
+      "category": "Swimmer",
+      "region": "Arauna Coast",
+      "dex": "Found in Arauna Coast, Siri is known as the Swimmer POKéMON. It carries a distinct Water/Fighting affinity."
+    },
+    {
+      "id": 219,
+      "category": "Crustacean",
+      "region": "Arauna Coast",
+      "dex": "Camarão lives in Arauna Coast. This Water POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 220,
+      "category": "Tentacle",
+      "region": "Arauna Coast",
+      "dex": "Polvim, the Tentacle POKéMON, inhabits Arauna Coast. Its Water/Psychic nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 221,
+      "category": "Tentacle",
+      "region": "Arauna Coast",
+      "dex": "Found in Arauna Coast, Polvão is known as the Tentacle POKéMON. It carries a distinct Water/Psychic affinity."
+    },
+    {
+      "id": 222,
+      "category": "Floating",
+      "region": "Arauna Coast",
+      "dex": "Águaviva lives in Arauna Coast. This Water/Poison POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 223,
+      "category": "Marine",
+      "region": "Arauna Coast",
+      "dex": "Cavalim-Marinho, the Marine POKéMON, inhabits Arauna Coast. Its Water/Fairy nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 224,
+      "category": "Shell",
+      "region": "Arauna Coast",
+      "dex": "Found in Arauna Coast, Tartaruguim is known as the Shell POKéMON. It carries a distinct Water affinity."
+    },
+    {
+      "id": 225,
+      "category": "Shell",
+      "region": "Arauna Coast",
+      "dex": "Tartaruga lives in Arauna Coast. This Water/Rock POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 226,
+      "category": "Clever",
+      "region": "Arauna Coast",
+      "dex": "Golfinho, the Clever POKéMON, inhabits Arauna Coast. Its Water/Psychic nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 227,
+      "category": "Giant",
+      "region": "Arauna Coast",
+      "dex": "Found in Arauna Coast, Baleia is known as the Giant POKéMON. It carries a distinct Water/Normal affinity."
+    },
+    {
+      "id": 228,
+      "category": "Predator",
+      "region": "Arauna Coast",
+      "dex": "Tubarim lives in Arauna Coast. This Water/Dark POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 229,
+      "category": "Predator",
+      "region": "Arauna Coast",
+      "dex": "Tubarão, the Predator POKéMON, inhabits Arauna Coast. Its Water/Dark nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 230,
+      "category": "Shock",
+      "region": "Arauna Coast",
+      "dex": "Found in Arauna Coast, Arraia is known as the Shock POKéMON. It carries a distinct Water/Electric affinity."
+    },
+    {
+      "id": 231,
+      "category": "Blade",
+      "region": "Arauna Coast",
+      "dex": "Peixe-Espada lives in Arauna Coast. This Water/Steel POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 232,
+      "category": "Schooling",
+      "region": "Arauna Coast",
+      "dex": "Pargo, the Schooling POKéMON, inhabits Arauna Coast. Its Water/Fire nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 233,
+      "category": "Lure",
+      "region": "Arauna Coast",
+      "dex": "Found in Arauna Coast, Pescadão is known as the Lure POKéMON. It carries a distinct Water/Dark affinity."
+    },
+    {
+      "id": 234,
+      "category": "Specter",
+      "region": "Arauna Cities",
+      "dex": "Loirinha lives in Arauna Cities. This Ghost/Fairy POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 235,
+      "category": "Witch",
+      "region": "Arauna Cerrado",
+      "dex": "Cuca, the Witch POKéMON, inhabits Arauna Cerrado. Its Dark/Psychic nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 236,
+      "category": "Terror",
+      "region": "Arauna Cities",
+      "dex": "Found in Arauna Cities, Bicho-Papão is known as the Terror POKéMON. It carries a distinct Dark/Ghost affinity."
+    },
+    {
+      "id": 237,
+      "category": "Cursed",
+      "region": "Arauna Cerrado",
+      "dex": "Lobisomem lives in Arauna Cerrado. This Dark/Normal POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 238,
+      "category": "Cursed",
+      "region": "Arauna Cerrado",
+      "dex": "Corpo-Seco, the Cursed POKéMON, inhabits Arauna Cerrado. Its Ghost/Dark nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 239,
+      "category": "Haunting",
+      "region": "Arauna Cities",
+      "dex": "Found in Arauna Cities, Mão-Peluda is known as the Haunting POKéMON. It carries a distinct Ghost/Fighting affinity."
+    },
+    {
+      "id": 240,
+      "category": "Haunting",
+      "region": "Arauna Cities",
+      "dex": "Perna-Cabeluda lives in Arauna Cities. This Ghost/Normal POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 241,
+      "category": "Spirit",
+      "region": "Arauna Cerrado",
+      "dex": "Comadre, the Spirit POKéMON, inhabits Arauna Cerrado. Its Ghost/Fairy nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 242,
+      "category": "Spirit",
+      "region": "Arauna Amazon",
+      "dex": "Found in Arauna Amazon, Anhangá is known as the Spirit POKéMON. It carries a distinct Ghost/Grass affinity."
+    },
+    {
+      "id": 243,
+      "category": "God",
+      "region": "Arauna Amazon",
+      "dex": "Jurupari lives in Arauna Amazon. This Dark/Fairy POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 244,
+      "category": "Thunder",
+      "region": "Arauna Highlands",
+      "dex": "Tupã, the Thunder POKéMON, inhabits Arauna Highlands. Its Electric/Dragon nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 245,
+      "category": "Lunar",
+      "region": "Arauna Highlands",
+      "dex": "Found in Arauna Highlands, Jaci is known as the Lunar POKéMON. It carries a distinct Fairy/Psychic affinity."
+    },
+    {
+      "id": 246,
+      "category": "Solar",
+      "region": "Arauna Highlands",
+      "dex": "Guaraci lives in Arauna Highlands. This Fire/Fairy POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 247,
+      "category": "Love",
+      "region": "Arauna Coast",
+      "dex": "Rudá, the Love POKéMON, inhabits Arauna Coast. Its Fairy/Psychic nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 248,
+      "category": "Ferment",
+      "region": "Arauna Amazon",
+      "dex": "Found in Arauna Amazon, Aluá is known as the Ferment POKéMON. It carries a distinct Water/Poison affinity."
+    },
+    {
+      "id": 249,
+      "category": "Paint",
+      "region": "Arauna Amazon",
+      "dex": "Jenipapo lives in Arauna Amazon. This Dark/Grass POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 250,
+      "category": "Paint",
+      "region": "Arauna Amazon",
+      "dex": "Urucum, the Paint POKéMON, inhabits Arauna Amazon. Its Fire/Grass nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 251,
+      "category": "Hunter",
+      "region": "Arauna Cerrado",
+      "dex": "Found in Arauna Cerrado, Caipora is known as the Hunter POKéMON. It carries a distinct Grass/Fighting affinity."
+    },
+    {
+      "id": 252,
+      "category": "Spirit",
+      "region": "Arauna Amazon",
+      "dex": "Anhangá-Pitã lives in Arauna Amazon. This Ghost/Fire POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 253,
+      "category": "Fisher",
+      "region": "Arauna Amazon",
+      "dex": "Yara-Pindá, the Fisher POKéMON, inhabits Arauna Amazon. Its Water/Fairy nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 254,
+      "category": "Haunting",
+      "region": "Arauna Cities",
+      "dex": "Found in Arauna Cities, Pisadeira is known as the Haunting POKéMON. It carries a distinct Ghost/Fighting affinity."
+    },
+    {
+      "id": 255,
+      "category": "Warrior",
+      "region": "Arauna Highlands",
+      "dex": "Zumbi lives in Arauna Highlands. This Ghost/Fighting POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 256,
+      "category": "Mother",
+      "region": "Arauna Coast",
+      "dex": "Iemanjá-Pequena, the Mother POKéMON, inhabits Arauna Coast. Its Water/Fairy nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 257,
+      "category": "Herbal",
+      "region": "Arauna Atlantic Forest",
+      "dex": "Found in Arauna Atlantic Forest, Ossanha is known as the Herbal POKéMON. It carries a distinct Grass/Fairy affinity."
+    },
+    {
+      "id": 258,
+      "category": "Creator",
+      "region": "Arauna Highlands",
+      "dex": "Oxalá lives in Arauna Highlands. This Normal/Fairy POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 259,
+      "category": "Prankster",
+      "region": "Arauna Cerrado",
+      "dex": "Saciamigo, the Prankster POKéMON, inhabits Arauna Cerrado. Its Dark/Fairy nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 260,
+      "category": "Prankster",
+      "region": "Arauna Cerrado",
+      "dex": "Found in Arauna Cerrado, Sacipererê is known as the Prankster POKéMON. It carries a distinct Dark/Fairy affinity."
+    },
+    {
+      "id": 261,
+      "category": "Guardian",
+      "region": "Arauna Amazon",
+      "dex": "Curupira-Ancião lives in Arauna Amazon. This Grass/Fairy POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 262,
+      "category": "Huntress",
+      "region": "Arauna Cerrado",
+      "dex": "Caipora-Fêmea, the Huntress POKéMON, inhabits Arauna Cerrado. Its Grass/Fighting nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 263,
+      "category": "Enchantress",
+      "region": "Arauna Cities",
+      "dex": "Found in Arauna Cities, Pomba-Gira is known as the Enchantress POKéMON. It carries a distinct Dark/Fairy affinity."
+    },
+    {
+      "id": 264,
+      "category": "Messenger",
+      "region": "Arauna Cities",
+      "dex": "Exu lives in Arauna Cities. This Dark/Fighting POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 265,
+      "category": "Sage",
+      "region": "Arauna Cities",
+      "dex": "Preto-Velho, the Sage POKéMON, inhabits Arauna Cities. Its Ghost/Psychic nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 266,
+      "category": "Warrior",
+      "region": "Arauna Atlantic Forest",
+      "dex": "Found in Arauna Atlantic Forest, Caboclo-Guerreiro is known as the Warrior POKéMON. It carries a distinct Grass/Fighting affinity."
+    },
+    {
+      "id": 267,
+      "category": "Sailor",
+      "region": "Arauna Coast",
+      "dex": "Marinheiro lives in Arauna Coast. This Water/Dark POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 268,
+      "category": "Joy",
+      "region": "Arauna Coast",
+      "dex": "Baiano, the Joy POKéMON, inhabits Arauna Coast. Its Fire/Fighting nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 269,
+      "category": "Bandit",
+      "region": "Arauna Caatinga",
+      "dex": "Found in Arauna Caatinga, Cangaceiro is known as the Bandit POKéMON. It carries a distinct Dark/Fighting affinity."
+    },
+    {
+      "id": 270,
+      "category": "Devout",
+      "region": "Arauna Caatinga",
+      "dex": "Beata lives in Arauna Caatinga. This Fairy/Psychic POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 271,
+      "category": "Divine",
+      "region": "Arauna Cerrado",
+      "dex": "Menino-Deus, the Divine POKéMON, inhabits Arauna Cerrado. Its Fairy/Normal nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 272,
+      "category": "Reveler",
+      "region": "Arauna Cities",
+      "dex": "Found in Arauna Cities, Rei-Momo is known as the Reveler POKéMON. It carries a distinct Normal/Fire affinity."
+    },
+    {
+      "id": 273,
+      "category": "Reveler",
+      "region": "Arauna Amazon",
+      "dex": "Bumba-Meu-Boi lives in Arauna Amazon. This Normal/Fire POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 274,
+      "category": "Reveler",
+      "region": "Arauna Caatinga",
+      "dex": "Reisado, the Reveler POKéMON, inhabits Arauna Caatinga. Its Fairy/Normal nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 275,
+      "category": "Dancer",
+      "region": "Arauna Coast",
+      "dex": "Found in Arauna Coast, Frevinho is known as the Dancer POKéMON. It carries a distinct Fighting/Fire affinity."
+    },
+    {
+      "id": 276,
+      "category": "Procession",
+      "region": "Arauna Coast",
+      "dex": "Maracatu lives in Arauna Coast. This Dark/Fairy POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 277,
+      "category": "Warrior",
+      "region": "Arauna Cerrado",
+      "dex": "Congada, the Warrior POKéMON, inhabits Arauna Cerrado. Its Fighting/Fire nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 278,
+      "category": "Reveler",
+      "region": "Arauna Cities",
+      "dex": "Found in Arauna Cities, Folião is known as the Reveler POKéMON. It carries a distinct Normal/Fairy affinity."
+    },
+    {
+      "id": 279,
+      "category": "Huntress",
+      "region": "Arauna Amazon",
+      "dex": "Onçuma lives in Arauna Amazon. This Dark/Ghost POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 280,
+      "category": "Great-Snake",
+      "region": "Arauna Amazon",
+      "dex": "Sucuriaçu, the Great-Snake POKéMON, inhabits Arauna Amazon. Its Water/Dragon nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 281,
+      "category": "Fish",
+      "region": "Arauna Amazon",
+      "dex": "Found in Arauna Amazon, Pirarumbá is known as the Fish POKéMON. It carries a distinct Water/Dragon affinity."
+    },
+    {
+      "id": 282,
+      "category": "Dragon-Dog",
+      "region": "Arauna Highlands",
+      "dex": "Draguará-Alfa lives in Arauna Highlands. This Fire/Dragon POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 283,
+      "category": "Queen",
+      "region": "Arauna Wetlands",
+      "dex": "Terolibra-Rainha, the Queen POKéMON, inhabits Arauna Wetlands. Its Water/Bug nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 284,
+      "category": "Sculptor",
+      "region": "Arauna Plateaus",
+      "dex": "Found in Arauna Plateaus, Petropico-Ancião is known as the Sculptor POKéMON. It carries a distinct Grass/Rock affinity."
+    },
+    {
+      "id": 285,
+      "category": "Fire-Snake",
+      "region": "Arauna Cerrado",
+      "dex": "Boitatá-Puro lives in Arauna Cerrado. This Fire/Dragon POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 286,
+      "category": "Goddess",
+      "region": "Arauna Amazon",
+      "dex": "Iara-Mãe, the Goddess POKéMON, inhabits Arauna Amazon. Its Water/Fairy nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 287,
+      "category": "King",
+      "region": "Arauna Atlantic Forest",
+      "dex": "Found in Arauna Atlantic Forest, Curupira-Rei is known as the King POKéMON. It carries a distinct Grass/Fairy affinity."
+    },
+    {
+      "id": 288,
+      "category": "King",
+      "region": "Arauna Cerrado",
+      "dex": "Saci-Rei lives in Arauna Cerrado. This Dark/Fairy POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 289,
+      "category": "Supreme",
+      "region": "Arauna Amazon",
+      "dex": "Anhangaú, the Supreme POKéMON, inhabits Arauna Amazon. Its Ghost/Grass nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 290,
+      "category": "Ancestral",
+      "region": "Arauna Amazon",
+      "dex": "Found in Arauna Amazon, Muirá-Kytã is known as the Ancestral POKéMON. It carries a distinct Grass/Fairy affinity."
+    },
+    {
+      "id": 291,
+      "category": "Serpent",
+      "region": "Arauna Amazon",
+      "dex": "Cobra-Norato lives in Arauna Amazon. This Water/Dragon POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 292,
+      "category": "Terror",
+      "region": "Arauna Amazon",
+      "dex": "Mapinguari, the Terror POKéMON, inhabits Arauna Amazon. Its Grass/Fighting nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 293,
+      "category": "Marine",
+      "region": "Arauna Coast",
+      "dex": "Found in Arauna Coast, Ipupiara is known as the Marine POKéMON. It carries a distinct Water/Dark affinity."
+    },
+    {
+      "id": 294,
+      "category": "Miracle",
+      "region": "Arauna Amazon",
+      "dex": "Uirapuru lives in Arauna Amazon. This Flying/Fairy POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 295,
+      "category": "Charm",
+      "region": "Arauna Amazon",
+      "dex": "Muiraquitã, the Charm POKéMON, inhabits Arauna Amazon. Its Rock/Fairy nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 296,
+      "category": "Warrior",
+      "region": "Arauna Amazon",
+      "dex": "Found in Arauna Amazon, Amazona is known as the Warrior POKéMON. It carries a distinct Fighting/Fairy affinity."
+    },
+    {
+      "id": 297,
+      "category": "Mountain",
+      "region": "Arauna Highlands",
+      "dex": "Corcovado-Ancião lives in Arauna Highlands. This Rock/Dragon POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 298,
+      "category": "Redeemer",
+      "region": "Arauna Highlands",
+      "dex": "Cristo, the Redeemer POKéMON, inhabits Arauna Highlands. Its Fairy/Psychic nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 299,
+      "category": "Rat",
+      "region": "Arauna Cities",
+      "dex": "Found in Arauna Cities, Ratão is known as the Rat POKéMON. It carries a distinct Dark/Poison affinity."
+    },
+    {
+      "id": 300,
+      "category": "Pigeon",
+      "region": "Arauna Cities",
+      "dex": "Pombim lives in Arauna Cities. This Flying/Normal POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 301,
+      "category": "Pigeon",
+      "region": "Arauna Cities",
+      "dex": "Pombão, the Pigeon POKéMON, inhabits Arauna Cities. Its Flying/Poison nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 302,
+      "category": "Terror",
+      "region": "Arauna Cities",
+      "dex": "Found in Arauna Cities, Baratão is known as the Terror POKéMON. It carries a distinct Bug/Flying affinity."
+    },
+    {
+      "id": 303,
+      "category": "Vector",
+      "region": "Arauna Cities",
+      "dex": "Mosquim lives in Arauna Cities. This Bug/Poison POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 304,
+      "category": "Street",
+      "region": "Arauna Cities",
+      "dex": "Cão-Bravo, the Street POKéMON, inhabits Arauna Cities. Its Dark/Normal nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 305,
+      "category": "Bad-Omen",
+      "region": "Arauna Cities",
+      "dex": "Found in Arauna Cities, Gato-Preto is known as the Bad-Omen POKéMON. It carries a distinct Dark/Psychic affinity."
+    },
+    {
+      "id": 306,
+      "category": "Amphibian",
+      "region": "Arauna Cities",
+      "dex": "Perereca lives in Arauna Cities. This Water/Poison POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 307,
+      "category": "Wall",
+      "region": "Arauna Cities",
+      "dex": "Lagartixa, the Wall POKéMON, inhabits Arauna Cities. Its Normal/Psychic nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 308,
+      "category": "Scholar",
+      "region": "Arauna Cities",
+      "dex": "Found in Arauna Cities, Traça-Papel is known as the Scholar POKéMON. It carries a distinct Bug/Psychic affinity."
+    },
+    {
+      "id": 309,
+      "category": "Dust",
+      "region": "Arauna Cities",
+      "dex": "Poeirão lives in Arauna Cities. This Ground/Dark POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 310,
+      "category": "Corrosion",
+      "region": "Arauna Cities",
+      "dex": "Ferrugem, the Corrosion POKéMON, inhabits Arauna Cities. Its Steel/Water nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 311,
+      "category": "Pollution",
+      "region": "Arauna Cities",
+      "dex": "Found in Arauna Cities, Fumacento is known as the Pollution POKéMON. It carries a distinct Poison/Flying affinity."
+    },
+    {
+      "id": 312,
+      "category": "Stain",
+      "region": "Arauna Coast",
+      "dex": "Óleoso lives in Arauna Coast. This Poison/Water POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 313,
+      "category": "Dump",
+      "region": "Arauna Cities",
+      "dex": "Lixão, the Dump POKéMON, inhabits Arauna Cities. Its Poison/Ground nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 314,
+      "category": "Leachate",
+      "region": "Arauna Cities",
+      "dex": "Found in Arauna Cities, Chorume is known as the Leachate POKéMON. It carries a distinct Poison/Dark affinity."
+    },
+    {
+      "id": 315,
+      "category": "Litter",
+      "region": "Arauna Cities",
+      "dex": "Bituca lives in Arauna Cities. This Fire/Poison POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 316,
+      "category": "Recycler",
+      "region": "Arauna Cities",
+      "dex": "Latinha, the Recycler POKéMON, inhabits Arauna Cities. Its Steel/Normal nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 317,
+      "category": "Pollution",
+      "region": "Arauna Cities",
+      "dex": "Found in Arauna Cities, Sacolim is known as the Pollution POKéMON. It carries a distinct Poison/Flying affinity."
+    },
+    {
+      "id": 318,
+      "category": "Recyclable",
+      "region": "Arauna Rivers",
+      "dex": "Garrafão lives in Arauna Rivers. This Water/Poison POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 319,
+      "category": "Recyclable",
+      "region": "Arauna Coast",
+      "dex": "Netzero, the Recyclable POKéMON, inhabits Arauna Coast. Its Flying/Poison nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 320,
+      "category": "Battery",
+      "region": "Arauna Cities",
+      "dex": "Found in Arauna Cities, Pilhoso is known as the Battery POKéMON. It carries a distinct Electric/Poison affinity."
+    },
+    {
+      "id": 321,
+      "category": "Wire",
+      "region": "Arauna Cities",
+      "dex": "Cabofio lives in Arauna Cities. This Electric/Steel POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 322,
+      "category": "Pest",
+      "region": "Arauna Cities",
+      "dex": "Bugão, the Pest POKéMON, inhabits Arauna Cities. Its Bug/Dark nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 323,
+      "category": "Metal",
+      "region": "Arauna Cities",
+      "dex": "Found in Arauna Cities, Aluminio is known as the Metal POKéMON. It carries a distinct Steel/Flying affinity."
+    },
+    {
+      "id": 324,
+      "category": "Cement",
+      "region": "Arauna Cities",
+      "dex": "Concretim lives in Arauna Cities. This Rock/Steel POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 325,
+      "category": "Sewer",
+      "region": "Arauna Cities",
+      "dex": "Bueiro, the Sewer POKéMON, inhabits Arauna Cities. Its Water/Dark nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 326,
+      "category": "Signal",
+      "region": "Arauna Cities",
+      "dex": "Found in Arauna Cities, Sinal is known as the Signal POKéMON. It carries a distinct Electric/Psychic affinity."
+    },
+    {
+      "id": 327,
+      "category": "Lighting",
+      "region": "Arauna Cities",
+      "dex": "Poste lives in Arauna Cities. This Steel/Electric POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 328,
+      "category": "Art",
+      "region": "Arauna Cities",
+      "dex": "Grafiteiro, the Art POKéMON, inhabits Arauna Cities. Its Dark/Fairy nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 329,
+      "category": "Sun",
+      "region": "Arauna Highlands",
+      "dex": "Found in Arauna Highlands, Guaraciana is known as the Sun POKéMON. It carries a distinct Fire/Fairy affinity."
+    },
+    {
+      "id": 330,
+      "category": "Moon",
+      "region": "Arauna Highlands",
+      "dex": "Jaciana lives in Arauna Highlands. This Fairy/Water POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 331,
+      "category": "Thunder",
+      "region": "Arauna Highlands",
+      "dex": "Tupanaú, the Thunder POKéMON, inhabits Arauna Highlands. Its Electric/Dragon nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 332,
+      "category": "Supreme",
+      "region": "Arauna Amazon",
+      "dex": "Found in Arauna Amazon, Iaraú is known as the Supreme POKéMON. It carries a distinct Water/Fairy affinity."
+    },
+    {
+      "id": 333,
+      "category": "Sun",
+      "region": "Arauna Highlands",
+      "dex": "Kuarahy lives in Arauna Highlands. This Fire/Psychic POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 334,
+      "category": "Moon",
+      "region": "Arauna Highlands",
+      "dex": "Yasy, the Moon POKéMON, inhabits Arauna Highlands. Its Fairy/Dark nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 335,
+      "category": "Love",
+      "region": "Arauna Coast",
+      "dex": "Found in Arauna Coast, Rudarauna is known as the Love POKéMON. It carries a distinct Fairy/Psychic affinity."
+    },
+    {
+      "id": 336,
+      "category": "River",
+      "region": "Arauna Amazon",
+      "dex": "Perybé lives in Arauna Amazon. This Water/Psychic POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 337,
+      "category": "Guardian",
+      "region": "Arauna Highlands",
+      "dex": "Arauanaú, the Guardian POKéMON, inhabits Arauna Highlands. Its Fairy/Dragon nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 338,
+      "category": "Verdant",
+      "region": "Arauna Amazon",
+      "dex": "Found in Arauna Amazon, Verdejante is known as the Verdant POKéMON. It carries a distinct Grass/Dragon affinity."
+    },
+    {
+      "id": 339,
+      "category": "Storm",
+      "region": "Arauna Highlands",
+      "dex": "Chuvão lives in Arauna Highlands. This Water/Electric POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 340,
+      "category": "Drought",
+      "region": "Arauna Caatinga",
+      "dex": "Solzão, the Drought POKéMON, inhabits Arauna Caatinga. Its Fire/Ground nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 341,
+      "category": "Wind",
+      "region": "Arauna Cerrado",
+      "dex": "Found in Arauna Cerrado, Ventania is known as the Wind POKéMON. It carries a distinct Flying/Dragon affinity."
+    },
+    {
+      "id": 342,
+      "category": "Earth",
+      "region": "Arauna Plateaus",
+      "dex": "Terraão lives in Arauna Plateaus. This Ground/Rock POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 343,
+      "category": "Fire",
+      "region": "Arauna Highlands",
+      "dex": "Fogaréu, the Fire POKéMON, inhabits Arauna Highlands. Its Fire/Dragon nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 344,
+      "category": "Sea",
+      "region": "Arauna Coast",
+      "dex": "Found in Arauna Coast, Marulho is known as the Sea POKéMON. It carries a distinct Water/Dragon affinity."
+    },
+    {
+      "id": 345,
+      "category": "Dawn",
+      "region": "Arauna Coast",
+      "dex": "Alvorecer lives in Arauna Coast. This Fairy/Fire POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 346,
+      "category": "Twilight",
+      "region": "Arauna Coast",
+      "dex": "Poente, the Twilight POKéMON, inhabits Arauna Coast. Its Dark/Fire nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 347,
+      "category": "Star",
+      "region": "Arauna Highlands",
+      "dex": "Found in Arauna Highlands, Estrelinha is known as the Star POKéMON. It carries a distinct Fairy/Psychic affinity."
+    },
+    {
+      "id": 348,
+      "category": "Divine",
+      "region": "Arauna Highlands",
+      "dex": "Arauanamon lives in Arauna Highlands. This Dragon/Fairy POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 349,
+      "category": "Alarm",
+      "region": "Arauna Cerrado",
+      "dex": "Aracuã, the Alarm POKéMON, inhabits Arauna Cerrado. Its Flying/Normal nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 350,
+      "category": "Howler",
+      "region": "Arauna Amazon",
+      "dex": "Found in Arauna Amazon, Bugio is known as the Howler POKéMON. It carries a distinct Normal/Dark affinity."
+    },
+    {
+      "id": 351,
+      "category": "Parakeet",
+      "region": "Arauna Cerrado",
+      "dex": "Tuim lives in Arauna Cerrado. This Grass POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 352,
+      "category": "Parakeet",
+      "region": "Arauna Cerrado",
+      "dex": "Periquitão, the Parakeet POKéMON, inhabits Arauna Cerrado. Its Grass/Flying nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 353,
+      "category": "Macaw",
+      "region": "Arauna Amazon",
+      "dex": "Found in Arauna Amazon, Ararunão is known as the Macaw POKéMON. It carries a distinct Grass/Flying affinity."
+    },
+    {
+      "id": 354,
+      "category": "Rodent",
+      "region": "Arauna Pampas",
+      "dex": "Preazinho lives in Arauna Pampas. This Normal POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 355,
+      "category": "Capybara",
+      "region": "Arauna Rivers",
+      "dex": "Capivarão, the Capybara POKéMON, inhabits Arauna Rivers. Its Normal/Water nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 356,
+      "category": "Anthill",
+      "region": "Arauna Cerrado",
+      "dex": "Found in Arauna Cerrado, Tamanduí is known as the Anthill POKéMON. It carries a distinct Bug affinity."
+    },
+    {
+      "id": 357,
+      "category": "Anthill",
+      "region": "Arauna Cerrado",
+      "dex": "Tamanduá lives in Arauna Cerrado. This Bug/Ground POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 358,
+      "category": "Devourer",
+      "region": "Arauna Cerrado",
+      "dex": "Tamanduão, the Devourer POKéMON, inhabits Arauna Cerrado. Its Bug/Ground nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 359,
+      "category": "Slow",
+      "region": "Arauna Amazon",
+      "dex": "Found in Arauna Amazon, Preguicinha is known as the Slow POKéMON. It carries a distinct Grass affinity."
+    },
+    {
+      "id": 360,
+      "category": "Zen",
+      "region": "Arauna Amazon",
+      "dex": "Preguiçoso lives in Arauna Amazon. This Grass/Psychic POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 361,
+      "category": "Hummingbird",
+      "region": "Arauna Cerrado",
+      "dex": "Beija-Flor, the Hummingbird POKéMON, inhabits Arauna Cerrado. Its Fairy/Flying nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 362,
+      "category": "Hummingbird",
+      "region": "Arauna Cerrado",
+      "dex": "Found in Arauna Cerrado, Beija-Luz is known as the Hummingbird POKéMON. It carries a distinct Fairy/Fire affinity."
+    },
+    {
+      "id": 363,
+      "category": "Sun",
+      "region": "Arauna Highlands",
+      "dex": "Beija-Sol lives in Arauna Highlands. This Fairy/Fire POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 364,
+      "category": "Curly-Hair",
+      "region": "Arauna Coast",
+      "dex": "Sarará, the Curly-Hair POKéMON, inhabits Arauna Coast. Its Fairy/Water nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 365,
+      "category": "Capoeira",
+      "region": "Arauna Cities",
+      "dex": "Found in Arauna Cities, Cambota is known as the Capoeira POKéMON. It carries a distinct Fighting/Normal affinity."
+    },
+    {
+      "id": 366,
+      "category": "Instrument",
+      "region": "Arauna Cities",
+      "dex": "Berimbau lives in Arauna Cities. This Fairy/Fighting POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 367,
+      "category": "Drum",
+      "region": "Arauna Cities",
+      "dex": "Atabaque, the Drum POKéMON, inhabits Arauna Cities. Its Fighting/Ground nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 368,
+      "category": "Rhythm",
+      "region": "Arauna Cities",
+      "dex": "Found in Arauna Cities, Pandeirim is known as the Rhythm POKéMON. It carries a distinct Fairy/Normal affinity."
+    },
+    {
+      "id": 369,
+      "category": "Bellows",
+      "region": "Arauna Backlands",
+      "dex": "Sanfoninha lives in Arauna Backlands. This Normal/Fairy POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 370,
+      "category": "Viola",
+      "region": "Arauna Backlands",
+      "dex": "Violeiro, the Viola POKéMON, inhabits Arauna Backlands. Its Grass/Fairy nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 371,
+      "category": "Forro",
+      "region": "Arauna Backlands",
+      "dex": "Found in Arauna Backlands, Zabumba is known as the Forro POKéMON. It carries a distinct Ground/Fighting affinity."
+    },
+    {
+      "id": 372,
+      "category": "Poet",
+      "region": "Arauna Backlands",
+      "dex": "Cordelim lives in Arauna Backlands. This Psychic/Fairy POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 373,
+      "category": "Lace",
+      "region": "Arauna Coast",
+      "dex": "Rendeira, the Lace POKéMON, inhabits Arauna Coast. Its Fairy/Bug nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 374,
+      "category": "Fish",
+      "region": "Arauna Rivers",
+      "dex": "Found in Arauna Rivers, Escamoso is known as the Fish POKéMON. It carries a distinct Water/Dark affinity."
+    },
+    {
+      "id": 375,
+      "category": "Schooling",
+      "region": "Arauna Rivers",
+      "dex": "Piranhita lives in Arauna Rivers. This Water/Dark POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 376,
+      "category": "Serpent",
+      "region": "Arauna Cerrado",
+      "dex": "Boitatã, the Serpent POKéMON, inhabits Arauna Cerrado. Its Fire/Dragon nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 377,
+      "category": "River",
+      "region": "Arauna Amazon",
+      "dex": "Found in Arauna Amazon, Piraruaçu is known as the River POKéMON. It carries a distinct Water/Dragon affinity."
+    },
+    {
+      "id": 378,
+      "category": "Guardian",
+      "region": "Arauna Amazon",
+      "dex": "Mata-Mata lives in Arauna Amazon. This Grass/Dragon POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 379,
+      "category": "Celestial",
+      "region": "Arauna Highlands",
+      "dex": "Solaris, the Celestial POKéMON, inhabits Arauna Highlands. Its Fire/Psychic nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 380,
+      "category": "Celestial",
+      "region": "Arauna Highlands",
+      "dex": "Found in Arauna Highlands, Selenê is known as the Celestial POKéMON. It carries a distinct Dark/Psychic affinity."
+    },
+    {
+      "id": 381,
+      "category": "Quilombo",
+      "region": "Arauna Cities",
+      "dex": "Zumbi-Rei lives in Arauna Cities. This Fighting/Dark POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 382,
+      "category": "Queen",
+      "region": "Arauna Coast",
+      "dex": "Iemanjã, the Queen POKéMON, inhabits Arauna Coast. Its Water/Fairy nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 383,
+      "category": "Rainbow",
+      "region": "Arauna Coast",
+      "dex": "Found in Arauna Coast, Oxumará is known as the Rainbow POKéMON. It carries a distinct Dragon/Fairy affinity."
+    },
+    {
+      "id": 384,
+      "category": "Mythical",
+      "region": "Arauna Amazon",
+      "dex": "Curupixel lives in Arauna Amazon. This Grass/Fairy POKéMON embodies a part of Brazil's nature, folklore, or culture."
+    },
+    {
+      "id": 385,
+      "category": "Mythical",
+      "region": "Arauna Cerrado",
+      "dex": "Sacinho, the Mythical POKéMON, inhabits Arauna Cerrado. Its Dark/Fairy nature reflects Brazil's wildlife and legends."
+    },
+    {
+      "id": 386,
+      "category": "Origin",
+      "region": "Arauna Highlands",
+      "dex": "Found in Arauna Highlands, Arauá is known as the Origin POKéMON. It carries a distinct Dragon/Psychic affinity."
+    }
+  ]
+}
