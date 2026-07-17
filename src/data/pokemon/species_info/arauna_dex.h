@@ -54,7 +54,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Torchic)
-        .levelUpLearnset = sTorchicLevelUpLearnset,
+        .levelUpLearnset = sArauna001LevelUpLearnset,
         .teachableLearnset = sTorchicTeachableLearnset,
         .eggMoveLearnset = sTorchicEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 17, SPECIES_COMBUSKEN}),
@@ -114,7 +114,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Combusken)
-        .levelUpLearnset = sCombuskenLevelUpLearnset,
+        .levelUpLearnset = sArauna002LevelUpLearnset,
         .teachableLearnset = sCombuskenTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_BLAZIKEN}),
@@ -174,7 +174,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Blaziken)
-        .levelUpLearnset = sBlazikenLevelUpLearnset,
+        .levelUpLearnset = sArauna003LevelUpLearnset,
         .teachableLearnset = sBlazikenTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -233,7 +233,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Mudkip)
-        .levelUpLearnset = sMudkipLevelUpLearnset,
+        .levelUpLearnset = sArauna004LevelUpLearnset,
         .teachableLearnset = sMudkipTeachableLearnset,
         .eggMoveLearnset = sMudkipEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 17, SPECIES_MARSHTOMP}),
@@ -293,7 +293,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Marshtomp)
-        .levelUpLearnset = sMarshtompLevelUpLearnset,
+        .levelUpLearnset = sArauna005LevelUpLearnset,
         .teachableLearnset = sMarshtompTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_SWAMPERT}),
@@ -353,7 +353,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Swampert)
-        .levelUpLearnset = sSwampertLevelUpLearnset,
+        .levelUpLearnset = sArauna006LevelUpLearnset,
         .teachableLearnset = sSwampertTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -412,7 +412,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Treecko)
-        .levelUpLearnset = sTreeckoLevelUpLearnset,
+        .levelUpLearnset = sArauna007LevelUpLearnset,
         .teachableLearnset = sTreeckoTeachableLearnset,
         .eggMoveLearnset = sTreeckoEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 17, SPECIES_GROVYLE}),
@@ -472,7 +472,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Grovyle)
-        .levelUpLearnset = sGrovyleLevelUpLearnset,
+        .levelUpLearnset = sArauna008LevelUpLearnset,
         .teachableLearnset = sGrovyleTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_SCEPTILE}),
@@ -532,7 +532,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Sceptile)
-        .levelUpLearnset = sSceptileLevelUpLearnset,
+        .levelUpLearnset = sArauna009LevelUpLearnset,
         .teachableLearnset = sSceptileTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -591,7 +591,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Bulbasaur)
-        .levelUpLearnset = sBulbasaurLevelUpLearnset,
+        .levelUpLearnset = sArauna010LevelUpLearnset,
         .teachableLearnset = sBulbasaurTeachableLearnset,
         .eggMoveLearnset = sBulbasaurEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 15, SPECIES_IVYSAUR}),
@@ -650,7 +650,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Ivysaur)
-        .levelUpLearnset = sIvysaurLevelUpLearnset,
+        .levelUpLearnset = sArauna011LevelUpLearnset,
         .teachableLearnset = sIvysaurTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -708,7 +708,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Venusaur)
-        .levelUpLearnset = sVenusaurLevelUpLearnset,
+        .levelUpLearnset = sArauna012LevelUpLearnset,
         .teachableLearnset = sVenusaurTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -767,7 +767,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Charmander)
-        .levelUpLearnset = sCharmanderLevelUpLearnset,
+        .levelUpLearnset = sArauna013LevelUpLearnset,
         .teachableLearnset = sCharmanderTeachableLearnset,
         .eggMoveLearnset = sCharmanderEggMoveLearnset,
     },
@@ -826,7 +826,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Charmeleon)
-        .levelUpLearnset = sCharmeleonLevelUpLearnset,
+        .levelUpLearnset = sArauna014LevelUpLearnset,
         .teachableLearnset = sCharmeleonTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_CHARIZARD}),
@@ -886,7 +886,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Charizard)
-        .levelUpLearnset = sCharizardLevelUpLearnset,
+        .levelUpLearnset = sArauna015LevelUpLearnset,
         .teachableLearnset = sCharizardTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -945,7 +945,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Squirtle)
-        .levelUpLearnset = sSquirtleLevelUpLearnset,
+        .levelUpLearnset = sArauna016LevelUpLearnset,
         .teachableLearnset = sSquirtleTeachableLearnset,
         .eggMoveLearnset = sSquirtleEggMoveLearnset,
     },
@@ -1003,7 +1003,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Wartortle)
-        .levelUpLearnset = sWartortleLevelUpLearnset,
+        .levelUpLearnset = sArauna017LevelUpLearnset,
         .teachableLearnset = sWartortleTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_BLASTOISE}),
@@ -1062,7 +1062,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Blastoise)
-        .levelUpLearnset = sBlastoiseLevelUpLearnset,
+        .levelUpLearnset = sArauna018LevelUpLearnset,
         .teachableLearnset = sBlastoiseTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -1120,7 +1120,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Caterpie)
-        .levelUpLearnset = sCaterpieLevelUpLearnset,
+        .levelUpLearnset = sArauna019LevelUpLearnset,
         .teachableLearnset = sCaterpieTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -1179,7 +1179,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Metapod)
-        .levelUpLearnset = sMetapodLevelUpLearnset,
+        .levelUpLearnset = sArauna020LevelUpLearnset,
         .teachableLearnset = sMetapodTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -1238,7 +1238,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Butterfree)
-        .levelUpLearnset = sButterfreeLevelUpLearnset,
+        .levelUpLearnset = sArauna021LevelUpLearnset,
         .teachableLearnset = sButterfreeTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -1297,7 +1297,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Weedle)
-        .levelUpLearnset = sWeedleLevelUpLearnset,
+        .levelUpLearnset = sArauna022LevelUpLearnset,
         .teachableLearnset = sWeedleTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -1355,7 +1355,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Kakuna)
-        .levelUpLearnset = sKakunaLevelUpLearnset,
+        .levelUpLearnset = sArauna023LevelUpLearnset,
         .teachableLearnset = sKakunaTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -1414,7 +1414,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Beedrill)
-        .levelUpLearnset = sBeedrillLevelUpLearnset,
+        .levelUpLearnset = sArauna024LevelUpLearnset,
         .teachableLearnset = sBeedrillTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -1473,7 +1473,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Pidgey)
-        .levelUpLearnset = sPidgeyLevelUpLearnset,
+        .levelUpLearnset = sArauna025LevelUpLearnset,
         .teachableLearnset = sPidgeyTeachableLearnset,
         .eggMoveLearnset = sPidgeyEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_PIDGEOTTO}),
@@ -1533,7 +1533,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Pidgeotto)
-        .levelUpLearnset = sPidgeottoLevelUpLearnset,
+        .levelUpLearnset = sArauna026LevelUpLearnset,
         .teachableLearnset = sPidgeottoTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_PIDGEOT}),
@@ -1593,7 +1593,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Pidgeot)
-        .levelUpLearnset = sPidgeotLevelUpLearnset,
+        .levelUpLearnset = sArauna027LevelUpLearnset,
         .teachableLearnset = sPidgeotTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -1652,7 +1652,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Rattata)
-        .levelUpLearnset = sRattataLevelUpLearnset,
+        .levelUpLearnset = sArauna028LevelUpLearnset,
         .teachableLearnset = sRattataTeachableLearnset,
         .eggMoveLearnset = sRattataEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_RATICATE}),
@@ -1712,7 +1712,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Raticate)
-        .levelUpLearnset = sRaticateLevelUpLearnset,
+        .levelUpLearnset = sArauna029LevelUpLearnset,
         .teachableLearnset = sRaticateTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_SPEAROW}),
@@ -1772,7 +1772,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Spearow)
-        .levelUpLearnset = sSpearowLevelUpLearnset,
+        .levelUpLearnset = sArauna030LevelUpLearnset,
         .teachableLearnset = sSpearowTeachableLearnset,
         .eggMoveLearnset = sSpearowEggMoveLearnset,
     },
@@ -1831,7 +1831,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Fearow)
-        .levelUpLearnset = sFearowLevelUpLearnset,
+        .levelUpLearnset = sArauna031LevelUpLearnset,
         .teachableLearnset = sFearowTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_EKANS}),
@@ -1891,7 +1891,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Ekans)
-        .levelUpLearnset = sEkansLevelUpLearnset,
+        .levelUpLearnset = sArauna032LevelUpLearnset,
         .teachableLearnset = sEkansTeachableLearnset,
         .eggMoveLearnset = sEkansEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_ARBOK}),
@@ -1951,7 +1951,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Arbok)
-        .levelUpLearnset = sArbokLevelUpLearnset,
+        .levelUpLearnset = sArauna033LevelUpLearnset,
         .teachableLearnset = sArbokTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -2010,7 +2010,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Pikachu)
-        .levelUpLearnset = sPikachuLevelUpLearnset,
+        .levelUpLearnset = sArauna034LevelUpLearnset,
         .teachableLearnset = sPikachuTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_RAICHU}),
@@ -2070,7 +2070,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Raichu)
-        .levelUpLearnset = sRaichuLevelUpLearnset,
+        .levelUpLearnset = sArauna035LevelUpLearnset,
         .teachableLearnset = sRaichuTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_SANDSHREW}),
@@ -2130,7 +2130,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Sandshrew)
-        .levelUpLearnset = sSandshrewLevelUpLearnset,
+        .levelUpLearnset = sArauna036LevelUpLearnset,
         .teachableLearnset = sSandshrewTeachableLearnset,
         .eggMoveLearnset = sSandshrewEggMoveLearnset,
     },
@@ -2189,7 +2189,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Sandslash)
-        .levelUpLearnset = sSandslashLevelUpLearnset,
+        .levelUpLearnset = sArauna037LevelUpLearnset,
         .teachableLearnset = sSandslashTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_NIDORAN_F}),
@@ -2249,7 +2249,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(NidoranF)
-        .levelUpLearnset = sNidoranFLevelUpLearnset,
+        .levelUpLearnset = sArauna038LevelUpLearnset,
         .teachableLearnset = sNidoranFTeachableLearnset,
         .eggMoveLearnset = sNidoranFEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_NIDORINA}),
@@ -2309,7 +2309,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Nidorina)
-        .levelUpLearnset = sNidorinaLevelUpLearnset,
+        .levelUpLearnset = sArauna039LevelUpLearnset,
         .teachableLearnset = sNidorinaTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -2368,7 +2368,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Nidoqueen)
-        .levelUpLearnset = sNidoqueenLevelUpLearnset,
+        .levelUpLearnset = sArauna040LevelUpLearnset,
         .teachableLearnset = sNidoqueenTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_NIDORAN_M}),
@@ -2428,7 +2428,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(NidoranM)
-        .levelUpLearnset = sNidoranMLevelUpLearnset,
+        .levelUpLearnset = sArauna041LevelUpLearnset,
         .teachableLearnset = sNidoranMTeachableLearnset,
         .eggMoveLearnset = sNidoranMEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_NIDORINO}),
@@ -2488,7 +2488,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Nidorino)
-        .levelUpLearnset = sNidorinoLevelUpLearnset,
+        .levelUpLearnset = sArauna042LevelUpLearnset,
         .teachableLearnset = sNidorinoTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -2547,7 +2547,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Nidoking)
-        .levelUpLearnset = sNidokingLevelUpLearnset,
+        .levelUpLearnset = sArauna043LevelUpLearnset,
         .teachableLearnset = sNidokingTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_CLEFAIRY}),
@@ -2607,7 +2607,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Clefairy)
-        .levelUpLearnset = sClefairyLevelUpLearnset,
+        .levelUpLearnset = sArauna044LevelUpLearnset,
         .teachableLearnset = sClefairyTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -2666,7 +2666,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Clefable)
-        .levelUpLearnset = sClefableLevelUpLearnset,
+        .levelUpLearnset = sArauna045LevelUpLearnset,
         .teachableLearnset = sClefableTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -2725,7 +2725,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Vulpix)
-        .levelUpLearnset = sVulpixLevelUpLearnset,
+        .levelUpLearnset = sArauna046LevelUpLearnset,
         .teachableLearnset = sVulpixTeachableLearnset,
         .eggMoveLearnset = sVulpixEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_NINETALES}),
@@ -2785,7 +2785,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Ninetales)
-        .levelUpLearnset = sNinetalesLevelUpLearnset,
+        .levelUpLearnset = sArauna047LevelUpLearnset,
         .teachableLearnset = sNinetalesTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 55, SPECIES_JIGGLYPUFF}),
@@ -2845,7 +2845,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Jigglypuff)
-        .levelUpLearnset = sJigglypuffLevelUpLearnset,
+        .levelUpLearnset = sArauna048LevelUpLearnset,
         .teachableLearnset = sJigglypuffTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -2904,7 +2904,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Wigglytuff)
-        .levelUpLearnset = sWigglytuffLevelUpLearnset,
+        .levelUpLearnset = sArauna049LevelUpLearnset,
         .teachableLearnset = sWigglytuffTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_ZUBAT}),
@@ -2964,7 +2964,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Zubat)
-        .levelUpLearnset = sZubatLevelUpLearnset,
+        .levelUpLearnset = sArauna050LevelUpLearnset,
         .teachableLearnset = sZubatTeachableLearnset,
         .eggMoveLearnset = sZubatEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_GOLBAT}),
@@ -3024,7 +3024,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Golbat)
-        .levelUpLearnset = sGolbatLevelUpLearnset,
+        .levelUpLearnset = sArauna051LevelUpLearnset,
         .teachableLearnset = sGolbatTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -3083,7 +3083,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Oddish)
-        .levelUpLearnset = sOddishLevelUpLearnset,
+        .levelUpLearnset = sArauna052LevelUpLearnset,
         .teachableLearnset = sOddishTeachableLearnset,
         .eggMoveLearnset = sOddishEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_GLOOM}),
@@ -3143,7 +3143,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Gloom)
-        .levelUpLearnset = sGloomLevelUpLearnset,
+        .levelUpLearnset = sArauna053LevelUpLearnset,
         .teachableLearnset = sGloomTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -3202,7 +3202,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Vileplume)
-        .levelUpLearnset = sVileplumeLevelUpLearnset,
+        .levelUpLearnset = sArauna054LevelUpLearnset,
         .teachableLearnset = sVileplumeTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -3261,7 +3261,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Paras)
-        .levelUpLearnset = sParasLevelUpLearnset,
+        .levelUpLearnset = sArauna055LevelUpLearnset,
         .teachableLearnset = sParasTeachableLearnset,
         .eggMoveLearnset = sParasEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_PARASECT}),
@@ -3320,7 +3320,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Parasect)
-        .levelUpLearnset = sParasectLevelUpLearnset,
+        .levelUpLearnset = sArauna056LevelUpLearnset,
         .teachableLearnset = sParasectTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -3379,7 +3379,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Venonat)
-        .levelUpLearnset = sVenonatLevelUpLearnset,
+        .levelUpLearnset = sArauna057LevelUpLearnset,
         .teachableLearnset = sVenonatTeachableLearnset,
         .eggMoveLearnset = sVenonatEggMoveLearnset,
     },
@@ -3438,7 +3438,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Venomoth)
-        .levelUpLearnset = sVenomothLevelUpLearnset,
+        .levelUpLearnset = sArauna058LevelUpLearnset,
         .teachableLearnset = sVenomothTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_DIGLETT}),
@@ -3498,7 +3498,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Diglett)
-        .levelUpLearnset = sDiglettLevelUpLearnset,
+        .levelUpLearnset = sArauna059LevelUpLearnset,
         .teachableLearnset = sDiglettTeachableLearnset,
         .eggMoveLearnset = sDiglettEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_DUGTRIO}),
@@ -3558,7 +3558,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Dugtrio)
-        .levelUpLearnset = sDugtrioLevelUpLearnset,
+        .levelUpLearnset = sArauna060LevelUpLearnset,
         .teachableLearnset = sDugtrioTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -3617,7 +3617,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Meowth)
-        .levelUpLearnset = sMeowthLevelUpLearnset,
+        .levelUpLearnset = sArauna061LevelUpLearnset,
         .teachableLearnset = sMeowthTeachableLearnset,
         .eggMoveLearnset = sMeowthEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_PERSIAN}),
@@ -3677,7 +3677,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Persian)
-        .levelUpLearnset = sPersianLevelUpLearnset,
+        .levelUpLearnset = sArauna062LevelUpLearnset,
         .teachableLearnset = sPersianTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_PSYDUCK}),
@@ -3737,7 +3737,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Psyduck)
-        .levelUpLearnset = sPsyduckLevelUpLearnset,
+        .levelUpLearnset = sArauna063LevelUpLearnset,
         .teachableLearnset = sPsyduckTeachableLearnset,
         .eggMoveLearnset = sPsyduckEggMoveLearnset,
     },
@@ -3796,7 +3796,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Golduck)
-        .levelUpLearnset = sGolduckLevelUpLearnset,
+        .levelUpLearnset = sArauna064LevelUpLearnset,
         .teachableLearnset = sGolduckTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_MANKEY}),
@@ -3856,7 +3856,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Mankey)
-        .levelUpLearnset = sMankeyLevelUpLearnset,
+        .levelUpLearnset = sArauna065LevelUpLearnset,
         .teachableLearnset = sMankeyTeachableLearnset,
         .eggMoveLearnset = sMankeyEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_PRIMEAPE}),
@@ -3916,7 +3916,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Primeape)
-        .levelUpLearnset = sPrimeapeLevelUpLearnset,
+        .levelUpLearnset = sArauna066LevelUpLearnset,
         .teachableLearnset = sPrimeapeTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -3975,7 +3975,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Growlithe)
-        .levelUpLearnset = sGrowlitheLevelUpLearnset,
+        .levelUpLearnset = sArauna067LevelUpLearnset,
         .teachableLearnset = sGrowlitheTeachableLearnset,
         .eggMoveLearnset = sGrowlitheEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_ARCANINE}),
@@ -4035,7 +4035,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Arcanine)
-        .levelUpLearnset = sArcanineLevelUpLearnset,
+        .levelUpLearnset = sArauna068LevelUpLearnset,
         .teachableLearnset = sArcanineTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -4094,7 +4094,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Poliwag)
-        .levelUpLearnset = sPoliwagLevelUpLearnset,
+        .levelUpLearnset = sArauna069LevelUpLearnset,
         .teachableLearnset = sPoliwagTeachableLearnset,
         .eggMoveLearnset = sPoliwagEggMoveLearnset,
     },
@@ -4153,7 +4153,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Poliwhirl)
-        .levelUpLearnset = sPoliwhirlLevelUpLearnset,
+        .levelUpLearnset = sArauna070LevelUpLearnset,
         .teachableLearnset = sPoliwhirlTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_POLIWRATH}),
@@ -4213,7 +4213,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Poliwrath)
-        .levelUpLearnset = sPoliwrathLevelUpLearnset,
+        .levelUpLearnset = sArauna071LevelUpLearnset,
         .teachableLearnset = sPoliwrathTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -4272,7 +4272,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Abra)
-        .levelUpLearnset = sAbraLevelUpLearnset,
+        .levelUpLearnset = sArauna072LevelUpLearnset,
         .teachableLearnset = sAbraTeachableLearnset,
         .eggMoveLearnset = sAbraEggMoveLearnset,
     },
@@ -4331,7 +4331,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Kadabra)
-        .levelUpLearnset = sKadabraLevelUpLearnset,
+        .levelUpLearnset = sArauna073LevelUpLearnset,
         .teachableLearnset = sKadabraTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -4390,7 +4390,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Alakazam)
-        .levelUpLearnset = sAlakazamLevelUpLearnset,
+        .levelUpLearnset = sArauna074LevelUpLearnset,
         .teachableLearnset = sAlakazamTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -4449,7 +4449,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Machop)
-        .levelUpLearnset = sMachopLevelUpLearnset,
+        .levelUpLearnset = sArauna075LevelUpLearnset,
         .teachableLearnset = sMachopTeachableLearnset,
         .eggMoveLearnset = sMachopEggMoveLearnset,
     },
@@ -4508,7 +4508,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Machoke)
-        .levelUpLearnset = sMachokeLevelUpLearnset,
+        .levelUpLearnset = sArauna076LevelUpLearnset,
         .teachableLearnset = sMachokeTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_MACHAMP}),
@@ -4568,7 +4568,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Machamp)
-        .levelUpLearnset = sMachampLevelUpLearnset,
+        .levelUpLearnset = sArauna077LevelUpLearnset,
         .teachableLearnset = sMachampTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -4627,7 +4627,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Bellsprout)
-        .levelUpLearnset = sBellsproutLevelUpLearnset,
+        .levelUpLearnset = sArauna078LevelUpLearnset,
         .teachableLearnset = sBellsproutTeachableLearnset,
         .eggMoveLearnset = sBellsproutEggMoveLearnset,
     },
@@ -4686,7 +4686,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Weepinbell)
-        .levelUpLearnset = sWeepinbellLevelUpLearnset,
+        .levelUpLearnset = sArauna079LevelUpLearnset,
         .teachableLearnset = sWeepinbellTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_VICTREEBEL}),
@@ -4746,7 +4746,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Victreebel)
-        .levelUpLearnset = sVictreebelLevelUpLearnset,
+        .levelUpLearnset = sArauna080LevelUpLearnset,
         .teachableLearnset = sVictreebelTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -4805,7 +4805,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Tentacool)
-        .levelUpLearnset = sTentacoolLevelUpLearnset,
+        .levelUpLearnset = sArauna081LevelUpLearnset,
         .teachableLearnset = sTentacoolTeachableLearnset,
         .eggMoveLearnset = sTentacoolEggMoveLearnset,
     },
@@ -4864,7 +4864,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Tentacruel)
-        .levelUpLearnset = sTentacruelLevelUpLearnset,
+        .levelUpLearnset = sArauna082LevelUpLearnset,
         .teachableLearnset = sTentacruelTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_GEODUDE}),
@@ -4924,7 +4924,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Geodude)
-        .levelUpLearnset = sGeodudeLevelUpLearnset,
+        .levelUpLearnset = sArauna083LevelUpLearnset,
         .teachableLearnset = sGeodudeTeachableLearnset,
         .eggMoveLearnset = sGeodudeEggMoveLearnset,
     },
@@ -4983,7 +4983,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Graveler)
-        .levelUpLearnset = sGravelerLevelUpLearnset,
+        .levelUpLearnset = sArauna084LevelUpLearnset,
         .teachableLearnset = sGravelerTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -5042,7 +5042,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Golem)
-        .levelUpLearnset = sGolemLevelUpLearnset,
+        .levelUpLearnset = sArauna085LevelUpLearnset,
         .teachableLearnset = sGolemTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_PONYTA}),
@@ -5102,7 +5102,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Ponyta)
-        .levelUpLearnset = sPonytaLevelUpLearnset,
+        .levelUpLearnset = sArauna086LevelUpLearnset,
         .teachableLearnset = sPonytaTeachableLearnset,
         .eggMoveLearnset = sPonytaEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_RAPIDASH}),
@@ -5162,7 +5162,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Rapidash)
-        .levelUpLearnset = sRapidashLevelUpLearnset,
+        .levelUpLearnset = sArauna087LevelUpLearnset,
         .teachableLearnset = sRapidashTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -5221,7 +5221,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Slowpoke)
-        .levelUpLearnset = sSlowpokeLevelUpLearnset,
+        .levelUpLearnset = sArauna088LevelUpLearnset,
         .teachableLearnset = sSlowpokeTeachableLearnset,
         .eggMoveLearnset = sSlowpokeEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_SLOWBRO}),
@@ -5281,7 +5281,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Slowbro)
-        .levelUpLearnset = sSlowbroLevelUpLearnset,
+        .levelUpLearnset = sArauna089LevelUpLearnset,
         .teachableLearnset = sSlowbroTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -5340,7 +5340,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Magnemite)
-        .levelUpLearnset = sMagnemiteLevelUpLearnset,
+        .levelUpLearnset = sArauna090LevelUpLearnset,
         .teachableLearnset = sMagnemiteTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -5399,7 +5399,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Magneton)
-        .levelUpLearnset = sMagnetonLevelUpLearnset,
+        .levelUpLearnset = sArauna091LevelUpLearnset,
         .teachableLearnset = sMagnetonTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_FARFETCHD}),
@@ -5459,7 +5459,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Farfetchd)
-        .levelUpLearnset = sFarfetchdLevelUpLearnset,
+        .levelUpLearnset = sArauna092LevelUpLearnset,
         .teachableLearnset = sFarfetchdTeachableLearnset,
         .eggMoveLearnset = sFarfetchdEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_DODUO}),
@@ -5519,7 +5519,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Doduo)
-        .levelUpLearnset = sDoduoLevelUpLearnset,
+        .levelUpLearnset = sArauna093LevelUpLearnset,
         .teachableLearnset = sDoduoTeachableLearnset,
         .eggMoveLearnset = sDoduoEggMoveLearnset,
     },
@@ -5578,7 +5578,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Dodrio)
-        .levelUpLearnset = sDodrioLevelUpLearnset,
+        .levelUpLearnset = sArauna094LevelUpLearnset,
         .teachableLearnset = sDodrioTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_SEEL}),
@@ -5638,7 +5638,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Seel)
-        .levelUpLearnset = sSeelLevelUpLearnset,
+        .levelUpLearnset = sArauna095LevelUpLearnset,
         .teachableLearnset = sSeelTeachableLearnset,
         .eggMoveLearnset = sSeelEggMoveLearnset,
     },
@@ -5697,7 +5697,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Dewgong)
-        .levelUpLearnset = sDewgongLevelUpLearnset,
+        .levelUpLearnset = sArauna096LevelUpLearnset,
         .teachableLearnset = sDewgongTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -5756,7 +5756,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Grimer)
-        .levelUpLearnset = sGrimerLevelUpLearnset,
+        .levelUpLearnset = sArauna097LevelUpLearnset,
         .teachableLearnset = sGrimerTeachableLearnset,
         .eggMoveLearnset = sGrimerEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_MUK}),
@@ -5816,7 +5816,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Muk)
-        .levelUpLearnset = sMukLevelUpLearnset,
+        .levelUpLearnset = sArauna098LevelUpLearnset,
         .teachableLearnset = sMukTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_SHELLDER}),
@@ -5876,7 +5876,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Shellder)
-        .levelUpLearnset = sShellderLevelUpLearnset,
+        .levelUpLearnset = sArauna099LevelUpLearnset,
         .teachableLearnset = sShellderTeachableLearnset,
         .eggMoveLearnset = sShellderEggMoveLearnset,
     },
@@ -5935,7 +5935,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Cloyster)
-        .levelUpLearnset = sCloysterLevelUpLearnset,
+        .levelUpLearnset = sArauna100LevelUpLearnset,
         .teachableLearnset = sCloysterTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -5993,7 +5993,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Gastly)
-        .levelUpLearnset = sGastlyLevelUpLearnset,
+        .levelUpLearnset = sArauna101LevelUpLearnset,
         .teachableLearnset = sGastlyTeachableLearnset,
         .eggMoveLearnset = sGastlyEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_HAUNTER}),
@@ -6053,7 +6053,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Haunter)
-        .levelUpLearnset = sHaunterLevelUpLearnset,
+        .levelUpLearnset = sArauna102LevelUpLearnset,
         .teachableLearnset = sHaunterTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -6112,7 +6112,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Gengar)
-        .levelUpLearnset = sGengarLevelUpLearnset,
+        .levelUpLearnset = sArauna103LevelUpLearnset,
         .teachableLearnset = sGengarTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -6170,7 +6170,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Onix)
-        .levelUpLearnset = sOnixLevelUpLearnset,
+        .levelUpLearnset = sArauna104LevelUpLearnset,
         .teachableLearnset = sOnixTeachableLearnset,
         .eggMoveLearnset = sOnixEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_DROWZEE}),
@@ -6230,7 +6230,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Drowzee)
-        .levelUpLearnset = sDrowzeeLevelUpLearnset,
+        .levelUpLearnset = sArauna105LevelUpLearnset,
         .teachableLearnset = sDrowzeeTeachableLearnset,
         .eggMoveLearnset = sDrowzeeEggMoveLearnset,
     },
@@ -6289,7 +6289,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Hypno)
-        .levelUpLearnset = sHypnoLevelUpLearnset,
+        .levelUpLearnset = sArauna106LevelUpLearnset,
         .teachableLearnset = sHypnoTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -6348,7 +6348,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Krabby)
-        .levelUpLearnset = sKrabbyLevelUpLearnset,
+        .levelUpLearnset = sArauna107LevelUpLearnset,
         .teachableLearnset = sKrabbyTeachableLearnset,
         .eggMoveLearnset = sKrabbyEggMoveLearnset,
     },
@@ -6407,7 +6407,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Kingler)
-        .levelUpLearnset = sKinglerLevelUpLearnset,
+        .levelUpLearnset = sArauna108LevelUpLearnset,
         .teachableLearnset = sKinglerTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -6466,7 +6466,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Voltorb)
-        .levelUpLearnset = sVoltorbLevelUpLearnset,
+        .levelUpLearnset = sArauna109LevelUpLearnset,
         .teachableLearnset = sVoltorbTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -6525,7 +6525,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Electrode)
-        .levelUpLearnset = sElectrodeLevelUpLearnset,
+        .levelUpLearnset = sArauna110LevelUpLearnset,
         .teachableLearnset = sElectrodeTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -6584,7 +6584,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Exeggcute)
-        .levelUpLearnset = sExeggcuteLevelUpLearnset,
+        .levelUpLearnset = sArauna111LevelUpLearnset,
         .teachableLearnset = sExeggcuteTeachableLearnset,
         .eggMoveLearnset = sExeggcuteEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_EXEGGUTOR}),
@@ -6644,7 +6644,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Exeggutor)
-        .levelUpLearnset = sExeggutorLevelUpLearnset,
+        .levelUpLearnset = sArauna112LevelUpLearnset,
         .teachableLearnset = sExeggutorTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -6702,7 +6702,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Cubone)
-        .levelUpLearnset = sCuboneLevelUpLearnset,
+        .levelUpLearnset = sArauna113LevelUpLearnset,
         .teachableLearnset = sCuboneTeachableLearnset,
         .eggMoveLearnset = sCuboneEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_MAROWAK}),
@@ -6762,7 +6762,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Marowak)
-        .levelUpLearnset = sMarowakLevelUpLearnset,
+        .levelUpLearnset = sArauna114LevelUpLearnset,
         .teachableLearnset = sMarowakTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -6821,7 +6821,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Hitmonlee)
-        .levelUpLearnset = sHitmonleeLevelUpLearnset,
+        .levelUpLearnset = sArauna115LevelUpLearnset,
         .teachableLearnset = sHitmonleeTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -6880,7 +6880,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Hitmonchan)
-        .levelUpLearnset = sHitmonchanLevelUpLearnset,
+        .levelUpLearnset = sArauna116LevelUpLearnset,
         .teachableLearnset = sHitmonchanTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -6939,7 +6939,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Lickitung)
-        .levelUpLearnset = sLickitungLevelUpLearnset,
+        .levelUpLearnset = sArauna117LevelUpLearnset,
         .teachableLearnset = sLickitungTeachableLearnset,
         .eggMoveLearnset = sLickitungEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_KOFFING}),
@@ -6999,7 +6999,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Koffing)
-        .levelUpLearnset = sKoffingLevelUpLearnset,
+        .levelUpLearnset = sArauna118LevelUpLearnset,
         .teachableLearnset = sKoffingTeachableLearnset,
         .eggMoveLearnset = sKoffingEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_WEEZING}),
@@ -7059,7 +7059,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Weezing)
-        .levelUpLearnset = sWeezingLevelUpLearnset,
+        .levelUpLearnset = sArauna119LevelUpLearnset,
         .teachableLearnset = sWeezingTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -7118,7 +7118,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Rhyhorn)
-        .levelUpLearnset = sRhyhornLevelUpLearnset,
+        .levelUpLearnset = sArauna120LevelUpLearnset,
         .teachableLearnset = sRhyhornTeachableLearnset,
         .eggMoveLearnset = sRhyhornEggMoveLearnset,
     },
@@ -7177,7 +7177,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Rhydon)
-        .levelUpLearnset = sRhydonLevelUpLearnset,
+        .levelUpLearnset = sArauna121LevelUpLearnset,
         .teachableLearnset = sRhydonTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_CHANSEY}),
@@ -7237,7 +7237,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Chansey)
-        .levelUpLearnset = sChanseyLevelUpLearnset,
+        .levelUpLearnset = sArauna122LevelUpLearnset,
         .teachableLearnset = sChanseyTeachableLearnset,
         .eggMoveLearnset = sChanseyEggMoveLearnset,
     },
@@ -7296,7 +7296,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Tangela)
-        .levelUpLearnset = sTangelaLevelUpLearnset,
+        .levelUpLearnset = sArauna123LevelUpLearnset,
         .teachableLearnset = sTangelaTeachableLearnset,
         .eggMoveLearnset = sTangelaEggMoveLearnset,
     },
@@ -7355,7 +7355,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Kangaskhan)
-        .levelUpLearnset = sKangaskhanLevelUpLearnset,
+        .levelUpLearnset = sArauna124LevelUpLearnset,
         .teachableLearnset = sKangaskhanTeachableLearnset,
         .eggMoveLearnset = sKangaskhanEggMoveLearnset,
     },
@@ -7414,7 +7414,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Horsea)
-        .levelUpLearnset = sHorseaLevelUpLearnset,
+        .levelUpLearnset = sArauna125LevelUpLearnset,
         .teachableLearnset = sHorseaTeachableLearnset,
         .eggMoveLearnset = sHorseaEggMoveLearnset,
     },
@@ -7473,7 +7473,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Seadra)
-        .levelUpLearnset = sSeadraLevelUpLearnset,
+        .levelUpLearnset = sArauna126LevelUpLearnset,
         .teachableLearnset = sSeadraTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -7532,7 +7532,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Goldeen)
-        .levelUpLearnset = sGoldeenLevelUpLearnset,
+        .levelUpLearnset = sArauna127LevelUpLearnset,
         .teachableLearnset = sGoldeenTeachableLearnset,
         .eggMoveLearnset = sGoldeenEggMoveLearnset,
     },
@@ -7591,7 +7591,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Seaking)
-        .levelUpLearnset = sSeakingLevelUpLearnset,
+        .levelUpLearnset = sArauna128LevelUpLearnset,
         .teachableLearnset = sSeakingTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -7650,7 +7650,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Staryu)
-        .levelUpLearnset = sStaryuLevelUpLearnset,
+        .levelUpLearnset = sArauna129LevelUpLearnset,
         .teachableLearnset = sStaryuTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -7709,7 +7709,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Starmie)
-        .levelUpLearnset = sStarmieLevelUpLearnset,
+        .levelUpLearnset = sArauna130LevelUpLearnset,
         .teachableLearnset = sStarmieTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -7768,7 +7768,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(MrMime)
-        .levelUpLearnset = sMrMimeLevelUpLearnset,
+        .levelUpLearnset = sArauna131LevelUpLearnset,
         .teachableLearnset = sMrMimeTeachableLearnset,
         .eggMoveLearnset = sMrMimeEggMoveLearnset,
     },
@@ -7827,7 +7827,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Scyther)
-        .levelUpLearnset = sScytherLevelUpLearnset,
+        .levelUpLearnset = sArauna132LevelUpLearnset,
         .teachableLearnset = sScytherTeachableLearnset,
         .eggMoveLearnset = sScytherEggMoveLearnset,
     },
@@ -7886,7 +7886,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Jynx)
-        .levelUpLearnset = sJynxLevelUpLearnset,
+        .levelUpLearnset = sArauna133LevelUpLearnset,
         .teachableLearnset = sJynxTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -7945,7 +7945,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Electabuzz)
-        .levelUpLearnset = sElectabuzzLevelUpLearnset,
+        .levelUpLearnset = sArauna134LevelUpLearnset,
         .teachableLearnset = sElectabuzzTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -8004,7 +8004,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Magmar)
-        .levelUpLearnset = sMagmarLevelUpLearnset,
+        .levelUpLearnset = sArauna135LevelUpLearnset,
         .teachableLearnset = sMagmarTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -8063,7 +8063,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Pinsir)
-        .levelUpLearnset = sPinsirLevelUpLearnset,
+        .levelUpLearnset = sArauna136LevelUpLearnset,
         .teachableLearnset = sPinsirTeachableLearnset,
         .eggMoveLearnset = sPinsirEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_TAUROS}),
@@ -8123,7 +8123,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Tauros)
-        .levelUpLearnset = sTaurosLevelUpLearnset,
+        .levelUpLearnset = sArauna137LevelUpLearnset,
         .teachableLearnset = sTaurosTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -8182,7 +8182,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Magikarp)
-        .levelUpLearnset = sMagikarpLevelUpLearnset,
+        .levelUpLearnset = sArauna138LevelUpLearnset,
         .teachableLearnset = sMagikarpTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_GYARADOS}),
@@ -8242,7 +8242,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Gyarados)
-        .levelUpLearnset = sGyaradosLevelUpLearnset,
+        .levelUpLearnset = sArauna139LevelUpLearnset,
         .teachableLearnset = sGyaradosTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -8300,7 +8300,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Lapras)
-        .levelUpLearnset = sLaprasLevelUpLearnset,
+        .levelUpLearnset = sArauna140LevelUpLearnset,
         .teachableLearnset = sLaprasTeachableLearnset,
         .eggMoveLearnset = sLaprasEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_DITTO}),
@@ -8360,7 +8360,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Ditto)
-        .levelUpLearnset = sDittoLevelUpLearnset,
+        .levelUpLearnset = sArauna141LevelUpLearnset,
         .teachableLearnset = sDittoTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -8419,7 +8419,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Eevee)
-        .levelUpLearnset = sEeveeLevelUpLearnset,
+        .levelUpLearnset = sArauna142LevelUpLearnset,
         .teachableLearnset = sEeveeTeachableLearnset,
         .eggMoveLearnset = sEeveeEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_VAPOREON}),
@@ -8479,7 +8479,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Vaporeon)
-        .levelUpLearnset = sVaporeonLevelUpLearnset,
+        .levelUpLearnset = sArauna143LevelUpLearnset,
         .teachableLearnset = sVaporeonTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -8538,7 +8538,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Jolteon)
-        .levelUpLearnset = sJolteonLevelUpLearnset,
+        .levelUpLearnset = sArauna144LevelUpLearnset,
         .teachableLearnset = sJolteonTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -8597,7 +8597,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Flareon)
-        .levelUpLearnset = sFlareonLevelUpLearnset,
+        .levelUpLearnset = sArauna145LevelUpLearnset,
         .teachableLearnset = sFlareonTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -8656,7 +8656,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Porygon)
-        .levelUpLearnset = sPorygonLevelUpLearnset,
+        .levelUpLearnset = sArauna146LevelUpLearnset,
         .teachableLearnset = sPorygonTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -8715,7 +8715,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Omanyte)
-        .levelUpLearnset = sOmanyteLevelUpLearnset,
+        .levelUpLearnset = sArauna147LevelUpLearnset,
         .teachableLearnset = sOmanyteTeachableLearnset,
         .eggMoveLearnset = sOmanyteEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_OMASTAR}),
@@ -8775,7 +8775,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Omastar)
-        .levelUpLearnset = sOmastarLevelUpLearnset,
+        .levelUpLearnset = sArauna148LevelUpLearnset,
         .teachableLearnset = sOmastarTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -8834,7 +8834,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Kabuto)
-        .levelUpLearnset = sKabutoLevelUpLearnset,
+        .levelUpLearnset = sArauna149LevelUpLearnset,
         .teachableLearnset = sKabutoTeachableLearnset,
         .eggMoveLearnset = sKabutoEggMoveLearnset,
     },
@@ -8893,7 +8893,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Kabutops)
-        .levelUpLearnset = sKabutopsLevelUpLearnset,
+        .levelUpLearnset = sArauna150LevelUpLearnset,
         .teachableLearnset = sKabutopsTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -8952,7 +8952,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Aerodactyl)
-        .levelUpLearnset = sAerodactylLevelUpLearnset,
+        .levelUpLearnset = sArauna151LevelUpLearnset,
         .teachableLearnset = sAerodactylTeachableLearnset,
         .eggMoveLearnset = sAerodactylEggMoveLearnset,
     },
@@ -9011,7 +9011,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Snorlax)
-        .levelUpLearnset = sSnorlaxLevelUpLearnset,
+        .levelUpLearnset = sArauna152LevelUpLearnset,
         .teachableLearnset = sSnorlaxTeachableLearnset,
         .eggMoveLearnset = sSnorlaxEggMoveLearnset,
     },
@@ -9070,7 +9070,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Articuno)
-        .levelUpLearnset = sArticunoLevelUpLearnset,
+        .levelUpLearnset = sArauna153LevelUpLearnset,
         .teachableLearnset = sArticunoTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -9129,7 +9129,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Zapdos)
-        .levelUpLearnset = sZapdosLevelUpLearnset,
+        .levelUpLearnset = sArauna154LevelUpLearnset,
         .teachableLearnset = sZapdosTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -9188,7 +9188,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Moltres)
-        .levelUpLearnset = sMoltresLevelUpLearnset,
+        .levelUpLearnset = sArauna155LevelUpLearnset,
         .teachableLearnset = sMoltresTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -9247,7 +9247,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Dratini)
-        .levelUpLearnset = sDratiniLevelUpLearnset,
+        .levelUpLearnset = sArauna156LevelUpLearnset,
         .teachableLearnset = sDratiniTeachableLearnset,
         .eggMoveLearnset = sDratiniEggMoveLearnset,
     },
@@ -9306,7 +9306,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Dragonair)
-        .levelUpLearnset = sDragonairLevelUpLearnset,
+        .levelUpLearnset = sArauna157LevelUpLearnset,
         .teachableLearnset = sDragonairTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -9365,7 +9365,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Dragonite)
-        .levelUpLearnset = sDragoniteLevelUpLearnset,
+        .levelUpLearnset = sArauna158LevelUpLearnset,
         .teachableLearnset = sDragoniteTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -9424,7 +9424,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Mewtwo)
-        .levelUpLearnset = sMewtwoLevelUpLearnset,
+        .levelUpLearnset = sArauna159LevelUpLearnset,
         .teachableLearnset = sMewtwoTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -9483,7 +9483,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Mew)
-        .levelUpLearnset = sMewLevelUpLearnset,
+        .levelUpLearnset = sArauna160LevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -9542,7 +9542,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Chikorita)
-        .levelUpLearnset = sChikoritaLevelUpLearnset,
+        .levelUpLearnset = sArauna161LevelUpLearnset,
         .teachableLearnset = sChikoritaTeachableLearnset,
         .eggMoveLearnset = sChikoritaEggMoveLearnset,
     },
@@ -9601,7 +9601,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Bayleef)
-        .levelUpLearnset = sBayleefLevelUpLearnset,
+        .levelUpLearnset = sArauna162LevelUpLearnset,
         .teachableLearnset = sBayleefTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -9660,7 +9660,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Meganium)
-        .levelUpLearnset = sMeganiumLevelUpLearnset,
+        .levelUpLearnset = sArauna163LevelUpLearnset,
         .teachableLearnset = sMeganiumTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_MEGANIUM}),
@@ -9719,7 +9719,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Cyndaquil)
-        .levelUpLearnset = sCyndaquilLevelUpLearnset,
+        .levelUpLearnset = sArauna164LevelUpLearnset,
         .teachableLearnset = sCyndaquilTeachableLearnset,
         .eggMoveLearnset = sCyndaquilEggMoveLearnset,
     },
@@ -9778,7 +9778,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Quilava)
-        .levelUpLearnset = sQuilavaLevelUpLearnset,
+        .levelUpLearnset = sArauna165LevelUpLearnset,
         .teachableLearnset = sQuilavaTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -9837,7 +9837,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Typhlosion)
-        .levelUpLearnset = sTyphlosionLevelUpLearnset,
+        .levelUpLearnset = sArauna166LevelUpLearnset,
         .teachableLearnset = sTyphlosionTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -9896,7 +9896,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Totodile)
-        .levelUpLearnset = sTotodileLevelUpLearnset,
+        .levelUpLearnset = sArauna167LevelUpLearnset,
         .teachableLearnset = sTotodileTeachableLearnset,
         .eggMoveLearnset = sTotodileEggMoveLearnset,
     },
@@ -9955,7 +9955,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Croconaw)
-        .levelUpLearnset = sCroconawLevelUpLearnset,
+        .levelUpLearnset = sArauna168LevelUpLearnset,
         .teachableLearnset = sCroconawTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -10014,7 +10014,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Feraligatr)
-        .levelUpLearnset = sFeraligatrLevelUpLearnset,
+        .levelUpLearnset = sArauna169LevelUpLearnset,
         .teachableLearnset = sFeraligatrTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -10073,7 +10073,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Sentret)
-        .levelUpLearnset = sSentretLevelUpLearnset,
+        .levelUpLearnset = sArauna170LevelUpLearnset,
         .teachableLearnset = sSentretTeachableLearnset,
         .eggMoveLearnset = sSentretEggMoveLearnset,
     },
@@ -10132,7 +10132,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Furret)
-        .levelUpLearnset = sFurretLevelUpLearnset,
+        .levelUpLearnset = sArauna171LevelUpLearnset,
         .teachableLearnset = sFurretTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -10191,7 +10191,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Hoothoot)
-        .levelUpLearnset = sHoothootLevelUpLearnset,
+        .levelUpLearnset = sArauna172LevelUpLearnset,
         .teachableLearnset = sHoothootTeachableLearnset,
         .eggMoveLearnset = sHoothootEggMoveLearnset,
     },
@@ -10250,7 +10250,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Noctowl)
-        .levelUpLearnset = sNoctowlLevelUpLearnset,
+        .levelUpLearnset = sArauna173LevelUpLearnset,
         .teachableLearnset = sNoctowlTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -10309,7 +10309,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Ledyba)
-        .levelUpLearnset = sLedybaLevelUpLearnset,
+        .levelUpLearnset = sArauna174LevelUpLearnset,
         .teachableLearnset = sLedybaTeachableLearnset,
         .eggMoveLearnset = sLedybaEggMoveLearnset,
     },
@@ -10368,7 +10368,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Ledian)
-        .levelUpLearnset = sLedianLevelUpLearnset,
+        .levelUpLearnset = sArauna175LevelUpLearnset,
         .teachableLearnset = sLedianTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -10426,7 +10426,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Spinarak)
-        .levelUpLearnset = sSpinarakLevelUpLearnset,
+        .levelUpLearnset = sArauna176LevelUpLearnset,
         .teachableLearnset = sSpinarakTeachableLearnset,
         .eggMoveLearnset = sSpinarakEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_ARIADOS}),
@@ -10486,7 +10486,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Ariados)
-        .levelUpLearnset = sAriadosLevelUpLearnset,
+        .levelUpLearnset = sArauna177LevelUpLearnset,
         .teachableLearnset = sAriadosTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_CROBAT}),
@@ -10546,7 +10546,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Crobat)
-        .levelUpLearnset = sCrobatLevelUpLearnset,
+        .levelUpLearnset = sArauna178LevelUpLearnset,
         .teachableLearnset = sCrobatTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -10605,7 +10605,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Chinchou)
-        .levelUpLearnset = sChinchouLevelUpLearnset,
+        .levelUpLearnset = sArauna179LevelUpLearnset,
         .teachableLearnset = sChinchouTeachableLearnset,
         .eggMoveLearnset = sChinchouEggMoveLearnset,
     },
@@ -10664,7 +10664,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Lanturn)
-        .levelUpLearnset = sLanturnLevelUpLearnset,
+        .levelUpLearnset = sArauna180LevelUpLearnset,
         .teachableLearnset = sLanturnTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -10723,7 +10723,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Pichu)
-        .levelUpLearnset = sPichuLevelUpLearnset,
+        .levelUpLearnset = sArauna181LevelUpLearnset,
         .teachableLearnset = sPichuTeachableLearnset,
         .eggMoveLearnset = sPichuEggMoveLearnset,
     },
@@ -10782,7 +10782,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Cleffa)
-        .levelUpLearnset = sCleffaLevelUpLearnset,
+        .levelUpLearnset = sArauna182LevelUpLearnset,
         .teachableLearnset = sCleffaTeachableLearnset,
         .eggMoveLearnset = sCleffaEggMoveLearnset,
     },
@@ -10841,7 +10841,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Igglybuff)
-        .levelUpLearnset = sIgglybuffLevelUpLearnset,
+        .levelUpLearnset = sArauna183LevelUpLearnset,
         .teachableLearnset = sIgglybuffTeachableLearnset,
         .eggMoveLearnset = sIgglybuffEggMoveLearnset,
     },
@@ -10900,7 +10900,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Togepi)
-        .levelUpLearnset = sTogepiLevelUpLearnset,
+        .levelUpLearnset = sArauna184LevelUpLearnset,
         .teachableLearnset = sTogepiTeachableLearnset,
         .eggMoveLearnset = sTogepiEggMoveLearnset,
     },
@@ -10959,7 +10959,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Togetic)
-        .levelUpLearnset = sTogeticLevelUpLearnset,
+        .levelUpLearnset = sArauna185LevelUpLearnset,
         .teachableLearnset = sTogeticTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -11018,7 +11018,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Natu)
-        .levelUpLearnset = sNatuLevelUpLearnset,
+        .levelUpLearnset = sArauna186LevelUpLearnset,
         .teachableLearnset = sNatuTeachableLearnset,
         .eggMoveLearnset = sNatuEggMoveLearnset,
     },
@@ -11077,7 +11077,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Xatu)
-        .levelUpLearnset = sXatuLevelUpLearnset,
+        .levelUpLearnset = sArauna187LevelUpLearnset,
         .teachableLearnset = sXatuTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_MAREEP}),
@@ -11137,7 +11137,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Mareep)
-        .levelUpLearnset = sMareepLevelUpLearnset,
+        .levelUpLearnset = sArauna188LevelUpLearnset,
         .teachableLearnset = sMareepTeachableLearnset,
         .eggMoveLearnset = sMareepEggMoveLearnset,
     },
@@ -11196,7 +11196,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Flaaffy)
-        .levelUpLearnset = sFlaaffyLevelUpLearnset,
+        .levelUpLearnset = sArauna189LevelUpLearnset,
         .teachableLearnset = sFlaaffyTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -11255,7 +11255,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Ampharos)
-        .levelUpLearnset = sAmpharosLevelUpLearnset,
+        .levelUpLearnset = sArauna190LevelUpLearnset,
         .teachableLearnset = sAmpharosTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_BELLOSSOM}),
@@ -11315,7 +11315,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Bellossom)
-        .levelUpLearnset = sBellossomLevelUpLearnset,
+        .levelUpLearnset = sArauna191LevelUpLearnset,
         .teachableLearnset = sBellossomTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -11374,7 +11374,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Marill)
-        .levelUpLearnset = sMarillLevelUpLearnset,
+        .levelUpLearnset = sArauna192LevelUpLearnset,
         .teachableLearnset = sMarillTeachableLearnset,
         .eggMoveLearnset = sMarillEggMoveLearnset,
     },
@@ -11433,7 +11433,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Azumarill)
-        .levelUpLearnset = sAzumarillLevelUpLearnset,
+        .levelUpLearnset = sArauna193LevelUpLearnset,
         .teachableLearnset = sAzumarillTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -11492,7 +11492,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Sudowoodo)
-        .levelUpLearnset = sSudowoodoLevelUpLearnset,
+        .levelUpLearnset = sArauna194LevelUpLearnset,
         .teachableLearnset = sSudowoodoTeachableLearnset,
         .eggMoveLearnset = sSudowoodoEggMoveLearnset,
     },
@@ -11551,7 +11551,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Politoed)
-        .levelUpLearnset = sPolitoedLevelUpLearnset,
+        .levelUpLearnset = sArauna195LevelUpLearnset,
         .teachableLearnset = sPolitoedTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -11610,7 +11610,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Hoppip)
-        .levelUpLearnset = sHoppipLevelUpLearnset,
+        .levelUpLearnset = sArauna196LevelUpLearnset,
         .teachableLearnset = sHoppipTeachableLearnset,
         .eggMoveLearnset = sHoppipEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_SKIPLOOM}),
@@ -11669,7 +11669,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Skiploom)
-        .levelUpLearnset = sSkiploomLevelUpLearnset,
+        .levelUpLearnset = sArauna197LevelUpLearnset,
         .teachableLearnset = sSkiploomTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -11728,7 +11728,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Jumpluff)
-        .levelUpLearnset = sJumpluffLevelUpLearnset,
+        .levelUpLearnset = sArauna198LevelUpLearnset,
         .teachableLearnset = sJumpluffTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_AIPOM}),
@@ -11788,7 +11788,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Aipom)
-        .levelUpLearnset = sAipomLevelUpLearnset,
+        .levelUpLearnset = sArauna199LevelUpLearnset,
         .teachableLearnset = sAipomTeachableLearnset,
         .eggMoveLearnset = sAipomEggMoveLearnset,
     },
@@ -11847,7 +11847,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Sunkern)
-        .levelUpLearnset = sSunkernLevelUpLearnset,
+        .levelUpLearnset = sArauna200LevelUpLearnset,
         .teachableLearnset = sSunkernTeachableLearnset,
         .eggMoveLearnset = sSunkernEggMoveLearnset,
     },
@@ -11906,7 +11906,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Sunflora)
-        .levelUpLearnset = sSunfloraLevelUpLearnset,
+        .levelUpLearnset = sArauna201LevelUpLearnset,
         .teachableLearnset = sSunfloraTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -11965,7 +11965,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Yanma)
-        .levelUpLearnset = sYanmaLevelUpLearnset,
+        .levelUpLearnset = sArauna202LevelUpLearnset,
         .teachableLearnset = sYanmaTeachableLearnset,
         .eggMoveLearnset = sYanmaEggMoveLearnset,
     },
@@ -12024,7 +12024,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Wooper)
-        .levelUpLearnset = sWooperLevelUpLearnset,
+        .levelUpLearnset = sArauna203LevelUpLearnset,
         .teachableLearnset = sWooperTeachableLearnset,
         .eggMoveLearnset = sWooperEggMoveLearnset,
     },
@@ -12083,7 +12083,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Quagsire)
-        .levelUpLearnset = sQuagsireLevelUpLearnset,
+        .levelUpLearnset = sArauna204LevelUpLearnset,
         .teachableLearnset = sQuagsireTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -12142,7 +12142,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Espeon)
-        .levelUpLearnset = sEspeonLevelUpLearnset,
+        .levelUpLearnset = sArauna205LevelUpLearnset,
         .teachableLearnset = sEspeonTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -12201,7 +12201,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Umbreon)
-        .levelUpLearnset = sUmbreonLevelUpLearnset,
+        .levelUpLearnset = sArauna206LevelUpLearnset,
         .teachableLearnset = sUmbreonTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -12260,7 +12260,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Murkrow)
-        .levelUpLearnset = sMurkrowLevelUpLearnset,
+        .levelUpLearnset = sArauna207LevelUpLearnset,
         .teachableLearnset = sMurkrowTeachableLearnset,
         .eggMoveLearnset = sMurkrowEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_SLOWKING}),
@@ -12320,7 +12320,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Slowking)
-        .levelUpLearnset = sSlowkingLevelUpLearnset,
+        .levelUpLearnset = sArauna208LevelUpLearnset,
         .teachableLearnset = sSlowkingTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -12379,7 +12379,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Misdreavus)
-        .levelUpLearnset = sMisdreavusLevelUpLearnset,
+        .levelUpLearnset = sArauna209LevelUpLearnset,
         .teachableLearnset = sMisdreavusTeachableLearnset,
         .eggMoveLearnset = sMisdreavusEggMoveLearnset,
     },
@@ -12438,7 +12438,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Unown)
-        .levelUpLearnset = sUnownLevelUpLearnset,
+        .levelUpLearnset = sArauna210LevelUpLearnset,
         .teachableLearnset = sUnownTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -12497,7 +12497,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Wobbuffet)
-        .levelUpLearnset = sWobbuffetLevelUpLearnset,
+        .levelUpLearnset = sArauna211LevelUpLearnset,
         .teachableLearnset = sWobbuffetTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -12556,7 +12556,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Girafarig)
-        .levelUpLearnset = sGirafarigLevelUpLearnset,
+        .levelUpLearnset = sArauna212LevelUpLearnset,
         .teachableLearnset = sGirafarigTeachableLearnset,
         .eggMoveLearnset = sGirafarigEggMoveLearnset,
     },
@@ -12615,7 +12615,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Pineco)
-        .levelUpLearnset = sPinecoLevelUpLearnset,
+        .levelUpLearnset = sArauna213LevelUpLearnset,
         .teachableLearnset = sPinecoTeachableLearnset,
         .eggMoveLearnset = sPinecoEggMoveLearnset,
     },
@@ -12674,7 +12674,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Forretress)
-        .levelUpLearnset = sForretressLevelUpLearnset,
+        .levelUpLearnset = sArauna214LevelUpLearnset,
         .teachableLearnset = sForretressTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -12733,7 +12733,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Dunsparce)
-        .levelUpLearnset = sDunsparceLevelUpLearnset,
+        .levelUpLearnset = sArauna215LevelUpLearnset,
         .teachableLearnset = sDunsparceTeachableLearnset,
         .eggMoveLearnset = sDunsparceEggMoveLearnset,
     },
@@ -12792,7 +12792,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Gligar)
-        .levelUpLearnset = sGligarLevelUpLearnset,
+        .levelUpLearnset = sArauna216LevelUpLearnset,
         .teachableLearnset = sGligarTeachableLearnset,
         .eggMoveLearnset = sGligarEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_STEELIX}),
@@ -12852,7 +12852,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Steelix)
-        .levelUpLearnset = sSteelixLevelUpLearnset,
+        .levelUpLearnset = sArauna217LevelUpLearnset,
         .teachableLearnset = sSteelixTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -12910,7 +12910,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Snubbull)
-        .levelUpLearnset = sSnubbullLevelUpLearnset,
+        .levelUpLearnset = sArauna218LevelUpLearnset,
         .teachableLearnset = sSnubbullTeachableLearnset,
         .eggMoveLearnset = sSnubbullEggMoveLearnset,
     },
@@ -12969,7 +12969,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Granbull)
-        .levelUpLearnset = sGranbullLevelUpLearnset,
+        .levelUpLearnset = sArauna219LevelUpLearnset,
         .teachableLearnset = sGranbullTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -13028,7 +13028,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Qwilfish)
-        .levelUpLearnset = sQwilfishLevelUpLearnset,
+        .levelUpLearnset = sArauna220LevelUpLearnset,
         .teachableLearnset = sQwilfishTeachableLearnset,
         .eggMoveLearnset = sQwilfishEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_SHUCKLE}),
@@ -13088,7 +13088,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Scizor)
-        .levelUpLearnset = sScizorLevelUpLearnset,
+        .levelUpLearnset = sArauna221LevelUpLearnset,
         .teachableLearnset = sScizorTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -13147,7 +13147,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Shuckle)
-        .levelUpLearnset = sShuckleLevelUpLearnset,
+        .levelUpLearnset = sArauna222LevelUpLearnset,
         .teachableLearnset = sShuckleTeachableLearnset,
         .eggMoveLearnset = sShuckleEggMoveLearnset,
     },
@@ -13206,7 +13206,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Heracross)
-        .levelUpLearnset = sHeracrossLevelUpLearnset,
+        .levelUpLearnset = sArauna223LevelUpLearnset,
         .teachableLearnset = sHeracrossTeachableLearnset,
         .eggMoveLearnset = sHeracrossEggMoveLearnset,
     },
@@ -13264,7 +13264,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Sneasel)
-        .levelUpLearnset = sSneaselLevelUpLearnset,
+        .levelUpLearnset = sArauna224LevelUpLearnset,
         .teachableLearnset = sSneaselTeachableLearnset,
         .eggMoveLearnset = sSneaselEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_URSARING}),
@@ -13324,7 +13324,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Teddiursa)
-        .levelUpLearnset = sTeddiursaLevelUpLearnset,
+        .levelUpLearnset = sArauna225LevelUpLearnset,
         .teachableLearnset = sTeddiursaTeachableLearnset,
         .eggMoveLearnset = sTeddiursaEggMoveLearnset,
     },
@@ -13383,7 +13383,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Ursaring)
-        .levelUpLearnset = sUrsaringLevelUpLearnset,
+        .levelUpLearnset = sArauna226LevelUpLearnset,
         .teachableLearnset = sUrsaringTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -13442,7 +13442,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Slugma)
-        .levelUpLearnset = sSlugmaLevelUpLearnset,
+        .levelUpLearnset = sArauna227LevelUpLearnset,
         .teachableLearnset = sSlugmaTeachableLearnset,
         .eggMoveLearnset = sSlugmaEggMoveLearnset,
     },
@@ -13501,7 +13501,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Magcargo)
-        .levelUpLearnset = sMagcargoLevelUpLearnset,
+        .levelUpLearnset = sArauna228LevelUpLearnset,
         .teachableLearnset = sMagcargoTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_PILOSWINE}),
@@ -13561,7 +13561,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Swinub)
-        .levelUpLearnset = sSwinubLevelUpLearnset,
+        .levelUpLearnset = sArauna229LevelUpLearnset,
         .teachableLearnset = sSwinubTeachableLearnset,
         .eggMoveLearnset = sSwinubEggMoveLearnset,
     },
@@ -13620,7 +13620,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Piloswine)
-        .levelUpLearnset = sPiloswineLevelUpLearnset,
+        .levelUpLearnset = sArauna230LevelUpLearnset,
         .teachableLearnset = sPiloswineTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -13679,7 +13679,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Corsola)
-        .levelUpLearnset = sCorsolaLevelUpLearnset,
+        .levelUpLearnset = sArauna231LevelUpLearnset,
         .teachableLearnset = sCorsolaTeachableLearnset,
         .eggMoveLearnset = sCorsolaEggMoveLearnset,
     },
@@ -13738,7 +13738,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Remoraid)
-        .levelUpLearnset = sRemoraidLevelUpLearnset,
+        .levelUpLearnset = sArauna232LevelUpLearnset,
         .teachableLearnset = sRemoraidTeachableLearnset,
         .eggMoveLearnset = sRemoraidEggMoveLearnset,
     },
@@ -13797,7 +13797,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Octillery)
-        .levelUpLearnset = sOctilleryLevelUpLearnset,
+        .levelUpLearnset = sArauna233LevelUpLearnset,
         .teachableLearnset = sOctilleryTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -13856,7 +13856,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Delibird)
-        .levelUpLearnset = sDelibirdLevelUpLearnset,
+        .levelUpLearnset = sArauna234LevelUpLearnset,
         .teachableLearnset = sDelibirdTeachableLearnset,
         .eggMoveLearnset = sDelibirdEggMoveLearnset,
     },
@@ -13915,7 +13915,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Mantine)
-        .levelUpLearnset = sMantineLevelUpLearnset,
+        .levelUpLearnset = sArauna235LevelUpLearnset,
         .teachableLearnset = sMantineTeachableLearnset,
         .eggMoveLearnset = sMantineEggMoveLearnset,
     },
@@ -13974,7 +13974,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Skarmory)
-        .levelUpLearnset = sSkarmoryLevelUpLearnset,
+        .levelUpLearnset = sArauna236LevelUpLearnset,
         .teachableLearnset = sSkarmoryTeachableLearnset,
         .eggMoveLearnset = sSkarmoryEggMoveLearnset,
     },
@@ -14033,7 +14033,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Houndour)
-        .levelUpLearnset = sHoundourLevelUpLearnset,
+        .levelUpLearnset = sArauna237LevelUpLearnset,
         .teachableLearnset = sHoundourTeachableLearnset,
         .eggMoveLearnset = sHoundourEggMoveLearnset,
     },
@@ -14092,7 +14092,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Houndoom)
-        .levelUpLearnset = sHoundoomLevelUpLearnset,
+        .levelUpLearnset = sArauna238LevelUpLearnset,
         .teachableLearnset = sHoundoomTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -14151,7 +14151,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Kingdra)
-        .levelUpLearnset = sKingdraLevelUpLearnset,
+        .levelUpLearnset = sArauna239LevelUpLearnset,
         .teachableLearnset = sKingdraTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -14210,7 +14210,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Phanpy)
-        .levelUpLearnset = sPhanpyLevelUpLearnset,
+        .levelUpLearnset = sArauna240LevelUpLearnset,
         .teachableLearnset = sPhanpyTeachableLearnset,
         .eggMoveLearnset = sPhanpyEggMoveLearnset,
     },
@@ -14269,7 +14269,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Donphan)
-        .levelUpLearnset = sDonphanLevelUpLearnset,
+        .levelUpLearnset = sArauna241LevelUpLearnset,
         .teachableLearnset = sDonphanTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -14328,7 +14328,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Porygon2)
-        .levelUpLearnset = sPorygon2LevelUpLearnset,
+        .levelUpLearnset = sArauna242LevelUpLearnset,
         .teachableLearnset = sPorygon2TeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -14387,7 +14387,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Stantler)
-        .levelUpLearnset = sStantlerLevelUpLearnset,
+        .levelUpLearnset = sArauna243LevelUpLearnset,
         .teachableLearnset = sStantlerTeachableLearnset,
         .eggMoveLearnset = sStantlerEggMoveLearnset,
     },
@@ -14446,7 +14446,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Smeargle)
-        .levelUpLearnset = sSmeargleLevelUpLearnset,
+        .levelUpLearnset = sArauna244LevelUpLearnset,
         .teachableLearnset = sSmeargleTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -14505,7 +14505,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Tyrogue)
-        .levelUpLearnset = sTyrogueLevelUpLearnset,
+        .levelUpLearnset = sArauna245LevelUpLearnset,
         .teachableLearnset = sTyrogueTeachableLearnset,
         .eggMoveLearnset = sTyrogueEggMoveLearnset,
     },
@@ -14564,7 +14564,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Hitmontop)
-        .levelUpLearnset = sHitmontopLevelUpLearnset,
+        .levelUpLearnset = sArauna246LevelUpLearnset,
         .teachableLearnset = sHitmontopTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -14623,7 +14623,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Smoochum)
-        .levelUpLearnset = sSmoochumLevelUpLearnset,
+        .levelUpLearnset = sArauna247LevelUpLearnset,
         .teachableLearnset = sSmoochumTeachableLearnset,
         .eggMoveLearnset = sSmoochumEggMoveLearnset,
     },
@@ -14682,7 +14682,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Elekid)
-        .levelUpLearnset = sElekidLevelUpLearnset,
+        .levelUpLearnset = sArauna248LevelUpLearnset,
         .teachableLearnset = sElekidTeachableLearnset,
         .eggMoveLearnset = sElekidEggMoveLearnset,
     },
@@ -14741,7 +14741,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Magby)
-        .levelUpLearnset = sMagbyLevelUpLearnset,
+        .levelUpLearnset = sArauna249LevelUpLearnset,
         .teachableLearnset = sMagbyTeachableLearnset,
         .eggMoveLearnset = sMagbyEggMoveLearnset,
     },
@@ -14800,7 +14800,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Miltank)
-        .levelUpLearnset = sMiltankLevelUpLearnset,
+        .levelUpLearnset = sArauna250LevelUpLearnset,
         .teachableLearnset = sMiltankTeachableLearnset,
         .eggMoveLearnset = sMiltankEggMoveLearnset,
     },
@@ -14859,7 +14859,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Blissey)
-        .levelUpLearnset = sBlisseyLevelUpLearnset,
+        .levelUpLearnset = sArauna251LevelUpLearnset,
         .teachableLearnset = sBlisseyTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -14918,7 +14918,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Raikou)
-        .levelUpLearnset = sRaikouLevelUpLearnset,
+        .levelUpLearnset = sArauna252LevelUpLearnset,
         .teachableLearnset = sRaikouTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -14977,7 +14977,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Entei)
-        .levelUpLearnset = sEnteiLevelUpLearnset,
+        .levelUpLearnset = sArauna253LevelUpLearnset,
         .teachableLearnset = sEnteiTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -15036,7 +15036,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Suicune)
-        .levelUpLearnset = sSuicuneLevelUpLearnset,
+        .levelUpLearnset = sArauna254LevelUpLearnset,
         .teachableLearnset = sSuicuneTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -15095,7 +15095,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Larvitar)
-        .levelUpLearnset = sLarvitarLevelUpLearnset,
+        .levelUpLearnset = sArauna255LevelUpLearnset,
         .teachableLearnset = sLarvitarTeachableLearnset,
         .eggMoveLearnset = sLarvitarEggMoveLearnset,
     },
@@ -15154,7 +15154,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Pupitar)
-        .levelUpLearnset = sPupitarLevelUpLearnset,
+        .levelUpLearnset = sArauna256LevelUpLearnset,
         .teachableLearnset = sPupitarTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -15213,7 +15213,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Tyranitar)
-        .levelUpLearnset = sTyranitarLevelUpLearnset,
+        .levelUpLearnset = sArauna257LevelUpLearnset,
         .teachableLearnset = sTyranitarTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -15272,7 +15272,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Lugia)
-        .levelUpLearnset = sLugiaLevelUpLearnset,
+        .levelUpLearnset = sArauna258LevelUpLearnset,
         .teachableLearnset = sLugiaTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -15331,7 +15331,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(HoOh)
-        .levelUpLearnset = sHoOhLevelUpLearnset,
+        .levelUpLearnset = sArauna259LevelUpLearnset,
         .teachableLearnset = sHoOhTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -15390,7 +15390,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Celebi)
-        .levelUpLearnset = sCelebiLevelUpLearnset,
+        .levelUpLearnset = sArauna260LevelUpLearnset,
         .teachableLearnset = sCelebiTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -15449,7 +15449,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Poochyena)
-        .levelUpLearnset = sPoochyenaLevelUpLearnset,
+        .levelUpLearnset = sArauna261LevelUpLearnset,
         .teachableLearnset = sPoochyenaTeachableLearnset,
         .eggMoveLearnset = sPoochyenaEggMoveLearnset,
     },
@@ -15508,7 +15508,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Mightyena)
-        .levelUpLearnset = sMightyenaLevelUpLearnset,
+        .levelUpLearnset = sArauna262LevelUpLearnset,
         .teachableLearnset = sMightyenaTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -15567,7 +15567,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Zigzagoon)
-        .levelUpLearnset = sZigzagoonLevelUpLearnset,
+        .levelUpLearnset = sArauna263LevelUpLearnset,
         .teachableLearnset = sZigzagoonTeachableLearnset,
         .eggMoveLearnset = sZigzagoonEggMoveLearnset,
     },
@@ -15626,7 +15626,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Linoone)
-        .levelUpLearnset = sLinooneLevelUpLearnset,
+        .levelUpLearnset = sArauna264LevelUpLearnset,
         .teachableLearnset = sLinooneTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -15685,7 +15685,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Wurmple)
-        .levelUpLearnset = sWurmpleLevelUpLearnset,
+        .levelUpLearnset = sArauna265LevelUpLearnset,
         .teachableLearnset = sWurmpleTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -15744,7 +15744,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Silcoon)
-        .levelUpLearnset = sSilcoonLevelUpLearnset,
+        .levelUpLearnset = sArauna266LevelUpLearnset,
         .teachableLearnset = sSilcoonTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -15803,7 +15803,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Beautifly)
-        .levelUpLearnset = sBeautiflyLevelUpLearnset,
+        .levelUpLearnset = sArauna267LevelUpLearnset,
         .teachableLearnset = sBeautiflyTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -15862,7 +15862,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Cascoon)
-        .levelUpLearnset = sCascoonLevelUpLearnset,
+        .levelUpLearnset = sArauna268LevelUpLearnset,
         .teachableLearnset = sCascoonTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -15921,7 +15921,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Dustox)
-        .levelUpLearnset = sDustoxLevelUpLearnset,
+        .levelUpLearnset = sArauna269LevelUpLearnset,
         .teachableLearnset = sDustoxTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -15980,7 +15980,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Lotad)
-        .levelUpLearnset = sLotadLevelUpLearnset,
+        .levelUpLearnset = sArauna270LevelUpLearnset,
         .teachableLearnset = sLotadTeachableLearnset,
         .eggMoveLearnset = sLotadEggMoveLearnset,
     },
@@ -16039,7 +16039,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Lombre)
-        .levelUpLearnset = sLombreLevelUpLearnset,
+        .levelUpLearnset = sArauna271LevelUpLearnset,
         .teachableLearnset = sLombreTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -16098,7 +16098,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Ludicolo)
-        .levelUpLearnset = sLudicoloLevelUpLearnset,
+        .levelUpLearnset = sArauna272LevelUpLearnset,
         .teachableLearnset = sLudicoloTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -16157,7 +16157,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Seedot)
-        .levelUpLearnset = sSeedotLevelUpLearnset,
+        .levelUpLearnset = sArauna273LevelUpLearnset,
         .teachableLearnset = sSeedotTeachableLearnset,
         .eggMoveLearnset = sSeedotEggMoveLearnset,
     },
@@ -16216,7 +16216,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Nuzleaf)
-        .levelUpLearnset = sNuzleafLevelUpLearnset,
+        .levelUpLearnset = sArauna274LevelUpLearnset,
         .teachableLearnset = sNuzleafTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -16275,7 +16275,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Shiftry)
-        .levelUpLearnset = sShiftryLevelUpLearnset,
+        .levelUpLearnset = sArauna275LevelUpLearnset,
         .teachableLearnset = sShiftryTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -16334,7 +16334,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Taillow)
-        .levelUpLearnset = sTaillowLevelUpLearnset,
+        .levelUpLearnset = sArauna276LevelUpLearnset,
         .teachableLearnset = sTaillowTeachableLearnset,
         .eggMoveLearnset = sTaillowEggMoveLearnset,
     },
@@ -16393,7 +16393,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Swellow)
-        .levelUpLearnset = sSwellowLevelUpLearnset,
+        .levelUpLearnset = sArauna277LevelUpLearnset,
         .teachableLearnset = sSwellowTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -16452,7 +16452,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Wingull)
-        .levelUpLearnset = sWingullLevelUpLearnset,
+        .levelUpLearnset = sArauna278LevelUpLearnset,
         .teachableLearnset = sWingullTeachableLearnset,
         .eggMoveLearnset = sWingullEggMoveLearnset,
     },
@@ -16511,7 +16511,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Pelipper)
-        .levelUpLearnset = sPelipperLevelUpLearnset,
+        .levelUpLearnset = sArauna279LevelUpLearnset,
         .teachableLearnset = sPelipperTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -16570,7 +16570,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Ralts)
-        .levelUpLearnset = sRaltsLevelUpLearnset,
+        .levelUpLearnset = sArauna280LevelUpLearnset,
         .teachableLearnset = sRaltsTeachableLearnset,
         .eggMoveLearnset = sRaltsEggMoveLearnset,
     },
@@ -16629,7 +16629,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Kirlia)
-        .levelUpLearnset = sKirliaLevelUpLearnset,
+        .levelUpLearnset = sArauna281LevelUpLearnset,
         .teachableLearnset = sKirliaTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -16688,7 +16688,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Gardevoir)
-        .levelUpLearnset = sGardevoirLevelUpLearnset,
+        .levelUpLearnset = sArauna282LevelUpLearnset,
         .teachableLearnset = sGardevoirTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -16747,7 +16747,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Surskit)
-        .levelUpLearnset = sSurskitLevelUpLearnset,
+        .levelUpLearnset = sArauna283LevelUpLearnset,
         .teachableLearnset = sSurskitTeachableLearnset,
         .eggMoveLearnset = sSurskitEggMoveLearnset,
     },
@@ -16806,7 +16806,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Masquerain)
-        .levelUpLearnset = sMasquerainLevelUpLearnset,
+        .levelUpLearnset = sArauna284LevelUpLearnset,
         .teachableLearnset = sMasquerainTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -16865,7 +16865,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Shroomish)
-        .levelUpLearnset = sShroomishLevelUpLearnset,
+        .levelUpLearnset = sArauna285LevelUpLearnset,
         .teachableLearnset = sShroomishTeachableLearnset,
         .eggMoveLearnset = sShroomishEggMoveLearnset,
     },
@@ -16924,7 +16924,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Breloom)
-        .levelUpLearnset = sBreloomLevelUpLearnset,
+        .levelUpLearnset = sArauna286LevelUpLearnset,
         .teachableLearnset = sBreloomTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -16983,7 +16983,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Slakoth)
-        .levelUpLearnset = sSlakothLevelUpLearnset,
+        .levelUpLearnset = sArauna287LevelUpLearnset,
         .teachableLearnset = sSlakothTeachableLearnset,
         .eggMoveLearnset = sSlakothEggMoveLearnset,
     },
@@ -17042,7 +17042,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Vigoroth)
-        .levelUpLearnset = sVigorothLevelUpLearnset,
+        .levelUpLearnset = sArauna288LevelUpLearnset,
         .teachableLearnset = sVigorothTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -17101,7 +17101,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Slaking)
-        .levelUpLearnset = sSlakingLevelUpLearnset,
+        .levelUpLearnset = sArauna289LevelUpLearnset,
         .teachableLearnset = sSlakingTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -17160,7 +17160,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Nincada)
-        .levelUpLearnset = sNincadaLevelUpLearnset,
+        .levelUpLearnset = sArauna290LevelUpLearnset,
         .teachableLearnset = sNincadaTeachableLearnset,
         .eggMoveLearnset = sNincadaEggMoveLearnset,
     },
@@ -17219,7 +17219,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Ninjask)
-        .levelUpLearnset = sNinjaskLevelUpLearnset,
+        .levelUpLearnset = sArauna291LevelUpLearnset,
         .teachableLearnset = sNinjaskTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -17278,7 +17278,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Shedinja)
-        .levelUpLearnset = sShedinjaLevelUpLearnset,
+        .levelUpLearnset = sArauna292LevelUpLearnset,
         .teachableLearnset = sShedinjaTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -17337,7 +17337,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Whismur)
-        .levelUpLearnset = sWhismurLevelUpLearnset,
+        .levelUpLearnset = sArauna293LevelUpLearnset,
         .teachableLearnset = sWhismurTeachableLearnset,
         .eggMoveLearnset = sWhismurEggMoveLearnset,
     },
@@ -17396,7 +17396,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Loudred)
-        .levelUpLearnset = sLoudredLevelUpLearnset,
+        .levelUpLearnset = sArauna294LevelUpLearnset,
         .teachableLearnset = sLoudredTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -17455,7 +17455,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Exploud)
-        .levelUpLearnset = sExploudLevelUpLearnset,
+        .levelUpLearnset = sArauna295LevelUpLearnset,
         .teachableLearnset = sExploudTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -17514,7 +17514,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Makuhita)
-        .levelUpLearnset = sMakuhitaLevelUpLearnset,
+        .levelUpLearnset = sArauna296LevelUpLearnset,
         .teachableLearnset = sMakuhitaTeachableLearnset,
         .eggMoveLearnset = sMakuhitaEggMoveLearnset,
     },
@@ -17573,7 +17573,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Hariyama)
-        .levelUpLearnset = sHariyamaLevelUpLearnset,
+        .levelUpLearnset = sArauna297LevelUpLearnset,
         .teachableLearnset = sHariyamaTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -17632,7 +17632,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Azurill)
-        .levelUpLearnset = sAzurillLevelUpLearnset,
+        .levelUpLearnset = sArauna298LevelUpLearnset,
         .teachableLearnset = sAzurillTeachableLearnset,
         .eggMoveLearnset = sAzurillEggMoveLearnset,
     },
@@ -17690,7 +17690,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Nosepass)
-        .levelUpLearnset = sNosepassLevelUpLearnset,
+        .levelUpLearnset = sArauna299LevelUpLearnset,
         .teachableLearnset = sNosepassTeachableLearnset,
         .eggMoveLearnset = sNosepassEggMoveLearnset,
     },
@@ -17749,7 +17749,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Skitty)
-        .levelUpLearnset = sSkittyLevelUpLearnset,
+        .levelUpLearnset = sArauna300LevelUpLearnset,
         .teachableLearnset = sSkittyTeachableLearnset,
         .eggMoveLearnset = sSkittyEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_SABLEYE}),
@@ -17809,7 +17809,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Delcatty)
-        .levelUpLearnset = sDelcattyLevelUpLearnset,
+        .levelUpLearnset = sArauna301LevelUpLearnset,
         .teachableLearnset = sDelcattyTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -17868,7 +17868,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Sableye)
-        .levelUpLearnset = sSableyeLevelUpLearnset,
+        .levelUpLearnset = sArauna302LevelUpLearnset,
         .teachableLearnset = sSableyeTeachableLearnset,
         .eggMoveLearnset = sSableyeEggMoveLearnset,
     },
@@ -17927,7 +17927,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Mawile)
-        .levelUpLearnset = sMawileLevelUpLearnset,
+        .levelUpLearnset = sArauna303LevelUpLearnset,
         .teachableLearnset = sMawileTeachableLearnset,
         .eggMoveLearnset = sMawileEggMoveLearnset,
     },
@@ -17986,7 +17986,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Aron)
-        .levelUpLearnset = sAronLevelUpLearnset,
+        .levelUpLearnset = sArauna304LevelUpLearnset,
         .teachableLearnset = sAronTeachableLearnset,
         .eggMoveLearnset = sAronEggMoveLearnset,
     },
@@ -18045,7 +18045,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Lairon)
-        .levelUpLearnset = sLaironLevelUpLearnset,
+        .levelUpLearnset = sArauna305LevelUpLearnset,
         .teachableLearnset = sLaironTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -18104,7 +18104,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Aggron)
-        .levelUpLearnset = sAggronLevelUpLearnset,
+        .levelUpLearnset = sArauna306LevelUpLearnset,
         .teachableLearnset = sAggronTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -18163,7 +18163,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Meditite)
-        .levelUpLearnset = sMedititeLevelUpLearnset,
+        .levelUpLearnset = sArauna307LevelUpLearnset,
         .teachableLearnset = sMedititeTeachableLearnset,
         .eggMoveLearnset = sMedititeEggMoveLearnset,
     },
@@ -18222,7 +18222,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Medicham)
-        .levelUpLearnset = sMedichamLevelUpLearnset,
+        .levelUpLearnset = sArauna308LevelUpLearnset,
         .teachableLearnset = sMedichamTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -18281,7 +18281,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Electrike)
-        .levelUpLearnset = sElectrikeLevelUpLearnset,
+        .levelUpLearnset = sArauna309LevelUpLearnset,
         .teachableLearnset = sElectrikeTeachableLearnset,
         .eggMoveLearnset = sElectrikeEggMoveLearnset,
     },
@@ -18340,7 +18340,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Manectric)
-        .levelUpLearnset = sManectricLevelUpLearnset,
+        .levelUpLearnset = sArauna310LevelUpLearnset,
         .teachableLearnset = sManectricTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -18399,7 +18399,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Plusle)
-        .levelUpLearnset = sPlusleLevelUpLearnset,
+        .levelUpLearnset = sArauna311LevelUpLearnset,
         .teachableLearnset = sPlusleTeachableLearnset,
         .eggMoveLearnset = sPlusleEggMoveLearnset,
     },
@@ -18458,7 +18458,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Minun)
-        .levelUpLearnset = sMinunLevelUpLearnset,
+        .levelUpLearnset = sArauna312LevelUpLearnset,
         .teachableLearnset = sMinunTeachableLearnset,
         .eggMoveLearnset = sMinunEggMoveLearnset,
     },
@@ -18517,7 +18517,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Volbeat)
-        .levelUpLearnset = sVolbeatLevelUpLearnset,
+        .levelUpLearnset = sArauna313LevelUpLearnset,
         .teachableLearnset = sVolbeatTeachableLearnset,
         .eggMoveLearnset = sVolbeatEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_GULPIN}),
@@ -18577,7 +18577,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Illumise)
-        .levelUpLearnset = sIllumiseLevelUpLearnset,
+        .levelUpLearnset = sArauna314LevelUpLearnset,
         .teachableLearnset = sIllumiseTeachableLearnset,
         .eggMoveLearnset = sIllumiseEggMoveLearnset,
     },
@@ -18636,7 +18636,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Roselia)
-        .levelUpLearnset = sRoseliaLevelUpLearnset,
+        .levelUpLearnset = sArauna315LevelUpLearnset,
         .teachableLearnset = sRoseliaTeachableLearnset,
         .eggMoveLearnset = sRoseliaEggMoveLearnset,
     },
@@ -18695,7 +18695,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Gulpin)
-        .levelUpLearnset = sGulpinLevelUpLearnset,
+        .levelUpLearnset = sArauna316LevelUpLearnset,
         .teachableLearnset = sGulpinTeachableLearnset,
         .eggMoveLearnset = sGulpinEggMoveLearnset,
     },
@@ -18754,7 +18754,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Swalot)
-        .levelUpLearnset = sSwalotLevelUpLearnset,
+        .levelUpLearnset = sArauna317LevelUpLearnset,
         .teachableLearnset = sSwalotTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -18813,7 +18813,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Carvanha)
-        .levelUpLearnset = sCarvanhaLevelUpLearnset,
+        .levelUpLearnset = sArauna318LevelUpLearnset,
         .teachableLearnset = sCarvanhaTeachableLearnset,
         .eggMoveLearnset = sCarvanhaEggMoveLearnset,
     },
@@ -18872,7 +18872,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Sharpedo)
-        .levelUpLearnset = sSharpedoLevelUpLearnset,
+        .levelUpLearnset = sArauna319LevelUpLearnset,
         .teachableLearnset = sSharpedoTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -18931,7 +18931,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Wailmer)
-        .levelUpLearnset = sWailmerLevelUpLearnset,
+        .levelUpLearnset = sArauna320LevelUpLearnset,
         .teachableLearnset = sWailmerTeachableLearnset,
         .eggMoveLearnset = sWailmerEggMoveLearnset,
     },
@@ -18990,7 +18990,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Wailord)
-        .levelUpLearnset = sWailordLevelUpLearnset,
+        .levelUpLearnset = sArauna321LevelUpLearnset,
         .teachableLearnset = sWailordTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -19049,7 +19049,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Numel)
-        .levelUpLearnset = sNumelLevelUpLearnset,
+        .levelUpLearnset = sArauna322LevelUpLearnset,
         .teachableLearnset = sNumelTeachableLearnset,
         .eggMoveLearnset = sNumelEggMoveLearnset,
     },
@@ -19108,7 +19108,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Camerupt)
-        .levelUpLearnset = sCameruptLevelUpLearnset,
+        .levelUpLearnset = sArauna323LevelUpLearnset,
         .teachableLearnset = sCameruptTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -19167,7 +19167,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Torkoal)
-        .levelUpLearnset = sTorkoalLevelUpLearnset,
+        .levelUpLearnset = sArauna324LevelUpLearnset,
         .teachableLearnset = sTorkoalTeachableLearnset,
         .eggMoveLearnset = sTorkoalEggMoveLearnset,
     },
@@ -19226,7 +19226,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Spoink)
-        .levelUpLearnset = sSpoinkLevelUpLearnset,
+        .levelUpLearnset = sArauna325LevelUpLearnset,
         .teachableLearnset = sSpoinkTeachableLearnset,
         .eggMoveLearnset = sSpoinkEggMoveLearnset,
     },
@@ -19285,7 +19285,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Grumpig)
-        .levelUpLearnset = sGrumpigLevelUpLearnset,
+        .levelUpLearnset = sArauna326LevelUpLearnset,
         .teachableLearnset = sGrumpigTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -19344,7 +19344,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Spinda)
-        .levelUpLearnset = sSpindaLevelUpLearnset,
+        .levelUpLearnset = sArauna327LevelUpLearnset,
         .teachableLearnset = sSpindaTeachableLearnset,
         .eggMoveLearnset = sSpindaEggMoveLearnset,
     },
@@ -19403,7 +19403,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Trapinch)
-        .levelUpLearnset = sTrapinchLevelUpLearnset,
+        .levelUpLearnset = sArauna328LevelUpLearnset,
         .teachableLearnset = sTrapinchTeachableLearnset,
         .eggMoveLearnset = sTrapinchEggMoveLearnset,
     },
@@ -19462,7 +19462,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Vibrava)
-        .levelUpLearnset = sVibravaLevelUpLearnset,
+        .levelUpLearnset = sArauna329LevelUpLearnset,
         .teachableLearnset = sVibravaTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -19521,7 +19521,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Flygon)
-        .levelUpLearnset = sFlygonLevelUpLearnset,
+        .levelUpLearnset = sArauna330LevelUpLearnset,
         .teachableLearnset = sFlygonTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -19580,7 +19580,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Cacnea)
-        .levelUpLearnset = sCacneaLevelUpLearnset,
+        .levelUpLearnset = sArauna331LevelUpLearnset,
         .teachableLearnset = sCacneaTeachableLearnset,
         .eggMoveLearnset = sCacneaEggMoveLearnset,
     },
@@ -19639,7 +19639,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Cacturne)
-        .levelUpLearnset = sCacturneLevelUpLearnset,
+        .levelUpLearnset = sArauna332LevelUpLearnset,
         .teachableLearnset = sCacturneTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -19698,7 +19698,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Swablu)
-        .levelUpLearnset = sSwabluLevelUpLearnset,
+        .levelUpLearnset = sArauna333LevelUpLearnset,
         .teachableLearnset = sSwabluTeachableLearnset,
         .eggMoveLearnset = sSwabluEggMoveLearnset,
     },
@@ -19757,7 +19757,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Altaria)
-        .levelUpLearnset = sAltariaLevelUpLearnset,
+        .levelUpLearnset = sArauna334LevelUpLearnset,
         .teachableLearnset = sAltariaTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -19816,7 +19816,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Zangoose)
-        .levelUpLearnset = sZangooseLevelUpLearnset,
+        .levelUpLearnset = sArauna335LevelUpLearnset,
         .teachableLearnset = sZangooseTeachableLearnset,
         .eggMoveLearnset = sZangooseEggMoveLearnset,
     },
@@ -19875,7 +19875,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Seviper)
-        .levelUpLearnset = sSeviperLevelUpLearnset,
+        .levelUpLearnset = sArauna336LevelUpLearnset,
         .teachableLearnset = sSeviperTeachableLearnset,
         .eggMoveLearnset = sSeviperEggMoveLearnset,
     },
@@ -19934,7 +19934,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Lunatone)
-        .levelUpLearnset = sLunatoneLevelUpLearnset,
+        .levelUpLearnset = sArauna337LevelUpLearnset,
         .teachableLearnset = sLunatoneTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -19993,7 +19993,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Solrock)
-        .levelUpLearnset = sSolrockLevelUpLearnset,
+        .levelUpLearnset = sArauna338LevelUpLearnset,
         .teachableLearnset = sSolrockTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -20052,7 +20052,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Barboach)
-        .levelUpLearnset = sBarboachLevelUpLearnset,
+        .levelUpLearnset = sArauna339LevelUpLearnset,
         .teachableLearnset = sBarboachTeachableLearnset,
         .eggMoveLearnset = sBarboachEggMoveLearnset,
     },
@@ -20111,7 +20111,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Whiscash)
-        .levelUpLearnset = sWhiscashLevelUpLearnset,
+        .levelUpLearnset = sArauna340LevelUpLearnset,
         .teachableLearnset = sWhiscashTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -20170,7 +20170,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Corphish)
-        .levelUpLearnset = sCorphishLevelUpLearnset,
+        .levelUpLearnset = sArauna341LevelUpLearnset,
         .teachableLearnset = sCorphishTeachableLearnset,
         .eggMoveLearnset = sCorphishEggMoveLearnset,
     },
@@ -20229,7 +20229,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Crawdaunt)
-        .levelUpLearnset = sCrawdauntLevelUpLearnset,
+        .levelUpLearnset = sArauna342LevelUpLearnset,
         .teachableLearnset = sCrawdauntTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -20288,7 +20288,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Baltoy)
-        .levelUpLearnset = sBaltoyLevelUpLearnset,
+        .levelUpLearnset = sArauna343LevelUpLearnset,
         .teachableLearnset = sBaltoyTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -20346,7 +20346,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Claydol)
-        .levelUpLearnset = sClaydolLevelUpLearnset,
+        .levelUpLearnset = sArauna344LevelUpLearnset,
         .teachableLearnset = sClaydolTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -20405,7 +20405,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Lileep)
-        .levelUpLearnset = sLileepLevelUpLearnset,
+        .levelUpLearnset = sArauna345LevelUpLearnset,
         .teachableLearnset = sLileepTeachableLearnset,
         .eggMoveLearnset = sLileepEggMoveLearnset,
     },
@@ -20464,7 +20464,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Cradily)
-        .levelUpLearnset = sCradilyLevelUpLearnset,
+        .levelUpLearnset = sArauna346LevelUpLearnset,
         .teachableLearnset = sCradilyTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -20523,7 +20523,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Anorith)
-        .levelUpLearnset = sAnorithLevelUpLearnset,
+        .levelUpLearnset = sArauna347LevelUpLearnset,
         .teachableLearnset = sAnorithTeachableLearnset,
         .eggMoveLearnset = sAnorithEggMoveLearnset,
     },
@@ -20582,7 +20582,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Armaldo)
-        .levelUpLearnset = sArmaldoLevelUpLearnset,
+        .levelUpLearnset = sArauna348LevelUpLearnset,
         .teachableLearnset = sArmaldoTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -20641,7 +20641,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Feebas)
-        .levelUpLearnset = sFeebasLevelUpLearnset,
+        .levelUpLearnset = sArauna349LevelUpLearnset,
         .teachableLearnset = sFeebasTeachableLearnset,
         .eggMoveLearnset = sFeebasEggMoveLearnset,
     },
@@ -20700,7 +20700,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Milotic)
-        .levelUpLearnset = sMiloticLevelUpLearnset,
+        .levelUpLearnset = sArauna350LevelUpLearnset,
         .teachableLearnset = sMiloticTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -20759,7 +20759,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Castform)
-        .levelUpLearnset = sCastformLevelUpLearnset,
+        .levelUpLearnset = sArauna351LevelUpLearnset,
         .teachableLearnset = sCastformTeachableLearnset,
         .eggMoveLearnset = sCastformEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 18, SPECIES_KECLEON}),
@@ -20819,7 +20819,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Kecleon)
-        .levelUpLearnset = sKecleonLevelUpLearnset,
+        .levelUpLearnset = sArauna352LevelUpLearnset,
         .teachableLearnset = sKecleonTeachableLearnset,
         .eggMoveLearnset = sKecleonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_SHUPPET}),
@@ -20879,7 +20879,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Shuppet)
-        .levelUpLearnset = sShuppetLevelUpLearnset,
+        .levelUpLearnset = sArauna353LevelUpLearnset,
         .teachableLearnset = sShuppetTeachableLearnset,
         .eggMoveLearnset = sShuppetEggMoveLearnset,
     },
@@ -20938,7 +20938,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Banette)
-        .levelUpLearnset = sBanetteLevelUpLearnset,
+        .levelUpLearnset = sArauna354LevelUpLearnset,
         .teachableLearnset = sBanetteTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_DUSKULL}),
@@ -20998,7 +20998,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Duskull)
-        .levelUpLearnset = sDuskullLevelUpLearnset,
+        .levelUpLearnset = sArauna355LevelUpLearnset,
         .teachableLearnset = sDuskullTeachableLearnset,
         .eggMoveLearnset = sDuskullEggMoveLearnset,
     },
@@ -21056,7 +21056,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Dusclops)
-        .levelUpLearnset = sDusclopsLevelUpLearnset,
+        .levelUpLearnset = sArauna356LevelUpLearnset,
         .teachableLearnset = sDusclopsTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_TROPIUS}),
@@ -21116,7 +21116,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Tropius)
-        .levelUpLearnset = sTropiusLevelUpLearnset,
+        .levelUpLearnset = sArauna357LevelUpLearnset,
         .teachableLearnset = sTropiusTeachableLearnset,
         .eggMoveLearnset = sTropiusEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_CHIMECHO}),
@@ -21176,7 +21176,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Chimecho)
-        .levelUpLearnset = sChimechoLevelUpLearnset,
+        .levelUpLearnset = sArauna358LevelUpLearnset,
         .teachableLearnset = sChimechoTeachableLearnset,
         .eggMoveLearnset = sChimechoEggMoveLearnset,
     },
@@ -21234,7 +21234,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Absol)
-        .levelUpLearnset = sAbsolLevelUpLearnset,
+        .levelUpLearnset = sArauna359LevelUpLearnset,
         .teachableLearnset = sAbsolTeachableLearnset,
         .eggMoveLearnset = sAbsolEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_WYNAUT}),
@@ -21294,7 +21294,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Wynaut)
-        .levelUpLearnset = sWynautLevelUpLearnset,
+        .levelUpLearnset = sArauna360LevelUpLearnset,
         .teachableLearnset = sWynautTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -21353,7 +21353,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Snorunt)
-        .levelUpLearnset = sSnoruntLevelUpLearnset,
+        .levelUpLearnset = sArauna361LevelUpLearnset,
         .teachableLearnset = sSnoruntTeachableLearnset,
         .eggMoveLearnset = sSnoruntEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_GLALIE}),
@@ -21413,7 +21413,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Glalie)
-        .levelUpLearnset = sGlalieLevelUpLearnset,
+        .levelUpLearnset = sArauna362LevelUpLearnset,
         .teachableLearnset = sGlalieTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_SPHEAL}),
@@ -21473,7 +21473,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Spheal)
-        .levelUpLearnset = sSphealLevelUpLearnset,
+        .levelUpLearnset = sArauna363LevelUpLearnset,
         .teachableLearnset = sSphealTeachableLearnset,
         .eggMoveLearnset = sSphealEggMoveLearnset,
     },
@@ -21532,7 +21532,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Sealeo)
-        .levelUpLearnset = sSealeoLevelUpLearnset,
+        .levelUpLearnset = sArauna364LevelUpLearnset,
         .teachableLearnset = sSealeoTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -21591,7 +21591,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Walrein)
-        .levelUpLearnset = sWalreinLevelUpLearnset,
+        .levelUpLearnset = sArauna365LevelUpLearnset,
         .teachableLearnset = sWalreinTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -21650,7 +21650,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Clamperl)
-        .levelUpLearnset = sClamperlLevelUpLearnset,
+        .levelUpLearnset = sArauna366LevelUpLearnset,
         .teachableLearnset = sClamperlTeachableLearnset,
         .eggMoveLearnset = sClamperlEggMoveLearnset,
     },
@@ -21709,7 +21709,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Huntail)
-        .levelUpLearnset = sHuntailLevelUpLearnset,
+        .levelUpLearnset = sArauna367LevelUpLearnset,
         .teachableLearnset = sHuntailTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -21768,7 +21768,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Gorebyss)
-        .levelUpLearnset = sGorebyssLevelUpLearnset,
+        .levelUpLearnset = sArauna368LevelUpLearnset,
         .teachableLearnset = sGorebyssTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -21827,7 +21827,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Relicanth)
-        .levelUpLearnset = sRelicanthLevelUpLearnset,
+        .levelUpLearnset = sArauna369LevelUpLearnset,
         .teachableLearnset = sRelicanthTeachableLearnset,
         .eggMoveLearnset = sRelicanthEggMoveLearnset,
     },
@@ -21886,7 +21886,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Luvdisc)
-        .levelUpLearnset = sLuvdiscLevelUpLearnset,
+        .levelUpLearnset = sArauna370LevelUpLearnset,
         .teachableLearnset = sLuvdiscTeachableLearnset,
         .eggMoveLearnset = sLuvdiscEggMoveLearnset,
     },
@@ -21945,7 +21945,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Bagon)
-        .levelUpLearnset = sBagonLevelUpLearnset,
+        .levelUpLearnset = sArauna371LevelUpLearnset,
         .teachableLearnset = sBagonTeachableLearnset,
         .eggMoveLearnset = sBagonEggMoveLearnset,
     },
@@ -22004,7 +22004,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Shelgon)
-        .levelUpLearnset = sShelgonLevelUpLearnset,
+        .levelUpLearnset = sArauna372LevelUpLearnset,
         .teachableLearnset = sShelgonTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -22063,7 +22063,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Salamence)
-        .levelUpLearnset = sSalamenceLevelUpLearnset,
+        .levelUpLearnset = sArauna373LevelUpLearnset,
         .teachableLearnset = sSalamenceTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -22122,7 +22122,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Beldum)
-        .levelUpLearnset = sBeldumLevelUpLearnset,
+        .levelUpLearnset = sArauna374LevelUpLearnset,
         .teachableLearnset = sBeldumTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -22181,7 +22181,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Metang)
-        .levelUpLearnset = sMetangLevelUpLearnset,
+        .levelUpLearnset = sArauna375LevelUpLearnset,
         .teachableLearnset = sMetangTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -22240,7 +22240,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Metagross)
-        .levelUpLearnset = sMetagrossLevelUpLearnset,
+        .levelUpLearnset = sArauna376LevelUpLearnset,
         .teachableLearnset = sMetagrossTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -22299,7 +22299,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Regirock)
-        .levelUpLearnset = sRegirockLevelUpLearnset,
+        .levelUpLearnset = sArauna377LevelUpLearnset,
         .teachableLearnset = sRegirockTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -22358,7 +22358,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Regice)
-        .levelUpLearnset = sRegiceLevelUpLearnset,
+        .levelUpLearnset = sArauna378LevelUpLearnset,
         .teachableLearnset = sRegiceTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -22417,7 +22417,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Registeel)
-        .levelUpLearnset = sRegisteelLevelUpLearnset,
+        .levelUpLearnset = sArauna379LevelUpLearnset,
         .teachableLearnset = sRegisteelTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -22476,7 +22476,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Latias)
-        .levelUpLearnset = sLatiasLevelUpLearnset,
+        .levelUpLearnset = sArauna380LevelUpLearnset,
         .teachableLearnset = sLatiasTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -22535,7 +22535,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Latios)
-        .levelUpLearnset = sLatiosLevelUpLearnset,
+        .levelUpLearnset = sArauna381LevelUpLearnset,
         .teachableLearnset = sLatiosTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -22594,7 +22594,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Kyogre)
-        .levelUpLearnset = sKyogreLevelUpLearnset,
+        .levelUpLearnset = sArauna382LevelUpLearnset,
         .teachableLearnset = sKyogreTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -22653,7 +22653,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Groudon)
-        .levelUpLearnset = sGroudonLevelUpLearnset,
+        .levelUpLearnset = sArauna383LevelUpLearnset,
         .teachableLearnset = sGroudonTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -22712,7 +22712,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Rayquaza)
-        .levelUpLearnset = sRayquazaLevelUpLearnset,
+        .levelUpLearnset = sArauna384LevelUpLearnset,
         .teachableLearnset = sRayquazaTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -22771,7 +22771,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Jirachi)
-        .levelUpLearnset = sJirachiLevelUpLearnset,
+        .levelUpLearnset = sArauna385LevelUpLearnset,
         .teachableLearnset = sJirachiTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -22830,7 +22830,7 @@
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Deoxys)
-        .levelUpLearnset = sDeoxysNormalLevelUpLearnset,
+        .levelUpLearnset = sArauna386LevelUpLearnset,
         .teachableLearnset = sDeoxysNormalTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
