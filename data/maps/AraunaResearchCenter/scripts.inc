@@ -73,7 +73,6 @@ AraunaResearchCenter_EventScript_CompleteChoice::
 	setflag FLAG_SYS_POKEMON_GET
 	setflag FLAG_SYS_POKEDEX_GET
 	special SetUnlockedPokedexFlags
-	special EnableNationalPokedex
 	setrespawn HEAL_LOCATION_ARAUNA_RESEARCH_CENTER
 	setvar VAR_ARAUNA_STORY_STAGE, 2
 	special HealPlayerParty
