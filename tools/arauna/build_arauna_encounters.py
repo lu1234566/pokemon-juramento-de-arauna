@@ -312,6 +312,8 @@ def ensure_wild_coverage(data: dict, profiles: list[dict]) -> int:
         for slot in slots:
             if slot["method"] not in profile["methods"]:
                 continue
+            if profile["evolution_level"] and slot["max_level"] + 1 < profile["evolution_level"]:
+                continue
             current = slot["mon"]["species"]
             if counts[current] <= 1:
                 continue
