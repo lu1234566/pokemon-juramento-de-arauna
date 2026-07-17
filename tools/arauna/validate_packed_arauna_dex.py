@@ -232,6 +232,149 @@ def validate_learnsets() -> None:
             "src/pokemon.c does not load the Arauna learnsets")
 
 
+def normalize_species(value: str) -> str:
+    value = value.upper().removeprefix("SPECIES_")
+    return re.sub(r"[^A-Z0-9]", "", value)
+
+
+def trainer_species(line: str) -> str | None:
+    stripped = line.strip()
+    if (not stripped or ":" in stripped or stripped.startswith(("===", "/*", "*", "//", "-"))
+            or stripped.endswith("*/")):
+        return None
+    core = stripped.split(" @ ", 1)[0]
+    parentheses = list(re.finditer(r"\(([^()]*)\)", core))
+    species_paren = next((match for match in parentheses if match.group(1) not in {"M", "F"}), None)
+    if species_paren:
+        return species_paren.group(1)
+    return re.sub(r"\s+\([MF]\)$", "", core).strip()
+
+
+def validate_battle_profiles() -> None:
+    source = read_json("docs/arauna/source/pokedex.json")
+    story = read_json("docs/arauna/source/story_roles.json")
+    profiles = read_csv("docs/arauna/ARAUNA_BATTLE_PROFILES.csv")
+    numeric_ids(profiles, "id", "battle profiles")
+    profiles_by_id = {int(row["id"]): row for row in profiles}
+    source_by_id = {int(entry["id"]): entry for entry in source["pokemon"]}
+
+    species_text = read_text("src/data/pokemon/species_info/arauna_dex.h")
+    species_blocks = re.findall(
+        r"^\s*\[SPECIES_([A-Z0-9_]+)\]\s*=\s*\{(.*?)^\s*\},",
+        species_text,
+        flags=re.MULTILINE | re.DOTALL,
+    )
+    require(len(species_blocks) == DEX_SIZE, "battle profiles could not map all species blocks")
+    species_by_id = {number: f"SPECIES_{species_blocks[number - 1][0]}" for number in EXPECTED_IDS}
+
+    noncapturable = {int(entry["id"]) for entry in story.get("nonCapturable", [])}
+    biologically_protected = set(noncapturable)
+    biologically_protected.update(
+        number for number, entry in source_by_id.items()
+        if entry.get("legendary") or entry.get("mythical")
+    )
+    known_abilities = set(matches(read_text("include/constants/abilities.h"), r"\b(ABILITY_[A-Z0-9_]+)\b"))
+    used_abilities = set()
+    egg_groups = set()
+    for number in EXPECTED_IDS:
+        row = profiles_by_id[number]
+        block = species_blocks[number - 1][1]
+        require(row["engine_species"] == species_by_id[number],
+                f"battle profile engine mapping mismatch at #{number:03d}")
+        for field in ("ability1", "ability2", "hidden_ability"):
+            ability = row[field]
+            require(ability in known_abilities and ability != "ABILITY_NONE",
+                    f"battle profile #{number:03d} has invalid {field}")
+            used_abilities.add(ability)
+        egg_groups.update((row["egg_group1"], row["egg_group2"]))
+
+        groups = row["egg_group1"] if row["egg_group1"] == row["egg_group2"] else f"{row['egg_group1']}, {row['egg_group2']}"
+        expected_lines = (
+            f".catchRate = {row['catch_rate']},",
+            f".expYield = {row['exp_yield']},",
+            f".genderRatio = {row['gender_ratio']},",
+            f".eggCycles = {row['egg_cycles']},",
+            f".growthRate = {row['growth_rate']},",
+            f".eggGroups = MON_EGG_GROUPS({groups}),",
+            f".abilities = {{ {row['ability1']}, {row['ability2']}, {row['hidden_ability']} }},",
+            f".levelUpLearnset = sArauna{number:03d}LevelUpLearnset,",
+            ".eggMoveLearnset = sNoneEggMoveLearnset,",
+        )
+        for line in expected_lines:
+            require(line in block, f"species table differs from battle profile #{number:03d}: {line}")
+
+        if number in biologically_protected:
+            require(row["gender_ratio"] == "MON_GENDERLESS",
+                    f"protected species #{number:03d} must be genderless")
+            require(row["egg_group1"] == row["egg_group2"] == "EGG_GROUP_NO_EGGS_DISCOVERED",
+                    f"protected species #{number:03d} must not breed")
+        else:
+            require(row["gender_ratio"] != "MON_GENDERLESS",
+                    f"ordinary species #{number:03d} is unexpectedly genderless")
+            require("EGG_GROUP_NO_EGGS_DISCOVERED" not in (row["egg_group1"], row["egg_group2"]),
+                    f"ordinary species #{number:03d} cannot breed")
+        if number in noncapturable:
+            require(row["catch_rate"] == "0", f"non-capturable species #{number:03d} has a catch rate")
+
+    require(len(used_abilities) >= 35,
+            f"battle profiles use too little ability variety: {len(used_abilities)}")
+    require(len(egg_groups) >= 12,
+            f"battle profiles use too little egg-group variety: {len(egg_groups)}")
+
+    teachables = read_json("src/data/pokemon/arauna_teachables.json")
+    expected_keys = {species.removeprefix("SPECIES_") for species in species_by_id.values()}
+    require(set(teachables) == expected_keys,
+            "Arauna teachable overlay must cover the 386 engine species exactly")
+    known_moves = set(matches(read_text("include/constants/moves.h"), r"\b(MOVE_[A-Z0-9_]+)\b"))
+    for number in EXPECTED_IDS:
+        key = species_by_id[number].removeprefix("SPECIES_")
+        moves = teachables[key]
+        require(len(moves) >= 15 and len(moves) == len(set(moves)),
+                f"teachable overlay #{number:03d} must contain at least 15 unique moves")
+        require(set(moves) <= known_moves,
+                f"teachable overlay #{number:03d} contains an unknown move")
+        types = source_by_id[number].get("types") or ["normal"]
+        if "water" in types:
+            require("MOVE_SURF" in moves, f"water species #{number:03d} cannot learn Surf")
+        if "flying" in types:
+            require("MOVE_FLY" in moves, f"flying species #{number:03d} cannot learn Fly")
+
+    makefile = read_text("Makefile")
+    helper = read_text("tools/learnset_helpers/make_teachables.py")
+    require("ARAUNA_TEACHABLES_JSON" in makefile and "$(ARAUNA_TEACHABLES_JSON)" in makefile,
+            "Makefile does not track the Arauna teachable overlay")
+    require("all_learnables.update(json.load(source_fp))" in helper,
+            "teachable generator does not apply the Arauna overlay")
+    require("--battle-profiles" in read_text("tools/arauna/integrate_full_arauna_dex.py"),
+            "full-Dex integrator does not consume battle profiles")
+
+    trainer_protected = set(ADDITIONAL_STORY_RESERVED_IDS) | biologically_protected
+    trainer_protected.update(int(number) for number in story.get("fadedStorySpecies", []))
+    trainer_protected.update(int(number) for number in story.get("sensitivityReviewRequired", []))
+    by_normalized_species = {
+        normalize_species(species): number for number, species in species_by_id.items()
+    }
+    trainer_text = read_text("src/data/trainers.party")
+    found = set()
+    party_members = 0
+    for line in trainer_text.splitlines():
+        token = trainer_species(line)
+        if token is None:
+            continue
+        number = by_normalized_species.get(normalize_species(token))
+        if number is not None:
+            party_members += 1
+            if number in trainer_protected:
+                found.add(number)
+    require(not found,
+            "ordinary trainer data uses protected Arauna slots: "
+            + ", ".join(f"#{number:03d}" for number in sorted(found)))
+    require(party_members >= 1800, f"trainer audit parsed only {party_members} party members")
+    levels = [int(value) for value in matches(trainer_text, r"^Level:\s*(\d+)\s*$")]
+    require(levels and min(levels) >= 1 and max(levels) <= 100,
+            "trainer levels must remain within 1-100")
+
+
 def validate_encounter_ecology() -> None:
     source = read_json("docs/arauna/source/pokedex.json")
     story = read_json("docs/arauna/source/story_roles.json")
@@ -380,13 +523,14 @@ def main() -> int:
         validate_species_table()
         validate_packed_graphics()
         validate_learnsets()
+        validate_battle_profiles()
         validate_encounter_ecology()
         validate_runtime_integration()
     except (OSError, UnicodeError, json.JSONDecodeError, csv.Error, ValidationError, ValueError) as exc:
         print(f"Arauna packed Dex validation failed: {exc}", file=sys.stderr)
         return 1
 
-    print("Arauna packed Dex validation passed: 386 species, 386 learnsets, 321 wild species, 81 evolutions, 1,930 graphic resources.")
+    print("Arauna packed Dex validation passed: 386 battle profiles, 386 learnsets, 386 TM overlays, 321 wild species, 81 evolutions, 1,930 graphic resources.")
     return 0
 
 
