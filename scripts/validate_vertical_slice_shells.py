@@ -37,7 +37,7 @@ EXPECTED_MAPS = {
         "MAP_ARAUNA_FIRST_LINK_RUIN",
         "LAYOUT_ARAUNA_FIRST_LINK_RUIN",
         2,
-        0,
+        1,
     ),
     "AraunaFirstLinkChamber": (
         "MAP_ARAUNA_FIRST_LINK_CHAMBER",
@@ -246,7 +246,7 @@ def main() -> int:
 
     print(
         "Validated 6 independent Arauna layouts, 12 reciprocal warp anchors, "
-        "5 coordinate transitions, vanilla village doors, passable endpoints, and a connected "
+        "6 coordinate transitions, vanilla village doors, passable endpoints, and a connected "
         "vertical-slice map graph."
     )
     return 0
