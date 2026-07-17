@@ -5848,10 +5848,10 @@
         .height = 31,
         .weight = 605,
         .description = COMPOUND_STRING(
-            "Mula-sem-Cabeça lives in Arauna\n"
-            "Cerrado. This Fire/Ghost POKéMON\n"
-            "embodies a part of Brazil's nature,\n"
-            "folklore, or culture."),
+            "Born from a town's cruel gossip,\n"
+            "this headless mare now guards people\n"
+            "harmed by lies and public\n"
+            "condemnation."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -14005,10 +14005,10 @@
         .height = 28,
         .weight = 875,
         .description = COMPOUND_STRING(
-            "Lobisomem lives in Arauna Cerrado.\n"
-            "This Dark/Normal POKéMON embodies a\n"
-            "part of Brazil's nature, folklore,\n"
-            "or culture."),
+            "It fades when its story goes untold.\n"
+            "Its howl is less a curse than a plea\n"
+            "to remember the person behind the\n"
+            "beast."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -15421,10 +15421,10 @@
         .height = 4,
         .weight = 335,
         .description = COMPOUND_STRING(
-            "Curupira-Ancião lives in Arauna\n"
-            "Amazon. This Grass/Fairy POKéMON\n"
-            "embodies a part of Brazil's nature,\n"
-            "folklore, or culture."),
+            "An ancient Curupira that remembers\n"
+            "paths erased from every map. Its\n"
+            "final backward tracks always point\n"
+            "the next guardian forward."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -15641,7 +15641,7 @@
         .baseSpAttack  = 110,
         .baseSpDefense = 100,
         .types = MON_TYPES(TYPE_GHOST, TYPE_PSYCHIC),
-        .catchRate = 45,
+        .catchRate = 0,
         .expYield = 201,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
@@ -15657,10 +15657,10 @@
         .height = 11,
         .weight = 395,
         .description = COMPOUND_STRING(
-            "Preto-Velho, the Sage POKéMON,\n"
-            "inhabits Arauna Cities. Its\n"
-            "Ghost/Psychic nature reflects\n"
-            "Brazil's wildlife and legends."),
+            "A revered ancestor who safeguards\n"
+            "stories omitted from official\n"
+            "records. It asks impatient listeners\n"
+            "to sit and hear them again."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -15893,10 +15893,10 @@
         .height = 16,
         .weight = 455,
         .description = COMPOUND_STRING(
-            "Found in Arauna Caatinga, Cangaceiro\n"
-            "is known as the Bandit POKéMON. It\n"
-            "carries a distinct Dark/Fighting\n"
-            "affinity."),
+            "It carries the anger of forgotten\n"
+            "backlands communities. It lowers its\n"
+            "weapon only when drought and\n"
+            "injustice are truly faced."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -16896,10 +16896,10 @@
         .height = 12,
         .weight = 710,
         .description = COMPOUND_STRING(
-            "Iara-Mãe, the Goddess POKéMON,\n"
-            "inhabits Arauna Amazon. Its\n"
-            "Water/Fairy nature reflects Brazil's\n"
-            "wildlife and legends."),
+            "The eldest voice beneath the river.\n"
+            "Its song can restore poisoned water,\n"
+            "but it teaches that grief must be\n"
+            "carried by memory."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -17191,10 +17191,10 @@
         .height = 19,
         .weight = 785,
         .description = COMPOUND_STRING(
-            "Cobra-Norato lives in Arauna Amazon.\n"
-            "This Water/Dragon POKéMON embodies a\n"
-            "part of Brazil's nature, folklore,\n"
-            "or culture."),
+            "It moves between human and serpent\n"
+            "forms. Old records say the first\n"
+            "great dam was built across its\n"
+            "sleeping place."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -19434,10 +19434,10 @@
         .height = 16,
         .weight = 455,
         .description = COMPOUND_STRING(
-            "Found in Arauna Highlands,\n"
-            "Guaraciana is known as the Sun\n"
-            "POKéMON. It carries a distinct\n"
-            "Fire/Fairy affinity."),
+            "A solar guardian that wakes with the\n"
+            "first light. Its glow is one of\n"
+            "twenty signs that Arauna still\n"
+            "remembers itself."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -19493,10 +19493,10 @@
         .height = 18,
         .weight = 470,
         .description = COMPOUND_STRING(
-            "Jaciana lives in Arauna Highlands.\n"
-            "This Fairy/Water POKéMON embodies a\n"
-            "part of Brazil's nature, folklore,\n"
-            "or culture."),
+            "A lunar guardian that watches tides\n"
+            "and dreams. It dims whenever the\n"
+            "stories of the night are treated as\n"
+            "worthless."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -19552,10 +19552,9 @@
         .height = 19,
         .weight = 485,
         .description = COMPOUND_STRING(
-            "Tupanaú, the Thunder POKéMON,\n"
-            "inhabits Arauna Highlands. Its\n"
-            "Electric/Dragon nature reflects\n"
-            "Brazil's wildlife and legends."),
+            "A primordial thunder guardian. One\n"
+            "call can shake the highlands and\n"
+            "awaken stories buried beneath stone."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -19611,10 +19610,9 @@
         .height = 21,
         .weight = 500,
         .description = COMPOUND_STRING(
-            "Found in Arauna Amazon, Iaraú is\n"
-            "known as the Supreme POKéMON. It\n"
-            "carries a distinct Water/Fairy\n"
-            "affinity."),
+            "A supreme river singer. Every\n"
+            "current in its domain bends toward a\n"
+            "story spoken with honesty."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -19670,10 +19668,10 @@
         .height = 22,
         .weight = 515,
         .description = COMPOUND_STRING(
-            "Kuarahy lives in Arauna Highlands.\n"
-            "This Fire/Psychic POKéMON embodies a\n"
-            "part of Brazil's nature, folklore,\n"
-            "or culture."),
+            "Said to carry the light of Arauna's\n"
+            "first morning. It gives warmth to\n"
+            "new tales without erasing the old\n"
+            "ones."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -19729,10 +19727,10 @@
         .height = 24,
         .weight = 530,
         .description = COMPOUND_STRING(
-            "Yasy, the Moon POKéMON, inhabits\n"
-            "Arauna Highlands. Its Fairy/Dark\n"
-            "nature reflects Brazil's wildlife\n"
-            "and legends."),
+            "Keeper of the first moonlit night.\n"
+            "Its silver light preserves dreams\n"
+            "that would otherwise be forgotten at\n"
+            "dawn."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -19788,10 +19786,10 @@
         .height = 25,
         .weight = 545,
         .description = COMPOUND_STRING(
-            "Found in Arauna Coast, Rudarauna is\n"
-            "known as the Love POKéMON. It\n"
-            "carries a distinct Fairy/Psychic\n"
-            "affinity."),
+            "A guardian of bonds freely chosen.\n"
+            "It cannot force affection, but it\n"
+            "can reveal promises made in good\n"
+            "faith."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -19847,10 +19845,9 @@
         .height = 27,
         .weight = 560,
         .description = COMPOUND_STRING(
-            "Perybé lives in Arauna Amazon. This\n"
-            "Water/Psychic POKéMON embodies a\n"
-            "part of Brazil's nature, folklore,\n"
-            "or culture."),
+            "Its body mirrors an entire river\n"
+            "basin, with countless tributaries\n"
+            "moving like veins beneath its skin."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -19906,10 +19903,9 @@
         .height = 28,
         .weight = 575,
         .description = COMPOUND_STRING(
-            "Arauanaú, the Guardian POKéMON,\n"
-            "inhabits Arauna Highlands. Its\n"
-            "Fairy/Dragon nature reflects\n"
-            "Brazil's wildlife and legends."),
+            "Arauna's regional guardian. It\n"
+            "appears only when many communities\n"
+            "remember the same danger at once."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -19965,10 +19961,10 @@
         .height = 30,
         .weight = 590,
         .description = COMPOUND_STRING(
-            "Found in Arauna Amazon, Verdejante\n"
-            "is known as the Verdant POKéMON. It\n"
-            "carries a distinct Grass/Dragon\n"
-            "affinity."),
+            "A forest spirit born again after\n"
+            "every fire. New leaves emerge\n"
+            "wherever its fading green light\n"
+            "touches ash."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -20024,10 +20020,9 @@
         .height = 31,
         .weight = 605,
         .description = COMPOUND_STRING(
-            "Chuvão lives in Arauna Highlands.\n"
-            "This Water/Electric POKéMON embodies\n"
-            "a part of Brazil's nature, folklore,\n"
-            "or culture."),
+            "Guardian of the summer rains. When\n"
+            "imprisoned, clouds become a product\n"
+            "and the backlands begin to crack."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -20083,10 +20078,9 @@
         .height = 3,
         .weight = 620,
         .description = COMPOUND_STRING(
-            "Solzão, the Drought POKéMON,\n"
-            "inhabits Arauna Caatinga. Its\n"
-            "Fire/Ground nature reflects Brazil's\n"
-            "wildlife and legends."),
+            "Guardian of drought and endurance.\n"
+            "Without Chuvão to balance it, its\n"
+            "heat can rule the fields for months."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -20142,10 +20136,10 @@
         .height = 4,
         .weight = 635,
         .description = COMPOUND_STRING(
-            "Found in Arauna Cerrado, Ventania is\n"
-            "known as the Wind POKéMON. It\n"
-            "carries a distinct Flying/Dragon\n"
-            "affinity."),
+            "The southern wind given form. Its\n"
+            "whistle carries cold weather,\n"
+            "distant voices, and warnings between\n"
+            "biomes."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -20201,10 +20195,9 @@
         .height = 6,
         .weight = 650,
         .description = COMPOUND_STRING(
-            "Terraão lives in Arauna Plateaus.\n"
-            "This Ground/Rock POKéMON embodies a\n"
-            "part of Brazil's nature, folklore,\n"
-            "or culture."),
+            "Living fertile earth. Crops rise in\n"
+            "its footsteps, but only where the\n"
+            "ground is treated with care."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -20260,10 +20253,10 @@
         .height = 8,
         .weight = 665,
         .description = COMPOUND_STRING(
-            "Fogaréu, the Fire POKéMON, inhabits\n"
-            "Arauna Highlands. Its Fire/Dragon\n"
-            "nature reflects Brazil's wildlife\n"
-            "and legends."),
+            "The first hearth-fire of Arauna. It\n"
+            "warms gatherings where stories are\n"
+            "shared and turns pale when they fall\n"
+            "silent."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -20319,9 +20312,9 @@
         .height = 9,
         .weight = 680,
         .description = COMPOUND_STRING(
-            "Found in Arauna Coast, Marulho is\n"
-            "known as the Sea POKéMON. It carries\n"
-            "a distinct Water/Dragon affinity."),
+            "The Atlantic tide given memory.\n"
+            "Waves follow its rhythm and return\n"
+            "lost stories to the coast."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -20377,10 +20370,9 @@
         .height = 11,
         .weight = 695,
         .description = COMPOUND_STRING(
-            "Alvorecer lives in Arauna Coast.\n"
-            "This Fairy/Fire POKéMON embodies a\n"
-            "part of Brazil's nature, folklore,\n"
-            "or culture."),
+            "Guardian of daybreak. Rose-gold\n"
+            "light spreads from its body whenever\n"
+            "a forgotten story is told again."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -20436,10 +20428,10 @@
         .height = 12,
         .weight = 710,
         .description = COMPOUND_STRING(
-            "Poente, the Twilight POKéMON,\n"
-            "inhabits Arauna Coast. Its Dark/Fire\n"
-            "nature reflects Brazil's wildlife\n"
-            "and legends."),
+            "Guardian of sunset. It gathers the\n"
+            "day's final colors so that darkness\n"
+            "arrives without erasing what came\n"
+            "before."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -20495,10 +20487,10 @@
         .height = 14,
         .weight = 725,
         .description = COMPOUND_STRING(
-            "Found in Arauna Highlands,\n"
-            "Estrelinha is known as the Star\n"
-            "POKéMON. It carries a distinct\n"
-            "Fairy/Psychic affinity."),
+            "A fallen star that grants one honest\n"
+            "wish. It cannot return the dead, but\n"
+            "it may let their voice be heard once\n"
+            "more."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -20554,10 +20546,10 @@
         .height = 15,
         .weight = 740,
         .description = COMPOUND_STRING(
-            "Arauanamon lives in Arauna\n"
-            "Highlands. This Dragon/Fairy POKéMON\n"
-            "embodies a part of Brazil's nature,\n"
-            "folklore, or culture."),
+            "An embodiment of Arauna's many\n"
+            "biomes. It exists only while no\n"
+            "single story claims to speak for the\n"
+            "whole region."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -22491,7 +22483,7 @@
         .baseSpAttack  = 90,
         .baseSpDefense = 105,
         .types = MON_TYPES(TYPE_FIGHTING, TYPE_DARK),
-        .catchRate = 45,
+        .catchRate = 0,
         .expYield = 218,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
@@ -22507,10 +22499,10 @@
         .height = 24,
         .weight = 1500,
         .description = COMPOUND_STRING(
-            "Zumbi-Rei lives in Arauna Cities.\n"
-            "This Fighting/Dark POKéMON embodies\n"
-            "a part of Brazil's nature, folklore,\n"
-            "or culture."),
+            "A revered ancestor whose memory\n"
+            "became a symbol of freedom. It\n"
+            "stands beside those who preserve\n"
+            "histories of resistance."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -22550,7 +22542,7 @@
         .baseSpAttack  = 140,
         .baseSpDefense = 130,
         .types = MON_TYPES(TYPE_WATER, TYPE_FAIRY),
-        .catchRate = 45,
+        .catchRate = 0,
         .expYield = 232,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
@@ -22566,10 +22558,10 @@
         .height = 28,
         .weight = 1600,
         .description = COMPOUND_STRING(
-            "Iemanjã, the Queen POKéMON, inhabits\n"
-            "Arauna Coast. Its Water/Fairy nature\n"
-            "reflects Brazil's wildlife and\n"
-            "legends."),
+            "A revered queen of the sea. It is\n"
+            "recorded by the Census, but no\n"
+            "Trainer may claim it as a\n"
+            "possession."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -22609,7 +22601,7 @@
         .baseSpAttack  = 135,
         .baseSpDefense = 120,
         .types = MON_TYPES(TYPE_DRAGON, TYPE_FAIRY),
-        .catchRate = 45,
+        .catchRate = 0,
         .expYield = 232,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
@@ -22625,10 +22617,10 @@
         .height = 35,
         .weight = 1750,
         .description = COMPOUND_STRING(
-            "Found in Arauna Coast, Oxumará is\n"
-            "known as the Rainbow POKéMON. It\n"
-            "carries a distinct Dragon/Fairy\n"
-            "affinity."),
+            "A revered rainbow serpent joining\n"
+            "sky and earth. It may bless a\n"
+            "journey, but it can never be\n"
+            "captured."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -22684,10 +22676,10 @@
         .height = 4,
         .weight = 30,
         .description = COMPOUND_STRING(
-            "Curupixel lives in Arauna Amazon.\n"
-            "This Grass/Fairy POKéMON embodies a\n"
-            "part of Brazil's nature, folklore,\n"
-            "or culture."),
+            "A newborn forest guardian that\n"
+            "appears before a child who truly\n"
+            "believes. Its first footprints face\n"
+            "forward."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -22743,10 +22735,10 @@
         .height = 3,
         .weight = 25,
         .description = COMPOUND_STRING(
-            "Sacinho, the Mythical POKéMON,\n"
-            "inhabits Arauna Cerrado. Its\n"
-            "Dark/Fairy nature reflects Brazil's\n"
-            "wildlife and legends."),
+            "A newborn Saci still learning to\n"
+            "ride the wind. Small whirlwinds and\n"
+            "harmless pranks mark every path it\n"
+            "takes."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -22802,10 +22794,10 @@
         .height = 18,
         .weight = 880,
         .description = COMPOUND_STRING(
-            "Found in Arauna Highlands, Arauá is\n"
-            "known as the Origin POKéMON. It\n"
-            "carries a distinct Dragon/Psychic\n"
-            "affinity."),
+            "It is not Arauna's oldest legend,\n"
+            "but the next story the region needs\n"
+            "to hear. It awakens when a new tale\n"
+            "is shared."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
