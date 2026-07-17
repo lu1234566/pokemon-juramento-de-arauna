@@ -36,6 +36,10 @@ jobs:
         run: python3 scripts/check_localization.py
       - name: Validate vertical slice map shells
         run: python3 scripts/validate_vertical_slice_shells.py
+      - name: Verify reproducible vanilla Araucaria village
+        run: |
+          python3 scripts/generate_arauna_vanilla_village.py --out /tmp/arauna-village-map.bin
+          cmp /tmp/arauna-village-map.bin data/layouts/AraunaMapLab/map.bin
       - name: Validate Araucaria art assets
         run: python3 scripts/validate_araucaria_art.py
       - name: Validate Codespaces configuration
