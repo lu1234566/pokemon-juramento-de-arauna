@@ -36,19 +36,19 @@ AraunaResearchCenter_Text_RouteOpen::
 	.string "tries to hide.$"
 
 AraunaResearchCenter_Text_PicaPauPrompt::
-	.string "PIMPAU #007: GRASS.\p"
+	.string "PIMPAU No. 007: GRASS.\p"
 	.string "Uses wood and stone to\n"
 	.string "control the terrain.\p"
 	.string "Choose it as your partner?$"
 
 AraunaResearchCenter_Text_CarameloPrompt::
-	.string "CARAMELO #001: FIRE.\p"
+	.string "CARAMELO No. 001: FIRE.\p"
 	.string "A protective dog that will\n"
 	.string "one day reach FIRE/DRAGON.\p"
 	.string "Choose it as your partner?$"
 
 AraunaResearchCenter_Text_QueroQueroPrompt::
-	.string "QUERÔ #004: WATER.\p"
+	.string "QUERÔ No. 004: WATER.\p"
 	.string "Fast and territorial; it will\n"
 	.string "one day reach WATER/BUG.\p"
 	.string "Choose it as your partner?$"
