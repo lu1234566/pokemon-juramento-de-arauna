@@ -3770,7 +3770,7 @@
               {
                 "min_level": 40,
                 "max_level": 45,
-                "species": "SPECIES_JIGGLYPUFF"
+                "species": "SPECIES_PICHU"
               }
             ]
           }
@@ -16253,7 +16253,7 @@
               {
                 "min_level": 50,
                 "max_level": 60,
-                "species": "SPECIES_SANDSHREW"
+                "species": "SPECIES_JIGGLYPUFF"
               }
             ]
           },
@@ -18879,7 +18879,7 @@
               {
                 "min_level": 40,
                 "max_level": 40,
-                "species": "SPECIES_MEW"
+                "species": "SPECIES_MAROWAK"
               },
               {
                 "min_level": 42,
@@ -30933,7 +30933,7 @@
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_MAROWAK"
+                "species": "SPECIES_DROWZEE"
               }
             ]
           }
