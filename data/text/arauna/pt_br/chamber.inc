@@ -23,9 +23,9 @@ AraunaFirstLinkChamber_Text_GuardianPresence::
 
 AraunaFirstLinkChamber_Text_ChampionMemory::
 	.string "Uma memória invade o selo.\p"
-	.string "A sombra de um CAMPEÃO ergue\n"
+	.string "A sombra de um CAMPEAO ergue\n"
 	.string "a mão contra o próprio Elo.\p"
-	.string "CAMPEÃO: Perdoem-me.\n"
+	.string "CAMPEAO: Perdoem-me.\n"
 	.string "Era a única forma.\p"
 	.string "A imagem termina. Ele vivia.$"
 
@@ -60,7 +60,7 @@ AraunaFirstLinkChamber_Text_CompassionReward::
 
 AraunaFirstLinkChamber_Text_AgentRetreats::
 	.string "AGENTE: Eles precisam saber.\p"
-	.string "O CAMPEÃO ainda existe nestas\n"
+	.string "O CAMPEAO ainda existe nestas\n"
 	.string "memórias.\p"
 	.string "O agente foge pela escuridão.$"
 
@@ -72,4 +72,4 @@ AraunaFirstLinkChamber_Text_RewardBagFull::
 
 AraunaFirstLinkChamber_Text_AfterSlice::
 	.string "O selo agora está silencioso.\p"
-	.string "A memória do CAMPEÃO permanece.$"
+	.string "A memória do CAMPEAO permanece.$"
