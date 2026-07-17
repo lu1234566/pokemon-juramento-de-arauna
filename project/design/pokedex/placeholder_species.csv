@@ -1,0 +1,10 @@
+arauna_slot,arauna_name,placeholder_species,placeholder_national_dex,usage_status,replacement_status,notes
+001,Caramelo,SPECIES_TORCHIC,255,starter-active,external-art-in-progress,Fire placeholder; Arauna Dex number remains 001
+002,Caramelão,SPECIES_COMBUSKEN,256,evolution-reserved,awaiting-approved-package,Evolution of slot 001
+003,Dragauará,SPECIES_BLAZIKEN,257,evolution-reserved,awaiting-approved-package,Final Fire/Dragon form
+004,Querô,SPECIES_MUDKIP,258,starter-active,external-art-in-progress,Water placeholder; Arauna Dex number remains 004
+005,Queribela,SPECIES_MARSHTOMP,259,evolution-reserved,awaiting-approved-package,Water/Bug evolution
+006,Terólibra,SPECIES_SWAMPERT,260,evolution-reserved,awaiting-approved-package,Final Water/Bug form
+007,Pimpau,SPECIES_TREECKO,252,starter-active,external-art-in-progress,Grass placeholder; Arauna Dex number remains 007
+008,Bicopau,SPECIES_GROVYLE,253,evolution-reserved,awaiting-approved-package,Grass evolution
+009,Petronico,SPECIES_SCEPTILE,254,evolution-reserved,awaiting-approved-package,Final Grass/Rock form
