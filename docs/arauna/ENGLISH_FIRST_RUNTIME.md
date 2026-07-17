@@ -8,26 +8,18 @@ The first playable build of **Pokémon Juramento de Arauna** targets English.
 - The original Portuguese export remains in pokedex.json for the later Brazilian Portuguese localization.
 - tools/arauna/integrate_full_arauna_dex.py requires the English localization when rebuilding the species header.
 - tools/arauna/validate_english_runtime.py rejects missing entries, Portuguese fallback prose, obsolete placeholder messages, and incorrectly selected language wrappers.
+- docs/arauna/source/story_roles.json separates Census registration from capture and locks the explicitly revered entities out of normal capture data.
+- docs/arauna/ARAUNA_BATTLE_PROFILES.csv is the reviewable source for abilities, gender, breeding, catch rates, experience and growth curves.
+- src/data/pokemon/arauna_teachables.json overlays the reused engine slots with type- and role-aware TM/HM compatibility.
+- tools/arauna/build_arauna_battle_profiles.py regenerates both datasets and rewires the committed species table without touching art.
+- tools/arauna/audit_arauna_trainers.py prevents legendary, mythical, story-reserved and sensitivity-review slots from appearing in ordinary trainer parties; its last migration is recorded in docs/arauna/ARAUNA_TRAINER_AUDIT.md.
 
-The English build does not delete the Portuguese work. It keeps that material out of the active ROM while the English version is stabilized.
-
-## Arauna Dex runtime contract
-
-- The regional Dex is the Arauna Dex and maps directly to native slots 001-386.
-- The Research Center unlocks the regional Dex without enabling Emerald's unstable National Dex screen.
-- Story-only Testimonies, guardians, legendary species, and mythicals stay out of ordinary wild and trainer tables until they receive scripted encounters.
-- Battle and catching tutorials use a common temporary Arauna species instead of Pomba-Gira.
-- A clean save is recommended when testing changes to Dex numbering and unlock flags.
-
-## Pre-build check in Codespaces
-
-Run the two standard-library checks before compiling. For this Dex migration, use a clean build:
+Regenerate battle data from the repository root with:
 
 ```sh
-python3 tools/arauna/validate_english_runtime.py
+python3 tools/arauna/build_arauna_battle_profiles.py
+python3 tools/arauna/audit_arauna_trainers.py
 python3 tools/arauna/validate_packed_arauna_dex.py
-make clean
-make ARAUNA_LANGUAGE=ENGLISH -j2
 ```
 
-The playable output is `pokeemerald-en.gba`. The English-first CI intentionally does not build the Portuguese ROM yet.
+The English build does not delete the Portuguese work. It keeps that material out of the active ROM while the English version is stabilized.
