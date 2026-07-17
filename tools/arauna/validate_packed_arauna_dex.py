@@ -36,25 +36,7 @@ STARTERS = {
     8: ("Bicopau", "grass"),
     9: ("Petropico", "grass/rock"),
 }
-BLOCKED_ORDINARY_ENCOUNTERS = {
-    "SPECIES_KINGLER",      # Iemanja
-    "SPECIES_PUPITAR",      # Iemanja-Pequena
-    "SPECIES_POOCHYENA",    # Curupira-Anciao
-    "SPECIES_ZIGZAGOON",    # Pomba-Gira
-    "SPECIES_WURMPLE",      # Preto-Velho
-    "SPECIES_BRELOOM",      # Iara-Mae
-    "SPECIES_VIBRAVA", "SPECIES_FLYGON", "SPECIES_CACNEA",
-    "SPECIES_CACTURNE", "SPECIES_SWABLU", "SPECIES_ALTARIA",
-    "SPECIES_ZANGOOSE", "SPECIES_SEVIPER", "SPECIES_LUNATONE",
-    "SPECIES_SOLROCK", "SPECIES_BARBOACH", "SPECIES_WHISCASH",
-    "SPECIES_CORPHISH", "SPECIES_CRAWDAUNT", "SPECIES_BALTOY",
-    "SPECIES_CLAYDOL", "SPECIES_LILEEP", "SPECIES_CRADILY",
-    "SPECIES_ANORITH", "SPECIES_ARMALDO", "SPECIES_METAGROSS",
-    "SPECIES_REGIROCK", "SPECIES_REGICE", "SPECIES_REGISTEEL",
-    "SPECIES_LATIAS", "SPECIES_LATIOS", "SPECIES_KYOGRE",
-    "SPECIES_GROUDON", "SPECIES_RAYQUAZA", "SPECIES_JIRACHI",
-    "SPECIES_DEOXYS",
-}
+ADDITIONAL_STORY_RESERVED_IDS = {256}
 
 
 class ValidationError(RuntimeError):
@@ -250,6 +232,100 @@ def validate_learnsets() -> None:
             "src/pokemon.c does not load the Arauna learnsets")
 
 
+def validate_encounter_ecology() -> None:
+    source = read_json("docs/arauna/source/pokedex.json")
+    story = read_json("docs/arauna/source/story_roles.json")
+    ecology = read_csv("docs/arauna/ARAUNA_ENCOUNTER_ECOLOGY.csv")
+    numeric_ids(ecology, "id", "encounter ecology")
+
+    source_by_id = {int(entry["id"]): entry for entry in source["pokemon"]}
+    species_text = read_text("src/data/pokemon/species_info/arauna_dex.h")
+    species_blocks = re.findall(
+        r"^\s*\[SPECIES_([A-Z0-9_]+)\]\s*=\s*\{(.*?)^\s*\},",
+        species_text,
+        flags=re.MULTILINE | re.DOTALL,
+    )
+    require(len(species_blocks) == DEX_SIZE,
+            "could not map all 386 Arauna IDs to engine species")
+    constant_by_id = {
+        number: f"SPECIES_{species_blocks[number - 1][0]}"
+        for number in EXPECTED_IDS
+    }
+
+    noncapturable_ids = {
+        int(entry["id"]) for entry in story.get("nonCapturable", [])
+    }
+    story_ids = set(ADDITIONAL_STORY_RESERVED_IDS)
+    story_ids.update(noncapturable_ids)
+    story_ids.update(int(value) for value in story.get("fadedStorySpecies", []))
+    story_ids.update(int(value) for value in story.get("sensitivityReviewRequired", []))
+    legendary_ids = {
+        number for number, entry in source_by_id.items()
+        if entry.get("legendary") or entry.get("mythical")
+    }
+    starter_ids = set(range(1, 10))
+    wild_ids = EXPECTED_IDS - story_ids - legendary_ids - starter_ids
+    for number in noncapturable_ids:
+        require(re.search(r"\.catchRate\s*=\s*0,", species_blocks[number - 1][1]) is not None,
+                f"non-capturable story species #{number:03d} has a nonzero catch rate")
+
+    ecology_by_id = {int(row["id"]): row for row in ecology}
+    for number in EXPECTED_IDS:
+        row = ecology_by_id[number]
+        source_entry = source_by_id[number]
+        expected = (
+            "starter" if number in starter_ids else
+            "mythical" if source_entry.get("mythical") else
+            "legendary" if source_entry.get("legendary") else
+            "story" if number in story_ids else
+            "wild"
+        )
+        require(row["species"] == constant_by_id[number],
+                f"ecology species mapping mismatch at #{number:03d}")
+        require(row["availability"] == expected,
+                f"ecology availability mismatch at #{number:03d}")
+        for field in ("types", "source_region", "biome", "tier", "stage", "methods"):
+            require(row[field].strip(), f"ecology #{number:03d} lacks {field}")
+
+    encounters = read_json("src/data/wild_encounters.json")
+    used = set()
+    early_violations = []
+    evolution_violations = []
+    bst_by_species = {row["species"]: int(row["bst"]) for row in ecology}
+    evo_by_species = {row["species"]: int(row["evolution_level"]) for row in ecology}
+    for group in encounters["wild_encounter_groups"]:
+        for encounter in group.get("encounters", []):
+            map_name = encounter.get("map", group["label"])
+            for field, table in encounter.items():
+                if not field.endswith("_mons") or not isinstance(table, dict):
+                    continue
+                for mon in table["mons"]:
+                    species = mon["species"]
+                    max_level = int(mon["max_level"])
+                    used.add(species)
+                    if max_level <= 5 and bst_by_species[species] > 400:
+                        early_violations.append(f"{map_name}:{species}")
+                    if evo_by_species[species] and max_level + 1 < evo_by_species[species]:
+                        evolution_violations.append(f"{map_name}:{species}")
+
+    expected_wild = {constant_by_id[number] for number in wild_ids}
+    require(used == expected_wild,
+            "wild tables must cover every ordinary species and no protected species")
+    require(not early_violations,
+            f"early encounters exceed the BST cap: {', '.join(early_violations[:5])}")
+    require(not evolution_violations,
+            f"evolved species appear too early: {', '.join(evolution_violations[:5])}")
+
+    protected = {
+        constant_by_id[number]
+        for number in story_ids | legendary_ids
+    }
+    trainers = read_text("src/data/trainers.party")
+    found = sorted(species for species in protected if re.search(rf"\b{species}\b", trainers))
+    require(not found,
+            f"ordinary trainer data still uses protected species: {', '.join(found)}")
+
+
 def validate_runtime_integration() -> None:
     constants = read_text("include/constants/pokedex.h")
     regional_match = re.search(
@@ -285,13 +361,6 @@ def validate_runtime_integration() -> None:
     require('gText_DexHoennDescription[] = _("ARAUNA region\'s POKéDEX")' in strings,
             "regional Dex description is not branded for Arauna")
 
-    for relative in ("src/data/wild_encounters.json", "src/data/trainers.party"):
-        text = read_text(relative)
-        found = sorted(species for species in BLOCKED_ORDINARY_ENCOUNTERS
-                       if re.search(rf"\b{species}\b", text))
-        require(not found,
-                f"{relative} still uses story-only species: {', '.join(found)}")
-
     battle_controllers = read_text("src/battle_controllers.c")
     field_specials = read_text("src/field_specials.c")
     require("CreateWildMon(SPECIES_ZIGZAGOON, 2);" not in battle_controllers,
@@ -311,12 +380,13 @@ def main() -> int:
         validate_species_table()
         validate_packed_graphics()
         validate_learnsets()
+        validate_encounter_ecology()
         validate_runtime_integration()
     except (OSError, UnicodeError, json.JSONDecodeError, csv.Error, ValidationError, ValueError) as exc:
         print(f"Arauna packed Dex validation failed: {exc}", file=sys.stderr)
         return 1
 
-    print("Arauna packed Dex validation passed: 386 species, 386 learnsets, 81 evolutions, 1,930 graphic resources.")
+    print("Arauna packed Dex validation passed: 386 species, 386 learnsets, 321 wild species, 81 evolutions, 1,930 graphic resources.")
     return 0
 
 
