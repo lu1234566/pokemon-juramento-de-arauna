@@ -125,6 +125,26 @@ def protected_ids(entries: list[dict], story: dict) -> set[int]:
     return result
 
 
+def evolution_stages(entries: list[dict]) -> dict[int, int]:
+    parent = {}
+    for entry in entries:
+        for evolution in entry.get("evolvesTo") or []:
+            parent[int(evolution["id"])] = int(entry["id"])
+
+    result = {}
+    for entry in entries:
+        number = int(entry["id"])
+        stage = 0
+        seen = set()
+        cursor = number
+        while cursor in parent and cursor not in seen:
+            seen.add(cursor)
+            cursor = parent[cursor]
+            stage += 1
+        result[number] = stage
+    return result
+
+
 def abilities_for(entry: dict) -> tuple[str, str, str]:
     number = int(entry["id"])
     if number in STARTER_ABILITIES:
@@ -162,14 +182,23 @@ def egg_groups_for(entry: dict, protected: bool) -> tuple[str, str]:
     return groups[0], groups[1]
 
 
-def profile_for(entry: dict, species: str, protected: bool, noncapturable: bool) -> dict[str, str]:
+def profile_for(entry: dict, species: str, protected: bool, noncapturable: bool, stage: int) -> dict[str, str]:
     stats = entry["stats"]
     bst = sum(int(stats[key]) for key in ("hp", "atk", "def", "spa", "spd", "spe"))
     ability1, ability2, hidden = abilities_for(entry)
     group1, group2 = egg_groups_for(entry, protected)
     legendary = bool(entry.get("legendary") or entry.get("mythical"))
     growth = "GROWTH_MEDIUM_SLOW" if int(entry["id"]) <= 9 else "GROWTH_SLOW" if legendary or bst >= 560 else "GROWTH_MEDIUM_FAST"
-    catch_rate = 0 if noncapturable else 3 if legendary else 45 if bst >= 560 else 90 if bst >= 490 else 180
+    if noncapturable:
+        catch_rate = 0
+    elif legendary:
+        catch_rate = 3
+    elif int(entry["id"]) <= 9:
+        catch_rate = 45
+    elif stage > 0:
+        catch_rate = 45 if bst >= 500 or stage >= 2 else 90
+    else:
+        catch_rate = 45 if bst >= 560 else 90 if bst >= 490 else 180
     return {
         "id": f"{int(entry['id']):03d}",
         "name": entry["name"],
@@ -181,7 +210,7 @@ def profile_for(entry: dict, species: str, protected: bool, noncapturable: bool)
         "egg_group1": group1,
         "egg_group2": group2,
         "gender_ratio": "MON_GENDERLESS" if protected else "PERCENT_FEMALE(50)",
-        "egg_cycles": "120" if legendary else "40" if protected or bst >= 560 else "20",
+        "egg_cycles": "120" if legendary else "20" if int(entry["id"]) <= 9 else "40" if protected or bst >= 560 else "20",
         "growth_rate": growth,
         "catch_rate": str(catch_rate),
         "exp_yield": str(min(255, max(40, round(bst / 3)))),
@@ -280,8 +309,15 @@ def main() -> None:
     slots = species_slots(species_text)
     protected = protected_ids(entries, story)
     noncapturable = {int(entry["id"]) for entry in story.get("nonCapturable", [])}
+    stages = evolution_stages(entries)
     profiles = [
-        profile_for(entry, slot, int(entry["id"]) in protected, int(entry["id"]) in noncapturable)
+        profile_for(
+            entry,
+            slot,
+            int(entry["id"]) in protected,
+            int(entry["id"]) in noncapturable,
+            stages[int(entry["id"])],
+        )
         for entry, slot in zip(entries, slots)
     ]
 
