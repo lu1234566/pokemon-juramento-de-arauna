@@ -57,8 +57,8 @@
 #define FLAG_ARAUNA_MIST_ROUTE_AFFECTED_MON_CLEARED  0x23
 #define FLAG_ARAUNA_MIST_ROUTE_NOTEBOOK_TAKEN        0x24
 #define FLAG_ARAUNA_FIRST_LINK_RESCUE_COMPLETE      0x25
-#define FLAG_UNUSED_0x026    0x26 // Unused Flag
-#define FLAG_UNUSED_0x027    0x27 // Unused Flag
+#define FLAG_ARAUNA_FIRST_LINK_MEMORY_SEEN           0x26
+#define FLAG_ARAUNA_FIRST_LINK_CHAMBER_COMPLETE      0x27
 #define FLAG_UNUSED_0x028    0x28 // Unused Flag
 #define FLAG_UNUSED_0x029    0x29 // Unused Flag
 #define FLAG_UNUSED_0x02A    0x2A // Unused Flag
