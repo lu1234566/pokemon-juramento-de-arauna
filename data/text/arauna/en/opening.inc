@@ -57,6 +57,13 @@ AraunaResearchCenter_Text_PlaceholderNotice::
 	.string "technical placeholder.\p"
 	.string "No ARAUNA sprite was added\n"
 	.string "without approval.$"
+AraunaResearchCenter_Text_DexActivated::
+	.string "DR. MAIA: The ARAUNA DEX\n"
+	.string "is now active.\p"
+	.string "For now, its 386 slots use\n"
+	.string "official POKéMON placeholders.\p"
+	.string "Each one will be replaced by\n"
+	.string "the fakemon with that number.$"
 
 AraunaResearchCenter_Text_SelectionLocked::
 	.string "Wait for DR. MAIA's call before\n"
