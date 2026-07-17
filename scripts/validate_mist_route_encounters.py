@@ -32,6 +32,15 @@ STARTER_TEXT = {
 }
 
 
+def trainer_block(source: str, trainer: str) -> str:
+    marker = f"=== {trainer} ==="
+    start = source.find(marker)
+    if start < 0:
+        fail(f"missing trainer {trainer}")
+    end = source.find("\n=== TRAINER_", start + len(marker))
+    return source[start:] if end < 0 else source[start:end]
+
+
 def fail(message: str) -> None:
     raise ValueError(message)
 
@@ -85,10 +94,29 @@ def main() -> int:
         if starter not in pt or starter not in en:
             fail(f"both languages must identify starter {starter!r}")
 
+    trainers = read("src/data/trainers.party")
+    nilo = trainer_block(trainers, "TRAINER_ARAUNA_SCOUT_NILO")
+    if "Poochyena\nLevel: 4" not in nilo:
+        fail("Nilo must keep one level-4 Poochyena")
+
+    agent = trainer_block(trainers, "TRAINER_ARAUNA_TECH_AGENT")
+    for token in (
+        "Poochyena\nLevel: 5",
+        "Voltorb\nLevel: 6",
+        "- Tackle",
+        "- Charge",
+        "- Eerie Impulse",
+    ):
+        if token not in agent:
+            fail(f"technical-agent party is missing {token!r}")
+    if "- Thunder Shock" in agent or "- MOVE_THUNDER_SHOCK" in agent:
+        fail("the first miniboss must not single out the Water starter")
+
     print(
         "Validated Mist Route rate 20, twelve land slots at levels 2-5, "
         "seven official placeholder species, Route 101 shell, and the "
-        "Arauna names/numbers of all three starters."
+        "Arauna names/numbers of all three starters, and a type-neutral "
+        "level 4-6 mandatory battle curve."
     )
     return 0
 
