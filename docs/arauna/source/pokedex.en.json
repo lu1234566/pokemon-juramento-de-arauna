@@ -596,7 +596,7 @@
       "id": 99,
       "category": "Cursed",
       "region": "Arauna Cerrado",
-      "dex": "Born from a town's cruel gossip, this headless mare now guards people harmed by lies and public condemnation."
+      "dex": "Mula-sem-Cabeça lives in Arauna Cerrado. This Fire/Ghost POKéMON embodies a part of Brazil's nature, folklore, or culture."
     },
     {
       "id": 100,
@@ -1424,7 +1424,7 @@
       "id": 237,
       "category": "Cursed",
       "region": "Arauna Cerrado",
-      "dex": "It fades when its story goes untold. Its howl is less a curse than a plea to remember the person behind the beast."
+      "dex": "Lobisomem lives in Arauna Cerrado. This Dark/Normal POKéMON embodies a part of Brazil's nature, folklore, or culture."
     },
     {
       "id": 238,
@@ -1568,7 +1568,7 @@
       "id": 261,
       "category": "Guardian",
       "region": "Arauna Amazon",
-      "dex": "An ancient Curupira that remembers paths erased from every map. Its final backward tracks always point the next guardian forward."
+      "dex": "Curupira-Ancião lives in Arauna Amazon. This Grass/Fairy POKéMON embodies a part of Brazil's nature, folklore, or culture."
     },
     {
       "id": 262,
@@ -1592,7 +1592,7 @@
       "id": 265,
       "category": "Sage",
       "region": "Arauna Cities",
-      "dex": "A revered ancestor who safeguards stories omitted from official records. It asks impatient listeners to sit and hear them again."
+      "dex": "Preto-Velho, the Sage POKéMON, inhabits Arauna Cities. Its Ghost/Psychic nature reflects Brazil's wildlife and legends."
     },
     {
       "id": 266,
@@ -1616,7 +1616,7 @@
       "id": 269,
       "category": "Bandit",
       "region": "Arauna Caatinga",
-      "dex": "It carries the anger of forgotten backlands communities. It lowers its weapon only when drought and injustice are truly faced."
+      "dex": "Found in Arauna Caatinga, Cangaceiro is known as the Bandit POKéMON. It carries a distinct Dark/Fighting affinity."
     },
     {
       "id": 270,
@@ -1718,7 +1718,7 @@
       "id": 286,
       "category": "Goddess",
       "region": "Arauna Amazon",
-      "dex": "The eldest voice beneath the river. Its song can restore poisoned water, but it teaches that grief must be carried by memory."
+      "dex": "Iara-Mãe, the Goddess POKéMON, inhabits Arauna Amazon. Its Water/Fairy nature reflects Brazil's wildlife and legends."
     },
     {
       "id": 287,
@@ -1748,7 +1748,7 @@
       "id": 291,
       "category": "Serpent",
       "region": "Arauna Amazon",
-      "dex": "It moves between human and serpent forms. Old records say the first great dam was built across its sleeping place."
+      "dex": "Cobra-Norato lives in Arauna Amazon. This Water/Dragon POKéMON embodies a part of Brazil's nature, folklore, or culture."
     },
     {
       "id": 292,
@@ -1976,121 +1976,121 @@
       "id": 329,
       "category": "Sun",
       "region": "Arauna Highlands",
-      "dex": "A solar guardian that wakes with the first light. Its glow is one of twenty signs that Arauna still remembers itself."
+      "dex": "Found in Arauna Highlands, Guaraciana is known as the Sun POKéMON. It carries a distinct Fire/Fairy affinity."
     },
     {
       "id": 330,
       "category": "Moon",
       "region": "Arauna Highlands",
-      "dex": "A lunar guardian that watches tides and dreams. It dims whenever the stories of the night are treated as worthless."
+      "dex": "Jaciana lives in Arauna Highlands. This Fairy/Water POKéMON embodies a part of Brazil's nature, folklore, or culture."
     },
     {
       "id": 331,
       "category": "Thunder",
       "region": "Arauna Highlands",
-      "dex": "A primordial thunder guardian. One call can shake the highlands and awaken stories buried beneath stone."
+      "dex": "Tupanaú, the Thunder POKéMON, inhabits Arauna Highlands. Its Electric/Dragon nature reflects Brazil's wildlife and legends."
     },
     {
       "id": 332,
       "category": "Supreme",
       "region": "Arauna Amazon",
-      "dex": "A supreme river singer. Every current in its domain bends toward a story spoken with honesty."
+      "dex": "Found in Arauna Amazon, Iaraú is known as the Supreme POKéMON. It carries a distinct Water/Fairy affinity."
     },
     {
       "id": 333,
       "category": "Sun",
       "region": "Arauna Highlands",
-      "dex": "Said to carry the light of Arauna's first morning. It gives warmth to new tales without erasing the old ones."
+      "dex": "Kuarahy lives in Arauna Highlands. This Fire/Psychic POKéMON embodies a part of Brazil's nature, folklore, or culture."
     },
     {
       "id": 334,
       "category": "Moon",
       "region": "Arauna Highlands",
-      "dex": "Keeper of the first moonlit night. Its silver light preserves dreams that would otherwise be forgotten at dawn."
+      "dex": "Yasy, the Moon POKéMON, inhabits Arauna Highlands. Its Fairy/Dark nature reflects Brazil's wildlife and legends."
     },
     {
       "id": 335,
       "category": "Love",
       "region": "Arauna Coast",
-      "dex": "A guardian of bonds freely chosen. It cannot force affection, but it can reveal promises made in good faith."
+      "dex": "Found in Arauna Coast, Rudarauna is known as the Love POKéMON. It carries a distinct Fairy/Psychic affinity."
     },
     {
       "id": 336,
       "category": "River",
       "region": "Arauna Amazon",
-      "dex": "Its body mirrors an entire river basin, with countless tributaries moving like veins beneath its skin."
+      "dex": "Perybé lives in Arauna Amazon. This Water/Psychic POKéMON embodies a part of Brazil's nature, folklore, or culture."
     },
     {
       "id": 337,
       "category": "Guardian",
       "region": "Arauna Highlands",
-      "dex": "Arauna's regional guardian. It appears only when many communities remember the same danger at once."
+      "dex": "Arauanaú, the Guardian POKéMON, inhabits Arauna Highlands. Its Fairy/Dragon nature reflects Brazil's wildlife and legends."
     },
     {
       "id": 338,
       "category": "Verdant",
       "region": "Arauna Amazon",
-      "dex": "A forest spirit born again after every fire. New leaves emerge wherever its fading green light touches ash."
+      "dex": "Found in Arauna Amazon, Verdejante is known as the Verdant POKéMON. It carries a distinct Grass/Dragon affinity."
     },
     {
       "id": 339,
       "category": "Storm",
       "region": "Arauna Highlands",
-      "dex": "Guardian of the summer rains. When imprisoned, clouds become a product and the backlands begin to crack."
+      "dex": "Chuvão lives in Arauna Highlands. This Water/Electric POKéMON embodies a part of Brazil's nature, folklore, or culture."
     },
     {
       "id": 340,
       "category": "Drought",
       "region": "Arauna Caatinga",
-      "dex": "Guardian of drought and endurance. Without Chuvão to balance it, its heat can rule the fields for months."
+      "dex": "Solzão, the Drought POKéMON, inhabits Arauna Caatinga. Its Fire/Ground nature reflects Brazil's wildlife and legends."
     },
     {
       "id": 341,
       "category": "Wind",
       "region": "Arauna Cerrado",
-      "dex": "The southern wind given form. Its whistle carries cold weather, distant voices, and warnings between biomes."
+      "dex": "Found in Arauna Cerrado, Ventania is known as the Wind POKéMON. It carries a distinct Flying/Dragon affinity."
     },
     {
       "id": 342,
       "category": "Earth",
       "region": "Arauna Plateaus",
-      "dex": "Living fertile earth. Crops rise in its footsteps, but only where the ground is treated with care."
+      "dex": "Terraão lives in Arauna Plateaus. This Ground/Rock POKéMON embodies a part of Brazil's nature, folklore, or culture."
     },
     {
       "id": 343,
       "category": "Fire",
       "region": "Arauna Highlands",
-      "dex": "The first hearth-fire of Arauna. It warms gatherings where stories are shared and turns pale when they fall silent."
+      "dex": "Fogaréu, the Fire POKéMON, inhabits Arauna Highlands. Its Fire/Dragon nature reflects Brazil's wildlife and legends."
     },
     {
       "id": 344,
       "category": "Sea",
       "region": "Arauna Coast",
-      "dex": "The Atlantic tide given memory. Waves follow its rhythm and return lost stories to the coast."
+      "dex": "Found in Arauna Coast, Marulho is known as the Sea POKéMON. It carries a distinct Water/Dragon affinity."
     },
     {
       "id": 345,
       "category": "Dawn",
       "region": "Arauna Coast",
-      "dex": "Guardian of daybreak. Rose-gold light spreads from its body whenever a forgotten story is told again."
+      "dex": "Alvorecer lives in Arauna Coast. This Fairy/Fire POKéMON embodies a part of Brazil's nature, folklore, or culture."
     },
     {
       "id": 346,
       "category": "Twilight",
       "region": "Arauna Coast",
-      "dex": "Guardian of sunset. It gathers the day's final colors so that darkness arrives without erasing what came before."
+      "dex": "Poente, the Twilight POKéMON, inhabits Arauna Coast. Its Dark/Fire nature reflects Brazil's wildlife and legends."
     },
     {
       "id": 347,
       "category": "Star",
       "region": "Arauna Highlands",
-      "dex": "A fallen star that grants one honest wish. It cannot return the dead, but it may let their voice be heard once more."
+      "dex": "Found in Arauna Highlands, Estrelinha is known as the Star POKéMON. It carries a distinct Fairy/Psychic affinity."
     },
     {
       "id": 348,
       "category": "Divine",
       "region": "Arauna Highlands",
-      "dex": "An embodiment of Arauna's many biomes. It exists only while no single story claims to speak for the whole region."
+      "dex": "Arauanamon lives in Arauna Highlands. This Dragon/Fairy POKéMON embodies a part of Brazil's nature, folklore, or culture."
     },
     {
       "id": 349,
@@ -2288,37 +2288,37 @@
       "id": 381,
       "category": "Quilombo",
       "region": "Arauna Cities",
-      "dex": "A revered ancestor whose memory became a symbol of freedom. It stands beside those who preserve histories of resistance."
+      "dex": "Zumbi-Rei lives in Arauna Cities. This Fighting/Dark POKéMON embodies a part of Brazil's nature, folklore, or culture."
     },
     {
       "id": 382,
       "category": "Queen",
       "region": "Arauna Coast",
-      "dex": "A revered queen of the sea. It is recorded by the Census, but no Trainer may claim it as a possession."
+      "dex": "Iemanjã, the Queen POKéMON, inhabits Arauna Coast. Its Water/Fairy nature reflects Brazil's wildlife and legends."
     },
     {
       "id": 383,
       "category": "Rainbow",
       "region": "Arauna Coast",
-      "dex": "A revered rainbow serpent joining sky and earth. It may bless a journey, but it can never be captured."
+      "dex": "Found in Arauna Coast, Oxumará is known as the Rainbow POKéMON. It carries a distinct Dragon/Fairy affinity."
     },
     {
       "id": 384,
       "category": "Mythical",
       "region": "Arauna Amazon",
-      "dex": "A newborn forest guardian that appears before a child who truly believes. Its first footprints face forward."
+      "dex": "Curupixel lives in Arauna Amazon. This Grass/Fairy POKéMON embodies a part of Brazil's nature, folklore, or culture."
     },
     {
       "id": 385,
       "category": "Mythical",
       "region": "Arauna Cerrado",
-      "dex": "A newborn Saci still learning to ride the wind. Small whirlwinds and harmless pranks mark every path it takes."
+      "dex": "Sacinho, the Mythical POKéMON, inhabits Arauna Cerrado. Its Dark/Fairy nature reflects Brazil's wildlife and legends."
     },
     {
       "id": 386,
       "category": "Origin",
       "region": "Arauna Highlands",
-      "dex": "It is not Arauna's oldest legend, but the next story the region needs to hear. It awakens when a new tale is shared."
+      "dex": "Found in Arauna Highlands, Arauá is known as the Origin POKéMON. It carries a distinct Dragon/Psychic affinity."
     }
   ]
 }
