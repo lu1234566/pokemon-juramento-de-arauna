@@ -3,7 +3,6 @@ TITLE        ?= POKEMON EMER
 GAME_CODE    ?= BPEE
 BUILD_NAME   ?= emerald
 MAP_VERSION  ?= emerald
-ARAUNA_LANGUAGE ?= ENGLISH
 
 ifeq (firered, $(or $(BUILD), $(MAKECMDGOALS)))
   	GAME_VERSION 	:= FIRERED
@@ -20,18 +19,6 @@ ifeq (leafgreen, $(or $(BUILD), $(MAKECMDGOALS)))
 	MAP_VERSION 	:= firered
 endif
 endif
-
-ifeq ($(ARAUNA_LANGUAGE),ENGLISH)
-ARAUNA_LANGUAGE_ID := 0
-ARAUNA_LANGUAGE_SUFFIX := en
-else ifeq ($(ARAUNA_LANGUAGE),PORTUGUESE)
-ARAUNA_LANGUAGE_ID := 1
-ARAUNA_LANGUAGE_SUFFIX := ptbr
-else
-$(error Unsupported ARAUNA_LANGUAGE '$(ARAUNA_LANGUAGE)'. Use ENGLISH or PORTUGUESE)
-endif
-
-BUILD_NAME := $(BUILD_NAME)-$(ARAUNA_LANGUAGE_SUFFIX)
 
 # GBA rom header
 MAKER_CODE  := 01
@@ -169,7 +156,7 @@ O_LEVEL ?= g
 else
 O_LEVEL ?= 2
 endif
-CPPFLAGS := $(INCLUDE_CPP_ARGS) -Wno-trigraphs -DMODERN=1 -DTESTING=$(TEST) -D$(GAME_VERSION) -DARAUNA_LANGUAGE=$(ARAUNA_LANGUAGE_ID) -std=gnu17
+CPPFLAGS := $(INCLUDE_CPP_ARGS) -Wno-trigraphs -DMODERN=1 -DTESTING=$(TEST) -D$(GAME_VERSION) -std=gnu17
 ifeq ($(RELEASE),1)
 	override CPPFLAGS += -DRELEASE
 	ifeq ($(USE_LTO_ON_RELEASE),1)
@@ -253,6 +240,7 @@ LEARNSET_HELPERS_DIR := $(TOOLS_DIR)/learnset_helpers
 LEARNSET_HELPERS_DATA_DIR := $(LEARNSET_HELPERS_DIR)/porymoves_files
 LEARNSET_HELPERS_BUILD_DIR := $(LEARNSET_HELPERS_DIR)/build
 ALL_LEARNABLES_JSON := $(DATA_SRC_SUBDIR)/pokemon/all_learnables.json
+ARAUNA_TEACHABLES_JSON := $(DATA_SRC_SUBDIR)/pokemon/arauna_teachables.json
 ALL_TUTORS_JSON := $(LEARNSET_HELPERS_BUILD_DIR)/all_tutors.json
 ALL_TEACHING_TYPES_JSON := $(LEARNSET_HELPERS_BUILD_DIR)/all_teaching_types.json
 
@@ -552,7 +540,7 @@ $(OBJ_DIR)/sym_common.ld: sym_common.txt $(C_OBJS) $(wildcard common_syms/*.txt)
 $(OBJ_DIR)/sym_ewram.ld: sym_ewram.txt
 	$(RAMSCRGEN) ewram_data $< ENGLISH > $@
 
-TEACHABLE_DEPS := $(ALL_LEARNABLES_JSON) $(INCLUDE_DIRS)/constants/tms_hms.h $(INCLUDE_DIRS)/config/pokemon.h $(DATA_SRC_SUBDIR)/pokemon/special_movesets.json $(INCLUDE_DIRS)/config/pokedex_plus_hgss.h $(LEARNSET_HELPERS_DIR)/make_teachables.py
+TEACHABLE_DEPS := $(ALL_LEARNABLES_JSON) $(ARAUNA_TEACHABLES_JSON) $(INCLUDE_DIRS)/constants/tms_hms.h $(INCLUDE_DIRS)/config/pokemon.h $(DATA_SRC_SUBDIR)/pokemon/special_movesets.json $(INCLUDE_DIRS)/config/pokedex_plus_hgss.h $(LEARNSET_HELPERS_DIR)/make_teachables.py
 
 $(LEARNSET_HELPERS_BUILD_DIR):
 	@mkdir -p $@
