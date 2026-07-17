@@ -1,28 +1,34 @@
 # Pokémon: Juramento de Arauna
 
-ROM hack bilíngue de Pokémon Emerald ambientada em uma região original inspirada no sul do Brasil. O projeto combina fantasia sombria, investigação, batalhas planejadas e escolhas narrativas por meio do Sistema de Vínculos.
+ROM hack bilíngue de Pokémon Emerald ambientada em uma região original inspirada em todo o Brasil e organizada por biomas. O projeto combina fantasia sombria, investigação, batalhas planejadas, escolhas narrativas e uma Pokédex autoral de 386 espécies.
 
-> Estado atual: pré-produção, fundação técnica validada e primeiro protótipo bilíngue em desenvolvimento. Ainda não há uma versão pública jogável.
+> Estado atual: versão definitiva em pré-produção. A fundação técnica bilíngue e o primeiro vertical slice existem, mas a direção de mundo, Pokédex e arte está sendo realinhada para o novo escopo.
 
 ## Visão
 
 - Português brasileiro e inglês a partir do mesmo código-fonte.
 - Narrativa madura e sombria, sem violência gráfica gratuita.
 - Protagonista com personalidade, falas e escolhas.
-- Três linhas de iniciais completamente originais.
-- Região de Arauna, com florestas de araucárias, neblina, serras, ruínas e centros tecnológicos.
+- Região de Arauna inspirada em todo o Brasil, com biomas ficcionais conectados.
+- 386 espécies de Arauna substituindo os 386 slots da Pokédex do Emerald.
+- Trio inicial original: cachorro caramelo de Fogo, quero-quero de Água e pica-pau brasileiro de Planta.
 - Vínculos de Coragem, Sabedoria e Compaixão com consequências narrativas.
+- Mapas novos construídos principalmente com os tilesets e a linguagem visual original do Emerald.
+- Arte gráfica inédita concentrada primeiro nas espécies de Arauna; cenários autorais entram apenas quando forem realmente necessários.
 
-O primeiro objetivo jogável é um vertical slice de 30 a 60 minutos com uma vila, uma rota, uma ruína, a escolha do inicial, o rival, uma decisão de Vínculo e um miniboss.
+O primeiro objetivo continua sendo um vertical slice de 30 a 60 minutos. Ele será reconstruído como prova de qualidade da versão definitiva antes da produção em massa da região e da Pokédex.
 
 ## Documentação do projeto
 
 - [Documento de design](project/GDD.md)
+- [Plano de ação da versão definitiva](project/ACTION_PLAN.md)
 - [Roadmap](project/ROADMAP.md)
 - [Decisões técnicas e criativas](project/DECISIONS.md)
 - [Sinopse](project/story/SYNOPSIS.md)
 - [Região de Arauna](project/world/REGION.md)
+- [Plano da Pokédex de 386 espécies](project/design/POKEDEX_386.md)
 - [Trio de iniciais](project/design/STARTERS.md)
+- [Protocolo de aprovação de sprites](project/art/SPRITE_APPROVAL.md)
 - [Sistema de Vínculos](project/design/BOND_SYSTEM.md)
 - [Arquitetura bilíngue](project/design/LOCALIZATION.md)
 - [Plano de testes](project/testing/TEST_PLAN.md)
@@ -32,48 +38,28 @@ O primeiro objetivo jogável é um vertical slice de 30 a 60 minutos com uma vil
 
 Este projeto parte de [`rh-hideout/pokeemerald-expansion`](https://github.com/rh-hideout/pokeemerald-expansion), versão `expansion/1.16.2`, commit `ad0fd4d17f546ca6fd8d785c8724f9382e6e9382`.
 
-O histórico upstream foi preservado. O remoto `upstream` deve continuar apontando para o projeto oficial; atualizações serão avaliadas em branches próprias e nunca incorporadas diretamente na `main` sem build e testes.
+O histórico upstream permanece preservado. Atualizações do motor serão avaliadas em branches próprias e nunca incorporadas diretamente na `main` sem build e testes.
 
 ## Desenvolvimento
 
-Dependências e instruções de compilação continuam documentadas no [INSTALL.md](INSTALL.md) original. Depois de preparar o ambiente:
+Depois de preparar o ambiente conforme o [INSTALL.md](INSTALL.md):
 
 ```bash
 make ARAUNA_LANGUAGE=PORTUGUESE -j$(nproc)
 make ARAUNA_LANGUAGE=ENGLISH -j$(nproc)
-```
-
-Os comandos geram, respectivamente, `pokeemerald-ptbr.gba` e `pokeemerald-en.gba` em diretórios de build separados. A CI compila os dois idiomas e executa os testes oficiais em inglês sem publicar nenhuma ROM como artefato.
-
-Valide os textos localizados antes de compilar:
-
-```bash
 python3 scripts/check_localization.py
 ```
 
-### Ambiente visual no Chromebook
+Os builds `pt-BR` e `en` são gerados da mesma fonte. A CI compila os dois idiomas e executa os testes sem publicar ROMs.
 
-O Codespace pode oferecer um desktop privado no navegador com Porymap e mGBA. As instruções de ativação, uso seguro e solução de problemas estão no [manual do ambiente visual](project/development/CODESPACES_VISUAL.md).
+### Regra de arte
 
-### Branches
+Nenhum sprite novo ou modificado pode entrar no jogo antes de existir uma prévia identificada e uma aprovação explícita de Lucas Barcelar. A aprovação de conceito não equivale automaticamente à aprovação do sprite final.
 
-- `main`: estado estável e compilável.
-- `agent/*`: implementação assistida.
-- `feature/*`: funcionalidades e conteúdo.
-- `fix/*`: correções.
+Os cenários reutilizam prioritariamente os tiles, objetos e interfaces do Emerald. Isso não significa reutilizar Hoenn como região: layouts, conexões, nomes, eventos, encontros e história serão próprios de Arauna.
 
 ## Segurança e distribuição
 
-ROMs comerciais, builds `.gba`, saves, credenciais e patches não devem ser commitados. Execute antes de cada commit:
-
-```bash
-bash scripts/check_no_proprietary_files.sh
-```
-
-Quando existir uma versão distribuível, serão gerados patches separados para `pt-BR` e `en`. Nenhuma ROM completa será publicada.
-
-## Créditos
-
-Baseado em RHH's `pokeemerald-expansion` 1.16.2. Os créditos originais do motor estão preservados em [CREDITS.md](CREDITS.md). Novos recursos devem ser registrados em [project/credits/ASSET_SOURCES.md](project/credits/ASSET_SOURCES.md) antes da integração.
+ROMs comerciais, builds `.gba`, saves e credenciais não serão commitados. A ROM limpa fornecida pelo proprietário é usada apenas localmente como base de compilação. Lançamentos públicos conterão somente código permitido, documentação e patches separados para `pt-BR` e `en`.
 
 Pokémon e suas marcas pertencem aos respectivos detentores. Este é um projeto de fã, não oficial, sem afiliação com Nintendo, Game Freak ou The Pokémon Company.

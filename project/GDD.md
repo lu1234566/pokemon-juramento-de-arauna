@@ -2,27 +2,31 @@
 
 ## Pokémon: Juramento de Arauna
 
-- **Status:** pré-produção
-- **Versão do GDD:** 0.1
+- **Status:** pré-produção da versão definitiva
+- **Versão do GDD:** 0.2
 - **Direção criativa:** Lucas Barcelar
 - **Plataforma:** Game Boy Advance
-**Base:** pokeemerald-expansion 1.16.2
+- **Base:** pokeemerald-expansion 1.16.2
 
 ## High concept
 
-Uma jornada Pokémon bilíngue de fantasia sombria em uma região inspirada no sul do Brasil. O protagonista investiga o desaparecimento do antigo Campeão e descobre que a Liga, uma organização tecnológica e guardiões tradicionais disputam o controle dos Juramentos: vínculos antigos capazes de despertar Pokémon protetores de Arauna.
+Uma jornada Pokémon bilíngue de fantasia sombria em Arauna, uma região ficcional inspirada em todo o Brasil e dividida em grandes biomas. O protagonista investiga o desaparecimento do antigo Campeão enquanto a Liga, uma organização tecnológica e guardiões tradicionais disputam o controle dos Juramentos: vínculos antigos capazes de despertar os protetores da região.
+
+O jogo substitui os 386 slots da Pokédex do Emerald por uma Pokédex própria de Arauna. Ecologia, progressão, tipos e identidade visual serão concebidos como um conjunto único, e não como uma simples troca de nomes.
 
 ## Fantasia do jogador
 
-O jogador começa uma aventura aparentemente tradicional, forma uma equipe, conquista Selos e explora a região. Aos poucos, percebe que suas respostas e atitudes representam Coragem, Sabedoria ou Compaixão. Essas tendências alteram relações, recompensas, cenas e partes do desfecho.
+O jogador atravessa uma versão fantástica e viva do Brasil, forma uma equipe inteiramente ligada a Arauna, conquista Selos e descobre como cada bioma foi afetado pela Noite Sem Estrelas. Suas respostas representam Coragem, Sabedoria ou Compaixão e alteram relações, recompensas, cenas e partes do desfecho.
 
 ## Pilares
 
-1. **Exploração com identidade:** mapas, encontros e personagens contam a história de Arauna.
-2. **Vínculos com consequências:** escolhas são lembradas e produzem mudanças visíveis.
-3. **Batalhas planejadas:** líderes e chefes utilizam estratégias, não apenas níveis maiores.
-4. **Mistério legível:** profundidade sem longas exposições obrigatórias.
-5. **Escopo terminável:** toda ideia estreia em sua menor versão funcional.
+1. **Brasil fantástico, não caricatural:** referências aparecem na fauna, flora, arquitetura, clima, cultura material e conflitos locais.
+2. **Pokédex com função ecológica:** cada uma das 386 espécies possui habitat, nicho, curva de disponibilidade e função de batalha.
+3. **Exploração com identidade:** mapas, encontros e personagens contam a história de Arauna.
+4. **Vínculos com consequências:** escolhas são lembradas e produzem mudanças visíveis.
+5. **Batalhas planejadas:** líderes e chefes utilizam estratégias, não apenas níveis maiores.
+6. **Leitura autêntica de GBA:** mapas novos reutilizam prioritariamente os tilesets, objetos e linguagem visual original de Pokémon Emerald.
+7. **Produção em etapas:** nenhum lote grande de arte entra no jogo antes de um pequeno lote provar o fluxo completo.
 
 ## Tom e limites
 
@@ -35,24 +39,26 @@ O jogador começa uma aventura aparentemente tradicional, forma uma equipe, conq
 
 - Português brasileiro: texto autoral principal.
 - Inglês: localização adaptada.
-- Primeira demo: dois patches gerados da mesma versão.
-- Seleção de idioma dentro do jogo: estudo posterior, não bloqueia o vertical slice.
+- Builds e patches separados a partir da mesma versão.
+- A seleção interna de idioma continua sendo uma decisão técnica posterior.
 
 ## Protagonista
 
 O protagonista fala, possui personalidade reconhecível e participa das cenas. O jogador escolhe respostas importantes, mas não controla cada frase.
 
-Princípio de escrita:
-
 - **voz fixa:** curiosidade, iniciativa e ligação pessoal com o mistério;
 - **voz variável:** Coragem, Sabedoria ou Compaixão determinam como reage;
 - **agência real:** escolhas destacadas precisam produzir ao menos uma consequência observável.
 
-Ainda precisam ser definidos idade, origem, aparência, gênero selecionável ou fixo e relação inicial com o rival.
+Para o greybox, o protagonista tem 16 anos, vive na Vila das Araucárias e mantém nome e aparência selecionáveis. A direção visual final ainda depende de aprovação.
 
 ## Mundo
 
-Arauna mistura florestas de araucárias, neblina, campos, serras, cânions, rios, litoral, ruínas e centros urbanos tecnológicos. A inspiração brasileira deve aparecer em ecologia, arquitetura, ritmo cultural e mitologia reinterpretada, evitando caricaturas.
+Arauna não reproduz o mapa político do Brasil. Ela reorganiza referências brasileiras em macrobiomas ficcionais conectados por rotas, rios, serras, litoral e infraestrutura urbana. Cada área precisa funcionar como lugar vivido e cumprir uma função ecológica, econômica ou histórica.
+
+O percurso começa na Mata das Araucárias e se expande para Mata Atlântica, Pampas, litoral e manguezais, Cerrado, Pantanal, Caatinga, Floresta Amazônica, serras, cavernas e grandes centros urbanos.
+
+A região terá layouts, conexões e progressão próprios, mas não exige um tileset inédito para cada bioma. Árvores, casas, água, cavernas, interiores, objetos e interface do Emerald serão recombinados em mapas novos. Paletas ou tiles autorais de cenário só entram quando uma área essencial não puder ser comunicada com os recursos existentes.
 
 ## Facções
 
@@ -65,35 +71,28 @@ Arauna mistura florestas de araucárias, neblina, campos, serras, cânions, rios
 
 ## Loop principal
 
-1. Chegar a uma nova área.
-2. Conhecer seu conflito local.
-3. Explorar, capturar e treinar.
-4. Descobrir uma pista sobre os Juramentos.
-5. Tomar uma decisão ou completar uma missão.
-6. Enfrentar um treinador principal.
-7. Obter um Selo, acesso ou nova informação.
-8. Observar consequências em personagens ou no mundo.
+1. Chegar a uma nova área e compreender seu conflito.
+2. Explorar, capturar e montar respostas para a ecologia local.
+3. Encontrar uma pista sobre os Juramentos ou a Noite Sem Estrelas.
+4. Tomar uma decisão ou completar uma missão.
+5. Enfrentar um treinador principal com estratégia ligada ao bioma.
+6. Obter um Selo, acesso ou nova informação.
+7. Observar consequências em personagens, encontros ou no ambiente.
 
 ## Estrutura de lançamento
 
-### Protótipo técnico
-
-5 a 10 minutos: diálogo, NPC, mapa, item, batalha e flag personalizados.
-
-### Vertical slice
+### Vertical slice definitivo
 
 30 a 60 minutos:
 
-- Vila das Araucárias;
-- centro de pesquisa;
-- escolha de um inicial original;
-- rival;
+- Vila das Araucárias reconstruída como mapa novo usando prioritariamente tilesets originais do Emerald;
+- centro de pesquisa e escolha do inicial;
+- rival Nilo;
 - Rota da Neblina;
-- área de floresta ou ruína;
-- primeira escolha de Vínculo;
-- miniboss;
-- aparição parcial de um guardião;
-- revelação sobre o antigo Campeão.
+- Ruína do Primeiro Elo;
+- uma decisão de Vínculo;
+- miniboss e aparição parcial de um guardião;
+- 12 a 18 espécies jogáveis, usando somente sprites aprovados ou placeholders declarados.
 
 ### Demo pública 1
 
@@ -101,29 +100,31 @@ Arauna mistura florestas de araucárias, neblina, campos, serras, cânions, rios
 
 ### Campanha pretendida
 
-15 a 25 horas, oito Selos, Liga, 180 a 220 espécies, três variações de desfecho e pós-jogo pequeno.
+Oito Selos, Liga, três variações de desfecho, pós-jogo e 386 entradas obtíveis ou registráveis. A duração final será recalculada após o vertical slice e a primeira demo.
 
-## Pokédex
+## Pokédex de Arauna
 
-- Pokémon oficiais selecionados entre diferentes gerações.
-- Nove Fakemon reservados às três linhas dos iniciais.
-- Formas regionais somente depois que o vertical slice estiver estável.
-- Cada área terá uma identidade ecológica e opções suficientes para equipes variadas.
+- 386 slots substituem integralmente a Pokédex do Emerald.
+- Os nove primeiros slots pertencem às três linhas de iniciais.
+- Cada espécie recebe conceito, tipo, habilidades, stats, evolução, learnset, habitat, sprite e textos `pt-BR`/`en`.
+- Espécies oficiais só podem aparecer como referências temporárias de desenvolvimento e nunca como conteúdo final silencioso.
+- Formas regionais ou releituras de Pokémon oficiais são exceções e dependem de decisão explícita.
+- A produção ocorre por lotes pequenos com aprovação de conceito e de sprite separadas.
 
-## Iniciais
+## Trio de iniciais
 
-Direção aprovada: fauna brasileira combinada com fantasia sombria e símbolos dos Juramentos.
+| Slots | Inspiração | Tipagem final | Identidade de batalha |
+|---|---|---|---|
+| 001–003 | pica-pau brasileiro | Grass/Rock | pressão física, defesa e controle de campo |
+| 004–006 | vira-lata caramelo | Fire/Dragon | versatilidade, coragem e ofensiva equilibrada |
+| 007–009 | quero-quero | Water/Bug | velocidade, interrupção e utilidade |
 
-- Planta: capivara, araucária e musgo; protetora e serena.
-- Fogo: gato-do-mato, brasas e fogo-fátuo; alerta e corajoso.
-- Água: lontra, rios, runas e ruínas submersas; curiosa e inteligente.
-
-Os conceitos dialogam com Compaixão, Coragem e Sabedoria, mas a escolha do inicial não determina o caminho narrativo.
+O ciclo secundário cria respostas cruzadas: Rock ameaça Fire, Fire ameaça Bug e Bug ameaça Grass. Isso reduz confrontos totalmente previsíveis sem apagar o triângulo clássico dos tipos primários.
 
 ## Sistemas modernos
 
-O motor oferece múltiplas mecânicas modernas, mas nenhuma será ativada apenas por existir. Mega Evolução, Z-Moves, Dynamax e Terastal permanecem como decisões abertas. A mecânica escolhida deve servir à história, ao balanceamento e ao limite técnico do GBA.
+Mega Evolução, Z-Moves, Dynamax e Terastal não serão ativados apenas por existirem no motor. A mecânica principal deve servir à história, ao balanceamento e aos limites de memória do GBA.
 
 ## Critério do primeiro sucesso
 
-Cinco pessoas recebem o patch correto, iniciam um save novo e terminam o vertical slice. Pelo menos quatro concluem sem bloqueadores, entendem o conflito central e conseguem descrever uma consequência de sua escolha de Vínculo.
+Cinco pessoas recebem o patch correto, iniciam um save novo e terminam o vertical slice. Pelo menos quatro concluem sem bloqueadores, reconhecem a identidade brasileira sem perceber caricatura, entendem o conflito central e descrevem uma consequência de sua escolha de Vínculo.
