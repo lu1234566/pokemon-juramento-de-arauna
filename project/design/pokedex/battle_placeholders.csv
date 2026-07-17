@@ -1,0 +1,6 @@
+usage_id,location,owner,placeholder_species,planned_arauna_slot,status,notes
+nilo-opening,Vila das Araucárias,Nilo,SPECIES_POOCHYENA,TBD,active,Temporary first rival battle
+mist-route-affected,Rota da Neblina,story event,SPECIES_POOCHYENA,TBD,active,Temporary affected Pokemon
+first-link-rescue,Ruína do Primeiro Elo,story event,SPECIES_POOCHYENA,TBD,active,Temporary rescue object
+tech-agent-lead,Câmara do Primeiro Elo,technical agent,SPECIES_POOCHYENA,TBD,active,Temporary miniboss party member
+tech-agent-second,Câmara do Primeiro Elo,technical agent,SPECIES_VOLTORB,TBD,active,Temporary miniboss party member
