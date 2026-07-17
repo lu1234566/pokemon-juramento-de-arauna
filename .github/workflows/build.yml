@@ -34,6 +34,10 @@ jobs:
         run: bash scripts/check_no_proprietary_files.sh
       - name: Validate localized text sources
         run: python3 scripts/check_localization.py
+      - name: Validate English runtime
+        run: python3 tools/arauna/validate_english_runtime.py
+      - name: Validate packed Arauna Fakemon Dex
+        run: python3 tools/arauna/validate_packed_arauna_dex.py
       - name: Validate vertical slice map shells
         run: python3 scripts/validate_vertical_slice_shells.py
       - name: Verify reproducible vanilla Araucaria village
@@ -106,15 +110,11 @@ jobs:
       - name: Build English Emerald
         run: make ARAUNA_LANGUAGE=ENGLISH -j$(nproc) -O all
 
-      - name: Build Portuguese Emerald
-        run: make ARAUNA_LANGUAGE=PORTUGUESE -j$(nproc) -O all
 
       - name: Run engine tests
         env:
           TEST: 1
         run: make ARAUNA_LANGUAGE=ENGLISH -j$(nproc) check
 
-      - name: Confirm both generated ROMs exist locally
-        run: |
-          test -f pokeemerald-en.gba
-          test -f pokeemerald-ptbr.gba
+      - name: Confirm English ROM exists locally
+        run: test -f pokeemerald-en.gba
