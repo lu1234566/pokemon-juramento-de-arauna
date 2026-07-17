@@ -66,9 +66,13 @@ AraunaResearchCenter_EventScript_QueroQuero::
 
 AraunaResearchCenter_EventScript_CompleteChoice::
 	setflag FLAG_SYS_POKEMON_GET
+	setflag FLAG_SYS_POKEDEX_GET
+	special SetUnlockedPokedexFlags
+	special EnableNationalPokedex
 	setvar VAR_ARAUNA_STORY_STAGE, 2
 	special HealPlayerParty
 	msgbox AraunaResearchCenter_Text_PlaceholderNotice, MSGBOX_DEFAULT
+	msgbox AraunaResearchCenter_Text_DexActivated, MSGBOX_DEFAULT
 	release
 	end
 
