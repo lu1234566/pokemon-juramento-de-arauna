@@ -1,23 +1,20 @@
-# Roadmap
+# Roadmap da versão definitiva
 
-As estimativas consideram trabalho em tempo livre e serão revistas após o vertical slice.
+As estimativas serão revistas após o vertical slice definitivo. A Pokédex de 386 espécies será produzida em lotes; o total não autoriza integração de arte sem aprovação.
 
-## M0 — Decisões fundamentais
+## M0 — Escopo definitivo
 
 **Estado:** em andamento.
 
-- [x] Título confirmado.
-- [x] Português brasileiro e inglês confirmados.
-- [x] Tom maduro e sombrio confirmado.
-- [x] Protagonista falante confirmado.
-- [x] Três linhas de iniciais originais confirmadas.
-- [x] Direção conceitual do trio aprovada.
-- [x] Definir protagonista provisório para o greybox.
-- [x] Definir Nilo como rival provisório do greybox.
-- [x] Definir limites temáticos.
-- [x] Aprovar sinopse de trabalho para o vertical slice.
-- [ ] Aprovar conceitos e silhuetas das três primeiras formas.
-- [ ] Selecionar Pokémon oficiais indispensáveis.
+- [x] Confirmar *Pokémon: Juramento de Arauna* como projeto definitivo.
+- [x] Confirmar português brasileiro e inglês.
+- [x] Confirmar tom maduro e sombrio.
+- [x] Confirmar protagonista falante.
+- [x] Expandir a inspiração para todo o Brasil dividido em biomas.
+- [x] Confirmar substituição dos 386 slots do Emerald.
+- [x] Confirmar as inspirações e tipos finais do novo trio.
+- [x] Formalizar aprovação obrigatória de sprites.
+- [ ] Aprovar ordem dos macrobiomas e dos oito Selos.
 - [ ] Decidir mecânica moderna principal.
 
 ## M1 — Fundação técnica
@@ -26,74 +23,82 @@ As estimativas consideram trabalho em tempo livre e serão revistas após o vert
 
 - [x] Fixar `pokeemerald-expansion` 1.16.2.
 - [x] Preservar histórico upstream.
-- [x] Criar branch de fundação.
-- [x] Documentar baseline.
 - [x] Proteger o repositório contra ROMs, saves, patches e segredos.
-- [x] Preparar CI do alvo Emerald sem upload da ROM.
-- [x] Criar repositório privado no GitHub.
-- [x] Publicar branch e abrir PR de fundação.
-- [x] Integrar a fundação na branch `main`.
-- [x] Confirmar build e testes na CI.
-- [x] Proteger `main` com os checks do projeto.
+- [x] Preparar CI dos builds `pt-BR` e `en`.
+- [x] Integrar fundação na `main`.
+- [x] Confirmar build e testes.
 
 ## M2 — Laboratório de aprendizado
 
 **Estado:** concluído.
 
-- [x] Alterar, compilar e testar visualmente um diálogo bilíngue.
-- [x] Criar um NPC.
-- [x] Modificar um mapa.
-- [x] Criar uma batalha de treinador.
-- [x] Entregar um item por evento.
-- [x] Impedir repetição com flag.
+- [x] Validar diálogo, NPC, mapa, item, batalha e flags autorais.
 - [x] Testar save e carregamento.
 - [x] Criar layout independente e primeiro tileset autoral.
-- [x] Validar o mapa-laboratório no Porymap e no mGBA.
+- [x] Validar o ambiente com Porymap e mGBA.
 
-## M3 — Greybox do vertical slice
+## M3 — Realinhamento do vertical slice
 
 **Estado:** em andamento.
 
-- [x] Definir e documentar o fluxo jogável.
-- [ ] Criar os mapas provisórios.
-- [ ] Implementar o fluxo inicial.
-- [ ] Integrar a primeira forma dos três iniciais com placeholders.
-- [ ] Implementar rival e encontros selvagens.
-- [ ] Implementar uma decisão de Vínculo.
-- [ ] Implementar miniboss e encerramento.
-- [ ] Concluir a demo sem comandos de debug.
+- [x] Manter o fluxo Vila–Rota da Neblina–Ruína do Primeiro Elo.
+- [ ] Corrigir entradas, colisões e retornos ainda pendentes.
+- [ ] Reconstruir a Vila das Araucárias com volumes e textura compatíveis com Emerald.
+- [ ] Definir 12 a 18 espécies do ecossistema inicial.
+- [ ] Implementar o fluxo completo com placeholders identificados.
+- [ ] Implementar escolha de Vínculo, rival, miniboss e encerramento.
+- [ ] Concluir sem comandos de debug.
 
-## M4 — Vertical slice apresentável
+## M4 — Lote 0: trio inicial
 
-- [ ] Finalizar sprites das primeiras formas.
-- [ ] Revisar português.
-- [ ] Localizar e revisar inglês.
+- [ ] Aprovar três silhuetas para cada primeira forma.
+- [ ] Aprovar concept art das formas escolhidas.
+- [ ] Aprovar paletas normal e shiny.
+- [ ] Aprovar sprites frontais.
+- [ ] Aprovar sprites traseiros, ícones e animações.
+- [ ] Integrar slots 001–009 em branch isolada.
+- [ ] Balancear tipos, habilidades, stats e learnsets.
+- [ ] Testar evolução, Pokédex, batalha e save nos dois idiomas.
+
+## M5 — Vertical slice apresentável
+
+- [ ] Integrar apenas sprites aprovados.
+- [ ] Finalizar o primeiro lote ecológico.
+- [ ] Revisar português e inglês.
 - [ ] Balancear encontros e batalhas.
 - [ ] Aplicar direção visual e sonora.
 - [ ] Gerar patches privados `pt-BR` e `en`.
 - [ ] Realizar teste com cinco pessoas.
 
-## M5 — Demo pública 1
+## M6 — Demo pública 1
 
-- [ ] Dois Selos.
+- [ ] Três assentamentos e dois Selos.
 - [ ] Primeiro arco completo.
-- [ ] 60 a 80 espécies disponíveis.
+- [ ] 60 a 80 espécies concluídas.
 - [ ] Sistema de Vínculos v1.
 - [ ] Missões secundárias.
 - [ ] Patches públicos e instruções.
 
-## M6 — Alpha
+## M7 — Alpha regional
 
-- [ ] Metade da região e quatro Selos.
-- [ ] 120 a 150 espécies.
-- [ ] Principais sistemas congelados.
+- [ ] Quatro Selos e pelo menos cinco macrobiomas jogáveis.
+- [ ] Aproximadamente 193 espécies concluídas.
+- [ ] Sistemas principais congelados.
 - [ ] Compatibilidade de saves definida.
 - [ ] História revisada estruturalmente.
 
-## M7 — Versão 1.0
+## M8 — Alpha completo
 
-- [ ] Campanha e Liga completas.
+- [ ] Oito Selos, Liga e campanha completa.
+- [ ] 386 slots integrados e obtíveis ou registráveis.
 - [ ] Finais e pós-jogo essencial.
-- [ ] Beta fechado.
+- [ ] Pokédex, encontros e progressão auditados.
+- [ ] Nenhum asset sem origem e aprovação registradas.
+
+## M9 — Beta e versão 1.0
+
+- [ ] Beta fechado em hardware e emuladores principais.
 - [ ] Zero bloqueadores conhecidos.
-- [ ] Patches `pt-BR` e `en` publicados.
+- [ ] Localização `pt-BR` e `en` revisada integralmente.
+- [ ] Patches públicos reproduzíveis.
+- [ ] Créditos, licenças e documentação finalizados.
