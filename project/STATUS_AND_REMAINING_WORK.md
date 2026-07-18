@@ -7,7 +7,7 @@ branches de trabalho de conteúdo realmente compilado, testado e aprovado.
 
 | Área | Estado | Observação |
 | --- | --- | --- |
-| Escopo e direção | Definido | Brasil por biomas, 386 slots, dois idiomas e Sistema de Vínculos |
+| Escopo e direção | Definido | Brasil por biomas, 386 slots e Sistema de Vínculos; primeira versão jogável em inglês |
 | Vila e mapas do slice técnico | Implementado em PRs | Gráficos do Emerald; falta teste integrado no mGBA |
 | História técnica inicial | Implementado em PRs | Estágios 0–8, Nilo, Rota da Neblina, Ruína e Câmara do Primeiro Elo |
 | Bíblia narrativa canônica | Aprovada | Próxima implementação deve substituir o slice técnico pelo Prólogo e pelos Arcos 1–2 |
@@ -16,7 +16,7 @@ branches de trabalho de conteúdo realmente compilado, testado e aprovado.
 | Artes dos Fakemon | Integradas tecnicamente na PR #47 | Aprovação visual por lotes ainda é necessária; nenhuma nova arte deve entrar sem aprovação |
 | QoL básica | Ativa na PR #47 | Apenas recursos sem efeito relevante sobre progressão ou formato do save |
 | QoL intermediária | Bloqueada por marco | EXP Share global, DexNav e serviços aguardam a segunda insígnia jogável |
-| Build e teste do head atual | Bloqueado por infraestrutura | Actions #478 encerrou antes do checkout; os jobs não possuem passos nem logs |
+| Build e teste do head atual | Bloqueado por infraestrutura | Primeira versão força inglês e gera `pokeemerald-en.gba`; Actions ainda encerra antes do checkout |
 
 ## O que falta para estabilizar a PR #47
 
