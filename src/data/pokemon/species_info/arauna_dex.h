@@ -56,7 +56,7 @@
         FOOTPRINT(Torchic)
         .levelUpLearnset = sArauna001LevelUpLearnset,
         .teachableLearnset = sTorchicTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna001EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 17, SPECIES_COMBUSKEN}),
     },
 
@@ -116,7 +116,7 @@
         FOOTPRINT(Combusken)
         .levelUpLearnset = sArauna002LevelUpLearnset,
         .teachableLearnset = sCombuskenTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna002EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_BLAZIKEN}),
     },
 
@@ -176,7 +176,7 @@
         FOOTPRINT(Blaziken)
         .levelUpLearnset = sArauna003LevelUpLearnset,
         .teachableLearnset = sBlazikenTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna003EggMoveLearnset,
     },
 
 
@@ -235,7 +235,7 @@
         FOOTPRINT(Mudkip)
         .levelUpLearnset = sArauna004LevelUpLearnset,
         .teachableLearnset = sMudkipTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna004EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 17, SPECIES_MARSHTOMP}),
     },
 
@@ -295,7 +295,7 @@
         FOOTPRINT(Marshtomp)
         .levelUpLearnset = sArauna005LevelUpLearnset,
         .teachableLearnset = sMarshtompTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna005EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_SWAMPERT}),
     },
 
@@ -355,7 +355,7 @@
         FOOTPRINT(Swampert)
         .levelUpLearnset = sArauna006LevelUpLearnset,
         .teachableLearnset = sSwampertTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna006EggMoveLearnset,
     },
 
 
@@ -414,7 +414,7 @@
         FOOTPRINT(Treecko)
         .levelUpLearnset = sArauna007LevelUpLearnset,
         .teachableLearnset = sTreeckoTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna007EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 17, SPECIES_GROVYLE}),
     },
 
@@ -474,7 +474,7 @@
         FOOTPRINT(Grovyle)
         .levelUpLearnset = sArauna008LevelUpLearnset,
         .teachableLearnset = sGrovyleTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna008EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_SCEPTILE}),
     },
 
@@ -534,7 +534,7 @@
         FOOTPRINT(Sceptile)
         .levelUpLearnset = sArauna009LevelUpLearnset,
         .teachableLearnset = sSceptileTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna009EggMoveLearnset,
     },
 
 
@@ -593,7 +593,7 @@
         FOOTPRINT(Bulbasaur)
         .levelUpLearnset = sArauna010LevelUpLearnset,
         .teachableLearnset = sBulbasaurTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna010EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 15, SPECIES_IVYSAUR}),
     },
 
@@ -652,7 +652,7 @@
         FOOTPRINT(Ivysaur)
         .levelUpLearnset = sArauna011LevelUpLearnset,
         .teachableLearnset = sIvysaurTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna011EggMoveLearnset,
     },
 
 
@@ -710,7 +710,7 @@
         FOOTPRINT(Venusaur)
         .levelUpLearnset = sArauna012LevelUpLearnset,
         .teachableLearnset = sVenusaurTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna012EggMoveLearnset,
     },
 
 
@@ -769,7 +769,7 @@
         FOOTPRINT(Charmander)
         .levelUpLearnset = sArauna013LevelUpLearnset,
         .teachableLearnset = sCharmanderTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna013EggMoveLearnset,
     },
 
 
@@ -828,7 +828,7 @@
         FOOTPRINT(Charmeleon)
         .levelUpLearnset = sArauna014LevelUpLearnset,
         .teachableLearnset = sCharmeleonTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna014EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_CHARIZARD}),
     },
 
@@ -888,7 +888,7 @@
         FOOTPRINT(Charizard)
         .levelUpLearnset = sArauna015LevelUpLearnset,
         .teachableLearnset = sCharizardTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna015EggMoveLearnset,
     },
 
 
@@ -947,7 +947,7 @@
         FOOTPRINT(Squirtle)
         .levelUpLearnset = sArauna016LevelUpLearnset,
         .teachableLearnset = sSquirtleTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna016EggMoveLearnset,
     },
 
 
@@ -1005,7 +1005,7 @@
         FOOTPRINT(Wartortle)
         .levelUpLearnset = sArauna017LevelUpLearnset,
         .teachableLearnset = sWartortleTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna017EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_BLASTOISE}),
     },
 
@@ -1064,7 +1064,7 @@
         FOOTPRINT(Blastoise)
         .levelUpLearnset = sArauna018LevelUpLearnset,
         .teachableLearnset = sBlastoiseTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna018EggMoveLearnset,
     },
 
 
@@ -1122,7 +1122,7 @@
         FOOTPRINT(Caterpie)
         .levelUpLearnset = sArauna019LevelUpLearnset,
         .teachableLearnset = sCaterpieTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna019EggMoveLearnset,
     },
 
 
@@ -1181,7 +1181,7 @@
         FOOTPRINT(Metapod)
         .levelUpLearnset = sArauna020LevelUpLearnset,
         .teachableLearnset = sMetapodTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna020EggMoveLearnset,
     },
 
 
@@ -1240,7 +1240,7 @@
         FOOTPRINT(Butterfree)
         .levelUpLearnset = sArauna021LevelUpLearnset,
         .teachableLearnset = sButterfreeTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna021EggMoveLearnset,
     },
 
 
@@ -1299,7 +1299,7 @@
         FOOTPRINT(Weedle)
         .levelUpLearnset = sArauna022LevelUpLearnset,
         .teachableLearnset = sWeedleTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna022EggMoveLearnset,
     },
 
 
@@ -1357,7 +1357,7 @@
         FOOTPRINT(Kakuna)
         .levelUpLearnset = sArauna023LevelUpLearnset,
         .teachableLearnset = sKakunaTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna023EggMoveLearnset,
     },
 
 
@@ -1416,7 +1416,7 @@
         FOOTPRINT(Beedrill)
         .levelUpLearnset = sArauna024LevelUpLearnset,
         .teachableLearnset = sBeedrillTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna024EggMoveLearnset,
     },
 
 
@@ -1475,7 +1475,7 @@
         FOOTPRINT(Pidgey)
         .levelUpLearnset = sArauna025LevelUpLearnset,
         .teachableLearnset = sPidgeyTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna025EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_PIDGEOTTO}),
     },
 
@@ -1535,7 +1535,7 @@
         FOOTPRINT(Pidgeotto)
         .levelUpLearnset = sArauna026LevelUpLearnset,
         .teachableLearnset = sPidgeottoTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna026EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_PIDGEOT}),
     },
 
@@ -1595,7 +1595,7 @@
         FOOTPRINT(Pidgeot)
         .levelUpLearnset = sArauna027LevelUpLearnset,
         .teachableLearnset = sPidgeotTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna027EggMoveLearnset,
     },
 
 
@@ -1654,7 +1654,7 @@
         FOOTPRINT(Rattata)
         .levelUpLearnset = sArauna028LevelUpLearnset,
         .teachableLearnset = sRattataTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna028EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_RATICATE}),
     },
 
@@ -1714,7 +1714,7 @@
         FOOTPRINT(Raticate)
         .levelUpLearnset = sArauna029LevelUpLearnset,
         .teachableLearnset = sRaticateTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna029EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_SPEAROW}),
     },
 
@@ -1774,7 +1774,7 @@
         FOOTPRINT(Spearow)
         .levelUpLearnset = sArauna030LevelUpLearnset,
         .teachableLearnset = sSpearowTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna030EggMoveLearnset,
     },
 
 
@@ -1833,7 +1833,7 @@
         FOOTPRINT(Fearow)
         .levelUpLearnset = sArauna031LevelUpLearnset,
         .teachableLearnset = sFearowTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna031EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_EKANS}),
     },
 
@@ -1893,7 +1893,7 @@
         FOOTPRINT(Ekans)
         .levelUpLearnset = sArauna032LevelUpLearnset,
         .teachableLearnset = sEkansTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna032EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_ARBOK}),
     },
 
@@ -1953,7 +1953,7 @@
         FOOTPRINT(Arbok)
         .levelUpLearnset = sArauna033LevelUpLearnset,
         .teachableLearnset = sArbokTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna033EggMoveLearnset,
     },
 
 
@@ -2012,7 +2012,7 @@
         FOOTPRINT(Pikachu)
         .levelUpLearnset = sArauna034LevelUpLearnset,
         .teachableLearnset = sPikachuTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna034EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_RAICHU}),
     },
 
@@ -2072,7 +2072,7 @@
         FOOTPRINT(Raichu)
         .levelUpLearnset = sArauna035LevelUpLearnset,
         .teachableLearnset = sRaichuTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna035EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_SANDSHREW}),
     },
 
@@ -2132,7 +2132,7 @@
         FOOTPRINT(Sandshrew)
         .levelUpLearnset = sArauna036LevelUpLearnset,
         .teachableLearnset = sSandshrewTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna036EggMoveLearnset,
     },
 
 
@@ -2191,7 +2191,7 @@
         FOOTPRINT(Sandslash)
         .levelUpLearnset = sArauna037LevelUpLearnset,
         .teachableLearnset = sSandslashTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna037EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_NIDORAN_F}),
     },
 
@@ -2251,7 +2251,7 @@
         FOOTPRINT(NidoranF)
         .levelUpLearnset = sArauna038LevelUpLearnset,
         .teachableLearnset = sNidoranFTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna038EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_NIDORINA}),
     },
 
@@ -2311,7 +2311,7 @@
         FOOTPRINT(Nidorina)
         .levelUpLearnset = sArauna039LevelUpLearnset,
         .teachableLearnset = sNidorinaTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna039EggMoveLearnset,
     },
 
 
@@ -2370,7 +2370,7 @@
         FOOTPRINT(Nidoqueen)
         .levelUpLearnset = sArauna040LevelUpLearnset,
         .teachableLearnset = sNidoqueenTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna040EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_NIDORAN_M}),
     },
 
@@ -2430,7 +2430,7 @@
         FOOTPRINT(NidoranM)
         .levelUpLearnset = sArauna041LevelUpLearnset,
         .teachableLearnset = sNidoranMTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna041EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_NIDORINO}),
     },
 
@@ -2490,7 +2490,7 @@
         FOOTPRINT(Nidorino)
         .levelUpLearnset = sArauna042LevelUpLearnset,
         .teachableLearnset = sNidorinoTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna042EggMoveLearnset,
     },
 
 
@@ -2549,7 +2549,7 @@
         FOOTPRINT(Nidoking)
         .levelUpLearnset = sArauna043LevelUpLearnset,
         .teachableLearnset = sNidokingTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna043EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_CLEFAIRY}),
     },
 
@@ -2609,7 +2609,7 @@
         FOOTPRINT(Clefairy)
         .levelUpLearnset = sArauna044LevelUpLearnset,
         .teachableLearnset = sClefairyTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna044EggMoveLearnset,
     },
 
 
@@ -2668,7 +2668,7 @@
         FOOTPRINT(Clefable)
         .levelUpLearnset = sArauna045LevelUpLearnset,
         .teachableLearnset = sClefableTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna045EggMoveLearnset,
     },
 
 
@@ -2727,7 +2727,7 @@
         FOOTPRINT(Vulpix)
         .levelUpLearnset = sArauna046LevelUpLearnset,
         .teachableLearnset = sVulpixTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna046EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_NINETALES}),
     },
 
@@ -2787,7 +2787,7 @@
         FOOTPRINT(Ninetales)
         .levelUpLearnset = sArauna047LevelUpLearnset,
         .teachableLearnset = sNinetalesTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna047EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 55, SPECIES_JIGGLYPUFF}),
     },
 
@@ -2847,7 +2847,7 @@
         FOOTPRINT(Jigglypuff)
         .levelUpLearnset = sArauna048LevelUpLearnset,
         .teachableLearnset = sJigglypuffTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna048EggMoveLearnset,
     },
 
 
@@ -2906,7 +2906,7 @@
         FOOTPRINT(Wigglytuff)
         .levelUpLearnset = sArauna049LevelUpLearnset,
         .teachableLearnset = sWigglytuffTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna049EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_ZUBAT}),
     },
 
@@ -2966,7 +2966,7 @@
         FOOTPRINT(Zubat)
         .levelUpLearnset = sArauna050LevelUpLearnset,
         .teachableLearnset = sZubatTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna050EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_GOLBAT}),
     },
 
@@ -3026,7 +3026,7 @@
         FOOTPRINT(Golbat)
         .levelUpLearnset = sArauna051LevelUpLearnset,
         .teachableLearnset = sGolbatTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna051EggMoveLearnset,
     },
 
 
@@ -3085,7 +3085,7 @@
         FOOTPRINT(Oddish)
         .levelUpLearnset = sArauna052LevelUpLearnset,
         .teachableLearnset = sOddishTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna052EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_GLOOM}),
     },
 
@@ -3145,7 +3145,7 @@
         FOOTPRINT(Gloom)
         .levelUpLearnset = sArauna053LevelUpLearnset,
         .teachableLearnset = sGloomTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna053EggMoveLearnset,
     },
 
 
@@ -3204,7 +3204,7 @@
         FOOTPRINT(Vileplume)
         .levelUpLearnset = sArauna054LevelUpLearnset,
         .teachableLearnset = sVileplumeTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna054EggMoveLearnset,
     },
 
 
@@ -3263,7 +3263,7 @@
         FOOTPRINT(Paras)
         .levelUpLearnset = sArauna055LevelUpLearnset,
         .teachableLearnset = sParasTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna055EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_PARASECT}),
     },
 
@@ -3322,7 +3322,7 @@
         FOOTPRINT(Parasect)
         .levelUpLearnset = sArauna056LevelUpLearnset,
         .teachableLearnset = sParasectTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna056EggMoveLearnset,
     },
 
 
@@ -3381,7 +3381,7 @@
         FOOTPRINT(Venonat)
         .levelUpLearnset = sArauna057LevelUpLearnset,
         .teachableLearnset = sVenonatTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna057EggMoveLearnset,
     },
 
 
@@ -3440,7 +3440,7 @@
         FOOTPRINT(Venomoth)
         .levelUpLearnset = sArauna058LevelUpLearnset,
         .teachableLearnset = sVenomothTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna058EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_DIGLETT}),
     },
 
@@ -3500,7 +3500,7 @@
         FOOTPRINT(Diglett)
         .levelUpLearnset = sArauna059LevelUpLearnset,
         .teachableLearnset = sDiglettTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna059EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_DUGTRIO}),
     },
 
@@ -3560,7 +3560,7 @@
         FOOTPRINT(Dugtrio)
         .levelUpLearnset = sArauna060LevelUpLearnset,
         .teachableLearnset = sDugtrioTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna060EggMoveLearnset,
     },
 
 
@@ -3619,7 +3619,7 @@
         FOOTPRINT(Meowth)
         .levelUpLearnset = sArauna061LevelUpLearnset,
         .teachableLearnset = sMeowthTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna061EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_PERSIAN}),
     },
 
@@ -3679,7 +3679,7 @@
         FOOTPRINT(Persian)
         .levelUpLearnset = sArauna062LevelUpLearnset,
         .teachableLearnset = sPersianTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna062EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_PSYDUCK}),
     },
 
@@ -3739,7 +3739,7 @@
         FOOTPRINT(Psyduck)
         .levelUpLearnset = sArauna063LevelUpLearnset,
         .teachableLearnset = sPsyduckTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna063EggMoveLearnset,
     },
 
 
@@ -3798,7 +3798,7 @@
         FOOTPRINT(Golduck)
         .levelUpLearnset = sArauna064LevelUpLearnset,
         .teachableLearnset = sGolduckTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna064EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_MANKEY}),
     },
 
@@ -3858,7 +3858,7 @@
         FOOTPRINT(Mankey)
         .levelUpLearnset = sArauna065LevelUpLearnset,
         .teachableLearnset = sMankeyTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna065EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_PRIMEAPE}),
     },
 
@@ -3918,7 +3918,7 @@
         FOOTPRINT(Primeape)
         .levelUpLearnset = sArauna066LevelUpLearnset,
         .teachableLearnset = sPrimeapeTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna066EggMoveLearnset,
     },
 
 
@@ -3977,7 +3977,7 @@
         FOOTPRINT(Growlithe)
         .levelUpLearnset = sArauna067LevelUpLearnset,
         .teachableLearnset = sGrowlitheTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna067EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_ARCANINE}),
     },
 
@@ -4037,7 +4037,7 @@
         FOOTPRINT(Arcanine)
         .levelUpLearnset = sArauna068LevelUpLearnset,
         .teachableLearnset = sArcanineTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna068EggMoveLearnset,
     },
 
 
@@ -4096,7 +4096,7 @@
         FOOTPRINT(Poliwag)
         .levelUpLearnset = sArauna069LevelUpLearnset,
         .teachableLearnset = sPoliwagTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna069EggMoveLearnset,
     },
 
 
@@ -4155,7 +4155,7 @@
         FOOTPRINT(Poliwhirl)
         .levelUpLearnset = sArauna070LevelUpLearnset,
         .teachableLearnset = sPoliwhirlTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna070EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_POLIWRATH}),
     },
 
@@ -4215,7 +4215,7 @@
         FOOTPRINT(Poliwrath)
         .levelUpLearnset = sArauna071LevelUpLearnset,
         .teachableLearnset = sPoliwrathTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna071EggMoveLearnset,
     },
 
 
@@ -4274,7 +4274,7 @@
         FOOTPRINT(Abra)
         .levelUpLearnset = sArauna072LevelUpLearnset,
         .teachableLearnset = sAbraTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna072EggMoveLearnset,
     },
 
 
@@ -4333,7 +4333,7 @@
         FOOTPRINT(Kadabra)
         .levelUpLearnset = sArauna073LevelUpLearnset,
         .teachableLearnset = sKadabraTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna073EggMoveLearnset,
     },
 
 
@@ -4392,7 +4392,7 @@
         FOOTPRINT(Alakazam)
         .levelUpLearnset = sArauna074LevelUpLearnset,
         .teachableLearnset = sAlakazamTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna074EggMoveLearnset,
     },
 
 
@@ -4451,7 +4451,7 @@
         FOOTPRINT(Machop)
         .levelUpLearnset = sArauna075LevelUpLearnset,
         .teachableLearnset = sMachopTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna075EggMoveLearnset,
     },
 
 
@@ -4510,7 +4510,7 @@
         FOOTPRINT(Machoke)
         .levelUpLearnset = sArauna076LevelUpLearnset,
         .teachableLearnset = sMachokeTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna076EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_MACHAMP}),
     },
 
@@ -4570,7 +4570,7 @@
         FOOTPRINT(Machamp)
         .levelUpLearnset = sArauna077LevelUpLearnset,
         .teachableLearnset = sMachampTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna077EggMoveLearnset,
     },
 
 
@@ -4629,7 +4629,7 @@
         FOOTPRINT(Bellsprout)
         .levelUpLearnset = sArauna078LevelUpLearnset,
         .teachableLearnset = sBellsproutTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna078EggMoveLearnset,
     },
 
 
@@ -4688,7 +4688,7 @@
         FOOTPRINT(Weepinbell)
         .levelUpLearnset = sArauna079LevelUpLearnset,
         .teachableLearnset = sWeepinbellTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna079EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_VICTREEBEL}),
     },
 
@@ -4748,7 +4748,7 @@
         FOOTPRINT(Victreebel)
         .levelUpLearnset = sArauna080LevelUpLearnset,
         .teachableLearnset = sVictreebelTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna080EggMoveLearnset,
     },
 
 
@@ -4807,7 +4807,7 @@
         FOOTPRINT(Tentacool)
         .levelUpLearnset = sArauna081LevelUpLearnset,
         .teachableLearnset = sTentacoolTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna081EggMoveLearnset,
     },
 
 
@@ -4866,7 +4866,7 @@
         FOOTPRINT(Tentacruel)
         .levelUpLearnset = sArauna082LevelUpLearnset,
         .teachableLearnset = sTentacruelTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna082EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_GEODUDE}),
     },
 
@@ -4926,7 +4926,7 @@
         FOOTPRINT(Geodude)
         .levelUpLearnset = sArauna083LevelUpLearnset,
         .teachableLearnset = sGeodudeTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna083EggMoveLearnset,
     },
 
 
@@ -4985,7 +4985,7 @@
         FOOTPRINT(Graveler)
         .levelUpLearnset = sArauna084LevelUpLearnset,
         .teachableLearnset = sGravelerTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna084EggMoveLearnset,
     },
 
 
@@ -5044,7 +5044,7 @@
         FOOTPRINT(Golem)
         .levelUpLearnset = sArauna085LevelUpLearnset,
         .teachableLearnset = sGolemTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna085EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_PONYTA}),
     },
 
@@ -5104,7 +5104,7 @@
         FOOTPRINT(Ponyta)
         .levelUpLearnset = sArauna086LevelUpLearnset,
         .teachableLearnset = sPonytaTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna086EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_RAPIDASH}),
     },
 
@@ -5164,7 +5164,7 @@
         FOOTPRINT(Rapidash)
         .levelUpLearnset = sArauna087LevelUpLearnset,
         .teachableLearnset = sRapidashTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna087EggMoveLearnset,
     },
 
 
@@ -5223,7 +5223,7 @@
         FOOTPRINT(Slowpoke)
         .levelUpLearnset = sArauna088LevelUpLearnset,
         .teachableLearnset = sSlowpokeTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna088EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_SLOWBRO}),
     },
 
@@ -5283,7 +5283,7 @@
         FOOTPRINT(Slowbro)
         .levelUpLearnset = sArauna089LevelUpLearnset,
         .teachableLearnset = sSlowbroTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna089EggMoveLearnset,
     },
 
 
@@ -5342,7 +5342,7 @@
         FOOTPRINT(Magnemite)
         .levelUpLearnset = sArauna090LevelUpLearnset,
         .teachableLearnset = sMagnemiteTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna090EggMoveLearnset,
     },
 
 
@@ -5401,7 +5401,7 @@
         FOOTPRINT(Magneton)
         .levelUpLearnset = sArauna091LevelUpLearnset,
         .teachableLearnset = sMagnetonTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna091EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_FARFETCHD}),
     },
 
@@ -5461,7 +5461,7 @@
         FOOTPRINT(Farfetchd)
         .levelUpLearnset = sArauna092LevelUpLearnset,
         .teachableLearnset = sFarfetchdTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna092EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_DODUO}),
     },
 
@@ -5521,7 +5521,7 @@
         FOOTPRINT(Doduo)
         .levelUpLearnset = sArauna093LevelUpLearnset,
         .teachableLearnset = sDoduoTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna093EggMoveLearnset,
     },
 
 
@@ -5580,7 +5580,7 @@
         FOOTPRINT(Dodrio)
         .levelUpLearnset = sArauna094LevelUpLearnset,
         .teachableLearnset = sDodrioTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna094EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_SEEL}),
     },
 
@@ -5640,7 +5640,7 @@
         FOOTPRINT(Seel)
         .levelUpLearnset = sArauna095LevelUpLearnset,
         .teachableLearnset = sSeelTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna095EggMoveLearnset,
     },
 
 
@@ -5699,7 +5699,7 @@
         FOOTPRINT(Dewgong)
         .levelUpLearnset = sArauna096LevelUpLearnset,
         .teachableLearnset = sDewgongTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna096EggMoveLearnset,
     },
 
 
@@ -5758,7 +5758,7 @@
         FOOTPRINT(Grimer)
         .levelUpLearnset = sArauna097LevelUpLearnset,
         .teachableLearnset = sGrimerTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna097EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_MUK}),
     },
 
@@ -5818,7 +5818,7 @@
         FOOTPRINT(Muk)
         .levelUpLearnset = sArauna098LevelUpLearnset,
         .teachableLearnset = sMukTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna098EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_SHELLDER}),
     },
 
@@ -5878,7 +5878,7 @@
         FOOTPRINT(Shellder)
         .levelUpLearnset = sArauna099LevelUpLearnset,
         .teachableLearnset = sShellderTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna099EggMoveLearnset,
     },
 
 
@@ -5937,7 +5937,7 @@
         FOOTPRINT(Cloyster)
         .levelUpLearnset = sArauna100LevelUpLearnset,
         .teachableLearnset = sCloysterTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna100EggMoveLearnset,
     },
 
 
@@ -5995,7 +5995,7 @@
         FOOTPRINT(Gastly)
         .levelUpLearnset = sArauna101LevelUpLearnset,
         .teachableLearnset = sGastlyTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna101EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_HAUNTER}),
     },
 
@@ -6055,7 +6055,7 @@
         FOOTPRINT(Haunter)
         .levelUpLearnset = sArauna102LevelUpLearnset,
         .teachableLearnset = sHaunterTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna102EggMoveLearnset,
     },
 
 
@@ -6114,7 +6114,7 @@
         FOOTPRINT(Gengar)
         .levelUpLearnset = sArauna103LevelUpLearnset,
         .teachableLearnset = sGengarTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna103EggMoveLearnset,
     },
 
 
@@ -6172,7 +6172,7 @@
         FOOTPRINT(Onix)
         .levelUpLearnset = sArauna104LevelUpLearnset,
         .teachableLearnset = sOnixTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna104EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_DROWZEE}),
     },
 
@@ -6232,7 +6232,7 @@
         FOOTPRINT(Drowzee)
         .levelUpLearnset = sArauna105LevelUpLearnset,
         .teachableLearnset = sDrowzeeTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna105EggMoveLearnset,
     },
 
 
@@ -6291,7 +6291,7 @@
         FOOTPRINT(Hypno)
         .levelUpLearnset = sArauna106LevelUpLearnset,
         .teachableLearnset = sHypnoTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna106EggMoveLearnset,
     },
 
 
@@ -6350,7 +6350,7 @@
         FOOTPRINT(Krabby)
         .levelUpLearnset = sArauna107LevelUpLearnset,
         .teachableLearnset = sKrabbyTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna107EggMoveLearnset,
     },
 
 
@@ -6409,7 +6409,7 @@
         FOOTPRINT(Kingler)
         .levelUpLearnset = sArauna108LevelUpLearnset,
         .teachableLearnset = sKinglerTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna108EggMoveLearnset,
     },
 
 
@@ -6468,7 +6468,7 @@
         FOOTPRINT(Voltorb)
         .levelUpLearnset = sArauna109LevelUpLearnset,
         .teachableLearnset = sVoltorbTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna109EggMoveLearnset,
     },
 
 
@@ -6527,7 +6527,7 @@
         FOOTPRINT(Electrode)
         .levelUpLearnset = sArauna110LevelUpLearnset,
         .teachableLearnset = sElectrodeTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna110EggMoveLearnset,
     },
 
 
@@ -6586,7 +6586,7 @@
         FOOTPRINT(Exeggcute)
         .levelUpLearnset = sArauna111LevelUpLearnset,
         .teachableLearnset = sExeggcuteTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna111EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_EXEGGUTOR}),
     },
 
@@ -6646,7 +6646,7 @@
         FOOTPRINT(Exeggutor)
         .levelUpLearnset = sArauna112LevelUpLearnset,
         .teachableLearnset = sExeggutorTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna112EggMoveLearnset,
     },
 
 
@@ -6704,7 +6704,7 @@
         FOOTPRINT(Cubone)
         .levelUpLearnset = sArauna113LevelUpLearnset,
         .teachableLearnset = sCuboneTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna113EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_MAROWAK}),
     },
 
@@ -6764,7 +6764,7 @@
         FOOTPRINT(Marowak)
         .levelUpLearnset = sArauna114LevelUpLearnset,
         .teachableLearnset = sMarowakTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna114EggMoveLearnset,
     },
 
 
@@ -6823,7 +6823,7 @@
         FOOTPRINT(Hitmonlee)
         .levelUpLearnset = sArauna115LevelUpLearnset,
         .teachableLearnset = sHitmonleeTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna115EggMoveLearnset,
     },
 
 
@@ -6882,7 +6882,7 @@
         FOOTPRINT(Hitmonchan)
         .levelUpLearnset = sArauna116LevelUpLearnset,
         .teachableLearnset = sHitmonchanTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna116EggMoveLearnset,
     },
 
 
@@ -6941,7 +6941,7 @@
         FOOTPRINT(Lickitung)
         .levelUpLearnset = sArauna117LevelUpLearnset,
         .teachableLearnset = sLickitungTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna117EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_KOFFING}),
     },
 
@@ -7001,7 +7001,7 @@
         FOOTPRINT(Koffing)
         .levelUpLearnset = sArauna118LevelUpLearnset,
         .teachableLearnset = sKoffingTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna118EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_WEEZING}),
     },
 
@@ -7061,7 +7061,7 @@
         FOOTPRINT(Weezing)
         .levelUpLearnset = sArauna119LevelUpLearnset,
         .teachableLearnset = sWeezingTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna119EggMoveLearnset,
     },
 
 
@@ -7120,7 +7120,7 @@
         FOOTPRINT(Rhyhorn)
         .levelUpLearnset = sArauna120LevelUpLearnset,
         .teachableLearnset = sRhyhornTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna120EggMoveLearnset,
     },
 
 
@@ -7179,7 +7179,7 @@
         FOOTPRINT(Rhydon)
         .levelUpLearnset = sArauna121LevelUpLearnset,
         .teachableLearnset = sRhydonTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna121EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_CHANSEY}),
     },
 
@@ -7239,7 +7239,7 @@
         FOOTPRINT(Chansey)
         .levelUpLearnset = sArauna122LevelUpLearnset,
         .teachableLearnset = sChanseyTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna122EggMoveLearnset,
     },
 
 
@@ -7298,7 +7298,7 @@
         FOOTPRINT(Tangela)
         .levelUpLearnset = sArauna123LevelUpLearnset,
         .teachableLearnset = sTangelaTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna123EggMoveLearnset,
     },
 
 
@@ -7357,7 +7357,7 @@
         FOOTPRINT(Kangaskhan)
         .levelUpLearnset = sArauna124LevelUpLearnset,
         .teachableLearnset = sKangaskhanTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna124EggMoveLearnset,
     },
 
 
@@ -7416,7 +7416,7 @@
         FOOTPRINT(Horsea)
         .levelUpLearnset = sArauna125LevelUpLearnset,
         .teachableLearnset = sHorseaTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna125EggMoveLearnset,
     },
 
 
@@ -7475,7 +7475,7 @@
         FOOTPRINT(Seadra)
         .levelUpLearnset = sArauna126LevelUpLearnset,
         .teachableLearnset = sSeadraTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna126EggMoveLearnset,
     },
 
 
@@ -7534,7 +7534,7 @@
         FOOTPRINT(Goldeen)
         .levelUpLearnset = sArauna127LevelUpLearnset,
         .teachableLearnset = sGoldeenTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna127EggMoveLearnset,
     },
 
 
@@ -7593,7 +7593,7 @@
         FOOTPRINT(Seaking)
         .levelUpLearnset = sArauna128LevelUpLearnset,
         .teachableLearnset = sSeakingTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna128EggMoveLearnset,
     },
 
 
@@ -7652,7 +7652,7 @@
         FOOTPRINT(Staryu)
         .levelUpLearnset = sArauna129LevelUpLearnset,
         .teachableLearnset = sStaryuTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna129EggMoveLearnset,
     },
 
 
@@ -7711,7 +7711,7 @@
         FOOTPRINT(Starmie)
         .levelUpLearnset = sArauna130LevelUpLearnset,
         .teachableLearnset = sStarmieTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna130EggMoveLearnset,
     },
 
 
@@ -7770,7 +7770,7 @@
         FOOTPRINT(MrMime)
         .levelUpLearnset = sArauna131LevelUpLearnset,
         .teachableLearnset = sMrMimeTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna131EggMoveLearnset,
     },
 
 
@@ -7829,7 +7829,7 @@
         FOOTPRINT(Scyther)
         .levelUpLearnset = sArauna132LevelUpLearnset,
         .teachableLearnset = sScytherTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna132EggMoveLearnset,
     },
 
 
@@ -7888,7 +7888,7 @@
         FOOTPRINT(Jynx)
         .levelUpLearnset = sArauna133LevelUpLearnset,
         .teachableLearnset = sJynxTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna133EggMoveLearnset,
     },
 
 
@@ -7947,7 +7947,7 @@
         FOOTPRINT(Electabuzz)
         .levelUpLearnset = sArauna134LevelUpLearnset,
         .teachableLearnset = sElectabuzzTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna134EggMoveLearnset,
     },
 
 
@@ -8006,7 +8006,7 @@
         FOOTPRINT(Magmar)
         .levelUpLearnset = sArauna135LevelUpLearnset,
         .teachableLearnset = sMagmarTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna135EggMoveLearnset,
     },
 
 
@@ -8065,7 +8065,7 @@
         FOOTPRINT(Pinsir)
         .levelUpLearnset = sArauna136LevelUpLearnset,
         .teachableLearnset = sPinsirTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna136EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_TAUROS}),
     },
 
@@ -8125,7 +8125,7 @@
         FOOTPRINT(Tauros)
         .levelUpLearnset = sArauna137LevelUpLearnset,
         .teachableLearnset = sTaurosTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna137EggMoveLearnset,
     },
 
 
@@ -8184,7 +8184,7 @@
         FOOTPRINT(Magikarp)
         .levelUpLearnset = sArauna138LevelUpLearnset,
         .teachableLearnset = sMagikarpTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna138EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_GYARADOS}),
     },
 
@@ -8244,7 +8244,7 @@
         FOOTPRINT(Gyarados)
         .levelUpLearnset = sArauna139LevelUpLearnset,
         .teachableLearnset = sGyaradosTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna139EggMoveLearnset,
     },
 
 
@@ -8302,7 +8302,7 @@
         FOOTPRINT(Lapras)
         .levelUpLearnset = sArauna140LevelUpLearnset,
         .teachableLearnset = sLaprasTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna140EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_DITTO}),
     },
 
@@ -8362,7 +8362,7 @@
         FOOTPRINT(Ditto)
         .levelUpLearnset = sArauna141LevelUpLearnset,
         .teachableLearnset = sDittoTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna141EggMoveLearnset,
     },
 
 
@@ -8421,7 +8421,7 @@
         FOOTPRINT(Eevee)
         .levelUpLearnset = sArauna142LevelUpLearnset,
         .teachableLearnset = sEeveeTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna142EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_VAPOREON}),
     },
 
@@ -8481,7 +8481,7 @@
         FOOTPRINT(Vaporeon)
         .levelUpLearnset = sArauna143LevelUpLearnset,
         .teachableLearnset = sVaporeonTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna143EggMoveLearnset,
     },
 
 
@@ -8540,7 +8540,7 @@
         FOOTPRINT(Jolteon)
         .levelUpLearnset = sArauna144LevelUpLearnset,
         .teachableLearnset = sJolteonTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna144EggMoveLearnset,
     },
 
 
@@ -8599,7 +8599,7 @@
         FOOTPRINT(Flareon)
         .levelUpLearnset = sArauna145LevelUpLearnset,
         .teachableLearnset = sFlareonTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna145EggMoveLearnset,
     },
 
 
@@ -8658,7 +8658,7 @@
         FOOTPRINT(Porygon)
         .levelUpLearnset = sArauna146LevelUpLearnset,
         .teachableLearnset = sPorygonTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna146EggMoveLearnset,
     },
 
 
@@ -8717,7 +8717,7 @@
         FOOTPRINT(Omanyte)
         .levelUpLearnset = sArauna147LevelUpLearnset,
         .teachableLearnset = sOmanyteTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna147EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_OMASTAR}),
     },
 
@@ -8777,7 +8777,7 @@
         FOOTPRINT(Omastar)
         .levelUpLearnset = sArauna148LevelUpLearnset,
         .teachableLearnset = sOmastarTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna148EggMoveLearnset,
     },
 
 
@@ -8836,7 +8836,7 @@
         FOOTPRINT(Kabuto)
         .levelUpLearnset = sArauna149LevelUpLearnset,
         .teachableLearnset = sKabutoTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna149EggMoveLearnset,
     },
 
 
@@ -8895,7 +8895,7 @@
         FOOTPRINT(Kabutops)
         .levelUpLearnset = sArauna150LevelUpLearnset,
         .teachableLearnset = sKabutopsTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna150EggMoveLearnset,
     },
 
 
@@ -8954,7 +8954,7 @@
         FOOTPRINT(Aerodactyl)
         .levelUpLearnset = sArauna151LevelUpLearnset,
         .teachableLearnset = sAerodactylTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna151EggMoveLearnset,
     },
 
 
@@ -9013,7 +9013,7 @@
         FOOTPRINT(Snorlax)
         .levelUpLearnset = sArauna152LevelUpLearnset,
         .teachableLearnset = sSnorlaxTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna152EggMoveLearnset,
     },
 
 
@@ -9072,7 +9072,7 @@
         FOOTPRINT(Articuno)
         .levelUpLearnset = sArauna153LevelUpLearnset,
         .teachableLearnset = sArticunoTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna153EggMoveLearnset,
     },
 
 
@@ -9131,7 +9131,7 @@
         FOOTPRINT(Zapdos)
         .levelUpLearnset = sArauna154LevelUpLearnset,
         .teachableLearnset = sZapdosTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna154EggMoveLearnset,
     },
 
 
@@ -9190,7 +9190,7 @@
         FOOTPRINT(Moltres)
         .levelUpLearnset = sArauna155LevelUpLearnset,
         .teachableLearnset = sMoltresTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna155EggMoveLearnset,
     },
 
 
@@ -9249,7 +9249,7 @@
         FOOTPRINT(Dratini)
         .levelUpLearnset = sArauna156LevelUpLearnset,
         .teachableLearnset = sDratiniTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna156EggMoveLearnset,
     },
 
 
@@ -9308,7 +9308,7 @@
         FOOTPRINT(Dragonair)
         .levelUpLearnset = sArauna157LevelUpLearnset,
         .teachableLearnset = sDragonairTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna157EggMoveLearnset,
     },
 
 
@@ -9367,7 +9367,7 @@
         FOOTPRINT(Dragonite)
         .levelUpLearnset = sArauna158LevelUpLearnset,
         .teachableLearnset = sDragoniteTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna158EggMoveLearnset,
     },
 
 
@@ -9426,7 +9426,7 @@
         FOOTPRINT(Mewtwo)
         .levelUpLearnset = sArauna159LevelUpLearnset,
         .teachableLearnset = sMewtwoTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna159EggMoveLearnset,
     },
 
 
@@ -9485,7 +9485,7 @@
         FOOTPRINT(Mew)
         .levelUpLearnset = sArauna160LevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna160EggMoveLearnset,
     },
 
 
@@ -9544,7 +9544,7 @@
         FOOTPRINT(Chikorita)
         .levelUpLearnset = sArauna161LevelUpLearnset,
         .teachableLearnset = sChikoritaTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna161EggMoveLearnset,
     },
 
 
@@ -9603,7 +9603,7 @@
         FOOTPRINT(Bayleef)
         .levelUpLearnset = sArauna162LevelUpLearnset,
         .teachableLearnset = sBayleefTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna162EggMoveLearnset,
     },
 
 
@@ -9662,7 +9662,7 @@
         FOOTPRINT(Meganium)
         .levelUpLearnset = sArauna163LevelUpLearnset,
         .teachableLearnset = sMeganiumTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna163EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_MEGANIUM}),
     },
 
@@ -9721,7 +9721,7 @@
         FOOTPRINT(Cyndaquil)
         .levelUpLearnset = sArauna164LevelUpLearnset,
         .teachableLearnset = sCyndaquilTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna164EggMoveLearnset,
     },
 
 
@@ -9780,7 +9780,7 @@
         FOOTPRINT(Quilava)
         .levelUpLearnset = sArauna165LevelUpLearnset,
         .teachableLearnset = sQuilavaTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna165EggMoveLearnset,
     },
 
 
@@ -9839,7 +9839,7 @@
         FOOTPRINT(Typhlosion)
         .levelUpLearnset = sArauna166LevelUpLearnset,
         .teachableLearnset = sTyphlosionTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna166EggMoveLearnset,
     },
 
 
@@ -9898,7 +9898,7 @@
         FOOTPRINT(Totodile)
         .levelUpLearnset = sArauna167LevelUpLearnset,
         .teachableLearnset = sTotodileTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna167EggMoveLearnset,
     },
 
 
@@ -9957,7 +9957,7 @@
         FOOTPRINT(Croconaw)
         .levelUpLearnset = sArauna168LevelUpLearnset,
         .teachableLearnset = sCroconawTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna168EggMoveLearnset,
     },
 
 
@@ -10016,7 +10016,7 @@
         FOOTPRINT(Feraligatr)
         .levelUpLearnset = sArauna169LevelUpLearnset,
         .teachableLearnset = sFeraligatrTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna169EggMoveLearnset,
     },
 
 
@@ -10075,7 +10075,7 @@
         FOOTPRINT(Sentret)
         .levelUpLearnset = sArauna170LevelUpLearnset,
         .teachableLearnset = sSentretTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna170EggMoveLearnset,
     },
 
 
@@ -10134,7 +10134,7 @@
         FOOTPRINT(Furret)
         .levelUpLearnset = sArauna171LevelUpLearnset,
         .teachableLearnset = sFurretTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna171EggMoveLearnset,
     },
 
 
@@ -10193,7 +10193,7 @@
         FOOTPRINT(Hoothoot)
         .levelUpLearnset = sArauna172LevelUpLearnset,
         .teachableLearnset = sHoothootTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna172EggMoveLearnset,
     },
 
 
@@ -10252,7 +10252,7 @@
         FOOTPRINT(Noctowl)
         .levelUpLearnset = sArauna173LevelUpLearnset,
         .teachableLearnset = sNoctowlTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna173EggMoveLearnset,
     },
 
 
@@ -10311,7 +10311,7 @@
         FOOTPRINT(Ledyba)
         .levelUpLearnset = sArauna174LevelUpLearnset,
         .teachableLearnset = sLedybaTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna174EggMoveLearnset,
     },
 
 
@@ -10370,7 +10370,7 @@
         FOOTPRINT(Ledian)
         .levelUpLearnset = sArauna175LevelUpLearnset,
         .teachableLearnset = sLedianTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna175EggMoveLearnset,
     },
 
 
@@ -10428,7 +10428,7 @@
         FOOTPRINT(Spinarak)
         .levelUpLearnset = sArauna176LevelUpLearnset,
         .teachableLearnset = sSpinarakTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna176EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_ARIADOS}),
     },
 
@@ -10488,7 +10488,7 @@
         FOOTPRINT(Ariados)
         .levelUpLearnset = sArauna177LevelUpLearnset,
         .teachableLearnset = sAriadosTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna177EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_CROBAT}),
     },
 
@@ -10548,7 +10548,7 @@
         FOOTPRINT(Crobat)
         .levelUpLearnset = sArauna178LevelUpLearnset,
         .teachableLearnset = sCrobatTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna178EggMoveLearnset,
     },
 
 
@@ -10607,7 +10607,7 @@
         FOOTPRINT(Chinchou)
         .levelUpLearnset = sArauna179LevelUpLearnset,
         .teachableLearnset = sChinchouTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna179EggMoveLearnset,
     },
 
 
@@ -10666,7 +10666,7 @@
         FOOTPRINT(Lanturn)
         .levelUpLearnset = sArauna180LevelUpLearnset,
         .teachableLearnset = sLanturnTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna180EggMoveLearnset,
     },
 
 
@@ -10725,7 +10725,7 @@
         FOOTPRINT(Pichu)
         .levelUpLearnset = sArauna181LevelUpLearnset,
         .teachableLearnset = sPichuTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna181EggMoveLearnset,
     },
 
 
@@ -10784,7 +10784,7 @@
         FOOTPRINT(Cleffa)
         .levelUpLearnset = sArauna182LevelUpLearnset,
         .teachableLearnset = sCleffaTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna182EggMoveLearnset,
     },
 
 
@@ -10843,7 +10843,7 @@
         FOOTPRINT(Igglybuff)
         .levelUpLearnset = sArauna183LevelUpLearnset,
         .teachableLearnset = sIgglybuffTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna183EggMoveLearnset,
     },
 
 
@@ -10902,7 +10902,7 @@
         FOOTPRINT(Togepi)
         .levelUpLearnset = sArauna184LevelUpLearnset,
         .teachableLearnset = sTogepiTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna184EggMoveLearnset,
     },
 
 
@@ -10961,7 +10961,7 @@
         FOOTPRINT(Togetic)
         .levelUpLearnset = sArauna185LevelUpLearnset,
         .teachableLearnset = sTogeticTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna185EggMoveLearnset,
     },
 
 
@@ -11020,7 +11020,7 @@
         FOOTPRINT(Natu)
         .levelUpLearnset = sArauna186LevelUpLearnset,
         .teachableLearnset = sNatuTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna186EggMoveLearnset,
     },
 
 
@@ -11079,7 +11079,7 @@
         FOOTPRINT(Xatu)
         .levelUpLearnset = sArauna187LevelUpLearnset,
         .teachableLearnset = sXatuTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna187EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_MAREEP}),
     },
 
@@ -11139,7 +11139,7 @@
         FOOTPRINT(Mareep)
         .levelUpLearnset = sArauna188LevelUpLearnset,
         .teachableLearnset = sMareepTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna188EggMoveLearnset,
     },
 
 
@@ -11198,7 +11198,7 @@
         FOOTPRINT(Flaaffy)
         .levelUpLearnset = sArauna189LevelUpLearnset,
         .teachableLearnset = sFlaaffyTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna189EggMoveLearnset,
     },
 
 
@@ -11257,7 +11257,7 @@
         FOOTPRINT(Ampharos)
         .levelUpLearnset = sArauna190LevelUpLearnset,
         .teachableLearnset = sAmpharosTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna190EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_BELLOSSOM}),
     },
 
@@ -11317,7 +11317,7 @@
         FOOTPRINT(Bellossom)
         .levelUpLearnset = sArauna191LevelUpLearnset,
         .teachableLearnset = sBellossomTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna191EggMoveLearnset,
     },
 
 
@@ -11376,7 +11376,7 @@
         FOOTPRINT(Marill)
         .levelUpLearnset = sArauna192LevelUpLearnset,
         .teachableLearnset = sMarillTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna192EggMoveLearnset,
     },
 
 
@@ -11435,7 +11435,7 @@
         FOOTPRINT(Azumarill)
         .levelUpLearnset = sArauna193LevelUpLearnset,
         .teachableLearnset = sAzumarillTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna193EggMoveLearnset,
     },
 
 
@@ -11494,7 +11494,7 @@
         FOOTPRINT(Sudowoodo)
         .levelUpLearnset = sArauna194LevelUpLearnset,
         .teachableLearnset = sSudowoodoTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna194EggMoveLearnset,
     },
 
 
@@ -11553,7 +11553,7 @@
         FOOTPRINT(Politoed)
         .levelUpLearnset = sArauna195LevelUpLearnset,
         .teachableLearnset = sPolitoedTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna195EggMoveLearnset,
     },
 
 
@@ -11612,7 +11612,7 @@
         FOOTPRINT(Hoppip)
         .levelUpLearnset = sArauna196LevelUpLearnset,
         .teachableLearnset = sHoppipTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna196EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_SKIPLOOM}),
     },
 
@@ -11671,7 +11671,7 @@
         FOOTPRINT(Skiploom)
         .levelUpLearnset = sArauna197LevelUpLearnset,
         .teachableLearnset = sSkiploomTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna197EggMoveLearnset,
     },
 
 
@@ -11730,7 +11730,7 @@
         FOOTPRINT(Jumpluff)
         .levelUpLearnset = sArauna198LevelUpLearnset,
         .teachableLearnset = sJumpluffTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna198EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_AIPOM}),
     },
 
@@ -11790,7 +11790,7 @@
         FOOTPRINT(Aipom)
         .levelUpLearnset = sArauna199LevelUpLearnset,
         .teachableLearnset = sAipomTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna199EggMoveLearnset,
     },
 
 
@@ -11849,7 +11849,7 @@
         FOOTPRINT(Sunkern)
         .levelUpLearnset = sArauna200LevelUpLearnset,
         .teachableLearnset = sSunkernTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna200EggMoveLearnset,
     },
 
 
@@ -11908,7 +11908,7 @@
         FOOTPRINT(Sunflora)
         .levelUpLearnset = sArauna201LevelUpLearnset,
         .teachableLearnset = sSunfloraTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna201EggMoveLearnset,
     },
 
 
@@ -11967,7 +11967,7 @@
         FOOTPRINT(Yanma)
         .levelUpLearnset = sArauna202LevelUpLearnset,
         .teachableLearnset = sYanmaTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna202EggMoveLearnset,
     },
 
 
@@ -12026,7 +12026,7 @@
         FOOTPRINT(Wooper)
         .levelUpLearnset = sArauna203LevelUpLearnset,
         .teachableLearnset = sWooperTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna203EggMoveLearnset,
     },
 
 
@@ -12085,7 +12085,7 @@
         FOOTPRINT(Quagsire)
         .levelUpLearnset = sArauna204LevelUpLearnset,
         .teachableLearnset = sQuagsireTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna204EggMoveLearnset,
     },
 
 
@@ -12144,7 +12144,7 @@
         FOOTPRINT(Espeon)
         .levelUpLearnset = sArauna205LevelUpLearnset,
         .teachableLearnset = sEspeonTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna205EggMoveLearnset,
     },
 
 
@@ -12203,7 +12203,7 @@
         FOOTPRINT(Umbreon)
         .levelUpLearnset = sArauna206LevelUpLearnset,
         .teachableLearnset = sUmbreonTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna206EggMoveLearnset,
     },
 
 
@@ -12262,7 +12262,7 @@
         FOOTPRINT(Murkrow)
         .levelUpLearnset = sArauna207LevelUpLearnset,
         .teachableLearnset = sMurkrowTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna207EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_SLOWKING}),
     },
 
@@ -12322,7 +12322,7 @@
         FOOTPRINT(Slowking)
         .levelUpLearnset = sArauna208LevelUpLearnset,
         .teachableLearnset = sSlowkingTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna208EggMoveLearnset,
     },
 
 
@@ -12381,7 +12381,7 @@
         FOOTPRINT(Misdreavus)
         .levelUpLearnset = sArauna209LevelUpLearnset,
         .teachableLearnset = sMisdreavusTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna209EggMoveLearnset,
     },
 
 
@@ -12440,7 +12440,7 @@
         FOOTPRINT(Unown)
         .levelUpLearnset = sArauna210LevelUpLearnset,
         .teachableLearnset = sUnownTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna210EggMoveLearnset,
     },
 
 
@@ -12499,7 +12499,7 @@
         FOOTPRINT(Wobbuffet)
         .levelUpLearnset = sArauna211LevelUpLearnset,
         .teachableLearnset = sWobbuffetTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna211EggMoveLearnset,
     },
 
 
@@ -12558,7 +12558,7 @@
         FOOTPRINT(Girafarig)
         .levelUpLearnset = sArauna212LevelUpLearnset,
         .teachableLearnset = sGirafarigTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna212EggMoveLearnset,
     },
 
 
@@ -12617,7 +12617,7 @@
         FOOTPRINT(Pineco)
         .levelUpLearnset = sArauna213LevelUpLearnset,
         .teachableLearnset = sPinecoTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna213EggMoveLearnset,
     },
 
 
@@ -12676,7 +12676,7 @@
         FOOTPRINT(Forretress)
         .levelUpLearnset = sArauna214LevelUpLearnset,
         .teachableLearnset = sForretressTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna214EggMoveLearnset,
     },
 
 
@@ -12735,7 +12735,7 @@
         FOOTPRINT(Dunsparce)
         .levelUpLearnset = sArauna215LevelUpLearnset,
         .teachableLearnset = sDunsparceTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna215EggMoveLearnset,
     },
 
 
@@ -12794,7 +12794,7 @@
         FOOTPRINT(Gligar)
         .levelUpLearnset = sArauna216LevelUpLearnset,
         .teachableLearnset = sGligarTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna216EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_STEELIX}),
     },
 
@@ -12854,7 +12854,7 @@
         FOOTPRINT(Steelix)
         .levelUpLearnset = sArauna217LevelUpLearnset,
         .teachableLearnset = sSteelixTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna217EggMoveLearnset,
     },
 
 
@@ -12912,7 +12912,7 @@
         FOOTPRINT(Snubbull)
         .levelUpLearnset = sArauna218LevelUpLearnset,
         .teachableLearnset = sSnubbullTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna218EggMoveLearnset,
     },
 
 
@@ -12971,7 +12971,7 @@
         FOOTPRINT(Granbull)
         .levelUpLearnset = sArauna219LevelUpLearnset,
         .teachableLearnset = sGranbullTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna219EggMoveLearnset,
     },
 
 
@@ -13030,7 +13030,7 @@
         FOOTPRINT(Qwilfish)
         .levelUpLearnset = sArauna220LevelUpLearnset,
         .teachableLearnset = sQwilfishTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna220EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_SHUCKLE}),
     },
 
@@ -13090,7 +13090,7 @@
         FOOTPRINT(Scizor)
         .levelUpLearnset = sArauna221LevelUpLearnset,
         .teachableLearnset = sScizorTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna221EggMoveLearnset,
     },
 
 
@@ -13149,7 +13149,7 @@
         FOOTPRINT(Shuckle)
         .levelUpLearnset = sArauna222LevelUpLearnset,
         .teachableLearnset = sShuckleTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna222EggMoveLearnset,
     },
 
 
@@ -13208,7 +13208,7 @@
         FOOTPRINT(Heracross)
         .levelUpLearnset = sArauna223LevelUpLearnset,
         .teachableLearnset = sHeracrossTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna223EggMoveLearnset,
     },
 
 
@@ -13266,7 +13266,7 @@
         FOOTPRINT(Sneasel)
         .levelUpLearnset = sArauna224LevelUpLearnset,
         .teachableLearnset = sSneaselTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna224EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_URSARING}),
     },
 
@@ -13326,7 +13326,7 @@
         FOOTPRINT(Teddiursa)
         .levelUpLearnset = sArauna225LevelUpLearnset,
         .teachableLearnset = sTeddiursaTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna225EggMoveLearnset,
     },
 
 
@@ -13385,7 +13385,7 @@
         FOOTPRINT(Ursaring)
         .levelUpLearnset = sArauna226LevelUpLearnset,
         .teachableLearnset = sUrsaringTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna226EggMoveLearnset,
     },
 
 
@@ -13444,7 +13444,7 @@
         FOOTPRINT(Slugma)
         .levelUpLearnset = sArauna227LevelUpLearnset,
         .teachableLearnset = sSlugmaTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna227EggMoveLearnset,
     },
 
 
@@ -13503,7 +13503,7 @@
         FOOTPRINT(Magcargo)
         .levelUpLearnset = sArauna228LevelUpLearnset,
         .teachableLearnset = sMagcargoTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna228EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_PILOSWINE}),
     },
 
@@ -13563,7 +13563,7 @@
         FOOTPRINT(Swinub)
         .levelUpLearnset = sArauna229LevelUpLearnset,
         .teachableLearnset = sSwinubTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna229EggMoveLearnset,
     },
 
 
@@ -13622,7 +13622,7 @@
         FOOTPRINT(Piloswine)
         .levelUpLearnset = sArauna230LevelUpLearnset,
         .teachableLearnset = sPiloswineTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna230EggMoveLearnset,
     },
 
 
@@ -13681,7 +13681,7 @@
         FOOTPRINT(Corsola)
         .levelUpLearnset = sArauna231LevelUpLearnset,
         .teachableLearnset = sCorsolaTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna231EggMoveLearnset,
     },
 
 
@@ -13740,7 +13740,7 @@
         FOOTPRINT(Remoraid)
         .levelUpLearnset = sArauna232LevelUpLearnset,
         .teachableLearnset = sRemoraidTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna232EggMoveLearnset,
     },
 
 
@@ -13799,7 +13799,7 @@
         FOOTPRINT(Octillery)
         .levelUpLearnset = sArauna233LevelUpLearnset,
         .teachableLearnset = sOctilleryTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna233EggMoveLearnset,
     },
 
 
@@ -13858,7 +13858,7 @@
         FOOTPRINT(Delibird)
         .levelUpLearnset = sArauna234LevelUpLearnset,
         .teachableLearnset = sDelibirdTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna234EggMoveLearnset,
     },
 
 
@@ -13917,7 +13917,7 @@
         FOOTPRINT(Mantine)
         .levelUpLearnset = sArauna235LevelUpLearnset,
         .teachableLearnset = sMantineTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna235EggMoveLearnset,
     },
 
 
@@ -13976,7 +13976,7 @@
         FOOTPRINT(Skarmory)
         .levelUpLearnset = sArauna236LevelUpLearnset,
         .teachableLearnset = sSkarmoryTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna236EggMoveLearnset,
     },
 
 
@@ -14035,7 +14035,7 @@
         FOOTPRINT(Houndour)
         .levelUpLearnset = sArauna237LevelUpLearnset,
         .teachableLearnset = sHoundourTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna237EggMoveLearnset,
     },
 
 
@@ -14094,7 +14094,7 @@
         FOOTPRINT(Houndoom)
         .levelUpLearnset = sArauna238LevelUpLearnset,
         .teachableLearnset = sHoundoomTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna238EggMoveLearnset,
     },
 
 
@@ -14153,7 +14153,7 @@
         FOOTPRINT(Kingdra)
         .levelUpLearnset = sArauna239LevelUpLearnset,
         .teachableLearnset = sKingdraTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna239EggMoveLearnset,
     },
 
 
@@ -14212,7 +14212,7 @@
         FOOTPRINT(Phanpy)
         .levelUpLearnset = sArauna240LevelUpLearnset,
         .teachableLearnset = sPhanpyTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna240EggMoveLearnset,
     },
 
 
@@ -14271,7 +14271,7 @@
         FOOTPRINT(Donphan)
         .levelUpLearnset = sArauna241LevelUpLearnset,
         .teachableLearnset = sDonphanTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna241EggMoveLearnset,
     },
 
 
@@ -14330,7 +14330,7 @@
         FOOTPRINT(Porygon2)
         .levelUpLearnset = sArauna242LevelUpLearnset,
         .teachableLearnset = sPorygon2TeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna242EggMoveLearnset,
     },
 
 
@@ -14389,7 +14389,7 @@
         FOOTPRINT(Stantler)
         .levelUpLearnset = sArauna243LevelUpLearnset,
         .teachableLearnset = sStantlerTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna243EggMoveLearnset,
     },
 
 
@@ -14448,7 +14448,7 @@
         FOOTPRINT(Smeargle)
         .levelUpLearnset = sArauna244LevelUpLearnset,
         .teachableLearnset = sSmeargleTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna244EggMoveLearnset,
     },
 
 
@@ -14507,7 +14507,7 @@
         FOOTPRINT(Tyrogue)
         .levelUpLearnset = sArauna245LevelUpLearnset,
         .teachableLearnset = sTyrogueTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna245EggMoveLearnset,
     },
 
 
@@ -14566,7 +14566,7 @@
         FOOTPRINT(Hitmontop)
         .levelUpLearnset = sArauna246LevelUpLearnset,
         .teachableLearnset = sHitmontopTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna246EggMoveLearnset,
     },
 
 
@@ -14625,7 +14625,7 @@
         FOOTPRINT(Smoochum)
         .levelUpLearnset = sArauna247LevelUpLearnset,
         .teachableLearnset = sSmoochumTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna247EggMoveLearnset,
     },
 
 
@@ -14684,7 +14684,7 @@
         FOOTPRINT(Elekid)
         .levelUpLearnset = sArauna248LevelUpLearnset,
         .teachableLearnset = sElekidTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna248EggMoveLearnset,
     },
 
 
@@ -14743,7 +14743,7 @@
         FOOTPRINT(Magby)
         .levelUpLearnset = sArauna249LevelUpLearnset,
         .teachableLearnset = sMagbyTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna249EggMoveLearnset,
     },
 
 
@@ -14802,7 +14802,7 @@
         FOOTPRINT(Miltank)
         .levelUpLearnset = sArauna250LevelUpLearnset,
         .teachableLearnset = sMiltankTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna250EggMoveLearnset,
     },
 
 
@@ -14861,7 +14861,7 @@
         FOOTPRINT(Blissey)
         .levelUpLearnset = sArauna251LevelUpLearnset,
         .teachableLearnset = sBlisseyTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna251EggMoveLearnset,
     },
 
 
@@ -14920,7 +14920,7 @@
         FOOTPRINT(Raikou)
         .levelUpLearnset = sArauna252LevelUpLearnset,
         .teachableLearnset = sRaikouTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna252EggMoveLearnset,
     },
 
 
@@ -14979,7 +14979,7 @@
         FOOTPRINT(Entei)
         .levelUpLearnset = sArauna253LevelUpLearnset,
         .teachableLearnset = sEnteiTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna253EggMoveLearnset,
     },
 
 
@@ -15038,7 +15038,7 @@
         FOOTPRINT(Suicune)
         .levelUpLearnset = sArauna254LevelUpLearnset,
         .teachableLearnset = sSuicuneTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna254EggMoveLearnset,
     },
 
 
@@ -15097,7 +15097,7 @@
         FOOTPRINT(Larvitar)
         .levelUpLearnset = sArauna255LevelUpLearnset,
         .teachableLearnset = sLarvitarTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna255EggMoveLearnset,
     },
 
 
@@ -15156,7 +15156,7 @@
         FOOTPRINT(Pupitar)
         .levelUpLearnset = sArauna256LevelUpLearnset,
         .teachableLearnset = sPupitarTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna256EggMoveLearnset,
     },
 
 
@@ -15215,7 +15215,7 @@
         FOOTPRINT(Tyranitar)
         .levelUpLearnset = sArauna257LevelUpLearnset,
         .teachableLearnset = sTyranitarTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna257EggMoveLearnset,
     },
 
 
@@ -15274,7 +15274,7 @@
         FOOTPRINT(Lugia)
         .levelUpLearnset = sArauna258LevelUpLearnset,
         .teachableLearnset = sLugiaTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna258EggMoveLearnset,
     },
 
 
@@ -15333,7 +15333,7 @@
         FOOTPRINT(HoOh)
         .levelUpLearnset = sArauna259LevelUpLearnset,
         .teachableLearnset = sHoOhTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna259EggMoveLearnset,
     },
 
 
@@ -15392,7 +15392,7 @@
         FOOTPRINT(Celebi)
         .levelUpLearnset = sArauna260LevelUpLearnset,
         .teachableLearnset = sCelebiTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna260EggMoveLearnset,
     },
 
 
@@ -15451,7 +15451,7 @@
         FOOTPRINT(Poochyena)
         .levelUpLearnset = sArauna261LevelUpLearnset,
         .teachableLearnset = sPoochyenaTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna261EggMoveLearnset,
     },
 
 
@@ -15510,7 +15510,7 @@
         FOOTPRINT(Mightyena)
         .levelUpLearnset = sArauna262LevelUpLearnset,
         .teachableLearnset = sMightyenaTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna262EggMoveLearnset,
     },
 
 
@@ -15569,7 +15569,7 @@
         FOOTPRINT(Zigzagoon)
         .levelUpLearnset = sArauna263LevelUpLearnset,
         .teachableLearnset = sZigzagoonTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna263EggMoveLearnset,
     },
 
 
@@ -15628,7 +15628,7 @@
         FOOTPRINT(Linoone)
         .levelUpLearnset = sArauna264LevelUpLearnset,
         .teachableLearnset = sLinooneTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna264EggMoveLearnset,
     },
 
 
@@ -15746,7 +15746,7 @@
         FOOTPRINT(Silcoon)
         .levelUpLearnset = sArauna266LevelUpLearnset,
         .teachableLearnset = sSilcoonTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna266EggMoveLearnset,
     },
 
 
@@ -15805,7 +15805,7 @@
         FOOTPRINT(Beautifly)
         .levelUpLearnset = sArauna267LevelUpLearnset,
         .teachableLearnset = sBeautiflyTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna267EggMoveLearnset,
     },
 
 
@@ -15864,7 +15864,7 @@
         FOOTPRINT(Cascoon)
         .levelUpLearnset = sArauna268LevelUpLearnset,
         .teachableLearnset = sCascoonTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna268EggMoveLearnset,
     },
 
 
@@ -15923,7 +15923,7 @@
         FOOTPRINT(Dustox)
         .levelUpLearnset = sArauna269LevelUpLearnset,
         .teachableLearnset = sDustoxTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna269EggMoveLearnset,
     },
 
 
@@ -15982,7 +15982,7 @@
         FOOTPRINT(Lotad)
         .levelUpLearnset = sArauna270LevelUpLearnset,
         .teachableLearnset = sLotadTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna270EggMoveLearnset,
     },
 
 
@@ -16041,7 +16041,7 @@
         FOOTPRINT(Lombre)
         .levelUpLearnset = sArauna271LevelUpLearnset,
         .teachableLearnset = sLombreTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna271EggMoveLearnset,
     },
 
 
@@ -16100,7 +16100,7 @@
         FOOTPRINT(Ludicolo)
         .levelUpLearnset = sArauna272LevelUpLearnset,
         .teachableLearnset = sLudicoloTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna272EggMoveLearnset,
     },
 
 
@@ -16159,7 +16159,7 @@
         FOOTPRINT(Seedot)
         .levelUpLearnset = sArauna273LevelUpLearnset,
         .teachableLearnset = sSeedotTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna273EggMoveLearnset,
     },
 
 
@@ -16218,7 +16218,7 @@
         FOOTPRINT(Nuzleaf)
         .levelUpLearnset = sArauna274LevelUpLearnset,
         .teachableLearnset = sNuzleafTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna274EggMoveLearnset,
     },
 
 
@@ -16277,7 +16277,7 @@
         FOOTPRINT(Shiftry)
         .levelUpLearnset = sArauna275LevelUpLearnset,
         .teachableLearnset = sShiftryTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna275EggMoveLearnset,
     },
 
 
@@ -16336,7 +16336,7 @@
         FOOTPRINT(Taillow)
         .levelUpLearnset = sArauna276LevelUpLearnset,
         .teachableLearnset = sTaillowTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna276EggMoveLearnset,
     },
 
 
@@ -16395,7 +16395,7 @@
         FOOTPRINT(Swellow)
         .levelUpLearnset = sArauna277LevelUpLearnset,
         .teachableLearnset = sSwellowTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna277EggMoveLearnset,
     },
 
 
@@ -16454,7 +16454,7 @@
         FOOTPRINT(Wingull)
         .levelUpLearnset = sArauna278LevelUpLearnset,
         .teachableLearnset = sWingullTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna278EggMoveLearnset,
     },
 
 
@@ -16513,7 +16513,7 @@
         FOOTPRINT(Pelipper)
         .levelUpLearnset = sArauna279LevelUpLearnset,
         .teachableLearnset = sPelipperTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna279EggMoveLearnset,
     },
 
 
@@ -16572,7 +16572,7 @@
         FOOTPRINT(Ralts)
         .levelUpLearnset = sArauna280LevelUpLearnset,
         .teachableLearnset = sRaltsTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna280EggMoveLearnset,
     },
 
 
@@ -16631,7 +16631,7 @@
         FOOTPRINT(Kirlia)
         .levelUpLearnset = sArauna281LevelUpLearnset,
         .teachableLearnset = sKirliaTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna281EggMoveLearnset,
     },
 
 
@@ -16690,7 +16690,7 @@
         FOOTPRINT(Gardevoir)
         .levelUpLearnset = sArauna282LevelUpLearnset,
         .teachableLearnset = sGardevoirTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna282EggMoveLearnset,
     },
 
 
@@ -16749,7 +16749,7 @@
         FOOTPRINT(Surskit)
         .levelUpLearnset = sArauna283LevelUpLearnset,
         .teachableLearnset = sSurskitTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna283EggMoveLearnset,
     },
 
 
@@ -16808,7 +16808,7 @@
         FOOTPRINT(Masquerain)
         .levelUpLearnset = sArauna284LevelUpLearnset,
         .teachableLearnset = sMasquerainTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna284EggMoveLearnset,
     },
 
 
@@ -16867,7 +16867,7 @@
         FOOTPRINT(Shroomish)
         .levelUpLearnset = sArauna285LevelUpLearnset,
         .teachableLearnset = sShroomishTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna285EggMoveLearnset,
     },
 
 
@@ -16926,7 +16926,7 @@
         FOOTPRINT(Breloom)
         .levelUpLearnset = sArauna286LevelUpLearnset,
         .teachableLearnset = sBreloomTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna286EggMoveLearnset,
     },
 
 
@@ -16985,7 +16985,7 @@
         FOOTPRINT(Slakoth)
         .levelUpLearnset = sArauna287LevelUpLearnset,
         .teachableLearnset = sSlakothTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna287EggMoveLearnset,
     },
 
 
@@ -17044,7 +17044,7 @@
         FOOTPRINT(Vigoroth)
         .levelUpLearnset = sArauna288LevelUpLearnset,
         .teachableLearnset = sVigorothTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna288EggMoveLearnset,
     },
 
 
@@ -17103,7 +17103,7 @@
         FOOTPRINT(Slaking)
         .levelUpLearnset = sArauna289LevelUpLearnset,
         .teachableLearnset = sSlakingTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna289EggMoveLearnset,
     },
 
 
@@ -17162,7 +17162,7 @@
         FOOTPRINT(Nincada)
         .levelUpLearnset = sArauna290LevelUpLearnset,
         .teachableLearnset = sNincadaTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna290EggMoveLearnset,
     },
 
 
@@ -17221,7 +17221,7 @@
         FOOTPRINT(Ninjask)
         .levelUpLearnset = sArauna291LevelUpLearnset,
         .teachableLearnset = sNinjaskTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna291EggMoveLearnset,
     },
 
 
@@ -17280,7 +17280,7 @@
         FOOTPRINT(Shedinja)
         .levelUpLearnset = sArauna292LevelUpLearnset,
         .teachableLearnset = sShedinjaTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna292EggMoveLearnset,
     },
 
 
@@ -17339,7 +17339,7 @@
         FOOTPRINT(Whismur)
         .levelUpLearnset = sArauna293LevelUpLearnset,
         .teachableLearnset = sWhismurTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna293EggMoveLearnset,
     },
 
 
@@ -17398,7 +17398,7 @@
         FOOTPRINT(Loudred)
         .levelUpLearnset = sArauna294LevelUpLearnset,
         .teachableLearnset = sLoudredTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna294EggMoveLearnset,
     },
 
 
@@ -17457,7 +17457,7 @@
         FOOTPRINT(Exploud)
         .levelUpLearnset = sArauna295LevelUpLearnset,
         .teachableLearnset = sExploudTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna295EggMoveLearnset,
     },
 
 
@@ -17516,7 +17516,7 @@
         FOOTPRINT(Makuhita)
         .levelUpLearnset = sArauna296LevelUpLearnset,
         .teachableLearnset = sMakuhitaTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna296EggMoveLearnset,
     },
 
 
@@ -17575,7 +17575,7 @@
         FOOTPRINT(Hariyama)
         .levelUpLearnset = sArauna297LevelUpLearnset,
         .teachableLearnset = sHariyamaTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna297EggMoveLearnset,
     },
 
 
@@ -17634,7 +17634,7 @@
         FOOTPRINT(Azurill)
         .levelUpLearnset = sArauna298LevelUpLearnset,
         .teachableLearnset = sAzurillTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna298EggMoveLearnset,
     },
 
 
@@ -17692,7 +17692,7 @@
         FOOTPRINT(Nosepass)
         .levelUpLearnset = sArauna299LevelUpLearnset,
         .teachableLearnset = sNosepassTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna299EggMoveLearnset,
     },
 
 
@@ -17751,7 +17751,7 @@
         FOOTPRINT(Skitty)
         .levelUpLearnset = sArauna300LevelUpLearnset,
         .teachableLearnset = sSkittyTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna300EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_SABLEYE}),
     },
 
@@ -17811,7 +17811,7 @@
         FOOTPRINT(Delcatty)
         .levelUpLearnset = sArauna301LevelUpLearnset,
         .teachableLearnset = sDelcattyTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna301EggMoveLearnset,
     },
 
 
@@ -17870,7 +17870,7 @@
         FOOTPRINT(Sableye)
         .levelUpLearnset = sArauna302LevelUpLearnset,
         .teachableLearnset = sSableyeTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna302EggMoveLearnset,
     },
 
 
@@ -17929,7 +17929,7 @@
         FOOTPRINT(Mawile)
         .levelUpLearnset = sArauna303LevelUpLearnset,
         .teachableLearnset = sMawileTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna303EggMoveLearnset,
     },
 
 
@@ -17988,7 +17988,7 @@
         FOOTPRINT(Aron)
         .levelUpLearnset = sArauna304LevelUpLearnset,
         .teachableLearnset = sAronTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna304EggMoveLearnset,
     },
 
 
@@ -18047,7 +18047,7 @@
         FOOTPRINT(Lairon)
         .levelUpLearnset = sArauna305LevelUpLearnset,
         .teachableLearnset = sLaironTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna305EggMoveLearnset,
     },
 
 
@@ -18106,7 +18106,7 @@
         FOOTPRINT(Aggron)
         .levelUpLearnset = sArauna306LevelUpLearnset,
         .teachableLearnset = sAggronTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna306EggMoveLearnset,
     },
 
 
@@ -18165,7 +18165,7 @@
         FOOTPRINT(Meditite)
         .levelUpLearnset = sArauna307LevelUpLearnset,
         .teachableLearnset = sMedititeTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna307EggMoveLearnset,
     },
 
 
@@ -18224,7 +18224,7 @@
         FOOTPRINT(Medicham)
         .levelUpLearnset = sArauna308LevelUpLearnset,
         .teachableLearnset = sMedichamTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna308EggMoveLearnset,
     },
 
 
@@ -18283,7 +18283,7 @@
         FOOTPRINT(Electrike)
         .levelUpLearnset = sArauna309LevelUpLearnset,
         .teachableLearnset = sElectrikeTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna309EggMoveLearnset,
     },
 
 
@@ -18342,7 +18342,7 @@
         FOOTPRINT(Manectric)
         .levelUpLearnset = sArauna310LevelUpLearnset,
         .teachableLearnset = sManectricTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna310EggMoveLearnset,
     },
 
 
@@ -18401,7 +18401,7 @@
         FOOTPRINT(Plusle)
         .levelUpLearnset = sArauna311LevelUpLearnset,
         .teachableLearnset = sPlusleTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna311EggMoveLearnset,
     },
 
 
@@ -18460,7 +18460,7 @@
         FOOTPRINT(Minun)
         .levelUpLearnset = sArauna312LevelUpLearnset,
         .teachableLearnset = sMinunTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna312EggMoveLearnset,
     },
 
 
@@ -18519,7 +18519,7 @@
         FOOTPRINT(Volbeat)
         .levelUpLearnset = sArauna313LevelUpLearnset,
         .teachableLearnset = sVolbeatTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna313EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_GULPIN}),
     },
 
@@ -18579,7 +18579,7 @@
         FOOTPRINT(Illumise)
         .levelUpLearnset = sArauna314LevelUpLearnset,
         .teachableLearnset = sIllumiseTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna314EggMoveLearnset,
     },
 
 
@@ -18638,7 +18638,7 @@
         FOOTPRINT(Roselia)
         .levelUpLearnset = sArauna315LevelUpLearnset,
         .teachableLearnset = sRoseliaTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna315EggMoveLearnset,
     },
 
 
@@ -18697,7 +18697,7 @@
         FOOTPRINT(Gulpin)
         .levelUpLearnset = sArauna316LevelUpLearnset,
         .teachableLearnset = sGulpinTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna316EggMoveLearnset,
     },
 
 
@@ -18756,7 +18756,7 @@
         FOOTPRINT(Swalot)
         .levelUpLearnset = sArauna317LevelUpLearnset,
         .teachableLearnset = sSwalotTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna317EggMoveLearnset,
     },
 
 
@@ -18815,7 +18815,7 @@
         FOOTPRINT(Carvanha)
         .levelUpLearnset = sArauna318LevelUpLearnset,
         .teachableLearnset = sCarvanhaTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna318EggMoveLearnset,
     },
 
 
@@ -18874,7 +18874,7 @@
         FOOTPRINT(Sharpedo)
         .levelUpLearnset = sArauna319LevelUpLearnset,
         .teachableLearnset = sSharpedoTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna319EggMoveLearnset,
     },
 
 
@@ -18933,7 +18933,7 @@
         FOOTPRINT(Wailmer)
         .levelUpLearnset = sArauna320LevelUpLearnset,
         .teachableLearnset = sWailmerTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna320EggMoveLearnset,
     },
 
 
@@ -18992,7 +18992,7 @@
         FOOTPRINT(Wailord)
         .levelUpLearnset = sArauna321LevelUpLearnset,
         .teachableLearnset = sWailordTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna321EggMoveLearnset,
     },
 
 
@@ -19051,7 +19051,7 @@
         FOOTPRINT(Numel)
         .levelUpLearnset = sArauna322LevelUpLearnset,
         .teachableLearnset = sNumelTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna322EggMoveLearnset,
     },
 
 
@@ -19110,7 +19110,7 @@
         FOOTPRINT(Camerupt)
         .levelUpLearnset = sArauna323LevelUpLearnset,
         .teachableLearnset = sCameruptTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna323EggMoveLearnset,
     },
 
 
@@ -19169,7 +19169,7 @@
         FOOTPRINT(Torkoal)
         .levelUpLearnset = sArauna324LevelUpLearnset,
         .teachableLearnset = sTorkoalTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna324EggMoveLearnset,
     },
 
 
@@ -19228,7 +19228,7 @@
         FOOTPRINT(Spoink)
         .levelUpLearnset = sArauna325LevelUpLearnset,
         .teachableLearnset = sSpoinkTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna325EggMoveLearnset,
     },
 
 
@@ -19287,7 +19287,7 @@
         FOOTPRINT(Grumpig)
         .levelUpLearnset = sArauna326LevelUpLearnset,
         .teachableLearnset = sGrumpigTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna326EggMoveLearnset,
     },
 
 
@@ -19346,7 +19346,7 @@
         FOOTPRINT(Spinda)
         .levelUpLearnset = sArauna327LevelUpLearnset,
         .teachableLearnset = sSpindaTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna327EggMoveLearnset,
     },
 
 
@@ -19405,7 +19405,7 @@
         FOOTPRINT(Trapinch)
         .levelUpLearnset = sArauna328LevelUpLearnset,
         .teachableLearnset = sTrapinchTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna328EggMoveLearnset,
     },
 
 
@@ -20635,7 +20635,7 @@
         FOOTPRINT(Feebas)
         .levelUpLearnset = sArauna349LevelUpLearnset,
         .teachableLearnset = sFeebasTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna349EggMoveLearnset,
     },
 
 
@@ -20694,7 +20694,7 @@
         FOOTPRINT(Milotic)
         .levelUpLearnset = sArauna350LevelUpLearnset,
         .teachableLearnset = sMiloticTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna350EggMoveLearnset,
     },
 
 
@@ -20753,7 +20753,7 @@
         FOOTPRINT(Castform)
         .levelUpLearnset = sArauna351LevelUpLearnset,
         .teachableLearnset = sCastformTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna351EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 18, SPECIES_KECLEON}),
     },
 
@@ -20813,7 +20813,7 @@
         FOOTPRINT(Kecleon)
         .levelUpLearnset = sArauna352LevelUpLearnset,
         .teachableLearnset = sKecleonTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna352EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_SHUPPET}),
     },
 
@@ -20873,7 +20873,7 @@
         FOOTPRINT(Shuppet)
         .levelUpLearnset = sArauna353LevelUpLearnset,
         .teachableLearnset = sShuppetTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna353EggMoveLearnset,
     },
 
 
@@ -20932,7 +20932,7 @@
         FOOTPRINT(Banette)
         .levelUpLearnset = sArauna354LevelUpLearnset,
         .teachableLearnset = sBanetteTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna354EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_DUSKULL}),
     },
 
@@ -20992,7 +20992,7 @@
         FOOTPRINT(Duskull)
         .levelUpLearnset = sArauna355LevelUpLearnset,
         .teachableLearnset = sDuskullTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna355EggMoveLearnset,
     },
 
 
@@ -21050,7 +21050,7 @@
         FOOTPRINT(Dusclops)
         .levelUpLearnset = sArauna356LevelUpLearnset,
         .teachableLearnset = sDusclopsTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna356EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_TROPIUS}),
     },
 
@@ -21110,7 +21110,7 @@
         FOOTPRINT(Tropius)
         .levelUpLearnset = sArauna357LevelUpLearnset,
         .teachableLearnset = sTropiusTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna357EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_CHIMECHO}),
     },
 
@@ -21170,7 +21170,7 @@
         FOOTPRINT(Chimecho)
         .levelUpLearnset = sArauna358LevelUpLearnset,
         .teachableLearnset = sChimechoTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna358EggMoveLearnset,
     },
 
 
@@ -21228,7 +21228,7 @@
         FOOTPRINT(Absol)
         .levelUpLearnset = sArauna359LevelUpLearnset,
         .teachableLearnset = sAbsolTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna359EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_WYNAUT}),
     },
 
@@ -21288,7 +21288,7 @@
         FOOTPRINT(Wynaut)
         .levelUpLearnset = sArauna360LevelUpLearnset,
         .teachableLearnset = sWynautTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna360EggMoveLearnset,
     },
 
 
@@ -21347,7 +21347,7 @@
         FOOTPRINT(Snorunt)
         .levelUpLearnset = sArauna361LevelUpLearnset,
         .teachableLearnset = sSnoruntTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna361EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_GLALIE}),
     },
 
@@ -21407,7 +21407,7 @@
         FOOTPRINT(Glalie)
         .levelUpLearnset = sArauna362LevelUpLearnset,
         .teachableLearnset = sGlalieTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna362EggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_SPHEAL}),
     },
 
@@ -21467,7 +21467,7 @@
         FOOTPRINT(Spheal)
         .levelUpLearnset = sArauna363LevelUpLearnset,
         .teachableLearnset = sSphealTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna363EggMoveLearnset,
     },
 
 
@@ -21526,7 +21526,7 @@
         FOOTPRINT(Sealeo)
         .levelUpLearnset = sArauna364LevelUpLearnset,
         .teachableLearnset = sSealeoTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna364EggMoveLearnset,
     },
 
 
@@ -21585,7 +21585,7 @@
         FOOTPRINT(Walrein)
         .levelUpLearnset = sArauna365LevelUpLearnset,
         .teachableLearnset = sWalreinTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna365EggMoveLearnset,
     },
 
 
@@ -21644,7 +21644,7 @@
         FOOTPRINT(Clamperl)
         .levelUpLearnset = sArauna366LevelUpLearnset,
         .teachableLearnset = sClamperlTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna366EggMoveLearnset,
     },
 
 
@@ -21703,7 +21703,7 @@
         FOOTPRINT(Huntail)
         .levelUpLearnset = sArauna367LevelUpLearnset,
         .teachableLearnset = sHuntailTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna367EggMoveLearnset,
     },
 
 
@@ -21762,7 +21762,7 @@
         FOOTPRINT(Gorebyss)
         .levelUpLearnset = sArauna368LevelUpLearnset,
         .teachableLearnset = sGorebyssTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna368EggMoveLearnset,
     },
 
 
@@ -21821,7 +21821,7 @@
         FOOTPRINT(Relicanth)
         .levelUpLearnset = sArauna369LevelUpLearnset,
         .teachableLearnset = sRelicanthTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna369EggMoveLearnset,
     },
 
 
@@ -21880,7 +21880,7 @@
         FOOTPRINT(Luvdisc)
         .levelUpLearnset = sArauna370LevelUpLearnset,
         .teachableLearnset = sLuvdiscTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna370EggMoveLearnset,
     },
 
 
@@ -21939,7 +21939,7 @@
         FOOTPRINT(Bagon)
         .levelUpLearnset = sArauna371LevelUpLearnset,
         .teachableLearnset = sBagonTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna371EggMoveLearnset,
     },
 
 
@@ -21998,7 +21998,7 @@
         FOOTPRINT(Shelgon)
         .levelUpLearnset = sArauna372LevelUpLearnset,
         .teachableLearnset = sShelgonTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna372EggMoveLearnset,
     },
 
 
@@ -22057,7 +22057,7 @@
         FOOTPRINT(Salamence)
         .levelUpLearnset = sArauna373LevelUpLearnset,
         .teachableLearnset = sSalamenceTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna373EggMoveLearnset,
     },
 
 
@@ -22116,7 +22116,7 @@
         FOOTPRINT(Beldum)
         .levelUpLearnset = sArauna374LevelUpLearnset,
         .teachableLearnset = sBeldumTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna374EggMoveLearnset,
     },
 
 
@@ -22175,7 +22175,7 @@
         FOOTPRINT(Metang)
         .levelUpLearnset = sArauna375LevelUpLearnset,
         .teachableLearnset = sMetangTeachableLearnset,
-        .eggMoveLearnset = sNoneEggMoveLearnset,
+        .eggMoveLearnset = sArauna375EggMoveLearnset,
     },
 
 
