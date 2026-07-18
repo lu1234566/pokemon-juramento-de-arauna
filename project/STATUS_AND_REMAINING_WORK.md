@@ -1,6 +1,6 @@
 # Estado do projeto e trabalho restante
 
-Atualizado em 17 de julho de 2026. Este documento distingue implementação em
+Atualizado em 18 de julho de 2026. Este documento distingue implementação em
 branches de trabalho de conteúdo realmente compilado, testado e aprovado.
 
 ## Estado atual
@@ -8,58 +8,70 @@ branches de trabalho de conteúdo realmente compilado, testado e aprovado.
 | Área | Estado | Observação |
 | --- | --- | --- |
 | Escopo e direção | Definido | Brasil por biomas, 386 slots, dois idiomas e Sistema de Vínculos |
-| Vila e seis mapas do slice | Implementado em PRs | Casco gráfico do Emerald; falta teste integrado no mGBA |
-| História inicial, Nilo e rota | Implementado em PRs | Estágios 0–5 e encontros provisórios |
-| Ruína, escolha de Vínculo e câmara | Implementado em PRs | Três escolhas, miniboss e memória do Campeão |
-| Encerramento do slice | Implementado em PR | Retorno a Nilo e estágio 8 |
-| Pokédex técnica | Parcial | Registro 001–386 existe; só 001–020 vieram do spoiler estruturado manualmente |
-| Captura e cura | Implementado em PRs | Kit, Dex provisória, checkpoint e cura repetível |
-| Sprites de Arauna | Aguardando aprovação | Nenhum pacote gráfico de fakemon foi integrado |
-| Build e teste | Bloqueado | GitHub Actions termina antes do checkout, sem passos ou logs |
+| Vila e mapas do slice técnico | Implementado em PRs | Gráficos do Emerald; falta teste integrado no mGBA |
+| História técnica inicial | Implementado em PRs | Estágios 0–8, Nilo, Rota da Neblina, Ruína e Câmara do Primeiro Elo |
+| Bíblia narrativa canônica | Aprovada | Próxima implementação deve substituir o slice técnico pelo Prólogo e pelos Arcos 1–2 |
+| Pokédex de Arauna | Integrada na PR #47 | 386 nomes, dados, evoluções, learnsets, perfis e slots próprios |
+| Ecologia e treinadores | Integrado na PR #47 | Encontros, espécies protegidas, dificuldade e equipes possuem auditorias reproduzíveis |
+| Artes dos Fakemon | Integradas tecnicamente na PR #47 | Aprovação visual por lotes ainda é necessária; nenhuma nova arte deve entrar sem aprovação |
+| QoL básica | Ativa na PR #47 | Apenas recursos sem efeito relevante sobre progressão ou formato do save |
+| QoL intermediária | Bloqueada por marco | EXP Share global, DexNav e serviços aguardam a segunda insígnia jogável |
+| Build e teste do head atual | Bloqueado por infraestrutura | Actions #478 encerrou antes do checkout; os jobs não possuem passos nem logs |
 
-## O que falta para fechar o vertical slice
+## O que falta para estabilizar a PR #47
 
-- [ ] Reparar ou substituir o runner do GitHub Actions.
-- [ ] Compilar as versões portuguesa e inglesa.
+- [ ] Restaurar um runner capaz de iniciar o checkout ou compilar no Codespaces.
+- [ ] Executar todas as auditorias e validadores do repositório.
+- [ ] Fazer um build limpo da versão inglesa ativa.
 - [ ] Testar no mGBA: save novo, escolha, captura, whiteout, save/reload, três
-      Vínculos, miniboss e epílogo.
+      Vínculos, miniboss, Pokédex no Centro de Pesquisa e epílogo.
 - [ ] Corrigir qualquer falha encontrada no teste real.
-- [ ] Integrar a pilha de PRs na ordem correta e reconciliar o PR separado da Dex.
-- [ ] Fazer uma revisão final de texto e balanceamento da primeira rota.
-- [ ] Gerar um patch privado de teste, nunca uma ROM completa no repositório.
+- [ ] Revisar o lote visual completo; sprites não aprovados continuam candidatos.
+- [ ] Integrar a pilha de PRs na ordem correta.
+- [ ] Gerar apenas patch privado de teste, nunca uma ROM completa no repositório.
 
-## O que falta da Pokédex
+## Próximo marco de campanha
 
-- [ ] Receber exportação estruturada dos slots 021–386 em CSV, JSON ou código do
-      projeto da Pokédex; hoje 366 slots ainda estão reservados sem dados finais.
-- [ ] Para cada slot: nome, tipos, inspiração, bioma, família, evolução, método
-      de evolução, stats, habilidades, learnset, descrição e raridade.
-- [ ] Fechar os dados de batalha das nove formas dos iniciais.
-- [ ] Aprovar, por lote, sprite frontal, traseiro, ícone, shiny e animações.
-- [ ] Definir cries e footprints quando aplicável.
-- [ ] Integrar e testar os 386 slots sem alterar a numeração dos saves.
+A Bíblia Narrativa v1.3 define a sequência canônica que deve substituir o slice
+técnico atual:
+
+1. Prólogo na Vila Amanhecer, com escolha segura entre Caramelo, Querô e Pimpau.
+2. Ciro recebe o inicial de vantagem primária e Anahí recebe o terceiro.
+3. Arco 1, Porto das Redes: Iaraço, Iara-Mãe e Insígnia da Maré.
+4. Arco 2, Serra do Uivo: Lobisomem desbotado, comunicação em Libras e Insígnia do Uivo.
+
+A QoL intermediária só pode ser ativada depois que esse percurso estiver
+implementado, compilado e testado com save novo.
+
+## O que falta da Pokédex e da arte
+
+- [ ] Revisar os 386 pacotes visuais em lotes aprováveis.
+- [ ] Substituir os 386 cries herdados, que continuam como placeholders de áudio.
+- [ ] Fazer revisão final de habitats, capturas especiais e Testemunhos contra a
+      Bíblia Narrativa v1.3.
+- [ ] Validar o conjunto completo em build real e em hardware/emulador.
 
 ## O que falta da campanha completa
 
-- [ ] Definir o mapa-múndi e a ordem dos biomas brasileiros ficcionais.
-- [ ] Planejar oito Selos, cidades, rotas, cavernas, ruínas e atalhos.
-- [ ] Escrever os capítulos posteriores, antagonistas, Liga, finais e pós-jogo.
-- [ ] Construir toda a campanha em greybox com gráficos do Emerald.
-- [ ] Distribuir encontros, treinadores, itens, lojas e economia.
+- [x] Definir oito Insígnias/Casas de História e os biomas principais.
+- [x] Definir o eixo narrativo e os cinco Testemunhos.
+- [ ] Converter a Bíblia v1.3 em mapa de cenas, diálogos, flags e objetivos.
+- [ ] Construir Prólogo e Arcos 1–2 em greybox com gráficos do Emerald.
+- [ ] Construir os Arcos 3–8, Liga, finais e pós-jogo.
+- [ ] Distribuir encontros, treinadores, itens, lojas e economia por arco.
 - [ ] Balancear progressão, níveis, evoluções, habilidades e learnsets.
-- [ ] Produzir música, efeitos e identidade sonora que puderem ser distribuídos.
+- [ ] Produzir música, efeitos e identidade sonora distribuíveis.
 - [ ] Revisar integralmente português e inglês.
 - [ ] Testar em mGBA, outros emuladores e hardware quando possível.
 - [ ] Preparar patches reproduzíveis, créditos e guia de instalação.
 
 ## Dependências do autor
 
-1. Exportação completa e editável da Pokédex, para evitar transcrever 366 slots
-   a partir de imagens.
-2. Entrega dos sprites em lotes numerados; cada lote será apresentado para
-   aprovação antes da integração.
+1. Aprovação visual dos Fakemon por lotes antes de considerar as artes definitivas.
+2. Teste manual das entradas, colisões, Pokédex, save/reload e fluxo de derrota.
 3. Decisões narrativas ou visuais somente quando surgirem alternativas que
    mudem materialmente o jogo.
 
-Enquanto essas dependências não chegam, o desenvolvimento técnico pode avançar
-na campanha greybox, ferramentas, dados provisórios, testes e infraestrutura.
+Enquanto o runner não inicia, o desenvolvimento pode avançar em especificação,
+greybox, scripts, dados provisórios, validadores e infraestrutura sem ativar
+recursos que escondam problemas de progressão.
