@@ -15,23 +15,35 @@ custom maps.
   contract.
 - Record the commit SHA, emulator name/version and platform before playing.
 
-## 1. New game and research center
+## 1. New game, Vila Amanhecer and starter choice
 
+- [ ] Confirm a new save opens inside Dona Zila's house, not inside Emerald's
+      moving truck.
 - [ ] Confirm the opening, menus and all player-facing story text are in English.
-- [ ] Confirm the player reaches the Arauna Research Center without a blocked
-      warp, broken collision or black screen.
-- [ ] Save before choosing a starter so the three branches can be tested.
-- [ ] Choose Pimpau (Treecko slot) and confirm the expected Fakemon art, name,
-      type, level 5 data and summary screen.
-- [ ] In separate save copies, repeat for Caramelo (Torchic slot) and Querô
+- [ ] Confirm the night arrival of Prof. Anahi, the gray figure and the next
+      morning are presented without a black screen or blocked input.
+- [ ] Try to leave before choosing; confirm Dona Zila stops the player.
+- [ ] Interact once with Pimpau, Caramelo and Quero and confirm all three feeding
+      scenes play exactly once.
+- [ ] Confirm no starter can be selected before all three have been fed.
+- [ ] Save after feeding all three so the three choice branches can be tested.
+- [ ] Choose Pimpau (Treecko slot) and confirm the explicit YES/NO prompt,
+      expected Fakemon art, name, type, level 5 data and summary screen.
+- [ ] In separate save copies, repeat for Caramelo (Torchic slot) and Quero
       (Mudkip slot).
-- [ ] Confirm Dr. Maia lets the player keep the chosen starter.
+- [ ] Confirm Dona Zila acknowledges that the chosen partner already selected
+      the player during the night.
+- [ ] Confirm Prof. Anahi integrates the Census pages into Dona Zila's notebook.
 - [ ] Immediately after confirmation, verify the Bag contains exactly **999 Rare
       Candies**.
-- [ ] Talk to Dr. Maia repeatedly and confirm the quantity never exceeds 999.
-- [ ] Verify Pokédex access is enabled and the starter is recorded in the correct
+- [ ] Talk to Prof. Anahi repeatedly and confirm the quantity never exceeds 999.
+- [ ] Verify Pokedex access is enabled and the starter is recorded in the correct
       Arauna slot.
-- [ ] Save, reset and reload; confirm the starter, Pokédex and candy quantity
+- [ ] Exit the house and confirm the popup reads **Vila Amanhecer**, never
+      Littleroot Town.
+- [ ] Confirm any reachable reused Oldale shell is identified as **Amanhecer
+      Post**, never Oldale Town.
+- [ ] Save, reset and reload; confirm the starter, Pokedex and candy quantity
       persist.
 
 ### Bag-full recovery
@@ -39,13 +51,13 @@ custom maps.
 This edge case is optional unless a debug save is available.
 
 - [ ] Fill the medicine pocket before starter confirmation.
-- [ ] Confirm Maia explains that the test supplies could not be added.
-- [ ] Free one medicine slot and talk to Maia again.
+- [ ] Confirm Prof. Anahi explains that the test supplies could not be added.
+- [ ] Free one medicine slot and talk to Prof. Anahi again.
 - [ ] Confirm all 999 Rare Candies are delivered once and cannot be duplicated.
 
 ## 2. Opening route and First Link
 
-- [ ] Follow Nilo through the reused Emerald map shells.
+- [ ] Follow Ciro through the reused Emerald map shells.
 - [ ] Check every entrance, exit, ledge, stair, sign and map connection used by
       the critical path.
 - [ ] Enter and leave the Mist Route in both directions.
