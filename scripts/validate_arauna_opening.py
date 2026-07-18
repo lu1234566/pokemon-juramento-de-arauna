@@ -112,10 +112,20 @@ def main() -> int:
     en_labels = TEXT_LABEL.findall(en)
     if pt_labels != en_labels:
         fail("Portuguese and English opening labels must match and stay ordered")
-    if "placeholder técnico" not in pt or "technical placeholder" not in en:
-        fail("both languages must disclose that starter species are placeholders")
-    if "Nenhum sprite de ARAUNA" not in pt or "No ARAUNA sprite" not in en:
-        fail("both languages must preserve the sprite-approval safeguard")
+    stale_placeholder_claims = (
+        "placeholder técnico",
+        "technical placeholder",
+        "Nenhum sprite de ARAUNA",
+        "No ARAUNA sprite",
+        "POKéMON substitutos",
+    )
+    for claim in stale_placeholder_claims:
+        if claim in pt or claim in en:
+            fail(f"localized opening still contains obsolete placeholder claim: {claim!r}")
+    if "386 espécies nativas" not in pt or "386 native species" not in en:
+        fail("both languages must describe the integrated 386-species Arauna Dex")
+    if "dados e arte estão ligados" not in pt or "data and artwork are linked" not in en:
+        fail("both languages must link the chosen partner to its numbered Arauna Dex entry")
 
     charmap = read("charmap.txt")
     for character in ("ã", "õ"):
@@ -129,7 +139,7 @@ def main() -> int:
     print(
         "Validated Arauna opening stages 0–4, one-time starter choice, "
         "route gate, bilingual text, vanilla-only NPC graphics, and explicit "
-        "placeholder disclosure with Portuguese tilde fallbacks."
+        "integrated-Dex messaging with Portuguese tilde fallbacks."
     )
     return 0
 
