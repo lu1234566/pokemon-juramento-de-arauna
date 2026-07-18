@@ -48,7 +48,7 @@ AraunaResearchCenter_Text_CarameloPrompt::
 	.string "Choose it as your partner?$"
 
 AraunaResearchCenter_Text_QueroQueroPrompt::
-	.string "QUERÔ No. 004: WATER.\p"
+	.string "QUERO No. 004: WATER.\p"
 	.string "Fast and territorial; it will\n"
 	.string "one day reach WATER/BUG.\p"
 	.string "Choose it as your partner?$"
