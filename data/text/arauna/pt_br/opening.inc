@@ -53,7 +53,7 @@ AraunaResearchCenter_Text_QueroQueroPrompt::
 	.string "alcançará WATER/BUG.\p"
 	.string "Escolher como parceiro?$"
 
-AraunaResearchCenter_Text_PlaceholderNotice::
+AraunaResearchCenter_Text_DexLinkNotice::
 	.string "Parceiro registrado.\p"
 	.string "Seus dados e arte estão ligados\n"
 	.string "ao número correspondente na\n"
