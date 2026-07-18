@@ -79,7 +79,7 @@ def main() -> int:
             "setvar VAR_ARAUNA_STARTER_CHOICE, 2",
             "setvar VAR_ARAUNA_STARTER_CHOICE, 3",
             "setvar VAR_ARAUNA_STORY_STAGE, 2",
-            "AraunaResearchCenter_Text_PlaceholderNotice",
+            "AraunaResearchCenter_Text_DexLinkNotice",
         ],
         "research-center selection",
     )
