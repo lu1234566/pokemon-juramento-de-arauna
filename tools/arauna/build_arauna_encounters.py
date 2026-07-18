@@ -212,6 +212,7 @@ def choose_species(
     rate: int,
     max_rate: int,
     max_level: int,
+    used_species: set[str],
 ) -> str:
     method = FIELD_METHOD[field]
     biomes = set(map_biomes(map_name))
@@ -238,7 +239,10 @@ def choose_species(
         raise ValueError(f"no encounter candidate for {map_name} {field} level {max_level}")
     candidates.sort()
     shortlist = candidates[:min(18, len(candidates))]
-    key = f"{map_name}|{field}|{slot // 2}|{max_level}|{rate}"
+    unused = [candidate for candidate in shortlist if candidate[2] not in used_species]
+    if unused:
+        shortlist = unused
+    key = f"{map_name}|{field}|{slot}|{max_level}|{rate}"
     return shortlist[stable_index(key, len(shortlist))][2]
 
 
@@ -257,6 +261,7 @@ def rewrite_encounters(data: dict, profiles: list[dict]) -> int:
                     continue
                 field_rates = rates.get(field) or [1] * len(table["mons"])
                 max_rate = max(field_rates)
+                used_species = set()
                 for slot, mon in enumerate(table["mons"]):
                     rate = field_rates[min(slot, len(field_rates) - 1)]
                     species = choose_species(
@@ -267,7 +272,9 @@ def rewrite_encounters(data: dict, profiles: list[dict]) -> int:
                         rate,
                         max_rate,
                         int(mon["max_level"]),
+                        used_species,
                     )
+                    used_species.add(species)
                     if mon["species"] != species:
                         mon["species"] = species
                         changed += 1

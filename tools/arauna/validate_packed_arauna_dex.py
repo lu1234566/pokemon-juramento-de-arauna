@@ -615,17 +615,18 @@ def validate_runtime_integration() -> None:
             "catching tutorial does not use the approved common placeholder")
 
 
-def validate_difficulty_framework() -> None:
-    audit = ROOT / "tools/arauna/audit_arauna_difficulty.py"
-    result = subprocess.run(
-        [sys.executable, str(audit), "--check"],
-        cwd=ROOT,
-        capture_output=True,
-        text=True,
-        check=False,
-    )
-    require(result.returncode == 0,
-            (result.stdout or result.stderr).strip() or "Arauna difficulty audit failed")
+def validate_generated_audits() -> None:
+    for name in ("audit_arauna_difficulty.py", "audit_arauna_encounters.py"):
+        audit = ROOT / "tools/arauna" / name
+        result = subprocess.run(
+            [sys.executable, str(audit), "--check"],
+            cwd=ROOT,
+            capture_output=True,
+            text=True,
+            check=False,
+        )
+        require(result.returncode == 0,
+                (result.stdout or result.stderr).strip() or f"{name} failed")
 
 
 def main() -> int:
@@ -639,7 +640,7 @@ def main() -> int:
         validate_cry_audit()
         validate_encounter_ecology()
         validate_runtime_integration()
-        validate_difficulty_framework()
+        validate_generated_audits()
     except (OSError, UnicodeError, json.JSONDecodeError, csv.Error, ValidationError, ValueError) as exc:
         print(f"Arauna packed Dex validation failed: {exc}", file=sys.stderr)
         return 1

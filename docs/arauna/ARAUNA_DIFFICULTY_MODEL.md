@@ -27,6 +27,36 @@ unable to progress.
 - a visible held-item ace in the last slot of every principal boss;
 - automated validation and a reviewable difficulty report.
 
+The detailed source study and the resulting adaptation decisions are recorded in
+`docs/arauna/EMERALD_IMPERIUM_1_3_1_REFERENCE.md`.
+
+## Complexity ramp
+
+Imperium's strongest lesson is that level, party size, held items, EVs and AI should not spike together.
+Arauna therefore introduces them in separate layers:
+
+| Campaign point | Party target | Held items | Training data | Strategic expectation |
+|---|---:|---:|---|---|
+| Badge 1 | 4 | 1 ace item | No EVs | Read the boss theme and switch once |
+| Badge 2 | 4 | 1-2 | No EVs | Use status or a secondary counter |
+| Badges 3-4 | 5 | 2 | Partial specialization | Answer coverage and one speed-control tool |
+| Badges 5-6 | 5 | 2-3 | Partial specialization | Break a coherent field or tempo plan |
+| Badges 7-8 | 6 | 4-6 | Strong, not universally perfect | Manage roles across a full team |
+| League | 6 | 6 | Fully reviewed spreads | Demonstrate the campaign's learned systems |
+
+These are design targets for the final Arauna teams. The current inherited Emerald parties remain a temporary
+runtime scaffold until boss identities and biome ordering are locked.
+
+## Encounter fairness
+
+Difficulty is validated against what the player can catch, not only against theoretical type charts.
+Core campaign land tables must provide at least eight distinct choices, and every badge window must expose
+at least three direct type answers through land encounters alone. The final team review will narrow that to
+at least two *practical* answers after moves, stats, evolution levels and boss coverage are considered.
+
+Story-reserved, legendary, mythical and sensitivity-review entries are forbidden from random wild tables.
+This is enforced by `tools/arauna/audit_arauna_encounters.py`.
+
 ## What remains deliberately disabled
 
 - no forced Set battle style;
