@@ -10,7 +10,7 @@ branches de trabalho de conteúdo realmente compilado, testado e aprovado.
 | Escopo e direção | Definido | Brasil por biomas, 386 slots e Sistema de Vínculos; primeira versão jogável em inglês |
 | Vila e mapas do slice técnico | Implementado em PRs | Gráficos do Emerald; falta teste integrado no mGBA |
 | História técnica inicial | Implementado em PRs | Estágios 0–8, Nilo, Rota da Neblina, Ruína e Câmara do Primeiro Elo |
-| Bíblia narrativa canônica | Em implementação | Porto das Redes agora reutiliza Route 109 e Slateport; Serra do Uivo vem em seguida |
+| Bíblia narrativa canônica | Dois arcos em greybox | Porto reutiliza Route 109/Slateport; Serra reutiliza Fallarbor/Route 114/Meteor Falls |
 | Pokédex de Arauna | Integrada na PR #47 | 386 nomes, dados, evoluções, learnsets, perfis e slots próprios |
 | Ecologia e treinadores | Integrado na PR #47 | Encontros, espécies protegidas, dificuldade e equipes possuem auditorias reproduzíveis |
 | Artes dos Fakemon | Integradas tecnicamente na PR #47 | Aprovação visual por lotes ainda é necessária; nenhuma nova arte deve entrar sem aprovação |
@@ -59,7 +59,8 @@ implementado, compilado e testado com save novo.
 - [ ] Consolidar o Prólogo canônico sobre os blocos existentes de Emerald.
 - [x] Construir a primeira passagem de Porto das Redes reutilizando Route 109 e Slateport.
 - [ ] Implementar encontros, chefe e balanceamento final da Insígnia da Maré.
-- [ ] Construir Serra do Uivo reutilizando Route 114, Fallarbor e Meteor Falls.
+- [x] Construir Serra do Uivo reutilizando Route 114, Fallarbor e Meteor Falls.
+- [ ] Compilar e testar o percurso completo até a Uivo Badge antes de liberar QoL intermediária.
 - [ ] Construir os Arcos 3–8, Liga, finais e pós-jogo.
 - [ ] Distribuir encontros, treinadores, itens, lojas e economia por arco.
 - [ ] Balancear progressão, níveis, evoluções, habilidades e learnsets.
