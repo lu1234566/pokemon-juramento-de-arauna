@@ -90,6 +90,11 @@ AraunaPlayerHouse_Text_CensusInvitation::
 	.string "Seu parceiro foi registrado.\n"
 	.string "O CENSO DAS LENDAS comeca.$"
 
+AraunaPlayerHouse_Text_BlockExit::
+	.string "DONA ZILA: Primeiro, os potes.\p"
+	.string "Ninguem sai desta casa sem\n"
+	.string "receber cuidado.$"
+
 AraunaPlayerHouse_Text_FeedAllFirst::
 	.string "Ele espera junto ao pote.\p"
 	.string "Alimente os tres antes de escolher.$"
