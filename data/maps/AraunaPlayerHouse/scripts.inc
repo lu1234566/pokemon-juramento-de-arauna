@@ -3,25 +3,164 @@ AraunaPlayerHouse_MapScripts::
 	.byte 0
 
 AraunaPlayerHouse_OnFrame:
-	map_script_2 VAR_ARAUNA_STORY_STAGE, 0, AraunaPlayerHouse_EventScript_WakeUp
+	map_script_2 VAR_ARAUNA_STORY_STAGE, 0, AraunaPlayerHouse_EventScript_Opening
 	.2byte 0
 
-AraunaPlayerHouse_EventScript_WakeUp::
+AraunaPlayerHouse_EventScript_Opening::
 	lockall
-	msgbox AraunaPlayerHouse_Text_WakeUp, MSGBOX_DEFAULT
+	msgbox AraunaPlayerHouse_Text_NightArrival, MSGBOX_DEFAULT
+	msgbox AraunaPlayerHouse_Text_NightWatch, MSGBOX_DEFAULT
+	msgbox AraunaPlayerHouse_Text_Dawn, MSGBOX_DEFAULT
 	setvar VAR_ARAUNA_STORY_STAGE, 1
 	releaseall
 	end
 
-AraunaPlayerHouse_EventScript_Responsible::
+AraunaPlayerHouse_EventScript_DonaZila::
 	lock
 	faceplayer
-	goto_if_eq VAR_ARAUNA_STORY_STAGE, 1, AraunaPlayerHouse_EventScript_CenterReminder
-	msgbox AraunaPlayerHouse_Text_ResponsibleAfterCall, MSGBOX_DEFAULT
+	goto_if_ne VAR_ARAUNA_STARTER_CHOICE, 0, AraunaPlayerHouse_EventScript_ZilaAfterChoice
+	msgbox AraunaPlayerHouse_Text_ZilaCareReminder, MSGBOX_DEFAULT
 	release
 	end
 
-AraunaPlayerHouse_EventScript_CenterReminder::
-	msgbox AraunaPlayerHouse_Text_CenterReminder, MSGBOX_DEFAULT
+AraunaPlayerHouse_EventScript_ZilaAfterChoice::
+	msgbox AraunaPlayerHouse_Text_ZilaBlessing, MSGBOX_DEFAULT
+	release
+	end
+
+AraunaPlayerHouse_EventScript_Anahi::
+	lock
+	faceplayer
+	goto_if_ne VAR_ARAUNA_STARTER_CHOICE, 0, AraunaPlayerHouse_EventScript_AnahiAfterChoice
+	msgbox AraunaPlayerHouse_Text_AnahiBeforeChoice, MSGBOX_DEFAULT
+	release
+	end
+
+AraunaPlayerHouse_EventScript_AnahiAfterChoice::
+	call AraunaResearchCenter_EventScript_GiveSecondTestCandies
+	msgbox AraunaPlayerHouse_Text_AnahiAfterChoice, MSGBOX_DEFAULT
+	release
+	end
+
+AraunaPlayerHouse_EventScript_Pimpau::
+	lock
+	faceplayer
+	goto_if_ne VAR_ARAUNA_STARTER_CHOICE, 0, AraunaPlayerHouse_EventScript_AlreadyChosen
+	goto_if_set FLAG_ARAUNA_PROLOGUE_FED_PIMPAU, AraunaPlayerHouse_EventScript_CheckPimpauChoice
+	msgbox AraunaPlayerHouse_Text_FeedPimpau, MSGBOX_DEFAULT
+	setflag FLAG_ARAUNA_PROLOGUE_FED_PIMPAU
+	call AraunaPlayerHouse_EventScript_CheckAllFed
+	release
+	end
+
+AraunaPlayerHouse_EventScript_CheckPimpauChoice::
+	goto_if_unset FLAG_ARAUNA_PROLOGUE_FED_CARAMELO, AraunaPlayerHouse_EventScript_FeedAllFirst
+	goto_if_unset FLAG_ARAUNA_PROLOGUE_FED_QUERO, AraunaPlayerHouse_EventScript_FeedAllFirst
+	msgbox AraunaPlayerHouse_Text_PimpauStory, MSGBOX_DEFAULT
+	msgbox AraunaPlayerHouse_Text_PimpauPrompt, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, AraunaPlayerHouse_EventScript_ChoiceCancelled
+	givemon SPECIES_TREECKO, 5, ITEM_NONE
+	setvar VAR_STARTER_MON, 0
+	setvar VAR_ARAUNA_STARTER_CHOICE, 1
+	goto AraunaPlayerHouse_EventScript_CompleteChoice
+
+AraunaPlayerHouse_EventScript_Caramelo::
+	lock
+	faceplayer
+	goto_if_ne VAR_ARAUNA_STARTER_CHOICE, 0, AraunaPlayerHouse_EventScript_AlreadyChosen
+	goto_if_set FLAG_ARAUNA_PROLOGUE_FED_CARAMELO, AraunaPlayerHouse_EventScript_CheckCarameloChoice
+	msgbox AraunaPlayerHouse_Text_FeedCaramelo, MSGBOX_DEFAULT
+	setflag FLAG_ARAUNA_PROLOGUE_FED_CARAMELO
+	call AraunaPlayerHouse_EventScript_CheckAllFed
+	release
+	end
+
+AraunaPlayerHouse_EventScript_CheckCarameloChoice::
+	goto_if_unset FLAG_ARAUNA_PROLOGUE_FED_PIMPAU, AraunaPlayerHouse_EventScript_FeedAllFirst
+	goto_if_unset FLAG_ARAUNA_PROLOGUE_FED_QUERO, AraunaPlayerHouse_EventScript_FeedAllFirst
+	msgbox AraunaPlayerHouse_Text_CarameloStory, MSGBOX_DEFAULT
+	msgbox AraunaPlayerHouse_Text_CarameloPrompt, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, AraunaPlayerHouse_EventScript_ChoiceCancelled
+	givemon SPECIES_TORCHIC, 5, ITEM_NONE
+	setvar VAR_STARTER_MON, 1
+	setvar VAR_ARAUNA_STARTER_CHOICE, 2
+	goto AraunaPlayerHouse_EventScript_CompleteChoice
+
+AraunaPlayerHouse_EventScript_Quero::
+	lock
+	faceplayer
+	goto_if_ne VAR_ARAUNA_STARTER_CHOICE, 0, AraunaPlayerHouse_EventScript_AlreadyChosen
+	goto_if_set FLAG_ARAUNA_PROLOGUE_FED_QUERO, AraunaPlayerHouse_EventScript_CheckQueroChoice
+	msgbox AraunaPlayerHouse_Text_FeedQuero, MSGBOX_DEFAULT
+	setflag FLAG_ARAUNA_PROLOGUE_FED_QUERO
+	call AraunaPlayerHouse_EventScript_CheckAllFed
+	release
+	end
+
+AraunaPlayerHouse_EventScript_CheckQueroChoice::
+	goto_if_unset FLAG_ARAUNA_PROLOGUE_FED_PIMPAU, AraunaPlayerHouse_EventScript_FeedAllFirst
+	goto_if_unset FLAG_ARAUNA_PROLOGUE_FED_CARAMELO, AraunaPlayerHouse_EventScript_FeedAllFirst
+	msgbox AraunaPlayerHouse_Text_QueroStory, MSGBOX_DEFAULT
+	msgbox AraunaPlayerHouse_Text_QueroPrompt, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, AraunaPlayerHouse_EventScript_ChoiceCancelled
+	givemon SPECIES_MUDKIP, 5, ITEM_NONE
+	setvar VAR_STARTER_MON, 2
+	setvar VAR_ARAUNA_STARTER_CHOICE, 3
+	goto AraunaPlayerHouse_EventScript_CompleteChoice
+
+AraunaPlayerHouse_EventScript_CheckAllFed::
+	goto_if_unset FLAG_ARAUNA_PROLOGUE_FED_PIMPAU, AraunaPlayerHouse_EventScript_CareCheckReturn
+	goto_if_unset FLAG_ARAUNA_PROLOGUE_FED_CARAMELO, AraunaPlayerHouse_EventScript_CareCheckReturn
+	goto_if_unset FLAG_ARAUNA_PROLOGUE_FED_QUERO, AraunaPlayerHouse_EventScript_CareCheckReturn
+	msgbox AraunaPlayerHouse_Text_AllFed, MSGBOX_DEFAULT
+AraunaPlayerHouse_EventScript_CareCheckReturn::
+	return
+
+AraunaPlayerHouse_EventScript_CompleteChoice::
+	setflag FLAG_SYS_POKEMON_GET
+	setflag FLAG_SYS_POKEDEX_GET
+	setflag FLAG_SYS_B_DASH
+	setflag FLAG_RECEIVED_RUNNING_SHOES
+	setflag FLAG_ADVENTURE_STARTED
+	special SetUnlockedPokedexFlags
+	setrespawn HEAL_LOCATION_ARAUNA_RESEARCH_CENTER
+	call AraunaPlayerHouse_EventScript_AssignRemainingStarters
+	setvar VAR_ARAUNA_STORY_STAGE, 2
+	special HealPlayerParty
+	msgbox AraunaPlayerHouse_Text_ZilaChosen, MSGBOX_DEFAULT
+	call AraunaResearchCenter_EventScript_GiveSecondTestCandies
+	msgbox AraunaPlayerHouse_Text_CensusInvitation, MSGBOX_DEFAULT
+	release
+	end
+
+AraunaPlayerHouse_EventScript_AssignRemainingStarters::
+	goto_if_eq VAR_ARAUNA_STARTER_CHOICE, 1, AraunaPlayerHouse_EventScript_AssignAfterPimpau
+	goto_if_eq VAR_ARAUNA_STARTER_CHOICE, 2, AraunaPlayerHouse_EventScript_AssignAfterCaramelo
+	setflag FLAG_ARAUNA_CIRO_STARTER_PIMPAU
+	setflag FLAG_ARAUNA_ANAHI_STARTER_CARAMELO
+	return
+
+AraunaPlayerHouse_EventScript_AssignAfterPimpau::
+	setflag FLAG_ARAUNA_CIRO_STARTER_CARAMELO
+	setflag FLAG_ARAUNA_ANAHI_STARTER_QUERO
+	return
+
+AraunaPlayerHouse_EventScript_AssignAfterCaramelo::
+	setflag FLAG_ARAUNA_CIRO_STARTER_QUERO
+	setflag FLAG_ARAUNA_ANAHI_STARTER_PIMPAU
+	return
+
+AraunaPlayerHouse_EventScript_FeedAllFirst::
+	msgbox AraunaPlayerHouse_Text_FeedAllFirst, MSGBOX_DEFAULT
+	release
+	end
+
+AraunaPlayerHouse_EventScript_AlreadyChosen::
+	msgbox AraunaPlayerHouse_Text_AlreadyChosen, MSGBOX_DEFAULT
+	release
+	end
+
+AraunaPlayerHouse_EventScript_ChoiceCancelled::
+	msgbox AraunaPlayerHouse_Text_ChoiceCancelled, MSGBOX_DEFAULT
 	release
 	end
