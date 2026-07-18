@@ -1383,7 +1383,22 @@ AraunaPorto_EventScript_DonaZilaWaiting::
 	end
 
 AraunaPorto_EventScript_DonaZilaRestoreStory::
-	msgbox AraunaPorto_Text_DonaZilaRestoreStory, MSGBOX_DEFAULT
+	goto_if_eq VAR_ARAUNA_STARTER_CHOICE, 1, AraunaPorto_EventScript_DonaZilaPimpauStory
+	goto_if_eq VAR_ARAUNA_STARTER_CHOICE, 2, AraunaPorto_EventScript_DonaZilaCarameloStory
+	goto AraunaPorto_EventScript_DonaZilaQueroStory
+
+AraunaPorto_EventScript_DonaZilaCarameloStory::
+	msgbox AraunaPorto_Text_DonaZilaCarameloStory, MSGBOX_DEFAULT
+	goto AraunaPorto_EventScript_DonaZilaStoryComplete
+
+AraunaPorto_EventScript_DonaZilaQueroStory::
+	msgbox AraunaPorto_Text_DonaZilaQueroStory, MSGBOX_DEFAULT
+	goto AraunaPorto_EventScript_DonaZilaStoryComplete
+
+AraunaPorto_EventScript_DonaZilaPimpauStory::
+	msgbox AraunaPorto_Text_DonaZilaPimpauStory, MSGBOX_DEFAULT
+
+AraunaPorto_EventScript_DonaZilaStoryComplete::
 	setflag FLAG_ARAUNA_PORTO_IARACO_RESTORED
 	setvar VAR_ARAUNA_ARC_STAGE, 13
 	release
