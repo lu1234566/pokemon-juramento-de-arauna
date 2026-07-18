@@ -66,6 +66,19 @@ def main() -> None:
     if PORTUGUESE_RUNTIME_WORDS.search(story):
         raise ValueError("Portuguese prose remains in the English story")
 
+    makefile = Path("Makefile").read_text(encoding="utf-8")
+    required_build_contract = (
+        "ARAUNA_LANGUAGE ?= ENGLISH",
+        "supports only ARAUNA_LANGUAGE=ENGLISH",
+        "ARAUNA_LANGUAGE_ID := 0",
+        "ARAUNA_LANGUAGE_SUFFIX := en",
+        "BUILD_NAME := $(BUILD_NAME)-$(ARAUNA_LANGUAGE_SUFFIX)",
+        "-DARAUNA_LANGUAGE=$(ARAUNA_LANGUAGE_ID)",
+    )
+    for token in required_build_contract:
+        if token not in makefile:
+            raise ValueError(f"English-only build contract is missing: {token}")
+
     event_scripts = args.event_scripts.read_text(encoding="utf-8")
     wrappers = ("birch_speech", "arauna/map_lab", "arauna/opening", "arauna/route", "arauna/ruin", "arauna/chamber")
     for wrapper in wrappers:
@@ -73,7 +86,7 @@ def main() -> None:
         if directive not in event_scripts:
             raise ValueError(f"language wrapper must be selected by CPP: {directive}")
 
-    print("English runtime validated: 386 Dex entries and 6 story packs")
+    print("English runtime validated: fixed -en build, 386 Dex entries and 6 story packs")
 
 
 if __name__ == "__main__":
