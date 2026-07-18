@@ -562,3 +562,79 @@ Route109_Text_TrainerTipsSign:
 	.string "always have identical stats.\p"
 	.string "POKéMON raised by TRAINERS are said\n"
 	.string "to grow stronger than wild POKéMON.$"
+
+@ Arauna reuses Route 109 unchanged as the Porto das Redes shoreline.
+AraunaPorto_EventScript_FisherWitness::
+	lock
+	faceplayer
+	goto_if_lt VAR_ARAUNA_ARC_STAGE, 10, AraunaPorto_EventScript_FisherVanilla
+	goto_if_eq VAR_ARAUNA_ARC_STAGE, 10, AraunaPorto_EventScript_FisherArrival
+	goto_if_lt VAR_ARAUNA_ARC_STAGE, 14, AraunaPorto_EventScript_FisherRiverWarning
+	msgbox AraunaPorto_Text_FisherAfterTestimony, MSGBOX_DEFAULT
+	release
+	end
+
+AraunaPorto_EventScript_FisherVanilla::
+	msgbox Route109_Text_ZigzagoonPicksUpLitter, MSGBOX_DEFAULT
+	release
+	end
+
+AraunaPorto_EventScript_FisherArrival::
+	msgbox AraunaPorto_Text_FisherArrival, MSGBOX_DEFAULT
+	release
+	end
+
+AraunaPorto_EventScript_FisherRiverWarning::
+	msgbox AraunaPorto_Text_FisherRiverWarning, MSGBOX_DEFAULT
+	release
+	end
+
+AraunaPorto_EventScript_Iaraco::
+	lock
+	faceplayer
+	goto_if_lt VAR_ARAUNA_ARC_STAGE, 10, Route109_EventScript_Zigzagoon
+	goto_if_lt VAR_ARAUNA_ARC_STAGE, 11, AraunaPorto_EventScript_IaracoDistant
+	goto_if_eq VAR_ARAUNA_ARC_STAGE, 11, AraunaPorto_EventScript_IaracoFirstMeeting
+	goto_if_eq VAR_ARAUNA_ARC_STAGE, 12, AraunaPorto_EventScript_IaracoNeedsStory
+	goto_if_eq VAR_ARAUNA_ARC_STAGE, 13, AraunaPorto_EventScript_IaracoRestored
+	msgbox AraunaPorto_Text_IaracoCalm, MSGBOX_DEFAULT
+	release
+	end
+
+AraunaPorto_EventScript_IaracoDistant::
+	msgbox AraunaPorto_Text_IaracoDistant, MSGBOX_DEFAULT
+	release
+	end
+
+AraunaPorto_EventScript_IaracoFirstMeeting::
+	showmonpic SPECIES_CATERPIE, 10, 3
+	playmoncry SPECIES_CATERPIE, CRY_MODE_NORMAL
+	msgbox AraunaPorto_Text_IaracoFirstMeeting, MSGBOX_DEFAULT
+	waitmoncry
+	hidemonpic
+	setflag FLAG_ARAUNA_PORTO_IARACO_SEEN
+	setvar VAR_ARAUNA_ARC_STAGE, 12
+	release
+	end
+
+AraunaPorto_EventScript_IaracoNeedsStory::
+	msgbox AraunaPorto_Text_IaracoNeedsStory, MSGBOX_DEFAULT
+	release
+	end
+
+AraunaPorto_EventScript_IaracoRestored::
+	showmonpic SPECIES_CATERPIE, 10, 3
+	playmoncry SPECIES_CATERPIE, CRY_MODE_NORMAL
+	msgbox AraunaPorto_Text_IaracoRestored, MSGBOX_DEFAULT
+	waitmoncry
+	hidemonpic
+	showmonpic SPECIES_BRELOOM, 10, 3
+	playmoncry SPECIES_BRELOOM, CRY_MODE_NORMAL
+	msgbox AraunaPorto_Text_IaraMaeTestimony, MSGBOX_DEFAULT
+	waitmoncry
+	hidemonpic
+	setflag FLAG_ARAUNA_TESTIMONY_IARA_MAE
+	setvar VAR_ARAUNA_TESTIMONY_COUNT, 1
+	setvar VAR_ARAUNA_ARC_STAGE, 14
+	release
+	end
