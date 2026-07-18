@@ -124,9 +124,9 @@ def main() -> None:
     for label in required_labels:
         require(label in text, f"missing English Porto text: {label}")
 
-    for literal in re.findall(r'\\.string "([^"]*)"', text):
-        for segment in re.split(r"\\\\[np]", literal):
-            visible = re.sub(r"\\\\.", "", segment).removesuffix("$")
+    for literal in re.findall(r'\.string "([^"]*)"', text):
+        for segment in re.split(r"\\[np]", literal):
+            visible = re.sub(r"\\.", "", segment).removesuffix("$")
             require(len(visible) <= 32, f"Porto text exceeds 32 characters: {visible!r}")
 
     print(
