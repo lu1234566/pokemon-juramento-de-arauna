@@ -74,15 +74,15 @@
 #define FLAG_ARAUNA_SECOND_TEST_CANDIES_RECEIVED     0x34
 #define FLAG_ARAUNA_MARE_TRIAL_COMPLETE             0x35
 #define FLAG_ARAUNA_UIVO_TRIAL_COMPLETE             0x36
-#define FLAG_UNUSED_0x037    0x37 // Unused Flag
-#define FLAG_UNUSED_0x038    0x38 // Unused Flag
-#define FLAG_UNUSED_0x039    0x39 // Unused Flag
-#define FLAG_UNUSED_0x03A    0x3A // Unused Flag
-#define FLAG_UNUSED_0x03B    0x3B // Unused Flag
-#define FLAG_UNUSED_0x03C    0x3C // Unused Flag
-#define FLAG_UNUSED_0x03D    0x3D // Unused Flag
-#define FLAG_UNUSED_0x03E    0x3E // Unused Flag
-#define FLAG_UNUSED_0x03F    0x3F // Unused Flag
+#define FLAG_ARAUNA_PROLOGUE_FED_PIMPAU              0x37
+#define FLAG_ARAUNA_PROLOGUE_FED_CARAMELO            0x38
+#define FLAG_ARAUNA_PROLOGUE_FED_QUERO               0x39
+#define FLAG_ARAUNA_CIRO_STARTER_PIMPAU              0x3A
+#define FLAG_ARAUNA_CIRO_STARTER_CARAMELO            0x3B
+#define FLAG_ARAUNA_CIRO_STARTER_QUERO               0x3C
+#define FLAG_ARAUNA_ANAHI_STARTER_PIMPAU             0x3D
+#define FLAG_ARAUNA_ANAHI_STARTER_CARAMELO           0x3E
+#define FLAG_ARAUNA_ANAHI_STARTER_QUERO              0x3F
 #define FLAG_UNUSED_0x040    0x40 // Unused Flag
 #define FLAG_UNUSED_0x041    0x41 // Unused Flag
 #define FLAG_UNUSED_0x042    0x42 // Unused Flag
