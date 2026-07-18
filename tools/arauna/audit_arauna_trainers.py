@@ -159,9 +159,20 @@ def main() -> None:
     result_lines = []
     occurrences: Counter[int] = Counter()
     party_count = 0
+    in_block_comment = False
     for line in original.splitlines(keepends=True):
         ending = "\n" if line.endswith("\n") else ""
         body = line[:-1] if ending else line
+        if in_block_comment:
+            if "*/" in body:
+                in_block_comment = False
+            result_lines.append(body + ending)
+            continue
+        if "/*" in body:
+            if "*/" not in body.split("/*", 1)[1]:
+                in_block_comment = True
+            result_lines.append(body + ending)
+            continue
         span = species_span(body)
         if span is not None:
             start, end, token = span
@@ -176,7 +187,8 @@ def main() -> None:
     updated = "".join(result_lines)
 
     # A second parse must find no protected slot after the replacements.
-    for line in updated.splitlines():
+    trainer_code = re.sub(r"/\*.*?\*/", "", updated, flags=re.DOTALL)
+    for line in trainer_code.splitlines():
         span = species_span(line)
         if span is None:
             continue
