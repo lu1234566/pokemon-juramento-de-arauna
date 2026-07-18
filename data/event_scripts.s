@@ -1746,6 +1746,7 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 #include "data/text/arauna/ruin.inc"
 #include "data/text/arauna/chamber.inc"
 #include "data/text/arauna/porto_das_redes.inc"
+#include "data/text/arauna/serra_do_uivo.inc"
 	.include "data/scripts/dexnav.inc"
 	.include "data/scripts/battle_frontier.inc"
 	.include "data/scripts/apricorn_tree.inc"
