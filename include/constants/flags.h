@@ -71,7 +71,7 @@
 #define FLAG_ARAUNA_SERRA_LOBISOMEM_CALMED            0x31
 #define FLAG_ARAUNA_BADGE_UIVO                        0x32
 #define FLAG_ARAUNA_SERRA_CHAPTER_RECEIVED            0x33
-#define FLAG_UNUSED_0x034    0x34 // Unused Flag
+#define FLAG_ARAUNA_SECOND_TEST_CANDIES_RECEIVED     0x34
 #define FLAG_UNUSED_0x035    0x35 // Unused Flag
 #define FLAG_UNUSED_0x036    0x36 // Unused Flag
 #define FLAG_UNUSED_0x037    0x37 // Unused Flag

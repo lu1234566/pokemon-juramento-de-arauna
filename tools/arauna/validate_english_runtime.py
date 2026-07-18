@@ -59,7 +59,7 @@ def main() -> None:
         if f'.categoryName = _("{entry["category"]}"),' not in header:
             raise ValueError(f"generated category missing for #{entry['id']:03d}")
 
-    required_story_files = ("birch_speech.inc", "map_lab.inc", "opening.inc", "route.inc", "ruin.inc", "chamber.inc", "porto_das_redes.inc", "serra_do_uivo.inc")
+    required_story_files = ("birch_speech.inc", "map_lab.inc", "opening.inc", "route.inc", "ruin.inc", "chamber.inc", "porto_das_redes.inc", "serra_do_uivo.inc", "second_rom_test.inc")
     story = "\n".join((args.text_dir / name).read_text(encoding="utf-8") for name in required_story_files)
     if OBSOLETE_PLACEHOLDERS.search(story):
         raise ValueError("obsolete placeholder text remains in the English story")
@@ -80,13 +80,13 @@ def main() -> None:
             raise ValueError(f"English-only build contract is missing: {token}")
 
     event_scripts = args.event_scripts.read_text(encoding="utf-8")
-    wrappers = ("birch_speech", "arauna/map_lab", "arauna/opening", "arauna/route", "arauna/ruin", "arauna/chamber", "arauna/porto_das_redes", "arauna/serra_do_uivo")
+    wrappers = ("birch_speech", "arauna/map_lab", "arauna/opening", "arauna/route", "arauna/ruin", "arauna/chamber", "arauna/porto_das_redes", "arauna/serra_do_uivo", "arauna/second_rom_test")
     for wrapper in wrappers:
         directive = f'#include "data/text/{wrapper}.inc"'
         if directive not in event_scripts:
             raise ValueError(f"language wrapper must be selected by CPP: {directive}")
 
-    print("English runtime validated: fixed -en build, 386 Dex entries and 8 story packs")
+    print("English runtime validated: fixed -en build, 386 Dex entries and 9 story packs")
 
 
 if __name__ == "__main__":

@@ -21,12 +21,14 @@ AraunaResearchCenter_EventScript_Introduction::
 
 AraunaResearchCenter_EventScript_AfterChoice::
 	special HealPlayerParty
+	call AraunaResearchCenter_EventScript_GiveSecondTestCandies
 	msgbox AraunaResearchCenter_Text_AfterChoice, MSGBOX_DEFAULT
 	release
 	end
 
 AraunaResearchCenter_EventScript_RouteOpen::
 	special HealPlayerParty
+	call AraunaResearchCenter_EventScript_GiveSecondTestCandies
 	msgbox AraunaResearchCenter_Text_RouteOpen, MSGBOX_DEFAULT
 	release
 	end
@@ -76,10 +78,26 @@ AraunaResearchCenter_EventScript_CompleteChoice::
 	setrespawn HEAL_LOCATION_ARAUNA_RESEARCH_CENTER
 	setvar VAR_ARAUNA_STORY_STAGE, 2
 	special HealPlayerParty
+	call AraunaResearchCenter_EventScript_GiveSecondTestCandies
 	msgbox AraunaResearchCenter_Text_DexLinkNotice, MSGBOX_DEFAULT
 	msgbox AraunaResearchCenter_Text_DexActivated, MSGBOX_DEFAULT
 	release
 	end
+
+AraunaResearchCenter_EventScript_GiveSecondTestCandies::
+	goto_if_set FLAG_ARAUNA_SECOND_TEST_CANDIES_RECEIVED, AraunaResearchCenter_EventScript_TestCandiesReturn
+	checkitemspace ITEM_RARE_CANDY, 999
+	goto_if_eq VAR_RESULT, FALSE, AraunaResearchCenter_EventScript_TestCandiesBagFull
+	giveitem ITEM_RARE_CANDY, 999
+	goto_if_eq VAR_RESULT, FALSE, AraunaResearchCenter_EventScript_TestCandiesBagFull
+	setflag FLAG_ARAUNA_SECOND_TEST_CANDIES_RECEIVED
+	msgbox AraunaSecondTest_Text_RareCandiesReceived, MSGBOX_DEFAULT
+AraunaResearchCenter_EventScript_TestCandiesReturn::
+	return
+
+AraunaResearchCenter_EventScript_TestCandiesBagFull::
+	msgbox AraunaSecondTest_Text_RareCandiesBagFull, MSGBOX_DEFAULT
+	return
 
 AraunaResearchCenter_EventScript_SelectionLocked::
 	msgbox AraunaResearchCenter_Text_SelectionLocked, MSGBOX_DEFAULT

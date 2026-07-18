@@ -16,7 +16,23 @@ branches de trabalho de conteúdo realmente compilado, testado e aprovado.
 | Artes dos Fakemon | Integradas tecnicamente na PR #47 | Aprovação visual por lotes ainda é necessária; nenhuma nova arte deve entrar sem aprovação |
 | QoL básica | Ativa na PR #47 | Apenas recursos sem efeito relevante sobre progressão ou formato do save |
 | QoL intermediária | Bloqueada por marco | EXP Share global, DexNav e serviços aguardam a segunda insígnia jogável |
+| Segundo teste da ROM | Preparado em branch | Save novo, percurso até a Uivo Badge e 999 Rare Candies de teste entregues uma única vez no laboratório |
 | Build e teste do head atual | Bloqueado por infraestrutura | Primeira versão força inglês e gera `pokeemerald-en.gba`; Actions ainda encerra antes do checkout |
+
+## Pacote do segundo teste
+
+- A versão de teste continua exclusivamente em inglês e deve gerar
+  `pokeemerald-en.gba`.
+- Ao confirmar o inicial no Centro de Pesquisa, Dr. Maia entrega 999 Rare
+  Candies como suprimento temporário de teste.
+- A entrega usa uma flag exclusiva, não pode ser duplicada e volta a ser
+  oferecida ao falar com Maia somente se a mochila estava sem espaço.
+- O teste deve usar um save novo e seguir
+  `docs/arauna/SECOND_ROM_TEST_CHECKLIST.md`.
+- EXP Share global, DexNav e serviços de natureza/habilidade continuam
+  desativados até o percurso ser compilado e validado no mGBA.
+- As Rare Candies são instrumentação da segunda build e devem ser removidas
+  ou condicionadas antes de uma versão pública.
 
 ## O que falta para estabilizar a PR #47
 

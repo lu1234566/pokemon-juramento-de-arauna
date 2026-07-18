@@ -58,6 +58,8 @@ jobs:
         run: python3 scripts/validate_arauna_porto_reuse.py
       - name: Validate Serra do Uivo map reuse
         run: python3 scripts/validate_arauna_serra_reuse.py
+      - name: Validate second ROM test package
+        run: python3 scripts/validate_second_rom_test.py
       - name: Validate Mist Route encounters
         run: python3 scripts/validate_mist_route_encounters.py
       - name: Validate capture onboarding
