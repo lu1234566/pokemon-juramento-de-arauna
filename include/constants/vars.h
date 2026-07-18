@@ -270,11 +270,11 @@
 #define VAR_ARAUNA_STARTER_CHOICE                        0x40F8 // 0=None, 1=Grass, 2=Fire, 3=Water
 #define VAR_ARAUNA_BOND_CHOICE                           0x40F9 // 0=None, 1=Courage, 2=Wisdom, 3=Compassion
 #define VAR_ARAUNA_OPTIONAL_MISSION                      0x40FA // 0–3: field-notebook side mission
-#define VAR_UNUSED_0x40FB                                0x40FB // Unused Var
-#define VAR_UNUSED_0x40FC                                0x40FC // Unused Var
-#define VAR_UNUSED_0x40FD                                0x40FD // Unused Var
-#define VAR_UNUSED_0x40FE                                0x40FE // Unused Var
-#define VAR_UNUSED_0x40FF                                0x40FF // Unused Var
+#define VAR_ARAUNA_ARC_STAGE                            0x40FB // 0=not started, 10-15=Porto das Redes
+#define VAR_ARAUNA_BADGE_COUNT                          0x40FC // Canonical Houses of Story badges
+#define VAR_ARAUNA_TESTIMONY_COUNT                      0x40FD // Recorded story Testimonies
+#define VAR_ARAUNA_RIVAL_STAGE                          0x40FE // Ciro/Anahi campaign state
+#define VAR_ARAUNA_QUEST_BITS                           0x40FF // Compact side-quest state
 
 #define VARS_END                                         0x40FF
 #define VARS_COUNT                                       (VARS_END - VARS_START + 1)
