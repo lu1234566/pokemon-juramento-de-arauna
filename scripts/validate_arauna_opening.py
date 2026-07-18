@@ -72,6 +72,20 @@ def main() -> int:
     if "WarpToTruck();" in new_game or "MAP_INSIDE_OF_TRUCK" in new_game:
         fail("Emerald new games must not enter the vanilla moving truck")
 
+    overworld = read("src/overworld.c")
+    callback_match = re.search(
+        r"void CB2_NewGame\(void\)\s*\{(?P<body>.*?)\n\}",
+        overworld,
+        re.DOTALL,
+    )
+    if callback_match is None:
+        fail("cannot locate CB2_NewGame in src/overworld.c")
+    callback_body = callback_match.group("body")
+    if "gFieldCallback = FieldCB_WarpExitFadeFromBlack;" not in callback_body:
+        fail("Arauna new games must fade into Dona Zila's house")
+    if "ExecuteTruckSequence" in callback_body:
+        fail("Arauna new games must not execute the Emerald truck sequence")
+
     house_map = json.loads(read("data/maps/AraunaPlayerHouse/map.json"))
     graphics = [event["graphics_id"] for event in house_map["object_events"]]
     expected_graphics = [
