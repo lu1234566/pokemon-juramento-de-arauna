@@ -4,6 +4,15 @@ GAME_CODE    ?= BPEE
 BUILD_NAME   ?= emerald
 MAP_VERSION  ?= emerald
 
+# The first playable Arauna release is intentionally English-only.
+ARAUNA_LANGUAGE ?= ENGLISH
+ifneq ($(ARAUNA_LANGUAGE),ENGLISH)
+$(error The first playable Arauna release supports only ARAUNA_LANGUAGE=ENGLISH)
+endif
+ARAUNA_LANGUAGE_ID := 0
+ARAUNA_LANGUAGE_SUFFIX := en
+BUILD_NAME := $(BUILD_NAME)-$(ARAUNA_LANGUAGE_SUFFIX)
+
 ifeq (firered, $(or $(BUILD), $(MAKECMDGOALS)))
   	GAME_VERSION 	:= FIRERED
 	TITLE       	:= POKEMON FIRE
@@ -156,7 +165,7 @@ O_LEVEL ?= g
 else
 O_LEVEL ?= 2
 endif
-CPPFLAGS := $(INCLUDE_CPP_ARGS) -Wno-trigraphs -DMODERN=1 -DTESTING=$(TEST) -D$(GAME_VERSION) -std=gnu17
+CPPFLAGS := $(INCLUDE_CPP_ARGS) -Wno-trigraphs -DMODERN=1 -DTESTING=$(TEST) -D$(GAME_VERSION) -DARAUNA_LANGUAGE=$(ARAUNA_LANGUAGE_ID) -std=gnu17
 ifeq ($(RELEASE),1)
 	override CPPFLAGS += -DRELEASE
 	ifeq ($(USE_LTO_ON_RELEASE),1)
