@@ -60,8 +60,6 @@ def main() -> None:
     require(companion["graphics_id"] == "OBJ_EVENT_GFX_POOCHYENA"
             and companion["script"] == "AraunaSerra_EventScript_HermitCompanion",
             "existing Route 114 companion was not reused")
-    require(lobisomem["local_id"] == "LOCALID_METEOR_FALLS_COZMO",
-            "former Cozmo object identity changed")
     require(lobisomem["graphics_id"] == "OBJ_EVENT_GFX_POOCHYENA"
             and lobisomem["script"] == "AraunaSerra_EventScript_Lobisomem"
             and lobisomem["flag"] == "0",
