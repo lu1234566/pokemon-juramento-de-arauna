@@ -203,13 +203,22 @@ def validate_learnsets() -> None:
     require(text.count("LEVEL_UP_END") == DEX_SIZE,
             "each Arauna learnset must contain exactly one terminator")
 
+    parsed_blocks = {}
     for number, block in re.findall(
         r"sArauna(\d{3})LevelUpLearnset\[\]\s*=\s*\{(.*?)\n\};",
         text,
         flags=re.DOTALL,
     ):
-        require(block.count("LEVEL_UP_MOVE") >= 8,
-                f"Arauna learnset #{number} has fewer than eight moves")
+        moves = re.findall(r"LEVEL_UP_MOVE\(\s*(\d+),\s*(MOVE_[A-Z0-9_]+)\)", block)
+        require(10 <= len(moves) <= 14,
+                f"Arauna learnset #{number} must contain 10-14 moves")
+        levels = [int(level) for level, _ in moves]
+        move_names = [move for _, move in moves]
+        require(levels == sorted(levels) and min(levels) >= 1 and max(levels) <= 100,
+                f"Arauna learnset #{number} has invalid level ordering")
+        require(len(move_names) == len(set(move_names)),
+                f"Arauna learnset #{number} repeats a move")
+        parsed_blocks[number] = moves
 
     forbidden_field_moves = {
         "MOVE_CUT", "MOVE_FLY", "MOVE_SURF", "MOVE_STRENGTH",
@@ -218,6 +227,31 @@ def validate_learnsets() -> None:
     found = sorted(move for move in forbidden_field_moves if move in text)
     require(not found,
             f"level-up learnsets would bypass field progression: {', '.join(found)}")
+
+    audit = read_csv("docs/arauna/ARAUNA_LEARNSET_AUDIT.csv")
+    numeric_ids(audit, "id", "learnset audit")
+    require(len({row["family_root"] for row in audit}) >= 300,
+            "learnset audit lost expected family coverage")
+    require(len({row["signature_move"] for row in audit}) >= 60,
+            "learnset identities use too few signature moves")
+    require(len({row["battle_role"] for row in audit}) == 6,
+            "learnset identities must cover all six battle roles")
+    for row in audit:
+        number = row["id"]
+        moves = parsed_blocks[number]
+        move_names = [move for _, move in moves]
+        require(int(row["move_count"]) == len(moves),
+                f"learnset audit move count mismatch at #{number}")
+        require(row["signature_move"] in move_names,
+                f"learnset #{number} lacks its family signature")
+        require(row["role_move"] in move_names,
+                f"learnset #{number} lacks its battle-role move")
+        require(row["final_move"] == move_names[-1],
+                f"learnset audit final move mismatch at #{number}")
+        require(int(row["first_stab_level"]) <= 13,
+                f"learnset #{number} receives primary STAB too late")
+        require(0 <= int(row["stage"]) <= 2,
+                f"learnset #{number} has an invalid evolution stage")
 
     species = read_text("src/data/pokemon/species_info/arauna_dex.h")
     references = set(matches(
@@ -594,7 +628,7 @@ def main() -> int:
         print(f"Arauna packed Dex validation failed: {exc}", file=sys.stderr)
         return 1
 
-    print("Arauna packed Dex validation passed: 386 battle profiles, 386 learnsets, 386 TM overlays, 354 egg-move sets, 321 wild species, 81 evolutions, 1,930 graphic resources.")
+    print("Arauna packed Dex validation passed: 386 family-aware learnsets, 386 battle profiles, 386 TM overlays, 354 egg-move sets, 321 wild species, 81 evolutions, 1,930 graphic resources.")
     return 0
 
 
