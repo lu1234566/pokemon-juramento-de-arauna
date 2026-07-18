@@ -130,7 +130,7 @@ def main() -> int:
         fail("the reused Vila Amanhecer exterior must display its map name")
 
     map_sections = json.loads(read("src/data/region_map/region_map_sections.json"))
-    names = {section["id"]: section["name"] for section in map_sections["map_sections"]}
+    names = {section["id"]: section.get("name") for section in map_sections["map_sections"]}
     if names.get("MAPSEC_LITTLEROOT_TOWN") != "VILA AMANHECER":
         fail("the reused Littleroot map section must be VILA AMANHECER")
     if names.get("MAPSEC_OLDALE_TOWN") != "AMANHECER POST":
