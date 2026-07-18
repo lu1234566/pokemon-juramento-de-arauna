@@ -216,7 +216,7 @@ def build_block(entry: dict, target: str, nat_slot: str, target_for_id: dict[int
     icon = field(original, "iconSprite", "gMonIcon_QuestionMark")
     level = f"sArauna{int(entry['id']):03d}LevelUpLearnset"
     teachable = field(original, "teachableLearnset", "sNoneTeachableLearnset")
-    egg = "sNoneEggMoveLearnset"
+    egg = battle_profile["egg_move_learnset"]
     footprint = footprint_symbol(original)
     name = engine_name(entry).replace('"', "'")
     cat = category(entry).replace('"', "'")
