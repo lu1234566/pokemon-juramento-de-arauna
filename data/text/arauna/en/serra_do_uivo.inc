@@ -82,20 +82,20 @@ AraunaSerra_Text_LobisomemDistant::
 AraunaSerra_Text_LobisomemDesaturated::
 	.string "LOBISOMEM steps into the light.\p"
 	.string "Its fur is drained of color.\n"
-	.string "It bares its teeth, but trembles.$"
+	.string "It bares its teeth and trembles.$"
 
 AraunaSerra_Text_PlayerSignsToLobisomem::
 	.string "You lower your hands and sign:\p"
 	.string "LOOK. WAIT. SAFE.\p"
-	.string "The signs are imperfect, but your\n"
+	.string "The signs are imperfect, yet your\n"
 	.string "intention is clear.$"
 
 AraunaSerra_Text_LobisomemUnderstands::
 	.string "LOBISOMEM stops growling.\p"
 	.string "Color returns with each breath.\n"
-	.string "Its next howl sounds like relief.$"
+	.string "Its next howl carries relief.$"
 
 AraunaSerra_Text_LobisomemCalm::
-	.string "LOBISOMEM rests beside the water.\p"
-	.string "The cave carries a calm, complete\n"
+	.string "LOBISOMEM rests by the water.\p"
+	.string "The cave carries one complete\n"
 	.string "howl back toward the settlement.$"
