@@ -87,7 +87,7 @@ AraunaSerra_Text_LobisomemDesaturated::
 AraunaSerra_Text_PlayerSignsToLobisomem::
 	.string "You lower your hands and sign:\p"
 	.string "LOOK. WAIT. SAFE.\p"
-	.string "The signs are imperfect, yet your\n"
+	.string "The signs are rough, yet your\n"
 	.string "intention is clear.$"
 
 AraunaSerra_Text_LobisomemUnderstands::
