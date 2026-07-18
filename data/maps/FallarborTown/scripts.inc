@@ -93,3 +93,26 @@ FallarborTown_Text_MoveTutorSign:
 	.string "MOVE TUTOR'S HOUSE\n"
 	.string "“New moves taught to POKéMON.”$"
 
+@ Arauna reuses Fallarbor Town unchanged as the Serra do Uivo settlement.
+AraunaSerra_EventScript_LibrasChild::
+	lock
+	faceplayer
+	goto_if_lt VAR_ARAUNA_ARC_STAGE, 20, AraunaSerra_EventScript_LibrasChildVanilla
+	goto_if_eq VAR_ARAUNA_ARC_STAGE, 20, AraunaSerra_EventScript_LearnLibras
+	msgbox AraunaSerra_Text_LibrasReminder, MSGBOX_DEFAULT
+	release
+	end
+
+AraunaSerra_EventScript_LibrasChildVanilla::
+	msgbox FallarborTown_Text_MyPreciousAzurill, MSGBOX_DEFAULT
+	release
+	end
+
+AraunaSerra_EventScript_LearnLibras::
+	msgbox AraunaSerra_Text_LibrasChildIntroduction, MSGBOX_DEFAULT
+	msgbox AraunaSerra_Text_LibrasLesson, MSGBOX_DEFAULT
+	setflag FLAG_ARAUNA_LIBRAS_LEARNED
+	setvar VAR_ARAUNA_ARC_STAGE, 21
+	msgbox AraunaSerra_Text_LibrasLearned, MSGBOX_DEFAULT
+	release
+	end
