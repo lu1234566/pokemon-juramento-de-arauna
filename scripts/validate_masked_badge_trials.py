@@ -37,6 +37,7 @@ def validate_text_width(path: str) -> None:
 
 def main() -> None:
     flags = Path("include/constants/flags.h").read_text(encoding="utf-8")
+    opponents = Path("include/constants/opponents.h").read_text(encoding="utf-8")
     porto = Path("data/maps/SlateportCity/scripts.inc").read_text(encoding="utf-8")
     serra = Path("data/maps/Route114/scripts.inc").read_text(encoding="utf-8")
     trainers = Path("src/data/trainers.party").read_text(encoding="utf-8")
@@ -45,6 +46,10 @@ def main() -> None:
 
     require(flags, "#define FLAG_ARAUNA_MARE_TRIAL_COMPLETE             0x35", "Maré trial flag")
     require(flags, "#define FLAG_ARAUNA_UIVO_TRIAL_COMPLETE             0x36", "Uivo trial flag")
+    require(opponents, "#define TRAINER_ARAUNA_MARE_TRIAL           857", "Maré trial trainer ID")
+    require(opponents, "#define TRAINER_ARAUNA_UIVO_TRIAL           858", "Uivo trial trainer ID")
+    require(opponents, "#define TRAINERS_COUNT_EMERALD     859", "Emerald trainer count")
+    require(opponents, "#define MAX_TRAINERS_COUNT_EMERALD 864", "trainer flag capacity")
 
     porto_trial = script_block(
         porto,
