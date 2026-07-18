@@ -592,12 +592,20 @@ AraunaPorto_EventScript_FisherRiverWarning::
 AraunaPorto_EventScript_Iaraco::
 	lock
 	faceplayer
-	goto_if_lt VAR_ARAUNA_ARC_STAGE, 10, Route109_EventScript_Zigzagoon
+	goto_if_lt VAR_ARAUNA_ARC_STAGE, 10, AraunaPorto_EventScript_IaracoVanilla
 	goto_if_lt VAR_ARAUNA_ARC_STAGE, 11, AraunaPorto_EventScript_IaracoDistant
 	goto_if_eq VAR_ARAUNA_ARC_STAGE, 11, AraunaPorto_EventScript_IaracoFirstMeeting
 	goto_if_eq VAR_ARAUNA_ARC_STAGE, 12, AraunaPorto_EventScript_IaracoNeedsStory
 	goto_if_eq VAR_ARAUNA_ARC_STAGE, 13, AraunaPorto_EventScript_IaracoRestored
 	msgbox AraunaPorto_Text_IaracoCalm, MSGBOX_DEFAULT
+	release
+	end
+
+AraunaPorto_EventScript_IaracoVanilla::
+	waitse
+	playmoncry SPECIES_ZIGZAGOON, CRY_MODE_NORMAL
+	msgbox Route109_Text_ZigzagoonCry, MSGBOX_DEFAULT
+	waitmoncry
 	release
 	end
 
