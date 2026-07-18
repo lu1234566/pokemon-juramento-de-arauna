@@ -125,8 +125,9 @@ def main() -> None:
         validate_text_width(path)
     for token in ("TIDE VIGIL", "TRIAL OF ECHOES", "Lose once"):
         require(checklist, token, "manual retry checklist")
+    normalized_design = " ".join(design.lower().split())
     for token in ("no new map", "provisional", "story mission"):
-        require(design.lower(), token, "badge-trial design contract")
+        require(normalized_design, token, "badge-trial design contract")
 
     print("Masked badge trials validated: two mandatory, retry-safe story battles before badge rewards")
 
