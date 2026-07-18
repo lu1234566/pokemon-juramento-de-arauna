@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate the English second-ROM-test package and its one-time test supplies."""
+"""Validate the English second-ROM-test package and its reachable test supplies."""
 
 from __future__ import annotations
 
@@ -18,7 +18,9 @@ def block(source: str, start: str, end: str) -> str:
 
 
 def main() -> None:
+    house = Path("data/maps/AraunaPlayerHouse/scripts.inc").read_text(encoding="utf-8")
     center = Path("data/maps/AraunaResearchCenter/scripts.inc").read_text(encoding="utf-8")
+    new_game = Path("src/new_game.c").read_text(encoding="utf-8")
     flags = Path("include/constants/flags.h").read_text(encoding="utf-8")
     events = Path("data/event_scripts.s").read_text(encoding="utf-8")
     runtime = Path("tools/arauna/validate_english_runtime.py").read_text(encoding="utf-8")
@@ -33,14 +35,19 @@ def main() -> None:
     require(makefile, "ARAUNA_LANGUAGE_SUFFIX := en", "English ROM suffix")
     require(workflow, "make ARAUNA_LANGUAGE=ENGLISH", "English CI build")
     require(workflow, "python3 scripts/validate_second_rom_test.py", "second-test CI step")
+    require(new_game, "WarpToAraunaOpening();", "reachable campaign entrypoint")
+    require(new_game, "MAP_ARAUNA_PLAYER_HOUSE", "reachable Arauna prologue")
+    if "WarpToTruck();" in new_game or "MAP_INSIDE_OF_TRUCK" in new_game:
+        raise ValueError("the second test still starts in vanilla Emerald")
+
     require(flags, "#define FLAG_ARAUNA_SECOND_TEST_CANDIES_RECEIVED     0x34", "one-time flag")
-    require(flags, "FLAG_ARAUNA_BADGE_MARE", "Maré Badge route")
+    require(flags, "FLAG_ARAUNA_BADGE_MARE", "Mare Badge route")
     require(flags, "FLAG_ARAUNA_BADGE_UIVO", "Uivo Badge route")
 
     supply = block(
         center,
         "AraunaResearchCenter_EventScript_GiveSecondTestCandies::",
-        "AraunaResearchCenter_EventScript_SelectionLocked::",
+        "AraunaResearchCenter_EventScript_TestCandiesReturn::",
     )
     for token in (
         "goto_if_set FLAG_ARAUNA_SECOND_TEST_CANDIES_RECEIVED",
@@ -53,14 +60,19 @@ def main() -> None:
         require(supply, token, "test-supply subroutine")
 
     complete = block(
-        center,
-        "AraunaResearchCenter_EventScript_CompleteChoice::",
-        "AraunaResearchCenter_EventScript_GiveSecondTestCandies::",
+        house,
+        "AraunaPlayerHouse_EventScript_CompleteChoice::",
+        "AraunaPlayerHouse_EventScript_AssignRemainingStarters::",
     )
     require(complete, "setvar VAR_ARAUNA_STORY_STAGE, 2", "starter confirmation")
-    require(complete, "call AraunaResearchCenter_EventScript_GiveSecondTestCandies", "immediate delivery")
-    if center.count("call AraunaResearchCenter_EventScript_GiveSecondTestCandies") != 3:
-        raise ValueError("test supplies must be called once at confirmation and retried through both Maia states")
+    require(
+        complete,
+        "call AraunaResearchCenter_EventScript_GiveSecondTestCandies",
+        "immediate reachable delivery",
+    )
+    require(house, "AraunaPlayerHouse_EventScript_AnahiAfterChoice", "home retry")
+    if "givemon " in center:
+        raise ValueError("the research annex can still bypass Dona Zila's prologue")
 
     require(events, '#include "data/text/arauna/second_rom_test.inc"', "runtime text registration")
     require(runtime, '"second_rom_test.inc"', "English runtime pack")
@@ -68,8 +80,8 @@ def main() -> None:
     require(wrapper, '.include "data/text/arauna/en/second_rom_test.inc"', "English-only test wrapper")
     if "/pt/" in wrapper or "PORTUGUESE" in wrapper:
         raise ValueError("second-test runtime wrapper must not select Portuguese")
-    if "999" not in text or "RARE CANDIES" not in text:
-        raise ValueError("English Rare Candy delivery message is missing")
+    for token in ("999", "RARE CANDIES", "PROF. ANAHI"):
+        require(text, token, "English Rare Candy delivery message")
     for raw in text.splitlines():
         if '.string "' in raw:
             visible = raw.split('.string "', 1)[1].rsplit('"', 1)[0]
@@ -86,10 +98,20 @@ def main() -> None:
     ):
         if not Path(validator_path).is_file():
             raise ValueError(f"campaign validator is missing: {validator_path}")
-    for token in ("999 Rare Candies", "Maré Badge", "Uivo Badge", "new save"):
+    for token in (
+        "999 Rare Candies",
+        "Mare Badge",
+        "Uivo Badge",
+        "new save",
+        "Vila Amanhecer",
+        "Dona Zila",
+    ):
         require(checklist, token, "manual test checklist")
 
-    print("Second ROM test validated: English build, one-time 999 Rare Candies and route through Uivo Badge")
+    print(
+        "Second ROM test validated: English build, reachable Vila Amanhecer "
+        "prologue, one-time 999 Rare Candies and route through Uivo Badge"
+    )
 
 
 if __name__ == "__main__":
