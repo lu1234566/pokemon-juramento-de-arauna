@@ -16,6 +16,7 @@ The first playable build of **Pokémon Juramento de Arauna** targets English.
 - tools/arauna/build_arauna_learnsets.py generates 10-14 unique level-up moves per species, with family identity, thematic wildlife/folklore cues and no field HMs.
 - tools/arauna/build_arauna_battle_profiles.py regenerates all three datasets and rewires the committed species table without touching art.
 - tools/arauna/audit_arauna_trainers.py prevents legendary, mythical, story-reserved and sensitivity-review slots from appearing in ordinary trainer parties; its last migration is recorded in docs/arauna/ARAUNA_TRAINER_AUDIT.md.
+- tools/arauna/audit_arauna_difficulty.py verifies nine soft level targets and non-omniscient AI tiers for the 13 principal campaign bosses; the current checkpoint is recorded in docs/arauna/ARAUNA_DIFFICULTY_AUDIT.md.
 - docs/arauna/ARAUNA_CRY_AUDIT.csv records the 386 unique Emerald-slot cries still used as placeholders and reserves stable `.aif` paths for a later dedicated audio pass.
 
 Regenerate battle data from the repository root with:

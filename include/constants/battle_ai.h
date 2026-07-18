@@ -48,6 +48,14 @@
 #define AI_FLAG_PREDICTION            (AI_FLAG_PREDICT_SWITCH | AI_FLAG_PREDICT_INCOMING_MON | AI_FLAG_PREDICT_MOVE)
 #define AI_FLAG_ASSUMPTIONS           (AI_FLAG_ASSUME_STAB | AI_FLAG_ASSUME_STATUS_MOVES | AI_FLAG_WEIGH_ABILITY_PREDICTION)
 
+// Arauna difficulty tiers deliberately avoid AI_FLAG_OMNISCIENT and the full
+// AI_FLAG_PREDICTION package. Bosses should make strong decisions from visible
+// information without secretly reading the player's complete set.
+#define AI_FLAG_ARAUNA_TRAINER        (AI_FLAG_BASIC_TRAINER | AI_FLAG_HP_AWARE)
+#define AI_FLAG_ARAUNA_MINIBOSS       (AI_FLAG_ARAUNA_TRAINER | AI_FLAG_ASSUMPTIONS | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_RANDOMIZE_SWITCHIN | AI_FLAG_PP_STALL_PREVENTION)
+#define AI_FLAG_ARAUNA_BOSS           (AI_FLAG_ARAUNA_MINIBOSS | AI_FLAG_SMART_SWITCHING | AI_FLAG_ACE_POKEMON | AI_FLAG_POWERFUL_STATUS)
+#define AI_FLAG_ARAUNA_DOUBLE_BOSS    (AI_FLAG_ARAUNA_MINIBOSS | AI_FLAG_DOUBLE_ACE_POKEMON | AI_FLAG_POWERFUL_STATUS)
+
 // 'other' ai logic flags
 #define AI_FLAG_DYNAMIC_FUNC          AI_FLAG(60)  // Create custom AI functions for specific battles via "setdynamicaifunc" cmd
 #define AI_FLAG_ROAMING               AI_FLAG(61)

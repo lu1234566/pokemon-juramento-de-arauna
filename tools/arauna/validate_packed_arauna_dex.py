@@ -11,6 +11,7 @@ from __future__ import annotations
 import csv
 import json
 import re
+import subprocess
 import sys
 from collections import Counter
 from pathlib import Path
@@ -614,6 +615,19 @@ def validate_runtime_integration() -> None:
             "catching tutorial does not use the approved common placeholder")
 
 
+def validate_difficulty_framework() -> None:
+    audit = ROOT / "tools/arauna/audit_arauna_difficulty.py"
+    result = subprocess.run(
+        [sys.executable, str(audit), "--check"],
+        cwd=ROOT,
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    require(result.returncode == 0,
+            (result.stdout or result.stderr).strip() or "Arauna difficulty audit failed")
+
+
 def main() -> int:
     try:
         validate_sources()
@@ -625,11 +639,12 @@ def main() -> int:
         validate_cry_audit()
         validate_encounter_ecology()
         validate_runtime_integration()
+        validate_difficulty_framework()
     except (OSError, UnicodeError, json.JSONDecodeError, csv.Error, ValidationError, ValueError) as exc:
         print(f"Arauna packed Dex validation failed: {exc}", file=sys.stderr)
         return 1
 
-    print("Arauna packed Dex validation passed: 386 family-aware learnsets, 386 battle profiles, 386 TM overlays, 354 egg-move sets, 321 wild species, 81 evolutions, 1,930 graphic resources.")
+    print("Arauna packed Dex validation passed: 386 family-aware learnsets, 386 battle profiles, 386 TM overlays, 354 egg-move sets, 321 wild species, 13 strategic bosses, 9 soft caps, 81 evolutions, 1,930 graphic resources.")
     return 0
 
 
