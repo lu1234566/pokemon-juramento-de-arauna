@@ -150,6 +150,18 @@ AraunaPlayerHouse_EventScript_AssignAfterCaramelo::
 	setflag FLAG_ARAUNA_ANAHI_STARTER_PIMPAU
 	return
 
+AraunaPlayerHouse_EventScript_BlockExit::
+	lockall
+	msgbox AraunaPlayerHouse_Text_BlockExit, MSGBOX_DEFAULT
+	applymovement LOCALID_PLAYER, AraunaPlayerHouse_Movement_StepBack
+	waitmovement 0
+	releaseall
+	end
+
+AraunaPlayerHouse_Movement_StepBack:
+	walk_up
+	step_end
+
 AraunaPlayerHouse_EventScript_FeedAllFirst::
 	msgbox AraunaPlayerHouse_Text_FeedAllFirst, MSGBOX_DEFAULT
 	release
