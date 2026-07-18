@@ -67,7 +67,8 @@ AraunaSerra_Text_UivoTrialBattleDefeated::
 	.string "stone. The mountain heard it.$"
 
 AraunaSerra_Text_UivoTrialComplete::
-	.string "The last sign returns as an echo.\p"
+	.string "The last sign returns.\p"
+	.string "The mountain answers in echo.\p"
 	.string "TRIAL OF ECHOES complete.$"
 
 AraunaSerra_Text_HermitAwardBadge::
