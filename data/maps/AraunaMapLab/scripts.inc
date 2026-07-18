@@ -113,6 +113,19 @@ AraunaMapLab_EventScript_NiloMemoryConclusion::
 
 AraunaMapLab_EventScript_NiloAfterSlice::
 	msgbox AraunaMapLab_Text_NiloAfterSlice, MSGBOX_DEFAULT
+	msgbox AraunaPorto_Text_NiloTravelPrompt, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, AraunaMapLab_EventScript_NiloStay
+	goto_if_ge VAR_ARAUNA_ARC_STAGE, 10, AraunaMapLab_EventScript_TravelToPorto
+	setvar VAR_ARAUNA_ARC_STAGE, 10
+	setflag FLAG_ARAUNA_PORTO_ARRIVED
+
+AraunaMapLab_EventScript_TravelToPorto::
+	warp MAP_ROUTE109, 255, 20, 28
+	waitstate
+	end
+
+AraunaMapLab_EventScript_NiloStay::
+	msgbox AraunaPorto_Text_NiloStay, MSGBOX_DEFAULT
 	release
 	end
 
