@@ -76,7 +76,7 @@ AraunaResearchCenter_EventScript_CompleteChoice::
 	setrespawn HEAL_LOCATION_ARAUNA_RESEARCH_CENTER
 	setvar VAR_ARAUNA_STORY_STAGE, 2
 	special HealPlayerParty
-	msgbox AraunaResearchCenter_Text_PlaceholderNotice, MSGBOX_DEFAULT
+	msgbox AraunaResearchCenter_Text_DexLinkNotice, MSGBOX_DEFAULT
 	msgbox AraunaResearchCenter_Text_DexActivated, MSGBOX_DEFAULT
 	release
 	end
