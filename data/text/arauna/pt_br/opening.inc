@@ -109,15 +109,17 @@ AraunaPlayerHouse_Text_ChoiceCancelled::
 	.string "Pode sentar ao lado de outro.$"
 
 AraunaResearchCenter_Text_BeforeCall::
-	.string "PROF. ANAHI ainda prepara o\n"
-	.string "programa de pesquisa.$"
+
+	.string "PROF. ANAHI: Os tres estao na\n"
+	.string "casa de DONA ZILA.\p"
+	.string "Volte para casa. O cuidado vem\n"
+	.string "antes do CENSO.$"
 
 AraunaResearchCenter_Text_MaiaIntroduction::
-	.string "Chegou na hora certa, {PLAYER}.\p"
-	.string "Três POKéMON reagiram a um\n"
-	.string "pulso vindo da mata.\p"
-	.string "Observe cada esfera. Escolha\n"
-	.string "somente quando tiver certeza.$"
+
+	.string "O anexo de campo esta pronto.\p"
+	.string "A escolha ainda pertence a\n"
+	.string "casa de DONA ZILA.$"
 
 AraunaResearchCenter_Text_AfterChoice::
 	.string "Sua equipe foi recuperada.\p"
@@ -163,24 +165,29 @@ AraunaResearchCenter_Text_DexActivated::
 	.string "a completar cada registro.$"
 
 AraunaResearchCenter_Text_SelectionLocked::
-	.string "Aguarde o chamado da PROF. ANAHI\n"
-	.string "antes de tocar nas esferas.$"
+
+	.string "Escolha na casa de DONA ZILA,\n"
+	.string "depois de alimentar os tres.$"
 
 AraunaResearchCenter_Text_AlreadyChosen::
-	.string "Sua escolha já foi registrada.\n"
-	.string "As outras esferas estão seladas.$"
+
+	.string "Estas bases acompanham os dois\n"
+	.string "parceiros que viajam com CIRO\n"
+	.string "e a PROF. ANAHI.$"
 
 AraunaResearchCenter_Text_ChoiceCancelled::
 	.string "A esfera volta ao repouso.\n"
 	.string "Você ainda pode observar.$"
 
 AraunaMapLab_Text_ObjectiveHome::
-	.string "Sua casa fica a noroeste.\n"
-	.string "Entre para receber o chamado.$"
+
+	.string "A casa de DONA ZILA fica a\n"
+	.string "noroeste. O prologo comeca la.$"
 
 AraunaMapLab_Text_ObjectiveCenter::
-	.string "PROF. ANAHI espera no CENTRO\n"
-	.string "DE PESQUISA, a nordeste.$"
+
+	.string "Volte para a casa de DONA ZILA.\n"
+	.string "Cuide dos tres parceiros.$"
 
 AraunaMapLab_Text_ObjectiveNilo::
 	.string "CIRO espera você na praça.\n"
@@ -196,9 +203,10 @@ AraunaMapLab_Text_NiloAfterBattle::
 	.string "segurança.$"
 
 AraunaMapLab_Text_RouteLocked::
-	.string "CIRO bloqueou a saída.\p"
-	.string "Escolha um parceiro no CENTRO\n"
-	.string "e fale com ele na praça.$"
+
+	.string "CIRO bloqueou a saida.\p"
+	.string "Escolha na casa de DONA ZILA e\n"
+	.string "depois encontre-o na praca.$"
 
 AraunaMapLab_Text_ObjectiveNiloReturn::
 	.string "CIRO voltou à praça.\p"
