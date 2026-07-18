@@ -44,11 +44,9 @@ def main() -> None:
     require(flags, "FLAG_ARAUNA_BADGE_MARE", "Mare Badge route")
     require(flags, "FLAG_ARAUNA_BADGE_UIVO", "Uivo Badge route")
 
-    supply = block(
-        center,
-        "AraunaResearchCenter_EventScript_GiveSecondTestCandies::",
-        "AraunaResearchCenter_EventScript_TestCandiesReturn::",
-    )
+    supply = center.split(
+        "AraunaResearchCenter_EventScript_GiveSecondTestCandies::", 1
+    )[1]
     for token in (
         "goto_if_set FLAG_ARAUNA_SECOND_TEST_CANDIES_RECEIVED",
         "checkitemspace ITEM_RARE_CANDY, 999",
