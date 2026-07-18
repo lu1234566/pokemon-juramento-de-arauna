@@ -65,12 +65,12 @@
 #define FLAG_ARAUNA_PORTO_IARACO_RESTORED            0x2B
 #define FLAG_ARAUNA_TESTIMONY_IARA_MAE               0x2C
 #define FLAG_ARAUNA_BADGE_MARE                       0x2D
-#define FLAG_UNUSED_0x02E    0x2E // Unused Flag
-#define FLAG_UNUSED_0x02F    0x2F // Unused Flag
-#define FLAG_UNUSED_0x030    0x30 // Unused Flag
-#define FLAG_UNUSED_0x031    0x31 // Unused Flag
-#define FLAG_UNUSED_0x032    0x32 // Unused Flag
-#define FLAG_UNUSED_0x033    0x33 // Unused Flag
+#define FLAG_ARAUNA_SERRA_ARRIVED                     0x2E
+#define FLAG_ARAUNA_LIBRAS_LEARNED                    0x2F
+#define FLAG_ARAUNA_SERRA_HERMIT_UNDERSTOOD           0x30
+#define FLAG_ARAUNA_SERRA_LOBISOMEM_CALMED            0x31
+#define FLAG_ARAUNA_BADGE_UIVO                        0x32
+#define FLAG_ARAUNA_SERRA_CHAPTER_RECEIVED            0x33
 #define FLAG_UNUSED_0x034    0x34 // Unused Flag
 #define FLAG_UNUSED_0x035    0x35 // Unused Flag
 #define FLAG_UNUSED_0x036    0x36 // Unused Flag
