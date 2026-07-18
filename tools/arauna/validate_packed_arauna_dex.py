@@ -298,7 +298,7 @@ def validate_battle_profiles() -> None:
             f".eggGroups = MON_EGG_GROUPS({groups}),",
             f".abilities = {{ {row['ability1']}, {row['ability2']}, {row['hidden_ability']} }},",
             f".levelUpLearnset = sArauna{number:03d}LevelUpLearnset,",
-            ".eggMoveLearnset = sNoneEggMoveLearnset,",
+            f".eggMoveLearnset = {row['egg_move_learnset']},",
         )
         for line in expected_lines:
             require(line in block, f"species table differs from battle profile #{number:03d}: {line}")
@@ -308,11 +308,15 @@ def validate_battle_profiles() -> None:
                     f"protected species #{number:03d} must be genderless")
             require(row["egg_group1"] == row["egg_group2"] == "EGG_GROUP_NO_EGGS_DISCOVERED",
                     f"protected species #{number:03d} must not breed")
+            require(row["egg_move_learnset"] == "sNoneEggMoveLearnset",
+                    f"protected species #{number:03d} has an egg-move learnset")
         else:
             require(row["gender_ratio"] != "MON_GENDERLESS",
                     f"ordinary species #{number:03d} is unexpectedly genderless")
             require("EGG_GROUP_NO_EGGS_DISCOVERED" not in (row["egg_group1"], row["egg_group2"]),
                     f"ordinary species #{number:03d} cannot breed")
+            require(row["egg_move_learnset"] == f"sArauna{number:03d}EggMoveLearnset",
+                    f"ordinary species #{number:03d} lacks its Arauna egg moves")
         if number in noncapturable:
             require(row["catch_rate"] == "0", f"non-capturable species #{number:03d} has a catch rate")
 
@@ -338,6 +342,36 @@ def validate_battle_profiles() -> None:
             require("MOVE_SURF" in moves, f"water species #{number:03d} cannot learn Surf")
         if "flying" in types:
             require("MOVE_FLY" in moves, f"flying species #{number:03d} cannot learn Fly")
+
+    egg_text = read_text("src/data/pokemon/egg_moves/arauna.h")
+    egg_declarations = set(matches(
+        egg_text,
+        r"^static const u16 sArauna(\d{3})EggMoveLearnset\[\]",
+    ))
+    expected_egg_ids = {f"{number:03d}" for number in EXPECTED_IDS - biologically_protected}
+    require(egg_declarations == expected_egg_ids,
+            "Arauna egg-move declarations do not match the 354 breedable species")
+    require(egg_text.count("MOVE_UNAVAILABLE") == len(expected_egg_ids),
+            "each Arauna egg-move set must contain one terminator")
+    for number, block in re.findall(
+        r"sArauna(\d{3})EggMoveLearnset\[\]\s*=\s*\{(.*?)\n\};",
+        egg_text,
+        flags=re.DOTALL,
+    ):
+        moves = re.findall(r"MOVE_[A-Z0-9_]+", block)
+        moves = [move for move in moves if move != "MOVE_UNAVAILABLE"]
+        require(6 <= len(moves) <= 10 and len(moves) == len(set(moves)),
+                f"Arauna egg-move set #{number} must contain 6-10 unique moves")
+        require(set(moves) <= known_moves,
+                f"Arauna egg-move set #{number} contains an unknown move")
+    forbidden_egg_field_moves = {
+        "MOVE_CUT", "MOVE_FLY", "MOVE_SURF", "MOVE_STRENGTH",
+        "MOVE_ROCK_SMASH", "MOVE_WATERFALL", "MOVE_DIVE",
+    }
+    require(not (forbidden_egg_field_moves & set(matches(egg_text, r"\b(MOVE_[A-Z0-9_]+)\b"))),
+            "egg moves must not bypass field progression")
+    require('#include "egg_moves/arauna.h"' in read_text("src/data/pokemon/egg_moves.h"),
+            "the main egg-move table does not include Arauna egg moves")
 
     makefile = read_text("Makefile")
     helper = read_text("tools/learnset_helpers/make_teachables.py")
@@ -373,6 +407,35 @@ def validate_battle_profiles() -> None:
     levels = [int(value) for value in matches(trainer_text, r"^Level:\s*(\d+)\s*$")]
     require(levels and min(levels) >= 1 and max(levels) <= 100,
             "trainer levels must remain within 1-100")
+
+
+def validate_cry_audit() -> None:
+    rows = read_csv("docs/arauna/ARAUNA_CRY_AUDIT.csv")
+    numeric_ids(rows, "id", "cry audit")
+    species_text = read_text("src/data/pokemon/species_info/arauna_dex.h")
+    blocks = re.findall(
+        r"^\s*\[SPECIES_([A-Z0-9_]+)\]\s*=\s*\{(.*?)^\s*\},",
+        species_text,
+        flags=re.MULTILINE | re.DOTALL,
+    )
+    require(len(blocks) == DEX_SIZE, "cry audit could not map all species blocks")
+    cries = set()
+    for number, row in enumerate(rows, start=1):
+        slot, block = blocks[number - 1]
+        match = re.search(r"^\s*\.cryId\s*=\s*(CRY_[A-Z0-9_]+),", block, flags=re.MULTILINE)
+        require(match is not None, f"species #{number:03d} lacks a cry ID")
+        require(row["engine_species"] == f"SPECIES_{slot}",
+                f"cry audit engine mapping mismatch at #{number:03d}")
+        require(row["cry_id"] == match.group(1),
+                f"cry audit differs from species table at #{number:03d}")
+        require(row["status"] == "emerald-slot-placeholder",
+                f"cry audit #{number:03d} has an unsupported status")
+        require(row["planned_asset"] == f"sound/arauna/cries/{number:03d}.aif",
+                f"cry audit #{number:03d} has an unstable asset path")
+        cries.add(row["cry_id"])
+    require(len(cries) == DEX_SIZE, "the 386 provisional cry IDs must be unique")
+    require("no sound assets were replaced" in read_text("tools/arauna/audit_arauna_cries.py"),
+            "cry audit tool no longer documents its placeholder-only scope")
 
 
 def validate_encounter_ecology() -> None:
@@ -524,13 +587,14 @@ def main() -> int:
         validate_packed_graphics()
         validate_learnsets()
         validate_battle_profiles()
+        validate_cry_audit()
         validate_encounter_ecology()
         validate_runtime_integration()
     except (OSError, UnicodeError, json.JSONDecodeError, csv.Error, ValidationError, ValueError) as exc:
         print(f"Arauna packed Dex validation failed: {exc}", file=sys.stderr)
         return 1
 
-    print("Arauna packed Dex validation passed: 386 battle profiles, 386 learnsets, 386 TM overlays, 321 wild species, 81 evolutions, 1,930 graphic resources.")
+    print("Arauna packed Dex validation passed: 386 battle profiles, 386 learnsets, 386 TM overlays, 354 egg-move sets, 321 wild species, 81 evolutions, 1,930 graphic resources.")
     return 0
 
 
