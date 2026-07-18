@@ -616,7 +616,11 @@ def validate_runtime_integration() -> None:
 
 
 def validate_generated_audits() -> None:
-    for name in ("audit_arauna_difficulty.py", "audit_arauna_encounters.py"):
+    for name in (
+        "audit_arauna_difficulty.py",
+        "audit_arauna_encounters.py",
+        "audit_arauna_qol.py",
+    ):
         audit = ROOT / "tools/arauna" / name
         result = subprocess.run(
             [sys.executable, str(audit), "--check"],
