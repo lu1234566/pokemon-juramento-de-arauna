@@ -69,7 +69,10 @@ This edge case is optional unless a debug save is available.
 - [ ] Trigger the Iaraco sequence and verify its restored state survives a
       save/reload.
 - [ ] Complete the chosen-legend and Iara-Mãe testimony events.
-- [ ] Receive the **Maré Badge** once.
+- [ ] After the testimony, start the mandatory TIDE VIGIL battle against Zila.
+- [ ] Lose once and confirm the testimony remains complete, the badge is not
+      awarded and talking to Zila retries only the battle.
+- [ ] Win the TIDE VIGIL and receive the **Maré Badge** once.
 - [ ] Confirm backtracking does not repeat the boss reward or regress flags.
 - [ ] Check encounter levels, healing access, money and item availability before
       using Rare Candies; then record the same fights after controlled leveling.
@@ -83,7 +86,10 @@ This edge case is optional unless a debug save is available.
       boundaries and return paths.
 - [ ] Trigger the desaturated Lobisomem encounter.
 - [ ] Use the Libras story interaction and confirm the Lobisomem is calmed once.
-- [ ] Receive the **Uivo Badge** once.
+- [ ] After calming Lobisomem, start the mandatory TRIAL OF ECHOES battle.
+- [ ] Lose once and confirm Lobisomem remains calm, the badge is not awarded and
+      talking to the hermit retries only the battle.
+- [ ] Win the TRIAL OF ECHOES and receive the **Uivo Badge** once.
 - [ ] Save, reset and reload after the badge; verify both badges and story states
       remain correct.
 - [ ] Backtrack to Porto and the Research Center to check that earlier NPCs and

@@ -52,6 +52,24 @@ AraunaSerra_Text_HermitCaveDirection::
 	.string "The cave entrance lies at the\n"
 	.string "southern end of this route.$"
 
+AraunaSerra_Text_UivoTrialInvitation::
+	.string "The HERMIT signs: CALM. WATCH.\n"
+	.string "ANSWER WITH ACTION.\p"
+	.string "The mountain's final lesson is\n"
+	.string "the TRIAL OF ECHOES.$"
+
+AraunaSerra_Text_UivoTrialBattleIntro::
+	.string "HERMIT: Eyes open. Heart steady.\n"
+	.string "Let your bond answer.$"
+
+AraunaSerra_Text_UivoTrialBattleDefeated::
+	.string "HERMIT: Your rhythm reached the\n"
+	.string "stone. The mountain heard it.$"
+
+AraunaSerra_Text_UivoTrialComplete::
+	.string "The last sign returns as an echo.\p"
+	.string "TRIAL OF ECHOES complete.$"
+
 AraunaSerra_Text_HermitAwardBadge::
 	.string "The hermit sees calm return to\n"
 	.string "the mountain.\p"

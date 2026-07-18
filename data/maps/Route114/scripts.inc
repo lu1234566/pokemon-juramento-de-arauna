@@ -229,6 +229,13 @@ AraunaSerra_EventScript_HermitCaveDirection::
 	end
 
 AraunaSerra_EventScript_HermitAwardBadge::
+	goto_if_set FLAG_ARAUNA_UIVO_TRIAL_COMPLETE, AraunaSerra_EventScript_HermitGrantBadge
+	msgbox AraunaSerra_Text_UivoTrialInvitation, MSGBOX_DEFAULT
+	trainerbattle_single TRAINER_ARAUNA_UIVO_TRIAL, AraunaSerra_Text_UivoTrialBattleIntro, AraunaSerra_Text_UivoTrialBattleDefeated
+	setflag FLAG_ARAUNA_UIVO_TRIAL_COMPLETE
+	msgbox AraunaSerra_Text_UivoTrialComplete, MSGBOX_DEFAULT
+
+AraunaSerra_EventScript_HermitGrantBadge::
 	msgbox AraunaSerra_Text_HermitAwardBadge, MSGBOX_DEFAULT
 	setflag FLAG_ARAUNA_BADGE_UIVO
 	setflag FLAG_BADGE02_GET

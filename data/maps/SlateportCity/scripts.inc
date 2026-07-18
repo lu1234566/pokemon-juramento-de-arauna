@@ -1429,6 +1429,13 @@ AraunaPorto_EventScript_DonaZilaReturnToRiver::
 	end
 
 AraunaPorto_EventScript_DonaZilaAwardBadge::
+	goto_if_set FLAG_ARAUNA_MARE_TRIAL_COMPLETE, AraunaPorto_EventScript_DonaZilaGrantBadge
+	msgbox AraunaPorto_Text_MareTrialInvitation, MSGBOX_DEFAULT
+	trainerbattle_single TRAINER_ARAUNA_MARE_TRIAL, AraunaPorto_Text_MareTrialBattleIntro, AraunaPorto_Text_MareTrialBattleDefeated
+	setflag FLAG_ARAUNA_MARE_TRIAL_COMPLETE
+	msgbox AraunaPorto_Text_MareTrialComplete, MSGBOX_DEFAULT
+
+AraunaPorto_EventScript_DonaZilaGrantBadge::
 	msgbox AraunaPorto_Text_DonaZilaAwardBadge, MSGBOX_DEFAULT
 	setflag FLAG_ARAUNA_BADGE_MARE
 	setflag FLAG_BADGE01_GET

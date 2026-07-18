@@ -96,6 +96,26 @@ AraunaPorto_Text_DonaZilaReturnToRiver::
 	.string "A remembered name can restore\n"
 	.string "what silence tried to erase.$"
 
+AraunaPorto_Text_MareTrialInvitation::
+	.string "DONA ZILA: The river is calm,\n"
+	.string "but a keeper must stand firm.\p"
+	.string "Complete the TIDE VIGIL.\n"
+	.string "Read each change in the current\n"
+	.string "and protect your bond.$"
+
+AraunaPorto_Text_MareTrialBattleIntro::
+	.string "ZILA: Let the landing test\n"
+	.string "what your bond can carry!$"
+
+AraunaPorto_Text_MareTrialBattleDefeated::
+	.string "ZILA: You bent with the tide\n"
+	.string "without losing your course.$"
+
+AraunaPorto_Text_MareTrialComplete::
+	.string "The old landing answers your\n"
+	.string "steady step.\p"
+	.string "The TIDE VIGIL is complete.$"
+
 AraunaPorto_Text_DonaZilaAwardBadge::
 	.string "DONA ZILA: IARA-MAE chose to be\n"
 	.string "remembered through you.\p"

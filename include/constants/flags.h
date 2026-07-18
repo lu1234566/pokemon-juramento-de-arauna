@@ -72,8 +72,8 @@
 #define FLAG_ARAUNA_BADGE_UIVO                        0x32
 #define FLAG_ARAUNA_SERRA_CHAPTER_RECEIVED            0x33
 #define FLAG_ARAUNA_SECOND_TEST_CANDIES_RECEIVED     0x34
-#define FLAG_UNUSED_0x035    0x35 // Unused Flag
-#define FLAG_UNUSED_0x036    0x36 // Unused Flag
+#define FLAG_ARAUNA_MARE_TRIAL_COMPLETE             0x35
+#define FLAG_ARAUNA_UIVO_TRIAL_COMPLETE             0x36
 #define FLAG_UNUSED_0x037    0x37 // Unused Flag
 #define FLAG_UNUSED_0x038    0x38 // Unused Flag
 #define FLAG_UNUSED_0x039    0x39 // Unused Flag

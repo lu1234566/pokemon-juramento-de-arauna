@@ -16877,3 +16877,51 @@ Double Battle: No
 SPECIES_SEALEO
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ARAUNA_MARE_TRIAL ===
+Name: ZILA
+Class: Expert
+Pic: Expert F
+Gender: Female
+Music: Intense
+Items: Super Potion
+Double Battle: No
+AI: Check Bad Move
+
+Pidgey
+Level: 16
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Vulpix
+Level: 17
+IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+
+Venusaur @ Oran Berry
+Level: 19
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+
+=== TRAINER_ARAUNA_UIVO_TRIAL ===
+Name: HERMIT
+Class: Expert
+Pic: Expert M
+Gender: Male
+Music: Intense
+Items: Super Potion
+Double Battle: No
+AI: Check Bad Move
+
+Magneton
+Level: 23
+IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+
+Murkrow
+Level: 24
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Jumpluff
+Level: 25
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+
+Dunsparce @ Sitrus Berry
+Level: 27
+IVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
