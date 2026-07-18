@@ -1,0 +1,101 @@
+AraunaSerra_Text_TravelPrompt::
+	.string "DONA ZILÁ: The mountain path\n"
+	.string "begins in an old ash town.\p"
+	.string "Travel to SERRA DO UIVO now?$"
+
+AraunaSerra_Text_TravelLater::
+	.string "DONA ZILÁ: The tide will keep\n"
+	.string "your place until you return.$"
+
+AraunaSerra_Text_LibrasChildIntroduction::
+	.string "The child greets you in LIBRAS,\n"
+	.string "Brazilian Sign Language.\p"
+	.string "She points toward the mountain\n"
+	.string "and signs: LISTEN WITH EYES.$"
+
+AraunaSerra_Text_LibrasLesson::
+	.string "She teaches three signs:\p"
+	.string "LOOK. WAIT. SAFE.\p"
+	.string "They are not the whole language,\n"
+	.string "only a respectful beginning.$"
+
+AraunaSerra_Text_LibrasLearned::
+	.string "You practiced the three signs.\p"
+	.string "The child shows the path west,\n"
+	.string "toward the quiet hermit.$"
+
+AraunaSerra_Text_LibrasReminder::
+	.string "The child signs slowly:\p"
+	.string "LOOK. WAIT. SAFE.\p"
+	.string "She points west toward the long\n"
+	.string "mountain route.$"
+
+AraunaSerra_Text_HermitNoSigns::
+	.string "The hermit watches your mouth,\n"
+	.string "then shakes his head.\p"
+	.string "He cannot hear your voice.\n"
+	.string "You do not share a language yet.$"
+
+AraunaSerra_Text_PlayerSigns::
+	.string "You sign: LOOK. WAIT. SAFE.\p"
+	.string "The hermit corrects your hands,\n"
+	.string "then answers in LIBRAS.$"
+
+AraunaSerra_Text_HermitUnderstands::
+	.string "HERMIT: The howls are fear,\n"
+	.string "not a hunt.\p"
+	.string "Something without color hides\n"
+	.string "inside the waterfall cave.$"
+
+AraunaSerra_Text_HermitCaveDirection::
+	.string "The hermit signs: FOLLOW WATER.\p"
+	.string "The cave entrance lies at the\n"
+	.string "southern end of this route.$"
+
+AraunaSerra_Text_HermitAwardBadge::
+	.string "The hermit sees calm return to\n"
+	.string "the mountain.\p"
+	.string "He signs: YOU LISTENED BEFORE\n"
+	.string "YOU FOUGHT. THE HOUSE HEARD YOU.$"
+
+AraunaSerra_Text_UivoBadgeReceived::
+	.string "{PLAYER} received the\n"
+	.string "UIVO BADGE!\p"
+	.string "The second HOUSE OF STORY adds\n"
+	.string "your name to its chapter.$"
+
+AraunaSerra_Text_HermitAfterBadge::
+	.string "The hermit signs: A howl can be\n"
+	.string "a warning, a name, or a wound.\p"
+	.string "Never decide before listening.$"
+
+AraunaSerra_Text_HermitCompanion::
+	.string "The hermit's companion watches\n"
+	.string "your hands closely.\p"
+	.string "It answers with a quiet bark.$"
+
+AraunaSerra_Text_LobisomemDistant::
+	.string "A broken howl echoes deeper in\n"
+	.string "the cave.\p"
+	.string "You cannot approach it safely.$"
+
+AraunaSerra_Text_LobisomemDesaturated::
+	.string "LOBISOMEM steps into the light.\p"
+	.string "Its fur is drained of color.\n"
+	.string "It bares its teeth, but trembles.$"
+
+AraunaSerra_Text_PlayerSignsToLobisomem::
+	.string "You lower your hands and sign:\p"
+	.string "LOOK. WAIT. SAFE.\p"
+	.string "The signs are imperfect, but your\n"
+	.string "intention is clear.$"
+
+AraunaSerra_Text_LobisomemUnderstands::
+	.string "LOBISOMEM stops growling.\p"
+	.string "Color returns with each breath.\n"
+	.string "Its next howl sounds like relief.$"
+
+AraunaSerra_Text_LobisomemCalm::
+	.string "LOBISOMEM rests beside the water.\p"
+	.string "The cave carries a calm, complete\n"
+	.string "howl back toward the settlement.$"
