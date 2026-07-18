@@ -1,19 +1,110 @@
-AraunaPlayerHouse_Text_WakeUp::
-	.string "A neblina cobriu a vila cedo.\p"
-	.string "DRA. MAIA pediu que você vá\n"
-	.string "ao CENTRO DE PESQUISA.$"
+AraunaPlayerHouse_Text_NightArrival::
+	.string "Noite, VILA AMANHECER.\p"
+	.string "A PROF. ANAHI pediu abrigo a\n"
+	.string "DONA ZILA durante a chuva.\p"
+	.string "Tres criaturas resgatadas\n"
+	.string "esperam sob este teto.$"
 
-AraunaPlayerHouse_Text_CenterReminder::
-	.string "A DRA. MAIA parecia preocupada.\p"
-	.string "Passe no CENTRO antes de\n"
-	.string "seguir para a mata.$"
+AraunaPlayerHouse_Text_NightWatch::
+	.string "Antes do amanhecer, um vulto\n"
+	.string "cinza gigante cruzou o beco.\p"
+	.string "Os tres ficaram entre ele e a\n"
+	.string "casa. Escolheram ficar.$"
 
-AraunaPlayerHouse_Text_ResponsibleAfterCall::
-	.string "Tenha cuidado na neblina.\n"
-	.string "Ela abafa até passos próximos.$"
+AraunaPlayerHouse_Text_Dawn::
+	.string "De manha, DONA ZILA colocou\n"
+	.string "tres potes junto ao fogao.\p"
+	.string "Alimente PIMPAU, CARAMELO e\n"
+	.string "QUERO antes de escolher.$"
+
+AraunaPlayerHouse_Text_ZilaCareReminder::
+	.string "DONA ZILA: Ninguem escolhe de\n"
+	.string "barriga vazia.\p"
+	.string "Cuide dos tres primeiro.$"
+
+AraunaPlayerHouse_Text_ZilaBlessing::
+	.string "DONA ZILA: Leve meu caderno.\n"
+	.string "Traga toda historia para casa.$"
+
+AraunaPlayerHouse_Text_AnahiBeforeChoice::
+	.string "PROF. ANAHI: Cada um perdeu\n"
+	.string "seu lar para o CONSORCIO.\p"
+	.string "Alimente os tres. Depois sente\n"
+	.string "ao lado de quem compreende.$"
+
+AraunaPlayerHouse_Text_AnahiAfterChoice::
+	.string "PROF. ANAHI: As paginas de\n"
+	.string "campo estao no caderno de ZILA.\p"
+	.string "O CENSO comeca la fora.$"
+
+AraunaPlayerHouse_Text_FeedPimpau::
+	.string "Voce enche o pote de PIMPAU.\p"
+	.string "Ele guarda junto ao peito uma\n"
+	.string "velha semente.$"
+
+AraunaPlayerHouse_Text_FeedCaramelo::
+	.string "Voce enche o pote de CARAMELO.\p"
+	.string "Ele come de frente para a porta,\n"
+	.string "ainda protegendo a casa.$"
+
+AraunaPlayerHouse_Text_FeedQuero::
+	.string "Voce enche o pote de QUERO.\p"
+	.string "Ele grita uma vez para um ninho\n"
+	.string "que ja nao existe.$"
+
+AraunaPlayerHouse_Text_AllFed::
+	.string "Os tres potes estao cheios.\p"
+	.string "Agora sente ao lado do parceiro\n"
+	.string "que deseja manter.$"
+
+AraunaPlayerHouse_Text_PimpauStory::
+	.string "PIMPAU marca cada arvore caida\n"
+	.string "para a mata poder lembrar.$"
+
+AraunaPlayerHouse_Text_PimpauPrompt::
+	.string "Sentar com PIMPAU e ficar com ele?$"
+
+AraunaPlayerHouse_Text_CarameloStory::
+	.string "CARAMELO guarda a porta de quem\n"
+	.string "perdeu a propria casa.$"
+
+AraunaPlayerHouse_Text_CarameloPrompt::
+	.string "Sentar com CARAMELO e\n"
+	.string "ficar com ele?$"
+
+AraunaPlayerHouse_Text_QueroStory::
+	.string "QUERO gritou a noite toda para\n"
+	.string "uma vila adormecida fugir.$"
+
+AraunaPlayerHouse_Text_QueroPrompt::
+	.string "Sentar com QUERO e ficar com ele?$"
+
+AraunaPlayerHouse_Text_ZilaChosen::
+	.string "DONA ZILA: Esse ai te escolheu\n"
+	.string "foi ontem.\p"
+	.string "Tu que demorou pra perceber.$"
+
+AraunaPlayerHouse_Text_CensusInvitation::
+	.string "A PROF. ANAHI acrescenta paginas\n"
+	.string "ao caderno de DONA ZILA.\p"
+	.string "Seu parceiro foi registrado.\n"
+	.string "O CENSO DAS LENDAS comeca.$"
+
+AraunaPlayerHouse_Text_FeedAllFirst::
+	.string "Ele espera junto ao pote.\p"
+	.string "Alimente os tres antes de escolher.$"
+
+AraunaPlayerHouse_Text_AlreadyChosen::
+	.string "Seu parceiro fica bem perto.\p"
+	.string "Os outros viajarao com CIRO e\n"
+	.string "a PROF. ANAHI.$"
+
+AraunaPlayerHouse_Text_ChoiceCancelled::
+	.string "Voce se levanta.\n"
+	.string "Pode sentar ao lado de outro.$"
 
 AraunaResearchCenter_Text_BeforeCall::
-	.string "DRA. MAIA ainda prepara o\n"
+	.string "PROF. ANAHI ainda prepara o\n"
 	.string "programa de pesquisa.$"
 
 AraunaResearchCenter_Text_MaiaIntroduction::
@@ -25,7 +116,7 @@ AraunaResearchCenter_Text_MaiaIntroduction::
 
 AraunaResearchCenter_Text_AfterChoice::
 	.string "Sua equipe foi recuperada.\p"
-	.string "NILO espera você na praça.\p"
+	.string "CIRO espera você na praça.\p"
 	.string "Ele vai testar seu preparo\n"
 	.string "antes de liberar a rota.$"
 
@@ -59,7 +150,7 @@ AraunaResearchCenter_Text_DexLinkNotice::
 	.string "ao número correspondente na\n"
 	.string "DEX DE ARAUNA.$"
 AraunaResearchCenter_Text_DexActivated::
-	.string "DRA. MAIA: A DEX DE ARAUNA\n"
+	.string "PROF. ANAHI: A DEX DE ARAUNA\n"
 	.string "foi ativada para você.\p"
 	.string "As 386 espécies nativas agora\n"
 	.string "podem ser registradas por número.\p"
@@ -67,7 +158,7 @@ AraunaResearchCenter_Text_DexActivated::
 	.string "a completar cada registro.$"
 
 AraunaResearchCenter_Text_SelectionLocked::
-	.string "Aguarde o chamado da DRA. MAIA\n"
+	.string "Aguarde o chamado da PROF. ANAHI\n"
 	.string "antes de tocar nas esferas.$"
 
 AraunaResearchCenter_Text_AlreadyChosen::
@@ -83,11 +174,11 @@ AraunaMapLab_Text_ObjectiveHome::
 	.string "Entre para receber o chamado.$"
 
 AraunaMapLab_Text_ObjectiveCenter::
-	.string "DRA. MAIA espera no CENTRO\n"
+	.string "PROF. ANAHI espera no CENTRO\n"
 	.string "DE PESQUISA, a nordeste.$"
 
 AraunaMapLab_Text_ObjectiveNilo::
-	.string "NILO espera você na praça.\n"
+	.string "CIRO espera você na praça.\n"
 	.string "Ele quer testar seu preparo.$"
 
 AraunaMapLab_Text_ObjectiveRoute::
@@ -100,12 +191,12 @@ AraunaMapLab_Text_NiloAfterBattle::
 	.string "segurança.$"
 
 AraunaMapLab_Text_RouteLocked::
-	.string "NILO bloqueou a saída.\p"
+	.string "CIRO bloqueou a saída.\p"
 	.string "Escolha um parceiro no CENTRO\n"
 	.string "e fale com ele na praça.$"
 
 AraunaMapLab_Text_ObjectiveNiloReturn::
-	.string "NILO voltou à praça.\p"
+	.string "CIRO voltou à praça.\p"
 	.string "Conte a ele o que aconteceu\n"
 	.string "na CÂMARA DO PRIMEIRO ELO.$"
 
@@ -115,7 +206,7 @@ AraunaMapLab_Text_ObjectiveSliceComplete::
 	.string "uma investigação maior.$"
 
 AraunaMapLab_Text_NiloReturnIntro::
-	.string "NILO: Eu vi o clarão da vila.\p"
+	.string "CIRO: Eu vi o clarão da vila.\p"
 	.string "Pelas suas marcas, a ruína\n"
 	.string "também viu você.$"
 
@@ -138,7 +229,7 @@ AraunaMapLab_Text_NiloCompassionReaction::
 	.string "Sua escolha criou confiança.$"
 
 AraunaMapLab_Text_NiloMemoryConclusion::
-	.string "NILO: Se a memória é real, a\n"
+	.string "CIRO: Se a memória é real, a\n"
 	.string "versão da Liga está incompleta.\p"
 	.string "O CAMPEAO não desapareceu antes\n"
 	.string "da Noite Sem Estrelas.\p"
