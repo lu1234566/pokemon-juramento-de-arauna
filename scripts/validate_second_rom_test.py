@@ -100,7 +100,7 @@ def main() -> None:
             raise ValueError(f"campaign validator is missing: {validator_path}")
     for token in (
         "999 Rare Candies",
-        "Mare Badge",
+        "Maré Badge",
         "Uivo Badge",
         "new save",
         "Vila Amanhecer",
