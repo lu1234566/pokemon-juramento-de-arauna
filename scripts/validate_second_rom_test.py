@@ -65,7 +65,7 @@ def main() -> None:
     require(events, '#include "data/text/arauna/second_rom_test.inc"', "runtime text registration")
     require(runtime, '"second_rom_test.inc"', "English runtime pack")
     require(runtime, '"arauna/second_rom_test"', "English runtime wrapper")
-    require(wrapper, '#include "data/text/arauna/en/second_rom_test.inc"', "English-only test wrapper")
+    require(wrapper, '.include "data/text/arauna/en/second_rom_test.inc"', "English-only test wrapper")
     if "/pt/" in wrapper or "PORTUGUESE" in wrapper:
         raise ValueError("second-test runtime wrapper must not select Portuguese")
     if "999" not in text or "RARE CANDIES" not in text:

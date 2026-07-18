@@ -65,6 +65,10 @@ def main() -> None:
         raise ValueError("obsolete placeholder text remains in the English story")
     if PORTUGUESE_RUNTIME_WORDS.search(story):
         raise ValueError("Portuguese prose remains in the English story")
+    unsupported_story_chars = sorted({char for char in story if ord(char) > 127 and char != "é"})
+    if unsupported_story_chars:
+        rendered = " ".join(f"U+{ord(char):04X}" for char in unsupported_story_chars)
+        raise ValueError(f"unsupported non-ASCII characters remain in the English story: {rendered}")
 
     makefile = Path("Makefile").read_text(encoding="utf-8")
     required_build_contract = (

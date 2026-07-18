@@ -1,10 +1,10 @@
 AraunaSerra_Text_TravelPrompt::
-	.string "DONA ZILÁ: The mountain path\n"
+	.string "DONA ZILA: The mountain path\n"
 	.string "begins in an old ash town.\p"
 	.string "Travel to SERRA DO UIVO now?$"
 
 AraunaSerra_Text_TravelLater::
-	.string "DONA ZILÁ: The tide will keep\n"
+	.string "DONA ZILA: The tide will keep\n"
 	.string "your place until you return.$"
 
 AraunaSerra_Text_LibrasChildIntroduction::
