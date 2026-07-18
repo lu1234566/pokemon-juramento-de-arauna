@@ -340,58 +340,53 @@ OldaleTown_Movement_ReturnToOriginalPosition:
 	step_end
 
 OldaleTown_Text_SavingMyProgress:
-	.string "I want to take a rest, so I'm saving my\n"
-	.string "progress.$"
+	.string "I save before every census road.\p"
+	.string "Stories vanish when nobody\n"
+	.string "brings them home.$"
 
 OldaleTown_Text_IWorkAtPokemonMart:
-	.string "Hi!\n"
-	.string "I work at a POKéMON MART.\p"
-	.string "Can I get you to come with me?$"
+	.string "Welcome to AMANHECER POST.\p"
+	.string "I prepare supplies for people\n"
+	.string "working on the CENSUS roads.$"
 
 OldaleTown_Text_ThisIsAPokemonMart:
-	.string "This is a POKéMON MART.\n"
-	.string "Just look for our blue roof.\p"
-	.string "We sell a variety of goods including\n"
-	.string "POKé BALLS for catching POKéMON.\p"
-	.string "Here, I'd like you to have this as\n"
-	.string "a promotional item.$"
+	.string "The blue roof marks our MART.\p"
+	.string "You can restock before leaving\n"
+	.string "VILA AMANHECER behind.\p"
+	.string "Take this field supply.$"
 
 OldaleTown_Text_PotionExplanation:
-	.string "A POTION can be used anytime, so it's\n"
-	.string "even more useful than a POKéMON CENTER\l"
-	.string "in certain situations.$"
+	.string "A POTION works on the road.\p"
+	.string "Carry a few when a story leads\n"
+	.string "far from a POKéMON CENTER.$"
 
 OldaleTown_Text_WaitDontComeInHere:
-	.string "Aaaaah! Wait!\n"
-	.string "Please don't come in here.\p"
-	.string "I just discovered the footprints of\n"
-	.string "a rare POKéMON!\p"
-	.string "Wait until I finish sketching\n"
-	.string "them, okay?$"
+	.string "Wait. This path is not safe.\p"
+	.string "CONSORTIUM survey stakes were\n"
+	.string "found along the old road.\p"
+	.string "Let me remove them first.$"
 
 OldaleTown_Text_DiscoveredFootprints:
-	.string "I just discovered the footprints of\n"
-	.string "a rare POKéMON!\p"
-	.string "Wait until I finish sketching\n"
-	.string "them, okay?$"
+	.string "CONSORTIUM survey stakes were\n"
+	.string "found along the old road.\p"
+	.string "Let me remove them first.$"
 
 OldaleTown_Text_FinishedSketchingFootprints:
-	.string "I finished sketching the footprints of\n"
-	.string "a rare POKéMON.\p"
-	.string "But it turns out they were only my\n"
-	.string "own footprints…$"
+	.string "The survey stakes are gone.\p"
+	.string "The western census road is\n"
+	.string "clear again.$"
 
 OldaleTown_Text_MayLetsGoBack:
-	.string "MAY: {PLAYER}{KUN}!\n"
-	.string "Over here!\l"
-	.string "Let's hurry home!$"
+	.string "CIRO: ANAHI is waiting back in\n"
+	.string "VILA AMANHECER.\p"
+	.string "{PLAYER}, let's head home.$"
 
 OldaleTown_Text_BrendanLetsGoBack:
-	.string "BRENDAN: I'm heading back to my dad's\n"
-	.string "LAB now.\l"
-	.string "{PLAYER}, you should hustle back, too.$"
+	.string "CIRO: ANAHI is waiting back in\n"
+	.string "VILA AMANHECER.\p"
+	.string "{PLAYER}, let's head home.$"
 
 OldaleTown_Text_TownSign:
-	.string "OLDALE TOWN\n"
-	.string "“Where things start off scarce.”$"
+	.string "AMANHECER POST\n"
+	.string "“Rest before the census road.”$"
 
