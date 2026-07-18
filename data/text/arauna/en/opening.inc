@@ -90,6 +90,11 @@ AraunaPlayerHouse_Text_CensusInvitation::
 	.string "Your partner is registered.\n"
 	.string "The CENSUS OF LEGENDS begins.$"
 
+AraunaPlayerHouse_Text_BlockExit::
+	.string "DONA ZILA: Three bowls first.\p"
+	.string "Nobody leaves this house\n"
+	.string "uncared for.$"
+
 AraunaPlayerHouse_Text_FeedAllFirst::
 	.string "It waits by the bowl.\p"
 	.string "Feed all three before choosing.$"
