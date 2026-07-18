@@ -21,6 +21,9 @@ def main() -> None:
     house = Path("data/maps/AraunaPlayerHouse/scripts.inc").read_text(encoding="utf-8")
     center = Path("data/maps/AraunaResearchCenter/scripts.inc").read_text(encoding="utf-8")
     new_game = Path("src/new_game.c").read_text(encoding="utf-8")
+    overworld = Path("src/overworld.c").read_text(encoding="utf-8")
+    pokedex = Path("src/pokedex.c").read_text(encoding="utf-8")
+    trainers = Path("src/data/trainers.party").read_text(encoding="utf-8")
     flags = Path("include/constants/flags.h").read_text(encoding="utf-8")
     events = Path("data/event_scripts.s").read_text(encoding="utf-8")
     runtime = Path("tools/arauna/validate_english_runtime.py").read_text(encoding="utf-8")
@@ -39,6 +42,41 @@ def main() -> None:
     require(new_game, "MAP_ARAUNA_PLAYER_HOUSE", "reachable Arauna prologue")
     if "WarpToTruck();" in new_game or "MAP_INSIDE_OF_TRUCK" in new_game:
         raise ValueError("the second test still starts in vanilla Emerald")
+    callback = block(overworld, "void CB2_NewGame(void)", "#if OW_USE_FAKE_RTC")
+    require(
+        callback,
+        "gFieldCallback = FieldCB_WarpExitFadeFromBlack;",
+        "Arauna new-game field callback",
+    )
+    if "ExecuteTruckSequence" in callback:
+        raise ValueError("the Arauna house still executes the Emerald truck sequence")
+
+    scrollbar_marker = "static void SpriteCB_Scrollbar(struct Sprite *sprite)"
+    if pokedex.count(scrollbar_marker) < 2:
+        raise ValueError("cannot locate the SpriteCB_Scrollbar definition")
+    scrollbar = pokedex.rsplit(scrollbar_marker, 1)[1].split(
+        "static void SpriteCB_ScrollArrow(struct Sprite *sprite)", 1
+    )[0]
+    require(
+        scrollbar,
+        "sPokedexView->pokemonListCount <= 1",
+        "single-entry Pokédex guard",
+    )
+    require(scrollbar, "sprite->y2 = 0;", "single-entry Pokédex guard")
+
+    required_trainers = {
+        "TRAINER_ARAUNA_SCOUT_NILO": ("Name: NILO", "Level: 4"),
+        "TRAINER_ARAUNA_TECH_AGENT": ("Name: AGENT", "Level: 6"),
+        "TRAINER_ARAUNA_MARE_TRIAL": ("Name: ZILA", "Level: 19"),
+        "TRAINER_ARAUNA_UIVO_TRIAL": ("Name: HERMIT", "Level: 27"),
+    }
+    for trainer, tokens in required_trainers.items():
+        marker = f"=== {trainer} ==="
+        if marker not in trainers:
+            raise ValueError(f"scripted Arauna trainer has no party data: {trainer}")
+        trainer_block = trainers.split(marker, 1)[1].split("\n=== ", 1)[0]
+        for token in tokens:
+            require(trainer_block, token, f"{trainer} party data")
 
     require(flags, "#define FLAG_ARAUNA_SECOND_TEST_CANDIES_RECEIVED     0x34", "one-time flag")
     require(flags, "FLAG_ARAUNA_BADGE_MARE", "Mare Badge route")
