@@ -54,6 +54,8 @@ jobs:
         run: python3 scripts/validate_first_link_chamber.py
       - name: Validate vertical-slice epilogue
         run: python3 scripts/validate_vertical_slice_epilogue.py
+      - name: Validate Porto das Redes map reuse
+        run: python3 scripts/validate_arauna_porto_reuse.py
       - name: Validate Mist Route encounters
         run: python3 scripts/validate_mist_route_encounters.py
       - name: Validate capture onboarding
