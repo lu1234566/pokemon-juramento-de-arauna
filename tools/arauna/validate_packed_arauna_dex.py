@@ -423,9 +423,10 @@ def validate_battle_profiles() -> None:
         normalize_species(species): number for number, species in species_by_id.items()
     }
     trainer_text = read_text("src/data/trainers.party")
+    trainer_code = re.sub(r"/\*.*?\*/", "", trainer_text, flags=re.DOTALL)
     found = set()
     party_members = 0
-    for line in trainer_text.splitlines():
+    for line in trainer_code.splitlines():
         token = trainer_species(line)
         if token is None:
             continue
@@ -437,8 +438,8 @@ def validate_battle_profiles() -> None:
     require(not found,
             "ordinary trainer data uses protected Arauna slots: "
             + ", ".join(f"#{number:03d}" for number in sorted(found)))
-    require(party_members >= 1800, f"trainer audit parsed only {party_members} party members")
-    levels = [int(value) for value in matches(trainer_text, r"^Level:\s*(\d+)\s*$")]
+    require(party_members == 1825, f"trainer audit parsed {party_members} party members, expected 1825")
+    levels = [int(value) for value in matches(trainer_code, r"^Level:\s*(\d+)\s*$")]
     require(levels and min(levels) >= 1 and max(levels) <= 100,
             "trainer levels must remain within 1-100")
 
