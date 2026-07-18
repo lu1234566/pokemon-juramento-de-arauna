@@ -4,6 +4,8 @@ static const u16 sNoneEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
+#include "egg_moves/arauna.h"
+
 #if P_FAMILY_BULBASAUR
 static const u16 sBulbasaurEggMoveLearnset[] = {
     MOVE_SKULL_BASH,
