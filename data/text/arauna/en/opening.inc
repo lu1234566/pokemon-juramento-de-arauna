@@ -109,15 +109,15 @@ AraunaPlayerHouse_Text_ChoiceCancelled::
 	.string "You may sit beside another.$"
 
 AraunaResearchCenter_Text_BeforeCall::
-	.string "PROF. ANAHI is still preparing\n"
-	.string "the research program.$"
+	.string "PROF. ANAHI: The three are at\n"
+	.string "DONA ZILA's house.\p"
+	.string "Return home. Care comes before\n"
+	.string "the CENSUS.$"
 
 AraunaResearchCenter_Text_MaiaIntroduction::
-	.string "Right on time, {PLAYER}.\p"
-	.string "Three POKéMON reacted to a\n"
-	.string "pulse from the woods.\p"
-	.string "Study each sphere. Choose only\n"
-	.string "when you are certain.$"
+	.string "The field annex is ready.\p"
+	.string "Your choice still belongs at\n"
+	.string "DONA ZILA's house.$"
 
 AraunaResearchCenter_Text_AfterChoice::
 	.string "Your party was restored.\p"
@@ -163,24 +163,25 @@ AraunaResearchCenter_Text_DexActivated::
 	.string "us complete every entry.$"
 
 AraunaResearchCenter_Text_SelectionLocked::
-	.string "Wait for PROF. ANAHI's call before\n"
-	.string "touching the spheres.$"
+	.string "Choose at DONA ZILA's house,\n"
+	.string "after feeding all three.$"
 
 AraunaResearchCenter_Text_AlreadyChosen::
-	.string "Your choice is already logged.\n"
-	.string "The other spheres are sealed.$"
+	.string "These stations track the two\n"
+	.string "partners traveling with CIRO\n"
+	.string "and PROF. ANAHI.$"
 
 AraunaResearchCenter_Text_ChoiceCancelled::
 	.string "The sphere becomes still.\n"
 	.string "You can keep observing.$"
 
 AraunaMapLab_Text_ObjectiveHome::
-	.string "Your home is to the northwest.\n"
-	.string "Go inside to receive the call.$"
+	.string "DONA ZILA's home is northwest.\n"
+	.string "The prologue begins inside.$"
 
 AraunaMapLab_Text_ObjectiveCenter::
-	.string "PROF. ANAHI awaits at the RESEARCH\n"
-	.string "CENTER, to the northeast.$"
+	.string "Return to DONA ZILA's house.\n"
+	.string "Care for all three partners.$"
 
 AraunaMapLab_Text_ObjectiveNilo::
 	.string "CIRO is waiting in the plaza.\n"
@@ -197,8 +198,8 @@ AraunaMapLab_Text_NiloAfterBattle::
 
 AraunaMapLab_Text_RouteLocked::
 	.string "CIRO blocked the exit.\p"
-	.string "Choose a partner at the CENTER\n"
-	.string "and meet him in the plaza.$"
+	.string "Choose at DONA ZILA's house,\n"
+	.string "then meet him in the plaza.$"
 
 AraunaMapLab_Text_ObjectiveNiloReturn::
 	.string "CIRO is back in the plaza.\p"
