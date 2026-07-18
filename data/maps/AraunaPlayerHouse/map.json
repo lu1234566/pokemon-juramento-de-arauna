@@ -98,6 +98,25 @@
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 8,
+      "y": 7,
+      "elevation": 3,
+      "var": "VAR_ARAUNA_STARTER_CHOICE",
+      "var_value": "0",
+      "script": "AraunaPlayerHouse_EventScript_BlockExit"
+    },
+    {
+      "type": "trigger",
+      "x": 9,
+      "y": 7,
+      "elevation": 3,
+      "var": "VAR_ARAUNA_STARTER_CHOICE",
+      "var_value": "0",
+      "script": "AraunaPlayerHouse_EventScript_BlockExit"
+    }
+  ],
   "bg_events": []
 }
