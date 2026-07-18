@@ -34,3 +34,16 @@ The first implementation reuses the maps without altering layout binaries:
 ## Review rule
 
 A validator must accompany every campaign map-reuse change and prove which Emerald layouts, objects and connections remain in use. Visual reconstruction from scratch is not an accepted shortcut.
+
+## Serra do Uivo implementation
+
+The second implementation also preserves layout binaries:
+
+- LAYOUT_FALLARBOR_TOWN remains the ash-town settlement;
+- LAYOUT_ROUTE114 remains the complete mountain ascent;
+- LAYOUT_METEOR_FALLS_1F_1R remains the waterfall cave;
+- the existing Fallarbor girl teaches the first three signs;
+- the existing Route 114 gentleman and Poochyena become the deaf hermit and companion;
+- the former Cozmo position at (13, 23) is reused for the Lobisomem interaction;
+- the original Team Magma scene is bypassed through its existing state variable during Arauna progression;
+- no new map, layout, tileset, blockdata or collision file is created.
