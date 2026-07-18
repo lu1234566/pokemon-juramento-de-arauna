@@ -133,8 +133,8 @@ def main() -> int:
             fail(f"charmap.txt must define a temporary fallback for {character!r}")
 
     event_scripts = read("data/event_scripts.s")
-    if '\t.include "data/text/arauna/opening.inc"' not in event_scripts:
-        fail("data/event_scripts.s must include the localized opening bank")
+    if '#include "data/text/arauna/opening.inc"' not in event_scripts:
+        fail("data/event_scripts.s must include the localized opening wrapper")
 
     print(
         "Validated Arauna opening stages 0–4, one-time starter choice, "
