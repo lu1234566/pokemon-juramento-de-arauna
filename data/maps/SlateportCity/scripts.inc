@@ -1361,7 +1361,26 @@ AraunaPorto_EventScript_DonaZila::
 	goto_if_eq VAR_ARAUNA_ARC_STAGE, 12, AraunaPorto_EventScript_DonaZilaRestoreStory
 	goto_if_eq VAR_ARAUNA_ARC_STAGE, 13, AraunaPorto_EventScript_DonaZilaReturnToRiver
 	goto_if_eq VAR_ARAUNA_ARC_STAGE, 14, AraunaPorto_EventScript_DonaZilaAwardBadge
+	goto AraunaSerra_EventScript_DonaZilaTravel
+
+AraunaSerra_EventScript_DonaZilaTravel::
 	msgbox AraunaPorto_Text_DonaZilaAfterBadge, MSGBOX_DEFAULT
+	msgbox AraunaSerra_Text_TravelPrompt, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, AraunaSerra_EventScript_StayInPorto
+	goto_if_ge VAR_ARAUNA_ARC_STAGE, 20, AraunaSerra_EventScript_TravelToFallarbor
+	setvar VAR_ARAUNA_ARC_STAGE, 20
+	setflag FLAG_ARAUNA_SERRA_ARRIVED
+	setvar VAR_METEOR_FALLS_STATE, 1
+	setflag FLAG_HIDE_METEOR_FALLS_TEAM_MAGMA
+	setflag FLAG_HIDE_METEOR_FALLS_TEAM_AQUA
+
+AraunaSerra_EventScript_TravelToFallarbor::
+	warp MAP_FALLARBOR_TOWN, 255, 10, 13
+	waitstate
+	end
+
+AraunaSerra_EventScript_StayInPorto::
+	msgbox AraunaSerra_Text_TravelLater, MSGBOX_DEFAULT
 	release
 	end
 
