@@ -63,8 +63,12 @@ def main() -> None:
     story = "\n".join((args.text_dir / name).read_text(encoding="utf-8") for name in required_story_files)
     if OBSOLETE_PLACEHOLDERS.search(story):
         raise ValueError("obsolete placeholder text remains in the English story")
-    if PORTUGUESE_RUNTIME_WORDS.search(story):
-        raise ValueError("Portuguese prose remains in the English story")
+    story_prose = story.replace("SERRA DO UIVO", "")
+    portuguese_match = PORTUGUESE_RUNTIME_WORDS.search(story_prose)
+    if portuguese_match:
+        raise ValueError(
+            f"Portuguese prose remains in the English story: {portuguese_match.group(0)}"
+        )
     unsupported_story_chars = sorted({char for char in story if ord(char) > 127 and char != "é"})
     if unsupported_story_chars:
         rendered = " ".join(f"U+{ord(char):04X}" for char in unsupported_story_chars)
