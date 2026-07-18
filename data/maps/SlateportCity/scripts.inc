@@ -1350,3 +1350,58 @@ SlateportCity_Text_TakingBattleTentChallenge:
 	.string "After all, a tough TRAINER is\n"
 	.string "the perfect fit for the BATTLE TENT!\p"
 	.string "Give it your best effort!$"
+
+@ Arauna reuses Slateport City unchanged as Porto das Redes.
+AraunaPorto_EventScript_DonaZila::
+	lock
+	faceplayer
+	goto_if_lt VAR_ARAUNA_ARC_STAGE, 10, AraunaPorto_EventScript_DonaZilaVanilla
+	goto_if_eq VAR_ARAUNA_ARC_STAGE, 10, AraunaPorto_EventScript_DonaZilaIntroduction
+	goto_if_eq VAR_ARAUNA_ARC_STAGE, 11, AraunaPorto_EventScript_DonaZilaWaiting
+	goto_if_eq VAR_ARAUNA_ARC_STAGE, 12, AraunaPorto_EventScript_DonaZilaRestoreStory
+	goto_if_eq VAR_ARAUNA_ARC_STAGE, 13, AraunaPorto_EventScript_DonaZilaReturnToRiver
+	goto_if_eq VAR_ARAUNA_ARC_STAGE, 14, AraunaPorto_EventScript_DonaZilaAwardBadge
+	msgbox AraunaPorto_Text_DonaZilaAfterBadge, MSGBOX_DEFAULT
+	release
+	end
+
+AraunaPorto_EventScript_DonaZilaVanilla::
+	msgbox SlateportCity_Text_HowTownIsBornAndGrows, MSGBOX_DEFAULT
+	release
+	end
+
+AraunaPorto_EventScript_DonaZilaIntroduction::
+	msgbox AraunaPorto_Text_DonaZilaIntroduction, MSGBOX_DEFAULT
+	setflag FLAG_ARAUNA_PORTO_ZILA_MET
+	setvar VAR_ARAUNA_ARC_STAGE, 11
+	release
+	end
+
+AraunaPorto_EventScript_DonaZilaWaiting::
+	msgbox AraunaPorto_Text_DonaZilaWaiting, MSGBOX_DEFAULT
+	release
+	end
+
+AraunaPorto_EventScript_DonaZilaRestoreStory::
+	msgbox AraunaPorto_Text_DonaZilaRestoreStory, MSGBOX_DEFAULT
+	setflag FLAG_ARAUNA_PORTO_IARACO_RESTORED
+	setvar VAR_ARAUNA_ARC_STAGE, 13
+	release
+	end
+
+AraunaPorto_EventScript_DonaZilaReturnToRiver::
+	msgbox AraunaPorto_Text_DonaZilaReturnToRiver, MSGBOX_DEFAULT
+	release
+	end
+
+AraunaPorto_EventScript_DonaZilaAwardBadge::
+	msgbox AraunaPorto_Text_DonaZilaAwardBadge, MSGBOX_DEFAULT
+	setflag FLAG_ARAUNA_BADGE_MARE
+	setflag FLAG_BADGE01_GET
+	setvar VAR_ARAUNA_BADGE_COUNT, 1
+	setvar VAR_ARAUNA_ARC_STAGE, 15
+	playfanfare MUS_OBTAIN_BADGE
+	waitfanfare
+	msgbox AraunaPorto_Text_MareBadgeReceived, MSGBOX_DEFAULT
+	release
+	end
