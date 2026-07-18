@@ -1,6 +1,10 @@
 # English-first runtime
 
-The first playable build of **Pokémon Juramento de Arauna** targets English.
+The first playable build of **Pokémon Juramento de Arauna** is explicitly English-only and produces `pokeemerald-en.gba`.
+
+- `make ARAUNA_LANGUAGE=ENGLISH` is the supported build command for this release.
+- any other `ARAUNA_LANGUAGE` value fails immediately instead of producing a mixed-language ROM.
+- Portuguese source material remains preserved but inactive for a later localized release.
 
 - Brazilian proper names remain unchanged as part of the region's identity.
 - The introduction, opening, map lab, Mist Route, First Link Ruin, and First Link Chamber use the English story packs.
