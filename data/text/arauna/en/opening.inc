@@ -53,7 +53,7 @@ AraunaResearchCenter_Text_QueroQueroPrompt::
 	.string "one day reach WATER/BUG.\p"
 	.string "Choose it as your partner?$"
 
-AraunaResearchCenter_Text_PlaceholderNotice::
+AraunaResearchCenter_Text_DexLinkNotice::
 	.string "Partner registered.\p"
 	.string "Its data and artwork are linked\n"
 	.string "to its numbered ARAUNA DEX\n"
