@@ -41,20 +41,19 @@ AraunaMapLab_Text_BagFull::
 	.string "Make room and try again.$"
 
 AraunaMapLab_Text_CiroIntro::
-	.string "The mist reshapes every trail.\n"
-	.string "Show me you can read the land!$"
+	.string "CIRO: You came back with another\n"
+	.string "set of tracks beside yours.\p"
+	.string "Show me what an agreement looks\n"
+	.string "like in battle!$"
 
 AraunaMapLab_Text_CiroDefeat::
-	.string "You read the land...\n"
-	.string "I only read your footsteps.$"
+	.string "Now I see why it followed you.$"
 
 AraunaMapLab_Text_CiroPostBattle::
-	.string "Maps reveal paths.\p"
-	.string "The best ones also hide\n"
-	.string "questions.$"
+	.string "CIRO: You listened before giving\n"
+	.string "an order.\p"
+	.string "That is harder than winning.$"
 
 AraunaMapLab_Text_NeedPartner::
-	.string "You need a POKéMON before\n"
-	.string "you can train with CIRO.\p"
-	.string "Talk to the researcher near\n"
-	.string "the entrance point.$"
+	.string "CIRO: Meet me after choosing a\n"
+	.string "partner at DONA ZILA's house.$"
