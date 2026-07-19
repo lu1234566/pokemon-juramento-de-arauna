@@ -41,16 +41,20 @@ AraunaMistRoute_Text_AffectedPokemon::
 	.string "Before you can focus on it, the\n"
 	.string "shape slips into the mist.$"
 
-AraunaMistRoute_Text_RuinOpened::
-	.string "The POKéMON flees north.\p"
-	.string "For an instant, symbols glow\n"
-	.string "at the ruin entrance.$"
+AraunaMistRoute_Text_SurveyReady::
+	.string "The shape vanishes north, but a\n"
+	.string "strip of grass stays gray.\p"
+	.string "The notebook now holds something\n"
+	.string "CIRO and ANAHI need to see.$"
 
-AraunaMistRoute_Text_TracksToRuin::
-	.string "Fresh tracks lead all the way\n"
-	.string "to the ruin entrance.$"
+AraunaMistRoute_Text_SurveyBlocked::
+	.string "The mist thickens ahead.\p"
+	.string "ANAHI asked for direct evidence.\n"
+	.string "Search nearby before ending the\n"
+	.string "survey.$"
 
-AraunaMistRoute_Text_RuinBlocked::
-	.string "A cold seal covers the path.\p"
-	.string "The affected POKéMON is still\n"
-	.string "hidden near the entrance.$"
+AraunaMistRoute_Text_SurveyComplete::
+	.string "At the ridge, the gray trail\n"
+	.string "turns toward VILA AMANHECER.\p"
+	.string "You mark the place in ZILA's\n"
+	.string "notebook and return to CIRO.$"
