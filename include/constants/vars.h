@@ -270,7 +270,7 @@
 #define VAR_ARAUNA_STARTER_CHOICE                        0x40F8 // 0=None, 1=Grass, 2=Fire, 3=Water
 #define VAR_ARAUNA_BOND_CHOICE                           0x40F9 // 0=None, 1=Courage, 2=Wisdom, 3=Compassion
 #define VAR_ARAUNA_OPTIONAL_MISSION                      0x40FA // 0–3: field-notebook side mission
-#define VAR_ARAUNA_ARC_STAGE                            0x40FB // 0=not started, 10-15=Porto das Redes
+#define VAR_ARAUNA_ARC_STAGE                            0x40FB // 10=arrival, 11=evidence, 12=agent, 13=song, 14=vigil, 15=complete
 #define VAR_ARAUNA_BADGE_COUNT                          0x40FC // Canonical Houses of Story badges
 #define VAR_ARAUNA_TESTIMONY_COUNT                      0x40FD // Recorded story Testimonies
 #define VAR_ARAUNA_RIVAL_STAGE                          0x40FE // Ciro/Anahi campaign state
