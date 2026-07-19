@@ -7,7 +7,7 @@ AraunaMapLab_EventScript_Guide::
 	goto_if_eq VAR_ARAUNA_STORY_STAGE, 0, AraunaMapLab_EventScript_ObjectiveHome
 	goto_if_eq VAR_ARAUNA_STORY_STAGE, 1, AraunaMapLab_EventScript_ObjectiveCenter
 	goto_if_eq VAR_ARAUNA_STORY_STAGE, 2, AraunaMapLab_EventScript_ObjectiveCiro
-	goto_if_eq VAR_ARAUNA_STORY_STAGE, 7, AraunaMapLab_EventScript_ObjectiveCiroReturn
+	goto_if_eq VAR_ARAUNA_STORY_STAGE, 6, AraunaMapLab_EventScript_ObjectiveCiroBattle
 	goto_if_ge VAR_ARAUNA_STORY_STAGE, 8, AraunaMapLab_EventScript_ObjectiveSliceComplete
 	msgbox AraunaMapLab_Text_ObjectiveRoute, MSGBOX_DEFAULT
 	release
@@ -28,8 +28,8 @@ AraunaMapLab_EventScript_ObjectiveCiro::
 	release
 	end
 
-AraunaMapLab_EventScript_ObjectiveCiroReturn::
-	msgbox AraunaMapLab_Text_ObjectiveCiroReturn, MSGBOX_DEFAULT
+AraunaMapLab_EventScript_ObjectiveCiroBattle::
+	msgbox AraunaMapLab_Text_ObjectiveCiroBattle, MSGBOX_DEFAULT
 	release
 	end
 
@@ -68,9 +68,23 @@ AraunaMapLab_EventScript_Ciro::
 	lock
 	faceplayer
 	goto_if_lt VAR_ARAUNA_STORY_STAGE, 2, AraunaMapLab_EventScript_NeedPartner
-	goto_if_eq VAR_ARAUNA_STORY_STAGE, 7, AraunaMapLab_EventScript_CiroEpilogue
-	goto_if_ge VAR_ARAUNA_STORY_STAGE, 8, AraunaMapLab_EventScript_CiroAfterSlice
-	goto_if_ge VAR_ARAUNA_STORY_STAGE, 3, AraunaMapLab_EventScript_CiroAfterBattle
+	goto_if_ge VAR_ARAUNA_STORY_STAGE, 8, AraunaMapLab_EventScript_CiroAfterPrologue
+	goto_if_eq VAR_ARAUNA_STORY_STAGE, 6, AraunaMapLab_EventScript_CiroBattle
+	goto_if_ge VAR_ARAUNA_STORY_STAGE, 3, AraunaMapLab_EventScript_CiroWaiting
+	goto AraunaMapLab_EventScript_CiroBeforeRoute
+
+AraunaMapLab_EventScript_CiroBeforeRoute::
+	msgbox AraunaMapLab_Text_CiroBeforeRoute, MSGBOX_DEFAULT
+	setvar VAR_ARAUNA_STORY_STAGE, 3
+	release
+	end
+
+AraunaMapLab_EventScript_CiroWaiting::
+	msgbox AraunaMapLab_Text_CiroWaiting, MSGBOX_DEFAULT
+	release
+	end
+
+AraunaMapLab_EventScript_CiroBattle::
 	goto_if_set FLAG_ARAUNA_CIRO_STARTER_PIMPAU, AraunaMapLab_EventScript_CiroBattlePimpau
 	goto_if_set FLAG_ARAUNA_CIRO_STARTER_CARAMELO, AraunaMapLab_EventScript_CiroBattleCaramelo
 	goto AraunaMapLab_EventScript_CiroBattleQuero
@@ -87,47 +101,17 @@ AraunaMapLab_EventScript_CiroBattleQuero::
 	trainerbattle_single TRAINER_ARAUNA_CIRO_QUERO, AraunaMapLab_Text_CiroIntro, AraunaMapLab_Text_CiroDefeat
 
 AraunaMapLab_EventScript_CiroBattleWon::
-	setvar VAR_ARAUNA_STORY_STAGE, 3
+	setvar VAR_ARAUNA_STORY_STAGE, 7
 	msgbox AraunaMapLab_Text_CiroPostBattle, MSGBOX_DEFAULT
-	release
-	end
-
-AraunaMapLab_EventScript_NeedPartner::
-	msgbox AraunaMapLab_Text_NeedPartner, MSGBOX_DEFAULT
-	release
-	end
-
-AraunaMapLab_EventScript_CiroAfterBattle::
-	msgbox AraunaMapLab_Text_CiroAfterBattle, MSGBOX_DEFAULT
-	release
-	end
-
-AraunaMapLab_EventScript_CiroEpilogue::
-	msgbox AraunaMapLab_Text_CiroReturnIntro, MSGBOX_DEFAULT
-	goto_if_eq VAR_ARAUNA_BOND_CHOICE, 1, AraunaMapLab_EventScript_CiroCourageReaction
-	goto_if_eq VAR_ARAUNA_BOND_CHOICE, 2, AraunaMapLab_EventScript_CiroWisdomReaction
-	goto AraunaMapLab_EventScript_CiroCompassionReaction
-
-AraunaMapLab_EventScript_CiroCourageReaction::
-	msgbox AraunaMapLab_Text_CiroCourageReaction, MSGBOX_DEFAULT
-	goto AraunaMapLab_EventScript_CiroMemoryConclusion
-
-AraunaMapLab_EventScript_CiroWisdomReaction::
-	msgbox AraunaMapLab_Text_CiroWisdomReaction, MSGBOX_DEFAULT
-	goto AraunaMapLab_EventScript_CiroMemoryConclusion
-
-AraunaMapLab_EventScript_CiroCompassionReaction::
-	msgbox AraunaMapLab_Text_CiroCompassionReaction, MSGBOX_DEFAULT
-
-AraunaMapLab_EventScript_CiroMemoryConclusion::
-	msgbox AraunaMapLab_Text_CiroMemoryConclusion, MSGBOX_DEFAULT
+	msgbox AraunaMapLab_Text_CiroDeparture, MSGBOX_DEFAULT
 	setvar VAR_ARAUNA_STORY_STAGE, 8
 	msgbox AraunaMapLab_Text_PortoLead, MSGBOX_DEFAULT
-	release
-	end
+	goto AraunaMapLab_EventScript_OfferPortoTravel
 
-AraunaMapLab_EventScript_CiroAfterSlice::
-	msgbox AraunaMapLab_Text_CiroAfterSlice, MSGBOX_DEFAULT
+AraunaMapLab_EventScript_CiroAfterPrologue::
+	msgbox AraunaMapLab_Text_CiroAfterPrologue, MSGBOX_DEFAULT
+
+AraunaMapLab_EventScript_OfferPortoTravel::
 	msgbox AraunaPorto_Text_CiroTravelPrompt, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, AraunaMapLab_EventScript_CiroStay
 	goto_if_ge VAR_ARAUNA_ARC_STAGE, 10, AraunaMapLab_EventScript_TravelToPorto
@@ -141,6 +125,11 @@ AraunaMapLab_EventScript_TravelToPorto::
 
 AraunaMapLab_EventScript_CiroStay::
 	msgbox AraunaPorto_Text_CiroStay, MSGBOX_DEFAULT
+	release
+	end
+
+AraunaMapLab_EventScript_NeedPartner::
+	msgbox AraunaMapLab_Text_NeedPartner, MSGBOX_DEFAULT
 	release
 	end
 
