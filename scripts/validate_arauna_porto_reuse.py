@@ -102,8 +102,10 @@ def main() -> None:
     village_scripts = read("data/maps/AraunaMapLab/scripts.inc")
     route_scripts = read("data/maps/Route109/scripts.inc")
     city_scripts = read("data/maps/SlateportCity/scripts.inc")
-    require("warp MAP_ROUTE109, 255, 20, 28" in village_scripts,
-            "slice does not use Route 109's existing landing")
+    require("warp MAP_ROUTE109, 255, 30, 6" in village_scripts,
+            "slice does not use Route 109's dry north-beach landing")
+    require("warp MAP_ROUTE109, 255, 20, 28" not in village_scripts,
+            "slice still drops the player into Route 109's swimmer zone")
     custom_route = route_scripts.split("@ Arauna reuses Route 109", 1)[1]
     require("showmonpic" not in custom_route,
             "unapproved Iaraco art is forced in Route 109")
