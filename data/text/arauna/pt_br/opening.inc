@@ -227,37 +227,32 @@ AraunaResearchCenter_Text_ChoiceCancelled::
 	.string "Você ainda pode observar.$"
 
 AraunaMapLab_Text_ObjectiveHome::
-
 	.string "A casa de DONA ZILA fica a\n"
-	.string "noroeste. O prologo comeca la.$"
+	.string "noroeste. O prólogo começa lá.$"
 
 AraunaMapLab_Text_ObjectiveCenter::
-
-	.string "Volte para a casa de DONA ZILA.\n"
-	.string "Cuide dos tres parceiros.$"
+	.string "Volte à casa de DONA ZILA.\n"
+	.string "Cuide dos três parceiros.$"
 
 AraunaMapLab_Text_ObjectiveCiro::
-	.string "CIRO espera você na praça.\n"
-	.string "Ele quer testar seu preparo.$"
+	.string "CIRO espera na praça.\p"
+	.string "Fale com ele antes de usar a\n"
+	.string "estrada norte.$"
 
 AraunaMapLab_Text_ObjectiveRoute::
-	.string "A ROTA DA NEBLINA está aberta\n"
-	.string "pela estrada norte.$"
-
-AraunaMapLab_Text_CiroAfterBattle::
-	.string "A rota está liberada.\p"
-	.string "Não confunda silêncio com\n"
-	.string "segurança.$"
+	.string "Explore a ROTA DA NÉVOA pela\n"
+	.string "estrada norte.\p"
+	.string "Volte com uma nota de campo e\n"
+	.string "um novo acordo.$"
 
 AraunaMapLab_Text_RouteLocked::
-	.string "A estrada norte não é segura.\p"
-	.string "Escolha na casa de DONA ZILA\n"
-	.string "e encontre CIRO na praça.$"
+	.string "CIRO pediu para conversar antes\n"
+	.string "de você seguir ao norte.$"
 
-AraunaMapLab_Text_ObjectiveCiroReturn::
-	.string "CIRO voltou à praça.\p"
-	.string "Conte a ele o que aconteceu\n"
-	.string "na CÂMARA DO PRIMEIRO ELO.$"
+AraunaMapLab_Text_ObjectiveCiroBattle::
+	.string "A névoa deixou um rastro cinza.\p"
+	.string "CIRO espera na praça para ouvir\n"
+	.string "o que você encontrou.$"
 
 AraunaMapLab_Text_ObjectiveSliceComplete::
 	.string "PORTO DAS REDES enviou notícia.\p"
@@ -266,35 +261,29 @@ AraunaMapLab_Text_ObjectiveSliceComplete::
 	.string "Fale com CIRO quando estiver\n"
 	.string "pronto para viajar.$"
 
-AraunaMapLab_Text_CiroReturnIntro::
-	.string "CIRO: Eu vi o clarão da vila.\p"
-	.string "Pelas suas marcas, a ruína\n"
-	.string "também viu você.$"
+AraunaMapLab_Text_CiroBeforeRoute::
+	.string "CIRO: ANAHI quer notas de campo,\n"
+	.string "não uma corrida.\p"
+	.string "Pegue o KIT DE CAMPO. Conheça\n"
+	.string "alguém além do seu primeiro\n"
+	.string "parceiro.\p"
+	.string "Quando a névoa der um motivo\n"
+	.string "para voltar, me encontre aqui.$"
 
-AraunaMapLab_Text_CiroCourageReaction::
-	.string "Você entrou antes do colapso.\p"
-	.string "CORAGEM abriu o caminho, mas\n"
-	.string "parte dele ficou soterrada.\p"
-	.string "Sua escolha deixou uma marca.$"
+AraunaMapLab_Text_CiroWaiting::
+	.string "CIRO: Não apresse a névoa.\p"
+	.string "Volte quando o caderno de ZILA\n"
+	.string "tiver algo que nenhum de nós\n"
+	.string "consiga explicar.$"
 
-AraunaMapLab_Text_CiroWisdomReaction::
-	.string "Você decifrou o mecanismo.\p"
-	.string "SABEDORIA preservou a ruína\n"
-	.string "e as inscrições do caminho.\p"
-	.string "Sua escolha salvou respostas.$"
-
-AraunaMapLab_Text_CiroCompassionReaction::
-	.string "Você ouviu o POKéMON primeiro.\p"
-	.string "COMPAIXAO revelou uma saída\n"
-	.string "que o agente não conhecia.\p"
-	.string "Sua escolha criou confiança.$"
-
-AraunaMapLab_Text_CiroMemoryConclusion::
-	.string "CIRO: Se a memória é real, a\n"
-	.string "versão da Liga está incompleta.\p"
-	.string "O CAMPEAO não desapareceu antes\n"
-	.string "da Noite Sem Estrelas.\p"
-	.string "Ele estava lá. E rompeu o Elo.$"
+AraunaMapLab_Text_CiroDeparture::
+	.string "CIRO: Isto veio do CONSÓRCIO.\p"
+	.string "Uma bolsa de campo, refeições e\n"
+	.string "remédio para casa.\p"
+	.string "Eu sei o que eles tiram. Também\n"
+	.string "sei quanto custa uma doença.\p"
+	.string "Chamaram para PORTO. Eu parto\n"
+	.string "assim que você estiver pronto.$"
 
 AraunaMapLab_Text_PortoLead::
 	.string "Uma chamada de PORTO DAS REDES\n"
@@ -302,7 +291,7 @@ AraunaMapLab_Text_PortoLead::
 	.string "A maré perdeu a cor e os\n"
 	.string "pescadores ficaram em silêncio.$"
 
-AraunaMapLab_Text_CiroAfterSlice::
-	.string "Ainda temos só uma memória.\p"
-	.string "O próximo passo é descobrir\n"
-	.string "quem tentou apagá-la.$"
+AraunaMapLab_Text_CiroAfterPrologue::
+	.string "CIRO: A estrada costeira abriu.\p"
+	.string "Se a maré perdeu mesmo a cor,\n"
+	.string "o caderno precisa de nós dois.$"
