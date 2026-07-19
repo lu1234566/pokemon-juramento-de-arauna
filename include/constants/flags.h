@@ -83,12 +83,12 @@
 #define FLAG_ARAUNA_ANAHI_STARTER_PIMPAU             0x3D
 #define FLAG_ARAUNA_ANAHI_STARTER_CARAMELO           0x3E
 #define FLAG_ARAUNA_ANAHI_STARTER_QUERO              0x3F
-#define FLAG_UNUSED_0x040    0x40 // Unused Flag
-#define FLAG_UNUSED_0x041    0x41 // Unused Flag
-#define FLAG_UNUSED_0x042    0x42 // Unused Flag
-#define FLAG_UNUSED_0x043    0x43 // Unused Flag
-#define FLAG_UNUSED_0x044    0x44 // Unused Flag
-#define FLAG_UNUSED_0x045    0x45 // Unused Flag
+#define FLAG_ARAUNA_PROLOGUE_NIGHT_PIMPAU             0x40
+#define FLAG_ARAUNA_PROLOGUE_NIGHT_CARAMELO           0x41
+#define FLAG_ARAUNA_PROLOGUE_NIGHT_QUERO              0x42
+#define FLAG_ARAUNA_PROLOGUE_TALKED_ZILA_AT_NIGHT     0x43
+#define FLAG_ARAUNA_PROLOGUE_TALKED_ANAHI_AT_NIGHT    0x44
+#define FLAG_ARAUNA_PROLOGUE_NIGHT_COMPLETE           0x45
 #define FLAG_UNUSED_0x046    0x46 // Unused Flag
 #define FLAG_UNUSED_0x047    0x47 // Unused Flag
 #define FLAG_UNUSED_0x048    0x48 // Unused Flag
