@@ -1,21 +1,69 @@
 AraunaPlayerHouse_Text_NightArrival::
-	.string "Night, VILA AMANHECER.\p"
-	.string "PROF. ANAHI asked DONA ZILA\n"
-	.string "for shelter from the rain.\p"
-	.string "Three rescued creatures wait\n"
-	.string "under this roof.$"
+	.string "VILA AMANHECER, after dark.\p"
+	.string "Rain taps DONA ZILA's roof.\n"
+	.string "Three rescued creatures watch\n"
+	.string "you from beside the stove.$"
+
+AraunaPlayerHouse_Text_NightZila::
+	.string "DONA ZILA: A strange roof feels\n"
+	.string "less strange once you learn who\n"
+	.string "shares it.\p"
+	.string "Speak with ANAHI. Then sit with\n"
+	.string "each of our guests.$"
+
+AraunaPlayerHouse_Text_NightAnahi::
+	.string "PROF. ANAHI: I found the three\n"
+	.string "near land claimed by the\n"
+	.string "CONSORTIUM.\p"
+	.string "None fled when I approached.\n"
+	.string "Tonight they need quiet, not a\n"
+	.string "TRAINER.$"
+
+AraunaPlayerHouse_Text_NightPimpau::
+	.string "PIMPAU keeps one old seed\n"
+	.string "pressed against its chest.\p"
+	.string "Its kind marks every fallen tree\n"
+	.string "so the forest can remember.$"
+
+AraunaPlayerHouse_Text_NightCaramelo::
+	.string "CARAMELO lies facing the front\n"
+	.string "door.\p"
+	.string "It guards the homes of people\n"
+	.string "who have lost one before.$"
+
+AraunaPlayerHouse_Text_NightQuero::
+	.string "QUERO calls once toward a nest\n"
+	.string "that is no longer there.\p"
+	.string "Its ancestors warned sleeping\n"
+	.string "villages before the floods.$"
+
+AraunaPlayerHouse_Text_NightReady::
+	.string "Everyone is settled.\p"
+	.string "DONA ZILA lowers the lamp. The\n"
+	.string "rain becomes the only voice in\n"
+	.string "the room.$"
+
+AraunaPlayerHouse_Text_BlockExitNight::
+	.string "Rain covers the village road.\p"
+	.string "DONA ZILA asked you to meet\n"
+	.string "everyone under this roof before\n"
+	.string "sleeping.$"
 
 AraunaPlayerHouse_Text_NightWatch::
-	.string "Before dawn, a giant gray\n"
-	.string "figure crossed the alley.\p"
-	.string "All three stood between it and\n"
-	.string "the house. They chose to stay.$"
+	.string "Something enormous crosses the\n"
+	.string "alley beyond the curtains.\p"
+	.string "Its outline is gray, as if the\n"
+	.string "night forgot its color.\p"
+	.string "All three creatures stand\n"
+	.string "between the window and the\n"
+	.string "house.$"
 
 AraunaPlayerHouse_Text_Dawn::
-	.string "Morning. DONA ZILA set three\n"
-	.string "bowls beside the stove.\p"
-	.string "Feed PIMPAU, CARAMELO and\n"
-	.string "QUERO before choosing.$"
+	.string "Morning light reaches the stove.\p"
+	.string "DONA ZILA places three bowls\n"
+	.string "on the floor.\p"
+	.string "Feed all three before choosing\n"
+	.string "who will travel with you.$"
 
 AraunaPlayerHouse_Text_ZilaCareReminder::
 	.string "DONA ZILA: Nobody chooses on\n"
