@@ -75,11 +75,12 @@ AraunaMistRoute_EventScript_AffectedPokemonGone::
 	end
 
 AraunaMistRoute_EventScript_ReturnToVillage::
-	warp MAP_ARAUNA_MAP_LAB, 255, 14, 3
+	warp MAP_ARAUNA_MAP_LAB, 255, 17, 11
 	waitstate
 	end
 
 AraunaMistRoute_EventScript_FinishSurvey::
+	goto_if_ge VAR_ARAUNA_STORY_STAGE, 6, AraunaMistRoute_EventScript_ReturnToVillage
 	goto_if_ge VAR_ARAUNA_STORY_STAGE, 5, AraunaMistRoute_EventScript_CompleteSurvey
 	lockall
 	msgbox AraunaMistRoute_Text_SurveyBlocked, MSGBOX_DEFAULT
@@ -92,9 +93,7 @@ AraunaMistRoute_EventScript_CompleteSurvey::
 	lockall
 	msgbox AraunaMistRoute_Text_SurveyComplete, MSGBOX_DEFAULT
 	setvar VAR_ARAUNA_STORY_STAGE, 6
-	warp MAP_ARAUNA_MAP_LAB, 255, 14, 3
-	waitstate
-	end
+	goto AraunaMistRoute_EventScript_ReturnToVillage
 
 AraunaMistRoute_Movement_StepBackFromSurvey:
 	walk_down
