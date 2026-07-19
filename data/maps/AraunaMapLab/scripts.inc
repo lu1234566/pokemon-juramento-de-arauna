@@ -99,6 +99,7 @@ AraunaMapLab_EventScript_CiroBattleCaramelo::
 
 AraunaMapLab_EventScript_CiroBattleQuero::
 	trainerbattle_single TRAINER_ARAUNA_CIRO_QUERO, AraunaMapLab_Text_CiroIntro, AraunaMapLab_Text_CiroDefeat
+	goto AraunaMapLab_EventScript_CiroBattleWon
 
 AraunaMapLab_EventScript_CiroBattleWon::
 	setvar VAR_ARAUNA_STORY_STAGE, 7
@@ -110,6 +111,7 @@ AraunaMapLab_EventScript_CiroBattleWon::
 
 AraunaMapLab_EventScript_CiroAfterPrologue::
 	msgbox AraunaMapLab_Text_CiroAfterPrologue, MSGBOX_DEFAULT
+	goto AraunaMapLab_EventScript_OfferPortoTravel
 
 AraunaMapLab_EventScript_OfferPortoTravel::
 	msgbox AraunaPorto_Text_CiroTravelPrompt, MSGBOX_YESNO
@@ -119,7 +121,8 @@ AraunaMapLab_EventScript_OfferPortoTravel::
 	setflag FLAG_ARAUNA_PORTO_ARRIVED
 
 AraunaMapLab_EventScript_TravelToPorto::
-	warp MAP_ROUTE109, 255, 20, 28
+	@ Route 109 (30, 6) is dry north-beach ground, outside swimmer paths.
+	warp MAP_ROUTE109, 255, 30, 6
 	waitstate
 	end
 
@@ -144,6 +147,7 @@ AraunaMapLab_EventScript_EnterResearchCenter::
 	end
 
 AraunaMapLab_EventScript_EnterMistRoute::
+	goto_if_ge VAR_ARAUNA_STORY_STAGE, 8, AraunaMapLab_EventScript_DepartForPorto
 	goto_if_ge VAR_ARAUNA_STORY_STAGE, 3, AraunaMapLab_EventScript_WarpToMistRoute
 	lockall
 	msgbox AraunaMapLab_Text_RouteLocked, MSGBOX_DEFAULT
@@ -157,6 +161,16 @@ AraunaMapLab_EventScript_WarpToMistRoute::
 	waitstate
 	end
 
+AraunaMapLab_EventScript_DepartForPorto::
+	lockall
+	goto_if_ge VAR_ARAUNA_ARC_STAGE, 10, AraunaMapLab_EventScript_DepartForPortoReady
+	setvar VAR_ARAUNA_ARC_STAGE, 10
+	setflag FLAG_ARAUNA_PORTO_ARRIVED
+
+AraunaMapLab_EventScript_DepartForPortoReady::
+	msgbox AraunaPorto_Text_CoastRoadDeparture, MSGBOX_DEFAULT
+	goto AraunaMapLab_EventScript_TravelToPorto
+
 AraunaMapLab_Movement_StepBackFromRoute:
-	walk_down
+	walk_left
 	step_end
