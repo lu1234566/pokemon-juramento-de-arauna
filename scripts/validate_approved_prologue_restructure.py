@@ -28,10 +28,12 @@ def trainer_block(source: str, trainer: str) -> str:
 def main() -> None:
     village = json.loads(read("data/maps/AraunaMapLab/map.json"))
     route = json.loads(read("data/maps/AraunaMistRoute/map.json"))
+    house_scripts = read("data/maps/AraunaPlayerHouse/scripts.inc")
     village_scripts = read("data/maps/AraunaMapLab/scripts.inc")
     route_scripts = read("data/maps/AraunaMistRoute/scripts.inc")
     trainers = read("src/data/trainers.party")
     opponents = read("include/constants/opponents.h")
+    flags = read("include/constants/flags.h")
     english = "\n".join(
         read(path)
         for path in (
@@ -147,6 +149,36 @@ def main() -> None:
     if "AraunaMapLab_Text_PortoLead" not in village_scripts:
         fail("the prologue must hand off to the Porto das Redes lead")
 
+    playable_night_flags = (
+        "FLAG_ARAUNA_PROLOGUE_NIGHT_PIMPAU",
+        "FLAG_ARAUNA_PROLOGUE_NIGHT_CARAMELO",
+        "FLAG_ARAUNA_PROLOGUE_NIGHT_QUERO",
+        "FLAG_ARAUNA_PROLOGUE_TALKED_ZILA_AT_NIGHT",
+        "FLAG_ARAUNA_PROLOGUE_TALKED_ANAHI_AT_NIGHT",
+        "FLAG_ARAUNA_PROLOGUE_NIGHT_COMPLETE",
+    )
+    for token in playable_night_flags:
+        if token not in flags or token not in house_scripts:
+            fail(f"playable night is missing state: {token}")
+
+    opening_block = house_scripts.split(
+        "AraunaPlayerHouse_EventScript_Opening::", 1
+    )[1].split("AraunaPlayerHouse_EventScript_DonaZila::", 1)[0]
+    if (
+        "AraunaPlayerHouse_Text_NightWatch" in opening_block
+        or "AraunaPlayerHouse_Text_Dawn" in opening_block
+    ):
+        fail("night watch and dawn still run as an opening text dump")
+
+    for token in (
+        "AraunaPlayerHouse_EventScript_CheckNightReady",
+        "AraunaPlayerHouse_EventScript_BeginDawn",
+        "fadescreen FADE_TO_BLACK",
+        "fadescreen FADE_FROM_BLACK",
+    ):
+        if token not in house_scripts:
+            fail(f"playable night transition is missing {token}")
+
     plan = read("docs/arauna/APPROVED_PROLOGUE_PORTO_RESTRUCTURE.md")
     for decision in (
         "Visible north exit",
@@ -158,7 +190,7 @@ def main() -> None:
 
     print(
         "Approved restructure checkpoint validated: north exit, Ciro starter "
-        "teams, no Poochyena placeholder and Porto handoff"
+        "teams, playable night, no Poochyena placeholder and Porto handoff"
     )
 
 
