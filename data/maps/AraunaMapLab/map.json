@@ -51,7 +51,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "AraunaMapLab_EventScript_Nilo",
+      "script": "AraunaMapLab_EventScript_Ciro",
       "flag": "0"
     }
   ],
@@ -71,8 +71,8 @@
       "dest_warp_id": "0"
     },
     {
-      "x": 18,
-      "y": 11,
+      "x": 14,
+      "y": 1,
       "elevation": 3,
       "dest_map": "MAP_ARAUNA_MIST_ROUTE",
       "dest_warp_id": "0"
@@ -81,8 +81,8 @@
   "coord_events": [
     {
       "type": "trigger",
-      "x": 19,
-      "y": 11,
+      "x": 14,
+      "y": 2,
       "elevation": 3,
       "var": "VAR_TEMP_0",
       "var_value": "0",
