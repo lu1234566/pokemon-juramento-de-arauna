@@ -9,8 +9,6 @@ AraunaPlayerHouse_OnFrame:
 AraunaPlayerHouse_EventScript_Opening::
 	lockall
 	msgbox AraunaPlayerHouse_Text_NightArrival, MSGBOX_DEFAULT
-	msgbox AraunaPlayerHouse_Text_NightWatch, MSGBOX_DEFAULT
-	msgbox AraunaPlayerHouse_Text_Dawn, MSGBOX_DEFAULT
 	setvar VAR_ARAUNA_STORY_STAGE, 1
 	releaseall
 	end
@@ -19,7 +17,16 @@ AraunaPlayerHouse_EventScript_DonaZila::
 	lock
 	faceplayer
 	goto_if_ne VAR_ARAUNA_STARTER_CHOICE, 0, AraunaPlayerHouse_EventScript_ZilaAfterChoice
+	goto_if_unset FLAG_ARAUNA_PROLOGUE_NIGHT_COMPLETE, AraunaPlayerHouse_EventScript_NightZila
 	msgbox AraunaPlayerHouse_Text_ZilaCareReminder, MSGBOX_DEFAULT
+	release
+	end
+
+AraunaPlayerHouse_EventScript_NightZila::
+	msgbox AraunaPlayerHouse_Text_NightZila, MSGBOX_DEFAULT
+	setflag FLAG_ARAUNA_PROLOGUE_TALKED_ZILA_AT_NIGHT
+	call AraunaPlayerHouse_EventScript_CheckNightReady
+	goto_if_eq VAR_RESULT, TRUE, AraunaPlayerHouse_EventScript_BeginDawn
 	release
 	end
 
@@ -32,7 +39,16 @@ AraunaPlayerHouse_EventScript_Anahi::
 	lock
 	faceplayer
 	goto_if_ne VAR_ARAUNA_STARTER_CHOICE, 0, AraunaPlayerHouse_EventScript_AnahiAfterChoice
+	goto_if_unset FLAG_ARAUNA_PROLOGUE_NIGHT_COMPLETE, AraunaPlayerHouse_EventScript_NightAnahi
 	msgbox AraunaPlayerHouse_Text_AnahiBeforeChoice, MSGBOX_DEFAULT
+	release
+	end
+
+AraunaPlayerHouse_EventScript_NightAnahi::
+	msgbox AraunaPlayerHouse_Text_NightAnahi, MSGBOX_DEFAULT
+	setflag FLAG_ARAUNA_PROLOGUE_TALKED_ANAHI_AT_NIGHT
+	call AraunaPlayerHouse_EventScript_CheckNightReady
+	goto_if_eq VAR_RESULT, TRUE, AraunaPlayerHouse_EventScript_BeginDawn
 	release
 	end
 
@@ -45,11 +61,20 @@ AraunaPlayerHouse_EventScript_AnahiAfterChoice::
 AraunaPlayerHouse_EventScript_Pimpau::
 	lock
 	faceplayer
+	goto_if_unset FLAG_ARAUNA_PROLOGUE_NIGHT_COMPLETE, AraunaPlayerHouse_EventScript_NightPimpau
 	goto_if_ne VAR_ARAUNA_STARTER_CHOICE, 0, AraunaPlayerHouse_EventScript_AlreadyChosen
 	goto_if_set FLAG_ARAUNA_PROLOGUE_FED_PIMPAU, AraunaPlayerHouse_EventScript_CheckPimpauChoice
 	msgbox AraunaPlayerHouse_Text_FeedPimpau, MSGBOX_DEFAULT
 	setflag FLAG_ARAUNA_PROLOGUE_FED_PIMPAU
 	call AraunaPlayerHouse_EventScript_CheckAllFed
+	release
+	end
+
+AraunaPlayerHouse_EventScript_NightPimpau::
+	msgbox AraunaPlayerHouse_Text_NightPimpau, MSGBOX_DEFAULT
+	setflag FLAG_ARAUNA_PROLOGUE_NIGHT_PIMPAU
+	call AraunaPlayerHouse_EventScript_CheckNightReady
+	goto_if_eq VAR_RESULT, TRUE, AraunaPlayerHouse_EventScript_BeginDawn
 	release
 	end
 
@@ -67,11 +92,20 @@ AraunaPlayerHouse_EventScript_CheckPimpauChoice::
 AraunaPlayerHouse_EventScript_Caramelo::
 	lock
 	faceplayer
+	goto_if_unset FLAG_ARAUNA_PROLOGUE_NIGHT_COMPLETE, AraunaPlayerHouse_EventScript_NightCaramelo
 	goto_if_ne VAR_ARAUNA_STARTER_CHOICE, 0, AraunaPlayerHouse_EventScript_AlreadyChosen
 	goto_if_set FLAG_ARAUNA_PROLOGUE_FED_CARAMELO, AraunaPlayerHouse_EventScript_CheckCarameloChoice
 	msgbox AraunaPlayerHouse_Text_FeedCaramelo, MSGBOX_DEFAULT
 	setflag FLAG_ARAUNA_PROLOGUE_FED_CARAMELO
 	call AraunaPlayerHouse_EventScript_CheckAllFed
+	release
+	end
+
+AraunaPlayerHouse_EventScript_NightCaramelo::
+	msgbox AraunaPlayerHouse_Text_NightCaramelo, MSGBOX_DEFAULT
+	setflag FLAG_ARAUNA_PROLOGUE_NIGHT_CARAMELO
+	call AraunaPlayerHouse_EventScript_CheckNightReady
+	goto_if_eq VAR_RESULT, TRUE, AraunaPlayerHouse_EventScript_BeginDawn
 	release
 	end
 
@@ -89,11 +123,20 @@ AraunaPlayerHouse_EventScript_CheckCarameloChoice::
 AraunaPlayerHouse_EventScript_Quero::
 	lock
 	faceplayer
+	goto_if_unset FLAG_ARAUNA_PROLOGUE_NIGHT_COMPLETE, AraunaPlayerHouse_EventScript_NightQuero
 	goto_if_ne VAR_ARAUNA_STARTER_CHOICE, 0, AraunaPlayerHouse_EventScript_AlreadyChosen
 	goto_if_set FLAG_ARAUNA_PROLOGUE_FED_QUERO, AraunaPlayerHouse_EventScript_CheckQueroChoice
 	msgbox AraunaPlayerHouse_Text_FeedQuero, MSGBOX_DEFAULT
 	setflag FLAG_ARAUNA_PROLOGUE_FED_QUERO
 	call AraunaPlayerHouse_EventScript_CheckAllFed
+	release
+	end
+
+AraunaPlayerHouse_EventScript_NightQuero::
+	msgbox AraunaPlayerHouse_Text_NightQuero, MSGBOX_DEFAULT
+	setflag FLAG_ARAUNA_PROLOGUE_NIGHT_QUERO
+	call AraunaPlayerHouse_EventScript_CheckNightReady
+	goto_if_eq VAR_RESULT, TRUE, AraunaPlayerHouse_EventScript_BeginDawn
 	release
 	end
 
@@ -107,6 +150,28 @@ AraunaPlayerHouse_EventScript_CheckQueroChoice::
 	setvar VAR_STARTER_MON, 2
 	setvar VAR_ARAUNA_STARTER_CHOICE, 3
 	goto AraunaPlayerHouse_EventScript_CompleteChoice
+
+AraunaPlayerHouse_EventScript_CheckNightReady::
+	setvar VAR_RESULT, FALSE
+	goto_if_unset FLAG_ARAUNA_PROLOGUE_TALKED_ZILA_AT_NIGHT, AraunaPlayerHouse_EventScript_NightCheckReturn
+	goto_if_unset FLAG_ARAUNA_PROLOGUE_TALKED_ANAHI_AT_NIGHT, AraunaPlayerHouse_EventScript_NightCheckReturn
+	goto_if_unset FLAG_ARAUNA_PROLOGUE_NIGHT_PIMPAU, AraunaPlayerHouse_EventScript_NightCheckReturn
+	goto_if_unset FLAG_ARAUNA_PROLOGUE_NIGHT_CARAMELO, AraunaPlayerHouse_EventScript_NightCheckReturn
+	goto_if_unset FLAG_ARAUNA_PROLOGUE_NIGHT_QUERO, AraunaPlayerHouse_EventScript_NightCheckReturn
+	setvar VAR_RESULT, TRUE
+AraunaPlayerHouse_EventScript_NightCheckReturn::
+	return
+
+AraunaPlayerHouse_EventScript_BeginDawn::
+	msgbox AraunaPlayerHouse_Text_NightReady, MSGBOX_DEFAULT
+	msgbox AraunaPlayerHouse_Text_NightWatch, MSGBOX_DEFAULT
+	fadescreen FADE_TO_BLACK
+	delay 30
+	setflag FLAG_ARAUNA_PROLOGUE_NIGHT_COMPLETE
+	fadescreen FADE_FROM_BLACK
+	msgbox AraunaPlayerHouse_Text_Dawn, MSGBOX_DEFAULT
+	release
+	end
 
 AraunaPlayerHouse_EventScript_CheckAllFed::
 	goto_if_unset FLAG_ARAUNA_PROLOGUE_FED_PIMPAU, AraunaPlayerHouse_EventScript_CareCheckReturn
@@ -152,7 +217,14 @@ AraunaPlayerHouse_EventScript_AssignAfterCaramelo::
 
 AraunaPlayerHouse_EventScript_BlockExit::
 	lockall
+	goto_if_unset FLAG_ARAUNA_PROLOGUE_NIGHT_COMPLETE, AraunaPlayerHouse_EventScript_BlockExitNight
 	msgbox AraunaPlayerHouse_Text_BlockExit, MSGBOX_DEFAULT
+	goto AraunaPlayerHouse_EventScript_BlockExitStepBack
+
+AraunaPlayerHouse_EventScript_BlockExitNight::
+	msgbox AraunaPlayerHouse_Text_BlockExitNight, MSGBOX_DEFAULT
+
+AraunaPlayerHouse_EventScript_BlockExitStepBack::
 	applymovement LOCALID_PLAYER, AraunaPlayerHouse_Movement_StepBack
 	waitmovement 0
 	releaseall
