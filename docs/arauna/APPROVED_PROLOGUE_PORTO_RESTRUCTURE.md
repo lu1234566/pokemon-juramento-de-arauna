@@ -21,6 +21,18 @@ exist.
 No map or layout will be created from scratch. Existing Emerald layouts,
 tilesets, interiors, and route shells are reassigned or lightly rearranged.
 
+## Checkpoint status
+
+- [x] Foundation: visible north exit, Ciro identity and conditional starter
+  parties, Poochyena placeholder removal, and Porto handoff.
+- [x] Playable house night: the player meets Zila, Anahi, and all three
+  rescued partners before the gray-figure watch and dawn transition.
+- [ ] Expanded Vila Amanhecer NPC exploration and capture tutorial.
+- [ ] Ciro departure scene and route pacing.
+- [ ] First Link removal from the critical path.
+- [ ] Porto investigation, Agent confrontation, restoration, and Tide Vigil.
+- [ ] First approved in-ROM art batch.
+
 ## Target player loop
 
 Every House of Story follows this order:
