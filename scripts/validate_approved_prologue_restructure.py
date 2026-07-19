@@ -40,6 +40,7 @@ def main() -> None:
             "data/text/arauna/en/opening.inc",
             "data/text/arauna/en/map_lab.inc",
             "data/text/arauna/en/porto_das_redes.inc",
+            "data/text/arauna/en/route.inc",
         )
     )
     portuguese = read("data/text/arauna/pt_br/opening.inc")
@@ -149,6 +150,36 @@ def main() -> None:
     if "AraunaMapLab_Text_PortoLead" not in village_scripts:
         fail("the prologue must hand off to the Porto das Redes lead")
 
+    if any(
+        event.get("dest_map") == "MAP_ARAUNA_FIRST_LINK_RUIN"
+        for event in route["warp_events"]
+    ):
+        fail("the First Link ruin is still on the critical route")
+
+    critical_path = "\n".join((village_scripts, route_scripts, english))
+    for deferred in (
+        "AraunaMapLab_EventScript_CiroMemoryConclusion",
+        "AraunaMistRoute_EventScript_EnterRuin",
+        "FIRST LINK CHAMBER",
+        "CHAMPION's memory",
+    ):
+        if deferred in critical_path:
+            fail(f"deferred First Link material remains in the prologue: {deferred}")
+
+    story_tokens = (
+        "AraunaMapLab_EventScript_CiroBeforeRoute",
+        "setvar VAR_ARAUNA_STORY_STAGE, 3",
+        "setvar VAR_ARAUNA_STORY_STAGE, 4",
+        "setvar VAR_ARAUNA_STORY_STAGE, 5",
+        "setvar VAR_ARAUNA_STORY_STAGE, 6",
+        "goto_if_eq VAR_ARAUNA_STORY_STAGE, 6, AraunaMapLab_EventScript_CiroBattle",
+        "setvar VAR_ARAUNA_STORY_STAGE, 8",
+    )
+    combined_flow = "\n".join((village_scripts, route_scripts))
+    for token in story_tokens:
+        if token not in combined_flow:
+            fail(f"explore-before-Ciro flow is missing {token}")
+
     playable_night_flags = (
         "FLAG_ARAUNA_PROLOGUE_NIGHT_PIMPAU",
         "FLAG_ARAUNA_PROLOGUE_NIGHT_CARAMELO",
@@ -190,7 +221,7 @@ def main() -> None:
 
     print(
         "Approved restructure checkpoint validated: north exit, Ciro starter "
-        "teams, playable night, no Poochyena placeholder and Porto handoff"
+        "teams, playable night, explore-before-rival flow and Porto handoff"
     )
 
 
