@@ -65,8 +65,10 @@ def main() -> None:
     require(scrollbar, "sprite->y2 = 0;", "single-entry Pokédex guard")
 
     required_trainers = {
-        "TRAINER_ARAUNA_SCOUT_NILO": ("Name: NILO", "Level: 4"),
-        "TRAINER_ARAUNA_TECH_AGENT": ("Name: AGENT", "Level: 6"),
+        "TRAINER_ARAUNA_CIRO_PIMPAU": ("Name: CIRO", "Treecko", "Level: 7"),
+        "TRAINER_ARAUNA_CIRO_CARAMELO": ("Name: CIRO", "Torchic", "Level: 7"),
+        "TRAINER_ARAUNA_CIRO_QUERO": ("Name: CIRO", "Mudkip", "Level: 7"),
+        "TRAINER_ARAUNA_TECH_AGENT": ("Name: AGENT", "Voltorb", "Level: 6"),
         "TRAINER_ARAUNA_MARE_TRIAL": ("Name: ZILA", "Level: 19"),
         "TRAINER_ARAUNA_UIVO_TRIAL": ("Name: HERMIT", "Level: 27"),
     }
