@@ -15,9 +15,9 @@ AraunaPlayerHouse_Text_NightAnahi::
 	.string "PROF. ANAHI: Encontrei os três\n"
 	.string "perto de terras tomadas pelo\n"
 	.string "CONSÓRCIO.\p"
-	.string "Nenhum fugiu quando me aproximei.\n"
-	.string "Hoje precisam de calma, não de\n"
-	.string "um TREINADOR.$"
+	.string "Eles ficaram quando cheguei.\p"
+	.string "Hoje precisam de calma.\n"
+	.string "Não precisam de TREINADOR.$"
 
 AraunaPlayerHouse_Text_NightPimpau::
 	.string "PIMPAU aperta uma semente antiga\n"
@@ -176,7 +176,7 @@ AraunaResearchCenter_Text_AfterChoice::
 
 AraunaResearchCenter_Text_RouteOpen::
 	.string "Sua equipe foi recuperada.\p"
-	.string "A estrada norte está aberta.\p"
+	.string "O caminho leste está aberto.\p"
 	.string "Registre tudo que a neblina\n"
 	.string "tentar esconder.$"
 
@@ -237,17 +237,17 @@ AraunaMapLab_Text_ObjectiveCenter::
 AraunaMapLab_Text_ObjectiveCiro::
 	.string "CIRO espera na praça.\p"
 	.string "Fale com ele antes de usar a\n"
-	.string "estrada norte.$"
+	.string "saída leste.$"
 
 AraunaMapLab_Text_ObjectiveRoute::
 	.string "Explore a ROTA DA NÉVOA pela\n"
-	.string "estrada norte.\p"
+	.string "saída leste.\p"
 	.string "Volte com uma nota de campo e\n"
 	.string "um novo acordo.$"
 
 AraunaMapLab_Text_RouteLocked::
 	.string "CIRO pediu para conversar antes\n"
-	.string "de você seguir ao norte.$"
+	.string "de você seguir para leste.$"
 
 AraunaMapLab_Text_ObjectiveCiroBattle::
 	.string "A névoa deixou um rastro cinza.\p"
