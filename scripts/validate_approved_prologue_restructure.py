@@ -51,25 +51,25 @@ def main() -> None:
     )
     portuguese = read("data/text/arauna/pt_br/opening.inc")
 
-    north_warps = [
+    east_warps = [
         event
         for event in village["warp_events"]
         if (event["x"], event["y"], event["dest_map"]) == (
-            14,
-            1,
+            19,
+            11,
             "MAP_ARAUNA_MIST_ROUTE",
         )
     ]
-    if len(north_warps) != 1:
-        fail("Vila Amanhecer must use the visible north opening")
+    if len(east_warps) != 1:
+        fail("Vila Amanhecer must use the layout's visible east opening")
 
     if any(
-        (event["x"], event["y"]) == (18, 11)
+        (event["x"], event["y"]) == (14, 1)
         for event in village["warp_events"]
     ):
-        fail("the hidden route warp behind Ciro still exists")
+        fail("the misplaced north route warp still exists")
 
-    north_gates = [
+    east_gates = [
         event
         for event in village["coord_events"]
         if (
@@ -77,15 +77,18 @@ def main() -> None:
             event["y"],
             event["script"],
         )
-        == (14, 2, "AraunaMapLab_EventScript_EnterMistRoute")
+        == (18, 11, "AraunaMapLab_EventScript_EnterMistRoute")
     ]
-    if len(north_gates) != 1:
-        fail("the visible north opening must retain the story gate")
+    if len(east_gates) != 1:
+        fail("the visible east opening must retain the story gate")
 
-    if "walk_down" not in village_scripts:
-        fail("the north gate must return a blocked player toward the village")
-    if "warp MAP_ARAUNA_MAP_LAB, 255, 14, 3" not in route_scripts:
-        fail("the route must return beside the visible north opening")
+    gate_movement = village_scripts.split(
+        "AraunaMapLab_Movement_StepBackFromRoute:", 1
+    )[1]
+    if "walk_left" not in gate_movement:
+        fail("the east gate must return a blocked player toward the village")
+    if "warp MAP_ARAUNA_MAP_LAB, 255, 17, 11" not in route_scripts:
+        fail("the route must return inside the visible east opening")
 
     changed_identity = "\n".join(
         (
@@ -127,6 +130,52 @@ def main() -> None:
     ):
         if token not in village_scripts:
             fail(f"conditional Ciro battle is missing {token}")
+
+    for label in (
+        "AraunaMapLab_EventScript_CiroBattlePimpau::",
+        "AraunaMapLab_EventScript_CiroBattleCaramelo::",
+        "AraunaMapLab_EventScript_CiroBattleQuero::",
+    ):
+        battle = village_scripts.split(label, 1)[1].split(
+            "\nAraunaMapLab_EventScript_", 1
+        )[0]
+        if "goto AraunaMapLab_EventScript_CiroBattleWon" not in battle:
+            fail(f"{label[:-2]} does not continue into the post-battle scene")
+
+    after_prologue = village_scripts.split(
+        "AraunaMapLab_EventScript_CiroAfterPrologue::", 1
+    )[1].split("\nAraunaMapLab_EventScript_OfferPortoTravel::", 1)[0]
+    if "goto AraunaMapLab_EventScript_OfferPortoTravel" not in after_prologue:
+        fail("Ciro's post-prologue dialogue does not continue to the Porto offer")
+
+    route_gate = village_scripts.split(
+        "AraunaMapLab_EventScript_EnterMistRoute::", 1
+    )[1].split("\nAraunaMapLab_EventScript_WarpToMistRoute::", 1)[0]
+    porto_gate = (
+        "goto_if_ge VAR_ARAUNA_STORY_STAGE, 8, "
+        "AraunaMapLab_EventScript_DepartForPorto"
+    )
+    mist_gate = (
+        "goto_if_ge VAR_ARAUNA_STORY_STAGE, 3, "
+        "AraunaMapLab_EventScript_WarpToMistRoute"
+    )
+    if porto_gate not in route_gate or route_gate.find(porto_gate) > route_gate.find(mist_gate):
+        fail("the east exit does not prioritize Porto after Ciro's battle")
+
+    finish_survey = route_scripts.split(
+        "AraunaMistRoute_EventScript_FinishSurvey::", 1
+    )[1].split("\nAraunaMistRoute_EventScript_CompleteSurvey::", 1)[0]
+    preserve_stage = (
+        "goto_if_ge VAR_ARAUNA_STORY_STAGE, 6, "
+        "AraunaMistRoute_EventScript_ReturnToVillage"
+    )
+    if preserve_stage not in finish_survey:
+        fail("re-entering the mist route can regress the story to stage 6")
+
+    if "warp MAP_ROUTE109, 255, 30, 6" not in village_scripts:
+        fail("Porto travel must land on Route 109's dry north beach")
+    if "warp MAP_ROUTE109, 255, 20, 28" in village_scripts:
+        fail("Porto travel still drops the player into the swimmer zone")
 
     if any(
         event.get("graphics_id") == "OBJ_EVENT_GFX_POOCHYENA"
@@ -319,7 +368,7 @@ def main() -> None:
 
     plan = read("docs/arauna/APPROVED_PROLOGUE_PORTO_RESTRUCTURE.md")
     for decision in (
-        "Visible north exit",
+        "Visible east exit",
         "First Link ruins deferred",
         "local Tide Storyteller",
     ):
@@ -327,7 +376,7 @@ def main() -> None:
             fail(f"approved plan is missing decision: {decision}")
 
     print(
-        "Approved restructure checkpoint validated: north exit, Ciro starter "
+        "Approved restructure checkpoint validated: aligned east exit, Ciro starter "
         "teams, playable night, explore-before-rival flow, four-part Porto "
         "investigation, Dona Celina, Agent confrontation and Tide Vigil"
     )
