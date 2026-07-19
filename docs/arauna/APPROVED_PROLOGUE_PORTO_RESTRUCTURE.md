@@ -30,7 +30,8 @@ tilesets, interiors, and route shells are reassigned or lightly rearranged.
 - [ ] Expanded Vila Amanhecer NPC exploration and capture tutorial.
 - [x] Explore-before-Ciro route pacing and scholarship departure scene.
 - [x] First Link removal from the critical path; its maps remain reserved.
-- [ ] Porto investigation, Agent confrontation, restoration, and Tide Vigil.
+- [x] Porto investigation, Agent confrontation, restoration, and Tide Vigil:
+  four evidence nodes, Dona Celina, prose-only Iaraco trace, and save-safe stages.
 - [ ] First approved in-ROM art batch.
 
 ## Target player loop
@@ -120,11 +121,12 @@ facts:
 
 The House of Tide is visible but its guardian will not begin the Vigil yet.
 
-#### M2: three evidence nodes
+#### M2: four evidence nodes
 
 1. memorial containing the fishers' names;
 2. mine-discharge authorization or sign;
-3. embroidered net containing the unfinished song.
+3. dockworker testimony containing the surviving line of the song;
+4. embroidered net containing the unfinished final verse.
 
 The notebook records the evidence without solving the investigation for the
 player.
@@ -143,7 +145,8 @@ approved line about memory cleaning the dead.
 
 #### M5: Tide Vigil
 
-The named local Storyteller has appeared at least twice before the fight. Her
+Dona Celina, the named local Storyteller, has appeared at least twice before the
+fight. Her
 three-Pokemon team represents current, mangrove endurance, and transmitted
 memory. Initial target levels are 14, 15, and 17, tuned without debug candies.
 
