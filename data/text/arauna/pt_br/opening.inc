@@ -129,7 +129,7 @@ AraunaResearchCenter_Text_AfterChoice::
 
 AraunaResearchCenter_Text_RouteOpen::
 	.string "Sua equipe foi recuperada.\p"
-	.string "A estrada leste está aberta.\p"
+	.string "A estrada norte está aberta.\p"
 	.string "Registre tudo que a neblina\n"
 	.string "tentar esconder.$"
 
@@ -189,71 +189,73 @@ AraunaMapLab_Text_ObjectiveCenter::
 	.string "Volte para a casa de DONA ZILA.\n"
 	.string "Cuide dos tres parceiros.$"
 
-AraunaMapLab_Text_ObjectiveNilo::
+AraunaMapLab_Text_ObjectiveCiro::
 	.string "CIRO espera você na praça.\n"
 	.string "Ele quer testar seu preparo.$"
 
 AraunaMapLab_Text_ObjectiveRoute::
 	.string "A ROTA DA NEBLINA está aberta\n"
-	.string "pela estrada leste.$"
+	.string "pela estrada norte.$"
 
-AraunaMapLab_Text_NiloAfterBattle::
+AraunaMapLab_Text_CiroAfterBattle::
 	.string "A rota está liberada.\p"
 	.string "Não confunda silêncio com\n"
 	.string "segurança.$"
 
 AraunaMapLab_Text_RouteLocked::
+	.string "A estrada norte não é segura.\p"
+	.string "Escolha na casa de DONA ZILA\n"
+	.string "e encontre CIRO na praça.$"
 
-	.string "CIRO bloqueou a saida.\p"
-	.string "Escolha na casa de DONA ZILA e\n"
-	.string "depois encontre-o na praca.$"
-
-AraunaMapLab_Text_ObjectiveNiloReturn::
+AraunaMapLab_Text_ObjectiveCiroReturn::
 	.string "CIRO voltou à praça.\p"
 	.string "Conte a ele o que aconteceu\n"
 	.string "na CÂMARA DO PRIMEIRO ELO.$"
 
 AraunaMapLab_Text_ObjectiveSliceComplete::
-	.string "O primeiro trecho foi concluído.\p"
-	.string "A memória do CAMPEAO abriu\n"
-	.string "uma investigação maior.$"
+	.string "PORTO DAS REDES enviou notícia.\p"
+	.string "A maré perdeu a cor e os\n"
+	.string "pescadores ficaram em silêncio.\p"
+	.string "Fale com CIRO quando estiver\n"
+	.string "pronto para viajar.$"
 
-AraunaMapLab_Text_NiloReturnIntro::
+AraunaMapLab_Text_CiroReturnIntro::
 	.string "CIRO: Eu vi o clarão da vila.\p"
 	.string "Pelas suas marcas, a ruína\n"
 	.string "também viu você.$"
 
-AraunaMapLab_Text_NiloCourageReaction::
+AraunaMapLab_Text_CiroCourageReaction::
 	.string "Você entrou antes do colapso.\p"
 	.string "CORAGEM abriu o caminho, mas\n"
 	.string "parte dele ficou soterrada.\p"
 	.string "Sua escolha deixou uma marca.$"
 
-AraunaMapLab_Text_NiloWisdomReaction::
+AraunaMapLab_Text_CiroWisdomReaction::
 	.string "Você decifrou o mecanismo.\p"
 	.string "SABEDORIA preservou a ruína\n"
 	.string "e as inscrições do caminho.\p"
 	.string "Sua escolha salvou respostas.$"
 
-AraunaMapLab_Text_NiloCompassionReaction::
+AraunaMapLab_Text_CiroCompassionReaction::
 	.string "Você ouviu o POKéMON primeiro.\p"
 	.string "COMPAIXAO revelou uma saída\n"
 	.string "que o agente não conhecia.\p"
 	.string "Sua escolha criou confiança.$"
 
-AraunaMapLab_Text_NiloMemoryConclusion::
+AraunaMapLab_Text_CiroMemoryConclusion::
 	.string "CIRO: Se a memória é real, a\n"
 	.string "versão da Liga está incompleta.\p"
 	.string "O CAMPEAO não desapareceu antes\n"
 	.string "da Noite Sem Estrelas.\p"
 	.string "Ele estava lá. E rompeu o Elo.$"
 
-AraunaMapLab_Text_VerticalSliceComplete::
-	.string "FIM DO VERTICAL SLICE ATUAL.\p"
-	.string "A jornada seguirá após os\n"
-	.string "próximos testes e aprovações.$"
+AraunaMapLab_Text_PortoLead::
+	.string "Uma chamada de PORTO DAS REDES\n"
+	.string "chega para CIRO.\p"
+	.string "A maré perdeu a cor e os\n"
+	.string "pescadores ficaram em silêncio.$"
 
-AraunaMapLab_Text_NiloAfterSlice::
+AraunaMapLab_Text_CiroAfterSlice::
 	.string "Ainda temos só uma memória.\p"
 	.string "O próximo passo é descobrir\n"
 	.string "quem tentou apagá-la.$"
