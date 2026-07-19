@@ -1,11 +1,11 @@
-AraunaPorto_Text_NiloTravelPrompt::
+AraunaPorto_Text_CiroTravelPrompt::
 	.string "The coast road is open.\p"
 	.string "PORTO DAS REDES is using the\n"
 	.string "old southern landing.\p"
 	.string "Travel there now?$"
 
-AraunaPorto_Text_NiloStay::
-	.string "NILO: I will wait here.\n"
+AraunaPorto_Text_CiroStay::
+	.string "CIRO: I will wait here.\n"
 	.string "Tell me when you are ready.$"
 
 AraunaPorto_Text_FisherArrival::
