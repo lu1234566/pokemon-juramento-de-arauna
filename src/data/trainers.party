@@ -16878,8 +16878,8 @@ SPECIES_SEALEO
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_ARAUNA_SCOUT_NILO ===
-Name: NILO
+=== TRAINER_ARAUNA_CIRO_PIMPAU ===
+Name: CIRO
 Class: Pkmn Ranger
 Pic: Pokemon Ranger M
 Gender: Male
@@ -16887,8 +16887,34 @@ Music: Cool
 Double Battle: No
 AI: Check Bad Move
 
-Poochyena
-Level: 4
+Treecko
+Level: 7
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ARAUNA_CIRO_CARAMELO ===
+Name: CIRO
+Class: Pkmn Ranger
+Pic: Pokemon Ranger M
+Gender: Male
+Music: Cool
+Double Battle: No
+AI: Check Bad Move
+
+Torchic
+Level: 7
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ARAUNA_CIRO_QUERO ===
+Name: CIRO
+Class: Pkmn Ranger
+Pic: Pokemon Ranger M
+Gender: Male
+Music: Cool
+Double Battle: No
+AI: Check Bad Move
+
+Mudkip
+Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ARAUNA_TECH_AGENT ===
@@ -16899,10 +16925,6 @@ Gender: Male
 Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
-
-Poochyena
-Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Voltorb
 Level: 6
