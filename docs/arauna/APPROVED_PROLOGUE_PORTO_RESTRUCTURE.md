@@ -9,8 +9,8 @@ exist.
 
 ## Approved decisions
 
-1. **Visible north exit** — Vila Amanhecer uses the opening north of the
-   Research Center. The hidden side warp behind Ciro is removed.
+1. **Visible east exit** — Vila Amanhecer uses the existing walkable opening
+   at the east edge of its reused layout. The misplaced north warp is removed.
 2. **First Link ruins deferred** — the First Link Ruin, Champion memory, and
    generic Bond trial leave the main vertical-slice route. Their maps are kept
    for a later arc, with the Ruins of the Missions as the preferred reuse.
@@ -23,7 +23,7 @@ tilesets, interiors, and route shells are reassigned or lightly rearranged.
 
 ## Checkpoint status
 
-- [x] Foundation: visible north exit, Ciro identity and conditional starter
+- [x] Foundation: visible east exit, Ciro identity and conditional starter
   parties, Poochyena placeholder removal, and Porto handoff.
 - [x] Playable house night: the player meets Zila, Anahi, and all three
   rescued partners before the gray-figure watch and dawn transition.
@@ -79,7 +79,7 @@ Before the road opens, optional NPCs establish:
 - Porto das Redes as the next destination;
 - Dona Zila's role as a teller, not the guardian of every House.
 
-The visible northern opening is the only route exit.
+The visible eastern opening is the only route exit.
 
 #### P3: first field route
 
@@ -207,7 +207,7 @@ a Poochyena overworld placeholder.
 
 ## Delivery gates
 
-1. Foundation correction: north exit, Ciro identity/party, placeholder removal,
+1. Foundation correction: east exit, Ciro identity/party, placeholder removal,
    player-facing development text removal.
 2. Prologue scene script and state graph.
 3. Prologue implementation and isolated playtest.
