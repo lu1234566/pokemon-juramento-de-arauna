@@ -40,21 +40,21 @@ AraunaMapLab_Text_BagFull::
 	.string "Your BAG is full.\n"
 	.string "Make room and try again.$"
 
-AraunaMapLab_Text_NiloIntro::
+AraunaMapLab_Text_CiroIntro::
 	.string "The mist reshapes every trail.\n"
 	.string "Show me you can read the land!$"
 
-AraunaMapLab_Text_NiloDefeat::
+AraunaMapLab_Text_CiroDefeat::
 	.string "You read the land...\n"
 	.string "I only read your footsteps.$"
 
-AraunaMapLab_Text_NiloPostBattle::
+AraunaMapLab_Text_CiroPostBattle::
 	.string "Maps reveal paths.\p"
 	.string "The best ones also hide\n"
 	.string "questions.$"
 
 AraunaMapLab_Text_NeedPartner::
 	.string "You need a POKéMON before\n"
-	.string "you can train with NILO.\p"
+	.string "you can train with CIRO.\p"
 	.string "Talk to the researcher near\n"
 	.string "the entrance point.$"
