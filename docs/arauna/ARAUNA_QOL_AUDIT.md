@@ -16,9 +16,14 @@ Arauna introduces convenience in stages so testing can still reveal real progres
 | Alphabetical move-relearner lists | Active | Navigation only |
 | Pre-evolution moves in the relearner | Active | Evolution cannot permanently delete family options |
 | Rename from Summary | Active | Cosmetic convenience |
+| Raise selected Pokémon to the next boss cap | Active | Test shortcut; never lowers a level or exceeds the current target |
 
 Reusable TMs do not change which Fakemon can learn a move. Arauna's 386-species compatibility overlay remains
 the authority, and field HMs still obey story progression.
+
+The LEVEL CAP party action follows mandatory story progress rather than badge count alone: Ciro Lv. 7,
+Consortium Agent Lv. 12, Dona Celina Lv. 17 and the Hermit Lv. 27. It disappears after the Uivo Trial until
+another mandatory boss is implemented. Rare Candies also stop at the same target.
 
 ## Vertical-slice package — after the second badge is playable
 
@@ -27,7 +32,6 @@ The next QoL pass should be tested together with the opening campaign rather tha
 - optional party-wide EXP Share with a visible toggle;
 - reliable DexNav or habitat search, only after the regional-Dex crash path is fully retested;
 - clearly placed Move Reminder, nature and ability services;
-- explicit level-target messages at story milestones;
 - healing immediately before long mandatory gauntlets;
 - early access to common evolution items without giving late combat items early.
 

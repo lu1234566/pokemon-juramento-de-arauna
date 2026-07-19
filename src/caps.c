@@ -5,37 +5,25 @@
 #include "pokemon.h"
 
 
+bool32 IsAraunaNextBossLevelCapAvailable(void)
+{
+    return !FlagGet(FLAG_ARAUNA_BADGE_UIVO);
+}
+
 u32 GetCurrentLevelCap(void)
 {
-    static const u32 sLevelCapFlagMap[][2] =
-    {
-        {FLAG_BADGE01_GET, 15},
-        {FLAG_BADGE02_GET, 19},
-        {FLAG_BADGE03_GET, 24},
-        {FLAG_BADGE04_GET, 29},
-        {FLAG_BADGE05_GET, 31},
-        {FLAG_BADGE06_GET, 33},
-        {FLAG_BADGE07_GET, 42},
-        {FLAG_BADGE08_GET, 46},
-        {FLAG_IS_CHAMPION, 58},
-    };
-
-    u32 i;
-
-    if (B_LEVEL_CAP_TYPE == LEVEL_CAP_FLAG_LIST)
-    {
-        for (i = 0; i < ARRAY_COUNT(sLevelCapFlagMap); i++)
-        {
-            if (!FlagGet(sLevelCapFlagMap[i][0]))
-                return sLevelCapFlagMap[i][1];
-        }
-    }
-    else if (B_LEVEL_CAP_TYPE == LEVEL_CAP_VARIABLE)
-    {
-        return VarGet(B_LEVEL_CAP_VARIABLE);
-    }
-
-    return MAX_LEVEL;
+    // Each target is the highest level used by the next mandatory story boss.
+    // Once the current vertical slice ends, do not invent a cap for an
+    // unimplemented boss.
+    if (!IsAraunaNextBossLevelCapAvailable())
+        return MAX_LEVEL;
+    if (FlagGet(FLAG_ARAUNA_BADGE_MARE))
+        return 27; // Hermit's Uivo Trial
+    if (FlagGet(FLAG_ARAUNA_PORTO_AGENT_DEFEATED))
+        return 17; // Dona Celina's Mare Trial
+    if (VarGet(VAR_ARAUNA_STORY_STAGE) >= 8)
+        return 12; // Consortium Agent
+    return 7; // Ciro
 }
 
 u32 GetSoftLevelCapExpValue(u32 level, u32 expValue)

@@ -47,9 +47,14 @@ Arauna introduces convenience in stages so testing can still reveal real progres
 | Alphabetical move-relearner lists | Active | Navigation only |
 | Pre-evolution moves in the relearner | Active | Evolution cannot permanently delete family options |
 | Rename from Summary | Active | Cosmetic convenience |
+| Raise selected Pokémon to the next boss cap | Active | Test shortcut; never lowers a level or exceeds the current target |
 
 Reusable TMs do not change which Fakemon can learn a move. Arauna's 386-species compatibility overlay remains
 the authority, and field HMs still obey story progression.
+
+The LEVEL CAP party action follows mandatory story progress rather than badge count alone: Ciro Lv. 7,
+Consortium Agent Lv. 12, Dona Celina Lv. 17 and the Hermit Lv. 27. It disappears after the Uivo Trial until
+another mandatory boss is implemented. Rare Candies also stop at the same target.
 
 ## Vertical-slice package — after the second badge is playable
 
@@ -58,7 +63,6 @@ The next QoL pass should be tested together with the opening campaign rather tha
 - optional party-wide EXP Share with a visible toggle;
 - reliable DexNav or habitat search, only after the regional-Dex crash path is fully retested;
 - clearly placed Move Reminder, nature and ability services;
-- explicit level-target messages at story milestones;
 - healing immediately before long mandatory gauntlets;
 - early access to common evolution items without giving late combat items early.
 
@@ -95,6 +99,7 @@ def main() -> int:
         ("include/config/summary_screen.h", "P_SUMMARY_SCREEN_RENAME"): "TRUE",
         ("include/config/battle.h", "B_FAST_HP_DRAIN"): "TRUE",
         ("include/config/battle.h", "B_FAST_EXP_GROW"): "TRUE",
+        ("include/config/caps.h", "B_RARE_CANDY_CAP"): "TRUE",
     }
     for (path, name), expected in active.items():
         value = macro(path, name)
@@ -118,6 +123,26 @@ def main() -> int:
     item_menu = (ROOT / "src/item_menu.c").read_text(encoding="utf-8")
     require("ItemMenu_SortByName" in item_menu and "ItemMenu_SortByType" in item_menu,
             "bag sorting implementation is missing")
+    caps = (ROOT / "src/caps.c").read_text(encoding="utf-8")
+    party_menu = (ROOT / "src/party_menu.c").read_text(encoding="utf-8")
+    party_menu_data = (ROOT / "src/data/party_menu.h").read_text(encoding="utf-8")
+    for token in (
+        "IsAraunaNextBossLevelCapAvailable",
+        "FLAG_ARAUNA_BADGE_UIVO",
+        "FLAG_ARAUNA_BADGE_MARE",
+        "FLAG_ARAUNA_PORTO_AGENT_DEFEATED",
+        "VAR_ARAUNA_STORY_STAGE",
+    ):
+        require(token in caps, f"story-based level cap is missing {token}")
+    for token in (
+        "MENU_LEVEL_CAP",
+        "CursorCb_LevelCap",
+        "ExecuteTableBasedItemEffect(mon, ITEM_RARE_CANDY",
+        "Task_TryLearnNewMoves",
+        "PartyMenuTryEvolution",
+    ):
+        require(token in party_menu or token in party_menu_data,
+                f"LEVEL CAP party action is missing {token}")
 
     report = render()
     if args.check:
@@ -126,7 +151,7 @@ def main() -> int:
                 "QoL audit report is stale; regenerate it")
     else:
         REPORT.write_text(report, encoding="utf-8")
-    print("Arauna QoL audit passed: 11 safe configs active, 9 progression/save-sensitive configs deferred")
+    print("Arauna QoL audit passed: 12 safe configs active, 9 progression/save-sensitive configs deferred")
     return 0
 
 

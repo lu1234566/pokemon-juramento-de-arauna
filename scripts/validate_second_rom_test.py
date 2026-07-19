@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import re
 from pathlib import Path
 
 
@@ -33,6 +34,10 @@ def main() -> None:
     text = Path("data/text/arauna/en/second_rom_test.inc").read_text(encoding="utf-8")
     checklist = Path("docs/arauna/SECOND_ROM_TEST_CHECKLIST.md").read_text(encoding="utf-8")
     dexnav = Path("include/config/dexnav.h").read_text(encoding="utf-8")
+    caps = Path("src/caps.c").read_text(encoding="utf-8")
+    cap_config = Path("include/config/caps.h").read_text(encoding="utf-8")
+    party_menu = Path("src/party_menu.c").read_text(encoding="utf-8")
+    party_menu_data = Path("src/data/party_menu.h").read_text(encoding="utf-8")
 
     require(makefile, "ARAUNA_LANGUAGE ?= ENGLISH", "English-only build")
     require(makefile, "ARAUNA_LANGUAGE_SUFFIX := en", "English ROM suffix")
@@ -72,13 +77,67 @@ def main() -> None:
         "TRAINER_ARAUNA_MARE_TRIAL": ("Name: CELINA", "Level: 17"),
         "TRAINER_ARAUNA_UIVO_TRIAL": ("Name: HERMIT", "Level: 27"),
     }
+    trainer_blocks: dict[str, str] = {}
     for trainer, tokens in required_trainers.items():
         marker = f"=== {trainer} ==="
         if marker not in trainers:
             raise ValueError(f"scripted Arauna trainer has no party data: {trainer}")
         trainer_block = trainers.split(marker, 1)[1].split("\n=== ", 1)[0]
+        trainer_blocks[trainer] = trainer_block
         for token in tokens:
             require(trainer_block, token, f"{trainer} party data")
+
+    boss_groups = (
+        (("TRAINER_ARAUNA_CIRO_PIMPAU", "TRAINER_ARAUNA_CIRO_CARAMELO", "TRAINER_ARAUNA_CIRO_QUERO"), 7),
+        (("TRAINER_ARAUNA_TECH_AGENT",), 12),
+        (("TRAINER_ARAUNA_MARE_TRIAL",), 17),
+        (("TRAINER_ARAUNA_UIVO_TRIAL",), 27),
+    )
+    for trainers_in_group, expected_cap in boss_groups:
+        levels = [
+            int(level)
+            for trainer in trainers_in_group
+            for level in re.findall(r"Level:\s*(\d+)", trainer_blocks[trainer])
+        ]
+        if not levels or max(levels) != expected_cap:
+            raise ValueError(
+                f"next-boss cap mismatch for {trainers_in_group}: "
+                f"expected {expected_cap}, found {max(levels) if levels else 'no levels'}"
+            )
+        require(caps, f"return {expected_cap};", f"story cap for {trainers_in_group[0]}")
+
+    for token in (
+        "bool32 IsAraunaNextBossLevelCapAvailable(void)",
+        "return !FlagGet(FLAG_ARAUNA_BADGE_UIVO);",
+        "if (FlagGet(FLAG_ARAUNA_BADGE_MARE))",
+        "if (FlagGet(FLAG_ARAUNA_PORTO_AGENT_DEFEATED))",
+        "if (VarGet(VAR_ARAUNA_STORY_STAGE) >= 8)",
+        "return MAX_LEVEL;",
+    ):
+        require(caps, token, "mandatory-boss level-cap routing")
+    level_cap_section = caps.split("u32 GetCurrentLevelCap(void)", 1)[1].split(
+        "u32 GetSoftLevelCapExpValue", 1
+    )[0]
+    if "FLAG_BADGE01_GET" in level_cap_section:
+        raise ValueError("vanilla Hoenn badges still control Arauna's level cap")
+    require(cap_config, "#define B_RARE_CANDY_CAP                TRUE", "Rare Candy level cap")
+    for token in (
+        "MENU_LEVEL_CAP",
+        "u8 actions[9];",
+        "CursorCb_LevelCap",
+        "AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_LEVEL_CAP)",
+        "while (GetMonData(mon, MON_DATA_LEVEL) < levelCap)",
+        "ExecuteTableBasedItemEffect(mon, ITEM_RARE_CANDY",
+        "Task_DisplayLevelUpStatsPg1",
+        "Task_TryLearnNewMoves",
+        "sLevelCapActionActive",
+    ):
+        require(party_menu, token, "LEVEL CAP party-menu action")
+    require(
+        party_menu_data,
+        '[MENU_LEVEL_CAP]       = {COMPOUND_STRING("LEVEL CAP"),',
+        "LEVEL CAP menu label",
+    )
 
     require(flags, "#define FLAG_ARAUNA_SECOND_TEST_CANDIES_RECEIVED     0x34", "one-time flag")
     require(flags, "FLAG_ARAUNA_BADGE_MARE", "Mare Badge route")
@@ -143,12 +202,18 @@ def main() -> None:
         "new save",
         "Vila Amanhecer",
         "Dona Zila",
+        "LEVEL CAP",
+        "Ciro — Lv. 7",
+        "Consortium Agent — Lv. 12",
+        "Dona Celina — Lv. 17",
+        "Hermit — Lv. 27",
     ):
         require(checklist, token, "manual test checklist")
 
     print(
         "Second ROM test validated: English build, reachable Vila Amanhecer "
-        "prologue, one-time 999 Rare Candies and route through Uivo Badge"
+        "prologue, one-time 999 Rare Candies, mandatory-boss LEVEL CAP QoL "
+        "and route through Uivo Badge"
     )
 
 

@@ -37,6 +37,8 @@ custom maps.
 - [ ] Immediately after confirmation, verify the Bag contains exactly **999 Rare
       Candies**.
 - [ ] Talk to Prof. Anahi repeatedly and confirm the quantity never exceeds 999.
+- [ ] Open POKéMON, select the starter and confirm the English **LEVEL CAP**
+      action is present.
 - [ ] Verify Pokedex access is enabled and the starter is recorded in the correct
       Arauna slot.
 - [ ] Exit the house and confirm the popup reads **Vila Amanhecer**, never
@@ -107,7 +109,38 @@ This edge case is optional unless a debug save is available.
 - [ ] Backtrack to Porto and the Research Center to check that earlier NPCs and
       map gates remain in their completed states.
 
-## 5. Rare Candy progression checks
+## 5. Mandatory-boss LEVEL CAP QoL
+
+The current target must always equal the highest-level Pokémon owned by the next
+mandatory story boss:
+
+| Story position | Next boss | Target |
+|---|---|---:|
+| Before First Link | Ciro — Lv. 7 | 7 |
+| After Ciro | Consortium Agent — Lv. 12 | 12 |
+| After the Agent | Dona Celina — Lv. 17 | 17 |
+| After the Maré Badge | Hermit — Lv. 27 | 27 |
+
+- [ ] Before fighting Ciro, select one party member and use **LEVEL CAP**; confirm
+      only that Pokémon rises to Lv. 7.
+- [ ] Confirm the level-up stat pages appear and every move learned across the
+      skipped levels is offered in order.
+- [ ] Cross an evolution threshold with **LEVEL CAP** and confirm the normal
+      evolution scene and Pokédex registration occur.
+- [ ] Select a Pokémon already at or above the target and confirm its level and
+      EXP are not reduced or changed.
+- [ ] Use Rare Candies at the target and confirm they cannot raise a Pokémon
+      above the current cap.
+- [ ] Defeat Ciro and confirm the target changes to Lv. 12 without requiring a
+      badge or save reload.
+- [ ] Defeat the Consortium Agent and confirm the target changes to Lv. 17.
+- [ ] Win the Maré Badge and confirm the target changes to Lv. 27.
+- [ ] Save and reload at each milestone; confirm the target is reconstructed
+      from story state.
+- [ ] Win the Uivo Badge and confirm **LEVEL CAP** is no longer offered because
+      the next mandatory boss is not implemented in this vertical slice.
+
+## 6. Rare Candy progression checks
 
 Use the candies as test instrumentation, not as the expected difficulty curve.
 
@@ -124,18 +157,20 @@ Use the candies as test instrumentation, not as the expected difficulty curve.
 - [ ] Do not use the candy-assisted results as balance approval; replay major
       fights at natural levels before reporting difficulty.
 
-## 6. QoL regression checks
+## 7. QoL regression checks
 
 - [ ] Verify indoor running, fast HP/EXP bars, Bag organization and automatic
       Repel renewal.
 - [ ] Verify reusable TMs, IV/EV grades, alphabetical Move Reminder entries,
       pre-evolution moves and summary-screen renaming.
+- [ ] Confirm **LEVEL CAP** never affects unselected party members and never
+      consumes a Rare Candy.
 - [ ] Confirm global EXP Share remains unavailable.
 - [ ] Confirm DexNav remains unavailable.
 - [ ] Confirm nature/ability services, portable PC and fast travel remain
       unavailable in this build.
 
-## 7. Report template
+## 8. Report template
 
 Copy this block into the test report for every issue:
 

@@ -110,6 +110,7 @@ enum {
     MENU_CATALOG_MOWER,
     MENU_CHANGE_FORM,
     MENU_CHANGE_ABILITY,
+    MENU_LEVEL_CAP,
     MENU_FIELD_MOVES
 };
 
@@ -185,7 +186,7 @@ struct PartyMenuInternal
     u32 spriteIdCancelPokeball:7;
     u32 messageId:14;
     u8 windowId[3];
-    u8 actions[8];
+    u8 actions[9];
     u8 numActions;
     // In vanilla Emerald, only the first 0xB0 hwords (0x160 bytes) are actually used.
     // However, a full 0x100 hwords (0x200 bytes) are allocated.
@@ -222,6 +223,7 @@ static EWRAM_DATA u16 sPartyMenuItemId = 0;
 EWRAM_DATA u8 gBattlePartyCurrentOrder[PARTY_SIZE / 2] = {0}; // bits 0-3 are the current pos of Slot 1, 4-7 are Slot 2, and so on
 static EWRAM_DATA u8 sInitialLevel = 0;
 static EWRAM_DATA u8 sFinalLevel = 0;
+static EWRAM_DATA bool8 sLevelCapActionActive = FALSE;
 
 // IWRAM common
 COMMON_DATA void (*gItemUseCB)(u8, TaskFunc) = NULL;
@@ -455,6 +457,7 @@ static void ShiftMoveSlot(struct BoxPokemon *, u8, u8);
 static void BlitBitmapToPartyWindow_LeftColumn(u8, u8, u8, u8, u8, bool8);
 static void BlitBitmapToPartyWindow_RightColumn(u8, u8, u8, u8, u8, bool8);
 static void CursorCb_Summary(u8);
+static void CursorCb_LevelCap(u8);
 static void CursorCb_Switch(u8);
 static void CursorCb_Cancel1(u8);
 static void CursorCb_Item(u8);
@@ -510,6 +513,8 @@ static const u8 sText_doneText[] = _("{STR_VAR_1}'s ability became\n{STR_VAR_2}!
 static const u8 sText_BasePointsResetToZero[] = _("{STR_VAR_1}'s base points\nwere all reset to zero!{PAUSE_UNTIL_PRESS}");
 static const u8 sText_CannotSendMonToBoxHM[] = _("Cannot send that mon to the box,\nbecause it knows a HM move.{PAUSE_UNTIL_PRESS}");
 static const u8 sText_CannotSendMonToBoxPartner[] = _("Cannot send a mon that doesn't\nbelong to you to the box.{PAUSE_UNTIL_PRESS}");
+static const u8 sText_AlreadyAtLevelCap[] = _("{STR_VAR_1} is already at\nLv.{STR_VAR_2}, the current cap.{PAUSE_UNTIL_PRESS}");
+static const u8 sText_NoNextBossLevelCap[] = _("No next mandatory boss has been\ndefined yet.{PAUSE_UNTIL_PRESS}");
 
 // static const data
 #include "data/party_menu.h"
@@ -2956,6 +2961,8 @@ static void SetPartyMonFieldSelectionActions(struct Pokemon *mons, u8 slotId)
 
     sPartyMenuInternal->numActions = 0;
     AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_SUMMARY);
+    if (!InBattlePike() && !MenuHelpers_IsLinkActive() && !InUnionRoom() && IsAraunaNextBossLevelCapAvailable())
+        AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_LEVEL_CAP);
 
     // Add field moves to action list
     for (i = 0; i < MAX_MON_MOVES; i++)
@@ -3128,6 +3135,73 @@ static void CursorCb_Summary(u8 taskId)
     PlaySE(SE_SELECT);
     sPartyMenuInternal->exitCallback = CB2_ShowPokemonSummaryScreen;
     Task_ClosePartyMenu(taskId);
+}
+
+static void CursorCb_LevelCap(u8 taskId)
+{
+    struct Pokemon *mon = &gParties[B_TRAINER_PLAYER][gPartyMenu.slotId];
+    struct PartyMenuInternal *ptr = sPartyMenuInternal;
+    u8 levelCap = GetCurrentLevelCap();
+    bool8 cannotUseEffect = FALSE;
+
+    PlaySE(SE_SELECT);
+    PartyMenuRemoveWindow(&ptr->windowId[0]);
+    PartyMenuRemoveWindow(&ptr->windowId[1]);
+    sLevelCapActionActive = FALSE;
+    GetMonNickname(mon, gStringVar1);
+
+    if (!IsAraunaNextBossLevelCapAvailable())
+    {
+        sInitialLevel = 0;
+        sFinalLevel = 0;
+        DisplayPartyMenuMessage(sText_NoNextBossLevelCap, TRUE);
+        ScheduleBgCopyTilemapToVram(2);
+        gTasks[taskId].func = Task_ReturnToChooseMonAfterText;
+        return;
+    }
+
+    ConvertIntToDecimalStringN(gStringVar2, levelCap, STR_CONV_MODE_LEFT_ALIGN, 3);
+    sInitialLevel = GetMonData(mon, MON_DATA_LEVEL);
+    if (sInitialLevel >= levelCap)
+    {
+        sInitialLevel = 0;
+        sFinalLevel = 0;
+        StringExpandPlaceholders(gStringVar4, sText_AlreadyAtLevelCap);
+        DisplayPartyMenuMessage(gStringVar4, TRUE);
+        ScheduleBgCopyTilemapToVram(2);
+        gTasks[taskId].func = Task_ReturnToChooseMonAfterText;
+        return;
+    }
+
+    BufferMonStatsToTaskData(mon, ptr->data);
+    while (GetMonData(mon, MON_DATA_LEVEL) < levelCap)
+    {
+        cannotUseEffect = ExecuteTableBasedItemEffect(mon, ITEM_RARE_CANDY, gPartyMenu.slotId, 0);
+        if (cannotUseEffect)
+            break;
+    }
+    BufferMonStatsToTaskData(mon, &ptr->data[NUM_STATS]);
+    sFinalLevel = GetMonData(mon, MON_DATA_LEVEL);
+
+    if (sFinalLevel <= sInitialLevel)
+    {
+        sInitialLevel = 0;
+        sFinalLevel = 0;
+        DisplayPartyMenuMessage(gText_WontHaveEffect, TRUE);
+        ScheduleBgCopyTilemapToVram(2);
+        gTasks[taskId].func = Task_ReturnToChooseMonAfterText;
+        return;
+    }
+
+    sLevelCapActionActive = TRUE;
+    gPartyMenuUseExitCallback = TRUE;
+    UpdateMonDisplayInfoAfterRareCandy(gPartyMenu.slotId, mon);
+    ConvertIntToDecimalStringN(gStringVar2, sFinalLevel, STR_CONV_MODE_LEFT_ALIGN, 3);
+    StringExpandPlaceholders(gStringVar4, gText_PkmnElevatedToLvVar2);
+    PlayFanfareByFanfareNum(FANFARE_LEVEL_UP);
+    DisplayPartyMenuMessage(gStringVar4, TRUE);
+    ScheduleBgCopyTilemapToVram(2);
+    gTasks[taskId].func = Task_DisplayLevelUpStatsPg1;
 }
 
 static void CB2_ShowPokemonSummaryScreen(void)
@@ -6033,10 +6107,12 @@ static void PartyMenuTryEvolution(u8 taskId)
     struct Pokemon *mon = &gParties[B_TRAINER_PLAYER][gPartyMenu.slotId];
     enum Species targetSpecies = SPECIES_NONE;
     bool32 canStopEvo = TRUE;
+    bool8 usedLevelCapAction = sLevelCapActionActive;
 
     // Resets values to 0 so other means of teaching moves doesn't overwrite levels
     sInitialLevel = 0;
     sFinalLevel = 0;
+    sLevelCapActionActive = FALSE;
 
     targetSpecies = GetEvolutionTargetSpecies(mon, EVO_MODE_NORMAL, ITEM_NONE, NULL, &canStopEvo, CHECK_EVO);
 
@@ -6044,7 +6120,9 @@ static void PartyMenuTryEvolution(u8 taskId)
     {
         GetEvolutionTargetSpecies(mon, EVO_MODE_NORMAL, ITEM_NONE, NULL, &canStopEvo, DO_EVO);
         FreePartyPointers();
-        if (GetItemFieldFunc(gSpecialVar_ItemId) == ItemUseOutOfBattle_RareCandy && gPartyMenu.menuType == PARTY_MENU_TYPE_FIELD && CheckBagHasItem(gSpecialVar_ItemId, 1))
+        if (usedLevelCapAction)
+            gCB2_AfterEvolution = gPartyMenu.exitCallback;
+        else if (GetItemFieldFunc(gSpecialVar_ItemId) == ItemUseOutOfBattle_RareCandy && gPartyMenu.menuType == PARTY_MENU_TYPE_FIELD && CheckBagHasItem(gSpecialVar_ItemId, 1))
             gCB2_AfterEvolution = CB2_ReturnToPartyMenuUsingRareCandy;
         else
             gCB2_AfterEvolution = gPartyMenu.exitCallback;
@@ -6053,7 +6131,7 @@ static void PartyMenuTryEvolution(u8 taskId)
     }
     else
     {
-        if (gPartyMenu.menuType == PARTY_MENU_TYPE_FIELD && CheckBagHasItem(gSpecialVar_ItemId, 1))
+        if (usedLevelCapAction || (gPartyMenu.menuType == PARTY_MENU_TYPE_FIELD && CheckBagHasItem(gSpecialVar_ItemId, 1)))
             gTasks[taskId].func = Task_ReturnToChooseMonAfterText;
         else
             gTasks[taskId].func = Task_ClosePartyMenuAfterText;
