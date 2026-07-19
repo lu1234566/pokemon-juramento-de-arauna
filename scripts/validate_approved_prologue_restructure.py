@@ -28,12 +28,18 @@ def trainer_block(source: str, trainer: str) -> str:
 def main() -> None:
     village = json.loads(read("data/maps/AraunaMapLab/map.json"))
     route = json.loads(read("data/maps/AraunaMistRoute/map.json"))
+    porto_route = json.loads(read("data/maps/Route109/map.json"))
+    porto_city = json.loads(read("data/maps/SlateportCity/map.json"))
     house_scripts = read("data/maps/AraunaPlayerHouse/scripts.inc")
     village_scripts = read("data/maps/AraunaMapLab/scripts.inc")
     route_scripts = read("data/maps/AraunaMistRoute/scripts.inc")
+    porto_route_scripts = read("data/maps/Route109/scripts.inc")
+    porto_city_scripts = read("data/maps/SlateportCity/scripts.inc")
     trainers = read("src/data/trainers.party")
     opponents = read("include/constants/opponents.h")
     flags = read("include/constants/flags.h")
+    vars_source = read("include/constants/vars.h")
+    porto_text = read("data/text/arauna/en/porto_das_redes.inc")
     english = "\n".join(
         read(path)
         for path in (
@@ -210,6 +216,107 @@ def main() -> None:
         if token not in house_scripts:
             fail(f"playable night transition is missing {token}")
 
+    iaraco_objects = [
+        event
+        for event in porto_route["object_events"]
+        if "Iaraco" in event.get("script", "")
+        or (
+            "ZIGZAGOON" in event.get("graphics_id", "")
+            and "AraunaPorto" in event.get("script", "")
+        )
+    ]
+    if iaraco_objects:
+        fail("Route 109 still uses an overworld placeholder for Iaraco")
+
+    iaraco_traces = {
+        (event["x"], event["y"])
+        for event in porto_route["coord_events"]
+        if event["script"] == "AraunaPorto_EventScript_IaracoTrace"
+    }
+    if iaraco_traces != {(32, 7), (33, 7)}:
+        fail("the prose-only Iaraco trace must cover both Route 109 lanes")
+
+    porto_objects = {
+        event.get("script"): event
+        for event in porto_city["object_events"]
+        if event.get("script", "").startswith("AraunaPorto_EventScript_")
+    }
+    for script in (
+        "AraunaPorto_EventScript_DonaCelina",
+        "AraunaPorto_EventScript_Dockworker",
+        "AraunaPorto_EventScript_ConsortiumAgent",
+    ):
+        if script not in porto_objects:
+            fail(f"Porto exploration is missing its reassigned NPC: {script}")
+    if porto_objects["AraunaPorto_EventScript_ConsortiumAgent"]["flag"] != "0":
+        fail("the Consortium Agent is still hidden by a vanilla story flag")
+
+    evidence_flags = (
+        "FLAG_ARAUNA_PORTO_MEMORIAL_HEARD",
+        "FLAG_ARAUNA_PORTO_PERMIT_FOUND",
+        "FLAG_ARAUNA_PORTO_DOCK_SONG_HEARD",
+        "FLAG_ARAUNA_PORTO_NET_FOUND",
+    )
+    investigation_requirements = (*evidence_flags, "FLAG_ARAUNA_PORTO_IARACO_SEEN")
+    porto_flow = "\n".join((porto_route_scripts, porto_city_scripts))
+    for token in (*investigation_requirements, "FLAG_ARAUNA_PORTO_AGENT_DEFEATED"):
+        if token not in flags or token not in porto_flow:
+            fail(f"Porto investigation is missing save-safe state: {token}")
+
+    evidence_check = porto_city_scripts.split(
+        "AraunaPorto_EventScript_CheckEvidence::", 1
+    )[1].split("AraunaPorto_EventScript_DonaCelinaAwardBadge::", 1)[0]
+    for token in investigation_requirements:
+        if f"goto_if_unset {token}" not in evidence_check:
+            fail(f"the Agent confrontation does not require {token}")
+
+    agent_scene = porto_city_scripts.split(
+        "AraunaPorto_EventScript_ConsortiumAgent::", 1
+    )[1].split("AraunaPorto_EventScript_ConsortiumAgentDenial::", 1)[0]
+    heal_at = agent_scene.find("special HealPlayerParty")
+    battle_at = agent_scene.find("trainerbattle_single TRAINER_ARAUNA_TECH_AGENT")
+    if heal_at < 0 or battle_at < 0 or heal_at > battle_at:
+        fail("the investigation must heal immediately before the Agent battle")
+
+    custom_route = porto_route_scripts.split(
+        "@ Arauna reuses Route 109", 1
+    )[1]
+    if "showmonpic" in custom_route or "LOCALID_ARAUNA_PORTO_IARACO" in custom_route:
+        fail("unapproved Iaraco artwork is still forced into the restoration")
+    if "setflag FLAG_ARAUNA_PORTO_IARACO_RESTORED" not in custom_route:
+        fail("Iaraco is not marked restored at the field restoration scene")
+
+    porto_identity = "\n".join((porto_city_scripts, porto_text))
+    for stale in ("DonaZila", "DONA ZILA"):
+        if stale in porto_identity:
+            fail(f"Dona Zila still replaces Porto's local guardian: {stale}")
+    for token in ("DonaCelina", "DONA CELINA", "I clean the water.",
+                  "Your dead are cleaned by memory."):
+        if token not in porto_identity:
+            fail(f"Dona Celina or the approved Testimony is missing: {token}")
+
+    celina = trainer_block(trainers, "TRAINER_ARAUNA_MARE_TRIAL")
+    for token in ("Name: CELINA", "Level: 14", "Level: 15", "Level: 17"):
+        if token not in celina:
+            fail(f"Dona Celina's Tide Vigil is missing {token}")
+    agent = trainer_block(trainers, "TRAINER_ARAUNA_TECH_AGENT")
+    if "Level: 12" not in agent:
+        fail("the Porto Agent still uses the prologue test level")
+
+    arc_state = "\n".join((village_scripts, porto_flow, vars_source))
+    for stage in (10, 11, 12, 13, 14, 15):
+        if str(stage) not in arc_state:
+            fail(f"Porto's save-safe arc graph is missing stage {stage}")
+
+    for raw in porto_text.splitlines():
+        if '.string "' not in raw:
+            continue
+        visible = raw.split('.string "', 1)[1].rsplit('"', 1)[0]
+        for marker in ("\\n", "\\p", "$"):
+            visible = visible.replace(marker, "")
+        if len(visible) > 32:
+            fail(f"Porto GBA text line exceeds 32 characters: {visible}")
+
     plan = read("docs/arauna/APPROVED_PROLOGUE_PORTO_RESTRUCTURE.md")
     for decision in (
         "Visible north exit",
@@ -221,7 +328,8 @@ def main() -> None:
 
     print(
         "Approved restructure checkpoint validated: north exit, Ciro starter "
-        "teams, playable night, explore-before-rival flow and Porto handoff"
+        "teams, playable night, explore-before-rival flow, four-part Porto "
+        "investigation, Dona Celina, Agent confrontation and Tide Vigil"
     )
 
 
