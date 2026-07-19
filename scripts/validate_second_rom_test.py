@@ -131,6 +131,7 @@ def main() -> None:
         "Task_DisplayLevelUpStatsPg1",
         "Task_TryLearnNewMoves",
         "sLevelCapActionActive",
+        "if (sLevelCapActionActive)\n        InitPartyMenu(PARTY_MENU_TYPE_FIELD, PARTY_LAYOUT_SINGLE, PARTY_ACTION_CHOOSE_MON",
     ):
         require(party_menu, token, "LEVEL CAP party-menu action")
     require(
