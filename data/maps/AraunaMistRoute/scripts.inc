@@ -67,7 +67,7 @@ AraunaMistRoute_EventScript_AffectedPokemon::
 	msgbox AraunaMistRoute_Text_AffectedPokemon, MSGBOX_DEFAULT
 	setflag FLAG_ARAUNA_MIST_ROUTE_AFFECTED_MON_CLEARED
 	setvar VAR_ARAUNA_STORY_STAGE, 5
-	msgbox AraunaMistRoute_Text_RuinOpened, MSGBOX_DEFAULT
+	msgbox AraunaMistRoute_Text_SurveyReady, MSGBOX_DEFAULT
 	releaseall
 	end
 
@@ -79,21 +79,23 @@ AraunaMistRoute_EventScript_ReturnToVillage::
 	waitstate
 	end
 
-AraunaMistRoute_EventScript_EnterRuin::
-	goto_if_ge VAR_ARAUNA_STORY_STAGE, 5, AraunaMistRoute_EventScript_WarpToRuin
+AraunaMistRoute_EventScript_FinishSurvey::
+	goto_if_ge VAR_ARAUNA_STORY_STAGE, 5, AraunaMistRoute_EventScript_CompleteSurvey
 	lockall
-	msgbox AraunaMistRoute_Text_RuinBlocked, MSGBOX_DEFAULT
-	applymovement LOCALID_PLAYER, AraunaMistRoute_Movement_StepBackFromRuin
+	msgbox AraunaMistRoute_Text_SurveyBlocked, MSGBOX_DEFAULT
+	applymovement LOCALID_PLAYER, AraunaMistRoute_Movement_StepBackFromSurvey
 	waitmovement 0
 	releaseall
 	end
 
-AraunaMistRoute_EventScript_WarpToRuin::
-	warp MAP_ARAUNA_FIRST_LINK_RUIN, 255, 10, 13
+AraunaMistRoute_EventScript_CompleteSurvey::
+	lockall
+	msgbox AraunaMistRoute_Text_SurveyComplete, MSGBOX_DEFAULT
+	setvar VAR_ARAUNA_STORY_STAGE, 6
+	warp MAP_ARAUNA_MAP_LAB, 255, 14, 3
 	waitstate
 	end
 
-
-AraunaMistRoute_Movement_StepBackFromRuin:
+AraunaMistRoute_Movement_StepBackFromSurvey:
 	walk_down
 	step_end
