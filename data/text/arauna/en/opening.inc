@@ -15,9 +15,9 @@ AraunaPlayerHouse_Text_NightAnahi::
 	.string "PROF. ANAHI: I found the three\n"
 	.string "near land claimed by the\n"
 	.string "CONSORTIUM.\p"
-	.string "None fled when I approached.\n"
-	.string "Tonight they need quiet, not a\n"
-	.string "TRAINER.$"
+	.string "They stayed when I approached.\p"
+	.string "Tonight they need quiet.\n"
+	.string "They do not need a TRAINER.$"
 
 AraunaPlayerHouse_Text_NightPimpau::
 	.string "PIMPAU keeps one old seed\n"
@@ -175,7 +175,7 @@ AraunaResearchCenter_Text_AfterChoice::
 
 AraunaResearchCenter_Text_RouteOpen::
 	.string "Your party was restored.\p"
-	.string "The northern road is open.\p"
+	.string "The east path is open.\p"
 	.string "Record everything the mist\n"
 	.string "tries to hide.$"
 
@@ -234,17 +234,17 @@ AraunaMapLab_Text_ObjectiveCenter::
 AraunaMapLab_Text_ObjectiveCiro::
 	.string "CIRO is waiting in the plaza.\p"
 	.string "Speak with him before using the\n"
-	.string "northern road.$"
+	.string "east path.$"
 
 AraunaMapLab_Text_ObjectiveRoute::
 	.string "Explore the MIST ROUTE through\n"
-	.string "the northern road.\p"
+	.string "the east path.\p"
 	.string "Return with a field note and a\n"
 	.string "new agreement.$"
 
 AraunaMapLab_Text_RouteLocked::
 	.string "CIRO asked to speak before you\n"
-	.string "take the northern road.$"
+	.string "take the east path.$"
 
 AraunaMapLab_Text_ObjectiveCiroBattle::
 	.string "The mist left a gray trail.\p"
@@ -291,5 +291,5 @@ AraunaMapLab_Text_PortoLead::
 
 AraunaMapLab_Text_CiroAfterPrologue::
 	.string "CIRO: The coast road is open.\p"
-	.string "If the tide truly lost its color,\n"
+	.string "If the tide truly lost color,\n"
 	.string "the notebook needs both of us.$"
