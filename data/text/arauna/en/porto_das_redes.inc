@@ -1,12 +1,16 @@
 AraunaPorto_Text_CiroTravelPrompt::
-	.string "The coast road is open.\p"
-	.string "PORTO DAS REDES is using the\n"
-	.string "old southern landing.\p"
-	.string "Travel there now?$"
+	.string "The east path joins the coast\n"
+	.string "road to PORTO DAS REDES.\p"
+	.string "Travel there with CIRO now?$"
 
 AraunaPorto_Text_CiroStay::
-	.string "CIRO: I will wait here.\n"
-	.string "Tell me when you are ready.$"
+	.string "CIRO: I will wait here.\p"
+	.string "Use the east path when you are\n"
+	.string "ready.$"
+
+AraunaPorto_Text_CoastRoadDeparture::
+	.string "The east path meets the coast\n"
+	.string "road. CIRO leads the way.$"
 
 AraunaPorto_Text_FisherArrival::
 	.string "This is PORTO DAS REDES,\n"
