@@ -62,26 +62,20 @@ AraunaMistRoute_EventScript_FieldNotebook::
 	end
 
 AraunaMistRoute_EventScript_AffectedPokemon::
-	lock
-	faceplayer
 	goto_if_ge VAR_ARAUNA_STORY_STAGE, 5, AraunaMistRoute_EventScript_AffectedPokemonGone
+	lockall
 	msgbox AraunaMistRoute_Text_AffectedPokemon, MSGBOX_DEFAULT
-	applymovement LOCALID_ARAUNA_MIST_ROUTE_AFFECTED_MON, AraunaMistRoute_Movement_AffectedPokemonFlees
-	waitmovement 0
 	setflag FLAG_ARAUNA_MIST_ROUTE_AFFECTED_MON_CLEARED
-	removeobject LOCALID_ARAUNA_MIST_ROUTE_AFFECTED_MON
 	setvar VAR_ARAUNA_STORY_STAGE, 5
 	msgbox AraunaMistRoute_Text_RuinOpened, MSGBOX_DEFAULT
-	release
+	releaseall
 	end
 
 AraunaMistRoute_EventScript_AffectedPokemonGone::
-	msgbox AraunaMistRoute_Text_TracksToRuin, MSGBOX_DEFAULT
-	release
 	end
 
 AraunaMistRoute_EventScript_ReturnToVillage::
-	warp MAP_ARAUNA_MAP_LAB, 255, 17, 11
+	warp MAP_ARAUNA_MAP_LAB, 255, 14, 3
 	waitstate
 	end
 
@@ -99,10 +93,6 @@ AraunaMistRoute_EventScript_WarpToRuin::
 	waitstate
 	end
 
-AraunaMistRoute_Movement_AffectedPokemonFlees:
-	walk_up
-	walk_up
-	step_end
 
 AraunaMistRoute_Movement_StepBackFromRuin:
 	walk_down
