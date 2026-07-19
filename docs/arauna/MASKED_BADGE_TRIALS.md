@@ -7,15 +7,21 @@ battle presentation. There is **no new map**.
 
 ## Tide Vigil
 
-After Iaraco's color and Iara-Mae's Testimony are restored, Dona Zila asks the
-player to hold course while the tide changes. The mandatory battle takes place
-through her existing Slateport NPC. Losing preserves the completed testimony and
-returns the player to the battle gate; winning records the trial before the Mare
-Badge can be awarded.
+Dona Celina is Porto das Redes' local Storyteller and guardian of the House of
+Tide. Before she opens the Vigil, the player must hear the fisher memorial, read
+the Consortium discharge permit, recover the dockworkers' unfinished song and
+inspect Celina's embroidered net. Those four pieces unlock the field Agent
+confrontation, which retains a pre-battle heal after the investigation route.
 
-The provisional team is Botim at level 16, Sucurim at level 17 and Capivim at
-level 19. Names, levels, moves and dialogue remain provisional until the author's
-near-complete narrative script is incorporated.
+After the Agent is defeated, Celina completes her husband's verse with the
+player. The player returns to Route 109, restores Iaraco through song and receives
+Iara-Mae's non-capturable Testimony. Only then does Celina begin the mandatory
+Tide Vigil through her reassigned Slateport NPC.
+
+Her provisional three-member party targets levels 14, 15 and 17. The current
+species slots remain temporary until the first approved Emerald-style art batch.
+Losing preserves the completed investigation and Testimony and returns the player
+to the battle gate; winning records the trial before the Mare Badge is awarded.
 
 ## Trial of Echoes
 
