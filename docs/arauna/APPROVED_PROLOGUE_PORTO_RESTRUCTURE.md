@@ -28,8 +28,8 @@ tilesets, interiors, and route shells are reassigned or lightly rearranged.
 - [x] Playable house night: the player meets Zila, Anahi, and all three
   rescued partners before the gray-figure watch and dawn transition.
 - [ ] Expanded Vila Amanhecer NPC exploration and capture tutorial.
-- [ ] Ciro departure scene and route pacing.
-- [ ] First Link removal from the critical path.
+- [x] Explore-before-Ciro route pacing and scholarship departure scene.
+- [x] First Link removal from the critical path; its maps remain reserved.
 - [ ] Porto investigation, Agent confrontation, restoration, and Tide Vigil.
 - [ ] First approved in-ROM art batch.
 
