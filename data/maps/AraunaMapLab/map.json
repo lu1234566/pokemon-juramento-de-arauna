@@ -71,8 +71,8 @@
       "dest_warp_id": "0"
     },
     {
-      "x": 14,
-      "y": 1,
+      "x": 19,
+      "y": 11,
       "elevation": 3,
       "dest_map": "MAP_ARAUNA_MIST_ROUTE",
       "dest_warp_id": "0"
@@ -81,8 +81,8 @@
   "coord_events": [
     {
       "type": "trigger",
-      "x": 14,
-      "y": 2,
+      "x": 18,
+      "y": 11,
       "elevation": 3,
       "var": "VAR_TEMP_0",
       "var_value": "0",
