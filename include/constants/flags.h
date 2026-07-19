@@ -60,7 +60,7 @@
 #define FLAG_ARAUNA_FIRST_LINK_MEMORY_SEEN           0x26
 #define FLAG_ARAUNA_FIRST_LINK_CHAMBER_COMPLETE      0x27
 #define FLAG_ARAUNA_PORTO_ARRIVED                    0x28
-#define FLAG_ARAUNA_PORTO_ZILA_MET                   0x29
+#define FLAG_ARAUNA_PORTO_CELINA_MET                 0x29
 #define FLAG_ARAUNA_PORTO_IARACO_SEEN                0x2A
 #define FLAG_ARAUNA_PORTO_IARACO_RESTORED            0x2B
 #define FLAG_ARAUNA_TESTIMONY_IARA_MAE               0x2C
@@ -89,11 +89,11 @@
 #define FLAG_ARAUNA_PROLOGUE_TALKED_ZILA_AT_NIGHT     0x43
 #define FLAG_ARAUNA_PROLOGUE_TALKED_ANAHI_AT_NIGHT    0x44
 #define FLAG_ARAUNA_PROLOGUE_NIGHT_COMPLETE           0x45
-#define FLAG_UNUSED_0x046    0x46 // Unused Flag
-#define FLAG_UNUSED_0x047    0x47 // Unused Flag
-#define FLAG_UNUSED_0x048    0x48 // Unused Flag
-#define FLAG_UNUSED_0x049    0x49 // Unused Flag
-#define FLAG_UNUSED_0x04A    0x4A // Unused Flag
+#define FLAG_ARAUNA_PORTO_MEMORIAL_HEARD             0x46
+#define FLAG_ARAUNA_PORTO_PERMIT_FOUND                0x47
+#define FLAG_ARAUNA_PORTO_DOCK_SONG_HEARD             0x48
+#define FLAG_ARAUNA_PORTO_NET_FOUND                   0x49
+#define FLAG_ARAUNA_PORTO_AGENT_DEFEATED              0x4A
 #define FLAG_UNUSED_0x04B    0x4B // Unused Flag
 #define FLAG_UNUSED_0x04C    0x4C // Unused Flag
 #define FLAG_UNUSED_0x04D    0x4D // Unused Flag
