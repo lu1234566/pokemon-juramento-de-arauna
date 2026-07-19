@@ -1,21 +1,68 @@
 AraunaPlayerHouse_Text_NightArrival::
-	.string "Noite, VILA AMANHECER.\p"
-	.string "A PROF. ANAHI pediu abrigo a\n"
-	.string "DONA ZILA durante a chuva.\p"
-	.string "Tres criaturas resgatadas\n"
-	.string "esperam sob este teto.$"
+	.string "VILA AMANHECER, à noite.\p"
+	.string "A chuva toca o telhado de\n"
+	.string "DONA ZILA. Três criaturas\n"
+	.string "resgatadas observam o fogão.$"
+
+AraunaPlayerHouse_Text_NightZila::
+	.string "DONA ZILA: Um teto estranho\n"
+	.string "fica menos estranho quando você\n"
+	.string "conhece quem o divide.\p"
+	.string "Fale com ANAHI. Depois sente\n"
+	.string "com cada um dos hóspedes.$"
+
+AraunaPlayerHouse_Text_NightAnahi::
+	.string "PROF. ANAHI: Encontrei os três\n"
+	.string "perto de terras tomadas pelo\n"
+	.string "CONSÓRCIO.\p"
+	.string "Nenhum fugiu quando me aproximei.\n"
+	.string "Hoje precisam de calma, não de\n"
+	.string "um TREINADOR.$"
+
+AraunaPlayerHouse_Text_NightPimpau::
+	.string "PIMPAU aperta uma semente antiga\n"
+	.string "contra o peito.\p"
+	.string "Sua espécie marca cada árvore\n"
+	.string "caída para a mata se lembrar.$"
+
+AraunaPlayerHouse_Text_NightCaramelo::
+	.string "CARAMELO deita de frente para\n"
+	.string "a porta.\p"
+	.string "Ele guarda a casa de quem já\n"
+	.string "perdeu uma antes.$"
+
+AraunaPlayerHouse_Text_NightQuero::
+	.string "QUERO chama uma vez na direção\n"
+	.string "de um ninho que já não existe.\p"
+	.string "Seus ancestrais avisavam vilas\n"
+	.string "adormecidas antes das cheias.$"
+
+AraunaPlayerHouse_Text_NightReady::
+	.string "Todos estão acomodados.\p"
+	.string "DONA ZILA abaixa o lampião.\n"
+	.string "A chuva vira a única voz\n"
+	.string "do quarto.$"
+
+AraunaPlayerHouse_Text_BlockExitNight::
+	.string "A chuva cobre a estrada da vila.\p"
+	.string "DONA ZILA pediu que você\n"
+	.string "conhecesse todos sob este teto\n"
+	.string "antes de dormir.$"
 
 AraunaPlayerHouse_Text_NightWatch::
-	.string "Antes do amanhecer, um vulto\n"
-	.string "cinza gigante cruzou o beco.\p"
-	.string "Os tres ficaram entre ele e a\n"
-	.string "casa. Escolheram ficar.$"
+	.string "Algo enorme cruza o beco além\n"
+	.string "das cortinas.\p"
+	.string "O contorno é cinza, como se a\n"
+	.string "noite tivesse esquecido a cor.\p"
+	.string "As três criaturas ficam entre\n"
+	.string "a janela e a casa.$"
 
 AraunaPlayerHouse_Text_Dawn::
-	.string "De manha, DONA ZILA colocou\n"
-	.string "tres potes junto ao fogao.\p"
-	.string "Alimente PIMPAU, CARAMELO e\n"
-	.string "QUERO antes de escolher.$"
+	.string "A luz da manhã alcança o fogão.\p"
+	.string "DONA ZILA põe três tigelas\n"
+	.string "no chão.\p"
+	.string "Alimente os três antes de\n"
+	.string "escolher quem viajará com você.$"
 
 AraunaPlayerHouse_Text_ZilaCareReminder::
 	.string "DONA ZILA: Ninguem escolhe de\n"
