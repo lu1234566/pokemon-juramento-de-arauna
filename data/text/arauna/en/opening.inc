@@ -127,7 +127,7 @@ AraunaResearchCenter_Text_AfterChoice::
 
 AraunaResearchCenter_Text_RouteOpen::
 	.string "Your party was restored.\p"
-	.string "The eastern road is open.\p"
+	.string "The northern road is open.\p"
 	.string "Record everything the mist\n"
 	.string "tries to hide.$"
 
@@ -183,58 +183,60 @@ AraunaMapLab_Text_ObjectiveCenter::
 	.string "Return to DONA ZILA's house.\n"
 	.string "Care for all three partners.$"
 
-AraunaMapLab_Text_ObjectiveNilo::
+AraunaMapLab_Text_ObjectiveCiro::
 	.string "CIRO is waiting in the plaza.\n"
 	.string "He wants to test your skills.$"
 
 AraunaMapLab_Text_ObjectiveRoute::
 	.string "The MIST ROUTE is open through\n"
-	.string "the eastern road.$"
+	.string "the northern road.$"
 
-AraunaMapLab_Text_NiloAfterBattle::
+AraunaMapLab_Text_CiroAfterBattle::
 	.string "The route is open.\p"
 	.string "Do not mistake silence for\n"
 	.string "safety.$"
 
 AraunaMapLab_Text_RouteLocked::
-	.string "CIRO blocked the exit.\p"
+	.string "The northern road is unsafe.\p"
 	.string "Choose at DONA ZILA's house,\n"
-	.string "then meet him in the plaza.$"
+	.string "then meet CIRO in the plaza.$"
 
-AraunaMapLab_Text_ObjectiveNiloReturn::
+AraunaMapLab_Text_ObjectiveCiroReturn::
 	.string "CIRO is back in the plaza.\p"
 	.string "Tell him what happened inside\n"
 	.string "the FIRST LINK CHAMBER.$"
 
 AraunaMapLab_Text_ObjectiveSliceComplete::
-	.string "The first segment is complete.\p"
-	.string "The CHAMPION's memory opened\n"
-	.string "a much larger investigation.$"
+	.string "PORTO DAS REDES sent word.\p"
+	.string "The tide has gone pale and the\n"
+	.string "fishers have fallen silent.\p"
+	.string "Speak with CIRO when you are\n"
+	.string "ready to travel.$"
 
-AraunaMapLab_Text_NiloReturnIntro::
+AraunaMapLab_Text_CiroReturnIntro::
 	.string "CIRO: I saw the flash from town.\p"
 	.string "From those marks, the ruin\n"
 	.string "saw you too.$"
 
-AraunaMapLab_Text_NiloCourageReaction::
+AraunaMapLab_Text_CiroCourageReaction::
 	.string "You entered before the collapse.\p"
 	.string "COURAGE opened the path, but\n"
 	.string "part of it was buried.\p"
 	.string "Your choice left a mark.$"
 
-AraunaMapLab_Text_NiloWisdomReaction::
+AraunaMapLab_Text_CiroWisdomReaction::
 	.string "You decoded the mechanism.\p"
 	.string "WISDOM preserved the ruin and\n"
 	.string "the inscriptions on the path.\p"
 	.string "Your choice saved answers.$"
 
-AraunaMapLab_Text_NiloCompassionReaction::
+AraunaMapLab_Text_CiroCompassionReaction::
 	.string "You listened to the POKéMON.\p"
 	.string "COMPASSION revealed an exit\n"
 	.string "the agent did not know.\p"
 	.string "Your choice earned trust.$"
 
-AraunaMapLab_Text_NiloMemoryConclusion::
+AraunaMapLab_Text_CiroMemoryConclusion::
 	.string "CIRO: If that memory is real,\n"
 	.string "the League told only part of it.\p"
 	.string "The CHAMPION did not vanish\n"
@@ -242,13 +244,13 @@ AraunaMapLab_Text_NiloMemoryConclusion::
 	.string "He was there.\n"
 	.string "He broke the Bond.$"
 
-AraunaMapLab_Text_VerticalSliceComplete::
-	.string "END OF THE CURRENT\n"
-	.string "VERTICAL SLICE.\p"
-	.string "The journey will continue after\n"
-	.string "the next tests and approvals.$"
+AraunaMapLab_Text_PortoLead::
+	.string "A call reaches CIRO from\n"
+	.string "PORTO DAS REDES.\p"
+	.string "The tide has gone pale, and the\n"
+	.string "fishers have fallen silent.$"
 
-AraunaMapLab_Text_NiloAfterSlice::
+AraunaMapLab_Text_CiroAfterSlice::
 	.string "We still have only one memory.\p"
 	.string "Next, we find out who tried\n"
 	.string "to erase it.$"
