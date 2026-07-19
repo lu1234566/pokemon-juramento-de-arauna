@@ -16927,14 +16927,14 @@ Double Battle: No
 AI: Check Bad Move
 
 Voltorb
-Level: 6
+Level: 12
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Tackle
 - Charge
 - Eerie Impulse
 
 === TRAINER_ARAUNA_MARE_TRIAL ===
-Name: ZILA
+Name: CELINA
 Class: Expert
 Pic: Expert F
 Gender: Female
@@ -16944,15 +16944,15 @@ Double Battle: No
 AI: Check Bad Move
 
 Pidgey
-Level: 16
+Level: 14
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Vulpix
-Level: 17
+Level: 15
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
 Venusaur @ Oran Berry
-Level: 19
+Level: 17
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_ARAUNA_UIVO_TRIAL ===
