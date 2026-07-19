@@ -28,6 +28,12 @@ EXPECTED_FLAGS = {
     "FLAG_ARAUNA_ANAHI_STARTER_PIMPAU": "0x3D",
     "FLAG_ARAUNA_ANAHI_STARTER_CARAMELO": "0x3E",
     "FLAG_ARAUNA_ANAHI_STARTER_QUERO": "0x3F",
+    "FLAG_ARAUNA_PROLOGUE_NIGHT_PIMPAU": "0x40",
+    "FLAG_ARAUNA_PROLOGUE_NIGHT_CARAMELO": "0x41",
+    "FLAG_ARAUNA_PROLOGUE_NIGHT_QUERO": "0x42",
+    "FLAG_ARAUNA_PROLOGUE_TALKED_ZILA_AT_NIGHT": "0x43",
+    "FLAG_ARAUNA_PROLOGUE_TALKED_ANAHI_AT_NIGHT": "0x44",
+    "FLAG_ARAUNA_PROLOGUE_NIGHT_COMPLETE": "0x45",
 }
 
 TEXT_LABEL = re.compile(r"^([A-Za-z_][A-Za-z0-9_]*):{1,2}$", re.MULTILINE)
@@ -123,9 +129,29 @@ def main() -> int:
             "FLAG_ARAUNA_ANAHI_STARTER_CARAMELO",
             "FLAG_ARAUNA_ANAHI_STARTER_QUERO",
             "FLAG_ARAUNA_ANAHI_STARTER_PIMPAU",
+            "FLAG_ARAUNA_PROLOGUE_NIGHT_PIMPAU",
+            "FLAG_ARAUNA_PROLOGUE_NIGHT_CARAMELO",
+            "FLAG_ARAUNA_PROLOGUE_NIGHT_QUERO",
+            "FLAG_ARAUNA_PROLOGUE_TALKED_ZILA_AT_NIGHT",
+            "FLAG_ARAUNA_PROLOGUE_TALKED_ANAHI_AT_NIGHT",
+            "FLAG_ARAUNA_PROLOGUE_NIGHT_COMPLETE",
+            "AraunaPlayerHouse_EventScript_CheckNightReady",
+            "AraunaPlayerHouse_EventScript_BeginDawn",
+            "fadescreen FADE_TO_BLACK",
+            "fadescreen FADE_FROM_BLACK",
         ],
-        "care-first home selection",
+        "care-first playable home selection",
     )
+
+    opening_block = house.split(
+        "AraunaPlayerHouse_EventScript_Opening::", 1
+    )[1].split("AraunaPlayerHouse_EventScript_DonaZila::", 1)[0]
+    for deferred_text in (
+        "AraunaPlayerHouse_Text_NightWatch",
+        "AraunaPlayerHouse_Text_Dawn",
+    ):
+        if deferred_text in opening_block:
+            fail("the playable night is still compressed into the opening text dump")
 
     center = read("data/maps/AraunaResearchCenter/scripts.inc")
     if "givemon " in center:
@@ -174,8 +200,10 @@ def main() -> int:
             "PROF. ANAHI",
             "Feed all three before choosing",
             "CENSUS OF LEGENDS",
+            "Everyone is settled",
+            "night forgot its color",
         ],
-        "English canonical prologue",
+        "English canonical playable prologue",
     )
     if "386 espécies nativas" not in pt or "386 native species" not in en:
         fail("both languages must describe the integrated 386-species Arauna Dex")
@@ -193,7 +221,7 @@ def main() -> int:
 
     print(
         "Validated the real Arauna new-game entrypoint, Vila Amanhecer identity, "
-        "care-first starter choice, independent Ciro/Anahi assignments and "
+        "playable night, care-first starter choice, independent Ciro/Anahi assignments and "
         "one-time test-supply hook."
     )
     return 0
