@@ -1351,20 +1351,123 @@ SlateportCity_Text_TakingBattleTentChallenge:
 	.string "the perfect fit for the BATTLE TENT!\p"
 	.string "Give it your best effort!$"
 
-@ Arauna reuses Slateport City unchanged as Porto das Redes.
-AraunaPorto_EventScript_DonaZila::
+@ Arauna reuses Slateport City as Porto das Redes and the House of Tide.
+AraunaPorto_EventScript_DonaCelina::
+	goto_if_lt VAR_ARAUNA_ARC_STAGE, 10, SlateportCity_EventScript_OldWoman
 	lock
 	faceplayer
-	goto_if_lt VAR_ARAUNA_ARC_STAGE, 10, AraunaPorto_EventScript_DonaZilaVanilla
-	goto_if_eq VAR_ARAUNA_ARC_STAGE, 10, AraunaPorto_EventScript_DonaZilaIntroduction
-	goto_if_eq VAR_ARAUNA_ARC_STAGE, 11, AraunaPorto_EventScript_DonaZilaWaiting
-	goto_if_eq VAR_ARAUNA_ARC_STAGE, 12, AraunaPorto_EventScript_DonaZilaRestoreStory
-	goto_if_eq VAR_ARAUNA_ARC_STAGE, 13, AraunaPorto_EventScript_DonaZilaReturnToRiver
-	goto_if_eq VAR_ARAUNA_ARC_STAGE, 14, AraunaPorto_EventScript_DonaZilaAwardBadge
-	goto AraunaSerra_EventScript_DonaZilaTravel
+	goto_if_eq VAR_ARAUNA_ARC_STAGE, 10, AraunaPorto_EventScript_DonaCelinaIntroduction
+	goto_if_eq VAR_ARAUNA_ARC_STAGE, 11, AraunaPorto_EventScript_DonaCelinaInvestigation
+	goto_if_eq VAR_ARAUNA_ARC_STAGE, 12, AraunaPorto_EventScript_DonaCelinaRestoreSong
+	goto_if_eq VAR_ARAUNA_ARC_STAGE, 13, AraunaPorto_EventScript_DonaCelinaReturnToRiver
+	goto_if_eq VAR_ARAUNA_ARC_STAGE, 14, AraunaPorto_EventScript_DonaCelinaAwardBadge
+	goto AraunaSerra_EventScript_DonaCelinaTravel
 
-AraunaSerra_EventScript_DonaZilaTravel::
-	msgbox AraunaPorto_Text_DonaZilaAfterBadge, MSGBOX_DEFAULT
+AraunaPorto_EventScript_DonaCelinaIntroduction::
+	msgbox AraunaPorto_Text_DonaCelinaIntroduction, MSGBOX_DEFAULT
+	setflag FLAG_ARAUNA_PORTO_CELINA_MET
+	setflag FLAG_ARAUNA_PORTO_NET_FOUND
+	setvar VAR_ARAUNA_ARC_STAGE, 11
+	release
+	end
+
+AraunaPorto_EventScript_DonaCelinaInvestigation::
+	call AraunaPorto_EventScript_CheckEvidence
+	goto_if_eq VAR_RESULT, TRUE, AraunaPorto_EventScript_DonaCelinaEvidenceComplete
+	msgbox AraunaPorto_Text_DonaCelinaWaiting, MSGBOX_DEFAULT
+	release
+	end
+
+AraunaPorto_EventScript_DonaCelinaEvidenceComplete::
+	msgbox AraunaPorto_Text_DonaCelinaEvidenceComplete, MSGBOX_DEFAULT
+	release
+	end
+
+AraunaPorto_EventScript_DonaCelinaRestoreSong::
+	msgbox AraunaPorto_Text_DonaCelinaNetSong, MSGBOX_DEFAULT
+	setvar VAR_ARAUNA_ARC_STAGE, 13
+	release
+	end
+
+AraunaPorto_EventScript_DonaCelinaReturnToRiver::
+	msgbox AraunaPorto_Text_DonaCelinaReturnToRiver, MSGBOX_DEFAULT
+	release
+	end
+
+AraunaPorto_EventScript_Dockworker::
+	goto_if_lt VAR_ARAUNA_ARC_STAGE, 10, SlateportCity_EventScript_Sailor1
+	lock
+	faceplayer
+	goto_if_set FLAG_ARAUNA_PORTO_DOCK_SONG_HEARD, AraunaPorto_EventScript_DockworkerAfter
+	msgbox AraunaPorto_Text_DockworkerSong, MSGBOX_DEFAULT
+	setflag FLAG_ARAUNA_PORTO_DOCK_SONG_HEARD
+	release
+	end
+
+AraunaPorto_EventScript_DockworkerAfter::
+	msgbox AraunaPorto_Text_DockworkerAfter, MSGBOX_DEFAULT
+	release
+	end
+
+AraunaPorto_EventScript_ConsortiumAgent::
+	goto_if_lt VAR_ARAUNA_ARC_STAGE, 10, SlateportCity_EventScript_CaptStern
+	lock
+	faceplayer
+	goto_if_set FLAG_ARAUNA_PORTO_AGENT_DEFEATED, AraunaPorto_EventScript_ConsortiumAgentAfter
+	call AraunaPorto_EventScript_CheckEvidence
+	goto_if_eq VAR_RESULT, FALSE, AraunaPorto_EventScript_ConsortiumAgentDenial
+	msgbox AraunaPorto_Text_ConsortiumAgentConfrontation, MSGBOX_DEFAULT
+	special HealPlayerParty
+	msgbox AraunaPorto_Text_ConsortiumAgentPreparation, MSGBOX_DEFAULT
+	trainerbattle_single TRAINER_ARAUNA_TECH_AGENT, AraunaPorto_Text_ConsortiumAgentBattleIntro, AraunaPorto_Text_ConsortiumAgentBattleDefeated
+	setflag FLAG_ARAUNA_PORTO_AGENT_DEFEATED
+	setvar VAR_ARAUNA_ARC_STAGE, 12
+	msgbox AraunaPorto_Text_ConsortiumAgentAfterBattle, MSGBOX_DEFAULT
+	release
+	end
+
+AraunaPorto_EventScript_ConsortiumAgentDenial::
+	msgbox AraunaPorto_Text_ConsortiumAgentDenial, MSGBOX_DEFAULT
+	release
+	end
+
+AraunaPorto_EventScript_ConsortiumAgentAfter::
+	msgbox AraunaPorto_Text_ConsortiumAgentAfter, MSGBOX_DEFAULT
+	release
+	end
+
+AraunaPorto_EventScript_CheckEvidence::
+	setvar VAR_RESULT, FALSE
+	goto_if_unset FLAG_ARAUNA_PORTO_MEMORIAL_HEARD, AraunaPorto_EventScript_CheckEvidenceReturn
+	goto_if_unset FLAG_ARAUNA_PORTO_PERMIT_FOUND, AraunaPorto_EventScript_CheckEvidenceReturn
+	goto_if_unset FLAG_ARAUNA_PORTO_DOCK_SONG_HEARD, AraunaPorto_EventScript_CheckEvidenceReturn
+	goto_if_unset FLAG_ARAUNA_PORTO_NET_FOUND, AraunaPorto_EventScript_CheckEvidenceReturn
+	goto_if_unset FLAG_ARAUNA_PORTO_IARACO_SEEN, AraunaPorto_EventScript_CheckEvidenceReturn
+	setvar VAR_RESULT, TRUE
+AraunaPorto_EventScript_CheckEvidenceReturn::
+	return
+
+AraunaPorto_EventScript_DonaCelinaAwardBadge::
+	goto_if_set FLAG_ARAUNA_MARE_TRIAL_COMPLETE, AraunaPorto_EventScript_DonaCelinaGrantBadge
+	msgbox AraunaPorto_Text_MareTrialInvitation, MSGBOX_DEFAULT
+	trainerbattle_single TRAINER_ARAUNA_MARE_TRIAL, AraunaPorto_Text_MareTrialBattleIntro, AraunaPorto_Text_MareTrialBattleDefeated
+	setflag FLAG_ARAUNA_MARE_TRIAL_COMPLETE
+	msgbox AraunaPorto_Text_MareTrialComplete, MSGBOX_DEFAULT
+
+AraunaPorto_EventScript_DonaCelinaGrantBadge::
+	msgbox AraunaPorto_Text_DonaCelinaAwardBadge, MSGBOX_DEFAULT
+	setflag FLAG_ARAUNA_BADGE_MARE
+	setflag FLAG_BADGE01_GET
+	setvar VAR_ARAUNA_BADGE_COUNT, 1
+	setvar VAR_ARAUNA_ARC_STAGE, 15
+	playfanfare MUS_OBTAIN_BADGE
+	waitfanfare
+	msgbox AraunaPorto_Text_MareBadgeReceived, MSGBOX_DEFAULT
+	release
+	end
+
+AraunaSerra_EventScript_DonaCelinaTravel::
+	msgbox AraunaPorto_Text_DonaCelinaAfterBadge, MSGBOX_DEFAULT
 	msgbox AraunaSerra_Text_TravelPrompt, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, AraunaSerra_EventScript_StayInPorto
 	goto_if_ge VAR_ARAUNA_ARC_STAGE, 20, AraunaSerra_EventScript_TravelToFallarbor
@@ -1381,68 +1484,5 @@ AraunaSerra_EventScript_TravelToFallarbor::
 
 AraunaSerra_EventScript_StayInPorto::
 	msgbox AraunaSerra_Text_TravelLater, MSGBOX_DEFAULT
-	release
-	end
-
-AraunaPorto_EventScript_DonaZilaVanilla::
-	msgbox SlateportCity_Text_HowTownIsBornAndGrows, MSGBOX_DEFAULT
-	release
-	end
-
-AraunaPorto_EventScript_DonaZilaIntroduction::
-	msgbox AraunaPorto_Text_DonaZilaIntroduction, MSGBOX_DEFAULT
-	setflag FLAG_ARAUNA_PORTO_ZILA_MET
-	setvar VAR_ARAUNA_ARC_STAGE, 11
-	release
-	end
-
-AraunaPorto_EventScript_DonaZilaWaiting::
-	msgbox AraunaPorto_Text_DonaZilaWaiting, MSGBOX_DEFAULT
-	release
-	end
-
-AraunaPorto_EventScript_DonaZilaRestoreStory::
-	goto_if_eq VAR_ARAUNA_STARTER_CHOICE, 1, AraunaPorto_EventScript_DonaZilaPimpauStory
-	goto_if_eq VAR_ARAUNA_STARTER_CHOICE, 2, AraunaPorto_EventScript_DonaZilaCarameloStory
-	goto AraunaPorto_EventScript_DonaZilaQueroStory
-
-AraunaPorto_EventScript_DonaZilaCarameloStory::
-	msgbox AraunaPorto_Text_DonaZilaCarameloStory, MSGBOX_DEFAULT
-	goto AraunaPorto_EventScript_DonaZilaStoryComplete
-
-AraunaPorto_EventScript_DonaZilaQueroStory::
-	msgbox AraunaPorto_Text_DonaZilaQueroStory, MSGBOX_DEFAULT
-	goto AraunaPorto_EventScript_DonaZilaStoryComplete
-
-AraunaPorto_EventScript_DonaZilaPimpauStory::
-	msgbox AraunaPorto_Text_DonaZilaPimpauStory, MSGBOX_DEFAULT
-
-AraunaPorto_EventScript_DonaZilaStoryComplete::
-	setflag FLAG_ARAUNA_PORTO_IARACO_RESTORED
-	setvar VAR_ARAUNA_ARC_STAGE, 13
-	release
-	end
-
-AraunaPorto_EventScript_DonaZilaReturnToRiver::
-	msgbox AraunaPorto_Text_DonaZilaReturnToRiver, MSGBOX_DEFAULT
-	release
-	end
-
-AraunaPorto_EventScript_DonaZilaAwardBadge::
-	goto_if_set FLAG_ARAUNA_MARE_TRIAL_COMPLETE, AraunaPorto_EventScript_DonaZilaGrantBadge
-	msgbox AraunaPorto_Text_MareTrialInvitation, MSGBOX_DEFAULT
-	trainerbattle_single TRAINER_ARAUNA_MARE_TRIAL, AraunaPorto_Text_MareTrialBattleIntro, AraunaPorto_Text_MareTrialBattleDefeated
-	setflag FLAG_ARAUNA_MARE_TRIAL_COMPLETE
-	msgbox AraunaPorto_Text_MareTrialComplete, MSGBOX_DEFAULT
-
-AraunaPorto_EventScript_DonaZilaGrantBadge::
-	msgbox AraunaPorto_Text_DonaZilaAwardBadge, MSGBOX_DEFAULT
-	setflag FLAG_ARAUNA_BADGE_MARE
-	setflag FLAG_BADGE01_GET
-	setvar VAR_ARAUNA_BADGE_COUNT, 1
-	setvar VAR_ARAUNA_ARC_STAGE, 15
-	playfanfare MUS_OBTAIN_BADGE
-	waitfanfare
-	msgbox AraunaPorto_Text_MareBadgeReceived, MSGBOX_DEFAULT
 	release
 	end
