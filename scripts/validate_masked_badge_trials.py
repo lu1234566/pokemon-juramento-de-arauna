@@ -48,13 +48,13 @@ def main() -> None:
     require(flags, "#define FLAG_ARAUNA_UIVO_TRIAL_COMPLETE             0x36", "Uivo trial flag")
     require(opponents, "#define TRAINER_ARAUNA_MARE_TRIAL           857", "Maré trial trainer ID")
     require(opponents, "#define TRAINER_ARAUNA_UIVO_TRIAL           858", "Uivo trial trainer ID")
-    require(opponents, "#define TRAINERS_COUNT_EMERALD     859", "Emerald trainer count")
+    require(opponents, "#define TRAINERS_COUNT_EMERALD     861", "Emerald trainer count")
     require(opponents, "#define MAX_TRAINERS_COUNT_EMERALD 864", "trainer flag capacity")
 
     porto_trial = script_block(
         porto,
-        "AraunaPorto_EventScript_DonaZilaAwardBadge::",
-        "AraunaPorto_EventScript_DonaZilaGrantBadge::",
+        "AraunaPorto_EventScript_DonaCelinaAwardBadge::",
+        "AraunaPorto_EventScript_DonaCelinaGrantBadge::",
     )
     ordered(
         porto_trial,
@@ -65,7 +65,7 @@ def main() -> None:
         ),
         "Tide Vigil",
     )
-    porto_reward = porto.split("AraunaPorto_EventScript_DonaZilaGrantBadge::", 1)[1]
+    porto_reward = porto.split("AraunaPorto_EventScript_DonaCelinaGrantBadge::", 1)[1]
     ordered(
         porto_reward,
         (
@@ -106,7 +106,10 @@ def main() -> None:
         "=== TRAINER_ARAUNA_MARE_TRIAL ===",
         "=== TRAINER_ARAUNA_UIVO_TRIAL ===",
     )
-    for token in ("Pidgey", "Level: 16", "Vulpix", "Level: 17", "Venusaur @ Oran Berry", "Level: 19"):
+    for token in (
+        "Name: CELINA", "Pidgey", "Level: 14", "Vulpix", "Level: 15",
+        "Venusaur @ Oran Berry", "Level: 17",
+    ):
         require(mare_team, token, "provisional Tide Vigil team")
 
     uivo_team = trainers.split("=== TRAINER_ARAUNA_UIVO_TRIAL ===", 1)[1]
