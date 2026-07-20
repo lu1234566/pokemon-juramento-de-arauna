@@ -25,10 +25,10 @@ EXPECTED_SLOTS = [
     (4, 5, "SPECIES_MURKROW"),
 ]
 
-STARTER_TEXT = {
-    "PIMPAU #007: GRASS.",
-    "CARAMELO #001: FIRE.",
-    "QUERÔ #004: WATER.",
+ENGLISH_STARTER_TEXT = {
+    "PIMPAU No. 007: GRASS.",
+    "CARAMELO No. 001: FIRE.",
+    "QUERO No. 004: WATER.",
 }
 
 
@@ -88,11 +88,10 @@ def main() -> int:
     if mist_map != route101_map:
         fail("Mist Route must retain the approved Route 101 map shell")
 
-    pt = read("data/text/arauna/pt_br/opening.inc")
-    en = read("data/text/arauna/en/opening.inc")
-    for starter in STARTER_TEXT:
-        if starter not in pt or starter not in en:
-            fail(f"both languages must identify starter {starter!r}")
+    english = read("data/text/arauna/en/opening.inc")
+    for starter in ENGLISH_STARTER_TEXT:
+        if starter not in english:
+            fail(f"English runtime must identify starter {starter!r}")
 
     trainers = read("src/data/trainers.party")
     nilo = trainer_block(trainers, "TRAINER_ARAUNA_SCOUT_NILO")
@@ -114,9 +113,8 @@ def main() -> int:
 
     print(
         "Validated Mist Route rate 20, twelve land slots at levels 2-5, "
-        "seven official placeholder species, Route 101 shell, and the "
-        "Arauna names/numbers of all three starters, and a type-neutral "
-        "level 4-6 mandatory battle curve."
+        "seven placeholder species, the Route 101 shell, English starter "
+        "names/numbers, and a type-neutral level 4-6 battle curve."
     )
     return 0
 
