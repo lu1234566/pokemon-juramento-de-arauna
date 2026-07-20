@@ -58,3 +58,9 @@ AraunaMistRoute_Text_SurveyComplete::
 	.string "turns toward VILA AMANHECER.\p"
 	.string "You mark the place in ZILA's\n"
 	.string "notebook and return to CIRO.$"
+
+AraunaMistRoute_Text_CoastRoad::
+	.string "Beyond the ridge, the mist opens\n"
+	.string "onto the old COAST ROAD.\p"
+	.string "PORTO DAS REDES lies south.\n"
+	.string "You continue on foot.$"
