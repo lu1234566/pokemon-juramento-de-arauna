@@ -53,11 +53,14 @@ def main() -> None:
     agent = object_at(city, 28, 13, "OBJ_EVENT_GFX_SCIENTIST_1")
     dockworker = object_at(city, 37, 41, "OBJ_EVENT_GFX_SAILOR")
     builder = object_at(city, 26, 40, "OBJ_EVENT_GFX_SAILOR")
+    mechanic = object_at(coast, 9, 57, "OBJ_EVENT_GFX_MAN_4")
     require(fisher["script"] == "AraunaPorto_EventScript_FisherWitness", "shoreline witness changed")
     require(celina["script"] == "AraunaPorto_EventScript_DonaCelina", "Dona Celina object changed")
     require(agent["script"] == "AraunaPorto_EventScript_ConsortiumAgent", "Consortium Agent object changed")
     require(dockworker["script"] == "AraunaPorto_EventScript_Dockworker", "dock witness changed")
     require(builder["script"] == "AraunaPorto_EventScript_BoardBuilder", "Tide Board builder is missing")
+    require(mechanic["script"] == "Route110_EventScript_Mechanic", "coast-road mechanic changed")
+    require(mechanic["elevation"] == 4, "coast-road mechanic must remain on the elevated Route 110 platform")
 
     forbidden_graphics = {"OBJ_EVENT_GFX_AQUA_MEMBER_M", "OBJ_EVENT_GFX_AQUA_MEMBER_F"}
     require(not any(obj["graphics_id"] in forbidden_graphics for obj in city["object_events"]),
