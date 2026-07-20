@@ -201,3 +201,101 @@ AraunaPorto_Text_DonaCelinaAfterBadge::
 	.string "Your next road climbs toward\n"
 	.string "SERRA DO UIVO.\p"
 	.string "Travel there now?$"
+
+AraunaPorto_Text_RoadArrival::
+	.string "PORTO DAS REDES\p"
+	.string "Fishing boats rest in pale\n"
+	.string "water beneath patched nets.\p"
+	.string "The old sign says SLATEPORT.\n"
+	.string "Every person says PORTO.$"
+
+AraunaPorto_Text_RoadArrivalRepeat::
+	.string "PORTO DAS REDES\p"
+	.string "The harbor still smells of wet\n"
+	.string "wood, rope, and iron.$"
+
+AraunaPorto_Text_HarborResident::
+	.string "The market sold tourist shells\n"
+	.string "before the water changed.\p"
+	.string "Now every stall repairs nets.$"
+
+AraunaPorto_Text_NetMender::
+	.string "Each knot has a family mark.\p"
+	.string "That is how a returned net finds\n"
+	.string "its house after a storm.$"
+
+AraunaPorto_Text_MemorialKeeper::
+	.string "The memorial faces the tide.\p"
+	.string "Names weather faster when no one\n"
+	.string "speaks them aloud.$"
+
+AraunaPorto_Text_WarehouseWorker::
+	.string "The northern warehouses belong\n"
+	.string "to the CONSORTIUM now.\p"
+	.string "We unload our own harbor through\n"
+	.string "a locked gate.$"
+
+AraunaPorto_Text_CiroPorto::
+	.string "CIRO: The road made their report\n"
+	.string "sound smaller than the damage.\p"
+	.string "Find CELINA. I will watch the\n"
+	.string "CONSORTIUM post.$"
+
+AraunaPorto_Text_CiroPortoAfterAgent::
+	.string "CIRO: Their numbers were not\n"
+	.string "false. They were incomplete.\p"
+	.string "That may be worse.$"
+
+AraunaPorto_Text_BoardBeforeBadge::
+	.string "BOATBUILDER: This folding board\n"
+	.string "was made for calm channels.\p"
+	.string "CELINA decides who may carry one.$"
+
+AraunaPorto_Text_BoardOffer::
+	.string "BOATBUILDER: The MARE BADGE says\n"
+	.string "you can read this water.\p"
+	.string "Take the board. A tool should\n"
+	.string "never burden a partner.$"
+
+AraunaPorto_Text_BoardReceived::
+	.string "The TIDE BOARD was placed in\n"
+	.string "the KEY ITEMS pocket.\p"
+	.string "It authorizes calm-water travel\n"
+	.string "without teaching a field move.$"
+
+AraunaPorto_Text_BoardAfter::
+	.string "BOATBUILDER: Keep its bindings\n"
+	.string "dry and respect strong currents.$"
+
+AraunaPorto_Text_BoardBagFull::
+	.string "Your KEY ITEMS pocket is full.\p"
+	.string "Make room and return for the\n"
+	.string "TIDE BOARD.$"
+
+AraunaPorto_Text_CitySign::
+	.string "PORTO DAS REDES\p"
+	.string "THE TIDE RETURNS EVERY NAME$"
+
+AraunaPorto_Text_HouseOfTideSign::
+	.string "HOUSE OF TIDE\p"
+	.string "DONA CELINA -- KEEPER$"
+
+AraunaPorto_Text_MemorialSign::
+	.string "FISHERS' MEMORIAL\p"
+	.string "READ THE NAMES ALOUD$"
+
+AraunaPorto_Text_ConsortiumPostSign::
+	.string "CONSORTIUM PERMIT POST\p"
+	.string "PUBLIC ACCESS RESTRICTED$"
+
+AraunaPorto_Text_NetMarketSign::
+	.string "NET MARKET\p"
+	.string "REPAIR, ROPE, FLOATS, THREAD$"
+
+AraunaPorto_Text_ClosedBuildingSign::
+	.string "HARBOR OFFICE CLOSED\p"
+	.string "ORDERS MOVED TO THE PERMIT POST$"
+
+AraunaPorto_Text_BoardWorkshopSign::
+	.string "BOARD AND BOAT WORKSHOP\p"
+	.string "TOOLS FOR CALM WATER$"
