@@ -1,15 +1,13 @@
 #!/usr/bin/env python3
-"""Validate Nilo's Bond reaction and the vertical-slice completion state."""
+"""Validate Ciro's prologue conclusion and the physical road to Porto."""
 
 from __future__ import annotations
 
-import re
 import sys
 from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-TEXT_LABEL = re.compile(r"^([A-Za-z_][A-Za-z0-9_]*):{1,2}$", re.MULTILINE)
 
 
 def fail(message: str) -> None:
@@ -20,7 +18,7 @@ def read(path: str) -> str:
     return (ROOT / path).read_text(encoding="utf-8")
 
 
-def require(source: str, tokens: list[str], name: str) -> None:
+def require(source: str, tokens: tuple[str, ...], name: str) -> None:
     missing = [token for token in tokens if token not in source]
     if missing:
         fail(f"{name} is missing required tokens: {missing}")
@@ -30,35 +28,56 @@ def main() -> int:
     script = read("data/maps/AraunaMapLab/scripts.inc")
     require(
         script,
-        [
-            "goto_if_eq VAR_ARAUNA_STORY_STAGE, 7, AraunaMapLab_EventScript_NiloEpilogue",
-            "goto_if_ge VAR_ARAUNA_STORY_STAGE, 8, AraunaMapLab_EventScript_NiloAfterSlice",
-            "goto_if_eq VAR_ARAUNA_BOND_CHOICE, 1",
-            "goto_if_eq VAR_ARAUNA_BOND_CHOICE, 2",
-            "AraunaMapLab_EventScript_NiloCompassionReaction",
+        (
+            "goto_if_eq VAR_ARAUNA_STORY_STAGE, 6, AraunaMapLab_EventScript_CiroBattle",
+            "TRAINER_ARAUNA_CIRO_PIMPAU",
+            "TRAINER_ARAUNA_CIRO_CARAMELO",
+            "TRAINER_ARAUNA_CIRO_QUERO",
+            "setvar VAR_ARAUNA_STORY_STAGE, 7",
+            "AraunaMapLab_Text_CiroPostBattle",
+            "AraunaMapLab_Text_CiroDeparture",
             "setvar VAR_ARAUNA_STORY_STAGE, 8",
-            "AraunaMapLab_Text_VerticalSliceComplete",
-            "goto_if_eq VAR_ARAUNA_STORY_STAGE, 7, AraunaMapLab_EventScript_ObjectiveNiloReturn",
-        ],
-        "Araucaria village epilogue",
+            "AraunaMapLab_Text_PortoLead",
+            "goto_if_ge VAR_ARAUNA_STORY_STAGE, 8, AraunaMapLab_EventScript_ObjectiveSliceComplete",
+            "warp MAP_ARAUNA_MIST_ROUTE, 255, 10, 17",
+        ),
+        "Ciro prologue conclusion",
+    )
+    for forbidden in (
+        "warp MAP_ROUTE109",
+        "AraunaMapLab_EventScript_OfferPortoTravel",
+        "AraunaMapLab_EventScript_TravelToPorto",
+    ):
+        if forbidden in script:
+            fail(f"prologue conclusion still contains instant travel: {forbidden}")
+
+    map_lab_text = read("data/text/arauna/en/map_lab.inc")
+    opening_text = read("data/text/arauna/en/opening.inc")
+    require(
+        map_lab_text,
+        (
+            "AraunaMapLab_Text_CiroPostBattle::",
+            "You listened before giving",
+            "That is harder than winning.",
+        ),
+        "English Ciro battle conclusion",
+    )
+    require(
+        opening_text,
+        (
+            "AraunaMapLab_Text_CiroDeparture::",
+            "They called me to PORTO.",
+            "AraunaMapLab_Text_PortoLead::",
+            "PORTO DAS REDES",
+            "Follow the east path and cross",
+            "the coast road on foot.",
+        ),
+        "English Porto lead",
     )
 
-    pt = read("data/text/arauna/pt_br/opening.inc")
-    en = read("data/text/arauna/en/opening.inc")
-    if TEXT_LABEL.findall(pt) != TEXT_LABEL.findall(en):
-        fail("Portuguese and English opening labels must remain identical")
-    for value in ("CORAGEM", "SABEDORIA", "COMPAIXAO"):
-        if value not in pt:
-            fail(f"Portuguese epilogue is missing {value}")
-    for value in ("COURAGE", "WISDOM", "COMPASSION"):
-        if value not in en:
-            fail(f"English epilogue is missing {value}")
-    if "CAMPEÃO" not in pt or "CHAMPION" not in en:
-        fail("the epilogue must preserve the Champion revelation")
-
     print(
-        "Validated Nilo's three Bond reactions, the Champion conclusion, "
-        "guide objectives, and persistent vertical-slice stage 8."
+        "Validated Ciro's three rival variants, stage-8 prologue conclusion, "
+        "and the required on-foot route toward Porto das Redes."
     )
     return 0
 
@@ -67,5 +86,5 @@ if __name__ == "__main__":
     try:
         sys.exit(main())
     except (OSError, ValueError) as error:
-        print(f"Vertical-slice epilogue validation failed: {error}", file=sys.stderr)
+        print(f"Prologue conclusion validation failed: {error}", file=sys.stderr)
         sys.exit(1)
