@@ -31,6 +31,20 @@ AraunaPlayerHouse_EventScript_NightZila::
 	end
 
 AraunaPlayerHouse_EventScript_ZilaAfterChoice::
+	checkitem ITEM_FAME_CHECKER, 1
+	goto_if_eq VAR_RESULT, TRUE, AraunaPlayerHouse_EventScript_ZilaBlessingOnly
+	giveitem ITEM_FAME_CHECKER
+	goto_if_eq VAR_RESULT, FALSE, AraunaPlayerHouse_EventScript_ZilaNotebookBagFull
+	msgbox AraunaPlayerHouse_Text_NotebookReceived, MSGBOX_DEFAULT
+	release
+	end
+
+AraunaPlayerHouse_EventScript_ZilaNotebookBagFull::
+	msgbox AraunaPlayerHouse_Text_NotebookBagFull, MSGBOX_DEFAULT
+	release
+	end
+
+AraunaPlayerHouse_EventScript_ZilaBlessingOnly::
 	msgbox AraunaPlayerHouse_Text_ZilaBlessing, MSGBOX_DEFAULT
 	release
 	end
