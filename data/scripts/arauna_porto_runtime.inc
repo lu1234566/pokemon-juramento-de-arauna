@@ -104,3 +104,23 @@ AraunaPorto_EventScript_ClosedBuildingSign::
 AraunaPorto_EventScript_BoardWorkshopSign::
 	msgbox AraunaPorto_Text_BoardWorkshopSign, MSGBOX_SIGN
 	end
+
+AraunaPorto_EventScript_HouseOfTideDoor::
+	msgbox AraunaPorto_Text_HouseOfTideDoor, MSGBOX_SIGN
+	end
+
+AraunaPorto_EventScript_EvacuatedHouseDoor::
+	msgbox AraunaPorto_Text_EvacuatedHouseDoor, MSGBOX_SIGN
+	end
+
+AraunaPorto_EventScript_NetGuildDoor::
+	msgbox AraunaPorto_Text_NetGuildDoor, MSGBOX_SIGN
+	end
+
+AraunaPorto_EventScript_ConsortiumPostDoor::
+	msgbox AraunaPorto_Text_ConsortiumPostDoor, MSGBOX_SIGN
+	end
+
+AraunaPorto_EventScript_HarborOfficeDoor::
+	msgbox AraunaPorto_Text_HarborOfficeDoor, MSGBOX_SIGN
+	end
