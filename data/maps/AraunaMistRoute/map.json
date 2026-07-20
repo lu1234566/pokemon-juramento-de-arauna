@@ -44,15 +44,7 @@
       "flag": "FLAG_ARAUNA_MIST_ROUTE_NOTEBOOK_TAKEN"
     }
   ],
-  "warp_events": [
-    {
-      "x": 10,
-      "y": 18,
-      "elevation": 3,
-      "dest_map": "MAP_ARAUNA_MAP_LAB",
-      "dest_warp_id": "2"
-    }
-  ],
+  "warp_events": [],
   "coord_events": [
     {
       "type": "trigger",
