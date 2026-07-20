@@ -100,11 +100,10 @@ AraunaMistRoute_EventScript_ContinueToCoastRoad::
 	lockall
 	goto_if_ge VAR_ARAUNA_ARC_STAGE, 10, AraunaMistRoute_EventScript_CoastRoadReady
 	setvar VAR_ARAUNA_ARC_STAGE, 10
-	setflag FLAG_ARAUNA_PORTO_ARRIVED
 
 AraunaMistRoute_EventScript_CoastRoadReady::
 	msgbox AraunaMistRoute_Text_CoastRoad, MSGBOX_DEFAULT
-	warp MAP_ROUTE110, 255, 17, 96
+	warp MAP_ROUTE110, 255, 17, 9
 	waitstate
 	end
 
