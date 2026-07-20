@@ -76,7 +76,7 @@ def main() -> int:
     ), "English Mist Route and coast-road text")
 
     event_scripts = read("data/event_scripts.s")
-    if '\t.include "data/text/arauna/route.inc"' not in event_scripts:
+    if '#include "data/text/arauna/route.inc"' not in event_scripts:
         raise ValueError("localized route bank is not included")
 
     print("Mist Route validated: optional notebook, gray-trail evidence and full coast-road handoff.")
