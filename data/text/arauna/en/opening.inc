@@ -132,6 +132,17 @@ AraunaPlayerHouse_Text_ZilaChosen::
 	.string "last night.\p"
 	.string "You just took longer to notice.$"
 
+AraunaPlayerHouse_Text_NotebookReceived::
+	.string "DONA ZILA's NOTEBOOK was placed\n"
+	.string "in the KEY ITEMS pocket.\p"
+	.string "Open it whenever you need the\n"
+	.string "current objective or records.$"
+
+AraunaPlayerHouse_Text_NotebookBagFull::
+	.string "The KEY ITEMS pocket is full.\p"
+	.string "Make room, then speak with\n"
+	.string "DONA ZILA to recover the book.$"
+
 AraunaPlayerHouse_Text_CensusInvitation::
 	.string "PROF. ANAHI adds field pages\n"
 	.string "to DONA ZILA's notebook.\p"
@@ -255,8 +266,8 @@ AraunaMapLab_Text_ObjectiveSliceComplete::
 	.string "PORTO DAS REDES sent word.\p"
 	.string "The tide has gone pale and the\n"
 	.string "fishers have fallen silent.\p"
-	.string "Speak with CIRO when you are\n"
-	.string "ready to travel.$"
+	.string "Follow the east path and cross\n"
+	.string "the coast road on foot.$"
 
 AraunaMapLab_Text_CiroBeforeRoute::
 	.string "CIRO: ANAHI wants field notes,\n"
@@ -281,7 +292,7 @@ AraunaMapLab_Text_CiroDeparture::
 	.string "I know what they take. I also\n"
 	.string "know what illness costs.\p"
 	.string "They called me to PORTO. I leave\n"
-	.string "as soon as you are ready.$"
+	.string "by the coast road.$"
 
 AraunaMapLab_Text_PortoLead::
 	.string "A call reaches CIRO from\n"
@@ -291,5 +302,5 @@ AraunaMapLab_Text_PortoLead::
 
 AraunaMapLab_Text_CiroAfterPrologue::
 	.string "CIRO: The coast road is open.\p"
-	.string "If the tide truly lost color,\n"
-	.string "the notebook needs both of us.$"
+	.string "No shortcut this time. We cross\n"
+	.string "the mist and shoreline on foot.$"
