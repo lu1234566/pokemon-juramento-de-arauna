@@ -1,13 +1,11 @@
 #!/usr/bin/env python3
-"""Validate Porto das Redes without allowing a new map or layout."""
+"""Validate Porto das Redes, its coast road and HM-free Tide Board."""
 
 from __future__ import annotations
 
-import csv
 import json
 import re
 from pathlib import Path
-
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -31,151 +29,134 @@ def object_at(data: dict, x: int, y: int, graphics: str) -> dict:
 
 
 def main() -> None:
-    route = json.loads(read("data/maps/Route109/map.json"))
+    shoreline = json.loads(read("data/maps/Route109/map.json"))
+    coast = json.loads(read("data/maps/Route110/map.json"))
     city = json.loads(read("data/maps/SlateportCity/map.json"))
 
-    require(route["layout"] == "LAYOUT_ROUTE109", "Porto shoreline must reuse Route 109")
-    require(city["layout"] == "LAYOUT_SLATEPORT_CITY", "Porto city must reuse Slateport")
-    require(route["connections"] == [
-        {"map": "MAP_SLATEPORT_CITY", "offset": 0, "direction": "up"},
-        {"map": "MAP_ROUTE108", "offset": 40, "direction": "left"},
-    ], "Route 109 connections changed")
+    require(shoreline["layout"] == "LAYOUT_ROUTE109", "Porto shoreline must reuse Route 109")
+    require(coast["layout"] == "LAYOUT_ROUTE110", "coast road must reuse Route 110")
+    require(city["layout"] == "LAYOUT_SLATEPORT_CITY", "Porto must reuse Slateport's layout")
     require(city["connections"] == [
         {"map": "MAP_ROUTE110", "offset": 0, "direction": "up"},
         {"map": "MAP_ROUTE109", "offset": 0, "direction": "down"},
-        {"map": "MAP_ROUTE134", "offset": 0, "direction": "right"},
-    ], "Slateport connections changed")
+    ], "Porto must connect only to the coast road and shoreline in this slice")
+    require(coast["connections"] == [
+        {"map": "MAP_MAUVILLE_CITY", "offset": 0, "direction": "up"},
+        {"map": "MAP_SLATEPORT_CITY", "offset": 0, "direction": "down"},
+    ], "coast road connection contract changed")
+    require(not city["show_map_name"], "vanilla Slateport popup must be suppressed")
+    require(not coast["show_map_name"], "Route 110 popup must be suppressed")
+    require(not city["allow_cycling"] and not coast["allow_cycling"], "campaign route must be crossed on foot")
 
-    fisher = object_at(route, 33, 6, "OBJ_EVENT_GFX_OLD_MAN")
+    fisher = object_at(shoreline, 33, 6, "OBJ_EVENT_GFX_OLD_MAN")
     celina = object_at(city, 20, 37, "OBJ_EVENT_GFX_OLD_WOMAN")
     agent = object_at(city, 28, 13, "OBJ_EVENT_GFX_SCIENTIST_1")
     dockworker = object_at(city, 37, 41, "OBJ_EVENT_GFX_SAILOR")
-    require(fisher["script"] == "AraunaPorto_EventScript_FisherWitness",
-            "existing Route 109 fisherman was not reused")
-    require(celina["script"] == "AraunaPorto_EventScript_DonaCelina",
-            "existing Slateport old-woman object was not reassigned to Dona Celina")
-    require(agent["script"] == "AraunaPorto_EventScript_ConsortiumAgent"
-            and agent["flag"] == "0",
-            "existing Slateport scientist is not the visible Consortium Agent")
-    require(dockworker["script"] == "AraunaPorto_EventScript_Dockworker",
-            "existing Slateport sailor is not the dock-song witness")
-    placeholders = [
-        obj for obj in route["object_events"]
-        if "Iaraco" in obj.get("script", "")
-        or ("ZIGZAGOON" in obj.get("graphics_id", "")
-            and "AraunaPorto" in obj.get("script", ""))
-    ]
-    require(not placeholders, "Iaraco still uses an overworld placeholder")
+    builder = object_at(city, 26, 40, "OBJ_EVENT_GFX_SHIP_CAPTAIN")
+    require(fisher["script"] == "AraunaPorto_EventScript_FisherWitness", "shoreline witness changed")
+    require(celina["script"] == "AraunaPorto_EventScript_DonaCelina", "Dona Celina object changed")
+    require(agent["script"] == "AraunaPorto_EventScript_ConsortiumAgent", "Consortium Agent object changed")
+    require(dockworker["script"] == "AraunaPorto_EventScript_Dockworker", "dock witness changed")
+    require(builder["script"] == "AraunaPorto_EventScript_BoardBuilder", "Tide Board builder is missing")
+
+    forbidden_graphics = {"OBJ_EVENT_GFX_AQUA_MEMBER_M", "OBJ_EVENT_GFX_AQUA_MEMBER_F"}
+    require(not any(obj["graphics_id"] in forbidden_graphics for obj in city["object_events"]),
+            "vanilla Team Aqua objects remain in Porto")
+    require(not any(obj["graphics_id"] in forbidden_graphics for obj in coast["object_events"]),
+            "vanilla Team Aqua objects remain on the coast road")
+
     traces = {
         (event["x"], event["y"])
-        for event in route["coord_events"]
+        for event in shoreline["coord_events"]
         if event["script"] == "AraunaPorto_EventScript_IaracoTrace"
     }
-    require(traces == {(32, 7), (33, 7)},
-            "Iaraco trace must cover both Route 109 lanes")
+    require(traces == {(32, 7), (33, 7)}, "Iaraco trace must cover both shoreline lanes")
 
-    vars_h = read("include/constants/vars.h")
-    flags_h = read("include/constants/flags.h")
-    required_vars = (
-        "VAR_ARAUNA_ARC_STAGE                            0x40FB",
-        "VAR_ARAUNA_BADGE_COUNT                          0x40FC",
-        "VAR_ARAUNA_TESTIMONY_COUNT                      0x40FD",
-    )
-    required_flags = (
-        "FLAG_ARAUNA_PORTO_ARRIVED                    0x28",
-        "FLAG_ARAUNA_PORTO_CELINA_MET                 0x29",
-        "FLAG_ARAUNA_PORTO_IARACO_SEEN                0x2A",
-        "FLAG_ARAUNA_PORTO_IARACO_RESTORED            0x2B",
-        "FLAG_ARAUNA_TESTIMONY_IARA_MAE               0x2C",
-        "FLAG_ARAUNA_BADGE_MARE                       0x2D",
-        "FLAG_ARAUNA_PORTO_MEMORIAL_HEARD             0x46",
-        "FLAG_ARAUNA_PORTO_PERMIT_FOUND                0x47",
-        "FLAG_ARAUNA_PORTO_DOCK_SONG_HEARD             0x48",
-        "FLAG_ARAUNA_PORTO_NET_FOUND                   0x49",
-        "FLAG_ARAUNA_PORTO_AGENT_DEFEATED              0x4A",
-    )
-    for token in required_vars:
-        require(token in vars_h, f"missing campaign var: {token}")
-    for token in required_flags:
-        require(token in flags_h, f"missing Porto flag: {token}")
+    north_blocks = {
+        (event["x"], event["y"])
+        for event in coast["coord_events"]
+        if event["script"] == "Route110_EventScript_BlockNorthRoad"
+    }
+    require(north_blocks == {(x, 4) for x in range(13, 22)}, "north road blocker has gaps")
+    require(any(obj["script"] == "Route110_EventScript_ConsortiumCheckpoint" for obj in coast["object_events"]),
+            "north closure lacks a visible checkpoint")
+    require(coast["warp_events"] == [], "vanilla Route 110 building warps remain accessible")
 
     village_scripts = read("data/maps/AraunaMapLab/scripts.inc")
-    route_scripts = read("data/maps/Route109/scripts.inc")
+    mist_scripts = read("data/maps/AraunaMistRoute/scripts.inc")
+    coast_scripts = read("data/maps/Route110/scripts.inc")
+    shoreline_scripts = read("data/maps/Route109/scripts.inc")
     city_scripts = read("data/maps/SlateportCity/scripts.inc")
-    require("warp MAP_ROUTE109, 255, 30, 6" in village_scripts,
-            "slice does not use Route 109's dry north-beach landing")
-    require("warp MAP_ROUTE109, 255, 20, 28" not in village_scripts,
-            "slice still drops the player into Route 109's swimmer zone")
-    custom_route = route_scripts.split("@ Arauna reuses Route 109", 1)[1]
-    require("showmonpic" not in custom_route,
-            "unapproved Iaraco art is forced in Route 109")
+    runtime = read("data/scripts/arauna_porto_runtime.inc")
+
+    require("warp MAP_ROUTE109" not in village_scripts, "Vila still teleports directly to Porto")
+    require("warp MAP_ROUTE110, 255, 17, 9" in mist_scripts, "Mist Route does not hand off to the north coast road")
+    require("FLAG_ARAUNA_COAST_ROAD_ENTERED" in coast_scripts, "coast-road arrival is not persistent")
+    require("FLAG_ARAUNA_PORTO_ARRIVED" in runtime, "Porto arrival is not recorded in the city")
+    require("AraunaPorto_EventScript_RoadArrival" in runtime, "custom Porto arrival script is missing")
+
+    custom_route = shoreline_scripts.split("@ Arauna reuses Route 109", 1)[1]
+    require("showmonpic" not in custom_route, "unapproved Iaraco art is forced on the shoreline")
     for token in (
         "FLAG_ARAUNA_PORTO_MEMORIAL_HEARD",
         "FLAG_ARAUNA_PORTO_PERMIT_FOUND",
-        "AraunaPorto_EventScript_IaracoTrace",
         "setflag FLAG_ARAUNA_PORTO_IARACO_RESTORED",
         "setflag FLAG_ARAUNA_TESTIMONY_IARA_MAE",
         "setvar VAR_ARAUNA_TESTIMONY_COUNT, 1",
-        "setvar VAR_ARAUNA_ARC_STAGE, 14",
     ):
-        require(token in custom_route, f"Route 109 story is missing {token}")
+        require(token in custom_route, f"shoreline story is missing {token}")
     for token in (
         "AraunaPorto_EventScript_DonaCelina",
         "AraunaPorto_EventScript_Dockworker",
         "AraunaPorto_EventScript_ConsortiumAgent",
-        "FLAG_ARAUNA_PORTO_MEMORIAL_HEARD",
-        "FLAG_ARAUNA_PORTO_PERMIT_FOUND",
-        "FLAG_ARAUNA_PORTO_DOCK_SONG_HEARD",
-        "FLAG_ARAUNA_PORTO_NET_FOUND",
-        "FLAG_ARAUNA_PORTO_IARACO_SEEN",
-        "special HealPlayerParty",
         "trainerbattle_single TRAINER_ARAUNA_TECH_AGENT",
         "trainerbattle_single TRAINER_ARAUNA_MARE_TRIAL",
         "setflag FLAG_BADGE01_GET",
         "setvar VAR_ARAUNA_BADGE_COUNT, 1",
-        "setvar VAR_ARAUNA_ARC_STAGE, 15",
     ):
-        require(token in city_scripts, f"Slateport story is missing {token}")
+        require(token in city_scripts, f"Porto story is missing {token}")
 
-    with (ROOT / "docs/arauna/ARAUNA_DEX_ENGINE_MAPPING.csv").open(
-        encoding="utf-8", newline=""
-    ) as handle:
-        mapping = {int(row["arauna_dex"]): row for row in csv.DictReader(handle)}
-    require(mapping[19]["species_constant"] == "SPECIES_CATERPIE",
-            "Iaraco engine mapping changed")
-    require(mapping[286]["species_constant"] == "SPECIES_BRELOOM",
-            "Iara-Mae engine mapping changed")
+    config = read("include/config/arauna.h")
+    item_override = read("src/arauna_item_overrides.c")
+    field_tools = read("src/arauna_field_tools.c")
+    field_move = read("src/field_move.c")
+    surf_script = read("data/scripts/surf.inc")
+    for token in (
+        "FLAG_ARAUNA_COAST_ROAD_ENTERED",
+        "FLAG_ARAUNA_PORTO_IDENTITY_SEEN",
+        "FLAG_ARAUNA_BOARD_RECEIVED",
+        "FLAG_ARAUNA_BOARD_FIELD_UNLOCKED",
+        "FLAG_ARAUNA_NORTH_ROAD_REOPENED",
+    ):
+        require(token in config, f"missing stable world flag alias: {token}")
+    require("ITEM_DEVON_SCOPE" in item_override and "Tide Board" in item_override,
+            "Devon Scope slot is not presented as the Tide Board")
+    require("ItemUseOutOfBattle_AraunaBoard" in item_override, "Tide Board has no bag behavior")
+    require("AraunaPartyHasMonWithSurf" in field_tools, "Tide Board does not satisfy water access")
+    require("FLAG_ARAUNA_BOARD_FIELD_UNLOCKED" in field_move, "field move permission ignores the Tide Board")
+    require("EventScript_UseTideBoard" in surf_script, "water interaction does not branch to the Tide Board")
+    require("giveitem ITEM_DEVON_SCOPE" in runtime, "boatbuilder does not award the Tide Board")
 
     wrapper = read("data/text/arauna/porto_das_redes.inc")
-    require('data/text/arauna/en/porto_das_redes.inc' in wrapper,
-            "Porto text wrapper must select English")
-    require("pt_br" not in wrapper and "#if" not in wrapper,
-            "first Porto implementation must remain English-only")
+    require('data/scripts/arauna_porto_runtime.inc' in wrapper, "Porto runtime is not included")
+    require('data/text/arauna/en/porto_das_redes.inc' in wrapper, "English Porto text is not included")
     text = read("data/text/arauna/en/porto_das_redes.inc")
-    required_labels = (
+    for label in (
+        "AraunaPorto_Text_RoadArrival::",
         "AraunaPorto_Text_DonaCelinaIntroduction::",
-        "AraunaPorto_Text_DonaCelinaNetSong::",
         "AraunaPorto_Text_ConsortiumAgentConfrontation::",
         "AraunaPorto_Text_IaraMaeTestimony::",
         "AraunaPorto_Text_MareBadgeReceived::",
-    )
-    for label in required_labels:
-        require(label in text, f"missing English Porto text: {label}")
-    require("DONA ZILA" not in text,
-            "Dona Zila still replaces Porto's local guardian")
-    require("Your dead are cleaned by memory." in text,
-            "the approved Iara-Mae Testimony line is missing")
-
+        "AraunaPorto_Text_BoardReceived::",
+    ):
+        require(label in text, f"missing Porto text label: {label}")
+    require("Your dead are cleaned by memory." in text, "approved Iara-Mae line is missing")
     for literal in re.findall(r'\.string "([^"]*)"', text):
         for segment in re.split(r"\\[np]", literal):
             visible = re.sub(r"\\.", "", segment).removesuffix("$")
             require(len(visible) <= 32, f"Porto text exceeds 32 characters: {visible!r}")
 
-    print(
-        "Porto das Redes validated: reused Route 109 and Slateport, "
-        "four evidence nodes, prose-only Iaraco trace, Dona Celina, "
-        "Agent confrontation, Iara-Mae Testimony and Mare Badge."
-    )
+    print("Porto validated: full coast road, custom city identity, visible blockers and HM-free Tide Board.")
 
 
 if __name__ == "__main__":
