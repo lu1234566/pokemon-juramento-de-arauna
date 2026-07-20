@@ -299,3 +299,24 @@ AraunaPorto_Text_ClosedBuildingSign::
 AraunaPorto_Text_BoardWorkshopSign::
 	.string "BOARD AND BOAT WORKSHOP\p"
 	.string "TOOLS FOR CALM WATER$"
+
+AraunaPorto_Text_HouseOfTideDoor::
+	.string "The HOUSE OF TIDE is closed.\p"
+	.string "CELINA receives visitors beside\n"
+	.string "the fishers' memorial.$"
+
+AraunaPorto_Text_EvacuatedHouseDoor::
+	.string "This house was evacuated after\n"
+	.string "the channel paled.$"
+
+AraunaPorto_Text_NetGuildDoor::
+	.string "NETMAKERS' GUILD CLOSED\p"
+	.string "Repairs moved to the market.$"
+
+AraunaPorto_Text_ConsortiumPostDoor::
+	.string "CONSORTIUM PERMIT POST\p"
+	.string "AUTHORIZED PERSONNEL ONLY$"
+
+AraunaPorto_Text_HarborOfficeDoor::
+	.string "HARBOR OFFICE CLOSED\p"
+	.string "Orders moved to the permit post.$"
