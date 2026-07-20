@@ -10,25 +10,26 @@ This workstream implements the non-Pokémon portion of the third hands-on test f
 2. Zila's notebook existed only in dialogue and could not be opened by the player.
 3. The prologue ended with a direct script warp to Route 109, removing the feeling of travel.
 4. Slateport still communicated its original identity more strongly than Porto das Redes.
-5. Route and city progression still depended too much on invisible script transitions.
-6. The Emerald HM structure needs to become a visible tool-and-permission structure.
+5. Route and city progression depended too much on invisible script transitions.
+6. Emerald's HM structure needed to become a visible tool-and-permission structure.
 
-## First implementation batch
+## Implemented
 
 ### Vila Amanhecer exit
 
-- removes the hidden unconditional route warp;
-- assigns the route script to both visible east-opening tiles `(18, 11)` and `(19, 11)`;
-- keeps the story lock on those same tiles;
-- removes the bounce-prone destination warp at the bottom of Mist Route.
+- removed the hidden unconditional route warp;
+- assigned the route script to both visible east-opening tiles `(18, 11)` and `(19, 11)`;
+- kept the story lock on those same visible tiles;
+- removed the bounce-prone destination warp at the bottom of Mist Route;
+- preserved the original Emerald-derived layout and collision data.
 
-A player who does not know the map should now find the exit by following the road artwork rather than searching nearby floor tiles.
+A player who does not know the map can now find the exit by following the road artwork instead of searching nearby floor tiles.
 
 ### Zila's Notebook
 
 The unused Fame Checker key-item slot is presented as **Zila's Notebook** without changing the save layout or shifting the global item table.
 
-The notebook is given after the partner choice and appears in **Key Items**. Using it displays a page selected from current story variables and flags. The first version reports:
+The notebook is given after the care-first partner choice and appears in **Key Items**. Using it displays a page selected from current story variables and flags. It reports:
 
 - current objective;
 - Mist Route field progress;
@@ -36,81 +37,118 @@ The notebook is given after the partner choice and appears in **Key Items**. Usi
 - Porto investigation traces;
 - Consortium confrontation state;
 - Iara-Mãe Testimony;
-- Maré and Uivo Badge chapter state.
+- Maré and Uivo Badge chapter state;
+- Tide Board collection state.
 
-This is deliberately a functional text interface first. A bespoke illustrated notebook UI can replace it later without changing its story data contract.
+The first implementation uses Emerald's text interface. A bespoke illustrated notebook screen can later replace the presentation without changing the story-data contract.
 
 ### Physical progression toward Porto
 
-The direct Vila Amanhecer → Route 109 warp is removed.
+The direct Vila Amanhecer → Route 109 warp and Ciro's instant-travel prompt were removed.
 
 The current handoff is:
 
 ```text
 Vila Amanhecer east opening
 → Mist Route traversal
-→ old coast road using Route 110's Emerald layout
-→ Porto das Redes through Slateport's existing north connection
+→ Old Coast Road using Route 110's Emerald layout
+→ Porto das Redes using Slateport's Emerald layout
 ```
 
-The player is told to travel on foot, and the Porto arrival state is recorded only when the ridge toward the coast road is crossed.
+The player enters Route 110 at its northern end and must cross the complete southbound road. Porto arrival is recorded only after entering the city from that road.
 
-## Next commits in this workstream
+### Old Coast Road
 
-### Coast Road pass
+Route 110 retains its original blockdata but now has an Arauna-specific event composition:
 
-Route 110 will retain its original blockdata but receive an Arauna-specific event pass:
+- Team Aqua, Birch, rival, cycling challenge and incompatible Hoenn trainers were removed from the map event layer;
+- building warps and the Route 103 side connection were removed for this campaign slice;
+- cycling and the vanilla map-name popup were disabled;
+- civilians describe migration, pale water, sealed cargo and Consortium traffic;
+- existing signs were reassigned to Porto, field-station and checkpoint information;
+- two useful items remain reachable;
+- the full walking distance is preserved;
+- the northern road is closed by visible workers, a Consortium checkpoint and a complete trigger line, preventing early Mauville access.
 
-- remove or hide incompatible Team Aqua and Hoenn story events;
-- rewrite route NPC dialogue around migration, pale water and Consortium traffic;
-- rebalance or replace incompatible trainer encounters;
-- add an explicit northern road closure so Mauville cannot be entered early;
-- keep the full southbound walking distance instead of placing the player beside Porto.
+The blocker uses the existing reserved flag `0x4F`, exposed to Arauna C code and scripts as `FLAG_ARAUNA_NORTH_ROAD_REOPENED` while retaining the canonical expansion flag table.
 
-### Porto das Redes visual and identity pass
+### Porto das Redes identity pass
 
-Slateport's layout will be edited rather than merely renamed. The pass will reuse Emerald tiles and existing map structure while changing the readable composition:
+Slateport's blockdata remains the city foundation, but the playable event composition is now Porto-specific:
 
-- stronger fishing-dock foreground;
-- nets, crates, boats and repair spaces;
-- fisher memorial landmark;
-- Consortium permit post and warning signs;
-- House of Tide landmark for Dona Celina;
-- pale-water visual treatment where technically safe;
-- removal or reassignment of commercial and Hoenn-specific NPC clutter;
-- custom Porto arrival text with the vanilla Slateport identity suppressed.
+- the `SLATEPORT CITY` popup is suppressed;
+- only the coast-road and shoreline connections remain active;
+- Team Aqua and unrelated commercial/story NPC clutter were removed;
+- Dona Celina, the Consortium Agent and dockworker story witnesses remain in their approved locations;
+- Ciro, a boatbuilder, net menders, fishers, a memorial keeper and harbor workers populate the city;
+- signs identify Porto das Redes, the House of Tide, fishers' memorial, permit post, net market and board workshop;
+- custom arrival text explicitly establishes that residents call the place Porto das Redes even though an old Slateport sign remains;
+- only the Pokémon Center, Mart, shipyard workshop and one house remain open in this slice.
+
+This pass changes the city's readable identity and progression while continuing to reuse Emerald art and map foundations. A later tile-composition pass can add more visible nets, crates, memorial details and pale-water tiles after visual playtesting.
 
 ### Visible progression blockers
 
-Unimplemented exits will be blocked by visible causes instead of invisible coordinates:
+The first persistent blocker is implemented on the north end of the Old Coast Road:
 
-- road worker and landslide;
-- closed Consortium checkpoint;
-- damaged bridge;
-- warning board and physical barricade;
-- weather hazard with an NPC explanation.
+- two road workers;
+- one Consortium checkpoint agent;
+- a closure sign;
+- a nine-tile trigger line with no walkable gap;
+- dialogue explaining the landslide, structural repairs and restricted corridor.
 
-Each blocker will use a persistent story flag and disappear only when its route is implemented.
+The same pattern is now the required architecture for future incomplete routes: a visible cause, an explanatory NPC or sign, and a persistent flag that removes the obstruction only when the destination is implemented.
 
-### Field tools instead of HMs
+### Tide Board instead of field Surf
 
-The first planned conversion is the **Board**:
+The unused Devon Scope slot is presented as the permanent **Tide Board** Key Item.
 
-- permanent Key Item;
-- obtained through a Porto story event;
-- authorizes water movement without teaching Surf to a Pokémon;
-- reuses Emerald's water movement internally;
-- Surf remains available as a battle move, not a field obligation.
+- it is awarded by Porto's boatbuilder after the Maré Badge;
+- it is visible and readable in the Key Items pocket;
+- the notebook directs the player to collect it;
+- its permission flag satisfies calm-water access even if no party member knows Surf;
+- facing calm water branches to dedicated Tide Board dialogue and reuses Emerald's existing water-movement field effect;
+- Surf remains available as a battle move and as a fallback field method;
+- strong-current restrictions remain separate and are not bypassed by the Board.
 
 The same architecture can later support cutting tools, climbing equipment, a diving kit and transportation permits.
 
-## Acceptance rules for the next playable build
+## Validation added or updated
 
-- no hidden tile may be the only way to leave Vila Amanhecer;
-- the notebook must be visible and usable from Key Items;
-- the main objective must update after major story flags;
-- Ciro must not offer instant travel to Porto;
-- reaching Porto must require traversing at least one full Emerald-derived route;
-- incompatible vanilla story exits must be visibly blocked;
-- Porto must not introduce itself to the player as Slateport City;
-- no Pokémon art is changed in this workstream.
+The repository-safety suite now checks:
+
+- visible Vila Amanhecer exit alignment;
+- absence of the direct Porto teleport;
+- Mist Route evidence and coast-road handoff;
+- full Old Coast Road blocker coverage;
+- removal of incompatible Team Aqua objects;
+- Porto-specific arrival and reduced city event composition;
+- Zila's Notebook item overrides and dynamic pages;
+- Tide Board reward, item identity and field-permission routing;
+- English-first runtime text rather than obsolete full label parity;
+- current Ciro prologue conclusion instead of the removed Nilo epilogue contract;
+- current partner-choice respawn and repeatable healing flow.
+
+## Acceptance state
+
+Implemented in source:
+
+- no hidden tile is the only way to leave Vila Amanhecer;
+- the notebook is visible and usable from Key Items;
+- the main objective updates after major story flags;
+- Ciro does not offer instant travel to Porto;
+- reaching Porto requires traversing a full Emerald-derived route;
+- incompatible northern progression is visibly blocked;
+- Porto does not introduce itself through the vanilla Slateport popup;
+- calm-water travel no longer requires teaching Surf;
+- no Pokémon art was changed in this workstream.
+
+Still required before merging the draft PR:
+
+- successful ARM compilation;
+- successful engine test runner execution;
+- new-save mGBA playthrough from Dona Zila's house through Porto;
+- visual inspection of all new object placements and city/route collision behavior;
+- confirmation that the Tide Board water-entry animation behaves correctly with every possible lead-party state.
+
+GitHub Actions jobs are currently terminating before their first recorded step, with no runner logs or artifacts. The PR therefore remains a draft and no build or emulator success is claimed.
