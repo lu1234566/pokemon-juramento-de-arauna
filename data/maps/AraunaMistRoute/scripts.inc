@@ -80,6 +80,7 @@ AraunaMistRoute_EventScript_ReturnToVillage::
 	end
 
 AraunaMistRoute_EventScript_FinishSurvey::
+	goto_if_ge VAR_ARAUNA_STORY_STAGE, 8, AraunaMistRoute_EventScript_ContinueToCoastRoad
 	goto_if_ge VAR_ARAUNA_STORY_STAGE, 6, AraunaMistRoute_EventScript_ReturnToVillage
 	goto_if_ge VAR_ARAUNA_STORY_STAGE, 5, AraunaMistRoute_EventScript_CompleteSurvey
 	lockall
@@ -94,6 +95,18 @@ AraunaMistRoute_EventScript_CompleteSurvey::
 	msgbox AraunaMistRoute_Text_SurveyComplete, MSGBOX_DEFAULT
 	setvar VAR_ARAUNA_STORY_STAGE, 6
 	goto AraunaMistRoute_EventScript_ReturnToVillage
+
+AraunaMistRoute_EventScript_ContinueToCoastRoad::
+	lockall
+	goto_if_ge VAR_ARAUNA_ARC_STAGE, 10, AraunaMistRoute_EventScript_CoastRoadReady
+	setvar VAR_ARAUNA_ARC_STAGE, 10
+	setflag FLAG_ARAUNA_PORTO_ARRIVED
+
+AraunaMistRoute_EventScript_CoastRoadReady::
+	msgbox AraunaMistRoute_Text_CoastRoad, MSGBOX_DEFAULT
+	warp MAP_ROUTE110, 255, 17, 96
+	waitstate
+	end
 
 AraunaMistRoute_Movement_StepBackFromSurvey:
 	walk_down
