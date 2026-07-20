@@ -28,6 +28,15 @@ def object_at(data: dict, x: int, y: int, graphics: str) -> dict:
     return matches[0]
 
 
+def bg_script_at(data: dict, x: int, y: int) -> str:
+    matches = [
+        event["script"] for event in data["bg_events"]
+        if event["x"] == x and event["y"] == y
+    ]
+    require(len(matches) == 1, f"expected one background event at ({x}, {y})")
+    return matches[0]
+
+
 def main() -> None:
     shoreline = json.loads(read("data/maps/Route109/map.json"))
     coast = json.loads(read("data/maps/Route110/map.json"))
@@ -68,6 +77,32 @@ def main() -> None:
     require(not any(obj["graphics_id"] in forbidden_graphics for obj in coast["object_events"]),
             "vanilla Team Aqua objects remain on the coast road")
 
+    inactive_doors = {
+        (10, 12): "AraunaPorto_EventScript_HouseOfTideDoor",
+        (5, 19): "AraunaPorto_EventScript_EvacuatedHouseDoor",
+        (4, 26): "AraunaPorto_EventScript_NetGuildDoor",
+        (30, 26): "AraunaPorto_EventScript_ConsortiumPostDoor",
+        (31, 26): "AraunaPorto_EventScript_ConsortiumPostDoor",
+        (28, 12): "AraunaPorto_EventScript_HarborOfficeDoor",
+        (40, 7): "AraunaPorto_EventScript_HarborOfficeDoor",
+    }
+    for coordinates, expected_script in inactive_doors.items():
+        require(
+            bg_script_at(city, *coordinates) == expected_script,
+            f"inactive Porto doorway {coordinates} is not visibly explained",
+        )
+
+    for coordinates in ((20, 19), (21, 19)):
+        require(
+            bg_script_at(city, *coordinates) == "SlateportCity_EventScript_PokemonCenterSign",
+            f"open Pokemon Center sign is missing at {coordinates}",
+        )
+    for coordinates in ((14, 26), (15, 26)):
+        require(
+            bg_script_at(city, *coordinates) == "SlateportCity_EventScript_PokeMartSign",
+            f"open Poke Mart sign is missing at {coordinates}",
+        )
+
     traces = {
         (event["x"], event["y"])
         for event in shoreline["coord_events"]
@@ -105,6 +140,8 @@ def main() -> None:
     require("FLAG_ARAUNA_COAST_ROAD_ENTERED" in coast_scripts, "coast-road arrival is not persistent")
     require("FLAG_ARAUNA_PORTO_ARRIVED" in runtime, "Porto arrival is not recorded in the city")
     require("AraunaPorto_EventScript_RoadArrival" in runtime, "custom Porto arrival script is missing")
+    for script in set(inactive_doors.values()):
+        require(script in runtime, f"closed-door runtime is missing {script}")
 
     custom_route = shoreline_scripts.split("@ Arauna reuses Route 109", 1)[1]
     require("showmonpic" not in custom_route, "unapproved Iaraco art is forced on the shoreline")
@@ -159,6 +196,11 @@ def main() -> None:
         "AraunaPorto_Text_IaraMaeTestimony::",
         "AraunaPorto_Text_MareBadgeReceived::",
         "AraunaPorto_Text_BoardReceived::",
+        "AraunaPorto_Text_HouseOfTideDoor::",
+        "AraunaPorto_Text_EvacuatedHouseDoor::",
+        "AraunaPorto_Text_NetGuildDoor::",
+        "AraunaPorto_Text_ConsortiumPostDoor::",
+        "AraunaPorto_Text_HarborOfficeDoor::",
     ):
         require(label in text, f"missing Porto text label: {label}")
     require("Your dead are cleaned by memory." in text, "approved Iara-Mae line is missing")
@@ -167,7 +209,10 @@ def main() -> None:
             visible = re.sub(r"\\.", "", segment).removesuffix("$")
             require(len(visible) <= 32, f"Porto text exceeds 32 characters: {visible!r}")
 
-    print("Porto validated: full coast road, custom city identity, visible blockers and HM-free Tide Board.")
+    print(
+        "Porto validated: full coast road, custom city identity, legible reused "
+        "doorways, visible blockers and HM-free Tide Board."
+    )
 
 
 if __name__ == "__main__":
