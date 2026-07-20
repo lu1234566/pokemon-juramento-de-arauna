@@ -11,7 +11,7 @@ on:
   pull_request:
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: project-ci-${{ github.ref }}
@@ -27,132 +27,103 @@ env:
 jobs:
   repository-safety:
     runs-on: ubuntu-latest
-    env:
-      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
-      - name: Clone requested branch without marketplace actions
-        shell: bash
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Reject ROMs, saves, patches and secrets
+        run: bash scripts/check_no_proprietary_files.sh
+      - name: Validate localized text sources
+        run: python3 scripts/check_localization.py
+      - name: Validate English runtime
+        run: python3 tools/arauna/validate_english_runtime.py
+      - name: Validate packed Arauna Fakemon Dex
+        run: python3 tools/arauna/validate_packed_arauna_dex.py
+      - name: Validate vertical slice map shells
+        run: python3 scripts/validate_vertical_slice_shells.py
+      - name: Verify reproducible vanilla Araucaria village
         run: |
-          set -o pipefail
-          HEAD_REF="${GITHUB_HEAD_REF:-${GITHUB_REF_NAME}}"
-          git clone --depth 1 --branch "$HEAD_REF" \
-            "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" repo \
-            2>&1 | tee repository-safety.log
-      - name: Run repository-safety suite
-        shell: bash
+          python3 scripts/generate_arauna_vanilla_village.py --out /tmp/arauna-village-map.bin
+          cmp /tmp/arauna-village-map.bin data/layouts/AraunaMapLab/map.bin
+      - name: Validate Arauna opening flow
+        run: python3 scripts/validate_arauna_opening.py
+      - name: Validate Mist Route story
+        run: python3 scripts/validate_mist_route_story.py
+      - name: Validate First Link choice
+        run: python3 scripts/validate_first_link_choice.py
+      - name: Validate First Link chamber
+        run: python3 scripts/validate_first_link_chamber.py
+      - name: Validate prologue conclusion
+        run: python3 scripts/validate_vertical_slice_epilogue.py
+      - name: Validate Porto das Redes map reuse
+        run: python3 scripts/validate_arauna_porto_reuse.py
+      - name: Validate accepted playtest world progression
+        run: python3 scripts/validate_playtest_feedback_world_progression.py
+      - name: Validate Serra do Uivo map reuse
+        run: python3 scripts/validate_arauna_serra_reuse.py
+      - name: Validate second ROM test package
+        run: python3 scripts/validate_second_rom_test.py
+      - name: Validate story-masked badge trials
+        run: python3 scripts/validate_masked_badge_trials.py
+      - name: Validate Mist Route encounters
+        run: python3 scripts/validate_mist_route_encounters.py
+      - name: Validate capture onboarding
+        run: python3 scripts/validate_capture_onboarding.py
+      - name: Validate safe recovery
+        run: python3 scripts/validate_safe_recovery.py
+      - name: Validate Araucaria art assets
+        run: python3 scripts/validate_araucaria_art.py
+      - name: Validate Codespaces configuration
         run: |
-          set +e
-          cd repo
-          bash scripts/run_repository_safety.sh ../repository-safety-suite.log
-          status=$?
-          cd ..
-          cat repository-safety-suite.log >> repository-safety.log
-          echo "$status" > repository-safety.status
-          exit 0
-      - name: Publish repository-safety diagnostics
-        shell: bash
-        run: |
-          python3 - <<'PY'
-          import base64, json, os, urllib.request
-          path = f"ci-logs/{os.environ['GITHUB_RUN_ID']}-repository-safety.log"
-          content = open("repository-safety.log", "rb").read()
-          payload = json.dumps({
-              "message": f"ci: save repository safety diagnostics for run {os.environ['GITHUB_RUN_ID']} [skip ci]",
-              "content": base64.b64encode(content).decode(),
-              "branch": "ci-diagnostics",
-          }).encode()
-          request = urllib.request.Request(
-              f"https://api.github.com/repos/{os.environ['GITHUB_REPOSITORY']}/contents/{path}",
-              data=payload,
-              method="PUT",
-              headers={
-                  "Authorization": f"Bearer {os.environ['GH_TOKEN']}",
-                  "Accept": "application/vnd.github+json",
-                  "X-GitHub-Api-Version": "2022-11-28",
-                  "Content-Type": "application/json",
-              },
-          )
-          with urllib.request.urlopen(request) as response:
-              print(response.status, path)
-          PY
-      - name: Enforce repository-safety result
-        shell: bash
-        run: test "$(cat repository-safety.status)" = "0"
+          python3 -m json.tool .devcontainer/devcontainer.json >/dev/null
+          bash -n .devcontainer/setup-visual-tools.sh
+          bash -n scripts/open_visual_tools.sh
 
   build-and-test:
     runs-on: ubuntu-latest
-    env:
-      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
-      - name: Clone requested branch without marketplace actions
-        shell: bash
-        run: |
-          set -o pipefail
-          HEAD_REF="${GITHUB_HEAD_REF:-${GITHUB_REF_NAME}}"
-          git clone --depth 1 --branch "$HEAD_REF" \
-            "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" repo \
-            2>&1 | tee build-and-test.log
+      - name: Checkout
+        uses: actions/checkout@v4
+
       - name: Install build dependencies
-        shell: bash
         run: |
-          set -o pipefail
-          sudo apt-get update 2>&1 | tee -a build-and-test.log
+          sudo apt-get update
           sudo apt-get install -y --no-install-recommends \
             binutils-arm-none-eabi \
             gcc-arm-none-eabi \
             libnewlib-arm-none-eabi \
             libpng-dev \
             pkg-config \
-            python3 2>&1 | tee -a build-and-test.log
-      - name: Build and run engine tests
-        shell: bash
-        run: |
-          set +e
-          cd repo
-          set -o pipefail
-          make ARAUNA_LANGUAGE=ENGLISH -j$(nproc) -O all 2>&1 | tee ../build.log
-          build_status=${PIPESTATUS[0]}
-          test_status=99
-          if [ "$build_status" = "0" ]; then
-            TEST=1 make ARAUNA_LANGUAGE=ENGLISH -j$(nproc) check 2>&1 | tee ../engine-tests.log
-            test_status=${PIPESTATUS[0]}
-          else
-            : > ../engine-tests.log
-          fi
-          cd ..
-          cat build.log engine-tests.log >> build-and-test.log
-          printf '%s %s\n' "$build_status" "$test_status" > build-and-test.status
-          exit 0
-      - name: Publish build diagnostics
-        shell: bash
-        run: |
-          python3 - <<'PY'
-          import base64, json, os, urllib.request
-          path = f"ci-logs/{os.environ['GITHUB_RUN_ID']}-build-and-test.log"
-          content = open("build-and-test.log", "rb").read()
-          payload = json.dumps({
-              "message": f"ci: save build diagnostics for run {os.environ['GITHUB_RUN_ID']} [skip ci]",
-              "content": base64.b64encode(content).decode(),
-              "branch": "ci-diagnostics",
-          }).encode()
-          request = urllib.request.Request(
-              f"https://api.github.com/repos/{os.environ['GITHUB_REPOSITORY']}/contents/{path}",
-              data=payload,
-              method="PUT",
-              headers={
-                  "Authorization": f"Bearer {os.environ['GH_TOKEN']}",
-                  "Accept": "application/vnd.github+json",
-                  "X-GitHub-Api-Version": "2022-11-28",
-                  "Content-Type": "application/json",
-              },
-          )
-          with urllib.request.urlopen(request) as response:
-              print(response.status, path)
-          PY
-      - name: Enforce build and test results
-        shell: bash
-        run: |
-          read -r build_status test_status < build-and-test.status
-          test "$build_status" = "0"
-          test "$test_status" = "0"
-          test -f repo/pokeemerald-en.gba
+            python3
+
+      - name: Cache generated build tools
+        uses: actions/cache@v4
+        with:
+          path: |
+            tools/bin2c/bin2c
+            tools/gbafix/gbafix
+            tools/gbagfx/gbagfx
+            tools/jsonproc/jsonproc
+            tools/mapjson/mapjson
+            tools/mid2agb/mid2agb
+            tools/preproc/preproc
+            tools/ramscrgen/ramscrgen
+            tools/rsfont/rsfont
+            tools/scaninc/scaninc
+            tools/trainerproc/trainerproc
+            tools/compresSmol/compresSmol
+            tools/compresSmol/compresSmolTilemap
+            tools/wav2agb/wav2agb
+            tools/patchelf/patchelf
+            tools/mgba-rom-test-hydra/mgba-rom-test-hydra
+          key: arauna-tools-${{ runner.os }}-${{ hashFiles('tools/*/Makefile', 'tools/**/*.c', 'tools/**/*.cpp', 'tools/**/*.h') }}
+
+      - name: Build English Emerald
+        run: make ARAUNA_LANGUAGE=ENGLISH -j$(nproc) -O all
+
+      - name: Run engine tests
+        env:
+          TEST: 1
+        run: make ARAUNA_LANGUAGE=ENGLISH -j$(nproc) check
+
+      - name: Confirm English ROM exists locally
+        run: test -f pokeemerald-en.gba
