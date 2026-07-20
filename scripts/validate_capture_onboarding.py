@@ -1,16 +1,14 @@
 #!/usr/bin/env python3
-"""Validate Arauna's provisional 386-slot Dex and one-time field kit."""
+"""Validate Arauna's English-first Dex activation and one-time field kit."""
 
 from __future__ import annotations
 
 import json
-import re
 import sys
 from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-TEXT_LABEL = re.compile(r"^([A-Za-z_][A-Za-z0-9_]*):{1,2}$", re.MULTILINE)
 
 
 def fail(message: str) -> None:
@@ -38,11 +36,11 @@ def script_block(source: str, label: str, next_label: str) -> str:
 
 
 def main() -> int:
-    center = read("data/maps/AraunaResearchCenter/scripts.inc")
+    house = read("data/maps/AraunaPlayerHouse/scripts.inc")
     choice = script_block(
-        center,
-        "AraunaResearchCenter_EventScript_CompleteChoice",
-        "AraunaResearchCenter_EventScript_SelectionLocked",
+        house,
+        "AraunaPlayerHouse_EventScript_CompleteChoice",
+        "AraunaPlayerHouse_EventScript_NotebookBagFull",
     )
     require(
         choice,
@@ -51,16 +49,28 @@ def main() -> int:
             "setflag FLAG_SYS_POKEDEX_GET",
             "special SetUnlockedPokedexFlags",
             "special EnableNationalPokedex",
+            "giveitem ITEM_FAME_CHECKER",
             "AraunaResearchCenter_Text_DexActivated",
         ),
-        "starter completion",
+        "care-first partner completion",
     )
     if not (
         choice.index("setflag FLAG_SYS_POKEDEX_GET")
         < choice.index("special EnableNationalPokedex")
         < choice.index("AraunaResearchCenter_Text_DexActivated")
     ):
-        fail("the Dex must unlock before its confirmation message")
+        fail("the full Arauna Dex must unlock before its confirmation message")
+
+    bag_full = script_block(
+        house,
+        "AraunaPlayerHouse_EventScript_NotebookBagFull",
+        "AraunaPlayerHouse_EventScript_AssignRemainingStarters",
+    )
+    require(
+        bag_full,
+        ("AraunaPlayerHouse_Text_NotebookBagFull", "AraunaResearchCenter_Text_DexActivated"),
+        "notebook bag-full fallback",
+    )
 
     village = read("data/maps/AraunaMapLab/scripts.inc")
     kit = script_block(
@@ -104,24 +114,34 @@ def main() -> int:
     if "FLAG_ARAUNA_MAP_LAB_FIELD_KIT_TAKEN" not in flags:
         fail("the persistent field-kit flag is missing")
 
-    pt_opening = read("data/text/arauna/pt_br/opening.inc")
-    en_opening = read("data/text/arauna/en/opening.inc")
-    if TEXT_LABEL.findall(pt_opening) != TEXT_LABEL.findall(en_opening):
-        fail("opening text labels must match between Portuguese and English")
-    require(pt_opening, ("DEX DE ARAUNA", "386 slots", "substitutos"), "Portuguese Dex text")
-    require(en_opening, ("ARAUNA DEX", "386 slots", "placeholders"), "English Dex text")
+    english_opening = read("data/text/arauna/en/opening.inc")
+    require(
+        english_opening,
+        (
+            "THE ARAUNA DEX",
+            "All 386 native species can now",
+            "Observe their habitats",
+            "ZILA'S NOTEBOOK",
+        ),
+        "English-first Dex disclosure",
+    )
 
-    pt_map = read("data/text/arauna/pt_br/map_lab.inc")
-    en_map = read("data/text/arauna/en/map_lab.inc")
-    if TEXT_LABEL.findall(pt_map) != TEXT_LABEL.findall(en_map):
-        fail("village text labels must match between Portuguese and English")
-    require(pt_map, ("5 POKé BALLS", "3 POTIONS", "KIT está selado"), "Portuguese kit text")
-    require(en_map, ("5 POKé BALLS", "3 POTIONS", "KIT is sealed"), "English kit text")
+    english_map = read("data/text/arauna/en/map_lab.inc")
+    require(
+        english_map,
+        (
+            "5 POKé BALLS and 3 POTIONS",
+            "The FIELD KIT is sealed.",
+            "Choose your partner at DONA",
+            "ZILA's house first.",
+        ),
+        "English field-kit text",
+    )
 
     print(
-        "Validated one-time starter-gated field kit, 5 Poke Balls, 3 Potions, "
-        "provisional 386-slot National Dex, bilingual disclosure, persistent "
-        "object removal, and official graphics only."
+        "Validated care-first full-Dex activation, Zila notebook delivery, "
+        "one-time starter-gated field kit, 5 Poke Balls, 3 Potions, persistent "
+        "object removal, and English-first runtime disclosure."
     )
     return 0
 
