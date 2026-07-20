@@ -52,7 +52,7 @@ def main() -> None:
     celina = object_at(city, 20, 37, "OBJ_EVENT_GFX_OLD_WOMAN")
     agent = object_at(city, 28, 13, "OBJ_EVENT_GFX_SCIENTIST_1")
     dockworker = object_at(city, 37, 41, "OBJ_EVENT_GFX_SAILOR")
-    builder = object_at(city, 26, 40, "OBJ_EVENT_GFX_SHIP_CAPTAIN")
+    builder = object_at(city, 26, 40, "OBJ_EVENT_GFX_SAILOR")
     require(fisher["script"] == "AraunaPorto_EventScript_FisherWitness", "shoreline witness changed")
     require(celina["script"] == "AraunaPorto_EventScript_DonaCelina", "Dona Celina object changed")
     require(agent["script"] == "AraunaPorto_EventScript_ConsortiumAgent", "Consortium Agent object changed")
@@ -80,6 +80,14 @@ def main() -> None:
     require(north_blocks == {(x, 4) for x in range(13, 22)}, "north road blocker has gaps")
     require(any(obj["script"] == "Route110_EventScript_ConsortiumCheckpoint" for obj in coast["object_events"]),
             "north closure lacks a visible checkpoint")
+    require(all(
+        obj["flag"] == "FLAG_UNUSED_0x04F"
+        for obj in coast["object_events"]
+        if obj["script"] in {
+            "Route110_EventScript_NorthRoadWorker",
+            "Route110_EventScript_ConsortiumCheckpoint",
+        }
+    ), "visible north blockers must use the reserved 0x4F object flag")
     require(coast["warp_events"] == [], "vanilla Route 110 building warps remain accessible")
 
     village_scripts = read("data/maps/AraunaMapLab/scripts.inc")
