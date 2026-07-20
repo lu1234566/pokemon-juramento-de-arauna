@@ -237,8 +237,6 @@ static inline struct ItemSlot GetBagItemIdAndQuantity(enum Pocket pocketId, u32 
 
 void ApplyNewEncryptionKeyToBagItems(u32 newKey);
 void SetBagItemsPointers(void);
-u8 *CopyItemName(enum Item itemId, u8 *dst);
-u8 *CopyItemNameHandlePlural(enum Item itemId, u8 *dst, u32 quantity);
 bool32 IsBagPocketNonEmpty(enum Pocket pocketId);
 bool32 CheckBagHasItem(enum Item itemId, u16 count);
 bool32 HasAtLeastOneBerry(void);
@@ -263,13 +261,19 @@ bool32 AddPyramidBagItem(enum Item itemId, u16 count);
 bool32 RemovePyramidBagItem(enum Item itemId, u16 count);
 
 #ifdef ITEM_C_IMPLEMENTATION
+u8 *CopyItemName(enum Item itemId, u8 *dst);
+u8 *CopyItemNameHandlePlural(enum Item itemId, u8 *dst, u32 quantity);
 const u8 *GetItemName(enum Item itemId);
 const u8 *GetItemDescription(enum Item itemId);
 ItemUseFunc GetItemFieldFunc(enum Item itemId);
 #else
+u8 *AraunaCopyItemName(enum Item itemId, u8 *dst);
+u8 *AraunaCopyItemNameHandlePlural(enum Item itemId, u8 *dst, u32 quantity);
 const u8 *AraunaGetItemName(enum Item itemId);
 const u8 *AraunaGetItemDescription(enum Item itemId);
 ItemUseFunc AraunaGetItemFieldFunc(enum Item itemId);
+#define CopyItemName AraunaCopyItemName
+#define CopyItemNameHandlePlural AraunaCopyItemNameHandlePlural
 #define GetItemName AraunaGetItemName
 #define GetItemDescription AraunaGetItemDescription
 #define GetItemFieldFunc AraunaGetItemFieldFunc
