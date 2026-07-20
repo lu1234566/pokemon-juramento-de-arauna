@@ -47,6 +47,10 @@ void SetPlayerAvatarStateMask(u8 flags);
 u16 GetPlayerAvatarGraphicsIdByStateId(u8 state);
 u8 GetJumpSpecialMovementAction(u32);
 bool8 PartyHasMonWithSurf(void);
+#ifndef ARAUNA_FIELD_PLAYER_AVATAR_IMPLEMENTATION
+bool8 AraunaPartyHasMonWithSurf(void);
+#define PartyHasMonWithSurf AraunaPartyHasMonWithSurf
+#endif
 bool8 IsPlayerFacingSurfableFishableWater(void);
 bool8 IsPlayerSurfingNorth(void);
 void SetPlayerAvatarWatering(enum Direction direction);
