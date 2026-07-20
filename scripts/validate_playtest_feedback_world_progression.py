@@ -1,12 +1,5 @@
 #!/usr/bin/env python3
-"""Static checks for the third hands-on playtest feedback batch.
-
-This validator intentionally covers only non-Pokemon work:
-- the two visible east-exit tiles in Vila Amanhecer;
-- removal of the direct Vila -> Route 109 story teleport;
-- physical handoff through Mist Route and Route 110;
-- Zila's Notebook as a usable Key Item and progress reader.
-"""
+"""Static checks for the accepted non-Pokemon playtest feedback batch."""
 
 from __future__ import annotations
 
@@ -27,15 +20,21 @@ def load_json(path: str) -> dict:
 
 def main() -> None:
     village = load_json("data/maps/AraunaMapLab/map.json")
-    route = load_json("data/maps/AraunaMistRoute/map.json")
+    mist = load_json("data/maps/AraunaMistRoute/map.json")
+    coast = load_json("data/maps/Route110/map.json")
+    porto = load_json("data/maps/SlateportCity/map.json")
+
     village_scripts = read("data/maps/AraunaMapLab/scripts.inc")
-    route_scripts = read("data/maps/AraunaMistRoute/scripts.inc")
+    mist_scripts = read("data/maps/AraunaMistRoute/scripts.inc")
     house_scripts = read("data/maps/AraunaPlayerHouse/scripts.inc")
+    runtime = read("data/scripts/arauna_porto_runtime.inc")
     item_header = read("include/item.h")
     item_use_header = read("include/item_use.h")
     overrides = read("src/arauna_item_overrides.c")
     notebook = read("src/arauna_notebook.c")
-    config = read("config.mk")
+    field_tools = read("src/arauna_field_tools.c")
+    surf = read("data/scripts/surf.inc")
+    build_config = read("config.mk")
 
     east_exit_tiles = {
         (event["x"], event["y"])
@@ -43,30 +42,40 @@ def main() -> None:
         if event["script"] == "AraunaMapLab_EventScript_EnterMistRoute"
     }
     assert east_exit_tiles == {(18, 11), (19, 11)}, east_exit_tiles
-
-    hidden_route_warps = [
-        event for event in village["warp_events"]
-        if event["dest_map"] == "MAP_ARAUNA_MIST_ROUTE"
-    ]
-    assert not hidden_route_warps, hidden_route_warps
-
+    assert not [event for event in village["warp_events"] if event["dest_map"] == "MAP_ARAUNA_MIST_ROUTE"]
     assert "warp MAP_ROUTE109" not in village_scripts
     assert "AraunaMapLab_EventScript_OfferPortoTravel" not in village_scripts
     assert "warp MAP_ARAUNA_MIST_ROUTE, 255, 10, 17" in village_scripts
 
-    assert route["warp_events"] == []
-    assert "warp MAP_ROUTE110" in route_scripts
-    assert "FLAG_ARAUNA_PORTO_ARRIVED" in route_scripts
-    assert "AraunaMistRoute_Text_CoastRoad" in route_scripts
+    assert mist["warp_events"] == []
+    assert "warp MAP_ROUTE110, 255, 17, 9" in mist_scripts
+    assert "FLAG_ARAUNA_PORTO_ARRIVED" not in mist_scripts
+    assert "AraunaMistRoute_Text_CoastRoad" in mist_scripts
+
+    assert coast["layout"] == "LAYOUT_ROUTE110"
+    assert not coast["show_map_name"]
+    assert not coast["allow_cycling"]
+    assert any(obj["script"] == "Route110_EventScript_ConsortiumCheckpoint" for obj in coast["object_events"])
+    assert porto["layout"] == "LAYOUT_SLATEPORT_CITY"
+    assert not porto["show_map_name"]
+    assert len(porto["object_events"]) < 15
+    assert "FLAG_ARAUNA_PORTO_ARRIVED" in runtime
+    assert "AraunaPorto_EventScript_RoadArrival" in runtime
 
     assert "giveitem ITEM_FAME_CHECKER" in house_scripts
+    assert "giveitem ITEM_DEVON_SCOPE" in runtime
     assert "ItemUseOutOfBattle_AraunaNotebook" in item_use_header
-    assert "ITEM_FAME_CHECKER" in overrides
-    assert "Zila's Notebook" in overrides
+    assert "ItemUseOutOfBattle_AraunaBoard" in item_use_header
+    assert "ITEM_FAME_CHECKER" in overrides and "Zila's Notebook" in overrides
+    assert "ITEM_DEVON_SCOPE" in overrides and "Tide Board" in overrides
     assert "GetAraunaNotebookPage" in notebook
     assert "FLAG_ARAUNA_TESTIMONY_IARA_MAE" in notebook
-    assert "build/%/src/item.o: CPPFLAGS += -DITEM_C_IMPLEMENTATION" in config
+    assert "FLAG_ARAUNA_BOARD_RECEIVED" in notebook
+    assert "AraunaPartyHasMonWithSurf" in field_tools
+    assert "EventScript_UseTideBoard" in surf
 
+    assert "build/%/src/item.o: CPPFLAGS += -DITEM_C_IMPLEMENTATION" in build_config
+    assert "ARAUNA_FIELD_PLAYER_AVATAR_IMPLEMENTATION" in build_config
     for accessor in (
         "CopyItemName",
         "CopyItemNameHandlePlural",
@@ -77,8 +86,8 @@ def main() -> None:
         assert f"#define {accessor} Arauna" in item_header
 
     print(
-        "Playtest feedback validation passed: visible east exit, no direct "
-        "Porto teleport, coast-road handoff, and usable Zila notebook."
+        "Playtest feedback validated: visible Vila exit, physical coast travel, "
+        "Porto identity, dynamic notebook and HM-free Tide Board."
     )
 
 
