@@ -188,6 +188,7 @@ AraunaPlayerHouse_EventScript_CompleteChoice::
 	setflag FLAG_RECEIVED_RUNNING_SHOES
 	setflag FLAG_ADVENTURE_STARTED
 	special SetUnlockedPokedexFlags
+	special EnableNationalPokedex
 	setrespawn HEAL_LOCATION_ARAUNA_RESEARCH_CENTER
 	call AraunaPlayerHouse_EventScript_AssignRemainingStarters
 	setvar VAR_ARAUNA_STORY_STAGE, 2
@@ -198,6 +199,7 @@ AraunaPlayerHouse_EventScript_CompleteChoice::
 	msgbox AraunaPlayerHouse_Text_NotebookReceived, MSGBOX_DEFAULT
 	call AraunaResearchCenter_EventScript_GiveSecondTestCandies
 	msgbox AraunaPlayerHouse_Text_CensusInvitation, MSGBOX_DEFAULT
+	msgbox AraunaResearchCenter_Text_DexActivated, MSGBOX_DEFAULT
 	release
 	end
 
@@ -205,6 +207,7 @@ AraunaPlayerHouse_EventScript_NotebookBagFull::
 	msgbox AraunaPlayerHouse_Text_NotebookBagFull, MSGBOX_DEFAULT
 	call AraunaResearchCenter_EventScript_GiveSecondTestCandies
 	msgbox AraunaPlayerHouse_Text_CensusInvitation, MSGBOX_DEFAULT
+	msgbox AraunaResearchCenter_Text_DexActivated, MSGBOX_DEFAULT
 	release
 	end
 
