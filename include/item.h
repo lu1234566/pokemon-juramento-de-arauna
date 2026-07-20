@@ -261,17 +261,28 @@ void ClearBag(void);
 u16 CountTotalItemQuantityInBag(enum Item itemId);
 bool32 AddPyramidBagItem(enum Item itemId, u16 count);
 bool32 RemovePyramidBagItem(enum Item itemId, u16 count);
+
+#ifdef ITEM_C_IMPLEMENTATION
 const u8 *GetItemName(enum Item itemId);
+const u8 *GetItemDescription(enum Item itemId);
+ItemUseFunc GetItemFieldFunc(enum Item itemId);
+#else
+const u8 *AraunaGetItemName(enum Item itemId);
+const u8 *AraunaGetItemDescription(enum Item itemId);
+ItemUseFunc AraunaGetItemFieldFunc(enum Item itemId);
+#define GetItemName AraunaGetItemName
+#define GetItemDescription AraunaGetItemDescription
+#define GetItemFieldFunc AraunaGetItemFieldFunc
+#endif
+
 u32 GetItemPrice(enum Item itemId);
 const u8 *GetItemEffect(enum Item itemId);
 enum HoldEffect GetItemHoldEffect(enum Item itemId);
 u32 GetItemHoldEffectParam(enum Item itemId);
-const u8 *GetItemDescription(enum Item itemId);
 u8 GetItemImportance(enum Item itemId);
 u8 GetItemConsumability(enum Item itemId);
 enum Pocket GetItemPocket(enum Item itemId);
 enum ItemType GetItemType(enum Item itemId);
-ItemUseFunc GetItemFieldFunc(enum Item itemId);
 enum EffectItem GetItemBattleUsage(enum Item itemId);
 u32 GetItemSecondaryId(enum Item itemId);
 u32 GetItemFlingPower(enum Item itemId);
