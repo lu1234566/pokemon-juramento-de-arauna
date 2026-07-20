@@ -193,6 +193,16 @@ AraunaPlayerHouse_EventScript_CompleteChoice::
 	setvar VAR_ARAUNA_STORY_STAGE, 2
 	special HealPlayerParty
 	msgbox AraunaPlayerHouse_Text_ZilaChosen, MSGBOX_DEFAULT
+	giveitem ITEM_FAME_CHECKER
+	goto_if_eq VAR_RESULT, FALSE, AraunaPlayerHouse_EventScript_NotebookBagFull
+	msgbox AraunaPlayerHouse_Text_NotebookReceived, MSGBOX_DEFAULT
+	call AraunaResearchCenter_EventScript_GiveSecondTestCandies
+	msgbox AraunaPlayerHouse_Text_CensusInvitation, MSGBOX_DEFAULT
+	release
+	end
+
+AraunaPlayerHouse_EventScript_NotebookBagFull::
+	msgbox AraunaPlayerHouse_Text_NotebookBagFull, MSGBOX_DEFAULT
 	call AraunaResearchCenter_EventScript_GiveSecondTestCandies
 	msgbox AraunaPlayerHouse_Text_CensusInvitation, MSGBOX_DEFAULT
 	release
