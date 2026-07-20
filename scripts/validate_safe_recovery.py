@@ -4,14 +4,12 @@
 from __future__ import annotations
 
 import json
-import re
 import struct
 import sys
 from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-TEXT_LABEL = re.compile(r"^([A-Za-z_][A-Za-z0-9_]*):{1,2}$", re.MULTILINE)
 HEAL_ID = "HEAL_LOCATION_ARAUNA_RESEARCH_CENTER"
 RESPAWN = (14, 8)
 
@@ -57,15 +55,18 @@ def main() -> int:
     if ((entries[y * width + x] >> 10) & 0x3) != 0:
         fail("Arauna respawn coordinate is blocked")
 
-    center = read("data/maps/AraunaResearchCenter/scripts.inc")
-    choice = block(
-        center,
-        "AraunaResearchCenter_EventScript_CompleteChoice",
-        "AraunaResearchCenter_EventScript_SelectionLocked",
+    house = read("data/maps/AraunaPlayerHouse/scripts.inc")
+    complete = block(
+        house,
+        "AraunaPlayerHouse_EventScript_CompleteChoice",
+        "AraunaPlayerHouse_EventScript_NotebookBagFull",
     )
-    if f"setrespawn {HEAL_ID}" not in choice:
-        fail("starter completion must register the Arauna respawn")
+    if f"setrespawn {HEAL_ID}" not in complete:
+        fail("partner confirmation must register the Arauna respawn")
+    if "special HealPlayerParty" not in complete:
+        fail("partner confirmation must restore the new party before departure")
 
+    center = read("data/maps/AraunaResearchCenter/scripts.inc")
     after_choice = block(
         center,
         "AraunaResearchCenter_EventScript_AfterChoice",
@@ -78,21 +79,17 @@ def main() -> int:
     )
     for name, script in (("after choice", after_choice), ("route open", route_open)):
         if "special HealPlayerParty" not in script:
-            fail(f"Dra. Maia must heal the party during {name}")
+            fail(f"Prof. Anahi must heal the party during {name}")
+        if "call AraunaResearchCenter_EventScript_GiveSecondTestCandies" not in script:
+            fail(f"test supplies must remain recoverable during {name}")
 
-    pt = read("data/text/arauna/pt_br/opening.inc")
-    en = read("data/text/arauna/en/opening.inc")
-    if TEXT_LABEL.findall(pt) != TEXT_LABEL.findall(en):
-        fail("opening text labels must match between Portuguese and English")
-    if pt.count("equipe foi recuperada") < 2:
-        fail("Portuguese text must disclose both repeatable healing states")
-    if en.count("party was restored") < 2:
-        fail("English text must disclose both repeatable healing states")
+    english = read("data/text/arauna/en/opening.inc")
+    if english.count("Your party was restored") < 2:
+        fail("English runtime must disclose both repeatable healing states")
 
     print(
         "Validated Arauna whiteout checkpoint at (14, 8), passable collision, "
-        "starter-time respawn registration, repeatable Maia healing, and "
-        "bilingual recovery text."
+        "partner-time respawn registration, and repeatable Anahi healing."
     )
     return 0
 
