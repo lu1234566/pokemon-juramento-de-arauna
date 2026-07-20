@@ -33,8 +33,8 @@ AraunaMapLab_Text_FieldKit::
 
 AraunaMapLab_Text_FieldKitLocked::
 	.string "The FIELD KIT is sealed.\p"
-	.string "Register a partner with\n"
-	.string "DR. MAIA first.$"
+	.string "Choose your partner at DONA\n"
+	.string "ZILA's house first.$"
 
 AraunaMapLab_Text_BagFull::
 	.string "Your BAG is full.\n"
