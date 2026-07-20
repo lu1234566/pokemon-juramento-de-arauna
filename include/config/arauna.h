@@ -12,4 +12,12 @@
 #error "ARAUNA_LANGUAGE must be ARAUNA_LANGUAGE_ENGLISH or ARAUNA_LANGUAGE_PORTUGUESE"
 #endif
 
+// Persistent Arauna aliases occupying the remaining pre-script flag slots.
+// Keeping the numeric aliases here avoids shifting Emerald's original flag table.
+#define FLAG_ARAUNA_COAST_ROAD_ENTERED      0x4B
+#define FLAG_ARAUNA_PORTO_IDENTITY_SEEN     0x4C
+#define FLAG_ARAUNA_BOARD_RECEIVED          0x4D
+#define FLAG_ARAUNA_BOARD_FIELD_UNLOCKED    0x4E
+#define FLAG_ARAUNA_NORTH_ROAD_REOPENED     0x4F
+
 #endif // GUARD_CONFIG_ARAUNA_H
