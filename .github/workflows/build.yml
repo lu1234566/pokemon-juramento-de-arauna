@@ -11,7 +11,7 @@ on:
   pull_request:
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
   group: project-ci-${{ github.ref }}
@@ -27,79 +27,132 @@ env:
 jobs:
   repository-safety:
     runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - name: Clone requested branch without marketplace actions
+        shell: bash
+        run: |
+          set -o pipefail
+          HEAD_REF="${GITHUB_HEAD_REF:-${GITHUB_REF_NAME}}"
+          git clone --depth 1 --branch "$HEAD_REF" \
+            "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" repo \
+            2>&1 | tee repository-safety.log
       - name: Run repository-safety suite
-        run: bash scripts/run_repository_safety.sh repository-safety.log
-      - name: Upload repository-safety diagnostics
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: repository-safety-log
-          path: repository-safety.log
-          if-no-files-found: warn
+        shell: bash
+        run: |
+          set +e
+          cd repo
+          bash scripts/run_repository_safety.sh ../repository-safety-suite.log
+          status=$?
+          cd ..
+          cat repository-safety-suite.log >> repository-safety.log
+          echo "$status" > repository-safety.status
+          exit 0
+      - name: Publish repository-safety diagnostics
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import base64, json, os, urllib.request
+          path = f"ci-logs/{os.environ['GITHUB_RUN_ID']}-repository-safety.log"
+          content = open("repository-safety.log", "rb").read()
+          payload = json.dumps({
+              "message": f"ci: save repository safety diagnostics for run {os.environ['GITHUB_RUN_ID']} [skip ci]",
+              "content": base64.b64encode(content).decode(),
+              "branch": "ci-diagnostics",
+          }).encode()
+          request = urllib.request.Request(
+              f"https://api.github.com/repos/{os.environ['GITHUB_REPOSITORY']}/contents/{path}",
+              data=payload,
+              method="PUT",
+              headers={
+                  "Authorization": f"Bearer {os.environ['GH_TOKEN']}",
+                  "Accept": "application/vnd.github+json",
+                  "X-GitHub-Api-Version": "2022-11-28",
+                  "Content-Type": "application/json",
+              },
+          )
+          with urllib.request.urlopen(request) as response:
+              print(response.status, path)
+          PY
+      - name: Enforce repository-safety result
+        shell: bash
+        run: test "$(cat repository-safety.status)" = "0"
 
   build-and-test:
     runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Install build dependencies
+      - name: Clone requested branch without marketplace actions
+        shell: bash
         run: |
-          sudo apt-get update
+          set -o pipefail
+          HEAD_REF="${GITHUB_HEAD_REF:-${GITHUB_REF_NAME}}"
+          git clone --depth 1 --branch "$HEAD_REF" \
+            "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" repo \
+            2>&1 | tee build-and-test.log
+      - name: Install build dependencies
+        shell: bash
+        run: |
+          set -o pipefail
+          sudo apt-get update 2>&1 | tee -a build-and-test.log
           sudo apt-get install -y --no-install-recommends \
             binutils-arm-none-eabi \
             gcc-arm-none-eabi \
             libnewlib-arm-none-eabi \
             libpng-dev \
             pkg-config \
-            python3
-
-      - name: Cache generated build tools
-        uses: actions/cache@v4
-        with:
-          path: |
-            tools/bin2c/bin2c
-            tools/gbafix/gbafix
-            tools/gbagfx/gbagfx
-            tools/jsonproc/jsonproc
-            tools/mapjson/mapjson
-            tools/mid2agb/mid2agb
-            tools/preproc/preproc
-            tools/ramscrgen/ramscrgen
-            tools/rsfont/rsfont
-            tools/scaninc/scaninc
-            tools/trainerproc/trainerproc
-            tools/compresSmol/compresSmol
-            tools/compresSmol/compresSmolTilemap
-            tools/wav2agb/wav2agb
-            tools/patchelf/patchelf
-            tools/mgba-rom-test-hydra/mgba-rom-test-hydra
-          key: arauna-tools-${{ runner.os }}-${{ hashFiles('tools/*/Makefile', 'tools/**/*.c', 'tools/**/*.cpp', 'tools/**/*.h') }}
-
-      - name: Build English Emerald
+            python3 2>&1 | tee -a build-and-test.log
+      - name: Build and run engine tests
+        shell: bash
         run: |
+          set +e
+          cd repo
           set -o pipefail
-          make ARAUNA_LANGUAGE=ENGLISH -j$(nproc) -O all 2>&1 | tee build.log
-
-      - name: Run engine tests
-        env:
-          TEST: 1
+          make ARAUNA_LANGUAGE=ENGLISH -j$(nproc) -O all 2>&1 | tee ../build.log
+          build_status=${PIPESTATUS[0]}
+          test_status=99
+          if [ "$build_status" = "0" ]; then
+            TEST=1 make ARAUNA_LANGUAGE=ENGLISH -j$(nproc) check 2>&1 | tee ../engine-tests.log
+            test_status=${PIPESTATUS[0]}
+          else
+            : > ../engine-tests.log
+          fi
+          cd ..
+          cat build.log engine-tests.log >> build-and-test.log
+          printf '%s %s\n' "$build_status" "$test_status" > build-and-test.status
+          exit 0
+      - name: Publish build diagnostics
+        shell: bash
         run: |
-          set -o pipefail
-          make ARAUNA_LANGUAGE=ENGLISH -j$(nproc) check 2>&1 | tee engine-tests.log
-
-      - name: Confirm English ROM exists locally
-        run: test -f pokeemerald-en.gba
-
-      - name: Upload build diagnostics
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: build-and-test-logs
-          path: |
-            build.log
-            engine-tests.log
-          if-no-files-found: warn
+          python3 - <<'PY'
+          import base64, json, os, urllib.request
+          path = f"ci-logs/{os.environ['GITHUB_RUN_ID']}-build-and-test.log"
+          content = open("build-and-test.log", "rb").read()
+          payload = json.dumps({
+              "message": f"ci: save build diagnostics for run {os.environ['GITHUB_RUN_ID']} [skip ci]",
+              "content": base64.b64encode(content).decode(),
+              "branch": "ci-diagnostics",
+          }).encode()
+          request = urllib.request.Request(
+              f"https://api.github.com/repos/{os.environ['GITHUB_REPOSITORY']}/contents/{path}",
+              data=payload,
+              method="PUT",
+              headers={
+                  "Authorization": f"Bearer {os.environ['GH_TOKEN']}",
+                  "Accept": "application/vnd.github+json",
+                  "X-GitHub-Api-Version": "2022-11-28",
+                  "Content-Type": "application/json",
+              },
+          )
+          with urllib.request.urlopen(request) as response:
+              print(response.status, path)
+          PY
+      - name: Enforce build and test results
+        shell: bash
+        run: |
+          read -r build_status test_status < build-and-test.status
+          test "$build_status" = "0"
+          test "$test_status" = "0"
+          test -f repo/pokeemerald-en.gba
