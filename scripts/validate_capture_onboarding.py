@@ -37,6 +37,25 @@ def script_block(source: str, label: str, next_label: str) -> str:
 
 def main() -> int:
     house = read("data/maps/AraunaPlayerHouse/scripts.inc")
+
+    zila_recovery = script_block(
+        house,
+        "AraunaPlayerHouse_EventScript_ZilaAfterChoice",
+        "AraunaPlayerHouse_EventScript_ZilaNotebookBagFull",
+    )
+    require(
+        zila_recovery,
+        (
+            "checkitem ITEM_FAME_CHECKER, 1",
+            "giveitem ITEM_FAME_CHECKER",
+            "AraunaPlayerHouse_EventScript_ZilaNotebookBagFull",
+            "AraunaPlayerHouse_Text_NotebookReceived",
+        ),
+        "Dona Zila notebook recovery",
+    )
+    if zila_recovery.index("checkitem ITEM_FAME_CHECKER, 1") > zila_recovery.index("giveitem ITEM_FAME_CHECKER"):
+        fail("Dona Zila must check ownership before retrying the notebook reward")
+
     choice = script_block(
         house,
         "AraunaPlayerHouse_EventScript_CompleteChoice",
@@ -139,7 +158,7 @@ def main() -> int:
     )
 
     print(
-        "Validated care-first full-Dex activation, Zila notebook delivery, "
+        "Validated care-first full-Dex activation, recoverable Zila notebook, "
         "one-time starter-gated field kit, 5 Poke Balls, 3 Potions, persistent "
         "object removal, and English-first runtime disclosure."
     )
