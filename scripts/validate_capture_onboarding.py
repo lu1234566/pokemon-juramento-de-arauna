@@ -118,7 +118,7 @@ def main() -> int:
     require(
         english_opening,
         (
-            "THE ARAUNA DEX",
+            "The ARAUNA DEX",
             "All 386 native species can now",
             "Observe their habitats",
             "ZILA'S NOTEBOOK",
