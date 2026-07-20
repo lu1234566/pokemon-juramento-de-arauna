@@ -3,6 +3,7 @@
 #include "item_menu.h"
 #include "item_use.h"
 #include "text.h"
+#include "config/arauna.h"
 #include "constants/flags.h"
 #include "constants/vars.h"
 
@@ -78,8 +79,15 @@ static const u8 sNotebook_PortoTestimony[] = _(
     "OBJECTIVE\n"
     "Complete the TIDE VIGIL.");
 
-static const u8 sNotebook_Serra[] = _(
+static const u8 sNotebook_CollectBoard[] = _(
     "MARE BADGE: RECORDED.\p"
+    "CURRENT OBJECTIVE\n"
+    "Collect the TIDE BOARD from\n"
+    "PORTO's boatbuilder.");
+
+static const u8 sNotebook_Serra[] = _(
+    "MARE BADGE: RECORDED.\n"
+    "TIDE BOARD: READY.\p"
     "CURRENT OBJECTIVE\n"
     "Take the inland road toward\n"
     "SERRA DO UIVO.");
@@ -90,12 +98,24 @@ static const u8 sNotebook_SerraComplete[] = _(
     "Two stories now answer\n"
     "the Starless Night.");
 
+static const u8 sBoardReady[] = _(
+    "TIDE BOARD\n"
+    "Ready for calm water.\p"
+    "Face a calm channel and press A.\n"
+    "Strong currents remain unsafe.");
+
+static const u8 sBoardNotAuthorized[] = _(
+    "The TIDE BOARD is not yet\n"
+    "authorized for field travel.");
+
 static const u8 *GetAraunaNotebookPage(void)
 {
     u16 storyStage = VarGet(VAR_ARAUNA_STORY_STAGE);
 
     if (FlagGet(FLAG_ARAUNA_BADGE_UIVO))
         return sNotebook_SerraComplete;
+    if (FlagGet(FLAG_ARAUNA_BADGE_MARE) && !FlagGet(FLAG_ARAUNA_BOARD_RECEIVED))
+        return sNotebook_CollectBoard;
     if (FlagGet(FLAG_ARAUNA_BADGE_MARE))
         return sNotebook_Serra;
     if (FlagGet(FLAG_ARAUNA_TESTIMONY_IARA_MAE))
@@ -130,4 +150,13 @@ static const u8 *GetAraunaNotebookPage(void)
 void ItemUseOutOfBattle_AraunaNotebook(u8 taskId)
 {
     DisplayItemMessage(taskId, FONT_NORMAL, GetAraunaNotebookPage(), CloseItemMessage);
+}
+
+void ItemUseOutOfBattle_AraunaBoard(u8 taskId)
+{
+    const u8 *text = FlagGet(FLAG_ARAUNA_BOARD_FIELD_UNLOCKED)
+                   ? sBoardReady
+                   : sBoardNotAuthorized;
+
+    DisplayItemMessage(taskId, FONT_NORMAL, text, CloseItemMessage);
 }
