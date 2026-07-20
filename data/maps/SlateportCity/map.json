@@ -292,6 +292,94 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "AraunaPorto_EventScript_ClosedBuildingSign"
+    },
+    {
+      "type": "sign",
+      "x": 10,
+      "y": 12,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "AraunaPorto_EventScript_HouseOfTideDoor"
+    },
+    {
+      "type": "sign",
+      "x": 5,
+      "y": 19,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "AraunaPorto_EventScript_EvacuatedHouseDoor"
+    },
+    {
+      "type": "sign",
+      "x": 4,
+      "y": 26,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "AraunaPorto_EventScript_NetGuildDoor"
+    },
+    {
+      "type": "sign",
+      "x": 30,
+      "y": 26,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "AraunaPorto_EventScript_ConsortiumPostDoor"
+    },
+    {
+      "type": "sign",
+      "x": 31,
+      "y": 26,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "AraunaPorto_EventScript_ConsortiumPostDoor"
+    },
+    {
+      "type": "sign",
+      "x": 28,
+      "y": 12,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "AraunaPorto_EventScript_HarborOfficeDoor"
+    },
+    {
+      "type": "sign",
+      "x": 40,
+      "y": 7,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "AraunaPorto_EventScript_HarborOfficeDoor"
+    },
+    {
+      "type": "sign",
+      "x": 20,
+      "y": 19,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "SlateportCity_EventScript_PokemonCenterSign"
+    },
+    {
+      "type": "sign",
+      "x": 21,
+      "y": 19,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "SlateportCity_EventScript_PokemonCenterSign"
+    },
+    {
+      "type": "sign",
+      "x": 14,
+      "y": 26,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "SlateportCity_EventScript_PokeMartSign"
+    },
+    {
+      "type": "sign",
+      "x": 15,
+      "y": 26,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "SlateportCity_EventScript_PokeMartSign"
     }
   ]
 }
