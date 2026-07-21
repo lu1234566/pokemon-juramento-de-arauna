@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - agent/integrate-priority10-npcs-v3
+  pull_request:
+    branches:
+      - agent/playtest-feedback-world-progression
   workflow_dispatch:
 
 permissions:
