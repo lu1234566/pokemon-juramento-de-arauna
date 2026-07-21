@@ -22,6 +22,7 @@ python3 scripts/generate_arauna_vanilla_village.py --out /tmp/arauna-village-map
 cmp /tmp/arauna-village-map.bin data/layouts/AraunaMapLab/map.bin 2>&1 | tee -a "$LOG_PATH"
 
 run_check "Arauna opening" python3 scripts/validate_arauna_opening.py
+run_check "Priority-10 NPC pack" python3 scripts/validate_priority10_npcs.py
 run_check "Mist Route story" python3 scripts/validate_mist_route_story.py
 run_check "First Link choice" python3 scripts/validate_first_link_choice.py
 run_check "First Link chamber" python3 scripts/validate_first_link_chamber.py

@@ -76,7 +76,7 @@ def main() -> int:
     house_map = json.loads(read("data/maps/AraunaPlayerHouse/map.json"))
     expected_graphics = [
         "OBJ_EVENT_GFX_MOM",
-        "OBJ_EVENT_GFX_SCIENTIST_1",
+        "OBJ_EVENT_GFX_REPORTER_F",
         "OBJ_EVENT_GFX_ITEM_BALL",
         "OBJ_EVENT_GFX_ITEM_BALL",
         "OBJ_EVENT_GFX_ITEM_BALL",
