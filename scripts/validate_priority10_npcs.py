@@ -18,7 +18,7 @@ OVERWORLD = {
     "graphics/object_events/pics/people/old_woman.png": (144, 32),
     "graphics/object_events/pics/people/scientist_1.png": (144, 32),
     "graphics/object_events/pics/people/sailor.png": (144, 32),
-    "graphics/object_events/pics/people/old_man.png": (144, 32),
+    "graphics/object_events/pics/people/wallace.png": (144, 32),
     "graphics/object_events/pics/people/girl_1.png": (144, 32),
     "graphics/object_events/pics/people/gentleman.png": (144, 32),
 }
@@ -137,7 +137,7 @@ def main() -> None:
         ("porto", "AraunaPorto_EventScript_DonaCelina"): "OBJ_EVENT_GFX_OLD_WOMAN",
         ("porto", "AraunaPorto_EventScript_ConsortiumAgent"): "OBJ_EVENT_GFX_SCIENTIST_1",
         ("porto", "AraunaPorto_EventScript_Dockworker"): "OBJ_EVENT_GFX_SAILOR",
-        ("porto", "AraunaPorto_EventScript_MemorialKeeper"): "OBJ_EVENT_GFX_OLD_MAN",
+        ("porto", "AraunaPorto_EventScript_MemorialKeeper"): "OBJ_EVENT_GFX_WALLACE",
         ("serra", "AraunaSerra_EventScript_LibrasChild"): "OBJ_EVENT_GFX_GIRL_1",
         ("ascent", "AraunaSerra_EventScript_DeafHermit"): "OBJ_EVENT_GFX_GENTLEMAN",
     }

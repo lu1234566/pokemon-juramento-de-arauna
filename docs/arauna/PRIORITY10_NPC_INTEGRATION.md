@@ -13,7 +13,7 @@
 | Dona Celina | `OBJ_EVENT_GFX_OLD_WOMAN` / `old_woman.png` | Porto testimony arc |
 | Compliance Agent | `OBJ_EVENT_GFX_SCIENTIST_1` / `scientist_1.png` | Consortium confrontation |
 | Dockworker | `OBJ_EVENT_GFX_SAILOR` / `sailor.png` | Porto docks |
-| Memorial fisher | `OBJ_EVENT_GFX_OLD_MAN` / `old_man.png` | Porto memorial |
+| Memorial fisher | `OBJ_EVENT_GFX_WALLACE` / `wallace.png` | Porto memorial |
 | Serra child | `OBJ_EVENT_GFX_GIRL_1` / `girl_1.png` | Serra do Uivo Libras introduction |
 | Deaf hermit | `OBJ_EVENT_GFX_GENTLEMAN` / `gentleman.png` | Route 114 ascent |
 
@@ -38,4 +38,4 @@ The package documentation requires fluent review and video reference before impl
 
 ## Known architectural limitation
 
-This first integration reuses existing Emerald graphics and trainer-picture IDs to avoid destabilizing the expansion's object tables. Those IDs can also appear in unconverted Hoenn content. Dedicated Arauna IDs remain a later cleanup task after the full map graph and character roster are stable.
+The memorial fisher uses the reserved Wallace overworld slot because Emerald's normal Old Man sheet exposes only three source frames. The other overworld characters and six battle portraits still reuse existing IDs, which can also appear in unconverted Hoenn content. Dedicated Arauna IDs remain a later cleanup task after the full map graph and character roster are stable.
