@@ -28,7 +28,7 @@ The ROM integration compiles PNG assets through the repository graphics pipeline
 
 ## Build and runtime status
 
-GitHub Actions was retried, but the runner created jobs with zero executable steps and no downloadable logs. The same infrastructure failure affected both the integration workflow and Project CI before repository commands started.
+A fresh Project CI run was triggered by commit `3cdb178ac6c464997dba973b1b667303e1cd9491` (run 827). Both `build-and-test` and `repository-safety` failed before executing a single workflow step; GitHub returned empty step lists and no downloadable logs.
 
 A clean local clone was also attempted, but the execution environment could not resolve `github.com`, so the full private repository could not be downloaded there.
 
