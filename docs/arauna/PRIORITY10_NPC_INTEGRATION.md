@@ -32,6 +32,10 @@ Six approved 64×64 indexed portraits replace reserved trainer-art slots:
 
 These files are compiled through the existing trainer-picture table, so no new image decompression path is introduced.
 
+## Validation
+
+The repository validator checks all sixteen PNG files for dimensions, indexed 8-bit encoding, transparent palette index zero, at most sixteen used palette indices, nine overworld frames and the eleven story bindings. It also rejects misspelled or absent map-object movement range fields. The same validator is part of both `scripts/run_repository_safety.sh` and the GitHub Actions repository-safety job.
+
 ## Libras guardrail
 
 The package documentation requires fluent review and video reference before implementing lexical signs. Specific LOOK / WAIT / SAFE animations are **not implemented** in this change. The Serra sequence keeps its existing non-lexical presentation and written explanation until validated references exist.
