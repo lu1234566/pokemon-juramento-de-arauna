@@ -142,6 +142,12 @@ def main() -> None:
         ("ascent", "AraunaSerra_EventScript_DeafHermit"): "OBJ_EVENT_GFX_GENTLEMAN",
     }
     maps = {"house": house, "village": village, "porto": porto, "serra": serra, "ascent": ascent}
+    for map_name, map_data in maps.items():
+        for obj in map_data["object_events"]:
+            require("movement_trange_x" not in obj and "movement_trange_y" not in obj,
+                    f"{map_name} contains a misspelled movement range field")
+            require("movement_range_x" in obj and "movement_range_y" in obj,
+                    f"{map_name} object is missing movement range fields: {obj.get('script')}")
     for (map_name, script), graphics in expected.items():
         actual = object_for_script(maps[map_name], script)["graphics_id"]
         require(actual == graphics, f"{script} uses {actual}, expected {graphics}")
