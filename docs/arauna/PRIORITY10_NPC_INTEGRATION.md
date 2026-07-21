@@ -36,6 +36,10 @@ These files are compiled through the existing trainer-picture table, so no new i
 
 The repository validator checks all sixteen PNG files for dimensions, indexed 8-bit encoding, transparent palette index zero, at most sixteen used palette indices, nine overworld frames and the eleven story bindings. It also rejects misspelled or absent map-object movement range fields. The same validator is part of both `scripts/run_repository_safety.sh` and the GitHub Actions repository-safety job.
 
+A local package-level validation was executed on 2026-07-21. It passed ZIP integrity, manifest resolution, all ten indexed overworld sheets, all six indexed trainer portraits, nine distinct non-empty engine frames per NPC, byte-for-byte GBA 4bpp packing, BGR555 palette compatibility, 12-frame-to-9-frame mapping, the targeted v2-to-v3 Compliance Agent revision and the Libras guardrail.
+
+GitHub Actions run `29790755324` was retried after this validation. Both jobs entered the queue but failed before their first workflow step, with no step list or downloadable log. This is an Actions startup/infrastructure blocker, not a compiler result. The PR remains draft until repository safety, the English ROM build and engine tests run in a clean checkout.
+
 ## Libras guardrail
 
 The package documentation requires fluent review and video reference before implementing lexical signs. Specific LOOK / WAIT / SAFE animations are **not implemented** in this change. The Serra sequence keeps its existing non-lexical presentation and written explanation until validated references exist.
