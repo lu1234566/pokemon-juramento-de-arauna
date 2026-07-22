@@ -9,7 +9,7 @@ to Arauna's smaller 386-species regional Census.
 - **386** Census entries classified;
 - **321** wild-eligible species placed at least once;
 - **0** starter, legendary, mythical, story-reserved or sensitivity-review species in random encounters;
-- **674** encounter tables checked;
+- **675** encounter tables checked;
 - core land tables expose **12-12** distinct species each.
 
 The generator prefers a different species for every slot when the biome and level curve allow it.

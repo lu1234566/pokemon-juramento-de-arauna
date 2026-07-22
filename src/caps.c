@@ -10,13 +10,42 @@ bool32 IsAraunaNextBossLevelCapAvailable(void)
     return !FlagGet(FLAG_ARAUNA_BADGE_UIVO);
 }
 
+static u32 GetFullCampaignLevelCap(void)
+{
+    // Full-campaign badge/boss curve for the Houses beyond the implemented
+    // vertical slice. The Arauna badges also set the matching FLAG_BADGE0x_GET,
+    // so the standard flag list keeps a sane target once the bespoke story caps
+    // run out. Each entry is the level cap while that badge is still unearned.
+    static const u16 sLevelCapFlagMap[][2] = {
+        {FLAG_BADGE01_GET, 15}, // Dona Celina's Mare Trial
+        {FLAG_BADGE02_GET, 19}, // Hermit's Uivo Trial
+        {FLAG_BADGE03_GET, 24},
+        {FLAG_BADGE04_GET, 29},
+        {FLAG_BADGE05_GET, 31},
+        {FLAG_BADGE06_GET, 33},
+        {FLAG_BADGE07_GET, 42},
+        {FLAG_BADGE08_GET, 46},
+        {FLAG_IS_CHAMPION,  58},
+    };
+
+    if (B_LEVEL_CAP_TYPE == LEVEL_CAP_FLAG_LIST)
+    {
+        for (u32 index = 0; index < ARRAY_COUNT(sLevelCapFlagMap); index++)
+        {
+            if (!FlagGet(sLevelCapFlagMap[index][0]))
+                return sLevelCapFlagMap[index][1];
+        }
+    }
+    return MAX_LEVEL;
+}
+
 u32 GetCurrentLevelCap(void)
 {
-    // Each target is the highest level used by the next mandatory story boss.
-    // Once the current vertical slice ends, do not invent a cap for an
-    // unimplemented boss.
+    // The implemented vertical slice uses finer story pacing than the badge
+    // list can express; once its last mandatory boss is behind us, defer to the
+    // full-campaign badge curve.
     if (!IsAraunaNextBossLevelCapAvailable())
-        return MAX_LEVEL;
+        return GetFullCampaignLevelCap();
     if (FlagGet(FLAG_ARAUNA_BADGE_MARE))
         return 27; // Hermit's Uivo Trial
     if (FlagGet(FLAG_ARAUNA_PORTO_AGENT_DEFEATED))
