@@ -38,7 +38,7 @@ brute-force overlevelling without trapping a player who wants to continue the st
 | Glacia | Arauna Boss | 5 | 50-53 | 1 |
 | Drake | Arauna Boss | 5 | 52-55 | 1 |
 | Wallace | Arauna Boss | 6 | 55-58 | 1 |
-| Tate And Liza | Arauna Double Boss | 4 | 41-42 | 2 |
+| Tate And Liza | Arauna Double Boss | 4 | 41-42 | 1 |
 
 Bosses preserve the current team data in this checkpoint. Their final species, moves and item synergy
 will be curated after the story order and biome encounter curve are locked.
