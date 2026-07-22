@@ -20,13 +20,16 @@ Este roadmap parte de uma decisão de produção: Arauna terá mapas, nomes, eve
 
 **Objetivo:** remover o cenário autoral como bloqueador sem desfazer a fundação técnica existente.
 
+**Estado (22/07):** implementado e validado por CI; falta apenas o teste real no
+mGBA, que depende do runner do Actions.
+
 - [ ] Integrar o PR de escopo depois da revisão de Lucas.
-- [ ] Marcar o passe visual autoral anterior como substituído, preservando seu histórico.
-- [ ] Criar branch limpa para a Vila das Araucárias com tilesets originais do Emerald.
-- [ ] Manter o tileset autoral antigo fora dos mapas ativos, sem exclusão destrutiva inicial.
-- [ ] Corrigir entrada da casa, entrada do laboratório, saída da vila e retorno da rota.
-- [ ] Validar colisões, warps, save/reload e retorno entre os seis mapas existentes.
-- [ ] Compilar `pt-BR` e `en` e testar no mGBA.
+- [x] Marcar o passe visual autoral anterior como substituído, preservando seu histórico.
+- [x] Criar branch limpa para a Vila das Araucárias com tilesets originais do Emerald.
+- [x] Manter o tileset autoral antigo fora dos mapas ativos, sem exclusão destrutiva inicial.
+- [x] Corrigir entrada da casa, entrada do laboratório, saída da vila e retorno da rota. *(validado por `validate_vertical_slice_shells.py`)*
+- [x] Validar colisões, warps e retorno entre os seis mapas existentes. *(automatizado; save/reload ainda exige teste no mGBA)*
+- [ ] Compilar `pt-BR` e `en` e testar no mGBA. *(bloqueado pelo runner do Actions)*
 
 **Saída:** Vila das Araucárias navegável, reconhecível como jogo de GBA e sem depender de novos gráficos de cenário.
 
@@ -34,13 +37,17 @@ Este roadmap parte de uma decisão de produção: Arauna terá mapas, nomes, eve
 
 **Objetivo:** concluir a primeira hora usando placeholders claramente identificados.
 
-- [ ] Fechar o fluxo casa–vila–centro de pesquisa–rota–ruína–câmara.
-- [ ] Implementar introdução, escolha do inicial, tutorial e rival Nilo.
-- [ ] Implementar primeira decisão de Vínculo e suas três consequências.
-- [ ] Implementar miniboss, revelação do guardião e encerramento do slice.
-- [ ] Definir encontros provisórios e curva de níveis.
-- [ ] Escrever primeiro em `pt-BR` e localizar para `en` após o fluxo estabilizar.
-- [ ] Terminar o slice sem comandos de debug.
+**Estado (22/07):** fluxo completo implementado e coberto por validadores nos dois
+idiomas. Pendência única: as 999 Rare Candies de instrumentação do segundo teste
+ainda estão no laboratório e precisam ser removidas/condicionadas antes de público.
+
+- [x] Fechar o fluxo casa–vila–centro de pesquisa–rota–ruína–câmara.
+- [x] Implementar introdução, escolha do inicial, tutorial e rival Nilo. *(validado por `validate_arauna_opening.py`)*
+- [x] Implementar primeira decisão de Vínculo e suas três consequências. *(validado por `validate_first_link_choice.py` e `validate_first_link_chamber.py`)*
+- [x] Implementar miniboss, revelação do guardião e encerramento do slice. *(validado por `validate_vertical_slice_epilogue.py`)*
+- [x] Definir encontros provisórios e curva de níveis. *(validado por `validate_mist_route_encounters.py`)*
+- [x] Escrever primeiro em `pt-BR` e localizar para `en` após o fluxo estabilizar. *(ambos passam em `check_localization.py`)*
+- [ ] Terminar o slice sem comandos de debug. *(999 Rare Candies de teste ainda presentes)*
 
 **Saída:** história jogável de 30 a 60 minutos nos dois idiomas, ainda sem exigir arte final das 386 espécies.
 
