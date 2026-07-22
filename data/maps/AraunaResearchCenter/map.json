@@ -2,7 +2,7 @@
   "id": "MAP_ARAUNA_RESEARCH_CENTER",
   "name": "AraunaResearchCenter",
   "layout": "LAYOUT_ARAUNA_RESEARCH_CENTER",
-  "music": "MUS_BIRCH_LAB",
+  "music": "MUS_OCEANIC_MUSEUM",
   "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
