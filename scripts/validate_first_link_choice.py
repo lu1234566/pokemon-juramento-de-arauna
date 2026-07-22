@@ -99,7 +99,7 @@ def main() -> int:
         if value not in en:
             fail(f"English choice text is missing {value}")
 
-    if '\t.include "data/text/arauna/ruin.inc"' not in read("data/event_scripts.s"):
+    if '#include "data/text/arauna/ruin.inc"' not in read("data/event_scripts.s"):
         fail("data/event_scripts.s must include the localized ruin bank")
 
     print(

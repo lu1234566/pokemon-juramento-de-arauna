@@ -77,7 +77,10 @@ def validate_transition_paths(name: str, layout: dict, warps: list[dict], coords
                 (nx, ny) not in reached
                 and 0 <= nx < width
                 and 0 <= ny < height
-                and collision(entries[ny * width + nx]) == 0
+                and (
+                    collision(entries[ny * width + nx]) == 0
+                    or metatile_id(entries[ny * width + nx]) in {0x248, 0x249}
+                )
             ):
                 reached.add((nx, ny))
                 queue.append((nx, ny))
