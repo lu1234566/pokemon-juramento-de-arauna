@@ -42,15 +42,19 @@ def main() -> int:
         opponents,
         [
             "#define TRAINER_ARAUNA_TECH_AGENT           856",
-            "#define TRAINERS_COUNT_EMERALD     857",
+            "#define TRAINERS_COUNT_EMERALD     861",
         ],
         "trainer constants",
     )
     trainer_data = read("src/data/trainers.party")
-    agent_block = trainer_data.split("=== TRAINER_ARAUNA_TECH_AGENT ===", 1)[-1]
-    if agent_block == trainer_data or "=== " in agent_block:
-        fail("the Arauna technical agent must be the final trainer block")
-    require(agent_block, ["Name: AGENTE", "Poochyena", "Voltorb"], "agent party")
+    if "=== TRAINER_ARAUNA_TECH_AGENT ===" not in trainer_data:
+        fail("the Arauna technical agent trainer block is missing")
+    # The Agent is no longer the last-added trainer (the Ciro rivals and the
+    # Mare/Uivo trial bosses follow it), so only its own block is inspected.
+    agent_block = trainer_data.split("=== TRAINER_ARAUNA_TECH_AGENT ===", 1)[-1].split(
+        "\n=== ", 1
+    )[0]
+    require(agent_block, ["Name: AGENT", "Seadra"], "agent party")
 
     map_data = json.loads(read("data/maps/AraunaFirstLinkChamber/map.json"))
     objects = map_data["object_events"]
@@ -110,9 +114,12 @@ def main() -> int:
     en = read("data/text/arauna/en/chamber.inc")
     if TEXT_LABEL.findall(pt) != TEXT_LABEL.findall(en):
         fail("Portuguese and English chamber labels must match")
-    if "CAMPEÃO" not in pt or "CHAMPION" not in en:
+    # PT keeps the all-caps name without the tilde: the vanilla Emerald font has
+    # no uppercase A-tilde glyph (same decision documented in
+    # validate_first_link_choice for the ruin choice labels).
+    if "CAMPEAO" not in pt or "CHAMPION" not in en:
         fail("the guardian memory must mention the missing Champion")
-    if '\t.include "data/text/arauna/chamber.inc"' not in read("data/event_scripts.s"):
+    if '#include "data/text/arauna/chamber.inc"' not in read("data/event_scripts.s"):
         fail("data/event_scripts.s must include the localized chamber bank")
 
     print(

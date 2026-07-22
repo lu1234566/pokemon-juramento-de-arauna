@@ -73,7 +73,7 @@ def main() -> None:
         "TRAINER_ARAUNA_CIRO_PIMPAU": ("Name: CIRO", "Treecko", "Level: 7"),
         "TRAINER_ARAUNA_CIRO_CARAMELO": ("Name: CIRO", "Torchic", "Level: 7"),
         "TRAINER_ARAUNA_CIRO_QUERO": ("Name: CIRO", "Mudkip", "Level: 7"),
-        "TRAINER_ARAUNA_TECH_AGENT": ("Name: AGENT", "Voltorb", "Level: 12"),
+        "TRAINER_ARAUNA_TECH_AGENT": ("Name: AGENT", "Seadra", "Level: 12"),
         "TRAINER_ARAUNA_MARE_TRIAL": ("Name: CELINA", "Level: 17"),
         "TRAINER_ARAUNA_UIVO_TRIAL": ("Name: HERMIT", "Level: 27"),
     }

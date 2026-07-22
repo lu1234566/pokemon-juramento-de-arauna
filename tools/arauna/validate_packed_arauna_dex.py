@@ -439,7 +439,7 @@ def validate_battle_profiles() -> None:
     require(not found,
             "ordinary trainer data uses protected Arauna slots: "
             + ", ".join(f"#{number:03d}" for number in sorted(found)))
-    require(party_members == 1825, f"trainer audit parsed {party_members} party members, expected 1825")
+    require(party_members == 1836, f"trainer audit parsed {party_members} party members, expected 1836")
     levels = [int(value) for value in matches(trainer_code, r"^Level:\s*(\d+)\s*$")]
     require(levels and min(levels) >= 1 and max(levels) <= 100,
             "trainer levels must remain within 1-100")
@@ -594,8 +594,11 @@ def validate_runtime_integration() -> None:
     research_center = read_text("data/maps/AraunaResearchCenter/scripts.inc")
     require("EnableNationalPokedex" not in research_center,
             "research center still enables the unstable National Dex mode")
-    require("special SetUnlockedPokedexFlags" in research_center,
-            "research center no longer unlocks the Arauna Dex")
+    # The Arauna Dex is unlocked in Dona Zila's care-first home choice, not the
+    # research center (see validate_capture_onboarding / validate_arauna_opening).
+    player_house = read_text("data/maps/AraunaPlayerHouse/scripts.inc")
+    require("special SetUnlockedPokedexFlags" in player_house,
+            "the care-first home choice no longer unlocks the Arauna Dex")
 
     strings = read_text("src/strings.c")
     require('gText_DexHoennTitle[] = _("ARAUNA DEX")' in strings,

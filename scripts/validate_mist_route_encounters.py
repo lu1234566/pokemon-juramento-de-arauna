@@ -102,7 +102,7 @@ def main() -> int:
     trainers = read("src/data/trainers.party")
     agent = trainer_block(trainers, "TRAINER_ARAUNA_TECH_AGENT")
     for token in (
-        "Voltorb",
+        "Seadra",
         "- Tackle",
         "- Charge",
         "- Eerie Impulse",
