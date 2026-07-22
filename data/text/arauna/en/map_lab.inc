@@ -8,7 +8,8 @@ AraunaMapLab_Text_EntryDeclined::
 
 AraunaMapLab_Text_TestPartner::
 	.string "Your party is empty.\p"
-	.string "Take this PIMPAU as your partner.\n"
+	.string "Take this PIMPAU as your\n"
+	.string "partner.\l"
 	.string "It will help you explore here.$"
 
 AraunaMapLab_Text_GuideIntroduction::

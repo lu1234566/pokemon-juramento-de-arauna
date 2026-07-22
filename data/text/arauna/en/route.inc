@@ -37,7 +37,8 @@ AraunaMistRoute_Text_NotebookThanks::
 AraunaMistRoute_Text_AffectedPokemon::
 	.string "The grass ahead loses its color.\p"
 	.string "A small shape trembles as a\n"
-	.string "pulse rolls down from the stones.\p"
+	.string "pulse rolls down from the\l"
+	.string "stones.\p"
 	.string "Before you can focus on it, the\n"
 	.string "shape slips into the mist.$"
 

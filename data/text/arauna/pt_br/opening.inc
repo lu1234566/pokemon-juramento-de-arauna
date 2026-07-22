@@ -109,7 +109,8 @@ AraunaPlayerHouse_Text_PimpauStory::
 	.string "para a mata poder lembrar.$"
 
 AraunaPlayerHouse_Text_PimpauPrompt::
-	.string "Sentar com PIMPAU e ficar com ele?$"
+	.string "Sentar com PIMPAU e\n"
+	.string "ficar com ele?$"
 
 AraunaPlayerHouse_Text_CarameloStory::
 	.string "CARAMELO guarda a porta de quem\n"
@@ -124,7 +125,8 @@ AraunaPlayerHouse_Text_QueroStory::
 	.string "uma vila adormecida fugir.$"
 
 AraunaPlayerHouse_Text_QueroPrompt::
-	.string "Sentar com QUERO e ficar com ele?$"
+	.string "Sentar com QUERO e\n"
+	.string "ficar com ele?$"
 
 AraunaPlayerHouse_Text_ZilaChosen::
 	.string "DONA ZILA: Esse ai te escolheu\n"
@@ -144,7 +146,8 @@ AraunaPlayerHouse_Text_BlockExit::
 
 AraunaPlayerHouse_Text_FeedAllFirst::
 	.string "Ele espera junto ao pote.\p"
-	.string "Alimente os tres antes de escolher.$"
+	.string "Alimente os tres antes de\n"
+	.string "escolher.$"
 
 AraunaPlayerHouse_Text_AlreadyChosen::
 	.string "Seu parceiro fica bem perto.\p"
@@ -207,7 +210,8 @@ AraunaResearchCenter_Text_DexActivated::
 	.string "PROF. ANAHI: A DEX DE ARAUNA\n"
 	.string "foi ativada para você.\p"
 	.string "As 386 espécies nativas agora\n"
-	.string "podem ser registradas por número.\p"
+	.string "podem ser registradas por\l"
+	.string "número.\p"
 	.string "Observe seus habitats e ajude\n"
 	.string "a completar cada registro.$"
 

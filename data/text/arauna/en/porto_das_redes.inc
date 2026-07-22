@@ -249,7 +249,8 @@ AraunaPorto_Text_CiroPortoAfterAgent::
 AraunaPorto_Text_BoardBeforeBadge::
 	.string "BOATBUILDER: This folding board\n"
 	.string "was made for calm channels.\p"
-	.string "CELINA decides who may carry one.$"
+	.string "CELINA decides who may\n"
+	.string "carry one.$"
 
 AraunaPorto_Text_BoardOffer::
 	.string "BOATBUILDER: The MARE BADGE says\n"

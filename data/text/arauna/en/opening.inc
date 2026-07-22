@@ -133,7 +133,7 @@ AraunaPlayerHouse_Text_ZilaChosen::
 	.string "You just took longer to notice.$"
 
 AraunaPlayerHouse_Text_NotebookReceived::
-	.string "DONA ZILA's NOTEBOOK was placed\n"
+	.string "DONA ZILA'S NOTEBOOK was placed\n"
 	.string "in the KEY ITEMS pocket.\p"
 	.string "Open it whenever you need the\n"
 	.string "current objective or records.$"
