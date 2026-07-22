@@ -2,7 +2,7 @@
   "id": "MAP_ARAUNA_MIST_ROUTE",
   "name": "AraunaMistRoute",
   "layout": "LAYOUT_ARAUNA_MIST_ROUTE",
-  "music": "MUS_ROUTE101",
+  "music": "MUS_ROUTE119",
   "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_ROUTE_101",
   "requires_flash": false,
