@@ -127,3 +127,14 @@ jobs:
 
       - name: Confirm English ROM exists locally
         run: test -f pokeemerald-en.gba
+
+      # ADR-014: the automatic gate never publishes the ROM. This uploads the
+      # built .gba ONLY on a manual workflow_dispatch, for the owner's private
+      # playtesting on this private repository.
+      - name: Upload playable ROM (manual test only)
+        if: ${{ always() && github.event_name == 'workflow_dispatch' && hashFiles('pokeemerald-en.gba') != '' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: pokeemerald-en-gba
+          path: pokeemerald-en.gba
+          retention-days: 7
