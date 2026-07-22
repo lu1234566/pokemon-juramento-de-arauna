@@ -4587,7 +4587,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 - Roar
 
 === TRAINER_SIDNEY ===
-Name: SIDNEY
+Name: LAZARO
 Class: Elite Four
 Pic: Elite Four Sidney
 Gender: Male
@@ -4597,48 +4597,28 @@ Double Battle: No
 AI: Arauna Boss
 Mugshot: Purple
 
-Mightyena
+Bayleef
 Level: 46
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Roar
-- Double Edge
-- Sand Attack
-- Crunch
 
-Shiftry
+Doduo
 Level: 48
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Torment
-- Double Team
-- Swagger
-- Extrasensory
 
-SPECIES_SEALEO
+Kakuna
 Level: 46
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Leech Seed
-- Feint Attack
-- Needle Arm
-- Cotton Spore
 
-SPECIES_UNOWN
+Whismur
 Level: 48
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Surf
-- Swords Dance
-- Strength
-- Facade
 
-Absol @ Sitrus Berry
+Vigoroth @ Sitrus Berry
 Level: 49
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Aerial Ace
-- Rock Slide
-- Swords Dance
-- Slash
 
 === TRAINER_PHOEBE ===
-Name: PHOEBE
+Name: ROSA
 Class: Elite Four
 Pic: Elite Four Phoebe
 Gender: Female
@@ -4648,48 +4628,28 @@ Double Battle: No
 AI: Arauna Boss
 Mugshot: Green
 
-Dusclops
+Squirtle
 Level: 48
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Shadow Punch
-- Confuse Ray
-- Curse
-- Protect
 
-Banette
+Slaking
 Level: 49
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Shadow Ball
-- Grudge
-- Will O Wisp
-- Feint Attack
 
-Sableye
+Celebi
 Level: 50
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Shadow Ball
-- Double Team
-- Night Shade
-- Feint Attack
 
-Banette
+Pelipper
 Level: 49
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Shadow Ball
-- Psychic
-- Thunderbolt
-- Facade
 
-Dusclops @ Sitrus Berry
+Exploud @ Sitrus Berry
 Level: 51
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Shadow Ball
-- Ice Beam
-- Rock Slide
-- Earthquake
 
 === TRAINER_GLACIA ===
-Name: GLACIA
+Name: CLARA
 Class: Elite Four
 Pic: Elite Four Glacia
 Gender: Female
@@ -4699,48 +4659,28 @@ Double Battle: No
 AI: Arauna Boss
 Mugshot: Pink
 
-Sealeo
+Relicanth
 Level: 50
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Encore
-- Body Slam
-- Hail
-- Ice Ball
 
-Glalie
+Nincada
 Level: 50
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Light Screen
-- Crunch
-- Icy Wind
-- Ice Beam
 
-Sealeo
+Loudred
 Level: 52
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Attract
-- Double Edge
-- Hail
-- Blizzard
 
-Glalie
+Slakoth
 Level: 52
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Shadow Ball
-- Explosion
-- Hail
-- Ice Beam
 
-Walrein @ Sitrus Berry
+Yanma @ Sitrus Berry
 Level: 53
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Surf
-- Body Slam
-- Ice Beam
-- Sheer Cold
 
 === TRAINER_DRAKE ===
-Name: DRAKE
+Name: TIBURCIO
 Class: Elite Four
 Pic: Elite Four Drake
 Gender: Male
@@ -4750,45 +4690,25 @@ Double Battle: No
 AI: Arauna Boss
 Mugshot: Blue
 
-Shelgon
+Jigglypuff
 Level: 52
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Rock Tomb
-- Dragon Claw
-- Protect
-- Double Edge
 
-SPECIES_CELEBI
+Kirlia
 Level: 54
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Double Edge
-- Dragon Breath
-- Dragon Dance
-- Aerial Ace
 
-Kingdra
+Shroomish
 Level: 53
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Smokescreen
-- Dragon Dance
-- Surf
-- Body Slam
 
-SPECIES_SEALEO
+Hariyama
 Level: 53
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Flamethrower
-- Crunch
-- Dragon Breath
-- Earthquake
 
-Salamence @ Sitrus Berry
+Gardevoir @ Sitrus Berry
 Level: 55
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Flamethrower
-- Dragon Claw
-- Rock Slide
-- Crunch
 
 === TRAINER_ROXANNE_1 ===
 Name: BENTO
@@ -6115,7 +6035,7 @@ Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_WALLACE ===
-Name: WALLACE
+Name: AUGUSTO
 Class: Champion
 Pic: Champion Wallace
 Gender: Male
@@ -6125,53 +6045,29 @@ Double Battle: No
 AI: Arauna Boss
 Mugshot: Yellow
 
-Wailord
+Parasect
 Level: 57
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Rain Dance
-- Water Spout
-- Double Edge
-- Blizzard
 
-Tentacruel
+Clefairy
 Level: 55
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Toxic
-- Hydro Pump
-- Sludge Bomb
-- Ice Beam
 
-Ludicolo
+Sandshrew
 Level: 56
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Giga Drain
-- Surf
-- Leech Seed
-- Double Team
 
-SPECIES_SHROOMISH
+Scizor
 Level: 56
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Earthquake
-- Surf
-- Amnesia
-- Hyper Beam
 
-Gyarados
+Chansey
 Level: 56
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Dragon Dance
-- Earthquake
-- Hyper Beam
-- Surf
 
-Milotic @ Sitrus Berry
+Ralts @ Sitrus Berry
 Level: 58
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Recover
-- Surf
-- Ice Beam
-- Toxic
 
 === TRAINER_ANDREW ===
 Name: ANDREW
