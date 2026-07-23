@@ -1738,6 +1738,7 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/scripts/trainer_hill.inc"
 	.include "data/scripts/test_signpost.inc"
 	.include "data/scripts/follower.inc"
+	.include "data/scripts/arauna_porto_runtime.inc"
 	.include "data/text/save.inc"
 #include "data/text/birch_speech.inc"
 #include "data/text/arauna/map_lab.inc"
