@@ -40,6 +40,8 @@ jobs:
         run: python3 tools/arauna/validate_packed_arauna_dex.py
       - name: Validate vertical slice map shells
         run: python3 scripts/validate_vertical_slice_shells.py
+      - name: Validate map symbol references
+        run: python3 scripts/validate_map_symbol_references.py
       - name: Verify reproducible vanilla Araucaria village
         run: |
           python3 scripts/generate_arauna_vanilla_village.py --out /tmp/arauna-village-map.bin
