@@ -104,101 +104,91 @@ RustboroCity_Gym_EventScript_RegisterRoxanne::
 	end
 
 RustboroCity_Gym_Text_GymGuideAdvice:
-	.string "Yo, how's it going?\p"
-	.string "Listen, my friend!\n"
-	.string "Would you like to become the CHAMPION?\p"
-	.string "I'm no TRAINER, not me, but I can\n"
-	.string "sure give you winning advice.\p"
-	.string "That's settled, then! We'll aim for the\n"
-	.string "POKéMON CHAMPIONSHIP together!\p"
-	.string "It's your job as a TRAINER to collect\n"
-	.string "GYM BADGES, am I right?\p"
-	.string "But GYM LEADERS aren't pushovers!\p"
-	.string "And that's where I come in!\n"
-	.string "I'm here to provide expert advice!\p"
-	.string "ROXANNE, the GYM LEADER, is a user\n"
-	.string "of ROCK-type POKéMON.\p"
-	.string "The ROCK type is very durable, but\n"
-	.string "it can't stand WATER-type and\l"
-	.string "GRASS-type moves.\p"
-	.string "Come see me afterwards, if you beat\n"
-	.string "the GYM LEADER.\p"
-	.string "Well, go for it!$"
+	.string "Easy, now. Catch your breath.\p"
+	.string "This is the CASA DA TERRA — the\n"
+	.string "House of the Land.\p"
+	.string "BENTO keeps the old ways of these\n"
+	.string "hills. He was walking these ridges\l"
+	.string "before your grandfolk were born.\p"
+	.string "His creatures aren't big or flashy.\n"
+	.string "They just don't fall down.\p"
+	.string "Endurance, child. The mountain wins\n"
+	.string "by outlasting the storm.\p"
+	.string "Wear him out and you'll never manage\n"
+	.string "it. Hit true, and hit early.\p"
+	.string "Go on. The Land is listening.$"
 
 RustboroCity_Gym_Text_GymGuidePostVictory:
-	.string "Whoa! What a breathtaking victory!\n"
-	.string "My cheering must've worked!\p"
-	.string "Great!\n"
-	.string "Check your TRAINER CARD.\p"
-	.string "The STONE BADGE you got should be\n"
-	.string "properly recorded on it.\p"
-	.string "In other words…\p"
-	.string "You've climbed the first step on\n"
-	.string "the stairs to the CHAMPIONSHIP!\p"
-	.string "That's got to feel awesome!$"
+	.string "You outlasted BENTO himself!\n"
+	.string "I felt these old hills hum.\p"
+	.string "The mark of the CASA DA TERRA is\n"
+	.string "yours now — the first of Arauna's\l"
+	.string "seven Seals.\p"
+	.string "One House down. Long road ahead.\n"
+	.string "Walk it well, child.$"
 
 RustboroCity_Gym_Text_JoshIntro:
-	.string "Don't take us GYM TRAINERS lightly!\n"
-	.string "I'll show you why we're better!$"
+	.string "I quarried these steps by hand.\n"
+	.string "Nobody reaches BENTO without\l"
+	.string "passing me first.$"
 
 RustboroCity_Gym_Text_JoshDefeat:
-	.string "You were too good for me…$"
+	.string "Strong footing… you've got it.$"
 
 RustboroCity_Gym_Text_JoshPostBattle:
-	.string "You haven't seen anything of the ROCK\n"
-	.string "type's terrifying power!$"
+	.string "BENTO says a hill is just patience\n"
+	.string "wearing a stone coat. You'll see\l"
+	.string "what he means soon enough.$"
 
 RustboroCity_Gym_Text_TommyIntro:
-	.string "If you can't beat me, you won't stand\n"
-	.string "a chance against ROXANNE!$"
+	.string "My folk have read this land for six\n"
+	.string "generations. Let's see if it likes\l"
+	.string "you.$"
 
 RustboroCity_Gym_Text_TommyDefeat:
-	.string "Wow! You've got some potential!$"
+	.string "The Land let you pass. Huh.$"
 
 RustboroCity_Gym_Text_TommyPostBattle:
-	.string "ROXANNE is stronger than me by\n"
-	.string "several times.\p"
-	.string "You'd better be on your guard!$"
+	.string "BENTO won't rush you and won't tire.\p"
+	.string "Beat him fast, or don't beat him\n"
+	.string "at all.$"
 
 RustboroCity_Gym_Text_MarcIntro:
-	.string "We might be in the middle of town,\n"
-	.string "but so what?\p"
-	.string "My ROCK POKéMON need room to\n"
-	.string "rampage!$"
+	.string "You came up the whole ridge for a\n"
+	.string "Seal? Then you already understand\l"
+	.string "the Land a little.$"
 
 RustboroCity_Gym_Text_MarcDefeat:
-	.string "Oh, man oh man!\n"
-	.string "Our challenger is one feisty customer!$"
+	.string "Sure-footed AND stubborn. Good.$"
 
 RustboroCity_Gym_Text_MarcPostBattle:
-	.string "I have to hand it to our LEADER.\p"
-	.string "It took smarts and sense for her to\n"
-	.string "pick the ROCK type at her young age.$"
+	.string "BENTO chose the small, tough ones on\n"
+	.string "purpose. Anyone can swing a boulder.\p"
+	.string "Not everyone can refuse to fall.$"
 
 RustboroCity_Gym_Text_RoxanneIntro:
-	.string "Hello, I am ROXANNE, the RUSTBORO\n"
-	.string "POKéMON GYM LEADER.\p"
-	.string "I became a GYM LEADER so that I might\n"
-	.string "apply what I learned at the POKéMON\l"
-	.string "TRAINER'S SCHOOL in battle.\p"
-	.string "Would you kindly demonstrate how you\n"
-	.string "battle, and with which POKéMON?$"
+	.string "So the whole ridge let you through.\p"
+	.string "I am BENTO. I keep the CASA DA TERRA,\n"
+	.string "the first Seal of Arauna.\p"
+	.string "These hands have carried more stone\n"
+	.string "than you've carried years.\p"
+	.string "My friends won't hit hard, child.\n"
+	.string "They'll simply outlast you.\p"
+	.string "Show me you can stand as long as\n"
+	.string "the mountain does.$"
 
 RustboroCity_Gym_Text_RoxanneDefeat:
-	.string "So…\n"
-	.string "I lost…\p"
-	.string "It seems that I still have much more\n"
-	.string "to learn…\p"
-	.string "I understand.\p"
-	.string "The POKéMON LEAGUE's rules state\n"
-	.string "that TRAINERS are to be given this\l"
-	.string "if they defeat a GYM LEADER.\p"
-	.string "Please accept the official POKéMON\n"
-	.string "LEAGUE STONE BADGE.$"
+	.string "Well, now…\p"
+	.string "You didn't wear down. You held your\n"
+	.string "footing and you hit true.\p"
+	.string "The mountain likes you, child. And\n"
+	.string "the mountain is a hard one to please.\p"
+	.string "Take this. You've earned the mark of\n"
+	.string "the CASA DA TERRA.$"
 
 RustboroCity_Gym_Text_ReceivedStoneBadge:
 	.string "{PLAYER} received the STONE BADGE\n"
-	.string "from ROXANNE.$"
+	.string "from BENTO.$"
 
 RustboroCity_Gym_Text_StoneBadgeInfoTakeThis:
 	.string "The STONE BADGE heightens the ATTACK\n"
@@ -218,25 +208,27 @@ RustboroCity_Gym_Text_ExplainRockTomb:
 	.string "so think before you use it.$"
 
 RustboroCity_Gym_Text_RoxannePostBattle:
-	.string "Since you are so strong, you should\n"
-	.string "challenge other GYM LEADERS.\p"
-	.string "By battling many TRAINERS, you should\n"
-	.string "learn many things.$"
+	.string "Six more Houses wait beyond these\n"
+	.string "hills, each with its own keeper and\l"
+	.string "its own hard lesson.\p"
+	.string "Walk to them slow. The Land isn't\n"
+	.string "going anywhere.$"
 
 RustboroCity_Gym_Text_GymStatue:
-	.string "RUSTBORO CITY POKéMON GYM$"
+	.string "CASA DA TERRA — the House of\n"
+	.string "the Land. Keeper: BENTO.$"
 
 RustboroCity_Gym_Text_GymStatueCertified:
-	.string "RUSTBORO CITY POKéMON GYM\p"
-	.string "ROXANNE'S CERTIFIED TRAINERS:\n"
+	.string "CASA DA TERRA\p"
+	.string "Those who outlasted the hills:\n"
 	.string "{PLAYER}$"
 
 RustboroCity_Gym_Text_RoxanneRegisterCall:
 	.string "… … … … … …\n"
 	.string "… … … … … Beep!\p"
-	.string "ROXANNE: Oh, hello, {PLAYER}?\n"
-	.string "This is ROXANNE of RUSTBORO CITY.\p"
-	.string "I heard from BRAWLY that you're\n"
+	.string "BENTO: Oh, hello, {PLAYER}?\n"
+	.string "This is BENTO of the Land House.\p"
+	.string "I heard from NABOR that you're\n"
 	.string "moving up through the ranks of\l"
 	.string "TRAINERS at an incredible clip.\p"
 	.string "Well, I'd rather not think that\n"
@@ -249,12 +241,12 @@ RustboroCity_Gym_Text_RoxanneRegisterCall:
 	.string "… … … … … Click!$"
 
 RustboroCity_Gym_Text_RegisteredRoxanne:
-	.string "Registered GYM LEADER ROXANNE\n"
+	.string "Registered GYM LEADER BENTO\n"
 	.string "in the POKéNAV.$"
 
 RustboroCity_Gym_Text_RoxannePreRematch:
-	.string "ROXANNE: I'm so glad to see you again.\n"
-	.string "I'm ROXANNE, the GYM LEADER here.\p"
+	.string "BENTO: I'm so glad to see you again.\n"
+	.string "I'm BENTO, the GYM LEADER here.\p"
 	.string "I'm sure we've both experienced many\n"
 	.string "battles since we last met.\p"
 	.string "I would like to see how much better\n"
@@ -265,14 +257,14 @@ RustboroCity_Gym_Text_RoxanneRematchDefeat:
 	.string "Again, I have lost…$"
 
 RustboroCity_Gym_Text_RoxannePostRematch:
-	.string "ROXANNE: I still have much to learn\n"
+	.string "BENTO: I still have much to learn\n"
 	.string "when it comes to battling POKéMON.\p"
 	.string "That awareness makes me love battling\n"
 	.string "all that much more!$"
 
 RustboroCity_Gym_Text_RoxanneRematchNeedTwoMons:
-	.string "ROXANNE: I'm so glad to see you again.\n"
-	.string "I'm ROXANNE, the GYM LEADER here.\p"
+	.string "BENTO: I'm so glad to see you again.\n"
+	.string "I'm BENTO, the GYM LEADER here.\p"
 	.string "I'm sure we've both experienced many\n"
 	.string "battles since we last met.\p"
 	.string "I would like to see how much better\n"

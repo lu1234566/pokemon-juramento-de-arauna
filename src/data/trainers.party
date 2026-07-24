@@ -5765,9 +5765,9 @@ Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JOSH ===
-Name: JOSH
-Class: Youngster
-Pic: Youngster
+Name: CACO
+Class: Hiker
+Pic: Hiker
 Gender: Male
 Music: Male
 Double Battle: No
@@ -5779,9 +5779,9 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Tackle
 
 === TRAINER_TOMMY ===
-Name: TOMMY
-Class: Youngster
-Pic: Youngster
+Name: JUCA
+Class: Hiker
+Pic: Hiker
 Gender: Male
 Music: Male
 Double Battle: No
@@ -10323,7 +10323,7 @@ Level: 22
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_MARC ===
-Name: MARC
+Name: DITO
 Class: Hiker
 Pic: Hiker
 Gender: Male
