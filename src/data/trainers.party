@@ -3165,7 +3165,7 @@ Level: 39
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_TAKAO ===
-Name: TAKAO
+Name: JOCA
 Class: Black Belt
 Pic: Black Belt
 Gender: Male
@@ -7602,7 +7602,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 - Sludge
 
 === TRAINER_JOCELYN ===
-Name: JOCELYN
+Name: NEUZA
 Class: Battle Girl
 Pic: Battle Girl
 Gender: Female
@@ -7615,7 +7615,7 @@ Level: 13
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_LAURA ===
-Name: LAURA
+Name: SANDRA
 Class: Battle Girl
 Pic: Battle Girl
 Gender: Female
@@ -10340,7 +10340,7 @@ Level: 8
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_BRENDEN ===
-Name: BRENDEN
+Name: VICO
 Class: Sailor
 Pic: Sailor
 Gender: Male
@@ -10353,7 +10353,7 @@ Level: 13
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_LILITH ===
-Name: LILITH
+Name: NILVA
 Class: Battle Girl
 Pic: Battle Girl
 Gender: Female
@@ -10366,7 +10366,7 @@ Level: 13
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_CRISTIAN ===
-Name: CRISTIAN
+Name: TITO
 Class: Black Belt
 Pic: Black Belt
 Gender: Male
