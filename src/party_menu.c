@@ -3196,6 +3196,9 @@ static void CursorCb_LevelCap(u8 taskId)
     sLevelCapActionActive = TRUE;
     gPartyMenuUseExitCallback = TRUE;
     UpdateMonDisplayInfoAfterRareCandy(gPartyMenu.slotId, mon);
+    // Re-buffer the nickname: the rare-candy level-up loop above overwrites
+    // gStringVar1, so without this the message shows leftover buffer garbage.
+    GetMonNickname(mon, gStringVar1);
     ConvertIntToDecimalStringN(gStringVar2, sFinalLevel, STR_CONV_MODE_LEFT_ALIGN, 3);
     StringExpandPlaceholders(gStringVar4, gText_PkmnElevatedToLvVar2);
     PlayFanfareByFanfareNum(FANFARE_LEVEL_UP);
