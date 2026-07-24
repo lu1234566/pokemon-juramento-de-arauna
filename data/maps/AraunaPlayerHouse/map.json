@@ -18,8 +18,8 @@
     {
       "local_id": "LOCALID_ARAUNA_PLAYER_HOUSE_RESPONSIBLE",
       "graphics_id": "OBJ_EVENT_GFX_MOM",
-      "x": 7,
-      "y": 7,
+      "x": 5,
+      "y": 4,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
@@ -31,28 +31,15 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SCIENTIST_1",
-      "x": 3,
+      "x": 2,
       "y": 3,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "AraunaPlayerHouse_EventScript_Anahi",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 4,
-      "y": 5,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "AraunaPlayerHouse_EventScript_Pimpau",
+      "script": "AraunaPlayerHouse_EventScript_Anahi",
       "flag": "0"
     },
     {
@@ -65,12 +52,25 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
+      "script": "AraunaPlayerHouse_EventScript_Pimpau",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 4,
+      "y": 5,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
       "script": "AraunaPlayerHouse_EventScript_Caramelo",
       "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 8,
+      "x": 5,
       "y": 5,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
