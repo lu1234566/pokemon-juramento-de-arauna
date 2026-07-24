@@ -139,7 +139,7 @@ def main() -> int:
     village = maps["AraunaMapLab"]
     village_warps = [(event["x"], event["y"]) for event in village["warp_events"]]
     village_triggers = [(event["x"], event["y"]) for event in village["coord_events"]]
-    if village_warps != [(5, 8), (14, 7)]:
+    if village_warps != [(6, 7), (14, 7)]:
         fail(f"village building anchors are misaligned: {village_warps}")
     if village_triggers != [(18, 11), (19, 11)]:
         fail(f"visible east-road triggers are misaligned: {village_triggers}")

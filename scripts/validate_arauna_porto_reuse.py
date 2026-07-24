@@ -94,12 +94,12 @@ def main() -> None:
 
     for coordinates in ((20, 19), (21, 19)):
         require(
-            bg_script_at(city, *coordinates) == "SlateportCity_EventScript_PokemonCenterSign",
+            bg_script_at(city, *coordinates) == "Common_EventScript_ShowPokemonCenterSign",
             f"open Pokemon Center sign is missing at {coordinates}",
         )
     for coordinates in ((14, 26), (15, 26)):
         require(
-            bg_script_at(city, *coordinates) == "SlateportCity_EventScript_PokeMartSign",
+            bg_script_at(city, *coordinates) == "Common_EventScript_ShowPokemartSign",
             f"open Poke Mart sign is missing at {coordinates}",
         )
 
@@ -185,8 +185,11 @@ def main() -> None:
     require("EventScript_UseTideBoard" in surf_script, "water interaction does not branch to the Tide Board")
     require("giveitem ITEM_DEVON_SCOPE" in runtime, "boatbuilder does not award the Tide Board")
 
+    # The runtime is pulled in as a top-level .include from event_scripts.s so
+    # the first preproc pass expands its FLAG_*/VAR_* macros before cpp runs.
+    require('data/scripts/arauna_porto_runtime.inc' in read("data/event_scripts.s"),
+            "Porto runtime is not included")
     wrapper = read("data/text/arauna/porto_das_redes.inc")
-    require('data/scripts/arauna_porto_runtime.inc' in wrapper, "Porto runtime is not included")
     require('data/text/arauna/en/porto_das_redes.inc' in wrapper, "English Porto text is not included")
     text = read("data/text/arauna/en/porto_das_redes.inc")
     for label in (

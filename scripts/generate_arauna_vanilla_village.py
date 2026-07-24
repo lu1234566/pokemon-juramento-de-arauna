@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
-"""Build Araucarias Village from the vanilla Emerald General/Petalburg tilesets.
+"""Build Vila Amanhecer from the vanilla Emerald General/Petalburg tilesets.
 
-The source map is Littleroot only as a library of valid metatile blocks.  The
-result moves the laboratory, removes the mirrored two-house composition, adds
-an east-facing village plaza, and preserves independent Arauna map data.
+Littleroot is used only as a library of valid metatile blocks (its house and
+laboratory, tree border, soft dirt path). The result is an authored village:
+the player's house on the west and the research centre on the east frame a
+central dirt avenue that reads straight out to the eastern forest trail, a
+short southern spur opens a small clearing to explore, and a tree line frames
+the whole clearing so the single exit is obvious.
 """
 
 from __future__ import annotations
@@ -13,148 +16,129 @@ import struct
 from collections import deque
 from pathlib import Path
 
-
 WIDTH = 20
 HEIGHT = 20
+
 GRASS = 0x3001
 FLOWER = 0x3004
+# Petalburg soft-dirt path, 9-slice
+P_FILL = 0x31D9
+P_TOP, P_TL, P_TR = 0x31D1, 0x31D0, 0x31D2
+P_L, P_R = 0x31D8, 0x31DA
+P_BOT, P_BL, P_BR = 0x31E1, 0x31E0, 0x31E2
+# Tree border 2x2 canopy unit
+TREE = ((0x05D4, 0x05D5), (0x05DC, 0x05DD))
 
 
 def read_grid(path: Path) -> list[list[int]]:
     data = path.read_bytes()
-    expected = WIDTH * HEIGHT * 2
-    if len(data) != expected:
-        raise ValueError(f"{path} must contain {expected} bytes, found {len(data)}")
     values = struct.unpack(f"<{WIDTH * HEIGHT}H", data)
     return [list(values[y * WIDTH:(y + 1) * WIDTH]) for y in range(HEIGHT)]
 
 
 def write_grid(path: Path, grid: list[list[int]]) -> None:
-    values = [value for row in grid for value in row]
+    values = [v for row in grid for v in row]
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_bytes(struct.pack(f"<{len(values)}H", *values))
 
 
-def copy_rect(
-    source: list[list[int]],
-    target: list[list[int]],
-    source_x: int,
-    source_y: int,
-    width: int,
-    height: int,
-    target_x: int,
-    target_y: int,
-) -> None:
-    snapshot = [row[source_x:source_x + width] for row in source[source_y:source_y + height]]
-    for y, row in enumerate(snapshot):
-        target[target_y + y][target_x:target_x + width] = row
+def blit(dst, block, tx, ty):
+    for y, row in enumerate(block):
+        dst[ty + y][tx:tx + len(row)] = list(row)
 
 
-def fill_rect(grid: list[list[int]], x: int, y: int, width: int, height: int, value: int) -> None:
-    for row in range(y, y + height):
-        grid[row][x:x + width] = [value] * width
+def tree_column(grid, x, y0, y1):
+    """Fill a 2-wide tree wall between rows y0..y1 (inclusive) at cols x,x+1."""
+    y = y0
+    while y <= y1:
+        for dy in range(2):
+            if y + dy <= y1:
+                for dx in range(2):
+                    grid[y + dy][x + dx] = TREE[dy][dx]
+        y += 2
 
 
-def paint_open_east_plaza(grid: list[list[int]]) -> None:
-    # Petalburg's soft path tiles: a five-tile-high plaza open to the east.
-    left, right = 3, 19
-    top, bottom = 9, 13
-    grid[top][left] = 0x31D0
-    for x in range(left + 1, right + 1):
-        grid[top][x] = 0x31D1
-    for y in range(top + 1, bottom):
-        grid[y][left] = 0x31D8
-        for x in range(left + 1, right + 1):
-            grid[y][x] = 0x31D9
-    grid[bottom][left] = 0x31E0
-    for x in range(left + 1, right + 1):
-        grid[bottom][x] = 0x31E1
-
-    # Short branch from the relocated research-center door into the plaza.
-    grid[8][13] = 0x31D8
-    grid[8][14] = 0x31D9
-    grid[8][15] = 0x31DA
-    for x in range(13, 16):
-        grid[9][x] = 0x31D9
+def path_rect(grid, x0, y0, x1, y1):
+    """Lay a soft-dirt path over the rectangle, 9-slicing edges against grass."""
+    for y in range(y0, y1 + 1):
+        for x in range(x0, x1 + 1):
+            top = y == y0
+            bot = y == y1
+            left = x == x0
+            right = x == x1
+            if top and left:      grid[y][x] = P_TL
+            elif top and right:   grid[y][x] = P_TR
+            elif bot and left:    grid[y][x] = P_BL
+            elif bot and right:   grid[y][x] = P_BR
+            elif top:             grid[y][x] = P_TOP
+            elif bot:             grid[y][x] = P_BOT
+            elif left:            grid[y][x] = P_L
+            elif right:           grid[y][x] = P_R
+            else:                 grid[y][x] = P_FILL
 
 
 def build(source_path: Path) -> list[list[int]]:
     source = read_grid(source_path)
-    grid = [row[:] for row in source]
+    house = [row[2:7] for row in source[4:9]]      # player house, door 0x0648 at rel (3,4)
+    lab = [row[3:10] for row in source[12:17]]     # Birch lab 7x5, door 0x0649 at rel (4,4)
 
-    # Capture Birch's 7 x 5 laboratory before clearing its original location.
-    laboratory = [row[3:10] for row in source[12:17]]
+    grid = [[GRASS] * WIDTH for _ in range(HEIGHT)]
 
-    # Remove the second house and the old southern laboratory footprint.
-    fill_rect(grid, 11, 3, 8, 7, GRASS)
-    fill_rect(grid, 2, 12, 9, 6, GRASS)
+    # Tree frame: top, bottom, left, and right — with a 3-tile exit gap on the
+    # east at rows 10-12 leading to the forest trail.
+    for x in range(0, WIDTH, 2):
+        blit(grid, TREE, x, 0)          # top
+        blit(grid, TREE, x, 18)         # bottom
+    tree_column(grid, 0, 2, 17)         # west wall
+    tree_column(grid, 18, 2, 9)         # east wall (above the exit)
+    tree_column(grid, 18, 13, 17)       # east wall (below the exit)
 
-    # Place the research center in the northeast, facing the central plaza.
-    for y, row in enumerate(laboratory):
-        grid[3 + y][10:17] = row
+    # Buildings: house on the west, research centre on the east.
+    blit(grid, house, 3, 3)             # door -> (6, 7)
+    blit(grid, lab, 10, 3)              # door -> (14, 7)
 
-    paint_open_east_plaza(grid)
-
-    # A small flower garden distinguishes the quieter southern clearing.
-    for x, y in ((4, 15), (5, 15), (6, 15), (4, 16), (6, 16), (8, 17), (9, 17)):
+    # Central avenue (rows 10-12) spanning west spur to the east exit.
+    path_rect(grid, 4, 10, 19, 12)
+    # Front plaza linking both doorsteps along the building fronts.
+    path_rect(grid, 6, 9, 14, 9)
+    # Door approaches down into the plaza.
+    grid[8][6] = P_FILL                 # under the house door
+    grid[8][14] = P_FILL                # under the lab door
+    # Southern spur into a small clearing to explore
+    path_rect(grid, 9, 13, 10, 16)
+    # Flower clearing at the end of the spur
+    for x, y in ((7, 15), (8, 15), (11, 15), (12, 15), (7, 16), (12, 16), (8, 17), (11, 17)):
         grid[y][x] = FLOWER
 
-    # Required anchors: vanilla animated doors and a walkable route edge.
-    anchors = {
-        "player_house": (5, 8, 0x0648),
-        "research_center": (14, 7, 0x0649),
-        "mist_route_edge": (19, 11, 0x31D9),
-    }
-    for name, (x, y, expected) in anchors.items():
-        actual = grid[y][x]
-        if actual != expected:
-            raise ValueError(f"{name} anchor at {(x, y)} is {actual:#06x}, expected {expected:#06x}")
-
-    def walkable(x: int, y: int) -> bool:
-        entry = grid[y][x]
-        collision = (entry >> 10) & 0x3
-        metatile = entry & 0x3FF
-        return collision == 0 or metatile in {0x248, 0x249}
-
-    required = {(5, 8), (14, 7), (18, 11), (19, 11)}
-    reached = {(5, 8)}
-    queue = deque(reached)
-    while queue:
-        x, y = queue.popleft()
-        for nx, ny in ((x - 1, y), (x + 1, y), (x, y - 1), (x, y + 1)):
-            if (
-                0 <= nx < WIDTH
-                and 0 <= ny < HEIGHT
-                and (nx, ny) not in reached
-                and walkable(nx, ny)
-            ):
-                reached.add((nx, ny))
-                queue.append((nx, ny))
-    missing = required - reached
-    if missing:
-        raise ValueError(f"village anchors are disconnected: {sorted(missing)}")
-
     if grid == source:
-        raise ValueError("Arauna village must not duplicate Littleroot")
+        raise ValueError("Vila Amanhecer must not duplicate Littleroot")
+
+    # Reachability: house door approach must reach the eastern trail edge.
+    def walkable(x, y):
+        e = grid[y][x]
+        return ((e >> 10) & 0x3) == 0 or (e & 0x3FF) in {0x248, 0x249}
+    start = (6, 8)
+    seen = {start}
+    q = deque([start])
+    while q:
+        x, y = q.popleft()
+        for nx, ny in ((x - 1, y), (x + 1, y), (x, y - 1), (x, y + 1)):
+            if 0 <= nx < WIDTH and 0 <= ny < HEIGHT and (nx, ny) not in seen and walkable(nx, ny):
+                seen.add((nx, ny)); q.append((nx, ny))
+    required = {(6, 8), (14, 8), (18, 11), (19, 11), (9, 16)}
+    missing = required - seen
+    if missing:
+        raise ValueError(f"village anchors disconnected: {sorted(missing)}")
     return grid
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser()
-    parser.add_argument(
-        "--source",
-        type=Path,
-        default=Path("data/layouts/LittlerootTown/map.bin"),
-    )
-    parser.add_argument(
-        "--out",
-        type=Path,
-        default=Path("data/layouts/AraunaMapLab/map.bin"),
-    )
-    args = parser.parse_args()
-    grid = build(args.source)
-    write_grid(args.out, grid)
-    print(f"wrote {args.out} ({WIDTH} x {HEIGHT}, General + Petalburg)")
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--source", type=Path, default=Path("data/layouts/LittlerootTown/map.bin"))
+    ap.add_argument("--out", type=Path, default=Path("data/layouts/AraunaMapLab/map.bin"))
+    args = ap.parse_args()
+    write_grid(args.out, build(args.source))
+    print(f"wrote {args.out} ({WIDTH} x {HEIGHT})")
 
 
 if __name__ == "__main__":
