@@ -257,103 +257,103 @@ MauvilleCity_Gym_EventScript_GymStatue::
 	end
 
 MauvilleCity_Gym_Text_GymGuideAdvice:
-	.string "Hey, how's it going, CHAMPION-\n"
-	.string "bound {PLAYER}?\p"
-	.string "WATTSON, the LEADER of MAUVILLE\n"
-	.string "GYM, uses ELECTRIC-type POKéMON.\p"
-	.string "If you challenge him with WATER-type\n"
-	.string "POKéMON, he'll zap them! Bzzt!\p"
-	.string "And, he's put in switch-controlled\n"
-	.string "doors all over his GYM! Eccentric!\p"
-	.string "Hey, go for it!$"
+	.string "So you found the CASA DAS RUÍNAS,\n"
+	.string "the House of the Old Stones.\p"
+	.string "IVO dug this place out of the serra\n"
+	.string "himself. Half archaeologist, half\l"
+	.string "madman, if you ask me.\p"
+	.string "The old ones sealed their ways with\n"
+	.string "stone levers. Throw the right ones\l"
+	.string "and the doors grind open.\p"
+	.string "His creatures are old and heavy and\n"
+	.string "slow. But so is a landslide.\p"
+	.string "Down you go, then.$"
 
 MauvilleCity_Gym_Text_GymGuidePostVictory:
-	.string "Whoa, you're electrifying!\n"
-	.string "You've powered the door open!$"
+	.string "The last door ground open!\p"
+	.string "You read these old stones like IVO\n"
+	.string "himself.$"
 
 MauvilleCity_Gym_Text_KirkIntro:
-	.string "My electric soul, it'll shatter your\n"
-	.string "dreams whole, whoa-yeahah!$"
+	.string "Twenty years I've dug these serras.\n"
+	.string "You won't just walk through.$"
 
 MauvilleCity_Gym_Text_KirkDefeat:
-	.string "That was plugged in, amped up,\n"
-	.string "over-driven electric, man!$"
+	.string "Buried under my own stubbornness…$"
 
 MauvilleCity_Gym_Text_KirkPostBattle:
-	.string "POKéMON and rock, it's all about heart,\n"
-	.string "whoa-yeah!$"
+	.string "IVO says every ruin remembers who\n"
+	.string "was patient with it.$"
 
 MauvilleCity_Gym_Text_ShawnIntro:
-	.string "I trained under WATTSON!\n"
-	.string "There ain't no way I'll lose easily!$"
+	.string "I learned to read the glyphs under\n"
+	.string "IVO. Let's see if you can read a\l"
+	.string "battle.$"
 
 MauvilleCity_Gym_Text_ShawnDefeat:
-	.string "Unplugged and turned off…$"
+	.string "The stone stayed shut for me…$"
 
 MauvilleCity_Gym_Text_ShawnPostBattle:
-	.string "WATTSON, our GYM LEADER, has been\n"
-	.string "around for a long, long time.\p"
-	.string "He was battling even before your\n"
-	.string "daddy was born, that tough coot.$"
+	.string "IVO was crawling these tunnels\n"
+	.string "before your folk were born. He knows\l"
+	.string "every seam in the rock.$"
 
 MauvilleCity_Gym_Text_BenIntro:
-	.string "This GYM's got puzzles!\n"
-	.string "Isn't it fun?$"
+	.string "Mind the levers. Pull the wrong one\n"
+	.string "and the way seals behind you.$"
 
 MauvilleCity_Gym_Text_BenDefeat:
-	.string "It's no fun to lose…$"
+	.string "You didn't even hesitate…$"
 
 MauvilleCity_Gym_Text_BenPostBattle:
-	.string "WATTSON says he likes setting up\n"
-	.string "little traps with switches.$"
+	.string "IVO rigged every door himself. Says\n"
+	.string "a ruin should test you before it\l"
+	.string "trusts you.$"
 
 MauvilleCity_Gym_Text_VivianIntro:
-	.string "With my charm and my POKéMON's moves,\n"
-	.string "you'll be shocked!$"
+	.string "These walls are older than any city.\n"
+	.string "Show them some respect — and me.$"
 
 MauvilleCity_Gym_Text_VivianDefeat:
-	.string "I'm shocked by your power!$"
+	.string "The old ones favor you. Fine.$"
 
 MauvilleCity_Gym_Text_VivianPostBattle:
-	.string "I've heard that MAUVILLE was founded\n"
-	.string "by WATTSON.\p"
-	.string "He was a TRAINER long before we\n"
-	.string "became TRAINERS.\l"
-	.string "He must know all sorts of things!$"
+	.string "They say IVO found a whole buried\n"
+	.string "town under the serra once.\p"
+	.string "He never told a soul where.$"
 
 MauvilleCity_Gym_Text_AngeloIntro:
-	.string "I love shiny things!$"
+	.string "I only came down here for the relics.\n"
+	.string "But a battle's a relic too, no?$"
 
 MauvilleCity_Gym_Text_AngeloDefeat:
-	.string "Oh…\n"
-	.string "My eyes are frazzled…$"
+	.string "Dust and defeat…$"
 
 MauvilleCity_Gym_Text_AngeloPostBattle:
-	.string "MAUVILLE GYM's WATTSON has a shiny\n"
-	.string "forehead. It makes me happy!$"
+	.string "IVO doesn't dig for gold. He digs to\n"
+	.string "hear the old ones whisper. Strange\l"
+	.string "man. Great keeper.$"
 
 MauvilleCity_Gym_Text_WattsonIntro:
-	.string "I've given up on my plans to convert\n"
-	.string "the city, I have.\p"
-	.string "And so, I put my time into making\n"
-	.string "door traps in my GYM.\p"
-	.string "Oh? Now, what are you doing here?\p"
-	.string "What's that? You say you've gotten\n"
-	.string "past all my rigged doors?\p"
-	.string "Wahahahah!\n"
-	.string "Now, that is amusing!\p"
-	.string "Then, I, WATTSON, the LEADER of\n"
-	.string "MAUVILLE GYM, shall electrify you!$"
+	.string "Down here already? And every door\n"
+	.string "ground open behind you?\p"
+	.string "Hah! Do you know how long these\n"
+	.string "stones stayed shut before I came?\p"
+	.string "I am IVO. I keep the CASA DAS RUÍNAS.\n"
+	.string "The serra's memory is my charge.\p"
+	.string "You've read my doors. Now read my\n"
+	.string "old, heavy friends — if you can!$"
 
 MauvilleCity_Gym_Text_WattsonDefeat:
-	.string "Wahahahah!\n"
-	.string "Fine, I lost!\p"
-	.string "You ended up giving me a thrill!\n"
-	.string "Take this BADGE!$"
+	.string "Hah! HAH!\p"
+	.string "The stones opened for you at every\n"
+	.string "turn. Even the last one.\p"
+	.string "Take the Seal, delver. The serra\n"
+	.string "knows your footsteps now.$"
 
 MauvilleCity_Gym_Text_ReceivedDynamoBadge:
 	.string "{PLAYER} received the DYNAMO BADGE\n"
-	.string "from WATTSON.$"
+	.string "from IVO.$"
 
 MauvilleCity_Gym_Text_ExplainDynamoBadgeTakeThis:
 	.string "With the DYNAMO BADGE, POKéMON can\n"
@@ -370,27 +370,29 @@ MauvilleCity_Gym_Text_ExplainShockWave:
 	.string "… … … … … …$"
 
 MauvilleCity_Gym_Text_RegisteredWattson:
-	.string "Registered GYM LEADER WATTSON\n"
+	.string "Registered GYM LEADER IVO\n"
 	.string "in the POKéNAV.$"
 
 MauvilleCity_Gym_Text_WattsonPostBattle:
-	.string "I swell with optimism, seeing a promising\n"
-	.string "young TRAINER like you!$"
+	.string "Go on, keep digging your way through\n"
+	.string "Arauna. The next keepers won't make\l"
+	.string "it easy either. Good!$"
 
 MauvilleCity_Gym_Text_WattsonGoForthAndEndeavor:
-	.string "Wahahahah!\n"
-	.string "Go forth and endeavor, youngster!$"
+	.string "Hah! Down the serra with you,\n"
+	.string "delver!$"
 
 MauvilleCity_Gym_Text_GymStatue:
-	.string "MAUVILLE CITY POKéMON GYM$"
+	.string "CASA DAS RUÍNAS — the House of the\n"
+	.string "Old Stones. Keeper: IVO.$"
 
 MauvilleCity_Gym_Text_GymStatueCertified:
-	.string "MAUVILLE CITY POKéMON GYM\p"
-	.string "WATTSON'S CERTIFIED TRAINERS:\n"
+	.string "CASA DAS RUÍNAS\p"
+	.string "Those who read the old doors open:\n"
 	.string "{PLAYER}$"
 
 MauvilleCity_Gym_Text_WattsonPreRematch:
-	.string "WATTSON: Ah-ha! Here at last!\n"
+	.string "IVO: Ah-ha! Here at last!\n"
 	.string "I know what you want.\l"
 	.string "You want to battle my POKéMON!\p"
 	.string "Wahahahaha!\p"
@@ -402,7 +404,7 @@ MauvilleCity_Gym_Text_WattsonRematchDefeat:
 	.string "Our batteries ran dry…$"
 
 MauvilleCity_Gym_Text_WattsonPostRematch:
-	.string "WATTSON: We'll have to recharge our\n"
+	.string "IVO: We'll have to recharge our\n"
 	.string "batteries again.\p"
 	.string "When we're fully charged up, we'll\n"
 	.string "gladly accept your challenge.\p"
@@ -410,7 +412,7 @@ MauvilleCity_Gym_Text_WattsonPostRematch:
 	.string "won't you?$"
 
 MauvilleCity_Gym_Text_WattsonRematchNeedTwoMons:
-	.string "WATTSON: Ah-ha! Here at last!\n"
+	.string "IVO: Ah-ha! Here at last!\n"
 	.string "I know what you want.\l"
 	.string "You want to battle my POKéMON!\p"
 	.string "Wahahahaha!\p"
