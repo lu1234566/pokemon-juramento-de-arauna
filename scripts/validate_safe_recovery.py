@@ -80,8 +80,6 @@ def main() -> int:
     for name, script in (("after choice", after_choice), ("route open", route_open)):
         if "special HealPlayerParty" not in script:
             fail(f"Prof. Anahi must heal the party during {name}")
-        if "call AraunaResearchCenter_EventScript_GiveSecondTestCandies" not in script:
-            fail(f"test supplies must remain recoverable during {name}")
 
     english = read("data/text/arauna/en/opening.inc")
     if english.count("Your party was restored") < 2:

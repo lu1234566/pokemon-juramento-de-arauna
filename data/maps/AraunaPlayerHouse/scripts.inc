@@ -67,7 +67,6 @@ AraunaPlayerHouse_EventScript_NightAnahi::
 	end
 
 AraunaPlayerHouse_EventScript_AnahiAfterChoice::
-	call AraunaResearchCenter_EventScript_GiveSecondTestCandies
 	msgbox AraunaPlayerHouse_Text_AnahiAfterChoice, MSGBOX_DEFAULT
 	release
 	end
@@ -211,7 +210,6 @@ AraunaPlayerHouse_EventScript_CompleteChoice::
 	giveitem ITEM_FAME_CHECKER
 	goto_if_eq VAR_RESULT, FALSE, AraunaPlayerHouse_EventScript_NotebookBagFull
 	msgbox AraunaPlayerHouse_Text_NotebookReceived, MSGBOX_DEFAULT
-	call AraunaResearchCenter_EventScript_GiveSecondTestCandies
 	msgbox AraunaPlayerHouse_Text_CensusInvitation, MSGBOX_DEFAULT
 	msgbox AraunaResearchCenter_Text_DexActivated, MSGBOX_DEFAULT
 	release
@@ -219,7 +217,6 @@ AraunaPlayerHouse_EventScript_CompleteChoice::
 
 AraunaPlayerHouse_EventScript_NotebookBagFull::
 	msgbox AraunaPlayerHouse_Text_NotebookBagFull, MSGBOX_DEFAULT
-	call AraunaResearchCenter_EventScript_GiveSecondTestCandies
 	msgbox AraunaPlayerHouse_Text_CensusInvitation, MSGBOX_DEFAULT
 	msgbox AraunaResearchCenter_Text_DexActivated, MSGBOX_DEFAULT
 	release

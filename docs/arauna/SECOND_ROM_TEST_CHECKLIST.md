@@ -34,9 +34,6 @@ custom maps.
 - [ ] Confirm Dona Zila acknowledges that the chosen partner already selected
       the player during the night.
 - [ ] Confirm Prof. Anahi integrates the Census pages into Dona Zila's notebook.
-- [ ] Immediately after confirmation, verify the Bag contains exactly **999 Rare
-      Candies**.
-- [ ] Talk to Prof. Anahi repeatedly and confirm the quantity never exceeds 999.
 - [ ] Open POKéMON, select the starter and confirm the English **LEVEL CAP**
       action is present.
 - [ ] Verify Pokedex access is enabled and the starter is recorded in the correct
@@ -45,17 +42,7 @@ custom maps.
       Littleroot Town.
 - [ ] Confirm any reachable reused Oldale shell is identified as **Amanhecer
       Post**, never Oldale Town.
-- [ ] Save, reset and reload; confirm the starter, Pokedex and candy quantity
-      persist.
-
-### Bag-full recovery
-
-This edge case is optional unless a debug save is available.
-
-- [ ] Fill the medicine pocket before starter confirmation.
-- [ ] Confirm Prof. Anahi explains that the test supplies could not be added.
-- [ ] Free one medicine slot and talk to Prof. Anahi again.
-- [ ] Confirm all 999 Rare Candies are delivered once and cannot be duplicated.
+- [ ] Save, reset and reload; confirm the starter and Pokedex state persist.
 
 ## 2. Opening route and First Link
 
@@ -88,8 +75,8 @@ This edge case is optional unless a debug save is available.
       awarded and talking to Zila retries only the battle.
 - [ ] Win the TIDE VIGIL and receive the **Maré Badge** once.
 - [ ] Confirm backtracking does not repeat the boss reward or regress flags.
-- [ ] Check encounter levels, healing access, money and item availability before
-      using Rare Candies; then record the same fights after controlled leveling.
+- [ ] Check encounter levels, healing access, money and item availability and
+      confirm the route can be cleared at natural levels.
 
 ## 4. Serra do Uivo and Uivo Badge
 
@@ -129,8 +116,6 @@ mandatory story boss:
       evolution scene and Pokédex registration occur.
 - [ ] Select a Pokémon already at or above the target and confirm its level and
       EXP are not reduced or changed.
-- [ ] Use Rare Candies at the target and confirm they cannot raise a Pokémon
-      above the current cap.
 - [ ] Defeat Ciro and confirm the target changes to Lv. 12 without requiring a
       badge or save reload.
 - [ ] Defeat the Consortium Agent and confirm the target changes to Lv. 17.
@@ -140,22 +125,20 @@ mandatory story boss:
 - [ ] Win the Uivo Badge and confirm **LEVEL CAP** is no longer offered because
       the next mandatory boss is not implemented in this vertical slice.
 
-## 6. Rare Candy progression checks
+## 6. Evolution and learnset checks
 
-Use the candies as test instrumentation, not as the expected difficulty curve.
+Level partners naturally through the campaign to reach these thresholds.
 
 - [ ] Record each starter's stats and moves before leveling.
-- [ ] Raise each starter one level at a time around every evolution threshold.
+- [ ] Raise each starter around every evolution threshold using **LEVEL CAP** or
+      in-battle EXP.
 - [ ] Confirm evolution species, art, types, abilities, learnsets and Pokédex
       registration.
 - [ ] Spot-check at least one captured Fakemon from every accessible habitat.
 - [ ] Cancel one evolution, level again and verify the evolution can be retried.
 - [ ] Check move-learning with a full moveset, including replace and decline
       paths.
-- [ ] Confirm the quantity decreases correctly and remains valid after
-      save/reload.
-- [ ] Do not use the candy-assisted results as balance approval; replay major
-      fights at natural levels before reporting difficulty.
+- [ ] Replay major fights at natural levels before reporting difficulty.
 
 ## 7. QoL regression checks
 
@@ -163,8 +146,7 @@ Use the candies as test instrumentation, not as the expected difficulty curve.
       Repel renewal.
 - [ ] Verify reusable TMs, IV/EV grades, alphabetical Move Reminder entries,
       pre-evolution moves and summary-screen renaming.
-- [ ] Confirm **LEVEL CAP** never affects unselected party members and never
-      consumes a Rare Candy.
+- [ ] Confirm **LEVEL CAP** never affects unselected party members.
 - [ ] Confirm global EXP Share remains unavailable.
 - [ ] Confirm DexNav remains unavailable.
 - [ ] Confirm nature/ability services, portable PC and fast travel remain
@@ -192,6 +174,4 @@ Severity: blocker / major / minor / cosmetic
 ```
 
 The second test is complete only when a new save can reach the Uivo Badge, save
-and reload there, and backtrack without a progression blocker. The 999 Rare
-Candies are temporary test supplies and must be removed or explicitly gated
-before a public release.
+and reload there, and backtrack without a progression blocker.
