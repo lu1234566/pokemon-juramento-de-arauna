@@ -1,15 +1,18 @@
 # Estado do projeto e trabalho restante
 
-Atualizado em 22 de julho de 2026. Este documento distingue implementação em
+Atualizado em 25 de julho de 2026. Este documento distingue implementação em
 branches de trabalho de conteúdo realmente compilado, testado e aprovado.
 
-> Nota de revisão (22/07): a suíte `repository-safety` do CI, que antes reprovava
-> em pelo menos dez passos, está **19/19 verde** (18 validadores Python + o check
-> de arquivos proprietários). Os oito chefes de ginásio, os quatro da Elite e o
-> Campeão já foram reskinados como chefes de Arauna preservando os level caps. O
-> único bloqueio remanescente é de infraestrutura: o GitHub Actions não aloca
-> runner (billing/minutos), o que impede o build real e a geração do
-> `pokeemerald-en.gba` para teste.
+> Nota de revisão (25/07): a suíte `repository-safety` do CI está **22/22 verde**
+> (validadores Python + o check de arquivos proprietários). Os oito chefes de
+> ginásio, os quatro da Elite e o Campeão já foram reskinados como chefes de
+> Arauna preservando os level caps. Desde a última revisão: os 386 cries herdados
+> foram substituídos por cries próprios sintetizados; os 999 Rare Candies de
+> instrumentação foram removidos; e 14 dos 16 sprites de NPC (9 overworld + 5
+> retratos) foram integrados após aprovação visual (só o Eremita Surdo ficou de
+> fora, aguardando nova arte). O único bloqueio remanescente é de infraestrutura:
+> o GitHub Actions não aloca runner (billing/minutos), o que impede o build real e
+> a geração do `pokeemerald-en.gba` para teste.
 
 ## Estado atual
 
@@ -26,11 +29,12 @@ branches de trabalho de conteúdo realmente compilado, testado e aprovado.
 | Level cap por campanha | Implementado | Curva completa de 8 insígnias (`GetFullCampaignLevelCap`) mais os caps de história do prólogo |
 | Sensibilidade cultural | Corrigido | Orixá (Oxum, #109) removido de dado de batalha do Agente; validadores reconciliados |
 | Artes dos Fakemon | Integradas tecnicamente na PR #47 | Aprovação visual por lotes ainda é necessária; nenhuma nova arte deve entrar sem aprovação |
-| Sprites de NPC personalizados | Prontos, não integrados | 16 assets validados em `.integration/npc_v3/`; integração aguarda aprovação (ADR-024) e runner |
+| Cries dos Fakemon | Substituídos | Os 386 cries herdados do Emerald deram lugar a cries próprios sintetizados (`tools/arauna/generate_arauna_cries.py`, determinístico por tipo/tamanho) |
+| Sprites de NPC personalizados | 14 de 16 integrados | 9 overworld + 5 retratos de treinador ligados após aprovação (ADR-024); Eremita Surdo reprovado, aguarda nova arte (mantém sprite vanilla reutilizado) |
 | QoL básica | Ativa na PR #47 | Apenas recursos sem efeito relevante sobre progressão ou formato do save |
 | QoL intermediária | Bloqueada por marco | EXP Share global, DexNav e serviços aguardam a segunda insígnia jogável |
-| Segundo teste da ROM | Preparado em branch | Save novo, percurso até a Uivo Badge e 999 Rare Candies de teste entregues uma única vez no laboratório |
-| Suíte `repository-safety` do CI | Verde (19/19) | Todos os validadores e o check de arquivos proprietários passam no head atual |
+| Segundo teste da ROM | Preparado em branch | Save novo, percurso até a Uivo Badge; QoL de LEVEL CAP por chefe (a instrumentação de 999 Rare Candies foi removida) |
+| Suíte `repository-safety` do CI | Verde (22/22) | Todos os validadores e o check de arquivos proprietários passam no head atual |
 | Build e teste do head atual | Bloqueado por infraestrutura | Primeira versão força inglês e gera `pokeemerald-en.gba`; Actions não aloca runner (billing/minutos) |
 
 ## Roster de chefes (level caps inalterados)
@@ -59,23 +63,20 @@ nome, apresentação e a equipe (espécies não protegidas de Arauna).
 
 - A versão de teste continua exclusivamente em inglês e deve gerar
   `pokeemerald-en.gba`.
-- Ao confirmar o inicial no Centro de Pesquisa, Dr. Maia entrega 999 Rare
-  Candies como suprimento temporário de teste.
-- A entrega usa uma flag exclusiva, não pode ser duplicada e volta a ser
-  oferecida ao falar com Maia somente se a mochila estava sem espaço.
 - O teste deve usar um save novo e seguir
   `docs/arauna/SECOND_ROM_TEST_CHECKLIST.md`.
+- A QoL de LEVEL CAP por chefe permite nivelar naturalmente até o cap da
+  próxima batalha obrigatória; a instrumentação de 999 Rare Candies foi
+  removida da build.
 - EXP Share global, DexNav e serviços de natureza/habilidade continuam
   desativados até o percurso ser compilado e validado no mGBA.
-- As Rare Candies são instrumentação da segunda build e devem ser removidas
-  ou condicionadas antes de uma versão pública.
 - O passo de upload do artefato já existe em `build.yml`: um `workflow_dispatch`
   manual publica o `pokeemerald-en.gba` como artefato `pokeemerald-en-gba`
   (retenção de 7 dias) assim que houver runner.
 
 ## O que falta para estabilizar a PR #47
 
-- [x] Deixar a suíte `repository-safety` verde (19/19) no head atual.
+- [x] Deixar a suíte `repository-safety` verde (22/22) no head atual.
 - [x] Executar todas as auditorias e validadores do repositório localmente.
 - [ ] Restaurar um runner capaz de iniciar o checkout ou compilar no Codespaces.
       **Bloqueio de conta:** depende de Settings → Billing → Actions do dono do
@@ -85,7 +86,8 @@ nome, apresentação e a equipe (espécies não protegidas de Arauna).
       Vínculos, miniboss, Pokédex no Centro de Pesquisa e epílogo.
 - [ ] Corrigir qualquer falha encontrada no teste real.
 - [ ] Revisar o lote visual completo; sprites não aprovados continuam candidatos.
-- [ ] Aprovar e integrar os 16 sprites de NPC de `.integration/npc_v3/` (ADR-024).
+- [x] Integrar os sprites de NPC aprovados (14 de 16; ADR-024). Falta só a nova
+      arte do Eremita Surdo.
 - [ ] Integrar a pilha de PRs na ordem correta.
 - [ ] Gerar apenas patch privado de teste, nunca uma ROM completa no repositório.
 
@@ -105,9 +107,10 @@ implementado, compilado e testado com save novo.
 ## O que falta da Pokédex e da arte
 
 - [ ] Revisar os 386 pacotes visuais em lotes aprováveis.
-- [ ] Aprovar e integrar os 16 sprites de NPC (10 overworld + 6 retratos de
-      treinador), já prontos e validados em `.integration/npc_v3/`.
-- [ ] Substituir os 386 cries herdados, que continuam como placeholders de áudio.
+- [x] Integrar os sprites de NPC aprovados (9 overworld + 5 retratos de
+      treinador). Pendente: nova arte do Eremita Surdo (overworld + retrato).
+- [x] Substituir os 386 cries herdados por cries próprios sintetizados
+      (`tools/arauna/generate_arauna_cries.py`).
 - [ ] Fazer revisão final de habitats, capturas especiais e Testemunhos contra a
       Bíblia Narrativa v1.3.
 - [ ] Validar o conjunto completo em build real e em hardware/emulador.
@@ -138,7 +141,8 @@ implementado, compilado e testado com save novo.
 ## Dependências do autor
 
 1. Aprovação visual dos Fakemon por lotes antes de considerar as artes definitivas.
-2. Aprovação da integração dos 16 sprites de NPC (ADR-024).
+2. Nova arte do Eremita Surdo (o único NPC reprovado no ADR-024); os outros 14 já
+   estão integrados.
 3. Restaurar os minutos/billing do GitHub Actions para destravar o build e a
    geração da ROM de teste.
 4. Teste manual das entradas, colisões, Pokédex, save/reload e fluxo de derrota.
