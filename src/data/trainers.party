@@ -1261,7 +1261,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 - Surf
 
 === TRAINER_RANDALL ===
-Name: RANDALL
+Name: BINGA
 Class: Cooltrainer
 Pic: Cooltrainer M
 Gender: Male
@@ -1278,7 +1278,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Wing Attack
 
 === TRAINER_PARKER ===
-Name: PARKER
+Name: NILDO
 Class: Cooltrainer
 Pic: Cooltrainer M
 Gender: Male
@@ -1295,7 +1295,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Focus Punch
 
 === TRAINER_GEORGE ===
-Name: GEORGE
+Name: JOEL
 Class: Cooltrainer
 Pic: Cooltrainer M
 Gender: Male
@@ -1312,7 +1312,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Shadow Ball
 
 === TRAINER_BERKE ===
-Name: BERKE
+Name: ADO
 Class: Cooltrainer
 Pic: Cooltrainer M
 Gender: Male
@@ -1652,7 +1652,7 @@ Level: 33
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_MARY ===
-Name: MARY
+Name: NEIDE
 Class: Cooltrainer
 Pic: Cooltrainer F
 Gender: Female
@@ -1668,7 +1668,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Shock Wave
 
 === TRAINER_ALEXIA ===
-Name: ALEXIA
+Name: SILA
 Class: Cooltrainer
 Pic: Cooltrainer F
 Gender: Female
@@ -1685,7 +1685,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Shadow Ball
 
 === TRAINER_JODY ===
-Name: JODY
+Name: LICA
 Class: Cooltrainer
 Pic: Cooltrainer F
 Gender: Female
