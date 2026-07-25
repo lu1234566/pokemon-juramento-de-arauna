@@ -51,9 +51,9 @@ def main() -> None:
     hermit = object_at(route, 19, 11)
     companion = object_at(route, 19, 12)
     lobisomem = object_at(cave, 13, 23)
-    require(child["graphics_id"] == "OBJ_EVENT_GFX_GIRL_1"
+    require(child["graphics_id"] == "OBJ_EVENT_GFX_ARAUNA_SERRA_CHILD"
             and child["script"] == "AraunaSerra_EventScript_LibrasChild",
-            "existing Fallarbor child was not reused")
+            "Serra child must use the approved Arauna overworld sprite")
     require(hermit["graphics_id"] == "OBJ_EVENT_GFX_GENTLEMAN"
             and hermit["script"] == "AraunaSerra_EventScript_DeafHermit",
             "existing Route 114 gentleman was not reused")

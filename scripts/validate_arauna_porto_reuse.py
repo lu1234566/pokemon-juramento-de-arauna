@@ -58,9 +58,9 @@ def main() -> None:
     require(not city["allow_cycling"] and not coast["allow_cycling"], "campaign route must be crossed on foot")
 
     fisher = object_at(shoreline, 33, 6, "OBJ_EVENT_GFX_OLD_MAN")
-    celina = object_at(city, 20, 37, "OBJ_EVENT_GFX_OLD_WOMAN")
-    agent = object_at(city, 28, 13, "OBJ_EVENT_GFX_SCIENTIST_1")
-    dockworker = object_at(city, 37, 41, "OBJ_EVENT_GFX_SAILOR")
+    celina = object_at(city, 20, 37, "OBJ_EVENT_GFX_ARAUNA_DONA_CELINA")
+    agent = object_at(city, 28, 13, "OBJ_EVENT_GFX_ARAUNA_COMPLIANCE_AGENT")
+    dockworker = object_at(city, 37, 41, "OBJ_EVENT_GFX_ARAUNA_DOCKWORKER")
     builder = object_at(city, 26, 40, "OBJ_EVENT_GFX_SAILOR")
     mechanic = object_at(coast, 9, 57, "OBJ_EVENT_GFX_MAN_4")
     require(fisher["script"] == "AraunaPorto_EventScript_FisherWitness", "shoreline witness changed")

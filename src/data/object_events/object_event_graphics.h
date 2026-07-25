@@ -633,3 +633,14 @@ const u16 gObjectEventPic_PidgeyOld[] = INCGFX_U16("graphics/object_events/pics/
 const u16 gObjectEventPic_ClefairyOld[] = INCGFX_U16("graphics/object_events/pics/pokemon_old/clefairy.png", ".4bpp", "-mwidth 2 -mheight 2");
 
 #endif // IS_FRLG
+
+// Arauna priority-10 NPC pack v3.
+const u32 gObjectEventPic_AraunaDonaZila[] = INCGFX_U32("graphics/object_events/pics/people/arauna/dona_zila.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u32 gObjectEventPic_AraunaProfessoraAnahi[] = INCGFX_U32("graphics/object_events/pics/people/arauna/professora_anahi.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u32 gObjectEventPic_AraunaCiroPrologue[] = INCGFX_U32("graphics/object_events/pics/people/arauna/ciro_prologo.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u32 gObjectEventPic_AraunaCiroConsorcio[] = INCGFX_U32("graphics/object_events/pics/people/arauna/ciro_consorcio.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u32 gObjectEventPic_AraunaDonaCelina[] = INCGFX_U32("graphics/object_events/pics/people/arauna/dona_celina.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u32 gObjectEventPic_AraunaComplianceAgent[] = INCGFX_U32("graphics/object_events/pics/people/arauna/agente_conformidade.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u32 gObjectEventPic_AraunaDockworker[] = INCGFX_U32("graphics/object_events/pics/people/arauna/trabalhador_cais.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u32 gObjectEventPic_AraunaMemorialFisher[] = INCGFX_U32("graphics/object_events/pics/people/arauna/pescador_memorial.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u32 gObjectEventPic_AraunaSerraChild[] = INCGFX_U32("graphics/object_events/pics/people/arauna/crianca_serra.png", ".4bpp", "-mwidth 2 -mheight 4");

@@ -16649,7 +16649,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_ARAUNA_CIRO_PIMPAU ===
 Name: CIRO
 Class: Pkmn Ranger
-Pic: Pokemon Ranger M
+Pic: Dome Ace Tucker
 Gender: Male
 Music: Cool
 Double Battle: No
@@ -16662,7 +16662,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_ARAUNA_CIRO_CARAMELO ===
 Name: CIRO
 Class: Pkmn Ranger
-Pic: Pokemon Ranger M
+Pic: Dome Ace Tucker
 Gender: Male
 Music: Cool
 Double Battle: No
@@ -16675,7 +16675,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_ARAUNA_CIRO_QUERO ===
 Name: CIRO
 Class: Pkmn Ranger
-Pic: Pokemon Ranger M
+Pic: Dome Ace Tucker
 Gender: Male
 Music: Cool
 Double Battle: No
@@ -16688,8 +16688,8 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_ARAUNA_TECH_AGENT ===
 Name: AGENT
 Class: Scientist Frlg
-Pic: Scientist Frlg
-Gender: Male
+Pic: Pike Queen Lucy
+Gender: Female
 Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
@@ -16704,7 +16704,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_ARAUNA_MARE_TRIAL ===
 Name: CELINA
 Class: Expert
-Pic: Expert F
+Pic: Arena Tycoon Greta
 Gender: Female
 Music: Intense
 Items: Super Potion

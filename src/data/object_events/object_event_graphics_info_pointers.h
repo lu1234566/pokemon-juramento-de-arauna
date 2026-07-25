@@ -401,6 +401,17 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnusedMauvi
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnusedMauvilleOldMan2;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ApricornTree;
 
+// Arauna priority-10 NPC pack v3.
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AraunaDonaZila;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AraunaProfessoraAnahi;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AraunaCiroPrologue;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AraunaCiroConsorcio;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AraunaDonaCelina;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AraunaComplianceAgent;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AraunaDockworker;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AraunaMemorialFisher;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AraunaSerraChild;
+
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
     [OBJ_EVENT_GFX_BRENDAN_NORMAL] =           &gObjectEventGraphicsInfo_BrendanNormal,
     [OBJ_EVENT_GFX_BRENDAN_MACH_BIKE] =        &gObjectEventGraphicsInfo_BrendanMachBike,
@@ -791,6 +802,17 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_DEOXYS_N]                 = &gObjectEventGraphicsInfo_DeoxysN,
     [OBJ_EVENT_GFX_SS_ANNE]                  = &gObjectEventGraphicsInfo_SSAnne,
 #endif // IS_FRLG
+    // Arauna priority-10 NPC pack v3.
+    [OBJ_EVENT_GFX_ARAUNA_DONA_ZILA] = &gObjectEventGraphicsInfo_AraunaDonaZila,
+    [OBJ_EVENT_GFX_ARAUNA_PROFESSORA_ANAHI] = &gObjectEventGraphicsInfo_AraunaProfessoraAnahi,
+    [OBJ_EVENT_GFX_ARAUNA_CIRO_PROLOGUE] = &gObjectEventGraphicsInfo_AraunaCiroPrologue,
+    [OBJ_EVENT_GFX_ARAUNA_CIRO_CONSORCIO] = &gObjectEventGraphicsInfo_AraunaCiroConsorcio,
+    [OBJ_EVENT_GFX_ARAUNA_DONA_CELINA] = &gObjectEventGraphicsInfo_AraunaDonaCelina,
+    [OBJ_EVENT_GFX_ARAUNA_COMPLIANCE_AGENT] = &gObjectEventGraphicsInfo_AraunaComplianceAgent,
+    [OBJ_EVENT_GFX_ARAUNA_DOCKWORKER] = &gObjectEventGraphicsInfo_AraunaDockworker,
+    [OBJ_EVENT_GFX_ARAUNA_MEMORIAL_FISHER] = &gObjectEventGraphicsInfo_AraunaMemorialFisher,
+    [OBJ_EVENT_GFX_ARAUNA_SERRA_CHILD] = &gObjectEventGraphicsInfo_AraunaSerraChild,
+
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {
