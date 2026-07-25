@@ -4115,7 +4115,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Hidden Power
 
 === TRAINER_PRESTON ===
-Name: PRESTON
+Name: PEPE
 Class: Psychic
 Pic: Psychic M
 Gender: Male
@@ -4128,7 +4128,7 @@ Level: 36
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_VIRGIL ===
-Name: VIRGIL
+Name: VILO
 Class: Psychic
 Pic: Psychic M
 Gender: Male
@@ -4141,7 +4141,7 @@ Level: 36
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_BLAKE ===
-Name: BLAKE
+Name: ZICO
 Class: Psychic
 Pic: Psychic M
 Gender: Male
@@ -4287,7 +4287,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Hidden Power
 
 === TRAINER_HANNAH ===
-Name: HANNAH
+Name: BIA
 Class: Psychic
 Pic: Psychic F
 Gender: Female
@@ -4300,7 +4300,7 @@ Level: 36
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_SAMANTHA ===
-Name: SAMANTHA
+Name: SANDA
 Class: Psychic
 Pic: Psychic F
 Gender: Female
@@ -4313,7 +4313,7 @@ Level: 36
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_MAURA ===
-Name: MAURA
+Name: DORA
 Class: Psychic
 Pic: Psychic F
 Gender: Female
@@ -10379,7 +10379,7 @@ Level: 13
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
 === TRAINER_SYLVIA ===
-Name: SYLVIA
+Name: SIO
 Class: Hex Maniac
 Pic: Hex Maniac
 Gender: Female
@@ -10480,7 +10480,7 @@ Level: 37
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_NATE ===
-Name: NATE
+Name: TONHO
 Class: Gentleman
 Pic: Gentleman
 Gender: Male
@@ -10493,7 +10493,7 @@ Level: 36
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_KATHLEEN ===
-Name: KATHLEEN
+Name: CATU
 Class: Hex Maniac
 Pic: Hex Maniac
 Gender: Female
@@ -10506,7 +10506,7 @@ Level: 36
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_CLIFFORD ===
-Name: CLIFFORD
+Name: NANDO
 Class: Gentleman
 Pic: Gentleman
 Gender: Male
@@ -10519,7 +10519,7 @@ Level: 36
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_NICHOLAS ===
-Name: NICHOLAS
+Name: NICO
 Class: Psychic
 Pic: Psychic M
 Gender: Male
@@ -10601,7 +10601,7 @@ Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MACEY ===
-Name: MACEY
+Name: MEL
 Class: Psychic
 Pic: Psychic F
 Gender: Female
