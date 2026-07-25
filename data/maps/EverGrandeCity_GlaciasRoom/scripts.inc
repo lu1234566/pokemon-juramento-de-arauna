@@ -59,25 +59,23 @@ EverGrandeCity_GlaciasRoom_EventScript_Defeated::
 	end
 
 EverGrandeCity_GlaciasRoom_Text_IntroSpeech:
-	.string "Welcome, my name is GLACIA\n"
-	.string "of the ELITE FOUR.\p"
-	.string "I've traveled from afar to HOENN\n"
-	.string "so that I may hone my ice skills.\p"
-	.string "But all I have seen are challenges by\n"
-	.string "weak TRAINERS and their POKéMON.\p"
-	.string "What about you?\p"
-	.string "It would please me to no end if I could\n"
-	.string "go all out against you!$"
+	.string "Welcome. I am CLARA,\n"
+	.string "of the ELITE.\p"
+	.string "I came from the cold serra of\n"
+	.string "the far south, where frost bites\l"
+	.string "the fields at dawn.\p"
+	.string "There, ice is rare and honest.\n"
+	.string "I have honed it for years.\p"
+	.string "Warm me, if you can!$"
 
 EverGrandeCity_GlaciasRoom_Text_Defeat:
 	.string "You and your POKéMON…\n"
-	.string "How hot your spirits burn!\p"
-	.string "The all-consuming heat overwhelms.\p"
-	.string "It's no surprise that my icy skills\n"
-	.string "failed to harm you.$"
+	.string "How warm your spirits burn.\p"
+	.string "No frost of mine could hold\n"
+	.string "against that. Well fought.$"
 
 EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech:
 	.string "Advance to the next room.\p"
-	.string "And there, confirm the truly fearsome\n"
-	.string "side of the POKéMON LEAGUE.$"
+	.string "There waits the fiercest of us.\n"
+	.string "Do not falter now.$"
 
