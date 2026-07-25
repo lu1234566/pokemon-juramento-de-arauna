@@ -2130,7 +2130,7 @@ Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_DAPHNE ===
-Name: DAPHNE
+Name: DALVA
 Class: Lady
 Pic: Lady
 Gender: Female
@@ -2193,7 +2193,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Tail Whip
 
 === TRAINER_BRIANNA ===
-Name: BRIANNA
+Name: GAL
 Class: Lady
 Pic: Lady
 Gender: Female
@@ -2345,7 +2345,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Crunch
 
 === TRAINER_CONNIE ===
-Name: CONNIE
+Name: CILE
 Class: Beauty
 Pic: Beauty
 Gender: Female
@@ -2358,7 +2358,7 @@ Level: 40
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_BRIDGET ===
-Name: BRIDGET
+Name: BILU
 Class: Beauty
 Pic: Beauty
 Gender: Female
@@ -2371,7 +2371,7 @@ Level: 40
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_OLIVIA ===
-Name: OLIVIA
+Name: OLGA
 Class: Beauty
 Pic: Beauty
 Gender: Female
@@ -2403,7 +2403,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Water Pulse
 
 === TRAINER_TIFFANY ===
-Name: TIFFANY
+Name: TICI
 Class: Beauty
 Pic: Beauty
 Gender: Female
@@ -5446,7 +5446,7 @@ Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BETHANY ===
-Name: BETHANY
+Name: DIVA
 Class: Pokefan
 Pic: Pokefan F
 Gender: Female
@@ -8927,7 +8927,7 @@ Level: 23
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_ANNIKA ===
-Name: ANNIKA
+Name: IZA
 Class: Pokefan
 Pic: Pokefan F
 Gender: Female
@@ -10990,7 +10990,7 @@ Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ANDREA ===
-Name: ANDREA
+Name: NEUSA
 Class: Lass
 Pic: Lass
 Gender: Female
@@ -11003,7 +11003,7 @@ Level: 40
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_CRISSY ===
-Name: CRISSY
+Name: KIKA
 Class: Lass
 Pic: Lass
 Gender: Female
