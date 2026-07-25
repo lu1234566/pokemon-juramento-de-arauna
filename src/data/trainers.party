@@ -3546,7 +3546,7 @@ Level: 34
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_COLE ===
-Name: COLE
+Name: LINO
 Class: Kindler
 Pic: Kindler
 Gender: Male
@@ -3559,7 +3559,7 @@ Level: 23
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_JEFF ===
-Name: JEFF
+Name: MELO
 Class: Kindler
 Pic: Kindler
 Gender: Male
@@ -3576,7 +3576,7 @@ Level: 22
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_AXLE ===
-Name: AXLE
+Name: ZECA
 Class: Kindler
 Pic: Kindler
 Gender: Male
@@ -3589,7 +3589,7 @@ Level: 23
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_JACE ===
-Name: JACE
+Name: TICO
 Class: Kindler
 Pic: Kindler
 Gender: Male
@@ -3602,7 +3602,7 @@ Level: 23
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_KEEGAN ===
-Name: KEEGAN
+Name: DINO
 Class: Kindler
 Pic: Kindler
 Gender: Male
@@ -8914,7 +8914,7 @@ Level: 45
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_ELI ===
-Name: ELI
+Name: PIO
 Class: Hiker
 Pic: Hiker
 Gender: Male
@@ -11631,7 +11631,7 @@ Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GERALD ===
-Name: GERALD
+Name: VALDO
 Class: Cooltrainer
 Pic: Cooltrainer M
 Gender: Male
@@ -11674,7 +11674,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Meditate
 
 === TRAINER_DANIELLE ===
-Name: DANIELLE
+Name: CIDA
 Class: Battle Girl
 Pic: Battle Girl
 Gender: Female
