@@ -7111,7 +7111,7 @@ Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JARED ===
-Name: JARED
+Name: ISCA
 Class: Bird Keeper
 Pic: Bird Keeper
 Gender: Male
@@ -7132,7 +7132,7 @@ Level: 27
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_HUMBERTO ===
-Name: HUMBERTO
+Name: BETO
 Class: Bird Keeper
 Pic: Bird Keeper
 Gender: Male
@@ -7162,7 +7162,7 @@ Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_EDWARDO ===
-Name: EDWARDO
+Name: CAJU
 Class: Bird Keeper
 Pic: Bird Keeper
 Gender: Male
@@ -11766,7 +11766,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Smokescreen
 
 === TRAINER_FLINT ===
-Name: FLINT
+Name: TOINHO
 Class: Camper
 Pic: Camper
 Gender: Male
@@ -11783,7 +11783,7 @@ Level: 29
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_ASHLEY ===
-Name: ASHLEY
+Name: XICA
 Class: Picnicker
 Pic: Picnicker
 Gender: Female
@@ -15613,7 +15613,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Confuse Ray
 
 === TRAINER_DARIUS ===
-Name: DARIUS
+Name: JAIR
 Class: Bird Keeper
 Pic: Bird Keeper
 Gender: Male
