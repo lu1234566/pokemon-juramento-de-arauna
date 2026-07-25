@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
-"""Inventory the 386 provisional Emerald-slot cries used by Arauna."""
+"""Inventory the 386 custom Arauna cries wired into the Emerald cry slots.
+
+The audio for each slot is synthesized by tools/arauna/generate_arauna_cries.py;
+this script verifies the Dex/profile/species mapping and records the cry asset
+each Arauna species resolves to.
+"""
 
 from __future__ import annotations
 
@@ -79,14 +84,14 @@ def main() -> None:
             "cry_id": match.group(1),
             "family_root": f"{roots[number]:03d}",
             "family_stage": str(stages[number]),
-            "status": "emerald-slot-placeholder",
-            "planned_asset": f"sound/arauna/cries/{number:03d}.aif",
+            "status": "arauna-custom-synth",
+            "asset": f"sound/direct_sound_samples/cries/{match.group(1)[4:].lower()}.wav",
         })
     if len({row["cry_id"] for row in rows}) != DEX_SIZE:
         raise ValueError("provisional cry IDs must remain unique across the 386 slots")
     args.out.parent.mkdir(parents=True, exist_ok=True)
     args.out.write_text(csv_text(rows), encoding="utf-8")
-    print("audited 386 unique provisional cries; no sound assets were replaced")
+    print("audited 386 unique custom Arauna cries wired into their cry slots")
 
 
 if __name__ == "__main__":

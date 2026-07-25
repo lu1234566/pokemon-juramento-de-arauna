@@ -464,14 +464,17 @@ def validate_cry_audit() -> None:
                 f"cry audit engine mapping mismatch at #{number:03d}")
         require(row["cry_id"] == match.group(1),
                 f"cry audit differs from species table at #{number:03d}")
-        require(row["status"] == "emerald-slot-placeholder",
+        require(row["status"] == "arauna-custom-synth",
                 f"cry audit #{number:03d} has an unsupported status")
-        require(row["planned_asset"] == f"sound/arauna/cries/{number:03d}.aif",
+        expected_asset = f"sound/direct_sound_samples/cries/{match.group(1)[4:].lower()}.wav"
+        require(row["asset"] == expected_asset,
                 f"cry audit #{number:03d} has an unstable asset path")
+        require((ROOT / expected_asset).is_file(),
+                f"cry audit #{number:03d} points at a missing cry asset")
         cries.add(row["cry_id"])
-    require(len(cries) == DEX_SIZE, "the 386 provisional cry IDs must be unique")
-    require("no sound assets were replaced" in read_text("tools/arauna/audit_arauna_cries.py"),
-            "cry audit tool no longer documents its placeholder-only scope")
+    require(len(cries) == DEX_SIZE, "the 386 custom cry slots must be unique")
+    require(Path(ROOT / "tools/arauna/generate_arauna_cries.py").is_file(),
+            "the Arauna cry generator is missing")
 
 
 def validate_encounter_ecology() -> None:
