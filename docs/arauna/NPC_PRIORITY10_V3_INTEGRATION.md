@@ -22,7 +22,7 @@ All nine use dedicated object-event graphics IDs and are assigned by narrative s
 
 ## Integrated trainer portraits
 
-Five unused Frontier Brain portrait slots in the Arauna campaign are repurposed without changing the global trainer-picture table: Anabel stores Anahi, Tucker stores prologue Ciro, Noland stores Consortium Ciro, Greta stores Dona Celina, and Lucy stores the Compliance Agent. Current story battles use Tucker, Lucy and Greta. Anahi and Consortium Ciro remain installed for later story battles. The deaf hermit's Spenser slot is left untouched until a new portrait is approved.
+Six unused Frontier Brain portrait slots in the Arauna campaign are repurposed without changing the global trainer-picture table: Anabel stores Anahi, Tucker stores prologue Ciro, Noland stores Consortium Ciro, Greta stores Dona Celina, Lucy stores the Compliance Agent, and Spenser stores the deaf hermit (regenerated portrait, approved after the ADR-024 revision). Current story battles use Tucker, Lucy, Greta and Spenser. Anahi and Consortium Ciro remain installed for later story battles. The deaf hermit's overworld sprite stays on the reused vanilla gentleman, since a single static render cannot supply a directional 16x32 walk sheet.
 
 ## Overworld palette adaptation
 

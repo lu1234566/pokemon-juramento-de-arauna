@@ -40,6 +40,7 @@ TRAINERS = {
     "factory_head_noland.png": "Ciro Consortium",
     "arena_tycoon_greta.png": "Dona Celina",
     "pike_queen_lucy.png": "Compliance Agent",
+    "palace_maven_spenser.png": "deaf hermit",
 }
 
 
@@ -98,6 +99,7 @@ def main() -> None:
         "Pic: Dome Ace Tucker",
         "Pic: Pike Queen Lucy",
         "Pic: Arena Tycoon Greta",
+        "Pic: Palace Maven Spenser",
     ):
         require(token in parties, f"story trainer portrait not wired: {token}")
     agent = parties.split("=== TRAINER_ARAUNA_TECH_AGENT ===", 1)[1].split("\n=== ", 1)[0]
@@ -113,7 +115,7 @@ def main() -> None:
     require("v3 is canonical" in docs, "v3 canonical-source contract is missing")
     require("No improvised LOOK / WAIT / SAFE animation" in docs, "Libras gate is missing from integration notes")
 
-    print("Priority-10 NPC v3 validated: nine overworlds, five trainer portraits, story wiring and Libras safety gate.")
+    print("Priority-10 NPC v3 validated: nine overworlds, six trainer portraits, story wiring and Libras safety gate.")
 
 
 if __name__ == "__main__":
