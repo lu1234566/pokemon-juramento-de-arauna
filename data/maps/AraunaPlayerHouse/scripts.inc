@@ -36,6 +36,7 @@ AraunaPlayerHouse_EventScript_ZilaAfterChoice::
 	giveitem ITEM_FAME_CHECKER
 	goto_if_eq VAR_RESULT, FALSE, AraunaPlayerHouse_EventScript_ZilaNotebookBagFull
 	msgbox AraunaPlayerHouse_Text_NotebookReceived, MSGBOX_DEFAULT
+	call AraunaPlayerHouse_EventScript_DeparturePromise
 	release
 	end
 
@@ -45,9 +46,47 @@ AraunaPlayerHouse_EventScript_ZilaNotebookBagFull::
 	end
 
 AraunaPlayerHouse_EventScript_ZilaBlessingOnly::
+	call AraunaPlayerHouse_EventScript_DeparturePromise
 	msgbox AraunaPlayerHouse_Text_ZilaBlessing, MSGBOX_DEFAULT
 	release
 	end
+
+@ P13 — the departure blessing. Dona Zila asks for a promise, not a mission.
+@ Declining leaves every flag clear, so she asks again on the next visit.
+AraunaPlayerHouse_EventScript_DeparturePromise::
+	goto_if_set FLAG_ARAUNA_PROMISE_RETURN, AraunaPlayerHouse_EventScript_PromiseAlreadyMade
+	goto_if_set FLAG_ARAUNA_PROMISE_RECORD, AraunaPlayerHouse_EventScript_PromiseAlreadyMade
+	goto_if_set FLAG_ARAUNA_PROMISE_LISTEN, AraunaPlayerHouse_EventScript_PromiseAlreadyMade
+	msgbox AraunaPlayerHouse_Text_ZilaDepartureBlessing, MSGBOX_DEFAULT
+	msgbox AraunaPlayerHouse_Text_PromiseReturn, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, AraunaPlayerHouse_EventScript_PromiseReturn
+	msgbox AraunaPlayerHouse_Text_PromiseRecord, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, AraunaPlayerHouse_EventScript_PromiseRecord
+	msgbox AraunaPlayerHouse_Text_PromiseListen, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, AraunaPlayerHouse_EventScript_PromiseListen
+	msgbox AraunaPlayerHouse_Text_PromiseSilent, MSGBOX_DEFAULT
+	return
+
+AraunaPlayerHouse_EventScript_PromiseAlreadyMade::
+	return
+
+AraunaPlayerHouse_EventScript_PromiseReturn::
+	setflag FLAG_ARAUNA_PROMISE_RETURN
+	addvar VAR_ARAUNA_BOND_AXES, ARAUNA_BOND_COURAGE_POINT
+	msgbox AraunaPlayerHouse_Text_PromiseReturnReply, MSGBOX_DEFAULT
+	return
+
+AraunaPlayerHouse_EventScript_PromiseRecord::
+	setflag FLAG_ARAUNA_PROMISE_RECORD
+	addvar VAR_ARAUNA_BOND_AXES, ARAUNA_BOND_WISDOM_POINT
+	msgbox AraunaPlayerHouse_Text_PromiseRecordReply, MSGBOX_DEFAULT
+	return
+
+AraunaPlayerHouse_EventScript_PromiseListen::
+	setflag FLAG_ARAUNA_PROMISE_LISTEN
+	addvar VAR_ARAUNA_BOND_AXES, ARAUNA_BOND_COMPASSION_POINT
+	msgbox AraunaPlayerHouse_Text_PromiseListenReply, MSGBOX_DEFAULT
+	return
 
 AraunaPlayerHouse_EventScript_Anahi::
 	lock

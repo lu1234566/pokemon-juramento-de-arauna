@@ -451,3 +451,89 @@ AraunaZilaStory_Text_Quero::
 	.string "Sometimes it is losing what\n"
 	.string "was yours and waking the\l"
 	.string "others anyway.$"
+
+@ P12 (CIRO's badge) and P13 (the departure promise): the prologue Bond choices.
+
+AraunaMapLab_Text_CiroBadgeReveal::
+	.string "CIRO turns, and a lanyard\n"
+	.string "slips out from his collar.\p"
+	.string "A CONSORTIUM badge.\p"
+	.string "CIRO: Don't look at me like\n"
+	.string "that.\p"
+	.string "Full scholarship. A health\n"
+	.string "plan for my mother.\p"
+	.string "Your grandmother keeps\n"
+	.string "stories.\p"
+	.string "Mine keeps a prescription she\n"
+	.string "cannot pay for.$"
+
+AraunaMapLab_Text_CiroBadgeAskMother::
+	.string "Ask how his mother is doing?$"
+
+AraunaMapLab_Text_CiroBadgeAskMotherReply::
+	.string "CIRO stops. The rehearsed\n"
+	.string "answer does not come.\p"
+	.string "CIRO: ...Some days she gets up.\p"
+	.string "Thanks for asking her name\n"
+	.string "before mine.$"
+
+AraunaMapLab_Text_CiroBadgeCriticize::
+	.string "Tell him what the CONSORTIUM\n"
+	.string "really buys?$"
+
+AraunaMapLab_Text_CiroBadgeCriticizeReply::
+	.string "CIRO: You think I don't know\n"
+	.string "what they are?\p"
+	.string "I know exactly. I signed\n"
+	.string "anyway.\p"
+	.string "CIRO: Say it again when you\n"
+	.string "have something better to\l"
+	.string "offer her.$"
+
+AraunaMapLab_Text_CiroBadgeSilentReply::
+	.string "You say nothing.\p"
+	.string "CIRO waits for the argument.\n"
+	.string "It does not come.\p"
+	.string "CIRO: ...Right. Of course.\p"
+	.string "That is worse, you know.$"
+
+AraunaPlayerHouse_Text_ZilaDepartureBlessing::
+	.string "DONA ZILA: Then it is time.\p"
+	.string "I am not going to hand you a\n"
+	.string "mission. Missions get dropped.\p"
+	.string "Hand me a promise instead.\n"
+	.string "Promises get carried.$"
+
+AraunaPlayerHouse_Text_PromiseReturn::
+	.string "Promise that you will come\n"
+	.string "back?$"
+
+AraunaPlayerHouse_Text_PromiseReturnReply::
+	.string "DONA ZILA: Good.\p"
+	.string "Then walk in a way that lets\n"
+	.string "you keep it.$"
+
+AraunaPlayerHouse_Text_PromiseRecord::
+	.string "Promise that you will record\n"
+	.string "it all?$"
+
+AraunaPlayerHouse_Text_PromiseRecordReply::
+	.string "DONA ZILA: Careful, my love.\p"
+	.string "A full notebook is not the\n"
+	.string "same as an understood one.\p"
+	.string "But yes. Write.$"
+
+AraunaPlayerHouse_Text_PromiseListen::
+	.string "Promise that you will listen\n"
+	.string "first?$"
+
+AraunaPlayerHouse_Text_PromiseListenReply::
+	.string "DONA ZILA: Ah.\p"
+	.string "That one is the hardest, and\n"
+	.string "you picked it first.\p"
+	.string "Go on, then.$"
+
+AraunaPlayerHouse_Text_PromiseSilent::
+	.string "DONA ZILA: No promise?\p"
+	.string "That is allowed too.\n"
+	.string "Come back when you have one.$"

@@ -79,6 +79,28 @@ AraunaMapLab_EventScript_CiroBeforeRoute::
 	release
 	end
 
+@ P12 — the badge. The material conflict between the two friends is placed on
+@ the table before they part; staying silent is a real answer, not a skip.
+AraunaMapLab_EventScript_CiroBadge::
+	msgbox AraunaMapLab_Text_CiroBadgeReveal, MSGBOX_DEFAULT
+	setflag FLAG_ARAUNA_CIRO_BADGE_REVEALED
+	msgbox AraunaMapLab_Text_CiroBadgeAskMother, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, AraunaMapLab_EventScript_CiroBadgeAskMother
+	msgbox AraunaMapLab_Text_CiroBadgeCriticize, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, AraunaMapLab_EventScript_CiroBadgeCriticize
+	msgbox AraunaMapLab_Text_CiroBadgeSilentReply, MSGBOX_DEFAULT
+	return
+
+AraunaMapLab_EventScript_CiroBadgeAskMother::
+	addvar VAR_ARAUNA_BOND_AXES, ARAUNA_BOND_COMPASSION_POINT
+	msgbox AraunaMapLab_Text_CiroBadgeAskMotherReply, MSGBOX_DEFAULT
+	return
+
+AraunaMapLab_EventScript_CiroBadgeCriticize::
+	addvar VAR_ARAUNA_BOND_AXES, ARAUNA_BOND_COURAGE_POINT
+	msgbox AraunaMapLab_Text_CiroBadgeCriticizeReply, MSGBOX_DEFAULT
+	return
+
 AraunaMapLab_EventScript_CiroWaiting::
 	msgbox AraunaMapLab_Text_CiroWaiting, MSGBOX_DEFAULT
 	release
@@ -104,6 +126,7 @@ AraunaMapLab_EventScript_CiroBattleQuero::
 AraunaMapLab_EventScript_CiroBattleWon::
 	setvar VAR_ARAUNA_STORY_STAGE, 7
 	msgbox AraunaMapLab_Text_CiroPostBattle, MSGBOX_DEFAULT
+	call AraunaMapLab_EventScript_CiroBadge
 	msgbox AraunaMapLab_Text_CiroDeparture, MSGBOX_DEFAULT
 	setvar VAR_ARAUNA_STORY_STAGE, 8
 	msgbox AraunaMapLab_Text_PortoLead, MSGBOX_DEFAULT

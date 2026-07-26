@@ -174,13 +174,76 @@ def validate_bond_system() -> None:
         )
 
 
+def validate_prologue_bond_choices() -> None:
+    """P12 (Ciro's badge) and P13 (the departure promise) must feed the axes."""
+    lab = read("data/maps/AraunaMapLab/scripts.inc")
+    house = read("data/maps/AraunaPlayerHouse/scripts.inc")
+
+    # P12 — the badge is revealed between the rival battle and the parting.
+    require(
+        "call AraunaMapLab_EventScript_CiroBadge" in lab,
+        "the badge scene (P12) is not reached after the rival battle",
+    )
+    badge = lab.split("AraunaMapLab_EventScript_CiroBadge::", 1)[1].split(
+        "\nAraunaMapLab_EventScript_CiroWaiting::", 1
+    )[0]
+    require(
+        "setflag FLAG_ARAUNA_CIRO_BADGE_REVEALED" in badge,
+        "the badge scene does not record FLAG_ARAUNA_CIRO_BADGE_REVEALED",
+    )
+    require(
+        "addvar VAR_ARAUNA_BOND_AXES, ARAUNA_BOND_COMPASSION_POINT" in badge,
+        "asking after Ciro's mother must award Compassion",
+    )
+    require(
+        "addvar VAR_ARAUNA_BOND_AXES, ARAUNA_BOND_COURAGE_POINT" in badge,
+        "confronting the Consortium must award Courage",
+    )
+    # Silence is a real answer with its own reply, never a skipped scene.
+    require(
+        "AraunaMapLab_Text_CiroBadgeSilentReply" in badge,
+        "staying silent must have its own reply",
+    )
+
+    # P13 — one promise, one axis each, and declining leaves it open.
+    require(
+        house.count("call AraunaPlayerHouse_EventScript_DeparturePromise") >= 1,
+        "the departure promise (P13) is never offered",
+    )
+    promise = house.split("AraunaPlayerHouse_EventScript_DeparturePromise::", 1)[1]
+    for flag in (
+        "FLAG_ARAUNA_PROMISE_RETURN",
+        "FLAG_ARAUNA_PROMISE_RECORD",
+        "FLAG_ARAUNA_PROMISE_LISTEN",
+    ):
+        require(
+            f"goto_if_set {flag}" in promise,
+            f"the promise can be retaken because {flag} is not checked",
+        )
+    for flag, point in (
+        ("FLAG_ARAUNA_PROMISE_RETURN", "ARAUNA_BOND_COURAGE_POINT"),
+        ("FLAG_ARAUNA_PROMISE_RECORD", "ARAUNA_BOND_WISDOM_POINT"),
+        ("FLAG_ARAUNA_PROMISE_LISTEN", "ARAUNA_BOND_COMPASSION_POINT"),
+    ):
+        block = promise.split(f"setflag {flag}", 1)[1].split("return", 1)[0]
+        require(
+            f"addvar VAR_ARAUNA_BOND_AXES, {point}" in block,
+            f"{flag} must award {point}",
+        )
+    require(
+        "AraunaPlayerHouse_Text_PromiseSilent" in promise,
+        "declining every promise must have its own reply",
+    )
+
+
 def main() -> int:
     validate_founding_stories()
     validate_bond_system()
+    validate_prologue_bond_choices()
     print(
         "Canonical story validated: three founding stories in both languages, "
-        "wired to the starter choice, and the packed three-axis Bond system "
-        "with the First Link award"
+        "the packed three-axis Bond system, and the prologue Bond choices "
+        "(First Link, Ciro's badge, the departure promise)"
     )
     return 0
 

@@ -442,3 +442,90 @@ AraunaZilaStory_Text_Quero::
 	.string "Às vezes é perder o que era\n"
 	.string "seu e ainda assim acordar\l"
 	.string "os outros.$"
+
+@ P12 (o cracha do CIRO) e P13 (a promessa de partida): escolhas de Vinculo do prologo.
+
+AraunaMapLab_Text_CiroBadgeReveal::
+	.string "CIRO se vira, e um cordão\n"
+	.string "escorrega da gola dele.\p"
+	.string "Um crachá do CONSÓRCIO.\p"
+	.string "CIRO: Não me olha assim.\p"
+	.string "Bolsa integral, plano de\n"
+	.string "saúde pra minha mãe.\p"
+	.string "A tua avó guarda história.\p"
+	.string "A minha guarda receita de\n"
+	.string "remédio que ela não pode\l"
+	.string "pagar.$"
+
+AraunaMapLab_Text_CiroBadgeAskMother::
+	.string "Perguntar como a mãe dele\n"
+	.string "está?$"
+
+AraunaMapLab_Text_CiroBadgeAskMotherReply::
+	.string "CIRO trava. A resposta\n"
+	.string "ensaiada não vem.\p"
+	.string "CIRO: …Tem dia que ela\n"
+	.string "levanta.\p"
+	.string "Obrigado por perguntar o\n"
+	.string "nome dela antes do meu.$"
+
+AraunaMapLab_Text_CiroBadgeCriticize::
+	.string "Dizer o que o CONSÓRCIO\n"
+	.string "compra de verdade?$"
+
+AraunaMapLab_Text_CiroBadgeCriticizeReply::
+	.string "CIRO: Você acha que eu não\n"
+	.string "sei o que eles são?\p"
+	.string "Sei muito bem. Assinei\n"
+	.string "mesmo assim.\p"
+	.string "CIRO: Repete isso quando\n"
+	.string "você tiver coisa melhor\l"
+	.string "pra oferecer pra ela.$"
+
+AraunaMapLab_Text_CiroBadgeSilentReply::
+	.string "Você não diz nada.\p"
+	.string "CIRO espera a briga.\n"
+	.string "Ela não vem.\p"
+	.string "CIRO: …Certo. Claro.\p"
+	.string "Isso é pior, sabia?$"
+
+AraunaPlayerHouse_Text_ZilaDepartureBlessing::
+	.string "DONA ZILA: Então chegou a\n"
+	.string "hora.\p"
+	.string "Não vou te dar missão.\n"
+	.string "Missão a gente larga.\p"
+	.string "Me dá uma promessa.\n"
+	.string "Promessa a gente carrega.$"
+
+AraunaPlayerHouse_Text_PromiseReturn::
+	.string "Prometer que você volta?$"
+
+AraunaPlayerHouse_Text_PromiseReturnReply::
+	.string "DONA ZILA: Bom.\p"
+	.string "Então anda de um jeito que\n"
+	.string "deixe você cumprir.$"
+
+AraunaPlayerHouse_Text_PromiseRecord::
+	.string "Prometer que você registra\n"
+	.string "tudo?$"
+
+AraunaPlayerHouse_Text_PromiseRecordReply::
+	.string "DONA ZILA: Cuidado, meu amor.\p"
+	.string "Caderno cheio não é a mesma\n"
+	.string "coisa que caderno entendido.\p"
+	.string "Mas escreve, sim.$"
+
+AraunaPlayerHouse_Text_PromiseListen::
+	.string "Prometer que você escuta\n"
+	.string "primeiro?$"
+
+AraunaPlayerHouse_Text_PromiseListenReply::
+	.string "DONA ZILA: Ah.\p"
+	.string "Essa é a mais difícil, e você\n"
+	.string "escolheu logo ela.\p"
+	.string "Então vai.$"
+
+AraunaPlayerHouse_Text_PromiseSilent::
+	.string "DONA ZILA: Sem promessa?\p"
+	.string "Também pode.\n"
+	.string "Volta quando tiver uma.$"

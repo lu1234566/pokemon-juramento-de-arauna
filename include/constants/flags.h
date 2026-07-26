@@ -95,10 +95,10 @@
 #define FLAG_ARAUNA_PORTO_NET_FOUND                   0x49
 #define FLAG_ARAUNA_PORTO_AGENT_DEFEATED              0x4A
 #define FLAG_ARAUNA_STARTER_STORY_HEARD               0x4B // Dona Zila told the founding story of the chosen starter
-#define FLAG_UNUSED_0x04C    0x4C // Unused Flag
-#define FLAG_UNUSED_0x04D    0x4D // Unused Flag
-#define FLAG_UNUSED_0x04E    0x4E // Unused Flag
-#define FLAG_UNUSED_0x04F    0x4F // Unused Flag
+#define FLAG_ARAUNA_CIRO_BADGE_REVEALED               0x4C // CIRO's Consortium badge shown in the plaza (P12)
+#define FLAG_ARAUNA_PROMISE_RETURN                    0x4D // Departure promise: I will come back (P13)
+#define FLAG_ARAUNA_PROMISE_RECORD                    0x4E // Departure promise: I will record it all (P13)
+#define FLAG_ARAUNA_PROMISE_LISTEN                    0x4F // Departure promise: I will listen first (P13)
 
 // Scripts
 #define FLAG_HIDE_SKY_PILLAR_TOP_RAYQUAZA_STILL  0x50
