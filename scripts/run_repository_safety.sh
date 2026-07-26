@@ -35,6 +35,7 @@ run_check "Mist Route encounters" python3 scripts/validate_mist_route_encounters
 run_check "Capture onboarding" python3 scripts/validate_capture_onboarding.py
 run_check "Safe recovery" python3 scripts/validate_safe_recovery.py
 run_check "Araucaria art" python3 scripts/validate_araucaria_art.py
+run_check "Canonical story spine" python3 scripts/validate_canonical_story.py
 run_check "Priority-10 NPC v3" python3 scripts/validate_priority10_npcs.py
 run_check "Devcontainer JSON" python3 -m json.tool .devcontainer/devcontainer.json
 run_check "Visual setup shell" bash -n .devcontainer/setup-visual-tools.sh

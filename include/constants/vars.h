@@ -274,7 +274,18 @@
 #define VAR_ARAUNA_BADGE_COUNT                          0x40FC // Canonical Houses of Story badges
 #define VAR_ARAUNA_TESTIMONY_COUNT                      0x40FD // Recorded story Testimonies
 #define VAR_ARAUNA_RIVAL_STAGE                          0x40FE // Ciro/Anahi campaign state
-#define VAR_ARAUNA_QUEST_BITS                           0x40FF // Compact side-quest state
+#define VAR_ARAUNA_BOND_AXES                            0x40FF // Packed Bond axes: bits 0-4 Courage, 5-9 Wisdom, 10-14 Compassion (0-31 each)
+
+// Bond axis indices, used by the C accessors.
+#define ARAUNA_BOND_AXIS_COURAGE                        0
+#define ARAUNA_BOND_AXIS_WISDOM                         1
+#define ARAUNA_BOND_AXIS_COMPASSION                     2
+
+// Per-axis increments for scripts: addvar VAR_ARAUNA_BOND_AXES, ARAUNA_BOND_<axis>_POINT
+// Key choices award one or two points; minor choices only change local dialogue.
+#define ARAUNA_BOND_COURAGE_POINT                       1
+#define ARAUNA_BOND_WISDOM_POINT                        32
+#define ARAUNA_BOND_COMPASSION_POINT                    1024
 
 #define VARS_END                                         0x40FF
 #define VARS_COUNT                                       (VARS_END - VARS_START + 1)

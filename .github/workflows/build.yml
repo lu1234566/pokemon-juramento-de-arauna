@@ -48,6 +48,8 @@ jobs:
           cmp /tmp/arauna-village-map.bin data/layouts/AraunaMapLab/map.bin
       - name: Validate Arauna opening flow
         run: python3 scripts/validate_arauna_opening.py
+      - name: Canonical story spine
+        run: python3 scripts/validate_canonical_story.py
       - name: Validate Mist Route story
         run: python3 scripts/validate_mist_route_story.py
       - name: Validate First Link choice

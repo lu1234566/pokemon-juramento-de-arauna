@@ -207,6 +207,7 @@ AraunaPlayerHouse_EventScript_CompleteChoice::
 	setvar VAR_ARAUNA_STORY_STAGE, 2
 	special HealPlayerParty
 	msgbox AraunaPlayerHouse_Text_ZilaChosen, MSGBOX_DEFAULT
+	call AraunaPlayerHouse_EventScript_ZilaFoundingStory
 	giveitem ITEM_FAME_CHECKER
 	goto_if_eq VAR_RESULT, FALSE, AraunaPlayerHouse_EventScript_NotebookBagFull
 	msgbox AraunaPlayerHouse_Text_NotebookReceived, MSGBOX_DEFAULT
@@ -221,6 +222,27 @@ AraunaPlayerHouse_EventScript_NotebookBagFull::
 	msgbox AraunaResearchCenter_Text_DexActivated, MSGBOX_DEFAULT
 	release
 	end
+
+@ P08 — Dona Zila tells the founding story tied to the chosen partner.
+@ The three blocks carry equal weight; the text is canonical and must not be paraphrased.
+AraunaPlayerHouse_EventScript_ZilaFoundingStory::
+	call_if_eq VAR_ARAUNA_STARTER_CHOICE, 1, AraunaPlayerHouse_EventScript_ZilaStoryPimpau
+	call_if_eq VAR_ARAUNA_STARTER_CHOICE, 2, AraunaPlayerHouse_EventScript_ZilaStoryCaramelo
+	call_if_eq VAR_ARAUNA_STARTER_CHOICE, 3, AraunaPlayerHouse_EventScript_ZilaStoryQuero
+	setflag FLAG_ARAUNA_STARTER_STORY_HEARD
+	return
+
+AraunaPlayerHouse_EventScript_ZilaStoryPimpau::
+	msgbox AraunaZilaStory_Text_Pimpau, MSGBOX_DEFAULT
+	return
+
+AraunaPlayerHouse_EventScript_ZilaStoryCaramelo::
+	msgbox AraunaZilaStory_Text_Caramelo, MSGBOX_DEFAULT
+	return
+
+AraunaPlayerHouse_EventScript_ZilaStoryQuero::
+	msgbox AraunaZilaStory_Text_Quero, MSGBOX_DEFAULT
+	return
 
 AraunaPlayerHouse_EventScript_AssignRemainingStarters::
 	goto_if_eq VAR_ARAUNA_STARTER_CHOICE, 1, AraunaPlayerHouse_EventScript_AssignAfterPimpau

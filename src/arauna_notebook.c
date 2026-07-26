@@ -2,10 +2,37 @@
 #include "event_data.h"
 #include "item_menu.h"
 #include "item_use.h"
+#include "string_util.h"
 #include "text.h"
 #include "config/arauna.h"
 #include "constants/flags.h"
 #include "constants/vars.h"
+
+// Bond axes are packed into a single var so the save layout never grows:
+// bits 0-4 Courage, bits 5-9 Wisdom, bits 10-14 Compassion (0-31 each).
+#define BOND_AXIS_WIDTH  5
+#define BOND_AXIS_MASK   0x1F
+
+// Canonical qualitative feedback. The game never shows numbers (canon 8.1).
+static const u8 sBond_Courage[] = _(
+    "THE NOTEBOOK\n"
+    "You tend to arrive before\l"
+    "certainty.");
+
+static const u8 sBond_Wisdom[] = _(
+    "THE NOTEBOOK\n"
+    "You look for the thread before\l"
+    "pulling the knot.");
+
+static const u8 sBond_Compassion[] = _(
+    "THE NOTEBOOK\n"
+    "You listen to those left inside\l"
+    "the problem.");
+
+static const u8 sBond_Plural[] = _(
+    "THE NOTEBOOK\n"
+    "You learned that no oath holds\l"
+    "up with a single voice.");
 
 static const u8 sNotebook_ChoosePartner[] = _(
     "CURRENT OBJECTIVE\n"
@@ -147,9 +174,57 @@ static const u8 *GetAraunaNotebookPage(void)
     return sNotebook_ChoosePartner;
 }
 
+static u8 GetBondAxis(u8 axis)
+{
+    return (VarGet(VAR_ARAUNA_BOND_AXES) >> (axis * BOND_AXIS_WIDTH)) & BOND_AXIS_MASK;
+}
+
+// 0 = no reading yet or a plural bond, 1 = Courage, 2 = Wisdom, 3 = Compassion.
+// A tie between the leading axes is a valid outcome and reads as the plural bond.
+u16 GetAraunaDominantBond(void)
+{
+    u8 courage = GetBondAxis(ARAUNA_BOND_AXIS_COURAGE);
+    u8 wisdom = GetBondAxis(ARAUNA_BOND_AXIS_WISDOM);
+    u8 compassion = GetBondAxis(ARAUNA_BOND_AXIS_COMPASSION);
+
+    if (courage == 0 && wisdom == 0 && compassion == 0)
+        return 0;
+    if (courage > wisdom && courage > compassion)
+        return 1;
+    if (wisdom > courage && wisdom > compassion)
+        return 2;
+    if (compassion > courage && compassion > wisdom)
+        return 3;
+
+    return 0;
+}
+
+static const u8 *GetAraunaBondLine(void)
+{
+    switch (GetAraunaDominantBond())
+    {
+    case 1:  return sBond_Courage;
+    case 2:  return sBond_Wisdom;
+    case 3:  return sBond_Compassion;
+    default: return sBond_Plural;
+    }
+}
+
 void ItemUseOutOfBattle_AraunaNotebook(u8 taskId)
 {
-    DisplayItemMessage(taskId, FONT_NORMAL, GetAraunaNotebookPage(), CloseItemMessage);
+    const u8 *page = GetAraunaNotebookPage();
+
+    // Once any bond has been recorded, the notebook closes with its qualitative reading.
+    if (VarGet(VAR_ARAUNA_BOND_AXES) != 0)
+    {
+        u8 *end = StringCopy(gStringVar4, page);
+
+        *end++ = CHAR_PROMPT_CLEAR;
+        StringCopy(end, GetAraunaBondLine());
+        page = gStringVar4;
+    }
+
+    DisplayItemMessage(taskId, FONT_NORMAL, page, CloseItemMessage);
 }
 
 void ItemUseOutOfBattle_AraunaBoard(u8 taskId)

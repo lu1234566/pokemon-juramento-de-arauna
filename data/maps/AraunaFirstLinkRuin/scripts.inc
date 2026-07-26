@@ -17,16 +17,22 @@ AraunaFirstLinkRuin_EventScript_AffectedPokemon::
 
 AraunaFirstLinkRuin_EventScript_ChooseCourage::
 	setvar VAR_ARAUNA_BOND_CHOICE, 1
+	addvar VAR_ARAUNA_BOND_AXES, ARAUNA_BOND_COURAGE_POINT
+	addvar VAR_ARAUNA_BOND_AXES, ARAUNA_BOND_COURAGE_POINT
 	msgbox AraunaFirstLinkRuin_Text_CourageResult, MSGBOX_DEFAULT
 	goto AraunaFirstLinkRuin_EventScript_CompleteRescue
 
 AraunaFirstLinkRuin_EventScript_ChooseWisdom::
 	setvar VAR_ARAUNA_BOND_CHOICE, 2
+	addvar VAR_ARAUNA_BOND_AXES, ARAUNA_BOND_WISDOM_POINT
+	addvar VAR_ARAUNA_BOND_AXES, ARAUNA_BOND_WISDOM_POINT
 	msgbox AraunaFirstLinkRuin_Text_WisdomResult, MSGBOX_DEFAULT
 	goto AraunaFirstLinkRuin_EventScript_CompleteRescue
 
 AraunaFirstLinkRuin_EventScript_ChooseCompassion::
 	setvar VAR_ARAUNA_BOND_CHOICE, 3
+	addvar VAR_ARAUNA_BOND_AXES, ARAUNA_BOND_COMPASSION_POINT
+	addvar VAR_ARAUNA_BOND_AXES, ARAUNA_BOND_COMPASSION_POINT
 	msgbox AraunaFirstLinkRuin_Text_CompassionResult, MSGBOX_DEFAULT
 
 AraunaFirstLinkRuin_EventScript_CompleteRescue::
