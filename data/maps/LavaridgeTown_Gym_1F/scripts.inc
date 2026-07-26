@@ -203,10 +203,13 @@ LavaridgeTown_Gym_1F_Text_ColeDefeat:
 	.string "I'm blinded by sweat in my eyes…$"
 
 LavaridgeTown_Gym_1F_Text_ColePostBattle:
-	.string "Being buried in hot sand promotes\n"
-	.string "circulation.\p"
-	.string "It's effective for healing pain in\n"
-	.string "your joints.$"
+	.string "Out in the fields at night you\n"
+	.string "see two coals moving.\p"
+	.string "Town folk say demon.\p"
+	.string "My grandmother said watchman.\p"
+	.string "The BOITATÁ burns whoever sets\n"
+	.string "fire to what it guards.\p"
+	.string "It never once burned us.$"
 
 LavaridgeTown_Gym_1F_Text_AxleIntro:
 	.string "I'm trying to relieve my stress.\n"
@@ -216,9 +219,13 @@ LavaridgeTown_Gym_1F_Text_AxleDefeat:
 	.string "I hope BRÁS flames you good!$"
 
 LavaridgeTown_Gym_1F_Text_AxlePostBattle:
-	.string "Haaah… Whew…\p"
-	.string "If you spend too much time buried in\n"
-	.string "hot sand, it tuckers you out…$"
+	.string "They don't burn the field for\n"
+	.string "the field.\p"
+	.string "The smoke goes into a pipe.\n"
+	.string "The pipe goes into their\l"
+	.string "machine.\p"
+	.string "Whatever we stop telling here\n"
+	.string "comes out as power over there.$"
 
 LavaridgeTown_Gym_B1F_Text_KeeganIntro:
 	.string "You must be getting tired by now.\n"
@@ -232,10 +239,13 @@ LavaridgeTown_Gym_B1F_Text_KeeganDefeat:
 	.string "Play with fire, and be burned…$"
 
 LavaridgeTown_Gym_B1F_Text_KeeganPostBattle:
-	.string "Your skill is real…\n"
-	.string "But our LEADER BRÁS is strong.\p"
-	.string "If you don't watch yourself, you'll be\n"
-	.string "burned seriously.$"
+	.string "You'll have seen their notice\n"
+	.string "in town.\p"
+	.string "'Wildfire of natural origin.\n"
+	.string "Serpent activity suspected.'\p"
+	.string "They lit it. Then they printed\n"
+	.string "the poster that blames the one\l"
+	.string "thing that tried to stop them.$"
 
 LavaridgeTown_Gym_1F_Text_GeraldIntro:
 	.string "Can your POKéMON withstand\n"
@@ -347,7 +357,7 @@ LavaridgeTown_Gym_1F_Text_RegisteredFlannery:
 
 LavaridgeTown_Gym_1F_Text_FlanneryPostBattle:
 	.string "Your fire reminds me of someone…\p"
-	.string "Ah! You battle like TIÃO, who\n"
+	.string "Ah! You battle like Tião, who\n"
 	.string "keeps the river house below.$"
 
 LavaridgeTown_Gym_1F_Text_GymStatue:

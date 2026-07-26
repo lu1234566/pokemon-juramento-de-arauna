@@ -282,8 +282,14 @@ MauvilleCity_Gym_Text_KirkDefeat:
 	.string "Buried under my own stubbornness…$"
 
 MauvilleCity_Gym_Text_KirkPostBattle:
-	.string "IVO says every ruin remembers who\n"
-	.string "was patient with it.$"
+	.string "The catalogue calls these marks\n"
+	.string "a firing defect.\p"
+	.string "Look closer. They're\n"
+	.string "fingerprints.\p"
+	.string "The same three sets, across\n"
+	.string "four hundred bricks.\p"
+	.string "That's not a defect.\n"
+	.string "That's a signature.$"
 
 MauvilleCity_Gym_Text_ShawnIntro:
 	.string "I learned to read the glyphs under\n"
@@ -294,9 +300,13 @@ MauvilleCity_Gym_Text_ShawnDefeat:
 	.string "The stone stayed shut for me…$"
 
 MauvilleCity_Gym_Text_ShawnPostBattle:
-	.string "IVO was crawling these tunnels\n"
-	.string "before your folk were born. He knows\l"
-	.string "every seam in the rock.$"
+	.string "We crated the altar pieces\n"
+	.string "first. Naturally.\p"
+	.string "Then I found the kitchen.\p"
+	.string "Pots. A child's cup. A comb.\p"
+	.string "None of it is in the museum.\n"
+	.string "So none of those people are\l"
+	.string "in the museum either.$"
 
 MauvilleCity_Gym_Text_BenIntro:
 	.string "Mind the levers. Pull the wrong one\n"
@@ -306,13 +316,18 @@ MauvilleCity_Gym_Text_BenDefeat:
 	.string "You didn't even hesitate…$"
 
 MauvilleCity_Gym_Text_BenPostBattle:
-	.string "IVO rigged every door himself. Says\n"
-	.string "a ruin should test you before it\l"
-	.string "trusts you.$"
+	.string "There's a path here the\n"
+	.string "official survey never drew.\p"
+	.string "People used it to get out when\n"
+	.string "the soldiers came.\p"
+	.string "It was erased from the map\n"
+	.string "because it proved they ran.\p"
+	.string "When the water rises, we're\n"
+	.string "going to use it again.$"
 
 MauvilleCity_Gym_Text_VivianIntro:
 	.string "These walls are older than any city.\n"
-	.string "Show them some respect — and me.$"
+	.string "Show them some respect--and me.$"
 
 MauvilleCity_Gym_Text_VivianDefeat:
 	.string "The old ones favor you. Fine.$"
@@ -386,7 +401,7 @@ MauvilleCity_Gym_Text_WattsonGoForthAndEndeavor:
 	.string "delver!$"
 
 MauvilleCity_Gym_Text_GymStatue:
-	.string "CASA DAS RUÍNAS — the House of the\n"
+	.string "CASA DAS RUÍNAS--the House of the\n"
 	.string "Old Stones. Keeper: IVO.$"
 
 MauvilleCity_Gym_Text_GymStatueCertified:

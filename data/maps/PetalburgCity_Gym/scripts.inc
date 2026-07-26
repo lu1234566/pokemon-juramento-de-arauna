@@ -1138,7 +1138,7 @@ PetalburgCity_Gym_EventScript_GymStatue::
 	end
 
 PetalburgCity_Gym_Text_DadYoureHereWithYourPokemon:
-	.string "TIÃO: Hm?\p"
+	.string "Tião: Hm?\p"
 	.string "Well, if it isn't {PLAYER}!\n"
 	.string "So you're all finished moving in?\p"
 	.string "I'm surprised that you managed to\n"
@@ -1155,7 +1155,7 @@ PetalburgCity_Gym_Text_WallyIdLikeAPokemon:
 	.string "I'd like to get a POKéMON, please…$"
 
 PetalburgCity_Gym_Text_DadOhYoureWallyRight:
-	.string "TIÃO: Hm? You're… Uh… Oh, right.\n"
+	.string "Tião: Hm? You're… Uh… Oh, right.\n"
 	.string "You're WALLY, right?$"
 
 PetalburgCity_Gym_Text_WallyIveNeverCaughtAPokemon:
@@ -1167,10 +1167,10 @@ PetalburgCity_Gym_Text_WallyIveNeverCaughtAPokemon:
 	.string "I don't know how…$"
 
 PetalburgCity_Gym_Text_DadHmISee:
-	.string "TIÃO: Hm. I see.$"
+	.string "Tião: Hm. I see.$"
 
 PetalburgCity_Gym_Text_DadPlayerGoWithWally:
-	.string "TIÃO: {PLAYER}, you heard that,\n"
+	.string "Tião: {PLAYER}, you heard that,\n"
 	.string "right?\p"
 	.string "Go with WALLY and make sure that he\n"
 	.string "safely catches a POKéMON.$"
@@ -1182,7 +1182,7 @@ PetalburgCity_Gym_Text_IllLoanYouMyZigzagoon:
 PetalburgCity_Gym_Text_WallyThankYouAndDadGivesPokeBall:
 	.string "WALLY: Oh, wow!\n"
 	.string "A POKéMON!\p"
-	.string "TIÃO: Hm. I'll give you a POKé BALL, too.\n"
+	.string "Tião: Hm. I'll give you a POKé BALL, too.\n"
 	.string "Go for it!\p"
 	.string "WALLY received a POKé BALL!$"
 
@@ -1195,7 +1195,7 @@ PetalburgCity_Gym_Text_WouldYouReallyComeWithMe:
 	.string "with me?$"
 
 PetalburgCity_Gym_Text_DadSoDidItWorkOut:
-	.string "TIÃO: So, did it work out?$"
+	.string "Tião: So, did it work out?$"
 
 PetalburgCity_Gym_Text_WallyThankYouBye:
 	.string "WALLY: Thank you, yes, it did.\n"
@@ -1211,7 +1211,7 @@ PetalburgCity_Gym_Text_WallyThankYouBye:
 	.string "Bye, {PLAYER}!$"
 
 PetalburgCity_Gym_Text_DadGoCollectBadges:
-	.string "TIÃO: Now…\p"
+	.string "Tião: Now…\p"
 	.string "{PLAYER}, if you want to become a\n"
 	.string "strong TRAINER, here's my advice.\p"
 	.string "Head for RUSTBORO CITY beyond this\n"
@@ -1228,7 +1228,7 @@ PetalburgCity_Gym_Text_DadGoCollectBadges:
 	.string "stronger.$"
 
 PetalburgCity_Gym_Text_NormanGoToRustboro:
-	.string "TIÃO: Hm? Aren't you going to the\n"
+	.string "Tião: Hm? Aren't you going to the\n"
 	.string "POKéMON GYM in RUSTBORO CITY?\p"
 	.string "There's no challenge for me to\n"
 	.string "battle a greenhorn TRAINER.\p"
@@ -1238,7 +1238,7 @@ PetalburgCity_Gym_Text_NormanGoToRustboro:
 	.string "can show me four GYM BADGES, okay?$"
 
 PetalburgCity_Gym_Text_NormanGoToDewford:
-	.string "TIÃO: I see… So, you've beaten\n"
+	.string "Tião: I see… So, you've beaten\n"
 	.string "the GYM LEADER in RUSTBORO CITY.\p"
 	.string "But there are many more TRAINERS\n"
 	.string "who are stronger than you, {PLAYER}.\p"
@@ -1247,13 +1247,13 @@ PetalburgCity_Gym_Text_NormanGoToDewford:
 	.string "You should go challenge him.$"
 
 PetalburgCity_Gym_Text_YouHaveGottenStronger:
-	.string "TIÃO: Hm… {PLAYER}, you have gotten\n"
+	.string "Tião: Hm… {PLAYER}, you have gotten\n"
 	.string "stronger.\p"
 	.string "I can tell by the number of BADGES\n"
 	.string "that you've earned.$"
 
 PetalburgCity_Gym_Text_NormanIntro:
-	.string "TIÃO: A river changes every hour.\p"
+	.string "Tião: A river changes every hour.\p"
 	.string "Whoever wants to rule it starts\n"
 	.string "by pretending that change and\l"
 	.string "theft are the same thing.\p"
@@ -1275,10 +1275,10 @@ PetalburgCity_Gym_Text_NormanDefeat:
 
 PetalburgCity_Gym_Text_ReceivedBalanceBadge:
 	.string "{PLAYER} received the BALANCE BADGE\n"
-	.string "from TIÃO.$"
+	.string "from Tião.$"
 
 PetalburgCity_Gym_Text_ExplainBalanceBadgeTakeThis:
-	.string "TIÃO: With that BADGE, the DEFENSE\n"
+	.string "Tião: With that BADGE, the DEFENSE\n"
 	.string "of all your POKéMON will increase.\p"
 	.string "POKéMON that know the HM move SURF\n"
 	.string "will be able to travel over water.\p"
@@ -1286,7 +1286,7 @@ PetalburgCity_Gym_Text_ExplainBalanceBadgeTakeThis:
 	.string "sure you can use it correctly.$"
 
 PetalburgCity_Gym_Text_ExplainFacade:
-	.string "TIÃO: TM42 contains FACADE.\p"
+	.string "Tião: TM42 contains FACADE.\p"
 	.string "It doubles the power of moves if\n"
 	.string "the POKéMON is poisoned, paralyzed,\l"
 	.string "or burned.\p"
@@ -1294,7 +1294,7 @@ PetalburgCity_Gym_Text_ExplainFacade:
 	.string "situation into an advantage.$"
 
 PetalburgCity_Gym_Text_DadHappyAndSad:
-	.string "TIÃO: As keeper of this house,\n"
+	.string "Tião: As keeper of this house,\n"
 	.string "losing stings me deep…\p"
 	.string "But the old river is proud when\n"
 	.string "a new current runs strong.$"
@@ -1305,12 +1305,12 @@ PetalburgCity_Gym_Text_PleaseComeWithMe:
 	.string "I have something I want you to have.$"
 
 PetalburgCity_Gym_Text_LetMeBorrowPlayer:
-	.string "TIÃO, you don't mind, do you?\p"
+	.string "Tião, you don't mind, do you?\p"
 	.string "Let me borrow your {PLAYER}{KUN} for\n"
 	.string "a minute or two.$"
 
 PetalburgCity_Gym_Text_DadGoingToKeepTraining:
-	.string "TIÃO: {PLAYER}, don't forget the\n"
+	.string "Tião: {PLAYER}, don't forget the\n"
 	.string "folk who raised you.\p"
 	.string "I will stay and mend my nets,\n"
 	.string "and my POKéMON.\p"
@@ -1318,7 +1318,7 @@ PetalburgCity_Gym_Text_DadGoingToKeepTraining:
 	.string "another cast, {PLAYER}!$"
 
 PetalburgCity_Gym_Text_DadNoAmountOfTrainingIsEnough:
-	.string "TIÃO: {PLAYER}, how are things going?\p"
+	.string "Tião: {PLAYER}, how are things going?\p"
 	.string "The world of POKéMON is deep.\p"
 	.string "I honestly think that no amount of\n"
 	.string "training would ever be enough.$"
@@ -1329,7 +1329,7 @@ PetalburgCity_Gym_Text_GymGuideAdvice:
 	.string "rooms are like river channels.\p"
 	.string "Each gate opens only once you\n"
 	.string "beat the fisher guarding it.\p"
-	.string "TIÃO's people fight with all\n"
+	.string "Tião's people fight with all\n"
 	.string "manner of tackle and lures.\p"
 	.string "Left channel runs to the SPEED\n"
 	.string "ROOM; right, the ACCURACY ROOM.\p"
@@ -1338,7 +1338,7 @@ PetalburgCity_Gym_Text_GymGuideAdvice:
 
 PetalburgCity_Gym_Text_GymGuidePostVictory:
 	.string "{PLAYER}! You outfished old\n"
-	.string "TIÃO himself!\p"
+	.string "Tião himself!\p"
 	.string "The deep channel is yours!$"
 
 PetalburgCity_Gym_Text_RandallIntro:
@@ -1351,11 +1351,14 @@ PetalburgCity_Gym_Text_RandallDefeat:
 	.string "That was a magnificent battle!$"
 
 PetalburgCity_Gym_Text_RandallPostBattle:
-	.string "Go on to the next room where a new\n"
-	.string "challenge awaits you.\p"
-	.string "At the left is the CONFUSION ROOM.\p"
-	.string "The right door leads to the DEFENSE\n"
-	.string "ROOM.$"
+	.string "My father wrote down the day\n"
+	.string "the water rose. Every year.\p"
+	.string "Sixty years of it.\p"
+	.string "Their report says this drought\n"
+	.string "is natural variation.\p"
+	.string "Natural variation doesn't\n"
+	.string "start the same month a gate\l"
+	.string "was installed upstream.$"
 
 PetalburgCity_Gym_Text_RandallPostBadge:
 	.string "Whomever you beat, and whomever you\n"
@@ -1374,8 +1377,13 @@ PetalburgCity_Gym_Text_ParkerDefeat:
 	.string "You share a strong bond together.$"
 
 PetalburgCity_Gym_Text_ParkerPostBattle:
-	.string "The next room is the STRENGTH ROOM.\n"
-	.string "Can you withstand brute force?$"
+	.string "People think too much water is\n"
+	.string "the opposite of the problem.\p"
+	.string "It isn't.\p"
+	.string "Colour too strong, sun too\n"
+	.string "long, water too high.\p"
+	.string "Excess is just imbalance\n"
+	.string "wearing a friendlier face.$"
 
 PetalburgCity_Gym_Text_ParkerPostBadge:
 	.string "After you beat our LEADER, the\n"
@@ -1394,13 +1402,13 @@ PetalburgCity_Gym_Text_GeorgeDefeat:
 	.string "What ATTACK power…$"
 
 PetalburgCity_Gym_Text_GeorgePostBattle:
-	.string "I should have expected no less\n"
-	.string "from one the river favors.\p"
-	.string "No, wait! A TRAINER's abilities are\n"
-	.string "earned only through effort.\p"
-	.string "I lost because my own efforts\n"
-	.string "weren't enough.\p"
-	.string "Go on! The ONE-HIT KO ROOM is next.$"
+	.string "The rain didn't stop.\p"
+	.string "It was moved.\p"
+	.string "There's a contract for it.\n"
+	.string "Weather on demand, they call\l"
+	.string "it. Delivered where it's paid\l"
+	.string "for.\p"
+	.string "Somebody bought our sky.$"
 
 PetalburgCity_Gym_Text_GeorgePostBadge:
 	.string "I'm going to keep training at GYMS.\n"
@@ -1408,7 +1416,7 @@ PetalburgCity_Gym_Text_GeorgePostBadge:
 
 PetalburgCity_Gym_Text_BerkeIntro:
 	.string "I'm not going to take it easy just\n"
-	.string "because TIÃO sent for you.\p"
+	.string "because Tião sent for you.\p"
 	.string "I'll show you how horrid it is for\n"
 	.string "a POKéMON to take a critical hit!$"
 
@@ -1417,7 +1425,7 @@ PetalburgCity_Gym_Text_BerkeDefeat:
 	.string "You're the real deal.$"
 
 PetalburgCity_Gym_Text_BerkePostBattle:
-	.string "Old TIÃO really is strong.\n"
+	.string "Old Tião really is strong.\n"
 	.string "A keeper worth my respect.\p"
 	.string "And I sense the same river-glow\n"
 	.string "coming off you now.\p"
@@ -1425,7 +1433,7 @@ PetalburgCity_Gym_Text_BerkePostBattle:
 	.string "battle!$"
 
 PetalburgCity_Gym_Text_BerkePostBadge:
-	.string "Since TIÃO took over this house,\n"
+	.string "Since Tião took over this house,\n"
 	.string "the fishers here have gotten\l"
 	.string "a lot tougher.$"
 
@@ -1473,7 +1481,7 @@ PetalburgCity_Gym_Text_AlexiaPostBadge:
 	.string "Hi! Have you tried using SURF?$"
 
 PetalburgCity_Gym_Text_JodyIntro:
-	.string "TIÃO told us to go all out\n"
+	.string "Tião told us to go all out\n"
 	.string "and beat you.\p"
 	.string "No mercy, no matter who sent\n"
 	.string "you our way!$"
@@ -1483,7 +1491,7 @@ PetalburgCity_Gym_Text_JodyDefeat:
 
 PetalburgCity_Gym_Text_JodyPostBattle:
 	.string "The way you read the water…\n"
-	.string "TIÃO will want to see this.\p"
+	.string "Tião will want to see this.\p"
 	.string "Go on through! The keeper\n"
 	.string "is waiting!$"
 
@@ -1542,11 +1550,11 @@ PetalburgCity_Gym_Text_GymStatue:
 
 PetalburgCity_Gym_Text_GymStatueCertified:
 	.string "CASA DO RIO\p"
-	.string "TIÃO'S CERTIFIED TRAINERS:\n"
+	.string "Tião'S CERTIFIED TRAINERS:\n"
 	.string "{PLAYER}$"
 
 PetalburgCity_Gym_Text_NormanPreRematch:
-	.string "TIÃO: {PLAYER}…\n"
+	.string "Tião: {PLAYER}…\n"
 	.string "I had a feeling that you would come.\p"
 	.string "I would never refuse to accept\n"
 	.string "a challenge from you.\p"
@@ -1561,14 +1569,14 @@ PetalburgCity_Gym_Text_NormanRematchDefeat:
 	.string "Maybe that was going too hard…$"
 
 PetalburgCity_Gym_Text_NormanPostRematch:
-	.string "TIÃO: {PLAYER}…\n"
+	.string "Tião: {PLAYER}…\n"
 	.string "What is your dream?\p"
 	.string "My dream…\n"
 	.string "Hahaha…\l"
 	.string "It has already come true, actually.$"
 
 PetalburgCity_Gym_Text_NormanRematchNeedTwoMons:
-	.string "TIÃO: {PLAYER}…\n"
+	.string "Tião: {PLAYER}…\n"
 	.string "I had a feeling that you would come.\p"
 	.string "I would never refuse to accept\n"
 	.string "a challenge from you.\p"

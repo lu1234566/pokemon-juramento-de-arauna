@@ -59,8 +59,12 @@ SootopolisCity_Gym_B1F_Text_AndreaDefeat:
 	.string "Please forgive me, SEVERINO…$"
 
 SootopolisCity_Gym_B1F_Text_AndreaPostBattle:
-	.string "Watch what happens if you crack all\n"
-	.string "the floor tiles.$"
+	.string "Forty families dug that\n"
+	.string "cistern by hand.\p"
+	.string "The plaque names the company\n"
+	.string "that delivered the cement.\p"
+	.string "Same water. Same stone.\p"
+	.string "Only the names went missing.$"
 
 SootopolisCity_Gym_B1F_Text_CrissyIntro:
 	.string "You came all the way here, but you won't\n"
@@ -72,8 +76,15 @@ SootopolisCity_Gym_B1F_Text_CrissyDefeat:
 	.string "I was fooled by your cute looks!$"
 
 SootopolisCity_Gym_B1F_Text_CrissyPostBattle:
-	.string "You might be good enough to avoid\n"
-	.string "being wiped out in one hit by SEVERINO.$"
+	.string "The last Teller before\n"
+	.string "SEVERINO died without one.\p"
+	.string "No successor. No apprentice.\p"
+	.string "People assumed the title would\n"
+	.string "pass down a family like a\l"
+	.string "house or a debt.\p"
+	.string "It doesn't. It has to be\n"
+	.string "chosen, and it has to be\l"
+	.string "accepted.$"
 
 SootopolisCity_Gym_B1F_Text_DaphneIntro:
 	.string "The sight of SEVERINO conducting\n"
@@ -86,10 +97,14 @@ SootopolisCity_Gym_B1F_Text_DaphneDefeat:
 	.string "I could muster…$"
 
 SootopolisCity_Gym_B1F_Text_DaphnePostBattle:
-	.string "The grace you bring to battle is\n"
-	.string "fabulous.\p"
-	.string "Oh… I'm so fortunate to have found\n"
-	.string "POKéMON.$"
+	.string "Try telling a long story near\n"
+	.string "one of their towers.\p"
+	.string "You won't forget it.\p"
+	.string "You'll just stop halfway and\n"
+	.string "think: why am I bothering?\p"
+	.string "That's the whole machine.\n"
+	.string "It doesn't erase. It makes\l"
+	.string "you not want to finish.$"
 
 SootopolisCity_Gym_B1F_Text_ConnieIntro:
 	.string "I should teach you how harsh battles\n"

@@ -286,7 +286,7 @@ DewfordTown_Gym_Text_GymGuideAdvice:
 	.string "Bem-vindo to the CASA DO PAMPA,\n"
 	.string "the House of the Open Sky.\p"
 	.string "It's dark as the plain before dawn\n"
-	.string "in here — that's on purpose.\p"
+	.string "in here--that's on purpose.\p"
 	.string "NABOR's riders hold the night. Beat\n"
 	.string "each one and a little more dawn\l"
 	.string "breaks in, till you can see him.\p"
@@ -308,8 +308,13 @@ DewfordTown_Gym_Text_TakaoDefeat:
 	.string "Faster than my horse… fine.$"
 
 DewfordTown_Gym_Text_TakaoPostBattle:
-	.string "See? The east is already greying.\n"
-	.string "You're letting the dawn in.$"
+	.string "The chapel bell is logged every\n"
+	.string "time it rings.\p"
+	.string "The night they blamed her, the\n"
+	.string "book says it rang at four.\p"
+	.string "The official story needs it to\n"
+	.string "have rung at two.\p"
+	.string "Two hours nobody wants to own.$"
 
 DewfordTown_Gym_Text_JocelynIntro:
 	.string "You don't need NABOR to lose out\n"
@@ -319,19 +324,30 @@ DewfordTown_Gym_Text_JocelynDefeat:
 	.string "My hawk never even landed…$"
 
 DewfordTown_Gym_Text_JocelynPostBattle:
-	.string "One day I'll keep a House of my own.\n"
-	.string "The pampa remembers who rides well.$"
+	.string "For years she was only 'the\n"
+	.string "cursed one'.\p"
+	.string "Then somebody found her scarf,\n"
+	.string "with initials stitched inside.\p"
+	.string "She had a name. A family.\p"
+	.string "A curse doesn't stitch\n"
+	.string "initials into cloth.$"
 
 DewfordTown_Gym_Text_LauraIntro:
-	.string "Careful — in the dark you can't see\n"
+	.string "Careful--in the dark you can't see\n"
 	.string "which way the birds wheel.$"
 
 DewfordTown_Gym_Text_LauraDefeat:
 	.string "You heard them coming. How?$"
 
 DewfordTown_Gym_Text_LauraPostBattle:
-	.string "We ride blind on purpose, to learn\n"
-	.string "the wind by its sound alone.$"
+	.string "When the ride passes at night,\n"
+	.string "half the town goes out to meet\l"
+	.string "it with torches.\p"
+	.string "Not to see what's true.\p"
+	.string "To make sure the fear they\n"
+	.string "grew up with is still there.\p"
+	.string "Standing between the two is\n"
+	.string "harder than any battle.$"
 
 DewfordTown_Gym_Text_LilithIntro:
 	.string "Lost in the grass already?\n"
@@ -417,7 +433,7 @@ DewfordTown_Gym_Text_BrawlyPostBattle:
 	.string "same over all of them.$"
 
 DewfordTown_Gym_Text_GymStatue:
-	.string "CASA DO PAMPA — the House of the\n"
+	.string "CASA DO PAMPA--the House of the\n"
 	.string "Open Sky. Keeper: NABOR.$"
 
 DewfordTown_Gym_Text_GymStatueCertified:

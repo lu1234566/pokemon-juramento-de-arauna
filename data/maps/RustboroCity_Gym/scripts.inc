@@ -105,7 +105,7 @@ RustboroCity_Gym_EventScript_RegisterRoxanne::
 
 RustboroCity_Gym_Text_GymGuideAdvice:
 	.string "Easy, now. Catch your breath.\p"
-	.string "This is the CASA DA TERRA — the\n"
+	.string "This is the CASA DA TERRA--the\n"
 	.string "House of the Land.\p"
 	.string "BENTO keeps the old ways of these\n"
 	.string "hills. He was walking these ridges\l"
@@ -122,7 +122,7 @@ RustboroCity_Gym_Text_GymGuidePostVictory:
 	.string "You outlasted BENTO himself!\n"
 	.string "I felt these old hills hum.\p"
 	.string "The mark of the CASA DA TERRA is\n"
-	.string "yours now — the first of Arauna's\l"
+	.string "yours now--the first of Arauna's\l"
 	.string "seven Seals.\p"
 	.string "One House down. Long road ahead.\n"
 	.string "Walk it well, child.$"
@@ -136,9 +136,12 @@ RustboroCity_Gym_Text_JoshDefeat:
 	.string "Strong footing… you've got it.$"
 
 RustboroCity_Gym_Text_JoshPostBattle:
-	.string "BENTO says a hill is just patience\n"
-	.string "wearing a stone coat. You'll see\l"
-	.string "what he means soon enough.$"
+	.string "Look at the bricks in that wall.\n"
+	.string "See the thumb marks?\p"
+	.string "Every family pressed their own.\p"
+	.string "We don't need a street sign.\n"
+	.string "We know whose house is whose\l"
+	.string "by the hands left in the clay.$"
 
 RustboroCity_Gym_Text_TommyIntro:
 	.string "My folk have read this land for six\n"
@@ -149,9 +152,13 @@ RustboroCity_Gym_Text_TommyDefeat:
 	.string "The Land let you pass. Huh.$"
 
 RustboroCity_Gym_Text_TommyPostBattle:
-	.string "BENTO won't rush you and won't tire.\p"
-	.string "Beat him fast, or don't beat him\n"
-	.string "at all.$"
+	.string "The CONSORTIUM sent a survey\n"
+	.string "plan for this settlement.\p"
+	.string "I've seen it.\p"
+	.string "Where our houses stand, the\n"
+	.string "paper shows open ground.\p"
+	.string "Not wrong houses.\n"
+	.string "No houses at all.$"
 
 RustboroCity_Gym_Text_MarcIntro:
 	.string "You came up the whole ridge for a\n"
@@ -162,9 +169,13 @@ RustboroCity_Gym_Text_MarcDefeat:
 	.string "Sure-footed AND stubborn. Good.$"
 
 RustboroCity_Gym_Text_MarcPostBattle:
-	.string "BENTO chose the small, tough ones on\n"
-	.string "purpose. Anyone can swing a boulder.\p"
-	.string "Not everyone can refuse to fall.$"
+	.string "That mural at the back isn't\n"
+	.string "decoration.\p"
+	.string "It's the only record that says\n"
+	.string "who built here, and when.\p"
+	.string "Our POKéMON stand in front of\n"
+	.string "it when the rain comes.\p"
+	.string "So do we.$"
 
 RustboroCity_Gym_Text_RoxanneIntro:
 	.string "Clay takes any mark while it is\n"
@@ -215,7 +226,7 @@ RustboroCity_Gym_Text_RoxannePostBattle:
 	.string "going anywhere.$"
 
 RustboroCity_Gym_Text_GymStatue:
-	.string "CASA DA TERRA — the House of\n"
+	.string "CASA DA TERRA--the House of\n"
 	.string "the Land. Keeper: BENTO.$"
 
 RustboroCity_Gym_Text_GymStatueCertified:

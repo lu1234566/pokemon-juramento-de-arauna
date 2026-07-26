@@ -177,7 +177,7 @@ SootopolisCity_Gym_1F_EventScript_GymStatue::
 
 SootopolisCity_Gym_1F_Text_GymGuideAdvice:
 	.string "Yo, champion-bound {PLAYER}!\p"
-	.string "This is the CASA DO SERTÃO,\n"
+	.string "This is the Casa do Sertão,\n"
 	.string "the eighth and last House.\p"
 	.string "SEVERINO won't test how much you\n"
 	.string "can carry. He'll ask who you\l"
@@ -260,10 +260,10 @@ SootopolisCity_Gym_1F_Text_GoGetFortreeBadge:
 	.string "seal from IRACEMA's CASA DO AR.$"
 
 SootopolisCity_Gym_1F_Text_GymStatue:
-	.string "CASA DO SERTÃO$"
+	.string "Casa do Sertão$"
 
 SootopolisCity_Gym_1F_Text_GymStatueCertified:
-	.string "CASA DO SERTÃO\p"
+	.string "Casa do Sertão\p"
 	.string "SEVERINO'S CERTIFIED TRAINERS:\n"
 	.string "{PLAYER}$"
 

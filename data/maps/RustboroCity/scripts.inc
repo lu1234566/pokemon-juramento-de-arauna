@@ -1231,7 +1231,7 @@ RustboroCity_Text_DevonCorpSign:
 	.string "it all.”$"
 
 RustboroCity_Text_GymSign:
-	.string "CASA DA TERRA — the House of\n"
+	.string "CASA DA TERRA--the House of\n"
 	.string "the Land.\p"
 	.string "KEEPER: BENTO\n"
 	.string "“The mountain outlasts the storm.”$"

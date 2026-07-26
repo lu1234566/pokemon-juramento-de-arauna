@@ -395,8 +395,13 @@ MossdeepCity_Gym_Text_PrestonDefeat:
 	.string "I must temper my spirit again!$"
 
 MossdeepCity_Gym_Text_PrestonPostBattle:
-	.string "The indecisive lose.\n"
-	.string "That's my warning to you.$"
+	.string "DINA remembers the water\n"
+	.string "arriving slowly.\p"
+	.string "LINA remembers it arriving all\n"
+	.string "at once.\p"
+	.string "Neither of them is lying.\p"
+	.string "The high margin had time.\n"
+	.string "The low one didn't.$"
 
 MossdeepCity_Gym_Text_VirgilIntro:
 	.string "Let me see your talent!$"
@@ -405,10 +410,13 @@ MossdeepCity_Gym_Text_VirgilDefeat:
 	.string "You possess spectacular talent!$"
 
 MossdeepCity_Gym_Text_VirgilPostBattle:
-	.string "If there are prodigies in the world,\n"
-	.string "then our GYM LEADERS are them!\p"
-	.string "However, you may be even more talented\n"
-	.string "than them…$"
+	.string "The flood used to have a pulse.\n"
+	.string "Rise, spread, fall. Fish knew\l"
+	.string "it. So did we.\p"
+	.string "Now it rises when the schedule\n"
+	.string "says rise.\p"
+	.string "They turned a season into a\n"
+	.string "production calendar.$"
 
 MossdeepCity_Gym_Text_BlakeIntro:
 	.string "Fufufufu… Watch me levitate a POKé\n"
@@ -422,12 +430,14 @@ MossdeepCity_Gym_Text_BlakeDefeat:
 	.string "of sync, too!$"
 
 MossdeepCity_Gym_Text_BlakePostBattle:
-	.string "A POKé BALL was too heavy to lift\n"
-	.string "psychically. But this dust bunny…\p"
-	.string "Whoooooooooooooooh!\n"
-	.string "… … … … … …\p"
-	.string "No, I'm not cheating!\n"
-	.string "I didn't blow on it! Honestly!$"
+	.string "The lower archive floods every\n"
+	.string "release now.\p"
+	.string "You can go in and grab the\n"
+	.string "papers, sure.\p"
+	.string "But the people who kept them\n"
+	.string "live down there too.\p"
+	.string "Saving proof and abandoning\n"
+	.string "them is not saving anything.$"
 
 MossdeepCity_Gym_Text_HannahIntro:
 	.string "When you lose to me, don't be too hard\n"

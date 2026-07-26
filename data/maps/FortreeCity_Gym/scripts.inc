@@ -158,10 +158,12 @@ FortreeCity_Gym_Text_JaredDefeat:
 	.string "You're strong…$"
 
 FortreeCity_Gym_Text_JaredPostBattle:
-	.string "A TRAINER has to be smart to keep\n"
-	.string "up with unexpected turns of events.\p"
-	.string "Do you have the smarts to get to\n"
-	.string "our LEADER?$"
+	.string "A story travels like a bird.\p"
+	.string "It changes on the way. Picks up\n"
+	.string "a word here, drops one there.\p"
+	.string "That's allowed.\p"
+	.string "What isn't allowed is landing\n"
+	.string "and claiming you laid the egg.$"
 
 FortreeCity_Gym_Text_EdwardoIntro:
 	.string "The lovers of BIRD POKéMON aspire\n"
@@ -174,10 +176,13 @@ FortreeCity_Gym_Text_EdwardoDefeat:
 	.string "to bear…$"
 
 FortreeCity_Gym_Text_EdwardoPostBattle:
-	.string "The world is huge, and there are\n"
-	.string "countless tough TRAINERS.\p"
-	.string "I'm going to keep training and make\n"
-	.string "myself even stronger.$"
+	.string "The great tree at the top is\n"
+	.string "not fading. Get that straight.\p"
+	.string "Fading we could reverse.\p"
+	.string "The Curupira-Ancião is dying,\n"
+	.string "which is a different thing,\l"
+	.string "and it is allowed to happen.\p"
+	.string "What we owe it is a successor.$"
 
 FortreeCity_Gym_Text_FlintIntro:
 	.string "There's no need for IRACEMA, our GYM\n"
@@ -189,9 +194,14 @@ FortreeCity_Gym_Text_FlintDefeat:
 	.string "I lost!$"
 
 FortreeCity_Gym_Text_FlintPostBattle:
-	.string "IRACEMA is cute and she's strong.\n"
-	.string "She's the ultimate LEADER!\p"
-	.string "Blush…$"
+	.string "IRACEMA opened the nests to the\n"
+	.string "displaced children last winter.\p"
+	.string "Some elders called it a\n"
+	.string "desecration.\p"
+	.string "She said a story with nobody\n"
+	.string "young enough to carry it is\l"
+	.string "just a nice noise in an\l"
+	.string "empty room.$"
 
 FortreeCity_Gym_Text_AshleyIntro:
 	.string "IRACEMA taught me personally!\n"

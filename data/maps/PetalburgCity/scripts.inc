@@ -732,7 +732,7 @@ PetalburgCity_Text_FullPartyExplanation:
 
 PetalburgCity_Text_GymSign:
 	.string "CASA DO RIO\n"
-	.string "KEEPER: TIÃO\l"
+	.string "KEEPER: Tião\l"
 	.string "“The river remembers everyone.”$"
 
 PetalburgCity_Text_CitySign:

@@ -635,7 +635,7 @@ MauvilleCity_Text_CitySign:
 	.string "“The bright and shiny city of fun!”$"
 
 MauvilleCity_Text_GymSign:
-	.string "CASA DAS RUÍNAS — House of the\n"
+	.string "CASA DAS RUÍNAS--House of the\n"
 	.string "Old Stones.\l"
 	.string "KEEPER: IVO\l"
 	.string "“He digs to hear the old ones.”$"
