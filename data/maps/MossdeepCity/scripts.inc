@@ -393,7 +393,7 @@ MossdeepCity_Text_ItsAWhiteRock:
 MossdeepCity_Text_GymSign:
 	.string "CASA DO ESPELHO\n"
 	.string "KEEPERS: DINA & LINA\p"
-	.string "“Two sisters, one mind.”$"
+	.string "“Two margins, two versions.”$"
 
 MossdeepCity_Text_CitySign:
 	.string "MOSSDEEP CITY\n"

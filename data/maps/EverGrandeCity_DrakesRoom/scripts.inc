@@ -62,26 +62,21 @@ EverGrandeCity_DrakesRoom_EventScript_Defeated::
 	end
 
 EverGrandeCity_DrakesRoom_Text_IntroSpeech:
-	.string "I am the last of the ELITE,\n"
-	.string "TIBÚRCIO, master of DRAGONS.\p"
-	.string "On the great rivers they tell of\n"
-	.string "the COBRA GRANDE, coiled beneath\l"
-	.string "the black water.\p"
-	.string "A wild thing, free. It suffers\n"
-	.string "no master, only a companion.\p"
-	.string "Do you know what that takes?\p"
-	.string "If not, you will never pass me!$"
+	.string "I am TIBÚRCIO, last of the\n"
+	.string "ELITE.\p"
+	.string "Whoever tells a story about\n"
+	.string "someone gains power over how\l"
+	.string "that person will be remembered.\p"
+	.string "So I will ask you one thing:\p"
+	.string "Who is allowed to correct you?$"
 
 EverGrandeCity_DrakesRoom_Text_Defeat:
-	.string "Superb. The serpent bows to you.$"
+	.string "You gave your limit a name.\p"
+	.string "Guard that better than any\n"
+	.string "Charter.$"
 
 EverGrandeCity_DrakesRoom_Text_PostBattleSpeech:
-	.string "You have come far, and honestly.\p"
-	.string "You seem to know what it takes.\p"
-	.string "What a TRAINER truly needs is a\n"
-	.string "virtuous heart.\p"
-	.string "POKéMON, even the COBRA GRANDE,\n"
-	.string "answer such a heart and grow\l"
-	.string "strong.\p"
-	.string "Go on! The CHAMPION is waiting.$"
+	.string "A person who can be corrected\n"
+	.string "can be trusted with a story.\p"
+	.string "Go on. The CHAMPION is waiting.$"
 

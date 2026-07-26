@@ -65,23 +65,21 @@ EverGrandeCity_SidneysRoom_EventScript_Defeated::
 	end
 
 EverGrandeCity_SidneysRoom_Text_IntroSpeech:
-	.string "Welcome, challenger.\n"
 	.string "I am LÁZARO, first of the ELITE.\p"
-	.string "I like the shadow behind your\n"
-	.string "eyes. It means you have walked\l"
-	.string "through some dark nights.\p"
-	.string "Good. My POKéMON and I live\n"
-	.string "there, in the dark.\p"
-	.string "Let us see if you can find your\n"
-	.string "way out!$"
+	.string "Some stories end because they\n"
+	.string "were erased.\p"
+	.string "Others end because they reached\n"
+	.string "their end.\p"
+	.string "If you cannot tell the two\n"
+	.string "apart, you will wound both.$"
 
 EverGrandeCity_SidneysRoom_Text_Defeat:
-	.string "Hah! You dragged me into the\n"
-	.string "light. Well done.$"
+	.string "You left a closed door closed\n"
+	.string "without calling it failure.\p"
+	.string "You may cross the next one.$"
 
 EverGrandeCity_SidneysRoom_Text_PostBattleSpeech:
-	.string "Listen to a beaten night-walker.\p"
-	.string "You have the nerve to go far.\n"
-	.string "Move on to the next room, and\l"
-	.string "don't look back!$"
+	.string "Knowing when to let go is its\n"
+	.string "own kind of strength.\p"
+	.string "Move on to the next room.$"
 

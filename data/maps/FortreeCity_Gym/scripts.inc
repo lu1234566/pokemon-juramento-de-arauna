@@ -233,22 +233,21 @@ FortreeCity_Gym_Text_DariusPostBattle:
 	.string "IRACEMA's POKéMON are all business.$"
 
 FortreeCity_Gym_Text_WinonaIntro:
-	.string "I am IRACEMA, keeper of the\n"
-	.string "CASA DO AR.\p"
-	.string "I learned the wind from the\n"
-	.string "UIRAPURU, whose song stills\l"
-	.string "the whole forest.\p"
-	.string "My birds and I move as one\n"
-	.string "current of air.\p"
-	.string "Come. Show me if your wings\n"
-	.string "can hold their weight!$"
+	.string "Whoever cages the wind keeps\n"
+	.string "what, exactly?\p"
+	.string "You said: the container.\p"
+	.string "And loses the wind.\p"
+	.string "Let us see what you have done\n"
+	.string "with that notebook.$"
 
 FortreeCity_Gym_Text_WinonaDefeat:
-	.string "The wind chose you today.\p"
-	.string "I have not been out-flown in\n"
-	.string "many years.\p"
-	.string "Take this badge. You have\n"
-	.string "earned the open sky.$"
+	.string "You left space between one voice\n"
+	.string "and the next.\p"
+	.string "It is in that gap that a story\n"
+	.string "breathes.\p"
+	.string "Charter of the Air. Not to carry\n"
+	.string "everything.\p"
+	.string "To know what must keep moving.$"
 
 FortreeCity_Gym_Text_ReceivedFeatherBadge:
 	.string "{PLAYER} received the FEATHER BADGE\n"

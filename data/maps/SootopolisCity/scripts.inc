@@ -1379,7 +1379,7 @@ SootopolisCity_Movement_DestroyTask::
 	step_end
 
 SootopolisCity_Text_GymSign:
-	.string "CASA DA CHEIA\n"
+	.string "CASA DO SERTÃO\n"
 	.string "KEEPER: SEVERINO\p"
 	.string "“Water where none should be.”$"
 

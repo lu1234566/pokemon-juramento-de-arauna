@@ -177,12 +177,13 @@ SootopolisCity_Gym_1F_EventScript_GymStatue::
 
 SootopolisCity_Gym_1F_Text_GymGuideAdvice:
 	.string "Yo, champion-bound {PLAYER}!\p"
-	.string "This is the CASA DA CHEIA,\n"
-	.string "SEVERINO's house of waters.\p"
-	.string "He came from the dry sertão and\n"
-	.string "learned to command every drop.\p"
+	.string "This is the CASA DO SERTÃO,\n"
+	.string "the eighth and last House.\p"
+	.string "SEVERINO won't test how much you\n"
+	.string "can carry. He'll ask who you\l"
+	.string "carried it with.\p"
 	.string "His WATER POKéMON are the last\n"
-	.string "flood of a thirsty land.\p"
+	.string "well of a thirsty land.\p"
 	.string "The icy floor guards his hall;\n"
 	.string "mind your step, and go for it!$"
 
@@ -194,32 +195,27 @@ SootopolisCity_Gym_1F_Text_GymGuidePostVictory:
 	.string "set for the POKéMON LEAGUE challenge!$"
 
 SootopolisCity_Gym_1F_Text_JuanIntro:
-	.string "Let me ask you something.\p"
-	.string "In the sertão where I was born,\n"
-	.string "water is only a rumor.\p"
-	.string "A man learns to read every drop,\n"
-	.string "or he does not live long.\p"
-	.string "I taught AUGUSTO all he knows of\n"
-	.string "the water arts.\p"
-	.string "Then I gave him this house and\n"
-	.string "walked back into the dry.\p"
-	.string "But the waters called me home.\p"
-	.string "Enough. Let us begin.\p"
-	.string "Witness water where none\n"
-	.string "should be!$"
+	.string "SEVERINO: You gathered Charters.\p"
+	.string "You said: I did.\p"
+	.string "And people?\p"
+	.string "You said: some. I lost another.\p"
+	.string "That answer may enter the House.$"
 
 @ NOTE: This defeat text actually causes a buffer overflow. It's about 50 bytes too long for
 @ the gDisplayedStringBattle buffer that it's put into, and it stomps all over the gBattleTextBuffs
 @ after, as well as the otherwise unused array after that. One wonders if that's the reason for
 @ the existence of that unused array of ints.
 SootopolisCity_Gym_1F_Text_JuanDefeat:
-	.string "Ahahaha, excellent!\n"
-	.string "You are the winner.\p"
-	.string "I sense in you the shine that\n"
-	.string "overcomes any drought.\p"
-	.string "The sertão hardens a person,\n"
-	.string "but you were not hardened cruel.\p"
-	.string "Take this, the RAIN BADGE.$"
+	.string "You can bear the weight.\p"
+	.string "You said: then give me the\n"
+	.string "Charter.\p"
+	.string "Weight does not make a Teller.\p"
+	.string "But you did not come with weight\n"
+	.string "alone. You came with voices.\p"
+	.string "The Charter began in the Sertão\n"
+	.string "and ends where all could see it.\p"
+	.string "It is yours as long as you let\n"
+	.string "yourself be corrected.$"
 
 SootopolisCity_Gym_1F_Text_ReceivedRainBadge:
 	.string "{PLAYER} received the RAIN BADGE\n"
@@ -264,10 +260,10 @@ SootopolisCity_Gym_1F_Text_GoGetFortreeBadge:
 	.string "seal from IRACEMA's CASA DO AR.$"
 
 SootopolisCity_Gym_1F_Text_GymStatue:
-	.string "CASA DA CHEIA$"
+	.string "CASA DO SERTÃO$"
 
 SootopolisCity_Gym_1F_Text_GymStatueCertified:
-	.string "CASA DA CHEIA\p"
+	.string "CASA DO SERTÃO\p"
 	.string "SEVERINO'S CERTIFIED TRAINERS:\n"
 	.string "{PLAYER}$"
 

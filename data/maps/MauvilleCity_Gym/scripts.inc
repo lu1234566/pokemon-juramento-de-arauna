@@ -335,21 +335,24 @@ MauvilleCity_Gym_Text_AngeloPostBattle:
 	.string "man. Great keeper.$"
 
 MauvilleCity_Gym_Text_WattsonIntro:
-	.string "Down here already? And every door\n"
-	.string "ground open behind you?\p"
-	.string "Hah! Do you know how long these\n"
-	.string "stones stayed shut before I came?\p"
-	.string "I am IVO. I keep the CASA DAS RUÍNAS.\n"
-	.string "The serra's memory is my charge.\p"
-	.string "You've read my doors. Now read my\n"
-	.string "old, heavy friends — if you can!$"
+	.string "The water does not negotiate.\p"
+	.string "We have room for forty-two\n"
+	.string "crates.\p"
+	.string "You asked: how many people fit\n"
+	.string "in the inventory?\p"
+	.string "That is not a unit the form\n"
+	.string "accepts.\p"
+	.string "Then the form is one of the\n"
+	.string "things that will stay behind.$"
 
 MauvilleCity_Gym_Text_WattsonDefeat:
-	.string "Hah! HAH!\p"
-	.string "The stones opened for you at every\n"
-	.string "turn. Even the last one.\p"
-	.string "Take the Seal, delver. The serra\n"
-	.string "knows your footsteps now.$"
+	.string "I numbered every stone and\n"
+	.string "almost let the names sink.\p"
+	.string "Help me redo the list before the\n"
+	.string "water arrives.\p"
+	.string "The Charter of the Ruins guards\n"
+	.string "no wall. It guards the right to\l"
+	.string "say who raised it.$"
 
 MauvilleCity_Gym_Text_ReceivedDynamoBadge:
 	.string "{PLAYER} received the DYNAMO BADGE\n"

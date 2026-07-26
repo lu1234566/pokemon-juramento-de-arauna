@@ -59,26 +59,22 @@ EverGrandeCity_PhoebesRoom_EventScript_Defeated::
 	end
 
 EverGrandeCity_PhoebesRoom_Text_IntroSpeech:
-	.string "Ahahaha…\p"
-	.string "I am ROSA, of the ELITE.\n"
-	.string "I keep the hill of the dead.\p"
-	.string "Up there, among the graves, I\n"
-	.string "learned to hear the ones who\l"
-	.string "have already crossed over.\p"
-	.string "My GHOST POKéMON are old friends\n"
-	.string "from the other side.\p"
-	.string "Come. See if you can so much as\n"
-	.string "touch them!$"
+	.string "I am ROSA, of the ELITE.\p"
+	.string "Retelling is not copying.\p"
+	.string "It is also no license to strip\n"
+	.string "the name from whoever told it\l"
+	.string "before you.\p"
+	.string "Show me who speaks when you\n"
+	.string "say the word 'we'.$"
 
 EverGrandeCity_PhoebesRoom_Text_Defeat:
-	.string "Oh… the dead are laughing at me\n"
-	.string "now.$"
+	.string "Your voice comes through.\p"
+	.string "I can still hear the others.\p"
+	.string "That is the balance I wanted\n"
+	.string "to test.$"
 
 EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech:
-	.string "There is a bond between you and\n"
-	.string "your POKéMON, clear as a candle.\p"
-	.string "I could not see it, so of course\n"
-	.string "I lost.\p"
-	.string "Let us see how far the living\n"
-	.string "can carry you. Move on.$"
+	.string "A 'we' with room for many\n"
+	.string "voices. That is rare.\p"
+	.string "Move on to the next room.$"
 

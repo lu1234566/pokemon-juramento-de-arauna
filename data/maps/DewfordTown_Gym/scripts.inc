@@ -367,19 +367,25 @@ DewfordTown_Gym_Text_CristianPostBattle:
 	.string "where the sky opens up.$"
 
 DewfordTown_Gym_Text_BrawlyIntro:
-	.string "So the dawn walks in wearing your\n"
-	.string "face. I'm NABOR.\p"
-	.string "I've kept the CASA DO PAMPA since\n"
-	.string "before the fences went up. Learned\l"
-	.string "the wind from the birds themselves.\p"
-	.string "Let's see if you can ride it, or if\n"
-	.string "it rides you.$"
+	.string "A small town lives on its\n"
+	.string "version of things.\p"
+	.string "Touch one, and the rest creaks.\p"
+	.string "You said: if the square only\n"
+	.string "stands because one woman carries\l"
+	.string "the blame, it was already\l"
+	.string "cracked.\p"
+	.string "Pretty words. Now say them when\n"
+	.string "the whole square turns on you.$"
 
 DewfordTown_Gym_Text_BrawlyDefeat:
-	.string "Hah! You read the wind before my\n"
-	.string "own birds did.\p"
-	.string "The open sky's yours today, campeiro.\n"
-	.string "Take the Seal — you rode it down fair.$"
+	.string "I spent my life calling silence\n"
+	.string "peace.\p"
+	.string "Today the square made noise.\n"
+	.string "And it did not fall.\p"
+	.string "The Charter of the Pampa doesn't\n"
+	.string "say your version is final.\p"
+	.string "It says you let the others\n"
+	.string "answer back.$"
 
 DewfordTown_Gym_Text_ReceivedKnuckleBadge:
 	.string "{PLAYER} received the KNUCKLE BADGE\n"

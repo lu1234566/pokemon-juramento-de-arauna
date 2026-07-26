@@ -59,23 +59,22 @@ EverGrandeCity_GlaciasRoom_EventScript_Defeated::
 	end
 
 EverGrandeCity_GlaciasRoom_Text_IntroSpeech:
-	.string "Welcome. I am CLARA,\n"
-	.string "of the ELITE.\p"
-	.string "I came from the cold serra of\n"
-	.string "the far south, where frost bites\l"
-	.string "the fields at dawn.\p"
-	.string "There, ice is rare and honest.\n"
-	.string "I have honed it for years.\p"
-	.string "Warm me, if you can!$"
+	.string "I am CLARA, of the ELITE.\p"
+	.string "A document can lie.\p"
+	.string "A memory can fail.\p"
+	.string "That does not make either one\n"
+	.string "useless.\p"
+	.string "It makes you responsible for\n"
+	.string "crossing one against the other.$"
 
 EverGrandeCity_GlaciasRoom_Text_Defeat:
-	.string "You and your POKéMON…\n"
-	.string "How warm your spirits burn.\p"
-	.string "No frost of mine could hold\n"
-	.string "against that. Well fought.$"
+	.string "You did not choose the most\n"
+	.string "comfortable proof.\p"
+	.string "You chose the one that survived\n"
+	.string "the questions.$"
 
 EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech:
-	.string "Advance to the next room.\p"
-	.string "There waits the fiercest of us.\n"
-	.string "Do not falter now.$"
+	.string "Cross-check everything, even\n"
+	.string "what you wish were true.\p"
+	.string "Advance to the next room.$"
 
