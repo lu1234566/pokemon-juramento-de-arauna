@@ -160,8 +160,44 @@ AraunaPorto_EventScript_DonaCelinaGrantBadge::
 	playfanfare MUS_OBTAIN_BADGE
 	waitfanfare
 	msgbox AraunaPorto_Text_MareBadgeReceived, MSGBOX_DEFAULT
+	call AraunaPorto_EventScript_ZilaSeaCall
 	release
 	end
+
+@ M15 — the call to Dona Zila. She asks about the sea before the badge, and the
+@ answer is kept word for word: the post-game radio repeats it back.
+@ Saying nothing leaves the flags clear, so the question can still be answered.
+AraunaPorto_EventScript_ZilaSeaCall::
+	goto_if_set FLAG_ARAUNA_SEA_DISTANCE, AraunaPorto_EventScript_SeaAlreadyTold
+	goto_if_set FLAG_ARAUNA_SEA_SOUND, AraunaPorto_EventScript_SeaAlreadyTold
+	goto_if_set FLAG_ARAUNA_SEA_DARK, AraunaPorto_EventScript_SeaAlreadyTold
+	msgbox AraunaPorto_Text_ZilaCallIntro, MSGBOX_DEFAULT
+	msgbox AraunaPorto_Text_SeaPromptDistance, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, AraunaPorto_EventScript_SeaDistance
+	msgbox AraunaPorto_Text_SeaPromptSound, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, AraunaPorto_EventScript_SeaSound
+	msgbox AraunaPorto_Text_SeaPromptDark, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, AraunaPorto_EventScript_SeaDark
+	msgbox AraunaPorto_Text_SeaSilent, MSGBOX_DEFAULT
+	return
+
+AraunaPorto_EventScript_SeaAlreadyTold::
+	return
+
+AraunaPorto_EventScript_SeaDistance::
+	setflag FLAG_ARAUNA_SEA_DISTANCE
+	msgbox AraunaPorto_Text_SeaDistance, MSGBOX_DEFAULT
+	return
+
+AraunaPorto_EventScript_SeaSound::
+	setflag FLAG_ARAUNA_SEA_SOUND
+	msgbox AraunaPorto_Text_SeaSound, MSGBOX_DEFAULT
+	return
+
+AraunaPorto_EventScript_SeaDark::
+	setflag FLAG_ARAUNA_SEA_DARK
+	msgbox AraunaPorto_Text_SeaDark, MSGBOX_DEFAULT
+	return
 
 AraunaSerra_EventScript_DonaCelinaTravel::
 	msgbox AraunaPorto_Text_DonaCelinaAfterBadge, MSGBOX_DEFAULT

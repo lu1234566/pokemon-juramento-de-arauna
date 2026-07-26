@@ -321,3 +321,57 @@ AraunaPorto_Text_ConsortiumPostDoor::
 AraunaPorto_Text_HarborOfficeDoor::
 	.string "HARBOR OFFICE CLOSED\p"
 	.string "Orders moved to the permit post.$"
+
+@ M15 - the call to Dona Zila. Her question about the sea; the answer is kept
+@ word for word and returns in the post-game radio.
+
+AraunaPorto_Text_ZilaCallIntro::
+	.string "The line crackles twice before\n"
+	.string "she picks up.\p"
+	.string "DONA ZILA: There you are.\p"
+	.string "No, don't tell me about the\n"
+	.string "badge yet. Tell me the other\l"
+	.string "thing.\p"
+	.string "How is the sea?$"
+
+AraunaPorto_Text_SeaPromptDistance::
+	.string "Say it looks like it never\n"
+	.string "ends?$"
+
+AraunaPorto_Text_SeaDistance::
+	.string "You tell her the sea looks\n"
+	.string "like a road so wide they\l"
+	.string "forgot to build the other\l"
+	.string "bank.\p"
+	.string "DONA ZILA: ...Say that again,\n"
+	.string "slower. I want to keep it.$"
+
+AraunaPorto_Text_SeaPromptSound::
+	.string "Say it makes a lot of noise?$"
+
+AraunaPorto_Text_SeaSound::
+	.string "You tell her that even when\n"
+	.string "nobody is talking, the sea\l"
+	.string "keeps talking to everything\l"
+	.string "around it.\p"
+	.string "DONA ZILA: Then it is just\n"
+	.string "like your grandmother.$"
+
+AraunaPorto_Text_SeaPromptDark::
+	.string "Say it is frightening at\n"
+	.string "night?$"
+
+AraunaPorto_Text_SeaDark::
+	.string "You tell her that at night it\n"
+	.string "turns black, but every boat\l"
+	.string "lights one small lamp and\l"
+	.string "insists on coming back.\p"
+	.string "DONA ZILA: Good.\p"
+	.string "Be one of the ones that\n"
+	.string "insists.$"
+
+AraunaPorto_Text_SeaSilent::
+	.string "You cannot find the words.\p"
+	.string "DONA ZILA: That is all right.\n"
+	.string "The sea is still there.\l"
+	.string "Call me when you find them.$"

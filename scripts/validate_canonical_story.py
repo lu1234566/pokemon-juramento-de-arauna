@@ -236,14 +236,47 @@ def validate_prologue_bond_choices() -> None:
     )
 
 
+def validate_sea_description() -> None:
+    """M15 — the answer about the sea is kept word for word for the post-game."""
+    porto = read("data/maps/SlateportCity/scripts.inc")
+
+    require(
+        "call AraunaPorto_EventScript_ZilaSeaCall" in porto,
+        "the call to Dona Zila (M15) never happens",
+    )
+    call = porto.split("AraunaPorto_EventScript_ZilaSeaCall::", 1)[1]
+    for flag, text in (
+        ("FLAG_ARAUNA_SEA_DISTANCE", "AraunaPorto_Text_SeaDistance"),
+        ("FLAG_ARAUNA_SEA_SOUND", "AraunaPorto_Text_SeaSound"),
+        ("FLAG_ARAUNA_SEA_DARK", "AraunaPorto_Text_SeaDark"),
+    ):
+        require(
+            f"goto_if_set {flag}" in call,
+            f"the sea question can be answered twice because {flag} is not checked",
+        )
+        block = call.split(f"setflag {flag}", 1)[1].split("return", 1)[0]
+        require(text in block, f"{flag} must show {text}")
+
+    # The three descriptions must survive verbatim: the post-game radio quotes them.
+    english = read("data/text/arauna/en/porto_das_redes.inc")
+    for phrase in (
+        "forgot to build the other",
+        "keeps talking to everything",
+        "insists on coming back",
+    ):
+        require(phrase in english, f"canonical sea description is missing: {phrase!r}")
+
+
 def main() -> int:
     validate_founding_stories()
     validate_bond_system()
     validate_prologue_bond_choices()
+    validate_sea_description()
     print(
         "Canonical story validated: three founding stories in both languages, "
-        "the packed three-axis Bond system, and the prologue Bond choices "
-        "(First Link, Ciro's badge, the departure promise)"
+        "the packed three-axis Bond system, the prologue Bond choices "
+        "(First Link, Ciro's badge, the departure promise), and the kept "
+        "description of the sea"
     )
     return 0
 
