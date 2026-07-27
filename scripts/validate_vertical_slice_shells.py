@@ -156,7 +156,7 @@ def main() -> int:
         fail("visible east road does not enter Mist Route")
     if "warp MAP_ARAUNA_MAP_LAB, 255, 17, 11" not in mist_scripts:
         fail("Mist Route does not return to the village")
-    if "warp MAP_ROUTE110, 255, 17, 9" not in mist_scripts:
+    if "warp MAP_ROUTE110, 255, 14, 9" not in mist_scripts:
         fail("post-prologue Mist Route does not continue to the coast road")
 
     print("Validated 6 independent Arauna layouts, visible village exits and scripted route continuity.")

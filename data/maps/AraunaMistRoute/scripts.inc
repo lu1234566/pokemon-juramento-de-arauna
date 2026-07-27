@@ -103,7 +103,7 @@ AraunaMistRoute_EventScript_ContinueToCoastRoad::
 
 AraunaMistRoute_EventScript_CoastRoadReady::
 	msgbox AraunaMistRoute_Text_CoastRoad, MSGBOX_DEFAULT
-	warp MAP_ROUTE110, 255, 17, 9
+	warp MAP_ROUTE110, 255, 14, 9
 	waitstate
 	end
 

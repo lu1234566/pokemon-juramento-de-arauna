@@ -115,7 +115,9 @@ def main() -> None:
         for event in coast["coord_events"]
         if event["script"] == "Route110_EventScript_BlockNorthRoad"
     }
-    require(north_blocks == {(x, 4) for x in range(13, 22)}, "north road blocker has gaps")
+    # x=11..16 is the full width of the west corridor at y=4, and the only way
+    # north. x=17-18 is solid rock and x=19..22 is a pocket that dead-ends.
+    require(north_blocks == {(x, 4) for x in range(11, 17)}, "north road blocker has gaps")
     require(any(obj["script"] == "Route110_EventScript_ConsortiumCheckpoint" for obj in coast["object_events"]),
             "north closure lacks a visible checkpoint")
     # The blockers stay on screen for the whole game; reopening the road changes
@@ -141,7 +143,7 @@ def main() -> None:
     runtime = read("data/scripts/arauna_porto_runtime.inc")
 
     require("warp MAP_ROUTE109" not in village_scripts, "Vila still teleports directly to Porto")
-    require("warp MAP_ROUTE110, 255, 17, 9" in mist_scripts, "Mist Route does not hand off to the north coast road")
+    require("warp MAP_ROUTE110, 255, 14, 9" in mist_scripts, "Mist Route does not hand off to the north coast road")
     require("FLAG_ARAUNA_COAST_ROAD_ENTERED" in coast_scripts, "coast-road arrival is not persistent")
     require("FLAG_ARAUNA_PORTO_ARRIVED" in runtime, "Porto arrival is not recorded in the city")
     require("AraunaPorto_EventScript_RoadArrival" in runtime, "custom Porto arrival script is missing")

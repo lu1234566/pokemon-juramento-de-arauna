@@ -48,7 +48,7 @@ def main() -> None:
     assert "warp MAP_ARAUNA_MIST_ROUTE, 255, 10, 17" in village_scripts
 
     assert mist["warp_events"] == []
-    assert "warp MAP_ROUTE110, 255, 17, 9" in mist_scripts
+    assert "warp MAP_ROUTE110, 255, 14, 9" in mist_scripts
     assert "FLAG_ARAUNA_PORTO_ARRIVED" not in mist_scripts
     assert "AraunaMistRoute_Text_CoastRoad" in mist_scripts
 

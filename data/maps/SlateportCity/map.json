@@ -225,15 +225,6 @@
       "var": "VAR_TEMP_2",
       "var_value": "0",
       "script": "AraunaPorto_EventScript_RoadArrival"
-    },
-    {
-      "type": "trigger",
-      "x": 20,
-      "y": 1,
-      "elevation": 3,
-      "var": "VAR_TEMP_2",
-      "var_value": "0",
-      "script": "AraunaPorto_EventScript_RoadArrival"
     }
   ],
   "bg_events": [

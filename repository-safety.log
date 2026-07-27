@@ -77,6 +77,9 @@ Flag/var slot check passed: 2075 literal defines, no slot claimed twice
 == Sprite transparency ==
 Sprite transparency check passed: no sprite sits on a solid canvas
 
+== Event placement ==
+Event placement check passed: 92 coordinates are on walkable ground
+
 == Priority-10 NPC v3 ==
 Priority-10 NPC v3 validated: nine overworlds, six trainer portraits, story wiring and Libras safety gate.
 
