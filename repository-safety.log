@@ -71,6 +71,9 @@ PNG integrity check passed: 10914 graphics are readable by libpng
 == Assembler directives ==
 Directive check passed: 1040 .inc files assemble cleanly
 
+== Flag/var slot collisions ==
+Flag/var slot check passed: 2075 literal defines, no slot claimed twice
+
 == Priority-10 NPC v3 ==
 Priority-10 NPC v3 validated: nine overworlds, six trainer portraits, story wiring and Libras safety gate.
 

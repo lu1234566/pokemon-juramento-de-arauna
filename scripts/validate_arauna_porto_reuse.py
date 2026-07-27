@@ -118,14 +118,19 @@ def main() -> None:
     require(north_blocks == {(x, 4) for x in range(13, 22)}, "north road blocker has gaps")
     require(any(obj["script"] == "Route110_EventScript_ConsortiumCheckpoint" for obj in coast["object_events"]),
             "north closure lacks a visible checkpoint")
+    # The blockers stay on screen for the whole game; reopening the road changes
+    # what they say, not whether they are there (see the _Open script branches).
+    # "0" is the engine's always-visible sentinel. An actual flag name must never
+    # be used here: whatever flag it named would silently erase the checkpoint the
+    # moment something else set that slot.
     require(all(
-        obj["flag"] == "FLAG_UNUSED_0x04F"
+        obj["flag"] == "0"
         for obj in coast["object_events"]
         if obj["script"] in {
             "Route110_EventScript_NorthRoadWorker",
             "Route110_EventScript_ConsortiumCheckpoint",
         }
-    ), "visible north blockers must use the reserved 0x4F object flag")
+    ), "visible north blockers must be unconditionally visible (flag \"0\")")
     require(coast["warp_events"] == [], "vanilla Route 110 building warps remain accessible")
 
     village_scripts = read("data/maps/AraunaMapLab/scripts.inc")

@@ -94,11 +94,9 @@
 #define FLAG_ARAUNA_PORTO_DOCK_SONG_HEARD             0x48
 #define FLAG_ARAUNA_PORTO_NET_FOUND                   0x49
 #define FLAG_ARAUNA_PORTO_AGENT_DEFEATED              0x4A
-#define FLAG_ARAUNA_STARTER_STORY_HEARD               0x4B // Dona Zila told the founding story of the chosen starter
-#define FLAG_ARAUNA_CIRO_BADGE_REVEALED               0x4C // CIRO's Consortium badge shown in the plaza (P12)
-#define FLAG_ARAUNA_PROMISE_RETURN                    0x4D // Departure promise: I will come back (P13)
-#define FLAG_ARAUNA_PROMISE_RECORD                    0x4E // Departure promise: I will record it all (P13)
-#define FLAG_ARAUNA_PROMISE_LISTEN                    0x4F // Departure promise: I will listen first (P13)
+// 0x4B-0x4F are already claimed by include/config/arauna.h (the Porto and coast
+// road aliases). The story flags below live in the unused 0x4D4 block instead;
+// see the "Arauna story" comment there.
 
 // Scripts
 #define FLAG_HIDE_SKY_PILLAR_TOP_RAYQUAZA_STILL  0x50
@@ -1287,11 +1285,14 @@
 #define FLAG_UNUSED_0x4D1                                           0x4D1 // Unused Flag
 #define FLAG_UNUSED_0x4D2                                           0x4D2 // Unused Flag
 #define FLAG_UNUSED_0x4D3                                           0x4D3 // Unused Flag
-#define FLAG_UNUSED_0x4D4                                           0x4D4 // Unused Flag
-#define FLAG_UNUSED_0x4D5                                           0x4D5 // Unused Flag
-#define FLAG_UNUSED_0x4D6                                           0x4D6 // Unused Flag
-#define FLAG_UNUSED_0x4D7                                           0x4D7 // Unused Flag
-#define FLAG_UNUSED_0x4D8                                           0x4D8 // Unused Flag
+// Arauna story: persistent prologue state. These sit here rather than beside the
+// other FLAG_ARAUNA_* entries because the low 0x4B-0x4F slots are taken by
+// include/config/arauna.h.
+#define FLAG_ARAUNA_STARTER_STORY_HEARD                             0x4D4 // Dona Zila told the founding story of the chosen starter
+#define FLAG_ARAUNA_CIRO_BADGE_REVEALED                             0x4D5 // CIRO's Consortium badge shown in the plaza (P12)
+#define FLAG_ARAUNA_PROMISE_RETURN                                  0x4D6 // Departure promise: I will come back (P13)
+#define FLAG_ARAUNA_PROMISE_RECORD                                  0x4D7 // Departure promise: I will record it all (P13)
+#define FLAG_ARAUNA_PROMISE_LISTEN                                  0x4D8 // Departure promise: I will listen first (P13)
 #define FLAG_UNUSED_0x4D9                                           0x4D9 // Unused Flag
 #define FLAG_UNUSED_0x4DA                                           0x4DA // Unused Flag
 #define FLAG_UNUSED_0x4DB                                           0x4DB // Unused Flag
