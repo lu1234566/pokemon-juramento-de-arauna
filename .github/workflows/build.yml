@@ -60,6 +60,10 @@ jobs:
         run: python3 scripts/validate_flag_slot_collisions.py
       - name: Sprite transparency
         run: python3 tools/arauna/fix_sprite_transparency.py --check
+      - name: Sprite health
+        run: python3 tools/arauna/check_sprite_health.py
+      - name: Graphics header matches art pack
+        run: python3 tools/arauna/repack_graphics_from_art_pack.py --check
       - name: Event placement
         run: python3 scripts/validate_event_placement.py
       - name: Validate Mist Route story

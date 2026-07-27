@@ -77,6 +77,12 @@ Flag/var slot check passed: 2075 literal defines, no slot claimed twice
 == Sprite transparency ==
 Sprite transparency check passed: no sprite sits on a solid canvas
 
+== Sprite health ==
+Sprite health check passed: 386 species, front median 58px, back median 58px
+
+== Graphics header matches art pack ==
+Graphics header matches the art pack (386 species)
+
 == Event placement ==
 Event placement check passed: 92 coordinates are on walkable ground
 
