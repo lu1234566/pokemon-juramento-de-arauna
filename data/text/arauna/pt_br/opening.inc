@@ -304,7 +304,7 @@ AraunaMapLab_Text_CiroAfterPrologue::
 @ Reutilizadas sem parafrase na quest do radio do pos-jogo.
 
 AraunaZilaStory_Text_Pimpau::
-	.	string "No alto da serra havia uma\n"
+	.string "No alto da serra havia uma\n"
 	.string "araucária tão velha que\l"
 	.string "ninguém lembrava de vê-la\l"
 	.string "pequena.\p"
@@ -349,7 +349,7 @@ AraunaZilaStory_Text_Pimpau::
 	.string "houve floresta.$"
 
 AraunaZilaStory_Text_Caramelo::
-	.	string "Dizem que, antes de Vila\n"
+	.string "Dizem que, antes de Vila\n"
 	.string "Amanhecer ter nome, uma chuva\l"
 	.string "grossa caiu por sete noites.\p"
 	.string "Na primeira, um cachorro cor\n"
@@ -397,7 +397,7 @@ AraunaZilaStory_Text_Caramelo::
 	.string "seguro.$"
 
 AraunaZilaStory_Text_Quero::
-	.	string "Antes de o rio ter régua e\n"
+	.string "Antes de o rio ter régua e\n"
 	.string "sirene, quem avisava da cheia\l"
 	.string "era um Querô.\p"
 	.string "Ele fez ninho no campo mais\n"

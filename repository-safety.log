@@ -1,0 +1,110 @@
+
+== Reject proprietary files ==
+Repository safety check passed.
+
+== Localized text ==
+Localization check passed for 2 languages, 244 English labels, and shared-label placeholder parity.
+
+== English runtime ==
+English runtime validated: fixed -en build, 386 Dex entries and 9 story packs
+
+== Packed Arauna Dex ==
+Arauna packed Dex validation passed: 386 family-aware learnsets, 386 battle profiles, 386 TM overlays, 354 egg-move sets, 321 wild species, 13 strategic bosses, 9 soft caps, 81 evolutions, 1,930 graphic resources.
+
+== Vertical slice shells ==
+Validated 6 independent Arauna layouts, visible village exits and scripted route continuity.
+
+== Reproducible village ==
+wrote /tmp/arauna-village-map.bin (20 x 20)
+
+== Arauna opening ==
+Arauna opening validated: English-first prologue, visible east exit and usable notebook reward.
+
+== Mist Route story ==
+Mist Route validated: optional notebook, gray-trail evidence and full coast-road handoff.
+
+== First Link choice ==
+Validated the first Bond choice values 1–3, story stage 6, the passable rescue object, chamber gate, bilingual text, and unchanged vanilla ruin shell.
+
+== First Link chamber ==
+Validated the vanilla chamber shell, technical-agent miniboss, guardian memory, three Bond rewards, bag-full retry, and stage 7.
+
+== Vertical-slice epilogue ==
+Validated Ciro's three rival variants, stage-8 prologue conclusion, and the required on-foot route toward Porto das Redes.
+
+== Porto map reuse ==
+Porto validated: full coast road, custom city identity, legible reused doorways, visible blockers and HM-free Tide Board.
+
+== Playtest world progression ==
+Playtest feedback validated: visible Vila exit, physical coast travel, Porto identity, dynamic notebook and HM-free Tide Board.
+
+== Serra map reuse ==
+Serra do Uivo validated: reused Fallarbor, Route 114 and Meteor Falls; Libras, deaf hermit, Lobisomem and Uivo Badge are persistent.
+
+== Second ROM test ==
+Second ROM test validated: English build, reachable Vila Amanhecer prologue, mandatory-boss LEVEL CAP QoL and route through Uivo Badge
+
+== Masked badge trials ==
+Masked badge trials validated: two mandatory, retry-safe story battles before badge rewards
+
+== Mist Route encounters ==
+Validated Mist Route rate 20, twelve land slots on the approved level 2-5 early curve, the Route 101 shell, English starter names/numbers, and a type-neutral first miniboss.
+
+== Capture onboarding ==
+Validated care-first full-Dex activation, recoverable Zila notebook, one-time starter-gated field kit, 5 Poke Balls, 3 Potions, persistent object removal, and English-first runtime disclosure.
+
+== Safe recovery ==
+Validated Arauna whiteout checkpoint at (14, 8), passable collision, partner-time respawn registration, and repeatable Anahi healing.
+
+== Araucaria art ==
+Validated the 4bpp Araucaria tilesheet, 8 distinct material palettes, and palette assignments for village metatiles 0x200..0x253.
+
+== Canonical story spine ==
+Canonical story validated: three founding stories in both languages, the packed three-axis Bond system, the prologue Bond choices (First Link, Ciro's badge, the departure promise), and the kept description of the sea
+
+== Charmap encodability ==
+Charmap check passed: every .string in 1040 files is encodable
+
+== PNG integrity ==
+PNG integrity check passed: 10914 graphics are readable by libpng
+
+== Assembler directives ==
+Directive check passed: 1040 .inc files assemble cleanly
+
+== Priority-10 NPC v3 ==
+Priority-10 NPC v3 validated: nine overworlds, six trainer portraits, story wiring and Libras safety gate.
+
+== Devcontainer JSON ==
+{
+    "name": "Pok\u00e9mon: Juramento de Arauna",
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
+    "features": {
+        "ghcr.io/devcontainers/features/desktop-lite:1": {
+            "noVncVersion": "1.2.0",
+            "password": "vscode",
+            "webPort": "6080",
+            "vncPort": "5901"
+        }
+    },
+    "forwardPorts": [
+        6080
+    ],
+    "portsAttributes": {
+        "6080": {
+            "label": "Arauna \u2014 ambiente visual",
+            "onAutoForward": "notify"
+        },
+        "5901": {
+            "label": "VNC interno",
+            "onAutoForward": "ignore"
+        }
+    },
+    "postCreateCommand": "bash .devcontainer/setup-visual-tools.sh",
+    "remoteUser": "vscode"
+}
+
+== Visual setup shell ==
+
+== Visual launcher shell ==
+
+All repository-safety checks passed.

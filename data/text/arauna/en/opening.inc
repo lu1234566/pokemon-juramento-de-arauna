@@ -309,7 +309,7 @@ AraunaMapLab_Text_CiroAfterPrologue::
 @ Reused verbatim by the post-game radio quest; do not paraphrase.
 
 AraunaZilaStory_Text_Pimpau::
-	.	string "High on the range there was an\n"
+	.string "High on the range there was an\n"
 	.string "araucaria so old that nobody\l"
 	.string "remembered it small.\p"
 	.string "When they felled the tree, they\n"
@@ -354,7 +354,7 @@ AraunaZilaStory_Text_Pimpau::
 	.string "no forest was ever there.$"
 
 AraunaZilaStory_Text_Caramelo::
-	.	string "They say that before Vila\n"
+	.string "They say that before Vila\n"
 	.string "Amanhecer had a name, a heavy\l"
 	.string "rain fell for seven nights.\p"
 	.string "On the first, a clay-coloured\n"
@@ -405,7 +405,7 @@ AraunaZilaStory_Text_Caramelo::
 	.string "place begins.$"
 
 AraunaZilaStory_Text_Quero::
-	.	string "Before the river had a gauge\n"
+	.string "Before the river had a gauge\n"
 	.string "and a siren, the one who warned\l"
 	.string "of the flood was a QUERO.\p"
 	.string "It nested in the lowest field\n"
