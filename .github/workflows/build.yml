@@ -64,6 +64,8 @@ jobs:
         run: python3 tools/arauna/check_sprite_health.py
       - name: Graphics header matches art pack
         run: python3 tools/arauna/repack_graphics_from_art_pack.py --check
+      - name: Tilde glyphs
+        run: python3 tools/arauna/add_tilde_glyphs.py --check
       - name: Event placement
         run: python3 scripts/validate_event_placement.py
       - name: Validate Mist Route story

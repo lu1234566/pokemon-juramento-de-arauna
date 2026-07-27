@@ -43,6 +43,7 @@ run_check "Flag/var slot collisions" python3 scripts/validate_flag_slot_collisio
 run_check "Sprite transparency" python3 tools/arauna/fix_sprite_transparency.py --check
 run_check "Sprite health" python3 tools/arauna/check_sprite_health.py
 run_check "Graphics header matches art pack" python3 tools/arauna/repack_graphics_from_art_pack.py --check
+run_check "Tilde glyphs" python3 tools/arauna/add_tilde_glyphs.py --check
 run_check "Event placement" python3 scripts/validate_event_placement.py
 run_check "Priority-10 NPC v3" python3 scripts/validate_priority10_npcs.py
 run_check "Devcontainer JSON" python3 -m json.tool .devcontainer/devcontainer.json

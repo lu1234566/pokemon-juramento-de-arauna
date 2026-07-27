@@ -83,6 +83,9 @@ Sprite health check passed: 386 species, front median 58px, back median 58px
 == Graphics header matches art pack ==
 Graphics header matches the art pack (386 species)
 
+== Tilde glyphs ==
+Tilde glyph check passed: 9 latin fonts carry a and o tildes
+
 == Event placement ==
 Event placement check passed: 90 coordinates are on walkable ground
 
