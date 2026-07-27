@@ -3,7 +3,7 @@
 Repository safety check passed.
 
 == Localized text ==
-Localization check passed for 2 languages, 244 English labels, and shared-label placeholder parity.
+Localization check passed for 2 languages, 245 English labels, and shared-label placeholder parity.
 
 == English runtime ==
 English runtime validated: fixed -en build, 386 Dex entries and 9 story packs
@@ -84,7 +84,7 @@ Sprite health check passed: 386 species, front median 58px, back median 58px
 Graphics header matches the art pack (386 species)
 
 == Event placement ==
-Event placement check passed: 92 coordinates are on walkable ground
+Event placement check passed: 90 coordinates are on walkable ground
 
 == Priority-10 NPC v3 ==
 Priority-10 NPC v3 validated: nine overworlds, six trainer portraits, story wiring and Libras safety gate.

@@ -50,3 +50,11 @@ AraunaPorto_Text_SeaSilent::
 	.string "DONA ZILA: Tudo bem.\n"
 	.string "O mar continua lá.\l"
 	.string "Me liga quando achar.$"
+
+AraunaPorto_Text_DonaCelinaRoadNorth::
+	.string "CELINA: O rio lembra.\p"
+	.string "Sua próxima estrada sobe para\n"
+	.string "o norte, passa a pedreira e só\l"
+	.string "termina na SERRA DO UIVO.\p"
+	.string "Caminhe até lá. Quem é levado\n"
+	.string "chega sem ter aprendido nada.$"

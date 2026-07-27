@@ -375,3 +375,11 @@ AraunaPorto_Text_SeaSilent::
 	.string "DONA ZILA: That is all right.\n"
 	.string "The sea is still there.\l"
 	.string "Call me when you find them.$"
+
+AraunaPorto_Text_DonaCelinaRoadNorth::
+	.string "CELINA: The river remembers.\p"
+	.string "Your next road climbs north,\n"
+	.string "past the quarry, and does not\l"
+	.string "end until SERRA DO UIVO.\p"
+	.string "Walk it. A road you are carried\n"
+	.string "over teaches you nothing.$"

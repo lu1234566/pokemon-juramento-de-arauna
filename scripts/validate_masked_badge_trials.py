@@ -38,7 +38,7 @@ def validate_text_width(path: str) -> None:
 def main() -> None:
     flags = Path("include/constants/flags.h").read_text(encoding="utf-8")
     opponents = Path("include/constants/opponents.h").read_text(encoding="utf-8")
-    porto = Path("data/maps/SlateportCity/scripts.inc").read_text(encoding="utf-8")
+    porto = Path("data/maps/RustboroCity/scripts.inc").read_text(encoding="utf-8")
     serra = Path("data/maps/Route114/scripts.inc").read_text(encoding="utf-8")
     trainers = Path("src/data/trainers.party").read_text(encoding="utf-8")
     checklist = Path("docs/arauna/SECOND_ROM_TEST_CHECKLIST.md").read_text(encoding="utf-8")

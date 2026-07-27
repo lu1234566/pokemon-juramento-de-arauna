@@ -19,10 +19,13 @@ OBJECTS = {
     },
     "data/maps/SlateportCity/map.json": {
         "AraunaPorto_EventScript_CiroPorto": "OBJ_EVENT_GFX_ARAUNA_CIRO_CONSORCIO",
-        "AraunaPorto_EventScript_DonaCelina": "OBJ_EVENT_GFX_ARAUNA_DONA_CELINA",
         "AraunaPorto_EventScript_ConsortiumAgent": "OBJ_EVENT_GFX_ARAUNA_COMPLIANCE_AGENT",
         "AraunaPorto_EventScript_Dockworker": "OBJ_EVENT_GFX_ARAUNA_DOCKWORKER",
         "AraunaPorto_EventScript_MemorialKeeper": "OBJ_EVENT_GFX_ARAUNA_MEMORIAL_FISHER",
+    },
+    # Dona Celina's trial sits in Rustboro, the first gym city on Emerald's route.
+    "data/maps/RustboroCity/map.json": {
+        "AraunaPorto_EventScript_DonaCelina": "OBJ_EVENT_GFX_ARAUNA_DONA_CELINA",
     },
     "data/maps/FallarborTown/map.json": {
         "AraunaSerra_EventScript_LibrasChild": "OBJ_EVENT_GFX_ARAUNA_SERRA_CHILD",

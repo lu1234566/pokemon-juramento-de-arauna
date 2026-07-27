@@ -60,7 +60,7 @@ def main() -> int:
         "setvar VAR_ARAUNA_STORY_STAGE, 5",
         "setvar VAR_ARAUNA_STORY_STAGE, 6",
         "goto_if_ge VAR_ARAUNA_STORY_STAGE, 8, AraunaMistRoute_EventScript_ContinueToCoastRoad",
-        "warp MAP_ROUTE110, 255, 14, 9",
+        "warp MAP_ROUTE104, 255, 16, 3",
     ), "Mist Route scripts")
     if "setflag FLAG_ARAUNA_PORTO_ARRIVED" in route:
         raise ValueError("Porto arrival must not be recorded before the coast road is crossed")

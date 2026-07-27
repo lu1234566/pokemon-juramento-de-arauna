@@ -76,17 +76,21 @@ def main() -> None:
     ):
         require(token in flags_h, f"missing Serra flag: {token}")
 
-    porto = read("data/maps/SlateportCity/scripts.inc")
+    # Serra do Uivo is Route 114, which Rustboro reaches on foot through
+    # Route 115. The handoff is Dona Celina's trial in Rustboro, and it opens
+    # the road rather than warping the player along it.
+    porto = read("data/maps/RustboroCity/scripts.inc")
     town_scripts = read("data/maps/FallarborTown/scripts.inc")
     route_scripts = read("data/maps/Route114/scripts.inc")
     cave_scripts = read("data/maps/MeteorFalls_1F_1R/scripts.inc")
     for token in (
-        "warp MAP_FALLARBOR_TOWN, 255, 10, 13",
         "setvar VAR_METEOR_FALLS_STATE, 1",
         "setflag FLAG_HIDE_METEOR_FALLS_TEAM_MAGMA",
         "setflag FLAG_HIDE_METEOR_FALLS_TEAM_AQUA",
     ):
-        require(token in porto, f"Porto-to-Serra handoff is missing {token}")
+        require(token in porto, f"Rustboro-to-Serra handoff is missing {token}")
+    require("warp MAP_FALLARBOR_TOWN" not in porto,
+            "the road to Serra do Uivo must be walked, not teleported")
     require("setflag FLAG_ARAUNA_LIBRAS_LEARNED" in town_scripts,
             "Fallarbor does not teach Libras")
     for token in (

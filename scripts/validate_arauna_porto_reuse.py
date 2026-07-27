@@ -58,7 +58,20 @@ def main() -> None:
     require(not city["allow_cycling"] and not coast["allow_cycling"], "campaign route must be crossed on foot")
 
     fisher = object_at(shoreline, 33, 6, "OBJ_EVENT_GFX_OLD_MAN")
-    celina = object_at(city, 20, 37, "OBJ_EVENT_GFX_ARAUNA_DONA_CELINA")
+    # Dona Celina's trial moved to Rustboro, the first gym city on Emerald's
+    # route. Porto das Redes stays a harbour and rejoins the road later, so its
+    # other witnesses are still here.
+    rustboro = json.loads(read("data/maps/RustboroCity/map.json"))
+    celina_objects = [
+        obj for obj in rustboro["object_events"]
+        if obj["graphics_id"] == "OBJ_EVENT_GFX_ARAUNA_DONA_CELINA"
+    ]
+    require(len(celina_objects) == 1, "Dona Celina must stand in Rustboro exactly once")
+    celina = celina_objects[0]
+    require(not any(
+        obj["graphics_id"] == "OBJ_EVENT_GFX_ARAUNA_DONA_CELINA"
+        for obj in city["object_events"]
+    ), "Dona Celina still stands in Porto das Redes")
     agent = object_at(city, 28, 13, "OBJ_EVENT_GFX_ARAUNA_COMPLIANCE_AGENT")
     dockworker = object_at(city, 37, 41, "OBJ_EVENT_GFX_ARAUNA_DOCKWORKER")
     builder = object_at(city, 26, 40, "OBJ_EVENT_GFX_SAILOR")
@@ -143,7 +156,7 @@ def main() -> None:
     runtime = read("data/scripts/arauna_porto_runtime.inc")
 
     require("warp MAP_ROUTE109" not in village_scripts, "Vila still teleports directly to Porto")
-    require("warp MAP_ROUTE110, 255, 14, 9" in mist_scripts, "Mist Route does not hand off to the north coast road")
+    require("warp MAP_ROUTE104, 255, 16, 3" in mist_scripts, "Mist Route does not hand off toward Rustboro on Emerald.s route")
     require("FLAG_ARAUNA_COAST_ROAD_ENTERED" in coast_scripts, "coast-road arrival is not persistent")
     require("FLAG_ARAUNA_PORTO_ARRIVED" in runtime, "Porto arrival is not recorded in the city")
     require("AraunaPorto_EventScript_RoadArrival" in runtime, "custom Porto arrival script is missing")
@@ -161,15 +174,25 @@ def main() -> None:
     ):
         require(token in custom_route, f"shoreline story is missing {token}")
     for token in (
-        "AraunaPorto_EventScript_DonaCelina",
         "AraunaPorto_EventScript_Dockworker",
         "AraunaPorto_EventScript_ConsortiumAgent",
         "trainerbattle_single TRAINER_ARAUNA_TECH_AGENT",
+    ):
+        require(token in city_scripts, f"Porto story is missing {token}")
+
+    # The trial and the first badge now sit in Rustboro. The road on from there
+    # is walked -- Rustboro connects to Route 115, Route 115 to Route 114, and
+    # Route 114 is Serra do Uivo -- so nothing may teleport the player onward.
+    rustboro_scripts = read("data/maps/RustboroCity/scripts.inc")
+    for token in (
+        "AraunaPorto_EventScript_DonaCelina",
         "trainerbattle_single TRAINER_ARAUNA_MARE_TRIAL",
         "setflag FLAG_BADGE01_GET",
         "setvar VAR_ARAUNA_BADGE_COUNT, 1",
     ):
-        require(token in city_scripts, f"Porto story is missing {token}")
+        require(token in rustboro_scripts, f"Rustboro trial is missing {token}")
+    require("warp MAP_FALLARBOR_TOWN" not in rustboro_scripts,
+            "the road to Serra do Uivo must be walked, not teleported")
 
     config = read("include/config/arauna.h")
     item_override = read("src/arauna_item_overrides.c")

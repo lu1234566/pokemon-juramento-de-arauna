@@ -238,7 +238,7 @@ def validate_prologue_bond_choices() -> None:
 
 def validate_sea_description() -> None:
     """M15 — the answer about the sea is kept word for word for the post-game."""
-    porto = read("data/maps/SlateportCity/scripts.inc")
+    porto = read("data/maps/RustboroCity/scripts.inc")
 
     require(
         "call AraunaPorto_EventScript_ZilaSeaCall" in porto,

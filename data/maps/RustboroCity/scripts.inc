@@ -1289,3 +1289,128 @@ RustboroCity_Text_YouCanHave2On2Battle:
 	.string "they'll both challenge you.\p"
 	.string "Don't you think it'd be cool if you\n"
 	.string "could beat two TRAINERS by yourself?$"
+
+@ Arauna: Dona Celina's trial happens in Rustboro, the first gym city on
+@ Emerald's route. Porto das Redes stays a harbour and rejoins the road later.
+
+AraunaPorto_EventScript_DonaCelina::
+	goto_if_lt VAR_ARAUNA_ARC_STAGE, 10, AraunaRustboro_EventScript_DonaCelinaEarly
+	lock
+	faceplayer
+	goto_if_eq VAR_ARAUNA_ARC_STAGE, 10, AraunaPorto_EventScript_DonaCelinaIntroduction
+	goto_if_eq VAR_ARAUNA_ARC_STAGE, 11, AraunaPorto_EventScript_DonaCelinaInvestigation
+	goto_if_eq VAR_ARAUNA_ARC_STAGE, 12, AraunaPorto_EventScript_DonaCelinaRestoreSong
+	goto_if_eq VAR_ARAUNA_ARC_STAGE, 13, AraunaPorto_EventScript_DonaCelinaReturnToRiver
+	goto_if_eq VAR_ARAUNA_ARC_STAGE, 14, AraunaPorto_EventScript_DonaCelinaAwardBadge
+	goto AraunaSerra_EventScript_DonaCelinaTravel
+
+@ Before the arc reaches her, she is simply a woman working in the city.
+AraunaRustboro_EventScript_DonaCelinaEarly::
+	lock
+	faceplayer
+	msgbox AraunaPorto_Text_DonaCelinaWaiting, MSGBOX_DEFAULT
+	release
+	end
+
+AraunaPorto_EventScript_DonaCelinaIntroduction::
+	msgbox AraunaPorto_Text_DonaCelinaIntroduction, MSGBOX_DEFAULT
+	setflag FLAG_ARAUNA_PORTO_CELINA_MET
+	setflag FLAG_ARAUNA_PORTO_NET_FOUND
+	setvar VAR_ARAUNA_ARC_STAGE, 11
+	release
+	end
+
+AraunaPorto_EventScript_DonaCelinaInvestigation::
+	call AraunaPorto_EventScript_CheckEvidence
+	goto_if_eq VAR_RESULT, TRUE, AraunaPorto_EventScript_DonaCelinaEvidenceComplete
+	msgbox AraunaPorto_Text_DonaCelinaWaiting, MSGBOX_DEFAULT
+	release
+	end
+
+AraunaPorto_EventScript_DonaCelinaEvidenceComplete::
+	msgbox AraunaPorto_Text_DonaCelinaEvidenceComplete, MSGBOX_DEFAULT
+	release
+	end
+
+AraunaPorto_EventScript_DonaCelinaRestoreSong::
+	msgbox AraunaPorto_Text_DonaCelinaNetSong, MSGBOX_DEFAULT
+	setvar VAR_ARAUNA_ARC_STAGE, 13
+	release
+	end
+
+AraunaPorto_EventScript_DonaCelinaReturnToRiver::
+	msgbox AraunaPorto_Text_DonaCelinaReturnToRiver, MSGBOX_DEFAULT
+	release
+	end
+
+AraunaPorto_EventScript_DonaCelinaAwardBadge::
+	goto_if_set FLAG_ARAUNA_MARE_TRIAL_COMPLETE, AraunaPorto_EventScript_DonaCelinaGrantBadge
+	msgbox AraunaPorto_Text_MareTrialInvitation, MSGBOX_DEFAULT
+	trainerbattle_single TRAINER_ARAUNA_MARE_TRIAL, AraunaPorto_Text_MareTrialBattleIntro, AraunaPorto_Text_MareTrialBattleDefeated
+	setflag FLAG_ARAUNA_MARE_TRIAL_COMPLETE
+	msgbox AraunaPorto_Text_MareTrialComplete, MSGBOX_DEFAULT
+
+AraunaPorto_EventScript_DonaCelinaGrantBadge::
+	msgbox AraunaPorto_Text_DonaCelinaAwardBadge, MSGBOX_DEFAULT
+	setflag FLAG_ARAUNA_BADGE_MARE
+	setflag FLAG_BADGE01_GET
+	setvar VAR_ARAUNA_BADGE_COUNT, 1
+	setvar VAR_ARAUNA_ARC_STAGE, 15
+	playfanfare MUS_OBTAIN_BADGE
+	waitfanfare
+	msgbox AraunaPorto_Text_MareBadgeReceived, MSGBOX_DEFAULT
+	call AraunaPorto_EventScript_ZilaSeaCall
+	release
+	end
+
+@ M15 — the call to Dona Zila. She asks about the sea before the badge, and the
+@ answer is kept word for word: the post-game radio repeats it back.
+@ Saying nothing leaves the flags clear, so the question can still be answered.
+
+AraunaSerra_EventScript_DonaCelinaTravel::
+	msgbox AraunaPorto_Text_DonaCelinaRoadNorth, MSGBOX_DEFAULT
+	goto_if_ge VAR_ARAUNA_ARC_STAGE, 20, AraunaSerra_EventScript_RoadAlreadyOpen
+	setvar VAR_ARAUNA_ARC_STAGE, 20
+	setflag FLAG_ARAUNA_SERRA_ARRIVED
+	setvar VAR_METEOR_FALLS_STATE, 1
+	setflag FLAG_HIDE_METEOR_FALLS_TEAM_MAGMA
+	setflag FLAG_HIDE_METEOR_FALLS_TEAM_AQUA
+
+AraunaSerra_EventScript_RoadAlreadyOpen::
+	release
+	end
+
+@ M15: Dona Zila's call arrives with the first badge, so it travels with the
+@ trial. It is a conversation, not a place.
+
+AraunaPorto_EventScript_ZilaSeaCall::
+	goto_if_set FLAG_ARAUNA_SEA_DISTANCE, AraunaPorto_EventScript_SeaAlreadyTold
+	goto_if_set FLAG_ARAUNA_SEA_SOUND, AraunaPorto_EventScript_SeaAlreadyTold
+	goto_if_set FLAG_ARAUNA_SEA_DARK, AraunaPorto_EventScript_SeaAlreadyTold
+	msgbox AraunaPorto_Text_ZilaCallIntro, MSGBOX_DEFAULT
+	msgbox AraunaPorto_Text_SeaPromptDistance, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, AraunaPorto_EventScript_SeaDistance
+	msgbox AraunaPorto_Text_SeaPromptSound, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, AraunaPorto_EventScript_SeaSound
+	msgbox AraunaPorto_Text_SeaPromptDark, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, AraunaPorto_EventScript_SeaDark
+	msgbox AraunaPorto_Text_SeaSilent, MSGBOX_DEFAULT
+	return
+
+AraunaPorto_EventScript_SeaAlreadyTold::
+	return
+
+AraunaPorto_EventScript_SeaDistance::
+	setflag FLAG_ARAUNA_SEA_DISTANCE
+	msgbox AraunaPorto_Text_SeaDistance, MSGBOX_DEFAULT
+	return
+
+AraunaPorto_EventScript_SeaSound::
+	setflag FLAG_ARAUNA_SEA_SOUND
+	msgbox AraunaPorto_Text_SeaSound, MSGBOX_DEFAULT
+	return
+
+AraunaPorto_EventScript_SeaDark::
+	setflag FLAG_ARAUNA_SEA_DARK
+	msgbox AraunaPorto_Text_SeaDark, MSGBOX_DEFAULT
+	return
