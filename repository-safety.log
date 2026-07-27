@@ -86,6 +86,9 @@ Graphics header matches the art pack (386 species)
 == Tilde glyphs ==
 Tilde glyph check passed: 9 latin fonts carry a and o tildes
 
+== Dex region label ==
+Dex region label check passed: the counter reads ARAUNA
+
 == Event placement ==
 Event placement check passed: 90 coordinates are on walkable ground
 
