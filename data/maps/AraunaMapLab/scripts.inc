@@ -135,8 +135,14 @@ AraunaMapLab_EventScript_CiroBattleWon::
 
 AraunaMapLab_EventScript_CiroAfterPrologue::
 	msgbox AraunaMapLab_Text_CiroAfterPrologue, MSGBOX_DEFAULT
+	call_if_eq VAR_ARAUNA_BOND_CHOICE, 1, AraunaMapLab_EventScript_CiroBondCourage
 	release
 	end
+
+@ Bond payoff: Ciro admires the Courage rescue but names what it cost.
+AraunaMapLab_EventScript_CiroBondCourage::
+	msgbox AraunaMapLab_Text_CiroBondCourage, MSGBOX_DEFAULT
+	return
 
 AraunaMapLab_EventScript_NeedPartner::
 	msgbox AraunaMapLab_Text_NeedPartner, MSGBOX_DEFAULT

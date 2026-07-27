@@ -267,11 +267,53 @@ def validate_sea_description() -> None:
         require(phrase in english, f"canonical sea description is missing: {phrase!r}")
 
 
+def validate_bond_payoffs() -> None:
+    """Canon 9.4 — the First Link choice must be recognised later by name.
+
+    A recorded choice that nothing in the world reacts to is indistinguishable
+    from a choice that was never offered, so each axis needs its payoff wired.
+    """
+    payoffs = (
+        ("data/maps/AraunaMapLab/scripts.inc", 1,
+         "AraunaMapLab_EventScript_CiroBondCourage"),
+        ("data/maps/EverGrandeCity_GlaciasRoom/scripts.inc", 2,
+         "EverGrandeCity_GlaciasRoom_EventScript_BondWisdom"),
+        ("data/maps/Route114/scripts.inc", 3,
+         "AraunaSerra_EventScript_HermitBondCompassion"),
+    )
+    for path, choice, branch in payoffs:
+        source = read(path)
+        require(
+            f"call_if_eq VAR_ARAUNA_BOND_CHOICE, {choice}, {branch}" in source,
+            f"the First Link choice {choice} is never acknowledged ({branch})",
+        )
+        require(f"{branch}::" in source, f"{branch} is not defined")
+
+    # The Champion reads the run as a whole, which is the only consumer of the
+    # packed axes outside the notebook.
+    champion = read("data/maps/EverGrandeCity_ChampionsRoom/scripts.inc")
+    require(
+        "specialvar VAR_RESULT, GetAraunaDominantBond" in champion,
+        "the Champion never reads the dominant Bond axis",
+    )
+    for value, branch in (
+        (1, "EverGrandeCity_ChampionsRoom_EventScript_BondCourage"),
+        (2, "EverGrandeCity_ChampionsRoom_EventScript_BondWisdom"),
+        (3, "EverGrandeCity_ChampionsRoom_EventScript_BondCompassion"),
+        (0, "EverGrandeCity_ChampionsRoom_EventScript_BondPlural"),
+    ):
+        require(
+            f"call_if_eq VAR_RESULT, {value}, {branch}" in champion,
+            f"the Champion has no reaction for bond reading {value}",
+        )
+
+
 def main() -> int:
     validate_founding_stories()
     validate_bond_system()
     validate_prologue_bond_choices()
     validate_sea_description()
+    validate_bond_payoffs()
     print(
         "Canonical story validated: three founding stories in both languages, "
         "the packed three-axis Bond system, the prologue Bond choices "

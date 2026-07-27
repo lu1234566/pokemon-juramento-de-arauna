@@ -207,8 +207,14 @@ AraunaSerra_EventScript_DeafHermit::
 	goto_if_eq VAR_ARAUNA_ARC_STAGE, 22, AraunaSerra_EventScript_HermitCaveDirection
 	goto_if_eq VAR_ARAUNA_ARC_STAGE, 23, AraunaSerra_EventScript_HermitAwardBadge
 	msgbox AraunaSerra_Text_HermitAfterBadge, MSGBOX_DEFAULT
+	call_if_eq VAR_ARAUNA_BOND_CHOICE, 3, AraunaSerra_EventScript_HermitBondCompassion
 	release
 	end
+
+@ Bond payoff: the hermit names, himself, that you waited for an answer.
+AraunaSerra_EventScript_HermitBondCompassion::
+	msgbox AraunaSerra_Text_HermitBondCompassion, MSGBOX_DEFAULT
+	return
 
 AraunaSerra_EventScript_HermitNoSigns::
 	msgbox AraunaSerra_Text_HermitNoSigns, MSGBOX_DEFAULT

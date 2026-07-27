@@ -118,3 +118,20 @@ AraunaSerra_Text_LobisomemCalm::
 	.string "LOBISOMEM rests by the water.\p"
 	.string "The cave carries one complete\n"
 	.string "howl back toward the settlement.$"
+
+@ Bond payoff - the First Link taken with Compassion (canon 9.4). The hermit
+@ decides to acknowledge it himself; the caps lines are a translation of his
+@ signing, not a sign-for-word mapping.
+
+AraunaSerra_Text_HermitBondCompassion::
+	.string "The hermit watches your hands\n"
+	.string "instead of your mouth.\p"
+	.string "Then he signs, slowly, so you\n"
+	.string "can follow.\p"
+	.string "THE ONE IN THE RUIN.\n"
+	.string "YOU SAT DOWN FIRST.\p"
+	.string "YOU WAITED FOR AN ANSWER\n"
+	.string "BEFORE YOU MOVED.\p"
+	.string "Most people here never learned\n"
+	.string "to do that.\p"
+	.string "Not for me. Not for anyone.$"

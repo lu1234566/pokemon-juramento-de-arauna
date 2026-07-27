@@ -50,6 +50,7 @@ EverGrandeCity_ChampionsRoom_EventScript_Defeated::
 	setmetatile 6, 2, METATILE_EliteFour_OpenDoorChampion_Opening, FALSE
 	special DrawWholeMapView
 	msgbox EverGrandeCity_ChampionsRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT
+	call EverGrandeCity_ChampionsRoom_EventScript_BondReading
 	closemessage
 	playse SE_DOOR
 	checkplayergender
@@ -320,3 +321,58 @@ EverGrandeCity_ChampionsRoom_Text_BrendanCongratulations:
 	.string "{PLAYER}, way to go!\n"
 	.string "Congratulations!$"
 
+@ Bond payoff: Augusto reads how this run was actually played. He is looking for
+@ someone who can rebuild the oath without repeating possession, so a plural
+@ bond is the answer he most wanted to hear.
+EverGrandeCity_ChampionsRoom_EventScript_BondReading::
+	specialvar VAR_RESULT, GetAraunaDominantBond
+	call_if_eq VAR_RESULT, 1, EverGrandeCity_ChampionsRoom_EventScript_BondCourage
+	call_if_eq VAR_RESULT, 2, EverGrandeCity_ChampionsRoom_EventScript_BondWisdom
+	call_if_eq VAR_RESULT, 3, EverGrandeCity_ChampionsRoom_EventScript_BondCompassion
+	call_if_eq VAR_RESULT, 0, EverGrandeCity_ChampionsRoom_EventScript_BondPlural
+	return
+
+EverGrandeCity_ChampionsRoom_EventScript_BondCourage::
+	msgbox EverGrandeCity_ChampionsRoom_Text_BondCourage, MSGBOX_DEFAULT
+	return
+
+EverGrandeCity_ChampionsRoom_EventScript_BondWisdom::
+	msgbox EverGrandeCity_ChampionsRoom_Text_BondWisdom, MSGBOX_DEFAULT
+	return
+
+EverGrandeCity_ChampionsRoom_EventScript_BondCompassion::
+	msgbox EverGrandeCity_ChampionsRoom_Text_BondCompassion, MSGBOX_DEFAULT
+	return
+
+EverGrandeCity_ChampionsRoom_EventScript_BondPlural::
+	msgbox EverGrandeCity_ChampionsRoom_Text_BondPlural, MSGBOX_DEFAULT
+	return
+
+EverGrandeCity_ChampionsRoom_Text_BondCourage:
+	.string "AUGUSTO: You arrive before you\n"
+	.string "are certain.\p"
+	.string "So did I, once.\p"
+	.string "Make sure somebody is standing\n"
+	.string "close enough to pull you back.$"
+
+EverGrandeCity_ChampionsRoom_Text_BondWisdom:
+	.string "AUGUSTO: You look for the\n"
+	.string "thread before pulling the knot.\p"
+	.string "Keep doing that.\p"
+	.string "The CONSORTIUM's whole trade is\n"
+	.string "people who could not be\l"
+	.string "bothered to check.$"
+
+EverGrandeCity_ChampionsRoom_Text_BondCompassion:
+	.string "AUGUSTO: You stay with the ones\n"
+	.string "still inside the problem.\p"
+	.string "That is the part I skipped.\p"
+	.string "I saved a thing, and I left\n"
+	.string "the people who paid for it.$"
+
+EverGrandeCity_ChampionsRoom_Text_BondPlural:
+	.string "AUGUSTO: I cannot name your\n"
+	.string "method. You keep changing it.\p"
+	.string "Good.\p"
+	.string "A single voice is exactly what\n"
+	.string "broke the first oath.$"

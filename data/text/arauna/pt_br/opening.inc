@@ -529,3 +529,16 @@ AraunaPlayerHouse_Text_PromiseSilent::
 	.string "DONA ZILA: Sem promessa?\p"
 	.string "Também pode.\n"
 	.string "Volta quando tiver uma.$"
+
+@ Pagamento de Vinculo - o Primeiro Elo feito com Coragem (canone 9.4).
+
+AraunaMapLab_Text_CiroBondCourage::
+	.string "CIRO: Fiquei sabendo do que\n"
+	.string "você fez naquela câmara.\p"
+	.string "Arrancou a braçadeira com a\n"
+	.string "mão. Bem a tua cara.\p"
+	.string "Só que os dados foram junto.\p"
+	.string "O que aquela máquina sabia,\n"
+	.string "ninguém sabe mais.\p"
+	.string "Não tô dizendo que foi errado.\n"
+	.string "Tô dizendo que custou.$"

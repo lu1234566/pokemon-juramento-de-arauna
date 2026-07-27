@@ -537,3 +537,17 @@ AraunaPlayerHouse_Text_PromiseSilent::
 	.string "DONA ZILA: No promise?\p"
 	.string "That is allowed too.\n"
 	.string "Come back when you have one.$"
+
+@ Bond payoff - the First Link taken with Courage (canon 9.4).
+
+AraunaMapLab_Text_CiroBondCourage::
+	.string "CIRO: I heard what you did in\n"
+	.string "that chamber.\p"
+	.string "Tore the clamp off with your\n"
+	.string "hands. Very you.\p"
+	.string "Thing is, the readings went\n"
+	.string "with it.\p"
+	.string "Whatever that machine knew,\n"
+	.string "nobody knows now.\p"
+	.string "I'm not saying you were wrong.\n"
+	.string "I'm saying it cost something.$"
