@@ -58,6 +58,8 @@ jobs:
         run: python3 scripts/validate_inc_syntax.py
       - name: Flag/var slot collisions
         run: python3 scripts/validate_flag_slot_collisions.py
+      - name: Sprite transparency
+        run: python3 tools/arauna/fix_sprite_transparency.py --check
       - name: Validate Mist Route story
         run: python3 scripts/validate_mist_route_story.py
       - name: Validate First Link choice
