@@ -183,6 +183,15 @@ def main() -> int:
     args = parser.parse_args()
 
     if not PACK.exists():
+        # graphics/arauna/ is gitignored, so the pack is an authoring asset that
+        # never reaches a CI checkout. Failing there would gate every build on a
+        # file the repository does not carry. The defects this pack fixed are
+        # guarded by check_sprite_health.py, which reads the committed header
+        # and needs nothing external; this check only adds value where the pack
+        # is actually present.
+        if args.check:
+            print(f"art pack not present at {PACK.relative_to(ROOT)}; skipping")
+            return 0
         print(f"missing art pack: {PACK}", file=sys.stderr)
         return 1
 
