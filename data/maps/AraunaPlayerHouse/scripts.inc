@@ -31,6 +31,9 @@ AraunaPlayerHouse_EventScript_NightZila::
 	end
 
 AraunaPlayerHouse_EventScript_ZilaAfterChoice::
+	goto_if_set FLAG_ARAUNA_STARTER_STORY_HEARD, AraunaPlayerHouse_EventScript_ZilaNotebookStep
+	call AraunaPlayerHouse_EventScript_ZilaFoundingStory
+AraunaPlayerHouse_EventScript_ZilaNotebookStep::
 	checkitem ITEM_FAME_CHECKER, 1
 	goto_if_eq VAR_RESULT, TRUE, AraunaPlayerHouse_EventScript_ZilaBlessingOnly
 	giveitem ITEM_FAME_CHECKER
@@ -110,106 +113,10 @@ AraunaPlayerHouse_EventScript_AnahiAfterChoice::
 	release
 	end
 
-AraunaPlayerHouse_EventScript_Pimpau::
-	lock
-	faceplayer
-	goto_if_unset FLAG_ARAUNA_PROLOGUE_NIGHT_COMPLETE, AraunaPlayerHouse_EventScript_NightPimpau
-	goto_if_ne VAR_ARAUNA_STARTER_CHOICE, 0, AraunaPlayerHouse_EventScript_AlreadyChosen
-	goto_if_set FLAG_ARAUNA_PROLOGUE_FED_PIMPAU, AraunaPlayerHouse_EventScript_CheckPimpauChoice
-	msgbox AraunaPlayerHouse_Text_FeedPimpau, MSGBOX_DEFAULT
-	setflag FLAG_ARAUNA_PROLOGUE_FED_PIMPAU
-	call AraunaPlayerHouse_EventScript_CheckAllFed
-	release
-	end
-
-AraunaPlayerHouse_EventScript_NightPimpau::
-	msgbox AraunaPlayerHouse_Text_NightPimpau, MSGBOX_DEFAULT
-	setflag FLAG_ARAUNA_PROLOGUE_NIGHT_PIMPAU
-	call AraunaPlayerHouse_EventScript_CheckNightReady
-	goto_if_eq VAR_RESULT, TRUE, AraunaPlayerHouse_EventScript_BeginDawn
-	release
-	end
-
-AraunaPlayerHouse_EventScript_CheckPimpauChoice::
-	goto_if_unset FLAG_ARAUNA_PROLOGUE_FED_CARAMELO, AraunaPlayerHouse_EventScript_FeedAllFirst
-	goto_if_unset FLAG_ARAUNA_PROLOGUE_FED_QUERO, AraunaPlayerHouse_EventScript_FeedAllFirst
-	msgbox AraunaPlayerHouse_Text_PimpauStory, MSGBOX_DEFAULT
-	msgbox AraunaPlayerHouse_Text_PimpauPrompt, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, AraunaPlayerHouse_EventScript_ChoiceCancelled
-	givemon SPECIES_TREECKO, 5, ITEM_NONE
-	setvar VAR_STARTER_MON, 0
-	setvar VAR_ARAUNA_STARTER_CHOICE, 1
-	goto AraunaPlayerHouse_EventScript_CompleteChoice
-
-AraunaPlayerHouse_EventScript_Caramelo::
-	lock
-	faceplayer
-	goto_if_unset FLAG_ARAUNA_PROLOGUE_NIGHT_COMPLETE, AraunaPlayerHouse_EventScript_NightCaramelo
-	goto_if_ne VAR_ARAUNA_STARTER_CHOICE, 0, AraunaPlayerHouse_EventScript_AlreadyChosen
-	goto_if_set FLAG_ARAUNA_PROLOGUE_FED_CARAMELO, AraunaPlayerHouse_EventScript_CheckCarameloChoice
-	msgbox AraunaPlayerHouse_Text_FeedCaramelo, MSGBOX_DEFAULT
-	setflag FLAG_ARAUNA_PROLOGUE_FED_CARAMELO
-	call AraunaPlayerHouse_EventScript_CheckAllFed
-	release
-	end
-
-AraunaPlayerHouse_EventScript_NightCaramelo::
-	msgbox AraunaPlayerHouse_Text_NightCaramelo, MSGBOX_DEFAULT
-	setflag FLAG_ARAUNA_PROLOGUE_NIGHT_CARAMELO
-	call AraunaPlayerHouse_EventScript_CheckNightReady
-	goto_if_eq VAR_RESULT, TRUE, AraunaPlayerHouse_EventScript_BeginDawn
-	release
-	end
-
-AraunaPlayerHouse_EventScript_CheckCarameloChoice::
-	goto_if_unset FLAG_ARAUNA_PROLOGUE_FED_PIMPAU, AraunaPlayerHouse_EventScript_FeedAllFirst
-	goto_if_unset FLAG_ARAUNA_PROLOGUE_FED_QUERO, AraunaPlayerHouse_EventScript_FeedAllFirst
-	msgbox AraunaPlayerHouse_Text_CarameloStory, MSGBOX_DEFAULT
-	msgbox AraunaPlayerHouse_Text_CarameloPrompt, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, AraunaPlayerHouse_EventScript_ChoiceCancelled
-	givemon SPECIES_TORCHIC, 5, ITEM_NONE
-	setvar VAR_STARTER_MON, 1
-	setvar VAR_ARAUNA_STARTER_CHOICE, 2
-	goto AraunaPlayerHouse_EventScript_CompleteChoice
-
-AraunaPlayerHouse_EventScript_Quero::
-	lock
-	faceplayer
-	goto_if_unset FLAG_ARAUNA_PROLOGUE_NIGHT_COMPLETE, AraunaPlayerHouse_EventScript_NightQuero
-	goto_if_ne VAR_ARAUNA_STARTER_CHOICE, 0, AraunaPlayerHouse_EventScript_AlreadyChosen
-	goto_if_set FLAG_ARAUNA_PROLOGUE_FED_QUERO, AraunaPlayerHouse_EventScript_CheckQueroChoice
-	msgbox AraunaPlayerHouse_Text_FeedQuero, MSGBOX_DEFAULT
-	setflag FLAG_ARAUNA_PROLOGUE_FED_QUERO
-	call AraunaPlayerHouse_EventScript_CheckAllFed
-	release
-	end
-
-AraunaPlayerHouse_EventScript_NightQuero::
-	msgbox AraunaPlayerHouse_Text_NightQuero, MSGBOX_DEFAULT
-	setflag FLAG_ARAUNA_PROLOGUE_NIGHT_QUERO
-	call AraunaPlayerHouse_EventScript_CheckNightReady
-	goto_if_eq VAR_RESULT, TRUE, AraunaPlayerHouse_EventScript_BeginDawn
-	release
-	end
-
-AraunaPlayerHouse_EventScript_CheckQueroChoice::
-	goto_if_unset FLAG_ARAUNA_PROLOGUE_FED_PIMPAU, AraunaPlayerHouse_EventScript_FeedAllFirst
-	goto_if_unset FLAG_ARAUNA_PROLOGUE_FED_CARAMELO, AraunaPlayerHouse_EventScript_FeedAllFirst
-	msgbox AraunaPlayerHouse_Text_QueroStory, MSGBOX_DEFAULT
-	msgbox AraunaPlayerHouse_Text_QueroPrompt, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, AraunaPlayerHouse_EventScript_ChoiceCancelled
-	givemon SPECIES_MUDKIP, 5, ITEM_NONE
-	setvar VAR_STARTER_MON, 2
-	setvar VAR_ARAUNA_STARTER_CHOICE, 3
-	goto AraunaPlayerHouse_EventScript_CompleteChoice
-
 AraunaPlayerHouse_EventScript_CheckNightReady::
 	setvar VAR_RESULT, FALSE
 	goto_if_unset FLAG_ARAUNA_PROLOGUE_TALKED_ZILA_AT_NIGHT, AraunaPlayerHouse_EventScript_NightCheckReturn
 	goto_if_unset FLAG_ARAUNA_PROLOGUE_TALKED_ANAHI_AT_NIGHT, AraunaPlayerHouse_EventScript_NightCheckReturn
-	goto_if_unset FLAG_ARAUNA_PROLOGUE_NIGHT_PIMPAU, AraunaPlayerHouse_EventScript_NightCheckReturn
-	goto_if_unset FLAG_ARAUNA_PROLOGUE_NIGHT_CARAMELO, AraunaPlayerHouse_EventScript_NightCheckReturn
-	goto_if_unset FLAG_ARAUNA_PROLOGUE_NIGHT_QUERO, AraunaPlayerHouse_EventScript_NightCheckReturn
 	setvar VAR_RESULT, TRUE
 AraunaPlayerHouse_EventScript_NightCheckReturn::
 	return
@@ -220,18 +127,11 @@ AraunaPlayerHouse_EventScript_BeginDawn::
 	fadescreen FADE_TO_BLACK
 	delay 30
 	setflag FLAG_ARAUNA_PROLOGUE_NIGHT_COMPLETE
+	setvar VAR_ARAUNA_STORY_STAGE, 1
 	fadescreen FADE_FROM_BLACK
 	msgbox AraunaPlayerHouse_Text_Dawn, MSGBOX_DEFAULT
 	release
 	end
-
-AraunaPlayerHouse_EventScript_CheckAllFed::
-	goto_if_unset FLAG_ARAUNA_PROLOGUE_FED_PIMPAU, AraunaPlayerHouse_EventScript_CareCheckReturn
-	goto_if_unset FLAG_ARAUNA_PROLOGUE_FED_CARAMELO, AraunaPlayerHouse_EventScript_CareCheckReturn
-	goto_if_unset FLAG_ARAUNA_PROLOGUE_FED_QUERO, AraunaPlayerHouse_EventScript_CareCheckReturn
-	msgbox AraunaPlayerHouse_Text_AllFed, MSGBOX_DEFAULT
-AraunaPlayerHouse_EventScript_CareCheckReturn::
-	return
 
 AraunaPlayerHouse_EventScript_CompleteChoice::
 	setflag FLAG_SYS_POKEMON_GET
@@ -245,8 +145,7 @@ AraunaPlayerHouse_EventScript_CompleteChoice::
 	call AraunaPlayerHouse_EventScript_AssignRemainingStarters
 	setvar VAR_ARAUNA_STORY_STAGE, 2
 	special HealPlayerParty
-	msgbox AraunaPlayerHouse_Text_ZilaChosen, MSGBOX_DEFAULT
-	call AraunaPlayerHouse_EventScript_ZilaFoundingStory
+	msgbox AraunaResearchCenter_Text_AfterChoice, MSGBOX_DEFAULT
 	giveitem ITEM_FAME_CHECKER
 	goto_if_eq VAR_RESULT, FALSE, AraunaPlayerHouse_EventScript_NotebookBagFull
 	msgbox AraunaPlayerHouse_Text_NotebookReceived, MSGBOX_DEFAULT
@@ -318,11 +217,6 @@ AraunaPlayerHouse_EventScript_BlockExitStepBack::
 AraunaPlayerHouse_Movement_StepBack:
 	walk_up
 	step_end
-
-AraunaPlayerHouse_EventScript_FeedAllFirst::
-	msgbox AraunaPlayerHouse_Text_FeedAllFirst, MSGBOX_DEFAULT
-	release
-	end
 
 AraunaPlayerHouse_EventScript_AlreadyChosen::
 	msgbox AraunaPlayerHouse_Text_AlreadyChosen, MSGBOX_DEFAULT

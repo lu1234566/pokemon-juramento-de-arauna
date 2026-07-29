@@ -148,8 +148,12 @@ def main() -> None:
     )
     require(complete, "setvar VAR_ARAUNA_STORY_STAGE, 2", "starter confirmation")
     require(house, "AraunaPlayerHouse_EventScript_AnahiAfterChoice", "home retry")
-    if "givemon " in center:
-        raise ValueError("the research annex can still bypass Dona Zila's prologue")
+    # The Research Center is where the partner is chosen now. What must not be
+    # bypassed is the night before it and Dona Zila's founding story after, so
+    # check the handoff instead of forbidding the give.
+    require(center, "goto AraunaPlayerHouse_EventScript_CompleteChoice",
+            "Research Center partner selection")
+    require(house, "AraunaPlayerHouse_EventScript_ZilaFoundingStory", "founding story")
 
     require(dexnav, "#define DEXNAV_ENABLED                FALSE", "DexNav test gate")
     for validator_path in (

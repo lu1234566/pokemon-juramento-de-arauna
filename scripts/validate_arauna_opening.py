@@ -75,11 +75,10 @@ def main() -> int:
 
     house_map = json.loads(read("data/maps/AraunaPlayerHouse/map.json"))
     expected_graphics = [
+        # The three partners are chosen at the Research Center now, so the
+        # house holds only the two people who see the player off.
         "OBJ_EVENT_GFX_ARAUNA_DONA_ZILA",
         "OBJ_EVENT_GFX_ARAUNA_PROFESSORA_ANAHI",
-        "OBJ_EVENT_GFX_ITEM_BALL",
-        "OBJ_EVENT_GFX_ITEM_BALL",
-        "OBJ_EVENT_GFX_ITEM_BALL",
     ]
     graphics = [event["graphics_id"] for event in house_map["object_events"]]
     if graphics != expected_graphics:
@@ -91,12 +90,6 @@ def main() -> int:
     require(house, (
         "map_script_2 VAR_ARAUNA_STORY_STAGE, 0",
         "setvar VAR_ARAUNA_STORY_STAGE, 1",
-        "FLAG_ARAUNA_PROLOGUE_FED_PIMPAU",
-        "FLAG_ARAUNA_PROLOGUE_FED_CARAMELO",
-        "FLAG_ARAUNA_PROLOGUE_FED_QUERO",
-        "givemon SPECIES_TREECKO, 5, ITEM_NONE",
-        "givemon SPECIES_TORCHIC, 5, ITEM_NONE",
-        "givemon SPECIES_MUDKIP, 5, ITEM_NONE",
         "setflag FLAG_SYS_POKEMON_GET",
         "setflag FLAG_SYS_POKEDEX_GET",
         "giveitem ITEM_FAME_CHECKER",
@@ -105,7 +98,7 @@ def main() -> int:
         "AraunaPlayerHouse_EventScript_BeginDawn",
         "fadescreen FADE_TO_BLACK",
         "fadescreen FADE_FROM_BLACK",
-    ), "care-first playable home selection")
+    ), "playable prologue night")
 
     opening_block = house.split("AraunaPlayerHouse_EventScript_Opening::", 1)[1].split(
         "AraunaPlayerHouse_EventScript_DonaZila::", 1
@@ -113,9 +106,18 @@ def main() -> int:
     if "AraunaPlayerHouse_Text_NightWatch" in opening_block or "AraunaPlayerHouse_Text_Dawn" in opening_block:
         raise ValueError("the playable night must not be compressed into the opening dump")
 
+    # The partners are chosen at the Research Center. The house still runs the
+    # night that precedes it, and Dona Zila still tells the founding story
+    # afterwards, so both halves have to stay wired.
     center = read("data/maps/AraunaResearchCenter/scripts.inc")
-    if "givemon " in center:
-        raise ValueError("the research center must not bypass the home choice")
+    require(center, (
+        "givemon SPECIES_TREECKO, 5, ITEM_NONE",
+        "givemon SPECIES_TORCHIC, 5, ITEM_NONE",
+        "givemon SPECIES_MUDKIP, 5, ITEM_NONE",
+        "goto AraunaPlayerHouse_EventScript_CompleteChoice",
+    ), "Research Center partner selection")
+    if "AraunaPlayerHouse_EventScript_ZilaFoundingStory" not in house:
+        raise ValueError("Dona Zila no longer tells the founding story")
 
     village_map = json.loads(read("data/maps/AraunaMapLab/map.json"))
     if village_map["layout"] != "LAYOUT_ARAUNA_MAP_LAB" or not village_map["show_map_name"]:
