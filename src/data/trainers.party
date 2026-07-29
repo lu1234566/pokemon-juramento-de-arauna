@@ -4712,8 +4712,8 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_ROXANNE_1 ===
 Name: BENTO
-Class: Hiker
-Pic: Hiker
+Class: Expert
+Pic: Pyramid King Brandon
 Gender: Male
 Music: Male
 Items: Potion / Potion
