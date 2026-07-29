@@ -99,6 +99,24 @@
       "var": "VAR_TEMP_0",
       "var_value": "0",
       "script": "AraunaMistRoute_EventScript_FinishSurvey"
+    },
+    {
+      "type": "trigger",
+      "x": 8,
+      "y": 0,
+      "elevation": 3,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "AraunaMistRoute_EventScript_FinishSurvey"
+    },
+    {
+      "type": "trigger",
+      "x": 9,
+      "y": 0,
+      "elevation": 3,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "AraunaMistRoute_EventScript_FinishSurvey"
     }
   ],
   "bg_events": []

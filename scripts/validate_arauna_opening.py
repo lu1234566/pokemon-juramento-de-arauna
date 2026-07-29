@@ -125,7 +125,9 @@ def main() -> int:
         for event in village_map["coord_events"]
         if event["script"] == "AraunaMapLab_EventScript_EnterMistRoute"
     }
-    if east_triggers != {(18, 11), (19, 11)}:
+    # Three rows of gate, three rows of trigger. Covering only the middle one
+    # let the player leave along y=10 or y=12 with nothing firing.
+    if east_triggers != {(x, y) for x in (18, 19) for y in (10, 11, 12)}:
         raise ValueError(f"visible east exit is misaligned: {east_triggers}")
 
     sections = json.loads(read("src/data/region_map/region_map_sections.json"))

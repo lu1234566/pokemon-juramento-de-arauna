@@ -12,11 +12,15 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 MAP_GROUP = "gMapGroup_AraunaPrototype"
 
+# Trigger counts follow the width of each map-edge opening, not a round number:
+# a gate the player can cross on three rows needs a trigger on all three, or
+# they walk out of the world with nothing firing. validate_edge_transitions.py
+# is what enforces that; these counts just have to agree with it.
 EXPECTED_MAPS = {
-    "AraunaMapLab": ("MAP_ARAUNA_MAP_LAB", "LAYOUT_ARAUNA_MAP_LAB", 2, 2),
+    "AraunaMapLab": ("MAP_ARAUNA_MAP_LAB", "LAYOUT_ARAUNA_MAP_LAB", 2, 6),
     "AraunaPlayerHouse": ("MAP_ARAUNA_PLAYER_HOUSE", "LAYOUT_ARAUNA_PLAYER_HOUSE", 2, 2),
     "AraunaResearchCenter": ("MAP_ARAUNA_RESEARCH_CENTER", "LAYOUT_ARAUNA_RESEARCH_CENTER", 2, 0),
-    "AraunaMistRoute": ("MAP_ARAUNA_MIST_ROUTE", "LAYOUT_ARAUNA_MIST_ROUTE", 0, 6),
+    "AraunaMistRoute": ("MAP_ARAUNA_MIST_ROUTE", "LAYOUT_ARAUNA_MIST_ROUTE", 0, 8),
     "AraunaFirstLinkRuin": ("MAP_ARAUNA_FIRST_LINK_RUIN", "LAYOUT_ARAUNA_FIRST_LINK_RUIN", 2, 1),
     "AraunaFirstLinkChamber": ("MAP_ARAUNA_FIRST_LINK_CHAMBER", "LAYOUT_ARAUNA_FIRST_LINK_CHAMBER", 1, 0),
 }
@@ -141,7 +145,10 @@ def main() -> int:
     village_triggers = [(event["x"], event["y"]) for event in village["coord_events"]]
     if village_warps != [(6, 7), (14, 7)]:
         fail(f"village building anchors are misaligned: {village_warps}")
-    if village_triggers != [(18, 11), (19, 11)]:
+    # The east gate is three rows tall. Covering only the middle one left the
+    # other two as openings the player walks out of with nothing firing, which
+    # reads in play as a wide gate where a single tile works.
+    if set(village_triggers) != {(x, y) for x in (18, 19) for y in (10, 11, 12)}:
         fail(f"visible east-road triggers are misaligned: {village_triggers}")
 
     village_layout = layouts["LAYOUT_ARAUNA_MAP_LAB"]

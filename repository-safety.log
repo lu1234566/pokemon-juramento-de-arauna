@@ -89,8 +89,11 @@ Tilde glyph check passed: 9 latin fonts carry a and o tildes
 == Dex region label ==
 Dex region label check passed: the counter reads ARAUNA
 
+== Edge transitions ==
+Edge transition check passed: 6 map-edge openings are fully covered
+
 == Event placement ==
-Event placement check passed: 90 coordinates are on walkable ground
+Event placement check passed: 96 coordinates are on walkable ground
 
 == Priority-10 NPC v3 ==
 Priority-10 NPC v3 validated: nine overworlds, six trainer portraits, story wiring and Libras safety gate.

@@ -41,7 +41,9 @@ def main() -> None:
         for event in village["coord_events"]
         if event["script"] == "AraunaMapLab_EventScript_EnterMistRoute"
     }
-    assert east_exit_tiles == {(18, 11), (19, 11)}, east_exit_tiles
+    # The gate is three rows tall; a trigger on only the middle row let the
+    # player walk out along y=10 or y=12 with nothing firing.
+    assert east_exit_tiles == {(x, y) for x in (18, 19) for y in (10, 11, 12)}, east_exit_tiles
     assert not [event for event in village["warp_events"] if event["dest_map"] == "MAP_ARAUNA_MIST_ROUTE"]
     assert "warp MAP_ROUTE109" not in village_scripts
     assert "AraunaMapLab_EventScript_OfferPortoTravel" not in village_scripts
