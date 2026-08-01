@@ -65,7 +65,7 @@
       "x": 8,
       "y": 7,
       "elevation": 3,
-      "var": "VAR_ARAUNA_STORY_STAGE",
+      "var": "VAR_TEMP_0",
       "var_value": "0",
       "script": "AraunaPlayerHouse_EventScript_BlockExit"
     },
@@ -74,7 +74,7 @@
       "x": 9,
       "y": 7,
       "elevation": 3,
-      "var": "VAR_ARAUNA_STORY_STAGE",
+      "var": "VAR_TEMP_0",
       "var_value": "0",
       "script": "AraunaPlayerHouse_EventScript_BlockExit"
     }

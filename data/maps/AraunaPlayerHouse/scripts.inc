@@ -127,7 +127,6 @@ AraunaPlayerHouse_EventScript_BeginDawn::
 	fadescreen FADE_TO_BLACK
 	delay 30
 	setflag FLAG_ARAUNA_PROLOGUE_NIGHT_COMPLETE
-	setvar VAR_ARAUNA_STORY_STAGE, 1
 	fadescreen FADE_FROM_BLACK
 	msgbox AraunaPlayerHouse_Text_Dawn, MSGBOX_DEFAULT
 	release
@@ -199,14 +198,18 @@ AraunaPlayerHouse_EventScript_AssignAfterCaramelo::
 	setflag FLAG_ARAUNA_ANAHI_STARTER_PIMPAU
 	return
 
+@ The door opens at dawn. It is gated on the night flag rather than on
+@ VAR_ARAUNA_STORY_STAGE, because the opening scene already moves that var to 1
+@ on the first step into the house -- gating on it let the player walk straight
+@ out before the night and collect a partner with the prologue unplayed.
 AraunaPlayerHouse_EventScript_BlockExit::
+	goto_if_set FLAG_ARAUNA_PROLOGUE_NIGHT_COMPLETE, AraunaPlayerHouse_EventScript_ExitAllowed
 	lockall
-	goto_if_unset FLAG_ARAUNA_PROLOGUE_NIGHT_COMPLETE, AraunaPlayerHouse_EventScript_BlockExitNight
-	msgbox AraunaPlayerHouse_Text_BlockExit, MSGBOX_DEFAULT
+	msgbox AraunaPlayerHouse_Text_BlockExitNight, MSGBOX_DEFAULT
 	goto AraunaPlayerHouse_EventScript_BlockExitStepBack
 
-AraunaPlayerHouse_EventScript_BlockExitNight::
-	msgbox AraunaPlayerHouse_Text_BlockExitNight, MSGBOX_DEFAULT
+AraunaPlayerHouse_EventScript_ExitAllowed::
+	end
 
 AraunaPlayerHouse_EventScript_BlockExitStepBack::
 	applymovement LOCALID_PLAYER, AraunaPlayerHouse_Movement_StepBack
