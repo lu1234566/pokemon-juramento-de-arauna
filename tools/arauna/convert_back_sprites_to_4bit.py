@@ -28,6 +28,14 @@ Index 0 is the transparent slot everywhere in this project, so opaque pixels
 only ever match indices 1..15; a solid pixel can never collapse into the
 transparent colour no matter how close it sits to it.
 
+Colour fidelity is gated, not assumed. Because the output is indexed against
+gAraunaPalette_NNN, every opaque pixel is by construction one of that species'
+own colours. But a sprite drawn in colours the palette cannot represent would be
+silently recoloured, so each sprite's mean opaque-pixel error (Euclidean RGB
+distance from source colour to the palette entry chosen, 0..441) is measured and
+any sprite above --max-error (default 25) is rejected and reported by number
+instead of delivered in the wrong palette.
+
 Input is a directory or .zip of files named "<num>_<name>_back_64x64.png"
 (the "converted_images/..." layout the art pipeline emits). Output mirrors the
 input names into a directory, or into a .zip when --out ends in .zip.
@@ -71,9 +79,13 @@ PALETTE_RE = re.compile(
 
 
 def rgb555_to_rgb888(value: int) -> tuple[int, int, int]:
-    """Expand a GBA RGB555 word into 8-bit RGB (low 5 bits replicated up)."""
-    r, g, b = value & 31, (value >> 5) & 31, (value >> 10) & 31
-    return (r << 3) | (r >> 2), (g << 3) | (g >> 2), (b << 3) | (b >> 2)
+    """Expand a GBA RGB555 word into 8-bit RGB.
+
+    Uses the project's own formula -- (c & 31) * 8 per channel, the same one
+    check_sprite_health.py renders with -- so a colour compared here is the exact
+    colour the rest of the toolchain treats it as. Max channel is 248, not 255.
+    """
+    return (value & 31) * 8, ((value >> 5) & 31) * 8, ((value >> 10) & 31) * 8
 
 
 def load_palettes(shiny: bool) -> dict[int, list[int]]:
@@ -216,7 +228,7 @@ def detect_bg_key(rows: list[bytes], width: int, height: int) -> tuple[int, int,
 
 def quantise(rows: list[bytes], width: int, height: int, palette: list[int],
              threshold: int, bg_key: tuple[int, int, int] | None,
-             bg_tolerance: int) -> tuple[list[list[int]], dict[str, int]]:
+             bg_tolerance: int) -> tuple[list[list[int]], dict[str, float]]:
     """Map each RGBA pixel to a palette index with a hard transparency cut.
 
     A pixel becomes the transparent index when its colour is within
@@ -225,9 +237,12 @@ def quantise(rows: list[bytes], width: int, height: int, palette: list[int],
     palette colours by squared RGB distance.
     """
     opaque = [(i, rgb555_to_rgb888(palette[i])) for i in range(16) if i != TRANSPARENT_INDEX]
-    cache: dict[tuple[int, int, int], int] = {}
+    # Cache maps a source colour to (index, distance-to-that-index) so the error
+    # is measured against the palette entry actually written, not recomputed.
+    cache: dict[tuple[int, int, int], tuple[int, float]] = {}
     index_rows: list[list[int]] = []
     stats = {"transparent": 0, "opaque": 0, "fringe_cut": 0, "bg_keyed": 0}
+    error_sum = 0.0
 
     for y in range(height):
         line = rows[y]
@@ -247,18 +262,22 @@ def quantise(rows: list[bytes], width: int, height: int, palette: list[int],
                 if alpha != 0:
                     stats["fringe_cut"] += 1
                 continue
-            best = cache.get(rgb)
-            if best is None:
+            hit = cache.get(rgb)
+            if hit is None:
                 r, g, b = rgb
                 best_dist = None
+                best = TRANSPARENT_INDEX
                 for index, (pr, pg, pb) in opaque:
                     dist = (r - pr) ** 2 + (g - pg) ** 2 + (b - pb) ** 2
                     if best_dist is None or dist < best_dist:
                         best_dist, best = dist, index
-                cache[rgb] = best
-            out_row[x] = best
+                hit = (best, best_dist ** 0.5)
+                cache[rgb] = hit
+            out_row[x] = hit[0]
+            error_sum += hit[1]
             stats["opaque"] += 1
         index_rows.append(out_row)
+    stats["mean_error"] = error_sum / stats["opaque"] if stats["opaque"] else 0.0
     return index_rows, stats
 
 
@@ -300,6 +319,9 @@ def main() -> int:
                              "background, cutting an anti-aliased edge (default 0 = exact match)")
     parser.add_argument("--no-bg-key", action="store_true",
                         help="ignore the background colour and key transparency on alpha alone")
+    parser.add_argument("--max-error", type=float, default=25.0,
+                        help="reject a sprite whose mean opaque-pixel colour error against its "
+                             "species palette exceeds this (RGB distance 0..441, default 25)")
     parser.add_argument("--shiny", action="store_true",
                         help="quantise against gAraunaShinyPalette_NNN instead of the normal one")
     args = parser.parse_args()
@@ -348,6 +370,7 @@ def main() -> int:
     missing: list[str] = []
     errors: list[str] = []
     empty: list[str] = []
+    rejected: list[tuple[float, str]] = []
 
     for name, blob in iter_inputs(args.input):
         number = int(NAME_RE.search(name).group("num"))
@@ -382,14 +405,21 @@ def main() -> int:
             empty.append(name)
             continue
 
+        # Gate on colour fidelity. A sprite drawn in colours its species palette
+        # cannot represent would come out recoloured; reject it and report the
+        # number rather than ship a sprite in the wrong palette.
+        if stats["mean_error"] > args.max_error:
+            rejected.append((stats["mean_error"], name))
+            continue
+
         png = write_png_4bit(width, height, index_rows, palette)
         if zip_out is not None:
             zip_out.writestr(name, png)
         else:
             (out / name).write_bytes(png)
         converted += 1
-        fringe_total += stats["fringe_cut"]
-        bg_keyed_total += stats["bg_keyed"]
+        fringe_total += int(stats["fringe_cut"])
+        bg_keyed_total += int(stats["bg_keyed"])
 
     if zip_out is not None:
         zip_out.close()
@@ -408,6 +438,15 @@ def main() -> int:
         print(f"  background key: auto per-file [{summary}], tolerance {args.bg_tolerance}/chan")
     print(f"  hard alpha threshold: {args.threshold}")
     print(f"  cut to transparent: {bg_keyed_total}px background, {fringe_total}px alpha fringe")
+
+    if rejected:
+        rejected.sort(reverse=True)
+        print(f"  REJECTED {len(rejected)} sprite(s): mean colour error > {args.max_error:g} "
+              f"against their own species palette (not delivered):", file=sys.stderr)
+        for mean_error, name in rejected[:25]:
+            print(f"    - {name}: mean error {mean_error:.1f}/441", file=sys.stderr)
+        if len(rejected) > 25:
+            print(f"    ... and {len(rejected) - 25} more", file=sys.stderr)
     if missing:
         print(f"  skipped {len(missing)} file(s) with no palette in the header:", file=sys.stderr)
         for name in missing[:10]:
@@ -428,7 +467,7 @@ def main() -> int:
         if len(errors) > 10:
             print(f"    ... and {len(errors) - 10} more", file=sys.stderr)
 
-    if errors or empty or converted == 0:
+    if errors or empty or rejected or converted == 0:
         return 1
     return 0
 
