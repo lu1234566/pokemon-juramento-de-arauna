@@ -81,3 +81,6 @@ __pycache__
 dist/
 releases/
 local-roms/
+
+# Arauna back-sprite high-art input (authoring asset, like the editable art pack)
+/graphics/arauna/
