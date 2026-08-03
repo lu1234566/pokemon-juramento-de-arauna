@@ -62,11 +62,9 @@ HEADER = ROOT / "src/data/graphics/arauna_fakemon_graphics.h"
 # match it, and it is written as magenta (the decomp convention) but flagged
 # transparent in the PNG's tRNS so previews show through.
 TRANSPARENT_INDEX = 0
-NAME_RE = re.compile(r"(?P<num>\d+)_.*_back_64x64\.png$", re.I)
-
-# Fallback background key used when a sprite's corners disagree; this is the flat
-# GB-green the observed batches paint their transparent area with.
-DEFAULT_BG_KEY = (224, 248, 208)
+# Accept both the "<num>_<name>_back_64x64.png" batch layout and the plainer
+# "<num>_<name>_back.png" the high-art exports use.
+NAME_RE = re.compile(r"(?P<num>\d+)_.*_back(?:_64x64)?\.png$", re.I)
 
 
 # --------------------------------------------------------------------------- #
@@ -206,24 +204,30 @@ def write_png_4bit(width: int, height: int, index_rows: list[list[int]],
 # --------------------------------------------------------------------------- #
 
 
-def detect_bg_key(rows: list[bytes], width: int, height: int) -> tuple[int, int, int]:
-    """Pick the transparent-background key from the four corner pixels.
+def detect_bg_key(rows: list[bytes], width: int, height: int,
+                  threshold: int) -> tuple[int, int, int] | None:
+    """Pick the flat-colour background key from the four corner pixels, if any.
 
-    A corner that lands on the creature is the exception, so the majority colour
-    wins; on a tie (no colour appears more than once) fall back to the known
-    GB-green rather than guess a creature colour.
+    Only *opaque* corners define a colour key: a sprite with real transparency
+    has transparent corners, and there the alpha threshold already does the
+    cutting, so return None and let it. A colour key is meant only for art that
+    fakes transparency with a solid opaque fill (the GB-green batches). The
+    majority opaque corner wins; without a majority there is no reliable key.
     """
     corners = []
     for cy in (0, height - 1):
         line = rows[cy]
         for cx in (0, width - 1):
             base = cx * 4
-            corners.append((line[base], line[base + 1], line[base + 2]))
+            if line[base + 3] >= threshold:  # opaque corner only
+                corners.append((line[base], line[base + 1], line[base + 2]))
+    if not corners:
+        return None
     counts: dict[tuple[int, int, int], int] = {}
     for colour in corners:
         counts[colour] = counts.get(colour, 0) + 1
     best_colour, best_count = max(counts.items(), key=lambda kv: kv[1])
-    return best_colour if best_count > 1 else DEFAULT_BG_KEY
+    return best_colour if best_count > 1 else None
 
 
 def quantise(rows: list[bytes], width: int, height: int, palette: list[int],
@@ -392,7 +396,7 @@ def main() -> int:
         elif forced_bg is not None:
             bg_key = forced_bg
         else:
-            bg_key = detect_bg_key(rows, width, height)
+            bg_key = detect_bg_key(rows, width, height, args.threshold)
         if bg_key is not None:
             detected_keys[bg_key] = detected_keys.get(bg_key, 0) + 1
 
