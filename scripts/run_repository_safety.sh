@@ -16,6 +16,7 @@ run_check "Localized text" python3 scripts/check_localization.py
 run_check "English runtime" python3 tools/arauna/validate_english_runtime.py
 run_check "Packed Arauna Dex" python3 tools/arauna/validate_packed_arauna_dex.py
 run_check "Vertical slice shells" python3 scripts/validate_vertical_slice_shells.py
+run_check "Map symbol references" python3 scripts/validate_map_symbol_references.py
 
 printf '\n== Reproducible village ==\n' | tee -a "$LOG_PATH"
 python3 scripts/generate_arauna_vanilla_village.py --out /tmp/arauna-village-map.bin 2>&1 | tee -a "$LOG_PATH"
@@ -48,6 +49,7 @@ run_check "Dex region label" python3 tools/arauna/set_dex_region_label.py --chec
 run_check "Edge transitions" python3 scripts/validate_edge_transitions.py
 run_check "Event placement" python3 scripts/validate_event_placement.py
 run_check "Priority-10 NPC v3" python3 scripts/validate_priority10_npcs.py
+run_check "Safety check parity" python3 scripts/validate_safety_check_parity.py
 run_check "Devcontainer JSON" python3 -m json.tool .devcontainer/devcontainer.json
 run_check "Visual setup shell" bash -n .devcontainer/setup-visual-tools.sh
 run_check "Visual launcher shell" bash -n scripts/open_visual_tools.sh
