@@ -19,7 +19,9 @@ English-first release.
 Build: `make ARAUNA_LANGUAGE=ENGLISH -j$(nproc)` → `pokeemerald-en.gba`.
 
 CI is `.github/workflows/build.yml`, two jobs:
-- `repository-safety` — 35 checks, mirrored by `scripts/run_repository_safety.sh`
+- `repository-safety` — 36 checks, mirrored by `scripts/run_repository_safety.sh`
+  (the mirror is now enforced by `scripts/validate_safety_check_parity.py`, which
+  fails if the CI job and the local runner ever run a different set of checks)
 - `build-and-test` — builds the ROM
 
 The ROM artifact (`pokeemerald-en-gba`) uploads **only on `workflow_dispatch`**,
@@ -200,7 +202,9 @@ through the proxy, and the Drive connector cannot list a folder by parent.
 ## 7. How to work here
 
 Run `bash scripts/run_repository_safety.sh` before every commit. It is the same
-35 checks CI runs, and it is fast.
+36 checks CI runs, and it is fast. When you add a check to CI, add it to the
+runner too (and vice versa) — `validate_safety_check_parity.py` fails the build
+if the two ever diverge, and names the check that is out of place.
 
 When a validator fails after an intentional change, read what it was protecting
 before editing it. Several encode design decisions rather than trivia — two of
