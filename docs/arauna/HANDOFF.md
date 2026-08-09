@@ -189,7 +189,9 @@ base64 JSON). The old note that Drive was unreachable is out of date.
 ## 6. Still open
 
 1. **Back sprites** — DONE (rebuilt from the GBA export; see section 5). Shiny
-   was regenerated too but not visually reviewed yet. Icons were placeholders
+   palettes are derived from the export's shiny art via a normal→shiny colour
+   LUT, so front and back shiny are consistent and no back-only colour is left
+   unshinified (all 386 have a distinct shiny). Icons were placeholders
    for the 24 species whose front design changed; those are now regenerated from
    the new fronts by `tools/arauna/regenerate_icons_from_fronts.py` (best-fit
    among the six shared icon palettes). Icons of species whose design did not

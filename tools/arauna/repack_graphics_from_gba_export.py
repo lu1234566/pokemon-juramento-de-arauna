@@ -98,16 +98,27 @@ def remap(rgba: np.ndarray, pal: np.ndarray) -> np.ndarray:
     return idx
 
 
-def derive_shiny_palette(idx_front: np.ndarray, shiny_rgba: np.ndarray, normal: np.ndarray) -> np.ndarray:
-    """Export shiny shares the front's index matrix, so map each new palette
-    index to the average shiny colour of the front pixels assigned to it."""
+def derive_shiny_palette(normal: np.ndarray, front_rgba: np.ndarray, shiny_rgba: np.ndarray) -> np.ndarray:
+    """The export's normal front and shiny front share one index matrix, so each
+    opaque pixel gives a normal-colour -> shiny-colour pair. Build that lookup and
+    recolour every entry of our shared palette through the nearest normal colour.
+
+    Doing it by colour (not by front-pixel position) means back-only palette
+    entries -- colours the back uses but the front does not -- also get a proper
+    shiny instead of staying on their normal value."""
+    opaque = front_rgba[:, :, 3] >= ALPHA_THRESHOLD
+    fn = front_rgba[:, :, :3][opaque].reshape(-1, 3).astype(np.int64)
+    sh = shiny_rgba[:, :, :3][opaque].reshape(-1, 3).astype(np.int64)
+    if len(fn) == 0:
+        return normal.copy()
+    keys, inv = np.unique(fn, axis=0, return_inverse=True)
+    shiny_for_key = np.zeros_like(keys)
+    for k in range(len(keys)):
+        shiny_for_key[k] = np.rint(sh[inv == k].mean(0))
     pal = normal.copy()
-    srgb = shiny_rgba[:, :, :3].astype(np.float64).reshape(-1, 3)
-    flat = idx_front.reshape(-1)
     for i in range(1, 16):
-        sel = flat == i
-        if sel.any():
-            pal[i] = np.clip(np.round(srgb[sel].mean(0) / 8) * 8, 0, 248)
+        nearest = ((keys - normal[i].astype(np.int64)) ** 2).sum(1).argmin()
+        pal[i] = np.clip(np.round(shiny_for_key[nearest] / 8) * 8, 0, 248)
     return pal
 
 
@@ -213,7 +224,7 @@ def build_header() -> str:
         pal = build_palette(np.concatenate([opaque_pixels(front), opaque_pixels(back)], 0), seed=num)
         idx_front = remap(front, pal)
         idx_back = remap(back, pal)
-        shiny = derive_shiny_palette(idx_front, sprite_rgba(archive, members[("shiny", num)]), pal)
+        shiny = derive_shiny_palette(pal, front, sprite_rgba(archive, members[("shiny", num)]))
 
         front_4bpp, back_4bpp = to_4bpp(idx_front), to_4bpp(idx_back)
         if len(front_4bpp) != 4096 or len(back_4bpp) != 2048:
