@@ -32,8 +32,12 @@ import sys
 import zipfile
 from pathlib import Path
 
-import numpy as np
-from PIL import Image
+# numpy and Pillow are imported lazily in main() only on the build path. The
+# repository-safety CI job does not install them, and there the export is absent
+# so --check must skip without needing them; importing at module top would crash
+# that job on ModuleNotFoundError before the skip can happen.
+np = None
+Image = None
 
 ROOT = Path(__file__).resolve().parents[2]
 EXPORT = ROOT / "graphics/arauna/arauna_sprites_gba_export.zip"
@@ -264,6 +268,10 @@ def main() -> int:
             return 0
         print(f"missing GBA export: {EXPORT}", file=sys.stderr)
         return 1
+
+    global np, Image
+    import numpy as np
+    from PIL import Image
 
     text = build_header()
     previous = HEADER.read_text(encoding="ascii") if HEADER.exists() else ""
