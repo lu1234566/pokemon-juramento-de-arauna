@@ -189,8 +189,11 @@ base64 JSON). The old note that Drive was unreachable is out of date.
 ## 6. Still open
 
 1. **Back sprites** — DONE (rebuilt from the GBA export; see section 5). Shiny
-   was regenerated too but not visually reviewed yet; icons are still the old
-   art and may be placeholders for the high-dex species whose fronts changed.
+   was regenerated too but not visually reviewed yet. Icons were placeholders
+   for the 24 species whose front design changed; those are now regenerated from
+   the new fronts by `tools/arauna/regenerate_icons_from_fronts.py` (best-fit
+   among the six shared icon palettes). Icons of species whose design did not
+   change were left untouched.
 2. **Rustboro has no identity of its own** — outside Celina and Bento it is
    still stock Emerald. No Arauna NPCs, signs or dialogue.
 3. **Porto das Redes** is not on the route; it should rejoin after Rustboro.

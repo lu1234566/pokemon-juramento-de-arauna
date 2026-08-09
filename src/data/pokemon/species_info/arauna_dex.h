@@ -5038,7 +5038,7 @@
         .palette = gAraunaPalette_085,
         .shinyPalette = gAraunaShinyPalette_085,
         .iconSprite = gAraunaIcon_085,
-        .iconPalIndex = 3,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Golem)
@@ -5574,7 +5574,7 @@
         .palette = gAraunaPalette_094,
         .shinyPalette = gAraunaShinyPalette_094,
         .iconSprite = gAraunaIcon_094,
-        .iconPalIndex = 0,
+        .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Dodrio)
@@ -7173,7 +7173,7 @@
         .palette = gAraunaPalette_121,
         .shinyPalette = gAraunaShinyPalette_121,
         .iconSprite = gAraunaIcon_121,
-        .iconPalIndex = 0,
+        .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Rhydon)
@@ -8296,7 +8296,7 @@
         .palette = gAraunaPalette_140,
         .shinyPalette = gAraunaShinyPalette_140,
         .iconSprite = gAraunaIcon_140,
-        .iconPalIndex = 0,
+        .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Lapras)
@@ -19281,7 +19281,7 @@
         .palette = gAraunaPalette_326,
         .shinyPalette = gAraunaShinyPalette_326,
         .iconSprite = gAraunaIcon_326,
-        .iconPalIndex = 5,
+        .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Grumpig)
@@ -20511,7 +20511,7 @@
         .palette = gAraunaPalette_347,
         .shinyPalette = gAraunaShinyPalette_347,
         .iconSprite = gAraunaIcon_347,
-        .iconPalIndex = 1,
+        .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Anorith)
@@ -22228,7 +22228,7 @@
         .palette = gAraunaPalette_376,
         .shinyPalette = gAraunaShinyPalette_376,
         .iconSprite = gAraunaIcon_376,
-        .iconPalIndex = 5,
+        .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Metagross)
@@ -22641,7 +22641,7 @@
         .palette = gAraunaPalette_383,
         .shinyPalette = gAraunaShinyPalette_383,
         .iconSprite = gAraunaIcon_383,
-        .iconPalIndex = 0,
+        .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 0, SHADOW_SIZE_M)
         FOOTPRINT(Groudon)
