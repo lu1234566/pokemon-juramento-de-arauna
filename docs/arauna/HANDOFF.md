@@ -143,51 +143,54 @@ catches actually shipped.
 (LZ77, 64x64), `gAraunaPalette_NNN` and `gAraunaShinyPalette_NNN` (16 u16,
 RGB555), `gAraunaIcon_NNN` (uncompressed, 32x64).
 
-**Front, back and icon of one species share a single palette**, index order
-included. The engine loads one palette for all three. This is the constraint
-every conversion attempt has broken so far.
+**Front and back of one species share a single palette** (`SpeciesInfo.palette`);
+the engine loads one palette for both. The **icon is independent** — it uses
+`SpeciesInfo.iconPalIndex` into the shared `gMonIconPalettes`, not
+`gAraunaPalette_NNN` — so changing a species palette never touches its icon.
 
 RGB555 to RGB: `(c & 31) * 8`, `((c >> 5) & 31) * 8`, `((c >> 10) & 31) * 8`.
 Index 0 is transparent and never drawn.
 
-### Back sprite status — the one open item
+### Back sprite status — RESOLVED (new GBA export)
 
-The shipped back sprites are wrong: for 175 of 386 species the art is a
-**front-facing view**, so the player's Pokémon stares at the player in battle.
-That is a content problem in the art pack, not a code defect — the committed
-header faithfully matches the pack.
+The shipped back sprites used to be wrong: for ~175 species the art was a
+front-facing view, so the player's Pokémon stared at the player in battle.
 
-The owner is regenerating them. Three attempts so far:
+The owner delivered a complete, spec-compliant **GBA export** (front 64x128,
+back 64x64 rear-view, shiny 64x128 — all indexed, index 0 transparent, ≤15
+colours, no antialiasing). Analysis of that export found two things: the backs
+are genuine rear views, and for many species — especially high dex numbers —
+the export's **fronts are the finished art while the committed fronts were old
+placeholders** (e.g. #386 is a teal/gold dragon in the export but a purple cat
+in the old header; #350 a red howler monkey vs a beige cat).
 
-1. **1254x1254 RGBA concept art** (9 species, and a 386 set on Drive at 55 MB).
-   Art is good: genuine rear views, IoU against the front 0.35–0.50. Wrong
-   format.
-2. **160x144 RGB** from a screen converter — lost transparency, background
-   baked to near-black. Rejected.
-3. **64x64 RGBA**, transparency correct — but a Game Boy monochrome green
-   palette replaced every colour. Rejected.
-4. **64x64 4bpp indexed with PLTE and tRNS** — format finally correct, but
-   remapped against the wrong palette: blues became browns, and yellow/cyan
-   fringing appeared on edges.
+The export authors front and back with *separate* per-image palettes, which the
+one-palette-per-species engine cannot honour. So the header is now rebuilt with
+a **single 15-colour palette per species, k-means'd from the front+back pixels
+together**, and front+back re-indexed onto it; the shiny palette is recovered
+from the export's shiny art (which shares the front's index matrix). Icons are
+preserved verbatim (separate palette). Result across 386: front colour error
+median 7 (max 23), back median 11 (max 23) on the 0–441 scale — inside the
+owner's 12–20 band, no catastrophic species.
 
-**What is still needed:** each `NNN_nome_back.png` remapped against
-`gAraunaPalette_NNN` — the same species, matched by file number. No global
-palette, no shared palette, no new palette.
+**Source of truth is now the GBA export**, not the old editable art pack.
+`tools/arauna/repack_graphics_from_gba_export.py` rebuilds the header from
+`graphics/arauna/arauna_sprites_gba_export.zip` (gitignored, so absent in CI —
+`--check` skips there, validates locally). It requires numpy + Pillow, and its
+`--check` replaced the old art-pack check in CI and the safety runner. The old
+`repack_graphics_from_art_pack.py` is superseded and no longer wired in.
 
-Curation threshold: mean colour error per species on a 0–441 scale. The
-approved batch of 9 scored 12–20. Only 009 Petropico exceeded it at 36, because
-its current palette has no room for the new art's greens; front and back share
-a palette, so fixing that species means redoing both.
-
-Note on transport: 386 sprites at 64x64 4bpp is **under 1 MB** and fits in chat.
-Drive is unreachable from this environment — `drive.google.com` returns 403
-through the proxy, and the Drive connector cannot list a folder by parent.
+The Drive/export is reachable via the Google Drive connector (`search_files`
+with `parentId = '<folder>'`; large downloads land in the tool-results dir as
+base64 JSON). The old note that Drive was unreachable is out of date.
 
 ---
 
 ## 6. Still open
 
-1. **Back sprites** — blocked on the palette pairing above.
+1. **Back sprites** — DONE (rebuilt from the GBA export; see section 5). Shiny
+   was regenerated too but not visually reviewed yet; icons are still the old
+   art and may be placeholders for the high-dex species whose fronts changed.
 2. **Rustboro has no identity of its own** — outside Celina and Bento it is
    still stock Emerald. No Arauna NPCs, signs or dialogue.
 3. **Porto das Redes** is not on the route; it should rejoin after Rustboro.

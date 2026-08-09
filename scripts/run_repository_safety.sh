@@ -43,7 +43,7 @@ run_check "Assembler directives" python3 scripts/validate_inc_syntax.py
 run_check "Flag/var slot collisions" python3 scripts/validate_flag_slot_collisions.py
 run_check "Sprite transparency" python3 tools/arauna/fix_sprite_transparency.py --check
 run_check "Sprite health" python3 tools/arauna/check_sprite_health.py
-run_check "Graphics header matches art pack" python3 tools/arauna/repack_graphics_from_art_pack.py --check
+run_check "Graphics header matches GBA export" python3 tools/arauna/repack_graphics_from_gba_export.py --check
 run_check "Tilde glyphs" python3 tools/arauna/add_tilde_glyphs.py --check
 run_check "Dex region label" python3 tools/arauna/set_dex_region_label.py --check
 run_check "Edge transitions" python3 scripts/validate_edge_transitions.py
