@@ -8,8 +8,9 @@ AraunaMapLab_Text_EntryDeclined::
 
 AraunaMapLab_Text_TestPartner::
 	.string "Your party is empty.\p"
-	.string "Take this temporary TREECKO.\n"
-	.string "It exists only for this test.$"
+	.string "Take this PIMPAU as your\n"
+	.string "partner.\l"
+	.string "It will help you explore here.$"
 
 AraunaMapLab_Text_GuideIntroduction::
 	.string "Welcome to ARAUNA's first\n"
@@ -27,29 +28,33 @@ AraunaMapLab_Text_Stay::
 	.string "Explore at your own pace.$"
 
 AraunaMapLab_Text_FieldKit::
-	.string "You found a FIELD KIT!\p"
-	.string "A POTION was placed in\n"
-	.string "your BAG.$"
+	.string "You received the FIELD KIT!\p"
+	.string "5 POKé BALLS and 3 POTIONS\n"
+	.string "were placed in your BAG.$"
+
+AraunaMapLab_Text_FieldKitLocked::
+	.string "The FIELD KIT is sealed.\p"
+	.string "Choose your partner at DONA\n"
+	.string "ZILA's house first.$"
 
 AraunaMapLab_Text_BagFull::
 	.string "Your BAG is full.\n"
 	.string "Make room and try again.$"
 
-AraunaMapLab_Text_NiloIntro::
-	.string "The mist reshapes every trail.\n"
-	.string "Show me you can read the land!$"
+AraunaMapLab_Text_CiroIntro::
+	.string "CIRO: You came back with another\n"
+	.string "set of tracks beside yours.\p"
+	.string "Show me what an agreement looks\n"
+	.string "like in battle!$"
 
-AraunaMapLab_Text_NiloDefeat::
-	.string "You read the land...\n"
-	.string "I only read your footsteps.$"
+AraunaMapLab_Text_CiroDefeat::
+	.string "Now I see why it followed you.$"
 
-AraunaMapLab_Text_NiloPostBattle::
-	.string "Maps reveal paths.\p"
-	.string "The best ones also hide\n"
-	.string "questions.$"
+AraunaMapLab_Text_CiroPostBattle::
+	.string "CIRO: You listened before giving\n"
+	.string "an order.\p"
+	.string "That is harder than winning.$"
 
 AraunaMapLab_Text_NeedPartner::
-	.string "You need a POKéMON before\n"
-	.string "you can train with NILO.\p"
-	.string "Talk to the researcher near\n"
-	.string "the entrance point.$"
+	.string "CIRO: Meet me after choosing a\n"
+	.string "partner at DONA ZILA's house.$"

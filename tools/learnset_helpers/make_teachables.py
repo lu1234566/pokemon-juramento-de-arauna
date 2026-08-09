@@ -208,6 +208,7 @@ def main():
         quit(0)
 
     SOURCE_LEARNSETS_JSON = pathlib.Path("./src/data/pokemon/all_learnables.json")
+    ARAUNA_LEARNSETS_JSON = pathlib.Path("./src/data/pokemon/arauna_teachables.json")
     SOURCE_TEACHING_TYPES_JSON = SOURCE_DIR / "all_teaching_types.json"
 
     assert SOURCE_LEARNSETS_JSON.exists(), f"{SOURCE_LEARNSETS_JSON=} does not exist"
@@ -229,6 +230,13 @@ def main():
 
     with open(SOURCE_LEARNSETS_JSON, "r") as source_fp:
         all_learnables = json.load(source_fp)
+
+    # Arauna replaces engine slots rather than adding new constants.  Overlay
+    # their compatibility after the upstream learnables are loaded so the
+    # generated C arrays no longer inherit the original species' TMs/HMs.
+    if ARAUNA_LEARNSETS_JSON.is_file():
+        with open(ARAUNA_LEARNSETS_JSON, "r") as source_fp:
+            all_learnables.update(json.load(source_fp))
 
     with open(SOURCE_TEACHING_TYPES_JSON, "r") as source_fp:
         repo_teaching_types = json.load(source_fp)

@@ -54,51 +54,49 @@
 #define FLAG_ARAUNA_MAP_LAB_VISITED          0x20
 #define FLAG_ARAUNA_MAP_LAB_GUIDE_MET        0x21
 #define FLAG_ARAUNA_MAP_LAB_FIELD_KIT_TAKEN  0x22
-#define FLAG_UNUSED_0x023    0x23 // Unused Flag
-#define FLAG_UNUSED_0x024    0x24 // Unused Flag
-#define FLAG_UNUSED_0x025    0x25 // Unused Flag
-#define FLAG_UNUSED_0x026    0x26 // Unused Flag
-#define FLAG_UNUSED_0x027    0x27 // Unused Flag
-#define FLAG_UNUSED_0x028    0x28 // Unused Flag
-#define FLAG_UNUSED_0x029    0x29 // Unused Flag
-#define FLAG_UNUSED_0x02A    0x2A // Unused Flag
-#define FLAG_UNUSED_0x02B    0x2B // Unused Flag
-#define FLAG_UNUSED_0x02C    0x2C // Unused Flag
-#define FLAG_UNUSED_0x02D    0x2D // Unused Flag
-#define FLAG_UNUSED_0x02E    0x2E // Unused Flag
-#define FLAG_UNUSED_0x02F    0x2F // Unused Flag
-#define FLAG_UNUSED_0x030    0x30 // Unused Flag
-#define FLAG_UNUSED_0x031    0x31 // Unused Flag
-#define FLAG_UNUSED_0x032    0x32 // Unused Flag
-#define FLAG_UNUSED_0x033    0x33 // Unused Flag
-#define FLAG_UNUSED_0x034    0x34 // Unused Flag
-#define FLAG_UNUSED_0x035    0x35 // Unused Flag
-#define FLAG_UNUSED_0x036    0x36 // Unused Flag
-#define FLAG_UNUSED_0x037    0x37 // Unused Flag
-#define FLAG_UNUSED_0x038    0x38 // Unused Flag
-#define FLAG_UNUSED_0x039    0x39 // Unused Flag
-#define FLAG_UNUSED_0x03A    0x3A // Unused Flag
-#define FLAG_UNUSED_0x03B    0x3B // Unused Flag
-#define FLAG_UNUSED_0x03C    0x3C // Unused Flag
-#define FLAG_UNUSED_0x03D    0x3D // Unused Flag
-#define FLAG_UNUSED_0x03E    0x3E // Unused Flag
-#define FLAG_UNUSED_0x03F    0x3F // Unused Flag
-#define FLAG_UNUSED_0x040    0x40 // Unused Flag
-#define FLAG_UNUSED_0x041    0x41 // Unused Flag
-#define FLAG_UNUSED_0x042    0x42 // Unused Flag
-#define FLAG_UNUSED_0x043    0x43 // Unused Flag
-#define FLAG_UNUSED_0x044    0x44 // Unused Flag
-#define FLAG_UNUSED_0x045    0x45 // Unused Flag
-#define FLAG_UNUSED_0x046    0x46 // Unused Flag
-#define FLAG_UNUSED_0x047    0x47 // Unused Flag
-#define FLAG_UNUSED_0x048    0x48 // Unused Flag
-#define FLAG_UNUSED_0x049    0x49 // Unused Flag
-#define FLAG_UNUSED_0x04A    0x4A // Unused Flag
-#define FLAG_UNUSED_0x04B    0x4B // Unused Flag
-#define FLAG_UNUSED_0x04C    0x4C // Unused Flag
-#define FLAG_UNUSED_0x04D    0x4D // Unused Flag
-#define FLAG_UNUSED_0x04E    0x4E // Unused Flag
-#define FLAG_UNUSED_0x04F    0x4F // Unused Flag
+#define FLAG_ARAUNA_MIST_ROUTE_AFFECTED_MON_CLEARED  0x23
+#define FLAG_ARAUNA_MIST_ROUTE_NOTEBOOK_TAKEN        0x24
+#define FLAG_ARAUNA_FIRST_LINK_RESCUE_COMPLETE      0x25
+#define FLAG_ARAUNA_FIRST_LINK_MEMORY_SEEN           0x26
+#define FLAG_ARAUNA_FIRST_LINK_CHAMBER_COMPLETE      0x27
+#define FLAG_ARAUNA_PORTO_ARRIVED                    0x28
+#define FLAG_ARAUNA_PORTO_CELINA_MET                 0x29
+#define FLAG_ARAUNA_PORTO_IARACO_SEEN                0x2A
+#define FLAG_ARAUNA_PORTO_IARACO_RESTORED            0x2B
+#define FLAG_ARAUNA_TESTIMONY_IARA_MAE               0x2C
+#define FLAG_ARAUNA_BADGE_MARE                       0x2D
+#define FLAG_ARAUNA_SERRA_ARRIVED                     0x2E
+#define FLAG_ARAUNA_LIBRAS_LEARNED                    0x2F
+#define FLAG_ARAUNA_SERRA_HERMIT_UNDERSTOOD           0x30
+#define FLAG_ARAUNA_SERRA_LOBISOMEM_CALMED            0x31
+#define FLAG_ARAUNA_BADGE_UIVO                        0x32
+#define FLAG_ARAUNA_SERRA_CHAPTER_RECEIVED            0x33
+#define FLAG_ARAUNA_SECOND_TEST_CANDIES_RECEIVED     0x34
+#define FLAG_ARAUNA_MARE_TRIAL_COMPLETE             0x35
+#define FLAG_ARAUNA_UIVO_TRIAL_COMPLETE             0x36
+#define FLAG_ARAUNA_PROLOGUE_FED_PIMPAU              0x37
+#define FLAG_ARAUNA_PROLOGUE_FED_CARAMELO            0x38
+#define FLAG_ARAUNA_PROLOGUE_FED_QUERO               0x39
+#define FLAG_ARAUNA_CIRO_STARTER_PIMPAU              0x3A
+#define FLAG_ARAUNA_CIRO_STARTER_CARAMELO            0x3B
+#define FLAG_ARAUNA_CIRO_STARTER_QUERO               0x3C
+#define FLAG_ARAUNA_ANAHI_STARTER_PIMPAU             0x3D
+#define FLAG_ARAUNA_ANAHI_STARTER_CARAMELO           0x3E
+#define FLAG_ARAUNA_ANAHI_STARTER_QUERO              0x3F
+#define FLAG_ARAUNA_PROLOGUE_NIGHT_PIMPAU             0x40
+#define FLAG_ARAUNA_PROLOGUE_NIGHT_CARAMELO           0x41
+#define FLAG_ARAUNA_PROLOGUE_NIGHT_QUERO              0x42
+#define FLAG_ARAUNA_PROLOGUE_TALKED_ZILA_AT_NIGHT     0x43
+#define FLAG_ARAUNA_PROLOGUE_TALKED_ANAHI_AT_NIGHT    0x44
+#define FLAG_ARAUNA_PROLOGUE_NIGHT_COMPLETE           0x45
+#define FLAG_ARAUNA_PORTO_MEMORIAL_HEARD             0x46
+#define FLAG_ARAUNA_PORTO_PERMIT_FOUND                0x47
+#define FLAG_ARAUNA_PORTO_DOCK_SONG_HEARD             0x48
+#define FLAG_ARAUNA_PORTO_NET_FOUND                   0x49
+#define FLAG_ARAUNA_PORTO_AGENT_DEFEATED              0x4A
+// 0x4B-0x4F are already claimed by include/config/arauna.h (the Porto and coast
+// road aliases). The story flags below live in the unused 0x4D4 block instead;
+// see the "Arauna story" comment there.
 
 // Scripts
 #define FLAG_HIDE_SKY_PILLAR_TOP_RAYQUAZA_STILL  0x50
@@ -106,8 +104,8 @@
 #define FLAG_RESCUED_BIRCH                       0x52
 #define FLAG_LEGENDARIES_IN_SOOTOPOLIS           0x53
 
-#define FLAG_UNUSED_0x054                    0x54  // Unused Flag
-#define FLAG_UNUSED_0x055                    0x55  // Unused Flag
+#define FLAG_ARAUNA_SEA_DISTANCE              0x54  // Sea described as endless (M15)
+#define FLAG_ARAUNA_SEA_SOUND                 0x55  // Sea described by its sound (M15)
 
 #define FLAG_HIDE_CONTEST_POKE_BALL          0x56  // Always set after new game, object it hides is added directly
 #define FLAG_MET_RIVAL_MOM                   0x57
@@ -128,7 +126,7 @@
 #define FLAG_MOSSDEEP_GYM_SWITCH_3           0x66 //
 #define FLAG_MOSSDEEP_GYM_SWITCH_4           0x67 //
 
-#define FLAG_UNUSED_0x068                    0x68  // Unused Flag
+#define FLAG_ARAUNA_SEA_DARK                  0x68  // Sea described by the dark and the lamps (M15)
 
 #define FLAG_OCEANIC_MUSEUM_MET_REPORTER     0x69
 #define FLAG_RECEIVED_HM_STRENGTH            0x6A
@@ -1287,11 +1285,14 @@
 #define FLAG_UNUSED_0x4D1                                           0x4D1 // Unused Flag
 #define FLAG_UNUSED_0x4D2                                           0x4D2 // Unused Flag
 #define FLAG_UNUSED_0x4D3                                           0x4D3 // Unused Flag
-#define FLAG_UNUSED_0x4D4                                           0x4D4 // Unused Flag
-#define FLAG_UNUSED_0x4D5                                           0x4D5 // Unused Flag
-#define FLAG_UNUSED_0x4D6                                           0x4D6 // Unused Flag
-#define FLAG_UNUSED_0x4D7                                           0x4D7 // Unused Flag
-#define FLAG_UNUSED_0x4D8                                           0x4D8 // Unused Flag
+// Arauna story: persistent prologue state. These sit here rather than beside the
+// other FLAG_ARAUNA_* entries because the low 0x4B-0x4F slots are taken by
+// include/config/arauna.h.
+#define FLAG_ARAUNA_STARTER_STORY_HEARD                             0x4D4 // Dona Zila told the founding story of the chosen starter
+#define FLAG_ARAUNA_CIRO_BADGE_REVEALED                             0x4D5 // CIRO's Consortium badge shown in the plaza (P12)
+#define FLAG_ARAUNA_PROMISE_RETURN                                  0x4D6 // Departure promise: I will come back (P13)
+#define FLAG_ARAUNA_PROMISE_RECORD                                  0x4D7 // Departure promise: I will record it all (P13)
+#define FLAG_ARAUNA_PROMISE_LISTEN                                  0x4D8 // Departure promise: I will listen first (P13)
 #define FLAG_UNUSED_0x4D9                                           0x4D9 // Unused Flag
 #define FLAG_UNUSED_0x4DA                                           0x4DA // Unused Flag
 #define FLAG_UNUSED_0x4DB                                           0x4DB // Unused Flag

@@ -1,2 +1,62 @@
 AraunaFirstLinkRuin_MapScripts::
 	.byte 0
+
+AraunaFirstLinkRuin_EventScript_AffectedPokemon::
+	lock
+	faceplayer
+	msgbox AraunaFirstLinkRuin_Text_Situation, MSGBOX_DEFAULT
+	msgbox AraunaFirstLinkRuin_Text_CouragePrompt, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, AraunaFirstLinkRuin_EventScript_ChooseCourage
+	msgbox AraunaFirstLinkRuin_Text_WisdomPrompt, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, AraunaFirstLinkRuin_EventScript_ChooseWisdom
+	msgbox AraunaFirstLinkRuin_Text_CompassionPrompt, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, AraunaFirstLinkRuin_EventScript_ChooseCompassion
+	msgbox AraunaFirstLinkRuin_Text_ChoicePostponed, MSGBOX_DEFAULT
+	release
+	end
+
+AraunaFirstLinkRuin_EventScript_ChooseCourage::
+	setvar VAR_ARAUNA_BOND_CHOICE, 1
+	addvar VAR_ARAUNA_BOND_AXES, ARAUNA_BOND_COURAGE_POINT
+	addvar VAR_ARAUNA_BOND_AXES, ARAUNA_BOND_COURAGE_POINT
+	msgbox AraunaFirstLinkRuin_Text_CourageResult, MSGBOX_DEFAULT
+	goto AraunaFirstLinkRuin_EventScript_CompleteRescue
+
+AraunaFirstLinkRuin_EventScript_ChooseWisdom::
+	setvar VAR_ARAUNA_BOND_CHOICE, 2
+	addvar VAR_ARAUNA_BOND_AXES, ARAUNA_BOND_WISDOM_POINT
+	addvar VAR_ARAUNA_BOND_AXES, ARAUNA_BOND_WISDOM_POINT
+	msgbox AraunaFirstLinkRuin_Text_WisdomResult, MSGBOX_DEFAULT
+	goto AraunaFirstLinkRuin_EventScript_CompleteRescue
+
+AraunaFirstLinkRuin_EventScript_ChooseCompassion::
+	setvar VAR_ARAUNA_BOND_CHOICE, 3
+	addvar VAR_ARAUNA_BOND_AXES, ARAUNA_BOND_COMPASSION_POINT
+	addvar VAR_ARAUNA_BOND_AXES, ARAUNA_BOND_COMPASSION_POINT
+	msgbox AraunaFirstLinkRuin_Text_CompassionResult, MSGBOX_DEFAULT
+
+AraunaFirstLinkRuin_EventScript_CompleteRescue::
+	setflag FLAG_ARAUNA_FIRST_LINK_RESCUE_COMPLETE
+	removeobject LOCALID_ARAUNA_FIRST_LINK_AFFECTED_MON
+	setvar VAR_ARAUNA_STORY_STAGE, 6
+	msgbox AraunaFirstLinkRuin_Text_PassageStabilized, MSGBOX_DEFAULT
+	release
+	end
+
+AraunaFirstLinkRuin_EventScript_ChamberGate::
+	goto_if_ge VAR_ARAUNA_STORY_STAGE, 6, AraunaFirstLinkRuin_EventScript_WarpToChamber
+	lockall
+	msgbox AraunaFirstLinkRuin_Text_ChamberBlocked, MSGBOX_DEFAULT
+	applymovement LOCALID_PLAYER, AraunaFirstLinkRuin_Movement_StepBackFromChamber
+	waitmovement 0
+	releaseall
+	end
+
+AraunaFirstLinkRuin_EventScript_WarpToChamber::
+	warp MAP_ARAUNA_FIRST_LINK_CHAMBER, 255, 10, 18
+	waitstate
+	end
+
+AraunaFirstLinkRuin_Movement_StepBackFromChamber:
+	walk_down
+	step_end

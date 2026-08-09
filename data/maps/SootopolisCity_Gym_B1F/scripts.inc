@@ -53,18 +53,22 @@ SootopolisCity_Gym_B1F_EventScript_Daphne::
 
 SootopolisCity_Gym_B1F_Text_AndreaIntro:
 	.string "I'll show you the sublime techniques\n"
-	.string "I learned from our LEADER JUAN!$"
+	.string "I learned from our LEADER SEVERINO!$"
 
 SootopolisCity_Gym_B1F_Text_AndreaDefeat:
-	.string "Please forgive me, JUAN…$"
+	.string "Please forgive me, SEVERINO…$"
 
 SootopolisCity_Gym_B1F_Text_AndreaPostBattle:
-	.string "Watch what happens if you crack all\n"
-	.string "the floor tiles.$"
+	.string "Forty families dug that\n"
+	.string "cistern by hand.\p"
+	.string "The plaque names the company\n"
+	.string "that delivered the cement.\p"
+	.string "Same water. Same stone.\p"
+	.string "Only the names went missing.$"
 
 SootopolisCity_Gym_B1F_Text_CrissyIntro:
 	.string "You came all the way here, but you won't\n"
-	.string "get to see JUAN.\p"
+	.string "get to see SEVERINO.\p"
 	.string "Not if you lose to me, you won't!$"
 
 SootopolisCity_Gym_B1F_Text_CrissyDefeat:
@@ -72,11 +76,18 @@ SootopolisCity_Gym_B1F_Text_CrissyDefeat:
 	.string "I was fooled by your cute looks!$"
 
 SootopolisCity_Gym_B1F_Text_CrissyPostBattle:
-	.string "You might be good enough to avoid\n"
-	.string "being wiped out in one hit by JUAN.$"
+	.string "The last Teller before\n"
+	.string "SEVERINO died without one.\p"
+	.string "No successor. No apprentice.\p"
+	.string "People assumed the title would\n"
+	.string "pass down a family like a\l"
+	.string "house or a debt.\p"
+	.string "It doesn't. It has to be\n"
+	.string "chosen, and it has to be\l"
+	.string "accepted.$"
 
 SootopolisCity_Gym_B1F_Text_DaphneIntro:
-	.string "The sight of JUAN conducting\n"
+	.string "The sight of SEVERINO conducting\n"
 	.string "a battle…\p"
 	.string "The very beauty of it compelled me to\n"
 	.string "become a TRAINER.$"
@@ -86,10 +97,14 @@ SootopolisCity_Gym_B1F_Text_DaphneDefeat:
 	.string "I could muster…$"
 
 SootopolisCity_Gym_B1F_Text_DaphnePostBattle:
-	.string "The grace you bring to battle is\n"
-	.string "fabulous.\p"
-	.string "Oh… I'm so fortunate to have found\n"
-	.string "POKéMON.$"
+	.string "Try telling a long story near\n"
+	.string "one of their towers.\p"
+	.string "You won't forget it.\p"
+	.string "You'll just stop halfway and\n"
+	.string "think: why am I bothering?\p"
+	.string "That's the whole machine.\n"
+	.string "It doesn't erase. It makes\l"
+	.string "you not want to finish.$"
 
 SootopolisCity_Gym_B1F_Text_ConnieIntro:
 	.string "I should teach you how harsh battles\n"
@@ -101,12 +116,12 @@ SootopolisCity_Gym_B1F_Text_ConnieDefeat:
 
 SootopolisCity_Gym_B1F_Text_ConniePostBattle:
 	.string "I'll tell you something good.\p"
-	.string "If you want to reach JUAN, you\n"
+	.string "If you want to reach SEVERINO, you\n"
 	.string "need to walk on each floor tile once.$"
 
 SootopolisCity_Gym_B1F_Text_BridgetIntro:
 	.string "The POKéMON GYM of the highest level\n"
-	.string "in the HOENN region…\p"
+	.string "in the ARAUNA region…\p"
 	.string "That's the SOOTOPOLIS GYM.$"
 
 SootopolisCity_Gym_B1F_Text_BridgetDefeat:
@@ -120,7 +135,7 @@ SootopolisCity_Gym_B1F_Text_BridgetPostBattle:
 
 SootopolisCity_Gym_B1F_Text_OliviaIntro:
 	.string "I train my POKéMON together with\n"
-	.string "JUAN.\p"
+	.string "SEVERINO.\p"
 	.string "Don't think I'm a pushover.$"
 
 SootopolisCity_Gym_B1F_Text_OliviaDefeat:
@@ -164,9 +179,9 @@ SootopolisCity_Gym_B1F_Text_AnnikaDefeat:
 	.string "at my POKéMON?$"
 
 SootopolisCity_Gym_B1F_Text_AnnikaPostBattle:
-	.string "I came to this GYM because JUAN\n"
+	.string "I came to this GYM because SEVERINO\n"
 	.string "praised me for my darling POKéMON.\p"
-	.string "Oh, if only I'd met JUAN years ago\n"
+	.string "Oh, if only I'd met SEVERINO years ago\n"
 	.string "when I was younger…$"
 
 SootopolisCity_Gym_B1F_Text_BriannaIntro:
@@ -178,6 +193,6 @@ SootopolisCity_Gym_B1F_Text_BriannaDefeat:
 	.string "I went much too easy on you.$"
 
 SootopolisCity_Gym_B1F_Text_BriannaPostBattle:
-	.string "You couldn't lay a finger on JUAN,\n"
+	.string "You couldn't lay a finger on SEVERINO,\n"
 	.string "I'm sure. Giggle…$"
 

@@ -1,2 +1,232 @@
 AraunaPlayerHouse_MapScripts::
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, AraunaPlayerHouse_OnFrame
 	.byte 0
+
+AraunaPlayerHouse_OnFrame:
+	map_script_2 VAR_ARAUNA_STORY_STAGE, 0, AraunaPlayerHouse_EventScript_Opening
+	.2byte 0
+
+AraunaPlayerHouse_EventScript_Opening::
+	lockall
+	msgbox AraunaPlayerHouse_Text_NightArrival, MSGBOX_DEFAULT
+	setvar VAR_ARAUNA_STORY_STAGE, 1
+	releaseall
+	end
+
+AraunaPlayerHouse_EventScript_DonaZila::
+	lock
+	faceplayer
+	goto_if_ne VAR_ARAUNA_STARTER_CHOICE, 0, AraunaPlayerHouse_EventScript_ZilaAfterChoice
+	goto_if_unset FLAG_ARAUNA_PROLOGUE_NIGHT_COMPLETE, AraunaPlayerHouse_EventScript_NightZila
+	msgbox AraunaPlayerHouse_Text_ZilaCareReminder, MSGBOX_DEFAULT
+	release
+	end
+
+AraunaPlayerHouse_EventScript_NightZila::
+	msgbox AraunaPlayerHouse_Text_NightZila, MSGBOX_DEFAULT
+	setflag FLAG_ARAUNA_PROLOGUE_TALKED_ZILA_AT_NIGHT
+	call AraunaPlayerHouse_EventScript_CheckNightReady
+	goto_if_eq VAR_RESULT, TRUE, AraunaPlayerHouse_EventScript_BeginDawn
+	release
+	end
+
+AraunaPlayerHouse_EventScript_ZilaAfterChoice::
+	goto_if_set FLAG_ARAUNA_STARTER_STORY_HEARD, AraunaPlayerHouse_EventScript_ZilaNotebookStep
+	call AraunaPlayerHouse_EventScript_ZilaFoundingStory
+AraunaPlayerHouse_EventScript_ZilaNotebookStep::
+	checkitem ITEM_FAME_CHECKER, 1
+	goto_if_eq VAR_RESULT, TRUE, AraunaPlayerHouse_EventScript_ZilaBlessingOnly
+	giveitem ITEM_FAME_CHECKER
+	goto_if_eq VAR_RESULT, FALSE, AraunaPlayerHouse_EventScript_ZilaNotebookBagFull
+	msgbox AraunaPlayerHouse_Text_NotebookReceived, MSGBOX_DEFAULT
+	call AraunaPlayerHouse_EventScript_DeparturePromise
+	release
+	end
+
+AraunaPlayerHouse_EventScript_ZilaNotebookBagFull::
+	msgbox AraunaPlayerHouse_Text_NotebookBagFull, MSGBOX_DEFAULT
+	release
+	end
+
+AraunaPlayerHouse_EventScript_ZilaBlessingOnly::
+	call AraunaPlayerHouse_EventScript_DeparturePromise
+	msgbox AraunaPlayerHouse_Text_ZilaBlessing, MSGBOX_DEFAULT
+	release
+	end
+
+@ P13 — the departure blessing. Dona Zila asks for a promise, not a mission.
+@ Declining leaves every flag clear, so she asks again on the next visit.
+AraunaPlayerHouse_EventScript_DeparturePromise::
+	goto_if_set FLAG_ARAUNA_PROMISE_RETURN, AraunaPlayerHouse_EventScript_PromiseAlreadyMade
+	goto_if_set FLAG_ARAUNA_PROMISE_RECORD, AraunaPlayerHouse_EventScript_PromiseAlreadyMade
+	goto_if_set FLAG_ARAUNA_PROMISE_LISTEN, AraunaPlayerHouse_EventScript_PromiseAlreadyMade
+	msgbox AraunaPlayerHouse_Text_ZilaDepartureBlessing, MSGBOX_DEFAULT
+	msgbox AraunaPlayerHouse_Text_PromiseReturn, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, AraunaPlayerHouse_EventScript_PromiseReturn
+	msgbox AraunaPlayerHouse_Text_PromiseRecord, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, AraunaPlayerHouse_EventScript_PromiseRecord
+	msgbox AraunaPlayerHouse_Text_PromiseListen, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, AraunaPlayerHouse_EventScript_PromiseListen
+	msgbox AraunaPlayerHouse_Text_PromiseSilent, MSGBOX_DEFAULT
+	return
+
+AraunaPlayerHouse_EventScript_PromiseAlreadyMade::
+	return
+
+AraunaPlayerHouse_EventScript_PromiseReturn::
+	setflag FLAG_ARAUNA_PROMISE_RETURN
+	addvar VAR_ARAUNA_BOND_AXES, ARAUNA_BOND_COURAGE_POINT
+	msgbox AraunaPlayerHouse_Text_PromiseReturnReply, MSGBOX_DEFAULT
+	return
+
+AraunaPlayerHouse_EventScript_PromiseRecord::
+	setflag FLAG_ARAUNA_PROMISE_RECORD
+	addvar VAR_ARAUNA_BOND_AXES, ARAUNA_BOND_WISDOM_POINT
+	msgbox AraunaPlayerHouse_Text_PromiseRecordReply, MSGBOX_DEFAULT
+	return
+
+AraunaPlayerHouse_EventScript_PromiseListen::
+	setflag FLAG_ARAUNA_PROMISE_LISTEN
+	addvar VAR_ARAUNA_BOND_AXES, ARAUNA_BOND_COMPASSION_POINT
+	msgbox AraunaPlayerHouse_Text_PromiseListenReply, MSGBOX_DEFAULT
+	return
+
+AraunaPlayerHouse_EventScript_Anahi::
+	lock
+	faceplayer
+	goto_if_ne VAR_ARAUNA_STARTER_CHOICE, 0, AraunaPlayerHouse_EventScript_AnahiAfterChoice
+	goto_if_unset FLAG_ARAUNA_PROLOGUE_NIGHT_COMPLETE, AraunaPlayerHouse_EventScript_NightAnahi
+	msgbox AraunaPlayerHouse_Text_AnahiBeforeChoice, MSGBOX_DEFAULT
+	release
+	end
+
+AraunaPlayerHouse_EventScript_NightAnahi::
+	msgbox AraunaPlayerHouse_Text_NightAnahi, MSGBOX_DEFAULT
+	setflag FLAG_ARAUNA_PROLOGUE_TALKED_ANAHI_AT_NIGHT
+	call AraunaPlayerHouse_EventScript_CheckNightReady
+	goto_if_eq VAR_RESULT, TRUE, AraunaPlayerHouse_EventScript_BeginDawn
+	release
+	end
+
+AraunaPlayerHouse_EventScript_AnahiAfterChoice::
+	msgbox AraunaPlayerHouse_Text_AnahiAfterChoice, MSGBOX_DEFAULT
+	release
+	end
+
+AraunaPlayerHouse_EventScript_CheckNightReady::
+	setvar VAR_RESULT, FALSE
+	goto_if_unset FLAG_ARAUNA_PROLOGUE_TALKED_ZILA_AT_NIGHT, AraunaPlayerHouse_EventScript_NightCheckReturn
+	goto_if_unset FLAG_ARAUNA_PROLOGUE_TALKED_ANAHI_AT_NIGHT, AraunaPlayerHouse_EventScript_NightCheckReturn
+	setvar VAR_RESULT, TRUE
+AraunaPlayerHouse_EventScript_NightCheckReturn::
+	return
+
+AraunaPlayerHouse_EventScript_BeginDawn::
+	msgbox AraunaPlayerHouse_Text_NightReady, MSGBOX_DEFAULT
+	msgbox AraunaPlayerHouse_Text_NightWatch, MSGBOX_DEFAULT
+	fadescreen FADE_TO_BLACK
+	delay 30
+	setflag FLAG_ARAUNA_PROLOGUE_NIGHT_COMPLETE
+	fadescreen FADE_FROM_BLACK
+	msgbox AraunaPlayerHouse_Text_Dawn, MSGBOX_DEFAULT
+	release
+	end
+
+AraunaPlayerHouse_EventScript_CompleteChoice::
+	setflag FLAG_SYS_POKEMON_GET
+	setflag FLAG_SYS_POKEDEX_GET
+	setflag FLAG_SYS_B_DASH
+	setflag FLAG_RECEIVED_RUNNING_SHOES
+	setflag FLAG_ADVENTURE_STARTED
+	special SetUnlockedPokedexFlags
+	special EnableNationalPokedex
+	setrespawn HEAL_LOCATION_ARAUNA_RESEARCH_CENTER
+	call AraunaPlayerHouse_EventScript_AssignRemainingStarters
+	setvar VAR_ARAUNA_STORY_STAGE, 2
+	special HealPlayerParty
+	msgbox AraunaResearchCenter_Text_AfterChoice, MSGBOX_DEFAULT
+	giveitem ITEM_FAME_CHECKER
+	goto_if_eq VAR_RESULT, FALSE, AraunaPlayerHouse_EventScript_NotebookBagFull
+	msgbox AraunaPlayerHouse_Text_NotebookReceived, MSGBOX_DEFAULT
+	msgbox AraunaPlayerHouse_Text_CensusInvitation, MSGBOX_DEFAULT
+	msgbox AraunaResearchCenter_Text_DexActivated, MSGBOX_DEFAULT
+	release
+	end
+
+AraunaPlayerHouse_EventScript_NotebookBagFull::
+	msgbox AraunaPlayerHouse_Text_NotebookBagFull, MSGBOX_DEFAULT
+	msgbox AraunaPlayerHouse_Text_CensusInvitation, MSGBOX_DEFAULT
+	msgbox AraunaResearchCenter_Text_DexActivated, MSGBOX_DEFAULT
+	release
+	end
+
+@ P08 — Dona Zila tells the founding story tied to the chosen partner.
+@ The three blocks carry equal weight; the text is canonical and must not be paraphrased.
+AraunaPlayerHouse_EventScript_ZilaFoundingStory::
+	call_if_eq VAR_ARAUNA_STARTER_CHOICE, 1, AraunaPlayerHouse_EventScript_ZilaStoryPimpau
+	call_if_eq VAR_ARAUNA_STARTER_CHOICE, 2, AraunaPlayerHouse_EventScript_ZilaStoryCaramelo
+	call_if_eq VAR_ARAUNA_STARTER_CHOICE, 3, AraunaPlayerHouse_EventScript_ZilaStoryQuero
+	setflag FLAG_ARAUNA_STARTER_STORY_HEARD
+	return
+
+AraunaPlayerHouse_EventScript_ZilaStoryPimpau::
+	msgbox AraunaZilaStory_Text_Pimpau, MSGBOX_DEFAULT
+	return
+
+AraunaPlayerHouse_EventScript_ZilaStoryCaramelo::
+	msgbox AraunaZilaStory_Text_Caramelo, MSGBOX_DEFAULT
+	return
+
+AraunaPlayerHouse_EventScript_ZilaStoryQuero::
+	msgbox AraunaZilaStory_Text_Quero, MSGBOX_DEFAULT
+	return
+
+AraunaPlayerHouse_EventScript_AssignRemainingStarters::
+	goto_if_eq VAR_ARAUNA_STARTER_CHOICE, 1, AraunaPlayerHouse_EventScript_AssignAfterPimpau
+	goto_if_eq VAR_ARAUNA_STARTER_CHOICE, 2, AraunaPlayerHouse_EventScript_AssignAfterCaramelo
+	setflag FLAG_ARAUNA_CIRO_STARTER_PIMPAU
+	setflag FLAG_ARAUNA_ANAHI_STARTER_CARAMELO
+	return
+
+AraunaPlayerHouse_EventScript_AssignAfterPimpau::
+	setflag FLAG_ARAUNA_CIRO_STARTER_CARAMELO
+	setflag FLAG_ARAUNA_ANAHI_STARTER_QUERO
+	return
+
+AraunaPlayerHouse_EventScript_AssignAfterCaramelo::
+	setflag FLAG_ARAUNA_CIRO_STARTER_QUERO
+	setflag FLAG_ARAUNA_ANAHI_STARTER_PIMPAU
+	return
+
+@ The door opens at dawn. It is gated on the night flag rather than on
+@ VAR_ARAUNA_STORY_STAGE, because the opening scene already moves that var to 1
+@ on the first step into the house -- gating on it let the player walk straight
+@ out before the night and collect a partner with the prologue unplayed.
+AraunaPlayerHouse_EventScript_BlockExit::
+	goto_if_set FLAG_ARAUNA_PROLOGUE_NIGHT_COMPLETE, AraunaPlayerHouse_EventScript_ExitAllowed
+	lockall
+	msgbox AraunaPlayerHouse_Text_BlockExitNight, MSGBOX_DEFAULT
+	goto AraunaPlayerHouse_EventScript_BlockExitStepBack
+
+AraunaPlayerHouse_EventScript_ExitAllowed::
+	end
+
+AraunaPlayerHouse_EventScript_BlockExitStepBack::
+	applymovement LOCALID_PLAYER, AraunaPlayerHouse_Movement_StepBack
+	waitmovement 0
+	releaseall
+	end
+
+AraunaPlayerHouse_Movement_StepBack:
+	walk_up
+	step_end
+
+AraunaPlayerHouse_EventScript_AlreadyChosen::
+	msgbox AraunaPlayerHouse_Text_AlreadyChosen, MSGBOX_DEFAULT
+	release
+	end
+
+AraunaPlayerHouse_EventScript_ChoiceCancelled::
+	msgbox AraunaPlayerHouse_Text_ChoiceCancelled, MSGBOX_DEFAULT
+	release
+	end

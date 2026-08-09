@@ -562,3 +562,77 @@ Route109_Text_TrainerTipsSign:
 	.string "always have identical stats.\p"
 	.string "POKéMON raised by TRAINERS are said\n"
 	.string "to grow stronger than wild POKéMON.$"
+
+@ Arauna reuses Route 109 as the Porto das Redes landing and evidence route.
+AraunaPorto_EventScript_FisherWitness::
+	lock
+	faceplayer
+	goto_if_lt VAR_ARAUNA_ARC_STAGE, 10, AraunaPorto_EventScript_FisherVanilla
+	goto_if_set FLAG_ARAUNA_TESTIMONY_IARA_MAE, AraunaPorto_EventScript_FisherAfterTestimony
+	goto_if_set FLAG_ARAUNA_PORTO_MEMORIAL_HEARD, AraunaPorto_EventScript_FisherRiverWarning
+	msgbox AraunaPorto_Text_FisherArrival, MSGBOX_DEFAULT
+	msgbox AraunaPorto_Text_FisherMemorial, MSGBOX_DEFAULT
+	setflag FLAG_ARAUNA_PORTO_MEMORIAL_HEARD
+	release
+	end
+
+AraunaPorto_EventScript_FisherVanilla::
+	msgbox Route109_Text_ZigzagoonPicksUpLitter, MSGBOX_DEFAULT
+	release
+	end
+
+AraunaPorto_EventScript_FisherRiverWarning::
+	msgbox AraunaPorto_Text_FisherRiverWarning, MSGBOX_DEFAULT
+	release
+	end
+
+AraunaPorto_EventScript_FisherAfterTestimony::
+	msgbox AraunaPorto_Text_FisherAfterTestimony, MSGBOX_DEFAULT
+	release
+	end
+
+AraunaPorto_EventScript_DischargePermit::
+	goto_if_lt VAR_ARAUNA_ARC_STAGE, 10, Route109_EventScript_TrainerTipsSign
+	lockall
+	goto_if_set FLAG_ARAUNA_PORTO_PERMIT_FOUND, AraunaPorto_EventScript_DischargePermitRead
+	msgbox AraunaPorto_Text_DischargePermit, MSGBOX_DEFAULT
+	setflag FLAG_ARAUNA_PORTO_PERMIT_FOUND
+	releaseall
+	end
+
+AraunaPorto_EventScript_DischargePermitRead::
+	msgbox AraunaPorto_Text_DischargePermitRead, MSGBOX_DEFAULT
+	releaseall
+	end
+
+AraunaPorto_EventScript_IaracoTrace::
+	goto_if_lt VAR_ARAUNA_ARC_STAGE, 11, AraunaPorto_EventScript_IaracoTraceEnd
+	goto_if_ge VAR_ARAUNA_ARC_STAGE, 14, AraunaPorto_EventScript_IaracoTraceEnd
+	goto_if_eq VAR_ARAUNA_ARC_STAGE, 13, AraunaPorto_EventScript_IaracoRestored
+	goto_if_eq VAR_ARAUNA_ARC_STAGE, 12, AraunaPorto_EventScript_IaracoNeedsStory
+	goto_if_set FLAG_ARAUNA_PORTO_IARACO_SEEN, AraunaPorto_EventScript_IaracoTraceEnd
+	lockall
+	msgbox AraunaPorto_Text_IaracoFirstMeeting, MSGBOX_DEFAULT
+	setflag FLAG_ARAUNA_PORTO_IARACO_SEEN
+	releaseall
+	end
+
+AraunaPorto_EventScript_IaracoNeedsStory::
+	lockall
+	msgbox AraunaPorto_Text_IaracoNeedsStory, MSGBOX_DEFAULT
+	releaseall
+	end
+
+AraunaPorto_EventScript_IaracoRestored::
+	lockall
+	msgbox AraunaPorto_Text_IaracoRestored, MSGBOX_DEFAULT
+	msgbox AraunaPorto_Text_IaraMaeTestimony, MSGBOX_DEFAULT
+	setflag FLAG_ARAUNA_PORTO_IARACO_RESTORED
+	setflag FLAG_ARAUNA_TESTIMONY_IARA_MAE
+	setvar VAR_ARAUNA_TESTIMONY_COUNT, 1
+	setvar VAR_ARAUNA_ARC_STAGE, 14
+	releaseall
+	end
+
+AraunaPorto_EventScript_IaracoTraceEnd::
+	end

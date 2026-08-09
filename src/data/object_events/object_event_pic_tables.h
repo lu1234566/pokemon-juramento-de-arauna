@@ -3027,3 +3027,50 @@ static const struct SpriteFrameImage sPicTable_MomFrlg[] = {
 };
 
 #endif // IS_FRLG
+
+// Arauna priority-10 NPC pack v3.
+static const struct SpriteFrameImage sPicTable_AraunaDonaZila[] =
+{
+    overworld_ascending_frames(gObjectEventPic_AraunaDonaZila, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_AraunaProfessoraAnahi[] =
+{
+    overworld_ascending_frames(gObjectEventPic_AraunaProfessoraAnahi, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_AraunaCiroPrologue[] =
+{
+    overworld_ascending_frames(gObjectEventPic_AraunaCiroPrologue, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_AraunaCiroConsorcio[] =
+{
+    overworld_ascending_frames(gObjectEventPic_AraunaCiroConsorcio, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_AraunaDonaCelina[] =
+{
+    overworld_ascending_frames(gObjectEventPic_AraunaDonaCelina, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_AraunaComplianceAgent[] =
+{
+    overworld_ascending_frames(gObjectEventPic_AraunaComplianceAgent, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_AraunaDockworker[] =
+{
+    overworld_ascending_frames(gObjectEventPic_AraunaDockworker, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_AraunaMemorialFisher[] =
+{
+    overworld_ascending_frames(gObjectEventPic_AraunaMemorialFisher, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_AraunaSerraChild[] =
+{
+    overworld_ascending_frames(gObjectEventPic_AraunaSerraChild, 2, 4),
+};
+

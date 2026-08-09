@@ -2,11 +2,11 @@
   "id": "MAP_ROUTE114",
   "name": "Route114",
   "layout": "LAYOUT_ROUTE114",
-  "music": "MUS_ROUTE110",
+  "music": "MUS_MT_PYRE_EXTERIOR",
   "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_ROUTE_114",
   "requires_flash": false,
-  "weather": "WEATHER_SUNNY",
+  "weather": "WEATHER_FOG_DIAGONAL",
   "map_type": "MAP_TYPE_ROUTE",
   "allow_cycling": true,
   "allow_escaping": false,
@@ -179,7 +179,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route114_EventScript_RoarGentleman",
+      "script": "AraunaSerra_EventScript_DeafHermit",
       "flag": "0"
     },
     {
@@ -192,7 +192,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route114_EventScript_Poochyena",
+      "script": "AraunaSerra_EventScript_HermitCompanion",
       "flag": "0"
     },
     {

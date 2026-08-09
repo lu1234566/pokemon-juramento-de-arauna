@@ -7,7 +7,6 @@ import sys
 from collections import Counter
 from pathlib import Path
 
-
 ROOT = Path(__file__).resolve().parents[1]
 CHARMAP = ROOT / "charmap.txt"
 SOURCE_DIRECTORIES = {
@@ -21,6 +20,11 @@ REQUIRED_RUNTIME_LABELS = {
     "gText_Boy",
     "gText_Girl",
 }
+
+# The first playable release is intentionally English-only. Portuguese source
+# files remain valuable translation work, but new English runtime labels do not
+# have to be mirrored until the Portuguese build is re-enabled.
+REQUIRE_FULL_LABEL_PARITY = False
 
 LABEL_RE = re.compile(r"^([A-Za-z_][A-Za-z0-9_]*)::$")
 STRING_RE = re.compile(r'^\s*\.string\s+"(.*)"\s*$')
@@ -65,8 +69,7 @@ def expanded_length(line: str) -> int:
         token = match.group(1)
         if " " in token:
             return ""
-        name = token
-        return "X" * PLACEHOLDER_WIDTHS.get(name, len(name) + 2)
+        return "X" * PLACEHOLDER_WIDTHS.get(token, len(token) + 2)
 
     return len(TOKEN_RE.sub(replace_token, line))
 
@@ -128,13 +131,15 @@ def main() -> int:
         )
 
     for language, (labels, texts) in parsed.items():
-        if labels != reference_labels:
+        if REQUIRE_FULL_LABEL_PARITY and labels != reference_labels:
             errors.append(f"{language}: label order differs from {reference_language}")
 
         for label, text in texts.items():
             if not text.endswith("$"):
                 errors.append(f"{language}:{label}: localized string is not terminated with $")
 
+        # Shared labels must keep the same runtime placeholder contract even
+        # while one language contains more labels than the other.
         for label in set(reference_texts) & set(texts):
             expected = Counter(TOKEN_RE.findall(reference_texts[label]))
             actual = Counter(TOKEN_RE.findall(texts[label]))
@@ -153,9 +158,10 @@ def main() -> int:
             print(f"- {error}", file=sys.stderr)
         return 1
 
+    parity_note = "full parity" if REQUIRE_FULL_LABEL_PARITY else "shared-label placeholder parity"
     print(
-        f"Localization check passed for {len(parsed)} languages and "
-        f"{len(reference_labels)} labels."
+        f"Localization check passed for {len(parsed)} languages, "
+        f"{len(reference_labels)} English labels, and {parity_note}."
     )
     return 0
 

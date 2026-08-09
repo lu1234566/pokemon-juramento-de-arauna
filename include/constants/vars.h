@@ -266,15 +266,26 @@
 #define VAR_ROXANNE_CALL_STEP_COUNTER                    0x40F4
 #define VAR_SCOTT_BF_CALL_STEP_COUNTER                   0x40F5
 #define VAR_RIVAL_RAYQUAZA_CALL_STEP_COUNTER             0x40F6
-#define VAR_UNUSED_0x40F7                                0x40F7 // Unused Var
-#define VAR_UNUSED_0x40F8                                0x40F8 // Unused Var
-#define VAR_UNUSED_0x40F9                                0x40F9 // Unused Var
-#define VAR_UNUSED_0x40FA                                0x40FA // Unused Var
-#define VAR_UNUSED_0x40FB                                0x40FB // Unused Var
-#define VAR_UNUSED_0x40FC                                0x40FC // Unused Var
-#define VAR_UNUSED_0x40FD                                0x40FD // Unused Var
-#define VAR_UNUSED_0x40FE                                0x40FE // Unused Var
-#define VAR_UNUSED_0x40FF                                0x40FF // Unused Var
+#define VAR_ARAUNA_STORY_STAGE                          0x40F7 // 0–8: Prologue through Porto handoff
+#define VAR_ARAUNA_STARTER_CHOICE                        0x40F8 // 0=None, 1=Grass, 2=Fire, 3=Water
+#define VAR_ARAUNA_BOND_CHOICE                           0x40F9 // 0=None, 1=Courage, 2=Wisdom, 3=Compassion
+#define VAR_ARAUNA_OPTIONAL_MISSION                      0x40FA // 0–3: field-notebook side mission
+#define VAR_ARAUNA_ARC_STAGE                            0x40FB // 10=arrival, 11=evidence, 12=agent, 13=song, 14=vigil, 15=complete
+#define VAR_ARAUNA_BADGE_COUNT                          0x40FC // Canonical Houses of Story badges
+#define VAR_ARAUNA_TESTIMONY_COUNT                      0x40FD // Recorded story Testimonies
+#define VAR_ARAUNA_RIVAL_STAGE                          0x40FE // Ciro/Anahi campaign state
+#define VAR_ARAUNA_BOND_AXES                            0x40FF // Packed Bond axes: bits 0-4 Courage, 5-9 Wisdom, 10-14 Compassion (0-31 each)
+
+// Bond axis indices, used by the C accessors.
+#define ARAUNA_BOND_AXIS_COURAGE                        0
+#define ARAUNA_BOND_AXIS_WISDOM                         1
+#define ARAUNA_BOND_AXIS_COMPASSION                     2
+
+// Per-axis increments for scripts: addvar VAR_ARAUNA_BOND_AXES, ARAUNA_BOND_<axis>_POINT
+// Key choices award one or two points; minor choices only change local dialogue.
+#define ARAUNA_BOND_COURAGE_POINT                       1
+#define ARAUNA_BOND_WISDOM_POINT                        32
+#define ARAUNA_BOND_COMPASSION_POINT                    1024
 
 #define VARS_END                                         0x40FF
 #define VARS_COUNT                                       (VARS_END - VARS_START + 1)

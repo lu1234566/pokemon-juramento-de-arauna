@@ -1,2 +1,81 @@
 AraunaFirstLinkChamber_MapScripts::
 	.byte 0
+
+AraunaFirstLinkChamber_EventScript_TechAgent::
+	lock
+	faceplayer
+	goto_if_ge VAR_ARAUNA_STORY_STAGE, 7, AraunaFirstLinkChamber_EventScript_AfterSlice
+	goto_if_defeated TRAINER_ARAUNA_TECH_AGENT, AraunaFirstLinkChamber_EventScript_AfterBattle
+	msgbox AraunaFirstLinkChamber_Text_AgentIntro, MSGBOX_DEFAULT
+	special HealPlayerParty
+	msgbox AraunaFirstLinkChamber_Text_SigilHealsParty, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_ARAUNA_TECH_AGENT, AraunaFirstLinkChamber_Text_AgentDefeat
+
+AraunaFirstLinkChamber_EventScript_AfterBattle::
+	goto_if_set FLAG_ARAUNA_FIRST_LINK_MEMORY_SEEN, AraunaFirstLinkChamber_EventScript_GiveBondReward
+	msgbox AraunaFirstLinkChamber_Text_AgentAfterBattle, MSGBOX_DEFAULT
+	closemessage
+	playse SE_M_EARTHQUAKE
+	waitse
+	fadescreen FADE_TO_WHITE
+	delay 30
+	fadescreen FADE_FROM_WHITE
+	msgbox AraunaFirstLinkChamber_Text_GuardianPresence, MSGBOX_DEFAULT
+	msgbox AraunaFirstLinkChamber_Text_ChampionMemory, MSGBOX_DEFAULT
+	goto_if_eq VAR_ARAUNA_BOND_CHOICE, 1, AraunaFirstLinkChamber_EventScript_CourageMemory
+	goto_if_eq VAR_ARAUNA_BOND_CHOICE, 2, AraunaFirstLinkChamber_EventScript_WisdomMemory
+	goto AraunaFirstLinkChamber_EventScript_CompassionMemory
+
+AraunaFirstLinkChamber_EventScript_CourageMemory::
+	msgbox AraunaFirstLinkChamber_Text_CourageMemory, MSGBOX_DEFAULT
+	goto AraunaFirstLinkChamber_EventScript_MemoryComplete
+
+AraunaFirstLinkChamber_EventScript_WisdomMemory::
+	msgbox AraunaFirstLinkChamber_Text_WisdomMemory, MSGBOX_DEFAULT
+	goto AraunaFirstLinkChamber_EventScript_MemoryComplete
+
+AraunaFirstLinkChamber_EventScript_CompassionMemory::
+	msgbox AraunaFirstLinkChamber_Text_CompassionMemory, MSGBOX_DEFAULT
+
+AraunaFirstLinkChamber_EventScript_MemoryComplete::
+	setflag FLAG_ARAUNA_FIRST_LINK_MEMORY_SEEN
+
+AraunaFirstLinkChamber_EventScript_GiveBondReward::
+	goto_if_eq VAR_ARAUNA_BOND_CHOICE, 1, AraunaFirstLinkChamber_EventScript_CourageReward
+	goto_if_eq VAR_ARAUNA_BOND_CHOICE, 2, AraunaFirstLinkChamber_EventScript_WisdomReward
+	goto AraunaFirstLinkChamber_EventScript_CompassionReward
+
+AraunaFirstLinkChamber_EventScript_CourageReward::
+	giveitem ITEM_X_ATTACK
+	goto_if_eq VAR_RESULT, FALSE, AraunaFirstLinkChamber_EventScript_RewardBagFull
+	msgbox AraunaFirstLinkChamber_Text_CourageReward, MSGBOX_DEFAULT
+	goto AraunaFirstLinkChamber_EventScript_CompleteSlice
+
+AraunaFirstLinkChamber_EventScript_WisdomReward::
+	giveitem ITEM_X_SP_ATK
+	goto_if_eq VAR_RESULT, FALSE, AraunaFirstLinkChamber_EventScript_RewardBagFull
+	msgbox AraunaFirstLinkChamber_Text_WisdomReward, MSGBOX_DEFAULT
+	goto AraunaFirstLinkChamber_EventScript_CompleteSlice
+
+AraunaFirstLinkChamber_EventScript_CompassionReward::
+	giveitem ITEM_GUARD_SPEC
+	goto_if_eq VAR_RESULT, FALSE, AraunaFirstLinkChamber_EventScript_RewardBagFull
+	msgbox AraunaFirstLinkChamber_Text_CompassionReward, MSGBOX_DEFAULT
+
+AraunaFirstLinkChamber_EventScript_CompleteSlice::
+	setflag FLAG_ARAUNA_FIRST_LINK_CHAMBER_COMPLETE
+	setvar VAR_ARAUNA_STORY_STAGE, 7
+	removeobject LOCALID_ARAUNA_FIRST_LINK_TECH_AGENT
+	msgbox AraunaFirstLinkChamber_Text_AgentRetreats, MSGBOX_DEFAULT
+	release
+	end
+
+AraunaFirstLinkChamber_EventScript_RewardBagFull::
+	msgbox AraunaFirstLinkChamber_Text_RewardBagFull, MSGBOX_DEFAULT
+	release
+	end
+
+AraunaFirstLinkChamber_EventScript_AfterSlice::
+	msgbox AraunaFirstLinkChamber_Text_AfterSlice, MSGBOX_DEFAULT
+	release
+	end

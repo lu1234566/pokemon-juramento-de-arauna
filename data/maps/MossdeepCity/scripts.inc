@@ -391,9 +391,9 @@ MossdeepCity_Text_ItsAWhiteRock:
 	.string "It's a white rock.$"
 
 MossdeepCity_Text_GymSign:
-	.string "MOSSDEEP CITY POKéMON GYM\n"
-	.string "LEADERS: LIZA & TATE\p"
-	.string "“The mystic combination!”$"
+	.string "CASA DO ESPELHO\n"
+	.string "KEEPERS: DINA & LINA\p"
+	.string "“Two margins, two versions.”$"
 
 MossdeepCity_Text_CitySign:
 	.string "MOSSDEEP CITY\n"

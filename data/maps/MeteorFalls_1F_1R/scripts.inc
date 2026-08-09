@@ -307,3 +307,31 @@ MeteorFalls_1F_1R_Text_WhatsTeamMagmaDoingAtMtChimney:
 	.string "PROF. COZMO: But that TEAM MAGMA…\p"
 	.string "What are they going to do with that\n"
 	.string "METEORITE at MT. CHIMNEY?$"
+
+@ Arauna reuses the former Cozmo position in Meteor Falls for Lobisomem.
+AraunaSerra_EventScript_Lobisomem::
+	lock
+	faceplayer
+	goto_if_lt VAR_ARAUNA_ARC_STAGE, 22, AraunaSerra_EventScript_LobisomemDistant
+	goto_if_eq VAR_ARAUNA_ARC_STAGE, 22, AraunaSerra_EventScript_LobisomemEncounter
+	msgbox AraunaSerra_Text_LobisomemCalm, MSGBOX_DEFAULT
+	release
+	end
+
+AraunaSerra_EventScript_LobisomemDistant::
+	msgbox AraunaSerra_Text_LobisomemDistant, MSGBOX_DEFAULT
+	release
+	end
+
+AraunaSerra_EventScript_LobisomemEncounter::
+	showmonpic SPECIES_HOUNDOUR, 10, 3
+	playmoncry SPECIES_HOUNDOUR, CRY_MODE_NORMAL
+	msgbox AraunaSerra_Text_LobisomemDesaturated, MSGBOX_DEFAULT
+	msgbox AraunaSerra_Text_PlayerSignsToLobisomem, MSGBOX_DEFAULT
+	waitmoncry
+	msgbox AraunaSerra_Text_LobisomemUnderstands, MSGBOX_DEFAULT
+	hidemonpic
+	setflag FLAG_ARAUNA_SERRA_LOBISOMEM_CALMED
+	setvar VAR_ARAUNA_ARC_STAGE, 23
+	release
+	end

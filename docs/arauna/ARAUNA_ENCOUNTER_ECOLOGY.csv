@@ -1,0 +1,387 @@
+id,name,species,types,source_region,biome,availability,tier,stage,evolution_level,bst,methods
+001,Caramelo,SPECIES_TORCHIC,fire,Periferia de Arauana,urban,starter,starter,base,0,325,land
+002,Caramelão,SPECIES_COMBUSKEN,fire,Periferia de Arauana,urban,starter,starter,middle,17,425,land
+003,Draguará,SPECIES_BLAZIKEN,fire/dragon,Serra de Arauana,highlands,starter,starter,final,36,595,land
+004,Querô,SPECIES_MUDKIP,water,Pampas de Arauana,pampas,starter,starter,base,0,340,fishing/land/water
+005,Queribela,SPECIES_MARSHTOMP,water/bug,Banhados de Arauana,wetlands,starter,starter,middle,17,434,fishing/water
+006,Terolibra,SPECIES_SWAMPERT,water/bug,Banhados de Arauana,wetlands,starter,starter,final,36,595,fishing/water
+007,Pimpau,SPECIES_TREECKO,grass,Cerrado de Arauana,cerrado,starter,starter,base,0,332,land
+008,Bicopau,SPECIES_GROVYLE,grass,Cerrado de Arauana,cerrado,starter,starter,middle,17,432,land
+009,Petropico,SPECIES_SCEPTILE,grass/rock,Chapadas de Arauana,chapadas,starter,starter,final,36,574,land/rock_smash
+010,Formilim,SPECIES_BULBASAUR,bug,Cerrado de Arauana,cerrado,wild,early,base,0,248,land
+011,Saúvarco,SPECIES_IVYSAUR,bug/ground,Cerrado de Arauana,cerrado,wild,mid,final,15,473,land/rock_smash
+012,Capivim,SPECIES_VENUSAUR,water/normal,Rios de Arauana,rivers,wild,early,standalone,0,360,fishing/land/water
+013,Tucanhão,SPECIES_CHARMANDER,flying/grass,Mata Atlântica de Arauana,atlantic_forest,wild,mid,standalone,0,437,land
+014,Sagüim,SPECIES_CHARMELEON,normal,Mata Atlântica de Arauana,atlantic_forest,wild,early,base,0,308,land
+015,Micuiras,SPECIES_CHARIZARD,normal/psychic,Mata Atlântica de Arauana,atlantic_forest,wild,mid,final,22,468,land
+016,Boitatá,SPECIES_SQUIRTLE,fire/ghost,Campos queimados de Arauana,cerrado,wild,mid,standalone,0,514,land
+017,Curupim,SPECIES_WARTORTLE,grass/fairy,Mata Atlântica de Arauana,atlantic_forest,wild,early,base,0,445,land
+018,Curupira,SPECIES_BLASTOISE,grass/fairy,Mata Atlântica de Arauana,atlantic_forest,wild,late,final,34,603,land
+019,Iaraço,SPECIES_CATERPIE,water/fairy,Rio Solimões de Arauana,amazon_rivers,story,story,standalone,0,548,fishing/land/water
+020,Sacizinho,SPECIES_METAPOD,dark/flying,Cerrado de Arauana,cerrado,wild,mid,standalone,0,461,land
+021,Cactula,SPECIES_BUTTERFREE,grass/poison,Caatinga de Arauana,caatinga,wild,early,standalone,0,382,land
+022,Muriçoco,SPECIES_WEEDLE,bug/poison,Amazônia de Arauana,amazon,wild,early,standalone,0,287,land
+023,Onçaléu,SPECIES_KAKUNA,dark,Pantanal de Arauana,pantanal,wild,late,standalone,0,524,land
+024,Tamanduá,SPECIES_BEEDRILL,ground/steel,Cerrado de Arauana,cerrado,wild,mid,standalone,0,470,land/rock_smash
+025,Botim,SPECIES_PIDGEY,water,Rio Amazonas de Arauana,amazon_rivers,wild,early,base,0,283,fishing/water
+026,Botão,SPECIES_PIDGEOTTO,water/psychic,Rio Amazonas de Arauana,amazon_rivers,wild,early,middle,22,404,fishing/water
+027,Botogaláu,SPECIES_PIDGEOT,water/psychic,Rio Amazonas de Arauana,amazon_rivers,wild,late,final,30,555,fishing/water
+028,Tatuim,SPECIES_RATTATA,ground,Caatinga de Arauana,caatinga,wild,early,base,0,283,land/rock_smash
+029,Tatubola,SPECIES_RATICATE,ground/steel,Caatinga de Arauana,caatinga,wild,early,middle,36,404,land/rock_smash
+030,Tatuçu,SPECIES_SPEAROW,ground/steel,Caatinga de Arauana,caatinga,wild,late,final,40,555,land/rock_smash
+031,Ararinha,SPECIES_FEAROW,flying,Pantanal de Arauana,pantanal,wild,early,base,0,284,land
+032,Arará,SPECIES_EKANS,flying/fire,Pantanal de Arauana,pantanal,wild,early,middle,22,405,land
+033,Araracanga,SPECIES_ARBOK,flying/fire,Pantanal de Arauana,pantanal,wild,late,final,30,550,land
+034,Jacarim,SPECIES_PIKACHU,water,Pantanal de Arauana,pantanal,wild,early,base,0,284,fishing/land/water
+035,Jacarão,SPECIES_RAICHU,water/dark,Pantanal de Arauana,pantanal,wild,early,middle,36,405,fishing/land/water
+036,Jacarodon,SPECIES_SANDSHREW,water/dragon,Pantanal de Arauana,pantanal,wild,late,final,40,551,fishing/land/water
+037,Preguicim,SPECIES_SANDSLASH,grass,Mata Atlântica de Arauana,atlantic_forest,wild,early,base,0,285,land
+038,Preguicão,SPECIES_NIDORAN_F,grass/psychic,Mata Atlântica de Arauana,atlantic_forest,wild,early,middle,22,406,land
+039,Bicho-Preguiça,SPECIES_NIDORINA,grass/psychic,Mata Atlântica de Arauana,atlantic_forest,wild,late,final,30,551,land
+040,Papaguim,SPECIES_NIDOQUEEN,flying,Mata Atlântica de Arauana,atlantic_forest,wild,early,base,0,285,land
+041,Papagaio,SPECIES_NIDORAN_M,flying/psychic,Mata Atlântica de Arauana,atlantic_forest,wild,early,middle,36,406,land
+042,Papagaião,SPECIES_NIDORINO,flying/psychic,Mata Atlântica de Arauana,atlantic_forest,wild,late,final,40,552,land
+043,Antinha,SPECIES_NIDOKING,normal,Amazônia de Arauana,amazon,wild,early,base,0,286,land
+044,Anta,SPECIES_CLEFAIRY,normal/water,Amazônia de Arauana,amazon,wild,late,final,22,550,fishing/land/water
+045,Antaraú,SPECIES_CLEFABLE,normal/water,Amazônia de Arauana,amazon,wild,mid,standalone,0,446,fishing/land/water
+046,Sucurim,SPECIES_VULPIX,water/poison,Rios de Arauana,rivers,wild,early,base,0,286,fishing/land/water
+047,Sucuri,SPECIES_NINETALES,water/poison,Rios de Arauana,rivers,wild,early,middle,36,480,fishing/land/water
+048,Boiuna,SPECIES_JIGGLYPUFF,water/dragon,Amazônia de Arauana,amazon,wild,late,final,55,600,fishing/land/water
+049,Borbolim,SPECIES_WIGGLYTUFF,bug,Mata Atlântica de Arauana,atlantic_forest,wild,early,base,0,287,land
+050,Casulete,SPECIES_ZUBAT,bug,Mata Atlântica de Arauana,atlantic_forest,wild,early,middle,22,283,land
+051,Morphália,SPECIES_GOLBAT,bug/fairy,Mata Atlântica de Arauana,atlantic_forest,wild,late,final,30,553,land
+052,Guaracim,SPECIES_ODDISH,fire,Cerrado de Arauana,cerrado,wild,early,base,0,287,land
+053,Guará,SPECIES_GLOOM,fire/normal,Cerrado de Arauana,cerrado,wild,late,final,36,552,land
+054,Guaraflama,SPECIES_VILEPLUME,fire/ghost,Cerrado de Arauana,cerrado,wild,mid,standalone,0,448,land
+055,Peixim,SPECIES_PARAS,water,Amazônia de Arauana,amazon,wild,early,base,0,282,fishing/water
+056,Peixeboi,SPECIES_PARASECT,water,Amazônia de Arauana,amazon,wild,late,final,22,552,fishing/water
+057,Mãe-d'Água,SPECIES_VENONAT,water/fairy,Amazônia de Arauana,amazon,wild,mid,standalone,0,448,fishing/water
+058,Mandim,SPECIES_VENOMOTH,water,Rios de Arauana,rivers,wild,early,base,0,283,fishing/water
+059,Mandí,SPECIES_DIGLETT,water/poison,Rios de Arauana,rivers,wild,early,middle,36,404,fishing/water
+060,Mandubé,SPECIES_DUGTRIO,water/dark,Rios de Arauana,rivers,wild,late,final,40,555,fishing/water
+061,Preguim,SPECIES_MEOWTH,normal,Mata Atlântica de Arauana,atlantic_forest,wild,early,base,0,283,land
+062,Prego,SPECIES_PERSIAN,fighting/normal,Mata Atlântica de Arauana,atlantic_forest,wild,early,middle,22,404,land
+063,Pregarcanjo,SPECIES_PSYDUCK,fighting/psychic,Mata Atlântica de Arauana,atlantic_forest,wild,late,final,30,555,land
+064,Aranin,SPECIES_GOLDUCK,bug,Cerrado de Arauana,cerrado,wild,early,base,0,284,land
+065,Caraninha,SPECIES_MANKEY,bug/poison,Cerrado de Arauana,cerrado,wild,early,middle,36,405,land
+066,Caranga,SPECIES_PRIMEAPE,bug/poison,Cerrado de Arauana,cerrado,wild,late,final,40,550,land
+067,Gatim,SPECIES_GROWLITHE,normal,Mata Atlântica de Arauana,atlantic_forest,wild,early,base,0,284,land
+068,Gato-do-mato,SPECIES_ARCANINE,normal/dark,Mata Atlântica de Arauana,atlantic_forest,wild,late,final,22,554,land
+069,Jaguatirica,SPECIES_POLIWAG,dark/normal,Mata Atlântica de Arauana,atlantic_forest,wild,mid,standalone,0,445,land
+070,Cutim,SPECIES_POLIWHIRL,normal,Mata Atlântica de Arauana,atlantic_forest,wild,early,base,0,285,land
+071,Cutia,SPECIES_POLIWRATH,normal,Mata Atlântica de Arauana,atlantic_forest,wild,late,final,36,555,land
+072,Paca,SPECIES_ABRA,normal/dark,Mata Atlântica de Arauana,atlantic_forest,wild,mid,standalone,0,445,land
+073,Formigão,SPECIES_KADABRA,bug/fighting,Amazônia de Arauana,amazon,wild,mid,standalone,0,447,land
+074,Marimbondo,SPECIES_ALAKAZAM,bug/poison,Cerrado de Arauana,cerrado,wild,mid,standalone,0,449,land
+075,Abelhinha,SPECIES_MACHOP,bug/flying,Cerrado de Arauana,cerrado,wild,mid,standalone,0,446,land
+076,Quatim,SPECIES_MACHOKE,normal,Mata Atlântica de Arauana,atlantic_forest,wild,early,base,0,286,land
+077,Quati,SPECIES_MACHAMP,normal/dark,Mata Atlântica de Arauana,atlantic_forest,wild,late,final,36,550,land
+078,Coati,SPECIES_BELLSPROUT,dark/ground,Cavernas de Arauana,caves,wild,mid,standalone,0,446,land/rock_smash
+079,Gambá,SPECIES_WEEPINBELL,poison/normal,Mata Atlântica de Arauana,atlantic_forest,wild,early,base,0,286,land
+080,Cangambá,SPECIES_VICTREEBEL,poison/dark,Cerrado de Arauana,cerrado,wild,late,final,22,551,land
+081,Sarué,SPECIES_TENTACOOL,poison/ghost,Cerrado de Arauana,cerrado,wild,mid,standalone,0,447,land
+082,Tuquinho,SPECIES_TENTACRUEL,flying,Amazônia de Arauana,amazon,wild,early,base,0,287,land
+083,Aracari,SPECIES_GEODUDE,flying/grass,Amazônia de Arauana,amazon,wild,late,final,36,551,land
+084,Curicaca,SPECIES_GRAVELER,flying/normal,Pantanal de Arauana,pantanal,wild,mid,standalone,0,447,land
+085,Sapim,SPECIES_GOLEM,water,Rios de Arauana,rivers,wild,early,base,0,287,fishing/land/water
+086,Sapão,SPECIES_PONYTA,water/poison,Cerrado de Arauana,cerrado,wild,early,middle,22,403,fishing/land/water
+087,Cururu,SPECIES_RAPIDASH,poison/ground,Cerrado de Arauana,cerrado,wild,late,final,30,554,land/rock_smash
+088,Teiuzim,SPECIES_SLOWPOKE,normal,Cerrado de Arauana,cerrado,wild,early,base,0,282,land
+089,Teiú,SPECIES_SLOWBRO,normal/dark,Cerrado de Arauana,cerrado,wild,late,final,36,552,land
+090,Camaleão,SPECIES_MAGNEMITE,normal/psychic,Amazônia de Arauana,amazon,wild,mid,standalone,0,448,land
+091,Morcim,SPECIES_MAGNETON,flying,Cavernas de Arauana,caves,wild,early,base,0,283,land
+092,Morcego,SPECIES_FARFETCHD,flying/psychic,Cavernas de Arauana,caves,wild,early,middle,22,404,land
+093,Vampiro,SPECIES_DODUO,flying/dark,Cavernas de Arauana,caves,wild,late,final,30,555,land
+094,Piuiuim,SPECIES_DODRIO,flying,Pantanal de Arauana,pantanal,wild,early,base,0,283,land
+095,Tuiuiú,SPECIES_SEEL,flying/water,Pantanal de Arauana,pantanal,wild,late,final,36,553,fishing/water
+096,Colhereiro,SPECIES_DEWGONG,flying/fairy,Pantanal de Arauana,pantanal,wild,mid,standalone,0,449,land
+097,Mulinha,SPECIES_GRIMER,normal,Cerrado de Arauana,cerrado,wild,early,base,0,284,land
+098,Mula,SPECIES_MUK,normal/fire,Cerrado de Arauana,cerrado,wild,early,middle,22,405,land
+099,Mula-sem-Cabeça,SPECIES_SHELLDER,fire/ghost,Cerrado de Arauana,cerrado,story,story,final,30,550,land
+100,Corcovado,SPECIES_CLOYSTER,rock/dragon,Serra de Arauana,highlands,wild,late,standalone,0,604,land/rock_smash
+101,Cerválo,SPECIES_GASTLY,normal,Caatinga de Arauana,caatinga,wild,early,base,0,286,land
+102,Catingueiro,SPECIES_HAUNTER,normal/grass,Caatinga de Arauana,caatinga,wild,late,final,40,551,land
+103,Suçuapara,SPECIES_GENGAR,normal/fighting,Mata Atlântica de Arauana,atlantic_forest,wild,mid,standalone,0,447,land
+104,Cabocim,SPECIES_ONIX,water,Rios de Arauana,rivers,wild,early,base,0,287,fishing/water
+105,Caboclo,SPECIES_DROWZEE,water/fighting,Rios de Arauana,rivers,wild,late,final,30,551,fishing/land/water
+106,Cangaço,SPECIES_HYPNO,dark/flying,Caatinga de Arauana,caatinga,wild,mid,standalone,0,447,land
+107,Xangô,SPECIES_KRABBY,electric/fighting,Serra de Arauana,highlands,story,story,standalone,0,449,land
+108,Iemanjá,SPECIES_KINGLER,water/fairy,Litoral de Arauana,coast,story,story,standalone,0,604,fishing/water
+109,Oxum,SPECIES_VOLTORB,water/fairy,Rios de Arauana,rivers,story,story,standalone,0,606,fishing/land/water
+110,Ogum,SPECIES_ELECTRODE,steel/fire,Serra de Arauana,highlands,story,story,standalone,0,602,land/rock_smash
+111,Cavalim,SPECIES_EXEGGCUTE,normal,Pampas de Arauana,pampas,wild,early,base,0,284,land
+112,Cavalgado,SPECIES_EXEGGUTOR,normal/fighting,Pampas de Arauana,pampas,wild,late,final,34,554,land
+113,Zebuim,SPECIES_CUBONE,normal,Pampas de Arauana,pampas,wild,early,base,0,283,land
+114,Zebu,SPECIES_MAROWAK,normal/fighting,Pampas de Arauana,pampas,wild,late,final,40,553,land
+115,Ovelhinha,SPECIES_HITMONLEE,normal/fairy,Pampas de Arauana,pampas,wild,mid,standalone,0,449,land
+116,Cabrita,SPECIES_HITMONCHAN,normal/rock,Caatinga de Arauana,caatinga,wild,mid,standalone,0,445,land/rock_smash
+117,Chocalhão,SPECIES_LICKITUNG,poison,Caatinga de Arauana,caatinga,wild,early,base,0,285,land
+118,Cascavelim,SPECIES_KOFFING,poison,Caatinga de Arauana,caatinga,wild,early,middle,34,406,land
+119,Cascavão,SPECIES_WEEZING,poison/dark,Caatinga de Arauana,caatinga,wild,late,final,36,552,land
+120,Jararaca,SPECIES_RHYHORN,poison/grass,Mata Atlântica de Arauana,atlantic_forest,wild,mid,standalone,0,448,land
+121,Pirarim,SPECIES_RHYDON,water,Amazônia de Arauana,amazon,wild,early,base,0,282,fishing/water
+122,Pirarucu,SPECIES_CHANSEY,water/dragon,Amazônia de Arauana,amazon,wild,late,final,22,552,fishing/water
+123,Piranha,SPECIES_TANGELA,water/dark,Rios de Arauana,rivers,wild,mid,standalone,0,448,fishing/water
+124,Tambaqui,SPECIES_KANGASKHAN,water/normal,Amazônia de Arauana,amazon,wild,mid,standalone,0,445,fishing/water
+125,Aruanã,SPECIES_HORSEA,water/flying,Amazônia de Arauana,amazon,wild,mid,standalone,0,447,fishing/water
+126,Poraquê,SPECIES_SEADRA,electric/water,Amazônia de Arauana,amazon,wild,mid,standalone,0,449,fishing/water
+127,Curimbatá,SPECIES_GOLDEEN,water/ground,Rios de Arauana,rivers,wild,mid,standalone,0,445,fishing/rock_smash/water
+128,Traíra,SPECIES_SEAKING,water/dark,Rios de Arauana,rivers,wild,mid,standalone,0,447,fishing/water
+129,Dourado,SPECIES_STARYU,water/fighting,Rios de Arauana,rivers,wild,mid,standalone,0,449,fishing/water
+130,Tucunaré,SPECIES_STARMIE,water/dark,Amazônia de Arauana,amazon,wild,mid,standalone,0,446,fishing/water
+131,Pacu,SPECIES_MR_MIME,water/grass,Amazônia de Arauana,amazon,wild,mid,standalone,0,448,fishing/water
+132,Matrinxã,SPECIES_SCYTHER,water/normal,Rios de Arauana,rivers,wild,mid,standalone,0,444,fishing/water
+133,Piau,SPECIES_JYNX,water/normal,Rios de Arauana,rivers,wild,mid,standalone,0,446,fishing/water
+134,Cascudo,SPECIES_ELECTABUZZ,water/rock,Rios de Arauana,rivers,wild,mid,standalone,0,448,fishing/rock_smash/water
+135,Acará,SPECIES_MAGMAR,water/psychic,Amazônia de Arauana,amazon,wild,mid,standalone,0,445,fishing/land/water
+136,Vagalumim,SPECIES_PINSIR,bug/electric,Mata Atlântica de Arauana,atlantic_forest,wild,early,base,0,285,land
+137,Vagalume,SPECIES_TAUROS,bug/electric,Mata Atlântica de Arauana,atlantic_forest,wild,late,final,36,555,land
+138,Cigarrinho,SPECIES_MAGIKARP,bug,Mata Atlântica de Arauana,atlantic_forest,wild,early,base,0,283,land
+139,Cigarrão,SPECIES_GYARADOS,bug/flying,Mata Atlântica de Arauana,atlantic_forest,wild,late,final,16,553,land
+140,Louvadinha,SPECIES_LAPRAS,bug,Cerrado de Arauana,cerrado,wild,early,base,0,287,land
+141,Louvadeus,SPECIES_DITTO,bug/psychic,Cerrado de Arauana,cerrado,wild,late,final,30,552,land
+142,Escorpim,SPECIES_EEVEE,poison,Caatinga de Arauana,caatinga,wild,early,base,0,286,land
+143,Escorpião,SPECIES_VAPOREON,poison/dark,Caatinga de Arauana,caatinga,wild,late,final,36,550,land
+144,Caramulão,SPECIES_JOLTEON,bug/water,Amazônia de Arauana,amazon,wild,mid,standalone,0,446,fishing/land/water
+145,Piolhão,SPECIES_FLAREON,bug/poison,Mata Atlântica de Arauana,atlantic_forest,wild,mid,standalone,0,448,land
+146,Barata,SPECIES_PORYGON,bug/dark,Cidades de Arauana,urban,wild,mid,standalone,0,445,land
+147,Grilim,SPECIES_OMANYTE,bug,Cerrado de Arauana,cerrado,wild,early,base,0,285,land
+148,Grilão,SPECIES_OMASTAR,bug/normal,Cerrado de Arauana,cerrado,wild,late,final,34,555,land
+149,Aranhão,SPECIES_KABUTO,bug/poison,Mata Atlântica de Arauana,atlantic_forest,wild,mid,standalone,0,445,land
+150,Vespão,SPECIES_KABUTOPS,bug/flying,Amazônia de Arauana,amazon,wild,mid,standalone,0,447,land
+151,Marimbondão,SPECIES_AERODACTYL,bug/poison,Cerrado de Arauana,cerrado,wild,mid,standalone,0,449,land
+152,Traça,SPECIES_SNORLAX,bug/normal,Cidades de Arauana,urban,wild,mid,standalone,0,446,land
+153,Corupião,SPECIES_ARTICUNO,bug/ground,Cerrado de Arauana,cerrado,wild,mid,standalone,0,448,land/rock_smash
+154,Cupinzim,SPECIES_ZAPDOS,bug/ground,Cerrado de Arauana,cerrado,wild,mid,standalone,0,444,land/rock_smash
+155,Formigão-Preto,SPECIES_MOLTRES,bug/dark,Cerrado de Arauana,cerrado,wild,mid,standalone,0,446,land
+156,Beija-flor,SPECIES_DRATINI,flying/fairy,Mata Atlântica de Arauana,atlantic_forest,wild,mid,standalone,0,448,land
+157,Sabiá,SPECIES_DRAGONAIR,flying/normal,Mata Atlântica de Arauana,atlantic_forest,wild,mid,standalone,0,445,land
+158,Bem-te-vi,SPECIES_DRAGONITE,flying/normal,Cidades de Arauana,urban,wild,mid,standalone,0,447,land
+159,Urutau,SPECIES_MEWTWO,flying/ghost,Mata Atlântica de Arauana,atlantic_forest,wild,mid,standalone,0,449,land
+160,Carcará,SPECIES_MEW,flying/dark,Caatinga de Arauana,caatinga,wild,mid,standalone,0,445,land
+161,Gavião,SPECIES_CHIKORITA,flying/fighting,Amazônia de Arauana,amazon,wild,mid,standalone,0,447,land
+162,Urubu,SPECIES_BAYLEEF,flying/dark,Cidades de Arauana,urban,wild,late,standalone,0,555,land
+163,Corurupim,SPECIES_MEGANIUM,flying/psychic,Mata Atlântica de Arauana,atlantic_forest,wild,early,middle,22,284,land
+164,Coruja,SPECIES_CYNDAQUIL,flying/psychic,Cerrado de Arauana,cerrado,wild,late,standalone,0,554,land
+165,Jaburu,SPECIES_QUILAVA,flying/water,Pantanal de Arauana,pantanal,wild,mid,standalone,0,444,fishing/water
+166,Ema,SPECIES_TYPHLOSION,normal/flying,Cerrado de Arauana,cerrado,wild,mid,standalone,0,446,land
+167,Seriema,SPECIES_TOTODILE,flying/fighting,Cerrado de Arauana,cerrado,wild,mid,standalone,0,448,land
+168,Anú,SPECIES_CROCONAW,flying/dark,Cerrado de Arauana,cerrado,wild,mid,standalone,0,445,land
+169,Trinca-Ferro,SPECIES_FERALIGATR,flying/steel,Mata Atlântica de Arauana,atlantic_forest,wild,mid,standalone,0,447,land/rock_smash
+170,Curió,SPECIES_SENTRET,flying/normal,Cerrado de Arauana,cerrado,wild,mid,standalone,0,449,land
+171,Sanhaço,SPECIES_FURRET,flying/fairy,Mata Atlântica de Arauana,atlantic_forest,wild,mid,standalone,0,445,land
+172,Papa-Formiga,SPECIES_HOOTHOOT,flying/bug,Mata Atlântica de Arauana,atlantic_forest,wild,mid,standalone,0,447,land
+173,Choca,SPECIES_NOCTOWL,flying/normal,Mata Atlântica de Arauana,atlantic_forest,wild,mid,standalone,0,449,land
+174,Bacurau,SPECIES_LEDYBA,flying/dark,Cerrado de Arauana,cerrado,wild,mid,standalone,0,446,land
+175,João-de-Barro,SPECIES_LEDIAN,flying/ground,Cerrado de Arauana,cerrado,wild,mid,standalone,0,448,land/rock_smash
+176,Sementim,SPECIES_SPINARAK,grass,Cerrado de Arauana,cerrado,wild,early,base,0,282,land
+177,Muda,SPECIES_ARIADOS,grass,Cerrado de Arauana,cerrado,wild,early,middle,30,403,land
+178,Jequitibá,SPECIES_CROBAT,grass/rock,Mata Atlântica de Arauana,atlantic_forest,wild,late,final,34,554,land/rock_smash
+179,Bromelinha,SPECIES_CHINCHOU,grass/water,Mata Atlântica de Arauana,atlantic_forest,wild,mid,standalone,0,445,fishing/land/water
+180,Orquidina,SPECIES_LANTURN,grass/fairy,Amazônia de Arauana,amazon,wild,mid,standalone,0,447,land
+181,Vitóriarégia,SPECIES_PICHU,grass/water,Amazônia de Arauana,amazon,wild,mid,standalone,0,449,fishing/land/water
+182,Ipê,SPECIES_CLEFFA,grass/fairy,Cerrado de Arauana,cerrado,wild,mid,standalone,0,445,land
+183,Cipó,SPECIES_IGGLYBUFF,grass/poison,Amazônia de Arauana,amazon,wild,mid,standalone,0,447,land
+184,Palmito,SPECIES_TOGEPI,grass/fighting,Mata Atlântica de Arauana,atlantic_forest,wild,mid,standalone,0,449,land
+185,Babaçu,SPECIES_TOGETIC,grass/ground,Caatinga de Arauana,caatinga,wild,mid,standalone,0,446,land/rock_smash
+186,Buriti,SPECIES_NATU,grass/water,Cerrado de Arauana,cerrado,wild,mid,standalone,0,448,fishing/land/water
+187,Cajuzim,SPECIES_XATU,grass,Caatinga de Arauana,caatinga,wild,early,base,0,282,land
+188,Cajueiro,SPECIES_MAREEP,grass/fire,Caatinga de Arauana,caatinga,wild,late,final,22,552,land
+189,Açaí,SPECIES_FLAAFFY,grass/dark,Amazônia de Arauana,amazon,wild,mid,standalone,0,448,land
+190,Cacauim,SPECIES_AMPHAROS,grass,Amazônia de Arauana,amazon,wild,early,base,0,283,land
+191,Cacaueiro,SPECIES_BELLOSSOM,grass/normal,Amazônia de Arauana,amazon,wild,late,final,36,553,land
+192,Guaraná,SPECIES_MARILL,grass/electric,Amazônia de Arauana,amazon,wild,mid,standalone,0,449,land
+193,Mate,SPECIES_AZUMARILL,grass/water,Pampas de Arauana,pampas,wild,mid,standalone,0,445,fishing/land/water
+194,Milho,SPECIES_SUDOWOODO,grass/normal,Cerrado de Arauana,cerrado,wild,mid,standalone,0,447,land
+195,Mandioca,SPECIES_POLITOED,grass/ground,Cerrado de Arauana,cerrado,wild,mid,standalone,0,449,land/rock_smash
+196,Pedrinha,SPECIES_HOPPIP,rock,Rios de Arauana,rivers,wild,early,base,0,284,land/rock_smash
+197,Rochão,SPECIES_SKIPLOOM,rock,Chapadas de Arauana,chapadas,wild,late,final,36,554,land/rock_smash
+198,Cristalim,SPECIES_JUMPLUFF,rock/fairy,Cavernas de Arauana,caves,wild,early,base,0,282,land/rock_smash
+199,Ametista,SPECIES_AIPOM,rock/psychic,Serra de Arauana,highlands,wild,late,final,16,552,land/rock_smash
+200,Ouríço,SPECIES_SUNKERN,steel/electric,Serra de Arauana,highlands,wild,mid,standalone,0,448,land/rock_smash
+201,Ferrolho,SPECIES_SUNFLORA,steel/ground,Serra de Arauana,highlands,wild,mid,standalone,0,445,land/rock_smash
+202,Diamantina,SPECIES_YANMA,rock/fairy,Serra de Arauana,highlands,wild,late,standalone,0,605,land/rock_smash
+203,Bauxito,SPECIES_WOOPER,steel/ground,Amazônia de Arauana,amazon,wild,mid,standalone,0,449,land/rock_smash
+204,Manganim,SPECIES_QUAGSIRE,steel/dark,Serra de Arauana,highlands,wild,mid,standalone,0,445,land/rock_smash
+205,Salitre,SPECIES_ESPEON,rock/water,Litoral de Arauana,coast,wild,mid,standalone,0,447,fishing/land/rock_smash/water
+206,Enxofrino,SPECIES_UMBREON,fire/poison,Serra de Arauana,highlands,wild,mid,standalone,0,449,land
+207,Argilim,SPECIES_MURKROW,ground,Cerrado de Arauana,cerrado,wild,early,base,0,284,land/rock_smash
+208,Boneco,SPECIES_SLOWKING,ground/psychic,Cerrado de Arauana,cerrado,wild,late,final,34,554,land/rock_smash
+209,Estalactite,SPECIES_MISDREAVUS,rock/water,Cavernas de Arauana,caves,wild,mid,standalone,0,444,fishing/land/rock_smash/water
+210,Estalagmite,SPECIES_UNOWN,rock/ground,Cavernas de Arauana,caves,wild,mid,standalone,0,446,land/rock_smash
+211,Fóssil,SPECIES_WOBBUFFET,rock/dragon,Chapadas de Arauana,chapadas,wild,mid,standalone,0,448,land/rock_smash
+212,Meteorito,SPECIES_GIRAFARIG,rock/psychic,Serra de Arauana,highlands,wild,late,standalone,0,603,land/rock_smash
+213,Vulcanite,SPECIES_PINECO,fire/rock,Serra de Arauana,highlands,wild,mid,standalone,0,447,land/rock_smash
+214,Marmim,SPECIES_FORRETRESS,rock/fairy,Serra de Arauana,highlands,wild,mid,standalone,0,449,land/rock_smash
+215,Granito,SPECIES_DUNSPARCE,rock/fighting,Chapadas de Arauana,chapadas,wild,mid,standalone,0,445,land/rock_smash
+216,Caranguim,SPECIES_GLIGAR,water,Litoral de Arauana,coast,wild,early,base,0,285,fishing/land/water
+217,Guaiamum,SPECIES_STEELIX,water/ground,Litoral de Arauana,coast,wild,late,final,16,555,fishing/land/rock_smash/water
+218,Siri,SPECIES_SNUBBULL,water/fighting,Litoral de Arauana,coast,wild,mid,standalone,0,446,fishing/land/water
+219,Camarão,SPECIES_GRANBULL,water,Litoral de Arauana,coast,wild,mid,standalone,0,448,fishing/water
+220,Polvim,SPECIES_QWILFISH,water/psychic,Litoral de Arauana,coast,wild,early,base,0,282,fishing/water
+221,Polvão,SPECIES_SCIZOR,water/psychic,Litoral de Arauana,coast,wild,late,standalone,0,552,fishing/water
+222,Águaviva,SPECIES_SHUCKLE,water/poison,Litoral de Arauana,coast,wild,mid,final,36,448,fishing/water
+223,Cavalim-Marinho,SPECIES_HERACROSS,water/fairy,Litoral de Arauana,coast,wild,mid,standalone,0,445,fishing/water
+224,Tartaruguim,SPECIES_SNEASEL,water,Litoral de Arauana,coast,wild,early,base,0,285,fishing/land/water
+225,Tartaruga,SPECIES_TEDDIURSA,water/rock,Litoral de Arauana,coast,wild,late,standalone,0,555,fishing/land/rock_smash/water
+226,Golfinho,SPECIES_URSARING,water/psychic,Litoral de Arauana,coast,wild,mid,final,30,445,fishing/water
+227,Baleia,SPECIES_SLUGMA,water/normal,Litoral de Arauana,coast,wild,mid,standalone,0,447,fishing/water
+228,Tubarim,SPECIES_MAGCARGO,water/dark,Litoral de Arauana,coast,wild,early,base,0,287,fishing/water
+229,Tubarão,SPECIES_SWINUB,water/dark,Litoral de Arauana,coast,wild,late,standalone,0,552,fishing/water
+230,Arraia,SPECIES_PILOSWINE,water/electric,Litoral de Arauana,coast,wild,mid,final,16,448,fishing/water
+231,Peixe-Espada,SPECIES_CORSOLA,water/steel,Litoral de Arauana,coast,wild,mid,standalone,0,444,fishing/rock_smash/water
+232,Pargo,SPECIES_REMORAID,water/fire,Litoral de Arauana,coast,wild,mid,standalone,0,446,fishing/land/water
+233,Pescadão,SPECIES_OCTILLERY,water/dark,Litoral de Arauana,coast,wild,mid,standalone,0,448,fishing/water
+234,Loirinha,SPECIES_DELIBIRD,ghost/fairy,Cidades de Arauana,urban,wild,mid,standalone,0,445,land
+235,Cuca,SPECIES_MANTINE,dark/psychic,Cerrado de Arauana,cerrado,wild,mid,standalone,0,447,land
+236,Bicho-Papão,SPECIES_SKARMORY,dark/ghost,Cidades de Arauana,urban,wild,mid,standalone,0,449,land
+237,Lobisomem,SPECIES_HOUNDOUR,dark/normal,Cerrado de Arauana,cerrado,story,story,standalone,0,445,land
+238,Corpo-Seco,SPECIES_HOUNDOOM,ghost/dark,Cerrado de Arauana,cerrado,wild,mid,standalone,0,447,land
+239,Mão-Peluda,SPECIES_KINGDRA,ghost/fighting,Cidades de Arauana,urban,wild,mid,standalone,0,449,land
+240,Perna-Cabeluda,SPECIES_PHANPY,ghost/normal,Cidades de Arauana,urban,wild,mid,standalone,0,446,land
+241,Comadre,SPECIES_DONPHAN,ghost/fairy,Cerrado de Arauana,cerrado,wild,mid,standalone,0,448,land
+242,Anhangá,SPECIES_PORYGON2,ghost/grass,Amazônia de Arauana,amazon,wild,mid,standalone,0,444,land
+243,Jurupari,SPECIES_STANTLER,dark/fairy,Amazônia de Arauana,amazon,story,story,standalone,0,604,land
+244,Tupã,SPECIES_SMEARGLE,electric/dragon,Serra de Arauana,highlands,story,story,standalone,0,606,land
+245,Jaci,SPECIES_TYROGUE,fairy/psychic,Serra de Arauana,highlands,story,story,standalone,0,603,land
+246,Guaraci,SPECIES_HITMONTOP,fire/fairy,Serra de Arauana,highlands,story,story,standalone,0,605,land
+247,Rudá,SPECIES_SMOOCHUM,fairy/psychic,Litoral de Arauana,coast,story,story,standalone,0,449,land
+248,Aluá,SPECIES_ELEKID,water/poison,Amazônia de Arauana,amazon,wild,mid,standalone,0,445,fishing/land/water
+249,Jenipapo,SPECIES_MAGBY,dark/grass,Amazônia de Arauana,amazon,wild,mid,standalone,0,447,land
+250,Urucum,SPECIES_MILTANK,fire/grass,Amazônia de Arauana,amazon,wild,mid,standalone,0,449,land
+251,Caipora,SPECIES_BLISSEY,grass/fighting,Cerrado de Arauana,cerrado,wild,late,standalone,0,552,land
+252,Anhangá-Pitã,SPECIES_RAIKOU,ghost/fire,Amazônia de Arauana,amazon,wild,mid,standalone,0,448,land
+253,Yara-Pindá,SPECIES_ENTEI,water/fairy,Amazônia de Arauana,amazon,wild,mid,standalone,0,444,fishing/land/water
+254,Pisadeira,SPECIES_SUICUNE,ghost/fighting,Cidades de Arauana,urban,wild,mid,standalone,0,446,land
+255,Zumbi,SPECIES_LARVITAR,ghost/fighting,Serra de Arauana,highlands,story,story,standalone,0,606,land
+256,Iemanjá-Pequena,SPECIES_PUPITAR,water/fairy,Litoral de Arauana,coast,story,story,standalone,0,445,fishing/land/water
+257,Ossanha,SPECIES_TYRANITAR,grass/fairy,Mata Atlântica de Arauana,atlantic_forest,wild,mid,standalone,0,447,land
+258,Oxalá,SPECIES_LUGIA,normal/fairy,Serra de Arauana,highlands,story,story,standalone,0,607,land
+259,Saciamigo,SPECIES_HO_OH,dark/fairy,Cerrado de Arauana,cerrado,wild,mid,standalone,0,445,land
+260,Sacipererê,SPECIES_CELEBI,dark/fairy,Cerrado de Arauana,cerrado,wild,late,standalone,0,605,land
+261,Curupira-Ancião,SPECIES_POOCHYENA,grass/fairy,Amazônia de Arauana,amazon,story,story,standalone,0,449,land
+262,Caipora-Fêmea,SPECIES_MIGHTYENA,grass/fighting,Cerrado de Arauana,cerrado,wild,mid,standalone,0,446,land
+263,Pomba-Gira,SPECIES_ZIGZAGOON,dark/fairy,Cidades de Arauana,urban,story,story,standalone,0,448,land
+264,Exu,SPECIES_LINOONE,dark/fighting,Cidades de Arauana,urban,story,story,standalone,0,444,land
+265,Preto-Velho,SPECIES_WURMPLE,ghost/psychic,Cidades de Arauana,urban,story,story,standalone,0,604,land
+266,Caboclo-Guerreiro,SPECIES_SILCOON,grass/fighting,Mata Atlântica de Arauana,atlantic_forest,wild,mid,standalone,0,448,land
+267,Marinheiro,SPECIES_BEAUTIFLY,water/dark,Litoral de Arauana,coast,wild,mid,standalone,0,445,fishing/land/water
+268,Baiano,SPECIES_CASCOON,fire/fighting,Litoral de Arauana,coast,wild,mid,standalone,0,447,land
+269,Cangaceiro,SPECIES_DUSTOX,dark/fighting,Caatinga de Arauana,caatinga,story,story,standalone,0,449,land
+270,Beata,SPECIES_LOTAD,fairy/psychic,Caatinga de Arauana,caatinga,story,story,standalone,0,445,land
+271,Menino-Deus,SPECIES_LOMBRE,fairy/normal,Cerrado de Arauana,cerrado,story,story,standalone,0,447,land
+272,Rei-Momo,SPECIES_LUDICOLO,normal/fire,Cidades de Arauana,urban,wild,mid,standalone,0,449,land
+273,Bumba-Meu-Boi,SPECIES_SEEDOT,normal/fire,Amazônia de Arauana,amazon,wild,mid,standalone,0,446,land
+274,Reisado,SPECIES_NUZLEAF,fairy/normal,Caatinga de Arauana,caatinga,wild,mid,standalone,0,448,land
+275,Frevinho,SPECIES_SHIFTRY,fighting/fire,Litoral de Arauana,coast,wild,mid,standalone,0,444,land
+276,Maracatu,SPECIES_TAILLOW,dark/fairy,Litoral de Arauana,coast,wild,mid,standalone,0,446,land
+277,Congada,SPECIES_SWELLOW,fighting/fire,Cerrado de Arauana,cerrado,wild,mid,standalone,0,448,land
+278,Folião,SPECIES_WINGULL,normal/fairy,Cidades de Arauana,urban,wild,mid,standalone,0,445,land
+279,Onçuma,SPECIES_PELIPPER,dark/ghost,Amazônia de Arauana,amazon,wild,late,standalone,0,605,land
+280,Sucuriaçu,SPECIES_RALTS,water/dragon,Amazônia de Arauana,amazon,wild,late,standalone,0,607,fishing/land/water
+281,Pirarumbá,SPECIES_KIRLIA,water/dragon,Amazônia de Arauana,amazon,wild,late,standalone,0,603,fishing/water
+282,Draguará-Alfa,SPECIES_GARDEVOIR,fire/dragon,Serra de Arauana,highlands,wild,late,standalone,0,605,land
+283,Terolibra-Rainha,SPECIES_SURSKIT,water/bug,Banhados de Arauana,wetlands,wild,late,standalone,0,607,fishing/land/water
+284,Petropico-Ancião,SPECIES_MASQUERAIN,grass/rock,Chapadas de Arauana,chapadas,wild,late,standalone,0,604,land/rock_smash
+285,Boitatá-Puro,SPECIES_SHROOMISH,fire/dragon,Cerrado de Arauana,cerrado,wild,late,standalone,0,606,land
+286,Iara-Mãe,SPECIES_BRELOOM,water/fairy,Amazônia de Arauana,amazon,story,story,standalone,0,602,fishing/land/water
+287,Curupira-Rei,SPECIES_SLAKOTH,grass/fairy,Mata Atlântica de Arauana,atlantic_forest,wild,late,standalone,0,604,land
+288,Saci-Rei,SPECIES_VIGOROTH,dark/fairy,Cerrado de Arauana,cerrado,wild,late,standalone,0,606,land
+289,Anhangaú,SPECIES_SLAKING,ghost/grass,Amazônia de Arauana,amazon,wild,late,standalone,0,603,land
+290,Muirá-Kytã,SPECIES_NINCADA,grass/fairy,Amazônia de Arauana,amazon,wild,late,standalone,0,605,land
+291,Cobra-Norato,SPECIES_NINJASK,water/dragon,Amazônia de Arauana,amazon,story,story,standalone,0,607,fishing/land/water
+292,Mapinguari,SPECIES_SHEDINJA,grass/fighting,Amazônia de Arauana,amazon,wild,late,standalone,0,603,land
+293,Ipupiara,SPECIES_WHISMUR,water/dark,Litoral de Arauana,coast,wild,late,standalone,0,605,fishing/water
+294,Uirapuru,SPECIES_LOUDRED,flying/fairy,Amazônia de Arauana,amazon,wild,late,standalone,0,607,land
+295,Muiraquitã,SPECIES_EXPLOUD,rock/fairy,Amazônia de Arauana,amazon,wild,late,standalone,0,604,land/rock_smash
+296,Amazona,SPECIES_MAKUHITA,fighting/fairy,Amazônia de Arauana,amazon,wild,late,standalone,0,606,land
+297,Corcovado-Ancião,SPECIES_HARIYAMA,rock/dragon,Serra de Arauana,highlands,wild,late,standalone,0,602,land/rock_smash
+298,Cristo,SPECIES_AZURILL,fairy/psychic,Serra de Arauana,highlands,story,story,standalone,0,604,land
+299,Ratão,SPECIES_NOSEPASS,dark/poison,Cidades de Arauana,urban,wild,mid,standalone,0,448,land
+300,Pombim,SPECIES_SKITTY,flying/normal,Cidades de Arauana,urban,wild,early,base,0,283,land
+301,Pombão,SPECIES_DELCATTY,flying/poison,Cidades de Arauana,urban,wild,late,standalone,0,553,land
+302,Baratão,SPECIES_SABLEYE,bug/flying,Cidades de Arauana,urban,wild,mid,final,16,449,land
+303,Mosquim,SPECIES_MAWILE,bug/poison,Cidades de Arauana,urban,wild,mid,standalone,0,445,land
+304,Cão-Bravo,SPECIES_ARON,dark/normal,Cidades de Arauana,urban,wild,mid,standalone,0,447,land
+305,Gato-Preto,SPECIES_LAIRON,dark/psychic,Cidades de Arauana,urban,wild,mid,standalone,0,449,land
+306,Perereca,SPECIES_AGGRON,water/poison,Cidades de Arauana,urban,wild,mid,standalone,0,446,fishing/land/water
+307,Lagartixa,SPECIES_MEDITITE,normal/psychic,Cidades de Arauana,urban,wild,mid,standalone,0,448,land
+308,Traça-Papel,SPECIES_MEDICHAM,bug/psychic,Cidades de Arauana,urban,wild,mid,standalone,0,444,land
+309,Poeirão,SPECIES_ELECTRIKE,ground/dark,Cidades de Arauana,urban,wild,mid,standalone,0,446,land/rock_smash
+310,Ferrugem,SPECIES_MANECTRIC,steel/water,Cidades de Arauana,urban,wild,mid,standalone,0,448,fishing/land/rock_smash/water
+311,Fumacento,SPECIES_PLUSLE,poison/flying,Cidades de Arauana,urban,wild,mid,standalone,0,445,land
+312,Óleoso,SPECIES_MINUN,poison/water,Litoral de Arauana,coast,wild,mid,standalone,0,447,fishing/water
+313,Lixão,SPECIES_VOLBEAT,poison/ground,Cidades de Arauana,urban,wild,early,base,0,287,land/rock_smash
+314,Chorume,SPECIES_ILLUMISE,poison/dark,Cidades de Arauana,urban,wild,late,standalone,0,551,land
+315,Bituca,SPECIES_ROSELIA,fire/poison,Cidades de Arauana,urban,wild,mid,standalone,0,447,land
+316,Latinha,SPECIES_GULPIN,steel/normal,Cidades de Arauana,urban,wild,mid,final,22,449,land/rock_smash
+317,Sacolim,SPECIES_SWALOT,poison/flying,Cidades de Arauana,urban,wild,mid,standalone,0,446,land
+318,Garrafão,SPECIES_CARVANHA,water/poison,Rios de Arauana,rivers,wild,mid,standalone,0,448,fishing/land/water
+319,Netzero,SPECIES_SHARPEDO,flying/poison,Litoral de Arauana,coast,wild,mid,standalone,0,444,land
+320,Pilhoso,SPECIES_WAILMER,electric/poison,Cidades de Arauana,urban,wild,mid,standalone,0,446,land
+321,Cabofio,SPECIES_WAILORD,electric/steel,Cidades de Arauana,urban,wild,mid,standalone,0,448,land/rock_smash
+322,Bugão,SPECIES_NUMEL,bug/dark,Cidades de Arauana,urban,wild,mid,standalone,0,445,land
+323,Aluminio,SPECIES_CAMERUPT,steel/flying,Cidades de Arauana,urban,wild,mid,standalone,0,447,land/rock_smash
+324,Concretim,SPECIES_TORKOAL,rock/steel,Cidades de Arauana,urban,wild,mid,standalone,0,449,land/rock_smash
+325,Bueiro,SPECIES_SPOINK,water/dark,Cidades de Arauana,urban,wild,mid,standalone,0,445,fishing/land/water
+326,Sinal,SPECIES_GRUMPIG,electric/psychic,Cidades de Arauana,urban,wild,mid,standalone,0,447,land
+327,Poste,SPECIES_SPINDA,steel/electric,Cidades de Arauana,urban,wild,mid,standalone,0,449,land/rock_smash
+328,Grafiteiro,SPECIES_TRAPINCH,dark/fairy,Cidades de Arauana,urban,wild,mid,standalone,0,446,land
+329,Guaraciana,SPECIES_VIBRAVA,fire/fairy,Serra de Arauana,highlands,legendary,legendary,standalone,0,606,land
+330,Jaciana,SPECIES_FLYGON,fairy/water,Serra de Arauana,highlands,legendary,legendary,standalone,0,602,fishing/land/water
+331,Tupanaú,SPECIES_CACNEA,electric/dragon,Serra de Arauana,highlands,legendary,legendary,standalone,0,604,land
+332,Iaraú,SPECIES_CACTURNE,water/fairy,Amazônia de Arauana,amazon,legendary,legendary,standalone,0,606,fishing/land/water
+333,Kuarahy,SPECIES_SWABLU,fire/psychic,Serra de Arauana,highlands,legendary,legendary,standalone,0,603,land
+334,Yasy,SPECIES_ALTARIA,fairy/dark,Serra de Arauana,highlands,legendary,legendary,standalone,0,605,land
+335,Rudarauna,SPECIES_ZANGOOSE,fairy/psychic,Litoral de Arauana,coast,legendary,legendary,standalone,0,607,land
+336,Perybé,SPECIES_SEVIPER,water/psychic,Amazônia de Arauana,amazon,legendary,legendary,standalone,0,603,fishing/land/water
+337,Arauanaú,SPECIES_LUNATONE,fairy/dragon,Serra de Arauana,highlands,legendary,legendary,standalone,0,605,land
+338,Verdejante,SPECIES_SOLROCK,grass/dragon,Amazônia de Arauana,amazon,legendary,legendary,standalone,0,607,land
+339,Chuvão,SPECIES_BARBOACH,water/electric,Serra de Arauana,highlands,legendary,legendary,standalone,0,604,fishing/land/water
+340,Solzão,SPECIES_WHISCASH,fire/ground,Caatinga de Arauana,caatinga,legendary,legendary,standalone,0,606,land/rock_smash
+341,Ventania,SPECIES_CORPHISH,flying/dragon,Cerrado de Arauana,cerrado,legendary,legendary,standalone,0,602,land
+342,Terraão,SPECIES_CRAWDAUNT,ground/rock,Chapadas de Arauana,chapadas,legendary,legendary,standalone,0,604,land/rock_smash
+343,Fogaréu,SPECIES_BALTOY,fire/dragon,Serra de Arauana,highlands,legendary,legendary,standalone,0,606,land
+344,Marulho,SPECIES_CLAYDOL,water/dragon,Litoral de Arauana,coast,legendary,legendary,standalone,0,603,fishing/land/water
+345,Alvorecer,SPECIES_LILEEP,fairy/fire,Litoral de Arauana,coast,legendary,legendary,standalone,0,605,land
+346,Poente,SPECIES_CRADILY,dark/fire,Litoral de Arauana,coast,legendary,legendary,standalone,0,607,land
+347,Estrelinha,SPECIES_ANORITH,fairy/psychic,Serra de Arauana,highlands,mythical,mythical,standalone,0,648,land
+348,Arauanamon,SPECIES_ARMALDO,dragon/fairy,Serra de Arauana,highlands,legendary,legendary,standalone,0,650,land
+349,Aracuã,SPECIES_FEEBAS,flying/normal,Cerrado de Arauana,cerrado,wild,mid,standalone,0,449,land
+350,Bugio,SPECIES_MILOTIC,normal/dark,Amazônia de Arauana,amazon,wild,mid,standalone,0,446,land
+351,Tuim,SPECIES_CASTFORM,grass,Cerrado de Arauana,cerrado,wild,early,base,0,305,land
+352,Periquitão,SPECIES_KECLEON,grass/flying,Cerrado de Arauana,cerrado,wild,early,middle,18,439,land
+353,Ararunão,SPECIES_SHUPPET,grass/flying,Amazônia de Arauana,amazon,wild,late,final,34,598,land
+354,Preazinho,SPECIES_BANETTE,normal,Pampas de Arauana,pampas,wild,early,base,0,328,land
+355,Capivarão,SPECIES_DUSKULL,normal/water,Rios de Arauana,rivers,wild,mid,final,22,510,fishing/land/water
+356,Tamanduí,SPECIES_DUSCLOPS,bug,Cerrado de Arauana,cerrado,wild,early,base,0,320,land
+357,Tamanduá,SPECIES_TROPIUS,bug/ground,Cerrado de Arauana,cerrado,wild,early,middle,20,440,land/rock_smash
+358,Tamanduão,SPECIES_CHIMECHO,bug/ground,Cerrado de Arauana,cerrado,wild,late,final,40,545,land/rock_smash
+359,Preguicinha,SPECIES_ABSOL,grass,Amazônia de Arauana,amazon,wild,early,base,0,285,land
+360,Preguiçoso,SPECIES_WYNAUT,grass/psychic,Amazônia de Arauana,amazon,wild,mid,final,25,520,land
+361,Beija-Flor,SPECIES_SNORUNT,fairy/flying,Cerrado de Arauana,cerrado,wild,early,base,0,377,land
+362,Beija-Luz,SPECIES_GLALIE,fairy/fire,Cerrado de Arauana,cerrado,wild,early,middle,20,482,land
+363,Beija-Sol,SPECIES_SPHEAL,fairy/fire,Serra de Arauana,highlands,wild,late,final,40,610,land
+364,Sarará,SPECIES_SEALEO,fairy/water,Litoral de Arauana,coast,wild,mid,standalone,0,472,fishing/land/water
+365,Cambota,SPECIES_WALREIN,fighting/normal,Cidades de Arauana,urban,wild,mid,standalone,0,485,land
+366,Berimbau,SPECIES_CLAMPERL,fairy/fighting,Cidades de Arauana,urban,wild,mid,standalone,0,505,land
+367,Atabaque,SPECIES_HUNTAIL,fighting/ground,Cidades de Arauana,urban,wild,mid,standalone,0,495,land/rock_smash
+368,Pandeirim,SPECIES_GOREBYSS,fairy/normal,Cidades de Arauana,urban,wild,mid,standalone,0,460,land
+369,Sanfoninha,SPECIES_RELICANTH,normal/fairy,Sertão de Arauana,caatinga,wild,mid,standalone,0,510,land
+370,Violeiro,SPECIES_LUVDISC,grass/fairy,Sertão de Arauana,caatinga,wild,late,standalone,0,523,land
+371,Zabumba,SPECIES_BAGON,ground/fighting,Sertão de Arauana,caatinga,wild,mid,standalone,0,515,land/rock_smash
+372,Cordelim,SPECIES_SHELGON,psychic/fairy,Sertão de Arauana,caatinga,wild,mid,standalone,0,485,land
+373,Rendeira,SPECIES_SALAMENCE,fairy/bug,Litoral de Arauana,coast,wild,mid,standalone,0,515,land
+374,Escamoso,SPECIES_BELDUM,water/dark,Rios de Arauana,rivers,wild,mid,standalone,0,498,fishing/land/water
+375,Piranhita,SPECIES_METANG,water/dark,Rios de Arauana,rivers,wild,early,standalone,0,395,fishing/water
+376,Boitatã,SPECIES_METAGROSS,fire/dragon,Cerrado de Arauana,cerrado,legendary,legendary,standalone,0,650,land
+377,Piraruaçu,SPECIES_REGIROCK,water/dragon,Amazônia de Arauana,amazon,legendary,legendary,standalone,0,630,fishing/water
+378,Mata-Mata,SPECIES_REGICE,grass/dragon,Amazônia de Arauana,amazon,legendary,legendary,standalone,0,640,land
+379,Solaris,SPECIES_REGISTEEL,fire/psychic,Serra de Arauana,highlands,legendary,legendary,standalone,0,670,land
+380,Selenê,SPECIES_LATIAS,dark/psychic,Serra de Arauana,highlands,legendary,legendary,standalone,0,670,land
+381,Zumbi-Rei,SPECIES_LATIOS,fighting/dark,Cidades de Arauana,urban,legendary,legendary,standalone,0,655,land
+382,Iemanjã,SPECIES_KYOGRE,water/fairy,Litoral de Arauana,coast,legendary,legendary,standalone,0,695,fishing/land/water
+383,Oxumará,SPECIES_GROUDON,dragon/fairy,Litoral de Arauana,coast,legendary,legendary,standalone,0,695,land
+384,Curupixel,SPECIES_RAYQUAZA,grass/fairy,Amazônia de Arauana,amazon,mythical,mythical,standalone,0,645,land
+385,Sacinho,SPECIES_JIRACHI,dark/fairy,Cerrado de Arauana,cerrado,mythical,mythical,standalone,0,650,land
+386,Arauá,SPECIES_DEOXYS,dragon/psychic,Serra de Arauana,highlands,mythical,mythical,standalone,0,720,land

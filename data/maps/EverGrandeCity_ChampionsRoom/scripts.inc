@@ -50,6 +50,7 @@ EverGrandeCity_ChampionsRoom_EventScript_Defeated::
 	setmetatile 6, 2, METATILE_EliteFour_OpenDoorChampion_Opening, FALSE
 	special DrawWholeMapView
 	msgbox EverGrandeCity_ChampionsRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT
+	call EverGrandeCity_ChampionsRoom_EventScript_BondReading
 	closemessage
 	playse SE_DOOR
 	checkplayergender
@@ -220,51 +221,33 @@ EverGrandeCity_ChampionsRoom_Movement_BirchArrives:
 	step_end
 
 EverGrandeCity_ChampionsRoom_Text_IntroSpeech:
-	.string "WALLACE: Welcome, {PLAYER}{KUN}.\p"
-	.string "That incident in SOOTOPOLIS CITY…\n"
-	.string "That was superb work, putting an end\l"
-	.string "to that crisis all by yourself.\p"
-	.string "Oops!\p"
-	.string "It wouldn't be fair to say that you\n"
-	.string "alone ended the crisis.\p"
-	.string "You overcame that difficult situation\n"
-	.string "by working as one with your POKéMON.\p"
-	.string "We TRAINERS raise POKéMON by giving\n"
-	.string "them items and by teaching them new\l"
-	.string "techniques for battle.\p"
-	.string "But we ourselves also learn many\n"
-	.string "things from POKéMON.\p"
-	.string "And this is where your achievements\n"
-	.string "are put to the test against what\l"
-	.string "others like you have achieved.\p"
-	.string "Now!\p"
-	.string "Who can most elegantly dance with\n"
-	.string "their POKéMON in HOENN?\p"
-	.string "Show me right here and now!$"
+	.string "AUGUSTO: You saw me break the\n"
+	.string "First Link.\p"
+	.string "I spent years hoping the memory\n"
+	.string "would fade before anyone reached\l"
+	.string "this room.\p"
+	.string "It was more patient than I was.\p"
+	.string "Fight me. Then I will tell you\n"
+	.string "what I tried to save, and whom\l"
+	.string "I abandoned to save it.$"
 
 EverGrandeCity_ChampionsRoom_Text_Defeat:
-	.string "I, the CHAMPION, fall in defeat…\p"
-	.string "That was wonderful work.\n"
-	.string "You were elegant, infuriatingly so.\l"
-	.string "And yet it was utterly glorious!\p"
-	.string "Kudos to you, {PLAYER}{KUN}!\p"
-	.string "You are a truly noble POKéMON\n"
-	.string "TRAINER!$"
+	.string "I broke the Link so that no one\n"
+	.string "could turn it into a chain.\p"
+	.string "You showed me what I could not\n"
+	.string "imagine:\p"
+	.string "a bond that accepts being\n"
+	.string "refused.$"
 
 EverGrandeCity_ChampionsRoom_Text_PostBattleSpeech:
-	.string "WALLACE: The POKéMON you sent into\n"
-	.string "battle…\p"
-	.string "At times they danced like a spring\n"
-	.string "breeze, and at times they struck\l"
-	.string "like lightning.\p"
-	.string "It was with light, yet surefooted,\n"
-	.string "elegance that you led your POKéMON.\p"
-	.string "Even I felt bedazzled by your\n"
-	.string "masterful performance!\p"
-	.string "You now stand at the glorious peak\n"
-	.string "of the POKéMON LEAGUE.\p"
-	.string "I now proclaim you to be the new\n"
-	.string "HOENN region…$"
+	.string "AUGUSTO: My silence was not\n"
+	.string "neutrality.\p"
+	.string "It was the very condition that\n"
+	.string "let the Consortium try again.\p"
+	.string "You now stand at the peak of the\n"
+	.string "POKéMON LEAGUE.\p"
+	.string "I proclaim you the new ARAUNA\n"
+	.string "region…$"
 
 EverGrandeCity_ChampionsRoom_Text_MayAdvice:
 	.string "MAY: {PLAYER}{KUN}!\p"
@@ -289,14 +272,14 @@ EverGrandeCity_ChampionsRoom_Text_BrendanYouveWon:
 	.string "You've beaten the CHAMPION?$"
 
 EverGrandeCity_ChampionsRoom_Text_BirchArriveRatePokedex:
-	.string "PROF. BIRCH: See?\n"
+	.string "PROF. ANAHI: See?\n"
 	.string "What did I tell you, {RIVAL}?\p"
 	.string "Didn't I tell you that you don't need\n"
 	.string "to worry about {PLAYER}{KUN}?\p"
 	.string "… … … … … … … …\n"
 	.string "{PLAYER}{KUN}, you've finally done it.\p"
-	.string "When I heard that you defeated your\n"
-	.string "own father at the PETALBURG GYM,\l"
+	.string "When I heard that you defeated\n"
+	.string "Tião at his CASA DO RIO,\l"
 	.string "I thought perhaps you had a chance…\p"
 	.string "But to think you've actually become\n"
 	.string "the CHAMPION!\p"
@@ -305,22 +288,22 @@ EverGrandeCity_ChampionsRoom_Text_BirchArriveRatePokedex:
 	.string "Here, let me see.$"
 
 EverGrandeCity_ChampionsRoom_Text_BirchCongratulations:
-	.string "PROF. BIRCH: Anyways,\n"
+	.string "PROF. ANAHI: Anyways,\n"
 	.string "congratulations!\p"
 	.string "Now, go proudly into the final room!$"
 
 EverGrandeCity_ChampionsRoom_Text_WallaceComeWithMe:
-	.string "WALLACE: {PLAYER}{KUN}…\p"
+	.string "AUGUSTO: {PLAYER}{KUN}…\p"
 	.string "No, let me rephrase that properly.\p"
 	.string "The new CHAMPION!\p"
 	.string "Come with me.$"
 
 EverGrandeCity_ChampionsRoom_Text_WallaceWaitOutside:
-	.string "WALLACE: I'm sorry, but…\p"
+	.string "AUGUSTO: I'm sorry, but…\p"
 	.string "From here on, only those TRAINERS who\n"
 	.string "have become CHAMPIONS may enter.\p"
 	.string "You'll have to wait outside with\n"
-	.string "PROF. BIRCH.$"
+	.string "PROF. ANAHI.$"
 
 EverGrandeCity_ChampionsRoom_Text_MayCongratulations:
 	.string "MAY: Groan…\p"
@@ -338,3 +321,58 @@ EverGrandeCity_ChampionsRoom_Text_BrendanCongratulations:
 	.string "{PLAYER}, way to go!\n"
 	.string "Congratulations!$"
 
+@ Bond payoff: Augusto reads how this run was actually played. He is looking for
+@ someone who can rebuild the oath without repeating possession, so a plural
+@ bond is the answer he most wanted to hear.
+EverGrandeCity_ChampionsRoom_EventScript_BondReading::
+	specialvar VAR_RESULT, GetAraunaDominantBond
+	call_if_eq VAR_RESULT, 1, EverGrandeCity_ChampionsRoom_EventScript_BondCourage
+	call_if_eq VAR_RESULT, 2, EverGrandeCity_ChampionsRoom_EventScript_BondWisdom
+	call_if_eq VAR_RESULT, 3, EverGrandeCity_ChampionsRoom_EventScript_BondCompassion
+	call_if_eq VAR_RESULT, 0, EverGrandeCity_ChampionsRoom_EventScript_BondPlural
+	return
+
+EverGrandeCity_ChampionsRoom_EventScript_BondCourage::
+	msgbox EverGrandeCity_ChampionsRoom_Text_BondCourage, MSGBOX_DEFAULT
+	return
+
+EverGrandeCity_ChampionsRoom_EventScript_BondWisdom::
+	msgbox EverGrandeCity_ChampionsRoom_Text_BondWisdom, MSGBOX_DEFAULT
+	return
+
+EverGrandeCity_ChampionsRoom_EventScript_BondCompassion::
+	msgbox EverGrandeCity_ChampionsRoom_Text_BondCompassion, MSGBOX_DEFAULT
+	return
+
+EverGrandeCity_ChampionsRoom_EventScript_BondPlural::
+	msgbox EverGrandeCity_ChampionsRoom_Text_BondPlural, MSGBOX_DEFAULT
+	return
+
+EverGrandeCity_ChampionsRoom_Text_BondCourage:
+	.string "AUGUSTO: You arrive before you\n"
+	.string "are certain.\p"
+	.string "So did I, once.\p"
+	.string "Make sure somebody is standing\n"
+	.string "close enough to pull you back.$"
+
+EverGrandeCity_ChampionsRoom_Text_BondWisdom:
+	.string "AUGUSTO: You look for the\n"
+	.string "thread before pulling the knot.\p"
+	.string "Keep doing that.\p"
+	.string "The CONSORTIUM's whole trade is\n"
+	.string "people who could not be\l"
+	.string "bothered to check.$"
+
+EverGrandeCity_ChampionsRoom_Text_BondCompassion:
+	.string "AUGUSTO: You stay with the ones\n"
+	.string "still inside the problem.\p"
+	.string "That is the part I skipped.\p"
+	.string "I saved a thing, and I left\n"
+	.string "the people who paid for it.$"
+
+EverGrandeCity_ChampionsRoom_Text_BondPlural:
+	.string "AUGUSTO: I cannot name your\n"
+	.string "method. You keep changing it.\p"
+	.string "Good.\p"
+	.string "A single voice is exactly what\n"
+	.string "broke the first oath.$"

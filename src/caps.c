@@ -5,37 +5,54 @@
 #include "pokemon.h"
 
 
-u32 GetCurrentLevelCap(void)
+bool32 IsAraunaNextBossLevelCapAvailable(void)
 {
-    static const u32 sLevelCapFlagMap[][2] =
-    {
-        {FLAG_BADGE01_GET, 15},
-        {FLAG_BADGE02_GET, 19},
+    return !FlagGet(FLAG_ARAUNA_BADGE_UIVO);
+}
+
+static u32 GetFullCampaignLevelCap(void)
+{
+    // Full-campaign badge/boss curve for the Houses beyond the implemented
+    // vertical slice. The Arauna badges also set the matching FLAG_BADGE0x_GET,
+    // so the standard flag list keeps a sane target once the bespoke story caps
+    // run out. Each entry is the level cap while that badge is still unearned.
+    static const u16 sLevelCapFlagMap[][2] = {
+        {FLAG_BADGE01_GET, 15}, // Dona Celina's Mare Trial
+        {FLAG_BADGE02_GET, 19}, // Hermit's Uivo Trial
         {FLAG_BADGE03_GET, 24},
         {FLAG_BADGE04_GET, 29},
         {FLAG_BADGE05_GET, 31},
         {FLAG_BADGE06_GET, 33},
         {FLAG_BADGE07_GET, 42},
         {FLAG_BADGE08_GET, 46},
-        {FLAG_IS_CHAMPION, 58},
+        {FLAG_IS_CHAMPION,  58},
     };
-
-    u32 i;
 
     if (B_LEVEL_CAP_TYPE == LEVEL_CAP_FLAG_LIST)
     {
-        for (i = 0; i < ARRAY_COUNT(sLevelCapFlagMap); i++)
+        for (u32 index = 0; index < ARRAY_COUNT(sLevelCapFlagMap); index++)
         {
-            if (!FlagGet(sLevelCapFlagMap[i][0]))
-                return sLevelCapFlagMap[i][1];
+            if (!FlagGet(sLevelCapFlagMap[index][0]))
+                return sLevelCapFlagMap[index][1];
         }
     }
-    else if (B_LEVEL_CAP_TYPE == LEVEL_CAP_VARIABLE)
-    {
-        return VarGet(B_LEVEL_CAP_VARIABLE);
-    }
-
     return MAX_LEVEL;
+}
+
+u32 GetCurrentLevelCap(void)
+{
+    // The implemented vertical slice uses finer story pacing than the badge
+    // list can express; once its last mandatory boss is behind us, defer to the
+    // full-campaign badge curve.
+    if (!IsAraunaNextBossLevelCapAvailable())
+        return GetFullCampaignLevelCap();
+    if (FlagGet(FLAG_ARAUNA_BADGE_MARE))
+        return 27; // Hermit's Uivo Trial
+    if (FlagGet(FLAG_ARAUNA_PORTO_AGENT_DEFEATED))
+        return 17; // Dona Celina's Mare Trial
+    if (VarGet(VAR_ARAUNA_STORY_STAGE) >= 8)
+        return 12; // Consortium Agent
+    return 7; // Ciro
 }
 
 u32 GetSoftLevelCapExpValue(u32 level, u32 expValue)

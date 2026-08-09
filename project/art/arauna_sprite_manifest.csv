@@ -1,0 +1,387 @@
+dex,name,types,biome_or_region,reference_file,reference_status,reference_width,reference_height,reference_mode,production_status,needs_front,needs_back,needs_icon,needs_shiny,needs_animation
+001,Caramelo,fire,Periferia de Arauana,001_caramelo.png,available,1024,1024,RGB,approved-integrated,no,no,no,no,no
+002,Caramelão,fire,Periferia de Arauana,002_caramelao.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+003,Draguará,fire/dragon,Serra de Arauana,003_draguara.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+004,Querô,water,Pampas de Arauana,004_quero.png,available,1024,1024,RGB,approved-integrated,no,no,no,no,no
+005,Queribela,water/bug,Banhados de Arauana,005_queribela.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+006,Terolibra,water/bug,Banhados de Arauana,006_terolibra.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+007,Pimpau,grass,Cerrado de Arauana,007_pimpau.png,available,1024,1024,RGB,approved-integrated,no,no,no,no,no
+008,Bicopau,grass,Cerrado de Arauana,008_bicopau.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+009,Petropico,grass/rock,Chapadas de Arauana,009_petropico.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+010,Formilim,bug,Cerrado de Arauana,010_formilim.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+011,Saúvarco,bug/ground,Cerrado de Arauana,011_sauvarco.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+012,Capivim,water/normal,Rios de Arauana,012_capivim.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+013,Tucanhão,flying/grass,Mata Atlântica de Arauana,013_tucanhao.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+014,Sagüim,normal,Mata Atlântica de Arauana,014_saguim.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+015,Micuiras,normal/psychic,Mata Atlântica de Arauana,015_micuiras.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+016,Boitatá,fire/ghost,Campos queimados de Arauana,016_boitata.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+017,Curupim,grass/fairy,Mata Atlântica de Arauana,017_curupim.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+018,Curupira,grass/fairy,Mata Atlântica de Arauana,018_curupira.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+019,Iaraço,water/fairy,Rio Solimões de Arauana,019_iaraco.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+020,Sacizinho,dark/flying,Cerrado de Arauana,020_sacizinho.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+021,Cactula,grass/poison,Caatinga de Arauana,021_cactula.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+022,Muriçoco,bug/poison,Amazônia de Arauana,022_muricoco.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+023,Onçaléu,dark,Pantanal de Arauana,023_oncaleu.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+024,Tamanduá,ground/steel,Cerrado de Arauana,024_tamandua.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+025,Botim,water,Rio Amazonas de Arauana,025_botim.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+026,Botão,water/psychic,Rio Amazonas de Arauana,026_botao.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+027,Botogaláu,water/psychic,Rio Amazonas de Arauana,027_botogalau.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+028,Tatuim,ground,Caatinga de Arauana,028_tatuim.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+029,Tatubola,ground/steel,Caatinga de Arauana,029_tatubola.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+030,Tatuçu,ground/steel,Caatinga de Arauana,030_tatucu.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+031,Ararinha,flying,Pantanal de Arauana,031_ararinha.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+032,Arará,flying/fire,Pantanal de Arauana,032_arara.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+033,Araracanga,flying/fire,Pantanal de Arauana,033_araracanga.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+034,Jacarim,water,Pantanal de Arauana,034_jacarim.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+035,Jacarão,water/dark,Pantanal de Arauana,035_jacarao.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+036,Jacarodon,water/dragon,Pantanal de Arauana,036_jacarodon.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+037,Preguicim,grass,Mata Atlântica de Arauana,037_preguicim.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+038,Preguicão,grass/psychic,Mata Atlântica de Arauana,038_preguicao.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+039,Bicho-Preguiça,grass/psychic,Mata Atlântica de Arauana,039_bicho-preguica.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+040,Papaguim,flying,Mata Atlântica de Arauana,040_papaguim.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+041,Papagaio,flying/psychic,Mata Atlântica de Arauana,041_papagaio.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+042,Papagaião,flying/psychic,Mata Atlântica de Arauana,042_papagaiao.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+043,Antinha,normal,Amazônia de Arauana,043_antinha.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+044,Anta,normal/water,Amazônia de Arauana,044_anta.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+045,Antaraú,normal/water,Amazônia de Arauana,045_antarau.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+046,Sucurim,water/poison,Rios de Arauana,046_sucurim.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+047,Sucuri,water/poison,Rios de Arauana,047_sucuri.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+048,Boiuna,water/dragon,Amazônia de Arauana,048_boiuna.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+049,Borbolim,bug,Mata Atlântica de Arauana,049_borbolim.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+050,Casulete,bug,Mata Atlântica de Arauana,050_casulete.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+051,Morphália,bug/fairy,Mata Atlântica de Arauana,051_morphalia.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+052,Guaracim,fire,Cerrado de Arauana,052_guaracim.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+053,Guará,fire/normal,Cerrado de Arauana,053_guara.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+054,Guaraflama,fire/ghost,Cerrado de Arauana,054_guaraflama.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+055,Peixim,water,Amazônia de Arauana,055_peixim.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+056,Peixeboi,water,Amazônia de Arauana,056_peixeboi.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+057,Mãe-d'Água,water/fairy,Amazônia de Arauana,057_mae-d-agua.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+058,Mandim,water,Rios de Arauana,058_mandim.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+059,Mandí,water/poison,Rios de Arauana,059_mandi.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+060,Mandubé,water/dark,Rios de Arauana,060_mandube.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+061,Preguim,normal,Mata Atlântica de Arauana,061_preguim.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+062,Prego,fighting/normal,Mata Atlântica de Arauana,062_prego.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+063,Pregarcanjo,fighting/psychic,Mata Atlântica de Arauana,063_pregarcanjo.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+064,Aranin,bug,Cerrado de Arauana,064_aranin.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+065,Caraninha,bug/poison,Cerrado de Arauana,065_caraninha.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+066,Caranga,bug/poison,Cerrado de Arauana,066_caranga.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+067,Gatim,normal,Mata Atlântica de Arauana,067_gatim.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+068,Gato-do-mato,normal/dark,Mata Atlântica de Arauana,068_gato-do-mato.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+069,Jaguatirica,dark/normal,Mata Atlântica de Arauana,069_jaguatirica.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+070,Cutim,normal,Mata Atlântica de Arauana,070_cutim.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+071,Cutia,normal,Mata Atlântica de Arauana,071_cutia.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+072,Paca,normal/dark,Mata Atlântica de Arauana,072_paca.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+073,Formigão,bug/fighting,Amazônia de Arauana,073_formigao.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+074,Marimbondo,bug/poison,Cerrado de Arauana,074_marimbondo.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+075,Abelhinha,bug/flying,Cerrado de Arauana,075_abelhinha.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+076,Quatim,normal,Mata Atlântica de Arauana,076_quatim.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+077,Quati,normal/dark,Mata Atlântica de Arauana,077_quati.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+078,Coati,dark/ground,Cavernas de Arauana,078_coati.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+079,Gambá,poison/normal,Mata Atlântica de Arauana,079_gamba.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+080,Cangambá,poison/dark,Cerrado de Arauana,080_cangamba.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+081,Sarué,poison/ghost,Cerrado de Arauana,081_sarue.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+082,Tuquinho,flying,Amazônia de Arauana,082_tuquinho.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+083,Aracari,flying/grass,Amazônia de Arauana,083_aracari.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+084,Curicaca,flying/normal,Pantanal de Arauana,084_curicaca.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+085,Sapim,water,Rios de Arauana,085_sapim.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+086,Sapão,water/poison,Cerrado de Arauana,086_sapao.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+087,Cururu,poison/ground,Cerrado de Arauana,087_cururu.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+088,Teiuzim,normal,Cerrado de Arauana,088_teiuzim.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+089,Teiú,normal/dark,Cerrado de Arauana,089_teiu.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+090,Camaleão,normal/psychic,Amazônia de Arauana,090_camaleao.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+091,Morcim,flying,Cavernas de Arauana,091_morcim.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+092,Morcego,flying/psychic,Cavernas de Arauana,092_morcego.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+093,Vampiro,flying/dark,Cavernas de Arauana,093_vampiro.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+094,Piuiuim,flying,Pantanal de Arauana,094_piuiuim.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+095,Tuiuiú,flying/water,Pantanal de Arauana,095_tuiuiu.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+096,Colhereiro,flying/fairy,Pantanal de Arauana,096_colhereiro.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+097,Mulinha,normal,Cerrado de Arauana,097_mulinha.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+098,Mula,normal/fire,Cerrado de Arauana,098_mula.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+099,Mula-sem-Cabeça,fire/ghost,Cerrado de Arauana,099_mula-sem-cabeca.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+100,Corcovado,rock/dragon,Serra de Arauana,100_corcovado.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+101,Cerválo,normal,Caatinga de Arauana,101_cervalo.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+102,Catingueiro,normal/grass,Caatinga de Arauana,102_catingueiro.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+103,Suçuapara,normal/fighting,Mata Atlântica de Arauana,103_sucuapara.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+104,Cabocim,water,Rios de Arauana,104_cabocim.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+105,Caboclo,water/fighting,Rios de Arauana,105_caboclo.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+106,Cangaço,dark/flying,Caatinga de Arauana,106_cangaco.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+107,Xangô,electric/fighting,Serra de Arauana,107_xango.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+108,Iemanjá,water/fairy,Litoral de Arauana,108_iemanja.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+109,Oxum,water/fairy,Rios de Arauana,109_oxum.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+110,Ogum,steel/fire,Serra de Arauana,110_ogum.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+111,Cavalim,normal,Pampas de Arauana,111_cavalim.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+112,Cavalgado,normal/fighting,Pampas de Arauana,112_cavalgado.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+113,Zebuim,normal,Pampas de Arauana,113_zebuim.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+114,Zebu,normal/fighting,Pampas de Arauana,114_zebu.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+115,Ovelhinha,normal/fairy,Pampas de Arauana,115_ovelhinha.png,available,512,512,RGB,queued,yes,yes,yes,yes,yes
+116,Cabrita,normal/rock,Caatinga de Arauana,116_cabrita.png,available,512,512,RGB,queued,yes,yes,yes,yes,yes
+117,Chocalhão,poison,Caatinga de Arauana,117_chocalhao.png,available,512,512,RGB,queued,yes,yes,yes,yes,yes
+118,Cascavelim,poison,Caatinga de Arauana,118_cascavelim.png,available,512,512,RGB,queued,yes,yes,yes,yes,yes
+119,Cascavão,poison/dark,Caatinga de Arauana,119_cascavao.png,available,512,512,RGB,queued,yes,yes,yes,yes,yes
+120,Jararaca,poison/grass,Mata Atlântica de Arauana,120_jararaca.png,available,512,512,RGB,queued,yes,yes,yes,yes,yes
+121,Pirarim,water,Amazônia de Arauana,121_pirarim.png,available,512,512,RGB,queued,yes,yes,yes,yes,yes
+122,Pirarucu,water/dragon,Amazônia de Arauana,122_pirarucu.png,available,512,512,RGB,queued,yes,yes,yes,yes,yes
+123,Piranha,water/dark,Rios de Arauana,123_piranha.png,available,512,512,RGB,queued,yes,yes,yes,yes,yes
+124,Tambaqui,water/normal,Amazônia de Arauana,124_tambaqui.png,available,512,512,RGB,queued,yes,yes,yes,yes,yes
+125,Aruanã,water/flying,Amazônia de Arauana,125_aruana.png,available,512,512,RGB,queued,yes,yes,yes,yes,yes
+126,Poraquê,electric/water,Amazônia de Arauana,126_poraque.png,available,512,512,RGB,queued,yes,yes,yes,yes,yes
+127,Curimbatá,water/ground,Rios de Arauana,127_curimbata.png,available,512,512,RGB,queued,yes,yes,yes,yes,yes
+128,Traíra,water/dark,Rios de Arauana,128_traira.png,available,512,512,RGB,queued,yes,yes,yes,yes,yes
+129,Dourado,water/fighting,Rios de Arauana,129_dourado.png,available,512,512,RGB,queued,yes,yes,yes,yes,yes
+130,Tucunaré,water/dark,Amazônia de Arauana,130_tucunare.png,available,512,512,RGB,queued,yes,yes,yes,yes,yes
+131,Pacu,water/grass,Amazônia de Arauana,131_pacu.png,available,512,512,RGB,queued,yes,yes,yes,yes,yes
+132,Matrinxã,water/normal,Rios de Arauana,132_matrinxa.png,available,512,512,RGB,queued,yes,yes,yes,yes,yes
+133,Piau,water/normal,Rios de Arauana,133_piau.png,available,512,512,RGB,queued,yes,yes,yes,yes,yes
+134,Cascudo,water/rock,Rios de Arauana,134_cascudo.png,available,512,512,RGB,queued,yes,yes,yes,yes,yes
+135,Acará,water/psychic,Amazônia de Arauana,135_acara.png,available,512,512,RGB,queued,yes,yes,yes,yes,yes
+136,Vagalumim,bug/electric,Mata Atlântica de Arauana,136_vagalumim.png,available,512,512,RGB,queued,yes,yes,yes,yes,yes
+137,Vagalume,bug/electric,Mata Atlântica de Arauana,137_vagalume.png,available,512,512,RGB,queued,yes,yes,yes,yes,yes
+138,Cigarrinho,bug,Mata Atlântica de Arauana,138_cigarrinho.png,available,512,512,RGB,queued,yes,yes,yes,yes,yes
+139,Cigarrão,bug/flying,Mata Atlântica de Arauana,139_cigarrao.png,available,512,512,RGB,queued,yes,yes,yes,yes,yes
+140,Louvadinha,bug,Cerrado de Arauana,140_louvadinha.png,available,512,512,RGB,queued,yes,yes,yes,yes,yes
+141,Louvadeus,bug/psychic,Cerrado de Arauana,141_louvadeus.png,available,512,512,RGB,queued,yes,yes,yes,yes,yes
+142,Escorpim,poison,Caatinga de Arauana,142_escorpim.png,available,512,512,RGB,queued,yes,yes,yes,yes,yes
+143,Escorpião,poison/dark,Caatinga de Arauana,143_escorpiao.png,available,512,512,RGB,queued,yes,yes,yes,yes,yes
+144,Caramulão,bug/water,Amazônia de Arauana,144_caramulao.png,available,512,512,RGB,queued,yes,yes,yes,yes,yes
+145,Piolhão,bug/poison,Mata Atlântica de Arauana,145_piolhao.png,available,512,512,RGB,queued,yes,yes,yes,yes,yes
+146,Barata,bug/dark,Cidades de Arauana,146_barata.png,available,512,512,RGB,queued,yes,yes,yes,yes,yes
+147,Grilim,bug,Cerrado de Arauana,147_grilim.png,available,512,512,RGB,queued,yes,yes,yes,yes,yes
+148,Grilão,bug/normal,Cerrado de Arauana,148_grilao.png,available,512,512,RGB,queued,yes,yes,yes,yes,yes
+149,Aranhão,bug/poison,Mata Atlântica de Arauana,149_aranhao.png,available,512,512,RGB,queued,yes,yes,yes,yes,yes
+150,Vespão,bug/flying,Amazônia de Arauana,150_vespao.png,available,512,512,RGB,queued,yes,yes,yes,yes,yes
+151,Marimbondão,bug/poison,Cerrado de Arauana,151_marimbondao.png,available,512,512,RGB,queued,yes,yes,yes,yes,yes
+152,Traça,bug/normal,Cidades de Arauana,152_traca.png,available,512,512,RGB,queued,yes,yes,yes,yes,yes
+153,Corupião,bug/ground,Cerrado de Arauana,153_corupiao.png,available,512,512,RGB,queued,yes,yes,yes,yes,yes
+154,Cupinzim,bug/ground,Cerrado de Arauana,154_cupinzim.png,available,512,512,RGB,queued,yes,yes,yes,yes,yes
+155,Formigão-Preto,bug/dark,Cerrado de Arauana,155_formigao-preto.png,available,512,512,RGB,queued,yes,yes,yes,yes,yes
+156,Beija-flor,flying/fairy,Mata Atlântica de Arauana,156_beija-flor.png,available,512,512,RGB,queued,yes,yes,yes,yes,yes
+157,Sabiá,flying/normal,Mata Atlântica de Arauana,157_sabia.png,available,512,512,RGB,queued,yes,yes,yes,yes,yes
+158,Bem-te-vi,flying/normal,Cidades de Arauana,158_bem-te-vi.png,available,512,512,RGB,queued,yes,yes,yes,yes,yes
+159,Urutau,flying/ghost,Mata Atlântica de Arauana,159_urutau.png,available,512,512,RGB,queued,yes,yes,yes,yes,yes
+160,Carcará,flying/dark,Caatinga de Arauana,160_carcara.png,available,512,512,RGB,queued,yes,yes,yes,yes,yes
+161,Gavião,flying/fighting,Amazônia de Arauana,161_gaviao.png,available,512,512,RGB,queued,yes,yes,yes,yes,yes
+162,Urubu,flying/dark,Cidades de Arauana,162_urubu.png,available,512,512,RGB,queued,yes,yes,yes,yes,yes
+163,Corurupim,flying/psychic,Mata Atlântica de Arauana,163_corurupim.png,available,512,512,RGB,queued,yes,yes,yes,yes,yes
+164,Coruja,flying/psychic,Cerrado de Arauana,164_coruja.png,available,512,512,RGB,queued,yes,yes,yes,yes,yes
+165,Jaburu,flying/water,Pantanal de Arauana,165_jaburu.png,available,512,512,RGB,queued,yes,yes,yes,yes,yes
+166,Ema,normal/flying,Cerrado de Arauana,166_ema.png,available,512,512,RGB,queued,yes,yes,yes,yes,yes
+167,Seriema,flying/fighting,Cerrado de Arauana,167_seriema.png,available,512,512,RGB,queued,yes,yes,yes,yes,yes
+168,Anú,flying/dark,Cerrado de Arauana,168_anu.png,available,512,512,RGB,queued,yes,yes,yes,yes,yes
+169,Trinca-Ferro,flying/steel,Mata Atlântica de Arauana,169_trinca-ferro.png,available,512,512,RGB,queued,yes,yes,yes,yes,yes
+170,Curió,flying/normal,Cerrado de Arauana,170_curio.png,available,512,512,RGB,queued,yes,yes,yes,yes,yes
+171,Sanhaço,flying/fairy,Mata Atlântica de Arauana,171_sanhaco.png,available,512,512,RGB,queued,yes,yes,yes,yes,yes
+172,Papa-Formiga,flying/bug,Mata Atlântica de Arauana,172_papa-formiga.png,available,512,512,RGB,queued,yes,yes,yes,yes,yes
+173,Choca,flying/normal,Mata Atlântica de Arauana,173_choca.png,available,512,512,RGB,queued,yes,yes,yes,yes,yes
+174,Bacurau,flying/dark,Cerrado de Arauana,174_bacurau.png,available,512,512,RGB,queued,yes,yes,yes,yes,yes
+175,João-de-Barro,flying/ground,Cerrado de Arauana,175_joao-de-barro.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+176,Sementim,grass,Cerrado de Arauana,176_sementim.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+177,Muda,grass,Cerrado de Arauana,177_muda.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+178,Jequitibá,grass/rock,Mata Atlântica de Arauana,178_jequitiba.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+179,Bromelinha,grass/water,Mata Atlântica de Arauana,179_bromelinha.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+180,Orquidina,grass/fairy,Amazônia de Arauana,180_orquidina.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+181,Vitóriarégia,grass/water,Amazônia de Arauana,181_vitoriaregia.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+182,Ipê,grass/fairy,Cerrado de Arauana,182_ipe.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+183,Cipó,grass/poison,Amazônia de Arauana,183_cipo.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+184,Palmito,grass/fighting,Mata Atlântica de Arauana,184_palmito.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+185,Babaçu,grass/ground,Caatinga de Arauana,185_babacu.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+186,Buriti,grass/water,Cerrado de Arauana,186_buriti.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+187,Cajuzim,grass,Caatinga de Arauana,187_cajuzim.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+188,Cajueiro,grass/fire,Caatinga de Arauana,188_cajueiro.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+189,Açaí,grass/dark,Amazônia de Arauana,189_acai.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+190,Cacauim,grass,Amazônia de Arauana,190_cacauim.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+191,Cacaueiro,grass/normal,Amazônia de Arauana,191_cacaueiro.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+192,Guaraná,grass/electric,Amazônia de Arauana,192_guarana.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+193,Mate,grass/water,Pampas de Arauana,193_mate.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+194,Milho,grass/normal,Cerrado de Arauana,194_milho.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+195,Mandioca,grass/ground,Cerrado de Arauana,195_mandioca.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+196,Pedrinha,rock,Rios de Arauana,196_pedrinha.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+197,Rochão,rock,Chapadas de Arauana,197_rochao.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+198,Cristalim,rock/fairy,Cavernas de Arauana,198_cristalim.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+199,Ametista,rock/psychic,Serra de Arauana,199_ametista.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+200,Ouríço,steel/electric,Serra de Arauana,200_ourico.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+201,Ferrolho,steel/ground,Serra de Arauana,201_ferrolho.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+202,Diamantina,rock/fairy,Serra de Arauana,202_diamantina.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+203,Bauxito,steel/ground,Amazônia de Arauana,203_bauxito.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+204,Manganim,steel/dark,Serra de Arauana,204_manganim.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+205,Salitre,rock/water,Litoral de Arauana,205_salitre.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+206,Enxofrino,fire/poison,Serra de Arauana,206_enxofrino.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+207,Argilim,ground,Cerrado de Arauana,207_argilim.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+208,Boneco,ground/psychic,Cerrado de Arauana,208_boneco.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+209,Estalactite,rock/water,Cavernas de Arauana,209_estalactite.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+210,Estalagmite,rock/ground,Cavernas de Arauana,210_estalagmite.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+211,Fóssil,rock/dragon,Chapadas de Arauana,211_fossil.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+212,Meteorito,rock/psychic,Serra de Arauana,212_meteorito.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+213,Vulcanite,fire/rock,Serra de Arauana,213_vulcanite.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+214,Marmim,rock/fairy,Serra de Arauana,214_marmim.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+215,Granito,rock/fighting,Chapadas de Arauana,215_granito.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+216,Caranguim,water,Litoral de Arauana,216_caranguim.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+217,Guaiamum,water/ground,Litoral de Arauana,217_guaiamum.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+218,Siri,water/fighting,Litoral de Arauana,218_siri.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+219,Camarão,water,Litoral de Arauana,219_camarao.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+220,Polvim,water/psychic,Litoral de Arauana,220_polvim.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+221,Polvão,water/psychic,Litoral de Arauana,221_polvao.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+222,Águaviva,water/poison,Litoral de Arauana,222_aguaviva.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+223,Cavalim-Marinho,water/fairy,Litoral de Arauana,223_cavalim-marinho.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+224,Tartaruguim,water,Litoral de Arauana,224_tartaruguim.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+225,Tartaruga,water/rock,Litoral de Arauana,225_tartaruga.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+226,Golfinho,water/psychic,Litoral de Arauana,226_golfinho.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+227,Baleia,water/normal,Litoral de Arauana,227_baleia.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+228,Tubarim,water/dark,Litoral de Arauana,228_tubarim.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+229,Tubarão,water/dark,Litoral de Arauana,229_tubarao.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+230,Arraia,water/electric,Litoral de Arauana,230_arraia.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+231,Peixe-Espada,water/steel,Litoral de Arauana,231_peixe-espada.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+232,Pargo,water/fire,Litoral de Arauana,232_pargo.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+233,Pescadão,water/dark,Litoral de Arauana,233_pescadao.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+234,Loirinha,ghost/fairy,Cidades de Arauana,234_loirinha.png,available,1024,1024,RGBA,queued,yes,yes,yes,yes,yes
+235,Cuca,dark/psychic,Cerrado de Arauana,235_cuca.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+236,Bicho-Papão,dark/ghost,Cidades de Arauana,236_bicho-papao.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+237,Lobisomem,dark/normal,Cerrado de Arauana,237_lobisomem.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+238,Corpo-Seco,ghost/dark,Cerrado de Arauana,238_corpo-seco.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+239,Mão-Peluda,ghost/fighting,Cidades de Arauana,239_mao-peluda.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+240,Perna-Cabeluda,ghost/normal,Cidades de Arauana,240_perna-cabeluda.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+241,Comadre,ghost/fairy,Cerrado de Arauana,241_comadre.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+242,Anhangá,ghost/grass,Amazônia de Arauana,242_anhanga.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+243,Jurupari,dark/fairy,Amazônia de Arauana,243_jurupari.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+244,Tupã,electric/dragon,Serra de Arauana,244_tupa.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+245,Jaci,fairy/psychic,Serra de Arauana,245_jaci.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+246,Guaraci,fire/fairy,Serra de Arauana,246_guaraci.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+247,Rudá,fairy/psychic,Litoral de Arauana,247_ruda.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+248,Aluá,water/poison,Amazônia de Arauana,248_alua.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+249,Jenipapo,dark/grass,Amazônia de Arauana,249_jenipapo.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+250,Urucum,fire/grass,Amazônia de Arauana,250_urucum.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+251,Caipora,grass/fighting,Cerrado de Arauana,251_caipora.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+252,Anhangá-Pitã,ghost/fire,Amazônia de Arauana,252_anhanga-pita.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+253,Yara-Pindá,water/fairy,Amazônia de Arauana,253_yara-pinda.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+254,Pisadeira,ghost/fighting,Cidades de Arauana,254_pisadeira.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+255,Zumbi,ghost/fighting,Serra de Arauana,255_zumbi.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+256,Iemanjá-Pequena,water/fairy,Litoral de Arauana,256_iemanja-pequena.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+257,Ossanha,grass/fairy,Mata Atlântica de Arauana,257_ossanha.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+258,Oxalá,normal/fairy,Serra de Arauana,258_oxala.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+259,Saciamigo,dark/fairy,Cerrado de Arauana,259_saciamigo.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+260,Sacipererê,dark/fairy,Cerrado de Arauana,260_saciperere.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+261,Curupira-Ancião,grass/fairy,Amazônia de Arauana,261_curupira-anciao.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+262,Caipora-Fêmea,grass/fighting,Cerrado de Arauana,262_caipora-femea.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+263,Pomba-Gira,dark/fairy,Cidades de Arauana,263_pomba-gira.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+264,Exu,dark/fighting,Cidades de Arauana,264_exu.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+265,Preto-Velho,ghost/psychic,Cidades de Arauana,265_preto-velho.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+266,Caboclo-Guerreiro,grass/fighting,Mata Atlântica de Arauana,266_caboclo-guerreiro.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+267,Marinheiro,water/dark,Litoral de Arauana,267_marinheiro.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+268,Baiano,fire/fighting,Litoral de Arauana,268_baiano.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+269,Cangaceiro,dark/fighting,Caatinga de Arauana,269_cangaceiro.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+270,Beata,fairy/psychic,Caatinga de Arauana,270_beata.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+271,Menino-Deus,fairy/normal,Cerrado de Arauana,271_menino-deus.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+272,Rei-Momo,normal/fire,Cidades de Arauana,272_rei-momo.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+273,Bumba-Meu-Boi,normal/fire,Amazônia de Arauana,273_bumba-meu-boi.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+274,Reisado,fairy/normal,Caatinga de Arauana,274_reisado.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+275,Frevinho,fighting/fire,Litoral de Arauana,275_frevinho.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+276,Maracatu,dark/fairy,Litoral de Arauana,276_maracatu.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+277,Congada,fighting/fire,Cerrado de Arauana,277_congada.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+278,Folião,normal/fairy,Cidades de Arauana,278_foliao.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+279,Onçuma,dark/ghost,Amazônia de Arauana,279_oncuma.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+280,Sucuriaçu,water/dragon,Amazônia de Arauana,280_sucuriacu.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+281,Pirarumbá,water/dragon,Amazônia de Arauana,281_pirarumba.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+282,Draguará-Alfa,fire/dragon,Serra de Arauana,282_draguara-alfa.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+283,Terolibra-Rainha,water/bug,Banhados de Arauana,283_terolibra-rainha.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+284,Petropico-Ancião,grass/rock,Chapadas de Arauana,284_petropico-anciao.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+285,Boitatá-Puro,fire/dragon,Cerrado de Arauana,285_boitata-puro.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+286,Iara-Mãe,water/fairy,Amazônia de Arauana,286_iara-mae.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+287,Curupira-Rei,grass/fairy,Mata Atlântica de Arauana,287_curupira-rei.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+288,Saci-Rei,dark/fairy,Cerrado de Arauana,288_saci-rei.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+289,Anhangaú,ghost/grass,Amazônia de Arauana,289_anhangau.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+290,Muirá-Kytã,grass/fairy,Amazônia de Arauana,290_muira-kyta.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+291,Cobra-Norato,water/dragon,Amazônia de Arauana,291_cobra-norato.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+292,Mapinguari,grass/fighting,Amazônia de Arauana,292_mapinguari.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+293,Ipupiara,water/dark,Litoral de Arauana,293_ipupiara.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+294,Uirapuru,flying/fairy,Amazônia de Arauana,294_uirapuru.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+295,Muiraquitã,rock/fairy,Amazônia de Arauana,295_muiraquita.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+296,Amazona,fighting/fairy,Amazônia de Arauana,296_amazona.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+297,Corcovado-Ancião,rock/dragon,Serra de Arauana,297_corcovado-anciao.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+298,Cristo,fairy/psychic,Serra de Arauana,298_cristo.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+299,Ratão,dark/poison,Cidades de Arauana,299_ratao.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+300,Pombim,flying/normal,Cidades de Arauana,300_pombim.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+301,Pombão,flying/poison,Cidades de Arauana,301_pombao.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+302,Baratão,bug/flying,Cidades de Arauana,302_baratao.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+303,Mosquim,bug/poison,Cidades de Arauana,303_mosquim.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+304,Cão-Bravo,dark/normal,Cidades de Arauana,304_cao-bravo.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+305,Gato-Preto,dark/psychic,Cidades de Arauana,305_gato-preto.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+306,Perereca,water/poison,Cidades de Arauana,306_perereca.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+307,Lagartixa,normal/psychic,Cidades de Arauana,307_lagartixa.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+308,Traça-Papel,bug/psychic,Cidades de Arauana,308_traca-papel.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+309,Poeirão,ground/dark,Cidades de Arauana,309_poeirao.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+310,Ferrugem,steel/water,Cidades de Arauana,310_ferrugem.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+311,Fumacento,poison/flying,Cidades de Arauana,311_fumacento.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+312,Óleoso,poison/water,Litoral de Arauana,312_oleoso.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+313,Lixão,poison/ground,Cidades de Arauana,313_lixao.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+314,Chorume,poison/dark,Cidades de Arauana,314_chorume.png,available,1024,1024,RGB,queued,yes,yes,yes,yes,yes
+315,Bituca,fire/poison,Cidades de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+316,Latinha,steel/normal,Cidades de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+317,Sacolim,poison/flying,Cidades de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+318,Garrafão,water/poison,Rios de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+319,Netzero,flying/poison,Litoral de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+320,Pilhoso,electric/poison,Cidades de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+321,Cabofio,electric/steel,Cidades de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+322,Bugão,bug/dark,Cidades de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+323,Aluminio,steel/flying,Cidades de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+324,Concretim,rock/steel,Cidades de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+325,Bueiro,water/dark,Cidades de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+326,Sinal,electric/psychic,Cidades de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+327,Poste,steel/electric,Cidades de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+328,Grafiteiro,dark/fairy,Cidades de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+329,Guaraciana,fire/fairy,Serra de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+330,Jaciana,fairy/water,Serra de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+331,Tupanaú,electric/dragon,Serra de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+332,Iaraú,water/fairy,Amazônia de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+333,Kuarahy,fire/psychic,Serra de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+334,Yasy,fairy/dark,Serra de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+335,Rudarauna,fairy/psychic,Litoral de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+336,Perybé,water/psychic,Amazônia de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+337,Arauanaú,fairy/dragon,Serra de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+338,Verdejante,grass/dragon,Amazônia de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+339,Chuvão,water/electric,Serra de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+340,Solzão,fire/ground,Caatinga de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+341,Ventania,flying/dragon,Cerrado de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+342,Terraão,ground/rock,Chapadas de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+343,Fogaréu,fire/dragon,Serra de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+344,Marulho,water/dragon,Litoral de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+345,Alvorecer,fairy/fire,Litoral de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+346,Poente,dark/fire,Litoral de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+347,Estrelinha,fairy/psychic,Serra de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+348,Arauanamon,dragon/fairy,Serra de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+349,Aracuã,flying/normal,Cerrado de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+350,Bugio,normal/dark,Amazônia de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+351,Tuim,grass,Cerrado de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+352,Periquitão,grass/flying,Cerrado de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+353,Ararunão,grass/flying,Amazônia de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+354,Preazinho,normal,Pampas de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+355,Capivarão,normal/water,Rios de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+356,Tamanduí,bug,Cerrado de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+357,Tamanduá,bug/ground,Cerrado de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+358,Tamanduão,bug/ground,Cerrado de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+359,Preguicinha,grass,Amazônia de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+360,Preguiçoso,grass/psychic,Amazônia de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+361,Beija-Flor,fairy/flying,Cerrado de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+362,Beija-Luz,fairy/fire,Cerrado de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+363,Beija-Sol,fairy/fire,Serra de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+364,Sarará,fairy/water,Litoral de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+365,Cambota,fighting/normal,Cidades de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+366,Berimbau,fairy/fighting,Cidades de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+367,Atabaque,fighting/ground,Cidades de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+368,Pandeirim,fairy/normal,Cidades de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+369,Sanfoninha,normal/fairy,Sertão de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+370,Violeiro,grass/fairy,Sertão de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+371,Zabumba,ground/fighting,Sertão de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+372,Cordelim,psychic/fairy,Sertão de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+373,Rendeira,fairy/bug,Litoral de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+374,Escamoso,water/dark,Rios de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+375,Piranhita,water/dark,Rios de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+376,Boitatã,fire/dragon,Cerrado de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+377,Piraruaçu,water/dragon,Amazônia de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+378,Mata-Mata,grass/dragon,Amazônia de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+379,Solaris,fire/psychic,Serra de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+380,Selenê,dark/psychic,Serra de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+381,Zumbi-Rei,fighting/dark,Cidades de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+382,Iemanjã,water/fairy,Litoral de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+383,Oxumará,dragon/fairy,Litoral de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+384,Curupixel,grass/fairy,Amazônia de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+385,Sacinho,dark/fairy,Cerrado de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes
+386,Arauá,dragon/psychic,Serra de Arauana,,missing,,,,blocked-no-reference,yes,yes,yes,yes,yes

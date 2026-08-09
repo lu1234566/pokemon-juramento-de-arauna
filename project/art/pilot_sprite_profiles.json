@@ -1,0 +1,42 @@
+{
+  "formatVersion": 1,
+  "status": "approved-integrated",
+  "species": [
+    {
+      "dex": 1,
+      "name": "Caramelo",
+      "targetDexSlot": 1,
+      "frontPicSize": [56, 56],
+      "frontPicYOffset": 5,
+      "backPicSize": [56, 56],
+      "backPicYOffset": 5,
+      "iconPalIndex": 3,
+      "frontAnimId": "ANIM_V_JUMPS_SMALL",
+      "backAnimId": "BACK_ANIM_CONCAVE_ARC_SMALL"
+    },
+    {
+      "dex": 4,
+      "name": "Querô",
+      "targetDexSlot": 4,
+      "frontPicSize": [48, 56],
+      "frontPicYOffset": 5,
+      "backPicSize": [48, 56],
+      "backPicYOffset": 5,
+      "iconPalIndex": 2,
+      "frontAnimId": "ANIM_V_JUMPS_BIG",
+      "backAnimId": "BACK_ANIM_CONCAVE_ARC_SMALL"
+    },
+    {
+      "dex": 7,
+      "name": "Pimpau",
+      "targetDexSlot": 7,
+      "frontPicSize": [56, 56],
+      "frontPicYOffset": 5,
+      "backPicSize": [56, 56],
+      "backPicYOffset": 5,
+      "iconPalIndex": 5,
+      "frontAnimId": "ANIM_H_PIVOT",
+      "backAnimId": "BACK_ANIM_H_SLIDE"
+    }
+  ]
+}

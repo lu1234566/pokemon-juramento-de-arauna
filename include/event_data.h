@@ -50,4 +50,9 @@ extern u16 gSpecialVar_Unused_0x8014;
 
 extern const u16 gBadgeFlags[NUM_BADGES];
 
+
+// Arauna: returns the dominant Bond axis (0 = plural/none, 1 = Courage,
+// 2 = Wisdom, 3 = Compassion). Ties read as the plural bond.
+u16 GetAraunaDominantBond(void);
+
 #endif // GUARD_EVENT_DATA_H

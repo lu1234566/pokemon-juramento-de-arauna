@@ -1,8 +1,8 @@
 # Roteiro de teste — shells do vertical slice
 
-Este roteiro valida somente navegação, colisões básicas e independência dos seis
-mapas do greybox. Escolha dos iniciais, encontros, história e arte final ainda
-não fazem parte desta etapa.
+Este roteiro valida navegação, colisões, independência dos seis mapas e o reset
+visual da Vila das Araucárias para os tilesets originais `General + Petalburg`.
+Escolha dos iniciais, encontros e história final ainda não fazem parte desta etapa.
 
 ## Preparação
 
@@ -26,11 +26,13 @@ não fazem parte desta etapa.
 
 - [ ] Os seis mapas aparecem no grupo de Arauna no Porymap.
 - [ ] Cada mapa aponta para um layout com nome e arquivos próprios.
+- [ ] A vila usa `gTileset_General` + `gTileset_Petalburg`, sem depender do tileset autoral.
 - [ ] Casa e centro não preservam NPCs ou eventos dos mapas usados como base.
 - [ ] Rota, ruína e câmara não preservam itens, treinadores ou scripts de Hoenn.
 - [ ] Toda entrada coloca o jogador em uma célula transitável.
 - [ ] Toda saída possui caminho de volta.
-- [ ] Caminhos externos acionam transições sem depender de metatile de porta.
+- [ ] Casa e centro usam portas animadas originais do Emerald.
+- [ ] A estrada leste aciona a transição somente na borda do mapa.
 - [ ] O acesso técnico de Littleroot continua entrando na vila.
 - [ ] A pesquisadora, Nilo e o item técnico da vila continuam funcionando.
 - [ ] O percurso completo pode ser feito sem menu de debug.

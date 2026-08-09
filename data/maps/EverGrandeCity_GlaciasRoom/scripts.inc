@@ -48,6 +48,7 @@ EverGrandeCity_GlaciasRoom_EventScript_Glacia::
 
 EverGrandeCity_GlaciasRoom_EventScript_PostBattleSpeech::
 	msgbox EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT
+	call_if_eq VAR_ARAUNA_BOND_CHOICE, 2, EverGrandeCity_GlaciasRoom_EventScript_BondWisdom
 	release
 	end
 
@@ -55,29 +56,42 @@ EverGrandeCity_GlaciasRoom_EventScript_Defeated::
 	setflag FLAG_DEFEATED_ELITE_4_GLACIA
 	call PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles
 	msgbox EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT
+	call_if_eq VAR_ARAUNA_BOND_CHOICE, 2, EverGrandeCity_GlaciasRoom_EventScript_BondWisdom
 	release
 	end
 
 EverGrandeCity_GlaciasRoom_Text_IntroSpeech:
-	.string "Welcome, my name is GLACIA\n"
-	.string "of the ELITE FOUR.\p"
-	.string "I've traveled from afar to HOENN\n"
-	.string "so that I may hone my ice skills.\p"
-	.string "But all I have seen are challenges by\n"
-	.string "weak TRAINERS and their POKéMON.\p"
-	.string "What about you?\p"
-	.string "It would please me to no end if I could\n"
-	.string "go all out against you!$"
+	.string "I am CLARA, of the ELITE.\p"
+	.string "A document can lie.\p"
+	.string "A memory can fail.\p"
+	.string "That does not make either one\n"
+	.string "useless.\p"
+	.string "It makes you responsible for\n"
+	.string "crossing one against the other.$"
 
 EverGrandeCity_GlaciasRoom_Text_Defeat:
-	.string "You and your POKéMON…\n"
-	.string "How hot your spirits burn!\p"
-	.string "The all-consuming heat overwhelms.\p"
-	.string "It's no surprise that my icy skills\n"
-	.string "failed to harm you.$"
+	.string "You did not choose the most\n"
+	.string "comfortable proof.\p"
+	.string "You chose the one that survived\n"
+	.string "the questions.$"
 
 EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech:
-	.string "Advance to the next room.\p"
-	.string "And there, confirm the truly fearsome\n"
-	.string "side of the POKéMON LEAGUE.$"
+	.string "Cross-check everything, even\n"
+	.string "what you wish were true.\p"
+	.string "Advance to the next room.$"
 
+@ Bond payoff: the Wisdom rescue preserved the siphon logs, and the Guardian of
+@ Proof is the one person in Arauna who would have read them.
+EverGrandeCity_GlaciasRoom_EventScript_BondWisdom::
+	msgbox EverGrandeCity_GlaciasRoom_Text_BondWisdom, MSGBOX_DEFAULT
+	return
+
+EverGrandeCity_GlaciasRoom_Text_BondWisdom:
+	.string "CLARA: One more thing.\p"
+	.string "The logs from that first ruin\n"
+	.string "survived.\p"
+	.string "Somebody shut a siphon down\n"
+	.string "without smashing it open.\p"
+	.string "I have read them.\p"
+	.string "They are most of the reason\n"
+	.string "I believe you.$"

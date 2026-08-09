@@ -197,3 +197,70 @@ Route114_Text_FossilManiacsHouseSign:
 Route114_Text_LanettesHouse:
 	.string "LANETTE'S HOUSE$"
 
+@ Arauna reuses Route 114 unchanged as the Serra do Uivo ascent.
+AraunaSerra_EventScript_DeafHermit::
+	goto_if_lt VAR_ARAUNA_ARC_STAGE, 20, Route114_EventScript_RoarGentleman
+	lock
+	faceplayer
+	goto_if_eq VAR_ARAUNA_ARC_STAGE, 20, AraunaSerra_EventScript_HermitNoSigns
+	goto_if_eq VAR_ARAUNA_ARC_STAGE, 21, AraunaSerra_EventScript_HermitSigns
+	goto_if_eq VAR_ARAUNA_ARC_STAGE, 22, AraunaSerra_EventScript_HermitCaveDirection
+	goto_if_eq VAR_ARAUNA_ARC_STAGE, 23, AraunaSerra_EventScript_HermitAwardBadge
+	msgbox AraunaSerra_Text_HermitAfterBadge, MSGBOX_DEFAULT
+	call_if_eq VAR_ARAUNA_BOND_CHOICE, 3, AraunaSerra_EventScript_HermitBondCompassion
+	release
+	end
+
+@ Bond payoff: the hermit names, himself, that you waited for an answer.
+AraunaSerra_EventScript_HermitBondCompassion::
+	msgbox AraunaSerra_Text_HermitBondCompassion, MSGBOX_DEFAULT
+	return
+
+AraunaSerra_EventScript_HermitNoSigns::
+	msgbox AraunaSerra_Text_HermitNoSigns, MSGBOX_DEFAULT
+	release
+	end
+
+AraunaSerra_EventScript_HermitSigns::
+	msgbox AraunaSerra_Text_PlayerSigns, MSGBOX_DEFAULT
+	msgbox AraunaSerra_Text_HermitUnderstands, MSGBOX_DEFAULT
+	setflag FLAG_ARAUNA_SERRA_HERMIT_UNDERSTOOD
+	setvar VAR_ARAUNA_ARC_STAGE, 22
+	release
+	end
+
+AraunaSerra_EventScript_HermitCaveDirection::
+	msgbox AraunaSerra_Text_HermitCaveDirection, MSGBOX_DEFAULT
+	release
+	end
+
+AraunaSerra_EventScript_HermitAwardBadge::
+	goto_if_set FLAG_ARAUNA_UIVO_TRIAL_COMPLETE, AraunaSerra_EventScript_HermitGrantBadge
+	msgbox AraunaSerra_Text_UivoTrialInvitation, MSGBOX_DEFAULT
+	trainerbattle_single TRAINER_ARAUNA_UIVO_TRIAL, AraunaSerra_Text_UivoTrialBattleIntro, AraunaSerra_Text_UivoTrialBattleDefeated
+	setflag FLAG_ARAUNA_UIVO_TRIAL_COMPLETE
+	msgbox AraunaSerra_Text_UivoTrialComplete, MSGBOX_DEFAULT
+
+AraunaSerra_EventScript_HermitGrantBadge::
+	msgbox AraunaSerra_Text_HermitAwardBadge, MSGBOX_DEFAULT
+	setflag FLAG_ARAUNA_BADGE_UIVO
+	setflag FLAG_BADGE02_GET
+	setflag FLAG_ARAUNA_SERRA_CHAPTER_RECEIVED
+	setvar VAR_ARAUNA_BADGE_COUNT, 2
+	setvar VAR_ARAUNA_ARC_STAGE, 24
+	playfanfare MUS_OBTAIN_BADGE
+	waitfanfare
+	msgbox AraunaSerra_Text_UivoBadgeReceived, MSGBOX_DEFAULT
+	release
+	end
+
+AraunaSerra_EventScript_HermitCompanion::
+	goto_if_lt VAR_ARAUNA_ARC_STAGE, 20, Route114_EventScript_Poochyena
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_POOCHYENA, CRY_MODE_NORMAL
+	msgbox AraunaSerra_Text_HermitCompanion, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end

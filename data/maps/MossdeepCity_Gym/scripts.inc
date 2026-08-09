@@ -370,18 +370,17 @@ MossdeepCity_Gym_EventScript_RedFloorSwitch::
 	end
 
 MossdeepCity_Gym_Text_GymGuideAdvice:
-	.string "Yo, how's it going, CHAMPION-bound\n"
-	.string "{PLAYER}?\p"
-	.string "The GYM LEADERS here use\n"
-	.string "PSYCHIC-type POKéMON.\p"
-	.string "If you go up against them with\n"
-	.string "FIGHTING- or POISON-type POKéMON,\l"
-	.string "they'll inflict horrible damage!\p"
-	.string "Plus, they'll come at you with\n"
-	.string "outstanding combination attacks.\p"
-	.string "If you want to win, you'll need to show\n"
-	.string "them how tight you are with your\l"
-	.string "POKéMON. Go for it!$"
+	.string "Yo, champion-bound {PLAYER}!\p"
+	.string "This is the CASA DO ESPELHO,\n"
+	.string "over the waters of M'BOI.\p"
+	.string "The GÊMEAS, DINA and LINA, keep\n"
+	.string "the two margins of the river.\p"
+	.string "They remember the same water,\n"
+	.string "but not from the same place, so\l"
+	.string "their versions never agree.\p"
+	.string "To earn their Charter you must\n"
+	.string "face both. Bring DARK or BUG\l"
+	.string "types and stay sharp. Go!$"
 
 MossdeepCity_Gym_Text_GymGuidePostVictory:
 	.string "Wow, you're astounding!\n"
@@ -396,8 +395,13 @@ MossdeepCity_Gym_Text_PrestonDefeat:
 	.string "I must temper my spirit again!$"
 
 MossdeepCity_Gym_Text_PrestonPostBattle:
-	.string "The indecisive lose.\n"
-	.string "That's my warning to you.$"
+	.string "DINA remembers the water\n"
+	.string "arriving slowly.\p"
+	.string "LINA remembers it arriving all\n"
+	.string "at once.\p"
+	.string "Neither of them is lying.\p"
+	.string "The high margin had time.\n"
+	.string "The low one didn't.$"
 
 MossdeepCity_Gym_Text_VirgilIntro:
 	.string "Let me see your talent!$"
@@ -406,10 +410,13 @@ MossdeepCity_Gym_Text_VirgilDefeat:
 	.string "You possess spectacular talent!$"
 
 MossdeepCity_Gym_Text_VirgilPostBattle:
-	.string "If there are prodigies in the world,\n"
-	.string "then our GYM LEADERS are them!\p"
-	.string "However, you may be even more talented\n"
-	.string "than them…$"
+	.string "The flood used to have a pulse.\n"
+	.string "Rise, spread, fall. Fish knew\l"
+	.string "it. So did we.\p"
+	.string "Now it rises when the schedule\n"
+	.string "says rise.\p"
+	.string "They turned a season into a\n"
+	.string "production calendar.$"
 
 MossdeepCity_Gym_Text_BlakeIntro:
 	.string "Fufufufu… Watch me levitate a POKé\n"
@@ -423,12 +430,14 @@ MossdeepCity_Gym_Text_BlakeDefeat:
 	.string "of sync, too!$"
 
 MossdeepCity_Gym_Text_BlakePostBattle:
-	.string "A POKé BALL was too heavy to lift\n"
-	.string "psychically. But this dust bunny…\p"
-	.string "Whoooooooooooooooh!\n"
-	.string "… … … … … …\p"
-	.string "No, I'm not cheating!\n"
-	.string "I didn't blow on it! Honestly!$"
+	.string "The lower archive floods every\n"
+	.string "release now.\p"
+	.string "You can go in and grab the\n"
+	.string "papers, sure.\p"
+	.string "But the people who kept them\n"
+	.string "live down there too.\p"
+	.string "Saving proof and abandoning\n"
+	.string "them is not saving anything.$"
 
 MossdeepCity_Gym_Text_HannahIntro:
 	.string "When you lose to me, don't be too hard\n"
@@ -551,103 +560,99 @@ MossdeepCity_Gym_Text_NicholasPostBattle:
 	.string "invincible POKéMON power next.$"
 
 MossdeepCity_Gym_Text_TateAndLizaIntro:
-	.string "TATE: Hehehe… Were you surprised?\p"
-	.string "LIZA: Fufufu… Were you surprised?\p"
-	.string "TATE: That there are two GYM LEADERS?\n"
-	.string "LIZA: That there are two GYM LEADERS?\p"
-	.string "TATE: We're twins!\n"
-	.string "LIZA: We're twins!\p"
-	.string "TATE: We don't need to talk because…\n"
-	.string "LIZA: We can each determine what…\p"
-	.string "TATE: The other is thinking…\n"
-	.string "LIZA: All in our minds!\p"
-	.string "TATE: This combination of ours…\n"
-	.string "LIZA: Can you beat it?$"
+	.string "DINA: We remember the same\n"
+	.string "water.\p"
+	.string "LINA: But not from the same\n"
+	.string "place.\p"
+	.string "GÊMEAS: If you want a Charter\n"
+	.string "of ours, face both versions.$"
 
 MossdeepCity_Gym_Text_TateAndLizaDefeat:
-	.string "TATE: What?! Our combination…\n"
-	.string "LIZA: Was shattered!\p"
-	.string "TATE: It can't be helped. You've won…\n"
-	.string "LIZA: So, in recognition, take this.$"
+	.string "LINA: We do not need to finish\n"
+	.string "each other's sentences.\p"
+	.string "DINA: We need to let the other\n"
+	.string "one finish.\p"
+	.string "GÊMEAS: Two marks. One Charter.\n"
+	.string "No version standing alone.$"
 
 MossdeepCity_Gym_Text_ReceivedMindBadge:
 	.string "{PLAYER} received the MIND BADGE\n"
-	.string "from TATE and LIZA.$"
+	.string "from DINA and LINA.$"
 
 MossdeepCity_Gym_Text_ExplainMindBadgeTakeThis:
-	.string "TATE: The MIND BADGE enhances the\n"
+	.string "DINA: The MIND BADGE enhances the\n"
 	.string "SP. ATK and SP. DEF of POKéMON.\p"
-	.string "LIZA: It also lets you use the HM move\n"
+	.string "LINA: It also lets you use the HM move\n"
 	.string "DIVE outside of battle.\p"
-	.string "TATE: You should also take this, too.$"
+	.string "DINA: You should also take this, too.$"
 
 MossdeepCity_Gym_Text_ExplainCalmMind:
-	.string "TATE: That TM04 contains…\n"
-	.string "LIZA: CALM MIND!\p"
-	.string "TATE: It raises SP. ATK and…\n"
-	.string "LIZA: It raises SP. DEF!\p"
-	.string "TATE: It's a move that's perfect…\n"
-	.string "LIZA: For PSYCHIC POKéMON!\p"
+	.string "DINA: That TM04 contains…\n"
+	.string "LINA: CALM MIND!\p"
+	.string "DINA: It raises SP. ATK and…\n"
+	.string "LINA: It raises SP. DEF!\p"
+	.string "DINA: It's a move that's perfect…\n"
+	.string "LINA: For PSYCHIC POKéMON!\p"
 	.string "… … … … … …$"
 
 MossdeepCity_Gym_Text_RegisteredTateAndLiza:
-	.string "Registered GYM LEADERS TATE & LIZA\n"
+	.string "Registered GYM LEADERS DINA & LINA\n"
 	.string "in the POKéNAV.$"
 
 MossdeepCity_Gym_Text_TateAndLizaPostBattle:
-	.string "TATE: Looks like the bond between you\n"
+	.string "DINA: Looks like the bond between you\n"
 	.string "and your POKéMON is far stronger than\l"
 	.string "the bond that we share as twins.\p"
-	.string "LIZA: You will become even stronger!\n"
+	.string "LINA: You will become even stronger!\n"
 	.string "We've battled you, so we know.$"
 
 MossdeepCity_Gym_Text_TateAndLizaNeedTwoMons:
-	.string "TATE: Hehehe… Were you surprised?\p"
-	.string "LIZA: That there are two GYM LEADERS?\p"
-	.string "TATE: Oops, you have only one…\n"
-	.string "LIZA: POKéMON that can battle.\p"
-	.string "TATE: We can't battle that way!\p"
-	.string "LIZA: If you want to challenge us,\n"
+	.string "DINA: Hehehe… Were you surprised?\p"
+	.string "LINA: That there are two GYM LEADERS?\p"
+	.string "DINA: Oops, you have only one…\n"
+	.string "LINA: POKéMON that can battle.\p"
+	.string "DINA: We can't battle that way!\p"
+	.string "LINA: If you want to challenge us,\n"
 	.string "bring some more POKéMON.$"
 
 MossdeepCity_Gym_Text_GymStatue:
-	.string "MOSSDEEP CITY POKéMON GYM$"
+	.string "CASA DO ESPELHO$"
 
 MossdeepCity_Gym_Text_GymStatueCertified:
-	.string "MOSSDEEP CITY POKéMON GYM\p"
-	.string "LIZA AND TATE'S CERTIFIED TRAINERS:\n"
+	.string "CASA DO ESPELHO\p"
+	.string "LINA AND DINA'S CERTIFIED TRAINERS:\n"
 	.string "{PLAYER}$"
 
 MossdeepCity_Gym_Text_TateAndLizaPreRematch:
-	.string "TATE: POKéMON…\n"
-	.string "LIZA: POKéMON…\p"
-	.string "TATE: By changing the party's mix…\n"
-	.string "LIZA: The battle style changes.\p"
-	.string "TATE: But me…\n"
-	.string "LIZA: But me…\p"
-	.string "TATE: I'll always be with LIZA!\n"
-	.string "LIZA: I'll always be with TATE!\p"
-	.string "TATE: Our combination…\n"
-	.string "LIZA: We'll show you again and again!$"
+	.string "DINA: POKéMON…\n"
+	.string "LINA: POKéMON…\p"
+	.string "DINA: By changing the party's mix…\n"
+	.string "LINA: The battle style changes.\p"
+	.string "DINA: But me…\n"
+	.string "LINA: But me…\p"
+	.string "DINA: I'll always be with LINA!\n"
+	.string "LINA: I'll always be with DINA!\p"
+	.string "DINA: Our combination…\n"
+	.string "LINA: We'll show you again and again!$"
 
 MossdeepCity_Gym_Text_TateAndLizaRematchDefeat:
-	.string "TATE: You and your POKéMON…\n"
-	.string "LIZA: It's as if you were siblings!$"
+	.string "DINA: You and your POKéMON…\n"
+	.string "LINA: It's as if you were siblings!$"
 
 MossdeepCity_Gym_Text_TateAndLizaPostRematch:
-	.string "TATE: You can knock us down,\n"
+	.string "DINA: You can knock us down,\n"
 	.string "but we'll never stay down!\p"
-	.string "LIZA: Because the two of us,\n"
+	.string "LINA: Because the two of us,\n"
 	.string "we always support each other!$"
 
 MossdeepCity_Gym_Text_TateAndLizaRematchNeedTwoMons:
-	.string "TATE: You're back again…\n"
-	.string "LIZA: You're back again…\p"
-	.string "TATE: To give us a rematch.\n"
-	.string "LIZA: To give us a rematch.\p"
-	.string "TATE: But…\n"
-	.string "LIZA: For our match…\p"
-	.string "TATE: You brought just one POKéMON!\n"
-	.string "LIZA: You brought just one POKéMON!\p"
-	.string "TATE: We need you to bring at least…\n"
-	.string "LIZA: Two POKéMON when you come back.$"
+	.string "DINA: You're back again…\n"
+	.string "LINA: You're back again…\p"
+	.string "DINA: To give us a rematch.\n"
+	.string "LINA: To give us a rematch.\p"
+	.string "DINA: But…\n"
+	.string "LINA: For our match…\p"
+	.string "DINA: You brought just one POKéMON!\n"
+	.string "LINA: You brought just one POKéMON!\p"
+	.string "DINA: We need you to bring at least…\n"
+	.string "LINA: Two POKéMON when you come back.$"
