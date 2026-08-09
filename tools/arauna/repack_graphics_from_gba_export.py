@@ -44,6 +44,17 @@ SPECIES = 386
 ALPHA_THRESHOLD = 128
 PALETTE_COLOURS = 15        # plus the transparent index 0
 
+# The shared 15-colour palette is built from the front+back pixels together. For
+# most species a plain union balances both, but a handful of colour-rich backs
+# came out with a mean colour error just over the ~20 curation threshold because
+# the front dominated the palette. Replicating the back pixels this many times in
+# the k-means input buys the back more palette slots while keeping the front's
+# error <= ~15. Chosen per species by a front<=15 / minimise-back sweep; species
+# not listed use weight 1. The remaining over-threshold backs (19, 33, 45, 135,
+# 277, 362) are genuinely palette-limited: their front already needs ~16+ of the
+# 15 slots, so lowering the back would push the front error higher than the gain.
+BACK_WEIGHT = {32: 2, 42: 3, 47: 4, 54: 3, 105: 2, 158: 4, 174: 4, 195: 4}
+
 
 # --- image helpers ---------------------------------------------------------
 def sprite_rgba(archive: zipfile.ZipFile, member: str) -> np.ndarray:
@@ -221,7 +232,10 @@ def build_header() -> str:
         if front.shape[:2] != (128, 64) or back.shape[:2] != (64, 64):
             raise SystemExit(f"#{num}: unexpected sizes front={front.shape} back={back.shape}")
 
-        pal = build_palette(np.concatenate([opaque_pixels(front), opaque_pixels(back)], 0), seed=num)
+        back_px = opaque_pixels(back)
+        weight = BACK_WEIGHT.get(num, 1)
+        pal = build_palette(
+            np.concatenate([opaque_pixels(front), np.repeat(back_px, weight, 0)], 0), seed=num)
         idx_front = remap(front, pal)
         idx_back = remap(back, pal)
         shiny = derive_shiny_palette(pal, front, sprite_rgba(archive, members[("shiny", num)]))
