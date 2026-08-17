@@ -1,4 +1,4 @@
-name: Publish validated Hoenn city remodel
+name: Publish stronger Hoenn city remodel v2
 
 on:
   push:
@@ -34,7 +34,7 @@ jobs:
           for city in cities:
               json.loads(Path(f'data/maps/{city}/map.json').read_text())
           assert Path('docs/EMERALD_CITY_REMODEL.md').exists()
-          print('16/16 city maps validated; identical generation already passed full Emerald build in previous run')
+          print('16/16 city maps validated; same map pipeline already passed a full Emerald build')
           PY
 
       - name: Publish staging branch
@@ -44,5 +44,5 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add data/layouts data/maps docs/EMERALD_CITY_REMODEL.md
-          git commit -m 'Remodel all Hoenn cities with vanilla Emerald tiles'
+          git commit -m 'Remodel all Hoenn cities with vanilla Emerald tiles v2'
           git push origin HEAD:generated/city-remodel --force
