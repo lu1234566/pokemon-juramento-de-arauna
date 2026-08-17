@@ -1,0 +1,81 @@
+name: Generate Ciro phase 1 overworld
+
+on:
+  push:
+    branches:
+      - tool/ciro-phase1-generator
+    paths:
+      - tools/generate_ciro_phase1.py
+      - .github/workflows/generate-ciro-phase1.yml
+
+permissions:
+  contents: write
+
+jobs:
+  generate-ciro:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout generator branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Start from current validated main
+        shell: bash
+        run: |
+          set -euo pipefail
+          cp tools/generate_ciro_phase1.py /tmp/generate_ciro_phase1.py
+          git fetch origin main
+          git checkout -B generated/ciro-overworld-phase1 origin/main
+
+      - name: Generate dedicated Ciro rival graphics
+        run: python3 /tmp/generate_ciro_phase1.py
+
+      - name: Validate patch scope
+        shell: bash
+        run: |
+          set -euo pipefail
+          git diff --check
+          test -f graphics/object_events/pics/people/ciro/phase1_brendan.png
+          test -f graphics/object_events/pics/people/ciro/phase1_may.png
+          grep -q 'gObjectEventPic_CiroBrendan' src/data/object_events/object_event_graphics.h
+          grep -q 'gObjectEventPic_CiroMay' src/data/object_events/object_event_graphics.h
+          grep -q 'sPicTable_CiroBrendan' src/data/object_events/object_event_pic_tables.h
+          grep -q 'sPicTable_CiroMay' src/data/object_events/object_event_pic_tables.h
+          grep -q '.images = sPicTable_CiroBrendan,' src/data/object_events/object_event_graphics_info.h
+          grep -q '.images = sPicTable_CiroMay,' src/data/object_events/object_event_graphics_info.h
+          EXPECTED='graphics/object_events/pics/people/ciro/phase1_brendan.png
+graphics/object_events/pics/people/ciro/phase1_may.png
+src/data/object_events/object_event_graphics.h
+src/data/object_events/object_event_graphics_info.h
+src/data/object_events/object_event_pic_tables.h'
+          ACTUAL="$(git status --short | sed 's/^...//' | sort)"
+          if [ "$ACTUAL" != "$(printf '%b\n' "$EXPECTED" | sort)" ]; then
+            echo 'Unexpected generated file set:'
+            printf '%s\n' "$ACTUAL"
+            exit 1
+          fi
+
+      - name: Install build dependencies
+        shell: bash
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gcc-arm-none-eabi binutils-arm-none-eabi libpng-dev
+
+      - name: Build ROM with Ciro phase 1
+        run: make -j2 MODERN=1 COMPARE=0 all
+
+      - name: Publish validated generated branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add graphics/object_events/pics/people/ciro/phase1_brendan.png \
+                  graphics/object_events/pics/people/ciro/phase1_may.png \
+                  src/data/object_events/object_event_graphics.h \
+                  src/data/object_events/object_event_graphics_info.h \
+                  src/data/object_events/object_event_pic_tables.h
+          git commit -m 'Give Ciro dedicated phase 1 rival overworld graphics'
+          git push origin HEAD:generated/ciro-overworld-phase1 --force
