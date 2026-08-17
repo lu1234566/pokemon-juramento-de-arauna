@@ -56,24 +56,24 @@ RustboroCity_House1_Text_IllTradeIfYouWant:
 	.string "a {STR_VAR_1} if you want.$"
 
 RustboroCity_House1_Text_PleaseBeGoodToMyPokemon:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "Eheheh…\n"
+	.string "Please be good to my POKéMON.$"
 
 RustboroCity_House1_Text_DoesntLookLikeMonToMe:
-	.string "Voce vai continuar mesmo\nsabendo que SERRA DO UIVO\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "Huh? That doesn't look anything like\n"
+	.string "a {STR_VAR_1} to me.$"
 
 RustboroCity_House1_Text_YouDontWantToThatsOkay:
-	.string "Voce vai continuar mesmo\nsabendo que SERRA DO UIVO\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "Oh, if you don't want to, that's okay.\n"
+	.string "But my POKéMON is cute, you know…$"
 
 RustboroCity_House1_Text_AnyPokemonCanBeCute:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "Any POKéMON can be cute if you raise\n"
+	.string "it with care and kindness.$"
 
 RustboroCity_House1_Text_AllSortsOfPlaces:
-	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
-	.string "nomes antigos desapareceram\nquando elas chegaram.$"
+	.string "In all sorts of places, there are all\n"
+	.string "sorts of POKéMON and people.\p"
+	.string "I find that fascinating, so I go to all\n"
+	.string "sorts of places.$"
 

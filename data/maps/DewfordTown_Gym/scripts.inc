@@ -283,90 +283,101 @@ DewfordTown_Gym_EventScript_GymStatue::
 	end
 
 DewfordTown_Gym_Text_GymGuideAdvice:
-	.string "ADEMAR: O mar devolve coisas\nquando quer. Homem nenhum manda\p"
-	.string "na memoria da agua.$"
+	.string "Hey, how's it going, CHAMPION-\n"
+	.string "bound {PLAYER}?\p"
+	.string "DEWFORD's GYM LEADER BRAWLY commands\n"
+	.string "FIGHTING-type POKéMON.\p"
+	.string "Going against him with NORMAL-type\n"
+	.string "POKéMON is asking for trouble.\p"
+	.string "FIGHTING POKéMON will lay a serious\n"
+	.string "smack down on NORMAL POKéMON,\l"
+	.string "so be careful!\p"
+	.string "What's worse, the GYM is as dark as\n"
+	.string "the ocean floor.\p"
+	.string "But it will get brighter after defeating\n"
+	.string "the TRAINERS in your way.\p"
+	.string "Hey, okay, go for it!$"
 
 DewfordTown_Gym_Text_GymGuidePostVictory:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "Whoah! It's turned too bright in here!\p"
+	.string "Your future is bright, too!$"
 
 DewfordTown_Gym_Text_TakaoIntro:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "Might is right!\n"
+	.string "Come on!$"
 
 DewfordTown_Gym_Text_TakaoDefeat:
-	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
-	.string "nomes antigos desapareceram\nquando elas chegaram.$"
+	.string "Not enough power…$"
 
 DewfordTown_Gym_Text_TakaoPostBattle:
-	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
-	.string "nomes antigos desapareceram\nquando elas chegaram.$"
+	.string "Your skill overcame my strength!\n"
+	.string "Your technique is commendable!$"
 
 DewfordTown_Gym_Text_JocelynIntro:
-	.string "ADEMAR: O mar devolve coisas\nquando quer. Homem nenhum manda\p"
-	.string "na memoria da agua.$"
+	.string "There's no need for BRAWLY to be\n"
+	.string "involved!\p"
+	.string "I'll crush you!$"
 
 DewfordTown_Gym_Text_JocelynDefeat:
-	.string "Voce vai continuar mesmo\nsabendo que PORTO DAS REDES\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "But… How?\n"
+	.string "How could I lose so easily?$"
 
 DewfordTown_Gym_Text_JocelynPostBattle:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "I'm not going to waste this loss.\n"
+	.string "I'll use it to motivate me to train!\p"
+	.string "One day I'll become a GYM LEADER…\p"
+	.string "No, I'll become the POKéMON LEAGUE\n"
+	.string "CHAMPION!$"
 
 DewfordTown_Gym_Text_LauraIntro:
-	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
-	.string "nomes antigos desapareceram\nquando elas chegaram.$"
+	.string "Don't you dare brush me off!\n"
+	.string "It's not my fault if you cry!$"
 
 DewfordTown_Gym_Text_LauraDefeat:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "Waaaaaaah!\n"
+	.string "I lost!$"
 
 DewfordTown_Gym_Text_LauraPostBattle:
-	.string "ADEMAR: O mar devolve coisas\nquando quer. Homem nenhum manda\p"
-	.string "na memoria da agua.$"
+	.string "I battle in the dark to make my heart\n"
+	.string "stronger.\p"
+	.string "But because it's so dark, I can never\n"
+	.string "see BRAWLY's face…$"
 
 DewfordTown_Gym_Text_LilithIntro:
-	.string "Voce vai continuar mesmo\nsabendo que PORTO DAS REDES\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "Ufufu…\n"
+	.string "Are you stumbling around in the dark?$"
 
 DewfordTown_Gym_Text_LilithDefeat:
-	.string "O HORIZONTE consertou a estrada\ndaqui. Nao sei se isso torna\p"
-	.string "mais facil perguntar o que\nexiste debaixo dela.$"
+	.string "Oh, you…\n"
+	.string "I don't want to know you!$"
 
 DewfordTown_Gym_Text_LilithPostBattle:
-	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
-	.string "nomes antigos desapareceram\nquando elas chegaram.$"
+	.string "You deserve to stay lost and end up\n"
+	.string "back at the entrance again!$"
 
 DewfordTown_Gym_Text_BrendenIntro:
-	.string "Tem gente que chama de\nDESENCANTO. Eu chamava de\p"
-	.string "distraicao, ate minha mae\nesquecer a cancao que cantava\p"
-	.string "desde crianca.$"
+	.string "I'll show you the gumption of\n"
+	.string "a sailing man!$"
 
 DewfordTown_Gym_Text_BrendenDefeat:
-	.string "Voce vai continuar mesmo\nsabendo que PORTO DAS REDES\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "How'd this happen?\n"
+	.string "It's not like me to lose this way!$"
 
 DewfordTown_Gym_Text_BrendenPostBattle:
-	.string "Dona Zila diz que uma historia\nmuda toda vez que e contada.\p"
-	.string "Talvez seja por isso que ainda\nesta viva.$"
+	.string "Oh, aye! You're worthy of seeing\n"
+	.string "our GYM LEADER.$"
 
 DewfordTown_Gym_Text_CristianIntro:
-	.string "Tem gente que chama de\nDESENCANTO. Eu chamava de\p"
-	.string "distraicao, ate minha mae\nesquecer a cancao que cantava\p"
-	.string "desde crianca.$"
+	.string "If you mean to pass, it has to be\n"
+	.string "through me!$"
 
 DewfordTown_Gym_Text_CristianDefeat:
-	.string "Tem gente que chama de\nDESENCANTO. Eu chamava de\p"
-	.string "distraicao, ate minha mae\nesquecer a cancao que cantava\p"
-	.string "desde crianca.$"
+	.string "Grrrrr!\n"
+	.string "Vastly overpowered!$"
 
 DewfordTown_Gym_Text_CristianPostBattle:
-	.string "O HORIZONTE consertou a estrada\ndaqui. Nao sei se isso torna\p"
-	.string "mais facil perguntar o que\nexiste debaixo dela.$"
+	.string "You win!\n"
+	.string "Go after that BADGE!$"
 
 DewfordTown_Gym_Text_BrawlyIntro:
 	.string "ADEMAR: O mar devolve coisas\nquando quer. Homem nenhum manda\p"
@@ -381,32 +392,39 @@ DewfordTown_Gym_Text_ReceivedKnuckleBadge:
 	.string "from BRAWLY.$"
 
 DewfordTown_Gym_Text_KnuckleBadgeInfoTakeThis:
-	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
-	.string "nomes antigos desapareceram\nquando elas chegaram.$"
+	.string "The KNUCKLE BADGE makes all POKéMON\n"
+	.string "up to Level 30, even those you get in\l"
+	.string "trades, obey without question.\p"
+	.string "And, you'll be able to use the HM move\n"
+	.string "FLASH outside of battle.\p"
+	.string "If you'd like, use this TECHNICAL\n"
+	.string "MACHINE, too.$"
 
 DewfordTown_Gym_Text_ExplainBulkUp:
-	.string "Dona Zila diz que uma historia\nmuda toda vez que e contada.\p"
-	.string "Talvez seja por isso que ainda\nesta viva.$"
+	.string "That TM08 contains BULK UP.\p"
+	.string "It's a move that raises both ATTACK\n"
+	.string "and DEFENSE stats.\p"
+	.string "… … … … … …$"
 
 DewfordTown_Gym_Text_RegisteredBrawly:
-	.string "ADEMAR: O mar devolve coisas\nquando quer. Homem nenhum manda\p"
-	.string "na memoria da agua.$"
+	.string "Registered GYM LEADER BRAWLY\n"
+	.string "in the POKéNAV.$"
 
 DewfordTown_Gym_Text_BrawlyPostBattle:
 	.string "ADEMAR: O mar devolve coisas\nquando quer. Homem nenhum manda\p"
 	.string "na memoria da agua.$"
 
 DewfordTown_Gym_Text_GymStatue:
-	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
-	.string "nomes antigos desapareceram\nquando elas chegaram.$"
+	.string "DEWFORD TOWN POKéMON GYM$"
 
 DewfordTown_Gym_Text_GymStatueCertified:
-	.string "ADEMAR: O mar devolve coisas\nquando quer. Homem nenhum manda\p"
-	.string "na memoria da agua.$"
+	.string "DEWFORD TOWN POKéMON GYM\p"
+	.string "BRAWLY'S CERTIFIED TRAINERS:\n"
+	.string "{PLAYER}$"
 
 DewfordTown_Gym_Text_BrawlyPreRematch:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "ADEMAR: O mar devolve coisas\nquando quer. Homem nenhum manda\p"
+	.string "na memoria da agua.$"
 
 DewfordTown_Gym_Text_BrawlyRematchDefeat:
 	.string "ADEMAR: O mar devolve coisas\nquando quer. Homem nenhum manda\p"
@@ -417,5 +435,5 @@ DewfordTown_Gym_Text_BrawlyPostRematch:
 	.string "na memoria da agua.$"
 
 DewfordTown_Gym_Text_BrawlyRematchNeedTwoMons:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "ADEMAR: O mar devolve coisas\nquando quer. Homem nenhum manda\p"
+	.string "na memoria da agua.$"

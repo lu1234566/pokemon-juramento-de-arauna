@@ -20,20 +20,21 @@ SootopolisCity_House3_EventScript_Girl::
 	end
 
 SootopolisCity_House3_Text_JuanHasManyFansDoYou:
-	.string "AMALIA: Arauna sobreviveu a\nverdade pela metade por tempo\p"
-	.string "demais. A Liga tambem tem\ndividas com os nomes que foram\p"
-	.string "deixados para tras.$"
+	.string "DONA CELINA: Viver e aprender o\nque guardar e o que deixar\p"
+	.string "seguir. Escolher isso pelo\noutro e que nao cabe a nos.$"
 
 SootopolisCity_House3_Text_YouMustBePrettyStrong:
-	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
-	.string "nomes antigos desapareceram\nquando elas chegaram.$"
+	.string "Oh, then you must be pretty strong.$"
 
 SootopolisCity_House3_Text_LonesomeTryWorkingHarder:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "Oh, dear…\n"
+	.string "That's a little lonesome.\p"
+	.string "Try working a little harder to get\n"
+	.string "a fan following.$"
 
 SootopolisCity_House3_Text_TrainerFanClubWasWild:
-	.string "Tem gente que chama de\nDESENCANTO. Eu chamava de\p"
-	.string "distraicao, ate minha mae\nesquecer a cancao que cantava\p"
-	.string "desde crianca.$"
+	.string "Dedicated fans come over from even\n"
+	.string "outside of ARAUNA.\p"
+	.string "It was really wild when I went to the\n"
+	.string "TRAINER FAN CLUB in LILYCOVE.$"
 

@@ -422,116 +422,141 @@ MtPyre_Summit_EventScript_Grunt4::
 	end
 
 MtPyre_Summit_Text_Grunt1Intro:
-	.string "LEMBRANTE: Apagar uma historia\nporque ela incomoda quem manda\p"
-	.string "e apenas outra forma de\nviolencia.$"
+	.string "DONA ZILA: Nome repetido nao\nressuscita ninguem. Mas impede\p"
+	.string "que o silencio finja que aquela\npessoa nunca existiu.$"
 
 MtPyre_Summit_Text_Grunt1Defeat:
-	.string "LEMBRANTE: Apagar uma historia\nporque ela incomoda quem manda\p"
-	.string "e apenas outra forma de\nviolencia.$"
+	.string "DONA ZILA: Nome repetido nao\nressuscita ninguem. Mas impede\p"
+	.string "que o silencio finja que aquela\npessoa nunca existiu.$"
 
 MtPyre_Summit_Text_Grunt1PostBattle:
-	.string "Os nomes de mortos e\ndesaparecidos sao mantidos\p"
-	.string "aqui. O HORIZONTE comeca a\nretirar registros em nome da\p"
-	.string "estabilidade.$"
+	.string "DONA ZILA: Nome repetido nao\nressuscita ninguem. Mas impede\p"
+	.string "que o silencio finja que aquela\npessoa nunca existiu.$"
 
 MtPyre_Summit_Text_Grunt2Intro:
-	.string "LEMBRANTE: Apagar uma historia\nporque ela incomoda quem manda\p"
-	.string "e apenas outra forma de\nviolencia.$"
+	.string "Os nomes gravados aqui\npertencem a mortos,\p"
+	.string "desaparecidos e lugares que\ndeixaram de existir nos mapas\p"
+	.string "oficiais.$"
 
 MtPyre_Summit_Text_Grunt2Defeat:
-	.string "LEMBRANTE: Apagar uma historia\nporque ela incomoda quem manda\p"
-	.string "e apenas outra forma de\nviolencia.$"
+	.string "Um funcionario do HORIZONTE\nfotografa cada inscricao antes\p"
+	.string "de autorizar a retirada de\nalgumas placas.$"
 
 MtPyre_Summit_Text_Grunt2PostBattle:
-	.string "Os nomes de mortos e\ndesaparecidos sao mantidos\p"
-	.string "aqui. O HORIZONTE comeca a\nretirar registros em nome da\p"
-	.string "estabilidade.$"
+	.string "DONA ZILA: Nome repetido nao\nressuscita ninguem. Mas impede\p"
+	.string "que o silencio finja que aquela\npessoa nunca existiu.$"
 
 MtPyre_Summit_Text_Grunt3Intro:
-	.string "Os nomes de mortos e\ndesaparecidos sao mantidos\p"
-	.string "aqui. O HORIZONTE comeca a\nretirar registros em nome da\p"
-	.string "estabilidade.$"
+	.string "Um funcionario do HORIZONTE\nfotografa cada inscricao antes\p"
+	.string "de autorizar a retirada de\nalgumas placas.$"
 
 MtPyre_Summit_Text_Grunt3Defeat:
-	.string "LEMBRANTE: Apagar uma historia\nporque ela incomoda quem manda\p"
-	.string "e apenas outra forma de\nviolencia.$"
+	.string "Um funcionario do HORIZONTE\nfotografa cada inscricao antes\p"
+	.string "de autorizar a retirada de\nalgumas placas.$"
 
 MtPyre_Summit_Text_Grunt3PostBattle:
-	.string "Os nomes de mortos e\ndesaparecidos sao mantidos\p"
-	.string "aqui. O HORIZONTE comeca a\nretirar registros em nome da\p"
-	.string "estabilidade.$"
+	.string "DONA ZILA: Nome repetido nao\nressuscita ninguem. Mas impede\p"
+	.string "que o silencio finja que aquela\npessoa nunca existiu.$"
 
 MtPyre_Summit_Text_Grunt4Intro:
-	.string "HORIZONTE: O Arquivo preserva o\nque o tempo destruiria. Um dia\p"
-	.string "voces vao agradecer por nao\nprecisarem mais sofrer para\p"
-	.string "lembrar.$"
+	.string "Os nomes gravados aqui\npertencem a mortos,\p"
+	.string "desaparecidos e lugares que\ndeixaram de existir nos mapas\p"
+	.string "oficiais.$"
 
 MtPyre_Summit_Text_Grunt4Defeat:
-	.string "HORIZONTE: O Arquivo preserva o\nque o tempo destruiria. Um dia\p"
-	.string "voces vao agradecer por nao\nprecisarem mais sofrer para\p"
-	.string "lembrar.$"
+	.string "Os nomes gravados aqui\npertencem a mortos,\p"
+	.string "desaparecidos e lugares que\ndeixaram de existir nos mapas\p"
+	.string "oficiais.$"
 
 MtPyre_Summit_Text_Grunt4PostBattle:
-	.string "Os nomes de mortos e\ndesaparecidos sao mantidos\p"
-	.string "aqui. O HORIZONTE comeca a\nretirar registros em nome da\p"
-	.string "estabilidade.$"
+	.string "Um funcionario do HORIZONTE\nfotografa cada inscricao antes\p"
+	.string "de autorizar a retirada de\nalgumas placas.$"
 
 MtPyre_Summit_Text_ArchieWeGotTheOrbLetsGo:
-	.string "OTACILIO: Eu nao quero poder.\nQuero um mundo em que nenhuma\p"
-	.string "pessoa seja obrigada a carregar\npara sempre a pior coisa que ja\p"
-	.string "viveu.$"
+	.string "Os sensores registram duas\ncorrentes antigas sob Arauna:\p"
+	.string "uma conserva VINCULOS; a outra\npermite que eles terminem. O\p"
+	.string "ARQUIVO tentou transformar\nambas em ferramentas.$"
 
 MtPyre_Summit_Text_BothOrbsTakenMagmaLeftThis:
-	.string "LEMBRANTE: Apagar uma historia\nporque ela incomoda quem manda\p"
-	.string "e apenas outra forma de\nviolencia.$"
+	.string "Os sensores registram duas\ncorrentes antigas sob Arauna:\p"
+	.string "uma conserva VINCULOS; a outra\npermite que eles terminem. O\p"
+	.string "ARQUIVO tentou transformar\nambas em ferramentas.$"
 
 MtPyre_Summit_Text_OrbsHaveBeenTaken:
 	.string "Os sensores registram duas\ncorrentes antigas sob Arauna:\p"
 	.string "uma conserva VINCULOS; a outra\npermite que eles terminem. O\p"
-	.string "Arquivo tentou transformar\nambas em ferramentas.$"
+	.string "ARQUIVO tentou transformar\nambas em ferramentas.$"
 
 MtPyre_Summit_Text_GroudonKyogreAwakened:
 	.string "Os sensores registram duas\ncorrentes antigas sob Arauna:\p"
 	.string "uma conserva VINCULOS; a outra\npermite que eles terminem. O\p"
-	.string "Arquivo tentou transformar\nambas em ferramentas.$"
+	.string "ARQUIVO tentou transformar\nambas em ferramentas.$"
 
 MtPyre_Summit_Text_ThoseTwoMenReturnedOrbs:
 	.string "Os sensores registram duas\ncorrentes antigas sob Arauna:\p"
 	.string "uma conserva VINCULOS; a outra\npermite que eles terminem. O\p"
-	.string "Arquivo tentou transformar\nambas em ferramentas.$"
+	.string "ARQUIVO tentou transformar\nambas em ferramentas.$"
 
 MtPyre_Summit_Text_SuperAncientPokemonTaughtUs:
-	.string "Os nomes de mortos e\ndesaparecidos sao mantidos\p"
-	.string "aqui. O HORIZONTE comeca a\nretirar registros em nome da\p"
-	.string "estabilidade.$"
+	.string "The embodiments of the land, sea,\n"
+	.string "and the sky…\p"
+	.string "That is said to be the identities of\n"
+	.string "the super-ancient POKéMON…\p"
+	.string "In the same way that we humans and\n"
+	.string "POKéMON have life, our world, too,\l"
+	.string "is alive…\p"
+	.string "The super-ancient POKéMON have\n"
+	.string "taught us that…$"
 
 MtPyre_Summit_Text_WillYouHearOutMyTale:
-	.string "Os nomes de mortos e\ndesaparecidos sao mantidos\p"
-	.string "aqui. O HORIZONTE comeca a\nretirar registros em nome da\p"
-	.string "estabilidade.$"
+	.string "MT. PYRE is where we calm the spirits\n"
+	.string "of POKéMON that have passed on…\p"
+	.string "This is a high place where one can\n"
+	.string "see all of ARAUNA…\p"
+	.string "The disembodied spirits of POKéMON\n"
+	.string "must find solace here…\p"
+	.string "Is it coincidence that you are here…\p"
+	.string "Will you hear out my tale? A tale long\n"
+	.string "told in the ARAUNA region?$"
 
 MtPyre_Summit_Text_GroudonKyogreTale:
 	.string "Os sensores registram duas\ncorrentes antigas sob Arauna:\p"
 	.string "uma conserva VINCULOS; a outra\npermite que eles terminem. O\p"
-	.string "Arquivo tentou transformar\nambas em ferramentas.$"
+	.string "ARQUIVO tentou transformar\nambas em ferramentas.$"
 
 MtPyre_Summit_Text_WellThatTooIsFine:
-	.string "Os nomes de mortos e\ndesaparecidos sao mantidos\p"
-	.string "aqui. O HORIZONTE comeca a\nretirar registros em nome da\p"
-	.string "estabilidade.$"
+	.string "I see…\n"
+	.string "Well, that, too, is fine…$"
 
 MtPyre_Summit_Text_MaxieSilence:
 	.string "LUZIA: Ninguem tem o direito de\nescolher que memoria merece\p"
-	.string "morrer. Se for preciso devolver\ntoda a dor de uma vez, eu vou\p"
-	.string "devolver.$"
+	.string "morrer. O HORIZONTE chama\ncensura de tratamento porque a\p"
+	.string "palavra soa mais limpa.$"
 
 MtPyre_Summit_Text_HearTheNewLegendOfHoenn:
-	.string "Os nomes de mortos e\ndesaparecidos sao mantidos\p"
-	.string "aqui. O HORIZONTE comeca a\nretirar registros em nome da\p"
-	.string "estabilidade.$"
+	.string "It is my role to pass on the legends\n"
+	.string "of ARAUNA to future generations.\p"
+	.string "And the crisis that just ended in\n"
+	.string "SOOTOPOLIS rewrote a legend…\p"
+	.string "Have you the time to hear the new\n"
+	.string "legend of ARAUNA?$"
 
 MtPyre_Summit_Text_HoennTrioTale:
-	.string "Os nomes de mortos e\ndesaparecidos sao mantidos\p"
-	.string "aqui. O HORIZONTE comeca a\nretirar registros em nome da\p"
-	.string "estabilidade.$"
+	.string "It happened long, long ago…\p"
+	.string "The world was wracked by a ferocious\n"
+	.string "clash between the POKéMON of the land\l"
+	.string "and the POKéMON of the sea…\p"
+	.string "The POKéMON of the land raised\n"
+	.string "mountains and created continents…\p"
+	.string "The POKéMON of the sea raised huge\n"
+	.string "waves and carved out oceans…\p"
+	.string "Their fierce duel raged without end.\p"
+	.string "The world was engulfed in massive\n"
+	.string "fires and vicious storms.\p"
+	.string "It was then that the POKéMON of\n"
+	.string "the sky descended from a storm.\p"
+	.string "The POKéMON, shining a vivid green,\n"
+	.string "becalmed the two enraged POKéMON.\p"
+	.string "Then, its duty done, the green POKéMON\n"
+	.string "flew off into the wild blue yonder…$"
 

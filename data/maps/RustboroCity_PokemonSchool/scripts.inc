@@ -200,59 +200,85 @@ RustboroCity_PokemonSchool_EventScript_ScottWatchStudents::
 	end
 
 RustboroCity_PokemonSchool_Text_BlackboardListsStatusChanges:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "The blackboard lists status changes\n"
+	.string "that may affect POKéMON in battle.$"
 
 RustboroCity_PokemonSchool_Text_ReadWhichTopic:
-	.string "Voce vai continuar mesmo\nsabendo que SERRA DO UIVO\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "Which topic do you want to read?$"
 
 RustboroCity_PokemonSchool_Text_ExplainPoison:
-	.string "O HORIZONTE consertou a estrada\ndaqui. Nao sei se isso torna\p"
-	.string "mais facil perguntar o que\nexiste debaixo dela.$"
+	.string "If a POKéMON is poisoned, it will\n"
+	.string "steadily lose HP.\p"
+	.string "The effects of poison remain after\n"
+	.string "a battle.\p"
+	.string "A poisoned POKéMON's HP will drop\n"
+	.string "while it is traveling.\p"
+	.string "Heal a poisoning using an ANTIDOTE.$"
 
 RustboroCity_PokemonSchool_Text_ExplainParalysis:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "If a POKéMON becomes paralyzed,\n"
+	.string "its SPEED drops.\p"
+	.string "It may also not be able to move while\n"
+	.string "it is in battle.\p"
+	.string "Paralysis remains after battle.\n"
+	.string "Cure it using a PARLYZ HEAL.$"
 
 RustboroCity_PokemonSchool_Text_ExplainSleep:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "If a POKéMON falls asleep, it will be\n"
+	.string "unable to attack.\p"
+	.string "A POKéMON may wake up on its own,\n"
+	.string "but if a battle ends while it is\l"
+	.string "sleeping, it will stay asleep.\p"
+	.string "Wake it up using an AWAKENING.$"
 
 RustboroCity_PokemonSchool_Text_ExplainBurn:
-	.string "Dona Zila diz que uma historia\nmuda toda vez que e contada.\p"
-	.string "Talvez seja por isso que ainda\nesta viva.$"
+	.string "A burn reduces ATTACK power, and it\n"
+	.string "steadily reduces the victim's HP.\p"
+	.string "A burn lingers after battle.\n"
+	.string "Cure a burn using a BURN HEAL.$"
 
 RustboroCity_PokemonSchool_Text_ExplainFreeze:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "If a POKéMON is frozen, it becomes\n"
+	.string "completely helpless.\p"
+	.string "It will remain frozen after battle.\n"
+	.string "Thaw it out using an ICE HEAL.$"
 
 RustboroCity_PokemonSchool_Text_StudentsWhoDontStudyGetQuickClaw:
-	.string "Dona Zila diz que uma historia\nmuda toda vez que e contada.\p"
-	.string "Talvez seja por isso que ainda\nesta viva.$"
+	.string "Students who don't study get a little\n"
+	.string "taste of my QUICK CLAW.\p"
+	.string "Whether or not you are a good student \n"
+	.string "will be evident from the way you use\l"
+	.string "this item.$"
 
 RustboroCity_PokemonSchool_Text_ExplainQuickClaw:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "A POKéMON holding the QUICK CLAW will\n"
+	.string "occasionally speed up and get to move\l"
+	.string "before its opponent.\p"
+	.string "There are many other items that are\n"
+	.string "meant to be held by POKéMON.\p"
+	.string "Just those alone will give you many\n"
+	.string "topics to study!$"
 
 RustboroCity_PokemonSchool_Text_TradingRightNow:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "I'm trading POKéMON with my friend\n"
+	.string "right now.$"
 
 RustboroCity_PokemonSchool_Text_AlwaysWantedSeedot:
-	.string "Voce vai continuar mesmo\nsabendo que SERRA DO UIVO\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "I always wanted a SEEDOT, and\n"
+	.string "I'm finally getting one!$"
 
 RustboroCity_PokemonSchool_Text_PokemontCantUseManMadeItems:
-	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
-	.string "nomes antigos desapareceram\nquando elas chegaram.$"
+	.string "POKéMON can hold items, but they\n"
+	.string "don't know what to do with man-made\l"
+	.string "items like POTION and ANTIDOTE.$"
 
 RustboroCity_PokemonSchool_Text_ConfusedPokemonAttacksItself:
-	.string "Voce vai continuar mesmo\nsabendo que SERRA DO UIVO\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "You know how some POKéMON moves can\n"
+	.string "confuse a POKéMON?\p"
+	.string "A confused POKéMON will sometimes\n"
+	.string "attack itself without meaning to.\p"
+	.string "But once it leaves battle, it will\n"
+	.string "return to normal.$"
 
 RustboroCity_PokemonSchool_Text_PokemonHealItselfWithBerry:
 	.string "A POKéMON holding a BERRY will heal\n"
@@ -263,8 +289,17 @@ RustboroCity_PokemonSchool_Text_PokemonHealItselfWithBerry:
 	.string "down…$"
 
 RustboroCity_PokemonSchool_Text_StudentsNotes:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "It's this student's notebook…\p"
+	.string "POKéMON are to be caught using\n"
+	.string "POKé BALLS.\p"
+	.string "Up to six POKéMON can accompany\n"
+	.string "a TRAINER.\p"
+	.string "A TRAINER is someone who catches\n"
+	.string "POKéMON, raises them, and battles\l"
+	.string "with them.\p"
+	.string "A TRAINER's mission is to defeat\n"
+	.string "the strong TRAINERS who await\l"
+	.string "challengers in POKéMON GYMS.$"
 
 RustboroCity_PokemonSchool_Text_ScottMetAlreadyCut:
 	.string "Hello? Didn't we meet before?\n"
@@ -283,13 +318,18 @@ RustboroCity_PokemonSchool_Text_ScottMetAlreadyCut:
 	.string "this town has CUT.$"
 
 RustboroCity_PokemonSchool_Text_StudentTalentLevelUnknown:
-	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
-	.string "nomes antigos desapareceram\nquando elas chegaram.$"
+	.string "SCOTT: Hmm…\p"
+	.string "The talent levels of the students here\n"
+	.string "are unknown. The potential's there.$"
 
 RustboroCity_PokemonSchool_Text_ScottStoneBadge:
-	.string "Voce vai continuar mesmo\nsabendo que SERRA DO UIVO\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "SCOTT: Oh, what's that?\p"
+	.string "It's a STONE BADGE, isn't it?\n"
+	.string "That's pretty impressive, I'd say.\p"
+	.string "But, you know, I would've loved to see\n"
+	.string "you in battle.\p"
+	.string "It's hard to tell what you're like as\n"
+	.string "a TRAINER from a LEAGUE BADGE.$"
 
 RustboroCity_PokemonSchool_Text_ScottMetAlreadyStoneBadge:
 	.string "Hello? Didn't we meet before?\n"

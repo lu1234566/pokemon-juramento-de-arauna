@@ -300,8 +300,11 @@ FallarborTown_BattleTentLobby_EventScript_ExitRules::
 	end
 
 FallarborTown_BattleTentLobby_Text_MakeThinkImJustKid:
-	.string "O HORIZONTE consertou a estrada\ndaqui. Nao sei se isso torna\p"
-	.string "mais facil perguntar o que\nexiste debaixo dela.$"
+	.string "Fufufufufu.\p"
+	.string "I'm going to make everyone think\n"
+	.string "I'm just a kid and let them play down.\p"
+	.string "Then, I'll shock them and grab\n"
+	.string "the title!$"
 
 FallarborTown_BattleTentLobby_Text_FallarborTentMyFavorite:
 	.string "You know how BATTLE TENTS offer\n"
@@ -313,13 +316,27 @@ FallarborTown_BattleTentLobby_Text_FallarborTentMyFavorite:
 	.string "their POKéMON.$"
 
 FallarborTown_BattleTentLobby_Text_CameToCampOut:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "I heard something about some tent,\n"
+	.string "so I came to camp out.\p"
+	.string "I didn't know that tents these days\n"
+	.string "are so luxurious!\p"
+	.string "Since I'm here, I may as well try\n"
+	.string "my hand at battling!$"
 
 FallarborTown_BattleTentLobby_Text_ScottLookingForSomeone:
-	.string "Voce vai continuar mesmo\nsabendo que CAMPO DAS CINZAS\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "SCOTT: Hi, {PLAYER}{KUN}!\n"
+	.string "So you came out to this BATTLE TENT!\p"
+	.string "The people in these parts tend to be\n"
+	.string "easygoing and laid-back.\p"
+	.string "But, you see, what I'm looking for are\n"
+	.string "people with…\p"
+	.string "How should I say this?\p"
+	.string "Someone bursting with the desire\n"
+	.string "and the drive to win.\p"
+	.string "If there were a TRAINER like that,\n"
+	.string "I'd immediately…\p"
+	.string "Whoops! Never mind!\n"
+	.string "Keep working at it!$"
 
 FallarborTown_BattleTentLobby_Text_ScottMakeChallenge:
 	.string "SCOTT: Instead of wasting your\n"

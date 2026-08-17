@@ -476,61 +476,87 @@ Route119_EventScript_ScottWonAtFortreeGymCall::
 	end
 
 Route119_Text_MayIntro:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "CIRO: Voce continua olhando\npara cada cicatriz como se ela\p"
+	.string "fosse uma resposta. Eu quero\nsaber o que existe depois dela.$"
 
 Route119_Text_MayDefeat:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "CIRO: Nao confunda minha pressa\ncom falta de memoria. Eu lembro\p"
+	.string "o bastante para saber que nao\nquero viver preso ao que perdi.$"
 
 Route119_Text_MayPresentForYou:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "CIRO: Voce continua olhando\npara cada cicatriz como se ela\p"
+	.string "fosse uma resposta. Eu quero\nsaber o que existe depois dela.$"
 
 Route119_Text_MayExplainFly:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "CIRO: Voce continua olhando\npara cada cicatriz como se ela\p"
+	.string "fosse uma resposta. Eu quero\nsaber o que existe depois dela.$"
 
 Route119_Text_BrendanIntro:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "CIRO: Nao confunda minha pressa\ncom falta de memoria. Eu lembro\p"
+	.string "o bastante para saber que nao\nquero viver preso ao que perdi.$"
 
 Route119_Text_BrendanDefeat:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "CIRO: O HORIZONTE nao me pediu\npara esquecer nada. So me\p"
+	.string "mostrou que existe um futuro\nque nao precisa ser governado\p"
+	.string "pelo passado.$"
 
 Route119_Text_BrendanIllGiveYouThis:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "CIRO: Nao confunda minha pressa\ncom falta de memoria. Eu lembro\p"
+	.string "o bastante para saber que nao\nquero viver preso ao que perdi.$"
 
 Route119_Text_BrendanExplainFly:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "CIRO: O HORIZONTE nao me pediu\npara esquecer nada. So me\p"
+	.string "mostrou que existe um futuro\nque nao precisa ser governado\p"
+	.string "pelo passado.$"
 
 Route119_Text_ScottWayToGoBeSeeingYou:
-	.string "Voce vai continuar mesmo\nsabendo que ROUTE119 guarda\p"
-	.string "partes da historia que muita\ngente preferia deixar\p"
-	.string "enterradas?$"
+	.string "SCOTT: Hahahah!\n"
+	.string "Way to go, {PLAYER}{KUN}!\p"
+	.string "I just passed by a TRAINER riding\n"
+	.string "a BIKE.\p"
+	.string "You just beat that TRAINER, didn't you?\n"
+	.string "It was pretty obvious that you did.\p"
+	.string "The kid looked really upset with\n"
+	.string "a face all red from anger.\p"
+	.string "I sure seem to run into you often.\n"
+	.string "Are you off to FORTREE GYM next?\p"
+	.string "I expect that you'll do well at the GYM.\n"
+	.string "Well, I'll be seeing you!$"
 
 
 Route119_Text_ScottYouWonAtFortreeGym:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "… … … … … …\n"
+	.string "… … … … … Beep!\p"
+	.string "SCOTT: Hiya, {PLAYER}{KUN}, it's me!\p"
+	.string "Just as I thought, you won at\n"
+	.string "the FORTREE GYM.\p"
+	.string "Your strength…\n"
+	.string "Perhaps you really are the TRAINER\l"
+	.string "that I've been searching for.\p"
+	.string "Remember, you have a fan in me.\n"
+	.string "I'll be cheering from the sidelines.\l"
+	.string "Keep up the great work!\p"
+	.string "… … … … … …\n"
+	.string "… … … … … Click!$"
 
 Route119_Text_StayAwayFromWeatherInstitute:
-	.string "As estradas de Arauna guardam\nsinais do DESENCANTO: nomes\p"
-	.string "riscados, historias incompletas\ne Pokemon que hesitam diante de\p"
-	.string "lugares conhecidos.$"
+	.string "We're standing lookout here.\p"
+	.string "Hey, you! Stay away from the WEATHER\n"
+	.string "INSTITUTE. It's not safe.$"
 
 Route119_Text_DontGoNearWeatherInstitute:
-	.string "As estradas de Arauna guardam\nsinais do DESENCANTO: nomes\p"
-	.string "riscados, historias incompletas\ne Pokemon que hesitam diante de\p"
-	.string "lugares conhecidos.$"
+	.string "Lookout duty is surprisingly boring.\p"
+	.string "Hey, you! Please don't go near the\n"
+	.string "WEATHER INSTITUTE.$"
 
 Route119_Text_ThoughtFlyByCatchingBirdMons:
-	.string "Tem gente que chama de\nDESENCANTO. Eu chamava de\p"
-	.string "distraicao, ate minha mae\nesquecer a cancao que cantava\p"
-	.string "desde crianca.$"
+	.string "I thought you FLY by catching a whole\n"
+	.string "flock of BIRD POKéMON, and then\l"
+	.string "hanging on to them somehow.\p"
+	.string "But it turns out there's an HM move\n"
+	.string "called FLY!\p"
+	.string "I wish I'd known about that a long\n"
+	.string "time ago…$"
 
 Route119_Text_TallGrassSnaresBikeTires:
 	.string "Tch…\n"
@@ -544,14 +570,11 @@ Route119_Text_CanYourMonMakeSecretBase:
 	.string "SECRET BASE?$"
 
 Route119_Text_RouteSignFortree:
-	.string "Tem gente que chama de\nDESENCANTO. Eu chamava de\p"
-	.string "distraicao, ate minha mae\nesquecer a cancao que cantava\p"
-	.string "desde crianca.$"
+	.string "ROUTE 119\n"
+	.string "{RIGHT_ARROW} FORTREE CITY$"
 
 Route119_Text_WeatherInstitute:
-	.string "As estradas de Arauna guardam\nsinais do DESENCANTO: nomes\p"
-	.string "riscados, historias incompletas\ne Pokemon que hesitam diante de\p"
-	.string "lugares conhecidos.$"
+	.string "WEATHER INSTITUTE$"
 
 Route119_Text_TrainerTipsDecoration:
 	.string "TRAINER TIPS\p"

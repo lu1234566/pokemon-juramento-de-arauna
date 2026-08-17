@@ -148,120 +148,119 @@ JaggedPass_EventScript_Autumn::
 	end
 
 JaggedPass_Text_EricIntro:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "MT. CHIMNEY's JAGGED PASS…\p"
+	.string "Now this is what I've always wanted\n"
+	.string "in a mountain.\p"
+	.string "This jagged bumpiness…\n"
+	.string "It rocks my soul!$"
 
 JaggedPass_Text_EricDefeat:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "Losing left me bitter!$"
 
 JaggedPass_Text_EricPostBattle:
-	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
-	.string "nomes antigos desapareceram\nquando elas chegaram.$"
+	.string "Yes, I did lose at POKéMON…\p"
+	.string "But, when it comes to the love of\n"
+	.string "the mountains, I have you beat!$"
 
 JaggedPass_Text_DianaIntro:
-	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
-	.string "nomes antigos desapareceram\nquando elas chegaram.$"
+	.string "This place isn't your casual hike.\n"
+	.string "It's not suited for a picnic.$"
 
 JaggedPass_Text_DianaDefeat:
-	.string "Dona Zila diz que uma historia\nmuda toda vez que e contada.\p"
-	.string "Talvez seja por isso que ainda\nesta viva.$"
+	.string "Ohhh, no!\n"
+	.string "The ground is too bumpy…$"
 
 JaggedPass_Text_DianaPostBattle:
-	.string "Voce vai continuar mesmo\nsabendo que JAGGEDPASS guarda\p"
-	.string "partes da historia que muita\ngente preferia deixar\p"
-	.string "enterradas?$"
+	.string "Did you know?\p"
+	.string "Some people cleverly ride their\n"
+	.string "bicycles up this horribly bumpy pass.$"
 
 JaggedPass_Text_DianaRegister:
-	.string "Voce vai continuar mesmo\nsabendo que JAGGEDPASS guarda\p"
-	.string "partes da historia que muita\ngente preferia deixar\p"
-	.string "enterradas?$"
+	.string "Will you ever be back in this area?\n"
+	.string "If you do return, I'd like a rematch.$"
 
 JaggedPass_Text_DianaRematchIntro:
-	.string "O HORIZONTE consertou a estrada\ndaqui. Nao sei se isso torna\p"
-	.string "mais facil perguntar o que\nexiste debaixo dela.$"
+	.string "Picnics are fun wherever you go.\n"
+	.string "Just like POKéMON!$"
 
 JaggedPass_Text_DianaRematchDefeat:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "I only lost because the ground is\n"
+	.string "too bumpy!$"
 
 JaggedPass_Text_DianaPostRematch:
-	.string "Dona Zila diz que uma historia\nmuda toda vez que e contada.\p"
-	.string "Talvez seja por isso que ainda\nesta viva.$"
+	.string "I'll forget about losing and just\n"
+	.string "enjoy this bumpy hike.$"
 
 JaggedPass_Text_EthanIntro:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "JAGGED PASS is hard to walk on.\n"
+	.string "It's a good place for training.$"
 
 JaggedPass_Text_EthanDefeat:
-	.string "Tem gente que chama de\nDESENCANTO. Eu chamava de\p"
-	.string "distraicao, ate minha mae\nesquecer a cancao que cantava\p"
-	.string "desde crianca.$"
+	.string "It was all over while we were still\n"
+	.string "trying to find a good footing…$"
 
 JaggedPass_Text_EthanPostBattle:
-	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
-	.string "nomes antigos desapareceram\nquando elas chegaram.$"
+	.string "If I had an ACRO BIKE, I'd be able to\n"
+	.string "jump ledges.$"
 
 JaggedPass_Text_EthanRegister:
-	.string "Voce vai continuar mesmo\nsabendo que JAGGEDPASS guarda\p"
-	.string "partes da historia que muita\ngente preferia deixar\p"
-	.string "enterradas?$"
+	.string "When I get more used to this bumpiness,\n"
+	.string "I'll be sure to win!\p"
+	.string "Can you register me in your POKéNAV?$"
 
 JaggedPass_Text_EthanRematchIntro:
-	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
-	.string "nomes antigos desapareceram\nquando elas chegaram.$"
+	.string "I got used to this bumpiness.\n"
+	.string "I sing while I climb now.$"
 
 JaggedPass_Text_EthanRematchDefeat:
-	.string "Tem gente que chama de\nDESENCANTO. Eu chamava de\p"
-	.string "distraicao, ate minha mae\nesquecer a cancao que cantava\p"
-	.string "desde crianca.$"
+	.string "It's still not easy to battle on this\n"
+	.string "bumpy ground…$"
 
 JaggedPass_Text_EthanPostRematch:
-	.string "O HORIZONTE consertou a estrada\ndaqui. Nao sei se isso torna\p"
-	.string "mais facil perguntar o que\nexiste debaixo dela.$"
+	.string "I should get an ACRO BIKE from RYDEL\n"
+	.string "in MAUVILLE CITY…$"
 
 JaggedPass_Text_GruntIntro:
-	.string "Voce vai continuar mesmo\nsabendo que JAGGEDPASS guarda\p"
-	.string "partes da historia que muita\ngente preferia deixar\p"
-	.string "enterradas?$"
+	.string "Wah!\n"
+	.string "What are you doing here?\p"
+	.string "What am I doing in a place like this?\p"
+	.string "What business is it of yours?$"
 
 JaggedPass_Text_GruntDefeat:
-	.string "Tem gente que chama de\nDESENCANTO. Eu chamava de\p"
-	.string "distraicao, ate minha mae\nesquecer a cancao que cantava\p"
-	.string "desde crianca.$"
+	.string "Urrrgh…\p"
+	.string "I should've ducked into our HIDEOUT\n"
+	.string "right away…$"
 
 JaggedPass_Text_GoWhereverYouWant:
-	.string "Voce vai continuar mesmo\nsabendo que JAGGEDPASS guarda\p"
-	.string "partes da historia que muita\ngente preferia deixar\p"
-	.string "enterradas?$"
+	.string "Okay, oh-kay!\n"
+	.string "I admit it--you're strong!\p"
+	.string "Don't worry about me.\n"
+	.string "Go wherever you want!$"
 
 JaggedPass_Text_BoulderShakingInResponseToEmblem:
-	.string "LEMBRANTE: Apagar uma historia\nporque ela incomoda quem manda\p"
-	.string "e apenas outra forma de\nviolencia.$"
+	.string "Oh! This boulder is shaking in response\n"
+	.string "to the MAGMA EMBLEM!$"
 
 JaggedPass_Text_JulioIntro:
-	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
-	.string "nomes antigos desapareceram\nquando elas chegaram.$"
+	.string "Aiyeeh! It's awfully scary to shoot\n"
+	.string "down the mountain in one go!$"
 
 JaggedPass_Text_JulioDefeat:
-	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
-	.string "nomes antigos desapareceram\nquando elas chegaram.$"
+	.string "I feel like I'm falling apart…$"
 
 JaggedPass_Text_JulioPostBattle:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "My bicycle bounced around so much,\n"
+	.string "my rear end's sore…$"
 
 JaggedPass_Text_AutumnIntro:
-	.string "Dona Zila diz que uma historia\nmuda toda vez que e contada.\p"
-	.string "Talvez seja por isso que ainda\nesta viva.$"
+	.string "I climb this hill every day.\n"
+	.string "I have confidence in my strength!$"
 
 JaggedPass_Text_AutumnDefeat:
-	.string "Voce vai continuar mesmo\nsabendo que JAGGEDPASS guarda\p"
-	.string "partes da historia que muita\ngente preferia deixar\p"
-	.string "enterradas?$"
+	.string "Hmm…\n"
+	.string "What went wrong?$"
 
 JaggedPass_Text_AutumnPostBattle:
-	.string "Voce vai continuar mesmo\nsabendo que JAGGEDPASS guarda\p"
-	.string "partes da historia que muita\ngente preferia deixar\p"
-	.string "enterradas?$"
+	.string "What is that odd rock protrusion\n"
+	.string "a little up the hill from here?$"
 

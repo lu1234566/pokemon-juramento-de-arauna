@@ -62,30 +62,48 @@ VerdanturfTown_EventScript_RusturfTunnelSign::
 	end
 
 VerdanturfTown_Text_ManTryingToDigTunnel:
-	.string "Tem gente que chama de\nDESENCANTO. Eu chamava de\p"
-	.string "distraicao, ate minha mae\nesquecer a cancao que cantava\p"
-	.string "desde crianca.$"
+	.string "My papa told me.\p"
+	.string "He says this tunnel is full of\n"
+	.string "timid POKéMON.\p"
+	.string "They get all scared of loud noise and\n"
+	.string "make a big uproar.\p"
+	.string "So they had to stop the big tunnel\n"
+	.string "project.\p"
+	.string "But there's one man. He's trying to dig\n"
+	.string "the tunnel by himself!$"
 
 VerdanturfTown_Text_ManDugTunnelForLove:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "There was a man who dug a tunnel for\n"
+	.string "a lady he loved.\p"
+	.string "I don't really get it, but hey!$"
 
 VerdanturfTown_Text_AirCleanHere:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "The way the winds blow, volcanic ash\n"
+	.string "is never blown in this direction.\p"
+	.string "The air is clean and delicious here.\n"
+	.string "Living here should do wonders for even\l"
+	.string "frail and sickly people.$"
 
 VerdanturfTown_Text_MakeBattleTentDebut:
-	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
-	.string "nomes antigos desapareceram\nquando elas chegaram.$"
+	.string "My POKéMON and I, we've been riding\n"
+	.string "a hot winning streak.\p"
+	.string "So I decided to make my BATTLE TENT\n"
+	.string "debut in this town.$"
 
 VerdanturfTown_Text_GuyTryingToBustThroughCave:
-	.string "Voce vai continuar mesmo\nsabendo que VALE DO SILENCIO\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "Did you see the cave next to the\n"
+	.string "POKéMON MART?\p"
+	.string "There's a guy in there who's trying to\n"
+	.string "bust up boulders so he can bust out\l"
+	.string "through to the other side.\p"
+	.string "It'd be great if we could go through…\n"
+	.string "It'll make it easy to visit RUSTBORO.$"
 
 VerdanturfTown_Text_EasyToGetToRustboroNow:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "That cave next to the POKéMON MART\n"
+	.string "is now a tunnel to the other side.\p"
+	.string "It's great--it's easy to go shop for\n"
+	.string "new DEVON products in RUSTBORO now.$"
 
 VerdanturfTown_Text_TownSign:
 	.string "VALE DO SILENCIO. Familias\ndeslocadas vivem aqui. Muitas\p"
@@ -93,16 +111,15 @@ VerdanturfTown_Text_TownSign:
 	.string "que perderam.$"
 
 VerdanturfTown_Text_WandasHouse:
-	.string "Tem gente que chama de\nDESENCANTO. Eu chamava de\p"
-	.string "distraicao, ate minha mae\nesquecer a cancao que cantava\p"
-	.string "desde crianca.$"
+	.string "WANDA'S HOUSE$"
 
 VerdanturfTown_Text_BattleTentSign:
-	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
-	.string "nomes antigos desapareceram\nquando elas chegaram.$"
+	.string "BATTLE TENT VERDANTURF SITE\n"
+	.string "“Feast Your Eyes on Battles!”$"
 
 VerdanturfTown_Text_RusturfTunnelSign:
-	.string "Tem gente que chama de\nDESENCANTO. Eu chamava de\p"
-	.string "distraicao, ate minha mae\nesquecer a cancao que cantava\p"
-	.string "desde crianca.$"
+	.string "RUSTURF TUNNEL\n"
+	.string "“Linking RUSTBORO and VERDANTURF\p"
+	.string "“The tunnel project has been\n"
+	.string "canceled.”$"
 

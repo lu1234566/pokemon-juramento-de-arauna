@@ -1381,170 +1381,205 @@ SootopolisCity_Movement_DestroyTask::
 	step_end
 
 SootopolisCity_Text_GymSign:
-	.string "DONA CELINA: Agua parada\napodrece. Agua que corre leva\p"
-	.string "coisas embora. Viver e aprender\no que guardar e o que deixar\p"
-	.string "seguir.$"
+	.string "SOOTOPOLIS CITY POKéMON GYM\n"
+	.string "LEADER: JUAN\p"
+	.string "“The GYM LEADER with the beauty\n"
+	.string "of pure water!”$"
 
 SootopolisCity_Text_CitySign:
 	.string "AGUAS DE M'BOI. O colapso do\nArquivo espalha lembrancas\p"
 	.string "alheias e vazios de memoria por\ntoda Arauna.$"
 
 SootopolisCity_Text_DoorIsClosed:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "The door is closed.$"
 
 SootopolisCity_Text_PhysicallyFitLivingHere:
-	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
-	.string "nomes antigos desapareceram\nquando elas chegaram.$"
+	.string "Diving in the sea. Climbing up and\n"
+	.string "down stairs all the time…\p"
+	.string "If you live in this town, you end up\n"
+	.string "getting physically fit.$"
 
 SootopolisCity_Text_GiantPokemonSuddenlyAppeared:
-	.string "Voce vai continuar mesmo\nsabendo que AGUAS DE M'BOI\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "These giant POKéMON suddenly appeared\n"
+	.string "in the middle of the city!\p"
+	.string "And, I've never seen them before!\p"
+	.string "Why are they smashing into each\n"
+	.string "other like that?\p"
+	.string "Why can't they be friends, those\n"
+	.string "POKéMON?$"
 
 SootopolisCity_Text_WhatIsThatGreenPokemon:
-	.string "Voce vai continuar mesmo\nsabendo que AGUAS DE M'BOI\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "What? What? What?\n"
+	.string "What is that green POKéMON?!$"
 
 SootopolisCity_Text_WhereDidLegendariesGo:
-	.string "As duas forcas antigas de\nArauna reagiram ao colapso.\p"
-	.string "IARA-MAE puxa os nomes de\nvolta. ANHANGUERA tenta\p"
-	.string "encerrar o que nao pode\ncontinuar. Nenhuma delas foi\p"
-	.string "feita para obedecer a seres\nhumanos.$"
+	.string "A cidade inteira sente o\nresultado de duas ideias\p"
+	.string "transformadas em absolutos:\nlembrar tudo e apagar a dor a\p"
+	.string "qualquer custo.$"
 
 SootopolisCity_Text_TwoPokemonArentAngry:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "I just get this sense somehow that\n"
+	.string "the two POKéMON aren't angry.\p"
+	.string "I think… They probably can't control\n"
+	.string "their own power…$"
 
 SootopolisCity_Text_FlyingMonStoppedRampage:
-	.string "Dona Zila diz que uma historia\nmuda toda vez que e contada.\p"
-	.string "Talvez seja por isso que ainda\nesta viva.$"
+	.string "That flying POKéMON came down from\n"
+	.string "the sky and stopped the rampaging\l"
+	.string "POKéMON…$"
 
 SootopolisCity_Text_WonderWhatWorldIsLike:
-	.string "Voce vai continuar mesmo\nsabendo que AGUAS DE M'BOI\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "I… I've never been out of this city.\p"
+	.string "I wonder what the world is like on\n"
+	.string "the other side of this round sky?$"
 
 SootopolisCity_Text_ThisIsWicked:
-	.string "Tem gente que chama de\nDESENCANTO. Eu chamava de\p"
-	.string "distraicao, ate minha mae\nesquecer a cancao que cantava\p"
-	.string "desde crianca.$"
+	.string "Wow!\n"
+	.string "This is wicked!$"
 
 SootopolisCity_Text_ThatWasWicked:
-	.string "Tem gente que chama de\nDESENCANTO. Eu chamava de\p"
-	.string "distraicao, ate minha mae\nesquecer a cancao que cantava\p"
-	.string "desde crianca.$"
+	.string "Wow!\n"
+	.string "That was wicked!$"
 
 SootopolisCity_Text_GoRedAndBlueMon:
-	.string "O HORIZONTE consertou a estrada\ndaqui. Nao sei se isso torna\p"
-	.string "mais facil perguntar o que\nexiste debaixo dela.$"
+	.string "Go for it, red POKéMON!\n"
+	.string "Don't back off, blue POKéMON!$"
 
 SootopolisCity_Text_DoYouKnowMonNames:
-	.string "Voce vai continuar mesmo\nsabendo que AGUAS DE M'BOI\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "… … … … … …\p"
+	.string "Hi, do you know the names of those\n"
+	.string "POKéMON fighting over there?$"
 
 SootopolisCity_Text_GreenOneSettlesThings:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "I was wondering which one would win,\n"
+	.string "the red one or the blue one, but, oh no,\l"
+	.string "it's the green one that settles things!\p"
+	.string "Talk about a huge turn of events!$"
 
 SootopolisCity_Text_SeeingLegendWithOwnEyes:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "There's an ancient legend that claims\n"
+	.string "the land and sea were shaped by\l"
+	.string "a colossal battle between POKéMON.\p"
+	.string "Well, I'm seeing that happen with\n"
+	.string "my very own eyes!\p"
+	.string "Whoa! I never expected to be\n"
+	.string "witness to something this huge!$"
 
 SootopolisCity_Text_SawLegendWithOwnEyes:
-	.string "O HORIZONTE consertou a estrada\ndaqui. Nao sei se isso torna\p"
-	.string "mais facil perguntar o que\nexiste debaixo dela.$"
+	.string "There's an ancient legend that claims\n"
+	.string "the land and sea were shaped by\l"
+	.string "a colossal battle between POKéMON.\p"
+	.string "Well, I saw that happen with\n"
+	.string "my very own eyes!\p"
+	.string "Whoa! I never expected to be\n"
+	.string "witness to something this huge!$"
 
 SootopolisCity_Text_BigPokemonFighting:
-	.string "Dona Zila diz que uma historia\nmuda toda vez que e contada.\p"
-	.string "Talvez seja por isso que ainda\nesta viva.$"
+	.string "A big POKéMON is fighting with\n"
+	.string "another big POKéMON!\p"
+	.string "Please, someone make them stop!$"
 
 SootopolisCity_Text_PrettyMonCameFromSky:
-	.string "Dona Zila diz que uma historia\nmuda toda vez que e contada.\p"
-	.string "Talvez seja por isso que ainda\nesta viva.$"
+	.string "A pretty POKéMON came down from\n"
+	.string "the sky…$"
 
 SootopolisCity_Text_SootopolisWillBeWrecked:
-	.string "Tem gente que chama de\nDESENCANTO. Eu chamava de\p"
-	.string "distraicao, ate minha mae\nesquecer a cancao que cantava\p"
-	.string "desde crianca.$"
+	.string "Oh, no!\n"
+	.string "SOOTOPOLIS CITY will get wrecked!$"
 
 SootopolisCity_Text_SootopolisDidntGetWrecked:
-	.string "Tem gente que chama de\nDESENCANTO. Eu chamava de\p"
-	.string "distraicao, ate minha mae\nesquecer a cancao que cantava\p"
-	.string "desde crianca.$"
+	.string "SOOTOPOLIS CITY didn't get wrecked!$"
 
 SootopolisCity_Text_NoOrdinaryTourist:
-	.string "Voce vai continuar mesmo\nsabendo que AGUAS DE M'BOI\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "Hm!\n"
+	.string "You've come all the way to SOOTOPOLIS?\l"
+	.string "You're no ordinary tourist.\p"
+	.string "But I suppose that doesn't make you\n"
+	.string "an extraordinary tourist, either.$"
 
 SootopolisCity_Text_CityRegainedCalm:
-	.string "O HORIZONTE consertou a estrada\ndaqui. Nao sei se isso torna\p"
-	.string "mais facil perguntar o que\nexiste debaixo dela.$"
+	.string "The city has regained its calm…$"
 
 SootopolisCity_Text_CaveOfOriginPleaseLeave:
-	.string "Voce vai continuar mesmo\nsabendo que AGUAS DE M'BOI\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "As aguas carregam lembrancas\nque nao pertencem a quem as\p"
+	.string "recebe. Pessoas reconhecem\nnomes que nunca ouviram e\p"
+	.string "esquecem rostos que amam.$"
 
 SootopolisCity_Text_LeadSuperiorTrainerToCave:
-	.string "AMALIA: Arauna sobreviveu a\nverdade pela metade por tempo\p"
-	.string "demais. A Liga tambem tem\ndividas com os nomes que foram\p"
-	.string "deixados para tras.$"
+	.string "A person with a strong will and\n"
+	.string "superior talent…\p"
+	.string "A TRAINER who has knowledge and\n"
+	.string "experience of many kinds of POKéMON…\p"
+	.string "If such a person were to appear, I was\n"
+	.string "instructed by WALLACE to lead that\l"
+	.string "TRAINER to this CAVE.$"
 
 SootopolisCity_Text_AwakenedPokemonClash:
-	.string "Dona Zila diz que uma historia\nmuda toda vez que e contada.\p"
-	.string "Talvez seja por isso que ainda\nesta viva.$"
+	.string "Oh, my…\p"
+	.string "The clash between the two awakened\n"
+	.string "POKéMON was quelled by the awakening\l"
+	.string "of a third POKéMON…$"
 
 SootopolisCity_Text_CaveOfOriginSleepsToo:
-	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
-	.string "nomes antigos desapareceram\nquando elas chegaram.$"
+	.string "This is the CAVE OF ORIGIN…\p"
+	.string "With the passing of the crisis,\n"
+	.string "the cave, too, shall sleep…$"
 
 SootopolisCity_Text_SootopolisSkyBeautiful:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "SOOTOPOLIS sprang up as a town in\n"
+	.string "the crater of a volcano.\p"
+	.string "If you look up at the sky, the lip of\n"
+	.string "the crater is also visible.\l"
+	.string "So, all you see is the sky in a circle.\p"
+	.string "But that's what makes the sky above\n"
+	.string "SOOTOPOLIS the most beautiful.$"
 
 SootopolisCity_Text_GiganticPokemonFight:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "When two POKéMON that gigantic\n"
+	.string "are fighting that savagely, there's\l"
+	.string "not much that we can do.$"
 
 SootopolisCity_Text_FearedWorstWhenPokemonFlewDown:
-	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
-	.string "nomes antigos desapareceram\nquando elas chegaram.$"
+	.string "When that third POKéMON flew down,\n"
+	.string "I feared the worst.$"
 
 SootopolisCity_Text_NightSkyFavoriteScenery:
-	.string "O HORIZONTE consertou a estrada\ndaqui. Nao sei se isso torna\p"
-	.string "mais facil perguntar o que\nexiste debaixo dela.$"
+	.string "A circle of a night sky framed by\n"
+	.string "the crater of a volcano…\p"
+	.string "And in that ring, stars flicker and\n"
+	.string "blink as if they were alive…\l"
+	.string "It's my favorite scenery.$"
 
 SootopolisCity_Text_WeatherWentWild:
-	.string "O colapso do Arquivo espalha\nlembrancas alheias e vazios de\p"
-	.string "memoria por toda Arauna.$"
+	.string "A cidade inteira sente o\nresultado de duas ideias\p"
+	.string "transformadas em absolutos:\nlembrar tudo e apagar a dor a\p"
+	.string "qualquer custo.$"
 
 SootopolisCity_Text_YouBroughtFlyingMon:
-	.string "Voce vai continuar mesmo\nsabendo que AGUAS DE M'BOI\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "Oh?\p"
+	.string "It was you who brought that flying\n"
+	.string "POKéMON here?\p"
+	.string "Well, aren't you amazing!$"
 
 SootopolisCity_Text_GroudonPleaseStop:
-	.string "LUZIA: Ninguem tem o direito de\nescolher que memoria merece\p"
-	.string "morrer. Se for preciso devolver\ntoda a dor de uma vez, eu vou\p"
-	.string "devolver.$"
+	.string "A cidade inteira sente o\nresultado de duas ideias\p"
+	.string "transformadas em absolutos:\nlembrar tudo e apagar a dor a\p"
+	.string "qualquer custo.$"
 
 SootopolisCity_Text_AfterAllOurScheming:
-	.string "LUZIA: Ninguem tem o direito de\nescolher que memoria merece\p"
-	.string "morrer. Se for preciso devolver\ntoda a dor de uma vez, eu vou\p"
-	.string "devolver.$"
+	.string "IARA-MAE puxa VINCULOS de\nvolta. ANHANGUERA encerra os\p"
+	.string "que nao podem continuar. O\ncolapso obrigou as duas\p"
+	.string "correntes a se manifestar ao\nmesmo tempo.$"
 
 SootopolisCity_Text_KyogreCalmDown:
-	.string "OTACILIO: Eu nao quero poder.\nQuero um mundo em que nenhuma\p"
-	.string "pessoa seja obrigada a carregar\npara sempre a pior coisa que ja\p"
-	.string "viveu.$"
+	.string "A cidade inteira sente o\nresultado de duas ideias\p"
+	.string "transformadas em absolutos:\nlembrar tudo e apagar a dor a\p"
+	.string "qualquer custo.$"
 
 SootopolisCity_Text_TryingMeaninglessToPokemon:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "IARA-MAE puxa VINCULOS de\nvolta. ANHANGUERA encerra os\p"
+	.string "que nao podem continuar. O\ncolapso obrigou as duas\p"
+	.string "correntes a se manifestar ao\nmesmo tempo.$"
 
 SootopolisCity_Text_InvolvedWithCrisisComeWithMe:
 	.string "STEVEN: Those POKéMON fighting…\n"
@@ -1562,56 +1597,63 @@ SootopolisCity_Text_InvolvedWithCrisisComeWithMe:
 	.string "Come with me, please.$"
 
 SootopolisCity_Text_DoesThisMakeYourFearPokemon:
-	.string "CIRO: Eu aceitei o uniforme\nporque ele abriu portas. Agora\p"
-	.string "sei de quem eram as vozes que\nficaram trancadas do outro\p"
-	.string "lado. Nao vou fingir que nunca\nvesti aquilo.$"
+	.string "As aguas carregam lembrancas\nque nao pertencem a quem as\p"
+	.string "recebe. Pessoas reconhecem\nnomes que nunca ouviram e\p"
+	.string "esquecem rostos que amam.$"
 
 SootopolisCity_Text_HereWereAreHelpWallace:
-	.string "CIRO: Eu aceitei o uniforme\nporque ele abriu portas. Agora\p"
-	.string "sei de quem eram as vozes que\nficaram trancadas do outro\p"
-	.string "lado. Nao vou fingir que nunca\nvesti aquilo.$"
+	.string "SEU BENTO: Quando um nome some\nda boca das pessoas, eu\p"
+	.string "escrevo. Nao para substituir\nquem lembra; para deixar uma\p"
+	.string "pista.$"
 
 SootopolisCity_Text_KnowWhatsNeededToHelpHim:
-	.string "CIRO: Eu aceitei o uniforme\nporque ele abriu portas. Agora\p"
-	.string "sei de quem eram as vozes que\nficaram trancadas do outro\p"
-	.string "lado. Nao vou fingir que nunca\nvesti aquilo.$"
+	.string "SEU BENTO: Quando um nome some\nda boca das pessoas, eu\p"
+	.string "escrevo. Nao para substituir\nquem lembra; para deixar uma\p"
+	.string "pista.$"
 
 SootopolisCity_Text_NeverBeenToSkyPillar:
-	.string "CIRO: Eu aceitei o uniforme\nporque ele abriu portas. Agora\p"
-	.string "sei de quem eram as vozes que\nficaram trancadas do outro\p"
-	.string "lado. Nao vou fingir que nunca\nvesti aquilo.$"
+	.string "SEU BENTO: Quando um nome some\nda boca das pessoas, eu\p"
+	.string "escrevo. Nao para substituir\nquem lembra; para deixar uma\p"
+	.string "pista.$"
 
 SootopolisCity_Text_SoThatsRayquaza:
-	.string "CIRO: Eu aceitei o uniforme\nporque ele abriu portas. Agora\p"
-	.string "sei de quem eram as vozes que\nficaram trancadas do outro\p"
-	.string "lado. Nao vou fingir que nunca\nvesti aquilo.$"
+	.string "IARA-MAE puxa VINCULOS de\nvolta. ANHANGUERA encerra os\p"
+	.string "que nao podem continuar. O\ncolapso obrigou as duas\p"
+	.string "correntes a se manifestar ao\nmesmo tempo.$"
 
 SootopolisCity_Text_MaxieArchieLeft:
-	.string "OTACILIO: Eu nao quero poder.\nQuero um mundo em que nenhuma\p"
-	.string "pessoa seja obrigada a carregar\npara sempre a pior coisa que ja\p"
-	.string "viveu.$"
+	.string "IARA-MAE puxa VINCULOS de\nvolta. ANHANGUERA encerra os\p"
+	.string "que nao podem continuar. O\ncolapso obrigou as duas\p"
+	.string "correntes a se manifestar ao\nmesmo tempo.$"
 
 SootopolisCity_Text_HaventYouScaledSkyPillar:
 	.string "AMALIA: Arauna sobreviveu a\nverdade pela metade por tempo\p"
-	.string "demais. A Liga tambem tem\ndividas com os nomes que foram\p"
-	.string "deixados para tras.$"
+	.string "demais. A Liga tambem tem\ndividas com quem foi apagado.$"
 
 SootopolisCity_Text_AquaMagmaDidntMeanHarm:
-	.string "HORIZONTE: O Arquivo preserva o\nque o tempo destruiria. Um dia\p"
-	.string "voces vao agradecer por nao\nprecisarem mais sofrer para\p"
-	.string "lembrar.$"
+	.string "WALLACE: {PLAYER}{KUN}…\p"
+	.string "The leaders of LEMBRANTES and AQUA,\n"
+	.string "I don't think they meant harm.\p"
+	.string "It wouldn't hurt to hear what they\n"
+	.string "have to say for themselves.$"
 
 SootopolisCity_Text_ThankYouForHelpAcceptThis:
 	.string "AMALIA: Arauna sobreviveu a\nverdade pela metade por tempo\p"
-	.string "demais. A Liga tambem tem\ndividas com os nomes que foram\p"
-	.string "deixados para tras.$"
+	.string "demais. A Liga tambem tem\ndividas com quem foi apagado.$"
 
 SootopolisCity_Text_ExplainWaterfallGoToGym:
-	.string "Voce vai continuar mesmo\nsabendo que AGUAS DE M'BOI\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "That HIDDEN MACHINE contains\n"
+	.string "WATERFALL.\p"
+	.string "If you have the RAIN BADGE, a POKéMON\n"
+	.string "that has learned that HM move can\l"
+	.string "force its way up waterfalls.\p"
+	.string "And where does one get the RAIN BADGE?\n"
+	.string "You know, don't you?\p"
+	.string "That's right! You have to beat\n"
+	.string "the SOOTOPOLIS GYM LEADER.\p"
+	.string "When you're all set to go, step through\n"
+	.string "that door.$"
 
 SootopolisCity_Text_DazzledByMentor:
 	.string "AMALIA: Arauna sobreviveu a\nverdade pela metade por tempo\p"
-	.string "demais. A Liga tambem tem\ndividas com os nomes que foram\p"
-	.string "deixados para tras.$"
+	.string "demais. A Liga tambem tem\ndividas com quem foi apagado.$"

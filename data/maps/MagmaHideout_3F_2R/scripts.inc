@@ -7,14 +7,15 @@ MagmaHideout_3F_2R_EventScript_Grunt10::
 	end
 
 MagmaHideout_3F_2R_Text_Grunt10Intro:
-	.string "LEMBRANTE: Apagar uma historia\nporque ela incomoda quem manda\p"
-	.string "e apenas outra forma de\nviolencia.$"
+	.string "LEMBRANTE: LUZIA diz que\nmemoria devolvida sem permissao\p"
+	.string "ainda e melhor que memoria\nroubada. Nem todos aqui\p"
+	.string "concordam com essa parte.$"
 
 MagmaHideout_3F_2R_Text_Grunt10Defeat:
-	.string "LEMBRANTE: Apagar uma historia\nporque ela incomoda quem manda\p"
-	.string "e apenas outra forma de\nviolencia.$"
+	.string "LEMBRANTE: O HORIZONTE quer uma\nArauna estavel. Eu quero uma\p"
+	.string "Arauna que saiba por que suas\nruinas existem.$"
 
 MagmaHideout_3F_2R_Text_Grunt10PostBattle:
-	.string "LEMBRANTE: Apagar uma historia\nporque ela incomoda quem manda\p"
-	.string "e apenas outra forma de\nviolencia.$"
+	.string "LEMBRANTE: Se uma historia\nincomoda quem manda, ela vira\p"
+	.string "'ruido', depois 'trauma',\ndepois desaparece do registro.$"
 

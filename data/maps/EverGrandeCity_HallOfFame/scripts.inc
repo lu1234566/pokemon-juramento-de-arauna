@@ -81,11 +81,9 @@ EverGrandeCity_HallOfFame_Movement_WalkIntoHallOfFame2:
 
 EverGrandeCity_HallOfFame_Text_HereWeHonorLeagueChampions:
 	.string "AMALIA: Arauna sobreviveu a\nverdade pela metade por tempo\p"
-	.string "demais. A Liga tambem tem\ndividas com os nomes que foram\p"
-	.string "deixados para tras.$"
+	.string "demais. A Liga tambem tem\ndividas com quem foi apagado.$"
 
 EverGrandeCity_HallOfFame_Text_LetsRecordYouAndYourPartnersNames:
 	.string "AMALIA: Arauna sobreviveu a\nverdade pela metade por tempo\p"
-	.string "demais. A Liga tambem tem\ndividas com os nomes que foram\p"
-	.string "deixados para tras.$"
+	.string "demais. A Liga tambem tem\ndividas com quem foi apagado.$"
 

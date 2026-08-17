@@ -157,5 +157,5 @@ LilycoveCity_DepartmentStore_5F_Text_SellManyCuteMatsHere:
 	.string "Maybe I'll buy them all…$"
 
 LilycoveCity_DepartmentStore_5F_Text_ClosedRooftopForWeather:
-	.string "Por tras da fachada moderna\nfica o centro de operacoes do\p"
-	.string "ARQUIVO VIVO.$"
+	.string "I think they closed the rooftop\n"
+	.string "because the weather is wild today.$"

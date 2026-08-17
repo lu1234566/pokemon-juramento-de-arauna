@@ -221,59 +221,62 @@ EverGrandeCity_ChampionsRoom_Movement_BirchArrives:
 
 EverGrandeCity_ChampionsRoom_Text_IntroSpeech:
 	.string "AMALIA: Arauna sobreviveu a\nverdade pela metade por tempo\p"
-	.string "demais. A Liga tambem tem\ndividas com os nomes que foram\p"
-	.string "deixados para tras.$"
+	.string "demais. A Liga tambem tem\ndividas com quem foi apagado.$"
 
 EverGrandeCity_ChampionsRoom_Text_Defeat:
-	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
-	.string "nomes antigos desapareceram\nquando elas chegaram.$"
+	.string "I, the CHAMPION, fall in defeat…\p"
+	.string "That was wonderful work.\n"
+	.string "You were elegant, infuriatingly so.\l"
+	.string "And yet it was utterly glorious!\p"
+	.string "Kudos to you, {PLAYER}{KUN}!\p"
+	.string "You are a truly noble POKéMON\n"
+	.string "TRAINER!$"
 
 EverGrandeCity_ChampionsRoom_Text_PostBattleSpeech:
 	.string "AMALIA: Arauna sobreviveu a\nverdade pela metade por tempo\p"
-	.string "demais. A Liga tambem tem\ndividas com os nomes que foram\p"
-	.string "deixados para tras.$"
+	.string "demais. A Liga tambem tem\ndividas com quem foi apagado.$"
 
 EverGrandeCity_ChampionsRoom_Text_MayAdvice:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "CIRO: O HORIZONTE nao me pediu\npara esquecer nada. So me\p"
+	.string "mostrou que existe um futuro\nque nao precisa ser governado\p"
+	.string "pelo passado.$"
 
 EverGrandeCity_ChampionsRoom_Text_MayItsAlreadyOver:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "CIRO: Voce continua olhando\npara cada cicatriz como se ela\p"
+	.string "fosse uma resposta. Eu quero\nsaber o que existe depois dela.$"
 
 EverGrandeCity_ChampionsRoom_Text_BrendanAdvice:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "CIRO: Voce continua olhando\npara cada cicatriz como se ela\p"
+	.string "fosse uma resposta. Eu quero\nsaber o que existe depois dela.$"
 
 EverGrandeCity_ChampionsRoom_Text_BrendanYouveWon:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "CIRO: Nao confunda minha pressa\ncom falta de memoria. Eu lembro\p"
+	.string "o bastante para saber que nao\nquero viver preso ao que perdi.$"
 
 EverGrandeCity_ChampionsRoom_Text_BirchArriveRatePokedex:
-	.string "ANAHI: Eu estudei os VINCULOS\nantes de entender o que minhas\p"
-	.string "pesquisas permitiriam fazer. Se\neu continuar calada, o erro\p"
-	.string "tambem sera meu.$"
+	.string "ANAHI: Eu ajudei a criar os\nprimeiros sensores de VINCULO.\p"
+	.string "Na epoca achei que medir\nsignificava compreender. Hoje\p"
+	.string "sei que nao e a mesma coisa.$"
 
 EverGrandeCity_ChampionsRoom_Text_BirchCongratulations:
-	.string "ANAHI: Eu estudei os VINCULOS\nantes de entender o que minhas\p"
-	.string "pesquisas permitiriam fazer. Se\neu continuar calada, o erro\p"
-	.string "tambem sera meu.$"
+	.string "ANAHI: Se eu continuar calada\nsobre o que o HORIZONTE fez com\p"
+	.string "minha pesquisa, o erro tambem\nsera meu.$"
 
 EverGrandeCity_ChampionsRoom_Text_WallaceComeWithMe:
-	.string "AMALIA: Arauna sobreviveu a\nverdade pela metade por tempo\p"
-	.string "demais. A Liga tambem tem\ndividas com os nomes que foram\p"
-	.string "deixados para tras.$"
+	.string "WALLACE: {PLAYER}{KUN}…\p"
+	.string "No, let me rephrase that properly.\p"
+	.string "The new CHAMPION!\p"
+	.string "Come with me.$"
 
 EverGrandeCity_ChampionsRoom_Text_WallaceWaitOutside:
-	.string "ANAHI: Eu estudei os VINCULOS\nantes de entender o que minhas\p"
-	.string "pesquisas permitiriam fazer. Se\neu continuar calada, o erro\p"
-	.string "tambem sera meu.$"
+	.string "AMALIA: Arauna sobreviveu a\nverdade pela metade por tempo\p"
+	.string "demais. A Liga tambem tem\ndividas com quem foi apagado.$"
 
 EverGrandeCity_ChampionsRoom_Text_MayCongratulations:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "CIRO: Voce continua olhando\npara cada cicatriz como se ela\p"
+	.string "fosse uma resposta. Eu quero\nsaber o que existe depois dela.$"
 
 EverGrandeCity_ChampionsRoom_Text_BrendanCongratulations:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "CIRO: Voce continua olhando\npara cada cicatriz como se ela\p"
+	.string "fosse uma resposta. Eu quero\nsaber o que existe depois dela.$"
 

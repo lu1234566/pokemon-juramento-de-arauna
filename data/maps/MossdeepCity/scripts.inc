@@ -304,9 +304,9 @@ MossdeepCity_Movement_ScottExitEast:
 	step_end
 
 MossdeepCity_Text_WantKingsRockStevenGaveMe:
-	.string "CIRO: Eu aceitei o uniforme\nporque ele abriu portas. Agora\p"
-	.string "sei de quem eram as vozes que\nficaram trancadas do outro\p"
-	.string "lado. Nao vou fingir que nunca\nvesti aquilo.$"
+	.string "SEU BENTO: Quando um nome some\nda boca das pessoas, eu\p"
+	.string "escrevo. Nao para substituir\nquem lembra; para deixar uma\p"
+	.string "pista.$"
 
 MossdeepCity_Text_YouCanKeepIt:
 	.string "Why would you want it?\n"
@@ -315,9 +315,9 @@ MossdeepCity_Text_YouCanKeepIt:
 	.string "from STEVEN.$"
 
 MossdeepCity_Text_StevensHouseOverThere:
-	.string "CIRO: Eu aceitei o uniforme\nporque ele abriu portas. Agora\p"
-	.string "sei de quem eram as vozes que\nficaram trancadas do outro\p"
-	.string "lado. Nao vou fingir que nunca\nvesti aquilo.$"
+	.string "SEU BENTO: Quando um nome some\nda boca das pessoas, eu\p"
+	.string "escrevo. Nao para substituir\nquem lembra; para deixar uma\p"
+	.string "pista.$"
 
 MossdeepCity_Text_WhatToDoWithWeirdRock:
 	.string "Yeah, you think so, too! What are you\n"
@@ -332,17 +332,24 @@ MossdeepCity_Text_WailmerWatching:
 	.string "WAILMER watching!$"
 
 MossdeepCity_Text_SpaceCenterReceivedLetter:
-	.string "O HORIZONTE pretende usar a\nrede regional de comunicacao\p"
-	.string "para ampliar o ARQUIVO VIVO.$"
+	.string "The island's SPACE CENTER has been\n"
+	.string "launching huge rockets.\p"
+	.string "There's been some kind of an uproar\n"
+	.string "over a letter they received recently.$"
 
 MossdeepCity_Text_SpaceCenterLaunchingRockets:
-	.string "O HORIZONTE pretende usar a\nrede regional de comunicacao\p"
-	.string "para ampliar o ARQUIVO VIVO.$"
+	.string "The island's SPACE CENTER has been\n"
+	.string "launching huge rockets.$"
 
 MossdeepCity_Text_MossdeepTargetedByMagma:
-	.string "HORIZONTE: O Arquivo preserva o\nque o tempo destruiria. Um dia\p"
-	.string "voces vao agradecer por nao\nprecisarem mais sofrer para\p"
-	.string "lembrar.$"
+	.string "I heard from a SAILOR buddy that\n"
+	.string "CONSORCIO HORIZONTE set up shop in LILYCOVE.\p"
+	.string "I also heard that someone came along\n"
+	.string "and wiped the floor with them!\p"
+	.string "But MOSSDEEP here's been targeted\n"
+	.string "by that LEMBRANTES.\p"
+	.string "If you want to know what they're up to,\n"
+	.string "go visit the SPACE CENTER.$"
 
 MossdeepCity_Text_FeelReliefOnLand:
 	.string "I'm a SAILOR, so the sea's obviously\n"
@@ -372,8 +379,14 @@ MossdeepCity_Text_SurfExhilarating:
 	.string "Wouldn't you agree, youngster?$"
 
 MossdeepCity_Text_SpecialSpaceCenterRock:
-	.string "O HORIZONTE pretende usar a\nrede regional de comunicacao\p"
-	.string "para ampliar o ARQUIVO VIVO.$"
+	.string "This rock has a special meaning to\n"
+	.string "the people at the SPACE CENTER.\p"
+	.string "They put it here as their wish for\n"
+	.string "their rockets to fly safely.\p"
+	.string "When you make a wish, what do you use?\n"
+	.string "Do you wish upon a star?\p"
+	.string "I use a wish tag to make it happen.\n"
+	.string "That's what I do.$"
 
 MossdeepCity_Text_ItsAWhiteRock:
 	.string "It's a white rock.$"
@@ -384,12 +397,12 @@ MossdeepCity_Text_GymSign:
 	.string "“The mystic combination!”$"
 
 MossdeepCity_Text_CitySign:
-	.string "MOSSDEEP CITY\n"
-	.string "“Our slogan: Cherish POKéMON!”$"
+	.string "MISSOES DO CEU. O HORIZONTE\npretende usar a rede regional\p"
+	.string "de comunicacao para ampliar o\nARQUIVO VIVO.$"
 
 MossdeepCity_Text_SpaceCenterSign:
-	.string "O HORIZONTE pretende usar a\nrede regional de comunicacao\p"
-	.string "para ampliar o ARQUIVO VIVO.$"
+	.string "MOSSDEEP SPACE CENTER\n"
+	.string "“The closest place to space.”$"
 
 MossdeepCity_Text_ScottSomethingWrongWithTown:
 	.string "SCOTT: {PLAYER}{KUN}, feeling good?\n"

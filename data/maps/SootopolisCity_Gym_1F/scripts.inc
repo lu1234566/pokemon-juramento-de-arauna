@@ -176,82 +176,93 @@ SootopolisCity_Gym_1F_EventScript_GymStatue::
 	end
 
 SootopolisCity_Gym_1F_Text_GymGuideAdvice:
-	.string "DONA CELINA: Agua parada\napodrece. Agua que corre leva\p"
-	.string "coisas embora. Viver e aprender\no que guardar e o que deixar\p"
-	.string "seguir.$"
+	.string "Yo! How's it going, CHAMPION-\n"
+	.string "bound {PLAYER}?\p"
+	.string "SOOTOPOLIS's GYM LEADER JUAN is\n"
+	.string "a master of WATER-type POKéMON.\p"
+	.string "And, to get to JUAN, an icy floor\n"
+	.string "will hamper your progress…\p"
+	.string "Listen, I'm sorry, but that's all the\n"
+	.string "advice that I have for you.\p"
+	.string "The rest of the way, you have to\n"
+	.string "go for it yourself!$"
 
 SootopolisCity_Gym_1F_Text_GymGuidePostVictory:
-	.string "DONA CELINA: Agua parada\napodrece. Agua que corre leva\p"
-	.string "coisas embora. Viver e aprender\no que guardar e o que deixar\p"
-	.string "seguir.$"
+	.string "Yow! You've beaten even JUAN, who\n"
+	.string "was supposedly the best in all ARAUNA!\p"
+	.string "Okay! Check out your TRAINER CARD.\p"
+	.string "If you've gotten all the BADGES, you're\n"
+	.string "set for the POKéMON LEAGUE challenge!$"
 
 SootopolisCity_Gym_1F_Text_JuanIntro:
-	.string "AMALIA: Arauna sobreviveu a\nverdade pela metade por tempo\p"
-	.string "demais. A Liga tambem tem\ndividas com os nomes que foram\p"
-	.string "deixados para tras.$"
+	.string "DONA CELINA: Viver e aprender o\nque guardar e o que deixar\p"
+	.string "seguir. Escolher isso pelo\noutro e que nao cabe a nos.$"
 
 @ NOTE: This defeat text actually causes a buffer overflow. It's about 50 bytes too long for
 @ the gDisplayedStringBattle buffer that it's put into, and it stomps all over the gBattleTextBuffs
 @ after, as well as the otherwise unused array after that. One wonders if that's the reason for
 @ the existence of that unused array of ints.
 SootopolisCity_Gym_1F_Text_JuanDefeat:
-	.string "AMALIA: Arauna sobreviveu a\nverdade pela metade por tempo\p"
-	.string "demais. A Liga tambem tem\ndividas com os nomes que foram\p"
-	.string "deixados para tras.$"
+	.string "DONA CELINA: Viver e aprender o\nque guardar e o que deixar\p"
+	.string "seguir. Escolher isso pelo\noutro e que nao cabe a nos.$"
 
 SootopolisCity_Gym_1F_Text_ReceivedRainBadge:
 	.string "{PLAYER} received the RAIN BADGE\n"
 	.string "from JUAN.$"
 
 SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "Having the RAIN BADGE shall assure you\n"
+	.string "the full obedience of all your POKéMON\l"
+	.string "to your every command.\p"
+	.string "The RAIN BADGE also allows the use\n"
+	.string "of the HM move WATERFALL to scale\l"
+	.string "walls of cascading water.\p"
+	.string "And, so that you never forget the\n"
+	.string "battle we shared, take this…$"
 
 SootopolisCity_Gym_1F_Text_ExplainWaterPulse:
-	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
-	.string "nomes antigos desapareceram\nquando elas chegaram.$"
+	.string "The TECHNICAL MACHINE I handed you\n"
+	.string "contains WATER PULSE.\p"
+	.string "In use, it will occasionally confuse\n"
+	.string "the target with ultrasonic waves.\p"
+	.string "… … … … … …$"
 
 SootopolisCity_Gym_1F_Text_RegisteredJuan:
-	.string "DONA CELINA: Agua parada\napodrece. Agua que corre leva\p"
-	.string "coisas embora. Viver e aprender\no que guardar e o que deixar\p"
-	.string "seguir.$"
+	.string "Registered GYM LEADER JUAN\n"
+	.string "in the POKéNAV.$"
 
 SootopolisCity_Gym_1F_Text_JuanPostBattle:
-	.string "DONA CELINA: Agua parada\napodrece. Agua que corre leva\p"
-	.string "coisas embora. Viver e aprender\no que guardar e o que deixar\p"
-	.string "seguir.$"
+	.string "DONA CELINA: Viver e aprender o\nque guardar e o que deixar\p"
+	.string "seguir. Escolher isso pelo\noutro e que nao cabe a nos.$"
 
 SootopolisCity_Gym_1F_Text_GoGetFortreeBadge:
-	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
-	.string "nomes antigos desapareceram\nquando elas chegaram.$"
+	.string "There remains but one BADGE to\n"
+	.string "obtain in ARAUNA.\p"
+	.string "If you wish to challenge the POKéMON\n"
+	.string "LEAGUE, you must obtain the last\l"
+	.string "BADGE from the GYM in FORTREE.$"
 
 SootopolisCity_Gym_1F_Text_GymStatue:
-	.string "Tem gente que chama de\nDESENCANTO. Eu chamava de\p"
-	.string "distraicao, ate minha mae\nesquecer a cancao que cantava\p"
-	.string "desde crianca.$"
+	.string "SOOTOPOLIS CITY POKéMON GYM$"
 
 SootopolisCity_Gym_1F_Text_GymStatueCertified:
-	.string "DONA CELINA: Agua parada\napodrece. Agua que corre leva\p"
-	.string "coisas embora. Viver e aprender\no que guardar e o que deixar\p"
-	.string "seguir.$"
+	.string "SOOTOPOLIS CITY POKéMON GYM\p"
+	.string "JUAN'S CERTIFIED TRAINERS:\n"
+	.string "{PLAYER}$"
 
 SootopolisCity_Gym_1F_Text_JuanPreRematch:
-	.string "DONA CELINA: Agua parada\napodrece. Agua que corre leva\p"
-	.string "coisas embora. Viver e aprender\no que guardar e o que deixar\p"
-	.string "seguir.$"
+	.string "DONA CELINA: Viver e aprender o\nque guardar e o que deixar\p"
+	.string "seguir. Escolher isso pelo\noutro e que nao cabe a nos.$"
 
 SootopolisCity_Gym_1F_Text_JuanRematchDefeat:
-	.string "DONA CELINA: Agua parada\napodrece. Agua que corre leva\p"
-	.string "coisas embora. Viver e aprender\no que guardar e o que deixar\p"
-	.string "seguir.$"
+	.string "DONA CELINA: Viver e aprender o\nque guardar e o que deixar\p"
+	.string "seguir. Escolher isso pelo\noutro e que nao cabe a nos.$"
 
 SootopolisCity_Gym_1F_Text_JuanPostRematch:
-	.string "DONA CELINA: Agua parada\napodrece. Agua que corre leva\p"
-	.string "coisas embora. Viver e aprender\no que guardar e o que deixar\p"
-	.string "seguir.$"
+	.string "DONA CELINA: Viver e aprender o\nque guardar e o que deixar\p"
+	.string "seguir. Escolher isso pelo\noutro e que nao cabe a nos.$"
 
 SootopolisCity_Gym_1F_Text_JuanRematchNeedTwoMons:
-	.string "DONA CELINA: Agua parada\napodrece. Agua que corre leva\p"
-	.string "coisas embora. Viver e aprender\no que guardar e o que deixar\p"
-	.string "seguir.$"
+	.string "DONA CELINA: Viver e aprender o\nque guardar e o que deixar\p"
+	.string "seguir. Escolher isso pelo\noutro e que nao cabe a nos.$"
 

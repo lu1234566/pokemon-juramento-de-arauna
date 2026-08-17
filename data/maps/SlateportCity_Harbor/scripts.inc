@@ -381,56 +381,59 @@ SlateportCity_Harbor_EventScript_TradedScanner::
 	end
 
 SlateportCity_Harbor_Text_FerryServiceUnavailable:
-	.string "Voce vai continuar mesmo\nsabendo que PORTO DO SAL guarda\p"
-	.string "partes da historia que muita\ngente preferia deixar\p"
-	.string "enterradas?$"
+	.string "I beg your pardon?\n"
+	.string "You're looking for a ship?\p"
+	.string "I'm sorry, the ferry service isn't\n"
+	.string "available at present…$"
 
 SlateportCity_Harbor_Text_MayISeeYourTicket:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "CIRO: Se os dados estiverem\ncertos, o DESENCANTO pode ser\p"
+	.string "tratado. Eu prefiro testar uma\nresposta a transformar\p"
+	.string "sofrimento em tradicao.$"
 
 SlateportCity_Harbor_Text_YouMustHaveTicket:
-	.string "Dona Zila diz que uma historia\nmuda toda vez que e contada.\p"
-	.string "Talvez seja por isso que ainda\nesta viva.$"
+	.string "{PLAYER} doesn't have the TICKET…\p"
+	.string "I'm terribly sorry.\p"
+	.string "You must have a TICKET to board\n"
+	.string "the ferry.$"
 
 SlateportCity_Harbor_Text_FlashedTicketWhereTo:
-	.string "Voce vai continuar mesmo\nsabendo que PORTO DO SAL guarda\p"
-	.string "partes da historia que muita\ngente preferia deixar\p"
-	.string "enterradas?$"
+	.string "{PLAYER} flashed the TICKET.\p"
+	.string "Perfect! That's all you need!\p"
+	.string "And where would you like to go?$"
 
 SlateportCity_Harbor_Text_SailAnotherTime:
-	.string "O HORIZONTE consertou a estrada\ndaqui. Nao sei se isso torna\p"
-	.string "mais facil perguntar o que\nexiste debaixo dela.$"
+	.string "Please sail with us another time!$"
 
 SlateportCity_Harbor_Text_LilycoveItIs:
-	.string "O HORIZONTE consertou a estrada\ndaqui. Nao sei se isso torna\p"
-	.string "mais facil perguntar o que\nexiste debaixo dela.$"
+	.string "LILYCOVE CITY it is, then!$"
 
 SlateportCity_Harbor_Text_BattleFrontierItIs:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "BATTLE FRONTIER it is, then!$"
 
 SlateportCity_Harbor_Text_PleaseBoardFerry:
-	.string "O HORIZONTE consertou a estrada\ndaqui. Nao sei se isso torna\p"
-	.string "mais facil perguntar o que\nexiste debaixo dela.$"
+	.string "Please board the ferry and wait for\n"
+	.string "departure.$"
 
 SlateportCity_Harbor_Text_WhereWouldYouLikeToGo:
-	.string "Voce vai continuar mesmo\nsabendo que PORTO DO SAL guarda\p"
-	.string "partes da historia que muita\ngente preferia deixar\p"
-	.string "enterradas?$"
+	.string "Then, where would you like to go?$"
 
 SlateportCity_Harbor_Text_LoveToGoDeepUnderwaterSomeday:
-	.string "Voce vai continuar mesmo\nsabendo que PORTO DO SAL guarda\p"
-	.string "partes da historia que muita\ngente preferia deixar\p"
-	.string "enterradas?$"
+	.string "A journey to the bottom of the sea…\n"
+	.string "I wonder what it'd be like?\p"
+	.string "I'd love to go deep underwater like\n"
+	.string "that someday.$"
 
 SlateportCity_Harbor_Text_AbnormalWeather:
-	.string "O ARQUIVO VIVO e apresentado\ncomo a cura do DESENCANTO. Os\p"
-	.string "LEMBRANTES tentam impedir a\ndemonstracao.$"
+	.string "HORIZONTE: Os sensores detectam\nVINCULOS instaveis antes do\p"
+	.string "DESENCANTO completo. Isso pode\nsalvar familias inteiras.$"
 
 SlateportCity_Harbor_Text_SubTooSmallForMe:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "I wanted to go with CAPT. STERN on\n"
+	.string "the ocean floor exploration.\p"
+	.string "But the sub's too small for me.\p"
+	.string "If I squeezed in, there wouldn't be\n"
+	.string "any room for the CAPTAIN…$"
 
 SlateportCity_Harbor_Text_SameThugsTriedToRobAtMuseum:
 	.string "CAPT. STERN: Those thugs…\p"
@@ -438,31 +441,37 @@ SlateportCity_Harbor_Text_SameThugsTriedToRobAtMuseum:
 	.string "the DEVON GOODS at the MUSEUM.$"
 
 SlateportCity_Harbor_Text_ArchieYouAgainHideoutInLilycove:
-	.string "OTACILIO: Eu nao quero poder.\nQuero um mundo em que nenhuma\p"
-	.string "pessoa seja obrigada a carregar\npara sempre a pior coisa que ja\p"
-	.string "viveu.$"
+	.string "OTACILIO: Eu vi o que uma\nmemoria pode fazer com quem\p"
+	.string "sobrevive. O ARQUIVO VIVO\nexiste para que ninguem seja\p"
+	.string "condenado a carregar a pior\nnoite da propria vida para\p"
+	.string "sempre.$"
 
 SlateportCity_Harbor_Text_CaptSternWhyStealMySubmarine:
-	.string "HORIZONTE: O Arquivo preserva o\nque o tempo destruiria. Um dia\p"
-	.string "voces vao agradecer por nao\nprecisarem mais sofrer para\p"
-	.string "lembrar.$"
+	.string "HORIZONTE: Os sensores detectam\nVINCULOS instaveis antes do\p"
+	.string "DESENCANTO completo. Isso pode\nsalvar familias inteiras.$"
 
 SlateportCity_Harbor_Text_TeamAquaLeftNeedDive:
-	.string "HORIZONTE: O Arquivo preserva o\nque o tempo destruiria. Um dia\p"
-	.string "voces vao agradecer por nao\nprecisarem mais sofrer para\p"
-	.string "lembrar.$"
+	.string "HORIZONTE: Os sensores detectam\nVINCULOS instaveis antes do\p"
+	.string "DESENCANTO completo. Isso pode\nsalvar familias inteiras.$"
 
 SlateportCity_Harbor_Text_NeedDiveToCatchSub:
-	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
-	.string "nomes antigos desapareceram\nquando elas chegaram.$"
+	.string "HORIZONTE: O projeto de M'BOI\nfoi um desastre. O ARQUIVO\p"
+	.string "atual existe justamente porque\naprendemos com ele. E o que\p"
+	.string "consta nos relatorios.$"
 
 SlateportCity_Harbor_Text_WontBeLongBeforeWeFinishFerry:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "CAPT. STERN: Oh, yes.\n"
+	.string "MR. BRINEY came to our SHIPYARD.\p"
+	.string "It won't be long now before we finish\n"
+	.string "making the ferry!$"
 
 SlateportCity_Harbor_Text_FinishedMakingFerry:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "CAPT. STERN: {PLAYER}{KUN}!\p"
+	.string "We finally finished making the ferry\n"
+	.string "S.S. TIDAL!\p"
+	.string "We couldn't have done it without\n"
+	.string "your friend MR. BRINEY.\p"
+	.string "Please go for a short cruise on it!$"
 
 SlateportCity_Harbor_Text_WouldYouTradeScanner:
 	.string "CAPT. STERN: Oh?\n"
@@ -489,14 +498,12 @@ SlateportCity_Harbor_Text_TradeForDeepSeaScale:
 	.string "my DEEPSEASCALE?$"
 
 SlateportCity_Harbor_Text_WhichOneDoYouWant:
-	.string "Voce vai continuar mesmo\nsabendo que PORTO DO SAL guarda\p"
-	.string "partes da historia que muita\ngente preferia deixar\p"
-	.string "enterradas?$"
+	.string "CAPT. STERN: Which one do you want?$"
 
 SlateportCity_Harbor_Text_HandedScannerToStern:
-	.string "O HORIZONTE consertou a estrada\ndaqui. Nao sei se isso torna\p"
-	.string "mais facil perguntar o que\nexiste debaixo dela.$"
+	.string "{PLAYER} handed the SCANNER to\n"
+	.string "CAPT. STERN.$"
 
 SlateportCity_Harbor_Text_ThisWillHelpResearch:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "CAPT. STERN: Thanks, {PLAYER}{KUN}!\n"
+	.string "This will help our research a lot!$"

@@ -257,34 +257,36 @@ Route101_Movement_BirchApproachPlayer:
 	step_end
 
 Route101_Text_HelpMe:
-	.string "O HORIZONTE consertou a estrada\ndaqui. Nao sei se isso torna\p"
-	.string "mais facil perguntar o que\nexiste debaixo dela.$"
+	.string "H-help me!$"
 
 Route101_Text_PleaseHelp:
-	.string "Tem gente que chama de\nDESENCANTO. Eu chamava de\p"
-	.string "distraicao, ate minha mae\nesquecer a cancao que cantava\p"
-	.string "desde crianca.$"
+	.string "Hello! You over there!\n"
+	.string "Please! Help!\p"
+	.string "In my BAG!\n"
+	.string "There's a POKé BALL!$"
 
 Route101_Text_DontLeaveMe:
-	.string "Voce vai continuar mesmo\nsabendo que ROUTE101 guarda\p"
-	.string "partes da historia que muita\ngente preferia deixar\p"
-	.string "enterradas?$"
+	.string "Wh-Where are you going?!\n"
+	.string "Don't leave me like this!$"
 
 Route101_Text_YouSavedMe:
-	.string "ANAHI: Eu estudei os VINCULOS\nantes de entender o que minhas\p"
-	.string "pesquisas permitiriam fazer. Se\neu continuar calada, o erro\p"
-	.string "tambem sera meu.$"
+	.string "ANAHI: Eu ajudei a criar os\nprimeiros sensores de VINCULO.\p"
+	.string "Na epoca achei que medir\nsignificava compreender. Hoje\p"
+	.string "sei que nao e a mesma coisa.$"
 
 Route101_Text_TakeTiredPokemonToPokeCenter:
-	.string "Dona Zila diz que uma historia\nmuda toda vez que e contada.\p"
-	.string "Talvez seja por isso que ainda\nesta viva.$"
+	.string "If POKéMON get tired, take them to\n"
+	.string "a POKéMON CENTER.\p"
+	.string "There's a POKéMON CENTER in OLDALE\n"
+	.string "TOWN right close by.$"
 
 Route101_Text_WildPokemonInTallGrass:
-	.string "Tem gente que chama de\nDESENCANTO. Eu chamava de\p"
-	.string "distraicao, ate minha mae\nesquecer a cancao que cantava\p"
-	.string "desde crianca.$"
+	.string "Wild POKéMON will jump out at you in\n"
+	.string "tall grass.\p"
+	.string "If you want to catch POKéMON, you have\n"
+	.string "to go into the tall grass and search.$"
 
 Route101_Text_RouteSign:
-	.string "O HORIZONTE consertou a estrada\ndaqui. Nao sei se isso torna\p"
-	.string "mais facil perguntar o que\nexiste debaixo dela.$"
+	.string "ROUTE 101\n"
+	.string "{UP_ARROW} OLDALE TOWN$"
 

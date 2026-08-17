@@ -287,47 +287,48 @@ Route103_EventScript_Isabelle::
 	end
 
 Route103_Text_MayRoute103Pokemon:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "CIRO: Se os dados estiverem\ncertos, o DESENCANTO pode ser\p"
+	.string "tratado. Eu prefiro testar uma\nresposta a transformar\p"
+	.string "sofrimento em tradicao.$"
 
 Route103_Text_MayLetsBattle:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "CIRO: Nao confunda minha pressa\ncom falta de memoria. Eu lembro\p"
+	.string "o bastante para saber que nao\nquero viver preso ao que perdi.$"
 
 Route103_Text_MayDefeated:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "CIRO: Nao confunda minha pressa\ncom falta de memoria. Eu lembro\p"
+	.string "o bastante para saber que nao\nquero viver preso ao que perdi.$"
 
 Route103_Text_MayTimeToHeadBack:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "CIRO: Voce continua olhando\npara cada cicatriz como se ela\p"
+	.string "fosse uma resposta. Eu quero\nsaber o que existe depois dela.$"
 
 Route103_Text_BrendanRoute103Pokemon:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "CIRO: Nao confunda minha pressa\ncom falta de memoria. Eu lembro\p"
+	.string "o bastante para saber que nao\nquero viver preso ao que perdi.$"
 
 Route103_Text_BrendanLetsBattle:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "CIRO: Nao confunda minha pressa\ncom falta de memoria. Eu lembro\p"
+	.string "o bastante para saber que nao\nquero viver preso ao que perdi.$"
 
 Route103_Text_BrendanDefeated:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "CIRO: Voce continua olhando\npara cada cicatriz como se ela\p"
+	.string "fosse uma resposta. Eu quero\nsaber o que existe depois dela.$"
 
 Route103_Text_BrendanTimeToHeadBack:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "CIRO: Nao confunda minha pressa\ncom falta de memoria. Eu lembro\p"
+	.string "o bastante para saber que nao\nquero viver preso ao que perdi.$"
 
 Route103_Text_ShouldHaveBroughtPotion:
-	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
-	.string "nomes antigos desapareceram\nquando elas chegaram.$"
+	.string "My POKéMON is staggeringly tired…\n"
+	.string "I should have brought a POTION…$"
 
 Route103_Text_ShortcutToOldale:
-	.string "Voce vai continuar mesmo\nsabendo que ROUTE103 guarda\p"
-	.string "partes da historia que muita\ngente preferia deixar\p"
-	.string "enterradas?$"
+	.string "If you cross the sea from here,\n"
+	.string "it'll be a shortcut to OLDALE TOWN.\p"
+	.string "Fufufu, that's useful, isn't it?$"
 
 Route103_Text_RouteSign:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "ROUTE 103\n"
+	.string "{DOWN_ARROW} OLDALE TOWN$"
 

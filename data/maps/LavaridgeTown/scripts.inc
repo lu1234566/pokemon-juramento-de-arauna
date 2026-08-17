@@ -274,42 +274,60 @@ LavaridgeTown_EventScript_HerbShopSign::
 	end
 
 LavaridgeTown_Text_MayNiceBadgesTakeThis:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "MAY: {PLAYER}{KUN}! Long time no see!\p"
+	.string "Oh? While I visited the hot springs,\n"
+	.string "you got the LAVARIDGE GYM BADGE.\p"
+	.string "You must have collected\n"
+	.string "good POKéMON…\l"
+	.string "No, I believe you raised some.\p"
+	.string "I guess it would be okay for you to\n"
+	.string "have this.$"
 
 LavaridgeTown_Text_MayExplainGoGogglesChallengeDad:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "CIRO: Nao confunda minha pressa\ncom falta de memoria. Eu lembro\p"
+	.string "o bastante para saber que nao\nquero viver preso ao que perdi.$"
 
 LavaridgeTown_Text_BrendanNiceBadgesTakeThis:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "BRENDAN: {PLAYER}, hey, it's been a while.\n"
+	.string "How's it going?\p"
+	.string "Hmm…\n"
+	.string "That's a decent collection of BADGES.\p"
+	.string "All right, then.\n"
+	.string "You may as well have this.$"
 
 LavaridgeTown_Text_BrendanExplainGoGogglesChallengeDad:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "CIRO: Se os dados estiverem\ncertos, o DESENCANTO pode ser\p"
+	.string "tratado. Eu prefiro testar uma\nresposta a transformar\p"
+	.string "sofrimento em tradicao.$"
 
 LavaridgeTown_Text_HaveEggWillYouTakeIt:
-	.string "Voce vai continuar mesmo\nsabendo que SERTAO DE DENTRO\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "I have here an EGG.\p"
+	.string "I'd hoped to hatch it by covering it in\n"
+	.string "hot sand by the hot springs.\l"
+	.string "But that doesn't seem to be enough…\p"
+	.string "I've heard it would be best if it were\n"
+	.string "kept together with POKéMON and\l"
+	.string "carried about.\p"
+	.string "You are a TRAINER, yes?\n"
+	.string "And your POKéMON radiate vitality.\p"
+	.string "So, what say you?\n"
+	.string "Will you take this EGG to hatch?$"
 
 LavaridgeTown_Text_HopeYoullWalkPlentyWithEgg:
-	.string "Tem gente que chama de\nDESENCANTO. Eu chamava de\p"
-	.string "distraicao, ate minha mae\nesquecer a cancao que cantava\p"
-	.string "desde crianca.$"
+	.string "Good! I hope you'll walk plenty with\n"
+	.string "this here EGG!$"
 
 LavaridgeTown_Text_ReceivedTheEgg:
 	.string "{PLAYER} received the EGG.$"
 
 LavaridgeTown_Text_NoRoomForThisEgg:
-	.string "Voce vai continuar mesmo\nsabendo que SERTAO DE DENTRO\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "Oh? You've too many POKéMON.\n"
+	.string "There's no room for this EGG…$"
 
 LavaridgeTown_Text_AsYouWishThen:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "As you wish, then…\p"
+	.string "If you have a change of heart about\n"
+	.string "hatching this EGG, I will be here.$"
 
 LavaridgeTown_Text_EverySoOftenEggFoundAtDayCare:
 	.string "Every so often, an EGG will be found at\n"
@@ -317,42 +335,54 @@ LavaridgeTown_Text_EverySoOftenEggFoundAtDayCare:
 	.string "Or at least that's how the rumor goes.$"
 
 LavaridgeTown_Text_HotSpringsNeverRunDry:
-	.string "LEMBRANTE: Apagar uma historia\nporque ela incomoda quem manda\p"
-	.string "e apenas outra forma de\nviolencia.$"
+	.string "We draw as much hot water as we need,\n"
+	.string "and yet the hot springs never run dry.\p"
+	.string "Isn't it magical?\p"
+	.string "These hot springs appear near active\n"
+	.string "volcanoes. Veins of water under the\l"
+	.string "ground are heated by magma to well up\l"
+	.string "as hot springs.$"
 
 LavaridgeTown_Text_PokemonNippedBackside:
-	.string "Voce vai continuar mesmo\nsabendo que SERTAO DE DENTRO\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "Being buried in this hot sand is…\n"
+	.string "Sigh…\p"
+	.string "So warm and heavenly…\p"
+	.string "Eh? Gyaah! Ouch!\p"
+	.string "A POKéMON nipped my backside!$"
 
 LavaridgeTown_Text_OhYouLikeHotSprings:
-	.string "Voce vai continuar mesmo\nsabendo que SERTAO DE DENTRO\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "Oh, you like hot springs, do you?\p"
+	.string "That's surprising for one as young\n"
+	.string "as you.$"
 
 LavaridgeTown_Text_BatheInHotSpringsEveryDay:
-	.string "NARA: Cinza e o que sobra\ndepois do fogo. Nao e o fim de\p"
-	.string "tudo; mas tambem nao devemos\nfingir que nada queimou.$"
+	.string "I bathe in the hot springs every day.\p"
+	.string "I want to become a beautiful and strong\n"
+	.string "GYM LEADER like FLANNERY.$"
 
 LavaridgeTown_Text_IfPokemonInHotSprings:
-	.string "Tem gente que chama de\nDESENCANTO. Eu chamava de\p"
-	.string "distraicao, ate minha mae\nesquecer a cancao que cantava\p"
-	.string "desde crianca.$"
+	.string "If people put POKéMON in hot springs,\n"
+	.string "it might be seriously strange.\p"
+	.string "Why, it might be an electric bath, or\n"
+	.string "a bubble bath, or even a lava bath…$"
 
 LavaridgeTown_Text_HotSpringsClaims:
-	.string "Tem gente que chama de\nDESENCANTO. Eu chamava de\p"
-	.string "distraicao, ate minha mae\nesquecer a cancao que cantava\p"
-	.string "desde crianca.$"
+	.string "They're claiming that these hot springs\n"
+	.string "are good for calming nervous tension,\l"
+	.string "relieving aching muscles, solving\l"
+	.string "romantic problems, and attracting\l"
+	.string "money…$"
 
 LavaridgeTown_Text_TownSign:
 	.string "SERTAO DE DENTRO. Cinza, calor\ne abandono marcaram esta\p"
 	.string "regiao. Aqui o luto nao e\ntratado como fraqueza.$"
 
 LavaridgeTown_Text_GymSign:
-	.string "NARA: Cinza e o que sobra\ndepois do fogo. Nao e o fim de\p"
-	.string "tudo; mas tambem nao devemos\nfingir que nada queimou.$"
+	.string "LAVARIDGE TOWN POKéMON GYM\n"
+	.string "LEADER: FLANNERY\l"
+	.string "“One with a fiery passion that burns!”$"
 
 LavaridgeTown_Text_HerbShopSign:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "POKéMON HERB SHOP\n"
+	.string "“Bitter taste--better cure!”$"
 

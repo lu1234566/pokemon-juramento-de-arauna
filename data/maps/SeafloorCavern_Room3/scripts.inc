@@ -12,31 +12,28 @@ SeafloorCavern_Room3_EventScript_Grunt5::
 	end
 
 SeafloorCavern_Room3_Text_ShellyIntro:
-	.string "Otacilio volta ao lugar onde\nperdeu a familia. Luzia chega\p"
-	.string "para libertar tudo que foi\narmazenado. Os dois extremos\p"
-	.string "colidem.$"
+	.string "Gravacoes antigas misturam\nordens de evacuacao, pedidos de\p"
+	.string "socorro e trechos que alguem\nmarcou para exclusao.$"
 
 SeafloorCavern_Room3_Text_ShellyDefeat:
-	.string "Otacilio volta ao lugar onde\nperdeu a familia. Luzia chega\p"
-	.string "para libertar tudo que foi\narmazenado. Os dois extremos\p"
-	.string "colidem.$"
+	.string "Ahahahaha!\p"
+	.string "Ouch!$"
 
 SeafloorCavern_Room3_Text_ShellyPostBattle:
-	.string "HORIZONTE: O Arquivo preserva o\nque o tempo destruiria. Um dia\p"
-	.string "voces vao agradecer por nao\nprecisarem mais sofrer para\p"
-	.string "lembrar.$"
+	.string "OTACILIO e LUZIA chegaram ao\nmesmo lugar por razoes opostas:\p"
+	.string "um quer encerrar a dor; a outra\nquer devolver tudo. Nenhum\p"
+	.string "perguntou a quem tera de viver\ncom a escolha.$"
 
 SeafloorCavern_Room3_Text_Grunt5Intro:
-	.string "Otacilio volta ao lugar onde\nperdeu a familia. Luzia chega\p"
-	.string "para libertar tudo que foi\narmazenado. Os dois extremos\p"
-	.string "colidem.$"
+	.string "Gravacoes antigas misturam\nordens de evacuacao, pedidos de\p"
+	.string "socorro e trechos que alguem\nmarcou para exclusao.$"
 
 SeafloorCavern_Room3_Text_Grunt5Defeat:
-	.string "Otacilio volta ao lugar onde\nperdeu a familia. Luzia chega\p"
-	.string "para libertar tudo que foi\narmazenado. Os dois extremos\p"
-	.string "colidem.$"
+	.string "Gravacoes antigas misturam\nordens de evacuacao, pedidos de\p"
+	.string "socorro e trechos que alguem\nmarcou para exclusao.$"
 
 SeafloorCavern_Room3_Text_Grunt5PostBattle:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "O ARQUIVO reage como se memoria\ne esquecimento fossem forcas\p"
+	.string "fisicas. Pela primeira vez fica\nclaro que ele nunca esteve\p"
+	.string "realmente sob controle humano.$"
 

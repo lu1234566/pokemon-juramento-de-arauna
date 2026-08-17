@@ -61,46 +61,54 @@ MeteorFalls_1F_2R_EventScript_RematchJay::
 	end
 
 MeteorFalls_1F_2R_Text_NicolasIntro:
-	.string "Voce vai continuar mesmo\nsabendo que RUINAS DA QUEDA\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "This is where we DRAGON users do our\n"
+	.string "training.\p"
+	.string "The CHAMPION even visits.\n"
+	.string "Now do you see how special it is here?$"
 
 MeteorFalls_1F_2R_Text_NicolasDefeat:
-	.string "O HORIZONTE consertou a estrada\ndaqui. Nao sei se isso torna\p"
-	.string "mais facil perguntar o que\nexiste debaixo dela.$"
+	.string "Urgh!\n"
+	.string "I didn't expect you to be so strong!$"
 
 MeteorFalls_1F_2R_Text_NicolasPostBattle:
-	.string "Voce vai continuar mesmo\nsabendo que RUINAS DA QUEDA\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "The road ahead remains long and harsh.\p"
+	.string "When will my POKéMON and I become\n"
+	.string "the best?$"
 
 MeteorFalls_1F_2R_Text_NicolasRegister:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "I want to know more about your power.\n"
+	.string "Let me register you in my POKéNAV.$"
 
 MeteorFalls_1F_2R_Text_NicolasRematchIntro:
-	.string "O HORIZONTE consertou a estrada\ndaqui. Nao sei se isso torna\p"
-	.string "mais facil perguntar o que\nexiste debaixo dela.$"
+	.string "Since we met, we have trained hard\n"
+	.string "with our sights on number one.\p"
+	.string "Help us see how much stronger we've\n"
+	.string "become!$"
 
 MeteorFalls_1F_2R_Text_NicolasRematchDefeat:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "Urgh!\n"
+	.string "I didn't expect you to be so strong!$"
 
 MeteorFalls_1F_2R_Text_NicolasPostRematch:
-	.string "Dona Zila diz que uma historia\nmuda toda vez que e contada.\p"
-	.string "Talvez seja por isso que ainda\nesta viva.$"
+	.string "You've obviously kept up your\n"
+	.string "POKéMON training.\p"
+	.string "So long as you remain strong, I, too,\n"
+	.string "can become stronger!$"
 
 MeteorFalls_1F_2R_Text_JohnIntro:
-	.string "Dona Zila diz que uma historia\nmuda toda vez que e contada.\p"
-	.string "Talvez seja por isso que ainda\nesta viva.$"
+	.string "JOHN: We've always battled POKéMON\n"
+	.string "together as a twosome.\l"
+	.string "We've confidence in ourselves.$"
 
 MeteorFalls_1F_2R_Text_JohnDefeat:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "JOHN: Oh, my.\n"
+	.string "We've lost, dear wife.$"
 
 MeteorFalls_1F_2R_Text_JohnPostBattle:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "JOHN: We've been married for\n"
+	.string "fifty years.\p"
+	.string "Come to think of it, I've yet to beat\n"
+	.string "my dear wife in a battle.$"
 
 MeteorFalls_1F_2R_Text_JohnNotEnoughMons:
 	.string "JOHN: Well, well, what a young TRAINER!\p"
@@ -108,21 +116,23 @@ MeteorFalls_1F_2R_Text_JohnNotEnoughMons:
 	.string "have to return with more POKéMON.$"
 
 MeteorFalls_1F_2R_Text_JohnRegister:
-	.string "Voce vai continuar mesmo\nsabendo que RUINAS DA QUEDA\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "JOHN: Young TRAINER, if the chance\n"
+	.string "arises, will you battle with us again?$"
 
 MeteorFalls_1F_2R_Text_JayIntro:
-	.string "O HORIZONTE consertou a estrada\ndaqui. Nao sei se isso torna\p"
-	.string "mais facil perguntar o que\nexiste debaixo dela.$"
+	.string "JAY: We've been married for\n"
+	.string "fifty years.\p"
+	.string "The bond we share as a couple could\n"
+	.string "never be broken.$"
 
 MeteorFalls_1F_2R_Text_JayDefeat:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "JAY: Oh, dear.\n"
+	.string "We've lost, my dear husband.$"
 
 MeteorFalls_1F_2R_Text_JayPostBattle:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "JAY: Fifty years of marriage…\p"
+	.string "If we ever argued, we always settled\n"
+	.string "it with a POKéMON battle…$"
 
 MeteorFalls_1F_2R_Text_JayNotEnoughMons:
 	.string "JAY: Well, well, aren't you a young\n"
@@ -131,17 +141,18 @@ MeteorFalls_1F_2R_Text_JayNotEnoughMons:
 	.string "have to come back with more POKéMON.$"
 
 MeteorFalls_1F_2R_Text_JohnRematchIntro:
-	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
-	.string "nomes antigos desapareceram\nquando elas chegaram.$"
+	.string "JOHN: We've always battled POKéMON\n"
+	.string "together as a twosome.\l"
+	.string "We've confidence in ourselves.$"
 
 MeteorFalls_1F_2R_Text_JohnRematchDefeat:
-	.string "Tem gente que chama de\nDESENCANTO. Eu chamava de\p"
-	.string "distraicao, ate minha mae\nesquecer a cancao que cantava\p"
-	.string "desde crianca.$"
+	.string "JOHN: Oh, my.\n"
+	.string "We've lost, dear wife.$"
 
 MeteorFalls_1F_2R_Text_JohnPostRematch:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "JOHN: Married for fifty years…\p"
+	.string "On reflection, the dear wife and I,\n"
+	.string "we battled day in and day out…$"
 
 MeteorFalls_1F_2R_Text_JohnRematchNotEnoughMons:
 	.string "JOHN: Well, well, what a young TRAINER!\p"
@@ -149,16 +160,20 @@ MeteorFalls_1F_2R_Text_JohnRematchNotEnoughMons:
 	.string "have to return with more POKéMON.$"
 
 MeteorFalls_1F_2R_Text_JayRematchIntro:
-	.string "O HORIZONTE consertou a estrada\ndaqui. Nao sei se isso torna\p"
-	.string "mais facil perguntar o que\nexiste debaixo dela.$"
+	.string "JAY: We've been married for\n"
+	.string "fifty years.\p"
+	.string "We've supported each other all that\n"
+	.string "time. We've made ourselves strong.$"
 
 MeteorFalls_1F_2R_Text_JayRematchDefeat:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "JAY: Oh, dear.\n"
+	.string "We've lost, my dear husband.$"
 
 MeteorFalls_1F_2R_Text_JayPostRematch:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "JAY: Fifty years of marriage…\n"
+	.string "Many things have happened.\p"
+	.string "I hope that we will continue to make\n"
+	.string "happy memories together.$"
 
 MeteorFalls_1F_2R_Text_JayRematchNotEnoughMons:
 	.string "JAY: Well, well, aren't you a young\n"

@@ -698,36 +698,42 @@ PetalburgCity_EventScript_GymBoy::
 	end
 
 PetalburgCity_Text_WhereIsWally:
-	.string "VAL: Eu ainda tenho medo. Mas\nagora sei que coragem nao e\p"
-	.string "esquecer o medo; e caminhar\nmesmo lembrando dele.$"
+	.string "VAL: Passei muito tempo achando\nque precisava virar outra\p"
+	.string "pessoa para seguir viagem. Eu\nso precisava descobrir meu\p"
+	.string "proprio ritmo.$"
 
 PetalburgCity_Text_AreYouRookieTrainer:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "Hiya! Are you maybe…\n"
+	.string "A rookie TRAINER?\p"
+	.string "Do you know what POKéMON TRAINERS\n"
+	.string "do when they reach a new town?\p"
+	.string "They first check what kind of GYM\n"
+	.string "is in the town.$"
 
 PetalburgCity_Text_ThisIsPetalburgGym:
-	.string "Voce vai continuar mesmo\nsabendo que PAMPA DA ESPERA\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "See? This is PETALBURG CITY's GYM.$"
 
 PetalburgCity_Text_ThisIsGymSign:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "This is the GYM's sign. Look for it\n"
+	.string "whenever you're looking for a GYM.$"
 
 PetalburgCity_Text_WaterReflection:
-	.string "Voce vai continuar mesmo\nsabendo que PAMPA DA ESPERA\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "My face is reflected in the water.\p"
+	.string "It's a shining grin full of hope…\p"
+	.string "Or it could be a look of somber silence\n"
+	.string "struggling with fear…\p"
+	.string "What do you see reflected in your face?$"
 
 PetalburgCity_Text_FullPartyExplanation:
-	.string "Tem gente que chama de\nDESENCANTO. Eu chamava de\p"
-	.string "distraicao, ate minha mae\nesquecer a cancao que cantava\p"
-	.string "desde crianca.$"
+	.string "Let's say you have six POKéMON.\n"
+	.string "If you catch another one…\p"
+	.string "It is automatically sent to a STORAGE\n"
+	.string "BOX over a PC connection.$"
 
 PetalburgCity_Text_GymSign:
-	.string "ELIAS: Algumas culpas nao\ndesaparecem quando ficamos em\p"
-	.string "silencio. Eu aprovei parte do\nprojeto de M'BOI. Passei anos\p"
-	.string "chamando meu medo de prudencia.$"
+	.string "PETALBURG CITY POKéMON GYM\n"
+	.string "LEADER: NORMAN\l"
+	.string "“A man in pursuit of power!”$"
 
 PetalburgCity_Text_CitySign:
 	.string "PAMPA DA ESPERA. A cidade vive\nentre partidas e retornos.\p"
@@ -739,14 +745,18 @@ PetalburgCity_Text_WallyHouseSign:
 	.string "esquecer o medo; e caminhar\nmesmo lembrando dele.$"
 
 PetalburgCity_Text_AreYouATrainer:
-	.string "Voce vai continuar mesmo\nsabendo que PAMPA DA ESPERA\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "Excuse me!\p"
+	.string "Let me guess, from the way you're\n"
+	.string "dressed, are you a POKéMON TRAINER?$"
 
 PetalburgCity_Text_WellMaybeNot:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "… … … … … …\p"
+	.string "Well, maybe not.\n"
+	.string "Your clothes aren't all that dirty.\p"
+	.string "You're either a rookie TRAINER,\n"
+	.string "or maybe you're just an ordinary kid.$"
 
 PetalburgCity_Text_ImLookingForTalentedTrainers:
-	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
-	.string "nomes antigos desapareceram\nquando elas chegaram.$"
+	.string "I'm roaming the land in search of\n"
+	.string "talented TRAINERS.\p"
+	.string "I'm sorry to have taken your time.$"

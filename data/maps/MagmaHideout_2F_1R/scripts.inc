@@ -22,50 +22,52 @@ MagmaHideout_2F_1R_EventScript_Grunt5::
 	end
 
 MagmaHideout_2F_1R_Text_Grunt14Intro:
-	.string "LEMBRANTE: Apagar uma historia\nporque ela incomoda quem manda\p"
-	.string "e apenas outra forma de\nviolencia.$"
+	.string "LEMBRANTE: Guardar um nome pode\nser resistencia. Obrigar alguem\p"
+	.string "a reviver tudo tambem pode ser\nviolencia.$"
 
 MagmaHideout_2F_1R_Text_Grunt14Defeat:
-	.string "LEMBRANTE: Apagar uma historia\nporque ela incomoda quem manda\p"
-	.string "e apenas outra forma de\nviolencia.$"
+	.string "LEMBRANTE: O HORIZONTE quer uma\nArauna estavel. Eu quero uma\p"
+	.string "Arauna que saiba por que suas\nruinas existem.$"
 
 MagmaHideout_2F_1R_Text_Grunt14PostBattle:
-	.string "LEMBRANTE: Apagar uma historia\nporque ela incomoda quem manda\p"
-	.string "e apenas outra forma de\nviolencia.$"
+	.string "LEMBRANTE: O HORIZONTE quer uma\nArauna estavel. Eu quero uma\p"
+	.string "Arauna que saiba por que suas\nruinas existem.$"
 
 MagmaHideout_2F_1R_Text_Grunt3Intro:
-	.string "LEMBRANTE: Apagar uma historia\nporque ela incomoda quem manda\p"
-	.string "e apenas outra forma de\nviolencia.$"
+	.string "LEMBRANTE: LUZIA diz que\nmemoria devolvida sem permissao\p"
+	.string "ainda e melhor que memoria\nroubada. Nem todos aqui\p"
+	.string "concordam com essa parte.$"
 
 MagmaHideout_2F_1R_Text_Grunt3Defeat:
-	.string "LEMBRANTE: Apagar uma historia\nporque ela incomoda quem manda\p"
-	.string "e apenas outra forma de\nviolencia.$"
+	.string "LEMBRANTE: Se uma historia\nincomoda quem manda, ela vira\p"
+	.string "'ruido', depois 'trauma',\ndepois desaparece do registro.$"
 
 MagmaHideout_2F_1R_Text_Grunt3PostBattle:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "LEMBRANTE: Guardar um nome pode\nser resistencia. Obrigar alguem\p"
+	.string "a reviver tudo tambem pode ser\nviolencia.$"
 
 MagmaHideout_2F_1R_Text_Grunt4Intro:
-	.string "LEMBRANTE: Apagar uma historia\nporque ela incomoda quem manda\p"
-	.string "e apenas outra forma de\nviolencia.$"
+	.string "LEMBRANTE: Guardar um nome pode\nser resistencia. Obrigar alguem\p"
+	.string "a reviver tudo tambem pode ser\nviolencia.$"
 
 MagmaHideout_2F_1R_Text_Grunt4Defeat:
-	.string "LEMBRANTE: Apagar uma historia\nporque ela incomoda quem manda\p"
-	.string "e apenas outra forma de\nviolencia.$"
+	.string "LEMBRANTE: Se uma historia\nincomoda quem manda, ela vira\p"
+	.string "'ruido', depois 'trauma',\ndepois desaparece do registro.$"
 
 MagmaHideout_2F_1R_Text_Grunt4PostBattle:
-	.string "LEMBRANTE: Apagar uma historia\nporque ela incomoda quem manda\p"
-	.string "e apenas outra forma de\nviolencia.$"
+	.string "LEMBRANTE: LUZIA diz que\nmemoria devolvida sem permissao\p"
+	.string "ainda e melhor que memoria\nroubada. Nem todos aqui\p"
+	.string "concordam com essa parte.$"
 
 MagmaHideout_2F_1R_Text_Grunt5Intro:
-	.string "LEMBRANTE: Apagar uma historia\nporque ela incomoda quem manda\p"
-	.string "e apenas outra forma de\nviolencia.$"
+	.string "LEMBRANTE: O HORIZONTE quer uma\nArauna estavel. Eu quero uma\p"
+	.string "Arauna que saiba por que suas\nruinas existem.$"
 
 MagmaHideout_2F_1R_Text_Grunt5Defeat:
-	.string "LEMBRANTE: Apagar uma historia\nporque ela incomoda quem manda\p"
-	.string "e apenas outra forma de\nviolencia.$"
+	.string "LEMBRANTE: O HORIZONTE quer uma\nArauna estavel. Eu quero uma\p"
+	.string "Arauna que saiba por que suas\nruinas existem.$"
 
 MagmaHideout_2F_1R_Text_Grunt5PostBattle:
-	.string "LEMBRANTE: Apagar uma historia\nporque ela incomoda quem manda\p"
-	.string "e apenas outra forma de\nviolencia.$"
+	.string "LEMBRANTE: Guardar um nome pode\nser resistencia. Obrigar alguem\p"
+	.string "a reviver tudo tambem pode ser\nviolencia.$"
 

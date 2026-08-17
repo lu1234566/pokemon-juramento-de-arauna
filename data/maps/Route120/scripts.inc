@@ -361,57 +361,56 @@ Route120_EventScript_Callie::
 
 Route120_Text_StevenGreeting:
 	.string "SEU BENTO: Quando um nome some\nda boca das pessoas, eu\p"
-	.string "escrevo. Nao para substituir\nquem lembra. Para deixar uma\p"
-	.string "pista para quem vier procurar.$"
+	.string "escrevo. Nao para substituir\nquem lembra; para deixar uma\p"
+	.string "pista.$"
 
 Route120_Text_StevenIllWaitHere:
 	.string "SEU BENTO: Quando um nome some\nda boca das pessoas, eu\p"
-	.string "escrevo. Nao para substituir\nquem lembra. Para deixar uma\p"
-	.string "pista para quem vier procurar.$"
+	.string "escrevo. Nao para substituir\nquem lembra; para deixar uma\p"
+	.string "pista.$"
 
 Route120_Text_StevenReadyForBattle:
-	.string "SEU BENTO: Quando um nome some\nda boca das pessoas, eu\p"
-	.string "escrevo. Nao para substituir\nquem lembra. Para deixar uma\p"
-	.string "pista para quem vier procurar.$"
+	.string "Os sensores registram duas\ncorrentes antigas sob Arauna:\p"
+	.string "uma conserva VINCULOS; a outra\npermite que eles terminem. O\p"
+	.string "ARQUIVO tentou transformar\nambas em ferramentas.$"
 
 Route120_Text_StevenShowMeYourPower:
 	.string "SEU BENTO: Quando um nome some\nda boca das pessoas, eu\p"
-	.string "escrevo. Nao para substituir\nquem lembra. Para deixar uma\p"
-	.string "pista para quem vier procurar.$"
+	.string "escrevo. Nao para substituir\nquem lembra; para deixar uma\p"
+	.string "pista.$"
 
 Route120_Text_StevenUsedDevonScope:
 	.string "SEU BENTO: Quando um nome some\nda boca das pessoas, eu\p"
-	.string "escrevo. Nao para substituir\nquem lembra. Para deixar uma\p"
-	.string "pista para quem vier procurar.$"
+	.string "escrevo. Nao para substituir\nquem lembra; para deixar uma\p"
+	.string "pista.$"
 
 Route120_Text_StevenGiveDevonScope:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "SEU BENTO: Quando um nome some\nda boca das pessoas, eu\p"
+	.string "escrevo. Nao para substituir\nquem lembra; para deixar uma\p"
+	.string "pista.$"
 
 Route120_Text_StevenGoodbye:
 	.string "SEU BENTO: Quando um nome some\nda boca das pessoas, eu\p"
-	.string "escrevo. Nao para substituir\nquem lembra. Para deixar uma\p"
-	.string "pista para quem vier procurar.$"
+	.string "escrevo. Nao para substituir\nquem lembra; para deixar uma\p"
+	.string "pista.$"
 
 Kecleon_Text_SomethingUnseeable:
-	.string "Tem gente que chama de\nDESENCANTO. Eu chamava de\p"
-	.string "distraicao, ate minha mae\nesquecer a cancao que cantava\p"
-	.string "desde crianca.$"
+	.string "Something unseeable is in the way.$"
 
 Kecleon_Text_WantToUseDevonScope:
-	.string "As estradas de Arauna guardam\nsinais do DESENCANTO: nomes\p"
-	.string "riscados, historias incompletas\ne Pokemon que hesitam diante de\p"
-	.string "lugares conhecidos.$"
+	.string "Something unseeable is in the way.\p"
+	.string "Want to use the DEVON SCOPE?$"
 
 Kecleon_Text_UseDevonScopeMonAttacked:
-	.string "As estradas de Arauna guardam\nsinais do DESENCANTO: nomes\p"
-	.string "riscados, historias incompletas\ne Pokemon que hesitam diante de\p"
-	.string "lugares conhecidos.$"
+	.string "{PLAYER} used the DEVON SCOPE.\p"
+	.string "An invisible POKéMON became completely\n"
+	.string "visible!\p"
+	.string "The startled POKéMON attacked!$"
 
 Route120_Text_RouteSignFortree:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "ROUTE 120\n"
+	.string "{LEFT_ARROW} FORTREE CITY$"
 
 Route120_Text_RouteSign121:
-	.string "O HORIZONTE consertou a estrada\ndaqui. Nao sei se isso torna\p"
-	.string "mais facil perguntar o que\nexiste debaixo dela.$"
+	.string "{RIGHT_ARROW} ROUTE 121\n"
+	.string "{LEFT_ARROW} ROUTE 120$"

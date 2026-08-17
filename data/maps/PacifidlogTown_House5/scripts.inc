@@ -20,14 +20,17 @@ PacifidlogTown_House5_EventScript_Gentleman::
 	end
 
 PacifidlogTown_House5_Text_CantSeeMirageIslandToday:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "I can't see MIRAGE ISLAND today…$"
 
 PacifidlogTown_House5_Text_CanSeeMirageIslandToday:
-	.string "O HORIZONTE consertou a estrada\ndaqui. Nao sei se isso torna\p"
-	.string "mais facil perguntar o que\nexiste debaixo dela.$"
+	.string "Oh! Oh my!\n"
+	.string "I can see MIRAGE ISLAND today!$"
 
 PacifidlogTown_House5_Text_MirageIslandAppearDependingOnWeather:
-	.string "Aqui historias sao repetidas\npara continuar vivas, nao para\p"
-	.string "permanecer identicas.$"
+	.string "MIRAGE ISLAND…\p"
+	.string "It must become visible and invisible\n"
+	.string "depending on the weather conditions\l"
+	.string "that make mirages appear.\p"
+	.string "Or is it really appearing and\n"
+	.string "disappearing?$"
 

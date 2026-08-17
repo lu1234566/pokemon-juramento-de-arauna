@@ -657,254 +657,240 @@ LittlerootTown_ProfessorBirchsLab_EventScript_ScottAboardSSTidalCall::
 	end
 
 LittlerootTown_ProfessorBirchsLab_Text_BirchAwayOnFieldwork:
-	.string "ANAHI: Eu estudei os VINCULOS\nantes de entender o que minhas\p"
-	.string "pesquisas permitiriam fazer. Se\neu continuar calada, o erro\p"
-	.string "tambem sera meu.$"
+	.string "ANAHI: Se eu continuar calada\nsobre o que o HORIZONTE fez com\p"
+	.string "minha pesquisa, o erro tambem\nsera meu.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BirchIsntOneForDeskWork:
-	.string "ANAHI: Eu estudei os VINCULOS\nantes de entender o que minhas\p"
-	.string "pesquisas permitiriam fazer. Se\neu continuar calada, o erro\p"
-	.string "tambem sera meu.$"
+	.string "ANAHI: Eu ajudei a criar os\nprimeiros sensores de VINCULO.\p"
+	.string "Na epoca achei que medir\nsignificava compreender. Hoje\p"
+	.string "sei que nao e a mesma coisa.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BirchEnjoysRivalsHelpToo:
-	.string "ANAHI: Eu estudei os VINCULOS\nantes de entender o que minhas\p"
-	.string "pesquisas permitiriam fazer. Se\neu continuar calada, o erro\p"
-	.string "tambem sera meu.$"
+	.string "ANAHI: O DESENCANTO nao apaga\napenas fatos. Ele rompe\p"
+	.string "caminhos entre pessoas, lugares\ne POKéMON. E esses caminhos nao\p"
+	.string "pertencem a uma empresa.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_LikeYouToHavePokemon:
-	.string "ANAHI: Eu estudei os VINCULOS\nantes de entender o que minhas\p"
-	.string "pesquisas permitiriam fazer. Se\neu continuar calada, o erro\p"
-	.string "tambem sera meu.$"
+	.string "ANAHI: Esse POKéMON escolheu\nficar ao seu lado. Nao trate\p"
+	.string "isso como propriedade. Um\nVINCULO so existe enquanto os\p"
+	.string "dois lados continuam\nescolhendo.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_WhyNotGiveNicknameToMon:
-	.string "ANAHI: Eu estudei os VINCULOS\nantes de entender o que minhas\p"
-	.string "pesquisas permitiriam fazer. Se\neu continuar calada, o erro\p"
-	.string "tambem sera meu.$"
+	.string "ANAHI: Um nome pode virar\nmemoria. Quer dar um nome a\p"
+	.string "{STR_VAR_1}?$"
 
 LittlerootTown_ProfessorBirchsLab_Text_MightBeGoodIdeaToGoSeeRival:
-	.string "ANAHI: Eu estudei os VINCULOS\nantes de entender o que minhas\p"
-	.string "pesquisas permitiriam fazer. Se\neu continuar calada, o erro\p"
-	.string "tambem sera meu.$"
+	.string "ANAHI: CIRO esta fazendo\nobservacoes na ROTA 103. Ele\p"
+	.string "recebeu apoio do HORIZONTE e\nacha que isso prova que ja\p"
+	.string "entendeu o mundo. Va\nencontra-lo.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_GetRivalToTeachYou:
-	.string "ANAHI: Eu estudei os VINCULOS\nantes de entender o que minhas\p"
-	.string "pesquisas permitiriam fazer. Se\neu continuar calada, o erro\p"
-	.string "tambem sera meu.$"
+	.string "ANAHI: Encontre CIRO na ROTA\n103. Prestem atencao ao modo\p"
+	.string "como seus POKéMON reagem um ao\noutro.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_DontBeThatWay:
-	.string "ANAHI: Eu estudei os VINCULOS\nantes de entender o que minhas\p"
-	.string "pesquisas permitiriam fazer. Se\neu continuar calada, o erro\p"
-	.string "tambem sera meu.$"
+	.string "ANAHI: Voce nao precisa gostar\nde CIRO. Mas precisa ouvir o\p"
+	.string "que ele escolheu acreditar\nantes de decidir no que voce\p"
+	.string "acredita.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BirchRivalGoneHome:
-	.string "ANAHI: Eu estudei os VINCULOS\nantes de entender o que minhas\p"
-	.string "pesquisas permitiriam fazer. Se\neu continuar calada, o erro\p"
-	.string "tambem sera meu.$"
+	.string "ANAHI: CIRO saiu de novo. Desde\nque o HORIZONTE ofereceu uma\p"
+	.string "bolsa, ele quase nao para em\ncasa.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_HeardYouBeatRivalTakePokedex:
-	.string "ANAHI: Eu estudei os VINCULOS\nantes de entender o que minhas\p"
-	.string "pesquisas permitiriam fazer. Se\neu continuar calada, o erro\p"
-	.string "tambem sera meu.$"
+	.string "ANAHI: CIRO contou sobre a\nbatalha. Mais importante que\p"
+	.string "vencer: seu POKéMON reagiu ao\nVINCULO de um jeito que meus\p"
+	.string "sensores nao previram. Leve\nesta POKéDEX e registre o que\p"
+	.string "encontrar.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_ReceivedPokedex:
-	.string "ANAHI: Eu estudei os VINCULOS\nantes de entender o que minhas\p"
-	.string "pesquisas permitiriam fazer. Se\neu continuar calada, o erro\p"
-	.string "tambem sera meu.$"
+	.string "{PLAYER} recebeu a POKéDEX!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_ExplainPokedex:
-	.string "ANAHI: Eu estudei os VINCULOS\nantes de entender o que minhas\p"
-	.string "pesquisas permitiriam fazer. Se\neu continuar calada, o erro\p"
-	.string "tambem sera meu.$"
+	.string "ANAHI: A POKéDEX registra\nespecies e encontros. Eu quero\p"
+	.string "outra coisa tambem: anote\nfalhas de memoria, mudancas de\p"
+	.string "comportamento e qualquer sinal\nde DESENCANTO.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_CountlessPokemonAwait:
-	.string "ANAHI: Eu estudei os VINCULOS\nantes de entender o que minhas\p"
-	.string "pesquisas permitiriam fazer. Se\neu continuar calada, o erro\p"
-	.string "tambem sera meu.$"
+	.string "ANAHI: Nao transforme a viagem\nnuma coleta de numeros. Observe\p"
+	.string "quem lembra, quem esquece e\nquem esta decidindo isso por\p"
+	.string "eles.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_MayGotPokedexTooTakeThese:
-	.string "ANAHI: Eu estudei os VINCULOS\nantes de entender o que minhas\p"
-	.string "pesquisas permitiriam fazer. Se\neu continuar calada, o erro\p"
-	.string "tambem sera meu.$"
+	.string "CIRO: Entao ela te entregou uma\nPOKéDEX tambem. Certo. Pegue\p"
+	.string "estas POKé BOLAS. Quero ver\nquanto tempo voce leva para me\p"
+	.string "alcancar.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_CatchCutePokemonWithPokeBalls:
-	.string "ANAHI: Eu estudei os VINCULOS\nantes de entender o que minhas\p"
-	.string "pesquisas permitiriam fazer. Se\neu continuar calada, o erro\p"
-	.string "tambem sera meu.$"
+	.string "CIRO: Eu vou seguir os pontos\nmarcados pelo HORIZONTE. Dizem\p"
+	.string "que la fora existem POKéMON que\nquase nao sofrem DESENCANTO.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_OhYourBagsFull:
-	.string "ANAHI: Eu estudei os VINCULOS\nantes de entender o que minhas\p"
-	.string "pesquisas permitiriam fazer. Se\neu continuar calada, o erro\p"
-	.string "tambem sera meu.$"
+	.string "Sua BOLSA esta cheia.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_MayWhereShouldIGoNext:
-	.string "ANAHI: Eu estudei os VINCULOS\nantes de entender o que minhas\p"
-	.string "pesquisas permitiriam fazer. Se\neu continuar calada, o erro\p"
-	.string "tambem sera meu.$"
+	.string "CIRO: O HORIZONTE tem equipes\npor toda Arauna. Se os dados\p"
+	.string "deles estiverem certos, eu vou\nchegar antes de voce.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BrendanGotPokedexTooTakeThese:
-	.string "ANAHI: Eu estudei os VINCULOS\nantes de entender o que minhas\p"
-	.string "pesquisas permitiriam fazer. Se\neu continuar calada, o erro\p"
-	.string "tambem sera meu.$"
+	.string "CIRO: Entao ela te entregou uma\nPOKéDEX tambem. Certo. Pegue\p"
+	.string "estas POKé BOLAS. Quero ver\nquanto tempo voce leva para me\p"
+	.string "alcancar.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_CatchCoolPokemonWithPokeBalls:
-	.string "ANAHI: Eu estudei os VINCULOS\nantes de entender o que minhas\p"
-	.string "pesquisas permitiriam fazer. Se\neu continuar calada, o erro\p"
-	.string "tambem sera meu.$"
+	.string "CIRO: Eu vou seguir os pontos\nmarcados pelo HORIZONTE. Dizem\p"
+	.string "que la fora existem POKéMON que\nquase nao sofrem DESENCANTO.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_HeyYourBagsFull:
-	.string "ANAHI: Eu estudei os VINCULOS\nantes de entender o que minhas\p"
-	.string "pesquisas permitiriam fazer. Se\neu continuar calada, o erro\p"
-	.string "tambem sera meu.$"
+	.string "Sua BOLSA esta cheia.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BrendanWhereShouldIGoNext:
-	.string "ANAHI: Eu estudei os VINCULOS\nantes de entender o que minhas\p"
-	.string "pesquisas permitiriam fazer. Se\neu continuar calada, o erro\p"
-	.string "tambem sera meu.$"
+	.string "CIRO: O HORIZONTE tem equipes\npor toda Arauna. Se os dados\p"
+	.string "deles estiverem certos, eu vou\nchegar antes de voce.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_SeriousLookingMachine:
-	.string "ANAHI: Eu estudei os VINCULOS\nantes de entender o que minhas\p"
-	.string "pesquisas permitiriam fazer. Se\neu continuar calada, o erro\p"
-	.string "tambem sera meu.$"
+	.string "Um sensor de VINCULO ocupa\nquase toda a bancada. Ha marcas\p"
+	.string "de uso muito anteriores ao\nprojeto atual do HORIZONTE.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_PCUsedForResearch:
-	.string "ANAHI: Eu estudei os VINCULOS\nantes de entender o que minhas\p"
-	.string "pesquisas permitiriam fazer. Se\neu continuar calada, o erro\p"
-	.string "tambem sera meu.$"
+	.string "O PC contem dados de campo\nsobre POKéMON que deixaram de\p"
+	.string "reconhecer lugares e pessoas\nfamiliares.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_CrammedWithBooksOnPokemon:
-	.string "ANAHI: Eu estudei os VINCULOS\nantes de entender o que minhas\p"
-	.string "pesquisas permitiriam fazer. Se\neu continuar calada, o erro\p"
-	.string "tambem sera meu.$"
+	.string "Cadernos de campo dividem a\nestante com livros sobre\p"
+	.string "memoria, luto e comportamento\nPOKéMON.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BookTooHardToRead:
-	.string "ANAHI: Eu estudei os VINCULOS\nantes de entender o que minhas\p"
-	.string "pesquisas permitiriam fazer. Se\neu continuar calada, o erro\p"
-	.string "tambem sera meu.$"
+	.string "As anotacoes misturam\nneurologia POKéMON, teoria de\p"
+	.string "VINCULOS e muitas correcoes\nfeitas a mao.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_OtherRegionsUpgradeToNational:
-	.string "ANAHI: Eu estudei os VINCULOS\nantes de entender o que minhas\p"
-	.string "pesquisas permitiriam fazer. Se\neu continuar calada, o erro\p"
-	.string "tambem sera meu.$"
+	.string "ANAHI: O DESENCANTO nao apaga\napenas fatos. Ele rompe\p"
+	.string "caminhos entre pessoas, lugares\ne POKéMON. E esses caminhos nao\p"
+	.string "pertencem a uma empresa.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_MayUpgradeSoCool:
-	.string "ANAHI: Eu estudei os VINCULOS\nantes de entender o que minhas\p"
-	.string "pesquisas permitiriam fazer. Se\neu continuar calada, o erro\p"
-	.string "tambem sera meu.$"
+	.string "CIRO: O HORIZONTE nao me pediu\npara esquecer nada. So me\p"
+	.string "mostrou que existe um futuro\nque nao precisa ser governado\p"
+	.string "pelo passado.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BrendanYouCanThankMe:
-	.string "ANAHI: Eu estudei os VINCULOS\nantes de entender o que minhas\p"
-	.string "pesquisas permitiriam fazer. Se\neu continuar calada, o erro\p"
-	.string "tambem sera meu.$"
+	.string "CIRO: O HORIZONTE nao me pediu\npara esquecer nada. So me\p"
+	.string "mostrou que existe um futuro\nque nao precisa ser governado\p"
+	.string "pelo passado.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_OkayAllDone:
-	.string "ANAHI: Eu estudei os VINCULOS\nantes de entender o que minhas\p"
-	.string "pesquisas permitiriam fazer. Se\neu continuar calada, o erro\p"
-	.string "tambem sera meu.$"
+	.string "ANAHI: O DESENCANTO nao apaga\napenas fatos. Ele rompe\p"
+	.string "caminhos entre pessoas, lugares\ne POKéMON. E esses caminhos nao\p"
+	.string "pertencem a uma empresa.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_PokedexUpgradedToNational:
-	.string "ANAHI: Eu estudei os VINCULOS\nantes de entender o que minhas\p"
-	.string "pesquisas permitiriam fazer. Se\neu continuar calada, o erro\p"
-	.string "tambem sera meu.$"
+	.string "{PLAYER}'s POKéDEX was upgraded\n"
+	.string "to the NATIONAL Mode!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_GrassyPatchWaiting2:
-	.string "ANAHI: Eu estudei os VINCULOS\nantes de entender o que minhas\p"
-	.string "pesquisas permitiriam fazer. Se\neu continuar calada, o erro\p"
-	.string "tambem sera meu.$"
+	.string "ANAHI: Eu ajudei a criar os\nprimeiros sensores de VINCULO.\p"
+	.string "Na epoca achei que medir\nsignificava compreender. Hoje\p"
+	.string "sei que nao e a mesma coisa.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_MayTakeBreakFromFieldwork:
-	.string "ANAHI: Eu estudei os VINCULOS\nantes de entender o que minhas\p"
-	.string "pesquisas permitiriam fazer. Se\neu continuar calada, o erro\p"
-	.string "tambem sera meu.$"
+	.string "CIRO: O HORIZONTE nao me pediu\npara esquecer nada. So me\p"
+	.string "mostrou que existe um futuro\nque nao precisa ser governado\p"
+	.string "pelo passado.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BrendanTakeBreakFromFieldwork:
-	.string "ANAHI: Eu estudei os VINCULOS\nantes de entender o que minhas\p"
-	.string "pesquisas permitiriam fazer. Se\neu continuar calada, o erro\p"
-	.string "tambem sera meu.$"
+	.string "CIRO: Nao confunda minha pressa\ncom falta de memoria. Eu lembro\p"
+	.string "o bastante para saber que nao\nquero viver preso ao que perdi.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_CompletedDexChoosePokemon:
-	.string "ANAHI: Eu estudei os VINCULOS\nantes de entender o que minhas\p"
-	.string "pesquisas permitiriam fazer. Se\neu continuar calada, o erro\p"
-	.string "tambem sera meu.$"
+	.string "ANAHI: Se eu continuar calada\nsobre o que o HORIZONTE fez com\p"
+	.string "minha pesquisa, o erro tambem\nsera meu.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_CanHaveAnyOneOfRarePokemon:
-	.string "ANAHI: Eu estudei os VINCULOS\nantes de entender o que minhas\p"
-	.string "pesquisas permitiriam fazer. Se\neu continuar calada, o erro\p"
-	.string "tambem sera meu.$"
+	.string "ANAHI: Eu ajudei a criar os\nprimeiros sensores de VINCULO.\p"
+	.string "Na epoca achei que medir\nsignificava compreender. Hoje\p"
+	.string "sei que nao e a mesma coisa.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_YoullTakeCyndaquil:
-	.string "ANAHI: Eu estudei os VINCULOS\nantes de entender o que minhas\p"
-	.string "pesquisas permitiriam fazer. Se\neu continuar calada, o erro\p"
-	.string "tambem sera meu.$"
+	.string "ANAHI: Eu ajudei a criar os\nprimeiros sensores de VINCULO.\p"
+	.string "Na epoca achei que medir\nsignificava compreender. Hoje\p"
+	.string "sei que nao e a mesma coisa.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_YoullTakeTotodile:
-	.string "ANAHI: Eu estudei os VINCULOS\nantes de entender o que minhas\p"
-	.string "pesquisas permitiriam fazer. Se\neu continuar calada, o erro\p"
-	.string "tambem sera meu.$"
+	.string "ANAHI: Eu ajudei a criar os\nprimeiros sensores de VINCULO.\p"
+	.string "Na epoca achei que medir\nsignificava compreender. Hoje\p"
+	.string "sei que nao e a mesma coisa.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_YoullTakeChikorita:
-	.string "ANAHI: Eu estudei os VINCULOS\nantes de entender o que minhas\p"
-	.string "pesquisas permitiriam fazer. Se\neu continuar calada, o erro\p"
-	.string "tambem sera meu.$"
+	.string "ANAHI: O DESENCANTO nao apaga\napenas fatos. Ele rompe\p"
+	.string "caminhos entre pessoas, lugares\ne POKéMON. E esses caminhos nao\p"
+	.string "pertencem a uma empresa.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_TakeYourTimeAllInvaluable:
-	.string "ANAHI: Eu estudei os VINCULOS\nantes de entender o que minhas\p"
-	.string "pesquisas permitiriam fazer. Se\neu continuar calada, o erro\p"
-	.string "tambem sera meu.$"
+	.string "ANAHI: Eu ajudei a criar os\nprimeiros sensores de VINCULO.\p"
+	.string "Na epoca achei que medir\nsignificava compreender. Hoje\p"
+	.string "sei que nao e a mesma coisa.$"
 
 @ Unused
 LittlerootTown_ProfessorBirchsLab_Text_PickedFinePokemon:
-	.string "ANAHI: Eu estudei os VINCULOS\nantes de entender o que minhas\p"
-	.string "pesquisas permitiriam fazer. Se\neu continuar calada, o erro\p"
-	.string "tambem sera meu.$"
+	.string "ANAHI: Eu ajudei a criar os\nprimeiros sensores de VINCULO.\p"
+	.string "Na epoca achei que medir\nsignificava compreender. Hoje\p"
+	.string "sei que nao e a mesma coisa.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_ReceivedJohtoStarter:
-	.string "ANAHI: Eu estudei os VINCULOS\nantes de entender o que minhas\p"
-	.string "pesquisas permitiriam fazer. Se\neu continuar calada, o erro\p"
-	.string "tambem sera meu.$"
+	.string "{PLAYER} received the {STR_VAR_1}\n"
+	.string "from PROF. ANAHI!$"
 
 @ Unused
 LittlerootTown_ProfessorBirchsLab_Text_NicknameJohtoStarter:
-	.string "ANAHI: Eu estudei os VINCULOS\nantes de entender o que minhas\p"
-	.string "pesquisas permitiriam fazer. Se\neu continuar calada, o erro\p"
-	.string "tambem sera meu.$"
+	.string "Want to give a nickname to\n"
+	.string "the {STR_VAR_1} you received?$"
 
 LittlerootTown_ProfessorBirchsLab_Text_GrassyPatchWaiting:
-	.string "ANAHI: Eu estudei os VINCULOS\nantes de entender o que minhas\p"
-	.string "pesquisas permitiriam fazer. Se\neu continuar calada, o erro\p"
-	.string "tambem sera meu.$"
+	.string "ANAHI: O DESENCANTO nao apaga\napenas fatos. Ele rompe\p"
+	.string "caminhos entre pessoas, lugares\ne POKéMON. E esses caminhos nao\p"
+	.string "pertencem a uma empresa.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BetterLeaveOthersAlone:
-	.string "ANAHI: Eu estudei os VINCULOS\nantes de entender o que minhas\p"
-	.string "pesquisas permitiriam fazer. Se\neu continuar calada, o erro\p"
-	.string "tambem sera meu.$"
+	.string "You received the promised POKéMON.\n"
+	.string "Better leave the others alone.$"
 
 @ Unused
 LittlerootTown_ProfessorBirchsLab_Text_DontHaveAnyRoomForPokemon:
-	.string "ANAHI: Eu estudei os VINCULOS\nantes de entender o que minhas\p"
-	.string "pesquisas permitiriam fazer. Se\neu continuar calada, o erro\p"
-	.string "tambem sera meu.$"
+	.string "Oh, you don't have any room for\n"
+	.string "this POKéMON.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_MayWhatNextImStayingHere:
-	.string "ANAHI: Eu estudei os VINCULOS\nantes de entender o que minhas\p"
-	.string "pesquisas permitiriam fazer. Se\neu continuar calada, o erro\p"
-	.string "tambem sera meu.$"
+	.string "CIRO: Voce continua olhando\npara cada cicatriz como se ela\p"
+	.string "fosse uma resposta. Eu quero\nsaber o que existe depois dela.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BrendanPreferCollectingSlowly:
-	.string "ANAHI: Eu estudei os VINCULOS\nantes de entender o que minhas\p"
-	.string "pesquisas permitiriam fazer. Se\neu continuar calada, o erro\p"
-	.string "tambem sera meu.$"
+	.string "CIRO: Se os dados estiverem\ncertos, o DESENCANTO pode ser\p"
+	.string "tratado. Eu prefiro testar uma\nresposta a transformar\p"
+	.string "sofrimento em tradicao.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_MayHaveYouGoneToBattleFrontier:
-	.string "ANAHI: Eu estudei os VINCULOS\nantes de entender o que minhas\p"
-	.string "pesquisas permitiriam fazer. Se\neu continuar calada, o erro\p"
-	.string "tambem sera meu.$"
+	.string "CIRO: Voce continua olhando\npara cada cicatriz como se ela\p"
+	.string "fosse uma resposta. Eu quero\nsaber o que existe depois dela.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BrendanHaveYouGoneToBattleFrontier:
-	.string "ANAHI: Eu estudei os VINCULOS\nantes de entender o que minhas\p"
-	.string "pesquisas permitiriam fazer. Se\neu continuar calada, o erro\p"
-	.string "tambem sera meu.$"
+	.string "CIRO: Se os dados estiverem\ncertos, o DESENCANTO pode ser\p"
+	.string "tratado. Eu prefiro testar uma\nresposta a transformar\p"
+	.string "sofrimento em tradicao.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_ScottAboardSSTidalCall:
-	.string "ANAHI: Eu estudei os VINCULOS\nantes de entender o que minhas\p"
-	.string "pesquisas permitiriam fazer. Se\neu continuar calada, o erro\p"
-	.string "tambem sera meu.$"
+	.string "… … … … … …\n"
+	.string "… … … … … Beep!\p"
+	.string "SCOTT: Hi, hi, {PLAYER}!\n"
+	.string "It's me, SCOTT.\p"
+	.string "I'm aboard the S.S. TIDAL now.\n"
+	.string "It feels great to be on the sea!\p"
+	.string "By the way…\p"
+	.string "There's this place that I'd like to\n"
+	.string "invite you to for a visit.\p"
+	.string "If you're interested, board a ferry\n"
+	.string "at either SLATEPORT or LILYCOVE.\p"
+	.string "I'll fill you in on the details when\n"
+	.string "we meet. I'll be waiting!\p"
+	.string "… … … … … …\n"
+	.string "… … … … … Click!$"

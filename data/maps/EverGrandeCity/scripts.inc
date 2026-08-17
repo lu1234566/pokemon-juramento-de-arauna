@@ -24,13 +24,11 @@ EverGrandeCity_EventScript_SetVisitedEverGrande::
 	end
 
 EverGrandeCity_Text_EnteringVictoryRoad:
-	.string "Tem gente que chama de\nDESENCANTO. Eu chamava de\p"
-	.string "distraicao, ate minha mae\nesquecer a cancao que cantava\p"
-	.string "desde crianca.$"
+	.string "ENTERING VICTORY ROAD$"
 
 EverGrandeCity_Text_EnteringPokemonLeague:
-	.string "Dona Zila diz que uma historia\nmuda toda vez que e contada.\p"
-	.string "Talvez seja por isso que ainda\nesta viva.$"
+	.string "ENTERING POKéMON LEAGUE\n"
+	.string "CENTER GATE$"
 
 EverGrandeCity_Text_CitySign:
 	.string "ESTRADA DO JURAMENTO. A Liga e\no ultimo rito da viagem. Vencer\p"

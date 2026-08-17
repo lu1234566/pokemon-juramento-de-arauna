@@ -65,15 +65,23 @@ EverGrandeCity_SidneysRoom_EventScript_Defeated::
 	end
 
 EverGrandeCity_SidneysRoom_Text_IntroSpeech:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "Welcome, challenger!\n"
+	.string "I'm SIDNEY of the ELITE FOUR.\p"
+	.string "I like that look you're giving me.\n"
+	.string "I guess you'll give me a good match.\l"
+	.string "That's good! Looking real good!\p"
+	.string "All right! You and me, let's enjoy\n"
+	.string "a battle that can only be staged\l"
+	.string "here in the POKéMON LEAGUE!$"
 
 EverGrandeCity_SidneysRoom_Text_Defeat:
-	.string "Voce vai continuar mesmo\nsabendo que ESTRADA DO\p"
-	.string "JURAMENTO guarda partes da\nhistoria que muita gente\p"
-	.string "preferia deixar enterradas?$"
+	.string "Well, how do you like that? I lost!\n"
+	.string "Eh, it was fun, so it doesn't matter.$"
 
 EverGrandeCity_SidneysRoom_Text_PostBattleSpeech:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "Well, listen to what this loser has\n"
+	.string "to say.\p"
+	.string "You've got what it takes to go far.\n"
+	.string "Now, go on to the next room and enjoy\l"
+	.string "your next battle!$"
 

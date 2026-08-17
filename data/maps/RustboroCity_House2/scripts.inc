@@ -10,8 +10,9 @@ RustboroCity_House2_EventScript_LittleGirl::
 	end
 
 RustboroCity_House2_Text_TrainerSchoolExcellent:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "The TRAINER'S SCHOOL is excellent.\p"
+	.string "If you study there, you could even\n"
+	.string "become a GYM LEADER.$"
 
 RustboroCity_House2_Text_RoxanneKnowsALot:
 	.string "DALVA: Pedra guarda marcas.\nAlgumas rachaduras contam mais\p"

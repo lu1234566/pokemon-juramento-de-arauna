@@ -268,117 +268,138 @@ SlateportCity_OceanicMuseum_2F_EventScript_MuseumPatron3::
 	end
 
 SlateportCity_OceanicMuseum_2F_Text_ThankYouForTheParts:
-	.string "Voce vai continuar mesmo\nsabendo que PORTO DO SAL guarda\p"
-	.string "partes da historia que muita\ngente preferia deixar\p"
-	.string "enterradas?$"
+	.string "HORIZONTE: Nao somos soldados.\nSomos tecnicos, guardas e\p"
+	.string "pesquisadores. Isso nao torna\ntodas as nossas ordens certas.$"
 
 SlateportCity_OceanicMuseum_2F_Text_WellTakeThoseParts:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "Hehehe, hold it!\n"
+	.string "We'll take those parts!$"
 
 SlateportCity_OceanicMuseum_2F_Text_SternWhoAreYou:
-	.string "Voce vai continuar mesmo\nsabendo que PORTO DO SAL guarda\p"
-	.string "partes da historia que muita\ngente preferia deixar\p"
-	.string "enterradas?$"
+	.string "CAPT. STERN: Wh-what?\n"
+	.string "Who are you people?$"
 
 SlateportCity_OceanicMuseum_2F_Text_WereTeamAqua:
-	.string "HORIZONTE: O Arquivo preserva o\nque o tempo destruiria. Um dia\p"
-	.string "voces vao agradecer por nao\nprecisarem mais sofrer para\p"
-	.string "lembrar.$"
+	.string "HORIZONTE: OTACILIO diz que\nmemoria sem escolha e outra\p"
+	.string "forma de prisao. Eu ainda estou\ntentando decidir se concordo.$"
 
 SlateportCity_OceanicMuseum_2F_Text_Grunt1Defeat:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "HORIZONTE: O projeto de M'BOI\nfoi um desastre. O ARQUIVO\p"
+	.string "atual existe justamente porque\naprendemos com ele. E o que\p"
+	.string "consta nos relatorios.$"
 
 SlateportCity_OceanicMuseum_2F_Text_BossGoingToBeFurious:
-	.string "O HORIZONTE consertou a estrada\ndaqui. Nao sei se isso torna\p"
-	.string "mais facil perguntar o que\nexiste debaixo dela.$"
+	.string "HORIZONTE: Os sensores detectam\nVINCULOS instaveis antes do\p"
+	.string "DESENCANTO completo. Isso pode\nsalvar familias inteiras.$"
 
 SlateportCity_OceanicMuseum_2F_Text_LetMeTakeCareOfThis:
 	.string "Humph, sniveling wimp!\n"
 	.string "Let me take care of this!$"
 
 SlateportCity_OceanicMuseum_2F_Text_Grunt2Defeat:
-	.string "Voce vai continuar mesmo\nsabendo que PORTO DO SAL guarda\p"
-	.string "partes da historia que muita\ngente preferia deixar\p"
-	.string "enterradas?$"
+	.string "HORIZONTE: O ARQUIVO VIVO nao\napaga pessoas. Ele separa\p"
+	.string "trauma de identidade. Pelo\nmenos e isso que nos ensinaram.$"
 
 SlateportCity_OceanicMuseum_2F_Text_MeddlingKid:
-	.string "Voce vai continuar mesmo\nsabendo que PORTO DO SAL guarda\p"
-	.string "partes da historia que muita\ngente preferia deixar\p"
-	.string "enterradas?$"
+	.string "Now what? If we don't get the parts,\n"
+	.string "we're in for it!\p"
+	.string "Arrgh, I didn't count on being meddled\n"
+	.string "with by some meddling kid!$"
 
 SlateportCity_OceanicMuseum_2F_Text_CameToSeeWhatsTakingSoLong:
-	.string "Voce vai continuar mesmo\nsabendo que PORTO DO SAL guarda\p"
-	.string "partes da historia que muita\ngente preferia deixar\p"
-	.string "enterradas?$"
+	.string "I came to see what was taking so\n"
+	.string "long to snatch some parts, and you\l"
+	.string "simps are held up by a mere child?$"
 
 SlateportCity_OceanicMuseum_2F_Text_ArchieWarning:
-	.string "OTACILIO: Eu nao quero poder.\nQuero um mundo em que nenhuma\p"
-	.string "pessoa seja obrigada a carregar\npara sempre a pior coisa que ja\p"
-	.string "viveu.$"
+	.string "OTACILIO: Eu vi o que uma\nmemoria pode fazer com quem\p"
+	.string "sobrevive. O ARQUIVO VIVO\nexiste para que ninguem seja\p"
+	.string "condenado a carregar a pior\nnoite da propria vida para\p"
+	.string "sempre.$"
 
 SlateportCity_OceanicMuseum_2F_Text_SternThankYouForSavingUs:
-	.string "O HORIZONTE consertou a estrada\ndaqui. Nao sei se isso torna\p"
-	.string "mais facil perguntar o que\nexiste debaixo dela.$"
+	.string "HORIZONTE: Nao somos soldados.\nSomos tecnicos, guardas e\p"
+	.string "pesquisadores. Isso nao torna\ntodas as nossas ordens certas.$"
 
 SlateportCity_OceanicMuseum_2F_Text_SternIveGotToGo:
-	.string "Tem gente que chama de\nDESENCANTO. Eu chamava de\p"
-	.string "distraicao, ate minha mae\nesquecer a cancao que cantava\p"
-	.string "desde crianca.$"
+	.string "CAPT. STERN: Whoops!\n"
+	.string "There's no time to lose!\p"
+	.string "We have to set out on our ocean-floor\n"
+	.string "expedition really soon.\p"
+	.string "Thanks again, but now I've got\n"
+	.string "to go!\p"
+	.string "Feel free to wander around and check\n"
+	.string "out our facilities, though.$"
 
 SlateportCity_OceanicMuseum_2F_Text_RemindsMeOfAbandonedShip:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "I saw a model of a ship here.\p"
+	.string "It reminded me of the ABANDONED SHIP\n"
+	.string "near DEWFORD TOWN…$"
 
 SlateportCity_OceanicMuseum_2F_Text_DontRunInMuseum:
-	.string "Dona Zila diz que uma historia\nmuda toda vez que e contada.\p"
-	.string "Talvez seja por isso que ainda\nesta viva.$"
+	.string "Don't you dare run around inside\n"
+	.string "the MUSEUM!$"
 
 SlateportCity_OceanicMuseum_2F_Text_WantToRideSubmarine:
-	.string "O ARQUIVO VIVO e apresentado\ncomo a cura do DESENCANTO. Os\p"
-	.string "LEMBRANTES tentam impedir a\ndemonstracao.$"
+	.string "HORIZONTE: Nao somos soldados.\nSomos tecnicos, guardas e\p"
+	.string "pesquisadores. Isso nao torna\ntodas as nossas ordens certas.$"
 
 SlateportCity_OceanicMuseum_2F_Text_WaterQualitySample1:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "“WATER QUALITY SAMPLE 1,” the\n"
+	.string "label says.\p"
+	.string "The sea is all connected, but the\n"
+	.string "water seems to differ by region.$"
 
 SlateportCity_OceanicMuseum_2F_Text_WaterQualitySample2:
-	.string "Voce vai continuar mesmo\nsabendo que PORTO DO SAL guarda\p"
-	.string "partes da historia que muita\ngente preferia deixar\p"
-	.string "enterradas?$"
+	.string "“WATER QUALITY SAMPLE 2,” the\n"
+	.string "label says.\p"
+	.string "Does the saltiness of seawater differ\n"
+	.string "by region, too?$"
 
 SlateportCity_OceanicMuseum_2F_Text_PressureExperiment:
-	.string "Dona Zila diz que uma historia\nmuda toda vez que e contada.\p"
-	.string "Talvez seja por isso que ainda\nesta viva.$"
+	.string "A rubber ball is expanding and\n"
+	.string "shrinking.\p"
+	.string "“In the sea, the weight of water itself\n"
+	.string "exerts pressure.\p"
+	.string "“In shallow water, the pressure is not\n"
+	.string "very heavy.\p"
+	.string "“However, in extremely deep water,\n"
+	.string "the pressure can reach even tens of\l"
+	.string "thousands of tons on a small area.”$"
 
 SlateportCity_OceanicMuseum_2F_Text_HoennModel:
-	.string "Voce vai continuar mesmo\nsabendo que PORTO DO SAL guarda\p"
-	.string "partes da historia que muita\ngente preferia deixar\p"
-	.string "enterradas?$"
+	.string "“MODEL OF ARAUNA REGION”\p"
+	.string "It's a miniature diorama of the\n"
+	.string "ARAUNA region.\p"
+	.string "Where is LITTLEROOT TOWN on this?$"
 
 SlateportCity_OceanicMuseum_2F_Text_DeepSeawaterDisplay:
-	.string "Dona Zila diz que uma historia\nmuda toda vez que e contada.\p"
-	.string "Talvez seja por isso que ainda\nesta viva.$"
+	.string "It's a display on the flow of seawater.\p"
+	.string "“Near the bottom of the sea, water\n"
+	.string "flows due to differences in such\l"
+	.string "factors as temperature and salinity.”$"
 
 SlateportCity_OceanicMuseum_2F_Text_SurfaceSeawaterDisplay:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "It's a display on the flow of seawater.\p"
+	.string "“Toward the surface, seawater flows\n"
+	.string "as currents driven by the winds.”$"
 
 SlateportCity_OceanicMuseum_2F_Text_SSTidalReplica:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "“THE FERRY S.S. TIDAL\p"
+	.string "“A scale replica of the ship under\n"
+	.string "construction at STERN'S SHIPYARD.”$"
 
 SlateportCity_OceanicMuseum_2F_Text_SubmarineReplica:
-	.string "O ARQUIVO VIVO e apresentado\ncomo a cura do DESENCANTO. Os\p"
-	.string "LEMBRANTES tentam impedir a\ndemonstracao.$"
+	.string "HORIZONTE: Os sensores detectam\nVINCULOS instaveis antes do\p"
+	.string "DESENCANTO completo. Isso pode\nsalvar familias inteiras.$"
 
 SlateportCity_OceanicMuseum_2F_Text_SumbersibleReplica:
-	.string "Tem gente que chama de\nDESENCANTO. Eu chamava de\p"
-	.string "distraicao, ate minha mae\nesquecer a cancao que cantava\p"
-	.string "desde crianca.$"
+	.string "“SUBMERSIBLE POD\p"
+	.string "“A replica of a compact, unmanned\n"
+	.string "pod for seafloor exploration.”$"
 
 SlateportCity_OceanicMuseum_2F_Text_SSAnneReplica:
-	.string "Dona Zila diz que uma historia\nmuda toda vez que e contada.\p"
-	.string "Talvez seja por isso que ainda\nesta viva.$"
+	.string "“S.S. ANNE\p"
+	.string "“A replica of the luxury liner that\n"
+	.string "circles the globe.”$"
 

@@ -459,24 +459,31 @@ MauvilleCity_EventScript_RegisterWallyCall::
 	end
 
 MauvilleCity_Text_UncleHesTooPeppy:
-	.string "O HORIZONTE consertou a estrada\ndaqui. Nao sei se isso torna\p"
-	.string "mais facil perguntar o que\nexiste debaixo dela.$"
+	.string "UNCLE: It's because of POKéMON that\n"
+	.string "this boy's got more pep, I suppose…\l"
+	.string "But he's become a bit too peppy…$"
 
 MauvilleCity_Text_WallyWantToChallengeGym:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "VAL: Passei muito tempo achando\nque precisava virar outra\p"
+	.string "pessoa para seguir viagem. Eu\nso precisava descobrir meu\p"
+	.string "proprio ritmo.$"
 
 MauvilleCity_Text_UncleYourePushingIt:
-	.string "VAL: Eu ainda tenho medo. Mas\nagora sei que coragem nao e\p"
-	.string "esquecer o medo; e caminhar\nmesmo lembrando dele.$"
+	.string "UNCLE: Now hold on, WALLY.\p"
+	.string "Since you started living with POKéMON,\n"
+	.string "you have grown quite a lot stronger.\p"
+	.string "But don't you think you're pushing it\n"
+	.string "to suddenly challenge a GYM?$"
 
 MauvilleCity_Text_WallyWeCanBeatAnyone:
-	.string "VAL: Eu ainda tenho medo. Mas\nagora sei que coragem nao e\p"
-	.string "esquecer o medo; e caminhar\nmesmo lembrando dele.$"
+	.string "VAL: Passei muito tempo achando\nque precisava virar outra\p"
+	.string "pessoa para seguir viagem. Eu\nso precisava descobrir meu\p"
+	.string "proprio ritmo.$"
 
 MauvilleCity_Text_WallyWillYouBattleMe:
-	.string "VAL: Eu ainda tenho medo. Mas\nagora sei que coragem nao e\p"
-	.string "esquecer o medo; e caminhar\nmesmo lembrando dele.$"
+	.string "VAL: Passei muito tempo achando\nque precisava virar outra\p"
+	.string "pessoa para seguir viagem. Eu\nso precisava descobrir meu\p"
+	.string "proprio ritmo.$"
 
 MauvilleCity_Text_WallyMyUncleWontKnowImStrong:
 	.string "VAL: Eu ainda tenho medo. Mas\nagora sei que coragem nao e\p"
@@ -499,21 +506,33 @@ MauvilleCity_Text_WallyDefeat:
 	.string "esquecer o medo; e caminhar\nmesmo lembrando dele.$"
 
 MauvilleCity_Text_WallyIllGoBackToVerdanturf:
-	.string "VAL: Eu ainda tenho medo. Mas\nagora sei que coragem nao e\p"
-	.string "esquecer o medo; e caminhar\nmesmo lembrando dele.$"
+	.string "VAL: Passei muito tempo achando\nque precisava virar outra\p"
+	.string "pessoa para seguir viagem. Eu\nso precisava descobrir meu\p"
+	.string "proprio ritmo.$"
 
 MauvilleCity_Text_ThankYouNotEnoughToBattle:
-	.string "Voce vai continuar mesmo\nsabendo que ENCRUZILHADA\p"
-	.string "CENTRAL guarda partes da\nhistoria que muita gente\p"
-	.string "preferia deixar enterradas?$"
+	.string "{PLAYER}, thank you.\n"
+	.string "Being a TRAINER is tough, isn't it?\p"
+	.string "It's not enough just to have POKéMON\n"
+	.string "and make them battle. That isn't what\l"
+	.string "being a real TRAINER is about.$"
 
 MauvilleCity_Text_UncleNoNeedToBeDown:
-	.string "VAL: Eu ainda tenho medo. Mas\nagora sei que coragem nao e\p"
-	.string "esquecer o medo; e caminhar\nmesmo lembrando dele.$"
+	.string "UNCLE: WALLY, there's no need to be so\n"
+	.string "down on yourself.\p"
+	.string "Why, what's keeping you from becoming\n"
+	.string "stronger and stronger?\p"
+	.string "Come on, let's go home.\n"
+	.string "Everyone's waiting for you.$"
 
 MauvilleCity_Text_UncleVisitUsSometime:
-	.string "VAL: Eu ainda tenho medo. Mas\nagora sei que coragem nao e\p"
-	.string "esquecer o medo; e caminhar\nmesmo lembrando dele.$"
+	.string "UNCLE: {PLAYER}{KUN}, it just dawned on me\n"
+	.string "that you must be the TRAINER who kept\l"
+	.string "an eye out for WALLY when he caught\l"
+	.string "his POKéMON.\p"
+	.string "Why don't you visit us in VERDANTURF\n"
+	.string "sometime?\l"
+	.string "I'm sure WALLY would enjoy it.$"
 
 
 MauvilleCity_Text_WallyPokenavCall:
@@ -521,12 +540,21 @@ MauvilleCity_Text_WallyPokenavCall:
 	.string "esquecer o medo; e caminhar\nmesmo lembrando dele.$"
 
 MauvilleCity_Text_RegisteredWally:
-	.string "VAL: Eu ainda tenho medo. Mas\nagora sei que coragem nao e\p"
-	.string "esquecer o medo; e caminhar\nmesmo lembrando dele.$"
+	.string "Registered WALLY\n"
+	.string "in the POKéNAV.$"
 
 MauvilleCity_Text_ScottYouDidntHoldBack:
-	.string "VAL: Eu ainda tenho medo. Mas\nagora sei que coragem nao e\p"
-	.string "esquecer o medo; e caminhar\nmesmo lembrando dele.$"
+	.string "SCOTT: Hehe…\n"
+	.string "I was watching that match!\p"
+	.string "You're friends with that boy WALLY,\n"
+	.string "aren't you?\p"
+	.string "But you didn't hold anything back\n"
+	.string "and beat him impressively.\p"
+	.string "Yeah! That's what a real POKéMON\n"
+	.string "battle is all about!\p"
+	.string "I idolize TRAINERS like that!\p"
+	.string "… … … … … …\n"
+	.string "I'll be cheering for you!$"
 
 MauvilleCity_Text_WattsonNeedFavorTakeKey:
 	.string "OLIVIA: Energia move uma\ncidade. Isso nao significa que\p"
@@ -537,8 +565,12 @@ MauvilleCity_Text_WattsonWontBeChallenge:
 	.string "toda fonte de energia deva ser\naceita.$"
 
 MauvilleCity_Text_WattsonThanksTakeTM:
-	.string "OLIVIA: Energia move uma\ncidade. Isso nao significa que\p"
-	.string "toda fonte de energia deva ser\naceita.$"
+	.string "WATTSON: Wahahahaha!\p"
+	.string "I knew it, {PLAYER}{KUN}! I knew I'd made\n"
+	.string "the right choice asking you!\p"
+	.string "This is my thanks--a TM containing\n"
+	.string "THUNDERBOLT!\p"
+	.string "Go on, you've earned it!$"
 
 MauvilleCity_Text_WattsonYoungTakeCharge:
 	.string "OLIVIA: Energia move uma\ncidade. Isso nao significa que\p"
@@ -551,13 +583,15 @@ MauvilleCity_Text_NurseHurtMonBackToHealth:
 	.string "you have to nurse it back to health.$"
 
 MauvilleCity_Text_AllSortsOfPeopleComeThrough:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "The roads of this town stretch north\n"
+	.string "and south, and east and west.\p"
+	.string "Because of that, we get all sorts of\n"
+	.string "people coming through.$"
 
 MauvilleCity_Text_RydelVeryGenerous:
-	.string "Voce vai continuar mesmo\nsabendo que ENCRUZILHADA\p"
-	.string "CENTRAL guarda partes da\nhistoria que muita gente\p"
-	.string "preferia deixar enterradas?$"
+	.string "Have you been to RYDEL'S CYCLES yet?\p"
+	.string "RYDEL, the owner, is a very generous\n"
+	.string "man.$"
 
 MauvilleCity_Text_PokemonCanJumpYouOnBike:
 	.string "Even if you're riding a BIKE,\n"
@@ -568,8 +602,9 @@ MauvilleCity_Text_CitySign:
 	.string "agora veste o uniforme de quem\npromete construir o futuro.$"
 
 MauvilleCity_Text_GymSign:
-	.string "OLIVIA: Energia move uma\ncidade. Isso nao significa que\p"
-	.string "toda fonte de energia deva ser\naceita.$"
+	.string "MAUVILLE CITY POKéMON GYM\n"
+	.string "LEADER: WATTSON\l"
+	.string "“The cheerfully electrifying man!”$"
 
 MauvilleCity_Text_BikeShopSign:
 	.string "“Ride in gravel and shake up your\n"
@@ -577,15 +612,20 @@ MauvilleCity_Text_BikeShopSign:
 	.string "RYDEL'S CYCLES$"
 
 MauvilleCity_Text_GameCornerSign:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "“The play spot for all!”\n"
+	.string "MAUVILLE GAME CORNER$"
 
 MauvilleCity_Text_ExplainTV:
-	.string "Voce vai continuar mesmo\nsabendo que ENCRUZILHADA\p"
-	.string "CENTRAL guarda partes da\nhistoria que muita gente\p"
-	.string "preferia deixar enterradas?$"
+	.string "Hi, do you check out TV at all?\p"
+	.string "They've added a bunch of cool new\n"
+	.string "shows recently.\p"
+	.string "TV is so cool. I've seen my friends on\n"
+	.string "TV just out of the blue.\p"
+	.string "And, sometimes, they even put you on TV\n"
+	.string "without telling you.\p"
+	.string "I wish I would be on TV sometime.\p"
+	.string "That's why I think you should check\n"
+	.string "out TVs whenever you can.$"
 
 MauvilleCity_Text_BeenCheckingOutTV:
-	.string "Voce vai continuar mesmo\nsabendo que ENCRUZILHADA\p"
-	.string "CENTRAL guarda partes da\nhistoria que muita gente\p"
-	.string "preferia deixar enterradas?$"
+	.string "Hi, have you been checking out TVs?$"

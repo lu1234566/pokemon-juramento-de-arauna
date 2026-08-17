@@ -232,46 +232,68 @@ MeteorFalls_1F_1R_EventScript_MetCozmo::
 	end
 
 MeteorFalls_1F_1R_Text_WithThisMeteorite:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "Hehehe!\p"
+	.string "With this METEORITE, that thing in\n"
+	.string "MT. CHIMNEY will…$"
 
 MeteorFalls_1F_1R_Text_DontExpectMercyFromMagma:
-	.string "LEMBRANTE: Apagar uma historia\nporque ela incomoda quem manda\p"
-	.string "e apenas outra forma de\nviolencia.$"
+	.string "Heh?\p"
+	.string "I don't know who you are, but if you get\n"
+	.string "in the way of LEMBRANTES, don't\l"
+	.string "expect any mercy!$"
 
 MeteorFalls_1F_1R_Text_HoldItRightThereMagma:
-	.string "LEMBRANTE: Apagar uma historia\nporque ela incomoda quem manda\p"
-	.string "e apenas outra forma de\nviolencia.$"
+	.string "Hold it right there, LEMBRANTES!\p"
+	.string "You're badly mistaken if you think you\n"
+	.string "can have your way with the world!$"
 
 MeteorFalls_1F_1R_Text_BeSeeingYouTeamAqua:
-	.string "HORIZONTE: O Arquivo preserva o\nque o tempo destruiria. Um dia\p"
-	.string "voces vao agradecer por nao\nprecisarem mais sofrer para\p"
-	.string "lembrar.$"
+	.string "Hehehe!\n"
+	.string "Even CONSORCIO HORIZONTE joins us!\p"
+	.string "But it's too much trouble to deal with\n"
+	.string "you all…\p"
+	.string "Heh, it doesn't matter!\p"
+	.string "We've got the METEORITE, so off to\n"
+	.string "MT. CHIMNEY we go!\p"
+	.string "Hehehe! Be seeing you, you TEAM\n"
+	.string "AQUA dingbats!$"
 
 MeteorFalls_1F_1R_Text_ArchieSeenYouBefore:
-	.string "CIRO: Nao quero passar a vida\npreso ao que esta vila perdeu.\p"
-	.string "O HORIZONTE me deu uma chance\nde seguir em frente. Vou\p"
-	.string "descobrir se voce consegue\nacompanhar.$"
+	.string "OTACILIO: Preservar tudo nao e\ncompaixao. As vezes e apenas\p"
+	.string "obrigar uma ferida a continuar\naberta e chamar isso de\p"
+	.string "respeito.$"
 
 MeteorFalls_1F_1R_Text_BossWeShouldChaseMagma:
-	.string "LEMBRANTE: Apagar uma historia\nporque ela incomoda quem manda\p"
-	.string "e apenas outra forma de\nviolencia.$"
+	.string "BOSS, we should give chase to\n"
+	.string "LEMBRANTES…$"
 
 MeteorFalls_1F_1R_Text_ArchieYesNoTellingWhatMagmaWillDo:
-	.string "OTACILIO: Eu nao quero poder.\nQuero um mundo em que nenhuma\p"
-	.string "pessoa seja obrigada a carregar\npara sempre a pior coisa que ja\p"
-	.string "viveu.$"
+	.string "OTACILIO: Yes, yes, we must!\n"
+	.string "We've got to hurry.\p"
+	.string "There's no telling what LEMBRANTES\n"
+	.string "will do at MT. CHIMNEY!$"
 
 MeteorFalls_1F_1R_Text_ArchieFarewell:
-	.string "OTACILIO: Eu nao quero poder.\nQuero um mundo em que nenhuma\p"
-	.string "pessoa seja obrigada a carregar\npara sempre a pior coisa que ja\p"
-	.string "viveu.$"
+	.string "OTACILIO: M'BOI me ensinou que\nlembrar tambem pode destruir.\p"
+	.string "Eu me recuso a aceitar que\nsofrimento seja sagrado so\p"
+	.string "porque aconteceu.$"
 
 MeteorFalls_1F_1R_Text_MeetProfCozmo:
-	.string "HORIZONTE: O Arquivo preserva o\nque o tempo destruiria. Um dia\p"
-	.string "voces vao agradecer por nao\nprecisarem mais sofrer para\p"
-	.string "lembrar.$"
+	.string "I… I'm COZMO…\n"
+	.string "I'm a PROFESSOR…\p"
+	.string "LEMBRANTES asked me to guide them\n"
+	.string "to METEOR FALLS…\p"
+	.string "But they tricked me.\n"
+	.string "They even took my METEORITE away…\p"
+	.string "And then another similar bunch,\n"
+	.string "CONSORCIO HORIZONTE showed up.\p"
+	.string "After that…\n"
+	.string "I don't understand any of it.\p"
+	.string "But that LEMBRANTES…\p"
+	.string "What are they going to do with that\n"
+	.string "METEORITE at MT. CHIMNEY?$"
 
 MeteorFalls_1F_1R_Text_WhatsTeamMagmaDoingAtMtChimney:
-	.string "LEMBRANTE: Apagar uma historia\nporque ela incomoda quem manda\p"
-	.string "e apenas outra forma de\nviolencia.$"
+	.string "PROF. COZMO: But that LEMBRANTES…\p"
+	.string "What are they going to do with that\n"
+	.string "METEORITE at MT. CHIMNEY?$"

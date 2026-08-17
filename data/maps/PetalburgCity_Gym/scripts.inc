@@ -1137,13 +1137,22 @@ PetalburgCity_Gym_EventScript_GymStatue::
 	end
 
 PetalburgCity_Gym_Text_DadYoureHereWithYourPokemon:
-	.string "Voce vai continuar mesmo\nsabendo que PAMPA DA ESPERA\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "DAD: Hm?\p"
+	.string "Well, if it isn't {PLAYER}!\n"
+	.string "So you're all finished moving in?\p"
+	.string "I'm surprised that you managed to\n"
+	.string "get here by yourself.\p"
+	.string "Oh, I see.\n"
+	.string "You're with your POKéMON.\p"
+	.string "Hm… Then I guess you're going to\n"
+	.string "become a TRAINER like me, {PLAYER}.\p"
+	.string "That's great news!\n"
+	.string "I'll be looking forward to it!$"
 
 PetalburgCity_Gym_Text_WallyIdLikeAPokemon:
-	.string "VAL: Eu ainda tenho medo. Mas\nagora sei que coragem nao e\p"
-	.string "esquecer o medo; e caminhar\nmesmo lembrando dele.$"
+	.string "VAL: Passei muito tempo achando\nque precisava virar outra\p"
+	.string "pessoa para seguir viagem. Eu\nso precisava descobrir meu\p"
+	.string "proprio ritmo.$"
 
 PetalburgCity_Gym_Text_DadOhYoureWallyRight:
 	.string "VAL: Eu ainda tenho medo. Mas\nagora sei que coragem nao e\p"
@@ -1161,12 +1170,15 @@ PetalburgCity_Gym_Text_DadPlayerGoWithWally:
 	.string "esquecer o medo; e caminhar\nmesmo lembrando dele.$"
 
 PetalburgCity_Gym_Text_IllLoanYouMyZigzagoon:
-	.string "VAL: Eu ainda tenho medo. Mas\nagora sei que coragem nao e\p"
-	.string "esquecer o medo; e caminhar\nmesmo lembrando dele.$"
+	.string "WALLY, here, I'll loan you my POKéMON.\p"
+	.string "WALLY received a ZIGZAGOON!$"
 
 PetalburgCity_Gym_Text_WallyThankYouAndDadGivesPokeBall:
-	.string "VAL: Eu ainda tenho medo. Mas\nagora sei que coragem nao e\p"
-	.string "esquecer o medo; e caminhar\nmesmo lembrando dele.$"
+	.string "WALLY: Oh, wow!\n"
+	.string "A POKéMON!\p"
+	.string "DAD: Hm. I'll give you a POKé BALL, too.\n"
+	.string "Go for it!\p"
+	.string "WALLY received a POKé BALL!$"
 
 PetalburgCity_Gym_Text_WallyOhWowThankYou:
 	.string "VAL: Eu ainda tenho medo. Mas\nagora sei que coragem nao e\p"
@@ -1177,40 +1189,53 @@ PetalburgCity_Gym_Text_WouldYouReallyComeWithMe:
 	.string "with me?$"
 
 PetalburgCity_Gym_Text_DadSoDidItWorkOut:
-	.string "Voce vai continuar mesmo\nsabendo que PAMPA DA ESPERA\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "DAD: So, did it work out?$"
 
 PetalburgCity_Gym_Text_WallyThankYouBye:
 	.string "VAL: Eu ainda tenho medo. Mas\nagora sei que coragem nao e\p"
 	.string "esquecer o medo; e caminhar\nmesmo lembrando dele.$"
 
 PetalburgCity_Gym_Text_DadGoCollectBadges:
-	.string "DALVA: Pedra guarda marcas.\nAlgumas rachaduras contam mais\p"
-	.string "que monumentos inteiros.$"
+	.string "DAD: Now…\p"
+	.string "{PLAYER}, if you want to become a\n"
+	.string "strong TRAINER, here's my advice.\p"
+	.string "Head for RUSTBORO CITY beyond this\n"
+	.string "town.\p"
+	.string "There, you should challenge\n"
+	.string "the GYM LEADER, ROXANNE.\p"
+	.string "After her, go on to other POKéMON\n"
+	.string "GYMS and defeat their LEADERS.\p"
+	.string "Collect BADGES from them,\n"
+	.string "understood?\p"
+	.string "Of course, I'm a GYM LEADER, too.\n"
+	.string "We'll battle one day, {PLAYER}.\p"
+	.string "But that's only after you become\n"
+	.string "stronger.$"
 
 PetalburgCity_Gym_Text_NormanGoToRustboro:
-	.string "ELIAS: Algumas culpas nao\ndesaparecem quando ficamos em\p"
-	.string "silencio. Eu aprovei parte do\nprojeto de M'BOI. Passei anos\p"
-	.string "chamando meu medo de prudencia.$"
+	.string "ELIAS: Ser seu pai nunca me deu\no direito de escolher que\p"
+	.string "verdade voce podia suportar.\nDemorei demais para entender\p"
+	.string "isso.$"
 
 PetalburgCity_Gym_Text_NormanGoToDewford:
 	.string "ELIAS: Algumas culpas nao\ndesaparecem quando ficamos em\p"
-	.string "silencio. Eu aprovei parte do\nprojeto de M'BOI. Passei anos\p"
+	.string "silencio. Eu aprovei parte do\nprojeto de M'BOI e passei anos\p"
 	.string "chamando meu medo de prudencia.$"
 
 PetalburgCity_Gym_Text_YouHaveGottenStronger:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "DAD: Hm… {PLAYER}, you have gotten\n"
+	.string "stronger.\p"
+	.string "I can tell by the number of BADGES\n"
+	.string "that you've earned.$"
 
 PetalburgCity_Gym_Text_NormanIntro:
 	.string "ELIAS: Algumas culpas nao\ndesaparecem quando ficamos em\p"
-	.string "silencio. Eu aprovei parte do\nprojeto de M'BOI. Passei anos\p"
+	.string "silencio. Eu aprovei parte do\nprojeto de M'BOI e passei anos\p"
 	.string "chamando meu medo de prudencia.$"
 
 PetalburgCity_Gym_Text_NormanDefeat:
 	.string "ELIAS: Algumas culpas nao\ndesaparecem quando ficamos em\p"
-	.string "silencio. Eu aprovei parte do\nprojeto de M'BOI. Passei anos\p"
+	.string "silencio. Eu aprovei parte do\nprojeto de M'BOI e passei anos\p"
 	.string "chamando meu medo de prudencia.$"
 
 PetalburgCity_Gym_Text_ReceivedBalanceBadge:
@@ -1218,16 +1243,26 @@ PetalburgCity_Gym_Text_ReceivedBalanceBadge:
 	.string "from DAD!$"
 
 PetalburgCity_Gym_Text_ExplainBalanceBadgeTakeThis:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "DAD: With that BADGE, the DEFENSE\n"
+	.string "of all your POKéMON will increase.\p"
+	.string "POKéMON that know the HM move SURF\n"
+	.string "will be able to travel over water.\p"
+	.string "This is my gift to you. {PLAYER}, I'm\n"
+	.string "sure you can use it correctly.$"
 
 PetalburgCity_Gym_Text_ExplainFacade:
-	.string "O HORIZONTE consertou a estrada\ndaqui. Nao sei se isso torna\p"
-	.string "mais facil perguntar o que\nexiste debaixo dela.$"
+	.string "DAD: TM42 contains FACADE.\p"
+	.string "It doubles the power of moves if\n"
+	.string "the POKéMON is poisoned, paralyzed,\l"
+	.string "or burned.\p"
+	.string "It might be able to turn a bad\n"
+	.string "situation into an advantage.$"
 
 PetalburgCity_Gym_Text_DadHappyAndSad:
-	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
-	.string "nomes antigos desapareceram\nquando elas chegaram.$"
+	.string "DAD: As the GYM LEADER, I can't\n"
+	.string "express how upset I am…\p"
+	.string "But as a father, it makes me both\n"
+	.string "happy and a little sad. It's odd…$"
 
 PetalburgCity_Gym_Text_PleaseComeWithMe:
 	.string "Ah, there you are, {PLAYER}{KUN}!\p"
@@ -1240,220 +1275,264 @@ PetalburgCity_Gym_Text_LetMeBorrowPlayer:
 	.string "a minute or two.$"
 
 PetalburgCity_Gym_Text_DadGoingToKeepTraining:
-	.string "Tem gente que chama de\nDESENCANTO. Eu chamava de\p"
-	.string "distraicao, ate minha mae\nesquecer a cancao que cantava\p"
-	.string "desde crianca.$"
+	.string "DAD: {PLAYER}, you should go visit\n"
+	.string "your mother every so often.\p"
+	.string "I'm going to stay here and redouble\n"
+	.string "my training.\p"
+	.string "It would bother me as a TRAINER to\n"
+	.string "not avenge my loss to you, {PLAYER}!$"
 
 PetalburgCity_Gym_Text_DadNoAmountOfTrainingIsEnough:
-	.string "Voce vai continuar mesmo\nsabendo que PAMPA DA ESPERA\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "DAD: {PLAYER}, how are things going?\p"
+	.string "The world of POKéMON is deep.\p"
+	.string "I honestly think that no amount of\n"
+	.string "training would ever be enough.$"
 
 PetalburgCity_Gym_Text_GymGuideAdvice:
-	.string "Voce vai continuar mesmo\nsabendo que PAMPA DA ESPERA\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "Hey, how's it going, CHAMPION-\n"
+	.string "bound {PLAYER}?\p"
+	.string "The doors in this GYM open when you\n"
+	.string "beat the awaiting TRAINERS.\p"
+	.string "Whoops! The doors in this room are\n"
+	.string "already open, so don't attack me!\p"
+	.string "The TRAINERS of PETALBURG GYM\n"
+	.string "use all kinds of items.\p"
+	.string "The door at the left leads to\n"
+	.string "the SPEED ROOM.\p"
+	.string "The door at the right leads to\n"
+	.string "the ACCURACY ROOM.\p"
+	.string "The room's name will be on\n"
+	.string "the door, so choose carefully.\p"
+	.string "Once you've chosen the door…\n"
+	.string "Well, hey, go for it!$"
 
 PetalburgCity_Gym_Text_GymGuidePostVictory:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "{PLAYER}! Whoa! You've overcome even\n"
+	.string "your own father!\p"
+	.string "Like, whoa!\n"
+	.string "What a stunning turn of events!$"
 
 PetalburgCity_Gym_Text_RandallIntro:
-	.string "Voce vai continuar mesmo\nsabendo que PAMPA DA ESPERA\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "The ability to attack before the\n"
+	.string "opponent…\p"
+	.string "Just that alone puts me at a great\n"
+	.string "advantage, don't you agree?$"
 
 PetalburgCity_Gym_Text_RandallDefeat:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "That was a magnificent battle!$"
 
 PetalburgCity_Gym_Text_RandallPostBattle:
-	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
-	.string "nomes antigos desapareceram\nquando elas chegaram.$"
+	.string "Go on to the next room where a new\n"
+	.string "challenge awaits you.\p"
+	.string "At the left is the CONFUSION ROOM.\p"
+	.string "The right door leads to the DEFENSE\n"
+	.string "ROOM.$"
 
 PetalburgCity_Gym_Text_RandallPostBadge:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "Whomever you beat, and whomever you\n"
+	.string "may lose to, you never shirk from\l"
+	.string "training yourself and your POKéMON.\p"
+	.string "That's what I think being a\n"
+	.string "GYM LEADER is all about.$"
 
 PetalburgCity_Gym_Text_ParkerIntro:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "This is the CONFUSION ROOM.\p"
+	.string "Let me see how well bonded you are\n"
+	.string "with your POKéMON!$"
 
 PetalburgCity_Gym_Text_ParkerDefeat:
-	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
-	.string "nomes antigos desapareceram\nquando elas chegaram.$"
+	.string "I couldn't confuse your team enough…\n"
+	.string "You share a strong bond together.$"
 
 PetalburgCity_Gym_Text_ParkerPostBattle:
-	.string "Voce vai continuar mesmo\nsabendo que PAMPA DA ESPERA\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "The next room is the STRENGTH ROOM.\n"
+	.string "Can you withstand brute force?$"
 
 PetalburgCity_Gym_Text_ParkerPostBadge:
-	.string "Dona Zila diz que uma historia\nmuda toda vez que e contada.\p"
-	.string "Talvez seja por isso que ainda\nesta viva.$"
+	.string "After you beat our LEADER, the\n"
+	.string "training has become a lot tougher.$"
 
 PetalburgCity_Gym_Text_GeorgeIntro:
-	.string "Voce vai continuar mesmo\nsabendo que PAMPA DA ESPERA\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "Just when you think you're going to\n"
+	.string "win, your opponent restores HP…\p"
+	.string "Can you just imagine how awful that\n"
+	.string "must feel?\p"
+	.string "I'll show you exactly how awful it\n"
+	.string "feels!$"
 
 PetalburgCity_Gym_Text_GeorgeDefeat:
-	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
-	.string "nomes antigos desapareceram\nquando elas chegaram.$"
+	.string "I couldn't restore HP enough…\n"
+	.string "What ATTACK power…$"
 
 PetalburgCity_Gym_Text_GeorgePostBattle:
-	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
-	.string "nomes antigos desapareceram\nquando elas chegaram.$"
+	.string "I should have expected no less from\n"
+	.string "our LEADER's kid.\p"
+	.string "No, wait! A TRAINER's abilities are\n"
+	.string "earned only through effort.\p"
+	.string "I lost because my own efforts\n"
+	.string "weren't enough.\p"
+	.string "Go on! The ONE-HIT KO ROOM is next.$"
 
 PetalburgCity_Gym_Text_GeorgePostBadge:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "I'm going to keep training at GYMS.\n"
+	.string "One day, I'll become a LEADER.$"
 
 PetalburgCity_Gym_Text_BerkeIntro:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "I'm not going to take it easy just\n"
+	.string "because you're our LEADER's kid.\p"
+	.string "I'll show you how horrid it is for\n"
+	.string "a POKéMON to take a critical hit!$"
 
 PetalburgCity_Gym_Text_BerkeDefeat:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "Your power…\n"
+	.string "You're the real deal.$"
 
 PetalburgCity_Gym_Text_BerkePostBattle:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "Your father really is strong.\n"
+	.string "He's a TRAINER worth my respect.\p"
+	.string "And, I sense the same glow coming\n"
+	.string "from you as your father.\p"
+	.string "I hope that you'll stage a terrific\n"
+	.string "battle with your father!$"
 
 PetalburgCity_Gym_Text_BerkePostBadge:
-	.string "Tem gente que chama de\nDESENCANTO. Eu chamava de\p"
-	.string "distraicao, ate minha mae\nesquecer a cancao que cantava\p"
-	.string "desde crianca.$"
+	.string "Since your dad became the LEADER,\n"
+	.string "the TRAINERS of PETALBURG CITY have\l"
+	.string "become a lot tougher.$"
 
 PetalburgCity_Gym_Text_MaryIntro:
-	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
-	.string "nomes antigos desapareceram\nquando elas chegaram.$"
+	.string "Giggle…\n"
+	.string "This is the ACCURACY ROOM.\p"
+	.string "It's pretty nasty when every attack\n"
+	.string "lands without fail.$"
 
 PetalburgCity_Gym_Text_MaryDefeat:
-	.string "Tem gente que chama de\nDESENCANTO. Eu chamava de\p"
-	.string "distraicao, ate minha mae\nesquecer a cancao que cantava\p"
-	.string "desde crianca.$"
+	.string "You were a cut above me…$"
 
 PetalburgCity_Gym_Text_MaryPostBattle:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "There are some even stronger\n"
+	.string "TRAINERS waiting for you.\p"
+	.string "The left is the DEFENSE ROOM, and\n"
+	.string "the right is the RECOVERY ROOM.\p"
+	.string "Your POKéMON's ATTACK power will be\n"
+	.string "on trial either way.$"
 
 PetalburgCity_Gym_Text_MaryPostBadge:
-	.string "Voce vai continuar mesmo\nsabendo que PAMPA DA ESPERA\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "Do you know what we're trying to\n"
+	.string "achieve as TRAINERS?\p"
+	.string "We're striving to become soul mates\n"
+	.string "with our POKéMON.$"
 
 PetalburgCity_Gym_Text_AlexiaIntro:
-	.string "O HORIZONTE consertou a estrada\ndaqui. Nao sei se isso torna\p"
-	.string "mais facil perguntar o que\nexiste debaixo dela.$"
+	.string "The higher the DEFENSE, the more\n"
+	.string "reckless I can be in attack.$"
 
 PetalburgCity_Gym_Text_AlexiaDefeat:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "Our defenses weren't enough…$"
 
 PetalburgCity_Gym_Text_AlexiaPostBattle:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "I think you've taught me a valuable\n"
+	.string "lesson here.\p"
+	.string "Now, go on! The left door goes to\n"
+	.string "the STRENGTH ROOM.\p"
+	.string "The right door opens to\n"
+	.string "the ONE-HIT KO ROOM.\p"
+	.string "Both of them have TRAINERS who are\n"
+	.string "skilled at offense.$"
 
 PetalburgCity_Gym_Text_AlexiaPostBadge:
-	.string "Voce vai continuar mesmo\nsabendo que PAMPA DA ESPERA\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "Hi! Have you tried using SURF?$"
 
 PetalburgCity_Gym_Text_JodyIntro:
-	.string "Tem gente que chama de\nDESENCANTO. Eu chamava de\p"
-	.string "distraicao, ate minha mae\nesquecer a cancao que cantava\p"
-	.string "desde crianca.$"
+	.string "Our GYM LEADER told us to go all out\n"
+	.string "and beat you.\p"
+	.string "Even if you happen to be the\n"
+	.string "LEADER's kid!$"
 
 PetalburgCity_Gym_Text_JodyDefeat:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "But… I went all out!$"
 
 PetalburgCity_Gym_Text_JodyPostBattle:
-	.string "Tem gente que chama de\nDESENCANTO. Eu chamava de\p"
-	.string "distraicao, ate minha mae\nesquecer a cancao que cantava\p"
-	.string "desde crianca.$"
+	.string "The way you use your POKéMON…\n"
+	.string "It's like your father's style.\p"
+	.string "Go on through! The GYM LEADER, your\n"
+	.string "father, is waiting!$"
 
 PetalburgCity_Gym_Text_JodyPostBadge:
-	.string "Voce vai continuar mesmo\nsabendo que PAMPA DA ESPERA\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "Sure, it's fine to make your POKéMON\n"
+	.string "stronger.\p"
+	.string "But what decides the winner?\p"
+	.string "Why, it's the feelings TRAINERS have\n"
+	.string "for their POKéMON.$"
 
 PetalburgCity_Gym_Text_DoorAppearsLocked:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "This door appears to be locked\n"
+	.string "right now…$"
 
 PetalburgCity_Gym_Text_EnterSpeedRoom:
-	.string "Voce vai continuar mesmo\nsabendo que PAMPA DA ESPERA\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "“SPEED ROOM,” the sign says.\p"
+	.string "Do you want to go through?$"
 
 @ Unused
 PetalburgCity_Gym_Text_DoorAppearsLocked2:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "This door appears to be locked\n"
+	.string "right now…$"
 
 PetalburgCity_Gym_Text_EnterAccuracyRoom:
-	.string "Voce vai continuar mesmo\nsabendo que PAMPA DA ESPERA\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "“ACCURACY ROOM,” the sign says.\p"
+	.string "Do you want to go through?$"
 
 PetalburgCity_Gym_Text_EnterConfusionRoom:
-	.string "Voce vai continuar mesmo\nsabendo que PAMPA DA ESPERA\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "“CONFUSION ROOM,” the sign says.\p"
+	.string "Do you want to go through?$"
 
 PetalburgCity_Gym_Text_EnterDefenseRoom:
-	.string "Voce vai continuar mesmo\nsabendo que PAMPA DA ESPERA\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "“DEFENSE ROOM,” the sign says.\p"
+	.string "Do you want to go through?$"
 
 PetalburgCity_Gym_Text_EnterRecoveryRoom:
-	.string "Voce vai continuar mesmo\nsabendo que PAMPA DA ESPERA\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "“RECOVERY ROOM,” the sign says.\p"
+	.string "Do you want to go through?$"
 
 PetalburgCity_Gym_Text_EnterStrengthRoom:
-	.string "Voce vai continuar mesmo\nsabendo que PAMPA DA ESPERA\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "“STRENGTH ROOM,” the sign says.\p"
+	.string "Do you want to go through?$"
 
 PetalburgCity_Gym_Text_EnterOHKORoom:
-	.string "Voce vai continuar mesmo\nsabendo que PAMPA DA ESPERA\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "“ONE-HIT KO ROOM,” the sign says.\p"
+	.string "Do you want to go through?$"
 
 PetalburgCity_Gym_Text_EnterGymLeadersRoom:
-	.string "Voce vai continuar mesmo\nsabendo que PAMPA DA ESPERA\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "“GYM LEADER'S ROOM\p"
+	.string "“See for yourself what POKéMON await\n"
+	.string "you!” the sign says.\p"
+	.string "Do you want to go through?$"
 
 PetalburgCity_Gym_Text_GymStatue:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "PETALBURG CITY POKéMON GYM$"
 
 PetalburgCity_Gym_Text_GymStatueCertified:
-	.string "ELIAS: Algumas culpas nao\ndesaparecem quando ficamos em\p"
-	.string "silencio. Eu aprovei parte do\nprojeto de M'BOI. Passei anos\p"
-	.string "chamando meu medo de prudencia.$"
+	.string "PETALBURG CITY POKéMON GYM\p"
+	.string "NORMAN'S CERTIFIED TRAINERS:\n"
+	.string "{PLAYER}$"
 
 PetalburgCity_Gym_Text_NormanPreRematch:
-	.string "ELIAS: Algumas culpas nao\ndesaparecem quando ficamos em\p"
-	.string "silencio. Eu aprovei parte do\nprojeto de M'BOI. Passei anos\p"
-	.string "chamando meu medo de prudencia.$"
+	.string "ELIAS: Ser seu pai nunca me deu\no direito de escolher que\p"
+	.string "verdade voce podia suportar.\nDemorei demais para entender\p"
+	.string "isso.$"
 
 PetalburgCity_Gym_Text_NormanRematchDefeat:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "ELIAS: Ser seu pai nunca me deu\no direito de escolher que\p"
+	.string "verdade voce podia suportar.\nDemorei demais para entender\p"
+	.string "isso.$"
 
 PetalburgCity_Gym_Text_NormanPostRematch:
-	.string "ELIAS: Algumas culpas nao\ndesaparecem quando ficamos em\p"
-	.string "silencio. Eu aprovei parte do\nprojeto de M'BOI. Passei anos\p"
-	.string "chamando meu medo de prudencia.$"
+	.string "ELIAS: Ser seu pai nunca me deu\no direito de escolher que\p"
+	.string "verdade voce podia suportar.\nDemorei demais para entender\p"
+	.string "isso.$"
 
 PetalburgCity_Gym_Text_NormanRematchNeedTwoMons:
 	.string "ELIAS: Algumas culpas nao\ndesaparecem quando ficamos em\p"
-	.string "silencio. Eu aprovei parte do\nprojeto de M'BOI. Passei anos\p"
+	.string "silencio. Eu aprovei parte do\nprojeto de M'BOI e passei anos\p"
 	.string "chamando meu medo de prudencia.$"
 

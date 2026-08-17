@@ -12,28 +12,28 @@ MagmaHideout_3F_1R_EventScript_Grunt16::
 	end
 
 MagmaHideout_3F_1R_Text_Grunt9Intro:
-	.string "LEMBRANTE: Apagar uma historia\nporque ela incomoda quem manda\p"
-	.string "e apenas outra forma de\nviolencia.$"
+	.string "LEMBRANTE: Guardar um nome pode\nser resistencia. Obrigar alguem\p"
+	.string "a reviver tudo tambem pode ser\nviolencia.$"
 
 MagmaHideout_3F_1R_Text_Grunt9Defeat:
-	.string "LEMBRANTE: Apagar uma historia\nporque ela incomoda quem manda\p"
-	.string "e apenas outra forma de\nviolencia.$"
+	.string "LEMBRANTE: O HORIZONTE quer uma\nArauna estavel. Eu quero uma\p"
+	.string "Arauna que saiba por que suas\nruinas existem.$"
 
 MagmaHideout_3F_1R_Text_Grunt9PostBattle:
-	.string "LEMBRANTE: Apagar uma historia\nporque ela incomoda quem manda\p"
-	.string "e apenas outra forma de\nviolencia.$"
+	.string "LEMBRANTE: Se uma historia\nincomoda quem manda, ela vira\p"
+	.string "'ruido', depois 'trauma',\ndepois desaparece do registro.$"
 
 MagmaHideout_3F_1R_Text_Grunt16Intro:
-	.string "HORIZONTE: O Arquivo preserva o\nque o tempo destruiria. Um dia\p"
-	.string "voces vao agradecer por nao\nprecisarem mais sofrer para\p"
-	.string "lembrar.$"
+	.string "LEMBRANTE: LUZIA diz que\nmemoria devolvida sem permissao\p"
+	.string "ainda e melhor que memoria\nroubada. Nem todos aqui\p"
+	.string "concordam com essa parte.$"
 
 MagmaHideout_3F_1R_Text_Grunt16Defeat:
-	.string "LEMBRANTE: Apagar uma historia\nporque ela incomoda quem manda\p"
-	.string "e apenas outra forma de\nviolencia.$"
+	.string "LEMBRANTE: LUZIA diz que\nmemoria devolvida sem permissao\p"
+	.string "ainda e melhor que memoria\nroubada. Nem todos aqui\p"
+	.string "concordam com essa parte.$"
 
 MagmaHideout_3F_1R_Text_Grunt16PostBattle:
-	.string "HORIZONTE: O Arquivo preserva o\nque o tempo destruiria. Um dia\p"
-	.string "voces vao agradecer por nao\nprecisarem mais sofrer para\p"
-	.string "lembrar.$"
+	.string "LEMBRANTE: Se uma historia\nincomoda quem manda, ela vira\p"
+	.string "'ruido', depois 'trauma',\ndepois desaparece do registro.$"
 

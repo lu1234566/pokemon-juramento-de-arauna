@@ -87,66 +87,66 @@ AquaHideout_B2F_EventScript_Grunt8::
 	end
 
 AquaHideout_B2F_Text_MattIntro:
-	.string "HORIZONTE: O Arquivo preserva o\nque o tempo destruiria. Um dia\p"
-	.string "voces vao agradecer por nao\nprecisarem mais sofrer para\p"
-	.string "lembrar.$"
+	.string "Hehehe…\p"
+	.string "Got here already, did you?\n"
+	.string "We underestimated you!\p"
+	.string "But this is it!\p"
+	.string "I'm a cut above the GRUNTS you've seen\n"
+	.string "so far.\p"
+	.string "I'm not stalling for time.\n"
+	.string "I'm going to pulverize you!$"
 
 AquaHideout_B2F_Text_MattDefeat:
-	.string "HORIZONTE: O Arquivo preserva o\nque o tempo destruiria. Um dia\p"
-	.string "voces vao agradecer por nao\nprecisarem mais sofrer para\p"
-	.string "lembrar.$"
+	.string "Hehehe…\n"
+	.string "So, I lost, too…$"
 
 AquaHideout_B2F_Text_OurBossGotThroughHisPreparations:
-	.string "HORIZONTE: O Arquivo preserva o\nque o tempo destruiria. Um dia\p"
-	.string "voces vao agradecer por nao\nprecisarem mais sofrer para\p"
-	.string "lembrar.$"
+	.string "HORIZONTE: O ARQUIVO VIVO nao\napaga pessoas. Ele separa\p"
+	.string "trauma de identidade. Pelo\nmenos e isso que nos ensinaram.$"
 
 AquaHideout_B2F_Text_MattPostBattle:
-	.string "HORIZONTE: O Arquivo preserva o\nque o tempo destruiria. Um dia\p"
-	.string "voces vao agradecer por nao\nprecisarem mais sofrer para\p"
-	.string "lembrar.$"
+	.string "Hehehe!\p"
+	.string "Our BOSS has already gone on his way to\n"
+	.string "some cave under the sea!\p"
+	.string "If you're going to give chase, you'd\n"
+	.string "better search the big, wide sea beyond\l"
+	.string "LILYCOVE.\p"
+	.string "But will you find it then?\n"
+	.string "Hehehe!$"
 
 AquaHideout_B2F_Text_Grunt4Intro:
-	.string "HORIZONTE: O Arquivo preserva o\nque o tempo destruiria. Um dia\p"
-	.string "voces vao agradecer por nao\nprecisarem mais sofrer para\p"
-	.string "lembrar.$"
+	.string "HORIZONTE: Os sensores detectam\nVINCULOS instaveis antes do\p"
+	.string "DESENCANTO completo. Isso pode\nsalvar familias inteiras.$"
 
 AquaHideout_B2F_Text_Grunt4Defeat:
-	.string "HORIZONTE: O Arquivo preserva o\nque o tempo destruiria. Um dia\p"
-	.string "voces vao agradecer por nao\nprecisarem mais sofrer para\p"
-	.string "lembrar.$"
+	.string "HORIZONTE: Nao somos soldados.\nSomos tecnicos, guardas e\p"
+	.string "pesquisadores. Isso nao torna\ntodas as nossas ordens certas.$"
 
 AquaHideout_B2F_Text_Grunt4PostBattle:
-	.string "HORIZONTE: O Arquivo preserva o\nque o tempo destruiria. Um dia\p"
-	.string "voces vao agradecer por nao\nprecisarem mais sofrer para\p"
-	.string "lembrar.$"
+	.string "HORIZONTE: O projeto de M'BOI\nfoi um desastre. O ARQUIVO\p"
+	.string "atual existe justamente porque\naprendemos com ele. E o que\p"
+	.string "consta nos relatorios.$"
 
 AquaHideout_B2F_Text_Grunt6Intro:
-	.string "HORIZONTE: O Arquivo preserva o\nque o tempo destruiria. Um dia\p"
-	.string "voces vao agradecer por nao\nprecisarem mais sofrer para\p"
-	.string "lembrar.$"
+	.string "HORIZONTE: Nao somos soldados.\nSomos tecnicos, guardas e\p"
+	.string "pesquisadores. Isso nao torna\ntodas as nossas ordens certas.$"
 
 AquaHideout_B2F_Text_Grunt6Defeat:
-	.string "HORIZONTE: O Arquivo preserva o\nque o tempo destruiria. Um dia\p"
-	.string "voces vao agradecer por nao\nprecisarem mais sofrer para\p"
-	.string "lembrar.$"
+	.string "HORIZONTE: Os sensores detectam\nVINCULOS instaveis antes do\p"
+	.string "DESENCANTO completo. Isso pode\nsalvar familias inteiras.$"
 
 AquaHideout_B2F_Text_Grunt6PostBattle:
-	.string "HORIZONTE: O Arquivo preserva o\nque o tempo destruiria. Um dia\p"
-	.string "voces vao agradecer por nao\nprecisarem mais sofrer para\p"
-	.string "lembrar.$"
+	.string "HORIZONTE: OTACILIO diz que\nmemoria sem escolha e outra\p"
+	.string "forma de prisao. Eu ainda estou\ntentando decidir se concordo.$"
 
 AquaHideout_B2F_Text_Grunt8Intro:
-	.string "HORIZONTE: O Arquivo preserva o\nque o tempo destruiria. Um dia\p"
-	.string "voces vao agradecer por nao\nprecisarem mais sofrer para\p"
-	.string "lembrar.$"
+	.string "HORIZONTE: O ARQUIVO VIVO nao\napaga pessoas. Ele separa\p"
+	.string "trauma de identidade. Pelo\nmenos e isso que nos ensinaram.$"
 
 AquaHideout_B2F_Text_Grunt8Defeat:
-	.string "HORIZONTE: O Arquivo preserva o\nque o tempo destruiria. Um dia\p"
-	.string "voces vao agradecer por nao\nprecisarem mais sofrer para\p"
-	.string "lembrar.$"
+	.string "HORIZONTE: Nao somos soldados.\nSomos tecnicos, guardas e\p"
+	.string "pesquisadores. Isso nao torna\ntodas as nossas ordens certas.$"
 
 AquaHideout_B2F_Text_Grunt8PostBattle:
-	.string "HORIZONTE: O Arquivo preserva o\nque o tempo destruiria. Um dia\p"
-	.string "voces vao agradecer por nao\nprecisarem mais sofrer para\p"
-	.string "lembrar.$"
+	.string "HORIZONTE: Os sensores detectam\nVINCULOS instaveis antes do\p"
+	.string "DESENCANTO completo. Isso pode\nsalvar familias inteiras.$"

@@ -216,76 +216,72 @@ SeafloorCavern_Room9_Movement_Delay32:
 	step_end
 
 SeafloorCavern_Room9_Text_ArchieHoldItRightThere:
-	.string "OTACILIO: Eu nao quero poder.\nQuero um mundo em que nenhuma\p"
-	.string "pessoa seja obrigada a carregar\npara sempre a pior coisa que ja\p"
-	.string "viveu.$"
+	.string "OTACILIO: Eu vi o que uma\nmemoria pode fazer com quem\p"
+	.string "sobrevive. O ARQUIVO VIVO\nexiste para que ninguem seja\p"
+	.string "condenado a carregar a pior\nnoite da propria vida para\p"
+	.string "sempre.$"
 
 SeafloorCavern_Room9_Text_ArchieSoItWasYou:
-	.string "OTACILIO: Eu nao quero poder.\nQuero um mundo em que nenhuma\p"
-	.string "pessoa seja obrigada a carregar\npara sempre a pior coisa que ja\p"
-	.string "viveu.$"
+	.string "OTACILIO: M'BOI me ensinou que\nlembrar tambem pode destruir.\p"
+	.string "Eu me recuso a aceitar que\nsofrimento seja sagrado so\p"
+	.string "porque aconteceu.$"
 
 SeafloorCavern_Room9_Text_ArchieBeholdKyogre:
-	.string "OTACILIO: Eu nao quero poder.\nQuero um mundo em que nenhuma\p"
-	.string "pessoa seja obrigada a carregar\npara sempre a pior coisa que ja\p"
-	.string "viveu.$"
+	.string "O ARQUIVO reage como se memoria\ne esquecimento fossem forcas\p"
+	.string "fisicas. Pela primeira vez fica\nclaro que ele nunca esteve\p"
+	.string "realmente sob controle humano.$"
 
 SeafloorCavern_Room9_Text_ArchieYouMustDisappear:
-	.string "OTACILIO: Eu nao quero poder.\nQuero um mundo em que nenhuma\p"
-	.string "pessoa seja obrigada a carregar\npara sempre a pior coisa que ja\p"
-	.string "viveu.$"
+	.string "OTACILIO: M'BOI me ensinou que\nlembrar tambem pode destruir.\p"
+	.string "Eu me recuso a aceitar que\nsofrimento seja sagrado so\p"
+	.string "porque aconteceu.$"
 
 SeafloorCavern_Room9_Text_ArchieDefeat:
-	.string "OTACILIO: Eu nao quero poder.\nQuero um mundo em que nenhuma\p"
-	.string "pessoa seja obrigada a carregar\npara sempre a pior coisa que ja\p"
-	.string "viveu.$"
+	.string "OTACILIO: Preservar tudo nao e\ncompaixao. As vezes e apenas\p"
+	.string "obrigar uma ferida a continuar\naberta e chamar isso de\p"
+	.string "respeito.$"
 
 SeafloorCavern_Room9_Text_ArchieWithThisRedOrb:
-	.string "OTACILIO: Eu nao quero poder.\nQuero um mundo em que nenhuma\p"
-	.string "pessoa seja obrigada a carregar\npara sempre a pior coisa que ja\p"
-	.string "viveu.$"
+	.string "Os sensores enlouquecem. As\ncavernas de M'BOI ainda\p"
+	.string "carregam VINCULOS que o ARQUIVO\nnunca conseguiu classificar.$"
 
 SeafloorCavern_Room9_Text_RedOrbShinesByItself:
-	.string "Os sensores registram duas\ncorrentes antigas sob Arauna:\p"
-	.string "uma conserva VINCULOS; a outra\npermite que eles terminem. O\p"
-	.string "Arquivo tentou transformar\nambas em ferramentas.$"
+	.string "O ARQUIVO reage como se memoria\ne esquecimento fossem forcas\p"
+	.string "fisicas. Pela primeira vez fica\nclaro que ele nunca esteve\p"
+	.string "realmente sob controle humano.$"
 
 SeafloorCavern_Room9_Text_ArchieWhereDidKyogreGo:
-	.string "OTACILIO: Eu nao quero poder.\nQuero um mundo em que nenhuma\p"
-	.string "pessoa seja obrigada a carregar\npara sempre a pior coisa que ja\p"
-	.string "viveu.$"
+	.string "Os sensores enlouquecem. As\ncavernas de M'BOI ainda\p"
+	.string "carregam VINCULOS que o ARQUIVO\nnunca conseguiu classificar.$"
 
 SeafloorCavern_Room9_Text_ArchieAMessageFromOutside:
-	.string "OTACILIO: Eu nao quero poder.\nQuero um mundo em que nenhuma\p"
-	.string "pessoa seja obrigada a carregar\npara sempre a pior coisa que ja\p"
-	.string "viveu.$"
+	.string "OTACILIO: M'BOI me ensinou que\nlembrar tambem pode destruir.\p"
+	.string "Eu me recuso a aceitar que\nsofrimento seja sagrado so\p"
+	.string "porque aconteceu.$"
 
 SeafloorCavern_Room9_Text_ArchieWhatRainingTooHard:
-	.string "OTACILIO: Eu nao quero poder.\nQuero um mundo em que nenhuma\p"
-	.string "pessoa seja obrigada a carregar\npara sempre a pior coisa que ja\p"
-	.string "viveu.$"
+	.string "Os sensores enlouquecem. As\ncavernas de M'BOI ainda\p"
+	.string "carregam VINCULOS que o ARQUIVO\nnunca conseguiu classificar.$"
 
 SeafloorCavern_Room9_Text_ArchieWhyDidKyogreDisappear:
-	.string "OTACILIO: Eu nao quero poder.\nQuero um mundo em que nenhuma\p"
-	.string "pessoa seja obrigada a carregar\npara sempre a pior coisa que ja\p"
-	.string "viveu.$"
+	.string "Gravacoes antigas misturam\nordens de evacuacao, pedidos de\p"
+	.string "socorro e trechos que alguem\nmarcou para exclusao.$"
 
 SeafloorCavern_Room9_Text_MaxieWhatHaveYouWrought:
-	.string "OTACILIO: Eu nao quero poder.\nQuero um mundo em que nenhuma\p"
-	.string "pessoa seja obrigada a carregar\npara sempre a pior coisa que ja\p"
-	.string "viveu.$"
+	.string "OTACILIO e LUZIA chegaram ao\nmesmo lugar por razoes opostas:\p"
+	.string "um quer encerrar a dor; a outra\nquer devolver tudo. Nenhum\p"
+	.string "perguntou a quem tera de viver\ncom a escolha.$"
 
 SeafloorCavern_Room9_Text_ArchieDontGetAllHighAndMighty:
-	.string "OTACILIO: Eu nao quero poder.\nQuero um mundo em que nenhuma\p"
-	.string "pessoa seja obrigada a carregar\npara sempre a pior coisa que ja\p"
-	.string "viveu.$"
+	.string "Gravacoes antigas misturam\nordens de evacuacao, pedidos de\p"
+	.string "socorro e trechos que alguem\nmarcou para exclusao.$"
 
 SeafloorCavern_Room9_Text_MaxieWeDontHaveTimeToArgue:
-	.string "LUZIA: Ninguem tem o direito de\nescolher que memoria merece\p"
-	.string "morrer. Se for preciso devolver\ntoda a dor de uma vez, eu vou\p"
-	.string "devolver.$"
+	.string "LUZIA: O problema nunca foi\nlembrar demais. Foi deixar quem\p"
+	.string "tem poder decidir quais\nlembrancas os outros podem\p"
+	.string "conservar.$"
 
 SeafloorCavern_Room9_Text_MaxieComeOnPlayer:
 	.string "LUZIA: Ninguem tem o direito de\nescolher que memoria merece\p"
-	.string "morrer. Se for preciso devolver\ntoda a dor de uma vez, eu vou\p"
-	.string "devolver.$"
+	.string "morrer. O HORIZONTE chama\ncensura de tratamento porque a\p"
+	.string "palavra soa mais limpa.$"

@@ -565,17 +565,12 @@ MossdeepCity_Gym_Text_ExplainMindBadgeTakeThis:
 	.string "TATE: You should also take this, too.$"
 
 MossdeepCity_Gym_Text_ExplainCalmMind:
-	.string "TATE: That TM04 contains…\n"
-	.string "LIZA: CALM MIND!\p"
-	.string "TATE: It raises SP. ATK and…\n"
-	.string "LIZA: It raises SP. DEF!\p"
-	.string "TATE: It's a move that's perfect…\n"
-	.string "LIZA: For PSYCHIC POKéMON!\p"
-	.string "… … … … … …$"
-
-MossdeepCity_Gym_Text_RegisteredTateAndLiza:
 	.string "CECILIA: Do alto, cidades\nparecem pequenas. As vidas\p"
 	.string "dentro delas nunca sao.$"
+
+MossdeepCity_Gym_Text_RegisteredTateAndLiza:
+	.string "Registered GYM LEADERS TATE & LIZA\n"
+	.string "in the POKéNAV.$"
 
 MossdeepCity_Gym_Text_TateAndLizaPostBattle:
 	.string "CECILIA: Do alto, cidades\nparecem pequenas. As vidas\p"
