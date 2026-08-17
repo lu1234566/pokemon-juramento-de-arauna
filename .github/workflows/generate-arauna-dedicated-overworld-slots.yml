@@ -1,0 +1,64 @@
+name: Generate Arauna dedicated overworld slots
+
+on:
+  push:
+    branches:
+      - visual/arauna-dedicated-overworld-slots-2026-08-17
+
+permissions:
+  contents: write
+
+jobs:
+  generate-and-validate:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install build dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gcc-arm-none-eabi binutils-arm-none-eabi libpng-dev
+
+      - name: Apply dedicated Arauna graphics slots
+        run: python3 tools/apply_arauna_dedicated_overworld_slots.py
+
+      - name: Report inherited rival graphics placements
+        run: |
+          echo "=== Rival normal graphics references in map data ==="
+          grep -R -n -E 'OBJ_EVENT_GFX_RIVAL_(BRENDAN|MAY)_NORMAL' data/maps || true
+          echo "=== New Arauna slot constants ==="
+          grep -n -E 'OBJ_EVENT_GFX_(DONA_ZILA|CIRO_CONSORCIO|CIRO_FINAL)' include/constants/event_objects.h
+
+      - name: Validate generated scope
+        run: |
+          test -s graphics/object_events/pics/people/dona_zila.png
+          test -s graphics/object_events/pics/people/ciro/phase2.png
+          test -s graphics/object_events/pics/people/ciro/phase3.png
+          git diff --check
+
+      - name: Build custom Emerald ROM
+        env:
+          MODERN: 1
+          COMPARE: 0
+        run: make -j2 all
+
+      - name: Publish validated implementation to branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm -f tools/apply_arauna_dedicated_overworld_slots.py
+          git rm -f .github/workflows/generate-arauna-dedicated-overworld-slots.yml
+          git add include/constants/event_objects.h \
+                  src/data/object_events/object_event_graphics.h \
+                  src/data/object_events/object_event_pic_tables.h \
+                  src/data/object_events/object_event_graphics_info.h \
+                  graphics/object_events/pics/people/dona_zila.png \
+                  graphics/object_events/pics/people/ciro/phase2.png \
+                  graphics/object_events/pics/people/ciro/phase3.png \
+                  docs/ARAUNA_DEDICATED_GFX_SLOTS.md
+          git commit -m "Add dedicated overworld slots for Zila and Ciro phases"
+          git push origin HEAD:${GITHUB_REF_NAME}
