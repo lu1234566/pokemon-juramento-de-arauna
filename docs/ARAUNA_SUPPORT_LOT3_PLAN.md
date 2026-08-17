@@ -16,3 +16,5 @@ Targeted placements preserve coordinates, scripts, flags, movement and trainer m
 - Seafloor Cavern Room 3 Shelly event → the same Arquivo Vivo administrator, preserving her recurring identity
 
 The generic Consórcio/HORIZONTE and Lembrantes grunt families remain untouched by these dedicated IDs. `NUM_OBJ_EVENT_GFX` and Emerald's one-byte graphics-ID format remain unchanged.
+
+The generated implementation passed a full custom Emerald ROM build before publication to the PR branch.
