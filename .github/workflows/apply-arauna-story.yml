@@ -64,9 +64,31 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y gcc-arm-none-eabi binutils-arm-none-eabi libpng-dev
 
-      - name: Build rewritten story
+      - name: Build rewritten story with diagnostics
+        id: build
         shell: bash
-        run: make -j2 MODERN=1 COMPARE=0
+        run: |
+          set +e
+          make -j2 MODERN=1 COMPARE=0 > arauna-build.log 2>&1
+          STATUS=$?
+          echo "status=$STATUS" >> "$GITHUB_OUTPUT"
+          echo '===== BUILD LOG TAIL ====='
+          tail -n 250 arauna-build.log || true
+          exit 0
+
+      - name: Upload build diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: arauna-story-build-log
+          path: arauna-build.log
+          if-no-files-found: error
+          retention-days: 7
+
+      - name: Require successful build
+        shell: bash
+        run: |
+          test '${{ steps.build.outputs.status }}' = '0'
 
       - name: Publish story to main
         shell: bash
