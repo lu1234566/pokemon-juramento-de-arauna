@@ -1,0 +1,83 @@
+name: Apply Arauna semantic story rewrite
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/apply-arauna-story-semantic.yml
+      - tools/run_arauna_story_safe.py
+
+permissions:
+  contents: write
+
+jobs:
+  rewrite-story-semantic:
+    if: github.repository == 'lu1234566/pokemon-juramento-de-arauna'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout current main
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Restore pristine pre-story map scripts
+        shell: bash
+        run: |
+          set -euo pipefail
+          BACKUP_REF='archive/pre-story-rewrite-2026-08-17'
+          git fetch origin "$BACKUP_REF"
+          git checkout FETCH_HEAD -- data/maps
+
+      - name: Apply semantic Arauna narrative
+        run: python3 tools/run_arauna_story_safe.py
+
+      - name: Validate semantics and placeholders
+        shell: bash
+        run: |
+          set -euo pipefail
+          git diff --check
+          grep -R -q 'OTACILIO' data/maps
+          grep -R -q 'DESENCANTO' data/maps
+          grep -R -q 'CONSORCIO HORIZONTE' data/maps
+          grep -R -q 'CIRO' data/maps
+          grep -R -q 'ANAHI' data/maps
+
+          NON_TEXT_CHANGES="$(git diff --unified=0 -- data/maps | grep -E '^[+-]' | grep -v -E '^(---|\+\+\+|[+-][[:space:]]*\.string )' || true)"
+          if [ -n "$NON_TEXT_CHANGES" ]; then
+            echo 'Refusing to publish: non-dialogue map-script changes detected.'
+            echo "$NON_TEXT_CHANGES"
+            exit 1
+          fi
+
+          LAB='data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc'
+          grep -A2 'Text_ReceivedPokedex:' "$LAB" | grep -q 'recebeu a POKéDEX'
+          grep -A2 'Text_OhYourBagsFull:' "$LAB" | grep -q 'BOLSA esta cheia'
+          grep -A3 'Text_SeriousLookingMachine:' "$LAB" | grep -q 'sensor de VINCULO'
+          grep -A3 'Text_WhyNotGiveNicknameToMon:' "$LAB" | grep -q '{STR_VAR_1}'
+          if grep -A1 'Text_ReceivedPokedex:' "$LAB" | grep -q 'ANAHI:'; then
+            echo 'Regression: system reward text was overwritten as character dialogue.'
+            exit 1
+          fi
+
+      - name: Install build dependencies
+        shell: bash
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gcc-arm-none-eabi binutils-arm-none-eabi libpng-dev
+
+      - name: Build semantic story
+        shell: bash
+        run: make -j2 MODERN=1 COMPARE=0
+
+      - name: Publish validated semantic story commit
+        shell: bash
+        run: |
+          set -euo pipefail
+          TARGET_REF='generated/arauna-story-semantic-2026-08-17'
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/maps docs/ARAUANA_STORY_IMPLEMENTATION.md
+          git commit -m 'Refine Arauna narrative while preserving functional dialogue'
+          git push origin HEAD:"$TARGET_REF" --force
