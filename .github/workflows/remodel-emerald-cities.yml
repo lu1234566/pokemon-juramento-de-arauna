@@ -1,0 +1,65 @@
+name: Remodel Hoenn cities from vanilla Emerald assets
+
+on:
+  push:
+    paths:
+      - .github/workflows/remodel-emerald-cities.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  remodel:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          persist-credentials: true
+
+      - name: Remodel all canonical Hoenn settlements
+        run: python3 tools/remodel_emerald_cities.py
+
+      - name: Validate changed scope and JSON
+        shell: bash
+        run: |
+          set -euo pipefail
+          git diff --check
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          cities = [
+              'LittlerootTown','OldaleTown','PetalburgCity','RustboroCity',
+              'DewfordTown','SlateportCity','MauvilleCity','VerdanturfTown',
+              'FallarborTown','LavaridgeTown','FortreeCity','LilycoveCity',
+              'MossdeepCity','SootopolisCity','PacifidlogTown','EverGrandeCity'
+          ]
+          for city in cities:
+              json.loads(Path(f'data/maps/{city}/map.json').read_text())
+              p = Path(f'data/layouts/{city}/map.bin')
+              assert p.exists() and p.stat().st_size > 0, city
+          print('16/16 city map JSON and blockdata files validated')
+          PY
+
+      - name: Install modern build dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gcc-arm-none-eabi binutils-arm-none-eabi libpng-dev
+
+      - name: Build Emerald after remodel
+        env:
+          MODERN: 1
+          COMPARE: 0
+        run: make -j2 all
+
+      - name: Commit remodeled cities
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/layouts data/maps docs/EMERALD_CITY_REMODEL.md
+          git commit -m 'Remodel all Hoenn cities with vanilla Emerald tiles'
+          git push origin HEAD:main
