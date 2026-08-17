@@ -91,6 +91,11 @@
 #define OBJ_EVENT_GFX_UNUSED_WOOPER_DOLL          79
 #define OBJ_EVENT_GFX_UNUSED_PIKACHU_DOLL         80
 #define OBJ_EVENT_GFX_UNUSED_PORYGON2_DOLL        81
+
+// Arauna dedicated support-character slots: reclaim vanilla IDs marked unused.
+#define OBJ_EVENT_GFX_VAL_EVOLUIDO              OBJ_EVENT_GFX_UNUSED_WOOPER_DOLL
+#define OBJ_EVENT_GFX_ADMIN_CAMPO                OBJ_EVENT_GFX_UNUSED_PIKACHU_DOLL
+#define OBJ_EVENT_GFX_ADMIN_ARQUIVO              OBJ_EVENT_GFX_UNUSED_PORYGON2_DOLL
 #define OBJ_EVENT_GFX_CUTTABLE_TREE               82
 #define OBJ_EVENT_GFX_MART_EMPLOYEE               83
 #define OBJ_EVENT_GFX_ROOFTOP_SALE_WOMAN          84
