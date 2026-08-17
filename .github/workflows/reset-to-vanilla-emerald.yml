@@ -1,4 +1,4 @@
-name: Reset to exact vanilla Pokemon Emerald tree
+name: Prepare exact vanilla Pokemon Emerald tree
 
 on:
   push:
@@ -17,7 +17,7 @@ jobs:
       - name: Checkout current project
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          fetch-depth: 1
           persist-credentials: true
 
       - name: Preserve pre-reset state
@@ -27,7 +27,7 @@ jobs:
           git branch -f archive/pre-emerald-reset-2026-08-17 "$GITHUB_SHA"
           git push origin archive/pre-emerald-reset-2026-08-17 --force
 
-      - name: Create exact vanilla Emerald commit
+      - name: Create vanilla branch while preserving current workflow temporarily
         shell: bash
         run: |
           set -euo pipefail
@@ -37,14 +37,24 @@ jobs:
           git fetch --depth=1 https://github.com/pret/pokeemerald.git master
           UPSTREAM_COMMIT="$(git rev-parse FETCH_HEAD)"
           UPSTREAM_TREE="$(git rev-parse "${UPSTREAM_COMMIT}^{tree}")"
-
           test "$UPSTREAM_TREE" = '426e47d31e5f02d966772e38265b46cb5f65e81f'
           git show "${UPSTREAM_COMMIT}:rom.sha1" | grep -F 'f3ae088181bf583e55daf962a92bb46f4f1d07b7'
           git show "${UPSTREAM_COMMIT}:README.md" | grep -F 'Pokémon Emerald'
 
-          RESET_COMMIT="$(printf '%s\n' 'Reset project to vanilla Pokemon Emerald' | git commit-tree "$UPSTREAM_TREE" -p "$GITHUB_SHA")"
+          export GIT_INDEX_FILE="$RUNNER_TEMP/vanilla-index"
+          rm -f "$GIT_INDEX_FILE"
+          git read-tree "$UPSTREAM_TREE"
+          git rm --cached --ignore-unmatch .github/workflows/build.yml
+
+          CURRENT_WORKFLOW_BLOB="$(git rev-parse "$GITHUB_SHA:.github/workflows/reset-to-vanilla-emerald.yml")"
+          git update-index --add --cacheinfo 100644,"$CURRENT_WORKFLOW_BLOB",.github/workflows/reset-to-vanilla-emerald.yml
+          PREP_TREE="$(git write-tree)"
+          unset GIT_INDEX_FILE
+
+          RESET_COMMIT="$(printf '%s\n' 'Reset project to vanilla Pokemon Emerald' | git commit-tree "$PREP_TREE" -p "$GITHUB_SHA")"
           echo "Vanilla commit: $UPSTREAM_COMMIT"
           echo "Vanilla tree:   $UPSTREAM_TREE"
+          echo "Prepared tree:  $PREP_TREE"
           echo "Reset commit:   $RESET_COMMIT"
 
           git push origin "${RESET_COMMIT}:refs/heads/reset/vanilla-emerald" --force
