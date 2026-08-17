@@ -874,15 +874,39 @@ static const struct SpriteFrameImage sPicTable_MauvilleOldMan2[] = {
 };
 
 static const struct SpriteFrameImage sPicTable_UnusedNatuDoll[] = {
-    obj_frame_tiles(gObjectEventPic_UnusedNatuDoll),
+    overworld_frame(gObjectEventPic_UnusedNatuDoll, 2, 4, 0),
+    overworld_frame(gObjectEventPic_UnusedNatuDoll, 2, 4, 1),
+    overworld_frame(gObjectEventPic_UnusedNatuDoll, 2, 4, 2),
+    overworld_frame(gObjectEventPic_UnusedNatuDoll, 2, 4, 3),
+    overworld_frame(gObjectEventPic_UnusedNatuDoll, 2, 4, 4),
+    overworld_frame(gObjectEventPic_UnusedNatuDoll, 2, 4, 5),
+    overworld_frame(gObjectEventPic_UnusedNatuDoll, 2, 4, 6),
+    overworld_frame(gObjectEventPic_UnusedNatuDoll, 2, 4, 7),
+    overworld_frame(gObjectEventPic_UnusedNatuDoll, 2, 4, 8),
 };
 
 static const struct SpriteFrameImage sPicTable_UnusedMagnemiteDoll[] = {
-    obj_frame_tiles(gObjectEventPic_UnusedMagnemiteDoll),
+    overworld_frame(gObjectEventPic_UnusedMagnemiteDoll, 2, 4, 0),
+    overworld_frame(gObjectEventPic_UnusedMagnemiteDoll, 2, 4, 1),
+    overworld_frame(gObjectEventPic_UnusedMagnemiteDoll, 2, 4, 2),
+    overworld_frame(gObjectEventPic_UnusedMagnemiteDoll, 2, 4, 3),
+    overworld_frame(gObjectEventPic_UnusedMagnemiteDoll, 2, 4, 4),
+    overworld_frame(gObjectEventPic_UnusedMagnemiteDoll, 2, 4, 5),
+    overworld_frame(gObjectEventPic_UnusedMagnemiteDoll, 2, 4, 6),
+    overworld_frame(gObjectEventPic_UnusedMagnemiteDoll, 2, 4, 7),
+    overworld_frame(gObjectEventPic_UnusedMagnemiteDoll, 2, 4, 8),
 };
 
 static const struct SpriteFrameImage sPicTable_UnusedSquirtleDoll[] = {
-    obj_frame_tiles(gObjectEventPic_UnusedSquirtleDoll),
+    overworld_frame(gObjectEventPic_UnusedSquirtleDoll, 2, 4, 0),
+    overworld_frame(gObjectEventPic_UnusedSquirtleDoll, 2, 4, 1),
+    overworld_frame(gObjectEventPic_UnusedSquirtleDoll, 2, 4, 2),
+    overworld_frame(gObjectEventPic_UnusedSquirtleDoll, 2, 4, 3),
+    overworld_frame(gObjectEventPic_UnusedSquirtleDoll, 2, 4, 4),
+    overworld_frame(gObjectEventPic_UnusedSquirtleDoll, 2, 4, 5),
+    overworld_frame(gObjectEventPic_UnusedSquirtleDoll, 2, 4, 6),
+    overworld_frame(gObjectEventPic_UnusedSquirtleDoll, 2, 4, 7),
+    overworld_frame(gObjectEventPic_UnusedSquirtleDoll, 2, 4, 8),
 };
 
 static const struct SpriteFrameImage sPicTable_UnusedWooperDoll[] = {
