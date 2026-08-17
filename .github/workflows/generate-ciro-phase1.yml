@@ -45,17 +45,17 @@ jobs:
           grep -q 'sPicTable_CiroMay' src/data/object_events/object_event_pic_tables.h
           grep -q '.images = sPicTable_CiroBrendan,' src/data/object_events/object_event_graphics_info.h
           grep -q '.images = sPicTable_CiroMay,' src/data/object_events/object_event_graphics_info.h
-          EXPECTED='graphics/object_events/pics/people/ciro/phase1_brendan.png
-graphics/object_events/pics/people/ciro/phase1_may.png
-src/data/object_events/object_event_graphics.h
-src/data/object_events/object_event_graphics_info.h
-src/data/object_events/object_event_pic_tables.h'
-          ACTUAL="$(git status --short | sed 's/^...//' | sort)"
-          if [ "$ACTUAL" != "$(printf '%b\n' "$EXPECTED" | sort)" ]; then
-            echo 'Unexpected generated file set:'
-            printf '%s\n' "$ACTUAL"
-            exit 1
-          fi
+          cat > /tmp/expected-files.txt <<'EOF'
+          graphics/object_events/pics/people/ciro/phase1_brendan.png
+          graphics/object_events/pics/people/ciro/phase1_may.png
+          src/data/object_events/object_event_graphics.h
+          src/data/object_events/object_event_graphics_info.h
+          src/data/object_events/object_event_pic_tables.h
+          EOF
+          sed -i 's/^          //' /tmp/expected-files.txt
+          git status --short | sed 's/^...//' | sort > /tmp/actual-files.txt
+          sort -o /tmp/expected-files.txt /tmp/expected-files.txt
+          diff -u /tmp/expected-files.txt /tmp/actual-files.txt
 
       - name: Install build dependencies
         shell: bash
