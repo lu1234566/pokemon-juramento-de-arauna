@@ -53,7 +53,10 @@ jobs:
           src/data/object_events/object_event_pic_tables.h
           EOF
           sed -i 's/^          //' /tmp/expected-files.txt
-          git status --short | sed 's/^...//' | sort > /tmp/actual-files.txt
+          {
+            git diff --name-only
+            git ls-files --others --exclude-standard
+          } | sort -u > /tmp/actual-files.txt
           sort -o /tmp/expected-files.txt /tmp/expected-files.txt
           diff -u /tmp/expected-files.txt /tmp/actual-files.txt
 
