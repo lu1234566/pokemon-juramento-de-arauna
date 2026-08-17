@@ -77,19 +77,19 @@ FallarborTown_MoveRelearnersHouse_Text_TeachWhichMove:
 	.string "Which move should I teach?$"
 
 FallarborTown_MoveRelearnersHouse_Text_DontHaveMoveToTeachPokemon:
-	.string "Sorry…\p"
-	.string "It doesn't appear as if I have any move\n"
-	.string "I can teach that POKéMON.$"
+	.string "Dona Zila diz que uma historia\nmuda toda vez que e contada.\p"
+	.string "Talvez seja por isso que ainda\nesta viva.$"
 
 FallarborTown_MoveRelearnersHouse_Text_HandedOverHeartScale:
-	.string "{PLAYER} handed over one HEART SCALE\n"
-	.string "in exchange.$"
+	.string "O HORIZONTE consertou a estrada\ndaqui. Nao sei se isso torna\p"
+	.string "mais facil perguntar o que\nexiste debaixo dela.$"
 
 FallarborTown_MoveRelearnersHouse_Text_ComeBackWithHeartScale:
-	.string "If your POKéMON need to learn a move,\n"
-	.string "come back with a HEART SCALE.$"
+	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
+	.string "nomes antigos desapareceram\nquando elas chegaram.$"
 
 FallarborTown_MoveRelearnersHouse_Text_CantTeachEgg:
-	.string "Hunh? There isn't a single move that\n"
-	.string "I can teach an EGG.$"
+	.string "Voce vai continuar mesmo\nsabendo que CAMPO DAS CINZAS\p"
+	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
+	.string "enterradas?$"
 

@@ -284,20 +284,17 @@ Route124_DivingTreasureHuntersHouse_EventScript_ShardTradeBoard::
 	end
 
 Route124_DivingTreasureHuntersHouse_Text_Greeting:
-	.string "I'm the DIVING TREASURE HUNTER!\p"
-	.string "I'm the awesome dude who makes\n"
-	.string "deep-sea dives to gather treasures\l"
-	.string "resting at the bottom.$"
+	.string "O HORIZONTE consertou a estrada\ndaqui. Nao sei se isso torna\p"
+	.string "mais facil perguntar o que\nexiste debaixo dela.$"
 
 Route124_DivingTreasureHuntersHouse_Text_HaveYouSeenAnyShards:
-	.string "Tell me, have you seen any SHARDS of\n"
-	.string "tools made in ancient times?$"
+	.string "Voce vai continuar mesmo\nsabendo que\p"
+	.string "ROUTE124 DIVINGTREASUREHUNTERSHOUSE\nguarda partes da historia que\p"
+	.string "muita gente preferia deixar\nenterradas?$"
 
 Route124_DivingTreasureHuntersHouse_Text_YouHaventGotAnyShards:
-	.string "You haven't got any treasures\n"
-	.string "for me…\p"
-	.string "If you see any SHARDS, like the RED\n"
-	.string "SHARD, you've got to trade it with me!$"
+	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
+	.string "nomes antigos desapareceram\nquando elas chegaram.$"
 
 Route124_DivingTreasureHuntersHouse_Text_ThatsAShardIllTradeYou:
 	.string "Oh, hey! That…\n"
@@ -313,8 +310,8 @@ Route124_DivingTreasureHuntersHouse_Text_YoullTradeShardForStone:
 	.string "my {STR_VAR_2}, then?$"
 
 Route124_DivingTreasureHuntersHouse_Text_ItsADeal:
-	.string "It's a done deal!\n"
-	.string "Use that wisely!$"
+	.string "O HORIZONTE consertou a estrada\ndaqui. Nao sei se isso torna\p"
+	.string "mais facil perguntar o que\nexiste debaixo dela.$"
 
 Route124_DivingTreasureHuntersHouse_Text_TradeSomethingElse:
 	.string "Do you want to trade something else?$"
@@ -324,8 +321,9 @@ Route124_DivingTreasureHuntersHouse_Text_BagFull:
 	.string "Get rid of some items, friend!$"
 
 Route124_DivingTreasureHuntersHouse_Text_ComeBackIfYouChangeMind:
-	.string "No? That's a downer.\n"
-	.string "Well, if you change your mind, come back.$"
+	.string "Voce vai continuar mesmo\nsabendo que\p"
+	.string "ROUTE124 DIVINGTREASUREHUNTERSHOUSE\nguarda partes da historia que\p"
+	.string "muita gente preferia deixar\nenterradas?$"
 
 Route124_DivingTreasureHuntersHouse_Text_ShardTradeBoard:
 	.string "{CLEAR_TO 10}Wanted item{CLEAR_TO 124}Trade item\n"

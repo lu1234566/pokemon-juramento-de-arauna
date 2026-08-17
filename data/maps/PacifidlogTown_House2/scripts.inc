@@ -91,38 +91,30 @@ PacifidlogTown_House2_EventScript_UnhappyAzurill::
 	end
 
 PacifidlogTown_House2_Text_ChairmansYoungerBrotherOnVacation:
-	.string "Er-hem!\p"
-	.string "I am the POKéMON FAN CLUB's most\n"
-	.string "important person, the CHAIRMAN's\l"
-	.string "younger brother.\p"
-	.string "I'm here enjoying my vacation with\n"
-	.string "POKéMON, yes, indeed.$"
+	.string "Tem gente que chama de\nDESENCANTO. Eu chamava de\p"
+	.string "distraicao, ate minha mae\nesquecer a cancao que cantava\p"
+	.string "desde crianca.$"
 
 PacifidlogTown_House2_Text_AhYourPokemon:
-	.string "Ah!\n"
-	.string "Your POKéMON…$"
+	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
+	.string "outro o que ele deve esquecer\nparece pior.$"
 
 PacifidlogTown_House2_Text_AdoringPokemonTakeThis:
-	.string "It clearly likes you very much.\p"
-	.string "A POKéMON that adoring and adorable\n"
-	.string "deserves a TM like this, no?$"
+	.string "Voce vai continuar mesmo\nsabendo que CASA DA FOGUEIRA\p"
+	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
+	.string "enterradas?$"
 
 PacifidlogTown_House2_Text_PutInSomeMoreEffort:
-	.string "Hmm…\n"
-	.string "It's not bad, but it's also not good.\p"
-	.string "You, as the TRAINER, need to put in\n"
-	.string "some more effort.$"
+	.string "Dona Zila diz que uma historia\nmuda toda vez que e contada.\p"
+	.string "Talvez seja por isso que ainda\nesta viva.$"
 
 PacifidlogTown_House2_Text_ViciousPokemonTakeThis:
-	.string "It has a vicious look to it.\p"
-	.string "A frightening POKéMON like that\n"
-	.string "deserves a TM like this.$"
+	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
+	.string "casas como se nunca tivessem\nestado ali.$"
 
 PacifidlogTown_House2_Text_ExplainReturnFrustration:
-	.string "If a POKéMON likes you a lot, RETURN's\n"
-	.string "power is enhanced.\p"
-	.string "If it doesn't like you, FRUSTRATION's\n"
-	.string "power goes up.$"
+	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
+	.string "nomes antigos desapareceram\nquando elas chegaram.$"
 
 PacifidlogTown_House2_Text_GetGoodTMInXDays:
 	.string "Oh, yes. In about {STR_VAR_1} or so days,\n"
@@ -132,16 +124,18 @@ PacifidlogTown_House2_Text_GetGoodTMInXDays:
 	.string "your POKéMON.$"
 
 PacifidlogTown_House2_Text_Rurii:
-	.string "AZURILL: Rurii.$"
+	.string "O HORIZONTE consertou a estrada\ndaqui. Nao sei se isso torna\p"
+	.string "mais facil perguntar o que\nexiste debaixo dela.$"
 
 PacifidlogTown_House2_Text_VeryFriendlyWithTrainer:
-	.string "It appears to be very friendly with the\n"
-	.string "TRAINER.$"
+	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
+	.string "nomes antigos desapareceram\nquando elas chegaram.$"
 
 PacifidlogTown_House2_Text_Rururi:
-	.string "AZURILL: Rururi!$"
+	.string "Dona Zila diz que uma historia\nmuda toda vez que e contada.\p"
+	.string "Talvez seja por isso que ainda\nesta viva.$"
 
 PacifidlogTown_House2_Text_DoesntLikeTrainerVeryMuch:
-	.string "It doesn't appear to like the TRAINER\n"
-	.string "very much.$"
+	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
+	.string "casas como se nunca tivessem\nestado ali.$"
 

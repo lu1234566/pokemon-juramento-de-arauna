@@ -39,49 +39,44 @@ RS_MysteryEventsHouse_EventScript_Door::
 	end
 
 RS_MysteryEventsHouse_Text_OldManGreeting:
-	.string "When I was young, I traveled the world\n"
-	.string "as a POKéMON TRAINER.\p"
-	.string "Now that I've become an old buzzard,\n"
-	.string "my only amusement is watching young\l"
-	.string "TRAINERS battle.$"
+	.string "Dona Zila diz que uma historia\nmuda toda vez que e contada.\p"
+	.string "Talvez seja por isso que ainda\nesta viva.$"
 
 RS_MysteryEventsHouse_Text_DoorIsLocked:
-	.string "The door appears to be locked.$"
+	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
+	.string "outro o que ele deve esquecer\nparece pior.$"
 
 RS_MysteryEventsHouse_Text_ChallengeVisitingTrainer:
-	.string "A TRAINER named {STR_VAR_1} is\n"
-	.string "visiting my home.\p"
-	.string "Would you like to challenge\n"
-	.string "{STR_VAR_1}?$"
+	.string "Voce vai continuar mesmo\nsabendo que MISSOES DO CEU\p"
+	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
+	.string "enterradas?$"
 
 RS_MysteryEventsHouse_Text_YouWontBattle:
-	.string "You won't battle? I'm disappointed\n"
-	.string "that I can't see you battle…$"
+	.string "Voce vai continuar mesmo\nsabendo que MISSOES DO CEU\p"
+	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
+	.string "enterradas?$"
 
 RS_MysteryEventsHouse_Text_KeepItToA3On3:
-	.string "Oh, good, good!\p"
-	.string "But my house isn't all that sturdy.\p"
-	.string "Could I ask you to keep it down to\n"
-	.string "a 3-on-3 match?$"
+	.string "Voce vai continuar mesmo\nsabendo que MISSOES DO CEU\p"
+	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
+	.string "enterradas?$"
 
 RS_MysteryEventsHouse_Text_SaveYourProgress:
-	.string "Before you two battle, you should\n"
-	.string "save your progress.$"
+	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
+	.string "outro o que ele deve esquecer\nparece pior.$"
 
 RS_MysteryEventsHouse_Text_HopeToSeeAGoodMatch:
-	.string "I hope to see a good match!$"
+	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
+	.string "nomes antigos desapareceram\nquando elas chegaram.$"
 
 RS_MysteryEventsHouse_Text_BattleTie:
-	.string "So, it became a standoff.\p"
-	.string "It was a brilliant match in which\n"
-	.string "neither side conceded a step!$"
+	.string "O HORIZONTE consertou a estrada\ndaqui. Nao sei se isso torna\p"
+	.string "mais facil perguntar o que\nexiste debaixo dela.$"
 
 RS_MysteryEventsHouse_Text_BattleWon:
-	.string "That was superlative!\p"
-	.string "Why, it was like seeing myself in\n"
-	.string "my youth again!$"
+	.string "O HORIZONTE consertou a estrada\ndaqui. Nao sei se isso torna\p"
+	.string "mais facil perguntar o que\nexiste debaixo dela.$"
 
 RS_MysteryEventsHouse_Text_BattleLost:
-	.string "Ah, too bad for you!\p"
-	.string "But it was a good match.\n"
-	.string "I hope you can win next time.$"
+	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
+	.string "nomes antigos desapareceram\nquando elas chegaram.$"

@@ -55,11 +55,10 @@ MauvilleCity_House2_Text_IllTradeYouCoinCase:
 	.string "Okay, I'll trade you a COIN CASE!$"
 
 MauvilleCity_House2_Text_UseCoinCaseAtGameCorner:
-	.string "That COIN CASE can be used\n"
-	.string "at the GAME CORNER.$"
+	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
+	.string "nomes antigos desapareceram\nquando elas chegaram.$"
 
 MauvilleCity_House2_Text_ThatsDisappointing:
-	.string "Oh, that's disappointing.\p"
-	.string "A COIN CASE is needed for the\n"
-	.string "GAME CORNER.$"
+	.string "Dona Zila diz que uma historia\nmuda toda vez que e contada.\p"
+	.string "Talvez seja por isso que ainda\nesta viva.$"
 

@@ -45,10 +45,9 @@ VerdanturfTown_Mart_Text_XSpecialIsCrucial:
 	.string "even though it's only for one battle.$"
 
 VerdanturfTown_Mart_Text_NoStrategyGuidesForBattleTent:
-	.string "They don't seem to sell any winning\n"
-	.string "strategy guides for the BATTLE TENT…\p"
-	.string "It seems one must rely on one's\n"
-	.string "own wits after all…$"
+	.string "Os sensores registram duas\ncorrentes antigas sob Arauna:\p"
+	.string "uma conserva VINCULOS; a outra\npermite que eles terminem. O\p"
+	.string "Arquivo tentou transformar\nambas em ferramentas.$"
 
 VerdanturfTown_Mart_Text_NestBallOnWeakenedPokemon:
 	.string "The NEST BALL works better on\n"

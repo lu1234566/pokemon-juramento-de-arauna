@@ -178,5 +178,8 @@ SkyPillar_Top_Movement_CameraPanDown:
 	step_end
 
 SkyPillar_Top_Text_RayquazaFlewOff:
-	.string "The awakened RAYQUAZA flew off…$"
+	.string "O CADERNO DE ZILA nao guarda\numa verdade perfeita. Guarda\p"
+	.string "pessoas tentando lembrar\njuntas. O JURAMENTO nunca foi\p"
+	.string "impedir o esquecimento; foi\nimpedir que alguem escolhesse o\p"
+	.string "esquecimento dos outros.$"
 

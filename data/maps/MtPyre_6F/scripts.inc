@@ -28,42 +28,52 @@ MtPyre_6F_EventScript_Cedric::
 	end
 
 MtPyre_6F_Text_ValerieIntro:
-	.string "When I'm here…\n"
-	.string "A curious power flows into me…$"
+	.string "Os nomes de mortos e\ndesaparecidos sao mantidos\p"
+	.string "aqui. O HORIZONTE comeca a\nretirar registros em nome da\p"
+	.string "estabilidade.$"
 
 MtPyre_6F_Text_ValerieDefeat:
-	.string "The power is ebbing away…$"
+	.string "Os nomes de mortos e\ndesaparecidos sao mantidos\p"
+	.string "aqui. O HORIZONTE comeca a\nretirar registros em nome da\p"
+	.string "estabilidade.$"
 
 MtPyre_6F_Text_ValeriePostBattle:
-	.string "Perhaps the power is from the spirits\n"
-	.string "of POKéMON in fitful sleep here…$"
+	.string "Os nomes de mortos e\ndesaparecidos sao mantidos\p"
+	.string "aqui. O HORIZONTE comeca a\nretirar registros em nome da\p"
+	.string "estabilidade.$"
 
 MtPyre_6F_Text_ValerieRegister:
-	.string "Fufufu… I lost the match, but…\n"
-	.string "I have this little ability…\p"
-	.string "Without ever laying my hands on\n"
-	.string "your POKéNAV… Hiyah!$"
+	.string "Os nomes de mortos e\ndesaparecidos sao mantidos\p"
+	.string "aqui. O HORIZONTE comeca a\nretirar registros em nome da\p"
+	.string "estabilidade.$"
 
 MtPyre_6F_Text_ValerieRematchIntro:
-	.string "Behind you…\n"
-	.string "What is it…$"
+	.string "Os nomes de mortos e\ndesaparecidos sao mantidos\p"
+	.string "aqui. O HORIZONTE comeca a\nretirar registros em nome da\p"
+	.string "estabilidade.$"
 
 MtPyre_6F_Text_ValerieRematchDefeat:
-	.string "Something faded away…$"
+	.string "Os nomes de mortos e\ndesaparecidos sao mantidos\p"
+	.string "aqui. O HORIZONTE comeca a\nretirar registros em nome da\p"
+	.string "estabilidade.$"
 
 MtPyre_6F_Text_ValeriePostRematch:
-	.string "The POKéMON at rest here…\n"
-	.string "Sometimes, they play…$"
+	.string "Os nomes de mortos e\ndesaparecidos sao mantidos\p"
+	.string "aqui. O HORIZONTE comeca a\nretirar registros em nome da\p"
+	.string "estabilidade.$"
 
 MtPyre_6F_Text_CedricIntro:
-	.string "Have you lost your bearings?\n"
-	.string "Have no fear for I am here!$"
+	.string "Os nomes de mortos e\ndesaparecidos sao mantidos\p"
+	.string "aqui. O HORIZONTE comeca a\nretirar registros em nome da\p"
+	.string "estabilidade.$"
 
 MtPyre_6F_Text_CedricDefeat:
-	.string "Weren't you lost?$"
+	.string "Os nomes de mortos e\ndesaparecidos sao mantidos\p"
+	.string "aqui. O HORIZONTE comeca a\nretirar registros em nome da\p"
+	.string "estabilidade.$"
 
 MtPyre_6F_Text_CedricPostBattle:
-	.string "I had this feeling that a lost TRAINER\n"
-	.string "would be panicked and easy to beat.\p"
-	.string "It's dirty and I won't try it again…$"
+	.string "Os nomes de mortos e\ndesaparecidos sao mantidos\p"
+	.string "aqui. O HORIZONTE comeca a\nretirar registros em nome da\p"
+	.string "estabilidade.$"
 

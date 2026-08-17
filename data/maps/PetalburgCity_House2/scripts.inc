@@ -10,15 +10,12 @@ PetalburgCity_House2_EventScript_SchoolKid::
 	end
 
 PetalburgCity_House2_Text_NormanBecameGymLeader:
-	.string "NORMAN became our town's new\n"
-	.string "GYM LEADER.\p"
-	.string "I think he called his family over from\n"
-	.string "somewhere far away.$"
+	.string "ELIAS: Algumas culpas nao\ndesaparecem quando ficamos em\p"
+	.string "silencio. Eu aprovei parte do\nprojeto de M'BOI. Passei anos\p"
+	.string "chamando meu medo de prudencia.$"
 
 PetalburgCity_House2_Text_BattledNormanOnce:
-	.string "I battled NORMAN once, but, whew,\n"
-	.string "he was way too strong.\p"
-	.string "How would I put it?\p"
-	.string "I just got the feeling that he\n"
-	.string "lives for POKéMON.$"
+	.string "ELIAS: Algumas culpas nao\ndesaparecem quando ficamos em\p"
+	.string "silencio. Eu aprovei parte do\nprojeto de M'BOI. Passei anos\p"
+	.string "chamando meu medo de prudencia.$"
 

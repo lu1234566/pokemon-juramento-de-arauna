@@ -19,16 +19,19 @@ SootopolisCity_House2_EventScript_DontKnowAboutOrbs::
 	return
 
 SootopolisCity_House2_Text_DidYouKnowAboutMtPyreOrbs:
-	.string "MT. PYRE…\p"
-	.string "At its peak are two orbs placed side\n"
-	.string "by side. Did you know?$"
+	.string "As duas forcas antigas de\nArauna reagiram ao colapso.\p"
+	.string "IARA-MAE puxa os nomes de\nvolta. ANHANGUERA tenta\p"
+	.string "encerrar o que nao pode\ncontinuar. Nenhuma delas foi\p"
+	.string "feita para obedecer a seres\nhumanos.$"
 
 SootopolisCity_House2_Text_YesTwoOrbsSideBySide:
-	.string "Yes, two orbs side by side…\p"
-	.string "The sight of them together…\n"
-	.string "It is somehow soothing…$"
+	.string "As duas forcas antigas de\nArauna reagiram ao colapso.\p"
+	.string "IARA-MAE puxa os nomes de\nvolta. ANHANGUERA tenta\p"
+	.string "encerrar o que nao pode\ncontinuar. Nenhuma delas foi\p"
+	.string "feita para obedecer a seres\nhumanos.$"
 
 SootopolisCity_House2_Text_OughtToVisitAndSee:
-	.string "Is that so?\n"
-	.string "Perhaps you ought to visit and see…$"
+	.string "Voce vai continuar mesmo\nsabendo que AGUAS DE M'BOI\p"
+	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
+	.string "enterradas?$"
 

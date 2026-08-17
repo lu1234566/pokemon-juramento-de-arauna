@@ -12,25 +12,32 @@ SeafloorCavern_Room4_EventScript_Grunt4::
 	end
 
 SeafloorCavern_Room4_Text_Grunt3Intro:
-	.string "Who are you?\n"
-	.string "Where did you come in from?$"
+	.string "Otacilio volta ao lugar onde\nperdeu a familia. Luzia chega\p"
+	.string "para libertar tudo que foi\narmazenado. Os dois extremos\p"
+	.string "colidem.$"
 
 SeafloorCavern_Room4_Text_Grunt3Defeat:
-	.string "Lost it…$"
+	.string "Otacilio volta ao lugar onde\nperdeu a familia. Luzia chega\p"
+	.string "para libertar tudo que foi\narmazenado. Os dois extremos\p"
+	.string "colidem.$"
 
 SeafloorCavern_Room4_Text_Grunt3PostBattle:
-	.string "I can't find the way out!\p"
-	.string "I'm not afraid. Don't get me wrong!$"
+	.string "Otacilio volta ao lugar onde\nperdeu a familia. Luzia chega\p"
+	.string "para libertar tudo que foi\narmazenado. Os dois extremos\p"
+	.string "colidem.$"
 
 SeafloorCavern_Room4_Text_Grunt4Intro:
-	.string "Who are you?\n"
-	.string "Where do you think you're going?$"
+	.string "Otacilio volta ao lugar onde\nperdeu a familia. Luzia chega\p"
+	.string "para libertar tudo que foi\narmazenado. Os dois extremos\p"
+	.string "colidem.$"
 
 SeafloorCavern_Room4_Text_Grunt4Defeat:
-	.string "I failed to win!$"
+	.string "Otacilio volta ao lugar onde\nperdeu a familia. Luzia chega\p"
+	.string "para libertar tudo que foi\narmazenado. Os dois extremos\p"
+	.string "colidem.$"
 
 SeafloorCavern_Room4_Text_Grunt4PostBattle:
-	.string "My partner forgot the map in that\n"
-	.string "submarine!\p"
-	.string "How's that for being useless?$"
+	.string "Otacilio volta ao lugar onde\nperdeu a familia. Luzia chega\p"
+	.string "para libertar tudo que foi\narmazenado. Os dois extremos\p"
+	.string "colidem.$"
 
