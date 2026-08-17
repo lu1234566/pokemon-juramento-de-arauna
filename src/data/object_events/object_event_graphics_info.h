@@ -1932,7 +1932,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RivalBrendanNormal
     .oam = &gObjectEventBaseOam_16x32,
     .subspriteTables = sOamTables_16x32,
     .anims = sAnimTable_BrendanMayNormal,
-    .images = sPicTable_BrendanNormal,
+    .images = sPicTable_CiroBrendan,
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
@@ -2027,7 +2027,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RivalMayNormal = {
     .oam = &gObjectEventBaseOam_16x32,
     .subspriteTables = sOamTables_16x32,
     .anims = sAnimTable_BrendanMayNormal,
-    .images = sPicTable_MayNormal,
+    .images = sPicTable_CiroMay,
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
