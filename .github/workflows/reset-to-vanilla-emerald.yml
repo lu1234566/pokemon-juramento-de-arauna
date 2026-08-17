@@ -1,4 +1,4 @@
-name: Reset to vanilla Pokemon Emerald
+name: Prepare vanilla Pokemon Emerald reset
 
 on:
   push:
@@ -20,7 +20,7 @@ jobs:
           fetch-depth: 0
           persist-credentials: true
 
-      - name: Archive pre-reset state
+      - name: Preserve pre-reset state
         shell: bash
         run: |
           set -euo pipefail
@@ -32,28 +32,18 @@ jobs:
         run: |
           set -euo pipefail
           git clone --depth 1 https://github.com/pret/pokeemerald.git /tmp/pokeemerald
-          git -C /tmp/pokeemerald rev-parse HEAD
 
-      - name: Replace project tree with vanilla Emerald
+      - name: Build clean vanilla branch
         shell: bash
         run: |
           set -euo pipefail
+          git switch -C reset/vanilla-emerald
           rsync -a --delete --exclude='.git' /tmp/pokeemerald/ ./
           diff -qr --exclude=.git . /tmp/pokeemerald
-
-      - name: Validate original Emerald checksum target
-        shell: bash
-        run: |
-          set -euo pipefail
           grep -F 'f3ae088181bf583e55daf962a92bb46f4f1d07b7' rom.sha1
           grep -F 'Pokémon Emerald' README.md
-
-      - name: Commit clean reset to main
-        shell: bash
-        run: |
-          set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add -A
           git commit -m 'Reset project to vanilla Pokemon Emerald'
-          git push origin HEAD:main
+          git push origin HEAD:reset/vanilla-emerald --force
