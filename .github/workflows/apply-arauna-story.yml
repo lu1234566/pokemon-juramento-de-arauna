@@ -1,0 +1,62 @@
+name: Apply Arauna story rewrite
+
+on:
+  push:
+    paths:
+      - .github/workflows/apply-arauna-story.yml
+
+permissions:
+  contents: write
+
+jobs:
+  rewrite-story:
+    if: github.repository == 'lu1234566/pokemon-juramento-de-arauna'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout current main
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Preserve pre-story state
+        shell: bash
+        run: |
+          set -euo pipefail
+          git branch -f archive/pre-story-rewrite-2026-08-17 "$GITHUB_SHA"
+          git push origin archive/pre-story-rewrite-2026-08-17 --force
+
+      - name: Apply Arauna narrative
+        run: python3 tools/apply_arauna_story.py
+
+      - name: Validate patch shape
+        shell: bash
+        run: |
+          set -euo pipefail
+          git diff --check
+          test -f docs/ARAUANA_STORY_IMPLEMENTATION.md
+          grep -R -q 'OTACILIO' data/maps
+          grep -R -q 'DESENCANTO' data/maps
+          grep -R -q 'CONSORCIO HORIZONTE' data/maps
+          grep -R -q 'CIRO' data/maps
+          grep -R -q 'ANAHI' data/maps
+
+      - name: Install build dependencies
+        shell: bash
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gcc-arm-none-eabi binutils-arm-none-eabi libpng-dev
+
+      - name: Build rewritten story
+        shell: bash
+        run: make -j2 MODERN=1 COMPARE=0
+
+      - name: Publish story to main
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/maps docs/ARAUANA_STORY_IMPLEMENTATION.md
+          git commit -m 'Replace Emerald narrative with Juramento de Arauna story'
+          git push origin HEAD:main
