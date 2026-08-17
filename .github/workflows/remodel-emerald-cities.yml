@@ -54,7 +54,7 @@ jobs:
           COMPARE: 0
         run: make -j2 all
 
-      - name: Commit remodeled cities
+      - name: Commit remodeled cities to staging branch
         shell: bash
         run: |
           set -euo pipefail
@@ -62,4 +62,4 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add data/layouts data/maps docs/EMERALD_CITY_REMODEL.md
           git commit -m 'Remodel all Hoenn cities with vanilla Emerald tiles'
-          git push origin HEAD:main
+          git push origin HEAD:generated/city-remodel --force
