@@ -83,6 +83,11 @@
 #define OBJ_EVENT_GFX_UNUSED_NATU_DOLL            76
 #define OBJ_EVENT_GFX_UNUSED_MAGNEMITE_DOLL       77
 #define OBJ_EVENT_GFX_UNUSED_SQUIRTLE_DOLL        78
+
+// Arauna dedicated overworld slots: reclaim three vanilla IDs marked unused.
+#define OBJ_EVENT_GFX_DONA_ZILA                  OBJ_EVENT_GFX_UNUSED_NATU_DOLL
+#define OBJ_EVENT_GFX_CIRO_CONSORCIO             OBJ_EVENT_GFX_UNUSED_MAGNEMITE_DOLL
+#define OBJ_EVENT_GFX_CIRO_FINAL                 OBJ_EVENT_GFX_UNUSED_SQUIRTLE_DOLL
 #define OBJ_EVENT_GFX_UNUSED_WOOPER_DOLL          79
 #define OBJ_EVENT_GFX_UNUSED_PIKACHU_DOLL         80
 #define OBJ_EVENT_GFX_UNUSED_PORYGON2_DOLL        81
