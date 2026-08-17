@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - visual/arauna-support-lot3-2026-08-17
+  pull_request:
+    branches:
+      - main
 
 permissions:
   contents: write
@@ -16,6 +19,7 @@ jobs:
       - name: Checkout branch
         uses: actions/checkout@v4
         with:
+          ref: visual/arauna-support-lot3-2026-08-17
           fetch-depth: 0
       - name: Install build dependencies
         run: |
@@ -25,10 +29,7 @@ jobs:
         run: python3 tools/apply_arauna_support_lot3.py
       - name: Validate exact story placements
         run: |
-          grep -q 'OBJ_EVENT_GFX_VAL_EVOLUIDO' data/maps/VictoryRoad_1F/map.json
-          grep -q 'OBJ_EVENT_GFX_ADMIN_CAMPO' data/maps/AquaHideout_B2F/map.json
-          grep -q 'OBJ_EVENT_GFX_ADMIN_ARQUIVO' data/maps/Route119_WeatherInstitute_2F/map.json
-          grep -q 'OBJ_EVENT_GFX_ADMIN_ARQUIVO' data/maps/SeafloorCavern_Room3/map.json
+          test "$(grep -c 'OBJ_EVENT_GFX_VAL_EVOLUIDO' data/maps/VictoryRoad_1F/map.json)" -eq 2
           test "$(grep -c 'OBJ_EVENT_GFX_ADMIN_CAMPO' data/maps/AquaHideout_B2F/map.json)" -eq 1
           test "$(grep -c 'OBJ_EVENT_GFX_ADMIN_ARQUIVO' data/maps/Route119_WeatherInstitute_2F/map.json)" -eq 1
           test "$(grep -c 'OBJ_EVENT_GFX_ADMIN_ARQUIVO' data/maps/SeafloorCavern_Room3/map.json)" -eq 1
@@ -38,7 +39,7 @@ jobs:
           MODERN: 1
           COMPARE: 0
         run: make -j2 all
-      - name: Clean temporary discovery files
+      - name: Clean temporary validation files
         run: |
           rm -f docs/ARAUNA_ADMIN_EVENT_DISCOVERY.md
           rm -f .github/workflows/validate-arauna-support-lot3.yml
@@ -47,5 +48,8 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add -A
+          if git diff --cached --quiet; then
+            exit 0
+          fi
           git commit -m 'Implement Val evolved and Arauna administrators'
           git push origin HEAD:visual/arauna-support-lot3-2026-08-17
