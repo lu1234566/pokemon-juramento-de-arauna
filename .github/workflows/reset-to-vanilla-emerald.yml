@@ -1,0 +1,61 @@
+name: Reset to vanilla Pokemon Emerald
+
+on:
+  push:
+    paths:
+      - .github/workflows/reset-to-vanilla-emerald.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  reset:
+    if: github.repository == 'lu1234566/pokemon-juramento-de-arauna'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout current project
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Archive pre-reset state
+        shell: bash
+        run: |
+          set -euo pipefail
+          git branch -f archive/pre-emerald-reset-2026-08-17 "$GITHUB_SHA"
+          git push origin archive/pre-emerald-reset-2026-08-17 --force
+
+      - name: Fetch official vanilla Emerald source
+        shell: bash
+        run: |
+          set -euo pipefail
+          git clone --depth 1 https://github.com/pret/pokeemerald.git /tmp/pokeemerald
+          git -C /tmp/pokeemerald rev-parse HEAD
+
+      - name: Replace project tree with vanilla Emerald
+        shell: bash
+        run: |
+          set -euo pipefail
+          find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+          cp -a /tmp/pokeemerald/. .
+          rm -rf .git/shallow
+          diff -qr --exclude=.git . /tmp/pokeemerald
+
+      - name: Validate original Emerald checksum target
+        shell: bash
+        run: |
+          set -euo pipefail
+          grep -F 'f3ae088181bf583e55daf962a92bb46f4f1d07b7' rom.sha1
+          grep -F 'Pokemon Emerald' README.md
+
+      - name: Commit clean reset to main
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git commit -m 'Reset project to vanilla Pokemon Emerald'
+          git push origin HEAD:main
