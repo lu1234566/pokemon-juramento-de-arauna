@@ -2,16 +2,17 @@
 
 This lot introduces dedicated overworld graphics for three recurring story roles by reclaiming the final three vanilla Emerald object-graphics IDs explicitly marked unused in the doll block.
 
-Planned mapping:
+| Arauna role | Dedicated ID | Reclaimed vanilla storage | Runtime palette |
+| --- | ---: | --- | --- |
+| Val — evolved | 79 | `OBJ_EVENT_GFX_UNUSED_WOOPER_DOLL` | `NPC_3` |
+| Field operations administrator | 80 | `OBJ_EVENT_GFX_UNUSED_PIKACHU_DOLL` | `NPC_3` |
+| Arquivo Vivo administrator | 81 | `OBJ_EVENT_GFX_UNUSED_PORYGON2_DOLL` | `NPC_2` |
 
-- ID 79 (`OBJ_EVENT_GFX_UNUSED_WOOPER_DOLL`) → `OBJ_EVENT_GFX_VAL_EVOLUIDO`
-- ID 80 (`OBJ_EVENT_GFX_UNUSED_PIKACHU_DOLL`) → `OBJ_EVENT_GFX_ADMIN_CAMPO`
-- ID 81 (`OBJ_EVENT_GFX_UNUSED_PORYGON2_DOLL`) → `OBJ_EVENT_GFX_ADMIN_ARQUIVO`
+Targeted placements preserve coordinates, scripts, flags, movement and trainer metadata:
 
-Targeted story placements preserve all existing coordinates, scripts, flags and trainer data:
-
-- Victory Road 1F Wally event → Val evoluído
+- both late-game Victory Road Wally objects → Val evoluído
 - Aqua Hideout B2F Matt event → administrador de operações de campo
 - Route 119 Weather Institute 2F Shelly event → administradora do Arquivo Vivo
+- Seafloor Cavern Room 3 Shelly event → the same Arquivo Vivo administrator, preserving her recurring identity
 
-No generic grunt family is replaced by these IDs.
+The generic Consórcio/HORIZONTE and Lembrantes grunt families remain untouched by these dedicated IDs. `NUM_OBJ_EVENT_GFX` and Emerald's one-byte graphics-ID format remain unchanged.
