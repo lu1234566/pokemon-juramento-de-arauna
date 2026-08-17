@@ -26,21 +26,22 @@ MtPyre_1F_EventScript_Man::
 	end
 
 MtPyre_1F_Text_TakeThisForYourOwnGood:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "All sorts of beings wander the slopes\n"
+	.string "of MT. PYRE…\p"
+	.string "There is no telling what may happen.\n"
+	.string "Take this. It's for your own good.$"
 
 MtPyre_1F_Text_ExplainCleanseTag:
-	.string "Os nomes de mortos e\ndesaparecidos sao mantidos\p"
-	.string "aqui. O HORIZONTE comeca a\nretirar registros em nome da\p"
-	.string "estabilidade.$"
+	.string "Have a POKéMON hold that\n"
+	.string "CLEANSE TAG.\p"
+	.string "It will help ward off wild POKéMON.$"
 
 MtPyre_1F_Text_ComeToPayRespects:
-	.string "Os nomes de mortos e\ndesaparecidos sao mantidos\p"
-	.string "aqui. O HORIZONTE comeca a\nretirar registros em nome da\p"
-	.string "estabilidade.$"
+	.string "Did you come to pay your respect\n"
+	.string "to the spirits of departed POKéMON?\p"
+	.string "You must care for your POKéMON a lot.$"
 
 MtPyre_1F_Text_RestingPlaceOfZigzagoon:
-	.string "Os nomes de mortos e\ndesaparecidos sao mantidos\p"
-	.string "aqui. O HORIZONTE comeca a\nretirar registros em nome da\p"
-	.string "estabilidade.$"
+	.string "This is the final resting place of my\n"
+	.string "ZIGZAGOON. I cherished it…$"
 

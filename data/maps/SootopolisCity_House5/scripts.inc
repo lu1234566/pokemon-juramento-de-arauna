@@ -10,10 +10,10 @@ SootopolisCity_House5_EventScript_Girl::
 	end
 
 SootopolisCity_House5_Text_SootopolisMtPyreConnection:
-	.string "O colapso do Arquivo espalha\nlembrancas alheias e vazios de\p"
-	.string "memoria por toda Arauna.$"
+	.string "As aguas carregam lembrancas\nque nao pertencem a quem as\p"
+	.string "recebe. Pessoas reconhecem\nnomes que nunca ouviram e\p"
+	.string "esquecem rostos que amam.$"
 
 SootopolisCity_House5_Text_BrotherUsedToStudySea:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "My big brother used to study the sea.$"
 

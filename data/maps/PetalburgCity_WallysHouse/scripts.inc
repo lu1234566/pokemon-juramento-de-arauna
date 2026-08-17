@@ -74,24 +74,39 @@ PetalburgCity_WallysHouse_Text_WonderHowWallyIsDoing:
 	.string "esquecer o medo; e caminhar\nmesmo lembrando dele.$"
 
 PetalburgCity_WallysHouse_Text_PleaseExcuseUs:
-	.string "VAL: Eu ainda tenho medo. Mas\nagora sei que coragem nao e\p"
-	.string "esquecer o medo; e caminhar\nmesmo lembrando dele.$"
+	.string "{PLAYER}{KUN}! Please excuse us for\n"
+	.string "dragging you here this way.\p"
+	.string "But our WALLY's become very healthy\n"
+	.string "since he went to VERDANTURF TOWN.\p"
+	.string "We owe it all to you!\p"
+	.string "When WALLY left town, you helped\n"
+	.string "him catch a POKéMON, right?\p"
+	.string "I think that made WALLY really\n"
+	.string "happy.\p"
+	.string "Actually, not just WALLY.\n"
+	.string "It made me, his father, happy too.\p"
+	.string "Happy that he's gained such a great\n"
+	.string "friend as you.\p"
+	.string "This isn't a bribe or anything, but\n"
+	.string "I'd really like you to have this.$"
 
 PetalburgCity_WallysHouse_Text_SurfGoAllSortsOfPlaces:
-	.string "VAL: Eu ainda tenho medo. Mas\nagora sei que coragem nao e\p"
-	.string "esquecer o medo; e caminhar\nmesmo lembrando dele.$"
+	.string "If your POKéMON can SURF, you'll be\n"
+	.string "able to go to all sorts of places.$"
 
 PetalburgCity_WallysHouse_Text_WallyIsComingHomeSoon:
 	.string "VAL: Eu ainda tenho medo. Mas\nagora sei que coragem nao e\p"
 	.string "esquecer o medo; e caminhar\nmesmo lembrando dele.$"
 
 PetalburgCity_WallysHouse_Text_YouMetWallyInEverGrandeCity:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "VAL: Passei muito tempo achando\nque precisava virar outra\p"
+	.string "pessoa para seguir viagem. Eu\nso precisava descobrir meu\p"
+	.string "proprio ritmo.$"
 
 PetalburgCity_WallysHouse_Text_WallyWasReallyHappy:
-	.string "VAL: Eu ainda tenho medo. Mas\nagora sei que coragem nao e\p"
-	.string "esquecer o medo; e caminhar\nmesmo lembrando dele.$"
+	.string "VAL: Passei muito tempo achando\nque precisava virar outra\p"
+	.string "pessoa para seguir viagem. Eu\nso precisava descobrir meu\p"
+	.string "proprio ritmo.$"
 
 PetalburgCity_WallysHouse_Text_WallyLeftWithoutTelling:
 	.string "VAL: Eu ainda tenho medo. Mas\nagora sei que coragem nao e\p"

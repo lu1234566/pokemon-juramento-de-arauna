@@ -244,8 +244,8 @@ Route118_EventScript_Deandre::
 
 Route118_Text_StevenQuestions:
 	.string "SEU BENTO: Quando um nome some\nda boca das pessoas, eu\p"
-	.string "escrevo. Nao para substituir\nquem lembra. Para deixar uma\p"
-	.string "pista para quem vier procurar.$"
+	.string "escrevo. Nao para substituir\nquem lembra; para deixar uma\p"
+	.string "pista.$"
 
 Route118_Text_YouAgreeGoodRodIsGood:
 	.string "Hmm!\n"
@@ -253,31 +253,34 @@ Route118_Text_YouAgreeGoodRodIsGood:
 	.string "Wouldn't you agree?$"
 
 Route118_Text_IdenticalMindsTakeThis:
-	.string "Dona Zila diz que uma historia\nmuda toda vez que e contada.\p"
-	.string "Talvez seja por isso que ainda\nesta viva.$"
+	.string "Hmm!\n"
+	.string "We're of identical minds!\p"
+	.string "Hmm!\n"
+	.string "Take this GOOD ROD!$"
 
 Route118_Text_TryYourLuckFishing:
-	.string "Dona Zila diz que uma historia\nmuda toda vez que e contada.\p"
-	.string "Talvez seja por isso que ainda\nesta viva.$"
+	.string "Wherever there's water, try your luck\n"
+	.string "at fishing.$"
 
 Route118_Text_DontYouLikeToFish:
-	.string "Voce vai continuar mesmo\nsabendo que ROUTE118 guarda\p"
-	.string "partes da historia que muita\ngente preferia deixar\p"
-	.string "enterradas?$"
+	.string "Don't you like to fish?$"
 
 Route118_Text_TryCatchingMonWithGoodRod:
 	.string "Try catching all sorts of POKéMON\n"
 	.string "with your GOOD ROD.$"
 
 Route118_Text_CanCrossRiversWithSurf:
-	.string "Dona Zila diz que uma historia\nmuda toda vez que e contada.\p"
-	.string "Talvez seja por isso que ainda\nesta viva.$"
+	.string "Even if there isn't a boat, you can\n"
+	.string "cross rivers and the sea if you have\l"
+	.string "a POKéMON that knows SURF.\p"
+	.string "POKéMON can be counted on to do so\n"
+	.string "much!$"
 
 Route118_Text_RouteSignMauville:
-	.string "Dona Zila diz que uma historia\nmuda toda vez que e contada.\p"
-	.string "Talvez seja por isso que ainda\nesta viva.$"
+	.string "ROUTE 118\n"
+	.string "{LEFT_ARROW} MAUVILLE CITY$"
 
 Route118_Text_RouteSign119:
-	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
-	.string "nomes antigos desapareceram\nquando elas chegaram.$"
+	.string "ROUTE 118\n"
+	.string "{UP_ARROW} ROUTE 119$"
 

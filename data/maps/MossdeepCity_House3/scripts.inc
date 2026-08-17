@@ -45,6 +45,6 @@ MossdeepCity_House3_Text_DontYouLikeToFish:
 	.string "Don't you like to fish?$"
 
 MossdeepCity_House3_Text_GoAfterSeafloorPokemon:
-	.string "O HORIZONTE pretende usar a\nrede regional de comunicacao\p"
-	.string "para ampliar o ARQUIVO VIVO.$"
+	.string "Go after the seafloor POKéMON with\n"
+	.string "your SUPER ROD.$"
 

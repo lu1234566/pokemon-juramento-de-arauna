@@ -85,60 +85,91 @@ RustboroCity_Flat1_2F_Text_ComingUpWithMealsIsHard:
 	.string "meals every day.$"
 
 RustboroCity_Flat1_2F_Text_HelloDoYouKnowFunnyPhrase:
-	.string "Voce vai continuar mesmo\nsabendo que SERRA DO UIVO\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "Oh, hello!\n"
+	.string "Welcome to the PEPPER household.\p"
+	.string "I have a question for you.\n"
+	.string "Have you ever baby-sat?\p"
+	.string "You see, I'm a new father, so raising\n"
+	.string "a child is all new to me.\p"
+	.string "And I have a problem. My daughter\n"
+	.string "WALDA doesn't laugh enough.\p"
+	.string "I think she'd laugh for me if I told\n"
+	.string "her something funny.\p"
+	.string "Do you know of a funny word or\n"
+	.string "phrase you can tell me?$"
 
 RustboroCity_Flat1_2F_Text_BeenSayingXDoYouKnowBetterPhrase:
-	.string "Voce vai continuar mesmo\nsabendo que SERRA DO UIVO\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "I've been saying “{STR_VAR_1}”\n"
+	.string "to amuse her lately.\p"
+	.string "Do you know of a better word or\n"
+	.string "a phrase that might work?$"
 
 RustboroCity_Flat1_2F_Text_WonderfulLetsHearSuggestion:
-	.string "Dona Zila diz que uma historia\nmuda toda vez que e contada.\p"
-	.string "Talvez seja por isso que ainda\nesta viva.$"
+	.string "Oh, that's wonderful.\n"
+	.string "So, let's hear it, your suggestion.$"
 
 RustboroCity_Flat1_2F_Text_OhIsThatRight:
-	.string "Voce vai continuar mesmo\nsabendo que SERRA DO UIVO\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "Oh, is that right?\p"
+	.string "Well, if you come up with a good\n"
+	.string "suggestion, I'm all ears.$"
 
 RustboroCity_Flat1_2F_Text_LetsGiveItATry2:
-	.string "Voce vai continuar mesmo\nsabendo que SERRA DO UIVO\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "Ah, I see.\n"
+	.string "Well, let's give it a try, shall we?$"
 
 RustboroCity_Flat1_2F_Text_OhShesLaughing:
-	.string "O HORIZONTE consertou a estrada\ndaqui. Nao sei se isso torna\p"
-	.string "mais facil perguntar o que\nexiste debaixo dela.$"
+	.string "{STR_VAR_1}.\n"
+	.string "{STR_VAR_1}.\p"
+	.string "Oh, yes! She's laughing!\n"
+	.string "Oh, I am as delighted as she!$"
 
 RustboroCity_Flat1_2F_Text_LetsGiveItATry:
-	.string "Voce vai continuar mesmo\nsabendo que SERRA DO UIVO\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "Ah, I see.\n"
+	.string "Well, let's give it a try, shall we?$"
 
 RustboroCity_Flat1_2F_Text_ShesNotSmilingAtAll:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "{STR_VAR_1}.\n"
+	.string "{STR_VAR_1}.\p"
+	.string "Hmmm… She's not smiling at all.\n"
+	.string "Maybe WALDA is one serious child…$"
 
 RustboroCity_Flat1_2F_Text_ThinkOfMyOwnPhrase:
-	.string "Voce vai continuar mesmo\nsabendo que SERRA DO UIVO\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "Oh, so you don't know any good words.\n"
+	.string "I'd better think for myself, then.\p"
+	.string "Hmm…\n"
+	.string "How about “{STR_VAR_1}”?\l"
+	.string "Let's see if that will work.$"
 
 RustboroCity_Flat1_2F_Text_ShesNotSmilingAtAll2:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "{STR_VAR_1}.\n"
+	.string "{STR_VAR_1}.\p"
+	.string "Hmmm… She's not smiling at all.\n"
+	.string "Maybe WALDA is one serious child…$"
 
 RustboroCity_Flat1_2F_Text_OhYouDontKnowAny:
-	.string "CECILIA: Do alto, cidades\nparecem pequenas. As vidas\p"
-	.string "dentro delas nunca sao.$"
+	.string "Oh, so you don't know any good words.\n"
+	.string "I guess I'll try to amuse her with\l"
+	.string "the saying I used before.\p"
+	.string "Anyways, if you have a good suggestion,\n"
+	.string "don't hesitate in telling me, okay?$"
 
 RustboroCity_Flat1_2F_Text_ThankYouIllGiveYouWallpaper:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "Thank you!\p"
+	.string "Thanks to you, my darling WALDA\n"
+	.string "laughed for me!\p"
+	.string "Actually, I may not look all that\n"
+	.string "special, but I'm one of DEVON\l"
+	.string "CORPORATION's top researchers.\p"
+	.string "So, how about I do something in return\n"
+	.string "for you?\p"
+	.string "I know, I'll add some new wallpaper\n"
+	.string "patterns for the BOXES in the PC\l"
+	.string "POKéMON Storage System.\p"
+	.string "In the wallpaper pattern menu,\n"
+	.string "select “FRIENDS.”\p"
+	.string "That will give you access to the new\n"
+	.string "wallpaper patterns.$"
 
 RustboroCity_Flat1_2F_Text_ItsAPokemonPlushDoll:
-	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
-	.string "nomes antigos desapareceram\nquando elas chegaram.$"
+	.string "It's a POKéMON plush DOLL!$"
 

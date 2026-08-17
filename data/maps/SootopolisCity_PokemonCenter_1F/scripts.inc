@@ -45,19 +45,21 @@ SootopolisCity_PokemonCenter_1F_EventScript_WomanNoLegendaries::
 
 SootopolisCity_PokemonCenter_1F_Text_WallaceToughestInHoenn:
 	.string "AMALIA: Arauna sobreviveu a\nverdade pela metade por tempo\p"
-	.string "demais. A Liga tambem tem\ndividas com os nomes que foram\p"
-	.string "deixados para tras.$"
+	.string "demais. A Liga tambem tem\ndividas com quem foi apagado.$"
 
 SootopolisCity_PokemonCenter_1F_Text_EveryoneTakenRefuge:
-	.string "Dona Zila diz que uma historia\nmuda toda vez que e contada.\p"
-	.string "Talvez seja por isso que ainda\nesta viva.$"
+	.string "Everyone in town has taken refuge\n"
+	.string "and won't come out of their homes.\p"
+	.string "Even I would rather not venture\n"
+	.string "outside.$"
 
 SootopolisCity_PokemonCenter_1F_Text_AlwaysBeFriendsWithPokemon:
-	.string "Dona Zila diz que uma historia\nmuda toda vez que e contada.\p"
-	.string "Talvez seja por isso que ainda\nesta viva.$"
+	.string "Whenever, wherever, and whatever\n"
+	.string "happens, I will always be friends with\l"
+	.string "POKéMON.\p"
+	.string "Because it's fun to be with POKéMON!$"
 
 SootopolisCity_PokemonCenter_1F_Text_ArentPokemonOurFriends:
-	.string "Voce vai continuar mesmo\nsabendo que AGUAS DE M'BOI\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "Aren't POKéMON our friends?\p"
+	.string "Why are they going wild this way?$"
 

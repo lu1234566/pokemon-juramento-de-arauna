@@ -125,77 +125,78 @@ MagmaHideout_4F_EventScript_Tabitha::
 	end
 
 MagmaHideout_4F_Text_Grunt11Intro:
-	.string "LEMBRANTE: Apagar uma historia\nporque ela incomoda quem manda\p"
-	.string "e apenas outra forma de\nviolencia.$"
+	.string "Os sensores registram duas\ncorrentes antigas sob Arauna:\p"
+	.string "uma conserva VINCULOS; a outra\npermite que eles terminem. O\p"
+	.string "ARQUIVO tentou transformar\nambas em ferramentas.$"
 
 MagmaHideout_4F_Text_Grunt11Defeat:
-	.string "LEMBRANTE: Apagar uma historia\nporque ela incomoda quem manda\p"
-	.string "e apenas outra forma de\nviolencia.$"
+	.string "LEMBRANTE: Se uma historia\nincomoda quem manda, ela vira\p"
+	.string "'ruido', depois 'trauma',\ndepois desaparece do registro.$"
 
 MagmaHideout_4F_Text_Grunt11PostBattle:
-	.string "LEMBRANTE: Apagar uma historia\nporque ela incomoda quem manda\p"
-	.string "e apenas outra forma de\nviolencia.$"
+	.string "Os sensores registram duas\ncorrentes antigas sob Arauna:\p"
+	.string "uma conserva VINCULOS; a outra\npermite que eles terminem. O\p"
+	.string "ARQUIVO tentou transformar\nambas em ferramentas.$"
 
 MagmaHideout_4F_Text_Grunt12Intro:
-	.string "LEMBRANTE: Apagar uma historia\nporque ela incomoda quem manda\p"
-	.string "e apenas outra forma de\nviolencia.$"
+	.string "LEMBRANTE: LUZIA diz que\nmemoria devolvida sem permissao\p"
+	.string "ainda e melhor que memoria\nroubada. Nem todos aqui\p"
+	.string "concordam com essa parte.$"
 
 MagmaHideout_4F_Text_Grunt12Defeat:
-	.string "LEMBRANTE: Apagar uma historia\nporque ela incomoda quem manda\p"
-	.string "e apenas outra forma de\nviolencia.$"
+	.string "LEMBRANTE: Se uma historia\nincomoda quem manda, ela vira\p"
+	.string "'ruido', depois 'trauma',\ndepois desaparece do registro.$"
 
 MagmaHideout_4F_Text_Grunt12PostBattle:
-	.string "LUZIA: Ninguem tem o direito de\nescolher que memoria merece\p"
-	.string "morrer. Se for preciso devolver\ntoda a dor de uma vez, eu vou\p"
-	.string "devolver.$"
+	.string "LEMBRANTE: Guardar um nome pode\nser resistencia. Obrigar alguem\p"
+	.string "a reviver tudo tambem pode ser\nviolencia.$"
 
 MagmaHideout_4F_Text_Grunt13Intro:
-	.string "LEMBRANTE: Apagar uma historia\nporque ela incomoda quem manda\p"
-	.string "e apenas outra forma de\nviolencia.$"
+	.string "LEMBRANTE: Se uma historia\nincomoda quem manda, ela vira\p"
+	.string "'ruido', depois 'trauma',\ndepois desaparece do registro.$"
 
 MagmaHideout_4F_Text_Grunt13Defeat:
-	.string "LEMBRANTE: Apagar uma historia\nporque ela incomoda quem manda\p"
-	.string "e apenas outra forma de\nviolencia.$"
+	.string "LEMBRANTE: O HORIZONTE quer uma\nArauna estavel. Eu quero uma\p"
+	.string "Arauna que saiba por que suas\nruinas existem.$"
 
 MagmaHideout_4F_Text_Grunt13PostBattle:
-	.string "LEMBRANTE: Apagar uma historia\nporque ela incomoda quem manda\p"
-	.string "e apenas outra forma de\nviolencia.$"
+	.string "LEMBRANTE: O HORIZONTE quer uma\nArauna estavel. Eu quero uma\p"
+	.string "Arauna que saiba por que suas\nruinas existem.$"
 
 MagmaHideout_4F_Text_TabithaIntro:
-	.string "LUZIA: Ninguem tem o direito de\nescolher que memoria merece\p"
-	.string "morrer. Se for preciso devolver\ntoda a dor de uma vez, eu vou\p"
-	.string "devolver.$"
+	.string "Os sensores registram duas\ncorrentes antigas sob Arauna:\p"
+	.string "uma conserva VINCULOS; a outra\npermite que eles terminem. O\p"
+	.string "ARQUIVO tentou transformar\nambas em ferramentas.$"
 
 MagmaHideout_4F_Text_TabithaDefeat:
-	.string "LEMBRANTE: Apagar uma historia\nporque ela incomoda quem manda\p"
-	.string "e apenas outra forma de\nviolencia.$"
+	.string "Taken down again…\n"
+	.string "Hehe…$"
 
 MagmaHideout_4F_Text_TabithaPostBattle:
-	.string "LUZIA: Ninguem tem o direito de\nescolher que memoria merece\p"
-	.string "morrer. Se for preciso devolver\ntoda a dor de uma vez, eu vou\p"
-	.string "devolver.$"
+	.string "Os sensores registram duas\ncorrentes antigas sob Arauna:\p"
+	.string "uma conserva VINCULOS; a outra\npermite que eles terminem. O\p"
+	.string "ARQUIVO tentou transformar\nambas em ferramentas.$"
 
 MagmaHideout_4F_Text_MaxieAwakenGroudon:
-	.string "LUZIA: Ninguem tem o direito de\nescolher que memoria merece\p"
-	.string "morrer. Se for preciso devolver\ntoda a dor de uma vez, eu vou\p"
-	.string "devolver.$"
+	.string "Os sensores registram duas\ncorrentes antigas sob Arauna:\p"
+	.string "uma conserva VINCULOS; a outra\npermite que eles terminem. O\p"
+	.string "ARQUIVO tentou transformar\nambas em ferramentas.$"
 
 MagmaHideout_4F_Text_MaxieGroudonWhatsWrong:
-	.string "LUZIA: Ninguem tem o direito de\nescolher que memoria merece\p"
-	.string "morrer. Se for preciso devolver\ntoda a dor de uma vez, eu vou\p"
-	.string "devolver.$"
+	.string "Os sensores registram duas\ncorrentes antigas sob Arauna:\p"
+	.string "uma conserva VINCULOS; a outra\npermite que eles terminem. O\p"
+	.string "ARQUIVO tentou transformar\nambas em ferramentas.$"
 
 MagmaHideout_4F_Text_MaxieOhItWasYou:
-	.string "LUZIA: Ninguem tem o direito de\nescolher que memoria merece\p"
-	.string "morrer. Se for preciso devolver\ntoda a dor de uma vez, eu vou\p"
-	.string "devolver.$"
+	.string "LUZIA: O problema nunca foi\nlembrar demais. Foi deixar quem\p"
+	.string "tem poder decidir quais\nlembrancas os outros podem\p"
+	.string "conservar.$"
 
 MagmaHideout_4F_Text_MaxieDefeat:
-	.string "LUZIA: Ninguem tem o direito de\nescolher que memoria merece\p"
-	.string "morrer. Se for preciso devolver\ntoda a dor de uma vez, eu vou\p"
-	.string "devolver.$"
+	.string "LUZIA: Se devolver as memorias\ndoer, entao vai doer. Dor nao\p"
+	.string "autoriza ninguem a reescrever a\nvida de outra pessoa.$"
 
 MagmaHideout_4F_Text_MaxieImGoingAfterGroudon:
-	.string "LUZIA: Ninguem tem o direito de\nescolher que memoria merece\p"
-	.string "morrer. Se for preciso devolver\ntoda a dor de uma vez, eu vou\p"
-	.string "devolver.$"
+	.string "Os sensores registram duas\ncorrentes antigas sob Arauna:\p"
+	.string "uma conserva VINCULOS; a outra\npermite que eles terminem. O\p"
+	.string "ARQUIVO tentou transformar\nambas em ferramentas.$"

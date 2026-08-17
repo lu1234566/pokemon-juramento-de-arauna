@@ -905,13 +905,19 @@ LittlerootTown_EventScript_GiveRunningShoes::
 	return
 
 LittlerootTown_Text_OurNewHomeLetsGoInside:
-	.string "Voce vai continuar mesmo\nsabendo que VILA AMANHECER\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "MOM: {PLAYER}, we're here, honey!\p"
+	.string "It must be tiring riding with our things\n"
+	.string "in the moving truck.\p"
+	.string "Well, this is LITTLEROOT TOWN.\p"
+	.string "How do you like it?\n"
+	.string "This is our new home!\p"
+	.string "It has a quaint feel, but it seems to be\n"
+	.string "an easy place to live, don't you think?\p"
+	.string "And, you get your own room, {PLAYER}!\n"
+	.string "Let's go inside.$"
 
 LittlerootTown_Text_WaitPlayer:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "MOM: Wait, {PLAYER}!$"
 
 LittlerootTown_Text_WearTheseRunningShoes:
 	.string "MOM: {PLAYER}! {PLAYER}! Did you\n"
@@ -937,8 +943,14 @@ LittlerootTown_Text_ExplainRunningShoes:
 	.string "in the great outdoors!”$"
 
 LittlerootTown_Text_ComeHomeIfAnythingHappens:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "… … … … … … … …\n"
+	.string "… … … … … … … …\p"
+	.string "To think that you have your very own\n"
+	.string "POKéMON now…\l"
+	.string "Your father will be overjoyed.\p"
+	.string "…But please be careful.\n"
+	.string "If anything happens, you can come home.\p"
+	.string "Go on, go get them, honey!$"
 
 LittlerootTown_Text_CanUsePCToStoreItems:
 	.string "If you use a PC, you can store items\n"
@@ -946,32 +958,35 @@ LittlerootTown_Text_CanUsePCToStoreItems:
 	.string "The power of science is staggering!$"
 
 LittlerootTown_Text_BirchSpendsDaysInLab:
-	.string "ANAHI: Eu estudei os VINCULOS\nantes de entender o que minhas\p"
-	.string "pesquisas permitiriam fazer. Se\neu continuar calada, o erro\p"
-	.string "tambem sera meu.$"
+	.string "ANAHI: Eu ajudei a criar os\nprimeiros sensores de VINCULO.\p"
+	.string "Na epoca achei que medir\nsignificava compreender. Hoje\p"
+	.string "sei que nao e a mesma coisa.$"
 
 LittlerootTown_Text_IfYouGoInGrassPokemonWillJumpOut:
-	.string "O HORIZONTE consertou a estrada\ndaqui. Nao sei se isso torna\p"
-	.string "mais facil perguntar o que\nexiste debaixo dela.$"
+	.string "Um, um, um!\p"
+	.string "If you go outside and go in the grass,\n"
+	.string "wild POKéMON will jump out!$"
 
 LittlerootTown_Text_DangerousIfYouDontHavePokemon:
-	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
-	.string "nomes antigos desapareceram\nquando elas chegaram.$"
+	.string "It's dangerous if you don't have\n"
+	.string "your own POKéMON.$"
 
 LittlerootTown_Text_CanYouGoSeeWhatsHappening:
-	.string "Voce vai continuar mesmo\nsabendo que VILA AMANHECER\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "Um, hi!\p"
+	.string "There are scary POKéMON outside!\n"
+	.string "I can hear their cries!\p"
+	.string "I want to go see what's going on,\n"
+	.string "but I don't have any POKéMON…\p"
+	.string "Can you go see what's happening\n"
+	.string "for me?$"
 
 LittlerootTown_Text_YouSavedBirch:
-	.string "ANAHI: Eu estudei os VINCULOS\nantes de entender o que minhas\p"
-	.string "pesquisas permitiriam fazer. Se\neu continuar calada, o erro\p"
-	.string "tambem sera meu.$"
+	.string "ANAHI: Se eu continuar calada\nsobre o que o HORIZONTE fez com\p"
+	.string "minha pesquisa, o erro tambem\nsera meu.$"
 
 LittlerootTown_Text_GoodLuckCatchingPokemon:
-	.string "Voce vai continuar mesmo\nsabendo que VILA AMANHECER\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "Are you going to catch POKéMON?\n"
+	.string "Good luck!$"
 
 LittlerootTown_Text_TownSign:
 	.string "VILA AMANHECER. Aqui o\nJuramento ainda e contado de\p"
@@ -979,21 +994,18 @@ LittlerootTown_Text_TownSign:
 	.string "mais o pronuncia.$"
 
 LittlerootTown_Text_ProfBirchsLab:
-	.string "ANAHI: Eu estudei os VINCULOS\nantes de entender o que minhas\p"
-	.string "pesquisas permitiriam fazer. Se\neu continuar calada, o erro\p"
-	.string "tambem sera meu.$"
+	.string "ANAHI: Se eu continuar calada\nsobre o que o HORIZONTE fez com\p"
+	.string "minha pesquisa, o erro tambem\nsera meu.$"
 
 LittlerootTown_Text_PlayersHouse:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "{PLAYER}'s HOUSE$"
 
 LittlerootTown_Text_ProfBirchsHouse:
-	.string "ANAHI: Eu estudei os VINCULOS\nantes de entender o que minhas\p"
-	.string "pesquisas permitiriam fazer. Se\neu continuar calada, o erro\p"
-	.string "tambem sera meu.$"
+	.string "ANAHI: Se eu continuar calada\nsobre o que o HORIZONTE fez com\p"
+	.string "minha pesquisa, o erro tambem\nsera meu.$"
 
 LittlerootTown_Text_BirchSomethingToShowYouAtLab:
-	.string "ANAHI: Eu estudei os VINCULOS\nantes de entender o que minhas\p"
-	.string "pesquisas permitiriam fazer. Se\neu continuar calada, o erro\p"
-	.string "tambem sera meu.$"
+	.string "ANAHI: Eu ajudei a criar os\nprimeiros sensores de VINCULO.\p"
+	.string "Na epoca achei que medir\nsignificava compreender. Hoje\p"
+	.string "sei que nao e a mesma coisa.$"
 

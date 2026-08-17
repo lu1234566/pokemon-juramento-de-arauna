@@ -19,10 +19,11 @@ LilycoveCity_House2_EventScript_ReceivedRest::
 	end
 
 LilycoveCity_House2_Text_NotAwakeYetHaveThis:
-	.string "Voce vai continuar mesmo\nsabendo que BAIA DAS LUZES\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "Huh? What? What's that?\p"
+	.string "I'm not near awake yet…\n"
+	.string "You can have this…$"
 
 LilycoveCity_House2_Text_SleepIsEssential:
-	.string "Dona Zila diz que uma historia\nmuda toda vez que e contada.\p"
-	.string "Talvez seja por isso que ainda\nesta viva.$"
+	.string "Yawn…\p"
+	.string "Sleep is essential for good health…\n"
+	.string "Sleep and regain health…$"

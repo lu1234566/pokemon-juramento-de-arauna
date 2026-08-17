@@ -27,21 +27,27 @@ DewfordTown_House2_EventScript_Boy::
 	end
 
 DewfordTown_House2_Text_WantYouToHaveSilkScarf:
-	.string "Voce vai continuar mesmo\nsabendo que PORTO DAS REDES\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "Gorge your eyes on this!\p"
+	.string "It's a SILK SCARF. It's right at the\n"
+	.string "cutting edge of fashion, yeah!\p"
+	.string "Oh, I can see your eyes twinkling!\n"
+	.string "You appreciate my dazzling style!\p"
+	.string "Oh, you're a delight!\n"
+	.string "Here you go. I want you to have it!$"
 
 DewfordTown_House2_Text_NoRoom:
-	.string "Voce vai continuar mesmo\nsabendo que PORTO DAS REDES\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "Oh, you don't have room?\p"
+	.string "Now, listen tight, this SCARF is a must-\n"
+	.string "have! Why, I would sell all my items\l"
+	.string "in order to get it!$"
 
 DewfordTown_House2_Text_ExplainSilkScarf:
-	.string "Tem gente que chama de\nDESENCANTO. Eu chamava de\p"
-	.string "distraicao, ate minha mae\nesquecer a cancao que cantava\p"
-	.string "desde crianca.$"
+	.string "The SILK SCARF raises the power of\n"
+	.string "NORMAL-type moves.\p"
+	.string "It's a marvelous SCARF that will go\n"
+	.string "with almost all POKéMON!$"
 
 DewfordTown_House2_Text_BrawlySoCool:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "ADEMAR: O mar devolve coisas\nquando quer. Homem nenhum manda\p"
+	.string "na memoria da agua.$"
 

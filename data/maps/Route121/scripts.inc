@@ -169,21 +169,20 @@ Route121_EventScript_RematchCristin::
 	end
 
 Route121_Text_OkayMoveOutToMtPyre:
-	.string "As estradas de Arauna guardam\nsinais do DESENCANTO: nomes\p"
-	.string "riscados, historias incompletas\ne Pokemon que hesitam diante de\p"
-	.string "lugares conhecidos.$"
+	.string "Okay!\n"
+	.string "We're to move out to MT. PYRE!$"
 
 Route121_Text_AheadLoomsMtPyre:
-	.string "As estradas de Arauna guardam\nsinais do DESENCANTO: nomes\p"
-	.string "riscados, historias incompletas\ne Pokemon que hesitam diante de\p"
-	.string "lugares conhecidos.$"
+	.string "Ahead looms MT. PYRE…\p"
+	.string "It is a natural monument to the spirits \n"
+	.string "of departed POKéMON…$"
 
 Route121_Text_MtPyrePierSign:
-	.string "As estradas de Arauna guardam\nsinais do DESENCANTO: nomes\p"
-	.string "riscados, historias incompletas\ne Pokemon que hesitam diante de\p"
-	.string "lugares conhecidos.$"
+	.string "MT. PYRE PIER\p"
+	.string "…The sign is old and worn out.\n"
+	.string "The words are barely legible…$"
 
 Route121_Text_SafariZoneSign:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "“Filled with rare POKéMON!”\n"
+	.string "SAFARI ZONE$"
 

@@ -69,62 +69,61 @@ Route119_WeatherInstitute_1F_EventScript_Grunt4::
 	end
 
 Route119_WeatherInstitute_1F_Text_Grunt1Intro:
-	.string "As estradas de Arauna guardam\nsinais do DESENCANTO: nomes\p"
-	.string "riscados, historias incompletas\ne Pokemon que hesitam diante de\p"
-	.string "lugares conhecidos.$"
+	.string "Os dados mostram picos de\nDESENCANTO perto de instalacoes\p"
+	.string "que usam sensores de VINCULO em\ngrande escala.$"
 
 Route119_WeatherInstitute_1F_Text_Grunt1Defeat:
-	.string "As estradas de Arauna guardam\nsinais do DESENCANTO: nomes\p"
-	.string "riscados, historias incompletas\ne Pokemon que hesitam diante de\p"
-	.string "lugares conhecidos.$"
+	.string "Os dados mostram picos de\nDESENCANTO perto de instalacoes\p"
+	.string "que usam sensores de VINCULO em\ngrande escala.$"
 
 Route119_WeatherInstitute_1F_Text_Grunt1PostBattle:
-	.string "As estradas de Arauna guardam\nsinais do DESENCANTO: nomes\p"
-	.string "riscados, historias incompletas\ne Pokemon que hesitam diante de\p"
-	.string "lugares conhecidos.$"
+	.string "O HORIZONTE veio buscar os\nservidores. Os dados daqui\p"
+	.string "contradizem a versao oficial\nsobre a seguranca do ARQUIVO\p"
+	.string "VIVO.$"
 
 Route119_WeatherInstitute_1F_Text_Grunt4Intro:
-	.string "As estradas de Arauna guardam\nsinais do DESENCANTO: nomes\p"
-	.string "riscados, historias incompletas\ne Pokemon que hesitam diante de\p"
-	.string "lugares conhecidos.$"
+	.string "Os pesquisadores cruzaram\nchuva, temperatura e relatos de\p"
+	.string "perda de memoria. O clima nao\nexplica o padrao; a\p"
+	.string "infraestrutura do ARQUIVO\nexplica melhor.$"
 
 Route119_WeatherInstitute_1F_Text_Grunt4Defeat:
-	.string "As estradas de Arauna guardam\nsinais do DESENCANTO: nomes\p"
-	.string "riscados, historias incompletas\ne Pokemon que hesitam diante de\p"
-	.string "lugares conhecidos.$"
+	.string "Os pesquisadores cruzaram\nchuva, temperatura e relatos de\p"
+	.string "perda de memoria. O clima nao\nexplica o padrao; a\p"
+	.string "infraestrutura do ARQUIVO\nexplica melhor.$"
 
 Route119_WeatherInstitute_1F_Text_Grunt4PostBattle:
-	.string "As estradas de Arauna guardam\nsinais do DESENCANTO: nomes\p"
-	.string "riscados, historias incompletas\ne Pokemon que hesitam diante de\p"
-	.string "lugares conhecidos.$"
+	.string "Os pesquisadores cruzaram\nchuva, temperatura e relatos de\p"
+	.string "perda de memoria. O clima nao\nexplica o padrao; a\p"
+	.string "infraestrutura do ARQUIVO\nexplica melhor.$"
 
 Route119_WeatherInstitute_1F_Text_EveryoneWentUpstairs:
-	.string "As estradas de Arauna guardam\nsinais do DESENCANTO: nomes\p"
-	.string "riscados, historias incompletas\ne Pokemon que hesitam diante de\p"
-	.string "lugares conhecidos.$"
+	.string "While I was sleeping, everyone went\n"
+	.string "upstairs!$"
 
 Route119_WeatherInstitute_1F_Text_WowYoureStrong:
-	.string "As estradas de Arauna guardam\nsinais do DESENCANTO: nomes\p"
-	.string "riscados, historias incompletas\ne Pokemon que hesitam diante de\p"
-	.string "lugares conhecidos.$"
+	.string "Wow, you're really strong!\p"
+	.string "I wish I could be a POKéMON TRAINER\n"
+	.string "like you!$"
 
 Route119_WeatherInstitute_1F_Text_ProfStudyingRain:
-	.string "As estradas de Arauna guardam\nsinais do DESENCANTO: nomes\p"
-	.string "riscados, historias incompletas\ne Pokemon que hesitam diante de\p"
-	.string "lugares conhecidos.$"
+	.string "The PROFESSOR loves rain.\n"
+	.string "That's a fact.\p"
+	.string "But if it keeps raining, people will be in\n"
+	.string "trouble. That's another fact.\p"
+	.string "And thus, the PROFESSOR is studying\n"
+	.string "if the rain can be put to good use.$"
 
 Route119_WeatherInstitute_1F_Text_NoticingAbnormalWeather:
-	.string "As estradas de Arauna guardam\nsinais do DESENCANTO: nomes\p"
-	.string "riscados, historias incompletas\ne Pokemon que hesitam diante de\p"
-	.string "lugares conhecidos.$"
+	.string "Os pesquisadores cruzaram\nchuva, temperatura e relatos de\p"
+	.string "perda de memoria. O clima nao\nexplica o padrao; a\p"
+	.string "infraestrutura do ARQUIVO\nexplica melhor.$"
 
 Route119_WeatherInstitute_1F_Text_WhatWereAquasUpTo:
-	.string "HORIZONTE: O Arquivo preserva o\nque o tempo destruiria. Um dia\p"
-	.string "voces vao agradecer por nao\nprecisarem mais sofrer para\p"
-	.string "lembrar.$"
+	.string "O HORIZONTE veio buscar os\nservidores. Os dados daqui\p"
+	.string "contradizem a versao oficial\nsobre a seguranca do ARQUIVO\p"
+	.string "VIVO.$"
 
 Route119_WeatherInstitute_1F_Text_TakeRestInBed:
-	.string "As estradas de Arauna guardam\nsinais do DESENCANTO: nomes\p"
-	.string "riscados, historias incompletas\ne Pokemon que hesitam diante de\p"
-	.string "lugares conhecidos.$"
+	.string "There's a bed…\n"
+	.string "Let's take a rest.$"
 

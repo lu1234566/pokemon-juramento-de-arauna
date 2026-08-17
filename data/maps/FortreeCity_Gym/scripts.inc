@@ -134,156 +134,158 @@ FortreeCity_Gym_EventScript_GymStatue::
 	end
 
 FortreeCity_Gym_Text_GymGuideAdvice:
-	.string "LIDIA: A mata ensina caminhos\nsem escrever placas. Quando os\p"
-	.string "Pokemon esquecem esses\ncaminhos, alguma coisa muito\p"
-	.string "antiga foi ferida.$"
+	.string "Yo, how's it going, CHAMPION-\n"
+	.string "bound {PLAYER}?\p"
+	.string "FORTREE GYM LEADER WINONA is\n"
+	.string "a master of FLYING-type POKéMON.\p"
+	.string "She's waiting at the back of this GYM,\n"
+	.string "behind the rotating doors.\p"
+	.string "She's waiting for new challengers\n"
+	.string "who are trying to take wing!\p"
+	.string "Okay, go for it!$"
 
 FortreeCity_Gym_Text_GymGuidePostVictory:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "You did it!\n"
+	.string "You've achieved liftoff!$"
 
 FortreeCity_Gym_Text_JaredIntro:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "Behold the elegant battle style of\n"
+	.string "BIRD POKéMON!$"
 
 FortreeCity_Gym_Text_JaredDefeat:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "You…\n"
+	.string "You're strong…$"
 
 FortreeCity_Gym_Text_JaredPostBattle:
-	.string "Voce vai continuar mesmo\nsabendo que MATA DO MEIO guarda\p"
-	.string "partes da historia que muita\ngente preferia deixar\p"
-	.string "enterradas?$"
+	.string "A TRAINER has to be smart to keep\n"
+	.string "up with unexpected turns of events.\p"
+	.string "Do you have the smarts to get to\n"
+	.string "our LEADER?$"
 
 FortreeCity_Gym_Text_EdwardoIntro:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "The lovers of BIRD POKéMON aspire\n"
+	.string "to join this GYM.\p"
+	.string "As a member of the FORTREE GYM,\n"
+	.string "I'm not allowed to lose!$"
 
 FortreeCity_Gym_Text_EdwardoDefeat:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "It was too much of a load for me\n"
+	.string "to bear…$"
 
 FortreeCity_Gym_Text_EdwardoPostBattle:
-	.string "O HORIZONTE consertou a estrada\ndaqui. Nao sei se isso torna\p"
-	.string "mais facil perguntar o que\nexiste debaixo dela.$"
+	.string "The world is huge, and there are\n"
+	.string "countless tough TRAINERS.\p"
+	.string "I'm going to keep training and make\n"
+	.string "myself even stronger.$"
 
 FortreeCity_Gym_Text_FlintIntro:
-	.string "LIDIA: A mata ensina caminhos\nsem escrever placas. Quando os\p"
-	.string "Pokemon esquecem esses\ncaminhos, alguma coisa muito\p"
-	.string "antiga foi ferida.$"
+	.string "There's no need for WINONA, our GYM\n"
+	.string "LEADER, to deal with you!\p"
+	.string "I'm plenty good enough for you!$"
 
 FortreeCity_Gym_Text_FlintDefeat:
-	.string "LIDIA: A mata ensina caminhos\nsem escrever placas. Quando os\p"
-	.string "Pokemon esquecem esses\ncaminhos, alguma coisa muito\p"
-	.string "antiga foi ferida.$"
+	.string "WINONA, I…\n"
+	.string "I lost!$"
 
 FortreeCity_Gym_Text_FlintPostBattle:
-	.string "LIDIA: A mata ensina caminhos\nsem escrever placas. Quando os\p"
-	.string "Pokemon esquecem esses\ncaminhos, alguma coisa muito\p"
-	.string "antiga foi ferida.$"
+	.string "WINONA is cute and she's strong.\n"
+	.string "She's the ultimate LEADER!\p"
+	.string "Blush…$"
 
 FortreeCity_Gym_Text_AshleyIntro:
-	.string "LIDIA: A mata ensina caminhos\nsem escrever placas. Quando os\p"
-	.string "Pokemon esquecem esses\ncaminhos, alguma coisa muito\p"
-	.string "antiga foi ferida.$"
+	.string "WINONA taught me personally!\n"
+	.string "You can't beat me easily!$"
 
 FortreeCity_Gym_Text_AshleyDefeat:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "I was beaten…$"
 
 FortreeCity_Gym_Text_AshleyPostBattle:
-	.string "LIDIA: A mata ensina caminhos\nsem escrever placas. Quando os\p"
-	.string "Pokemon esquecem esses\ncaminhos, alguma coisa muito\p"
-	.string "antiga foi ferida.$"
+	.string "Thanks to WINONA, the people of\n"
+	.string "FORTREE can live without fear.$"
 
 FortreeCity_Gym_Text_HumbertoIntro:
-	.string "LIDIA: A mata ensina caminhos\nsem escrever placas. Quando os\p"
-	.string "Pokemon esquecem esses\ncaminhos, alguma coisa muito\p"
-	.string "antiga foi ferida.$"
+	.string "When WINONA takes to battle, her face\n"
+	.string "shines with beautiful determination…\p"
+	.string "I'm not letting you witness that\n"
+	.string "lovely sight!$"
 
 FortreeCity_Gym_Text_HumbertoDefeat:
-	.string "Tem gente que chama de\nDESENCANTO. Eu chamava de\p"
-	.string "distraicao, ate minha mae\nesquecer a cancao que cantava\p"
-	.string "desde crianca.$"
+	.string "Urk!\n"
+	.string "I couldn't stop you.$"
 
 FortreeCity_Gym_Text_HumbertoPostBattle:
-	.string "LIDIA: A mata ensina caminhos\nsem escrever placas. Quando os\p"
-	.string "Pokemon esquecem esses\ncaminhos, alguma coisa muito\p"
-	.string "antiga foi ferida.$"
+	.string "You'd better watch it!\n"
+	.string "Don't get distracted staring at WINONA\l"
+	.string "or you'll go crashing down in a heap!$"
 
 FortreeCity_Gym_Text_DariusIntro:
-	.string "Voce vai continuar mesmo\nsabendo que MATA DO MEIO guarda\p"
-	.string "partes da historia que muita\ngente preferia deixar\p"
-	.string "enterradas?$"
+	.string "You'd better know that there are all\n"
+	.string "sorts of FLYING-type POKéMON.\p"
+	.string "You do know that, right?$"
 
 FortreeCity_Gym_Text_DariusDefeat:
-	.string "Tem gente que chama de\nDESENCANTO. Eu chamava de\p"
-	.string "distraicao, ate minha mae\nesquecer a cancao que cantava\p"
-	.string "desde crianca.$"
+	.string "You seem to know your stuff!$"
 
 FortreeCity_Gym_Text_DariusPostBattle:
-	.string "LIDIA: A mata ensina caminhos\nsem escrever placas. Quando os\p"
-	.string "Pokemon esquecem esses\ncaminhos, alguma coisa muito\p"
-	.string "antiga foi ferida.$"
+	.string "Sure, you beat me all right.\n"
+	.string "But you'd better watch it! Our LEADER\l"
+	.string "WINONA's POKéMON are all business.$"
 
 FortreeCity_Gym_Text_WinonaIntro:
-	.string "LIDIA: A mata ensina caminhos\nsem escrever placas. Quando os\p"
-	.string "Pokemon esquecem esses\ncaminhos, alguma coisa muito\p"
-	.string "antiga foi ferida.$"
+	.string "LIDIA: Quando os POKéMON\nesquecem caminhos transmitidos\p"
+	.string "entre geracoes, alguma coisa\nantiga foi ferida.$"
 
 FortreeCity_Gym_Text_WinonaDefeat:
-	.string "LIDIA: A mata ensina caminhos\nsem escrever placas. Quando os\p"
-	.string "Pokemon esquecem esses\ncaminhos, alguma coisa muito\p"
-	.string "antiga foi ferida.$"
+	.string "LIDIA: Quando os POKéMON\nesquecem caminhos transmitidos\p"
+	.string "entre geracoes, alguma coisa\nantiga foi ferida.$"
 
 FortreeCity_Gym_Text_ReceivedFeatherBadge:
 	.string "{PLAYER} received the FEATHER BADGE\n"
 	.string "from WINONA.$"
 
 FortreeCity_Gym_Text_ExplainFeatherBadgeTakeThis:
-	.string "Tem gente que chama de\nDESENCANTO. Eu chamava de\p"
-	.string "distraicao, ate minha mae\nesquecer a cancao que cantava\p"
-	.string "desde crianca.$"
+	.string "With the FEATHER BADGE, all POKéMON up\n"
+	.string "to LV 70, even those received through\l"
+	.string "trades, will obey your every command.\p"
+	.string "You will also be able to use\n"
+	.string "the HM move FLY outside of battle.\p"
+	.string "And this…\n"
+	.string "This is a gift from me.$"
 
 FortreeCity_Gym_Text_ExplainAerialAce:
-	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
-	.string "nomes antigos desapareceram\nquando elas chegaram.$"
+	.string "TM40 contains AERIAL ACE.\p"
+	.string "Its speed…\n"
+	.string "No POKéMON should be able to avoid it.\p"
+	.string "… … … … … …$"
 
 FortreeCity_Gym_Text_RegisteredWinona:
-	.string "LIDIA: A mata ensina caminhos\nsem escrever placas. Quando os\p"
-	.string "Pokemon esquecem esses\ncaminhos, alguma coisa muito\p"
-	.string "antiga foi ferida.$"
+	.string "Registered GYM LEADER WINONA\n"
+	.string "in the POKéNAV.$"
 
 FortreeCity_Gym_Text_WinonaPostBattle:
-	.string "LIDIA: A mata ensina caminhos\nsem escrever placas. Quando os\p"
-	.string "Pokemon esquecem esses\ncaminhos, alguma coisa muito\p"
-	.string "antiga foi ferida.$"
+	.string "LIDIA: Quando os POKéMON\nesquecem caminhos transmitidos\p"
+	.string "entre geracoes, alguma coisa\nantiga foi ferida.$"
 
 FortreeCity_Gym_Text_GymStatue:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "FORTREE CITY POKéMON GYM$"
 
 FortreeCity_Gym_Text_GymStatueCertified:
-	.string "LIDIA: A mata ensina caminhos\nsem escrever placas. Quando os\p"
-	.string "Pokemon esquecem esses\ncaminhos, alguma coisa muito\p"
-	.string "antiga foi ferida.$"
+	.string "FORTREE CITY POKéMON GYM\p"
+	.string "WINONA'S CERTIFIED TRAINERS:\n"
+	.string "{PLAYER}$"
 
 FortreeCity_Gym_Text_WinonaPreRematch:
-	.string "LIDIA: A mata ensina caminhos\nsem escrever placas. Quando os\p"
-	.string "Pokemon esquecem esses\ncaminhos, alguma coisa muito\p"
-	.string "antiga foi ferida.$"
+	.string "LIDIA: Quando os POKéMON\nesquecem caminhos transmitidos\p"
+	.string "entre geracoes, alguma coisa\nantiga foi ferida.$"
 
 FortreeCity_Gym_Text_WinonaRematchDefeat:
-	.string "LIDIA: A mata ensina caminhos\nsem escrever placas. Quando os\p"
-	.string "Pokemon esquecem esses\ncaminhos, alguma coisa muito\p"
-	.string "antiga foi ferida.$"
+	.string "LIDIA: Quando os POKéMON\nesquecem caminhos transmitidos\p"
+	.string "entre geracoes, alguma coisa\nantiga foi ferida.$"
 
 FortreeCity_Gym_Text_WinonaPostRematch:
-	.string "LIDIA: A mata ensina caminhos\nsem escrever placas. Quando os\p"
-	.string "Pokemon esquecem esses\ncaminhos, alguma coisa muito\p"
-	.string "antiga foi ferida.$"
+	.string "LIDIA: Quando os POKéMON\nesquecem caminhos transmitidos\p"
+	.string "entre geracoes, alguma coisa\nantiga foi ferida.$"
 
 FortreeCity_Gym_Text_WinonaRematchNeedTwoMons:
-	.string "LIDIA: A mata ensina caminhos\nsem escrever placas. Quando os\p"
-	.string "Pokemon esquecem esses\ncaminhos, alguma coisa muito\p"
-	.string "antiga foi ferida.$"
+	.string "LIDIA: Quando os POKéMON\nesquecem caminhos transmitidos\p"
+	.string "entre geracoes, alguma coisa\nantiga foi ferida.$"

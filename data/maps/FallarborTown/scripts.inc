@@ -52,29 +52,32 @@ FallarborTown_EventScript_MoveTutorSign::
 	end
 
 FallarborTown_Text_ShadyCharactersCozmosHome:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "Something's happening,\n"
+	.string "and I don't like it!\p"
+	.string "I've seen shady characters wandering\n"
+	.string "in and out of PROF. COZMO's home…$"
 
 FallarborTown_Text_RegionKnownForMeteors:
-	.string "Tem gente que chama de\nDESENCANTO. Eu chamava de\p"
-	.string "distraicao, ate minha mae\nesquecer a cancao que cantava\p"
-	.string "desde crianca.$"
+	.string "This region's been known for meteors\n"
+	.string "since the olden days.\p"
+	.string "They say METEOR FALLS was gouged out\n"
+	.string "by a falling meteorite long ago.$"
 
 FallarborTown_Text_MyPreciousAzurill:
-	.string "O HORIZONTE consertou a estrada\ndaqui. Nao sei se isso torna\p"
-	.string "mais facil perguntar o que\nexiste debaixo dela.$"
+	.string "See! Take a look!\n"
+	.string "This is my precious AZURILL!\p"
+	.string "It's slick and smooth and plushy, too!$"
 
 FallarborTown_Text_Azurill:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "AZURILL: Rooreelooo.$"
 
 FallarborTown_Text_HaveYouChallengedFlannery:
 	.string "NARA: Cinza e o que sobra\ndepois do fogo. Nao e o fim de\p"
-	.string "tudo; mas tambem nao devemos\nfingir que nada queimou.$"
+	.string "tudo; tambem nao devemos fingir\nque nada queimou.$"
 
 FallarborTown_Text_BattleTentSign:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "BATTLE TENT FALLARBOR SITE\n"
+	.string "“May the Greatest Teams Gather!”$"
 
 FallarborTown_Text_TownSign:
 	.string "CAMPO DAS CINZAS. O DESENCANTO\navanca onde a terra ja foi\p"

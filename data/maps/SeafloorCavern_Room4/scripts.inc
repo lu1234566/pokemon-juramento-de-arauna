@@ -12,32 +12,28 @@ SeafloorCavern_Room4_EventScript_Grunt4::
 	end
 
 SeafloorCavern_Room4_Text_Grunt3Intro:
-	.string "Otacilio volta ao lugar onde\nperdeu a familia. Luzia chega\p"
-	.string "para libertar tudo que foi\narmazenado. Os dois extremos\p"
-	.string "colidem.$"
+	.string "Gravacoes antigas misturam\nordens de evacuacao, pedidos de\p"
+	.string "socorro e trechos que alguem\nmarcou para exclusao.$"
 
 SeafloorCavern_Room4_Text_Grunt3Defeat:
-	.string "Otacilio volta ao lugar onde\nperdeu a familia. Luzia chega\p"
-	.string "para libertar tudo que foi\narmazenado. Os dois extremos\p"
-	.string "colidem.$"
+	.string "O ARQUIVO reage como se memoria\ne esquecimento fossem forcas\p"
+	.string "fisicas. Pela primeira vez fica\nclaro que ele nunca esteve\p"
+	.string "realmente sob controle humano.$"
 
 SeafloorCavern_Room4_Text_Grunt3PostBattle:
-	.string "Otacilio volta ao lugar onde\nperdeu a familia. Luzia chega\p"
-	.string "para libertar tudo que foi\narmazenado. Os dois extremos\p"
-	.string "colidem.$"
+	.string "Gravacoes antigas misturam\nordens de evacuacao, pedidos de\p"
+	.string "socorro e trechos que alguem\nmarcou para exclusao.$"
 
 SeafloorCavern_Room4_Text_Grunt4Intro:
-	.string "Otacilio volta ao lugar onde\nperdeu a familia. Luzia chega\p"
-	.string "para libertar tudo que foi\narmazenado. Os dois extremos\p"
-	.string "colidem.$"
+	.string "O ARQUIVO reage como se memoria\ne esquecimento fossem forcas\p"
+	.string "fisicas. Pela primeira vez fica\nclaro que ele nunca esteve\p"
+	.string "realmente sob controle humano.$"
 
 SeafloorCavern_Room4_Text_Grunt4Defeat:
-	.string "Otacilio volta ao lugar onde\nperdeu a familia. Luzia chega\p"
-	.string "para libertar tudo que foi\narmazenado. Os dois extremos\p"
-	.string "colidem.$"
+	.string "Gravacoes antigas misturam\nordens de evacuacao, pedidos de\p"
+	.string "socorro e trechos que alguem\nmarcou para exclusao.$"
 
 SeafloorCavern_Room4_Text_Grunt4PostBattle:
-	.string "Otacilio volta ao lugar onde\nperdeu a familia. Luzia chega\p"
-	.string "para libertar tudo que foi\narmazenado. Os dois extremos\p"
-	.string "colidem.$"
+	.string "Os sensores enlouquecem. As\ncavernas de M'BOI ainda\p"
+	.string "carregam VINCULOS que o ARQUIVO\nnunca conseguiu classificar.$"
 

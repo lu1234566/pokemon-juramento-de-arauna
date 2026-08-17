@@ -322,78 +322,71 @@ Route110_TrickHousePuzzle7_Text_WroteSecretCodeLockOpened::
 	.string "The lock clicked open!$"
 
 Route110_TrickHousePuzzle7_Text_JoshuaIntro:
-	.string "Voce vai continuar mesmo\nsabendo que\p"
-	.string "ROUTE110 TRICKHOUSEPUZZLE7\nguarda partes da historia que\p"
-	.string "muita gente preferia deixar\nenterradas?$"
+	.string "The TRICK MASTER always vanishes\n"
+	.string "like smoke. How does he do it?$"
 
 Route110_TrickHousePuzzle7_Text_JoshuaDefeat:
-	.string "Voce vai continuar mesmo\nsabendo que\p"
-	.string "ROUTE110 TRICKHOUSEPUZZLE7\nguarda partes da historia que\p"
-	.string "muita gente preferia deixar\nenterradas?$"
+	.string "Aiyeeeh! You're much too strong!\n"
+	.string "How do you do it?$"
 
 Route110_TrickHousePuzzle7_Text_JoshuaPostBattle:
-	.string "Tem gente que chama de\nDESENCANTO. Eu chamava de\p"
-	.string "distraicao, ate minha mae\nesquecer a cancao que cantava\p"
-	.string "desde crianca.$"
+	.string "I wish I could appear and disappear as\n"
+	.string "if I were smoke, too.$"
 
 Route110_TrickHousePuzzle7_Text_PatriciaIntro:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "Going around the same spot…\n"
+	.string "It begets ill fortune…$"
 
 Route110_TrickHousePuzzle7_Text_PatriciaDefeat:
-	.string "Tem gente que chama de\nDESENCANTO. Eu chamava de\p"
-	.string "distraicao, ate minha mae\nesquecer a cancao que cantava\p"
-	.string "desde crianca.$"
+	.string "Defeated!\n"
+	.string "It's a bad sign…$"
 
 Route110_TrickHousePuzzle7_Text_PatriciaPostBattle:
-	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
-	.string "nomes antigos desapareceram\nquando elas chegaram.$"
+	.string "I've circled the same spot over ten\n"
+	.string "times now… It's ill fortune…$"
 
 Route110_TrickHousePuzzle7_Text_AlexisIntro:
-	.string "O HORIZONTE consertou a estrada\ndaqui. Nao sei se isso torna\p"
-	.string "mais facil perguntar o que\nexiste debaixo dela.$"
+	.string "Whoever wins will get through here\n"
+	.string "first. That's the feeling I get.$"
 
 Route110_TrickHousePuzzle7_Text_AlexisDefeat:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "Oh!\n"
+	.string "Well, go ahead, then!$"
 
 Route110_TrickHousePuzzle7_Text_AlexisPostBattle:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "You're solving all the puzzles in the\n"
+	.string "TRICK HOUSE. That's the feeling I get.$"
 
 Route110_TrickHousePuzzle7_Text_MarielaIntro:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "Nufufufu, here at last!\n"
+	.string "Let's get right with it!$"
 
 Route110_TrickHousePuzzle7_Text_MarielaDefeat:
-	.string "Tem gente que chama de\nDESENCANTO. Eu chamava de\p"
-	.string "distraicao, ate minha mae\nesquecer a cancao que cantava\p"
-	.string "desde crianca.$"
+	.string "You're so casual about winning!$"
 
 Route110_TrickHousePuzzle7_Text_MarielaPostBattle:
-	.string "Dona Zila diz que uma historia\nmuda toda vez que e contada.\p"
-	.string "Talvez seja por isso que ainda\nesta viva.$"
+	.string "Humph! I'm not upset!\n"
+	.string "Not me!$"
 
 Route110_TrickHousePuzzle7_Text_AlvaroIntro:
-	.string "O HORIZONTE consertou a estrada\ndaqui. Nao sei se isso torna\p"
-	.string "mais facil perguntar o que\nexiste debaixo dela.$"
+	.string "I ever so closely watched you coming!$"
 
 Route110_TrickHousePuzzle7_Text_AlvaroDefeat:
 	.string "This outcome I didn't see coming…$"
 
 Route110_TrickHousePuzzle7_Text_AlvaroPostBattle:
-	.string "O HORIZONTE consertou a estrada\ndaqui. Nao sei se isso torna\p"
-	.string "mais facil perguntar o que\nexiste debaixo dela.$"
+	.string "Well, anyway, we both picked a weird\n"
+	.string "place to get acquainted.\p"
+	.string "As one weirdo to another,\n"
+	.string "let's do our best!$"
 
 Route110_TrickHousePuzzle7_Text_EverettIntro:
-	.string "Dona Zila diz que uma historia\nmuda toda vez que e contada.\p"
-	.string "Talvez seja por isso que ainda\nesta viva.$"
+	.string "It's awfully cramped in here…$"
 
 Route110_TrickHousePuzzle7_Text_EverettDefeat:
-	.string "O HORIZONTE consertou a estrada\ndaqui. Nao sei se isso torna\p"
-	.string "mais facil perguntar o que\nexiste debaixo dela.$"
+	.string "Oh, yes, strong you are.$"
 
 Route110_TrickHousePuzzle7_Text_EverettPostBattle:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "I was hoping to switch places with you\n"
+	.string "when I beat you, but…$"
 

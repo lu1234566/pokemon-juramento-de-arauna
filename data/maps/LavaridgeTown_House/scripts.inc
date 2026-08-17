@@ -16,11 +16,11 @@ LavaridgeTown_House_EventScript_Zigzagoon::
 	end
 
 LavaridgeTown_House_Text_WifeWarmingEggInHotSprings:
-	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
-	.string "nomes antigos desapareceram\nquando elas chegaram.$"
+	.string "My wife's warming an EGG in the hot\n"
+	.string "springs. This is what she told me.\p"
+	.string "She left two POKéMON with the DAY CARE.\n"
+	.string "And they discovered that EGG!$"
 
 LavaridgeTown_House_Text_Zigzagoon:
-	.string "Tem gente que chama de\nDESENCANTO. Eu chamava de\p"
-	.string "distraicao, ate minha mae\nesquecer a cancao que cantava\p"
-	.string "desde crianca.$"
+	.string "ZIGZAGOON: Pshoo!$"
 

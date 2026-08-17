@@ -57,12 +57,11 @@ SeafloorCavern_Entrance_EventScript_GruntFacePlayerNorth::
 	return
 
 SeafloorCavern_Entrance_Text_HearMagmaNearMossdeep:
-	.string "HORIZONTE: O Arquivo preserva o\nque o tempo destruiria. Um dia\p"
-	.string "voces vao agradecer por nao\nprecisarem mais sofrer para\p"
-	.string "lembrar.$"
+	.string "OTACILIO e LUZIA chegaram ao\nmesmo lugar por razoes opostas:\p"
+	.string "um quer encerrar a dor; a outra\nquer devolver tudo. Nenhum\p"
+	.string "perguntou a quem tera de viver\ncom a escolha.$"
 
 SeafloorCavern_Entrance_Text_HearMagmaNearMossdeepShort:
-	.string "HORIZONTE: O Arquivo preserva o\nque o tempo destruiria. Um dia\p"
-	.string "voces vao agradecer por nao\nprecisarem mais sofrer para\p"
-	.string "lembrar.$"
+	.string "Os sensores enlouquecem. As\ncavernas de M'BOI ainda\p"
+	.string "carregam VINCULOS que o ARQUIVO\nnunca conseguiu classificar.$"
 

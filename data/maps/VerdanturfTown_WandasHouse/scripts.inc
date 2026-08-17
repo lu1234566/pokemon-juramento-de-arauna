@@ -91,43 +91,57 @@ VerdanturfTown_WandasHouse_Text_StrongerSpeechShort:
 	.string "esquecer o medo; e caminhar\nmesmo lembrando dele.$"
 
 VerdanturfTown_WandasHouse_Text_WallysNextDoor:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "VAL: Eu ainda tenho medo. Mas\nagora sei que coragem nao e\p"
+	.string "esquecer o medo; e caminhar\nmesmo lembrando dele.$"
 
 VerdanturfTown_WandasHouse_Text_WallySlippedOff:
 	.string "VAL: Eu ainda tenho medo. Mas\nagora sei que coragem nao e\p"
 	.string "esquecer o medo; e caminhar\nmesmo lembrando dele.$"
 
 VerdanturfTown_WandasHouse_Text_WallyGoneThatFar:
-	.string "VAL: Eu ainda tenho medo. Mas\nagora sei que coragem nao e\p"
-	.string "esquecer o medo; e caminhar\nmesmo lembrando dele.$"
+	.string "VAL: Passei muito tempo achando\nque precisava virar outra\p"
+	.string "pessoa para seguir viagem. Eu\nso precisava descobrir meu\p"
+	.string "proprio ritmo.$"
 
 VerdanturfTown_WandasHouse_Text_MeetWanda:
-	.string "VAL: Eu ainda tenho medo. Mas\nagora sei que coragem nao e\p"
-	.string "esquecer o medo; e caminhar\nmesmo lembrando dele.$"
+	.string "WANDA: You are?\n"
+	.string "Oh, right, I get it!\p"
+	.string "You're the {PLAYER} who WALLY was\n"
+	.string "telling me about.\p"
+	.string "I'm WALLY's cousin.\n"
+	.string "Glad to meet you!\p"
+	.string "I think WALLY's become a lot more lively\n"
+	.string "and healthy since he came here.$"
 
 VerdanturfTown_WandasHouse_Text_DontWorryAboutWally:
-	.string "VAL: Eu ainda tenho medo. Mas\nagora sei que coragem nao e\p"
-	.string "esquecer o medo; e caminhar\nmesmo lembrando dele.$"
+	.string "VAL: Passei muito tempo achando\nque precisava virar outra\p"
+	.string "pessoa para seguir viagem. Eu\nso precisava descobrir meu\p"
+	.string "proprio ritmo.$"
 
 VerdanturfTown_WandasHouse_Text_CanSeeGirlfriendEveryDay:
-	.string "Voce vai continuar mesmo\nsabendo que VALE DO SILENCIO\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "Thanks to you, I can see my girlfriend\n"
+	.string "every day.\l"
+	.string "Happy? You bet I am!$"
 
 VerdanturfTown_WandasHouse_Text_DaughtersBoyfriendDriven:
-	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
-	.string "nomes antigos desapareceram\nquando elas chegaram.$"
+	.string "My daughter's boyfriend is a very\n"
+	.string "driven and passionate sort of person.\p"
+	.string "He's been digging a tunnel nonstop\n"
+	.string "just so he can see my daughter.\p"
+	.string "My daughter's a little concerned,\n"
+	.string "so she goes out to the tunnel a lot.$"
 
 VerdanturfTown_WandasHouse_Text_DaughtersBoyfriendWasDigging:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "It's amazing. My daughter's boyfriend\n"
+	.string "was digging the tunnel by hand!\p"
+	.string "It's so incredible!$"
 
 VerdanturfTown_WandasHouse_Text_IfAnythingHappenedToWally:
 	.string "VAL: Eu ainda tenho medo. Mas\nagora sei que coragem nao e\p"
 	.string "esquecer o medo; e caminhar\nmesmo lembrando dele.$"
 
 VerdanturfTown_WandasHouse_Text_WallyWasInEverGrande:
-	.string "VAL: Eu ainda tenho medo. Mas\nagora sei que coragem nao e\p"
-	.string "esquecer o medo; e caminhar\nmesmo lembrando dele.$"
+	.string "VAL: Passei muito tempo achando\nque precisava virar outra\p"
+	.string "pessoa para seguir viagem. Eu\nso precisava descobrir meu\p"
+	.string "proprio ritmo.$"
 

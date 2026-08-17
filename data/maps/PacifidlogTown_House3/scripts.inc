@@ -58,19 +58,20 @@ PacifidlogTown_House3_Text_WillingToTradeIt:
 	.string "to trade it for a {STR_VAR_1}.$"
 
 PacifidlogTown_House3_Text_ItsSubtlyDifferentThankYou:
-	.string "Voce vai continuar mesmo\nsabendo que CASA DA FOGUEIRA\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "Oh, so this is a {STR_VAR_1}?\p"
+	.string "It's sort of like a {STR_VAR_2},\n"
+	.string "and yet it's subtly different.\p"
+	.string "Thank you!$"
 
 PacifidlogTown_House3_Text_WontAcceptAnyLessThanRealMon:
-	.string "Tem gente que chama de\nDESENCANTO. Eu chamava de\p"
-	.string "distraicao, ate minha mae\nesquecer a cancao que cantava\p"
-	.string "desde crianca.$"
+	.string "No, no, no! I won't accept any\n"
+	.string "less than a real {STR_VAR_1}!$"
 
 PacifidlogTown_House3_Text_NotDesperateOrAnything:
-	.string "Voce vai continuar mesmo\nsabendo que CASA DA FOGUEIRA\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "Oh, so you're not going to go through\n"
+	.string "with this?\p"
+	.string "That's cool. I'm not desperate to make\n"
+	.string "a trade or anything.$"
 
 PacifidlogTown_House3_Text_ReallyWantedToGetBagon:
 	.string "I know I could go looking for one\n"

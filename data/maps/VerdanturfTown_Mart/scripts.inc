@@ -47,7 +47,7 @@ VerdanturfTown_Mart_Text_XSpecialIsCrucial:
 VerdanturfTown_Mart_Text_NoStrategyGuidesForBattleTent:
 	.string "Os sensores registram duas\ncorrentes antigas sob Arauna:\p"
 	.string "uma conserva VINCULOS; a outra\npermite que eles terminem. O\p"
-	.string "Arquivo tentou transformar\nambas em ferramentas.$"
+	.string "ARQUIVO tentou transformar\nambas em ferramentas.$"
 
 VerdanturfTown_Mart_Text_NestBallOnWeakenedPokemon:
 	.string "The NEST BALL works better on\n"

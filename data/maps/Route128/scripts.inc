@@ -242,42 +242,44 @@ Route128_EventScript_Carlee::
 	end
 
 Route128_Text_ArchieWhatHappened:
-	.string "OTACILIO: Eu nao quero poder.\nQuero um mundo em que nenhuma\p"
-	.string "pessoa seja obrigada a carregar\npara sempre a pior coisa que ja\p"
-	.string "viveu.$"
+	.string "OTACILIO: Eu vi o que uma\nmemoria pode fazer com quem\p"
+	.string "sobrevive. O ARQUIVO VIVO\nexiste para que ninguem seja\p"
+	.string "condenado a carregar a pior\nnoite da propria vida para\p"
+	.string "sempre.$"
 
 Route128_Text_ArchieIOnlyWanted:
-	.string "OTACILIO: Eu nao quero poder.\nQuero um mundo em que nenhuma\p"
-	.string "pessoa seja obrigada a carregar\npara sempre a pior coisa que ja\p"
-	.string "viveu.$"
+	.string "OTACILIO: Preservar tudo nao e\ncompaixao. As vezes e apenas\p"
+	.string "obrigar uma ferida a continuar\naberta e chamar isso de\p"
+	.string "respeito.$"
 
 Route128_Text_MaxieDoYouUnderstandNow:
-	.string "OTACILIO: Eu nao quero poder.\nQuero um mundo em que nenhuma\p"
-	.string "pessoa seja obrigada a carregar\npara sempre a pior coisa que ja\p"
-	.string "viveu.$"
+	.string "LUZIA: O problema nunca foi\nlembrar demais. Foi deixar quem\p"
+	.string "tem poder decidir quais\nlembrancas os outros podem\p"
+	.string "conservar.$"
 
 Route128_Text_MaxieResposibilityFallsToArchieAndMe:
-	.string "OTACILIO: Eu nao quero poder.\nQuero um mundo em que nenhuma\p"
-	.string "pessoa seja obrigada a carregar\npara sempre a pior coisa que ja\p"
-	.string "viveu.$"
+	.string "OTACILIO: Eu vi o que uma\nmemoria pode fazer com quem\p"
+	.string "sobrevive. O ARQUIVO VIVO\nexiste para que ninguem seja\p"
+	.string "condenado a carregar a pior\nnoite da propria vida para\p"
+	.string "sempre.$"
 
 Route128_Text_MaxieThisDefiesBelief:
-	.string "LUZIA: Ninguem tem o direito de\nescolher que memoria merece\p"
-	.string "morrer. Se for preciso devolver\ntoda a dor de uma vez, eu vou\p"
-	.string "devolver.$"
+	.string "LUZIA: O problema nunca foi\nlembrar demais. Foi deixar quem\p"
+	.string "tem poder decidir quais\nlembrancas os outros podem\p"
+	.string "conservar.$"
 
 Route128_Text_StevenWhatIsHappening:
 	.string "SEU BENTO: Quando um nome some\nda boca das pessoas, eu\p"
-	.string "escrevo. Nao para substituir\nquem lembra. Para deixar uma\p"
-	.string "pista para quem vier procurar.$"
+	.string "escrevo. Nao para substituir\nquem lembra; para deixar uma\p"
+	.string "pista.$"
 
 Route128_Text_StevenWholeWorldWillDrown:
 	.string "SEU BENTO: Quando um nome some\nda boca das pessoas, eu\p"
-	.string "escrevo. Nao para substituir\nquem lembra. Para deixar uma\p"
-	.string "pista para quem vier procurar.$"
+	.string "escrevo. Nao para substituir\nquem lembra; para deixar uma\p"
+	.string "pista.$"
 
 Route128_Text_StevenImGoingToSootopolis:
 	.string "SEU BENTO: Quando um nome some\nda boca das pessoas, eu\p"
-	.string "escrevo. Nao para substituir\nquem lembra. Para deixar uma\p"
-	.string "pista para quem vier procurar.$"
+	.string "escrevo. Nao para substituir\nquem lembra; para deixar uma\p"
+	.string "pista.$"
 

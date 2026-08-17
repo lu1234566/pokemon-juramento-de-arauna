@@ -302,21 +302,22 @@ Route110_TrickHousePuzzle3_EventScript_Alan::
 	end
 
 Route110_TrickHousePuzzle3_Text_WroteSecretCodeLockOpened:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "{PLAYER} wrote down the secret code\n"
+	.string "on the door.\p"
+	.string "“TRICK MASTER is coveted.”\n"
+	.string "… … … … … … … …\p"
+	.string "The lock clicked open!$"
 
 Route110_TrickHousePuzzle3_Text_JustinIntro:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "I keep coming back to this same place!$"
 
 Route110_TrickHousePuzzle3_Text_JustinDefeat:
-	.string "Voce vai continuar mesmo\nsabendo que\p"
-	.string "ROUTE110 TRICKHOUSEPUZZLE3\nguarda partes da historia que\p"
-	.string "muita gente preferia deixar\nenterradas?$"
+	.string "I'm already having trouble, and then\n"
+	.string "you have to beat me? It's not fair!$"
 
 Route110_TrickHousePuzzle3_Text_JustinPostBattle:
-	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
-	.string "nomes antigos desapareceram\nquando elas chegaram.$"
+	.string "It's full of doors here!\n"
+	.string "It's too small and dark in here! Help!$"
 
 Route110_TrickHousePuzzle3_Text_MarthaIntro:
 	.string "I don't know what's going on here.\n"
@@ -330,16 +331,15 @@ Route110_TrickHousePuzzle3_Text_MarthaPostBattle:
 	.string "And, I have no sense of direction!$"
 
 Route110_TrickHousePuzzle3_Text_AlanIntro:
-	.string "Voce vai continuar mesmo\nsabendo que\p"
-	.string "ROUTE110 TRICKHOUSEPUZZLE3\nguarda partes da historia que\p"
-	.string "muita gente preferia deixar\nenterradas?$"
+	.string "I don't get it. What would anyone want\n"
+	.string "with a house this bizarre?$"
 
 Route110_TrickHousePuzzle3_Text_AlanDefeat:
-	.string "Voce vai continuar mesmo\nsabendo que\p"
-	.string "ROUTE110 TRICKHOUSEPUZZLE3\nguarda partes da historia que\p"
-	.string "muita gente preferia deixar\nenterradas?$"
+	.string "I don't get it.\n"
+	.string "How did I lose?$"
 
 Route110_TrickHousePuzzle3_Text_AlanPostBattle:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "I don't get it.\n"
+	.string "How many traps are in this house?\p"
+	.string "You may be the one to solve that.$"
 

@@ -148,47 +148,48 @@ MossdeepCity_StevensHouse_EventScript_DiveItemBall::
 	end
 
 MossdeepCity_StevensHouse_Text_YouveEarnedHMDive:
-	.string "CIRO: Eu aceitei o uniforme\nporque ele abriu portas. Agora\p"
-	.string "sei de quem eram as vozes que\nficaram trancadas do outro\p"
-	.string "lado. Nao vou fingir que nunca\nvesti aquilo.$"
+	.string "STEVEN: {PLAYER}{KUN}…\p"
+	.string "As you can see, there's not much here,\n"
+	.string "but this is my home.\p"
+	.string "Thank you for all that you've done.\p"
+	.string "This is my token of appreciation.\n"
+	.string "It's the HIDDEN MACHINE DIVE.\p"
+	.string "No need to be shy--you've earned\n"
+	.string "this HM.$"
 
 MossdeepCity_StevensHouse_Text_ExplainDive:
-	.string "CIRO: Eu aceitei o uniforme\nporque ele abriu portas. Agora\p"
-	.string "sei de quem eram as vozes que\nficaram trancadas do outro\p"
-	.string "lado. Nao vou fingir que nunca\nvesti aquilo.$"
+	.string "SEU BENTO: Quando um nome some\nda boca das pessoas, eu\p"
+	.string "escrevo. Nao para substituir\nquem lembra; para deixar uma\p"
+	.string "pista.$"
 
 MossdeepCity_StevensHouse_Text_UnderwateCavernBetweenMossdeepSootopolis:
-	.string "CIRO: Eu aceitei o uniforme\nporque ele abriu portas. Agora\p"
-	.string "sei de quem eram as vozes que\nficaram trancadas do outro\p"
-	.string "lado. Nao vou fingir que nunca\nvesti aquilo.$"
+	.string "SEU BENTO: Quando um nome some\nda boca das pessoas, eu\p"
+	.string "escrevo. Nao para substituir\nquem lembra; para deixar uma\p"
+	.string "pista.$"
 
 MossdeepCity_StevensHouse_Text_TakeBallContainingBeldum:
-	.string "CIRO: Eu aceitei o uniforme\nporque ele abriu portas. Agora\p"
-	.string "sei de quem eram as vozes que\nficaram trancadas do outro\p"
-	.string "lado. Nao vou fingir que nunca\nvesti aquilo.$"
+	.string "{PLAYER} checked the POKé BALL.\p"
+	.string "It contained the POKéMON\n"
+	.string "BELDUM.\p"
+	.string "Take the POKé BALL?$"
 
 MossdeepCity_StevensHouse_Text_ObtainedBeldum:
-	.string "CIRO: Eu aceitei o uniforme\nporque ele abriu portas. Agora\p"
-	.string "sei de quem eram as vozes que\nficaram trancadas do outro\p"
-	.string "lado. Nao vou fingir que nunca\nvesti aquilo.$"
+	.string "{PLAYER} obtained a BELDUM.$"
 
 @ Unused
 MossdeepCity_StevensHouse_Text_NoSpaceForAnotherMon:
-	.string "CIRO: Eu aceitei o uniforme\nporque ele abriu portas. Agora\p"
-	.string "sei de quem eram as vozes que\nficaram trancadas do outro\p"
-	.string "lado. Nao vou fingir que nunca\nvesti aquilo.$"
+	.string "There is no space for another POKéMON.$"
 
 MossdeepCity_StevensHouse_Text_LeftPokeBallWhereItWas:
-	.string "CIRO: Eu aceitei o uniforme\nporque ele abriu portas. Agora\p"
-	.string "sei de quem eram as vozes que\nficaram trancadas do outro\p"
-	.string "lado. Nao vou fingir que nunca\nvesti aquilo.$"
+	.string "{PLAYER} left the POKé BALL where\n"
+	.string "it was.$"
 
 MossdeepCity_StevensHouse_Text_LetterFromSteven:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "SEU BENTO: Quando um nome some\nda boca das pessoas, eu\p"
+	.string "escrevo. Nao para substituir\nquem lembra; para deixar uma\p"
+	.string "pista.$"
 
 MossdeepCity_StevensHouse_Text_CollectionOfRareRocks:
-	.string "CIRO: Eu aceitei o uniforme\nporque ele abriu portas. Agora\p"
-	.string "sei de quem eram as vozes que\nficaram trancadas do outro\p"
-	.string "lado. Nao vou fingir que nunca\nvesti aquilo.$"
+	.string "It's a collection of rare rocks and\n"
+	.string "stones assembled by STEVEN.$"
 

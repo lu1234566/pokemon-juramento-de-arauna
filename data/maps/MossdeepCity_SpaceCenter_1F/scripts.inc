@@ -276,114 +276,141 @@ MossdeepCity_SpaceCenter_1F_Movement_MoveGruntFromStairs:
 	step_end
 
 MossdeepCity_SpaceCenter_1F_Text_RocketLaunchImminent:
-	.string "O HORIZONTE pretende usar a\nrede regional de comunicacao\p"
-	.string "para ampliar o ARQUIVO VIVO.$"
+	.string "The rocket's launch is imminent!$"
 
 MossdeepCity_SpaceCenter_1F_Text_SuccessfulLaunchNumber:
-	.string "O HORIZONTE pretende usar a\nrede regional de comunicacao\p"
-	.string "para ampliar o ARQUIVO VIVO.$"
+	.string "The rocket launched safely!\n"
+	.string "That's successful launch no. {STR_VAR_1}!$"
 
 MossdeepCity_SpaceCenter_1F_Text_HaywireButRocketLaunchImminent:
-	.string "O HORIZONTE pretende usar a\nrede regional de comunicacao\p"
-	.string "para ampliar o ARQUIVO VIVO.$"
+	.string "I know that things are a little\n"
+	.string "haywire right now, but…\p"
+	.string "The rocket's launch is imminent!$"
 
 MossdeepCity_SpaceCenter_1F_Text_HaywireButSuccessfulLaunchNumber:
-	.string "O HORIZONTE pretende usar a\nrede regional de comunicacao\p"
-	.string "para ampliar o ARQUIVO VIVO.$"
+	.string "I know that things are a little\n"
+	.string "haywire right now, but…\p"
+	.string "The rocket launched safely!\n"
+	.string "That's successful launch no. {STR_VAR_1}!$"
 
 MossdeepCity_SpaceCenter_1F_Text_RocketLaunchDemandsPerfection:
-	.string "O HORIZONTE pretende usar a\nrede regional de comunicacao\p"
-	.string "para ampliar o ARQUIVO VIVO.$"
+	.string "A rocket launch demands perfection.\n"
+	.string "Not even a 1% margin of error is allowed.\p"
+	.string "Even if it's 99% okay, the whole thing\n"
+	.string "is useless if 1% happens to be no good.\p"
+	.string "Despite that, we never stop trying.\n"
+	.string "Why? It's a dream that never ends.$"
 
 MossdeepCity_SpaceCenter_1F_Text_MagmaHaveSightsOnSpaceCenter:
-	.string "LEMBRANTE: Apagar uma historia\nporque ela incomoda quem manda\p"
-	.string "e apenas outra forma de\nviolencia.$"
+	.string "Um sinal capaz de atravessar a\nregiao inteira tambem poderia\p"
+	.string "sincronizar milhares de\nsensores de VINCULO ao mesmo\p"
+	.string "tempo.$"
 
 MossdeepCity_SpaceCenter_1F_Text_FoundThisYouCanHaveIt:
-	.string "O HORIZONTE pretende usar a\nrede regional de comunicacao\p"
-	.string "para ampliar o ARQUIVO VIVO.$"
+	.string "I was taking a stroll down the beach\n"
+	.string "when I found this.\p"
+	.string "It's not anything I need, so you can\n"
+	.string "have it.$"
 
 MossdeepCity_SpaceCenter_1F_Text_HoennFamousForMeteorShowers:
-	.string "O HORIZONTE pretende usar a\nrede regional de comunicacao\p"
-	.string "para ampliar o ARQUIVO VIVO.$"
+	.string "The ARAUNA region has been famous for \n"
+	.string "its meteor showers for a long time.$"
 
 MossdeepCity_SpaceCenter_1F_Text_MagmaCantStealFuelTakeThis:
-	.string "LEMBRANTE: Apagar uma historia\nporque ela incomoda quem manda\p"
-	.string "e apenas outra forma de\nviolencia.$"
+	.string "A rede de comunicacao daqui\npode espalhar o protocolo do\p"
+	.string "ARQUIVO VIVO por toda Arauna.\nPor isso o HORIZONTE e os\p"
+	.string "LEMBRANTES vieram ate aqui.$"
 
 MossdeepCity_SpaceCenter_1F_Text_CantStrollOnBeachWithMagma:
-	.string "LEMBRANTE: Apagar uma historia\nporque ela incomoda quem manda\p"
-	.string "e apenas outra forma de\nviolencia.$"
+	.string "With LEMBRANTES around, I guess\n"
+	.string "strolls on the beach aren't safe.$"
 
 MossdeepCity_SpaceCenter_1F_Text_DidPokemonComeFromSpace:
-	.string "O HORIZONTE pretende usar a\nrede regional de comunicacao\p"
-	.string "para ampliar o ARQUIVO VIVO.$"
+	.string "Some people claim that POKéMON came\n"
+	.string "from space. Could it be true?$"
 
 MossdeepCity_SpaceCenter_1F_Text_AquaShouldBeatMagma:
-	.string "HORIZONTE: O Arquivo preserva o\nque o tempo destruiria. Um dia\p"
-	.string "voces vao agradecer por nao\nprecisarem mais sofrer para\p"
-	.string "lembrar.$"
+	.string "CONSORCIO HORIZONTE should take care of\n"
+	.string "LEMBRANTES!\p"
+	.string "But if they did that, CONSORCIO HORIZONTE will\n"
+	.string "become bold and brazen, won't they?$"
 
 MossdeepCity_SpaceCenter_1F_Text_RocketsBoggleMyMind:
-	.string "O HORIZONTE pretende usar a\nrede regional de comunicacao\p"
-	.string "para ampliar o ARQUIVO VIVO.$"
+	.string "A giant chunk of metal bursts through\n"
+	.string "the skies and flies into space…\p"
+	.string "It boggles my mind!$"
 
 MossdeepCity_SpaceCenter_1F_Text_MagmaWantsToSpoilMyDream:
-	.string "LEMBRANTE: Apagar uma historia\nporque ela incomoda quem manda\p"
-	.string "e apenas outra forma de\nviolencia.$"
+	.string "Um sinal capaz de atravessar a\nregiao inteira tambem poderia\p"
+	.string "sincronizar milhares de\nsensores de VINCULO ao mesmo\p"
+	.string "tempo.$"
 
 MossdeepCity_SpaceCenter_1F_Text_StevenMagmaCantBeAllowedToTakeFuel:
-	.string "LEMBRANTE: Apagar uma historia\nporque ela incomoda quem manda\p"
-	.string "e apenas outra forma de\nviolencia.$"
+	.string "SEU BENTO: Quando um nome some\nda boca das pessoas, eu\p"
+	.string "escrevo. Nao para substituir\nquem lembra; para deixar uma\p"
+	.string "pista.$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt3Intro:
-	.string "O HORIZONTE pretende usar a\nrede regional de comunicacao\p"
-	.string "para ampliar o ARQUIVO VIVO.$"
+	.string "Um sinal capaz de atravessar a\nregiao inteira tambem poderia\p"
+	.string "sincronizar milhares de\nsensores de VINCULO ao mesmo\p"
+	.string "tempo.$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt3Defeat:
-	.string "O HORIZONTE pretende usar a\nrede regional de comunicacao\p"
-	.string "para ampliar o ARQUIVO VIVO.$"
+	.string "Um sinal capaz de atravessar a\nregiao inteira tambem poderia\p"
+	.string "sincronizar milhares de\nsensores de VINCULO ao mesmo\p"
+	.string "tempo.$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt3PostBattle:
-	.string "O HORIZONTE pretende usar a\nrede regional de comunicacao\p"
-	.string "para ampliar o ARQUIVO VIVO.$"
+	.string "Um sinal capaz de atravessar a\nregiao inteira tambem poderia\p"
+	.string "sincronizar milhares de\nsensores de VINCULO ao mesmo\p"
+	.string "tempo.$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt1Intro:
-	.string "O HORIZONTE pretende usar a\nrede regional de comunicacao\p"
-	.string "para ampliar o ARQUIVO VIVO.$"
+	.string "Um sinal capaz de atravessar a\nregiao inteira tambem poderia\p"
+	.string "sincronizar milhares de\nsensores de VINCULO ao mesmo\p"
+	.string "tempo.$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt1Defeat:
-	.string "O HORIZONTE pretende usar a\nrede regional de comunicacao\p"
-	.string "para ampliar o ARQUIVO VIVO.$"
+	.string "Os engenheiros insistem que\ncomunicacao nao e controle. Os\p"
+	.string "cabos no andar superior sugerem\nque alguem pretende testar essa\p"
+	.string "diferenca.$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt1PostBattle:
-	.string "O HORIZONTE pretende usar a\nrede regional de comunicacao\p"
-	.string "para ampliar o ARQUIVO VIVO.$"
+	.string "A rede de comunicacao daqui\npode espalhar o protocolo do\p"
+	.string "ARQUIVO VIVO por toda Arauna.\nPor isso o HORIZONTE e os\p"
+	.string "LEMBRANTES vieram ate aqui.$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt4Intro:
-	.string "O HORIZONTE pretende usar a\nrede regional de comunicacao\p"
-	.string "para ampliar o ARQUIVO VIVO.$"
+	.string "Um sinal capaz de atravessar a\nregiao inteira tambem poderia\p"
+	.string "sincronizar milhares de\nsensores de VINCULO ao mesmo\p"
+	.string "tempo.$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt4Defeat:
-	.string "O HORIZONTE pretende usar a\nrede regional de comunicacao\p"
-	.string "para ampliar o ARQUIVO VIVO.$"
+	.string "Um sinal capaz de atravessar a\nregiao inteira tambem poderia\p"
+	.string "sincronizar milhares de\nsensores de VINCULO ao mesmo\p"
+	.string "tempo.$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt4PostBattle:
-	.string "O HORIZONTE pretende usar a\nrede regional de comunicacao\p"
-	.string "para ampliar o ARQUIVO VIVO.$"
+	.string "Os engenheiros insistem que\ncomunicacao nao e controle. Os\p"
+	.string "cabos no andar superior sugerem\nque alguem pretende testar essa\p"
+	.string "diferenca.$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt2Intro:
-	.string "O HORIZONTE pretende usar a\nrede regional de comunicacao\p"
-	.string "para ampliar o ARQUIVO VIVO.$"
+	.string "Os engenheiros insistem que\ncomunicacao nao e controle. Os\p"
+	.string "cabos no andar superior sugerem\nque alguem pretende testar essa\p"
+	.string "diferenca.$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt2Defeat:
-	.string "O HORIZONTE pretende usar a\nrede regional de comunicacao\p"
-	.string "para ampliar o ARQUIVO VIVO.$"
+	.string "A rede de comunicacao daqui\npode espalhar o protocolo do\p"
+	.string "ARQUIVO VIVO por toda Arauna.\nPor isso o HORIZONTE e os\p"
+	.string "LEMBRANTES vieram ate aqui.$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt2PostBattle:
-	.string "O HORIZONTE pretende usar a\nrede regional de comunicacao\p"
-	.string "para ampliar o ARQUIVO VIVO.$"
+	.string "Os engenheiros insistem que\ncomunicacao nao e controle. Os\p"
+	.string "cabos no andar superior sugerem\nque alguem pretende testar essa\p"
+	.string "diferenca.$"
 
 MossdeepCity_SpaceCenter_1F_Text_MagmaIntentToStealNotice:
-	.string "LEMBRANTE: Apagar uma historia\nporque ela incomoda quem manda\p"
-	.string "e apenas outra forma de\nviolencia.$"
+	.string "Os engenheiros insistem que\ncomunicacao nao e controle. Os\p"
+	.string "cabos no andar superior sugerem\nque alguem pretende testar essa\p"
+	.string "diferenca.$"

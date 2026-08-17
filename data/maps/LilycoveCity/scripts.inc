@@ -410,100 +410,122 @@ LilycoveCity_EventScript_DontKnowAboutBerryBlender::
 	return
 
 LilycoveCity_Text_MayShoppingLetsBattle:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "CIRO: Se os dados estiverem\ncertos, o DESENCANTO pode ser\p"
+	.string "tratado. Eu prefiro testar uma\nresposta a transformar\p"
+	.string "sofrimento em tradicao.$"
 
 LilycoveCity_Text_MayNotRaisingPokemon:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "CIRO: O HORIZONTE nao me pediu\npara esquecer nada. So me\p"
+	.string "mostrou que existe um futuro\nque nao precisa ser governado\p"
+	.string "pelo passado.$"
 
 LilycoveCity_Text_MayBattleMe:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "CIRO: Voce continua olhando\npara cada cicatriz como se ela\p"
+	.string "fosse uma resposta. Eu quero\nsaber o que existe depois dela.$"
 
 LilycoveCity_Text_MayWontBeBeaten:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "CIRO: Se os dados estiverem\ncertos, o DESENCANTO pode ser\p"
+	.string "tratado. Eu prefiro testar uma\nresposta a transformar\p"
+	.string "sofrimento em tradicao.$"
 
 LilycoveCity_Text_MayDefeat:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "CIRO: Nao confunda minha pressa\ncom falta de memoria. Eu lembro\p"
+	.string "o bastante para saber que nao\nquero viver preso ao que perdi.$"
 
 LilycoveCity_Text_MayGoingBackToLittleroot:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "CIRO: Nao confunda minha pressa\ncom falta de memoria. Eu lembro\p"
+	.string "o bastante para saber que nao\nquero viver preso ao que perdi.$"
 
 LilycoveCity_Text_MayYouGoingToCollectBadges:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "{PLAYER}{KUN}, what are you going to do?\p"
+	.string "Collect all the GYM BADGES and take\n"
+	.string "the POKéMON LEAGUE challenge?\p"
+	.string "Well, while you're collecting BADGES,\n"
+	.string "{PLAYER}{KUN}, I'm going to work on my\l"
+	.string "POKéDEX. I'll complete it before you!\p"
+	.string "See you!$"
 
 LilycoveCity_Text_MayYouGoingToPokemonLeague:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "CIRO: Nao confunda minha pressa\ncom falta de memoria. Eu lembro\p"
+	.string "o bastante para saber que nao\nquero viver preso ao que perdi.$"
 
 LilycoveCity_Text_MayYouGoingToBattleFrontier:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "CIRO: Voce continua olhando\npara cada cicatriz como se ela\p"
+	.string "fosse uma resposta. Eu quero\nsaber o que existe depois dela.$"
 
 LilycoveCity_Text_BrendanShoppingLetsBattle:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "CIRO: Se os dados estiverem\ncertos, o DESENCANTO pode ser\p"
+	.string "tratado. Eu prefiro testar uma\nresposta a transformar\p"
+	.string "sofrimento em tradicao.$"
 
 LilycoveCity_Text_BrendanNoConfidence:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "CIRO: O HORIZONTE nao me pediu\npara esquecer nada. So me\p"
+	.string "mostrou que existe um futuro\nque nao precisa ser governado\p"
+	.string "pelo passado.$"
 
 LilycoveCity_Text_BrendanBattleMe:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "CIRO: Voce continua olhando\npara cada cicatriz como se ela\p"
+	.string "fosse uma resposta. Eu quero\nsaber o que existe depois dela.$"
 
 LilycoveCity_Text_BrendanWontBeBeaten:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "CIRO: O HORIZONTE nao me pediu\npara esquecer nada. So me\p"
+	.string "mostrou que existe um futuro\nque nao precisa ser governado\p"
+	.string "pelo passado.$"
 
 LilycoveCity_Text_BrendanDefeat:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "CIRO: Se os dados estiverem\ncertos, o DESENCANTO pode ser\p"
+	.string "tratado. Eu prefiro testar uma\nresposta a transformar\p"
+	.string "sofrimento em tradicao.$"
 
 LilycoveCity_Text_BrendanGoingBackToLittleroot:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "CIRO: Se os dados estiverem\ncertos, o DESENCANTO pode ser\p"
+	.string "tratado. Eu prefiro testar uma\nresposta a transformar\p"
+	.string "sofrimento em tradicao.$"
 
 LilycoveCity_Text_BrendanYouGoingToCollectBadges:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "{PLAYER}, what are you going to do?\p"
+	.string "Collect all the GYM BADGES and take\n"
+	.string "the POKéMON LEAGUE challenge?\p"
+	.string "Maybe I'll do that, too…\p"
+	.string "Well, anyway, hang in there!$"
 
 LilycoveCity_Text_BrendanYouGoingToPokemonLeague:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "CIRO: Voce continua olhando\npara cada cicatriz como se ela\p"
+	.string "fosse uma resposta. Eu quero\nsaber o que existe depois dela.$"
 
 LilycoveCity_Text_BrendanYouGoingToBattleFrontier:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "CIRO: Nao confunda minha pressa\ncom falta de memoria. Eu lembro\p"
+	.string "o bastante para saber que nao\nquero viver preso ao que perdi.$"
 
 LilycoveCity_Text_MovedLootIntoHideoutToday:
-	.string "Voce vai continuar mesmo\nsabendo que BAIA DAS LUZES\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "Fufufu…\p"
+	.string "We moved more loot into our secret\n"
+	.string "HIDEOUT today…\p"
+	.string "Wh-who are you?!\n"
+	.string "I was just talking to myself!$"
 
 LilycoveCity_Text_ChanceToDoBigThings:
-	.string "HORIZONTE: O Arquivo preserva o\nque o tempo destruiria. Um dia\p"
-	.string "voces vao agradecer por nao\nprecisarem mais sofrer para\p"
-	.string "lembrar.$"
+	.string "I'm just a GRUNT, so I don't know what\n"
+	.string "the BOSS is thinking…\p"
+	.string "But being on CONSORCIO HORIZONTE, I know I'll get\n"
+	.string "the chance to do big things!\p"
+	.string "Wh-who are you?!\n"
+	.string "I was just talking to myself!$"
 
 LilycoveCity_Text_DontGoNearCaveInCove:
-	.string "Voce vai continuar mesmo\nsabendo que BAIA DAS LUZES\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "Hey, you!\p"
+	.string "Don't go near the cave in the cove!\p"
+	.string "Why? You don't need a reason why!\n"
+	.string "I'm an adult, so you just listen to me!$"
 
 LilycoveCity_Text_IfWorldBecomesOurs:
-	.string "HORIZONTE: O Arquivo preserva o\nque o tempo destruiria. Um dia\p"
-	.string "voces vao agradecer por nao\nprecisarem mais sofrer para\p"
-	.string "lembrar.$"
+	.string "If this whole wide world becomes ours,\n"
+	.string "CONSORCIO HORIZONTE's, it will be a happier\l"
+	.string "place for POKéMON, too.$"
 
 LilycoveCity_Text_WailmerLeapOutOfWater:
-	.string "Dona Zila diz que uma historia\nmuda toda vez que e contada.\p"
-	.string "Talvez seja por isso que ainda\nesta viva.$"
+	.string "There! WAILMER!\n"
+	.string "Leap out of the water now!$"
 
 LilycoveCity_Text_GetLostMessingUpTraining:
 	.string "Hunh? What do you want?\p"
@@ -518,9 +540,8 @@ LilycoveCity_Text_ContestHallInTown:
 	.string "My heart swells with excitement!$"
 
 LilycoveCity_Text_StrangeCaveInCove:
-	.string "Voce vai continuar mesmo\nsabendo que BAIA DAS LUZES\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "Have you seen that strange cave in\n"
+	.string "the cove at the edge of town?$"
 
 LilycoveCity_Text_GoingToMoveDeleterForHMs:
 	.string "I'm going to teach my POKéMON some new\n"
@@ -529,28 +550,36 @@ LilycoveCity_Text_GoingToMoveDeleterForHMs:
 	.string "and make it forget HM moves.$"
 
 LilycoveCity_Text_ImFromKanto:
-	.string "Voce vai continuar mesmo\nsabendo que BAIA DAS LUZES\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "I came from KANTO.\p"
+	.string "The ARAUNA region is beautiful with\n"
+	.string "all its water and verdant nature.\p"
+	.string "Hunh? Wait a second…\p"
+	.string "Could there be rare POKéMON that live\n"
+	.string "only in this area?$"
 
 LilycoveCity_Text_TeamAquaBeenTrainingWailmer:
-	.string "HORIZONTE: O Arquivo preserva o\nque o tempo destruiria. Um dia\p"
-	.string "voces vao agradecer por nao\nprecisarem mais sofrer para\p"
-	.string "lembrar.$"
+	.string "CONSORCIO HORIZONTE's been training their\n"
+	.string "WAILMER in the cove.\p"
+	.string "We SAILORS can't get our boats out\n"
+	.string "to sea with them in the way!$"
 
 LilycoveCity_Text_SomeonePuntedTeamAquaOut:
-	.string "HORIZONTE: O Arquivo preserva o\nque o tempo destruiria. Um dia\p"
-	.string "voces vao agradecer por nao\nprecisarem mais sofrer para\p"
-	.string "lembrar.$"
+	.string "Ahoy, did you know?\p"
+	.string "Someone punted CONSORCIO HORIZONTE out of\n"
+	.string "the way for us!\p"
+	.string "That got the WAILMER out of the cove,\n"
+	.string "so we can get our boats out again.$"
 
 LilycoveCity_Text_SomeoneStoleMyPokemon:
-	.string "HORIZONTE: O Arquivo preserva o\nque o tempo destruiria. Um dia\p"
-	.string "voces vao agradecer por nao\nprecisarem mais sofrer para\p"
-	.string "lembrar.$"
+	.string "I was taking a relaxing snooze at the\n"
+	.string "seaside inn to the sound of waves…\p"
+	.string "When someone stole my POKéMON!\p"
+	.string "Who's the abductor?\n"
+	.string "CONSORCIO HORIZONTE? Is it CONSORCIO HORIZONTE?$"
 
 LilycoveCity_Text_MissingPokemonCameBack:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "My missing POKéMON…\n"
+	.string "It came back without me noticing!$"
 
 LilycoveCity_Text_ImArtDealer:
 	.string "I'm an ART DEALER.\p"
@@ -560,22 +589,34 @@ LilycoveCity_Text_ImArtDealer:
 	.string "magnificent works on exhibit…$"
 
 LilycoveCity_Text_SeaRemainsForeverYoung:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "Even as we grow old and wrinkled,\n"
+	.string "the sea remains forever young with\l"
+	.string "the vivid brilliance of life…\p"
+	.string "Fwohoho fwohohohoho…$"
 
 LilycoveCity_Text_SixtyYearsAgoHusbandProposed:
-	.string "Dona Zila diz que uma historia\nmuda toda vez que e contada.\p"
-	.string "Talvez seja por isso que ainda\nesta viva.$"
+	.string "It was sixty years ago that my husband\n"
+	.string "proposed to me here.\l"
+	.string "The sea remains as beautiful as ever.\p"
+	.string "Mufufufu mufufufufufu…$"
 
 LilycoveCity_Text_TeamAquaRenovatedCavern:
-	.string "HORIZONTE: O Arquivo preserva o\nque o tempo destruiria. Um dia\p"
-	.string "voces vao agradecer por nao\nprecisarem mais sofrer para\p"
-	.string "lembrar.$"
+	.string "Hm, you know of the peculiar cavern\n"
+	.string "in this cove?\p"
+	.string "That had been a natural formation,\n"
+	.string "but then that CONSORCIO HORIZONTE lot came\l"
+	.string "along and made their renovations.\p"
+	.string "They call themselves\n"
+	.string "the “nature-loving CONSORCIO HORIZONTE”!\p"
+	.string "But what they do and what they say\n"
+	.string "don't match at all!$"
 
 LilycoveCity_Text_TeamAquaLotGoneForGood:
-	.string "HORIZONTE: O Arquivo preserva o\nque o tempo destruiria. Um dia\p"
-	.string "voces vao agradecer por nao\nprecisarem mais sofrer para\p"
-	.string "lembrar.$"
+	.string "That cave in the cove…\p"
+	.string "I didn't notice it right away,\n"
+	.string "but it's completely empty now.\p"
+	.string "That CONSORCIO HORIZONTE lot, they must\n"
+	.string "have gone away for good.$"
 
 LilycoveCity_Text_CitySign:
 	.string "BAIA DAS LUZES. Por tras da\nfachada moderna fica o centro\p"
@@ -586,30 +627,36 @@ LilycoveCity_Text_ContestHallSign:
 	.string "“The gathering place for TRAINERS!”$"
 
 LilycoveCity_Text_MotelSign:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "COVE LILY MOTEL\p"
+	.string "“Remember us as COVE LILY of\n"
+	.string "LILYCOVE.”$"
 
 LilycoveCity_Text_MuseumSign:
-	.string "Tem gente que chama de\nDESENCANTO. Eu chamava de\p"
-	.string "distraicao, ate minha mae\nesquecer a cancao que cantava\p"
-	.string "desde crianca.$"
+	.string "LILYCOVE MUSEUM\p"
+	.string "“POKéMON Masterpiece Collection\n"
+	.string "on exhibit!”$"
 
 LilycoveCity_Text_MuseumSignPlayersExhibit:
-	.string "Tem gente que chama de\nDESENCANTO. Eu chamava de\p"
-	.string "distraicao, ate minha mae\nesquecer a cancao que cantava\p"
-	.string "desde crianca.$"
+	.string "LILYCOVE MUSEUM\p"
+	.string "“{PLAYER}'s POKéMON Collection\n"
+	.string "on exhibit!”$"
 
 LilycoveCity_Text_HarborSignUnderConstruction:
-	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
-	.string "nomes antigos desapareceram\nquando elas chegaram.$"
+	.string "LILYCOVE CITY HARBOR\p"
+	.string "“The ferry S.S. TIDAL is under\n"
+	.string "construction in SLATEPORT CITY.\p"
+	.string "“Service is scheduled to begin\n"
+	.string "shortly.”$"
 
 LilycoveCity_Text_HarborSign:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "LILYCOVE CITY HARBOR\p"
+	.string "“Enjoy a delightful cruise on\n"
+	.string "the ferry S.S. TIDAL.”$"
 
 LilycoveCity_Text_TrainerFanClubSign:
-	.string "O HORIZONTE consertou a estrada\ndaqui. Nao sei se isso torna\p"
-	.string "mais facil perguntar o que\nexiste debaixo dela.$"
+	.string "POKéMON TRAINER FAN CLUB\p"
+	.string "The names of TRAINERS are scribbled\n"
+	.string "all over the sign…$"
 
 LilycoveCity_Text_DepartmentStoreSign:
 	.string "LILYCOVE DEPARTMENT STORE\p"
@@ -619,17 +666,18 @@ LilycoveCity_Text_DepartmentStoreSign:
 	.string "you need!”$"
 
 LilycoveCity_Text_MoveDeletersHouseSign:
-	.string "Dona Zila diz que uma historia\nmuda toda vez que e contada.\p"
-	.string "Talvez seja por isso que ainda\nesta viva.$"
+	.string "MOVE DELETER'S HOUSE\p"
+	.string "“Unwanted POKéMON moves deleted.”$"
 
 LilycoveCity_Text_DoYouKnowAboutBerryBlender:
 	.string "Do you know about the machine\n"
 	.string "BERRY BLENDER?$"
 
 LilycoveCity_Text_FasterSpinBetterPokeblocks:
-	.string "Tem gente que chama de\nDESENCANTO. Eu chamava de\p"
-	.string "distraicao, ate minha mae\nesquecer a cancao que cantava\p"
-	.string "desde crianca.$"
+	.string "People have to work together to get it\n"
+	.string "to spin faster.\p"
+	.string "The faster you can make it spin, the\n"
+	.string "better {POKEBLOCK}S you can get, I've heard.$"
 
 LilycoveCity_Text_ExplainBerryBlender:
 	.string "It's used for making a kind of candy\n"
@@ -638,20 +686,27 @@ LilycoveCity_Text_ExplainBerryBlender:
 	.string "its condition will improve by a lot.$"
 
 LilycoveCity_Text_HeardTowerCalledSkyPillar:
-	.string "Por tras da fachada moderna\nfica o centro de operacoes do\p"
-	.string "ARQUIVO VIVO.$"
+	.string "I heard there's a tower somewhere out\n"
+	.string "on the sea routes.\p"
+	.string "It's called the SKY PILLAR, I hear.$"
 
 LilycoveCity_Text_SawTallTowerOnRoute131:
-	.string "Voce vai continuar mesmo\nsabendo que BAIA DAS LUZES\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "I saw this tall tower somewhere\n"
+	.string "around ROUTE 131.\p"
+	.string "Could that possibly be…?$"
 
 LilycoveCity_Text_JustArrivedAndSawRarePokemon:
-	.string "Voce vai continuar mesmo\nsabendo que BAIA DAS LUZES\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "We just arrived here on our\n"
+	.string "honeymoon vacation.\p"
+	.string "We happened to see a DRAGON-type\n"
+	.string "POKéMON flying way up in the sky.\p"
+	.string "Do cool POKéMON like that live in\n"
+	.string "the ARAUNA region?$"
 
 LilycoveCity_Text_HoneymoonVowToSeeRarePokemon:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "On our honeymoon, we vowed to see as\n"
+	.string "many rare POKéMON as we can.\p"
+	.string "So we were delighted to see a rare\n"
+	.string "POKéMON as soon as we arrived.\p"
+	.string "I mean, we are totally happy!$"
 

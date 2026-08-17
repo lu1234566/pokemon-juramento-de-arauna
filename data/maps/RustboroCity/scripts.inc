@@ -1013,59 +1013,73 @@ RustboroCity_EventScript_Boy1::
 	end
 
 RustboroCity_Text_WeShortenItToDevon:
-	.string "O CONSORCIO HORIZONTE trouxe\nemprego e obras. Tambem trouxe\p"
-	.string "maquinas capazes de medir\nVINCULOS.$"
+	.string "The CONSORCIO HORIZONTEORATION…\n"
+	.string "We all just shorten it to DEVON.\p"
+	.string "That company makes all sorts of\n"
+	.string "convenient products.$"
 
 RustboroCity_Text_SneakyLookingManWentAroundCorner:
-	.string "Voce vai continuar mesmo\nsabendo que SERRA DO UIVO\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "Hm? A sneaky-looking man?\p"
+	.string "Come to think of it, yes, a shady-\n"
+	.string "looking guy went around the corner.$"
 
 RustboroCity_Text_HaveYouChallengedGym:
-	.string "Voce vai continuar mesmo\nsabendo que SERRA DO UIVO\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "Have you taken the POKéMON GYM\n"
+	.string "challenge?\p"
+	.string "When you get that shiny GYM BADGE\n"
+	.string "in hand, I guess TRAINERS begin to\l"
+	.string "realize what is required of them.$"
 
 RustboroCity_Text_HeyThatsRustborosGymBadge:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "Hey, that's RUSTBORO's GYM BADGE!\p"
+	.string "Out of all the POKéMON GYM BADGES,\n"
+	.string "RUSTBORO's is the coolest, I'd say.$"
 
 RustboroCity_Text_YoureNewAroundHere:
-	.string "Voce vai continuar mesmo\nsabendo que SERRA DO UIVO\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "Oh? Who might you be?\n"
+	.string "You're a new face around these parts.\p"
+	.string "Have you just transferred into the\n"
+	.string "POKéMON TRAINER'S SCHOOL?$"
 
 RustboroCity_Text_GymLeaderIsntEasyWithFire:
-	.string "Tem gente que chama de\nDESENCANTO. Eu chamava de\p"
-	.string "distraicao, ate minha mae\nesquecer a cancao que cantava\p"
-	.string "desde crianca.$"
+	.string "I challenged the GYM LEADER, but…\p"
+	.string "It's not going to be easy winning with\n"
+	.string "my FIRE-type POKéMON…\p"
+	.string "FIRE-type POKéMON don't match up\n"
+	.string "well against ROCK-type POKéMON…$"
 
 RustboroCity_Text_MrBrineyWalksInTheTunnel:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "The old sailor MR. BRINEY lives in\n"
+	.string "a cottage by the sea.\p"
+	.string "He goes for walks in the tunnel every\n"
+	.string "so often.$"
 
 RustboroCity_Text_MrBrineyLovesPeeko:
-	.string "Dona Zila diz que uma historia\nmuda toda vez que e contada.\p"
-	.string "Talvez seja por isso que ainda\nesta viva.$"
+	.string "The old sailor MR. BRINEY lives in\n"
+	.string "a cottage by the sea.\p"
+	.string "He said he was going shopping in\n"
+	.string "SLATEPORT for his pet, PEEKO.\p"
+	.string "That old sea dog, he must really love\n"
+	.string "that PEEKO.$"
 
 RustboroCity_Text_WowYouHavePokemon:
-	.string "O HORIZONTE consertou a estrada\ndaqui. Nao sei se isso torna\p"
-	.string "mais facil perguntar o que\nexiste debaixo dela.$"
+	.string "Wow, you have POKéMON with you, too.\p"
+	.string "When I get bigger, I'm going to go\n"
+	.string "places with POKéMON, too.$"
 
 RustboroCity_Text_CatchRarePokemonIfIGoToSchool:
-	.string "Voce vai continuar mesmo\nsabendo que SERRA DO UIVO\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "POKéMON TRAINER'S SCHOOL!\p"
+	.string "If I go to this school, will I be able\n"
+	.string "to catch rare POKéMON easily?$"
 
 RustboroCity_Text_PokemonCanChangeLookFromExp:
-	.string "Tem gente que chama de\nDESENCANTO. Eu chamava de\p"
-	.string "distraicao, ate minha mae\nesquecer a cancao que cantava\p"
-	.string "desde crianca.$"
+	.string "If a POKéMON gains experience in\n"
+	.string "battles, it can sometimes change in\l"
+	.string "the way it looks.$"
 
 RustboroCity_Text_PokemonChangeShape:
-	.string "Voce vai continuar mesmo\nsabendo que SERRA DO UIVO\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "A POKéMON changes shape?\n"
+	.string "If one did that, I would be shocked!$"
 
 RustboroCity_Text_TradePokemonGrowFast:
 	.string "A POKéMON you get in a trade from\n"
@@ -1074,128 +1088,151 @@ RustboroCity_Text_TradePokemonGrowFast:
 	.string "BADGES, it may not obey you…$"
 
 RustboroCity_Text_OutOfTheWay:
-	.string "Tem gente que chama de\nDESENCANTO. Eu chamava de\p"
-	.string "distraicao, ate minha mae\nesquecer a cancao que cantava\p"
-	.string "desde crianca.$"
+	.string "Get out!\n"
+	.string "Out of the way!$"
 
 RustboroCity_Text_WaitDontTakeMyGoods:
-	.string "Tem gente que chama de\nDESENCANTO. Eu chamava de\p"
-	.string "distraicao, ate minha mae\nesquecer a cancao que cantava\p"
-	.string "desde crianca.$"
+	.string "Wait! Pleeeaaase!\p"
+	.string "Don't take my GOODS!$"
 
 RustboroCity_Text_HelpMeIWasRobbed:
-	.string "HORIZONTE: O Arquivo preserva o\nque o tempo destruiria. Um dia\p"
-	.string "voces vao agradecer por nao\nprecisarem mais sofrer para\p"
-	.string "lembrar.$"
+	.string "Oh, it's you!\p"
+	.string "You're that fantastic TRAINER who\n"
+	.string "helped me in PETALBURG WOODS!\p"
+	.string "Help me! I was robbed by CONSORCIO HORIZONTE!\n"
+	.string "I have to get the DEVON GOODS back!\p"
+	.string "If I don't…\n"
+	.string "I'm going to be in serious trouble.$"
 
 RustboroCity_Text_ShadyCharacterTookOffTowardsTunnel:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "That shady character, I think he took\n"
+	.string "off towards the tunnel over there.$"
 
 RustboroCity_Text_YouGotItThankYou:
-	.string "Voce vai continuar mesmo\nsabendo que SERRA DO UIVO\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "Oh! How did it go?\n"
+	.string "The DEVON GOODS?\p"
+	.string "You did!\n"
+	.string "You got them back!\p"
+	.string "You really are a great TRAINER!\p"
+	.string "I know! As my thanks, I'll give you\n"
+	.string "another GREAT BALL!$"
 
 RustboroCity_Text_YoureLoadedWithItems:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "You're loaded with items.\n"
+	.string "I can't give you this GREAT BALL.$"
 
 RustboroCity_Text_PleaseComeWithMe:
 	.string "Excuse me, please!\n"
 	.string "Please come with me!$"
 
 RustboroCity_Text_MayHiLetsRegister:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "MAY: Oh, hi, {PLAYER}{KUN}!\p"
+	.string "You had a MATCH CALL feature put\n"
+	.string "on your POKéNAV!\p"
+	.string "Let's register each other so we can\n"
+	.string "contact one another anytime!\p"
+	.string "… … … … … …$"
 
 RustboroCity_Text_RegisteredMay:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "Registered MAY\n"
+	.string "in the POKéNAV.$"
 
 RustboroCity_Text_MayPassedBrineyWantToBattle:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "CIRO: Se os dados estiverem\ncertos, o DESENCANTO pode ser\p"
+	.string "tratado. Eu prefiro testar uma\nresposta a transformar\p"
+	.string "sofrimento em tradicao.$"
 
 RustboroCity_Text_MayOhHaventRaisedPokemonEnough:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "CIRO: Nao confunda minha pressa\ncom falta de memoria. Eu lembro\p"
+	.string "o bastante para saber que nao\nquero viver preso ao que perdi.$"
 
 RustboroCity_Text_MayWantToBattle:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "CIRO: Nao confunda minha pressa\ncom falta de memoria. Eu lembro\p"
+	.string "o bastante para saber que nao\nquero viver preso ao que perdi.$"
 
 RustboroCity_Text_MayImNotGoingToLose:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "CIRO: O HORIZONTE nao me pediu\npara esquecer nada. So me\p"
+	.string "mostrou que existe um futuro\nque nao precisa ser governado\p"
+	.string "pelo passado.$"
 
 RustboroCity_Text_MayDefeat:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "CIRO: Nao confunda minha pressa\ncom falta de memoria. Eu lembro\p"
+	.string "o bastante para saber que nao\nquero viver preso ao que perdi.$"
 
 RustboroCity_Text_MayMrBrineyHint:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "CIRO: Voce continua olhando\npara cada cicatriz como se ela\p"
+	.string "fosse uma resposta. Eu quero\nsaber o que existe depois dela.$"
 
 RustboroCity_Text_BrendanHiLetsRegister:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "BRENDAN: Oh, hey, {PLAYER}!\p"
+	.string "You had a MATCH CALL feature put\n"
+	.string "on your POKéNAV! Cool!\p"
+	.string "Let's register each other so we can\n"
+	.string "get in touch anytime!\p"
+	.string "… … … … … …$"
 
 RustboroCity_Text_RegisteredBrendan:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "Registered BRENDAN\n"
+	.string "in the POKéNAV.$"
 
 RustboroCity_Text_BrendanPassedBrineyWantToBattle:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "CIRO: Voce continua olhando\npara cada cicatriz como se ela\p"
+	.string "fosse uma resposta. Eu quero\nsaber o que existe depois dela.$"
 
 RustboroCity_Text_BrendanNoConfidenceInPokemon:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "CIRO: Nao confunda minha pressa\ncom falta de memoria. Eu lembro\p"
+	.string "o bastante para saber que nao\nquero viver preso ao que perdi.$"
 
 RustboroCity_Text_BrendanWantToBattle:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "CIRO: Se os dados estiverem\ncertos, o DESENCANTO pode ser\p"
+	.string "tratado. Eu prefiro testar uma\nresposta a transformar\p"
+	.string "sofrimento em tradicao.$"
 
 RustboroCity_Text_BrendanIWontGoEasy:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "CIRO: Voce continua olhando\npara cada cicatriz como se ela\p"
+	.string "fosse uma resposta. Eu quero\nsaber o que existe depois dela.$"
 
 RustboroCity_Text_BrendanDefeat:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "CIRO: Nao confunda minha pressa\ncom falta de memoria. Eu lembro\p"
+	.string "o bastante para saber que nao\nquero viver preso ao que perdi.$"
 
 RustboroCity_Text_BrendanMrBrineyHint:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "CIRO: Nao confunda minha pressa\ncom falta de memoria. Eu lembro\p"
+	.string "o bastante para saber que nao\nquero viver preso ao que perdi.$"
 
 RustboroCity_Text_TunnelNearingCompletion:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "“Timesaving tunnel nearing\n"
+	.string "completion!”\p"
+	.string "…Is what it says on the sign, but\n"
+	.string "there's also a big “X” splashed\l"
+	.string "across it in red paint…$"
 
 RustboroCity_Text_DevonCorpSign:
-	.string "O CONSORCIO HORIZONTE trouxe\nemprego e obras. Tambem trouxe\p"
-	.string "maquinas capazes de medir\nVINCULOS.$"
+	.string "CONSORCIO HORIZONTEORATION\p"
+	.string "“For all your living needs, we make\n"
+	.string "it all.”$"
 
 RustboroCity_Text_GymSign:
-	.string "DALVA: Pedra guarda marcas.\nAlgumas rachaduras contam mais\p"
-	.string "que monumentos inteiros.$"
+	.string "RUSTBORO CITY POKéMON GYM\n"
+	.string "LEADER: ROXANNE\p"
+	.string "“The ROCK-loving honors student!”$"
 
 RustboroCity_Text_DevonCorpBranchOfficeSign:
-	.string "O CONSORCIO HORIZONTE trouxe\nemprego e obras. Tambem trouxe\p"
-	.string "maquinas capazes de medir\nVINCULOS.$"
+	.string "CONSORCIO HORIZONTE BRANCH OFFICE\p"
+	.string "“Access limited to DEVON employees\n"
+	.string "and authorized personnel.”$"
 
 RustboroCity_Text_CitySign:
 	.string "SERRA DO UIVO. O CONSORCIO\nHORIZONTE trouxe emprego e\p"
 	.string "obras. Tambem trouxe maquinas\ncapazes de medir VINCULOS.$"
 
 RustboroCity_Text_TrainersSchoolSign:
-	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
-	.string "nomes antigos desapareceram\nquando elas chegaram.$"
+	.string "POKéMON TRAINER'S SCHOOL\p"
+	.string "“We'll teach you anything about\n"
+	.string "POKéMON!”$"
 
 RustboroCity_Text_CuttersHouse:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "CUTTER'S HOUSE$"
 
 RustboroCity_Text_DevelopedNewPokenavFeature:
 	.string "I've been developing an added feature\n"
@@ -1205,17 +1242,30 @@ RustboroCity_Text_DevelopedNewPokenavFeature:
 	.string "The one our PRESIDENT gave you?$"
 
 RustboroCity_Text_AddedMatchCallPleaseCallMrStone:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "There you go, {PLAYER}!\p"
+	.string "I added a new feature named\n"
+	.string "MATCH CALL to your POKéNAV.\p"
+	.string "Using the MATCH CALL feature,\n"
+	.string "you can chat with people who have\l"
+	.string "been registered in your POKéNAV.\p"
+	.string "{PLAYER}, our PRESIDENT STONE should\n"
+	.string "be registered in your POKéNAV.\p"
+	.string "Test it out.\n"
+	.string "Please give our PRESIDENT a call.$"
 
 RustboroCity_Text_PleaseSelectPokenav:
 	.string "Please select the POKéNAV.$"
 
 RustboroCity_Text_IdBetterGetBackToWork:
-	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
-	.string "nomes antigos desapareceram\nquando elas chegaram.$"
+	.string "Okay, I'd better get back to work.\n"
+	.string "Please take care, {PLAYER}!$"
 
 RustboroCity_Text_YouCanHave2On2Battle:
-	.string "Voce vai continuar mesmo\nsabendo que SERRA DO UIVO\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "Did you know this?\p"
+	.string "You can have a 2-on-2 battle even\n"
+	.string "if you're not with another TRAINER.\p"
+	.string "If you catch the eyes of two TRAINERS\n"
+	.string "when you have two or more POKéMON,\l"
+	.string "they'll both challenge you.\p"
+	.string "Don't you think it'd be cool if you\n"
+	.string "could beat two TRAINERS by yourself?$"

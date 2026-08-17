@@ -349,27 +349,54 @@ Route116_EventScript_Johnson::
 	end
 
 Route116_Text_ScoundrelMadeOffWithPeeko:
-	.string "Voce vai continuar mesmo\nsabendo que ROUTE116 guarda\p"
-	.string "partes da historia que muita\ngente preferia deixar\p"
-	.string "enterradas?$"
+	.string "Ohhh, what am I to do?\p"
+	.string "We were on our walk, PEEKO and I, when\n"
+	.string "we were jumped by an odd thug…\p"
+	.string "The scoundrel made off with my\n"
+	.string "darling PEEKO!\p"
+	.string "Wrrrooooooaaaar! PEEKO!$"
 
 Route116_Text_WantToDigTunnel:
-	.string "Voce vai continuar mesmo\nsabendo que ROUTE116 guarda\p"
-	.string "partes da historia que muita\ngente preferia deixar\p"
-	.string "enterradas?$"
+	.string "Nnn… Roar!\p"
+	.string "I want to dig that tunnel!$"
 
 Route116_Text_DiggingTunnelWhenGoonOrderedMeOut:
-	.string "Voce vai continuar mesmo\nsabendo que ROUTE116 guarda\p"
-	.string "partes da historia que muita\ngente preferia deixar\p"
-	.string "enterradas?$"
+	.string "Nnn… Roar!\n"
+	.string "What's going on?\p"
+	.string "I was digging the tunnel without any\n"
+	.string "tools when some goon ordered me out!\p"
+	.string "That tunnel's filled with POKéMON\n"
+	.string "that react badly to loud noises.\l"
+	.string "They could cause an uproar.\p"
+	.string "That's why we stopped using heavy\n"
+	.string "equipment for tunneling…\p"
+	.string "I'm worried that the goon will do\n"
+	.string "something stupid and startle the\l"
+	.string "POKéMON into an uproar.$"
 
 Route116_Text_GoonHightailedItOutOfTunnel:
-	.string "Dona Zila diz que uma historia\nmuda toda vez que e contada.\p"
-	.string "Talvez seja por isso que ainda\nesta viva.$"
+	.string "Nnn… Roar!\p"
+	.string "That goofy goon hightailed it out of\n"
+	.string "the tunnel! I can go back to digging!$"
 
 Route116_Text_ThankYouTokenOfAppreciation:
-	.string "Dona Zila diz que uma historia\nmuda toda vez que e contada.\p"
-	.string "Talvez seja por isso que ainda\nesta viva.$"
+	.string "Oh! It's you!\p"
+	.string "You're that person who not only helped\n"
+	.string "me in PETALBURG WOODS, but also got\l"
+	.string "back my stolen package and then even\l"
+	.string "graciously delivered it to SLATEPORT!\p"
+	.string "CAPT. STERN informed us that the\n"
+	.string "package arrived, too!\p"
+	.string "I thank you very, very much!\p"
+	.string "Why, if I were a rain cloud, I would\n"
+	.string "shower you with gratitude and hail\l"
+	.string "you as a hero!\p"
+	.string "For you, the most wonderful TRAINER,\n"
+	.string "I bear good news!\p"
+	.string "Recently, our company developed\n"
+	.string "a new kind of POKé BALL.\p"
+	.string "As a token of our appreciation, this\n"
+	.string "is our gift to our wonderful TRAINER!$"
 
 Route116_Text_NewBallAvailableAtMart:
 	.string "Our new POKé BALL will be available\n"
@@ -382,45 +409,56 @@ Route116_Text_BagIsJamPacked:
 	.string "I can't give you this REPEAT BALL.$"
 
 Route116_Text_TokenOfAppreciation:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "As a token of our appreciation for\n"
+	.string "your delivering our package, I have\l"
+	.string "a gift of a new kind of POKé BALL\l"
+	.string "for our most wonderful TRAINER!$"
 
 Route116_Text_CanYouHelpMeFindGlasses:
-	.string "Voce vai continuar mesmo\nsabendo que ROUTE116 guarda\p"
-	.string "partes da historia que muita\ngente preferia deixar\p"
-	.string "enterradas?$"
+	.string "I dropped my glasses…\n"
+	.string "Can you help me find them?$"
 
 Route116_Text_MayISeeThoseGlasses:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "CIRO: Voce continua olhando\npara cada cicatriz como se ela\p"
+	.string "fosse uma resposta. Eu quero\nsaber o que existe depois dela.$"
 
 Route116_Text_NotWhatImLookingForMaybeTheyArentHere:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "Hmm…\n"
+	.string "These are BLACKGLASSES.\l"
+	.string "They're not what I'm looking for…\p"
+	.string "Maybe my glasses aren't around\n"
+	.string "here…$"
 
 Route116_Text_CantFindGlassesNotHere:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "Hmm…\n"
+	.string "I can't find my glasses anywhere…\l"
+	.string "Maybe they're not around here…$"
 
 Route116_Text_NotWhatImLookingFor:
-	.string "Dona Zila diz que uma historia\nmuda toda vez que e contada.\p"
-	.string "Talvez seja por isso que ainda\nesta viva.$"
+	.string "Hmm…\n"
+	.string "These are BLACKGLASSES.\l"
+	.string "They're not what I'm looking for…$"
 
 Route116_Text_RouteSignRustboro:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "ROUTE 116\n"
+	.string "{LEFT_ARROW} RUSTBORO CITY$"
 
 Route116_Text_RusturfTunnelSign:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "RUSTURF TUNNEL\n"
+	.string "“Linking RUSTBORO and VERDANTURF\p"
+	.string "“The tunnel project has been\n"
+	.string "canceled.”$"
 
 Route116_Text_TunnelersRestHouse:
-	.string "O HORIZONTE consertou a estrada\ndaqui. Nao sei se isso torna\p"
-	.string "mais facil perguntar o que\nexiste debaixo dela.$"
+	.string "TUNNELER'S REST HOUSE$"
 
 Route116_Text_TrainerTipsBToStopEvolution:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "TRAINER TIPS\p"
+	.string "If you want to stop a POKéMON from\n"
+	.string "evolving, press the B Button while it\l"
+	.string "is trying to evolve.\l"
+	.string "The startled POKéMON will stop.\p"
+	.string "This is called an evolution cancel.$"
 
 Route116_Text_TrainerTipsBagHasPockets:
 	.string "TRAINER TIPS\p"

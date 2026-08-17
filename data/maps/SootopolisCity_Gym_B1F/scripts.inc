@@ -52,136 +52,132 @@ SootopolisCity_Gym_B1F_EventScript_Daphne::
 	end
 
 SootopolisCity_Gym_B1F_Text_AndreaIntro:
-	.string "DONA CELINA: Agua parada\napodrece. Agua que corre leva\p"
-	.string "coisas embora. Viver e aprender\no que guardar e o que deixar\p"
-	.string "seguir.$"
+	.string "I'll show you the sublime techniques\n"
+	.string "I learned from our LEADER JUAN!$"
 
 SootopolisCity_Gym_B1F_Text_AndreaDefeat:
-	.string "DONA CELINA: Agua parada\napodrece. Agua que corre leva\p"
-	.string "coisas embora. Viver e aprender\no que guardar e o que deixar\p"
-	.string "seguir.$"
+	.string "Please forgive me, JUAN…$"
 
 SootopolisCity_Gym_B1F_Text_AndreaPostBattle:
-	.string "O HORIZONTE consertou a estrada\ndaqui. Nao sei se isso torna\p"
-	.string "mais facil perguntar o que\nexiste debaixo dela.$"
+	.string "Watch what happens if you crack all\n"
+	.string "the floor tiles.$"
 
 SootopolisCity_Gym_B1F_Text_CrissyIntro:
-	.string "DONA CELINA: Agua parada\napodrece. Agua que corre leva\p"
-	.string "coisas embora. Viver e aprender\no que guardar e o que deixar\p"
-	.string "seguir.$"
+	.string "You came all the way here, but you won't\n"
+	.string "get to see JUAN.\p"
+	.string "Not if you lose to me, you won't!$"
 
 SootopolisCity_Gym_B1F_Text_CrissyDefeat:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "You're strong!\n"
+	.string "I was fooled by your cute looks!$"
 
 SootopolisCity_Gym_B1F_Text_CrissyPostBattle:
-	.string "DONA CELINA: Agua parada\napodrece. Agua que corre leva\p"
-	.string "coisas embora. Viver e aprender\no que guardar e o que deixar\p"
-	.string "seguir.$"
+	.string "You might be good enough to avoid\n"
+	.string "being wiped out in one hit by JUAN.$"
 
 SootopolisCity_Gym_B1F_Text_DaphneIntro:
-	.string "DONA CELINA: Agua parada\napodrece. Agua que corre leva\p"
-	.string "coisas embora. Viver e aprender\no que guardar e o que deixar\p"
-	.string "seguir.$"
+	.string "The sight of JUAN conducting\n"
+	.string "a battle…\p"
+	.string "The very beauty of it compelled me to\n"
+	.string "become a TRAINER.$"
 
 SootopolisCity_Gym_B1F_Text_DaphneDefeat:
-	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
-	.string "nomes antigos desapareceram\nquando elas chegaram.$"
+	.string "You battled with more beauty than\n"
+	.string "I could muster…$"
 
 SootopolisCity_Gym_B1F_Text_DaphnePostBattle:
-	.string "Dona Zila diz que uma historia\nmuda toda vez que e contada.\p"
-	.string "Talvez seja por isso que ainda\nesta viva.$"
+	.string "The grace you bring to battle is\n"
+	.string "fabulous.\p"
+	.string "Oh… I'm so fortunate to have found\n"
+	.string "POKéMON.$"
 
 SootopolisCity_Gym_B1F_Text_ConnieIntro:
-	.string "Dona Zila diz que uma historia\nmuda toda vez que e contada.\p"
-	.string "Talvez seja por isso que ainda\nesta viva.$"
+	.string "I should teach you how harsh battles\n"
+	.string "can be.$"
 
 SootopolisCity_Gym_B1F_Text_ConnieDefeat:
-	.string "O HORIZONTE consertou a estrada\ndaqui. Nao sei se isso torna\p"
-	.string "mais facil perguntar o que\nexiste debaixo dela.$"
+	.string "Oh.\n"
+	.string "You're strong.$"
 
 SootopolisCity_Gym_B1F_Text_ConniePostBattle:
-	.string "DONA CELINA: Agua parada\napodrece. Agua que corre leva\p"
-	.string "coisas embora. Viver e aprender\no que guardar e o que deixar\p"
-	.string "seguir.$"
+	.string "I'll tell you something good.\p"
+	.string "If you want to reach JUAN, you\n"
+	.string "need to walk on each floor tile once.$"
 
 SootopolisCity_Gym_B1F_Text_BridgetIntro:
-	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
-	.string "nomes antigos desapareceram\nquando elas chegaram.$"
+	.string "The POKéMON GYM of the highest level\n"
+	.string "in the ARAUNA region…\p"
+	.string "That's the SOOTOPOLIS GYM.$"
 
 SootopolisCity_Gym_B1F_Text_BridgetDefeat:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "What a high level you are!$"
 
 SootopolisCity_Gym_B1F_Text_BridgetPostBattle:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "Rather than being satisfied by being\n"
+	.string "in a strong GYM, I imagine training in\l"
+	.string "other places will make you stronger.\l"
+	.string "But above all, it looks more fun.$"
 
 SootopolisCity_Gym_B1F_Text_OliviaIntro:
-	.string "DONA CELINA: Agua parada\napodrece. Agua que corre leva\p"
-	.string "coisas embora. Viver e aprender\no que guardar e o que deixar\p"
-	.string "seguir.$"
+	.string "I train my POKéMON together with\n"
+	.string "JUAN.\p"
+	.string "Don't think I'm a pushover.$"
 
 SootopolisCity_Gym_B1F_Text_OliviaDefeat:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "I was beaten…$"
 
 SootopolisCity_Gym_B1F_Text_OliviaPostBattle:
-	.string "Voce vai continuar mesmo\nsabendo que AGUAS DE M'BOI\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "I think you have potential.\n"
+	.string "Why don't you stay and train with us?$"
 
 SootopolisCity_Gym_B1F_Text_TiffanyIntro:
-	.string "Tem gente que chama de\nDESENCANTO. Eu chamava de\p"
-	.string "distraicao, ate minha mae\nesquecer a cancao que cantava\p"
-	.string "desde crianca.$"
+	.string "A graceful glide across the ice while\n"
+	.string "crossing no lines…\p"
+	.string "A TRAINER putting on that performance\n"
+	.string "would be elegantly beautiful!$"
 
 SootopolisCity_Gym_B1F_Text_TiffanyDefeat:
-	.string "Voce vai continuar mesmo\nsabendo que AGUAS DE M'BOI\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "Well, excuse me?!$"
 
 SootopolisCity_Gym_B1F_Text_TiffanyPostBattle:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "This is really obvious, but how strong\n"
+	.string "you are as a TRAINER has nothing to do\l"
+	.string "with how young or old you are.$"
 
 SootopolisCity_Gym_B1F_Text_BethanyIntro:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "When I'm with my POKéMON, the time\n"
+	.string "flies by before you can say, “Oops!”$"
 
 SootopolisCity_Gym_B1F_Text_BethanyDefeat:
-	.string "Tem gente que chama de\nDESENCANTO. Eu chamava de\p"
-	.string "distraicao, ate minha mae\nesquecer a cancao que cantava\p"
-	.string "desde crianca.$"
+	.string "Oops!$"
 
 SootopolisCity_Gym_B1F_Text_BethanyPostBattle:
-	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
-	.string "nomes antigos desapareceram\nquando elas chegaram.$"
+	.string "I wish I could forget about lost causes\n"
+	.string "before I can manage an “Oops!”$"
 
 SootopolisCity_Gym_B1F_Text_AnnikaIntro:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "I can battle with really rare POKéMON\n"
+	.string "if you'd like.$"
 
 SootopolisCity_Gym_B1F_Text_AnnikaDefeat:
-	.string "Voce vai continuar mesmo\nsabendo que AGUAS DE M'BOI\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "Oh, there now! Did you have a good look\n"
+	.string "at my POKéMON?$"
 
 SootopolisCity_Gym_B1F_Text_AnnikaPostBattle:
-	.string "DONA CELINA: Agua parada\napodrece. Agua que corre leva\p"
-	.string "coisas embora. Viver e aprender\no que guardar e o que deixar\p"
-	.string "seguir.$"
+	.string "I came to this GYM because JUAN\n"
+	.string "praised me for my darling POKéMON.\p"
+	.string "Oh, if only I'd met JUAN years ago\n"
+	.string "when I was younger…$"
 
 SootopolisCity_Gym_B1F_Text_BriannaIntro:
-	.string "O HORIZONTE consertou a estrada\ndaqui. Nao sei se isso torna\p"
-	.string "mais facil perguntar o que\nexiste debaixo dela.$"
+	.string "Giggle…\n"
+	.string "Your grim look is so charming.$"
 
 SootopolisCity_Gym_B1F_Text_BriannaDefeat:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "Oh, dear.\n"
+	.string "I went much too easy on you.$"
 
 SootopolisCity_Gym_B1F_Text_BriannaPostBattle:
-	.string "DONA CELINA: Agua parada\napodrece. Agua que corre leva\p"
-	.string "coisas embora. Viver e aprender\no que guardar e o que deixar\p"
-	.string "seguir.$"
+	.string "You couldn't lay a finger on JUAN,\n"
+	.string "I'm sure. Giggle…$"
 

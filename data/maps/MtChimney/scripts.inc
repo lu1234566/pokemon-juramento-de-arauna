@@ -527,70 +527,75 @@ MtChimney_EventScript_SawyerRematch::
 	end
 
 MtChimney_Text_MeteoriteWillActivateVolcano:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "The power contained in the METEORITE…\p"
+	.string "By amplifying its power with this\n"
+	.string "machine, MT. CHIMNEY's volcanic\l"
+	.string "activity will instantly intensify…\p"
+	.string "Its energy will grow deep inside\n"
+	.string "the crater and…\l"
+	.string "Fufufu…$"
 
 MtChimney_Text_MaxieIntro:
-	.string "OTACILIO: Eu nao quero poder.\nQuero um mundo em que nenhuma\p"
-	.string "pessoa seja obrigada a carregar\npara sempre a pior coisa que ja\p"
-	.string "viveu.$"
+	.string "LUZIA: Se devolver as memorias\ndoer, entao vai doer. Dor nao\p"
+	.string "autoriza ninguem a reescrever a\nvida de outra pessoa.$"
 
 MtChimney_Text_MaxieDefeat:
-	.string "LUZIA: Ninguem tem o direito de\nescolher que memoria merece\p"
-	.string "morrer. Se for preciso devolver\ntoda a dor de uma vez, eu vou\p"
-	.string "devolver.$"
+	.string "LUZIA: O problema nunca foi\nlembrar demais. Foi deixar quem\p"
+	.string "tem poder decidir quais\nlembrancas os outros podem\p"
+	.string "conservar.$"
 
 MtChimney_Text_MaxieYouHaventSeenLastOfMagma:
-	.string "LUZIA: Ninguem tem o direito de\nescolher que memoria merece\p"
-	.string "morrer. Se for preciso devolver\ntoda a dor de uma vez, eu vou\p"
-	.string "devolver.$"
+	.string "Os sensores registram duas\ncorrentes antigas sob Arauna:\p"
+	.string "uma conserva VINCULOS; a outra\npermite que eles terminem. O\p"
+	.string "ARQUIVO tentou transformar\nambas em ferramentas.$"
 
 MtChimney_Text_TabithaIntro:
-	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
-	.string "nomes antigos desapareceram\nquando elas chegaram.$"
+	.string "Hehehe!\p"
+	.string "So you've come all the way here!\p"
+	.string "But you're too late!\n"
+	.string "I've already delivered the METEORITE\l"
+	.string "from METEOR FALLS to the BOSS!$"
 
 MtChimney_Text_TabithaDefeat:
-	.string "O HORIZONTE consertou a estrada\ndaqui. Nao sei se isso torna\p"
-	.string "mais facil perguntar o que\nexiste debaixo dela.$"
+	.string "Hehehe…\p"
+	.string "Even though I've lost, if our leader\n"
+	.string "awakens that thing…$"
 
 MtChimney_Text_TabithaPostBattle:
-	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
-	.string "nomes antigos desapareceram\nquando elas chegaram.$"
+	.string "BOSS, hurry!\n"
+	.string "Give it the METEORITE's energy!\p"
+	.string "Hehehe…$"
 
 MtChimney_Text_Grunt2Intro:
-	.string "LEMBRANTE: Apagar uma historia\nporque ela incomoda quem manda\p"
-	.string "e apenas outra forma de\nviolencia.$"
+	.string "LEMBRANTE: O HORIZONTE quer uma\nArauna estavel. Eu quero uma\p"
+	.string "Arauna que saiba por que suas\nruinas existem.$"
 
 MtChimney_Text_Grunt2Defeat:
-	.string "Voce vai continuar mesmo\nsabendo que SERRA DA CINZA\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "HORIZONTE: O ARQUIVO VIVO nao\napaga pessoas. Ele separa\p"
+	.string "trauma de identidade. Pelo\nmenos e isso que nos ensinaram.$"
 
 MtChimney_Text_Grunt2PostBattle:
-	.string "Voce vai continuar mesmo\nsabendo que SERRA DA CINZA\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "HORIZONTE: Nao somos soldados.\nSomos tecnicos, guardas e\p"
+	.string "pesquisadores. Isso nao torna\ntodas as nossas ordens certas.$"
 
 MtChimney_Text_Grunt1Intro:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "HORIZONTE: Os sensores detectam\nVINCULOS instaveis antes do\p"
+	.string "DESENCANTO completo. Isso pode\nsalvar familias inteiras.$"
 
 MtChimney_Text_Grunt1Defeat:
-	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
-	.string "nomes antigos desapareceram\nquando elas chegaram.$"
+	.string "HORIZONTE: O ARQUIVO VIVO nao\napaga pessoas. Ele separa\p"
+	.string "trauma de identidade. Pelo\nmenos e isso que nos ensinaram.$"
 
 MtChimney_Text_Grunt1PostBattle:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "HORIZONTE: Os sensores detectam\nVINCULOS instaveis antes do\p"
+	.string "DESENCANTO completo. Isso pode\nsalvar familias inteiras.$"
 
 MtChimney_Text_TeamAquaAlwaysMessingWithPlans:
-	.string "HORIZONTE: O Arquivo preserva o\nque o tempo destruiria. Um dia\p"
-	.string "voces vao agradecer por nao\nprecisarem mais sofrer para\p"
-	.string "lembrar.$"
+	.string "HORIZONTE: Nao somos soldados.\nSomos tecnicos, guardas e\p"
+	.string "pesquisadores. Isso nao torna\ntodas as nossas ordens certas.$"
 
 MtChimney_Text_MeteoritesPackAmazingPower:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "METEORITES pack amazing power!$"
 
 MtChimney_Text_YouBetterNotMessWithUs:
 	.string "You'd better not mess with us!\p"
@@ -598,190 +603,189 @@ MtChimney_Text_YouBetterNotMessWithUs:
 	.string "for the benefit of everyone!$"
 
 MtChimney_Text_AquasNameSimilar:
-	.string "HORIZONTE: O Arquivo preserva o\nque o tempo destruiria. Um dia\p"
-	.string "voces vao agradecer por nao\nprecisarem mais sofrer para\p"
-	.string "lembrar.$"
+	.string "LEMBRANTE: LUZIA diz que\nmemoria devolvida sem permissao\p"
+	.string "ainda e melhor que memoria\nroubada. Nem todos aqui\p"
+	.string "concordam com essa parte.$"
 
 MtChimney_Text_DouseThemInFire:
-	.string "O HORIZONTE consertou a estrada\ndaqui. Nao sei se isso torna\p"
-	.string "mais facil perguntar o que\nexiste debaixo dela.$"
+	.string "Yeah!\n"
+	.string "Douse them in fire!$"
 
 MtChimney_Text_KeepMakingMoreLand:
-	.string "Dona Zila diz que uma historia\nmuda toda vez que e contada.\p"
-	.string "Talvez seja por isso que ainda\nesta viva.$"
+	.string "We're going to keep making more land!$"
 
 MtChimney_Text_Bufoh:
-	.string "O HORIZONTE consertou a estrada\ndaqui. Nao sei se isso torna\p"
-	.string "mais facil perguntar o que\nexiste debaixo dela.$"
+	.string "Bufoh!$"
 
 MtChimney_Text_ArchieGoStopTeamMagma:
-	.string "OTACILIO: Eu nao quero poder.\nQuero um mundo em que nenhuma\p"
-	.string "pessoa seja obrigada a carregar\npara sempre a pior coisa que ja\p"
-	.string "viveu.$"
+	.string "OTACILIO: Preservar tudo nao e\ncompaixao. As vezes e apenas\p"
+	.string "obrigar uma ferida a continuar\naberta e chamar isso de\p"
+	.string "respeito.$"
 
 MtChimney_Text_ArchieIHaveMyHandsFull:
-	.string "OTACILIO: Eu nao quero poder.\nQuero um mundo em que nenhuma\p"
-	.string "pessoa seja obrigada a carregar\npara sempre a pior coisa que ja\p"
-	.string "viveu.$"
+	.string "OTACILIO: M'BOI me ensinou que\nlembrar tambem pode destruir.\p"
+	.string "Eu me recuso a aceitar que\nsofrimento seja sagrado so\p"
+	.string "porque aconteceu.$"
 
 MtChimney_Text_ArchieThankYou:
-	.string "OTACILIO: Eu nao quero poder.\nQuero um mundo em que nenhuma\p"
-	.string "pessoa seja obrigada a carregar\npara sempre a pior coisa que ja\p"
-	.string "viveu.$"
+	.string "OTACILIO: Eu vi o que uma\nmemoria pode fazer com quem\p"
+	.string "sobrevive. O ARQUIVO VIVO\nexiste para que ninguem seja\p"
+	.string "condenado a carregar a pior\nnoite da propria vida para\p"
+	.string "sempre.$"
 
 MtChimney_Text_MagmaOutnumbersUs:
-	.string "LEMBRANTE: Apagar uma historia\nporque ela incomoda quem manda\p"
-	.string "e apenas outra forma de\nviolencia.$"
+	.string "LEMBRANTE: Se uma historia\nincomoda quem manda, ela vira\p"
+	.string "'ruido', depois 'trauma',\ndepois desaparece do registro.$"
 
 MtChimney_Text_LessHabitatForWaterPokemon:
-	.string "Tem gente que chama de\nDESENCANTO. Eu chamava de\p"
-	.string "distraicao, ate minha mae\nesquecer a cancao que cantava\p"
-	.string "desde crianca.$"
+	.string "If they expand the land, there'll be\n"
+	.string "less habitats for WATER POKéMON!$"
 
 MtChimney_Text_MagmasNameSimilar:
-	.string "HORIZONTE: O Arquivo preserva o\nque o tempo destruiria. Um dia\p"
-	.string "voces vao agradecer por nao\nprecisarem mais sofrer para\p"
-	.string "lembrar.$"
+	.string "LEMBRANTE: Se uma historia\nincomoda quem manda, ela vira\p"
+	.string "'ruido', depois 'trauma',\ndepois desaparece do registro.$"
 
 MtChimney_Text_Bushaa:
-	.string "O HORIZONTE consertou a estrada\ndaqui. Nao sei se isso torna\p"
-	.string "mais facil perguntar o que\nexiste debaixo dela.$"
+	.string "Bushaa!$"
 
 MtChimney_Text_LavaCookiesJust200:
-	.string "Dona Zila diz que uma historia\nmuda toda vez que e contada.\p"
-	.string "Talvez seja por isso que ainda\nesta viva.$"
+	.string "LAVA COOKIES are MT. CHIMNEY's local\n"
+	.string "specialty.\p"
+	.string "Try one. It's just ¥200.$"
 
 MtChimney_Text_ThankYouDear:
-	.string "O HORIZONTE consertou a estrada\ndaqui. Nao sei se isso torna\p"
-	.string "mais facil perguntar o que\nexiste debaixo dela.$"
+	.string "Thank you, dear!$"
 
 MtChimney_Text_YouveNotGotTheMoney:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "Oh, dear. You can't buy a thing if\n"
+	.string "you've not got the money.$"
 
 MtChimney_Text_OhFineThen:
-	.string "Dona Zila diz que uma historia\nmuda toda vez que e contada.\p"
-	.string "Talvez seja por isso que ainda\nesta viva.$"
+	.string "Oh, fine then.$"
 
 MtChimney_Text_MeteoriteFittedOnMachine:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "A METEORITE is fitted on a mysterious\n"
+	.string "machine…\p"
+	.string "The machine seems to be storing\n"
+	.string "energy in the METEORITE.$"
 
 MtChimney_Text_RemoveTheMeteorite:
-	.string "Voce vai continuar mesmo\nsabendo que SERRA DA CINZA\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "A METEORITE is fitted on a mysterious\n"
+	.string "machine…\p"
+	.string "Do you want to remove the METEORITE?$"
 
 MtChimney_Text_PlayerRemovedMeteorite:
-	.string "Dona Zila diz que uma historia\nmuda toda vez que e contada.\p"
-	.string "Talvez seja por isso que ainda\nesta viva.$"
+	.string "{PLAYER} removed the METEORITE from\n"
+	.string "the mysterious machine.$"
 
 MtChimney_Text_PlayerLeftMeteorite:
 	.string "{PLAYER} left the METEORITE where\n"
 	.string "it was.$"
 
 MtChimney_Text_MachineMakesNoResponse:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "This mysterious machine…\n"
+	.string "It makes no response whatsoever.$"
 
 MtChimney_Text_RouteSign:
-	.string "Dona Zila diz que uma historia\nmuda toda vez que e contada.\p"
-	.string "Talvez seja por isso que ainda\nesta viva.$"
+	.string "{DOWN_ARROW} JAGGED PATH\n"
+	.string "LAVARIDGE TOWN AHEAD$"
 
 MtChimney_Text_ShelbyIntro:
-	.string "O HORIZONTE consertou a estrada\ndaqui. Nao sei se isso torna\p"
-	.string "mais facil perguntar o que\nexiste debaixo dela.$"
+	.string "I've been to the hot springs and\n"
+	.string "refreshed my tired bones.\l"
+	.string "Right now I'm feeling strong!$"
 
 MtChimney_Text_ShelbyDefeat:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "Oh, my goodness.\n"
+	.string "Now, aren't you something!$"
 
 MtChimney_Text_ShelbyPostBattle:
-	.string "Voce vai continuar mesmo\nsabendo que SERRA DA CINZA\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "Well, well, I've lost. I can't call\n"
+	.string "myself an EXPERT now, can I?$"
 
 MtChimney_Text_ShelbyRegister:
-	.string "O HORIZONTE consertou a estrada\ndaqui. Nao sei se isso torna\p"
-	.string "mais facil perguntar o que\nexiste debaixo dela.$"
+	.string "Thank you, child. It was fun, as if\n"
+	.string "I were battling my own grandchild.\p"
+	.string "Please, come see me again for\n"
+	.string "a rematch.$"
 
 MtChimney_Text_ShelbyRematchIntro:
-	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
-	.string "nomes antigos desapareceram\nquando elas chegaram.$"
+	.string "If you can mesh your heart with those\n"
+	.string "of your POKéMON, why, you should be\l"
+	.string "able to achieve great things.$"
 
 MtChimney_Text_ShelbyRematchDefeat:
-	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
-	.string "nomes antigos desapareceram\nquando elas chegaram.$"
+	.string "Oh, my goodness.\n"
+	.string "Now, aren't you something!$"
 
 MtChimney_Text_ShelbyPostRematch:
-	.string "Tem gente que chama de\nDESENCANTO. Eu chamava de\p"
-	.string "distraicao, ate minha mae\nesquecer a cancao que cantava\p"
-	.string "desde crianca.$"
+	.string "Perhaps your heart has become one\n"
+	.string "with the hearts of your POKéMON.$"
 
 MtChimney_Text_MelissaIntro:
-	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
-	.string "nomes antigos desapareceram\nquando elas chegaram.$"
+	.string "I've got the fire in me, baby.\n"
+	.string "I can't stand it! I have to battle!$"
 
 MtChimney_Text_MelissaDefeat:
-	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
-	.string "nomes antigos desapareceram\nquando elas chegaram.$"
+	.string "Ooh, that was a scorching-hot match!$"
 
 MtChimney_Text_MelissaPostBattle:
-	.string "Tem gente que chama de\nDESENCANTO. Eu chamava de\p"
-	.string "distraicao, ate minha mae\nesquecer a cancao que cantava\p"
-	.string "desde crianca.$"
+	.string "The heat of MT. CHIMNEY warms\n"
+	.string "me up, baby!$"
 
 MtChimney_Text_SheilaIntro:
-	.string "Tem gente que chama de\nDESENCANTO. Eu chamava de\p"
-	.string "distraicao, ate minha mae\nesquecer a cancao que cantava\p"
-	.string "desde crianca.$"
+	.string "I've finally made it to MT. CHIMNEY.\n"
+	.string "I want to make my POKéMON battle!$"
 
 MtChimney_Text_SheilaDefeat:
-	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
-	.string "nomes antigos desapareceram\nquando elas chegaram.$"
+	.string "The way you battle…\n"
+	.string "It's like a MT. CHIMNEY eruption!$"
 
 MtChimney_Text_SheilaPostBattle:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "Like I said, I've finally made it to\n"
+	.string "MT. CHIMNEY. It would be a shame if\l"
+	.string "I only do a little sightseeing…\p"
+	.string "I want to get in some battles and buy\n"
+	.string "COOKIES as souvenirs.$"
 
 MtChimney_Text_ShirleyIntro:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "Since I bathed in the hot springs,\n"
+	.string "I've been feeling great!\l"
+	.string "I'm sure I'm going to win!$"
 
 MtChimney_Text_ShirleyDefeat:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "Yowch!\n"
+	.string "I'm getting a chill out of the water.$"
 
 MtChimney_Text_ShirleyPostBattle:
-	.string "Voce vai continuar mesmo\nsabendo que SERRA DA CINZA\p"
-	.string "guarda partes da historia que\nmuita gente preferia deixar\p"
-	.string "enterradas?$"
+	.string "I'll have to take another dip in the\n"
+	.string "hot springs. Want to join me?\p"
+	.string "Just joking!$"
 
 MtChimney_Text_SawyerIntro:
-	.string "O HORIZONTE consertou a estrada\ndaqui. Nao sei se isso torna\p"
-	.string "mais facil perguntar o que\nexiste debaixo dela.$"
+	.string "This is one fine mountain! Plenty of\n"
+	.string "hot people around for company!$"
 
 MtChimney_Text_SawyerDefeat:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "Oh, you're a real firebrand, too!$"
 
 MtChimney_Text_SawyerPostBattle:
-	.string "Dona Zila diz que uma historia\nmuda toda vez que e contada.\p"
-	.string "Talvez seja por isso que ainda\nesta viva.$"
+	.string "I think I need a dip in LAVARIDGE\n"
+	.string "HOT SPRING with the locals!$"
 
 MtChimney_Text_SawyerRegister:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "I like little fireballs like you.\n"
+	.string "Let me register you in my POKéNAV.$"
 
 MtChimney_Text_SawyerRematchIntro:
-	.string "Dona Zila diz que uma historia\nmuda toda vez que e contada.\p"
-	.string "Talvez seja por isso que ainda\nesta viva.$"
+	.string "I'm happily surrounded by hot people\n"
+	.string "around these parts. I won't lose!$"
 
 MtChimney_Text_SawyerRematchDefeat:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "Gosh, you're still the same\n"
+	.string "firebrand as before!$"
 
 MtChimney_Text_SawyerPostRematch:
-	.string "Dona Zila diz que uma historia\nmuda toda vez que e contada.\p"
-	.string "Talvez seja por isso que ainda\nesta viva.$"
+	.string "Actually, it really is hot here.\n"
+	.string "I'm overdressed for these parts.$"
 

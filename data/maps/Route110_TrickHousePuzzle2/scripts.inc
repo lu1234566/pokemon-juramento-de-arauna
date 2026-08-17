@@ -100,46 +100,42 @@ Route110_TrickHousePuzzle2_EventScript_Georgia::
 	end
 
 Route110_TrickHousePuzzle2_Text_WroteSecretCodeLockOpened:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "{PLAYER} wrote down the secret code\n"
+	.string "on the door.\p"
+	.string "“TRICK MASTER is smart.”\n"
+	.string "… … … … … … … …\p"
+	.string "The lock clicked open!$"
 
 Route110_TrickHousePuzzle2_Text_TedIntro:
-	.string "Voce vai continuar mesmo\nsabendo que\p"
-	.string "ROUTE110 TRICKHOUSEPUZZLE2\nguarda partes da historia que\p"
-	.string "muita gente preferia deixar\nenterradas?$"
+	.string "Which switch closes which hole?$"
 
 Route110_TrickHousePuzzle2_Text_TedDefeat:
-	.string "Tem gente que chama de\nDESENCANTO. Eu chamava de\p"
-	.string "distraicao, ate minha mae\nesquecer a cancao que cantava\p"
-	.string "desde crianca.$"
+	.string "After that battle, I'm even more\n"
+	.string "confused!$"
 
 Route110_TrickHousePuzzle2_Text_TedPostBattle:
-	.string "Voce vai continuar mesmo\nsabendo que\p"
-	.string "ROUTE110 TRICKHOUSEPUZZLE2\nguarda partes da historia que\p"
-	.string "muita gente preferia deixar\nenterradas?$"
+	.string "Can I get you to push all the buttons\n"
+	.string "for me?$"
 
 Route110_TrickHousePuzzle2_Text_PaulIntro:
-	.string "Existem placas novas por toda\nparte. Curioso e que alguns\p"
-	.string "nomes antigos desapareceram\nquando elas chegaram.$"
+	.string "Oh! You're on your second TRICK HOUSE\n"
+	.string "challenge!$"
 
 Route110_TrickHousePuzzle2_Text_PaulDefeat:
-	.string "Voce vai continuar mesmo\nsabendo que\p"
-	.string "ROUTE110 TRICKHOUSEPUZZLE2\nguarda partes da historia que\p"
-	.string "muita gente preferia deixar\nenterradas?$"
+	.string "You're good at battling too?$"
 
 Route110_TrickHousePuzzle2_Text_PaulPostBattle:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "The TRICK MASTER rigged all the tricks\n"
+	.string "in this house all by himself.$"
 
 Route110_TrickHousePuzzle2_Text_GeorgiaIntro:
-	.string "Dona Zila diz que uma historia\nmuda toda vez que e contada.\p"
-	.string "Talvez seja por isso que ainda\nesta viva.$"
+	.string "I want to make my own GYM one day.\n"
+	.string "So, I'm studying how to set traps.$"
 
 Route110_TrickHousePuzzle2_Text_GeorgiaDefeat:
-	.string "Ultimamente alguns Pokemon\nparam diante de suas antigas\p"
-	.string "casas como se nunca tivessem\nestado ali.$"
+	.string "I didn't study battling enough!$"
 
 Route110_TrickHousePuzzle2_Text_GeorgiaPostBattle:
-	.string "CIRO: O futuro nao espera por\nquem vive olhando para tras.\p"
-	.string "Pelo menos era nisso que eu\nacreditava.$"
+	.string "You're strong, aren't you?\n"
+	.string "Maybe even enough to be a GYM LEADER!$"
 

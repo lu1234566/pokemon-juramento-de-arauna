@@ -16,10 +16,9 @@ RustboroCity_Flat2_1F_EventScript_Skitty::
 	end
 
 RustboroCity_Flat2_1F_Text_DevonWorkersLiveHere:
-	.string "O CONSORCIO HORIZONTE trouxe\nemprego e obras. Tambem trouxe\p"
-	.string "maquinas capazes de medir\nVINCULOS.$"
+	.string "CONSORCIO HORIZONTEORATION's workers live in\n"
+	.string "this building.$"
 
 RustboroCity_Flat2_1F_Text_Skitty:
-	.string "Meu avo dizia que lembrar\ntambem cansa. Mas escolher pelo\p"
-	.string "outro o que ele deve esquecer\nparece pior.$"
+	.string "SKITTY: Gyaaaah!$"
 

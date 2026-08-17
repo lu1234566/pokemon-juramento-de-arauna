@@ -137,26 +137,22 @@ SkyPillar_Outside_EventScript_ClosedDoor::
 	end
 
 SkyPillar_Outside_Text_DoorIsClosed:
-	.string "O Caderno de Zila guarda\nversoes contraditorias da\p"
-	.string "regiao. Sua forca esta\njustamente em nao escolher uma\p"
-	.string "unica verdade.$"
+	.string "The door is closed.$"
 
 SkyPillar_Outside_Text_OpenedDoorToSkyPillar:
 	.string "AMALIA: Arauna sobreviveu a\nverdade pela metade por tempo\p"
-	.string "demais. A Liga tambem tem\ndividas com os nomes que foram\p"
-	.string "deixados para tras.$"
+	.string "demais. A Liga tambem tem\ndividas com quem foi apagado.$"
 
 SkyPillar_Outside_Text_EarthquakeNotMomentToWaste:
-	.string "AMALIA: Arauna sobreviveu a\nverdade pela metade por tempo\p"
-	.string "demais. A Liga tambem tem\ndividas com os nomes que foram\p"
-	.string "deixados para tras.$"
+	.string "WALLACE: It's an earthquake!\p"
+	.string "There's not a moment to waste!\n"
+	.string "We've got to hurry!$"
 
 SkyPillar_Outside_Text_SituationGettingWorse:
 	.string "AMALIA: Arauna sobreviveu a\nverdade pela metade por tempo\p"
-	.string "demais. A Liga tambem tem\ndividas com os nomes que foram\p"
-	.string "deixados para tras.$"
+	.string "demais. A Liga tambem tem\ndividas com quem foi apagado.$"
 
 SkyPillar_Outside_Text_GotToGoBackForSootopolis:
-	.string "AMALIA: Arauna sobreviveu a\nverdade pela metade por tempo\p"
-	.string "demais. A Liga tambem tem\ndividas com os nomes que foram\p"
-	.string "deixados para tras.$"
+	.string "Entre rasuras e paginas\nremendadas, o caderno prova que\p"
+	.string "uma memoria pode mudar sem\ndeixar de pertencer a quem a\p"
+	.string "viveu.$"

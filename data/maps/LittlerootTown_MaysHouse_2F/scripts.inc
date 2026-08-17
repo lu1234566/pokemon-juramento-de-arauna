@@ -308,46 +308,42 @@ LittlerootTown_MaysHouse_2F_EventScript_TurnOffPlayerPC::
 	end
 
 RivalsHouse_2F_Text_MayWhoAreYou:
-	.string "ANAHI: Eu estudei os VINCULOS\nantes de entender o que minhas\p"
-	.string "pesquisas permitiriam fazer. Se\neu continuar calada, o erro\p"
-	.string "tambem sera meu.$"
+	.string "CIRO: Voce continua olhando\npara cada cicatriz como se ela\p"
+	.string "fosse uma resposta. Eu quero\nsaber o que existe depois dela.$"
 
 RivalsHouse_2F_Text_MayGettingReady:
-	.string "CIRO: Nao quero passar a vida\npreso ao que esta vila perdeu.\p"
-	.string "O HORIZONTE me deu uma chance\nde seguir em frente. Vou\p"
-	.string "descobrir se voce consegue\nacompanhar.$"
+	.string "CIRO: Nao confunda minha pressa\ncom falta de memoria. Eu lembro\p"
+	.string "o bastante para saber que nao\nquero viver preso ao que perdi.$"
 
 RivalsHouse_2F_Text_BrendanWhoAreYou:
-	.string "ANAHI: Eu estudei os VINCULOS\nantes de entender o que minhas\p"
-	.string "pesquisas permitiriam fazer. Se\neu continuar calada, o erro\p"
-	.string "tambem sera meu.$"
+	.string "CIRO: Nao confunda minha pressa\ncom falta de memoria. Eu lembro\p"
+	.string "o bastante para saber que nao\nquero viver preso ao que perdi.$"
 
 RivalsHouse_2F_Text_BrendanGettingReady:
-	.string "CIRO: Nao quero passar a vida\npreso ao que esta vila perdeu.\p"
-	.string "O HORIZONTE me deu uma chance\nde seguir em frente. Vou\p"
-	.string "descobrir se voce consegue\nacompanhar.$"
+	.string "CIRO: O HORIZONTE nao me pediu\npara esquecer nada. So me\p"
+	.string "mostrou que existe um futuro\nque nao precisa ser governado\p"
+	.string "pelo passado.$"
 
 RivalsHouse_2F_Text_ItsRivalsPokeBall:
-	.string "CIRO: Nao quero passar a vida\npreso ao que esta vila perdeu.\p"
-	.string "O HORIZONTE me deu uma chance\nde seguir em frente. Vou\p"
-	.string "descobrir se voce consegue\nacompanhar.$"
+	.string "It's {RIVAL}'s POKé BALL!\p"
+	.string "Better leave it right where it is.$"
 
 RivalsHouse_2F_Text_MayJustCheckingMyPokedex:
-	.string "CIRO: Nao quero passar a vida\npreso ao que esta vila perdeu.\p"
-	.string "O HORIZONTE me deu uma chance\nde seguir em frente. Vou\p"
-	.string "descobrir se voce consegue\nacompanhar.$"
+	.string "CIRO: Se os dados estiverem\ncertos, o DESENCANTO pode ser\p"
+	.string "tratado. Eu prefiro testar uma\nresposta a transformar\p"
+	.string "sofrimento em tradicao.$"
 
 RivalsHouse_2F_Text_MayWhereShouldIGoNext:
-	.string "CIRO: Nao quero passar a vida\npreso ao que esta vila perdeu.\p"
-	.string "O HORIZONTE me deu uma chance\nde seguir em frente. Vou\p"
-	.string "descobrir se voce consegue\nacompanhar.$"
+	.string "CIRO: O HORIZONTE nao me pediu\npara esquecer nada. So me\p"
+	.string "mostrou que existe um futuro\nque nao precisa ser governado\p"
+	.string "pelo passado.$"
 
 RivalsHouse_2F_Text_BrendanJustCheckingMyPokedex:
-	.string "CIRO: Nao quero passar a vida\npreso ao que esta vila perdeu.\p"
-	.string "O HORIZONTE me deu uma chance\nde seguir em frente. Vou\p"
-	.string "descobrir se voce consegue\nacompanhar.$"
+	.string "CIRO: Se os dados estiverem\ncertos, o DESENCANTO pode ser\p"
+	.string "tratado. Eu prefiro testar uma\nresposta a transformar\p"
+	.string "sofrimento em tradicao.$"
 
 RivalsHouse_2F_Text_BrendanWhereShouldIGoNext:
-	.string "CIRO: Nao quero passar a vida\npreso ao que esta vila perdeu.\p"
-	.string "O HORIZONTE me deu uma chance\nde seguir em frente. Vou\p"
-	.string "descobrir se voce consegue\nacompanhar.$"
+	.string "CIRO: O HORIZONTE nao me pediu\npara esquecer nada. So me\p"
+	.string "mostrou que existe um futuro\nque nao precisa ser governado\p"
+	.string "pelo passado.$"

@@ -317,41 +317,53 @@ LittlerootTown_MaysHouse_1F_Movement_MayGoUpstairs2:
 	step_end
 
 RivalsHouse_1F_Text_OhYoureTheNewNeighbor:
-	.string "CIRO: Nao quero passar a vida\npreso ao que esta vila perdeu.\p"
-	.string "O HORIZONTE me deu uma chance\nde seguir em frente. Vou\p"
-	.string "descobrir se voce consegue\nacompanhar.$"
+	.string "Oh, hello. And you are?\p"
+	.string "… … … … … … … … …\n"
+	.string "… … … … … … … … …\p"
+	.string "Oh, you're {PLAYER}{KUN}, our new next-door\n"
+	.string "neighbor! Hi!\p"
+	.string "We have a {STR_VAR_1} about the same\n"
+	.string "age as you.\p"
+	.string "Our {STR_VAR_1} was excited about making\n"
+	.string "a new friend.\p"
+	.string "Our {STR_VAR_1} is upstairs, I think.$"
 
 RivalsHouse_1F_Text_LikeChildLikeFather:
-	.string "CIRO: Nao quero passar a vida\npreso ao que esta vila perdeu.\p"
-	.string "O HORIZONTE me deu uma chance\nde seguir em frente. Vou\p"
-	.string "descobrir se voce consegue\nacompanhar.$"
+	.string "Like child, like father.\p"
+	.string "My husband is as wild about POKéMON\n"
+	.string "as our child.\p"
+	.string "If he's not at his LAB, he's likely\n"
+	.string "scrabbling about in grassy places.$"
 
 RivalsHouse_1F_Text_TooBusyToNoticeVisit:
-	.string "CIRO: Nao quero passar a vida\npreso ao que esta vila perdeu.\p"
-	.string "O HORIZONTE me deu uma chance\nde seguir em frente. Vou\p"
-	.string "descobrir se voce consegue\nacompanhar.$"
+	.string "That {RIVAL}!\p"
+	.string "I guess our child is too busy with\n"
+	.string "POKéMON to notice that you came\l"
+	.string "to visit, {PLAYER}{KUN}.$"
 
 RivalsHouse_1F_Text_WentOutToRoute103:
-	.string "CIRO: Nao quero passar a vida\npreso ao que esta vila perdeu.\p"
-	.string "O HORIZONTE me deu uma chance\nde seguir em frente. Vou\p"
-	.string "descobrir se voce consegue\nacompanhar.$"
+	.string "Oh, {RIVAL} went out to ROUTE 103\n"
+	.string "just a little while ago.\p"
+	.string "Like father, like child.\n"
+	.string "{RIVAL} can't stay quietly at home.$"
 
 RivalsHouse_1F_Text_ShouldGoHomeEverySoOften:
-	.string "CIRO: Nao quero passar a vida\npreso ao que esta vila perdeu.\p"
-	.string "O HORIZONTE me deu uma chance\nde seguir em frente. Vou\p"
-	.string "descobrir se voce consegue\nacompanhar.$"
+	.string "I think it's wonderful for people to\n"
+	.string "travel with POKéMON.\p"
+	.string "But you should go home every so often\n"
+	.string "to let your mother know you're okay.\p"
+	.string "She might not say it, but I'm sure she\n"
+	.string "worries about you, {PLAYER}{KUN}.$"
 
 RivalsHouse_1F_Text_MayWhoAreYou:
-	.string "ANAHI: Eu estudei os VINCULOS\nantes de entender o que minhas\p"
-	.string "pesquisas permitiriam fazer. Se\neu continuar calada, o erro\p"
-	.string "tambem sera meu.$"
+	.string "CIRO: Nao confunda minha pressa\ncom falta de memoria. Eu lembro\p"
+	.string "o bastante para saber que nao\nquero viver preso ao que perdi.$"
 
 RivalsHouse_1F_Text_BrendanWhoAreYou:
-	.string "ANAHI: Eu estudei os VINCULOS\nantes de entender o que minhas\p"
-	.string "pesquisas permitiriam fazer. Se\neu continuar calada, o erro\p"
-	.string "tambem sera meu.$"
+	.string "CIRO: Voce continua olhando\npara cada cicatriz como se ela\p"
+	.string "fosse uma resposta. Eu quero\nsaber o que existe depois dela.$"
 
 RivalsHouse_1F_Text_DoYouHavePokemon:
-	.string "CIRO: Nao quero passar a vida\npreso ao que esta vila perdeu.\p"
-	.string "O HORIZONTE me deu uma chance\nde seguir em frente. Vou\p"
-	.string "descobrir se voce consegue\nacompanhar.$"
+	.string "Hi, neighbor!\p"
+	.string "Do you already have your\n"
+	.string "own POKéMON?$"
