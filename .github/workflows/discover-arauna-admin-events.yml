@@ -1,0 +1,36 @@
+name: Discover Arauna admin event slots
+
+on:
+  push:
+    branches:
+      - visual/arauna-support-lot3-2026-08-17
+
+permissions:
+  contents: write
+
+jobs:
+  discover:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Find inherited admin event references
+        run: |
+          {
+            echo '# Inherited Emerald admin event discovery'
+            echo
+            echo 'Generated from the current Arauna branch before targeted graphics replacement.'
+            echo
+            echo '```text'
+            grep -RniE 'Shelly|Matt|Tabitha|Courtney|Admin' data/maps data/scripts.inc data/scripts 2>/dev/null || true
+            echo '```'
+          } > docs/ARAUNA_ADMIN_EVENT_DISCOVERY.md
+      - name: Publish discovery report
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/ARAUNA_ADMIN_EVENT_DISCOVERY.md
+          git commit -m 'Discover inherited admin story events' || exit 0
+          git push origin HEAD:visual/arauna-support-lot3-2026-08-17
