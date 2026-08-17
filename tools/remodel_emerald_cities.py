@@ -1,234 +1,240 @@
 #!/usr/bin/env python3
-"""Remodel Hoenn settlements using only metatiles already present in vanilla Emerald.
+"""Remodel Hoenn settlements with vanilla Emerald map resources only.
 
-Design constraints:
-- Keep map dimensions, connections, warps, triggers, scripts, collision and elevation intact.
-- Never import external graphics or new metatile IDs.
-- Rearrange coherent micro-regions only when their collision/elevation masks match.
-- Protect borders and all event-sensitive coordinates.
-- Give every settlement a deliberate climate using weather already implemented by Emerald.
+Story/progression invariants are stricter than visual similarity: map dimensions,
+connections, scripts, events, warp destinations and collision/elevation at every
+coordinate remain exactly as Emerald. Visual block composition and weather are
+changed aggressively enough that each settlement acquires a distinct identity.
 """
 from __future__ import annotations
 
 import json
 import random
 import struct
-from collections import defaultdict
+from collections import Counter, defaultdict
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 LAYOUTS_JSON = ROOT / "data/layouts/layouts.json"
-
-CITY_CONFIG = {
-    "LittlerootTown": {"seed": 101, "weather": "WEATHER_SUNNY_CLOUDS", "passes": [(3, 3), (2, 2), (2, 1)], "theme": "aldeia-jardim clara, compacta e acolhedora"},
-    "OldaleTown": {"seed": 103, "weather": "WEATHER_SUNNY", "passes": [(2, 2), (1, 2), (2, 1)], "theme": "entroncamento rural aberto e ensolarado"},
-    "PetalburgCity": {"seed": 102, "weather": "WEATHER_RAIN", "passes": [(3, 3), (3, 2), (2, 2)], "theme": "cidade-jardim úmida organizada em bairros"},
-    "RustboroCity": {"seed": 104, "weather": "WEATHER_SHADE", "passes": [(4, 3), (3, 2), (2, 2)], "theme": "centro urbano pétreo, denso e sombreado"},
-    "DewfordTown": {"seed": 106, "weather": "WEATHER_SUNNY_CLOUDS", "passes": [(2, 2), (1, 2), (2, 1)], "theme": "vila costeira compacta de brisa marítima"},
-    "SlateportCity": {"seed": 109, "weather": "WEATHER_SUNNY", "passes": [(4, 3), (3, 2), (2, 2)], "theme": "porto comercial amplo, luminoso e irregular"},
-    "MauvilleCity": {"seed": 110, "weather": "WEATHER_SUNNY_CLOUDS", "passes": [(3, 2), (2, 2), (2, 1)], "theme": "cruzamento urbano seco e movimentado"},
-    "VerdanturfTown": {"seed": 117, "weather": "WEATHER_FOG_HORIZONTAL", "passes": [(2, 2), (1, 2), (2, 1)], "theme": "vila verde de névoa baixa e jardins"},
-    "FallarborTown": {"seed": 113, "weather": "WEATHER_VOLCANIC_ASH", "passes": [(2, 2), (1, 2), (2, 1)], "theme": "povoado de cinzas vulcânicas e terreno áspero"},
-    "LavaridgeTown": {"seed": 112, "weather": "WEATHER_DROUGHT", "passes": [(2, 2), (2, 1), (1, 2)], "theme": "cidade termal quente, seca e mineral"},
-    "FortreeCity": {"seed": 119, "weather": "WEATHER_RAIN", "passes": [(3, 2), (2, 2), (2, 1)], "theme": "assentamento florestal chuvoso em plataformas"},
-    "LilycoveCity": {"seed": 121, "weather": "WEATHER_DOWNPOUR", "passes": [(4, 4), (3, 2), (2, 2)], "theme": "metrópole costeira em terraços sob chuva oceânica"},
-    "MossdeepCity": {"seed": 124, "weather": "WEATHER_SUNNY", "passes": [(4, 3), (3, 2), (2, 2)], "theme": "ilha tecnológica clara, espaçada e marítima"},
-    "SootopolisCity": {"seed": 126, "weather": "WEATHER_RAIN_THUNDERSTORM", "passes": [(4, 3), (3, 3), (2, 2)], "theme": "cidade-cratera dramática, vertical e tempestuosa"},
-    "PacifidlogTown": {"seed": 131, "weather": "WEATHER_RAIN", "passes": [(2, 2), (1, 2), (2, 1)], "theme": "aldeia flutuante chuvosa de passarelas"},
-    "EverGrandeCity": {"seed": 128, "weather": "WEATHER_FOG_HORIZONTAL", "passes": [(4, 3), (3, 2), (2, 2)], "theme": "santuário de altitude envolto em névoa"},
-}
-
 MASK_COLLISION_ELEVATION = 0xFC00
 MASK_METATILE = 0x03FF
+MIN_VISUAL_CHANGE = 0.18
+
+CITY_CONFIG = {
+    "LittlerootTown": (101, "WEATHER_SUNNY_CLOUDS", "aldeia-jardim clara, compacta e acolhedora"),
+    "OldaleTown": (103, "WEATHER_SUNNY", "entroncamento rural aberto e ensolarado"),
+    "PetalburgCity": (102, "WEATHER_RAIN", "cidade-jardim úmida organizada em bairros"),
+    "RustboroCity": (104, "WEATHER_SHADE", "centro urbano pétreo, denso e sombreado"),
+    "DewfordTown": (106, "WEATHER_SUNNY_CLOUDS", "vila costeira compacta de brisa marítima"),
+    "SlateportCity": (109, "WEATHER_SUNNY", "porto comercial amplo, luminoso e irregular"),
+    "MauvilleCity": (110, "WEATHER_SUNNY_CLOUDS", "cruzamento urbano seco e movimentado"),
+    "VerdanturfTown": (117, "WEATHER_FOG_HORIZONTAL", "vila verde de névoa baixa e jardins"),
+    "FallarborTown": (113, "WEATHER_VOLCANIC_ASH", "povoado de cinzas vulcânicas e terreno áspero"),
+    "LavaridgeTown": (112, "WEATHER_DROUGHT", "cidade termal quente, seca e mineral"),
+    "FortreeCity": (119, "WEATHER_RAIN", "assentamento florestal chuvoso em plataformas"),
+    "LilycoveCity": (121, "WEATHER_DOWNPOUR", "metrópole costeira em terraços sob chuva oceânica"),
+    "MossdeepCity": (124, "WEATHER_SUNNY", "ilha tecnológica clara, espaçada e marítima"),
+    "SootopolisCity": (126, "WEATHER_RAIN_THUNDERSTORM", "cidade-cratera dramática, vertical e tempestuosa"),
+    "PacifidlogTown": (131, "WEATHER_RAIN", "aldeia flutuante chuvosa de passarelas"),
+    "EverGrandeCity": (128, "WEATHER_FOG_HORIZONTAL", "santuário de altitude envolto em névoa"),
+}
 
 
-def load_layout_table():
+def layouts_by_id():
     data = json.loads(LAYOUTS_JSON.read_text(encoding="utf-8"))
-    return {entry["id"]: entry for entry in data["layouts"]}
+    return {x["id"]: x for x in data["layouts"]}
 
 
-def protect_square(protected, width, height, x, y, radius):
-    for yy in range(max(0, y - radius), min(height, y + radius + 1)):
-        for xx in range(max(0, x - radius), min(width, x + radius + 1)):
-            protected.add((xx, yy))
+def protect_square(out, width, height, x, y, radius=0):
+    for yy in range(max(0, y-radius), min(height, y+radius+1)):
+        for xx in range(max(0, x-radius), min(width, x+radius+1)):
+            out.add((xx, yy))
 
 
 def protected_cells(map_data, width, height):
-    protected = set()
-    # Connections and edge transitions are sacrosanct.
-    border = 3
+    out = set()
+    # Only the transition rim is frozen. This keeps every route connection exact.
     for y in range(height):
         for x in range(width):
-            if x < border or y < border or x >= width - border or y >= height - border:
-                protected.add((x, y))
-
-    for event in map_data.get("warp_events", []):
-        protect_square(protected, width, height, int(event["x"]), int(event["y"]), 3)
-    for event in map_data.get("coord_events", []):
-        if "x" in event and "y" in event:
-            protect_square(protected, width, height, int(event["x"]), int(event["y"]), 2)
-    for event in map_data.get("bg_events", []):
-        if "x" in event and "y" in event:
-            protect_square(protected, width, height, int(event["x"]), int(event["y"]), 1)
-    for event in map_data.get("object_events", []):
-        if "x" in event and "y" in event:
-            radius = 1 + max(int(event.get("movement_range_x", 0)), int(event.get("movement_range_y", 0)))
-            protect_square(protected, width, height, int(event["x"]), int(event["y"]), min(radius, 3))
-    return protected
+            if x == 0 or y == 0 or x == width-1 or y == height-1:
+                out.add((x, y))
+    # Doors and scripted coordinates keep enough local visual context to remain readable.
+    for e in map_data.get("warp_events", []):
+        protect_square(out, width, height, int(e["x"]), int(e["y"]), 1)
+    for e in map_data.get("coord_events", []):
+        if "x" in e and "y" in e:
+            protect_square(out, width, height, int(e["x"]), int(e["y"]), 1)
+    for kind in ("bg_events", "object_events"):
+        for e in map_data.get(kind, []):
+            if "x" in e and "y" in e:
+                protect_square(out, width, height, int(e["x"]), int(e["y"]), 0)
+    return out
 
 
-def chunk_cells(x0, y0, cw, ch):
-    return [(x0 + dx, y0 + dy) for dy in range(ch) for dx in range(cw)]
+def collision(value):
+    return value & MASK_COLLISION_ELEVATION
 
 
-def apply_chunk_pass(grid, width, height, protected, cw, ch, rng):
+def shuffle_values(grid, groups, rng):
+    moved = 0
+    for indices in groups.values():
+        if len(indices) < 2:
+            continue
+        values = [grid[i] for i in indices]
+        rng.shuffle(values)
+        if all(grid[i] == v for i, v in zip(indices, values)):
+            values = values[1:] + values[:1]
+        for i, value in zip(indices, values):
+            if collision(grid[i]) != collision(value):
+                raise RuntimeError("collision/elevation mismatch during remix")
+            if grid[i] != value:
+                moved += 1
+            grid[i] = value
+    return moved
+
+
+def contextual_pass(grid, original, width, height, protected, rare_ids, rng):
+    """Swap common visual blocks only among cells with the same physical context."""
     groups = defaultdict(list)
-    for y0 in range(3, height - 3 - ch + 1, ch):
-        for x0 in range(3, width - 3 - cw + 1, cw):
-            cells = chunk_cells(x0, y0, cw, ch)
-            if any(cell in protected for cell in cells):
+    def cmask(x, y):
+        if x < 0 or y < 0 or x >= width or y >= height:
+            return -1
+        return collision(original[y*width+x])
+    for y in range(1, height-1):
+        for x in range(1, width-1):
+            if (x, y) in protected:
                 continue
-            values = tuple(grid[y * width + x] for x, y in cells)
-            # Rare/special metatiles are intentionally left anchored.
-            signature = tuple(value & MASK_COLLISION_ELEVATION for value in values)
-            groups[signature].append((cells, values))
+            i = y*width+x
+            if (original[i] & MASK_METATILE) in rare_ids:
+                continue
+            key = (collision(original[i]), cmask(x,y-1), cmask(x+1,y), cmask(x,y+1), cmask(x-1,y))
+            groups[key].append(i)
+    return shuffle_values(grid, groups, rng)
 
-    before = list(grid)
+
+def common_role_pass(grid, original, width, height, protected, rare_ids, rng):
+    """Stronger fallback: common blocks may move within the same collision/elevation role."""
+    groups = defaultdict(list)
+    for i, value in enumerate(original):
+        x, y = i % width, i // width
+        if (x, y) in protected or (value & MASK_METATILE) in rare_ids:
+            continue
+        groups[collision(value)].append(i)
+    return shuffle_values(grid, groups, rng)
+
+
+def chunk_pass(grid, original, width, height, protected, rare_ids, cw, ch, ox, oy, rng):
+    """Move coherent micro-regions while keeping the physical mask at each coordinate."""
+    groups = defaultdict(list)
+    for y0 in range(1+oy, height-1-ch+1, ch):
+        for x0 in range(1+ox, width-1-cw+1, cw):
+            cells = [(x0+dx, y0+dy) for dy in range(ch) for dx in range(cw)]
+            if any(c in protected for c in cells):
+                continue
+            idxs = [y*width+x for x,y in cells]
+            if any((original[i] & MASK_METATILE) in rare_ids for i in idxs):
+                continue
+            signature = tuple(collision(original[i]) for i in idxs)
+            groups[signature].append(idxs)
     moved = 0
     for chunks in groups.values():
         if len(chunks) < 2:
             continue
-        order = list(range(len(chunks)))
-        rng.shuffle(order)
-        if order == list(range(len(chunks))):
-            order = order[1:] + order[:1]
-        for dst_idx, src_idx in enumerate(order):
-            dst_cells, _ = chunks[dst_idx]
-            _, src_values = chunks[src_idx]
-            for (x, y), value in zip(dst_cells, src_values):
-                idx = y * width + x
-                # Signature equality guarantees collision/elevation stay identical.
-                if (grid[idx] & MASK_COLLISION_ELEVATION) != (value & MASK_COLLISION_ELEVATION):
-                    raise RuntimeError("collision/elevation signature mismatch")
-                if grid[idx] != value:
+        payloads = [[grid[i] for i in idxs] for idxs in chunks]
+        rng.shuffle(payloads)
+        for idxs, values in zip(chunks, payloads):
+            for i, value in zip(idxs, values):
+                if collision(original[i]) != collision(value):
+                    raise RuntimeError("chunk collision/elevation mismatch")
+                if grid[i] != value:
                     moved += 1
-                grid[idx] = value
-
-    # Absolute safety invariant for this pass.
-    for old, new in zip(before, grid):
-        if (old & MASK_COLLISION_ELEVATION) != (new & MASK_COLLISION_ELEVATION):
-            raise RuntimeError("collision/elevation changed")
+                grid[i] = value
     return moved
 
 
 def remodel_city(city, config, layouts):
+    seed, weather, theme = config
     map_path = ROOT / f"data/maps/{city}/map.json"
     map_data = json.loads(map_path.read_text(encoding="utf-8"))
-    original_map_data = json.loads(json.dumps(map_data))
-
+    original_map = json.loads(json.dumps(map_data))
     layout = layouts[map_data["layout"]]
     width, height = int(layout["width"]), int(layout["height"])
     block_path = ROOT / layout["blockdata_filepath"]
     raw = block_path.read_bytes()
-    if len(raw) != width * height * 2:
-        raise RuntimeError(f"{city}: unexpected blockdata size {len(raw)} for {width}x{height}")
-
-    original = list(struct.unpack(f"<{width * height}H", raw))
+    if len(raw) != width*height*2:
+        raise RuntimeError(f"{city}: invalid blockdata size")
+    original = list(struct.unpack(f"<{width*height}H", raw))
     grid = list(original)
     protected = protected_cells(map_data, width, height)
-
-    # Protect rare metatiles globally: doors, specialty signs, stairs, ledges and one-offs
-    # tend to fall into this category, so they remain exactly where Emerald put them.
-    freq = defaultdict(int)
-    for value in original:
-        freq[value & MASK_METATILE] += 1
-    rare_ids = {mid for mid, count in freq.items() if count <= 3}
-    for idx, value in enumerate(original):
+    frequencies = Counter(v & MASK_METATILE for v in original)
+    rare_ids = {mid for mid, count in frequencies.items() if count <= 1}
+    for i, value in enumerate(original):
         if (value & MASK_METATILE) in rare_ids:
-            protected.add((idx % width, idx // width))
+            protected.add((i % width, i // width))
 
-    rng = random.Random(config["seed"])
-    moved_total = 0
-    for cw, ch in config["passes"]:
-        moved_total += apply_chunk_pass(grid, width, height, protected, cw, ch, rng)
+    rng = random.Random(seed)
+    # Several offset chunk passes alter landscaping/architecture in coherent pieces.
+    for cw, ch in ((3,3),(2,2),(2,1),(1,2),(2,2),(2,1)):
+        for ox in range(min(cw, 2)):
+            for oy in range(min(ch, 2)):
+                chunk_pass(grid, original, width, height, protected, rare_ids, cw, ch, ox, oy, rng)
+    # Context-aware visual remix greatly reduces resemblance without changing walkability.
+    for _ in range(3):
+        contextual_pass(grid, original, width, height, protected, rare_ids, rng)
 
-    # Final hard invariants: story-sensitive cells and physical map geometry remain unchanged.
-    for x, y in protected:
-        idx = y * width + x
-        if grid[idx] != original[idx]:
-            raise RuntimeError(f"{city}: protected cell changed at {x},{y}")
-    for idx, (old, new) in enumerate(zip(original, grid)):
-        if (old & MASK_COLLISION_ELEVATION) != (new & MASK_COLLISION_ELEVATION):
-            raise RuntimeError(f"{city}: collision/elevation changed at index {idx}")
-        if new not in original:
-            raise RuntimeError(f"{city}: introduced a metatile entry not present in vanilla map")
+    def changed_ratio():
+        return sum(a != b for a,b in zip(original, grid)) / len(grid)
+    # Small towns have few repeatable chunks; use common role pools only when needed.
+    attempts = 0
+    while changed_ratio() < MIN_VISUAL_CHANGE and attempts < 8:
+        common_role_pass(grid, original, width, height, protected, rare_ids, rng)
+        attempts += 1
 
-    changed = sum(1 for a, b in zip(original, grid) if a != b)
+    # Hard safety invariants.
+    original_values = set(original)
+    for i, (old, new) in enumerate(zip(original, grid)):
+        if collision(old) != collision(new):
+            raise RuntimeError(f"{city}: collision/elevation changed at {i}")
+        if new not in original_values:
+            raise RuntimeError(f"{city}: non-vanilla block introduced")
+        x, y = i % width, i // width
+        if (x, y) in protected and old != new:
+            raise RuntimeError(f"{city}: protected coordinate changed at {x},{y}")
+    ratio = changed_ratio()
+    if ratio < MIN_VISUAL_CHANGE:
+        raise RuntimeError(f"{city}: visual change only {ratio:.1%}; target is {MIN_VISUAL_CHANGE:.0%}")
     block_path.write_bytes(struct.pack(f"<{len(grid)}H", *grid))
 
-    map_data["weather"] = config["weather"]
-    check = dict(map_data)
-    old_check = dict(original_map_data)
-    check.pop("weather", None)
-    old_check.pop("weather", None)
-    if check != old_check:
+    map_data["weather"] = weather
+    a, b = dict(map_data), dict(original_map)
+    a.pop("weather", None); b.pop("weather", None)
+    if a != b:
         raise RuntimeError(f"{city}: map metadata other than weather changed")
     map_path.write_text(json.dumps(map_data, indent=2) + "\n", encoding="utf-8")
-
-    return {
-        "city": city,
-        "theme": config["theme"],
-        "weather": config["weather"],
-        "width": width,
-        "height": height,
-        "changed": changed,
-        "total": len(grid),
-        "percent": 100.0 * changed / len(grid),
-        "protected": len(protected),
-        "moved_operations": moved_total,
-    }
+    changed = sum(a != b for a,b in zip(original, grid))
+    return {"city":city,"theme":theme,"weather":weather,"changed":changed,"total":len(grid),"percent":100*ratio,"protected":len(protected)}
 
 
 def write_manifest(results):
-    docs = ROOT / "docs"
-    docs.mkdir(exist_ok=True)
+    docs = ROOT / "docs"; docs.mkdir(exist_ok=True)
     lines = [
-        "# Remodelação das cidades — base Emerald",
-        "",
-        "Princípio: a ordem de progressão de Pokémon Emerald permanece intacta. Conexões entre mapas, warps, triggers, scripts, dimensões, colisão e elevação não são alterados.",
-        "",
-        "Os layouts abaixo foram remixados exclusivamente com entradas de metatile que já existiam no próprio mapa vanilla. Nenhum tileset, sprite, paleta ou gráfico externo foi introduzido.",
-        "",
-        "| Cidade | Identidade | Clima | Blocos alterados |",
-        "|---|---|---|---:|",
+        "# Remodelação das cidades — base Emerald", "",
+        "A progressão, ordem de rotas, conexões, scripts, eventos, warps, dimensões e geometria física de Pokémon Emerald permanecem intactas.", "",
+        "A composição visual foi remixada somente com blocos/metatiles já presentes no próprio mapa vanilla; nenhum gráfico externo foi adicionado.", "",
+        "| Cidade | Identidade | Clima | Composição visual alterada |", "|---|---|---|---:|",
     ]
     for r in results:
         lines.append(f"| {r['city']} | {r['theme']} | `{r['weather']}` | {r['changed']}/{r['total']} ({r['percent']:.1f}%) |")
-    lines += [
-        "",
-        "## Invariantes verificadas automaticamente",
-        "",
-        "- dimensões de cada mapa preservadas;",
-        "- conexões de rota preservadas;",
-        "- warps, object events, coord events e bg events preservados;",
-        "- colisão e elevação de cada coordenada preservadas bit a bit;",
-        "- células sensíveis a eventos e bordas preservadas integralmente;",
-        "- somente metatiles já presentes no mapa vanilla podem aparecer no resultado;",
-        "- a única alteração em `map.json` é o campo `weather`.",
-        "",
-    ]
+    lines += ["", "## Invariantes verificadas automaticamente", "", "- ordem e conexões de progressão do Emerald preservadas;", "- warps, object events, coord events, bg events e scripts preservados;", "- colisão e elevação preservadas bit a bit em todas as coordenadas;", "- bordas, portas e coordenadas sensíveis preservadas;", "- somente blocos existentes no mapa vanilla são reutilizados;", "- em `map.json`, somente `weather` é alterado;", f"- nenhuma cidade pode ficar abaixo de {MIN_VISUAL_CHANGE:.0%} de composição visual alterada.", ""]
     (docs / "EMERALD_CITY_REMODEL.md").write_text("\n".join(lines), encoding="utf-8")
 
 
 def main():
-    layouts = load_layout_table()
-    results = []
-    for city, config in CITY_CONFIG.items():
-        results.append(remodel_city(city, config, layouts))
+    layouts = layouts_by_id()
+    results = [remodel_city(city, cfg, layouts) for city, cfg in CITY_CONFIG.items()]
     write_manifest(results)
     for r in results:
-        print(f"{r['city']}: {r['changed']}/{r['total']} blocks changed ({r['percent']:.1f}%), weather={r['weather']}")
-
+        print(f"{r['city']}: {r['percent']:.1f}% changed, weather={r['weather']}")
 
 if __name__ == "__main__":
     main()
