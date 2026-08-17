@@ -2,6 +2,7 @@
 from pathlib import Path
 import re
 
+# Regenerate from the current protected main; helper branch is never merged.
 ROOT = Path.cwd()
 TRAINERS = ROOT / 'src/data/trainers.h'
 CLASSES = ROOT / 'src/data/text/trainer_class_names.h'
