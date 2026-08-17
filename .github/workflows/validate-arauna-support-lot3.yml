@@ -1,0 +1,51 @@
+name: Validate Arauna support lot 3
+
+on:
+  push:
+    branches:
+      - visual/arauna-support-lot3-2026-08-17
+
+permissions:
+  contents: write
+
+jobs:
+  validate-and-publish:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Install build dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gcc-arm-none-eabi binutils-arm-none-eabi libpng-dev
+      - name: Apply support-character graphics
+        run: python3 tools/apply_arauna_support_lot3.py
+      - name: Validate exact story placements
+        run: |
+          grep -q 'OBJ_EVENT_GFX_VAL_EVOLUIDO' data/maps/VictoryRoad_1F/map.json
+          grep -q 'OBJ_EVENT_GFX_ADMIN_CAMPO' data/maps/AquaHideout_B2F/map.json
+          grep -q 'OBJ_EVENT_GFX_ADMIN_ARQUIVO' data/maps/Route119_WeatherInstitute_2F/map.json
+          grep -q 'OBJ_EVENT_GFX_ADMIN_ARQUIVO' data/maps/SeafloorCavern_Room3/map.json
+          test "$(grep -c 'OBJ_EVENT_GFX_ADMIN_CAMPO' data/maps/AquaHideout_B2F/map.json)" -eq 1
+          test "$(grep -c 'OBJ_EVENT_GFX_ADMIN_ARQUIVO' data/maps/Route119_WeatherInstitute_2F/map.json)" -eq 1
+          test "$(grep -c 'OBJ_EVENT_GFX_ADMIN_ARQUIVO' data/maps/SeafloorCavern_Room3/map.json)" -eq 1
+          git diff --check
+      - name: Build custom Emerald ROM
+        env:
+          MODERN: 1
+          COMPARE: 0
+        run: make -j2 all
+      - name: Clean temporary discovery files
+        run: |
+          rm -f docs/ARAUNA_ADMIN_EVENT_DISCOVERY.md
+          rm -f .github/workflows/validate-arauna-support-lot3.yml
+      - name: Publish validated implementation
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git commit -m 'Implement Val evolved and Arauna administrators'
+          git push origin HEAD:visual/arauna-support-lot3-2026-08-17
