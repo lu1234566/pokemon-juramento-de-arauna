@@ -46,7 +46,7 @@ jobs:
         run: |
           set -euo pipefail
           grep -F 'f3ae088181bf583e55daf962a92bb46f4f1d07b7' rom.sha1
-          grep -F 'Pokemon Emerald' README.md
+          grep -F 'Pokémon Emerald' README.md
 
       - name: Commit clean reset to main
         shell: bash
