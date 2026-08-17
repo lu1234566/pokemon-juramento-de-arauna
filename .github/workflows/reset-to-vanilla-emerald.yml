@@ -1,4 +1,4 @@
-name: Prepare vanilla Pokemon Emerald reset
+name: Reset to exact vanilla Pokemon Emerald tree
 
 on:
   push:
@@ -27,23 +27,24 @@ jobs:
           git branch -f archive/pre-emerald-reset-2026-08-17 "$GITHUB_SHA"
           git push origin archive/pre-emerald-reset-2026-08-17 --force
 
-      - name: Fetch official vanilla Emerald source
+      - name: Create exact vanilla Emerald commit
         shell: bash
         run: |
           set -euo pipefail
-          git clone --depth 1 https://github.com/pret/pokeemerald.git /tmp/pokeemerald
-
-      - name: Build clean vanilla branch
-        shell: bash
-        run: |
-          set -euo pipefail
-          git switch -C reset/vanilla-emerald
-          rsync -a --delete --exclude='.git' /tmp/pokeemerald/ ./
-          diff -qr --exclude=.git . /tmp/pokeemerald
-          grep -F 'f3ae088181bf583e55daf962a92bb46f4f1d07b7' rom.sha1
-          grep -F 'Pokémon Emerald' README.md
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -A
-          git commit -m 'Reset project to vanilla Pokemon Emerald'
-          git push origin HEAD:reset/vanilla-emerald --force
+
+          git fetch --depth=1 https://github.com/pret/pokeemerald.git master
+          UPSTREAM_COMMIT="$(git rev-parse FETCH_HEAD)"
+          UPSTREAM_TREE="$(git rev-parse "${UPSTREAM_COMMIT}^{tree}")"
+
+          test "$UPSTREAM_TREE" = '426e47d31e5f02d966772e38265b46cb5f65e81f'
+          git show "${UPSTREAM_COMMIT}:rom.sha1" | grep -F 'f3ae088181bf583e55daf962a92bb46f4f1d07b7'
+          git show "${UPSTREAM_COMMIT}:README.md" | grep -F 'Pokémon Emerald'
+
+          RESET_COMMIT="$(printf '%s\n' 'Reset project to vanilla Pokemon Emerald' | git commit-tree "$UPSTREAM_TREE" -p "$GITHUB_SHA")"
+          echo "Vanilla commit: $UPSTREAM_COMMIT"
+          echo "Vanilla tree:   $UPSTREAM_TREE"
+          echo "Reset commit:   $RESET_COMMIT"
+
+          git push origin "${RESET_COMMIT}:refs/heads/reset/vanilla-emerald" --force
