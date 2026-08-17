@@ -38,9 +38,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
-          cp -a /tmp/pokeemerald/. .
-          rm -rf .git/shallow
+          rsync -a --delete --exclude='.git' /tmp/pokeemerald/ ./
           diff -qr --exclude=.git . /tmp/pokeemerald
 
       - name: Validate original Emerald checksum target
