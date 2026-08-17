@@ -3,7 +3,6 @@
   "name": "Route110",
   "layout": "LAYOUT_ROUTE110",
   "music": "MUS_ROUTE110",
-  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_ROUTE_110",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
@@ -274,8 +273,8 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_DIRE_HIT",
-      "script": "Common_EventScript_FindItem",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route110_EventScript_ItemDireHit",
       "flag": "FLAG_ITEM_ROUTE_110_DIRE_HIT"
     },
     {
@@ -287,8 +286,8 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_RARE_CANDY",
-      "script": "Common_EventScript_FindItem",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route110_EventScript_ItemRareCandy",
       "flag": "FLAG_ITEM_ROUTE_110_RARE_CANDY"
     },
     {
@@ -485,8 +484,8 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_ELIXIR",
-      "script": "Common_EventScript_FindItem",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route110_EventScript_ItemElixir",
       "flag": "FLAG_ITEM_ROUTE_110_ELIXIR"
     },
     {

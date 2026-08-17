@@ -1,20 +1,8 @@
-## O que mudou
+<!--- Provide a general summary of your changes in the Title above -->
 
-Descreva o escopo desta alteração.
+## Description
+<!--- Describe your changes in detail -->
 
-## Por que
-
-Explique a necessidade narrativa, visual ou técnica.
-
-## Validação
-
-- [ ] `bash scripts/check_no_proprietary_files.sh`
-- [ ] Build Emerald
-- [ ] Testes automatizados relevantes
-- [ ] Testes manuais registrados
-- [ ] `pt-BR` e `en` verificados quando há texto
-- [ ] Créditos e fontes atualizados quando há assets
-
-## Riscos e saves
-
-Informe impacto em saves, mapas, eventos, memória, localização ou atualização upstream.
+## **Discord contact info**
+<!--- Formatted as username (e.g. pikalaxalt) or username#numbers (e.g. PikalaxALT#5823) -->
+<!--- Contributors must join https://discord.gg/d5dubZ3 -->

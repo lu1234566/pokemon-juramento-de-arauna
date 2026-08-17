@@ -220,10 +220,10 @@ void CFile::CheckIncbin()
         return;
     }
 
-    std::string idents[4] = { "INCBIN_U8", "INCBIN_U16", "INCBIN_U32", "INCBIN_COMP"};
+    std::string idents[3] = { "INCBIN_U8", "INCBIN_U16", "INCBIN_U32" };
     int incbinType = -1;
 
-    for (int i = 0; i < 4; i++)
+    for (int i = 0; i < 3; i++)
     {
         if (CheckIdentifier(idents[i]))
         {
@@ -257,10 +257,6 @@ void CFile::CheckIncbin()
 
         std::string path = ReadPath();
 
-        // INCBIN_COMP; include *compressed* version of file
-        if (incbinType == 3)
-            path = path.append(".smol");
-
         SkipWhitespace();
 
         m_incbins.emplace(path);
@@ -292,10 +288,10 @@ void CFile::CheckIncgfx()
         return;
     }
 
-    std::string idents[4] = { "INCGFX_U8", "INCGFX_U16", "INCGFX_U32", "INCGFX_COMP" };
+    std::string idents[3] = { "INCGFX_U8", "INCGFX_U16", "INCGFX_U32" };
     int incgfxType = -1;
 
-    for (int i = 0; i < 4; i++)
+    for (int i = 0; i < 3; i++)
     {
         if (CheckIdentifier(idents[i]))
         {
@@ -331,8 +327,6 @@ void CFile::CheckIncgfx()
 
     SkipWhitespace();
     std::string extensions = ReadString();
-    if (incgfxType == 3)
-        extensions += ".smol";
 
     SkipWhitespace();
     std::string arguments;

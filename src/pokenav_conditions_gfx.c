@@ -26,11 +26,9 @@ static u8 sInitialLoadId; // Never read
 
 const u16 gConditionGraphData_Pal[] = INCGFX_U16("graphics/pokenav/condition/graph_data.pal", ".gbapal");
 const u16 gConditionText_Pal[] = INCGFX_U16("graphics/pokenav/condition/text.pal", ".gbapal");
-static const u32 sConditionGraphData_Gfx[] = INCGFX_U32("graphics/pokenav/condition/graph_data.png", ".4bpp.smol");
-static const u32 sConditionGraphData_Tilemap[] = INCGFX_U32("graphics/pokenav/condition/graph_data.bin", ".smolTM");
+static const u32 sConditionGraphData_Gfx[] = INCGFX_U32("graphics/pokenav/condition/graph_data.png", ".4bpp.lz");
+static const u32 sConditionGraphData_Tilemap[] = INCGFX_U32("graphics/pokenav/condition/graph_data.bin", ".lz");
 static const u16 sMonMarkings_Pal[] = INCGFX_U16("graphics/pokenav/condition/mon_markings.pal", ".gbapal");
-
-static const u8 gText_Number2[] = _("No. ");
 
 static const struct BgTemplate sMenuBgTemplates[3] =
 {
@@ -222,7 +220,7 @@ static u32 LoopedTask_OpenConditionGraphMenu(s32 state)
          if (FreeTempTileDataBuffersIfPossible())
             return LT_PAUSE;
 
-        DecompressDataWithHeaderVram(gPokenavCondition_Tilemap, menu->tilemapBuffers[0]);
+        LZ77UnCompVram(gPokenavCondition_Tilemap, menu->tilemapBuffers[0]);
         SetBgTilemapBuffer(3, menu->tilemapBuffers[0]);
         if (IsConditionMenuSearchMode() == TRUE)
             CopyToBgTilemapBufferRect(3, gPokenavOptions_Tilemap, 0, 5, 9, 4);
@@ -236,7 +234,7 @@ static u32 LoopedTask_OpenConditionGraphMenu(s32 state)
         if (FreeTempTileDataBuffersIfPossible())
             return LT_PAUSE;
 
-        DecompressDataWithHeaderVram(sConditionGraphData_Tilemap, menu->tilemapBuffers[2]);
+        LZ77UnCompVram(sConditionGraphData_Tilemap, menu->tilemapBuffers[2]);
         SetBgTilemapBuffer(2, menu->tilemapBuffers[2]);
         CopyBgTilemapBufferToVram(2);
         CopyPaletteIntoBufferUnfaded(gConditionGraphData_Pal, BG_PLTT_ID(3), PLTT_SIZE_4BPP);
@@ -581,20 +579,16 @@ static bool32 UpdateConditionGraphMenuWindows(u8 mode, u16 bufferIndex, bool8 wi
     case 2:
         if (IsConditionMenuSearchMode() == TRUE)
         {
-            u32 i = 0;
             str = GetConditionMonLocationText(bufferIndex);
             AddTextPrinterParameterized(menu->nameGenderWindowId, FONT_NORMAL, str, 0, 17, 0, NULL);
-            text[i++] = EXT_CTRL_CODE_BEGIN;
-            text[i++] = EXT_CTRL_CODE_BACKGROUND;
-            text[i++] = TEXT_COLOR_TRANSPARENT;
-            text[i++] = EXT_CTRL_CODE_BEGIN;
-            text[i++] = EXT_CTRL_CODE_TEXT_COLORS;
-            text[i++] = TEXT_COLOR_BLUE;
-            text[i++] = TEXT_COLOR_LIGHT_BLUE;
-            text[i++] = TEXT_COLOR_TRANSPARENT;
-            StringCopy(&text[i], gText_Number2);
+            text[0] = EXT_CTRL_CODE_BEGIN;
+            text[1] = EXT_CTRL_CODE_COLOR_HIGHLIGHT_SHADOW;
+            text[2] = TEXT_COLOR_BLUE;
+            text[3] = TEXT_COLOR_TRANSPARENT;
+            text[4] = TEXT_COLOR_LIGHT_BLUE;
+            StringCopy(&text[5], gText_Number2);
             AddTextPrinterParameterized(menu->listIndexWindowId, FONT_NORMAL, text, 4, 1, 0, NULL);
-            ConvertIntToDecimalStringN(&text[i], GetConditionMonDataBuffer(), STR_CONV_MODE_RIGHT_ALIGN, 4);
+            ConvertIntToDecimalStringN(&text[5], GetConditionMonDataBuffer(), STR_CONV_MODE_RIGHT_ALIGN, 4);
             AddTextPrinterParameterized(menu->listIndexWindowId, FONT_NORMAL, text, 28, 1, 0, NULL);
         }
         break;

@@ -3,7 +3,6 @@
   "name": "Route116",
   "layout": "LAYOUT_ROUTE116",
   "music": "MUS_ROUTE104",
-  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_ROUTE_116",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
@@ -113,8 +112,8 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_ETHER",
-      "script": "Common_EventScript_FindItem",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route116_EventScript_ItemEther",
       "flag": "FLAG_ITEM_ROUTE_116_ETHER"
     },
     {
@@ -126,8 +125,8 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_REPEL",
-      "script": "Common_EventScript_FindItem",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route116_EventScript_ItemRepel",
       "flag": "FLAG_ITEM_ROUTE_116_REPEL"
     },
     {
@@ -218,8 +217,8 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_HP_UP",
-      "script": "Common_EventScript_FindItem",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route116_EventScript_ItemHPUp",
       "flag": "FLAG_ITEM_ROUTE_116_HP_UP"
     },
     {
@@ -283,8 +282,8 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_X_SPECIAL",
-      "script": "Common_EventScript_FindItem",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route116_EventScript_ItemXSpecial",
       "flag": "FLAG_ITEM_ROUTE_116_X_SPECIAL"
     },
     {
@@ -349,8 +348,8 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_POTION",
-      "script": "Common_EventScript_FindItem",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route116_EventScript_ItemPotion",
       "flag": "FLAG_ITEM_ROUTE_116_POTION"
     },
     {

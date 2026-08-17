@@ -156,12 +156,6 @@ static void SpriteCB_SelectionIconCancel(struct Sprite *);
 static void SpriteCB_MonPic(struct Sprite *);
 static void SpriteCB_Condition(struct Sprite *);
 
-static const u8 sText_GetsAPokeBlockQuestion[] = _(" gets a {POKEBLOCK}?");
-static const u8 sText_WasEnhanced[] = _("was enhanced!");
-static const u8 sText_NothingChanged[] = _("Nothing changed!");
-static const u8 sText_WontEatAnymore[] = _("It won't eat anymore…");
-static const u8 sText_NatureSlash[] = _("NATURE/");
-
 extern const u16 gConditionGraphData_Pal[];
 extern const u16 gConditionText_Pal[];
 
@@ -179,8 +173,8 @@ static EWRAM_DATA struct UsePokeblockMenu *sMenu = NULL;
 
 static const u32 sMonFrame_Pal[] = INCBIN_U32("graphics/pokeblock/use_screen/mon_frame_pal.bin");
 static const u32 sMonFrame_Gfx[] = INCGFX_U32("graphics/pokeblock/use_screen/mon_frame.png", ".4bpp");
-static const u32 sMonFrame_Tilemap[] = INCGFX_U32("graphics/pokeblock/use_screen/mon_frame.bin", ".smolTM");
-static const u32 sGraphData_Tilemap[] = INCGFX_U32("graphics/pokeblock/use_screen/graph_data.bin", ".smolTM");
+static const u32 sMonFrame_Tilemap[] = INCGFX_U32("graphics/pokeblock/use_screen/mon_frame.bin", ".lz");
+static const u32 sGraphData_Tilemap[] = INCGFX_U32("graphics/pokeblock/use_screen/graph_data.bin", ".lz");
 
 // The condition/flavors aren't listed in their normal order in this file, they're listed as shown on the graph going counter-clockwise
 // Normally they would go Cool/Spicy, Beauty/Dry, Cute/Sweet, Smart/Bitter, Tough/Sour (also graph order, but clockwise)
@@ -358,6 +352,9 @@ static const struct SpriteTemplate sSpriteTemplate_UpDown =
     .paletteTag = TAG_UP_DOWN,
     .oam = &sOam_UpDown,
     .anims = sAnims_UpDown,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = SpriteCallbackDummy,
 };
 
 static const struct OamData sOam_Condition =
@@ -405,6 +402,8 @@ static const struct SpriteTemplate sSpriteTemplate_Condition =
     .paletteTag = TAG_CONDITION,
     .oam = &sOam_Condition,
     .anims = sAnims_Condition,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
     .callback = SpriteCB_Condition,
 };
 
@@ -771,7 +770,7 @@ static void ShowPokeblockResults(void)
     switch (sInfo->mainState)
     {
     case 0:
-        sInfo->mon = gParties[B_TRAINER_PLAYER];
+        sInfo->mon = gPlayerParty;
         sInfo->mon += sMenu->party[sMenu->info.curSelection].monId;
         DestroyConditionSparkleSprites(sMenu->sparkles);
         sInfo->mainState++;
@@ -868,9 +867,9 @@ static void AskUsePokeblock(void)
 {
     u8 stringBuffer[0x40];
 
-    GetMonData(&gParties[B_TRAINER_PLAYER][GetPartyIdFromSelectionId(sMenu->info.curSelection)], MON_DATA_NICKNAME, stringBuffer);
+    GetMonData(&gPlayerParty[GetPartyIdFromSelectionId(sMenu->info.curSelection)], MON_DATA_NICKNAME, stringBuffer);
     StringGet_Nickname(stringBuffer);
-    StringAppend(stringBuffer, sText_GetsAPokeBlockQuestion);
+    StringAppend(stringBuffer, gText_GetsAPokeBlockQuestion);
     StringCopy(gStringVar4, stringBuffer);
     FillWindowPixelBuffer(WIN_TEXT, 17);
     DrawTextBorderOuter(WIN_TEXT, 151, 14);
@@ -950,7 +949,7 @@ static void PrintWontEatAnymore(void)
 {
     FillWindowPixelBuffer(WIN_TEXT, 17);
     DrawTextBorderOuter(WIN_TEXT, 151, 14);
-    AddTextPrinterParameterized(WIN_TEXT, FONT_NORMAL, sText_WontEatAnymore, 0, 1, 0, NULL);
+    AddTextPrinterParameterized(WIN_TEXT, FONT_NORMAL, gText_WontEatAnymore, 0, 1, 0, NULL);
     PutWindowTilemap(WIN_TEXT);
     CopyWindowToVram(WIN_TEXT, COPYWIN_FULL);
 }
@@ -978,10 +977,10 @@ static void BufferEnhancedText(u8 *dest, u8 condition, s16 enhancement)
         if (enhancement)
             dest[(u16)enhancement] += 0; // something you can't imagine
         StringCopy(dest, sConditionNames[condition]);
-        StringAppend(dest, sText_WasEnhanced);
+        StringAppend(dest, gText_WasEnhanced);
         break;
     case 0:
-        StringCopy(dest, sText_NothingChanged);
+        StringCopy(dest, gText_NothingChanged);
         break;
     }
 }
@@ -1027,7 +1026,7 @@ static void AddPokeblockToConditions(struct Pokeblock *pokeblock, struct Pokemon
 static void CalculateConditionEnhancements(void)
 {
     u16 i;
-    struct Pokemon *mon = gParties[B_TRAINER_PLAYER];
+    struct Pokemon *mon = gPlayerParty;
     mon += sMenu->party[sMenu->info.curSelection].monId;
 
     GetMonConditions(mon, sInfo->conditionsBeforeBlock);
@@ -1085,7 +1084,7 @@ static u8 GetPartyIdFromSelectionId(u8 selectionId)
 
     for (i = 0; i < PARTY_SIZE; i++)
     {
-        if (!GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_IS_EGG))
+        if (!GetMonData(&gPlayerParty[i], MON_DATA_IS_EGG))
         {
             if (selectionId == 0)
                 return i;
@@ -1102,7 +1101,7 @@ static u8 GetSelectionIdFromPartyId(u8 partyId)
     u8 i, numEggs;
     for (i = 0, numEggs = 0; i < partyId; i++)
     {
-        if (GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_IS_EGG))
+        if (GetMonData(&gPlayerParty[i], MON_DATA_IS_EGG))
             numEggs++;
     }
 
@@ -1162,7 +1161,7 @@ static void LoadPartyInfo(void)
 
     for (i = 0, numMons = 0; i < CalculatePlayerPartyCount(); i++)
     {
-        if (!GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_IS_EGG))
+        if (!GetMonData(&gPlayerParty[i], MON_DATA_IS_EGG))
         {
             sMenu->party[numMons].boxId = TOTAL_BOXES_COUNT;
             sMenu->party[numMons].monId = i;
@@ -1335,7 +1334,7 @@ static bool8 LoadUsePokeblockMenuGfx(void)
         sMonFrame_TilemapPtr = Alloc(1280);
         break;
     case 2:
-        DecompressDataWithHeaderVram(sMonFrame_Tilemap, sMonFrame_TilemapPtr);
+        LZ77UnCompVram(sMonFrame_Tilemap, sMonFrame_TilemapPtr);
         break;
     case 3:
         LoadBgTiles(3, sMonFrame_Gfx, 224, 0);
@@ -1348,10 +1347,10 @@ static bool8 LoadUsePokeblockMenuGfx(void)
         sMenu->curMonXOffset = -80;
         break;
     case 6:
-        DecompressDataWithHeaderVram(gUsePokeblockGraph_Gfx, sGraph_Gfx);
+        LZ77UnCompVram(gUsePokeblockGraph_Gfx, sGraph_Gfx);
         break;
     case 7:
-        DecompressDataWithHeaderVram(gUsePokeblockGraph_Tilemap, sGraph_Tilemap);
+        LZ77UnCompVram(gUsePokeblockGraph_Tilemap, sGraph_Tilemap);
         LoadPalette(gUsePokeblockGraph_Pal, BG_PLTT_ID(2), PLTT_SIZE_4BPP);
         break;
     case 8:
@@ -1363,7 +1362,7 @@ static bool8 LoadUsePokeblockMenuGfx(void)
         CopyBgTilemapBufferToVram(1);
         break;
     case 10:
-        DecompressDataWithHeaderVram(sGraphData_Tilemap, sMenu->tilemapBuffer);
+        LZ77UnCompVram(sGraphData_Tilemap, sMenu->tilemapBuffer);
         break;
     case 11:
         LoadBgTilemap(2, sMenu->tilemapBuffer, 1280, 0);
@@ -1392,9 +1391,9 @@ static void UpdateMonInfoText(u16 loadId, bool8 firstPrint)
     {
         AddTextPrinterParameterized(WIN_NAME, FONT_NORMAL, sMenu->monNameStrings[loadId], 0, 1, 0, NULL);
         partyIndex = GetPartyIdFromSelectionId(sMenu->info.curSelection);
-        nature = GetNature(&gParties[B_TRAINER_PLAYER][partyIndex]);
-        str = StringCopy(sMenu->info.natureText, sText_NatureSlash);
-        str = StringCopy(str, gNaturesInfo[nature].name);
+        nature = GetNature(&gPlayerParty[partyIndex]);
+        str = StringCopy(sMenu->info.natureText, gText_NatureSlash);
+        str = StringCopy(str, gNatureNamePointers[nature]);
         AddTextPrinterParameterized3(WIN_NATURE, FONT_NORMAL, 2, 1, sNatureTextColors, 0, sMenu->info.natureText);
     }
 
@@ -1599,7 +1598,7 @@ static void SpriteCB_SelectionIconCancel(struct Sprite *sprite)
 // is the total number of sparkles that appear
 static void CalculateNumAdditionalSparkles(u8 monIndex)
 {
-    u8 sheen = GetMonData(&gParties[B_TRAINER_PLAYER][monIndex], MON_DATA_SHEEN);
+    u8 sheen = GetMonData(&gPlayerParty[monIndex], MON_DATA_SHEEN);
     sMenu->numSparkles[sMenu->curLoadId] = GET_NUM_CONDITION_SPARKLES(sheen);
 }
 

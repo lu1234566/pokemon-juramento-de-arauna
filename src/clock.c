@@ -1,26 +1,21 @@
 #include "global.h"
 #include "berry.h"
-#include "clock.h"
 #include "dewford_trend.h"
 #include "event_data.h"
 #include "field_specials.h"
 #include "field_weather.h"
-#include "lottery_corner.h"
 #include "main.h"
+#include "lottery_corner.h"
 #include "overworld.h"
-#include "pokerus.h"
-#include "random.h"
 #include "rtc.h"
 #include "time_events.h"
 #include "tv.h"
 #include "wallclock.h"
-#include "constants/form_change_types.h"
-#include "apricorn_tree.h"
 
 static void UpdatePerDay(struct Time *localTime);
 static void UpdatePerMinute(struct Time *localTime);
 
-void InitTimeBasedEvents(void)
+static void InitTimeBasedEvents(void)
 {
     FlagSet(FLAG_SYS_CLOCK_SET);
     RtcCalcLocalTime();
@@ -38,11 +33,6 @@ void DoTimeBasedEvents(void)
     }
 }
 
-void UpdateDailySeed(void)
-{
-    gSaveBlock1Ptr->dailySeed = Random32();
-}
-
 static void UpdatePerDay(struct Time *localTime)
 {
     u16 *days = GetVarPointer(VAR_DAYS);
@@ -52,7 +42,6 @@ static void UpdatePerDay(struct Time *localTime)
     {
         daysSince = localTime->days - *days;
         ClearDailyFlags();
-        UpdateDailySeed();
         UpdateDewfordTrendPerDay(daysSince);
         UpdateTVShowsPerDay(daysSince);
         UpdateWeatherPerDay(daysSince);
@@ -63,8 +52,6 @@ static void UpdatePerDay(struct Time *localTime)
         UpdateFrontierGambler(daysSince);
         SetShoalItemFlag(daysSince);
         SetRandomLotteryNumber(daysSince);
-        UpdateDaysPassedSinceFormChange(daysSince);
-        DailyResetApricornTrees();
         *days = localTime->days;
     }
 }
@@ -83,15 +70,6 @@ static void UpdatePerMinute(struct Time *localTime)
             BerryTreeTimeUpdate(minutes);
             gSaveBlock2Ptr->lastBerryTreeUpdate = *localTime;
         }
-    }
-}
-
-void FormChangeTimeUpdate()
-{
-    s32 i;
-    for (i = 0; i < PARTY_SIZE; i++)
-    {
-        TryFormChange(&gParties[B_TRAINER_PLAYER][i], FORM_CHANGE_TIME_OF_DAY, B_TRAINER_PLAYER);
     }
 }
 

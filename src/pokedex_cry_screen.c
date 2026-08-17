@@ -44,12 +44,12 @@ struct PokedexCryScreen
     u8 waveformPreviousY;
     u16 unk; // Never read
     u8 playStartPos;
-    enum Species species;
+    u16 species;
     u8 cryOverrideCountdown;
     u8 cryRepeatDelay;
 };
 
-static void PlayCryScreenCry(enum Species);
+static void PlayCryScreenCry(u16);
 static void BufferCryWaveformSegment(void);
 static void DrawWaveformFlatline(void);
 static void AdvancePlayhead(u8);
@@ -72,7 +72,7 @@ static const u8 sCryMeterNeedle_Gfx[] = INCGFX_U8("graphics/pokedex/cry_meter_ne
 
 static const u16 sCryMeter_Tilemap[] = INCBIN_U16("graphics/pokedex/cry_meter_map.bin"); // Unused
 static const u16 sCryMeter_Pal[] = INCGFX_U16("graphics/pokedex/cry_meter.png", ".gbapal");
-static const u8 sCryMeter_Gfx[] = INCGFX_U8("graphics/pokedex/cry_meter.png", ".4bpp.smol");
+static const u8 sCryMeter_Gfx[] = INCGFX_U8("graphics/pokedex/cry_meter.png", ".4bpp.lz");
 
 static const u16 sWaveformOffsets[][72] =
 {
@@ -208,6 +208,8 @@ static const struct SpriteTemplate sCryMeterNeedleSpriteTemplate =
     .paletteTag = TAG_NEEDLE,
     .oam = &sOamData_CryMeterNeedle,
     .anims = sSpriteAnimTable_CryMeterNeedle,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
     .callback = SpriteCB_CryMeterNeedle
 };
 
@@ -226,7 +228,7 @@ static const struct SpritePalette sCryMeterNeedleSpritePalettes[] =
 bool8 LoadCryWaveformWindow(struct CryScreenWindow *window, u8 windowId)
 {
     u8 i;
-    bool32 finished = FALSE;
+    u8 finished = FALSE;
 
     switch (gDexCryScreenState)
     {
@@ -273,7 +275,7 @@ void UpdateCryWaveformWindow(u8 windowId)
     DrawWaveformWindow(windowId);
     AdvancePlayhead(windowId);
 
-    // Cry can't be replayed until this counter is done
+    // Cry cant be replayed until this counter is done
     if (sDexCryScreen->cryRepeatDelay)
         sDexCryScreen->cryRepeatDelay--;
 
@@ -322,7 +324,7 @@ void UpdateCryWaveformWindow(u8 windowId)
     sDexCryScreen->cryState++;
 }
 
-void CryScreenPlayButton(enum Species species)
+void CryScreenPlayButton(u16 species)
 {
     if (gMPlayInfo_BGM.status & MUSICPLAYER_STATUS_PAUSE && !sDexCryScreen->cryOverrideCountdown)
     {
@@ -343,7 +345,7 @@ void CryScreenPlayButton(enum Species species)
     }
 }
 
-static void PlayCryScreenCry(enum Species species)
+static void PlayCryScreenCry(u16 species)
 {
     PlayCry_NormalNoDucking(species, 0, CRY_VOLUME_RS, CRY_PRIORITY_NORMAL);
     sDexCryScreen->cryState = 1;
@@ -575,3 +577,4 @@ static void SetCryMeterNeedleTarget(s8 offset)
     sCryMeterNeedle->targetRotation = rotation;
     sCryMeterNeedle->moveIncrement = NEEDLE_MOVE_INCREMENT;
 }
+

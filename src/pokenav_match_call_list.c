@@ -36,8 +36,6 @@ static u32 CB2_HandleCallExitInput(struct Pokenav_MatchCallMenu *);
 static u32 LoopedTask_BuildMatchCallList(s32);
 static bool32 ShouldDoNearbyMessage(void);
 
-static const u8 gText_CallCantBeMadeHere[] = _("A call can't be made from here.");
-
 #include "data/text/match_call_messages.h"
 
 static const u8 sMatchCallOptionsNoCheckPage[] =
@@ -316,7 +314,6 @@ mapsec_u16_t GetMatchCallMapSec(int index)
 
 bool32 ShouldDrawRematchPokeballIcon(int index)
 {
-#if FREE_MATCH_CALL == FALSE
     struct Pokenav_MatchCallMenu *state = GetSubstructPtr(POKENAV_SUBSTRUCT_MATCH_CALL_MAIN);
     if (!state->matchCallEntries[index].isSpecialTrainer)
         index = state->matchCallEntries[index].headerId;
@@ -327,19 +324,16 @@ bool32 ShouldDrawRematchPokeballIcon(int index)
         return FALSE;
 
     return gSaveBlock1Ptr->trainerRematches[index] != 0;
-#else
-    return FALSE;
-#endif //FREE_MATCH_CALL
 }
 
-enum TrainerPicID GetMatchCallTrainerPic(int index)
+int GetMatchCallTrainerPic(int index)
 {
     int headerId;
     struct Pokenav_MatchCallMenu *state = GetSubstructPtr(POKENAV_SUBSTRUCT_MATCH_CALL_MAIN);
     if (!state->matchCallEntries[index].isSpecialTrainer)
     {
         index = GetTrainerIdxByRematchIdx(state->matchCallEntries[index].headerId);
-        return GetTrainerPicFromId(index);
+        return gTrainers[index].trainerPic;
     }
 
     headerId = state->matchCallEntries[index].headerId;
@@ -347,7 +341,7 @@ enum TrainerPicID GetMatchCallTrainerPic(int index)
     if (index != REMATCH_TABLE_ENTRIES)
     {
         index = GetTrainerIdxByRematchIdx(index);
-        return GetTrainerPicFromId(index);
+        return gTrainers[index].trainerPic;
     }
 
     index = MatchCall_GetOverrideFacilityClass(headerId);
@@ -409,9 +403,9 @@ void BufferMatchCallNameAndDesc(struct PokenavMatchCallEntry *matchCallEntry, u8
     if (!matchCallEntry->isSpecialTrainer)
     {
         int index = GetTrainerIdxByRematchIdx(matchCallEntry->headerId);
-        const struct Trainer *trainer = GetTrainerStructFromId(index);
-        enum TrainerClassID class = trainer->trainerClass;
-        className = gTrainerClasses[class].name;
+        const struct Trainer *trainer = &gTrainers[index];
+        int class = trainer->trainerClass;
+        className = gTrainerClassNames[class];
         trainerName = trainer->trainerName;
     }
     else
@@ -473,7 +467,6 @@ int GetIndexDeltaOfNextCheckPageUp(int index)
 
 static bool32 UNUSED HasRematchEntry(void)
 {
-#if FREE_MATCH_CALL == FALSE
     int i;
 
     for (i = 0; i < REMATCH_TABLE_ENTRIES; i++)
@@ -491,14 +484,12 @@ static bool32 UNUSED HasRematchEntry(void)
                 return TRUE;
         }
     }
-#endif //FREE_MATCH_CALL
 
     return FALSE;
 }
 
 static bool32 ShouldDoNearbyMessage(void)
 {
-#if FREE_MATCH_CALL == FALSE
     struct Pokenav_MatchCallMenu *state = GetSubstructPtr(POKENAV_SUBSTRUCT_MATCH_CALL_MAIN);
     int selection = PokenavList_GetSelectedIndex();
     if (!state->matchCallEntries[selection].isSpecialTrainer)
@@ -521,6 +512,6 @@ static bool32 ShouldDoNearbyMessage(void)
             }
         }
     }
-#endif //FREE_MATCH_CALL
+
     return FALSE;
 }

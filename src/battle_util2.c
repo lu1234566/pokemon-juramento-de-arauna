@@ -5,61 +5,40 @@
 #include "malloc.h"
 #include "pokemon.h"
 #include "trainer_hill.h"
-#include "trainer_tower.h"
 #include "party_menu.h"
 #include "event_data.h"
 #include "constants/abilities.h"
 #include "random.h"
 #include "battle_scripts.h"
-#include "window.h"
 #include "constants/battle_string_ids.h"
-
-void AllocateBattleGfxResources(void)
-{
-    gBattleAnimBgTileBuffer = AllocZeroed(0x2000);
-    gBattleAnimBgTilemapBuffer = AllocZeroed(0x1000);
-}
-
-static void FreeBattleGfxResources(void)
-{
-    FREE_AND_SET_NULL(gBattleAnimBgTileBuffer);
-    FREE_AND_SET_NULL(gBattleAnimBgTilemapBuffer);
-}
-
-void CloseMainBattleScreen(void)
-{
-    FreeBattleGfxResources();
-    FreeAllWindowBuffers();
-}
 
 void AllocateBattleResources(void)
 {
-    if (gBattleTypeFlags & BATTLE_TYPE_TRAINER_TOWER && gMapHeader.regionMapSectionId == MAPSEC_TRAINER_TOWER_2)
-        InitTrainerTowerBattleStruct();
-    else if (gBattleTypeFlags & BATTLE_TYPE_TRAINER_HILL)
+    if (gBattleResources != NULL) {
+        // There was an assert here.
+        // But it didn't compile. 
+    }
+
+    if (gBattleTypeFlags & BATTLE_TYPE_TRAINER_HILL)
         InitTrainerHillBattleStruct();
 
     gBattleStruct = AllocZeroed(sizeof(*gBattleStruct));
-    gAiBattleData = AllocZeroed(sizeof(*gAiBattleData));
-    gAiThinkingStruct = AllocZeroed(sizeof(*gAiThinkingStruct));
-    gAiLogicData = AllocZeroed(sizeof(*gAiLogicData));
-    gAiPartyData = AllocZeroed(sizeof(*gAiPartyData));
-    gBattleHistory = AllocZeroed(sizeof(*gBattleHistory));
-
-#if B_FLAG_SKY_BATTLE
-    gBattleStruct->isSkyBattle = FlagGet(B_FLAG_SKY_BATTLE);
-#endif
 
     gBattleResources = AllocZeroed(sizeof(*gBattleResources));
     gBattleResources->secretBase = AllocZeroed(sizeof(*gBattleResources->secretBase));
+    gBattleResources->flags = AllocZeroed(sizeof(*gBattleResources->flags));
     gBattleResources->battleScriptsStack = AllocZeroed(sizeof(*gBattleResources->battleScriptsStack));
     gBattleResources->battleCallbackStack = AllocZeroed(sizeof(*gBattleResources->battleCallbackStack));
     gBattleResources->beforeLvlUp = AllocZeroed(sizeof(*gBattleResources->beforeLvlUp));
+    gBattleResources->ai = AllocZeroed(sizeof(*gBattleResources->ai));
+    gBattleResources->battleHistory = AllocZeroed(sizeof(*gBattleResources->battleHistory));
+    gBattleResources->AI_ScriptsStack = AllocZeroed(sizeof(*gBattleResources->AI_ScriptsStack));
 
     gLinkBattleSendBuffer = AllocZeroed(BATTLE_BUFFER_LINK_SIZE);
     gLinkBattleRecvBuffer = AllocZeroed(BATTLE_BUFFER_LINK_SIZE);
 
-    AllocateBattleGfxResources();
+    gBattleAnimBgTileBuffer = AllocZeroed(0x2000);
+    gBattleAnimBgTilemapBuffer = AllocZeroed(0x1000);
 
     if (gBattleTypeFlags & BATTLE_TYPE_SECRET_BASE)
     {
@@ -70,41 +49,38 @@ void AllocateBattleResources(void)
 
 void FreeBattleResources(void)
 {
-    if (gBattleTypeFlags & BATTLE_TYPE_TRAINER_TOWER && gMapHeader.regionMapSectionId == MAPSEC_TRAINER_TOWER_2)
-        FreeTrainerTowerBattleStruct();
-    else if (gBattleTypeFlags & BATTLE_TYPE_TRAINER_HILL)
+    if (gBattleTypeFlags & BATTLE_TYPE_TRAINER_HILL)
         FreeTrainerHillBattleStruct();
 
-    gFieldStatuses = 0;
     if (gBattleResources != NULL)
     {
         FREE_AND_SET_NULL(gBattleStruct);
-        FREE_AND_SET_NULL(gAiBattleData);
-        FREE_AND_SET_NULL(gAiThinkingStruct);
-        FREE_AND_SET_NULL(gAiLogicData);
-        FREE_AND_SET_NULL(gAiPartyData);
-        FREE_AND_SET_NULL(gBattleHistory);
 
         FREE_AND_SET_NULL(gBattleResources->secretBase);
+        FREE_AND_SET_NULL(gBattleResources->flags);
         FREE_AND_SET_NULL(gBattleResources->battleScriptsStack);
         FREE_AND_SET_NULL(gBattleResources->battleCallbackStack);
         FREE_AND_SET_NULL(gBattleResources->beforeLvlUp);
+        FREE_AND_SET_NULL(gBattleResources->ai);
+        FREE_AND_SET_NULL(gBattleResources->battleHistory);
+        FREE_AND_SET_NULL(gBattleResources->AI_ScriptsStack);
         FREE_AND_SET_NULL(gBattleResources);
 
         FREE_AND_SET_NULL(gLinkBattleSendBuffer);
         FREE_AND_SET_NULL(gLinkBattleRecvBuffer);
 
-        FreeBattleGfxResources();
+        FREE_AND_SET_NULL(gBattleAnimBgTileBuffer);
+        FREE_AND_SET_NULL(gBattleAnimBgTilemapBuffer);
     }
 }
 
-void AdjustFriendshipOnBattleFaint(enum BattlerId battler)
+void AdjustFriendshipOnBattleFaint(u8 battler)
 {
-    enum BattlerId opposingBattlerId;
+    u8 opposingBattlerId;
 
-    if (IsDoubleBattle())
+    if (gBattleTypeFlags & BATTLE_TYPE_DOUBLE)
     {
-        enum BattlerId opposingBattlerId2;
+        u8 opposingBattlerId2;
 
         opposingBattlerId = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
         opposingBattlerId2 = GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT);
@@ -117,54 +93,37 @@ void AdjustFriendshipOnBattleFaint(enum BattlerId battler)
         opposingBattlerId = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
     }
 
-    if (gBattleMons[opposingBattlerId].level - gBattleMons[battler].level > 29)
-        AdjustFriendship(GetBattlerMon(battler), FRIENDSHIP_EVENT_FAINT_LARGE);
+    if (gBattleMons[opposingBattlerId].level > gBattleMons[battler].level)
+    {
+        if (gBattleMons[opposingBattlerId].level - gBattleMons[battler].level > 29)
+            AdjustFriendship(&gPlayerParty[gBattlerPartyIndexes[battler]], FRIENDSHIP_EVENT_FAINT_LARGE);
+        else
+            AdjustFriendship(&gPlayerParty[gBattlerPartyIndexes[battler]], FRIENDSHIP_EVENT_FAINT_SMALL);
+    }
     else
-        AdjustFriendship(GetBattlerMon(battler), FRIENDSHIP_EVENT_FAINT_SMALL);
+    {
+        AdjustFriendship(&gPlayerParty[gBattlerPartyIndexes[battler]], FRIENDSHIP_EVENT_FAINT_SMALL);
+    }
 }
 
-void SwitchPartyOrderInGameMulti(enum BattlerId battler, u8 arg1)
+void SwitchPartyOrderInGameMulti(u8 battler, u8 arg1)
 {
-    if (IsOnPlayerSide(battler))
+    if (GetBattlerSide(battler) != B_SIDE_OPPONENT)
     {
         s32 i;
-        u8 battlerPartyId = gBattlerPartyIndexes[battler];
-        u8 switchInPartyId = arg1;
-        enum BattleTrainer trainer = GetBattlerTrainer(battler);
+        for (i = 0; i < (int)ARRAY_COUNT(gBattlePartyCurrentOrder); i++)
+            gBattlePartyCurrentOrder[i] = *(i + (u8 *)(gBattleStruct->battlerPartyOrders));
 
-        // In 6v6 multis, the partner party is stored in gParties[B_TRAINER_PARTNER]
-        // and uses indexes 0-2, but we still use the combined party order.
-        if (IsMultiBattle() == TRUE && !AreMultiPartiesFullTeams() && trainer == B_TRAINER_PARTNER)
-        {
-            battlerPartyId += MULTI_PARTY_SIZE;
-            switchInPartyId += MULTI_PARTY_SIZE;
-        }
+        SwitchPartyMonSlots(GetPartyIdFromBattlePartyId(gBattlerPartyIndexes[battler]), GetPartyIdFromBattlePartyId(arg1));
 
-        for (enum BattlerId battlerId = 0; battlerId < gBattlersCount; battlerId++)
-        {
-            if (!IsOnPlayerSide(battlerId))
-                continue;
-
-            // Don't update battler's orders for party menu if the switching battler and updating battler
-            // don't share a party, unless it's a 6v6 multi where player and partner party are temporarily
-            // merged for party menu and summary screen viewing
-            if (!(IsMultiBattle() == TRUE && !AreMultiPartiesFullTeams()) && !BattlersShareParty(battler, battlerId))
-                continue;
-
-            for (i = 0; i < (int)ARRAY_COUNT(gBattlePartyCurrentOrder); i++)
-                gBattlePartyCurrentOrder[i] = gBattleStruct->battlerPartyOrders[battlerId][i];
-
-            SwitchPartyMonSlots(GetPartyIdFromBattlePartyId(battlerPartyId), GetPartyIdFromBattlePartyId(switchInPartyId));
-
-            for (i = 0; i < (int)ARRAY_COUNT(gBattlePartyCurrentOrder); i++)
-                gBattleStruct->battlerPartyOrders[battlerId][i] = gBattlePartyCurrentOrder[i];
-        }
+        for (i = 0; i < (int)ARRAY_COUNT(gBattlePartyCurrentOrder); i++)
+            *(i + (u8 *)(gBattleStruct->battlerPartyOrders)) = gBattlePartyCurrentOrder[i];
     }
 }
 
 // Called when a Pokémon is unable to attack during a Battle Palace battle.
 // Check if it was because they are frozen/asleep, and if so try to cure the status.
-u32 BattlePalace_TryEscapeStatus(enum BattlerId battler)
+u32 BattlePalace_TryEscapeStatus(u8 battler)
 {
     u32 effect = 0;
 
@@ -178,18 +137,18 @@ u32 BattlePalace_TryEscapeStatus(enum BattlerId battler)
                 if (UproarWakeUpCheck(battler))
                 {
                     // Wake up from Uproar
-                    gEffectBattler = battler;
                     gBattleMons[battler].status1 &= ~(STATUS1_SLEEP);
-                    gBattleMons[battler].volatiles.nightmare = FALSE;
+                    gBattleMons[battler].status2 &= ~(STATUS2_NIGHTMARE);
+                    BattleScriptPushCursor();
                     gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_WOKE_UP_UPROAR;
-                    BattleScriptCall(BattleScript_MoveUsedWokeUp);
+                    gBattlescriptCurrInstr = BattleScript_MoveUsedWokeUp;
                     effect = 2;
                 }
                 else
                 {
                     u32 toSub;
 
-                    if (GetBattlerAbility(battler) == ABILITY_EARLY_BIRD)
+                    if (gBattleMons[battler].ability == ABILITY_EARLY_BIRD)
                         toSub = 2;
                     else
                         toSub = 1;
@@ -209,9 +168,10 @@ u32 BattlePalace_TryEscapeStatus(enum BattlerId battler)
                     else
                     {
                         // Wake up
-                        gBattleMons[battler].volatiles.nightmare = FALSE;
+                        gBattleMons[battler].status2 &= ~(STATUS2_NIGHTMARE);
+                        BattleScriptPushCursor();
                         gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_WOKE_UP;
-                        BattleScriptCall(BattleScript_MoveUsedWokeUp);
+                        gBattlescriptCurrInstr = BattleScript_MoveUsedWokeUp;
                         effect = 2;
                     }
                 }
@@ -230,8 +190,8 @@ u32 BattlePalace_TryEscapeStatus(enum BattlerId battler)
                 {
                     // Unfreeze
                     gBattleMons[battler].status1 &= ~(STATUS1_FREEZE);
-                    gBattleScripting.battler = battler;
-                    BattleScriptCall(BattleScript_BattlerDefrosted);
+                    BattleScriptPushCursor();
+                    gBattlescriptCurrInstr = BattleScript_MoveUsedUnfroze;
                     gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_DEFROSTED;
                 }
                 effect = 2;
@@ -246,26 +206,10 @@ u32 BattlePalace_TryEscapeStatus(enum BattlerId battler)
 
     if (effect == 2)
     {
-        BtlController_EmitSetMonData(battler, B_COMM_TO_CONTROLLER, REQUEST_STATUS_BATTLE, 0, 4, &gBattleMons[battler].status1);
-        MarkBattlerForControllerExec(battler);
+        gActiveBattler = battler;
+        BtlController_EmitSetMonData(B_COMM_TO_CONTROLLER, REQUEST_STATUS_BATTLE, 0, 4, &gBattleMons[gActiveBattler].status1);
+        MarkBattlerForControllerExec(gActiveBattler);
     }
 
     return effect;
-}
-
-struct Pokemon *GetBattlerParty(enum BattlerId battler)
-{
-    return gParties[GetBattlerTrainer(battler)];
-}
-
-struct Pokemon *GetTrainerParty(enum BattleTrainer trainer)
-{
-    return gParties[trainer];
-}
-
-struct Pokemon* GetBattlerMon(enum BattlerId battler)
-{
-    u32 index = gBattlerPartyIndexes[battler];
-
-    return &GetBattlerParty(battler)[index];
 }

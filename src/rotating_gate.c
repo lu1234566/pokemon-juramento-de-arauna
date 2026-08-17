@@ -7,7 +7,6 @@
 #include "sound.h"
 #include "sprite.h"
 #include "constants/songs.h"
-#include "constants/event_objects.h"
 
 #define ROTATING_GATE_TILE_TAG 0x1300
 #define ROTATING_GATE_PUZZLE_MAX 12
@@ -463,12 +462,14 @@ static const union AffineAnimCmd *const sSpriteAffineAnimTable_RotatingGate[] =
     sSpriteAffineAnim_RotatingClockwise270to360Faster,
 };
 
+
 static const struct SpriteTemplate sSpriteTemplate_RotatingGateLarge =
 {
     .tileTag = ROTATING_GATE_TILE_TAG,
-    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1,
+    .paletteTag = TAG_NONE,
     .oam = &sOamData_RotatingGateLarge,
     .anims = sSpriteAnimTable_RotatingGateLarge,
+    .images = NULL,
     .affineAnims = sSpriteAffineAnimTable_RotatingGate,
     .callback = SpriteCallback_RotatingGate,
 };
@@ -476,9 +477,10 @@ static const struct SpriteTemplate sSpriteTemplate_RotatingGateLarge =
 static const struct SpriteTemplate sSpriteTemplate_RotatingGateRegular =
 {
     .tileTag = ROTATING_GATE_TILE_TAG,
-    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1,
+    .paletteTag = TAG_NONE,
     .oam = &sOamData_RotatingGateRegular,
     .anims = sSpriteAnimTable_RotatingGateRegular,
+    .images = NULL,
     .affineAnims = sSpriteAffineAnimTable_RotatingGate,
     .callback = SpriteCallback_RotatingGate,
 };
@@ -739,7 +741,7 @@ static u8 RotatingGate_CreateGate(u8 gateId, s16 deltaX, s16 deltaY)
 
     template.tileTag = gate->shape + ROTATING_GATE_TILE_TAG;
 
-    spriteId = CreateSprite(&template, 0, 0, OW_OBJECT_SUBPRIORITY - 1); // Above shadows
+    spriteId = CreateSprite(&template, 0, 0, 0x94);
     if (spriteId == MAX_SPRITES)
         return MAX_SPRITES;
 
@@ -747,7 +749,6 @@ static u8 RotatingGate_CreateGate(u8 gateId, s16 deltaX, s16 deltaY)
     y = gate->y + MAP_OFFSET;
 
     sprite = &gSprites[spriteId];
-    UpdateSpritePaletteByTemplate(&template, sprite);
     sprite->data[0] = gateId;
     sprite->coordOffsetEnabled = 1;
 
@@ -911,7 +912,7 @@ static void RotatingGate_TriggerRotationAnimation(u8 gateId, s32 rotationDirecti
     }
 }
 
-static u8 RotatingGate_GetRotationInfo(enum Direction direction, s16 x, s16 y)
+static u8 RotatingGate_GetRotationInfo(u8 direction, s16 x, s16 y)
 {
     const u8 *ptr;
 
@@ -957,7 +958,7 @@ void RotatingGate_InitPuzzleAndGraphics(void)
     }
 }
 
-bool32 CheckForRotatingGatePuzzleCollision(enum Direction direction, s16 x, s16 y)
+bool32 CheckForRotatingGatePuzzleCollision(u8 direction, s16 x, s16 y)
 {
     s32 i;
 
@@ -995,7 +996,7 @@ bool32 CheckForRotatingGatePuzzleCollision(enum Direction direction, s16 x, s16 
     return FALSE;
 }
 
-bool32 CheckForRotatingGatePuzzleCollisionWithoutAnimation(enum Direction direction, s16 x, s16 y)
+bool32 CheckForRotatingGatePuzzleCollisionWithoutAnimation(u8 direction, s16 x, s16 y)
 {
     s32 i;
 

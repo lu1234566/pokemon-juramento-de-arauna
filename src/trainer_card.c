@@ -26,7 +26,6 @@
 #include "pokemon_icon.h"
 #include "trainer_pokemon_sprites.h"
 #include "contest_util.h"
-#include "decompress.h"
 #include "constants/songs.h"
 #include "constants/game_stat.h"
 #include "constants/battle_frontier.h"
@@ -119,7 +118,7 @@ static u8 GetRubyTrainerStars(struct TrainerCard *);
 static u16 GetCaughtMonsCount(void);
 static void SetPlayerCardData(struct TrainerCard *, u8);
 static void TrainerCard_GenerateCardForPlayer(struct TrainerCard *);
-static u8 VersionToCardType(enum GameVersion);
+static u8 VersionToCardType(u8);
 static void SetDataFromTrainerCard(void);
 static void InitGpuRegs(void);
 static void ResetGpuRegs(void);
@@ -169,7 +168,7 @@ static bool8 Task_EndCardFlip(struct Task *task);
 static void UpdateCardFlipRegs(u16);
 static void LoadMonIconGfx(void);
 
-static const u32 sTrainerCardStickers_Gfx[]      = INCGFX_U32("graphics/trainer_card/frlg/stickers.png", ".4bpp.smol");
+static const u32 sTrainerCardStickers_Gfx[]      = INCGFX_U32("graphics/trainer_card/frlg/stickers.png", ".4bpp.lz");
 static const u16 sUnused_Pal[]                   = INCGFX_U16("graphics/trainer_card/unused.pal", ".gbapal");
 static const u16 sHoennTrainerCardBronze_Pal[]   = INCGFX_U16("graphics/trainer_card/bronze.pal", ".gbapal");
 static const u16 sKantoTrainerCardGreen_Pal[]    = INCGFX_U16("graphics/trainer_card/frlg/green.pal", ".gbapal");
@@ -188,8 +187,8 @@ static const u16 sTrainerCardSticker1_Pal[]      = INCGFX_U16("graphics/trainer_
 static const u16 sTrainerCardSticker2_Pal[]      = INCGFX_U16("graphics/trainer_card/frlg/stickers2.pal", ".gbapal");
 static const u16 sTrainerCardSticker3_Pal[]      = INCGFX_U16("graphics/trainer_card/frlg/stickers3.pal", ".gbapal");
 static const u16 sTrainerCardSticker4_Pal[]      = INCGFX_U16("graphics/trainer_card/frlg/stickers4.pal", ".gbapal");
-static const u32 sHoennTrainerCardBadges_Gfx[]   = INCGFX_U32("graphics/trainer_card/badges.png", ".4bpp.smol");
-static const u32 sKantoTrainerCardBadges_Gfx[]   = INCGFX_U32("graphics/trainer_card/frlg/badges.png", ".4bpp.smol");
+static const u32 sHoennTrainerCardBadges_Gfx[]   = INCGFX_U32("graphics/trainer_card/badges.png", ".4bpp.lz");
+static const u32 sKantoTrainerCardBadges_Gfx[]   = INCGFX_U32("graphics/trainer_card/frlg/badges.png", ".4bpp.lz");
 
 static const struct BgTemplate sTrainerCardBgTemplates[4] =
 {
@@ -536,47 +535,47 @@ static bool8 LoadCardGfx(void)
     {
     case 0:
         if (sData->cardType != CARD_TYPE_FRLG)
-            DecompressDataWithHeaderWram(gHoennTrainerCardBg_Tilemap, sData->bgTilemap);
+            LZ77UnCompWram(gHoennTrainerCardBg_Tilemap, sData->bgTilemap);
         else
-            DecompressDataWithHeaderWram(gKantoTrainerCardBg_Tilemap, sData->bgTilemap);
+            LZ77UnCompWram(gKantoTrainerCardBg_Tilemap, sData->bgTilemap);
         break;
     case 1:
         if (sData->cardType != CARD_TYPE_FRLG)
-            DecompressDataWithHeaderWram(gHoennTrainerCardBack_Tilemap, sData->backTilemap);
+            LZ77UnCompWram(gHoennTrainerCardBack_Tilemap, sData->backTilemap);
         else
-            DecompressDataWithHeaderWram(gKantoTrainerCardBack_Tilemap, sData->backTilemap);
+            LZ77UnCompWram(gKantoTrainerCardBack_Tilemap, sData->backTilemap);
         break;
     case 2:
         if (!sData->isLink)
         {
             if (sData->cardType != CARD_TYPE_FRLG)
-                DecompressDataWithHeaderWram(gHoennTrainerCardFront_Tilemap, sData->frontTilemap);
+                LZ77UnCompWram(gHoennTrainerCardFront_Tilemap, sData->frontTilemap);
             else
-                DecompressDataWithHeaderWram(gKantoTrainerCardFront_Tilemap, sData->frontTilemap);
+                LZ77UnCompWram(gKantoTrainerCardFront_Tilemap, sData->frontTilemap);
         }
         else
         {
             if (sData->cardType != CARD_TYPE_FRLG)
-                DecompressDataWithHeaderWram(gHoennTrainerCardFrontLink_Tilemap, sData->frontTilemap);
+                LZ77UnCompWram(gHoennTrainerCardFrontLink_Tilemap, sData->frontTilemap);
             else
-                DecompressDataWithHeaderWram(gKantoTrainerCardFrontLink_Tilemap, sData->frontTilemap);
+                LZ77UnCompWram(gKantoTrainerCardFrontLink_Tilemap, sData->frontTilemap);
         }
         break;
     case 3:
         if (sData->cardType != CARD_TYPE_FRLG)
-            DecompressDataWithHeaderWram(sHoennTrainerCardBadges_Gfx, sData->badgeTiles);
+            LZ77UnCompWram(sHoennTrainerCardBadges_Gfx, sData->badgeTiles);
         else
-            DecompressDataWithHeaderWram(sKantoTrainerCardBadges_Gfx, sData->badgeTiles);
+            LZ77UnCompWram(sKantoTrainerCardBadges_Gfx, sData->badgeTiles);
         break;
     case 4:
         if (sData->cardType != CARD_TYPE_FRLG)
-            DecompressDataWithHeaderWram(gHoennTrainerCard_Gfx, sData->cardTiles);
+            LZ77UnCompWram(gHoennTrainerCard_Gfx, sData->cardTiles);
         else
-            DecompressDataWithHeaderWram(gKantoTrainerCard_Gfx, sData->cardTiles);
+            LZ77UnCompWram(gKantoTrainerCard_Gfx, sData->cardTiles);
         break;
     case 5:
         if (sData->cardType == CARD_TYPE_FRLG)
-            DecompressDataWithHeaderWram(sTrainerCardStickers_Gfx, sData->stickerTiles);
+            LZ77UnCompWram(sTrainerCardStickers_Gfx, sData->stickerTiles);
         break;
     default:
         sData->gfxLoadState = 0;
@@ -667,7 +666,7 @@ u32 CountPlayerTrainerStars(void)
 
     if (GetGameStat(GAME_STAT_ENTERED_HOF))
         stars++;
-    if (HasAllRegionalMons())
+    if (HasAllHoennMons())
         stars++;
     if (CountPlayerMuseumPaintings() >= CONTEST_CATEGORIES_COUNT)
         stars++;
@@ -717,7 +716,7 @@ static void SetPlayerCardData(struct TrainerCard *trainerCard, u8 cardType)
     }
 
     trainerCard->hasPokedex = FlagGet(FLAG_SYS_POKEDEX_GET);
-    trainerCard->caughtAllHoenn = HasAllRegionalMons();
+    trainerCard->caughtAllHoenn = HasAllHoennMons();
     trainerCard->caughtMonsCount = GetCaughtMonsCount();
 
     trainerCard->trainerId = (gSaveBlock2Ptr->playerTrainerId[1] << 8) | gSaveBlock2Ptr->playerTrainerId[0];
@@ -1046,7 +1045,7 @@ static void PrintMoneyOnCard(void)
     else
         AddTextPrinterParameterized3(WIN_CARD_TEXT, FONT_NORMAL, 16, 57, sTrainerCardTextColors, TEXT_SKIP_DRAW, gText_TrainerCardMoney);
 
-    ConvertIntToDecimalStringN(gStringVar1, sData->trainerCard.money, STR_CONV_MODE_LEFT_ALIGN, MAX_MONEY_DIGITS);
+    ConvertIntToDecimalStringN(gStringVar1, sData->trainerCard.money, STR_CONV_MODE_LEFT_ALIGN, 6);
     StringExpandPlaceholders(gStringVar4, gText_PokedollarVar1);
     if (!sData->isHoenn)
     {
@@ -1066,7 +1065,7 @@ static u16 GetCaughtMonsCount(void)
     if (IsNationalPokedexEnabled())
         return GetNationalPokedexCount(FLAG_GET_CAUGHT);
     else
-        return GetRegionalPokedexCount(FLAG_GET_CAUGHT);
+        return GetHoennPokedexCount(FLAG_GET_CAUGHT);
 }
 
 static void PrintPokedexOnCard(void)
@@ -1079,7 +1078,7 @@ static void PrintPokedexOnCard(void)
             AddTextPrinterParameterized3(WIN_CARD_TEXT, FONT_NORMAL, 20, 72, sTrainerCardTextColors, TEXT_SKIP_DRAW, gText_TrainerCardPokedex);
         else
             AddTextPrinterParameterized3(WIN_CARD_TEXT, FONT_NORMAL, 16, 73, sTrainerCardTextColors, TEXT_SKIP_DRAW, gText_TrainerCardPokedex);
-        StringCopy(ConvertIntToDecimalStringN(gStringVar4, sData->trainerCard.caughtMonsCount, STR_CONV_MODE_LEFT_ALIGN, 4), gText_EmptyString6);
+        StringCopy(ConvertIntToDecimalStringN(gStringVar4, sData->trainerCard.caughtMonsCount, STR_CONV_MODE_LEFT_ALIGN, 3), gText_EmptyString6);
         if (!sData->isHoenn)
         {
             xOffset = GetStringRightAlignXOffset(FONT_NORMAL, gStringVar4, 144);
@@ -1501,7 +1500,7 @@ static void DrawStarsAndBadgesOnCard(void)
 {
     static const u8 yOffsets[] = {7, 7};
 
-    s16 i, x, y;
+    s16 i, x;
     u16 tileNum = 192;
     u8 palNum = 3;
 
@@ -1509,15 +1508,14 @@ static void DrawStarsAndBadgesOnCard(void)
     if (!sData->isLink)
     {
         x = 4;
-        y = IS_FRLG ? 16 : 15;
         for (i = 0; i < NUM_BADGES; i++, tileNum += 2, x += 3)
         {
             if (sData->badgeCount[i])
             {
-                FillBgTilemapBufferRect(3, tileNum, x, y, 1, 1, palNum);
-                FillBgTilemapBufferRect(3, tileNum + 1, x + 1, y, 1, 1, palNum);
-                FillBgTilemapBufferRect(3, tileNum + 16, x, y + 1, 1, 1, palNum);
-                FillBgTilemapBufferRect(3, tileNum + 17, x + 1, y + 1, 1, 1, palNum);
+                FillBgTilemapBufferRect(3, tileNum, x, 15, 1, 1, palNum);
+                FillBgTilemapBufferRect(3, tileNum + 1, x + 1, 15, 1, 1, palNum);
+                FillBgTilemapBufferRect(3, tileNum + 16, x, 16, 1, 1, palNum);
+                FillBgTilemapBufferRect(3, tileNum + 17, x + 1, 16, 1, 1, palNum);
             }
         }
     }
@@ -1603,7 +1601,7 @@ static bool8 IsCardFlipTaskActive(void)
 
 static void Task_DoCardFlipTask(u8 taskId)
 {
-    while (sTrainerCardFlipTasks[gTasks[taskId].tFlipState](&gTasks[taskId]))
+    while(sTrainerCardFlipTasks[gTasks[taskId].tFlipState](&gTasks[taskId]))
         ;
 }
 
@@ -1718,7 +1716,7 @@ static bool8 Task_DrawFlippedCardSide(struct Task *task)
             return FALSE;
         }
         sData->flipDrawState++;
-    } while (!gReceivedRemoteLinkPlayers);
+    } while (gReceivedRemoteLinkPlayers == 0);
 
     return FALSE;
 }
@@ -1871,7 +1869,7 @@ static u8 GetSetCardType(void)
     }
 }
 
-static u8 VersionToCardType(enum GameVersion version)
+static u8 VersionToCardType(u8 version)
 {
     if (version == VERSION_FIRE_RED || version == VERSION_LEAF_GREEN)
         return CARD_TYPE_FRLG;
@@ -1883,7 +1881,7 @@ static u8 VersionToCardType(enum GameVersion version)
 
 static void CreateTrainerCardTrainerPic(void)
 {
-    if (InUnionRoom() == TRUE && gReceivedRemoteLinkPlayers)
+    if (InUnionRoom() == TRUE && gReceivedRemoteLinkPlayers == 1)
     {
         CreateTrainerCardTrainerPicSprite(FacilityClassToPicIndex(sData->trainerCard.unionRoomClass),
                     TRUE,

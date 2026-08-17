@@ -66,26 +66,6 @@ CFile::~CFile()
     free(m_buffer);
 }
 
-void CFile::printf(const char *format, ...)
-{
-    std::va_list args;
-    va_start(args, format);
-    int n = vsnprintf(NULL, 0, format, args);
-    va_end(args);
-
-    char *s = new char[n + 1];
-    va_start(args, format);
-    std::vsnprintf(s, n + 1, format, args);
-    va_end(args);
-    m_output.append(s);
-    delete[] s;
-}
-
-void CFile::putchar(char c)
-{
-    m_output.append(1, c);
-}
-
 void CFile::Preproc()
 {
     char stringChar = 0;
@@ -156,28 +136,27 @@ linemarker_error:
         {
             if (m_buffer[m_pos] == stringChar)
             {
-                putchar(stringChar);
+                std::putchar(stringChar);
                 m_pos++;
                 stringChar = 0;
             }
             else if (m_buffer[m_pos] == '\\' && m_buffer[m_pos + 1] == stringChar)
             {
-                putchar('\\');
-                putchar(stringChar);
+                std::putchar('\\');
+                std::putchar(stringChar);
                 m_pos += 2;
             }
             else
             {
                 if (m_buffer[m_pos] == '\n')
                     Newline();
-                putchar(m_buffer[m_pos]);
+                std::putchar(m_buffer[m_pos]);
                 m_pos++;
             }
         }
         else
         {
             TryConvertString();
-            TryConvertCompoundString();
             TryConvertIncbin();
             TryConvertIncgfx();
 
@@ -186,7 +165,7 @@ linemarker_error:
 
             char c = m_buffer[m_pos++];
 
-            putchar(c);
+            std::putchar(c);
 
             if (c == '\n')
                 Newline();
@@ -196,28 +175,6 @@ linemarker_error:
                 stringChar = '\'';
         }
     }
-
-    // TODO: Share the tails of compound strings where possible (like the
-    // 'ld' optimization for 'SHF_MERGE | SHF_STRINGS').
-    for (auto it : m_compoundStrings)
-    {
-        // HINT: GCC puts the section name into the assembly without any
-        // validation, so we're able to apply the 'SHF_MERGE' flag and
-        // our own 'sh_entsize' by using '@' to comment out what GCC
-        // would have put after the section name.
-        // This will not work with Clang, see
-        // https://discourse.llvm.org/t/creating-shf-merge-shf-strings-section/86399
-        std::printf("static const unsigned char __attribute__((section(\".rodata.compound_string.%016" PRIx64 ",\\\"aM\\\",%%progbits,%ld @\"))) sCompoundString_%016" PRIx64 "[] = {", it.second, it.first.size(), it.second);
-        if (it.first.size() > 0)
-        {
-            std::printf(" 0x%02X", it.first[0]);
-            for (std::size_t i = 1; i < it.first.size(); i++)
-                std::printf(", 0x%02X", it.first[i]);
-        }
-        std::printf(" };\n");
-    }
-
-    std::puts(m_output.c_str());
 }
 
 bool CFile::ConsumeHorizontalWhitespace()
@@ -237,7 +194,7 @@ bool CFile::ConsumeNewline()
     {
         m_pos += 2;
         Newline();
-        putchar('\n');
+        std::putchar('\n');
         return true;
     }
 
@@ -245,7 +202,7 @@ bool CFile::ConsumeNewline()
     {
         m_pos++;
         Newline();
-        putchar('\n');
+        std::putchar('\n');
         return true;
     }
 
@@ -262,48 +219,6 @@ void CFile::SkipWhitespace()
 {
     while (ConsumeHorizontalWhitespace() || ConsumeNewline())
         ;
-}
-
-std::vector<unsigned char> CFile::ConvertString()
-{
-    std::vector<unsigned char> converted;
-
-    while (true)
-    {
-        SkipWhitespace();
-
-        if (m_buffer[m_pos] == '"')
-        {
-            unsigned char s[kMaxStringLength];
-            int length = 0;
-            StringParser stringParser(m_buffer, m_size);
-            try
-            {
-                m_pos += stringParser.ParseString(m_pos, s, length);
-            }
-            catch (std::runtime_error& e)
-            {
-                RaiseError(e.what());
-            }
-            converted.insert(converted.end(), s, s + length);
-        }
-        else if (m_buffer[m_pos] == ')')
-        {
-            m_pos++;
-            break;
-        }
-        else
-        {
-            if (m_pos >= m_size)
-                RaiseError("unexpected EOF");
-            if (IsAsciiPrintable(m_buffer[m_pos]))
-                RaiseError("unexpected character '%c'", m_buffer[m_pos]);
-            else
-                RaiseError("unexpected character '\\x%02X'", m_buffer[m_pos]);
-        }
-    }
-
-    return converted;
 }
 
 void CFile::TryConvertString()
@@ -336,55 +251,50 @@ void CFile::TryConvertString()
 
     SkipWhitespace();
 
-    printf("{ ");
+    std::printf("{ ");
 
-    std::vector<unsigned char> converted = ConvertString();
-    for (std::size_t i = 0; i < converted.size(); i++)
-        printf("0x%02X, ", converted[i]);
-
-    if (noTerminator)
-        printf(" }");
-    else
-        printf("0xFF }");
-}
-
-static std::uint64_t fnv1a(const std::vector<unsigned char>& bytes)
-{
-    std::uint64_t hash = 0xcbf29ce484222325UL;
-    for (auto b : bytes)
-        hash = (hash ^ b) * 0x00000100000001b3UL;
-    return hash;
-}
-
-void CFile::TryConvertCompoundString()
-{
-    long oldPos = m_pos;
-    auto oldLocation = m_location;
-    std::string ident = "COMPOUND_STRING";
-
-    if ((m_pos > 0 && IsIdentifierChar(m_buffer[m_pos - 1])) || !CheckIdentifier(ident))
-        return;
-
-    m_pos += ident.length();
-
-    SkipWhitespace();
-
-    if (m_buffer[m_pos] != '(')
+    while (1)
     {
-        m_pos = oldPos;
-        m_location = oldLocation;
-        return;
+        SkipWhitespace();
+
+        if (m_buffer[m_pos] == '"')
+        {
+            unsigned char s[kMaxStringLength];
+            int length;
+            StringParser stringParser(m_buffer, m_size);
+
+            try
+            {
+                m_pos += stringParser.ParseString(m_pos, s, length);
+            }
+            catch (std::runtime_error& e)
+            {
+                RaiseError(e.what());
+            }
+
+            for (int i = 0; i < length; i++)
+                printf("0x%02X, ", s[i]);
+        }
+        else if (m_buffer[m_pos] == ')')
+        {
+            m_pos++;
+            break;
+        }
+        else
+        {
+            if (m_pos >= m_size)
+                RaiseError("unexpected EOF");
+            if (IsAsciiPrintable(m_buffer[m_pos]))
+                RaiseError("unexpected character '%c'", m_buffer[m_pos]);
+            else
+                RaiseError("unexpected character '\\x%02X'", m_buffer[m_pos]);
+        }
     }
 
-    m_pos++;
-    std::vector<unsigned char> converted = ConvertString();
-    converted.push_back(0xFF);
-
-    std::uint64_t hash = fnv1a(converted);
-    m_compoundStrings[converted] = hash;
-    // WARNING: Assumes no collisions.
-    // TODO: Incorporate filename to prevent cross-TU collisions.
-    printf("sCompoundString_%016" PRIx64, hash);
+    if (noTerminator)
+        std::printf(" }");
+    else
+        std::printf("0xFF }");
 }
 
 bool CFile::CheckIdentifier(const std::string& ident)
@@ -473,10 +383,10 @@ int ExtractData(const std::unique_ptr<unsigned char[]>& buffer, int offset, int 
 
 void CFile::TryConvertIncbin()
 {
-    std::string idents[4] = { "INCBIN_U8", "INCBIN_U16", "INCBIN_U32", "INCBIN_COMP"};
+    std::string idents[3] = { "INCBIN_U8", "INCBIN_U16", "INCBIN_U32" };
     int incbinType = -1;
 
-    for (int i = 0; i < 4; i++)
+    for (int i = 0; i < 3; i++)
     {
         if (CheckIdentifier(idents[i]))
         {
@@ -488,7 +398,7 @@ void CFile::TryConvertIncbin()
     if (incbinType == -1)
         return;
 
-    int size = incbinType < 3 ? 1 << incbinType : 4;
+    int size = 1 << incbinType;
 
     long oldPos = m_pos;
     auto oldLocation = m_location;
@@ -506,17 +416,12 @@ void CFile::TryConvertIncbin()
 
     m_pos++;
 
-    printf("{");
+    std::printf("{");
 
     while (true)
     {
         SkipWhitespace();
-
         auto path = ReadString();
-
-        // INCBIN_COMP; include *compressed* version of file
-        if (incbinType == 3)
-            path = path.append(".smol");
 
         int fileSize;
         std::unique_ptr<unsigned char[]> buffer = ReadWholeFile(path, fileSize);
@@ -531,7 +436,7 @@ void CFile::TryConvertIncbin()
         {
             int data = ExtractData(buffer, offset, size);
             offset += size;
-            printf("%uu,", data);
+            std::printf("%uu,", data);
         }
 
         SkipWhitespace();
@@ -547,7 +452,7 @@ void CFile::TryConvertIncbin()
 
     m_pos++;
 
-    printf("}");
+    std::printf("}");
 }
 
 void CFile::TryConvertIncgfx()
@@ -555,10 +460,10 @@ void CFile::TryConvertIncgfx()
     if (!CheckIdentifier("INCGFX_"))
         return;
 
-    std::string idents[4] = { "INCGFX_U8", "INCGFX_U16", "INCGFX_U32", "INCGFX_COMP" };
+    std::string idents[3] = { "INCGFX_U8", "INCGFX_U16", "INCGFX_U32" };
     int incgfxType = -1;
 
-    for (int i = 0; i < 4; i++)
+    for (int i = 0; i < 3; i++)
     {
         if (CheckIdentifier(idents[i]))
         {
@@ -570,7 +475,7 @@ void CFile::TryConvertIncgfx()
     if (incgfxType == -1)
         return;
 
-    int size = incgfxType < 3 ? 1 << incgfxType : 4;
+    int size = 1 << incgfxType;
 
     long oldPos = m_pos;
     auto oldLocation = m_location;
@@ -596,8 +501,6 @@ void CFile::TryConvertIncgfx()
 
     SkipWhitespace();
     auto extensions = ReadString();
-    if (incgfxType == 3)
-        extensions += ".smol";
 
     SkipWhitespace();
     std::string arguments;
@@ -640,7 +543,7 @@ void CFile::TryConvertIncgfx()
     if ((fileSize % size) != 0)
         RaiseError("Size %d doesn't evenly divide file size %d.\n", size, fileSize);
 
-    printf("{");
+    std::printf("{");
 
     int count = fileSize / size;
     int offset = 0;
@@ -648,10 +551,10 @@ void CFile::TryConvertIncgfx()
     {
         int data = ExtractData(buffer, offset, size);
         offset += size;
-        printf("%uu,", data);
+        std::printf("%uu,", data);
     }
 
-    printf("}");
+    std::printf("}");
 }
 
 // Reports a diagnostic message.

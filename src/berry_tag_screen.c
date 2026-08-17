@@ -43,7 +43,6 @@ struct BerryTagScreenStruct
 {
     u16 tilemapBuffers[3][0x400];
     u16 berryId;
-    u16 currentSpriteBerryId;
     u8 berrySpriteId;
     u8 flavorCircleIds[FLAVOR_COUNT];
     u16 gfxState;
@@ -144,12 +143,11 @@ static const struct WindowTemplate sWindowTemplates[] =
 
 static const u8 *const sBerryFirmnessStrings[] =
 {
-    [BERRY_FIRMNESS_UNKNOWN]    = COMPOUND_STRING("???"),
-    [BERRY_FIRMNESS_VERY_SOFT]  = COMPOUND_STRING("Very soft"),
-    [BERRY_FIRMNESS_SOFT]       = COMPOUND_STRING("Soft"),
-    [BERRY_FIRMNESS_HARD]       = COMPOUND_STRING("Hard"),
-    [BERRY_FIRMNESS_VERY_HARD]  = COMPOUND_STRING("Very hard"),
-    [BERRY_FIRMNESS_SUPER_HARD] = COMPOUND_STRING("Super hard")
+    gBerryFirmnessString_VerySoft,
+    gBerryFirmnessString_Soft,
+    gBerryFirmnessString_Hard,
+    gBerryFirmnessString_VeryHard,
+    gBerryFirmnessString_SuperHard
 };
 
 // this file's functions
@@ -173,13 +171,6 @@ static void Task_CloseBerryTagScreen(u8 taskId);
 static void Task_DisplayAnotherBerry(u8 taskId);
 static void TryChangeDisplayedBerry(u8 taskId, s8 toMove);
 static void HandleBagCursorPositionChange(s8 toMove);
-
-static const u8 sText_SizeSlash[] = _("SIZE /");
-static const u8 sText_FirmSlash[] = _("FIRM /");
-static const u8 sText_Var1DotVar2[] = _("{STR_VAR_1}.{STR_VAR_2}”");
-static const u8 sText_NumberVar1Var2[] = _("{NO}{STR_VAR_1} {STR_VAR_2}");
-static const u8 sText_BerryTag[] = _("BERRY TAG");
-static const u8 sText_ThreeMarks[] = _("???");
 
 // code
 void DoBerryTagScreen(void)
@@ -335,12 +326,12 @@ static bool8 LoadBerryTagGfx(void)
     case 1:
         if (FreeTempTileDataBuffersIfPossible() != TRUE)
         {
-            DecompressDataWithHeaderWram(gBerryTag_Gfx, sBerryTag->tilemapBuffers[0]);
+            LZDecompressWram(gBerryTag_Gfx, sBerryTag->tilemapBuffers[0]);
             sBerryTag->gfxState++;
         }
         break;
     case 2:
-        DecompressDataWithHeaderWram(gBerryTag_Tilemap, sBerryTag->tilemapBuffers[2]);
+        LZDecompressWram(gBerryTag_Tilemap, sBerryTag->tilemapBuffers[2]);
         sBerryTag->gfxState++;
         break;
     case 3:
@@ -358,7 +349,7 @@ static bool8 LoadBerryTagGfx(void)
         sBerryTag->gfxState++;
         break;
     case 4:
-        LoadPalette(gBerryCheck_Pal, BG_PLTT_ID(0), 6 * PLTT_SIZE_4BPP);
+        LoadCompressedPalette(gBerryCheck_Pal, BG_PLTT_ID(0), 6 * PLTT_SIZE_4BPP);
         sBerryTag->gfxState++;
         break;
     case 5:
@@ -366,7 +357,7 @@ static bool8 LoadBerryTagGfx(void)
         sBerryTag->gfxState++;
         break;
     default:
-        LoadSpritePalette(&gBerryCheckCirclePaletteTable);
+        LoadCompressedSpritePalette(&gBerryCheckCirclePaletteTable);
         return TRUE; // done
     }
 
@@ -395,7 +386,7 @@ static void AddBerryTagTextToBg0(void)
 {
     memcpy(GetBgTilemapBuffer(0), sBerryTag->tilemapBuffers[2], sizeof(sBerryTag->tilemapBuffers[2]));
     FillWindowPixelBuffer(WIN_BERRY_TAG, PIXEL_FILL(15));
-    PrintTextInBerryTagScreen(WIN_BERRY_TAG, sText_BerryTag, GetStringCenterAlignXOffset(FONT_NORMAL, sText_BerryTag, 0x40), 1, 0, 1);
+    PrintTextInBerryTagScreen(WIN_BERRY_TAG, gText_BerryTag, GetStringCenterAlignXOffset(FONT_NORMAL, gText_BerryTag, 0x40), 1, 0, 1);
     PutWindowTilemap(WIN_BERRY_TAG);
     ScheduleBgCopyTilemapToVram(0);
 }
@@ -411,22 +402,22 @@ static void PrintAllBerryData(void)
 
 static void PrintBerryNumberAndName(void)
 {
-    const struct BerryInfo *berryInfo = GetBerryInfo(sBerryTag->berryId);
+    const struct Berry *berry = GetBerryInfo(sBerryTag->berryId);
     ConvertIntToDecimalStringN(gStringVar1, sBerryTag->berryId, STR_CONV_MODE_LEADING_ZEROS, 2);
-    StringCopy(gStringVar2, berryInfo->name);
-    StringExpandPlaceholders(gStringVar4, sText_NumberVar1Var2);
+    StringCopy(gStringVar2, berry->name);
+    StringExpandPlaceholders(gStringVar4, gText_NumberVar1Var2);
     PrintTextInBerryTagScreen(WIN_BERRY_NAME, gStringVar4, 0, 1, 0, 0);
 }
 
 static void PrintBerrySize(void)
 {
-    const struct BerryInfo *berryInfo = GetBerryInfo(sBerryTag->berryId);
-    AddTextPrinterParameterized(WIN_SIZE_FIRM, FONT_NORMAL, sText_SizeSlash, 0, 1, TEXT_SKIP_DRAW, NULL);
-    if (berryInfo->size != 0)
+    const struct Berry *berry = GetBerryInfo(sBerryTag->berryId);
+    AddTextPrinterParameterized(WIN_SIZE_FIRM, FONT_NORMAL, gText_SizeSlash, 0, 1, TEXT_SKIP_DRAW, NULL);
+    if (berry->size != 0)
     {
         u32 inches, fraction;
 
-        inches = 1000 * berryInfo->size / 254;
+        inches = 1000 * berry->size / 254;
         if (inches % 10 > 4)
             inches += 10;
         fraction = (inches % 100) / 10;
@@ -434,46 +425,46 @@ static void PrintBerrySize(void)
 
         ConvertIntToDecimalStringN(gStringVar1, inches, STR_CONV_MODE_LEFT_ALIGN, 2);
         ConvertIntToDecimalStringN(gStringVar2, fraction, STR_CONV_MODE_LEFT_ALIGN, 2);
-        StringExpandPlaceholders(gStringVar4, sText_Var1DotVar2);
+        StringExpandPlaceholders(gStringVar4, gText_Var1DotVar2);
         AddTextPrinterParameterized(WIN_SIZE_FIRM, FONT_NORMAL, gStringVar4, 0x28, 1, 0, NULL);
     }
     else
     {
-        AddTextPrinterParameterized(WIN_SIZE_FIRM, FONT_NORMAL, sText_ThreeMarks, 0x28, 1, 0, NULL);
+        AddTextPrinterParameterized(WIN_SIZE_FIRM, FONT_NORMAL, gText_ThreeMarks, 0x28, 1, 0, NULL);
     }
 }
 
 static void PrintBerryFirmness(void)
 {
-    const struct BerryInfo *berryInfo = GetBerryInfo(sBerryTag->berryId);
-    AddTextPrinterParameterized(WIN_SIZE_FIRM, FONT_NORMAL, sText_FirmSlash, 0, 0x11, TEXT_SKIP_DRAW, NULL);
-    if (berryInfo->firmness != BERRY_FIRMNESS_UNKNOWN)
-        AddTextPrinterParameterized(WIN_SIZE_FIRM, FONT_NORMAL, sBerryFirmnessStrings[berryInfo->firmness], 0x28, 0x11, 0, NULL);
+    const struct Berry *berry = GetBerryInfo(sBerryTag->berryId);
+    AddTextPrinterParameterized(WIN_SIZE_FIRM, FONT_NORMAL, gText_FirmSlash, 0, 0x11, TEXT_SKIP_DRAW, NULL);
+    if (berry->firmness != 0)
+        AddTextPrinterParameterized(WIN_SIZE_FIRM, FONT_NORMAL, sBerryFirmnessStrings[berry->firmness - 1], 0x28, 0x11, 0, NULL);
     else
-        AddTextPrinterParameterized(WIN_SIZE_FIRM, FONT_NORMAL, sText_ThreeMarks, 0x28, 0x11, 0, NULL);
+        AddTextPrinterParameterized(WIN_SIZE_FIRM, FONT_NORMAL, gText_ThreeMarks, 0x28, 0x11, 0, NULL);
 }
 
 static void PrintBerryDescription1(void)
 {
-    const struct BerryInfo *berryInfo = GetBerryInfo(sBerryTag->berryId);
-    AddTextPrinterParameterized(WIN_DESC, FONT_NORMAL, berryInfo->description1, 0, 1, 0, NULL);
+    const struct Berry *berry = GetBerryInfo(sBerryTag->berryId);
+    AddTextPrinterParameterized(WIN_DESC, FONT_NORMAL, berry->description1, 0, 1, 0, NULL);
 }
 
 static void PrintBerryDescription2(void)
 {
-    const struct BerryInfo *berryInfo = GetBerryInfo(sBerryTag->berryId);
-    AddTextPrinterParameterized(WIN_DESC, FONT_NORMAL, berryInfo->description2, 0, 0x11, 0, NULL);
+    const struct Berry *berry = GetBerryInfo(sBerryTag->berryId);
+    AddTextPrinterParameterized(WIN_DESC, FONT_NORMAL, berry->description2, 0, 0x11, 0, NULL);
 }
 
 static void CreateBerrySprite(void)
 {
-    sBerryTag->currentSpriteBerryId = sBerryTag->berryId;
-    sBerryTag->berrySpriteId = CreateBerryTagSprite(sBerryTag->currentSpriteBerryId, 56, 64);
+    sBerryTag->berrySpriteId = CreateBerryTagSprite(sBerryTag->berryId - 1, 56, 64);
 }
 
 static void DestroyBerrySprite(void)
 {
-    DestroyBerryIconSprite(sBerryTag->berrySpriteId, sBerryTag->currentSpriteBerryId, TRUE);
+    DestroySprite(&gSprites[sBerryTag->berrySpriteId]);
+    FreeBerryTagSpritePalette();
 }
 
 static void CreateFlavorCircleSprites(void)
@@ -487,29 +478,29 @@ static void CreateFlavorCircleSprites(void)
 
 static void SetFlavorCirclesVisiblity(void)
 {
-    const struct BerryInfo *berryInfo = GetBerryInfo(sBerryTag->berryId);
+    const struct Berry *berry = GetBerryInfo(sBerryTag->berryId);
 
-    if (berryInfo->spicy)
+    if (berry->spicy)
         gSprites[sBerryTag->flavorCircleIds[FLAVOR_SPICY]].invisible = FALSE;
     else
         gSprites[sBerryTag->flavorCircleIds[FLAVOR_SPICY]].invisible = TRUE;
 
-    if (berryInfo->dry)
+    if (berry->dry)
         gSprites[sBerryTag->flavorCircleIds[FLAVOR_DRY]].invisible = FALSE;
     else
         gSprites[sBerryTag->flavorCircleIds[FLAVOR_DRY]].invisible = TRUE;
 
-    if (berryInfo->sweet)
+    if (berry->sweet)
         gSprites[sBerryTag->flavorCircleIds[FLAVOR_SWEET]].invisible = FALSE;
     else
         gSprites[sBerryTag->flavorCircleIds[FLAVOR_SWEET]].invisible = TRUE;
 
-    if (berryInfo->bitter)
+    if (berry->bitter)
         gSprites[sBerryTag->flavorCircleIds[FLAVOR_BITTER]].invisible = FALSE;
     else
         gSprites[sBerryTag->flavorCircleIds[FLAVOR_BITTER]].invisible = TRUE;
 
-    if (berryInfo->sour)
+    if (berry->sour)
         gSprites[sBerryTag->flavorCircleIds[FLAVOR_SOUR]].invisible = FALSE;
     else
         gSprites[sBerryTag->flavorCircleIds[FLAVOR_SOUR]].invisible = TRUE;
@@ -563,9 +554,9 @@ static void Task_HandleInput(u8 taskId)
 static void TryChangeDisplayedBerry(u8 taskId, s8 toMove)
 {
     s16 *data = gTasks[taskId].data;
-    s16 currPocketPosition = gBagPosition.scrollPosition[POCKET_BERRIES] + gBagPosition.cursorPosition[POCKET_BERRIES];
+    s16 currPocketPosition = gBagPosition.scrollPosition[BERRIES_POCKET] + gBagPosition.cursorPosition[BERRIES_POCKET];
     u32 newPocketPosition = currPocketPosition + toMove;
-    if (newPocketPosition < NUM_BERRIES && GetBagItemId(POCKET_BERRIES, newPocketPosition) != ITEM_NONE)
+    if (newPocketPosition < ITEM_TO_BERRY(MAX_BERRY_INDEX) && BagGetItemIdByPocketPosition(POCKET_BERRIES, newPocketPosition) != ITEM_NONE)
     {
         if (toMove < 0)
             tBgOp = BG_COORD_SUB;
@@ -581,11 +572,11 @@ static void TryChangeDisplayedBerry(u8 taskId, s8 toMove)
 
 static void HandleBagCursorPositionChange(s8 toMove)
 {
-    u16 *scrollPos = &gBagPosition.scrollPosition[POCKET_BERRIES];
-    u16 *cursorPos = &gBagPosition.cursorPosition[POCKET_BERRIES];
+    u16 *scrollPos = &gBagPosition.scrollPosition[BERRIES_POCKET];
+    u16 *cursorPos = &gBagPosition.cursorPosition[BERRIES_POCKET];
     if (toMove > 0)
     {
-        if (*cursorPos < 4 || GetBagItemId(POCKET_BERRIES, *scrollPos + 8) == 0)
+        if (*cursorPos < 4 || BagGetItemIdByPocketPosition(POCKET_BERRIES, *scrollPos + 8) == 0)
             *cursorPos += toMove;
         else
             *scrollPos += toMove;
@@ -598,7 +589,7 @@ static void HandleBagCursorPositionChange(s8 toMove)
             *scrollPos += toMove;
     }
 
-    sBerryTag->berryId = ItemIdToBerryType(GetBagItemId(POCKET_BERRIES, *scrollPos + *cursorPos));
+    sBerryTag->berryId = ItemIdToBerryType(BagGetItemIdByPocketPosition(POCKET_BERRIES, *scrollPos + *cursorPos));
 }
 
 #define DISPLAY_SPEED 16

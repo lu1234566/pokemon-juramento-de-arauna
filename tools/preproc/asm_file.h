@@ -36,17 +36,6 @@ enum class Directive
     Unknown
 };
 
-struct Label
-{
-    std::string symbol;
-    enum Type { none, global, local } type;
-
-    Label() : symbol(""), type(none) {}
-    Label(const Label&) = default;
-    Label(std::string symbol_, Type type_) : symbol(symbol_), type(type_) {}
-    explicit operator bool() { return !symbol.empty() && type != none; }
-};
-
 class AsmFile
 {
 public:
@@ -55,8 +44,7 @@ public:
     AsmFile(const AsmFile&) = delete;
     ~AsmFile();
     Directive GetDirective();
-    Label GetLabel();
-    std::string PeekSection();
+    std::string GetGlobalLabel();
     std::string ReadPath();
     int ReadString(unsigned char* s);
     int ReadBraille(unsigned char* s);

@@ -3,7 +3,6 @@
 
 #include "palette.h"
 #include "constants/contest.h"
-#include "random.h" // for rng_value_t
 
 enum
 {
@@ -87,7 +86,7 @@ enum {
 
 struct ContestPokemon
 {
-    enum Species species;
+    u16 species;
     u8 nickname[POKEMON_NAME_LENGTH + 1];
     u8 trainerName[PLAYER_NAME_LENGTH + 1];
     u8 trainerGfxId;
@@ -98,7 +97,7 @@ struct ContestPokemon
     u8 aiPool_Cute:1;
     u8 aiPool_Smart:1;
     u8 aiPool_Tough:1;
-    enum Move moves[MAX_MON_MOVES];
+    u16 moves[MAX_MON_MOVES];
     u8 cool;
     u8 beauty;
     u8 cute;
@@ -107,11 +106,9 @@ struct ContestPokemon
     u8 sheen;
     u8 highestRank;
     bool8 gameCleared;
-    u8 isShiny:1;
-    u8 unused1:7;
+    u8 unused[10];
     u32 personality;
     u32 otId;
-    u8 filter;
 };
 
 struct ContestTempSave
@@ -124,11 +121,9 @@ struct ContestTempSave
 
 struct ContestMoveAnimData
 {
-    enum Species species;
-    enum Species targetSpecies;
+    u16 species;
+    u16 targetSpecies;
     bool8 hasTargetAnim:1;
-    u8 isShiny:1;
-    u8 targetIsShiny:1;
     u8 contestant;
     u32 personality;
     u32 otId;
@@ -302,18 +297,6 @@ struct ContestResources
     void *animBgTileBuffer;
 };
 
-struct ContestCategory
-{
-    const u8 *name;
-    const u8 *condition;
-    const u8 *generic;
-    const u8 *negativeTrait;
-    u8 palette;
-    u16 tile;
-};
-
-extern const struct ContestCategory gContestCategoryInfo[CONTEST_CATEGORIES_COUNT + 1];
-
 #define eContest (*gContestResources->contest)
 #define eContestantStatus (gContestResources->status)
 #define eContestAppealResults (*gContestResources->appealResults)
@@ -336,7 +319,7 @@ extern u8 gContestPlayerMonIndex;
 extern u8 gContestantTurnOrder[CONTESTANT_COUNT];
 extern u8 gLinkContestFlags;
 extern u8 gContestLinkLeaderIndex;
-extern enum ContestCategories gSpecialVar_ContestCategory;
+extern u16 gSpecialVar_ContestCategory;
 extern u16 gSpecialVar_ContestRank;
 extern u8 gNumLinkContestPlayers;
 extern u8 gHighestRibbonRank;
@@ -344,18 +327,18 @@ extern struct ContestResources *gContestResources;
 extern struct ContestWinner gCurContestWinner;
 extern u8 gCurContestWinnerIsForArtist;
 extern u8 gCurContestWinnerSaveIdx;
-extern rng_value_t gContestRngValue;
+extern u32 gContestRngValue;
 
 // contest.c
 void ResetLinkContestBoolean(void);
 void LoadContestBgAfterMoveAnim(void);
 void CB2_StartContest(void);
 void CreateContestMonFromParty(u8 partyIndex);
-void SetContestants(enum ContestCategories contestType, u8 rank);
-void SetLinkAIContestants(enum ContestCategories contestType, u8 rank, bool32 isPostgame);
+void SetContestants(u8 contestType, u8 rank);
+void SetLinkAIContestants(u8 contestType, u8 rank, bool32 isPostgame);
 u8 GetContestEntryEligibility(struct Pokemon *pkmn);
-void CalculateRound1Points(enum ContestCategories contestCategory);
-bool8 IsSpeciesNotUnown(enum Species species);
+void CalculateRound1Points(u8 contestCategory);
+bool8 IsSpeciesNotUnown(u16 species);
 bool8 Contest_IsMonsTurnDisabled(u8 contestant);
 void SaveLinkContestResults(void);
 void SortContestants(bool8 useRanking);
@@ -363,13 +346,13 @@ void SetContestantEffectStringID(u8 contestant, u8 effectStringId);
 void SetContestantEffectStringID2(u8 contestant, u8 effectStringId);
 void SetStartledString(u8 contestant, u8 jam);
 void MakeContestantNervous(u8 p);
-s8 Contest_GetMoveExcitement(enum Move move);
+s8 Contest_GetMoveExcitement(u16 move);
 bool8 IsContestantAllowedToCombo(u8 contestant);
 void Contest_PrintTextToBg0WindowAt(u32 windowId, u8 *currChar, s32 x, s32 y, s32 fontId);
 void ResetContestLinkResults(void);
 bool8 SaveContestWinner(u8 rank);
 u8 GetContestWinnerSaveIdx(u8 rank, bool8 shift);
 void ClearContestWinnerPicsInContestHall(void);
-void StripPlayerAndMonNamesForLinkContest(struct ContestPokemon *mon, enum Language language);
+void StripPlayerAndMonNamesForLinkContest(struct ContestPokemon *mon, s32 language);
 
 #endif //GUARD_CONTEST_H

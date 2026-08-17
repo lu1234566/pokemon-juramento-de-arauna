@@ -1,5 +1,4 @@
 #include "global.h"
-#include "move.h"
 #include "random.h"
 #include "constants/moves.h"
 #include "contest.h"
@@ -49,7 +48,7 @@ static void ContestEffect_ExciteAudienceInAnyContest(void);
 static void ContestEffect_BadlyStartleMonsWithGoodAppeals(void);
 static void ContestEffect_BetterWhenAudienceExcited(void);
 static void ContestEffect_DontExciteAudience(void);
-static void JamByMoveCategory(enum ContestCategories);
+static void JamByMoveCategory(u8);
 static bool8 CanUnnerveContestant(u8);
 static u8 WasAtLeastOneOpponentJammed(void);
 static void JamContestant(u8, u8);
@@ -60,22 +59,22 @@ static s16 RoundUp(s16);
 
 bool8 AreMovesContestCombo(u16 lastMove, u16 nextMove)
 {
-    int i;
-    u8 lastMoveComboStarterId = GetMoveContestComboStarter(lastMove);
+    u8 nextMoveComboMoves[4];
+    u8 lastMoveComboStarterId = gContestMoves[lastMove].comboStarterId;
+    nextMoveComboMoves[0] = gContestMoves[nextMove].comboMoves[0];
+    nextMoveComboMoves[1] = gContestMoves[nextMove].comboMoves[1];
+    nextMoveComboMoves[2] = gContestMoves[nextMove].comboMoves[2];
+    nextMoveComboMoves[3] = gContestMoves[nextMove].comboMoves[3];
 
     if (lastMoveComboStarterId == 0)
-    {
         return FALSE;
-    }
+    else if (lastMoveComboStarterId == nextMoveComboMoves[0]
+          || lastMoveComboStarterId == nextMoveComboMoves[1]
+          || lastMoveComboStarterId == nextMoveComboMoves[2]
+          || lastMoveComboStarterId == nextMoveComboMoves[3])
+        return gComboStarterLookupTable[lastMoveComboStarterId];
     else
-    {
-        for (i = 0; i < MAX_COMBO_MOVES; i++)
-        {
-            if (lastMoveComboStarterId == GetMoveContestComboMoves(nextMove, i))
-                return TRUE;
-        }
         return FALSE;
-    }
 }
 
 // A highly appealing move.
@@ -133,7 +132,7 @@ static void ContestEffect_UserLessEasilyStartled(void)
     SetContestantEffectStringID(eContestAppealResults.contestant,CONTEST_STRING_STOPPED_CARING);
 }
 
-// Badly startles the Pokémon in front.
+// Slightly startles the POKéMON in front.
 static void ContestEffect_StartleFrontMon(void)
 {
     u8 idx = 0;
@@ -181,7 +180,7 @@ static void ContestEffect_StartlePrevMons(void)
     SetContestantEffectStringID(eContestAppealResults.contestant, CONTEST_STRING_ATTEMPT_STARTLE);
 }
 
-// Startles the POK�MON that appealed before the user.
+// Startles the POKéMON that appealed before the user.
 static void ContestEffect_StartlePrevMon2(void)
 {
     u8 rval = Random() % 10;
@@ -198,7 +197,7 @@ static void ContestEffect_StartlePrevMon2(void)
     ContestEffect_StartleFrontMon();
 }
 
-// Startles all POK�MON that appealed before the user.
+// Startles all POKéMON that appealed before the user.
 static void ContestEffect_StartlePrevMons2(void)
 {
     u8 numStartled = 0;
@@ -274,7 +273,7 @@ static void ContestEffect_ShiftJudgeAttention(void)
     }
 }
 
-// Startles the POK�MON that has the JUDGE's attention.
+// Startles the POKéMON that has the JUDGE's attention.
 static void ContestEffect_StartleMonWithJudgesAttention(void)
 {
     u8 numStartled = 0;
@@ -312,50 +311,50 @@ static void ContestEffect_JamsOthersButMissOneTurn(void)
     SetContestantEffectStringID(eContestAppealResults.contestant, CONTEST_STRING_ATTEMPT_STARTLE);
 }
 
-// Startles POK�MON that made a same-type appeal.
+// Startles POKéMON that made a same-type appeal.
 static void ContestEffect_StartleMonsSameTypeAppeal(void)
 {
-    enum Move move = eContestantStatus[eContestAppealResults.contestant].currMove;
-    JamByMoveCategory(GetMoveContestCategory(move));
+    u16 move = eContestantStatus[eContestAppealResults.contestant].currMove;
+    JamByMoveCategory(gContestMoves[move].contestCategory);
     SetContestantEffectStringID(eContestAppealResults.contestant, CONTEST_STRING_ATTEMPT_STARTLE);
 }
 
-// Badly startles POK�MON that made COOL appeals.
+// Badly startles POKéMON that made COOL appeals.
 static void ContestEffect_StartleMonsCoolAppeal(void)
 {
     JamByMoveCategory(CONTEST_CATEGORY_COOL);
     SetContestantEffectStringID(eContestAppealResults.contestant, CONTEST_STRING_ATTEMPT_STARTLE);
 }
 
-// Badly startles POK�MON that made BEAUTY appeals.
+// Badly startles POKéMON that made BEAUTY appeals.
 static void ContestEffect_StartleMonsBeautyAppeal(void)
 {
     JamByMoveCategory(CONTEST_CATEGORY_BEAUTY);
     SetContestantEffectStringID(eContestAppealResults.contestant, CONTEST_STRING_ATTEMPT_STARTLE);
 }
 
-// Badly startles POK�MON that made CUTE appeals.
+// Badly startles POKéMON that made CUTE appeals.
 static void ContestEffect_StartleMonsCuteAppeal(void)
 {
     JamByMoveCategory(CONTEST_CATEGORY_CUTE);
     SetContestantEffectStringID(eContestAppealResults.contestant, CONTEST_STRING_ATTEMPT_STARTLE);
 }
 
-// Badly startles POK�MON that made SMART appeals.
+// Badly startles POKéMON that made SMART appeals.
 static void ContestEffect_StartleMonsSmartAppeal(void)
 {
     JamByMoveCategory(CONTEST_CATEGORY_SMART);
     SetContestantEffectStringID(eContestAppealResults.contestant, CONTEST_STRING_ATTEMPT_STARTLE);
 }
 
-// Badly startles POK�MON that made TOUGH appeals.
+// Badly startles POKéMON that made TOUGH appeals.
 static void ContestEffect_StartleMonsToughAppeal(void)
 {
     JamByMoveCategory(CONTEST_CATEGORY_TOUGH);
     SetContestantEffectStringID(eContestAppealResults.contestant, CONTEST_STRING_ATTEMPT_STARTLE);
 }
 
-// Makes one POK�MON after the user nervous.
+// Makes one POKéMON after the user nervous.
 static void ContestEffect_MakeFollowingMonNervous(void)
 {
     bool32 hitAny = FALSE;
@@ -387,7 +386,7 @@ static void ContestEffect_MakeFollowingMonNervous(void)
         SetContestantEffectStringID2(eContestAppealResults.contestant, CONTEST_STRING_MESSED_UP2);
 }
 
-// Makes all POK�MON after the user nervous.
+// Makes all POKéMON after the user nervous.
 static void ContestEffect_MakeFollowingMonsNervous(void)
 {
     u8 numUnnerved = 0;
@@ -429,7 +428,7 @@ static void ContestEffect_MakeFollowingMonsNervous(void)
     for (i = 0; i < CONTESTANT_COUNT; i++)
     {
         if (eContestantStatus[i].hasJudgesAttention && IsContestantAllowedToCombo(i))
-            oddsMod[i] = GetMoveContestComboStarter(eContestantStatus[i].prevMove) == 0 ? 0 : 10;
+            oddsMod[i] = gComboStarterLookupTable[gContestMoves[eContestantStatus[i].prevMove].comboStarterId] * 10;
         else
             oddsMod[i] = 0;
         oddsMod[i] -= (eContestantStatus[i].condition / 10) * 10;
@@ -494,7 +493,7 @@ static void ContestEffect_WorsenConditionOfPrevMons(void)
         SetContestantEffectStringID2(eContestAppealResults.contestant, CONTEST_STRING_IGNORED);
 }
 
-// Badly startles POK�MON in good condition.
+// Badly startles POKéMON in good condition.
 static void ContestEffect_BadlyStartlesMonsInGoodCondition(void)
 {
     u8 numHit = 0;
@@ -524,8 +523,8 @@ static void ContestEffect_BetterIfFirst(void)
 {
     if (gContestantTurnOrder[eContestAppealResults.contestant] == 0)
     {
-        enum Move move = eContestantStatus[eContestAppealResults.contestant].currMove;
-        eContestantStatus[eContestAppealResults.contestant].appeal += 2 * gContestEffects[GetMoveContestEffect(move)].appeal;
+        u16 move = eContestantStatus[eContestAppealResults.contestant].currMove;
+        eContestantStatus[eContestAppealResults.contestant].appeal += 2 * gContestEffects[gContestMoves[move].effect].appeal;
         SetContestantEffectStringID(eContestAppealResults.contestant, CONTEST_STRING_HUSTLE_STANDOUT);
     }
 }
@@ -535,8 +534,8 @@ static void ContestEffect_BetterIfLast(void)
 {
     if (gContestantTurnOrder[eContestAppealResults.contestant] == 3)
     {
-        enum Move move = eContestantStatus[eContestAppealResults.contestant].currMove;
-        eContestantStatus[eContestAppealResults.contestant].appeal += 2 * gContestEffects[GetMoveContestEffect(move)].appeal;
+        u16 move = eContestantStatus[eContestAppealResults.contestant].currMove;
+        eContestantStatus[eContestAppealResults.contestant].appeal += 2 * gContestEffects[gContestMoves[move].effect].appeal;
         SetContestantEffectStringID(eContestAppealResults.contestant, CONTEST_STRING_WORK_HARD_UNNOTICED);
     }
 }
@@ -611,7 +610,6 @@ static void ContestEffect_BetterWhenLater(void)
 }
 
 // The appeal's quality varies depending on its timing.
-// Despite the name, it seems to be random and not based on timing
 static void ContestEffect_QualityDependsOnTiming(void)
 {
     u8 rval = Random() % 10;
@@ -649,7 +647,7 @@ static void ContestEffect_BetterIfSameType(void)
 {
     s8 turnOrder = eContestAppealResults.turnOrder[eContestAppealResults.contestant];
     s8 i = turnOrder - 1, j;
-    enum Move move;
+    u16 move;
 
     if (turnOrder == 0)
         return;
@@ -673,9 +671,9 @@ static void ContestEffect_BetterIfSameType(void)
     }
 
     move = eContestantStatus[eContestAppealResults.contestant].currMove;
-    if (GetMoveContestCategory(move) == GetMoveContestCategory(eContestantStatus[j].currMove))
+    if (gContestMoves[move].contestCategory == gContestMoves[eContestantStatus[j].currMove].contestCategory)
     {
-        eContestantStatus[eContestAppealResults.contestant].appeal += gContestEffects[GetMoveContestEffect(move)].appeal * 2;
+        eContestantStatus[eContestAppealResults.contestant].appeal += gContestEffects[gContestMoves[move].effect].appeal * 2;
         SetContestantEffectStringID(eContestAppealResults.contestant, CONTEST_STRING_SAME_TYPE_GOOD);
     }
 }
@@ -685,15 +683,15 @@ static void ContestEffect_BetterIfDiffType(void)
 {
     if (eContestAppealResults.turnOrder[eContestAppealResults.contestant] != 0)
     {
-        enum Move move = eContestantStatus[eContestAppealResults.contestant].currMove;
+        u16 move = eContestantStatus[eContestAppealResults.contestant].currMove;
         int i;
 
         for (i = 0; i < CONTESTANT_COUNT; i++)
         {
             if (eContestAppealResults.turnOrder[eContestAppealResults.contestant] - 1 == eContestAppealResults.turnOrder[i] &&
-                GetMoveContestCategory(move) != GetMoveContestCategory(eContestantStatus[i].currMove))
+                gContestMoves[move].contestCategory != gContestMoves[eContestantStatus[i].currMove].contestCategory)
             {
-                eContestantStatus[eContestAppealResults.contestant].appeal += gContestEffects[GetMoveContestEffect(move)].appeal * 2;
+                eContestantStatus[eContestAppealResults.contestant].appeal += gContestEffects[gContestMoves[move].effect].appeal * 2;
                 SetContestantEffectStringID(eContestAppealResults.contestant, CONTEST_STRING_DIFF_TYPE_GOOD);
                 break;
             }
@@ -893,13 +891,13 @@ static void ContestEffect_ScrambleNextTurnOrder(void)
 // An appeal that excites the audience in any CONTEST.
 static void ContestEffect_ExciteAudienceInAnyContest(void)
 {
-    if (GetMoveContestCategory(eContestantStatus[eContestAppealResults.contestant].currMove) != gSpecialVar_ContestCategory)
+    if (gContestMoves[eContestantStatus[eContestAppealResults.contestant].currMove].contestCategory != gSpecialVar_ContestCategory)
     {
         eContestantStatus[eContestAppealResults.contestant].overrideCategoryExcitementMod = TRUE;
     }
 }
 
-// Badly startles all POK�MON that made good appeals.
+// Badly startles all POKéMON that made good appeals.
 static void ContestEffect_BadlyStartleMonsWithGoodAppeals(void)
 {
     int i;
@@ -973,7 +971,7 @@ static void ContestEffect_DontExciteAudience(void)
     }
 }
 
-static void JamByMoveCategory(enum ContestCategories category)
+static void JamByMoveCategory(u8 category)
 {
     int i;
     int numJammed = 0;
@@ -982,7 +980,7 @@ static void JamByMoveCategory(enum ContestCategories category)
     {
         if (eContestAppealResults.turnOrder[eContestAppealResults.contestant] > eContestAppealResults.turnOrder[i])
         {
-            if (category == GetMoveContestCategory(eContestantStatus[i].currMove))
+            if (category == gContestMoves[eContestantStatus[i].currMove].contestCategory)
                 eContestAppealResults.jam = 40;
             else
                 eContestAppealResults.jam = 10;

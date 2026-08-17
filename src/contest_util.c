@@ -130,7 +130,6 @@ static void LoadContestResultsTitleBarTilemaps(void);
 static u8 GetNumPreliminaryPoints(u8, bool8);
 static s8 GetNumRound2Points(u8, bool8);
 static void AddContestTextPrinter(int, u8 *, int);
-static void AddContestTextPrinterFitWidth(int, u8 *, int, int);
 static void AllocContestResults(void);
 static void FreeContestResults(void);
 static void LoadAllContestMonIcons(u8, u8);
@@ -214,6 +213,10 @@ static const struct SpriteTemplate sSpriteTemplate_ResultsTextWindow =
     .tileTag = TAG_TEXT_WINDOW_BASE,
     .paletteTag = TAG_TEXT_WINDOW_BASE,
     .oam = &sOamData_ResultsTextWindow,
+    .anims = gDummySpriteAnimTable,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = SpriteCallbackDummy
 };
 
 static const struct SpriteSheet sSpriteSheets_ResultsTextWindow[] =
@@ -256,6 +259,9 @@ static const struct SpriteTemplate sSpriteTemplate_Confetti =
     .tileTag = TAG_CONFETTI,
     .paletteTag = TAG_CONFETTI,
     .oam = &sOamData_Confetti,
+    .anims = gDummySpriteAnimTable,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
     .callback = SpriteCB_Confetti
 };
 
@@ -267,7 +273,7 @@ static const struct CompressedSpriteSheet sSpriteSheet_Confetti =
 };
 
 
-static const struct SpritePalette sSpritePalette_Confetti =
+static const struct CompressedSpritePalette sSpritePalette_Confetti =
 {
     .data = gConfetti_Pal,
     .tag = TAG_CONFETTI
@@ -378,6 +384,10 @@ static const struct SpriteTemplate sSpriteTemplate_WirelessIndicatorWindow =
     .tileTag = TAG_WIRELESS_INDICATOR_WINDOW,
     .paletteTag = 0,
     .oam = &sOamData_WirelessIndicatorWindow,
+    .anims = gDummySpriteAnimTable,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = SpriteCallbackDummy
 };
 
 static const struct SpriteSheet sSpriteSheet_WirelessIndicatorWindow =
@@ -441,12 +451,12 @@ static void LoadContestResultsBgGfx(void)
     s8 numStars, round2Points;
     u16 tile1, tile2;
 
-    DecompressDataWithHeaderVram(gContestResults_Gfx, (void *)BG_CHAR_ADDR(0));
+    LZDecompressVram(gContestResults_Gfx, (void *)BG_CHAR_ADDR(0));
     CopyToBgTilemapBuffer(3, gContestResults_Bg_Tilemap, 0, 0);
     CopyToBgTilemapBuffer(2, gContestResults_Interface_Tilemap, 0, 0);
     CopyToBgTilemapBuffer(0, gContestResults_WinnerBanner_Tilemap, 0, 0);
     LoadContestResultsTitleBarTilemaps();
-    LoadPalette(gContestResults_Pal, BG_PLTT_OFFSET, BG_PLTT_SIZE);
+    LoadCompressedPalette(gContestResults_Pal, BG_PLTT_OFFSET, BG_PLTT_SIZE);
     LoadPalette(sResultsTextWindow_Pal, BG_PLTT_ID(15), sizeof(sResultsTextWindow_Pal));
 
     for (i = 0; i < CONTESTANT_COUNT; i++)
@@ -494,7 +504,7 @@ static void LoadContestMonName(u8 monIndex)
         str = StringCopy(gDisplayedStringBattle, gText_ColorDarkGray);
 
     StringCopy(str, mon->nickname);
-    AddContestTextPrinterFitWidth(monIndex, gDisplayedStringBattle, 0, 49);
+    AddContestTextPrinter(monIndex, gDisplayedStringBattle, 0);
     StringCopy(str, gText_Slash);
     StringAppend(str, mon->trainerName);
     AddContestTextPrinter(monIndex, gDisplayedStringBattle, 50);
@@ -868,9 +878,10 @@ static void Task_ShowWinnerMonBanner(u8 taskId)
 {
     int i;
     u8 spriteId;
-    enum Species species;
-    bool8 isShiny;
+    u16 species;
+    u32 otId;
     u32 personality;
+    const struct CompressedSpritePalette *pokePal;
 
     switch (gTasks[taskId].tState)
     {
@@ -881,22 +892,35 @@ static void Task_ShowWinnerMonBanner(u8 taskId)
         GET_CONTEST_WINNER_ID(i);
         species = gContestMons[i].species;
         personality = gContestMons[i].personality;
-        isShiny = gContestMons[i].isShiny;
-        HandleLoadSpecialPokePic(TRUE,
-                                gMonSpritesGfxPtr->spritesGfx[B_POSITION_OPPONENT_LEFT],
-                                species,
-                                personality);
+        otId = gContestMons[i].otId;
+        if (i == gContestPlayerMonIndex)
+        {
+            HandleLoadSpecialPokePic_2(
+                &gMonFrontPicTable[species],
+                gMonSpritesGfxPtr->sprites.ptr[B_POSITION_OPPONENT_LEFT],
+                species,
+                personality);
+        }
+        else
+        {
+            HandleLoadSpecialPokePic_DontHandleDeoxys(
+                &gMonFrontPicTable[species],
+                gMonSpritesGfxPtr->sprites.ptr[B_POSITION_OPPONENT_LEFT],
+                species,
+                personality);
+        }
 
-        LoadSpritePaletteWithTag(GetMonSpritePalFromSpeciesAndPersonality(species, isShiny, personality), species);
+        pokePal = GetMonSpritePalStructFromOtIdPersonality(species, otId, personality);
+        LoadCompressedSpritePalette(pokePal);
         SetMultiuseSpriteTemplateToPokemon(species, B_POSITION_OPPONENT_LEFT);
-        gMultiuseSpriteTemplate.paletteTag = species;
+        gMultiuseSpriteTemplate.paletteTag = pokePal->tag;
         spriteId = CreateSprite(&gMultiuseSpriteTemplate, DISPLAY_WIDTH + 32, DISPLAY_HEIGHT / 2, 10);
         gSprites[spriteId].data[1] = species;
         gSprites[spriteId].oam.priority = 0;
         gSprites[spriteId].callback = SpriteCB_WinnerMonSlideIn;
         sContestResults->data->winnerMonSpriteId = spriteId;
         LoadCompressedSpriteSheet(&sSpriteSheet_Confetti);
-        LoadSpritePalette(&sSpritePalette_Confetti);
+        LoadCompressedSpritePalette(&sSpritePalette_Confetti);
         CreateTask(Task_CreateConfetti, 10);
         gTasks[taskId].tState++;
         break;
@@ -953,8 +977,7 @@ static void Task_ShowWinnerMonBanner(u8 taskId)
 
 static void Task_SetSeenWinnerMon(u8 taskId)
 {
-    int i;
-    enum NationalDexOrder nationalDexNum;
+    int i, nationalDexNum;
 
     if (JOY_NEW(A_BUTTON))
     {
@@ -1081,12 +1104,17 @@ static void Task_FlashStarsAndHearts(u8 taskId)
         sContestResults->data->pointsFlashing = TRUE;
 }
 
-static void LoadContestMonIcon(enum Species species, u8 monIndex, u8 srcOffset, u8 useDmaNow, u32 personality)
+static void LoadContestMonIcon(u16 species, u8 monIndex, u8 srcOffset, u8 useDmaNow, u32 personality)
 {
     const u8 *iconPtr;
-    u16 var0, var1;
+    u16 var0, var1, frameNum;
 
-    iconPtr = GetMonIconPtr(species, personality);
+    if (monIndex == gContestPlayerMonIndex)
+        frameNum = 1;
+    else
+        frameNum = 0;
+
+    iconPtr = GetMonIconPtr(species, personality, frameNum);
     iconPtr += srcOffset * 0x200 + 0x80;
     if (useDmaNow)
     {
@@ -1116,7 +1144,7 @@ static void LoadAllContestMonIconPalettes(void)
     for (i = 0; i < CONTESTANT_COUNT; i++)
     {
         species = gContestMons[i].species;
-        LoadPalette(gMonIconPalettes[gSpeciesInfo[GetIconSpecies(species, 0)].iconPalIndex], BG_PLTT_ID(10 + i), PLTT_SIZE_4BPP);
+        LoadPalette(gMonIconPalettes[gMonIconPaletteIndices[GetIconSpecies(species, 0)]], BG_PLTT_ID(10 + i), PLTT_SIZE_4BPP);
     }
 }
 
@@ -1907,35 +1935,29 @@ static void FreeContestResults(void)
     FreeMonSpritesGfx();
 }
 
-static void AddContestTextPrinterFitWidth(int windowId, u8 *str, int x, int widthPx)
+static void AddContestTextPrinter(int windowId, u8 *str, int x)
 {
     struct TextPrinterTemplate textPrinter;
     textPrinter.currentChar = str;
-    textPrinter.type = WINDOW_TEXT_PRINTER;
     textPrinter.windowId = windowId;
-    textPrinter.fontId = GetFontIdToFit(str, FONT_NARROW, 0, widthPx);
+    textPrinter.fontId = FONT_NARROW;
     textPrinter.x = x;
     textPrinter.y = 2;
     textPrinter.currentX = x;
     textPrinter.currentY = 2;
     textPrinter.letterSpacing = 0;
     textPrinter.lineSpacing = 0;
-    textPrinter.color.accent = TEXT_COLOR_TRANSPARENT;
-    textPrinter.color.foreground = 1;
-    textPrinter.color.background = TEXT_COLOR_TRANSPARENT;
-    textPrinter.color.shadow = 8;
+    textPrinter.unk = 0;
+    textPrinter.fgColor = 1;
+    textPrinter.bgColor = 0;
+    textPrinter.shadowColor = 8;
     AddTextPrinter(&textPrinter, 0, NULL);
     PutWindowTilemap(windowId);
 }
 
-static void AddContestTextPrinter(int windowId, u8 *str, int x)
-{
-    AddContestTextPrinterFitWidth(windowId, str, x, DISPLAY_WIDTH);
-}
-
 void TryEnterContestMon(void)
 {
-    u8 eligibility = GetContestEntryEligibility(&gParties[B_TRAINER_PLAYER][gContestMonPartyIndex]);
+    u8 eligibility = GetContestEntryEligibility(&gPlayerParty[gContestMonPartyIndex]);
 
     // Nonzero eligibility can still be non-eligibile, if mon is fainted or egg
     if (eligibility)
@@ -1949,8 +1971,8 @@ void TryEnterContestMon(void)
 
 u16 HasMonWonThisContestBefore(void)
 {
-    bool32 hasRankRibbon = FALSE;
-    struct Pokemon *mon = &gParties[B_TRAINER_PLAYER][gContestMonPartyIndex];
+    u16 hasRankRibbon = FALSE;
+    struct Pokemon *mon = &gPlayerParty[gContestMonPartyIndex];
     switch (gSpecialVar_ContestCategory)
     {
     case CONTEST_CATEGORY_COOL:
@@ -1973,8 +1995,6 @@ u16 HasMonWonThisContestBefore(void)
         if (GetMonData(mon, MON_DATA_TOUGH_RIBBON) > gSpecialVar_ContestRank)
             hasRankRibbon = TRUE;
         break;
-    default:
-        break;
     }
 
     return hasRankRibbon;
@@ -1990,56 +2010,54 @@ void GiveMonContestRibbon(void)
     switch (gSpecialVar_ContestCategory)
     {
     case CONTEST_CATEGORY_COOL:
-        ribbonData = GetMonData(&gParties[B_TRAINER_PLAYER][gContestMonPartyIndex], MON_DATA_COOL_RIBBON);
+        ribbonData = GetMonData(&gPlayerParty[gContestMonPartyIndex], MON_DATA_COOL_RIBBON);
         if (ribbonData <= gSpecialVar_ContestRank && ribbonData <= CONTEST_RANK_MASTER)
         {
             ribbonData++;
-            SetMonData(&gParties[B_TRAINER_PLAYER][gContestMonPartyIndex], MON_DATA_COOL_RIBBON, &ribbonData);
-            if (GetRibbonCount(&gParties[B_TRAINER_PLAYER][gContestMonPartyIndex]) > NUM_CUTIES_RIBBONS)
-                TryPutSpotTheCutiesOnAir(&gParties[B_TRAINER_PLAYER][gContestMonPartyIndex], MON_DATA_COOL_RIBBON);
+            SetMonData(&gPlayerParty[gContestMonPartyIndex], MON_DATA_COOL_RIBBON, &ribbonData);
+            if (GetRibbonCount(&gPlayerParty[gContestMonPartyIndex]) > NUM_CUTIES_RIBBONS)
+                TryPutSpotTheCutiesOnAir(&gPlayerParty[gContestMonPartyIndex], MON_DATA_COOL_RIBBON);
         }
         break;
     case CONTEST_CATEGORY_BEAUTY:
-        ribbonData = GetMonData(&gParties[B_TRAINER_PLAYER][gContestMonPartyIndex], MON_DATA_BEAUTY_RIBBON);
+        ribbonData = GetMonData(&gPlayerParty[gContestMonPartyIndex], MON_DATA_BEAUTY_RIBBON);
         if (ribbonData <= gSpecialVar_ContestRank && ribbonData <= CONTEST_RANK_MASTER)
         {
             ribbonData++;
-            SetMonData(&gParties[B_TRAINER_PLAYER][gContestMonPartyIndex], MON_DATA_BEAUTY_RIBBON, &ribbonData);
-            if (GetRibbonCount(&gParties[B_TRAINER_PLAYER][gContestMonPartyIndex]) > NUM_CUTIES_RIBBONS)
-                TryPutSpotTheCutiesOnAir(&gParties[B_TRAINER_PLAYER][gContestMonPartyIndex], MON_DATA_BEAUTY_RIBBON);
+            SetMonData(&gPlayerParty[gContestMonPartyIndex], MON_DATA_BEAUTY_RIBBON, &ribbonData);
+            if (GetRibbonCount(&gPlayerParty[gContestMonPartyIndex]) > NUM_CUTIES_RIBBONS)
+                TryPutSpotTheCutiesOnAir(&gPlayerParty[gContestMonPartyIndex], MON_DATA_BEAUTY_RIBBON);
         }
         break;
     case CONTEST_CATEGORY_CUTE:
-        ribbonData = GetMonData(&gParties[B_TRAINER_PLAYER][gContestMonPartyIndex], MON_DATA_CUTE_RIBBON);
+        ribbonData = GetMonData(&gPlayerParty[gContestMonPartyIndex], MON_DATA_CUTE_RIBBON);
         if (ribbonData <= gSpecialVar_ContestRank && ribbonData <= CONTEST_RANK_MASTER)
         {
             ribbonData++;
-            SetMonData(&gParties[B_TRAINER_PLAYER][gContestMonPartyIndex], MON_DATA_CUTE_RIBBON, &ribbonData);
-            if (GetRibbonCount(&gParties[B_TRAINER_PLAYER][gContestMonPartyIndex]) > NUM_CUTIES_RIBBONS)
-                TryPutSpotTheCutiesOnAir(&gParties[B_TRAINER_PLAYER][gContestMonPartyIndex], MON_DATA_CUTE_RIBBON);
+            SetMonData(&gPlayerParty[gContestMonPartyIndex], MON_DATA_CUTE_RIBBON, &ribbonData);
+            if (GetRibbonCount(&gPlayerParty[gContestMonPartyIndex]) > NUM_CUTIES_RIBBONS)
+                TryPutSpotTheCutiesOnAir(&gPlayerParty[gContestMonPartyIndex], MON_DATA_CUTE_RIBBON);
         }
         break;
     case CONTEST_CATEGORY_SMART:
-        ribbonData = GetMonData(&gParties[B_TRAINER_PLAYER][gContestMonPartyIndex], MON_DATA_SMART_RIBBON);
+        ribbonData = GetMonData(&gPlayerParty[gContestMonPartyIndex], MON_DATA_SMART_RIBBON);
         if (ribbonData <= gSpecialVar_ContestRank && ribbonData <= CONTEST_RANK_MASTER)
         {
             ribbonData++;
-            SetMonData(&gParties[B_TRAINER_PLAYER][gContestMonPartyIndex], MON_DATA_SMART_RIBBON, &ribbonData);
-            if (GetRibbonCount(&gParties[B_TRAINER_PLAYER][gContestMonPartyIndex]) > NUM_CUTIES_RIBBONS)
-                TryPutSpotTheCutiesOnAir(&gParties[B_TRAINER_PLAYER][gContestMonPartyIndex], MON_DATA_SMART_RIBBON);
+            SetMonData(&gPlayerParty[gContestMonPartyIndex], MON_DATA_SMART_RIBBON, &ribbonData);
+            if (GetRibbonCount(&gPlayerParty[gContestMonPartyIndex]) > NUM_CUTIES_RIBBONS)
+                TryPutSpotTheCutiesOnAir(&gPlayerParty[gContestMonPartyIndex], MON_DATA_SMART_RIBBON);
         }
         break;
     case CONTEST_CATEGORY_TOUGH:
-        ribbonData = GetMonData(&gParties[B_TRAINER_PLAYER][gContestMonPartyIndex], MON_DATA_TOUGH_RIBBON);
+        ribbonData = GetMonData(&gPlayerParty[gContestMonPartyIndex], MON_DATA_TOUGH_RIBBON);
         if (ribbonData <= gSpecialVar_ContestRank && ribbonData <= CONTEST_RANK_MASTER)
         {
             ribbonData++;
-            SetMonData(&gParties[B_TRAINER_PLAYER][gContestMonPartyIndex], MON_DATA_TOUGH_RIBBON, &ribbonData);
-            if (GetRibbonCount(&gParties[B_TRAINER_PLAYER][gContestMonPartyIndex]) > NUM_CUTIES_RIBBONS)
-                TryPutSpotTheCutiesOnAir(&gParties[B_TRAINER_PLAYER][gContestMonPartyIndex], MON_DATA_TOUGH_RIBBON);
+            SetMonData(&gPlayerParty[gContestMonPartyIndex], MON_DATA_TOUGH_RIBBON, &ribbonData);
+            if (GetRibbonCount(&gPlayerParty[gContestMonPartyIndex]) > NUM_CUTIES_RIBBONS)
+                TryPutSpotTheCutiesOnAir(&gPlayerParty[gContestMonPartyIndex], MON_DATA_TOUGH_RIBBON);
         }
-        break;
-    default:
         break;
     }
 }
@@ -2471,7 +2489,7 @@ void SetLinkContestPlayerGfx(void)
     {
         for (i = 0; i < gNumLinkContestPlayers; i++)
         {
-            enum GameVersion version = (u8)gLinkPlayers[i].version;
+            int version = (u8)gLinkPlayers[i].version;
             if (version == VERSION_RUBY || version == VERSION_SAPPHIRE)
             {
                 if (gLinkPlayers[i].gender == MALE)
@@ -2492,7 +2510,7 @@ void LoadLinkContestPlayerPalettes(void)
 {
     int i;
     u8 objectEventId;
-    enum GameVersion version;
+    int version;
     struct Sprite *sprite;
     static const u8 sContestantLocalIds[CONTESTANT_COUNT] = {
         LOCALID_CONTESTANT_1,
@@ -2501,28 +2519,28 @@ void LoadLinkContestPlayerPalettes(void)
         LOCALID_CONTESTANT_4,
     };
 
-    // gReservedSpritePaletteCount = 12;
-    // TODO: Does dynamically allocating link player palettes break link contests?
+    gReservedSpritePaletteCount = 12;
     if (gLinkContestFlags & LINK_CONTEST_FLAG_IS_LINK)
     {
         for (i = 0; i < gNumLinkContestPlayers; i++)
         {
             objectEventId = GetObjectEventIdByLocalIdAndMap(sContestantLocalIds[i], gSaveBlock1Ptr->location.mapNum, gSaveBlock1Ptr->location.mapGroup);
             sprite = &gSprites[gObjectEvents[objectEventId].spriteId];
+            sprite->oam.paletteNum = 6 + i;
             version = (u8)gLinkPlayers[i].version;
             if (version == VERSION_RUBY || version == VERSION_SAPPHIRE)
             {
                 if (gLinkPlayers[i].gender == MALE)
-                    sprite->oam.paletteNum = LoadObjectEventPalette(OBJ_EVENT_PAL_TAG_RS_BRENDAN);
+                    LoadPalette(gObjectEventPal_RubySapphireBrendan, OBJ_PLTT_ID(6 + i), PLTT_SIZE_4BPP);
                 else
-                    sprite->oam.paletteNum = LoadObjectEventPalette(OBJ_EVENT_PAL_TAG_RS_MAY);
+                    LoadPalette(gObjectEventPal_RubySapphireMay, OBJ_PLTT_ID(6 + i), PLTT_SIZE_4BPP);
             }
             else
             {
                 if (gLinkPlayers[i].gender == MALE)
-                    sprite->oam.paletteNum = LoadObjectEventPalette(OBJ_EVENT_PAL_TAG_BRENDAN);
+                    LoadPalette(gObjectEventPal_Brendan, OBJ_PLTT_ID(6 + i), PLTT_SIZE_4BPP);
                 else
-                    sprite->oam.paletteNum = LoadObjectEventPalette(OBJ_EVENT_PAL_TAG_MAY);
+                    LoadPalette(gObjectEventPal_May, OBJ_PLTT_ID(6 + i), PLTT_SIZE_4BPP);
             }
         }
     }
@@ -2532,16 +2550,16 @@ bool8 GiveMonArtistRibbon(void)
 {
     u8 hasArtistRibbon;
 
-    hasArtistRibbon = GetMonData(&gParties[B_TRAINER_PLAYER][gContestMonPartyIndex], MON_DATA_ARTIST_RIBBON);
+    hasArtistRibbon = GetMonData(&gPlayerParty[gContestMonPartyIndex], MON_DATA_ARTIST_RIBBON);
     if (!hasArtistRibbon
         && gContestFinalStandings[gContestPlayerMonIndex] == 0
         && gSpecialVar_ContestRank == CONTEST_RANK_MASTER
         && gContestMonTotalPoints[gContestPlayerMonIndex] >= 800)
     {
         hasArtistRibbon = 1;
-        SetMonData(&gParties[B_TRAINER_PLAYER][gContestMonPartyIndex], MON_DATA_ARTIST_RIBBON, &hasArtistRibbon);
-        if (GetRibbonCount(&gParties[B_TRAINER_PLAYER][gContestMonPartyIndex]) > NUM_CUTIES_RIBBONS)
-            TryPutSpotTheCutiesOnAir(&gParties[B_TRAINER_PLAYER][gContestMonPartyIndex], MON_DATA_ARTIST_RIBBON);
+        SetMonData(&gPlayerParty[gContestMonPartyIndex], MON_DATA_ARTIST_RIBBON, &hasArtistRibbon);
+        if (GetRibbonCount(&gPlayerParty[gContestMonPartyIndex]) > NUM_CUTIES_RIBBONS)
+            TryPutSpotTheCutiesOnAir(&gPlayerParty[gContestMonPartyIndex], MON_DATA_ARTIST_RIBBON);
 
         return TRUE;
     }
@@ -2558,12 +2576,12 @@ bool8 IsContestDebugActive(void)
 
 void ShowContestEntryMonPic(void)
 {
-    u32 personality;
-    enum Species species;
+    const struct CompressedSpritePalette *palette;
+    u32 personality, otId;
+    u16 species;
     u8 spriteId;
     u8 taskId;
     u8 left, top;
-    bool32 isShiny;
 
     if (FindTaskIdByFunc(Task_ShowContestEntryMonPic) == TASK_NONE)
     {
@@ -2572,15 +2590,19 @@ void ShowContestEntryMonPic(void)
         top = 3;
         species = gContestMons[gSpecialVar_0x8006].species;
         personality = gContestMons[gSpecialVar_0x8006].personality;
-        isShiny = gContestMons[gSpecialVar_0x8006].isShiny;
+        otId = gContestMons[gSpecialVar_0x8006].otId;
         taskId = CreateTask(Task_ShowContestEntryMonPic, 0x50);
         gTasks[taskId].data[0] = 0;
         gTasks[taskId].data[1] = species;
-        HandleLoadSpecialPokePic(TRUE, gMonSpritesGfxPtr->spritesGfx[B_POSITION_OPPONENT_LEFT], species, personality);
+        if (gSpecialVar_0x8006 == gContestPlayerMonIndex)
+            HandleLoadSpecialPokePic_2(&gMonFrontPicTable[species], gMonSpritesGfxPtr->sprites.ptr[B_POSITION_OPPONENT_LEFT], species, personality);
+        else
+            HandleLoadSpecialPokePic_DontHandleDeoxys(&gMonFrontPicTable[species], gMonSpritesGfxPtr->sprites.ptr[B_POSITION_OPPONENT_LEFT], species, personality);
 
-        LoadSpritePaletteWithTag(GetMonSpritePalFromSpeciesAndPersonality(species, isShiny, personality), species);
+        palette = GetMonSpritePalStructFromOtIdPersonality(species, otId, personality);
+        LoadCompressedSpritePalette(palette);
         SetMultiuseSpriteTemplateToPokemon(species, B_POSITION_OPPONENT_LEFT);
-        gMultiuseSpriteTemplate.paletteTag = species;
+        gMultiuseSpriteTemplate.paletteTag = palette->tag;
         spriteId = CreateSprite(&gMultiuseSpriteTemplate, (left + 1) * 8 + 32, (top * 8) + 40, 0);
 
         if (gLinkContestFlags & LINK_CONTEST_FLAG_IS_LINK)
@@ -2616,7 +2638,7 @@ static void Task_ShowContestEntryMonPic(u8 taskId)
     struct Task *task = &gTasks[taskId];
     struct Sprite *sprite;
 
-    switch (task->data[0])
+    switch(task->data[0])
     {
     case 0:
         task->data[0]++;
@@ -2632,7 +2654,7 @@ static void Task_ShowContestEntryMonPic(u8 taskId)
         sprite = &gSprites[task->data[2]];
         FreeSpritePaletteByTag(GetSpritePaletteTagByPaletteNum(sprite->oam.paletteNum));
 
-        if (sprite->oam.affineMode)
+        if(sprite->oam.affineMode)
             FreeOamMatrix(sprite->oam.matrixNum);
 
         DestroySprite(sprite);
@@ -2662,7 +2684,8 @@ void GenerateContestRand(void)
 
     if (gLinkContestFlags & LINK_CONTEST_FLAG_IS_LINK)
     {
-        random = LocalRandom(&gContestRngValue);
+        gContestRngValue = ISO_RANDOMIZE1(gContestRngValue);
+        random = gContestRngValue >> 16;
         result = &gSpecialVar_Result;
     }
     else
@@ -2675,7 +2698,8 @@ void GenerateContestRand(void)
 
 u16 GetContestRand(void)
 {
-    return LocalRandom(&gContestRngValue);
+    gContestRngValue = ISO_RANDOMIZE1(gContestRngValue);
+    return gContestRngValue >> 16;
 }
 
 bool8 LinkContestWaitForConnection(void)

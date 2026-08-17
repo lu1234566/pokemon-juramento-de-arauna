@@ -5,31 +5,18 @@ MAKEFLAGS += --no-print-directory
 
 # Inclusive list. If you don't want a tool to be built, don't add it here.
 TOOLS_DIR := tools
-TOOL_NAMES := bin2c gbafix gbagfx jsonproc mapjson mid2agb preproc ramscrgen rsfont scaninc trainerproc compresSmol wav2agb
-CHECK_TOOL_NAMES = patchelf mgba-rom-test-hydra
+TOOL_NAMES := bin2c gbafix gbagfx jsonproc mapjson mid2agb preproc ramscrgen rsfont scaninc wav2agb
 
 TOOLDIRS := $(TOOL_NAMES:%=$(TOOLS_DIR)/%)
-CHECKTOOLDIRS := $(CHECK_TOOL_NAMES:%=$(TOOLS_DIR)/%)
 
 # Tool making doesnt require a pokeemerald dependency scan.
-RULES_NO_SCAN += tools check-tools clean-tools clean-check-tools history $(TOOLDIRS) $(CHECKTOOLDIRS)
+RULES_NO_SCAN += tools check-tools clean-tools $(TOOLDIRS)
 .PHONY: $(RULES_NO_SCAN)
 
-tools: history $(TOOLDIRS)
-
-check-tools: $(CHECKTOOLDIRS)
+tools: $(TOOLDIRS)
 
 $(TOOLDIRS):
 	@$(MAKE) -C $@
 
-$(CHECKTOOLDIRS):
-	@$(MAKE) -C $@
-
 clean-tools:
 	@$(foreach tooldir,$(TOOLDIRS),$(MAKE) clean -C $(tooldir);)
-
-clean-check-tools:
-	@$(foreach tooldir,$(CHECKTOOLDIRS),$(MAKE) clean -C $(tooldir);)
-
-history:
-	@$(SHELL) ./check_history.sh
