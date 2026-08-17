@@ -1,0 +1,69 @@
+name: Generate Arauna battle names
+
+on:
+  push:
+    branches:
+      - tool/arauna-battle-names-generator
+    paths:
+      - tools/generate_arauna_battle_names.py
+      - .github/workflows/generate-arauna-battle-names.yml
+
+permissions:
+  contents: write
+
+jobs:
+  generate-battle-names:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout generator branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          persist-credentials: true
+
+      - name: Start from current main
+        shell: bash
+        run: |
+          set -euo pipefail
+          cp tools/generate_arauna_battle_names.py /tmp/generate_arauna_battle_names.py
+          git fetch --depth=1 origin main
+          git checkout -B generated/arauna-battle-names FETCH_HEAD
+
+      - name: Apply Arauna battle names
+        run: python3 /tmp/generate_arauna_battle_names.py
+
+      - name: Validate patch scope
+        shell: bash
+        run: |
+          set -euo pipefail
+          git diff --check
+          grep -q '.trainerName = _("CIRO")' src/data/trainers.h
+          grep -q '.trainerName = _("DALVA")' src/data/trainers.h
+          grep -q '.trainerName = _("OTACILIO")' src/data/trainers.h
+          grep -q '.trainerName = _("LUZIA")' src/data/trainers.h
+          grep -q 'TRAINER_CLASS_TEAM_AQUA.*HORIZONTE' src/data/text/trainer_class_names.h
+          grep -q 'TRAINER_CLASS_TEAM_MAGMA.*LEMBRANTE' src/data/text/trainer_class_names.h
+          git diff --name-only | sort > /tmp/actual-files.txt
+          printf '%s\n' \
+            'src/data/text/trainer_class_names.h' \
+            'src/data/trainers.h' | sort > /tmp/expected-files.txt
+          diff -u /tmp/expected-files.txt /tmp/actual-files.txt
+
+      - name: Install build dependencies
+        shell: bash
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gcc-arm-none-eabi binutils-arm-none-eabi libpng-dev
+
+      - name: Build ROM with Arauna battle names
+        run: make -j2 MODERN=1 COMPARE=0 all
+
+      - name: Publish validated generated branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add src/data/trainers.h src/data/text/trainer_class_names.h
+          git commit -m 'Rename Emerald battle trainers to Arauna cast'
+          git push origin HEAD:generated/arauna-battle-names --force
