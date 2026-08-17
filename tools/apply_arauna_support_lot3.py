@@ -118,11 +118,18 @@ def update_map(path, predicate, new_gfx, label):
     matches[0]["graphics_id"] = new_gfx
     full.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
+# Victory Road uses two separate Wally objects for the same late-game Val arc.
 update_map(
     "data/maps/VictoryRoad_1F/map.json",
-    lambda o: o.get("local_id") == "LOCALID_VICTORY_ROAD_1F_WALLY",
+    lambda o: o.get("local_id") == "LOCALID_VICTORY_ROAD_ENTRANCE_WALLY",
     "OBJ_EVENT_GFX_VAL_EVOLUIDO",
-    "Victory Road Val",
+    "Victory Road entrance Val",
+)
+update_map(
+    "data/maps/VictoryRoad_1F/map.json",
+    lambda o: o.get("script") == "VictoryRoad_1F_EventScript_ExitWally",
+    "OBJ_EVENT_GFX_VAL_EVOLUIDO",
+    "Victory Road exit Val",
 )
 update_map(
     "data/maps/AquaHideout_B2F/map.json",
@@ -156,7 +163,7 @@ This lot introduces dedicated overworld graphics for three recurring story roles
 
 Targeted placements preserve coordinates, scripts, flags, movement and trainer metadata:
 
-- Victory Road 1F Wally event → Val evoluído
+- both late-game Victory Road Wally objects → Val evoluído
 - Aqua Hideout B2F Matt event → administrador de operações de campo
 - Route 119 Weather Institute 2F Shelly event → administradora do Arquivo Vivo
 - Seafloor Cavern Room 3 Shelly event → the same Arquivo Vivo administrator, preserving her recurring identity
