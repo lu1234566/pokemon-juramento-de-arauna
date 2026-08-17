@@ -50,7 +50,6 @@ jobs:
           grep -R -q 'CIRO' data/maps
           grep -R -q 'ANAHI' data/maps
 
-          # Narrative rewrite may alter only .string lines in map scripts.
           NON_TEXT_CHANGES="$(git diff --unified=0 -- data/maps | grep -E '^[+-]' | grep -v -E '^(---|\+\+\+|[+-][[:space:]]*\.string )' || true)"
           if [ -n "$NON_TEXT_CHANGES" ]; then
             echo 'Refusing to publish: non-dialogue map-script changes detected.'
@@ -90,12 +89,14 @@ jobs:
         run: |
           test '${{ steps.build.outputs.status }}' = '0'
 
-      - name: Publish story to main
+      - name: Publish validated story commit
         shell: bash
         run: |
           set -euo pipefail
+          TARGET_REF='generated/arauna-story-2026-08-17'
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add data/maps docs/ARAUANA_STORY_IMPLEMENTATION.md
           git commit -m 'Replace Emerald narrative with Juramento de Arauna story'
-          git push origin HEAD:main
+          git push origin HEAD:"$TARGET_REF" --force
+          echo "Published validated story to $TARGET_REF at $(git rev-parse HEAD)"
