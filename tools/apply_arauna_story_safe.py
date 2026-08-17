@@ -8,8 +8,8 @@ import apply_arauna_story as base
 
 
 def safe_escape_asm(text: str) -> str:
-    """Escape only quotes; keep Emerald text control codes such as \\n/\\p intact."""
-    return text.replace('"', '\\"')
+    """Keep Emerald control codes intact and sanitize generated prose for its charset."""
+    return text.replace("_", " ").replace('"', '\\"')
 
 
 def safe_process_script(path: Path) -> tuple[int, int]:
