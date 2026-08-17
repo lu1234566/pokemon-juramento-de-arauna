@@ -35,10 +35,18 @@ jobs:
             git push origin "$BACKUP_REF"
           fi
 
+      - name: Restore pristine pre-story map scripts
+        shell: bash
+        run: |
+          set -euo pipefail
+          BACKUP_REF='archive/pre-story-rewrite-2026-08-17'
+          git fetch origin "$BACKUP_REF"
+          git checkout FETCH_HEAD -- data/maps
+
       - name: Apply Arauna narrative safely
         run: python3 tools/apply_arauna_story_safe.py
 
-      - name: Validate patch shape
+      - name: Validate patch shape and semantics
         shell: bash
         run: |
           set -euo pipefail
@@ -50,10 +58,21 @@ jobs:
           grep -R -q 'CIRO' data/maps
           grep -R -q 'ANAHI' data/maps
 
+          # Narrative rewrite is allowed to change dialogue strings only.
           NON_TEXT_CHANGES="$(git diff --unified=0 -- data/maps | grep -E '^[+-]' | grep -v -E '^(---|\+\+\+|[+-][[:space:]]*\.string )' || true)"
           if [ -n "$NON_TEXT_CHANGES" ]; then
             echo 'Refusing to publish: non-dialogue map-script changes detected.'
             echo "$NON_TEXT_CHANGES"
+            exit 1
+          fi
+
+          # Regression checks for the bug that turned every lab text into ANAHI dialogue.
+          LAB='data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc'
+          grep -A2 'Text_ReceivedPokedex:' "$LAB" | grep -q 'recebeu a POKéDEX'
+          grep -A2 'Text_OhYourBagsFull:' "$LAB" | grep -q 'BOLSA esta cheia'
+          grep -A3 'Text_SeriousLookingMachine:' "$LAB" | grep -q 'sensor de VINCULO'
+          if grep -A1 'Text_ReceivedPokedex:' "$LAB" | grep -q 'ANAHI:'; then
+            echo 'Regression: system reward text was overwritten as character dialogue.'
             exit 1
           fi
 
@@ -79,7 +98,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: arauna-story-build-log
+          name: arauna-story-semantic-build-log
           path: arauna-build.log
           if-no-files-found: error
           retention-days: 7
@@ -89,14 +108,14 @@ jobs:
         run: |
           test '${{ steps.build.outputs.status }}' = '0'
 
-      - name: Publish validated story commit
+      - name: Publish validated semantic story commit
         shell: bash
         run: |
           set -euo pipefail
-          TARGET_REF='generated/arauna-story-2026-08-17'
+          TARGET_REF='generated/arauna-story-semantic-2026-08-17'
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add data/maps docs/ARAUANA_STORY_IMPLEMENTATION.md
-          git commit -m 'Replace Emerald narrative with Juramento de Arauna story'
+          git commit -m 'Refine Arauna narrative while preserving functional dialogue'
           git push origin HEAD:"$TARGET_REF" --force
           echo "Published validated story to $TARGET_REF at $(git rev-parse HEAD)"
