@@ -44,7 +44,7 @@ jobs:
           export GIT_INDEX_FILE="$RUNNER_TEMP/vanilla-index"
           rm -f "$GIT_INDEX_FILE"
           git read-tree "$UPSTREAM_TREE"
-          git rm --cached --ignore-unmatch .github/workflows/build.yml
+          git update-index --force-remove .github/workflows/build.yml
 
           CURRENT_WORKFLOW_BLOB="$(git rev-parse "$GITHUB_SHA:.github/workflows/reset-to-vanilla-emerald.yml")"
           git update-index --add --cacheinfo 100644,"$CURRENT_WORKFLOW_BLOB",.github/workflows/reset-to-vanilla-emerald.yml
