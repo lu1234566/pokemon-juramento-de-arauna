@@ -17,7 +17,7 @@ gBirchDexRatingText_LessThan10::
 
 gBirchDexRatingText_LessThan20::
 	.string "Voce esta pegando o jeito.\n"
-	.string "Daqui para frente fica mais dificil.$"
+	.string "Daqui em diante fica mais dificil.$"
 
 gBirchDexRatingText_LessThan30::
 	.string "Alguns POKéMON so aparecem em\n"
@@ -62,8 +62,8 @@ gBirchDexRatingText_LessThan120::
 	.string "quando voce usa ROCK SMASH.$"
 
 gBirchDexRatingText_LessThan130::
-	.string "Trocar POKéMON com outras pessoas\n"
-	.string "tambem ajuda a ampliar os registros.$"
+	.string "Trocar POKéMON com outras\n"
+	.string "pessoas amplia seus registros.$"
 
 gBirchDexRatingText_LessThan140::
 	.string "Ha POKéMON que evoluem quando\n"
@@ -71,13 +71,13 @@ gBirchDexRatingText_LessThan140::
 	.string "seus TREINADORES.$"
 
 gBirchDexRatingText_LessThan150::
-	.string "ARAUNA abriga muito mais especies\n"
+	.string "ARAUNA abriga muitas especies\n"
 	.string "do que eu imaginava.$"
 
 gBirchDexRatingText_LessThan160::
 	.string "As vezes certas especies surgem\n"
 	.string "em grande numero.\p"
-	.string "Nao desperdice essas oportunidades.$"
+	.string "Nao perca essas oportunidades.$"
 
 gBirchDexRatingText_LessThan170::
 	.string "Sua POKéDEX ja mostra muito bem\n"
@@ -97,9 +97,9 @@ gBirchDexRatingText_LessThan200::
 
 gBirchDexRatingText_DexCompleted::
 	.string "Parabens!\n"
-	.string "Sua POKéDEX de ARAUNA esta completa!$"
+	.string "POKéDEX de ARAUNA completa!$"
 
 gBirchDexRatingText_OnANationwideBasis::
-	.string "Agora, considerando todos os dados...\p"
+	.string "Agora, olhando todos os dados...\p"
 	.string "Voce viu {STR_VAR_1} POKéMON e\n"
 	.string "capturou {STR_VAR_2} POKéMON.$"
