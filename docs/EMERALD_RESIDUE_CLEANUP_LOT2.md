@@ -9,6 +9,10 @@ This lot removes high-visibility vanilla identity leaks from the Serra do Uivo /
 - the registration confirmation now names CIRO;
 - Devon-facing exterior signs are rewritten as Consorcio Horizonte / Serra do Uivo signage.
 
+## Verification scope
+
+The deterministic cleanup currently verifies 15 visible text blocks: the eight campaign gym-sign identities from lot 1 plus seven Rustboro/Serra do Uivo identity blocks from this lot.
+
 ## Safety boundary
 
 Only existing `.string` blocks are replaced. Labels, flags, variables, object events, movement, coordinates, warps, item IDs, trainer data and progression remain unchanged.
