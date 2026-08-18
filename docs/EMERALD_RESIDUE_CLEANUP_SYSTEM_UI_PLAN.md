@@ -20,3 +20,7 @@ Only five exact string constants are targeted. Internal `isHoenn` state, regiona
 ## Integration sequencing
 
 The shared residue runner stages `src/strings.c`, applies this tool, verifies the exact replacements, and requires a fresh full custom Emerald ROM CI on a final user-authored head before merge.
+
+## Final validation trigger
+
+The generated source commit was reviewed for scope: it changes exactly the five intended player-facing constants. This user-authored documentation commit intentionally follows the generator so both the deterministic cleanup gate and the full custom Emerald ROM CI execute on a non-bot final head before merge.
