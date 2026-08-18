@@ -24,11 +24,10 @@ EverGrandeCity_EventScript_SetVisitedEverGrande::
 	end
 
 EverGrandeCity_Text_EnteringVictoryRoad:
-	.string "ENTERING VICTORY ROAD$"
+	.string "ESTRADA DO JURAMENTO$"
 
 EverGrandeCity_Text_EnteringPokemonLeague:
-	.string "ENTERING POKéMON LEAGUE\n"
-	.string "CENTER GATE$"
+	.string "ENTRADA DA LIGA POKéMON$"
 
 EverGrandeCity_Text_CitySign:
 	.string "ESTRADA DO JURAMENTO. A Liga e\no ultimo rito da viagem. Vencer\p"
