@@ -5,12 +5,11 @@ import argparse
 ROOT = Path(__file__).resolve().parents[1]
 TARGET = ROOT / "data/maps/SootopolisCity_Gym_1F/scripts.inc"
 
+# Badge receive/explanation text is intentionally left to the parallel badge lot.
 REPL = {
     "SOOTOPOLIS's GYM LEADER JUAN is\\n": "DONA CELINA, de AGUAS DE M'BOI,\\n",
     'And, to get to JUAN, an icy floor\\n': 'Para chegar a CELINA, o piso de gelo\\n',
     "You've beaten even JUAN, who\\n": 'Voce venceu ate DONA CELINA, que\\n',
-    '{PLAYER} received the RAIN BADGE\\n': '{PLAYER} recebeu a RAIN BADGE\\n',
-    'from JUAN.$': 'de DONA CELINA.$',
     'Registered GYM LEADER JUAN\\n': 'DONA CELINA registrada\\n',
     'in the POKéNAV.$': 'no POKéNAV.$',
     'BADGE from the GYM in FORTREE.$': 'BADGE no GINASIO de MATA DO MEIO.$',
@@ -19,7 +18,13 @@ REPL = {
     "JUAN'S CERTIFIED TRAINERS:\\n": 'TREINADORES DE CELINA:\\n',
 }
 
-LEGACY = ['GYM LEADER JUAN', 'from JUAN.', 'FORTREE.$', 'SOOTOPOLIS CITY POKéMON GYM', "JUAN'S CERTIFIED TRAINERS"]
+LEGACY = [
+    'GYM LEADER JUAN',
+    'Registered GYM LEADER JUAN',
+    'FORTREE.$',
+    'SOOTOPOLIS CITY POKéMON GYM',
+    "JUAN'S CERTIFIED TRAINERS",
+]
 
 
 def validate(text):
