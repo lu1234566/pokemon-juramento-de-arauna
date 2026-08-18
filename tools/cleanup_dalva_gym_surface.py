@@ -9,6 +9,8 @@ ROOT = Path(__file__).resolve().parents[1]
 TARGET = ROOT / "data" / "maps" / "RustboroCity_Gym" / "scripts.inc"
 MAX_VISIBLE = 32
 
+# Badge receive/explanation blocks are intentionally excluded: badge naming/art is
+# handled by the dedicated parallel badge integration lot.
 TARGETS = {
     "RustboroCity_Gym_Text_GymGuideAdvice": (
         r"Quer iniciar sua jornada por aqui?\p",
@@ -29,17 +31,6 @@ TARGETS = {
     "RustboroCity_Gym_Text_TommyPostBattle": (
         r"DALVA e muito mais forte que eu.\n",
         r"Nao baixe a guarda.$",
-    ),
-    "RustboroCity_Gym_Text_ReceivedStoneBadge": (
-        r"{PLAYER} recebeu a STONE BADGE\n",
-        r"de DALVA.$",
-    ),
-    "RustboroCity_Gym_Text_StoneBadgeInfoTakeThis": (
-        r"A STONE BADGE aumenta o poder\n",
-        r"de ATTACK dos seus POKéMON.\p",
-        r"Ela tambem permite usar CUT\n",
-        r"fora de batalha.\p",
-        r"Leve isto tambem.$",
     ),
     "RustboroCity_Gym_Text_ExplainRockTomb": (
         r"A TM39 contem ROCK TOMB.\p",
@@ -103,9 +94,7 @@ def validate(text: str) -> list[str]:
             for segment in re.split(r"\\[npl]", raw):
                 visible = CONTROL_RE.sub("", segment).replace("$", "")
                 if len(visible) > MAX_VISIBLE:
-                    failures.append(
-                        f"{label} exceeds {MAX_VISIBLE} visible chars: {visible!r}"
-                    )
+                    failures.append(f"{label} exceeds {MAX_VISIBLE} visible chars: {visible!r}")
     return failures
 
 
