@@ -12,28 +12,30 @@ SeafloorCavern_Room3_EventScript_Grunt5::
 	end
 
 SeafloorCavern_Room3_Text_ShellyIntro:
-	.string "Gravacoes antigas misturam\nordens de evacuacao, pedidos de\p"
-	.string "socorro e trechos que alguem\nmarcou para exclusao.$"
+	.string "MARTA: OTACILIO esta perto do\n"
+	.string "nucleo. Nao vou deixar voce\n"
+	.string "interromper tudo agora.$"
 
 SeafloorCavern_Room3_Text_ShellyDefeat:
-	.string "Ahahahaha!\p"
-	.string "Ouch!$"
+	.string "MARTA: Heh... voce e pior do\n"
+	.string "que os relatorios diziam.$"
 
 SeafloorCavern_Room3_Text_ShellyPostBattle:
-	.string "OTACILIO e LUZIA chegaram ao\nmesmo lugar por razoes opostas:\p"
-	.string "um quer encerrar a dor; a outra\nquer devolver tudo. Nenhum\p"
-	.string "perguntou a quem tera de viver\ncom a escolha.$"
+	.string "MARTA: Nao confunda obediencia\n"
+	.string "com certeza.\p"
+	.string "Eu sigo OTACILIO porque vi o\n"
+	.string "que lembrancas podem fazer.$"
 
 SeafloorCavern_Room3_Text_Grunt5Intro:
-	.string "Gravacoes antigas misturam\nordens de evacuacao, pedidos de\p"
-	.string "socorro e trechos que alguem\nmarcou para exclusao.$"
+	.string "MARTA mandou proteger esta rota.\n"
+	.string "Se quer passar, tente a sorte.$"
 
 SeafloorCavern_Room3_Text_Grunt5Defeat:
-	.string "Gravacoes antigas misturam\nordens de evacuacao, pedidos de\p"
-	.string "socorro e trechos que alguem\nmarcou para exclusao.$"
+	.string "Eu devia ter ficado nos\n"
+	.string "relatorios...$"
 
 SeafloorCavern_Room3_Text_Grunt5PostBattle:
-	.string "O ARQUIVO reage como se memoria\ne esquecimento fossem forcas\p"
-	.string "fisicas. Pela primeira vez fica\nclaro que ele nunca esteve\p"
-	.string "realmente sob controle humano.$"
+	.string "O ARQUIVO ficou instavel desde\n"
+	.string "que descemos para M'BOI.\p"
+	.string "Mesmo assim, OTACILIO continua.$"
 

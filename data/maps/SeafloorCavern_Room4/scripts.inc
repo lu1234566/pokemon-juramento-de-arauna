@@ -12,28 +12,28 @@ SeafloorCavern_Room4_EventScript_Grunt4::
 	end
 
 SeafloorCavern_Room4_Text_Grunt3Intro:
-	.string "Gravacoes antigas misturam\nordens de evacuacao, pedidos de\p"
-	.string "socorro e trechos que alguem\nmarcou para exclusao.$"
+	.string "Daqui para baixo, o ARQUIVO\n"
+	.string "deixa de responder direito.\p"
+	.string "Nao e lugar para curiosos.$"
 
 SeafloorCavern_Room4_Text_Grunt3Defeat:
-	.string "O ARQUIVO reage como se memoria\ne esquecimento fossem forcas\p"
-	.string "fisicas. Pela primeira vez fica\nclaro que ele nunca esteve\p"
-	.string "realmente sob controle humano.$"
+	.string "Voce realmente vai continuar?$"
 
 SeafloorCavern_Room4_Text_Grunt3PostBattle:
-	.string "Gravacoes antigas misturam\nordens de evacuacao, pedidos de\p"
-	.string "socorro e trechos que alguem\nmarcou para exclusao.$"
+	.string "As gravacoes daqui misturam\n"
+	.string "evacuacao, socorro e silencio.\p"
+	.string "Talvez por isso OTACILIO tenha\n"
+	.string "vindo pessoalmente.$"
 
 SeafloorCavern_Room4_Text_Grunt4Intro:
-	.string "O ARQUIVO reage como se memoria\ne esquecimento fossem forcas\p"
-	.string "fisicas. Pela primeira vez fica\nclaro que ele nunca esteve\p"
-	.string "realmente sob controle humano.$"
+	.string "O nucleo esta logo adiante.\n"
+	.string "Um passo a mais e eu te paro.$"
 
 SeafloorCavern_Room4_Text_Grunt4Defeat:
-	.string "Gravacoes antigas misturam\nordens de evacuacao, pedidos de\p"
-	.string "socorro e trechos que alguem\nmarcou para exclusao.$"
+	.string "Nao protegi a passagem.$"
 
 SeafloorCavern_Room4_Text_Grunt4PostBattle:
-	.string "Os sensores enlouquecem. As\ncavernas de M'BOI ainda\p"
-	.string "carregam VINCULOS que o ARQUIVO\nnunca conseguiu classificar.$"
+	.string "Os sensores perderam a leitura.\p"
+	.string "Se algo despertar la embaixo,\n"
+	.string "ninguem sabe o que acontece.$"
 

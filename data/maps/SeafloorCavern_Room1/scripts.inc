@@ -12,28 +12,30 @@ SeafloorCavern_Room1_EventScript_Grunt2::
 	end
 
 SeafloorCavern_Room1_Text_Grunt1Intro:
-	.string "O ARQUIVO reage como se memoria\ne esquecimento fossem forcas\p"
-	.string "fisicas. Pela primeira vez fica\nclaro que ele nunca esteve\p"
-	.string "realmente sob controle humano.$"
+	.string "Voce nao deveria ter chegado\n"
+	.string "ate as camaras de M'BOI.\p"
+	.string "Enquanto OTACILIO estiver la\n"
+	.string "embaixo, ninguem passa.$"
 
 SeafloorCavern_Room1_Text_Grunt1Defeat:
-	.string "O ARQUIVO reage como se memoria\ne esquecimento fossem forcas\p"
-	.string "fisicas. Pela primeira vez fica\nclaro que ele nunca esteve\p"
-	.string "realmente sob controle humano.$"
+	.string "Droga... voce passou por mim.$"
 
 SeafloorCavern_Room1_Text_Grunt1PostBattle:
-	.string "Gravacoes antigas misturam\nordens de evacuacao, pedidos de\p"
-	.string "socorro e trechos que alguem\nmarcou para exclusao.$"
+	.string "OTACILIO acredita que certas\n"
+	.string "memorias so continuam ferindo.\p"
+	.string "Nao vou fingir que entendo tudo.$"
 
 SeafloorCavern_Room1_Text_Grunt2Intro:
-	.string "Gravacoes antigas misturam\nordens de evacuacao, pedidos de\p"
-	.string "socorro e trechos que alguem\nmarcou para exclusao.$"
+	.string "Estas cavernas reagem a coisas\n"
+	.string "que nossos sensores nao leem.\p"
+	.string "Nao chegue mais perto.$"
 
 SeafloorCavern_Room1_Text_Grunt2Defeat:
-	.string "Os sensores enlouquecem. As\ncavernas de M'BOI ainda\p"
-	.string "carregam VINCULOS que o ARQUIVO\nnunca conseguiu classificar.$"
+	.string "Entao nem isso te deteve...$"
 
 SeafloorCavern_Room1_Text_Grunt2PostBattle:
-	.string "Gravacoes antigas misturam\nordens de evacuacao, pedidos de\p"
-	.string "socorro e trechos que alguem\nmarcou para exclusao.$"
+	.string "Quanto mais fundo descemos,\n"
+	.string "menos o ARQUIVO obedece.\p"
+	.string "Talvez nunca tenha sido uma\n"
+	.string "ferramenta de verdade.$"
 
