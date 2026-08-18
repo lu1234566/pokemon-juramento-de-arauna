@@ -9,8 +9,8 @@ ROOT = Path(__file__).resolve().parents[1]
 TARGET = ROOT / "data" / "maps" / "RustboroCity_Gym" / "scripts.inc"
 MAX_VISIBLE = 32
 
-# Badge receive/explanation blocks are intentionally excluded: badge naming/art is
-# handled by the dedicated parallel badge integration lot.
+# Badge receive/explanation and badge-referencing post-victory blocks are
+# intentionally excluded: the dedicated badge integration lot owns them.
 TARGETS = {
     "RustboroCity_Gym_Text_GymGuideAdvice": (
         r"Quer iniciar sua jornada por aqui?\p",
@@ -18,11 +18,6 @@ TARGETS = {
         r"WATER e GRASS costumam ser\n",
         r"boas respostas contra eles.\p",
         r"Prepare-se e siga em frente.$",
-    ),
-    "RustboroCity_Gym_Text_GymGuidePostVictory": (
-        r"Que vitoria!\p",
-        r"Sua primeira conquista ja foi\n",
-        r"registrada no CARTAO TREINADOR.$",
     ),
     "RustboroCity_Gym_Text_TommyIntro": (
         r"Se nao passar por mim, nao vai\n",
