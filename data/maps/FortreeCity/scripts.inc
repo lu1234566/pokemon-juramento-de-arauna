@@ -120,10 +120,9 @@ FortreeCity_Text_EveryoneHealthyAndLively:
 	.string "grown thirty years younger.$"
 
 FortreeCity_Text_BugPokemonComeThroughWindow:
-	.string "Living on top of trees is okay.\p"
-	.string "But sometimes BUG POKéMON come in\n"
-	.string "through windows.\l"
-	.string "It can be really startling.$"
+	.string "Meu POKéMON me seguia desde\nque eu era pequeno. Hoje ele\p"
+	.string "recuou quando chamei seu nome.\nCIRO viu tudo. Ficou olhando\p"
+	.string "para o aparelho do HORIZONTE\nsem conseguir dizer nada.$"
 
 FortreeCity_Text_PokemonThatEvolveWhenTraded:
 	.string "There are POKéMON that evolve when\n"
