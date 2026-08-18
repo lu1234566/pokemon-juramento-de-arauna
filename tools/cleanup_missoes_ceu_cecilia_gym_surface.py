@@ -8,11 +8,23 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 TARGET = ROOT / "data/maps/MossdeepCity_Gym/scripts.inc"
 
-# Badge naming/art is delegated to the dedicated badge integration lot.
+# Mechanical badge explanation remains owned by the dedicated badge integration lot.
+# The visible receipt attribution is now owned here because the canonical leader slot
+# is the duo Cecilia & Caetano.
 BADGE_HANDOFF_LABELS = {
-    "MossdeepCity_Gym_Text_ReceivedMindBadge",
     "MossdeepCity_Gym_Text_ExplainMindBadgeTakeThis",
 }
+
+BADGE_RECEIPT_OLD = (
+    "MossdeepCity_Gym_Text_ReceivedMindBadge:\n"
+    '\t.string "{PLAYER} recebeu a\\n"\n'
+    '\t.string "INSÍGNIA PRISMA de CECILIA.$"\n'
+)
+BADGE_RECEIPT_NEW = (
+    "MossdeepCity_Gym_Text_ReceivedMindBadge:\n"
+    '\t.string "{PLAYER} recebeu a INSÍGNIA\\n"\n'
+    '\t.string "PRISMA de CECILIA & CAETANO.$"\n'
+)
 
 STRING_RE = re.compile(r'^(?P<prefix>\s*\.string\s+")(?P<body>.*)(?P<suffix>"\s*)$')
 LABEL_RE = re.compile(r'^([A-Za-z0-9_]+):\s*$')
@@ -28,8 +40,12 @@ LEGACY_VISIBLE = tuple(REPLACEMENTS)
 
 
 def transform(text: str) -> tuple[str, int]:
-    current_label: str | None = None
     changed = 0
+    if BADGE_RECEIPT_OLD in text:
+        text = text.replace(BADGE_RECEIPT_OLD, BADGE_RECEIPT_NEW, 1)
+        changed += 2
+
+    current_label: str | None = None
     out: list[str] = []
 
     for raw in text.splitlines(keepends=True):
@@ -60,6 +76,11 @@ def transform(text: str) -> tuple[str, int]:
 def validate(text: str) -> list[str]:
     failures: list[str] = []
     current_label: str | None = None
+
+    if BADGE_RECEIPT_OLD in text:
+        failures.append("Prisma receipt still credits Cecilia alone")
+    if "PRISMA de CECILIA & CAETANO.$" not in text:
+        failures.append("canonical Cecilia & Caetano Prisma attribution is missing")
 
     for lineno, raw in enumerate(text.splitlines(), start=1):
         label_match = LABEL_RE.match(raw)
