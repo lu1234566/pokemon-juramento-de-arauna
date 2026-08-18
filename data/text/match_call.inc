@@ -2832,8 +2832,8 @@ MatchCall_Text_BirchRegisterCall:
 	.string "aviso voce primeiro.$"
 
 MatchCall_Text_RegisteredBirch:
-	.string "Registered PROF. BIRCH\n"
-	.string "in the POKéNAV.$"
+	.string "PROF. ANAHI foi registrada\n"
+	.string "no POKéNAV.$"
 
 MatchCall_Text_UnusedProfBirch:
 	.string "PROF. BIRCH: When one has both\n"
