@@ -13,3 +13,5 @@ The tool changes only each selected JSON `name` value. `MAPSEC_*` IDs, x/y posit
 ## Integration sequencing
 
 This branch was recreated directly from the newest green `main` after the Anahi opening-speech lot. The deterministic generator is wired into the shared residue pipeline. Merge is allowed only after generated JSON, a final user-authored validation commit, the cleanup check and the full custom Emerald ROM build all pass on the exact final head.
+
+Final validation trigger: the generated region-map JSON is now present on the branch; this commit forces deterministic re-check plus a complete custom Emerald ROM build on the exact final user-authored head before merge.
