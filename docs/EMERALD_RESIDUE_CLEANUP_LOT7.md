@@ -21,10 +21,10 @@ This lot removes the remaining high-visibility Emerald identities shown on battl
 
 Before this lot was revalidated, both source files touched by the original isolated patch were compared with the current `main`:
 
-- `src/data/trainers.h` has the same blob SHA on current `main` as on the original patch base;
-- `src/data/text/trainer_class_names.h` has the same blob SHA on current `main` as on the original patch base.
+- `src/data/trainers.h` has the same blob SHA on current `main` as on the original patch base (`b4c1b05752331a50a08c9b1a40621683e9f01931`);
+- `src/data/text/trainer_class_names.h` has the same blob SHA on current `main` as on the original patch base (`63cc356b236f5ceea1a0f4a454f8de7e8150da4f`).
 
-Therefore no later story/map cleanup has modified either battle-name source file. A fresh pull-request CI run against current `main` is still required before merge.
+Those two source blobs were checked again after the battle-message cleanup reached `main`; they are still unchanged. This user-authored documentation update intentionally requests a fresh pull-request full ROM CI run on the final battle-name head before merge.
 
 ## Safety boundary
 
