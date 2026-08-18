@@ -109,6 +109,15 @@ STRING_BLOCK_TARGETS: tuple[tuple[str, str, tuple[str, ...], tuple[str, ...]], .
         ("PROF. BIRCH", "BIRCH:"),
     ),
     (
+        "data/text/match_call.inc",
+        "MatchCall_Text_RegisteredBirch",
+        (
+            r"PROF. ANAHI foi registrada\n",
+            r"no POKéNAV.$",
+        ),
+        ("PROF. BIRCH", "Registered PROF. BIRCH"),
+    ),
+    (
         "data/text/pokedex_rating.inc",
         "gBirchDexRatingText_AreYouCurious",
         (
