@@ -17,3 +17,7 @@ Only six existing `.string` blocks in `data/maps/Route119/scripts.inc` are targe
 ## Integration sequencing
 
 This active branch starts directly from the latest green `main`. The shared cleanup workflow applies and checks the deterministic tool, stages only the existing generated-source directories already used by the residue pipeline, and requires a fresh full custom Emerald ROM build on a final user-authored head before merge.
+
+## Final validation trigger
+
+The generated Route 119 source diff was reviewed after the deterministic runner completed successfully. This user-authored documentation commit is intentionally placed after the bot-generated source commit so the cleanup gate and full custom Emerald ROM CI validate the exact final branch state before merge.
