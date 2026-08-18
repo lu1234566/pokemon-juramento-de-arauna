@@ -17,7 +17,7 @@ gBirchDexRatingText_LessThan10::
 
 gBirchDexRatingText_LessThan20::
 	.string "Voce esta pegando o jeito.\n"
-	.string "Daqui em diante fica mais dificil.$"
+	.string "Agora fica mais dificil.$"
 
 gBirchDexRatingText_LessThan30::
 	.string "Alguns POKéMON so aparecem em\n"
