@@ -13,6 +13,10 @@ This lot removes the most visible vanilla Emerald gym-sign residue while preserv
 - Mossdeep / Tate & Liza -> Missoes do Ceu / Cecilia e Caetano
 - Sootopolis / Juan -> M'Boi / Dona Celina
 
+## Generated verification
+
+`tools/cleanup_emerald_residue_signs.py --check` verifies all eight target blocks and rejects the legacy leader names in those blocks. The generated patch changes only those eight map-script text blocks.
+
 ## Safety boundary
 
 Only the labeled `*_Text_GymSign` string blocks are rewritten by `tools/cleanup_emerald_residue_signs.py`.
