@@ -7,11 +7,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 TARGET = ROOT / "src/strings.c"
 
+# Elias is intentionally excluded here: his dedicated Match Call preparation owns
+# both gText_NormanMatchCallDesc and gText_NormanMatchCallName.
 REPLACEMENTS = {
-    'const u8 gText_NormanMatchCallDesc[] = _("RELIABLE ONE");':
-        'const u8 gText_NormanMatchCallDesc[] = _("PAI VIAJANTE");',
-    'const u8 gText_NormanMatchCallName[] = _("DAD");':
-        'const u8 gText_NormanMatchCallName[] = _("ELIAS");',
     'const u8 gText_RoxanneMatchCallDesc[] = _("ROCKIN\' WHIZ");':
         'const u8 gText_RoxanneMatchCallDesc[] = _("PEDRA VIVA");',
     'const u8 gText_BrawlyMatchCallDesc[] = _("THE BIG HIT");':
