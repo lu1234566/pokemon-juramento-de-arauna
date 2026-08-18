@@ -1,47 +1,110 @@
 #!/usr/bin/env python3
-from pathlib import Path
+from __future__ import annotations
+
 import argparse
+import re
+from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 TARGET = ROOT / "data/maps/MossdeepCity_Gym/scripts.inc"
 
-REPL = {
-    '{PLAYER} received the MIND BADGE\\n': '{PLAYER} recebeu a MIND BADGE\\n',
-    'from TATE and LIZA.$': 'de CECILIA.$',
-    'TATE: The MIND BADGE enhances the\\n': 'CECILIA: A MIND BADGE melhora\\n',
-    'LIZA: It also lets you use the HM move\\n': 'Ela tambem permite usar a HM\\n',
-    'TATE: You should also take this, too.$': 'CECILIA: Leve isto tambem.$',
-    'Registered GYM LEADERS TATE & LIZA\\n': 'LIDER CECILIA registrada\\n',
-    'in the POKéNAV.$': 'no POKéNAV.$',
-    'MOSSDEEP CITY POKéMON GYM$': 'MISSOES DO CEU - GINASIO$\n',
-    'MOSSDEEP CITY POKéMON GYM\\p': 'MISSOES DO CEU - GINASIO\\p',
-    "LIZA AND TATE'S CERTIFIED TRAINERS:\\n": 'TREINADORES DE CECILIA:\\n',
+# Badge naming/art is delegated to the dedicated badge integration lot.
+BADGE_HANDOFF_LABELS = {
+    "MossdeepCity_Gym_Text_ReceivedMindBadge",
+    "MossdeepCity_Gym_Text_ExplainMindBadgeTakeThis",
 }
 
-LEGACY = ['TATE & LIZA', 'TATE and LIZA', 'MOSSDEEP CITY POKéMON GYM', "LIZA AND TATE'S CERTIFIED TRAINERS"]
+STRING_RE = re.compile(r'^(?P<prefix>\s*\.string\s+")(?P<body>.*)(?P<suffix>"\s*)$')
+LABEL_RE = re.compile(r'^([A-Za-z0-9_]+):\s*$')
+
+REPLACEMENTS = {
+    "MOSSDEEP CITY": "MISSOES DO CEU",
+    "TATE & LIZA": "CECILIA & CAETANO",
+    "TATE and LIZA": "CECILIA e CAETANO",
+    "LIZA AND TATE": "CECILIA E CAETANO",
+}
+
+LEGACY_VISIBLE = tuple(REPLACEMENTS)
 
 
-def validate(text):
-    return [x for x in LEGACY if x in text]
+def transform(text: str) -> tuple[str, int]:
+    current_label: str | None = None
+    changed = 0
+    out: list[str] = []
+
+    for raw in text.splitlines(keepends=True):
+        line = raw.rstrip("\n")
+        newline = "\n" if raw.endswith("\n") else ""
+
+        label_match = LABEL_RE.match(line)
+        if label_match:
+            current_label = label_match.group(1)
+            out.append(raw)
+            continue
+
+        string_match = STRING_RE.match(line)
+        if string_match and current_label not in BADGE_HANDOFF_LABELS:
+            body = string_match.group("body")
+            new_body = body
+            for old, new in REPLACEMENTS.items():
+                new_body = new_body.replace(old, new)
+            if new_body != body:
+                changed += 1
+                line = f'{string_match.group("prefix")}{new_body}{string_match.group("suffix")}'
+
+        out.append(line + newline)
+
+    return "".join(out), changed
 
 
-def apply():
-    text = TARGET.read_text(encoding='utf-8')
-    for old, new in REPL.items():
-        text = text.replace(old, new)
-    bad = validate(text)
-    if bad:
-        raise RuntimeError('legacy visible strings remain: ' + ', '.join(bad))
-    TARGET.write_text(text, encoding='utf-8')
-    print('Cecilia gym surface PASS')
+def validate(text: str) -> list[str]:
+    failures: list[str] = []
+    current_label: str | None = None
+
+    for lineno, raw in enumerate(text.splitlines(), start=1):
+        label_match = LABEL_RE.match(raw)
+        if label_match:
+            current_label = label_match.group(1)
+            continue
+        string_match = STRING_RE.match(raw)
+        if not string_match or current_label in BADGE_HANDOFF_LABELS:
+            continue
+        body = string_match.group("body")
+        for legacy in LEGACY_VISIBLE:
+            if legacy in body:
+                failures.append(f"line {lineno}: legacy visible identity {legacy!r} remains")
+
+    return failures
 
 
-def check():
-    bad = validate(TARGET.read_text(encoding='utf-8'))
-    if bad:
-        print('FAIL:', ', '.join(bad)); return 1
-    print('Cecilia gym surface PASS'); return 0
+def apply() -> int:
+    original = TARGET.read_text(encoding="utf-8")
+    updated, changed = transform(original)
+    failures = validate(updated)
+    if failures:
+        raise RuntimeError("; ".join(failures))
+    TARGET.write_text(updated, encoding="utf-8")
+    print(f"Missoes do Ceu / Cecilia & Caetano gym identity cleanup: {changed} string lines changed.")
+    return 0
 
-if __name__ == '__main__':
-    p = argparse.ArgumentParser(); p.add_argument('--check', action='store_true'); a = p.parse_args()
-    raise SystemExit(check() if a.check else (apply() or 0))
+
+def check() -> int:
+    failures = validate(TARGET.read_text(encoding="utf-8"))
+    if failures:
+        print("Missoes do Ceu / Cecilia & Caetano gym identity check FAILED:")
+        for failure in failures:
+            print(f"- {failure}")
+        return 1
+    print("Missoes do Ceu / Cecilia & Caetano gym identity check PASS.")
+    return 0
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--check", action="store_true")
+    args = parser.parse_args()
+    return check() if args.check else apply()
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
