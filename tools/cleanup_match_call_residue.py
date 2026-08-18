@@ -21,7 +21,7 @@ def block_pattern(label: str) -> re.Pattern[str]:
     # Map scripts generally use `Label:` while shared text tables may use
     # global assembler labels (`Label::`). Accept both and preserve the form.
     return re.compile(
-        rf"(?m)^{re.escape(label)}(?P<suffix>::?):\n(?:\t\.string \"[^\n]*\"\n)+"
+        rf"(?m)^{re.escape(label)}(?P<suffix>::?)\n(?:\t\.string \"[^\n]*\"\n)+"
     )
 
 
@@ -30,7 +30,7 @@ def replace_string_block(text: str, label: str, lines: tuple[str, ...]) -> tuple
 
     def replacement(match: re.Match[str]) -> str:
         suffix = match.group("suffix")
-        return label + suffix + ":\n" + "".join(f'\t.string "{line}"\n' for line in lines)
+        return label + suffix + "\n" + "".join(f'\t.string "{line}"\n' for line in lines)
 
     updated, count = pattern.subn(replacement, text, count=1)
     if count != 1:
