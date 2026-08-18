@@ -636,9 +636,9 @@ DewfordTown_Text_TownSign:
 	.string "os registros oficiais dizem\nnunca ter existido.$"
 
 DewfordTown_Text_GymSign:
-	.string "DEWFORD TOWN POKéMON GYM\n"
-	.string "LEADER: BRAWLY\l"
-	.string "“A big wave in fighting!”$"
+	.string "PORTO DAS REDES\n"
+	.string "RESPONSAVEL: ADEMAR\p"
+	.string "O mar devolve historias.$"
 
 DewfordTown_Text_HallSign:
 	.string "DEWFORD HALL\n"

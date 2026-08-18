@@ -1213,9 +1213,9 @@ RustboroCity_Text_DevonCorpSign:
 	.string "it all.”$"
 
 RustboroCity_Text_GymSign:
-	.string "RUSTBORO CITY POKéMON GYM\n"
-	.string "LEADER: ROXANNE\p"
-	.string "“The ROCK-loving honors student!”$"
+	.string "SERRA DO UIVO\n"
+	.string "RESPONSAVEL: DALVA\p"
+	.string "A serra lembra.$"
 
 RustboroCity_Text_DevonCorpBranchOfficeSign:
 	.string "CONSORCIO HORIZONTE BRANCH OFFICE\p"

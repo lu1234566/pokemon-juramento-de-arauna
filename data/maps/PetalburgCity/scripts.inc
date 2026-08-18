@@ -731,9 +731,9 @@ PetalburgCity_Text_FullPartyExplanation:
 	.string "BOX over a PC connection.$"
 
 PetalburgCity_Text_GymSign:
-	.string "PETALBURG CITY POKéMON GYM\n"
-	.string "LEADER: NORMAN\l"
-	.string "“A man in pursuit of power!”$"
+	.string "PAMPA DA ESPERA\n"
+	.string "RESPONSAVEL: ELIAS\p"
+	.string "Voltar nao apaga o caminho.$"
 
 PetalburgCity_Text_CitySign:
 	.string "PAMPA DA ESPERA. A cidade vive\nentre partidas e retornos.\p"

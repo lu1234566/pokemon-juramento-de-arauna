@@ -1381,10 +1381,9 @@ SootopolisCity_Movement_DestroyTask::
 	step_end
 
 SootopolisCity_Text_GymSign:
-	.string "SOOTOPOLIS CITY POKéMON GYM\n"
-	.string "LEADER: JUAN\p"
-	.string "“The GYM LEADER with the beauty\n"
-	.string "of pure water!”$"
+	.string "M'BOI\n"
+	.string "RESPONSAVEL: DONA CELINA\p"
+	.string "A agua lembra por nos.$"
 
 SootopolisCity_Text_CitySign:
 	.string "AGUAS DE M'BOI. O colapso do\nArquivo espalha lembrancas\p"

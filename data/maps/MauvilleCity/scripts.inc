@@ -602,9 +602,9 @@ MauvilleCity_Text_CitySign:
 	.string "agora veste o uniforme de quem\npromete construir o futuro.$"
 
 MauvilleCity_Text_GymSign:
-	.string "MAUVILLE CITY POKéMON GYM\n"
-	.string "LEADER: WATTSON\l"
-	.string "“The cheerfully electrifying man!”$"
+	.string "ENCRUZILHADA CENTRAL\n"
+	.string "RESPONSAVEL: OLIVIA\p"
+	.string "Toda rede deixa rastros.$"
 
 MauvilleCity_Text_BikeShopSign:
 	.string "“Ride in gravel and shake up your\n"

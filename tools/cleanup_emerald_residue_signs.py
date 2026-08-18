@@ -70,7 +70,7 @@ def replace_string_block(text: str, label: str, lines: tuple[str, ...]) -> tuple
         rf"(?m)^{re.escape(label)}:\n(?:\t\.string \"[^\n]*\"\n)+"
     )
     replacement = label + ":\n" + "".join(f'\t.string "{line}"\n' for line in lines)
-    new_text, count = pattern.subn(replacement, text, count=1)
+    new_text, count = pattern.subn(lambda _match: replacement, text, count=1)
     if count != 1:
         raise RuntimeError(f"Could not uniquely replace {label} (matches={count})")
     return new_text, new_text != text
