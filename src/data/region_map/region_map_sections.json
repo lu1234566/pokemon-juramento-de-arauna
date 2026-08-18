@@ -2,7 +2,7 @@
   "map_sections": [
     {
       "id": "MAPSEC_LITTLEROOT_TOWN",
-      "name": "LITTLEROOT TOWN",
+      "name": "VILA AMANHECER",
       "x": 4,
       "y": 11,
       "width": 1,
@@ -10,7 +10,7 @@
     },
     {
       "id": "MAPSEC_OLDALE_TOWN",
-      "name": "OLDALE TOWN",
+      "name": "VILA DA PASSAGEM",
       "x": 4,
       "y": 9,
       "width": 1,
@@ -18,7 +18,7 @@
     },
     {
       "id": "MAPSEC_DEWFORD_TOWN",
-      "name": "DEWFORD TOWN",
+      "name": "PORTO DAS REDES",
       "x": 2,
       "y": 14,
       "width": 1,
@@ -26,7 +26,7 @@
     },
     {
       "id": "MAPSEC_LAVARIDGE_TOWN",
-      "name": "LAVARIDGE TOWN",
+      "name": "SERTAO DE DENTRO",
       "x": 5,
       "y": 3,
       "width": 1,
@@ -34,7 +34,7 @@
     },
     {
       "id": "MAPSEC_FALLARBOR_TOWN",
-      "name": "FALLARBOR TOWN",
+      "name": "CAMPO DAS CINZAS",
       "x": 3,
       "y": 0,
       "width": 1,
@@ -42,7 +42,7 @@
     },
     {
       "id": "MAPSEC_VERDANTURF_TOWN",
-      "name": "VERDANTURF TOWN",
+      "name": "VALE DO SILENCIO",
       "x": 4,
       "y": 6,
       "width": 1,
@@ -50,7 +50,7 @@
     },
     {
       "id": "MAPSEC_PACIFIDLOG_TOWN",
-      "name": "PACIFIDLOG TOWN",
+      "name": "CASA DA FOGUEIRA",
       "x": 17,
       "y": 10,
       "width": 1,
@@ -58,7 +58,7 @@
     },
     {
       "id": "MAPSEC_PETALBURG_CITY",
-      "name": "PETALBURG CITY",
+      "name": "PAMPA DA ESPERA",
       "x": 1,
       "y": 9,
       "width": 1,
@@ -66,7 +66,7 @@
     },
     {
       "id": "MAPSEC_SLATEPORT_CITY",
-      "name": "SLATEPORT CITY",
+      "name": "PORTO DO SAL",
       "x": 8,
       "y": 10,
       "width": 1,
@@ -74,7 +74,7 @@
     },
     {
       "id": "MAPSEC_MAUVILLE_CITY",
-      "name": "MAUVILLE CITY",
+      "name": "ENCRUZILHADA",
       "x": 8,
       "y": 6,
       "width": 2,
@@ -82,7 +82,7 @@
     },
     {
       "id": "MAPSEC_RUSTBORO_CITY",
-      "name": "RUSTBORO CITY",
+      "name": "SERRA DO UIVO",
       "x": 0,
       "y": 5,
       "width": 1,
@@ -90,7 +90,7 @@
     },
     {
       "id": "MAPSEC_FORTREE_CITY",
-      "name": "FORTREE CITY",
+      "name": "MATA DO MEIO",
       "x": 12,
       "y": 0,
       "width": 1,
@@ -98,7 +98,7 @@
     },
     {
       "id": "MAPSEC_LILYCOVE_CITY",
-      "name": "LILYCOVE CITY",
+      "name": "BAIA DAS LUZES",
       "x": 18,
       "y": 3,
       "width": 2,
@@ -106,7 +106,7 @@
     },
     {
       "id": "MAPSEC_MOSSDEEP_CITY",
-      "name": "MOSSDEEP CITY",
+      "name": "MISSOES DO CEU",
       "x": 24,
       "y": 5,
       "width": 2,
@@ -114,7 +114,7 @@
     },
     {
       "id": "MAPSEC_SOOTOPOLIS_CITY",
-      "name": "SOOTOPOLIS CITY",
+      "name": "AGUAS DE M'BOI",
       "x": 21,
       "y": 7,
       "width": 1,
@@ -122,7 +122,7 @@
     },
     {
       "id": "MAPSEC_EVER_GRANDE_CITY",
-      "name": "EVER GRANDE CITY",
+      "name": "ESTR. JURAMENTO",
       "x": 27,
       "y": 8,
       "width": 1,
@@ -442,7 +442,7 @@
     },
     {
       "id": "MAPSEC_GRANITE_CAVE",
-      "name": "GRANITE CAVE",
+      "name": "GRUTA DAS VOZES",
       "x": 1,
       "y": 13,
       "width": 1,
@@ -450,7 +450,7 @@
     },
     {
       "id": "MAPSEC_MT_CHIMNEY",
-      "name": "MT. CHIMNEY",
+      "name": "SERRA DA CINZA",
       "x": 6,
       "y": 2,
       "width": 1,
@@ -482,7 +482,7 @@
     },
     {
       "id": "MAPSEC_RUSTURF_TUNNEL",
-      "name": "RUSTURF TUNNEL",
+      "name": "GALERIAS SERRA",
       "x": 2,
       "y": 5,
       "width": 1,
@@ -506,7 +506,7 @@
     },
     {
       "id": "MAPSEC_METEOR_FALLS",
-      "name": "METEOR FALLS",
+      "name": "RUINAS DA QUEDA",
       "x": 0,
       "y": 3,
       "width": 1,
@@ -514,7 +514,7 @@
     },
     {
       "id": "MAPSEC_METEOR_FALLS2",
-      "name": "METEOR FALLS",
+      "name": "RUINAS DA QUEDA",
       "x": 1,
       "y": 2,
       "width": 1,
@@ -522,7 +522,7 @@
     },
     {
       "id": "MAPSEC_MT_PYRE",
-      "name": "MT. PYRE",
+      "name": "MEMORIAL NOMES",
       "x": 16,
       "y": 4,
       "width": 1,
@@ -530,7 +530,7 @@
     },
     {
       "id": "MAPSEC_AQUA_HIDEOUT_OLD",
-      "name": "{AQUA} HIDEOUT",
+      "name": "ARQUIVO CENTRAL",
       "name_clone": true,
       "x": 19,
       "y": 3,
@@ -547,7 +547,7 @@
     },
     {
       "id": "MAPSEC_SEAFLOOR_CAVERN",
-      "name": "SEAFLOOR CAVERN",
+      "name": "CAVERNAS M'BOI",
       "x": 24,
       "y": 9,
       "width": 1,
@@ -563,7 +563,7 @@
     },
     {
       "id": "MAPSEC_VICTORY_ROAD",
-      "name": "VICTORY ROAD",
+      "name": "ESTR. JURAMENTO",
       "x": 27,
       "y": 9,
       "width": 1,
@@ -679,7 +679,7 @@
     },
     {
       "id": "MAPSEC_SKY_PILLAR",
-      "name": "SKY PILLAR",
+      "name": "TORRE JURAMENTO",
       "x": 19,
       "y": 10,
       "width": 1,
