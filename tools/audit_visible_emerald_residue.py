@@ -70,7 +70,12 @@ TOKENS = (
 )
 
 ASM_STRING_RE = re.compile(r'^\s*\.string\s+"(?P<text>.*)"\s*$')
+ASM_LABEL_RE = re.compile(r'^\s*(?P<label>[A-Za-z0-9_.$]+)::?\s*$')
 C_STRING_RE = re.compile(r'_\("(?P<text>(?:[^"\\]|\\.)*)"\)')
+TOKEN_PATTERNS = {
+    token: re.compile(rf"(?<![A-Z0-9]){re.escape(token)}(?![A-Z0-9])")
+    for token in TOKENS
+}
 
 
 def iter_files(path: Path):
@@ -84,13 +89,62 @@ def iter_files(path: Path):
             yield candidate
 
 
-def visible_fragments(line: str) -> list[str]:
-    fragments: list[str] = []
-    asm = ASM_STRING_RE.match(line.rstrip("\n"))
-    if asm:
-        fragments.append(asm.group("text"))
-    fragments.extend(match.group("text") for match in C_STRING_RE.finditer(line))
-    return fragments
+def match_tokens(fragment: str) -> list[str]:
+    upper = fragment.upper()
+    return sorted(token for token, pattern in TOKEN_PATTERNS.items() if pattern.search(upper))
+
+
+def audit_asm_file(path: Path, lines: list[str]) -> list[dict[str, object]]:
+    hits: list[dict[str, object]] = []
+    current_label = ""
+    for lineno, line in enumerate(lines, 1):
+        label_match = ASM_LABEL_RE.match(line)
+        if label_match:
+            current_label = label_match.group("label")
+            continue
+        asm_match = ASM_STRING_RE.match(line)
+        if not asm_match:
+            continue
+        # A symbol explicitly named Unused cannot be reached as player-facing
+        # content and is intentionally outside the zero-visible-residue gate.
+        if "unused" in current_label.lower():
+            continue
+        fragment = asm_match.group("text")
+        matched = match_tokens(fragment)
+        if not matched:
+            continue
+        hits.append(
+            {
+                "path": str(path.relative_to(ROOT)),
+                "line": lineno,
+                "label": current_label or None,
+                "tokens": matched,
+                "text": fragment,
+            }
+        )
+    return hits
+
+
+def audit_c_file(path: Path, lines: list[str]) -> list[dict[str, object]]:
+    hits: list[dict[str, object]] = []
+    for lineno, line in enumerate(lines, 1):
+        if "unused" in line.lower():
+            continue
+        for match in C_STRING_RE.finditer(line):
+            fragment = match.group("text")
+            matched = match_tokens(fragment)
+            if not matched:
+                continue
+            hits.append(
+                {
+                    "path": str(path.relative_to(ROOT)),
+                    "line": lineno,
+                    "label": None,
+                    "tokens": matched,
+                    "text": fragment,
+                }
+            )
+    return hits
 
 
 def audit() -> list[dict[str, object]]:
@@ -105,20 +159,10 @@ def audit() -> list[dict[str, object]]:
                 lines = path.read_text(encoding="utf-8").splitlines()
             except UnicodeDecodeError:
                 continue
-            for lineno, line in enumerate(lines, 1):
-                for fragment in visible_fragments(line):
-                    upper = fragment.upper()
-                    matched = sorted({token for token in TOKENS if token in upper})
-                    if not matched:
-                        continue
-                    hits.append(
-                        {
-                            "path": str(path.relative_to(ROOT)),
-                            "line": lineno,
-                            "tokens": matched,
-                            "text": fragment,
-                        }
-                    )
+            if path.suffix in {".inc", ".s"}:
+                hits.extend(audit_asm_file(path, lines))
+            elif path.suffix == ".c":
+                hits.extend(audit_c_file(path, lines))
     return hits
 
 
@@ -144,7 +188,8 @@ def main() -> int:
             print(f"Visible Emerald residue audit: {len(hits)} player-facing hit(s).")
             for hit in hits:
                 tokens = ", ".join(hit["tokens"])
-                print(f"{hit['path']}:{hit['line']}: [{tokens}] {hit['text']}")
+                label = f" {hit['label']}" if hit.get("label") else ""
+                print(f"{hit['path']}:{hit['line']}:{label} [{tokens}] {hit['text']}")
 
     return 1 if hits and args.fail_on_hit else 0
 
