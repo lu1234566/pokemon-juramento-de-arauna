@@ -1078,15 +1078,14 @@ Route104_Text_TrainerTipsDoubleBattles:
 	.string "Watch how POKéMON are lined up.$"
 
 Route104_Text_MayWeShouldRegister:
-	.string "MAY: Oh, hi, {PLAYER}{KUN}!\p"
-	.string "DEVON upgraded your POKéNAV with\n"
-	.string "the MATCH CALL system, huh?\p"
-	.string "We should register each other so we\n"
-	.string "can get in contact anytime.$"
+	.string "CIRO: Seu POKéNAV ja aceita\n"
+	.string "contatos, certo?\p"
+	.string "Registre o meu. Quero comparar\n"
+	.string "o que encontrarmos pelo caminho.$"
 
 Route104_Text_RegisteredMay:
-	.string "{PLAYER} registered MAY\n"
-	.string "in the POKéNAV.$"
+	.string "CIRO foi registrado\n"
+	.string "no POKéNAV.$"
 
 Route104_Text_MayHowsYourPokedex:
 	.string "CIRO: Nao confunda minha pressa\ncom falta de memoria. Eu lembro\p"
@@ -1119,15 +1118,14 @@ Route104_Text_MayPostBattle:
 	.string "o bastante para saber que nao\nquero viver preso ao que perdi.$"
 
 Route104_Text_BrendanWeShouldRegister:
-	.string "BRENDAN: Oh, hey, {PLAYER}!\p"
-	.string "Cool, you had DEVON install the MATCH\n"
-	.string "CALL system on your POKéNAV!\p"
-	.string "Let's register each other in our\n"
-	.string "POKéNAVS so we can keep in touch.$"
+	.string "CIRO: Seu POKéNAV ja aceita\n"
+	.string "contatos, certo?\p"
+	.string "Registre o meu. Quero comparar\n"
+	.string "o que encontrarmos pelo caminho.$"
 
 Route104_Text_RegisteredBrendan:
-	.string "{PLAYER} registered BRENDAN\n"
-	.string "in the POKéNAV.$"
+	.string "CIRO foi registrado\n"
+	.string "no POKéNAV.$"
 
 Route104_Text_BrendanHowsYourPokedex:
 	.string "CIRO: Voce continua olhando\npara cada cicatriz como se ela\p"
