@@ -71,7 +71,7 @@ gBirchDexRatingText_LessThan140::
 	.string "seus TREINADORES.$"
 
 gBirchDexRatingText_LessThan150::
-	.string "ARAUNA abriga muitas especies\n"
+	.string "ARAUNA abriga mais especies\n"
 	.string "do que eu imaginava.$"
 
 gBirchDexRatingText_LessThan160::
