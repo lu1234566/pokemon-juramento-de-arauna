@@ -80,10 +80,12 @@ EverGrandeCity_HallOfFame_Movement_WalkIntoHallOfFame2:
 	step_end
 
 EverGrandeCity_HallOfFame_Text_HereWeHonorLeagueChampions:
-	.string "AMALIA: Arauna sobreviveu a\nverdade pela metade por tempo\p"
-	.string "demais. A Liga tambem tem\ndividas com quem foi apagado.$"
+	.string "AMALIA: A Liga registra quem\n"
+	.string "chega ate aqui sem apagar\p"
+	.string "as marcas do caminho.$"
 
 EverGrandeCity_HallOfFame_Text_LetsRecordYouAndYourPartnersNames:
-	.string "AMALIA: Arauna sobreviveu a\nverdade pela metade por tempo\p"
-	.string "demais. A Liga tambem tem\ndividas com quem foi apagado.$"
+	.string "AMALIA: Seu nome e o dos seus\n"
+	.string "parceiros entram agora\p"
+	.string "na memoria de Arauna.$"
 
