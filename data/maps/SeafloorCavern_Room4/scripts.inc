@@ -30,7 +30,7 @@ SeafloorCavern_Room4_Text_Grunt4Intro:
 	.string "Um passo a mais e eu te paro.$"
 
 SeafloorCavern_Room4_Text_Grunt4Defeat:
-	.string "Nao consegui proteger a passagem.$"
+	.string "Nao protegi a passagem.$"
 
 SeafloorCavern_Room4_Text_Grunt4PostBattle:
 	.string "Os sensores perderam a leitura.\p"
