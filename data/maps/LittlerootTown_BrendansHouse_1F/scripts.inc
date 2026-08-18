@@ -284,83 +284,87 @@ LittlerootTown_BrendansHouse_1F_Movement_BrendanGoUpstairs2:
 	step_end
 
 PlayersHouse_1F_Text_IsntItNiceInHere:
-	.string "MOM: See, {PLAYER}?\n"
-	.string "Isn't it nice in here, too?$"
+	.string "MAE: Chegamos, {PLAYER}.\n"
+	.string "Ainda parece estranho, nao?$"
 
 PlayersHouse_1F_Text_MoversPokemonGoSetClock:
-	.string "The mover's POKéMON do all the work\n"
-	.string "of moving us in and cleaning up after.\l"
-	.string "This is so convenient!\p"
-	.string "{PLAYER}, your room is upstairs.\n"
-	.string "Go check it out, dear!\p"
-	.string "DAD bought you a new clock to mark\n"
-	.string "our move here.\l"
-	.string "Don't forget to set it!$"
+	.string "Os POKéMON da mudanca\n"
+	.string "deixaram tudo no lugar.\p"
+	.string "Seu quarto fica no andar\n"
+	.string "de cima. Va dar uma olhada.\p"
+	.string "ELIAS deixou um relogio para\n"
+	.string "voce antes de partir.\n"
+	.string "Nao esqueca de acerta-lo.$"
 
 PlayersHouse_1F_Text_ArentYouInterestedInRoom:
-	.string "MOM: Well, {PLAYER}?\p"
-	.string "Aren't you interested in seeing your\n"
-	.string "very own room?$"
+	.string "MAE: {PLAYER}, seu quarto\n"
+	.string "esta esperando por voce.$"
 
 PlayersHouse_1F_Text_GoSetTheClock:
-	.string "MOM: {PLAYER}.\p"
-	.string "Go set the clock in your room, honey.$"
+	.string "MAE: Acerte o relogio do\n"
+	.string "seu quarto antes de sair.$"
 
 PlayersHouse_1F_Text_OhComeQuickly:
-	.string "MOM: Oh! {PLAYER}, {PLAYER}!\n"
-	.string "Quick! Come quickly!$"
+	.string "MAE: {PLAYER}! Venha aqui!\n"
+	.string "Estao falando de ELIAS na TV.$"
 
 PlayersHouse_1F_Text_MaybeDadWillBeOn:
-	.string "CIRO: Nao confunda minha pressa\ncom falta de memoria. Eu lembro\p"
-	.string "o bastante para saber que nao\nquero viver preso ao que perdi.$"
+	.string "MAE: Talvez mostrem ELIAS.\p"
+	.string "Ele quase nunca aparece nas\n"
+	.string "reportagens do PAMPA DA ESPERA.$"
 
 PlayersHouse_1F_Text_ItsOverWeMissedHim:
-	.string "MOM: Oh… It's over.\p"
-	.string "I think DAD was on, but we missed him.\n"
-	.string "Too bad.$"
+	.string "MAE: Ah... acabou.\p"
+	.string "Acho que ELIAS apareceu, mas\n"
+	.string "chegamos tarde demais.$"
 
 PlayersHouse_1F_Text_GoIntroduceYourselfNextDoor:
-	.string "Oh, yes.\n"
-	.string "One of DAD's friends lives in town.\p"
-	.string "PROF. ANAHI is his name.\p"
-	.string "He lives right next door, so you should\n"
-	.string "go over and introduce yourself.$"
+	.string "MAE: A PROFESSORA ANAHI trabalha\n"
+	.string "bem aqui perto.\p"
+	.string "Va se apresentar antes de\n"
+	.string "seguir pela vila.$"
 
 PlayersHouse_1F_Text_SeeYouHoney:
-	.string "MOM: See you, honey!$"
+	.string "MAE: Ate mais, {PLAYER}.\n"
+	.string "Nao suma sem avisar.$"
 
 PlayersHouse_1F_Text_DidYouMeetProfBirch:
-	.string "ANAHI: Eu ajudei a criar os\nprimeiros sensores de VINCULO.\p"
-	.string "Na epoca achei que medir\nsignificava compreender. Hoje\p"
-	.string "sei que nao e a mesma coisa.$"
+	.string "MAE: Encontrou a PROFESSORA\n"
+	.string "ANAHI?\p"
+	.string "Ela passa mais tempo no campo\n"
+	.string "do que no laboratorio.$"
 
 PlayersHouse_1F_Text_YouShouldRestABit:
-	.string "MOM: How are you doing, {PLAYER}?\n"
-	.string "You look a little tired.\p"
-	.string "I think you should rest a bit.$"
+	.string "MAE: Voce esta com cara de\n"
+	.string "quem precisa descansar.\p"
+	.string "Durma um pouco antes de\n"
+	.string "voltar para a estrada.$"
 
 PlayersHouse_1F_Text_TakeCareHoney:
-	.string "MOM: Take care, honey!$"
+	.string "MAE: Se cuide, {PLAYER}.$"
 
 PlayersHouse_1F_Text_GotDadsBadgeHeresSomethingFromMom:
-	.string "MOM: Oh? Did DAD give you that BADGE?\p"
-	.string "Then here's something from your MOM!$"
+	.string "MAE: ELIAS entregou essa\n"
+	.string "INSIGNIA a voce?\p"
+	.string "Entao leve isto tambem.\n"
+	.string "Desta vez, da sua mae.$"
 
 PlayersHouse_1F_Text_DontPushYourselfTooHard:
-	.string "Don't push yourself too hard, dear.\n"
-	.string "You can always come home.\p"
-	.string "Go for it, honey!$"
+	.string "Nao precisa provar tudo de uma\n"
+	.string "vez, {PLAYER}.\p"
+	.string "Quando precisar, volte para\n"
+	.string "casa. Eu estarei aqui.$"
 
 PlayersHouse_1F_Text_IsThatAPokenav:
-	.string "MOM: What is that, honey? A POKéNAV?\n"
-	.string "Someone from DEVON gave it to you?\p"
-	.string "Well, honey, how about registering\n"
-	.string "your mom?\p"
-	.string "… … …$"
+	.string "MAE: Isso e um POKéNAV?\p"
+	.string "Foi o HORIZONTE que ativou\n"
+	.string "esse sistema de contatos?\p"
+	.string "Entao registre meu numero.\n"
+	.string "Quero saber quando esta bem.$"
 
 PlayersHouse_1F_Text_RegisteredMom:
-	.string "Registered MOM\n"
-	.string "in the POKéNAV.$"
+	.string "MAE foi registrada\n"
+	.string "no POKéNAV.$"
 
 PlayersHouse_1F_Text_Vigoroth1:
 	.string "Fugiiiiih!$"
@@ -369,8 +373,10 @@ PlayersHouse_1F_Text_Vigoroth2:
 	.string "Huggoh, uggo uggo…$"
 
 PlayersHouse_1F_Text_ReportFromPetalburgGym:
-	.string "INTERVIEWER: …We brought you this\n"
-	.string "report from in front of PETALBURG GYM.$"
+	.string "REPORTER: Direto do\n"
+	.string "PAMPA DA ESPERA,\p"
+	.string "onde ELIAS recebeu novos\n"
+	.string "desafiantes esta manha.$"
 
 PlayersHouse_1F_Text_TheresAMovieOnTV:
 	.string "There is a movie on TV.\p"
