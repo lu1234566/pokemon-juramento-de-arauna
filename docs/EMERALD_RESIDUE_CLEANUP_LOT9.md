@@ -20,3 +20,5 @@ The deterministic tool changes only existing `.string` blocks in `data/maps/Litt
 ## Validation gate
 
 The cleanup runner applies the lot, verifies every target block, then the normal PR CI performs a full custom Emerald ROM build. Merge is allowed only after both gates succeed.
+
+Final validation trigger: regenerated source has been committed; this user-authored documentation commit requires a fresh cleanup check and full custom Emerald ROM build on the exact final head before merge.
