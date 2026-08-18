@@ -32,6 +32,6 @@ RustboroCity_Flat2_2F_Text_MyDaddyMadeThisYouCanHaveIt:
 
 RustboroCity_Flat2_2F_Text_GoingToWorkAtDevonToo:
 	.string "Meu pai trabalha no HORIZONTE.\p"
-	.string "Quando eu crescer, quero trabalhar\n"
+	.string "Quando crescer, quero trabalhar\n"
 	.string "com pesquisa de campo tambem.$"
 
