@@ -2,7 +2,6 @@
 from __future__ import annotations
 
 import argparse
-import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -64,28 +63,35 @@ TARGETS = {
 FORBIDDEN = ("WALLY", "VERDANTURF", "EVER GRANDE")
 
 
-def pattern(label: str) -> re.Pattern[str]:
-    return re.compile(rf"(?m)^{re.escape(label)}:\n(?:\t\.string \"[^\n]*\"\n)+")
-
-
 def render(label: str, lines: tuple[str, ...]) -> str:
     return label + ":\n" + "".join(f'\t.string "{line}"\n' for line in lines)
 
 
-def extract(text: str, label: str) -> str:
-    match = pattern(label).search(text)
-    if not match:
+def block_bounds(text: str, label: str) -> tuple[int, int]:
+    marker = label + ":\n"
+    start = text.find(marker)
+    if start < 0:
         raise RuntimeError(f"Missing Val household text block: {label}")
-    return match.group(0)
+    end = text.find("\n\n", start)
+    if end < 0:
+        end = len(text)
+    else:
+        end += 1
+    return start, end
+
+
+def extract(text: str, label: str) -> str:
+    start, end = block_bounds(text, label)
+    return text[start:end]
 
 
 def validate(text: str) -> list[str]:
     failures: list[str] = []
     for label, lines in TARGETS.items():
         block = extract(text, label)
-        for line in lines:
-            if f'\t.string "{line}"' not in block:
-                failures.append(f"{label} missing expected line: {line}")
+        expected = render(label, lines)
+        if block != expected:
+            failures.append(f"{label} does not match the canonical generated block")
         for token in FORBIDDEN:
             if token in block:
                 failures.append(f"{label} still contains visible Emerald token: {token}")
@@ -96,12 +102,11 @@ def apply() -> int:
     text = TARGET.read_text(encoding="utf-8")
     changed = 0
     for label, lines in TARGETS.items():
-        updated, count = pattern(label).subn(lambda _m: render(label, lines), text, count=1)
-        if count != 1:
-            raise RuntimeError(f"Could not uniquely replace {label} (matches={count})")
-        if updated != text:
+        start, end = block_bounds(text, label)
+        replacement = render(label, lines)
+        if text[start:end] != replacement:
+            text = text[:start] + replacement + text[end:]
             changed += 1
-        text = updated
     failures = validate(text)
     if failures:
         raise RuntimeError("; ".join(failures))
