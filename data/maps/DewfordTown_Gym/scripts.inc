@@ -388,17 +388,16 @@ DewfordTown_Gym_Text_BrawlyDefeat:
 	.string "na memoria da agua.$"
 
 DewfordTown_Gym_Text_ReceivedKnuckleBadge:
-	.string "{PLAYER} received the KNUCKLE BADGE\n"
-	.string "from BRAWLY.$"
+	.string "{PLAYER} recebeu a\n"
+	.string "INSÍGNIA MARÉ de ADEMAR.$"
 
 DewfordTown_Gym_Text_KnuckleBadgeInfoTakeThis:
-	.string "The KNUCKLE BADGE makes all POKéMON\n"
-	.string "up to Level 30, even those you get in\l"
-	.string "trades, obey without question.\p"
-	.string "And, you'll be able to use the HM move\n"
-	.string "FLASH outside of battle.\p"
-	.string "If you'd like, use this TECHNICAL\n"
-	.string "MACHINE, too.$"
+	.string "A INSÍGNIA MARÉ faz POKéMON\n"
+	.string "até o nível 30 obedecerem,\l"
+	.string "mesmo os recebidos em troca.\p"
+	.string "Também permite usar FLASH\n"
+	.string "fora de batalha.\p"
+	.string "Leve esta TM também.$"
 
 DewfordTown_Gym_Text_ExplainBulkUp:
 	.string "That TM08 contains BULK UP.\p"

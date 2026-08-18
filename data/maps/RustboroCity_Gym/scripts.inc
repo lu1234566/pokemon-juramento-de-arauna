@@ -130,8 +130,8 @@ RustboroCity_Gym_Text_GymGuidePostVictory:
 	.string "My cheering must've worked!\p"
 	.string "Great!\n"
 	.string "Check your TRAINER CARD.\p"
-	.string "The STONE BADGE you got should be\n"
-	.string "properly recorded on it.\p"
+	.string "A INSÍGNIA FENDA deve estar\n"
+	.string "registrada no seu TRAINER CARD.\p"
 	.string "In other words…\p"
 	.string "You've climbed the first step on\n"
 	.string "the stairs to the CHAMPIONSHIP!\p"
@@ -184,15 +184,15 @@ RustboroCity_Gym_Text_RoxanneDefeat:
 	.string "que monumentos inteiros.$"
 
 RustboroCity_Gym_Text_ReceivedStoneBadge:
-	.string "{PLAYER} received the STONE BADGE\n"
-	.string "from ROXANNE.$"
+	.string "{PLAYER} recebeu a\n"
+	.string "INSÍGNIA FENDA de DALVA.$"
 
 RustboroCity_Gym_Text_StoneBadgeInfoTakeThis:
-	.string "The STONE BADGE heightens the ATTACK\n"
-	.string "power of your POKéMON.\p"
-	.string "It also enables them to use the HM move\n"
-	.string "CUT outside of battle.\p"
-	.string "Please take this with you, too.$"
+	.string "A INSÍGNIA FENDA aumenta o\n"
+	.string "ATAQUE dos seus POKéMON.\p"
+	.string "Ela também permite usar CUT\n"
+	.string "fora de batalha.\p"
+	.string "Leve isto com você também.$"
 
 RustboroCity_Gym_Text_ExplainRockTomb:
 	.string "That TECHNICAL MACHINE, TM39,\n"

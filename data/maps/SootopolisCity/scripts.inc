@@ -1634,17 +1634,18 @@ SootopolisCity_Text_ThankYouForHelpAcceptThis:
 	.string "demais. A Liga tambem tem\ndividas com quem foi apagado.$"
 
 SootopolisCity_Text_ExplainWaterfallGoToGym:
-	.string "That HIDDEN MACHINE contains\n"
+	.string "Esta HIDDEN MACHINE contém\n"
 	.string "WATERFALL.\p"
-	.string "If you have the RAIN BADGE, a POKéMON\n"
-	.string "that has learned that HM move can\l"
-	.string "force its way up waterfalls.\p"
-	.string "And where does one get the RAIN BADGE?\n"
-	.string "You know, don't you?\p"
-	.string "That's right! You have to beat\n"
-	.string "the SOOTOPOLIS GYM LEADER.\p"
-	.string "When you're all set to go, step through\n"
-	.string "that door.$"
+	.string "Com a INSÍGNIA NASCENTE,\n"
+	.string "um POKéMON que saiba WATERFALL\l"
+	.string "pode subir cachoeiras.\p"
+	.string "E onde se consegue a\n"
+	.string "INSÍGNIA NASCENTE?\p"
+	.string "Você sabe, nao sabe?\p"
+	.string "Derrotando a LÍDER DE GINÁSIO\n"
+	.string "de ÁGUAS DE M'BOI.\p"
+	.string "Quando estiver pronto, passe\n"
+	.string "por aquela porta.$"
 
 SootopolisCity_Text_DazzledByMentor:
 	.string "AMALIA: Arauna sobreviveu a\nverdade pela metade por tempo\p"

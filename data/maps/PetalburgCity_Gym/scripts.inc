@@ -1239,16 +1239,16 @@ PetalburgCity_Gym_Text_NormanDefeat:
 	.string "chamando meu medo de prudencia.$"
 
 PetalburgCity_Gym_Text_ReceivedBalanceBadge:
-	.string "{PLAYER} received the BALANCE BADGE\n"
-	.string "from DAD!$"
+	.string "{PLAYER} recebeu a\n"
+	.string "INSÍGNIA COMPASSO!$"
 
 PetalburgCity_Gym_Text_ExplainBalanceBadgeTakeThis:
-	.string "DAD: With that BADGE, the DEFENSE\n"
-	.string "of all your POKéMON will increase.\p"
-	.string "POKéMON that know the HM move SURF\n"
-	.string "will be able to travel over water.\p"
-	.string "This is my gift to you. {PLAYER}, I'm\n"
-	.string "sure you can use it correctly.$"
+	.string "A INSÍGNIA COMPASSO aumenta\n"
+	.string "a DEFESA dos seus POKéMON.\p"
+	.string "POKéMON que conhecem SURF\n"
+	.string "podem viajar sobre a água.\p"
+	.string "Este presente é para você,\n"
+	.string "{PLAYER}. Sei que saberá usá-lo.$"
 
 PetalburgCity_Gym_Text_ExplainFacade:
 	.string "DAD: TM42 contains FACADE.\p"

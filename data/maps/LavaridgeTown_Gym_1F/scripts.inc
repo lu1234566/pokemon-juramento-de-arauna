@@ -307,18 +307,16 @@ LavaridgeTown_Gym_1F_Text_FlanneryDefeat:
 	.string "tudo; tambem nao devemos fingir\nque nada queimou.$"
 
 LavaridgeTown_Gym_1F_Text_ReceivedHeatBadge:
-	.string "{PLAYER} received the HEAT BADGE\n"
-	.string "from FLANNERY.$"
+	.string "{PLAYER} recebeu a\n"
+	.string "INSÍGNIA CINZA de NARA.$"
 
 LavaridgeTown_Gym_1F_Text_ExplainHeatBadgeTakeThis:
-	.string "If you have a HEAT BADGE, all POKéMON\n"
-	.string "up to Level 50, even those you get in\l"
-	.string "trades from other people, will obey\l"
-	.string "you completely.\p"
-	.string "And, it lets POKéMON use the HM move\n"
-	.string "STRENGTH outside of battle.\p"
-	.string "This is a token of my appreciation.\n"
-	.string "Don't be shy about taking it!$"
+	.string "Com a INSÍGNIA CINZA, POKéMON\n"
+	.string "até o nível 50 obedecem,\l"
+	.string "mesmo os recebidos em troca.\p"
+	.string "Ela permite usar STRENGTH\n"
+	.string "fora de batalha.\p"
+	.string "Aceite este presente também!$"
 
 LavaridgeTown_Gym_1F_Text_ExplainOverheat:
 	.string "That TM50 contains OVERHEAT.\p"

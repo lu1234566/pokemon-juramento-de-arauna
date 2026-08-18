@@ -554,15 +554,15 @@ MossdeepCity_Gym_Text_TateAndLizaDefeat:
 	.string "dentro delas nunca sao.$"
 
 MossdeepCity_Gym_Text_ReceivedMindBadge:
-	.string "{PLAYER} received the MIND BADGE\n"
-	.string "from TATE and LIZA.$"
+	.string "{PLAYER} recebeu a\n"
+	.string "INSÍGNIA PRISMA de CECILIA.$"
 
 MossdeepCity_Gym_Text_ExplainMindBadgeTakeThis:
-	.string "TATE: The MIND BADGE enhances the\n"
-	.string "SP. ATK and SP. DEF of POKéMON.\p"
-	.string "LIZA: It also lets you use the HM move\n"
-	.string "DIVE outside of battle.\p"
-	.string "TATE: You should also take this, too.$"
+	.string "A INSÍGNIA PRISMA aumenta\n"
+	.string "SP. ATK e SP. DEF dos POKéMON.\p"
+	.string "Ela também permite usar DIVE\n"
+	.string "fora de batalha.\p"
+	.string "Leve isto também.$"
 
 MossdeepCity_Gym_Text_ExplainCalmMind:
 	.string "CECILIA: Do alto, cidades\nparecem pequenas. As vidas\p"
