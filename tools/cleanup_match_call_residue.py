@@ -17,22 +17,29 @@ STRING_BLOCK_TARGETS: tuple[tuple[str, str, tuple[str, ...], tuple[str, ...]], .
 EXACT_REPLACEMENTS: tuple[tuple[str, str, str], ...] = ()
 
 
-def replace_string_block(text: str, label: str, lines: tuple[str, ...]) -> tuple[str, bool]:
-    pattern = re.compile(
-        rf"(?m)^{re.escape(label)}:\n(?:\t\.string \"[^\n]*\"\n)+"
+def block_pattern(label: str) -> re.Pattern[str]:
+    # Map scripts generally use `Label:` while shared text tables may use
+    # global assembler labels (`Label::`). Accept both and preserve the form.
+    return re.compile(
+        rf"(?m)^{re.escape(label)}(?P<suffix>::?):\n(?:\t\.string \"[^\n]*\"\n)+"
     )
-    replacement = label + ":\n" + "".join(f'\t.string "{line}"\n' for line in lines)
-    updated, count = pattern.subn(lambda _match: replacement, text, count=1)
+
+
+def replace_string_block(text: str, label: str, lines: tuple[str, ...]) -> tuple[str, bool]:
+    pattern = block_pattern(label)
+
+    def replacement(match: re.Match[str]) -> str:
+        suffix = match.group("suffix")
+        return label + suffix + ":\n" + "".join(f'\t.string "{line}"\n' for line in lines)
+
+    updated, count = pattern.subn(replacement, text, count=1)
     if count != 1:
         raise RuntimeError(f"Could not uniquely replace {label} (matches={count})")
     return updated, updated != text
 
 
 def extract_block(text: str, label: str) -> str:
-    match = re.search(
-        rf"(?m)^{re.escape(label)}:\n(?:\t\.string \"[^\n]*\"\n)+",
-        text,
-    )
+    match = block_pattern(label).search(text)
     if not match:
         raise RuntimeError(f"Missing text block: {label}")
     return match.group(0)
