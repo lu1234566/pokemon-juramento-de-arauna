@@ -16,8 +16,8 @@ RustboroCity_Flat2_1F_EventScript_Skitty::
 	end
 
 RustboroCity_Flat2_1F_Text_DevonWorkersLiveHere:
-	.string "CONSORCIO HORIZONTEORATION's workers live in\n"
-	.string "this building.$"
+	.string "Muita gente que trabalha no\n"
+	.string "CONSORCIO HORIZONTE mora aqui.$"
 
 RustboroCity_Flat2_1F_Text_Skitty:
 	.string "SKITTY: Gyaaaah!$"
