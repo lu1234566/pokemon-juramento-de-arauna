@@ -905,88 +905,76 @@ LittlerootTown_EventScript_GiveRunningShoes::
 	return
 
 LittlerootTown_Text_OurNewHomeLetsGoInside:
-	.string "MOM: {PLAYER}, we're here, honey!\p"
-	.string "It must be tiring riding with our things\n"
-	.string "in the moving truck.\p"
-	.string "Well, this is LITTLEROOT TOWN.\p"
-	.string "How do you like it?\n"
-	.string "This is our new home!\p"
-	.string "It has a quaint feel, but it seems to be\n"
-	.string "an easy place to live, don't you think?\p"
-	.string "And, you get your own room, {PLAYER}!\n"
-	.string "Let's go inside.$"
+	.string "MAE: {PLAYER}, chegamos.\p"
+	.string "Esta e a VILA AMANHECER.\n"
+	.string "Nossa nova casa fica logo ali.\p"
+	.string "Vai levar um tempo para tudo\n"
+	.string "parecer nosso de verdade.\p"
+	.string "Venha. Quero que veja seu quarto.$"
 
 LittlerootTown_Text_WaitPlayer:
-	.string "MOM: Wait, {PLAYER}!$"
+	.string "MAE: Espere, {PLAYER}!$"
 
 LittlerootTown_Text_WearTheseRunningShoes:
-	.string "MOM: {PLAYER}! {PLAYER}! Did you\n"
-	.string "introduce yourself to PROF. ANAHI?\p"
-	.string "Oh! What an adorable POKéMON!\n"
-	.string "You got it from PROF. ANAHI. How nice!\p"
-	.string "You're your father's child, all right.\n"
-	.string "You look good together with POKéMON!\p"
-	.string "Here, honey! If you're going out on an\n"
-	.string "adventure, wear these RUNNING SHOES.\p"
-	.string "They'll put a zip in your step!$"
+	.string "MAE: {PLAYER}! Encontrou ANAHI?\p"
+	.string "E esse POKéMON... entao voces\n"
+	.string "decidiram viajar juntos.\p"
+	.string "ELIAS vai querer saber disso.\p"
+	.string "Se vai seguir pela estrada,\n"
+	.string "leve estes TENIS DE CORRIDA.$"
 
 LittlerootTown_Text_SwitchShoesWithRunningShoes:
-	.string "{PLAYER} switched shoes with the\n"
-	.string "RUNNING SHOES.$"
+	.string "{PLAYER} calcou os\n"
+	.string "TENIS DE CORRIDA.$"
 
 LittlerootTown_Text_ExplainRunningShoes:
-	.string "MOM: {PLAYER}, those shoes came with\n"
-	.string "instructions.\p"
-	.string "“Press the B Button while wearing these\n"
-	.string "RUNNING SHOES to run extra-fast!\p"
-	.string "“Slip on these RUNNING SHOES and race\n"
-	.string "in the great outdoors!”$"
+	.string "MAE: Segure o Botao B para\n"
+	.string "correr quando estiver usando\l"
+	.string "os TENIS DE CORRIDA.$"
 
 LittlerootTown_Text_ComeHomeIfAnythingHappens:
-	.string "… … … … … … … …\n"
-	.string "… … … … … … … …\p"
-	.string "To think that you have your very own\n"
-	.string "POKéMON now…\l"
-	.string "Your father will be overjoyed.\p"
-	.string "…But please be careful.\n"
-	.string "If anything happens, you can come home.\p"
-	.string "Go on, go get them, honey!$"
+	.string "MAE: Agora voce tem seu proprio\n"
+	.string "companheiro de viagem.\p"
+	.string "Nao tente carregar tudo sozinho.\n"
+	.string "Se precisar, volte para casa.\p"
+	.string "E mande noticias, {PLAYER}.$"
 
 LittlerootTown_Text_CanUsePCToStoreItems:
-	.string "If you use a PC, you can store items\n"
-	.string "and POKéMON.\p"
-	.string "The power of science is staggering!$"
+	.string "Os PCs guardam itens e dados\n"
+	.string "de POKéMON.\p"
+	.string "Ainda acho estranho confiar\n"
+	.string "tanta coisa a uma tela.$"
 
 LittlerootTown_Text_BirchSpendsDaysInLab:
-	.string "ANAHI: Eu ajudei a criar os\nprimeiros sensores de VINCULO.\p"
-	.string "Na epoca achei que medir\nsignificava compreender. Hoje\p"
-	.string "sei que nao e a mesma coisa.$"
+	.string "A PROFESSORA ANAHI vive no campo.\p"
+	.string "Quando o laboratorio esta vazio,\n"
+	.string "ela deve estar seguindo alguma\l"
+	.string "pista pela mata.$"
 
 LittlerootTown_Text_IfYouGoInGrassPokemonWillJumpOut:
-	.string "Um, um, um!\p"
-	.string "If you go outside and go in the grass,\n"
-	.string "wild POKéMON will jump out!$"
+	.string "Ei! Nao siga pela mata sozinho.\p"
+	.string "POKéMON selvagens aparecem no\n"
+	.string "capim alto.$"
 
 LittlerootTown_Text_DangerousIfYouDontHavePokemon:
-	.string "It's dangerous if you don't have\n"
-	.string "your own POKéMON.$"
+	.string "Sem um POKéMON ao seu lado,\n"
+	.string "e perigoso seguir por ali.$"
 
 LittlerootTown_Text_CanYouGoSeeWhatsHappening:
-	.string "Um, hi!\p"
-	.string "There are scary POKéMON outside!\n"
-	.string "I can hear their cries!\p"
-	.string "I want to go see what's going on,\n"
-	.string "but I don't have any POKéMON…\p"
-	.string "Can you go see what's happening\n"
-	.string "for me?$"
+	.string "Tem alguma coisa acontecendo\n"
+	.string "mais adiante!\p"
+	.string "Ouvi a PROFESSORA ANAHI e um\n"
+	.string "POKéMON no meio da mata.\p"
+	.string "Pode ir ver se ela esta bem?$"
 
 LittlerootTown_Text_YouSavedBirch:
-	.string "ANAHI: Se eu continuar calada\nsobre o que o HORIZONTE fez com\p"
-	.string "minha pesquisa, o erro tambem\nsera meu.$"
+	.string "Voce ajudou a PROFESSORA ANAHI!\p"
+	.string "Eu ouvi a confusao daqui.\n"
+	.string "Ainda bem que os dois voltaram.$"
 
 LittlerootTown_Text_GoodLuckCatchingPokemon:
-	.string "Are you going to catch POKéMON?\n"
-	.string "Good luck!$"
+	.string "Vai seguir viagem com POKéMON?\n"
+	.string "Boa sorte, {PLAYER}!$"
 
 LittlerootTown_Text_TownSign:
 	.string "VILA AMANHECER. Aqui o\nJuramento ainda e contado de\p"
@@ -994,18 +982,17 @@ LittlerootTown_Text_TownSign:
 	.string "mais o pronuncia.$"
 
 LittlerootTown_Text_ProfBirchsLab:
-	.string "ANAHI: Se eu continuar calada\nsobre o que o HORIZONTE fez com\p"
-	.string "minha pesquisa, o erro tambem\nsera meu.$"
+	.string "LABORATORIO DE CAMPO\n"
+	.string "PROFESSORA ANAHI.$"
 
 LittlerootTown_Text_PlayersHouse:
-	.string "{PLAYER}'s HOUSE$"
+	.string "CASA DE {PLAYER}$"
 
 LittlerootTown_Text_ProfBirchsHouse:
-	.string "ANAHI: Se eu continuar calada\nsobre o que o HORIZONTE fez com\p"
-	.string "minha pesquisa, o erro tambem\nsera meu.$"
+	.string "CASA DE CIRO$"
 
 LittlerootTown_Text_BirchSomethingToShowYouAtLab:
-	.string "ANAHI: Eu ajudei a criar os\nprimeiros sensores de VINCULO.\p"
-	.string "Na epoca achei que medir\nsignificava compreender. Hoje\p"
-	.string "sei que nao e a mesma coisa.$"
+	.string "ANAHI: {PLAYER}, venha comigo.\p"
+	.string "Encontrei algo nos registros\n"
+	.string "que quero mostrar no laboratorio.$"
 
