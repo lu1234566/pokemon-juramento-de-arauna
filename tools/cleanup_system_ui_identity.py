@@ -10,6 +10,10 @@ TARGET = ROOT / "src" / "strings.c"
 REPLACEMENTS = {
     'const u8 gText_ExpandedPlaceholder_Brendan[] = _("BRENDAN");': 'const u8 gText_ExpandedPlaceholder_Brendan[] = _("CIRO");',
     'const u8 gText_ExpandedPlaceholder_May[] = _("MAY");': 'const u8 gText_ExpandedPlaceholder_May[] = _("CIRO");',
+    'const u8 gText_ExpandedPlaceholder_Aqua[] = _("AQUA");': 'const u8 gText_ExpandedPlaceholder_Aqua[] = _("HORIZONTE");',
+    'const u8 gText_ExpandedPlaceholder_Magma[] = _("MAGMA");': 'const u8 gText_ExpandedPlaceholder_Magma[] = _("LEMBRANTES");',
+    'const u8 gText_ExpandedPlaceholder_Archie[] = _("ARCHIE");': 'const u8 gText_ExpandedPlaceholder_Archie[] = _("OTACILIO");',
+    'const u8 gText_ExpandedPlaceholder_Maxie[] = _("MAXIE");': 'const u8 gText_ExpandedPlaceholder_Maxie[] = _("LUZIA");',
     'const u8 gText_DexHoennTitle[] = _("HOENN DEX");': 'const u8 gText_DexHoennTitle[] = _("ARAUNA DEX");',
     'const u8 gText_DexHoennDescription[] = _("HOENN region\'s POKéDEX");': 'const u8 gText_DexHoennDescription[] = _("ARAUNA region\'s POKéDEX");',
     'const u8 gText_DexHoenn[] = _("HOENN");': 'const u8 gText_DexHoenn[] = _("ARAUNA");',
