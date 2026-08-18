@@ -148,14 +148,12 @@ MossdeepCity_StevensHouse_EventScript_DiveItemBall::
 	end
 
 MossdeepCity_StevensHouse_Text_YouveEarnedHMDive:
-	.string "STEVEN: {PLAYER}{KUN}…\p"
-	.string "As you can see, there's not much here,\n"
-	.string "but this is my home.\p"
-	.string "Thank you for all that you've done.\p"
-	.string "This is my token of appreciation.\n"
-	.string "It's the HIDDEN MACHINE DIVE.\p"
-	.string "No need to be shy--you've earned\n"
-	.string "this HM.$"
+	.string "SEU BENTO: {PLAYER}, chegou\n"
+	.string "na hora certa.\p"
+	.string "Os registros de M'BOI apontam\n"
+	.string "para algo sob a agua.\p"
+	.string "Leve esta tecnica de MERGULHO.\n"
+	.string "Voce vai precisar dela.$"
 
 MossdeepCity_StevensHouse_Text_ExplainDive:
 	.string "SEU BENTO: Quando um nome some\nda boca das pessoas, eu\p"
@@ -190,6 +188,7 @@ MossdeepCity_StevensHouse_Text_LetterFromSteven:
 	.string "pista.$"
 
 MossdeepCity_StevensHouse_Text_CollectionOfRareRocks:
-	.string "It's a collection of rare rocks and\n"
-	.string "stones assembled by STEVEN.$"
+	.string "Pedras, etiquetas e cadernos.\p"
+	.string "Cada peca tem data, lugar e\n"
+	.string "um nome escrito por SEU BENTO.$"
 

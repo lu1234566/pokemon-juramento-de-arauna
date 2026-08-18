@@ -104,6 +104,65 @@ TARGETS = (
             r"E PESSOAL AUTORIZADO.$",
         ),
     ),
+    (
+        "data/maps/GraniteCave_StevensRoom/scripts.inc",
+        "GraniteCave_StevensRoom_Text_CouldBecomeChampionLetsRegister",
+        (
+            r"SEU BENTO: Voce presta atencao.\p",
+            r"Isso vale mais que pressa.\p",
+            r"Registre meu contato no POKéNAV.\p",
+            r"Se eu achar outro nome perdido,\n",
+            r"aviso voce.$",
+        ),
+    ),
+    (
+        "data/maps/GraniteCave_StevensRoom/scripts.inc",
+        "GraniteCave_StevensRoom_Text_RegisteredSteven",
+        (r"SEU BENTO foi registrado\n", r"no POKéNAV.$"),
+    ),
+    (
+        "data/maps/GraniteCave_StevensRoom/scripts.inc",
+        "GraniteCave_StevensRoom_Text_IveGotToHurryAlong",
+        (r"SEU BENTO: Ainda tenho cadernos\n", r"para conferir. A gente se ve.$"),
+    ),
+    (
+        "data/maps/GraniteCave_StevensRoom/scripts.inc",
+        "GraniteCave_StevensRoom_Text_OhBagIsFull",
+        (r"SEU BENTO: Sua mochila esta cheia.\n", r"Guarde espaco e volte aqui.$"),
+    ),
+    (
+        "data/maps/MossdeepCity_StevensHouse/scripts.inc",
+        "MossdeepCity_StevensHouse_Text_YouveEarnedHMDive",
+        (
+            r"SEU BENTO: {PLAYER}, chegou\n",
+            r"na hora certa.\p",
+            r"Os registros de M'BOI apontam\n",
+            r"para algo sob a agua.\p",
+            r"Leve esta tecnica de MERGULHO.\n",
+            r"Voce vai precisar dela.$",
+        ),
+    ),
+    (
+        "data/maps/MossdeepCity_StevensHouse/scripts.inc",
+        "MossdeepCity_StevensHouse_Text_CollectionOfRareRocks",
+        (
+            r"Pedras, etiquetas e cadernos.\p",
+            r"Cada peca tem data, lugar e\n",
+            r"um nome escrito por SEU BENTO.$",
+        ),
+    ),
+    (
+        "data/maps/SootopolisCity/scripts.inc",
+        "SootopolisCity_Text_InvolvedWithCrisisComeWithMe",
+        (
+            r"SEU BENTO: Olhe para a agua.\p",
+            r"Isso nao e so uma tempestade.\p",
+            r"As duas correntes antigas foram\n",
+            r"forcadas a despertar juntas.\p",
+            r"Venha comigo. Ha algo no centro\n",
+            r"que voce precisa ver.$",
+        ),
+    ),
 )
 
 LEGACY_TOKENS = (
@@ -123,6 +182,9 @@ LEGACY_TOKENS = (
     "Registered BRENDAN",
     "HORIZONTEORATION",
     "DEVON",
+    "STEVEN:",
+    "Registered STEVEN",
+    "assembled by STEVEN",
 )
 
 
