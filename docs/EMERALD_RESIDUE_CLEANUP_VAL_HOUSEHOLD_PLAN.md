@@ -20,3 +20,7 @@ Only `.string` bodies change. The house map, local object IDs, Wally-named inter
 ## Integration sequencing
 
 This activation branch starts from the latest green `main`, wires the tool into the shared deterministic runner, generates/checks the eight blocks and requires full-ROM CI before merge.
+
+## Final validation
+
+The generated source is now committed on the branch; this user-authored documentation update exists solely to force the final deterministic cleanup and full-ROM CI gates on the generated head.
