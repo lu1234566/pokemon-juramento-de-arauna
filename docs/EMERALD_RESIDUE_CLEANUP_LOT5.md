@@ -17,7 +17,7 @@ Internal Birch symbols, Match Call indexes, flags, Pokédex rating logic and eve
 
 ## Verification scope
 
-The deterministic shared-text cleanup now verifies the seven Seu Bento Match Call blocks plus three Anahi text blocks and six exact visible constants across `data/text` and `src/strings.c`.
+The deterministic shared-text cleanup now verifies the seven Seu Bento Match Call blocks plus three Anahi text blocks and six exact visible constants. The generated source patch for this lot is limited to `data/text/match_call.inc`, `data/text/pokedex_rating.inc` and `src/strings.c`.
 
 ## Deferred residue
 
