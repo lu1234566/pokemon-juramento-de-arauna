@@ -40,6 +40,8 @@ jobs:
           python3 tools/cleanup_system_ui_identity.py --check
           python3 tools/cleanup_route119_surface_residue.py
           python3 tools/cleanup_route119_surface_residue.py --check
+          python3 tools/cleanup_val_household_residue.py
+          python3 tools/cleanup_val_household_residue.py --check
 
       - name: Commit generated source changes
         run: |
