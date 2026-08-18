@@ -362,3 +362,5 @@ const u32 gObjectEventPic_Lugia[] = INCGFX_U32("graphics/object_events/pics/poke
 const u16 gObjectEventPal_Lugia[] = INCGFX_U16("graphics/object_events/palettes/lugia.pal", ".gbapal");
 const u32 gObjectEventPic_HoOh[] = INCGFX_U32("graphics/object_events/pics/pokemon/ho_oh.png", ".4bpp", "-mwidth 4 -mheight 4");
 const u16 gObjectEventPal_HoOh[] = INCGFX_U16("graphics/object_events/palettes/ho_oh.pal", ".gbapal");
+
+const u32 gObjectEventPic_MaeCiro[] = INCGFX_U32("graphics/object_events/pics/people/arauna/mae_ciro.png", ".4bpp", "-mwidth 2 -mheight 4");
