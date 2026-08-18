@@ -2825,15 +2825,11 @@ MatchCall_Text_Steven7::
 	.string "na boca das pessoas.$"
 
 MatchCall_Text_BirchRegisterCall:
-	.string "PROF. BIRCH: Oh, {PLAYER}{KUN}!\n"
-	.string "I've already heard about you!\p"
-	.string "It seems your POKéNAV's been\n"
-	.string "upgraded with MATCH CALL.\p"
-	.string "Well, I should register, too!\p"
-	.string "That way, I'd be able to examine\n"
-	.string "your POKéDEX even while you're\l"
-	.string "out in the field.\p"
-	.string "… … … … … …$"
+	.string "ANAHI: {PLAYER}, seu POKéNAV\n"
+	.string "ja esta recebendo chamadas.\p"
+	.string "Registre meu contato tambem.\p"
+	.string "Se eu encontrar algo estranho,\n"
+	.string "aviso voce primeiro.$"
 
 MatchCall_Text_RegisteredBirch:
 	.string "Registered PROF. BIRCH\n"
