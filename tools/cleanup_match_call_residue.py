@@ -9,12 +9,110 @@ ROOT = Path(__file__).resolve().parents[1]
 
 # Populated by focused narrative cleanup lots. Each block target is:
 # (relative path, string label, expected .string lines, forbidden visible tokens)
-STRING_BLOCK_TARGETS: tuple[tuple[str, str, tuple[str, ...], tuple[str, ...]], ...] = ()
+STRING_BLOCK_TARGETS: tuple[tuple[str, str, tuple[str, ...], tuple[str, ...]], ...] = (
+    (
+        "data/text/match_call.inc",
+        "MatchCall_Text_Steven1",
+        (
+            r"SEU BENTO: {PLAYER}, achei uma\n",
+            r"anotacao antiga hoje.\p",
+            r"Um nome aparece tres vezes e\n",
+            r"some na pagina seguinte.\p",
+            r"Continue ouvindo as pessoas.\n",
+            r"Papel sozinho nao basta.$",
+        ),
+        ("STEVEN", "MAUVILLE", "BIKE SHOP"),
+    ),
+    (
+        "data/text/match_call.inc",
+        "MatchCall_Text_Steven2",
+        (
+            r"SEU BENTO: O caminho da serra\n",
+            r"voltou a respirar.\p",
+            r"Marcas antigas apareceram\n",
+            r"onde a pedra foi aberta.\p",
+            r"Anote o que vir. Eu comparo\n",
+            r"com meus cadernos.$",
+        ),
+        ("STEVEN",),
+    ),
+    (
+        "data/text/match_call.inc",
+        "MatchCall_Text_Steven3",
+        (
+            r"SEU BENTO: Certos objetos\n",
+            r"guardam mais que historia.\p",
+            r"Nao confunda memoria com\n",
+            r"resposta.\p",
+            r"Uma pista tambem pode mentir.$",
+        ),
+        ("STEVEN",),
+    ),
+    (
+        "data/text/match_call.inc",
+        "MatchCall_Text_Steven4",
+        (
+            r"SEU BENTO: O movimento no\n",
+            r"litoral mudou de repente.\p",
+            r"Tem equipamento sumindo dos\n",
+            r"registros oficiais.\p",
+            r"No porto, confira cada lista\n",
+            r"duas vezes.$",
+        ),
+        ("STEVEN",),
+    ),
+    (
+        "data/text/match_call.inc",
+        "MatchCall_Text_Steven5",
+        (
+            r"SEU BENTO: Missoes do Ceu\n",
+            r"esta ouvindo sinais demais.\p",
+            r"Quando toda rede fala junto,\n",
+            r"o silencio importa mais.\p",
+            r"Confie no que voce viu.$",
+        ),
+        ("STEVEN", "MOSSDEEP"),
+    ),
+    (
+        "data/text/match_call.inc",
+        "MatchCall_Text_Steven6",
+        (
+            r"O sinal de SEU BENTO nao\n",
+            r"responde.\p",
+            r"So ha estatica e o ruido\n",
+            r"distante da agua.$",
+        ),
+        ("STEVEN",),
+    ),
+    (
+        "data/text/match_call.inc",
+        "MatchCall_Text_Steven7",
+        (
+            r"SEU BENTO: {PLAYER}, meus\n",
+            r"cadernos nao registram tudo.\p",
+            r"Talvez seja melhor assim.\p",
+            r"Algumas coisas precisam viver\n",
+            r"na boca das pessoas.$",
+        ),
+        ("STEVEN",),
+    ),
+)
 
 # Populated by focused cleanup lots for visible constants that are not
 # assembler-style .string blocks. Each replacement is:
 # (relative path, exact old text, exact new text)
-EXACT_REPLACEMENTS: tuple[tuple[str, str, str], ...] = ()
+EXACT_REPLACEMENTS: tuple[tuple[str, str, str], ...] = (
+    (
+        "src/strings.c",
+        'const u8 gText_StevenMatchCallDesc[] = _("HARD AS ROCK");',
+        'const u8 gText_StevenMatchCallDesc[] = _("GUARDA NOMES");',
+    ),
+    (
+        "src/strings.c",
+        'const u8 gText_StevenMatchCallName[] = _("STEVEN");',
+        'const u8 gText_StevenMatchCallName[] = _("SEU BENTO");',
+    ),
+)
 
 
 def block_pattern(label: str) -> re.Pattern[str]:
