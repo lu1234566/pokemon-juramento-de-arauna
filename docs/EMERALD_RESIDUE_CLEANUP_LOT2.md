@@ -13,4 +13,4 @@ This lot removes high-visibility vanilla identity leaks from the Serra do Uivo /
 
 Only existing `.string` blocks are replaced. Labels, flags, variables, object events, movement, coordinates, warps, item IDs, trainer data and progression remain unchanged.
 
-The cleanup tool verifies the exact expected lines and rejects legacy identity tokens inside every targeted block.
+The cleanup tool verifies the exact expected lines and rejects legacy identity tokens inside every targeted block. The post-generation branch head must also pass the full ROM build gate before merge.
