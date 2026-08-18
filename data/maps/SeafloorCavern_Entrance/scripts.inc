@@ -57,11 +57,14 @@ SeafloorCavern_Entrance_EventScript_GruntFacePlayerNorth::
 	return
 
 SeafloorCavern_Entrance_Text_HearMagmaNearMossdeep:
-	.string "OTACILIO e LUZIA chegaram ao\nmesmo lugar por razoes opostas:\p"
-	.string "um quer encerrar a dor; a outra\nquer devolver tudo. Nenhum\p"
-	.string "perguntou a quem tera de viver\ncom a escolha.$"
+	.string "AGENTE: Recebemos noticia dos\n"
+	.string "LEMBRANTES perto de MISSOES DO\n"
+	.string "CEU.\p"
+	.string "LUZIA esta mobilizando gente\n"
+	.string "fora daqui. OTACILIO mandou\n"
+	.string "manter o foco em M'BOI.$"
 
 SeafloorCavern_Entrance_Text_HearMagmaNearMossdeepShort:
-	.string "Os sensores enlouquecem. As\ncavernas de M'BOI ainda\p"
-	.string "carregam VINCULOS que o ARQUIVO\nnunca conseguiu classificar.$"
+	.string "LEMBRANTES perto de MISSOES DO\n"
+	.string "CEU... e nos presos aqui.$"
 
