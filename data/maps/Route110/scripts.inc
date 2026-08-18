@@ -767,13 +767,11 @@ Route110_Text_MayTakeThis:
 	.string "fosse uma resposta. Eu quero\nsaber o que existe depois dela.$"
 
 Route110_Text_MayExplainItemfinder:
-	.string "MAY: That's an ITEMFINDER.\p"
-	.string "Try it out. If there is an item that's\n"
-	.string "not visible, it emits a sound.\p"
-	.string "Okay, {PLAYER}{KUN}, let's meet again!\p"
-	.string "I know it's a little silly coming from\n"
-	.string "me, but I think you should train a lot\l"
-	.string "harder for the next time.$"
+	.string "CIRO: Isso e um ITEMFINDER.\p"
+	.string "Ele reage quando ha algo\n"
+	.string "escondido por perto.\p"
+	.string "Use direito. Nao vou ficar\n"
+	.string "marcando tudo para voce.$"
 
 Route110_Text_BrendanLetsBattle:
 	.string "CIRO: Voce continua olhando\npara cada cicatriz como se ela\p"
@@ -789,13 +787,11 @@ Route110_Text_BrendanTakeThis:
 	.string "pelo passado.$"
 
 Route110_Text_BrendanExplainItemfinder:
-	.string "BRENDAN: That's an ITEMFINDER.\p"
-	.string "Use it to root around for items that\n"
-	.string "aren't visible.\p"
-	.string "If it senses something, it emits\n"
-	.string "a sound.\p"
-	.string "Anyway, I'm off to look for new\n"
-	.string "POKéMON.$"
+	.string "CIRO: Isso e um ITEMFINDER.\p"
+	.string "Ele reage quando ha algo\n"
+	.string "escondido por perto.\p"
+	.string "Use direito. Nao vou ficar\n"
+	.string "marcando tudo para voce.$"
 
 Route110_Text_RideBikeAtFullSpeed:
 	.string "Wouldn't it be great to ride a BIKE\n"
