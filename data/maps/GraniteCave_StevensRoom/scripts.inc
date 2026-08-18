@@ -90,24 +90,21 @@ GraniteCave_StevensRoom_Text_ThankYouTakeThis:
 	.string "pista.$"
 
 GraniteCave_StevensRoom_Text_CouldBecomeChampionLetsRegister:
-	.string "STEVEN: Your POKéMON appear quite\n"
-	.string "capable.\p"
-	.string "If you keep training, you could even\n"
-	.string "become the CHAMPION of the POKéMON\l"
-	.string "LEAGUE one day. That's what I think.\p"
-	.string "I know, since we've gotten to know each\n"
-	.string "other, let's register one another in\l"
-	.string "our POKéNAVS.\p"
-	.string "… … … … … …$"
+	.string "SEU BENTO: Voce presta atencao.\p"
+	.string "Isso vale mais que pressa.\p"
+	.string "Registre meu contato no POKéNAV.\p"
+	.string "Se eu achar outro nome perdido,\n"
+	.string "aviso voce.$"
 
 GraniteCave_StevensRoom_Text_RegisteredSteven:
-	.string "Registered STEVEN\n"
-	.string "in the POKéNAV.$"
+	.string "SEU BENTO foi registrado\n"
+	.string "no POKéNAV.$"
 
 GraniteCave_StevensRoom_Text_IveGotToHurryAlong:
-	.string "Now, I've got to hurry along.$"
+	.string "SEU BENTO: Ainda tenho cadernos\n"
+	.string "para conferir. A gente se ve.$"
 
 GraniteCave_StevensRoom_Text_OhBagIsFull:
-	.string "Oh, your BAG is full…\n"
-	.string "That's too bad, then.$"
+	.string "SEU BENTO: Sua mochila esta cheia.\n"
+	.string "Guarde espaco e volte aqui.$"
 

@@ -1581,19 +1581,12 @@ SootopolisCity_Text_TryingMeaninglessToPokemon:
 	.string "correntes a se manifestar ao\nmesmo tempo.$"
 
 SootopolisCity_Text_InvolvedWithCrisisComeWithMe:
-	.string "STEVEN: Those POKéMON fighting…\n"
-	.string "GROUDON… And KYOGRE…\p"
-	.string "The two super-ancient POKéMON\n"
-	.string "were awakened from a long sleep…\p"
-	.string "And now they are smashing each other\n"
-	.string "with their uncontrollable energy…\p"
-	.string "…{PLAYER}{KUN}.\p"
-	.string "You being here now I'll take to mean\n"
-	.string "that you're prepared to become\l"
-	.string "involved in this crisis.\p"
-	.string "Well, then, there's someone that\n"
-	.string "I'd like you to meet.\p"
-	.string "Come with me, please.$"
+	.string "SEU BENTO: Olhe para a agua.\p"
+	.string "Isso nao e so uma tempestade.\p"
+	.string "As duas correntes antigas foram\n"
+	.string "forcadas a despertar juntas.\p"
+	.string "Venha comigo. Ha algo no centro\n"
+	.string "que voce precisa ver.$"
 
 SootopolisCity_Text_DoesThisMakeYourFearPokemon:
 	.string "As aguas carregam lembrancas\nque nao pertencem a quem as\p"
