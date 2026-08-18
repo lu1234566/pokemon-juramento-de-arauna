@@ -13,3 +13,7 @@ The reusable residue-cleanup runner now stages `src/battle_message.c` in additio
 ## Safety boundary
 
 No battle mechanics, move strings, trainer data, encounter logic, map events, flags, variables, saves or progression are modified. This lot changes exactly one player-facing static battle string and requires a full ROM build before merge.
+
+## Post-generation validation
+
+The cleanup runner successfully generated and verified the source replacement. This documentation commit intentionally triggers a fresh full ROM CI run from a user-authored head commit so the generated battle-message source is build-validated before merge.
