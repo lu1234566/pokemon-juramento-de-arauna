@@ -137,22 +137,26 @@ SkyPillar_Outside_EventScript_ClosedDoor::
 	end
 
 SkyPillar_Outside_Text_DoorIsClosed:
-	.string "The door is closed.$"
+	.string "A porta esta fechada.$"
 
 SkyPillar_Outside_Text_OpenedDoorToSkyPillar:
-	.string "AMALIA: Arauna sobreviveu a\nverdade pela metade por tempo\p"
-	.string "demais. A Liga tambem tem\ndividas com quem foi apagado.$"
+	.string "AMALIA: Abri a entrada.\p"
+	.string "A TORRE JURAMENTO reage ao\n"
+	.string "clima que cobre ARAUNA.\p"
+	.string "Vamos subir antes que piore.$"
 
 SkyPillar_Outside_Text_EarthquakeNotMomentToWaste:
-	.string "WALLACE: It's an earthquake!\p"
-	.string "There's not a moment to waste!\n"
-	.string "We've got to hurry!$"
+	.string "AMALIA: Um tremor!\p"
+	.string "A situacao esta piorando.\n"
+	.string "Precisamos subir.$"
 
 SkyPillar_Outside_Text_SituationGettingWorse:
-	.string "AMALIA: Arauna sobreviveu a\nverdade pela metade por tempo\p"
-	.string "demais. A Liga tambem tem\ndividas com quem foi apagado.$"
+	.string "AMALIA: Espere...\p"
+	.string "O clima mudou de novo.\n"
+	.string "Algo mudou em AGUAS DE M'BOI.$"
 
 SkyPillar_Outside_Text_GotToGoBackForSootopolis:
-	.string "Entre rasuras e paginas\nremendadas, o caderno prova que\p"
-	.string "uma memoria pode mudar sem\ndeixar de pertencer a quem a\p"
-	.string "viveu.$"
+	.string "AMALIA: Eu preciso voltar\n"
+	.string "para AGUAS DE M'BOI.\p"
+	.string "Voce continua subindo.\n"
+	.string "Encontre RAYQUAZA.$"
