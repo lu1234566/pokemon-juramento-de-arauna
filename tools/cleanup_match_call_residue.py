@@ -96,6 +96,36 @@ STRING_BLOCK_TARGETS: tuple[tuple[str, str, tuple[str, ...], tuple[str, ...]], .
         ),
         ("STEVEN",),
     ),
+    (
+        "data/text/match_call.inc",
+        "MatchCall_Text_BirchRegisterCall",
+        (
+            r"ANAHI: {PLAYER}, seu POKéNAV\n",
+            r"ja esta recebendo chamadas.\p",
+            r"Registre meu contato tambem.\p",
+            r"Se eu encontrar algo estranho,\n",
+            r"aviso voce primeiro.$",
+        ),
+        ("PROF. BIRCH", "BIRCH:"),
+    ),
+    (
+        "data/text/match_call.inc",
+        "MatchCall_Text_RegisteredBirch",
+        (
+            r"PROF. ANAHI foi registrada\n",
+            r"no POKéNAV.$",
+        ),
+        ("PROF. BIRCH", "Registered PROF. BIRCH"),
+    ),
+    (
+        "data/text/pokedex_rating.inc",
+        "gBirchDexRatingText_AreYouCurious",
+        (
+            r"ANAHI: {PLAYER}, quer conferir\n",
+            r"como seus registros estao?$",
+        ),
+        ("PROF. BIRCH", "BIRCH:"),
+    ),
 )
 
 # Populated by focused cleanup lots for visible constants that are not
@@ -111,6 +141,26 @@ EXACT_REPLACEMENTS: tuple[tuple[str, str, str], ...] = (
         "src/strings.c",
         'const u8 gText_StevenMatchCallName[] = _("STEVEN");',
         'const u8 gText_StevenMatchCallName[] = _("SEU BENTO");',
+    ),
+    (
+        "src/strings.c",
+        'const u8 gText_ProfBirchMatchCallName[] = _("PROF. BIRCH");',
+        'const u8 gText_ProfBirchMatchCallName[] = _("PROF. ANAHI");',
+    ),
+    (
+        "src/strings.c",
+        'const u8 gText_ProfBirchMatchCallDesc[] = _("{PKMN} PROF.");',
+        'const u8 gText_ProfBirchMatchCallDesc[] = _("PESQUISADORA");',
+    ),
+    (
+        "src/strings.c",
+        'const u8 gText_HOFDexRating[] = _("Spotted POKéMON: {STR_VAR_1}!\\nOwned POKéMON: {STR_VAR_2}!\\pPROF. BIRCH\'s POKéDEX rating!\\pPROF. BIRCH: Let\'s see…\\p");',
+        'const u8 gText_HOFDexRating[] = _("POKéMON vistos: {STR_VAR_1}!\\nRegistrados: {STR_VAR_2}!\\pAvaliacao da PROF. ANAHI!\\pANAHI: Vamos ver…\\p");',
+    ),
+    (
+        "src/strings.c",
+        'const u8 gText_BirchInTrouble[] = _("PROF. BIRCH is in trouble!\\nRelease a POKéMON and rescue him!");',
+        'const u8 gText_BirchInTrouble[] = _("ANAHI esta em perigo!\\nSolte um POKéMON e ajude-a!");',
     ),
 )
 
