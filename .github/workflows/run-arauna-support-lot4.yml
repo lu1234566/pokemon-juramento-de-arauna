@@ -1,0 +1,60 @@
+name: Run Arauna support lot 4 worker
+
+on:
+  push:
+    branches: [ main ]
+
+permissions:
+  contents: write
+
+jobs:
+  build-lot4:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout lot 4 branch
+        uses: actions/checkout@v4
+        with:
+          ref: visual/arauna-support-lot4-mae-ciro-2026-08-17
+          fetch-depth: 0
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gcc-arm-none-eabi binutils-arm-none-eabi libpng-dev
+
+      - name: Apply lot 4
+        run: python3 tools/apply_arauna_support_lot4.py
+
+      - name: Validate numeric invariants
+        run: |
+          grep -q '^#define OBJ_EVENT_GFX_MAE_CIRO *239$' include/constants/event_objects.h
+          grep -q '^#define NUM_OBJ_EVENT_GFX *240$' include/constants/event_objects.h
+          grep -q '^#define OBJ_EVENT_GFX_VARS *(NUM_OBJ_EVENT_GFX)$' include/constants/event_objects.h
+          grep -q 'OBJ_EVENT_GFX_MAE_CIRO' data/maps/LittlerootTown_BrendansHouse_1F/map.json
+          grep -q 'OBJ_EVENT_GFX_MAE_CIRO' data/maps/LittlerootTown_MaysHouse_1F/map.json
+          file graphics/object_events/pics/people/arauna/mae_ciro.png | grep -q 'PNG image data, 144 x 32'
+          git diff --check
+
+      - name: Build custom Emerald ROM
+        env:
+          MODERN: 1
+          COMPARE: 0
+        run: make -j2 all
+
+      - name: Publish validated lot 4 to branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm -f .github/workflows/validate-arauna-support-lot4.yml || true
+          git add include/constants/event_objects.h \
+                  src/data/object_events/object_event_graphics.h \
+                  src/data/object_events/object_event_pic_tables.h \
+                  src/data/object_events/object_event_graphics_info.h \
+                  src/data/object_events/object_event_graphics_info_pointers.h \
+                  data/maps/LittlerootTown_BrendansHouse_1F/map.json \
+                  data/maps/LittlerootTown_MaysHouse_1F/map.json \
+                  graphics/object_events/pics/people/arauna/mae_ciro.png \
+                  docs/ARAUNA_SUPPORT_LOT4_PLAN.md \
+                  tools/apply_arauna_support_lot4.py
+          git commit -m "Add dedicated overworld identity for Ciro mother"
+          git push origin HEAD:visual/arauna-support-lot4-mae-ciro-2026-08-17
