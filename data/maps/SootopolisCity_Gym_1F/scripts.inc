@@ -207,18 +207,17 @@ SootopolisCity_Gym_1F_Text_JuanDefeat:
 	.string "seguir. Escolher isso pelo\noutro e que nao cabe a nos.$"
 
 SootopolisCity_Gym_1F_Text_ReceivedRainBadge:
-	.string "{PLAYER} received the RAIN BADGE\n"
-	.string "from JUAN.$"
+	.string "{PLAYER} recebeu a\n"
+	.string "INSÍGNIA NASCENTE de\n"
+	.string "DONA CELINA.$"
 
 SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis:
-	.string "Having the RAIN BADGE shall assure you\n"
-	.string "the full obedience of all your POKéMON\l"
-	.string "to your every command.\p"
-	.string "The RAIN BADGE also allows the use\n"
-	.string "of the HM move WATERFALL to scale\l"
-	.string "walls of cascading water.\p"
-	.string "And, so that you never forget the\n"
-	.string "battle we shared, take this…$"
+	.string "A INSÍGNIA NASCENTE garante\n"
+	.string "total obediência dos POKéMON.\p"
+	.string "Também permite usar WATERFALL\n"
+	.string "para subir por cachoeiras.\p"
+	.string "Para lembrar nossa batalha,\n"
+	.string "leve isto…$"
 
 SootopolisCity_Gym_1F_Text_ExplainWaterPulse:
 	.string "The TECHNICAL MACHINE I handed you\n"

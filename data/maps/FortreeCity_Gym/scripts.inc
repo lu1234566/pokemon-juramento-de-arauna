@@ -240,17 +240,16 @@ FortreeCity_Gym_Text_WinonaDefeat:
 	.string "entre geracoes, alguma coisa\nantiga foi ferida.$"
 
 FortreeCity_Gym_Text_ReceivedFeatherBadge:
-	.string "{PLAYER} received the FEATHER BADGE\n"
-	.string "from WINONA.$"
+	.string "{PLAYER} recebeu a\n"
+	.string "INSÍGNIA PLUMA de LIDIA.$"
 
 FortreeCity_Gym_Text_ExplainFeatherBadgeTakeThis:
-	.string "With the FEATHER BADGE, all POKéMON up\n"
-	.string "to LV 70, even those received through\l"
-	.string "trades, will obey your every command.\p"
-	.string "You will also be able to use\n"
-	.string "the HM move FLY outside of battle.\p"
-	.string "And this…\n"
-	.string "This is a gift from me.$"
+	.string "Com a INSÍGNIA PLUMA, POKéMON\n"
+	.string "até o nível 70 obedecem,\l"
+	.string "mesmo os recebidos em troca.\p"
+	.string "Ela também permite usar FLY\n"
+	.string "fora de batalha.\p"
+	.string "Aceite este presente.$"
 
 FortreeCity_Gym_Text_ExplainAerialAce:
 	.string "TM40 contains AERIAL ACE.\p"

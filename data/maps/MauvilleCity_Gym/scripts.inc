@@ -341,16 +341,15 @@ MauvilleCity_Gym_Text_WattsonDefeat:
 	.string "toda fonte de energia deva ser\naceita.$"
 
 MauvilleCity_Gym_Text_ReceivedDynamoBadge:
-	.string "{PLAYER} received the DYNAMO BADGE\n"
-	.string "from WATTSON.$"
+	.string "{PLAYER} recebeu a\n"
+	.string "INSÍGNIA FAROL de OLIVIA.$"
 
 MauvilleCity_Gym_Text_ExplainDynamoBadgeTakeThis:
-	.string "With the DYNAMO BADGE, POKéMON can\n"
-	.string "use ROCK SMASH out of battle.\p"
-	.string "And, it will make your POKéMON a little\n"
-	.string "bit faster, too.\p"
-	.string "Hmm…\n"
-	.string "You should take this, too!$"
+	.string "A INSÍGNIA FAROL permite usar\n"
+	.string "ROCK SMASH fora de batalha.\p"
+	.string "Ela também aumenta um pouco a\n"
+	.string "VELOCIDADE dos seus POKéMON.\p"
+	.string "Leve isto também!$"
 
 MauvilleCity_Gym_Text_ExplainShockWave:
 	.string "That TM34 there contains SHOCK WAVE.\p"
