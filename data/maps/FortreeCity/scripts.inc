@@ -146,8 +146,7 @@ FortreeCity_Text_CitySign:
 	.string "habitos passados entre\ngeracoes.$"
 
 FortreeCity_Text_GymSign:
-	.string "FORTREE CITY POKéMON GYM\n"
-	.string "LEADER: WINONA\p"
-	.string "“The bird user taking flight into\n"
-	.string "the world.”$"
+	.string "MATA DO MEIO\n"
+	.string "RESPONSAVEL: LIDIA\p"
+	.string "Escute antes de subir.$"
 

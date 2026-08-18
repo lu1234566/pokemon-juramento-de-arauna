@@ -378,9 +378,9 @@ LavaridgeTown_Text_TownSign:
 	.string "regiao. Aqui o luto nao e\ntratado como fraqueza.$"
 
 LavaridgeTown_Text_GymSign:
-	.string "LAVARIDGE TOWN POKéMON GYM\n"
-	.string "LEADER: FLANNERY\l"
-	.string "“One with a fiery passion that burns!”$"
+	.string "CASA DA CINZA\n"
+	.string "RESPONSAVEL: NARA\p"
+	.string "Cinza tambem guarda memoria.$"
 
 LavaridgeTown_Text_HerbShopSign:
 	.string "POKéMON HERB SHOP\n"
