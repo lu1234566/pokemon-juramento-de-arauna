@@ -18,19 +18,21 @@ jobs:
           ref: ${{ github.head_ref }}
           fetch-depth: 0
 
-      - name: Apply and verify Arauna sign cleanup
+      - name: Apply and verify Arauna residue cleanup
         run: |
           python3 tools/cleanup_emerald_residue_signs.py
           python3 tools/cleanup_emerald_residue_signs.py --check
+          python3 tools/cleanup_match_call_residue.py
+          python3 tools/cleanup_match_call_residue.py --check
 
       - name: Commit generated source changes
         run: |
-          git add data/maps
+          git add data/maps data/text src/strings.c
           if git diff --cached --quiet; then
-            echo "No generated map changes to commit."
+            echo "No generated residue-cleanup changes to commit."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "Replace Emerald gym signs with Arauna identities"
+          git commit -m "Apply Arauna visible-residue cleanup"
           git push origin HEAD:${{ github.head_ref }}
