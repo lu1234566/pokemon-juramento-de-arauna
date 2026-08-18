@@ -34,10 +34,12 @@ jobs:
           python3 tools/cleanup_vila_amanhecer_residue.py --check
           python3 tools/cleanup_intro_speech_residue.py
           python3 tools/cleanup_intro_speech_residue.py --check
+          python3 tools/cleanup_region_map_names.py
+          python3 tools/cleanup_region_map_names.py --check
 
       - name: Commit generated source changes
         run: |
-          git add data/maps data/text src/strings.c src/battle_message.c
+          git add data/maps data/text src/strings.c src/battle_message.c src/data/region_map/region_map_sections.json
           if git diff --cached --quiet; then
             echo "No generated residue-cleanup changes to commit."
             exit 0
