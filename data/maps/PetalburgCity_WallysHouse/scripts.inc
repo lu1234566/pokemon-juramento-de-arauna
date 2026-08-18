@@ -66,52 +66,49 @@ PetalburgCity_WallysHouse_EventScript_ReceivedHMSurf::
 	end
 
 PetalburgCity_WallysHouse_Text_ThanksForPlayingWithWally:
-	.string "Obrigado por ter ajudado VAL.\p"
-	.string "Ele fala de voce como alguem\n"
-	.string "que o tratou com paciencia.\p"
-	.string "Isso fez bem a ele.$"
+	.string "VAL: Eu ainda tenho medo. Mas\nagora sei que coragem nao e\p"
+	.string "esquecer o medo; e caminhar\nmesmo lembrando dele.$"
 
 PetalburgCity_WallysHouse_Text_WonderHowWallyIsDoing:
-	.string "VAL nao manda noticias ha alguns dias.\p"
-	.string "Quando ele coloca uma viagem na\n"
-	.string "cabeca, esquece do resto.\p"
-	.string "Espero que esteja bem.$"
+	.string "VAL: Eu ainda tenho medo. Mas\nagora sei que coragem nao e\p"
+	.string "esquecer o medo; e caminhar\nmesmo lembrando dele.$"
 
 PetalburgCity_WallysHouse_Text_PleaseExcuseUs:
-	.string "{PLAYER}! Desculpe trazer voce\n"
-	.string "ate aqui desse jeito.\p"
-	.string "VAL melhorou muito desde que foi\n"
-	.string "para o VALE DO SILENCIO.\p"
-	.string "Voce o ajudou quando ele ainda\n"
-	.string "tinha medo de viajar sozinho.\p"
-	.string "Como pai, eu nao esqueco disso.\p"
-	.string "Quero que leve isto.$"
+	.string "{PLAYER}{KUN}! Please excuse us for\n"
+	.string "dragging you here this way.\p"
+	.string "But our WALLY's become very healthy\n"
+	.string "since he went to VERDANTURF TOWN.\p"
+	.string "We owe it all to you!\p"
+	.string "When WALLY left town, you helped\n"
+	.string "him catch a POKéMON, right?\p"
+	.string "I think that made WALLY really\n"
+	.string "happy.\p"
+	.string "Actually, not just WALLY.\n"
+	.string "It made me, his father, happy too.\p"
+	.string "Happy that he's gained such a great\n"
+	.string "friend as you.\p"
+	.string "This isn't a bribe or anything, but\n"
+	.string "I'd really like you to have this.$"
 
 PetalburgCity_WallysHouse_Text_SurfGoAllSortsOfPlaces:
-	.string "Com SURF, seu POKéMON pode cruzar\n"
-	.string "trechos de agua e abrir novos caminhos.$"
+	.string "If your POKéMON can SURF, you'll be\n"
+	.string "able to go to all sorts of places.$"
 
 PetalburgCity_WallysHouse_Text_WallyIsComingHomeSoon:
-	.string "VAL disse que pretende voltar em breve.\p"
-	.string "Acho que agora ele viaja porque quer,\n"
-	.string "nao porque precisa provar alguma coisa.$"
+	.string "VAL: Eu ainda tenho medo. Mas\nagora sei que coragem nao e\p"
+	.string "esquecer o medo; e caminhar\nmesmo lembrando dele.$"
 
 PetalburgCity_WallysHouse_Text_YouMetWallyInEverGrandeCity:
-	.string "Voce encontrou VAL na\n"
-	.string "ESTRADA DO JURAMENTO?\p"
-	.string "Ele voltou diferente: mais seguro,\n"
-	.string "mas ainda sendo ele mesmo.\p"
-	.string "Obrigado por caminhar ao lado dele.$"
+	.string "VAL: Passei muito tempo achando\nque precisava virar outra\p"
+	.string "pessoa para seguir viagem. Eu\nso precisava descobrir meu\p"
+	.string "proprio ritmo.$"
 
 PetalburgCity_WallysHouse_Text_WallyWasReallyHappy:
-	.string "VAL ficou muito feliz depois\n"
-	.string "de conhecer voce.\p"
-	.string "Fazia tempo que eu nao via meu filho\n"
-	.string "falar de uma viagem com entusiasmo.$"
+	.string "VAL: Passei muito tempo achando\nque precisava virar outra\p"
+	.string "pessoa para seguir viagem. Eu\nso precisava descobrir meu\p"
+	.string "proprio ritmo.$"
 
 PetalburgCity_WallysHouse_Text_WallyLeftWithoutTelling:
-	.string "VAL saiu sem avisar direito.\p"
-	.string "Eu me preocupo, claro. Mas tambem\n"
-	.string "sei que ele precisava escolher\l"
-	.string "o proprio caminho.$"
+	.string "VAL: Eu ainda tenho medo. Mas\nagora sei que coragem nao e\p"
+	.string "esquecer o medo; e caminhar\nmesmo lembrando dele.$"
 
