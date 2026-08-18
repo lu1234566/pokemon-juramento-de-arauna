@@ -7,6 +7,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 TARGET = ROOT / "src" / "data" / "region_map" / "region_map_sections.json"
+MAP_NAME_LENGTH = 16
 
 NAMES = {
     "MAPSEC_LITTLEROOT_TOWN": "VILA AMANHECER",
@@ -18,23 +19,23 @@ NAMES = {
     "MAPSEC_PACIFIDLOG_TOWN": "CASA DA FOGUEIRA",
     "MAPSEC_PETALBURG_CITY": "PAMPA DA ESPERA",
     "MAPSEC_SLATEPORT_CITY": "PORTO DO SAL",
-    "MAPSEC_MAUVILLE_CITY": "ENCRUZILHADA CENTRAL",
+    "MAPSEC_MAUVILLE_CITY": "ENCRUZILHADA",
     "MAPSEC_RUSTBORO_CITY": "SERRA DO UIVO",
     "MAPSEC_FORTREE_CITY": "MATA DO MEIO",
     "MAPSEC_LILYCOVE_CITY": "BAIA DAS LUZES",
     "MAPSEC_MOSSDEEP_CITY": "MISSOES DO CEU",
     "MAPSEC_SOOTOPOLIS_CITY": "AGUAS DE M'BOI",
-    "MAPSEC_EVER_GRANDE_CITY": "ESTRADA DO JURAMENTO",
+    "MAPSEC_EVER_GRANDE_CITY": "ESTR. JURAMENTO",
     "MAPSEC_GRANITE_CAVE": "GRUTA DAS VOZES",
     "MAPSEC_MT_CHIMNEY": "SERRA DA CINZA",
-    "MAPSEC_RUSTURF_TUNNEL": "GALERIAS DA SERRA",
+    "MAPSEC_RUSTURF_TUNNEL": "GALERIAS SERRA",
     "MAPSEC_METEOR_FALLS": "RUINAS DA QUEDA",
     "MAPSEC_METEOR_FALLS2": "RUINAS DA QUEDA",
-    "MAPSEC_MT_PYRE": "MEMORIAL DOS NOMES",
+    "MAPSEC_MT_PYRE": "MEMORIAL NOMES",
     "MAPSEC_AQUA_HIDEOUT_OLD": "ARQUIVO CENTRAL",
-    "MAPSEC_SEAFLOOR_CAVERN": "CAVERNAS DE M'BOI",
-    "MAPSEC_VICTORY_ROAD": "ESTRADA DO JURAMENTO",
-    "MAPSEC_SKY_PILLAR": "TORRE DO JURAMENTO",
+    "MAPSEC_SEAFLOOR_CAVERN": "CAVERNAS M'BOI",
+    "MAPSEC_VICTORY_ROAD": "ESTR. JURAMENTO",
+    "MAPSEC_SKY_PILLAR": "TORRE JURAMENTO",
 }
 
 
@@ -57,6 +58,10 @@ def find_name(text: str, mapsec: str) -> str | None:
 def validate(text: str) -> list[str]:
     failures: list[str] = []
     for mapsec, expected in NAMES.items():
+        if len(expected) > MAP_NAME_LENGTH:
+            failures.append(
+                f"{mapsec}: {expected!r} exceeds MAP_NAME_LENGTH={MAP_NAME_LENGTH}"
+            )
         current = find_name(text, mapsec)
         if current is None:
             failures.append(f"missing map section {mapsec}")
@@ -69,6 +74,10 @@ def apply() -> int:
     text = TARGET.read_text(encoding="utf-8")
     changed = 0
     for mapsec, expected in NAMES.items():
+        if len(expected) > MAP_NAME_LENGTH:
+            raise RuntimeError(
+                f"{mapsec}: {expected!r} exceeds MAP_NAME_LENGTH={MAP_NAME_LENGTH}"
+            )
         rx = pattern(mapsec)
         if len(rx.findall(text)) != 1:
             raise RuntimeError(f"Expected exactly one {mapsec} entry")
@@ -91,7 +100,7 @@ def check() -> int:
         for failure in failures:
             print(f"- {failure}")
         return 1
-    print(f"Region-map Arauna name check PASS: {len(NAMES)} entries.")
+    print(f"Region-map Arauna name check PASS: {len(NAMES)} entries within {MAP_NAME_LENGTH} chars.")
     return 0
 
 
