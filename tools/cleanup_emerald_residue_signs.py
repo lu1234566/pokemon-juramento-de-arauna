@@ -7,8 +7,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 
-# Keep the Emerald event graph and object scripts intact. Only replace the
-# visible sign text blocks that still expose vanilla Hoenn gym names/leaders.
+# Keep the Emerald event graph and object scripts intact. These replacements
+# touch only visible text blocks whose vanilla identities leak through Arauna.
 TARGETS = (
     (
         "data/maps/RustboroCity/scripts.inc",
@@ -50,9 +50,63 @@ TARGETS = (
         "SootopolisCity_Text_GymSign",
         (r"M'BOI\n", r"RESPONSAVEL: DONA CELINA\p", r"A agua lembra por nos.$"),
     ),
+    (
+        "data/maps/RustboroCity/scripts.inc",
+        "RustboroCity_Text_WeShortenItToDevon",
+        (
+            r"O CONSORCIO HORIZONTE mantem\n",
+            r"um centro tecnico na serra.\p",
+            r"Muita gente daqui depende dele,\n",
+            r"mas nem todos confiam no projeto.$",
+        ),
+    ),
+    (
+        "data/maps/RustboroCity/scripts.inc",
+        "RustboroCity_Text_MayHiLetsRegister",
+        (
+            r"CIRO: Voce ativou o contato\n",
+            r"do seu POKéNAV? Registre o meu.\p",
+            r"Assim ninguem pode dizer que eu\n",
+            r"sumi quando chegar antes de voce.$",
+        ),
+    ),
+    (
+        "data/maps/RustboroCity/scripts.inc",
+        "RustboroCity_Text_RegisteredMay",
+        (r"CIRO foi registrado\n", r"no POKéNAV.$"),
+    ),
+    (
+        "data/maps/RustboroCity/scripts.inc",
+        "RustboroCity_Text_BrendanHiLetsRegister",
+        (
+            r"CIRO: Voce ativou o contato\n",
+            r"do seu POKéNAV? Registre o meu.\p",
+            r"Assim ninguem pode dizer que eu\n",
+            r"sumi quando chegar antes de voce.$",
+        ),
+    ),
+    (
+        "data/maps/RustboroCity/scripts.inc",
+        "RustboroCity_Text_RegisteredBrendan",
+        (r"CIRO foi registrado\n", r"no POKéNAV.$"),
+    ),
+    (
+        "data/maps/RustboroCity/scripts.inc",
+        "RustboroCity_Text_DevonCorpSign",
+        (r"CONSORCIO HORIZONTE\p", r"CENTRO TECNICO\n", r"SERRA DO UIVO.$"),
+    ),
+    (
+        "data/maps/RustboroCity/scripts.inc",
+        "RustboroCity_Text_DevonCorpBranchOfficeSign",
+        (
+            r"CONSORCIO HORIZONTE\p",
+            r"ACESSO RESTRITO A FUNCIONARIOS\n",
+            r"E PESSOAL AUTORIZADO.$",
+        ),
+    ),
 )
 
-LEGACY_LEADERS = (
+LEGACY_TOKENS = (
     "ROXANNE",
     "BRAWLY",
     "WATTSON",
@@ -61,7 +115,14 @@ LEGACY_LEADERS = (
     "WINONA",
     "TATE & LIZA",
     "TATE AND LIZA",
+    "LIZA & TATE",
     "JUAN",
+    "MAY:",
+    "BRENDAN:",
+    "Registered MAY",
+    "Registered BRENDAN",
+    "HORIZONTEORATION",
+    "DEVON",
 )
 
 
@@ -86,20 +147,34 @@ def extract_block(text: str, label: str) -> str:
     return match.group(0)
 
 
+def validate_block(block: str, rel_path: str, label: str, expected_lines: tuple[str, ...]) -> list[str]:
+    failures: list[str] = []
+    for line in expected_lines:
+        if f'\t.string "{line}"' not in block:
+            failures.append(f"{rel_path}: {label} missing expected line: {line}")
+    for token in LEGACY_TOKENS:
+        if token in block:
+            failures.append(f"{rel_path}: {label} still contains legacy token: {token}")
+    return failures
+
+
 def apply() -> int:
-    changed = 0
+    changed_files: set[Path] = set()
     for rel_path, label, lines in TARGETS:
         path = ROOT / rel_path
         original = path.read_text(encoding="utf-8")
         updated, did_change = replace_string_block(original, label, lines)
         if did_change:
             path.write_text(updated, encoding="utf-8")
-            changed += 1
+            changed_files.add(path)
         block = extract_block(updated, label)
-        legacy = [name for name in LEGACY_LEADERS if name in block]
-        if legacy:
-            raise RuntimeError(f"Legacy leader residue remains in {label}: {legacy}")
-    print(f"Arauna sign cleanup: {changed} file(s) changed; {len(TARGETS)} target(s) verified.")
+        failures = validate_block(block, rel_path, label, lines)
+        if failures:
+            raise RuntimeError("; ".join(failures))
+    print(
+        f"Arauna visible-residue cleanup: {len(changed_files)} file(s) changed; "
+        f"{len(TARGETS)} target block(s) verified."
+    )
     return 0
 
 
@@ -108,18 +183,13 @@ def check() -> int:
     for rel_path, label, expected_lines in TARGETS:
         text = (ROOT / rel_path).read_text(encoding="utf-8")
         block = extract_block(text, label)
-        for line in expected_lines:
-            if f'\t.string "{line}"' not in block:
-                failures.append(f"{rel_path}: {label} missing expected line: {line}")
-        for name in LEGACY_LEADERS:
-            if name in block:
-                failures.append(f"{rel_path}: {label} still contains {name}")
+        failures.extend(validate_block(block, rel_path, label, expected_lines))
     if failures:
-        print("Arauna sign cleanup check FAILED:")
+        print("Arauna visible-residue cleanup check FAILED:")
         for failure in failures:
             print(f"- {failure}")
         return 1
-    print(f"Arauna sign cleanup check PASS: {len(TARGETS)} target(s) are Arauna-native.")
+    print(f"Arauna visible-residue cleanup check PASS: {len(TARGETS)} target block(s) are Arauna-native.")
     return 0
 
 

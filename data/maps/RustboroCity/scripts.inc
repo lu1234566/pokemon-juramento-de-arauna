@@ -1013,10 +1013,10 @@ RustboroCity_EventScript_Boy1::
 	end
 
 RustboroCity_Text_WeShortenItToDevon:
-	.string "The CONSORCIO HORIZONTEORATION…\n"
-	.string "We all just shorten it to DEVON.\p"
-	.string "That company makes all sorts of\n"
-	.string "convenient products.$"
+	.string "O CONSORCIO HORIZONTE mantem\n"
+	.string "um centro tecnico na serra.\p"
+	.string "Muita gente daqui depende dele,\n"
+	.string "mas nem todos confiam no projeto.$"
 
 RustboroCity_Text_SneakyLookingManWentAroundCorner:
 	.string "Hm? A sneaky-looking man?\p"
@@ -1126,16 +1126,14 @@ RustboroCity_Text_PleaseComeWithMe:
 	.string "Please come with me!$"
 
 RustboroCity_Text_MayHiLetsRegister:
-	.string "MAY: Oh, hi, {PLAYER}{KUN}!\p"
-	.string "You had a MATCH CALL feature put\n"
-	.string "on your POKéNAV!\p"
-	.string "Let's register each other so we can\n"
-	.string "contact one another anytime!\p"
-	.string "… … … … … …$"
+	.string "CIRO: Voce ativou o contato\n"
+	.string "do seu POKéNAV? Registre o meu.\p"
+	.string "Assim ninguem pode dizer que eu\n"
+	.string "sumi quando chegar antes de voce.$"
 
 RustboroCity_Text_RegisteredMay:
-	.string "Registered MAY\n"
-	.string "in the POKéNAV.$"
+	.string "CIRO foi registrado\n"
+	.string "no POKéNAV.$"
 
 RustboroCity_Text_MayPassedBrineyWantToBattle:
 	.string "CIRO: Se os dados estiverem\ncertos, o DESENCANTO pode ser\p"
@@ -1164,16 +1162,14 @@ RustboroCity_Text_MayMrBrineyHint:
 	.string "fosse uma resposta. Eu quero\nsaber o que existe depois dela.$"
 
 RustboroCity_Text_BrendanHiLetsRegister:
-	.string "BRENDAN: Oh, hey, {PLAYER}!\p"
-	.string "You had a MATCH CALL feature put\n"
-	.string "on your POKéNAV! Cool!\p"
-	.string "Let's register each other so we can\n"
-	.string "get in touch anytime!\p"
-	.string "… … … … … …$"
+	.string "CIRO: Voce ativou o contato\n"
+	.string "do seu POKéNAV? Registre o meu.\p"
+	.string "Assim ninguem pode dizer que eu\n"
+	.string "sumi quando chegar antes de voce.$"
 
 RustboroCity_Text_RegisteredBrendan:
-	.string "Registered BRENDAN\n"
-	.string "in the POKéNAV.$"
+	.string "CIRO foi registrado\n"
+	.string "no POKéNAV.$"
 
 RustboroCity_Text_BrendanPassedBrineyWantToBattle:
 	.string "CIRO: Voce continua olhando\npara cada cicatriz como se ela\p"
@@ -1208,9 +1204,9 @@ RustboroCity_Text_TunnelNearingCompletion:
 	.string "across it in red paint…$"
 
 RustboroCity_Text_DevonCorpSign:
-	.string "CONSORCIO HORIZONTEORATION\p"
-	.string "“For all your living needs, we make\n"
-	.string "it all.”$"
+	.string "CONSORCIO HORIZONTE\p"
+	.string "CENTRO TECNICO\n"
+	.string "SERRA DO UIVO.$"
 
 RustboroCity_Text_GymSign:
 	.string "SERRA DO UIVO\n"
@@ -1218,9 +1214,9 @@ RustboroCity_Text_GymSign:
 	.string "A serra lembra.$"
 
 RustboroCity_Text_DevonCorpBranchOfficeSign:
-	.string "CONSORCIO HORIZONTE BRANCH OFFICE\p"
-	.string "“Access limited to DEVON employees\n"
-	.string "and authorized personnel.”$"
+	.string "CONSORCIO HORIZONTE\p"
+	.string "ACESSO RESTRITO A FUNCIONARIOS\n"
+	.string "E PESSOAL AUTORIZADO.$"
 
 RustboroCity_Text_CitySign:
 	.string "SERRA DO UIVO. O CONSORCIO\nHORIZONTE trouxe emprego e\p"
