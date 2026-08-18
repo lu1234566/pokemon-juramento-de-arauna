@@ -26,6 +26,8 @@ jobs:
           python3 tools/cleanup_match_call_residue.py --check
           python3 tools/cleanup_ciro_route_residue.py
           python3 tools/cleanup_ciro_route_residue.py --check
+          python3 tools/cleanup_littleroot_house_residue.py
+          python3 tools/cleanup_littleroot_house_residue.py --check
 
       - name: Commit generated source changes
         run: |
