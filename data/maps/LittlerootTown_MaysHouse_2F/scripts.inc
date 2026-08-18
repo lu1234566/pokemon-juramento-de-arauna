@@ -308,25 +308,34 @@ LittlerootTown_MaysHouse_2F_EventScript_TurnOffPlayerPC::
 	end
 
 RivalsHouse_2F_Text_MayWhoAreYou:
-	.string "CIRO: Voce continua olhando\npara cada cicatriz como se ela\p"
-	.string "fosse uma resposta. Eu quero\nsaber o que existe depois dela.$"
+	.string "CIRO: Entao voce e {PLAYER}.\p"
+	.string "ANAHI falou que voce chegaria.\n"
+	.string "Eu esperava alguem... diferente.\p"
+	.string "Depois conversamos. Estou\n"
+	.string "atrasado para o campo.$"
 
 RivalsHouse_2F_Text_MayGettingReady:
-	.string "CIRO: Nao confunda minha pressa\ncom falta de memoria. Eu lembro\p"
-	.string "o bastante para saber que nao\nquero viver preso ao que perdi.$"
+	.string "CIRO: Estou terminando minhas\n"
+	.string "anotacoes da ROTA 103.\p"
+	.string "O HORIZONTE quer dados antes\n"
+	.string "do anoitecer.$"
 
 RivalsHouse_2F_Text_BrendanWhoAreYou:
-	.string "CIRO: Nao confunda minha pressa\ncom falta de memoria. Eu lembro\p"
-	.string "o bastante para saber que nao\nquero viver preso ao que perdi.$"
+	.string "CIRO: Entao voce e {PLAYER}.\p"
+	.string "ANAHI falou que voce chegaria.\n"
+	.string "Eu esperava alguem... diferente.\p"
+	.string "Depois conversamos. Estou\n"
+	.string "atrasado para o campo.$"
 
 RivalsHouse_2F_Text_BrendanGettingReady:
-	.string "CIRO: O HORIZONTE nao me pediu\npara esquecer nada. So me\p"
-	.string "mostrou que existe um futuro\nque nao precisa ser governado\p"
-	.string "pelo passado.$"
+	.string "CIRO: Estou terminando minhas\n"
+	.string "anotacoes da ROTA 103.\p"
+	.string "O HORIZONTE quer dados antes\n"
+	.string "do anoitecer.$"
 
 RivalsHouse_2F_Text_ItsRivalsPokeBall:
-	.string "It's {RIVAL}'s POKé BALL!\p"
-	.string "Better leave it right where it is.$"
+	.string "Essa POKé BOLA e de CIRO.\p"
+	.string "Melhor deixar onde esta.$"
 
 RivalsHouse_2F_Text_MayJustCheckingMyPokedex:
 	.string "CIRO: Se os dados estiverem\ncertos, o DESENCANTO pode ser\p"

@@ -317,53 +317,51 @@ LittlerootTown_MaysHouse_1F_Movement_MayGoUpstairs2:
 	step_end
 
 RivalsHouse_1F_Text_OhYoureTheNewNeighbor:
-	.string "Oh, hello. And you are?\p"
-	.string "… … … … … … … … …\n"
-	.string "… … … … … … … … …\p"
-	.string "Oh, you're {PLAYER}{KUN}, our new next-door\n"
-	.string "neighbor! Hi!\p"
-	.string "We have a {STR_VAR_1} about the same\n"
-	.string "age as you.\p"
-	.string "Our {STR_VAR_1} was excited about making\n"
-	.string "a new friend.\p"
-	.string "Our {STR_VAR_1} is upstairs, I think.$"
+	.string "Ah, voce deve ser {PLAYER}.\p"
+	.string "CIRO comentou que alguem da\n"
+	.string "idade dele viria morar perto.\p"
+	.string "Ele esta no andar de cima.\n"
+	.string "Se ainda nao saiu correndo.$"
 
 RivalsHouse_1F_Text_LikeChildLikeFather:
-	.string "Like child, like father.\p"
-	.string "My husband is as wild about POKéMON\n"
-	.string "as our child.\p"
-	.string "If he's not at his LAB, he's likely\n"
-	.string "scrabbling about in grassy places.$"
+	.string "CIRO quase nao para em casa.\p"
+	.string "Desde que o HORIZONTE ofereceu\n"
+	.string "aquela bolsa, ele vive entre\n"
+	.string "mapas, sensores e POKéMON.$"
 
 RivalsHouse_1F_Text_TooBusyToNoticeVisit:
-	.string "That {RIVAL}!\p"
-	.string "I guess our child is too busy with\n"
-	.string "POKéMON to notice that you came\l"
-	.string "to visit, {PLAYER}{KUN}.$"
+	.string "CIRO nem percebeu que voce\n"
+	.string "veio, nao e?\p"
+	.string "Quando coloca uma ideia na\n"
+	.string "cabeca, esquece o resto.$"
 
 RivalsHouse_1F_Text_WentOutToRoute103:
-	.string "Oh, {RIVAL} went out to ROUTE 103\n"
-	.string "just a little while ago.\p"
-	.string "Like father, like child.\n"
-	.string "{RIVAL} can't stay quietly at home.$"
+	.string "CIRO saiu para a ROTA 103\n"
+	.string "ha pouco.\p"
+	.string "Disse que precisava testar\n"
+	.string "dados novos do HORIZONTE.$"
 
 RivalsHouse_1F_Text_ShouldGoHomeEverySoOften:
-	.string "I think it's wonderful for people to\n"
-	.string "travel with POKéMON.\p"
-	.string "But you should go home every so often\n"
-	.string "to let your mother know you're okay.\p"
-	.string "She might not say it, but I'm sure she\n"
-	.string "worries about you, {PLAYER}{KUN}.$"
+	.string "Viajar com POKéMON muda a\n"
+	.string "gente.\p"
+	.string "Mas volte para casa de vez em\n"
+	.string "quando. Sua mae vai gostar.$"
 
 RivalsHouse_1F_Text_MayWhoAreYou:
-	.string "CIRO: Nao confunda minha pressa\ncom falta de memoria. Eu lembro\p"
-	.string "o bastante para saber que nao\nquero viver preso ao que perdi.$"
+	.string "CIRO: Entao voce e {PLAYER}.\p"
+	.string "ANAHI falou que voce chegaria.\n"
+	.string "Eu esperava alguem... diferente.\p"
+	.string "Depois conversamos. Estou\n"
+	.string "atrasado para o campo.$"
 
 RivalsHouse_1F_Text_BrendanWhoAreYou:
-	.string "CIRO: Voce continua olhando\npara cada cicatriz como se ela\p"
-	.string "fosse uma resposta. Eu quero\nsaber o que existe depois dela.$"
+	.string "CIRO: Entao voce e {PLAYER}.\p"
+	.string "ANAHI falou que voce chegaria.\n"
+	.string "Eu esperava alguem... diferente.\p"
+	.string "Depois conversamos. Estou\n"
+	.string "atrasado para o campo.$"
 
 RivalsHouse_1F_Text_DoYouHavePokemon:
-	.string "Hi, neighbor!\p"
-	.string "Do you already have your\n"
-	.string "own POKéMON?$"
+	.string "Oi, {PLAYER}!\p"
+	.string "Voce ja viaja com seu proprio\n"
+	.string "POKéMON?$"
