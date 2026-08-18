@@ -10,12 +10,13 @@ The existing event graph is kept intact while its string blocks become contextua
 - after the battle she recognizes the new Champion without pretending the League's historical debts vanished;
 - Ciro arrives too late to advise the player and reacts to the victory;
 - Professora Anahi arrives, rates the Pokédex through the same special and congratulates the player;
-- Amalia escorts the player into the Hall of Fame while Anahi and Ciro wait outside.
+- Amalia escorts the player into the Hall of Fame while Anahi and Ciro wait outside;
+- inside the Hall of Fame, Amalia explains the purpose of the names recorded there and then records the player and their partners instead of repeating the pre-battle monologue.
 
 Both inherited May/Brendan branches intentionally display Ciro text so the existing gender-dependent event structure can remain untouched.
 
 ## Safety boundary
 
-Only existing `.string` blocks in `EverGrandeCity_ChampionsRoom/scripts.inc` are targeted. `TRAINER_WALLACE`, battle music, rival setup, Pokédex rating call, movements, objects, map tiles, Hall of Fame warp, flags, saves and game-clear progression remain unchanged.
+Only existing `.string` blocks in `EverGrandeCity_ChampionsRoom/scripts.inc` and `EverGrandeCity_HallOfFame/scripts.inc` are targeted. `TRAINER_WALLACE`, battle music, rival setup, Pokédex rating call, movements, objects, map tiles, Hall of Fame warp/record effect, `GameClear`, respawn choice, flags, saves and game-clear progression remain unchanged.
 
 This is preparation-only while GitHub Actions quota is exhausted. Activate from the newest canonical main after the badge PR stabilizes; Codespaces remains last resort.
