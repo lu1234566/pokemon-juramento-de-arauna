@@ -113,7 +113,7 @@ STRING_BLOCK_TARGETS: tuple[tuple[str, str, tuple[str, ...], tuple[str, ...]], .
         "gBirchDexRatingText_AreYouCurious",
         (
             r"ANAHI: {PLAYER}, quer conferir\n",
-            r"como seus registros estao?$$",
+            r"como seus registros estao?$",
         ),
         ("PROF. BIRCH", "BIRCH:"),
     ),
@@ -193,17 +193,12 @@ def validate_block(
 ) -> list[str]:
     failures: list[str] = []
     for line in expected_lines:
-        expected = line[:-1] if line.endswith("$$") else line
-        if f'\t.string "{expected}"' not in block:
-            failures.append(f"{rel_path}: {label} missing expected line: {expected}")
+        if f'\t.string "{line}"' not in block:
+            failures.append(f"{rel_path}: {label} missing expected line: {line}")
     for token in forbidden_tokens:
         if token in block:
             failures.append(f"{rel_path}: {label} still contains visible legacy token: {token}")
     return failures
-
-
-def normalized_lines(lines: tuple[str, ...]) -> tuple[str, ...]:
-    return tuple(line[:-1] if line.endswith("$$") else line for line in lines)
 
 
 def apply() -> int:
@@ -212,8 +207,7 @@ def apply() -> int:
     for rel_path, label, lines, forbidden_tokens in STRING_BLOCK_TARGETS:
         path = ROOT / rel_path
         original = path.read_text(encoding="utf-8")
-        clean_lines = normalized_lines(lines)
-        updated, changed = replace_string_block(original, label, clean_lines)
+        updated, changed = replace_string_block(original, label, lines)
         if changed:
             path.write_text(updated, encoding="utf-8")
             changed_files.add(path)
