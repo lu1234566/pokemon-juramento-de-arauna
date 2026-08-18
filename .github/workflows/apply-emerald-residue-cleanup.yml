@@ -38,6 +38,8 @@ jobs:
           python3 tools/cleanup_region_map_names.py --check
           python3 tools/cleanup_system_ui_identity.py
           python3 tools/cleanup_system_ui_identity.py --check
+          python3 tools/cleanup_route119_surface_residue.py
+          python3 tools/cleanup_route119_surface_residue.py --check
 
       - name: Commit generated source changes
         run: |
