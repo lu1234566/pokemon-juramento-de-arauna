@@ -9,6 +9,10 @@ This lot removes the remaining high-visibility STEVEN identity leaks from map di
 - the rare-rock display that still credited STEVEN;
 - the crisis guidance line in M'Boi that still surfaced STEVEN.
 
+## Verification scope
+
+The deterministic cleanup now verifies 22 visible map text blocks: the eight campaign sign identities, seven Serra do Uivo/Rustboro identity blocks and seven Seu Bento/Steven replacements. The generated patch for this lot touches only the three intended map script files.
+
 ## Safety boundary
 
 Only existing `.string` blocks are replaced. Internal Emerald labels such as `...Steven`, flags, variables, local IDs, movement scripts, coordinates, warps, item IDs and progression remain untouched.
