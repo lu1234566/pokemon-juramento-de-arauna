@@ -39,6 +39,9 @@ jobs:
       - name: Verify Route 119 Ciro and Seu Bento English surface
         run: python3 scripts/render_route119_ciro_surface_en.py --check
 
+      - name: Verify Serra da Cinza English overlay
+        run: python3 scripts/render_mt_chimney_surface.py --check
+
       - name: Verify no proprietary files
         run: bash scripts/check_no_proprietary_files.sh
 

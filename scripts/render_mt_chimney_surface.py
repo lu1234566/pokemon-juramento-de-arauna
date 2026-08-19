@@ -13,202 +13,205 @@ TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
     "MtChimney_Text_MeteoriteWillActivateVolcano": (
         ("METEORITE", "MT. CHIMNEY"),
         (
-            "LUZIA: Este METEORITO amplifica\\n",
-            "VINCULOS guardados.\\p",
-            "Com ele, posso devolver o que\\n",
-            "foi arrancado a forca.$",
+            "LUZIA: This METEORITE amplifies\\n",
+            "stored BONDS.\\p",
+            "With it, I can return what\\n",
+            "was taken by force.$",
         ),
     ),
     "MtChimney_Text_MaxieIntro": (
         ("LUZIA", "HORIZONTE"),
         (
-            "LUZIA: O HORIZONTE chama isso\\n",
-            "de tratamento.\\p",
-            "Eu chamo de memoria roubada.\\p",
-            "Se querem impedir que eu a\\n",
-            "devolva, terao de me parar.$",
+            "LUZIA: HORIZON calls this\\n",
+            "treatment.\\p",
+            "I call it stolen memory.\\p",
+            "If you want to stop me from\\n",
+            "returning it, then try.$",
         ),
     ),
     "MtChimney_Text_MaxieDefeat": (
         ("LUZIA", "lembrar"),
         (
-            "LUZIA: Entao voce escolheu\\n",
-            "ficar no caminho...\\p",
-            "Isso nao torna o HORIZONTE\\n",
-            "certo.$",
+            "LUZIA: So you chose to stand\\n",
+            "in my way...\\p",
+            "That does not make HORIZON\\n",
+            "right.$",
         ),
     ),
     "MtChimney_Text_MaxieYouHaventSeenLastOfMagma": (
         ("sensores", "ARQUIVO"),
         (
-            "LUZIA: Nao acabou.\\p",
-            "Ninguem decide sozinho quais\\n",
-            "lembrancas Arauna deve perder.$",
+            "LUZIA: This is not over.\\p",
+            "No one person decides what\\n",
+            "Arauna is allowed to forget.$",
         ),
     ),
     "MtChimney_Text_TabithaIntro": (
         ("METEORITE", "BOSS"),
         (
-            "LEMBRANTE: Voce chegou tarde.\\p",
-            "O METEORITO ja esta com LUZIA.\\p",
-            "Para passar, tera de me vencer!$",
+            "REMEMBRANCER: You're too late.\\p",
+            "LUZIA already has the METEORITE.\\p",
+            "Beat me if you want through!$",
         ),
     ),
     "MtChimney_Text_TabithaDefeat": (
         ("leader", "awakens"),
-        ("LEMBRANTE: Eu nao consegui\\n", "segurar voce...$"),
+        ("REMEMBRANCER: I couldn't\\n", "hold you back...$"),
     ),
     "MtChimney_Text_TabithaPostBattle": (
         ("BOSS", "METEORITE"),
-        ("LEMBRANTE: LUZIA, termine logo!\\n", "O HORIZONTE esta chegando.$"),
+        ("REMEMBRANCER: LUZIA, hurry!\\n", "HORIZON is closing in.$"),
     ),
     "MtChimney_Text_Grunt2Intro": (
         ("LEMBRANTE", "HORIZONTE"),
         (
-            "LEMBRANTE: O que foi extraido\\n",
-            "nao pertence ao HORIZONTE.\\p",
-            "Saia do caminho.$",
+            "REMEMBRANCER: What was taken\\n",
+            "does not belong to HORIZON.\\p",
+            "Move.$",
         ),
     ),
     "MtChimney_Text_Grunt2Defeat": (
         ("HORIZONTE", "ARQUIVO VIVO"),
-        ("LEMBRANTE: Voce e mais forte\\n", "do que eu esperava.$"),
+        ("REMEMBRANCER: You're stronger\\n", "than I expected.$"),
     ),
     "MtChimney_Text_Grunt2PostBattle": (
         ("HORIZONTE", "soldados"),
         (
-            "LEMBRANTE: Dor nao da direito\\n",
-            "de apagar. Devolver a forca...\\p",
-            "Eu ainda penso nisso.$",
+            "REMEMBRANCER: Pain gives no one\\n",
+            "the right to erase.\\p",
+            "But forcing memory back...\\p",
+            "I still think about that.$",
         ),
     ),
     "MtChimney_Text_Grunt1Intro": (
         ("HORIZONTE", "sensores"),
         (
-            "LEMBRANTE: O HORIZONTE chama\\n",
-            "apagamento de tratamento.\\p",
-            "Nao vou deixar que levem mais.$",
+            "REMEMBRANCER: HORIZON calls\\n",
+            "erasure treatment.\\p",
+            "I won't let them take more.$",
         ),
     ),
     "MtChimney_Text_Grunt1Defeat": (
         ("HORIZONTE", "ARQUIVO VIVO"),
-        ("LEMBRANTE: Ainda falta muito\\n", "para eu sustentar essa escolha.$"),
+        ("REMEMBRANCER: I'm still not\\n", "strong enough for this choice.$"),
     ),
     "MtChimney_Text_Grunt1PostBattle": (
         ("HORIZONTE", "sensores"),
-        ("LEMBRANTE: Nao basta lembrar.\\n", "Temos de escolher como devolver.$"),
+        (
+            "REMEMBRANCER: Remembering isn't\\n",
+            "enough.\\p",
+            "We must choose how to return it.$",
+        ),
     ),
     "MtChimney_Text_TeamAquaAlwaysMessingWithPlans": (
         ("HORIZONTE", "soldados"),
         (
-            "LEMBRANTE: O HORIZONTE sempre\\n",
-            "chega dizendo que e seguranca.\\p",
-            "Depois decide o que some.$",
+            "REMEMBRANCER: HORIZON always\\n",
+            "arrives calling it safety.\\p",
+            "Then they decide what vanishes.$",
         ),
     ),
     "MtChimney_Text_MeteoritesPackAmazingPower": (
         ("METEORITES", "amazing power"),
         (
-            "LEMBRANTE: O METEORITO reage\\n",
-            "aos VINCULOS armazenados.\\p",
-            "Nao sabemos ate onde isso vai.$",
+            "REMEMBRANCER: The METEORITE\\n",
+            "reacts to stored BONDS.\\p",
+            "We don't know how far this goes.$",
         ),
     ),
     "MtChimney_Text_YouBetterNotMessWithUs": (
         ("mess with us", "benefit of everyone"),
         (
-            "LEMBRANTE: Nao interfira.\\p",
-            "Estamos devolvendo registros\\n",
-            "que nunca deveriam ter sido\\n",
-            "tomados.$",
+            "REMEMBRANCER: Don't interfere.\\p",
+            "We're returning records that\\n",
+            "should never have been taken.$",
         ),
     ),
     "MtChimney_Text_AquasNameSimilar": (
         ("LEMBRANTE", "LUZIA"),
-        ("LEMBRANTE: Memoria roubada nao\\n", "vira cura so por mudar de nome.$"),
+        (
+            "REMEMBRANCER: Stolen memory\\n",
+            "stays stolen under a new name.$",
+        ),
     ),
     "MtChimney_Text_DouseThemInFire": (
         ("Douse them in fire",),
-        ("LEMBRANTE: Segure a linha!\\n", "Nao deixe os agentes passarem!$"),
+        ("REMEMBRANCER: Hold the line!\\n", "Don't let the agents through!$"),
     ),
     "MtChimney_Text_KeepMakingMoreLand": (
         ("more land",),
-        ("LEMBRANTE: Nenhum arquivo fica\\n", "enterrado para sempre.$"),
+        ("REMEMBRANCER: No archive stays\\n", "buried forever.$"),
     ),
     "MtChimney_Text_ArchieGoStopTeamMagma": (
         ("OTACILIO", "Preservar tudo"),
         (
-            "OTACILIO: LUZIA vai ativar o\\n",
-            "amplificador com o METEORITO.\\p",
-            "Pare-a antes que essa serra\\n",
-            "vire um experimento.$",
+            "OTACILIO: LUZIA will power the\\n",
+            "amplifier with the METEORITE.\\p",
+            "Stop her before this ridge\\n",
+            "becomes an experiment.$",
         ),
     ),
     "MtChimney_Text_ArchieIHaveMyHandsFull": (
         ("OTACILIO", "M'BOI"),
         (
-            "OTACILIO: Estou contendo os\\n",
-            "LEMBRANTES daqui.\\p",
-            "Va. LUZIA esta no equipamento.$",
+            "OTACILIO: I'm holding the\\n",
+            "REMEMBRANCERS here.\\p",
+            "Go. LUZIA is at the machine.$",
         ),
     ),
     "MtChimney_Text_ArchieThankYou": (
         ("OTACILIO", "ARQUIVO VIVO"),
         (
-            "OTACILIO: Voce impediu uma\\n",
-            "liberacao sem controle.\\p",
-            "Isso nao resolve nossa disputa,\\n",
-            "mas evitou algo pior hoje.$",
+            "OTACILIO: You stopped an\\n",
+            "uncontrolled release.\\p",
+            "That doesn't settle our dispute,\\n",
+            "but it prevented worse today.$",
         ),
     ),
     "MtChimney_Text_MagmaOutnumbersUs": (
         ("LEMBRANTE", "historia"),
-        ("HORIZONTE: Eles sao muitos.\\n", "Nao consigo sair daqui agora.$"),
+        ("HORIZON: There are too many.\\n", "I'm pinned here.$"),
     ),
     "MtChimney_Text_LessHabitatForWaterPokemon": (
         ("WATER POKéMON",),
         (
-            "HORIZONTE: LUZIA vai usar o\\n",
-            "METEORITO como amplificador.\\p",
-            "Se funcionar, memorias podem\\n",
-            "voltar sem consentimento.$",
+            "HORIZON: LUZIA will use the\\n",
+            "METEORITE as an amplifier.\\p",
+            "If it works, memories may return\\n",
+            "without consent.$",
         ),
     ),
     "MtChimney_Text_MagmasNameSimilar": (
         ("LEMBRANTE", "historia"),
         (
-            "HORIZONTE: Somos tecnicos e\\n",
-            "guardas, nao donos da memoria.\\p",
-            "Nem todos aqui lembram disso.$",
+            "HORIZON: We're technicians and\\n",
+            "guards, not owners of memory.\\p",
+            "Some here still forget that.$",
         ),
     ),
     "MtChimney_Text_MeteoriteFittedOnMachine": (
         ("METEORITE", "mysterious"),
         (
-            "O METEORITO esta preso a um\\n",
-            "amplificador de VINCULO.\\p",
-            "O aparelho acumula energia.$",
+            "The METEORITE is locked into a\\n",
+            "BOND amplifier.\\p",
+            "The machine is storing energy.$",
         ),
     ),
     "MtChimney_Text_RemoveTheMeteorite": (
         ("METEORITE", "remove"),
-        (
-            "Um METEORITO alimenta o\\n",
-            "amplificador.\\p",
-            "Remover o METEORITO?$",
-        ),
+        ("A METEORITE powers this device.\\p", "Remove the METEORITE?$"),
     ),
     "MtChimney_Text_PlayerRemovedMeteorite": (
         ("removed the METEORITE",),
-        ("{PLAYER} removeu o METEORITO\\n", "do amplificador.$"),
+        ("{PLAYER} removed the METEORITE\\n", "from the amplifier.$"),
     ),
     "MtChimney_Text_PlayerLeftMeteorite": (
         ("left the METEORITE",),
-        ("{PLAYER} deixou o METEORITO\\n", "no lugar.$"),
+        ("{PLAYER} left the METEORITE\\n", "in place.$"),
     ),
     "MtChimney_Text_MachineMakesNoResponse": (
         ("mysterious machine", "no response"),
-        ("O amplificador esta desligado.\\n", "Nao ha resposta.$"),
+        ("The amplifier is offline.\\n", "There is no response.$"),
     ),
     "MtChimney_Text_RouteSign": (
         ("JAGGED PATH", "LAVARIDGE TOWN"),
@@ -254,17 +257,15 @@ def render(source: str) -> str:
 
 
 def validate_rendered(rendered: str) -> None:
-    forbidden_by_label = {
-        "MtChimney_Text_MeteoriteWillActivateVolcano": ("MT. CHIMNEY",),
-        "MtChimney_Text_TabithaIntro": ("BOSS", "METEOR FALLS"),
-        "MtChimney_Text_TabithaPostBattle": ("BOSS",),
-        "MtChimney_Text_MeteoritesPackAmazingPower": ("amazing power",),
-        "MtChimney_Text_YouBetterNotMessWithUs": ("benefit of everyone",),
-        "MtChimney_Text_DouseThemInFire": ("Douse them in fire",),
-        "MtChimney_Text_KeepMakingMoreLand": ("more land",),
-        "MtChimney_Text_LessHabitatForWaterPokemon": ("WATER POKéMON",),
-        "MtChimney_Text_RouteSign": ("JAGGED PATH", "LAVARIDGE TOWN"),
-    }
+    forbidden = (
+        "HORIZONTE",
+        "LEMBRANTE:",
+        "VINCULO",
+        "METEORITO",
+        "ARQUIVO VIVO",
+        "Nao ",
+        "Voce ",
+    )
     for label, (_, payloads) in TARGETS.items():
         pattern = re.compile(BLOCK_RE_TEMPLATE.format(label=re.escape(label)))
         match = pattern.search(rendered)
@@ -275,14 +276,14 @@ def validate_rendered(rendered: str) -> None:
             line = f'\t.string "{payload}"'
             if line not in body:
                 raise ValueError(f"{label}: rendered line missing: {line}")
-        for token in forbidden_by_label.get(label, ()):
+        for token in forbidden:
             if token in body:
-                raise ValueError(f"{label}: legacy visible token survived: {token}")
+                raise ValueError(f"{label}: Portuguese visible token survived: {token}")
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(
-        description="Render the Serra da Cinza Horizonte/Lembrante conflict without changing Emerald event wiring."
+        description="Render the Serra da Cinza HORIZON/REMEMBRANCER conflict in English without changing Emerald event wiring."
     )
     parser.add_argument("--input", type=Path, default=DEFAULT_INPUT)
     parser.add_argument("--output", type=Path)
@@ -299,7 +300,7 @@ def main() -> int:
     validate_rendered(rendered)
 
     if args.check:
-        print(f"Serra da Cinza renderer OK: {len(TARGETS)} plot blocks validated.")
+        print(f"Serra da Cinza English renderer OK: {len(TARGETS)} plot blocks validated.")
         return 0
 
     if args.in_place:
