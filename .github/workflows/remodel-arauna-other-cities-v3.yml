@@ -1,0 +1,72 @@
+name: Generate Arauna other cities Porymap V3
+
+on:
+  push:
+    paths:
+      - .github/workflows/remodel-arauna-other-cities-v3.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          persist-credentials: true
+
+      - name: Record Vila Amanhecer hash
+        id: vila
+        shell: bash
+        run: echo "sha=$(sha256sum data/layouts/LittlerootTown/map.bin | cut -d' ' -f1)" >> "$GITHUB_OUTPUT"
+
+      - name: Generate fifteen Arauna settlements
+        run: python3 tools/remodel_arauna_other_cities_v3.py
+
+      - name: Validate generated Porymap data
+        shell: bash
+        run: |
+          set -euo pipefail
+          git diff --check
+          test "$(sha256sum data/layouts/LittlerootTown/map.bin | cut -d' ' -f1)" = "${{ steps.vila.outputs.sha }}"
+          python3 - <<'PY'
+          import json, struct
+          from pathlib import Path
+
+          root = Path('.')
+          layouts = json.loads((root/'data/layouts/layouts.json').read_text())['layouts']
+          by_id = {x['id']: x for x in layouts}
+          cities = [
+              'OldaleTown','PetalburgCity','RustboroCity','DewfordTown','SlateportCity',
+              'MauvilleCity','VerdanturfTown','FallarborTown','LavaridgeTown','FortreeCity',
+              'LilycoveCity','MossdeepCity','SootopolisCity','PacifidlogTown','EverGrandeCity',
+          ]
+          for city in cities:
+              m = json.loads((root/f'data/maps/{city}/map.json').read_text())
+              layout = by_id[m['layout']]
+              p = root/layout['blockdata_filepath']
+              expected = int(layout['width']) * int(layout['height']) * 2
+              assert p.stat().st_size == expected, (city, p.stat().st_size, expected)
+          assert (root/'docs/ARAUNA_OTHER_CITIES_PORYMAP_V3.md').exists()
+          print('15/15 city blockdata files validated; Vila Amanhecer unchanged')
+          PY
+          changed="$(git diff --name-only)"
+          echo "$changed"
+          if echo "$changed" | grep -q '^data/maps/'; then
+            echo 'map.json or scripts changed unexpectedly' >&2
+            exit 1
+          fi
+
+      - name: Publish generated branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/layouts docs/ARAUNA_OTHER_CITIES_PORYMAP_V3.md
+          git commit -m 'Remodel fifteen Arauna cities for Porymap V3'
+          git push origin HEAD:generated/arauna-other-cities-porymap-v3 --force
