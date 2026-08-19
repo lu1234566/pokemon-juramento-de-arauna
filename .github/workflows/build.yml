@@ -48,6 +48,9 @@ jobs:
       - name: Verify Ruinas and Memorial English overlay
         run: python3 scripts/render_ruins_memorial_en.py --check
 
+      - name: Verify Route 120 Bento English bridge
+        run: python3 scripts/render_route120_bento_en.py --check
+
       - name: Verify no proprietary files
         run: bash scripts/check_no_proprietary_files.sh
 

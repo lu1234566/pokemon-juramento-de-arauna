@@ -25,6 +25,7 @@ overlay_files=(
     "src/data/trainers.h"
     "data/maps/PetalburgWoods/scripts.inc"
     "data/maps/Route119/scripts.inc"
+    "data/maps/Route120/scripts.inc"
     "data/maps/MtChimney/scripts.inc"
     "data/maps/FortreeCity/scripts.inc"
     "data/maps/FortreeCity_Gym/scripts.inc"
@@ -57,6 +58,7 @@ python3 scripts/render_route119_ciro_surface_en.py --in-place
 python3 scripts/render_mt_chimney_surface.py --in-place
 python3 scripts/render_mata_do_meio_lidia_en.py --in-place
 python3 scripts/render_ruins_memorial_en.py --in-place
+python3 scripts/render_route120_bento_en.py --in-place
 
 cpp="${CPP:-arm-none-eabi-cpp}"
 
