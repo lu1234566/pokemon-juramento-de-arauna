@@ -18,12 +18,16 @@ This gives CIRO a believable early starting point: confident in HORIZON and meas
 ## Route surface — 3 blocks
 
 - the tired traveler still teaches the POTION lesson;
-- the water-shortcut NPC points toward ENCRUZILHADA CENTRAL instead of legacy OLDALE naming;
-- the Route 103 sign uses the same Arauna destination.
+- the water-shortcut NPC points toward VILA DA PASSAGEM instead of legacy OLDALE naming;
+- the Route 103 sign uses the same canonical destination.
+
+The canonical mapping is defined by `tools/cleanup_region_map_names.py`: Oldale is VILA DA PASSAGEM, while Mauville is ENCRUZILHADA.
 
 ## Technical contract
 
-`scripts/render_route103_ciro_en.py` changes 11 text blocks and validates exact source markers, <=32-character visible segments, structural masking and key rival/progression tokens.
+`scripts/render_route103_ciro_en.py` owns the 11 base replacements and `scripts/render_route103_ciro_en_checked.py` applies the canonical VILA DA PASSAGEM destination surface.
+
+The renderers validate exact source markers, <=32-character visible segments, structural masking and key rival/progression tokens.
 
 Preserved: all six starter-dependent rival trainer IDs/parties, `VAR_STARTER_MON`, `FLAG_DEFEATED_RIVAL_ROUTE103`, `VAR_BIRCH_LAB_STATE`, inherited Oldale-state variables/flags, rival exit movements, Match Call trainer events, warps, saves, geometry and art.
 
