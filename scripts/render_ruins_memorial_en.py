@@ -142,7 +142,7 @@ set_payload(base.MEMORIAL_TARGETS, "MtPyre_Summit_Text_GroudonKyogreAwakened", (
 set_payload(base.MEMORIAL_TARGETS, "MtPyre_Summit_Text_ThoseTwoMenReturnedOrbs", (
     "GUARDIAN: OTACILIO and LUZIA\\n",
     "returned both records.\\p",
-    "Neither left with all the answers.$",
+    "Neither left with every answer.$",
 ))
 set_payload(base.MEMORIAL_TARGETS, "MtPyre_Summit_Text_SuperAncientPokemonTaughtUs", (
     "GUARDIAN: The collapse showed us\\n",
@@ -180,7 +180,7 @@ set_payload(base.MEMORIAL_TARGETS, "MtPyre_Summit_Text_HearTheNewLegendOfHoenn",
     "Would you hear the new version?$",
 ))
 set_payload(base.MEMORIAL_TARGETS, "MtPyre_Summit_Text_HoennTrioTale", (
-    "GUARDIAN: For a long time, we said\\n",
+    "GUARDIAN: For years, we said\\n",
     "remembering was always just,\\n",
     "and forgetting was always loss.\\p",
     "M'BOI taught us absolutes can\\n",
