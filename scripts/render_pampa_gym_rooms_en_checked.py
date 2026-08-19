@@ -10,6 +10,7 @@ base.SOURCE_MARKERS += (
     "cut above",
     "real deal",
     "went all out",
+    "defenses weren't enough",
 )
 
 base.TARGETS["PetalburgCity_Gym_Text_ParkerIntro"] = (
