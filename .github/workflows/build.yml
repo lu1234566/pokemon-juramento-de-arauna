@@ -66,6 +66,9 @@ jobs:
       - name: Verify Aguas daily and Kiri anchors
         run: python3 scripts/render_aguas_mboi_daily_surface.py --check
 
+      - name: Verify Lembrantes core anchors
+        run: python3 scripts/render_lembrantes_core_surface.py --check
+
       - name: Smoke-test visible residue inventory
         run: |
           python3 scripts/audit_visible_residue.py --output /tmp/visible-residue.md
