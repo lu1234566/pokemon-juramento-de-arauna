@@ -51,6 +51,9 @@ jobs:
       - name: Verify Route 102 and Pampa da Espera English surface
         run: python3 scripts/render_route102_pampa_en_checked.py --check
 
+      - name: Verify Pampa da Espera Elias gym story core
+        run: python3 scripts/render_pampa_elias_gym_core_en_checked.py --check
+
       - name: Verify Horizon forest English overlay
         run: python3 scripts/render_petalburg_woods_surface.py --check
 
