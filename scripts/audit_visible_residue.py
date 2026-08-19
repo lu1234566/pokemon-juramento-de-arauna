@@ -20,6 +20,7 @@ from render_missoes_ceu_confrontation import render as render_missoes_ceu_2f
 from render_missoes_ceu_ground_floor import render as render_missoes_ceu_1f
 from render_mt_chimney_surface import render as render_mt_chimney
 from render_petalburg_woods_surface import render as render_petalburg_woods
+from render_porto_sal_submersivel import render_city as render_porto_sal_city, render_harbor as render_porto_sal_harbor
 from render_ruinas_memorial_surface_checked import (
     render_item_descs,
     render_items,
@@ -144,6 +145,10 @@ def render_asm_source(path: Path, source: str) -> str:
         return render_missoes_ceu_1f(source)
     if path == ROOT / "data" / "maps" / "MossdeepCity_SpaceCenter_2F" / "scripts.inc":
         return render_missoes_ceu_2f(source)
+    if path == ROOT / "data" / "maps" / "SlateportCity" / "scripts.inc":
+        return render_porto_sal_city(source)
+    if path == ROOT / "data" / "maps" / "SlateportCity_Harbor" / "scripts.inc":
+        return render_porto_sal_harbor(source)
     if path == ROOT / "data" / "text" / "berries.inc":
         return render_aguas_berries(source)
     return source

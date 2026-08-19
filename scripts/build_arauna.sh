@@ -43,6 +43,8 @@ overlay_files=(
     "data/maps/MagmaHideout_4F/scripts.inc"
     "data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc"
     "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc"
+    "data/maps/SlateportCity/scripts.inc"
+    "data/maps/SlateportCity_Harbor/scripts.inc"
     "data/text/berries.inc"
     "src/data/items.h"
     "src/data/text/item_descriptions.h"
@@ -76,6 +78,7 @@ python3 scripts/render_lembrantes_lower_surface.py --in-place
 python3 scripts/render_lembrantes_core_surface.py --in-place
 python3 scripts/render_missoes_ceu_ground_floor.py --in-place
 python3 scripts/render_missoes_ceu_confrontation.py --in-place
+python3 scripts/render_porto_sal_submersivel.py --in-place
 
 cpp="${CPP:-arm-none-eabi-cpp}"
 cpp_with_language="${cpp} -DARAUNA_LANGUAGE=${language_id}"
