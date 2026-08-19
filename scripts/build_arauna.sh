@@ -50,6 +50,8 @@ overlay_files=(
     "data/maps/SeafloorCavern_Room9/scripts.inc"
     "data/maps/SootopolisCity/scripts.inc"
     "data/maps/SkyPillar_Outside/scripts.inc"
+    "data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc"
+    "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc"
     "data/text/berries.inc"
     "src/data/items.h"
     "src/data/text/item_descriptions.h"
@@ -88,6 +90,8 @@ python3 scripts/render_memorial_lower_floors_en.py --in-place
 python3 scripts/render_memorial_mid_floors_en.py --in-place
 python3 scripts/render_remembrancers_lower_en.py --in-place
 python3 scripts/render_remembrancers_core_en.py --in-place
+python3 scripts/render_missoes_ceu_ground_floor_en_checked.py --in-place
+python3 scripts/render_missoes_ceu_confrontation_en_checked2.py --in-place
 
 cpp="${CPP:-arm-none-eabi-cpp}"
 
