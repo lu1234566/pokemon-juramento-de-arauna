@@ -35,6 +35,7 @@ jobs:
           python3 tools/cleanup_route119_surface_residue.py --check
           python3 tools/cleanup_val_household_residue.py --check
           python3 tools/cleanup_pokedex_rating_residue.py --check
+          python3 tools/cleanup_anahi_lab_system_residue.py --check
 
       - name: Verify bilingual intro contract
         run: python3 scripts/check_localization.py
