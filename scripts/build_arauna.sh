@@ -90,7 +90,7 @@ python3 scripts/render_memorial_lower_floors_en.py --in-place
 python3 scripts/render_memorial_mid_floors_en.py --in-place
 python3 scripts/render_remembrancers_lower_en.py --in-place
 python3 scripts/render_remembrancers_core_en.py --in-place
-python3 scripts/render_missoes_ceu_ground_floor_en_checked.py --in-place
+python3 scripts/render_missoes_ceu_ground_floor_en_checked2.py --in-place
 python3 scripts/render_missoes_ceu_confrontation_en_checked2.py --in-place
 
 cpp="${CPP:-arm-none-eabi-cpp}"
