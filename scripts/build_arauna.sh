@@ -31,6 +31,8 @@ overlay_files=(
     "data/maps/FortreeCity_Gym/scripts.inc"
     "data/maps/MeteorFalls_1F_1R/scripts.inc"
     "data/maps/MtPyre_Summit/scripts.inc"
+    "data/maps/AquaHideout_B1F/scripts.inc"
+    "data/maps/AquaHideout_B2F/scripts.inc"
     "src/data/items.h"
     "src/data/text/item_descriptions.h"
 )
@@ -59,6 +61,7 @@ python3 scripts/render_mt_chimney_surface.py --in-place
 python3 scripts/render_mata_do_meio_lidia_en.py --in-place
 python3 scripts/render_ruins_memorial_en.py --in-place
 python3 scripts/render_route120_bento_en.py --in-place
+python3 scripts/render_central_archive_en.py --in-place
 
 cpp="${CPP:-arm-none-eabi-cpp}"
 
