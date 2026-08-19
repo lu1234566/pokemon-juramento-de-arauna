@@ -4,6 +4,11 @@ from __future__ import annotations
 import render_missoes_ceu_confrontation_en_checked as english
 
 
+english.english.base.TARGETS["MossdeepCity_SpaceCenter_2F_Text_WouldveLikedToBeAstronaut"] = (
+    "MAN: When I was young, I wanted\\n",
+    "to see Arauna from above.\\p",
+    "Maybe I can still learn.$",
+)
 english.english.base.TARGETS["MossdeepCity_SpaceCenter_2F_Text_Grunt7Defeat"] = (
     "REMEMBRANCER: Exposing truth\\n",
     "shouldn't require taking a\\n",
