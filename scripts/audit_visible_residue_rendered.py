@@ -8,6 +8,7 @@ from render_porto_sal_battle_tent import render_asm as render_battle_tent_asm, r
 from render_porto_sal_berry_powder import render_city as render_berry_powder_city, render_strings as render_berry_powder_strings
 from render_porto_sal_civic_signs import render as render_civic_signs
 from render_porto_sal_daily_life import render as render_porto_sal_daily_life
+from render_porto_sal_fan_club import render_item_descs as render_fan_club_descs, render_items as render_fan_club_items, render_map as render_fan_club
 from render_porto_sal_harbor_service import render_harbor as render_harbor_service, render_strings as render_harbor_strings
 from render_porto_sal_museum_people_checked import (
     render_city as render_museum_queue,
@@ -40,6 +41,8 @@ def render_asm_source(path: Path, source: str) -> str:
         return render_museum_science_1f(render_museum_people_1f(rendered))
     if path == ROOT / "data" / "maps" / "SlateportCity_OceanicMuseum_2F" / "scripts.inc":
         return render_museum_science_2f(rendered)
+    if path == ROOT / "data" / "maps" / "SlateportCity_PokemonFanClub" / "scripts.inc":
+        return render_fan_club(rendered)
     if path == ROOT / "data" / "maps" / "SlateportCity_SternsShipyard_1F" / "scripts.inc":
         return render_shipyard_1f(rendered)
     if path == ROOT / "data" / "maps" / "SlateportCity_SternsShipyard_2F" / "scripts.inc":
@@ -53,6 +56,10 @@ def render_c_source(path: Path, source: str) -> str:
         rendered = render_berry_powder_strings(rendered)
         rendered = render_harbor_strings(rendered)
         return render_battle_tent_strings(rendered)
+    if path == ROOT / "src" / "data" / "items.h":
+        return render_fan_club_items(rendered)
+    if path == ROOT / "src" / "data" / "text" / "item_descriptions.h":
+        return render_fan_club_descs(rendered)
     return rendered
 
 
