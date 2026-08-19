@@ -25,6 +25,7 @@ overlay_files=(
     "src/data/trainers.h"
     "data/maps/PetalburgWoods/scripts.inc"
     "data/maps/Route119/scripts.inc"
+    "data/maps/MtChimney/scripts.inc"
 )
 overlay_backup_dir="$(mktemp -d)"
 
@@ -47,6 +48,7 @@ trap 'exit 143' TERM
 python3 scripts/render_shared_trainer_names_en.py --in-place
 python3 scripts/render_petalburg_woods_surface.py --in-place
 python3 scripts/render_route119_ciro_surface_en.py --in-place
+python3 scripts/render_mt_chimney_surface.py --in-place
 
 cpp="${CPP:-arm-none-eabi-cpp}"
 
