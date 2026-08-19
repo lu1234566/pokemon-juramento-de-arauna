@@ -45,6 +45,7 @@ overlay_files=(
     "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc"
     "data/maps/SlateportCity/scripts.inc"
     "data/maps/SlateportCity_Harbor/scripts.inc"
+    "data/maps/SlateportCity_NameRatersHouse/scripts.inc"
     "data/maps/SlateportCity_OceanicMuseum_1F/scripts.inc"
     "data/maps/SlateportCity_OceanicMuseum_2F/scripts.inc"
     "data/maps/SlateportCity_SternsShipyard_1F/scripts.inc"
@@ -92,6 +93,7 @@ python3 scripts/render_porto_sal_daily_life.py --in-place
 python3 scripts/render_porto_sal_seu_bento.py --in-place
 python3 scripts/render_porto_sal_berry_powder.py --in-place
 python3 scripts/render_porto_sal_harbor_service.py --in-place
+python3 scripts/render_porto_sal_name_rater.py --in-place
 
 cpp="${CPP:-arm-none-eabi-cpp}"
 cpp_with_language="${cpp} -DARAUNA_LANGUAGE=${language_id}"
