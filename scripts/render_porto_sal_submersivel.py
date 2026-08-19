@@ -89,7 +89,7 @@ HARBOR_TARGETS: dict[str, tuple[str, ...]] = {
         "permissao.$",
     ),
     "SlateportCity_Harbor_Text_CaptSternWhyStealMySubmarine": (
-        "ENGENHEIRO: Ele podia ter pedido.\\p",
+        "ENGENHEIRO: Podia ter pedido.\\p",
         "O submersivel foi feito para\\n",
         "pesquisa, nao para uma faccao.\\p",
         "Agora precisamos segui-los.$",
