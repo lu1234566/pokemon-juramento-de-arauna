@@ -94,7 +94,7 @@ TARGETS = {
         "Eu ainda gosto da pergunta.$",
     ),
     "MossdeepCity_SpaceCenter_1F_Text_AquaShouldBeatMagma": (
-        "MULHER: Queria que alguem tirasse\\n",
+        "MULHER: Queria que tirassem\\n",
         "os LEMBRANTES daqui.\\p",
         "Mas entregar o predio ao\\n",
         "HORIZONTE tambem me assusta.$",
@@ -123,14 +123,14 @@ TARGETS = {
     ),
     "MossdeepCity_SpaceCenter_1F_Text_Grunt3Defeat": (
         "LEMBRANTE: Se o HORIZONTE ligar\\n",
-        "isso ao ARQUIVO, perdemos escala.$",
+        "isso ao ARQUIVO, a escala muda.$",
     ),
     "MossdeepCity_SpaceCenter_1F_Text_Grunt3PostBattle": (
         "LEMBRANTE: RAUL esta no andar\\n",
         "superior. Ele sabe da chave.$",
     ),
     "MossdeepCity_SpaceCenter_1F_Text_Grunt1Intro": (
-        "LEMBRANTE: Esta nao e uma base do\\n",
+        "LEMBRANTE: Isto nao e base do\\n",
         "HORIZONTE. Eu sei.\\p",
         "Mas a rede pode virar uma.$",
     ),
@@ -148,8 +148,8 @@ TARGETS = {
         "memorias. Ele leva comandos.$",
     ),
     "MossdeepCity_SpaceCenter_1F_Text_Grunt4Defeat": (
-        "LEMBRANTE: Um comando remoto pode\\n",
-        "ativar milhares de sensores.$",
+        "LEMBRANTE: Um comando remoto\\n",
+        "pode ativar muitos sensores.$",
     ),
     "MossdeepCity_SpaceCenter_1F_Text_Grunt4PostBattle": (
         "LEMBRANTE: E esse e exatamente\\n",
@@ -157,7 +157,7 @@ TARGETS = {
         "ter nos ensinado a temer.$",
     ),
     "MossdeepCity_SpaceCenter_1F_Text_Grunt2Intro": (
-        "LEMBRANTE: A escada esta fechada.\\p",
+        "LEMBRANTE: A escada fechou.\\p",
         "LUZIA e RAUL estao la em cima.$",
     ),
     "MossdeepCity_SpaceCenter_1F_Text_Grunt2Defeat": (
@@ -168,7 +168,7 @@ TARGETS = {
     "MossdeepCity_SpaceCenter_1F_Text_Grunt2PostBattle": (
         "LEMBRANTE: O problema nao e o\\n",
         "centro espacial.\\p",
-        "E quem controla a chave do uplink.$",
+        "E quem controla a chave.$",
     ),
     "MossdeepCity_SpaceCenter_1F_Text_MagmaIntentToStealNotice": (
         "AVISO DOS LEMBRANTES:\\p",
