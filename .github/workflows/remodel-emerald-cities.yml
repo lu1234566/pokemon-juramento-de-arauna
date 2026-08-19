@@ -4,6 +4,8 @@ on:
   push:
     paths:
       - .github/workflows/remodel-emerald-cities.yml
+  pull_request:
+    types: [opened, synchronize, reopened]
   workflow_dispatch:
 
 permissions:
@@ -13,7 +15,7 @@ jobs:
   remodel:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout current main
+      - name: Checkout source
         uses: actions/checkout@v4
         with:
           fetch-depth: 1
