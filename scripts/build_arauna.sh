@@ -32,7 +32,10 @@ restore_strings() {
     cp "$strings_backup" "$strings_file"
     rm -f "$strings_backup"
 }
-trap restore_strings EXIT HUP INT TERM
+trap restore_strings EXIT
+trap 'exit 129' HUP
+trap 'exit 130' INT
+trap 'exit 143' TERM
 
 python3 scripts/render_arauna_frontier_ui.py --input "$strings_file" --in-place
 
