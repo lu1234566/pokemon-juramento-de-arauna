@@ -144,8 +144,8 @@ TARGETS = {
         "Gosto menos da alternativa.$",
     ),
     "MossdeepCity_SpaceCenter_1F_Text_Grunt4Intro": (
-        "LEMBRANTE: O uplink nao transporta\\n",
-        "memoria. Transporta comandos.$",
+        "LEMBRANTE: O uplink nao leva\\n",
+        "memorias. Ele leva comandos.$",
     ),
     "MossdeepCity_SpaceCenter_1F_Text_Grunt4Defeat": (
         "LEMBRANTE: Um comando remoto pode\\n",
