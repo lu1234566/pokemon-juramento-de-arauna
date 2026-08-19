@@ -66,7 +66,8 @@ base.TARGETS_1F.update({
             "I decided to help the shipyard.\\p",
             "The MASTER knows design.\\n",
             "I know the sea and currents.\\p",
-            "Together we'll build a good ship.$",
+            "Together we'll build a good\\n",
+            "ship.$",
         ),
     ),
     "SlateportCity_SternsShipyard_1F_Text_SeaIsLikeLivingThing": (
@@ -93,8 +94,8 @@ base.TARGETS_2F.update({
         ("large ship", "big building"),
         (
             "TECH: Designing a large ship\\n",
-            "feels more like raising a building\\n",
-            "than assembling a vehicle.$",
+            "feels like raising a building\\n",
+            "more than assembling a vehicle.$",
         ),
     ),
     "SlateportCity_SternsShipyard_2F_Text_FloatsBecauseBuoyancy": (
