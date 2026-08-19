@@ -204,107 +204,103 @@ Route119_WeatherInstitute_2F_EventScript_WeatherScientist::
 	end
 
 Route119_WeatherInstitute_2F_Text_Grunt2Intro:
-	.string "Os pesquisadores cruzaram\nchuva, temperatura e relatos de\p"
-	.string "perda de memoria. O clima nao\nexplica o padrao; a\p"
-	.string "infraestrutura do ARQUIVO\nexplica melhor.$"
+	.string "Orders are simple:\n"
+	.string "seal the research floor\n"
+	.string "and copy every BOND log.$"
 
 Route119_WeatherInstitute_2F_Text_Grunt2Defeat:
-	.string "O HORIZONTE veio buscar os\nservidores. Os dados daqui\p"
-	.string "contradizem a versao oficial\nsobre a seguranca do ARQUIVO\p"
-	.string "VIVO.$"
+	.string "I should have kept my eyes\n"
+	.string "on the door...$"
 
 Route119_WeatherInstitute_2F_Text_Grunt2PostBattle:
-	.string "O HORIZONTE veio buscar os\nservidores. Os dados daqui\p"
-	.string "contradizem a versao oficial\nsobre a seguranca do ARQUIVO\p"
-	.string "VIVO.$"
+	.string "No one deletes anything.\p"
+	.string "HORIZON wants the originals.$"
 
 Route119_WeatherInstitute_2F_Text_Grunt3Intro:
-	.string "O HORIZONTE veio buscar os\nservidores. Os dados daqui\p"
-	.string "contradizem a versao oficial\nsobre a seguranca do ARQUIVO\p"
-	.string "VIVO.$"
+	.string "We are not here to debate.\p"
+	.string "Those servers are evidence now.$"
 
 Route119_WeatherInstitute_2F_Text_Grunt3Defeat:
-	.string "O HORIZONTE veio buscar os\nservidores. Os dados daqui\p"
-	.string "contradizem a versao oficial\nsobre a seguranca do ARQUIVO\p"
-	.string "VIVO.$"
+	.string "Evidence does not belong\n"
+	.string "to whoever gets here first.$"
 
 Route119_WeatherInstitute_2F_Text_Grunt3PostBattle:
-	.string "Os pesquisadores cruzaram\nchuva, temperatura e relatos de\p"
-	.string "perda de memoria. O clima nao\nexplica o padrao; a\p"
-	.string "infraestrutura do ARQUIVO\nexplica melhor.$"
+	.string "You keep making this difficult.$"
 
 Route119_WeatherInstitute_2F_Text_Grunt5Intro:
-	.string "Os dados mostram picos de\nDESENCANTO perto de instalacoes\p"
-	.string "que usam sensores de VINCULO em\ngrande escala.$"
+	.string "Marta said secure the core.\p"
+	.string "That means nobody gets through.$"
 
 Route119_WeatherInstitute_2F_Text_Grunt5Defeat:
-	.string "O HORIZONTE veio buscar os\nservidores. Os dados daqui\p"
-	.string "contradizem a versao oficial\nsobre a seguranca do ARQUIVO\p"
-	.string "VIVO.$"
+	.string "I failed the one simple job...$"
 
 Route119_WeatherInstitute_2F_Text_Grunt5PostBattle:
-	.string "O HORIZONTE veio buscar os\nservidores. Os dados daqui\p"
-	.string "contradizem a versao oficial\nsobre a seguranca do ARQUIVO\p"
-	.string "VIVO.$"
+	.string "The core room is behind me.$"
 
 Route119_WeatherInstitute_2F_Text_ShellyIntro:
-	.string "Os pesquisadores cruzaram\nchuva, temperatura e relatos de\p"
-	.string "perda de memoria. O clima nao\nexplica o padrao; a\p"
-	.string "infraestrutura do ARQUIVO\nexplica melhor.$"
+	.string "MARTA: Stop right there.\p"
+	.string "These servers are under\n"
+	.string "HORIZON seizure order.\p"
+	.string "Walk away.$"
 
 Route119_WeatherInstitute_2F_Text_ShellyDefeat:
-	.string "Ahahahaha!\n"
-	.string "You're disgustingly strong!$"
+	.string "So you really can fight...$"
 
 Route119_WeatherInstitute_2F_Text_ShellyPostBattle:
-	.string "Os dados mostram picos de\nDESENCANTO perto de instalacoes\p"
-	.string "que usam sensores de VINCULO em\ngrande escala.$"
+	.string "You think this is about weather?\p"
+	.string "These logs tie LIVING ARCHIVE\n"
+	.string "to memory-loss clusters.\p"
+	.string "I will not leave them exposed.$"
 
 Route119_WeatherInstitute_2F_Text_TeamMagmaJustPassedBy:
-	.string "O HORIZONTE veio buscar os\nservidores. Os dados daqui\p"
-	.string "contradizem a versao oficial\nsobre a seguranca do ARQUIVO\p"
-	.string "VIVO.$"
+	.string "MARTA! We have a new report!\p"
+	.string "Remembrancer scouts are moving\n"
+	.string "toward the memorial.\p"
+	.string "They have a RECORD-MATRIX.$"
 
 Route119_WeatherInstitute_2F_Text_WeHaveToHurryToMtPyre:
-	.string "Os dados mostram picos de\nDESENCANTO perto de instalacoes\p"
-	.string "que usam sensores de VINCULO em\ngrande escala.$"
+	.string "Then we are done here.\p"
+	.string "If Luzia reaches it first,\n"
+	.string "she can wake the old current.\p"
+	.string "HORIZON, move!$"
 
 Route119_WeatherInstitute_2F_Text_ThanksPleaseTakePokemon:
-	.string "Thanks!\n"
-	.string "Thanks to you, we're safe!\p"
-	.string "It might be an odd way of thanking you,\n"
-	.string "but take this POKéMON.$"
+	.string "You protected our research.\p"
+	.string "Please take this POKéMON.\p"
+	.string "It reacts to weather shifts\n"
+	.string "better than any instrument.$"
 
 @ Unused
 Route119_WeatherInstitute_2F_Text_NoRoomForPokemon:
-	.string "Hm? You don't seem to have any room\n"
+	.string "You do not have room\n"
 	.string "for this POKéMON.$"
 
 Route119_WeatherInstitute_2F_Text_PlayerReceivedCastform:
 	.string "{PLAYER} received CASTFORM!$"
 
 Route119_WeatherInstitute_2F_Text_PokemonChangesWithWeather:
-	.string "Os pesquisadores cruzaram\nchuva, temperatura e relatos de\p"
-	.string "perda de memoria. O clima nao\nexplica o padrao; a\p"
-	.string "infraestrutura do ARQUIVO\nexplica melhor.$"
+	.string "CASTFORM changes with weather.\p"
+	.string "We raised it to compare natural\n"
+	.string "and forced climate shifts.$"
 
 Route119_WeatherInstitute_2F_Text_ChangingWeatherRidiculous:
-	.string "Os pesquisadores cruzaram\nchuva, temperatura e relatos de\p"
-	.string "perda de memoria. O clima nao\nexplica o padrao; a\p"
-	.string "infraestrutura do ARQUIVO\nexplica melhor.$"
+	.string "Weather can change fast,\n"
+	.string "but these spikes are too abrupt.\p"
+	.string "We are still tracing the cause.$"
 
 Route119_WeatherInstitute_2F_Text_GroudonWeather:
-	.string "Os sensores registram duas\ncorrentes antigas sob Arauna:\p"
-	.string "uma conserva VINCULOS; a outra\npermite que eles terminem. O\p"
-	.string "ARQUIVO tentou transformar\nambas em ferramentas.$"
+	.string "A severe dry front has formed\n"
+	.string "near {STR_VAR_1}.\p"
+	.string "The instruments detect\n"
+	.string "a deep BOND signature there.$"
 
 Route119_WeatherInstitute_2F_Text_KyogreWeather:
-	.string "Os sensores registram duas\ncorrentes antigas sob Arauna:\p"
-	.string "uma conserva VINCULOS; a outra\npermite que eles terminem. O\p"
-	.string "ARQUIVO tentou transformar\nambas em ferramentas.$"
+	.string "A massive downpour has formed\n"
+	.string "near {STR_VAR_1}.\p"
+	.string "The instruments detect\n"
+	.string "a deep BOND signature there.$"
 
 Route119_WeatherInstitute_2F_Text_NoAbnormalWeather:
-	.string "Os pesquisadores cruzaram\nchuva, temperatura e relatos de\p"
-	.string "perda de memoria. O clima nao\nexplica o padrao; a\p"
-	.string "infraestrutura do ARQUIVO\nexplica melhor.$"
-
+	.string "The anomalous readings are gone.\p"
+	.string "For now, Arauna's weather is\n"
+	.string "back within natural ranges.$"
