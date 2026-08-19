@@ -8,6 +8,7 @@ from dataclasses import asdict, dataclass
 from pathlib import Path
 
 from render_arauna_frontier_ui import render as render_frontier_ui
+from render_petalburg_woods_surface import render as render_petalburg_woods
 
 ROOT = Path(__file__).resolve().parents[1]
 ASM_GLOBS = (
@@ -95,6 +96,9 @@ def scan_asm(path: Path) -> list[Finding]:
     findings: list[Finding] = []
     current_label = "<unlabeled>"
     fragments: list[str] = []
+    source = path.read_text(encoding="utf-8")
+    if path == ROOT / "data" / "maps" / "PetalburgWoods" / "scripts.inc":
+        source = render_petalburg_woods(source)
 
     def flush() -> None:
         nonlocal fragments
@@ -110,7 +114,7 @@ def scan_asm(path: Path) -> list[Finding]:
             ))
         fragments = []
 
-    for raw in path.read_text(encoding="utf-8").splitlines():
+    for raw in source.splitlines():
         label = LABEL_RE.match(raw)
         if label:
             flush()
