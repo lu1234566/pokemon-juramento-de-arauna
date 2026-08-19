@@ -7,7 +7,11 @@ import re
 from dataclasses import asdict, dataclass
 from pathlib import Path
 
-from render_aguas_mboi_surface import render_city as render_aguas_mboi, render_tower as render_torre_outside
+from render_aguas_mboi_daily_surface import (
+    render_berries as render_aguas_berries,
+    render_city as render_aguas_mboi,
+    render_tower as render_torre_outside,
+)
 from render_arauna_frontier_ui import render as render_frontier_ui
 from render_arquivo_central_surface import render_b1f as render_arquivo_b1f, render_b2f as render_arquivo_b2f
 from render_mt_chimney_surface import render as render_mt_chimney
@@ -119,6 +123,8 @@ def render_asm_source(path: Path, source: str) -> str:
         return render_aguas_mboi(source)
     if path == ROOT / "data" / "maps" / "SkyPillar_Outside" / "scripts.inc":
         return render_torre_outside(source)
+    if path == ROOT / "data" / "text" / "berries.inc":
+        return render_aguas_berries(source)
     return source
 
 
