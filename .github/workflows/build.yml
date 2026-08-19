@@ -111,6 +111,9 @@ jobs:
       - name: Verify Porto do Sal Name Rater anchors
         run: python3 scripts/render_porto_sal_name_rater.py --check
 
+      - name: Verify Porto do Sal Battle Tent anchors
+        run: python3 scripts/render_porto_sal_battle_tent.py --check
+
       - name: Smoke-test rendered visible residue inventory
         run: |
           python3 scripts/audit_visible_residue_rendered.py --output /tmp/visible-residue.md

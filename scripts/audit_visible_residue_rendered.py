@@ -4,6 +4,7 @@ from __future__ import annotations
 from pathlib import Path
 
 import audit_visible_residue as base
+from render_porto_sal_battle_tent import render_asm as render_battle_tent_asm, render_strings as render_battle_tent_strings
 from render_porto_sal_berry_powder import render_city as render_berry_powder_city, render_strings as render_berry_powder_strings
 from render_porto_sal_civic_signs import render as render_civic_signs
 from render_porto_sal_daily_life import render as render_porto_sal_daily_life
@@ -24,6 +25,7 @@ ORIGINAL_RENDER_C = base.render_c_source
 
 def render_asm_source(path: Path, source: str) -> str:
     rendered = ORIGINAL_RENDER_ASM(path, source)
+    rendered = render_battle_tent_asm(path, rendered)
     if path == ROOT / "data" / "maps" / "SlateportCity" / "scripts.inc":
         rendered = render_museum_queue(rendered)
         rendered = render_civic_signs(rendered)
@@ -49,7 +51,8 @@ def render_c_source(path: Path, source: str) -> str:
     rendered = ORIGINAL_RENDER_C(path, source)
     if path == ROOT / "src" / "strings.c":
         rendered = render_berry_powder_strings(rendered)
-        return render_harbor_strings(rendered)
+        rendered = render_harbor_strings(rendered)
+        return render_battle_tent_strings(rendered)
     return rendered
 
 
