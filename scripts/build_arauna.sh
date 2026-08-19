@@ -60,6 +60,8 @@ overlay_files=(
     "data/maps/SlateportCity_SternsShipyard_2F/scripts.inc"
     "data/text/battle_tent.inc"
     "data/text/berries.inc"
+    "data/text/mart_clerk.inc"
+    "data/text/pkmn_center_nurse.inc"
     "src/data/items.h"
     "src/data/text/item_descriptions.h"
 )
@@ -106,6 +108,7 @@ python3 scripts/render_porto_sal_name_rater.py --in-place
 python3 scripts/render_porto_sal_battle_tent.py --in-place
 python3 scripts/render_porto_sal_fan_club.py --in-place
 python3 scripts/render_porto_sal_final_interiors.py --in-place
+python3 scripts/render_shared_center_mart_service.py --in-place
 
 cpp="${CPP:-arm-none-eabi-cpp}"
 cpp_with_language="${cpp} -DARAUNA_LANGUAGE=${language_id}"
