@@ -33,6 +33,8 @@ overlay_files=(
     "data/maps/AquaHideout_B1F/scripts.inc"
     "data/maps/AquaHideout_B2F/scripts.inc"
     "data/maps/SeafloorCavern_Room9/scripts.inc"
+    "data/maps/SootopolisCity/scripts.inc"
+    "data/maps/SkyPillar_Outside/scripts.inc"
     "src/data/items.h"
     "src/data/text/item_descriptions.h"
 )
@@ -60,6 +62,7 @@ python3 scripts/render_mt_chimney_surface.py --input "data/maps/MtChimney/script
 python3 scripts/render_ruinas_memorial_surface_checked.py --in-place
 python3 scripts/render_arquivo_central_surface.py --in-place
 python3 scripts/render_mboi_climax_surface.py --in-place
+python3 scripts/render_aguas_mboi_surface.py --in-place
 
 cpp="${CPP:-arm-none-eabi-cpp}"
 cpp_with_language="${cpp} -DARAUNA_LANGUAGE=${language_id}"
