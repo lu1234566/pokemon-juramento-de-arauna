@@ -60,6 +60,9 @@ jobs:
       - name: Verify M'Boi climax English overlay
         run: python3 scripts/render_mboi_climax_en.py --check
 
+      - name: Verify Aguas de M'Boi English overlay
+        run: python3 scripts/render_aguas_mboi_en_checked.py --check
+
       - name: Verify Memorial lower floors English overlay
         run: python3 scripts/render_memorial_lower_floors_en.py --check
 
