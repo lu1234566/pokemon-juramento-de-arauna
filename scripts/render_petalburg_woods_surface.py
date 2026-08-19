@@ -12,79 +12,77 @@ MAX_VISIBLE_WIDTH = 32
 TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
     "PetalburgWoods_Text_NotAOneToBeFound": (
         ("Not a one to be found",),
-        ("Nada...\\n", "Ainda nada por aqui.$"),
+        ("Nothing...\\n", "Still nothing out here.$"),
     ),
     "PetalburgWoods_Text_HaveYouSeenShroomish": (
         ("SHROOMISH", "I really love that POKéMON"),
         (
-            "Ola. Viu algum POKéMON raro\\n",
-            "por aqui?\\p",
-            "Estou acompanhando a fauna\\n",
-            "desta mata.$",
+            "Hey. Have you seen anything\\n",
+            "unusual in these woods?\\p",
+            "I'm tracking changes in the\\n",
+            "local POKéMON population.$",
         ),
     ),
     "PetalburgWoods_Text_IWasGoingToAmbushYou": (
         ("ambush you", "PETALBURG WOODS"),
         (
-            "Eu ia pegar voce de surpresa,\\n",
-            "mas voce demorou demais.\\p",
-            "Cansei de esperar. Vim ate aqui.$",
+            "I was supposed to wait for you.\\p",
+            "You took too long.\\n",
+            "So I came to collect.$",
         ),
     ),
     "PetalburgWoods_Text_HandOverThosePapers": (
         ("DEVON RESEARCHER", "Hand over those papers"),
-        ("Voce, PESQUISADOR!\\p", "Entregue esses documentos!$"),
+        ("You. RESEARCHER.\\p", "Hand over the field reports!$"),
     ),
     "PetalburgWoods_Text_YouHaveToHelpMe": (
         ("POKéMON TRAINER", "help me"),
-        ("Ei! Voce e treinador, nao e?\\p", "Preciso de ajuda!$"),
+        ("Wait! You're a TRAINER, right?\\p", "I need your help!$"),
     ),
     "PetalburgWoods_Text_NoOneCrossesTeamAqua": (
         ("CONSORCIO HORIZONTE", "battle me"),
         (
-            "Vai protege-lo?\\p",
-            "Quem interfere no CONSORCIO\\n",
-            "HORIZONTE aprende rapido.\\p",
-            "Vamos resolver isso numa luta!$",
+            "Planning to protect him?\\p",
+            "HORIZON leaves no loose ends.\\p",
+            "Stand aside or battle me.$",
         ),
     ),
     "PetalburgWoods_Text_YoureKiddingMe": (
         ("You're kidding me",),
-        ("Nao pode ser... Voce e forte!$",),
+        ("No way... You're good!$",),
     ),
     "PetalburgWoods_Text_YouveGotSomeNerve": (
         ("CONSORCIO HORIZONTE", "RUSTBORO"),
         (
-            "Tsc... Voce tem coragem de\\n",
-            "mexer com o CONSORCIO HORIZONTE.\\p",
-            "Hoje eu recuo.\\p",
-            "Temos trabalho na SERRA DO UIVO.$",
+            "You've got nerve...\\p",
+            "HORIZON is already moving on\\n",
+            "SERRA DO UIVO.\\p",
+            "This isn't over.$",
         ),
     ),
     "PetalburgWoods_Text_ThatWasAwfullyClose": (
         ("awfully close", "GREAT BALL"),
         (
-            "Foi por pouco.\\p",
-            "Obrigado. Esses documentos sao\\n",
-            "importantes.\\p",
-            "Pegue isto como agradecimento.$",
+            "That was close.\\p",
+            "These reports are field records\\n",
+            "from the sensor network.\\p",
+            "Please take this.$",
         ),
     ),
     "PetalburgWoods_Text_TeamAquaAfterSomethingInRustboro": (
         ("CONSORCIO HORIZONTE", "RUSTBORO"),
         (
-            "Ele disse que o CONSORCIO\\n",
-            "HORIZONTE esta atras de algo\\n",
-            "na SERRA DO UIVO, certo?$",
+            "He said HORIZON is moving on\\n",
+            "SERRA DO UIVO, right?$",
         ),
     ),
     "PetalburgWoods_Text_ICantBeWastingTime": (
         ("crisis", "wasting time"),
-        ("Isso e serio.\\n", "Preciso chegar la.$"),
+        ("Then I need to get there.\\n", "Now.$"),
     ),
     "PetalburgWoods_Text_YoureLoadedWithItems": (
         ("loaded with items", "GREAT BALL"),
-        ("Sua BOLSA esta cheia.\\n", "Nao consigo entregar isto.$"),
+        ("Your BAG is full.\\n", "Can't hand over this GREAT BALL.$"),
     ),
 }
 
@@ -126,7 +124,14 @@ def render(source: str) -> str:
 
 
 def validate_rendered(rendered: str) -> None:
-    forbidden = ("PETALBURG WOODS", "DEVON RESEARCHER", "RUSTBORO", "TEAM AQUA")
+    forbidden = (
+        "PETALBURG WOODS",
+        "DEVON RESEARCHER",
+        "RUSTBORO",
+        "TEAM AQUA",
+        "CONSORCIO HORIZONTE",
+        "HORIZONTE",
+    )
     for label, (_, payloads) in TARGETS.items():
         pattern = re.compile(BLOCK_RE_TEMPLATE.format(label=re.escape(label)))
         match = pattern.search(rendered)
@@ -144,7 +149,7 @@ def validate_rendered(rendered: str) -> None:
 
 def main() -> int:
     parser = argparse.ArgumentParser(
-        description="Render Arauna's first Consorcio Horizonte forest encounter without changing event wiring."
+        description="Render Arauna's first HORIZON forest encounter in English without changing event wiring."
     )
     parser.add_argument("--input", type=Path, default=DEFAULT_INPUT)
     parser.add_argument("--output", type=Path)
@@ -161,7 +166,7 @@ def main() -> int:
     validate_rendered(rendered)
 
     if args.check:
-        print(f"Horizonte forest renderer OK: {len(TARGETS)} dialogue blocks validated.")
+        print(f"Horizon forest English renderer OK: {len(TARGETS)} dialogue blocks validated.")
         return 0
 
     if args.in_place:
