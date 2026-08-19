@@ -7,6 +7,7 @@ import audit_visible_residue as base
 from render_porto_sal_berry_powder import render_city as render_berry_powder_city, render_strings as render_berry_powder_strings
 from render_porto_sal_civic_signs import render as render_civic_signs
 from render_porto_sal_daily_life import render as render_porto_sal_daily_life
+from render_porto_sal_harbor_service import render_harbor as render_harbor_service, render_strings as render_harbor_strings
 from render_porto_sal_museum_people_checked import (
     render_city as render_museum_queue,
     render_museum as render_museum_people_1f,
@@ -28,6 +29,8 @@ def render_asm_source(path: Path, source: str) -> str:
         rendered = render_porto_sal_daily_life(rendered)
         rendered = render_porto_sal_seu_bento(rendered)
         return render_berry_powder_city(rendered)
+    if path == ROOT / "data" / "maps" / "SlateportCity_Harbor" / "scripts.inc":
+        return render_harbor_service(rendered)
     if path == ROOT / "data" / "maps" / "SlateportCity_OceanicMuseum_1F" / "scripts.inc":
         return render_museum_science_1f(render_museum_people_1f(rendered))
     if path == ROOT / "data" / "maps" / "SlateportCity_OceanicMuseum_2F" / "scripts.inc":
@@ -42,7 +45,8 @@ def render_asm_source(path: Path, source: str) -> str:
 def render_c_source(path: Path, source: str) -> str:
     rendered = ORIGINAL_RENDER_C(path, source)
     if path == ROOT / "src" / "strings.c":
-        return render_berry_powder_strings(rendered)
+        rendered = render_berry_powder_strings(rendered)
+        return render_harbor_strings(rendered)
     return rendered
 
 
