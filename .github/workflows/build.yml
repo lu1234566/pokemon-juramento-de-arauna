@@ -21,120 +21,15 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Verify Arauna visible-residue cleanup
-        run: |
-          python3 tools/cleanup_emerald_residue_signs.py --check
-          python3 tools/cleanup_match_call_residue.py --check
-          python3 tools/cleanup_ciro_route_residue.py --check
-          python3 tools/cleanup_littleroot_house_residue.py --check
-          python3 tools/cleanup_battle_message_residue.py --check
-          python3 tools/cleanup_vila_amanhecer_residue.py --check
-          python3 tools/cleanup_intro_speech_residue.py --check
-          python3 tools/cleanup_region_map_names.py --check
-          python3 tools/cleanup_system_ui_identity.py --check
-          python3 tools/cleanup_route119_surface_residue.py --check
-          python3 tools/cleanup_val_household_residue.py --check
-          python3 tools/cleanup_pokedex_rating_residue.py --check
-          python3 tools/cleanup_anahi_lab_system_residue.py --check
-          python3 tools/cleanup_postgame_circuito_residue.py --check
-          python3 tools/cleanup_postgame_arrival_residue.py --check
+      - name: Verify English-only project policy
+        run: python3 scripts/check_english_only_policy.py
 
-      - name: Verify bilingual intro contract
-        run: python3 scripts/check_localization.py
-
-      - name: Verify Circuito UI overlay anchors
-        run: python3 scripts/render_arauna_frontier_ui.py --check
-
-      - name: Verify Horizonte forest overlay anchors
-        run: python3 scripts/render_petalburg_woods_surface.py --check
-
-      - name: Verify Serra da Cinza overlay anchors
-        run: python3 scripts/render_mt_chimney_surface.py --check
-
-      - name: Verify Ruinas and Memorial overlay anchors
-        run: python3 scripts/render_ruinas_memorial_surface_checked.py --check
-
-      - name: Verify Arquivo Central depth anchors
-        run: python3 scripts/render_arquivo_central_surface.py --check
-
-      - name: Verify M'Boi climax anchors
-        run: python3 scripts/render_mboi_climax_surface.py --check
-
-      - name: Verify Aguas de M'Boi and tower handoff anchors
-        run: python3 scripts/render_aguas_mboi_surface.py --check
-
-      - name: Verify Aguas daily and Kiri anchors
-        run: python3 scripts/render_aguas_mboi_daily_surface.py --check
-
-      - name: Verify lower Lembrantes anchors
-        run: python3 scripts/render_lembrantes_lower_surface.py --check
-
-      - name: Verify Lembrantes core anchors
-        run: python3 scripts/render_lembrantes_core_surface.py --check
-
-      - name: Verify Missoes do Ceu ground-floor anchors
-        run: python3 scripts/render_missoes_ceu_ground_floor.py --check
-
-      - name: Verify Missoes do Ceu confrontation anchors
-        run: python3 scripts/render_missoes_ceu_confrontation.py --check
-
-      - name: Verify Porto do Sal submarine anchors
-        run: python3 scripts/render_porto_sal_submersivel.py --check
-
-      - name: Verify Porto do Sal museum people anchors
-        run: python3 scripts/render_porto_sal_museum_people_checked.py --check
-
-      - name: Verify Porto do Sal museum confrontation anchors
-        run: python3 scripts/render_porto_sal_museum_confrontation.py --check
-
-      - name: Verify Porto do Sal museum science anchors
-        run: python3 scripts/render_porto_sal_museum_science.py --check
-
-      - name: Verify Porto do Sal shipyard anchors
-        run: python3 scripts/render_porto_sal_shipyard.py --check
-
-      - name: Verify Porto do Sal civic-sign anchors
-        run: python3 scripts/render_porto_sal_civic_signs.py --check
-
-      - name: Verify Porto do Sal daily-life anchors
-        run: python3 scripts/render_porto_sal_daily_life.py --check
-
-      - name: Verify Porto do Sal Seu Bento anchors
-        run: python3 scripts/render_porto_sal_seu_bento.py --check
-
-      - name: Verify Porto do Sal Berry Powder anchors
-        run: python3 scripts/render_porto_sal_berry_powder.py --check
-
-      - name: Verify Porto do Sal harbor-service anchors
-        run: python3 scripts/render_porto_sal_harbor_service.py --check
-
-      - name: Verify Porto do Sal Name Rater anchors
-        run: python3 scripts/render_porto_sal_name_rater.py --check
-
-      - name: Verify Porto do Sal Battle Tent anchors
-        run: python3 scripts/render_porto_sal_battle_tent.py --check
-
-      - name: Verify Porto do Sal Fan Club anchors
-        run: python3 scripts/render_porto_sal_fan_club.py --check
-
-      - name: Verify final Porto do Sal interior anchors
-        run: python3 scripts/render_porto_sal_final_interiors.py --check
-
-      - name: Verify shared Center and Mart service anchors
-        run: python3 scripts/render_shared_center_mart_service.py --check
-
-      - name: Smoke-test rendered visible residue inventory
-        run: |
-          python3 scripts/audit_visible_residue_rendered.py --output /tmp/visible-residue.md
-          sed -n '1,8p' /tmp/visible-residue.md
+      - name: Verify no proprietary files
+        run: bash scripts/check_no_proprietary_files.sh
 
   build:
-    name: Build Arauna (intro ${{ matrix.intro_language }})
+    name: Build Arauna English ROM
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        intro_language: [ptbr, en]
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -144,8 +39,8 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y gcc-arm-none-eabi binutils-arm-none-eabi libpng-dev
 
-      - name: Build custom Arauna ROM
-        run: bash scripts/build_arauna.sh "${{ matrix.intro_language }}" -j2 all
+      - name: Build English-only Arauna ROM
+        run: bash scripts/build_arauna.sh -j2 all
 
   build-and-test:
     name: build-and-test
@@ -153,7 +48,7 @@ jobs:
     needs: [arauna-static-validation, build]
     runs-on: ubuntu-latest
     steps:
-      - name: Require validation and both language builds
+      - name: Require validation and English build
         env:
           SAFETY_RESULT: ${{ needs.arauna-static-validation.result }}
           BUILD_RESULT: ${{ needs.build.result }}
