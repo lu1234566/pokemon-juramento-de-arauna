@@ -13,16 +13,18 @@ A introdução usa os mesmos nove labels internos nas duas variantes:
 - `data/text/arauna/pt_br/birch_speech.inc`;
 - `data/text/arauna/en/birch_speech.inc`.
 
-`data/text/birch_speech.inc` funciona somente como seletor de assembly e preserva os labels/fluxo que a engine do Emerald já usa.
+`data/text/birch_speech.inc` funciona somente como seletor e preserva os labels/fluxo que a engine do Emerald já usa.
 
-## Seleção
+## Seleção e pipeline
 
-O símbolo de assembler `ARAUNA_LANGUAGE` define a variante:
+A macro de pré-processador `ARAUNA_LANGUAGE` define a variante:
 
 - `0` = inglês;
 - `1` = português brasileiro.
 
-Se o símbolo não for informado, o seletor usa `1`, preservando o comportamento atual da `main` em português.
+Se a macro não for informada, o seletor define `1`, preservando o comportamento atual da `main` em português.
+
+A seleção precisa acontecer na etapa do `cpp`, não no GNU assembler. A regra de dados do Makefile executa uma primeira passagem do `preproc` do pokeemerald, depois o `cpp`, depois uma segunda passagem do `preproc` antes do assembler. Como o primeiro `preproc` expande diretivas `.include` de forma imediata, o seletor usa `#include`: assim o `cpp` elimina o idioma não selecionado antes que a segunda passagem converta as `.string` em bytes do charmap.
 
 ## Builds isoladas
 
@@ -33,7 +35,7 @@ bash scripts/build_arauna.sh ptbr -j2 all
 bash scripts/build_arauna.sh en -j2 all
 ```
 
-O wrapper usa diretórios de build separados e nomes de ROM distintos para evitar reutilização acidental de objetos entre as duas variantes.
+O wrapper injeta `ARAUNA_LANGUAGE` no comando do `cpp`, usa diretórios de build separados e nomes de ROM distintos para evitar reutilização acidental de objetos entre as duas variantes.
 
 Como a build é moderna (`MODERN=1`), os nomes resultantes seguem o padrão do Makefile e incluem `_modern`.
 
