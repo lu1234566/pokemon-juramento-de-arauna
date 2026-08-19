@@ -4,118 +4,32 @@ set -euo pipefail
 repo_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$repo_root"
 
-language="${1:-ptbr}"
+# Arauna is English-only. Keep accepting an explicit `en`/`english` token for
+# compatibility with older commands, but reject PT-BR instead of silently
+# producing a Portuguese build.
 if [[ $# -gt 0 ]]; then
-    shift
+    case "${1,,}" in
+        en|english)
+            shift
+            ;;
+        ptbr|pt-br|portuguese|portugues)
+            echo "Portuguese builds are disabled: Pokemon Juramento de Arauna is English-only." >&2
+            exit 2
+            ;;
+    esac
 fi
 
-case "${language,,}" in
-    ptbr|pt-br|portuguese|portugues)
-        language_id=1
-        suffix=ptbr
-        ;;
-    en|english)
-        language_id=0
-        suffix=en
-        ;;
-    *)
-        echo "Unsupported intro language '$language'. Use ptbr or en." >&2
-        exit 2
-        ;;
-esac
-
-overlay_files=(
-    "src/strings.c"
-    "data/maps/BattleFrontier_BattleFactoryLobby/scripts.inc"
-    "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.inc"
-    "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc"
-    "data/maps/PetalburgWoods/scripts.inc"
-    "data/maps/MtChimney/scripts.inc"
-    "data/maps/MeteorFalls_1F_1R/scripts.inc"
-    "data/maps/MtPyre_Summit/scripts.inc"
-    "data/maps/AquaHideout_B1F/scripts.inc"
-    "data/maps/AquaHideout_B2F/scripts.inc"
-    "data/maps/SeafloorCavern_Room9/scripts.inc"
-    "data/maps/SootopolisCity/scripts.inc"
-    "data/maps/SkyPillar_Outside/scripts.inc"
-    "data/maps/MagmaHideout_1F/scripts.inc"
-    "data/maps/MagmaHideout_2F_1R/scripts.inc"
-    "data/maps/MagmaHideout_2F_2R/scripts.inc"
-    "data/maps/MagmaHideout_3F_1R/scripts.inc"
-    "data/maps/MagmaHideout_3F_2R/scripts.inc"
-    "data/maps/MagmaHideout_4F/scripts.inc"
-    "data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc"
-    "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc"
-    "data/maps/SlateportCity/scripts.inc"
-    "data/maps/SlateportCity_BattleTentLobby/scripts.inc"
-    "data/maps/SlateportCity_Harbor/scripts.inc"
-    "data/maps/SlateportCity_House/scripts.inc"
-    "data/maps/SlateportCity_Mart/scripts.inc"
-    "data/maps/SlateportCity_NameRatersHouse/scripts.inc"
-    "data/maps/SlateportCity_OceanicMuseum_1F/scripts.inc"
-    "data/maps/SlateportCity_OceanicMuseum_2F/scripts.inc"
-    "data/maps/SlateportCity_PokemonCenter_1F/scripts.inc"
-    "data/maps/SlateportCity_PokemonFanClub/scripts.inc"
-    "data/maps/SlateportCity_SternsShipyard_1F/scripts.inc"
-    "data/maps/SlateportCity_SternsShipyard_2F/scripts.inc"
-    "data/text/battle_tent.inc"
-    "data/text/berries.inc"
-    "data/text/mart_clerk.inc"
-    "data/text/pkmn_center_nurse.inc"
-    "src/data/items.h"
-    "src/data/text/item_descriptions.h"
-)
-overlay_backup_dir="$(mktemp -d)"
-
-for file in "${overlay_files[@]}"; do
-    mkdir -p "$overlay_backup_dir/$(dirname "$file")"
-    cp "$file" "$overlay_backup_dir/$file"
-done
-
-restore_overlays() {
-    for file in "${overlay_files[@]}"; do
-        cp "$overlay_backup_dir/$file" "$file"
-    done
-    rm -rf "$overlay_backup_dir"
-}
-trap restore_overlays EXIT
-trap 'exit 129' HUP
-trap 'exit 130' INT
-trap 'exit 143' TERM
-
-python3 scripts/render_arauna_frontier_ui.py --input "src/strings.c" --in-place
-python3 scripts/render_petalburg_woods_surface.py --input "data/maps/PetalburgWoods/scripts.inc" --in-place
-python3 scripts/render_mt_chimney_surface.py --input "data/maps/MtChimney/scripts.inc" --in-place
-python3 scripts/render_ruinas_memorial_surface_checked.py --in-place
-python3 scripts/render_arquivo_central_surface.py --in-place
-python3 scripts/render_mboi_climax_surface.py --in-place
-python3 scripts/render_aguas_mboi_daily_surface.py --in-place
-python3 scripts/render_lembrantes_lower_surface.py --in-place
-python3 scripts/render_lembrantes_core_surface.py --in-place
-python3 scripts/render_missoes_ceu_ground_floor.py --in-place
-python3 scripts/render_missoes_ceu_confrontation.py --in-place
-python3 scripts/render_porto_sal_submersivel.py --in-place
-python3 scripts/render_porto_sal_museum_people_checked.py --in-place
-python3 scripts/render_porto_sal_museum_confrontation.py --in-place
-python3 scripts/render_porto_sal_museum_science.py --in-place
-python3 scripts/render_porto_sal_shipyard.py --in-place
-python3 scripts/render_porto_sal_civic_signs.py --in-place
-python3 scripts/render_porto_sal_daily_life.py --in-place
-python3 scripts/render_porto_sal_seu_bento.py --in-place
-python3 scripts/render_porto_sal_berry_powder.py --in-place
-python3 scripts/render_porto_sal_harbor_service.py --in-place
-python3 scripts/render_porto_sal_name_rater.py --in-place
-python3 scripts/render_porto_sal_battle_tent.py --in-place
-python3 scripts/render_porto_sal_fan_club.py --in-place
-python3 scripts/render_porto_sal_final_interiors.py --in-place
-python3 scripts/render_shared_center_mart_service.py --in-place
+# The legacy render_* scripts contain Portuguese surface rewrites created
+# during an earlier localization pass. They are intentionally dormant in the
+# official build until their Arauna-specific content is rewritten in English.
+# Building directly from the repository sources prevents those PT-BR overlays
+# from being injected into the ROM.
 
 cpp="${CPP:-arm-none-eabi-cpp}"
-cpp_with_language="${cpp} -DARAUNA_LANGUAGE=${language_id}"
 
 make \
     MODERN=1 \
-    BUILD_DIR="build/arauna-intro-${suffix}" \
-    FILE_NAME="pokeemerald-intro-${suffix}" \
-    CPP="${cpp_with_language}" \
+    BUILD_DIR="build/arauna-en" \
+    FILE_NAME="pokemon-juramento-de-arauna-en" \
+    CPP="$cpp" \
     "$@"
