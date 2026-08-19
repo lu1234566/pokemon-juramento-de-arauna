@@ -48,6 +48,9 @@ jobs:
       - name: Verify Vila da Passagem English surface
         run: python3 scripts/render_vila_da_passagem_en.py --check
 
+      - name: Verify Route 102 and Pampa da Espera English surface
+        run: python3 scripts/render_route102_pampa_en_checked.py --check
+
       - name: Verify Horizon forest English overlay
         run: python3 scripts/render_petalburg_woods_surface.py --check
 
