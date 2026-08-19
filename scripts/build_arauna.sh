@@ -22,6 +22,7 @@ fi
 # Legacy Portuguese narrative renderers remain dormant. English-only overlays
 # are re-enabled individually after their output has been reviewed.
 overlay_files=(
+    "src/strings.c"
     "src/data/trainers.h"
     "data/maps/PetalburgWoods/scripts.inc"
     "data/maps/Route119/scripts.inc"
@@ -32,6 +33,8 @@ overlay_files=(
     "data/maps/SlateportCity_Harbor/scripts.inc"
     "data/maps/SlateportCity_OceanicMuseum_1F/scripts.inc"
     "data/maps/SlateportCity_OceanicMuseum_2F/scripts.inc"
+    "data/maps/SlateportCity_SternsShipyard_1F/scripts.inc"
+    "data/maps/SlateportCity_SternsShipyard_2F/scripts.inc"
     "data/maps/MtChimney/scripts.inc"
     "data/maps/FortreeCity/scripts.inc"
     "data/maps/FortreeCity_Gym/scripts.inc"
@@ -101,6 +104,9 @@ python3 scripts/render_porto_sal_museum_people_en_checked.py --in-place
 python3 scripts/render_porto_sal_museum_science_en_checked.py --in-place
 python3 scripts/render_porto_sal_museum_confrontation_en_checked.py --in-place
 python3 scripts/render_porto_sal_submersivel_en.py --in-place
+python3 scripts/render_porto_sal_daily_life_en.py --in-place
+python3 scripts/render_porto_sal_shipyard_en.py --in-place
+python3 scripts/render_porto_sal_harbor_service_en.py --in-place
 
 cpp="${CPP:-arm-none-eabi-cpp}"
 
