@@ -51,6 +51,9 @@ jobs:
       - name: Verify Route 120 Bento English bridge
         run: python3 scripts/render_route120_bento_en.py --check
 
+      - name: Verify Central Archive English overlay
+        run: python3 scripts/render_central_archive_en.py --check
+
       - name: Verify no proprietary files
         run: bash scripts/check_no_proprietary_files.sh
 
