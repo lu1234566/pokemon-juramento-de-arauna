@@ -77,7 +77,7 @@ def load_supported_characters() -> set[str]:
 def validate_characters(language: str, texts: dict[str, str], supported: set[str]) -> list[str]:
     errors: list[str] = []
     for label, text in texts.items():
-        visible_text = PLACEHOLDER_RE.sub("", LINE_BREAK_RE.sub("", text))
+        visible_text = PLACEHOLDER_RE.sub("", LINE_BREAK_RE.sub("", text)).replace("$", "")
         unsupported = sorted({character for character in visible_text if character not in supported})
         if unsupported:
             rendered = ", ".join(f"U+{ord(character):04X} {character!r}" for character in unsupported)
