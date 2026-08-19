@@ -1,0 +1,33 @@
+VILA AMANHECER — PORYMAP V3
+
+MAPA TÉCNICO 20x20
+
+Legenda:
+# = borda/estrutura sólida preservada
+. = grama
+= = caminho de terra
+* = flores/vegetação decorativa
+o = decoração/metatile existente preservado
+D = porta/warp preservado
+S = placa preservada
+
+00 ##########==########
+01 ##########==########
+02 ##........==......##
+03 ##.**.....==....**##
+04 ...*.*.o..==...o*...
+05 ..#####..*==.#####o.
+06 ..#####*o.==.#####..
+07 .o#####...==.#####.*
+08 *.###D#S..==S#D###..
+09 .*...==========....*
+10 *.ooo.=====o==..*...
+11 ..**.o=.======*.**..
+12 .o*ooo========...*..
+13 .o.#######=====S....
+14 ...#######==.*o..*..
+15 .**#######==.....o.o
+16 .o.####D##==....*o##
+17 o*....S=====....o.##
+18 ##***....oo.***.####
+19 ##oooooooooooooo####
