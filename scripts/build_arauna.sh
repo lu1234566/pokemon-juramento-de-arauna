@@ -45,6 +45,7 @@ overlay_files=(
     "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc"
     "data/maps/SlateportCity/scripts.inc"
     "data/maps/SlateportCity_Harbor/scripts.inc"
+    "data/maps/SlateportCity_OceanicMuseum_1F/scripts.inc"
     "data/maps/SlateportCity_OceanicMuseum_2F/scripts.inc"
     "data/text/berries.inc"
     "src/data/items.h"
@@ -80,6 +81,7 @@ python3 scripts/render_lembrantes_core_surface.py --in-place
 python3 scripts/render_missoes_ceu_ground_floor.py --in-place
 python3 scripts/render_missoes_ceu_confrontation.py --in-place
 python3 scripts/render_porto_sal_submersivel.py --in-place
+python3 scripts/render_porto_sal_museum_people_checked.py --in-place
 python3 scripts/render_porto_sal_museum_confrontation.py --in-place
 
 cpp="${CPP:-arm-none-eabi-cpp}"
