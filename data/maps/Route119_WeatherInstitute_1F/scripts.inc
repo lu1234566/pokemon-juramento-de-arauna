@@ -69,61 +69,56 @@ Route119_WeatherInstitute_1F_EventScript_Grunt4::
 	end
 
 Route119_WeatherInstitute_1F_Text_Grunt1Intro:
-	.string "Os dados mostram picos de\nDESENCANTO perto de instalacoes\p"
-	.string "que usam sensores de VINCULO em\ngrande escala.$"
+	.string "These servers were not built\n"
+	.string "for weather alone.\p"
+	.string "They track DISENCHANTMENT\n"
+	.string "near large BOND arrays.$"
 
 Route119_WeatherInstitute_1F_Text_Grunt1Defeat:
-	.string "Os dados mostram picos de\nDESENCANTO perto de instalacoes\p"
-	.string "que usam sensores de VINCULO em\ngrande escala.$"
+	.string "So that's what the logs show...$"
 
 Route119_WeatherInstitute_1F_Text_Grunt1PostBattle:
-	.string "O HORIZONTE veio buscar os\nservidores. Os dados daqui\p"
-	.string "contradizem a versao oficial\nsobre a seguranca do ARQUIVO\p"
-	.string "VIVO.$"
+	.string "HORIZON wants the servers.\p"
+	.string "These records challenge their\n"
+	.string "LIVING ARCHIVE safety claims.$"
 
 Route119_WeatherInstitute_1F_Text_Grunt4Intro:
-	.string "Os pesquisadores cruzaram\nchuva, temperatura e relatos de\p"
-	.string "perda de memoria. O clima nao\nexplica o padrao; a\p"
-	.string "infraestrutura do ARQUIVO\nexplica melhor.$"
+	.string "They crossed rain, heat and\n"
+	.string "memory-loss reports.\p"
+	.string "Weather doesn't fit the pattern.\p"
+	.string "The LIVING ARCHIVE does.$"
 
 Route119_WeatherInstitute_1F_Text_Grunt4Defeat:
-	.string "Os pesquisadores cruzaram\nchuva, temperatura e relatos de\p"
-	.string "perda de memoria. O clima nao\nexplica o padrao; a\p"
-	.string "infraestrutura do ARQUIVO\nexplica melhor.$"
+	.string "Then the pattern is real...$"
 
 Route119_WeatherInstitute_1F_Text_Grunt4PostBattle:
-	.string "Os pesquisadores cruzaram\nchuva, temperatura e relatos de\p"
-	.string "perda de memoria. O clima nao\nexplica o padrao; a\p"
-	.string "infraestrutura do ARQUIVO\nexplica melhor.$"
+	.string "Someone buried this on purpose.$"
 
 Route119_WeatherInstitute_1F_Text_EveryoneWentUpstairs:
-	.string "While I was sleeping, everyone went\n"
-	.string "upstairs!$"
+	.string "I was asleep when they came in.\n"
+	.string "Everyone ran upstairs!$"
 
 Route119_WeatherInstitute_1F_Text_WowYoureStrong:
-	.string "Wow, you're really strong!\p"
-	.string "I wish I could be a POKéMON TRAINER\n"
-	.string "like you!$"
+	.string "Wow! You are really strong!\p"
+	.string "I want to train POKéMON too!$"
 
 Route119_WeatherInstitute_1F_Text_ProfStudyingRain:
-	.string "The PROFESSOR loves rain.\n"
-	.string "That's a fact.\p"
-	.string "But if it keeps raining, people will be in\n"
-	.string "trouble. That's another fact.\p"
-	.string "And thus, the PROFESSOR is studying\n"
-	.string "if the rain can be put to good use.$"
+	.string "Our lead researcher tracks rain.\p"
+	.string "If we understand a storm early,\n"
+	.string "we can warn people in time.$"
 
 Route119_WeatherInstitute_1F_Text_NoticingAbnormalWeather:
-	.string "Os pesquisadores cruzaram\nchuva, temperatura e relatos de\p"
-	.string "perda de memoria. O clima nao\nexplica o padrao; a\p"
-	.string "infraestrutura do ARQUIVO\nexplica melhor.$"
+	.string "The instruments are reading\n"
+	.string "weather with no natural source.\p"
+	.string "Something under Arauna is\n"
+	.string "forcing the pattern.$"
 
 Route119_WeatherInstitute_1F_Text_WhatWereAquasUpTo:
-	.string "O HORIZONTE veio buscar os\nservidores. Os dados daqui\p"
-	.string "contradizem a versao oficial\nsobre a seguranca do ARQUIVO\p"
-	.string "VIVO.$"
+	.string "HORIZON came for the servers.\p"
+	.string "They called it a safety review.\p"
+	.string "It was not.$"
 
 Route119_WeatherInstitute_1F_Text_TakeRestInBed:
-	.string "There's a bed…\n"
-	.string "Let's take a rest.$"
+	.string "There is a bed...\n"
+	.string "A short rest should help.$"
 

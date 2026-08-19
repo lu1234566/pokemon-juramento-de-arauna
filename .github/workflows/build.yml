@@ -24,6 +24,12 @@ jobs:
       - name: Verify English-only project policy
         run: python3 scripts/check_english_only_policy.py
 
+      - name: Verify Weather Institute 1F English surface
+        run: python3 scripts/check_weather_institute_1f_en.py
+
+      - name: Verify shared English faction trainer names
+        run: python3 scripts/render_shared_trainer_names_en.py --check
+
       - name: Verify no proprietary files
         run: bash scripts/check_no_proprietary_files.sh
 

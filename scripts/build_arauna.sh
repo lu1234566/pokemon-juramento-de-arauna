@@ -19,11 +19,30 @@ if [[ $# -gt 0 ]]; then
     esac
 fi
 
-# The legacy render_* scripts contain Portuguese surface rewrites created
-# during an earlier localization pass. They are intentionally dormant in the
-# official build until their Arauna-specific content is rewritten in English.
-# Building directly from the repository sources prevents those PT-BR overlays
-# from being injected into the ROM.
+# Legacy Portuguese narrative renderers remain dormant. English-only overlays
+# are re-enabled individually after their output has been reviewed.
+overlay_files=(
+    "src/data/trainers.h"
+)
+overlay_backup_dir="$(mktemp -d)"
+
+for file in "${overlay_files[@]}"; do
+    mkdir -p "$overlay_backup_dir/$(dirname "$file")"
+    cp "$file" "$overlay_backup_dir/$file"
+done
+
+restore_overlays() {
+    for file in "${overlay_files[@]}"; do
+        cp "$overlay_backup_dir/$file" "$file"
+    done
+    rm -rf "$overlay_backup_dir"
+}
+trap restore_overlays EXIT
+trap 'exit 129' HUP
+trap 'exit 130' INT
+trap 'exit 143' TERM
+
+python3 scripts/render_shared_trainer_names_en.py --in-place
 
 cpp="${CPP:-arm-none-eabi-cpp}"
 
