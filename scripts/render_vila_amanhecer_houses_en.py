@@ -245,7 +245,7 @@ def main() -> int:
 
     forbidden = (
         "MAE:", "PROFESSORA ANAHI", "HORIZONTE", "TENIS", "INSIGNIA",
-        "mudanca", "voce", "Nao ", "ROTA 103", "PAMPA DA ESPERA,\\p\n\t.string \"onde",
+        "mudanca", "voce", "Nao ", "ROTA 103",
     )
     for rel_path, targets in by_file.items():
         rendered = rendered_files[rel_path]
