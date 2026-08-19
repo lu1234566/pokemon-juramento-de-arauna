@@ -61,6 +61,37 @@ jobs:
             exit 1
           fi
 
+      - name: Package Porymap city files
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf out
+          mkdir -p out/data/layouts
+          for city in OldaleTown PetalburgCity RustboroCity DewfordTown SlateportCity MauvilleCity VerdanturfTown FallarborTown LavaridgeTown FortreeCity LilycoveCity MossdeepCity SootopolisCity PacifidlogTown EverGrandeCity; do
+            mkdir -p "out/data/layouts/$city"
+            cp "data/layouts/$city/map.bin" "out/data/layouts/$city/map.bin"
+            if [ -f "data/layouts/$city/border.bin" ]; then
+              cp "data/layouts/$city/border.bin" "out/data/layouts/$city/border.bin"
+            fi
+          done
+          cp docs/ARAUNA_OTHER_CITIES_PORYMAP_V3.md out/
+          cat > out/LEIA-ME.txt <<'EOF'
+          Pokemon Juramento de Arauna — outras cidades Porymap V3
+
+          Este pacote contém os layouts das 15 cidades/vilas restantes.
+          Vila Amanhecer não está incluída porque sua V3 já está integrada separadamente.
+
+          Para testar manualmente, substitua os arquivos equivalentes dentro de data/layouts/ mantendo um backup do projeto atual.
+          Eventos, warps, scripts, conexões, IDs e saves não foram alterados por este lote.
+          EOF
+
+      - name: Upload Porymap package
+        uses: actions/upload-artifact@v4
+        with:
+          name: arauna-other-cities-porymap-v3
+          path: out/
+          if-no-files-found: error
+
       - name: Publish generated branch
         shell: bash
         run: |
