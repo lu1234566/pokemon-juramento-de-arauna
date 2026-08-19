@@ -78,6 +78,12 @@ jobs:
       - name: Verify upper Remembrancers base English overlay
         run: python3 scripts/render_remembrancers_core_en.py --check
 
+      - name: Verify Missoes do Ceu 1F English overlay
+        run: python3 scripts/render_missoes_ceu_ground_floor_en.py --check
+
+      - name: Verify Missoes do Ceu 2F English overlay
+        run: python3 scripts/render_missoes_ceu_confrontation_en.py --check
+
       - name: Verify no proprietary files
         run: bash scripts/check_no_proprietary_files.sh
 
