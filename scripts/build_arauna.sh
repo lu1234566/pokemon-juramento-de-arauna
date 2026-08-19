@@ -38,6 +38,12 @@ overlay_files=(
     "data/maps/MtPyre_5F/scripts.inc"
     "data/maps/MtPyre_6F/scripts.inc"
     "data/maps/MtPyre_Summit/scripts.inc"
+    "data/maps/MagmaHideout_1F/scripts.inc"
+    "data/maps/MagmaHideout_2F_1R/scripts.inc"
+    "data/maps/MagmaHideout_2F_2R/scripts.inc"
+    "data/maps/MagmaHideout_3F_1R/scripts.inc"
+    "data/maps/MagmaHideout_3F_2R/scripts.inc"
+    "data/maps/MagmaHideout_4F/scripts.inc"
     "data/maps/AquaHideout_B1F/scripts.inc"
     "data/maps/AquaHideout_B2F/scripts.inc"
     "data/maps/SeafloorCavern_Room9/scripts.inc"
@@ -78,6 +84,8 @@ python3 scripts/render_mboi_climax_en.py --in-place
 python3 scripts/render_aguas_mboi_en_checked.py --in-place
 python3 scripts/render_memorial_lower_floors_en.py --in-place
 python3 scripts/render_memorial_mid_floors_en.py --in-place
+python3 scripts/render_remembrancers_lower_en.py --in-place
+python3 scripts/render_remembrancers_core_en.py --in-place
 
 cpp="${CPP:-arm-none-eabi-cpp}"
 
