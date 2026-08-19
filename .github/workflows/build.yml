@@ -84,12 +84,15 @@ jobs:
       - name: Verify Porto do Sal museum people anchors
         run: python3 scripts/render_porto_sal_museum_people_checked.py --check
 
-      - name: Verify Porto do Sal museum anchors
+      - name: Verify Porto do Sal museum confrontation anchors
         run: python3 scripts/render_porto_sal_museum_confrontation.py --check
 
-      - name: Smoke-test visible residue inventory
+      - name: Verify Porto do Sal museum science anchors
+        run: python3 scripts/render_porto_sal_museum_science.py --check
+
+      - name: Smoke-test rendered visible residue inventory
         run: |
-          python3 scripts/audit_visible_residue.py --output /tmp/visible-residue.md
+          python3 scripts/audit_visible_residue_rendered.py --output /tmp/visible-residue.md
           sed -n '1,8p' /tmp/visible-residue.md
 
   build:
