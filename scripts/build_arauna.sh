@@ -28,6 +28,10 @@ overlay_files=(
     "src/strings.c"
     "data/maps/PetalburgWoods/scripts.inc"
     "data/maps/MtChimney/scripts.inc"
+    "data/maps/MeteorFalls_1F_1R/scripts.inc"
+    "data/maps/MtPyre_Summit/scripts.inc"
+    "src/data/items.h"
+    "src/data/text/item_descriptions.h"
 )
 overlay_backup_dir="$(mktemp -d)"
 
@@ -50,6 +54,7 @@ trap 'exit 143' TERM
 python3 scripts/render_arauna_frontier_ui.py --input "src/strings.c" --in-place
 python3 scripts/render_petalburg_woods_surface.py --input "data/maps/PetalburgWoods/scripts.inc" --in-place
 python3 scripts/render_mt_chimney_surface.py --input "data/maps/MtChimney/scripts.inc" --in-place
+python3 scripts/render_ruinas_memorial_surface_checked.py --in-place
 
 cpp="${CPP:-arm-none-eabi-cpp}"
 cpp_with_language="${cpp} -DARAUNA_LANGUAGE=${language_id}"

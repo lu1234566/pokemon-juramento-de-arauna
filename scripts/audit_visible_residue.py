@@ -10,6 +10,12 @@ from pathlib import Path
 from render_arauna_frontier_ui import render as render_frontier_ui
 from render_mt_chimney_surface import render as render_mt_chimney
 from render_petalburg_woods_surface import render as render_petalburg_woods
+from render_ruinas_memorial_surface_checked import (
+    render_item_descs,
+    render_items,
+    render_memorial,
+    render_meteor,
+)
 
 ROOT = Path(__file__).resolve().parents[1]
 ASM_GLOBS = (
@@ -38,6 +44,7 @@ LEGACY_MARKERS = {
     "FRONTIER BRAIN": "postgame",
     "TEAM AQUA": "faction",
     "TEAM MAGMA": "faction",
+    "MAGMA EMBLEM": "faction",
     "TRICK MASTER": "character",
     "DEVON": "organization",
 }
@@ -98,6 +105,20 @@ def render_asm_source(path: Path, source: str) -> str:
         return render_petalburg_woods(source)
     if path == ROOT / "data" / "maps" / "MtChimney" / "scripts.inc":
         return render_mt_chimney(source)
+    if path == ROOT / "data" / "maps" / "MeteorFalls_1F_1R" / "scripts.inc":
+        return render_meteor(source)
+    if path == ROOT / "data" / "maps" / "MtPyre_Summit" / "scripts.inc":
+        return render_memorial(source)
+    return source
+
+
+def render_c_source(path: Path, source: str) -> str:
+    if path == ROOT / "src" / "strings.c":
+        return render_frontier_ui(source)
+    if path == ROOT / "src" / "data" / "items.h":
+        return render_items(source)
+    if path == ROOT / "src" / "data" / "text" / "item_descriptions.h":
+        return render_item_descs(source)
     return source
 
 
@@ -138,9 +159,7 @@ def scan_asm(path: Path) -> list[Finding]:
 
 def scan_c(path: Path) -> list[Finding]:
     findings: list[Finding] = []
-    source = path.read_text(encoding="utf-8")
-    if path == ROOT / "src" / "strings.c":
-        source = render_frontier_ui(source)
+    source = render_c_source(path, path.read_text(encoding="utf-8"))
 
     for number, raw in enumerate(source.splitlines(), 1):
         for match in C_STRING_RE.finditer(raw):
