@@ -23,6 +23,7 @@ fi
 # are re-enabled individually after their output has been reviewed.
 overlay_files=(
     "src/data/trainers.h"
+    "data/maps/PetalburgWoods/scripts.inc"
     "data/maps/Route119/scripts.inc"
 )
 overlay_backup_dir="$(mktemp -d)"
@@ -44,6 +45,7 @@ trap 'exit 130' INT
 trap 'exit 143' TERM
 
 python3 scripts/render_shared_trainer_names_en.py --in-place
+python3 scripts/render_petalburg_woods_surface.py --in-place
 python3 scripts/render_route119_ciro_surface_en.py --in-place
 
 cpp="${CPP:-arm-none-eabi-cpp}"
