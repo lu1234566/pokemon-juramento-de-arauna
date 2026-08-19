@@ -19,6 +19,7 @@ from render_porto_sal_museum_science import render_1f as render_museum_science_1
 from render_porto_sal_name_rater import render as render_name_rater
 from render_porto_sal_seu_bento import render as render_porto_sal_seu_bento
 from render_porto_sal_shipyard import render_1f as render_shipyard_1f, render_2f as render_shipyard_2f
+from render_shared_center_mart_service import render as render_shared_service
 
 ROOT = Path(__file__).resolve().parents[1]
 ORIGINAL_RENDER_ASM = base.render_asm_source
@@ -29,6 +30,7 @@ def render_asm_source(path: Path, source: str) -> str:
     rendered = ORIGINAL_RENDER_ASM(path, source)
     rendered = render_battle_tent_asm(path, rendered)
     rendered = render_final_interiors(path, rendered)
+    rendered = render_shared_service(path, rendered)
     if path == ROOT / "data" / "maps" / "SlateportCity" / "scripts.inc":
         rendered = render_museum_queue(rendered)
         rendered = render_civic_signs(rendered)
