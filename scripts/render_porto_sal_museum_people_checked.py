@@ -34,7 +34,7 @@ patch(base.MUSEUM_TARGETS, "SlateportCity_OceanicMuseum_1F_Text_CanLearnForNefar
     "Isso pode ser util em campo.$",
 ))
 patch(base.MUSEUM_TARGETS, "SlateportCity_OceanicMuseum_1F_Text_RustboroBungled", (
-    "HORIZONTE: Se a outra operacao\\n", "desse certo, eu nao estaria aqui.$",
+    "HORIZONTE: Se a outra operacao\\n", "deu certo, eu nao estaria aqui.$",
 ))
 patch(base.MUSEUM_TARGETS, "SlateportCity_OceanicMuseum_1F_Text_RememberMeTakeThis", (
     "HORIZONTE: Lembra de mim?\\p", "Voce me venceu antes.\\p",
