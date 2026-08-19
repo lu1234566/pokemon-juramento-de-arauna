@@ -7,6 +7,8 @@ import re
 from dataclasses import asdict, dataclass
 from pathlib import Path
 
+from render_arauna_frontier_ui import render as render_frontier_ui
+
 ROOT = Path(__file__).resolve().parents[1]
 ASM_GLOBS = (
     "data/maps/**/scripts.inc",
@@ -125,7 +127,11 @@ def scan_asm(path: Path) -> list[Finding]:
 
 def scan_c(path: Path) -> list[Finding]:
     findings: list[Finding] = []
-    for number, raw in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
+    source = path.read_text(encoding="utf-8")
+    if path == ROOT / "src" / "strings.c":
+        source = render_frontier_ui(source)
+
+    for number, raw in enumerate(source.splitlines(), 1):
         for match in C_STRING_RE.finditer(raw):
             text = match.group(1)
             result = classify(text)

@@ -13,7 +13,7 @@ def decl(name: str, value: str) -> str:
 
 
 def multiline_decl(name: str, first: str, second: str) -> str:
-    return f'const u8 {name}[] = _("{first}\\\n{second}");'
+    return f'const u8 {name}[] = _("{first}' + "\\" + "\n" + f'{second}");'
 
 
 REPLACEMENTS = (
