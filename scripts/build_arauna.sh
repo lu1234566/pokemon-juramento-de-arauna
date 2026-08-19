@@ -28,6 +28,10 @@ overlay_files=(
     "data/maps/Route120/scripts.inc"
     "data/maps/Route121/scripts.inc"
     "data/maps/LilycoveCity/scripts.inc"
+    "data/maps/SlateportCity/scripts.inc"
+    "data/maps/SlateportCity_Harbor/scripts.inc"
+    "data/maps/SlateportCity_OceanicMuseum_1F/scripts.inc"
+    "data/maps/SlateportCity_OceanicMuseum_2F/scripts.inc"
     "data/maps/MtChimney/scripts.inc"
     "data/maps/FortreeCity/scripts.inc"
     "data/maps/FortreeCity_Gym/scripts.inc"
@@ -93,6 +97,10 @@ python3 scripts/render_remembrancers_lower_en.py --in-place
 python3 scripts/render_remembrancers_core_en.py --in-place
 python3 scripts/render_missoes_ceu_ground_floor_en.py --in-place
 python3 scripts/render_missoes_ceu_confrontation_en.py --in-place
+python3 scripts/render_porto_sal_museum_people_en_checked.py --in-place
+python3 scripts/render_porto_sal_museum_science_en_checked.py --in-place
+python3 scripts/render_porto_sal_museum_confrontation_en_checked.py --in-place
+python3 scripts/render_porto_sal_submersivel_en.py --in-place
 
 cpp="${CPP:-arm-none-eabi-cpp}"
 
