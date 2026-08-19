@@ -72,6 +72,9 @@ jobs:
       - name: Verify Lembrantes core anchors
         run: python3 scripts/render_lembrantes_core_surface.py --check
 
+      - name: Verify Missoes do Ceu ground-floor anchors
+        run: python3 scripts/render_missoes_ceu_ground_floor.py --check
+
       - name: Verify Missoes do Ceu confrontation anchors
         run: python3 scripts/render_missoes_ceu_confrontation.py --check
 

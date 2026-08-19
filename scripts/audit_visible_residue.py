@@ -17,6 +17,7 @@ from render_arquivo_central_surface import render_b1f as render_arquivo_b1f, ren
 from render_lembrantes_core_surface import render_3f1 as render_lembrantes_3f1, render_3f2 as render_lembrantes_3f2, render_4f as render_lembrantes_4f
 from render_lembrantes_lower_surface import render_1f as render_lembrantes_1f, render_2f1 as render_lembrantes_2f1, render_2f2 as render_lembrantes_2f2
 from render_missoes_ceu_confrontation import render as render_missoes_ceu_2f
+from render_missoes_ceu_ground_floor import render as render_missoes_ceu_1f
 from render_mt_chimney_surface import render as render_mt_chimney
 from render_petalburg_woods_surface import render as render_petalburg_woods
 from render_ruinas_memorial_surface_checked import (
@@ -48,6 +49,7 @@ LEGACY_MARKERS = {
     "LILYCOVE": "place",
     "RUSTBORO": "place",
     "MAUVILLE": "place",
+    "MOSSDEEP": "place",
     "BATTLE FRONTIER": "postgame",
     "FRONTIER PASS": "postgame",
     "FRONTIER BRAIN": "postgame",
@@ -138,6 +140,8 @@ def render_asm_source(path: Path, source: str) -> str:
         return render_lembrantes_3f2(source)
     if path == ROOT / "data" / "maps" / "MagmaHideout_4F" / "scripts.inc":
         return render_lembrantes_4f(source)
+    if path == ROOT / "data" / "maps" / "MossdeepCity_SpaceCenter_1F" / "scripts.inc":
+        return render_missoes_ceu_1f(source)
     if path == ROOT / "data" / "maps" / "MossdeepCity_SpaceCenter_2F" / "scripts.inc":
         return render_missoes_ceu_2f(source)
     if path == ROOT / "data" / "text" / "berries.inc":
