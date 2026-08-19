@@ -20,6 +20,11 @@ from render_missoes_ceu_confrontation import render as render_missoes_ceu_2f
 from render_missoes_ceu_ground_floor import render as render_missoes_ceu_1f
 from render_mt_chimney_surface import render as render_mt_chimney
 from render_petalburg_woods_surface import render as render_petalburg_woods
+from render_porto_sal_museum_confrontation import (
+    render_item_descs as render_museum_item_descs,
+    render_items as render_museum_items,
+    render_museum as render_porto_sal_museum,
+)
 from render_porto_sal_submersivel import render_city as render_porto_sal_city, render_harbor as render_porto_sal_harbor
 from render_ruinas_memorial_surface_checked import (
     render_item_descs,
@@ -57,6 +62,7 @@ LEGACY_MARKERS = {
     "TEAM AQUA": "faction",
     "TEAM MAGMA": "faction",
     "MAGMA EMBLEM": "faction",
+    "DEVON GOODS": "organization",
     "TRICK MASTER": "character",
     "DEVON": "organization",
 }
@@ -149,6 +155,8 @@ def render_asm_source(path: Path, source: str) -> str:
         return render_porto_sal_city(source)
     if path == ROOT / "data" / "maps" / "SlateportCity_Harbor" / "scripts.inc":
         return render_porto_sal_harbor(source)
+    if path == ROOT / "data" / "maps" / "SlateportCity_OceanicMuseum_2F" / "scripts.inc":
+        return render_porto_sal_museum(source)
     if path == ROOT / "data" / "text" / "berries.inc":
         return render_aguas_berries(source)
     return source
@@ -158,9 +166,9 @@ def render_c_source(path: Path, source: str) -> str:
     if path == ROOT / "src" / "strings.c":
         return render_frontier_ui(source)
     if path == ROOT / "src" / "data" / "items.h":
-        return render_items(source)
+        return render_museum_items(render_items(source))
     if path == ROOT / "src" / "data" / "text" / "item_descriptions.h":
-        return render_item_descs(source)
+        return render_museum_item_descs(render_item_descs(source))
     return source
 
 
