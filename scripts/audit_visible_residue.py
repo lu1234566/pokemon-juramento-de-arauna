@@ -8,6 +8,7 @@ from dataclasses import asdict, dataclass
 from pathlib import Path
 
 from render_arauna_frontier_ui import render as render_frontier_ui
+from render_arquivo_central_surface import render_b1f as render_arquivo_b1f, render_b2f as render_arquivo_b2f
 from render_mt_chimney_surface import render as render_mt_chimney
 from render_petalburg_woods_surface import render as render_petalburg_woods
 from render_ruinas_memorial_surface_checked import (
@@ -109,6 +110,10 @@ def render_asm_source(path: Path, source: str) -> str:
         return render_meteor(source)
     if path == ROOT / "data" / "maps" / "MtPyre_Summit" / "scripts.inc":
         return render_memorial(source)
+    if path == ROOT / "data" / "maps" / "AquaHideout_B1F" / "scripts.inc":
+        return render_arquivo_b1f(source)
+    if path == ROOT / "data" / "maps" / "AquaHideout_B2F" / "scripts.inc":
+        return render_arquivo_b2f(source)
     return source
 
 

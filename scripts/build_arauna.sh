@@ -30,6 +30,8 @@ overlay_files=(
     "data/maps/MtChimney/scripts.inc"
     "data/maps/MeteorFalls_1F_1R/scripts.inc"
     "data/maps/MtPyre_Summit/scripts.inc"
+    "data/maps/AquaHideout_B1F/scripts.inc"
+    "data/maps/AquaHideout_B2F/scripts.inc"
     "src/data/items.h"
     "src/data/text/item_descriptions.h"
 )
@@ -55,6 +57,7 @@ python3 scripts/render_arauna_frontier_ui.py --input "src/strings.c" --in-place
 python3 scripts/render_petalburg_woods_surface.py --input "data/maps/PetalburgWoods/scripts.inc" --in-place
 python3 scripts/render_mt_chimney_surface.py --input "data/maps/MtChimney/scripts.inc" --in-place
 python3 scripts/render_ruinas_memorial_surface_checked.py --in-place
+python3 scripts/render_arquivo_central_surface.py --in-place
 
 cpp="${CPP:-arm-none-eabi-cpp}"
 cpp_with_language="${cpp} -DARAUNA_LANGUAGE=${language_id}"
