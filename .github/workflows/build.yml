@@ -15,7 +15,7 @@ permissions:
 
 jobs:
   arauna-static-validation:
-    name: Arauna static validation
+    name: repository-safety
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -58,3 +58,17 @@ jobs:
 
       - name: Build custom Arauna ROM
         run: bash scripts/build_arauna.sh "${{ matrix.intro_language }}" -j2 all
+
+  build-and-test:
+    name: build-and-test
+    if: always()
+    needs: [arauna-static-validation, build]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Require validation and both language builds
+        env:
+          SAFETY_RESULT: ${{ needs.arauna-static-validation.result }}
+          BUILD_RESULT: ${{ needs.build.result }}
+        run: |
+          test "$SAFETY_RESULT" = "success"
+          test "$BUILD_RESULT" = "success"
