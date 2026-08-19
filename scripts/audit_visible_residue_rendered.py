@@ -9,6 +9,7 @@ from render_porto_sal_berry_powder import render_city as render_berry_powder_cit
 from render_porto_sal_civic_signs import render as render_civic_signs
 from render_porto_sal_daily_life import render as render_porto_sal_daily_life
 from render_porto_sal_fan_club import render_item_descs as render_fan_club_descs, render_items as render_fan_club_items, render_map as render_fan_club
+from render_porto_sal_final_interiors import render as render_final_interiors
 from render_porto_sal_harbor_service import render_harbor as render_harbor_service, render_strings as render_harbor_strings
 from render_porto_sal_museum_people_checked import (
     render_city as render_museum_queue,
@@ -27,6 +28,7 @@ ORIGINAL_RENDER_C = base.render_c_source
 def render_asm_source(path: Path, source: str) -> str:
     rendered = ORIGINAL_RENDER_ASM(path, source)
     rendered = render_battle_tent_asm(path, rendered)
+    rendered = render_final_interiors(path, rendered)
     if path == ROOT / "data" / "maps" / "SlateportCity" / "scripts.inc":
         rendered = render_museum_queue(rendered)
         rendered = render_civic_signs(rendered)
