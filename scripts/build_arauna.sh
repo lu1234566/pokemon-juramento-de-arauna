@@ -21,11 +21,12 @@ case "${language,,}" in
         ;;
 esac
 
-asflags="-mcpu=arm7tdmi --defsym MODERN=1 --defsym ARAUNA_LANGUAGE=${language_id}"
+cpp="${CPP:-arm-none-eabi-cpp}"
+cpp_with_language="${cpp} -DARAUNA_LANGUAGE=${language_id}"
 
 exec make \
     MODERN=1 \
     BUILD_DIR="build/arauna-intro-${suffix}" \
     FILE_NAME="pokeemerald-intro-${suffix}" \
-    ASFLAGS="${asflags}" \
+    CPP="${cpp_with_language}" \
     "$@"
