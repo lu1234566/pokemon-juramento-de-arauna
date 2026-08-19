@@ -117,6 +117,9 @@ jobs:
       - name: Verify Porto do Sal Fan Club anchors
         run: python3 scripts/render_porto_sal_fan_club.py --check
 
+      - name: Verify final Porto do Sal interior anchors
+        run: python3 scripts/render_porto_sal_final_interiors.py --check
+
       - name: Smoke-test rendered visible residue inventory
         run: |
           python3 scripts/audit_visible_residue_rendered.py --output /tmp/visible-residue.md
