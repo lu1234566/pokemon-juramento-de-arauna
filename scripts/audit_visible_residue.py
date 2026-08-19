@@ -8,9 +8,13 @@ from dataclasses import asdict, dataclass
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-ASM_GLOBS = ("data/maps/**/scripts.inc", "data/text/**/*.inc")
-C_FILES = ("src/strings.c", "src/battle_message.c")
-SKIP_PARTS = {"data/text/arauna/en"}
+ASM_GLOBS = (
+    "data/maps/**/scripts.inc",
+    "data/text/**/*.inc",
+    "data/scripts/**/*.inc",
+)
+C_GLOBS = ("src/**/*.c", "src/**/*.h")
+SKIP_PREFIXES = ("data/text/arauna/en/",)
 
 LEGACY_MARKERS = {
     "SCOTT": "character",
@@ -135,19 +139,25 @@ def scan_c(path: Path) -> list[Finding]:
     return findings
 
 
+def should_skip(path: Path) -> bool:
+    rel = path.relative_to(ROOT).as_posix()
+    return any(rel.startswith(prefix) for prefix in SKIP_PREFIXES)
+
+
 def discover() -> list[Finding]:
-    files: set[Path] = set()
+    asm_files: set[Path] = set()
+    c_files: set[Path] = set()
     for pattern in ASM_GLOBS:
-        files.update(ROOT.glob(pattern))
+        asm_files.update(ROOT.glob(pattern))
+    for pattern in C_GLOBS:
+        c_files.update(ROOT.glob(pattern))
+
     findings: list[Finding] = []
-    for path in sorted(files):
-        rel = path.relative_to(ROOT).as_posix()
-        if any(rel.startswith(prefix) for prefix in SKIP_PARTS):
-            continue
-        findings.extend(scan_asm(path))
-    for rel in C_FILES:
-        path = ROOT / rel
-        if path.exists():
+    for path in sorted(asm_files):
+        if not should_skip(path):
+            findings.extend(scan_asm(path))
+    for path in sorted(c_files):
+        if not should_skip(path):
             findings.extend(scan_c(path))
     return sorted(findings, key=lambda x: (x.priority, x.path, x.label))
 
