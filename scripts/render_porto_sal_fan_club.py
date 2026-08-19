@@ -17,76 +17,29 @@ TEXT_TARGETS = {
         ["Tambem gostamos de conhecer", "POKéMON de outros treinadores."],
         ["Se participar de CONCURSOS,", "volte e me mostre sua equipe!"],
     ],
-    "SlateportCity_PokemonFanClub_Text_LikeToSeeEnteredContestPokemon": [
-        ["Quero ver um POKéMON que ja", "participou de um CONCURSO."],
-    ],
+    "SlateportCity_PokemonFanClub_Text_LikeToSeeEnteredContestPokemon": [["Quero ver um POKéMON que ja", "participou de um CONCURSO."]],
     "SlateportCity_PokemonFanClub_Text_AllowMeToExamineYourPokemon": [
         ["Entao voce participou de um", "CONCURSO POKéMON!"],
         ["Deixe-me ver como voce cuidou", "do seu POKéMON."],
         ["Nada me alegra mais que ver", "um POKéMON bem cuidado."],
         ["Agora, deixe-me avaliar como", "ele se desenvolveu!"],
     ],
-    "SlateportCity_PokemonFanClub_Text_HowIsYourPokemonGrowing": [
-        ["Como seu POKéMON esta indo?", "Deixe-me examina-lo."],
-    ],
+    "SlateportCity_PokemonFanClub_Text_HowIsYourPokemonGrowing": [["Como seu POKéMON esta indo?", "Deixe-me examina-lo."]],
     "SlateportCity_PokemonFanClub_Text_HmHmISee": [["Hm, hm...", "Entendo..."]],
-    "SlateportCity_PokemonFanClub_Text_GiveMonMorePokeblocks": [
-        ["Ainda pode melhorar."],
-        ["Tente cuidar mais dele e usar", "POKéBLOCKS adequados."],
-    ],
-    "SlateportCity_PokemonFanClub_Text_NoSpaceForReward": [
-        ["Seu POKéMON merece um premio,", "mas sua BOLSA esta cheia."],
-        ["Abra espaco e volte a falar", "comigo."],
-    ],
-    "SlateportCity_PokemonFanClub_Text_MonMostImpressiveGiveItThis": [
-        ["Seu {STR_VAR_1} esta muito bem", "desenvolvido!"],
-        ["Quero que ele use isto.", "Vai destacar ainda mais seu dom!"],
-    ],
-    "SlateportCity_PokemonFanClub_Text_ExplainRedScarf": [
-        ["Deixe um POKéMON segurar a", "FITA VERMELHA."],
-        ["Ela realca o ESTILO dele", "nos CONCURSOS."],
-    ],
-    "SlateportCity_PokemonFanClub_Text_ExplainBlueScarf": [
-        ["Deixe um POKéMON segurar a", "FITA AZUL."],
-        ["Ela realca a BELEZA dele", "nos CONCURSOS."],
-    ],
-    "SlateportCity_PokemonFanClub_Text_ExplainPinkScarf": [
-        ["Deixe um POKéMON segurar a", "FITA ROSA."],
-        ["Ela realca a FOFURA dele", "nos CONCURSOS."],
-    ],
-    "SlateportCity_PokemonFanClub_Text_ExplainGreenScarf": [
-        ["Deixe um POKéMON segurar a", "FITA VERDE."],
-        ["Ela realca a ESPERTEZA dele", "nos CONCURSOS."],
-    ],
-    "SlateportCity_PokemonFanClub_Text_ExplainYellowScarf": [
-        ["Deixe um POKéMON segurar a", "FITA AMARELA."],
-        ["Ela realca a RESISTENCIA dele", "nos CONCURSOS."],
-    ],
-    "SlateportCity_PokemonFanClub_Text_NothingElseToGiveYou": [
-        ["Nao tenho mais fitas para dar."],
-        ["Voce ja mostrou grande cuidado", "com seus POKéMON!"],
-    ],
-    "SlateportCity_PokemonFanClub_Text_ShowMePokemonThatLoveYou": [
-        ["Gosto de ver POKéMON que confiam", "em seus treinadores."],
-        ["Trate seu POKéMON com carinho", "e ele vai confiar em voce."],
-        ["Quando essa ligacao for forte,", "venha me mostrar."],
-    ],
-    "SlateportCity_PokemonFanClub_Text_PokemonAdoresYou": [
-        ["Seu POKéMON confia em voce!"],
-        ["Por esse cuidado, receba um", "presente do CLUBE DE FAS."],
-    ],
-    "SlateportCity_PokemonFanClub_Text_TreatPokemonWithLove": [
-        ["POKéMON percebem como sao", "tratados por seus treinadores."],
-        ["Cuide deles com carinho e", "a confianca vai crescer."],
-    ],
-    "SlateportCity_PokemonFanClub_Text_PokemonDontLikeFainting": [
-        ["Se um POKéMON desmaia muitas", "vezes, sua confianca pode cair."],
-        ["Cuide dele e evite forca-lo", "alem do limite."],
-    ],
-    "SlateportCity_PokemonFanClub_Text_MonEnjoyedProtein": [
-        ["POKéMON gostam de certos itens?"],
-        ["O meu ficou animado quando", "recebeu PROTEIN."],
-    ],
+    "SlateportCity_PokemonFanClub_Text_GiveMonMorePokeblocks": [["Ainda pode melhorar."], ["Tente cuidar mais dele e usar", "POKéBLOCKS adequados."]],
+    "SlateportCity_PokemonFanClub_Text_NoSpaceForReward": [["Seu POKéMON merece um premio,", "mas sua BOLSA esta cheia."], ["Abra espaco e volte a falar", "comigo."]],
+    "SlateportCity_PokemonFanClub_Text_MonMostImpressiveGiveItThis": [["Seu {STR_VAR_1} esta muito bem", "desenvolvido!"], ["Quero que ele use isto.", "Vai destacar ainda mais seu dom!"]],
+    "SlateportCity_PokemonFanClub_Text_ExplainRedScarf": [["Deixe um POKéMON segurar a", "FITA VERMELHA."], ["Ela realca o ESTILO dele", "nos CONCURSOS."]],
+    "SlateportCity_PokemonFanClub_Text_ExplainBlueScarf": [["Deixe um POKéMON segurar a", "FITA AZUL."], ["Ela realca a BELEZA dele", "nos CONCURSOS."]],
+    "SlateportCity_PokemonFanClub_Text_ExplainPinkScarf": [["Deixe um POKéMON segurar a", "FITA ROSA."], ["Ela realca a FOFURA dele", "nos CONCURSOS."]],
+    "SlateportCity_PokemonFanClub_Text_ExplainGreenScarf": [["Deixe um POKéMON segurar a", "FITA VERDE."], ["Ela realca a ESPERTEZA dele", "nos CONCURSOS."]],
+    "SlateportCity_PokemonFanClub_Text_ExplainYellowScarf": [["Deixe um POKéMON segurar a", "FITA AMARELA."], ["Ela realca a RESISTENCIA dele", "nos CONCURSOS."]],
+    "SlateportCity_PokemonFanClub_Text_NothingElseToGiveYou": [["Nao tenho mais fitas para dar."], ["Voce ja mostrou grande cuidado", "com seus POKéMON!"]],
+    "SlateportCity_PokemonFanClub_Text_ShowMePokemonThatLoveYou": [["Gosto de ver POKéMON que confiam", "em seus treinadores."], ["Trate seu POKéMON com carinho", "e ele vai confiar em voce."], ["Quando essa ligacao for forte,", "venha me mostrar."]],
+    "SlateportCity_PokemonFanClub_Text_PokemonAdoresYou": [["Seu POKéMON confia em voce!"], ["Por esse cuidado, receba um", "presente do CLUBE DE FAS."]],
+    "SlateportCity_PokemonFanClub_Text_TreatPokemonWithLove": [["POKéMON percebem como sao", "tratados por seus treinadores."], ["Cuide deles com carinho e", "a confianca vai crescer."]],
+    "SlateportCity_PokemonFanClub_Text_PokemonDontLikeFainting": [["Se um POKéMON desmaia muitas", "vezes, sua confianca pode cair."], ["Cuide dele e evite forca-lo", "alem do limite."]],
+    "SlateportCity_PokemonFanClub_Text_MonEnjoyedProtein": [["POKéMON gostam de certos itens?"], ["O meu ficou animado quando", "recebeu PROTEIN."]],
     "SlateportCity_PokemonFanClub_Text_Skitty": [["SKITTY: Fffnyaaaah..."]],
     "SlateportCity_PokemonFanClub_Text_Zigzagoon": [["ZIGZAGOON: Kyuuu..."]],
     "SlateportCity_PokemonFanClub_Text_Azumarill": [["AZUMARILL: Marimari?"]],
@@ -111,7 +64,7 @@ ITEM_DESCRIPTIONS = {
 }
 
 STRING_BLOCK_RE_TEMPLATE = r"(?m)^{label}:\n(?:\t\.string .*\n)+"
-DESC_BLOCK_RE_TEMPLATE = r'(?ms)^static const u8 {label}\[\] = _\(\n(?:\s+".*?";?\n)+?\);'
+DESC_BLOCK_RE_TEMPLATE = r'(?ms)^static const u8 {label}\[\] = _\(\n(?P<body>.*?^\s*"[^"\n]*"\);)'
 
 
 def make_string_block(label: str, pages: list[list[str]]) -> str:
@@ -171,10 +124,12 @@ def render_item_descs(source: str) -> str:
     rendered = source
     for label, lines in ITEM_DESCRIPTIONS.items():
         pattern = re.compile(DESC_BLOCK_RE_TEMPLATE.format(label=re.escape(label)))
+        matches = list(pattern.finditer(rendered))
+        if len(matches) != 1:
+            raise ValueError(f"item_descriptions.h: expected exactly one block for {label}, found {len(matches)}")
         replacement = make_desc_block(label, lines)
-        rendered, count = pattern.subn(lambda _: replacement, rendered, count=1)
-        if count != 1:
-            raise ValueError(f"item_descriptions.h: expected exactly one block for {label}, found {count}")
+        start, end = matches[0].span()
+        rendered = rendered[:start] + replacement + rendered[end:]
     return rendered
 
 
