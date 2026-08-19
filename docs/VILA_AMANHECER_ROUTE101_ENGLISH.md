@@ -28,18 +28,18 @@ The unchanged Birch-rescue sequence now displays ANAHI throughout:
 - leaving the rescue area is still prevented by the same scripts;
 - after rescue, ANAHI thanks the player and notices how quickly the chosen POKéMON accepted them;
 - tutorial NPCs explain POKéMON CENTER and tall-grass basics without legacy OLDALE naming;
-- the route sign points toward ENCRUZILHADA CENTRAL.
+- the route sign points toward VILA DA PASSAGEM, matching the canonical Oldale replacement in the region-map contract.
 
 The rescue dialogue intentionally avoids dumping the later BOND/LIVING ARCHIVE exposition during the player's first encounter with ANAHI.
 
 ## Technical contract
 
-`scripts/render_vila_amanhecer_route101_en.py` changes 24 text blocks total:
+`scripts/render_vila_amanhecer_route101_en.py` owns the 24 base text replacements and `scripts/render_vila_amanhecer_route101_en_checked.py` applies the canonical VILA DA PASSAGEM route-sign surface.
 
-- 17 in `data/maps/LittlerootTown/scripts.inc`;
-- 7 in `data/maps/Route101/scripts.inc`.
+- 17 base blocks in `data/maps/LittlerootTown/scripts.inc`;
+- 7 base blocks in `data/maps/Route101/scripts.inc`.
 
-The renderer validates exact source markers, visible width (maximum 32 characters), structural masking and key Route 101 gameplay tokens.
+The renderers validate exact source markers, visible width (maximum 32 characters), structural masking and key Route 101 gameplay tokens.
 
 The build adds both map sources to its transactional backup/restore stack and applies the renderer before later narrative overlays.
 
