@@ -27,13 +27,13 @@ base.TARGETS["PetalburgCity_Gym_Text_BerkePostBadge"] = (
 )
 base.TARGETS["PetalburgCity_Gym_Text_AlexiaIntro"] = (
     "TRAINER: DEFENSE ROOM.\\p",
-    "Strong defense lets me take risks.\\p",
+    "Defense lets me take more risks.\\p",
     "Let's see if yours does too.$",
 )
 base.TARGETS["PetalburgCity_Gym_Text_JodyIntro"] = (
     "TRAINER: POWER ROOM.\\p",
     "ELIAS told us to go all out.\\p",
-    "Your family name changes nothing.$".replace("changes nothing", "means nothing here"),
+    "Your family name means nothing.$",
 )
 
 
