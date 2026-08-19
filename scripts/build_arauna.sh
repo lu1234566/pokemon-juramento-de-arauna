@@ -37,6 +37,9 @@ overlay_files=(
     "data/maps/AquaHideout_B1F/scripts.inc"
     "data/maps/AquaHideout_B2F/scripts.inc"
     "data/maps/SeafloorCavern_Room9/scripts.inc"
+    "data/maps/SootopolisCity/scripts.inc"
+    "data/maps/SkyPillar_Outside/scripts.inc"
+    "data/text/berries.inc"
     "src/data/items.h"
     "src/data/text/item_descriptions.h"
 )
@@ -68,6 +71,7 @@ python3 scripts/render_route120_bento_en.py --in-place
 python3 scripts/render_central_archive_en.py --in-place
 python3 scripts/render_route121_memorial_en.py --in-place
 python3 scripts/render_mboi_climax_en.py --in-place
+python3 scripts/render_aguas_mboi_en.py --in-place
 python3 scripts/render_memorial_lower_floors_en.py --in-place
 
 cpp="${CPP:-arm-none-eabi-cpp}"
