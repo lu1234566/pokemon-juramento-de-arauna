@@ -785,8 +785,8 @@ LittlerootTown_ProfessorBirchsLab_Text_OkayAllDone:
 	.string "pertencem a uma empresa.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_PokedexUpgradedToNational:
-	.string "{PLAYER}'s POKéDEX was upgraded\n"
-	.string "to the NATIONAL Mode!$"
+	.string "POKéDEX atualizada para o\n"
+	.string "Modo NACIONAL!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_GrassyPatchWaiting2:
 	.string "ANAHI: Eu ajudei a criar os\nprimeiros sensores de VINCULO.\p"
@@ -838,13 +838,13 @@ LittlerootTown_ProfessorBirchsLab_Text_PickedFinePokemon:
 	.string "sei que nao e a mesma coisa.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_ReceivedJohtoStarter:
-	.string "{PLAYER} received the {STR_VAR_1}\n"
-	.string "from PROF. ANAHI!$"
+	.string "{PLAYER} recebeu {STR_VAR_1}\n"
+	.string "de PROF. ANAHI!$"
 
 @ Unused
 LittlerootTown_ProfessorBirchsLab_Text_NicknameJohtoStarter:
-	.string "Want to give a nickname to\n"
-	.string "the {STR_VAR_1} you received?$"
+	.string "Quer dar um apelido ao\n"
+	.string "{STR_VAR_1} que recebeu?$"
 
 LittlerootTown_ProfessorBirchsLab_Text_GrassyPatchWaiting:
 	.string "ANAHI: O DESENCANTO nao apaga\napenas fatos. Ele rompe\p"
@@ -852,13 +852,13 @@ LittlerootTown_ProfessorBirchsLab_Text_GrassyPatchWaiting:
 	.string "pertencem a uma empresa.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BetterLeaveOthersAlone:
-	.string "You received the promised POKéMON.\n"
-	.string "Better leave the others alone.$"
+	.string "Voce ja recebeu o POKéMON\n"
+	.string "prometido. Deixe os outros.$"
 
 @ Unused
 LittlerootTown_ProfessorBirchsLab_Text_DontHaveAnyRoomForPokemon:
-	.string "Oh, you don't have any room for\n"
-	.string "this POKéMON.$"
+	.string "Voce nao tem espaco para\n"
+	.string "este POKéMON.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_MayWhatNextImStayingHere:
 	.string "CIRO: Voce continua olhando\npara cada cicatriz como se ela\p"
@@ -880,17 +880,17 @@ LittlerootTown_ProfessorBirchsLab_Text_BrendanHaveYouGoneToBattleFrontier:
 
 LittlerootTown_ProfessorBirchsLab_Text_ScottAboardSSTidalCall:
 	.string "… … … … … …\n"
-	.string "… … … … … Beep!\p"
-	.string "SCOTT: Hi, hi, {PLAYER}!\n"
-	.string "It's me, SCOTT.\p"
-	.string "I'm aboard the S.S. TIDAL now.\n"
-	.string "It feels great to be on the sea!\p"
-	.string "By the way…\p"
-	.string "There's this place that I'd like to\n"
-	.string "invite you to for a visit.\p"
-	.string "If you're interested, board a ferry\n"
-	.string "at either SLATEPORT or LILYCOVE.\p"
-	.string "I'll fill you in on the details when\n"
-	.string "we meet. I'll be waiting!\p"
+	.string "… … … … … Bip!\p"
+	.string "SEU BENTO: {PLAYER}, escute.\n"
+	.string "Sou eu, BENTO.\p"
+	.string "ANAHI disse que sua POKéDEX\n"
+	.string "foi ampliada.\p"
+	.string "Ha um circuito de batalha\n"
+	.string "alem da LIGA.\p"
+	.string "Se quiser testar seu VINCULO,\n"
+	.string "pegue o barco no PORTO DO SAL\p"
+	.string "ou na BAIA DAS LUZES.\p"
+	.string "Eu explico o resto quando\n"
+	.string "voce chegar. Estarei la!\p"
 	.string "… … … … … …\n"
-	.string "… … … … … Click!$"
+	.string "… … … … … Bip!$"
