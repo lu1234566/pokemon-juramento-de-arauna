@@ -44,6 +44,8 @@ jobs:
           python3 tools/cleanup_val_household_residue.py --check
           python3 tools/cleanup_pokedex_rating_residue.py
           python3 tools/cleanup_pokedex_rating_residue.py --check
+          python3 tools/cleanup_anahi_lab_system_residue.py
+          python3 tools/cleanup_anahi_lab_system_residue.py --check
 
       - name: Commit generated source changes
         run: |
