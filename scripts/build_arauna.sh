@@ -100,6 +100,7 @@ python3 scripts/render_route103_ciro_en_checked.py --in-place
 python3 scripts/render_vila_da_passagem_en.py --in-place
 python3 scripts/render_route102_pampa_en_checked.py --in-place
 python3 scripts/render_pampa_elias_gym_core_en_checked.py --in-place
+python3 scripts/render_pampa_gym_rooms_en_checked.py --in-place
 python3 scripts/render_petalburg_woods_surface.py --in-place
 python3 scripts/render_route119_ciro_surface_en.py --in-place
 python3 scripts/render_baia_luzes_ciro_en.py --in-place
