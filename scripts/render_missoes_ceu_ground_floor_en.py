@@ -30,7 +30,7 @@ base.TARGETS.update({
         "Still, we try again.$",
     ),
     "MossdeepCity_SpaceCenter_1F_Text_MagmaHaveSightsOnSpaceCenter": (
-        "SCIENTIST: The REMEMBRANCERS want\\n",
+        "SCIENTIST: REMEMBRANCERS want\\n",
         "the regional uplink.\\p",
         "It reaches stations across\\n",
         "most of Arauna.$",
@@ -99,7 +99,7 @@ base.TARGETS.update({
     "MossdeepCity_SpaceCenter_1F_Text_Grunt1Intro": (
         "REMEMBRANCER: This is not a\\n",
         "HORIZON base. I know.\\p",
-        "But the network could become one.$",
+        "But this network could be one.$",
     ),
     "MossdeepCity_SpaceCenter_1F_Text_Grunt1Defeat": (
         "REMEMBRANCER: Civilians use this\\n",
@@ -112,7 +112,7 @@ base.TARGETS.update({
     ),
     "MossdeepCity_SpaceCenter_1F_Text_Grunt4Intro": (
         "REMEMBRANCER: The uplink doesn't\\n",
-        "carry memories. It carries orders.$",
+        "carry memory. It carries orders.$",
     ),
     "MossdeepCity_SpaceCenter_1F_Text_Grunt4Defeat": (
         "REMEMBRANCER: One remote command\\n",
@@ -129,7 +129,7 @@ base.TARGETS.update({
     ),
     "MossdeepCity_SpaceCenter_1F_Text_Grunt2Defeat": (
         "REMEMBRANCER: Fine... pass.\\p",
-        "But listen before choosing a side.$",
+        "Listen before choosing a side.$",
     ),
     "MossdeepCity_SpaceCenter_1F_Text_Grunt2PostBattle": (
         "REMEMBRANCER: The center isn't\\n",
@@ -139,7 +139,7 @@ base.TARGETS.update({
     "MossdeepCity_SpaceCenter_1F_Text_MagmaIntentToStealNotice": (
         "REMEMBRANCER NOTICE:\\p",
         "Regional uplink stays offline\\n",
-        "until the sync key is neutralized.\\p",
+        "until the sync key is disabled.\\p",
         "No civilian data will be erased.$",
     ),
 })
