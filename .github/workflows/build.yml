@@ -69,6 +69,12 @@ jobs:
       - name: Verify Memorial mid floors English overlay
         run: python3 scripts/render_memorial_mid_floors_en.py --check
 
+      - name: Verify lower Remembrancers base English overlay
+        run: python3 scripts/render_remembrancers_lower_en.py --check
+
+      - name: Verify upper Remembrancers base English overlay
+        run: python3 scripts/render_remembrancers_core_en.py --check
+
       - name: Verify no proprietary files
         run: bash scripts/check_no_proprietary_files.sh
 
