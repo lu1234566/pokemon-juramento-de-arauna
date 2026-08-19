@@ -83,6 +83,7 @@ python3 scripts/render_missoes_ceu_confrontation.py --in-place
 python3 scripts/render_porto_sal_submersivel.py --in-place
 python3 scripts/render_porto_sal_museum_people_checked.py --in-place
 python3 scripts/render_porto_sal_museum_confrontation.py --in-place
+python3 scripts/render_porto_sal_museum_science.py --in-place
 
 cpp="${CPP:-arm-none-eabi-cpp}"
 cpp_with_language="${cpp} -DARAUNA_LANGUAGE=${language_id}"
