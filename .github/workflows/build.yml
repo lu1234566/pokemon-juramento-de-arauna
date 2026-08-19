@@ -51,6 +51,9 @@ jobs:
       - name: Verify Serra da Cinza overlay anchors
         run: python3 scripts/render_mt_chimney_surface.py --check
 
+      - name: Verify Ruinas and Memorial overlay anchors
+        run: python3 scripts/render_ruinas_memorial_surface_checked.py --check
+
       - name: Smoke-test visible residue inventory
         run: |
           python3 scripts/audit_visible_residue.py --output /tmp/visible-residue.md
