@@ -87,6 +87,18 @@ jobs:
       - name: Verify Missoes do Ceu 2F English overlay
         run: python3 scripts/render_missoes_ceu_confrontation_en.py --check
 
+      - name: Verify Porto do Sal museum people English overlay
+        run: python3 scripts/render_porto_sal_museum_people_en_checked.py --check
+
+      - name: Verify Porto do Sal museum science English overlay
+        run: python3 scripts/render_porto_sal_museum_science_en_checked.py --check
+
+      - name: Verify Porto do Sal museum confrontation English overlay
+        run: python3 scripts/render_porto_sal_museum_confrontation_en_checked.py --check
+
+      - name: Verify Porto do Sal submarine English overlay
+        run: python3 scripts/render_porto_sal_submersivel_en.py --check
+
       - name: Verify no proprietary files
         run: bash scripts/check_no_proprietary_files.sh
 
