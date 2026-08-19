@@ -33,6 +33,9 @@ jobs:
       - name: Verify shared English faction trainer names
         run: python3 scripts/render_shared_trainer_names_en.py --check
 
+      - name: Verify Horizon forest English overlay
+        run: python3 scripts/render_petalburg_woods_surface.py --check
+
       - name: Verify no proprietary files
         run: bash scripts/check_no_proprietary_files.sh
 
