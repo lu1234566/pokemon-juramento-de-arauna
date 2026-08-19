@@ -91,6 +91,7 @@ python3 scripts/render_porto_sal_civic_signs.py --in-place
 python3 scripts/render_porto_sal_daily_life.py --in-place
 python3 scripts/render_porto_sal_seu_bento.py --in-place
 python3 scripts/render_porto_sal_berry_powder.py --in-place
+python3 scripts/render_porto_sal_harbor_service.py --in-place
 
 cpp="${CPP:-arm-none-eabi-cpp}"
 cpp_with_language="${cpp} -DARAUNA_LANGUAGE=${language_id}"
