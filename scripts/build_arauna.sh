@@ -26,6 +26,9 @@ esac
 
 overlay_files=(
     "src/strings.c"
+    "data/maps/BattleFrontier_BattleFactoryLobby/scripts.inc"
+    "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.inc"
+    "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc"
     "data/maps/PetalburgWoods/scripts.inc"
     "data/maps/MtChimney/scripts.inc"
     "data/maps/MeteorFalls_1F_1R/scripts.inc"
@@ -44,12 +47,14 @@ overlay_files=(
     "data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc"
     "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc"
     "data/maps/SlateportCity/scripts.inc"
+    "data/maps/SlateportCity_BattleTentLobby/scripts.inc"
     "data/maps/SlateportCity_Harbor/scripts.inc"
     "data/maps/SlateportCity_NameRatersHouse/scripts.inc"
     "data/maps/SlateportCity_OceanicMuseum_1F/scripts.inc"
     "data/maps/SlateportCity_OceanicMuseum_2F/scripts.inc"
     "data/maps/SlateportCity_SternsShipyard_1F/scripts.inc"
     "data/maps/SlateportCity_SternsShipyard_2F/scripts.inc"
+    "data/text/battle_tent.inc"
     "data/text/berries.inc"
     "src/data/items.h"
     "src/data/text/item_descriptions.h"
@@ -94,6 +99,7 @@ python3 scripts/render_porto_sal_seu_bento.py --in-place
 python3 scripts/render_porto_sal_berry_powder.py --in-place
 python3 scripts/render_porto_sal_harbor_service.py --in-place
 python3 scripts/render_porto_sal_name_rater.py --in-place
+python3 scripts/render_porto_sal_battle_tent.py --in-place
 
 cpp="${CPP:-arm-none-eabi-cpp}"
 cpp_with_language="${cpp} -DARAUNA_LANGUAGE=${language_id}"
