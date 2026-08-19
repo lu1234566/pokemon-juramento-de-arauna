@@ -4,9 +4,40 @@ on:
   push:
     branches: [ main ]
   pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
 
 jobs:
+  arauna-static-validation:
+    name: Arauna static validation
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Verify Arauna visible-residue cleanup
+        run: |
+          python3 tools/cleanup_emerald_residue_signs.py --check
+          python3 tools/cleanup_match_call_residue.py --check
+          python3 tools/cleanup_ciro_route_residue.py --check
+          python3 tools/cleanup_littleroot_house_residue.py --check
+          python3 tools/cleanup_battle_message_residue.py --check
+          python3 tools/cleanup_vila_amanhecer_residue.py --check
+          python3 tools/cleanup_intro_speech_residue.py --check
+          python3 tools/cleanup_region_map_names.py --check
+          python3 tools/cleanup_system_ui_identity.py --check
+          python3 tools/cleanup_route119_surface_residue.py --check
+          python3 tools/cleanup_val_household_residue.py --check
+          python3 tools/cleanup_pokedex_rating_residue.py --check
+
   build:
+    name: Build Emerald base
     runs-on: ubuntu-latest
     env:
       GAME_VERSION: EMERALD
