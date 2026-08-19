@@ -36,15 +36,16 @@ jobs:
           python3 tools/cleanup_val_household_residue.py --check
           python3 tools/cleanup_pokedex_rating_residue.py --check
 
+      - name: Verify bilingual intro contract
+        run: python3 scripts/check_localization.py
+
   build:
-    name: Build Emerald base
+    name: Build Arauna (intro ${{ matrix.intro_language }})
     runs-on: ubuntu-latest
-    env:
-      GAME_VERSION: EMERALD
-      GAME_REVISION: 0
-      GAME_LANGUAGE: ENGLISH
-      MODERN: 1
-      COMPARE: 0
+    strategy:
+      fail-fast: false
+      matrix:
+        intro_language: [ptbr, en]
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -54,5 +55,5 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y gcc-arm-none-eabi binutils-arm-none-eabi libpng-dev
 
-      - name: Build custom Emerald ROM
-        run: make -j2 all
+      - name: Build custom Arauna ROM
+        run: bash scripts/build_arauna.sh "${{ matrix.intro_language }}" -j2 all

@@ -10,22 +10,31 @@ O núcleo narrativo atual está documentado em [`docs/ARAUANA_STORY_IMPLEMENTATI
 
 ## Validação
 
-A CI possui duas frentes independentes:
+A CI possui duas frentes:
 
-1. **Arauna static validation** — executa os validadores de resíduos visíveis do Emerald em modo `--check`;
-2. **Build Emerald base** — instala o toolchain ARM e executa `make -j2 all`.
+1. **Arauna static validation** — executa os validadores de resíduos visíveis do Emerald e o contrato da introdução bilíngue;
+2. **Build Arauna (intro ptbr/en)** — tenta compilar duas variantes da introdução a partir do mesmo commit, em diretórios isolados.
 
 Os validadores existem para impedir que nomes, falas e identidades antigas do Emerald reapareçam acidentalmente em superfícies já convertidas para Arauna.
 
 ## Build local
 
-Depois de preparar as dependências descritas em [`INSTALL.md`](INSTALL.md):
+Depois de preparar as dependências descritas em [`INSTALL.md`](INSTALL.md), a build padrão continua em português na introdução:
 
 ```bash
-make -j2 all
+make MODERN=1 -j2 all
 ```
 
-A ROM gerada é apenas artefato local de desenvolvimento e não deve ser versionada no repositório.
+Para testar explicitamente as duas variantes da introdução:
+
+```bash
+bash scripts/build_arauna.sh ptbr -j2 all
+bash scripts/build_arauna.sh en -j2 all
+```
+
+A arquitetura e as limitações desse protótipo estão em [`docs/LOCALIZATION_CURRENT_STATE_2026_08_19.md`](docs/LOCALIZATION_CURRENT_STATE_2026_08_19.md). **A variante `en` ainda não representa uma tradução completa do jogo**; neste estágio, a seleção bilíngue cobre a introdução de Anahi.
+
+As ROMs geradas são apenas artefatos locais de desenvolvimento e não devem ser versionadas no repositório.
 
 ## Regras de integração
 
@@ -37,4 +46,4 @@ A ROM gerada é apenas artefato local de desenvolvimento e não deve ser version
 
 ## Estado
 
-O projeto já possui uma grande passagem narrativa sobre mapas da campanha e continua em integração, limpeza de resíduos, revisão visual e testes. Não há lançamento público final neste momento.
+O projeto já possui uma grande passagem narrativa sobre mapas da campanha e continua em integração, limpeza de resíduos, localização incremental, revisão visual e testes. Não há lançamento público final neste momento.
