@@ -33,6 +33,9 @@ jobs:
       - name: Verify shared English faction trainer names
         run: python3 scripts/render_shared_trainer_names_en.py --check
 
+      - name: Verify Horizon forest English overlay
+        run: python3 scripts/render_petalburg_woods_surface.py --check
+
       - name: Verify Route 119 Ciro and Seu Bento English surface
         run: python3 scripts/render_route119_ciro_surface_en.py --check
 
