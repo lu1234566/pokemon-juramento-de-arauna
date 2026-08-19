@@ -60,6 +60,9 @@ jobs:
       - name: Verify M'Boi climax anchors
         run: python3 scripts/render_mboi_climax_surface.py --check
 
+      - name: Verify Aguas de M'Boi and tower handoff anchors
+        run: python3 scripts/render_aguas_mboi_surface.py --check
+
       - name: Smoke-test visible residue inventory
         run: |
           python3 scripts/audit_visible_residue.py --output /tmp/visible-residue.md
