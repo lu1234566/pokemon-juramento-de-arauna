@@ -52,6 +52,7 @@ overlay_files=(
     "data/maps/SlateportCity_NameRatersHouse/scripts.inc"
     "data/maps/SlateportCity_OceanicMuseum_1F/scripts.inc"
     "data/maps/SlateportCity_OceanicMuseum_2F/scripts.inc"
+    "data/maps/SlateportCity_PokemonFanClub/scripts.inc"
     "data/maps/SlateportCity_SternsShipyard_1F/scripts.inc"
     "data/maps/SlateportCity_SternsShipyard_2F/scripts.inc"
     "data/text/battle_tent.inc"
@@ -100,6 +101,7 @@ python3 scripts/render_porto_sal_berry_powder.py --in-place
 python3 scripts/render_porto_sal_harbor_service.py --in-place
 python3 scripts/render_porto_sal_name_rater.py --in-place
 python3 scripts/render_porto_sal_battle_tent.py --in-place
+python3 scripts/render_porto_sal_fan_club.py --in-place
 
 cpp="${CPP:-arm-none-eabi-cpp}"
 cpp_with_language="${cpp} -DARAUNA_LANGUAGE=${language_id}"
