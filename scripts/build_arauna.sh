@@ -31,6 +31,8 @@ overlay_files=(
     "data/maps/FortreeCity/scripts.inc"
     "data/maps/FortreeCity_Gym/scripts.inc"
     "data/maps/MeteorFalls_1F_1R/scripts.inc"
+    "data/maps/MtPyre_1F/scripts.inc"
+    "data/maps/MtPyre_2F/scripts.inc"
     "data/maps/MtPyre_Summit/scripts.inc"
     "data/maps/AquaHideout_B1F/scripts.inc"
     "data/maps/AquaHideout_B2F/scripts.inc"
@@ -66,6 +68,7 @@ python3 scripts/render_route120_bento_en.py --in-place
 python3 scripts/render_central_archive_en.py --in-place
 python3 scripts/render_route121_memorial_en.py --in-place
 python3 scripts/render_mboi_climax_en.py --in-place
+python3 scripts/render_memorial_lower_floors_en.py --in-place
 
 cpp="${CPP:-arm-none-eabi-cpp}"
 
