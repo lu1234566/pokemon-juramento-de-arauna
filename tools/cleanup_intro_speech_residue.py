@@ -70,10 +70,10 @@ TARGETS = {
 
 FORBIDDEN = ("BIRCH", "LITTLEROOT", "world of POKéMON", "POKéMON PROFESSOR")
 SELECTOR_REQUIRED = (
-    '.include "data/text/arauna/pt_br/birch_speech.inc"',
-    '.include "data/text/arauna/en/birch_speech.inc"',
-    ".ifndef ARAUNA_LANGUAGE",
-    ".set ARAUNA_LANGUAGE, 1",
+    '#include "data/text/arauna/pt_br/birch_speech.inc"',
+    '#include "data/text/arauna/en/birch_speech.inc"',
+    "#ifndef ARAUNA_LANGUAGE",
+    "#define ARAUNA_LANGUAGE 1",
 )
 
 
