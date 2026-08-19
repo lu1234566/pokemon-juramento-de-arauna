@@ -15,7 +15,10 @@ base.TARGETS.update({
     ),
     "SlateportCity_Harbor_Text_MayISeeYourTicket": (
         ("CIRO:", "DESENCANTO"),
-        ("ATTENDANT: May I see your TICKET?$",),
+        (
+            "ATTENDANT: May I see your\\n",
+            "TICKET?$",
+        ),
     ),
     "SlateportCity_Harbor_Text_YouMustHaveTicket": (
         ("TICKET", "board"),
@@ -34,11 +37,17 @@ base.TARGETS.update({
     ),
     "SlateportCity_Harbor_Text_SailAnotherTime": (
         ("another time",),
-        ("ATTENDANT: Travel with us anytime.$",),
+        (
+            "ATTENDANT: Travel with us\\n",
+            "anytime.$",
+        ),
     ),
     "SlateportCity_Harbor_Text_LilycoveItIs": (
         ("LILYCOVE CITY",),
-        ("ATTENDANT: BAIA DAS LUZES, right?$",),
+        (
+            "ATTENDANT: BAIA DAS LUZES,\\n",
+            "right?$",
+        ),
     ),
     "SlateportCity_Harbor_Text_BattleFrontierItIs": (
         ("BATTLE FRONTIER",),
@@ -117,17 +126,23 @@ base.TARGETS.update({
         ("useless to you", "SCANNER"),
         (
             "ENGINEER: That's fine.\\p",
-            "If you want to trade the SCANNER,\\n",
-            "let me know.$",
+            "If you want to trade the\\n",
+            "SCANNER, let me know.$",
         ),
     ),
     "SlateportCity_Harbor_Text_TradeForDeepSeaTooth": (
         ("DEEPSEATOOTH",),
-        ("ENGINEER: Trade for DEEPSEATOOTH?$",),
+        (
+            "ENGINEER: Trade for\\n",
+            "DEEPSEATOOTH?$",
+        ),
     ),
     "SlateportCity_Harbor_Text_TradeForDeepSeaScale": (
         ("DEEPSEASCALE",),
-        ("ENGINEER: Trade for DEEPSEASCALE?$",),
+        (
+            "ENGINEER: Trade for\\n",
+            "DEEPSEASCALE?$",
+        ),
     ),
     "SlateportCity_Harbor_Text_WhichOneDoYouWant": (
         ("Which one",),
