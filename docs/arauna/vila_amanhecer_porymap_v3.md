@@ -14,8 +14,12 @@ Preservação técnica:
 - `MAP_LITTLEROOT_TOWN`, `LAYOUT_LITTLEROOT_TOWN`, warps, eventos, flags, scripts e conexões intactos;
 - tilesets continuam `gTileset_General` e `gTileset_Petalburg`;
 - `map.bin` permanece 20×20, 800 bytes;
-- portas/placas existentes não são substituídas;
-- nenhuma GitHub Action necessária para este lote de layout.
+- portas/placas existentes não são substituídas.
+
+Validação:
+- o PR deve passar pela CI padrão do repositório antes do merge;
+- a build valida que o novo `map.bin` continua compilável com a base Emerald;
+- a conferência visual final de portas, placas e colisões continua sendo feita no Porymap/mGBA quando houver teste manual disponível.
 
 Coordenadas funcionais preservadas:
 - casa: warp `(5, 8)`;
