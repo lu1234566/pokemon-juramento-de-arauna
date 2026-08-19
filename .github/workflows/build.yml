@@ -33,6 +33,9 @@ jobs:
       - name: Verify shared English faction trainer names
         run: python3 scripts/render_shared_trainer_names_en.py --check
 
+      - name: Verify Vila Amanhecer and Route 101 English opening
+        run: python3 scripts/render_vila_amanhecer_route101_en.py --check
+
       - name: Verify Horizon forest English overlay
         run: python3 scripts/render_petalburg_woods_surface.py --check
 
