@@ -26,6 +26,10 @@ overlay_files=(
     "src/data/trainers.h"
     "data/maps/LittlerootTown/scripts.inc"
     "data/maps/Route101/scripts.inc"
+    "data/maps/LittlerootTown_BrendansHouse_1F/scripts.inc"
+    "data/maps/LittlerootTown_MaysHouse_1F/scripts.inc"
+    "data/maps/LittlerootTown_MaysHouse_2F/scripts.inc"
+    "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc"
     "data/maps/PetalburgWoods/scripts.inc"
     "data/maps/Route119/scripts.inc"
     "data/maps/Route120/scripts.inc"
@@ -85,6 +89,8 @@ trap 'exit 143' TERM
 
 python3 scripts/render_shared_trainer_names_en.py --in-place
 python3 scripts/render_vila_amanhecer_route101_en.py --in-place
+python3 scripts/render_vila_amanhecer_houses_en_checked.py --in-place
+python3 scripts/render_anahi_lab_en_checked.py --in-place
 python3 scripts/render_petalburg_woods_surface.py --in-place
 python3 scripts/render_route119_ciro_surface_en.py --in-place
 python3 scripts/render_baia_luzes_ciro_en.py --in-place
