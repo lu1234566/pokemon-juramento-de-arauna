@@ -42,6 +42,9 @@ jobs:
       - name: Verify Serra da Cinza English overlay
         run: python3 scripts/render_mt_chimney_surface.py --check
 
+      - name: Verify Mata do Meio and Lidia English overlay
+        run: python3 scripts/render_mata_do_meio_lidia_en.py --check
+
       - name: Verify no proprietary files
         run: bash scripts/check_no_proprietary_files.sh
 
