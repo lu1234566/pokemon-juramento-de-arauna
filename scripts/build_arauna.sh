@@ -90,7 +90,7 @@ trap 'exit 143' TERM
 python3 scripts/render_shared_trainer_names_en.py --in-place
 python3 scripts/render_vila_amanhecer_route101_en.py --in-place
 python3 scripts/render_vila_amanhecer_houses_en.py --in-place
-python3 scripts/render_anahi_lab_en.py --in-place
+python3 scripts/render_anahi_lab_en_checked.py --in-place
 python3 scripts/render_petalburg_woods_surface.py --in-place
 python3 scripts/render_route119_ciro_surface_en.py --in-place
 python3 scripts/render_baia_luzes_ciro_en.py --in-place
