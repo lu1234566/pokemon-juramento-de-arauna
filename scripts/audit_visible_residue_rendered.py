@@ -13,6 +13,7 @@ from render_porto_sal_museum_people_checked import (
     render_museum as render_museum_people_1f,
 )
 from render_porto_sal_museum_science import render_1f as render_museum_science_1f, render_2f as render_museum_science_2f
+from render_porto_sal_name_rater import render as render_name_rater
 from render_porto_sal_seu_bento import render as render_porto_sal_seu_bento
 from render_porto_sal_shipyard import render_1f as render_shipyard_1f, render_2f as render_shipyard_2f
 
@@ -31,6 +32,8 @@ def render_asm_source(path: Path, source: str) -> str:
         return render_berry_powder_city(rendered)
     if path == ROOT / "data" / "maps" / "SlateportCity_Harbor" / "scripts.inc":
         return render_harbor_service(rendered)
+    if path == ROOT / "data" / "maps" / "SlateportCity_NameRatersHouse" / "scripts.inc":
+        return render_name_rater(rendered)
     if path == ROOT / "data" / "maps" / "SlateportCity_OceanicMuseum_1F" / "scripts.inc":
         return render_museum_science_1f(render_museum_people_1f(rendered))
     if path == ROOT / "data" / "maps" / "SlateportCity_OceanicMuseum_2F" / "scripts.inc":
