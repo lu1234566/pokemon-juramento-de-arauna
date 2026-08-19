@@ -21,15 +21,12 @@
 - introdução de Anahi separada em pt-BR/en com os mesmos nove labels;
 - seleção no estágio correto do `cpp` da pipeline do pokeemerald;
 - pt-BR preservado como padrão;
-- builds isoladas `intro-ptbr`/`intro-en`;
-- validação de labels, placeholders, charmap e largura de linha;
-- documentação explícita de que o protótipo ainda não representa tradução integral do jogo.
+- builds isoladas para pt-BR/en;
+- validação de labels, placeholders, charmap e largura de linha.
 
 ### PR #122 — protagonista e Ciro
 
 - identidade narrativa do protagonista fechada;
-- idade, origem, motivação, conflito e limites de interpretação definidos;
-- dois slots de apresentação de gênero preservam o mesmo cânone;
 - relação inicial e arco do primeiro capítulo de Ciro definidos;
 - vozes pt-BR/en registradas;
 - GDD narrativo e sinopse atualizados;
@@ -42,40 +39,35 @@
 - glossário-base pt-BR/en versionado;
 - issue #5 concluída.
 
-## Backlog revisado
+### PR #125 — laboratório de Anahi / pós-game
 
-- issue #2 — concluída;
-- issue #5 — concluída como protótipo M1;
-- issue #28 — encerrada como supersedida pela arquitetura atual;
-- issue #9 — depende de glifos/fontes em pixel art;
-- issue #31 — direção visual/tileset, depende de arte;
-- issue #3 — concept art dos iniciais, depende de arte;
-- issue #123 — novo lote técnico delimitado para resíduos sistêmicos do laboratório de Anahi.
+- seis resíduos sistêmicos em inglês/vanilla removidos;
+- upgrade da National Dex, recebimento/nickname do starter e avisos auxiliares localizados;
+- ligação de Scott reatribuída visualmente a Seu Bento;
+- `SLATEPORT`/`LILYCOVE` substituídos por `PORTO DO SAL`/`BAIA DAS LUZES` na superfície visível;
+- nenhum comando executável, label, flag, var, movimento, progressão ou save foi alterado;
+- novo validador dedicado com `--check` e limite conservador de 32 caracteres;
+- issue #123 concluída.
 
-O PR legado #58 não foi alterado.
+## Auditoria do backlog
 
-## Resíduo técnico ainda confirmado
+Issues abertas após o ataque:
 
-`data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc` ainda contém seis blocos de superfície em inglês/vanilla, agora rastreados pela issue #123:
+- #3 — concept art dos iniciais; depende de arte;
+- #9 — glifos/fontes; depende de pixel art;
+- #31 — tileset/direção visual da vila; depende de arte.
 
-1. upgrade para National Dex;
-2. recebimento do starter de Johto;
-3. prompt legado de apelido;
-4. aviso para deixar os outros starters;
-5. mensagem de falta de espaço para Pokémon;
-6. ligação pós-game completa de Scott/S.S. Tidal/Slateport/Lilycove.
+Não restou issue aberta totalmente não-art. O PR legado #58 permaneceu intocado.
 
-A substituição direta desse arquivo grande não foi feita de forma cega: o conector disponível exige substituição integral do texto e o Actions não chegou a executar Checkout, então não havia um mecanismo seguro para aplicar/revalidar automaticamente esse patch durante a sessão.
+## CI / runner
 
-## GitHub Actions
+Os runs observados durante a sessão, inclusive rerun, encerraram antes de registrar qualquer step (`steps: null`). O padrão ocorreu antes do Checkout, portanto não há log de compilação nem evidência de falha do código.
 
-Foram disparados runs e rerun em branches diferentes. O padrão observado foi consistente: os jobs encerraram em falha antes de registrar qualquer step (`steps: null`), inclusive antes do Checkout. Portanto não houve log de compilação ou de comando do repositório que permitisse atribuir essas falhas ao código.
-
-A CI foi preparada para, quando o runner efetivamente executar jobs, separar validação estática e builds de introdução pt-BR/en.
+A proteção da `main` foi auditada e exige os contextos históricos `repository-safety` e `build-and-test`. A CI atual foi preparada para voltar a publicar exatamente esses nomes quando os runners iniciarem normalmente: o primeiro protege os validadores/contrato de localização e o segundo agrega a validação com as duas builds de idioma.
 
 ## Restrições respeitadas
 
 - nenhum Codespaces usado;
-- nenhuma arte nova criada ou exigida para os lotes integrados;
+- nenhuma arte nova criada ou exigida;
 - nenhuma mudança intencional de save, flags, warps ou ordem de progressão;
-- PR #58 preservado sem alterações.
+- nenhuma edição no PR #58.

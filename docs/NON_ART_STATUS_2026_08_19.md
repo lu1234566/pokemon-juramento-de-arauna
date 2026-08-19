@@ -1,6 +1,6 @@
 # Status técnico sem arte — 2026-08-19
 
-Este documento registra uma auditoria da `main` atual e separa trabalho técnico/narrativo de dependências visuais. A intenção é impedir que backlog histórico seja confundido com a arquitetura realmente usada pelo jogo hoje.
+Este documento registra o estado da `main` após o ataque técnico de 19/08/2026 e separa trabalho técnico/narrativo de dependências visuais.
 
 ## Arquitetura vigente
 
@@ -12,7 +12,7 @@ A referência técnica atual é `docs/ARAUANA_STORY_IMPLEMENTATION.md`:
 - substituir a superfície visível por Arauna;
 - evitar alterações de save quando a mudança é apenas narrativa/visual.
 
-A antiga estratégia de criar seis mapas dedicados ao vertical slice não está presente na `main` atual e foi tratada como supersedida.
+A antiga estratégia de criar seis mapas dedicados ao vertical slice foi supersedida pela arquitetura atual.
 
 ## Implementado sem depender de arte nova
 
@@ -22,12 +22,13 @@ A antiga estratégia de criar seis mapas dedicados ao vertical slice não está 
 - Ciro ocupa a função narrativa do rival;
 - Professora Anahi ocupa a função narrativa de Birch;
 - Consórcio Horizonte e Lembrantes substituem as facções relevantes na superfície visível;
-- Serra do Uivo, Porto das Redes, Encruzilhada Central, Casa da Cinza, Pampa da Espera, Mata do Meio, Missões do Céu e M'Boi já possuem correspondência de ginásio/localidade em limpadores dedicados;
-- Seu Bento substitui resíduos visíveis ligados a Steven nos alvos já cobertos.
+- Serra do Uivo, Porto das Redes, Encruzilhada Central, Casa da Cinza, Pampa da Espera, Mata do Meio, Missões do Céu e M'Boi possuem correspondência de ginásio/localidade em limpadores dedicados;
+- Seu Bento substitui resíduos visíveis ligados a Steven nos alvos cobertos e, no pós-game do laboratório, assume a função visível da ligação herdada de Scott;
+- protagonista e Ciro possuem cânone/voz consolidados e a antiga issue #2 está concluída.
 
 ### Limpeza de resíduos do Emerald
 
-O repositório já possui validadores/aplicadores para:
+A `main` possui treze validadores/aplicadores incrementais:
 
 1. placas e identidades centrais;
 2. Match Call;
@@ -40,55 +41,55 @@ O repositório já possui validadores/aplicadores para:
 9. identidade de UI/sistema;
 10. Route 119;
 11. núcleo doméstico de Val;
-12. avaliação da Pokédex.
+12. avaliação da Pokédex;
+13. fluxos sistêmicos/pós-game do laboratório de Anahi.
 
-A CI principal passa a executar esses doze validadores em modo `--check` para prevenir regressões.
+O lote #13 removeu os seis resíduos rastreados pela issue #123 sem alterar comandos de evento, labels, flags, vars, progressão ou save.
 
-### Documentação e manutenção
+### Localização
 
-- README voltou a descrever Pokémon Juramento de Arauna em vez do README puro do `pokeemerald`;
-- CI ganhou `workflow_dispatch`, concorrência controlada e job independente de validação estática;
-- issue #28 foi encerrada como arquitetura supersedida;
-- issue #5 foi mantida aberta porque a estratégia bilíngue histórica não está mais integrada na `main` atual;
-- issue #9 foi explicitamente mantida fora deste lote porque seus critérios dependem de glifos/fontes em pixel art;
-- issue #2 permanece aberta: Ciro e parte do cânone estão integrados, mas os critérios completos de protagonista/voz/documentação ainda não estão satisfeitos.
+- a introdução de Anahi possui fontes pt-BR/en paralelas e seleção por `ARAUNA_LANGUAGE` no estágio correto do `cpp`;
+- `scripts/build_arauna.sh` isola as duas variantes de build;
+- `scripts/check_localization.py` verifica labels, placeholders, largura e charmap;
+- o inventário técnico e glossário-base concluíram o protótipo M1 da antiga issue #5;
+- o restante do jogo ainda requer expansão incremental por superfície alcançável, não tradução global cega.
+
+### CI e proteção da `main`
+
+A proteção da `main` exige os contextos `repository-safety` e `build-and-test`. A CI foi alinhada a esses nomes:
+
+- `repository-safety` executa os treze checks de resíduos e o contrato bilíngue;
+- a matriz compila pt-BR e inglês;
+- `build-and-test` agrega o resultado e só passa quando a validação e ambas as builds passam.
 
 ## Pendências técnicas que não exigem arte
 
-### P0 — validar o estado atual quando o runner do Actions voltar a aceitar jobs
+### P0 — execução real da CI
 
-- executar `Arauna static validation`;
-- executar `Build Emerald base`;
-- revisar qualquer falha real de script/compilação;
-- não confundir falha anterior à criação de steps com falha de código.
+Os runners observados em 19/08/2026 continuam encerrando jobs antes do primeiro step (`steps: null`), inclusive antes do Checkout. Quando o serviço voltar a aceitar jobs:
 
-### P1 — localização bilíngue
+- confirmar `repository-safety`;
+- confirmar as builds pt-BR/en;
+- confirmar `build-and-test`;
+- tratar apenas logs produzidos depois do Checkout como evidência de falha do código.
 
-A `main` atual não possui mais a antiga camada `ARAUNA_LANGUAGE`/build dupla. O trabalho correto é redesenhar a localização a partir do estado atual, levando em conta que muitos scripts autorais já estão em pt-BR e grande parte da base sistêmica do Emerald continua em inglês.
+### P1 — expansão incremental da localização/resíduos
 
-Evitar simplesmente restaurar o PR histórico: ele foi criado para uma estrutura de projeto que já mudou.
+Ainda existe conteúdo sistêmico e secundário herdado do Emerald fora dos alvos protegidos. A regra é expandir a cobertura por superfícies realmente alcançáveis e canonicamente definidas, preservando labels, fluxo, flags, warps e formato de save.
 
-### P1 — cobertura de resíduos fora dos alvos atuais
+Não há issue não-art aberta para um próximo lote específico neste momento; um novo lote deve nascer de resíduo confirmado, com escopo delimitado antes da edição.
 
-Os validadores existentes protegem superfícies selecionadas, não todo o texto do Emerald. Ainda existe grande volume de texto genérico em inglês em módulos de sistema, Match Call genérico, pós-game e conteúdo secundário. A expansão deve ser incremental e orientada por superfícies realmente alcançáveis no jogo.
+### P2 — manutenção de documentação
 
-### P1 — laboratório inicial / pós-game
-
-O laboratório de Anahi já tem grande parte dos blocos autorais convertidos, mas ainda há mensagens sistêmicas herdadas em inglês em fluxos como upgrade da Pokédex/National Dex e nickname de presentes. Esses resíduos devem ser tratados em um lote técnico próprio, preservando labels e fluxo.
-
-### P2 — documentação de cânone
-
-Consolidar documentos antigos de planos/lotes em uma referência de estado evita repetir trabalho já aplicado. Não apagar histórico útil; marcar claramente o que é plano, implementação concluída ou arquitetura supersedida.
+Documentos históricos de plano devem permanecer como histórico, mas documentos de estado precisam ser atualizados quando uma issue é concluída para não reabrir trabalho já integrado.
 
 ## Fora deste ataque porque depende de arte
 
-- sprites finais de personagens;
-- tilesets autorais novos;
-- revisão visual final de cidades quando exige novos tiles;
-- glifos `ã/õ/Ã/Õ` nas fontes;
-- retratos, ícones e demais GFX;
-- qualquer conversão final de sprite/fonte que exija conferência pixel a pixel.
+- issue #3 — concept art dos iniciais;
+- issue #9 — glifos `ã/õ/Ã/Õ` nas fontes;
+- issue #31 — direção visual/tileset da Vila das Araucárias;
+- sprites finais, portraits, tilesets, ícones e conversões que exijam conferência pixel a pixel.
 
 ## Regra para próximas tarefas
 
-Antes de implementar uma issue antiga, conferir primeiro se seus caminhos, mapas, documentos e arquitetura ainda existem na `main`. Se não existirem, classificar a issue como supersedida ou reescrevê-la para o estado atual antes de produzir código.
+Antes de implementar uma issue antiga, conferir se seus caminhos, mapas, documentos e arquitetura ainda existem na `main`. Se não existirem, classificar a issue como supersedida ou reescrevê-la para o estado atual antes de produzir código. O PR legado #58 permanece fora de escopo.
