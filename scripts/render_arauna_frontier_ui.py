@@ -17,8 +17,8 @@ def multiline_decl(name: str, first: str, second: str) -> str:
 
 
 REPLACEMENTS = (
-    (decl("gText_SymbolsEarned", "Symbols Earned"), decl("gText_SymbolsEarned", "SIMBOLOS OBTIDOS")),
-    (decl("gText_BattleRecord", "Battle Record"), decl("gText_BattleRecord", "REGISTRO DE BATALHA")),
+    (decl("gText_SymbolsEarned", "Symbols Earned"), decl("gText_SymbolsEarned", "SIMBOLOS")),
+    (decl("gText_BattleRecord", "Battle Record"), decl("gText_BattleRecord", "REG. BATALHA")),
     (decl("gText_BattlePoints", "Battle Points"), decl("gText_BattlePoints", "PONTOS DE BATALHA")),
     (decl("gText_CheckFrontierMap", "Check BATTLE FRONTIER MAP."), decl("gText_CheckFrontierMap", "Ver mapa do CIRCUITO.")),
     (decl("gText_CheckTrainerCard", "Check TRAINER CARD."), decl("gText_CheckTrainerCard", "Ver CARTAO DE TREINADOR.")),
