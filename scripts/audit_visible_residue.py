@@ -8,6 +8,7 @@ from dataclasses import asdict, dataclass
 from pathlib import Path
 
 from render_arauna_frontier_ui import render as render_frontier_ui
+from render_mt_chimney_surface import render as render_mt_chimney
 from render_petalburg_woods_surface import render as render_petalburg_woods
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -92,13 +93,19 @@ def classify(text: str) -> tuple[str, str, tuple[str, ...]] | None:
     return None
 
 
+def render_asm_source(path: Path, source: str) -> str:
+    if path == ROOT / "data" / "maps" / "PetalburgWoods" / "scripts.inc":
+        return render_petalburg_woods(source)
+    if path == ROOT / "data" / "maps" / "MtChimney" / "scripts.inc":
+        return render_mt_chimney(source)
+    return source
+
+
 def scan_asm(path: Path) -> list[Finding]:
     findings: list[Finding] = []
     current_label = "<unlabeled>"
     fragments: list[str] = []
-    source = path.read_text(encoding="utf-8")
-    if path == ROOT / "data" / "maps" / "PetalburgWoods" / "scripts.inc":
-        source = render_petalburg_woods(source)
+    source = render_asm_source(path, path.read_text(encoding="utf-8"))
 
     def flush() -> None:
         nonlocal fragments
