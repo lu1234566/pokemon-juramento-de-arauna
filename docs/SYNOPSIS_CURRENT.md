@@ -4,7 +4,7 @@ Aos 16 anos, o protagonista retorna a Arauna com a mãe e passa a viver em Vila 
 
 Mas Arauna sofre com o **Desencanto**, um fenômeno em que POKéMON e pessoas perdem vínculos com lugares, vozes e lembranças. Anahi, que ajudou a desenvolver os primeiros sensores de Vínculo, suspeita que a tecnologia criada para compreender o fenômeno foi transformada em outra coisa pelo **Consórcio Horizonte**, comandado por Dr. Otacílio Meira.
 
-O primeiro contraponto do protagonista é **Ciro**, um vizinho da mesma idade patrocinado pelo Horizonte. Ciro acredita que memória também pode ser peso e que recusarse a tratar a dor não é o mesmo que preservá-la. A rivalidade entre os dois cresce porque nenhum deles é indiferente ao sofrimento; eles discordam sobre quem pode decidir o que deve permanecer.
+O primeiro contraponto do protagonista é **Ciro**, um vizinho da mesma idade patrocinado pelo Horizonte. Ciro acredita que memória também pode ser peso e que recusar-se a tratar a dor não é o mesmo que preservá-la. A rivalidade entre os dois cresce porque nenhum deles é indiferente ao sofrimento; eles discordam sobre quem pode decidir o que deve permanecer.
 
 Enquanto o Horizonte promete medir e corrigir o Desencanto, os **Lembrantes**, liderados por Luzia Ferraz, defendem que certas memórias não podem ser entregues a uma instituição. Dona Zila e outros guardiões de memória oral revelam uma terceira dimensão do conflito: lembrar não é apenas armazenar informação, mas manter relações entre pessoas, POKéMON e território.
 
