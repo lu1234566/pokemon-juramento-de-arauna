@@ -135,11 +135,13 @@ def apply() -> int:
         if updated != text:
             changed += 1
         text = updated
-    TARGET.write_text(text, encoding="utf-8")
 
-    failures = validate()
+    failures = validate_target(text)
+    failures.extend(validate_selector(SELECTOR.read_text(encoding="utf-8")))
     if failures:
         raise RuntimeError("; ".join(failures))
+
+    TARGET.write_text(text, encoding="utf-8")
     print(f"Arauna intro cleanup: {changed} changed; {len(TARGETS)} pt-BR blocks and selector verified.")
     return 0
 
