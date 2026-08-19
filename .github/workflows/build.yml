@@ -41,6 +41,11 @@ jobs:
       - name: Verify bilingual intro contract
         run: python3 scripts/check_localization.py
 
+      - name: Smoke-test visible residue inventory
+        run: |
+          python3 scripts/audit_visible_residue.py --output /tmp/visible-residue.md
+          sed -n '1,8p' /tmp/visible-residue.md
+
   build:
     name: Build Arauna (intro ${{ matrix.intro_language }})
     runs-on: ubuntu-latest
