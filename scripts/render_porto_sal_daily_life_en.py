@@ -118,8 +118,8 @@ base.TARGETS.update({
         "the world someday.$",
     ),
     "SlateportCity_Text_SternSaysDiscoveredSomething": (
-        "BOY: The ENGINEER says they found\\n",
-        "something on the seafloor.\\p",
+        "BOY: The ENGINEER says they\\n",
+        "found something on the seafloor.\\p",
         "I wonder what it is.$",
     ),
     "SlateportCity_Text_CaptainComeBackWithBigFish": (
