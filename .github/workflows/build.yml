@@ -42,6 +42,9 @@ jobs:
       - name: Verify bilingual intro contract
         run: python3 scripts/check_localization.py
 
+      - name: Verify Circuito UI overlay anchors
+        run: python3 scripts/render_arauna_frontier_ui.py --check
+
       - name: Smoke-test visible residue inventory
         run: |
           python3 scripts/audit_visible_residue.py --output /tmp/visible-residue.md
