@@ -99,6 +99,15 @@ jobs:
       - name: Verify Porto do Sal submarine English overlay
         run: python3 scripts/render_porto_sal_submersivel_en.py --check
 
+      - name: Verify Porto do Sal daily-life English overlay
+        run: python3 scripts/render_porto_sal_daily_life_en.py --check
+
+      - name: Verify Porto do Sal shipyard English overlay
+        run: python3 scripts/render_porto_sal_shipyard_en.py --check
+
+      - name: Verify Porto do Sal harbor-service English overlay
+        run: python3 scripts/render_porto_sal_harbor_service_en.py --check
+
       - name: Verify no proprietary files
         run: bash scripts/check_no_proprietary_files.sh
 
