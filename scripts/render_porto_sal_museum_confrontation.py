@@ -47,7 +47,7 @@ TARGETS: dict[str, tuple[str, ...]] = {
     "SlateportCity_OceanicMuseum_2F_Text_WereTeamAqua": (
         "HORIZONTE: Unidade de campo do\\n",
         "HORIZONTE.\\p",
-        "Os sensores podem ajudar a mapear\\n",
+        "Os sensores ajudam a mapear\\n",
         "anomalias sob M'BOI.$",
     ),
     "SlateportCity_OceanicMuseum_2F_Text_Grunt1Defeat": (
@@ -56,7 +56,7 @@ TARGETS: dict[str, tuple[str, ...]] = {
     ),
     "SlateportCity_OceanicMuseum_2F_Text_BossGoingToBeFurious": (
         "HORIZONTE: O diretor nao vai\\n",
-        "gostar de voltarmos sem as pecas.$",
+        "gostar se voltarmos sem as pecas.$",
     ),
     "SlateportCity_OceanicMuseum_2F_Text_LetMeTakeCareOfThis": (
         "HORIZONTE: Saia da frente.\\p",
@@ -68,7 +68,7 @@ TARGETS: dict[str, tuple[str, ...]] = {
     ),
     "SlateportCity_OceanicMuseum_2F_Text_MeddlingKid": (
         "HORIZONTE: E agora?\\p",
-        "Nao podemos voltar de maos vazias.$",
+        "Nao podemos voltar sem nada.$",
     ),
     "SlateportCity_OceanicMuseum_2F_Text_CameToSeeWhatsTakingSoLong": (
         "OTACILIO: Vim ver por que a\\n",
@@ -80,7 +80,7 @@ TARGETS: dict[str, tuple[str, ...]] = {
         "a mapear as cavernas de M'BOI.\\p",
         "Mas transformar um MUSEU em\\n",
         "operacao forcada nao e cuidado.\\p",
-        "Recuem. Encontraremos outro jeito.$",
+        "Recuem. Buscaremos outro jeito.$",
     ),
     "SlateportCity_OceanicMuseum_2F_Text_SternThankYouForSavingUs": (
         "ENGENHEIRO: Obrigado, {PLAYER}.\\p",
@@ -189,7 +189,7 @@ def render_item_descs(source: str) -> str:
             raise ValueError(f"Devon Goods description marker missing: {marker!r}")
     start, end = matches[0].span()
     rendered = source[:start] + ITEM_DESC_NEW + source[end:]
-    if "DEVON's" in ITEM_DESC_RE.search(source).group("body") and "DEVON's" in rendered[start:start+180]:
+    if "DEVON's" in rendered[start:start + 180]:
         raise ValueError("legacy Devon Goods description survived")
     return rendered
 
