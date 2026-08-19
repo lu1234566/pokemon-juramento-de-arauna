@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
+import re
+
 import render_ruinas_memorial_surface as base
 
 
@@ -33,7 +35,15 @@ def patch_width_sensitive_payloads() -> None:
     )
 
 
+def patch_item_description_layout() -> None:
+    base.ITEM_DESC_RE = re.compile(
+        r'(?ms)^static const u8 sMagmaEmblemDesc\[\] = _\(\n'
+        r'(?P<body>.*?^\s*"[^"\n]*"\);)'
+    )
+
+
 patch_width_sensitive_payloads()
+patch_item_description_layout()
 
 render_meteor = base.render_meteor
 render_memorial = base.render_memorial
