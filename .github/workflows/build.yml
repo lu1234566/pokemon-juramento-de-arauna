@@ -81,6 +81,9 @@ jobs:
       - name: Verify Porto do Sal submarine anchors
         run: python3 scripts/render_porto_sal_submersivel.py --check
 
+      - name: Verify Porto do Sal museum people anchors
+        run: python3 scripts/render_porto_sal_museum_people_checked.py --check
+
       - name: Verify Porto do Sal museum anchors
         run: python3 scripts/render_porto_sal_museum_confrontation.py --check
 
