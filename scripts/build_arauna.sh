@@ -41,6 +41,7 @@ overlay_files=(
     "data/maps/MagmaHideout_3F_1R/scripts.inc"
     "data/maps/MagmaHideout_3F_2R/scripts.inc"
     "data/maps/MagmaHideout_4F/scripts.inc"
+    "data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc"
     "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc"
     "data/text/berries.inc"
     "src/data/items.h"
@@ -73,6 +74,7 @@ python3 scripts/render_mboi_climax_surface.py --in-place
 python3 scripts/render_aguas_mboi_daily_surface.py --in-place
 python3 scripts/render_lembrantes_lower_surface.py --in-place
 python3 scripts/render_lembrantes_core_surface.py --in-place
+python3 scripts/render_missoes_ceu_ground_floor.py --in-place
 python3 scripts/render_missoes_ceu_confrontation.py --in-place
 
 cpp="${CPP:-arm-none-eabi-cpp}"
