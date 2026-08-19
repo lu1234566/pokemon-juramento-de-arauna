@@ -71,7 +71,7 @@ python3 scripts/render_route120_bento_en.py --in-place
 python3 scripts/render_central_archive_en.py --in-place
 python3 scripts/render_route121_memorial_en.py --in-place
 python3 scripts/render_mboi_climax_en.py --in-place
-python3 scripts/render_aguas_mboi_en.py --in-place
+python3 scripts/render_aguas_mboi_en_checked.py --in-place
 python3 scripts/render_memorial_lower_floors_en.py --in-place
 
 cpp="${CPP:-arm-none-eabi-cpp}"
