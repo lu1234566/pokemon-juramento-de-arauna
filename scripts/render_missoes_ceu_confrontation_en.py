@@ -8,7 +8,7 @@ base.TARGETS.update({
     "MossdeepCity_SpaceCenter_2F_Text_MossdeepIdealForRockets": (
         "SCIENTIST: MISSOES DO CEU has\\n",
         "steady winds and open horizon.\\p",
-        "Our antennas cover most of Arauna.$",
+        "Our antennas cover Arauna.$",
     ),
     "MossdeepCity_SpaceCenter_2F_Text_WhyWouldMagmaStealRocketFuel": (
         "SCIENTIST: The regional uplink\\n",
@@ -19,11 +19,11 @@ base.TARGETS.update({
     "MossdeepCity_SpaceCenter_2F_Text_WouldveLikedToBeAstronaut": (
         "MAN: When I was young, I wanted\\n",
         "to see Arauna from above.\\p",
-        "Maybe it's not too late to learn.$",
+        "Maybe I can still learn.$",
     ),
     "MossdeepCity_SpaceCenter_2F_Text_MagmaCantGetAwayWithThis": (
         "MAN: Cutting a civilian network\\n",
-        "also hurts people who never chose\\n",
+        "hurts people who never chose\\n",
         "this fight.$",
     ),
     "MossdeepCity_SpaceCenter_2F_Text_WishOrdinaryPeopleCouldGoIntoSpace": (
@@ -48,15 +48,15 @@ base.TARGETS.update({
     "MossdeepCity_SpaceCenter_2F_Text_Grunt5Intro": (
         "REMEMBRANCER: If HORIZON links\\n",
         "this network to the LIVING\\n",
-        "ARCHIVE, protocol reaches Arauna.$",
+        "ARCHIVE, orders reach Arauna.$",
     ),
     "MossdeepCity_SpaceCenter_2F_Text_Grunt5Defeat": (
         "REMEMBRANCER: We shut the uplink\\n",
         "to prevent another M'BOI.$",
     ),
     "MossdeepCity_SpaceCenter_2F_Text_Grunt5PostBattle": (
-        "REMEMBRANCER: Ordinary people use\\n",
-        "this network too. I know.$",
+        "REMEMBRANCER: Civilians use this\\n",
+        "network too. I know.$",
     ),
     "MossdeepCity_SpaceCenter_2F_Text_Grunt6Intro": (
         "REMEMBRANCER: RAUL ordered us to\\n",
@@ -69,18 +69,18 @@ base.TARGETS.update({
     ),
     "MossdeepCity_SpaceCenter_2F_Text_Grunt6PostBattle": (
         "REMEMBRANCER: If HORIZON keeps\\n",
-        "that key, they can trigger sensors\\n",
+        "that key, it can trigger sensors\\n",
         "from afar.$",
     ),
     "MossdeepCity_SpaceCenter_2F_Text_Grunt7Intro": (
         "REMEMBRANCER: LUZIA wants to air\\n",
-        "the M'BOI records before breaking\\n",
+        "M'BOI records before breaking\\n",
         "the key.$",
     ),
     "MossdeepCity_SpaceCenter_2F_Text_Grunt7Defeat": (
         "REMEMBRANCER: Exposing truth\\n",
-        "shouldn't require taking an entire\\n",
-        "network.$",
+        "shouldn't require taking a\\n",
+        "whole network.$",
     ),
     "MossdeepCity_SpaceCenter_2F_Text_Grunt7PostBattle": (
         "REMEMBRANCER:\\n",
@@ -94,14 +94,13 @@ base.TARGETS.update({
         "But we won't move.$",
     ),
     "MossdeepCity_SpaceCenter_2F_Text_MaxieDontInterfere": (
-        "LUZIA: HORIZON can use this uplink\\n",
+        "LUZIA: HORIZON can use this link\\n",
         "to command the ARCHIVE across\\n",
         "Arauna. I won't allow it.$",
     ),
     "MossdeepCity_SpaceCenter_2F_Text_StevenWhyStealRocketFuel": (
         "SEU BENTO: Stopping HORIZON does\\n",
-        "not require taking a network used\\n",
-        "by this whole city.\\p",
+        "not require taking city systems.\\p",
         "Who authorized you?$",
     ),
     "MossdeepCity_SpaceCenter_2F_Text_MaxieUseFuelToEruptVolcano": (
@@ -110,8 +109,8 @@ base.TARGETS.update({
         "key. Then the network returns.$",
     ),
     "MossdeepCity_SpaceCenter_2F_Text_StevenAreYouReadyToBattle": (
-        "SEU BENTO: {PLAYER}, I'll stop them\\n",
-        "taking the transmitter.\\p",
+        "SEU BENTO: {PLAYER}, I'll stop\\n",
+        "this takeover.\\p",
         "Fight with me?$",
     ),
     "MossdeepCity_SpaceCenter_2F_Text_StevenHurryGetReadyQuickly": (
@@ -129,13 +128,13 @@ base.TARGETS.update({
     ),
     "MossdeepCity_SpaceCenter_2F_Text_MaxieWeFailedIsAquaAlsoMisguided": (
         "LUZIA: I understand.\\p",
-        "Taking the network to stop others\\n",
-        "controlling it is still taking it.$",
+        "Taking the network to block\\n",
+        "control still means taking it.$",
     ),
     "MossdeepCity_SpaceCenter_2F_Text_MaxieWeWillGiveUp": (
         "LUZIA: We're leaving.\\p",
         "The M'BOI evidence still exists.\\p",
-        "I'll find another way to spread it.$",
+        "I'll find another way to share.$",
     ),
     "MossdeepCity_SpaceCenter_2F_Text_StevenThankYouComeSeeMeAtHome": (
         "SEU BENTO: Thank you, {PLAYER}.\\p",
