@@ -31,6 +31,7 @@ overlay_files=(
     "data/maps/OldaleTown/scripts.inc"
     "data/maps/PetalburgCity/scripts.inc"
     "data/maps/PetalburgCity_Gym/scripts.inc"
+    "data/maps/PetalburgCity_WallysHouse/scripts.inc"
     "data/maps/LittlerootTown_BrendansHouse_1F/scripts.inc"
     "data/maps/LittlerootTown_MaysHouse_1F/scripts.inc"
     "data/maps/LittlerootTown_MaysHouse_2F/scripts.inc"
@@ -101,6 +102,7 @@ python3 scripts/render_vila_da_passagem_en.py --in-place
 python3 scripts/render_route102_pampa_en_checked.py --in-place
 python3 scripts/render_pampa_elias_gym_core_en_checked.py --in-place
 python3 scripts/render_pampa_gym_rooms_en_checked.py --in-place
+python3 scripts/render_val_house_en_checked.py --in-place
 python3 scripts/render_petalburg_woods_surface.py --in-place
 python3 scripts/render_route119_ciro_surface_en.py --in-place
 python3 scripts/render_baia_luzes_ciro_en.py --in-place

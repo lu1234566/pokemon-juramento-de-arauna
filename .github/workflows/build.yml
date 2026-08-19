@@ -57,6 +57,9 @@ jobs:
       - name: Verify Pampa da Espera gym room surface
         run: python3 scripts/render_pampa_gym_rooms_en_checked.py --check
 
+      - name: Verify Val house English surface
+        run: python3 scripts/render_val_house_en_checked.py --check
+
       - name: Verify Horizon forest English overlay
         run: python3 scripts/render_petalburg_woods_surface.py --check
 
