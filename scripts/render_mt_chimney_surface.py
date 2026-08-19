@@ -131,7 +131,7 @@ TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         ("LEMBRANTE", "LUZIA"),
         (
             "REMEMBRANCER: Stolen memory\\n",
-            "A new name doesn't make it care.$",
+            "stays stolen under a new name.$",
         ),
     ),
     "MtChimney_Text_DouseThemInFire": (
