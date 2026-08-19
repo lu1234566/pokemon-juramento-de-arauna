@@ -54,6 +54,9 @@ jobs:
       - name: Verify Central Archive English overlay
         run: python3 scripts/render_central_archive_en.py --check
 
+      - name: Verify Route 121 Memorial English bridge
+        run: python3 scripts/render_route121_memorial_en.py --check
+
       - name: Verify no proprietary files
         run: bash scripts/check_no_proprietary_files.sh
 
