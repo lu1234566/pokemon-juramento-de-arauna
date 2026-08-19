@@ -24,20 +24,30 @@ case "${language,,}" in
         ;;
 esac
 
-strings_file="src/strings.c"
-strings_backup="$(mktemp)"
-cp "$strings_file" "$strings_backup"
+overlay_files=(
+    "src/strings.c"
+    "data/maps/PetalburgWoods/scripts.inc"
+)
+overlay_backup_dir="$(mktemp -d)"
 
-restore_strings() {
-    cp "$strings_backup" "$strings_file"
-    rm -f "$strings_backup"
+for file in "${overlay_files[@]}"; do
+    mkdir -p "$overlay_backup_dir/$(dirname "$file")"
+    cp "$file" "$overlay_backup_dir/$file"
+done
+
+restore_overlays() {
+    for file in "${overlay_files[@]}"; do
+        cp "$overlay_backup_dir/$file" "$file"
+    done
+    rm -rf "$overlay_backup_dir"
 }
-trap restore_strings EXIT
+trap restore_overlays EXIT
 trap 'exit 129' HUP
 trap 'exit 130' INT
 trap 'exit 143' TERM
 
-python3 scripts/render_arauna_frontier_ui.py --input "$strings_file" --in-place
+python3 scripts/render_arauna_frontier_ui.py --input "src/strings.c" --in-place
+python3 scripts/render_petalburg_woods_surface.py --input "data/maps/PetalburgWoods/scripts.inc" --in-place
 
 cpp="${CPP:-arm-none-eabi-cpp}"
 cpp_with_language="${cpp} -DARAUNA_LANGUAGE=${language_id}"
