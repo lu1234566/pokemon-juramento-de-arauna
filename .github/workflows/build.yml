@@ -37,7 +37,7 @@ jobs:
         run: python3 scripts/render_vila_amanhecer_route101_en.py --check
 
       - name: Verify Vila Amanhecer house English surfaces
-        run: python3 scripts/render_vila_amanhecer_houses_en.py --check
+        run: python3 scripts/render_vila_amanhecer_houses_en_checked.py --check
 
       - name: Verify Anahi lab English surface
         run: python3 scripts/render_anahi_lab_en_checked.py --check
