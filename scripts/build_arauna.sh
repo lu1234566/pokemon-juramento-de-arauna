@@ -33,6 +33,10 @@ overlay_files=(
     "data/maps/MeteorFalls_1F_1R/scripts.inc"
     "data/maps/MtPyre_1F/scripts.inc"
     "data/maps/MtPyre_2F/scripts.inc"
+    "data/maps/MtPyre_3F/scripts.inc"
+    "data/maps/MtPyre_4F/scripts.inc"
+    "data/maps/MtPyre_5F/scripts.inc"
+    "data/maps/MtPyre_6F/scripts.inc"
     "data/maps/MtPyre_Summit/scripts.inc"
     "data/maps/AquaHideout_B1F/scripts.inc"
     "data/maps/AquaHideout_B2F/scripts.inc"
@@ -73,6 +77,7 @@ python3 scripts/render_route121_memorial_en.py --in-place
 python3 scripts/render_mboi_climax_en.py --in-place
 python3 scripts/render_aguas_mboi_en_checked.py --in-place
 python3 scripts/render_memorial_lower_floors_en.py --in-place
+python3 scripts/render_memorial_mid_floors_en.py --in-place
 
 cpp="${CPP:-arm-none-eabi-cpp}"
 
