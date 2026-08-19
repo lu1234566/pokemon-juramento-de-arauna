@@ -66,6 +66,9 @@ jobs:
       - name: Verify Aguas daily and Kiri anchors
         run: python3 scripts/render_aguas_mboi_daily_surface.py --check
 
+      - name: Verify lower Lembrantes anchors
+        run: python3 scripts/render_lembrantes_lower_surface.py --check
+
       - name: Verify Lembrantes core anchors
         run: python3 scripts/render_lembrantes_core_surface.py --check
 

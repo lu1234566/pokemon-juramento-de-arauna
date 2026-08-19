@@ -35,6 +35,9 @@ overlay_files=(
     "data/maps/SeafloorCavern_Room9/scripts.inc"
     "data/maps/SootopolisCity/scripts.inc"
     "data/maps/SkyPillar_Outside/scripts.inc"
+    "data/maps/MagmaHideout_1F/scripts.inc"
+    "data/maps/MagmaHideout_2F_1R/scripts.inc"
+    "data/maps/MagmaHideout_2F_2R/scripts.inc"
     "data/maps/MagmaHideout_3F_1R/scripts.inc"
     "data/maps/MagmaHideout_3F_2R/scripts.inc"
     "data/maps/MagmaHideout_4F/scripts.inc"
@@ -67,6 +70,7 @@ python3 scripts/render_ruinas_memorial_surface_checked.py --in-place
 python3 scripts/render_arquivo_central_surface.py --in-place
 python3 scripts/render_mboi_climax_surface.py --in-place
 python3 scripts/render_aguas_mboi_daily_surface.py --in-place
+python3 scripts/render_lembrantes_lower_surface.py --in-place
 python3 scripts/render_lembrantes_core_surface.py --in-place
 
 cpp="${CPP:-arm-none-eabi-cpp}"
