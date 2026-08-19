@@ -47,6 +47,8 @@ overlay_files=(
     "data/maps/SlateportCity_Harbor/scripts.inc"
     "data/maps/SlateportCity_OceanicMuseum_1F/scripts.inc"
     "data/maps/SlateportCity_OceanicMuseum_2F/scripts.inc"
+    "data/maps/SlateportCity_SternsShipyard_1F/scripts.inc"
+    "data/maps/SlateportCity_SternsShipyard_2F/scripts.inc"
     "data/text/berries.inc"
     "src/data/items.h"
     "src/data/text/item_descriptions.h"
@@ -84,6 +86,7 @@ python3 scripts/render_porto_sal_submersivel.py --in-place
 python3 scripts/render_porto_sal_museum_people_checked.py --in-place
 python3 scripts/render_porto_sal_museum_confrontation.py --in-place
 python3 scripts/render_porto_sal_museum_science.py --in-place
+python3 scripts/render_porto_sal_shipyard.py --in-place
 
 cpp="${CPP:-arm-none-eabi-cpp}"
 cpp_with_language="${cpp} -DARAUNA_LANGUAGE=${language_id}"
