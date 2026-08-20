@@ -35,6 +35,17 @@ TARGETS: dict[str, dict[str, tuple[str, ...]]] = {
             "there more elderly men or\\n",
             "elderly women?$",
         ),
+        "Route110_TrickHousePuzzle5_Text_Mechadoll5Quiz1": (
+            "MECHADOLL 5 QUIZ.\\p",
+            "In PORTO DO SAL's POKéMON\\n",
+            "FAN CLUB, how many POKéMON\\n",
+            "were there?$",
+        ),
+        "Route110_TrickHousePuzzle5_Text_Mechadoll5Quiz2": (
+            "MECHADOLL 5 QUIZ.\\p",
+            "In MATA DO MEIO, how many\\n",
+            "tree houses were there?$",
+        ),
     },
 }
 
@@ -51,6 +62,8 @@ PRESERVED = {
     "data/maps/Route110_TrickHousePuzzle5/scripts.inc": (
         "VAR_TRICK_HOUSE_PUZZLE_5_STATE",
         "MULTI_MECHADOLL4_Q2",
+        "MULTI_MECHADOLL5_Q1",
+        "MULTI_MECHADOLL5_Q2",
         "Route110_TrickHousePuzzle5_EventScript_Mechadoll4Quiz2",
     ),
 }
