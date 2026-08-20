@@ -27,12 +27,19 @@ overlay_files=(
     "src/landmark.c"
     "src/data/trainers.h"
     "src/data/text/trainer_class_names.h"
+    "src/data/region_map/region_map_sections.json"
     "data/text/trainers.inc"
     "data/text/trick_house_mechadolls.inc"
     "data/text/pokedex_rating.inc"
     "data/text/match_call.inc"
     "data/text/apprentice.inc"
     "data/text/tv.inc"
+    "data/text/questionnaire.inc"
+    "data/text/pokemon_news.inc"
+    "data/scripts/safari_zone.inc"
+    "data/scripts/gift_old_sea_map.inc"
+    "data/scripts/gift_aurora_ticket.inc"
+    "data/scripts/gift_mystic_ticket.inc"
     "data/maps/LittlerootTown/scripts.inc"
     "data/maps/Route101/scripts.inc"
     "data/maps/Route102/scripts.inc"
@@ -59,8 +66,12 @@ overlay_files=(
     "data/maps/RustboroCity_Flat2_2F/scripts.inc"
     "data/maps/RustboroCity_Flat2_3F/scripts.inc"
     "data/maps/Route109/scripts.inc"
+    "data/maps/Route111/scripts.inc"
+    "data/maps/Route112/scripts.inc"
     "data/maps/Route116/scripts.inc"
+    "data/maps/Route118/scripts.inc"
     "data/maps/RusturfTunnel/scripts.inc"
+    "data/maps/JaggedPass/scripts.inc"
     "data/maps/DewfordTown/scripts.inc"
     "data/maps/DewfordTown_Gym/scripts.inc"
     "data/maps/DewfordTown_House2/scripts.inc"
@@ -154,6 +165,7 @@ overlay_files=(
     "data/maps/EverGrandeCity_DrakesRoom/scripts.inc"
     "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc"
     "data/maps/SSTidalCorridor/scripts.inc"
+    "data/maps/SSTidalRooms/scripts.inc"
     "data/maps/BattleFrontier_ReceptionGate/scripts.inc"
     "data/maps/BattleFrontier_ScottsHouse/scripts.inc"
     "data/text/berries.inc"
@@ -193,6 +205,9 @@ python3 scripts/render_system_ui_identity_en.py --in-place
 python3 scripts/render_battle_message_identity_en.py --in-place
 python3 scripts/render_arauna_frontier_ui_en.py --in-place
 python3 scripts/render_match_call_identity_en.py --in-place
+python3 scripts/render_secondary_map_identity_en.py --in-place
+python3 scripts/render_shared_location_text_en.py --in-place
+python3 scripts/render_safari_zone_identity_en.py --in-place
 python3 scripts/render_vila_amanhecer_route101_en_checked.py --in-place
 python3 scripts/render_vila_amanhecer_houses_en_checked.py --in-place
 python3 scripts/render_anahi_lab_en_checked.py --in-place
@@ -209,6 +224,7 @@ python3 scripts/render_serra_uivo_mart_en.py --in-place
 python3 scripts/render_early_sea_route_en.py --in-place
 python3 scripts/render_route110_encruzilhada_en.py --in-place
 python3 scripts/render_trial_house_identity_en.py --in-place
+python3 scripts/render_midgame_route_identity_en.py --in-place
 python3 scripts/render_vale_silencio_en.py --in-place
 python3 scripts/render_sertao_nara_en.py --in-place
 python3 scripts/render_secondary_towns_en.py --in-place
