@@ -53,6 +53,11 @@ overlay_files=(
     "data/maps/Route110/scripts.inc"
     "data/maps/MauvilleCity/scripts.inc"
     "data/maps/MauvilleCity_Gym/scripts.inc"
+    "data/maps/Route117/scripts.inc"
+    "data/maps/VerdanturfTown/scripts.inc"
+    "data/maps/VerdanturfTown_WandasHouse/scripts.inc"
+    "data/maps/LavaridgeTown/scripts.inc"
+    "data/maps/LavaridgeTown_Gym_1F/scripts.inc"
     "data/maps/PetalburgWoods/scripts.inc"
     "data/maps/Route119/scripts.inc"
     "data/maps/Route120/scripts.inc"
@@ -123,6 +128,8 @@ python3 scripts/render_val_house_en_checked.py --in-place
 python3 scripts/render_serra_uivo_porto_redes_en.py --in-place
 python3 scripts/render_serra_uivo_porto_redes_interiors_en.py --in-place
 python3 scripts/render_route110_encruzilhada_en.py --in-place
+python3 scripts/render_vale_silencio_en.py --in-place
+python3 scripts/render_sertao_nara_en.py --in-place
 python3 scripts/render_petalburg_woods_surface.py --in-place
 python3 scripts/render_route119_ciro_surface_en.py --in-place
 python3 scripts/render_baia_luzes_ciro_en.py --in-place
