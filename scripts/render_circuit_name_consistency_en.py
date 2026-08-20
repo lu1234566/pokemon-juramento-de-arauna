@@ -46,6 +46,14 @@ TARGETS: dict[str, dict[str, tuple[str, ...]]] = {
             "BATALHA, right?$",
         ),
     },
+    "data/maps/BattleFrontier_OutsideWest/scripts.inc": {
+        "BattleFrontier_OutsideWest_Text_SlateportItIs": (
+            "PORTO DO SAL it is, then!$",
+        ),
+        "BattleFrontier_OutsideWest_Text_LilycoveItIs": (
+            "BAIA DAS LUZES it is, then!$",
+        ),
+    },
 }
 
 PRESERVED = {
@@ -56,6 +64,12 @@ PRESERVED = {
     "data/maps/SlateportCity_Harbor/scripts.inc": (
         "MAP_BATTLE_FRONTIER_OUTSIDE_WEST",
         "SlateportCity_Harbor_EventScript_GoToBattleFrontier",
+    ),
+    "data/maps/BattleFrontier_OutsideWest/scripts.inc": (
+        "MAP_SLATEPORT_CITY_HARBOR",
+        "MAP_LILYCOVE_CITY_HARBOR",
+        "MULTI_SSTIDAL_BATTLE_FRONTIER",
+        "LOCALID_FRONTIER_FERRY_ATTENDANT",
     ),
 }
 
@@ -97,12 +111,17 @@ def render(rel: str, source: str) -> str:
         body = "".join(f'\t.string "{line}"\n' for line in lines) + "\n"
         start, end = matches[0].span("body")
         out = out[:start] + body + out[end:]
+    target_text = "\n".join(
+        match.group("body")
+        for label in labels
+        for match in [pattern(label).search(out)]
+        if match
+    )
     if mask(source, labels) != mask(out, labels):
         raise ValueError(f"{rel}: non-dialogue structure changed")
-    if "BATTLE CIRCUIT" in "\n".join(
-        match.group("body") for label in labels for match in [pattern(label).search(out)] if match
-    ):
-        raise ValueError(f"{rel}: alternate Battle Circuit name survived target blocks")
+    for forbidden in ("BATTLE CIRCUIT", "SLATEPORT CITY", "LILYCOVE CITY"):
+        if forbidden in target_text:
+            raise ValueError(f"{rel}: alternate/legacy place name survived target blocks: {forbidden}")
     for token in PRESERVED[rel]:
         if token not in out:
             raise ValueError(f"{rel}: missing preserved token {token}")
