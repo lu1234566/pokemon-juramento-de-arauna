@@ -96,6 +96,11 @@ overlay_files=(
     "data/maps/MossdeepCity_Gym/scripts.inc"
     "data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc"
     "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc"
+    "data/maps/EverGrandeCity/scripts.inc"
+    "data/maps/VictoryRoad_1F/scripts.inc"
+    "data/maps/VictoryRoad_B1F/scripts.inc"
+    "data/maps/VictoryRoad_B2F/scripts.inc"
+    "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.inc"
     "data/text/berries.inc"
     "src/data/items.h"
     "src/data/text/item_descriptions.h"
@@ -152,6 +157,7 @@ python3 scripts/render_remembrancers_core_en.py --in-place
 python3 scripts/render_missoes_ceu_ground_floor_en.py --in-place
 python3 scripts/render_missoes_ceu_confrontation_en.py --in-place
 python3 scripts/render_prism_spring_gyms_en.py --in-place
+python3 scripts/render_estrada_juramento_en.py --in-place
 python3 scripts/render_porto_sal_museum_people_en_checked.py --in-place
 python3 scripts/render_porto_sal_museum_science_en_checked.py --in-place
 python3 scripts/render_porto_sal_museum_confrontation_en_checked.py --in-place
