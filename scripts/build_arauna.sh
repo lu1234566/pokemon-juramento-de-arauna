@@ -29,6 +29,7 @@ overlay_files=(
     "data/text/trainers.inc"
     "data/text/trick_house_mechadolls.inc"
     "data/text/pokedex_rating.inc"
+    "data/text/match_call.inc"
     "data/text/apprentice.inc"
     "data/text/tv.inc"
     "data/maps/LittlerootTown/scripts.inc"
@@ -91,7 +92,9 @@ overlay_files=(
     "data/maps/Route121/scripts.inc"
     "data/maps/FortreeCity_PokemonCenter_1F/scripts.inc"
     "data/maps/LilycoveCity/scripts.inc"
+    "data/maps/LilycoveCity_Harbor/scripts.inc"
     "data/maps/LilycoveCity_CoveLilyMotel_1F/scripts.inc"
+    "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc"
     "data/maps/SlateportCity/scripts.inc"
     "data/maps/SlateportCity_Harbor/scripts.inc"
     "data/maps/SlateportCity_OceanicMuseum_1F/scripts.inc"
@@ -129,6 +132,7 @@ overlay_files=(
     "data/maps/MossdeepCity_Gym/scripts.inc"
     "data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc"
     "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc"
+    "data/maps/MossdeepCity_StevensHouse/scripts.inc"
     "data/maps/EverGrandeCity/scripts.inc"
     "data/maps/VictoryRoad_1F/scripts.inc"
     "data/maps/VictoryRoad_B1F/scripts.inc"
@@ -177,6 +181,7 @@ python3 scripts/render_shared_trainer_names_en.py --in-place
 python3 scripts/render_trainer_class_names_en.py --in-place
 python3 scripts/render_system_ui_identity_en.py --in-place
 python3 scripts/render_arauna_frontier_ui_en.py --in-place
+python3 scripts/render_match_call_identity_en.py --in-place
 python3 scripts/render_vila_amanhecer_route101_en_checked.py --in-place
 python3 scripts/render_vila_amanhecer_houses_en_checked.py --in-place
 python3 scripts/render_anahi_lab_en_checked.py --in-place
@@ -198,6 +203,7 @@ python3 scripts/render_petalburg_woods_surface.py --in-place
 python3 scripts/render_route119_ciro_surface_en.py --in-place
 python3 scripts/render_baia_luzes_ciro_en.py --in-place
 python3 scripts/render_baia_luzes_surface_en_checked.py --in-place
+python3 scripts/render_baia_luzes_harbor_en.py --in-place
 python3 scripts/render_mt_chimney_surface.py --in-place
 python3 scripts/render_mata_do_meio_lidia_en.py --in-place
 python3 scripts/render_ruins_memorial_en.py --in-place
@@ -213,6 +219,7 @@ python3 scripts/render_remembrancers_core_en.py --in-place
 python3 scripts/render_missoes_ceu_ground_floor_en.py --in-place
 python3 scripts/render_missoes_ceu_confrontation_en.py --in-place
 python3 scripts/render_prism_spring_gyms_en.py --in-place
+python3 scripts/render_optional_story_gaps_en.py --in-place
 python3 scripts/render_climax_finale_en.py --in-place
 python3 scripts/render_estrada_juramento_en.py --in-place
 python3 scripts/render_casa_maior_four_en.py --in-place
