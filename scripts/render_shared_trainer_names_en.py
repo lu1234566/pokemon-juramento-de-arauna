@@ -4,6 +4,8 @@ from __future__ import annotations
 import argparse
 from pathlib import Path
 
+import render_shared_trainer_dialogue_identity_en as dialogue
+
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_INPUT = ROOT / "src" / "data" / "trainers.h"
 
@@ -32,7 +34,7 @@ def validate(rendered: str) -> None:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Render shared Arauna faction trainer names in English.")
+    parser = argparse.ArgumentParser(description="Render shared Arauna trainer names and referenced trainer dialogue in English.")
     parser.add_argument("--input", type=Path, default=DEFAULT_INPUT)
     parser.add_argument("--output", type=Path)
     parser.add_argument("--in-place", action="store_true")
@@ -46,11 +48,20 @@ def main() -> int:
     rendered = render(source)
     validate(rendered)
 
+    dialogue.validate_widths()
+    dialogue_source = dialogue.TARGET.read_text(encoding="utf-8")
+    dialogue_rendered = dialogue.render(dialogue_source)
+
     if args.check:
-        print("Shared trainer-name English overlay OK: 53 faction trainer names validated.")
+        print(
+            "Shared trainer English overlay OK: 53 faction trainer names + "
+            f"{len(dialogue.BLOCKS)} Route 116 dialogue blocks validated."
+        )
         return 0
     if args.in_place:
         args.input.write_text(rendered, encoding="utf-8")
+        if dialogue_rendered != dialogue_source:
+            dialogue.TARGET.write_text(dialogue_rendered, encoding="utf-8")
     elif args.output:
         args.output.parent.mkdir(parents=True, exist_ok=True)
         args.output.write_text(rendered, encoding="utf-8")
