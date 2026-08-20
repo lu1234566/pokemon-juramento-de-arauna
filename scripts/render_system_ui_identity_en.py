@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import argparse
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -20,6 +21,18 @@ REPLACEMENTS = {
         'const u8 gText_DexHoenn[] = _("ARAUNA");',
 }
 
+MENU_VALUES = {
+    "gText_Petalburg": "PAMPA DA ESPERA",
+    "gText_Slateport": "PORTO DO SAL",
+    "gText_Dewford": "PORTO DAS REDES",
+}
+
+
+def declaration_pattern(symbol: str) -> re.Pattern[str]:
+    return re.compile(
+        rf'(?m)^const u8 {re.escape(symbol)}\[\] = _\("(?:\\.|[^"\\])*"\);$'
+    )
+
 
 def render(source: str) -> str:
     out = source
@@ -30,6 +43,14 @@ def render(source: str) -> str:
         if count != 1:
             raise ValueError(f"expected one system UI anchor, found {count}: {old}")
         out = out.replace(old, new, 1)
+
+    for symbol, value in MENU_VALUES.items():
+        rx = declaration_pattern(symbol)
+        matches = list(rx.finditer(out))
+        if len(matches) != 1:
+            raise ValueError(f"expected one declaration for {symbol}, found {len(matches)}")
+        replacement = f'const u8 {symbol}[] = _("{value}");'
+        out = rx.sub(lambda _: replacement, out, count=1)
     return out
 
 
@@ -39,6 +60,11 @@ def validate(out: str) -> None:
             raise ValueError(f"legacy system identity survived: {old}")
         if new not in out:
             raise ValueError(f"missing Arauna system identity: {new}")
+
+    for symbol, value in MENU_VALUES.items():
+        expected = f'const u8 {symbol}[] = _("{value}");'
+        if expected not in out:
+            raise ValueError(f"missing Arauna shared menu label: {symbol}")
 
 
 def main() -> int:
@@ -53,7 +79,10 @@ def main() -> int:
     validate(out)
     if args.in_place and out != source:
         TARGET.write_text(out, encoding="utf-8")
-    print(f"Arauna system UI identity overlay OK: {len(REPLACEMENTS)} anchors.")
+    print(
+        "Arauna system UI identity overlay OK: "
+        f"{len(REPLACEMENTS)} identity anchors + {len(MENU_VALUES)} shared menu labels."
+    )
     return 0
 
 
