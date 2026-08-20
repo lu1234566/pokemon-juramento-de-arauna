@@ -1,0 +1,50 @@
+{
+  "house1": {
+    "DewfordTown_House1_Text_LotToBeSaidForLivingOnIsland": [
+      "Life is small here, not empty.\\p",
+      "We mend nets, doors, and stories\\n",
+      "for one another.$"
+    ],
+    "DewfordTown_House1_Text_LifeGoesSlowlyOnIsland": [
+      "I moved here from PORTO DO SAL\\n",
+      "when I married.\\p",
+      "The harbor changes fast.\\p",
+      "Here, people notice when a name\\n",
+      "or boat stops coming home.$"
+    ]
+  },
+  "house2": {
+    "DewfordTown_House2_Text_WantYouToHaveSilkScarf": [
+      "See this SILK SCARF?\\p",
+      "Light, strong, and good in wind.\\p",
+      "You look like you'd use it.\\p",
+      "Take it.$"
+    ],
+    "DewfordTown_House2_Text_NoRoom": [
+      "No room in your BAG?\\p",
+      "I'll keep the SCARF for you.$"
+    ],
+    "DewfordTown_House2_Text_ExplainSilkScarf": [
+      "The SILK SCARF boosts\\n",
+      "NORMAL-type moves.\\p",
+      "Simple gear can still matter.$"
+    ],
+    "DewfordTown_House2_Text_BrawlySoCool": [
+      "ADEMAR says balance comes first.\\p",
+      "Force only helps if your feet\\n",
+      "know where they are.$"
+    ]
+  },
+  "center": {
+    "DewfordTown_PokemonCenter_1F_Text_StoneCavern": [
+      "GRUTA DAS VOZES is near town.\\p",
+      "People go there for stone\\n",
+      "and old marks in the walls.$"
+    ],
+    "DewfordTown_PokemonCenter_1F_Text_FaintedMonCanUseHM": [
+      "Even a fainted POKéMON can still\\n",
+      "use an HM move outside battle.\\p",
+      "Knowing the route home matters.$"
+    ]
+  }
+}

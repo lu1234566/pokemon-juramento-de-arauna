@@ -52,6 +52,17 @@ overlay_files=(
     "data/maps/RustboroCity_Flat2_3F/scripts.inc"
     "data/maps/RustboroCity_House2/scripts.inc"
     "data/maps/RustboroCity_Flat1_2F/scripts.inc"
+    "src/data/script_menu.h"
+    "data/maps/Route104_MrBrineysHouse/scripts.inc"
+    "data/maps/DewfordTown/scripts.inc"
+    "data/maps/DewfordTown_Gym/scripts.inc"
+    "data/maps/DewfordTown_Hall/scripts.inc"
+    "data/maps/DewfordTown_House1/scripts.inc"
+    "data/maps/DewfordTown_House2/scripts.inc"
+    "data/maps/DewfordTown_PokemonCenter_1F/scripts.inc"
+    "data/maps/GraniteCave_1F/scripts.inc"
+    "data/maps/GraniteCave_StevensRoom/scripts.inc"
+    "data/maps/Route109/scripts.inc"
     "data/maps/Route119/scripts.inc"
     "data/maps/Route120/scripts.inc"
     "data/maps/Route121/scripts.inc"
@@ -120,6 +131,7 @@ python3 scripts/render_pampa_gym_rooms_en_checked.py --in-place
 python3 scripts/render_val_house_en_checked.py --in-place
 python3 scripts/render_petalburg_woods_surface.py --in-place
 python3 scripts/render_serra_uivo_story_en_checked.py --in-place
+python3 scripts/render_porto_redes_story_en_checked.py --in-place
 python3 scripts/render_route119_ciro_surface_en.py --in-place
 python3 scripts/render_baia_luzes_ciro_en.py --in-place
 python3 scripts/render_baia_luzes_surface_en_checked.py --in-place

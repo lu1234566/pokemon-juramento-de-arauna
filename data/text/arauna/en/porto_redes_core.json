@@ -1,0 +1,260 @@
+{
+  "sailor_house": {
+    "Route104_MrBrineysHouse_Text_WaitUpPeeko": [
+      "VETERAN SAILOR: Easy there!\\n",
+      "Stay close, WINGULL.$"
+    ],
+    "Route104_MrBrineysHouse_Text_ItsYouLetsSailToDewford": [
+      "VETERAN SAILOR: It's you!\\p",
+      "You brought my WINGULL home.\\p",
+      "Need passage across the water?\\p",
+      "That LETTER is for SEU BENTO\\n",
+      "in PORTO DAS REDES, right?\\p",
+      "And those OCEANIC PARTS still\\n",
+      "need to reach PORTO DO SAL.\\p",
+      "I know both crossings.\\p",
+      "I'll take you to the nets first.$"
+    ],
+    "Route104_MrBrineysHouse_Text_SetSailForDewford": [
+      "VETERAN SAILOR: To\\n",
+      "PORTO DAS REDES, then!\\p",
+      "WINGULL, watch the wind.$"
+    ],
+    "Route104_MrBrineysHouse_Text_DeclineDeliverySail": [
+      "VETERAN SAILOR: No hurry.\\p",
+      "The tide will still be here\\n",
+      "when you're ready.$"
+    ],
+    "Route104_MrBrineysHouse_Text_NeedToMakeDeliveriesSailToDewford": [
+      "VETERAN SAILOR: Two errands.\\p",
+      "The LETTER goes to SEU BENTO\\n",
+      "in PORTO DAS REDES.\\p",
+      "The OCEANIC PARTS continue\\n",
+      "to PORTO DO SAL after that.\\p",
+      "We'll make the first crossing.$"
+    ],
+    "Route104_MrBrineysHouse_Text_NeedToDeliverPackageSailToDewford": [
+      "VETERAN SAILOR: The parts still\\n",
+      "need to reach PORTO DO SAL.\\p",
+      "We can cross by PORTO DAS REDES\\n",
+      "and follow the coast from there.$"
+    ],
+    "Route104_MrBrineysHouse_Text_WhereAreWeBound": [
+      "VETERAN SAILOR: Need the boat?\\p",
+      "Tell me where we're bound.$"
+    ],
+    "Route104_MrBrineysHouse_Text_TellMeWheneverYouWantToSail": [
+      "VETERAN SAILOR: All right.\\p",
+      "Say the word when you need\\n",
+      "another crossing.$"
+    ],
+    "Route104_MrBrineysHouse_Text_Peeko": [
+      "WINGULL: Pii pihyoh!$"
+    ]
+  },
+  "town": {
+    "DewfordTown_Text_TinyIslandCommunity": [
+      "PORTO DAS REDES is small.\\p",
+      "A story crosses the docks faster\\n",
+      "than a boat crosses the bay.$"
+    ],
+    "DewfordTown_Text_TownSign": [
+      "PORTO DAS REDES\\p",
+      "Fishers remember a community\\n",
+      "missing from official records.$"
+    ],
+    "DewfordTown_Text_GymSign": [
+      "PORTO DAS REDES GYM\\p",
+      "LEADER: ADEMAR\\p",
+      "Strength moves with the tide.$"
+    ],
+    "DewfordTown_Text_HallSign": [
+      "HOUSE OF TIDES\\p",
+      "Sayings, songs, dock records.$"
+    ],
+    "Route104_Text_LandedInDewfordDeliverLetter": [
+      "VETERAN SAILOR: Here we are.\\p",
+      "PORTO DAS REDES.\\p",
+      "SEU BENTO is somewhere near\\n",
+      "the GRUTA DAS VOZES.$"
+    ],
+    "DewfordTown_Text_SetSailBackToPetalburg": [
+      "VETERAN SAILOR: No LETTER yet?\\p",
+      "Want to sail back toward\\n",
+      "PAMPA DA ESPERA?$"
+    ],
+    "DewfordTown_Text_PetalburgWereSettingSail2": [
+      "VETERAN SAILOR: Back toward\\n",
+      "PAMPA DA ESPERA, then!\\p",
+      "WINGULL, watch the wind.$"
+    ],
+    "DewfordTown_Text_GoDeliverIllBeWaiting": [
+      "VETERAN SAILOR: Find BENTO.\\p",
+      "I'll keep the boat ready.$"
+    ],
+    "DewfordTown_Text_BrineyLandedInDewford": [
+      "VETERAN SAILOR: Land again.\\p",
+      "PORTO DAS REDES.\\p",
+      "Tell me when you need to sail.$"
+    ],
+    "DewfordTown_Text_WhereAreWeBound": [
+      "VETERAN SAILOR: Where to?$"
+    ],
+    "DewfordTown_Text_PetalburgWereSettingSail": [
+      "VETERAN SAILOR: Toward\\n",
+      "PAMPA DA ESPERA.\\p",
+      "WINGULL, watch the wind.$"
+    ],
+    "DewfordTown_Text_SlateportWereSettingSail": [
+      "VETERAN SAILOR: PORTO DO SAL.\\p",
+      "We'll follow the coast east.$"
+    ],
+    "DewfordTown_Text_JustTellMeWhenYouNeedToSetSail": [
+      "VETERAN SAILOR: No crossing?\\p",
+      "I'll be here when you need one.$"
+    ],
+    "DewfordTown_Text_GettingItchToFish": [
+      "The current is good today.\\p",
+      "Want to learn how we fish here?$"
+    ],
+    "DewfordTown_Text_GiveYouOneOfMyRods": [
+      "Good. Take this OLD ROD.\\p",
+      "A net teaches patience.\\n",
+      "A rod teaches timing.$"
+    ],
+    "DewfordTown_Text_ThrowInFishingAdvice": [
+      "Face the water and use the ROD.\\p",
+      "When something bites, pull.\\p",
+      "Big catches may tug twice.\\p",
+      "Follow the rhythm, not the rush.$"
+    ],
+    "DewfordTown_Text_ThatsTooBadThen": [
+      "Fair enough.\\p",
+      "The water isn't going anywhere.$"
+    ],
+    "DewfordTown_Text_HowsYourFishing": [
+      "How's the fishing?$"
+    ],
+    "DewfordTown_Text_GreatHaulInSomeBigOnes": [
+      "Good! Keep your line steady.$"
+    ],
+    "DewfordTown_Text_FishingAdvice": [
+      "Don't fight the line.\\p",
+      "Face the water and use the ROD.\\p",
+      "Pull when something bites.\\p",
+      "Big catch? Follow each tug.$"
+    ],
+    "DewfordTown_Text_XIsTheBiggestHappeningThingRight": [
+      "People at the docks keep saying\\n",
+      "{STR_VAR_1}.\\p",
+      "You've heard it too, right?$"
+    ],
+    "DewfordTown_Text_TellMeWhatsNewAndIn": [
+      "No? Then what saying is moving\\n",
+      "from boat to boat now?$"
+    ],
+    "DewfordTown_Text_OfCourseIKnowAboutThat": [
+      "{STR_VAR_2}?\\p",
+      "Right. I've heard that one.\\p",
+      "A saying changes each time it\\n",
+      "crosses the water.\\p",
+      "{STR_VAR_1} may fade next.$"
+    ],
+    "DewfordTown_Text_XHuhIThinkYIsCool": [
+      "{STR_VAR_2}, huh?\\p",
+      "Maybe. I still hear more people\\n",
+      "using {STR_VAR_1}.$"
+    ],
+    "DewfordTown_Text_HearOfAnyTrendsComeShareWithMe": [
+      "If you hear a new dock saying,\\n",
+      "bring it back here.$"
+    ],
+    "DewfordTown_Text_YeahDefinitionOfInRightNow": [
+      "Exactly. {STR_VAR_1}\\n",
+      "is everywhere on the docks.$"
+    ]
+  },
+  "cave1": {
+    "GraniteCave_1F_Text_GetsDarkAheadHereYouGo": [
+      "The GRUTA DAS VOZES gets dark\\n",
+      "past this point.\\p",
+      "SEU BENTO went in with notes\\n",
+      "and a lamp.\\p",
+      "Take this HM. It teaches FLASH.$"
+    ],
+    "GraniteCave_1F_Text_ExplainFlash": [
+      "FLASH can light a dark cave.\\p",
+      "To use it outside battle, earn\\n",
+      "ADEMAR's TIDE BADGE.$"
+    ]
+  },
+  "bento": {
+    "GraniteCave_StevensRoom_Text_ImStevenLetterForMe": [
+      "SEU BENTO: A letter for me?\\p",
+      "From OTACILIO...\\p",
+      "He wants my notes compared with\\n",
+      "HORIZON's coastal survey.\\p",
+      "Their chart has no village here.\\p",
+      "The fishers still know its name.\\p",
+      "That difference matters.$"
+    ],
+    "GraniteCave_StevensRoom_Text_ThankYouTakeThis": [
+      "SEU BENTO: Thanks for the note.\\p",
+      "A missing record proves a gap,\\n",
+      "not that nothing happened.\\p",
+      "Take this TM for the trouble.$"
+    ],
+    "GraniteCave_StevensRoom_Text_CouldBecomeChampionLetsRegister": [
+      "SEU BENTO: You notice details.\\p",
+      "Keep doing that before choosing\\n",
+      "which explanation to trust.\\p",
+      "Register me in your POKéNAV.\\p",
+      "I'll call if a clue needs you.$"
+    ],
+    "GraniteCave_StevensRoom_Text_RegisteredSteven": [
+      "Registered SEU BENTO\\n",
+      "in the POKéNAV.$"
+    ],
+    "GraniteCave_StevensRoom_Text_IveGotToHurryAlong": [
+      "SEU BENTO: I have names to check\\n",
+      "against three old tide books.\\p",
+      "You still have a road east.$"
+    ],
+    "GraniteCave_StevensRoom_Text_OhBagIsFull": [
+      "SEU BENTO: Your BAG is full.\\p",
+      "Make room and talk to me again.$"
+    ]
+  },
+  "route109": {
+    "DewfordTown_Text_BrineyLandedInSlateportDeliverGoods": [
+      "VETERAN SAILOR: PORTO DO SAL.\\p",
+      "Those OCEANIC PARTS belong with\\n",
+      "the HARBOR ENGINEER.$"
+    ],
+    "Route109_Text_BrineySailToDewfordQuestion": [
+      "VETERAN SAILOR: Those parts\\n",
+      "still need delivery.\\p",
+      "Sail back to PORTO DAS REDES?$"
+    ],
+    "Route109_Text_BrineyDewfordItIs": [
+      "VETERAN SAILOR: PORTO DAS REDES.\\p",
+      "WINGULL, watch the wind.$"
+    ],
+    "Route109_Text_BrineyDeliverDevonGoods": [
+      "VETERAN SAILOR: Deliver the\\n",
+      "OCEANIC PARTS first.\\p",
+      "I'll keep the boat here.$"
+    ],
+    "DewfordTown_Text_BrineyLandedInSlateport": [
+      "VETERAN SAILOR: PORTO DO SAL.\\p",
+      "Tell me when you need the boat.$"
+    ],
+    "Route109_Text_BrineyWhereAreWeBound": [
+      "VETERAN SAILOR: Where to?$"
+    ],
+    "Route109_Text_BrineyTellMeWhenYouNeedToSail": [
+      "VETERAN SAILOR: I'll be here\\n",
+      "when you need another crossing.$"
+    ]
+  }
+}
