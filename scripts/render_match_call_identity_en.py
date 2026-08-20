@@ -77,25 +77,31 @@ BLOCKS: dict[str, tuple[str, ...]] = {
     ),
 }
 
-EXACT = {
-    'const u8 gText_StevenMatchCallDesc[] = _("HARD AS ROCK");':
-        'const u8 gText_StevenMatchCallDesc[] = _("KEEPS NAMES");',
-    'const u8 gText_StevenMatchCallName[] = _("STEVEN");':
-        'const u8 gText_StevenMatchCallName[] = _("SEU BENTO");',
-    'const u8 gText_ProfBirchMatchCallName[] = _("PROF. BIRCH");':
-        'const u8 gText_ProfBirchMatchCallName[] = _("PROF. ANAHI");',
-    'const u8 gText_ProfBirchMatchCallDesc[] = _("{PKMN} PROF.");':
-        'const u8 gText_ProfBirchMatchCallDesc[] = _("RESEARCHER");',
-    'const u8 gText_HOFDexRating[] = _("Spotted POKéMON: {STR_VAR_1}!\\nOwned POKéMON: {STR_VAR_2}!\\pPROF. BIRCH\'s POKéDEX rating!\\pPROF. BIRCH: Let\'s see…\\p");':
-        'const u8 gText_HOFDexRating[] = _("Seen POKéMON: {STR_VAR_1}!\\nRecorded: {STR_VAR_2}!\\pPROF. ANAHI\'s POKéDEX rating!\\pANAHI: Let\'s see…\\p");',
-    'const u8 gText_BirchInTrouble[] = _("PROF. BIRCH is in trouble!\\nRelease a POKéMON and rescue him!");':
-        'const u8 gText_BirchInTrouble[] = _("ANAHI is in trouble!\\nRelease a POKéMON and help her!");',
+# Replace by stable C symbol rather than by one historical source sentence.
+# The repository has passed through English and Portuguese cleanup waves, so
+# exact old-text anchors are brittle even when the runtime symbol is unchanged.
+STRING_VALUES = {
+    "gText_StevenMatchCallDesc": "KEEPS NAMES",
+    "gText_StevenMatchCallName": "SEU BENTO",
+    "gText_ProfBirchMatchCallName": "PROF. ANAHI",
+    "gText_ProfBirchMatchCallDesc": "RESEARCHER",
+    "gText_HOFDexRating": (
+        "Seen POKéMON: {STR_VAR_1}!\\nRecorded: {STR_VAR_2}!\\p"
+        "PROF. ANAHI's POKéDEX rating!\\pANAHI: Let's see…\\p"
+    ),
+    "gText_BirchInTrouble": "ANAHI is in trouble!\\nRelease a POKéMON and help her!",
 }
 
 
 def pattern(label: str) -> re.Pattern[str]:
     return re.compile(
         rf"(?ms)^{re.escape(label)}::\n(?P<body>.*?)(?=^[A-Za-z0-9_]+::(?:\n|$)|\Z)"
+    )
+
+
+def string_decl_pattern(symbol: str) -> re.Pattern[str]:
+    return re.compile(
+        rf'(?m)^const u8 {re.escape(symbol)}\[\] = _\("(?:\\.|[^"\\])*"\);$'
     )
 
 
@@ -136,22 +142,42 @@ def render_match(source: str) -> str:
 
 def render_strings(source: str) -> str:
     out = source
-    for old, new in EXACT.items():
-        if new in out and old not in out:
-            continue
-        count = out.count(old)
-        if count != 1:
-            raise ValueError(f"strings.c: expected one exact anchor, found {count}: {old[:80]}")
-        out = out.replace(old, new, 1)
+    for symbol, value in STRING_VALUES.items():
+        rx = string_decl_pattern(symbol)
+        matches = list(rx.finditer(out))
+        if len(matches) != 1:
+            raise ValueError(f"strings.c: expected one declaration for {symbol}, found {len(matches)}")
+        replacement = f'const u8 {symbol}[] = _("{value}");'
+        out = rx.sub(lambda _: replacement, out, count=1)
     return out
 
 
 def validate_strings(out: str) -> None:
-    for old, new in EXACT.items():
-        if old in out:
-            raise ValueError(f"strings.c: legacy Match Call identity survived: {old[:80]}")
-        if new not in out:
-            raise ValueError(f"strings.c: missing English Match Call identity: {new[:80]}")
+    for symbol, value in STRING_VALUES.items():
+        expected = f'const u8 {symbol}[] = _("{value}");'
+        if expected not in out:
+            raise ValueError(f"strings.c: missing rendered value for {symbol}")
+
+    forbidden_visible = (
+        "GUARDA NOMES",
+        "PESQUISADORA",
+        "POKéMON vistos",
+        "Registrados:",
+        "Avaliacao da PROF. ANAHI",
+        "ANAHI esta em perigo",
+        "PROF. BIRCH",
+        "STEVEN",
+    )
+    for token in forbidden_visible:
+        if token in out:
+            # Only guard the shared visible surface touched by this renderer.
+            # Internal symbol names such as gText_StevenMatchCallName remain.
+            visible_hits = [
+                line for line in out.splitlines()
+                if token in line and '_("' in line
+            ]
+            if visible_hits:
+                raise ValueError(f"strings.c: localized/legacy visible token survived: {token}")
 
 
 def main() -> int:
@@ -175,7 +201,7 @@ def main() -> int:
         if strings_out != strings_source:
             STRINGS.write_text(strings_out, encoding="utf-8")
 
-    print(f"Match Call English identity OK: {len(BLOCKS)} blocks + {len(EXACT)} shared strings.")
+    print(f"Match Call English identity OK: {len(BLOCKS)} blocks + {len(STRING_VALUES)} shared strings.")
     return 0
 
 
