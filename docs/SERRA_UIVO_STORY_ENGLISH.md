@@ -22,7 +22,7 @@ Serra do Uivo is the first place where the player can understand why HORIZON is 
 
 ## Coverage
 
-`scripts/render_serra_uivo_story_en.py` owns the 153-entry authored table and `scripts/render_serra_uivo_story_en_checked.py` applies it through string-only boundaries across 15 existing source files:
+Five reviewable JSON files under `data/text/arauna/en/serra_uivo_*.json` store the 153 authored text blocks, grouped into core, HORIZON, route, civic and residential surfaces. `scripts/render_serra_uivo_story_en.py` validates the data and progression contract, while `scripts/render_serra_uivo_story_en_checked.py` applies it through string-only boundaries across 15 existing source files:
 
 - Serra do Uivo exterior and CIRO encounter;
 - DALVA's Gym, first battle, badge, TM and Match Call surface;
@@ -37,7 +37,7 @@ The renderer also fixes the Route 116 glasses NPC, which previously displayed an
 
 ## Technical contract
 
-The checked renderer changes only consecutive `.string` lines under the 153 labeled text blocks; it cannot cross into comments, directives or executable script commands.
+The authored dialogue is plain UTF-8 JSON. The checked renderer changes only consecutive `.string` lines under the 153 labeled text blocks; it cannot cross into comments, directives or executable script commands.
 
 It validates:
 

@@ -1,0 +1,52 @@
+{
+  "flat21": {
+    "RustboroCity_Flat2_1F_Text_DevonWorkersLiveHere": [
+      "Many HORIZON workers live here.\\p",
+      "The center keeps long hours.$"
+    ]
+  },
+  "flat22": {
+    "RustboroCity_Flat2_2F_Text_DevonWasTinyInOldDays": [
+      "HORIZON started as a small\\n",
+      "engineering project.$"
+    ],
+    "RustboroCity_Flat2_2F_Text_MyDaddyMadeThisYouCanHaveIt": [
+      "My dad works for HORIZON.\\p",
+      "He helped make this.\\p",
+      "I don't use it, so you can.$"
+    ],
+    "RustboroCity_Flat2_2F_Text_GoingToWorkAtDevonToo": [
+      "My dad works for HORIZON.\\p",
+      "I want to do field research too.$"
+    ]
+  },
+  "flat23": {
+    "RustboroCity_Flat2_3F_Text_PresidentCollectsRareStones": [
+      "HORIZON keeps rare samples from\\n",
+      "the mountain here.$"
+    ],
+    "RustboroCity_Flat2_3F_Text_PresidentsSonAlsoCollectsRareStones": [
+      "People here collect stones and\\n",
+      "minerals from old field sites.$"
+    ]
+  },
+  "house2": {
+    "RustboroCity_House2_Text_TrainerSchoolExcellent": [
+      "The TRAINER'S SCHOOL is good.\\p",
+      "They teach battle and fieldwork.$"
+    ],
+    "RustboroCity_House2_Text_RoxanneKnowsALot": [
+      "DALVA knows the mountain well.\\p",
+      "She says cracks record pressure.$"
+    ]
+  },
+  "flat12": {
+    "RustboroCity_Flat1_2F_Text_ThankYouIllGiveYouWallpaper": [
+      "Thank you! She laughed!\\p",
+      "I work on HORIZON displays.\\p",
+      "Let me add new wallpaper to\\n",
+      "your PC storage menu.\\p",
+      "Look under FRIENDS.$"
+    ]
+  }
+}
