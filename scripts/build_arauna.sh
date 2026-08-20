@@ -40,6 +40,7 @@ overlay_files=(
     "data/scripts/gift_old_sea_map.inc"
     "data/scripts/gift_aurora_ticket.inc"
     "data/scripts/gift_mystic_ticket.inc"
+    "data/scripts/gift_trainer.inc"
     "data/maps/LittlerootTown/scripts.inc"
     "data/maps/Route101/scripts.inc"
     "data/maps/Route102/scripts.inc"
@@ -94,6 +95,7 @@ overlay_files=(
     "data/maps/Route117/scripts.inc"
     "data/maps/VerdanturfTown/scripts.inc"
     "data/maps/VerdanturfTown_WandasHouse/scripts.inc"
+    "data/maps/VerdanturfTown_House/scripts.inc"
     "data/maps/VerdanturfTown_BattleTentLobby/scripts.inc"
     "data/maps/LavaridgeTown/scripts.inc"
     "data/maps/LavaridgeTown_Gym_1F/scripts.inc"
@@ -104,6 +106,7 @@ overlay_files=(
     "data/maps/Route114/scripts.inc"
     "data/maps/Route114_FossilManiacsTunnel/scripts.inc"
     "data/maps/PacifidlogTown/scripts.inc"
+    "data/maps/PacifidlogTown_PokemonCenter_1F/scripts.inc"
     "data/maps/PetalburgWoods/scripts.inc"
     "data/maps/Route119/scripts.inc"
     "data/maps/Route120/scripts.inc"
@@ -152,6 +155,7 @@ overlay_files=(
     "data/maps/SootopolisCity_Gym_1F/scripts.inc"
     "data/maps/SootopolisCity_House3/scripts.inc"
     "data/maps/SootopolisCity_House5/scripts.inc"
+    "data/maps/SootopolisCity_House7/scripts.inc"
     "data/maps/SkyPillar_Outside/scripts.inc"
     "data/maps/MossdeepCity/scripts.inc"
     "data/maps/MossdeepCity_Gym/scripts.inc"
@@ -257,6 +261,7 @@ python3 scripts/render_missoes_ceu_confrontation_en.py --in-place
 python3 scripts/render_prism_spring_gyms_en.py --in-place
 python3 scripts/render_optional_story_gaps_en.py --in-place
 python3 scripts/render_optional_runtime_gaps_en.py --in-place
+python3 scripts/render_optional_location_identity_en.py --in-place
 python3 scripts/render_climax_finale_en.py --in-place
 python3 scripts/render_estrada_juramento_en.py --in-place
 python3 scripts/render_casa_maior_four_en.py --in-place
