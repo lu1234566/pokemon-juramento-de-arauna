@@ -29,6 +29,8 @@ overlay_files=(
     "data/text/trainers.inc"
     "data/text/trick_house_mechadolls.inc"
     "data/text/pokedex_rating.inc"
+    "data/text/apprentice.inc"
+    "data/text/tv.inc"
     "data/maps/LittlerootTown/scripts.inc"
     "data/maps/Route101/scripts.inc"
     "data/maps/Route102/scripts.inc"
@@ -144,6 +146,15 @@ overlay_files=(
     "src/data/items.h"
     "src/data/text/item_descriptions.h"
 )
+
+# The terminology pass is intentionally broader than the hand-authored Circuit
+# scenes. Back up every Battle Frontier map script before the pass so the build
+# remains fully transactional even when a previously untouched room gains a
+# visible legacy term upstream.
+for file in data/maps/BattleFrontier_*/scripts.inc; do
+    [[ -f "$file" ]] && overlay_files+=("$file")
+done
+
 overlay_backup_dir="$(mktemp -d)"
 
 for file in "${overlay_files[@]}"; do
@@ -207,6 +218,7 @@ python3 scripts/render_estrada_juramento_en.py --in-place
 python3 scripts/render_casa_maior_four_en.py --in-place
 python3 scripts/render_postgame_misc_en.py --in-place
 python3 scripts/render_battle_circuit_reception_en.py --in-place
+python3 scripts/render_battle_circuit_terminology_en.py --in-place
 python3 scripts/render_horizon_gaps_en.py --in-place
 python3 scripts/render_porto_sal_museum_people_en_checked.py --in-place
 python3 scripts/render_porto_sal_museum_science_en_checked.py --in-place
