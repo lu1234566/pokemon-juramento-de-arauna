@@ -46,6 +46,9 @@ overlay_files=(
     "data/maps/RustboroCity_DevonCorp_3F/scripts.inc"
     "data/maps/RustboroCity_CuttersHouse/scripts.inc"
     "data/maps/RustboroCity_PokemonSchool/scripts.inc"
+    "data/maps/RustboroCity_Flat2_1F/scripts.inc"
+    "data/maps/RustboroCity_Flat2_2F/scripts.inc"
+    "data/maps/RustboroCity_Flat2_3F/scripts.inc"
     "data/maps/Route116/scripts.inc"
     "data/maps/RusturfTunnel/scripts.inc"
     "data/maps/DewfordTown/scripts.inc"
@@ -71,6 +74,7 @@ overlay_files=(
     "data/maps/Route121/scripts.inc"
     "data/maps/FortreeCity_PokemonCenter_1F/scripts.inc"
     "data/maps/LilycoveCity/scripts.inc"
+    "data/maps/LilycoveCity_CoveLilyMotel_1F/scripts.inc"
     "data/maps/SlateportCity/scripts.inc"
     "data/maps/SlateportCity_Harbor/scripts.inc"
     "data/maps/SlateportCity_OceanicMuseum_1F/scripts.inc"
@@ -94,6 +98,7 @@ overlay_files=(
     "data/maps/MagmaHideout_3F_1R/scripts.inc"
     "data/maps/MagmaHideout_3F_2R/scripts.inc"
     "data/maps/MagmaHideout_4F/scripts.inc"
+    "data/maps/AquaHideout_1F/scripts.inc"
     "data/maps/AquaHideout_B1F/scripts.inc"
     "data/maps/AquaHideout_B2F/scripts.inc"
     "data/maps/SeafloorCavern_Room1/scripts.inc"
@@ -177,6 +182,7 @@ python3 scripts/render_prism_spring_gyms_en.py --in-place
 python3 scripts/render_climax_finale_en.py --in-place
 python3 scripts/render_estrada_juramento_en.py --in-place
 python3 scripts/render_postgame_misc_en.py --in-place
+python3 scripts/render_horizon_gaps_en.py --in-place
 python3 scripts/render_porto_sal_museum_people_en_checked.py --in-place
 python3 scripts/render_porto_sal_museum_science_en_checked.py --in-place
 python3 scripts/render_porto_sal_museum_confrontation_en_checked.py --in-place
