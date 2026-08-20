@@ -9,128 +9,128 @@ def add(p,l,*x): T.setdefault(p,{})[l]=x
 
 PAMPA="data/maps/PetalburgCity_House2/scripts.inc"
 add(PAMPA,"PetalburgCity_House2_Text_NormanBecameGymLeader",
-    "ELIAS: Some guilt does not vanish\\n","when we stay silent.\\p",
-    "I approved part of the M'BOI project\\n","and called my fear prudence for years.$")
+    "ELIAS: Some guilt stays.\\n","Silence does not erase it.\\p",
+    "I approved part of M'BOI.\\n","For years, I called it prudence.$")
 add(PAMPA,"PetalburgCity_House2_Text_BattledNormanOnce",
-    "ELIAS: Being your father never gave\\n","me the right to decide which truths\\n","you could bear.\\p",
-    "It took me too long to understand.$")
+    "ELIAS: Being your father\\n","gave me no right to hide truth.\\p",
+    "It took me too long to learn.$")
 
 CENTER="data/maps/FortreeCity_PokemonCenter_1F/scripts.inc"
 add(CENTER,"FortreeCity_PokemonCenter_1F_Text_GoToSafariZone",
     "Building a POKéDEX?\\p",
-    "Visit the SAFARI ZONE. You may find\\n","POKéMON you have not seen elsewhere.$")
+    "Visit the SAFARI ZONE.\\n","You may find rare POKéMON.$")
 add(CENTER,"FortreeCity_PokemonCenter_1F_Text_RecordCornerIsNeat",
-    "Have you used the RECORD CORNER?\\p",
-    "It mixes records from different\\n","TRAINERS. Strange, but interesting.$")
+    "Used the RECORD CORNER?\\p",
+    "It mixes TRAINER records.\\n","Strange, but interesting.$")
 add(CENTER,"FortreeCity_PokemonCenter_1F_Text_DoYouKnowAboutPokenav",
     "You have a POKéNAV too!\\p",
-    "MATCH CALL lets you contact TRAINERS\\n","you registered before.\\p",
-    "It also shows who is ready for a\\n","rematch. HORIZON built the system.$")
+    "MATCH CALL contacts TRAINERS\\n","you registered before.\\p",
+    "It also marks rematches.\\n","HORIZON built that system.$")
 
 FOSSIL="data/maps/Route114_FossilManiacsTunnel/scripts.inc"
 add(FOSSIL,"Route114_FossilManiacsTunnel_Text_LookInDesertForFossils",
     "I'm a FOSSIL researcher.\\p",
-    "I love FOSSILS, but these are mine.\\p",
-    "If you want to find your own, search\\n","the desert.\\p",
-    "Stone and sand hide things for a\\n","very long time.$")
+    "I love FOSSILS. These are mine.\\p",
+    "Search the desert for your own.\\p",
+    "Stone and sand hide old things.$")
 add(FOSSIL,"Route114_FossilManiacsTunnel_Text_DevonCorpRevivingFossils",
-    "You found a FOSSIL? Beautiful.\\p",
-    "HORIZON researchers can revive some\\n","POKéMON from FOSSILS.\\p",
-    "I prefer leaving mine as I found them.$")
+    "Found a FOSSIL? Beautiful.\\p",
+    "HORIZON can revive some\\n","POKéMON from FOSSILS.\\p",
+    "I leave mine as I found them.$")
 add(FOSSIL,"Route114_FossilManiacsTunnel_Text_FossilsAreWonderful",
-    "FOSSILS are wonderful.\\p","I could stare at them all day.$")
+    "FOSSILS are wonderful.\\p","I could stare all day.$")
 add(FOSSIL,"Route114_FossilManiacsTunnel_Text_NotSafeThatWay",
     "That way isn't safe.\\p",
-    "The wall collapsed while I dug and\\n","revealed a huge cave below.\\p",
-    "I left it alone. I found no FOSSILS\\n","down there.$")
+    "The wall collapsed as I dug.\\n","A huge cave opened below.\\p",
+    "I left it alone.\\n","There were no FOSSILS there.$")
 
 SHIP="data/maps/SSTidalCorridor/scripts.inc"
 add(SHIP,"SSTidalCorridor_Text_ScottBattleFrontierInvite",
-    "SEU BENTO: {PLAYER}{KUN}, good to see\\n","you here.\\p",
-    "Congratulations on the LEAGUE.\\p",
-    "I want to see how you handle the\\n","CIRCUITO DE BATALHA.\\p",
-    "I spoke with the crew. On your next\\n","trip, this ferry can take you there.\\p",
+    "{PLAYER}{KUN}! SEU BENTO here.\\p",
+    "Congrats on the LEAGUE.\\p",
+    "I want to see you handle\\n","CIRCUITO DE BATALHA.\\p",
+    "I spoke with the crew.\\n","This ferry can take you there.\\p",
     "I'll be waiting.$")
 add(SHIP,"SSTidal_Text_FastCurrentsHopeYouEnjoyVoyage",
-    "This ferry crosses strong currents\\n","without losing course.\\p",
-    "Enjoy the voyage and explore aboard.$")
+    "This ferry crosses hard seas\\n","without losing its course.\\p",
+    "Enjoy the voyage aboard.$")
 add(SHIP,"SSTidal_Text_HopeYouEnjoyVoyage","We hope you enjoy the voyage.$")
 add(SHIP,"SSTidal_Text_MadeLandInSlateport",
-    "We have arrived at PORTO DO SAL.\\p","Thank you for sailing with us.$")
+    "We arrived at PORTO DO SAL.\\p","Thanks for sailing with us.$")
 add(SHIP,"SSTidal_Text_MadeLandInLilycove",
-    "We have arrived at BAIA DAS LUZES.\\p","Thank you for sailing with us.$")
+    "We arrived at BAIA DAS LUZES.\\p","Thanks for sailing with us.$")
 add(SHIP,"SSTidalCorridor_Text_CanRestInCabin2",
-    "We still have some distance to go.\\p",
-    "If you want to rest, use Cabin 2.$")
+    "We still have some way to go.\\p",
+    "Rest in Cabin 2 if you want.$")
 add(SHIP,"SSTidalCorridor_Text_WeveArrived","We have arrived!$")
 add(SHIP,"SSTidalCorridor_Text_VisitOtherCabins",
     "Visit the other cabins.\\p",
-    "Some bored TRAINERS may want a\\n","battle.$")
+    "Some TRAINERS may want\\n","a battle.$")
 add(SHIP,"SSTidalCorridor_Text_EnjoyYourCruise","Enjoy the voyage!$")
 add(SHIP,"SSTidalCorridor_Text_HorizonSpreadsBeyondPorthole",
-    "The horizon stretches beyond the\\n","porthole.$")
+    "The horizon lies beyond\\n","the porthole.$")
 add(SHIP,"SSTidalCorridor_Text_BrineyWelcomeAboard",
-    "CAPTAIN: Welcome aboard, {PLAYER}{KUN}!\\p",
-    "They gave me command of this ferry.\\p",
-    "I had left the sea, but a ship like\\n","this wakes any sailor's soul.$")
+    "CAPTAIN: Welcome, {PLAYER}{KUN}!\\p",
+    "They gave me this ferry.\\p",
+    "I had left the sea.\\n","A ship can wake an old sailor.$")
 for i in range(1,5): add(SHIP,f"SSTidalCorridor_Text_Cabin{i}",f"Cabin {i}$")
 
 SCOTT="data/maps/BattleFrontier_ScottsHouse/scripts.inc"
 add(SCOTT,"BattleFrontier_ScottsHouse_Text_WelcomeToBattleFrontier",
     "SEU BENTO: So you came.\\p",
-    "This place may not look enormous,\\n","but the challenge is serious.\\p",
-    "{PLAYER}{KUN}, welcome to the\\n","CIRCUITO DE BATALHA.\\p",
-    "It took years to gather the people\\n","who keep this place running.$")
+    "This place is not huge,\\n","but its challenge is serious.\\p",
+    "{PLAYER}{KUN}, welcome to\\n","CIRCUITO DE BATALHA.\\p",
+    "It took years to gather\\n","the people who run it.$")
 add(SCOTT,"BattleFrontier_ScottsHouse_Text_HowMuchEffortItTookToMakeReal",
-    "I started by traveling alone, looking\\n","for TRAINERS who held under pressure.\\p",
-    "It was a long road. This place grew\\n","from it.$")
+    "I traveled alone at first,\\n","seeking steady TRAINERS.\\p",
+    "It was a long road.\\n","This place grew from it.$")
 add(SCOTT,"BattleFrontier_ScottsHouse_Text_HaveThisAsMementoOfOurPathsCrossing",
-    "The past brought all of us here.\\p",
+    "The past brought us here.\\p",
     "I won't decorate that truth.\\p",
-    "Fight with everything you learned.\\p",
-    "{PLAYER}{KUN}, take this as a mark of\\n","where our paths crossed.$")
+    "Fight with what you learned.\\p",
+    "{PLAYER}{KUN}, take this mark\\n","of where our paths crossed.$")
 add(SCOTT,"BattleFrontier_ScottsHouse_Text_ObtainedXBattlePoints",
     "{PLAYER} received {STR_VAR_1}\\n","Battle Point(s).$")
 add(SCOTT,"BattleFrontier_ScottsHouse_Text_ExplainBattlePoints",
-    "SEU BENTO: Your Battle Points are\\n","stored on the CIRCUIT PASS.\\p",
-    "Better results earn more points.\\p",
-    "Exchange them for items when you\\n","think it is worth it.$")
+    "SEU BENTO: Your Battle Points\\n","are stored on the CIRCUIT PASS.\\p",
+    "Better results earn more.\\p",
+    "Trade them for useful items\\n","when you think it is worth it.$")
 add(SCOTT,"BattleFrontier_ScottsHouse_Text_ExpectingGreatThings",
-    "I want to see how far you can go!$")
+    "I want to see how far you go!$")
 add(SCOTT,"BattleFrontier_ScottsHouse_Text_WhyIGoSeekingTrainers",
-    "SEU BENTO: Every TRAINER carries a\\n","different story.\\p",
-    "But excuses don't change a battle's\\n","result.\\p",
-    "I look for people willing to be\\n","tested, and I bring them here.$")
+    "SEU BENTO: Every TRAINER\\n","carries a different story.\\p",
+    "Excuses do not change\\n","a battle's result.\\p",
+    "I seek people willing\\n","to be tested here.$")
 add(SCOTT,"BattleFrontier_ScottsHouse_Text_HaveYouMetFrontierBrain",
-    "SEU BENTO: Met a CIRCUIT MASTER yet?\\p",
+    "SEU BENTO: Met a CIRCUIT\\n","MASTER yet?\\p",
     "Earned any SYMBOLS?\\p",
-    "I chose each MASTER because they do\\n","not make things easy.$")
+    "I chose each MASTER\\n","because they do not go easy.$")
 add(SCOTT,"BattleFrontier_ScottsHouse_Text_MayFindWildMonsInFrontier",
-    "SEU BENTO: Still filling the POKéDEX?\\p",
-    "Explore the CIRCUITO carefully.\\p",
-    "Wild POKéMON appear where you least\\n","expect them.$")
+    "SEU BENTO: Filling the POKéDEX?\\p",
+    "Explore the CIRCUITO.\\p",
+    "Wild POKéMON may appear\\n","where you least expect them.$")
 add(SCOTT,"BattleFrontier_ScottsHouse_Text_YouveCollectedAllSilverSymbols",
-    "SEU BENTO: Let me see that PASS...\\p",
+    "SEU BENTO: Let me see that PASS.\\p",
     "Every SILVER SYMBOL.\\p",
-    "That is no small achievement. You\\n","earned this reward.$")
+    "That is no small feat.\\n","You earned this reward.$")
 add(SCOTT,"BattleFrontier_ScottsHouse_Text_YouveCollectedAllGoldSymbols",
     "SEU BENTO: All GOLD SYMBOLS.\\p",
-    "Very few TRAINERS get this far.\\p",
-    "{PLAYER}, take this. You'll value it.$")
+    "Few TRAINERS get this far.\\p",
+    "{PLAYER}, take this.\\n","You'll value it.$")
 add(SCOTT,"BattleFrontier_ScottsHouse_Text_SoGladIBroughtYouHere",
-    "I knew you would cause trouble when\\n","we first met.\\p",
-    "I'm glad I brought you to this circuit.$")
+    "I knew you'd cause trouble\\n","when we first met.\\p",
+    "I'm glad I brought you here.$")
 add(SCOTT,"BattleFrontier_ScottsHouse_Text_BerryPocketStuffed",
-    "The BERRY pocket in your BAG is full.$")
+    "Your BERRY pocket is full.$")
 add(SCOTT,"BattleFrontier_ScottsHouse_Text_Beat50TrainersInARow",
-    "SEU BENTO: Fifty straight wins in\\n","BATTLE TOWER?\\p","Not bad. Take this.$")
+    "SEU BENTO: Fifty straight wins\\n","in BATTLE TOWER?\\p","Not bad. Take this.$")
 add(SCOTT,"BattleFrontier_ScottsHouse_Text_Beat100TrainersInARow",
-    "SEU BENTO: One hundred straight wins\\n","in BATTLE TOWER?\\p",
-    "Now you're raising the stakes. Take\\n","this.$")
+    "SEU BENTO: One hundred wins\\n","in BATTLE TOWER?\\p",
+    "Now you're raising the stakes.\\n","Take this.$")
 add(SCOTT,"BattleFrontier_ScottsHouse_Text_ExpectingToHearEvenGreaterThings",
-    "Now I expect even bigger news from\\n","you.$")
+    "I expect even bigger news\\n","from you.$")
 add(SCOTT,"BattleFrontier_ScottsHouse_Text_ComeBackForThisLater",
-    "Your BAG is full. Come back when you\\n","have room.$")
+    "Your BAG is full.\\n","Come back with room.$")
 
 P={
  PAMPA:("PetalburgCity_House2_EventScript_Woman",),
