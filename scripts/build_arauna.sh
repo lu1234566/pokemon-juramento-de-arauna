@@ -24,6 +24,7 @@ fi
 overlay_files=(
     "src/strings.c"
     "src/data/trainers.h"
+    "src/data/text/trainer_class_names.h"
     "data/maps/LittlerootTown/scripts.inc"
     "data/maps/Route101/scripts.inc"
     "data/maps/Route102/scripts.inc"
@@ -32,6 +33,7 @@ overlay_files=(
     "data/maps/PetalburgCity/scripts.inc"
     "data/maps/PetalburgCity_Gym/scripts.inc"
     "data/maps/PetalburgCity_WallysHouse/scripts.inc"
+    "data/maps/PetalburgCity_House2/scripts.inc"
     "data/maps/LittlerootTown_BrendansHouse_1F/scripts.inc"
     "data/maps/LittlerootTown_MaysHouse_1F/scripts.inc"
     "data/maps/LittlerootTown_MaysHouse_2F/scripts.inc"
@@ -61,11 +63,13 @@ overlay_files=(
     "data/maps/Route113/scripts.inc"
     "data/maps/FallarborTown/scripts.inc"
     "data/maps/Route114/scripts.inc"
+    "data/maps/Route114_FossilManiacsTunnel/scripts.inc"
     "data/maps/PacifidlogTown/scripts.inc"
     "data/maps/PetalburgWoods/scripts.inc"
     "data/maps/Route119/scripts.inc"
     "data/maps/Route120/scripts.inc"
     "data/maps/Route121/scripts.inc"
+    "data/maps/FortreeCity_PokemonCenter_1F/scripts.inc"
     "data/maps/LilycoveCity/scripts.inc"
     "data/maps/SlateportCity/scripts.inc"
     "data/maps/SlateportCity_Harbor/scripts.inc"
@@ -109,6 +113,8 @@ overlay_files=(
     "data/maps/VictoryRoad_B2F/scripts.inc"
     "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.inc"
     "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc"
+    "data/maps/SSTidalCorridor/scripts.inc"
+    "data/maps/BattleFrontier_ScottsHouse/scripts.inc"
     "data/text/berries.inc"
     "src/data/items.h"
     "src/data/text/item_descriptions.h"
@@ -132,6 +138,8 @@ trap 'exit 130' INT
 trap 'exit 143' TERM
 
 python3 scripts/render_shared_trainer_names_en.py --in-place
+python3 scripts/render_trainer_class_names_en.py --in-place
+python3 scripts/render_arauna_frontier_ui_en.py --in-place
 python3 scripts/render_vila_amanhecer_route101_en_checked.py --in-place
 python3 scripts/render_vila_amanhecer_houses_en_checked.py --in-place
 python3 scripts/render_anahi_lab_en_checked.py --in-place
@@ -168,6 +176,7 @@ python3 scripts/render_missoes_ceu_confrontation_en.py --in-place
 python3 scripts/render_prism_spring_gyms_en.py --in-place
 python3 scripts/render_climax_finale_en.py --in-place
 python3 scripts/render_estrada_juramento_en.py --in-place
+python3 scripts/render_postgame_misc_en.py --in-place
 python3 scripts/render_porto_sal_museum_people_en_checked.py --in-place
 python3 scripts/render_porto_sal_museum_science_en_checked.py --in-place
 python3 scripts/render_porto_sal_museum_confrontation_en_checked.py --in-place
