@@ -27,11 +27,32 @@ MENU_VALUES = {
     "gText_Dewford": "PORTO DAS REDES",
 }
 
+# These symbols feed a runtime pool of famous trainer names. Keep the symbol
+# identities and selection logic intact while replacing only the visible names.
+FAMOUS_TRAINER_VALUES = {
+    "gText_Wallace": "AMALIA",
+    "gText_Steven": "SEU BENTO",
+    "gText_Brawly": "ADEMAR",
+    "gText_Winona": "LIDIA",
+}
+
 
 def declaration_pattern(symbol: str) -> re.Pattern[str]:
     return re.compile(
         rf'(?m)^const u8 {re.escape(symbol)}\[\] = _\("(?:\\.|[^"\\])*"\);$'
     )
+
+
+def render_symbol_values(source: str, values: dict[str, str]) -> str:
+    out = source
+    for symbol, value in values.items():
+        rx = declaration_pattern(symbol)
+        matches = list(rx.finditer(out))
+        if len(matches) != 1:
+            raise ValueError(f"expected one declaration for {symbol}, found {len(matches)}")
+        replacement = f'const u8 {symbol}[] = _("{value}");'
+        out = rx.sub(lambda _: replacement, out, count=1)
+    return out
 
 
 def render(source: str) -> str:
@@ -44,14 +65,16 @@ def render(source: str) -> str:
             raise ValueError(f"expected one system UI anchor, found {count}: {old}")
         out = out.replace(old, new, 1)
 
-    for symbol, value in MENU_VALUES.items():
-        rx = declaration_pattern(symbol)
-        matches = list(rx.finditer(out))
-        if len(matches) != 1:
-            raise ValueError(f"expected one declaration for {symbol}, found {len(matches)}")
-        replacement = f'const u8 {symbol}[] = _("{value}");'
-        out = rx.sub(lambda _: replacement, out, count=1)
+    out = render_symbol_values(out, MENU_VALUES)
+    out = render_symbol_values(out, FAMOUS_TRAINER_VALUES)
     return out
+
+
+def validate_symbol_values(out: str, values: dict[str, str], category: str) -> None:
+    for symbol, value in values.items():
+        expected = f'const u8 {symbol}[] = _("{value}");'
+        if expected not in out:
+            raise ValueError(f"missing Arauna {category}: {symbol}")
 
 
 def validate(out: str) -> None:
@@ -61,10 +84,8 @@ def validate(out: str) -> None:
         if new not in out:
             raise ValueError(f"missing Arauna system identity: {new}")
 
-    for symbol, value in MENU_VALUES.items():
-        expected = f'const u8 {symbol}[] = _("{value}");'
-        if expected not in out:
-            raise ValueError(f"missing Arauna shared menu label: {symbol}")
+    validate_symbol_values(out, MENU_VALUES, "shared menu label")
+    validate_symbol_values(out, FAMOUS_TRAINER_VALUES, "famous trainer name")
 
 
 def main() -> int:
@@ -81,7 +102,8 @@ def main() -> int:
         TARGET.write_text(out, encoding="utf-8")
     print(
         "Arauna system UI identity overlay OK: "
-        f"{len(REPLACEMENTS)} identity anchors + {len(MENU_VALUES)} shared menu labels."
+        f"{len(REPLACEMENTS)} identity anchors + {len(MENU_VALUES)} shared menu labels + "
+        f"{len(FAMOUS_TRAINER_VALUES)} famous trainer names."
     )
     return 0
 
