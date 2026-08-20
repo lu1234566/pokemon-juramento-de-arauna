@@ -90,7 +90,10 @@ overlay_files=(
     "data/maps/AquaHideout_B2F/scripts.inc"
     "data/maps/SeafloorCavern_Room9/scripts.inc"
     "data/maps/SootopolisCity/scripts.inc"
+    "data/maps/SootopolisCity_Gym_1F/scripts.inc"
     "data/maps/SkyPillar_Outside/scripts.inc"
+    "data/maps/MossdeepCity/scripts.inc"
+    "data/maps/MossdeepCity_Gym/scripts.inc"
     "data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc"
     "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc"
     "data/text/berries.inc"
@@ -148,6 +151,7 @@ python3 scripts/render_remembrancers_lower_en.py --in-place
 python3 scripts/render_remembrancers_core_en.py --in-place
 python3 scripts/render_missoes_ceu_ground_floor_en.py --in-place
 python3 scripts/render_missoes_ceu_confrontation_en.py --in-place
+python3 scripts/render_prism_spring_gyms_en.py --in-place
 python3 scripts/render_porto_sal_museum_people_en_checked.py --in-place
 python3 scripts/render_porto_sal_museum_science_en_checked.py --in-place
 python3 scripts/render_porto_sal_museum_confrontation_en_checked.py --in-place
