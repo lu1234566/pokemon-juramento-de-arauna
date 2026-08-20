@@ -92,6 +92,9 @@ overlay_files=(
     "data/maps/MagmaHideout_4F/scripts.inc"
     "data/maps/AquaHideout_B1F/scripts.inc"
     "data/maps/AquaHideout_B2F/scripts.inc"
+    "data/maps/SeafloorCavern_Room1/scripts.inc"
+    "data/maps/SeafloorCavern_Room3/scripts.inc"
+    "data/maps/SeafloorCavern_Room4/scripts.inc"
     "data/maps/SeafloorCavern_Room9/scripts.inc"
     "data/maps/SootopolisCity/scripts.inc"
     "data/maps/SootopolisCity_Gym_1F/scripts.inc"
@@ -105,6 +108,7 @@ overlay_files=(
     "data/maps/VictoryRoad_B1F/scripts.inc"
     "data/maps/VictoryRoad_B2F/scripts.inc"
     "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.inc"
+    "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc"
     "data/text/berries.inc"
     "src/data/items.h"
     "src/data/text/item_descriptions.h"
@@ -162,6 +166,7 @@ python3 scripts/render_remembrancers_core_en.py --in-place
 python3 scripts/render_missoes_ceu_ground_floor_en.py --in-place
 python3 scripts/render_missoes_ceu_confrontation_en.py --in-place
 python3 scripts/render_prism_spring_gyms_en.py --in-place
+python3 scripts/render_climax_finale_en.py --in-place
 python3 scripts/render_estrada_juramento_en.py --in-place
 python3 scripts/render_porto_sal_museum_people_en_checked.py --in-place
 python3 scripts/render_porto_sal_museum_science_en_checked.py --in-place
