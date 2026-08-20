@@ -23,6 +23,7 @@ fi
 # are re-enabled individually after their output has been reviewed.
 overlay_files=(
     "src/strings.c"
+    "src/battle_message.c"
     "src/landmark.c"
     "src/data/trainers.h"
     "src/data/text/trainer_class_names.h"
@@ -53,9 +54,11 @@ overlay_files=(
     "data/maps/RustboroCity_DevonCorp_3F/scripts.inc"
     "data/maps/RustboroCity_CuttersHouse/scripts.inc"
     "data/maps/RustboroCity_PokemonSchool/scripts.inc"
+    "data/maps/RustboroCity_Mart/scripts.inc"
     "data/maps/RustboroCity_Flat2_1F/scripts.inc"
     "data/maps/RustboroCity_Flat2_2F/scripts.inc"
     "data/maps/RustboroCity_Flat2_3F/scripts.inc"
+    "data/maps/Route109/scripts.inc"
     "data/maps/Route116/scripts.inc"
     "data/maps/RusturfTunnel/scripts.inc"
     "data/maps/DewfordTown/scripts.inc"
@@ -125,6 +128,7 @@ overlay_files=(
     "data/maps/AquaHideout_1F/scripts.inc"
     "data/maps/AquaHideout_B1F/scripts.inc"
     "data/maps/AquaHideout_B2F/scripts.inc"
+    "data/maps/Underwater_SeafloorCavern/scripts.inc"
     "data/maps/SeafloorCavern_Room1/scripts.inc"
     "data/maps/SeafloorCavern_Room3/scripts.inc"
     "data/maps/SeafloorCavern_Room4/scripts.inc"
@@ -186,6 +190,7 @@ trap 'exit 143' TERM
 python3 scripts/render_shared_trainer_names_en.py --in-place
 python3 scripts/render_trainer_class_names_en.py --in-place
 python3 scripts/render_system_ui_identity_en.py --in-place
+python3 scripts/render_battle_message_identity_en.py --in-place
 python3 scripts/render_arauna_frontier_ui_en.py --in-place
 python3 scripts/render_match_call_identity_en.py --in-place
 python3 scripts/render_vila_amanhecer_route101_en_checked.py --in-place
@@ -200,6 +205,8 @@ python3 scripts/render_pampa_gym_rooms_en_checked.py --in-place
 python3 scripts/render_val_house_en_checked.py --in-place
 python3 scripts/render_serra_uivo_porto_redes_en.py --in-place
 python3 scripts/render_serra_uivo_porto_redes_interiors_en.py --in-place
+python3 scripts/render_serra_uivo_mart_en.py --in-place
+python3 scripts/render_early_sea_route_en.py --in-place
 python3 scripts/render_route110_encruzilhada_en.py --in-place
 python3 scripts/render_trial_house_identity_en.py --in-place
 python3 scripts/render_vale_silencio_en.py --in-place
@@ -242,6 +249,7 @@ python3 scripts/render_porto_sal_submersivel_en.py --in-place
 python3 scripts/render_porto_sal_daily_life_en.py --in-place
 python3 scripts/render_porto_sal_shipyard_en.py --in-place
 python3 scripts/render_porto_sal_harbor_service_en.py --in-place
+python3 scripts/render_circuit_name_consistency_en.py --in-place
 
 cpp="${CPP:-arm-none-eabi-cpp}"
 
