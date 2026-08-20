@@ -1,0 +1,135 @@
+{
+  "hall": {
+    "DewfordTown_Hall_Text_CantImagineLifeWithoutTrend": [
+      "Around here, {STR_VAR_1}\\n",
+      "is on every dockworker's lips.\\p",
+      "A phrase can mark a season.$"
+    ],
+    "DewfordTown_Hall_Text_GettingBoredOfTrend": [
+      "People still use\\n",
+      "{STR_VAR_1}.\\p",
+      "I think the docks are ready\\n",
+      "for a new saying.$"
+    ],
+    "DewfordTown_Hall_Text_TeachingMonAboutTrend": [
+      "I repeat this to my POKéMON:\\n",
+      "{STR_VAR_1}.\\p",
+      "It recognizes my tone, at least.$"
+    ],
+    "DewfordTown_Hall_Text_DeepLinkBetweenXAndY": [
+      "I'm comparing two dock sayings.\\p",
+      "Do {STR_VAR_1} and\\n",
+      "{STR_VAR_2} come from\\n",
+      "the same old story?$"
+    ],
+    "DewfordTown_Hall_Text_MyHunchWasRight": [
+      "So they are connected.\\p",
+      "Good. I'll note both versions.$"
+    ],
+    "DewfordTown_Hall_Text_NotEasyToKeepUp": [
+      "No connection?\\p",
+      "Good thing I asked instead of\\n",
+      "writing my guess as fact.$"
+    ],
+    "DewfordTown_Hall_Text_TVShowAboutTrend": [
+      "Someone should record how people\\n",
+      "use {STR_VAR_1} here.\\p",
+      "Broadcasts lose the small parts.$"
+    ],
+    "DewfordTown_Hall_Text_IsTrendMorePopularAcrossSea": [
+      "Across the water, do they still\\n",
+      "say {STR_VAR_1} too?$"
+    ],
+    "DewfordTown_Hall_Text_CollectTrendMerchandise": [
+      "I collect things marked with\\n",
+      "{STR_VAR_1}.\\p",
+      "Tags, nets, painted floats...\\p",
+      "Objects remember use differently\\n",
+      "from people.$"
+    ],
+    "DewfordTown_Hall_Text_BooksAboutTrend": [
+      "DOCK SAYINGS AND THEIR ORIGINS\\p",
+      "FISHERS' NOTES: {STR_VAR_1}\\p",
+      "CROSS-BAY VARIANTS\\p",
+      "The margins hold corrections\\n",
+      "from several different hands.$"
+    ],
+    "DewfordTown_Hall_Text_TrendsScream": [
+      "The painting is titled\\n",
+      "{STR_VAR_1}: THE CALL.$"
+    ],
+    "DewfordTown_Hall_Text_TrendsSmile": [
+      "The painting is titled\\n",
+      "{STR_VAR_1}: CALM WATER.$"
+    ],
+    "DewfordTown_Hall_Text_LastTrend": [
+      "The painting is titled\\n",
+      "THE LAST {STR_VAR_1}.$"
+    ],
+    "DewfordTown_Hall_Text_BirthOfTrend": [
+      "The painting is titled\\n",
+      "FIRST {STR_VAR_1}.$"
+    ],
+    "DewfordTown_Hall_Text_SawTrendCoolestThing": [
+      "I heard {STR_VAR_1}\\n",
+      "from a boat that came in today.\\p",
+      "Proof that the saying traveled.$"
+    ],
+    "DewfordTown_Hall_Text_AllegedTrendNotAuthentic": [
+      "Maybe, but the version I know\\n",
+      "sounds different.\\p",
+      "That doesn't make yours false.\\p",
+      "It means we should keep both.$"
+    ],
+    "DewfordTown_Hall_Text_ComposedTrendThemeSong": [
+      "I made a work song around\\n",
+      "{STR_VAR_1}.\\p",
+      "Listen...\\p",
+      "{STR_VAR_1}!\\p",
+      "Pull, knot, breathe, repeat!$"
+    ],
+    "DewfordTown_Hall_Text_WorkOnYourSinging": [
+      "The rhythm needs work.\\p",
+      "But keep the words. Someone else\\n",
+      "may remember a better tune.$"
+    ],
+    "DewfordTown_Hall_Text_OrganizeTrendParty": [
+      "We should hold a dock gathering\\n",
+      "around {STR_VAR_1}.\\p",
+      "People can tell their versions.$"
+    ],
+    "DewfordTown_Hall_Text_BrilliantIndeed": [
+      "Yes. No winner, though.\\p",
+      "We record every version and see\\n",
+      "where they agree or split.$"
+    ],
+    "DewfordTown_Hall_Text_TrendHasBecomePartOfLife": [
+      "Maybe {STR_VAR_1}\\n",
+      "isn't just a saying anymore.\\p",
+      "People use it without noticing.$"
+    ],
+    "DewfordTown_Hall_Text_TrendWeighsHeavilyOnMind": [
+      "That is how oral memory works.\\p",
+      "A phrase can live in habit\\n",
+      "before anyone writes it down.$"
+    ],
+    "DewfordTown_Hall_Text_IfWeTeamUpWellBeInvincible": [
+      "You hear one. I hear one too.\\p",
+      "Together we miss less.$"
+    ],
+    "DewfordTown_Hall_Text_WellBeTrendDuo": [
+      "Then we're a two-person archive!\\p",
+      "Temporary, but useful.$"
+    ],
+    "DewfordTown_Hall_Text_GiveYouSludgeBomb": [
+      "I clear toxic sludge from coves.\\p",
+      "SLUDGE BOMB is useful work.\\p",
+      "You don't know it? Take this TM.$"
+    ],
+    "DewfordTown_Hall_Text_LoveSludgeBombButTrendInToo": [
+      "SLUDGE BOMB still does the job.\\p",
+      "So does listening when someone\\n",
+      "brings a new {STR_VAR_1}.$"
+    ]
+  }
+}

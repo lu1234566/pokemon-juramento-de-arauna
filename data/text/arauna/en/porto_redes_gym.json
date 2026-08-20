@@ -1,0 +1,145 @@
+{
+  "gym": {
+    "DewfordTown_Gym_Text_GymGuideAdvice": [
+      "Welcome to PORTO DAS REDES GYM.\\p",
+      "ADEMAR trains FIGHTING POKéMON.\\p",
+      "NORMAL types struggle here.\\p",
+      "This room starts almost dark.\\p",
+      "Beat the TRAINERS and more of\\n",
+      "the floor will come into view.\\p",
+      "Don't rush what you can't see.$"
+    ],
+    "DewfordTown_Gym_Text_GymGuidePostVictory": [
+      "Now the whole room is bright.\\p",
+      "You earned every step of it.$"
+    ],
+    "DewfordTown_Gym_Text_TakaoIntro": [
+      "Power matters.\\p",
+      "Let's see what yours is for.$"
+    ],
+    "DewfordTown_Gym_Text_TakaoDefeat": [
+      "Power without timing slips.$"
+    ],
+    "DewfordTown_Gym_Text_TakaoPostBattle": [
+      "You didn't just push harder.\\p",
+      "You chose when to move.$"
+    ],
+    "DewfordTown_Gym_Text_JocelynIntro": [
+      "You won't reach ADEMAR\\n",
+      "by charging through me.$"
+    ],
+    "DewfordTown_Gym_Text_JocelynDefeat": [
+      "I lost my footing.$"
+    ],
+    "DewfordTown_Gym_Text_JocelynPostBattle": [
+      "A loss is still information.\\p",
+      "I'll train with it instead of\\n",
+      "pretending it never happened.$"
+    ],
+    "DewfordTown_Gym_Text_LauraIntro": [
+      "The dark makes you listen.\\p",
+      "What did you hear from my steps?$"
+    ],
+    "DewfordTown_Gym_Text_LauraDefeat": [
+      "You heard enough.$"
+    ],
+    "DewfordTown_Gym_Text_LauraPostBattle": [
+      "I used to hate this darkness.\\p",
+      "Now I know sight isn't the only\\n",
+      "way to read a battle.$"
+    ],
+    "DewfordTown_Gym_Text_LilithIntro": [
+      "Lost already?\\p",
+      "Then follow the sound.$"
+    ],
+    "DewfordTown_Gym_Text_LilithDefeat": [
+      "You found me first.$"
+    ],
+    "DewfordTown_Gym_Text_LilithPostBattle": [
+      "The entrance is behind you.\\p",
+      "ADEMAR is ahead. Your choice.$"
+    ],
+    "DewfordTown_Gym_Text_BrendenIntro": [
+      "On a boat, bad footing hurts.\\p",
+      "Let's test yours.$"
+    ],
+    "DewfordTown_Gym_Text_BrendenDefeat": [
+      "You stayed balanced.$"
+    ],
+    "DewfordTown_Gym_Text_BrendenPostBattle": [
+      "Good stance. Good patience.\\p",
+      "ADEMAR will notice both.$"
+    ],
+    "DewfordTown_Gym_Text_CristianIntro": [
+      "To pass, you go through me.$"
+    ],
+    "DewfordTown_Gym_Text_CristianDefeat": [
+      "Clean hit. No wasted motion.$"
+    ],
+    "DewfordTown_Gym_Text_CristianPostBattle": [
+      "Go on. The TIDE BADGE is ahead.$"
+    ],
+    "DewfordTown_Gym_Text_BrawlyIntro": [
+      "ADEMAR: You can't command tides.\\p",
+      "You learn its pull, choose your\\n",
+      "footing, and move with it.\\p",
+      "Strength isn't forcing the sea.\\p",
+      "Show me what returns in you.$"
+    ],
+    "DewfordTown_Gym_Text_BrawlyDefeat": [
+      "ADEMAR: You held your ground\\n",
+      "without trying to own the flow.$"
+    ],
+    "DewfordTown_Gym_Text_ReceivedKnuckleBadge": [
+      "{PLAYER} received the\\n",
+      "TIDE BADGE from ADEMAR.$"
+    ],
+    "DewfordTown_Gym_Text_KnuckleBadgeInfoTakeThis": [
+      "ADEMAR: With the TIDE BADGE,\\n",
+      "traded POKéMON to Lv. 30 obey.\\p",
+      "It also lets you use FLASH\\n",
+      "outside battle.\\p",
+      "Take this TM too.$"
+    ],
+    "DewfordTown_Gym_Text_ExplainBulkUp": [
+      "TM08 contains BULK UP.\\p",
+      "It raises ATTACK and DEFENSE.\\p",
+      "Build force without losing form.$"
+    ],
+    "DewfordTown_Gym_Text_RegisteredBrawly": [
+      "Registered GYM LEADER ADEMAR\\n",
+      "in the POKéNAV.$"
+    ],
+    "DewfordTown_Gym_Text_BrawlyPostBattle": [
+      "ADEMAR: The sea does not promise\\n",
+      "to return what it takes.\\p",
+      "That is why people here remember\\n",
+      "together instead of alone.$"
+    ],
+    "DewfordTown_Gym_Text_GymStatue": [
+      "PORTO DAS REDES POKéMON GYM$"
+    ],
+    "DewfordTown_Gym_Text_GymStatueCertified": [
+      "PORTO DAS REDES POKéMON GYM\\p",
+      "ADEMAR'S CERTIFIED TRAINERS:\\n",
+      "{PLAYER}$"
+    ],
+    "DewfordTown_Gym_Text_BrawlyPreRematch": [
+      "ADEMAR: Tides repeat.\\p",
+      "Battles don't. Show me what\\n",
+      "changed since last time.$"
+    ],
+    "DewfordTown_Gym_Text_BrawlyRematchDefeat": [
+      "ADEMAR: Different current.\\n",
+      "Same patience.$"
+    ],
+    "DewfordTown_Gym_Text_BrawlyPostRematch": [
+      "ADEMAR: Good. You adapted\\n",
+      "without erasing the first round.$"
+    ],
+    "DewfordTown_Gym_Text_BrawlyRematchNeedTwoMons": [
+      "ADEMAR: Bring at least two\\n",
+      "POKéMON for a rematch.$"
+    ]
+  }
+}
