@@ -83,6 +83,7 @@ overlay_files=(
     "data/maps/LavaridgeTown_Gym_1F/scripts.inc"
     "data/maps/Route113/scripts.inc"
     "data/maps/FallarborTown/scripts.inc"
+    "data/maps/FallarborTown_CozmosHouse/scripts.inc"
     "data/maps/Route114/scripts.inc"
     "data/maps/Route114_FossilManiacsTunnel/scripts.inc"
     "data/maps/PacifidlogTown/scripts.inc"
@@ -90,6 +91,8 @@ overlay_files=(
     "data/maps/Route119/scripts.inc"
     "data/maps/Route120/scripts.inc"
     "data/maps/Route121/scripts.inc"
+    "data/maps/Route128/scripts.inc"
+    "data/maps/FortreeCity_House3/scripts.inc"
     "data/maps/FortreeCity_PokemonCenter_1F/scripts.inc"
     "data/maps/LilycoveCity/scripts.inc"
     "data/maps/LilycoveCity_Harbor/scripts.inc"
@@ -105,6 +108,7 @@ overlay_files=(
     "data/maps/FortreeCity/scripts.inc"
     "data/maps/FortreeCity_Gym/scripts.inc"
     "data/maps/MeteorFalls_1F_1R/scripts.inc"
+    "data/maps/MeteorFalls_StevensCave/scripts.inc"
     "data/maps/MtPyre_1F/scripts.inc"
     "data/maps/MtPyre_2F/scripts.inc"
     "data/maps/MtPyre_3F/scripts.inc"
@@ -127,6 +131,8 @@ overlay_files=(
     "data/maps/SeafloorCavern_Room9/scripts.inc"
     "data/maps/SootopolisCity/scripts.inc"
     "data/maps/SootopolisCity_Gym_1F/scripts.inc"
+    "data/maps/SootopolisCity_House3/scripts.inc"
+    "data/maps/SootopolisCity_House5/scripts.inc"
     "data/maps/SkyPillar_Outside/scripts.inc"
     "data/maps/MossdeepCity/scripts.inc"
     "data/maps/MossdeepCity_Gym/scripts.inc"
@@ -211,6 +217,7 @@ python3 scripts/render_route120_bento_en.py --in-place
 python3 scripts/render_central_archive_en.py --in-place
 python3 scripts/render_route121_memorial_en.py --in-place
 python3 scripts/render_mboi_climax_en.py --in-place
+python3 scripts/render_route128_aftershock_en.py --in-place
 python3 scripts/render_aguas_mboi_en_checked.py --in-place
 python3 scripts/render_memorial_lower_floors_en.py --in-place
 python3 scripts/render_memorial_mid_floors_en.py --in-place
@@ -220,6 +227,7 @@ python3 scripts/render_missoes_ceu_ground_floor_en.py --in-place
 python3 scripts/render_missoes_ceu_confrontation_en.py --in-place
 python3 scripts/render_prism_spring_gyms_en.py --in-place
 python3 scripts/render_optional_story_gaps_en.py --in-place
+python3 scripts/render_optional_runtime_gaps_en.py --in-place
 python3 scripts/render_climax_finale_en.py --in-place
 python3 scripts/render_estrada_juramento_en.py --in-place
 python3 scripts/render_casa_maior_four_en.py --in-place
