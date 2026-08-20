@@ -68,6 +68,7 @@ overlay_files=(
     "data/maps/Route109/scripts.inc"
     "data/maps/Route111/scripts.inc"
     "data/maps/Route112/scripts.inc"
+    "data/maps/Route115/scripts.inc"
     "data/maps/Route116/scripts.inc"
     "data/maps/Route118/scripts.inc"
     "data/maps/RusturfTunnel/scripts.inc"
@@ -93,11 +94,13 @@ overlay_files=(
     "data/maps/Route117/scripts.inc"
     "data/maps/VerdanturfTown/scripts.inc"
     "data/maps/VerdanturfTown_WandasHouse/scripts.inc"
+    "data/maps/VerdanturfTown_BattleTentLobby/scripts.inc"
     "data/maps/LavaridgeTown/scripts.inc"
     "data/maps/LavaridgeTown_Gym_1F/scripts.inc"
     "data/maps/Route113/scripts.inc"
     "data/maps/FallarborTown/scripts.inc"
     "data/maps/FallarborTown_CozmosHouse/scripts.inc"
+    "data/maps/FallarborTown_BattleTentLobby/scripts.inc"
     "data/maps/Route114/scripts.inc"
     "data/maps/Route114_FossilManiacsTunnel/scripts.inc"
     "data/maps/PacifidlogTown/scripts.inc"
@@ -114,6 +117,7 @@ overlay_files=(
     "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc"
     "data/maps/SlateportCity/scripts.inc"
     "data/maps/SlateportCity_Harbor/scripts.inc"
+    "data/maps/SlateportCity_House/scripts.inc"
     "data/maps/SlateportCity_OceanicMuseum_1F/scripts.inc"
     "data/maps/SlateportCity_OceanicMuseum_2F/scripts.inc"
     "data/maps/SlateportCity_SternsShipyard_1F/scripts.inc"
@@ -225,9 +229,11 @@ python3 scripts/render_early_sea_route_en.py --in-place
 python3 scripts/render_route110_encruzilhada_en.py --in-place
 python3 scripts/render_trial_house_identity_en.py --in-place
 python3 scripts/render_midgame_route_identity_en.py --in-place
+python3 scripts/render_route_service_residue_en.py --in-place
 python3 scripts/render_vale_silencio_en.py --in-place
 python3 scripts/render_sertao_nara_en.py --in-place
 python3 scripts/render_secondary_towns_en.py --in-place
+python3 scripts/render_battle_tents_identity_en.py --in-place
 python3 scripts/render_petalburg_woods_surface.py --in-place
 python3 scripts/render_route119_ciro_surface_en.py --in-place
 python3 scripts/render_baia_luzes_ciro_en.py --in-place
