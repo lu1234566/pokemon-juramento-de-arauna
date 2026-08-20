@@ -20,51 +20,51 @@ SIDNEY = "data/maps/EverGrandeCity_SidneysRoom/scripts.inc"
 add(SIDNEY, "EverGrandeCity_SidneysRoom_Text_IntroSpeech",
     "SIDNEY: Welcome to CASA MAIOR.\\p",
     "Darkness does not make a choice\\n", "wrong by itself.\\p",
-    "What matters is what you do when\\n", "nobody can excuse it for you.\\p",
-    "Show me what your road made of you.$")
+    "What matters is what you do\\n", "when no one can excuse it.\\p",
+    "Show me what your road made.$")
 add(SIDNEY, "EverGrandeCity_SidneysRoom_Text_Defeat",
     "SIDNEY: Good.\\p",
-    "You did not hide behind your past.$")
+    "You did not hide in the past.$")
 add(SIDNEY, "EverGrandeCity_SidneysRoom_Text_PostBattleSpeech",
     "SIDNEY: Go on.\\p",
-    "The next room asks a different\\n", "question.$")
+    "The next room asks a\\n", "different question.$")
 
 PHOEBE = "data/maps/EverGrandeCity_PhoebesRoom/scripts.inc"
 add(PHOEBE, "EverGrandeCity_PhoebesRoom_Text_IntroSpeech",
-    "PHOEBE: I listen to what remains.\\p",
+    "PHOEBE: I hear what remains.\\p",
     "A memory can guide the living.\\p",
-    "It should never become a cage for\\n", "them.\\p",
-    "Let me see how your BONDS answer.$")
+    "It must not become a cage\\n", "for them.\\p",
+    "Show me how your BONDS answer.$")
 add(PHOEBE, "EverGrandeCity_PhoebesRoom_Text_Defeat",
     "PHOEBE: Your BONDS stayed alive.\\p",
     "That is why I lost.$")
 add(PHOEBE, "EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech",
-    "PHOEBE: Remember without freezing\\n", "the people you remember.\\p",
+    "PHOEBE: Remember without\\n", "freezing the people you recall.\\p",
     "Go on.$")
 
 GLACIA = "data/maps/EverGrandeCity_GlaciasRoom/scripts.inc"
 add(GLACIA, "EverGrandeCity_GlaciasRoom_Text_IntroSpeech",
-    "GLACIA: Preservation is tempting.\\p",
+    "GLACIA: Keeping tempts us.\\p",
     "Ice can keep a shape unchanged.\\p",
-    "But a life that cannot change is\\n", "not truly being protected.\\p",
+    "But life must still be able\\n", "to change.\\p",
     "Show me what you chose to carry.$")
 add(GLACIA, "EverGrandeCity_GlaciasRoom_Text_Defeat",
-    "GLACIA: You changed under pressure\\n", "without losing yourself.$")
+    "GLACIA: Pressure changed you\\n", "without erasing who you are.$")
 add(GLACIA, "EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech",
-    "GLACIA: Do not confuse permanence\\n", "with care.\\p",
+    "GLACIA: Do not confuse\\n", "permanence with care.\\p",
     "The last member waits ahead.$")
 
 DRAKE = "data/maps/EverGrandeCity_DrakesRoom/scripts.inc"
 add(DRAKE, "EverGrandeCity_DrakesRoom_Text_IntroSpeech",
-    "DRAKE: Power makes choices heavier.\\p",
-    "POKéMON are partners, not proof of\\n", "a TRAINER's worth.\\p",
-    "If you understand that, show me.$")
+    "DRAKE: Power adds weight\\n", "to every choice.\\p",
+    "POKéMON are partners, not proof\\n", "of a TRAINER's worth.\\p",
+    "If you know that, show me.$")
 add(DRAKE, "EverGrandeCity_DrakesRoom_Text_Defeat",
     "DRAKE: You carried power well.$")
 add(DRAKE, "EverGrandeCity_DrakesRoom_Text_PostBattleSpeech",
-    "DRAKE: You are ready for AMALIA.\\p",
-    "Do not enter her room to erase the\\n", "road behind you.\\p",
-    "Enter it knowing what it taught.$")
+    "DRAKE: AMALIA waits ahead.\\p",
+    "Do not enter to erase\\n", "the road behind you.\\p",
+    "Enter knowing what it taught.$")
 
 PRESERVED = {
     SIDNEY: ("TRAINER_SIDNEY", "FLAG_DEFEATED_ELITE_4_SIDNEY", "VAR_ELITE_4_STATE"),
