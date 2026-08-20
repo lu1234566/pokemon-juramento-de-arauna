@@ -58,6 +58,10 @@ overlay_files=(
     "data/maps/VerdanturfTown_WandasHouse/scripts.inc"
     "data/maps/LavaridgeTown/scripts.inc"
     "data/maps/LavaridgeTown_Gym_1F/scripts.inc"
+    "data/maps/Route113/scripts.inc"
+    "data/maps/FallarborTown/scripts.inc"
+    "data/maps/Route114/scripts.inc"
+    "data/maps/PacifidlogTown/scripts.inc"
     "data/maps/PetalburgWoods/scripts.inc"
     "data/maps/Route119/scripts.inc"
     "data/maps/Route120/scripts.inc"
@@ -138,6 +142,7 @@ python3 scripts/render_serra_uivo_porto_redes_interiors_en.py --in-place
 python3 scripts/render_route110_encruzilhada_en.py --in-place
 python3 scripts/render_vale_silencio_en.py --in-place
 python3 scripts/render_sertao_nara_en.py --in-place
+python3 scripts/render_secondary_towns_en.py --in-place
 python3 scripts/render_petalburg_woods_surface.py --in-place
 python3 scripts/render_route119_ciro_surface_en.py --in-place
 python3 scripts/render_baia_luzes_ciro_en.py --in-place
