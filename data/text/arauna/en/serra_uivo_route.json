@@ -1,0 +1,99 @@
+{
+  "route116": {
+    "Route116_Text_ScoundrelMadeOffWithPeeko": [
+      "My WINGULL!\\p",
+      "The thief grabbed her as it fled\\n",
+      "toward the galleries.\\p",
+      "Please bring her back!$"
+    ],
+    "Route116_Text_WantToDigTunnel": [
+      "I want to reopen the galleries\\n",
+      "without hurting POKéMON inside.$"
+    ],
+    "Route116_Text_DiggingTunnelWhenGoonOrderedMeOut": [
+      "We stopped heavy drilling.\\p",
+      "POKéMON panic at deep vibration.\\p",
+      "Someone forced me out and went\\n",
+      "inside anyway.\\p",
+      "Whoever went in doesn't care.$"
+    ],
+    "Route116_Text_GoonHightailedItOutOfTunnel": [
+      "The intruder ran off.\\p",
+      "Now we can work without scaring\\n",
+      "the POKéMON.$"
+    ],
+    "Route116_Text_ThankYouTokenOfAppreciation": [
+      "You recovered our shipment and\\n",
+      "got it to PORTO DO SAL.\\p",
+      "The HARBOR ENGINEER confirmed.\\p",
+      "HORIZON made a new POKé BALL.\\p",
+      "It's thanks for the delivery.$"
+    ],
+    "Route116_Text_NewBallAvailableAtMart": [
+      "REPEAT BALL is now stocked in\\n",
+      "SERRA DO UIVO's MART.$"
+    ],
+    "Route116_Text_BagIsJamPacked": [
+      "Your BAG is full.\\p",
+      "No room for the REPEAT BALL.$"
+    ],
+    "Route116_Text_TokenOfAppreciation": [
+      "I still have your REPEAT BALL.\\p",
+      "It's thanks for the delivery.$"
+    ],
+    "Route116_Text_RouteSignRustboro": [
+      "ROUTE 116\\n",
+      "{LEFT_ARROW} SERRA DO UIVO$"
+    ],
+    "Route116_Text_RusturfTunnelSign": [
+      "GALERIAS DA SERRA\\p",
+      "HEAVY DRILLING SUSPENDED\\p",
+      "Protect the POKéMON inside.$"
+    ],
+    "Route116_Text_TunnelersRestHouse": [
+      "GALLERY WORKERS' REST HOUSE$"
+    ],
+    "Route116_Text_MayISeeThoseGlasses": [
+      "May I see those glasses?\\p",
+      "Maybe they're the pair I lost.$"
+    ]
+  },
+  "tunnel": {
+    "RusturfTunnel_Text_ComeAndGetSome": [
+      "Still coming after me?\\p",
+      "Fine. Come closer.$"
+    ],
+    "RusturfTunnel_Text_Peeko": [
+      "WINGULL: Pii pihyoh!$"
+    ],
+    "RusturfTunnel_Text_GruntIntro": [
+      "THIEF: Stop right there.\\p",
+      "Orders said take them and go.\\p",
+      "Nobody said a WINGULL would come\\n",
+      "after me.\\p",
+      "This was supposed to be quiet.\\p",
+      "Back off.$"
+    ],
+    "RusturfTunnel_Text_GruntDefeat": [
+      "THIEF: This job wasn't worth it.$"
+    ],
+    "RusturfTunnel_Text_GruntTakePackage": [
+      "THIEF: Fine. Take the parts.\\p",
+      "I was paid to stop HORIZON's\\n",
+      "shipment.\\p",
+      "I don't know who paid me.\\p",
+      "I never saw a face.$"
+    ],
+    "RusturfTunnel_Text_PeekoGladToSeeYouSafe": [
+      "There you are!\\p",
+      "I'm glad you're safe.$"
+    ],
+    "RusturfTunnel_Text_ThankYouLetsGoHomePeeko": [
+      "VETERAN SAILOR: Thank you.\\p",
+      "This WINGULL is family.\\p",
+      "If you need passage by sea,\\n",
+      "find my cottage near the coast.\\p",
+      "Come on. We're going home.$"
+    ]
+  }
+}

@@ -37,6 +37,21 @@ overlay_files=(
     "data/maps/LittlerootTown_MaysHouse_2F/scripts.inc"
     "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc"
     "data/maps/PetalburgWoods/scripts.inc"
+    "data/maps/RustboroCity/scripts.inc"
+    "data/maps/RustboroCity_Gym/scripts.inc"
+    "data/maps/RustboroCity_DevonCorp_1F/scripts.inc"
+    "data/maps/RustboroCity_DevonCorp_2F/scripts.inc"
+    "data/maps/RustboroCity_DevonCorp_3F/scripts.inc"
+    "data/maps/Route116/scripts.inc"
+    "data/maps/RusturfTunnel/scripts.inc"
+    "data/maps/RustboroCity_PokemonSchool/scripts.inc"
+    "data/maps/RustboroCity_CuttersHouse/scripts.inc"
+    "data/maps/RustboroCity_Mart/scripts.inc"
+    "data/maps/RustboroCity_Flat2_1F/scripts.inc"
+    "data/maps/RustboroCity_Flat2_2F/scripts.inc"
+    "data/maps/RustboroCity_Flat2_3F/scripts.inc"
+    "data/maps/RustboroCity_House2/scripts.inc"
+    "data/maps/RustboroCity_Flat1_2F/scripts.inc"
     "data/maps/Route119/scripts.inc"
     "data/maps/Route120/scripts.inc"
     "data/maps/Route121/scripts.inc"
@@ -104,6 +119,7 @@ python3 scripts/render_pampa_elias_gym_core_en_checked.py --in-place
 python3 scripts/render_pampa_gym_rooms_en_checked.py --in-place
 python3 scripts/render_val_house_en_checked.py --in-place
 python3 scripts/render_petalburg_woods_surface.py --in-place
+python3 scripts/render_serra_uivo_story_en_checked.py --in-place
 python3 scripts/render_route119_ciro_surface_en.py --in-place
 python3 scripts/render_baia_luzes_ciro_en.py --in-place
 python3 scripts/render_baia_luzes_surface_en_checked.py --in-place

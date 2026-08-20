@@ -1,0 +1,68 @@
+{
+  "school": {
+    "RustboroCity_PokemonSchool_Text_ScottMetAlreadyCut": [
+      "BENTO: We met in PAMPA DA\\n",
+      "ESPERA, didn't we?\\p",
+      "I keep notes on strong TRAINERS\\n",
+      "and stranger field reports.\\p",
+      "Someone in this city can teach\\n",
+      "CUT. It may help on the road.$"
+    ],
+    "RustboroCity_PokemonSchool_Text_StudentTalentLevelUnknown": [
+      "BENTO: Talent is hard to measure\\n",
+      "from a desk.\\p",
+      "I prefer watching choices.$"
+    ],
+    "RustboroCity_PokemonSchool_Text_ScottStoneBadge": [
+      "BENTO: That's a RIFT BADGE.\\p",
+      "DALVA made you work for it.\\p",
+      "A BADGE shows a result.\\p",
+      "I still want to see your calls.$"
+    ],
+    "RustboroCity_PokemonSchool_Text_ScottMetAlreadyStoneBadge": [
+      "BENTO: We met in PAMPA DA\\n",
+      "ESPERA, didn't we?\\p",
+      "That's a RIFT BADGE.\\p",
+      "DALVA made you work for it.\\p",
+      "A BADGE shows a result.\\p",
+      "I still want to see your calls.$"
+    ]
+  },
+  "cut": {
+    "RustboroCity_CuttersHouse_Text_YouCanPutThisHMToGoodUse": [
+      "You look ready for fieldwork.\\p",
+      "Take this HM.\\p",
+      "CUT clears thin trees when your\\n",
+      "POKéMON can use it safely.$"
+    ],
+    "RustboroCity_CuttersHouse_Text_ExplainCut": [
+      "That HM contains CUT.\\p",
+      "A POKéMON can use it outside\\n",
+      "battle after the RIFT BADGE.\\p",
+      "HMs can be used many times.$"
+    ],
+    "RustboroCity_CuttersHouse_Text_DadHelpedClearLandOfTrees": [
+      "My dad helped open old paths\\n",
+      "around SERRA DO UIVO.\\p",
+      "He used CUT instead of heavy\\n",
+      "machines near POKéMON nests.$"
+    ]
+  },
+  "mart": {
+    "RustboroCity_Mart_Text_BuyingHealsInCaseOfShroomish": [
+      "I'm taking PARLYZ HEAL and\\n",
+      "ANTIDOTE.\\p",
+      "The nearby forest can be rough.$"
+    ],
+    "RustboroCity_Mart_Text_ShouldBuySuperPotionsInstead": [
+      "My POKéMON evolved.\\p",
+      "It has much more HP now.\\p",
+      "I'm switching to SUPER POTIONS.$"
+    ],
+    "RustboroCity_Mart_Text_GettingEscapeRopeJustInCase": [
+      "I'm taking an ESCAPE ROPE.\\p",
+      "The galleries are easy to get\\n",
+      "turned around in.$"
+    ]
+  }
+}

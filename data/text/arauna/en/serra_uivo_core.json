@@ -1,0 +1,349 @@
+{
+  "city": {
+    "RustboroCity_Text_WeShortenItToDevon": [
+      "HORIZON runs the technical\\n",
+      "center here in SERRA DO UIVO.\\p",
+      "It built roads and jobs.\\p",
+      "People still ask what its BOND\\n",
+      "machines are measuring.$"
+    ],
+    "RustboroCity_Text_SneakyLookingManWentAroundCorner": [
+      "Someone carrying HORIZON gear\\n",
+      "ran toward the east road.\\p",
+      "No uniform. No badge. Just ran.$"
+    ],
+    "RustboroCity_Text_HaveYouChallengedGym": [
+      "Have you challenged DALVA?\\p",
+      "She reads a battle the way she\\n",
+      "reads pressure in stone.$"
+    ],
+    "RustboroCity_Text_HeyThatsRustborosGymBadge": [
+      "That's SERRA DO UIVO's\\n",
+      "RIFT BADGE!\\p",
+      "DALVA does not hand those out\\n",
+      "for brute force alone.$"
+    ],
+    "RustboroCity_Text_YoureNewAroundHere": [
+      "You're new here, right?\\p",
+      "The TRAINER'S SCHOOL teaches\\n",
+      "battle basics and field notes.$"
+    ],
+    "RustboroCity_Text_GymLeaderIsntEasyWithFire": [
+      "DALVA's ROCK POKéMON are tough.\\p",
+      "My FIRE partner struggled until\\n",
+      "I stopped forcing bad matchups.$"
+    ],
+    "RustboroCity_Text_MrBrineyWalksInTheTunnel": [
+      "An old sailor walks near the\\n",
+      "GALERIAS DA SERRA.\\p",
+      "His WINGULL follows everywhere.$"
+    ],
+    "RustboroCity_Text_MrBrineyLovesPeeko": [
+      "That veteran sailor went back\\n",
+      "toward the coast.\\p",
+      "He treats that WINGULL like\\n",
+      "family.$"
+    ],
+    "RustboroCity_Text_WowYouHavePokemon": [
+      "You travel with POKéMON too!\\p",
+      "I want to see all of ARAUNA\\n",
+      "with a partner someday.$"
+    ],
+    "RustboroCity_Text_CatchRarePokemonIfIGoToSchool": [
+      "TRAINER'S SCHOOL\\p",
+      "Can studying really make me\\n",
+      "better at reading POKéMON?$"
+    ],
+    "RustboroCity_Text_PokemonCanChangeLookFromExp": [
+      "Some POKéMON change as they\\n",
+      "gain experience.\\p",
+      "Growth leaves visible marks.$"
+    ],
+    "RustboroCity_Text_PokemonChangeShape": [
+      "Evolution can change a POKéMON\\n",
+      "completely.\\p",
+      "I wonder what stays familiar.$"
+    ],
+    "RustboroCity_Text_TradePokemonGrowFast": [
+      "Traded POKéMON grow quickly.\\p",
+      "Without enough BADGES, though,\\n",
+      "they may ignore commands.$"
+    ],
+    "RustboroCity_Text_OutOfTheWay": [
+      "Move! I need the east road!$"
+    ],
+    "RustboroCity_Text_WaitDontTakeMyGoods": [
+      "Wait! Those OCEANIC PARTS are\\n",
+      "bound for PORTO DO SAL!$"
+    ],
+    "RustboroCity_Text_HelpMeIWasRobbed": [
+      "You helped me in the forest!\\p",
+      "Someone stole our OCEANIC PARTS\\n",
+      "and fled east.\\p",
+      "They are calibrated for the\\n",
+      "PORTO DO SAL project.\\p",
+      "Please recover them.$"
+    ],
+    "RustboroCity_Text_ShadyCharacterTookOffTowardsTunnel": [
+      "The thief ran toward GALERIAS DA\\n",
+      "SERRA.$"
+    ],
+    "RustboroCity_Text_YouGotItThankYou": [
+      "You recovered the OCEANIC PARTS!\\p",
+      "Thank you. Take this GREAT BALL\\n",
+      "with you.$"
+    ],
+    "RustboroCity_Text_YoureLoadedWithItems": [
+      "Your BAG is full.\\p",
+      "No room for this GREAT BALL.$"
+    ],
+    "RustboroCity_Text_PleaseComeWithMe": [
+      "HORIZON needs the parts logged.\\p",
+      "Please come with me.$"
+    ],
+    "RustboroCity_Text_MayHiLetsRegister": [
+      "CIRO: MATCH CALL works now.\\p",
+      "Register me.\\p",
+      "I want both our field readings.$"
+    ],
+    "RustboroCity_Text_RegisteredMay": [
+      "CIRO was registered in\\n",
+      "the POKéNAV.$"
+    ],
+    "RustboroCity_Text_MayPassedBrineyWantToBattle": [
+      "CIRO: HORIZON's sensors found\\n",
+      "something useful here.\\p",
+      "Let's see what our POKéMON say.$"
+    ],
+    "RustboroCity_Text_MayOhHaventRaisedPokemonEnough": [
+      "CIRO: Not now? Fine.\\p",
+      "Doubt isn't surrender.\\p",
+      "I'm taking coast readings next.$"
+    ],
+    "RustboroCity_Text_MayWantToBattle": [
+      "CIRO: Data is evidence.\\p",
+      "It is not a verdict.\\p",
+      "Let's test what we both learned.$"
+    ],
+    "RustboroCity_Text_MayImNotGoingToLose": [
+      "CIRO: If the model is wrong,\\n",
+      "we fix the model.\\p",
+      "We don't worship the error.$"
+    ],
+    "RustboroCity_Text_MayDefeat": [
+      "CIRO: I treated a reading like\\n",
+      "an answer. That's on me.$"
+    ],
+    "RustboroCity_Text_MayMrBrineyHint": [
+      "CIRO: The VETERAN SAILOR can\\n",
+      "reach PORTO DAS REDES.\\p",
+      "I'm taking another route.$"
+    ],
+    "RustboroCity_Text_BrendanHiLetsRegister": [
+      "CIRO: MATCH CALL works now.\\p",
+      "Register me.\\p",
+      "I want both our field readings.$"
+    ],
+    "RustboroCity_Text_RegisteredBrendan": [
+      "CIRO was registered in\\n",
+      "the POKéNAV.$"
+    ],
+    "RustboroCity_Text_BrendanPassedBrineyWantToBattle": [
+      "CIRO: HORIZON's sensors found\\n",
+      "something useful here.\\p",
+      "Let's see what our POKéMON say.$"
+    ],
+    "RustboroCity_Text_BrendanNoConfidenceInPokemon": [
+      "CIRO: Not now? Fine.\\p",
+      "Doubt isn't surrender.\\p",
+      "I'm taking coast readings next.$"
+    ],
+    "RustboroCity_Text_BrendanWantToBattle": [
+      "CIRO: Data is evidence.\\p",
+      "It is not a verdict.\\p",
+      "Let's test what we both learned.$"
+    ],
+    "RustboroCity_Text_BrendanIWontGoEasy": [
+      "CIRO: If the model is wrong,\\n",
+      "we fix the model.\\p",
+      "We don't worship the error.$"
+    ],
+    "RustboroCity_Text_BrendanDefeat": [
+      "CIRO: I treated a reading like\\n",
+      "an answer. That's on me.$"
+    ],
+    "RustboroCity_Text_BrendanMrBrineyHint": [
+      "CIRO: The VETERAN SAILOR can\\n",
+      "reach PORTO DAS REDES.\\p",
+      "I'm taking another route.$"
+    ],
+    "RustboroCity_Text_TunnelNearingCompletion": [
+      "GALERIAS DA SERRA\\p",
+      "HEAVY DRILLING SUSPENDED\\p",
+      "Deep vibration disturbs the\\n",
+      "POKéMON inside.$"
+    ],
+    "RustboroCity_Text_DevonCorpSign": [
+      "HORIZON\\p",
+      "SERRA DO UIVO\\n",
+      "TECHNICAL CENTER$"
+    ],
+    "RustboroCity_Text_GymSign": [
+      "SERRA DO UIVO GYM\\p",
+      "LEADER: DALVA\\p",
+      "Stone remembers pressure.$"
+    ],
+    "RustboroCity_Text_DevonCorpBranchOfficeSign": [
+      "HORIZON TECHNICAL CENTER\\p",
+      "AUTHORIZED ACCESS ONLY$"
+    ],
+    "RustboroCity_Text_CitySign": [
+      "SERRA DO UIVO\\p",
+      "Stone, industry and BOND work\\n",
+      "meet on the same mountain.$"
+    ],
+    "RustboroCity_Text_TrainersSchoolSign": [
+      "TRAINER'S SCHOOL\\p",
+      "Battle basics. Field notes.\\n",
+      "Care before certainty.$"
+    ],
+    "RustboroCity_Text_CuttersHouse": [
+      "FIELDWORKER'S HOUSE$"
+    ],
+    "RustboroCity_Text_DevelopedNewPokenavFeature": [
+      "I finished a POKéNAV feature\\n",
+      "for field contacts.\\p",
+      "May I update yours, {PLAYER}?$"
+    ],
+    "RustboroCity_Text_AddedMatchCallPleaseCallMrStone": [
+      "MATCH CALL is installed.\\p",
+      "Registered people can reach you\\n",
+      "from the field.\\p",
+      "Try calling OTACILIO.$"
+    ],
+    "RustboroCity_Text_PleaseSelectPokenav": [
+      "Please select the POKéNAV.$"
+    ],
+    "RustboroCity_Text_IdBetterGetBackToWork": [
+      "Good. The link works.\\p",
+      "I need to get back to work.$"
+    ],
+    "RustboroCity_Text_YouCanHave2On2Battle": [
+      "Two TRAINERS can challenge at\\n",
+      "the same time.\\p",
+      "Watch both partners, not just\\n",
+      "the strongest one.$"
+    ]
+  },
+  "gym": {
+    "RustboroCity_Gym_Text_GymGuideAdvice": [
+      "DALVA studies pressure, not\\n",
+      "just ROCK types.\\p",
+      "WATER and GRASS crack through.\\p",
+      "Read your partner before charts.$"
+    ],
+    "RustboroCity_Gym_Text_GymGuidePostVictory": [
+      "You did it!\\p",
+      "You adapted instead of forcing\\n",
+      "one answer.$"
+    ],
+    "RustboroCity_Gym_Text_JoshIntro": [
+      "DALVA taught us to watch what\\n",
+      "changes under pressure.$"
+    ],
+    "RustboroCity_Gym_Text_JoshDefeat": [
+      "You found the weak line.$"
+    ],
+    "RustboroCity_Gym_Text_JoshPostBattle": [
+      "A crack is information.\\p",
+      "What matters is what comes next.$"
+    ],
+    "RustboroCity_Gym_Text_TommyIntro": [
+      "DALVA taught us to watch what\\n",
+      "changes under pressure.$"
+    ],
+    "RustboroCity_Gym_Text_TommyDefeat": [
+      "You found the weak line.$"
+    ],
+    "RustboroCity_Gym_Text_TommyPostBattle": [
+      "A crack is information.\\p",
+      "What matters is what comes next.$"
+    ],
+    "RustboroCity_Gym_Text_MarcIntro": [
+      "DALVA taught us to watch what\\n",
+      "changes under pressure.$"
+    ],
+    "RustboroCity_Gym_Text_MarcDefeat": [
+      "You found the weak line.$"
+    ],
+    "RustboroCity_Gym_Text_MarcPostBattle": [
+      "A crack is information.\\p",
+      "What matters is what comes next.$"
+    ],
+    "RustboroCity_Gym_Text_RoxanneIntro": [
+      "DALVA: Welcome to SERRA DO UIVO.\\p",
+      "Stone survives by bearing force.\\p",
+      "People are not stone.\\p",
+      "A record can guide a choice.\\p",
+      "It cannot choose for us.\\p",
+      "Show me how you listen.$"
+    ],
+    "RustboroCity_Gym_Text_RoxanneDefeat": [
+      "DALVA: Good. You changed course\\n",
+      "when the battle changed.$"
+    ],
+    "RustboroCity_Gym_Text_ReceivedStoneBadge": [
+      "{PLAYER} received the\\n",
+      "RIFT BADGE from DALVA.$"
+    ],
+    "RustboroCity_Gym_Text_StoneBadgeInfoTakeThis": [
+      "DALVA: The RIFT BADGE lets your\\n",
+      "POKéMON use CUT in the field.\\p",
+      "Take this TM too.$"
+    ],
+    "RustboroCity_Gym_Text_ExplainRockTomb": [
+      "DALVA: TM39 is ROCK TOMB.\\p",
+      "It hits and lowers SPEED.\\p",
+      "Use pressure to create options.$"
+    ],
+    "RustboroCity_Gym_Text_RoxannePostBattle": [
+      "DALVA: HORIZON measures BONDS\\n",
+      "near the old quarries.\\p",
+      "Useful work can still cross a\\n",
+      "line. Watch where it does.$"
+    ],
+    "RustboroCity_Gym_Text_GymStatue": [
+      "SERRA DO UIVO GYM\\p",
+      "DALVA watches pressure move.$"
+    ],
+    "RustboroCity_Gym_Text_GymStatueCertified": [
+      "SERRA DO UIVO GYM\\p",
+      "CERTIFIED TRAINER: {PLAYER}$"
+    ],
+    "RustboroCity_Gym_Text_RoxanneRegisterCall": [
+      "DALVA: Register my MATCH CALL.\\p",
+      "Field notes improve when people\\n",
+      "compare what they saw.$"
+    ],
+    "RustboroCity_Gym_Text_RegisteredRoxanne": [
+      "DALVA was registered in\\n",
+      "the POKéNAV.$"
+    ],
+    "RustboroCity_Gym_Text_RoxannePreRematch": [
+      "DALVA: Ready to read the stone\\n",
+      "again?\\p",
+      "I won't repeat the old pattern.$"
+    ],
+    "RustboroCity_Gym_Text_RoxanneRematchDefeat": [
+      "DALVA: You adapted faster.$"
+    ],
+    "RustboroCity_Gym_Text_RoxannePostRematch": [
+      "DALVA: Keep listening before\\n",
+      "you decide what a mark means.$"
+    ],
+    "RustboroCity_Gym_Text_RoxanneRematchNeedTwoMons": [
+      "DALVA: Bring two POKéMON.\\p",
+      "A pattern needs comparison.$"
+    ]
+  }
+}

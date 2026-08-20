@@ -1,0 +1,215 @@
+{
+  "corp1": {
+    "RustboroCity_DevonCorp_1F_Text_WelcomeToDevonCorp": [
+      "Welcome to the HORIZON\\n",
+      "TECHNICAL CENTER.\\p",
+      "This floor is open to visitors.$"
+    ],
+    "RustboroCity_DevonCorp_1F_Text_StaffGotRobbed": [
+      "A field shipment was stolen.\\p",
+      "The OCEANIC PARTS were due in\\n",
+      "PORTO DO SAL.$"
+    ],
+    "RustboroCity_DevonCorp_1F_Text_ThoseShoesAreOurProduct": [
+      "Those RUNNING SHOES use our\\n",
+      "field sole design.\\p",
+      "Nice to see them outside a lab.$"
+    ],
+    "RustboroCity_DevonCorp_1F_Text_RobberWasntVeryBright": [
+      "The stolen parts are calibrated.\\p",
+      "Without their key, the thief\\n",
+      "can't use them safely.$"
+    ],
+    "RustboroCity_DevonCorp_1F_Text_SoundsLikeStolenGoodsRecovered": [
+      "OCEANIC PARTS recovered.\\p",
+      "PORTO DO SAL stays on schedule.$"
+    ],
+    "RustboroCity_DevonCorp_1F_Text_OnlyAuthorizedPeopleEnter": [
+      "Research floors require\\n",
+      "authorization.$"
+    ],
+    "RustboroCity_DevonCorp_1F_Text_HowCouldWeGetRobbed": [
+      "We logged every crate.\\p",
+      "We still failed to protect one.$"
+    ],
+    "RustboroCity_DevonCorp_1F_Text_YoureAlwaysWelcomeHere": [
+      "You're cleared to visit.\\p",
+      "Thanks for recovering the parts.$"
+    ],
+    "RustboroCity_DevonCorp_1F_Text_RocksMetalDisplay": [
+      "Quarry stone and metal samples\\n",
+      "fill the case.\\p",
+      "HORIZON began with roads, mines\\n",
+      "and rescue engineering.\\p",
+      "BOND research came much later.$"
+    ],
+    "RustboroCity_DevonCorp_1F_Text_ProductDisplay": [
+      "Field tools fill the case.\\p",
+      "Boot soles. POKé BALL parts.\\p",
+      "Survey gear. POKéNAV modules.\\p",
+      "Useful work built HORIZON's\\n",
+      "reputation before BOND research.$"
+    ]
+  },
+  "corp2": {
+    "RustboroCity_DevonCorp_2F_Text_DeviceForTalkingToPokemon": [
+      "We test signals POKéMON use to\\n",
+      "respond to familiar people.\\p",
+      "A strong BOND isn't permission\\n",
+      "to speak for them.$"
+    ],
+    "RustboroCity_DevonCorp_2F_Text_DevelopingNewBalls": [
+      "I'm testing new POKé BALLS.\\p",
+      "Field reliability comes first.$"
+    ],
+    "RustboroCity_DevonCorp_2F_Text_WeFinallyMadeNewBalls": [
+      "REPEAT BALL helps with species\\n",
+      "you already know.\\p",
+      "TIMER BALL improves as battle\\n",
+      "continues.\\p",
+      "Both are HORIZON field designs.$"
+    ],
+    "RustboroCity_DevonCorp_2F_Text_IMadePokenav": [
+      "I helped build the POKéNAV.\\p",
+      "OTACILIO wanted field tools that\\n",
+      "kept people connected.$"
+    ],
+    "RustboroCity_DevonCorp_2F_Text_WowThatsAPokenav": [
+      "That's a POKéNAV.\\p",
+      "Its map and contact tools came\\n",
+      "before the BOND program.\\p",
+      "Good tools outlive bad uses.$"
+    ],
+    "RustboroCity_DevonCorp_2F_Text_DeviceToVisualizePokemonDreams": [
+      "Our dream imaging test worked.\\p",
+      "The consent protocol did not.\\p",
+      "So the project is paused.$"
+    ],
+    "RustboroCity_DevonCorp_2F_Text_DevelopDeviceToResurrectFossils": [
+      "My FOSSIL REGENERATOR may\\n",
+      "restore ancient POKéMON.\\p",
+      "This project is working.$"
+    ],
+    "RustboroCity_DevonCorp_2F_Text_WantToBringFossilBackToLife": [
+      "That's a POKéMON fossil.\\p",
+      "Want me to regenerate it here?$"
+    ],
+    "RustboroCity_DevonCorp_2F_Text_OhIsThatSo": [
+      "No problem.\\p",
+      "The fossil remains yours.$"
+    ],
+    "RustboroCity_DevonCorp_2F_Text_TwoFossilsPickOne": [
+      "You have two fossils.\\p",
+      "The machine handles one at a\\n",
+      "time.\\p",
+      "Which one should I regenerate?$"
+    ],
+    "RustboroCity_DevonCorp_2F_Text_HandedFossilToResearcher": [
+      "{PLAYER} handed over the\\n",
+      "{STR_VAR_1}.$"
+    ],
+    "RustboroCity_DevonCorp_2F_Text_FossilRegeneratorTakesTime": [
+      "Regeneration takes time.\\p",
+      "Walk around and come back later.$"
+    ],
+    "RustboroCity_DevonCorp_2F_Text_FossilizedMonBroughtBackToLife": [
+      "It's ready!\\p",
+      "The fossil became {STR_VAR_2}.$"
+    ],
+    "RustboroCity_DevonCorp_2F_Text_ReceivedMonFromResearcher": [
+      "{PLAYER} received {STR_VAR_2}\\n",
+      "from the researcher.$"
+    ],
+    "RustboroCity_DevonCorp_2F_Text_TooManyPokemon": [
+      "You don't have room for it now.$"
+    ],
+    "RustboroCity_DevonCorp_2F_Text_DevelopNewPokenavFeature": [
+      "I'm building POKéNAV field calls\\n",
+      "for registered contacts.$"
+    ],
+    "RustboroCity_DevonCorp_2F_Text_WhatToWorkOnNext": [
+      "What should I build next?\\p",
+      "Good engineering starts with the\\n",
+      "problem, not the prestige.$"
+    ]
+  },
+  "corp3": {
+    "RustboroCity_DevonCorp_3F_Text_MrStoneIHaveFavor": [
+      "OTACILIO: I'm Otacilio Meira.\\p",
+      "You recovered our OCEANIC PARTS.\\p",
+      "They still need to reach\\n",
+      "PORTO DO SAL.\\p",
+      "I need this LETTER delivered\\n",
+      "to SEU BENTO in PORTO DAS REDES.\\p",
+      "He sees what instruments miss.$"
+    ],
+    "RustboroCity_DevonCorp_3F_Text_MrStoneWantYouToHaveThis": [
+      "OTACILIO: A favor must not hide\\n",
+      "its cost.\\p",
+      "Take this for the road.$"
+    ],
+    "RustboroCity_DevonCorp_3F_Text_ReceivedPokenav": [
+      "{PLAYER} received a POKéNAV.$"
+    ],
+    "RustboroCity_DevonCorp_3F_Text_MrStoneExplainPokenavRestUp": [
+      "OTACILIO: POKéNAV maps ARAUNA\\n",
+      "and keeps field contacts.\\p",
+      "HORIZON works at a scale where\\n",
+      "mistakes become expensive.\\p",
+      "Urgency is not permission.\\p",
+      "Rest before you travel.$"
+    ],
+    "RustboroCity_DevonCorp_3F_Text_MrStoneGoWithCautionAndCare": [
+      "OTACILIO: Travel carefully,\\n",
+      "{PLAYER}.$"
+    ],
+    "RustboroCity_DevonCorp_3F_Text_CountingOnYou": [
+      "OTACILIO: I'm counting on you.$"
+    ],
+    "RustboroCity_DevonCorp_3F_Text_ThankYouForDeliveringLetter": [
+      "OTACILIO: BENTO got my LETTER.\\p",
+      "If he disagreed, keep his\\n",
+      "objections in your notes.\\p",
+      "Take this as thanks.$"
+    ],
+    "RustboroCity_DevonCorp_3F_Text_ExplainExpShare": [
+      "OTACILIO: EXP. SHARE can help\\n",
+      "a POKéMON gain EXP safely.\\p",
+      "It gains EXP without battling.\\p",
+      "Useful while a partner finds\\n",
+      "its footing.$"
+    ],
+    "RustboroCity_DevonCorp_3F_Text_NotFamiliarWithTrends": [
+      "OTACILIO: Institutions get old\\n",
+      "when habits go unquestioned.\\p",
+      "Young TRAINERS help with that.$"
+    ],
+    "RustboroCity_DevonCorp_3F_Text_ThisIs3rdFloorWaitHere": [
+      "HORIZON research floor.\\p",
+      "Thanks for recovering the parts.\\p",
+      "In PORTO DO SAL, take them to\\n",
+      "the HARBOR ENGINEER.\\p",
+      "OTACILIO also wants to see you.\\p",
+      "Wait here a moment.$"
+    ],
+    "RustboroCity_DevonCorp_3F_Text_WordWithPresidentComeWithMe": [
+      "DIRECTOR OTACILIO will see you.\\p",
+      "Please follow me.$"
+    ],
+    "RustboroCity_DevonCorp_3F_Text_PleaseGoAhead": [
+      "Go ahead.$"
+    ],
+    "RustboroCity_DevonCorp_3F_Text_VisitCaptSternShipyard": [
+      "In PORTO DO SAL, take parts to\\n",
+      "the HARBOR ENGINEER.$"
+    ],
+    "RustboroCity_DevonCorp_3F_Text_RepeatAndTimerHugelyPopular": [
+      "REPEAT BALL and TIMER BALL are\\n",
+      "doing well with field TRAINERS.$"
+    ],
+    "RustboroCity_DevonCorp_3F_Text_RareRocksDisplay": [
+      "Rare samples from SERRA DO UIVO.\\p",
+      "Each has a date and place.$"
+    ]
+  }
+}
