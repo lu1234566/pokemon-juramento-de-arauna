@@ -26,11 +26,13 @@ PORTUGUESE_MARKERS = re.compile(
 
 LEGACY_HOENN = re.compile(
     r"\b(?:"
-    r"RUSTBORO|DEWFORD|MAUVILLE|VERDANTURF|FALLARBOR|LAVARIDGE|"
+    r"HOENN|RUSTBORO|DEWFORD|MAUVILLE|VERDANTURF|FALLARBOR|LAVARIDGE|"
     r"FORTREE|LILYCOVE|MOSSDEEP|SOOTOPOLIS|PACIFIDLOG|EVER\s+GRANDE|"
     r"PETALBURG|SLATEPORT|LITTLEROOT|OLDALE|DEVON|"
     r"TEAM\s+AQUA|TEAM\s+MAGMA|ROXANNE|BRAWLY|WATTSON|FLANNERY|"
-    r"NORMAN|WINONA|JUAN|WALLACE|TATE\s*(?:&|AND)\s*LIZA"
+    r"NORMAN|WINONA|JUAN|WALLACE|TATE\s*(?:&|AND)\s*LIZA|"
+    r"TRICK\s+HOUSE|TRICK\s+MASTER|BATTLE\s+FRONTIER|FRONTIER\s+PASS|"
+    r"MR\.?\s+BRINEY|MR\.?\s+SCOTT|\bSCOTT\b"
     r")\b",
     re.IGNORECASE,
 )
@@ -59,21 +61,10 @@ def extract_renderers(build_text: str) -> list[str]:
     return renderers
 
 
-def iter_runtime_files() -> list[Path]:
-    files = sorted((ROOT / "data" / "maps").glob("**/scripts.inc"))
-    files.extend(
-        path
-        for path in (
-            ROOT / "src" / "strings.c",
-            ROOT / "src" / "data" / "trainers.h",
-            ROOT / "src" / "data" / "text" / "trainer_class_names.h",
-            ROOT / "data" / "text" / "berries.inc",
-            ROOT / "src" / "data" / "items.h",
-            ROOT / "src" / "data" / "text" / "item_descriptions.h",
-        )
-        if path.is_file()
-    )
-    return files
+def iter_runtime_files(overlays: list[str]) -> list[Path]:
+    files = set((ROOT / "data" / "maps").glob("**/scripts.inc"))
+    files.update(ROOT / rel for rel in overlays if (ROOT / rel).is_file())
+    return sorted(files)
 
 
 def visible_literals(path: Path, text: str):
@@ -84,15 +75,14 @@ def visible_literals(path: Path, text: str):
         yield line, literal
 
 
-def scan_runtime() -> list[tuple[str, int, str, str]]:
+def scan_runtime(overlays: list[str]) -> list[tuple[str, int, str, str]]:
     findings: list[tuple[str, int, str, str]] = []
-    for path in iter_runtime_files():
+    for path in iter_runtime_files(overlays):
         text = path.read_text(encoding="utf-8")
         rel = path.relative_to(ROOT).as_posix()
         for line, literal in visible_literals(path, text):
             for kind, regex in (("portuguese", PORTUGUESE_MARKERS), ("legacy-hoenn", LEGACY_HOENN)):
-                match = regex.search(literal)
-                if match:
+                if regex.search(literal):
                     findings.append((rel, line, kind, literal))
                     break
     return findings
@@ -127,17 +117,18 @@ def main() -> int:
         for rel in renderers:
             subprocess.run([sys.executable, rel, "--in-place"], cwd=ROOT, check=True)
 
-        findings = scan_runtime()
+        findings = scan_runtime(overlays)
         if findings:
             print(f"English build-surface audit: FAIL ({len(findings)} visible residue findings)")
             for rel, line, kind, literal in findings:
                 print(f"{rel}:{line}: [{kind}] {literal}")
             return 1
 
+        runtime_files = iter_runtime_files(overlays)
         print(
             "English build-surface audit: OK "
             f"({len(renderers)} renderers; {len(overlays)} transactional overlays; "
-            f"{len(iter_runtime_files())} runtime files scanned)."
+            f"{len(runtime_files)} runtime files scanned)."
         )
         return 0
     finally:
