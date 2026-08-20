@@ -48,7 +48,15 @@ def extract_overlay_files(build_text: str) -> list[str]:
     files = re.findall(r'^\s*"([^"]+)"\s*$', match.group("body"), re.MULTILINE)
     if not files:
         raise ValueError("overlay_files list is empty")
-    return files
+
+    # build_arauna.sh appends this glob dynamically. Mirror it here exactly so
+    # the audit can never leave rendered Battle Circuit maps behind.
+    frontier_files = sorted(
+        path.relative_to(ROOT).as_posix()
+        for path in (ROOT / "data" / "maps").glob("BattleFrontier_*/scripts.inc")
+        if path.is_file()
+    )
+    return list(dict.fromkeys(files + frontier_files))
 
 
 def extract_renderers(build_text: str) -> list[str]:
