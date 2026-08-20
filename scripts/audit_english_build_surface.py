@@ -19,7 +19,8 @@ PORTUGUESE_MARKERS = re.compile(
     r"horizonte|lembrante|lembrantes|desencanto|vinculo|vinculos|"
     r"memoria|memorias|lembranca|lembrancas|familia|familias|"
     r"chegamos|obrigado|bem-vindo|cabine|derrotou|venceu|perdeu|"
-    r"arquivo\s+vivo|pontos\s+de\s+batalha"
+    r"arquivo\s+vivo|pontos\s+de\s+batalha|sensores\s+registram|"
+    r"correntes\s+antigas|nome\s+some|da\s+boca\s+das\s+pessoas"
     r")\b",
     re.IGNORECASE,
 )
@@ -29,8 +30,13 @@ LEGACY_HOENN = re.compile(
     r"HOENN|RUSTBORO|DEWFORD|MAUVILLE|VERDANTURF|FALLARBOR|LAVARIDGE|"
     r"FORTREE|LILYCOVE|MOSSDEEP|SOOTOPOLIS|PACIFIDLOG|EVER\s+GRANDE|"
     r"PETALBURG|SLATEPORT|LITTLEROOT|OLDALE|DEVON|"
+    r"PETALBURG\s+WOODS|RUSTURF\s+TUNNEL|GRANITE\s+CAVE|MT\.?\s+CHIMNEY|"
+    r"FIERY\s+PATH|JAGGED\s+PASS|METEOR\s+FALLS|MT\.?\s+PYRE|"
+    r"SEAFLOOR\s+CAVERN|SKY\s+PILLAR|NEW\s+MAUVILLE|ABANDONED\s+SHIP|"
+    r"MAGMA\s+HIDEOUT|AQUA\s+HIDEOUT|"
     r"TEAM\s+AQUA|TEAM\s+MAGMA|ROXANNE|BRAWLY|WATTSON|FLANNERY|"
     r"NORMAN|WINONA|JUAN|WALLACE|TATE\s*(?:&|AND)\s*LIZA|"
+    r"BIRCH|BRENDAN|\bMAY\b|WALLY|STEVEN|ARCHIE|MAXIE|"
     r"TRICK\s+HOUSE|TRICK\s+MASTER|BATTLE\s+FRONTIER|FRONTIER\s+PASS|"
     r"FRONTIER\s+BRAIN|MR\.?\s+BRINEY|MR\.?\s+SCOTT|\bSCOTT\b"
     r")\b",
@@ -39,6 +45,7 @@ LEGACY_HOENN = re.compile(
 
 ASM_STRING = re.compile(r'^\s*\.string\s+"(?P<text>(?:\\.|[^"\\])*)"', re.MULTILINE)
 C_STRING = re.compile(r'_\("(?P<text>(?:\\.|[^"\\])*)"\)')
+JSON_NAME = re.compile(r'"name"\s*:\s*"(?P<text>(?:\\.|[^"\\])*)"')
 
 SKIP_RUNTIME_PREFIXES = (
     "data/text/arauna/pt_br/",  # dormant historical bank; official selector cannot reach it
@@ -99,7 +106,15 @@ def iter_runtime_files(overlays: list[str]) -> list[Path]:
 
 
 def visible_literals(path: Path, text: str):
-    regex = ASM_STRING if path.suffix == ".inc" else C_STRING
+    if path.suffix == ".inc":
+        regex = ASM_STRING
+    elif path.suffix == ".json":
+        # Region-map names are displayed directly when opening the map or
+        # entering a map section. Only inspect the user-facing name values,
+        # never MAPSEC ids or other JSON structure.
+        regex = JSON_NAME
+    else:
+        regex = C_STRING
     for match in regex.finditer(text):
         literal = match.group("text")
         line = text.count("\n", 0, match.start()) + 1
@@ -121,7 +136,7 @@ def scan_runtime(overlays: list[str]) -> list[tuple[str, int, str, str]]:
 
 def main() -> int:
     parser = argparse.ArgumentParser(
-        description="Apply the official English render stack transactionally, scan all visible runtime strings, then restore the tree."
+        description="Apply the official English render stack transactionally, scan all visible runtime strings and map headers, then restore the tree."
     )
     parser.add_argument("--keep-rendered", action="store_true", help="Do not restore overlays after the audit (debug only).")
     args = parser.parse_args()
