@@ -31,6 +31,14 @@ REPLACEMENTS = (
     ("Trick House", "Trial House"),
 )
 
+# These sentinels are enough to prove the renderer did not rename the inherited
+# gameplay model. The visible words may change; map/event identifiers must not.
+INTERNAL_SENTINELS = {
+    "data/maps/Route110/scripts.inc": ("Route110_TrickHouse",),
+    "data/maps/Route110_TrickHouseEntrance/scripts.inc": ("TrickHouseEntrance",),
+    "data/maps/Route110_TrickHouseEnd/scripts.inc": ("TrickHouseEnd",),
+}
+
 
 def render_one(source: str) -> tuple[str, int]:
     out = source
@@ -49,9 +57,11 @@ def validate_tree(texts: dict[str, str]) -> None:
         for token in forbidden:
             if token in text:
                 raise ValueError(f"{rel}: visible legacy Trial House token survived: {token}")
-        # Internal identifiers must remain Emerald-compatible.
-        if "TrickHouse" not in text and "trick_house" not in rel and rel != "src/landmark.c" and rel != "data/text/trainers.inc":
-            raise ValueError(f"{rel}: expected internal TrickHouse identity disappeared")
+    for rel, sentinels in INTERNAL_SENTINELS.items():
+        text = texts[rel]
+        for token in sentinels:
+            if token not in text:
+                raise ValueError(f"{rel}: inherited gameplay identifier disappeared: {token}")
 
 
 def main() -> int:
