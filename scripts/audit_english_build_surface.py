@@ -32,13 +32,17 @@ LEGACY_HOENN = re.compile(
     r"TEAM\s+AQUA|TEAM\s+MAGMA|ROXANNE|BRAWLY|WATTSON|FLANNERY|"
     r"NORMAN|WINONA|JUAN|WALLACE|TATE\s*(?:&|AND)\s*LIZA|"
     r"TRICK\s+HOUSE|TRICK\s+MASTER|BATTLE\s+FRONTIER|FRONTIER\s+PASS|"
-    r"MR\.?\s+BRINEY|MR\.?\s+SCOTT|\bSCOTT\b"
+    r"FRONTIER\s+BRAIN|MR\.?\s+BRINEY|MR\.?\s+SCOTT|\bSCOTT\b"
     r")\b",
     re.IGNORECASE,
 )
 
 ASM_STRING = re.compile(r'^\s*\.string\s+"(?P<text>(?:\\.|[^"\\])*)"', re.MULTILINE)
 C_STRING = re.compile(r'_\("(?P<text>(?:\\.|[^"\\])*)"\)')
+
+SKIP_RUNTIME_PREFIXES = (
+    "data/text/arauna/pt_br/",  # dormant historical bank; official selector cannot reach it
+)
 
 
 def extract_overlay_files(build_text: str) -> list[str]:
@@ -69,9 +73,28 @@ def extract_renderers(build_text: str) -> list[str]:
     return renderers
 
 
+def is_runtime_candidate(path: Path) -> bool:
+    rel = path.relative_to(ROOT).as_posix()
+    return path.is_file() and not any(rel.startswith(prefix) for prefix in SKIP_RUNTIME_PREFIXES)
+
+
 def iter_runtime_files(overlays: list[str]) -> list[Path]:
-    files = set((ROOT / "data" / "maps").glob("**/scripts.inc"))
-    files.update(ROOT / rel for rel in overlays if (ROOT / rel).is_file())
+    # Match the old full residue auditor's coverage, but scan only literal text
+    # after the official English render stack has been applied.
+    files: set[Path] = set()
+    for glob in (
+        "data/maps/**/scripts.inc",
+        "data/text/**/*.inc",
+        "data/scripts/**/*.inc",
+        "src/**/*.c",
+        "src/**/*.h",
+    ):
+        files.update(path for path in ROOT.glob(glob) if is_runtime_candidate(path))
+    files.update(
+        ROOT / rel
+        for rel in overlays
+        if (ROOT / rel).is_file() and is_runtime_candidate(ROOT / rel)
+    )
     return sorted(files)
 
 
@@ -98,7 +121,7 @@ def scan_runtime(overlays: list[str]) -> list[tuple[str, int, str, str]]:
 
 def main() -> int:
     parser = argparse.ArgumentParser(
-        description="Apply the official English render stack transactionally, scan visible runtime strings, then restore the tree."
+        description="Apply the official English render stack transactionally, scan all visible runtime strings, then restore the tree."
     )
     parser.add_argument("--keep-rendered", action="store_true", help="Do not restore overlays after the audit (debug only).")
     args = parser.parse_args()
