@@ -117,6 +117,10 @@ overlay_files=(
     "data/maps/VictoryRoad_B1F/scripts.inc"
     "data/maps/VictoryRoad_B2F/scripts.inc"
     "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.inc"
+    "data/maps/EverGrandeCity_SidneysRoom/scripts.inc"
+    "data/maps/EverGrandeCity_PhoebesRoom/scripts.inc"
+    "data/maps/EverGrandeCity_GlaciasRoom/scripts.inc"
+    "data/maps/EverGrandeCity_DrakesRoom/scripts.inc"
     "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc"
     "data/maps/SSTidalCorridor/scripts.inc"
     "data/maps/BattleFrontier_ScottsHouse/scripts.inc"
@@ -181,6 +185,7 @@ python3 scripts/render_missoes_ceu_confrontation_en.py --in-place
 python3 scripts/render_prism_spring_gyms_en.py --in-place
 python3 scripts/render_climax_finale_en.py --in-place
 python3 scripts/render_estrada_juramento_en.py --in-place
+python3 scripts/render_casa_maior_four_en.py --in-place
 python3 scripts/render_postgame_misc_en.py --in-place
 python3 scripts/render_horizon_gaps_en.py --in-place
 python3 scripts/render_porto_sal_museum_people_en_checked.py --in-place
