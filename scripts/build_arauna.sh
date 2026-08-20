@@ -119,7 +119,7 @@ python3 scripts/render_pampa_elias_gym_core_en_checked.py --in-place
 python3 scripts/render_pampa_gym_rooms_en_checked.py --in-place
 python3 scripts/render_val_house_en_checked.py --in-place
 python3 scripts/render_petalburg_woods_surface.py --in-place
-python3 scripts/render_serra_uivo_story_en.py --in-place
+python3 scripts/render_serra_uivo_story_en_checked.py --in-place
 python3 scripts/render_route119_ciro_surface_en.py --in-place
 python3 scripts/render_baia_luzes_ciro_en.py --in-place
 python3 scripts/render_baia_luzes_surface_en_checked.py --in-place

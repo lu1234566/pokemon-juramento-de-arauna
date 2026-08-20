@@ -22,7 +22,7 @@ Serra do Uivo is the first place where the player can understand why HORIZON is 
 
 ## Coverage
 
-`scripts/render_serra_uivo_story_en.py` owns 153 visible blocks across 15 existing source files:
+`scripts/render_serra_uivo_story_en.py` owns the 153-entry authored table and `scripts/render_serra_uivo_story_en_checked.py` applies it through string-only boundaries across 15 existing source files:
 
 - Serra do Uivo exterior and CIRO encounter;
 - DALVA's Gym, first battle, badge, TM and Match Call surface;
@@ -37,7 +37,7 @@ The renderer also fixes the Route 116 glasses NPC, which previously displayed an
 
 ## Technical contract
 
-The renderer changes only labeled `.string` bodies.
+The checked renderer changes only consecutive `.string` lines under the 153 labeled text blocks; it cannot cross into comments, directives or executable script commands.
 
 It validates:
 
@@ -63,7 +63,7 @@ Preserved gameplay includes:
 
 ## Build integration
 
-The 15 source files join `scripts/build_arauna.sh`'s transactional backup/restore list. The renderer runs after the first HORIZON forest encounter and before the later Route 119 narrative pass.
+The 15 source files join `scripts/build_arauna.sh`'s transactional backup/restore list. The checked renderer runs after the first HORIZON forest encounter and before the later Route 119 narrative pass.
 
 Source files are restored when the build exits, including failure or interruption.
 
