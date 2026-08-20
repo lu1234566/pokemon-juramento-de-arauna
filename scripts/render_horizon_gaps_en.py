@@ -9,63 +9,63 @@ def add(p,l,*x): T.setdefault(p,{})[l]=x
 
 A1="data/maps/AquaHideout_1F/scripts.inc"
 add(A1,"AquaHideout_1F_Text_OurBossIsSnatchingSomething",
-    "HORIZON: The director left to obtain\\n","a key LIVING ARCHIVE component.\\p",
-    "Don't expect me to say where.$")
+    "HORIZON: The director left\\n","to get a LIVING ARCHIVE part.\\p",
+    "I won't say where.$")
 add(A1,"AquaHideout_1F_Text_WhereMightMagmaHideoutBe",
-    "HORIZON: The REMEMBRANCERS built a\\n","base near SERRA DA CINZA.\\p",
-    "LUZIA wants the records before we\\n","reach them.$")
+    "HORIZON: REMEMBRANCERS built\\n","a base near SERRA DA CINZA.\\p",
+    "LUZIA wants the records first.$")
 add(A1,"AquaHideout_1F_Text_BossWentToJackASubmarine",
     "HORIZON: OTACILIO went to\\n","PORTO DO SAL.\\p",
-    "The submersible can reach the caves\\n","of M'BOI.$")
+    "The submersible can reach\\n","the caves of M'BOI.$")
 add(A1,"AquaHideout_1F_Text_BossIsOnRoute122",
-    "HORIZON: OTACILIO went to\\n","MEMORIAL DOS NOMES on ROUTE 122.\\p",
-    "He wants the records kept there.$")
+    "HORIZON: OTACILIO went to\\n","MEMORIAL DOS NOMES.\\p",
+    "He wants the records there.$")
 add(A1,"AquaHideout_1F_Text_TeamMagmaAtMtChimney",
-    "HORIZON: The REMEMBRANCERS are at\\n","SERRA DA CINZA.\\p",
-    "They say LUZIA plans to return\\n","memories taken by force.$")
+    "HORIZON: REMEMBRANCERS are\\n","at SERRA DA CINZA.\\p",
+    "They say LUZIA will return\\n","memories taken by force.$")
 add(A1,"AquaHideout_1F_Text_BossIsInSlateportCity",
-    "HORIZON: OTACILIO is in PORTO DO SAL.\\p",
-    "The public LIVING ARCHIVE demo starts\\n","there.$")
+    "HORIZON: OTACILIO is in\\n","PORTO DO SAL.\\p",
+    "The LIVING ARCHIVE demo\\n","starts there.$")
 add(A1,"AquaHideout_1F_Text_Grunt1Intro",
-    "HORIZON: Sensors detect unstable\\n","BONDS before full DISENCHANTMENT.\\p",
-    "That could save entire families.$")
+    "HORIZON: Sensors detect\\n","unstable BONDS early.\\p",
+    "That could save families.$")
 add(A1,"AquaHideout_1F_Text_Grunt1Defeat",
-    "HORIZON: The LIVING ARCHIVE does not\\n","erase people.\\p",
-    "It separates trauma from identity.\\p",
-    "At least, that is what we were taught.$")
+    "HORIZON: The LIVING ARCHIVE\\n","does not erase people.\\p",
+    "It separates trauma\\n","from identity.\\p",
+    "That is what we were taught.$")
 add(A1,"AquaHideout_1F_Text_Grunt1PostBattle",
-    "HORIZON: Sensors detect unstable\\n","BONDS before full DISENCHANTMENT.\\p",
-    "That could save entire families.$")
+    "HORIZON: Sensors detect\\n","unstable BONDS early.\\p",
+    "That could save families.$")
 
 F1="data/maps/RustboroCity_Flat2_1F/scripts.inc"
 add(F1,"RustboroCity_Flat2_1F_Text_DevonWorkersLiveHere",
-    "Many HORIZON CONSORTIUM employees\\n","live in this building.$")
+    "HORIZON workers live here.$")
 
 F2="data/maps/RustboroCity_Flat2_2F/scripts.inc"
 add(F2,"RustboroCity_Flat2_2F_Text_DevonWasTinyInOldDays",
-    "The HORIZON CONSORTIUM began as a\\n","very small project.$")
+    "HORIZON began as a small\\n","field project.$")
 add(F2,"RustboroCity_Flat2_2F_Text_MyDaddyMadeThisYouCanHaveIt",
     "My dad works for HORIZON.\\p",
-    "He helped make this! I don't use it,\\n","so you can have it.$")
+    "He helped make this!\\n","I don't use it. Take it.$")
 add(F2,"RustboroCity_Flat2_2F_Text_GoingToWorkAtDevonToo",
     "My dad works for HORIZON.\\p",
-    "When I grow up, I want to do field\\n","research too.$")
+    "I want to do field research\\n","when I grow up.$")
 
 F3="data/maps/RustboroCity_Flat2_3F/scripts.inc"
 add(F3,"RustboroCity_Flat2_3F_Text_PresidentCollectsRareStones",
-    "HORIZON leadership keeps rare samples\\n","collected from the mountain.$")
+    "HORIZON keeps rare samples\\n","from the mountain.$")
 add(F3,"RustboroCity_Flat2_3F_Text_PresidentsSonAlsoCollectsRareStones",
-    "Many people here collect stones and\\n","minerals from field work.$")
+    "People here collect stones\\n","and field minerals.$")
 
 MOTEL="data/maps/LilycoveCity_CoveLilyMotel_1F/scripts.inc"
 add(MOTEL,"LilycoveCity_CoveLilyMotel_1F_Text_NoGuestsWithTeamAqua",
-    "Oh, sorry! I was watching TV.\\p",
-    "Since the HORIZON CONSORTIUM came to\\n","town, tourists have stayed away.$")
+    "Sorry! I was watching TV.\\p",
+    "Since HORIZON came to town,\\n","tourists have stayed away.$")
 add(MOTEL,"LilycoveCity_CoveLilyMotel_1F_Text_HeardAquaHideoutBusted",
-    "Oh, sorry! I was watching TV.\\p",
-    "I heard someone broke into the\\n","HORIZON hideout.\\p",
-    "Now a large group booked rooms.\\p",
-    "They called themselves GAME FREAK.$")
+    "Sorry! I was watching TV.\\p",
+    "Someone broke into the\\n","HORIZON hideout.\\p",
+    "A big group booked rooms.\\p",
+    "They call themselves GAME FREAK.$")
 
 P={
  A1:("TRAINER_GRUNT_AQUA_HIDEOUT_1","FLAG_GROUDON_AWAKENED_MAGMA_HIDEOUT","FLAG_RECEIVED_RED_OR_BLUE_ORB"),
