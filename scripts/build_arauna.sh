@@ -23,8 +23,12 @@ fi
 # are re-enabled individually after their output has been reviewed.
 overlay_files=(
     "src/strings.c"
+    "src/landmark.c"
     "src/data/trainers.h"
     "src/data/text/trainer_class_names.h"
+    "data/text/trainers.inc"
+    "data/text/trick_house_mechadolls.inc"
+    "data/text/pokedex_rating.inc"
     "data/maps/LittlerootTown/scripts.inc"
     "data/maps/Route101/scripts.inc"
     "data/maps/Route102/scripts.inc"
@@ -56,6 +60,17 @@ overlay_files=(
     "data/maps/DewfordTown_House2/scripts.inc"
     "data/maps/GraniteCave_StevensRoom/scripts.inc"
     "data/maps/Route110/scripts.inc"
+    "data/maps/Route110_TrickHouseEntrance/scripts.inc"
+    "data/maps/Route110_TrickHouseCorridor/scripts.inc"
+    "data/maps/Route110_TrickHouseEnd/scripts.inc"
+    "data/maps/Route110_TrickHousePuzzle1/scripts.inc"
+    "data/maps/Route110_TrickHousePuzzle2/scripts.inc"
+    "data/maps/Route110_TrickHousePuzzle3/scripts.inc"
+    "data/maps/Route110_TrickHousePuzzle4/scripts.inc"
+    "data/maps/Route110_TrickHousePuzzle5/scripts.inc"
+    "data/maps/Route110_TrickHousePuzzle6/scripts.inc"
+    "data/maps/Route110_TrickHousePuzzle7/scripts.inc"
+    "data/maps/Route110_TrickHousePuzzle8/scripts.inc"
     "data/maps/MauvilleCity/scripts.inc"
     "data/maps/MauvilleCity_Gym/scripts.inc"
     "data/maps/Route117/scripts.inc"
@@ -123,6 +138,7 @@ overlay_files=(
     "data/maps/EverGrandeCity_DrakesRoom/scripts.inc"
     "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc"
     "data/maps/SSTidalCorridor/scripts.inc"
+    "data/maps/BattleFrontier_ReceptionGate/scripts.inc"
     "data/maps/BattleFrontier_ScottsHouse/scripts.inc"
     "data/text/berries.inc"
     "src/data/items.h"
@@ -148,10 +164,12 @@ trap 'exit 143' TERM
 
 python3 scripts/render_shared_trainer_names_en.py --in-place
 python3 scripts/render_trainer_class_names_en.py --in-place
+python3 scripts/render_system_ui_identity_en.py --in-place
 python3 scripts/render_arauna_frontier_ui_en.py --in-place
 python3 scripts/render_vila_amanhecer_route101_en_checked.py --in-place
 python3 scripts/render_vila_amanhecer_houses_en_checked.py --in-place
 python3 scripts/render_anahi_lab_en_checked.py --in-place
+python3 scripts/render_pokedex_rating_en.py --in-place
 python3 scripts/render_route103_ciro_en_checked.py --in-place
 python3 scripts/render_vila_da_passagem_en.py --in-place
 python3 scripts/render_route102_pampa_en_checked.py --in-place
@@ -161,6 +179,7 @@ python3 scripts/render_val_house_en_checked.py --in-place
 python3 scripts/render_serra_uivo_porto_redes_en.py --in-place
 python3 scripts/render_serra_uivo_porto_redes_interiors_en.py --in-place
 python3 scripts/render_route110_encruzilhada_en.py --in-place
+python3 scripts/render_trial_house_identity_en.py --in-place
 python3 scripts/render_vale_silencio_en.py --in-place
 python3 scripts/render_sertao_nara_en.py --in-place
 python3 scripts/render_secondary_towns_en.py --in-place
@@ -187,6 +206,7 @@ python3 scripts/render_climax_finale_en.py --in-place
 python3 scripts/render_estrada_juramento_en.py --in-place
 python3 scripts/render_casa_maior_four_en.py --in-place
 python3 scripts/render_postgame_misc_en.py --in-place
+python3 scripts/render_battle_circuit_reception_en.py --in-place
 python3 scripts/render_horizon_gaps_en.py --in-place
 python3 scripts/render_porto_sal_museum_people_en_checked.py --in-place
 python3 scripts/render_porto_sal_museum_science_en_checked.py --in-place
