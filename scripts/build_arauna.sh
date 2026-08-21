@@ -79,6 +79,8 @@ overlay_files=(
     "data/maps/SlateportCity_SternsShipyard_1F/scripts.inc"
     "data/maps/SlateportCity_SternsShipyard_2F/scripts.inc"
     "data/maps/MtChimney/scripts.inc"
+    "data/maps/LavaridgeTown/scripts.inc"
+    "data/maps/LavaridgeTown_Gym_1F/scripts.inc"
     "data/maps/FortreeCity/scripts.inc"
     "data/maps/FortreeCity_Gym/scripts.inc"
     "data/maps/MeteorFalls_1F_1R/scripts.inc"
@@ -141,6 +143,7 @@ python3 scripts/render_route119_ciro_surface_en.py --in-place
 python3 scripts/render_baia_luzes_ciro_en.py --in-place
 python3 scripts/render_baia_luzes_surface_en_checked.py --in-place
 python3 scripts/render_mt_chimney_surface.py --in-place
+python3 scripts/render_casa_da_cinza_nara_en_checked.py --in-place
 python3 scripts/render_mata_do_meio_lidia_en.py --in-place
 python3 scripts/render_ruins_memorial_en.py --in-place
 python3 scripts/render_route120_bento_en.py --in-place
