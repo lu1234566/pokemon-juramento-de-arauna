@@ -9,6 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 APPROVED_ENGLISH_RENDERERS = {'render_aguas_mboi_en_checked.py',
  'render_anahi_lab_en_checked.py',
  'render_baia_luzes_ciro_en.py',
+ 'render_baia_luzes_interiors_en_checked.py',
  'render_baia_luzes_surface_en_checked.py',
  'render_casa_da_cinza_nara_en_checked.py',
  'render_central_archive_en.py',
