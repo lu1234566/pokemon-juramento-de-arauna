@@ -1,0 +1,46 @@
+{
+  "Route118_Text_StevenQuestions": [
+    "SEU BENTO: Water opens roads.\\p",
+    "It also moves stories.\\p",
+    "When a name fades from speech,\\n",
+    "I write it down.\\p",
+    "Not to replace memory.\\n",
+    "To leave a trail back.$"
+  ],
+  "Route118_Text_YouAgreeGoodRodIsGood": [
+    "FISHER: A GOOD ROD is simple.\\p",
+    "Cast. Wait. Learn the water.\\p",
+    "Want one?$"
+  ],
+  "Route118_Text_IdenticalMindsTakeThis": [
+    "FISHER: Good answer. Take this.\\p",
+    "The river teaches patience.$"
+  ],
+  "Route118_Text_TryYourLuckFishing": [
+    "Try it anywhere the water\\n",
+    "looks alive.$"
+  ],
+  "Route118_Text_DontYouLikeToFish": [
+    "FISHER: Fair enough.\\p",
+    "The river will still be here.$"
+  ],
+  "Route118_Text_TryCatchingMonWithGoodRod": [
+    "FISHER: Use that GOOD ROD.\\p",
+    "Different water, new catches.$"
+  ],
+  "Route118_Text_CanCrossRiversWithSurf": [
+    "SURF turns this river from a\\n",
+    "border into a road.\\p",
+    "The water is still dangerous.\\n",
+    "A new path isn't a safe path.$"
+  ],
+  "Route118_Text_RouteSignMauville": [
+    "ROUTE 118\\n",
+    "{LEFT_ARROW} ENCRUZILHADA CENTRAL$"
+  ],
+  "Route118_Text_RouteSign119": [
+    "ROUTE 118\\n",
+    "{UP_ARROW} ROUTE 119\\n",
+    "TOWARD MATA DO MEIO$"
+  ]
+}
