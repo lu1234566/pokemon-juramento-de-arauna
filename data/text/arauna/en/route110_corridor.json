@@ -20,14 +20,14 @@
     "Route110_Text_MayLetsBattle": [
       "CIRO: PORTO DO SAL crossed a\\n",
       "line.\\p",
-      "Bad consent is bad fieldwork.\\p",
+      "No consent means bad fieldwork.\\p",
       "That doesn't make every reading\\n",
       "useless.\\p",
       "Show me what you learned.$"
     ],
     "Route110_Text_MayDefeated": [
       "CIRO: I can fix a bad model.\\p",
-      "I can't defend bad consent.$"
+      "I can't defend coercion.$"
     ],
     "Route110_Text_MayTakeThis": [
       "CIRO: I still believe HORIZON\\n",
@@ -44,14 +44,14 @@
     "Route110_Text_BrendanLetsBattle": [
       "CIRO: PORTO DO SAL crossed a\\n",
       "line.\\p",
-      "Bad consent is bad fieldwork.\\p",
+      "No consent means bad fieldwork.\\p",
       "That doesn't make every reading\\n",
       "useless.\\p",
       "Show me what you learned.$"
     ],
     "Route110_Text_BrendanDefeated": [
       "CIRO: I can fix a bad model.\\p",
-      "I can't defend bad consent.$"
+      "I can't defend coercion.$"
     ],
     "Route110_Text_BrendanTakeThis": [
       "CIRO: I still believe HORIZON\\n",
