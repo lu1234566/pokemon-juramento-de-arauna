@@ -4,12 +4,13 @@
 
 This pass completes the mandatory Lavaridge-facing surface as **CASA DA CINZA** after the already-active Serra da Cinza / Mt. Chimney conflict layer.
 
-It owns 58 text blocks:
+It owns 59 text blocks:
 
 - 19 in `data/maps/LavaridgeTown/scripts.inc`;
-- 39 in `data/maps/LavaridgeTown_Gym_1F/scripts.inc`.
+- 39 in `data/maps/LavaridgeTown_Gym_1F/scripts.inc`;
+- 1 route-sign block in `data/maps/MtChimney/scripts.inc`.
 
-The existing Mt. Chimney renderer is also tightened so its downhill route sign points to **CASA DA CINZA** rather than the older `SERTAO DE DENTRO` placeholder.
+The Casa da Cinza renderer runs after the existing Mt. Chimney surface renderer, so the downhill route sign finishes as **CASA DA CINZA** rather than the older `SERTAO DE DENTRO` placeholder. It can also render the clean vanilla sign directly.
 
 ## Casa da Cinza
 
@@ -57,7 +58,7 @@ No warps, map geometry, trainer teams, movement, triggers, save IDs or progressi
 `scripts/render_casa_da_cinza_nara_en_checked.py`:
 
 - reads one plain UTF-8 JSON bank;
-- requires exactly 19 town labels and 39 Gym labels;
+- requires exactly 19 town labels, 39 Gym labels and 1 ridge-sign label;
 - replaces only exact labeled text bodies;
 - supports historical assembler line continuations;
 - is idempotent;
@@ -74,9 +75,9 @@ Validated locally without GitHub Actions:
 
 - Python compile: PASS;
 - conservative text-width validation: PASS;
-- synthetic `--check -> --in-place -> --check`: 58/58 PASS;
+- synthetic `--check -> --in-place -> --check`: 59/59 PASS;
 - historical multiline `.string` continuation: PASS;
-- adjacent `.align 2` boundary sentinel: PASS;
+- adjacent `.align 2` boundary sentinels on all three target files: PASS;
 - Ciro gender-slot equality: PASS;
 - NARA / CASA DA CINZA / ASH BADGE identity requirements: PASS.
 
