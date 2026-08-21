@@ -73,6 +73,14 @@ overlay_files=(
     "data/maps/Route120/scripts.inc"
     "data/maps/Route121/scripts.inc"
     "data/maps/LilycoveCity/scripts.inc"
+    "data/maps/LilycoveCity_House1/scripts.inc"
+    "data/maps/LilycoveCity_House2/scripts.inc"
+    "data/maps/LilycoveCity_House3/scripts.inc"
+    "data/maps/LilycoveCity_House4/scripts.inc"
+    "data/maps/LilycoveCity_MoveDeletersHouse/scripts.inc"
+    "data/maps/LilycoveCity_CoveLilyMotel_1F/scripts.inc"
+    "data/maps/LilycoveCity_CoveLilyMotel_2F/scripts.inc"
+    "data/maps/LilycoveCity_PokemonCenter_1F/scripts.inc"
     "data/maps/SlateportCity/scripts.inc"
     "data/maps/SlateportCity_Harbor/scripts.inc"
     "data/maps/SlateportCity_OceanicMuseum_1F/scripts.inc"
@@ -152,6 +160,7 @@ python3 scripts/render_route118_surf_corridor_en_checked.py --in-place
 python3 scripts/render_route119_ciro_surface_en.py --in-place
 python3 scripts/render_baia_luzes_ciro_en.py --in-place
 python3 scripts/render_baia_luzes_surface_en_checked.py --in-place
+python3 scripts/render_baia_luzes_interiors_en_checked.py --in-place
 python3 scripts/render_mt_chimney_surface.py --in-place
 python3 scripts/render_casa_da_cinza_nara_en_checked.py --in-place
 python3 scripts/render_mata_do_meio_lidia_en.py --in-place

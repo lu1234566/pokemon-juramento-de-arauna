@@ -1,0 +1,253 @@
+{
+  "version": 1,
+  "surface": "baia_das_luzes_interiors",
+  "sections": {
+    "house1": {
+      "path": "data/maps/LilycoveCity_House1/scripts.inc",
+      "blocks": {
+        "LilycoveCity_House1_Text_PokemonPartnersNotTools": [
+          "People and POKéMON share here.\\p",
+          "Partners are not instruments.\\p",
+          "Good work begins with listening.$"
+        ],
+        "LilycoveCity_House1_Text_Kecleon": [
+          "KECLEON: Ruroro?$"
+        ]
+      }
+    },
+    "house2": {
+      "path": "data/maps/LilycoveCity_House2/scripts.inc",
+      "blocks": {
+        "LilycoveCity_House2_Text_NotAwakeYetHaveThis": [
+          "Huh...? Morning already?\\p",
+          "I kept this TM by the bed.\\p",
+          "Take it. I need REST more.$"
+        ],
+        "LilycoveCity_House2_Text_SleepIsEssential": [
+          "Rest is part of training too.\\p",
+          "A tired partner misses things a\\n",
+          "strong one would notice.$"
+        ]
+      }
+    },
+    "house3": {
+      "path": "data/maps/LilycoveCity_House3/scripts.inc",
+      "blocks": {
+        "LilycoveCity_House3_Text_LearnFromMasterOfPokeblocks": [
+          "Traveling with POKéMON?\\p",
+          "Then learn how {POKEBLOCK}S\\n",
+          "affect condition.\\p",
+          "Want the short version?$"
+        ],
+        "LilycoveCity_House3_Text_OhAreYouSure": [
+          "All right.\\p",
+          "Learning works better when you\\n",
+          "choose to hear it.$"
+        ],
+        "LilycoveCity_House3_Text_ExplainPokeblocks": [
+          "Low FEEL lets a POKéMON eat\\n",
+          "more {POKEBLOCK}S.\\p",
+          "High LEVEL raises condition.\\p",
+          "Different BERRIES make smoother\\n",
+          "{POKEBLOCK}S.\\p",
+          "More people blending together\\n",
+          "can improve the result.\\p",
+          "Watch what your partner likes.$"
+        ],
+        "LilycoveCity_House3_Text_HappyToHaveQuadruplets": [
+          "Four kids changed this house.\\p",
+          "It's loud, crowded, wonderful.$"
+        ],
+        "LilycoveCity_House3_Text_GoingToWinMultiBattles": [
+          "We're practicing MULTI BATTLES!\\p",
+          "Winning takes coordination.$"
+        ],
+        "LilycoveCity_House3_Text_LikeMixingAtRecordCorner": [
+          "We mixed records earlier.\\p",
+          "Seeing someone else's journey\\n",
+          "beside yours feels strange.$"
+        ],
+        "LilycoveCity_House3_Text_MakePokeblocksWithBerryBlender": [
+          "We're blending BERRIES!\\p",
+          "Everyone chose a different one.$"
+        ],
+        "LilycoveCity_House3_Text_GoingToEnterContest": [
+          "We're entering a CONTEST!\\p",
+          "Our POKéMON should enjoy it too.$"
+        ]
+      }
+    },
+    "house4": {
+      "path": "data/maps/LilycoveCity_House4/scripts.inc",
+      "blocks": {
+        "LilycoveCity_House4_Text_MysteriesAtBottomOfSea": [
+          "The sea keeps its own records.\\p",
+          "Currents bury wrecks, paths and\\n",
+          "things people stopped naming.$"
+        ],
+        "LilycoveCity_House4_Text_UnderwaterTrenchMossdeepSootopolis": [
+          "A deep trench links the waters\\n",
+          "near MISSOES DO CEU and M'BOI.\\p",
+          "Old currents run beneath it.$"
+        ]
+      }
+    },
+    "move": {
+      "path": "data/maps/LilycoveCity_MoveDeletersHouse/scripts.inc",
+      "blocks": {
+        "LilycoveCity_MoveDeletersHouse_Text_ICanMakeMonForgetMove": [
+          "I'm the MOVE DELETER.\\p",
+          "I can remove a POKéMON's move.\\p",
+          "Only with your clear choice.\\p",
+          "Choose a move to forget?$"
+        ],
+        "LilycoveCity_MoveDeletersHouse_Text_WhichMonShouldForget": [
+          "Which POKéMON should we review?$"
+        ],
+        "LilycoveCity_MoveDeletersHouse_Text_WhichMoveShouldBeForgotten": [
+          "Which move should be forgotten?$"
+        ],
+        "LilycoveCity_MoveDeletersHouse_Text_MonOnlyKnowsOneMove": [
+          "{STR_VAR_1} has one move.\\p",
+          "I won't erase its only option.$"
+        ],
+        "LilycoveCity_MoveDeletersHouse_Text_MonsMoveShouldBeForgotten": [
+          "{STR_VAR_1}\\n",
+          "Move: {STR_VAR_2}\\p",
+          "Forget this move?$"
+        ],
+        "LilycoveCity_MoveDeletersHouse_Text_MonHasForgottenMove": [
+          "Done.\\p",
+          "{STR_VAR_1} forgot it.\\p",
+          "{STR_VAR_2} is gone.$"
+        ],
+        "LilycoveCity_MoveDeletersHouse_Text_ComeAgain": [
+          "Come back if another move needs\\n",
+          "to be reconsidered.$"
+        ],
+        "LilycoveCity_MoveDeletersHouse_Text_EggCantForgetMoves": [
+          "An EGG has no move to forget.$"
+        ],
+        "LilycoveCity_MoveDeletersHouse_Text_CantForgetSurf": [
+          "{STR_VAR_1} is the only one\\n",
+          "that can use SURF right now.\\p",
+          "We should leave that route open.$"
+        ]
+      }
+    },
+    "motel1": {
+      "path": "data/maps/LilycoveCity_CoveLilyMotel_1F/scripts.inc",
+      "blocks": {
+        "LilycoveCity_CoveLilyMotel_1F_Text_GuestsDoubledByMascot": [
+          "Tourists like a friendly mascot.\\p",
+          "A POKéMON isn't an attraction\\n",
+          "we can order around.\\p",
+          "Maybe I'll improve breakfast.$"
+        ],
+        "LilycoveCity_CoveLilyMotel_1F_Text_NoGuestsWithTeamAqua": [
+          "Business is quiet.\\p",
+          "HORIZON work on the waterfront\\n",
+          "has made travelers cautious.$"
+        ],
+        "LilycoveCity_CoveLilyMotel_1F_Text_CantSeeTheTV": [
+          "Hey, down in front!\\n",
+          "I can't see the news!$"
+        ],
+        "LilycoveCity_CoveLilyMotel_1F_Text_MonFoundLostItem": [
+          "A POKéMON found a lost item?\\p",
+          "Better than any lost-and-found\\n",
+          "system I could buy.$"
+        ],
+        "LilycoveCity_CoveLilyMotel_1F_Text_HeardAquaHideoutBusted": [
+          "The waterfront hub was breached.\\p",
+          "Bookings returned overnight.\\p",
+          "People trust a quiet harbor.$"
+        ],
+        "LilycoveCity_CoveLilyMotel_1F_Text_HouseSittingMonCaughtBurglar": [
+          "A house-sitting POKéMON stopped\\n",
+          "a burglar? Impressive.\\p",
+          "Trust beats a SECURITY sign.$"
+        ],
+        "LilycoveCity_CoveLilyMotel_1F_Text_BetterGetWorkingOnGuestsDinner": [
+          "We're full again tonight.\\p",
+          "The coast feels calm enough\\n",
+          "for people to travel.\\p",
+          "I'd better start dinner.$"
+        ]
+      }
+    },
+    "motel2": {
+      "path": "data/maps/LilycoveCity_CoveLilyMotel_2F/scripts.inc",
+      "blocks": {
+        "LilycoveCity_CoveLilyMotel_2F_Text_ShowMeCompletedDex": [
+          "I'm a REGIONAL SURVEYOR.\\p",
+          "Building a POKéDEX record?\\p",
+          "Complete Arauna's survey\\n",
+          "and show me what you found.$"
+        ],
+        "LilycoveCity_CoveLilyMotel_2F_Text_FilledPokedexGiveYouThis": [
+          "The regional survey is complete!\\p",
+          "That took patience and care.\\p",
+          "Let me certify the record.$"
+        ],
+        "LilycoveCity_CoveLilyMotel_2F_Text_ImTheProgrammer": [
+          "I maintain field-data systems.\\p",
+          "A good tool survives bad input\\n",
+          "without losing the record.$"
+        ],
+        "LilycoveCity_CoveLilyMotel_2F_Text_ImTheGraphicArtist": [
+          "I illustrate the field catalog.\\p",
+          "Arauna's POKéMON never make\\n",
+          "this boring.$"
+        ],
+        "LilycoveCity_CoveLilyMotel_2F_Text_GirlsAreCute": [
+          "I study DOUBLE BATTLES.\\p",
+          "Strong partners can still fail\\n",
+          "if they never read each other.$"
+        ],
+        "LilycoveCity_CoveLilyMotel_2F_Text_SeaBreezeTicklesHeart": [
+          "The sea breeze makes long days\\n",
+          "feel a little shorter.$"
+        ],
+        "LilycoveCity_CoveLilyMotel_2F_Text_NeverLeaveWithoutGameBoy": [
+          "I keep my field notes close.\\p",
+          "A useful detail can appear\\n",
+          "anywhere.$"
+        ],
+        "LilycoveCity_CoveLilyMotel_2F_Text_SnoozingPreferBattles": [
+          "SEU BENTO: ...Huh?\\p",
+          "Sorry. I was resting my eyes.\\p",
+          "I came to watch the CONTESTS.\\p",
+          "Different rules reveal different\\n",
+          "parts of a partnership.\\p",
+          "One kind of victory shouldn't\\n",
+          "define a TRAINER.$"
+        ],
+        "LilycoveCity_CoveLilyMotel_2F_Text_ContestsDoTakeStrategy": [
+          "SEU BENTO: CONTESTS need care.\\p",
+          "Attention matters beyond battle.$"
+        ]
+      }
+    },
+    "pc1": {
+      "path": "data/maps/LilycoveCity_PokemonCenter_1F/scripts.inc",
+      "blocks": {
+        "LilycoveCity_PokemonCenter_1F_Text_HowManyKindsOfPokemon": [
+          "Imagine how many POKéMON live\\n",
+          "beyond Arauna's waters.\\p",
+          "Trade lets far journeys meet.$"
+        ],
+        "LilycoveCity_PokemonCenter_1F_Text_HeardAboutRottenScoundrels": [
+          "People whisper about HORIZON.\\p",
+          "Some claims hold. Some don't.\\p",
+          "I wish rumors came with sources.$"
+        ],
+        "LilycoveCity_PokemonCenter_1F_Text_HaventSeenRottenScoundrels": [
+          "The waterfront is quieter now.\\p",
+          "That doesn't answer every rumor.\\p",
+          "Now we have room to check them.$"
+        ]
+      }
+    }
+  }
+}
