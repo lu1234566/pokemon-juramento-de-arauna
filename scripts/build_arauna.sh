@@ -68,6 +68,7 @@ overlay_files=(
     "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.inc"
     "data/maps/MauvilleCity/scripts.inc"
     "data/maps/MauvilleCity_Gym/scripts.inc"
+    "data/maps/Route118/scripts.inc"
     "data/maps/Route119/scripts.inc"
     "data/maps/Route120/scripts.inc"
     "data/maps/Route121/scripts.inc"
@@ -139,6 +140,7 @@ python3 scripts/render_val_house_en_checked.py --in-place
 python3 scripts/render_petalburg_woods_surface.py --in-place
 python3 scripts/render_serra_uivo_story_en_checked.py --in-place
 python3 scripts/render_porto_redes_story_en_checked.py --in-place
+python3 scripts/render_route118_surf_corridor_en_checked.py --in-place
 python3 scripts/render_route119_ciro_surface_en.py --in-place
 python3 scripts/render_baia_luzes_ciro_en.py --in-place
 python3 scripts/render_baia_luzes_surface_en_checked.py --in-place
