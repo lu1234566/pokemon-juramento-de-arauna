@@ -84,6 +84,14 @@ overlay_files=(
     "data/maps/LavaridgeTown_Gym_1F/scripts.inc"
     "data/maps/FortreeCity/scripts.inc"
     "data/maps/FortreeCity_Gym/scripts.inc"
+    "data/maps/FortreeCity_House1/scripts.inc"
+    "data/maps/FortreeCity_House2/scripts.inc"
+    "data/maps/FortreeCity_House3/scripts.inc"
+    "data/maps/FortreeCity_House4/scripts.inc"
+    "data/maps/FortreeCity_House5/scripts.inc"
+    "data/maps/FortreeCity_DecorationShop/scripts.inc"
+    "data/maps/FortreeCity_Mart/scripts.inc"
+    "data/maps/FortreeCity_PokemonCenter_1F/scripts.inc"
     "data/maps/MeteorFalls_1F_1R/scripts.inc"
     "data/maps/MtPyre_1F/scripts.inc"
     "data/maps/MtPyre_2F/scripts.inc"
@@ -147,6 +155,7 @@ python3 scripts/render_baia_luzes_surface_en_checked.py --in-place
 python3 scripts/render_mt_chimney_surface.py --in-place
 python3 scripts/render_casa_da_cinza_nara_en_checked.py --in-place
 python3 scripts/render_mata_do_meio_lidia_en.py --in-place
+python3 scripts/render_mata_do_meio_interiors_en_checked.py --in-place
 python3 scripts/render_ruins_memorial_en.py --in-place
 python3 scripts/render_route120_bento_en.py --in-place
 python3 scripts/render_central_archive_en.py --in-place

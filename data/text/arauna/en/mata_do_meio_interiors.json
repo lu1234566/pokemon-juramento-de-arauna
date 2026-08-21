@@ -1,0 +1,179 @@
+{
+  "house1": {
+    "FortreeCity_House1_Text_YouWillTradeWontYou": [
+      "Hey! I'm looking for a\\n",
+      "{STR_VAR_1}.\\p",
+      "I can trade my {STR_VAR_2}.\\p",
+      "Different roads teach different\\n",
+      "habits. Want to trade?$"
+    ],
+    "FortreeCity_House1_Text_MonYouTakeCare": [
+      "Good trade.\\p",
+      "{STR_VAR_1}, welcome.\\n",
+      "{STR_VAR_2}, travel well.$"
+    ],
+    "FortreeCity_House1_Text_ThisIsntAMon": [
+      "That's not the {STR_VAR_1}\\n",
+      "I'm looking for.$"
+    ],
+    "FortreeCity_House1_Text_YouWontTradeMe": [
+      "No trade? Fair enough.\\p",
+      "A choice only matters if both\\n",
+      "sides can refuse.$"
+    ],
+    "FortreeCity_House1_Text_GoingToMakeVolbeatStrong": [
+      "I'll train VOLBEAT here.\\p",
+      "I hope PLUSLE learns something\\n",
+      "new on your road too.$"
+    ],
+    "FortreeCity_House1_Text_TradingMemoriesWithOthers": [
+      "Trading a POKéMON also trades\\n",
+      "part of a shared history.\\p",
+      "New care doesn't erase old care.$"
+    ],
+    "FortreeCity_House1_Text_Zigzagoon": [
+      "ZIGZAGOON: Gumomoh?$"
+    ]
+  },
+  "house2": {
+    "FortreeCity_House2_Text_HiddenPowersArousedByNature": [
+      "People and POKéMON carry traits\\n",
+      "that don't show at first.\\p",
+      "Context can bring them forward.$"
+    ],
+    "FortreeCity_House2_Text_CoinInWhichHand": [
+      "Let's test your attention.\\p",
+      "I hid a coin in one hand.\\p",
+      "Right or left?$"
+    ],
+    "FortreeCity_House2_Text_CorrectTryAgainWhichHand": [
+      "Correct. Again.\\p",
+      "Which hand holds the coin now?$"
+    ],
+    "FortreeCity_House2_Text_CorrectTryAgainWhichHand2": [
+      "Correct again. One last time.\\p",
+      "Which hand holds it now?$"
+    ],
+    "FortreeCity_House2_Text_YourHiddenPowerHasAwoken": [
+      "Three good reads.\\p",
+      "Take this TM.\\p",
+      "HIDDEN POWER changes with the\\n",
+      "POKéMON that uses it.$"
+    ],
+    "FortreeCity_House2_Text_ExplainHiddenPower": [
+      "HIDDEN POWER changes type with\\n",
+      "the POKéMON using it.$"
+    ],
+    "FortreeCity_House2_Text_YouGuessedWrong": [
+      "Not this time.\\p",
+      "Attention grows with practice.$"
+    ]
+  },
+  "house3": {
+    "FortreeCity_House3_Text_MetStevenHadAmazingPokemon": [
+      "SEU BENTO: Names vanish quietly.\\p",
+      "I write them down as a trail.\\p",
+      "A note cannot replace memory.$"
+    ],
+    "FortreeCity_House3_Text_OhYouHavePokedex": [
+      "Is that a POKéDEX?\\p",
+      "It records species you meet.\\p",
+      "Good records still need someone\\n",
+      "to read them carefully.$"
+    ]
+  },
+  "house4": {
+    "FortreeCity_House4_Text_BringsWorldCloserTogether": [
+      "POKéMON connect homes that roads\\n",
+      "cannot reach easily.\\p",
+      "A call or WINGULL can keep\\n",
+      "faraway friends close.$"
+    ],
+    "FortreeCity_House4_Text_GoBirdPokemon": [
+      "All right, WINGULL.\\n",
+      "Take the usual route.$"
+    ],
+    "FortreeCity_House4_Text_AskedWingullToRunErrand": [
+      "I sent WINGULL on an errand.\\p",
+      "It knows this route by heart.$"
+    ],
+    "FortreeCity_House4_Text_WelcomeWingullTakeMentalHerb": [
+      "Welcome back, WINGULL!\\p",
+      "Hm? You're carrying something.\\p",
+      "A MENTAL HERB?\\p",
+      "I'm not a TRAINER. You take it.$"
+    ],
+    "FortreeCity_House4_Text_FriendsFarAwayThanksToWingull": [
+      "WINGULL keeps my faraway friends\\n",
+      "within reach.$"
+    ],
+    "FortreeCity_House4_Text_Wingull": [
+      "WINGULL: Pihyoh!$"
+    ]
+  },
+  "house5": {
+    "FortreeCity_House5_Text_TreeHousesAreGreat": [
+      "MATA DO MEIO grows around its\\n",
+      "trees instead of over them.\\p",
+      "Living with POKéMON means making\\n",
+      "room for their routes too.$"
+    ],
+    "FortreeCity_House5_Text_AdaptedToNature": [
+      "People adapt to the forest.\\p",
+      "The forest need not fit every\\n",
+      "comfort we invent.$"
+    ],
+    "FortreeCity_House5_Text_Zigzagoon": [
+      "ZIGZAGOON: Bufuu!$"
+    ]
+  },
+  "decor": {
+    "FortreeCity_DecorationShop_Text_MerchandiseSentToPC": [
+      "Your purchases go straight to PC\\n",
+      "storage.\\p",
+      "Useful when stairs are branches.$"
+    ],
+    "FortreeCity_DecorationShop_Text_BuyingDeskForDolls": [
+      "I'm buying a desk for my DOLLS.\\p",
+      "A SECRET BASE feels better when\\n",
+      "you build it with care.$"
+    ]
+  },
+  "mart": {
+    "FortreeCity_Mart_Text_SuperRepelBetter": [
+      "SUPER REPEL lasts longer than a\\n",
+      "regular REPEL.\\p",
+      "Useful on wet forest paths.$"
+    ],
+    "FortreeCity_Mart_Text_StockUpOnItems": [
+      "I carry extra supplies.\\p",
+      "Prepared doesn't mean afraid.$"
+    ],
+    "FortreeCity_Mart_Text_RareCandyMakesMonGrow": [
+      "A RARE CANDY raises a POKéMON\\n",
+      "by one level immediately.$"
+    ]
+  },
+  "center": {
+    "FortreeCity_PokemonCenter_1F_Text_GoToSafariZone": [
+      "Building a POKéDEX?\\p",
+      "The SAFARI ZONE has species you\\n",
+      "may not see on these routes.$"
+    ],
+    "FortreeCity_PokemonCenter_1F_Text_RecordCornerIsNeat": [
+      "Have you tried RECORD CORNER?\\p",
+      "It mixes records from different\\n",
+      "TRAINERS.\\p",
+      "A record can travel farther than\\n",
+      "the person who made it.$"
+    ],
+    "FortreeCity_PokemonCenter_1F_Text_DoYouKnowAboutPokenav": [
+      "You have a POKéNAV too.\\p",
+      "MATCH CALL keeps registered\\n",
+      "TRAINERS within reach.\\p",
+      "It also shows rematch requests.\\p",
+      "Useful tools depend on what\\n",
+      "people choose to share.$"
+    ]
+  }
+}
