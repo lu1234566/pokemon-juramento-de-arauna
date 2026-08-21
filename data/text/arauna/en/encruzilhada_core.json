@@ -1,0 +1,306 @@
+{
+  "city": {
+    "MauvilleCity_Text_UncleHesTooPeppy": [
+      "UNCLE: VAL has more energy now.\\p",
+      "POKéMON helped him find a pace\\n",
+      "that feels like his own.\\p",
+      "I just don't want him rushing.$"
+    ],
+    "MauvilleCity_Text_WallyWantToChallengeGym": [
+      "VAL: I want to challenge OLIVIA.\\p",
+      "Not to prove I'm someone else.\\p",
+      "I want to know how far my own\\n",
+      "rhythm can take me.$"
+    ],
+    "MauvilleCity_Text_UncleYourePushingIt": [
+      "UNCLE: VAL, you've grown.\\p",
+      "But a GYM is a serious test.\\p",
+      "You don't have to prove your\\n",
+      "recovery to anyone.$"
+    ],
+    "MauvilleCity_Text_WallyWeCanBeatAnyone": [
+      "VAL: I know.\\p",
+      "I won't erase the fear.\\p",
+      "I'll move while it's still here.$"
+    ],
+    "MauvilleCity_Text_WallyWillYouBattleMe": [
+      "VAL: {PLAYER},\\n",
+      "battle me first?\\p",
+      "I trust you not to go easy.$"
+    ],
+    "MauvilleCity_Text_WallyMyUncleWontKnowImStrong": [
+      "VAL: If we don't battle,\\n",
+      "he'll only see the sick kid.\\p",
+      "I need an honest measure.$"
+    ],
+    "MauvilleCity_Text_UncleCanYouBattleWally": [
+      "UNCLE: {PLAYER},\\n",
+      "would you battle VAL?\\p",
+      "An honest loss may teach more\\n",
+      "than my worrying.$"
+    ],
+    "MauvilleCity_Text_WallyPleaseBattleMe": [
+      "VAL: {PLAYER}, please.\\p",
+      "Battle me. No pity.$"
+    ],
+    "MauvilleCity_Text_WallyHereICome": [
+      "VAL: All right.\\p",
+      "My pace. My choices. Let's go!$"
+    ],
+    "MauvilleCity_Text_WallyDefeat": [
+      "VAL: I lost...\\p",
+      "But I didn't freeze.$"
+    ],
+    "MauvilleCity_Text_WallyIllGoBackToVerdanturf": [
+      "VAL: I'm going home for now.\\p",
+      "I know what I need to train.\\p",
+      "Next time, I move farther.$"
+    ],
+    "MauvilleCity_Text_ThankYouNotEnoughToBattle": [
+      "VAL: {PLAYER}, thanks.\\p",
+      "A TRAINER can still feel afraid.\\p",
+      "Strength is choosing what to do\\n",
+      "with that fear.$"
+    ],
+    "MauvilleCity_Text_UncleNoNeedToBeDown": [
+      "UNCLE: One loss isn't a verdict,\\n",
+      "VAL.\\p",
+      "Come on. Everyone at home wants\\n",
+      "to hear how it went.$"
+    ],
+    "MauvilleCity_Text_UncleVisitUsSometime": [
+      "UNCLE: You helped VAL catch his\\n",
+      "first partner.\\p",
+      "Visit us sometime.\\p",
+      "He'd be glad to see you.$"
+    ],
+    "MauvilleCity_Text_WallyPokenavCall": [
+      "VAL: {PLAYER}? It's me.\\p",
+      "I'm training at home.\\p",
+      "Still scared sometimes. Still\\n",
+      "moving anyway.$"
+    ],
+    "MauvilleCity_Text_RegisteredWally": [
+      "VAL was registered in the\\n",
+      "POKéNAV.$"
+    ],
+    "MauvilleCity_Text_ScottYouDidntHoldBack": [
+      "SEU BENTO: Good. You didn't turn\\n",
+      "care into pity.\\p",
+      "VAL needed a real answer, not an\\n",
+      "easy victory.\\p",
+      "I'll remember that.$"
+    ],
+    "MauvilleCity_Text_WattsonNeedFavorTakeKey": [
+      "OLIVIA: {PLAYER},\\n",
+      "I need a favor.\\p",
+      "An old relay below the city is\\n",
+      "drawing current again.\\p",
+      "Take this key. Shut the main\\n",
+      "generator down.$"
+    ],
+    "MauvilleCity_Text_WattsonWontBeChallenge": [
+      "OLIVIA: The old relay is below\\n",
+      "the city.\\p",
+      "Cut the main generator.\\p",
+      "If a grid can't fail safely,\\n",
+      "it isn't safe.$"
+    ],
+    "MauvilleCity_Text_WattsonThanksTakeTM": [
+      "OLIVIA: The grid is stable.\\p",
+      "You traced the fault instead of\\n",
+      "guessing.\\p",
+      "Take this TM: THUNDERBOLT.$"
+    ],
+    "MauvilleCity_Text_WattsonYoungTakeCharge": [
+      "OLIVIA: Power only helps when\\n",
+      "people can trust the system.\\p",
+      "Keep checking what carries it.$"
+    ],
+    "MauvilleCity_Text_NurseHurtMonBackToHealth": [
+      "Battles are exciting.\\p",
+      "Recovery matters too.\\p",
+      "A partner isn't a battery to run\\n",
+      "until empty.$"
+    ],
+    "MauvilleCity_Text_AllSortsOfPeopleComeThrough": [
+      "Four roads meet here.\\p",
+      "Merchants, crews, families...\\p",
+      "ENCRUZILHADA CENTRAL hears a bit\\n",
+      "of every story.$"
+    ],
+    "MauvilleCity_Text_RydelVeryGenerous": [
+      "The BIKE shop lends different\\n",
+      "models to traveling TRAINERS.\\p",
+      "Pick for the road you ride.$"
+    ],
+    "MauvilleCity_Text_PokemonCanJumpYouOnBike": [
+      "A BIKE makes you faster.\\p",
+      "Wild POKéMON still notice you.$"
+    ],
+    "MauvilleCity_Text_CitySign": [
+      "ENCRUZILHADA CENTRAL\\p",
+      "Four roads, one shared grid.\\p",
+      "Progress moves through people,\\n",
+      "not around them.$"
+    ],
+    "MauvilleCity_Text_GymSign": [
+      "ENCRUZILHADA CENTRAL GYM\\p",
+      "LEADER: OLIVIA\\p",
+      "Every network leaves traces.$"
+    ],
+    "MauvilleCity_Text_BikeShopSign": [
+      "ENCRUZILHADA CYCLES\\p",
+      "Two bikes. Two kinds of road.$"
+    ],
+    "MauvilleCity_Text_GameCornerSign": [
+      "ENCRUZILHADA GAME HALL\\p",
+      "Lights, games and prizes.$"
+    ],
+    "MauvilleCity_Text_ExplainTV": [
+      "Do you watch local TV?\\p",
+      "News from all four roads reaches\\n",
+      "this city first.$"
+    ],
+    "MauvilleCity_Text_BeenCheckingOutTV": [
+      "I've watched the broadcasts.\\p",
+      "One event, three interviews,\\n",
+      "three different stories.$"
+    ]
+  },
+  "gym": {
+    "MauvilleCity_Gym_Text_GymGuideAdvice": [
+      "OLIVIA uses ELECTRIC POKéMON.\\p",
+      "Switches reroute the barriers.\\p",
+      "Think like a circuit. Find the\\n",
+      "path before forcing the load.$"
+    ],
+    "MauvilleCity_Gym_Text_GymGuidePostVictory": [
+      "You read the whole circuit!\\p",
+      "The path is yours now.$"
+    ],
+    "MauvilleCity_Gym_Text_KirkIntro": [
+      "Current needs a path.\\p",
+      "I'll make sure yours ends here!$"
+    ],
+    "MauvilleCity_Gym_Text_KirkDefeat": [
+      "You grounded my whole plan!$"
+    ],
+    "MauvilleCity_Gym_Text_KirkPostBattle": [
+      "Fast isn't the same as reckless.\\p",
+      "OLIVIA drills that into us.$"
+    ],
+    "MauvilleCity_Gym_Text_ShawnIntro": [
+      "OLIVIA taught me to watch load.\\p",
+      "Let's see what your team can do!$"
+    ],
+    "MauvilleCity_Gym_Text_ShawnDefeat": [
+      "My circuit overloaded.$"
+    ],
+    "MauvilleCity_Gym_Text_ShawnPostBattle": [
+      "OLIVIA says strong systems need\\n",
+      "room to fail safely.$"
+    ],
+    "MauvilleCity_Gym_Text_BenIntro": [
+      "Switches change the route.\\p",
+      "Can you change with them?$"
+    ],
+    "MauvilleCity_Gym_Text_BenDefeat": [
+      "You found the clean path.$"
+    ],
+    "MauvilleCity_Gym_Text_BenPostBattle": [
+      "The puzzle isn't a trap.\\p",
+      "It's practice reading a network.$"
+    ],
+    "MauvilleCity_Gym_Text_VivianIntro": [
+      "A spark can cross a tiny gap.\\p",
+      "Can your plan?$"
+    ],
+    "MauvilleCity_Gym_Text_VivianDefeat": [
+      "You closed the circuit.$"
+    ],
+    "MauvilleCity_Gym_Text_VivianPostBattle": [
+      "ENCRUZILHADA grew around roads\\n",
+      "and power lines.\\p",
+      "OLIVIA studies both.$"
+    ],
+    "MauvilleCity_Gym_Text_AngeloIntro": [
+      "The barriers shine beautifully.\\p",
+      "They still stop you.$"
+    ],
+    "MauvilleCity_Gym_Text_AngeloDefeat": [
+      "You walked through that glare.$"
+    ],
+    "MauvilleCity_Gym_Text_AngeloPostBattle": [
+      "OLIVIA likes visible systems.\\p",
+      "If a switch changes things, she\\n",
+      "wants you to see how.$"
+    ],
+    "MauvilleCity_Gym_Text_WattsonIntro": [
+      "OLIVIA: {PLAYER}.\\p",
+      "Welcome. Current looks instant.\\p",
+      "It follows paths, loads and\\n",
+      "choices.\\p",
+      "Show me how you read a network.$"
+    ],
+    "MauvilleCity_Gym_Text_WattsonDefeat": [
+      "OLIVIA: Good.\\p",
+      "You changed the route before the\\n",
+      "route changed you.$"
+    ],
+    "MauvilleCity_Gym_Text_ReceivedDynamoBadge": [
+      "{PLAYER} received\\n",
+      "OLIVIA's BEACON BADGE.$"
+    ],
+    "MauvilleCity_Gym_Text_ExplainDynamoBadgeTakeThis": [
+      "OLIVIA: The BEACON BADGE lets\\n",
+      "you use ROCK SMASH outside.\\p",
+      "It also raises your POKéMON's\\n",
+      "SPEED a little.\\p",
+      "Take this too.$"
+    ],
+    "MauvilleCity_Gym_Text_ExplainShockWave": [
+      "OLIVIA: TM34 has SHOCK WAVE.\\p",
+      "Once locked on, it won't miss.\\p",
+      "Reliable signals matter.$"
+    ],
+    "MauvilleCity_Gym_Text_RegisteredWattson": [
+      "GYM LEADER OLIVIA was registered\\n",
+      "in the POKéNAV.$"
+    ],
+    "MauvilleCity_Gym_Text_WattsonPostBattle": [
+      "OLIVIA: A badge marks a result.\\p",
+      "Harder is noticing when a system\\n",
+      "stops serving people.$"
+    ],
+    "MauvilleCity_Gym_Text_WattsonGoForthAndEndeavor": [
+      "OLIVIA: You handled the relay.\\p",
+      "Good fieldwork asks what failed,\\n",
+      "who it affects, and why.$"
+    ],
+    "MauvilleCity_Gym_Text_GymStatue": [
+      "ENCRUZILHADA CENTRAL GYM\\p",
+      "LEADER: OLIVIA$"
+    ],
+    "MauvilleCity_Gym_Text_GymStatueCertified": [
+      "ENCRUZILHADA CENTRAL GYM\\p",
+      "OLIVIA'S CERTIFIED TRAINERS:\\n",
+      "{PLAYER}$"
+    ],
+    "MauvilleCity_Gym_Text_WattsonPreRematch": [
+      "OLIVIA: Networks shift with use.\\p",
+      "So do TRAINERS. Show me yours.$"
+    ],
+    "MauvilleCity_Gym_Text_WattsonRematchDefeat": [
+      "OLIVIA: Better route. Good read.$"
+    ],
+    "MauvilleCity_Gym_Text_WattsonPostRematch": [
+      "OLIVIA: Question the path.\\p",
+      "Even when it looks obvious.$"
+    ],
+    "MauvilleCity_Gym_Text_WattsonRematchNeedTwoMons": [
+      "OLIVIA: Bring two POKéMON.\\p",
+      "A network needs several nodes.$"
+    ]
+  }
+}
