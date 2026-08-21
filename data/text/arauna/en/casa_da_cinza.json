@@ -276,5 +276,11 @@
       "A rematch needs enough room to\\n",
       "change.$"
     ]
+  },
+  "ridge": {
+    "MtChimney_Text_RouteSign": [
+      "SERRA DA CINZA\\n",
+      "{DOWN_ARROW} CASA DA CINZA$"
+    ]
   }
 }
