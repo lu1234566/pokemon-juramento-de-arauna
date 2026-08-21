@@ -1,0 +1,245 @@
+{
+  "route": {
+    "Route110_Text_WeCantTalkAboutAquaActivities": [
+      "HORIZON: We're regrouping.\\p",
+      "I can't discuss the next survey.$"
+    ],
+    "Route110_Text_KickUpARuckus": [
+      "HORIZON: PORTO DO SAL was rough.\\p",
+      "Orders say move inland.$"
+    ],
+    "Route110_Text_MyFirstJobInAqua": [
+      "HORIZON: First field posting.\\p",
+      "I thought the equipment would be\\n",
+      "the hard part.$"
+    ],
+    "Route110_Text_AquaActionsBringSmiles": [
+      "HORIZON: We're meant to help.\\p",
+      "Force wasn't in my briefing.$"
+    ],
+    "Route110_Text_MayLetsBattle": [
+      "CIRO: PORTO DO SAL crossed a\\n",
+      "line.\\p",
+      "Bad consent is bad fieldwork.\\p",
+      "That doesn't make every reading\\n",
+      "useless.\\p",
+      "Show me what you learned.$"
+    ],
+    "Route110_Text_MayDefeated": [
+      "CIRO: I can fix a bad model.\\p",
+      "I can't defend bad consent.$"
+    ],
+    "Route110_Text_MayTakeThis": [
+      "CIRO: I still believe HORIZON\\n",
+      "can help people.\\p",
+      "That doesn't mean I defend every\\n",
+      "choice made in its name.\\p",
+      "Take this ITEMFINDER.$"
+    ],
+    "Route110_Text_MayExplainItemfinder": [
+      "CIRO: It reacts to hidden items\\n",
+      "nearby.\\p",
+      "Use it. Check what it tells you.$"
+    ],
+    "Route110_Text_BrendanLetsBattle": [
+      "CIRO: PORTO DO SAL crossed a\\n",
+      "line.\\p",
+      "Bad consent is bad fieldwork.\\p",
+      "That doesn't make every reading\\n",
+      "useless.\\p",
+      "Show me what you learned.$"
+    ],
+    "Route110_Text_BrendanDefeated": [
+      "CIRO: I can fix a bad model.\\p",
+      "I can't defend bad consent.$"
+    ],
+    "Route110_Text_BrendanTakeThis": [
+      "CIRO: I still believe HORIZON\\n",
+      "can help people.\\p",
+      "That doesn't mean I defend every\\n",
+      "choice made in its name.\\p",
+      "Take this ITEMFINDER.$"
+    ],
+    "Route110_Text_BrendanExplainItemfinder": [
+      "CIRO: It reacts to hidden items\\n",
+      "nearby.\\p",
+      "Use it. Check what it tells you.$"
+    ],
+    "Route110_Text_RideBikeAtFullSpeed": [
+      "The coast wind is perfect for a\\n",
+      "fast BIKE ride.$"
+    ],
+    "Route110_Text_HairStreamsBehindMe": [
+      "I grew my hair out for this\\n",
+      "road.\\p",
+      "Dramatic in the wind, right?$"
+    ],
+    "Route110_Text_YouGotBikeFromRydel": [
+      "That BIKE came from\\n",
+      "ENCRUZILHADA, didn't it?\\p",
+      "Ride it everywhere.\\p",
+      "Shops love free advertising.$"
+    ],
+    "Route110_Text_TwoRoads": [
+      "Two roads: raised and low.\\p",
+      "Fast above, slow below.\\p",
+      "Different paths. Same end.$"
+    ],
+    "Route110_Text_WalkOnTheLowRoad": [
+      "No BIKE for me.\\p",
+      "I'll take the low road and watch\\n",
+      "the tide marsh.$"
+    ],
+    "Route110_Text_BikeTechniques": [
+      "BIKE tricks open routes that\\n",
+      "walking can't reach.\\p",
+      "Practice before you need them.$"
+    ],
+    "Route110_Text_WhichShouldIChoose": [
+      "Straight to ENCRUZILHADA on the\\n",
+      "upper road,\\p",
+      "or the lower path for POKéMON?\\p",
+      "I still can't choose.$"
+    ],
+    "Route110_Text_CyclingChallengeResultSummary": [
+      "Collisions: {STR_VAR_1}\\p",
+      "Time: {STR_VAR_2}$"
+    ],
+    "Route110_Text_ChallengeReactionBest": [
+      "Excellent run!\\p",
+      "Fast, clean, and under control.$"
+    ],
+    "Route110_Text_ChallengeReactionGood": [
+      "Strong technique.\\p",
+      "Push the pace without adding\\n",
+      "collisions.$"
+    ],
+    "Route110_Text_ChallengeReactionOk": [
+      "Good start.\\p",
+      "Keep the speed, lose the wobble.$"
+    ],
+    "Route110_Text_ChallengeReactionBad": [
+      "That was a rough run.\\p",
+      "Practice turns before speed.$"
+    ],
+    "Route110_Text_ChallengeReactionWorst": [
+      "That road nearly won the battle.\\p",
+      "Practice before another run.$"
+    ],
+    "Route110_Text_RatedForNumberOfCollisions": [
+      "COAST CYCLING ROAD.\\p",
+      "Ride south on a MACH BIKE to be\\n",
+      "rated on time and collisions.$"
+    ],
+    "Route110_Text_AlwaysAimHigher": [
+      "Every run teaches you something.\\p",
+      "Come back and beat your record.$"
+    ],
+    "Route110_Text_AcroBikesDoNotQualify": [
+      "Timed runs use MACH BIKES only.\\p",
+      "ACRO BIKES turn too differently\\n",
+      "for a fair comparison.$"
+    ],
+    "Route110_Text_SlateportCitySign": [
+      "ROUTE 110\\n",
+      "{DOWN_ARROW} PORTO DO SAL$"
+    ],
+    "Route110_Text_CyclingRoadSign": [
+      "COAST CYCLING ROAD\\p",
+      "MACH BIKE TIME TRIALS$"
+    ],
+    "Route110_Text_AquaWasHere": [
+      "Graffiti covers the sign.\\p",
+      "“HORIZON SAVES.”\\p",
+      "Over it: “LEMBRANTES REMEMBER.”\\p",
+      "Below: “ASK WHO CHOSE.”$"
+    ],
+    "Route110_Text_Route103Sign": [
+      "ROUTE 110\\n",
+      "{LEFT_ARROW} ROUTE 103$"
+    ],
+    "Route110_Text_SeasideParkingSign": [
+      "COAST ROAD REST AREA$"
+    ],
+    "Route110_Text_MauvilleCitySign": [
+      "ROUTE 110\\n",
+      "{UP_ARROW} ENCRUZILHADA$"
+    ],
+    "Route110_Text_TrainerTipsPrlzSleep": [
+      "TRAINER TIPS\\p",
+      "PARALYSIS and SLEEP can stop an\\n",
+      "opponent from moving.\\p",
+      "Status moves can decide battles.$"
+    ],
+    "Route110_Text_TrainerTipsRegisterItems": [
+      "TRAINER TIPS\\p",
+      "Press SELECT in the BAG to\\n",
+      "reorganize items quickly.$"
+    ],
+    "Route110_Text_TrickHouseSign": [
+      "TRICK HOUSE\\p",
+      "Three right. Two up.\\p",
+      "Find the entrance if you can.$"
+    ],
+    "Route110_Text_BestRecord": [
+      "COAST ROAD BEST RECORD\\p",
+      "Collisions: {STR_VAR_1}\\p",
+      "Time: {STR_VAR_2}$"
+    ],
+    "Route110_Text_ThereIsNoRecord": [
+      "COAST ROAD BEST RECORD\\p",
+      "No completed run recorded yet.$"
+    ],
+    "Route110_Text_ImagineSeeingYouHere": [
+      "ANAHI: There you are.\\p",
+      "I heard about PORTO DO SAL.\\p",
+      "I helped build early BOND\\n",
+      "sensors.\\p",
+      "Silence about misuse would make\\n",
+      "the mistake mine too.$"
+    ],
+    "Route110_Text_HeardYouInstallMatchCall": [
+      "ANAHI: Your POKéNAV can take\\n",
+      "field calls now.\\p",
+      "Register me.\\p",
+      "If a BOND pattern changes,\\n",
+      "hear the context before anyone\\n",
+      "names the cause.$"
+    ],
+    "Route110_Text_RegisteredBirchInPokenav": [
+      "PROF. ANAHI was registered in\\n",
+      "the POKéNAV.$"
+    ],
+    "Route110_Text_KeepAnEyeOutForRival": [
+      "ANAHI: CIRO passed through.\\p",
+      "He's angry about PORTO DO SAL,\\n",
+      "but he hasn't left HORIZON.\\p",
+      "Listen to what he measures.\\p",
+      "Watch what the model misses.$"
+    ]
+  },
+  "south_gate": {
+    "Route110_SeasideCyclingRoadSouthEntrance_Text_GoAllOutOnCyclingRoad": [
+      "CLERK: COAST CYCLING ROAD is\\n",
+      "built for speed.\\p",
+      "Ride hard, but don't hit anyone.$"
+    ],
+    "Route110_SeasideCyclingRoadSouthEntrance_Text_TooDangerousToWalk": [
+      "CLERK: Walking isn't allowed on\\n",
+      "the upper road.\\p",
+      "Come back with a BIKE.$"
+    ]
+  },
+  "north_gate": {
+    "Route110_SeasideCyclingRoadNorthEntrance_Text_GoAllOutOnCyclingRoad": [
+      "CLERK: COAST CYCLING ROAD is\\n",
+      "built for speed.\\p",
+      "Ride hard, but don't hit anyone.$"
+    ],
+    "Route110_SeasideCyclingRoadNorthEntrance_Text_TooDangerousToWalk": [
+      "CLERK: Walking isn't allowed on\\n",
+      "the upper road.\\p",
+      "Come back with a BIKE.$"
+    ]
+  }
+}
