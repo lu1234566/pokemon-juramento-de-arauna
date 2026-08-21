@@ -66,6 +66,8 @@ overlay_files=(
     "data/maps/Route110/scripts.inc"
     "data/maps/Route110_SeasideCyclingRoadSouthEntrance/scripts.inc"
     "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.inc"
+    "data/maps/MauvilleCity/scripts.inc"
+    "data/maps/MauvilleCity_Gym/scripts.inc"
     "data/maps/Route119/scripts.inc"
     "data/maps/Route120/scripts.inc"
     "data/maps/Route121/scripts.inc"
@@ -161,6 +163,7 @@ python3 scripts/render_porto_sal_shipyard_en.py --in-place
 python3 scripts/render_porto_sal_harbor_service_en.py --in-place
 python3 scripts/render_porto_sal_story_path_en_checked.py --in-place
 python3 scripts/render_route110_corridor_en_checked.py --in-place
+python3 scripts/render_encruzilhada_olivia_en_checked.py --in-place
 
 cpp="${CPP:-arm-none-eabi-cpp}"
 
