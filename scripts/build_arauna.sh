@@ -156,6 +156,7 @@ python3 scripts/render_porto_sal_submersivel_en.py --in-place
 python3 scripts/render_porto_sal_daily_life_en.py --in-place
 python3 scripts/render_porto_sal_shipyard_en.py --in-place
 python3 scripts/render_porto_sal_harbor_service_en.py --in-place
+python3 scripts/render_porto_sal_story_path_en_checked.py --in-place
 
 cpp="${CPP:-arm-none-eabi-cpp}"
 

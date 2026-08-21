@@ -1,0 +1,96 @@
+{
+  "signs": {
+    "SlateportCity_Text_BattleTentSign": [
+      "PORTO DO SAL BATTLE TENT\\p",
+      "Test your team without risking\\n",
+      "your journey.$"
+    ],
+    "SlateportCity_Text_SternsShipyardWantedSign": [
+      "PORTO DO SAL SHIPYARD\\p",
+      "WANTED: veteran sailor familiar\\n",
+      "with the coastal currents.$"
+    ],
+    "SlateportCity_Text_SternsShipyardNearsCompletion": [
+      "PORTO DO SAL SHIPYARD\\p",
+      "LINE FERRY nearing completion.\\p",
+      "Planned route: PORTO DO SAL -\\n",
+      "BAIA DAS LUZES.$"
+    ],
+    "SlateportCity_Text_SternsShipyardFerryComplete": [
+      "PORTO DO SAL SHIPYARD\\p",
+      "LINE FERRY complete.\\p",
+      "Boarding and schedules are at\\n",
+      "the HARBOR.$"
+    ],
+    "SlateportCity_Text_PokemonFanClubSign": [
+      "POKéMON FAN CLUB\\p",
+      "For people who never tire of\\n",
+      "talking about POKéMON.$"
+    ],
+    "SlateportCity_Text_OceanicMuseumSign": [
+      "OCEANOGRAPHIC MUSEUM\\p",
+      "The sea sustains life and keeps\\n",
+      "stories in its depths.$"
+    ],
+    "SlateportCity_Text_CitySign": [
+      "PORTO DO SAL\\p",
+      "Market, shipyard and research\\n",
+      "grew beside the tides.$"
+    ],
+    "SlateportCity_Text_MarketSign": [
+      "PORTO DO SAL MARKET\\p",
+      "Goods from across ARAUNA arrive\\n",
+      "here by sea.$"
+    ],
+    "SlateportCity_Text_HarborFerryUnderConstruction": [
+      "PORTO DO SAL HARBOR\\p",
+      "LINE FERRY under construction\\n",
+      "at the SHIPYARD.$"
+    ],
+    "SlateportCity_Text_HarborSign": [
+      "PORTO DO SAL HARBOR\\p",
+      "Board the LINE FERRY for\\n",
+      "coastal routes.$"
+    ],
+    "SlateportCity_Text_NameRatersHouseSign": [
+      "NAME RATER'S HOUSE\\p",
+      "POKéMON nicknames reviewed here.$"
+    ]
+  },
+  "bento": {
+    "SlateportCity_Text_YouDroveTeamAquaAway": [
+      "SEU BENTO: Word travels fast.\\p",
+      "You stopped a HORIZON field unit\\n",
+      "from taking the parts by force.$"
+    ],
+    "SlateportCity_Text_MaybeThisTrainer": [
+      "SEU BENTO: I follow TRAINERS who\\n",
+      "notice what records miss.\\p",
+      "You just entered my notebook.$"
+    ],
+    "SlateportCity_Text_LetsRegisterEachOther": [
+      "SEU BENTO: You have my number.\\p",
+      "I'll add my field route to your\\n",
+      "POKéNAV too.\\p",
+      "I can flag clues worth a trip.$"
+    ],
+    "SlateportCity_Text_RegisteredScott": [
+      "SEU BENTO's field route was\\n",
+      "added to the POKéNAV.$"
+    ],
+    "SlateportCity_Text_KeepEyeOnTrainersBeSeeingYou": [
+      "SEU BENTO: I'd stay, but roads\\n",
+      "keep moving.\\p",
+      "I'll note what survives off the\\n",
+      "official maps.\\p",
+      "See you, {PLAYER}.$"
+    ],
+    "SlateportCity_Text_TakingBattleTentChallenge": [
+      "SEU BENTO: {PLAYER}!\\p",
+      "Trying the BATTLE TENT? Good.\\p",
+      "Places like this show what a\\n",
+      "TRAINER does without a script.\\p",
+      "Tell me how it went.$"
+    ]
+  }
+}
