@@ -11,8 +11,9 @@ DATA = ROOT / "data" / "text" / "arauna" / "en" / "casa_da_cinza.json"
 FILES = {
     "town": ROOT / "data" / "maps" / "LavaridgeTown" / "scripts.inc",
     "gym": ROOT / "data" / "maps" / "LavaridgeTown_Gym_1F" / "scripts.inc",
+    "ridge": ROOT / "data" / "maps" / "MtChimney" / "scripts.inc",
 }
-EXPECTED_COUNTS = {"town": 19, "gym": 39}
+EXPECTED_COUNTS = {"town": 19, "gym": 39, "ridge": 1}
 MAX_VISIBLE_WIDTH = 32
 CONTROL_RE = re.compile(r"\\[npl]")
 PLACEHOLDER_RE = re.compile(r"\{[^}]+\}")
@@ -64,6 +65,7 @@ CRITICAL_TOKENS = {
         "VAR_LAVARIDGE_TOWN_STATE",
         "FLAG_WHITEOUT_TO_LAVARIDGE",
     ),
+    "ridge": (),
 }
 
 STALE_VISIBLE = (
