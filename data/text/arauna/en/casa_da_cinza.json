@@ -1,0 +1,286 @@
+{
+  "town": {
+    "LavaridgeTown_Text_MayNiceBadgesTakeThis": [
+      "CIRO: Four BADGES already.\\p",
+      "You're moving faster than I am.\\p",
+      "Take these GO-GOGGLES.\\p",
+      "The desert east of ENCRUZILHADA\\n",
+      "will stop being a wall.$"
+    ],
+    "LavaridgeTown_Text_MayExplainGoGogglesChallengeDad": [
+      "CIRO: I remember enough to know\\n",
+      "I won't live inside what I lost.\\p",
+      "If BOND data can reduce harm,\\n",
+      "I still want to test it.\\p",
+      "Your father is waiting in\\n",
+      "PAMPA DA ESPERA.$"
+    ],
+    "LavaridgeTown_Text_BrendanNiceBadgesTakeThis": [
+      "CIRO: Four BADGES already.\\p",
+      "You're moving faster than I am.\\p",
+      "Take these GO-GOGGLES.\\p",
+      "The desert east of ENCRUZILHADA\\n",
+      "will stop being a wall.$"
+    ],
+    "LavaridgeTown_Text_BrendanExplainGoGogglesChallengeDad": [
+      "CIRO: I remember enough to know\\n",
+      "I won't live inside what I lost.\\p",
+      "If BOND data can reduce harm,\\n",
+      "I still want to test it.\\p",
+      "Your father is waiting in\\n",
+      "PAMPA DA ESPERA.$"
+    ],
+    "LavaridgeTown_Text_HaveEggWillYouTakeIt": [
+      "This EGG was found near the hot\\n",
+      "sand.\\p",
+      "Heat alone won't hatch it.\\p",
+      "It needs travel, care, and time.\\p",
+      "Will you carry it with you?$"
+    ],
+    "LavaridgeTown_Text_HopeYoullWalkPlentyWithEgg": [
+      "Good. Let the road do what heat\\n",
+      "alone could not.$"
+    ],
+    "LavaridgeTown_Text_ReceivedTheEgg": [
+      "{PLAYER} received the\\n",
+      "EGG.$"
+    ],
+    "LavaridgeTown_Text_NoRoomForThisEgg": [
+      "Your party is full.\\p",
+      "Come back when the EGG has room.$"
+    ],
+    "LavaridgeTown_Text_AsYouWishThen": [
+      "As you wish.\\p",
+      "The EGG can wait until you're\\n",
+      "ready.$"
+    ],
+    "LavaridgeTown_Text_EverySoOftenEggFoundAtDayCare": [
+      "Some EGGs appear at DAY CARE.\\p",
+      "No one here pretends to know\\n",
+      "every reason why.$"
+    ],
+    "LavaridgeTown_Text_HotSpringsNeverRunDry": [
+      "The springs rise through hot\\n",
+      "volcanic stone.\\p",
+      "The heat feels endless, but the\\n",
+      "water still needs care.$"
+    ],
+    "LavaridgeTown_Text_PokemonNippedBackside": [
+      "Warm sand, quiet steam...\\p",
+      "OW!\\p",
+      "Something under the ash has\\n",
+      "teeth.$"
+    ],
+    "LavaridgeTown_Text_OhYouLikeHotSprings": [
+      "The springs help people rest.\\p",
+      "Around here, resting is not the\\n",
+      "same as giving up.$"
+    ],
+    "LavaridgeTown_Text_BatheInHotSpringsEveryDay": [
+      "I train here every day.\\p",
+      "NARA says strength also means\\n",
+      "knowing when to cool down.$"
+    ],
+    "LavaridgeTown_Text_IfPokemonInHotSprings": [
+      "Some POKéMON love the springs.\\p",
+      "Others hate the heat.\\p",
+      "Watch first. Then decide.$"
+    ],
+    "LavaridgeTown_Text_HotSpringsClaims": [
+      "People promise the springs cure\\n",
+      "everything.\\p",
+      "NARA says relief is real enough\\n",
+      "without inventing miracles.$"
+    ],
+    "LavaridgeTown_Text_TownSign": [
+      "CASA DA CINZA\\p",
+      "Heat, ash and old losses shaped\\n",
+      "this settlement.\\p",
+      "Grief is not weakness.$"
+    ],
+    "LavaridgeTown_Text_GymSign": [
+      "CASA DA CINZA GYM\\p",
+      "LEADER: NARA\\p",
+      "Ash also keeps memory.$"
+    ],
+    "LavaridgeTown_Text_HerbShopSign": [
+      "ASH HERB SHOP\\p",
+      "Bitter medicine. Honest cure.$"
+    ]
+  },
+  "gym": {
+    "LavaridgeTown_Gym_1F_Text_GymGuideAdvice": [
+      "NARA leads CASA DA CINZA GYM.\\p",
+      "Her FIRE-types punish reckless\\n",
+      "pressure.\\p",
+      "Watch the heat. Pick a moment.$"
+    ],
+    "LavaridgeTown_Gym_1F_Text_GymGuidePostVictory": [
+      "You handled the heat without\\n",
+      "letting it handle you.$"
+    ],
+    "LavaridgeTown_Gym_1F_Text_ColeIntro": [
+      "Hot sand hides every step.\\p",
+      "Can you keep your footing?$"
+    ],
+    "LavaridgeTown_Gym_1F_Text_ColeDefeat": [
+      "I lost track of your rhythm.$"
+    ],
+    "LavaridgeTown_Gym_1F_Text_ColePostBattle": [
+      "Heat makes people rush.\\p",
+      "That is when mistakes multiply.$"
+    ],
+    "LavaridgeTown_Gym_1F_Text_AxleIntro": [
+      "Pressure rises fast in here.\\p",
+      "Let's see what you do with it.$"
+    ],
+    "LavaridgeTown_Gym_1F_Text_AxleDefeat": [
+      "You never let me set the pace.$"
+    ],
+    "LavaridgeTown_Gym_1F_Text_AxlePostBattle": [
+      "NARA says cooling down is part\\n",
+      "of controlling heat.$"
+    ],
+    "LavaridgeTown_Gym_B1F_Text_KeeganIntro": [
+      "The lower chambers hold heat.\\p",
+      "Fatigue makes choices louder.$"
+    ],
+    "LavaridgeTown_Gym_B1F_Text_KeeganDefeat": [
+      "You stayed clear-headed.$"
+    ],
+    "LavaridgeTown_Gym_B1F_Text_KeeganPostBattle": [
+      "NARA never asks us to ignore\\n",
+      "pain.\\p",
+      "She asks what it is telling us.$"
+    ],
+    "LavaridgeTown_Gym_1F_Text_GeraldIntro": [
+      "Steam hides more than distance.\\p",
+      "Read the room before you move.$"
+    ],
+    "LavaridgeTown_Gym_1F_Text_GeraldDefeat": [
+      "You read it better than I did.$"
+    ],
+    "LavaridgeTown_Gym_1F_Text_GeraldPostBattle": [
+      "A gauge is useful.\\p",
+      "So is noticing what the gauge\\n",
+      "cannot measure.$"
+    ],
+    "LavaridgeTown_Gym_1F_Text_DanielleIntro": [
+      "Ash marks where heat has been.\\p",
+      "Show me what your path leaves.$"
+    ],
+    "LavaridgeTown_Gym_1F_Text_DanielleDefeat": [
+      "That answer was clear enough.$"
+    ],
+    "LavaridgeTown_Gym_1F_Text_DaniellePostBattle": [
+      "I want NARA's kind of strength.\\p",
+      "Not louder. Steadier.$"
+    ],
+    "LavaridgeTown_Gym_B1F_Text_JaceIntro": [
+      "A flame can flare in one breath.\\p",
+      "Control takes longer.$"
+    ],
+    "LavaridgeTown_Gym_B1F_Text_JaceDefeat": [
+      "Mine flared. Yours held.$"
+    ],
+    "LavaridgeTown_Gym_B1F_Text_JacePostBattle": [
+      "You may be ready for NARA.\\p",
+      "She notices when people mistake\\n",
+      "heat for courage.$"
+    ],
+    "LavaridgeTown_Gym_B1F_Text_JeffIntro": [
+      "Everyone watches the flame.\\p",
+      "I watch what survives it.$"
+    ],
+    "LavaridgeTown_Gym_B1F_Text_JeffDefeat": [
+      "You left me with ash.$"
+    ],
+    "LavaridgeTown_Gym_B1F_Text_JeffPostBattle": [
+      "Ash looks empty until you study\\n",
+      "what is mixed into it.$"
+    ],
+    "LavaridgeTown_Gym_B1F_Text_EliIntro": [
+      "Volcanoes build and destroy.\\p",
+      "Neither fact erases the other.$"
+    ],
+    "LavaridgeTown_Gym_B1F_Text_EliDefeat": [
+      "I lost control of the slope.$"
+    ],
+    "LavaridgeTown_Gym_B1F_Text_EliPostBattle": [
+      "NARA taught me not to worship\\n",
+      "destruction just because it is\\n",
+      "powerful.$"
+    ],
+    "LavaridgeTown_Gym_1F_Text_FlanneryIntro": [
+      "NARA: Fire gets all the songs.\\p",
+      "Ash is what stays after.\\p",
+      "It records what changed and what\\n",
+      "was lost.\\p",
+      "Show me how you handle heat.$"
+    ],
+    "LavaridgeTown_Gym_1F_Text_FlanneryDefeat": [
+      "NARA: You knew when to press...\\n",
+      "and when to cool.$"
+    ],
+    "LavaridgeTown_Gym_1F_Text_ReceivedHeatBadge": [
+      "{PLAYER} received the\\n",
+      "ASH BADGE from NARA.$"
+    ],
+    "LavaridgeTown_Gym_1F_Text_ExplainHeatBadgeTakeThis": [
+      "With the ASH BADGE, POKéMON\\n",
+      "up to Lv. 50 will obey.\\p",
+      "You can also use STRENGTH\\n",
+      "outside battle.\\p",
+      "Take this too.$"
+    ],
+    "LavaridgeTown_Gym_1F_Text_ExplainOverheat": [
+      "TM50 contains OVERHEAT.\\p",
+      "It hits hard, then lowers\\n",
+      "the user's SP. ATK sharply.\\p",
+      "Power always leaves a cost.$"
+    ],
+    "LavaridgeTown_Gym_1F_Text_RegisteredFlannery": [
+      "Registered GYM LEADER NARA\\n",
+      "in the POKéNAV.$"
+    ],
+    "LavaridgeTown_Gym_1F_Text_FlanneryPostBattle": [
+      "NARA: Ash isn't failure.\\p",
+      "It's evidence that something\\n",
+      "burned.\\p",
+      "Remember that before anyone\\n",
+      "calls erasure a clean start.$"
+    ],
+    "LavaridgeTown_Gym_1F_Text_GymStatue": [
+      "CASA DA CINZA GYM\\p",
+      "LEADER: NARA$"
+    ],
+    "LavaridgeTown_Gym_1F_Text_GymStatueCertified": [
+      "CASA DA CINZA GYM\\p",
+      "NARA'S CERTIFIED TRAINERS:\\n",
+      "{PLAYER}$"
+    ],
+    "LavaridgeTown_Gym_1F_Text_FlanneryPreRematch": [
+      "NARA: Heat changes with time.\\p",
+      "So should a good battle. Ready?$"
+    ],
+    "LavaridgeTown_Gym_1F_Text_FlanneryRematchDefeat": [
+      "NARA: Better control.\\p",
+      "Same lesson.$"
+    ],
+    "LavaridgeTown_Gym_1F_Text_FlanneryPostRematch": [
+      "NARA: You knew when to stop\\n",
+      "feeding the flame.$"
+    ],
+    "LavaridgeTown_Gym_1F_Text_FlanneryRematchNeedTwoMons": [
+      "NARA: Bring two POKéMON or more.\\p",
+      "A rematch needs enough room to\\n",
+      "change.$"
+    ]
+  },
+  "ridge": {
+    "MtChimney_Text_RouteSign": [
+      "SERRA DA CINZA\\n",
+      "{DOWN_ARROW} CASA DA CINZA$"
+    ]
+  }
+}
