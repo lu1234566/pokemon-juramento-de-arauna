@@ -1,0 +1,24 @@
+{
+  "lobby": {
+    "BattleFrontier_BattleTowerLobby_Text_RecordLastMatch": [
+      "Record last BATTLE TOWER match\\non your CIRCUIT PASS?$"
+    ]
+  },
+  "battle_room": {
+    "BattleFrontier_BattleTowerBattleRoom_Text_RecordYourBattle": [
+      "Record your battle on your\\nCIRCUIT PASS?$"
+    ],
+    "BattleFrontier_BattleTowerLobby_Text_BattleRecordedOnPass": [
+      "Your battle was recorded\\non the CIRCUIT PASS.$"
+    ],
+    "BattleFrontier_BattleTowerBattleRoom_Text_AnabelTalentShallBeRecognized": [
+      "ANABEL: Fufufu, nicely done...\\pYour CIRCUIT PASS, please...\\nYour talent shall be recognized.$"
+    ],
+    "BattleFrontier_BattleTowerBattleRoom_Text_ReceivedAbilitySymbol": [
+      "Ability Symbol was stamped on\\nthe CIRCUIT PASS!$"
+    ],
+    "BattleFrontier_BattleTowerBattleRoom_Text_AnabelCongratsYourPassPlease": [
+      "ANABEL: Fufu, congratulations...\\nYour CIRCUIT PASS, please...$"
+    ]
+  }
+}
