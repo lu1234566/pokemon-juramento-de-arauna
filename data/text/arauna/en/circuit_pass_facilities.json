@@ -1,0 +1,65 @@
+{
+  "dome": {
+    "BattleFrontier_BattleDomeLobby_Text_RecordLastMatch": [
+      "Record your last BATTLE DOME\\nmatch on your CIRCUIT PASS?$"
+    ]
+  },
+  "palace": {
+    "BattleFrontier_BattlePalaceBattleRoom_Text_RecordLastMatch": [
+      "Record your latest match on your\\nCIRCUIT PASS?$"
+    ],
+    "BattleFrontier_BattlePalaceBattleRoom_Text_LetsSeeFrontierPass": [
+      "SPENSER: Gwahahah!\\pHere!\\nLet's see your CIRCUIT PASS!$"
+    ],
+    "BattleFrontier_BattlePalaceBattleRoom_Text_ReceivedSpiritsSymbol": [
+      "The Spirits Symbol was stamped\\non the CIRCUIT PASS!$"
+    ],
+    "BattleFrontier_BattlePalaceBattleRoom_Text_HurryWithFrontierPass": [
+      "SPENSER: Gaaah, here!\\nHurry with that CIRCUIT PASS!$"
+    ]
+  },
+  "arena": {
+    "BattleFrontier_BattleArenaBattleRoom_Text_RecordLastBattle": [
+      "Record your last battle on your\\nCIRCUIT PASS?$"
+    ],
+    "BattleFrontier_BattleArenaBattleRoom_Text_GretaYoureToughAfterAll": [
+      "GRETA: Ow, wait a second!\\nYou are tough after all!\\pI like you!\\nLet's see your CIRCUIT PASS.$"
+    ],
+    "BattleFrontier_BattleArenaBattleRoom_Text_ReceivedGutsSymbol": [
+      "The Guts Symbol was stamped on\\nthe CIRCUIT PASS!$"
+    ],
+    "BattleFrontier_BattleArenaBattleRoom_Text_GretaBlownAway": [
+      "GRETA: Gaaah! Blown away!\\nLet's see your CIRCUIT PASS!$"
+    ]
+  },
+  "factory": {
+    "BattleFrontier_BattleFactoryBattleRoom_Text_NolandLetsSeeFrontierPass": [
+      "NOLAND: Smart going!\\nLet's see your CIRCUIT PASS.$"
+    ],
+    "BattleFrontier_BattleFactoryBattleRoom_Text_ReceivedKnowledgeSymbol": [
+      "Knowledge Symbol was stamped on\\nthe CIRCUIT PASS!$"
+    ],
+    "BattleFrontier_BattleFactoryBattleRoom_Text_OutOfMyLeagueLetsSeePass": [
+      "NOLAND: What the...\\nYou're getting out of my league!\\pLet's see that CIRCUIT PASS!$"
+    ]
+  },
+  "pike": {
+    "BattleFrontier_BattlePikeRoomNormal_Text_LucyShowMeFrontierPass": [
+      "LUCY: ... ... ... ... ... ...\\nShow me your CIRCUIT PASS...$"
+    ],
+    "BattleFrontier_BattlePikeRoomNormal_Text_ReceivedLuckSymbol": [
+      "The Luck Symbol was stamped on\\nthe CIRCUIT PASS!$"
+    ],
+    "BattleFrontier_BattlePikeRoomNormal_Text_LucyFrontierPass": [
+      "LUCY: ... ... ... ... ... ...\\p...CIRCUIT PASS...$"
+    ]
+  },
+  "pyramid": {
+    "BattleFrontier_BattlePyramidTop_Text_BrandonFrontierPassPlease": [
+      "BRANDON: Hahahah! Grand it was!\\pWell done! You've earned this.\\nYour CIRCUIT PASS, please!$"
+    ],
+    "BattleFrontier_BattlePyramidTop_Text_ReceivedBraveSymbol": [
+      "The Brave Symbol was stamped on\\nthe CIRCUIT PASS!$"
+    ]
+  }
+}
