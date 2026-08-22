@@ -1,0 +1,174 @@
+{
+  "BattleFrontier_OutsideWest_Text_BattleDomeSign": [
+    "BATTLE DOME\\p",
+    "TOURNAMENT FORMAT$"
+  ],
+  "BattleFrontier_OutsideWest_Text_BattleFactorySign": [
+    "BATTLE FACTORY\\p",
+    "RENTAL POKéMON FACILITY$"
+  ],
+  "BattleFrontier_OutsideWest_Text_BattlePikeSign": [
+    "BATTLE PIKE\\p",
+    "THREE PATHS, ONE CHOICE$"
+  ],
+  "BattleFrontier_OutsideWest_Text_ThisIsBattleTower": [
+    "BATTLE TOWER\\p",
+    "A win-streak challenge for\\n",
+    "trained teams.$"
+  ],
+  "BattleFrontier_OutsideWest_Text_MayISeeYourTicket": [
+    "ATTENDANT: Returning by ferry?\\p",
+    "May I see your TICKET?$"
+  ],
+  "BattleFrontier_OutsideWest_Text_MustHaveTicketToBoard": [
+    "No TICKET was found.\\p",
+    "ATTENDANT: A TICKET is required\\n",
+    "to board.$"
+  ],
+  "BattleFrontier_OutsideWest_Text_WhereWouldYouLikeToGo": [
+    "TICKET verified.\\p",
+    "ATTENDANT: Choose a port.$"
+  ],
+  "BattleFrontier_OutsideWest_Text_SlateportItIs": [
+    "ATTENDANT: PORTO DO SAL,\\n",
+    "correct?$"
+  ],
+  "BattleFrontier_OutsideWest_Text_LilycoveItIs": [
+    "ATTENDANT: BAIA DAS LUZES,\\n",
+    "correct?$"
+  ],
+  "BattleFrontier_OutsideWest_Text_SailWithUsAnotherTime": [
+    "ATTENDANT: Sail with us\\n",
+    "another time.$"
+  ],
+  "BattleFrontier_OutsideWest_Text_PleaseBoardFerry": [
+    "ATTENDANT: Board the LINE FERRY\\n",
+    "and wait for departure.$"
+  ],
+  "BattleFrontier_OutsideWest_Text_ThenWhereWouldYouLikeToGo": [
+    "ATTENDANT: Choose another port.$"
+  ],
+  "BattleFrontier_OutsideWest_Text_BestOutOfAllMyFriends": [
+    "I was the strongest back home.\\p",
+    "Here, everyone has a story like\\n",
+    "that. It's humbling.$"
+  ],
+  "BattleFrontier_OutsideWest_Text_CantFindBattleTower": [
+    "I'm looking for BATTLE TOWER.\\p",
+    "This BATTLE CIRCUIT map is\\n",
+    "bigger than I expected.$"
+  ],
+  "BattleFrontier_OutsideWest_Text_GotSeasickOnWayHere": [
+    "I planned to challenge at once.\\p",
+    "The ferry had other plans for\\n",
+    "my stomach.$"
+  ],
+  "BattleFrontier_OutsideWest_Text_OnlyToughTrainersBroughtHere": [
+    "The BATTLE CIRCUIT draws\\n",
+    "experienced TRAINERS.\\p",
+    "Getting here is only the start.$"
+  ],
+  "BattleFrontier_OutsideWest_Text_SureWeCanChallengeWithNoMons": [
+    "Wait. We can enter without our\\n",
+    "own POKéMON?$"
+  ],
+  "BattleFrontier_OutsideWest_Text_BigGuySaidIllLendYouMons": [
+    "That's what I heard.\\p",
+    "The FACTORY provides rental\\n",
+    "POKéMON for the challenge.$"
+  ],
+  "BattleFrontier_OutsideWest_Text_WhosRaisingThoseRentalMons": [
+    "The FACTORY lends POKéMON.\\p",
+    "I keep wondering who trains and\\n",
+    "cares for all of them.$"
+  ],
+  "BattleFrontier_OutsideWest_Text_ScaredOfPikeBecauseSeviper": [
+    "The BATTLE PIKE unsettles me.\\p",
+    "Three paths and no certainty.\\p",
+    "I came this far. I'll try.$"
+  ],
+  "BattleFrontier_OutsideWest_Text_LetsPlayRockPaperScissors": [
+    "Rock, paper, scissors.\\p",
+    "One, two, three!$"
+  ],
+  "BattleFrontier_OutsideWest_Text_WonIllTakePikeChallenge": [
+    "I won. That's my sign.\\p",
+    "BATTLE PIKE next.$"
+  ],
+  "BattleFrontier_OutsideWest_Text_LostIllPutOffPikeChallenge": [
+    "I lost.\\p",
+    "Maybe BATTLE PIKE can wait\\n",
+    "until tomorrow.$"
+  ],
+  "BattleFrontier_OutsideWest_Text_ChooseFishingOverBattling": [
+    "Everyone came here to battle.\\p",
+    "I'd still rather fish.\\p",
+    "Apparently this pond disagrees.$"
+  ],
+  "BattleFrontier_OutsideWest_Text_KeepBattlingUntilIGetSymbol": [
+    "I'm staying until I earn a\\n",
+    "SYMBOL. That's the plan.$"
+  ],
+  "BattleFrontier_OutsideWest_Text_YoureOffToChallengeDome": [
+    "Heading to the BATTLE DOME?\\p",
+    "Good luck. Maybe we'll meet\\n",
+    "inside the bracket.$"
+  ],
+  "BattleFrontier_OutsideWest_Text_DomeIsHereGrandpa": [
+    "Grandpa, this way.\\p",
+    "The BATTLE DOME is here.$"
+  ],
+  "BattleFrontier_OutsideWest_Text_WontLetGentlemenBeatMe": [
+    "So this is the BATTLE DOME.\\p",
+    "First challenge: finding the\\n",
+    "entrance.$"
+  ],
+  "BattleFrontier_OutsideWest_Text_NothingHereNotLongAgo": [
+    "This whole complex is new.\\p",
+    "Not long ago, this shore was\\n",
+    "almost empty.$"
+  ],
+  "BattleFrontier_OutsideWest_Text_FinallyArrivedAtFrontier": [
+    "I finally reached the\\n",
+    "BATTLE CIRCUIT.\\p",
+    "Now I have to prove I belong.$"
+  ],
+  "BattleFrontier_OutsideWest_Text_SquareFilledWithToughPeople": [
+    "Munch, munch...\\p",
+    "Every bench has someone planning\\n",
+    "a challenge.$"
+  ],
+  "BattleFrontier_OutsideWest_Text_MetOlderGirlAtPike": [
+    "I met the PIKE's top TRAINER.\\p",
+    "She told me to stop eating while\\n",
+    "she was talking.\\p",
+    "Fair request, honestly.$"
+  ],
+  "BattleFrontier_OutsideWest_Text_LastTimeOurEyesMet": [
+    "Last time I cheered for the\\n",
+    "DOME ACE, our eyes met.$"
+  ],
+  "BattleFrontier_OutsideWest_Text_DomeAceLookedBecauseOfMyCheering": [
+    "Only because I was louder.\\p",
+    "The DOME ACE looked at our whole\\n",
+    "section.$"
+  ],
+  "BattleFrontier_OutsideWest_Text_DomeAceIsMine": [
+    "Both of you, enough.\\p",
+    "Cheer for the DOME ACE without\\n",
+    "turning it into a contest.$"
+  ],
+  "BattleFrontier_OutsideWest_Text_FansOverThereUsedToBeTrainers": [
+    "Those fans used to compete here.\\p",
+    "A tournament loss changed what\\n",
+    "they wanted from the place.\\p",
+    "Now they come to watch the\\n",
+    "DOME ACE instead.$"
+  ],
+  "BattleFrontier_OutsideWest_Text_MonWithLongTailInFrontier": [
+    "Someone reported a POKéMON with\\n",
+    "an unusually long tail nearby.\\p",
+    "My challenges can wait.\\n",
+    "I want to see it.$"
+  ]
+}
