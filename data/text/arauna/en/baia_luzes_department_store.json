@@ -1,0 +1,142 @@
+{
+  "1f": {
+    "LilycoveCity_DepartmentStore_1F_Text_WelcomeToDeptStore": [
+      "Welcome to BAIA DAS LUZES\\n",
+      "DEPARTMENT STORE.$"
+    ],
+    "LilycoveCity_DepartmentStore_1F_Text_IBuyAllSortsOfThings": [
+      "I come in for one thing and\\n",
+      "leave carrying five.\\p",
+      "This place is dangerous to my\\n",
+      "wallet.$"
+    ],
+    "LilycoveCity_DepartmentStore_1F_Text_MomBuyingMeFurniture": [
+      "Mom promised I could choose one\\n",
+      "piece of furniture today.\\p",
+      "Only one... probably.$"
+    ],
+    "LilycoveCity_DepartmentStore_1F_Text_BuyingSomethingForAzumarill": [
+      "My AZUMARILL won a CONTEST.\\p",
+      "I'm finding a little reward.\\p",
+      "Partners deserve a celebration.$"
+    ],
+    "LilycoveCity_DepartmentStore_1F_Text_FloorNamesSign": [
+      "1F: SERVICE / LOTTERY\\p",
+      "2F: TRAVEL SUPPLIES\\p",
+      "3F: TRAINING SUPPORT\\p",
+      "4F: TM COUNTER\\p",
+      "5F: DECORATIONS\\p",
+      "ROOFTOP: PLAZA / SALES$"
+    ]
+  },
+  "2f": {
+    "LilycoveCity_DepartmentStore_2F_Text_LearnToUseItemsProperly": [
+      "Carrying items is easy.\\p",
+      "Knowing when to use them is the\\n",
+      "part worth learning.$"
+    ],
+    "LilycoveCity_DepartmentStore_2F_Text_GoodGiftForHusband": [
+      "My husband is home today.\\p",
+      "I'm looking for something useful\\n",
+      "that still feels like a gift.$"
+    ],
+    "LilycoveCity_DepartmentStore_2F_Text_StockUpOnItems": [
+      "I'm heading out along the coast.\\p",
+      "Long routes punish bad packing.\\n",
+      "I'm stocking up first.$"
+    ]
+  },
+  "3f": {
+    "LilycoveCity_DepartmentStore_3F_Text_ItemsBestForTougheningPokemon": [
+      "Training items can help, but\\n",
+      "don't replace good practice.\\p",
+      "PROTEIN supports ATTACK.\\n",
+      "CALCIUM supports SP. ATK.$"
+    ],
+    "LilycoveCity_DepartmentStore_3F_Text_WantMoreEndurance": [
+      "I want more endurance from my\\n",
+      "POKéMON.\\p",
+      "IRON for DEFENSE, or ZINC for\\n",
+      "SP. DEF? I'm still deciding.$"
+    ],
+    "LilycoveCity_DepartmentStore_3F_Text_GaveCarbosToSpeedUpMon": [
+      "I used CARBOS while training.\\p",
+      "My POKéMON's SPEED improved.\\n",
+      "Now we practice using it well.$"
+    ]
+  },
+  "4f": {
+    "LilycoveCity_DepartmentStore_4F_Text_AttackOrDefenseTM": [
+      "Attack or defense?\\p",
+      "A TM adds options, but choosing\\n",
+      "the right one is the hard part.$"
+    ],
+    "LilycoveCity_DepartmentStore_4F_Text_FiftyDifferentTMs": [
+      "There are TMs for all kinds of\\n",
+      "battle plans.\\p",
+      "The catalog grows every time\\n",
+      "I look at it.$"
+    ],
+    "LilycoveCity_DepartmentStore_4F_Text_PokemonOnlyHaveFourMoves": [
+      "I want every TM on the shelf.\\p",
+      "Then I remember a POKéMON only\\n",
+      "keeps four moves at a time.$"
+    ]
+  },
+  "5f": {
+    "LilycoveCity_DepartmentStore_5F_Text_PlaceFullOfCuteDolls": [
+      "I came for DOLLS for the kids.\\p",
+      "I may leave with one for myself.$"
+    ],
+    "LilycoveCity_DepartmentStore_5F_Text_GettingDollInsteadOfPokemon": [
+      "I'm not ready to care for a\\n",
+      "POKéMON yet.\\p",
+      "So I'm choosing a DOLL today.$"
+    ],
+    "LilycoveCity_DepartmentStore_5F_Text_SellManyCuteMatsHere": [
+      "There are too many good MATS.\\p",
+      "I came to choose one.\\n",
+      "That plan is failing.$"
+    ],
+    "LilycoveCity_DepartmentStore_5F_Text_ClosedRooftopForWeather": [
+      "The rooftop is closed today.\\p",
+      "The weather over the coast is\\n",
+      "too dangerous.$"
+    ]
+  },
+  "roof": {
+    "LilycoveCity_DepartmentStoreRooftop_Text_SetDatesForClearOutSales": [
+      "Sale dates are announced late\\n",
+      "far enough ahead.\\p",
+      "I keep checking the broadcasts.$"
+    ],
+    "LilycoveCity_DepartmentStoreRooftop_Text_BeenWaitingForClearOutSale": [
+      "The clear-out sale is on!\\p",
+      "Some decor appears only here.\\n",
+      "I planned for this.$"
+    ],
+    "LilycoveCity_DepartmentStoreRooftop_Text_BoneDryThirsty": [
+      "All those stairs...\\p",
+      "I need something cold to drink.$"
+    ],
+    "LilycoveCity_DepartmentStoreRooftop_Text_WhichDrinkWouldYouLike": [
+      "VENDING MACHINE\\p",
+      "Choose a drink.$"
+    ],
+    "LilycoveCity_DepartmentStoreRooftop_Text_CanOfDrinkDroppedDown": [
+      "Clang!\\p",
+      "A {STR_VAR_1} dropped down.$"
+    ],
+    "LilycoveCity_DepartmentStoreRooftop_Text_ExtraCanOfDrinkDroppedDown": [
+      "Clang!\\p",
+      "Bonus! Another {STR_VAR_1}\\n",
+      "dropped down.$"
+    ],
+    "LilycoveCity_DepartmentStoreRooftop_Text_NotEnoughMoney": [
+      "Not enough money.$"
+    ],
+    "LilycoveCity_DepartmentStoreRooftop_Text_DecidedAgainstBuyingDrink": [
+      "You decide not to buy a drink.$"
+    ]
+  }
+}
