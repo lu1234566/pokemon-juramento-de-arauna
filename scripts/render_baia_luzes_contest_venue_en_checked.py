@@ -1,0 +1,221 @@
+#!/usr/bin/env python3
+from __future__ import annotations
+
+import argparse
+import json
+import re
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+BANK_PATH = ROOT / "data" / "text" / "arauna" / "en" / "baia_luzes_contest_venue.json"
+FILES = {
+    "hall": ROOT / "data" / "maps" / "LilycoveCity_ContestHall" / "scripts.inc",
+    "lobby": ROOT / "data" / "maps" / "LilycoveCity_ContestLobby" / "scripts.inc",
+}
+EXPECTED_COUNTS = {"hall": 36, "lobby": 17}
+EXPECTED_PREFIXES = {
+    "hall": "LilycoveCity_ContestHall_Text_",
+    "lobby": "LilycoveCity_ContestLobby_Text_",
+}
+GAMEPLAY_TOKENS = {
+    "hall": (
+        "LOCALID_SMART_MC",
+        "LOCALID_SMART_JUDGE",
+        "LOCALID_BEAUTY_MC",
+        "LOCALID_BEAUTY_JUDGE",
+        "LOCALID_CUTE_MC",
+        "LOCALID_CUTE_JUDGE",
+        "Common_Movement_FaceOriginalDirection",
+    ),
+    "lobby": (
+        "VAR_LILYCOVE_CONTEST_LOBBY_STATE",
+        "SaveMuseumContestPainting",
+        "GiveMonArtistRibbon",
+        "GAME_STAT_RECEIVED_RIBBONS",
+        "FLAG_RECEIVED_POKEBLOCK_CASE",
+        "POKENEWS_BLENDMASTER",
+        "FLAG_COOL_PAINTING_MADE",
+        "FLAG_BEAUTY_PAINTING_MADE",
+        "FLAG_CUTE_PAINTING_MADE",
+        "FLAG_SMART_PAINTING_MADE",
+        "FLAG_TOUGH_PAINTING_MADE",
+        "ClearLinkContestFlags",
+        "VAR_CONTEST_RANK",
+        "VAR_CONTEST_CATEGORY",
+    ),
+}
+MAX_VISIBLE_WIDTH = 32
+PLACEHOLDER_SAMPLE = "LONGPHRASE123456"
+CONTROL_RE = re.compile(r"\\[npl]")
+PLACEHOLDER_RE = re.compile(r"\{[^}]+\}")
+
+
+def load_bank() -> dict[str, dict[str, list[str]]]:
+    bank = json.loads(BANK_PATH.read_text(encoding="utf-8"))
+    if set(bank) != set(FILES):
+        raise ValueError(f"bank sections mismatch: {sorted(bank)}")
+    for section, entries in bank.items():
+        if len(entries) != EXPECTED_COUNTS[section]:
+            raise ValueError(
+                f"{section}: expected {EXPECTED_COUNTS[section]} labels, found {len(entries)}"
+            )
+        prefix = EXPECTED_PREFIXES[section]
+        bad = sorted(label for label in entries if not label.startswith(prefix))
+        if bad:
+            raise ValueError(f"{section}: unexpected label prefix: {bad}")
+    return bank
+
+
+def validate_payloads(bank: dict[str, dict[str, list[str]]]) -> None:
+    for section, entries in bank.items():
+        for label, payloads in entries.items():
+            if not payloads or not all(isinstance(x, str) and x for x in payloads):
+                raise ValueError(f"{section}/{label}: payloads must be non-empty strings")
+            if not payloads[-1].endswith("$"):
+                raise ValueError(f"{section}/{label}: final payload must end with $")
+            if any("$" in payload for payload in payloads[:-1]):
+                raise ValueError(f"{section}/{label}: early $ terminator")
+            for payload in payloads:
+                if '"' in payload:
+                    raise ValueError(f"{section}/{label}: raw quote is not assembler-safe")
+                visible = PLACEHOLDER_RE.sub(PLACEHOLDER_SAMPLE, payload).replace("$", "")
+                for segment in CONTROL_RE.split(visible):
+                    segment = segment.strip()
+                    if len(segment) > MAX_VISIBLE_WIDTH:
+                        raise ValueError(
+                            f"{section}/{label}: visible segment is "
+                            f"{len(segment)} chars: {segment!r}"
+                        )
+
+
+def label_match(source: str, label: str) -> re.Match[str]:
+    pattern = re.compile(rf"(?m)^{re.escape(label)}::?\n")
+    matches = list(pattern.finditer(source))
+    if len(matches) != 1:
+        raise ValueError(f"{label}: expected one label, found {len(matches)}")
+    return matches[0]
+
+
+def body_span(source: str, label: str) -> tuple[int, int]:
+    match = label_match(source, label)
+    start = match.end()
+    pos = start
+    saw_string = False
+    continuation = False
+    while pos < len(source):
+        newline = source.find("\n", pos)
+        end = len(source) if newline < 0 else newline + 1
+        line = source[pos:end]
+        stripped = line.lstrip(" \t")
+        is_string = stripped.startswith(".string ")
+        if is_string or continuation:
+            saw_string = saw_string or is_string
+            continuation = line.rstrip("\n").endswith("\\")
+            pos = end
+            continue
+        break
+    if not saw_string:
+        raise ValueError(f"{label}: no consecutive .string body found")
+    return start, pos
+
+
+def render_text(source: str, targets: dict[str, list[str]]) -> str:
+    spans: list[tuple[int, int, str]] = []
+    for label, payloads in targets.items():
+        start, end = body_span(source, label)
+        new_body = "".join(f'\t.string "{payload}"\n' for payload in payloads)
+        spans.append((start, end, new_body))
+    rendered = source
+    for start, end, new_body in sorted(spans, reverse=True):
+        rendered = rendered[:start] + new_body + rendered[end:]
+    return rendered
+
+
+def mask_targets(source: str, labels: set[str], marker: str) -> str:
+    spans = [body_span(source, label) for label in labels]
+    masked = source
+    for start, end in sorted(spans, reverse=True):
+        masked = masked[:start] + f'\t.string "<{marker}>"\n' + masked[end:]
+    return masked
+
+
+def validate_structure(section: str, source: str, rendered: str, labels: set[str]) -> None:
+    marker = f"ARAUNA_CONTEST_{section.upper()}"
+    if mask_targets(source, labels, marker) != mask_targets(rendered, labels, marker):
+        raise ValueError(f"{section}: non-dialogue Contest venue structure changed")
+
+
+def validate_gameplay_counts(section: str, source: str, rendered: str) -> None:
+    for token in GAMEPLAY_TOKENS[section]:
+        before = source.count(token)
+        after = rendered.count(token)
+        if before == 0:
+            raise ValueError(f"{section}: expected Contest gameplay token missing: {token}")
+        if before != after:
+            raise ValueError(
+                f"{section}: Contest gameplay token count changed: "
+                f"{token}: {before} -> {after}"
+            )
+
+
+def validate_rendered(section: str, rendered: str, targets: dict[str, list[str]]) -> None:
+    for label, payloads in targets.items():
+        start, end = body_span(rendered, label)
+        body = rendered[start:end]
+        for payload in payloads:
+            if f'\t.string "{payload}"' not in body:
+                raise ValueError(f"{section}/{label}: rendered payload missing: {payload!r}")
+
+    owned = "\n".join(
+        rendered[body_span(rendered, label)[0]:body_span(rendered, label)[1]]
+        for label in targets
+    )
+    if section == "hall":
+        for token in ("mean people", "cutest of the lot", "coat turned all scraggly"):
+            if token in owned:
+                raise ValueError(f"hall: stale Contest caricature survived: {token}")
+        if "BAIA DAS LUZES" not in owned:
+            raise ValueError("hall: BAIA DAS LUZES stage identity missing")
+    if section == "lobby" and "BAIA DAS LUZES MUSEUM" not in owned:
+        raise ValueError("lobby: museum bridge identity missing")
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(
+        description="Render Baia das Luzes Contest Hall and lobby local surface in English."
+    )
+    parser.add_argument("--check", action="store_true")
+    parser.add_argument("--in-place", action="store_true")
+    args = parser.parse_args()
+    if args.check and args.in_place:
+        parser.error("use either --check or --in-place")
+
+    bank = load_bank()
+    validate_payloads(bank)
+    outputs: dict[str, str] = {}
+    for section, path in FILES.items():
+        source = path.read_text(encoding="utf-8")
+        rendered = render_text(source, bank[section])
+        labels = set(bank[section])
+        validate_structure(section, source, rendered, labels)
+        validate_gameplay_counts(section, source, rendered)
+        validate_rendered(section, rendered, bank[section])
+        outputs[section] = rendered
+
+    if args.check:
+        print(
+            "Baia das Luzes Contest venue English renderer OK: "
+            f"{sum(EXPECTED_COUNTS.values())} text blocks validated."
+        )
+        return 0
+    if args.in_place:
+        for section, path in FILES.items():
+            path.write_text(outputs[section], encoding="utf-8")
+        return 0
+
+    print(outputs["hall"], end="")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
