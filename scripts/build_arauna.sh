@@ -88,6 +88,8 @@ overlay_files=(
     "data/maps/LilycoveCity_DepartmentStore_4F/scripts.inc"
     "data/maps/LilycoveCity_DepartmentStore_5F/scripts.inc"
     "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.inc"
+    "data/maps/LilycoveCity_ContestHall/scripts.inc"
+    "data/maps/LilycoveCity_ContestLobby/scripts.inc"
     "data/maps/SlateportCity/scripts.inc"
     "data/maps/SlateportCity_Harbor/scripts.inc"
     "data/maps/SlateportCity_OceanicMuseum_1F/scripts.inc"
@@ -171,6 +173,7 @@ python3 scripts/render_baia_luzes_surface_en_checked.py --in-place
 python3 scripts/render_baia_luzes_interiors_en_checked.py --in-place
 python3 scripts/render_baia_luzes_fan_club_en_checked.py --in-place
 python3 scripts/render_baia_luzes_department_store_en_checked.py --in-place
+python3 scripts/render_baia_luzes_contest_venue_en_checked.py --in-place
 python3 scripts/render_mt_chimney_surface.py --in-place
 python3 scripts/render_casa_da_cinza_nara_en_checked.py --in-place
 python3 scripts/render_mata_do_meio_lidia_en.py --in-place
