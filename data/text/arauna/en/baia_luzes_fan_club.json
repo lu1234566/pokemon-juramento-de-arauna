@@ -1,0 +1,280 @@
+{
+  "club": {
+    "LilycoveCity_PokemonTrainerFanClub_Text_OhWowItsPlayer": [
+      "Wait--it's {PLAYER}!$"
+    ],
+    "LilycoveCity_PokemonTrainerFanClub_Text_HeardAboutYouImYourFan": [
+      "We heard about your battles.\\p",
+      "This room argues over which\\n",
+      "TRAINERS deserve attention.\\p",
+      "I chose you.\\p",
+      "Keep battling, but don't let us\\n",
+      "turn you into someone else.$"
+    ],
+    "LilycoveCity_PokemonTrainerFanClub_Text_YoureOneWeWantToWin": [
+      "{PLAYER}!\\p",
+      "We're with you.\\p",
+      "Give us a battle to remember.$"
+    ],
+    "LilycoveCity_PokemonTrainerFanClub_Text_OthersDontKnowYoureTheBest": [
+      "The others can disagree.\\p",
+      "I still think you're the TRAINER\\n",
+      "to watch, {PLAYER}.$"
+    ],
+    "LilycoveCity_PokemonTrainerFanClub_Text_TrainersPowerIsOutOfTheOrdinary": [
+      "Right now, everyone is talking\\n",
+      "about {STR_VAR_1}.\\p",
+      "That TRAINER keeps earning it.$"
+    ],
+    "LilycoveCity_PokemonTrainerFanClub_Text_TrainerIsBestNoOneWantsToListen": [
+      "{STR_VAR_1} gets my vote.\\p",
+      "I keep saying it.\\p",
+      "No one here agrees yet.$"
+    ],
+    "LilycoveCity_PokemonTrainerFanClub_Text_HearingAboutToughNewTrainer": [
+      "People keep talking about a new\\n",
+      "TRAINER beating GYM LEADERS.\\p",
+      "A reputation travels fast here.$"
+    ],
+    "LilycoveCity_PokemonTrainerFanClub_Text_ImPullingForYou": [
+      "{PLAYER}!\\p",
+      "I'm cheering for you.\\p",
+      "Win your way, not ours.$"
+    ],
+    "LilycoveCity_PokemonTrainerFanClub_Text_BrawlyNoImYourFan": [
+      "I still admire ADEMAR.\\p",
+      "But today, I'm cheering for you,\\n",
+      "{PLAYER}.$"
+    ],
+    "LilycoveCity_PokemonTrainerFanClub_Text_ICantHelpLikingBrawly": [
+      "You're impressive.\\p",
+      "I still like ADEMAR's timing.\\n",
+      "The man reads a current.$"
+    ],
+    "LilycoveCity_PokemonTrainerFanClub_Text_NobodyUnderstandsBrawly": [
+      "Everyone changed favorites.\\p",
+      "I still back ADEMAR.\\p",
+      "A quiet style still has force.$"
+    ],
+    "LilycoveCity_PokemonTrainerFanClub_Text_MyFavoriteTrainerIsBrawly": [
+      "My favorite is ADEMAR.\\p",
+      "He says timing matters more\\n",
+      "than noise.$"
+    ],
+    "LilycoveCity_PokemonTrainerFanClub_Text_YouveSurpassedYourFather": [
+      "You fight in your own way.\\p",
+      "ELIAS does too.\\p",
+      "That matters more than rankings.$"
+    ],
+    "LilycoveCity_PokemonTrainerFanClub_Text_YourFatherNeverGaveUpSoKeepOnBattling": [
+      "ELIAS kept standing when things\\n",
+      "turned bleak.\\p",
+      "You don't owe him the same path.$"
+    ],
+    "LilycoveCity_PokemonTrainerFanClub_Text_LongWayToGoComparedToNorman": [
+      "ELIAS has experience you don't.\\p",
+      "You have choices he didn't.\\p",
+      "Comparisons miss half the story.$"
+    ],
+    "LilycoveCity_PokemonTrainerFanClub_Text_YouAndNormanAreDifferent": [
+      "You and ELIAS are different\\n",
+      "TRAINERS.\\p",
+      "That's not a defect.$"
+    ],
+    "LilycoveCity_PokemonTrainerFanClub_Text_WeDiscussStrongestTrainers": [
+      "We argue about TRAINERS here.\\p",
+      "Strength, style, judgment--\\n",
+      "we weigh them differently.\\p",
+      "Get famous and we'll argue\\n",
+      "about you too.$"
+    ],
+    "LilycoveCity_PokemonTrainerFanClub_Text_OhWoweeItsPlayer": [
+      "It's {PLAYER}!\\p",
+      "Can I shake your hand?$"
+    ],
+    "LilycoveCity_PokemonTrainerFanClub_Text_AlwaysCheerForYou": [
+      "I'll keep cheering for you,\\n",
+      "{PLAYER}.\\p",
+      "Losing once wouldn't erase\\n",
+      "what you've already done.$"
+    ],
+    "LilycoveCity_PokemonTrainerFanClub_Text_EveryoneThinksTrainerIsCool": [
+      "{STR_VAR_1} is cool.\\p",
+      "Everyone here says so.$"
+    ],
+    "LilycoveCity_PokemonTrainerFanClub_Text_TrainerIsReallyCoolItsJustMe": [
+      "Maybe I'm the only one left.\\p",
+      "I still back {STR_VAR_1}.\\p",
+      "A crowd isn't proof.$"
+    ],
+    "LilycoveCity_PokemonTrainerFanClub_Text_WishThereWasTrainerLikeThat": [
+      "My ideal TRAINER is strong,\\n",
+      "kind, and fair to POKéMON.\\p",
+      "I hope I meet one.$"
+    ],
+    "LilycoveCity_PokemonTrainerFanClub_Text_WantToBeStrongLikeYou": [
+      "{PLAYER}!\\p",
+      "I want to grow strong too.\\p",
+      "Not copy you--learn from you.$"
+    ],
+    "LilycoveCity_PokemonTrainerFanClub_Text_OnlyOneWhoCheersForYou": [
+      "Even if I'm the only one,\\n",
+      "I'll still cheer for you.\\p",
+      "Belief doesn't need a crowd.$"
+    ],
+    "LilycoveCity_PokemonTrainerFanClub_Text_TrainerIsWickedlyCool": [
+      "{STR_VAR_1} is incredible.\\p",
+      "I'd love to meet that TRAINER.$"
+    ],
+    "LilycoveCity_PokemonTrainerFanClub_Text_NeverGoingToStopBeingTrainersFan": [
+      "I still back {STR_VAR_1}.\\p",
+      "Not because people say to.\\n",
+      "Because I chose to.$"
+    ],
+    "LilycoveCity_PokemonTrainerFanClub_Text_YoureAmazingAfterAll": [
+      "{PLAYER}!\\p",
+      "You really are good.\\p",
+      "I noticed you early.\\p",
+      "Nice to know my guess held up.$"
+    ],
+    "LilycoveCity_PokemonTrainerFanClub_Text_ImInYourCorner": [
+      "I'm in your corner.\\p",
+      "Don't perform for us.\\n",
+      "Battle the way you mean to.$"
+    ],
+    "LilycoveCity_PokemonTrainerFanClub_Text_ThinkTrainerIsNumberOne": [
+      "You're a good TRAINER.\\p",
+      "I rank {STR_VAR_1} higher.\\p",
+      "That's only my opinion.$"
+    ],
+    "LilycoveCity_PokemonTrainerFanClub_Text_YoureMaybeStrongerThanTrainer": [
+      "You may be stronger than\\n",
+      "{STR_VAR_1}.\\p",
+      "I still support that TRAINER.\\p",
+      "Strength isn't the only reason.$"
+    ],
+    "LilycoveCity_PokemonTrainerFanClub_Text_YouChangedMyMind": [
+      "You changed my mind.\\p",
+      "I'd like to know how you built\\n",
+      "that kind of control.$"
+    ],
+    "LilycoveCity_PokemonTrainerFanClub_Text_YouBattleAttractivelyInToughSituation": [
+      "You get calmer when battles\\n",
+      "get difficult.\\p",
+      "That's what I like watching.$"
+    ],
+    "LilycoveCity_PokemonTrainerFanClub_Text_TrainerIsStandout": [
+      "{STR_VAR_1} stands out.\\p",
+      "You have skill too, but I want\\n",
+      "to see more before I switch.$"
+    ],
+    "LilycoveCity_PokemonTrainerFanClub_Text_NoOneCanKnockYouButTrainerStronger": [
+      "You're strong and you care for\\n",
+      "your POKéMON.\\p",
+      "I still back {STR_VAR_1}.\\p",
+      "Both things can be true.$"
+    ],
+    "LilycoveCity_PokemonTrainerFanClub_Text_YouImpressive": [
+      "You...\\p",
+      "Impressive!$"
+    ],
+    "LilycoveCity_PokemonTrainerFanClub_Text_OnlyIRecognizeYourTrueWorth": [
+      "Maybe I'm your only fan here.\\p",
+      "That's enough for me.\\p",
+      "Worth isn't decided by a vote.$"
+    ],
+    "LilycoveCity_PokemonTrainerFanClub_Text_HaventRealizedPotential": [
+      "I see strength in your eyes.\\p",
+      "But you're still learning what\\n",
+      "to do with it.$"
+    ],
+    "LilycoveCity_PokemonTrainerFanClub_Text_YourePowerfulButNotTrueStrength": [
+      "You are powerful.\\p",
+      "But power alone isn't enough.\\p",
+      "True strength is...\\p",
+      "...I'm still deciding too.$"
+    ]
+  },
+  "tv": {
+    "LilycoveCity_PokemonTrainerFanClub_Text_WhatsYourOpinionOfTrainer": [
+      "I'm gathering opinions about\\n",
+      "{STR_VAR_1}.\\p",
+      "What do you think?$"
+    ],
+    "LilycoveCity_PokemonTrainerFanClub_Text_ThatsWhatYouThink": [
+      "Got it.\\p",
+      "That's your view of the TRAINER.$"
+    ],
+    "LilycoveCity_PokemonTrainerFanClub_Text_HaveYouForgottenTrainer": [
+      "Do you feel you don't know\\n",
+      "{STR_VAR_1} well enough?$"
+    ],
+    "LilycoveCity_PokemonTrainerFanClub_Text_WhatsYourOpinionOfTrainer2": [
+      "Then give me your own words.\\p",
+      "What is {STR_VAR_1} like?$"
+    ],
+    "LilycoveCity_PokemonTrainerFanClub_Text_HowStrongRateTrainer": [
+      "How strong would you rate\\n",
+      "{STR_VAR_1}, from 0 to 100?$"
+    ],
+    "LilycoveCity_PokemonTrainerFanClub_Text_HaveYouForgottenTrainer2": [
+      "Still not enough to judge\\n",
+      "{STR_VAR_1}?$"
+    ],
+    "LilycoveCity_PokemonTrainerFanClub_Text_YouShouldMeetTrainer": [
+      "Fair enough.\\p",
+      "Meet {STR_VAR_1} first.\\p",
+      "A rumor isn't a person.$"
+    ],
+    "LilycoveCity_PokemonTrainerFanClub_Text_ThankYouIllShareThisInfo": [
+      "Thank you.\\p",
+      "I'll mark this as your view,\\n",
+      "not fact about {STR_VAR_1}.$"
+    ],
+    "LilycoveCity_PokemonTrainerFanClub_HopeYouCatchTVSpecial": [
+      "Our special on {STR_VAR_1}\\n",
+      "should air soon.\\p",
+      "Your words are part of it.$"
+    ],
+    "gTVTrainerFanClubSpecialText00": [
+      "TRAINER FAN CLUB\\n",
+      "{STR_VAR_1} SPECIAL!\\p",
+      "Fans across ARAUNA have been\\n",
+      "talking about {STR_VAR_1}.\\p",
+      "{STR_VAR_2} gave us a view\\n",
+      "of this TRAINER.\\p",
+      "One-word answer:\\n",
+      "{STR_VAR_3}.\\p",
+      "We also asked for a strength\\n",
+      "score from 0 to 100.$"
+    ],
+    "gTVTrainerFanClubSpecialText01": [
+      "The score: {STR_VAR_3}.\\p",
+      "High marks from {STR_VAR_2}\\n",
+      "for {STR_VAR_1}.\\p",
+      "That's one person's judgment.$"
+    ],
+    "gTVTrainerFanClubSpecialText02": [
+      "The score: {STR_VAR_3}.\\p",
+      "{STR_VAR_2} shows respect,\\n",
+      "but leaves room for rivalry.$"
+    ],
+    "gTVTrainerFanClubSpecialText03": [
+      "The score: {STR_VAR_3}.\\p",
+      "The rating is low today.\\p",
+      "Reputations can change.$"
+    ],
+    "gTVTrainerFanClubSpecialText04": [
+      "The score: {STR_VAR_3}.\\p",
+      "{STR_VAR_2} gives low marks\\n",
+      "to {STR_VAR_1}.\\p",
+      "Today is not forever.$"
+    ],
+    "gTVTrainerFanClubSpecialText05": [
+      "That's our snapshot for now.\\p",
+      "One opinion, one score, one day.\\p",
+      "Make your own judgment when\\n",
+      "you meet {STR_VAR_1}.$"
+    ]
+  }
+}
