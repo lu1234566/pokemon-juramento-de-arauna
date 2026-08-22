@@ -1,0 +1,164 @@
+{
+  "east": {
+    "BattleFrontier_OutsideEast_Text_BattleTowerSign": [
+      "BATTLE TOWER\\n",
+      "Build the longest win streak.$"
+    ],
+    "BattleFrontier_OutsideEast_Text_BattlePalaceSign": [
+      "BATTLE PALACE\\n",
+      "Trust how your POKéMON act.$"
+    ],
+    "BattleFrontier_OutsideEast_Text_BattleArenaSign": [
+      "BATTLE ARENA\\n",
+      "Three turns. Choices matter.$"
+    ],
+    "BattleFrontier_OutsideEast_Text_BattlePyramidSign": [
+      "BATTLE PYRAMID\\n",
+      "Explore, endure, reach the top.$"
+    ],
+    "BattleFrontier_OutsideEast_Text_RankingHallSign": [
+      "BATTLE CIRCUIT RANKING HALL\\n",
+      "Records from every format.$"
+    ],
+    "BattleFrontier_OutsideEast_Text_ExchangeCornerSign": [
+      "BATTLE POINT EXCHANGE\\n",
+      "Trade BP for approved rewards.$"
+    ],
+    "BattleFrontier_OutsideEast_Text_BattleTowerFeelsSpecial": [
+      "The TOWER is all about streaks.\\p",
+      "One loss ends the run.\\n",
+      "That pressure changes a run.$"
+    ],
+    "BattleFrontier_OutsideEast_Text_ConquerLeagueAndFrontier": [
+      "I cleared the LEAGUE.\\p",
+      "Now I'm learning the CIRCUIT.\\p",
+      "Winning here means adapting to\\n",
+      "rules I don't use elsewhere.$"
+    ],
+    "BattleFrontier_OutsideEast_Text_PyramidTooHarsh": [
+      "The PYRAMID wore me out.\\p",
+      "The battles are only part of it.\\n",
+      "You have to manage the route.$"
+    ],
+    "BattleFrontier_OutsideEast_Text_ThriveInDarkness": [
+      "The PYRAMID keeps lights low.\\p",
+      "I like not seeing the full path.\\n",
+      "It makes every step deliberate.$"
+    ],
+    "BattleFrontier_OutsideEast_Text_PutTogetherUltimateTeam": [
+      "I built my strongest team.\\p",
+      "The ARENA still judges more than\\n",
+      "raw power.\\p",
+      "Good. I came to be tested.$"
+    ],
+    "BattleFrontier_OutsideEast_Text_DidScottBringYouHere": [
+      "Did SEU BENTO invite you too?\\p",
+      "He notices how TRAINERS adapt.\\p",
+      "I've never seen him compete,\\n",
+      "though.$"
+    ],
+    "BattleFrontier_OutsideEast_Text_BelieveInYouBuddy": [
+      "Come on, little partner!\\p",
+      "Win or lose, dinner's on me.$"
+    ],
+    "BattleFrontier_OutsideEast_Text_ZigzagoonLooksVacant": [
+      "ZIGZAGOON stares at the crowd.$"
+    ],
+    "BattleFrontier_OutsideEast_Text_PeopleCallMeBusybody": [
+      "I notice everything around me.\\p",
+      "At the PALACE, that instinct is\\n",
+      "useless.\\p",
+      "The POKéMON choose how to act.$"
+    ],
+    "BattleFrontier_OutsideEast_Text_OnceBeatGymLeader": [
+      "I once beat a GYM LEADER.\\p",
+      "That used to be my best story.\\p",
+      "The CIRCUIT gave me new ones.$"
+    ],
+    "BattleFrontier_OutsideEast_Text_FastOnBikeAndBattles": [
+      "I like speed in everything.\\p",
+      "The CIRCUIT keeps punishing me\\n",
+      "for rushing decisions.$"
+    ],
+    "BattleFrontier_OutsideEast_Text_BetterThanDaddyAtPokemon": [
+      "I'm better than Dad at POKéMON.\\p",
+      "He says I should prove it.$"
+    ],
+    "BattleFrontier_OutsideEast_Text_GoRackUpSomeWinsForDaddy": [
+      "Go on, kiddo!\\p",
+      "Show them what we practiced.\\p",
+      "I'll be cheering either way.$"
+    ],
+    "BattleFrontier_OutsideEast_Text_HeardPrettyGirlAtBattleArena": [
+      "I came for the ARENA challenge.\\p",
+      "People here train very different\\n",
+      "styles.\\p",
+      "That's more interesting anyway.$"
+    ],
+    "BattleFrontier_OutsideEast_Text_SometimesImportantOldManInThere": [
+      "I sometimes see an older TRAINER\\n",
+      "enter the PALACE.\\p",
+      "His POKéMON need few signals.\\n",
+      "They understand each other.$"
+    ],
+    "BattleFrontier_OutsideEast_Text_LegendOfBattlePyramid": [
+      "Want the PYRAMID legend?\\p",
+      "Every challenger tells a new\\n",
+      "version.\\p",
+      "Mine says the top remembers who\\n",
+      "kept moving.$"
+    ],
+    "BattleFrontier_OutsideEast_Text_GotWipedOut": [
+      "I thought I couldn't lose.\\p",
+      "The CIRCUIT corrected that fast.\\p",
+      "Guess confidence needs evidence.$"
+    ],
+    "BattleFrontier_OutsideEast_Text_ToughTrainerInBattleTower": [
+      "He met a brutal streak TRAINER\\n",
+      "inside the TOWER.\\p",
+      "Now he double-checks every team.$"
+    ],
+    "BattleFrontier_OutsideEast_Text_EnoughBattlePointsForDoll": [
+      "I finally saved enough BP!\\p",
+      "I'm spending it on a giant DOLL.\\p",
+      "No regrets.$"
+    ],
+    "BattleFrontier_OutsideEast_Text_LikeToHaveNameRecordedHere": [
+      "This is the RANKING HALL.\\p",
+      "I'd like my name recorded here.\\p",
+      "A record isn't immortality, but\\n",
+      "it marks that the run happened.$"
+    ],
+    "BattleFrontier_OutsideEast_Text_CanDoAnythingWithYou": [
+      "With you beside me, I'm ready.$"
+    ],
+    "BattleFrontier_OutsideEast_Text_PowerOfOurLoveWillOvercome": [
+      "Let's try a MULTI BATTLE.\\p",
+      "If we communicate well, maybe\\n",
+      "we can keep the streak alive.$"
+    ],
+    "BattleFrontier_OutsideEast_Text_FrontierNotExclusivelyForToughTrainers": [
+      "The BATTLE CIRCUIT isn't only\\n",
+      "about raw strength.\\p",
+      "Different formats reward new\\n",
+      "habits.\\p",
+      "Maybe that's why SEU BENTO sends\\n",
+      "so many kinds of TRAINERS here.$"
+    ],
+    "BattleFrontier_OutsideEast_Text_OddTreeHereSeemsToWiggle": [
+      "Do you see that odd tree?\\p",
+      "I swear it moved when I looked\\n",
+      "away.$"
+    ],
+    "BattleFrontier_OutsideEast_Text_OnceAnOddTreePastHere": [
+      "An odd tree used to be here.\\p",
+      "Funny how empty ground can make\\n",
+      "a memory feel sharper.$"
+    ],
+    "BattleFrontier_OutsideEast_Text_StickyMonWithLongTail": [
+      "I saw a strange POKéMON ahead!\\p",
+      "Long tail. Sticky hands.\\p",
+      "It vanished behind the rocks.$"
+    ]
+  }
+}
