@@ -1,0 +1,203 @@
+{
+  "1f": {
+    "LilycoveCity_LilycoveMuseum_1F_Text_WelcomeToLilycoveMuseum": [
+      "BAIA DAS LUZES MUSEUM\\p",
+      "Art, memory and coastal history.\\p",
+      "Please enjoy the collection.$"
+    ],
+    "LilycoveCity_LilycoveMuseum_1F_Text_ImCuratorHaveYouViewedOurPaintings": [
+      "CURATOR: Welcome.\\p",
+      "Have you seen the paintings on\\n",
+      "this floor already?$"
+    ],
+    "LilycoveCity_LilycoveMuseum_1F_Text_NotDisturbYouTakeYourTime": [
+      "Then take your time.\\p",
+      "A work deserves a careful look.$"
+    ],
+    "LilycoveCity_LilycoveMuseum_1F_Text_HaveYouAnInterestInPaintings": [
+      "You're a POKéMON TRAINER.\\p",
+      "Do paintings interest you too?$"
+    ],
+    "LilycoveCity_LilycoveMuseum_1F_Text_HonoredYoudVisitInSpiteOfThat": [
+      "That's all right.\\p",
+      "You don't need expertise here.\\p",
+      "Thank you for visiting.$"
+    ],
+    "LilycoveCity_LilycoveMuseum_1F_Text_ExcellentCanYouComeWithMe": [
+      "Excellent.\\p",
+      "Then I'd like to show you our\\n",
+      "second-floor gallery.$"
+    ],
+    "LilycoveCity_LilycoveMuseum_1F_Text_VeryOldPainting": [
+      "An old coastal painting.\\p",
+      "The paint is peeling.\\p",
+      "The artist's name is missing.$"
+    ],
+    "LilycoveCity_LilycoveMuseum_1F_Text_OddLandscapeFantasticScenery": [
+      "An imagined landscape.\\p",
+      "The label says no real location\\n",
+      "matches the scene.$"
+    ],
+    "LilycoveCity_LilycoveMuseum_1F_Text_PaintingOfBeautifulWoman": [
+      "A smiling woman holds a POKéMON.\\p",
+      "The subject is unidentified.$"
+    ],
+    "LilycoveCity_LilycoveMuseum_1F_Text_PaintingOfLegendaryPokemon": [
+      "A legendary POKéMON in the mist.\\p",
+      "The artist never saw it.\\p",
+      "This is an imagined account.$"
+    ],
+    "LilycoveCity_LilycoveMuseum_1F_Text_PaintingOfGrassPokemon": [
+      "GRASS POKéMON bend in the wind.\\p",
+      "The brushwork makes the leaves\\n",
+      "seem almost alive.$"
+    ],
+    "LilycoveCity_LilycoveMuseum_1F_Text_PaintingOfBerries": [
+      "A table covered in BERRIES.\\p",
+      "The colors make them look fresh.$"
+    ],
+    "LilycoveCity_LilycoveMuseum_Text_BirdPokemonSculptureReplica": [
+      "A replica of an old sculpture.\\p",
+      "It depicts a BIRD POKéMON.\\p",
+      "The original remains elsewhere.$"
+    ],
+    "LilycoveCity_LilycoveMuseum_1F_Text_BigPokeBallCarvedFromStone": [
+      "A large stone POKé BALL.\\p",
+      "Records link objects like this\\n",
+      "to old coastal festivals.$"
+    ],
+    "LilycoveCity_LilycoveMuseum_1F_Text_StoneTabletWithAncientText": [
+      "An old inscribed stone tablet.\\p",
+      "No complete reading survives.\\p",
+      "Unreadable does not mean empty.$"
+    ],
+    "LilycoveCity_LilycoveMuseum_1F_Text_WorksOfMagnificence": [
+      "So many ways to remember.$"
+    ],
+    "LilycoveCity_LilycoveMuseum_1F_Text_MustntForgetLoveForFineArts": [
+      "I love POKéMON battles.\\p",
+      "I also like seeing what people\\n",
+      "choose to preserve in art.$"
+    ],
+    "LilycoveCity_LilycoveMuseum_1F_Text_ThisMuseumIsInspiration": [
+      "I come here when I can't paint.\\p",
+      "Seeing another artist's choices\\n",
+      "usually gets me moving again.$"
+    ],
+    "LilycoveCity_LilycoveMuseum_1F_Text_ThisLadyIsPretty": [
+      "She looks happy.\\p",
+      "I wonder who she was.$"
+    ],
+    "LilycoveCity_LilycoveMuseum_1F_Text_ThisPokemonIsAdorable": [
+      "That POKéMON looks comfortable.\\p",
+      "I like this painting.$"
+    ],
+    "LilycoveCity_LilycoveMuseum_1F_Text_HeardMuseumGotNewPaintings": [
+      "I heard new paintings arrived.\\p",
+      "They're upstairs, right?\\p",
+      "I came as soon as I heard.$"
+    ],
+    "LilycoveCity_LilycoveMuseum_1F_Text_CuratorHasBeenCheerful": [
+      "The CURATOR has been cheerful.\\p",
+      "Every new piece upstairs brings\\n",
+      "more people through the doors.$"
+    ],
+    "LilycoveCity_LilycoveMuseum_1F_Text_AimToSeeGreatPaintings": [
+      "I study these works when I can.\\p",
+      "Someday I'd like one of my own\\n",
+      "paintings shown here.$"
+    ],
+    "LilycoveCity_LilycoveMuseum_1F_Text_MuseumTouristDestination": [
+      "Visitors come across ARAUNA.\\p",
+      "The upstairs gallery grew around\\n",
+      "paintings from one TRAINER.$"
+    ]
+  },
+  "2f": {
+    "LilycoveCity_LilycoveMuseum_2F_Text_ThisIsExhibitHall": [
+      "Our contemporary gallery.$"
+    ],
+    "LilycoveCity_LilycoveMuseum_2F_Text_ExplainExhibitHall": [
+      "This floor starts nearly empty.\\p",
+      "Downstairs holds older works.\\p",
+      "Here I want living records of\\n",
+      "POKéMON and their partnerships.\\p",
+      "New art belongs beside old art,\\n",
+      "not beneath it.$"
+    ],
+    "LilycoveCity_LilycoveMuseum_2F_Text_PleaseObtainPaintingsForExhibit": [
+      "If you find a fine painting,\\n",
+      "please speak with its artist.\\p",
+      "We display nothing here without\\n",
+      "the maker's permission.$"
+    ],
+    "LilycoveCity_LilycoveMuseum_2F_Text_WishToFillExhibit": [
+      "I hope to fill this gallery with\\n",
+      "new POKéMON paintings.\\p",
+      "Permission comes before display.$"
+    ],
+    "LilycoveCity_LilycoveMuseum_2F_Text_ThanksAddedNewPainting": [
+      "A new painting arrived.\\p",
+      "The artist agreed to exhibit it.\\p",
+      "Thank you for carrying it here.$"
+    ],
+    "LilycoveCity_LilycoveMuseum_2F_Text_ItsYouPlayer": [
+      "{PLAYER}!\\p",
+      "Good to see you.$"
+    ],
+    "LilycoveCity_LilycoveMuseum_2F_Text_PaintingsAttractedMoreGuests": [
+      "Look at the gallery now.\\p",
+      "Five paintings, five moments.\\p",
+      "None tells the whole story.\\p",
+      "More visitors come every day.\\p",
+      "Thank you, {PLAYER}.$"
+    ],
+    "LilycoveCity_LilycoveMuseum_2F_Text_TokenOfGratitude": [
+      "Please take this GLASS ORNAMENT.\\p",
+      "It's a small thank-you.$"
+    ],
+    "LilycoveCity_LilycoveMuseum_2F_Text_KeepThisForYou": [
+      "I'll keep the ornament for you.\\p",
+      "Come back with room for it.$"
+    ],
+    "LilycoveCity_LilycoveMuseum_2F_Text_HonorToHaveYouVisit": [
+      "Welcome back, {PLAYER}.\\p",
+      "The gallery is yours to revisit\\n",
+      "whenever the road allows.$"
+    ],
+    "LilycoveCity_LilycoveMuseum_2F_Text_ItsPinkPictureFrame": [
+      "An empty pink-trimmed frame.$"
+    ],
+    "LilycoveCity_LilycoveMuseum_2F_Text_ItsYellowPictureFrame": [
+      "An empty yellow-trimmed frame.$"
+    ],
+    "LilycoveCity_LilycoveMuseum_2F_Text_ItsBluePictureFrame": [
+      "An empty blue-trimmed frame.$"
+    ],
+    "LilycoveCity_LilycoveMuseum_2F_Text_ItsRedPictureFrame": [
+      "An empty frame with red details.$"
+    ],
+    "LilycoveCity_LilycoveMuseum_2F_Text_ItsGreenPictureFrame": [
+      "An empty green-trimmed frame.$"
+    ],
+    "LilycoveCity_LilycoveMuseum_2F_Text_ItsPaintingOfPokemon": [
+      "A painting of a POKéMON.\\p",
+      "The label credits its maker.$"
+    ],
+    "LilycoveCity_LilycoveMuseum_2F_Text_NewPaintingsSurprisedMe": [
+      "I was away when these arrived.\\p",
+      "The whole room feels different.\\p",
+      "I'd love my POKéMON painted.$"
+    ],
+    "LilycoveCity_LilycoveMuseum_2F_Text_NewPaintingsRatherAmusing": [
+      "So these are the newer works.\\p",
+      "They're less formal than below.\\p",
+      "I like that.$"
+    ],
+    "LilycoveCity_LilycoveMuseum_2F_Text_ThesePaintingsOfYourPokemon": [
+      "These show your POKéMON?\\p",
+      "That makes this gallery a record\\n",
+      "of journeys as well as art.$"
+    ]
+  }
+}
