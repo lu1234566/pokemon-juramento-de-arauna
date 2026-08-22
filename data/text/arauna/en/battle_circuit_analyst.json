@@ -1,0 +1,13 @@
+{
+  "analyst": {
+    "BattleFrontier_Lounge2_Text_FrontierManiacIntro": ["Howdy! I collect reports from\\p", "around the BATTLE CIRCUIT.\\p", "People here call me the\\p", "CIRCUIT ANALYST.\\p", "If a facility changes,\\p", "I usually hear about it.$"],
+    "BattleFrontier_Lounge2_Text_SalonMaidenIsThere": ["Here's the latest.\\p", "SEU BENTO calls the strongest\\p", "facility leaders\\p", "CIRCUIT MASTERS.\\p", "The SALON MAIDEN runs this one.$"],
+    "BattleFrontier_Lounge2_Text_DomeAceIsThere": ["Here's the latest.\\p", "SEU BENTO calls the strongest\\p", "facility leaders\\p", "CIRCUIT MASTERS.\\p", "The DOME ACE runs this one.$"],
+    "BattleFrontier_Lounge2_Text_FactoryHeadIsThere": ["Here's the latest.\\p", "SEU BENTO calls the strongest\\p", "facility leaders\\p", "CIRCUIT MASTERS.\\p", "The FACTORY HEAD runs this one.$"],
+    "BattleFrontier_Lounge2_Text_PikeQueenIsThere": ["Here's the latest.\\p", "SEU BENTO calls the strongest\\p", "facility leaders\\p", "CIRCUIT MASTERS.\\p", "The PIKE QUEEN runs this one.$"],
+    "BattleFrontier_Lounge2_Text_ArenaTycoonIsThere": ["Here's the latest.\\p", "SEU BENTO calls the strongest\\p", "facility leaders\\p", "CIRCUIT MASTERS.\\p", "The ARENA TYCOON runs this one.$"],
+    "BattleFrontier_Lounge2_Text_PalaceMavenIsThere": ["Here's the latest.\\p", "SEU BENTO calls the strongest\\p", "facility leaders\\p", "CIRCUIT MASTERS.\\p", "The PALACE MAVEN runs this one.$"],
+    "BattleFrontier_Lounge2_Text_PyramidKingIsThere": ["Here's the latest.\\p", "SEU BENTO calls the strongest\\p", "facility leaders\\p", "CIRCUIT MASTERS.\\p", "The PYRAMID KING runs this one.$"],
+    "BattleFrontier_Lounge2_Text_DoubleBattleAdvice1": ["DOUBLE BATTLE formats appear in\\p", "several facilities.\\p", "The BATTLE TOWER is the simplest\\p", "place to learn how they work in\\p", "the BATTLE CIRCUIT.$"]
+  }
+}
