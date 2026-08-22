@@ -95,6 +95,7 @@ overlay_files=(
     "data/maps/LilycoveCity_Harbor/scripts.inc"
     "data/maps/SSTidalCorridor/scripts.inc"
     "data/maps/SSTidalRooms/scripts.inc"
+    "data/maps/BattleFrontier_OutsideWest/scripts.inc"
     "data/maps/SlateportCity/scripts.inc"
     "data/maps/SlateportCity_Harbor/scripts.inc"
     "data/maps/SlateportCity_OceanicMuseum_1F/scripts.inc"
@@ -184,6 +185,7 @@ python3 scripts/render_baia_luzes_contest_venue_en_checked.py --in-place
 python3 scripts/render_baia_luzes_museum_en_checked.py --in-place
 python3 scripts/render_baia_luzes_harbor_tickets_en_checked.py --in-place
 python3 scripts/render_line_ferry_ss_tidal_en_checked.py --in-place
+python3 scripts/render_battle_circuit_arrival_west_en_checked.py --in-place
 python3 scripts/render_mt_chimney_surface.py --in-place
 python3 scripts/render_casa_da_cinza_nara_en_checked.py --in-place
 python3 scripts/render_mata_do_meio_lidia_en.py --in-place
