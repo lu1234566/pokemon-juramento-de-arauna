@@ -1,0 +1,127 @@
+{
+  "harbor": {
+    "LilycoveCity_Harbor_Text_FerryUnavailable": [
+      "ATTENDANT: Looking for a ship?\\p",
+      "The LINE FERRY is not running\\n",
+      "yet.$"
+    ],
+    "LilycoveCity_Harbor_Text_MayISeeYourTicket": [
+      "ATTENDANT: May I see your\\n",
+      "TICKET?$"
+    ],
+    "LilycoveCity_Harbor_Text_NoTicket": [
+      "No TICKET was found.\\p",
+      "ATTENDANT: A TICKET is required\\n",
+      "to board.$"
+    ],
+    "LilycoveCity_Harbor_Text_FlashTicketWhereTo": [
+      "TICKET verified.\\p",
+      "ATTENDANT: Where to?$"
+    ],
+    "LilycoveCity_Harbor_Text_SailAnotherTime": [
+      "ATTENDANT: Sail with us\\n",
+      "another time.$"
+    ],
+    "LilycoveCity_Harbor_Text_SlateportItIs": [
+      "ATTENDANT: PORTO DO SAL,\\n",
+      "correct?$"
+    ],
+    "LilycoveCity_Harbor_Text_BattleFrontierItIs": [
+      "ATTENDANT: BATTLE CIRCUIT,\\n",
+      "correct?$"
+    ],
+    "LilycoveCity_Harbor_Text_PleaseBoard": [
+      "ATTENDANT: Board the LINE FERRY\\n",
+      "and wait for departure.$"
+    ],
+    "LilycoveCity_Harbor_Text_WhereWouldYouLikeToGo": [
+      "ATTENDANT: Where would you like\\n",
+      "to go?$"
+    ],
+    "LilycoveCity_Harbor_Text_SailorFerryUnavailable": [
+      "SAILOR: The LINE FERRY is still\\n",
+      "being finished in PORTO DO SAL.\\p",
+      "Until then, we're on shore.$"
+    ],
+    "LilycoveCity_Harbor_Text_SailorFerryAvailable": [
+      "SAILOR: The LINE FERRY is ready.\\p",
+      "PORTO DO SAL finished the work.\\p",
+      "Now it's our turn to sail.$"
+    ]
+  },
+  "ticket1": {
+    "EventTicket_Text_ShowOldSeaMap": [
+      "ATTENDANT: PORTO DO SAL is...\\p",
+      "You want to reach this place\\n",
+      "on the OLD SEA MAP?\\p",
+      "I know who can read these waters.\\n",
+      "Please wait.$"
+    ],
+    "EventTicket_Text_ThatPass": [
+      "ATTENDANT: PORTO DO SAL is...\\p",
+      "Oh? That PASS?$"
+    ],
+    "EventTicket_Text_ShowEonTicket": [
+      "SAILOR: The EON PASS?\\p",
+      "It marks an island far south.\\p",
+      "No chart tells us what waits.\\p",
+      "We'll sail carefully.\\n",
+      "All aboard!$"
+    ],
+    "EventTicket_Text_SouthernIslandSailBack": [
+      "SAILOR: Ready to head back to\\n",
+      "BAIA DAS LUZES?$"
+    ],
+    "EventTicket_Text_SailHome": [
+      "SAILOR: Back to BAIA DAS LUZES,\\n",
+      "then.$"
+    ],
+    "EventTicket_Text_AsYouLike": [
+      "SAILOR: Another time, then.$"
+    ]
+  },
+  "ticket2": {
+    "EventTicket_Text_OldSeaMapTooFar": [
+      "SAILOR: That OLD SEA MAP...\\p",
+      "This place is far beyond our\\n",
+      "usual route.\\p",
+      "I can't authorize that trip.$"
+    ],
+    "EventTicket_Text_BrineyHoldOnASecond": [
+      "SEU BENTO: Hold on.\\p",
+      "You don't turn away someone who\\n",
+      "brought a route worth checking.$"
+    ],
+    "EventTicket_Text_BrineyLetsSail": [
+      "SEU BENTO: I know this water.\\p",
+      "An old map isn't a promise.\\p",
+      "But we can follow it carefully.\\p",
+      "Let's sail.$"
+    ],
+    "EventTicket_Text_OddTicketGetOnBoard": [
+      "SAILOR: An unusual PASS.\\p",
+      "It points far beyond our route.\\p",
+      "We don't know what waits there.\\p",
+      "If you're ready, board.$"
+    ],
+    "FarawayIsland_Entrance_Text_SailorReturn": [
+      "SAILOR: SEU BENTO will wait.\\p",
+      "Return to BAIA DAS LUZES?$"
+    ],
+    "BirthIsland_Harbor_Text_SailorReturn": [
+      "SAILOR: A strange island.\\p",
+      "Return to BAIA DAS LUZES?$"
+    ],
+    "EventTicket_Text_OddTicketsWhereTo": [
+      "SAILOR: Unusual PASSES.\\p",
+      "They point to distant islands.\\p",
+      "No route log says what waits.\\p",
+      "Choose where we sail first.$"
+    ],
+    "NavelRock_Harbor_Text_SailorReturn": [
+      "SAILOR: That sound came from\\n",
+      "deep inside.\\p",
+      "Do you want to leave?$"
+    ]
+  }
+}
