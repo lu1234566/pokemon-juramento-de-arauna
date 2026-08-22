@@ -98,6 +98,11 @@ overlay_files=(
     "data/maps/BattleFrontier_OutsideWest/scripts.inc"
     "data/maps/BattleFrontier_OutsideEast/scripts.inc"
     "data/maps/BattleFrontier_ReceptionGate/scripts.inc"
+    "data/maps/BattleFrontier_ScottsHouse/scripts.inc"
+    "data/maps/BattleFrontier_RankingHall/scripts.inc"
+    "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.inc"
+    "data/maps/BattleFrontier_PokemonCenter_1F/scripts.inc"
+    "data/maps/BattleFrontier_Mart/scripts.inc"
     "data/maps/SlateportCity/scripts.inc"
     "data/maps/SlateportCity_Harbor/scripts.inc"
     "data/maps/SlateportCity_OceanicMuseum_1F/scripts.inc"
@@ -190,6 +195,7 @@ python3 scripts/render_line_ferry_ss_tidal_en_checked.py --in-place
 python3 scripts/render_battle_circuit_arrival_west_en_checked.py --in-place
 python3 scripts/render_battle_circuit_east_district_en_checked.py --in-place
 python3 scripts/render_battle_circuit_reception_gate_en_checked.py --in-place
+python3 scripts/render_battle_circuit_public_services_en_checked.py --in-place
 python3 scripts/render_mt_chimney_surface.py --in-place
 python3 scripts/render_casa_da_cinza_nara_en_checked.py --in-place
 python3 scripts/render_mata_do_meio_lidia_en.py --in-place
