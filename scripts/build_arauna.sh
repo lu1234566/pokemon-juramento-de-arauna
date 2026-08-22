@@ -81,6 +81,7 @@ overlay_files=(
     "data/maps/LilycoveCity_CoveLilyMotel_1F/scripts.inc"
     "data/maps/LilycoveCity_CoveLilyMotel_2F/scripts.inc"
     "data/maps/LilycoveCity_PokemonCenter_1F/scripts.inc"
+    "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc"
     "data/maps/SlateportCity/scripts.inc"
     "data/maps/SlateportCity_Harbor/scripts.inc"
     "data/maps/SlateportCity_OceanicMuseum_1F/scripts.inc"
@@ -122,6 +123,7 @@ overlay_files=(
     "data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc"
     "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc"
     "data/text/berries.inc"
+    "data/text/tv.inc"
     "src/data/items.h"
     "src/data/text/item_descriptions.h"
 )
@@ -161,6 +163,7 @@ python3 scripts/render_route119_ciro_surface_en.py --in-place
 python3 scripts/render_baia_luzes_ciro_en.py --in-place
 python3 scripts/render_baia_luzes_surface_en_checked.py --in-place
 python3 scripts/render_baia_luzes_interiors_en_checked.py --in-place
+python3 scripts/render_baia_luzes_fan_club_en_checked.py --in-place
 python3 scripts/render_mt_chimney_surface.py --in-place
 python3 scripts/render_casa_da_cinza_nara_en_checked.py --in-place
 python3 scripts/render_mata_do_meio_lidia_en.py --in-place
