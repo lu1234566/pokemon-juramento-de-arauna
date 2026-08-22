@@ -1,0 +1,19 @@
+{
+  "lounge3": {
+    "BattleFrontier_Lounge3_Text_YouLookToughExplainGambling": [
+      "...Huh?\\nYou look like a strong TRAINER.\\p",
+      "We run a small pool on BATTLE\\nCIRCUIT challenges.\\p",
+      "First, we pick one facility.\\p",
+      "Then each person backs one\\nTRAINER in that challenge.\\p",
+      "We wager Battle Points.\\p",
+      "Best record takes the pool.\\p",
+      "Simple enough, right?\\nSo, anyway...$"
+    ]
+  },
+  "lounge8": {
+    "BattleFrontier_Lounge8_Text_KnowAboutFrontierBrains": [
+      "Do you know the CIRCUIT MASTERS?\\p",
+      "SEU BENTO uses that title for\\nthe seven TRAINERS who lead\\lthe BATTLE CIRCUIT facilities.$"
+    ]
+  }
+}
