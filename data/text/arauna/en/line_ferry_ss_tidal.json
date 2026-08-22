@@ -1,0 +1,177 @@
+{
+  "corridor": {
+    "SSTidalCorridor_Text_ScottBattleFrontierInvite": [
+      "SEU BENTO: There you are.\\p",
+      "Congratulations on the LEAGUE.\\p",
+      "I have one more place for you\\n",
+      "to test yourself.\\p",
+      "The BATTLE CIRCUIT.\\p",
+      "I spoke with the crew.\\n",
+      "This ferry can take you there.\\p",
+      "I'll be waiting.$"
+    ],
+    "SSTidal_Text_FastCurrentsHopeYouEnjoyVoyage": [
+      "The LINE FERRY is crossing\\n",
+      "strong coastal currents.\\p",
+      "Please enjoy the voyage.$"
+    ],
+    "SSTidal_Text_HopeYouEnjoyVoyage": [
+      "We hope you enjoy the voyage.$"
+    ],
+    "SSTidal_Text_MadeLandInSlateport": [
+      "We have arrived in PORTO DO SAL.\\p",
+      "Thank you for sailing with us.$"
+    ],
+    "SSTidal_Text_MadeLandInLilycove": [
+      "We have arrived in\\n",
+      "BAIA DAS LUZES.\\p",
+      "Thank you for sailing with us.$"
+    ],
+    "SSTidalCorridor_Text_CanRestInCabin2": [
+      "We still have some sailing left.\\p",
+      "Your cabin is number 2.\\n",
+      "You may rest there.$"
+    ],
+    "SSTidalCorridor_Text_WeveArrived": [
+      "We have arrived.$"
+    ],
+    "SSTidalCorridor_Text_VisitOtherCabins": [
+      "Feel free to visit the cabins.\\p",
+      "Some TRAINERS may welcome\\n",
+      "a battle during the trip.$"
+    ],
+    "SSTidalCorridor_Text_EnjoyYourCruise": [
+      "Enjoy the rest of the voyage.$"
+    ],
+    "SSTidalCorridor_Text_HorizonSpreadsBeyondPorthole": [
+      "The sea stretches beyond\\n",
+      "the porthole.$"
+    ],
+    "SSTidalCorridor_Text_BrineyWelcomeAboard": [
+      "CAPTAIN: Welcome aboard.\\p",
+      "They put me in command of\\n",
+      "this LINE FERRY.\\p",
+      "A good ship still wakes the\\n",
+      "sailor in me.$"
+    ],
+    "SSTidalCorridor_Text_Peeko": [
+      "Pihyo pihyohyo...$"
+    ],
+    "SSTidalCorridor_Text_Cabin1": [
+      "CABIN 1$"
+    ],
+    "SSTidalCorridor_Text_Cabin2": [
+      "CABIN 2$"
+    ],
+    "SSTidalCorridor_Text_Cabin3": [
+      "CABIN 3$"
+    ],
+    "SSTidalCorridor_Text_Cabin4": [
+      "CABIN 4$"
+    ]
+  },
+  "rooms": {
+    "SSTidalRooms_Text_TakeRestOnBed": [
+      "A clean cabin bed.\\p",
+      "You take a short rest.$"
+    ],
+    "SSTidalRooms_Text_ColtonIntro": [
+      "I sail to BAIA DAS LUZES\\n",
+      "whenever I can.\\p",
+      "The CONTEST stages are worth it.$"
+    ],
+    "SSTidalRooms_Text_ColtonDefeat": [
+      "That was a fine match.$"
+    ],
+    "SSTidalRooms_Text_ColtonPostBattle": [
+      "Every CONTEST shows a different\\n",
+      "side of a partnership.\\p",
+      "That's why I keep going back.$"
+    ],
+    "SSTidalRooms_Text_MicahIntro": [
+      "Are your partners strong?$"
+    ],
+    "SSTidalRooms_Text_MicahDefeat": [
+      "They certainly are.$"
+    ],
+    "SSTidalRooms_Text_MicahPostBattle": [
+      "Strength isn't why they matter.\\p",
+      "My POKéMON are friends first.$"
+    ],
+    "SSTidalRooms_Text_ThomasIntro": [
+      "A visitor?\\p",
+      "Very well. Shall we battle?$"
+    ],
+    "SSTidalRooms_Text_ThomasDefeat": [
+      "A loss deserves a calm answer.$"
+    ],
+    "SSTidalRooms_Text_ThomasPostBattle": [
+      "Keeping your composure matters\\n",
+      "more than keeping appearances.$"
+    ],
+    "SSTidalRooms_Text_JedIntro": [
+      "JED: LEA and I battle together.\\p",
+      "Let's see how your team moves.$"
+    ],
+    "SSTidalRooms_Text_JedDefeat": [
+      "JED: We lost that one.$"
+    ],
+    "SSTidalRooms_Text_JedPostBattle": [
+      "JED: We know each other well.\\p",
+      "You still found the openings.$"
+    ],
+    "SSTidalRooms_Text_JedNotEnoughMons": [
+      "JED: A DOUBLE BATTLE needs\\n",
+      "two POKéMON on your side.$"
+    ],
+    "SSTidalRooms_Text_LeaIntro": [
+      "LEA: JED and I came prepared.\\p",
+      "Show us your teamwork.$"
+    ],
+    "SSTidalRooms_Text_LeaDefeat": [
+      "LEA: Nice teamwork.$"
+    ],
+    "SSTidalRooms_Text_LeaPostBattle": [
+      "LEA: We trust each other.\\p",
+      "So do you and your POKéMON.$"
+    ],
+    "SSTidalRooms_Text_LeaNotEnoughMons": [
+      "LEA: Bring at least two POKéMON\\n",
+      "for a DOUBLE BATTLE.$"
+    ],
+    "SSTidalRooms_Text_GarretIntro": [
+      "Good timing.\\p",
+      "The voyage has been too quiet.\\n",
+      "Care for a battle?$"
+    ],
+    "SSTidalRooms_Text_GarretDefeat": [
+      "That was more interesting.$"
+    ],
+    "SSTidalRooms_Text_GarretPostBattle": [
+      "A private yacht sounds pleasant.\\p",
+      "But a shared ferry has better\\n",
+      "stories.$"
+    ],
+    "SSTidalRooms_Text_NaomiIntro": [
+      "Tea or a battle?\\p",
+      "I packed for either.$"
+    ],
+    "SSTidalRooms_Text_NaomiDefeat": [
+      "Battle it was.$"
+    ],
+    "SSTidalRooms_Text_NaomiPostBattle": [
+      "A luxury cruise has its charm.\\p",
+      "I prefer seeing ARAUNA one\\n",
+      "working harbor at a time.$"
+    ],
+    "SSTidalRooms_Text_NotSuspiciousTakeThis": [
+      "I found a spare TM in my kit.\\p",
+      "Take it. I don't need two.$"
+    ],
+    "SSTidalRooms_Text_ExplainSnatch": [
+      "SNATCH takes the benefit of\\n",
+      "certain status moves before\\n",
+      "their user receives it.$"
+    ]
+  }
+}
