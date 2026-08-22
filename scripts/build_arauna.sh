@@ -24,6 +24,7 @@ fi
 overlay_files=(
     "src/strings.c"
     "src/data/trainers.h"
+    "src/data/region_map/region_map_sections.json"
     "data/maps/LittlerootTown/scripts.inc"
     "data/maps/Route101/scripts.inc"
     "data/maps/Route102/scripts.inc"
@@ -179,6 +180,7 @@ trap 'exit 129' HUP
 trap 'exit 130' INT
 trap 'exit 143' TERM
 
+python3 tools/cleanup_region_map_names.py
 python3 scripts/render_shared_trainer_names_en.py --in-place
 python3 scripts/render_vila_amanhecer_route101_en_checked.py --in-place
 python3 scripts/render_vila_amanhecer_houses_en_checked.py --in-place
