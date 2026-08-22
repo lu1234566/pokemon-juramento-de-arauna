@@ -1,0 +1,55 @@
+{
+  "bento_room": {
+    "BattleFrontier_ScottsHouse_Text_WelcomeToBattleFrontier": ["SEU BENTO: So you came.\\p", "The BATTLE CIRCUIT looks small\\p", "on a map, but each building asks\\p", "something different of you.\\p", "I spent years bringing the right\\p", "people together here.$"],
+    "BattleFrontier_ScottsHouse_Text_HowMuchEffortItTookToMakeReal": ["I started by traveling alone,\\p", "watching how TRAINERS adapted.\\p", "This grew from those roads,\\p", "one format at a time.$"],
+    "BattleFrontier_ScottsHouse_Text_HaveThisAsMementoOfOurPathsCrossing": ["Our paths crossed long before\\p", "this place mattered to you.\\p", "Take what the road taught you\\p", "into every challenge here.\\p", "And take this, too.$"],
+    "BattleFrontier_ScottsHouse_Text_ObtainedXBattlePoints": ["{PLAYER} received\\p", "{STR_VAR_1} BP.$"],
+    "BattleFrontier_ScottsHouse_Text_ExplainBattlePoints": ["SEU BENTO: Your BP are tracked\\p", "on the CIRCUIT PASS.\\p", "Longer successful runs usually\\p", "earn more.\\p", "Spend them when the reward feels\\p", "worth the work.$"],
+    "BattleFrontier_ScottsHouse_Text_ExpectingGreatThings": ["I want to see how far you go.$"],
+    "BattleFrontier_ScottsHouse_Text_WhyIGoSeekingTrainers": ["SEU BENTO: Every TRAINER brings\\p", "a different history here.\\p", "The battle result matters,\\p", "but it is never the whole story.\\p", "I invite people who can learn\\p", "from both parts.$"],
+    "BattleFrontier_ScottsHouse_Text_HaveYouMetFrontierBrain": ["SEU BENTO: Met a CIRCUIT MASTER\\p", "yet?\\p", "Earned any SYMBOLS?\\p", "I chose people who would force\\p", "challengers to adapt.$"],
+    "BattleFrontier_ScottsHouse_Text_MayFindWildMonsInFrontier": ["SEU BENTO: Still filling that\\p", "POKéDEX?\\p", "Explore beyond the buildings.\\p", "Wild POKéMON turn up where the\\p", "crowds usually don't.$"],
+    "BattleFrontier_ScottsHouse_Text_YouveCollectedAllSilverSymbols": ["SEU BENTO: Let me see that pass.\\p", "All seven SILVER SYMBOLS.\\p", "That took more than one run.\\p", "You earned this.$"],
+    "BattleFrontier_ScottsHouse_Text_YouveCollectedAllGoldSymbols": ["SEU BENTO: All seven GOLD\\p", "SYMBOLS.\\p", "Few TRAINERS reach this point.\\p", "Take this.\\p", "You'll know what to do with it.$"],
+    "BattleFrontier_ScottsHouse_Text_SoGladIBroughtYouHere": ["I thought the CIRCUIT would give\\p", "you something worth testing.\\p", "I'm glad you came.$"],
+    "BattleFrontier_ScottsHouse_Text_BerryPocketStuffed": ["Your BERRY POCKET is full.$"],
+    "BattleFrontier_ScottsHouse_Text_Beat50TrainersInARow": ["SEU BENTO: Fifty straight wins\\p", "in the BATTLE TOWER?\\p", "That's a serious streak.\\p", "Take this.$"],
+    "BattleFrontier_ScottsHouse_Text_Beat100TrainersInARow": ["SEU BENTO: One hundred straight\\p", "TOWER wins?\\p", "Now you've raised the standard.\\p", "Take this.$"],
+    "BattleFrontier_ScottsHouse_Text_ExpectingToHearEvenGreaterThings": ["I expect your next story to be\\p", "harder to top.$"],
+    "BattleFrontier_ScottsHouse_Text_ComeBackForThisLater": ["There is no room for that\\p", "decoration right now.\\p", "Come back after making space.$"]
+  },
+  "ranking": {
+    "BattleFrontier_RankingHall_Text_ExplainRankingHall": ["This is the RANKING HALL.\\p", "We keep the strongest recorded\\p", "runs from BATTLE CIRCUIT events.\\p", "A record marks what happened.\\p", "It does not explain everything\\p", "behind the run.$"],
+    "BattleFrontier_RankingHall_Text_DomePikeFactoryRecords": ["BATTLE DOME, BATTLE PIKE,\\p", "and BATTLE FACTORY Records$"],
+    "BattleFrontier_RankingHall_Text_PalaceArenaPyramidRecords": ["BATTLE PALACE, BATTLE ARENA,\\p", "and BATTLE PYRAMID Records$"],
+    "BattleFrontier_RankingHall_Text_IsYourNameOnThisList": ["Is your name on this list?$"],
+    "BattleFrontier_RankingHall_Text_WowThatsSuper": ["Then this run is yours!\\p", "I'll try to reach the list too.$"],
+    "BattleFrontier_RankingHall_Text_WorkHarderIfYouSawFriendsName": ["Not yet?\\p", "A friend's run can make a good\\p", "target.$"],
+    "BattleFrontier_RankingHall_Text_MyNamesNotUpThere": ["My name isn't here yet.\\p", "I should enter a challenge\\p", "before complaining about that.$"]
+  },
+  "exchange": {
+    "BattleFrontier_ExchangeServiceCorner_Text_WelcomePleaseChoosePrize": ["Welcome to the BATTLE POINT\\p", "EXCHANGE.\\p", "Trade the BP you've earned for\\p", "rewards.\\p", "Please choose from the list.$"],
+    "BattleFrontier_ExchangeServiceCorner_Text_WellSendItToPC": ["Thank you!\\p", "We'll send it to your PC.$"],
+    "BattleFrontier_ExchangeServiceCorner_Text_HereIsYourPrize": ["Here is your reward.$"],
+    "BattleFrontier_ExchangeServiceCorner_Text_DontHaveEnoughPoints": ["You don't have enough BP.$"],
+    "BattleFrontier_ExchangeServiceCorner_Text_PCIsFull": ["Your decoration storage is full.$"],
+    "BattleFrontier_ExchangeServiceCorner_Text_DontHaveSpaceToHoldIt": ["Your BAG has no room for it.$"],
+    "BattleFrontier_ExchangeServiceCorner_Text_ThankYouVisitWithPoints": ["Thank you.\\p", "Come back whenever you have BP\\p", "to spend.$"],
+    "BattleFrontier_ExchangeServiceCorner_Text_WishIHadAllDolls": ["There are too many good DOLLS.\\p", "I keep spending BP before I can\\p", "save for the big ones.$"],
+    "BattleFrontier_ExchangeServiceCorner_Text_GetYouAnythingYouWant": ["We're picking a reward together.\\p", "BP take time to earn, so we're\\p", "checking every option first.$"],
+    "BattleFrontier_ExchangeServiceCorner_Text_ItemsWillGetMonTougher": ["Some rewards help in regular\\p", "battles outside the facilities.\\p", "I plan my BP around those.$"],
+    "BattleFrontier_ExchangeServiceCorner_Text_GoGetYourOwnDoll": ["I saved a while for this DOLL.\\p", "If you like it, earn one too.$"],
+    "BattleFrontier_ExchangeServiceCorner_Text_MoreBattlePointsForRecord": ["Longer facility streaks can pay\\p", "more Battle Points.\\p", "Consistency has a reward here.$"]
+  },
+  "center": {
+    "BattleFrontier_PokemonCenter_1F_Text_NeverSeenPokemon": ["I saw a POKéMON here I'd never\\p", "studied before.\\p", "The CIRCUIT brings TRAINERS from\\p", "all over ARAUNA.$"],
+    "BattleFrontier_PokemonCenter_1F_Text_NextStopBattleArena": ["Next stop: BATTLE ARENA.\\p", "I came back to the PC to adjust\\p", "my team first.$"],
+    "BattleFrontier_PokemonCenter_1F_Text_GoingThroughEveryChallenge": ["I'm taking this partner through\\p", "every format I can.$"],
+    "BattleFrontier_PokemonCenter_1F_Text_Skitty": ["SKITTY: Mya myaaah!$"]
+  },
+  "mart": {
+    "BattleFrontier_Mart_Text_ChaperonGrandson": ["We came with our grandson.\\p", "He's here for the challenges.\\p", "We need supplies and maybe\\p", "a souvenir.$"],
+    "BattleFrontier_Mart_Text_ProteinMakeNiceGift": ["Dear, would PROTEIN make a good\\p", "gift?\\p", "Not food, apparently.\\p", "Good thing I asked.$"],
+    "BattleFrontier_Mart_Text_FacilitiesDontAllowItems": ["Many CIRCUIT formats don't let\\p", "you use BAG items in battle.\\p", "Supplies still matter outside\\p", "the facilities.$"]
+  }
+}
