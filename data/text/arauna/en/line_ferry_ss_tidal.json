@@ -1,7 +1,7 @@
 {
   "corridor": {
     "SSTidalCorridor_Text_ScottBattleFrontierInvite": [
-      "SEU BENTO: {PLAYER}{KUN}.\\p",
+      "SEU BENTO: There you are.\\p",
       "Congratulations on the LEAGUE.\\p",
       "I have one more place for you\\n",
       "to test yourself.\\p",
@@ -117,7 +117,7 @@
       "JED: We lost that one.$"
     ],
     "SSTidalRooms_Text_JedPostBattle": [
-      "JED: We know each other's rhythm.\\p",
+      "JED: We know each other well.\\p",
       "You still found the openings.$"
     ],
     "SSTidalRooms_Text_JedNotEnoughMons": [
