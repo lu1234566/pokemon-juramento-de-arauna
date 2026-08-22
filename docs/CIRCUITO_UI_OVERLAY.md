@@ -1,41 +1,76 @@
-# Circuito de Batalha: camada global de UI
+# Battle Circuit: global text UI overlay
 
-Este lote converte a superficie textual global herdada da Battle Frontier sem alterar identificadores, saves, flags, mapas ou graficos.
+This document supersedes the original Portuguese Circuito de Batalha UI-overlay plan.
 
-## Estrategia
+## Current English-only state
 
-`src/strings.c` permanece intacto no repositorio. Durante `scripts/build_arauna.sh`:
+Arauna's official player-facing build is English-only. The historical renderer `scripts/render_arauna_frontier_ui.py` contains Portuguese replacements and therefore remains **dormant**. It must not be invoked by the official build.
 
-1. o arquivo e copiado para um backup temporario;
-2. `scripts/render_arauna_frontier_ui.py` aplica 27 substituicoes exatas e auditaveis;
-3. a ROM e compilada normalmente;
-4. um `trap EXIT` restaura o `strings.c`, inclusive se o build falhar ou for interrompido.
+The reviewed English replacement is:
 
-Isso evita uma reescrita de um arquivo C muito grande pelo conector e mantem a alteracao reversivel.
+- `scripts/render_battle_circuit_ui_en_checked.py`
+- bank: `data/text/arauna/en/battle_circuit_ui.json`
 
-## Superficie convertida
+It owns only three declarations in `src/strings.c`:
 
-- `BATTLE FRONTIER` visivel -> `CIRCUITO DE BATALHA`;
-- `Battle Points` -> `PONTOS DE BATALHA` e abreviacao `PB`;
-- titulos curtos do Passe: `SIMBOLOS`, `REG. BATALHA`, `PONTOS DE BATALHA`;
-- acoes do Passe e mapa;
-- mensagens de batalha registrada;
-- nomes dos sete simbolos;
-- descricoes das sete instalacoes;
-- textos de Pontos de Batalha exibidos no Trainer Card/records quando usam os mesmos `gText_*` globais.
+- `gText_CheckFrontierMap`: `Check BATTLE CIRCUIT MAP.`
+- `gText_PutAwayFrontierPass`: `Put away the CIRCUIT PASS.`
+- `gText_BattleFrontier`: `BATTLE CIRCUIT`
 
-## Nomes das instalacoes
+Everything else in the inherited Frontier Pass text UI remains English and is deliberately left intact in this pass, including Battle Points, Battle Record, Symbol names and the seven facility descriptions.
 
-Os nomes proprios `BATTLE TOWER`, `BATTLE DOME`, `BATTLE PALACE`, `BATTLE ARENA`, `BATTLE FACTORY`, `BATTLE PIKE` e `BATTLE PYRAMID` continuam inalterados neste lote. Eles sao tratados como nomes proprios provisoriamente para nao inventar uma traducao isolada para `BATTLE PIKE` e para permitir uma futura decisao unica para as sete instalacoes.
+## Strategy
 
-## Validacao
+`src/strings.c` remains unchanged in version control as rendered output.
 
-`python3 scripts/render_arauna_frontier_ui.py --check`
+During `scripts/build_arauna.sh`:
 
-O comando exige que cada um dos 27 anchors originais exista exatamente uma vez e confirma que todos os alvos renderizados substituem a superficie antiga.
+1. `src/strings.c` is already part of the transactional overlay backup;
+2. the checked English UI renderer updates only the three reviewed declarations;
+3. the ROM build consumes the rendered text;
+4. the existing exit trap restores the original source even if the build fails or is interrupted.
 
-`scripts/audit_visible_residue.py` audita a versao renderizada de `src/strings.c`, portanto nao conta como pendencia um texto legado que so existe como fonte de entrada para esta camada.
+The renderer masks the three owned declarations and requires every other byte in `src/strings.c` to remain stable.
 
-## Fora de escopo
+## Facility names and Symbols
 
-Qualquer texto incorporado diretamente em PNG/tilemap do Frontier Pass ou de outras telas continua sendo divida de arte e nao e alterado aqui.
+The inherited proper facility names remain visible:
+
+- BATTLE TOWER
+- BATTLE DOME
+- BATTLE PALACE
+- BATTLE ARENA
+- BATTLE FACTORY
+- BATTLE PIKE
+- BATTLE PYRAMID
+
+The inherited Symbol names also remain in English. This matches the current Battle Circuit map/dialogue strategy and avoids creating a second naming system in the UI.
+
+## CIRCUIT PASS continuity
+
+Map dialogue now uses **CIRCUIT PASS** throughout the reviewed Battle Circuit surfaces. This global UI pass closes the corresponding text-menu gap by replacing the old `FRONTIER PASS` cancel/put-away action.
+
+## Validation
+
+Run:
+
+`python3 scripts/render_battle_circuit_ui_en_checked.py --check`
+
+The renderer verifies:
+
+- exact three-key bank contract;
+- one unique C declaration per owned symbol;
+- only known legacy or already-rendered input values;
+- byte stability outside the three declarations;
+- no `BATTLE FRONTIER` or `FRONTIER PASS` survives in owned UI text;
+- `BATTLE CIRCUIT` and `CIRCUIT PASS` are present after rendering.
+
+## Graphic debt remains separate
+
+`src/frontier_pass.c` contains no literal player-facing `FRONTIER PASS` text. It loads the Frontier Pass graphics/tilemaps from `graphics/frontier_pass/`.
+
+Any old title or wording embedded directly in PNG/tilemap assets is **art debt**, not text debt, and is not modified by this renderer. That graphic surface should be audited and replaced as a separate art-safe task without changing save/state logic.
+
+## Legacy note
+
+The old Portuguese renderer and its historical documentation remain in the repository for provenance, but the English-only build must use only the checked English renderer described above.

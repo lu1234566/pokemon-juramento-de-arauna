@@ -211,6 +211,7 @@ python3 scripts/render_battle_circuit_analyst_en_checked.py --in-place
 python3 scripts/render_battle_circuit_lounge_identity_en_checked.py --in-place
 python3 scripts/render_battle_tower_circuit_pass_en_checked.py --in-place
 python3 scripts/render_circuit_pass_facilities_en_checked.py --in-place
+python3 scripts/render_battle_circuit_ui_en_checked.py --in-place
 python3 scripts/render_mt_chimney_surface.py --in-place
 python3 scripts/render_casa_da_cinza_nara_en_checked.py --in-place
 python3 scripts/render_mata_do_meio_lidia_en.py --in-place
