@@ -106,9 +106,9 @@
   },
   "roof": {
     "LilycoveCity_DepartmentStoreRooftop_Text_SetDatesForClearOutSales": [
-      "Sale dates are announced late\\n",
-      "far enough ahead.\\p",
-      "I keep checking the broadcasts.$"
+      "They announce sale dates late.\\p",
+      "I keep checking broadcasts\\n",
+      "so I don't miss one.$"
     ],
     "LilycoveCity_DepartmentStoreRooftop_Text_BeenWaitingForClearOutSale": [
       "The clear-out sale is on!\\p",
