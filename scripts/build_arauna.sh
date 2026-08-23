@@ -116,6 +116,7 @@ overlay_files=(
     "data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc"
     "data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc"
     "data/maps/BattleFrontier_BattleFactoryBattleRoom/scripts.inc"
+    "data/maps/BattleFrontier_BattlePikeLobby/scripts.inc"
     "data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc"
     "data/maps/BattleFrontier_BattlePyramidTop/scripts.inc"
     "data/maps/SlateportCity/scripts.inc"
@@ -219,6 +220,7 @@ python3 scripts/render_battle_tower_circuit_pass_en_checked.py --in-place
 python3 scripts/render_circuit_pass_facilities_en_checked.py --in-place
 python3 scripts/render_battle_circuit_ui_en_checked.py --in-place
 python3 scripts/render_circuit_masters_en_checked.py --in-place
+python3 scripts/render_battle_pike_lobby_en_checked.py --in-place
 python3 scripts/render_mt_chimney_surface.py --in-place
 python3 scripts/render_casa_da_cinza_nara_en_checked.py --in-place
 python3 scripts/render_mata_do_meio_lidia_en.py --in-place
