@@ -1,0 +1,42 @@
+{
+  "route104": {
+    "Route104_Text_MayWeShouldRegister": ["CIRO: Your POKéNAV can take\\n", "contacts now, right?\\p", "Register mine. I want to compare\\n", "what we find on the road.$"],
+    "Route104_Text_RegisteredMay": ["CIRO was registered in the\\n", "POKéNAV.$"],
+    "Route104_Text_BrendanWeShouldRegister": ["CIRO: Your POKéNAV can take\\n", "contacts now, right?\\p", "Register mine. I want to compare\\n", "what we find on the road.$"],
+    "Route104_Text_RegisteredBrendan": ["CIRO was registered in the\\n", "POKéNAV.$"]
+  },
+  "route128": {
+    "Route128_Text_ArchieWhatHappened": ["OTACILIO: I saw what a memory\\n", "can do to a survivor.\\p", "The LIVING ARCHIVE exists so no\\n", "one must carry the worst night\\n", "of their life forever.$"],
+    "Route128_Text_ArchieIOnlyWanted": ["OTACILIO: Preserving everything\\n", "is not always compassion.\\p", "Sometimes it only keeps a wound\\n", "open and calls that respect.$"],
+    "Route128_Text_MaxieDoYouUnderstandNow": ["LUZIA: The problem was never\\n", "remembering too much.\\p", "It was letting those in power\\n", "decide what others may keep.$"],
+    "Route128_Text_MaxieResposibilityFallsToArchieAndMe": ["OTACILIO: I saw what a memory\\n", "can do to a survivor.\\p", "The LIVING ARCHIVE exists so no\\n", "one must carry the worst night\\n", "of their life forever.$"],
+    "Route128_Text_MaxieThisDefiesBelief": ["LUZIA: The problem was never\\n", "remembering too much.\\p", "It was letting those in power\\n", "decide what others may keep.$"],
+    "Route128_Text_StevenWhatIsHappening": ["SEU BENTO: When a name leaves\\n", "people's mouths, I write it\\n", "down.\\p", "Not to replace who remembers.\\n", "Only to leave a trail.$"],
+    "Route128_Text_StevenWholeWorldWillDrown": ["SEU BENTO: When a name leaves\\n", "people's mouths, I write it\\n", "down.\\p", "Not to replace who remembers.\\n", "Only to leave a trail.$"],
+    "Route128_Text_StevenImGoingToSootopolis": ["SEU BENTO: When a name leaves\\n", "people's mouths, I write it\\n", "down.\\p", "Not to replace who remembers.\\n", "Only to leave a trail.$"]
+  },
+  "fallarbor": {
+    "FallarborTown_Text_HaveYouChallengedFlannery": ["NARA: Ash is what remains after\\n", "fire. It is not the end.\\p", "But we should not pretend\\n", "nothing burned.$"],
+    "FallarborTown_Text_TownSign": ["ASH FIELD. DISENCHANTMENT moves\\n", "where the land was wounded.\\p", "Zila sees a pattern older than\\n", "the Consortium.$"]
+  },
+  "aqua1f": {
+    "AquaHideout_1F_Text_OurBossIsSnatchingSomething": ["HORIZON: The director left to\\n", "find a key LIVING ARCHIVE\\n", "component.\\p", "Do not expect me to say where.$"],
+    "AquaHideout_1F_Text_WhereMightMagmaHideoutBe": ["HORIZON: The REMEMBRANCERS built\\n", "a base near ASHEN RIDGE.\\p", "Luzia wants the records before\\n", "we can reach them.$"],
+    "AquaHideout_1F_Text_BossWentToJackASubmarine": ["HORIZON: OTACILIO went to PORTO\\n", "DO SAL.\\p", "The submersible can reach the\\n", "M'BOI caverns.$"],
+    "AquaHideout_1F_Text_BossIsOnRoute122": ["HORIZON: OTACILIO went to the\\n", "MEMORIAL OF NAMES on ROUTE 122.\\p", "He wants the records kept there.$"],
+    "AquaHideout_1F_Text_TeamMagmaAtMtChimney": ["HORIZON: The REMEMBRANCERS are\\n", "at ASHEN RIDGE.\\p", "They say LUZIA plans to return\\n", "memories taken by force.$"],
+    "AquaHideout_1F_Text_BossIsInSlateportCity": ["HORIZON: OTACILIO is in PORTO DO\\n", "SAL.\\p", "The public LIVING ARCHIVE demo\\n", "starts there.$"],
+    "AquaHideout_1F_Text_Grunt1Intro": ["HORIZON: Our sensors detect\\n", "unstable BONDS before full\\n", "DISENCHANTMENT.\\p", "That can save whole families.$"],
+    "AquaHideout_1F_Text_Grunt1Defeat": ["HORIZON: The LIVING ARCHIVE does\\n", "not erase people.\\p", "It separates trauma from\\n", "identity. At least, that is what\\n", "we were taught.$"],
+    "AquaHideout_1F_Text_Grunt1PostBattle": ["HORIZON: Our sensors detect\\n", "unstable BONDS before full\\n", "DISENCHANTMENT.\\p", "That can save whole families.$"]
+  },
+  "pacifidlog": {"PacifidlogTown_Text_TownSign": ["HOUSE OF THE FIRE. Stories are\\n", "retold here to stay alive, not\\n", "to remain identical.$"]},
+  "fossil_tunnel": {
+    "Route114_FossilManiacsTunnel_Text_LookInDesertForFossils": ["I'm the FOSSIL MANIAC.\\p", "I love FOSSILS. Want one?\\p", "I found these first. If you want\\n", "your own, try the desert.\\p", "Stone and sand hide things for a\\n", "long time.$"],
+    "Route114_FossilManiacsTunnel_Text_DevonCorpRevivingFossils": ["You found a FOSSIL? Nice find.\\p", "HORIZON studies ways to recover\\n", "POKéMON from FOSSILS.\\p", "I prefer leaving mine as I found\\n", "them.$"],
+    "Route114_FossilManiacsTunnel_Text_FossilsAreWonderful": ["FOSSILS are wonderful... I could\\n", "stare at them all day.$"],
+    "Route114_FossilManiacsTunnel_Text_NotSafeThatWay": ["Hey, that way is not safe.\\p", "I was digging when the whole\\n", "wall collapsed.\\p", "There is a huge cave below. I\\n", "left it alone. No FOSSILS there.$"]
+  },
+  "verdanturf": {"VerdanturfTown_Text_TownSign": ["VALE DO SILENCIO. Displaced\\n", "families live here.\\p", "Many remember the loss but can\\n", "no longer name the place they\\n", "lost.$"]},
+  "cozmo": {"FallarborTown_CozmosHouse_Text_MayIHaveMeteorite": ["PROF. COZMO: You still have the\\n", "METEORITE?\\p", "May I have it for my research?$"]}
+}
