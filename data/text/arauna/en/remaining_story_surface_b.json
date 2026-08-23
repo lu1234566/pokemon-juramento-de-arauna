@@ -1,0 +1,69 @@
+{
+  "mboi_gym": {
+    "SootopolisCity_Gym_1F_Text_GymGuideAdvice": ["Guide: AGUAS DE M'BOI GYM tests\\n", "careful movement over ice.\\p", "DONA CELINA values judgment more\\n", "than speed. Watch every step.$"],
+    "SootopolisCity_Gym_1F_Text_GymGuidePostVictory": ["You beat DONA CELINA!\\p", "With all eight BADGES, OATH ROAD\\n", "and the ARAUNA LEAGUE await.$"],
+    "SootopolisCity_Gym_1F_Text_JuanIntro": ["DONA CELINA: Living means\\n", "learning what to keep and what\\n", "to let go.\\p", "Choosing that for someone else\\n", "is not ours to do.$"],
+    "SootopolisCity_Gym_1F_Text_JuanDefeat": ["DONA CELINA: You knew when to\\n", "hold and when to release.$"],
+    "SootopolisCity_Gym_1F_Text_ReceivedRainBadge": ["{PLAYER} received the\\n", "SPRING BADGE from DONA CELINA.$"],
+    "SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis": ["The SPRING BADGE lets POKéMON\\n", "use WATERFALL outside battle.\\p", "Take this too, to remember our\\n", "battle.$"],
+    "SootopolisCity_Gym_1F_Text_ExplainWaterPulse": ["This TM contains WATER PULSE.\\p", "It may confuse the target with\\n", "ultrasonic waves.$"],
+    "SootopolisCity_Gym_1F_Text_RegisteredJuan": ["Registered DONA CELINA in the\\n", "POKéNAV.$"],
+    "SootopolisCity_Gym_1F_Text_JuanPostBattle": ["DONA CELINA: Memory can be kept\\n", "without becoming a cage.\\p", "That balance is the lesson.$"],
+    "SootopolisCity_Gym_1F_Text_GoGetFortreeBadge": ["One BADGE is still missing.\\p", "Return after earning the MATA DO\\n", "MEIO GYM BADGE.$"],
+    "SootopolisCity_Gym_1F_Text_GymStatue": ["AGUAS DE M'BOI POKéMON GYM\\p", "LEADER: DONA CELINA$"],
+    "SootopolisCity_Gym_1F_Text_GymStatueCertified": ["AGUAS DE M'BOI POKéMON GYM\\p", "DONA CELINA'S CERTIFIED\\n", "TRAINERS: {PLAYER}$"],
+    "SootopolisCity_Gym_1F_Text_JuanPreRematch": ["DONA CELINA: A lesson changes\\n", "when you return to it.\\p", "Show me what changed in you.$"],
+    "SootopolisCity_Gym_1F_Text_JuanRematchDefeat": ["DONA CELINA: You found the\\n", "balance again.$"],
+    "SootopolisCity_Gym_1F_Text_JuanPostRematch": ["DONA CELINA: Keep choosing with\\n", "care. No BADGE can do that for\\n", "you.$"],
+    "SootopolisCity_Gym_1F_Text_JuanRematchNeedTwoMons": ["DONA CELINA: Bring at least two\\n", "POKéMON for this rematch.$"]
+  },
+  "mboi_house3": {
+    "SootopolisCity_House3_Text_JuanHasManyFansDoYou": ["DONA CELINA has many people who\\n", "seek her advice.\\p", "Do people follow your battles\\n", "too?$"],
+    "SootopolisCity_House3_Text_YouMustBePrettyStrong": ["Then you must have made quite an\\n", "impression.$"],
+    "SootopolisCity_House3_Text_LonesomeTryWorkingHarder": ["Not yet? That is all right.\\p", "A reputation should follow your\\n", "actions, not the other way\\n", "around.$"],
+    "SootopolisCity_House3_Text_TrainerFanClubWasWild": ["People come from across ARAUNA\\n", "to talk about strong TRAINERS.\\p", "The loudest stories are not\\n", "always the truest ones.$"]
+  },
+  "mboi_house5": {
+    "SootopolisCity_House5_Text_SootopolisMtPyreConnection": ["The water carries memories that\\n", "do not belong to the receiver.\\p", "People know names they never\\n", "heard and forget beloved faces.$"],
+    "SootopolisCity_House5_Text_BrotherUsedToStudySea": ["My brother studied these waters.\\p", "He says the currents changed\\n", "long before the city noticed.$"]
+  },
+  "petalburg_house2": {
+    "PetalburgCity_House2_Text_NormanBecameGymLeader": ["ELIAS: Some guilt does not\\n", "vanish when we stay silent.\\p", "I approved part of the M'BOI\\n", "project and spent years calling\\n", "my fear prudence.$"],
+    "PetalburgCity_House2_Text_BattledNormanOnce": ["ELIAS: Being your father never\\n", "gave me the right to choose what\\n", "truth you could bear.\\p", "I understood that too late.$"]
+  },
+  "mossdeep_city": {
+    "MossdeepCity_Text_WantKingsRockStevenGaveMe": ["SEU BENTO gave me this odd rock.\\p", "Do you want it?$"],
+    "MossdeepCity_Text_StevensHouseOverThere": ["SEU BENTO keeps his notes in the\\n", "house over there.\\p", "Every label has a place, a date\\n", "and a source.$"],
+    "MossdeepCity_Text_MossdeepTargetedByMagma": ["The REMEMBRANCERS are moving\\n", "toward the SKY MISSIONS center.\\p", "If you want to know why, go to\\n", "the communications complex.$"],
+    "MossdeepCity_Text_GymSign": ["SKY MISSIONS POKéMON GYM\\p", "CECILIA & CAETANO\\p", "Every star has witnesses.$"],
+    "MossdeepCity_Text_CitySign": ["SKY MISSIONS. HORIZON plans to\\n", "use the regional network to\\n", "expand the LIVING ARCHIVE.$"],
+    "MossdeepCity_Text_SpaceCenterSign": ["SKY MISSIONS CENTER Regional\\n", "communications hub.$"],
+    "MossdeepCity_Text_ScottSomethingWrongWithTown": ["SEU BENTO: {PLAYER}, the\\n", "network is under pressure.\\p", "The warning is not about a\\n", "battle. It is about who controls\\n", "the record.\\p", "I am going inside.$"],
+    "MossdeepCity_Text_SootopolisNewGymLeader": ["I heard AGUAS DE M'BOI has a new\\n", "GYM LEADER.\\p", "DONA CELINA is known for asking\\n", "what we keep and what we\\n", "release.$"]
+  },
+  "mossdeep_bento_house": {
+    "MossdeepCity_StevensHouse_Text_YouveEarnedHMDive": ["SEU BENTO: {PLAYER},\\n", "good timing.\\p", "M'BOI records point to something\\n", "under the water.\\p", "Take this DIVE technique. You\\n", "will need it.$"],
+    "MossdeepCity_StevensHouse_Text_ExplainDive": ["SEU BENTO: When a name leaves\\n", "people's mouths, I write it\\n", "down.\\p", "Not to replace who remembers.\\n", "Only to leave a trail.$"],
+    "MossdeepCity_StevensHouse_Text_UnderwateCavernBetweenMossdeepSootopolis": ["SEU BENTO: The underwater route\\n", "links SKY MISSIONS to M'BOI.\\p", "The records below are older than\\n", "HORIZON's machines.$"],
+    "MossdeepCity_StevensHouse_Text_LetterFromSteven": ["SEU BENTO: A record without a\\n", "source is only half a clue.\\p", "If you carry this note, carry\\n", "who wrote it too.$"],
+    "MossdeepCity_StevensHouse_Text_CollectionOfRareRocks": ["Stones, labels and notebooks.\\p", "Each piece has a date, a place\\n", "and a name written by SEU BENTO.$"]
+  },
+  "mossdeep_gym": {
+    "MossdeepCity_Gym_Text_TateAndLizaIntro": ["CECILIA: From above, cities look\\n", "small.\\p", "CAETANO: The lives inside them\\n", "never are.\\p", "We judge what the network cannot\\n", "see from a distance.$"],
+    "MossdeepCity_Gym_Text_TateAndLizaDefeat": ["CECILIA: You kept the people in\\n", "the picture, not just the data.$"],
+    "MossdeepCity_Gym_Text_ReceivedMindBadge": ["{PLAYER} received the\\n", "PRISM BADGE from CECILIA and\\n", "CAETANO.$"],
+    "MossdeepCity_Gym_Text_ExplainMindBadgeTakeThis": ["The PRISM BADGE lets POKéMON use\\n", "DIVE outside battle.\\p", "Take this too.$"],
+    "MossdeepCity_Gym_Text_ExplainCalmMind": ["This TM contains CALM MIND.\\p", "It raises SP. ATK and SP. DEF by\\n", "steadying focus.$"],
+    "MossdeepCity_Gym_Text_RegisteredTateAndLiza": ["Registered CECILIA & CAETANO in\\n", "the POKéNAV.$"],
+    "MossdeepCity_Gym_Text_TateAndLizaPostBattle": ["CAETANO: A signal can cross the\\n", "region in seconds.\\p", "CECILIA: Understanding still\\n", "takes time.$"],
+    "MossdeepCity_Gym_Text_TateAndLizaNeedTwoMons": ["CECILIA: This is a DOUBLE\\n", "BATTLE.\\p", "Bring at least two POKéMON.$"],
+    "MossdeepCity_Gym_Text_GymStatue": ["SKY MISSIONS POKéMON GYM\\p", "LEADERS: CECILIA & CAETANO$"],
+    "MossdeepCity_Gym_Text_GymStatueCertified": ["SKY MISSIONS POKéMON GYM\\p", "CECILIA & CAETANO'S CERTIFIED\\n", "TRAINERS: {PLAYER}$"],
+    "MossdeepCity_Gym_Text_TateAndLizaPreRematch": ["CAETANO: The network changed.\\p", "CECILIA: So did we. Show us what\\n", "changed in you.$"],
+    "MossdeepCity_Gym_Text_TateAndLizaRematchDefeat": ["CECILIA: The view changed, but\\n", "your judgment held.$"],
+    "MossdeepCity_Gym_Text_TateAndLizaPostRematch": ["CAETANO: Data travels fast.\\p", "CECILIA: Responsibility should\\n", "not.$"],
+    "MossdeepCity_Gym_Text_TateAndLizaRematchNeedTwoMons": ["CAETANO: Two voices, two\\n", "POKéMON.\\p", "Bring at least two for our\\n", "rematch.$"],
+    "MossdeepCity_Gym_Text_GymGuideAdvice": ["Guide: CECILIA & CAETANO fight\\n", "as a pair.\\p", "Plan for two opponents acting at\\n", "the same time.$"],
+    "MossdeepCity_Gym_Text_GymGuidePostVictory": ["You beat CECILIA & CAETANO!\\p", "That PRISM BADGE puts you one\\n", "step from the full set.$"]
+  }
+}
