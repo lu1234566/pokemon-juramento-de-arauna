@@ -146,8 +146,8 @@ for renderer in renderers:
         fail(f"Portuguese renderer path is active: {renderer}")
 
 extra_overlays = read_manifest(OVERLAY_EXTRA_MANIFEST)
-if len(extra_overlays) != 38:
-    fail(f"expected 38 final transactional overlay files, found {len(extra_overlays)}")
+if len(extra_overlays) != 40:
+    fail(f"expected 40 final transactional overlay files, found {len(extra_overlays)}")
 for rel_path in extra_overlays:
     if rel_path.startswith("/") or ".." in Path(rel_path).parts:
         fail(f"unsafe overlay path: {rel_path}")
