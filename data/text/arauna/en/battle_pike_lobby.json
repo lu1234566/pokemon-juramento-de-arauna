@@ -1,0 +1,119 @@
+{
+  "BattleFrontier_BattlePikeLobby_Text_WelcomeToBattlePike": [
+    "Three paths. Choose one.\\p",
+    "Welcome to the BATTLE PIKE.\\p",
+    "JACI's course tests judgment\\n",
+    "when certainty runs out.$"
+  ],
+  "BattleFrontier_BattlePikeLobby_Text_TakeChallenge": [
+    "Enter the Pike challenge?$"
+  ],
+  "BattleFrontier_BattlePikeLobby_Text_ExplainBattlePike": [
+    "At each junction, choose one of\\n",
+    "three paths.\\p",
+    "What waits beyond a door may be\\n",
+    "a battle, recovery, trouble,\\n",
+    "or something else.\\p",
+    "Reach the goal to earn Battle\\n",
+    "Points.\\p",
+    "Staff in large rooms can pause\\n",
+    "your run. Save before leaving.$"
+  ],
+  "BattleFrontier_BattlePikeLobby_Text_LookForwardToSeeingYou": [
+    "The Pike will be here when you\\n",
+    "want another route.$"
+  ],
+  "BattleFrontier_BattlePikeLobby_Text_WhichChallengeMode": [
+    "Choose Level 50 or Open Level.\\l",
+    "Which course will you enter?$"
+  ],
+  "BattleFrontier_BattlePikeLobby_Text_NotEnoughValidMonsLv50": [
+    "Bring three eligible POKéMON.\\p",
+    "At Level 50, each must be\\n",
+    "Lv. 50 or below.\\p",
+    "All three species must differ.\\p",
+    "Held items must also differ.\\p",
+    "EGGS{STR_VAR_1} ineligible.\\p",
+    "Return when your team is ready.$"
+  ],
+  "BattleFrontier_BattlePikeLobby_Text_NotEnoughValidMonsLvOpen": [
+    "Bring three eligible POKéMON.\\p",
+    "All three species must differ.\\p",
+    "Held items must also differ.\\p",
+    "EGGS{STR_VAR_1} ineligible.\\p",
+    "Return when your team is ready.$"
+  ],
+  "BattleFrontier_BattlePikeLobby_Text_PleaseChooseThreeMons": [
+    "Choose the three POKéMON for\\n",
+    "this run.$"
+  ],
+  "BattleFrontier_BattlePikeLobby_Text_SaveBeforeChallenge": [
+    "Your run must be saved before\\n",
+    "it begins. Is that acceptable?$"
+  ],
+  "BattleFrontier_BattlePikeLobby_Text_StepThisWay": [
+    "Your first choice is ahead.$"
+  ],
+  "BattleFrontier_BattlePikeLobby_Text_ChallengeEndedRecordResults": [
+    "Your run has ended.\\p",
+    "I'll record the result now.\\n",
+    "Please wait.$"
+  ],
+  "BattleFrontier_BattlePikeLobby_Text_PossessLuckInAbundance": [
+    "You reached the goal.\\p",
+    "Chance opened paths, but your\\n",
+    "choices carried the run.$"
+  ],
+  "BattleFrontier_BattlePikeLobby_Text_ShallRecordResults": [
+    "I'll record this run now.\\n",
+    "Please wait.$"
+  ],
+  "BattleFrontier_BattlePikeLobby_Text_FailedToSaveBeforeQuitting": [
+    "Your last run ended without the\\n",
+    "required save.\\p",
+    "That run cannot be counted.\\n",
+    "We'll start fresh from here.$"
+  ],
+  "BattleFrontier_BattlePikeLobby_Text_SnatchedVictoryFromQueen": [
+    "You defeated MASTER JACI and\\n",
+    "cleared the challenge.$"
+  ],
+  "BattleFrontier_BattlePikeLobby_Text_AwardYouTheseBattlePoints": [
+    "For completing the route, we\\n",
+    "award these Battle Points.$"
+  ],
+  "BattleFrontier_BattlePikeLobby_Text_OneRoomAwayFromGoal": [
+    "I was one room from the goal!\\p",
+    "Status trouble can ruin a route\\n",
+    "if you stop planning ahead.$"
+  ],
+  "BattleFrontier_BattlePikeLobby_Text_NeverHadToBattleTrainer": [
+    "I've cleared this ten times and\\n",
+    "still missed Trainer battles.\\p",
+    "Same doors. Different stories.$"
+  ],
+  "BattleFrontier_BattlePikeLobby_Text_ThinkAbilitiesUsefulHere": [
+    "Abilities matter here.\\p",
+    "A route can punish a team that\\n",
+    "only prepares for battles.$"
+  ],
+  "BattleFrontier_BattlePikeLobby_Text_RulesAreListed": [
+    "BATTLE PIKE rules are listed.$"
+  ],
+  "BattleFrontier_BattlePikeLobby_Text_ReadWhichHeading": [
+    "Which rule do you want to read?$"
+  ],
+  "BattleFrontier_BattlePikeLobby_Text_ExplainPokenavBagRules": [
+    "The BAG and POKéNAV cannot be\\n",
+    "used during a Pike run.$"
+  ],
+  "BattleFrontier_BattlePikeLobby_Text_ExplainHeldItemRules": [
+    "A held BERRY or HERB works only\\n",
+    "once during a Pike run.$"
+  ],
+  "BattleFrontier_BattlePikeLobby_Text_ExplainMonOrderRules": [
+    "POKéMON order cannot be changed\\n",
+    "during a Pike run.\\p",
+    "Set the order before entering.$"
+  ]
+}
