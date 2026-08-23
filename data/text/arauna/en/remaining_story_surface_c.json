@@ -1,0 +1,72 @@
+{
+  "seafloor1": {
+    "SeafloorCavern_Room1_Text_Grunt1Intro": ["You should not have reached the\\n", "M'BOI chambers.\\p", "While OTACILIO is below, no one\\n", "passes.$"],
+    "SeafloorCavern_Room1_Text_Grunt1Defeat": ["You got past me...$"],
+    "SeafloorCavern_Room1_Text_Grunt1PostBattle": ["OTACILIO believes some memories\\n", "only keep hurting.\\p", "I will not pretend I understand\\n", "all of it.$"],
+    "SeafloorCavern_Room1_Text_Grunt2Intro": ["These caverns react to things\\n", "our sensors cannot read.\\p", "Do not come any closer.$"],
+    "SeafloorCavern_Room1_Text_Grunt2Defeat": ["So even that did not stop you...$"],
+    "SeafloorCavern_Room1_Text_Grunt2PostBattle": ["The deeper we go, the less the\\n", "ARCHIVE obeys.\\p", "Maybe it was never really a\\n", "tool.$"]
+  },
+  "seafloor3": {
+    "SeafloorCavern_Room3_Text_ShellyIntro": ["MARTA: OTACILIO is near the\\n", "core.\\p", "I will not let you interrupt\\n", "everything now.$"],
+    "SeafloorCavern_Room3_Text_ShellyDefeat": ["MARTA: Heh... You are worse than\\n", "the reports said.$"],
+    "SeafloorCavern_Room3_Text_ShellyPostBattle": ["MARTA: Do not confuse obedience\\n", "with certainty.\\p", "I follow OTACILIO because I saw\\n", "what memories can do.$"],
+    "SeafloorCavern_Room3_Text_Grunt5Intro": ["MARTA ordered us to hold this\\n", "route.\\p", "If you want through, try me.$"],
+    "SeafloorCavern_Room3_Text_Grunt5Defeat": ["I should have stayed with the\\n", "reports...$"],
+    "SeafloorCavern_Room3_Text_Grunt5PostBattle": ["The ARCHIVE has been unstable\\n", "since we descended into M'BOI.\\p", "OTACILIO keeps going anyway.$"]
+  },
+  "seafloor4": {
+    "SeafloorCavern_Room4_Text_Grunt3Intro": ["Below this point, the ARCHIVE\\n", "stops responding properly.\\p", "This is no place for tourists.$"],
+    "SeafloorCavern_Room4_Text_Grunt3Defeat": ["Are you really going to keep\\n", "going?$"],
+    "SeafloorCavern_Room4_Text_Grunt3PostBattle": ["The recordings here mix\\n", "evacuation, rescue and silence.\\p", "Maybe that is why OTACILIO came\\n", "himself.$"],
+    "SeafloorCavern_Room4_Text_Grunt4Intro": ["The core is just ahead.\\p", "One more step and I stop you.$"],
+    "SeafloorCavern_Room4_Text_Grunt4Defeat": ["I failed to protect the way.$"],
+    "SeafloorCavern_Room4_Text_Grunt4PostBattle": ["The sensors lost the signal.\\p", "If something wakes below, no one\\n", "knows what happens.$"]
+  },
+  "meteor_bento": {
+    "MeteorFalls_StevensCave_Text_ShouldKnowHowGoodIAmExpectWorst": ["SEU BENTO: I write what people\\n", "stop saying aloud.\\p", "Not to own the memory. To leave\\n", "a trail others can question.$"],
+    "MeteorFalls_StevensCave_Text_StevenDefeat": ["SEU BENTO: Good. A record should\\n", "survive being challenged.$"],
+    "MeteorFalls_StevensCave_Text_MyPredictionCameTrue": ["SEU BENTO: Strength matters less\\n", "than what you do with it.\\p", "Keep asking who gets to correct\\n", "the person holding the record.$"]
+  },
+  "val_house": {
+    "VerdanturfTown_WandasHouse_Text_StrongerSpeech": ["VAL: I am still afraid.\\p", "Now I know courage is not\\n", "forgetting fear. It is walking\\n", "while remembering it.$"],
+    "VerdanturfTown_WandasHouse_Text_StrongerSpeechShort": ["VAL: I am still afraid.\\p", "I just know how to keep walking\\n", "with it now.$"],
+    "VerdanturfTown_WandasHouse_Text_WallysNextDoor": ["VAL is next door.\\p", "He came here to recover and\\n", "found his own pace instead.$"],
+    "VerdanturfTown_WandasHouse_Text_WallySlippedOff": ["VAL left on his own again.\\p", "He said he needed to know how\\n", "far his own pace could take him.$"],
+    "VerdanturfTown_WandasHouse_Text_WallyGoneThatFar": ["VAL reached OATH ROAD?\\p", "He spent so long thinking he had\\n", "to become someone else.\\p", "I am glad he kept his own pace.$"],
+    "VerdanturfTown_WandasHouse_Text_MeetWanda": ["WANDA: You are {PLAYER}?\\p", "VAL told me about you. I'm his\\n", "cousin. Glad to meet you.\\p", "He has more energy since coming\\n", "here, but we let him set the\\n", "pace.$"],
+    "VerdanturfTown_WandasHouse_Text_DontWorryAboutWally": ["VAL: I spent too long thinking I\\n", "had to become someone else to\\n", "keep traveling.\\p", "I only needed to find my own\\n", "pace.$"],
+    "VerdanturfTown_WandasHouse_Text_CanSeeGirlfriendEveryDay": ["Thanks to you, the tunnel is\\n", "open.\\p", "I can see my girlfriend every\\n", "day without putting the POKéMON\\n", "in the cave through more\\n", "blasting.$"],
+    "VerdanturfTown_WandasHouse_Text_DaughtersBoyfriendDriven": ["My daughter's boyfriend kept\\n", "digging the tunnel by hand.\\p", "She worried about him, so she\\n", "checked on him often.$"],
+    "VerdanturfTown_WandasHouse_Text_DaughtersBoyfriendWasDigging": ["He finished the tunnel by hand.\\p", "No blasting, and the cave\\n", "POKéMON were left in peace.$"],
+    "VerdanturfTown_WandasHouse_Text_IfAnythingHappenedToWally": ["VAL still worries us sometimes.\\p", "But helping him does not mean\\n", "choosing his life for him.$"],
+    "VerdanturfTown_WandasHouse_Text_WallyWasInEverGrande": ["VAL made it all the way to OATH\\n", "ROAD.\\p", "He chose that path himself. That\\n", "matters more than how fast.$"]
+  },
+  "pokedex": {
+    "gBirchDexRatingText_AreYouCurious": ["ANAHI: {PLAYER}, want to\\n", "check how your records are\\n", "going?$"] ,
+    "gBirchDexRatingText_Cancel": ["There are still too few records\\n", "for a full assessment.$"],
+    "gBirchDexRatingText_SoYouveSeenAndCaught": ["Let's see...\\p", "You have seen {STR_VAR_1}\\n", "POKéMON and caught\\n", "{STR_VAR_2} POKéMON.$"],
+    "gBirchDexRatingText_LessThan10": ["Explore more grassy areas.\\n", "Observe carefully.$"],
+    "gBirchDexRatingText_LessThan20": ["You are getting the hang of it.\\n", "The next records take more work.$"],
+    "gBirchDexRatingText_LessThan30": ["Some POKéMON appear only in\\n", "specific places. Keep looking.$"],
+    "gBirchDexRatingText_LessThan40": ["Many records are still missing,\\n", "but your POKéDEX is taking\\n", "shape.$"],
+    "gBirchDexRatingText_LessThan50": ["The fieldwork is progressing\\n", "well. Keep this pace.$"],
+    "gBirchDexRatingText_LessThan60": ["Have you tried fishing RODS?\\n", "Many POKéMON live in the water.$"],
+    "gBirchDexRatingText_LessThan70": ["Do not think only about\\n", "catching. Some POKéMON can\\n", "evolve.$"],
+    "gBirchDexRatingText_LessThan80": ["This POKéDEX can become an\\n", "excellent record of ARAUNA.$"],
+    "gBirchDexRatingText_LessThan90": ["You gathered many records. Your\\n", "fieldwork is impressive.$"],
+    "gBirchDexRatingText_LessThan100": ["Have you visited ARAUNA\\n", "PRESERVE?\\p", "Some POKéMON are found only\\n", "there.$"],
+    "gBirchDexRatingText_LessThan110": ["You passed one hundred records.\\n", "That is an impressive POKéDEX.$"],
+    "gBirchDexRatingText_LessThan120": ["Some POKéMON appear when you use\\n", "ROCK SMASH.$"],
+    "gBirchDexRatingText_LessThan130": ["Trading POKéMON with other\\n", "people can expand your records.$"],
+    "gBirchDexRatingText_LessThan140": ["Some POKéMON evolve after\\n", "building a strong bond with\\n", "their TRAINER.$"],
+    "gBirchDexRatingText_LessThan150": ["ARAUNA holds more species than I\\n", "first expected.$"],
+    "gBirchDexRatingText_LessThan160": ["Some species appear in large\\n", "numbers at certain times.\\p", "Do not miss those chances.$"],
+    "gBirchDexRatingText_LessThan170": ["Your POKéDEX already shows much\\n", "of ARAUNA's diversity.$"],
+    "gBirchDexRatingText_LessThan180": ["Your fieldwork now stands beside\\n", "that of experienced researchers.$"],
+    "gBirchDexRatingText_LessThan190": ["A POKéDEX like this takes\\n", "method, patience and experience.$"],
+    "gBirchDexRatingText_LessThan200": ["You are very close to completing\\n", "this POKéDEX. Keep going.$"],
+    "gBirchDexRatingText_DexCompleted": ["Congratulations! ARAUNA POKéDEX\\n", "complete!$"],
+    "gBirchDexRatingText_OnANationwideBasis": ["Now, looking at all the data...\\p", "You have seen {STR_VAR_1}\\n", "POKéMON and caught\\n", "{STR_VAR_2} POKéMON.$"]
+  }
+}
