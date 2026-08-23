@@ -31,3 +31,4 @@ data/maps/EverGrandeCity_PhoebesRoom/scripts.inc
 data/maps/EverGrandeCity_GlaciasRoom/scripts.inc
 data/maps/EverGrandeCity_DrakesRoom/scripts.inc
 data/maps/EverGrandeCity_ChampionsRoom/scripts.inc
+data/text/match_call.inc
