@@ -13,9 +13,9 @@ O núcleo narrativo está documentado em [`docs/ARAUANA_STORY_IMPLEMENTATION.md`
 A build oficial é dirigida por manifestos e falha fechada:
 
 - `scripts/english_renderers.txt` — ordem oficial dos **66** renderizadores English-only;
-- `scripts/english_overlay_files_extra.txt` — **38** fontes finais adicionadas ao conjunto transacional de backup/restore;
+- `scripts/english_overlay_files_extra.txt` — **40** fontes finais adicionadas ao conjunto transacional de backup/restore;
 - `scripts/check_english_only_policy.py` — trava política, ordem e integração da build;
-- `scripts/check_arauna_story_coverage.py` — exige **16/16** estágios canônicos e **344** blocos runtime de lacuna final cobertos;
+- `scripts/check_arauna_story_coverage.py` — exige **16/16** estágios canônicos e **346** blocos runtime de lacuna final cobertos;
 - `scripts/audit_rendered_visible_residue_en.py` — inventário pós-render de identidades antigas/PT-BR residual; superfícies transacionais críticas falham a validação;
 - `scripts/check_arauna_static.sh` — executa a mesma composição transacional da build oficial sem exigir o toolchain ARM.
 
@@ -75,7 +75,13 @@ O projeto não depende de GitHub Actions para editar ou integrar conteúdo. A CI
 
 ## Estado de prontidão
 
-A infraestrutura English-only e a cobertura canônica possuem gates fail-closed. A auditoria de prontidão de 23/08/2026 também fechou lacunas runtime fora do conjunto canônico anterior: a transição M'Boi → Oath Tower ainda expunha a cena vanilla de Wallace/Cave of Origin, uma fala opcional ainda citava Cave of Origin e uma ponte de PokéNav ainda registrava DAD NORMAN / DEVON's MR. STONE em vez de ELIAS / OTACILIO.
+A infraestrutura English-only e a cobertura canônica possuem gates fail-closed. A auditoria de prontidão de 23/08/2026 fechou lacunas runtime que estavam fora do conjunto canônico anterior, incluindo:
+
+- a transição M'Boi → Oath Tower ainda expunha a cena vanilla de Wallace/Cave of Origin;
+- uma fala opcional em Route 119 ainda citava Cave of Origin;
+- uma ponte de PokéNav em Route 105 ainda registrava DAD NORMAN / DEVON's MR. STONE em vez de ELIAS / OTACILIO;
+- a sidequest do SCANNER no navio abandonado ainda enviava o jogador a CAPT. STERN em vez do HARBOR ENGINEER;
+- landmarks do mapa regional ainda exibiam identidades vanilla como MT. PYRE, SKY PILLAR, RUSTURF TUNNEL, MAGMA HIDEOUT, GRANITE CAVE e NEW MAUVILLE; somente equivalências já estabelecidas no cânone foram substituídas.
 
 O repositório ainda está em desenvolvimento. Uma compilação ARM completa e um playtest em ROM continuam sendo evidências separadas da validação estática; mapas e polimento visual também permanecem em passes próprios.
 
