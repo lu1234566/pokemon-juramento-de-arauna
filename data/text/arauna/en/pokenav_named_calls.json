@@ -51,7 +51,7 @@
     "12": ["CIRO: If you dive, mark where the\\n", "current changes.\\p", "Do not trust a map just because\\n", "it looks precise.$"],
     "13": ["CIRO: Three old forces appear in\\n", "the records.\\p", "The sources do not agree on one\\n", "explanation.$"],
     "14": ["CIRO: Eight BADGES already? Fine.\\p", "I will not sound impressed until\\n", "I beat you again.$"],
-    "15": ["CIRO: Everyone knows CHAMPION.\\p", "I care whether you still question\\n", "your own conclusions.$"]
+    "15": ["CIRO: Everyone knows CHAMPION.\\p", "I care if you still question\\n", "your own conclusions.$"]
   },
   "val": {
     "1": ["VAL: {PLAYER}. I am stronger.\\p", "Not faster. Stronger.\\p", "I finally know the difference.$"],
@@ -69,14 +69,14 @@
     "4": ["SEU BENTO: HORIZON and the\\n", "REMEMBRANCERS both claim care.\\p", "Watch what they actually do.$"],
     "5": ["SEU BENTO: The M'BOI chambers\\n", "are below the sea.\\p", "I cannot follow you there. Bring\\n", "back what you witnessed.$"],
     "6": ["SEU BENTO: Eight BADGES open\\n", "OATH ROAD.\\p", "They do not tell you what kind of\\n", "CHAMPION to become.$"],
-    "7": ["SEU BENTO: So, CHAMPION...\\p", "People may trust your version now\\n", "because of the title. Be careful.$"]
+    "7": ["SEU BENTO: So, CHAMPION...\\p", "People may trust your version\\n", "because of the title now.\\p", "Be careful.$"]
   },
   "leaders": {
     "Roxanne": {
       "preparing": ["DALVA: SERRA DO UIVO changes\\n", "after every storm.\\p", "I train with the mountain, not\\n", "against it.$"],
       "postgame": ["DALVA: CHAMPION or not, stone\\n", "still asks patience.\\p", "Come back for another lesson.$"],
       "ready": ["DALVA: The ridge is steady today.\\p", "I am ready for a rematch.$"],
-      "post_rematch": ["DALVA: Good battle. A strong base\\n", "can change without breaking.$"]
+      "post_rematch": ["DALVA: Good battle.\\p", "A strong base can change without\\n", "breaking.$"]
     },
     "Brawly": {
       "preparing": ["ADEMAR: Nets taught me timing.\\p", "Pull too early and the pattern\\n", "tightens in the wrong place.$"],
@@ -87,30 +87,30 @@
     "Wattson": {
       "preparing": ["OLIVIA: ENCRUZILHADA is built on\\n", "choices.\\p", "I test routes without pretending\\n", "one answer fits everyone.$"],
       "postgame": ["OLIVIA: CHAMPION gives you more\\n", "roads, not fewer.\\p", "Come choose another battle.$"],
-      "ready": ["OLIVIA: I have a new route through\\n", "my team. Want to test it?$"],
+      "ready": ["OLIVIA: I have a new route\\n", "through my team.\\p", "Want to test it?$"],
       "post_rematch": ["OLIVIA: That path failed. Good.\\p", "Now I know where the next choice\\n", "begins.$"]
     },
     "Flannery": {
-      "preparing": ["NARA: Ash remembers fire's shape.\\p", "I train with what remains, not\\n", "pretending nothing burned.$"],
+      "preparing": ["NARA: Ash remembers fire.\\p", "I train with what remains, not\\n", "pretending nothing burned.$"],
       "postgame": ["NARA: Even a CHAMPION leaves ash\\n", "behind.\\p", "Come battle when you want to read\\n", "it.$"],
       "ready": ["NARA: The house is warm.\\p", "My team is ready for a rematch.$"],
       "post_rematch": ["NARA: Good. You did not confuse\\n", "heat with destruction.$"]
     },
     "Winona": {
-      "preparing": ["LIDIA: From above, every path looks\\n", "cleaner than it feels below.\\p", "I train to remember both views.$"],
+      "preparing": ["LIDIA: From above, every path\\n", "looks cleaner than below.\\p", "I train to remember both views.$"],
       "postgame": ["LIDIA: A CHAMPION sees farther,\\n", "not everything.\\p", "Come fly this route again.$"],
-      "ready": ["LIDIA: The wind shifted.\\p", "My team is ready for your rematch.$"],
-      "post_rematch": ["LIDIA: You adjusted before the wind\\n", "forced you to. That matters.$"]
+      "ready": ["LIDIA: The wind shifted.\\p", "My team is ready to rematch.$"],
+      "post_rematch": ["LIDIA: You adjusted before the\\n", "wind forced you to.\\p", "That matters.$"]
     },
     "TateLiza": {
       "preparing": ["CECILIA: We review the signal.\\p", "CAETANO: And the people the\\n", "signal cannot explain.$"],
       "postgame": ["CAETANO: CHAMPION travels fast.\\p", "CECILIA: Understanding should not.$"],
-      "ready": ["CECILIA: Two voices, two teams.\\p", "CAETANO: We are ready to rematch.$"],
+      "ready": ["CECILIA: Two voices, two teams.\\p", "CAETANO: We are ready.\\p", "Come rematch us.$"],
       "post_rematch": ["CAETANO: The data changed.\\p", "CECILIA: Responsibility did not.$"]
     },
     "Juan": {
       "preparing": ["DONA CELINA: I practice what to\\n", "hold and what to release.\\p", "A rematch helps us both.$"],
-      "postgame": ["DONA CELINA: Even a CHAMPION must\\n", "let some things pass.\\p", "That does not mean losing them.$"],
+      "postgame": ["DONA CELINA: Even a CHAMPION\\n", "must let some things pass.\\p", "That does not mean losing them.$"],
       "ready": ["DONA CELINA: The water is calm.\\p", "Come to M'BOI for our rematch.$"],
       "post_rematch": ["DONA CELINA: Good. You changed\\n", "your grip without losing care.$"]
     }
