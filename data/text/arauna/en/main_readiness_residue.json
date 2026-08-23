@@ -1,0 +1,53 @@
+{
+  "cave_of_origin": {
+    "CaveOfOrigin_B1F_Text_WallaceStory": [
+      "AMALIA: {PLAYER}, the current\\n",
+      "beneath M'BOI is not alone.\\p",
+      "Old records describe a third\\n",
+      "force between two currents.\\p",
+      "SEU BENTO calls it the GUARDIAN\\n",
+      "OF THE TOWER.\\p",
+      "I checked city records, the\\n",
+      "MEMORIAL, and old route notes.\\p",
+      "One place keeps returning.\\n",
+      "Did your road find it too?$"
+    ],
+    "CaveOfOrigin_B1F_Text_WhereIsRayquaza": [
+      "AMALIA: Where would you look for\\n",
+      "the GUARDIAN now?\\p",
+      "Which place does your road show?$"
+    ],
+    "CaveOfOrigin_B1F_Text_ButWereInCaveOfOrigin": [
+      "AMALIA: M'BOI CORE is already\\n",
+      "open beneath us.\\p",
+      "We need somewhere above it,\\n",
+      "not its center.$"
+    ],
+    "CaveOfOrigin_B1F_Text_OldLadyDidntMentionThat": [
+      "AMALIA: The MEMORIAL preserves\\n",
+      "names and records.\\p",
+      "But the old route points higher.$"
+    ],
+    "CaveOfOrigin_B1F_Text_CantYouRememberSomehow": [
+      "AMALIA: Use what you have seen.\\p",
+      "Think of the place watching the\\n",
+      "region from above.$"
+    ],
+    "CaveOfOrigin_B1F_Text_WellHeadToSkyPillar": [
+      "AMALIA: OATH TOWER. Yes.\\p",
+      "The old routes converge there.\\p",
+      "{PLAYER}, we cannot leave the two\\n",
+      "currents fighting below us.\\p",
+      "I will head there now.$"
+    ]
+  },
+  "route119_house": {
+    "Route119_House_Text_RumorAboutCaveOfOrigin": [
+      "Travelers say the deep chambers\\n",
+      "under M'BOI carry old voices.\\p",
+      "I cannot tell if it is history,\\n",
+      "weather, or only a story.\\p",
+      "Still, people here listen.$"
+    ]
+  }
+}
