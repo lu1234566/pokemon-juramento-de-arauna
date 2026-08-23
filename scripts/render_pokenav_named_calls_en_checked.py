@@ -11,6 +11,7 @@ BANK_PATH = ROOT / "data" / "text" / "arauna" / "en" / "pokenav_named_calls.json
 MATCH_CALL_PATH = ROOT / "data" / "text" / "match_call.inc"
 STRINGS_PATH = ROOT / "src" / "strings.c"
 MAX_VISIBLE_WIDTH = 32
+MAX_MATCHCALL_DESC_WIDTH = 12
 CONTROL_RE = re.compile(r"\\[npl]")
 PLACEHOLDER_RE = re.compile(r"\{[^}]+\}")
 
@@ -50,12 +51,12 @@ EXPECTED_SECTIONS = {
 EXPECTED_BLOCK_COUNT = 101
 
 C_STRING_TARGETS = {
-    "gText_MrStoneMatchCallDesc": "HORIZON DIRECTOR",
+    "gText_MrStoneMatchCallDesc": "HORIZON DIR.",
     "gText_MrStoneMatchCallName": "OTACILIO",
     "gText_StevenMatchCallDesc": "NAMEKEEPER",
     "gText_StevenMatchCallName": "SEU BENTO",
     "gText_MayBrendanMatchCallDesc": "FIELD RIVAL",
-    "gText_NormanMatchCallDesc": "FATHER & LEADER",
+    "gText_NormanMatchCallDesc": "FATHER/GYM",
     "gText_WallyMatchCallDesc": "OWN PACE",
     "gText_ScottMatchCallDesc": "FIELD NOTES",
     "gText_ScottMatchCallName": "SEU BENTO",
@@ -64,11 +65,11 @@ C_STRING_TARGETS = {
     "gText_WattsonMatchCallDesc": "CROSSROADS",
     "gText_FlanneryMatchCallDesc": "ASH KEEPER",
     "gText_WinonaMatchCallDesc": "CANOPY WATCH",
-    "gText_TateLizaMatchCallDesc": "SKY WITNESSES",
+    "gText_TateLizaMatchCallDesc": "SKY WITNESS",
     "gText_JuanMatchCallDesc": "M'BOI ELDER",
     "gText_ProfBirchMatchCallDesc": "FIELD PROF.",
     "gText_ProfBirchMatchCallName": "PROF. ANAHI",
-    "gText_HOFDexRating": "Spotted POKéMON: {STR_VAR_1}!\\nRecorded POKéMON: {STR_VAR_2}!\\pPROF. ANAHI's POKéDEX rating!\\pANAHI: Let's see...\\p",
+    "gText_HOFDexRating": "Spotted POKéMON: {STR_VAR_1}!\\nRecorded: {STR_VAR_2}!\\pPROF. ANAHI's POKéDEX rating!\\pANAHI: Let's see...\\p",
     "gText_BirchInTrouble": "ANAHI is in trouble!\\nRelease a POKéMON and help her!",
 }
 
@@ -105,6 +106,17 @@ def validate_payload(label: str, payloads: list[str]) -> None:
         if '"' in payload:
             fail(f"{label}: raw quote is not assembler-safe")
         payload_line_width(payload)
+
+
+def validate_c_target_contract() -> None:
+    for symbol, value in C_STRING_TARGETS.items():
+        if "MatchCallDesc" in symbol and len(value) > MAX_MATCHCALL_DESC_WIDTH:
+            fail(
+                f"{symbol}: {len(value)} chars exceeds the "
+                f"{MAX_MATCHCALL_DESC_WIDTH}-char PokéNav description budget"
+            )
+    for symbol in ("gText_HOFDexRating", "gText_BirchInTrouble"):
+        payload_line_width(C_STRING_TARGETS[symbol])
 
 
 def load_bank() -> dict[str, object]:
@@ -177,12 +189,15 @@ def asm_body_span(source: str, label: str) -> tuple[int, int]:
     start = matches[0].end()
     pos = start
     saw_string = False
+    continuation = False
     while pos < len(source):
         newline = source.find("\n", pos)
         end = len(source) if newline < 0 else newline + 1
         line = source[pos:end]
-        if line.lstrip(" \t").startswith(".string "):
-            saw_string = True
+        is_string = line.lstrip(" \t").startswith(".string ")
+        if is_string or continuation:
+            saw_string = saw_string or is_string
+            continuation = line.rstrip("\n").endswith("\\")
             pos = end
             continue
         break
@@ -271,6 +286,7 @@ def main() -> int:
     if args.check and args.in_place:
         parser.error("use either --check or --in-place")
 
+    validate_c_target_contract()
     bank = load_bank()
     targets = build_targets(bank)
 
