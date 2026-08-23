@@ -237,9 +237,11 @@ def validate_asm(source: str, rendered: str, targets: dict[str, list[str]]) -> N
 
 
 def c_symbol_pattern(symbol: str) -> re.Pattern[str]:
+    # `strings.c` mixes ordinary escapes with physical backslash-newline
+    # continuations. Match both forms without consuming neighboring symbols.
     return re.compile(
         rf'(?m)^(?P<prefix>(?:ALIGNED\(4\)\s+)?const u8 {re.escape(symbol)}\[\]\s*=\s*_\(")'
-        rf'(?P<body>(?:[^"\\]|\\.)*)'
+        rf'(?P<body>(?:[^"\\]|\\(?:.|\n))*)'
         rf'(?P<suffix>"\);(?:\s*//[^\n]*)?$)'
     )
 
