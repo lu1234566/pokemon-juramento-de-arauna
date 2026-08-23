@@ -65,5 +65,20 @@
       "Registered ELIAS\\n",
       "in the POKéNAV.$"
     ]
+  },
+  "abandoned_ship_office": {
+    "AbandonedShip_CaptainsOffice_Text_NoSuccessFindingScanner": [
+      "I'm surveying this old ship for\\n",
+      "the HARBOR ENGINEER.\\p",
+      "They asked me to find a SCANNER,\\n",
+      "but I still have no trace of it.$"
+    ],
+    "AbandonedShip_CaptainsOffice_Text_OhCanYouDeliverScanner": [
+      "Oh! That's the SCANNER.\\p",
+      "Could you take it to the HARBOR\\n",
+      "ENGINEER in PORTO DO SAL?\\p",
+      "I want to survey this ship a\\n",
+      "little longer.$"
+    ]
   }
 }
