@@ -1,0 +1,64 @@
+{
+  "trainer_names": {
+    "TRAINER_ANABEL": "MAIRA",
+    "TRAINER_TUCKER": "DARIO",
+    "TRAINER_NOLAND": "NILO",
+    "TRAINER_LUCY": "IARA",
+    "TRAINER_GRETA": "RITA",
+    "TRAINER_SPENSER": "AMARO",
+    "TRAINER_BRANDON": "TADEU"
+  },
+  "visible_aliases": {
+    "ANABEL": "MAIRA",
+    "TUCKER": "DARIO",
+    "NOLAND": "NILO",
+    "LUCY": "IARA",
+    "GRETA": "RITA",
+    "SPENSER": "AMARO",
+    "BRANDON": "TADEU",
+    "SALON MAIDEN": "MASTER",
+    "DOME ACE": "MASTER",
+    "FACTORY HEAD": "MASTER",
+    "PIKE QUEEN": "MASTER",
+    "ARENA TYCOON": "MASTER",
+    "PALACE MAVEN": "MASTER",
+    "PYRAMID KING": "MASTER"
+  },
+  "trainer_class_display": "CIRCUIT MSTR",
+  "battle_quotes": {
+    "gText_AnabelWonSilver": ["A streak breaks where", "attention slips.$"],
+    "gText_AnabelDefeatSilver": ["Good. You adapted before I did.$"],
+    "gText_AnabelWonGold": ["Consistency is its own kind", "of courage.$"],
+    "gText_AnabelDefeatGold": ["You did not chase the pattern.", "You changed it.$"],
+
+    "gText_TuckerWonSilver": ["A crowd changes pressure,", "not the result.$"],
+    "gText_TuckerDefeatSilver": ["You held your plan under noise.", "Well done.$"],
+    "gText_TuckerWonGold": ["A bracket rewards timing,", "not just force.$"],
+    "gText_TuckerDefeatGold": ["Every round answered", "the one before it.$"],
+
+    "gText_NolandWonSilver": ["Borrowed teams expose habits.$"],
+    "gText_NolandDefeatSilver": ["You learned strangers quickly.$"],
+    "gText_NolandWonGold": ["No partner stays familiar", "forever.$"],
+    "gText_NolandDefeatGold": ["You read the team you had,", "not the one you wanted.$"],
+
+    "gText_LucyWonSilver": ["Luck opened a door.", "You chose the wrong one.$"],
+    "gText_LucyDefeatSilver": ["Chance moved first.", "You answered better.$"],
+    "gText_LucyWonGold": ["Control is a story we tell", "after the path closes.$"],
+    "gText_LucyDefeatGold": ["You accepted uncertainty", "without losing judgment.$"],
+
+    "gText_GretaWonSilver": ["Three turns reveal", "hesitation quickly.$"],
+    "gText_GretaDefeatSilver": ["You committed before doubt", "could choose for you.$"],
+    "gText_GretaWonGold": ["Judgment rewards clarity,", "not noise.$"],
+    "gText_GretaDefeatGold": ["You knew when to press", "and when to hold.$"],
+
+    "gText_SpenserWonSilver": ["A command can hide bad trust.$"],
+    "gText_SpenserDefeatSilver": ["Your POKéMON knew the space", "you left for them.$"],
+    "gText_SpenserWonGold": ["Partnership is not obedience.$"],
+    "gText_SpenserDefeatGold": ["You trusted without", "erasing yourself.$"],
+
+    "gText_BrandonWonSilver": ["Endurance starts before", "the first step.$"],
+    "gText_BrandonDefeatSilver": ["You carried enough,", "and no more than enough.$"],
+    "gText_BrandonWonGold": ["A long route punishes pride.$"],
+    "gText_BrandonDefeatGold": ["You reached the top", "with judgment still intact.$"]
+  }
+}
