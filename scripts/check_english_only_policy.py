@@ -76,6 +76,7 @@ EXPECTED_RENDERER_ORDER = (
     'render_battle_tent_side_identity_en_checked.py',
     'render_remaining_story_en_checked.py',
     'render_arauna_league_en_checked.py',
+    'render_main_readiness_residue_en_checked.py',
 )
 APPROVED_ENGLISH_RENDERERS = set(EXPECTED_RENDERER_ORDER)
 
@@ -134,8 +135,8 @@ if missing:
     fail("approved English renderer(s) missing from official manifest: " + ", ".join(missing))
 if tuple(renderers) != EXPECTED_RENDERER_ORDER:
     fail("official English renderer order changed; review overlap semantics before reordering")
-if len(renderers) != 65:
-    fail(f"expected 65 approved English renderers, found {len(renderers)}")
+if len(renderers) != 66:
+    fail(f"expected 66 approved English renderers, found {len(renderers)}")
 
 for renderer in renderers:
     if not (ROOT / "scripts" / renderer).is_file():
@@ -145,8 +146,8 @@ for renderer in renderers:
         fail(f"Portuguese renderer path is active: {renderer}")
 
 extra_overlays = read_manifest(OVERLAY_EXTRA_MANIFEST)
-if len(extra_overlays) != 35:
-    fail(f"expected 35 final transactional overlay files, found {len(extra_overlays)}")
+if len(extra_overlays) != 37:
+    fail(f"expected 37 final transactional overlay files, found {len(extra_overlays)}")
 for rel_path in extra_overlays:
     if rel_path.startswith("/") or ".." in Path(rel_path).parts:
         fail(f"unsafe overlay path: {rel_path}")
@@ -168,6 +169,8 @@ if not any("Portuguese builds are disabled" in line for line in active_build_lin
     fail("build wrapper does not explicitly reject Portuguese builds")
 if 'BUILD_DIR="build/arauna-en"' not in build:
     fail("official build output is not the English-only target")
+if 'FILE_NAME="pokemon-juramento-de-arauna-en"' not in build:
+    fail("official build filename is not the English-only Arauna target")
 if "scripts/english_renderers.txt" not in build:
     fail("official build is not driven by the reviewed English renderer manifest")
 if "scripts/english_overlay_files_extra.txt" not in build:
@@ -177,16 +180,28 @@ if 'python3 "scripts/$renderer" --in-place' not in build:
 if "python3 scripts/check_english_only_policy.py" not in build:
     fail("official build does not enforce the English-only gate")
 if "python3 scripts/check_arauna_story_coverage.py" not in build:
-    fail("official build does not enforce the 100% story coverage gate")
+    fail("official build does not enforce the canonical visible coverage gate")
 for line in active_build_lines:
     if line.startswith("python3 scripts/render_"):
         fail(f"renderer bypasses the reviewed manifest: {line}")
+
+static_runner = (ROOT / "scripts/check_arauna_static.sh").read_text(encoding="utf-8")
+if "bash scripts/build_arauna.sh" not in static_runner:
+    fail("static readiness does not exercise the official build wrapper")
+if "check_weather_institute_1f_en.py" not in static_runner or "check_weather_institute_2f_en.py" not in static_runner:
+    fail("static readiness is missing Weather Institute validation")
+if "check_no_proprietary_files.sh" not in static_runner:
+    fail("static readiness is missing proprietary-file validation")
 
 workflow = (ROOT / ".github/workflows/build.yml").read_text(encoding="utf-8")
 if "ptbr" in workflow.lower() or "pt-br" in workflow.lower():
     fail("CI still references a Portuguese build")
 if "matrix:" in workflow:
     fail("CI still uses the former language build matrix")
+if "bash scripts/check_arauna_static.sh" not in workflow:
+    fail("CI repository-safety job is not driven by the canonical static-readiness entrypoint")
+if "run: python3 scripts/render_" in workflow:
+    fail("CI still hard-codes individual renderers instead of using the official manifest")
 
 print(
     f"English-only policy: OK ({len(renderers)} approved English renderers in locked order; "
