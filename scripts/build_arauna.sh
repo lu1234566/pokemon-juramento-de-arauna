@@ -24,6 +24,7 @@ fi
 overlay_files=(
     "src/strings.c"
     "src/data/trainers.h"
+    "src/data/text/trainer_class_names.h"
     "src/data/region_map/region_map_sections.json"
     "data/maps/LittlerootTown/scripts.inc"
     "data/maps/Route101/scripts.inc"
@@ -110,6 +111,8 @@ overlay_files=(
     "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc"
     "data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc"
     "data/maps/BattleFrontier_BattleDomeLobby/scripts.inc"
+    "data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc"
+    "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc"
     "data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc"
     "data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc"
     "data/maps/BattleFrontier_BattleFactoryBattleRoom/scripts.inc"
@@ -155,6 +158,7 @@ overlay_files=(
     "data/maps/SkyPillar_Outside/scripts.inc"
     "data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc"
     "data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc"
+    "data/text/frontier_brain.inc"
     "data/text/berries.inc"
     "data/text/event_ticket_1.inc"
     "data/text/event_ticket_2.inc"
@@ -214,6 +218,7 @@ python3 scripts/render_battle_circuit_lounge_identity_en_checked.py --in-place
 python3 scripts/render_battle_tower_circuit_pass_en_checked.py --in-place
 python3 scripts/render_circuit_pass_facilities_en_checked.py --in-place
 python3 scripts/render_battle_circuit_ui_en_checked.py --in-place
+python3 scripts/render_circuit_masters_en_checked.py --in-place
 python3 scripts/render_mt_chimney_surface.py --in-place
 python3 scripts/render_casa_da_cinza_nara_en_checked.py --in-place
 python3 scripts/render_mata_do_meio_lidia_en.py --in-place
