@@ -19,8 +19,10 @@ if [[ $# -gt 0 ]]; then
     esac
 fi
 
-# Legacy Portuguese narrative renderers remain dormant. English-only overlays
-# are re-enabled individually after their output has been reviewed.
+# Every source file temporarily rewritten by reviewed English renderers is
+# backed up before rendering and restored on every exit path. The historical
+# reviewed set stays explicit here; final-story additions live in the small
+# append-only manifest so completion work does not risk dropping old coverage.
 overlay_files=(
     "src/strings.c"
     "src/data/trainers.h"
@@ -167,9 +169,19 @@ overlay_files=(
     "src/data/items.h"
     "src/data/text/item_descriptions.h"
 )
+
+while IFS= read -r file; do
+    [[ -z "$file" || "$file" == \#* ]] && continue
+    overlay_files+=("$file")
+done < scripts/english_overlay_files_extra.txt
+
 overlay_backup_dir="$(mktemp -d)"
 
 for file in "${overlay_files[@]}"; do
+    if [[ ! -f "$file" ]]; then
+        echo "English overlay source is missing: $file" >&2
+        exit 3
+    fi
     mkdir -p "$overlay_backup_dir/$(dirname "$file")"
     cp "$file" "$overlay_backup_dir/$file"
 done
@@ -186,67 +198,20 @@ trap 'exit 130' INT
 trap 'exit 143' TERM
 
 python3 tools/cleanup_region_map_names.py
-python3 scripts/render_shared_trainer_names_en.py --in-place
-python3 scripts/render_vila_amanhecer_route101_en_checked.py --in-place
-python3 scripts/render_vila_amanhecer_houses_en_checked.py --in-place
-python3 scripts/render_anahi_lab_en_checked.py --in-place
-python3 scripts/render_route103_ciro_en_checked.py --in-place
-python3 scripts/render_vila_da_passagem_en.py --in-place
-python3 scripts/render_route102_pampa_en_checked.py --in-place
-python3 scripts/render_pampa_elias_gym_core_en_checked.py --in-place
-python3 scripts/render_pampa_gym_rooms_en_checked.py --in-place
-python3 scripts/render_val_house_en_checked.py --in-place
-python3 scripts/render_petalburg_woods_surface.py --in-place
-python3 scripts/render_serra_uivo_story_en_checked.py --in-place
-python3 scripts/render_porto_redes_story_en_checked.py --in-place
-python3 scripts/render_route118_surf_corridor_en_checked.py --in-place
-python3 scripts/render_route119_ciro_surface_en.py --in-place
-python3 scripts/render_baia_luzes_ciro_en.py --in-place
-python3 scripts/render_baia_luzes_surface_en_checked.py --in-place
-python3 scripts/render_baia_luzes_interiors_en_checked.py --in-place
-python3 scripts/render_baia_luzes_fan_club_en_checked.py --in-place
-python3 scripts/render_baia_luzes_department_store_en_checked.py --in-place
-python3 scripts/render_baia_luzes_contest_venue_en_checked.py --in-place
-python3 scripts/render_baia_luzes_museum_en_checked.py --in-place
-python3 scripts/render_baia_luzes_harbor_tickets_en_checked.py --in-place
-python3 scripts/render_line_ferry_ss_tidal_en_checked.py --in-place
-python3 scripts/render_battle_circuit_arrival_west_en_checked.py --in-place
-python3 scripts/render_battle_circuit_east_district_en_checked.py --in-place
-python3 scripts/render_battle_circuit_reception_gate_en_checked.py --in-place
-python3 scripts/render_battle_circuit_public_services_en_checked.py --in-place
-python3 scripts/render_battle_circuit_analyst_en_checked.py --in-place
-python3 scripts/render_battle_circuit_lounge_identity_en_checked.py --in-place
-python3 scripts/render_battle_tower_circuit_pass_en_checked.py --in-place
-python3 scripts/render_circuit_pass_facilities_en_checked.py --in-place
-python3 scripts/render_battle_circuit_ui_en_checked.py --in-place
-python3 scripts/render_circuit_masters_en_checked.py --in-place
-python3 scripts/render_battle_pike_lobby_en_checked.py --in-place
-python3 scripts/render_mt_chimney_surface.py --in-place
-python3 scripts/render_casa_da_cinza_nara_en_checked.py --in-place
-python3 scripts/render_mata_do_meio_lidia_en.py --in-place
-python3 scripts/render_mata_do_meio_interiors_en_checked.py --in-place
-python3 scripts/render_ruins_memorial_en.py --in-place
-python3 scripts/render_route120_bento_en.py --in-place
-python3 scripts/render_central_archive_en.py --in-place
-python3 scripts/render_route121_memorial_en.py --in-place
-python3 scripts/render_mboi_climax_en.py --in-place
-python3 scripts/render_aguas_mboi_en_checked.py --in-place
-python3 scripts/render_memorial_lower_floors_en.py --in-place
-python3 scripts/render_memorial_mid_floors_en.py --in-place
-python3 scripts/render_remembrancers_lower_en.py --in-place
-python3 scripts/render_remembrancers_core_en.py --in-place
-python3 scripts/render_missoes_ceu_ground_floor_en.py --in-place
-python3 scripts/render_missoes_ceu_confrontation_en.py --in-place
-python3 scripts/render_porto_sal_museum_people_en_checked.py --in-place
-python3 scripts/render_porto_sal_museum_science_en_checked.py --in-place
-python3 scripts/render_porto_sal_museum_confrontation_en_checked.py --in-place
-python3 scripts/render_porto_sal_submersivel_en.py --in-place
-python3 scripts/render_porto_sal_daily_life_en.py --in-place
-python3 scripts/render_porto_sal_shipyard_en.py --in-place
-python3 scripts/render_porto_sal_harbor_service_en.py --in-place
-python3 scripts/render_porto_sal_story_path_en_checked.py --in-place
-python3 scripts/render_route110_corridor_en_checked.py --in-place
-python3 scripts/render_encruzilhada_olivia_en_checked.py --in-place
+
+while IFS= read -r renderer; do
+    [[ -z "$renderer" || "$renderer" == \#* ]] && continue
+    if [[ ! "$renderer" =~ ^render_[A-Za-z0-9_]+\.py$ ]]; then
+        echo "Invalid English renderer manifest entry: $renderer" >&2
+        exit 4
+    fi
+    python3 "scripts/$renderer" --in-place
+done < scripts/english_renderers.txt
+
+# These gates run after every reviewed overlay has been applied and before the
+# compiler is allowed to emit an official ROM.
+python3 scripts/check_english_only_policy.py
+python3 scripts/check_arauna_story_coverage.py
 
 cpp="${CPP:-arm-none-eabi-cpp}"
 
