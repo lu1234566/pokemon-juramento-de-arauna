@@ -4,6 +4,8 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import subprocess
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -213,6 +215,14 @@ def main() -> int:
     validate_menu(menu_source, menu_rendered)
     if args.in_place:
         MENU_PATH.write_text(menu_rendered, encoding="utf-8")
+        # This renderer is deliberately last in the official manifest. At this
+        # point every reviewed overlay has been applied, so the audit sees the
+        # actual compile-time visible surface rather than the vanilla sources.
+        subprocess.run(
+            [sys.executable, str(ROOT / "scripts" / "audit_rendered_visible_residue_en.py"), "--fail-owned"],
+            cwd=ROOT,
+            check=True,
+        )
 
     mode = "Rendered" if args.in_place else "Validated"
     print(f"{mode} main-readiness residue: 7 visible blocks + 3 private menu labels.")
