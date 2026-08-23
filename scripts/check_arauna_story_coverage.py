@@ -18,10 +18,10 @@ FINAL_GAP_BANKS = {
     "data/text/arauna/en/remaining_story_surface_b.json": 53,
     "data/text/arauna/en/remaining_story_surface_c.json": 58,
     "data/text/arauna/en/battle_tent_side_identity.json": 5,
-    "data/text/arauna/en/main_readiness_residue.json": 7,
+    "data/text/arauna/en/main_readiness_residue.json": 9,
 }
 EXPECTED_POKENAV_RUNTIME_BLOCKS = 101
-EXPECTED_FINAL_GAP_BLOCKS = 342
+EXPECTED_FINAL_GAP_BLOCKS = 344
 
 FINAL_GAP_OVERLAYS = {
     "data/maps/Route104/scripts.inc",
@@ -61,6 +61,7 @@ FINAL_GAP_OVERLAYS = {
     "data/maps/VerdanturfTown_BattleTentLobby/scripts.inc",
     "data/maps/CaveOfOrigin_B1F/scripts.inc",
     "data/maps/Route119_House/scripts.inc",
+    "data/maps/Route105/scripts.inc",
 }
 
 STAGES = {
