@@ -10,7 +10,7 @@ BUILD_PATH = ROOT / "scripts" / "build_arauna.sh"
 EXTRA_OVERLAY_MANIFEST = ROOT / "scripts" / "english_overlay_files_extra.txt"
 OVERLAY_LINE_RE = re.compile(r'^\s*"(?P<path>[^"]+)"\s*$')
 ASM_STRING_RE = re.compile(r'(?m)^\s*\.string\s+"(?P<body>(?:[^"\\]|\\.)*)"')
-C_STRING_RE = re.compile(r'"(?P<body>(?:[^"\\]|\\.)*)"')
+C_STRING_RE = re.compile(r'"(?P<body>(?:[^"\\]|\\(?:.|\n))*)"')
 
 # These are intentionally high-confidence visible identities. Internal symbols
 # such as TRAINER_WALLACE or FLAG_MET_SCOTT are never inspected by this tool.
@@ -18,7 +18,9 @@ STALE_SPEAKERS = (
     "WALLACE:", "SCOTT:", "STEVEN:", "WALLY:", "NORMAN:",
     "ROXANNE:", "BRAWLY:", "WATTSON:", "FLANNERY:", "WINONA:",
     "JUAN:", "SIDNEY:", "PHOEBE:", "GLACIA:", "DRAKE:",
-    "BIRCH:", "BRENDAN:", "MAY:",
+    "BIRCH:", "PROF. BIRCH", "BRENDAN:", "MAY:",
+    "ARCHIE:", "MAXIE:", "SHELLY:", "MATT:", "TABITHA:", "COURTNEY:",
+    "MR. STONE", "MR. BRINEY", "CAPT. BRINEY", "CAPT. STERN",
 )
 STALE_VISIBLE_PLACES = (
     "LITTLEROOT TOWN", "OLDALE TOWN", "PETALBURG CITY", "RUSTBORO CITY",
@@ -110,6 +112,7 @@ def main() -> int:
             if not (speakers or places or pt):
                 continue
             compact = literal.replace("\\n", " ").replace("\\p", " ").replace("\\l", " ")
+            compact = compact.replace("\\\n", " ")
             compact = re.sub(r"\s+", " ", compact).strip()
             if len(compact) > 120:
                 compact = compact[:117] + "..."
