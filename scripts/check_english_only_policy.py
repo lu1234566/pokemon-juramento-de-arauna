@@ -72,6 +72,8 @@ EXPECTED_RENDERER_ORDER = (
     'render_porto_sal_story_path_en_checked.py',
     'render_route110_corridor_en_checked.py',
     'render_encruzilhada_olivia_en_checked.py',
+    'render_pokenav_named_calls_en_checked.py',
+    'render_battle_tent_side_identity_en_checked.py',
     'render_remaining_story_en_checked.py',
     'render_arauna_league_en_checked.py',
 )
@@ -132,8 +134,8 @@ if missing:
     fail("approved English renderer(s) missing from official manifest: " + ", ".join(missing))
 if tuple(renderers) != EXPECTED_RENDERER_ORDER:
     fail("official English renderer order changed; review overlap semantics before reordering")
-if len(renderers) != 63:
-    fail(f"expected 63 approved English renderers, found {len(renderers)}")
+if len(renderers) != 65:
+    fail(f"expected 65 approved English renderers, found {len(renderers)}")
 
 for renderer in renderers:
     if not (ROOT / "scripts" / renderer).is_file():
@@ -143,8 +145,8 @@ for renderer in renderers:
         fail(f"Portuguese renderer path is active: {renderer}")
 
 extra_overlays = read_manifest(OVERLAY_EXTRA_MANIFEST)
-if len(extra_overlays) != 32:
-    fail(f"expected 32 final transactional overlay files, found {len(extra_overlays)}")
+if len(extra_overlays) != 35:
+    fail(f"expected 35 final transactional overlay files, found {len(extra_overlays)}")
 for rel_path in extra_overlays:
     if rel_path.startswith("/") or ".." in Path(rel_path).parts:
         fail(f"unsafe overlay path: {rel_path}")
