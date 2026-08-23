@@ -12,6 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 BANK_PATH = ROOT / "data" / "text" / "arauna" / "en" / "main_readiness_residue.json"
 CAVE_PATH = ROOT / "data" / "maps" / "CaveOfOrigin_B1F" / "scripts.inc"
 ROUTE119_HOUSE_PATH = ROOT / "data" / "maps" / "Route119_House" / "scripts.inc"
+ROUTE105_PATH = ROOT / "data" / "maps" / "Route105" / "scripts.inc"
 MENU_PATH = ROOT / "src" / "data" / "script_menu.h"
 MAX_VISIBLE_WIDTH = 32
 CONTROL_RE = re.compile(r"\\[npl]")
@@ -27,10 +28,15 @@ EXPECTED = {
         "CaveOfOrigin_B1F_Text_WellHeadToSkyPillar",
     },
     "route119_house": {"Route119_House_Text_RumorAboutCaveOfOrigin"},
+    "route105_pokenav": {
+        "Route104_Text_DadPokenavCall",
+        "Route104_Text_RegisteredDadInPokenav",
+    },
 }
 FILES = {
     "cave_of_origin": CAVE_PATH,
     "route119_house": ROUTE119_HOUSE_PATH,
+    "route105_pokenav": ROUTE105_PATH,
 }
 GAMEPLAY_TOKENS = {
     "cave_of_origin": (
@@ -45,6 +51,13 @@ GAMEPLAY_TOKENS = {
         "Route119_House_EventScript_Wingull",
         "SPECIES_WINGULL",
     ),
+    "route105_pokenav": (
+        "Route105_OnLoad",
+        "Route105_OnTransition",
+        "Route105_OnFrame",
+        "TRAINER_ANDRES_1",
+        "register_matchcall TRAINER_ANDRES_1",
+    ),
 }
 STALE = (
     "WALLACE",
@@ -56,6 +69,9 @@ STALE = (
     "CAVE OF ORIGIN",
     "MT. PYRE",
     "SKY PILLAR",
+    "NORMAN",
+    "MR. STONE",
+    "DEVON",
 )
 
 ORIGINAL_MENU = '''static const struct MenuAction MultichoiceList_WheresRayquaza[] =
@@ -170,6 +186,10 @@ def validate_asm(section: str, source: str, rendered: str, labels: set[str]) -> 
         for required in ("AMALIA", "M'BOI", "GUARDIAN", "MEMORIAL", "OATH TOWER"):
             if required not in owned:
                 fail(f"cave_of_origin: canonical identity missing: {required}")
+    if section == "route105_pokenav":
+        for required in ("ELIAS", "OTACILIO", "POKéNAV"):
+            if required not in owned:
+                fail(f"route105_pokenav: canonical identity missing: {required}")
 
 
 def render_menu(source: str) -> str:
@@ -195,7 +215,7 @@ def validate_menu(source: str, rendered: str) -> None:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Close main-readiness visible residue around the M'Boi/Oath Tower transition.")
+    parser = argparse.ArgumentParser(description="Close main-readiness visible residues found outside the earlier canonical coverage set.")
     parser.add_argument("--check", action="store_true")
     parser.add_argument("--in-place", action="store_true")
     args = parser.parse_args()
@@ -225,7 +245,7 @@ def main() -> int:
         )
 
     mode = "Rendered" if args.in_place else "Validated"
-    print(f"{mode} main-readiness residue: 7 visible blocks + 3 private menu labels.")
+    print(f"{mode} main-readiness residue: 9 visible blocks + 3 private menu labels.")
     return 0
 
 
