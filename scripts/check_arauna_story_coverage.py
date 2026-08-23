@@ -10,6 +10,7 @@ BUILD_PATH = ROOT / "scripts" / "build_arauna.sh"
 POLICY_PATH = ROOT / "scripts" / "check_english_only_policy.py"
 RENDERER_MANIFEST = ROOT / "scripts" / "english_renderers.txt"
 EXTRA_OVERLAY_MANIFEST = ROOT / "scripts" / "english_overlay_files_extra.txt"
+POKENAV_BANK = ROOT / "data" / "text" / "arauna" / "en" / "pokenav_named_calls.json"
 
 FINAL_GAP_BANKS = {
     "data/text/arauna/en/league_finale.json": 88,
@@ -17,7 +18,8 @@ FINAL_GAP_BANKS = {
     "data/text/arauna/en/remaining_story_surface_b.json": 53,
     "data/text/arauna/en/remaining_story_surface_c.json": 58,
 }
-EXPECTED_FINAL_GAP_BLOCKS = 229
+EXPECTED_POKENAV_RUNTIME_BLOCKS = 101
+EXPECTED_FINAL_GAP_BLOCKS = 330
 
 FINAL_GAP_OVERLAYS = {
     "data/maps/Route104/scripts.inc",
@@ -52,6 +54,7 @@ FINAL_GAP_OVERLAYS = {
     "data/maps/EverGrandeCity_GlaciasRoom/scripts.inc",
     "data/maps/EverGrandeCity_DrakesRoom/scripts.inc",
     "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+    "data/text/match_call.inc",
 }
 
 STAGES = {
@@ -140,7 +143,8 @@ STAGES = {
         "render_circuit_masters_en_checked.py",
         "render_battle_pike_lobby_en_checked.py",
     },
-    "13_oath_road_league_finale": {"render_arauna_league_en_checked.py"},
+    "13_crosscutting_pokenav": {"render_pokenav_named_calls_en_checked.py"},
+    "14_oath_road_league_finale": {"render_arauna_league_en_checked.py"},
 }
 
 OVERLAY_LINE_RE = re.compile(r'^\s*"(?P<path>[^"]+)"\s*$')
@@ -190,6 +194,32 @@ def count_bank(path: Path) -> int:
     return total
 
 
+def count_pokenav_runtime_blocks() -> int:
+    if not POKENAV_BANK.is_file():
+        fail(f"missing PokéNav bank: {POKENAV_BANK.relative_to(ROOT)}")
+    raw = json.loads(POKENAV_BANK.read_text(encoding="utf-8"))
+    required = {"otacilio", "elias", "anahi", "bento_steven", "ciro", "val", "bento_scott", "leaders"}
+    if set(raw) != required:
+        fail("PokéNav bank sections do not match the canonical contract")
+    leaders = raw["leaders"]
+    if set(leaders) != {"Roxanne", "Brawly", "Wattson", "Flannery", "Winona", "TateLiza", "Juan"}:
+        fail("PokéNav leader bank does not cover the seven non-Elias rematch leaders")
+    leader_blocks = sum(len(messages) for messages in leaders.values())
+    # Ciro's one canonical call payload is rendered to both legacy May/Brendan
+    # label families so either player gender reaches the same rival voice.
+    runtime_blocks = (
+        len(raw["otacilio"])
+        + len(raw["elias"])
+        + len(raw["anahi"])
+        + len(raw["bento_steven"])
+        + 2 * len(raw["ciro"])
+        + len(raw["val"])
+        + len(raw["bento_scott"])
+        + leader_blocks
+    )
+    return runtime_blocks
+
+
 def main() -> int:
     build = BUILD_PATH.read_text(encoding="utf-8")
     policy = POLICY_PATH.read_text(encoding="utf-8")
@@ -197,8 +227,8 @@ def main() -> int:
     active = set(renderers)
     overlays = load_base_overlay_paths(build) | set(read_manifest(EXTRA_OVERLAY_MANIFEST))
 
-    if len(renderers) != 63:
-        fail(f"expected 63 official English renderers, found {len(renderers)}")
+    if len(renderers) != 64:
+        fail(f"expected 64 official English renderers, found {len(renderers)}")
 
     missing_stages: list[str] = []
     for stage, required in STAGES.items():
@@ -211,8 +241,9 @@ def main() -> int:
     missing_overlays = sorted(FINAL_GAP_OVERLAYS - overlays)
     if missing_overlays:
         fail("final-gap files are not transactional: " + ", ".join(missing_overlays))
-    if "src/data/trainers.h" not in overlays:
-        fail("Elite visible battle-name source is not transactional")
+    for required in ("src/data/trainers.h", "src/strings.c"):
+        if required not in overlays:
+            fail(f"required visible identity source is not transactional: {required}")
 
     total_blocks = 0
     for rel_path, expected in FINAL_GAP_BANKS.items():
@@ -223,10 +254,19 @@ def main() -> int:
         if found != expected:
             fail(f"{rel_path}: expected {expected} blocks, found {found}")
         total_blocks += found
+
+    pokenav_blocks = count_pokenav_runtime_blocks()
+    if pokenav_blocks != EXPECTED_POKENAV_RUNTIME_BLOCKS:
+        fail(f"expected {EXPECTED_POKENAV_RUNTIME_BLOCKS} PokéNav runtime blocks, found {pokenav_blocks}")
+    total_blocks += pokenav_blocks
     if total_blocks != EXPECTED_FINAL_GAP_BLOCKS:
         fail(f"expected {EXPECTED_FINAL_GAP_BLOCKS} final-gap blocks, found {total_blocks}")
 
-    for renderer in ("render_remaining_story_en_checked.py", "render_arauna_league_en_checked.py"):
+    for renderer in (
+        "render_pokenav_named_calls_en_checked.py",
+        "render_remaining_story_en_checked.py",
+        "render_arauna_league_en_checked.py",
+    ):
         if renderer not in policy:
             fail(f"completion renderer missing from English policy: {renderer}")
 
@@ -247,7 +287,7 @@ def main() -> int:
         "Arauna canonical story coverage: OK "
         f"({stage_count}/{stage_count} stages; 100%; "
         f"{len(renderers)} English renderers; "
-        f"{total_blocks} final-gap text blocks covered; "
+        f"{total_blocks} final-gap runtime text blocks covered; "
         f"{len(FINAL_GAP_OVERLAYS)} final-gap source files transactional)."
     )
     return 0
