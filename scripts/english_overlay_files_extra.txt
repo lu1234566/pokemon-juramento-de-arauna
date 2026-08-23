@@ -34,3 +34,8 @@ data/maps/EverGrandeCity_ChampionsRoom/scripts.inc
 data/text/match_call.inc
 data/maps/FallarborTown_BattleTentLobby/scripts.inc
 data/maps/VerdanturfTown_BattleTentLobby/scripts.inc
+data/maps/CaveOfOrigin_B1F/scripts.inc
+data/maps/Route119_House/scripts.inc
+data/maps/Route105/scripts.inc
+data/maps/AbandonedShip_CaptainsOffice/scripts.inc
+src/landmark.c

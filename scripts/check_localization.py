@@ -1,137 +1,28 @@
 #!/usr/bin/env python3
+"""Compatibility shim for the retired bilingual intro validator.
 
+Arauna is English-only. The historical PT-BR/EN parity check no longer defines
+release readiness; keep this filename only so old documentation/commands fail
+forward into the current policy instead of silently validating an obsolete mode.
+"""
 from __future__ import annotations
 
-import re
+import subprocess
 import sys
-from collections import Counter
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-CHARMAP = ROOT / "charmap.txt"
-SOURCES = {
-    "en": ROOT / "data/text/arauna/en/birch_speech.inc",
-    "pt-BR": ROOT / "data/text/arauna/pt_br/birch_speech.inc",
-}
-MAX_VISIBLE_LINE_LENGTH = 32
-PLACEHOLDER_WIDTHS = {"PLAYER": 7}
-
-LABEL_RE = re.compile(r"^([A-Za-z_][A-Za-z0-9_]*)::$")
-STRING_RE = re.compile(r'^\s*\.string\s+"(.*)"\s*$')
-PLACEHOLDER_RE = re.compile(r"\{([A-Za-z0-9_]+)\}")
-LINE_BREAK_RE = re.compile(r"\\[nlp]")
-CHARMAP_ENTRY_RE = re.compile(r"^'((?:\\.|[^'])*)'\s*=")
-
-
-def parse_source(path: Path) -> tuple[list[str], dict[str, str]]:
-    labels: list[str] = []
-    text_by_label: dict[str, list[str]] = {}
-    current_label: str | None = None
-
-    for line_number, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
-        label_match = LABEL_RE.match(line)
-        if label_match:
-            current_label = label_match.group(1)
-            if current_label in text_by_label:
-                raise ValueError(f"{path}:{line_number}: duplicate label {current_label}")
-            labels.append(current_label)
-            text_by_label[current_label] = []
-            continue
-
-        string_match = STRING_RE.match(line)
-        if string_match:
-            if current_label is None:
-                raise ValueError(f"{path}:{line_number}: string without a label")
-            text_by_label[current_label].append(string_match.group(1))
-
-    if not labels:
-        raise ValueError(f"{path}: no localized labels found")
-
-    return labels, {label: "".join(parts) for label, parts in text_by_label.items()}
-
-
-def expanded_length(line: str) -> int:
-    line = line.replace("$", "")
-
-    def replace_placeholder(match: re.Match[str]) -> str:
-        name = match.group(1)
-        return "X" * PLACEHOLDER_WIDTHS.get(name, len(name) + 2)
-
-    return len(PLACEHOLDER_RE.sub(replace_placeholder, line))
-
-
-def load_supported_characters() -> set[str]:
-    characters: set[str] = set()
-    for line in CHARMAP.read_text(encoding="utf-8").splitlines():
-        match = CHARMAP_ENTRY_RE.match(line)
-        if not match:
-            continue
-        token = match.group(1)
-        if len(token) == 1:
-            characters.add(token)
-        elif token == r"\'":
-            characters.add("'")
-    return characters
-
-
-def validate_characters(language: str, texts: dict[str, str], supported: set[str]) -> list[str]:
-    errors: list[str] = []
-    for label, text in texts.items():
-        visible_text = PLACEHOLDER_RE.sub("", LINE_BREAK_RE.sub("", text)).replace("$", "")
-        unsupported = sorted({character for character in visible_text if character not in supported})
-        if unsupported:
-            rendered = ", ".join(f"U+{ord(character):04X} {character!r}" for character in unsupported)
-            errors.append(f"{language}:{label}: unsupported characters: {rendered}")
-    return errors
-
-
-def validate_line_lengths(language: str, texts: dict[str, str]) -> list[str]:
-    errors: list[str] = []
-    for label, text in texts.items():
-        for line_number, line in enumerate(LINE_BREAK_RE.split(text), 1):
-            length = expanded_length(line)
-            if length > MAX_VISIBLE_LINE_LENGTH:
-                errors.append(
-                    f"{language}:{label}: visual line {line_number} has {length} characters "
-                    f"(maximum {MAX_VISIBLE_LINE_LENGTH}): {line!r}"
-                )
-    return errors
 
 
 def main() -> int:
-    parsed = {language: parse_source(path) for language, path in SOURCES.items()}
-    supported_characters = load_supported_characters()
-    reference_language = "en"
-    reference_labels, reference_texts = parsed[reference_language]
-    errors: list[str] = []
-
-    for language, (labels, texts) in parsed.items():
-        if labels != reference_labels:
-            errors.append(f"{language}: label order differs from {reference_language}")
-
-        for label in set(reference_texts) & set(texts):
-            expected = Counter(PLACEHOLDER_RE.findall(reference_texts[label]))
-            actual = Counter(PLACEHOLDER_RE.findall(texts[label]))
-            if actual != expected:
-                errors.append(
-                    f"{language}:{label}: placeholders {dict(actual)} differ from "
-                    f"{reference_language} {dict(expected)}"
-                )
-
-        errors.extend(validate_line_lengths(language, texts))
-        errors.extend(validate_characters(language, texts, supported_characters))
-
-    if errors:
-        print("Localization validation failed:", file=sys.stderr)
-        for error in errors:
-            print(f"- {error}", file=sys.stderr)
-        return 1
-
     print(
-        f"Localization check passed for {len(parsed)} languages and "
-        f"{len(reference_labels)} labels."
+        "DEPRECATED: bilingual localization validation was retired. "
+        "Running the current English-only policy check instead."
     )
-    return 0
+    return subprocess.call(
+        [sys.executable, str(ROOT / "scripts" / "check_english_only_policy.py")],
+        cwd=ROOT,
+    )
 
 
 if __name__ == "__main__":

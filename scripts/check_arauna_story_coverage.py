@@ -18,9 +18,10 @@ FINAL_GAP_BANKS = {
     "data/text/arauna/en/remaining_story_surface_b.json": 53,
     "data/text/arauna/en/remaining_story_surface_c.json": 58,
     "data/text/arauna/en/battle_tent_side_identity.json": 5,
+    "data/text/arauna/en/main_readiness_residue.json": 11,
 }
 EXPECTED_POKENAV_RUNTIME_BLOCKS = 101
-EXPECTED_FINAL_GAP_BLOCKS = 335
+EXPECTED_FINAL_GAP_BLOCKS = 346
 
 FINAL_GAP_OVERLAYS = {
     "data/maps/Route104/scripts.inc",
@@ -58,6 +59,11 @@ FINAL_GAP_OVERLAYS = {
     "data/text/match_call.inc",
     "data/maps/FallarborTown_BattleTentLobby/scripts.inc",
     "data/maps/VerdanturfTown_BattleTentLobby/scripts.inc",
+    "data/maps/CaveOfOrigin_B1F/scripts.inc",
+    "data/maps/Route119_House/scripts.inc",
+    "data/maps/Route105/scripts.inc",
+    "data/maps/AbandonedShip_CaptainsOffice/scripts.inc",
+    "src/landmark.c",
 }
 
 STAGES = {
@@ -149,6 +155,7 @@ STAGES = {
     "13_crosscutting_pokenav": {"render_pokenav_named_calls_en_checked.py"},
     "14_side_battle_tents": {"render_battle_tent_side_identity_en_checked.py"},
     "15_oath_road_league_finale": {"render_arauna_league_en_checked.py"},
+    "16_main_readiness_residue": {"render_main_readiness_residue_en_checked.py"},
 }
 
 OVERLAY_LINE_RE = re.compile(r'^\s*"(?P<path>[^"]+)"\s*$')
@@ -209,7 +216,7 @@ def count_pokenav_runtime_blocks() -> int:
     if set(leaders) != {"Roxanne", "Brawly", "Wattson", "Flannery", "Winona", "TateLiza", "Juan"}:
         fail("PokéNav leader bank does not cover the seven non-Elias rematch leaders")
     leader_blocks = sum(len(messages) for messages in leaders.values())
-    runtime_blocks = (
+    return (
         len(raw["otacilio"])
         + len(raw["elias"])
         + len(raw["anahi"])
@@ -219,7 +226,6 @@ def count_pokenav_runtime_blocks() -> int:
         + len(raw["bento_scott"])
         + leader_blocks
     )
-    return runtime_blocks
 
 
 def main() -> int:
@@ -229,8 +235,8 @@ def main() -> int:
     active = set(renderers)
     overlays = load_base_overlay_paths(build) | set(read_manifest(EXTRA_OVERLAY_MANIFEST))
 
-    if len(renderers) != 65:
-        fail(f"expected 65 official English renderers, found {len(renderers)}")
+    if len(renderers) != 66:
+        fail(f"expected 66 official English renderers, found {len(renderers)}")
 
     missing_stages: list[str] = []
     for stage, required in STAGES.items():
@@ -243,7 +249,7 @@ def main() -> int:
     missing_overlays = sorted(FINAL_GAP_OVERLAYS - overlays)
     if missing_overlays:
         fail("final-gap files are not transactional: " + ", ".join(missing_overlays))
-    for required in ("src/data/trainers.h", "src/strings.c"):
+    for required in ("src/data/trainers.h", "src/strings.c", "src/data/script_menu.h"):
         if required not in overlays:
             fail(f"required visible identity source is not transactional: {required}")
 
@@ -269,6 +275,7 @@ def main() -> int:
         "render_battle_tent_side_identity_en_checked.py",
         "render_remaining_story_en_checked.py",
         "render_arauna_league_en_checked.py",
+        "render_main_readiness_residue_en_checked.py",
     ):
         if renderer not in policy:
             fail(f"completion renderer missing from English policy: {renderer}")

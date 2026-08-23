@@ -4,46 +4,85 @@ ROM hack de Pokémon Emerald em desenvolvimento, ambientada em Arauna e constru�
 
 ## Direção atual
 
-A implementação preserva o esqueleto técnico do Emerald — grafo de eventos, ordem de progressão, warps, flags e identificadores internos — e substitui a superfície visível pelo cânone de Arauna. Essa abordagem reduz risco de regressão em saves e progressão enquanto permite reescrever mapas, diálogos, personagens e identidade do mundo.
+A implementação preserva o esqueleto técnico do Emerald — grafo de eventos, ordem de progressão, warps, flags, variáveis e identificadores internos — e substitui a superfície visível pelo cânone de Arauna. Essa abordagem reduz risco de regressão em saves e progressão enquanto permite reescrever diálogos, personagens, identidade do mundo e, em passes separados, os mapas.
 
-O núcleo narrativo atual está documentado em [`docs/ARAUANA_STORY_IMPLEMENTATION.md`](docs/ARAUANA_STORY_IMPLEMENTATION.md). Entre os elementos já integrados estão o Desencanto, o Arquivo Vivo, o Consórcio Horizonte, os Lembrantes, Professora Anahi, Dona Zila, Ciro e a linha principal ligada a M'Boi.
+O núcleo narrativo está documentado em [`docs/ARAUANA_STORY_IMPLEMENTATION.md`](docs/ARAUANA_STORY_IMPLEMENTATION.md). A build oficial é **English-only**. Nomes próprios canônicos de Arauna, como Vila Amanhecer, M'Boi e Seu Bento, são preservados quando apropriado; isso não reabre um modo PT-BR.
 
-## Validação
+## Fonte de verdade da build
 
-A CI possui duas frentes:
+A build oficial é dirigida por manifestos e falha fechada:
 
-1. **Arauna static validation** — executa os validadores de resíduos visíveis do Emerald e o contrato da introdução bilíngue;
-2. **Build Arauna (intro ptbr/en)** — tenta compilar duas variantes da introdução a partir do mesmo commit, em diretórios isolados.
+- `scripts/english_renderers.txt` — ordem oficial dos **66** renderizadores English-only;
+- `scripts/english_overlay_files_extra.txt` — **40** fontes finais adicionadas ao conjunto transacional de backup/restore;
+- `scripts/check_english_only_policy.py` — trava política, ordem e integração da build;
+- `scripts/check_arauna_story_coverage.py` — exige **16/16** estágios canônicos e **346** blocos runtime de lacuna final cobertos;
+- `scripts/audit_rendered_visible_residue_en.py` — inventário pós-render de identidades antigas/PT-BR residual; superfícies transacionais críticas falham a validação;
+- `scripts/check_arauna_static.sh` — executa a mesma composição transacional da build oficial sem exigir o toolchain ARM.
 
-Os validadores existem para impedir que nomes, falas e identidades antigas do Emerald reapareçam acidentalmente em superfícies já convertidas para Arauna.
+Os arquivos temporariamente renderizados são restaurados em qualquer saída normal, erro ou interrupção do wrapper oficial.
 
-## Build local
+## Validação local sem compilar a ROM
 
-Depois de preparar as dependências descritas em [`INSTALL.md`](INSTALL.md), a build padrão continua em português na introdução:
+Depois de clonar o repositório:
 
 ```bash
-make MODERN=1 -j2 all
+bash scripts/check_arauna_static.sh
 ```
 
-Para testar explicitamente as duas variantes da introdução:
+Esse comando aplica os renderizadores na ordem oficial, executa os gates English-only/cobertura, valida Weather Institute e a política de arquivos proprietários e restaura as fontes. Apenas o `make` final é substituído por um no-op de validação.
+
+## Build local oficial
+
+Prepare as dependências do `pokeemerald` descritas em [`INSTALL.md`](INSTALL.md), incluindo `gcc-arm-none-eabi`, `binutils-arm-none-eabi` e `libpng-dev`, e execute:
 
 ```bash
-bash scripts/build_arauna.sh ptbr -j2 all
+bash scripts/build_arauna.sh -j2 all
+```
+
+Também é aceito, por compatibilidade:
+
+```bash
 bash scripts/build_arauna.sh en -j2 all
 ```
 
-A arquitetura e as limitações desse protótipo estão em [`docs/LOCALIZATION_CURRENT_STATE_2026_08_19.md`](docs/LOCALIZATION_CURRENT_STATE_2026_08_19.md). **A variante `en` ainda não representa uma tradução completa do jogo**; neste estágio, a seleção bilíngue cobre a introdução de Anahi.
+Entradas `ptbr`, `pt-br`, `portuguese` e `portugues` são rejeitadas explicitamente. Não existe build oficial PT-BR.
 
-As ROMs geradas são apenas artefatos locais de desenvolvimento e não devem ser versionadas no repositório.
+Com `MODERN=1`, o alvo esperado é:
+
+```text
+build/arauna-en/pokemon-juramento-de-arauna-en_modern.gba
+```
+
+A ROM gerada é artefato local de desenvolvimento e não deve ser versionada.
+
+## CI
+
+O workflow possui duas responsabilidades:
+
+1. **repository-safety** chama somente `scripts/check_arauna_static.sh`, evitando uma segunda lista manual de renderizadores;
+2. **Build Arauna English ROM** instala o toolchain ARM e chama `scripts/build_arauna.sh -j2 all`.
+
+O projeto não depende de GitHub Actions para editar ou integrar conteúdo. A CI é apenas uma superfície de validação quando estiver disponível.
 
 ## Regras de integração
 
 - preservar IDs internos do Emerald quando a mudança for apenas de superfície;
-- não alterar flags, warps, progressão ou formato de save sem uma decisão técnica explícita;
-- preferir alterações pequenas e auditáveis;
-- manter arte final separada de mudanças puramente técnicas quando possível;
-- validar resíduos narrativos antes do merge.
+- não alterar flags, warps, progressão ou formato de save sem decisão técnica explícita;
+- preferir alterações pequenas, determinísticas e auditáveis;
+- manter arte/mapas separados de mudanças puramente técnicas quando possível;
+- todo renderer oficial deve estar no manifesto e possuir limites de escrita/verificação apropriados;
+- não declarar build/playtest como aprovado sem executar de fato o toolchain/emulador correspondente.
 
-## Estado
+## Estado de prontidão
 
-O projeto já possui uma grande passagem narrativa sobre mapas da campanha e continua em integração, limpeza de resíduos, localização incremental, revisão visual e testes. Não há lançamento público final neste momento.
+A infraestrutura English-only e a cobertura canônica possuem gates fail-closed. A auditoria de prontidão de 23/08/2026 fechou lacunas runtime que estavam fora do conjunto canônico anterior, incluindo:
+
+- a transição M'Boi → Oath Tower ainda expunha a cena vanilla de Wallace/Cave of Origin;
+- uma fala opcional em Route 119 ainda citava Cave of Origin;
+- uma ponte de PokéNav em Route 105 ainda registrava DAD NORMAN / DEVON's MR. STONE em vez de ELIAS / OTACILIO;
+- a sidequest do SCANNER no navio abandonado ainda enviava o jogador a CAPT. STERN em vez do HARBOR ENGINEER;
+- landmarks do mapa regional ainda exibiam identidades vanilla como MT. PYRE, SKY PILLAR, RUSTURF TUNNEL, MAGMA HIDEOUT, GRANITE CAVE e NEW MAUVILLE; somente equivalências já estabelecidas no cânone foram substituídas.
+
+O repositório ainda está em desenvolvimento. Uma compilação ARM completa e um playtest em ROM continuam sendo evidências separadas da validação estática; mapas e polimento visual também permanecem em passes próprios.
+
+A antiga documentação de localização bilíngue de 19/08/2026 é mantida apenas como registro histórico e não descreve a build atual.
