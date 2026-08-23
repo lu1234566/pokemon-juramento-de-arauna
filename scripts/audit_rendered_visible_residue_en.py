@@ -28,7 +28,9 @@ STALE_VISIBLE_PLACES = (
     "LILYCOVE CITY", "MOSSDEEP CITY", "SOOTOPOLIS CITY", "SLATEPORT CITY",
     "CAVE OF ORIGIN", "MT. PYRE", "SKY PILLAR", "BATTLE FRONTIER",
     "FRONTIER PASS", "FRONTIER BRAINS", "TEAM AQUA", "TEAM MAGMA",
-    "DEVON CORP", "HOENN",
+    "DEVON CORP", "HOENN", "NEW MAUVILLE", "RUSTURF TUNNEL",
+    "METEOR FALLS", "SEAFLOOR CAVERN", "GRANITE CAVE", "MAGMA HIDEOUT",
+    "SLATEPORT BEACH", "SAFARI ZONE ENTRANCE", "MR. BRINEY'S COTTAGE",
 )
 PORTUGUESE_HIGH_CONFIDENCE = (
     "VOCÊ", "NÃO ", " NÃO", "ESTÁ ", "TAMBÉM", "OBRIGADO", "OBRIGADA",
@@ -41,6 +43,7 @@ C_VISIBLE_FILES = {
     "src/data/trainers.h",
     "src/data/text/trainer_class_names.h",
     "src/data/script_menu.h",
+    "src/landmark.c",
 }
 
 
