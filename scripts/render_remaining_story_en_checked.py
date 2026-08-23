@@ -79,11 +79,11 @@ REQUIRED_TOKENS = {
     "mboi_house5": (),
     "petalburg_house2": (),
     "mossdeep_city": ("FLAG_RECEIVED_HM_DIVE", "VAR_MOSSDEEP_CITY_STATE", "VAR_SCOTT_STATE", "ITEM_KINGS_ROCK"),
-    "mossdeep_bento_house": ("ITEM_HM_DIVE", "FLAG_RECEIVED_HM_DIVE", "ITEM_BELDUM", "FLAG_RECEIVED_BELDUM"),
+    "mossdeep_bento_house": ("ITEM_HM_DIVE", "FLAG_RECEIVED_HM_DIVE", "SPECIES_BELDUM", "FLAG_RECEIVED_BELDUM"),
     "mossdeep_gym": ("TRAINER_TATE_AND_LIZA_1", "FLAG_BADGE07_GET", "ITEM_TM_CALM_MIND", "FLAG_RECEIVED_TM_CALM_MIND"),
-    "seafloor1": ("TRAINER_GRUNT_AQUA_HIDEOUT_2", "TRAINER_GRUNT_AQUA_HIDEOUT_3"),
-    "seafloor3": ("TRAINER_SHELLY_SEAFLOOR_CAVERN",),
-    "seafloor4": ("TRAINER_GRUNT_AQUA_HIDEOUT_5", "TRAINER_GRUNT_AQUA_HIDEOUT_6"),
+    "seafloor1": ("TRAINER_GRUNT_SEAFLOOR_CAVERN_1", "TRAINER_GRUNT_SEAFLOOR_CAVERN_2"),
+    "seafloor3": ("TRAINER_SHELLY_SEAFLOOR_CAVERN", "TRAINER_GRUNT_SEAFLOOR_CAVERN_5"),
+    "seafloor4": ("TRAINER_GRUNT_SEAFLOOR_CAVERN_3", "TRAINER_GRUNT_SEAFLOOR_CAVERN_4"),
     "meteor_bento": ("TRAINER_STEVEN", "FLAG_DEFEATED_METEOR_FALLS_STEVEN"),
     "val_house": ("FLAG_WALLY_SPEECH", "FLAG_DEFEATED_WALLY_VICTORY_ROAD", "FLAG_DEFEATED_LAVARIDGE_GYM", "FLAG_RUSTURF_TUNNEL_OPENED"),
     "pokedex": ("gBirchDexRatingText_AreYouCurious", "gBirchDexRatingText_DexCompleted", "gBirchDexRatingText_OnANationwideBasis"),
@@ -141,8 +141,10 @@ def load_targets() -> dict[str, dict[str, list[str]]]:
 
 
 def block_pattern(label: str) -> re.Pattern[str]:
+    # Map text labels normally use one colon; global text banks such as
+    # pokedex_rating.inc use exported double-colon labels. Preserve either form.
     return re.compile(
-        rf"(?m)^(?P<label>{re.escape(label)}:\n)"
+        rf"(?m)^(?P<label>{re.escape(label)}::?\n)"
         rf"(?P<body>(?:\t\.string \"(?:[^\"\\]|\\.)*\"\n)+)"
     )
 
@@ -176,6 +178,8 @@ def validate_text(source: str, rendered: str, section: str, targets: dict[str, d
     if mask_target_bodies(source, section, targets) != mask_target_bodies(rendered, section, targets):
         fail(f"{section}: non-target source structure changed")
     for token in REQUIRED_TOKENS[section]:
+        if source.count(token) == 0:
+            fail(f"{section}: required gameplay token is absent before rendering: {token}")
         if source.count(token) != rendered.count(token):
             fail(f"{section}: gameplay token count changed for {token}")
     for label in targets[section]:
