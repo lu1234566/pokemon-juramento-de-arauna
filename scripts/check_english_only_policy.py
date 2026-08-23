@@ -8,72 +8,74 @@ ROOT = Path(__file__).resolve().parents[1]
 RENDERER_MANIFEST = ROOT / "scripts" / "english_renderers.txt"
 OVERLAY_EXTRA_MANIFEST = ROOT / "scripts" / "english_overlay_files_extra.txt"
 RENDERER_RE = re.compile(r"^render_[A-Za-z0-9_]+\.py$")
+OVERLAY_LINE_RE = re.compile(r'^\s*"(?P<path>[^"]+)"\s*$')
 
-APPROVED_ENGLISH_RENDERERS = {
-    'render_aguas_mboi_en_checked.py',
+EXPECTED_RENDERER_ORDER = (
+    'render_shared_trainer_names_en.py',
+    'render_vila_amanhecer_route101_en_checked.py',
+    'render_vila_amanhecer_houses_en_checked.py',
     'render_anahi_lab_en_checked.py',
-    'render_arauna_league_en_checked.py',
+    'render_route103_ciro_en_checked.py',
+    'render_vila_da_passagem_en.py',
+    'render_route102_pampa_en_checked.py',
+    'render_pampa_elias_gym_core_en_checked.py',
+    'render_pampa_gym_rooms_en_checked.py',
+    'render_val_house_en_checked.py',
+    'render_petalburg_woods_surface.py',
+    'render_serra_uivo_story_en_checked.py',
+    'render_porto_redes_story_en_checked.py',
+    'render_route118_surf_corridor_en_checked.py',
+    'render_route119_ciro_surface_en.py',
     'render_baia_luzes_ciro_en.py',
-    'render_baia_luzes_contest_venue_en_checked.py',
-    'render_baia_luzes_department_store_en_checked.py',
-    'render_baia_luzes_fan_club_en_checked.py',
-    'render_baia_luzes_harbor_tickets_en_checked.py',
-    'render_baia_luzes_interiors_en_checked.py',
-    'render_baia_luzes_museum_en_checked.py',
     'render_baia_luzes_surface_en_checked.py',
+    'render_baia_luzes_interiors_en_checked.py',
+    'render_baia_luzes_fan_club_en_checked.py',
+    'render_baia_luzes_department_store_en_checked.py',
+    'render_baia_luzes_contest_venue_en_checked.py',
+    'render_baia_luzes_museum_en_checked.py',
+    'render_baia_luzes_harbor_tickets_en_checked.py',
+    'render_line_ferry_ss_tidal_en_checked.py',
     'render_battle_circuit_arrival_west_en_checked.py',
     'render_battle_circuit_east_district_en_checked.py',
     'render_battle_circuit_reception_gate_en_checked.py',
     'render_battle_circuit_public_services_en_checked.py',
     'render_battle_circuit_analyst_en_checked.py',
     'render_battle_circuit_lounge_identity_en_checked.py',
-    'render_battle_circuit_ui_en_checked.py',
-    'render_battle_pike_lobby_en_checked.py',
     'render_battle_tower_circuit_pass_en_checked.py',
-    'render_circuit_masters_en_checked.py',
     'render_circuit_pass_facilities_en_checked.py',
+    'render_battle_circuit_ui_en_checked.py',
+    'render_circuit_masters_en_checked.py',
+    'render_battle_pike_lobby_en_checked.py',
+    'render_mt_chimney_surface.py',
     'render_casa_da_cinza_nara_en_checked.py',
-    'render_central_archive_en.py',
-    'render_encruzilhada_olivia_en_checked.py',
-    'render_line_ferry_ss_tidal_en_checked.py',
-    'render_mata_do_meio_interiors_en_checked.py',
     'render_mata_do_meio_lidia_en.py',
+    'render_mata_do_meio_interiors_en_checked.py',
+    'render_ruins_memorial_en.py',
+    'render_route120_bento_en.py',
+    'render_central_archive_en.py',
+    'render_route121_memorial_en.py',
     'render_mboi_climax_en.py',
+    'render_aguas_mboi_en_checked.py',
     'render_memorial_lower_floors_en.py',
     'render_memorial_mid_floors_en.py',
-    'render_missoes_ceu_confrontation_en.py',
+    'render_remembrancers_lower_en.py',
+    'render_remembrancers_core_en.py',
     'render_missoes_ceu_ground_floor_en.py',
-    'render_mt_chimney_surface.py',
-    'render_pampa_elias_gym_core_en_checked.py',
-    'render_pampa_gym_rooms_en_checked.py',
-    'render_petalburg_woods_surface.py',
-    'render_porto_redes_story_en_checked.py',
-    'render_porto_sal_daily_life_en.py',
-    'render_porto_sal_harbor_service_en.py',
-    'render_porto_sal_museum_confrontation_en_checked.py',
+    'render_missoes_ceu_confrontation_en.py',
     'render_porto_sal_museum_people_en_checked.py',
     'render_porto_sal_museum_science_en_checked.py',
-    'render_porto_sal_shipyard_en.py',
-    'render_porto_sal_story_path_en_checked.py',
+    'render_porto_sal_museum_confrontation_en_checked.py',
     'render_porto_sal_submersivel_en.py',
-    'render_remembrancers_core_en.py',
-    'render_remembrancers_lower_en.py',
-    'render_remaining_story_en_checked.py',
-    'render_route102_pampa_en_checked.py',
-    'render_route103_ciro_en_checked.py',
+    'render_porto_sal_daily_life_en.py',
+    'render_porto_sal_shipyard_en.py',
+    'render_porto_sal_harbor_service_en.py',
+    'render_porto_sal_story_path_en_checked.py',
     'render_route110_corridor_en_checked.py',
-    'render_route118_surf_corridor_en_checked.py',
-    'render_route119_ciro_surface_en.py',
-    'render_route120_bento_en.py',
-    'render_route121_memorial_en.py',
-    'render_ruins_memorial_en.py',
-    'render_serra_uivo_story_en_checked.py',
-    'render_shared_trainer_names_en.py',
-    'render_val_house_en_checked.py',
-    'render_vila_amanhecer_houses_en_checked.py',
-    'render_vila_amanhecer_route101_en_checked.py',
-    'render_vila_da_passagem_en.py',
-}
+    'render_encruzilhada_olivia_en_checked.py',
+    'render_remaining_story_en_checked.py',
+    'render_arauna_league_en_checked.py',
+)
+APPROVED_ENGLISH_RENDERERS = set(EXPECTED_RENDERER_ORDER)
 
 
 def fail(message: str) -> None:
@@ -96,6 +98,24 @@ def read_manifest(path: Path, pattern: re.Pattern[str] | None = None) -> list[st
     return entries
 
 
+def load_base_overlay_paths(build: str) -> set[str]:
+    start = build.find("overlay_files=(")
+    if start < 0:
+        fail("overlay_files array is missing")
+    end = build.find("\n)", start)
+    if end < 0:
+        fail("overlay_files array is unterminated")
+    paths: set[str] = set()
+    for raw in build[start:end].splitlines()[1:]:
+        match = OVERLAY_LINE_RE.fullmatch(raw)
+        if match:
+            path = match.group("path")
+            if path in paths:
+                fail(f"duplicate base overlay path: {path}")
+            paths.add(path)
+    return paths
+
+
 selector = (ROOT / "data/text/birch_speech.inc").read_text(encoding="utf-8")
 if 'data/text/arauna/en/birch_speech.inc' not in selector:
     fail("intro selector does not include the English bank")
@@ -110,13 +130,10 @@ if unknown:
 missing = sorted(APPROVED_ENGLISH_RENDERERS - active_renderers)
 if missing:
     fail("approved English renderer(s) missing from official manifest: " + ", ".join(missing))
+if tuple(renderers) != EXPECTED_RENDERER_ORDER:
+    fail("official English renderer order changed; review overlap semantics before reordering")
 if len(renderers) != 63:
     fail(f"expected 63 approved English renderers, found {len(renderers)}")
-if renderers[-2:] != [
-    "render_remaining_story_en_checked.py",
-    "render_arauna_league_en_checked.py",
-]:
-    fail("final residual and League renderers must remain the last two overlays")
 
 for renderer in renderers:
     if not (ROOT / "scripts" / renderer).is_file():
@@ -126,6 +143,8 @@ for renderer in renderers:
         fail(f"Portuguese renderer path is active: {renderer}")
 
 extra_overlays = read_manifest(OVERLAY_EXTRA_MANIFEST)
+if len(extra_overlays) != 32:
+    fail(f"expected 32 final transactional overlay files, found {len(extra_overlays)}")
 for rel_path in extra_overlays:
     if rel_path.startswith("/") or ".." in Path(rel_path).parts:
         fail(f"unsafe overlay path: {rel_path}")
@@ -133,6 +152,11 @@ for rel_path in extra_overlays:
         fail(f"overlay source is missing: {rel_path}")
 
 build = (ROOT / "scripts/build_arauna.sh").read_text(encoding="utf-8")
+base_overlays = load_base_overlay_paths(build)
+overlap = sorted(base_overlays & set(extra_overlays))
+if overlap:
+    fail("overlay path duplicated between base and final manifests: " + ", ".join(overlap))
+
 active_build_lines = [
     line.strip()
     for line in build.splitlines()
@@ -163,6 +187,6 @@ if "matrix:" in workflow:
     fail("CI still uses the former language build matrix")
 
 print(
-    f"English-only policy: OK ({len(renderers)} approved English renderers; "
+    f"English-only policy: OK ({len(renderers)} approved English renderers in locked order; "
     f"{len(extra_overlays)} final transactional overlay files)"
 )
