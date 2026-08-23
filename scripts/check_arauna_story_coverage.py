@@ -8,6 +8,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 BUILD_PATH = ROOT / "scripts" / "build_arauna.sh"
 POLICY_PATH = ROOT / "scripts" / "check_english_only_policy.py"
+RENDERER_MANIFEST = ROOT / "scripts" / "english_renderers.txt"
+EXTRA_OVERLAY_MANIFEST = ROOT / "scripts" / "english_overlay_files_extra.txt"
 
 FINAL_GAP_BANKS = {
     "data/text/arauna/en/league_finale.json": 88,
@@ -138,12 +140,9 @@ STAGES = {
         "render_circuit_masters_en_checked.py",
         "render_battle_pike_lobby_en_checked.py",
     },
-    "13_oath_road_league_finale": {
-        "render_arauna_league_en_checked.py",
-    },
+    "13_oath_road_league_finale": {"render_arauna_league_en_checked.py"},
 }
 
-RENDER_LINE_RE = re.compile(r"^python3 scripts/(?P<name>render_[A-Za-z0-9_]+\.py) --in-place$")
 OVERLAY_LINE_RE = re.compile(r'^\s*"(?P<path>[^"]+)"\s*$')
 
 
@@ -151,17 +150,20 @@ def fail(message: str) -> None:
     raise SystemExit(f"Arauna story coverage FAILED: {message}")
 
 
-def load_active_renderers(build: str) -> set[str]:
-    active: set[str] = set()
-    for raw in build.splitlines():
-        line = raw.strip()
-        match = RENDER_LINE_RE.fullmatch(line)
-        if match:
-            active.add(match.group("name"))
-    return active
+def read_manifest(path: Path) -> list[str]:
+    if not path.is_file():
+        fail(f"missing manifest: {path.relative_to(ROOT)}")
+    entries = [
+        raw.strip()
+        for raw in path.read_text(encoding="utf-8").splitlines()
+        if raw.strip() and not raw.lstrip().startswith("#")
+    ]
+    if len(entries) != len(set(entries)):
+        fail(f"duplicate manifest entries: {path.relative_to(ROOT)}")
+    return entries
 
 
-def load_overlay_paths(build: str) -> set[str]:
+def load_base_overlay_paths(build: str) -> set[str]:
     start = build.find("overlay_files=(")
     if start < 0:
         fail("overlay_files array is missing")
@@ -191,12 +193,16 @@ def count_bank(path: Path) -> int:
 def main() -> int:
     build = BUILD_PATH.read_text(encoding="utf-8")
     policy = POLICY_PATH.read_text(encoding="utf-8")
-    active = load_active_renderers(build)
-    overlays = load_overlay_paths(build)
+    renderers = read_manifest(RENDERER_MANIFEST)
+    active = set(renderers)
+    overlays = load_base_overlay_paths(build) | set(read_manifest(EXTRA_OVERLAY_MANIFEST))
+
+    if len(renderers) != 63:
+        fail(f"expected 63 official English renderers, found {len(renderers)}")
 
     missing_stages: list[str] = []
-    for stage, renderers in STAGES.items():
-        missing = sorted(renderers - active)
+    for stage, required in STAGES.items():
+        missing = sorted(required - active)
         if missing:
             missing_stages.append(f"{stage}: {', '.join(missing)}")
     if missing_stages:
@@ -205,6 +211,8 @@ def main() -> int:
     missing_overlays = sorted(FINAL_GAP_OVERLAYS - overlays)
     if missing_overlays:
         fail("final-gap files are not transactional: " + ", ".join(missing_overlays))
+    if "src/data/trainers.h" not in overlays:
+        fail("Elite visible battle-name source is not transactional")
 
     total_blocks = 0
     for rel_path, expected in FINAL_GAP_BANKS.items():
@@ -222,15 +230,23 @@ def main() -> int:
         if renderer not in policy:
             fail(f"completion renderer missing from English policy: {renderer}")
 
-    if "Portuguese builds are disabled" not in build:
-        fail("official build does not explicitly reject Portuguese")
-    if 'BUILD_DIR="build/arauna-en"' not in build:
-        fail("official output is not the English-only build directory")
+    required_build_markers = (
+        "Portuguese builds are disabled",
+        'BUILD_DIR="build/arauna-en"',
+        "scripts/english_renderers.txt",
+        "scripts/english_overlay_files_extra.txt",
+        "python3 scripts/check_english_only_policy.py",
+        "python3 scripts/check_arauna_story_coverage.py",
+    )
+    for marker in required_build_markers:
+        if marker not in build:
+            fail(f"official build is missing completion marker: {marker}")
 
     stage_count = len(STAGES)
     print(
         "Arauna canonical story coverage: OK "
         f"({stage_count}/{stage_count} stages; 100%; "
+        f"{len(renderers)} English renderers; "
         f"{total_blocks} final-gap text blocks covered; "
         f"{len(FINAL_GAP_OVERLAYS)} final-gap source files transactional)."
     )
