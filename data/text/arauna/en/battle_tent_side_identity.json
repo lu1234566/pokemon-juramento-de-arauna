@@ -1,0 +1,41 @@
+{
+  "ash_field": {
+    "FallarborTown_BattleTentLobby_Text_FallarborTentMyFavorite": [
+      "BATTLE TENTS use different\\n",
+      "rules in different places.\\p",
+      "My favorite is the one in\\n",
+      "CAMPO DAS CINZAS.\\p",
+      "You have to trust your POKéMON\\n",
+      "and adapt to what happens.$"
+    ],
+    "FallarborTown_BattleTentLobby_Text_ScottLookingForSomeone": [
+      "SEU BENTO: {PLAYER}, you found\\n",
+      "the BATTLE TENT too.\\p",
+      "People look relaxed here, but\\n",
+      "their battles tell other stories.\\p",
+      "Watch what they do under\\n",
+      "pressure.$"
+    ],
+    "FallarborTown_BattleTentLobby_Text_ScottMakeChallenge": [
+      "SEU BENTO: Do not spend this\\n",
+      "visit listening only to me.\\p",
+      "Enter a challenge. Experience is\\n",
+      "another kind of record.$"
+    ]
+  },
+  "silent_valley": {
+    "VerdanturfTown_BattleTentLobby_Text_ScottCanMeetToughTrainers": [
+      "SEU BENTO: {PLAYER}, good.\\p",
+      "This BATTLE TENT puts TRAINERS\\n",
+      "in situations they cannot fully\\n",
+      "control.\\p",
+      "That reveals useful things.$"
+    ],
+    "VerdanturfTown_BattleTentLobby_Text_ScottVisitRegularly": [
+      "SEU BENTO: I return here because\\n",
+      "pressure changes how people act.\\p",
+      "A battle can reveal what a clean\\n",
+      "report misses.$"
+    ]
+  }
+}
