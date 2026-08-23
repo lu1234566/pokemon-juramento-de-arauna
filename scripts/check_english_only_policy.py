@@ -5,73 +5,95 @@ import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+RENDERER_MANIFEST = ROOT / "scripts" / "english_renderers.txt"
+OVERLAY_EXTRA_MANIFEST = ROOT / "scripts" / "english_overlay_files_extra.txt"
+RENDERER_RE = re.compile(r"^render_[A-Za-z0-9_]+\.py$")
 
-APPROVED_ENGLISH_RENDERERS = {'render_aguas_mboi_en_checked.py',
- 'render_anahi_lab_en_checked.py',
- 'render_baia_luzes_ciro_en.py',
- 'render_baia_luzes_contest_venue_en_checked.py',
- 'render_baia_luzes_department_store_en_checked.py',
- 'render_baia_luzes_fan_club_en_checked.py',
- 'render_baia_luzes_harbor_tickets_en_checked.py',
- 'render_baia_luzes_interiors_en_checked.py',
- 'render_baia_luzes_museum_en_checked.py',
- 'render_baia_luzes_surface_en_checked.py',
- 'render_battle_circuit_arrival_west_en_checked.py',
- 'render_battle_circuit_east_district_en_checked.py',
- 'render_battle_circuit_reception_gate_en_checked.py',
- 'render_battle_circuit_public_services_en_checked.py',
- 'render_battle_circuit_analyst_en_checked.py',
- 'render_battle_circuit_lounge_identity_en_checked.py',
- 'render_battle_circuit_ui_en_checked.py',
- 'render_battle_pike_lobby_en_checked.py',
- 'render_battle_tower_circuit_pass_en_checked.py',
- 'render_circuit_masters_en_checked.py',
- 'render_circuit_pass_facilities_en_checked.py',
- 'render_casa_da_cinza_nara_en_checked.py',
- 'render_central_archive_en.py',
- 'render_encruzilhada_olivia_en_checked.py',
- 'render_line_ferry_ss_tidal_en_checked.py',
- 'render_mata_do_meio_interiors_en_checked.py',
- 'render_mata_do_meio_lidia_en.py',
- 'render_mboi_climax_en.py',
- 'render_memorial_lower_floors_en.py',
- 'render_memorial_mid_floors_en.py',
- 'render_missoes_ceu_confrontation_en.py',
- 'render_missoes_ceu_ground_floor_en.py',
- 'render_mt_chimney_surface.py',
- 'render_pampa_elias_gym_core_en_checked.py',
- 'render_pampa_gym_rooms_en_checked.py',
- 'render_petalburg_woods_surface.py',
- 'render_porto_redes_story_en_checked.py',
- 'render_porto_sal_daily_life_en.py',
- 'render_porto_sal_harbor_service_en.py',
- 'render_porto_sal_museum_confrontation_en_checked.py',
- 'render_porto_sal_museum_people_en_checked.py',
- 'render_porto_sal_museum_science_en_checked.py',
- 'render_porto_sal_shipyard_en.py',
- 'render_porto_sal_story_path_en_checked.py',
- 'render_porto_sal_submersivel_en.py',
- 'render_remembrancers_core_en.py',
- 'render_remembrancers_lower_en.py',
- 'render_route102_pampa_en_checked.py',
- 'render_route103_ciro_en_checked.py',
- 'render_route110_corridor_en_checked.py',
- 'render_route118_surf_corridor_en_checked.py',
- 'render_route119_ciro_surface_en.py',
- 'render_route120_bento_en.py',
- 'render_route121_memorial_en.py',
- 'render_ruins_memorial_en.py',
- 'render_serra_uivo_story_en_checked.py',
- 'render_shared_trainer_names_en.py',
- 'render_val_house_en_checked.py',
- 'render_vila_amanhecer_houses_en_checked.py',
- 'render_vila_amanhecer_route101_en_checked.py',
- 'render_vila_da_passagem_en.py'}
-RENDER_LINE_RE = re.compile(r"^python3 scripts/(?P<name>render_[A-Za-z0-9_]+\.py) --in-place$")
+APPROVED_ENGLISH_RENDERERS = {
+    'render_aguas_mboi_en_checked.py',
+    'render_anahi_lab_en_checked.py',
+    'render_arauna_league_en_checked.py',
+    'render_baia_luzes_ciro_en.py',
+    'render_baia_luzes_contest_venue_en_checked.py',
+    'render_baia_luzes_department_store_en_checked.py',
+    'render_baia_luzes_fan_club_en_checked.py',
+    'render_baia_luzes_harbor_tickets_en_checked.py',
+    'render_baia_luzes_interiors_en_checked.py',
+    'render_baia_luzes_museum_en_checked.py',
+    'render_baia_luzes_surface_en_checked.py',
+    'render_battle_circuit_arrival_west_en_checked.py',
+    'render_battle_circuit_east_district_en_checked.py',
+    'render_battle_circuit_reception_gate_en_checked.py',
+    'render_battle_circuit_public_services_en_checked.py',
+    'render_battle_circuit_analyst_en_checked.py',
+    'render_battle_circuit_lounge_identity_en_checked.py',
+    'render_battle_circuit_ui_en_checked.py',
+    'render_battle_pike_lobby_en_checked.py',
+    'render_battle_tower_circuit_pass_en_checked.py',
+    'render_circuit_masters_en_checked.py',
+    'render_circuit_pass_facilities_en_checked.py',
+    'render_casa_da_cinza_nara_en_checked.py',
+    'render_central_archive_en.py',
+    'render_encruzilhada_olivia_en_checked.py',
+    'render_line_ferry_ss_tidal_en_checked.py',
+    'render_mata_do_meio_interiors_en_checked.py',
+    'render_mata_do_meio_lidia_en.py',
+    'render_mboi_climax_en.py',
+    'render_memorial_lower_floors_en.py',
+    'render_memorial_mid_floors_en.py',
+    'render_missoes_ceu_confrontation_en.py',
+    'render_missoes_ceu_ground_floor_en.py',
+    'render_mt_chimney_surface.py',
+    'render_pampa_elias_gym_core_en_checked.py',
+    'render_pampa_gym_rooms_en_checked.py',
+    'render_petalburg_woods_surface.py',
+    'render_porto_redes_story_en_checked.py',
+    'render_porto_sal_daily_life_en.py',
+    'render_porto_sal_harbor_service_en.py',
+    'render_porto_sal_museum_confrontation_en_checked.py',
+    'render_porto_sal_museum_people_en_checked.py',
+    'render_porto_sal_museum_science_en_checked.py',
+    'render_porto_sal_shipyard_en.py',
+    'render_porto_sal_story_path_en_checked.py',
+    'render_porto_sal_submersivel_en.py',
+    'render_remembrancers_core_en.py',
+    'render_remembrancers_lower_en.py',
+    'render_remaining_story_en_checked.py',
+    'render_route102_pampa_en_checked.py',
+    'render_route103_ciro_en_checked.py',
+    'render_route110_corridor_en_checked.py',
+    'render_route118_surf_corridor_en_checked.py',
+    'render_route119_ciro_surface_en.py',
+    'render_route120_bento_en.py',
+    'render_route121_memorial_en.py',
+    'render_ruins_memorial_en.py',
+    'render_serra_uivo_story_en_checked.py',
+    'render_shared_trainer_names_en.py',
+    'render_val_house_en_checked.py',
+    'render_vila_amanhecer_houses_en_checked.py',
+    'render_vila_amanhecer_route101_en_checked.py',
+    'render_vila_da_passagem_en.py',
+}
 
 
 def fail(message: str) -> None:
     raise SystemExit(f"English-only policy violation: {message}")
+
+
+def read_manifest(path: Path, pattern: re.Pattern[str] | None = None) -> list[str]:
+    if not path.is_file():
+        fail(f"required manifest is missing: {path.relative_to(ROOT)}")
+    entries: list[str] = []
+    for lineno, raw in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
+        line = raw.strip()
+        if not line or line.startswith("#"):
+            continue
+        if pattern is not None and pattern.fullmatch(line) is None:
+            fail(f"invalid manifest entry at {path.relative_to(ROOT)}:{lineno}: {line}")
+        entries.append(line)
+    if len(entries) != len(set(entries)):
+        fail(f"duplicate entries in {path.relative_to(ROOT)}")
+    return entries
 
 
 selector = (ROOT / "data/text/birch_speech.inc").read_text(encoding="utf-8")
@@ -79,6 +101,36 @@ if 'data/text/arauna/en/birch_speech.inc' not in selector:
     fail("intro selector does not include the English bank")
 if "pt_br" in selector or "ARAUNA_LANGUAGE" in selector:
     fail("intro selector still exposes a Portuguese/runtime language path")
+
+renderers = read_manifest(RENDERER_MANIFEST, RENDERER_RE)
+active_renderers = set(renderers)
+unknown = sorted(active_renderers - APPROVED_ENGLISH_RENDERERS)
+if unknown:
+    fail("official manifest contains unapproved renderer(s): " + ", ".join(unknown))
+missing = sorted(APPROVED_ENGLISH_RENDERERS - active_renderers)
+if missing:
+    fail("approved English renderer(s) missing from official manifest: " + ", ".join(missing))
+if len(renderers) != 63:
+    fail(f"expected 63 approved English renderers, found {len(renderers)}")
+if renderers[-2:] != [
+    "render_remaining_story_en_checked.py",
+    "render_arauna_league_en_checked.py",
+]:
+    fail("final residual and League renderers must remain the last two overlays")
+
+for renderer in renderers:
+    if not (ROOT / "scripts" / renderer).is_file():
+        fail(f"approved renderer file is missing: {renderer}")
+    lowered = renderer.lower()
+    if any(token in lowered for token in ("ptbr", "pt-br", "portuguese", "portugues")):
+        fail(f"Portuguese renderer path is active: {renderer}")
+
+extra_overlays = read_manifest(OVERLAY_EXTRA_MANIFEST)
+for rel_path in extra_overlays:
+    if rel_path.startswith("/") or ".." in Path(rel_path).parts:
+        fail(f"unsafe overlay path: {rel_path}")
+    if not (ROOT / rel_path).is_file():
+        fail(f"overlay source is missing: {rel_path}")
 
 build = (ROOT / "scripts/build_arauna.sh").read_text(encoding="utf-8")
 active_build_lines = [
@@ -90,34 +142,19 @@ if not any("Portuguese builds are disabled" in line for line in active_build_lin
     fail("build wrapper does not explicitly reject Portuguese builds")
 if 'BUILD_DIR="build/arauna-en"' not in build:
     fail("official build output is not the English-only target")
-
-active_renderers: set[str] = set()
+if "scripts/english_renderers.txt" not in build:
+    fail("official build is not driven by the reviewed English renderer manifest")
+if "scripts/english_overlay_files_extra.txt" not in build:
+    fail("official build is not loading the final transactional overlay manifest")
+if 'python3 "scripts/$renderer" --in-place' not in build:
+    fail("official build does not execute renderer manifest entries in-place")
+if "python3 scripts/check_english_only_policy.py" not in build:
+    fail("official build does not enforce the English-only gate")
+if "python3 scripts/check_arauna_story_coverage.py" not in build:
+    fail("official build does not enforce the 100% story coverage gate")
 for line in active_build_lines:
-    if "python3 scripts/render_" not in line:
-        continue
-    match = RENDER_LINE_RE.fullmatch(line)
-    if match is None:
-        fail(f"renderer invocation has an unexpected shape: {line}")
-    active_renderers.add(match.group("name"))
-
-unknown = sorted(active_renderers - APPROVED_ENGLISH_RENDERERS)
-if unknown:
-    fail("official build invokes unapproved renderer(s): " + ", ".join(unknown))
-
-missing = sorted(APPROVED_ENGLISH_RENDERERS - active_renderers)
-if missing:
-    fail("approved English renderer(s) missing from official build: " + ", ".join(missing))
-
-for renderer in sorted(active_renderers):
-    if not (ROOT / "scripts" / renderer).is_file():
-        fail(f"approved renderer file is missing: {renderer}")
-
-for line in active_build_lines:
-    lowered = line.lower()
-    if "python3 scripts/render_" in line and any(
-        token in lowered for token in ("ptbr", "pt-br", "portuguese", "portugues")
-    ):
-        fail(f"Portuguese renderer path is active: {line}")
+    if line.startswith("python3 scripts/render_"):
+        fail(f"renderer bypasses the reviewed manifest: {line}")
 
 workflow = (ROOT / ".github/workflows/build.yml").read_text(encoding="utf-8")
 if "ptbr" in workflow.lower() or "pt-br" in workflow.lower():
@@ -125,4 +162,7 @@ if "ptbr" in workflow.lower() or "pt-br" in workflow.lower():
 if "matrix:" in workflow:
     fail("CI still uses the former language build matrix")
 
-print(f"English-only policy: OK ({len(active_renderers)} approved English renderers)")
+print(
+    f"English-only policy: OK ({len(renderers)} approved English renderers; "
+    f"{len(extra_overlays)} final transactional overlay files)"
+)
