@@ -1,4 +1,6 @@
-# Localização — estado atual em 2026-08-19
+# Localização — estado em 2026-08-19 (HISTÓRICO / SUPERADO)
+
+> **Não use este arquivo como instrução de build atual.** Este documento registra o protótipo bilíngue existente em parte de 19/08/2026. A arquitetura foi posteriormente substituída pela política **English-only**: `scripts/build_arauna.sh` rejeita PT-BR, `scripts/english_renderers.txt` é a fonte de verdade e `README.md` contém os comandos atuais. O texto abaixo é preservado somente para histórico técnico.
 
 ## Escopo deste protótipo
 
