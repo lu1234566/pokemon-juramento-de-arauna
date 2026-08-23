@@ -13,7 +13,9 @@ BANK_PATH = ROOT / "data" / "text" / "arauna" / "en" / "main_readiness_residue.j
 CAVE_PATH = ROOT / "data" / "maps" / "CaveOfOrigin_B1F" / "scripts.inc"
 ROUTE119_HOUSE_PATH = ROOT / "data" / "maps" / "Route119_House" / "scripts.inc"
 ROUTE105_PATH = ROOT / "data" / "maps" / "Route105" / "scripts.inc"
+ABANDONED_OFFICE_PATH = ROOT / "data" / "maps" / "AbandonedShip_CaptainsOffice" / "scripts.inc"
 MENU_PATH = ROOT / "src" / "data" / "script_menu.h"
+LANDMARK_PATH = ROOT / "src" / "landmark.c"
 MAX_VISIBLE_WIDTH = 32
 CONTROL_RE = re.compile(r"\\[npl]")
 PLACEHOLDER_RE = re.compile(r"\{[^}]+\}")
@@ -32,11 +34,16 @@ EXPECTED = {
         "Route104_Text_DadPokenavCall",
         "Route104_Text_RegisteredDadInPokenav",
     },
+    "abandoned_ship_office": {
+        "AbandonedShip_CaptainsOffice_Text_NoSuccessFindingScanner",
+        "AbandonedShip_CaptainsOffice_Text_OhCanYouDeliverScanner",
+    },
 }
 FILES = {
     "cave_of_origin": CAVE_PATH,
     "route119_house": ROUTE119_HOUSE_PATH,
     "route105_pokenav": ROUTE105_PATH,
+    "abandoned_ship_office": ABANDONED_OFFICE_PATH,
 }
 GAMEPLAY_TOKENS = {
     "cave_of_origin": (
@@ -58,6 +65,12 @@ GAMEPLAY_TOKENS = {
         "TRAINER_ANDRES_1",
         "register_matchcall TRAINER_ANDRES_1",
     ),
+    "abandoned_ship_office": (
+        "FLAG_EXCHANGED_SCANNER",
+        "ITEM_SCANNER",
+        "FLAG_ITEM_ABANDONED_SHIP_HIDDEN_FLOOR_ROOM_2_SCANNER",
+        "AbandonedShip_CaptainsOffice_EventScript_CanYouDeliverScanner",
+    ),
 }
 STALE = (
     "WALLACE",
@@ -72,6 +85,7 @@ STALE = (
     "NORMAN",
     "MR. STONE",
     "DEVON",
+    "CAPT. STERN",
 )
 
 ORIGINAL_MENU = '''static const struct MenuAction MultichoiceList_WheresRayquaza[] =
@@ -92,6 +106,31 @@ static const struct MenuAction MultichoiceList_WheresRayquaza[] =
     {sText_AraunaOathTower},
     {gText_DontRemember},
 };'''
+
+LANDMARK_REPLACEMENTS = {
+    'static const u8 LandmarkName_MrBrineysCottage[] = _("MR. BRINEY\'S COTTAGE");':
+        'static const u8 LandmarkName_MrBrineysCottage[] = _("SAILOR\'S COTTAGE");',
+    'static const u8 LandmarkName_SlateportBeach[] = _("SLATEPORT BEACH");':
+        'static const u8 LandmarkName_SlateportBeach[] = _("PORTO DO SAL BEACH");',
+    'static const u8 LandmarkName_NewMauville[] = _("NEW MAUVILLE");':
+        'static const u8 LandmarkName_NewMauville[] = _("OLD POWER RELAY");',
+    'static const u8 LandmarkName_MeteorFalls[] = _("METEOR FALLS");':
+        'static const u8 LandmarkName_MeteorFalls[] = _("RUINAS DA QUEDA");',
+    'static const u8 LandmarkName_RusturfTunnel[] = _("RUSTURF TUNNEL");':
+        'static const u8 LandmarkName_RusturfTunnel[] = _("GALERIAS SERRA");',
+    'static const u8 LandmarkName_SafariZoneEntrance[] = _("SAFARI ZONE ENTRANCE");':
+        'static const u8 LandmarkName_SafariZoneEntrance[] = _("ARAUNA PRESERVE");',
+    'static const u8 LandmarkName_MtPyre[] = _("MT. PYRE");':
+        'static const u8 LandmarkName_MtPyre[] = _("MEMORIAL NOMES");',
+    'static const u8 LandmarkName_SeafloorCavern[] = _("SEAFLOOR CAVERN");':
+        'static const u8 LandmarkName_SeafloorCavern[] = _("CAVERNAS M\'BOI");',
+    'static const u8 LandmarkName_GraniteCave[] = _("GRANITE CAVE");':
+        'static const u8 LandmarkName_GraniteCave[] = _("GRUTA DAS VOZES");',
+    'static const u8 LandmarkName_SkyPillar[] = _("SKY PILLAR");':
+        'static const u8 LandmarkName_SkyPillar[] = _("TORRE JURAMENTO");',
+    'static const u8 LandmarkName_MagmaHideout[] = _("MAGMA HIDEOUT");':
+        'static const u8 LandmarkName_MagmaHideout[] = _("REMEMBRANCERS BASE");',
+}
 
 
 def fail(message: str) -> None:
@@ -190,6 +229,10 @@ def validate_asm(section: str, source: str, rendered: str, labels: set[str]) -> 
         for required in ("ELIAS", "OTACILIO", "POKéNAV"):
             if required not in owned:
                 fail(f"route105_pokenav: canonical identity missing: {required}")
+    if section == "abandoned_ship_office":
+        for required in ("HARBOR ENGINEER", "SCANNER", "PORTO DO SAL"):
+            if required not in owned:
+                fail(f"abandoned_ship_office: canonical identity missing: {required}")
 
 
 def render_menu(source: str) -> str:
@@ -214,8 +257,50 @@ def validate_menu(source: str, rendered: str) -> None:
             fail(f"menu token count changed: {token}")
 
 
+def render_landmarks(source: str) -> str:
+    rendered = source
+    for old, new in LANDMARK_REPLACEMENTS.items():
+        old_count = rendered.count(old)
+        new_count = rendered.count(new)
+        if old_count == 1 and new_count == 0:
+            rendered = rendered.replace(old, new, 1)
+        elif old_count == 0 and new_count == 1:
+            continue
+        else:
+            fail(f"landmark contract mismatch for {old!r}: old={old_count}, final={new_count}")
+    return rendered
+
+
+def normalize_landmarks(source: str) -> str:
+    normalized = source
+    for index, (old, new) in enumerate(LANDMARK_REPLACEMENTS.items()):
+        marker = f"<ARAUNA_LANDMARK_{index}>"
+        if old in normalized:
+            normalized = normalized.replace(old, marker, 1)
+        elif new in normalized:
+            normalized = normalized.replace(new, marker, 1)
+        else:
+            fail(f"cannot normalize landmark pair: {old!r}")
+    return normalized
+
+
+def validate_landmarks(source: str, rendered: str) -> None:
+    if normalize_landmarks(source) != normalize_landmarks(rendered):
+        fail("non-owned landmark.c structure changed")
+    for final in LANDMARK_REPLACEMENTS.values():
+        if final not in rendered:
+            fail(f"canonical landmark missing: {final}")
+    for stale in (
+        "MR. BRINEY'S COTTAGE", "SLATEPORT BEACH", "NEW MAUVILLE",
+        "METEOR FALLS", "RUSTURF TUNNEL", "SAFARI ZONE ENTRANCE",
+        "MT. PYRE", "SEAFLOOR CAVERN", "GRANITE CAVE", "SKY PILLAR", "MAGMA HIDEOUT",
+    ):
+        if f'_("{stale}")' in rendered:
+            fail(f"stale landmark survived: {stale}")
+
+
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Close main-readiness visible residues found outside the earlier canonical coverage set.")
+    parser = argparse.ArgumentParser(description="Close high-confidence visible residues found by the main-readiness audit.")
     parser.add_argument("--check", action="store_true")
     parser.add_argument("--in-place", action="store_true")
     args = parser.parse_args()
@@ -235,6 +320,12 @@ def main() -> int:
     validate_menu(menu_source, menu_rendered)
     if args.in_place:
         MENU_PATH.write_text(menu_rendered, encoding="utf-8")
+
+    landmark_source = LANDMARK_PATH.read_text(encoding="utf-8")
+    landmark_rendered = render_landmarks(landmark_source)
+    validate_landmarks(landmark_source, landmark_rendered)
+    if args.in_place:
+        LANDMARK_PATH.write_text(landmark_rendered, encoding="utf-8")
         # This renderer is deliberately last in the official manifest. At this
         # point every reviewed overlay has been applied, so the audit sees the
         # actual compile-time visible surface rather than the vanilla sources.
@@ -245,7 +336,10 @@ def main() -> int:
         )
 
     mode = "Rendered" if args.in_place else "Validated"
-    print(f"{mode} main-readiness residue: 9 visible blocks + 3 private menu labels.")
+    print(
+        f"{mode} main-readiness residue: 11 visible blocks + 3 private menu labels + "
+        f"{len(LANDMARK_REPLACEMENTS)} canonical landmarks."
+    )
     return 0
 
 
