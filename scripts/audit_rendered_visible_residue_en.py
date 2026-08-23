@@ -79,7 +79,8 @@ def visible_literals(path: Path) -> list[str]:
 
 def candidate_files() -> list[Path]:
     paths = list((ROOT / "data" / "maps").glob("**/scripts.inc"))
-    paths.extend((ROOT / "data" / "text").glob("*.inc"))
+    paths.extend((ROOT / "data" / "text").glob("**/*.inc"))
+    paths.extend((ROOT / "data" / "scripts").glob("**/*.inc"))
     paths.extend(ROOT / rel for rel in sorted(C_VISIBLE_FILES))
     return sorted({path for path in paths if path.is_file()})
 
