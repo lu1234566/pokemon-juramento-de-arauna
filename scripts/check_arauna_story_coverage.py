@@ -17,9 +17,10 @@ FINAL_GAP_BANKS = {
     "data/text/arauna/en/remaining_story_surface_a.json": 30,
     "data/text/arauna/en/remaining_story_surface_b.json": 53,
     "data/text/arauna/en/remaining_story_surface_c.json": 58,
+    "data/text/arauna/en/battle_tent_side_identity.json": 5,
 }
 EXPECTED_POKENAV_RUNTIME_BLOCKS = 101
-EXPECTED_FINAL_GAP_BLOCKS = 330
+EXPECTED_FINAL_GAP_BLOCKS = 335
 
 FINAL_GAP_OVERLAYS = {
     "data/maps/Route104/scripts.inc",
@@ -55,6 +56,8 @@ FINAL_GAP_OVERLAYS = {
     "data/maps/EverGrandeCity_DrakesRoom/scripts.inc",
     "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
     "data/text/match_call.inc",
+    "data/maps/FallarborTown_BattleTentLobby/scripts.inc",
+    "data/maps/VerdanturfTown_BattleTentLobby/scripts.inc",
 }
 
 STAGES = {
@@ -144,7 +147,8 @@ STAGES = {
         "render_battle_pike_lobby_en_checked.py",
     },
     "13_crosscutting_pokenav": {"render_pokenav_named_calls_en_checked.py"},
-    "14_oath_road_league_finale": {"render_arauna_league_en_checked.py"},
+    "14_side_battle_tents": {"render_battle_tent_side_identity_en_checked.py"},
+    "15_oath_road_league_finale": {"render_arauna_league_en_checked.py"},
 }
 
 OVERLAY_LINE_RE = re.compile(r'^\s*"(?P<path>[^"]+)"\s*$')
@@ -205,8 +209,6 @@ def count_pokenav_runtime_blocks() -> int:
     if set(leaders) != {"Roxanne", "Brawly", "Wattson", "Flannery", "Winona", "TateLiza", "Juan"}:
         fail("PokéNav leader bank does not cover the seven non-Elias rematch leaders")
     leader_blocks = sum(len(messages) for messages in leaders.values())
-    # Ciro's one canonical call payload is rendered to both legacy May/Brendan
-    # label families so either player gender reaches the same rival voice.
     runtime_blocks = (
         len(raw["otacilio"])
         + len(raw["elias"])
@@ -227,8 +229,8 @@ def main() -> int:
     active = set(renderers)
     overlays = load_base_overlay_paths(build) | set(read_manifest(EXTRA_OVERLAY_MANIFEST))
 
-    if len(renderers) != 64:
-        fail(f"expected 64 official English renderers, found {len(renderers)}")
+    if len(renderers) != 65:
+        fail(f"expected 65 official English renderers, found {len(renderers)}")
 
     missing_stages: list[str] = []
     for stage, required in STAGES.items():
@@ -264,6 +266,7 @@ def main() -> int:
 
     for renderer in (
         "render_pokenav_named_calls_en_checked.py",
+        "render_battle_tent_side_identity_en_checked.py",
         "render_remaining_story_en_checked.py",
         "render_arauna_league_en_checked.py",
     ):
@@ -284,7 +287,7 @@ def main() -> int:
 
     stage_count = len(STAGES)
     print(
-        "Arauna canonical story coverage: OK "
+        "Arauna canonical visible coverage: OK "
         f"({stage_count}/{stage_count} stages; 100%; "
         f"{len(renderers)} English renderers; "
         f"{total_blocks} final-gap runtime text blocks covered; "
