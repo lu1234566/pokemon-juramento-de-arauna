@@ -9,7 +9,7 @@ This pass replaces the last visible Emerald Frontier Brain identities while pres
 | `TRAINER_ANABEL` | **MAIRA** | Battle Tower — adaptation and consistency |
 | `TRAINER_TUCKER` | **DARIO** | Battle Dome — brackets, timing and public pressure |
 | `TRAINER_NOLAND` | **NILO** | Battle Factory — unfamiliar/rental teams |
-| `TRAINER_LUCY` | **IARA** | Battle Pike — uncertainty and judgment under chance |
+| `TRAINER_LUCY` | **JACI** | Battle Pike — uncertainty and judgment under chance |
 | `TRAINER_GRETA` | **RITA** | Battle Arena — commitment under three-turn judgment |
 | `TRAINER_SPENSER` | **AMARO** | Battle Palace — trust and Pokemon autonomy |
 | `TRAINER_BRANDON` | **TADEU** | Battle Pyramid — endurance and route/resource judgment |
@@ -25,10 +25,12 @@ The writing differentiates each facility without changing its rules:
 - MAIRA reads streaks as adaptation rather than raw dominance.
 - DARIO treats crowds and tournament brackets as pressure, not proof.
 - NILO focuses on learning the rental team actually available.
-- IARA distinguishes chance from the judgment made after chance acts.
+- JACI distinguishes chance from the judgment made after chance acts.
 - RITA emphasizes clarity and commitment inside Arena judging.
 - AMARO frames autonomy as partnership rather than obedience.
 - TADEU treats endurance as resource and route judgment, not stubbornness.
+
+JACI is intentionally distinct from the established `Iara-Mãe` story identity elsewhere in Arauna.
 
 ## Checked renderer
 
