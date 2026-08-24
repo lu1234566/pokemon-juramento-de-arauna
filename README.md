@@ -50,8 +50,11 @@ Entradas `ptbr`, `pt-br`, `portuguese` e `portugues` são rejeitadas explicitame
 Com `MODERN=1`, o alvo esperado é:
 
 ```text
-build/arauna-en/pokemon-juramento-de-arauna-en_modern.gba
+pokemon-juramento-de-arauna-en_modern.gba
 ```
+
+`BUILD_DIR` holds the object tree; the ROM itself is written to the repository
+root, as in upstream `pokeemerald`.
 
 A ROM gerada é artefato local de desenvolvimento e não deve ser versionada.
 
