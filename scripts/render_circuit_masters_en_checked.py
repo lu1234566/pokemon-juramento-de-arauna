@@ -112,7 +112,7 @@ def render_trainer_names(text: str, names: dict[str, str]) -> str:
     def mask(s: str) -> str:
         for trainer_id in names:
             rx = re.compile(
-                rf'(\[{re.escape(trainer_id)}\]\s*=\s*\{{.*?\.trainerName\s*=\s*_")[^"]+("\))',
+                rf'(\[{re.escape(trainer_id)}\]\s*=\s*\{{.*?\.trainerName\s*=\s*_\(")[^"]+("\))',
                 re.DOTALL,
             )
             s = rx.sub(r'\1<MASTER_NAME>\2', s, count=1)
@@ -135,7 +135,7 @@ def render_class_names(text: str, final: str) -> str:
         text = rx.sub(lambda m: m.group(1) + final + m.group(3), text, count=1)
     def mask(s: str) -> str:
         for class_id in CLASS_OLD:
-            rx = re.compile(rf'(\[{re.escape(class_id)}\]\s*=\s*_")[^"]+("\),)')
+            rx = re.compile(rf'(\[{re.escape(class_id)}\]\s*=\s*_\(")[^"]+("\),)')
             s = rx.sub(r'\1<MASTER_CLASS>\2', s, count=1)
         return s
     if mask(before) != mask(text):

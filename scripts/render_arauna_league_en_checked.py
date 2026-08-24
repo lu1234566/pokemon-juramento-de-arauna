@@ -13,6 +13,28 @@ MAX_VISIBLE_WIDTH = 32
 CONTROL_RE = re.compile(r"\\[npl]")
 PLACEHOLDER_RE = re.compile(r"\{[^}]+\}")
 
+# Width of the longest value each placeholder can expand to at runtime, from
+# include/constants/global.h. A blanket 16 overstates {PLAYER}, which the name
+# entry screen caps at PLAYER_NAME_LENGTH, and would reject dialogue that fits.
+PLACEHOLDER_WIDTHS = {
+    "{PLAYER}": 7,     # PLAYER_NAME_LENGTH
+    "{RIVAL}": 7,      # rival names use the same cap
+    "{STR_VAR_1}": 14, # widest runtime buffer: ITEM_NAME_LENGTH
+    "{STR_VAR_2}": 14,
+    "{STR_VAR_3}": 14,
+}
+DEFAULT_PLACEHOLDER_WIDTH = 14
+
+
+def model_placeholders(text: str) -> str:
+    """Expand placeholders to their widest runtime value for width checking."""
+    def expand(match: re.Match[str]) -> str:
+        token = match.group(0)
+        return "X" * PLACEHOLDER_WIDTHS.get(token, DEFAULT_PLACEHOLDER_WIDTH)
+
+    return PLACEHOLDER_RE.sub(expand, text)
+
+
 FILES = {
     "ever_grande": "data/maps/EverGrandeCity/scripts.inc",
     "center": "data/maps/EverGrandeCity_PokemonCenter_1F/scripts.inc",
@@ -152,7 +174,7 @@ def load_targets() -> dict[str, dict[str, list[str]]]:
                 if '"' in chunk:
                     fail(f"{section}:{label}: raw double quote is not allowed")
             for visible in CONTROL_RE.split(joined):
-                modeled = PLACEHOLDER_RE.sub("X" * 16, visible).replace("$", "")
+                modeled = model_placeholders(visible).replace("$", "")
                 if len(modeled) > MAX_VISIBLE_WIDTH:
                     fail(
                         f"{section}:{label}: visible line exceeds "

@@ -63,7 +63,7 @@ REQUIRED_TOKENS = {
     ),
     "hall": (
         "Common_EventScript_BufferTrendyPhrase",
-        "Common_ShowEasyChatScreen",
+        "special IsTrendyPhraseBoring",
         "ITEM_TM_SLUDGE_BOMB",
         "FLAG_RECEIVED_TM_SLUDGE_BOMB",
     ),

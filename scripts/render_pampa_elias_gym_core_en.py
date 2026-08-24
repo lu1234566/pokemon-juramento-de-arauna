@@ -88,10 +88,10 @@ TARGETS: dict[str, tuple[str, ...]] = {
     "PetalburgCity_Gym_Text_YouHaveGottenStronger": (
         "ELIAS: You've changed, {PLAYER}.\\p",
         "The BADGES show experience.\\p",
-        "Your POKéMON show something more.$",
+        "Your POKéMON show more still.$",
     ),
     "PetalburgCity_Gym_Text_NormanIntro": (
-        "ELIAS: I kept something from you.\\p",
+        "ELIAS: I kept a truth from you.\\p",
         "I approved part of the M'BOI\\n",
         "project.\\p",
         "For years I called my fear\\n",
@@ -117,14 +117,14 @@ TARGETS: dict[str, tuple[str, ...]] = {
     ),
     "PetalburgCity_Gym_Text_ExplainFacade": (
         "ELIAS: TM42 contains FACADE.\\p",
-        "Its power doubles if the user\\n",
-        "is poisoned, paralyzed or burned.\\p",
+        "Its power doubles if the user is\\n",
+        "poisoned, paralyzed or burned.\\p",
         "A bad state can become leverage.$",
     ),
     "PetalburgCity_Gym_Text_DadHappyAndSad": (
         "ELIAS: As LEADER, losing hurts.\\p",
         "As your father... I'm proud.\\p",
-        "Those feelings can exist together.$",
+        "Both feelings can be true.$",
     ),
     "PetalburgCity_Gym_Text_PleaseComeWithMe": (
         "MAN: {PLAYER}, there you are!\\p",
@@ -142,12 +142,12 @@ TARGETS: dict[str, tuple[str, ...]] = {
         "speak about M'BOI.$",
     ),
     "PetalburgCity_Gym_Text_DadNoAmountOfTrainingIsEnough": (
-        "ELIAS: Training never really ends.\\p",
+        "ELIAS: Training never ends.\\p",
         "Neither does learning how to\\n",
         "live with what we remember.$",
     ),
     "PetalburgCity_Gym_Text_GymGuideAdvice": (
-        "GUIDE: This GYM uses seven rooms.\\p",
+        "GUIDE: This GYM has seven rooms.\\p",
         "Each TRAINER tests a different\\n",
         "battle habit.\\p",
         "Win and the next doors open.\\p",
@@ -269,10 +269,10 @@ def validate_rendered(source: str, rendered: str) -> None:
         "FLAG_BADGE05_GET",
         "FLAG_DEFEATED_PETALBURG_GYM",
         "VAR_PETALBURG_GYM_STATE",
-        "ITEM_TM42",
+        "ITEM_TM_FACADE",
         "FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_RIVAL",
         "special InitBirchState",
-        "MAP_PETALBURG_CITY_WALLYS_HOUSE",
+        "FLAG_HIDE_PETALBURG_CITY_WALLY",
     )
     for token in preserved:
         if token not in rendered:

@@ -34,11 +34,11 @@ TARGETS: dict[str, tuple[str, ...]] = {
     ),
     "PetalburgCity_Gym_Text_ParkerIntro": (
         "TRAINER: CONFUSION ROOM.\\p",
-        "Let's see whether your BOND holds\\n",
+        "Let's see if your BOND holds\\n",
         "when commands become uncertain.$",
     ),
     "PetalburgCity_Gym_Text_ParkerDefeat": (
-        "You kept listening to each other.$",
+        "You never stopped listening.$",
     ),
     "PetalburgCity_Gym_Text_ParkerPostBattle": (
         "Next is the POWER ROOM.\\p",
@@ -56,7 +56,7 @@ TARGETS: dict[str, tuple[str, ...]] = {
         "Can you keep your plan?$",
     ),
     "PetalburgCity_Gym_Text_GeorgeDefeat": (
-        "You broke through every recovery.$",
+        "You broke through every heal.$",
     ),
     "PetalburgCity_Gym_Text_GeorgePostBattle": (
         "Next is the CRITICAL ROOM.\\p",
@@ -84,8 +84,8 @@ TARGETS: dict[str, tuple[str, ...]] = {
     "PetalburgCity_Gym_Text_BerkePostBadge": (
         "PAMPA DA ESPERA grew tougher\\n",
         "under ELIAS.\\p",
-        "Now we know his child can push us\\n",
-        "too.$",
+        "Now we know his child can\\n",
+        "push us too.$",
     ),
     "PetalburgCity_Gym_Text_MaryIntro": (
         "TRAINER: ACCURACY ROOM.\\p",
@@ -108,7 +108,7 @@ TARGETS: dict[str, tuple[str, ...]] = {
     ),
     "PetalburgCity_Gym_Text_AlexiaIntro": (
         "TRAINER: DEFENSE ROOM.\\p",
-        "Strong defenses let me take risks.\\p",
+        "Good defense lets me take risks.\\p",
         "Let's see if yours do too.$",
     ),
     "PetalburgCity_Gym_Text_AlexiaDefeat": (
@@ -127,7 +127,7 @@ TARGETS: dict[str, tuple[str, ...]] = {
     "PetalburgCity_Gym_Text_JodyIntro": (
         "TRAINER: POWER ROOM.\\p",
         "ELIAS told us to go all out.\\p",
-        "Your family name changes nothing.$",
+        "Your name changes nothing here.$",
     ),
     "PetalburgCity_Gym_Text_JodyDefeat": (
         "I went all out. You answered.$",
@@ -185,8 +185,8 @@ TARGETS: dict[str, tuple[str, ...]] = {
 
 SOURCE_MARKERS = (
     "ROOM", "TRAINER", "LEADER", "PETALBURG CITY", "SURF", "door",
-    "advantage", "bond", "critical hit", "restore HP", "soul mates",
-    "POKéMON", "sign says",
+    "advantage", "bond", "critical hit", "restore HP", "restores HP",
+    "soul mates", "DEFENSE", "POKéMON", "sign says",
 )
 
 

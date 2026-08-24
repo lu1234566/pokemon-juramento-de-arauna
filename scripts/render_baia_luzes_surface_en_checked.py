@@ -16,7 +16,7 @@ english.TARGETS["LilycoveCity_Text_SomeoneStoleMyPokemon"] = (
     ("stole my POKéMON", "CONSORCIO HORIZONTE"),
     (
         "I fell asleep to the waves...\\p",
-        "When I woke, my POKéMON was gone.\\p",
+        "I woke and my POKéMON was gone.\\p",
         "I blamed HORIZON immediately.\\n",
         "Maybe I was too quick.$",
     ),

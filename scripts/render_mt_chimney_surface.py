@@ -20,7 +20,7 @@ TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         ),
     ),
     "MtChimney_Text_MaxieIntro": (
-        ("LUZIA", "HORIZONTE"),
+        ("LUZIA", "reescrever"),
         (
             "LUZIA: HORIZON calls this\\n",
             "treatment.\\p",

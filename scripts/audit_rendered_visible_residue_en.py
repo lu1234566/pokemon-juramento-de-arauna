@@ -135,6 +135,12 @@ def main() -> int:
         f"{len(global_identity)} global speaker/PT candidates; "
         f"{len(global_places)} global legacy-place candidates."
     )
+    if critical_owned:
+        # These are the only findings that fail the build, so name them all
+        # instead of leaving the reader to guess from the global inventories.
+        print("Owned critical residues (these fail --fail-owned):")
+        for line in critical_owned:
+            print(f"  ! {line}")
     if global_identity:
         print("Global speaker/PT candidates (review inventory):")
         for line in global_identity[:80]:

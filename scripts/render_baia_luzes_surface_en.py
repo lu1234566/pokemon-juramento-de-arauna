@@ -34,7 +34,7 @@ TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         (
             "HORIZON: That service tunnel is\\n",
             "restricted.\\p",
-            "Please use the public waterfront.$",
+            "Please use the public pier.$",
         ),
     ),
     "LilycoveCity_Text_IfWorldBecomesOurs": (
@@ -115,7 +115,7 @@ TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         ("stole my POKéMON", "CONSORCIO HORIZONTE"),
         (
             "I fell asleep to the waves...\\p",
-            "When I woke, my POKéMON was gone!\\p",
+            "I woke and my POKéMON was gone!\\p",
             "I blamed HORIZON immediately.\\n",
             "Maybe I was too quick.$",
         ),
@@ -142,8 +142,8 @@ TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         (
             "I have watched this water for\\n",
             "most of my life.\\p",
-            "The coast changes. The tide still\\n",
-            "returns.$",
+            "The coast changes. The tide\\n",
+            "still returns.$",
         ),
     ),
     "LilycoveCity_Text_SixtyYearsAgoHusbandProposed": (
@@ -250,13 +250,13 @@ TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         ("tall tower", "ROUTE 131"),
         (
             "I saw a tall tower far west.\\p",
-            "Could that be TORRE DO JURAMENTO?$",
+            "Was that TORRE DO JURAMENTO?$",
         ),
     ),
     "LilycoveCity_Text_JustArrivedAndSawRarePokemon": (
         ("honeymoon vacation", "DRAGON-type"),
         (
-            "We just arrived for our honeymoon.\\p",
+            "We arrived for our honeymoon.\\p",
             "We saw a huge POKéMON silhouette\\n",
             "high above the sea.\\p",
             "Arauna already surprised us.$",
@@ -267,7 +267,7 @@ TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         (
             "We promised to see as many rare\\n",
             "POKéMON as we could together.\\p",
-            "The coast gave us one on day one.$",
+            "The coast gave us one today.$",
         ),
     ),
 }

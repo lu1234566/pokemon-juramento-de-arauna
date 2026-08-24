@@ -15,7 +15,8 @@ TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
     "Route120_Text_StevenGreeting": (
         ("SEU BENTO:", "Quando um nome"),
         (
-            "SEU BENTO: {PLAYER}, there you are.\\p",
+            "SEU BENTO: There you are,\\n",
+            "{PLAYER}.\\p",
             "CIRO came through from\\n",
             "MATA DO MEIO.\\p",
             "He kept replaying that POKéMON\\n",

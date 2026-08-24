@@ -59,7 +59,8 @@ TOWN_TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         "following a trail.$",
     )),
     "LittlerootTown_Text_IfYouGoInGrassPokemonWillJumpOut": (("capim alto",), (
-        "Hey! Don't enter the woods alone.\\p",
+        "Hey! Don't enter the woods\\n",
+        "alone.\\p",
         "Wild POKéMON hide in tall grass.$",
     )),
     "LittlerootTown_Text_DangerousIfYouDontHavePokemon": (("Sem um POKéMON",), (

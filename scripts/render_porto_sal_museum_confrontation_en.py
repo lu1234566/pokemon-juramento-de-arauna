@@ -10,8 +10,8 @@ base.TARGETS.update({
     "SlateportCity_OceanicMuseum_2F_Text_ThankYouForTheParts": (
         "ENGINEER: These are the OCEANIC\\n",
         "PARTS we were waiting for!\\p",
-        "We can calibrate deep-sea sensors\\n",
-        "with them.$",
+        "We can calibrate deep-sea\\n",
+        "sensors with them.$",
     ),
     "SlateportCity_OceanicMuseum_2F_Text_WellTakeThoseParts": (
         "HORIZON: Stop there.\\p",
@@ -50,14 +50,16 @@ base.TARGETS.update({
     "SlateportCity_OceanicMuseum_2F_Text_CameToSeeWhatsTakingSoLong": (
         "OTACILIO: I came to see why the\\n",
         "team was taking so long.\\p",
-        "So you're the one who stopped them.$",
+        "So you're the one who stopped\\n",
+        "them.$",
     ),
     "SlateportCity_OceanicMuseum_2F_Text_ArchieWarning": (
         "OTACILIO: These parts could help\\n",
         "map the M'BOI caverns.\\p",
-        "But turning a MUSEUM into a forced\\n",
-        "operation is not care.\\p",
-        "Stand down. We'll find another way.$",
+        "But turning a MUSEUM into a\\n",
+        "forced operation is not care.\\p",
+        "Stand down. We'll find another\\n",
+        "way.$",
     ),
     "SlateportCity_OceanicMuseum_2F_Text_SternThankYouForSavingUs": (
         "ENGINEER: Thank you, {PLAYER}.\\p",

@@ -13,11 +13,11 @@ def patch(targets, label: str, payloads: tuple[str, ...]) -> None:
 
 # Queue outside the museum.
 patch(base.CITY_TARGETS, "SlateportCity_Text_WhatsLongLineOverThere", (
-    "MAN: What's happening over there?\\p",
+    "MAN: What's going on over there?\\p",
     "Look at that line.$",
 ))
 patch(base.CITY_TARGETS, "SlateportCity_Text_VisitedMuseumOften", (
-    "WOMAN: I came here often as a kid.\\p",
+    "WOMAN: I came here as a kid.\\p",
     "This museum taught me to love\\n",
     "the mysteries of the sea.$",
 ))
@@ -26,7 +26,7 @@ patch(base.CITY_TARGETS, "SlateportCity_Text_QuitPushing", (
     "The line starts here.$",
 ))
 patch(base.CITY_TARGETS, "SlateportCity_Text_AquaHasPolicy", (
-    "HORIZON: Orders say enter quietly.\\p",
+    "HORIZON: Orders say go quietly.\\p",
     "So yes, we're paying admission.$",
 ))
 patch(base.CITY_TARGETS, "SlateportCity_Text_BossIsBrilliant", (
@@ -104,11 +104,11 @@ patch(base.MUSEUM_TARGETS, "SlateportCity_OceanicMuseum_1F_Text_AquaExistForGood
     "But I paid, so I'll look around.$",
 ))
 patch(base.MUSEUM_TARGETS, "SlateportCity_OceanicMuseum_1F_Text_OurBossIsntHere", (
-    "HORIZON: OTACILIO isn't here yet.\\p",
+    "HORIZON: OTACILIO isn't here.\\p",
     "We were only meant to observe.$",
 ))
 patch(base.MUSEUM_TARGETS, "SlateportCity_OceanicMuseum_1F_Text_WouldStuffHereMakeMeRich", (
-    "HORIZON: Some equipment is costly.\\p",
+    "HORIZON: Some gear is costly.\\p",
     "No, we're not here to steal it.$",
 ))
 patch(base.MUSEUM_TARGETS, "SlateportCity_OceanicMuseum_1F_Text_CanLearnForNefariousDeeds", (
@@ -117,16 +117,16 @@ patch(base.MUSEUM_TARGETS, "SlateportCity_OceanicMuseum_1F_Text_CanLearnForNefar
     "Useful field knowledge.$",
 ))
 patch(base.MUSEUM_TARGETS, "SlateportCity_OceanicMuseum_1F_Text_RustboroBungled", (
-    "HORIZON: If the previous operation\\n",
+    "HORIZON: If the last operation\\n",
     "had worked, I wouldn't be here.$",
 ))
 patch(base.MUSEUM_TARGETS, "SlateportCity_OceanicMuseum_1F_Text_DidntHaveMoney", (
-    "HORIZON: I paid ¥50 like everyone.\\p",
+    "HORIZON: I paid ¥50 too.\\p",
     "Orders are orders.$",
 ))
 patch(base.MUSEUM_TARGETS, "SlateportCity_OceanicMuseum_1F_Text_LearnAboutSeaForBattling", (
     "VISITOR: I came to study the sea\\n",
-    "and understand my POKéMON better.$",
+    "and know my POKéMON better.$",
 ))
 patch(base.MUSEUM_TARGETS, "SlateportCity_OceanicMuseum_1F_Text_SternIsRoleModel", (
     "VISITOR: The HARBOR ENGINEER is\\n",

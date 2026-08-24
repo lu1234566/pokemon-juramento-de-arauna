@@ -82,7 +82,8 @@ ENGLISH: dict[str, tuple[str, ...]] = {
         "than in the lab.$",
     ),
     "PlayersHouse_1F_Text_YouShouldRestABit": (
-        "MOM: You look like you need rest.\\p",
+        "MOM: You look like you need\\n",
+        "rest.\\p",
         "Sleep a little before going\\n",
         "back on the road.$",
     ),
@@ -92,7 +93,7 @@ ENGLISH: dict[str, tuple[str, ...]] = {
     "PlayersHouse_1F_Text_GotDadsBadgeHeresSomethingFromMom": (
         "MOM: ELIAS gave you that BADGE?\\p",
         "Then take this too.\\p",
-        "This time, it's from your mother.$",
+        "This one is from your mother.$",
     ),
     "PlayersHouse_1F_Text_DontPushYourselfTooHard": (
         "You don't need to prove it all\\n",

@@ -33,7 +33,7 @@ patch(base.TARGETS_1F, "SlateportCity_OceanicMuseum_1F_Text_BeachSandDisplay", (
     "SAMPLE: COASTAL SAND\\p",
     "Stone travels down rivers and\\n",
     "wears away on the journey.\\p",
-    "The smallest grains form beaches.$",
+    "The finest grains form beaches.$",
 ))
 patch(base.TARGETS_1F, "SlateportCity_OceanicMuseum_1F_Text_OceanicMinifact1", (
     "OCEAN MINIFACT 1\\p",
@@ -89,8 +89,8 @@ patch(base.TARGETS_2F, "SlateportCity_OceanicMuseum_2F_Text_PressureExperiment",
 ))
 patch(base.TARGETS_2F, "SlateportCity_OceanicMuseum_2F_Text_HoennModel", (
     "MODEL OF ARAUNA\\p",
-    "A miniature shows cities, rivers,\\n",
-    "ridges and coastal routes.$",
+    "A miniature shows cities,\\n",
+    "rivers, ridges and routes.$",
 ))
 patch(base.TARGETS_2F, "SlateportCity_OceanicMuseum_2F_Text_DeepSeawaterDisplay", (
     "DEEP CURRENTS\\p",
@@ -124,12 +124,12 @@ patch(base.TARGETS_2F, "SlateportCity_OceanicMuseum_2F_Text_SSAnneReplica", (
     "that crossed whole oceans.$",
 ))
 patch(base.TARGETS_2F, "SlateportCity_OceanicMuseum_2F_Text_RemindsMeOfAbandonedShip", (
-    "VISITOR: That model reminds me of\\n",
-    "a ship stranded on the coast.$",
+    "VISITOR: That model reminds me\\n",
+    "of a ship stranded on the coast.$",
 ))
 patch(base.TARGETS_2F, "SlateportCity_OceanicMuseum_2F_Text_DontRunInMuseum", (
-    "VISITOR: No running in the MUSEUM,\\n",
-    "all right?$",
+    "VISITOR: No running in the\\n",
+    "MUSEUM, all right?$",
 ))
 patch(base.TARGETS_2F, "SlateportCity_OceanicMuseum_2F_Text_WantToRideSubmarine", (
     "VISITOR: I'd love to ride in a\\n",
