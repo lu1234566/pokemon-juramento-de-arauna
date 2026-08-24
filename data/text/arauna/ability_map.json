@@ -1,0 +1,232 @@
+{
+  "Alerta": {
+    "description": "Prevents sleep.",
+    "en": "Alert",
+    "slot": "ABILITY_INSOMNIA"
+  },
+  "Alma Antiga": {
+    "description": "Wears down the foe's PP.",
+    "en": "Old Soul",
+    "slot": "ABILITY_PRESSURE"
+  },
+  "Brincalhão": {
+    "description": "Moves only every two turns.",
+    "en": "Playful",
+    "slot": "ABILITY_TRUANT"
+  },
+  "Cara de Mau": {
+    "description": "Blocks critical hits.",
+    "en": "Grim Face",
+    "slot": "ABILITY_BATTLE_ARMOR"
+  },
+  "Chama": {
+    "description": "Ups FIRE moves in a pinch.",
+    "en": "Blaze",
+    "slot": "ABILITY_BLAZE"
+  },
+  "Colheita": {
+    "description": "May pick up items.",
+    "en": "Harvest",
+    "slot": "ABILITY_PICKUP"
+  },
+  "Coragem": {
+    "description": "Prevents flinching.",
+    "en": "Courage",
+    "slot": "ABILITY_INNER_FOCUS"
+  },
+  "Corpo Fedido": {
+    "description": "Helps repel wild POKéMON.",
+    "en": "Foul Body",
+    "slot": "ABILITY_STENCH"
+  },
+  "Corpo Flamejante": {
+    "description": "Contact may burn.",
+    "en": "Flame Body",
+    "slot": "ABILITY_FLAME_BODY"
+  },
+  "Corpo Metálico": {
+    "description": "Prevents stat reduction.",
+    "en": "Metal Body",
+    "slot": "ABILITY_CLEAR_BODY"
+  },
+  "Corpo Molhado": {
+    "description": "Prevents burns.",
+    "en": "Wet Body",
+    "slot": "ABILITY_WATER_VEIL"
+  },
+  "Corpo Rochoso": {
+    "description": "Prevents recoil damage.",
+    "en": "Rock Body",
+    "slot": "ABILITY_ROCK_HEAD"
+  },
+  "Corpo Seco": {
+    "description": "Prevents poisoning.",
+    "en": "Dry Body",
+    "slot": "ABILITY_IMMUNITY"
+  },
+  "Corredor": {
+    "description": "Makes escaping easier.",
+    "en": "Runner",
+    "slot": "ABILITY_RUN_AWAY"
+  },
+  "Determinação": {
+    "description": "Ups ATTACK if suffering.",
+    "en": "Guts",
+    "slot": "ABILITY_GUTS"
+  },
+  "Encanto": {
+    "description": "Contact may cause love.",
+    "en": "Charm",
+    "slot": "ABILITY_CUTE_CHARM"
+  },
+  "Enxame": {
+    "description": "Ups BUG moves in a pinch.",
+    "en": "Swarm",
+    "slot": "ABILITY_SWARM"
+  },
+  "Escama Dracônica": {
+    "description": "Ups DEFENSE if suffering.",
+    "en": "DragonScale",
+    "slot": "ABILITY_MARVEL_SCALE"
+  },
+  "Escavador": {
+    "description": "Prevents the foe's escape.",
+    "en": "Digger",
+    "slot": "ABILITY_ARENA_TRAP"
+  },
+  "Espessura": {
+    "description": "Ups GRASS moves in a pinch.",
+    "en": "Overgrow",
+    "slot": "ABILITY_OVERGROW"
+  },
+  "Estática": {
+    "description": "Contact may paralyze.",
+    "en": "Static",
+    "slot": "ABILITY_STATIC"
+  },
+  "Faro": {
+    "description": "Encounters POKéMON easier.",
+    "en": "Scent",
+    "slot": "ABILITY_ILLUMINATE"
+  },
+  "Faro Fiel": {
+    "description": "Prevents sleep.",
+    "en": "Faithful",
+    "slot": "ABILITY_VITAL_SPIRIT"
+  },
+  "Fuga": {
+    "description": "Prevents paralysis.",
+    "en": "Escape",
+    "slot": "ABILITY_LIMBER"
+  },
+  "Fura-mão": {
+    "description": "Hurts to touch.",
+    "en": "Piercer",
+    "slot": "ABILITY_ROUGH_SKIN"
+  },
+  "Garra Dura": {
+    "description": "Blocks critical hits.",
+    "en": "Hard Claw",
+    "slot": "ABILITY_SHELL_ARMOR"
+  },
+  "Intimidação": {
+    "description": "Lowers the foe's ATTACK.",
+    "en": "Intimidate",
+    "slot": "ABILITY_INTIMIDATE"
+  },
+  "Levitação": {
+    "description": "Gives immunity to GROUND.",
+    "en": "Levitate",
+    "slot": "ABILITY_LEVITATE"
+  },
+  "Motor Elétrico": {
+    "description": "Turns ELECTRIC into health.",
+    "en": "Motor Drive",
+    "slot": "ABILITY_VOLT_ABSORB"
+  },
+  "Muda": {
+    "description": "Heals the body by shedding.",
+    "en": "Shed",
+    "slot": "ABILITY_SHED_SKIN"
+  },
+  "Nuvem de Areia": {
+    "description": "Summons a sandstorm.",
+    "en": "Sand Cloud",
+    "slot": "ABILITY_SAND_STREAM"
+  },
+  "Olho Composto": {
+    "description": "Raises accuracy.",
+    "en": "Compound Eye",
+    "slot": "ABILITY_COMPOUND_EYES"
+  },
+  "Placidez": {
+    "description": "Prevents confusion.",
+    "en": "Placid",
+    "slot": "ABILITY_OWN_TEMPO"
+  },
+  "Poeira": {
+    "description": "Ups evasion in a sandstorm.",
+    "en": "Dust Cloud",
+    "slot": "ABILITY_SAND_VEIL"
+  },
+  "Ponto Cego": {
+    "description": "Blocks added effects.",
+    "en": "Blind Spot",
+    "slot": "ABILITY_SHIELD_DUST"
+  },
+  "Ponto Fraco": {
+    "description": "Trades accuracy for power.",
+    "en": "Weak Spot",
+    "slot": "ABILITY_HUSTLE"
+  },
+  "Presságio": {
+    "description": "Ups added effect chance.",
+    "en": "Omen",
+    "slot": "ABILITY_SERENE_GRACE"
+  },
+  "Rasgo Rápido": {
+    "description": "Prevents ATTACK reduction.",
+    "en": "Quick Tear",
+    "slot": "ABILITY_HYPER_CUTTER"
+  },
+  "Ritmo": {
+    "description": "Gradually boosts SPEED.",
+    "en": "Rhythm",
+    "slot": "ABILITY_SPEED_BOOST"
+  },
+  "Sincronia": {
+    "description": "Passes on status problems.",
+    "en": "Synchronize",
+    "slot": "ABILITY_SYNCHRONIZE"
+  },
+  "Torrente": {
+    "description": "Ups WATER moves in a pinch.",
+    "en": "Torrent",
+    "slot": "ABILITY_TORRENT"
+  },
+  "Travessura": {
+    "description": "Prevents item theft.",
+    "en": "Mischief",
+    "slot": "ABILITY_STICKY_HOLD"
+  },
+  "Vento Veloz": {
+    "description": "Ups SPEED in rain.",
+    "en": "Swift Wind",
+    "slot": "ABILITY_SWIFT_SWIM"
+  },
+  "Vista Aguçada": {
+    "description": "Prevents loss of accuracy.",
+    "en": "Keen Eye",
+    "slot": "ABILITY_KEEN_EYE"
+  },
+  "Véu Mágico": {
+    "description": "Heals upon switching out.",
+    "en": "Magic Veil",
+    "slot": "ABILITY_NATURAL_CURE"
+  },
+  "Véu Vegetal": {
+    "description": "Ups SPEED in sunshine.",
+    "en": "Leaf Veil",
+    "slot": "ABILITY_CHLOROPHYLL"
+  }
+}
