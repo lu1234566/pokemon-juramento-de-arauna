@@ -142,7 +142,9 @@ def render_item_descs(source: str) -> str:
     matches = list(ITEM_DESC_RE.finditer(source))
     if len(matches) != 1:
         raise ValueError(f"expected one sDevonScopeDesc block, found {len(matches)}")
-    return ITEM_DESC_RE.sub(ITEM_DESC_NEW, source, count=1)
+    # re.sub expands escapes in the replacement, which would turn the \n
+    # inside the description into a real newline and break the C string.
+    return ITEM_DESC_RE.sub(lambda _match: ITEM_DESC_NEW, source, count=1)
 
 
 def validate_rendered(map_text: str, items: str, descs: str) -> None:

@@ -38,6 +38,11 @@ NAMES = {
     "MAPSEC_SEAFLOOR_CAVERN": "CAVERNAS M'BOI",
     "MAPSEC_VICTORY_ROAD": "ESTR. JURAMENTO",
     "MAPSEC_SKY_PILLAR": "TORRE JURAMENTO",
+    # These three already have a canon name on another visible surface, so the
+    # region map was contradicting the landmark bar and the M'BOI menu.
+    "MAPSEC_AQUA_HIDEOUT": "ARQUIVO CENTRAL",   # matches MAPSEC_AQUA_HIDEOUT_OLD
+    "MAPSEC_NEW_MAUVILLE": "OLD POWER RELAY",   # matches LandmarkName_NewMauville
+    "MAPSEC_CAVE_OF_ORIGIN": "M'BOI CORE",      # matches sText_AraunaMboiCore
 }
 
 

@@ -90,6 +90,12 @@ ELF := $(ROM:.gba=.elf)
 MAP := $(ROM:.gba=.map)
 SYM := $(ROM:.gba=.sym)
 
+# The link step runs from inside $(OBJ_DIR), so paths back to the repo root
+# depend on how deep that directory is. Deriving it keeps a custom BUILD_DIR
+# (build/arauna-en, giving build/arauna-en/modern) working instead of assuming
+# the default two levels.
+OBJ_DIR_UP := $(shell echo '$(OBJ_DIR)' | sed 's|/*$$||; s|[^/][^/]*|..|g')
+
 # Commonly used directories
 C_SUBDIR = src
 ASM_SUBDIR = asm
@@ -117,8 +123,8 @@ ifeq ($(MODERN),0)
   CPPFLAGS += -I tools/agbcc/include -I tools/agbcc -nostdinc -undef -std=gnu89
   CC1 := tools/agbcc/bin/agbcc$(EXE)
   override CFLAGS += -mthumb-interwork -Wimplicit -Wparentheses -Werror -O$(O_LEVEL) -fhex-asm -g
-  LIBPATH := -L ../../tools/agbcc/lib
-  LIB := $(LIBPATH) -lgcc -lc -L../../libagbsyscall -lagbsyscall
+  LIBPATH := -L $(OBJ_DIR_UP)/tools/agbcc/lib
+  LIB := $(LIBPATH) -lgcc -lc -L$(OBJ_DIR_UP)/libagbsyscall -lagbsyscall
 else
   # Note: The makefile must be set up to not call these if modern == 0
   MODERNCC := $(PREFIX)gcc
@@ -126,7 +132,7 @@ else
   CC1 := $(shell $(PATH_MODERNCC) --print-prog-name=cc1) -quiet
   override CFLAGS += -mthumb -mthumb-interwork -O$(O_LEVEL) -mabi=apcs-gnu -mtune=arm7tdmi -march=armv4t -fno-toplevel-reorder -Wno-pointer-to-int-cast
   LIBPATH := -L "$(dir $(shell $(PATH_MODERNCC) -mthumb -print-file-name=libgcc.a))" -L "$(dir $(shell $(PATH_MODERNCC) -mthumb -print-file-name=libnosys.a))" -L "$(dir $(shell $(PATH_MODERNCC) -mthumb -print-file-name=libc.a))"
-  LIB := $(LIBPATH) -lc -lnosys -lgcc -L../../libagbsyscall -lagbsyscall
+  LIB := $(LIBPATH) -lc -lnosys -lgcc -L$(OBJ_DIR_UP)/libagbsyscall -lagbsyscall
 endif
 # Enable debug info if set
 ifeq ($(DINFO),1)
@@ -373,10 +379,10 @@ libagbsyscall:
 	@$(MAKE) -C libagbsyscall TOOLCHAIN=$(TOOLCHAIN) MODERN=$(MODERN)
 
 # Elf from object files
-LDFLAGS = -Map ../../$(MAP)
+LDFLAGS = -Map $(OBJ_DIR_UP)/$(MAP)
 $(ELF): $(LD_SCRIPT) $(LD_SCRIPT_DEPS) $(OBJS) libagbsyscall
-	@cd $(OBJ_DIR) && $(LD) $(LDFLAGS) -T ../../$< --print-memory-usage -o ../../$@ $(OBJS_REL) $(LIB) | cat
-	@echo "cd $(OBJ_DIR) && $(LD) $(LDFLAGS) -T ../../$< --print-memory-usage -o ../../$@ <objs> <libs> | cat"
+	@cd $(OBJ_DIR) && $(LD) $(LDFLAGS) -T $(OBJ_DIR_UP)/$< --print-memory-usage -o $(OBJ_DIR_UP)/$@ $(OBJS_REL) $(LIB) | cat
+	@echo "cd $(OBJ_DIR) && $(LD) $(LDFLAGS) -T $(OBJ_DIR_UP)/$< --print-memory-usage -o $(OBJ_DIR_UP)/$@ <objs> <libs> | cat"
 	$(FIX) $@ -t"$(TITLE)" -c$(GAME_CODE) -m$(MAKER_CODE) -r$(REVISION) --silent
 
 # Builds the rom from the elf file
