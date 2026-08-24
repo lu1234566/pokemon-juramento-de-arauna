@@ -1,0 +1,1546 @@
+{
+ "1": {
+  "category": "STRAY",
+  "text": "A street pup with caramel fur. Once it trusts its trainer, the tip of its tail lights a small steady flame that never burns the hand that pets it."
+ },
+ "2": {
+  "category": "GUARDIAN",
+  "text": "Guardian of the open-air markets. Embers freckle its back, and it keeps them like fleas that bite only thieves."
+ },
+ "3": {
+  "category": "DOG DRAGON",
+  "text": "Legend says every caramel dog that saved a life returns as one of these. Its turquoise fire warms but never harms the innocent."
+ },
+ "4": {
+  "category": "SENTINEL",
+  "text": "It never fully sleeps. One eye stays open over the nest, and its cry carries for kilometres."
+ },
+ "5": {
+  "category": "WATCHER",
+  "text": "After its first moult the feathers become iridescent dragonfly membranes. It hovers over water, hunting with surgical aim."
+ },
+ "6": {
+  "category": "SENTINEL",
+  "text": "Four dragonfly wings carry a lean adult body. One beat throws a jet of water that splits tree trunks."
+ },
+ "7": {
+  "category": "HAMMERER",
+  "text": "It drills bark for grubs with a beak still soft. It trains all day on dry stumps and comes home with a headache."
+ },
+ "8": {
+  "category": "HAMMERER",
+  "text": "Its beak hardens into ironwood. It drums trunks in complex rhythms other of its kind read as messages."
+ },
+ "9": {
+  "category": "SCULPTOR",
+  "text": "Its beak has calcified into a granite wedge. It carves caves out of rock walls with blows that ring like bells."
+ },
+ "10": {
+  "category": "ANT SWARM",
+  "text": "Not one ant but a whole colony walking in the shape of a giant one. It scatters when threatened."
+ },
+ "11": {
+  "category": "QUEEN",
+  "text": "Queen of the leafcutters. She commands armies that strip whole trees bare in a single night."
+ },
+ "12": {
+  "category": "IDLER",
+  "text": "It lives in riverside herds and lets anything ride on its back, tired trainers included."
+ },
+ "13": {
+  "category": "FRUIT EATER",
+  "text": "Its huge beak is hollow and light. It swallows fruit whole and spits the seed 40 metres. It plants forests alone."
+ },
+ "14": {
+  "category": "PRANKSTER",
+  "text": "It steals anything that shines. Trainers learn early to keep their badges at the bottom of the bag."
+ },
+ "15": {
+  "category": "SHAMAN",
+  "text": "Elder of its troop. It reads the future in river reflections and calls rain a week ahead."
+ },
+ "16": {
+  "category": "FIRE SNAKE",
+  "text": "It appears after wildfires. Its body is a serpent of blue flame that devours whoever sets the forest alight."
+ },
+ "17": {
+  "category": "GUARDIAN",
+  "text": "Its feet point backwards. It confuses hunters by leaving tracks that lead deeper into the woods."
+ },
+ "18": {
+  "category": "GUARDIAN",
+  "text": "The true lord of the forest. Where it steps, a century-old tree sprouts in a single night."
+ },
+ "19": {
+  "category": "SIREN",
+  "text": "It charms fishermen with a song. Whoever follows it into the river joins its court forever."
+ },
+ "20": {
+  "category": "PRANKSTER",
+  "text": "It has only one leg and travels inside whirlwinds. It delights in dousing campfires and freeing caught POKéMON."
+ },
+ "21": {
+  "category": "CACTUS",
+  "text": "It survives months without rain. Its spines hold drops of sweet venom that draw BUG POKéMON in."
+ },
+ "22": {
+  "category": "STINGER",
+  "text": "Whole swarms chase trainers for days. The only escape is a river, and hoping nothing worse waits there."
+ },
+ "23": {
+  "category": "HUNTER",
+  "text": "The jaguar of the region. It hunts in total silence, and trainers notice only once they are already down."
+ },
+ "24": {
+  "category": "ANTEATER",
+  "text": "Its claws cut steel. It laps up whole colonies, but avoids the queens; it lost its tongue to one once."
+ },
+ "25": {
+  "category": "DOLPHIN",
+  "text": "Born grey, it turns pink as it gains confidence. It plays with bubbles it blows itself."
+ },
+ "26": {
+  "category": "DOLPHIN",
+  "text": "It travels in pods after dark. Folklore says it becomes a young man at riverside dances."
+ },
+ "27": {
+  "category": "ENCHANTED",
+  "text": "A white hat hides the blowhole on its head. It charms girls and vanishes into the river at dawn."
+ },
+ "28": {
+  "category": "BALL",
+  "text": "It curls into a ball the size of an orange and rolls downhill to escape."
+ },
+ "29": {
+  "category": "FORTRESS",
+  "text": "Its shell turns to steel when threatened, bouncing physical attacks back."
+ },
+ "30": {
+  "category": "DIGGER",
+  "text": "It digs twenty metres of tunnel a night. Whole villages have sunk into its galleries."
+ },
+ "31": {
+  "category": "PARROT",
+  "text": "It mimics any sound it hears, including trainers yelling as they fall down the bank."
+ },
+ "32": {
+  "category": "SCORCHED",
+  "text": "Its red feathers throw sparks when it beats its wings hard."
+ },
+ "33": {
+  "category": "FLAMING",
+  "text": "It flies among the savanna clouds. The feathers it drops set the dry grass alight."
+ },
+ "34": {
+  "category": "REPTILE",
+  "text": "It floats with only its eyes above water, passing for a drifting log."
+ },
+ "35": {
+  "category": "AMBUSHER",
+  "text": "It waits for hours without moving, then drags its prey under in a single roll."
+ },
+ "36": {
+  "category": "ANCESTRAL",
+  "text": "A direct descendant of the dinosaurs. Its jaws crack armoured shells."
+ },
+ "37": {
+  "category": "SLOW ONE",
+  "text": "It moves so slowly that moss grows in its fur and insects move in."
+ },
+ "38": {
+  "category": "DREAMER",
+  "text": "It sleeps twenty hours a day and foresees rain weeks ahead in its dreams."
+ },
+ "39": {
+  "category": "SHAMAN",
+  "text": "The size of an elephant. It walks once a moon and knows where every old tree will rise."
+ },
+ "40": {
+  "category": "TALKER",
+  "text": "It learns to repeat words in three days, and swearing in one afternoon."
+ },
+ "41": {
+  "category": "TALKER",
+  "text": "It memorises whole conversations and repeats them to the wrong people."
+ },
+ "42": {
+  "category": "COUNSELLOR",
+  "text": "It lives 200 years, holding the secrets of generations of trainers in memory."
+ },
+ "43": {
+  "category": "CHEEKY",
+  "text": "Striped like a small boar. Its short trunk smells fruit 100 metres off."
+ },
+ "44": {
+  "category": "SWIMMER",
+  "text": "It crosses whole rivers submerged and eats forty kilos of leaves a day."
+ },
+ "45": {
+  "category": "SPIRIT",
+  "text": "Spirit of the forest. It guides lost trainers back to the treeline."
+ },
+ "46": {
+  "category": "SERPENT",
+  "text": "It is born two metres long and coils in branches waiting for prey."
+ },
+ "47": {
+  "category": "CONSTRICTOR",
+  "text": "It smothers its prey and swallows it whole, growing on river legends for years."
+ },
+ "48": {
+  "category": "GREAT SNAKE",
+  "text": "The Great Snake of Amazonian myth. Its eyes shine like boat lamps on a dark creek, and legend says its passing carves new rivers."
+ },
+ "49": {
+  "category": "CATERPILLAR",
+  "text": "It eats nettle leaves without being poisoned, storing the venom in its skin."
+ },
+ "50": {
+  "category": "COCOON",
+  "text": "An iridescent cocoon that mirrors the blue of the sky. It cannot move, but it shocks anything that touches it."
+ },
+ "51": {
+  "category": "IRIDESCENT",
+  "text": "Its wings are the size of human hands. The blue scales become a healing dust."
+ },
+ "52": {
+  "category": "LONG LEGS",
+  "text": "Its legs are absurdly long. It gallops across the savanna after fruit."
+ },
+ "53": {
+  "category": "SAVANNA",
+  "text": "It howls at dusk. It eats a sweet wolf-fruit and plants the forest with its droppings."
+ },
+ "54": {
+  "category": "SPIRIT",
+  "text": "It appears on moonless nights, and its paws leave prints of live coal."
+ },
+ "55": {
+  "category": "GENTLE",
+  "text": "It swims slowly at its mother's side and cries like an infant when it gets lost."
+ },
+ "56": {
+  "category": "GENTLE",
+  "text": "A peaceful herbivore. It eats fifty kilos of water plants a day."
+ },
+ "57": {
+  "category": "GUARDIAN",
+  "text": "Protector of the rivers. Folklore says she nursed children who were lost."
+ },
+ "58": {
+  "category": "WHISKERS",
+  "text": "Its whiskers hunt for food in the mud below. It is nearly blind."
+ },
+ "59": {
+  "category": "STINGER",
+  "text": "Venomous spines line its fins. One prick costs you days of sleep."
+ },
+ "60": {
+  "category": "DEVOURER",
+  "text": "As long as a man is tall. It swims in the absolute dark of the riverbed."
+ },
+ "61": {
+  "category": "PRANKSTER",
+  "text": "It learns to use branches as tools while still young, and robs camps for food."
+ },
+ "62": {
+  "category": "TOOLMAKER",
+  "text": "It cracks nuts with stones and has taught the technique to its young for generations."
+ },
+ "63": {
+  "category": "SAGE",
+  "text": "Held to be the cleverest primate in Arauna. It solves puzzles built for humans."
+ },
+ "64": {
+  "category": "SPINNER",
+  "text": "It weaves webs in dry branches and eats the smaller ants."
+ },
+ "65": {
+  "category": "HAIRY",
+  "text": "Its stinging hairs cause an unbearable itch on contact."
+ },
+ "66": {
+  "category": "HAIRY",
+  "text": "The size of a dinner plate. Its fangs go through leather gloves."
+ },
+ "67": {
+  "category": "MEWLER",
+  "text": "It mews like a house cat but lets nobody near it."
+ },
+ "68": {
+  "category": "STEALTHY",
+  "text": "It hunts birds in the dead of night. Its eyes flash green in torchlight."
+ },
+ "69": {
+  "category": "SPOTTED",
+  "text": "Rosettes like a jaguar in miniature. It climbs trees after monkeys."
+ },
+ "70": {
+  "category": "RODENT",
+  "text": "It buries nuts and forgets where. It plants the forest by accident."
+ },
+ "71": {
+  "category": "RODENT",
+  "text": "It gnaws anything. Its teeth grow for its whole life."
+ },
+ "72": {
+  "category": "NOCTURNAL",
+  "text": "It comes out only at night, running and whistling through the dark woods."
+ },
+ "73": {
+  "category": "MANDIBLE",
+  "text": "Its bite hurts like a full day of cramp. The locals call it the bullet ant."
+ },
+ "74": {
+  "category": "STINGER",
+  "text": "An aggressive swarm. It chases a threat for kilometres."
+ },
+ "75": {
+  "category": "HONEY",
+  "text": "It has no sting. Its sweet honey is used to bring hurt POKéMON round."
+ },
+ "76": {
+  "category": "LONG SNOUT",
+  "text": "Bands of fifteen walk the trails, digging through packs for biscuits."
+ },
+ "77": {
+  "category": "THIEF",
+  "text": "It has learned to open tent zips and steals anything that shines."
+ },
+ "78": {
+  "category": "CAVE",
+  "text": "It lives in dark caves, its very long snout built for hunting bats."
+ },
+ "79": {
+  "category": "FOUL",
+  "text": "It releases a sickening smell when threatened. Trainers flee before it does."
+ },
+ "80": {
+  "category": "MEPHITIC",
+  "text": "Its spray of stench carries three metres and lasts weeks in clothing."
+ },
+ "81": {
+  "category": "FAKER",
+  "text": "It plays dead for hours when threatened. It has fooled even the jaguars."
+ },
+ "82": {
+  "category": "BEAKED",
+  "text": "Its coloured beak calls to females from far off. It eats wild fruit."
+ },
+ "83": {
+  "category": "BEAKED",
+  "text": "It flies in bands of six, all feeding from the same fruit at once."
+ },
+ "84": {
+  "category": "ALARM",
+  "text": "Its shrill cry greets the dawn. Every farm in Arauna resents it."
+ },
+ "85": {
+  "category": "TADPOLE",
+  "text": "It swims in shoals and changes once its legs come in."
+ },
+ "86": {
+  "category": "TOAD",
+  "text": "Glands behind its eyes ooze a white venom. Never lick one."
+ },
+ "87": {
+  "category": "TOAD",
+  "text": "The size of a football. It eats biting flies by the thousand."
+ },
+ "88": {
+  "category": "LIZARD",
+  "text": "It runs on two legs when startled, dropping its tail to throw off pursuit."
+ },
+ "89": {
+  "category": "LIZARD",
+  "text": "It eats anything: fruit, eggs, small animals, even venomous snakes."
+ },
+ "90": {
+  "category": "CHAMELEON",
+  "text": "It shifts colour to match its surroundings, and its mood shifts as fast."
+ },
+ "91": {
+  "category": "NOCTURNAL",
+  "text": "It sleeps upside down, gripping the roof of the cave."
+ },
+ "92": {
+  "category": "ECHOLOCATOR",
+  "text": "It sees with sound, flying in total darkness without touching a thing."
+ },
+ "93": {
+  "category": "VAMPIRE",
+  "text": "It drinks from sleeping mammals. Long company leaves its keeper anaemic."
+ },
+ "94": {
+  "category": "ONE LEG",
+  "text": "It stands on a single leg most of the time and topples in a strong wind."
+ },
+ "95": {
+  "category": "STORK",
+  "text": "The great bird of the wetlands. Its huge bill takes a fish in one stab."
+ },
+ "96": {
+  "category": "SPOONBILL",
+  "text": "Pink from a diet of shellfish. Its bill is shaped like a spoon."
+ },
+ "97": {
+  "category": "FOAL",
+  "text": "An innocent foal. Nothing about it hints at what it becomes."
+ },
+ "98": {
+  "category": "RUNNER",
+  "text": "It gallops faster than a horse, and its bray is frightening."
+ },
+ "99": {
+  "category": "CURSED",
+  "text": "Fire pours from its neck where a head should be. It walks on Fridays."
+ },
+ "100": {
+  "category": "MOUNTAIN",
+  "text": "The spirit of an entire mountain. Forest breathes on its back."
+ },
+ "101": {
+  "category": "DEER",
+  "text": "Its pointed antlers are still growing. It clears bushes with ease."
+ },
+ "102": {
+  "category": "DEER",
+  "text": "Its antlers branch with age. It eats cactus without hurting itself."
+ },
+ "103": {
+  "category": "DEER",
+  "text": "Antlers so wide it must lift its head to pass through the woods."
+ },
+ "104": {
+  "category": "AQUATIC",
+  "text": "A water spirit in human shape. It swims like a fish."
+ },
+ "105": {
+  "category": "AQUATIC",
+  "text": "It pulls canoes under when fishermen disrespect the river."
+ },
+ "106": {
+  "category": "BANDIT",
+  "text": "A bird that robs the rich and feeds the poor, or so the backlands say."
+ },
+ "107": {
+  "category": "THUNDER",
+  "text": "It commands lightning. Its twin-bladed axe throws sparks as it falls."
+ },
+ "108": {
+  "category": "SEA MOTHER",
+  "text": "Goddess of the oceans. Her daughters follow her in procession."
+ },
+ "109": {
+  "category": "QUEEN",
+  "text": "Queen of the fresh waters. Her hair of wet gold runs on forever."
+ },
+ "110": {
+  "category": "WARRIOR",
+  "text": "The divine smith. He forged blades that cut the souls of wrongdoers."
+ },
+ "111": {
+  "category": "RUNNER",
+  "text": "Its long mane streams in the wind. It learns to gallop in a week."
+ },
+ "112": {
+  "category": "RUNNER",
+  "text": "It runs at 60 km/h for hours. The herders of Arauna tamed it."
+ },
+ "113": {
+  "category": "OX",
+  "text": "The great hump already shows in the calf, which is still unsure on its feet."
+ },
+ "114": {
+  "category": "OX",
+  "text": "Its huge hump lets it bear the savanna heat without tiring."
+ },
+ "115": {
+  "category": "WOOL",
+  "text": "Thick wool against the highland cold. Extremely docile."
+ },
+ "116": {
+  "category": "GOAT",
+  "text": "It climbs impossible slopes and eats dry branches."
+ },
+ "117": {
+  "category": "RATTLE",
+  "text": "The rattle on its tail is still small. It learns to sound it slowly."
+ },
+ "118": {
+  "category": "RATTLE",
+  "text": "Its neurotoxin is already at full strength, and the rattle warns predators off."
+ },
+ "119": {
+  "category": "RATTLE",
+  "text": "One bite paralyses even a jaguar. The rattle carries 100 metres."
+ },
+ "120": {
+  "category": "AMBUSHER",
+  "text": "It hides among fallen leaves and gives no warning before it strikes."
+ },
+ "121": {
+  "category": "GIANT",
+  "text": "Born at 30 cm, it grows a metre a year in a well-fed river."
+ },
+ "122": {
+  "category": "GIANT",
+  "text": "Up to three metres long. It breathes surface air like a mammal."
+ },
+ "123": {
+  "category": "DEVOURER",
+  "text": "It attacks in shoals, stripping a cow to the bone in minutes."
+ },
+ "124": {
+  "category": "FRUIT EATER",
+  "text": "It eats fruit falling into the flooded forest, grinding seeds with its teeth."
+ },
+ "125": {
+  "category": "LEAPER",
+  "text": "It leaps two metres clear of the water to take insects off branches."
+ },
+ "126": {
+  "category": "SHOCK",
+  "text": "It discharges 600 volts, paralysing anything that touches the water."
+ },
+ "127": {
+  "category": "SHOAL",
+  "text": "It swims in vast shoals, migrating upriver to spawn."
+ },
+ "128": {
+  "category": "AMBUSHER",
+  "text": "It waits among sunken leaves. Its sharp teeth lock onto prey."
+ },
+ "129": {
+  "category": "FIGHTER",
+  "text": "It leaps up waterfalls. Its golden scales shine like coins."
+ },
+ "130": {
+  "category": "TERRITORIAL",
+  "text": "The eyespot on its tail wards off predators. It attacks anything entering its water."
+ },
+ "131": {
+  "category": "FRUIT EATER",
+  "text": "Human-looking teeth grind nuts. Swimmers find it unsettling."
+ },
+ "132": {
+  "category": "SHOAL",
+  "text": "Dark shoals slide through the rapids. A popular sporting catch."
+ },
+ "133": {
+  "category": "SHOAL",
+  "text": "Gold stripes run down its sides. It eats whatever falls in."
+ },
+ "134": {
+  "category": "PLATED",
+  "text": "Hard plates cover its body. It scrapes algae from the glass."
+ },
+ "135": {
+  "category": "DISC",
+  "text": "A brightly coloured disc. It raises its young on mucus from its own skin."
+ },
+ "136": {
+  "category": "LANTERN",
+  "text": "Its tail lights only when it is frightened, showing paths through the woods."
+ },
+ "137": {
+  "category": "LANTERN",
+  "text": "Coded flashes call to females. It lights five metres around it."
+ },
+ "138": {
+  "category": "SINGER",
+  "text": "It lives seven years underground before it takes its adult form."
+ },
+ "139": {
+  "category": "SINGER",
+  "text": "Its song reaches 100 decibels. It is the sound of summer in Arauna."
+ },
+ "140": {
+  "category": "SCYTHE",
+  "text": "Its scythes are still small but already sharp. It eats ants."
+ },
+ "141": {
+  "category": "SCYTHE",
+  "text": "It prays before beheading its prey. The female eats the male after mating."
+ },
+ "142": {
+  "category": "STINGER",
+  "text": "A translucent sting on its tail. One prick costs you a night's sleep."
+ },
+ "143": {
+  "category": "STINGER",
+  "text": "Its claws crush beetles. Its sting can drop a full-grown horse."
+ },
+ "144": {
+  "category": "SHELL",
+  "text": "A spiral shell marked with folk patterns. It eats greens from the bank."
+ },
+ "145": {
+  "category": "SEGMENTED",
+  "text": "It rolls into a ball when threatened, giving off a bitter almond smell."
+ },
+ "146": {
+  "category": "RESILIENT",
+  "text": "It survives anything: radiation, poison, a thrown sandal."
+ },
+ "147": {
+  "category": "LEAPER",
+  "text": "It jumps thirty times its own length and plays music with its legs."
+ },
+ "148": {
+  "category": "SINGER",
+  "text": "Its song runs all night without a break, and announces rain."
+ },
+ "149": {
+  "category": "STRIKER",
+  "text": "It raises its front legs before it strikes. Its venom attacks the nerves."
+ },
+ "150": {
+  "category": "HUNTER",
+  "text": "It hunts spiders the size of hands and drags them back to the nest."
+ },
+ "151": {
+  "category": "STINGER",
+  "text": "Its sting hurts for hours. It builds mud nests under roof tiles."
+ },
+ "152": {
+  "category": "GNAWER",
+  "text": "It eats furniture from the inside. You only notice when it collapses."
+ },
+ "153": {
+  "category": "QUEEN",
+  "text": "She lives thirty years laying without pause. The mound grows around her."
+ },
+ "154": {
+  "category": "SOLDIER",
+  "text": "Its huge jaws guard the queen. It does not feed, only fight."
+ },
+ "155": {
+  "category": "MARCHER",
+  "text": "It marches in single file for kilometres, devouring all in its path."
+ },
+ "156": {
+  "category": "HUMMINGBIRD",
+  "text": "It beats its wings eighty times a second and flies backwards or upside down."
+ },
+ "157": {
+  "category": "SINGER",
+  "text": "Its song is held the finest in the land, and it announces the spring."
+ },
+ "158": {
+  "category": "BUSYBODY",
+  "text": "It shouts its own name, telling the whole yard whatever it has seen."
+ },
+ "159": {
+  "category": "CAMOUFLAGE",
+  "text": "It poses as a dead branch. Its mournful night call unsettles travellers."
+ },
+ "160": {
+  "category": "RAPTOR",
+  "text": "It eats snakes, rats and even small lambs. A symbol of the backlands."
+ },
+ "161": {
+  "category": "EAGLE",
+  "text": "The largest bird of prey in the Americas. It takes monkeys and sloths."
+ },
+ "162": {
+  "category": "SCAVENGER",
+  "text": "It eats any rotting meat, and keeps the fields clean."
+ },
+ "163": {
+  "category": "OWL",
+  "text": "Its eyes turn 270 degrees. It sees in total darkness."
+ },
+ "164": {
+  "category": "OWL",
+  "text": "It nests in burrows in the savanna floor and flies in complete silence."
+ },
+ "165": {
+  "category": "STORK",
+  "text": "It flies in flocks of hundreds, spearing fish with a bill like a sword."
+ },
+ "166": {
+  "category": "RUNNER",
+  "text": "The largest bird in the land. It flees at 60 km/h."
+ },
+ "167": {
+  "category": "LONG LEGS",
+  "text": "It beats venomous snakes against the ground until they die, then eats."
+ },
+ "168": {
+  "category": "FLOCK",
+  "text": "It lives in noisy bands, eating ticks off the backs of cattle."
+ },
+ "169": {
+  "category": "SINGER",
+  "text": "Its song carries so strongly that trainers compete over its tone."
+ },
+ "170": {
+  "category": "SINGER",
+  "text": "An elaborate song full of trills. The most prized bird in singing contests."
+ },
+ "171": {
+  "category": "BLUE ONE",
+  "text": "A glittering blue that catches the sun. It eats fruit in gardens."
+ },
+ "172": {
+  "category": "ANT EATER",
+  "text": "It eats army ants and nothing else, following the swarms for days."
+ },
+ "173": {
+  "category": "SHADOW",
+  "text": "It lives in the low shade, startling butterflies with a beat of its wings."
+ },
+ "174": {
+  "category": "NOCTURNAL",
+  "text": "It flies low after insects, its huge mouth opening in mid-air."
+ },
+ "175": {
+  "category": "MASON",
+  "text": "It builds a mud nest shaped like an oven, a fixture of country yards."
+ },
+ "176": {
+  "category": "SEED",
+  "text": "A great-tree seed that has learned to walk on two roots."
+ },
+ "177": {
+  "category": "SPROUT",
+  "text": "A sapling with sun-catching leaves. It waters itself in the rain."
+ },
+ "178": {
+  "category": "TREE",
+  "text": "A walking century-old tree. It stands still far more than it moves."
+ },
+ "179": {
+  "category": "BROMELIAD",
+  "text": "A natural cup that gathers rainwater. Frogs live inside it all year round."
+ },
+ "180": {
+  "category": "FLOWER",
+  "text": "Its petals shimmer in every colour at once. The scent draws pollinators from kilometres away."
+ },
+ "181": {
+  "category": "LILY PAD",
+  "text": "Its leaf is as wide as a double bed. It can hold a standing child without sinking."
+ },
+ "182": {
+  "category": "BLOSSOM",
+  "text": "It drops every leaf, then blooms bright yellow in the middle of the dry winter."
+ },
+ "183": {
+  "category": "VINE",
+  "text": "It coils around trees and strangles them. A single one can wrap right around a hill."
+ },
+ "184": {
+  "category": "PALM",
+  "text": "Its heart is a prized delicacy, so it defends itself with thorns all along its trunk."
+ },
+ "185": {
+  "category": "PALM",
+  "text": "Its coconut is brutally hard. Only the strongest jaws in Arauna can crack one open."
+ },
+ "186": {
+  "category": "PALM",
+  "text": "It grows only where fresh water hides underground, marking out oases in the savanna."
+ },
+ "187": {
+  "category": "FRUIT",
+  "text": "A fruit that walks. The nut on its head bobs about like a little quiff."
+ },
+ "188": {
+  "category": "FRUIT",
+  "text": "It roasts its own nut in the scrubland sun. The aroma is impossible to ignore."
+ },
+ "189": {
+  "category": "PALM",
+  "text": "A dark purple bunch crowns its head. Fighters swear by it for natural energy."
+ },
+ "190": {
+  "category": "FRUIT",
+  "text": "A yellow pod full of sweet seeds. Fermenting those seeds is what makes it evolve."
+ },
+ "191": {
+  "category": "CHOCOLATE",
+  "text": "Its pods turn purple when ripe. Every bar of chocolate in Arauna begins here."
+ },
+ "192": {
+  "category": "ENERGY",
+  "text": "Its jet black seed looks like a staring eye. Pure natural energy, nothing added."
+ },
+ "193": {
+  "category": "TEA",
+  "text": "Its bitter leaves are brewed into a shared drink, the companion of Arauna's herders."
+ },
+ "194": {
+  "category": "COB",
+  "text": "Its ears come in yellow, red and purple. It feeds the villages through the year."
+ },
+ "195": {
+  "category": "ROOT",
+  "text": "Its long root looks like a leg. It buries itself whenever it wants to sleep."
+ },
+ "196": {
+  "category": "PEBBLE",
+  "text": "A stone rolled smooth over thousands of years. Not one rough edge is left on it."
+ },
+ "197": {
+  "category": "BOULDER",
+  "text": "A walking rock that rumbles as it rolls. The ground shakes wherever it passes."
+ },
+ "198": {
+  "category": "CRYSTAL",
+  "text": "A clear crystal. It grows one centimetre a year in the damp air of deep caves."
+ },
+ "199": {
+  "category": "CRYSTAL",
+  "text": "A glowing purple geode. It splits sunlight into rainbows across the cave walls."
+ },
+ "200": {
+  "category": "METAL",
+  "text": "A walking nugget of gold. Bandits chase it across the whole of Arauna."
+ },
+ "201": {
+  "category": "METAL",
+  "text": "A staggeringly heavy rock. It can only stand upright by planting its roots first."
+ },
+ "202": {
+  "category": "CRYSTAL",
+  "text": "The most precious stone of all. It throws rainbows in any light at all."
+ },
+ "203": {
+  "category": "METAL",
+  "text": "Terracotta coloured. It sheds its skin in thin metallic plates as it grows."
+ },
+ "204": {
+  "category": "METAL",
+  "text": "Glossy black. It swallows the light around it and gives none of it back."
+ },
+ "205": {
+  "category": "SALT",
+  "text": "It crystallises by itself in salt flats. It tastes sweet and bitter at once."
+ },
+ "206": {
+  "category": "SULPHUR",
+  "text": "It smells of rotten eggs. It grows in the fumaroles of volcanic ground."
+ },
+ "207": {
+  "category": "CLAY",
+  "text": "It moulds itself into any shape. A child's play is enough to change it for good."
+ },
+ "208": {
+  "category": "DOLL",
+  "text": "Clay brought to life by children's games. It keeps every memory they gave it."
+ },
+ "209": {
+  "category": "CAVERN",
+  "text": "It grows one drop a century. Call it a stalagmite and it takes deep offence."
+ },
+ "210": {
+  "category": "CAVERN",
+  "text": "It grows pointing upward. It has never once got along with stalactites."
+ },
+ "211": {
+  "category": "FOSSIL",
+  "text": "A dinosaur bone that started walking again. Nobody can explain how."
+ },
+ "212": {
+  "category": "STELLAR",
+  "text": "It fell from the sky thousands of years ago and is still warm to the touch."
+ },
+ "213": {
+  "category": "VOLCANO",
+  "text": "Formed in an ancient eruption. It holds on to its heat for centuries."
+ },
+ "214": {
+  "category": "SCULPTURE",
+  "text": "A classical statue brought to life by magic. Impeccably elegant about it."
+ },
+ "215": {
+  "category": "ROCK",
+  "text": "The natural cracks across its body settle into angry looking faces."
+ },
+ "216": {
+  "category": "PINCER",
+  "text": "A hopping baby crab. Its claw already nips at unwary fingers."
+ },
+ "217": {
+  "category": "PINCER",
+  "text": "It lives in burrows in the mangroves and comes out at night in great crowds."
+ },
+ "218": {
+  "category": "SWIMMER",
+  "text": "It swims sideways. Its bright blue claws flash under the shallow water."
+ },
+ "219": {
+  "category": "CRUSTACEAN",
+  "text": "It swims in pink shoals. Delicious grilled, or so the tourists say."
+ },
+ "220": {
+  "category": "TENTACLE",
+  "text": "It changes colour to match the seabed, and squirts ink when startled."
+ },
+ "221": {
+  "category": "TENTACLE",
+  "text": "Its eight arms solve puzzles. It can open a jar with a screw lid."
+ },
+ "222": {
+  "category": "DRIFTER",
+  "text": "Its stinging tentacles trail for metres. It drifts wherever the current goes."
+ },
+ "223": {
+  "category": "SEAHORSE",
+  "text": "The male carries the young and raises them. It swims standing upright."
+ },
+ "224": {
+  "category": "SHELL",
+  "text": "It hatches on the beach and runs for the sea on instinct alone. Terribly fragile."
+ },
+ "225": {
+  "category": "SHELL",
+  "text": "It lives a hundred years, then returns to the beach it hatched on to lay eggs."
+ },
+ "226": {
+  "category": "CLEVER",
+  "text": "It leaps in spinning arcs. It talks to its pod in sharp little clicks."
+ },
+ "227": {
+  "category": "GIANT",
+  "text": "Its songs travel across whole oceans. It migrates with the seasons."
+ },
+ "228": {
+  "category": "PREDATOR",
+  "text": "It is born already swimming and hunting. It never has a childhood."
+ },
+ "229": {
+  "category": "PREDATOR",
+  "text": "King of the sea. Its serrated teeth grow back for ever, however many it loses."
+ },
+ "230": {
+  "category": "SHOCK",
+  "text": "It hides in the sand of the seabed. Its shock stuns careless bathers."
+ },
+ "231": {
+  "category": "BLADE",
+  "text": "Its snout is shaped like a sword and can pierce the hull of a boat."
+ },
+ "232": {
+  "category": "SHOAL",
+  "text": "Its red scales blaze in the sun. Huge shoals gather over the reefs."
+ },
+ "233": {
+  "category": "LURE",
+  "text": "The glowing lure on its antenna fools smaller fish into swimming closer."
+ },
+ "234": {
+  "category": "SPECTRE",
+  "text": "It appears in school mirrors at night, calling out its own name."
+ },
+ "235": {
+  "category": "WITCH",
+  "text": "It steals children who refuse to sleep. It is not always real."
+ },
+ "236": {
+  "category": "TERROR",
+  "text": "It lives under beds. It frightens only children who disobey."
+ },
+ "237": {
+  "category": "CURSED",
+  "text": "A seventh son under a full moon. Its howl sends every dog running."
+ },
+ "238": {
+  "category": "CURSED",
+  "text": "A soul so wicked that even the earth refuses it. It wanders for ever."
+ },
+ "239": {
+  "category": "HAUNTING",
+  "text": "A giant hairy hand that reaches out from under the bed to grab at feet."
+ },
+ "240": {
+  "category": "HAUNTING",
+  "text": "A hairy leg that walks alone at night, following anyone out on their own."
+ },
+ "241": {
+  "category": "SPIRIT",
+  "text": "The spirit of a woman who died in childbirth. It carries off babies."
+ },
+ "242": {
+  "category": "SPIRIT",
+  "text": "Protector of the animals. It curses hunters who take more than they need."
+ },
+ "243": {
+  "category": "GOD",
+  "text": "The Tupi god of night. Only men are permitted to look upon its face."
+ },
+ "244": {
+  "category": "THUNDER",
+  "text": "The supreme Tupi-Guarani god. It looses lightning with a single blink."
+ },
+ "245": {
+  "category": "LUNAR",
+  "text": "Goddess of the moon. Its silver hair shines on nights of the full moon."
+ },
+ "246": {
+  "category": "SOLAR",
+  "text": "God of the sun. Its golden crown lights the whole of Arauna."
+ },
+ "247": {
+  "category": "LOVE",
+  "text": "God of love. Its arrow of flowers brings two hearts together."
+ },
+ "248": {
+  "category": "FERMENT",
+  "text": "The spirit of fermented drink. It brightens festivals and healing rites."
+ },
+ "249": {
+  "category": "PAINT",
+  "text": "Its black dye lasts for weeks on skin. Elders paint blessings with it."
+ },
+ "250": {
+  "category": "PAINT",
+  "text": "An ancestral red dye. It keeps biting insects away for a whole day."
+ },
+ "251": {
+  "category": "HUNTER",
+  "text": "It rides a wild boar. It guards the game and runs down greedy hunters."
+ },
+ "252": {
+  "category": "SPIRIT",
+  "text": "The red form the forest protector takes when its anger finally boils over."
+ },
+ "253": {
+  "category": "ANGLER",
+  "text": "The river spirit in the shape of an angler. It teaches the young to respect the water."
+ },
+ "254": {
+  "category": "HAUNTING",
+  "text": "It treads on the chest of anyone who sleeps on a full stomach, freezing them."
+ },
+ "255": {
+  "category": "WARRIOR",
+  "text": "The spirit of a quilombo leader. It stirs courage in all who fight for freedom."
+ },
+ "256": {
+  "category": "MOTHER",
+  "text": "The young form of the sea goddess. It rules over the smaller tides."
+ },
+ "257": {
+  "category": "HERBS",
+  "text": "It commands the power of healing leaves. Any poison gives way before it."
+ },
+ "258": {
+  "category": "CREATOR",
+  "text": "A creator spirit dressed all in white. It blesses everyone who comes near."
+ },
+ "259": {
+  "category": "PRANKSTER",
+  "text": "A young trickster. It cannot control its whirlwinds properly yet."
+ },
+ "260": {
+  "category": "PRANKSTER",
+  "text": "Red cap, pipe and a single leg. It turns up all across Arauna's folklore."
+ },
+ "261": {
+  "category": "GUARDIAN",
+  "text": "An elder forest guardian. It knows where every ancestral tree still grows."
+ },
+ "262": {
+  "category": "HUNTER",
+  "text": "Another form of the keeper of the game, and even harder on greedy hunters."
+ },
+ "263": {
+  "category": "CHARMER",
+  "text": "An alluring spirit. Its laughter rings out at the crossroads after dark."
+ },
+ "264": {
+  "category": "MESSENGER",
+  "text": "Keeper of the crossroads. Nothing gets past it without its say so."
+ },
+ "265": {
+  "category": "SAGE",
+  "text": "An ancestral spirit. It smokes a pipe and gives advice a thousand years old."
+ },
+ "266": {
+  "category": "WARRIOR",
+  "text": "A spectral native warrior wearing a headdress of brightly coloured feathers."
+ },
+ "267": {
+  "category": "SAILOR",
+  "text": "The spirit of a drowned sailor. It tells stories of storms all night long."
+ },
+ "268": {
+  "category": "JOY",
+  "text": "A festival spirit. It plays the berimbau and never once stops."
+ },
+ "269": {
+  "category": "BANDIT",
+  "text": "The spirit of a famous outlaw, in a leather hat studded with silver stars."
+ },
+ "270": {
+  "category": "DEVOUT",
+  "text": "The spirit of a beloved priest. It blesses with a rosary of cactus beads."
+ },
+ "271": {
+  "category": "DIVINE",
+  "text": "The spirit of an innocent child. It appears at the epiphany parades."
+ },
+ "272": {
+  "category": "REVELLER",
+  "text": "King of carnival. Its throne is built entirely out of glitter."
+ },
+ "273": {
+  "category": "REVELLER",
+  "text": "The spirit of the festival ox. It comes back to life at every performance."
+ },
+ "274": {
+  "category": "REVELLER",
+  "text": "The spirit of the epiphany dance. Its accordion plays all on its own."
+ },
+ "275": {
+  "category": "DANCER",
+  "text": "The spirit of the frevo. Its acrobatic dance simply never stops."
+ },
+ "276": {
+  "category": "PROCESSION",
+  "text": "A spectral royal parade in a golden crown and embroidered robes."
+ },
+ "277": {
+  "category": "WARRIOR",
+  "text": "A warrior spirit in procession. Its staves beat out a steady rhythm."
+ },
+ "278": {
+  "category": "REVELLER",
+  "text": "A spirit that travels from party to party. It never tires of dancing."
+ },
+ "279": {
+  "category": "HUNTER",
+  "text": "A legendary black jaguar, worshipped as a goddess of the night forest."
+ },
+ "280": {
+  "category": "GREAT SNAKE",
+  "text": "An anaconda ten metres long. It swallows capybaras whole."
+ },
+ "281": {
+  "category": "FISH",
+  "text": "The king of the river fish. Five metres long, in scales like armour plate."
+ },
+ "282": {
+  "category": "DRAGONHOUND",
+  "text": "Alpha of the legendary pack. Its fire burns a greenish turquoise."
+ },
+ "283": {
+  "category": "QUEEN",
+  "text": "The enormous queen of its kind. It commands whole swarms at a word."
+ },
+ "284": {
+  "category": "SCULPTOR",
+  "text": "A bird a century old. Its beak carved out entire tablelands."
+ },
+ "285": {
+  "category": "FIRE SNAKE",
+  "text": "The primordial fire serpent. Its blue flame devours whole woods."
+ },
+ "286": {
+  "category": "GODDESS",
+  "text": "Mother of all the river spirits. Its song is heard once in a lifetime."
+ },
+ "287": {
+  "category": "KING",
+  "text": "King of the forest guardians. Its hair burns the red of urucum dye."
+ },
+ "288": {
+  "category": "KING",
+  "text": "The ancestral trickster. Its red cap is a legend in its own right."
+ },
+ "289": {
+  "category": "SUPREME",
+  "text": "The supreme forest protector. White deer follow wherever it goes."
+ },
+ "290": {
+  "category": "ANCESTRAL",
+  "text": "An Amazonian love turned into a living tree."
+ },
+ "291": {
+  "category": "SERPENT",
+  "text": "A serpent man. It takes human shape only during the festivals."
+ },
+ "292": {
+  "category": "TERROR",
+  "text": "A primordial giant sloth. A mouth in its chest, and the smell of death."
+ },
+ "293": {
+  "category": "MARINE",
+  "text": "A man-eating fish man. The terror of the fishermen of old."
+ },
+ "294": {
+  "category": "MIRACLE",
+  "text": "A legendary bird. The whole forest falls silent the moment it sings."
+ },
+ "295": {
+  "category": "AMULET",
+  "text": "A jade green charm of the warrior women. It brings luck in battle."
+ },
+ "296": {
+  "category": "WARRIOR",
+  "text": "An archer queen of a legendary tribe. Its bow stands taller than a person."
+ },
+ "297": {
+  "category": "MOUNTAIN",
+  "text": "An ancient peak. Old growth forest covers the whole of its back."
+ },
+ "298": {
+  "category": "REDEEMER",
+  "text": "A spirit with open arms. It blesses all who watch the sun come up."
+ },
+ "299": {
+  "category": "RAT",
+  "text": "It lives in the sewers and will eat absolutely anything it finds."
+ },
+ "300": {
+  "category": "PIGEON",
+  "text": "It tears open rubbish bags. Its droppings ruin every statue in town."
+ },
+ "301": {
+  "category": "PIGEON",
+  "text": "An enormous pigeon. It rules entire town squares all by itself."
+ },
+ "302": {
+  "category": "TERROR",
+  "text": "A flying roach out of a nightmare. It aims straight at whoever screams."
+ },
+ "303": {
+  "category": "VECTOR",
+  "text": "A striped little streak of a thing. It carries disease from town to town."
+ },
+ "304": {
+  "category": "STREET",
+  "text": "The wild counterpart of the caramel pup. It defends its turf in packs."
+ },
+ "305": {
+  "category": "OMEN",
+  "text": "They say it is bad luck if it crosses your path. So they say."
+ },
+ "306": {
+  "category": "AMPHIBIAN",
+  "text": "It turns up in toilet bowls and leaps at the face of whoever sits down."
+ },
+ "307": {
+  "category": "WALL",
+  "text": "It eats mosquitoes. Its tail drops off and keeps wriggling by itself."
+ },
+ "308": {
+  "category": "SCHOLAR",
+  "text": "It eats old paper, and soaks up the knowledge of the books it ruins."
+ },
+ "309": {
+  "category": "DUST",
+  "text": "A walking ball of dust. It grows larger in every closed up room."
+ },
+ "310": {
+  "category": "CORROSION",
+  "text": "It eats metal from the inside out. Bridges give way without warning."
+ },
+ "311": {
+  "category": "POLLUTION",
+  "text": "A cloud of exhaust fumes. It darkens the sky over the cities."
+ },
+ "312": {
+  "category": "SLICK",
+  "text": "A spill of leaked oil. It kills every sea creature it drifts across."
+ },
+ "313": {
+  "category": "DUMP",
+  "text": "A living heap of city rubbish. Heavy rain is what makes it evolve."
+ },
+ "314": {
+  "category": "LEACHATE",
+  "text": "The black liquid that seeps out of a rubbish heap. It poisons all it touches."
+ },
+ "315": {
+  "category": "LITTER",
+  "text": "It is still burning when thrown away, and sets whole pastures alight."
+ },
+ "316": {
+  "category": "RECYCLE",
+  "text": "It roams about looking for another of its kind to scrap with."
+ },
+ "317": {
+  "category": "POLLUTION",
+  "text": "It flies on the wind and snags in the trees for decades on end."
+ },
+ "318": {
+  "category": "RECYCLABLE",
+  "text": "It floats down the rivers and drifts all the way out to the open sea."
+ },
+ "319": {
+  "category": "RECYCLABLE",
+  "text": "A bird made of the plastic in its own stomach. A symbol of pollution."
+ },
+ "320": {
+  "category": "BATTERY",
+  "text": "It leaks corrosive acid. It should never, ever be picked up."
+ },
+ "321": {
+  "category": "WIRE",
+  "text": "A tangle of live electrical wire. A walking short circuit."
+ },
+ "322": {
+  "category": "PEST",
+  "text": "A giant urban bug. It shows up in kitchens nobody bothers to clean."
+ },
+ "323": {
+  "category": "METAL",
+  "text": "A folded sheet of kitchen foil. It flies on the wind like a kite."
+ },
+ "324": {
+  "category": "CEMENT",
+  "text": "A broken chunk of pavement. It trips people up on purpose."
+ },
+ "325": {
+  "category": "SEWER",
+  "text": "The spirit of waste water. It rises out of the drains in a flood."
+ },
+ "326": {
+  "category": "SIGNAL",
+  "text": "A traffic light that changes for no reason at all, snarling up the roads."
+ },
+ "327": {
+  "category": "LAMPPOST",
+  "text": "A street lamp that walks. It lights up the darkest streets in town."
+ },
+ "328": {
+  "category": "ART",
+  "text": "The spirit of street art. Its shape changes with whatever it paints."
+ },
+ "329": {
+  "category": "SUN",
+  "text": "Consort of the sun god. It shines brightest at first light."
+ },
+ "330": {
+  "category": "MOON",
+  "text": "Consort of the moon goddess. It shines brightest at midnight."
+ },
+ "331": {
+  "category": "THUNDER",
+  "text": "The thunder god in primordial form. One clap levels a hillside."
+ },
+ "332": {
+  "category": "SUPREME",
+  "text": "The river spirit at its height. A whole river obeys its song."
+ },
+ "333": {
+  "category": "SUN",
+  "text": "The sun of the first days. It gave life to the entire continent."
+ },
+ "334": {
+  "category": "MOON",
+  "text": "The moon of the first days. It rules the tides and dreams alike."
+ },
+ "335": {
+  "category": "LOVE",
+  "text": "Love in its very first form. It brings destined couples together."
+ },
+ "336": {
+  "category": "RIVER",
+  "text": "The spirit of a whole river basin. One body, a thousand tributaries."
+ },
+ "337": {
+  "category": "GUARDIAN",
+  "text": "Supreme guardian of the region. It appears only when Arauna is in danger."
+ },
+ "338": {
+  "category": "GREEN",
+  "text": "The spirit of the primordial rainforest. It sprouts from the ashes of fires."
+ },
+ "339": {
+  "category": "STORM",
+  "text": "The spirit of the December rains. It soaks Arauna through in three days."
+ },
+ "340": {
+  "category": "DROUGHT",
+  "text": "The spirit of the dry season. It scorches the fields for months on end."
+ },
+ "341": {
+  "category": "WIND",
+  "text": "The southern wind that brings the winter cold, whistling deadly tunes."
+ },
+ "342": {
+  "category": "EARTH",
+  "text": "Walking fertile soil. A crop springs up wherever it sets foot."
+ },
+ "343": {
+  "category": "FIRE",
+  "text": "The primordial fire that first warmed Arauna at the beginning."
+ },
+ "344": {
+  "category": "SEA",
+  "text": "The spirit of the Atlantic. The waves keep time to its rhythm."
+ },
+ "345": {
+  "category": "DAWN",
+  "text": "The spirit of daybreak. A rose and gold light fills the whole sky."
+ },
+ "346": {
+  "category": "DUSK",
+  "text": "The spirit of sunset. Burnt colours at the close of the afternoon."
+ },
+ "347": {
+  "category": "STAR",
+  "text": "A shooting star that made a nest here. It grants the wishes made on it."
+ },
+ "348": {
+  "category": "DIVINE",
+  "text": "The whole region made flesh. There is only ever one of it."
+ },
+ "349": {
+  "category": "ALARM",
+  "text": "It screams at dawn to warn the flock. The forest's own alarm clock."
+ },
+ "350": {
+  "category": "HOWLER",
+  "text": "It howls at daybreak. Its call marks its turf for kilometres around."
+ },
+ "351": {
+  "category": "PARAKEET",
+  "text": "The smallest parrot in Arauna. It flies in loud green flocks."
+ },
+ "352": {
+  "category": "PARAKEET",
+  "text": "A clever parrot. It mimics human voices to throw predators off."
+ },
+ "353": {
+  "category": "MACAW",
+  "text": "A blue macaw with a hooked beak. Its pairs stay together for life."
+ },
+ "354": {
+  "category": "RODENT",
+  "text": "A shy, round eyed rodent. It lives in burrows out in the grassland."
+ },
+ "355": {
+  "category": "CAPYBARA",
+  "text": "The largest rodent in the world. Birds and monkeys ride about on it."
+ },
+ "356": {
+  "category": "ANT EATER",
+  "text": "It rides on its mother's back until it is grown, licking up ants all day."
+ },
+ "357": {
+  "category": "ANT EATER",
+  "text": "Its sticky tongue is sixty centimetres long. It smells a nest kilometres off."
+ },
+ "358": {
+  "category": "DEVOURER",
+  "text": "Its front claws are enormous. It scares off jaguars standing on its hind legs."
+ },
+ "359": {
+  "category": "SLOW",
+  "text": "It moves so slowly that moss grows all over its fur."
+ },
+ "360": {
+  "category": "ZEN",
+  "text": "It sleeps twenty hours a day. Its dreams change the weather around it."
+ },
+ "361": {
+  "category": "HUMMINGBIRD",
+  "text": "It beats its wings eighty times a second and drinks nectar in mid air."
+ },
+ "362": {
+  "category": "HUMMINGBIRD",
+  "text": "Its feathers scatter sunlight into shifting bands of colour."
+ },
+ "363": {
+  "category": "SUN",
+  "text": "The core in its chest holds a spark taken from the sun itself."
+ },
+ "364": {
+  "category": "FAIR HAIR",
+  "text": "Its curls are golden. It brings luck to anyone fishing nearby."
+ },
+ "365": {
+  "category": "CAPOEIRA",
+  "text": "It sways without ever stopping, and kicks in the middle of the dance."
+ },
+ "366": {
+  "category": "INSTRUMENT",
+  "text": "A living gourd that plays itself. It sets the rhythm of the circle."
+ },
+ "367": {
+  "category": "DRUM",
+  "text": "Every beat shakes the ground. It keeps time for the whole ceremony."
+ },
+ "368": {
+  "category": "RHYTHM",
+  "text": "It spins on the spot, playing a samba all by itself."
+ },
+ "369": {
+  "category": "BELLOWS",
+  "text": "It breathes out tunes that make anyone listening weep with longing."
+ },
+ "370": {
+  "category": "GUITAR",
+  "text": "A walking country guitar. It sings ballads out of very old tales."
+ },
+ "371": {
+  "category": "FORRO",
+  "text": "A deep drum that leads the dance. Hearts start beating in time with it."
+ },
+ "372": {
+  "category": "POET",
+  "text": "A chapbook of verse that reads itself out loud to anyone passing."
+ },
+ "373": {
+  "category": "LACE",
+  "text": "It weaves invisible lace that catches bad dreams before they land."
+ },
+ "374": {
+  "category": "FISH",
+  "text": "Its skin is covered in sharp scales. Fishermen give it a wide berth."
+ },
+ "375": {
+  "category": "SHOAL",
+  "text": "It swims in shoals of dozens. Together they strip a cow in minutes."
+ },
+ "376": {
+  "category": "SERPENT",
+  "text": "A fire snake that punishes anyone who burns the forest. Eyes like embers."
+ },
+ "377": {
+  "category": "RIVER",
+  "text": "An ancestral river king. One flick of its tail empties a whole lake."
+ },
+ "378": {
+  "category": "GUARDIAN",
+  "text": "An ancient turtle. Its shell hides a forest in miniature."
+ },
+ "379": {
+  "category": "ASTRAL",
+  "text": "Its body is a living sphere of sun. Stars go out when it appears."
+ },
+ "380": {
+  "category": "ASTRAL",
+  "text": "Its body is a silver crescent moon. It rules the tides and dreams."
+ },
+ "381": {
+  "category": "QUILOMBO",
+  "text": "A king of Palmares reborn. A symbol of freedom across Arauna."
+ },
+ "382": {
+  "category": "QUEEN",
+  "text": "Queen of the sea. Offerings are carried to it every February."
+ },
+ "383": {
+  "category": "RAINBOW",
+  "text": "A rainbow serpent. It bridges earth and sky in a band of colour."
+ },
+ "384": {
+  "category": "MYTHICAL",
+  "text": "A forest guardian's young in its first form. Only pure children see it."
+ },
+ "385": {
+  "category": "MYTHICAL",
+  "text": "A newborn trickster. Little whirlwinds spin up wherever it goes."
+ },
+ "386": {
+  "category": "ORIGIN",
+  "text": "The first creature of Arauna. It holds the essence of the whole region."
+ }
+}
