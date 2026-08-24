@@ -42,6 +42,14 @@ FRAME_NAMES = [
 ]
 
 
+def show(path: pathlib.Path) -> str:
+    """Repo-relative when possible; an output outside the tree still prints."""
+    try:
+        return str(path.relative_to(ROOT))
+    except ValueError:
+        return str(path)
+
+
 def read_jasc(path: pathlib.Path) -> list[tuple[int, int, int]]:
     lines = path.read_text(encoding="utf-8").splitlines()
     if lines[0].strip() != "JASC-PAL":
@@ -126,7 +134,7 @@ def build_overworld(src_path: pathlib.Path, out_path: pathlib.Path, frames: int)
 
     indexed, stats = quantize_to(canvas, palette)
     indexed.save(out_path)
-    print(f"  wrote {out_path.relative_to(ROOT)}  "
+    print(f"  wrote {show(out_path)}  "
           f"({stats['distinct_source_colors']} source colours -> "
           f"{stats['palette_slots_used']} of 15 npc_3 slots)")
 
@@ -161,11 +169,11 @@ def build_portrait(src_path: pathlib.Path, out_path: pathlib.Path, pal_out: path
 
     indexed, stats = quantize_to(img, palette)
     indexed.save(out_path)
-    print(f"  wrote {out_path.relative_to(ROOT)}  "
+    print(f"  wrote {show(out_path)}  "
           f"({stats['palette_slots_used']} of 15 colours used)")
     if pal_out:
         write_jasc(pal_out, palette)
-        print(f"  wrote {pal_out.relative_to(ROOT)}")
+        print(f"  wrote {show(pal_out)}")
 
 
 def main() -> int:
