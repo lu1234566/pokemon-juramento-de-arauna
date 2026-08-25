@@ -70,6 +70,17 @@ class BattleLoopTests(unittest.TestCase):
         self.assertEqual(result.turns_submitted, 1)
         self.assertEqual(inp.calls, 1)
 
+    def test_final_allowed_turn_can_end_battle(self):
+        reader = StateReader()
+        menu = Menu(reader, True)
+        inp = Input(reader)
+        loop = BattleAutoplayer(Bridge(), reader, BattleReader(), menu, inp)
+        result = loop.run(max_turns=1, max_cycles=5)
+        self.assertTrue(result.success)
+        self.assertEqual(result.reason, "battle_ended")
+        self.assertEqual(result.turns_submitted, 1)
+        self.assertEqual(inp.calls, 1)
+
     def test_stalls_without_blind_a_press(self):
         reader = StateReader()
         menu = Menu(reader, False)
