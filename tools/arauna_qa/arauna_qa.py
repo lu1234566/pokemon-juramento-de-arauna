@@ -14,6 +14,7 @@ sys.path.insert(0, str(ROOT))
 from arauna_qa import (
     AraunaStateReader,
     BattleAdvisor,
+    BattleAutoplayer,
     BattleInputController,
     BattleMenuReader,
     BattleMetadataReader,
@@ -64,19 +65,25 @@ def repl(
     world_navigator = WorldNavigator(navigator, map_index, world_router)
     object_reader = ObjectEventReader(bridge, symbols)
     npc = NpcInteractor(navigator, object_reader, map_index)
-    scenarios = ScenarioRunner(navigator, world_navigator, npc, map_index)
     party_reader = PartyReader(bridge, symbols)
     battle_reader = BattleReader(bridge, symbols)
     battle_metadata = BattleMetadataReader(bridge, symbols)
     battle_advisor = BattleAdvisor(battle_reader, battle_metadata)
     battle_menu = BattleMenuReader(bridge, symbols)
     battle_input = BattleInputController(bridge, battle_menu, battle_advisor)
+    battle_autoplayer = BattleAutoplayer(
+        bridge, reader, battle_reader, battle_menu, battle_input
+    )
+    scenarios = ScenarioRunner(
+        navigator, world_navigator, npc, map_index, battle_autoplayer=battle_autoplayer
+    )
 
     print("Connected. Commands: state, map, objects, party, enemy, battle, battleprompt,")
-    print("advise, battlechoose SLOT, battleauto, talk INDEX, talklocal LOCAL_ID, scenario FILE,")
-    print("route TARGET_MAP, routeto TARGET_MAP, step DIR, walk DIR..., walkto X Y,")
-    print("explore [targets], press KEY [frames], keys KEY..., release, screenshot PATH,")
-    print("save PATH, load PATH, info, ping, reset, quit")
+    print("advise, battlechoose SLOT, battleauto, playbattle [MAX_TURNS], talk INDEX,")
+    print("talklocal LOCAL_ID, scenario FILE, route TARGET_MAP, routeto TARGET_MAP,")
+    print("step DIR, walk DIR..., walkto X Y, explore [targets], press KEY [frames],")
+    print("keys KEY..., release, screenshot PATH, save PATH, load PATH, info, ping,")
+    print("reset, quit")
     while True:
         try:
             raw = input("arauna-qa> ").strip()
@@ -114,6 +121,12 @@ def repl(
                 print(json.dumps(result.to_dict(), indent=2, sort_keys=True))
             elif command == "battleauto":
                 result = battle_input.choose_recommended()
+                print(json.dumps(result.to_dict(), indent=2, sort_keys=True))
+            elif command == "playbattle":
+                if len(args) > 2:
+                    raise ValueError("usage: playbattle [MAX_TURNS]")
+                max_turns = int(args[1]) if len(args) == 2 else 64
+                result = battle_autoplayer.run(max_turns=max_turns)
                 print(json.dumps(result.to_dict(), indent=2, sort_keys=True))
             elif command == "talk":
                 if len(args) != 2:
