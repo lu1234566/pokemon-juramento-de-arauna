@@ -29,8 +29,14 @@ class Bridge:
         self.reader = reader
         self.presses = []
         self.shots = []
+        self.zero_presses_to_battle = None
+        self.zero_press_count = 0
     def press(self, key, frames=2):
         self.presses.append((key, frames))
+        if key == 0 and self.zero_presses_to_battle is not None and self.reader is not None:
+            self.zero_press_count += 1
+            if self.zero_press_count >= self.zero_presses_to_battle:
+                self.reader.value = state(battle=True, script=False, locked=True)
     def screenshot(self, path):
         self.shots.append(path)
 
@@ -73,31 +79,31 @@ class BattleAutoplayer:
         self.nav.reader.value = state(battle=False)
         s = self.nav.reader.value
         return SimpleNamespace(
-            success=True,
-            reason="battle_ended",
-            final_state=s,
+            success=True, reason="battle_ended", final_state=s,
             to_dict=lambda: {"success": True, "reason": "battle_ended"},
         )
 
 
 class DialogueAdvancer:
-    def __init__(self, nav, reason="battle_started", success=True):
+    def __init__(self, nav, reasons=None):
         self.nav = nav
-        self.reason = reason
-        self.success = success
+        self.reasons = list(reasons or ["battle_started"])
         self.calls = []
     def run(self, **kwargs):
         self.calls.append(kwargs)
-        if self.reason == "battle_started":
+        reason = self.reasons.pop(0) if self.reasons else "dialogue_finished"
+        success = reason in {"battle_started", "dialogue_finished", "printer_inactive"}
+        if reason == "battle_started":
             self.nav.reader.value = state(battle=True, locked=True)
-        else:
-            self.nav.reader.value = state(battle=False, script=False, locked=False)
+        elif success:
+            self.nav.reader.value = state(battle=False, script=True, locked=True)
         s = self.nav.reader.value
         return SimpleNamespace(
-            success=self.success,
-            reason=self.reason,
+            success=success,
+            reason=reason,
+            advances=1 if success else 0,
             final_state=s,
-            to_dict=lambda: {"success": self.success, "reason": self.reason},
+            to_dict=lambda: {"success": success, "reason": reason},
         )
 
 
@@ -132,56 +138,71 @@ class ScenarioTests(unittest.TestCase):
         self.assertEqual(nav.bridge.presses, [("A", 2), (0, 3)])
         self.assertEqual(npc.calls, [{"local_id": 7}])
 
-    def test_advances_verified_trainer_dialogue_until_battle(self):
+    def test_advance_dialogue_passes_strict_limits(self):
+        nav = Navigator()
+        nav.reader.value = state(script=True, locked=True)
+        dialogue = DialogueAdvancer(nav, ["dialogue_finished"])
+        runner = ScenarioRunner(nav, WorldNav(nav), Npc(nav), Index(), dialogue_advancer=dialogue)
+        result = runner.run({"steps": [{
+            "action": "advance_dialogue",
+            "max_advances": 5,
+            "max_cycles": 99,
+            "wait_frames": 3,
+            "stall_cycles": 7,
+            "press_frames": 1,
+        }]})
+        self.assertTrue(result.success)
+        self.assertEqual(dialogue.calls, [{
+            "max_advances": 5,
+            "max_cycles": 99,
+            "wait_frames": 3,
+            "stall_cycles": 7,
+            "press_frames": 1,
+        }])
+
+    def test_verified_dialogue_can_finish_then_battle_start_on_no_input_settle(self):
         nav = Navigator()
         npc = Npc(nav)
-        dialogue = DialogueAdvancer(nav)
-        runner = ScenarioRunner(
-            nav, WorldNav(nav), npc, Index(), dialogue_advancer=dialogue
-        )
+        dialogue = DialogueAdvancer(nav, ["dialogue_finished"])
+        nav.bridge.zero_presses_to_battle = 1
+        runner = ScenarioRunner(nav, WorldNav(nav), npc, Index(), dialogue_advancer=dialogue)
         result = runner.run({
             "name": "trainer",
             "steps": [
                 {"action": "talk", "local_id": 3},
-                {"action": "advance_to_battle", "max_advances": 4, "press_frames": 1, "wait_frames": 2},
+                {"action": "advance_to_battle", "max_advances": 4, "press_frames": 1, "settle_frames": 2},
                 {"action": "assert", "in_battle": True},
             ],
         })
         self.assertTrue(result.success)
         self.assertEqual(result.steps[1].reason, "battle_started")
-        self.assertEqual(dialogue.calls, [{
-            "max_advances": 4,
-            "max_cycles": 1024,
-            "wait_frames": 2,
-            "stall_cycles": 120,
-            "press_frames": 1,
-        }])
+        self.assertEqual(result.steps[1].detail["verified_advances"], 1)
+        self.assertEqual(nav.bridge.presses, [(0, 2)])
 
     def test_advance_to_battle_requires_dialogue_advancer(self):
         nav = Navigator()
+        nav.reader.value = state(script=True, locked=True)
         runner = ScenarioRunner(nav, WorldNav(nav), Npc(nav), Index())
         result = runner.run({"steps": [{"action": "advance_to_battle"}]})
         self.assertFalse(result.success)
         self.assertEqual(result.reason, "dialogue_advancer_unavailable")
         self.assertEqual(nav.bridge.presses, [])
 
-    def test_dialogue_finished_before_battle_is_failure(self):
+    def test_choice_like_stall_never_falls_back_to_blind_confirm(self):
         nav = Navigator()
-        dialogue = DialogueAdvancer(nav, reason="dialogue_finished", success=True)
-        runner = ScenarioRunner(
-            nav, WorldNav(nav), Npc(nav), Index(), dialogue_advancer=dialogue
-        )
+        nav.reader.value = state(script=True, locked=True)
+        dialogue = DialogueAdvancer(nav, ["stalled_without_verified_input_wait"])
+        runner = ScenarioRunner(nav, WorldNav(nav), Npc(nav), Index(), dialogue_advancer=dialogue)
         result = runner.run({"steps": [{"action": "advance_to_battle"}]})
         self.assertFalse(result.success)
-        self.assertEqual(result.reason, "dialogue_finished_before_battle")
+        self.assertEqual(result.reason, "dialogue_stalled_without_verified_input_wait")
+        self.assertEqual(nav.bridge.presses, [])
 
     def test_runs_bounded_battle_step(self):
         nav = Navigator()
         nav.reader.value = state(battle=True)
         autoplay = BattleAutoplayer(nav)
-        runner = ScenarioRunner(
-            nav, WorldNav(nav), Npc(nav), Index(), battle_autoplayer=autoplay
-        )
+        runner = ScenarioRunner(nav, WorldNav(nav), Npc(nav), Index(), battle_autoplayer=autoplay)
         result = runner.run({
             "name": "battle",
             "steps": [
