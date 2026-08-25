@@ -38,25 +38,42 @@ coordinates.
 - Python 3.10+;
 - a locally built Arauna ROM and its matching `.sym` file.
 
-Generate symbols for the same build that you open in mGBA:
+For the official Arauna English build, build the ROM and symbols in the same wrapper
+invocation so the overlay composition is identical:
 
 ```bash
-make syms
+bash scripts/build_arauna.sh -j2 all syms
 ```
 
-If the official Arauna wrapper builds into a different output directory/name, use the
-`.sym` produced beside that exact `.elf`/`.gba`. Never mix symbols from another build.
+For a raw pokeemerald-style local build, `make syms` is sufficient after building the
+matching ROM. Never mix a `.sym` file from one build with a different `.gba`.
 
-## Start it
+## Non-destructive live smoke test
 
-1. Start the Python listener:
+Start the smoke listener first:
 
 ```bash
-python3 tools/arauna_qa/arauna_qa.py --sym /path/to/matching/pokeemerald.sym
+python3 tools/arauna_qa/smoke_test.py \
+  --sym /path/to/matching/game.sym \
+  --screenshot /tmp/arauna-smoke.png
 ```
 
-2. Open the matching ROM in mGBA.
-3. In mGBA, open **Tools -> Scripting...** and load:
+Then open the matching ROM in mGBA and load `tools/arauna_qa/bridge.lua` from
+**Tools -> Scripting...**. The smoke runner checks the TCP handshake, ROM game code,
+symbol-backed runtime reads and an optional screenshot. It does not press a gameplay
+button or write game RAM.
+
+A successful run exits with status 0 and prints JSON with `"ok": true`.
+
+## Interactive mode
+
+Start the Python listener:
+
+```bash
+python3 tools/arauna_qa/arauna_qa.py --sym /path/to/matching/game.sym
+```
+
+Open the matching ROM in mGBA, then load:
 
 ```text
 tools/arauna_qa/bridge.lua
@@ -64,7 +81,7 @@ tools/arauna_qa/bridge.lua
 
 The Lua side connects only to localhost by default.
 
-## Interactive commands
+### Interactive commands
 
 ```text
 state
@@ -89,7 +106,7 @@ A one-shot state dump is also available:
 
 ```bash
 python3 tools/arauna_qa/arauna_qa.py \
-  --sym /path/to/matching/pokeemerald.sym \
+  --sym /path/to/matching/game.sym \
   --once state
 ```
 
@@ -97,13 +114,15 @@ Then load `bridge.lua` in mGBA. The process prints one JSON snapshot and exits.
 
 ## Run the host-side tests
 
-From this directory:
+From `tools/arauna_qa`:
 
 ```bash
 python3 -m unittest discover -s tests -v
 ```
 
-These tests do not require mGBA or the ARM toolchain.
+The V1 suite covers symbol parsing, runtime-state decoding, GBA input masks and a real
+local socket request/response round trip. These tests do not require mGBA or the ARM
+toolchain.
 
 ## Safety boundaries
 
