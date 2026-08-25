@@ -5,6 +5,7 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
+from .battle_loop import BattleAutoplayer
 from .interaction import NpcInteractor
 from .navigation import Navigator
 from .repo_map import RepoMapIndex
@@ -60,11 +61,13 @@ class ScenarioRunner:
         world_navigator: WorldNavigator,
         npc: NpcInteractor,
         map_index: RepoMapIndex,
+        battle_autoplayer: BattleAutoplayer | None = None,
     ):
         self.navigator = navigator
         self.world_navigator = world_navigator
         self.npc = npc
         self.map_index = map_index
+        self.battle_autoplayer = battle_autoplayer
 
     @classmethod
     def load(cls, path: str | Path) -> dict[str, Any]:
@@ -144,6 +147,21 @@ class ScenarioRunner:
             else:
                 state = self.navigator.reader.snapshot()
                 return ScenarioStepResult(index, action, False, "target_missing", state, {})
+            return ScenarioStepResult(
+                index, action, result.success, result.reason, result.final_state, result.to_dict()
+            )
+
+        if action in {"play_battle", "playbattle"}:
+            if self.battle_autoplayer is None:
+                state = self.navigator.reader.snapshot()
+                return ScenarioStepResult(index, action, False, "battle_autoplayer_unavailable", state, {})
+            limits = {
+                "max_turns": int(raw.get("max_turns", 64)),
+                "max_cycles": int(raw.get("max_cycles", 1024)),
+                "wait_frames": int(raw.get("wait_frames", 4)),
+                "stall_cycles": int(raw.get("stall_cycles", 80)),
+            }
+            result = self.battle_autoplayer.run(**limits)
             return ScenarioStepResult(
                 index, action, result.success, result.reason, result.final_state, result.to_dict()
             )
