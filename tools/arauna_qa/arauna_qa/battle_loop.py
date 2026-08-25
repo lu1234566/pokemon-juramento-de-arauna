@@ -104,6 +104,14 @@ class BattleAutoplayer:
 
             prompt = self.menu_reader.player_prompt()
             if prompt is not None:
+                # max_turns is a cap on submitted decisions, not a reason to abort
+                # immediately after the final allowed move. This lets the engine
+                # finish animations and end the battle after that move. We only
+                # fail if another player decision is actually required.
+                if turns >= max_turns:
+                    return BattleLoopResult(
+                        False, "max_turns", turns, cycle, state, tuple(events)
+                    )
                 result = self.input_controller.choose_recommended()
                 events.append(BattleLoopEvent(cycle, "move_decision", result.to_dict()))
                 if not result.success:
@@ -111,10 +119,6 @@ class BattleAutoplayer:
                         False, result.reason, turns, cycle, self.state_reader.snapshot(), tuple(events)
                     )
                 turns += 1
-                if turns >= max_turns:
-                    return BattleLoopResult(
-                        False, "max_turns", turns, cycle, self.state_reader.snapshot(), tuple(events)
-                    )
                 last_signature = None
                 unchanged = 0
                 continue
