@@ -62,6 +62,22 @@ class Npc:
         return SimpleNamespace(success=True, reason="script_started", final_state=s, to_dict=lambda: {"success": True})
 
 
+class BattleAutoplayer:
+    def __init__(self, nav):
+        self.nav = nav
+        self.calls = []
+    def run(self, **kwargs):
+        self.calls.append(kwargs)
+        self.nav.reader.value = state(battle=False)
+        s = self.nav.reader.value
+        return SimpleNamespace(
+            success=True,
+            reason="battle_ended",
+            final_state=s,
+            to_dict=lambda: {"success": True, "reason": "battle_ended"},
+        )
+
+
 class MapDef:
     id = "MAP_A"
 
@@ -92,6 +108,37 @@ class ScenarioTests(unittest.TestCase):
         self.assertTrue(result.success)
         self.assertEqual(nav.bridge.presses, [("A", 2), (0, 3)])
         self.assertEqual(npc.calls, [{"local_id": 7}])
+
+    def test_runs_bounded_battle_step(self):
+        nav = Navigator()
+        nav.reader.value = state(battle=True)
+        autoplay = BattleAutoplayer(nav)
+        runner = ScenarioRunner(
+            nav, WorldNav(nav), Npc(nav), Index(), battle_autoplayer=autoplay
+        )
+        result = runner.run({
+            "name": "battle",
+            "steps": [
+                {"action": "assert", "in_battle": True},
+                {"action": "play_battle", "max_turns": 12, "stall_cycles": 9},
+                {"action": "assert", "in_battle": False},
+            ],
+        })
+        self.assertTrue(result.success)
+        self.assertEqual(autoplay.calls, [{
+            "max_turns": 12,
+            "max_cycles": 1024,
+            "wait_frames": 4,
+            "stall_cycles": 9,
+        }])
+
+    def test_battle_step_requires_autoplayer(self):
+        nav = Navigator()
+        nav.reader.value = state(battle=True)
+        runner = ScenarioRunner(nav, WorldNav(nav), Npc(nav), Index())
+        result = runner.run({"steps": [{"action": "play_battle"}]})
+        self.assertFalse(result.success)
+        self.assertEqual(result.reason, "battle_autoplayer_unavailable")
 
     def test_stops_on_failed_assert(self):
         nav = Navigator()
