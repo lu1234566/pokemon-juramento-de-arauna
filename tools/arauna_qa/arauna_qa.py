@@ -13,11 +13,13 @@ sys.path.insert(0, str(ROOT))
 
 from arauna_qa import (
     AraunaStateReader,
+    BattleReader,
     Explorer,
     MgbaBridge,
     Navigator,
     NpcInteractor,
     ObjectEventReader,
+    PartyReader,
     RepoMapIndex,
     ScenarioRunner,
     SymbolTable,
@@ -59,10 +61,12 @@ def repl(
     object_reader = ObjectEventReader(bridge, symbols)
     npc = NpcInteractor(navigator, object_reader, map_index)
     scenarios = ScenarioRunner(navigator, world_navigator, npc, map_index)
-    print("Connected. Commands: state, map, objects, talk INDEX, talklocal LOCAL_ID,")
-    print("scenario FILE, route TARGET_MAP, routeto TARGET_MAP, step DIR, walk DIR...,")
-    print("walkto X Y, explore [targets], press KEY [frames], keys KEY..., release,")
-    print("screenshot PATH, save PATH, load PATH, info, ping, reset, quit")
+    party_reader = PartyReader(bridge, symbols)
+    battle_reader = BattleReader(bridge, symbols)
+    print("Connected. Commands: state, map, objects, party, enemy, battle, talk INDEX,")
+    print("talklocal LOCAL_ID, scenario FILE, route TARGET_MAP, routeto TARGET_MAP, step DIR,")
+    print("walk DIR..., walkto X Y, explore [targets], press KEY [frames], keys KEY...,")
+    print("release, screenshot PATH, save PATH, load PATH, info, ping, reset, quit")
     while True:
         try:
             raw = input("arauna-qa> ").strip()
@@ -82,6 +86,12 @@ def repl(
                 print_map(reader, map_index)
             elif command == "objects":
                 print(json.dumps([obj.to_dict() for obj in npc.list_current()], indent=2, sort_keys=True))
+            elif command == "party":
+                print(json.dumps(party_reader.player().to_dict(), indent=2, sort_keys=True))
+            elif command == "enemy":
+                print(json.dumps(party_reader.enemy().to_dict(), indent=2, sort_keys=True))
+            elif command == "battle":
+                print(json.dumps(battle_reader.snapshot().to_dict(), indent=2, sort_keys=True))
             elif command == "talk":
                 if len(args) != 2:
                     raise ValueError("usage: talk OBJECT_INDEX")
