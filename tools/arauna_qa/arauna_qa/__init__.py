@@ -1,3 +1,4 @@
+from .exploration import ExplorationResult, Explorer
 from .navigation import MoveResult, Navigator, WalkResult
 from .protocol import BridgeInfo, MgbaBridge, ProtocolError, key_mask
 from .repo_map import CollisionGrid, LayoutDefinition, MapCell, MapDefinition, MapIssue, RepoMapIndex
@@ -9,6 +10,8 @@ __all__ = [
     "AraunaStateReader",
     "BridgeInfo",
     "CollisionGrid",
+    "ExplorationResult",
+    "Explorer",
     "LayoutDefinition",
     "MapCell",
     "MapDefinition",

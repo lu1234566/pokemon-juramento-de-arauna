@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parent
 REPO_ROOT = ROOT.parents[1]
 sys.path.insert(0, str(ROOT))
 
-from arauna_qa import AraunaStateReader, MgbaBridge, Navigator, RepoMapIndex, SymbolTable, key_mask
+from arauna_qa import AraunaStateReader, Explorer, MgbaBridge, Navigator, RepoMapIndex, SymbolTable, key_mask
 
 
 def print_state(reader: AraunaStateReader) -> None:
@@ -30,7 +30,8 @@ def print_map(reader: AraunaStateReader, map_index: RepoMapIndex) -> None:
 
 def repl(bridge: MgbaBridge, reader: AraunaStateReader, map_index: RepoMapIndex) -> None:
     navigator = Navigator(bridge, reader, map_index=map_index)
-    print("Connected. Commands: state, map, step DIR, walk DIR..., walkto X Y, press KEY [frames],")
+    explorer = Explorer(navigator, map_index)
+    print("Connected. Commands: state, map, step DIR, walk DIR..., walkto X Y, explore [targets], press KEY [frames],")
     print("keys KEY..., release, screenshot PATH, save PATH, load PATH, info, ping, reset, quit")
     while True:
         try:
@@ -62,6 +63,12 @@ def repl(bridge: MgbaBridge, reader: AraunaStateReader, map_index: RepoMapIndex)
                 if len(args) != 3:
                     raise ValueError("usage: walkto X Y")
                 result = navigator.walk_to(int(args[1]), int(args[2]))
+                print(json.dumps(result.to_dict(), indent=2, sort_keys=True))
+            elif command == "explore":
+                if len(args) > 2:
+                    raise ValueError("usage: explore [MAX_TARGETS]")
+                max_targets = int(args[1]) if len(args) == 2 else 64
+                result = explorer.explore_current_map(max_targets=max_targets)
                 print(json.dumps(result.to_dict(), indent=2, sort_keys=True))
             elif command == "press":
                 if len(args) not in {2, 3}:
