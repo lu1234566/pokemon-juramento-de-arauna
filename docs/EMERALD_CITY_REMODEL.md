@@ -1,34 +1,80 @@
-# Remodelação das cidades — base Emerald
+# Settlement block data — restoration and landscaping
 
-A progressão, ordem de rotas, conexões, scripts, eventos, warps, dimensões e geometria física de Pokémon Emerald permanecem intactas.
+## What had gone wrong
 
-A composição visual foi remixada somente com blocos/metatiles já presentes no próprio mapa vanilla; nenhum gráfico externo foi adicionado.
+Every settlement had been put through a pass that gave it a "different look" by
+shuffling its metatiles inside collision groups. Collision and elevation were
+preserved at every coordinate, so the towns stayed walkable and no script or
+warp ever broke — which is exactly why the damage went unnoticed for so long.
 
-| Cidade | Identidade | Clima | Composição visual alterada |
-|---|---|---|---:|
-| LittlerootTown | aldeia-jardim clara, compacta e acolhedora | `WEATHER_SUNNY_CLOUDS` | 107/400 (26.8%) |
-| OldaleTown | entroncamento rural aberto e ensolarado | `WEATHER_SUNNY` | 221/400 (55.2%) |
-| PetalburgCity | cidade-jardim úmida organizada em bairros | `WEATHER_RAIN` | 502/900 (55.8%) |
-| RustboroCity | centro urbano pétreo, denso e sombreado | `WEATHER_SHADE` | 1650/2400 (68.8%) |
-| DewfordTown | vila costeira compacta de brisa marítima | `WEATHER_SUNNY_CLOUDS` | 108/400 (27.0%) |
-| SlateportCity | porto comercial amplo, luminoso e irregular | `WEATHER_SUNNY` | 1672/2400 (69.7%) |
-| MauvilleCity | cruzamento urbano seco e movimentado | `WEATHER_SUNNY_CLOUDS` | 418/800 (52.2%) |
-| VerdanturfTown | vila verde de névoa baixa e jardins | `WEATHER_FOG_HORIZONTAL` | 169/400 (42.2%) |
-| FallarborTown | povoado de cinzas vulcânicas e terreno áspero | `WEATHER_VOLCANIC_ASH` | 152/400 (38.0%) |
-| LavaridgeTown | cidade termal quente, seca e mineral | `WEATHER_DROUGHT` | 140/400 (35.0%) |
-| FortreeCity | assentamento florestal chuvoso em plataformas | `WEATHER_RAIN` | 439/800 (54.9%) |
-| LilycoveCity | metrópole costeira em terraços sob chuva oceânica | `WEATHER_DOWNPOUR` | 2171/3200 (67.8%) |
-| MossdeepCity | ilha tecnológica clara, espaçada e marítima | `WEATHER_SUNNY` | 1681/3200 (52.5%) |
-| SootopolisCity | cidade-cratera dramática, vertical e tempestuosa | `WEATHER_RAIN_THUNDERSTORM` | 2330/3600 (64.7%) |
-| PacifidlogTown | aldeia flutuante chuvosa de passarelas | `WEATHER_RAIN` | 398/800 (49.8%) |
-| EverGrandeCity | santuário de altitude envolto em névoa | `WEATHER_FOG_HORIZONTAL` | 2409/3200 (75.3%) |
+But a building is not a collision mask. A house is eight specific blocks in
+eight specific relative positions; permuting blocks that happen to share a
+collision value scatters roof corners, wall segments and doorsteps across the
+grass as loose tiles. Sixteen settlements had between 3% and 75% of their block
+grid permuted this way.
 
-## Invariantes verificadas automaticamente
+The tool that did it, `tools/remodel_emerald_cities.py`, has been removed. Its
+success criterion was a minimum *percentage of blocks changed*, which is a
+measure of damage, not of design.
 
-- ordem e conexões de progressão do Emerald preservadas;
-- warps, object events, coord events, bg events e scripts preservados;
-- colisão e elevação preservadas bit a bit em todas as coordenadas;
-- bordas, portas e coordenadas sensíveis preservadas;
-- somente blocos existentes no mapa vanilla são reutilizados;
-- em `map.json`, somente `weather` é alterado;
-- nenhuma cidade pode ficar abaixo de 18% de composição visual alterada.
+## Restoration
+
+`tools/art/restore_city_layouts.py` puts the authored composition back for all
+sixteen settlements.
+
+Before writing a byte it verifies, per map, that:
+
+- the layout id, dimensions and both tilesets match the source composition;
+- the map connections match;
+- every `warp_events`, `object_events`, `coord_events` and `bg_events`
+  coordinate matches.
+
+All sixteen passed that check, which is what makes the restoration safe: each
+door lands back under its doorway, each NPC stands on the ground it was placed
+on, and the `setmetatile` coordinates in the Lilycove and Sootopolis scripts
+(the Wailmer that blocks the shore, the gym doors) address the blocks they were
+written for again.
+
+| Settlement | Blocks restored |
+|---|---:|
+| VILA AMANHECER (LittlerootTown) | 180 / 400 |
+| VILA DA PASSAGEM (OldaleTown) | 221 / 400 |
+| PAMPA DA ESPERA (PetalburgCity) | 502 / 900 |
+| SERRA DO UIVO (RustboroCity) | 1650 / 2400 |
+| PORTO DAS REDES (DewfordTown) | 108 / 400 |
+| PORTO DO SAL (SlateportCity) | 66 / 2400 |
+| ENCRUZILHADA (MauvilleCity) | 418 / 800 |
+| VALE DO SILENCIO (VerdanturfTown) | 169 / 400 |
+| CAMPO DAS CINZAS (FallarborTown) | 152 / 400 |
+| CASA DA CINZA (LavaridgeTown) | 140 / 400 |
+| MATA DO MEIO (FortreeCity) | 439 / 800 |
+| BAIA DAS LUZES (LilycoveCity) | 2171 / 3200 |
+| MISSOES DO CEU (MossdeepCity) | 1681 / 3200 |
+| AGUAS DE M'BOI (SootopolisCity) | 2330 / 3600 |
+| CASA DA FOGUEIRA (PacifidlogTown) | 398 / 800 |
+| ESTR. JURAMENTO (EverGrandeCity) | 2409 / 3200 |
+
+13034 blocks in total.
+
+## Landscaping
+
+`tools/art/plant_town_gardens.py` adds hand-placed flower beds on top of the
+restored composition. It changes only the metatile id of a block and keeps the
+collision and elevation bits exactly as they are, so it cannot alter where the
+player may walk, and it refuses to plant on anything that is not plain grass.
+
+Beds are written out coordinate by coordinate as compact shapes — a strip
+against a building front, a small patch of meadow — rather than sprinkled by a
+random pass. That is the difference between landscaping and noise.
+
+VILA AMANHECER has beds flanking the laboratory door that mirror the ones
+already there, a bed at the front of each house away from the doorstep, and
+three meadow patches breaking up the empty fields: 20 blocks.
+
+## Looking at a map without booting the game
+
+`tools/audit/render_map.py LAYOUT_LITTLEROOT_TOWN out.png` composes any map's
+block grid into a PNG the same way the GBA does — two layers per metatile, tile
+and palette split between the primary and secondary tilesets, colour index 0
+transparent on the upper layer. It renders from any checkout via `--root`, so
+two compositions can be put side by side.
