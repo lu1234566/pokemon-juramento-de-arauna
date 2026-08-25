@@ -16,6 +16,8 @@ from arauna_qa import (
     Explorer,
     MgbaBridge,
     Navigator,
+    NpcInteractor,
+    ObjectEventReader,
     RepoMapIndex,
     SymbolTable,
     WorldNavigator,
@@ -43,14 +45,22 @@ def print_map(reader: AraunaStateReader, map_index: RepoMapIndex) -> None:
     print(json.dumps(map_index.summarize(map_def.id), indent=2, sort_keys=True))
 
 
-def repl(bridge: MgbaBridge, reader: AraunaStateReader, map_index: RepoMapIndex) -> None:
+def repl(
+    bridge: MgbaBridge,
+    reader: AraunaStateReader,
+    map_index: RepoMapIndex,
+    symbols: SymbolTable,
+) -> None:
     navigator = Navigator(bridge, reader, map_index=map_index)
     explorer = Explorer(navigator, map_index)
     world_router = WorldRouter(map_index)
     world_navigator = WorldNavigator(navigator, map_index, world_router)
-    print("Connected. Commands: state, map, route TARGET_MAP, routeto TARGET_MAP, step DIR,")
-    print("walk DIR..., walkto X Y, explore [targets], press KEY [frames], keys KEY...,")
-    print("release, screenshot PATH, save PATH, load PATH, info, ping, reset, quit")
+    object_reader = ObjectEventReader(bridge, symbols)
+    npc = NpcInteractor(navigator, object_reader, map_index)
+    print("Connected. Commands: state, map, objects, talk INDEX, talklocal LOCAL_ID,")
+    print("route TARGET_MAP, routeto TARGET_MAP, step DIR, walk DIR..., walkto X Y,")
+    print("explore [targets], press KEY [frames], keys KEY..., release, screenshot PATH,")
+    print("save PATH, load PATH, info, ping, reset, quit")
     while True:
         try:
             raw = input("arauna-qa> ").strip()
@@ -68,6 +78,18 @@ def repl(bridge: MgbaBridge, reader: AraunaStateReader, map_index: RepoMapIndex)
                 print_state(reader)
             elif command == "map":
                 print_map(reader, map_index)
+            elif command == "objects":
+                print(json.dumps([obj.to_dict() for obj in npc.list_current()], indent=2, sort_keys=True))
+            elif command == "talk":
+                if len(args) != 2:
+                    raise ValueError("usage: talk OBJECT_INDEX")
+                result = npc.interact(object_index=int(args[1]))
+                print(json.dumps(result.to_dict(), indent=2, sort_keys=True))
+            elif command == "talklocal":
+                if len(args) != 2:
+                    raise ValueError("usage: talklocal LOCAL_ID")
+                result = npc.interact(local_id=int(args[1]))
+                print(json.dumps(result.to_dict(), indent=2, sort_keys=True))
             elif command == "route":
                 if len(args) != 2:
                     raise ValueError("usage: route TARGET_MAP")
@@ -160,7 +182,7 @@ def main() -> int:
         elif args.once == "ping":
             print("pong" if bridge.ping() else "unexpected response")
         else:
-            repl(bridge, reader, map_index)
+            repl(bridge, reader, map_index, symbols)
     finally:
         bridge.close()
     return 0

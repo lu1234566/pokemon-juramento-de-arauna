@@ -1,5 +1,7 @@
 from .exploration import ExplorationResult, Explorer
+from .interaction import InteractionResult, NpcInteractor
 from .navigation import MoveResult, Navigator, WalkResult
+from .objects import ObjectEventReader, ObjectEventState
 from .protocol import BridgeInfo, MgbaBridge, ProtocolError, key_mask
 from .repo_map import CollisionGrid, LayoutDefinition, MapCell, MapDefinition, MapIssue, RepoMapIndex
 from .state import AraunaState, AraunaStateReader
@@ -15,6 +17,7 @@ __all__ = [
     "CollisionGrid",
     "ExplorationResult",
     "Explorer",
+    "InteractionResult",
     "LayoutDefinition",
     "MapCell",
     "MapDefinition",
@@ -23,6 +26,9 @@ __all__ = [
     "MoveResult",
     "MgbaBridge",
     "Navigator",
+    "NpcInteractor",
+    "ObjectEventReader",
+    "ObjectEventState",
     "ProtocolError",
     "RepoMapIndex",
     "StateWatchdog",
