@@ -11,28 +11,44 @@ ROOT = Path(__file__).resolve().parent
 REPO_ROOT = ROOT.parents[1]
 sys.path.insert(0, str(ROOT))
 
-from arauna_qa import AraunaStateReader, Explorer, MgbaBridge, Navigator, RepoMapIndex, SymbolTable, key_mask
+from arauna_qa import (
+    AraunaStateReader,
+    Explorer,
+    MgbaBridge,
+    Navigator,
+    RepoMapIndex,
+    SymbolTable,
+    WorldRouter,
+    key_mask,
+)
 
 
 def print_state(reader: AraunaStateReader) -> None:
     print(json.dumps(reader.snapshot().to_dict(), indent=2, sort_keys=True))
 
 
-def print_map(reader: AraunaStateReader, map_index: RepoMapIndex) -> None:
+def current_map(reader: AraunaStateReader, map_index: RepoMapIndex):
     state = reader.snapshot()
     if state.map_group is None or state.map_num is None:
         raise RuntimeError("runtime map group/number are unavailable")
     map_def = map_index.from_runtime(state.map_group, state.map_num)
     if map_def is None:
         raise RuntimeError(f"unknown runtime map ({state.map_group},{state.map_num})")
+    return state, map_def
+
+
+def print_map(reader: AraunaStateReader, map_index: RepoMapIndex) -> None:
+    _, map_def = current_map(reader, map_index)
     print(json.dumps(map_index.summarize(map_def.id), indent=2, sort_keys=True))
 
 
 def repl(bridge: MgbaBridge, reader: AraunaStateReader, map_index: RepoMapIndex) -> None:
     navigator = Navigator(bridge, reader, map_index=map_index)
     explorer = Explorer(navigator, map_index)
-    print("Connected. Commands: state, map, step DIR, walk DIR..., walkto X Y, explore [targets], press KEY [frames],")
-    print("keys KEY..., release, screenshot PATH, save PATH, load PATH, info, ping, reset, quit")
+    world_router = WorldRouter(map_index)
+    print("Connected. Commands: state, map, route TARGET_MAP, step DIR, walk DIR..., walkto X Y,")
+    print("explore [targets], press KEY [frames], keys KEY..., release, screenshot PATH,")
+    print("save PATH, load PATH, info, ping, reset, quit")
     while True:
         try:
             raw = input("arauna-qa> ").strip()
@@ -50,6 +66,15 @@ def repl(bridge: MgbaBridge, reader: AraunaStateReader, map_index: RepoMapIndex)
                 print_state(reader)
             elif command == "map":
                 print_map(reader, map_index)
+            elif command == "route":
+                if len(args) != 2:
+                    raise ValueError("usage: route TARGET_MAP")
+                _, map_def = current_map(reader, map_index)
+                route = world_router.plan(map_def.id, args[1])
+                if route is None:
+                    print(json.dumps({"route": None, "reason": "unreachable"}, indent=2))
+                else:
+                    print(json.dumps(route.to_dict(), indent=2, sort_keys=True))
             elif command == "step":
                 if len(args) != 2:
                     raise ValueError("usage: step DIRECTION")
