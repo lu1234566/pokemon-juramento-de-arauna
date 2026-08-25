@@ -1,29 +1,49 @@
-# M'Boi title-screen background — not yet installed
+# M'Boi title-screen background
 
 `mboi_source.png` is the M'Boi serpent drawn to replace the Rayquaza
-silhouette behind the title logo. It is 128x128 with 10 colours, which is the
-right shape, and it is **not** wired into the build, because dropping it over
-`graphics/title_screen/rayquaza.png` renders scrambled. Two reasons, both
-verified in the emulator:
+silhouette behind the title logo. It is the **source** art, not a drop-in
+replacement for `graphics/title_screen/rayquaza.png` — that file is a
+deduplicated tile bank, and `rayquaza.bin` is a 32x32 tilemap authored
+against it. Overwriting the bank alone reassembles the new tiles into noise,
+which is what happened the first time this was tried.
 
-**The tilemap is not an identity map.** `rayquaza.bin` is a 32x32 tilemap of
-1024 entries that rebuilds the on-screen image from only 191 distinct tiles,
-with horizontal flips. It was authored against the original art's deduplicated
-tile bank. A freshly drawn 128x128 image produces 256 tiles in raster order,
-so the existing tilemap reassembles them into noise.
+`tools/art/build_title_background.py` generates the whole set together —
+tile bank, tilemap and shared palette — from this source:
 
-**The palette does not match.** The background loads
-`rayquaza_and_clouds.gbapal`, shared with the clouds layer. Every index the new
-art uses differs from that palette, so even correctly ordered tiles would come
-out the wrong colour — and touching the shared palette would recolour the
-clouds too.
+    python3 tools/art/build_title_background.py [scale] [x] [y]
+    # currently installed: 1.45 at (26, 58) -> 283 tiles
 
-To finish it, one of:
+The sky gradient is rebuilt from a band table measured off the original
+background rather than read back from `rayquaza.png`, so the tool is
+idempotent and the serpent can be repositioned by re-running it.
 
-- redraw the serpent *into* the existing tile bank, keeping `rayquaza.bin` and
-  `rayquaza_and_clouds.pal` valid; or
-- generate a new tilemap and palette from this art and update `rayquaza.bin`,
-  the palette, and the clouds art together as one set.
+## Why the serpent is a silhouette
 
-The subtitle (`emerald_version.png`) had neither problem: it is loaded as a
-sprite sheet with its own palette, so the repaint dropped straight in.
+Palette 14 is shared with the clouds layer, which uses indices 0, 2 and 12.
+Those are left untouched. The serpent uses only:
+
+| index | role | note |
+|-------|------|------|
+| 11 | darkest body | unchanged from the Rayquaza art |
+| 1 | mid-dark body | unused by either layer before, repainted |
+| 3 | mid body | unused by either layer before, repainted |
+| 15 | markings | `UpdateLegendaryMarkingColor` repaints this every 4th frame, so the belly line pulses gold with no new code |
+| 2 | eye highlight | white, also a cloud colour |
+
+Indices 1 and 3 were verified free: `rayquaza.png` uses 0,2,4-11,15 and
+`clouds.png` uses 0,2,12, and the logo is 8bpp with a maximum index of 223,
+below palette 14's range at 224-239.
+
+## Composition
+
+The logo and subtitle occupy roughly the top half of the 240x160 screen, so
+only about 78 rows are clear. The whole coiled serpent cannot fit in that
+band at a readable size, so it is placed the way Emerald places Rayquaza:
+head in the clear band below the subtitle, body running off the bottom of
+the frame.
+
+## Still open
+
+The subtitle (`emerald_version.png`) was already repainted — it is a sprite
+sheet with its own palette, so it dropped straight in. The copyright strip
+in `press_start.png` and the ROM header are tracked separately.
