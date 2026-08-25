@@ -1,0 +1,43 @@
+{
+  "name": "replace_with_real_npc_battle",
+  "template": true,
+  "notes": "Replace MAP_ID and LOCAL_ID with a real trainer/object from the target Arauna build before running.",
+  "steps": [
+    {
+      "action": "goto_map",
+      "map": "MAP_ID"
+    },
+    {
+      "action": "assert",
+      "map": "MAP_ID",
+      "in_battle": false
+    },
+    {
+      "action": "talk",
+      "local_id": 1
+    },
+    {
+      "action": "assert",
+      "in_battle": true
+    },
+    {
+      "action": "screenshot",
+      "path": "/tmp/arauna-npc-battle-start.png"
+    },
+    {
+      "action": "play_battle",
+      "max_turns": 64,
+      "max_cycles": 2048,
+      "wait_frames": 4,
+      "stall_cycles": 100
+    },
+    {
+      "action": "assert",
+      "in_battle": false
+    },
+    {
+      "action": "screenshot",
+      "path": "/tmp/arauna-npc-battle-end.png"
+    }
+  ]
+}
