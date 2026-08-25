@@ -54,7 +54,7 @@ class ScenarioResult:
 
 
 class ScenarioRunner:
-    """Execute declarative QA steps without generic RAM writes."""
+    """Execute declarative QA steps without generic RAM writes or blind confirms."""
 
     def __init__(
         self,
@@ -115,6 +115,131 @@ class ScenarioRunner:
                 return False, f"{field}_mismatch", checks
         return True, "asserted", checks
 
+    @staticmethod
+    def _dialogue_limits(raw: dict[str, Any]) -> dict[str, int]:
+        return {
+            "max_advances": int(raw.get("max_advances", raw.get("max_presses", 64))),
+            "max_cycles": int(raw.get("max_cycles", 1024)),
+            "wait_frames": int(raw.get("wait_frames", 2)),
+            "stall_cycles": int(raw.get("stall_cycles", 120)),
+            "press_frames": int(raw.get("press_frames", 2)),
+        }
+
+    def _advance_to_battle(
+        self,
+        index: int,
+        action: str,
+        raw: dict[str, Any],
+    ) -> ScenarioStepResult:
+        if self.dialogue_advancer is None:
+            state = self.navigator.reader.snapshot()
+            return ScenarioStepResult(index, action, False, "dialogue_advancer_unavailable", state, {})
+
+        limits = self._dialogue_limits(raw)
+        max_phases = int(raw.get("max_phases", 64))
+        settle_frames = int(raw.get("settle_frames", 4))
+        if min(*limits.values(), max_phases, settle_frames) < 1:
+            state = self.navigator.reader.snapshot()
+            return ScenarioStepResult(index, action, False, "invalid_advance_limits", state, {})
+
+        initial = self.navigator.reader.snapshot()
+        if initial.in_battle:
+            return ScenarioStepResult(
+                index, action, True, "already_in_battle", initial,
+                {"verified_advances": 0, "phases": []},
+            )
+        if not initial.script_enabled and not initial.field_controls_locked:
+            return ScenarioStepResult(index, action, False, "no_script_to_advance", initial, {})
+
+        initial_map = self._current_map_id(initial)
+        remaining_advances = limits["max_advances"]
+        phases: list[dict[str, Any]] = []
+
+        for phase in range(1, max_phases + 1):
+            before = self.navigator.reader.snapshot()
+            if before.in_battle:
+                return ScenarioStepResult(
+                    index, action, True, "battle_started", before,
+                    {
+                        "verified_advances": limits["max_advances"] - remaining_advances,
+                        "phases": phases,
+                    },
+                )
+
+            actual_map = self._current_map_id(before)
+            if actual_map != initial_map:
+                return ScenarioStepResult(
+                    index, action, False, "map_changed_before_battle", before,
+                    {
+                        "verified_advances": limits["max_advances"] - remaining_advances,
+                        "initial_map": initial_map,
+                        "actual_map": actual_map,
+                        "phases": phases,
+                    },
+                )
+
+            if phase > 1 and not before.script_enabled and not before.field_controls_locked:
+                return ScenarioStepResult(
+                    index, action, False, "script_ended_before_battle", before,
+                    {
+                        "verified_advances": limits["max_advances"] - remaining_advances,
+                        "phases": phases,
+                    },
+                )
+
+            if remaining_advances <= 0:
+                return ScenarioStepResult(
+                    index, action, False, "max_verified_advances", before,
+                    {"verified_advances": limits["max_advances"], "phases": phases},
+                )
+
+            phase_limits = dict(limits)
+            phase_limits["max_advances"] = remaining_advances
+            result = self.dialogue_advancer.run(**phase_limits)
+            remaining_advances -= result.advances
+            phases.append({"phase": phase, "dialogue": result.to_dict()})
+
+            if result.reason == "battle_started":
+                return ScenarioStepResult(
+                    index, action, True, "battle_started", result.final_state,
+                    {
+                        "verified_advances": limits["max_advances"] - remaining_advances,
+                        "phases": phases,
+                    },
+                )
+            if not result.success:
+                return ScenarioStepResult(
+                    index, action, False, f"dialogue_{result.reason}", result.final_state,
+                    {
+                        "verified_advances": limits["max_advances"] - remaining_advances,
+                        "phases": phases,
+                    },
+                )
+
+            # The text printer can finish one frame before the script starts the next
+            # message or battle. Advance only no-input frames here. If a Yes/No/menu
+            # follows, it remains untouched and this bounded phase loop fails safely.
+            self.navigator.bridge.press(0, frames=settle_frames)
+            after = self.navigator.reader.snapshot()
+            if after.in_battle:
+                return ScenarioStepResult(
+                    index, action, True, "battle_started", after,
+                    {
+                        "verified_advances": limits["max_advances"] - remaining_advances,
+                        "phases": phases,
+                    },
+                )
+
+        final_state = self.navigator.reader.snapshot()
+        return ScenarioStepResult(
+            index, action, False, "battle_not_reached_without_safe_input", final_state,
+            {
+                "verified_advances": limits["max_advances"] - remaining_advances,
+                "initial_map": initial_map,
+                "phases": phases,
+            },
+        )
+
     def _run_step(self, index: int, raw: dict[str, Any]) -> ScenarioStepResult:
         action = str(raw.get("action", "")).lower()
         if not action:
@@ -127,20 +252,14 @@ class ScenarioRunner:
                 state = self.navigator.reader.snapshot()
                 return ScenarioStepResult(index, action, False, "map_missing", state, {})
             result = self.world_navigator.route_to(str(target))
-            return ScenarioStepResult(
-                index, action, result.reached, result.reason, result.final_state, result.to_dict()
-            )
+            return ScenarioStepResult(index, action, result.reached, result.reason, result.final_state, result.to_dict())
 
         if action == "walk_to":
             if "x" not in raw or "y" not in raw:
                 state = self.navigator.reader.snapshot()
                 return ScenarioStepResult(index, action, False, "coordinates_missing", state, {})
-            result = self.navigator.walk_to(
-                int(raw["x"]), int(raw["y"]), max_steps=int(raw.get("max_steps", 256))
-            )
-            return ScenarioStepResult(
-                index, action, result.reached, result.reason, result.final_state, result.to_dict()
-            )
+            result = self.navigator.walk_to(int(raw["x"]), int(raw["y"]), max_steps=int(raw.get("max_steps", 256)))
+            return ScenarioStepResult(index, action, result.reached, result.reason, result.final_state, result.to_dict())
 
         if action == "talk":
             if "object_index" in raw:
@@ -150,31 +269,17 @@ class ScenarioRunner:
             else:
                 state = self.navigator.reader.snapshot()
                 return ScenarioStepResult(index, action, False, "target_missing", state, {})
-            return ScenarioStepResult(
-                index, action, result.success, result.reason, result.final_state, result.to_dict()
-            )
+            return ScenarioStepResult(index, action, result.success, result.reason, result.final_state, result.to_dict())
 
-        if action in {"advance_to_battle", "advance_until_battle"}:
+        if action in {"advance_dialogue", "dialogue_auto"}:
             if self.dialogue_advancer is None:
                 state = self.navigator.reader.snapshot()
                 return ScenarioStepResult(index, action, False, "dialogue_advancer_unavailable", state, {})
-            limits = {
-                "max_advances": int(raw.get("max_advances", raw.get("max_presses", 16))),
-                "max_cycles": int(raw.get("max_cycles", 1024)),
-                "wait_frames": int(raw.get("wait_frames", raw.get("settle_frames", 2))),
-                "stall_cycles": int(raw.get("stall_cycles", 120)),
-                "press_frames": int(raw.get("press_frames", 2)),
-            }
-            result = self.dialogue_advancer.run(**limits)
-            success = result.success and result.reason == "battle_started"
-            reason = result.reason if success else (
-                "dialogue_finished_before_battle"
-                if result.success and result.reason in {"dialogue_finished", "printer_inactive"}
-                else result.reason
-            )
-            return ScenarioStepResult(
-                index, action, success, reason, result.final_state, result.to_dict()
-            )
+            result = self.dialogue_advancer.run(**self._dialogue_limits(raw))
+            return ScenarioStepResult(index, action, result.success, result.reason, result.final_state, result.to_dict())
+
+        if action in {"advance_to_battle", "advance_until_battle"}:
+            return self._advance_to_battle(index, action, raw)
 
         if action in {"play_battle", "playbattle"}:
             if self.battle_autoplayer is None:
@@ -187,9 +292,7 @@ class ScenarioRunner:
                 "stall_cycles": int(raw.get("stall_cycles", 80)),
             }
             result = self.battle_autoplayer.run(**limits)
-            return ScenarioStepResult(
-                index, action, result.success, result.reason, result.final_state, result.to_dict()
-            )
+            return ScenarioStepResult(index, action, result.success, result.reason, result.final_state, result.to_dict())
 
         if action == "press":
             key = raw.get("key")
@@ -199,9 +302,7 @@ class ScenarioRunner:
             frames = int(raw.get("frames", 2))
             self.navigator.bridge.press(str(key), frames=frames)
             state = self.navigator.reader.snapshot()
-            return ScenarioStepResult(
-                index, action, True, "pressed", state, {"key": str(key), "frames": frames}
-            )
+            return ScenarioStepResult(index, action, True, "pressed", state, {"key": str(key), "frames": frames})
 
         if action == "wait":
             frames = int(raw.get("frames", 1))
