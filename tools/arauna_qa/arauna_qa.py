@@ -19,6 +19,8 @@ from arauna_qa import (
     BattleMenuReader,
     BattleMetadataReader,
     BattleReader,
+    DialogueAdvancer,
+    DialogueReader,
     Explorer,
     MgbaBridge,
     Navigator,
@@ -66,6 +68,8 @@ def repl(
     world_navigator = WorldNavigator(navigator, map_index, world_router)
     object_reader = ObjectEventReader(bridge, symbols)
     npc = NpcInteractor(navigator, object_reader, map_index)
+    dialogue_reader = DialogueReader(bridge, symbols)
+    dialogue_advancer = DialogueAdvancer(bridge, reader, dialogue_reader)
     party_reader = PartyReader(bridge, symbols)
     battle_reader = BattleReader(bridge, symbols)
     battle_metadata = BattleMetadataReader(bridge, symbols)
@@ -76,16 +80,21 @@ def repl(
         bridge, reader, battle_reader, battle_menu, battle_input
     )
     scenarios = ScenarioRunner(
-        navigator, world_navigator, npc, map_index, battle_autoplayer=battle_autoplayer
+        navigator,
+        world_navigator,
+        npc,
+        map_index,
+        battle_autoplayer=battle_autoplayer,
+        dialogue_advancer=dialogue_advancer,
     )
     reporter = ScenarioReporter(bridge)
 
-    print("Connected. Commands: state, map, objects, party, enemy, battle, battleprompt,")
-    print("advise, battlechoose SLOT, battleauto, playbattle [MAX_TURNS], talk INDEX,")
-    print("talklocal LOCAL_ID, scenario FILE [REPORT_DIR], route TARGET_MAP, routeto TARGET_MAP,")
-    print("step DIR, walk DIR..., walkto X Y, explore [targets], press KEY [frames],")
-    print("keys KEY..., release, screenshot PATH, save PATH, load PATH, info, ping,")
-    print("reset, quit")
+    print("Connected. Commands: state, map, objects, dialogue, dialogueadvance, dialoguerun,")
+    print("party, enemy, battle, battleprompt, advise, battlechoose SLOT, battleauto,")
+    print("playbattle [MAX_TURNS], talk INDEX, talklocal LOCAL_ID, scenario FILE [REPORT_DIR],")
+    print("route TARGET_MAP, routeto TARGET_MAP, step DIR, walk DIR..., walkto X Y,")
+    print("explore [targets], press KEY [frames], keys KEY..., release, screenshot PATH,")
+    print("save PATH, load PATH, info, ping, reset, quit")
     while True:
         try:
             raw = input("arauna-qa> ").strip()
@@ -105,6 +114,17 @@ def repl(
                 print_map(reader, map_index)
             elif command == "objects":
                 print(json.dumps([obj.to_dict() for obj in npc.list_current()], indent=2, sort_keys=True))
+            elif command == "dialogue":
+                print(json.dumps(dialogue_reader.snapshot().to_dict(), indent=2, sort_keys=True))
+            elif command == "dialogueadvance":
+                result = dialogue_advancer.advance_once()
+                print(json.dumps(result.to_dict(), indent=2, sort_keys=True))
+            elif command == "dialoguerun":
+                if len(args) > 2:
+                    raise ValueError("usage: dialoguerun [MAX_ADVANCES]")
+                max_advances = int(args[1]) if len(args) == 2 else 64
+                result = dialogue_advancer.run(max_advances=max_advances)
+                print(json.dumps(result.to_dict(), indent=2, sort_keys=True))
             elif command == "party":
                 print(json.dumps(party_reader.player().to_dict(), indent=2, sort_keys=True))
             elif command == "enemy":
