@@ -115,6 +115,14 @@ class Session:
         for _ in range(steps):
             self.hold(button)
 
+    def warp(self, map_group: int, map_num: int, x: int = 5, y: int = 5,
+             settle: float = 3.0) -> None:
+        """Warp and let the map settle, with its weather actually running."""
+        self.probe.warp(map_group, map_num, x, y)
+        self.probe.run(settle)
+        self.probe.start_weather()
+        self.probe.run(2.5)
+
     def dex_goto(self, national_dex: int) -> int:
         """Scroll the open Pokedex list to an entry with the D-pad.
 

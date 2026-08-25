@@ -37,6 +37,12 @@ SB1_FLAGS = 0x1270      # u8 flags[NUM_FLAG_BYTES]
 SB1_SEEN1 = 0x988
 SB1_SEEN2 = 0x3B24
 SB1_VARS = 0x139C       # u16 vars[VARS_COUNT], indexed from VARS_START 0x4000
+SB1_WEATHER = 0x2E      # u8 weather, the saved weather for the current map
+# struct Weather, offsets computed from include/field_weather.h: the sprite
+# union (512 bytes), the two 19x32 colour map tables, then the small fields.
+W_CURR = 0x6D0
+W_NEXT = 0x6D1
+W_CHANGE_COMPLETE = 0x6D3
 VAR_NATIONAL_DEX = 0x4046
 VARS_START = 0x4000
 SB2_POKEDEX = 0x18      # struct Pokedex
@@ -208,6 +214,23 @@ class Probe:
         self.write(self.sym["gMain"] + 0x438, b"\x00")          # struct Main.state
         self.write(self.sym["gMain"] + 4,
                    struct.pack("<I", self.sym["CB2_LoadMap"] | 1))
+
+    def start_weather(self) -> int:
+        """Make the weather effect actually appear after a warp.
+
+        A real warp ends in DoCurrentWeather(), which hands the map's weather
+        to SetNextWeather and so runs its init. Jumping straight to CB2_LoadMap
+        skips that: currWeather and nextWeather come out correct but equal, the
+        weather task sees no transition to run, and the sprites and palette are
+        never loaded -- the ash route arrives with no ash. This mirrors what
+        SetNextWeather does, so the effect starts.
+        """
+        weather = self.u32(self.sym["gWeatherPtr"])
+        target = self.u8(weather + W_CURR)
+        self.write(weather + W_CURR, b"\x00")                  # WEATHER_NONE
+        self.write(weather + W_NEXT, bytes([target]))
+        self.write(weather + W_CHANGE_COMPLETE, b"\x00")
+        return target
 
     def set_flag(self, flag: int) -> None:
         sb1 = self._save_block("gSaveBlock1Ptr")
