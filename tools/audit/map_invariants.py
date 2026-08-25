@@ -11,8 +11,12 @@ and it can be stated exactly, per block:
   * behaviour frozen - the metatile behaviour stays identical, so a doorway
     stays a doorway, water stays water, tall grass stays tall grass and no
     patch of decoration quietly becomes an encounter tile;
-  * seams frozen - the strip a neighbouring route is drawn against keeps its
-    exact blocks, so the join stays seamless.
+  * seams accounted for - a connection is defined by the two maps' dimensions
+    and its offset, never by what the blocks at the join look like, and their
+    physics and behaviour are frozen like everything else. So restyling them
+    cannot break a join; it can only make the change visible at the town's
+    edge, which is a decision, not an accident. They are counted and reported
+    rather than forbidden.
 
 What is left free is the metatile id, which is the entire look of the town:
 walls, roofs, ground, vegetation, water surface, cliffs. That is enough to
@@ -329,6 +333,7 @@ def verify(city, ref="HEAD", free_structure=False, root=ROOT):
     campaign = was.campaign_cells()
     frozen_physics = campaign if free_structure else None
     changed = 0
+    seam_restyled = 0
 
     for y in range(now.h):
         for x in range(now.w):
@@ -344,7 +349,7 @@ def verify(city, ref="HEAD", free_structure=False, root=ROOT):
                 problems.append("%d,%d: behaviour %d -> %d on a tile the campaign uses"
                                 % (x, y, was.behavior(x, y), now.behavior(x, y)))
             if (x, y) in was.seams():
-                problems.append("%d,%d: route seam changed; the join with the neighbour would break" % (x, y))
+                seam_restyled += 1
 
     for kind, cells in (("warp", was.protected()["warps"]), ("sign", was.protected()["bg_events"])):
         for x, y in sorted(cells):
@@ -368,7 +373,7 @@ def verify(city, ref="HEAD", free_structure=False, root=ROOT):
         if p not in seen:
             seen.add(p)
             unique.append(p)
-    return unique, changed
+    return unique, changed, seam_restyled
 
 
 def report(city, root=ROOT):
@@ -415,13 +420,14 @@ def main():
         cities = [args.city] if args.city else CITIES
         failed = 0
         for city in cities:
-            problems, changed = verify(city, args.verify, args.free_structure)
+            problems, changed, seams = verify(city, args.verify, args.free_structure)
             for p in problems[:12]:
                 print("  " + p)
             if len(problems) > 12:
                 print("  ... and %d more" % (len(problems) - 12))
-            print("%-16s %5d blocks restyled  %s" % (city, changed,
-                  "FAIL (%d)" % len(problems) if problems else "OK"))
+            print("%-16s %5d blocks restyled (%3d on a route seam)  %s"
+                  % (city, changed, seams,
+                     "FAIL (%d)" % len(problems) if problems else "OK"))
             failed += bool(problems)
         return 1 if failed else 0
     report(args.city)

@@ -22,6 +22,7 @@ from __future__ import annotations
 
 import argparse
 import os
+import struct
 import sys
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__))))
@@ -56,39 +57,108 @@ GRASS_GROUND = SAND | {0x001, 0x002, 0x004,
 # ground, and a street runs straight over them.
 PETALBURG_GROUND = {0x201, 0x252, 0x253}
 
+# Emerald's lawn, in every block it is laid as. The plain ones all become a
+# biome's plain lawn; the two that carry a tree's shadow become that biome's
+# own shadowed pair, so a tree line does not sit on a strip of the old green.
+LAWN_PLAIN = {0x001, 0x002, 0x1D0, 0x1D1, 0x1D2, 0x1D8, 0x1D9, 0x1DA,
+              0x1E0, 0x1E1, 0x1E2}
+LAWN_SHADOWED = (0x1CE, 0x1CF)
+
+# Emerald's flowerbed is half lawn by pixel count - the petals are drawn on a
+# tile that carries the old green with them - and recolouring it would cost
+# four more tiles per biome, which the primary tileset does not have. Against a
+# dark or a yellow lawn each bed would read as a pale hole, so in those biomes
+# the beds go back to being grass. The pale biome is close enough to the green
+# the petals were drawn against that they still sit right.
+FLOWERBED = 0x004
+FOLD_FLOWERBEDS_IN = {"MATA", "CERRADO"}
+
 # Arauna's settlements are joined by packed earth, not by Hoenn's paving. The
 # street plan is drawn from each town's own doors and exits; a paved city gets
 # green squares cut into it instead, because it has streets already.
 THEMES = {
-    "LittlerootTown": {"mode": "street", "material": SAND, "forged": "TERRA",
+    # Its pale meadow patches were planted against Emerald's mint; against the
+    # forest green they read as holes, so they go back to being lawn.
+    "LittlerootTown": {"mode": "street", "biome": "MATA", "lawn_extra": {0x201},
+                       "material": SAND, "forged": "TERRA",
                        "ground": GRASS_GROUND | PETALBURG_GROUND,
                        "plaza": 1, "verge": 0x004, "verge_step": 2},
-    "OldaleTown": {"mode": "street", "material": SAND, "forged": "TERRA",
+    "OldaleTown": {"mode": "street", "biome": "CERRADO", "material": SAND, "forged": "TERRA",
                        "ground": GRASS_GROUND | PETALBURG_GROUND,
                    "plaza": 1, "lanes": 1, "verge": 0x004, "verge_step": 3},
-    "PetalburgCity": {"mode": "street", "material": SAND, "forged": "TERRA",
+    "PetalburgCity": {"mode": "street", "biome": "PAMPA", "material": SAND, "forged": "TERRA",
                        "ground": GRASS_GROUND | PETALBURG_GROUND,
                       "plaza": 2, "verge": 0x004, "verge_step": 3},
-    "VerdanturfTown": {"mode": "street", "material": SAND, "forged": "TERRA", "ground": GRASS_GROUND,
+    "VerdanturfTown": {"mode": "street", "biome": "MATA", "material": SAND, "forged": "TERRA", "ground": GRASS_GROUND,
                        "plaza": 1, "verge": 0x004, "verge_step": 3},
-    "LavaridgeTown": {"mode": "street", "material": SAND, "forged": "TERRA", "ground": GRASS_GROUND,
+    "LavaridgeTown": {"mode": "street", "biome": "CERRADO", "material": SAND, "forged": "TERRA", "ground": GRASS_GROUND,
                       "plaza": 1, "verge": 0x004, "verge_step": 4},
-    "MossdeepCity": {"mode": "street", "material": SAND, "forged": "TERRA", "ground": GRASS_GROUND,
+    "MossdeepCity": {"mode": "street", "biome": "PAMPA", "material": SAND, "forged": "TERRA", "ground": GRASS_GROUND,
                      "plaza": 2, "verge": 0x004, "verge_step": 4},
-    "LilycoveCity": {"mode": "street", "material": SAND, "forged": "TERRA", "ground": GRASS_GROUND,
+    "LilycoveCity": {"mode": "street", "biome": "MATA", "material": SAND, "forged": "TERRA", "ground": GRASS_GROUND,
                      "plaza": 2, "verge": 0x004, "verge_step": 4},
 
     # Already-paved cities: cut squares of green into the stone instead.
-    "RustboroCity": {"mode": "park", "material": GRASS, "ground": {0x2BB, 0x2C3, 0x309},
+    "RustboroCity": {"mode": "park", "biome": "PAMPA", "material": GRASS, "ground": {0x2BB, 0x2C3, 0x309},
                      "squares": 4, "size": 4, "verge": 0x004, "verge_step": 2},
-    "SlateportCity": {"mode": "park", "material": GRASS,
+    "SlateportCity": {"mode": "park", "biome": "CERRADO", "material": GRASS,
                       "ground": {0x202, 0x209, 0x210, 0x211, 0x212, 0x219},
                       "squares": 5, "size": 3, "verge": 0x004, "verge_step": 2},
-    "MauvilleCity": {"mode": "street", "material": SAND, "forged": "TERRA", "ground": GRASS_GROUND,
+    "MauvilleCity": {"mode": "street", "biome": "CERRADO", "material": SAND, "forged": "TERRA", "ground": GRASS_GROUND,
                      "plaza": 2, "verge": 0x004, "verge_step": 3},
-    "SootopolisCity": {"mode": "park", "material": GRASS, "ground": {0x2D9, 0x244, 0x245},
+    # These carry an identity of their own already - timber, cliff, ash - so
+    # they take the biome's green and nothing else.
+    "FortreeCity": {"mode": "lawn", "biome": "MATA", "material": GRASS,
+                    "ground": set()},
+    "EverGrandeCity": {"mode": "lawn", "biome": "PAMPA", "material": GRASS,
+                       "ground": set()},
+
+    "SootopolisCity": {"mode": "park", "biome": "MATA", "material": GRASS, "ground": {0x2D9, 0x244, 0x245},
                        "squares": 5, "size": 2, "verge": 0x004, "verge_step": 2},
 }
+
+
+def biome_lawn(town, biome, keep, extra=()):
+    """Relay a town's whole lawn in its biome's green.
+
+    Every block here is plain walkable ground with no behaviour of its own, and
+    the forged lawn is the same two tiles of grass pointing at a different ramp
+    of the same palette, so this changes the colour of a town and nothing else.
+    """
+    blocks = forge.MATERIALS[biome]["metatiles"]
+    plain, shadow_left, shadow_right = blocks
+    swap = {mid: plain for mid in set(LAWN_PLAIN) | set(extra)}
+    if biome in FOLD_FLOWERBEDS_IN:
+        swap[FLOWERBED] = plain
+    swap[LAWN_SHADOWED[0]] = shadow_left
+    swap[LAWN_SHADOWED[1]] = shadow_right
+
+    out = {}
+    for y in range(town.h):
+        for x in range(town.w):
+            if (x, y) in keep:
+                continue
+            block = swap.get(town.metatile(x, y))
+            if block is None or town.behavior_of(block) != town.behavior(x, y):
+                continue
+            out[(x, y)] = (town.blocks[town.index(x, y)] & 0xFC00) | block
+    return out
+
+
+def biome_border(town, biome):
+    """The frame drawn beyond the map's edge wears the biome too."""
+    path = os.path.join(ROOT, town.layout["border_filepath"])
+    raw = open(path, "rb").read()
+    values = list(struct.unpack("<%dH" % (len(raw) // 2), raw))
+    plain = forge.MATERIALS[biome]["metatiles"][0]
+    changed = 0
+    for i, value in enumerate(values):
+        if (value & 0x03FF) in LAWN_PLAIN:
+            values[i] = (value & 0xFC00) | plain
+            changed += 1
+    if changed:
+        open(path, "wb").write(struct.pack("<%dH" % len(values), *values))
+    return changed
 
 
 def anchors(town):
@@ -141,7 +211,9 @@ def retheme(city, theme, dry_run=False):
     town = TownMap(city, ROOT)
     table = paint_town.learn_family(theme["material"], primary=town.layout["primary_tileset"])
 
-    if theme["mode"] == "park":
+    if theme["mode"] == "lawn":
+        region, hub = set(), (0, 0)
+    elif theme["mode"] == "park":
         region = open_squares(town, theme.get("squares", 3), theme.get("size", 4), theme["ground"])
         hub = min(region) if region else (0, 0)
     else:
@@ -167,13 +239,26 @@ def retheme(city, theme, dry_run=False):
     keep |= {(int(e["x"]), int(e["y"])) for e in town.events("bg_events")}
 
     changed = paint_town.paint(town, region, table, theme["ground"], keep=keep)
+    paved = len(changed)
     planted = _verges(town, region, theme, keep, changed)
     changed.update(planted)
     forged = _forge_material(town, theme, keep, changed)
     changed.update(forged)
+    greened = 0
+    if theme.get("biome"):
+        # The lawn is relaid last so it also catches the ground the street plan
+        # left alone, and it reaches the route seam: a settlement's biome should
+        # stop at the settlement's edge, the way Emerald stops its own ash.
+        for cell, value in biome_lawn(town, theme["biome"], keep - town.seams(),
+                                      theme.get("lawn_extra", ())).items():
+            changed[cell] = value
+            greened += 1
     if not dry_run:
         paint_town.commit(town, changed)
-    return {"city": city, "paved": len(changed) - len(planted), "planted": len(planted),
+        if theme.get("biome"):
+            biome_border(town, theme["biome"])
+    return {"city": city, "paved": paved,
+            "planted": len(planted), "greened": greened,
             "region": len(region), "hub": hub}
 
 
@@ -204,11 +289,13 @@ def _forge_material(town, theme, keep, changed):
 def _verges(town, region, theme, keep, paved):
     """Plant the strip along a street, at a regular spacing so it reads as a verge."""
     block = theme.get("verge")
-    if not block:
+    if not block or (block == FLOWERBED and theme.get("biome") in FOLD_FLOWERBEDS_IN):
         return {}
     step = theme.get("verge_step", 3)
     out = {}
-    if theme["mode"] == "park":
+    if theme["mode"] == "lawn":
+        region, hub = set(), (0, 0)
+    elif theme["mode"] == "park":
         # A green square is planted inside itself, not along its edge.
         for x, y in sorted(region):
             if (x, y) in keep or (x + y) % step:
@@ -250,8 +337,9 @@ def main():
         if city not in THEMES:
             raise SystemExit("no theme for %s" % city)
         r = retheme(city, THEMES[city], args.dry_run)
-        print("%-16s %4d blocks repaved of a %d-block street plan (hub %d,%d)"
-              % (r["city"], r["paved"], r["region"], *r["hub"]))
+        print("%-16s %4d street, %3d planted, %4d lawn relaid in %s"
+              % (r["city"], r["paved"], r["planted"], r["greened"],
+                 THEMES[r["city"]].get("biome") or "-"))
     return 0
 
 

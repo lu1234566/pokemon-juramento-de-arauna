@@ -48,6 +48,34 @@ ANIMATED_TILES = (set(range(432, 462)) | set(range(464, 474))
                   | set(range(480, 490)) | set(range(496, 502)) | set(range(508, 512)))
 
 MATERIALS = {
+    # Arauna's biomes, as lawns. Emerald's grass is three entries of palette 2 -
+    # a highlight speckle, a body and a shadow speckle - and that same palette
+    # already carries two more three-step green ramps the artists mixed. So a
+    # biome's lawn is the same two tiles of grass pointing at a different ramp.
+    "MATA": {
+        "source": [0x001, 0x1CE, 0x1CF],
+        "palette": 2,
+        "recolour": {0xC: 0x2, 0xD: 0x3, 0xE: 0x4},
+        "tiles": [0x16D, 0x17D],
+        "metatiles": [0x02A, 0x02E, 0x02F],
+        "label": "Arauna_Mata",
+    },
+    "CERRADO": {
+        "source": [0x001, 0x1CE, 0x1CF],
+        "palette": 2,
+        "recolour": {0xC: 0x1, 0xD: 0x2, 0xE: 0x3},
+        "tiles": [0x18A, 0x1F8],
+        "metatiles": [0x035, 0x046, 0x05C],
+        "label": "Arauna_Cerrado",
+    },
+    "PAMPA": {
+        "source": [0x001, 0x1CE, 0x1CF],
+        "palette": 2,
+        "recolour": {0xC: 0x1, 0xD: 0xC, 0xE: 0xD},
+        "tiles": [0x1F9, 0x1FA],
+        "metatiles": [0x07E, 0x07F, 0x097],
+        "label": "Arauna_Pampa",
+    },
     "TERRA": {
         "source": [0x118, 0x119, 0x11A, 0x120, 0x121, 0x122, 0x128, 0x129, 0x12A],
         "palette": 3,
@@ -145,28 +173,28 @@ def forge(name, spec, check_only):
 
     # Which source tile becomes which of ours, in first-seen order. Tile 0 is
     # the blank one an unused layer points at; it carries no art and is copied
-    # through untouched.
+    # through untouched. A tile the ramp does not cover is not part of the
+    # material either - the shadow a tree casts across the grass, say - so it
+    # is referenced exactly as it is rather than recoloured into nonsense.
+    recolour = spec["recolour"]
     order, mapping = [], {}
     for mid in spec["source"]:
         for entry in struct.unpack("<8H", metatiles[mid * 16:mid * 16 + 16]):
             tile_id = entry & 0x03FF
-            if tile_id and tile_id not in mapping:
-                if len(order) >= len(spec["tiles"]):
-                    raise SystemExit("%s needs more than the %d tiles reserved"
-                                     % (name, len(spec["tiles"])))
-                mapping[tile_id] = spec["tiles"][len(order)]
-                order.append(tile_id)
-    recolour = spec["recolour"]
-    unknown = collections.Counter()
+            if not tile_id or tile_id in mapping:
+                continue
+            if not set(sheet.read(tile_id)) <= set(recolour):
+                mapping[tile_id] = tile_id
+                continue
+            if len(order) >= len(spec["tiles"]):
+                raise SystemExit("%s needs more than the %d tiles reserved"
+                                 % (name, len(spec["tiles"])))
+            mapping[tile_id] = spec["tiles"][len(order)]
+            order.append(tile_id)
     for source, dest in mapping.items():
-        pixels = sheet.read(source)
-        for value in pixels:
-            if value not in recolour:
-                unknown[value] += 1
-        sheet.write(dest, [recolour.get(v, v) for v in pixels])
-    if unknown:
-        raise SystemExit("%s: no colour given for palette entries %s"
-                         % (name, ["%X (%d px)" % (k, v) for k, v in unknown.items()]))
+        if source == dest:
+            continue
+        sheet.write(dest, [recolour[v] for v in sheet.read(source)])
 
     for slot, mid in zip(spec["metatiles"], spec["source"]):
         entries = list(struct.unpack("<8H", metatiles[mid * 16:mid * 16 + 16]))
@@ -223,6 +251,16 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--check", action="store_true", help="report without writing")
     args = ap.parse_args()
+    # Each material checks its slots against the map data, but not against its
+    # siblings: two of them claiming one slot would only show up on screen.
+    for field in ("tiles", "metatiles"):
+        seen = {}
+        for name, spec in MATERIALS.items():
+            for slot in spec[field]:
+                if slot in seen:
+                    raise SystemExit("%s and %s both claim %s slot 0x%03X"
+                                     % (seen[slot], name, field[:-1], slot))
+                seen[slot] = name
     for name, spec in MATERIALS.items():
         r = forge(name, spec, args.check)
         print("%-6s %d tile(s), %d block(s) %s"

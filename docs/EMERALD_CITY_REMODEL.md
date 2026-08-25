@@ -205,3 +205,52 @@ ledge's behaviour is not a road's. But relying on the gate to catch a mistake
 is worse than not making it, so `paint` now compares the behaviour of the block
 it is about to lay against the behaviour of the block already there and skips
 the cell when they differ. The mistake is no longer possible to express.
+
+## Biomes
+
+Each settlement now wears the green of the biome it was named for. The lawn is
+60 to 80 per cent of the pixels on screen in a town, so this is the single
+change that stops a map reading as Hoenn.
+
+Emerald's grass is three entries of palette 2 — a highlight speckle, a body and
+a shadow speckle — and that same palette already carries two more three-step
+green ramps the artists mixed for other things. So a biome's lawn is the same
+two tiles of grass pointing at a different ramp, forged the same way TERRA was:
+re-indexed, never redrawn. Two tiles each.
+
+| Lawn | Ramp | Settlements |
+|---|---|---|
+| MATA | deep Atlantic-forest green | VILA AMANHECER, VALE DO SILENCIO, MATA DO MEIO, BAIA DAS LUZES, AGUAS DE M'BOI |
+| CERRADO | dry yellow-green | VILA DA PASSAGEM, ENCRUZILHADA, CASA DA CINZA, PORTO DO SAL |
+| PAMPA | pale, sun-bleached | PAMPA DA ESPERA, SERRA DO UIVO, MISSOES DO CEU, ESTR. JURAMENTO |
+
+The lawn reaches the route seam rather than stopping short of it, so a town's
+biome ends at the town's edge — the way Emerald's own ash stops at Fallarbor's.
+That meant relaxing one of this project's own rules: the seam used to have to
+stay byte-identical. A connection is defined by the two maps' dimensions and
+its offset, never by what the blocks at the join look like, and their physics
+and behaviour are frozen like everything else, so restyling a seam cannot break
+a join — it can only make the change visible at the edge, which is a decision.
+The gate now counts seam blocks restyled and reports them instead of refusing.
+
+### What still wears Emerald's green, and why
+
+Rather than guess, a detector reads every block a town lays and reports any
+that still draws palette 2's mint ramp. Two things do.
+
+**Tree canopies.** Their lawn is baked into the same tiles as the foliage —
+nineteen mixed tiles per biome to separate — and the primary tileset has one
+free tile left. So the gaps between tree crowns keep the old green.
+
+**The strip of grass at a building's foot**, which the Petalburg tileset draws
+as part of the building's own blocks. This one is fixable: those blocks
+reference the primary lawn tiles, and the secondary tilesets have real room —
+`petalburg` alone has 352 free tiles and three unused palettes. It is the next
+piece of work, not a limit.
+
+**Flowerbeds** were a third case, and were dealt with. Emerald's bed is half
+lawn by pixel count — the petals are drawn on a tile carrying the old green
+with them — and recolouring it costs four tiles per biome, which do not exist.
+Against a dark or a yellow lawn each bed read as a pale hole, so in those
+biomes the beds go back to being grass. PAMPA is close enough to the green the
+petals were drawn against that it keeps them.
