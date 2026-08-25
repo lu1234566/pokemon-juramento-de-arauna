@@ -13,6 +13,10 @@ sys.path.insert(0, str(ROOT))
 
 from arauna_qa import (
     AraunaStateReader,
+    BattleAdvisor,
+    BattleInputController,
+    BattleMenuReader,
+    BattleMetadataReader,
     BattleReader,
     Explorer,
     MgbaBridge,
@@ -63,10 +67,16 @@ def repl(
     scenarios = ScenarioRunner(navigator, world_navigator, npc, map_index)
     party_reader = PartyReader(bridge, symbols)
     battle_reader = BattleReader(bridge, symbols)
-    print("Connected. Commands: state, map, objects, party, enemy, battle, talk INDEX,")
-    print("talklocal LOCAL_ID, scenario FILE, route TARGET_MAP, routeto TARGET_MAP, step DIR,")
-    print("walk DIR..., walkto X Y, explore [targets], press KEY [frames], keys KEY...,")
-    print("release, screenshot PATH, save PATH, load PATH, info, ping, reset, quit")
+    battle_metadata = BattleMetadataReader(bridge, symbols)
+    battle_advisor = BattleAdvisor(battle_reader, battle_metadata)
+    battle_menu = BattleMenuReader(bridge, symbols)
+    battle_input = BattleInputController(bridge, battle_menu, battle_advisor)
+
+    print("Connected. Commands: state, map, objects, party, enemy, battle, battleprompt,")
+    print("advise, battlechoose SLOT, battleauto, talk INDEX, talklocal LOCAL_ID, scenario FILE,")
+    print("route TARGET_MAP, routeto TARGET_MAP, step DIR, walk DIR..., walkto X Y,")
+    print("explore [targets], press KEY [frames], keys KEY..., release, screenshot PATH,")
+    print("save PATH, load PATH, info, ping, reset, quit")
     while True:
         try:
             raw = input("arauna-qa> ").strip()
@@ -92,6 +102,19 @@ def repl(
                 print(json.dumps(party_reader.enemy().to_dict(), indent=2, sort_keys=True))
             elif command == "battle":
                 print(json.dumps(battle_reader.snapshot().to_dict(), indent=2, sort_keys=True))
+            elif command == "battleprompt":
+                prompt = battle_menu.player_prompt()
+                print(json.dumps(prompt.to_dict() if prompt else None, indent=2, sort_keys=True))
+            elif command == "advise":
+                print(json.dumps(battle_advisor.recommend().to_dict(), indent=2, sort_keys=True))
+            elif command == "battlechoose":
+                if len(args) != 2:
+                    raise ValueError("usage: battlechoose SLOT")
+                result = battle_input.choose_move(int(args[1]))
+                print(json.dumps(result.to_dict(), indent=2, sort_keys=True))
+            elif command == "battleauto":
+                result = battle_input.choose_recommended()
+                print(json.dumps(result.to_dict(), indent=2, sort_keys=True))
             elif command == "talk":
                 if len(args) != 2:
                     raise ValueError("usage: talk OBJECT_INDEX")
@@ -112,15 +135,11 @@ def repl(
                     raise ValueError("usage: route TARGET_MAP")
                 _, map_def = current_map(reader, map_index)
                 route = world_router.plan(map_def.id, args[1])
-                if route is None:
-                    print(json.dumps({"route": None, "reason": "unreachable"}, indent=2))
-                else:
-                    print(json.dumps(route.to_dict(), indent=2, sort_keys=True))
+                print(json.dumps(route.to_dict() if route else {"route": None, "reason": "unreachable"}, indent=2, sort_keys=True))
             elif command == "routeto":
                 if len(args) != 2:
                     raise ValueError("usage: routeto TARGET_MAP")
-                result = world_navigator.route_to(args[1])
-                print(json.dumps(result.to_dict(), indent=2, sort_keys=True))
+                print(json.dumps(world_navigator.route_to(args[1]).to_dict(), indent=2, sort_keys=True))
             elif command == "step":
                 if len(args) != 2:
                     raise ValueError("usage: step DIRECTION")
@@ -128,24 +147,20 @@ def repl(
             elif command == "walk":
                 if len(args) < 2:
                     raise ValueError("usage: walk DIRECTION [DIRECTION ...]")
-                results = navigator.walk_sequence(args[1:])
-                print(json.dumps([result.to_dict() for result in results], indent=2, sort_keys=True))
+                print(json.dumps([r.to_dict() for r in navigator.walk_sequence(args[1:])], indent=2, sort_keys=True))
             elif command == "walkto":
                 if len(args) != 3:
                     raise ValueError("usage: walkto X Y")
-                result = navigator.walk_to(int(args[1]), int(args[2]))
-                print(json.dumps(result.to_dict(), indent=2, sort_keys=True))
+                print(json.dumps(navigator.walk_to(int(args[1]), int(args[2])).to_dict(), indent=2, sort_keys=True))
             elif command == "explore":
                 if len(args) > 2:
                     raise ValueError("usage: explore [MAX_TARGETS]")
                 max_targets = int(args[1]) if len(args) == 2 else 64
-                result = explorer.explore_current_map(max_targets=max_targets)
-                print(json.dumps(result.to_dict(), indent=2, sort_keys=True))
+                print(json.dumps(explorer.explore_current_map(max_targets=max_targets).to_dict(), indent=2, sort_keys=True))
             elif command == "press":
                 if len(args) not in {2, 3}:
                     raise ValueError("usage: press KEY [frames]")
-                frames = int(args[2]) if len(args) == 3 else 2
-                bridge.press(args[1], frames=frames)
+                bridge.press(args[1], frames=int(args[2]) if len(args) == 3 else 2)
             elif command == "keys":
                 if len(args) < 2:
                     raise ValueError("usage: keys KEY [KEY ...]")
@@ -178,11 +193,7 @@ def main() -> int:
     parser.add_argument("--repo", default=str(REPO_ROOT), help="Arauna repository root")
     parser.add_argument("--host", default="127.0.0.1")
     parser.add_argument("--port", type=int, default=8765)
-    parser.add_argument(
-        "--once",
-        choices=["state", "map", "info", "ping"],
-        help="run one command after mGBA connects, then exit",
-    )
+    parser.add_argument("--once", choices=["state", "map", "info", "ping"], help="run one command after mGBA connects, then exit")
     args = parser.parse_args()
 
     symbols = SymbolTable.from_file(args.sym)

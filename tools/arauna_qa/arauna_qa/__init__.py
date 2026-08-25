@@ -1,4 +1,6 @@
 from .battle import BattleMonState, BattleReader, BattleSnapshot
+from .battle_advisor import BattleAdvice, BattleAdvisor, BattleMetadataReader, MoveAdvice, MoveInfo
+from .battle_control import BattleInputController, BattleInputResult, BattleMenuReader, BattlePromptState
 from .exploration import ExplorationResult, Explorer
 from .interaction import InteractionResult, NpcInteractor
 from .navigation import MoveResult, Navigator, WalkResult
@@ -14,44 +16,15 @@ from .world_nav import TransitionResult, WorldNavigationResult, WorldNavigator
 from .world_route import MapTransition, WorldRoute, WorldRouter
 
 __all__ = [
-    "AraunaState",
-    "AraunaStateReader",
-    "BattleMonState",
-    "BattleReader",
-    "BattleSnapshot",
-    "BridgeInfo",
-    "CollisionGrid",
-    "ExplorationResult",
-    "Explorer",
-    "InteractionResult",
-    "LayoutDefinition",
-    "MapCell",
-    "MapDefinition",
-    "MapIssue",
-    "MapTransition",
-    "MoveResult",
-    "MgbaBridge",
-    "Navigator",
-    "NpcInteractor",
-    "ObjectEventReader",
-    "ObjectEventState",
-    "PartyMonState",
-    "PartyReader",
-    "PartySnapshot",
-    "ProtocolError",
-    "RepoMapIndex",
-    "ScenarioResult",
-    "ScenarioRunner",
-    "ScenarioStepResult",
-    "StateWatchdog",
-    "Symbol",
-    "SymbolTable",
-    "TransitionResult",
-    "WatchEvent",
-    "WalkResult",
-    "WorldNavigationResult",
-    "WorldNavigator",
-    "WorldRoute",
-    "WorldRouter",
-    "key_mask",
+    "AraunaState", "AraunaStateReader",
+    "BattleAdvice", "BattleAdvisor", "BattleMetadataReader",
+    "BattleInputController", "BattleInputResult", "BattleMenuReader", "BattlePromptState",
+    "BattleMonState", "BattleReader", "BattleSnapshot",
+    "BridgeInfo", "CollisionGrid", "ExplorationResult", "Explorer", "InteractionResult",
+    "LayoutDefinition", "MapCell", "MapDefinition", "MapIssue", "MapTransition",
+    "MoveAdvice", "MoveInfo", "MoveResult", "MgbaBridge", "Navigator", "NpcInteractor",
+    "ObjectEventReader", "ObjectEventState", "PartyMonState", "PartyReader", "PartySnapshot",
+    "ProtocolError", "RepoMapIndex", "ScenarioResult", "ScenarioRunner", "ScenarioStepResult",
+    "StateWatchdog", "Symbol", "SymbolTable", "TransitionResult", "WatchEvent", "WalkResult",
+    "WorldNavigationResult", "WorldNavigator", "WorldRoute", "WorldRouter", "key_mask",
 ]
