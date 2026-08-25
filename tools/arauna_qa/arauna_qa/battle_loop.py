@@ -8,6 +8,19 @@ from .battle_control import BattleInputController, BattleMenuReader
 from .state import AraunaState, AraunaStateReader
 
 
+# Player-controller commands that require a user decision but are intentionally
+# not automated yet. Detecting these explicitly is safer and much more useful
+# than waiting for the generic stall watchdog.
+CONTROLLER_YESNOBOX = 19
+CONTROLLER_OPENBAG = 21
+CONTROLLER_CHOOSEPOKEMON = 22
+UNSUPPORTED_DECISION_COMMANDS = {
+    CONTROLLER_YESNOBOX: "yes_no_prompt_not_supported",
+    CONTROLLER_OPENBAG: "bag_prompt_not_supported",
+    CONTROLLER_CHOOSEPOKEMON: "party_selection_not_supported",
+}
+
+
 @dataclass(frozen=True)
 class BattleLoopEvent:
     cycle: int
@@ -75,6 +88,15 @@ class BattleAutoplayer:
         )
         return mons, prompts
 
+    def _unsupported_player_decision(self):
+        for prompt in self.menu_reader.prompts():
+            if prompt.side != "player" or not prompt.controller_active:
+                continue
+            reason = UNSUPPORTED_DECISION_COMMANDS.get(prompt.command)
+            if reason is not None:
+                return prompt, reason
+        return None
+
     def run(
         self,
         *,
@@ -122,6 +144,24 @@ class BattleAutoplayer:
                 last_signature = None
                 unchanged = 0
                 continue
+
+            unsupported = self._unsupported_player_decision()
+            if unsupported is not None:
+                blocked_prompt, reason = unsupported
+                events.append(
+                    BattleLoopEvent(
+                        cycle,
+                        "unsupported_player_decision",
+                        {
+                            "reason": reason,
+                            "prompt": blocked_prompt.to_dict(),
+                            "policy": "abort_without_guessing_input",
+                        },
+                    )
+                )
+                return BattleLoopResult(
+                    False, reason, turns, cycle, state, tuple(events)
+                )
 
             signature = self._signature()
             if signature == last_signature:
