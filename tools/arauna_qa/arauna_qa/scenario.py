@@ -6,6 +6,7 @@ from pathlib import Path
 from typing import Any
 
 from .battle_loop import BattleAutoplayer
+from .dialogue import DialogueAdvancer
 from .interaction import NpcInteractor
 from .navigation import Navigator
 from .repo_map import RepoMapIndex
@@ -62,12 +63,14 @@ class ScenarioRunner:
         npc: NpcInteractor,
         map_index: RepoMapIndex,
         battle_autoplayer: BattleAutoplayer | None = None,
+        dialogue_advancer: DialogueAdvancer | None = None,
     ):
         self.navigator = navigator
         self.world_navigator = world_navigator
         self.npc = npc
         self.map_index = map_index
         self.battle_autoplayer = battle_autoplayer
+        self.dialogue_advancer = dialogue_advancer
 
     @classmethod
     def load(cls, path: str | Path) -> dict[str, Any]:
@@ -112,55 +115,6 @@ class ScenarioRunner:
                 return False, f"{field}_mismatch", checks
         return True, "asserted", checks
 
-    def _advance_to_battle(
-        self,
-        index: int,
-        action: str,
-        raw: dict[str, Any],
-    ) -> ScenarioStepResult:
-        max_presses = int(raw.get("max_presses", 16))
-        press_frames = int(raw.get("press_frames", 2))
-        settle_frames = int(raw.get("settle_frames", 4))
-        if max_presses < 1 or press_frames < 1 or settle_frames < 1:
-            state = self.navigator.reader.snapshot()
-            return ScenarioStepResult(index, action, False, "invalid_advance_limits", state, {})
-
-        initial = self.navigator.reader.snapshot()
-        if initial.in_battle:
-            return ScenarioStepResult(index, action, True, "already_in_battle", initial, {"presses": 0})
-        if not initial.script_enabled and not initial.field_controls_locked:
-            return ScenarioStepResult(index, action, False, "no_script_to_advance", initial, {})
-
-        initial_map = self._current_map_id(initial)
-        for presses in range(1, max_presses + 1):
-            before = self.navigator.reader.snapshot()
-            if before.in_battle:
-                return ScenarioStepResult(index, action, True, "battle_started", before, {"presses": presses - 1})
-            if self._current_map_id(before) != initial_map:
-                return ScenarioStepResult(
-                    index, action, False, "map_changed_before_battle", before,
-                    {"presses": presses - 1, "initial_map": initial_map, "actual_map": self._current_map_id(before)},
-                )
-            if presses > 1 and not before.script_enabled and not before.field_controls_locked:
-                return ScenarioStepResult(
-                    index, action, False, "script_ended_before_battle", before,
-                    {"presses": presses - 1},
-                )
-
-            # This action is deliberately explicit in the scenario. It is meant
-            # for known trainer dialogue, not arbitrary scripts with choices.
-            self.navigator.bridge.press("A", frames=press_frames)
-            self.navigator.bridge.press(0, frames=settle_frames)
-            after = self.navigator.reader.snapshot()
-            if after.in_battle:
-                return ScenarioStepResult(index, action, True, "battle_started", after, {"presses": presses})
-
-        final_state = self.navigator.reader.snapshot()
-        return ScenarioStepResult(
-            index, action, False, "battle_not_reached", final_state,
-            {"presses": max_presses, "initial_map": initial_map},
-        )
-
     def _run_step(self, index: int, raw: dict[str, Any]) -> ScenarioStepResult:
         action = str(raw.get("action", "")).lower()
         if not action:
@@ -201,7 +155,26 @@ class ScenarioRunner:
             )
 
         if action in {"advance_to_battle", "advance_until_battle"}:
-            return self._advance_to_battle(index, action, raw)
+            if self.dialogue_advancer is None:
+                state = self.navigator.reader.snapshot()
+                return ScenarioStepResult(index, action, False, "dialogue_advancer_unavailable", state, {})
+            limits = {
+                "max_advances": int(raw.get("max_advances", raw.get("max_presses", 16))),
+                "max_cycles": int(raw.get("max_cycles", 1024)),
+                "wait_frames": int(raw.get("wait_frames", raw.get("settle_frames", 2))),
+                "stall_cycles": int(raw.get("stall_cycles", 120)),
+                "press_frames": int(raw.get("press_frames", 2)),
+            }
+            result = self.dialogue_advancer.run(**limits)
+            success = result.success and result.reason == "battle_started"
+            reason = result.reason if success else (
+                "dialogue_finished_before_battle"
+                if result.success and result.reason in {"dialogue_finished", "printer_inactive"}
+                else result.reason
+            )
+            return ScenarioStepResult(
+                index, action, success, reason, result.final_state, result.to_dict()
+            )
 
         if action in {"play_battle", "playbattle"}:
             if self.battle_autoplayer is None:
