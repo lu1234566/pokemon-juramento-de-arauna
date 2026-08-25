@@ -2,6 +2,7 @@ from .battle import BattleMonState, BattleReader, BattleSnapshot
 from .battle_advisor import BattleAdvice, BattleAdvisor, BattleMetadataReader, MoveAdvice, MoveInfo
 from .battle_control import BattleInputController, BattleInputResult, BattleMenuReader, BattlePromptState
 from .battle_loop import BattleAutoplayer, BattleLoopEvent, BattleLoopResult
+from .dialogue import DialogueAdvanceEvent, DialogueAdvanceResult, DialogueAdvancer, DialogueReader, DialogueState
 from .exploration import ExplorationResult, Explorer
 from .interaction import InteractionResult, NpcInteractor
 from .navigation import MoveResult, Navigator, WalkResult
@@ -22,7 +23,8 @@ __all__ = [
     "BattleAdvice", "BattleAdvisor", "BattleAutoplayer", "BattleLoopEvent", "BattleLoopResult", "BattleMetadataReader",
     "BattleInputController", "BattleInputResult", "BattleMenuReader", "BattlePromptState",
     "BattleMonState", "BattleReader", "BattleSnapshot",
-    "BridgeInfo", "CollisionGrid", "ExplorationResult", "Explorer", "InteractionResult",
+    "BridgeInfo", "CollisionGrid", "DialogueAdvanceEvent", "DialogueAdvanceResult", "DialogueAdvancer", "DialogueReader", "DialogueState",
+    "ExplorationResult", "Explorer", "InteractionResult",
     "LayoutDefinition", "MapCell", "MapDefinition", "MapIssue", "MapTransition",
     "MoveAdvice", "MoveInfo", "MoveResult", "MgbaBridge", "Navigator", "NpcInteractor",
     "ObjectEventReader", "ObjectEventState", "PartyMonState", "PartyReader", "PartySnapshot",
