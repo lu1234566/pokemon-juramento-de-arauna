@@ -10,7 +10,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
 
-from arauna_qa import AraunaStateReader, MgbaBridge, SymbolTable, key_mask
+from arauna_qa import AraunaStateReader, MgbaBridge, Navigator, SymbolTable, key_mask
 
 
 def print_state(reader: AraunaStateReader) -> None:
@@ -18,8 +18,9 @@ def print_state(reader: AraunaStateReader) -> None:
 
 
 def repl(bridge: MgbaBridge, reader: AraunaStateReader) -> None:
-    print("Connected. Commands: state, press KEY [frames], keys KEY..., release,")
-    print("screenshot PATH, save PATH, load PATH, info, ping, reset, quit")
+    navigator = Navigator(bridge, reader)
+    print("Connected. Commands: state, step DIR, walk DIR..., press KEY [frames],")
+    print("keys KEY..., release, screenshot PATH, save PATH, load PATH, info, ping, reset, quit")
     while True:
         try:
             raw = input("arauna-qa> ").strip()
@@ -35,6 +36,15 @@ def repl(bridge: MgbaBridge, reader: AraunaStateReader) -> None:
                 return
             if command == "state":
                 print_state(reader)
+            elif command == "step":
+                if len(args) != 2:
+                    raise ValueError("usage: step DIRECTION")
+                print(json.dumps(navigator.step(args[1]).to_dict(), indent=2, sort_keys=True))
+            elif command == "walk":
+                if len(args) < 2:
+                    raise ValueError("usage: walk DIRECTION [DIRECTION ...]")
+                results = navigator.walk_sequence(args[1:])
+                print(json.dumps([result.to_dict() for result in results], indent=2, sort_keys=True))
             elif command == "press":
                 if len(args) not in {2, 3}:
                     raise ValueError("usage: press KEY [frames]")
