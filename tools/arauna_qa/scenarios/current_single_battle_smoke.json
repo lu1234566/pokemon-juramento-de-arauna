@@ -1,0 +1,28 @@
+{
+  "name": "current_single_battle_smoke",
+  "steps": [
+    {
+      "action": "assert",
+      "in_battle": true
+    },
+    {
+      "action": "screenshot",
+      "path": "/tmp/arauna-battle-before.png"
+    },
+    {
+      "action": "play_battle",
+      "max_turns": 64,
+      "max_cycles": 2048,
+      "wait_frames": 4,
+      "stall_cycles": 100
+    },
+    {
+      "action": "assert",
+      "in_battle": false
+    },
+    {
+      "action": "screenshot",
+      "path": "/tmp/arauna-battle-after.png"
+    }
+  ]
+}
