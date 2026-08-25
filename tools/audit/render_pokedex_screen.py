@@ -95,12 +95,18 @@ for m in re.finditer(r'const u8 g(\w+)PokedexText\[\] = _\(\s*(.*?)\);',txt,re.S
                    for l in re.findall(r'"((?:[^"\\]|\\.)*)"',m.group(2))]
 
 def sprite(const):
+    """front.png for a species, or for its first form folder.
+
+    Unown and Castform keep their art one level down, in per-form folders.
+    """
     import os,glob
     slug=const.lower()
-    for p in (ROOT+'graphics/pokemon/%s/front.png'%slug,):
-        if os.path.exists(p): return p
-    g=glob.glob(ROOT+'graphics/pokemon/%s*/front.png'%slug)
-    return g[0] if g else None
+    p=ROOT+'graphics/pokemon/%s/front.png'%slug
+    if os.path.exists(p): return p
+    for pat in ('graphics/pokemon/%s/*/front.png', 'graphics/pokemon/%s*/front.png'):
+        g=sorted(glob.glob(ROOT+pat%slug))
+        if g: return g[0]
+    return None
 
 def ht(dm):
     inches=(dm*10000)//254
