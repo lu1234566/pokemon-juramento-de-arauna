@@ -30,6 +30,23 @@ SB1_POS = 0x00          # struct Coords16 pos
 SB1_LOCATION = 0x04     # struct WarpData location {s8 mapGroup, mapNum; s16 x,y,warpId}
 SB1_PARTY_COUNT = 0x234
 SB2_NAME = 0x00         # u8 playerName[PLAYER_NAME_LENGTH + 1]
+SB1_FLAGS = 0x1270      # u8 flags[NUM_FLAG_BYTES]
+# Emerald keeps the "seen" bits in three places and cross-checks them, so
+# writing only SaveBlock2's copy leaves GetNationalPokedexCount at zero and the
+# start menu silently refuses to open the Pokedex.
+SB1_SEEN1 = 0x988
+SB1_SEEN2 = 0x3B24
+SB1_VARS = 0x139C       # u16 vars[VARS_COUNT], indexed from VARS_START 0x4000
+VAR_NATIONAL_DEX = 0x4046
+VARS_START = 0x4000
+SB2_POKEDEX = 0x18      # struct Pokedex
+DEX_MODE = SB2_POKEDEX + 0x01
+DEX_NATIONAL_MAGIC = SB2_POKEDEX + 0x02   # must be 0xDA for National mode
+DEX_OWNED = SB2_POKEDEX + 0x10
+DEX_SEEN = SB2_POKEDEX + 0x44
+DEX_FLAG_BYTES = 0x34
+FLAG_SYS_POKEDEX_GET = 0x861              # SYSTEM_FLAGS + 0x1
+FLAG_SYS_NATIONAL_DEX = 0x896             # SYSTEM_FLAGS + 0x36
 
 # struct Task {TaskFunc func; bool8 isActive; u8 prev, next, priority; s16 data[16];}
 TASK_SIZE = 40
@@ -172,6 +189,77 @@ class Probe:
             func = struct.unpack("<I", entry[:4])[0]
             out.append(self.by_addr.get(func & ~1, hex(func)))
         return out
+
+    def warp(self, map_group: int, map_num: int, x: int = 5, y: int = 5) -> None:
+        """Move the player to any map by writing the destination and reloading.
+
+        CB2_LoadMap builds the field from gSaveBlock1Ptr->location, so setting
+        that and handing the main callback back to it is a warp -- no Fly, no
+        badge, no walking. struct WarpData is
+        {s8 mapGroup, mapNum, warpId; s16 x, y} and warpId -1 means "use the
+        coordinates rather than a warp pad".
+        """
+        sb1 = self._save_block("gSaveBlock1Ptr")
+        if sb1 is None:
+            raise RuntimeError("warp needs a running save; boot into the field first")
+        self.write(sb1 + SB1_POS, struct.pack("<hh", x, y))
+        self.write(sb1 + SB1_LOCATION,
+                   struct.pack("<bbbxhh", map_group, map_num, -1, x, y))
+        self.write(self.sym["gMain"] + 0x438, b"\x00")          # struct Main.state
+        self.write(self.sym["gMain"] + 4,
+                   struct.pack("<I", self.sym["CB2_LoadMap"] | 1))
+
+    def set_flag(self, flag: int) -> None:
+        sb1 = self._save_block("gSaveBlock1Ptr")
+        addr = sb1 + SB1_FLAGS + flag // 8
+        self.write(addr, bytes([self.u8(addr) | (1 << (flag % 8))]))
+
+    def set_var(self, var: int, value: int) -> None:
+        sb1 = self._save_block("gSaveBlock1Ptr")
+        self.write(sb1 + SB1_VARS + (var - VARS_START) * 2, struct.pack("<H", value))
+
+    def unlock_pokedex(self, upto: int = 386) -> None:
+        """Give the National Dex with every entry seen and caught.
+
+        Entry bits are indexed by National Dex number minus one, the same way
+        GetSetPokedexFlag indexes them, so this fills 1..upto.
+        """
+        sb2 = self._save_block("gSaveBlock2Ptr")
+        if sb2 is None:
+            raise RuntimeError("no save block yet")
+        self.set_flag(FLAG_SYS_POKEDEX_GET)
+        self.set_flag(FLAG_SYS_NATIONAL_DEX)
+        self.write(sb2 + DEX_MODE, b"\x01")            # DEX_MODE_NATIONAL
+        self.write(sb2 + DEX_NATIONAL_MAGIC, b"\xDA")
+        # IsNationalPokedexEnabled wants all three: the magic byte, the flag,
+        # and this var. Without it the dex silently falls back to Hoenn order
+        # and shows national #252 as local #001.
+        self.set_var(VAR_NATIONAL_DEX, 0x302)
+        bits = bytearray(DEX_FLAG_BYTES)
+        for dex in range(1, upto + 1):
+            bits[(dex - 1) // 8] |= 1 << ((dex - 1) % 8)
+        self.write(sb2 + DEX_OWNED, bytes(bits))
+        self.write(sb2 + DEX_SEEN, bytes(bits))
+        sb1 = self._save_block("gSaveBlock1Ptr")
+        self.write(sb1 + SB1_SEEN1, bytes(bits))
+        self.write(sb1 + SB1_SEEN2, bytes(bits))
+
+    # struct PokedexView: pokedexList[NATIONAL_DEX_COUNT + 1] of 4 bytes,
+    # then pokemonListCount, then selectedPokemon.
+    DEX_VIEW_SELECTED = (386 + 1) * 4 + 2
+
+    def dex_selected(self) -> int:
+        """The National Dex number the open list is pointing at.
+
+        Read only. Writing this field moves the cursor and the text but not the
+        sprite -- the list loads that lazily as it scrolls -- so an injected
+        jump shows the previous entry's artwork. Move the cursor with the D-pad
+        instead; play.Session.dex_goto does that.
+        """
+        view = self.u32(self.sym["sPokedexView"])
+        if not 0x02000000 <= view < 0x02040000:
+            raise RuntimeError("the Pokedex is not open")
+        return self.u16(view + self.DEX_VIEW_SELECTED) + 1
 
     def summary(self) -> str:
         loc = self.location()

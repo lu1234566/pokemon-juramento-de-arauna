@@ -83,21 +83,26 @@ class Session:
         pause(1)
 
     # -- input and capture ------------------------------------------------
-    def press(self, button: str, times: int = 1, settle: float = 0.35) -> None:
-        """Tap a button. The emulator must be running for SDL to see the key."""
-        key = KEY.get(button, button)
-        for _ in range(times):
-            self.probe.cont()
-            sh("xdotool", "key", "--clearmodifiers", "--window", self.window, key,
-               env=self.env)
-            pause(settle)
-            self.probe.halt()
+    def press(self, button: str, times: int = 1, settle: float = 0.25) -> None:
+        """Tap a button.
 
-    def hold(self, button: str, seconds: float = 0.45) -> None:
+        `xdotool key` sends the press and release microseconds apart, and mGBA
+        polls SDL once a frame -- both events can land between two polls and
+        the button is never seen down. Holding it for a few frames makes every
+        press register.
+        """
+        for _ in range(times):
+            self.hold(button, 0.12)
+            pause(settle)
+
+    def hold(self, button: str, seconds: float = 0.45) -> None:  # noqa: D401
         """Hold a button down. Walking needs the key held across frames;
         a tap only registers as a turn."""
         key = KEY.get(button, button)
         self.probe.cont()
+        # Give the emulator a moment to actually be running before the key
+        # lands, or the first press after a halt is swallowed.
+        pause(0.10)
         sh("xdotool", "keydown", "--clearmodifiers", "--window", self.window, key,
            env=self.env)
         pause(seconds)
@@ -109,6 +114,20 @@ class Session:
     def walk(self, button: str, steps: int = 1) -> None:
         for _ in range(steps):
             self.hold(button)
+
+    def dex_goto(self, national_dex: int) -> int:
+        """Scroll the open Pokedex list to an entry with the D-pad.
+
+        Deliberately not a memory write: the list loads the selected sprite as
+        it scrolls, so poking the index shows the entry's text next to the
+        previous entry's artwork.
+        """
+        current = self.probe.dex_selected()
+        delta = national_dex - current
+        if delta:
+            self.press("down" if delta > 0 else "up", abs(delta), settle=0.02)
+            self.probe.run(1.2)             # let the list settle on the sprite
+        return self.probe.dex_selected()
 
     def shot(self, name: str) -> pathlib.Path:
         path = self.shots / f"{name}.png"
