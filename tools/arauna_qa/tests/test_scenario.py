@@ -5,13 +5,13 @@ from arauna_qa.scenario import ScenarioRunner
 from arauna_qa.state import AraunaState
 
 
-def state(map_num=0, x=1, y=2, battle=False, script=False):
+def state(map_num=0, x=1, y=2, battle=False, script=False, locked=False):
     return AraunaState(
         frame=1, map_group=0, map_num=map_num, map_layout_id=1, region_map_section_id=1,
         map_type=1, weather=0, music=1, player_valid=True, player_x=x, player_y=y,
         player_x_internal=x+7, player_y_internal=y+7, facing=1, movement_direction=1,
         elevation=3, metatile_behavior=0, avatar_flags=1, running_state=0,
-        tile_transition_state=0, field_controls_locked=False, script_enabled=script,
+        tile_transition_state=0, field_controls_locked=locked, script_enabled=script,
         script_mode=0, script_ptr=0, in_battle=battle, held_keys=0, new_keys=0,
         callback1=0, callback2=0,
     )
@@ -25,11 +25,18 @@ class Reader:
 
 
 class Bridge:
-    def __init__(self):
+    def __init__(self, reader=None):
+        self.reader = reader
         self.presses = []
         self.shots = []
+        self.a_presses_to_battle = None
+        self.a_press_count = 0
     def press(self, key, frames=2):
         self.presses.append((key, frames))
+        if key == "A" and self.a_presses_to_battle is not None and self.reader is not None:
+            self.a_press_count += 1
+            if self.a_press_count >= self.a_presses_to_battle:
+                self.reader.value = state(battle=True, script=False, locked=True)
     def screenshot(self, path):
         self.shots.append(path)
 
@@ -37,7 +44,7 @@ class Bridge:
 class Navigator:
     def __init__(self):
         self.reader = Reader()
-        self.bridge = Bridge()
+        self.bridge = Bridge(self.reader)
     def walk_to(self, x, y, max_steps=256):
         self.reader.value = state(x=x, y=y)
         s = self.reader.value
@@ -58,6 +65,7 @@ class Npc:
         self.calls = []
     def interact(self, **kwargs):
         self.calls.append(kwargs)
+        self.nav.reader.value = state(script=True, locked=True)
         s = self.nav.reader.snapshot()
         return SimpleNamespace(success=True, reason="script_started", final_state=s, to_dict=lambda: {"success": True})
 
@@ -102,12 +110,38 @@ class ScenarioTests(unittest.TestCase):
                 {"action": "press", "key": "A"},
                 {"action": "wait", "frames": 3},
                 {"action": "talk", "local_id": 7},
-                {"action": "assert", "map": "MAP_A", "in_battle": False},
+                {"action": "assert", "map": "MAP_A", "in_battle": False, "script_enabled": True},
             ],
         })
         self.assertTrue(result.success)
         self.assertEqual(nav.bridge.presses, [("A", 2), (0, 3)])
         self.assertEqual(npc.calls, [{"local_id": 7}])
+
+    def test_advances_known_trainer_dialogue_until_battle(self):
+        nav = Navigator()
+        npc = Npc(nav)
+        nav.bridge.a_presses_to_battle = 2
+        runner = ScenarioRunner(nav, WorldNav(nav), npc, Index())
+        result = runner.run({
+            "name": "trainer",
+            "steps": [
+                {"action": "talk", "local_id": 3},
+                {"action": "advance_to_battle", "max_presses": 4, "press_frames": 1, "settle_frames": 2},
+                {"action": "assert", "in_battle": True},
+            ],
+        })
+        self.assertTrue(result.success)
+        self.assertEqual(result.steps[1].reason, "battle_started")
+        self.assertEqual(result.steps[1].detail["presses"], 2)
+        self.assertEqual(nav.bridge.presses, [("A", 1), (0, 2), ("A", 1), (0, 2)])
+
+    def test_advance_to_battle_requires_active_script(self):
+        nav = Navigator()
+        runner = ScenarioRunner(nav, WorldNav(nav), Npc(nav), Index())
+        result = runner.run({"steps": [{"action": "advance_to_battle"}]})
+        self.assertFalse(result.success)
+        self.assertEqual(result.reason, "no_script_to_advance")
+        self.assertEqual(nav.bridge.presses, [])
 
     def test_runs_bounded_battle_step(self):
         nav = Navigator()
