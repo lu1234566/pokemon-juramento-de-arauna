@@ -112,6 +112,55 @@ class ScenarioRunner:
                 return False, f"{field}_mismatch", checks
         return True, "asserted", checks
 
+    def _advance_to_battle(
+        self,
+        index: int,
+        action: str,
+        raw: dict[str, Any],
+    ) -> ScenarioStepResult:
+        max_presses = int(raw.get("max_presses", 16))
+        press_frames = int(raw.get("press_frames", 2))
+        settle_frames = int(raw.get("settle_frames", 4))
+        if max_presses < 1 or press_frames < 1 or settle_frames < 1:
+            state = self.navigator.reader.snapshot()
+            return ScenarioStepResult(index, action, False, "invalid_advance_limits", state, {})
+
+        initial = self.navigator.reader.snapshot()
+        if initial.in_battle:
+            return ScenarioStepResult(index, action, True, "already_in_battle", initial, {"presses": 0})
+        if not initial.script_enabled and not initial.field_controls_locked:
+            return ScenarioStepResult(index, action, False, "no_script_to_advance", initial, {})
+
+        initial_map = self._current_map_id(initial)
+        for presses in range(1, max_presses + 1):
+            before = self.navigator.reader.snapshot()
+            if before.in_battle:
+                return ScenarioStepResult(index, action, True, "battle_started", before, {"presses": presses - 1})
+            if self._current_map_id(before) != initial_map:
+                return ScenarioStepResult(
+                    index, action, False, "map_changed_before_battle", before,
+                    {"presses": presses - 1, "initial_map": initial_map, "actual_map": self._current_map_id(before)},
+                )
+            if presses > 1 and not before.script_enabled and not before.field_controls_locked:
+                return ScenarioStepResult(
+                    index, action, False, "script_ended_before_battle", before,
+                    {"presses": presses - 1},
+                )
+
+            # This action is deliberately explicit in the scenario. It is meant
+            # for known trainer dialogue, not arbitrary scripts with choices.
+            self.navigator.bridge.press("A", frames=press_frames)
+            self.navigator.bridge.press(0, frames=settle_frames)
+            after = self.navigator.reader.snapshot()
+            if after.in_battle:
+                return ScenarioStepResult(index, action, True, "battle_started", after, {"presses": presses})
+
+        final_state = self.navigator.reader.snapshot()
+        return ScenarioStepResult(
+            index, action, False, "battle_not_reached", final_state,
+            {"presses": max_presses, "initial_map": initial_map},
+        )
+
     def _run_step(self, index: int, raw: dict[str, Any]) -> ScenarioStepResult:
         action = str(raw.get("action", "")).lower()
         if not action:
@@ -150,6 +199,9 @@ class ScenarioRunner:
             return ScenarioStepResult(
                 index, action, result.success, result.reason, result.final_state, result.to_dict()
             )
+
+        if action in {"advance_to_battle", "advance_until_battle"}:
+            return self._advance_to_battle(index, action, raw)
 
         if action in {"play_battle", "playbattle"}:
             if self.battle_autoplayer is None:
