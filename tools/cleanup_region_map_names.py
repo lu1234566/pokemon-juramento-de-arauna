@@ -43,6 +43,32 @@ NAMES = {
     "MAPSEC_AQUA_HIDEOUT": "ARQUIVO CENTRAL",   # matches MAPSEC_AQUA_HIDEOUT_OLD
     "MAPSEC_NEW_MAUVILLE": "OLD POWER RELAY",   # matches LandmarkName_NewMauville
     "MAPSEC_CAVE_OF_ORIGIN": "M'BOI CORE",      # matches sText_AraunaMboiCore
+    # The remaining sections that are actually drawn on the region map. Every
+    # one of these except the three islands and caves without a landmark entry
+    # is renamed in lockstep in LANDMARK_REPLACEMENTS, so the map and the
+    # landmark bar never disagree about a place.
+    "MAPSEC_PETALBURG_WOODS": "MATA DA ESPERA",  # the woods of PAMPA DA ESPERA
+    "MAPSEC_ABANDONED_SHIP": "NAVIO PERDIDO",
+    "MAPSEC_SHOAL_CAVE": "FURNA DA MARE",        # a furna is a sea cave
+    "MAPSEC_MIRAGE_ISLAND": "ILHA MIRAGEM",
+    "MAPSEC_SOUTHERN_ISLAND": "ILHA DO SUL",
+    "MAPSEC_FIERY_PATH": "TRILHA DE FOGO",
+    "MAPSEC_FIERY_PATH2": "TRILHA DE FOGO",
+    "MAPSEC_JAGGED_PASS": "PASSO CORTADO",
+    "MAPSEC_JAGGED_PASS2": "PASSO CORTADO",
+    "MAPSEC_SEALED_CHAMBER": "CAMARA SELADA",
+    "MAPSEC_SCORCHED_SLAB": "LAJE QUEIMADA",
+    "MAPSEC_ISLAND_CAVE": "GRUTA DO GELO",
+    "MAPSEC_DESERT_RUINS": "RUINAS DA AREIA",
+    "MAPSEC_ANCIENT_TOMB": "TUMBA ANTIGA",
+    "MAPSEC_MIRAGE_TOWER": "TORRE MIRAGEM",
+    "MAPSEC_ARTISAN_CAVE": "LAPA DO ARTESAO",    # a lapa is a rock shelter
+    "MAPSEC_DESERT_UNDERPASS": "TUNEL DA AREIA",
+    "MAPSEC_ALTERING_CAVE": "TOCA MUTAVEL",
+    "MAPSEC_TRAINER_HILL": "MORRO DOS DUELOS",
+    # LandmarkName_MagmaHideout is REMEMBRANCERS BASE, which is 18 characters
+    # against MAP_NAME_LENGTH=16, so the map carries the short form.
+    "MAPSEC_MAGMA_HIDEOUT": "REMEMBRANCERS",
 }
 
 

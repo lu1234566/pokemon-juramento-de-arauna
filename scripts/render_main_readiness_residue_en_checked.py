@@ -130,6 +130,36 @@ LANDMARK_REPLACEMENTS = {
         'static const u8 LandmarkName_SkyPillar[] = _("TORRE JURAMENTO");',
     'static const u8 LandmarkName_MagmaHideout[] = _("MAGMA HIDEOUT");':
         'static const u8 LandmarkName_MagmaHideout[] = _("REMEMBRANCERS BASE");',
+    # Renamed in lockstep with the region map, so the landmark bar and the
+    # map never disagree about a place. See tools/cleanup_region_map_names.py.
+    'static const u8 LandmarkName_PetalburgWoods[] = _("PETALBURG WOODS");':
+        'static const u8 LandmarkName_PetalburgWoods[] = _("MATA DA ESPERA");',
+    'static const u8 LandmarkName_AbandonedShip[] = _("ABANDONED SHIP");':
+        'static const u8 LandmarkName_AbandonedShip[] = _("NAVIO PERDIDO");',
+    'static const u8 LandmarkName_ShoalCave[] = _("SHOAL CAVE");':
+        'static const u8 LandmarkName_ShoalCave[] = _("FURNA DA MARE");',
+    'static const u8 LandmarkName_FieryPath[] = _("FIERY PATH");':
+        'static const u8 LandmarkName_FieryPath[] = _("TRILHA DE FOGO");',
+    'static const u8 LandmarkName_JaggedPass[] = _("JAGGED PASS");':
+        'static const u8 LandmarkName_JaggedPass[] = _("PASSO CORTADO");',
+    'static const u8 LandmarkName_IslandCave[] = _("ISLAND CAVE");':
+        'static const u8 LandmarkName_IslandCave[] = _("GRUTA DO GELO");',
+    'static const u8 LandmarkName_DesertRuins[] = _("DESERT RUINS");':
+        'static const u8 LandmarkName_DesertRuins[] = _("RUINAS DA AREIA");',
+    'static const u8 LandmarkName_ScorchedSlab[] = _("SCORCHED SLAB");':
+        'static const u8 LandmarkName_ScorchedSlab[] = _("LAJE QUEIMADA");',
+    'static const u8 LandmarkName_AncientTomb[] = _("ANCIENT TOMB");':
+        'static const u8 LandmarkName_AncientTomb[] = _("TUMBA ANTIGA");',
+    'static const u8 LandmarkName_SealedChamber[] = _("SEALED CHAMBER");':
+        'static const u8 LandmarkName_SealedChamber[] = _("CAMARA SELADA");',
+    'static const u8 LandmarkName_MirageTower[] = _("MIRAGE TOWER");':
+        'static const u8 LandmarkName_MirageTower[] = _("TORRE MIRAGEM");',
+    'static const u8 LandmarkName_AlteringCave[] = _("ALTERING CAVE");':
+        'static const u8 LandmarkName_AlteringCave[] = _("TOCA MUTAVEL");',
+    'static const u8 LandmarkName_DesertUnderpass[] = _("DESERT UNDERPASS");':
+        'static const u8 LandmarkName_DesertUnderpass[] = _("TUNEL DA AREIA");',
+    'static const u8 LandmarkName_TrainerHill[] = _("TRAINER HILL");':
+        'static const u8 LandmarkName_TrainerHill[] = _("MORRO DOS DUELOS");',
 }
 
 
@@ -294,6 +324,10 @@ def validate_landmarks(source: str, rendered: str) -> None:
         "MR. BRINEY'S COTTAGE", "SLATEPORT BEACH", "NEW MAUVILLE",
         "METEOR FALLS", "RUSTURF TUNNEL", "SAFARI ZONE ENTRANCE",
         "MT. PYRE", "SEAFLOOR CAVERN", "GRANITE CAVE", "SKY PILLAR", "MAGMA HIDEOUT",
+        "PETALBURG WOODS", "ABANDONED SHIP", "SHOAL CAVE", "FIERY PATH",
+        "JAGGED PASS", "ISLAND CAVE", "DESERT RUINS", "SCORCHED SLAB",
+        "ANCIENT TOMB", "SEALED CHAMBER", "MIRAGE TOWER", "ALTERING CAVE",
+        "DESERT UNDERPASS", "TRAINER HILL",
     ):
         if f'_("{stale}")' in rendered:
             fail(f"stale landmark survived: {stale}")
