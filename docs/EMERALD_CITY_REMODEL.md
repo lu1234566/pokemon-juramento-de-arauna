@@ -1,4 +1,4 @@
-# Settlement block data — restoration and landscaping
+# Settlement block data — restoration, landscaping and Arauna's own look
 
 ## What had gone wrong
 
@@ -78,3 +78,77 @@ block grid into a PNG the same way the GBA does — two layers per metatile, til
 and palette split between the primary and secondary tilesets, colour index 0
 transparent on the upper layer. It renders from any checkout via `--root`, so
 two compositions can be put side by side.
+
+## Arauna's own look
+
+The restored composition is Emerald's, and Emerald's towns look like Hoenn.
+`tools/art/retheme_cities.py` gives the settlements a look of their own without
+putting a single campaign coordinate at risk.
+
+What it is allowed to change is one thing: a block's metatile id. Collision,
+elevation and metatile behaviour are carried over untouched at every
+coordinate, so no wall moves, no door stops being a door, no patch of
+decoration becomes an encounter tile, and every step the player, an NPC or a
+scripted `applymovement` could take is still exactly as available and as long
+as it was. That still leaves most of what a town looks like: what the ground is
+made of, where the streets run, where the squares and the gardens are.
+
+Streets are not drawn by hand. Each town's own walkable graph is joined from
+every doorstep and every route exit to a hub with straight two-lane runs, and
+the material is laid with an autotile table learned from the whole Emerald
+corpus — for every block of the material, which of its four neighbours are the
+same material, and what the artists put in that situation. So the edges and
+corners are Emerald's, and the plan follows what the town's own buildings and
+exits already imply. Widening stops one block short of anything solid, which
+leaves every façade its verge, and the verge is planted at a regular spacing.
+
+Arauna's settlements are joined by packed earth rather than by Hoenn's paving.
+The cities that are paved already get squares of green cut into them instead,
+placed on the roomiest patches of floor the campaign never walks on.
+
+| Settlement | Treatment | Blocks restyled |
+|---|---|---:|
+| VILA AMANHECER (LittlerootTown) | earth streets | 61 |
+| VILA DA PASSAGEM (OldaleTown) | earth crossroads | 72 |
+| PAMPA DA ESPERA (PetalburgCity) | earth streets | 52 |
+| SERRA DO UIVO (RustboroCity) | green squares | 64 |
+| PORTO DO SAL (SlateportCity) | green squares | 45 |
+| ENCRUZILHADA (MauvilleCity) | earth streets | 94 |
+| VALE DO SILENCIO (VerdanturfTown) | earth streets | 49 |
+| CASA DA CINZA (LavaridgeTown) | earth streets | 36 |
+| BAIA DAS LUZES (LilycoveCity) | earth avenues | 250 |
+| MISSOES DO CEU (MossdeepCity) | earth avenues | 190 |
+| AGUAS DE M'BOI (SootopolisCity) | green squares | 20 |
+
+943 blocks across eleven settlements.
+
+PORTO DAS REDES, CAMPO DAS CINZAS, MATA DO MEIO, CASA DA FOGUEIRA and
+ESTR. JURAMENTO are left alone. Their ground is sand, ash, timber, plank and
+cliff rather than lawn, so a street laid through them would either change a
+metatile behaviour or read as a mistake; they already carry an identity of
+their own.
+
+## The gate
+
+`tools/audit/map_invariants.py` is what makes a restyle of this size safe to
+make. It reads the block data of a revision straight out of git, replays the
+map's own `applymovement` scripts to find every tile a cutscene can walk
+across, and then checks the current composition against that baseline:
+
+- collision, elevation and metatile behaviour identical at every changed block;
+- warp and sign behaviours unchanged;
+- route seams byte-identical;
+- nothing that used to be reachable, on foot or by surf, cut off.
+
+`--verify HEAD` runs it over all sixteen settlements. `--report` prints the map
+with every campaign coordinate marked, which is how a design gets checked
+before it is written.
+
+## Order
+
+The tools stack, and the order matters, because each one reads what the last
+one wrote:
+
+1. `restore_city_layouts.py` — put the authored composition back;
+2. `plant_town_gardens.py` — hand-placed beds on the restored grass;
+3. `retheme_cities.py` — streets, squares and verges.
