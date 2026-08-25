@@ -1,5 +1,8 @@
 # GBA rom header
-TITLE       := POKEMON EMER
+TITLE       := ARAUNA
+# Left as Emerald's code on purpose: emulators and flash carts look BPEE up to
+# decide save type and to enable the RTC, which this game needs for berries and
+# tides. Nothing in the source reads it.
 GAME_CODE   := BPEE
 MAKER_CODE  := 01
 REVISION    := 0
