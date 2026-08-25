@@ -78,6 +78,7 @@ EXPECTED_RENDERER_ORDER = (
     'render_arauna_league_en_checked.py',
     'render_untranslated_story_en_checked.py',
     'render_legacy_place_names_en_checked.py',
+    'render_text_box_line_breaks_en_checked.py',
     'render_main_readiness_residue_en_checked.py',
 )
 APPROVED_ENGLISH_RENDERERS = set(EXPECTED_RENDERER_ORDER)
@@ -155,8 +156,8 @@ extra_overlays = read_manifest(OVERLAY_EXTRA_MANIFEST)
 # work, plus the 33 dialogue files and 2 C text files that
 # render_legacy_place_names_en_checked.py rewrites, and 3 more that
 # render_untranslated_story_en_checked.py translates.
-if len(extra_overlays) != 78:
-    fail(f"expected 78 final transactional overlay files, found {len(extra_overlays)}")
+if len(extra_overlays) != 79:
+    fail(f"expected 79 final transactional overlay files, found {len(extra_overlays)}")
 for rel_path in extra_overlays:
     if rel_path.startswith("/") or ".." in Path(rel_path).parts:
         fail(f"unsafe overlay path: {rel_path}")

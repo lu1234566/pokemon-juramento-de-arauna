@@ -67,4 +67,5 @@ render_remaining_story_en_checked.py
 render_arauna_league_en_checked.py
 render_untranslated_story_en_checked.py
 render_legacy_place_names_en_checked.py
+render_text_box_line_breaks_en_checked.py
 render_main_readiness_residue_en_checked.py
