@@ -1,6 +1,7 @@
 from .battle import BattleMonState, BattleReader, BattleSnapshot
 from .battle_advisor import BattleAdvice, BattleAdvisor, BattleMetadataReader, MoveAdvice, MoveInfo
 from .battle_control import BattleInputController, BattleInputResult, BattleMenuReader, BattlePromptState
+from .battle_loop import BattleAutoplayer, BattleLoopEvent, BattleLoopResult
 from .exploration import ExplorationResult, Explorer
 from .interaction import InteractionResult, NpcInteractor
 from .navigation import MoveResult, Navigator, WalkResult
@@ -17,7 +18,7 @@ from .world_route import MapTransition, WorldRoute, WorldRouter
 
 __all__ = [
     "AraunaState", "AraunaStateReader",
-    "BattleAdvice", "BattleAdvisor", "BattleMetadataReader",
+    "BattleAdvice", "BattleAdvisor", "BattleAutoplayer", "BattleLoopEvent", "BattleLoopResult", "BattleMetadataReader",
     "BattleInputController", "BattleInputResult", "BattleMenuReader", "BattlePromptState",
     "BattleMonState", "BattleReader", "BattleSnapshot",
     "BridgeInfo", "CollisionGrid", "ExplorationResult", "Explorer", "InteractionResult",
