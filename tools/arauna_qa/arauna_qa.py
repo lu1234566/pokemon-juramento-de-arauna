@@ -26,6 +26,7 @@ from arauna_qa import (
     ObjectEventReader,
     PartyReader,
     RepoMapIndex,
+    ScenarioReporter,
     ScenarioRunner,
     SymbolTable,
     WorldNavigator,
@@ -77,10 +78,11 @@ def repl(
     scenarios = ScenarioRunner(
         navigator, world_navigator, npc, map_index, battle_autoplayer=battle_autoplayer
     )
+    reporter = ScenarioReporter(bridge)
 
     print("Connected. Commands: state, map, objects, party, enemy, battle, battleprompt,")
     print("advise, battlechoose SLOT, battleauto, playbattle [MAX_TURNS], talk INDEX,")
-    print("talklocal LOCAL_ID, scenario FILE, route TARGET_MAP, routeto TARGET_MAP,")
+    print("talklocal LOCAL_ID, scenario FILE [REPORT_DIR], route TARGET_MAP, routeto TARGET_MAP,")
     print("step DIR, walk DIR..., walkto X Y, explore [targets], press KEY [frames],")
     print("keys KEY..., release, screenshot PATH, save PATH, load PATH, info, ping,")
     print("reset, quit")
@@ -139,10 +141,13 @@ def repl(
                 result = npc.interact(local_id=int(args[1]))
                 print(json.dumps(result.to_dict(), indent=2, sort_keys=True))
             elif command == "scenario":
-                if len(args) != 2:
-                    raise ValueError("usage: scenario FILE")
+                if len(args) not in {2, 3}:
+                    raise ValueError("usage: scenario FILE [REPORT_DIR]")
                 result = scenarios.run_file(args[1])
-                print(json.dumps(result.to_dict(), indent=2, sort_keys=True))
+                payload = result.to_dict()
+                if len(args) == 3:
+                    payload["bundle"] = reporter.write(result, args[2]).to_dict()
+                print(json.dumps(payload, indent=2, sort_keys=True))
             elif command == "route":
                 if len(args) != 2:
                     raise ValueError("usage: route TARGET_MAP")
