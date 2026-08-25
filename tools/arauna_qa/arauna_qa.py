@@ -8,18 +8,29 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
+REPO_ROOT = ROOT.parents[1]
 sys.path.insert(0, str(ROOT))
 
-from arauna_qa import AraunaStateReader, MgbaBridge, Navigator, SymbolTable, key_mask
+from arauna_qa import AraunaStateReader, MgbaBridge, Navigator, RepoMapIndex, SymbolTable, key_mask
 
 
 def print_state(reader: AraunaStateReader) -> None:
     print(json.dumps(reader.snapshot().to_dict(), indent=2, sort_keys=True))
 
 
-def repl(bridge: MgbaBridge, reader: AraunaStateReader) -> None:
-    navigator = Navigator(bridge, reader)
-    print("Connected. Commands: state, step DIR, walk DIR..., press KEY [frames],")
+def print_map(reader: AraunaStateReader, map_index: RepoMapIndex) -> None:
+    state = reader.snapshot()
+    if state.map_group is None or state.map_num is None:
+        raise RuntimeError("runtime map group/number are unavailable")
+    map_def = map_index.from_runtime(state.map_group, state.map_num)
+    if map_def is None:
+        raise RuntimeError(f"unknown runtime map ({state.map_group},{state.map_num})")
+    print(json.dumps(map_index.summarize(map_def.id), indent=2, sort_keys=True))
+
+
+def repl(bridge: MgbaBridge, reader: AraunaStateReader, map_index: RepoMapIndex) -> None:
+    navigator = Navigator(bridge, reader, map_index=map_index)
+    print("Connected. Commands: state, map, step DIR, walk DIR..., walkto X Y, press KEY [frames],")
     print("keys KEY..., release, screenshot PATH, save PATH, load PATH, info, ping, reset, quit")
     while True:
         try:
@@ -36,6 +47,8 @@ def repl(bridge: MgbaBridge, reader: AraunaStateReader) -> None:
                 return
             if command == "state":
                 print_state(reader)
+            elif command == "map":
+                print_map(reader, map_index)
             elif command == "step":
                 if len(args) != 2:
                     raise ValueError("usage: step DIRECTION")
@@ -45,6 +58,11 @@ def repl(bridge: MgbaBridge, reader: AraunaStateReader) -> None:
                     raise ValueError("usage: walk DIRECTION [DIRECTION ...]")
                 results = navigator.walk_sequence(args[1:])
                 print(json.dumps([result.to_dict() for result in results], indent=2, sort_keys=True))
+            elif command == "walkto":
+                if len(args) != 3:
+                    raise ValueError("usage: walkto X Y")
+                result = navigator.walk_to(int(args[1]), int(args[2]))
+                print(json.dumps(result.to_dict(), indent=2, sort_keys=True))
             elif command == "press":
                 if len(args) not in {2, 3}:
                     raise ValueError("usage: press KEY [frames]")
@@ -79,27 +97,31 @@ def repl(bridge: MgbaBridge, reader: AraunaStateReader) -> None:
 def main() -> int:
     parser = argparse.ArgumentParser(description="Arauna mGBA QA controller")
     parser.add_argument("--sym", required=True, help="matching pokeemerald .sym file")
+    parser.add_argument("--repo", default=str(REPO_ROOT), help="Arauna repository root")
     parser.add_argument("--host", default="127.0.0.1")
     parser.add_argument("--port", type=int, default=8765)
     parser.add_argument(
         "--once",
-        choices=["state", "info", "ping"],
+        choices=["state", "map", "info", "ping"],
         help="run one command after mGBA connects, then exit",
     )
     args = parser.parse_args()
 
     symbols = SymbolTable.from_file(args.sym)
+    map_index = RepoMapIndex.from_repo(args.repo)
     bridge = MgbaBridge.listen(args.host, args.port)
     try:
         reader = AraunaStateReader(bridge, symbols)
         if args.once == "state":
             print_state(reader)
+        elif args.once == "map":
+            print_map(reader, map_index)
         elif args.once == "info":
             print(bridge.info())
         elif args.once == "ping":
             print("pong" if bridge.ping() else "unexpected response")
         else:
-            repl(bridge, reader)
+            repl(bridge, reader, map_index)
     finally:
         bridge.close()
     return 0

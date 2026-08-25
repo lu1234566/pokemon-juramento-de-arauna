@@ -1,6 +1,6 @@
-from .navigation import MoveResult, Navigator
+from .navigation import MoveResult, Navigator, WalkResult
 from .protocol import BridgeInfo, MgbaBridge, ProtocolError, key_mask
-from .repo_map import LayoutDefinition, MapDefinition, MapIssue, RepoMapIndex
+from .repo_map import CollisionGrid, LayoutDefinition, MapCell, MapDefinition, MapIssue, RepoMapIndex
 from .state import AraunaState, AraunaStateReader
 from .symbols import Symbol, SymbolTable
 
@@ -8,7 +8,9 @@ __all__ = [
     "AraunaState",
     "AraunaStateReader",
     "BridgeInfo",
+    "CollisionGrid",
     "LayoutDefinition",
+    "MapCell",
     "MapDefinition",
     "MapIssue",
     "MoveResult",
@@ -18,5 +20,6 @@ __all__ = [
     "RepoMapIndex",
     "Symbol",
     "SymbolTable",
+    "WalkResult",
     "key_mask",
 ]

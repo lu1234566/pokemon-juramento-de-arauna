@@ -6,6 +6,13 @@ from pathlib import Path
 from typing import Any
 
 
+MAPGRID_METATILE_ID_MASK = 0x03FF
+MAPGRID_COLLISION_MASK = 0x0C00
+MAPGRID_ELEVATION_MASK = 0xF000
+MAPGRID_COLLISION_SHIFT = 10
+MAPGRID_ELEVATION_SHIFT = 12
+
+
 @dataclass(frozen=True)
 class LayoutDefinition:
     id: str
@@ -43,6 +50,43 @@ class MapIssue:
 
     def to_dict(self) -> dict[str, str | None]:
         return asdict(self)
+
+
+@dataclass(frozen=True)
+class MapCell:
+    raw: int
+    metatile_id: int
+    collision: int
+    elevation: int
+
+
+@dataclass(frozen=True)
+class CollisionGrid:
+    width: int
+    height: int
+    raw_cells: tuple[int, ...]
+
+    def in_bounds(self, x: int, y: int) -> bool:
+        return 0 <= x < self.width and 0 <= y < self.height
+
+    def raw_at(self, x: int, y: int) -> int:
+        if not self.in_bounds(x, y):
+            raise IndexError(f"map coordinate ({x},{y}) outside {self.width}x{self.height}")
+        return self.raw_cells[y * self.width + x]
+
+    def cell_at(self, x: int, y: int) -> MapCell:
+        raw = self.raw_at(x, y)
+        return MapCell(
+            raw=raw,
+            metatile_id=raw & MAPGRID_METATILE_ID_MASK,
+            collision=(raw & MAPGRID_COLLISION_MASK) >> MAPGRID_COLLISION_SHIFT,
+            elevation=(raw & MAPGRID_ELEVATION_MASK) >> MAPGRID_ELEVATION_SHIFT,
+        )
+
+    def is_passable(self, x: int, y: int) -> bool:
+        # Static map collision is only the planning hint. Runtime movement remains
+        # authoritative for NPCs, scripted blockers, ledges, doors and elevation.
+        return self.in_bounds(x, y) and self.cell_at(x, y).collision == 0
 
 
 class RepoMapIndex:
@@ -122,6 +166,33 @@ class RepoMapIndex:
         name = self.runtime_map_names.get((group, number))
         return self.maps_by_name.get(name) if name is not None else None
 
+    def require_layout(self, map_def: MapDefinition) -> LayoutDefinition:
+        layout = self.layouts.get(map_def.layout_id)
+        if layout is None:
+            raise KeyError(f"map {map_def.id} references missing layout {map_def.layout_id}")
+        return layout
+
+    def load_collision_grid(self, map_or_key: MapDefinition | str) -> CollisionGrid:
+        map_def = map_or_key if isinstance(map_or_key, MapDefinition) else self.require(map_or_key)
+        layout = self.require_layout(map_def)
+        if not layout.blockdata_filepath:
+            raise FileNotFoundError(f"layout {layout.id} does not define blockdata_filepath")
+
+        path = self.root / layout.blockdata_filepath
+        data = path.read_bytes()
+        expected_size = layout.width * layout.height * 2
+        if len(data) != expected_size:
+            raise ValueError(
+                f"{layout.blockdata_filepath} has {len(data)} bytes; "
+                f"expected {expected_size} for {layout.width}x{layout.height}"
+            )
+
+        raw_cells = tuple(
+            data[offset] | (data[offset + 1] << 8)
+            for offset in range(0, len(data), 2)
+        )
+        return CollisionGrid(layout.width, layout.height, raw_cells)
+
     def summarize(self, key: str) -> dict[str, Any]:
         map_def = self.require(key)
         layout = self.layouts.get(map_def.layout_id)
@@ -178,6 +249,7 @@ class RepoMapIndex:
                         f"layout {map_def.layout_id} does not exist in layouts.json",
                     )
                 )
+
             if map_def.group is None or map_def.number is None:
                 issues.append(
                     MapIssue(

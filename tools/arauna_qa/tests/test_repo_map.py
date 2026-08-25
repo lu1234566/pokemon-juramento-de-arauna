@@ -77,6 +77,30 @@ class RepoMapIndexTests(unittest.TestCase):
             self.assertIn("EVENT_OUT_OF_BOUNDS", codes)
             self.assertIn("WARP_DEST_INDEX_INVALID", codes)
 
+    def test_load_collision_grid_decodes_map_bin(self):
+        temp, root = self.make_repo()
+        with temp:
+            layouts = json.loads((root / "data/layouts/layouts.json").read_text(encoding="utf-8"))
+            layouts["layouts"][0]["width"] = 2
+            layouts["layouts"][0]["height"] = 1
+            layouts["layouts"][0]["blockdata_filepath"] = "data/layouts/Start/map.bin"
+            (root / "data/layouts/layouts.json").write_text(json.dumps(layouts), encoding="utf-8")
+            (root / "data/layouts/Start").mkdir(parents=True)
+
+            passable = 5 | (0 << 10) | (3 << 12)
+            blocked = 7 | (1 << 10) | (1 << 12)
+            (root / "data/layouts/Start/map.bin").write_bytes(
+                passable.to_bytes(2, "little") + blocked.to_bytes(2, "little")
+            )
+
+            index = RepoMapIndex.from_repo(root)
+            grid = index.load_collision_grid("MAP_START")
+            self.assertEqual(grid.cell_at(0, 0).metatile_id, 5)
+            self.assertEqual(grid.cell_at(0, 0).elevation, 3)
+            self.assertTrue(grid.is_passable(0, 0))
+            self.assertEqual(grid.cell_at(1, 0).collision, 1)
+            self.assertFalse(grid.is_passable(1, 0))
+
 
 if __name__ == "__main__":
     unittest.main()
