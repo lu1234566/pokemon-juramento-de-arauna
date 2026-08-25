@@ -126,6 +126,7 @@ battlechoose 2
 battleauto
 playbattle 64
 scenario tools/arauna_qa/scenarios/current_single_battle_smoke.json
+scenario tools/arauna_qa/scenarios/current_single_battle_smoke.json /tmp/arauna-report
 press A 3
 keys LEFT B
 release
@@ -181,6 +182,26 @@ Included scenarios:
 
 Scenario execution stops on the first failed step unless that step explicitly sets `"continue_on_failure": true`.
 
+### Failure evidence bundles
+
+Pass a second argument to the `scenario` command to persist evidence:
+
+```text
+scenario SCENARIO.json /tmp/arauna-report
+```
+
+The report directory always receives:
+
+- `<scenario>.result.json` — the complete structured scenario trace, including every step and runtime state snapshot;
+- `<scenario>.bundle.json` — manifest of generated evidence.
+
+If the scenario failed, the reporter also asks mGBA for:
+
+- `<scenario>.failure.png` — screenshot at the failure point;
+- `<scenario>.failure.ss0` — save state at the same failure point.
+
+Capture errors are recorded in the bundle manifest instead of hiding the original scenario failure. Successful scenarios do not create unnecessary failure screenshots/save states.
+
 ## Repository-only map audit
 
 No emulator is required to inspect map/event/warp structure:
@@ -197,11 +218,11 @@ From `tools/arauna_qa`:
 python3 -m unittest discover -s tests -v
 ```
 
-The suite covers symbol parsing, runtime-state decoding, GBA input masks, socket protocol round trips, repository-map resolution/auditing, map-bin collision decoding, confirmed movement, A* planning, dynamic blockers, cross-map routing, live object decoding, NPC interaction, Gen 3 party decryption, battle state decoding, move advice, verified battle-menu input, bounded battle autoplay and declarative battle scenarios. These tests do not require mGBA or the ARM toolchain.
+The suite covers symbol parsing, runtime-state decoding, GBA input masks, socket protocol round trips, repository-map resolution/auditing, map-bin collision decoding, confirmed movement, A* planning, dynamic blockers, cross-map routing, live object decoding, NPC interaction, Gen 3 party decryption, battle state decoding, move advice, verified battle-menu input, bounded battle autoplay, declarative battle scenarios and failure-bundle reporting. These tests do not require mGBA or the ARM toolchain.
 
 ## Safety boundaries
 
-The harness intentionally does **not** expose generic game-RAM writes. Normal GBA key state is the only autonomous gameplay mutation; save-state load/reset remain explicit commands. This keeps black-box QA useful while avoiding accidental direct changes to flags, variables, party data or saves.
+The harness intentionally does **not** expose generic game-RAM writes. Normal GBA key state is the only autonomous gameplay mutation; save-state load/reset remain explicit commands. A scenario report directory is also an explicit request to capture a failure save state. This keeps black-box QA useful while avoiding accidental direct changes to flags, variables, party data or saves.
 
 The TCP listener binds to `127.0.0.1` by default. Do not expose it publicly.
 
@@ -209,10 +230,9 @@ The TCP listener binds to `127.0.0.1` by default. Do not expose it publicly.
 
 1. live mGBA handshake and smoke evidence against the exact Arauna ROM + `.sym` pair;
 2. first real end-to-end Arauna trainer scenario;
-3. screenshot/state failure bundle with automatic reproduction trace;
-4. explicit handling of safe dialogue/Yes-No prompts without blind confirmation;
-5. double-battle targeting and switching/items only after their prompt state can be verified as strictly as move selection;
-6. campaign-level objective definitions and long-form progression coverage;
-7. optional deterministic QA build features (fixed RNG seed / debug-only observability) if black-box state proves insufficient.
+3. safe dialogue/Yes-No prompt classification without blind confirmation;
+4. double-battle targeting and switching/items only after their prompt state can be verified as strictly as move selection;
+5. campaign-level objective definitions and long-form progression coverage;
+6. optional deterministic QA build features (fixed RNG seed / debug-only observability) if black-box state proves insufficient.
 
 If source-level instrumentation becomes necessary later, it should remain a separate QA-only build. The current bridge does not require source modifications to the retail game.
