@@ -232,6 +232,13 @@ def paint(town, region, table, ground, keep=()):
             if (x + dx, y + dy) in paved:
                 sig |= 1 << i
         block = table.get(sig, table[0x0F])
+        # A block id at or above 0x200 belongs to whichever secondary tileset
+        # the map happens to load, so the same number is a flowerbed in one
+        # town and a ledge in the next. Comparing behaviours rather than ids
+        # means a caller cannot repaint a ledge, or water, by naming a number
+        # that meant something else where the list was written.
+        if town.behavior_of(block) != town.behavior(x, y):
+            continue
         old = town.blocks[town.index(x, y)]
         new = (old & 0xFC00) | block
         if new != old:

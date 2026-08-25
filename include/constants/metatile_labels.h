@@ -787,4 +787,17 @@
 #define METATILE_RSMossdeepGym_Switch_Down     0x239
 #define METATILE_RSMossdeepGym_Switch_Up       0x238
 
+// Arauna materials
+// Forged by tools/art/forge_arauna_tiles.py into blocks no map used.
+
+#define METATILE_General_Arauna_Terra_0 0x0DB
+#define METATILE_General_Arauna_Terra_1 0x0DC
+#define METATILE_General_Arauna_Terra_2 0x0DD
+#define METATILE_General_Arauna_Terra_3 0x0DE
+#define METATILE_General_Arauna_Terra_4 0x0E3
+#define METATILE_General_Arauna_Terra_5 0x0E4
+#define METATILE_General_Arauna_Terra_6 0x0E5
+#define METATILE_General_Arauna_Terra_7 0x0E6
+#define METATILE_General_Arauna_Terra_8 0x0E7
+
 #endif // GUARD_METATILE_LABELS_H

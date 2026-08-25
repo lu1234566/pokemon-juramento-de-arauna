@@ -27,6 +27,7 @@ import sys
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__))))
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "audit"))
 
+import forge_arauna_tiles as forge  # noqa: E402
 import paint_town  # noqa: E402
 from map_invariants import TownMap  # noqa: E402
 
@@ -40,28 +41,41 @@ GRASS = {0x001, 0x002}
 # What counts as bare, paintable floor in a town: the blocks a street may be
 # laid over. Anything else the map put down - a doorstep, a flowerbed, a ledge,
 # a patch of tall grass - is left where it is.
-GRASS_GROUND = {0x001, 0x002, 0x004, 0x201,
-                # The speckled field variants Emerald lays to keep a lawn from
-                # looking flat. They are plain ground, not a tree's shadow.
-                0x1D0, 0x1D1, 0x1D2, 0x1D8, 0x1D9, 0x1DA, 0x1E0, 0x1E1, 0x1E2}
+# Only blocks below 0x200 belong here: those come from the primary tileset and
+# mean the same thing in every outdoor map. A block at or above 0x200 is an
+# index into whichever secondary tileset the map loads, so the same number is a
+# flowerbed in one town and a ledge in the next; those go in a theme's own
+# "extra_ground", next to the tileset they were read from.
+GRASS_GROUND = SAND | {0x001, 0x002, 0x004,
+                       # The speckled field variants Emerald lays to keep a
+                       # lawn from looking flat - plain ground, not a shadow.
+                       0x1D0, 0x1D1, 0x1D2, 0x1D8, 0x1D9, 0x1DA,
+                       0x1E0, 0x1E1, 0x1E2}
+
+# gTileset_Petalburg: its yellow flower patch and its two sand blocks are bare
+# ground, and a street runs straight over them.
+PETALBURG_GROUND = {0x201, 0x252, 0x253}
 
 # Arauna's settlements are joined by packed earth, not by Hoenn's paving. The
 # street plan is drawn from each town's own doors and exits; a paved city gets
 # green squares cut into it instead, because it has streets already.
 THEMES = {
-    "LittlerootTown": {"mode": "street", "material": SAND, "ground": GRASS_GROUND,
+    "LittlerootTown": {"mode": "street", "material": SAND, "forged": "TERRA",
+                       "ground": GRASS_GROUND | PETALBURG_GROUND,
                        "plaza": 1, "verge": 0x004, "verge_step": 2},
-    "OldaleTown": {"mode": "street", "material": SAND, "ground": GRASS_GROUND,
+    "OldaleTown": {"mode": "street", "material": SAND, "forged": "TERRA",
+                       "ground": GRASS_GROUND | PETALBURG_GROUND,
                    "plaza": 1, "lanes": 1, "verge": 0x004, "verge_step": 3},
-    "PetalburgCity": {"mode": "street", "material": SAND, "ground": GRASS_GROUND,
+    "PetalburgCity": {"mode": "street", "material": SAND, "forged": "TERRA",
+                       "ground": GRASS_GROUND | PETALBURG_GROUND,
                       "plaza": 2, "verge": 0x004, "verge_step": 3},
-    "VerdanturfTown": {"mode": "street", "material": SAND, "ground": GRASS_GROUND,
+    "VerdanturfTown": {"mode": "street", "material": SAND, "forged": "TERRA", "ground": GRASS_GROUND,
                        "plaza": 1, "verge": 0x004, "verge_step": 3},
-    "LavaridgeTown": {"mode": "street", "material": SAND, "ground": GRASS_GROUND,
+    "LavaridgeTown": {"mode": "street", "material": SAND, "forged": "TERRA", "ground": GRASS_GROUND,
                       "plaza": 1, "verge": 0x004, "verge_step": 4},
-    "MossdeepCity": {"mode": "street", "material": SAND, "ground": GRASS_GROUND,
+    "MossdeepCity": {"mode": "street", "material": SAND, "forged": "TERRA", "ground": GRASS_GROUND,
                      "plaza": 2, "verge": 0x004, "verge_step": 4},
-    "LilycoveCity": {"mode": "street", "material": SAND, "ground": GRASS_GROUND,
+    "LilycoveCity": {"mode": "street", "material": SAND, "forged": "TERRA", "ground": GRASS_GROUND,
                      "plaza": 2, "verge": 0x004, "verge_step": 4},
 
     # Already-paved cities: cut squares of green into the stone instead.
@@ -70,7 +84,7 @@ THEMES = {
     "SlateportCity": {"mode": "park", "material": GRASS,
                       "ground": {0x202, 0x209, 0x210, 0x211, 0x212, 0x219},
                       "squares": 5, "size": 3, "verge": 0x004, "verge_step": 2},
-    "MauvilleCity": {"mode": "street", "material": SAND, "ground": GRASS_GROUND,
+    "MauvilleCity": {"mode": "street", "material": SAND, "forged": "TERRA", "ground": GRASS_GROUND,
                      "plaza": 2, "verge": 0x004, "verge_step": 3},
     "SootopolisCity": {"mode": "park", "material": GRASS, "ground": {0x2D9, 0x244, 0x245},
                        "squares": 5, "size": 2, "verge": 0x004, "verge_step": 2},
@@ -155,10 +169,36 @@ def retheme(city, theme, dry_run=False):
     changed = paint_town.paint(town, region, table, theme["ground"], keep=keep)
     planted = _verges(town, region, theme, keep, changed)
     changed.update(planted)
+    forged = _forge_material(town, theme, keep, changed)
+    changed.update(forged)
     if not dry_run:
         paint_town.commit(town, changed)
     return {"city": city, "paved": len(changed) - len(planted), "planted": len(planted),
             "region": len(region), "hub": hub}
+
+
+def _forge_material(town, theme, keep, changed):
+    """Swap a whole material for its forged counterpart, town-wide.
+
+    Doing this only along the new streets would leave a town wearing two
+    materials at once - the paths Emerald already laid in sand beside the ones
+    laid here in earth. The swap is block for block, so collision, elevation
+    and behaviour are carried straight over.
+    """
+    name = theme.get("forged")
+    if not name:
+        return {}
+    swap = forge.substitution(name)
+    out = {}
+    for y in range(town.h):
+        for x in range(town.w):
+            if (x, y) in keep:
+                continue
+            value = changed.get((x, y), town.blocks[town.index(x, y)])
+            block = swap.get(value & 0x03FF)
+            if block is not None:
+                out[(x, y)] = (value & 0xFC00) | block
+    return out
 
 
 def _verges(town, region, theme, keep, paved):

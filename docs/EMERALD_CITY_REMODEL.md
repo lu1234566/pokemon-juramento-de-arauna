@@ -108,19 +108,19 @@ placed on the roomiest patches of floor the campaign never walks on.
 
 | Settlement | Treatment | Blocks restyled |
 |---|---|---:|
-| VILA AMANHECER (LittlerootTown) | earth streets | 61 |
-| VILA DA PASSAGEM (OldaleTown) | earth crossroads | 72 |
-| PAMPA DA ESPERA (PetalburgCity) | earth streets | 52 |
-| SERRA DO UIVO (RustboroCity) | green squares | 64 |
+| VILA AMANHECER (LittlerootTown) | earth streets | 48 |
+| VILA DA PASSAGEM (OldaleTown) | earth crossroads | 71 |
+| PAMPA DA ESPERA (PetalburgCity) | earth streets | 158 |
+| SERRA DO UIVO (RustboroCity) | green squares | 32 |
 | PORTO DO SAL (SlateportCity) | green squares | 45 |
-| ENCRUZILHADA (MauvilleCity) | earth streets | 94 |
-| VALE DO SILENCIO (VerdanturfTown) | earth streets | 49 |
-| CASA DA CINZA (LavaridgeTown) | earth streets | 36 |
-| BAIA DAS LUZES (LilycoveCity) | earth avenues | 250 |
-| MISSOES DO CEU (MossdeepCity) | earth avenues | 190 |
+| ENCRUZILHADA (MauvilleCity) | earth streets | 91 |
+| VALE DO SILENCIO (VerdanturfTown) | earth streets | 44 |
+| CASA DA CINZA (LavaridgeTown) | earth streets | 58 |
+| BAIA DAS LUZES (LilycoveCity) | earth avenues | 235 |
+| MISSOES DO CEU (MossdeepCity) | earth avenues | 384 |
 | AGUAS DE M'BOI (SootopolisCity) | green squares | 20 |
 
-943 blocks across eleven settlements.
+1186 blocks across eleven settlements.
 
 PORTO DAS REDES, CAMPO DAS CINZAS, MATA DO MEIO, CASA DA FOGUEIRA and
 ESTR. JURAMENTO are left alone. Their ground is sand, ash, timber, plank and
@@ -152,3 +152,56 @@ one wrote:
 1. `restore_city_layouts.py` — put the authored composition back;
 2. `plant_town_gardens.py` — hand-placed beds on the restored grass;
 3. `retheme_cities.py` — streets, squares and verges.
+
+## Tiles that are not Emerald's, drawn with Emerald's hand
+
+Laying Emerald's own blocks in a new plan still leaves a town wearing Hoenn's
+materials. `tools/art/forge_arauna_tiles.py` adds materials that are not in
+Emerald at all, without a pixel of it falling out of style and without a byte
+of headroom.
+
+There is no headroom. The primary tileset every outdoor map loads is at 512 of
+512 tiles, 512 of 512 metatiles, and every one of the sixteen entries in all
+six of its palettes is referenced by something. Nothing can be appended, and
+raising any of those ceilings would mean moving the VRAM window the hardware
+reads the tileset through.
+
+What it has is dead space, and the tool measures it rather than assuming it:
+64 metatiles that no map lays and no script names, and — after discounting the
+tiles that secondary tilesets reach back into the primary set to use, and the
+five ranges the animation code rewrites in VRAM every few frames — 15 tiles
+that nothing draws. Writing there changes nothing on screen today and moves no
+file's size at all.
+
+So a material is forged the only way that space allows, which happens also to
+be the only way that guarantees the result looks like Emerald: **take a
+material the artists already drew and re-index it onto a colour ramp they
+already mixed.** Not a redraw. Every pixel keeps its position, every dither
+keeps its pattern, every edge keeps its shape; the only thing that changes is
+which entry of which palette each pixel points at. A material forged this way
+cannot drift out of style, because there is no step in which anything is drawn.
+
+**TERRA**, the packed red earth of Arauna's roads, is Emerald's beach sand
+re-indexed from the sand ramp of palette 5 onto the rock ramp of palette 3.
+Palette 3 carries the identical grass green at entry F, so the material's own
+edge and corner tiles still meet a lawn exactly as the originals did. It costs
+8 tiles and 9 metatiles, and the blocks are named in
+`include/constants/metatile_labels.h` so nothing later reads the slots as free.
+
+A forged material appears in no Emerald map, so its autotile table cannot be
+learned the way a real one's is. It does not have to be: block for block it is
+the source material, so the source's learned table maps straight through the
+substitution. Every town laid in earth also has any sand Emerald had already
+put there swapped over, so no settlement ends up wearing two materials at once.
+
+### One thing this pass got wrong
+
+The paintable-ground lists first carried `0x201`. Any block id at or above
+0x200 is an index into whichever secondary tileset the map loads, so that
+number is a yellow flowerbed in VILA AMANHECER, a ledge in ENCRUZILHADA and
+deep water in MISSOES DO CEU. Nothing was damaged — the id never came up in a
+street plan, and the gate would have refused the change anyway, because a
+ledge's behaviour is not a road's. But relying on the gate to catch a mistake
+is worse than not making it, so `paint` now compares the behaviour of the block
+it is about to lay against the behaviour of the block already there and skips
+the cell when they differ. The mistake is no longer possible to express.
