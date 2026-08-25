@@ -4,6 +4,7 @@ from .navigation import MoveResult, Navigator, WalkResult
 from .objects import ObjectEventReader, ObjectEventState
 from .protocol import BridgeInfo, MgbaBridge, ProtocolError, key_mask
 from .repo_map import CollisionGrid, LayoutDefinition, MapCell, MapDefinition, MapIssue, RepoMapIndex
+from .scenario import ScenarioResult, ScenarioRunner, ScenarioStepResult
 from .state import AraunaState, AraunaStateReader
 from .symbols import Symbol, SymbolTable
 from .watchdog import StateWatchdog, WatchEvent
@@ -31,6 +32,9 @@ __all__ = [
     "ObjectEventState",
     "ProtocolError",
     "RepoMapIndex",
+    "ScenarioResult",
+    "ScenarioRunner",
+    "ScenarioStepResult",
     "StateWatchdog",
     "Symbol",
     "SymbolTable",

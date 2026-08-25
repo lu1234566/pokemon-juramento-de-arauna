@@ -19,6 +19,7 @@ from arauna_qa import (
     NpcInteractor,
     ObjectEventReader,
     RepoMapIndex,
+    ScenarioRunner,
     SymbolTable,
     WorldNavigator,
     WorldRouter,
@@ -57,10 +58,11 @@ def repl(
     world_navigator = WorldNavigator(navigator, map_index, world_router)
     object_reader = ObjectEventReader(bridge, symbols)
     npc = NpcInteractor(navigator, object_reader, map_index)
+    scenarios = ScenarioRunner(navigator, world_navigator, npc, map_index)
     print("Connected. Commands: state, map, objects, talk INDEX, talklocal LOCAL_ID,")
-    print("route TARGET_MAP, routeto TARGET_MAP, step DIR, walk DIR..., walkto X Y,")
-    print("explore [targets], press KEY [frames], keys KEY..., release, screenshot PATH,")
-    print("save PATH, load PATH, info, ping, reset, quit")
+    print("scenario FILE, route TARGET_MAP, routeto TARGET_MAP, step DIR, walk DIR...,")
+    print("walkto X Y, explore [targets], press KEY [frames], keys KEY..., release,")
+    print("screenshot PATH, save PATH, load PATH, info, ping, reset, quit")
     while True:
         try:
             raw = input("arauna-qa> ").strip()
@@ -89,6 +91,11 @@ def repl(
                 if len(args) != 2:
                     raise ValueError("usage: talklocal LOCAL_ID")
                 result = npc.interact(local_id=int(args[1]))
+                print(json.dumps(result.to_dict(), indent=2, sort_keys=True))
+            elif command == "scenario":
+                if len(args) != 2:
+                    raise ValueError("usage: scenario FILE")
+                result = scenarios.run_file(args[1])
                 print(json.dumps(result.to_dict(), indent=2, sort_keys=True))
             elif command == "route":
                 if len(args) != 2:
