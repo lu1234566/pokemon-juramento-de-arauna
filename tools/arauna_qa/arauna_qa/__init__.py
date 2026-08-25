@@ -5,6 +5,7 @@ from .repo_map import CollisionGrid, LayoutDefinition, MapCell, MapDefinition, M
 from .state import AraunaState, AraunaStateReader
 from .symbols import Symbol, SymbolTable
 from .watchdog import StateWatchdog, WatchEvent
+from .world_nav import TransitionResult, WorldNavigationResult, WorldNavigator
 from .world_route import MapTransition, WorldRoute, WorldRouter
 
 __all__ = [
@@ -27,8 +28,11 @@ __all__ = [
     "StateWatchdog",
     "Symbol",
     "SymbolTable",
+    "TransitionResult",
     "WatchEvent",
     "WalkResult",
+    "WorldNavigationResult",
+    "WorldNavigator",
     "WorldRoute",
     "WorldRouter",
     "key_mask",

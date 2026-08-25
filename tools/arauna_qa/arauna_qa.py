@@ -18,6 +18,7 @@ from arauna_qa import (
     Navigator,
     RepoMapIndex,
     SymbolTable,
+    WorldNavigator,
     WorldRouter,
     key_mask,
 )
@@ -46,9 +47,10 @@ def repl(bridge: MgbaBridge, reader: AraunaStateReader, map_index: RepoMapIndex)
     navigator = Navigator(bridge, reader, map_index=map_index)
     explorer = Explorer(navigator, map_index)
     world_router = WorldRouter(map_index)
-    print("Connected. Commands: state, map, route TARGET_MAP, step DIR, walk DIR..., walkto X Y,")
-    print("explore [targets], press KEY [frames], keys KEY..., release, screenshot PATH,")
-    print("save PATH, load PATH, info, ping, reset, quit")
+    world_navigator = WorldNavigator(navigator, map_index, world_router)
+    print("Connected. Commands: state, map, route TARGET_MAP, routeto TARGET_MAP, step DIR,")
+    print("walk DIR..., walkto X Y, explore [targets], press KEY [frames], keys KEY...,")
+    print("release, screenshot PATH, save PATH, load PATH, info, ping, reset, quit")
     while True:
         try:
             raw = input("arauna-qa> ").strip()
@@ -75,6 +77,11 @@ def repl(bridge: MgbaBridge, reader: AraunaStateReader, map_index: RepoMapIndex)
                     print(json.dumps({"route": None, "reason": "unreachable"}, indent=2))
                 else:
                     print(json.dumps(route.to_dict(), indent=2, sort_keys=True))
+            elif command == "routeto":
+                if len(args) != 2:
+                    raise ValueError("usage: routeto TARGET_MAP")
+                result = world_navigator.route_to(args[1])
+                print(json.dumps(result.to_dict(), indent=2, sort_keys=True))
             elif command == "step":
                 if len(args) != 2:
                     raise ValueError("usage: step DIRECTION")
