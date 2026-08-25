@@ -21,8 +21,10 @@ RENDER_STATE_WAIT_SE = 5
 RENDER_STATE_PAUSE = 6
 
 # Emerald struct TextPrinter layout (include/text.h):
-# callback at 0x10, subStructFields at 0x14, active at 0x1B, state at 0x1C.
+# currentChar at 0x00, callback at 0x10, subStructFields at 0x14,
+# active at 0x1B and state at 0x1C.
 TEXT_PRINTER_SIZE = 0x24
+TEXT_PRINTER_CURRENT_CHAR_OFFSET = 0x00
 TEXT_PRINTER_ACTIVE_OFFSET = 0x1B
 TEXT_PRINTER_STATE_OFFSET = 0x1C
 TEXT_PRINTER_SPEED_OFFSET = 0x1D
@@ -59,6 +61,7 @@ class DialogueState:
     printer_active: bool
     printer_state: int
     printer_state_name: str
+    current_char: int
     text_speed: int
     delay_counter: int
     waiting_for_input: bool
@@ -139,6 +142,10 @@ class DialogueReader:
         mode = self.bridge.read8(self.message_mode_address)
         active = raw[TEXT_PRINTER_ACTIVE_OFFSET] != 0
         printer_state = raw[TEXT_PRINTER_STATE_OFFSET]
+        current_char = int.from_bytes(
+            raw[TEXT_PRINTER_CURRENT_CHAR_OFFSET:TEXT_PRINTER_CURRENT_CHAR_OFFSET + 4],
+            "little",
+        )
         wait_kind = _WAIT_KIND.get(printer_state)
         waiting = active and wait_kind is not None
 
@@ -152,6 +159,7 @@ class DialogueReader:
             printer_active=active,
             printer_state=printer_state,
             printer_state_name=_STATE_NAME.get(printer_state, f"unknown_{printer_state}"),
+            current_char=current_char,
             text_speed=raw[TEXT_PRINTER_SPEED_OFFSET],
             delay_counter=raw[TEXT_PRINTER_DELAY_OFFSET],
             waiting_for_input=waiting,
@@ -282,6 +290,7 @@ class DialogueAdvancer:
                 dialogue.message_mode,
                 dialogue.printer_active,
                 dialogue.printer_state,
+                dialogue.current_char,
                 dialogue.delay_counter,
             )
             if signature == last_signature:
