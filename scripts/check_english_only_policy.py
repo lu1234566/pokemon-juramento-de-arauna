@@ -76,6 +76,7 @@ EXPECTED_RENDERER_ORDER = (
     'render_battle_tent_side_identity_en_checked.py',
     'render_remaining_story_en_checked.py',
     'render_arauna_league_en_checked.py',
+    'render_untranslated_story_en_checked.py',
     'render_legacy_place_names_en_checked.py',
     'render_main_readiness_residue_en_checked.py',
 )
@@ -152,9 +153,10 @@ for renderer in renderers:
 extra_overlays = read_manifest(OVERLAY_EXTRA_MANIFEST)
 # A tripwire against the manifest growing by accident: 40 through the story
 # work, plus the 33 dialogue files and 2 C text files that
-# render_legacy_place_names_en_checked.py rewrites.
-if len(extra_overlays) != 75:
-    fail(f"expected 75 final transactional overlay files, found {len(extra_overlays)}")
+# render_legacy_place_names_en_checked.py rewrites, and 3 more that
+# render_untranslated_story_en_checked.py translates.
+if len(extra_overlays) != 78:
+    fail(f"expected 78 final transactional overlay files, found {len(extra_overlays)}")
 for rel_path in extra_overlays:
     if rel_path.startswith("/") or ".." in Path(rel_path).parts:
         fail(f"unsafe overlay path: {rel_path}")

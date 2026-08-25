@@ -78,3 +78,8 @@ data/text/trainers.inc
 # Visible C text the same renderer rewrites.
 src/battle_message.c
 src/data/text/match_call_messages.h
+
+# Story dialogue render_untranslated_story_en_checked.py translates.
+data/maps/EverGrandeCity_HallOfFame/scripts.inc
+data/maps/SkyPillar_Top/scripts.inc
+data/maps/SootopolisCity_PokemonCenter_1F/scripts.inc
