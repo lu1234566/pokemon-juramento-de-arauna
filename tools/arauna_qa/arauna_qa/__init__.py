@@ -4,6 +4,7 @@ from .protocol import BridgeInfo, MgbaBridge, ProtocolError, key_mask
 from .repo_map import CollisionGrid, LayoutDefinition, MapCell, MapDefinition, MapIssue, RepoMapIndex
 from .state import AraunaState, AraunaStateReader
 from .symbols import Symbol, SymbolTable
+from .watchdog import StateWatchdog, WatchEvent
 
 __all__ = [
     "AraunaState",
@@ -21,8 +22,10 @@ __all__ = [
     "Navigator",
     "ProtocolError",
     "RepoMapIndex",
+    "StateWatchdog",
     "Symbol",
     "SymbolTable",
+    "WatchEvent",
     "WalkResult",
     "key_mask",
 ]
