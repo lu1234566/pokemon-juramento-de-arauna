@@ -29,14 +29,8 @@ class Bridge:
         self.reader = reader
         self.presses = []
         self.shots = []
-        self.a_presses_to_battle = None
-        self.a_press_count = 0
     def press(self, key, frames=2):
         self.presses.append((key, frames))
-        if key == "A" and self.a_presses_to_battle is not None and self.reader is not None:
-            self.a_press_count += 1
-            if self.a_press_count >= self.a_presses_to_battle:
-                self.reader.value = state(battle=True, script=False, locked=True)
     def screenshot(self, path):
         self.shots.append(path)
 
@@ -86,6 +80,27 @@ class BattleAutoplayer:
         )
 
 
+class DialogueAdvancer:
+    def __init__(self, nav, reason="battle_started", success=True):
+        self.nav = nav
+        self.reason = reason
+        self.success = success
+        self.calls = []
+    def run(self, **kwargs):
+        self.calls.append(kwargs)
+        if self.reason == "battle_started":
+            self.nav.reader.value = state(battle=True, locked=True)
+        else:
+            self.nav.reader.value = state(battle=False, script=False, locked=False)
+        s = self.nav.reader.value
+        return SimpleNamespace(
+            success=self.success,
+            reason=self.reason,
+            final_state=s,
+            to_dict=lambda: {"success": self.success, "reason": self.reason},
+        )
+
+
 class MapDef:
     id = "MAP_A"
 
@@ -117,31 +132,48 @@ class ScenarioTests(unittest.TestCase):
         self.assertEqual(nav.bridge.presses, [("A", 2), (0, 3)])
         self.assertEqual(npc.calls, [{"local_id": 7}])
 
-    def test_advances_known_trainer_dialogue_until_battle(self):
+    def test_advances_verified_trainer_dialogue_until_battle(self):
         nav = Navigator()
         npc = Npc(nav)
-        nav.bridge.a_presses_to_battle = 2
-        runner = ScenarioRunner(nav, WorldNav(nav), npc, Index())
+        dialogue = DialogueAdvancer(nav)
+        runner = ScenarioRunner(
+            nav, WorldNav(nav), npc, Index(), dialogue_advancer=dialogue
+        )
         result = runner.run({
             "name": "trainer",
             "steps": [
                 {"action": "talk", "local_id": 3},
-                {"action": "advance_to_battle", "max_presses": 4, "press_frames": 1, "settle_frames": 2},
+                {"action": "advance_to_battle", "max_advances": 4, "press_frames": 1, "wait_frames": 2},
                 {"action": "assert", "in_battle": True},
             ],
         })
         self.assertTrue(result.success)
         self.assertEqual(result.steps[1].reason, "battle_started")
-        self.assertEqual(result.steps[1].detail["presses"], 2)
-        self.assertEqual(nav.bridge.presses, [("A", 1), (0, 2), ("A", 1), (0, 2)])
+        self.assertEqual(dialogue.calls, [{
+            "max_advances": 4,
+            "max_cycles": 1024,
+            "wait_frames": 2,
+            "stall_cycles": 120,
+            "press_frames": 1,
+        }])
 
-    def test_advance_to_battle_requires_active_script(self):
+    def test_advance_to_battle_requires_dialogue_advancer(self):
         nav = Navigator()
         runner = ScenarioRunner(nav, WorldNav(nav), Npc(nav), Index())
         result = runner.run({"steps": [{"action": "advance_to_battle"}]})
         self.assertFalse(result.success)
-        self.assertEqual(result.reason, "no_script_to_advance")
+        self.assertEqual(result.reason, "dialogue_advancer_unavailable")
         self.assertEqual(nav.bridge.presses, [])
+
+    def test_dialogue_finished_before_battle_is_failure(self):
+        nav = Navigator()
+        dialogue = DialogueAdvancer(nav, reason="dialogue_finished", success=True)
+        runner = ScenarioRunner(
+            nav, WorldNav(nav), Npc(nav), Index(), dialogue_advancer=dialogue
+        )
+        result = runner.run({"steps": [{"action": "advance_to_battle"}]})
+        self.assertFalse(result.success)
+        self.assertEqual(result.reason, "dialogue_finished_before_battle")
 
     def test_runs_bounded_battle_step(self):
         nav = Navigator()
