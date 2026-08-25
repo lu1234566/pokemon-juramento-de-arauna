@@ -25,15 +25,16 @@ class StateReader:
 
 
 class Menu:
-    def __init__(self, reader, has_prompt=True):
+    def __init__(self, reader, has_prompt=True, raw_prompts=()):
         self.reader = reader
         self.has_prompt = has_prompt
+        self.raw_prompts = tuple(raw_prompts)
     def player_prompt(self):
         if self.reader.in_battle and self.has_prompt:
             return SimpleNamespace()
         return None
     def prompts(self):
-        return ()
+        return self.raw_prompts
 
 
 class Input:
@@ -56,6 +57,18 @@ class Bridge:
         self.waits = []
     def press(self, keys, frames=2):
         self.waits.append((keys, frames))
+
+
+def raw_prompt(command):
+    return SimpleNamespace(
+        battler=0,
+        side="player",
+        controller_active=True,
+        command=command,
+        action_cursor=0,
+        move_cursor=0,
+        to_dict=lambda: {"battler": 0, "side": "player", "command": command},
+    )
 
 
 class BattleLoopTests(unittest.TestCase):
@@ -91,6 +104,27 @@ class BattleLoopTests(unittest.TestCase):
         self.assertEqual(result.reason, "stalled_without_known_prompt")
         self.assertTrue(all(keys == 0 for keys, _ in bridge.waits))
         self.assertEqual(bridge.waits, [(0, 3), (0, 3)])
+
+    def test_reports_mandatory_party_selection_without_guessing(self):
+        reader = StateReader()
+        bridge = Bridge()
+        menu = Menu(reader, False, (raw_prompt(22),))
+        loop = BattleAutoplayer(bridge, reader, BattleReader(), menu, Input(reader))
+        result = loop.run(max_cycles=10, stall_cycles=2, wait_frames=3)
+        self.assertFalse(result.success)
+        self.assertEqual(result.reason, "party_selection_not_supported")
+        self.assertEqual(bridge.waits, [])
+        self.assertEqual(result.events[-1].kind, "unsupported_player_decision")
+
+    def test_reports_yes_no_prompt_without_guessing(self):
+        reader = StateReader()
+        bridge = Bridge()
+        menu = Menu(reader, False, (raw_prompt(19),))
+        loop = BattleAutoplayer(bridge, reader, BattleReader(), menu, Input(reader))
+        result = loop.run(max_cycles=10)
+        self.assertFalse(result.success)
+        self.assertEqual(result.reason, "yes_no_prompt_not_supported")
+        self.assertEqual(bridge.waits, [])
 
 
 if __name__ == "__main__":
