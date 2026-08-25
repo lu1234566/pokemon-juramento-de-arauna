@@ -50,6 +50,10 @@ C_VISIBLE_FILES = {
     "src/data/text/trainer_class_names.h",
     "src/data/script_menu.h",
     "src/landmark.c",
+    # Visible text that lives in C headers rather than .inc banks.
+    "src/data/text/item_descriptions.h",
+    "src/battle_message.c",
+    "src/data/text/match_call_messages.h",
 }
 
 

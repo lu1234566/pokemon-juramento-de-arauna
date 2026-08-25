@@ -235,8 +235,11 @@ def main() -> int:
     active = set(renderers)
     overlays = load_base_overlay_paths(build) | set(read_manifest(EXTRA_OVERLAY_MANIFEST))
 
-    if len(renderers) != 66:
-        fail(f"expected 66 official English renderers, found {len(renderers)}")
+    # The approved list lives in check_english_only_policy.py; count it there
+    # rather than repeating the number and having two places to forget.
+    approved = len(re.findall(r"^\s*'render_[A-Za-z0-9_]+\.py',\s*$", policy, re.M))
+    if len(renderers) != approved:
+        fail(f"expected {approved} official English renderers, found {len(renderers)}")
 
     missing_stages: list[str] = []
     for stage, required in STAGES.items():

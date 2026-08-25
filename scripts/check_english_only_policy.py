@@ -76,6 +76,7 @@ EXPECTED_RENDERER_ORDER = (
     'render_battle_tent_side_identity_en_checked.py',
     'render_remaining_story_en_checked.py',
     'render_arauna_league_en_checked.py',
+    'render_legacy_place_names_en_checked.py',
     'render_main_readiness_residue_en_checked.py',
 )
 APPROVED_ENGLISH_RENDERERS = set(EXPECTED_RENDERER_ORDER)
@@ -135,8 +136,11 @@ if missing:
     fail("approved English renderer(s) missing from official manifest: " + ", ".join(missing))
 if tuple(renderers) != EXPECTED_RENDERER_ORDER:
     fail("official English renderer order changed; review overlap semantics before reordering")
-if len(renderers) != 66:
-    fail(f"expected 66 approved English renderers, found {len(renderers)}")
+# EXPECTED_RENDERER_ORDER above is the pinned list, so it is the count too --
+# a separate literal here only meant two places to forget.
+if len(renderers) != len(EXPECTED_RENDERER_ORDER):
+    fail(f"expected {len(EXPECTED_RENDERER_ORDER)} approved English renderers, "
+         f"found {len(renderers)}")
 
 for renderer in renderers:
     if not (ROOT / "scripts" / renderer).is_file():
@@ -146,8 +150,11 @@ for renderer in renderers:
         fail(f"Portuguese renderer path is active: {renderer}")
 
 extra_overlays = read_manifest(OVERLAY_EXTRA_MANIFEST)
-if len(extra_overlays) != 40:
-    fail(f"expected 40 final transactional overlay files, found {len(extra_overlays)}")
+# A tripwire against the manifest growing by accident: 40 through the story
+# work, plus the 33 dialogue files and 2 C text files that
+# render_legacy_place_names_en_checked.py rewrites.
+if len(extra_overlays) != 75:
+    fail(f"expected 75 final transactional overlay files, found {len(extra_overlays)}")
 for rel_path in extra_overlays:
     if rel_path.startswith("/") or ".." in Path(rel_path).parts:
         fail(f"unsafe overlay path: {rel_path}")

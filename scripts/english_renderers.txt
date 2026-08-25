@@ -65,4 +65,5 @@ render_pokenav_named_calls_en_checked.py
 render_battle_tent_side_identity_en_checked.py
 render_remaining_story_en_checked.py
 render_arauna_league_en_checked.py
+render_legacy_place_names_en_checked.py
 render_main_readiness_residue_en_checked.py
