@@ -1,7 +1,7 @@
 {
   "name": "replace_with_real_npc_battle",
   "template": true,
-  "notes": "Replace MAP_ID and LOCAL_ID with a real trainer/object from the target Arauna build before running.",
+  "notes": "Replace MAP_ID and LOCAL_ID with a known trainer/object from the target Arauna build. advance_to_battle intentionally presses A only for this explicitly selected trainer-dialogue step.",
   "steps": [
     {
       "action": "goto_map",
@@ -14,7 +14,18 @@
     },
     {
       "action": "talk",
-      "local_id": 1
+      "local_id": "LOCAL_ID"
+    },
+    {
+      "action": "assert",
+      "in_battle": false,
+      "script_enabled": true
+    },
+    {
+      "action": "advance_to_battle",
+      "max_presses": 16,
+      "press_frames": 2,
+      "settle_frames": 4
     },
     {
       "action": "assert",
