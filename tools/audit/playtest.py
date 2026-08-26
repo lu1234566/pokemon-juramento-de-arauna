@@ -288,9 +288,10 @@ def screen_faults(path):
     # The GBA screen sits inside the emulator window; sample the middle of it.
     w, h = im.size
     crop = im.crop((int(w * 0.15), int(h * 0.15), int(w * 0.85), int(h * 0.85)))
-    colours = collections.Counter(crop.getdata())
-    total = sum(colours.values())
-    top, count = colours.most_common(1)[0]
+    tally = crop.getcolors(1 << 24) or [(0, (0, 0, 0))]
+    total = sum(n for n, _ in tally)
+    count, top = max(tally)
+    colours = tally
     faults = []
     if count / total > 0.97:
         faults.append("the screen is one flat colour %s" % (top,))
@@ -342,7 +343,7 @@ def act_world(s: Session, log, limit=None, start=0):
         except Exception as why:                        # noqa: BLE001
             note(log, "FAIL", map=name, detail="warp failed: %s" % why)
             continue
-        s.probe.run(1.5)
+        s.probe.run(1.3)
         callback = s.probe.callback2_name()
         where = p.where()
         if callback != "CB2_Overworld":
