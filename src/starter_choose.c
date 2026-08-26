@@ -110,11 +110,14 @@ static const u8 sStarterLabelCoords[STARTER_MON_COUNT][2] =
     {8, 4},
 };
 
+// Arauna's three, in the slots their art and their names were written into:
+// Caramelo is Fire, Quero is Water, Pimpau is Grass - the same triangle Hoenn
+// has, turned one place round. The rival's parties below follow it.
 static const u16 sStarterMon[STARTER_MON_COUNT] =
 {
-    SPECIES_TREECKO,
-    SPECIES_TORCHIC,
-    SPECIES_MUDKIP,
+    SPECIES_BULBASAUR,
+    SPECIES_CHARMANDER,
+    SPECIES_SQUIRTLE,
 };
 
 static const struct BgTemplate sBgTemplates[3] =
