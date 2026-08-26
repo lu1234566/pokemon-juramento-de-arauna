@@ -38,6 +38,9 @@ from pilot import Pilot, Stuck                                  # noqa: E402
 from play import CHECKPOINTS, Session                           # noqa: E402
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
+
+# The road north of the village is shut until the rival has been met.
+VAR_LITTLEROOT_TOWN_STATE = 0x4050
 REPORT = ROOT / "build" / "arauna-en" / "playtest"
 
 # Maps no player can reach and no warp leads to: the debug and link rooms, the
@@ -210,7 +213,8 @@ def act_opening_tail(s: Session, log, p=None):
     except Stuck as why:
         note(log, "STUCK", step="leaving the neighbour", detail=str(why))
         return p
-    note(log, "village", at=str(p.where()[2:]), state="heading north")
+    note(log, "village", at=str(p.where()[2:]), state="heading north",
+         town_state=s.probe.get_var(VAR_LITTLEROOT_TOWN_STATE))
 
     before = s.probe.party_count() or 0
     for _ in range(40):
@@ -225,8 +229,15 @@ def act_opening_tail(s: Session, log, p=None):
         here = p.map_name()
         try:
             if here == "LittlerootTown":
-                p.walk_to(11, 2)
-                p.step("up")
+                # Keep pushing north off the top of the map. Walking to the
+                # square below the edge and stepping once only oscillates: the
+                # next pass walks back down to it again.
+                p.walk_to(11, 1)
+                for _ in range(4):
+                    if p.map_name() != "LittlerootTown":
+                        break
+                    p.step("up")
+                    p.clear_messages(8)
             elif here == "Route101":
                 where = p.where()
                 p.walk_to(where[2], max(1, where[3] - 4))

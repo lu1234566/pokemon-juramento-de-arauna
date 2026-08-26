@@ -237,6 +237,10 @@ class Probe:
         addr = sb1 + SB1_FLAGS + flag // 8
         self.write(addr, bytes([self.u8(addr) | (1 << (flag % 8))]))
 
+    def get_var(self, var: int) -> int | None:
+        sb1 = self._save_block("gSaveBlock1Ptr")
+        return None if sb1 is None else self.u16(sb1 + SB1_VARS + (var - VARS_START) * 2)
+
     def set_var(self, var: int, value: int) -> None:
         sb1 = self._save_block("gSaveBlock1Ptr")
         self.write(sb1 + SB1_VARS + (var - VARS_START) * 2, struct.pack("<H", value))
