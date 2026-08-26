@@ -63,7 +63,7 @@ CANON = {
     "PETALBURG CITY": "PAMPA DA ESPERA",
     "SLATEPORT CITY": "PORTO DO SAL",
     "RUSTURF TUNNEL": "GALERIAS SERRA",
-    "LAVARIDGE TOWN": "CASA DA CINZA",
+    "LAVARIDGE TOWN": "SERTAO DE DENTRO",
     "ABANDONED SHIP": "NAVIO PERDIDO",
     "CAVE OF ORIGIN": "M'BOI CORE",
     "OLDALE TOWN": "VILA DA PASSAGEM",
@@ -97,6 +97,32 @@ CANON = {
     "TEAM AQUA": "HORIZONTE",
     "MT. PYRE": "MEMORIAL NOMES",
     "HOENN": "ARAUNA",
+    # And the same settlements without the TOWN or CITY after them. Dialogue
+    # drops the suffix constantly - "ferry ports in SLATEPORT and LILYCOVE",
+    # "I hiked over from MAUVILLE" - and every one of those survived, because
+    # the entries above only match the full form. That is where the 137
+    # readable mentions of Hoenn in the built ROM were. Applied after the
+    # suffixed forms by ORDER, which sorts longest first, so PETALBURG WOODS
+    # and NEW MAUVILLE are still taken whole.
+    #
+    # Each name is the one the region map itself shows, so the town a person
+    # names is the town on the map screen.
+    "PACIFIDLOG": "CASA DA FOGUEIRA",
+    "VERDANTURF": "VALE DO SILENCIO",
+    "LITTLEROOT": "VILA AMANHECER",
+    "EVER GRANDE": "ESTR. JURAMENTO",
+    "SOOTOPOLIS": "AGUAS DE M'BOI",
+    "LAVARIDGE": "SERTAO DE DENTRO",
+    "PETALBURG": "PAMPA DA ESPERA",
+    "FALLARBOR": "CAMPO DAS CINZAS",
+    "SLATEPORT": "PORTO DO SAL",
+    "MOSSDEEP": "MISSOES DO CEU",
+    "RUSTBORO": "SERRA DO UIVO",
+    "LILYCOVE": "BAIA DAS LUZES",
+    "MAUVILLE": "ENCRUZILHADA",
+    "DEWFORD": "PORTO DAS REDES",
+    "FORTREE": "MATA DO MEIO",
+    "OLDALE": "VILA DA PASSAGEM",
 }
 ORDER = sorted(CANON, key=len, reverse=True)
 
@@ -133,6 +159,11 @@ C_LITERAL_OVERRIDES = {
     # to the Lati@s island, so it names the place instead.
     '"The ticket for a\\n" "ferry to a distant\\n" "southern island."':
         '"The ticket for a\\n" "ferry out to\\n" "ILHA DO SUL."',
+    # NEW MAUVILLE is broken across a line here, so the pair never matches as
+    # one and the bare name below it takes over: "ENCRUZILHADA beneath" is
+    # 117px in a 102px box. Written out whole instead, at 72, 95 and 75px.
+    '"The key for NEW\\n" "MAUVILLE beneath\\n" "MAUVILLE CITY."':
+        '"Opens the OLD\\n" "POWER RELAY under\\n" "ENCRUZILHADA."',
 }
 C_LITERAL_RE = re.compile(r'_\(\s*((?:"(?:[^"\\]|\\.)*"\s*)+)\)')
 C_ONE_RE = re.compile(r'"((?:[^"\\]|\\.)*)"')
