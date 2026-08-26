@@ -41,6 +41,7 @@ ROOT = pathlib.Path(__file__).resolve().parents[2]
 
 # The road north of the village is shut until the rival has been met.
 VAR_LITTLEROOT_TOWN_STATE = 0x4050
+VAR_ROUTE101_STATE = 0x4060
 REPORT = ROOT / "build" / "arauna-en" / "playtest"
 
 # Maps no player can reach and no warp leads to: the debug and link rooms, the
@@ -217,7 +218,7 @@ def act_opening_tail(s: Session, log, p=None):
          town_state=s.probe.get_var(VAR_LITTLEROOT_TOWN_STATE))
 
     before = s.probe.party_count() or 0
-    for _ in range(40):
+    for _ in range(22):
         p.clear_messages(10)
         if (s.probe.party_count() or 0) > before:
             break
@@ -239,8 +240,29 @@ def act_opening_tail(s: Session, log, p=None):
                     p.step("up")
                     p.clear_messages(8)
             elif here == "Route101":
-                where = p.where()
-                p.walk_to(where[2], max(1, where[3] - 4))
+                # The rescue fires on the bottom row, and only on stepping
+                # *onto* it. Arriving there from the village is not a step onto
+                # it as far as the check is concerned, so a run that walks
+                # straight on north leaves the whole scene behind and reaches
+                # the top of the route with no Pokemon and no idea why.
+                s.probe.run(2.0)
+                p.clear_messages(12)
+                if (s.probe.get_var(VAR_ROUTE101_STATE) or 0) <= 1:
+                    p.walk_to(11, 18)
+                    p.step("down")
+                    p.clear_messages(30)
+                else:
+                    try:
+                        p.walk_to(7, 15)      # beside Anahi's bag
+                    except Stuck:
+                        pass
+                    p.face_and_talk(7, 14)
+                    for _ in range(16):
+                        p.clear_messages(8)
+                        s.probe.run(1.0)
+                        if (s.probe.party_count() or 0) > before:
+                            break
+                        s.press("a", 1)
             else:
                 p.clear_messages(6)
         except Stuck:
