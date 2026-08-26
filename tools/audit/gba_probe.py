@@ -169,8 +169,16 @@ class Probe:
         return group, num, x, y
 
     def party_count(self) -> int | None:
-        sb1 = self._save_block("gSaveBlock1Ptr")
-        return None if sb1 is None else self.u8(sb1 + SB1_PARTY_COUNT)
+        """How many Pokemon the player is actually carrying.
+
+        Not `gSaveBlock1Ptr->playerPartyCount`, which is where this used to
+        read: that is the *saved* copy, written when the game saves and stale
+        until then. A run that receives its first Pokemon and never opens the
+        menu to save still reads zero there, and the playtest reported the
+        opening as failing to hand one over while the player stood in the
+        laboratory holding it. `gPlayerPartyCount` is the live one.
+        """
+        return self.u8(self.sym["gPlayerPartyCount"])
 
     def player_name(self) -> str | None:
         sb2 = self._save_block("gSaveBlock2Ptr")
