@@ -43,6 +43,9 @@ ROOT = pathlib.Path(__file__).resolve().parents[2]
 # The road north of the village is shut until the rival has been met.
 VAR_LITTLEROOT_TOWN_STATE = 0x4050
 VAR_ROUTE101_STATE = 0x4060
+
+# MB_TALL_GRASS, the behaviour a map gives a square that hides Pokemon.
+TALL_GRASS = 2
 REPORT = ROOT / "build" / "arauna-en" / "playtest"
 
 # Maps no player can reach and no warp leads to: the debug and link rooms, the
@@ -275,6 +278,7 @@ def act_opening_tail(s: Session, log, p=None):
     note(log, "north", map=p.map_name(), at=str(p.where()[2:]))
     if after > before:
         note(log, "starter", party=after)
+        s.savestate("pt_starter")
     else:
         note(log, "FAIL", step="the first Pokemon", party=after, map=p.map_name())
     return p
@@ -377,37 +381,61 @@ def act_world(s: Session, log, limit=None, start=0, only=None):
 
 
 # -------------------------------------------------------------- act three
-def act_battles(s: Session, log, spots=None):
+def grass_cells(name):
+    """Squares of tall grass on a map, as the map's own attributes call them."""
+    try:
+        grid = TownMap(name, str(ROOT))
+    except Exception:                                       # noqa: BLE001
+        return []
+    return [(x, y) for y in range(grid.h) for x in range(grid.w)
+            if grid.behavior(x, y) == TALL_GRASS and grid.walkable(x, y)]
+
+
+def act_battles(s: Session, log, routes=None):
+    """Walk in the grass until something attacks, and see the battle through.
+
+    Two things this needs that are easy to leave out. The player has to be
+    carrying a Pokemon - with an empty party the game refuses to start a wild
+    battle at all, and a run resumed from before the first one paces up and
+    down reporting that the grass is empty. And the pacing has to happen *in*
+    the grass, which is a property of the map rather than somewhere to guess.
+    """
     p = Pilot(s)
     print("[battles]")
-    spots = spots or [("Route101", 0, 16, 8, 12), ("Route102", 0, 17, 12, 8),
-                      ("Route116", 0, 32, 20, 8)]
-    for name, group, num, x, y in spots:
-        s.warp(group, num, x, y)
+    if not (s.probe.party_count() or 0):
+        note(log, "FAIL", step="the battles", detail="the party is empty; resume from pt_starter")
+        return p
+    for name in routes or ("Route101", "Route102", "Route103", "Route116", "PetalburgWoods"):
+        where = next((gn for gn, n in p.maps.items() if n == name), None)
+        grass = grass_cells(name)
+        if where is None or not grass:
+            note(log, "note", map=name, detail="no tall grass on this map")
+            continue
+        s.warp(where[0], where[1], *grass[len(grass) // 2])
         s.probe.run(2.0)
+        p.clear_messages(8)
         started = False
-        for _ in range(30):
-            for move in ("left", "right"):
-                s.hold(move, 0.5)
-                s.probe.run(0.4)
+        for _ in range(24):
+            for move in ("left", "right", "up", "down"):
+                p.step(move)
                 if s.probe.callback2_name() != "CB2_Overworld":
                     started = True
                     break
             if started:
                 break
         if not started:
-            note(log, "note", map=name, detail="no wild encounter in 30 paces")
+            note(log, "note", map=name, detail="nothing attacked in the grass")
             continue
-        s.probe.run(4.0)
+        s.probe.run(5.0)
         s.shot("pt_battle_%s" % name)
         note(log, "battle", map=name, callback=s.probe.callback2_name())
-        for _ in range(40):                            # run away
+        for _ in range(60):                            # run away
             s.press("b", 1)
             s.probe.run(0.8)
             if s.probe.callback2_name() == "CB2_Overworld":
                 break
         if s.probe.callback2_name() != "CB2_Overworld":
-            note(log, "FAIL", map=name, detail="the battle did not end")
+            note(log, "FAIL", map=name, detail="the battle never ended")
         else:
             note(log, "battle-end", map=name, state="back on the field")
     return p
