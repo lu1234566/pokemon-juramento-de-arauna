@@ -429,15 +429,34 @@ def act_battles(s: Session, log, routes=None):
         s.probe.run(5.0)
         s.shot("pt_battle_%s" % name)
         note(log, "battle", map=name, callback=s.probe.callback2_name())
-        for _ in range(60):                            # run away
-            s.press("b", 1)
-            s.probe.run(0.8)
+        # Getting out. B does not run away - it backs out of a menu, and a
+        # harness that presses it sixty times reports every battle in the game
+        # as never ending. RUN is the bottom-right of the four, so the way out
+        # is down, right, A. It can fail on speed, so it is worth several
+        # goes, and if the wild one is simply faster, fight instead: a level 5
+        # starter against a level 2 is a short conversation.
+        how = "ran"
+        for attempt in range(10):
             if s.probe.callback2_name() == "CB2_Overworld":
                 break
+            if attempt < 6:
+                s.press("down", 1); s.probe.run(0.3)
+                s.press("right", 1); s.probe.run(0.3)
+                s.press("a", 1); s.probe.run(1.6)
+            else:
+                how = "fought"
+                for _ in range(6):
+                    s.press("a", 1)
+                    s.probe.run(1.4)
+        for _ in range(20):                            # ride out the fade
+            if s.probe.callback2_name() == "CB2_Overworld":
+                break
+            s.press("a", 1)
+            s.probe.run(1.0)
         if s.probe.callback2_name() != "CB2_Overworld":
             note(log, "FAIL", map=name, detail="the battle never ended")
         else:
-            note(log, "battle-end", map=name, state="back on the field")
+            note(log, "battle-end", map=name, state="back on the field, %s" % how)
     return p
 
 
