@@ -56,6 +56,13 @@ MATERIALS = {
         "source": [0x001, 0x1CE, 0x1CF],
         "palette": 2,
         "recolour": {0xC: 0x2, 0xD: 0x3, 0xE: 0x4},
+        # Everything green in this palette that the lawn ramp above does not
+        # reach: the four shades Emerald draws leaves with, 1-2-3-4, and F,
+        # the grass ramp's deepest step, which no lawn block uses but every
+        # tree block does - leaving it alone put a mint outline around every
+        # tree in a re-greened town. Mata Atlantica: a dense canopy lit
+        # blue-green at the top and going almost black beneath.
+        "foliage": {0x1: 0xF, 0x2: 0x3, 0x3: 0x4, 0x4: 0x8, 0xF: 0x8},
         "tiles": [0x16D, 0x17D],
         "metatiles": [0x02A, 0x02E, 0x02F],
         "label": "Arauna_Mata",
@@ -64,6 +71,11 @@ MATERIALS = {
         "source": [0x001, 0x1CE, 0x1CF],
         "palette": 2,
         "recolour": {0xC: 0x1, 0xD: 0x2, 0xE: 0x3},
+        # Cerrado: dark olive foliage over the bleached grass of the ramp
+        # above. Sending the canopy's body to the grey-brown instead read as
+        # dead wood rather than dry leaves, because the body is the largest
+        # part of a tree - only the deepest shadow goes brown.
+        "foliage": {0x1: 0x2, 0x2: 0x3, 0x3: 0x4, 0x4: 0x8, 0xF: 0x4},
         "tiles": [0x18A, 0x1F8],
         "metatiles": [0x035, 0x046, 0x05C],
         "label": "Arauna_Cerrado",
@@ -72,6 +84,8 @@ MATERIALS = {
         "source": [0x001, 0x1CE, 0x1CF],
         "palette": 2,
         "recolour": {0xC: 0x1, 0xD: 0xC, 0xE: 0xD},
+        # Pampa: low scrub, cool and blue-green against the pale open grass.
+        "foliage": {0x1: 0xD, 0x2: 0xE, 0x3: 0xF, 0x4: 0x4, 0xF: 0xE},
         "tiles": [0x1F9, 0x1FA],
         "metatiles": [0x07E, 0x07F, 0x097],
         "label": "Arauna_Pampa",

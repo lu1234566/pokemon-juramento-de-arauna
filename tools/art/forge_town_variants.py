@@ -50,9 +50,16 @@ NUM_TILES_IN_PRIMARY = 512
 NUM_METATILES_IN_PRIMARY = 512
 SECONDARY_CAPACITY = 512
 
-# The three entries of palette 2 that Emerald's grass is drawn from.
+# Everything Emerald draws in green, in the one palette it draws it from:
+# three entries for the grass underfoot and four for the leaves above it. The
+# first version of this took only the grass, and a town came back re-greened
+# from the ankles down with Emerald's own trees still standing in it.
 GRASS_PALETTE = 2
-GRASS_INDICES = {0xC, 0xD, 0xE}
+
+
+def biome_ramp(biome):
+    spec = forge.MATERIALS[biome]
+    return {**spec["recolour"], **spec.get("foliage", {})}
 
 
 class OutOfRoom(Exception):
@@ -174,17 +181,23 @@ def save_manifest(manifest):
     json.dump(manifest, open(MANIFEST, "w", encoding="utf-8"), indent=1, sort_keys=True)
 
 
-def live_secondary(symbol):
+def live_secondary(symbol, baseline="HEAD"):
     """Which of a secondary tileset's blocks are spoken for.
 
     A block is spoken for if a map lays it now, if a map laid it in the
-    committed revision, or if a script names it by constant.
+    baseline revision, or if a script names it by constant.
 
-    The committed revision matters because redressing a town frees the blocks
-    it used to lay: substitute every cell that held one and it looks unused.
-    Reusing it would then make the result depend on the order the towns were
-    processed in, and would silently rewrite the meaning of a block id another
-    map may still be laying. Blocks are only ever added to, never recycled.
+    The baseline matters because redressing a town frees the blocks it used to
+    lay: substitute every cell that held one and it looks unused. Reusing it
+    would then make the result depend on the order the towns were processed
+    in, and would silently rewrite the meaning of a block id another map may
+    still be laying. Blocks are only ever added to, never recycled.
+
+    The baseline is the committed revision, except when the whole variant pass
+    is being rebuilt from an earlier one: then every variant the current commit
+    holds is about to stop existing, and treating those slots as spoken for
+    reserves the tileset against itself. That is what `--rebase-from` is for -
+    pass the revision the tilesets were reset to.
 
     Scripts matter because `setmetatile` addresses blocks that may appear in no
     map at all - the Wailmer that blocks Lilycove's shore, Sootopolis's gym
@@ -202,7 +215,7 @@ def live_secondary(symbol):
             blobs = [open(path, "rb").read()]
             try:
                 blobs.append(subprocess.check_output(
-                    ["git", "show", "HEAD:%s" % layout[key]], cwd=ROOT,
+                    ["git", "show", "%s:%s" % (baseline, layout[key])], cwd=ROOT,
                     stderr=subprocess.DEVNULL))
             except subprocess.CalledProcessError:
                 pass
@@ -240,15 +253,24 @@ def scripted_metatiles(city):
 
 
 class Forge:
-    def __init__(self, town, biome, manifest):
+    def __init__(self, town, biome, manifest, baseline="HEAD"):
         self.town = town
         self.biome = biome
         self.manifest = manifest
-        self.ramp = forge.MATERIALS[biome]["recolour"]
+        self.ramp = biome_ramp(biome)
+        self.greens = set(self.ramp)
+        # The lawn this biome already has was forged out of the same palette,
+        # and it landed in the range the canopy ramp reads from. Redressing it
+        # would run the ramp over it a second time and take the town two
+        # shades darker than it was drawn to be, so the material's own blocks
+        # and tiles are off limits: they are already this biome's green.
+        spec = forge.MATERIALS[biome]
+        self.forged_blocks = set(spec["metatiles"])
+        self.forged_tiles = set(spec["tiles"])
         self.primary = Tileset(town.layout["primary_tileset"], secondary=False)
         self.secondary = Tileset(town.layout["secondary_tileset"], secondary=True)
 
-        used_blocks = live_secondary(self.secondary.symbol)
+        used_blocks = live_secondary(self.secondary.symbol, baseline)
         claimed_blocks = {v for k, v in manifest["blocks"].items()
                           if k.startswith(self.secondary.symbol + "|")}
         self.free_blocks = [i for i in range(SECONDARY_CAPACITY)
@@ -276,15 +298,17 @@ class Forge:
             return self.primary.sheet.read(tile_id)
         return self.secondary.sheet.read(tile_id - NUM_TILES_IN_PRIMARY)
 
-    def wears_old_grass(self, block):
+    def wears_emerald_green(self, block):
+        if block in self.forged_blocks:
+            return False
         tileset, index = self.owner(block)
         if index >= tileset.block_count:
             return False
         for entry in tileset.entries(index):
             tile_id, palette = entry & 0x03FF, (entry >> 12) & 0x0F
-            if not tile_id or palette != GRASS_PALETTE:
+            if not tile_id or palette != GRASS_PALETTE or tile_id in self.forged_tiles:
                 continue
-            if set(self.tile_pixels(tile_id)) & GRASS_INDICES:
+            if set(self.tile_pixels(tile_id)) & self.greens:
                 return True
         return False
 
@@ -309,7 +333,8 @@ class Forge:
         rebuilt = []
         for entry in tileset.entries(index):
             tile_id, palette = entry & 0x03FF, (entry >> 12) & 0x0F
-            if tile_id and palette == GRASS_PALETTE and set(self.tile_pixels(tile_id)) & GRASS_INDICES:
+            if (tile_id and palette == GRASS_PALETTE and tile_id not in self.forged_tiles
+                    and set(self.tile_pixels(tile_id)) & self.greens):
                 slot = self.variant_tile(tile_id)
                 rebuilt.append((entry & 0xFC00) | (NUM_TILES_IN_PRIMARY + slot))
             else:
@@ -322,19 +347,32 @@ class Forge:
         return NUM_METATILES_IN_PRIMARY + slot
 
 
+def border_path(town):
+    rel = town.layout.get("border_filepath")
+    return os.path.join(ROOT, rel) if rel else None
+
+
+def read_border(town):
+    path = border_path(town)
+    if not path or not os.path.exists(path):
+        return []
+    raw = open(path, "rb").read()
+    return list(struct.unpack("<%dH" % (len(raw) // 2), raw))
+
+
 def biome_of(city):
     import retheme_cities
     theme = retheme_cities.THEMES.get(city) or {}
     return theme.get("biome")
 
 
-def dress(city, dry_run=False, manifest=None):
+def dress(city, dry_run=False, manifest=None, baseline="HEAD"):
     biome = biome_of(city)
     if not biome:
         return None
     town = TownMap(city, ROOT)
     manifest = manifest if manifest is not None else load_manifest()
-    smith = Forge(town, biome, manifest)
+    smith = Forge(town, biome, manifest, baseline)
     frozen = scripted_metatiles(city)
 
     # Redress the commonest blocks first: when a tileset's dead space runs out
@@ -345,7 +383,16 @@ def dress(city, dry_run=False, manifest=None):
         for x in range(town.w):
             if (x, y) not in frozen:
                 tally[town.metatile(x, y)] = tally.get(town.metatile(x, y), 0) + 1
-    wearing = [b for b in sorted(tally, key=lambda b: -tally[b]) if smith.wears_old_grass(b)]
+    # The border is the strip the camera draws past the edge of the map, and
+    # it is part of the town's own layout. Leaving it out framed every dark
+    # green settlement in Emerald's bright green - most visibly in Vila
+    # Amanhecer, where the forest the player's house now backs onto is the
+    # border, and it was the only green in the shot that had not changed.
+    border = read_border(town)
+    for value in border:
+        block = value & 0x03FF
+        tally[block] = tally.get(block, 0) + 1
+    wearing = [b for b in sorted(tally, key=lambda b: -tally[b]) if smith.wears_emerald_green(b)]
 
     variants, short = {}, []
     for block in wearing:
@@ -368,9 +415,15 @@ def dress(city, dry_run=False, manifest=None):
                 # construction; the gate re-checks it against the committed map.
                 town.blocks[town.index(x, y)] = (town.blocks[town.index(x, y)] & 0xFC00) | variant
 
+    border = [(value & 0xFC00) | variants.get(value & 0x03FF, value & 0x03FF)
+              for value in border]
+
     dressed = len(variants)
     if not dry_run and dressed:
         open(town.path, "wb").write(struct.pack("<%dH" % len(town.blocks), *town.blocks))
+        path = border_path(town)
+        if path and border:
+            open(path, "wb").write(struct.pack("<%dH" % len(border), *border))
         smith.secondary.save()
     return {"city": city, "biome": biome, "blocks": dressed, "short": len(short),
             "tiles_left": len(smith.free_tiles), "slots_left": len(smith.free_blocks)}
@@ -381,6 +434,9 @@ def main():
     ap.add_argument("city", nargs="?")
     ap.add_argument("--all", action="store_true")
     ap.add_argument("--report", action="store_true")
+    ap.add_argument("--rebase-from", metavar="GIT_REF", default="HEAD",
+                    help="the revision the tilesets were reset to, when the whole\n"
+                         "variant pass is being rebuilt rather than extended")
     args = ap.parse_args()
 
     import retheme_cities
@@ -388,7 +444,8 @@ def main():
         if (args.all or args.report) else [args.city]
     manifest = load_manifest()
     for city in cities:
-        r = dress(city, dry_run=args.report, manifest=manifest)
+        r = dress(city, dry_run=args.report, manifest=manifest,
+                  baseline=args.rebase_from)
         if r:
             print("%-16s %-8s %3d block kinds redressed%s, %3d tiles / %3d slots left"
                   % (r["city"], r["biome"], r["blocks"],
