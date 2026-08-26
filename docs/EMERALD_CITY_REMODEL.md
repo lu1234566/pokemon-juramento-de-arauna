@@ -302,3 +302,74 @@ attribute table as it stands now. Any change to a tileset was then reported as
 if the map had changed under it — which is exactly how the first bug surfaced,
 as a door behaviour appearing on a tile that had none. `TownMap` now takes the
 revision too, and reads that revision's attributes.
+
+## A palette of its own for each biome
+
+Re-indexing pixels onto other entries of Emerald's palette can only ever reach
+colours Emerald already mixed, and Emerald mixed one green world. Six biomes
+squeezed into those eight green entries came back looking like six shades of
+the same place — which is what the towns still looked like after the pass
+above.
+
+A secondary tileset has seven palettes of its own, and every one of Arauna's
+has at least one nobody is drawing in. That is dead space of exactly the same
+kind as an unused block slot. `forge_town_variants.py` claims one per biome,
+fills it with a copy of the palette the greenery is drawn in, and repaints only
+the eight greens: the four of the grass ramp, C to F, and the four of the leaf
+ramp, 1 to 4. Any tile that pointed at Emerald's palette renders identically
+under it except for what was green.
+
+The variant of a block is then the *same tiles pointing at a different
+palette*. Nothing is re-indexed, no tile is copied, and the biome's colours are
+whatever the artist writes down rather than whatever Emerald happened to have.
+
+    biome        town                                    palette
+    MATA         VILA AMANHECER, MATA DO MEIO            saturated forest green
+    CERRADO      VILA DA PASSAGEM, ENCRUZILHADA          straw, dark olive foliage
+    PAMPA        PAMPA DA ESPERA, ESTR. JURAMENTO        pale sage, open
+    ARAUCARIA    VALE DO SILENCIO, SERRA DO UIVO         cold blue-green highland
+    CAATINGA     SERTAO DE DENTRO, PORTO DO SAL          grey-khaki, sun-bleached
+    MANGUE       BAIA DAS LUZES, MISSOES DO CEU,         dark, muddy, brackish
+                 AGUAS DE M'BOI
+
+Because the biome's colour now lives in a palette, a town does not need a
+forged lawn material at all: Emerald's own grass block, pointed at the biome's
+palette, *is* the biome's lawn. `forge_town_variants.town_lawn` is what every
+tool that has to put ground back asks — the mover filling a footprint, the
+replanner deciding what a grove may stand on.
+
+One tileset cannot be served this way. `gTileset_Mauville` is shared by
+ENCRUZILHADA and VALE DO SILENCIO and has a single free palette; the first town
+processed takes it and the second falls back to re-indexing onto Emerald's
+palette, which is a smaller change but not no change. VALE DO SILENCIO takes
+the palette, because a silent highland valley is the identity that needs the
+cold blue-green most.
+
+Two things had to be right for any of it to show:
+
+**The grass ramp has four steps, not three.** F is its darkest green. No lawn
+block uses it, but every tree block does, so leaving it out drew a mint outline
+around every tree in every town.
+
+**The border is part of the layout.** The strip the camera draws past the edge
+of the map was still Emerald's green, framing every settlement in the colour it
+had just stopped being — most visibly in VILA AMANHECER, where the forest the
+player's house now backs onto *is* the border.
+
+### Rebuilding the pass rather than extending it
+
+A slot is spoken for if a map lays it now or laid it in the committed revision,
+so that redressing a town never recycles a slot another map still means
+something by. When the whole pass is rebuilt from an earlier revision, every
+variant the current commit holds is about to stop existing, and reserving those
+slots reserves the tileset against itself — ENCRUZILHADA came back with nothing
+redressed at all. `--rebase-from REF` names the revision the tilesets were
+reset to.
+
+    git checkout <ref> -- data/tilesets data/layouts data/maps
+    rm -f data/tilesets/arauna_variants.json data/maps/arauna_replans.json
+    python3 tools/art/repaint_tileset_palettes.py
+    python3 tools/art/forge_town_variants.py --all --rebase-from <ref>
+    python3 tools/art/replan_towns.py
+    python3 tools/art/move_buildings.py --all
+    python3 tools/art/replant_towns.py --all

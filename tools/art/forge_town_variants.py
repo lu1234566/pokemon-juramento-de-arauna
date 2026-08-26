@@ -39,6 +39,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "audit"))
 
 import forge_arauna_tiles as forge  # noqa: E402
+import repaint_tileset_palettes as repaint  # noqa: E402
 from map_invariants import TownMap  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -49,12 +50,76 @@ TILES_PER_ROW = 16
 NUM_TILES_IN_PRIMARY = 512
 NUM_METATILES_IN_PRIMARY = 512
 SECONDARY_CAPACITY = 512
+NUM_PALS_IN_PRIMARY = 6
+NUM_PALS_TOTAL = 13
 
 # Everything Emerald draws in green, in the one palette it draws it from:
-# three entries for the grass underfoot and four for the leaves above it. The
-# first version of this took only the grass, and a town came back re-greened
-# from the ankles down with Emerald's own trees still standing in it.
+# four entries for the grass underfoot, C to F, and four for the leaves above
+# it, 1 to 4. The first version of this took three of the eight, and a town
+# came back re-greened from the ankles down with Emerald's own trees standing
+# in it.
 GRASS_PALETTE = 2
+GRASS_INDICES = (0xC, 0xD, 0xE, 0xF)
+LEAF_INDICES = (0x1, 0x2, 0x3, 0x4)
+GREEN_INDICES = set(GRASS_INDICES) | set(LEAF_INDICES)
+
+# The eight greens each biome is drawn in, lightest to darkest, grass first and
+# leaves second.
+#
+# Re-indexing pixels onto other entries of Emerald's own palette - which is
+# what this did before - can only ever reach colours Emerald already mixed,
+# and Emerald mixed one green world. Six biomes squeezed into those eight
+# entries came back looking like six shades of the same place. A secondary
+# tileset has palettes of its own, though, and every one of Arauna's has at
+# least one nobody is using. Claim it, fill it with a copy of the palette the
+# greenery is already drawn in, and repaint only these eight entries: any tile
+# that pointed at Emerald's palette renders identically under it except for
+# what was green. Nothing is re-indexed and no tile is copied - a block's
+# variant is the same tiles pointing at a different palette.
+BIOME_GREENS = {
+    # Mata Atlantica: humid and saturated, a canopy several shades deeper than
+    # the clearing it stands around.
+    "MATA": {
+        "grass": [(148, 208, 112), (96, 176, 84), (52, 136, 58), (28, 96, 44)],
+        "leaves": [(124, 220, 140), (60, 168, 104), (28, 112, 68), (16, 68, 44)],
+    },
+    # Cerrado: straw underfoot, bleached almost to yellow, with dark olive
+    # foliage standing sparsely in it.
+    "CERRADO": {
+        "grass": [(224, 224, 144), (188, 192, 104), (148, 152, 68), (108, 112, 48)],
+        "leaves": [(176, 188, 92), (124, 140, 56), (84, 96, 40), (52, 58, 26)],
+    },
+    # Pampa: open country, pale and cool, more sage than green.
+    "PAMPA": {
+        "grass": [(204, 226, 188), (164, 200, 152), (124, 166, 118), (88, 130, 92)],
+        "leaves": [(160, 200, 158), (112, 158, 120), (72, 118, 90), (46, 80, 62)],
+    },
+    # Mata de araucaria: highland, cold, blue-green, the darkest of the six.
+    "ARAUCARIA": {
+        "grass": [(146, 198, 182), (100, 160, 148), (62, 120, 112), (38, 86, 82)],
+        "leaves": [(76, 164, 156), (36, 118, 116), (18, 80, 80), (10, 50, 52)],
+    },
+    # Caatinga: the sertao. Grey-khaki, dusty, sun-bleached, barely green.
+    "CAATINGA": {
+        "grass": [(228, 214, 176), (194, 178, 140), (154, 140, 106), (114, 102, 74)],
+        "leaves": [(176, 182, 140), (132, 140, 102), (92, 98, 70), (60, 64, 46)],
+    },
+    # Manguezal: brackish and muddy, dark green with the tide in it.
+    "MANGUE": {
+        "grass": [(140, 172, 120), (98, 132, 88), (64, 96, 62), (40, 64, 42)],
+        "leaves": [(96, 140, 86), (56, 102, 62), (32, 70, 46), (18, 44, 30)],
+    },
+}
+
+
+def biome_palette(biome):
+    """This biome's greens, as {palette entry: colour}."""
+    spec = BIOME_GREENS[biome]
+    out = {}
+    for indices, key in ((GRASS_INDICES, "grass"), (LEAF_INDICES, "leaves")):
+        for index, colour in zip(indices, spec[key]):
+            out[index] = repaint.quantise(colour)
+    return out
 
 
 def biome_ramp(biome):
@@ -252,25 +317,83 @@ def scripted_metatiles(city):
     return out
 
 
+SECONDARY_PALETTES = range(NUM_PALS_IN_PRIMARY, NUM_PALS_TOTAL)
+
+
+def busy_palettes(tileset, live_blocks):
+    """Which of a secondary tileset's own palettes something is drawn in.
+
+    Only blocks that are actually spoken for count. A palette nothing live
+    points at is dead space of exactly the same kind as an unused block slot,
+    and it is what makes a biome's own colours possible at all.
+    """
+    busy = set()
+    for index in sorted(live_blocks):
+        if index >= tileset.block_count:
+            continue
+        for entry in tileset.entries(index):
+            if entry & 0x03FF:
+                busy.add((entry >> 12) & 0x0F)
+    return busy
+
+
+def claim_palette(tileset, biome, manifest, live_blocks, dry_run=False):
+    """A palette slot of this tileset's own, filled with the biome's greens.
+
+    Returns the slot, or None when every palette this tileset owns is spoken
+    for - two towns of different biomes sharing one tileset can want two, and
+    gTileset_Mauville has one to give. The second one falls back to re-indexing
+    onto Emerald's palette, which is a smaller change but not no change.
+    """
+    palettes = manifest.setdefault("palettes", {})
+    key = "%s|%s" % (tileset.symbol, biome)
+    if key in palettes:
+        return palettes[key]
+    mine = {v for k, v in palettes.items() if k.startswith(tileset.symbol + "|")}
+    taken = busy_palettes(tileset, live_blocks) | mine
+    free = [p for p in SECONDARY_PALETTES if p not in taken]
+    if not free:
+        return None
+    slot = free[0]
+    path = os.path.join(tileset.dir, "palettes", "%02d.pal" % slot)
+    colours = repaint.read_palette(os.path.join(
+        ROOT, "data/tilesets/primary/general/palettes/%02d.pal" % GRASS_PALETTE))
+    for index, colour in biome_palette(biome).items():
+        colours[index] = colour
+    if not dry_run:
+        repaint.write_palette(path, colours)
+    palettes[key] = slot
+    return slot
+
+
 class Forge:
-    def __init__(self, town, biome, manifest, baseline="HEAD"):
+    def __init__(self, town, biome, manifest, baseline="HEAD", dry_run=False):
         self.town = town
         self.biome = biome
         self.manifest = manifest
-        self.ramp = biome_ramp(biome)
-        self.greens = set(self.ramp)
-        # The lawn this biome already has was forged out of the same palette,
-        # and it landed in the range the canopy ramp reads from. Redressing it
-        # would run the ramp over it a second time and take the town two
-        # shades darker than it was drawn to be, so the material's own blocks
-        # and tiles are off limits: they are already this biome's green.
-        spec = forge.MATERIALS[biome]
-        self.forged_blocks = set(spec["metatiles"])
-        self.forged_tiles = set(spec["tiles"])
         self.primary = Tileset(town.layout["primary_tileset"], secondary=False)
         self.secondary = Tileset(town.layout["secondary_tileset"], secondary=True)
 
         used_blocks = live_secondary(self.secondary.symbol, baseline)
+        self.palette = claim_palette(self.secondary, biome, manifest, used_blocks, dry_run)
+        if self.palette is None:
+            # No palette left: re-index onto Emerald's own, which needs the
+            # biome to have a ramp written for it.
+            if biome not in forge.MATERIALS:
+                raise SystemExit("%s has no free palette for %s and no ramp to fall back on"
+                                 % (self.secondary.symbol, biome))
+            self.ramp = biome_ramp(biome)
+            spec = forge.MATERIALS[biome]
+            # The lawn a ramp biome may already have was forged out of the same
+            # palette and landed in the range the leaf ramp reads from, so
+            # running the ramp over it would darken it twice.
+            self.forged_blocks = set(spec["metatiles"])
+            self.forged_tiles = set(spec["tiles"])
+        else:
+            self.ramp = None
+            self.forged_blocks = set()
+            self.forged_tiles = set()
+
         claimed_blocks = {v for k, v in manifest["blocks"].items()
                           if k.startswith(self.secondary.symbol + "|")}
         self.free_blocks = [i for i in range(SECONDARY_CAPACITY)
@@ -308,9 +431,16 @@ class Forge:
             tile_id, palette = entry & 0x03FF, (entry >> 12) & 0x0F
             if not tile_id or palette != GRASS_PALETTE or tile_id in self.forged_tiles:
                 continue
-            if set(self.tile_pixels(tile_id)) & self.greens:
+            if set(self.tile_pixels(tile_id)) & GREEN_INDICES:
                 return True
         return False
+
+    def greenery(self, entry):
+        """Is this entry of a block drawing something green?"""
+        tile_id, palette = entry & 0x03FF, (entry >> 12) & 0x0F
+        return (bool(tile_id) and palette == GRASS_PALETTE
+                and tile_id not in self.forged_tiles
+                and bool(set(self.tile_pixels(tile_id)) & GREEN_INDICES))
 
     # -- forging -----------------------------------------------------------
     def variant_tile(self, tile_id):
@@ -332,13 +462,15 @@ class Forge:
         tileset, index = self.owner(block)
         rebuilt = []
         for entry in tileset.entries(index):
-            tile_id, palette = entry & 0x03FF, (entry >> 12) & 0x0F
-            if (tile_id and palette == GRASS_PALETTE and tile_id not in self.forged_tiles
-                    and set(self.tile_pixels(tile_id)) & self.greens):
-                slot = self.variant_tile(tile_id)
-                rebuilt.append((entry & 0xFC00) | (NUM_TILES_IN_PRIMARY + slot))
-            else:
+            if not self.greenery(entry):
                 rebuilt.append(entry)
+            elif self.palette is not None:
+                # Same tile, this biome's palette. Bits 12-15 are the palette,
+                # 10 and 11 the flips, 0-9 the tile.
+                rebuilt.append((entry & 0x0FFF) | (self.palette << 12))
+            else:
+                slot = self.variant_tile(entry & 0x03FF)
+                rebuilt.append((entry & 0xFC00) | (NUM_TILES_IN_PRIMARY + slot))
         if not self.free_blocks:
             raise OutOfRoom("%s is out of blocks" % self.secondary.symbol)
         slot = self.free_blocks.pop(0)
@@ -366,13 +498,37 @@ def biome_of(city):
     return theme.get("biome")
 
 
+# Emerald's plain grass, in the tileset every outdoor map shares.
+PLAIN_LAWN = 0x001
+
+
+def town_lawn(city, manifest=None):
+    """The block this town lays as plain, open lawn.
+
+    Every tool that has to put ground back where something used to stand needs
+    this: the mover filling a footprint, the replanner deciding what a grove
+    may stand on. It used to be the biome's forged material, named straight
+    out of `forge_arauna_tiles`. It cannot be any more, because a town wearing
+    a palette of its own does not need a forged lawn at all - Emerald's own
+    grass block, pointed at the biome's palette, *is* the biome's lawn.
+    """
+    town = TownMap(city, ROOT)
+    biome = biome_of(city)
+    if not biome:
+        return None
+    manifest = manifest if manifest is not None else load_manifest()
+    key = "%s|%s|%d" % (town.layout["secondary_tileset"], biome, PLAIN_LAWN)
+    slot = manifest["blocks"].get(key)
+    return PLAIN_LAWN if slot is None else NUM_METATILES_IN_PRIMARY + slot
+
+
 def dress(city, dry_run=False, manifest=None, baseline="HEAD"):
     biome = biome_of(city)
     if not biome:
         return None
     town = TownMap(city, ROOT)
     manifest = manifest if manifest is not None else load_manifest()
-    smith = Forge(town, biome, manifest, baseline)
+    smith = Forge(town, biome, manifest, baseline, dry_run)
     frozen = scripted_metatiles(city)
 
     # Redress the commonest blocks first: when a tileset's dead space runs out
@@ -426,7 +582,7 @@ def dress(city, dry_run=False, manifest=None, baseline="HEAD"):
             open(path, "wb").write(struct.pack("<%dH" % len(border), *border))
         smith.secondary.save()
     return {"city": city, "biome": biome, "blocks": dressed, "short": len(short),
-            "tiles_left": len(smith.free_tiles), "slots_left": len(smith.free_blocks)}
+            "palette": smith.palette, "slots_left": len(smith.free_blocks)}
 
 
 def main():
@@ -447,10 +603,13 @@ def main():
         r = dress(city, dry_run=args.report, manifest=manifest,
                   baseline=args.rebase_from)
         if r:
-            print("%-16s %-8s %3d block kinds redressed%s, %3d tiles / %3d slots left"
-                  % (r["city"], r["biome"], r["blocks"],
+            print("%-16s %-10s %s  %3d block kinds redressed%s, %3d slots left"
+                  % (r["city"], r["biome"],
+                     "palette %2d" % r["palette"] if r["palette"] is not None
+                     else "on the ramp",
+                     r["blocks"],
                      "" if not r["short"] else ", %d SHORT" % r["short"],
-                     r["tiles_left"], r["slots_left"]))
+                     r["slots_left"]))
     if not args.report:
         save_manifest(manifest)
     return 0

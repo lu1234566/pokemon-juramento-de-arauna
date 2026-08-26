@@ -86,19 +86,19 @@ THEMES = {
     "PetalburgCity": {"mode": "street", "biome": "PAMPA", "material": SAND, "forged": "TERRA",
                        "ground": GRASS_GROUND | PETALBURG_GROUND,
                       "plaza": 2, "verge": 0x004, "verge_step": 3},
-    "VerdanturfTown": {"mode": "street", "biome": "MATA", "material": SAND, "forged": "TERRA", "ground": GRASS_GROUND,
+    "VerdanturfTown": {"mode": "street", "biome": "ARAUCARIA", "material": SAND, "forged": "TERRA", "ground": GRASS_GROUND,
                        "plaza": 1, "verge": 0x004, "verge_step": 3},
-    "LavaridgeTown": {"mode": "street", "biome": "CERRADO", "material": SAND, "forged": "TERRA", "ground": GRASS_GROUND,
+    "LavaridgeTown": {"mode": "street", "biome": "CAATINGA", "material": SAND, "forged": "TERRA", "ground": GRASS_GROUND,
                       "plaza": 1, "verge": 0x004, "verge_step": 4},
-    "MossdeepCity": {"mode": "street", "biome": "PAMPA", "material": SAND, "forged": "TERRA", "ground": GRASS_GROUND,
+    "MossdeepCity": {"mode": "street", "biome": "MANGUE", "material": SAND, "forged": "TERRA", "ground": GRASS_GROUND,
                      "plaza": 2, "verge": 0x004, "verge_step": 4},
-    "LilycoveCity": {"mode": "street", "biome": "MATA", "material": SAND, "forged": "TERRA", "ground": GRASS_GROUND,
+    "LilycoveCity": {"mode": "street", "biome": "MANGUE", "material": SAND, "forged": "TERRA", "ground": GRASS_GROUND,
                      "plaza": 2, "verge": 0x004, "verge_step": 4},
 
     # Already-paved cities: cut squares of green into the stone instead.
-    "RustboroCity": {"mode": "park", "biome": "PAMPA", "material": GRASS, "ground": {0x2BB, 0x2C3, 0x309},
+    "RustboroCity": {"mode": "park", "biome": "ARAUCARIA", "material": GRASS, "ground": {0x2BB, 0x2C3, 0x309},
                      "squares": 4, "size": 4, "verge": 0x004, "verge_step": 2},
-    "SlateportCity": {"mode": "park", "biome": "CERRADO", "material": GRASS,
+    "SlateportCity": {"mode": "park", "biome": "CAATINGA", "material": GRASS,
                       "ground": {0x202, 0x209, 0x210, 0x211, 0x212, 0x219},
                       "squares": 5, "size": 3, "verge": 0x004, "verge_step": 2},
     "MauvilleCity": {"mode": "street", "biome": "CERRADO", "material": SAND, "forged": "TERRA", "ground": GRASS_GROUND,
@@ -110,7 +110,7 @@ THEMES = {
     "EverGrandeCity": {"mode": "lawn", "biome": "PAMPA", "material": GRASS,
                        "ground": set()},
 
-    "SootopolisCity": {"mode": "park", "biome": "MATA", "material": GRASS, "ground": {0x2D9, 0x244, 0x245},
+    "SootopolisCity": {"mode": "park", "biome": "MANGUE", "material": GRASS, "ground": {0x2D9, 0x244, 0x245},
                        "squares": 5, "size": 2, "verge": 0x004, "verge_step": 2},
 }
 

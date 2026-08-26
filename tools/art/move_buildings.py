@@ -45,7 +45,6 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "audit"))
 
-import forge_arauna_tiles as forge  # noqa: E402
 from map_invariants import TownMap  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -59,9 +58,8 @@ CANDIDATES = [(0, -2), (2, 0), (-2, 0), (0, 2), (2, -2), (-2, -2), (2, 2), (-2, 
 
 
 def biome_lawn_block(city):
-    import retheme_cities
-    biome = (retheme_cities.THEMES.get(city) or {}).get("biome")
-    return forge.MATERIALS[biome]["metatiles"][0] if biome else None
+    import forge_town_variants
+    return forge_town_variants.town_lawn(city)
 
 
 def scripted_actors(town):
