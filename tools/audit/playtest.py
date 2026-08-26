@@ -34,6 +34,7 @@ import sys
 import time
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+from map_invariants import TownMap                              # noqa: E402
 from pilot import Pilot, Stuck                                  # noqa: E402
 from play import CHECKPOINTS, Session                           # noqa: E402
 
@@ -298,6 +299,24 @@ def screen_faults(path):
     return faults
 
 
+def arrival(p, name):
+    """A square on this map that the player could plausibly be standing on."""
+    try:
+        grid = TownMap(name, str(ROOT))
+    except Exception:                                   # noqa: BLE001
+        return None
+    for event in grid.events("warp_events"):
+        x, y = int(event["x"]), int(event["y"])
+        if grid.inside(x, y + 1) and grid.walkable(x, y + 1):
+            return x, y + 1
+    best = None
+    for y in range(grid.h):
+        for x in range(grid.w):
+            if grid.walkable(x, y):
+                best = best or (x, y)
+    return best or (min(5, grid.w - 1), min(5, grid.h - 1))
+
+
 def act_world(s: Session, log, limit=None, start=0):
     p = Pilot(s)
     print("[world]")
@@ -309,8 +328,17 @@ def act_world(s: Session, log, limit=None, start=0):
     seen = 0
     for (group, num), name in targets:
         seen += 1
+        # Arrive somewhere the map actually has. Warping every map to 5,5
+        # drops the player off the edge of every small room and then reports
+        # the room for it - a fault invented by the harness. A warp square is
+        # somewhere the game itself sends people; the middle of the grid will
+        # do when there is none.
+        spot = arrival(p, name)
+        if spot is None:
+            note(log, "note", map=name, detail="no layout to enter it with")
+            continue
         try:
-            s.warp(group, num, 5, 5)
+            s.warp(group, num, *spot)
         except Exception as why:                        # noqa: BLE001
             note(log, "FAIL", map=name, detail="warp failed: %s" % why)
             continue
