@@ -36,6 +36,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "audit"))
 
 import forge_arauna_tiles as forge  # noqa: E402
+import move_buildings  # noqa: E402
 from map_invariants import TownMap  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -121,6 +122,21 @@ PLANS = {
         ],
         "relocate": [],
     },
+
+    # ENCRUZILHADA. Emerald's Mauville is a crossroads boxed in on all four
+    # sides; only the northern block will give at all, and only westward - the
+    # destination guard turns down every other offset because a neighbour is
+    # standing there. Four columns is what the town has to give, so take it.
+    "MauvilleCity": {
+        "groups": [
+            {
+                "what": "the block along the north side",
+                "door": (35, 5),
+                "by": (-4, 0),
+            },
+        ],
+        "relocate": [],
+    },
 }
 
 # VALE DO SILENCIO is deliberately absent: it paves its ground from the same
@@ -147,9 +163,22 @@ def ground_physics(town):
     return counts.most_common(1)[0][0]
 
 
-def group_cells(group):
+def group_cells(town, group):
+    """The blocks a group is made of.
+
+    A group may name a rectangle, or - better - just its doorway, and let the
+    same detector the automatic mover uses grow the building from there. Typing
+    a rectangle by hand is how a roof got left behind twice; a doorway cannot
+    be mistyped into half a house.
+    """
+    if "door" in group:
+        door = tuple(group["door"])
+        for shape in move_buildings.buildings(town):
+            if door in shape:
+                return set(shape) | set(group.get("extra", ()))
+        raise SystemExit("%s: no building found at the doorway %d,%d" % (town.city, *door))
     x0, y0, x1, y1 = group["rect"]
-    return {(x, y) for y in range(y0, y1 + 1) for x in range(x0, x1 + 1)} | set(group["extra"])
+    return {(x, y) for y in range(y0, y1 + 1) for x in range(x0, x1 + 1)} | set(group.get("extra", ()))
 
 
 LEDGER = os.path.join(ROOT, "data/maps/arauna_replans.json")
@@ -182,7 +211,7 @@ def cuts_a_building(town, group):
     of the secondary tileset inside the footprint touches another one outside
     it, the footprint has cut a building in half.
     """
-    cells = group_cells(group)
+    cells = group_cells(town, group)
     for x, y in cells:
         if town.metatile(x, y) < NUM_METATILES_IN_PRIMARY:
             continue
@@ -221,8 +250,34 @@ def move_events(town, cells, offset, also):
     return moved
 
 
+def destination_is_clear(town, group):
+    """Nothing of consequence is standing where the group is going.
+
+    Without this the paste is blind: a neighbouring building, a sign, a person
+    would simply be overwritten, and the checks that run afterwards - which ask
+    about reachability and doors - would not necessarily notice. Scenery is
+    fair game and gets built over; anything the secondary tileset drew is
+    another building, and anything with an event on it belongs to someone.
+    """
+    cells = group_cells(town, group)
+    dx, dy = group["by"]
+    events = {(int(e["x"]), int(e["y"])) for kind in EVENT_KINDS
+              for e in town.map.get(kind) or [] if "x" in e}
+    for x, y in cells:
+        target = (x + dx, y + dy)
+        if target in cells:
+            continue
+        if not town.inside(*target):
+            return "it would leave the map"
+        if target in events:
+            return "an event stands at %d,%d" % target
+        if town.metatile(*target) >= NUM_METATILES_IN_PRIMARY:
+            return "another building stands at %d,%d" % target
+    return None
+
+
 def apply_group(town, group, lawn, physics):
-    cells = group_cells(group)
+    cells = group_cells(town, group)
     dx, dy = group["by"]
     payload = {c: town.blocks[town.index(*c)] for c in cells}
     for c in cells:
@@ -235,12 +290,12 @@ def apply_group(town, group, lawn, physics):
         if not town.walkable(*c) and c not in {(x + dx, y + dy) for x, y in cells}:
             raise SystemExit("%s: %s left ground you cannot walk on at %d,%d"
                              % (town.city, group["what"], *c))
-    return move_events(town, cells, group["by"], set(map(tuple, group["also_move"])))
+    return move_events(town, cells, group["by"], set(map(tuple, group.get("also_move", ()))))
 
 
 def rewrite_literals(group, dry_run):
     done = []
-    for rel, old, new in group["literals"]:
+    for rel, old, new in group.get("literals", ()):
         path = os.path.join(ROOT, rel)
         text = open(path, encoding="utf-8").read()
         if text.count(old) != 1:
@@ -295,9 +350,9 @@ def replan(city, dry_run):
         if already_applied(ledger, city, group):
             skipped += 1
             continue
-        cut = cuts_a_building(town, group)
-        if cut:
-            raise SystemExit("%s: %s - %s" % (city, group["what"], cut))
+        for why in (cuts_a_building(town, group), destination_is_clear(town, group)):
+            if why:
+                raise SystemExit("%s: %s - %s" % (city, group["what"], why))
         done.append(group["what"])
         moved_events += apply_group(town, group, lawn, physics)
     for old, new in plan.get("relocate", []):
