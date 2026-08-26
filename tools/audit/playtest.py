@@ -448,14 +448,23 @@ def act_battles(s: Session, log, routes=None):
                 for _ in range(6):
                     s.press("a", 1)
                     s.probe.run(1.4)
-        for _ in range(20):                            # ride out the fade
-            if s.probe.callback2_name() == "CB2_Overworld":
+        # Losing is an ending too, and on a mid-game route a level 5 starter
+        # will lose. The whiteout is a long sequence - the message, the fade,
+        # the walk back to a Pokemon Center, the healing - and a budget cut for
+        # a battle that is simply over reports the longest path in the game as
+        # a hang. Wait it out, then say where the player actually came back.
+        where_before = p.map_name()
+        for _ in range(70):
+            if s.probe.callback2_name() == "CB2_Overworld" and not p.busy():
                 break
             s.press("a", 1)
             s.probe.run(1.0)
         if s.probe.callback2_name() != "CB2_Overworld":
             note(log, "FAIL", map=name, detail="the battle never ended")
         else:
+            landed = p.map_name()
+            if landed != where_before:
+                how = "lost, woke up in %s" % landed
             note(log, "battle-end", map=name, state="back on the field, %s" % how)
     return p
 
