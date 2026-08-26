@@ -93,6 +93,13 @@ CANON = {
     "SHOAL CAVE": "FURNA DA MARE",
     "FIERY PATH": "TRILHA DE FOGO",
     "DEVON CORP": "HORIZONTE",
+    # Three key items carry a faction in their own name, and the name is what
+    # the bag shows: a player told to deliver the DEVON GOODS has to find the
+    # DEVON GOODS in the pocket. Renamed here so the dialogue and the bag say
+    # the same thing, and short enough for the 13 characters an item name has.
+    "DEVON GOODS": "HORIZ. GOODS",
+    "DEVON SCOPE": "HORIZ. SCOPE",
+    "MAGMA EMBLEM": "ASH EMBLEM",
     "TEAM MAGMA": "REMEMBRANCERS",
     "TEAM AQUA": "HORIZONTE",
     "MT. PYRE": "MEMORIAL NOMES",
@@ -123,8 +130,46 @@ CANON = {
     "DEWFORD": "PORTO DAS REDES",
     "FORTREE": "MATA DO MEIO",
     "OLDALE": "VILA DA PASSAGEM",
+    # And the three organisation names on their own. "TEAM AQUA" and "DEVON
+    # CORP" above only ever matched the full form, so "DEVON's POKeNAV",
+    # "new DEVON products" and "the MAGMA EMBLEM" all survived. Matching is
+    # whole-word, so MAGMAR and AQUATIC are not touched.
+    "DEVON": "HORIZONTE",
+    "AQUA": "HORIZONTE",
+    "MAGMA": "REMEMBRANCERS",
 }
+
+# Ordinary English that happens to contain a legacy name. MAGMA ARMOR is an
+# ability every game in the series ships; matching is longest-first, so naming
+# it here is what keeps the bare MAGMA rule off it.
+PROTECTED = ("MAGMA ARMOR",)
 ORDER = sorted(CANON, key=len, reverse=True)
+
+
+def _matcher() -> re.Pattern:
+    """One pass, longest name first, and never inside a longer word.
+
+    Chained str.replace could not express either: a bare DEVON rule would eat
+    the DEVON in DEVON SCOPE after the compound had already been handled, and
+    a bare MAGMA rule would eat MAGMAR. Alternation takes the first branch that
+    matches at a position, so sorting the branches longest-first is exactly the
+    longest-match rule, and the protected phrases map to themselves.
+    """
+    parts = []
+    for key in sorted(set(CANON) | set(PROTECTED), key=len, reverse=True):
+        pattern = re.escape(key)
+        if key[0].isalnum():
+            # A line break is the two literal characters \ and n, and n is a
+            # word character, so a plain lookbehind would refuse to match a
+            # name that opens a line. Three of those exist: \n, \l and \p.
+            pattern = r"(?:(?<=\\n)|(?<=\\l)|(?<=\\p)|(?<![A-Za-z0-9]))" + pattern
+        if key[-1].isalnum():
+            pattern = pattern + r"(?![A-Za-z0-9])"
+        parts.append(pattern)
+    return re.compile("|".join(parts))
+
+
+MATCHER = _matcher()
 
 # Four location labels in src/strings.c that the story renderers missed. Their
 # neighbours in the same block are already Arauna names, and they feed the same
@@ -138,6 +183,25 @@ C_DECLS = {
         'const u8 gText_MtPyre[] = _("MEMORIAL NOMES");',
     'const u8 gText_SkyPillar[] = _("SKY PILLAR");':
         'const u8 gText_SkyPillar[] = _("TORRE JURAMENTO");',
+    # The five ports on the sailor's menu. The window measures its own widest
+    # option and shifts left to fit, so a longer name costs nothing here.
+    'const u8 gText_Petalburg[] = _("PETALBURG");':
+        'const u8 gText_Petalburg[] = _("PAMPA DA ESPERA");',
+    'const u8 gText_Slateport[] = _("SLATEPORT");':
+        'const u8 gText_Slateport[] = _("PORTO DO SAL");',
+    'const u8 gText_Littleroot[] = _("LITTLEROOT");':
+        'const u8 gText_Littleroot[] = _("VILA AMANHECER");',
+    'const u8 gText_Lilycove[] = _("LILYCOVE");':
+        'const u8 gText_Lilycove[] = _("BAIA DAS LUZES");',
+    'const u8 gText_Dewford[] = _("DEWFORD");':
+        'const u8 gText_Dewford[] = _("PORTO DAS REDES");',
+    # The two faction placeholders. Vanilla never expands them - {AQUA} and
+    # {MAGMA} appear in no text this game compiles - but they are readable
+    # bytes on the cartridge all the same, and CIRO already sits beside them.
+    'const u8 gText_ExpandedPlaceholder_Aqua[] = _("AQUA");':
+        'const u8 gText_ExpandedPlaceholder_Aqua[] = _("HORIZONTE");',
+    'const u8 gText_ExpandedPlaceholder_Magma[] = _("MAGMA");':
+        'const u8 gText_ExpandedPlaceholder_Magma[] = _("REMEMBRANCERS");',
 }
 C_DECLS_PATH = ROOT / "src" / "strings.c"
 
@@ -148,7 +212,14 @@ C_TEXT_FILES = (
     "src/data/text/item_descriptions.h",
     "src/battle_message.c",
     "src/data/text/match_call_messages.h",
+    "src/mystery_event_msg.c",
 )
+
+# Item names are not measured in pixels but in characters: the bag copies one
+# into a u8[ITEM_NAME_LENGTH], terminator included. A name that overruns that
+# is not a wide line, it is a buffer.
+ITEMS_PATH = ROOT / "src" / "data" / "items.h"
+ITEM_NAME_BUDGET = 13
 # Plain substitution would give "REMEMBRANCERS's mark.", which is both a double
 # possessive and 116px in a 102px box.
 C_LITERAL_OVERRIDES = {
@@ -164,6 +235,15 @@ C_LITERAL_OVERRIDES = {
     # 117px in a 102px box. Written out whole instead, at 72, 95 and 75px.
     '"The key for NEW\\n" "MAUVILLE beneath\\n" "MAUVILLE CITY."':
         '"Opens the OLD\\n" "POWER RELAY under\\n" "ENCRUZILHADA."',
+    # HORIZONTE is four letters longer than DEVON, and these three lines were
+    # already near the edge of the 102px box. Rewritten to fit rather than
+    # substituted word for word.
+    '"A package that\\n" "contains DEVON\'s\\n" "machine parts."':
+        '"A package that\\n" "holds HORIZONTE\\n" "machine parts."',
+    '"A letter to STEVEN\\n" "from the PRESIDENT\\n" "of the DEVON CORP."':
+        '"A letter to STEVEN\\n" "from the PRESIDENT\\n" "of HORIZONTE."',
+    '"A device by DEVON\\n" "that signals any\\n" "unseeable POK\u00e9MON."':
+        '"A HORIZONTE device\\n" "that signals any\\n" "unseeable POK\u00e9MON."',
 }
 C_LITERAL_RE = re.compile(r'_\(\s*((?:"(?:[^"\\]|\\.)*"\s*)+)\)')
 C_ONE_RE = re.compile(r'"((?:[^"\\]|\\.)*)"')
@@ -222,9 +302,7 @@ def line_px(text: str) -> int:
 # --- transformation ---------------------------------------------------------
 
 def substitute(payload: str) -> str:
-    for old in ORDER:
-        payload = payload.replace(old, CANON[old])
-    return payload
+    return MATCHER.sub(lambda hit: CANON.get(hit.group(0), hit.group(0)), payload)
 
 
 def reflow_page(page: str) -> str:
@@ -330,7 +408,12 @@ def render_file(source: str, rel: str) -> str:
 
 def targets() -> list[Path]:
     found = []
-    for path in sorted((ROOT / "data").rglob("*.inc")):
+    # data/event_scripts.s holds 64 .string blocks of its own - the texts more
+    # than one map shares - and it is where "Welcome to LILYCOVE DEPARTMENT
+    # STORE." was still being read from, with the .inc beside it already
+    # renamed.
+    paths = sorted((ROOT / "data").rglob("*.inc")) + sorted((ROOT / "data").rglob("*.s"))
+    for path in paths:
         if "/arauna/pt_br/" in path.as_posix():
             continue           # the Portuguese bank is not compiled into the ROM
         text = path.read_text(encoding="utf-8")
@@ -406,6 +489,46 @@ def render_c_decls(source: str) -> str:
     return rendered
 
 
+ITEM_NAME_RE = re.compile(r'(\.name = _\(")((?:[^"\\]|\\.)*)("\))')
+
+
+def render_item_names(source: str) -> str:
+    """Rename the items whose own name carries a faction.
+
+    The bag is the only place a player can check what they were sent to fetch,
+    so the item and the person asking for it have to agree; the dialogue side
+    of that agreement is the compound entries in CANON above.
+    """
+    def one(hit):
+        new_name = substitute(hit.group(2))
+        if new_name != hit.group(2) and len(new_name) > ITEM_NAME_BUDGET:
+            fail("src/data/items.h: %r is %d characters, and an item name has "
+                 "room for %d" % (new_name, len(new_name), ITEM_NAME_BUDGET))
+        return hit.group(1) + new_name + hit.group(3)
+    return ITEM_NAME_RE.sub(one, source)
+
+
+def overlay_manifest() -> set[str]:
+    """Every file the build backs up before rendering and restores after.
+
+    A renderer that writes outside this set leaves its output in the working
+    tree for good, looking exactly like committed source. That is not a
+    hypothetical: widening CANON to the bare settlement names pulled 17 more
+    dialogue files into this renderer's reach, none of them listed, and the
+    17 files this renderer rewrote stayed rewritten after every build.
+    """
+    script = (ROOT / "scripts" / "build_arauna.sh").read_text(encoding="utf-8")
+    block = re.search(r"overlay_files=\((.*?)\n\)", script, re.S).group(1)
+    listed = {line.strip().strip('"') for line in block.splitlines()
+              if line.strip().startswith('"')}
+    for line in (ROOT / "scripts" / "english_overlay_files_extra.txt") \
+            .read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if line and not line.startswith("#"):
+            listed.add(line)
+    return listed
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--check", action="store_true")
@@ -415,6 +538,8 @@ def main() -> int:
         parser.error("use either --check or --in-place")
 
     files = targets()
+    listed = overlay_manifest()
+    written: list[str] = []
     renamed = 0
     for path in files:
         rel = path.relative_to(ROOT).as_posix()
@@ -427,13 +552,23 @@ def main() -> int:
         if surviving:
             fail(f"{rel}: legacy name survived: {', '.join(sorted(surviving))}")
         renamed += 1
+        written.append(rel)
         if args.in_place:
             path.write_text(rendered, encoding="utf-8")
 
+    items_source = ITEMS_PATH.read_text(encoding="utf-8")
+    items_rendered = render_item_names(items_source)
+    if items_rendered != items_source:
+        written.append(ITEMS_PATH.relative_to(ROOT).as_posix())
+        if args.in_place:
+            ITEMS_PATH.write_text(items_rendered, encoding="utf-8")
+
     c_source = C_DECLS_PATH.read_text(encoding="utf-8")
     c_rendered = render_c_decls(c_source)
-    if args.in_place and c_rendered != c_source:
-        C_DECLS_PATH.write_text(c_rendered, encoding="utf-8")
+    if c_rendered != c_source:
+        written.append(C_DECLS_PATH.relative_to(ROOT).as_posix())
+        if args.in_place:
+            C_DECLS_PATH.write_text(c_rendered, encoding="utf-8")
 
     c_files = 0
     for rel in C_TEXT_FILES:
@@ -448,8 +583,16 @@ def main() -> int:
         if surviving:
             fail(f"{rel}: legacy name survived: {', '.join(sorted(surviving))}")
         c_files += 1
+        written.append(rel)
         if args.in_place:
             path.write_text(rendered, encoding="utf-8")
+
+    stranded = sorted(set(written) - listed)
+    if stranded:
+        fail("%d file(s) this renderer rewrites are not backed up by the build "
+             "and would stay rewritten in the working tree. Add them to "
+             "scripts/english_overlay_files_extra.txt:\n  %s"
+             % (len(stranded), "\n  ".join(stranded)))
 
     mode = "Renamed" if args.in_place else "Validated"
     print(f"{mode} legacy place names: {renamed} dialogue file(s), "

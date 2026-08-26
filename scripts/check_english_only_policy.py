@@ -155,9 +155,13 @@ extra_overlays = read_manifest(OVERLAY_EXTRA_MANIFEST)
 # A tripwire against the manifest growing by accident: 40 through the story
 # work, plus the 33 dialogue files and 2 C text files that
 # render_legacy_place_names_en_checked.py rewrites, and 3 more that
-# render_untranslated_story_en_checked.py translates.
-if len(extra_overlays) != 79:
-    fail(f"expected 79 final transactional overlay files, found {len(extra_overlays)}")
+# render_untranslated_story_en_checked.py translates - and then 19 more that
+# the place-name renderer reached once it learned the settlement names without
+# their suffix, the three faction names and data/event_scripts.s. That renderer
+# now refuses to write a file this manifest does not list, so this count is the
+# second lock on the same door rather than the only one.
+if len(extra_overlays) != 98:
+    fail(f"expected 98 final transactional overlay files, found {len(extra_overlays)}")
 for rel_path in extra_overlays:
     if rel_path.startswith("/") or ".." in Path(rel_path).parts:
         fail(f"unsafe overlay path: {rel_path}")
