@@ -175,6 +175,34 @@ while IFS= read -r file; do
     overlay_files+=("$file")
 done < scripts/english_overlay_files_extra.txt
 
+# A build that is killed outright cannot restore anything: EXIT, HUP, INT and
+# TERM are all trapped below, but SIGKILL is not trappable and a container that
+# goes away takes the build with it. What is left behind is rendered source
+# sitting in the tree looking like the original - and the *next* build then
+# backs that up and faithfully restores it, so one un-trappable kill bakes the
+# renderers' output into the repository for good, silently.
+#
+# So look before backing up. These files are only ever rewritten by this
+# script, so any of them differing from the commit is either that residue or an
+# edit somebody has not committed, and either way it must not be mistaken for
+# the original.
+overlay_dirty=()
+for file in "${overlay_files[@]}"; do
+    if git rev-parse --verify HEAD >/dev/null 2>&1 && \
+       ! git diff --quiet HEAD -- "$file" 2>/dev/null; then
+        overlay_dirty+=("$file")
+    fi
+done
+if (( ${#overlay_dirty[@]} )); then
+    echo >&2
+    echo "!! ${#overlay_dirty[@]} English overlay file(s) differ from the commit:" >&2
+    printf '     %s\n' "${overlay_dirty[@]}" >&2
+    echo "   If a previous build was killed, this is its output and it will be" >&2
+    echo "   backed up as though it were the original. Restore it first:" >&2
+    echo "     git checkout -- ${overlay_dirty[*]}" >&2
+    echo >&2
+fi
+
 overlay_backup_dir="$(mktemp -d)"
 
 for file in "${overlay_files[@]}"; do
