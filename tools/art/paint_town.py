@@ -239,6 +239,11 @@ def paint(town, region, table, ground, keep=()):
         # that meant something else where the list was written.
         if town.behavior_of(block) != town.behavior(x, y):
             continue
+        # A street is ground. Refusing anything solid means a block id that
+        # turns out to name something else - a tree, a wall - cannot be paved
+        # over even if its behaviour happens to match.
+        if not town.walkable(x, y):
+            continue
         old = town.blocks[town.index(x, y)]
         new = (old & 0xFC00) | block
         if new != old:

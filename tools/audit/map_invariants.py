@@ -204,7 +204,7 @@ class TownMap:
             out.update(cells)
         return out
 
-    def scripted_paths(self):
+    def scripted_paths(self, include_player=True, include_repositioned=True):
         """Tiles a scripted walk crosses, replayed from the map's own scripts.
 
         Each `applymovement` is matched to the object event it names by local
@@ -241,10 +241,19 @@ class TownMap:
             if step and label in moves:
                 moves[label].append(step.group(1).lower())
 
+        # An actor a script teleports with `setobjectxy` does not start its
+        # walks where the map put it, so replaying from the map's coordinate
+        # invents paths that never happen. Freezing those tiles anyway is
+        # harmless; judging a change by them is not, so a caller can leave them
+        # out and let the game itself answer for them.
+        repositioned = set(re.findall(r"setobjectxy(?:perm)?\s+([^,\s]+)", text))
         by_local_id = {}
         for e in self.events("object_events"):
-            if e.get("local_id"):
-                by_local_id[str(e["local_id"])] = (int(e["x"]), int(e["y"]))
+            if not e.get("local_id"):
+                continue
+            if not include_repositioned and str(e["local_id"]) in repositioned:
+                continue
+            by_local_id[str(e["local_id"])] = (int(e["x"]), int(e["y"]))
         everyone = [(int(e["x"]), int(e["y"])) for e in self.events("object_events")]
         player_starts = [(int(e["x"]), int(e["y"])) for e in self.events("coord_events")]
         player_starts += [(int(e["x"]), int(e["y"])) for e in self.events("warp_events")]
@@ -255,9 +264,19 @@ class TownMap:
             if not steps:
                 continue
             if who in ("LOCALID_PLAYER", "OBJ_EVENT_ID_PLAYER"):
+                # The player's start is wherever the cutscene caught them, so
+                # this replays from every trigger and warp - deliberately more
+                # than can really happen. That over-approximation is right for
+                # deciding what to freeze and wrong for judging a change, so a
+                # caller that is asking "did I break a walk" leaves it out and
+                # checks the actors whose start is known instead.
+                if not include_player:
+                    continue
                 starts = player_starts
             elif who in by_local_id:
                 starts = [by_local_id[who]]
+            elif not include_repositioned:
+                continue
             else:
                 starts = everyone
             for sx, sy in starts:

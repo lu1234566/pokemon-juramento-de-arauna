@@ -77,10 +77,7 @@ FOLD_FLOWERBEDS_IN = {"MATA", "CERRADO"}
 # street plan is drawn from each town's own doors and exits; a paved city gets
 # green squares cut into it instead, because it has streets already.
 THEMES = {
-    # Its pale meadow patches were planted against Emerald's mint; against the
-    # forest green they read as holes, so they go back to being lawn.
-    "LittlerootTown": {"mode": "street", "biome": "MATA", "lawn_extra": {0x201},
-                       "material": SAND, "forged": "TERRA",
+    "LittlerootTown": {"mode": "street", "biome": "MATA", "material": SAND, "forged": "TERRA",
                        "ground": GRASS_GROUND | PETALBURG_GROUND,
                        "plaza": 1, "verge": 0x004, "verge_step": 2},
     "OldaleTown": {"mode": "street", "biome": "CERRADO", "material": SAND, "forged": "TERRA",
@@ -118,7 +115,7 @@ THEMES = {
 }
 
 
-def biome_lawn(town, biome, keep, extra=()):
+def biome_lawn(town, biome, keep):
     """Relay a town's whole lawn in its biome's green.
 
     Every block here is plain walkable ground with no behaviour of its own, and
@@ -127,7 +124,7 @@ def biome_lawn(town, biome, keep, extra=()):
     """
     blocks = forge.MATERIALS[biome]["metatiles"]
     plain, shadow_left, shadow_right = blocks
-    swap = {mid: plain for mid in set(LAWN_PLAIN) | set(extra)}
+    swap = {mid: plain for mid in LAWN_PLAIN}
     if biome in FOLD_FLOWERBEDS_IN:
         swap[FLOWERBED] = plain
     swap[LAWN_SHADOWED[0]] = shadow_left
@@ -159,6 +156,26 @@ def biome_border(town, biome):
     if changed:
         open(path, "wb").write(struct.pack("<%dH" % len(values), *values))
     return changed
+
+
+def _check_themes():
+    """No theme may name a block of a secondary tileset outside its own field.
+
+    A block id at or above 0x200 indexes whichever secondary tileset the map
+    loads, so the same number means different things in different towns - and
+    worse, `forge_town_variants` recycles unused slots, so a number that is a
+    flowerbed today can be a tree tomorrow. Naming one in a shared list once
+    turned a town's border trees into grass you could not walk through.
+    """
+    for city, theme in THEMES.items():
+        for key in ("material", "ground"):
+            for block in theme.get(key) or ():
+                if block >= 0x200 and key != "ground":
+                    raise SystemExit("%s: theme names secondary block %03X in %s"
+                                     % (city, block, key))
+
+
+_check_themes()
 
 
 def anchors(town):
@@ -249,8 +266,7 @@ def retheme(city, theme, dry_run=False):
         # The lawn is relaid last so it also catches the ground the street plan
         # left alone, and it reaches the route seam: a settlement's biome should
         # stop at the settlement's edge, the way Emerald stops its own ash.
-        for cell, value in biome_lawn(town, theme["biome"], keep - town.seams(),
-                                      theme.get("lawn_extra", ())).items():
+        for cell, value in biome_lawn(town, theme["biome"], keep - town.seams()).items():
             changed[cell] = value
             greened += 1
     if not dry_run:

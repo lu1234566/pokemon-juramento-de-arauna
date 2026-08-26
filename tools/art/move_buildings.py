@@ -120,6 +120,19 @@ def buildings(town):
     return out
 
 
+def ground_physics(town):
+    """The collision and elevation bits of this town's ordinary walkable ground.
+
+    Writing a constant here is how a whole footprint of grass ended up solid:
+    the collision bits live at 10 and 11, so 0x0C00 is collision 3 - a wall
+    that happens to be drawn as a lawn. Read the map instead.
+    """
+    counts = collections.Counter(town.blocks[town.index(x, y)] & 0xFC00
+                                 for y in range(town.h) for x in range(town.w)
+                                 if town.walkable(x, y))
+    return counts.most_common(1)[0][0]
+
+
 def cells_of(shape):
     return list(shape)
 
@@ -197,18 +210,21 @@ def why_not(town, shape, offset, lawn, actors, seams, taken, footprints, campaig
     return None
 
 
-def apply_move(town, shape, offset, lawn, footprints, campaign):
+def apply_move(town, shape, offset, lawn, footprints, campaign, physics):
     dx, dy = offset
     moved = shift(shape, offset)
     # Clear whatever scenery stood where the building is going.
     for cell in moved:
         if cell not in shape and scenery(town, cell, footprints, campaign):
-            town.blocks[town.index(*cell)] = 0x0C00 | lawn
+            town.blocks[town.index(*cell)] = physics | lawn
     payload = {cell: town.blocks[town.index(*cell)] for cell in shape}
     # Vacated ground becomes plain walkable lawn, at whatever elevation the
     # walkable cells of the footprint were already using.
     for cell in shape:
-        town.blocks[town.index(*cell)] = 0x0C00 | lawn
+        town.blocks[town.index(*cell)] = physics | lawn
+    for cell in shape:
+        if cell not in moved and not town.walkable(*cell):
+            raise SystemExit("vacated ground at %d,%d is not walkable" % cell)
     for (x, y), value in payload.items():
         town.blocks[town.index(x + dx, y + dy)] = value
     for kind, items in events_in(town, shape).items():
@@ -220,7 +236,7 @@ def apply_move(town, shape, offset, lawn, footprints, campaign):
 def scripted_walks_ok(town):
     """Every step a script takes still lands on ground it can walk on."""
     bad = []
-    for (x, y) in town.scripted_paths():
+    for (x, y) in town.scripted_paths(include_player=False, include_repositioned=False):
         if town.inside(x, y) and not town.walkable(x, y) and not town.surfable(x, y):
             bad.append((x, y))
     return bad
@@ -258,6 +274,7 @@ def move_town(city, dry_run):
         return None
 
     footprints = buildings(town)
+    physics = ground_physics(town)
     campaign = town.campaign_cells()
     taken, moved, refused = set(), [], []
     for shape in footprints:
@@ -271,7 +288,7 @@ def move_town(city, dry_run):
             town.solid_now = shift(shape, offset)
             blocks_before = list(town.blocks)
             events_before = json.loads(json.dumps({k: town.map.get(k) for k in EVENT_KINDS}))
-            apply_move(town, shape, offset, lawn, footprints, campaign)
+            apply_move(town, shape, offset, lawn, footprints, campaign, physics)
             last = harm()
             if last is None:
                 taken |= shift(shape, offset) | shape
@@ -299,7 +316,10 @@ def main():
     ap.add_argument("--report", action="store_true")
     args = ap.parse_args()
     import retheme_cities
-    cities = [c for c in retheme_cities.THEMES if retheme_cities.THEMES[c].get("biome")] \
+    import replan_towns
+    # A town with a plan drawn by hand is not a town for a blind nudge.
+    cities = [c for c in retheme_cities.THEMES
+              if retheme_cities.THEMES[c].get("biome") and c not in replan_towns.PLANS] \
         if (args.all or args.report) else [args.city]
     for city in cities:
         r = move_town(city, args.report)

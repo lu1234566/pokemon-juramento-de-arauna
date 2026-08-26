@@ -210,6 +210,13 @@ def live_secondary(symbol):
                 for value in struct.unpack("<%dH" % (len(raw) // 2), raw):
                     if (value & 0x03FF) >= NUM_METATILES_IN_PRIMARY:
                         blocks.add((value & 0x03FF) - NUM_METATILES_IN_PRIMARY)
+    # A block a theme names by number is spoken for too: recycling its slot
+    # would silently change what that number means the next time a theme runs.
+    import retheme_cities
+    for theme in retheme_cities.THEMES.values():
+        for block in theme.get("ground") or ():
+            if block >= NUM_METATILES_IN_PRIMARY:
+                blocks.add(block - NUM_METATILES_IN_PRIMARY)
     prefix = "METATILE_%s_" % symbol.replace("gTileset_", "")
     labels = os.path.join(ROOT, "include/constants/metatile_labels.h")
     for m in re.finditer(r"#define\s+(METATILE_\w+)\s+(0x[0-9A-Fa-f]+|\d+)",

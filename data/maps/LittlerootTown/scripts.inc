@@ -94,7 +94,7 @@ LittlerootTown_EventScript_SetMomStandingInFrontOfDoorPos::
 	return
 
 LittlerootTown_EventScript_SetMomInFrontOfDoorMale::
-	setobjectxyperm LOCALID_LITTLEROOT_MOM, 5, 9
+	setobjectxyperm LOCALID_LITTLEROOT_MOM, 5, 7
 	return
 
 LittlerootTown_EventScript_SetMomInFrontOfDoorFemale::
@@ -110,7 +110,7 @@ LittlerootTown_OnFrame:
 LittlerootTown_EventScript_StepOffTruckMale::
 	lockall
 	setvar VAR_0x8004, 5
-	setvar VAR_0x8005, 8
+	setvar VAR_0x8005, 6
 	call LittlerootTown_EventScript_GoInsideWithMom
 	setflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_TRUCK
 	warpsilent MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F, 8, 8
@@ -232,8 +232,8 @@ LittlerootTown_EventScript_SetRivalBirchPosForDexUpgrade::
 	end
 
 LittlerootTown_EventScript_SetRivalBirchPosForDexUpgradeMale::
-	setobjectxy LOCALID_LITTLEROOT_RIVAL, 6, 10
-	setobjectxy LOCALID_LITTLEROOT_BIRCH, 5, 10
+	setobjectxy LOCALID_LITTLEROOT_RIVAL, 6, 8
+	setobjectxy LOCALID_LITTLEROOT_BIRCH, 5, 8
 	end
 
 LittlerootTown_EventScript_SetRivalBirchPosForDexUpgradeFemale::
