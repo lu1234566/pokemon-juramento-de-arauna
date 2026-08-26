@@ -150,7 +150,7 @@
   ],
   "warp_events": [
     {
-      "x": 10,
+      "x": 12,
       "y": 19,
       "elevation": 0,
       "dest_map": "MAP_PETALBURG_CITY_HOUSE1",

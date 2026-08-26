@@ -103,10 +103,11 @@ PLANS = {
         "groups": [
             {
                 "what": "the house on the rise",
-                # The roof's top row is walkable and sits a row above the
-                # walls, so the footprint has to reach up to y4 to be a house.
-                "rect": (4, 4, 9, 7),
-                "extra": [],
+                # Named by its doorway, not by a rectangle. The rectangle used
+                # to run two columns wider than the house, and those two empty
+                # columns are what put the man who blocks the road to Route 103
+                # inside a wall when the house came down on him.
+                "door": (5, 7),
                 "by": (0, 2),
                 "also_move": [],
                 "literals": [],
@@ -123,21 +124,17 @@ PLANS = {
         "relocate": [],
     },
 
-    # ENCRUZILHADA. Emerald's Mauville is a crossroads boxed in on all four
-    # sides; only the northern block will give at all, and only westward - the
-    # destination guard turns down every other offset because a neighbour is
-    # standing there. Four columns is what the town has to give, so take it.
-    "MauvilleCity": {
-        "groups": [
-            {
-                "what": "the block along the north side",
-                "door": (35, 5),
-                "by": (-4, 0),
-            },
-        ],
-        "relocate": [],
-    },
 }
+
+# ENCRUZILHADA had a plan here and it is gone, because it was wrong. It moved
+# "the block along the north side" four columns west, and what came back was a
+# Pokemon Center with a dirt street running over its roof. The detector had
+# read the town's re-greened trees as architecture and the Center - which the
+# shared primary tileset draws, not the town's own - as landscape, so one flood
+# swallowed the whole north side and then dropped it on top of the Center. The
+# rule that told buildings from scenery is rewritten (see
+# `move_buildings.built_metatiles`), and under it the same offset is refused:
+# a neighbour is standing at 30,4. Mauville keeps the automatic nudge instead.
 
 # VALE DO SILENCIO is deliberately absent: it paves its ground from the same
 # secondary tileset it builds with, so a footprint cannot be told apart from
@@ -194,9 +191,6 @@ def save_ledger(ledger):
         handle.write("\n")
 
 
-NUM_METATILES_IN_PRIMARY = 512
-
-
 def cuts_a_building(town, group):
     """Does this footprint slice through a building instead of containing it?
 
@@ -206,21 +200,19 @@ def cuts_a_building(town, group):
     leaves a strip of roof floating where the house used to be - which is
     exactly what happened to the house in Vila da Passagem.
 
-    Solid or not, a building is drawn from the town's own secondary tileset
-    while the ground around it comes from the shared primary one. So if a block
-    of the secondary tileset inside the footprint touches another one outside
-    it, the footprint has cut a building in half.
+    So if a block this map built with, inside the footprint, touches another
+    one outside it, the footprint has cut a building in half.
     """
     cells = group_cells(town, group)
-    for x, y in cells:
-        if town.metatile(x, y) < NUM_METATILES_IN_PRIMARY:
+    rare = move_buildings.built_metatiles(town)
+    for cell in cells:
+        if not move_buildings.is_built(town, cell, rare):
             continue
         for dx, dy in ((0, -1), (1, 0), (0, 1), (-1, 0)):
-            n = (x + dx, y + dy)
-            if n in cells or not town.inside(*n):
+            n = (cell[0] + dx, cell[1] + dy)
+            if n in cells or not move_buildings.is_built(town, n, rare):
                 continue
-            if town.metatile(*n) >= NUM_METATILES_IN_PRIMARY:
-                return "%d,%d is part of the same building and is outside the footprint" % n
+            return "%d,%d is part of the same building and is outside the footprint" % n
     return None
 
 
@@ -250,30 +242,45 @@ def move_events(town, cells, offset, also):
     return moved
 
 
-def destination_is_clear(town, group):
+def destination_is_clear(town, group, exempt=()):
     """Nothing of consequence is standing where the group is going.
 
     Without this the paste is blind: a neighbouring building, a sign, a person
     would simply be overwritten, and the checks that run afterwards - which ask
     about reachability and doors - would not necessarily notice. Scenery is
-    fair game and gets built over; anything the secondary tileset drew is
-    another building, and anything with an event on it belongs to someone.
+    fair game and gets built over; anything this map built with is another
+    building, and anything with an event on it belongs to someone - unless the
+    plan itself says where that someone is going, which is what `relocate` is.
     """
     cells = group_cells(town, group)
     dx, dy = group["by"]
+    rare = move_buildings.built_metatiles(town)
     events = {(int(e["x"]), int(e["y"])) for kind in EVENT_KINDS
-              for e in town.map.get(kind) or [] if "x" in e}
+              for e in town.map.get(kind) or [] if "x" in e} - set(exempt)
     for x, y in cells:
         target = (x + dx, y + dy)
         if target in cells:
             continue
         if not town.inside(*target):
             return "it would leave the map"
-        if target in events:
+        if target in events and not lands_softly(town, (x, y), target):
             return "an event stands at %d,%d" % target
-        if town.metatile(*target) >= NUM_METATILES_IN_PRIMARY:
+        if move_buildings.is_built(town, target, rare):
             return "another building stands at %d,%d" % target
     return None
+
+
+def lands_softly(town, source, target):
+    """Would the block moving from `source` bury whoever stands on `target`?
+
+    A person standing where a wall is going has to be dealt with by the plan.
+    A person standing where a patch of the same plain lawn is going has not:
+    the ground under their feet is being replaced by ground that walks the
+    same way and reads the same way, and they never notice.
+    """
+    if not town.walkable(*source):
+        return False
+    return town.behavior(*source) == town.behavior(*target)
 
 
 def apply_group(town, group, lawn, physics):
@@ -350,7 +357,8 @@ def replan(city, dry_run):
         if already_applied(ledger, city, group):
             skipped += 1
             continue
-        for why in (cuts_a_building(town, group), destination_is_clear(town, group)):
+        exempt = {tuple(old) for old, _ in plan.get("relocate", [])}
+        for why in (cuts_a_building(town, group), destination_is_clear(town, group, exempt)):
             if why:
                 raise SystemExit("%s: %s - %s" % (city, group["what"], why))
         done.append(group["what"])

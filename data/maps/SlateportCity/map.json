@@ -509,7 +509,7 @@
   ],
   "warp_events": [
     {
-      "x": 19,
+      "x": 21,
       "y": 19,
       "elevation": 0,
       "dest_map": "MAP_SLATEPORT_CITY_POKEMON_CENTER_1F",
@@ -608,7 +608,7 @@
     },
     {
       "type": "sign",
-      "x": 20,
+      "x": 22,
       "y": 19,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
@@ -616,7 +616,7 @@
     },
     {
       "type": "sign",
-      "x": 21,
+      "x": 23,
       "y": 19,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",

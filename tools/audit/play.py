@@ -15,6 +15,7 @@ instead of replaying the intro.
 from __future__ import annotations
 
 import argparse
+import os
 import pathlib
 import subprocess
 import sys
@@ -38,6 +39,27 @@ def sh(*cmd, **kw):
     return subprocess.run(cmd, capture_output=True, text=True, **kw)
 
 
+def stop_display() -> None:
+    """Leave nothing of a previous run behind.
+
+    `pkill -x matchbox-window-manager` never matches anything: pkill compares
+    against a process name truncated to fifteen characters, so the window
+    manager survived every run and X's lock file survived with it. The next
+    Xvfb then refused to take the display, mGBA had nowhere to open, and the
+    session died with "no mGBA window appeared" for a reason that had nothing
+    to do with the ROM.
+    """
+    for pattern in ("mgba", "matchbox-window-manager", "Xvfb"):
+        sh("pkill", "-f", pattern)
+    pause(1.5)
+    for stale in ("/tmp/.X%s-lock" % DISPLAY.lstrip(":"),
+                  "/tmp/.X11-unix/X%s" % DISPLAY.lstrip(":")):
+        try:
+            os.unlink(stale)
+        except OSError:
+            pass
+
+
 def pause(seconds: float) -> None:
     # `sleep` is not available in this environment; a timed blocking read is.
     subprocess.run(["timeout", str(seconds), "tail", "-f", "/dev/null"],
@@ -54,9 +76,7 @@ class Session:
         self.probe = Probe()
 
     def _start(self, savestate: pathlib.Path | None) -> None:
-        for name in ("mgba", "matchbox-window-manager", "Xvfb"):
-            sh("pkill", "-x", name)
-        pause(1.5)
+        stop_display()
         subprocess.Popen(["Xvfb", DISPLAY, "-screen", "0", "1024x768x24"],
                          stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
         pause(2)
@@ -74,8 +94,13 @@ class Session:
                                      stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
         pause(4)
         self.env = env
-        found = sh("xdotool", "search", "--name", "mGBA", env=env)
-        ids = [i for i in found.stdout.split() if i]
+        ids = []
+        for _ in range(10):
+            ids = [i for i in sh("xdotool", "search", "--name", "mGBA",
+                                 env=env).stdout.split() if i]
+            if ids:
+                break
+            pause(1)
         if not ids:
             raise SystemExit("no mGBA window appeared")
         self.window = ids[-1]
@@ -184,8 +209,7 @@ class Session:
 
     def close(self) -> None:
         self.probe.close()
-        for name in ("mgba", "matchbox-window-manager", "Xvfb"):
-            sh("pkill", "-x", name)
+        stop_display()
 
 
 def main() -> int:

@@ -102,14 +102,18 @@ MOVEMENT_STEP = re.compile(
 
 class TownMap:
     def __init__(self, city, root=ROOT, blocks=None, ref=None):
-        # `ref` reads the tilesets' attributes from a revision too. Without it
-        # a baseline's block ids would be read against today's attribute
-        # tables, and any change to a tileset would be reported as if the map
-        # had changed under it.
+        # `ref` reads that revision's tileset attributes *and* its events.
+        # Without the attributes, a baseline's block ids would be read against
+        # today's tables and any change to a tileset would look like a change
+        # to the map. Without the events, a baseline's blocks would be read
+        # against today's warps: reachability is flooded from the doorways, so
+        # a building that moved would seed the old map from a doorway it does
+        # not have, and invent a district that was never cut off.
         self.ref = ref
         self.city = city
         self.root = root
-        self.map = json.load(open(os.path.join(root, "data/maps/%s/map.json" % city), encoding="utf-8"))
+        rel = "data/maps/%s/map.json" % city
+        self.map = json.loads(self._at_ref(rel) or open(os.path.join(root, rel), encoding="utf-8").read())
         layouts = json.load(open(os.path.join(root, "data/layouts/layouts.json"), encoding="utf-8"))["layouts"]
         self.layout = next(l for l in layouts if l["id"] == self.map["layout"])
         self.w = int(self.layout["width"])
@@ -118,6 +122,13 @@ class TownMap:
         raw = blocks if blocks is not None else open(self.path, "rb").read()
         self.blocks = list(struct.unpack("<%dH" % (self.w * self.h), raw))
         self.attrs = self._attributes()
+
+    def _at_ref(self, rel):
+        """This file as of `self.ref`, or None when reading the working tree."""
+        if not self.ref:
+            return None
+        return subprocess.check_output(["git", "show", "%s:%s" % (self.ref, rel)],
+                                       cwd=self.root).decode("utf-8")
 
     def _attributes(self):
         def read(symbol):
@@ -381,11 +392,33 @@ def verify(city, ref="HEAD", free_structure=False, root=ROOT):
             if (x, y) in was.seams():
                 seam_restyled += 1
 
-    for kind, cells in (("warp", was.protected()["warps"]), ("sign", was.protected()["bg_events"])):
-        for x, y in sorted(cells):
-            if now.behavior(x, y) != was.behavior(x, y):
-                problems.append("%s at %d,%d: behaviour %d -> %d" % (kind, x, y,
-                                was.behavior(x, y), now.behavior(x, y)))
+    # A warp is matched by where it goes, not by where it stands: a building
+    # that moved took its doorway with it, and asking whether the *old*
+    # coordinate still behaves like a door only says that it moved.
+    def door_of(town):
+        out = {}
+        for e in town.events("warp_events"):
+            out.setdefault((e.get("dest_map"), str(e.get("dest_warp_id"))), []).append(
+                (int(e["x"]), int(e["y"])))
+        return out
+
+    here, there = door_of(now), door_of(was)
+    for key, olds in sorted(there.items(), key=lambda kv: str(kv[0])):
+        news = here.get(key)
+        if news is None or len(news) != len(olds):
+            problems.append("the warp to %s/%s is gone" % key)
+            continue
+        for (ox, oy), (nx, ny) in zip(sorted(olds), sorted(news)):
+            if now.behavior(nx, ny) != was.behavior(ox, oy):
+                problems.append("the warp to %s/%s: behaviour %d at %d,%d -> %d at %d,%d"
+                                % (key[0], key[1], was.behavior(ox, oy), ox, oy,
+                                   now.behavior(nx, ny), nx, ny))
+            # Emerald has warps on the very edge of a map - Slateport's
+            # gangway, Lavaridge's cable car - where the tile below is off the
+            # grid and the player arrives from somewhere else entirely. Only a
+            # doorstep that exists can be blocked.
+            if now.inside(nx, ny + 1) and not now.walkable(nx, ny + 1):
+                problems.append("the doorstep below the warp at %d,%d is blocked" % (nx, ny))
 
     for label, water in (("on foot", False), ("by surf", True)):
         lost = was.reachable(water) - now.reachable(water)

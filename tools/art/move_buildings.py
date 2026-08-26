@@ -46,7 +46,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "audit"))
 
 import forge_arauna_tiles as forge  # noqa: E402
-from map_invariants import NUM_METATILES_IN_PRIMARY, TownMap  # noqa: E402
+from map_invariants import TownMap  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 EVENT_KINDS = ("warp_events", "object_events", "bg_events", "coord_events")
@@ -78,28 +78,68 @@ def scripted_actors(town):
     return out
 
 
+# How often a block may be repeated across one map and still count as part of
+# a building. A house is drawn from blocks that were cut for that house: its
+# roof corners and its window appear once or twice. Landscape is a stamp - the
+# same tree, the same fence post, tiled along a border - so it appears dozens
+# of times. Three identical houses in one town still leave every block of them
+# well under this.
+LANDSCAPE_REPEATS = 6
+
+
+def built_metatiles(town):
+    """The blocks this map uses for architecture rather than for landscape.
+
+    The old rule here was "a building is whatever the secondary tileset drew",
+    and it was wrong twice over. Emerald draws the Pokemon Center and the Mart
+    from the *primary* tileset every outdoor map shares, so a Center read as
+    landscape and got built over; and once each town's greenery was reforged
+    into its own secondary tileset, every tree read as architecture and a
+    single flood swallowed a whole street.
+
+    Rarity separates them without naming a single block, in any tileset.
+    """
+    counts = collections.Counter(town.metatile(x, y)
+                                 for y in range(town.h) for x in range(town.w))
+    return {mt for mt, seen in counts.items() if seen < LANDSCAPE_REPEATS}
+
+
+def is_built(town, cell, rare):
+    """Is this cell part of a building?
+
+    Solid and rare is a wall or a closed door. Walkable and rare is only
+    architecture if it is standing on top of one: Emerald draws a roof's top
+    row and an awning on walkable blocks so the player passes behind them,
+    while a one-off corner of street paving is also rare and is not a building.
+    """
+    x, y = cell
+    if not town.inside(x, y) or town.metatile(x, y) not in rare:
+        return False
+    if not town.walkable(x, y):
+        return True
+    return (town.behavior(x, y) == 0 and town.inside(x, y + 1)
+            and town.metatile(x, y + 1) in rare and not town.walkable(x, y + 1))
+
+
 def buildings(town):
     """Each building, as the exact set of blocks it is made of.
 
     Flooding every solid cell returns the map's whole solid mass, because walls
     and the border tree line touch. Climbing from the doorway row by row loses
     any part of the building wider than its doorway - it left the top half of
-    Lilycove's contest hall standing where the rest had moved.
-
-    What separates a building from the scenery around it is which tileset drew
-    it: a town's buildings come from the town's own secondary tileset, while
-    the tree line is drawn from the primary one every outdoor map shares. So
-    flood from the doorway through solid blocks of the secondary tileset, and
-    the building comes back whole and by itself.
+    Lilycove's contest hall standing where the rest had moved. So flood from
+    the doorway through the blocks this map built with (see `built_metatiles`),
+    and the building comes back whole, roof row included, and by itself.
     """
     out = []
     claimed = set()
+    rare = built_metatiles(town)
     for e in town.events("warp_events"):
         seed = (int(e["x"]), int(e["y"]))
         if seed in claimed or not town.inside(*seed):
             continue
-        if town.metatile(*seed) < NUM_METATILES_IN_PRIMARY:
-            continue                     # a doorway the shared tileset drew
+        if not is_built(town, seed, rare):
+            continue                     # a doorway cut into the landscape
         mass, stack = set(), [seed]
         while stack:
             cx, cy = stack.pop()
@@ -108,23 +148,9 @@ def buildings(town):
             mass.add((cx, cy))
             for dx, dy in ((0, -1), (1, 0), (0, 1), (-1, 0)):
                 nx, ny = cx + dx, cy + dy
-                if not town.inside(nx, ny) or (nx, ny) in mass:
-                    continue
-                if town.walkable(nx, ny) or town.metatile(nx, ny) < NUM_METATILES_IN_PRIMARY:
+                if (nx, ny) in mass or not is_built(town, (nx, ny), rare):
                     continue
                 stack.append((nx, ny))
-        # Emerald draws the top row of a roof, and an awning, on *walkable*
-        # blocks so the player can pass behind them. Flooding solid cells alone
-        # therefore stops a row short of the building and leaves a strip of
-        # roof floating when it moves - which is what happened to the house in
-        # Vila da Passagem. Take one ring of walkable blocks that the same
-        # secondary tileset drew.
-        for cx, cy in list(mass):
-            for dx, dy in ((0, -1), (1, 0), (0, 1), (-1, 0)):
-                nx, ny = cx + dx, cy + dy
-                if (town.inside(nx, ny) and (nx, ny) not in mass
-                        and town.metatile(nx, ny) >= NUM_METATILES_IN_PRIMARY):
-                    mass.add((nx, ny))
         if len(mass) < 4:
             continue
         claimed |= mass
@@ -183,7 +209,25 @@ def scenery(town, cell, footprints, campaign):
         return False
     if x in (0, town.w - 1) or y in (0, town.h - 1):
         return False
+    if is_built(town, cell, built_metatiles(town)):
+        return False                     # somebody's wall, not a hedge
     return not any(cell in shape for shape in footprints)
+
+
+def buriable(town):
+    """Walkable ground the campaign needs to stay walkable.
+
+    A building only has to be refused where it would land on something solid,
+    or on an event's own coordinate - or so the first version of this thought.
+    But a sign is read from the tile in front of it, a person paces a box
+    wider than the tile they start on, and a cutscene counts steps across open
+    ground. All three are walkable, so all three would be built over in
+    silence: it put a wall through the sign outside Lavaridge's gym and buried
+    a passer-by in Lilycove.
+    """
+    marked = town.protected()
+    return (marked["bg_events"] | marked["people"] | marked["coord_events"]
+            | town.scripted_paths(include_player=False, include_repositioned=False))
 
 
 def why_not(town, shape, offset, lawn, actors, seams, taken, footprints, campaign):
@@ -205,6 +249,8 @@ def why_not(town, shape, offset, lawn, actors, seams, taken, footprints, campaig
             continue
         if not town.walkable(*cell) and not scenery(town, cell, footprints, campaign):
             return "there is something solid where it would land"
+        if cell in town.buriable:
+            return "it would build over ground the campaign walks on"
     for kind in EVENT_KINDS:
         for e in town.map.get(kind) or []:
             if "x" not in e:
@@ -213,16 +259,20 @@ def why_not(town, shape, offset, lawn, actors, seams, taken, footprints, campaig
             if here in moved and here not in shape:
                 return "an event stands where it would land"
     # A footprint that leaves part of the same building behind is not a
-    # footprint. Anything of the secondary tileset touching the shape from
-    # outside is part of what is being moved.
+    # footprint, and a destination that lands on part of one tears that one in
+    # half - which is how a street ended up running over a Pokemon Center's
+    # roof. Both are asked of the blocks this map builds with.
+    rare = built_metatiles(town)
     for cell in shape:
-        if town.metatile(*cell) < NUM_METATILES_IN_PRIMARY:
+        if not is_built(town, cell, rare):
             continue
         for dxx, dyy in ((0, -1), (1, 0), (0, 1), (-1, 0)):
             n = (cell[0] + dxx, cell[1] + dyy)
-            if (n not in shape and town.inside(*n)
-                    and town.metatile(*n) >= NUM_METATILES_IN_PRIMARY):
+            if n not in shape and is_built(town, n, rare):
                 return "it would leave part of the same building behind"
+    for cell in moved:
+        if cell not in shape and is_built(town, cell, rare):
+            return "it would land on part of another building"
     # A doorway is only a doorway if you can stand in front of it.
     for e in town.events("warp_events"):
         here = (int(e["x"]), int(e["y"]))
@@ -297,6 +347,7 @@ def move_town(city, dry_run):
         return None
 
     footprints = buildings(town)
+    town.buriable = buriable(town)
     physics = ground_physics(town)
     campaign = town.campaign_cells()
     taken, moved, refused = set(), [], []

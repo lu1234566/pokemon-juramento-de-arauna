@@ -323,8 +323,8 @@
       "dest_warp_id": "0"
     },
     {
-      "x": 37,
-      "y": 24,
+      "x": 35,
+      "y": 22,
       "elevation": 0,
       "dest_map": "MAP_LILYCOVE_CITY_COVE_LILY_MOTEL_1F",
       "dest_warp_id": "0"
@@ -358,7 +358,7 @@
       "dest_warp_id": "1"
     },
     {
-      "x": 72,
+      "x": 70,
       "y": 5,
       "elevation": 1,
       "dest_map": "MAP_AQUA_HIDEOUT_1F",

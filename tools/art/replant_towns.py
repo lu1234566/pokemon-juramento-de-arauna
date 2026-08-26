@@ -25,6 +25,7 @@ from __future__ import annotations
 
 import argparse
 import collections
+import json
 import os
 import random
 import struct
@@ -34,13 +35,18 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "audit"))
 
 import forge_arauna_tiles as forge  # noqa: E402
-from map_invariants import TownMap  # noqa: E402
+from map_invariants import NUM_METATILES_IN_PRIMARY, TownMap  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 # How many groves a town gets, by how much room it has. Enough to break a
 # straight edge, not enough to turn a village into a wood.
 GROVES_PER_1000_CELLS = 9
+
+# How many of a 2x2's twelve neighbours have to be open ground, somewhere on
+# the map, for it to be something that grows there rather than something the
+# land is made of.
+RING_IN_THE_OPEN = 3
 
 
 def biome_lawn(city):
@@ -49,24 +55,62 @@ def biome_lawn(city):
     return forge.MATERIALS[biome]["metatiles"][0] if biome else None
 
 
+def foliage(town):
+    """Every block in this town that the biome pass found greenery on.
+
+    `forge_town_variants` repainted each block that drew Emerald's grass ramp
+    into the biome's own green and recorded the slot it forged, so the manifest
+    is a list of this town's leaves - in its own tileset, under its own ids,
+    without a single block having to be named here.
+    """
+    path = os.path.join(ROOT, "data/tilesets/arauna_variants.json")
+    if not os.path.exists(path):
+        return set()
+    manifest = json.load(open(path, encoding="utf-8"))["blocks"]
+    secondary = town.layout["secondary_tileset"]
+    return {NUM_METATILES_IN_PRIMARY + slot for key, slot in manifest.items()
+            if key.split("|")[0] == secondary}
+
+
 def tree_stamp(town):
-    """The 2x2 of tree the town is already edged with, read off the map.
+    """The 2x2 of tree the town is already planted with, read off the map.
 
     Naming a block id would be wrong twice over: the id means different things
     in different tilesets, and after the biome pass a town's trees are variants
-    with ids that were free slots. The most repeated solid 2x2 in the map is
-    the tree the artists tiled the border with, whatever it is called here.
+    with ids that were free slots. So the tree has to be recognised rather than
+    named - and "the most repeated solid 2x2" is not enough to recognise it.
+    In Sootopolis the most repeated solid 2x2 is the white crater wall, and
+    planting it dropped chunks of cliff onto the lawn.
+
+    Two things have to be true of it. It has to have leaves on it, which the
+    biome pass already knows: it repainted every block that drew Emerald's
+    grass ramp into this town's own green, and wrote down which ones (see
+    `foliage`). And it has to stand in the open somewhere on the map, which is
+    what tells a tree from a hedge grown along a wall.
+
+    Neither test alone is enough. "The most repeated solid 2x2" on its own
+    planted chunks of the white crater wall across Sootopolis' lawn; openness
+    on its own promoted the grey stone slabs lying beside them.
     """
-    counts = collections.Counter()
+    counts, openest = collections.Counter(), collections.defaultdict(int)
     for y in range(town.h - 1):
         for x in range(town.w - 1):
             quad = [(x, y), (x + 1, y), (x, y + 1), (x + 1, y + 1)]
             if any(town.walkable(*c) or town.behavior(*c) != 0 for c in quad):
                 continue
-            counts[tuple(town.blocks[town.index(*c)] for c in quad)] += 1
-    if not counts:
+            stamp = tuple(town.blocks[town.index(*c)] for c in quad)
+            counts[stamp] += 1
+            ring = [(x + dx, y + dy) for dx in (-1, 0, 1, 2) for dy in (-1, 0, 1, 2)
+                    if (x + dx, y + dy) not in quad]
+            openest[stamp] = max(openest[stamp],
+                                 sum(1 for c in ring if town.inside(*c) and town.walkable(*c)))
+    leaves = foliage(town)
+    standing = [(seen, stamp) for stamp, seen in counts.items()
+                if openest[stamp] >= RING_IN_THE_OPEN
+                and all((b & 0x03FF) in leaves for b in stamp)]
+    if not standing:
         return None
-    stamp, seen = counts.most_common(1)[0]
+    seen, stamp = max(standing)
     return stamp if seen >= 4 else None
 
 

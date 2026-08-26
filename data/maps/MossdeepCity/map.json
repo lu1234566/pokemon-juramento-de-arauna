@@ -267,7 +267,7 @@
       "dest_warp_id": "0"
     },
     {
-      "x": 38,
+      "x": 36,
       "y": 9,
       "elevation": 0,
       "dest_map": "MAP_MOSSDEEP_CITY_GYM",
@@ -296,7 +296,7 @@
     },
     {
       "x": 49,
-      "y": 8,
+      "y": 6,
       "elevation": 0,
       "dest_map": "MAP_MOSSDEEP_CITY_HOUSE3",
       "dest_warp_id": "0"
@@ -433,7 +433,7 @@
     },
     {
       "type": "sign",
-      "x": 34,
+      "x": 32,
       "y": 9,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
