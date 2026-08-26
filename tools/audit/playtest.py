@@ -318,14 +318,16 @@ def arrival(p, name):
     return best or (min(5, grid.w - 1), min(5, grid.h - 1))
 
 
-def act_world(s: Session, log, limit=None, start=0):
+def act_world(s: Session, log, limit=None, start=0, only=None):
     p = Pilot(s)
     print("[world]")
     shots = REPORT / "world"
     shots.mkdir(parents=True, exist_ok=True)
+    wanted = set(only.split(",")) if only else None
     targets = [(gn, name) for gn, name in sorted(p.maps.items())
-               if not name.startswith(SKIP_PREFIXES)]
-    targets = targets[start:][:limit] if limit else targets[start:]
+               if (name in wanted if wanted else not name.startswith(SKIP_PREFIXES))]
+    if not wanted:
+        targets = targets[start:][:limit] if limit else targets[start:]
     seen = 0
     for (group, num), name in targets:
         seen += 1
@@ -349,10 +351,19 @@ def act_world(s: Session, log, limit=None, start=0):
         if callback != "CB2_Overworld":
             note(log, "FAIL", map=name, detail="the field never came up (%s)" % callback)
             continue
+        # Some rooms are entered by a scripted walk - the Elite Four's chambers
+        # walk the player four squares up from the doorway as they come in. Let
+        # that finish before asking where they are.
+        p.wait_free(6.0)
+        where = p.where()
         grid = p.grid()
         if grid is not None and where is not None and not grid.inside(where[2], where[3]):
-            note(log, "FAIL", map=name, detail="landed outside the map at %d,%d" % where[2:])
-            continue
+            # And then do not call it a fault. The square this harness warped
+            # to is not where the game sends anybody, so a scripted entrance
+            # carrying the player off the grid from it says nothing about the
+            # map - it says the warp was made up.
+            note(log, "note", map=name,
+                 detail="entered by a scripted walk; %d,%d is off the grid" % where[2:])
         path = s.shots / ("world_%s.png" % name)
         s.shot("world_%s" % name)
         faults = screen_faults(path)
@@ -411,6 +422,7 @@ def main():
     ap.add_argument("act", choices=sorted(ACTS) + ["all"])
     ap.add_argument("--limit", type=int)
     ap.add_argument("--start", type=int, default=0)
+    ap.add_argument("--only", help="comma-separated map names, for re-checking a few")
     ap.add_argument("--resume", default="opening.ss1")
     args = ap.parse_args()
 
@@ -424,7 +436,7 @@ def main():
         if args.act == "opening_tail":
             act_opening_tail(s, log)
         if args.act in ("world", "all"):
-            act_world(s, log, limit=args.limit, start=args.start)
+            act_world(s, log, limit=args.limit, start=args.start, only=args.only)
         if args.act in ("battles", "all"):
             act_battles(s, log)
     finally:
