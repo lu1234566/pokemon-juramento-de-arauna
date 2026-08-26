@@ -233,7 +233,7 @@ and behaviour are frozen like everything else, so restyling a seam cannot break
 a join — it can only make the change visible at the edge, which is a decision.
 The gate now counts seam blocks restyled and reports them instead of refusing.
 
-### What still wears Emerald's green, and why
+### What still wears Emerald's green, and why (superseded — see below)
 
 Rather than guess, a detector reads every block a town lays and reports any
 that still draws palette 2's mint ramp. Two things do.
@@ -254,3 +254,51 @@ with them — and recolouring it costs four tiles per biome, which do not exist.
 Against a dark or a yellow lawn each bed read as a pale hole, so in those
 biomes the beds go back to being grass. PAMPA is close enough to the green the
 petals were drawn against that it keeps them.
+
+## Carrying the biome into every block
+
+Relaying a lawn only reaches the blocks that are nothing but lawn. Emerald
+draws grass inside a great many other blocks too — between the crowns of a tree
+line, in the strip at the foot of a house, under a flowerbed's petals — and
+those keep the old mint however the lawn around them is repainted. That is what
+made the first pass read as patched rather than designed.
+
+The primary tileset cannot fix it: one free tile. Each town's **secondary**
+tileset can, once dead space is counted properly. Every one of them has room —
+even the six whose sheets are already 512 tiles long, because a great many of
+those tiles are drawn by no live block. `gTileset_Dewford` has 405 usable
+tiles, `gTileset_Rustboro` 240, `gTileset_Mauville` 54.
+
+`tools/art/forge_town_variants.py` uses it. For each block a town lays that
+draws palette 2's grass ramp, it forges a variant into that town's own
+secondary tileset: the tiles carrying grass are copied across with only their
+grass indices re-indexed onto the biome's ramp, every other tile of the block
+is referenced exactly as it is, and the variant inherits the source's attribute
+word wholesale, so behaviour and layer type cannot drift. 1200 block kinds
+across thirteen settlements.
+
+Only one settlement falls short. `gTileset_Mauville` is shared by ENCRUZILHADA
+and VALE DO SILENCIO, which between them need 178 variants and have 112 slots.
+The tool redresses the commonest blocks first, so what is left over is the
+green fewest cells are showing: 66 blocks, one cell each, in ENCRUZILHADA. A
+pixel threshold does not help — nearly every block there carries real grass —
+and sharing a biome between the two towns does not either, since their union is
+still 166.
+
+### Two bugs this pass had, and the gate that caught them
+
+Neither would have been found by looking at the maps.
+
+**Recycling a freed block.** Substituting every cell that held a block leaves
+it looking unused, and the next town sharing that tileset would claim the slot
+— making the result depend on the order towns were processed in, and silently
+rewriting the meaning of a block id another map might still lay. Blocks are now
+never recycled: a slot is spoken for if a map lays it *now*, if a map laid it in
+the committed revision, or if a script names it by constant.
+
+**The gate reading a baseline against today's tilesets.** `TownMap` always read
+metatile attributes from disk, so a baseline block id was looked up in the
+attribute table as it stands now. Any change to a tileset was then reported as
+if the map had changed under it — which is exactly how the first bug surfaced,
+as a door behaviour appearing on a tile that had none. `TownMap` now takes the
+revision too, and reads that revision's attributes.

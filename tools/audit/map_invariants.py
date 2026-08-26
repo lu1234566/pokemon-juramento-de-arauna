@@ -101,7 +101,12 @@ MOVEMENT_STEP = re.compile(
 
 
 class TownMap:
-    def __init__(self, city, root=ROOT, blocks=None):
+    def __init__(self, city, root=ROOT, blocks=None, ref=None):
+        # `ref` reads the tilesets' attributes from a revision too. Without it
+        # a baseline's block ids would be read against today's attribute
+        # tables, and any change to a tileset would be reported as if the map
+        # had changed under it.
+        self.ref = ref
         self.city = city
         self.root = root
         self.map = json.load(open(os.path.join(root, "data/maps/%s/map.json" % city), encoding="utf-8"))
@@ -119,10 +124,16 @@ class TownMap:
             name = symbol.replace("gTileset_", "")
             slug = "".join(("_" if c.isupper() and i else "") + c.lower() for i, c in enumerate(name))
             for kind in ("primary", "secondary"):
-                p = os.path.join(self.root, "data/tilesets", kind, slug, "metatile_attributes.bin")
-                if os.path.exists(p):
+                rel = "data/tilesets/%s/%s/metatile_attributes.bin" % (kind, slug)
+                p = os.path.join(self.root, rel)
+                if not os.path.exists(p):
+                    continue
+                if self.ref:
+                    blob = subprocess.check_output(["git", "show", "%s:%s" % (self.ref, rel)],
+                                                   cwd=self.root)
+                else:
                     blob = open(p, "rb").read()
-                    return list(struct.unpack("<%dH" % (len(blob) // 2), blob))
+                return list(struct.unpack("<%dH" % (len(blob) // 2), blob))
             raise SystemExit("no attributes for %s" % symbol)
         return read(self.layout["primary_tileset"]), read(self.layout["secondary_tileset"])
 
@@ -325,7 +336,7 @@ def baseline_blocks(city, ref, root=ROOT):
 
 def verify(city, ref="HEAD", free_structure=False, root=ROOT):
     now = TownMap(city, root)
-    was = TownMap(city, root, blocks=baseline_blocks(city, ref, root))
+    was = TownMap(city, root, blocks=baseline_blocks(city, ref, root), ref=ref)
     problems = []
     if len(now.blocks) != len(was.blocks):
         return ["%s: block grid size changed" % city]
