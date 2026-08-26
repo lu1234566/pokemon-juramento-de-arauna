@@ -373,3 +373,39 @@ reset to.
     python3 tools/art/replan_towns.py
     python3 tools/art/move_buildings.py --all
     python3 tools/art/replant_towns.py --all
+
+## The land between the towns
+
+A town's routes share the town's secondary tileset, so the biome's palette is
+already loaded when the route is drawn, and every block the town redressed can
+be reused for nothing. A route that agrees with its neighbour therefore costs
+almost no room at all — which is why the countryside pass covers forty-five
+maps and only two tilesets ran out.
+
+Where a tileset serves towns of two biomes the choice is real, and the rule is
+that the land changes where the land changes. Leaving VILA AMANHECER you are
+still in the mata; the country around VILA DA PASSAGEM is cerrado; it opens
+into pampa on the way down to PAMPA DA ESPERA. Nobody steps out of their own
+front door into a different climate.
+
+Three settlements that had never been themed at all are in the pass now, since
+they only ever needed a palette: PORTO DAS REDES and CASA DA FOGUEIRA wear the
+mangue, CAMPO DAS CINZAS the caatinga, which is what ash looks like anyway.
+
+### All of a map, or none of it
+
+A tileset that runs out part-way leaves the rest of a map wearing Emerald's
+green, and a map that is a tenth done does not read as a different region — it
+reads as broken. Below `COVERAGE_FLOOR` a map is left alone entirely and its
+slots are handed back, which at least reads as somewhere the biome has not
+reached.
+
+`gTileset_Mauville` is the one region this costs. It is shared by ENCRUZILHADA,
+VALE DO SILENCIO and four routes, and after the two towns there is not enough
+left for even one of them: Route 110 could redress 407 of 1783 cells, Route 118
+none of 826. All four are left as Emerald drew them. Sharing a biome between
+the two towns does not fix it either — their union alone is larger than what
+the tileset has.
+
+A map with no greenery in it (MtChimney, the open-sea routes) redresses nothing
+and that is correct, not a failure.

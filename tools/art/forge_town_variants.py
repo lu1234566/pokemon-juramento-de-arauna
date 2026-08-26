@@ -63,6 +63,13 @@ GRASS_INDICES = (0xC, 0xD, 0xE, 0xF)
 LEAF_INDICES = (0x1, 0x2, 0x3, 0x4)
 GREEN_INDICES = set(GRASS_INDICES) | set(LEAF_INDICES)
 
+# How much of a map's greenery has to be redressable before it is worth
+# redressing at all. A tileset that runs out part-way leaves the rest wearing
+# Emerald's green, and a map that is a tenth done does not read as a different
+# region - it reads as broken. Below this it is left alone entirely, which at
+# least reads as somewhere the biome has not reached.
+COVERAGE_FLOOR = 0.6
+
 # The eight greens each biome is drawn in, lightest to darkest, grass first and
 # leaves second.
 #
@@ -492,10 +499,69 @@ def read_border(town):
     return list(struct.unpack("<%dH" % (len(raw) // 2), raw))
 
 
+# The land between the settlements. A town's route shares the town's secondary
+# tileset, so the biome's palette is already loaded when the route is drawn and
+# every block the town redressed can be reused for nothing - which means a
+# route that agrees with its neighbour costs almost no room at all.
+#
+# Where a tileset serves towns of two biomes the choice is real, and the rule
+# is that the land changes where the land changes: leaving VILA AMANHECER you
+# are still in the mata, the country around VILA DA PASSAGEM is cerrado, and it
+# opens into pampa on the way down to PAMPA DA ESPERA. Nobody steps out of
+# their own front door into a different climate.
+COUNTRYSIDE = {
+    # gTileset_Petalburg
+    "Route101": "MATA", "Route102": "PAMPA", "Route103": "CERRADO",
+    # gTileset_Rustboro
+    "Route104": "PAMPA", "PetalburgWoods": "MATA", "Route116": "ARAUCARIA",
+    # gTileset_Lavaridge
+    "Route112": "CAATINGA", "JaggedPass": "CAATINGA", "MtChimney": "CAATINGA",
+    # gTileset_Fortree
+    "Route119": "MATA", "Route120": "MATA",
+    # gTileset_Lilycove. The Safari Zone wanted to be cerrado and cannot be:
+    # a second biome on a tileset shares none of the first one's variants, and
+    # six maps of fresh savanna emptied what Lilycove had left after three
+    # routes. It keeps the mangue its neighbours wear, which it gets for free.
+    "Route121": "MANGUE", "Route122": "MANGUE", "Route123": "MANGUE",
+    "SafariZone_North": "MANGUE", "SafariZone_Northeast": "MANGUE",
+    "SafariZone_Northwest": "MANGUE", "SafariZone_South": "MANGUE",
+    "SafariZone_Southeast": "MANGUE", "SafariZone_Southwest": "MANGUE",
+    # gTileset_Slateport
+    "Route108": "CAATINGA", "Route109": "CAATINGA",
+    # gTileset_Mauville
+    "Route110": "CERRADO", "Route111": "CERRADO",
+    "Route117": "ARAUCARIA", "Route118": "CERRADO",
+    # gTileset_Mossdeep
+    "Route124": "MANGUE", "Route125": "MANGUE", "Route126": "MANGUE",
+    "Route127": "MANGUE", "Route128": "MANGUE", "Route129": "MANGUE",
+    # gTileset_Dewford - PORTO DAS REDES, a fishing village on the water.
+    "DewfordTown": "MANGUE", "Route105": "MANGUE", "Route106": "MANGUE",
+    "Route107": "MANGUE",
+    # gTileset_Fallarbor - CAMPO DAS CINZAS, under the ash.
+    "FallarborTown": "CAATINGA", "Route113": "CAATINGA", "Route114": "CAATINGA",
+    "Route115": "CAATINGA",
+    # gTileset_Pacifidlog - CASA DA FOGUEIRA, out on the open sea.
+    "PacifidlogTown": "MANGUE", "Route131": "MANGUE", "Route132": "MANGUE",
+    "Route133": "MANGUE", "Route134": "MANGUE",
+}
+
+
 def biome_of(city):
     import retheme_cities
     theme = retheme_cities.THEMES.get(city) or {}
-    return theme.get("biome")
+    return theme.get("biome") or COUNTRYSIDE.get(city)
+
+
+def dressable():
+    """Every map that gets a biome, settlements first.
+
+    Order matters twice over: a settlement should be the one to claim its
+    tileset's free palette, and the blocks it redresses are the ones every
+    route sharing that tileset then gets for nothing.
+    """
+    import retheme_cities
+    towns = [c for c in retheme_cities.THEMES if retheme_cities.THEMES[c].get("biome")]
+    return towns + [c for c in COUNTRYSIDE if c not in retheme_cities.THEMES]
 
 
 # Emerald's plain grass, in the tileset every outdoor map shares.
@@ -550,6 +616,9 @@ def dress(city, dry_run=False, manifest=None, baseline="HEAD"):
         tally[block] = tally.get(block, 0) + 1
     wearing = [b for b in sorted(tally, key=lambda b: -tally[b]) if smith.wears_emerald_green(b)]
 
+    was = {kind: set(manifest[kind]) for kind in ("blocks", "tiles")}
+    palettes_was = set(manifest.get("palettes", {}))
+
     variants, short = {}, []
     for block in wearing:
         try:
@@ -559,6 +628,20 @@ def dress(city, dry_run=False, manifest=None, baseline="HEAD"):
             print("  %s: %s; %d block kind(s) keep the old green (%d cells)"
                   % (city, why, len(short), sum(tally[b] for b in short)))
             break
+
+    green = sum(tally[b] for b in wearing)
+    covered = sum(tally[b] for b in variants)
+    if green and covered < green * COVERAGE_FLOOR:
+        # Give the slots back: reserving them for a map that is being left
+        # alone would starve the next one for nothing.
+        for kind, keys in was.items():
+            for key in set(manifest[kind]) - keys:
+                del manifest[kind][key]
+        for key in set(manifest.get("palettes", {})) - palettes_was:
+            del manifest["palettes"][key]
+        return {"city": city, "biome": biome, "blocks": 0, "short": len(short),
+                "palette": None, "slots_left": len(smith.free_blocks),
+                "left_alone": "%d of %d cells could be redressed" % (covered, green)}
 
     for y in range(town.h):
         for x in range(town.w):
@@ -595,15 +678,16 @@ def main():
                          "variant pass is being rebuilt rather than extended")
     args = ap.parse_args()
 
-    import retheme_cities
-    cities = [c for c in retheme_cities.THEMES if retheme_cities.THEMES[c].get("biome")] \
-        if (args.all or args.report) else [args.city]
+    cities = dressable() if (args.all or args.report) else [args.city]
     manifest = load_manifest()
     for city in cities:
         r = dress(city, dry_run=args.report, manifest=manifest,
                   baseline=args.rebase_from)
         if r:
-            print("%-16s %-10s %s  %3d block kinds redressed%s, %3d slots left"
+            if r.get("left_alone"):
+                print("%-20s %-10s left alone: %s" % (r["city"], r["biome"], r["left_alone"]))
+                continue
+            print("%-20s %-10s %s  %3d block kinds redressed%s, %3d slots left"
                   % (r["city"], r["biome"],
                      "palette %2d" % r["palette"] if r["palette"] is not None
                      else "on the ramp",
