@@ -113,6 +113,18 @@ def buildings(town):
                 if town.walkable(nx, ny) or town.metatile(nx, ny) < NUM_METATILES_IN_PRIMARY:
                     continue
                 stack.append((nx, ny))
+        # Emerald draws the top row of a roof, and an awning, on *walkable*
+        # blocks so the player can pass behind them. Flooding solid cells alone
+        # therefore stops a row short of the building and leaves a strip of
+        # roof floating when it moves - which is what happened to the house in
+        # Vila da Passagem. Take one ring of walkable blocks that the same
+        # secondary tileset drew.
+        for cx, cy in list(mass):
+            for dx, dy in ((0, -1), (1, 0), (0, 1), (-1, 0)):
+                nx, ny = cx + dx, cy + dy
+                if (town.inside(nx, ny) and (nx, ny) not in mass
+                        and town.metatile(nx, ny) >= NUM_METATILES_IN_PRIMARY):
+                    mass.add((nx, ny))
         if len(mass) < 4:
             continue
         claimed |= mass
@@ -200,6 +212,17 @@ def why_not(town, shape, offset, lawn, actors, seams, taken, footprints, campaig
             here = (int(e["x"]), int(e["y"]))
             if here in moved and here not in shape:
                 return "an event stands where it would land"
+    # A footprint that leaves part of the same building behind is not a
+    # footprint. Anything of the secondary tileset touching the shape from
+    # outside is part of what is being moved.
+    for cell in shape:
+        if town.metatile(*cell) < NUM_METATILES_IN_PRIMARY:
+            continue
+        for dxx, dyy in ((0, -1), (1, 0), (0, 1), (-1, 0)):
+            n = (cell[0] + dxx, cell[1] + dyy)
+            if (n not in shape and town.inside(*n)
+                    and town.metatile(*n) >= NUM_METATILES_IN_PRIMARY):
+                return "it would leave part of the same building behind"
     # A doorway is only a doorway if you can stand in front of it.
     for e in town.events("warp_events"):
         here = (int(e["x"]), int(e["y"]))

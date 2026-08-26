@@ -545,7 +545,7 @@
     },
     {
       "x": 30,
-      "y": 25,
+      "y": 26,
       "elevation": 0,
       "dest_map": "MAP_SLATEPORT_CITY_OCEANIC_MUSEUM_1F",
       "dest_warp_id": "0"

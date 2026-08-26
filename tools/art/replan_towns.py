@@ -89,7 +89,43 @@ PLANS = {
         # People who only wander, standing where a building is going.
         "relocate": [((12, 13), (4, 13))],
     },
+
+    # VALE DO SILENCIO is not here on purpose: it paves its ground from the
+    # same secondary tileset it builds with, so a footprint cannot be told
+    # apart from the floor around it. It keeps the automatic nudge instead.
+
+    # VILA DA PASSAGEM. Emerald's Oldale is a tidy T: a house on the upper
+    # left, the mart on the upper right, the centre below it. Drop the house
+    # down into the crossroads it is named for and pull the south-east block
+    # up off the map's edge, and the T breaks.
+    "OldaleTown": {
+        "groups": [
+            {
+                "what": "the house on the rise",
+                # The roof's top row is walkable and sits a row above the
+                # walls, so the footprint has to reach up to y4 to be a house.
+                "rect": (4, 4, 9, 7),
+                "extra": [],
+                "by": (0, 2),
+                "also_move": [],
+                "literals": [],
+            },
+            {
+                "what": "the south-east block",
+                "rect": (14, 12, 19, 19),
+                "extra": [],
+                "by": (0, -1),
+                "also_move": [],
+                "literals": [],
+            },
+        ],
+        "relocate": [],
+    },
 }
+
+# VALE DO SILENCIO is deliberately absent: it paves its ground from the same
+# secondary tileset it builds with, so a footprint cannot be told apart from
+# the floor around it. It keeps the automatic nudge instead.
 
 
 def biome_lawn(city):
@@ -114,6 +150,60 @@ def ground_physics(town):
 def group_cells(group):
     x0, y0, x1, y1 = group["rect"]
     return {(x, y) for y in range(y0, y1 + 1) for x in range(x0, x1 + 1)} | set(group["extra"])
+
+
+LEDGER = os.path.join(ROOT, "data/maps/arauna_replans.json")
+
+
+def load_ledger():
+    return json.load(open(LEDGER, encoding="utf-8")) if os.path.exists(LEDGER) else {}
+
+
+def save_ledger(ledger):
+    with open(LEDGER, "w", encoding="utf-8") as handle:
+        json.dump(ledger, handle, indent=1, sort_keys=True)
+        handle.write("\n")
+
+
+NUM_METATILES_IN_PRIMARY = 512
+
+
+def cuts_a_building(town, group):
+    """Does this footprint slice through a building instead of containing it?
+
+    Emerald draws the top row of a roof on a *walkable* block, so the player
+    can pass behind it. A footprint taken from the solid blocks alone therefore
+    stops one row short of the building it is supposed to be, and moving it
+    leaves a strip of roof floating where the house used to be - which is
+    exactly what happened to the house in Vila da Passagem.
+
+    Solid or not, a building is drawn from the town's own secondary tileset
+    while the ground around it comes from the shared primary one. So if a block
+    of the secondary tileset inside the footprint touches another one outside
+    it, the footprint has cut a building in half.
+    """
+    cells = group_cells(group)
+    for x, y in cells:
+        if town.metatile(x, y) < NUM_METATILES_IN_PRIMARY:
+            continue
+        for dx, dy in ((0, -1), (1, 0), (0, 1), (-1, 0)):
+            n = (x + dx, y + dy)
+            if n in cells or not town.inside(*n):
+                continue
+            if town.metatile(*n) >= NUM_METATILES_IN_PRIMARY:
+                return "%d,%d is part of the same building and is outside the footprint" % n
+    return None
+
+
+def already_applied(ledger, city, group):
+    """Has this group been moved already?
+
+    A plan is a statement about the map, not a diff, so running it twice must
+    not move a building twice. Reading that off the map does not work when a
+    move overlaps where it started - the doorway is inside both the old
+    footprint and the new one - so it is written down instead.
+    """
+    return group["what"] in (ledger.get(city) or [])
 
 
 def move_events(town, cells, offset, also):
@@ -199,8 +289,16 @@ def replan(city, dry_run):
                     if town.inside(*c) and not town.walkable(*c)}
     doors = {town.behavior(int(e["x"]), int(e["y"])) for e in town.events("warp_events")}
 
-    moved_events = 0
+    ledger = load_ledger()
+    moved_events, skipped, done = 0, 0, []
     for group in plan["groups"]:
+        if already_applied(ledger, city, group):
+            skipped += 1
+            continue
+        cut = cuts_a_building(town, group)
+        if cut:
+            raise SystemExit("%s: %s - %s" % (city, group["what"], cut))
+        done.append(group["what"])
         moved_events += apply_group(town, group, lawn, physics)
     for old, new in plan.get("relocate", []):
         for e in town.map.get("object_events") or []:
@@ -213,15 +311,20 @@ def replan(city, dry_run):
 
     files = []
     for group in plan["groups"]:
-        files += rewrite_literals(group, dry_run)
+        if group["what"] in done:
+            files += rewrite_literals(group, dry_run)
+    if not dry_run and done:
+        ledger.setdefault(city, [])
+        ledger[city] = sorted(set(ledger[city]) | set(done))
+        save_ledger(ledger)
     if not dry_run:
         open(town.path, "wb").write(struct.pack("<%dH" % len(town.blocks), *town.blocks))
         path = os.path.join(ROOT, "data/maps/%s/map.json" % city)
         with open(path, "w", encoding="utf-8") as handle:
             json.dump(town.map, handle, indent=2)
             handle.write("\n")
-    return {"city": city, "groups": len(plan["groups"]), "events": moved_events,
-            "scripts": sorted(set(files))}
+    return {"city": city, "groups": len(plan["groups"]) - skipped, "skipped": skipped,
+            "events": moved_events, "scripts": sorted(set(files))}
 
 
 def main():
@@ -231,8 +334,9 @@ def main():
     args = ap.parse_args()
     for city in ([args.city] if args.city else list(PLANS)):
         r = replan(city, args.report)
-        print("%-16s %d group(s) moved, %d event(s) carried, scripts: %s"
-              % (r["city"], r["groups"], r["events"], ", ".join(r["scripts"]) or "none"))
+        print("%-16s %d group(s) moved (%d already in place), %d event(s) carried, scripts: %s"
+              % (r["city"], r["groups"], r["skipped"], r["events"],
+                 ", ".join(r["scripts"]) or "none"))
     return 0
 
 
