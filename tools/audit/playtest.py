@@ -62,6 +62,43 @@ def note(log, kind, **fields):
     return entry
 
 
+# ------------------------------------------------------------- act zero
+def act_bootstrap(s: Session, log):
+    """Play a brand new game as far as the truck, and file that as a waypoint.
+
+    Every other act starts from opening.ss1, and a savestate belongs to the
+    build it was taken from, so a rebuild invalidates it. It also needs the
+    cartridge to have no save on it: with one, the main menu opens on CONTINUE
+    and pressing A loads someone else's game instead of starting one.
+
+    Nothing here is timed. The loop presses and asks where the player is, and
+    only stops when the answer is the inside of the truck, so it is as slow as
+    the machine needs and no slower.
+    """
+    p = Pilot(s)
+    print("[bootstrap]")
+    note(log, "boot", state=s.probe.callback2_name())
+    deadline, taps = time.time() + 420, 0
+    while time.time() < deadline:
+        if p.map_name() == "InsideOfTruck":
+            break
+        # A works for the title, the menu and every line of the opening; START
+        # is what accepts a name on the naming screen, where A only types.
+        s.press("start" if taps % 9 == 8 else "a", settle=0.35)
+        taps += 1
+    else:
+        note(log, "FAIL", step="the new game", state=s.probe.callback2_name(),
+             detail="never reached the truck")
+        return p
+    if not p.clear_messages(40):
+        note(log, "STUCK", where="the truck", detail="the arrival never released the controls")
+        return p
+    s.savestate("opening")
+    note(log, "waypoint", map=p.map_name(), at=str(p.where()[2:]),
+         presses=taps, file="opening.ss1")
+    return p
+
+
 # ---------------------------------------------------------------- act one
 def act_opening(s: Session, log):
     p = Pilot(s)
@@ -469,7 +506,8 @@ def act_battles(s: Session, log, routes=None):
     return p
 
 
-ACTS = {"opening": act_opening, "opening_tail": act_opening_tail,
+ACTS = {"bootstrap": act_bootstrap,
+        "opening": act_opening, "opening_tail": act_opening_tail,
         "world": act_world, "battles": act_battles}
 
 
@@ -485,8 +523,17 @@ def main():
     REPORT.mkdir(parents=True, exist_ok=True)
     log = []
     started = time.time()
-    s = Session(savestate=CHECKPOINTS / args.resume)
+    if args.act == "bootstrap":
+        # A cartridge with a save on it opens the menu on CONTINUE.
+        stale = ROOT / "pokemon-juramento-de-arauna-en_modern.sav"
+        if stale.is_file():
+            stale.unlink()
+        s = Session()
+    else:
+        s = Session(savestate=CHECKPOINTS / args.resume)
     try:
+        if args.act == "bootstrap":
+            act_bootstrap(s, log)
         if args.act in ("opening", "all"):
             act_opening(s, log)
         if args.act == "opening_tail":

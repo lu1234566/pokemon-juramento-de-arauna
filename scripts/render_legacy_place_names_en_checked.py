@@ -94,12 +94,15 @@ CANON = {
     "FIERY PATH": "TRILHA DE FOGO",
     "DEVON CORP": "HORIZONTE",
     # Three key items carry a faction in their own name, and the name is what
-    # the bag shows: a player told to deliver the DEVON GOODS has to find the
-    # DEVON GOODS in the pocket. Renamed here so the dialogue and the bag say
-    # the same thing, and short enough for the 13 characters an item name has.
-    "DEVON GOODS": "HORIZ. GOODS",
-    "DEVON SCOPE": "HORIZ. SCOPE",
-    "MAGMA EMBLEM": "ASH EMBLEM",
+    # the bag shows: a player told to fetch the DEVON GOODS has to find the
+    # DEVON GOODS in the pocket. All three were renamed long ago by the story
+    # renderers that own their scenes - and only in the bag, so every line that
+    # asked for one still asked for it by its Hoenn name, and the errand did
+    # not match the pocket. Nothing is invented here: these are the names those
+    # renderers already give, repeated so the asking agrees with the holding.
+    "DEVON GOODS": "OCEANIC PARTS",   # render_porto_sal_museum_confrontation_en
+    "DEVON SCOPE": "FIELD SCOPE",     # render_route120_bento_en
+    "MAGMA EMBLEM": "REMEM. EMBLEM",  # render_ruins_memorial_en
     "TEAM MAGMA": "REMEMBRANCERS",
     "TEAM AQUA": "HORIZONTE",
     "MT. PYRE": "MEMORIAL NOMES",
@@ -493,11 +496,13 @@ ITEM_NAME_RE = re.compile(r'(\.name = _\(")((?:[^"\\]|\\.)*)("\))')
 
 
 def render_item_names(source: str) -> str:
-    """Rename the items whose own name carries a faction.
+    """Rename any item whose own name still carries a legacy one.
 
-    The bag is the only place a player can check what they were sent to fetch,
-    so the item and the person asking for it have to agree; the dialogue side
-    of that agreement is the compound entries in CANON above.
+    The three that did are renamed earlier by the story renderers that own
+    their scenes, so this finds nothing today. It stays because the failure it
+    guards against is not a wide line but a buffer: an item name is copied into
+    a fixed u8[ITEM_NAME_LENGTH], and a canonical name long enough to overrun
+    that would be found here rather than in the bag.
     """
     def one(hit):
         new_name = substitute(hit.group(2))

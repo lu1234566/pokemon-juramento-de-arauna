@@ -26,6 +26,7 @@ import json
 import os
 import pathlib
 import sys
+import time
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from map_invariants import DIRECTIONS, LEDGE_JUMPS, TownMap  # noqa: E402
@@ -71,8 +72,21 @@ class Pilot:
         self._grids = {}
 
     # -- where we are ------------------------------------------------------
-    def where(self):
-        return self.probe.location()
+    def where(self, wait: float = 0.0):
+        """(mapGroup, mapNum, x, y), or None if the save block is not up yet.
+
+        There is a window at the very start of a new game where the arrival
+        scene has finished and gSaveBlock1Ptr is still null; asking for a
+        position inside it answers None, and a caller that indexes the answer
+        crashes on the truck's tailgate. Callers that need a position say how
+        long they are prepared to wait for one.
+        """
+        deadline = time.time() + wait
+        while True:
+            here = self.probe.location()
+            if here is not None or time.time() >= deadline:
+                return here
+            self.probe.run(0.25)
 
     def map_name(self):
         where = self.where()
@@ -258,7 +272,10 @@ class Pilot:
         So: stand on the square the door is approached from - below it by
         preference, because that is where a doorstep is - and then push.
         """
-        was = self.where()[:2]
+        here = self.where(wait=10.0)
+        if here is None:
+            raise Stuck("the game has no position to warp from")
+        was = here[:2]
         grid = self.grid()
         if grid is not None and grid.walkable(x, y):
             self.walk_to(x, y)

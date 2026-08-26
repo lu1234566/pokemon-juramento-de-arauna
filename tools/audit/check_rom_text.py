@@ -34,6 +34,13 @@ HOENN = [
     "DEVON", "AQUA", "MAGMA",
 ]
 
+# Ordinary English that a raw byte search cannot tell from a faction name.
+# AQUATIC is a Pokedex category - "the AQUATIC POKeMON" - and MAGMA ARMOR is an
+# ability every game in the series ships. Counting them as Hoenn would make the
+# number say something it does not mean, so they are named here, and what they
+# account for is printed rather than quietly dropped.
+INNOCENT = ("AQUATIC", "MAGMA ARMOR")
+
 
 def charmap():
     table = {}
@@ -84,15 +91,29 @@ def main():
             print("  %06X  %s" % (at, context(rom, table, at)))
         return 0
 
-    total = 0
+    # Where each innocent word sits, so a hit inside one is not a hit.
+    covered = set()
+    for word in INNOCENT:
+        needle = encode(word, table)
+        if needle is None:
+            continue
+        for at in occurrences(rom, needle):
+            covered.update(range(at, at + len(needle)))
+
+    total, excused = 0, 0
     for name in HOENN:
         needle = encode(name, table)
         if needle is None:
             continue
         hits = occurrences(rom, needle)
-        if hits:
-            total += len(hits)
-            print("  %-12s %4d" % (name, len(hits)))
+        real = [at for at in hits if at not in covered]
+        excused += len(hits) - len(real)
+        if real:
+            total += len(real)
+            print("  %-12s %4d" % (name, len(real)))
+    if excused:
+        print("  (%d hit(s) inside %s, which are English and not Hoenn)"
+              % (excused, " and ".join(INNOCENT)))
     print("%d readable mention(s) of Hoenn in the built ROM" % total)
     return 1 if total else 0
 

@@ -15,6 +15,7 @@ instead of replaying the intro.
 from __future__ import annotations
 
 import argparse
+import hashlib
 import os
 import pathlib
 import subprocess
@@ -37,6 +38,32 @@ KEY = {"a": "x", "b": "z", "start": "Return", "select": "BackSpace",
 
 def sh(*cmd, **kw):
     return subprocess.run(cmd, capture_output=True, text=True, **kw)
+
+
+def rom_id(rom: pathlib.Path) -> str:
+    return hashlib.sha256(rom.read_bytes()).hexdigest()[:16]
+
+
+def check_savestate(savestate: pathlib.Path, rom: pathlib.Path) -> None:
+    """Refuse a waypoint that belongs to a different build.
+
+    A savestate is a snapshot of the machine, and the machine includes which
+    ROM is in it. mGBA loads a stale one without a word: the run then starts
+    wherever the old state happened to be standing - a run that meant to open
+    the truck's tailgate reported the front door of PETALBURG CITY not opening
+    - and every fault after that is a fault in the report, not in the game.
+    So each waypoint is filed with the build it was taken from.
+    """
+    if not savestate.is_file():
+        raise SystemExit(
+            "no waypoint at %s. Make it with:\n"
+            "    python3 tools/audit/playtest.py bootstrap" % savestate)
+    stamp = savestate.with_suffix(".rom")
+    if not stamp.is_file() or stamp.read_text(encoding="utf-8").strip() != rom_id(rom):
+        raise SystemExit(
+            "%s was taken from a different build of the ROM and would start "
+            "the run somewhere else.\nMake it again with:\n"
+            "    python3 tools/audit/playtest.py bootstrap" % savestate)
 
 
 def stop_display() -> None:
@@ -88,6 +115,7 @@ class Session:
         pause(1.5)
         cmd = ["/usr/games/mgba", "-g", "-1"]
         if savestate:
+            check_savestate(savestate, self.rom)
             cmd += ["-t", str(savestate)]
         cmd.append(str(self.rom))
         self.mgba = subprocess.Popen(cmd, env=env,
@@ -185,6 +213,7 @@ class Session:
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_bytes(produced.read_bytes())
         produced.unlink()
+        target.with_suffix(".rom").write_text(rom_id(self.rom), encoding="utf-8")
         return target
 
     # -- the closed loop --------------------------------------------------
