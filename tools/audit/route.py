@@ -109,6 +109,11 @@ def main() -> int:
     try:
         ROUTES[args.route](session, shots=not args.no_shots)
         if args.checkpoint:
+            # A checkpoint taken while a field message is still on screen
+            # resumes with the player locked, and every later run looks as if
+            # the controls stopped working. Wait the message out first.
+            session.wait_for(lambda p: "Task_DrawFieldMessage" not in p.active_tasks(),
+                             timeout=30, label="field message cleared")
             path = session.savestate(args.route)
             print(f"  checkpoint: {path.relative_to(ROOT)}")
         return 0
