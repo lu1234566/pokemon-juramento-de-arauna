@@ -156,6 +156,9 @@ const u32 gObjectEventPic_Wally[] = INCGFX_U32("graphics/object_events/pics/peop
 const u32 gObjectEventPic_RubySapphireLittleBoy[] = INCGFX_U32("graphics/object_events/pics/people/rs_little_boy.png", ".4bpp", "-mwidth 2 -mheight 2");
 const u32 gObjectEventPic_HotSpringsOldWoman[] = INCGFX_U32("graphics/object_events/pics/people/hot_springs_old_woman.png", ".4bpp", "-mwidth 2 -mheight 4");
 const u32 gObjectEventPic_LatiasLatios[] = INCGFX_U32("graphics/object_events/pics/pokemon_old/latias_latios.png", ".4bpp", "-mwidth 4 -mheight 4");
+// Arauna: Latios' overworld slot no longer shares Latias' pixels; #330 Jaciana
+// carries its own art so #329 Guaraciana and #330 Jaciana are visually distinct.
+const u32 gObjectEventPic_Jaciana[] = INCGFX_U32("graphics/object_events/pics/pokemon_old/jaciana.png", ".4bpp", "-mwidth 4 -mheight 4");
 const u32 gObjectEventPic_GameboyKid[] = INCGFX_U32("graphics/object_events/pics/people/gameboy_kid.png", ".4bpp", "-mwidth 2 -mheight 4");
 const u32 gObjectEventPic_ContestJudge[] = INCGFX_U32("graphics/object_events/pics/people/contest_judge.png", ".4bpp", "-mwidth 2 -mheight 4");
 const u32 gObjectEventPic_Archie[] = INCGFX_U32("graphics/object_events/pics/people/team_aqua/archie.png", ".4bpp", "-mwidth 2 -mheight 4");
@@ -384,6 +387,23 @@ const u32 gObjectEventPic_RayquazaCutscene[] = INCGFX_U32("graphics/object_event
 
 const u16 gObjectEventPal_HoOh[] = INCGFX_U16("graphics/object_events/palettes/ho_oh.pal", ".gbapal");
 const u16 gObjectEventPal_Lugia[] = INCGFX_U16("graphics/object_events/palettes/lugia.pal", ".gbapal");
+
+// Arauna overworld fakemon dedicated palettes.
+const u16 gObjectEventPal_Caramelo[] = INCGFX_U16("graphics/object_events/palettes/caramelo.pal", ".gbapal");
+const u16 gObjectEventPal_Capivim[] = INCGFX_U16("graphics/object_events/palettes/capivim.pal", ".gbapal");
+const u16 gObjectEventPal_Botim[] = INCGFX_U16("graphics/object_events/palettes/botim.pal", ".gbapal");
+const u16 gObjectEventPal_Camaleao[] = INCGFX_U16("graphics/object_events/palettes/camaleao.pal", ".gbapal");
+const u16 gObjectEventPal_Tuiuiu[] = INCGFX_U16("graphics/object_events/palettes/tuiuiu.pal", ".gbapal");
+const u16 gObjectEventPal_Morphalia[] = INCGFX_U16("graphics/object_events/palettes/morphalia.pal", ".gbapal");
+const u16 gObjectEventPal_Curupixel[] = INCGFX_U16("graphics/object_events/palettes/curupixel.pal", ".gbapal");
+const u16 gObjectEventPal_CorpoSeco[] = INCGFX_U16("graphics/object_events/palettes/corpo_seco.pal", ".gbapal");
+const u16 gObjectEventPal_Jequitiba[] = INCGFX_U16("graphics/object_events/palettes/jequitiba.pal", ".gbapal");
+const u16 gObjectEventPal_Muiraquita[] = INCGFX_U16("graphics/object_events/palettes/muiraquita.pal", ".gbapal");
+const u16 gObjectEventPal_Preazinho[] = INCGFX_U16("graphics/object_events/palettes/preazinho.pal", ".gbapal");
+const u16 gObjectEventPal_BeijaFlor[] = INCGFX_U16("graphics/object_events/palettes/beija_flor.pal", ".gbapal");
+const u16 gObjectEventPal_Guaraciana[] = INCGFX_U16("graphics/object_events/palettes/guaraciana.pal", ".gbapal");
+const u16 gObjectEventPal_Jaciana[] = INCGFX_U16("graphics/object_events/palettes/jaciana.pal", ".gbapal");
+const u16 gObjectEventPal_Araua[] = INCGFX_U16("graphics/object_events/palettes/araua.pal", ".gbapal");
 
 const u16 gObjectEventPaletteLight[] = INCGFX_U16("graphics/object_events/palettes/light.pal", ".gbapal");
 const u16 gObjectEventPaletteLight2[] = INCGFX_U16("graphics/object_events/palettes/light2.pal", ".gbapal");

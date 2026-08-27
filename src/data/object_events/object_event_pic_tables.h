@@ -872,6 +872,21 @@ static const struct SpriteFrameImage sPicTable_LatiasLatios[] = {
     overworld_frame(gObjectEventPic_LatiasLatios, 4, 4, 2),
 };
 
+// Arauna: #330 Jaciana. Same three-frame layout as the Latias/Latios slot
+// (frame 0 idle, frames 1-2 flap), but its own pixels so it is distinct from
+// #329 Guaraciana, which keeps the shared latias_latios.png art.
+static const struct SpriteFrameImage sPicTable_Jaciana[] = {
+    overworld_frame(gObjectEventPic_Jaciana, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Jaciana, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Jaciana, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Jaciana, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Jaciana, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Jaciana, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Jaciana, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Jaciana, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Jaciana, 4, 4, 2),
+};
+
 static const struct SpriteFrameImage sPicTable_GameboyKid[] = {
     overworld_frame(gObjectEventPic_GameboyKid, 2, 4, 0),
     overworld_frame(gObjectEventPic_GameboyKid, 2, 4, 1),

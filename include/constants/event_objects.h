@@ -613,6 +613,23 @@ enum
 // Gen VIII
 #define OBJ_EVENT_PAL_TAG_BALL_STRANGE            0x116A
 #endif //OW_FOLLOWERS_POKEBALLS
+// Arauna overworld fakemon dedicated palettes (species that formerly reused the
+// generic NPC_1..4 palette banks now carry their own colours here).
+#define OBJ_EVENT_PAL_TAG_CARAMELO                0x1170
+#define OBJ_EVENT_PAL_TAG_CAPIVIM                 0x1171
+#define OBJ_EVENT_PAL_TAG_BOTIM                   0x1172
+#define OBJ_EVENT_PAL_TAG_CAMALEAO                0x1173
+#define OBJ_EVENT_PAL_TAG_TUIUIU                  0x1174
+#define OBJ_EVENT_PAL_TAG_MORPHALIA               0x1175
+#define OBJ_EVENT_PAL_TAG_CURUPIXEL               0x1176
+#define OBJ_EVENT_PAL_TAG_CORPO_SECO              0x1177
+#define OBJ_EVENT_PAL_TAG_JEQUITIBA               0x1178
+#define OBJ_EVENT_PAL_TAG_MUIRAQUITA              0x1179
+#define OBJ_EVENT_PAL_TAG_PREAZINHO               0x117A
+#define OBJ_EVENT_PAL_TAG_BEIJA_FLOR              0x117B
+#define OBJ_EVENT_PAL_TAG_GUARACIANA              0x117C
+#define OBJ_EVENT_PAL_TAG_JACIANA                 0x117D
+#define OBJ_EVENT_PAL_TAG_ARAUA                   0x117E
 // Used as a placeholder follower graphic
 #define OBJ_EVENT_PAL_TAG_SUBSTITUTE              0x7611
 #define OBJ_EVENT_PAL_TAG_LIGHT                   0x8001
