@@ -141,7 +141,11 @@ def render_item_descs(source: str) -> str:
     matches = list(ITEM_DESC_RE.finditer(source))
     if len(matches) != 1:
         raise ValueError(f"expected one sDevonScopeDesc block, found {len(matches)}")
-    return ITEM_DESC_RE.sub(ITEM_DESC_NEW, source, count=1)
+    # Pass the replacement through a function: as a template string, re.sub
+    # would read the \n sequences this text needs to keep as literal
+    # backslash-n and turn them into real newlines, splitting the C string
+    # literal across lines and breaking the build.
+    return ITEM_DESC_RE.sub(lambda _m: ITEM_DESC_NEW, source, count=1)
 
 
 def validate_rendered(map_text: str, items: str, descs: str) -> None:
