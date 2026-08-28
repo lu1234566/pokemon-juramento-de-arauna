@@ -97,6 +97,12 @@ DATA_SRC_SUBDIR = src/data
 DATA_ASM_SUBDIR = data
 MID_SUBDIR = sound/songs/midi
 
+# The link step runs from inside $(OBJ_DIR), so every path that has to reach
+# back to the repo root needs one ".." per component of it. Deriving that keeps
+# a custom BUILD_DIR working: build/modern needs ../.., build/arauna-en/modern
+# needs ../../.. .
+ROOT_REL := $(shell echo '$(OBJ_DIR)' | sed 's|[^/][^/]*|..|g')
+
 C_BUILDDIR = $(OBJ_DIR)/$(C_SUBDIR)
 ASM_BUILDDIR = $(OBJ_DIR)/$(ASM_SUBDIR)
 DATA_ASM_BUILDDIR = $(OBJ_DIR)/$(DATA_ASM_SUBDIR)
@@ -117,8 +123,8 @@ ifeq ($(MODERN),0)
   CPPFLAGS += -I tools/agbcc/include -I tools/agbcc -nostdinc -undef -std=gnu89
   CC1 := tools/agbcc/bin/agbcc$(EXE)
   override CFLAGS += -mthumb-interwork -Wimplicit -Wparentheses -Werror -O$(O_LEVEL) -fhex-asm -g
-  LIBPATH := -L ../../tools/agbcc/lib
-  LIB := $(LIBPATH) -lgcc -lc -L../../libagbsyscall -lagbsyscall
+  LIBPATH := -L $(ROOT_REL)/tools/agbcc/lib
+  LIB := $(LIBPATH) -lgcc -lc -L$(ROOT_REL)/libagbsyscall -lagbsyscall
 else
   # Note: The makefile must be set up to not call these if modern == 0
   MODERNCC := $(PREFIX)gcc
@@ -126,7 +132,7 @@ else
   CC1 := $(shell $(PATH_MODERNCC) --print-prog-name=cc1) -quiet
   override CFLAGS += -mthumb -mthumb-interwork -O$(O_LEVEL) -mabi=apcs-gnu -mtune=arm7tdmi -march=armv4t -fno-toplevel-reorder -Wno-pointer-to-int-cast
   LIBPATH := -L "$(dir $(shell $(PATH_MODERNCC) -mthumb -print-file-name=libgcc.a))" -L "$(dir $(shell $(PATH_MODERNCC) -mthumb -print-file-name=libnosys.a))" -L "$(dir $(shell $(PATH_MODERNCC) -mthumb -print-file-name=libc.a))"
-  LIB := $(LIBPATH) -lc -lnosys -lgcc -L../../libagbsyscall -lagbsyscall
+  LIB := $(LIBPATH) -lc -lnosys -lgcc -L$(ROOT_REL)/libagbsyscall -lagbsyscall
 endif
 # Enable debug info if set
 ifeq ($(DINFO),1)
@@ -373,10 +379,6 @@ libagbsyscall:
 	@$(MAKE) -C libagbsyscall TOOLCHAIN=$(TOOLCHAIN) MODERN=$(MODERN)
 
 # Elf from object files
-# The link step runs from inside $(OBJ_DIR), so paths back to the repo root need
-# one ".." per path component. Deriving it keeps a custom BUILD_DIR working:
-# build/modern needs ../.., build/arauna-en/modern needs ../../.. .
-ROOT_REL := $(shell echo '$(OBJ_DIR)' | sed 's|[^/][^/]*|..|g')
 LDFLAGS = -Map $(ROOT_REL)/$(MAP)
 $(ELF): $(LD_SCRIPT) $(LD_SCRIPT_DEPS) $(OBJS) libagbsyscall
 	@cd $(OBJ_DIR) && $(LD) $(LDFLAGS) -T $(ROOT_REL)/$< --print-memory-usage -o $(ROOT_REL)/$@ $(OBJS_REL) $(LIB) | cat
