@@ -1503,6 +1503,9 @@ const u16 gMonIconPalettes[][16] =
     INCGFX_U16("graphics/pokemon/icon_palettes/icon_palette_0.pal", ".gbapal"),
     INCGFX_U16("graphics/pokemon/icon_palettes/icon_palette_1.pal", ".gbapal"),
     INCGFX_U16("graphics/pokemon/icon_palettes/icon_palette_2.pal", ".gbapal"),
+    INCGFX_U16("graphics/pokemon/icon_palettes/icon_palette_3.pal", ".gbapal"),
+    INCGFX_U16("graphics/pokemon/icon_palettes/icon_palette_4.pal", ".gbapal"),
+    INCGFX_U16("graphics/pokemon/icon_palettes/icon_palette_5.pal", ".gbapal"),
 };
 
 const u16 gTitleScreenBgPalettes[]         = INCBIN_U16("graphics/title_screen/pokemon_logo.gbapal",
