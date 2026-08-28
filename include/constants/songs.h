@@ -543,6 +543,30 @@
 #define PH_NURSE_HELD               608
 #define PH_NURSE_SOLO               609
 
+// Arauna original soundtrack (21 tracks). New dedicated slots so vanilla song
+// data is preserved and only the intended contexts are redirected.
+#define MUS_ARAUNA_MAIN             610
+#define MUS_ARAUNA_VILA_AMANHECER   611
+#define MUS_ARAUNA_ROUTE            612
+#define MUS_ARAUNA_WILD_BATTLE      613
+#define MUS_ARAUNA_TRAINER_BATTLE   614
+#define MUS_ARAUNA_CIRO             615
+#define MUS_ARAUNA_CIRO_BATTLE      616
+#define MUS_ARAUNA_CIRO_FINAL       617
+#define MUS_ARAUNA_HORIZON          618
+#define MUS_ARAUNA_HORIZON_BATTLE   619
+#define MUS_ARAUNA_GYM_BATTLE       620
+#define MUS_ARAUNA_STORY_BOSS       621
+#define MUS_ARAUNA_LEGEND_ENCOUNTER 622
+#define MUS_ARAUNA_LEGEND_BATTLE    623
+#define MUS_ARAUNA_ARAUA_ENCOUNTER  624
+#define MUS_ARAUNA_ARAUA_BATTLE     625
+#define MUS_ARAUNA_OATH_ROAD        626
+#define MUS_ARAUNA_ELITE_BATTLE     627
+#define MUS_ARAUNA_CHAMPION_BATTLE  628
+#define MUS_ARAUNA_CREDITS          629
+#define MUS_ARAUNA_SAPPHIRE_CRYPT   630
+
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 
 #define MUS_NONE                    0xFFFF

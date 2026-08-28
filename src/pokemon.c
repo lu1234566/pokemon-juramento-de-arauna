@@ -5259,20 +5259,18 @@ u16 GetBattleBGM(void)
     {
         switch (GetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPECIES))
         {
-        case SPECIES_RAYQUAZA:
-            return MUS_VS_RAYQUAZA;
+        case SPECIES_RAYQUAZA: // Arauna: #386 Araua
+            return MUS_ARAUNA_ARAUA_BATTLE;
         case SPECIES_KYOGRE:
         case SPECIES_GROUDON:
-            return MUS_VS_KYOGRE_GROUDON;
         case SPECIES_REGIROCK:
         case SPECIES_REGICE:
         case SPECIES_REGISTEEL:
         case SPECIES_REGIGIGAS:
         case SPECIES_REGIELEKI:
         case SPECIES_REGIDRAGO:
-            return MUS_VS_REGI;
         default:
-            return MUS_RG_VS_LEGEND;
+            return MUS_ARAUNA_LEGEND_BATTLE; // Forca Primordial (all non-Araua legendaries)
         }
     }
     else if (gBattleTypeFlags & (BATTLE_TYPE_LINK | BATTLE_TYPE_RECORDED_LINK))
@@ -5290,28 +5288,70 @@ u16 GetBattleBGM(void)
         else
             trainerClass = GetTrainerClassFromId(TRAINER_BATTLE_PARAM.opponentA);
 
+        // Arauna story trainers are routed by trainer ID, not by class: they
+        // reuse shared vanilla classes (Ciro is a Pkmn Ranger, the Horizonte
+        // agent a Scientist, the story trials Experts), so a class-level match
+        // would drag unrelated trainers along with them.
+        if (!(gBattleTypeFlags & (BATTLE_TYPE_FRONTIER | BATTLE_TYPE_TRAINER_HILL)))
+        {
+            switch (TRAINER_BATTLE_PARAM.opponentA)
+            {
+            case TRAINER_ARAUNA_CIRO_PIMPAU:
+            case TRAINER_ARAUNA_CIRO_CARAMELO:
+            case TRAINER_ARAUNA_CIRO_QUERO:
+                return MUS_ARAUNA_CIRO_BATTLE;   // Rival a Altura
+            case TRAINER_ARAUNA_TECH_AGENT:
+                return MUS_ARAUNA_HORIZON_BATTLE; // Maquina de Controle
+            case TRAINER_ARAUNA_MARE_TRIAL:
+            case TRAINER_ARAUNA_UIVO_TRIAL:
+                return MUS_ARAUNA_STORY_BOSS;     // Algo Nao Deveria Estar Aqui
+            default:
+                break;
+            }
+        }
+
         switch (trainerClass)
         {
+        // Arauna: Team Aqua internals == Consorcio Horizonte; Team Magma
+        // internals == Lembrantes. Only the Aqua/Horizonte side gets the new
+        // Horizonte battle theme; the Magma/Lembrantes side keeps vanilla so it
+        // is NOT musically contaminated by Horizonte (per design).
         case TRAINER_CLASS_AQUA_LEADER:
+            return MUS_ARAUNA_HORIZON_BATTLE;
         case TRAINER_CLASS_MAGMA_LEADER:
             return MUS_VS_AQUA_MAGMA_LEADER;
         case TRAINER_CLASS_TEAM_AQUA:
-        case TRAINER_CLASS_TEAM_MAGMA:
         case TRAINER_CLASS_AQUA_ADMIN:
+            return MUS_ARAUNA_HORIZON_BATTLE; // Maquina de Controle
+        case TRAINER_CLASS_TEAM_MAGMA:
         case TRAINER_CLASS_MAGMA_ADMIN:
-            return MUS_VS_AQUA_MAGMA;
+            return MUS_VS_AQUA_MAGMA; // Lembrantes: unchanged vanilla slot
         case TRAINER_CLASS_LEADER:
-            return MUS_VS_GYM_LEADER;
+            return MUS_ARAUNA_GYM_BATTLE; // Prova de Arauna
         case TRAINER_CLASS_CHAMPION:
-            return MUS_VS_CHAMPION;
+            return MUS_ARAUNA_CHAMPION_BATTLE; // Amalia (Ate Onde Voce Chegou)
         case TRAINER_CLASS_RIVAL:
             if (gBattleTypeFlags & BATTLE_TYPE_FRONTIER)
-                return MUS_VS_RIVAL;
+                return MUS_ARAUNA_CIRO_BATTLE;
             if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleWallyName))
-                return MUS_VS_TRAINER;
-            return MUS_VS_RIVAL;
+                return MUS_ARAUNA_TRAINER_BATTLE;
+            // Arauna: Ciro's last rival bout (the Lilycove-stage IDs) is his
+            // final form and gets O Preco de Vencer; every earlier meeting
+            // keeps Rival a Altura.
+            switch (TRAINER_BATTLE_PARAM.opponentA)
+            {
+            case TRAINER_BRENDAN_LILYCOVE_MUDKIP:
+            case TRAINER_BRENDAN_LILYCOVE_TREECKO:
+            case TRAINER_BRENDAN_LILYCOVE_TORCHIC:
+            case TRAINER_MAY_LILYCOVE_MUDKIP:
+            case TRAINER_MAY_LILYCOVE_TREECKO:
+            case TRAINER_MAY_LILYCOVE_TORCHIC:
+                return MUS_ARAUNA_CIRO_FINAL;
+            default:
+                return MUS_ARAUNA_CIRO_BATTLE;
+            }
         case TRAINER_CLASS_ELITE_FOUR:
-            return MUS_VS_ELITE_FOUR;
+            return MUS_ARAUNA_ELITE_BATTLE; // Os Que Permaneceram de Pe
         case TRAINER_CLASS_CHAMPION_FRLG:
             return MUS_RG_VS_CHAMPION;
         case TRAINER_CLASS_LEADER_FRLG:
@@ -5329,7 +5369,7 @@ u16 GetBattleBGM(void)
             if (GetCurrentRegion() == REGION_KANTO)
                 return MUS_RG_VS_TRAINER;
             else
-                return MUS_VS_TRAINER;
+                return MUS_ARAUNA_TRAINER_BATTLE; // Um Desafio a Frente
         }
     }
     else
@@ -5337,7 +5377,7 @@ u16 GetBattleBGM(void)
         if (GetCurrentRegion() == REGION_KANTO)
             return MUS_RG_VS_WILD;
         else
-            return MUS_VS_WILD;
+            return MUS_ARAUNA_WILD_BATTLE; // Instinto Selvagem
     }
 }
 

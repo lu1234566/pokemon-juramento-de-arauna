@@ -2,7 +2,7 @@
   "id": "MAP_ARAUNA_PLAYER_HOUSE",
   "name": "AraunaPlayerHouse",
   "layout": "LAYOUT_ARAUNA_PLAYER_HOUSE",
-  "music": "MUS_FORTREE",
+  "music": "MUS_ARAUNA_VILA_AMANHECER",
   "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
