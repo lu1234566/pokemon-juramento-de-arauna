@@ -60,11 +60,11 @@ Route119_EventScript_RivalEncounter::
 	end
 
 Route119_EventScript_PlayMayMusic::
-	playbgm MUS_ENCOUNTER_MAY, TRUE
+	playbgm MUS_ARAUNA_CIRO, TRUE
 	return
 
 Route119_EventScript_PlayBrendanMusic::
-	playbgm MUS_ENCOUNTER_BRENDAN, TRUE
+	playbgm MUS_ARAUNA_CIRO, TRUE
 	return
 
 Route119_EventScript_BattleMay::

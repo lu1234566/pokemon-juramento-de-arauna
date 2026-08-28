@@ -682,11 +682,11 @@ RustboroCity_EventScript_PlayRivalMusic::
 	return
 
 RustboroCity_EventScript_PlayMayMusic::
-	playbgm MUS_ENCOUNTER_MAY, TRUE
+	playbgm MUS_ARAUNA_CIRO, TRUE
 	return
 
 RustboroCity_EventScript_PlayBrendanMusic::
-	playbgm MUS_ENCOUNTER_BRENDAN, TRUE
+	playbgm MUS_ARAUNA_CIRO, TRUE
 	return
 
 RustboroCity_EventScript_RivalTrigger0::

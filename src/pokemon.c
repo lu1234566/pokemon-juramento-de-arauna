@@ -6425,13 +6425,15 @@ void ClearBattleMonForms(void)
 
 u16 GetBattleBGM(void)
 {
+    // Arauna: every scripted legendary shares Forca Primordial; #386 Araua
+    // (the Rayquaza slot) keeps its own theme, applied in battle_setup.c.
     if (gBattleTypeFlags & BATTLE_TYPE_KYOGRE_GROUDON)
     {
-        return MUS_VS_KYOGRE_GROUDON;
+        return MUS_ARAUNA_LEGEND_BATTLE;
     }
     else if (gBattleTypeFlags & BATTLE_TYPE_REGI)
     {
-        return MUS_VS_REGI;
+        return MUS_ARAUNA_LEGEND_BATTLE;
     }
     else if (gBattleTypeFlags & (BATTLE_TYPE_LINK | BATTLE_TYPE_RECORDED_LINK))
     {
@@ -6450,26 +6452,46 @@ u16 GetBattleBGM(void)
 
         switch (trainerClass)
         {
+        // Arauna: Team Aqua internals are the Consorcio Horizonte and Team Magma
+        // internals the Lembrantes, but vanilla gives both a single shared slot.
+        // The cases are split so only the Horizonte side takes the new theme;
+        // the Lembrantes side deliberately stays on the vanilla slot.
         case TRAINER_CLASS_AQUA_LEADER:
+            return MUS_ARAUNA_HORIZON_BATTLE;
         case TRAINER_CLASS_MAGMA_LEADER:
-            return MUS_VS_AQUA_MAGMA_LEADER;
+            // Lembrantes leader: the campaign's non-legendary boss, and the
+            // faction the Desencanto produced. Algo Nao Deveria Estar Aqui.
+            return MUS_ARAUNA_STORY_BOSS;
         case TRAINER_CLASS_TEAM_AQUA:
-        case TRAINER_CLASS_TEAM_MAGMA:
         case TRAINER_CLASS_AQUA_ADMIN:
+            return MUS_ARAUNA_HORIZON_BATTLE; // Maquina de Controle
+        case TRAINER_CLASS_TEAM_MAGMA:
         case TRAINER_CLASS_MAGMA_ADMIN:
-            return MUS_VS_AQUA_MAGMA;
+            return MUS_VS_AQUA_MAGMA; // Lembrantes: unchanged vanilla slot
         case TRAINER_CLASS_LEADER:
-            return MUS_VS_GYM_LEADER;
+            return MUS_ARAUNA_GYM_BATTLE; // Prova de Arauna
         case TRAINER_CLASS_CHAMPION:
-            return MUS_VS_CHAMPION;
+            return MUS_ARAUNA_CHAMPION_BATTLE; // Amalia
         case TRAINER_CLASS_RIVAL:
             if (gBattleTypeFlags & BATTLE_TYPE_FRONTIER)
-                return MUS_VS_RIVAL;
+                return MUS_ARAUNA_CIRO_BATTLE;
             if (!StringCompare(gTrainers[gTrainerBattleOpponent_A].trainerName, gText_BattleWallyName))
-                return MUS_VS_TRAINER;
-            return MUS_VS_RIVAL;
+                return MUS_ARAUNA_TRAINER_BATTLE;
+            // Ciro's last rival bout is his final form: O Preco de Vencer.
+            switch (gTrainerBattleOpponent_A)
+            {
+            case TRAINER_BRENDAN_LILYCOVE_MUDKIP:
+            case TRAINER_BRENDAN_LILYCOVE_TREECKO:
+            case TRAINER_BRENDAN_LILYCOVE_TORCHIC:
+            case TRAINER_MAY_LILYCOVE_MUDKIP:
+            case TRAINER_MAY_LILYCOVE_TREECKO:
+            case TRAINER_MAY_LILYCOVE_TORCHIC:
+                return MUS_ARAUNA_CIRO_FINAL;
+            default:
+                return MUS_ARAUNA_CIRO_BATTLE; // Rival a Altura
+            }
         case TRAINER_CLASS_ELITE_FOUR:
-            return MUS_VS_ELITE_FOUR;
+            return MUS_ARAUNA_ELITE_BATTLE;
         case TRAINER_CLASS_SALON_MAIDEN:
         case TRAINER_CLASS_DOME_ACE:
         case TRAINER_CLASS_PALACE_MAVEN:
@@ -6479,12 +6501,12 @@ u16 GetBattleBGM(void)
         case TRAINER_CLASS_PYRAMID_KING:
             return MUS_VS_FRONTIER_BRAIN;
         default:
-            return MUS_VS_TRAINER;
+            return MUS_ARAUNA_TRAINER_BATTLE; // Um Desafio a Frente
         }
     }
     else
     {
-        return MUS_VS_WILD;
+        return MUS_ARAUNA_WILD_BATTLE; // Instinto Selvagem
     }
 }
 

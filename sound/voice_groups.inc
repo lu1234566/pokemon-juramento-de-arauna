@@ -56,6 +56,7 @@
 .include "sound/voicegroups/cycling.inc"
 .include "sound/voicegroups/poke_mart.inc"
 .include "sound/voicegroups/littleroot.inc"
+.include "sound/voicegroups/arauna_ost.inc"
 .include "sound/voicegroups/mt_chimney.inc"
 .include "sound/voicegroups/encounter_female.inc"
 .include "sound/voicegroups/lilycove.inc"

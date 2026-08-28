@@ -617,6 +617,29 @@ gSongTable::
 	song ph_nurse_held, MUSIC_PLAYER_SE2, 2
 	song ph_nurse_solo, MUSIC_PLAYER_SE2, 2
 
+	@ Arauna original soundtrack (indices 610-630)
+	song mus_arauna_main, MUSIC_PLAYER_BGM, 0
+	song mus_arauna_vila_amanhecer, MUSIC_PLAYER_BGM, 0
+	song mus_arauna_route, MUSIC_PLAYER_BGM, 0
+	song mus_arauna_wild_battle, MUSIC_PLAYER_BGM, 0
+	song mus_arauna_trainer_battle, MUSIC_PLAYER_BGM, 0
+	song mus_arauna_ciro, MUSIC_PLAYER_BGM, 0
+	song mus_arauna_ciro_battle, MUSIC_PLAYER_BGM, 0
+	song mus_arauna_ciro_final, MUSIC_PLAYER_BGM, 0
+	song mus_arauna_horizon, MUSIC_PLAYER_BGM, 0
+	song mus_arauna_horizon_battle, MUSIC_PLAYER_BGM, 0
+	song mus_arauna_gym_battle, MUSIC_PLAYER_BGM, 0
+	song mus_arauna_story_boss, MUSIC_PLAYER_BGM, 0
+	song mus_arauna_legend_encounter, MUSIC_PLAYER_BGM, 0
+	song mus_arauna_legend_battle, MUSIC_PLAYER_BGM, 0
+	song mus_arauna_araua_encounter, MUSIC_PLAYER_BGM, 0
+	song mus_arauna_araua_battle, MUSIC_PLAYER_BGM, 0
+	song mus_arauna_oath_road, MUSIC_PLAYER_BGM, 0
+	song mus_arauna_elite_battle, MUSIC_PLAYER_BGM, 0
+	song mus_arauna_champion_battle, MUSIC_PLAYER_BGM, 0
+	song mus_arauna_credits, MUSIC_PLAYER_BGM, 0
+	song mus_arauna_sapphire_crypt, MUSIC_PLAYER_BGM, 0
+
 	.align 2
 dummy_song_header:
 	.byte 0, 0, 0, 0

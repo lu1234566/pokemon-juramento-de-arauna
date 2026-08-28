@@ -468,6 +468,24 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_TAG_LUGIA                   0x1121
 #define OBJ_EVENT_PAL_TAG_RS_BRENDAN              0x1122
 #define OBJ_EVENT_PAL_TAG_RS_MAY                  0x1123
+// Arauna overworld fakemon dedicated palettes. The species below shared the
+// generic NPC_1..4 palettes in vanilla, which fixed their colours to whatever
+// the surrounding NPCs used; each Arauna creature now carries its own.
+#define OBJ_EVENT_PAL_TAG_CARAMELO                0x1170
+#define OBJ_EVENT_PAL_TAG_CAPIVIM                 0x1171
+#define OBJ_EVENT_PAL_TAG_BOTIM                   0x1172
+#define OBJ_EVENT_PAL_TAG_CAMALEAO                0x1173
+#define OBJ_EVENT_PAL_TAG_TUIUIU                  0x1174
+#define OBJ_EVENT_PAL_TAG_MORPHALIA               0x1175
+#define OBJ_EVENT_PAL_TAG_CURUPIXEL               0x1176
+#define OBJ_EVENT_PAL_TAG_CORPO_SECO              0x1177
+#define OBJ_EVENT_PAL_TAG_JEQUITIBA               0x1178
+#define OBJ_EVENT_PAL_TAG_MUIRAQUITA              0x1179
+#define OBJ_EVENT_PAL_TAG_PREAZINHO               0x117A
+#define OBJ_EVENT_PAL_TAG_BEIJA_FLOR              0x117B
+#define OBJ_EVENT_PAL_TAG_GUARACIANA              0x117C
+#define OBJ_EVENT_PAL_TAG_JACIANA                 0x117D
+#define OBJ_EVENT_PAL_TAG_ARAUA                   0x117E
 #define OBJ_EVENT_PAL_TAG_NONE                    0x11FF
 
 #include "data/object_events/object_event_graphics_info_pointers.h"
@@ -512,6 +530,21 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_BirthIslandStone,      OBJ_EVENT_PAL_TAG_BIRTH_ISLAND_STONE},
     {gObjectEventPal_HoOh,                  OBJ_EVENT_PAL_TAG_HO_OH},
     {gObjectEventPal_Lugia,                 OBJ_EVENT_PAL_TAG_LUGIA},
+    {gObjectEventPal_Caramelo,              OBJ_EVENT_PAL_TAG_CARAMELO},
+    {gObjectEventPal_Capivim,               OBJ_EVENT_PAL_TAG_CAPIVIM},
+    {gObjectEventPal_Botim,                 OBJ_EVENT_PAL_TAG_BOTIM},
+    {gObjectEventPal_Camaleao,              OBJ_EVENT_PAL_TAG_CAMALEAO},
+    {gObjectEventPal_Tuiuiu,                OBJ_EVENT_PAL_TAG_TUIUIU},
+    {gObjectEventPal_Morphalia,             OBJ_EVENT_PAL_TAG_MORPHALIA},
+    {gObjectEventPal_Curupixel,             OBJ_EVENT_PAL_TAG_CURUPIXEL},
+    {gObjectEventPal_CorpoSeco,             OBJ_EVENT_PAL_TAG_CORPO_SECO},
+    {gObjectEventPal_Jequitiba,             OBJ_EVENT_PAL_TAG_JEQUITIBA},
+    {gObjectEventPal_Muiraquita,            OBJ_EVENT_PAL_TAG_MUIRAQUITA},
+    {gObjectEventPal_Preazinho,             OBJ_EVENT_PAL_TAG_PREAZINHO},
+    {gObjectEventPal_BeijaFlor,             OBJ_EVENT_PAL_TAG_BEIJA_FLOR},
+    {gObjectEventPal_Guaraciana,            OBJ_EVENT_PAL_TAG_GUARACIANA},
+    {gObjectEventPal_Jaciana,               OBJ_EVENT_PAL_TAG_JACIANA},
+    {gObjectEventPal_Araua,                 OBJ_EVENT_PAL_TAG_ARAUA},
     {gObjectEventPal_RubySapphireBrendan,   OBJ_EVENT_PAL_TAG_RS_BRENDAN},
     {gObjectEventPal_RubySapphireMay,       OBJ_EVENT_PAL_TAG_RS_MAY},
 #ifdef BUGFIX
