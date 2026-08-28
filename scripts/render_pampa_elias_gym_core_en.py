@@ -88,7 +88,8 @@ TARGETS: dict[str, tuple[str, ...]] = {
     "PetalburgCity_Gym_Text_YouHaveGottenStronger": (
         "ELIAS: You've changed, {PLAYER}.\\p",
         "The BADGES show experience.\\p",
-        "Your POKéMON show something more.$",
+        "Your POKéMON show something\\n",
+        "more.$",
     ),
     "PetalburgCity_Gym_Text_NormanIntro": (
         "ELIAS: I kept something from you.\\p",

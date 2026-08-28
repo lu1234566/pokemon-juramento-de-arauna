@@ -16,7 +16,8 @@ TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         "MAN: Thank you for helping VAL.\\p",
         "He talks about how patient you\\n",
         "were with him.\\p",
-        "That mattered more than you know.$",
+        "That mattered more than you\\n",
+        "know.$",
     )),
     "PetalburgCity_WallysHouse_Text_WonderHowWallyIsDoing": (("VAL nao manda noticias",), (
         "MAN: VAL hasn't sent news for\\n",
@@ -28,8 +29,8 @@ TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
     "PetalburgCity_WallysHouse_Text_PleaseExcuseUs": (("Desculpe trazer voce", "VALE DO SILENCIO"), (
         "MAN: {PLAYER}, sorry to bring you\\n",
         "here so suddenly.\\p",
-        "VAL has changed since leaving for\\n",
-        "VALE DO SILENCIO.\\p",
+        "VAL has changed since\\n",
+        "leaving for VALE DO SILENCIO.\\p",
         "You helped when he was afraid\\n",
         "to travel alone.\\p",
         "As his father, I remember that.\\p",
@@ -49,7 +50,8 @@ TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         "ESTRADA DO JURAMENTO?\\p",
         "He came back more certain,\\n",
         "but still himself.\\p",
-        "Thank you for walking beside him.$",
+        "Thank you for walking beside\\n",
+        "him.$",
     )),
     "PetalburgCity_WallysHouse_Text_WallyWasReallyHappy": (("VAL ficou muito feliz",), (
         "WOMAN: VAL was so happy after\\n",
@@ -60,8 +62,8 @@ TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
     "PetalburgCity_WallysHouse_Text_WallyLeftWithoutTelling": (("VAL saiu sem avisar",), (
         "WOMAN: VAL left in a hurry.\\p",
         "I worry, of course.\\p",
-        "But choosing his own road is part\\n",
-        "of what he needed.$",
+        "But choosing his own road\\n",
+        "is part of what he needed.$",
     )),
 }
 

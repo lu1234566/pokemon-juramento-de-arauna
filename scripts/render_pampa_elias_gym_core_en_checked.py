@@ -6,7 +6,8 @@ import render_pampa_elias_gym_core_en as base
 base.TARGETS["PetalburgCity_Gym_Text_YouHaveGottenStronger"] = (
     "ELIAS: You've changed, {PLAYER}.\\p",
     "The BADGES show experience.\\p",
-    "Your POKéMON show more than that.$",
+    "Your POKéMON show more than\\n",
+    "that.$",
 )
 base.TARGETS["PetalburgCity_Gym_Text_NormanIntro"] = (
     "ELIAS: I kept this from you.\\p",

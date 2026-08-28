@@ -18,7 +18,8 @@ patch(english.base.TARGETS_1F, "SlateportCity_OceanicMuseum_1F_Text_BeachSandDis
 patch(english.base.TARGETS_2F, "SlateportCity_OceanicMuseum_2F_Text_HoennModel", (
     "MODEL OF ARAUNA\\p",
     "A miniature shows cities and\\n",
-    "rivers, ridges and coastal routes.$",
+    "rivers, ridges and coastal\\n",
+    "routes.$",
 ))
 patch(english.base.TARGETS_2F, "SlateportCity_OceanicMuseum_2F_Text_RemindsMeOfAbandonedShip", (
     "VISITOR: That model reminds me\\n",

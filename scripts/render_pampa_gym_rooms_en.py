@@ -38,7 +38,8 @@ TARGETS: dict[str, tuple[str, ...]] = {
         "when commands become uncertain.$",
     ),
     "PetalburgCity_Gym_Text_ParkerDefeat": (
-        "You kept listening to each other.$",
+        "You kept listening to each\\n",
+        "other.$",
     ),
     "PetalburgCity_Gym_Text_ParkerPostBattle": (
         "Next is the POWER ROOM.\\p",
@@ -56,7 +57,8 @@ TARGETS: dict[str, tuple[str, ...]] = {
         "Can you keep your plan?$",
     ),
     "PetalburgCity_Gym_Text_GeorgeDefeat": (
-        "You broke through every recovery.$",
+        "You broke through every\\n",
+        "recovery.$",
     ),
     "PetalburgCity_Gym_Text_GeorgePostBattle": (
         "Next is the CRITICAL ROOM.\\p",

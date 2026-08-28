@@ -9,7 +9,8 @@ base.TARGETS["PetalburgCity_WallysHouse_Text_ThanksForPlayingWithWally"] = (
         "MAN: Thank you for helping VAL.\\p",
         "He talks about how patient you\\n",
         "were with him.\\p",
-        "That mattered more than you think.$",
+        "That mattered more than you\\n",
+        "think.$",
     ),
 )
 base.TARGETS["PetalburgCity_WallysHouse_Text_PleaseExcuseUs"] = (

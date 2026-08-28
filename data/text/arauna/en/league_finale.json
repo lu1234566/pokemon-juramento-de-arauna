@@ -80,7 +80,8 @@
       "VAL: CHAMPION or not, I still\\n",
       "want to measure my pace with\\n",
       "yours.\\p",
-      "Come on, {PLAYER}. No excuses.$"
+      "Come on, {PLAYER}.\\n",
+      "No excuses.$"
     ],
     "VictoryRoad_1F_Text_WallyDefeat": [
       "VAL: Ha! I still have some road\\n",
@@ -88,7 +89,8 @@
     ],
     "VictoryRoad_1F_Text_WallyPostBattle": [
       "VAL: Every loss shows me\\n",
-      "something I could not see before.\\p",
+      "something I could not see\\l",
+      "before.\\p",
       "Next time, I will be closer.$"
     ],
     "VictoryRoad_1F_Text_EdgarIntro": [
@@ -143,8 +145,8 @@
       "here.$"
     ],
     "VictoryRoad_1F_Text_KatelynnIntro": [
-      "If you reached this point, you do\\n",
-      "not need another speech. Go!$"
+      "If you reached this point, you\\n",
+      "do not need another speech. Go!$"
     ],
     "VictoryRoad_1F_Text_KatelynnDefeat": [
       "Hmph. You got through.$"
@@ -323,12 +325,13 @@
   },
   "elite_rosa": {
     "EverGrandeCity_PhoebesRoom_Text_IntroSpeech": [
-      "ROSA: I am the second of Arauna's\\n",
-      "ELITE FOUR.\\p",
+      "ROSA: I am the second of\\n",
+      "Arauna's ELITE FOUR.\\p",
       "Two people can remember the same\\n",
       "moment and tell it differently.\\p",
       "Your task is not to steal either\\n",
-      "voice and call it the only truth.\\p",
+      "voice and call it the only\\l",
+      "truth.\\p",
       "Battle me. Keep the source\\n",
       "clear.$"
     ],
@@ -339,15 +342,16 @@
     "EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech": [
       "ROSA: Attribution is part of\\n",
       "memory.\\p",
-      "Carry a story, but carry the name\\n",
-      "of the person who gave it to you.\\p",
+      "Carry a story, but carry the\\n",
+      "name of the person who gave it\\l",
+      "to you.\\p",
       "CLARA waits in the next room.$"
     ]
   },
   "elite_clara": {
     "EverGrandeCity_GlaciasRoom_Text_IntroSpeech": [
-      "CLARA: I am the third of Arauna's\\n",
-      "ELITE FOUR.\\p",
+      "CLARA: I am the third of\\n",
+      "Arauna's ELITE FOUR.\\p",
       "A document says one thing. A\\n",
       "witness remembers another.\\p",
       "Evidence has limits. So do we.\\p",
@@ -360,9 +364,11 @@
       "That distinction matters.$"
     ],
     "EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech": [
-      "CLARA: Proof is strongest when you\\n",
-      "also state what it cannot prove.\\p",
-      "TIBURCIO is the last voice ahead.$"
+      "CLARA: Proof is strongest when\\n",
+      "you also state what it cannot\\l",
+      "prove.\\p",
+      "TIBURCIO is the last voice\\n",
+      "ahead.$"
     ]
   },
   "elite_tiburcio": {
@@ -408,8 +414,9 @@
       "to remember.$"
     ],
     "EverGrandeCity_ChampionsRoom_Text_MayAdvice": [
-      "CIRO: {PLAYER}! I came to tell\\n",
-      "you one thing before the battle...\\p",
+      "CIRO: {PLAYER}! I came\\n",
+      "to tell you one thing before the\\l",
+      "battle...\\p",
       "Use everything you learned. Do\\n",
       "not fight to prove it to me.$"
     ],
@@ -421,8 +428,9 @@
       "arrived five minutes earlier.$"
     ],
     "EverGrandeCity_ChampionsRoom_Text_BrendanAdvice": [
-      "CIRO: {PLAYER}! I came to tell\\n",
-      "you one thing before the battle...\\p",
+      "CIRO: {PLAYER}! I came\\n",
+      "to tell you one thing before the\\l",
+      "battle...\\p",
       "Use everything you learned. Do\\n",
       "not fight to prove it to me.$"
     ],
@@ -439,7 +447,8 @@
       "your POKéDEX.$"
     ],
     "EverGrandeCity_ChampionsRoom_Text_BirchCongratulations": [
-      "ANAHI: Excellent, {PLAYER}.\\p",
+      "ANAHI: Excellent,\\n",
+      "{PLAYER}.\\p",
       "You went farther than any report\\n",
       "can measure.$"
     ],
@@ -457,13 +466,13 @@
     ],
     "EverGrandeCity_ChampionsRoom_Text_MayCongratulations": [
       "CIRO: I still want to beat you.\\p",
-      "But today... congratulations. You\\n",
-      "earned this.$"
+      "But today... congratulations.\\n",
+      "You earned this.$"
     ],
     "EverGrandeCity_ChampionsRoom_Text_BrendanCongratulations": [
       "CIRO: I still want to beat you.\\p",
-      "But today... congratulations. You\\n",
-      "earned this.$"
+      "But today... congratulations.\\n",
+      "You earned this.$"
     ]
   }
 }

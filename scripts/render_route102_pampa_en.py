@@ -85,7 +85,8 @@ CITY_TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
     "PetalburgCity_Text_GymSign": (("PAMPA DA ESPERA", "ELIAS"), (
         "PAMPA DA ESPERA GYM\\n",
         "LEADER: ELIAS\\p",
-        "Returning doesn't erase the road.$",
+        "Returning doesn't erase\\n",
+        "the road.$",
     )),
     "PetalburgCity_Text_CitySign": (("PAMPA DA ESPERA", "M'BOI"), (
         "PAMPA DA ESPERA\\p",
