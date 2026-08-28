@@ -32,37 +32,24 @@ mais grave sendo **#163 Corurupim, que apontava para si mesmo** e agora aponta
 para #164 Coruja. Os outros cinco (#220, #224, #228, #300, #313) apontavam para
 espécies fora da própria família.
 
-## Por que ainda não foi aplicado
+## Aplicado
 
-Um número da dex de Arauna **não é** um id de espécie do engine. Pelo mapeamento
-oficial, #001 Caramelo mora em `SPECIES_TORCHIC` e #007 Pimpau em
-`SPECIES_TREECKO`. As relações só fazem sentido depois de traduzidas por esse
-mapeamento.
+A dex de Arauna entrou (`tools/arauna/build_species.py`), entao
+`species_names.h` deixou de dizer BULBASAUR e o gerador passou a escrever
+sozinho. `src/data/pokemon/evolution.h` agora tem as 81 relacoes aprovadas:
 
-O ponto é que **`main` ainda carrega a dex vanilla**: `species_names.h` continua
-dizendo BULBASAUR, IVYSAUR, KINGLER. A tabela de espécies de Arauna
-(`species_info/arauna_dex.h`) nunca chegou aqui.
+    [SPECIES_TORCHIC]   = {{EVO_LEVEL, 17, SPECIES_COMBUSKEN}}, // #001 Caramelo -> #002 Caramelao
 
-Aplicar as relações agora escreveria, em constantes do engine, coisas como:
+As 172 relacoes vanilla sairam: 130 evolucoes por pedra, troca e amizade
+deixaram de existir e 39 novas entraram. Isso e o desenho aprovado -- toda
+evolucao de Arauna e por nivel.
 
-    [SPECIES_RATICATE] = {{EVO_LEVEL, 34, SPECIES_SPEAROW}}
-    [SPECIES_FEAROW]   = {{EVO_LEVEL, 18, SPECIES_EKANS}}
-
-Correto para Arauna, sem sentido para a dex que está compilada de fato. Além
-disso, as 81 relações substituiriam as 172 atuais: **130 evoluções vanilla
-seriam removidas** (pedras, Eevee, trocas) e 39 novas adicionadas. O gerador se
-recusa a escrever enquanto detectar a dex vanilla instalada.
-
-## Como aplicar quando a dex de Arauna entrar
+Para regenerar depois de mexer nos CSVs:
 
 ```
-python3 tools/arauna/build_evolutions.py --check    # confere o design e o impacto
-python3 tools/arauna/build_evolutions.py --write    # gera evolution.h
+python3 tools/arauna/build_evolutions.py --check
+python3 tools/arauna/build_evolutions.py --write
 ```
-
-O `--write` passa a funcionar sozinho assim que `species_names.h` deixar de
-conter os nomes vanilla. Existe `--force` para casos excepcionais, mas ele
-contorna exatamente a proteção descrita acima.
 
 ## Observação sobre a aba `Overworld_23`
 

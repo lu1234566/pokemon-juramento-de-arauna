@@ -78,7 +78,9 @@ def arauna_dex_installed() -> bool:
     """True when the engine species table is Arauna's rather than vanilla's."""
     if not NAMES.exists():
         return True  # newer layout; the caller decides
-    return "BULBASAUR" not in NAMES.read_text(encoding="utf-8", errors="replace")
+    # Look at the displayed name, not the slot's constant: the Arauna table
+    # still writes [SPECIES_BULBASAUR], it just calls it Formilim.
+    return '_("BULBASAUR")' not in NAMES.read_text(encoding="utf-8", errors="replace")
 
 
 def render(rel, mapping) -> str:

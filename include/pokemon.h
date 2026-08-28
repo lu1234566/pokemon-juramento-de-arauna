@@ -197,7 +197,7 @@ struct BoxPokemon
 {
     u32 personality;
     u32 otId;
-    u8 nickname[min(10, POKEMON_NAME_LENGTH)];
+    u8 nickname[POKEMON_NAME_LENGTH];
     u8 language;
     u8 isBadEgg:1;
     u8 hasSpecies:1;
@@ -284,7 +284,7 @@ struct BattlePokemon
     /*0x2B*/ u8 friendship;
     /*0x2C*/ u16 maxHP;
     /*0x2E*/ u16 item;
-    /*0x30*/ u8 nickname[VANILLA_POKEMON_NAME_LENGTH + 1];
+    /*0x30*/ u8 nickname[POKEMON_NAME_LENGTH + 1];
     /*0x3B*/ u8 ppBonuses;
     /*0x3C*/ u8 otName[PLAYER_NAME_LENGTH + 1];
     /*0x44*/ u32 experience;

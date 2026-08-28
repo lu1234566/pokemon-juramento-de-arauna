@@ -1,0 +1,47 @@
+arauna_ability,engine_ability,fidelity,note
+Torrente,ABILITY_TORRENT,exact,name and role match
+Chama,ABILITY_BLAZE,exact,name and role match
+Espessura,ABILITY_OVERGROW,exact,grass slot 0 - completes the Torrente/Chama/Espessura starter trio
+Enxame,ABILITY_SWARM,exact,name and role match
+Olho Composto,ABILITY_COMPOUND_EYES,exact,name and role match
+Vista Aguçada,ABILITY_KEEN_EYE,exact,official PT name of Keen Eye
+Intimidação,ABILITY_INTIMIDATE,exact,official PT name of Intimidate
+Encanto,ABILITY_CUTE_CHARM,exact,official PT name of Cute Charm
+Levitação,ABILITY_LEVITATE,exact,official PT name of Levitate
+Estática,ABILITY_STATIC,exact,official PT name of Static
+Coragem,ABILITY_GUTS,exact,official PT name of Guts
+Ritmo,ABILITY_OWN_TEMPO,exact,short form of Ritmo Proprio
+Sincronia,ABILITY_SYNCHRONIZE,exact,official PT name of Synchronize
+Muda,ABILITY_SHED_SKIN,exact,moulting - matches Shed Skin
+Corpo Flamejante,ABILITY_FLAME_BODY,exact,literal translation
+Corpo Fedido,ABILITY_STENCH,exact,literal sense of Stench
+Corpo Rochoso,ABILITY_ROCK_HEAD,exact,rock slot 0 - the only Gen III rock-body ability
+Corpo Metálico,ABILITY_CLEAR_BODY,exact,Metagross line ability - metal body
+Corpo Molhado,ABILITY_WATER_VEIL,close,water slot 1 - the only Gen III water body/veil ability
+Escama Dracônica,ABILITY_MARVEL_SCALE,close,dragon scale - Gen III scale ability
+Nuvem de Areia,ABILITY_SAND_VEIL,close,ground slot 1 sand ability
+Garra Dura,ABILITY_HYPER_CUTTER,close,hard claw - Gen III claw ability
+Poeira,ABILITY_SHIELD_DUST,close,rock slot 1 - Po Escudo
+Ponto Cego,ABILITY_POISON_POINT,close,poison slot 0 - the Ponto X naming family
+Colheita,ABILITY_CHLOROPHYLL,close,grass slot 1 - Harvest is Gen V so Chlorophyll stands in
+Motor Elétrico,ABILITY_VOLT_ABSORB,close,Motor Drive is Gen IV so Volt Absorb stands in
+Vento Veloz,ABILITY_SWIFT_SWIM,approximated,flying slot 1 - derived from Nado Veloz (Swift Swim)
+Placidez,ABILITY_OBLIVIOUS,approximated,normal slot 1 - placid/unbothered
+Faro,ABILITY_PICKUP,approximated,normal slot 0 - scent-driven scavenging
+Cara de Mau,ABILITY_PRESSURE,approximated,dark slot 1 - Intimidate is already taken by Intimidação
+Alma Antiga,ABILITY_INSOMNIA,approximated,ghost slot 1 - the Gen III ghost slot-1 ability
+Véu Mágico,ABILITY_SERENE_GRACE,approximated,fairy slot 1 - no Gen III magic veil exists
+Determinação,ABILITY_VITAL_SPIRIT,approximated,fighting slot 0 - Coragem already holds Guts
+Presságio,ABILITY_TRACE,approximated,psychic slot 1 - foresight/reading the opponent
+Ponto Fraco,ABILITY_STURDY,approximated,steel slot 1 - no Gen III weak-point ability
+Escavador,ABILITY_ARENA_TRAP,approximated,ground slot 0 - digging; Sand Veil is taken by Nuvem de Areia
+Véu Vegetal,ABILITY_NATURAL_CURE,approximated,Leaf Guard is Gen IV
+Travessura,ABILITY_RUN_AWAY,approximated,Prankster is Gen V
+Brincalhão,ABILITY_OWN_TEMPO,approximated,Prankster is Gen V; shares Own Tempo with Ritmo
+Corpo Seco,ABILITY_IMMUNITY,approximated,the dried-corpse folklore body
+Faro Fiel,ABILITY_KEEN_EYE,approximated,Caramelo only; shares Keen Eye with Vista Aguçada
+Alerta,ABILITY_INNER_FOCUS,approximated,alertness/not flinching
+Fura-mão,ABILITY_HUSTLE,approximated,reckless jabbing
+Corredor,ABILITY_RUN_AWAY,approximated,runner
+Fuga,ABILITY_RUN_AWAY,exact,literal translation of Run Away
+Rasgo Rápido,ABILITY_ROUGH_SKIN,approximated,quick tear - contact damage
