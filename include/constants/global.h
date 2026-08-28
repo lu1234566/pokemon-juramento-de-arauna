@@ -92,7 +92,11 @@
 
 // string lengths
 #define ITEM_NAME_LENGTH 14
-#define POKEMON_NAME_LENGTH 10
+// Arauna species names reach 12 characters (Vitoriaregia, Trinca-Ferro...).
+// Only the display/species length grows; every field that lives inside a save
+// keeps VANILLA_POKEMON_NAME_LENGTH so the save layout is byte-identical.
+#define POKEMON_NAME_LENGTH 12
+#define VANILLA_POKEMON_NAME_LENGTH 10
 #define POKEMON_NAME_BUFFER_SIZE max(20, POKEMON_NAME_LENGTH + 1) // Frequently used buffer size. Larger than necessary
 #define PLAYER_NAME_LENGTH 7
 #define MAIL_WORDS_COUNT 9
