@@ -4,7 +4,11 @@ from __future__ import annotations
 import render_porto_sal_daily_life as base
 
 
-base.TARGETS.update({
+# English payloads for blocks the base renderer already knows.
+# The base stores each entry as (source_markers, payloads); only the payloads
+# are translated here, so the marker checks that guard the pre-render source
+# keep working. Assigning bare payload tuples would break that shape.
+_EN_PAYLOADS = {
     "SlateportCity_Text_EnergyGuruSellWhatYouNeed": (
         "SHOPKEEPER: Need help training\\n",
         "your POKéMON? I have supplies.$",
@@ -142,7 +146,10 @@ base.TARGETS.update({
         "REPORTER: I understand...\\p",
         "That was a valuable experience.$",
     ),
-})
+}
+
+for _label, _payloads in _EN_PAYLOADS.items():
+    base.TARGETS[_label] = (base.TARGETS[_label][0], _payloads)
 
 
 def main() -> int:

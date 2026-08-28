@@ -153,7 +153,7 @@ GYM_TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         ("A familiar route can still fail.\\p", "Adapt without erasing it.$"),
     ),
     "FortreeCity_Gym_Text_FlintIntro": (
-        ("WINONA", "GYM LEADER"),
+        ("WINONA", "LEADER,"),
         ("LIDIA taught us to watch first.\\p", "Then decide what a change means.$"),
     ),
     "FortreeCity_Gym_Text_FlintDefeat": (

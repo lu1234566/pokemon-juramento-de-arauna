@@ -63,7 +63,7 @@ REQUIRED_TOKENS = {
     ),
     "hall": (
         "Common_EventScript_BufferTrendyPhrase",
-        "Common_ShowEasyChatScreen",
+        "GetDewfordHallPaintingNameIndex",
         "ITEM_TM_SLUDGE_BOMB",
         "FLAG_RECEIVED_TM_SLUDGE_BOMB",
     ),

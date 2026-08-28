@@ -81,7 +81,7 @@ TARGETS: dict[str, dict[str, tuple[tuple[str, ...], tuple[str, ...]]]] = {
             ),
         ),
         "MtPyre_3F_Text_GabrielleRematchIntro": (
-            ("grown POKéMON",),
+            ("show me your grown",),
             (
                 "You came back.\\p",
                 "What did your POKéMON keep?$",

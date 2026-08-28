@@ -24,6 +24,7 @@ SOURCE_SIGNATURES = (
     "ARQUIVO VIVO nao",
     "meddling kid",
     "taking so long",
+    "to snatch some parts",
     "OTACILIO: Eu vi o que uma",
     "There's no time to lose",
 )

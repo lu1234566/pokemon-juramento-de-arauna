@@ -270,10 +270,10 @@ def validate_rendered(source: str, rendered: str) -> None:
         "FLAG_BADGE05_GET",
         "FLAG_DEFEATED_PETALBURG_GYM",
         "VAR_PETALBURG_GYM_STATE",
-        "ITEM_TM42",
+        "ITEM_TM_FACADE",
         "FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_RIVAL",
         "special InitBirchState",
-        "MAP_PETALBURG_CITY_WALLYS_HOUSE",
+        "MAP_PETALBURG_CITY_GYM",
     )
     for token in preserved:
         if token not in rendered:

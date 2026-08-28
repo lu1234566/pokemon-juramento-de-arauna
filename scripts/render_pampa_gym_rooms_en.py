@@ -187,7 +187,7 @@ TARGETS: dict[str, tuple[str, ...]] = {
 
 SOURCE_MARKERS = (
     "ROOM", "TRAINER", "LEADER", "PETALBURG CITY", "SURF", "door",
-    "advantage", "bond", "critical hit", "restore HP", "soul mates",
+    "advantage", "bond", "critical hit", "restore HP", "restores HP", "soul mates", "DEFENSE",
     "POKéMON", "sign says",
 )
 
