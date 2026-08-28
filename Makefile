@@ -373,10 +373,14 @@ libagbsyscall:
 	@$(MAKE) -C libagbsyscall TOOLCHAIN=$(TOOLCHAIN) MODERN=$(MODERN)
 
 # Elf from object files
-LDFLAGS = -Map ../../$(MAP)
+# The link step runs from inside $(OBJ_DIR), so paths back to the repo root need
+# one ".." per path component. Deriving it keeps a custom BUILD_DIR working:
+# build/modern needs ../.., build/arauna-en/modern needs ../../.. .
+ROOT_REL := $(shell echo '$(OBJ_DIR)' | sed 's|[^/][^/]*|..|g')
+LDFLAGS = -Map $(ROOT_REL)/$(MAP)
 $(ELF): $(LD_SCRIPT) $(LD_SCRIPT_DEPS) $(OBJS) libagbsyscall
-	@cd $(OBJ_DIR) && $(LD) $(LDFLAGS) -T ../../$< --print-memory-usage -o ../../$@ $(OBJS_REL) $(LIB) | cat
-	@echo "cd $(OBJ_DIR) && $(LD) $(LDFLAGS) -T ../../$< --print-memory-usage -o ../../$@ <objs> <libs> | cat"
+	@cd $(OBJ_DIR) && $(LD) $(LDFLAGS) -T $(ROOT_REL)/$< --print-memory-usage -o $(ROOT_REL)/$@ $(OBJS_REL) $(LIB) | cat
+	@echo "cd $(OBJ_DIR) && $(LD) $(LDFLAGS) -T $(ROOT_REL)/$< --print-memory-usage -o $(ROOT_REL)/$@ <objs> <libs> | cat"
 	$(FIX) $@ -t"$(TITLE)" -c$(GAME_CODE) -m$(MAKER_CODE) -r$(REVISION) --silent
 
 # Builds the rom from the elf file
