@@ -952,7 +952,7 @@ Route109_Text_PaulNotEnoughPokemon:
 
 Route109_Text_MelIntro:
 	.string "MEL: We're, like, totally in love.\n"
-	.string "Our romance is heating up all of HOENN!$"
+	.string "Our romance is heating up all of ARAUNA!$"
 
 Route109_Text_MelDefeated:
 	.string "MEL: We lost, and it's my fault!\n"
@@ -1907,7 +1907,7 @@ Route114_Text_ClaudeDefeat:
 
 Route114_Text_ClaudePostBattle:
 	.string "I think I'll try my luck at landing\n"
-	.string "a big one at METEOR FALLS.\p"
+	.string "a big one at RUINAS DA QUEDA.\p"
 	.string "There has to be something in there.\n"
 	.string "I just know it.$"
 
@@ -3189,7 +3189,7 @@ Route121_Text_TammyDefeat:
 	.string "I have lost…$"
 
 Route121_Text_TammyPostBattle:
-	.string "MT. PYRE…\n"
+	.string "MEMORIAL DOS NOMES…\n"
 	.string "There is a mysterious power\l"
 	.string "at work there…$"
 
@@ -3399,7 +3399,7 @@ Route123_Text_CameronRematchDefeat:
 	.string "I feel sad…$"
 
 Route123_Text_CameronPostRematch:
-	.string "I should train at MT. PYRE…\n"
+	.string "I should train at MEMORIAL DOS NOMES…\n"
 	.string "I'll never beat you this way…$"
 
 Route123_Text_JackiIntro:
@@ -3461,7 +3461,7 @@ Route123_Text_YukiNotEnoughMons:
 	.string "don't have two POKéMON.$"
 
 Route123_Text_KindraIntro:
-	.string "MT. PYRE…\n"
+	.string "MEMORIAL DOS NOMES…\n"
 	.string "Where the spirits of POKéMON sleep…\l"
 	.string "Will your POKéMON sleep?$"
 
@@ -3469,7 +3469,7 @@ Route123_Text_KindraDefeat:
 	.string "Overflowing with vitality…$"
 
 Route123_Text_KindraPostBattle:
-	.string "MT. PYRE…\n"
+	.string "MEMORIAL DOS NOMES…\n"
 	.string "Where the spirits of POKéMON sleep…\p"
 	.string "It must overflow with a power that\n"
 	.string "soothes spirits…$"
@@ -3812,7 +3812,7 @@ Route125_Text_TanyaDefeat:
 
 Route125_Text_TanyaPostBattle:
 	.string "Whew…\n"
-	.string "Which way is it to MOSSDEEP CITY?$"
+	.string "Which way is it to MISSOES DO CEU?$"
 
 Route125_Text_SharonIntro:
 	.string "How would you like to take on the\n"
@@ -3934,7 +3934,7 @@ Route126_Text_BarryPostBattle:
 
 Route126_Text_DeanIntro:
 	.string "This towering white mountain of rock\n"
-	.string "is SOOTOPOLIS CITY.$"
+	.string "is AGUAS DE M'BOI.$"
 
 Route126_Text_DeanDefeat:
 	.string "I was done in?$"
@@ -4724,7 +4724,7 @@ Route134_Text_AaronDefeat:
 
 Route134_Text_AaronPostBattle:
 	.string "We will return for more training at\n"
-	.string "METEOR FALLS.\p"
+	.string "RUINAS DA QUEDA.\p"
 	.string "If you'd like, you should go, too.\n"
 	.string "It will definitely toughen you up!$"
 

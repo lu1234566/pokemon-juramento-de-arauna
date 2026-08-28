@@ -198,7 +198,7 @@ Route117_Text_RouteSignVerdanturf:
 
 Route117_Text_RouteSignMauville:
 	.string "ROUTE 117\n"
-	.string "{RIGHT_ARROW} MAUVILLE CITY$"
+	.string "{RIGHT_ARROW} ENCRUZILHADA$"
 
 Route117_Text_DayCareSign:
 	.string "POKéMON DAY CARE\n"

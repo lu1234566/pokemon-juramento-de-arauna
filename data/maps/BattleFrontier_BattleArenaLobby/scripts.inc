@@ -479,7 +479,7 @@ BattleFrontier_BattleArenaLobby_Text_LookingForwardToArrivalSaveGame:
 
 BattleFrontier_BattleArenaLobby_Text_RecordLastMatch:
 	.string "Shall I record your last BATTLE ARENA\n"
-	.string "match on your FRONTIER PASS?$"
+	.string "match on your CIRCUIT PASS?$"
 
 BattleFrontier_BattleArenaLobby_Text_BadIdeaToNotAttack:
 	.string "I lost on the REFEREE's decision…\p"

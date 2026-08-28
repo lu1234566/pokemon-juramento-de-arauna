@@ -996,7 +996,7 @@ Route104_EventScript_Darian::
 
 Route104_Text_BrineyLivesInSeasideCottage:
 	.string "That seaside cottage is where\n"
-	.string "MR. BRINEY lives.\p"
+	.string "THE SAILOR lives.\p"
 	.string "He was once a mighty sailor who never\n"
 	.string "feared the sea, however stormy.$"
 
@@ -1053,15 +1053,15 @@ Route104_Text_FlowerShopSellingSaplings:
 	.string "shopping. Where should I put them?$"
 
 Route104_Text_MrBrineysCottage:
-	.string "MR. BRINEY'S COTTAGE$"
+	.string "SAILOR'S COTTAGE$"
 
 Route104_Text_RouteSignPetalburg:
 	.string "ROUTE 1O4\n"
-	.string "{RIGHT_ARROW} PETALBURG CITY$"
+	.string "{RIGHT_ARROW} PAMPA DA ESPERA$"
 
 Route104_Text_RouteSignRustboro:
 	.string "ROUTE 1O4\n"
-	.string "{UP_ARROW} RUSTBORO CITY$"
+	.string "{UP_ARROW} SERRA DO UIVO$"
 
 Route104_Text_PrettyPetalFlowShop:
 	.string "PRETTY PETAL FLOWER SHOP$"

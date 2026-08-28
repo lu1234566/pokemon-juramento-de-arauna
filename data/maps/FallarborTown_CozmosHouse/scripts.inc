@@ -69,7 +69,7 @@ FallarborTown_CozmosHouse_Text_MeteoriteWillNeverBeMineNow:
 	.string "I never should have let myself be\l"
 	.string "conned into telling LEMBRANTES where\l"
 	.string "you can find METEORITES…\p"
-	.string "That METEORITE from METEOR FALLS…\n"
+	.string "That METEORITE from RUINAS DA QUEDA…\n"
 	.string "It's never going to be mine now…$"
 
 FallarborTown_CozmosHouse_Text_IsThatMeteoriteMayIHaveIt:
@@ -78,7 +78,7 @@ FallarborTown_CozmosHouse_Text_IsThatMeteoriteMayIHaveIt:
 	.string "That item…\p"
 	.string "Could it be?\p"
 	.string "Is it the METEORITE that LEMBRANTES\n"
-	.string "took from METEOR FALLS?\p"
+	.string "took from RUINAS DA QUEDA?\p"
 	.string "Please, may I have it?\p"
 	.string "I'm not asking for it for free.\n"
 	.string "How about in exchange for this TM?$"
@@ -102,7 +102,7 @@ FallarborTown_CozmosHouse_Text_MayIHaveMeteorite:
 	.string "o bastante para saber que nao\nquero viver preso ao que perdi.$"
 
 FallarborTown_CozmosHouse_Text_CozmoWentToMeteorFalls:
-	.string "PROF. COZMO went off to METEOR FALLS\n"
+	.string "PROF. COZMO went off to RUINAS DA QUEDA\n"
 	.string "on ROUTE 114 with some people from\l"
 	.string "LEMBRANTES.$"
 

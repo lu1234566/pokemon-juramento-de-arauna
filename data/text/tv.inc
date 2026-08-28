@@ -658,7 +658,7 @@ gTVTrainerFanClubSpecialText00::
 	.string "TRAINER FAN CLUB\n"
 	.string "{STR_VAR_1} SPECIAL!\p"
 	.string "This is a special presentation for\n"
-	.string "the fans of {STR_VAR_1} all over HOENN!\p"
+	.string "the fans of {STR_VAR_1} all over ARAUNA!\p"
 	.string "Today, we ask the question, “What do\n"
 	.string "people think of {STR_VAR_1}?”\p"
 	.string "We posed the question to {STR_VAR_2}\n"
@@ -1209,17 +1209,17 @@ gTVTodaysRivalTrainerText02::
 
 gTVTodaysRivalTrainerText03::
 	.string "Our rival hasn't obtained a single\n"
-	.string "BATTLE FRONTIER Symbol yet.$"
+	.string "BATTLE CIRCUIT Symbol yet.$"
 
 gTVTodaysRivalTrainerText04::
-	.string "Let's see how many BATTLE FRONTIER\n"
+	.string "Let's see how many BATTLE CIRCUIT\n"
 	.string "Symbols our rival has.\p"
 	.string "Gold Symbols: {STR_VAR_1}!\n"
 	.string "Silver Symbols: {STR_VAR_2}!$"
 
 gTVTodaysRivalTrainerText05::
 	.string "Our rival has collected {STR_VAR_1} Battle\n"
-	.string "Point(s) at the BATTLE FRONTIER.$"
+	.string "Point(s) at the BATTLE CIRCUIT.$"
 
 gTVTodaysRivalTrainerText06::
 	.string "So, how did you measure up in\n"
@@ -1293,7 +1293,7 @@ TrendWatcher_Text_Outro::
 	.string "Old man: {STR_VAR_1} {STR_VAR_2}!$"
 
 gTVHoennTreasureInvestigatorsText00::
-	.string "HOENN TREASURE INVESTIGATORS!\p"
+	.string "ARAUNA TREASURE INVESTIGATORS!\p"
 	.string "Hi, gang!\n"
 	.string "Score any secret items lately?\p"
 	.string "As always, we'll examine eyewitness\n"
@@ -1608,7 +1608,7 @@ gTVPokemonLotteryWinnerFlashReportText00::
 	.string "This has been a live broadcast from\n"
 	.string "the LILYCOVE DEPARTMENT STORE,\l"
 	.string "offering you the greatest selection\l"
-	.string "in all HOENN!$"
+	.string "in all ARAUNA!$"
 
 gTVThePokemonBattleSeminarText00::
 	.string "THE POKéMON BATTLE SEMINAR!\p"
@@ -1883,7 +1883,7 @@ gTVPokemonNewsBattleFrontierText00::
 	.string "Greetings!\n"
 	.string "It's time for POKéMON NEWS.\p"
 	.string "We've got some uplifting news from\n"
-	.string "the BATTLE FRONTIER.$"
+	.string "the BATTLE CIRCUIT.$"
 
 gTVPokemonNewsBattleFrontierText01::
 	.string "The TRAINER {STR_VAR_1} set a new\n"
@@ -2005,7 +2005,7 @@ gTVPokemonNewsBattleFrontierText18::
 	.string "That's the news on POKéMON NEWS!$"
 
 gTVWhatsNo1InHoennTodayText00::
-	.string "WHAT'S NO. 1 IN HOENN TODAY?\n"
+	.string "WHAT'S NO. 1 IN ARAUNA TODAY?\n"
 	.string "Yes, it's that time again!\p"
 	.string "Hello, viewers! Are you giving your\n"
 	.string "best at whatever you do?\p"

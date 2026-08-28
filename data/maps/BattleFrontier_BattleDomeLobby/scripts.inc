@@ -596,7 +596,7 @@ BattleFrontier_BattleDomeLobby_Text_LastWinnerWasTough:
 	.string "on the monitor beside the PC.$"
 
 BattleFrontier_OutsideWest_Text_LongDreamedAboutBattleFrontier:
-	.string "The BATTLE FRONTIER…\n"
+	.string "The BATTLE CIRCUIT…\n"
 	.string "I've long dreamed about a place like it.$"
 
 @ Functionally unused
@@ -643,7 +643,7 @@ BattleFrontier_BattleDomeLobby_Text_AwardTheseBattlePoints:
 BattleFrontier_BattleDomeLobby_Text_RecordLastMatch:
 	.string "Would you like to record your\n"
 	.string "last BATTLE DOME match on your\l"
-	.string "FRONTIER PASS?$"
+	.string "CIRCUIT PASS?$"
 
 BattleFrontier_BattleDomeLobby_Text_RulesAreListed:
 	.string "The Battle Tournament rules\n"
