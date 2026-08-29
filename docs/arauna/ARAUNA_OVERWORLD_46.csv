@@ -1,0 +1,47 @@
+arauna_dex,name,species_constant,slug,wired,obj_event_gfx,reclaimed_from,note
+005,Queribela,SPECIES_MARSHTOMP,queribela,no,,,arte versionada; sem id de object event livre
+009,Petropico,SPECIES_SCEPTILE,petropico,no,,,arte versionada; sem id de object event livre
+022,Muriçoco,SPECIES_WEEDLE,muricoco,no,,,arte versionada; sem id de object event livre
+027,Botogaláu,SPECIES_PIDGEOT,botogalau,no,,,arte versionada; sem id de object event livre
+029,Tatubola,SPECIES_RATICATE,tatubola,no,,,arte versionada; sem id de object event livre
+030,Tatuçu,SPECIES_SPEAROW,tatucu,no,,,arte versionada; sem id de object event livre
+036,Jacarodon,SPECIES_SANDSHREW,jacarodon,no,,,arte versionada; sem id de object event livre
+037,Preguicim,SPECIES_SANDSLASH,preguicim,no,,,arte versionada; sem id de object event livre
+040,Papaguim,SPECIES_NIDOQUEEN,papaguim,no,,,arte versionada; sem id de object event livre
+042,Papagaião,SPECIES_NIDORINO,papagaiao,no,,,arte versionada; sem id de object event livre
+045,Antaraú,SPECIES_CLEFABLE,antarau,no,,,arte versionada; sem id de object event livre
+048,Boiuna,SPECIES_JIGGLYPUFF,boiuna,no,,,arte versionada; sem id de object event livre
+052,Guaracim,SPECIES_ODDISH,guaracim,no,,,arte versionada; sem id de object event livre
+053,Guará,SPECIES_GLOOM,guara,no,,,arte versionada; sem id de object event livre
+054,Guaraflama,SPECIES_VILEPLUME,guaraflama,no,,,arte versionada; sem id de object event livre
+088,Teiuzim,SPECIES_SLOWPOKE,teiuzim,no,,,arte versionada; sem id de object event livre
+107,Xangô,SPECIES_KRABBY,xango,no,,,arte versionada; sem id de object event livre
+108,Iemanjá,SPECIES_KINGLER,iemanja,yes,OBJ_EVENT_GFX_ARAUNA_IEMANJA,OBJ_EVENT_GFX_QUINTY_PLUMP,id 4
+109,Oxum,SPECIES_VOLTORB,oxum,no,,,arte versionada; sem id de object event livre
+110,Ogum,SPECIES_ELECTRODE,ogum,no,,,arte versionada; sem id de object event livre
+111,Cavalim,SPECIES_EXEGGCUTE,cavalim,no,,,arte versionada; sem id de object event livre
+115,Ovelhinha,SPECIES_HITMONLEE,ovelhinha,no,,,arte versionada; sem id de object event livre
+139,Cigarrão,SPECIES_GYARADOS,cigarrao,no,,,arte versionada; sem id de object event livre
+177,Muda,SPECIES_ARIADOS,muda,no,,,arte versionada; sem id de object event livre
+180,Orquidina,SPECIES_LANTURN,orquidina,no,,,arte versionada; sem id de object event livre
+186,Buriti,SPECIES_NATU,buriti,no,,,arte versionada; sem id de object event livre
+231,Peixe-Espada,SPECIES_CORSOLA,peixe_espada,no,,,arte versionada; sem id de object event livre
+234,Loirinha,SPECIES_DELIBIRD,loirinha,no,,,arte versionada; sem id de object event livre
+237,Lobisomem,SPECIES_HOUNDOUR,lobisomem,yes,OBJ_EVENT_GFX_ARAUNA_LOBISOMEM,OBJ_EVENT_GFX_LITTLE_BOY_3,id 136
+242,Anhangá,SPECIES_PORYGON2,anhanga,no,,,arte versionada; sem id de object event livre
+247,Rudá,SPECIES_SMOOCHUM,ruda,no,,,arte versionada; sem id de object event livre
+252,Anhangá-Pitã,SPECIES_RAIKOU,anhanga_pita,no,,,arte versionada; sem id de object event livre
+255,Zumbi,SPECIES_LARVITAR,zumbi,no,,,arte versionada; sem id de object event livre
+256,Iemanjá-Pequena,SPECIES_PUPITAR,iemanja_pequena,no,,,arte versionada; sem id de object event livre
+258,Oxalá,SPECIES_LUGIA,oxala,yes,OBJ_EVENT_GFX_LUGIA,,ja tinha object event; passa a 64x64
+261,Curupira-Ancião,SPECIES_POOCHYENA,curupira_anciao,yes,OBJ_EVENT_GFX_POOCHYENA,,ja tinha object event; passa a 64x64
+265,Preto-Velho,SPECIES_WURMPLE,preto_velho,yes,OBJ_EVENT_GFX_ARAUNA_PRETO_VELHO,"(id 239, nunca usado)",id 239
+283,Terolibra-Rainha,SPECIES_SURSKIT,terolibra_rainha,no,,,arte versionada; sem id de object event livre
+289,Anhangaú,SPECIES_SLAKING,anhangau,no,,,arte versionada; sem id de object event livre
+296,Amazona,SPECIES_MAKUHITA,amazona,no,,,arte versionada; sem id de object event livre
+297,Corcovado-Ancião,SPECIES_HARIYAMA,corcovado_anciao,no,,,arte versionada; sem id de object event livre
+298,Cristo,SPECIES_AZURILL,cristo,yes,OBJ_EVENT_GFX_AZURILL,,ja tinha object event; passa a 64x64
+306,Perereca,SPECIES_AGGRON,perereca,no,,,arte versionada; sem id de object event livre
+310,Ferrugem,SPECIES_MANECTRIC,ferrugem,no,,,arte versionada; sem id de object event livre
+315,Bituca,SPECIES_ROSELIA,bituca,no,,,arte versionada; sem id de object event livre
+369,Sanfoninha,SPECIES_RELICANTH,sanfoninha,no,,,arte versionada; sem id de object event livre

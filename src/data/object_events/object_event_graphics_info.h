@@ -16,6 +16,65 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BrendanNormal = {
     .images = sPicTable_BrendanNormal,
     .affineAnims = gDummySpriteAffineAnimTable,
 };
+// BEGIN Arauna overworld redraws
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AraunaIemanja = {
+    .tileTag = TAG_NONE,
+    .paletteTag = OBJ_EVENT_PAL_TAG_ARAUNA_IEMANJA,
+    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 2048,
+    .width = 64,
+    .height = 64,
+    .paletteSlot = PALSLOT_NPC_SPECIAL,
+    .shadowSize = SHADOW_SIZE_M,
+    .inanimate = FALSE,
+    .disableReflectionPaletteLoad = TRUE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_64x64,
+    .subspriteTables = sOamTables_64x64,
+    .anims = sAnimTable_Standard,
+    .images = sPicTable_AraunaIemanja,
+    .affineAnims = gDummySpriteAffineAnimTable,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AraunaLobisomem = {
+    .tileTag = TAG_NONE,
+    .paletteTag = OBJ_EVENT_PAL_TAG_ARAUNA_LOBISOMEM,
+    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 2048,
+    .width = 64,
+    .height = 64,
+    .paletteSlot = PALSLOT_NPC_SPECIAL,
+    .shadowSize = SHADOW_SIZE_M,
+    .inanimate = FALSE,
+    .disableReflectionPaletteLoad = TRUE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_64x64,
+    .subspriteTables = sOamTables_64x64,
+    .anims = sAnimTable_Standard,
+    .images = sPicTable_AraunaLobisomem,
+    .affineAnims = gDummySpriteAffineAnimTable,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AraunaPretoVelho = {
+    .tileTag = TAG_NONE,
+    .paletteTag = OBJ_EVENT_PAL_TAG_ARAUNA_PRETO_VELHO,
+    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 2048,
+    .width = 64,
+    .height = 64,
+    .paletteSlot = PALSLOT_NPC_SPECIAL,
+    .shadowSize = SHADOW_SIZE_M,
+    .inanimate = FALSE,
+    .disableReflectionPaletteLoad = TRUE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_64x64,
+    .subspriteTables = sOamTables_64x64,
+    .anims = sAnimTable_Standard,
+    .images = sPicTable_AraunaPretoVelho,
+    .affineAnims = gDummySpriteAffineAnimTable,
+};
+// END Arauna overworld redraws
+
 
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BrendanMachBike = {
     .tileTag = TAG_NONE,
@@ -1881,20 +1940,20 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_EnemyZigzagoon = {
 
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Poochyena = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_POOCHYENA,
+    .paletteTag = OBJ_EVENT_PAL_TAG_ARAUNA_CURUPIRA_ANCIAO,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
-    .size = 512,
-    .width = 32,
-    .height = 32,
+    .size = 2048,
+    .width = 64,
+    .height = 64,
     .paletteSlot = PALSLOT_NPC_SPECIAL,
     .shadowSize = SHADOW_SIZE_M,
     .inanimate = FALSE,
-    .disableReflectionPaletteLoad = FALSE,
+    .disableReflectionPaletteLoad = TRUE,
     .tracks = TRACKS_FOOT,
-    .oam = &gObjectEventBaseOam_32x32,
-    .subspriteTables = sOamTables_32x32,
+    .oam = &gObjectEventBaseOam_64x64,
+    .subspriteTables = sOamTables_64x64,
     .anims = sAnimTable_Standard,
-    .images = sPicTable_Poochyena,
+    .images = sPicTable_AraunaCurupiraAnciao,
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
@@ -4123,20 +4182,20 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_TuberMSwimming = {
 
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Azurill = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_BOTIM,
+    .paletteTag = OBJ_EVENT_PAL_TAG_ARAUNA_CRISTO,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
-    .size = 128,
-    .width = 16,
-    .height = 16,
+    .size = 2048,
+    .width = 64,
+    .height = 64,
     .paletteSlot = PALSLOT_NPC_SPECIAL,
     .shadowSize = SHADOW_SIZE_M,
     .inanimate = FALSE,
-    .disableReflectionPaletteLoad = FALSE,
+    .disableReflectionPaletteLoad = TRUE,
     .tracks = TRACKS_FOOT,
-    .oam = &gObjectEventBaseOam_16x16,
-    .subspriteTables = sOamTables_16x16,
+    .oam = &gObjectEventBaseOam_64x64,
+    .subspriteTables = sOamTables_64x64,
     .anims = sAnimTable_Standard,
-    .images = sPicTable_Azurill,
+    .images = sPicTable_AraunaCristo,
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
@@ -4617,20 +4676,20 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RubySapphireMay = 
 
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Lugia = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_LUGIA,
+    .paletteTag = OBJ_EVENT_PAL_TAG_ARAUNA_OXALA,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
-    .size = 512,
-    .width = 32,
-    .height = 32,
+    .size = 2048,
+    .width = 64,
+    .height = 64,
     .paletteSlot = PALSLOT_NPC_SPECIAL,
     .shadowSize = SHADOW_SIZE_M,
     .inanimate = FALSE,
-    .disableReflectionPaletteLoad = FALSE,
+    .disableReflectionPaletteLoad = TRUE,
     .tracks = TRACKS_FOOT,
-    .oam = &gObjectEventBaseOam_32x32,
-    .subspriteTables = sOamTables_32x32,
+    .oam = &gObjectEventBaseOam_64x64,
+    .subspriteTables = sOamTables_64x64,
     .anims = sAnimTable_Standard,
-    .images = sPicTable_Lugia,
+    .images = sPicTable_AraunaOxala,
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 

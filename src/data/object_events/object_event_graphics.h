@@ -382,3 +382,18 @@ const u16 gObjectEventPal_Jaciana[] = INCGFX_U16("graphics/object_events/palette
 const u16 gObjectEventPal_Araua[] = INCGFX_U16("graphics/object_events/palettes/araua.pal", ".gbapal");
 const u32 gObjectEventPic_HoOh[] = INCGFX_U32("graphics/object_events/pics/pokemon/ho_oh.png", ".4bpp", "-mwidth 4 -mheight 4");
 const u16 gObjectEventPal_HoOh[] = INCGFX_U16("graphics/object_events/palettes/ho_oh.pal", ".gbapal");
+// BEGIN Arauna overworld redraws
+const u32 gObjectEventPic_AraunaIemanja[] = INCGFX_U32("graphics/object_events/pics/pokemon/arauna/108_iemanja.png", ".4bpp", "-mwidth 8 -mheight 8");
+const u16 gObjectEventPal_AraunaIemanja[] = INCGFX_U16("graphics/object_events/palettes/arauna_108_iemanja.pal", ".gbapal");
+const u32 gObjectEventPic_AraunaLobisomem[] = INCGFX_U32("graphics/object_events/pics/pokemon/arauna/237_lobisomem.png", ".4bpp", "-mwidth 8 -mheight 8");
+const u16 gObjectEventPal_AraunaLobisomem[] = INCGFX_U16("graphics/object_events/palettes/arauna_237_lobisomem.pal", ".gbapal");
+const u32 gObjectEventPic_AraunaOxala[] = INCGFX_U32("graphics/object_events/pics/pokemon/arauna/258_oxala.png", ".4bpp", "-mwidth 8 -mheight 8");
+const u16 gObjectEventPal_AraunaOxala[] = INCGFX_U16("graphics/object_events/palettes/arauna_258_oxala.pal", ".gbapal");
+const u32 gObjectEventPic_AraunaCurupiraAnciao[] = INCGFX_U32("graphics/object_events/pics/pokemon/arauna/261_curupira_anciao.png", ".4bpp", "-mwidth 8 -mheight 8");
+const u16 gObjectEventPal_AraunaCurupiraAnciao[] = INCGFX_U16("graphics/object_events/palettes/arauna_261_curupira_anciao.pal", ".gbapal");
+const u32 gObjectEventPic_AraunaPretoVelho[] = INCGFX_U32("graphics/object_events/pics/pokemon/arauna/265_preto_velho.png", ".4bpp", "-mwidth 8 -mheight 8");
+const u16 gObjectEventPal_AraunaPretoVelho[] = INCGFX_U16("graphics/object_events/palettes/arauna_265_preto_velho.pal", ".gbapal");
+const u32 gObjectEventPic_AraunaCristo[] = INCGFX_U32("graphics/object_events/pics/pokemon/arauna/298_cristo.png", ".4bpp", "-mwidth 8 -mheight 8");
+const u16 gObjectEventPal_AraunaCristo[] = INCGFX_U16("graphics/object_events/palettes/arauna_298_cristo.pal", ".gbapal");
+// END Arauna overworld redraws
+

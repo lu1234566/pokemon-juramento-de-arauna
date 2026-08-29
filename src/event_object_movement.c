@@ -486,6 +486,15 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_TAG_GUARACIANA              0x117C
 #define OBJ_EVENT_PAL_TAG_JACIANA                 0x117D
 #define OBJ_EVENT_PAL_TAG_ARAUA                   0x117E
+// BEGIN Arauna overworld redraws
+#define OBJ_EVENT_PAL_TAG_ARAUNA_IEMANJA             0x117F
+#define OBJ_EVENT_PAL_TAG_ARAUNA_LOBISOMEM           0x1180
+#define OBJ_EVENT_PAL_TAG_ARAUNA_OXALA               0x1181
+#define OBJ_EVENT_PAL_TAG_ARAUNA_CURUPIRA_ANCIAO     0x1182
+#define OBJ_EVENT_PAL_TAG_ARAUNA_PRETO_VELHO         0x1183
+#define OBJ_EVENT_PAL_TAG_ARAUNA_CRISTO              0x1184
+// END Arauna overworld redraws
+
 #define OBJ_EVENT_PAL_TAG_NONE                    0x11FF
 
 #include "data/object_events/object_event_graphics_info_pointers.h"
@@ -548,6 +557,18 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_RubySapphireBrendan,   OBJ_EVENT_PAL_TAG_RS_BRENDAN},
     {gObjectEventPal_RubySapphireMay,       OBJ_EVENT_PAL_TAG_RS_MAY},
 #ifdef BUGFIX
+        {gObjectEventPal_AraunaIemanja,                           OBJ_EVENT_PAL_TAG_ARAUNA_IEMANJA},
+    {gObjectEventPal_AraunaLobisomem,                         OBJ_EVENT_PAL_TAG_ARAUNA_LOBISOMEM},
+    {gObjectEventPal_AraunaOxala,                             OBJ_EVENT_PAL_TAG_ARAUNA_OXALA},
+    {gObjectEventPal_AraunaCurupiraAnciao,                    OBJ_EVENT_PAL_TAG_ARAUNA_CURUPIRA_ANCIAO},
+    {gObjectEventPal_AraunaPretoVelho,                        OBJ_EVENT_PAL_TAG_ARAUNA_PRETO_VELHO},
+    {gObjectEventPal_AraunaCristo,                            OBJ_EVENT_PAL_TAG_ARAUNA_CRISTO},
+        {gObjectEventPal_AraunaIemanja,                           OBJ_EVENT_PAL_TAG_ARAUNA_IEMANJA},
+    {gObjectEventPal_AraunaLobisomem,                         OBJ_EVENT_PAL_TAG_ARAUNA_LOBISOMEM},
+    {gObjectEventPal_AraunaOxala,                             OBJ_EVENT_PAL_TAG_ARAUNA_OXALA},
+    {gObjectEventPal_AraunaCurupiraAnciao,                    OBJ_EVENT_PAL_TAG_ARAUNA_CURUPIRA_ANCIAO},
+    {gObjectEventPal_AraunaPretoVelho,                        OBJ_EVENT_PAL_TAG_ARAUNA_PRETO_VELHO},
+    {gObjectEventPal_AraunaCristo,                            OBJ_EVENT_PAL_TAG_ARAUNA_CRISTO},
     {NULL,                                  OBJ_EVENT_PAL_TAG_NONE},
 #else
     {}, // BUG: FindObjectEventPaletteIndexByTag looks for OBJ_EVENT_PAL_TAG_NONE and not 0x0.
