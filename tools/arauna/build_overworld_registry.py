@@ -225,10 +225,33 @@ def edit_event_objects(text: str) -> str:
 
 
 def edit_vars(text: str) -> str:
-    block = ("// Arauna overworld dispatcher selectors. These are VAR_OBJ_GFX_ID_C and _D,\n"
-             "// two of the three object-gfx vars vanilla never writes, reused rather than\n"
-             "// added so the save layout does not move. They hold an ARAUNA_OW_* registry\n"
-             "// index, not a graphics id, and only OBJ_EVENT_GFX_ARAUNA_POKEMON_A/_B read them.\n"
+    """Alias the two selectors, and mark them taken where they are defined.
+
+    The alias block alone is not enough. Someone looking for a spare object-gfx
+    var reads the VAR_OBJ_GFX_ID_* list, not a block further down, so C and D say
+    on their own line that they are spoken for.
+    """
+    taken = {
+        "VAR_OBJ_GFX_ID_C": "// RESERVED: Arauna overworld channel A (VAR_ARAUNA_OW_A). Not free.",
+        "VAR_OBJ_GFX_ID_D": "// RESERVED: Arauna overworld channel B (VAR_ARAUNA_OW_B). Not free.",
+    }
+    for name, note in taken.items():
+        line = re.search(rf"^#define {name}\s+0x[0-9A-F]{{4}}$", text, re.M)
+        if line and note not in text:
+            text = text.replace(line.group(0), f"{line.group(0)}  {note}", 1)
+
+    block = ("// Arauna overworld dispatcher selectors.\n"
+             "//\n"
+             "// These are VAR_OBJ_GFX_ID_C and _D, two of the three object-gfx vars vanilla\n"
+             "// never writes, reused rather than added so the save layout does not move.\n"
+             "// They hold an ARAUNA_OW_* registry index, not a graphics id, and only\n"
+             "// OBJ_EVENT_GFX_ARAUNA_POKEMON_A/_B read them.\n"
+             "//\n"
+             "// THEY ARE NOT FREE. Anything else that writes VAR_OBJ_GFX_ID_C or _D will\n"
+             "// change what an Arauna overworld object looks like, wherever one stands.\n"
+             "// VAR_OBJ_GFX_ID_B is the one object-gfx var still unclaimed.\n"
+             "// tools/arauna/check_overworld_registry.py fails the build's static check if\n"
+             "// anything outside the Arauna system starts writing them.\n"
              "#define VAR_ARAUNA_OW_A            VAR_OBJ_GFX_ID_C\n"
              "#define VAR_ARAUNA_OW_B            VAR_OBJ_GFX_ID_D\n")
     return splice(text, block, "#define VAR_OBJ_GFX_ID_F           0x401F")

@@ -1,8 +1,11 @@
-@ Development harness for the Arauna overworld registry.
+@ Development harness for the Arauna overworld registry. KEPT ON PURPOSE.
 @
-@ This map is one of the unused Ruby leftovers: nothing warps into it and it had
-@ no objects, so placing two here proves the mechanism without touching anything
-@ the player can reach.
+@ This map ships. It is an unused Ruby leftover: no warp points at it, its
+@ connections file is empty, and outside this folder the only mention of
+@ MAP_AQUA_HIDEOUT_UNUSED_RUBY_MAP1 is its line in map_groups.h, so a player
+@ cannot reach it. check_overworld_registry.py fails the static check if that
+@ stops being true. See docs/arauna/OVERWORLD_REGISTRY.md for the reasoning
+@ and for how to remove it if you ever want to.
 @
 @ Object 1 names OBJ_EVENT_GFX_ARAUNA_POKEMON_A and object 2 names _B. Neither id
 @ says which creature it is; both read the registry through their channel, so the

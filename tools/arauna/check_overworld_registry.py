@@ -100,14 +100,35 @@ def main() -> int:
     results.append(check("graphicsId is u8 in both structs",
                          fieldmap.count("u8 graphicsId;") == 2))
 
+    # The reservation has to be enforced, not just written down: anything outside
+    # the Arauna system that writes these vars silently repaints whatever Arauna
+    # overworld object happens to be standing on the map.
+    ALLOWED = {
+        "include/constants/vars.h",                                   # the reservation itself
+        "include/constants/arauna_overworld.h",                       # the selector values
+        "src/event_object_movement.c",                                # the dispatcher
+        "data/maps/AquaHideout_UnusedRubyMap1/scripts.inc",           # the harness
+    }
+    trespass = []
+    for name in ("VAR_OBJ_GFX_ID_C", "VAR_OBJ_GFX_ID_D", "VAR_ARAUNA_OW_A", "VAR_ARAUNA_OW_B"):
+        hits = subprocess.run(["grep", "-rl", rf"\b{name}\b", "data", "src", "include"],
+                              cwd=ROOT, capture_output=True, text=True).stdout.split()
+        trespass += [f"{h} ({name})" for h in hits if h not in ALLOWED]
+    results.append(check("only the Arauna system touches the reserved vars",
+                         not trespass, ", ".join(trespass)))
+
     vanilla_writes = set(subprocess.run(
         ["grep", "-rho", "VAR_OBJ_GFX_ID_[0-9A-F]", "data", "src"],
         cwd=ROOT, capture_output=True, text=True).stdout.split())
-    used = set(re.findall(r"#define VAR_ARAUNA_OW_[AB]\s+(VAR_OBJ_GFX_ID_[0-9A-F])",
-                          (ROOT / "include/constants/vars.h").read_text(encoding="utf-8")))
-    # The harness itself writes them through the alias, so compare on the raw name.
-    results.append(check("selector vars are ones vanilla never writes",
-                         not (used & vanilla_writes), f"{sorted(used)}"))
+    reserved = set(re.findall(r"#define VAR_ARAUNA_OW_[AB]\s+(VAR_OBJ_GFX_ID_[0-9A-F])",
+                              (ROOT / "include/constants/vars.h").read_text(encoding="utf-8")))
+    results.append(check("both selectors are marked reserved where they are defined",
+                         all(f"#define {v}" in line and "RESERVED" in line
+                             for v in reserved
+                             for line in (ROOT / "include/constants/vars.h").read_text(
+                                 encoding="utf-8").splitlines()
+                             if line.startswith(f"#define {v} "))))
+    del vanilla_writes
 
     print("\nharness")
     harness = HARNESS.read_text(encoding="utf-8")
@@ -119,6 +140,18 @@ def main() -> int:
               "ARAUNA_OW_CURUPIRA_ANCIAO", "ARAUNA_OW_ANHANGAU"]
     missing = [p for p in proven if p not in scripts]
     results.append(check("the five named creatures are exercised", not missing, str(missing)))
+
+    # The harness is kept in the shipped build because it costs nothing a player
+    # can reach. That is only true while it stays unreachable, so check it.
+    elsewhere = [h for h in subprocess.run(
+        ["grep", "-rl", "MAP_AQUA_HIDEOUT_UNUSED_RUBY_MAP1", "data", "src"],
+        cwd=ROOT, capture_output=True, text=True).stdout.split()
+        if not h.startswith("data/maps/AquaHideout_UnusedRubyMap1/")]
+    connections = (ROOT / "data/maps/AquaHideout_UnusedRubyMap1/connections.inc").read_text(
+        encoding="utf-8").strip()
+    results.append(check("the harness map is still unreachable",
+                         not elsewhere and not connections,
+                         ", ".join(elsewhere) or ("has connections" if connections else "")))
 
     print(f"\n{sum(results)}/{len(results)} checks passed")
     return 0 if all(results) else 1

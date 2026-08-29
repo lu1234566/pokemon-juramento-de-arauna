@@ -41,15 +41,23 @@
 #define VAR_OBJ_GFX_ID_9           0x4019
 #define VAR_OBJ_GFX_ID_A           0x401A
 #define VAR_OBJ_GFX_ID_B           0x401B
-#define VAR_OBJ_GFX_ID_C           0x401C
-#define VAR_OBJ_GFX_ID_D           0x401D
+#define VAR_OBJ_GFX_ID_C           0x401C  // RESERVED: Arauna overworld channel A (VAR_ARAUNA_OW_A). Not free.
+#define VAR_OBJ_GFX_ID_D           0x401D  // RESERVED: Arauna overworld channel B (VAR_ARAUNA_OW_B). Not free.
 #define VAR_OBJ_GFX_ID_E           0x401E
 #define VAR_OBJ_GFX_ID_F           0x401F
 // BEGIN Arauna overworld redraws
-// Arauna overworld dispatcher selectors. These are VAR_OBJ_GFX_ID_C and _D,
-// two of the three object-gfx vars vanilla never writes, reused rather than
-// added so the save layout does not move. They hold an ARAUNA_OW_* registry
-// index, not a graphics id, and only OBJ_EVENT_GFX_ARAUNA_POKEMON_A/_B read them.
+// Arauna overworld dispatcher selectors.
+//
+// These are VAR_OBJ_GFX_ID_C and _D, two of the three object-gfx vars vanilla
+// never writes, reused rather than added so the save layout does not move.
+// They hold an ARAUNA_OW_* registry index, not a graphics id, and only
+// OBJ_EVENT_GFX_ARAUNA_POKEMON_A/_B read them.
+//
+// THEY ARE NOT FREE. Anything else that writes VAR_OBJ_GFX_ID_C or _D will
+// change what an Arauna overworld object looks like, wherever one stands.
+// VAR_OBJ_GFX_ID_B is the one object-gfx var still unclaimed.
+// tools/arauna/check_overworld_registry.py fails the build's static check if
+// anything outside the Arauna system starts writing them.
 #define VAR_ARAUNA_OW_A            VAR_OBJ_GFX_ID_C
 #define VAR_ARAUNA_OW_B            VAR_OBJ_GFX_ID_D
 // END Arauna overworld redraws

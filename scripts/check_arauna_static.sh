@@ -25,4 +25,8 @@ python3 scripts/check_weather_institute_1f_en.py
 python3 scripts/check_weather_institute_2f_en.py
 bash scripts/check_no_proprietary_files.sh
 
+# Guards the Arauna overworld registry: all 46 present, the save layout
+# untouched, VAR_OBJ_GFX_ID_C and _D still reserved, harness still unreachable.
+python3 tools/arauna/check_overworld_registry.py
+
 echo "Arauna static readiness: PASS (official rendered composition validated; ARM compile intentionally skipped)."
