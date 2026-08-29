@@ -247,16 +247,13 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnusedMauvi
 
 
 // BEGIN Arauna overworld redraws
-extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AraunaIemanja;
-extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AraunaLobisomem;
-extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AraunaPretoVelho;
 // END Arauna overworld redraws
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
     [OBJ_EVENT_GFX_BRENDAN_NORMAL] =           &gObjectEventGraphicsInfo_BrendanNormal,
     [OBJ_EVENT_GFX_BRENDAN_MACH_BIKE] =        &gObjectEventGraphicsInfo_BrendanMachBike,
     [OBJ_EVENT_GFX_BRENDAN_SURFING] =          &gObjectEventGraphicsInfo_BrendanSurfing,
     [OBJ_EVENT_GFX_BRENDAN_FIELD_MOVE] =       &gObjectEventGraphicsInfo_BrendanFieldMove,
-    [OBJ_EVENT_GFX_ARAUNA_IEMANJA] = &gObjectEventGraphicsInfo_AraunaIemanja,
+    [OBJ_EVENT_GFX_ARAUNA_POKEMON_A] = &gObjectEventGraphicsInfo_NinjaBoy,
     [OBJ_EVENT_GFX_NINJA_BOY] =                &gObjectEventGraphicsInfo_NinjaBoy,
     [OBJ_EVENT_GFX_TWIN] =                     &gObjectEventGraphicsInfo_Twin,
     [OBJ_EVENT_GFX_BOY_1] =                    &gObjectEventGraphicsInfo_Boy1,
@@ -388,7 +385,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_WALLACE] =                  &gObjectEventGraphicsInfo_Wallace,
     [OBJ_EVENT_GFX_STEVEN] =                   &gObjectEventGraphicsInfo_Steven,
     [OBJ_EVENT_GFX_WALLY] =                    &gObjectEventGraphicsInfo_Wally,
-    [OBJ_EVENT_GFX_ARAUNA_LOBISOMEM] = &gObjectEventGraphicsInfo_AraunaLobisomem,
+    [OBJ_EVENT_GFX_ARAUNA_POKEMON_B] = &gObjectEventGraphicsInfo_NinjaBoy,
     [OBJ_EVENT_GFX_BRENDAN_FISHING] =          &gObjectEventGraphicsInfo_BrendanFishing,
     [OBJ_EVENT_GFX_MAY_FISHING] =              &gObjectEventGraphicsInfo_MayFishing,
     [OBJ_EVENT_GFX_HOT_SPRINGS_OLD_WOMAN] =    &gObjectEventGraphicsInfo_HotSpringsOldWoman,
@@ -501,6 +498,4 @@ const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[
     [MAUVILLE_MAN_GIDDY]       = &gObjectEventGraphicsInfo_Giddy,
     [MAUVILLE_MAN_UNUSED1]     = &gObjectEventGraphicsInfo_UnusedMauvilleOldMan1,
     [MAUVILLE_MAN_UNUSED2]     = &gObjectEventGraphicsInfo_UnusedMauvilleOldMan2,
-    [OBJ_EVENT_GFX_ARAUNA_PRETO_VELHO] = &gObjectEventGraphicsInfo_AraunaPretoVelho,
-    [OBJ_EVENT_GFX_ARAUNA_PRETO_VELHO] = &gObjectEventGraphicsInfo_AraunaPretoVelho,
 };

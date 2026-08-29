@@ -45,6 +45,15 @@
 #define VAR_OBJ_GFX_ID_D           0x401D
 #define VAR_OBJ_GFX_ID_E           0x401E
 #define VAR_OBJ_GFX_ID_F           0x401F
+// BEGIN Arauna overworld redraws
+// Arauna overworld dispatcher selectors. These are VAR_OBJ_GFX_ID_C and _D,
+// two of the three object-gfx vars vanilla never writes, reused rather than
+// added so the save layout does not move. They hold an ARAUNA_OW_* registry
+// index, not a graphics id, and only OBJ_EVENT_GFX_ARAUNA_POKEMON_A/_B read them.
+#define VAR_ARAUNA_OW_A            VAR_OBJ_GFX_ID_C
+#define VAR_ARAUNA_OW_B            VAR_OBJ_GFX_ID_D
+// END Arauna overworld redraws
+
 
 // general purpose vars
 #define VAR_RECYCLE_GOODS                                0x4020

@@ -325,9 +325,8 @@ def main() -> int:
         return 1
     print(f"assets OK: {len(rows)} species, {len(rows) * 8} rotation frames, "
           f"all 64x64 indexed, index 0 transparent, indices <= 15, no mirrored pair")
-    print(f"wiring {len(wired)} of {len(rows)}: "
-          f"{len(EXISTING)} existing object events plus "
-          f"{len(wired) - len(EXISTING)} reclaimed graphics ids")
+    print(f"all {len(rows)} get a sheet, a palette and a palette tag; "
+          f"{len(EXISTING)} of them also keep a dedicated object event id")
 
     if not args.write:
         return 0
@@ -343,19 +342,16 @@ def main() -> int:
             shutil.copyfile(origin / part / f"{name}.png", folder / f"{name}.png")
         shutil.copyfile(origin / "normal.pal", folder / "normal.pal")
 
-    for row in wired:
+    for row in rows:
         dex, slug = row["arauna_dex"], row["slug"]
         write_sheet(PICS / f"{dex}_{slug}.png", frames_by_dex[dex])
         write_palette(PALETTES / f"arauna_{dex}_{slug}.pal", frames_by_dex[dex]["front"])
 
-    CONSTANTS.write_text(edit_constants(wired), encoding="utf-8")
-    GRAPHICS.write_text(edit_graphics(wired), encoding="utf-8")
-    PIC_TABLES.write_text(edit_pic_tables(wired), encoding="utf-8")
-    INFO.write_text(edit_info(wired), encoding="utf-8")
-    POINTERS.write_text(edit_pointers(wired), encoding="utf-8")
-    MOVEMENT.write_text(edit_movement(wired), encoding="utf-8")
-    print(f"copied {len(rows)} asset sets, wrote {len(wired)} sheets and palettes, "
-          f"and edited six engine tables")
+    legacy = [r for r in rows if r["obj_event_gfx"] in EXISTING]
+    INFO.write_text(edit_info(legacy), encoding="utf-8")
+    MOVEMENT.write_text(edit_movement(rows), encoding="utf-8")
+    print(f"copied {len(rows)} asset sets, wrote {len(rows)} sheets and palettes and "
+          f"{len(rows)} palette tags; {len(legacy)} legacy object events repointed")
     return 0
 
 

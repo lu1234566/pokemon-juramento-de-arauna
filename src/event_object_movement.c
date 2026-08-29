@@ -24,6 +24,7 @@
 #include "util.h"
 #include "constants/event_object_movement.h"
 #include "constants/event_objects.h"
+#include "constants/arauna_overworld.h"
 #include "constants/field_effects.h"
 #include "constants/items.h"
 #include "constants/mauville_old_man.h"
@@ -487,12 +488,52 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_TAG_JACIANA                 0x117D
 #define OBJ_EVENT_PAL_TAG_ARAUA                   0x117E
 // BEGIN Arauna overworld redraws
-#define OBJ_EVENT_PAL_TAG_ARAUNA_IEMANJA             0x117F
-#define OBJ_EVENT_PAL_TAG_ARAUNA_LOBISOMEM           0x1180
-#define OBJ_EVENT_PAL_TAG_ARAUNA_OXALA               0x1181
-#define OBJ_EVENT_PAL_TAG_ARAUNA_CURUPIRA_ANCIAO     0x1182
-#define OBJ_EVENT_PAL_TAG_ARAUNA_PRETO_VELHO         0x1183
-#define OBJ_EVENT_PAL_TAG_ARAUNA_CRISTO              0x1184
+#define OBJ_EVENT_PAL_TAG_ARAUNA_QUERIBELA           0x117F
+#define OBJ_EVENT_PAL_TAG_ARAUNA_PETROPICO           0x1180
+#define OBJ_EVENT_PAL_TAG_ARAUNA_MURICOCO            0x1181
+#define OBJ_EVENT_PAL_TAG_ARAUNA_BOTOGALAU           0x1182
+#define OBJ_EVENT_PAL_TAG_ARAUNA_TATUBOLA            0x1183
+#define OBJ_EVENT_PAL_TAG_ARAUNA_TATUCU              0x1184
+#define OBJ_EVENT_PAL_TAG_ARAUNA_JACARODON           0x1185
+#define OBJ_EVENT_PAL_TAG_ARAUNA_PREGUICIM           0x1186
+#define OBJ_EVENT_PAL_TAG_ARAUNA_PAPAGUIM            0x1187
+#define OBJ_EVENT_PAL_TAG_ARAUNA_PAPAGAIAO           0x1188
+#define OBJ_EVENT_PAL_TAG_ARAUNA_ANTARAU             0x1189
+#define OBJ_EVENT_PAL_TAG_ARAUNA_BOIUNA              0x118A
+#define OBJ_EVENT_PAL_TAG_ARAUNA_GUARACIM            0x118B
+#define OBJ_EVENT_PAL_TAG_ARAUNA_GUARA               0x118C
+#define OBJ_EVENT_PAL_TAG_ARAUNA_GUARAFLAMA          0x118D
+#define OBJ_EVENT_PAL_TAG_ARAUNA_TEIUZIM             0x118E
+#define OBJ_EVENT_PAL_TAG_ARAUNA_XANGO               0x118F
+#define OBJ_EVENT_PAL_TAG_ARAUNA_IEMANJA             0x1190
+#define OBJ_EVENT_PAL_TAG_ARAUNA_OXUM                0x1191
+#define OBJ_EVENT_PAL_TAG_ARAUNA_OGUM                0x1192
+#define OBJ_EVENT_PAL_TAG_ARAUNA_CAVALIM             0x1193
+#define OBJ_EVENT_PAL_TAG_ARAUNA_OVELHINHA           0x1194
+#define OBJ_EVENT_PAL_TAG_ARAUNA_CIGARRAO            0x1195
+#define OBJ_EVENT_PAL_TAG_ARAUNA_MUDA                0x1196
+#define OBJ_EVENT_PAL_TAG_ARAUNA_ORQUIDINA           0x1197
+#define OBJ_EVENT_PAL_TAG_ARAUNA_BURITI              0x1198
+#define OBJ_EVENT_PAL_TAG_ARAUNA_PEIXE_ESPADA        0x1199
+#define OBJ_EVENT_PAL_TAG_ARAUNA_LOIRINHA            0x119A
+#define OBJ_EVENT_PAL_TAG_ARAUNA_LOBISOMEM           0x119B
+#define OBJ_EVENT_PAL_TAG_ARAUNA_ANHANGA             0x119C
+#define OBJ_EVENT_PAL_TAG_ARAUNA_RUDA                0x119D
+#define OBJ_EVENT_PAL_TAG_ARAUNA_ANHANGA_PITA        0x119E
+#define OBJ_EVENT_PAL_TAG_ARAUNA_ZUMBI               0x119F
+#define OBJ_EVENT_PAL_TAG_ARAUNA_IEMANJA_PEQUENA     0x11A0
+#define OBJ_EVENT_PAL_TAG_ARAUNA_OXALA               0x11A1
+#define OBJ_EVENT_PAL_TAG_ARAUNA_CURUPIRA_ANCIAO     0x11A2
+#define OBJ_EVENT_PAL_TAG_ARAUNA_PRETO_VELHO         0x11A3
+#define OBJ_EVENT_PAL_TAG_ARAUNA_TEROLIBRA_RAINHA    0x11A4
+#define OBJ_EVENT_PAL_TAG_ARAUNA_ANHANGAU            0x11A5
+#define OBJ_EVENT_PAL_TAG_ARAUNA_AMAZONA             0x11A6
+#define OBJ_EVENT_PAL_TAG_ARAUNA_CORCOVADO_ANCIAO    0x11A7
+#define OBJ_EVENT_PAL_TAG_ARAUNA_CRISTO              0x11A8
+#define OBJ_EVENT_PAL_TAG_ARAUNA_PERERECA            0x11A9
+#define OBJ_EVENT_PAL_TAG_ARAUNA_FERRUGEM            0x11AA
+#define OBJ_EVENT_PAL_TAG_ARAUNA_BITUCA              0x11AB
+#define OBJ_EVENT_PAL_TAG_ARAUNA_SANFONINHA          0x11AC
 // END Arauna overworld redraws
 
 #define OBJ_EVENT_PAL_TAG_NONE                    0x11FF
@@ -504,6 +545,7 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #include "data/object_events/base_oam.h"
 #include "data/object_events/object_event_subsprites.h"
 #include "data/object_events/object_event_graphics_info.h"
+#include "data/object_events/arauna_overworld.h"
 
 static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_Npc1,                  OBJ_EVENT_PAL_TAG_NPC_1},
@@ -569,6 +611,52 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_AraunaCurupiraAnciao,                    OBJ_EVENT_PAL_TAG_ARAUNA_CURUPIRA_ANCIAO},
     {gObjectEventPal_AraunaPretoVelho,                        OBJ_EVENT_PAL_TAG_ARAUNA_PRETO_VELHO},
     {gObjectEventPal_AraunaCristo,                            OBJ_EVENT_PAL_TAG_ARAUNA_CRISTO},
+        {gObjectEventPal_AraunaQueribela,                         OBJ_EVENT_PAL_TAG_ARAUNA_QUERIBELA},
+    {gObjectEventPal_AraunaPetropico,                         OBJ_EVENT_PAL_TAG_ARAUNA_PETROPICO},
+    {gObjectEventPal_AraunaMuricoco,                          OBJ_EVENT_PAL_TAG_ARAUNA_MURICOCO},
+    {gObjectEventPal_AraunaBotogalau,                         OBJ_EVENT_PAL_TAG_ARAUNA_BOTOGALAU},
+    {gObjectEventPal_AraunaTatubola,                          OBJ_EVENT_PAL_TAG_ARAUNA_TATUBOLA},
+    {gObjectEventPal_AraunaTatucu,                            OBJ_EVENT_PAL_TAG_ARAUNA_TATUCU},
+    {gObjectEventPal_AraunaJacarodon,                         OBJ_EVENT_PAL_TAG_ARAUNA_JACARODON},
+    {gObjectEventPal_AraunaPreguicim,                         OBJ_EVENT_PAL_TAG_ARAUNA_PREGUICIM},
+    {gObjectEventPal_AraunaPapaguim,                          OBJ_EVENT_PAL_TAG_ARAUNA_PAPAGUIM},
+    {gObjectEventPal_AraunaPapagaiao,                         OBJ_EVENT_PAL_TAG_ARAUNA_PAPAGAIAO},
+    {gObjectEventPal_AraunaAntarau,                           OBJ_EVENT_PAL_TAG_ARAUNA_ANTARAU},
+    {gObjectEventPal_AraunaBoiuna,                            OBJ_EVENT_PAL_TAG_ARAUNA_BOIUNA},
+    {gObjectEventPal_AraunaGuaracim,                          OBJ_EVENT_PAL_TAG_ARAUNA_GUARACIM},
+    {gObjectEventPal_AraunaGuara,                             OBJ_EVENT_PAL_TAG_ARAUNA_GUARA},
+    {gObjectEventPal_AraunaGuaraflama,                        OBJ_EVENT_PAL_TAG_ARAUNA_GUARAFLAMA},
+    {gObjectEventPal_AraunaTeiuzim,                           OBJ_EVENT_PAL_TAG_ARAUNA_TEIUZIM},
+    {gObjectEventPal_AraunaXango,                             OBJ_EVENT_PAL_TAG_ARAUNA_XANGO},
+    {gObjectEventPal_AraunaIemanja,                           OBJ_EVENT_PAL_TAG_ARAUNA_IEMANJA},
+    {gObjectEventPal_AraunaOxum,                              OBJ_EVENT_PAL_TAG_ARAUNA_OXUM},
+    {gObjectEventPal_AraunaOgum,                              OBJ_EVENT_PAL_TAG_ARAUNA_OGUM},
+    {gObjectEventPal_AraunaCavalim,                           OBJ_EVENT_PAL_TAG_ARAUNA_CAVALIM},
+    {gObjectEventPal_AraunaOvelhinha,                         OBJ_EVENT_PAL_TAG_ARAUNA_OVELHINHA},
+    {gObjectEventPal_AraunaCigarrao,                          OBJ_EVENT_PAL_TAG_ARAUNA_CIGARRAO},
+    {gObjectEventPal_AraunaMuda,                              OBJ_EVENT_PAL_TAG_ARAUNA_MUDA},
+    {gObjectEventPal_AraunaOrquidina,                         OBJ_EVENT_PAL_TAG_ARAUNA_ORQUIDINA},
+    {gObjectEventPal_AraunaBuriti,                            OBJ_EVENT_PAL_TAG_ARAUNA_BURITI},
+    {gObjectEventPal_AraunaPeixeEspada,                       OBJ_EVENT_PAL_TAG_ARAUNA_PEIXE_ESPADA},
+    {gObjectEventPal_AraunaLoirinha,                          OBJ_EVENT_PAL_TAG_ARAUNA_LOIRINHA},
+    {gObjectEventPal_AraunaLobisomem,                         OBJ_EVENT_PAL_TAG_ARAUNA_LOBISOMEM},
+    {gObjectEventPal_AraunaAnhanga,                           OBJ_EVENT_PAL_TAG_ARAUNA_ANHANGA},
+    {gObjectEventPal_AraunaRuda,                              OBJ_EVENT_PAL_TAG_ARAUNA_RUDA},
+    {gObjectEventPal_AraunaAnhangaPita,                       OBJ_EVENT_PAL_TAG_ARAUNA_ANHANGA_PITA},
+    {gObjectEventPal_AraunaZumbi,                             OBJ_EVENT_PAL_TAG_ARAUNA_ZUMBI},
+    {gObjectEventPal_AraunaIemanjaPequena,                    OBJ_EVENT_PAL_TAG_ARAUNA_IEMANJA_PEQUENA},
+    {gObjectEventPal_AraunaOxala,                             OBJ_EVENT_PAL_TAG_ARAUNA_OXALA},
+    {gObjectEventPal_AraunaCurupiraAnciao,                    OBJ_EVENT_PAL_TAG_ARAUNA_CURUPIRA_ANCIAO},
+    {gObjectEventPal_AraunaPretoVelho,                        OBJ_EVENT_PAL_TAG_ARAUNA_PRETO_VELHO},
+    {gObjectEventPal_AraunaTerolibraRainha,                   OBJ_EVENT_PAL_TAG_ARAUNA_TEROLIBRA_RAINHA},
+    {gObjectEventPal_AraunaAnhangau,                          OBJ_EVENT_PAL_TAG_ARAUNA_ANHANGAU},
+    {gObjectEventPal_AraunaAmazona,                           OBJ_EVENT_PAL_TAG_ARAUNA_AMAZONA},
+    {gObjectEventPal_AraunaCorcovadoAnciao,                   OBJ_EVENT_PAL_TAG_ARAUNA_CORCOVADO_ANCIAO},
+    {gObjectEventPal_AraunaCristo,                            OBJ_EVENT_PAL_TAG_ARAUNA_CRISTO},
+    {gObjectEventPal_AraunaPerereca,                          OBJ_EVENT_PAL_TAG_ARAUNA_PERERECA},
+    {gObjectEventPal_AraunaFerrugem,                          OBJ_EVENT_PAL_TAG_ARAUNA_FERRUGEM},
+    {gObjectEventPal_AraunaBituca,                            OBJ_EVENT_PAL_TAG_ARAUNA_BITUCA},
+    {gObjectEventPal_AraunaSanfoninha,                        OBJ_EVENT_PAL_TAG_ARAUNA_SANFONINHA},
     {NULL,                                  OBJ_EVENT_PAL_TAG_NONE},
 #else
     {}, // BUG: FindObjectEventPaletteIndexByTag looks for OBJ_EVENT_PAL_TAG_NONE and not 0x0.
@@ -1965,6 +2053,17 @@ static void SetBerryTreeGraphics(struct ObjectEvent *objectEvent, struct Sprite 
     }
 }
 
+// Clamp the selector so a stale or unset var can never index past the registry.
+static u16 AraunaOverworldSelection(u16 var)
+{
+    u16 selection = VarGet(var);
+
+    if (selection >= ARAUNA_OW_COUNT)
+        return ARAUNA_OW_NONE;
+
+    return selection;
+}
+
 const struct ObjectEventGraphicsInfo *GetObjectEventGraphicsInfo(u8 graphicsId)
 {
     u8 bard;
@@ -1977,6 +2076,15 @@ const struct ObjectEventGraphicsInfo *GetObjectEventGraphicsInfo(u8 graphicsId)
         bard = GetCurrentMauvilleOldMan();
         return gMauvilleOldManGraphicsInfoPointers[bard];
     }
+
+    // Same shape as the Bard above: the id names a dispatcher, not a creature, and
+    // the creature comes from a second table indexed by state held outside the
+    // object. That is what keeps all 46 reachable from two one-byte ids.
+    if (graphicsId == OBJ_EVENT_GFX_ARAUNA_POKEMON_A)
+        return gAraunaOverworldGraphicsInfo[ARAUNA_OW_CHANNEL_A][AraunaOverworldSelection(VAR_ARAUNA_OW_A)];
+
+    if (graphicsId == OBJ_EVENT_GFX_ARAUNA_POKEMON_B)
+        return gAraunaOverworldGraphicsInfo[ARAUNA_OW_CHANNEL_B][AraunaOverworldSelection(VAR_ARAUNA_OW_B)];
 
     if (graphicsId >= NUM_OBJ_EVENT_GFX)
         graphicsId = OBJ_EVENT_GFX_NINJA_BOY;
@@ -9032,4 +9140,34 @@ u8 MovementAction_FlyDown_Step1(struct ObjectEvent *objectEvent, struct Sprite *
 u8 MovementAction_Fly_Finish(struct ObjectEvent *objectEvent, struct Sprite *sprite)
 {
     return TRUE;
+}
+
+// Script API: point one dispatcher channel at a creature and refresh the object
+// that is showing it, so a map can change which Arauna Pokemon stands there
+// without a reload.
+//
+//     setvar VAR_0x8004, <localId>
+//     setvar VAR_0x8005, ARAUNA_OW_CHANNEL_A
+//     setvar VAR_0x8006, ARAUNA_OW_BOIUNA
+//     special SetAraunaPokemonOverworld
+void SetAraunaPokemonOverworld(void)
+{
+    u8 localId = gSpecialVar_0x8004;
+    u16 channel = gSpecialVar_0x8005;
+    u16 selection = gSpecialVar_0x8006;
+    u8 objectEventId;
+
+    if (channel >= ARAUNA_OW_CHANNELS || selection >= ARAUNA_OW_COUNT)
+        return;
+
+    VarSet(channel == ARAUNA_OW_CHANNEL_A ? VAR_ARAUNA_OW_A : VAR_ARAUNA_OW_B, selection);
+
+    // Re-applying the dispatcher id makes the object re-read the registry.
+    if (!TryGetObjectEventIdByLocalIdAndMap(localId, gSaveBlock1Ptr->location.mapNum,
+                                            gSaveBlock1Ptr->location.mapGroup, &objectEventId))
+    {
+        ObjectEventSetGraphicsId(&gObjectEvents[objectEventId],
+                                 channel == ARAUNA_OW_CHANNEL_A ? OBJ_EVENT_GFX_ARAUNA_POKEMON_A
+                                                                : OBJ_EVENT_GFX_ARAUNA_POKEMON_B);
+    }
 }

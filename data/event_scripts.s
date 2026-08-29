@@ -20,6 +20,7 @@
 #include "constants/daycare.h"
 #include "constants/decorations.h"
 #include "constants/easy_chat.h"
+#include "constants/arauna_overworld.h"
 #include "constants/event_objects.h"
 #include "constants/event_object_movement.h"
 #include "constants/field_effects.h"
