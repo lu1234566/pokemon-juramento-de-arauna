@@ -62,6 +62,7 @@ MAPPING = ROOT / "docs/arauna/ARAUNA_DEX_ENGINE_MAPPING.csv"
 PLACEMENT = ROOT / "docs/arauna/ARAUNA_PLACEMENT.csv"
 ENCOUNTERS = ROOT / "src/data/wild_encounters.json"
 PARTIES = ROOT / "src/data/trainer_parties.h"
+GYM_TEAMS = ROOT / "docs/arauna/ARAUNA_GYM_TEAMS.csv"
 
 # The commit before the species tables landed still has the vanilla stats.
 VANILLA_REV = "d4804fcc^"
@@ -188,8 +189,20 @@ def apply_encounters(pairing) -> tuple[str, int]:
     return json.dumps(data, indent=2) + "\n", changed
 
 
+def themed_parties() -> set[str]:
+    """Parties owned by build_gym_teams.py.
+
+    The gym and Elite Four teams are chosen for their type, not permuted for
+    strength, so this pass has to leave them alone or a rerun would undo them.
+    """
+    if not GYM_TEAMS.exists():
+        return set()
+    return {row["party"] for row in csv.DictReader(GYM_TEAMS.open(encoding="utf-8"))}
+
+
 def apply_parties(pairing) -> tuple[str, int]:
     text = committed(PARTIES)
+    owned = themed_parties()
     changed = 0
 
     def swap(match):
@@ -200,7 +213,14 @@ def apply_parties(pairing) -> tuple[str, int]:
             return f".species = {pairing[name]},"
         return match.group(0)
 
-    return re.sub(r"\.species = (SPECIES_\w+),", swap, text), changed
+    def per_party(block):
+        symbol = block.group(1)
+        if symbol in owned:
+            return block.group(0)
+        return re.sub(r"\.species = (SPECIES_\w+),", swap, block.group(0))
+
+    return re.sub(r"static const struct \w+ sParty_(\w+)\[\] = \{.*?\n\};", per_party,
+                  text, flags=re.S), changed
 
 
 def curve(pairing, arauna, source: dict) -> list[tuple[str, int, int]]:
