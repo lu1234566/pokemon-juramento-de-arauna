@@ -15,6 +15,16 @@ Rodam nesta ordem. Todos aceitam `--check` (não escreve nada) e `--write`.
 | `tools/arauna/build_icons.py` | ícones de party/box e as seis paletas compartilhadas |
 | `tools/arauna/build_placement.py` | onde cada criatura aparece: encontros selvagens e times de treinador |
 | `tools/arauna/build_movesets.py` | level-up, TM/HM, tutores e egg moves |
+| `tools/arauna/build_gym_teams.py` | times dos ginásios e da Elite Four, por tipo |
+| `tools/arauna/build_cries.py` | grito e tom de cada criatura |
+| `tools/arauna/build_availability.py` | garante que as 386 podem ser capturadas |
+
+**Ordem importa em dois pontos.** `build_placement.py` reescreve a tabela de
+encontros inteira a partir de um baseline fixo, então desfaz o
+`build_availability.py`; rode a disponibilidade **por último** e ela repõe tudo.
+E `build_placement.py` já pula as equipes listadas em `ARAUNA_GYM_TEAMS.csv`,
+então essas duas compõem em qualquer ordem. O
+`scripts/check_arauna_static.sh` falha alto se alguém esquecer.
 
 A fonte de tudo é `graphics/arauna/arauna_sprites_gba_export.zip`. O
 `pokedex.json` dentro dele já trazia nome, tipos, stats, habilidades, categoria,

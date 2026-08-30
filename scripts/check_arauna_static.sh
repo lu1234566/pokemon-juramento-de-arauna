@@ -29,4 +29,7 @@ bash scripts/check_no_proprietary_files.sh
 # untouched, VAR_OBJ_GFX_ID_C and _D still reserved, harness still unreachable.
 python3 tools/arauna/check_overworld_registry.py
 
+# Every one of the 386 must be catchable, or the Pokedex cannot be finished.
+python3 tools/arauna/check_availability.py
+
 echo "Arauna static readiness: PASS (official rendered composition validated; ARM compile intentionally skipped)."
