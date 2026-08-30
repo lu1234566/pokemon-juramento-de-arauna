@@ -3,7 +3,7 @@
 As 386 espécies de Arauna estão instaladas. Este documento diz o que foi feito,
 por qual regra, e onde mudar cada decisão.
 
-## Os cinco geradores
+## Os geradores
 
 Rodam nesta ordem. Todos aceitam `--check` (não escreve nada) e `--write`.
 
@@ -81,13 +81,23 @@ nacional. `HOENN_DEX_COUNT` continua 202, o que faz a dex regional ser
 exatamente #001–#202 e deixa intacta a checagem de dex completa que a campanha
 já usa.
 
+## Obtenibilidade
+
+As 386 podem ser capturadas: 309 aparecem selvagens, o resto vem de evolução ou
+de presente por script. Isso é conferido a cada `check_arauna_static.sh` — se
+alguém mexer nos encontros e deixar uma criatura sem casa, o gate falha e diz
+qual.
+
+Battle Pyramid e Battle Pike não contam. Neles você luta mas não captura, então
+uma espécie que só vive lá continua inobtenível.
+
 ## O que ainda é vanilla
 
-- **Gritos.** Cada espécie usa o grito de quem morava no slot.
 - **Footprints.** São pegadas 16×16 de duas cores e não há nada no export que
   corresponda a elas.
-- **Texto da dex em inglês.** O texto está em português, como o resto dos dados
-  do projeto; o build em inglês mostra português até existir um renderer.
-- **20 das 46 habilidades** são aproximações de coisas que a terceira geração não
-  tem (Harvest, Motor Drive, Prankster, Leaf Guard). Estão marcadas como
+- **Gritos.** Reatribuídos por tipo e porte, com tom por peso, mas as amostras
+  continuam sendo as do Emerald. Ver `ARAUNA_CRIES.csv`.
+- **19 das 46 habilidades** são aproximações de coisas que a terceira geração não
+  tem (Harvest, Motor Drive, Prankster, Leaf Guard). Marcadas como
   `approximated` no CSV.
+- **35 dos 855 treinadores** ainda têm nome de Hoenn.
