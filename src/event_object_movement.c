@@ -546,6 +546,7 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #include "data/object_events/object_event_subsprites.h"
 #include "data/object_events/object_event_graphics_info.h"
 #include "data/object_events/arauna_overworld.h"
+#include "data/object_events/arauna_overworld_maps.h"
 
 static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_Npc1,                  OBJ_EVENT_PAL_TAG_NPC_1},
@@ -9169,5 +9170,26 @@ void SetAraunaPokemonOverworld(void)
         ObjectEventSetGraphicsId(&gObjectEvents[objectEventId],
                                  channel == ARAUNA_OW_CHANNEL_A ? OBJ_EVENT_GFX_ARAUNA_POKEMON_A
                                                                 : OBJ_EVENT_GFX_ARAUNA_POKEMON_B);
+    }
+}
+
+// Point the two dispatcher channels at whatever the current map keeps, before
+// its objects spawn. Driven by a generated table rather than by map scripts, so
+// placing a creature costs no edit to anybody's story script; a map that sets
+// VAR_ARAUNA_OW_A or _B in its own ON_TRANSITION still wins, because this runs
+// first.
+void SetAraunaOverworldForCurrentMap(void)
+{
+    u32 i;
+
+    for (i = 0; i < ARRAY_COUNT(sAraunaOverworldMaps); i++)
+    {
+        if (sAraunaOverworldMaps[i].mapGroup == gSaveBlock1Ptr->location.mapGroup
+         && sAraunaOverworldMaps[i].mapNum == gSaveBlock1Ptr->location.mapNum)
+        {
+            VarSet(VAR_ARAUNA_OW_A, sAraunaOverworldMaps[i].channelA);
+            VarSet(VAR_ARAUNA_OW_B, sAraunaOverworldMaps[i].channelB);
+            return;
+        }
     }
 }

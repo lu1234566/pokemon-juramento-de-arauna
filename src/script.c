@@ -1,4 +1,5 @@
 #include "global.h"
+#include "event_object_movement.h"
 #include "script.h"
 #include "event_data.h"
 #include "mystery_gift.h"
@@ -332,6 +333,8 @@ void RunOnLoadMapScript(void)
 
 void RunOnTransitionMapScript(void)
 {
+    // Before the map's own script, so a map can still override the choice.
+    SetAraunaOverworldForCurrentMap();
     MapHeaderRunScriptType(MAP_SCRIPT_ON_TRANSITION);
 }
 

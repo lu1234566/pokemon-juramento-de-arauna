@@ -18,6 +18,8 @@ Every claim the design makes is checked against the tree rather than asserted:
 """
 from __future__ import annotations
 
+import csv
+import json
 import re
 import subprocess
 import sys
@@ -33,6 +35,18 @@ EVENT_OBJECTS = ROOT / "include/constants/event_objects.h"
 MOVEMENT = ROOT / "src/event_object_movement.c"
 HARNESS = ROOT / "data/maps/AquaHideout_UnusedRubyMap1/map.json"
 PERSISTENT = ["include/global.h", "include/global.fieldmap.h"]
+
+
+def reachable_tiles(width, height, passable, start, blocked=None):
+    seen, stack = {start}, [start]
+    while stack:
+        x, y = stack.pop()
+        for nx, ny in ((x + 1, y), (x - 1, y), (x, y + 1), (x, y - 1)):
+            if 0 <= nx < width and 0 <= ny < height and (nx, ny) not in seen \
+                    and (nx, ny) != blocked and passable[ny * width + nx]:
+                seen.add((nx, ny))
+                stack.append((nx, ny))
+    return seen
 
 
 def check(name: str, ok: bool, detail: str = "") -> bool:
@@ -152,6 +166,57 @@ def main() -> int:
     results.append(check("the harness map is still unreachable",
                          not elsewhere and not connections,
                          ", ".join(elsewhere) or ("has connections" if connections else "")))
+
+    print("\nplacement")
+    import struct, collections
+    placed = list(csv.DictReader((ROOT / "docs/arauna/ARAUNA_OVERWORLD_PLACEMENT.csv")
+                                 .open(encoding="utf-8")))
+    table = (ROOT / "src/data/object_events/arauna_overworld_maps.h").read_text(encoding="utf-8")
+    layouts = {l["id"]: l for l in json.loads(
+        (ROOT / "data/layouts/layouts.json").read_text(encoding="utf-8"))["layouts"] if l}
+
+    results.append(check("every redraw is somewhere",
+                         len(placed) + 3 == 46, f"{len(placed)} placed + 3 with their own id"))
+    results.append(check("the map table covers every placed map",
+                         len(re.findall(r"MAP_GROUP\(", table)) == len({p["map"] for p in placed}),
+                         f"{len(re.findall(chr(77)+'AP_GROUP.', table))} rows"))
+
+    bad_object, bad_tile, blocked = [], [], []
+    for name, rows in collections.defaultdict(list, {
+            m: [p for p in placed if p["map"] == m] for m in {p["map"] for p in placed}}).items():
+        blob = json.loads((ROOT / "data/maps" / name / "map.json").read_text(encoding="utf-8"))
+        objects = {(o["x"], o["y"]): o.get("graphics_id", "")
+                   for o in blob.get("object_events", [])}
+        layout = layouts[blob["layout"]]
+        raw = (ROOT / layout["blockdata_filepath"]).read_bytes()
+        values = struct.unpack(f"<{len(raw) // 2}H", raw)
+        width, height = layout["width"], layout["height"]
+        passable = [((v >> 10) & 3) == 0 for v in values]
+        for row in rows:
+            spot = (int(row["x"]), int(row["y"]))
+            if objects.get(spot, "") != f"OBJ_EVENT_GFX_ARAUNA_POKEMON_{row['channel']}":
+                bad_object.append(f"{name}{spot}")
+            if not passable[spot[1] * width + spot[0]]:
+                bad_tile.append(f"{name}{spot}")
+                continue
+            # Seed from the tile itself. A map can have passable regions that do
+            # not connect -- across water, or below a ledge -- so flooding from
+            # an arbitrary corner measures the wrong one.
+            region = reachable_tiles(width, height, passable, spot)
+            neighbour = next((n for n in ((spot[0] + 1, spot[1]), (spot[0] - 1, spot[1]),
+                                          (spot[0], spot[1] + 1), (spot[0], spot[1] - 1))
+                              if n in region), None)
+            if neighbour is None:
+                blocked.append(f"{name}{spot} (isolated)")
+            elif reachable_tiles(width, height, passable, neighbour,
+                                 blocked=spot) != region - {spot}:
+                blocked.append(f"{name}{spot}")
+    results.append(check("each placement has its object event on the map",
+                         not bad_object, ", ".join(bad_object[:4])))
+    results.append(check("every creature stands on a walkable tile",
+                         not bad_tile, ", ".join(bad_tile[:4])))
+    results.append(check("no creature blocks a chokepoint",
+                         not blocked, ", ".join(blocked[:4])))
 
     print(f"\n{sum(results)}/{len(results)} checks passed")
     return 0 if all(results) else 1

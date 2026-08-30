@@ -132,6 +132,7 @@ void SetSpritePosToMapCoords(s16 mapX, s16 mapY, s16 *destX, s16 *destY);
 void CameraObjectReset(void);
 void ObjectEventSetGraphicsId(struct ObjectEvent *objectEvent, u8 graphicsId);
 void SetAraunaPokemonOverworld(void);
+void SetAraunaOverworldForCurrentMap(void);
 void ObjectEventTurn(struct ObjectEvent *objectEvent, u8 direction);
 void ObjectEventTurnByLocalIdAndMap(u8 localId, u8 mapNum, u8 mapGroup, u8 direction);
 const struct ObjectEventGraphicsInfo *GetObjectEventGraphicsInfo(u8 graphicsId);
