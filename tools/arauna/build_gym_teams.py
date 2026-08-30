@@ -38,6 +38,8 @@ import zipfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
+# The tree before the gym-team pass landed; see committed().
+BASELINE = "2ca77244"
 EXPORT = ROOT / "graphics/arauna/arauna_sprites_gba_export.zip"
 MAPPING = ROOT / "docs/arauna/ARAUNA_DEX_ENGINE_MAPPING.csv"
 PARTIES = ROOT / "src/data/trainer_parties.h"
@@ -80,8 +82,16 @@ LEADERS = {
 
 
 def committed(path: Path) -> str:
+    """The file as it stood before this tool first wrote it.
+
+    Not HEAD. This pass is a substitution, so running it against its own output
+    moves everything a second time -- and once the output is committed, HEAD is
+    the output. Pinning the baseline to the commit before the pass landed is what
+    actually makes --write idempotent; reading HEAD only looked idempotent while
+    the work was still uncommitted.
+    """
     rel = path.relative_to(ROOT).as_posix()
-    return subprocess.run(["git", "show", f"HEAD:{rel}"], cwd=ROOT,
+    return subprocess.run(["git", "show", f"{BASELINE}:{rel}"], cwd=ROOT,
                           capture_output=True, text=True, check=True).stdout
 
 

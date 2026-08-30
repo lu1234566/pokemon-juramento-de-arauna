@@ -57,6 +57,8 @@ import zipfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
+# The tree before the placement pass landed; see committed().
+BASELINE = "fe082a54"
 EXPORT = ROOT / "graphics/arauna/arauna_sprites_gba_export.zip"
 MAPPING = ROOT / "docs/arauna/ARAUNA_DEX_ENGINE_MAPPING.csv"
 PLACEMENT = ROOT / "docs/arauna/ARAUNA_PLACEMENT.csv"
@@ -156,14 +158,16 @@ def build(vanilla, arauna) -> dict[str, str]:
 
 
 def committed(path: Path) -> str:
-    """The file as last committed.
+    """The file as it stood before this tool first wrote it.
 
-    The substitution is a permutation, so applying it to its own output moves
-    everything a second time. Always start from the committed text; then
-    --write is idempotent and safe to rerun after editing the CSV.
+    Not HEAD. This pass is a substitution, so running it against its own output
+    moves everything a second time -- and once the output is committed, HEAD is
+    the output. Pinning the baseline to the commit before the pass landed is what
+    actually makes --write idempotent; reading HEAD only looked idempotent while
+    the work was still uncommitted.
     """
     rel = path.relative_to(ROOT).as_posix()
-    return subprocess.run(["git", "show", f"HEAD:{rel}"], cwd=ROOT,
+    return subprocess.run(["git", "show", f"{BASELINE}:{rel}"], cwd=ROOT,
                           capture_output=True, text=True, check=True).stdout
 
 
