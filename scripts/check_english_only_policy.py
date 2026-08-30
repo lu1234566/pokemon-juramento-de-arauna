@@ -77,6 +77,9 @@ EXPECTED_RENDERER_ORDER = (
     'render_remaining_story_en_checked.py',
     'render_arauna_league_en_checked.py',
     'render_main_readiness_residue_en_checked.py',
+    # The 386 Pokedex entries. Last in the order because it owns a file no other
+    # renderer touches, so it cannot overlap with anything above it.
+    'render_arauna_pokedex_en.py',
 )
 APPROVED_ENGLISH_RENDERERS = set(EXPECTED_RENDERER_ORDER)
 
@@ -135,8 +138,9 @@ if missing:
     fail("approved English renderer(s) missing from official manifest: " + ", ".join(missing))
 if tuple(renderers) != EXPECTED_RENDERER_ORDER:
     fail("official English renderer order changed; review overlap semantics before reordering")
-if len(renderers) != 66:
-    fail(f"expected 66 approved English renderers, found {len(renderers)}")
+if len(renderers) != len(EXPECTED_RENDERER_ORDER):
+    fail(f"expected {len(EXPECTED_RENDERER_ORDER)} approved English renderers, "
+         f"found {len(renderers)}")
 
 for renderer in renderers:
     if not (ROOT / "scripts" / renderer).is_file():

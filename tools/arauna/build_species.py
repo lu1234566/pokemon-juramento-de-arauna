@@ -54,6 +54,7 @@ import csv
 import io
 import json
 import re
+import subprocess
 import sys
 import unicodedata
 import zipfile
@@ -61,6 +62,8 @@ from collections import defaultdict
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
+# The tree before the species tables landed.
+VANILLA_REV = "d4804fcc^"
 EXPORT = ROOT / "graphics/arauna/arauna_sprites_gba_export.zip"
 MAPPING = ROOT / "docs/arauna/ARAUNA_DEX_ENGINE_MAPPING.csv"
 ABILITIES = ROOT / "docs/arauna/ARAUNA_ABILITIES.csv"
@@ -152,7 +155,9 @@ def charmap_chars() -> set[str]:
             continue
         key = line.split("=")[0].strip()
         if key.startswith("'") and key.endswith("'"):
-            key = key[1:-1]
+            # The charmap escapes the apostrophe as '\''; unescape or every
+            # string containing one looks unencodable.
+            key = key[1:-1].replace("\\'", "'").replace('\\\\', '\\')
         chars.add(key)
     return chars
 
@@ -554,7 +559,11 @@ def render_dex_numbers(species):
     #001-#202 and leaves the completion check the campaign already uses intact.
     """
     used = {s["constant"] for s in species}
-    source = (ROOT / "src/pokemon.c").read_text(encoding="utf-8")
+    # The vanilla tree, not the current one: pokemon.c now holds an #include
+    # where the macro lines used to be, so reading it back would drop the 25
+    # leftover slots and leave the arrays short.
+    source = subprocess.run(["git", "show", f"{VANILLA_REV}:src/pokemon.c"],
+                            cwd=ROOT, capture_output=True, text=True, check=True).stdout
 
     def leftovers(macro):
         names = re.findall(rf"^\s*{macro}\((\w+)\),$", source, re.M)

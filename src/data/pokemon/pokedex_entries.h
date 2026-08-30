@@ -1301,7 +1301,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_LICKITUNG] = // #108 Iemanjá
     {
-        .categoryName = _("Mae-dÁgua"),
+        .categoryName = _("Mae-d'Água"),
         .height = 15,
         .weight = 740,
         .description = gIemanja108PokedexText,

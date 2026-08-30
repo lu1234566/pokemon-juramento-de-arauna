@@ -8,1553 +8,1957 @@ const u8 gDummyPokedexText[] = _(
     "at this time.");
 
 const u8 gCaramelo001PokedexText[] = _(
-    "Filhote de rua de pelagem cor de caramelo.\n"
-    "Quando confia em seu treinador, a ponta do\n"
-    "rabo acende uma chama pequena e constante\n"
-    "que nunca queima quem o acaricia.");
+    "A stray pup the colour of caramel. Once it\n"
+    "trusts its trainer, the tip of its tail\n"
+    "lights a small steady flame that never burns\n"
+    "a friendly hand."
+);
 
 const u8 gCaramelao002PokedexText[] = _(
-    "Guardiao das feiras livres. Suas costas\n"
-    "ficam salpicadas de brasas que ele controla\n"
-    "como se fossem pulgas - só mordem quem tenta\n"
-    "roubar.");
+    "Guardian of the open-air markets. Embers\n"
+    "speckle its back, and it keeps them like\n"
+    "fleas that bite only thieves."
+);
 
 const u8 gDraguara003PokedexText[] = _(
-    "Lendas contam que todo cachorro caramelo que\n"
-    "salvou uma vida renasce como um Draguará.\n"
-    "Suas chamas turquesa aquecem, mas nunca\n"
-    "ferem inocentes.");
+    "Legend says every stray that saved a life\n"
+    "comes back as a Draguará. Its turquoise fire\n"
+    "warms but never harms the innocent."
+);
 
 const u8 gQuero004PokedexText[] = _(
-    "Nunca dorme por completo. Um olho fica\n"
-    "aberto vigiando o ninho - se algo se\n"
-    "aproxima, dispara o grito quero-quero! que\n"
-    "ecoa por quilômetros.");
+    "It never sleeps all the way. One eye stays\n"
+    "open over the nest, and its quero-quero cry\n"
+    "carries for kilometres."
+);
 
 const u8 gQueribela005PokedexText[] = _(
-    "Após a primeira muda, suas penas se\n"
-    "transformam em membranas iridescentes de\n"
-    "libélula. Paira sobre a água caçando com\n"
-    "precisao cirúrgica.");
+    "After its first moult the feathers become\n"
+    "iridescent dragonfly membranes. It hovers\n"
+    "over water and hunts with surgical aim."
+);
 
 const u8 gTerolibra006PokedexText[] = _(
-    "Quatro asas de libélula sustentam um corpo\n"
-    "esguio de quero-quero adulto. Um único bater\n"
-    "de asas cria uma rajada dágua capaz de\n"
-    "partir troncos.");
+    "Four dragonfly wings carry a lean adult\n"
+    "body. One wingbeat throws a jet of water\n"
+    "strong enough to split a trunk."
+);
 
 const u8 gPimpau007PokedexText[] = _(
-    "Fura cascas de árvore atrás de larvas com um\n"
-    "bico ainda mole. Treina o dia inteiro\n"
-    "batendo em tocos secos, e volta pro ninho\n"
-    "com dor de cabeça.");
+    "It drills bark for grubs with a beak still\n"
+    "soft. It drills dry stumps all day and goes\n"
+    "home with a headache."
+);
 
 const u8 gBicopau008PokedexText[] = _(
-    "O bico endurece até virar madeira-de-lei.\n"
-    "Percute os troncos em ritmos complexos que\n"
-    "outros Bicopau reconhecem como mensagens.");
+    "The beak hardens into ironwood. It drums\n"
+    "trunks in complex rhythms other Bicopau read\n"
+    "as messages."
+);
 
 const u8 gPetropico009PokedexText[] = _(
-    "Seu bico se calcificou em uma cunha de\n"
-    "granito. Escava cavernas em paredoes de\n"
-    "pedra com pancadas que ecoam como sinos.");
+    "Its beak has calcified into a granite wedge.\n"
+    "It carves caves out of rock faces with blows\n"
+    "that ring like bells."
+);
 
 const u8 gFormilim010PokedexText[] = _(
-    "Nao é uma formiga - é uma colônia inteira\n"
-    "andando em formato de formiga gigante. Se\n"
-    "dispersa quando ameaçada.");
+    "Not one ant: a whole colony walking in the\n"
+    "shape of a giant one. It scatters when\n"
+    "threatened."
+);
 
 const u8 gSauvarco011PokedexText[] = _(
-    "A rainha das saúvas. Comanda exércitos que\n"
-    "desfolham árvores inteiras em uma única\n"
-    "noite.");
+    "Queen of the leafcutters. Her armies can\n"
+    "strip a whole tree bare in a single night."
+);
 
 const u8 gCapivim012PokedexText[] = _(
-    "Vive em bandos beira-rio. Aceita qualquer\n"
-    "outro Pokémon em suas costas - inclusive\n"
-    "treinadores cansados.");
+    "It lives in riverside troops and lets\n"
+    "anything ride on its back, tired trainers\n"
+    "included."
+);
 
 const u8 gTucanhao013PokedexText[] = _(
-    "Seu bico gigante é oco e leve. Consegue\n"
-    "engolir uma fruta inteira e cuspir a semente\n"
-    "a 40 metros de distância - planta florestas\n"
-    "sozinho.");
+    "Its huge beak is hollow and light. It\n"
+    "swallows a fruit whole and spits the seed 40\n"
+    "metres, planting forests alone."
+);
 
 const u8 gSaguim014PokedexText[] = _(
-    "Rouba tudo que brilha. Treinadores aprendem\n"
-    "cedo a guardar as medalhas de ginásio no\n"
-    "fundo da mochila.");
+    "It steals anything that shines. Trainers\n"
+    "learn early to keep their badges at the\n"
+    "bottom of the bag."
+);
 
 const u8 gMicuiras015PokedexText[] = _(
-    "Ancian da tribo dos Sagüim. Enxerga o futuro\n"
-    "em reflexos de rios e prevê chuvas com uma\n"
-    "semana de antecedência.");
+    "Elder of the Sagüim troop. It reads the\n"
+    "future in river reflections and calls rain a\n"
+    "week ahead."
+);
 
 const u8 gBoitata016PokedexText[] = _(
-    "Aparece após queimadas. Seu corpo é uma\n"
-    "cobra feita de fogo azul que devora quem\n"
-    "provoca incêndios florestais.");
+    "It appears after a burn. Its body is a snake\n"
+    "of blue fire that devours whoever sets the\n"
+    "forest alight."
+);
 
 const u8 gCurupim017PokedexText[] = _(
-    "Seus pés apontam para trás. Confunde\n"
-    "caçadores fazendo pegadas que levam pra\n"
-    "dentro da mata em vez de pra fora.");
+    "Its feet point backwards. Hunters follow its\n"
+    "tracks deeper into the woods instead of out."
+);
 
 const u8 gCurupira018PokedexText[] = _(
-    "O verdadeiro senhor da mata. Onde ele pisa,\n"
-    "uma árvore centenária brota em uma noite.");
+    "The true lord of the forest. Where it\n"
+    "treads, a hundred-year tree rises in one\n"
+    "night."
+);
 
 const u8 gIaraco019PokedexText[] = _(
-    "Encanta pescadores com um canto. Quem cai no\n"
-    "rio atrás dela vira parte de sua corte para\n"
-    "sempre.");
+    "It charms fishermen with a song. Whoever\n"
+    "follows her into the river joins her court\n"
+    "forever."
+);
 
 const u8 gSacizinho020PokedexText[] = _(
-    "Só tem uma perna. Se movimenta em\n"
-    "redemoinhos e adora atrapalhar treinadores\n"
-    "desatentos - apagando fogueiras ou soltando\n"
-    "Pokémon capturados.");
+    "It has only one leg. It travels in\n"
+    "whirlwinds and loves to pester careless\n"
+    "trainers, dousing fires and freeing caught\n"
+    "Pokémon."
+);
 
 const u8 gCactula021PokedexText[] = _(
-    "Sobrevive meses sem chuva. Seus espinhos\n"
-    "guardam gotas de veneno adocicado que atrai\n"
-    "Pokémon-inseto.");
+    "It survives months without rain. Its spines\n"
+    "hold drops of sweet venom that draw in Bug\n"
+    "Pokémon."
+);
 
 const u8 gMuricoco022PokedexText[] = _(
-    "Enxames inteiros perseguem treinadores por\n"
-    "dias. O único jeito de fugir é entrar num\n"
-    "rio - e torcer para nao ter Terolibra por\n"
-    "perto.");
+    "Whole swarms follow trainers for days. The\n"
+    "only escape is a river, and hoping no\n"
+    "Terolibra lives in it."
+);
 
 const u8 gOncaleu023PokedexText[] = _(
-    "A onça-pintada da regiao. Caça em silêncio\n"
-    "absoluto - treinadores só percebem quando o\n"
-    "Pokémon já está no chao.");
+    "The jaguar of the region. It hunts in total\n"
+    "silence, and trainers notice only once they\n"
+    "are on the ground."
+);
 
 const u8 gTamandua024PokedexText[] = _(
-    "Suas garras cortam aço. Come Formilim\n"
-    "inteiros de uma lambida - mas evita\n"
-    "Saúvarco: já perdeu a língua uma vez.");
+    "Its claws cut steel. It eats whole Formilim\n"
+    "in one lick, but avoids Saúvarco: it lost\n"
+    "its tongue once."
+);
 
 const u8 gBotim025PokedexText[] = _(
-    "Nasce cinza e vai ficando rosa conforme\n"
-    "ganha confiança. Brinca com bolhas que ele\n"
-    "mesmo sopra.");
+    "Born grey, it turns pink as its confidence\n"
+    "grows. It plays with bubbles it blows\n"
+    "itself."
+);
 
 const u8 gBotao026PokedexText[] = _(
-    "Sai à noite em bandos. Diz o folclore que se\n"
-    "transforma em rapaz nas festas de beira-rio.");
+    "It comes out at night in groups. Folklore\n"
+    "says it turns into a young man at riverside\n"
+    "parties."
+);
 
 const u8 gBotogalau027PokedexText[] = _(
-    "Chapéu branco esconde o buraco do topo da\n"
-    "cabeça. Encanta moças e some no rio ao\n"
-    "amanhecer.");
+    "A white hat hides the hole in the top of its\n"
+    "head. It charms girls and vanishes into the\n"
+    "river at dawn."
+);
 
 const u8 gTatuim028PokedexText[] = _(
-    "Se enrola numa bola do tamanho de uma\n"
-    "laranja. Rola morro abaixo pra fugir.");
+    "It curls into a ball the size of an orange\n"
+    "and rolls downhill to escape."
+);
 
 const u8 gTatubola029PokedexText[] = _(
-    "A carapaça vira aço quando ameaçado.\n"
-    "Ricocheteia ataques físicos de volta.");
+    "Its shell turns to steel when threatened,\n"
+    "bouncing physical attacks straight back."
+);
 
 const u8 gTatucu030PokedexText[] = _(
-    "Escava túneis de 20 metros por noite.\n"
-    "Aldeias inteiras já sumiram sob suas\n"
-    "galerias.");
+    "It digs twenty metres of tunnel a night.\n"
+    "Whole villages have sunk into its galleries."
+);
 
 const u8 gArarinha031PokedexText[] = _(
-    "Imita qualquer som que ouve - inclusive\n"
-    "gritos de treinadores caindo do barranco.");
+    "It mimics any sound it hears, including\n"
+    "trainers yelling as they fall down the bank."
+);
 
 const u8 gArara032PokedexText[] = _(
-    "Penas vermelhas soltam faíscas quando bate\n"
-    "as asas com força.");
+    "Its red feathers throw sparks when it beats\n"
+    "its wings hard."
+);
 
 const u8 gAraracanga033PokedexText[] = _(
-    "Voa entre as nuvens do cerrado. Suas penas\n"
-    "caídas incendeiam a grama seca.");
+    "It flies among the clouds of the cerrado.\n"
+    "The feathers it drops set the dry grass\n"
+    "alight."
+);
 
 const u8 gJacarim034PokedexText[] = _(
-    "Fica boiando com só os olhos de fora.\n"
-    "Confunde treinadores com um tronco\n"
-    "flutuante.");
+    "It floats with only its eyes above water,\n"
+    "and passes for a drifting log."
+);
 
 const u8 gJacarao035PokedexText[] = _(
-    "Espera horas imóvel. Quando ataca, arrasta a\n"
-    "presa pro fundo em uma pirueta.");
+    "It waits still for hours. When it strikes,\n"
+    "it drags its prey under in a single roll."
+);
 
 const u8 gJacarodon036PokedexText[] = _(
-    "Descendente direto dos dinossauros. Suas\n"
-    "mandíbulas quebram cascos de Tatuçu.");
+    "A direct descendant of the dinosaurs. Its\n"
+    "jaws crack a Tatuçu's shell."
+);
 
 const u8 gPreguicim037PokedexText[] = _(
-    "Se move tao devagar que musgo cresce em seu\n"
-    "pelo. Serve de casa pra insetos.");
+    "It moves so slowly that moss grows in its\n"
+    "fur. Insects live there."
+);
 
 const u8 gPreguicao038PokedexText[] = _(
-    "Passa 20 horas por dia dormindo. Nos sonhos,\n"
-    "prevê chuvas com semanas de antecedência.");
+    "It sleeps twenty hours a day. In its dreams\n"
+    "it sees rain weeks ahead."
+);
 
 const u8 gBichoPreguica039PokedexText[] = _(
-    "Do tamanho de um elefante. Anda uma vez por\n"
-    "lua e sabe onde toda árvore centenária\n"
-    "brota.");
+    "The size of an elephant. It walks once a\n"
+    "moon and knows where every old tree will\n"
+    "rise."
+);
 
 const u8 gPapaguim040PokedexText[] = _(
-    "Aprende a repetir palavras em três dias.\n"
-    "Aprende palavroes em uma tarde.");
+    "It learns to repeat words in three days. It\n"
+    "learns swearing in an afternoon."
+);
 
 const u8 gPapagaio041PokedexText[] = _(
-    "Memoriza conversas inteiras e as repete pra\n"
-    "pessoas erradas. Causa muita confusao.");
+    "It memorises whole conversations and repeats\n"
+    "them to the wrong people. It causes trouble."
+);
 
 const u8 gPapagaiao042PokedexText[] = _(
-    "Vive 200 anos. Guarda segredos de geraçoes\n"
-    "de treinadores em sua memória.");
+    "It lives 200 years, holding the secrets of\n"
+    "generations of trainers in its memory."
+);
 
 const u8 gAntinha043PokedexText[] = _(
-    "Listrada como um javali pequeno. Sua tromba\n"
-    "curta cheira frutas a 100 metros.");
+    "Striped like a small boar. Its short snout\n"
+    "smells fruit a hundred metres off."
+);
 
 const u8 gAnta044PokedexText[] = _(
-    "Atravessa rios inteiros submersa. Come até\n"
-    "40 quilos de folhas por dia.");
+    "It crosses whole rivers underwater and eats\n"
+    "forty kilos of leaves a day."
+);
 
 const u8 gAntarau045PokedexText[] = _(
-    "Espírito da mata. Guia treinadores perdidos\n"
-    "até a borda da floresta.");
+    "A spirit of the forest. It guides lost\n"
+    "trainers back to the edge of the trees."
+);
 
 const u8 gSucurim046PokedexText[] = _(
-    "Já nasce com 2 metros. Se enrola em galhos\n"
-    "esperando presas.");
+    "It is already two metres long at birth. It\n"
+    "coils in branches and waits for prey."
+);
 
 const u8 gSucuri047PokedexText[] = _(
-    "Sufoca a presa e engole inteira. Se torna\n"
-    "Boiúna após anos absorvendo lendas do rio.");
+    "It smothers its prey and swallows it whole.\n"
+    "Years of river legend turn it into Boiuna."
+);
 
 const u8 gBoiuna048PokedexText[] = _(
-    "Cobra-Grande da mitologia amazônica. Olhos\n"
-    "brilham como faróis de barco em noite de\n"
-    "igarapé. Diz a lenda que sua passagem forma\n"
-    "novos rios.");
+    "The Cobra-Grande of Amazon myth. Its eyes\n"
+    "shine like boat lamps on the creek at night,\n"
+    "and legend says its passing carves new\n"
+    "rivers."
+);
 
 const u8 gBorbolim049PokedexText[] = _(
-    "Come folhas de urtiga sem se envenenar.\n"
-    "Guarda o veneno na pele.");
+    "It eats nettle leaves without being\n"
+    "poisoned, and stores the venom in its skin."
+);
 
 const u8 gCasulete050PokedexText[] = _(
-    "Casulo iridescente que reflete o azul do\n"
-    "céu. Nao se move, mas dá choque se tocado.");
+    "An iridescent cocoon that mirrors the blue\n"
+    "sky. It cannot move, but it shocks anything\n"
+    "that touches it."
+);
 
 const u8 gMorphalia051PokedexText[] = _(
-    "Asas do tamanho de maos humanas. Suas\n"
-    "escamas azuis viram poeira mágica curativa.");
+    "Wings the size of human hands. Its blue\n"
+    "scales become healing magic dust."
+);
 
 const u8 gGuaracim052PokedexText[] = _(
-    "Pernas desproporcionalmente longas. Corre de\n"
-    "galope pelo cerrado atrás de frutas.");
+    "Its legs are far too long. It gallops across\n"
+    "the cerrado after fruit."
+);
 
 const u8 gGuara053PokedexText[] = _(
-    "Uiva ao entardecer. Come lobeira, uma fruta\n"
-    "doce, e planta a floresta com suas fezes.");
+    "It howls at dusk. It eats the sweet lobeira\n"
+    "fruit and plants the forest with its\n"
+    "droppings."
+);
 
 const u8 gGuaraflama054PokedexText[] = _(
-    "Aparece nas noites de lua nova. Suas patas\n"
-    "deixam pegadas em brasa.");
+    "It appears on new moon nights. Its paws\n"
+    "leave footprints of live coals."
+);
 
 const u8 gPeixim055PokedexText[] = _(
-    "Nada devagar mamando na mae. Chora com voz\n"
-    "de bebê quando se perde.");
+    "It swims slowly, nursing from its mother,\n"
+    "and cries like a baby when it gets lost."
+);
 
 const u8 gPeixeboi056PokedexText[] = _(
-    "Herbívoro pacífico. Come até 50 quilos de\n"
-    "plantas aquáticas por dia.");
+    "A peaceable herbivore. It eats fifty kilos\n"
+    "of water plants a day."
+);
 
 const u8 gMaeDAgua057PokedexText[] = _(
-    "Protetora dos rios. Diz o folclore que\n"
-    "amamentou crianças perdidas.");
+    "Protector of the rivers. Folklore says she\n"
+    "nursed lost children."
+);
 
 const u8 gMandim058PokedexText[] = _(
-    "Bigodes farejam comida no lodo do fundo.\n"
-    "Meio cego.");
+    "Its whiskers find food in the mud below. It\n"
+    "is nearly blind."
+);
 
 const u8 gMandi059PokedexText[] = _(
-    "Espinhos venenosos nas nadadeiras. Uma\n"
-    "picada tira o sono por dias.");
+    "Venomous spines in its fins. One sting costs\n"
+    "days of sleep."
+);
 
 const u8 gMandube060PokedexText[] = _(
-    "Do tamanho de um homem. Nada no escuro\n"
-    "absoluto do fundo dos rios.");
+    "The size of a man. It swims in the total\n"
+    "dark of the river bottom."
+);
 
 const u8 gPreguim061PokedexText[] = _(
-    "Aprende a usar galhos como ferramentas ainda\n"
-    "filhote. Rouba comida de acampamentos.");
+    "It uses sticks as tools while still young,\n"
+    "and robs camps of food."
+);
 
 const u8 gPrego062PokedexText[] = _(
-    "Usa pedras pra quebrar castanhas. Ensina\n"
-    "técnicas a filhotes por geraçoes.");
+    "It cracks nuts with stones, and has taught\n"
+    "the technique to its young for generations."
+);
 
 const u8 gPregarcanjo063PokedexText[] = _(
-    "Considerado o mais inteligente dos primatas\n"
-    "de Arauana. Resolve enigmas humanos.");
+    "Held to be the cleverest primate in Arauana.\n"
+    "It solves human riddles."
+);
 
 const u8 gAranin064PokedexText[] = _(
-    "Tece teias em galhos secos. Come pequenas\n"
-    "Formilim.");
+    "It spins webs in dry branches and eats small\n"
+    "Formilim."
+);
 
 const u8 gCaraninha065PokedexText[] = _(
-    "Pelos urticantes causam coceira insuportável\n"
-    "em contato.");
+    "Its stinging hairs raise an unbearable itch\n"
+    "on contact."
+);
 
 const u8 gCaranga066PokedexText[] = _(
-    "Do tamanho de um prato. Presas perfuram até\n"
-    "luvas de couro.");
+    "The size of a dinner plate. Its fangs go\n"
+    "through leather gloves."
+);
 
 const u8 gGatim067PokedexText[] = _(
-    "Mia igual gato doméstico, mas nao deixa\n"
-    "ninguém chegar perto.");
+    "It meows like a house cat, but lets nobody\n"
+    "close."
+);
 
 const u8 gGatoDoMato068PokedexText[] = _(
-    "Caça pássaros no meio da noite. Suas pupilas\n"
-    "brilham verde nas lanternas.");
+    "It hunts birds at midnight. Its pupils flash\n"
+    "green in torchlight."
+);
 
 const u8 gJaguatirica069PokedexText[] = _(
-    "Manchas em roseta como uma onça-pintada em\n"
-    "miniatura. Sobe em árvores atrás de macacos.");
+    "Rosette spots, like a jaguar in miniature.\n"
+    "It climbs trees after monkeys."
+);
 
 const u8 gCutim070PokedexText[] = _(
-    "Enterra sementes de castanha e esquece onde\n"
-    "colocou. Planta a floresta sem querer.");
+    "It buries nuts and forgets where. It plants\n"
+    "the forest by accident."
+);
 
 const u8 gCutia071PokedexText[] = _(
-    "Roe qualquer coisa. Dentes crescem a vida\n"
-    "inteira.");
+    "It gnaws anything. Its teeth grow for its\n"
+    "whole life."
+);
 
 const u8 gPaca072PokedexText[] = _(
-    "Só sai de noite. Correndo assobiando pela\n"
-    "mata escura.");
+    "It comes out only at night, running and\n"
+    "whistling through the dark woods."
+);
 
 const u8 gFormigao073PokedexText[] = _(
-    "Mordida dolorida como levar 24 horas de\n"
-    "caibra. Nome popular: formiga bala.");
+    "Its bite hurts like a full day of cramp.\n"
+    "Locals call it the bullet ant."
+);
 
 const u8 gMarimbondo074PokedexText[] = _(
-    "Enxame agressivo. Persegue ameaças por\n"
-    "quilômetros.");
+    "An aggressive swarm. It chases a threat for\n"
+    "kilometres."
+);
 
 const u8 gAbelhinha075PokedexText[] = _(
-    "Nao tem ferrao. Faz mel doce que treinadores\n"
-    "usam pra recuperar Pokémon feridos.");
+    "It has no sting. Its sweet honey is used to\n"
+    "revive hurt Pokémon."
+);
 
 const u8 gQuatim076PokedexText[] = _(
-    "Bando de 15 andando pelas trilhas. Fura\n"
-    "mochila atrás de biscoito.");
+    "Bands of fifteen walk the trails, going\n"
+    "through packs after biscuits."
+);
 
 const u8 gQuati077PokedexText[] = _(
-    "Aprende a abrir zíperes de tenda. Rouba tudo\n"
-    "que brilha.");
+    "It has learned to open tent zips, and steals\n"
+    "anything that shines."
+);
 
 const u8 gCoati078PokedexText[] = _(
-    "Vive em cavernas escuras. Focinho\n"
-    "longuíssimo pra caçar morcegos.");
+    "It lives in dark caves. Its very long snout\n"
+    "is made for hunting bats."
+);
 
 const u8 gGamba079PokedexText[] = _(
-    "Solta um cheiro nauseante quando ameaçado.\n"
-    "Treinadores fogem antes do Pokémon.");
+    "It lets out a sickening smell when\n"
+    "threatened. Trainers flee before it does."
+);
 
 const u8 gCangamba080PokedexText[] = _(
-    "Jato de fedor atinge 3 metros de distância.\n"
-    "Dura semanas na roupa.");
+    "Its stink jet reaches three metres and lasts\n"
+    "weeks in your clothes."
+);
 
 const u8 gSarue081PokedexText[] = _(
-    "Se finge de morto por horas quando ameaçado.\n"
-    "Enganou até Onçaléu.");
+    "It plays dead for hours when threatened. It\n"
+    "has even fooled Onçaléu."
+);
 
 const u8 gTuquinho082PokedexText[] = _(
-    "Bico colorido chama fêmeas de longe. Come\n"
-    "frutas silvestres.");
+    "Its bright bill calls females from far off.\n"
+    "It eats wild fruit."
+);
 
 const u8 gAracari083PokedexText[] = _(
-    "Voa em bando de 6. Todos comem da mesma\n"
-    "fruta ao mesmo tempo.");
+    "It flies in sixes. All of them eat from the\n"
+    "same fruit at once."
+);
 
 const u8 gCuricaca084PokedexText[] = _(
-    "Grito estridente ao amanhecer. Toda fazenda\n"
-    "de Arauana odeia esse Pokémon.");
+    "A shrill cry at daybreak. Every farm in\n"
+    "Arauana hates this Pokémon."
+);
 
 const u8 gSapim085PokedexText[] = _(
-    "Nada em cardumes. Vira Sapao quando as patas\n"
-    "crescem.");
+    "It swims in shoals, and becomes Sapao once\n"
+    "its legs come in."
+);
 
 const u8 gSapao086PokedexText[] = _(
-    "Glândulas atrás dos olhos soltam veneno\n"
-    "branco. Nunca lamba um Sapao.");
+    "Glands behind its eyes weep white poison.\n"
+    "Never lick a Sapao."
+);
 
 const u8 gCururu087PokedexText[] = _(
-    "Do tamanho de uma bola de futebol. Come\n"
-    "Muriçoco aos milhares.");
+    "The size of a football. It eats Muriçoco by\n"
+    "the thousand."
+);
 
 const u8 gTeiuzim088PokedexText[] = _(
-    "Corre em duas patas quando assustado. Rabo\n"
-    "destaca pra despistar predadores.");
+    "It runs on two legs when startled. Its tail\n"
+    "detaches to throw off predators."
+);
 
 const u8 gTeiu089PokedexText[] = _(
-    "Come tudo: frutas, ovos, pequenos animais.\n"
-    "Come até serpentes venenosas.");
+    "It eats everything: fruit, eggs, small\n"
+    "animals, even venomous snakes."
+);
 
 const u8 gCamaleao090PokedexText[] = _(
-    "Muda de cor pra combinar com o ambiente.\n"
-    "Também muda de humor de segundo em segundo.");
+    "It changes colour to match its surroundings,\n"
+    "and its mood by the second."
+);
 
 const u8 gMorcim091PokedexText[] = _(
-    "Dorme de cabeça pra baixo agarrado no teto\n"
-    "da caverna.");
+    "It sleeps upside down, gripping the roof of\n"
+    "the cave."
+);
 
 const u8 gMorcego092PokedexText[] = _(
-    "Enxerga com som. Voa no escuro absoluto sem\n"
-    "bater em nada.");
+    "It sees with sound, flying in absolute dark\n"
+    "without touching anything."
+);
 
 const u8 gVampiro093PokedexText[] = _(
-    "Suga sangue de mamíferos adormecidos. Deixa\n"
-    "o dono anêmico se convive muito tempo.");
+    "It drinks the blood of sleeping mammals.\n"
+    "Long company leaves its owner anaemic."
+);
 
 const u8 gPiuiuim094PokedexText[] = _(
-    "Fica em uma perna só a maior parte do tempo.\n"
-    "Cai se um vento forte pega.");
+    "It stands on one leg most of the time, and\n"
+    "topples if a hard wind catches it."
+);
 
 const u8 gTuiuiu095PokedexText[] = _(
-    "Ave símbolo do Pantanal. Bico enorme pesca\n"
-    "peixes com uma bicada só.");
+    "The bird of the Pantanal. Its huge bill\n"
+    "takes a fish in one stab."
+);
 
 const u8 gColhereiro096PokedexText[] = _(
-    "Rosa por comer crustáceos. Bico em formato\n"
-    "de colher.");
+    "Pink from eating shellfish. Its bill is\n"
+    "shaped like a spoon."
+);
 
 const u8 gMulinha097PokedexText[] = _(
-    "Filhote inocente. Nada indica o que vai\n"
-    "virar quando crescer.");
+    "An innocent foal. Nothing about it hints at\n"
+    "what it becomes."
+);
 
 const u8 gMula098PokedexText[] = _(
-    "Cavalga mais rápido que um cavalo. Zurro\n"
-    "assustador.");
+    "It rides faster than a horse. Its bray is\n"
+    "terrifying."
+);
 
 const u8 gMulaSemCabeca099PokedexText[] = _(
-    "Solta fogo do pescoço no lugar da cabeça.\n"
-    "Aparece nas sextas-feiras.");
+    "Fire pours from its neck where the head\n"
+    "should be. It comes on Fridays."
+);
 
 const u8 gCorcovado100PokedexText[] = _(
-    "Espírito de uma montanha inteira. Costas\n"
-    "cobertas de mata que respira.");
+    "The spirit of an entire mountain. Its back\n"
+    "is covered in forest, and it breathes."
+);
 
 const u8 gCervalo101PokedexText[] = _(
-    "Chifres pontudos ainda em desenvolvimento.\n"
-    "Salta arbustos com facilidade.");
+    "Its pointed horns are still coming in. It\n"
+    "clears bushes easily."
+);
 
 const u8 gCatingueiro102PokedexText[] = _(
-    "Chifres se ramificam com a idade. Come\n"
-    "cactos sem se machucar.");
+    "Its horns branch with age. It eats cactus\n"
+    "without hurting itself."
+);
 
 const u8 gSucuapara103PokedexText[] = _(
-    "Chifres tao grandes que precisam levantar a\n"
-    "cabeça pra passar pela mata.");
+    "Horns so wide it has to raise its head to\n"
+    "get through the woods."
+);
 
 const u8 gCabocim104PokedexText[] = _(
-    "Espírito das águas em forma humanoide. Nada\n"
-    "como um peixe.");
+    "A water spirit in human shape. It swims like\n"
+    "a fish."
+);
 
 const u8 gCaboclo105PokedexText[] = _(
-    "Puxa canoas pra fundo quando pescadores\n"
-    "desrespeitam o rio.");
+    "It drags canoes under when fishermen\n"
+    "disrespect the river."
+);
 
 const u8 gCangaco106PokedexText[] = _(
-    "Ave que rouba dos ricos e distribui pros\n"
-    "pobres - segundo os sertanejos.");
+    "A bird that robs the rich and gives to the\n"
+    "poor, so the backlanders say."
+);
 
 const u8 gXango107PokedexText[] = _(
-    "Domina raios e trovoes. Machado bipene solta\n"
-    "faíscas ao golpear.");
+    "Master of lightning and thunder. Its\n"
+    "twin-headed axe throws sparks when it\n"
+    "strikes."
+);
 
 const u8 gIemanja108PokedexText[] = _(
-    "Deusa dos oceanos. Filhas peixes seguem-na\n"
-    "em cortejo.");
+    "Goddess of the oceans. Her daughters, the\n"
+    "fish, follow her in procession."
+);
 
 const u8 gOxum109PokedexText[] = _(
-    "Rainha das águas doces. Cabelo de ouro\n"
-    "molhado escorre pra sempre.");
+    "Queen of fresh water. Her hair of wet gold\n"
+    "runs and never dries."
+);
 
 const u8 gOgum110PokedexText[] = _(
-    "Ferreiro divino. Forjou espadas que cortam a\n"
-    "alma dos malfeitores.");
+    "The divine blacksmith. He forged blades that\n"
+    "cut the souls of wrongdoers."
+);
 
 const u8 gCavalim111PokedexText[] = _(
-    "Crina longa esvoaça no vento. Aprende a\n"
-    "galopar em uma semana.");
+    "Its long mane streams in the wind. It learns\n"
+    "to gallop in a week."
+);
 
 const u8 gCavalgado112PokedexText[] = _(
-    "Corre 60 km/h por horas. Domesticado por\n"
-    "gaúchos de Arauana.");
+    "It runs at sixty an hour for hours. The\n"
+    "gauchos of Arauana tamed it."
+);
 
 const u8 gZebuim113PokedexText[] = _(
-    "Corcova enorme já visível no filhote. Ainda\n"
-    "inseguro nas patas.");
+    "Its huge hump already shows in the foal. It\n"
+    "is still unsure on its feet."
+);
 
 const u8 gZebu114PokedexText[] = _(
-    "Corcova gigante. Aguenta calor extremo do\n"
-    "cerrado sem se cansar.");
+    "A giant hump. It takes the worst heat of the\n"
+    "cerrado without tiring."
+);
 
 const u8 gOvelhinha115PokedexText[] = _(
-    "Lan grossa protege do frio serrano.\n"
-    "Docilíssima.");
+    "Thick wool against the highland cold.\n"
+    "Utterly gentle."
+);
 
 const u8 gCabrita116PokedexText[] = _(
-    "Sobe morros impossíveis. Come galhos secos.");
+    "It climbs impossible slopes and eats dry\n"
+    "branches."
+);
 
 const u8 gChocalhao117PokedexText[] = _(
-    "Chocalho no rabo ainda pequeno. Aprende a\n"
-    "tocar aos poucos.");
+    "The rattle on its tail is still small. It is\n"
+    "learning to play it."
+);
 
 const u8 gCascavelim118PokedexText[] = _(
-    "Veneno neurotóxico já plenamente ativo.\n"
-    "Chocalho intimida predadores.");
+    "Its neurotoxin is fully active. The rattle\n"
+    "warns predators off."
+);
 
 const u8 gCascavao119PokedexText[] = _(
-    "Uma mordida paralisa até Onçaléu. Chocalho\n"
-    "ouve-se a 100 metros.");
+    "One bite paralyses even Onçaléu. Its rattle\n"
+    "carries a hundred metres."
+);
 
 const u8 gJararaca120PokedexText[] = _(
-    "Camufla-se em folhas caídas. Nao avisa antes\n"
-    "de morder.");
+    "It hides among fallen leaves. It gives no\n"
+    "warning before it bites."
+);
 
 const u8 gPirarim121PokedexText[] = _(
-    "Nasce com 30 cm. Cresce um metro por ano em\n"
-    "rio bem alimentado.");
+    "Thirty centimetres at birth. It grows a\n"
+    "metre a year in a well-fed river."
+);
 
 const u8 gPirarucu122PokedexText[] = _(
-    "Até 3 metros de comprimento. Respira ar da\n"
-    "superfície como um mamífero.");
+    "Up to three metres long. It breathes surface\n"
+    "air like a mammal."
+);
 
 const u8 gPiranha123PokedexText[] = _(
-    "Ataca em cardume. Descarnam uma vaca em\n"
-    "minutos.");
+    "It attacks in shoals. They strip a cow in\n"
+    "minutes."
+);
 
 const u8 gTambaqui124PokedexText[] = _(
-    "Come frutas que caem dos igapós. Dentes\n"
-    "triturando sementes.");
+    "It eats fruit falling into the flooded\n"
+    "forest. Its teeth grind the seeds."
+);
 
 const u8 gAruana125PokedexText[] = _(
-    "Salta 2 metros fora dágua pra pegar insetos\n"
-    "em galhos.");
+    "It leaps two metres clear of the water to\n"
+    "take insects off branches."
+);
 
 const u8 gPoraque126PokedexText[] = _(
-    "Solta choque de 600 volts. Paralisa qualquer\n"
-    "coisa que toque a água.");
+    "It puts out a six hundred volt shock,\n"
+    "paralysing anything touching the water."
+);
 
 const u8 gCurimbata127PokedexText[] = _(
-    "Nada em cardumes gigantes. Migra rio acima\n"
-    "na piracema.");
+    "It swims in enormous shoals, running upriver\n"
+    "at spawning time."
+);
 
 const u8 gTraira128PokedexText[] = _(
-    "Espera imóvel entre folhas submersas. Dentes\n"
-    "afiados travam a presa.");
+    "It waits still among sunken leaves. Its\n"
+    "sharp teeth lock onto prey."
+);
 
 const u8 gDourado129PokedexText[] = _(
-    "Salta em cachoeiras rio acima. Escamas\n"
-    "douradas brilham como moedas.");
+    "It leaps up waterfalls. Its golden scales\n"
+    "shine like coins."
+);
 
 const u8 gTucunare130PokedexText[] = _(
-    "Mancha ocelada na cauda espanta predadores.\n"
-    "Ataca qualquer coisa que entre no\n"
-    "território.");
+    "The eyespot on its tail scares predators\n"
+    "off. It attacks anything entering its water."
+);
 
 const u8 gPacu131PokedexText[] = _(
-    "Dentes humanos triturando castanhas.\n"
-    "Confunde treinadores nadando.");
+    "Human-looking teeth grinding nuts. Swimmers\n"
+    "mistake it for one of their own."
+);
 
 const u8 gMatrinxa132PokedexText[] = _(
-    "Cardumes escuros deslizam pelas corredeiras.\n"
-    "Pesca esportiva popular.");
+    "Dark shoals slip through the rapids. A\n"
+    "favourite of sport anglers."
+);
 
 const u8 gPiau133PokedexText[] = _(
-    "Listras douradas laterais. Come tudo que cai\n"
-    "na água.");
+    "Gold stripes down its flanks. It eats\n"
+    "whatever falls in the water."
+);
 
 const u8 gCascudo134PokedexText[] = _(
-    "Placas duras cobrem o corpo. Roi lodo dos\n"
-    "aquários.");
+    "Hard plates cover its body. It scrapes the\n"
+    "algae off aquarium glass."
+);
 
 const u8 gAcara135PokedexText[] = _(
-    "Formato de disco colorido. Cria os filhotes\n"
-    "no próprio muco da pele.");
+    "A bright disc of a fish. It raises its young\n"
+    "on the mucus of its own skin."
+);
 
 const u8 gVagalumim136PokedexText[] = _(
-    "Bumbum acende só quando fica com medo.\n"
-    "Ilumina caminhos na mata.");
+    "Its tail lights only when it is frightened,\n"
+    "showing the way through the woods."
+);
 
 const u8 gVagalume137PokedexText[] = _(
-    "Piscadas em código atraem fêmeas. Ilumina 5\n"
-    "metros ao redor.");
+    "It blinks in code to draw females, lighting\n"
+    "five metres around it."
+);
 
 const u8 gCigarrinho138PokedexText[] = _(
-    "Vive 7 anos debaixo da terra antes de virar\n"
-    "Cigarrao.");
+    "It lives seven years underground before it\n"
+    "becomes Cigarrao."
+);
 
 const u8 gCigarrao139PokedexText[] = _(
-    "Canto de 100 decibéis. Sinal do verao em\n"
-    "Arauana.");
+    "A hundred-decibel song. The sign of summer\n"
+    "in Arauana."
+);
 
 const u8 gLouvadinha140PokedexText[] = _(
-    "Foices ainda pequenas mas afiadas. Come\n"
-    "formigas.");
+    "Its scythes are small but already sharp. It\n"
+    "eats ants."
+);
 
 const u8 gLouvadeus141PokedexText[] = _(
-    "Reza antes de decapitar a presa. Fêmea come\n"
-    "o macho após acasalar.");
+    "It prays before beheading its prey. The\n"
+    "female eats the male after mating."
+);
 
 const u8 gEscorpim142PokedexText[] = _(
-    "Ferrao translúcido no rabo. Uma picada tira\n"
-    "o sono da noite.");
+    "A see-through sting in its tail. One jab\n"
+    "costs a night's sleep."
+);
 
 const u8 gEscorpiao143PokedexText[] = _(
-    "Pinças esmagam besouros. Ferrao paralisa até\n"
-    "um Cavalgado.");
+    "Its claws crush beetles. Its sting can\n"
+    "paralyse even a Cavalgado."
+);
 
 const u8 gCaramulao144PokedexText[] = _(
-    "Concha espiralada com padrao folclórico.\n"
-    "Come alface das margens.");
+    "A spiral shell with a folk pattern on it. It\n"
+    "eats lettuce along the banks."
+);
 
 const u8 gPiolhao145PokedexText[] = _(
-    "Se enrola em bola quando ameaçado. Solta\n"
-    "cheiro de amêndoa amarga.");
+    "It curls into a ball when threatened, giving\n"
+    "off a smell of bitter almond."
+);
 
 const u8 gBarata146PokedexText[] = _(
-    "Sobrevive a qualquer coisa. Radiaçao,\n"
-    "veneno, chinelo.");
+    "It survives anything. Radiation, poison, a\n"
+    "flip-flop."
+);
 
 const u8 gGrilim147PokedexText[] = _(
-    "Salta 30 vezes o próprio tamanho. Toca\n"
-    "música com as pernas.");
+    "It leaps thirty times its own length, and\n"
+    "plays music with its legs."
+);
 
 const u8 gGrilao148PokedexText[] = _(
-    "Canto ininterrupto à noite. Anuncia chuva.");
+    "It sings without pause all night. It\n"
+    "announces rain."
+);
 
 const u8 gAranhao149PokedexText[] = _(
-    "Levanta as patas dianteiras antes de atacar.\n"
-    "Veneno neurotóxico grave.");
+    "It raises its front legs before it strikes.\n"
+    "Its neurotoxin is serious."
+);
 
 const u8 gVespao150PokedexText[] = _(
-    "Caça aranhas do tamanho de maos e as arrasta\n"
-    "pro ninho.");
+    "It hunts spiders the size of hands and drags\n"
+    "them back to the nest."
+);
 
 const u8 gMarimbondao151PokedexText[] = _(
-    "Ferroada dolorosa por horas. Faz ninho de\n"
-    "barro em telhados.");
+    "A sting that hurts for hours. It builds mud\n"
+    "nests on rooftops."
+);
 
 const u8 gTraca152PokedexText[] = _(
-    "Come móveis por dentro. Só se percebe quando\n"
-    "desmorona.");
+    "It eats furniture from the inside. Nobody\n"
+    "notices until it collapses."
+);
 
 const u8 gCorupiao153PokedexText[] = _(
-    "Vive 30 anos botando ovos sem parar.\n"
-    "Cupinzeiro cresce em torno dela.");
+    "She lives thirty years laying without pause.\n"
+    "The mound grows around her."
+);
 
 const u8 gCupinzim154PokedexText[] = _(
-    "Mandíbulas gigantes protegem a rainha. Nao\n"
-    "come - só briga.");
+    "Giant jaws guard the queen. It does not eat,\n"
+    "only fight."
+);
 
 const u8 gFormigaoPreto155PokedexText[] = _(
-    "Corre em fila indiana por quilômetros.\n"
-    "Devora tudo no caminho.");
+    "It marches in single file for kilometres,\n"
+    "devouring everything on the way."
+);
 
 const u8 gBeijaFlor156PokedexText[] = _(
-    "Bate as asas 80 vezes por segundo. Voa pra\n"
-    "trás e de cabeça pra baixo.");
+    "Its wings beat eighty times a second. It\n"
+    "flies backwards and upside down."
+);
 
 const u8 gSabia157PokedexText[] = _(
-    "Canto conhecido como o mais bonito do\n"
-    "Brasil. Anuncia a primavera.");
+    "Its song is held the most beautiful in\n"
+    "Brazil. It announces the spring."
+);
 
 const u8 gBemTeVi158PokedexText[] = _(
-    "Grita o próprio nome. Delator de tudo que\n"
-    "acontece no quintal.");
+    "It shouts its own name, telling the whole\n"
+    "yard what everyone did."
+);
 
 const u8 gUrutau159PokedexText[] = _(
-    "Se disfarça de galho seco. Canto lamentoso à\n"
-    "noite assusta viajantes.");
+    "It disguises itself as a dead branch. Its\n"
+    "mournful night song frightens travellers."
+);
 
 const u8 gCarcara160PokedexText[] = _(
-    "Come cobras, ratos e até cordeiros pequenos.\n"
-    "Símbolo do sertao.");
+    "It eats snakes, rats and even small lambs.\n"
+    "The emblem of the backlands."
+);
 
 const u8 gGaviao161PokedexText[] = _(
-    "Maior ave de rapina das Américas. Come\n"
-    "macacos e preguiças.");
+    "The largest bird of prey in the Americas. It\n"
+    "takes monkeys and sloths."
+);
 
 const u8 gUrubu162PokedexText[] = _(
-    "Come qualquer carne podre. Faz limpeza dos\n"
-    "campos.");
+    "It eats any rotting meat, and keeps the\n"
+    "fields clean."
+);
 
 const u8 gCorurupim163PokedexText[] = _(
-    "Olhos giram 270 graus. Vê no escuro total.");
+    "Its eyes turn 270 degrees. It sees in total\n"
+    "dark."
+);
 
 const u8 gCoruja164PokedexText[] = _(
-    "Vive em buracos no chao do cerrado. Voa em\n"
-    "silêncio absoluto.");
+    "It lives in burrows in the cerrado floor and\n"
+    "flies in complete silence."
+);
 
 const u8 gJaburu165PokedexText[] = _(
-    "Voa em bandos de centenas. Pesca peixes com\n"
-    "bico de espada.");
+    "It flies in flocks of hundreds, spearing\n"
+    "fish with a bill like a sword."
+);
 
 const u8 gEma166PokedexText[] = _(
-    "Maior ave do Brasil. Corre 60 km/h em fuga.");
+    "The largest bird in Brazil. It runs at sixty\n"
+    "an hour to escape."
+);
 
 const u8 gSeriema167PokedexText[] = _(
-    "Bate cobras venenosas contra o chao até\n"
-    "matar. Só depois come.");
+    "It beats venomous snakes on the ground until\n"
+    "they die, and only then eats."
+);
 
 const u8 gAnu168PokedexText[] = _(
-    "Vive em bandos ruidosos. Come carrapatos das\n"
-    "costas de vacas.");
+    "It lives in noisy flocks, picking ticks off\n"
+    "the backs of cattle."
+);
 
 const u8 gTrincaFerro169PokedexText[] = _(
-    "Canto tao forte que treinadores premiam pelo\n"
-    "timbre em concursos.");
+    "A song so strong that trainers award prizes\n"
+    "for its tone at contests."
+);
 
 const u8 gCurio170PokedexText[] = _(
-    "Canto elaborado com trinados. Ave mais\n"
-    "valiosa em disputas de canto.");
+    "An elaborate song full of trills. The most\n"
+    "prized bird in singing contests."
+);
 
 const u8 gSanhaco171PokedexText[] = _(
-    "Azul cintilante brilha no sol. Come frutas\n"
-    "em quintais.");
+    "A glittering blue that catches the sun. It\n"
+    "eats fruit in back gardens."
+);
 
 const u8 gPapaFormiga172PokedexText[] = _(
-    "Come exclusivamente formigas correiçao.\n"
-    "Segue enxames por dias.");
+    "It eats nothing but army ants, following the\n"
+    "swarms for days."
+);
 
 const u8 gChoca173PokedexText[] = _(
-    "Vive na sombra baixa. Assusta borboletas com\n"
-    "bater de asas.");
+    "It lives in the low shade, startling\n"
+    "butterflies with a beat of its wings."
+);
 
 const u8 gBacurau174PokedexText[] = _(
-    "Voa rasante caçando insetos. Boca gigante\n"
-    "abre no ar.");
+    "It skims low after insects, its huge mouth\n"
+    "opening in mid-air."
+);
 
 const u8 gJoaoDeBarro175PokedexText[] = _(
-    "Constrói ninho de barro em forma de forno.\n"
-    "Vira símbolo em pátios rurais.");
+    "It builds a clay nest shaped like an oven,\n"
+    "an emblem of country yards."
+);
 
 const u8 gSementim176PokedexText[] = _(
-    "Semente-de-jequitibá que aprendeu a andar em\n"
-    "duas raízes.");
+    "A jequitibá seed that learned to walk on two\n"
+    "roots."
+);
 
 const u8 gMuda177PokedexText[] = _(
-    "Broto de árvore com folhinhas de sol.\n"
-    "Rega-se sozinha nas chuvas.");
+    "A sapling with little sun-catching leaves.\n"
+    "The rain waters it for free."
+);
 
 const u8 gJequitiba178PokedexText[] = _(
-    "Árvore centenária ambulante. Passa mais\n"
-    "tempo parada do que andando.");
+    "A hundred-year tree that walks. It stands\n"
+    "still far more than it moves."
+);
 
 const u8 gBromelinha179PokedexText[] = _(
-    "Copo natural que junta água da chuva. Sapos\n"
-    "vivem dentro.");
+    "A natural cup that gathers rainwater. Frogs\n"
+    "live inside it."
+);
 
 const u8 gOrquidina180PokedexText[] = _(
-    "Pétalas iridescentes. Aroma atrai\n"
-    "polinizadores por quilômetros.");
+    "Iridescent petals. Its scent draws\n"
+    "pollinators from kilometres away."
+);
 
 const u8 gVitoriaregia181PokedexText[] = _(
-    "Folha do tamanho de uma cama de casal.\n"
-    "Aguenta uma criança em pé.");
+    "A leaf the size of a double bed. It holds a\n"
+    "standing child."
+);
 
 const u8 gIpe182PokedexText[] = _(
-    "Perde as folhas e floresce amarelo no\n"
-    "inverno seco.");
+    "It drops its leaves and flowers yellow in\n"
+    "the dry winter."
+);
 
 const u8 gCipo183PokedexText[] = _(
-    "Se enrosca em árvores e sufoca. Longuíssimo\n"
-    "- dá volta em morros.");
+    "It winds around trees and strangles them. So\n"
+    "long it can ring a hill."
+);
 
 const u8 gPalmito184PokedexText[] = _(
-    "Coraçao da palmeira é iguaria disputada. Se\n"
-    "defende com espinhos no tronco.");
+    "Its palm heart is a prized delicacy, so it\n"
+    "defends itself with a spined trunk."
+);
 
 const u8 gBabacu185PokedexText[] = _(
-    "Coco duríssimo. Só Petropico consegue\n"
-    "quebrar.");
+    "A coconut of terrible hardness. Only\n"
+    "Petropico can crack it."
+);
 
 const u8 gBuriti186PokedexText[] = _(
-    "Cresce onde tem água doce escondida.\n"
-    "Sinaliza oásis no cerrado.");
+    "It grows where fresh water hides, marking\n"
+    "oases in the cerrado."
+);
 
 const u8 gCajuzim187PokedexText[] = _(
-    "Fruta que anda. Castanha na cabeça balança\n"
-    "como topete.");
+    "A fruit that walks. The nut on its head bobs\n"
+    "like a quiff."
+);
 
 const u8 gCajueiro188PokedexText[] = _(
-    "Assa a própria castanha ao sol da caatinga.\n"
-    "Aroma inebriante.");
+    "It roasts its own nut in the caatinga sun.\n"
+    "The smell is intoxicating."
+);
 
 const u8 gAcai189PokedexText[] = _(
-    "Cacho roxo escuro no topo. Energético\n"
-    "natural pros Pokémon lutadores.");
+    "A dark purple cluster on top. Natural fuel\n"
+    "for Fighting Pokémon."
+);
 
 const u8 gCacauim190PokedexText[] = _(
-    "Fruto amarelo com sementes doces. Vira\n"
-    "Chocolat na fermentaçao.");
+    "A yellow fruit with sweet seeds. Fermenting\n"
+    "turns it into Chocolat."
+);
 
 const u8 gCacaueiro191PokedexText[] = _(
-    "Vagens roxas quando maduras. Origem do\n"
-    "chocolate de Arauana.");
+    "Purple pods when ripe. The origin of Arauana\n"
+    "chocolate."
+);
 
 const u8 gGuarana192PokedexText[] = _(
-    "Semente pretíssima parece um olho. Energia\n"
-    "natural pura.");
+    "A seed so black it looks like an eye. Pure\n"
+    "natural energy."
+);
 
 const u8 gMate193PokedexText[] = _(
-    "Folhas amargas viram chimarrao. Companheiro\n"
-    "dos gaúchos de Arauana.");
+    "Its bitter leaves make chimarrao, companion\n"
+    "of the Arauana gauchos."
+);
 
 const u8 gMilho194PokedexText[] = _(
-    "Espigas coloridas amarela, vermelha, roxa.\n"
-    "Alimento das aldeias.");
+    "Ears in yellow, red and purple. The food of\n"
+    "the villages."
+);
 
 const u8 gMandioca195PokedexText[] = _(
-    "Raiz alongada parece perna. Enterra a si\n"
-    "mesma pra dormir.");
+    "A long root shaped like a leg. It buries\n"
+    "itself to sleep."
+);
 
 const u8 gPedrinha196PokedexText[] = _(
-    "Pedra rolada por milênios. Perfeitamente\n"
-    "lisa.");
+    "A stone rolled for millennia. Perfectly\n"
+    "smooth."
+);
 
 const u8 gRochao197PokedexText[] = _(
-    "Rocha ambulante que ronca ao rolar. Faz\n"
-    "tremer o chao.");
+    "A walking rock that rumbles as it rolls,\n"
+    "shaking the ground."
+);
 
 const u8 gCristalim198PokedexText[] = _(
-    "Cristal transparente. Cresce um centímetro\n"
-    "por ano em cavernas úmidas.");
+    "A clear crystal. It grows a centimetre a\n"
+    "year in damp caves."
+);
 
 const u8 gAmetista199PokedexText[] = _(
-    "Geodo roxo brilhante. Refrata o sol em\n"
-    "arco-íris.");
+    "A bright purple geode. It breaks the sun\n"
+    "into rainbows."
+);
 
 const u8 gOurico200PokedexText[] = _(
-    "Pepita ambulante. Bandidos perseguem por\n"
-    "Arauana inteira.");
+    "A walking nugget. Bandits chase it across\n"
+    "the whole of Arauana."
+);
 
 const u8 gFerrolho201PokedexText[] = _(
-    "Rocha pesadíssima. Ficha em pé só se plantar\n"
-    "as raízes.");
+    "A rock of terrible weight. It only stands if\n"
+    "it puts down roots."
+);
 
 const u8 gDiamantina202PokedexText[] = _(
-    "Pedra preciosíssima. Reflete arco-íris em\n"
-    "qualquer luz.");
+    "A gem of the highest order. It throws\n"
+    "rainbows in any light."
+);
 
 const u8 gBauxito203PokedexText[] = _(
-    "Cor terracota. Se descama em placas\n"
-    "metálicas.");
+    "Terracotta coloured. It flakes away in metal\n"
+    "sheets."
+);
 
 const u8 gManganim204PokedexText[] = _(
-    "Preto brilhante. Absorve luz ao redor.");
+    "A shining black. It swallows the light\n"
+    "around it."
+);
 
 const u8 gSalitre205PokedexText[] = _(
-    "Cristaliza sozinho em salinas. Doce e amargo\n"
-    "ao mesmo tempo.");
+    "It crystallises by itself in salt flats.\n"
+    "Sweet and bitter at once."
+);
 
 const u8 gEnxofrino206PokedexText[] = _(
-    "Cheiro de ovo podre. Cresce em fumarolas.");
+    "It smells of rotten egg. It grows in\n"
+    "volcanic vents."
+);
 
 const u8 gArgilim207PokedexText[] = _(
-    "Se molda em qualquer forma. Vira Boneco\n"
-    "quando um humano brinca.");
+    "It moulds into any shape, and becomes Boneco\n"
+    "when a child plays with it."
+);
 
 const u8 gBoneco208PokedexText[] = _(
-    "Argila animada por brincadeiras de criança.\n"
-    "Guarda memórias afetivas.");
+    "Clay brought to life by a child's game. It\n"
+    "keeps the memories fondly."
+);
 
 const u8 gEstalactite209PokedexText[] = _(
-    "Cresce uma gota por século. Se ofende se\n"
-    "chamada de estalagmite.");
+    "It grows a drop a century, and takes offence\n"
+    "at being called a stalagmite."
+);
 
 const u8 gEstalagmite210PokedexText[] = _(
-    "Cresce apontando pra cima. Nao gosta de\n"
-    "estalactites.");
+    "It grows pointing upward, and does not care\n"
+    "for stalactites."
+);
 
 const u8 gFossil211PokedexText[] = _(
-    "Osso de dinossauro que voltou a andar.\n"
-    "Ninguém sabe como.");
+    "A dinosaur bone that started walking again.\n"
+    "Nobody knows how."
+);
 
 const u8 gMeteorito212PokedexText[] = _(
-    "Caiu do céu há milênios. Ainda quente ao\n"
-    "toque.");
+    "It fell out of the sky millennia ago, and is\n"
+    "still warm to the touch."
+);
 
 const u8 gVulcanite213PokedexText[] = _(
-    "Formada em erupçao antiga. Guarda calor por\n"
-    "séculos.");
+    "Formed in an ancient eruption. It holds its\n"
+    "heat for centuries."
+);
 
 const u8 gMarmim214PokedexText[] = _(
-    "Escultura clássica ganhou vida por magia.\n"
-    "Elegantíssimo.");
+    "A classical sculpture brought to life by\n"
+    "magic. Utterly elegant."
+);
 
 const u8 gGranito215PokedexText[] = _(
-    "Rachaduras naturais formam rostos zangados.");
+    "Its natural cracks make the shapes of angry\n"
+    "faces."
+);
 
 const u8 gCaranguim216PokedexText[] = _(
-    "Bebê caranguejo saltitante. Pinça já\n"
-    "mordisca dedos.");
+    "A hopping baby crab. Its claw already nips\n"
+    "fingers."
+);
 
 const u8 gGuaiamum217PokedexText[] = _(
-    "Vive em tocas no manguezal. Sai à noite em\n"
-    "bandos.");
+    "It lives in mangrove burrows and comes out\n"
+    "at night in groups."
+);
 
 const u8 gSiri218PokedexText[] = _(
-    "Nada de lado. Pinças azuis brilhantes.");
+    "It swims sideways. Its claws are a brilliant\n"
+    "blue."
+);
 
 const u8 gCamarao219PokedexText[] = _(
-    "Nada em bandos rosados. Delícia grelhada -\n"
-    "segundo turistas.");
+    "It swims in pink shoals. Delicious grilled,\n"
+    "so the tourists say."
+);
 
 const u8 gPolvim220PokedexText[] = _(
-    "Muda de cor pra combinar com o fundo do mar.\n"
-    "Solta tinta.");
+    "It changes colour to match the sea floor,\n"
+    "and squirts ink."
+);
 
 const u8 gPolvao221PokedexText[] = _(
-    "8 braços resolvem quebra-cabeças. Abre potes\n"
-    "com tampa.");
+    "Eight arms that solve puzzles. It opens jars\n"
+    "with lids."
+);
 
 const u8 gAguaviva222PokedexText[] = _(
-    "Tentáculos urticantes de metros. Flutua com\n"
-    "as correntes.");
+    "Stinging tentacles metres long. It drifts\n"
+    "with the current."
+);
 
 const u8 gCavalimMarinho223PokedexText[] = _(
-    "Macho engravida e cuida dos filhotes. Nada\n"
-    "em pé.");
+    "The male carries and raises the young. It\n"
+    "swims upright."
+);
 
 const u8 gTartaruguim224PokedexText[] = _(
-    "Nasce na praia e corre pro mar por instinto.\n"
-    "Frágil demais.");
+    "It hatches on the beach and runs for the sea\n"
+    "on instinct. Terribly fragile."
+);
 
 const u8 gTartaruga225PokedexText[] = _(
-    "Vive 100 anos. Volta à praia onde nasceu pra\n"
-    "desovar.");
+    "It lives a hundred years, returning to lay\n"
+    "on the beach where it hatched."
+);
 
 const u8 gGolfinho226PokedexText[] = _(
-    "Salta em piruetas. Se comunica em cliques\n"
-    "agudos.");
+    "It leaps in pirouettes and talks in high\n"
+    "clicks."
+);
 
 const u8 gBaleia227PokedexText[] = _(
-    "Canta cançoes que percorrem oceanos. Migra\n"
-    "sazonalmente.");
+    "It sings songs that cross oceans, and\n"
+    "migrates with the seasons."
+);
 
 const u8 gTubarim228PokedexText[] = _(
-    "Já nasce nadando e caçando. Sem infância.");
+    "It is born already swimming and hunting. It\n"
+    "has no childhood."
+);
 
 const u8 gTubarao229PokedexText[] = _(
-    "Rei do mar. Dentes serrilhados regeneram\n"
-    "infinitamente.");
+    "King of the sea. Its serrated teeth grow\n"
+    "back forever."
+);
 
 const u8 gArraia230PokedexText[] = _(
-    "Se camufla no fundo. Choque paralisa\n"
-    "banhistas descuidados.");
+    "It hides on the bottom. Its shock paralyses\n"
+    "careless bathers."
+);
 
 const u8 gPeixeEspada231PokedexText[] = _(
-    "Rostro em forma de espada. Perfura cascos de\n"
-    "barco.");
+    "A bill shaped like a sword. It runs through\n"
+    "the hulls of boats."
+);
 
 const u8 gPargo232PokedexText[] = _(
-    "Escamas vermelhas brilham no sol. Cardume\n"
-    "gigante nos recifes.");
+    "Red scales flashing in the sun. Huge shoals\n"
+    "over the reefs."
+);
 
 const u8 gPescadao233PokedexText[] = _(
-    "Antena com isca luminosa engana peixes\n"
-    "menores.");
+    "A lit lure on its antenna fools smaller\n"
+    "fish."
+);
 
 const u8 gLoirinha234PokedexText[] = _(
-    "Aparece em espelhos de escolas à noite.\n"
-    "Chama seu nome.");
+    "It appears in school mirrors at night,\n"
+    "calling its own name."
+);
 
 const u8 gCuca235PokedexText[] = _(
-    "Rouba crianças que nao dormem. Nem sempre é\n"
-    "real.");
+    "It takes children who will not sleep. It is\n"
+    "not always real."
+);
 
 const u8 gBichoPapao236PokedexText[] = _(
-    "Vive embaixo de camas. Só assusta crianças\n"
-    "desobedientes.");
+    "It lives under beds, and frightens only\n"
+    "disobedient children."
+);
 
 const u8 gLobisomem237PokedexText[] = _(
-    "Sétimo filho homem em lua cheia. Uivo faz\n"
-    "caes fugirem.");
+    "The seventh son under a full moon. Its howl\n"
+    "sends dogs running."
+);
 
 const u8 gCorpoSeco238PokedexText[] = _(
-    "Alma tao ruim que nem a terra aceita. Vaga\n"
-    "eternamente.");
+    "A soul so bad the earth will not have it. It\n"
+    "wanders forever."
+);
 
 const u8 gMaoPeluda239PokedexText[] = _(
-    "Mao gigante peluda sai debaixo da cama. Pega\n"
-    "os pés.");
+    "A giant hairy hand comes out from under the\n"
+    "bed and takes your feet."
+);
 
 const u8 gPernaCabeluda240PokedexText[] = _(
-    "Perna cabeluda anda sozinha à noite.\n"
-    "Persegue solitários.");
+    "A hairy leg walks alone at night, following\n"
+    "anyone out on their own."
+);
 
 const u8 gComadre241PokedexText[] = _(
-    "Espírito de mulher que morreu no parto.\n"
-    "Sequestra bebês.");
+    "The spirit of a woman who died in\n"
+    "childbirth. She takes babies."
+);
 
 const u8 gAnhanga242PokedexText[] = _(
-    "Protetor dos animais. Amaldiçoa caçadores\n"
-    "gulosos.");
+    "Protector of animals. It curses hunters who\n"
+    "take more than their share."
+);
 
 const u8 gJurupari243PokedexText[] = _(
-    "Deus tupi da noite. Só homens podem ver o\n"
-    "rosto.");
+    "The Tupi god of night. Only men may see his\n"
+    "face."
+);
 
 const u8 gTupa244PokedexText[] = _(
-    "Deus supremo tupi-guarani. Solta relâmpagos\n"
-    "com um piscar.");
+    "The supreme Tupi-Guarani god. He looses\n"
+    "lightning with a blink."
+);
 
 const u8 gJaci245PokedexText[] = _(
-    "Deusa da lua. Cabelo prateado brilha nas\n"
-    "noites de lua cheia.");
+    "Goddess of the moon. Her silver hair shines\n"
+    "on full-moon nights."
+);
 
 const u8 gGuaraci246PokedexText[] = _(
-    "Deus do sol. Coroa dourada ilumina Arauana\n"
-    "inteira.");
+    "God of the sun. His golden crown lights the\n"
+    "whole of Arauana."
+);
 
 const u8 gRuda247PokedexText[] = _(
-    "Deus do amor. Flecha de flor faz coraçoes se\n"
-    "encontrarem.");
+    "God of love. His flower arrow brings two\n"
+    "hearts together."
+);
 
 const u8 gAlua248PokedexText[] = _(
-    "Espírito da bebida fermentada. Alegra festas\n"
-    "em pajelanças.");
+    "Spirit of fermented drink. It brightens the\n"
+    "feasts of the healers."
+);
 
 const u8 gJenipapo249PokedexText[] = _(
-    "Tinta preta que dura semanas na pele. Pinta\n"
-    "padroes de bênçao.");
+    "Black paint that lasts weeks on the skin. It\n"
+    "draws patterns of blessing."
+);
 
 const u8 gUrucum250PokedexText[] = _(
-    "Tinta vermelha ancestral. Repele insetos.");
+    "An ancestral red paint. It keeps insects\n"
+    "away."
+);
 
 const u8 gCaipora251PokedexText[] = _(
-    "Monta em porco-do-mato. Protege a caça -\n"
-    "persegue caçadores que exageram.");
+    "It rides a wild boar. It guards the game and\n"
+    "hunts down greedy hunters."
+);
 
 const u8 gAnhangaPita252PokedexText[] = _(
-    "Forma vermelha do Anhangá quando enfurecido.");
+    "The red form Anhangá takes when it is\n"
+    "enraged."
+);
 
 const u8 gYaraPinda253PokedexText[] = _(
-    "Yara em forma de pescadora. Ensina jovens a\n"
-    "respeitar o rio.");
+    "Yara as a fisherwoman. She teaches the young\n"
+    "to respect the river."
+);
 
 const u8 gPisadeira254PokedexText[] = _(
-    "Pisa no peito de quem dorme de barriga\n"
-    "cheia. Paralisia.");
+    "It stands on the chest of anyone who sleeps\n"
+    "on a full stomach. Paralysis."
+);
 
 const u8 gZumbi255PokedexText[] = _(
-    "Espírito líder de quilombo. Inspira coragem\n"
-    "em quem luta pela liberdade.");
+    "The spirit that led a quilombo. It puts\n"
+    "courage in whoever fights to be free."
+);
 
 const u8 gIemanjaPequena256PokedexText[] = _(
-    "Forma jovem da deusa Iemanjá. Rege marés\n"
-    "menores.");
+    "The young form of the goddess Iemanjá. She\n"
+    "rules the smaller tides."
+);
 
 const u8 gOssanha257PokedexText[] = _(
-    "Domina o poder das folhas medicinais. Cura\n"
-    "Pokémon envenenados.");
+    "It commands the power of healing leaves, and\n"
+    "cures poisoned Pokémon."
+);
 
 const u8 gOxala258PokedexText[] = _(
-    "Espírito criador. Vestido de branco, benze\n"
-    "quem se aproxima.");
+    "The creator spirit. Dressed in white, it\n"
+    "blesses whoever comes near."
+);
 
 const u8 gSaciamigo259PokedexText[] = _(
-    "Filhote de Saci. Ainda nao domina os\n"
-    "redemoinhos.");
+    "A young Saci. It has not mastered the\n"
+    "whirlwinds yet."
+);
 
 const u8 gSaciperere260PokedexText[] = _(
-    "Chapéu vermelho, cachimbo, uma perna. Solto\n"
-    "pelo folclore inteiro.");
+    "Red cap, pipe, one leg. Loose through the\n"
+    "whole of folklore."
+);
 
 const u8 gCurupiraAnciao261PokedexText[] = _(
-    "Curupira anciao cabeludo. Sabe onde toda\n"
-    "árvore ancestral cresce.");
+    "A long-haired elder Curupira. It knows where\n"
+    "every ancient tree grows."
+);
 
 const u8 gCaiporaFemea262PokedexText[] = _(
-    "Forma feminina do Caipora. Ainda mais rígida\n"
-    "com caçadores gulosos.");
+    "The female form of Caipora, and harder still\n"
+    "on greedy hunters."
+);
 
 const u8 gPombaGira263PokedexText[] = _(
-    "Espírito feminino sedutor. Ri alto nas\n"
-    "encruzilhadas.");
+    "A seductive female spirit. She laughs loudly\n"
+    "at the crossroads."
+);
 
 const u8 gExu264PokedexText[] = _(
-    "Guardiao das encruzilhadas. Nada passa sem\n"
-    "seu aval.");
+    "Guardian of the crossroads. Nothing passes\n"
+    "without his leave."
+);
 
 const u8 gPretoVelho265PokedexText[] = _(
-    "Espírito ancestral. Fuma cachimbo e dá\n"
-    "conselhos milenares.");
+    "An ancestral spirit. It smokes a pipe and\n"
+    "gives thousand-year-old advice."
+);
 
 const u8 gCabocloGuerreiro266PokedexText[] = _(
-    "Guerreiro indígena espectral. Cocar de penas\n"
-    "coloridas.");
+    "A spectral indigenous warrior in a headdress\n"
+    "of bright feathers."
+);
 
 const u8 gMarinheiro267PokedexText[] = _(
-    "Espírito de marujo afogado. Conta histórias\n"
-    "de tempestades.");
+    "The spirit of a drowned sailor. It tells\n"
+    "stories of storms."
+);
 
 const u8 gBaiano268PokedexText[] = _(
-    "Espírito festeiro. Toca berimbau sem parar.");
+    "A festive spirit. It plays the berimbau\n"
+    "without stopping."
+);
 
 const u8 gCangaceiro269PokedexText[] = _(
-    "Espírito de Lampiao. Chapéu de couro\n"
-    "tachonado.");
+    "The spirit of Lampiao, in a studded leather\n"
+    "hat."
+);
 
 const u8 gBeata270PokedexText[] = _(
-    "Espírito de Padre Cícero. Benze com terço de\n"
-    "mandacaru.");
+    "The spirit of Padre Cicero. It blesses with\n"
+    "a rosary of cactus beads."
+);
 
 const u8 gMeninoDeus271PokedexText[] = _(
-    "Espírito de criança inocente. Aparece em\n"
-    "folias de reis.");
+    "The spirit of an innocent child. It appears\n"
+    "in the Kings' revels."
+);
 
 const u8 gReiMomo272PokedexText[] = _(
-    "Rei do carnaval. Trono de purpurina.");
+    "King of carnival, on a throne of glitter."
+);
 
 const u8 gBumbaMeuBoi273PokedexText[] = _(
-    "Espírito do boi de folia. Ressuscita em cada\n"
-    "apresentaçao.");
+    "The spirit of the festival ox. It rises\n"
+    "again at every performance."
+);
 
 const u8 gReisado274PokedexText[] = _(
-    "Espírito folia de reis. Sanfona toca\n"
-    "sozinha.");
+    "A spirit of the Kings' revel. Its accordion\n"
+    "plays by itself."
+);
 
 const u8 gFrevinho275PokedexText[] = _(
-    "Espírito do frevo pernambucano. Dança\n"
-    "acrobática sem parar.");
+    "The spirit of the Pernambuco frevo. It\n"
+    "dances acrobatically without pause."
+);
 
 const u8 gMaracatu276PokedexText[] = _(
-    "Cortejo real espectral. Coroa dourada e\n"
-    "vestes bordadas.");
+    "A spectral royal procession, in a gold crown\n"
+    "and embroidered robes."
+);
 
 const u8 gCongada277PokedexText[] = _(
-    "Espírito guerreiro em cortejo. Bastoes batem\n"
-    "em ritmo.");
+    "A warrior spirit in procession. Its staves\n"
+    "beat in rhythm."
+);
 
 const u8 gFoliao278PokedexText[] = _(
-    "Espírito que percorre festas. Nunca cansa de\n"
-    "dançar.");
+    "A spirit that goes from feast to feast. It\n"
+    "never tires of dancing."
+);
 
 const u8 gOncuma279PokedexText[] = _(
-    "Onça-preta lendária. Deusa das florestas\n"
-    "noturnas.");
+    "The legendary black jaguar. Goddess of the\n"
+    "night forests."
+);
 
 const u8 gSucuriacu280PokedexText[] = _(
-    "Sucuri de 10 metros. Engole capivaras\n"
-    "inteiras.");
+    "A ten-metre anaconda. It swallows capybaras\n"
+    "whole."
+);
 
 const u8 gPirarumba281PokedexText[] = _(
-    "Pirarucu-rei. 5 metros e escamas de\n"
-    "armadura.");
+    "The king pirarucu. Five metres, with scales\n"
+    "like armour."
+);
 
 const u8 gDraguaraAlfa282PokedexText[] = _(
-    "Draguará alfa da matilha lendária. Fogo\n"
-    "turquesa esverdeado.");
+    "The alpha Draguará of the legendary pack.\n"
+    "Its fire burns green-turquoise."
+);
 
 const u8 gTerolibraRainha283PokedexText[] = _(
-    "Rainha enorme dos Terolibra. Comanda\n"
-    "enxames.");
+    "The enormous Terolibra queen. She commands\n"
+    "the swarms."
+);
 
 const u8 gPetropicoAnciao284PokedexText[] = _(
-    "Petropico centenário. Bico esculpiu chapadas\n"
-    "inteiras.");
+    "A hundred-year-old Petropico. Its beak\n"
+    "carved whole plateaus."
+);
 
 const u8 gBoitataPuro285PokedexText[] = _(
-    "Boitatá primordial. Fogo azul que devora\n"
-    "bosques inteiros.");
+    "The first Boitatá. Blue fire that devours\n"
+    "entire woods."
+);
 
 const u8 gIaraMae286PokedexText[] = _(
-    "Iara mae de todas. Canto ouvido só uma vez\n"
-    "por vida.");
+    "Iara, mother of them all. Her song is heard\n"
+    "once in a lifetime."
+);
 
 const u8 gCurupiraRei287PokedexText[] = _(
-    "Curupira rei da floresta. Cabelos de fogo\n"
-    "cor de urucum.");
+    "The Curupira king of the forest. His hair is\n"
+    "fire the colour of urucum."
+);
 
 const u8 gSaciRei288PokedexText[] = _(
-    "Saci-Pererê ancestral. Chapéu vermelho\n"
-    "lendário.");
+    "The ancestral Saci-Pererê, in the legendary\n"
+    "red cap."
+);
 
 const u8 gAnhangau289PokedexText[] = _(
-    "Anhangá supremo. Veados brancos o seguem.");
+    "The supreme Anhangá. White deer walk behind\n"
+    "it."
+);
 
 const u8 gMuiraKyta290PokedexText[] = _(
-    "Amor amazônico convertido em árvore.");
+    "An Amazonian love turned into a tree."
+);
 
 const u8 gCobraNorato291PokedexText[] = _(
-    "Homem-serpente. Boiuna vira homem nas\n"
-    "festas.");
+    "The snake-man. Boiuna takes human shape at\n"
+    "the feasts."
+);
 
 const u8 gMapinguari292PokedexText[] = _(
-    "Preguiça-gigante primordial. Boca no peito,\n"
-    "cheiro de morte.");
+    "The primordial giant sloth. A mouth in its\n"
+    "chest, and the smell of death."
+);
 
 const u8 gIpupiara293PokedexText[] = _(
-    "Homem-peixe canibal. Terror dos pescadores\n"
-    "antigos.");
+    "A cannibal fish-man. The terror of the old\n"
+    "fishermen."
+);
 
 const u8 gUirapuru294PokedexText[] = _(
-    "Ave lendária. Canto silencia toda a mata\n"
-    "quando canta.");
+    "A legendary bird. The whole forest falls\n"
+    "silent when it sings."
+);
 
 const u8 gMuiraquita295PokedexText[] = _(
-    "Amuleto verde-jade das Icamiabas. Traz sorte\n"
-    "em batalhas.");
+    "The jade-green amulet of the Icamiabas. It\n"
+    "brings luck in battle."
+);
 
 const u8 gAmazona296PokedexText[] = _(
-    "Guerreira sem seio esquerdo pra atirar arco.\n"
-    "Rainha de tribo lendária.");
+    "A warrior without her left breast, the\n"
+    "better to draw a bow. Queen of a legendary\n"
+    "tribe."
+);
 
 const u8 gCorcovadoAnciao297PokedexText[] = _(
-    "Corcovado antigo. Costa cheia de árvores\n"
-    "primárias.");
+    "An ancient Corcovado. Its back is covered in\n"
+    "old-growth forest."
+);
 
 const u8 gCristo298PokedexText[] = _(
-    "Espírito de maos abertas. Abençoa quem vê o\n"
-    "nascer do sol.");
+    "A spirit with open hands. It blesses whoever\n"
+    "sees the sun rise."
+);
 
 const u8 gRatao299PokedexText[] = _(
-    "Vive em esgotos. Come qualquer coisa.");
+    "It lives in the sewers and eats anything at\n"
+    "all."
+);
 
 const u8 gPombim300PokedexText[] = _(
-    "Fura sacos de lixo. Cocô arruína estátuas.");
+    "It rips open rubbish bags. Its droppings\n"
+    "ruin statues."
+);
 
 const u8 gPombao301PokedexText[] = _(
-    "Pomba enorme. Domina praças inteiras.");
+    "An enormous pigeon. It rules whole town\n"
+    "squares."
+);
 
 const u8 gBaratao302PokedexText[] = _(
-    "Barata voadora do apocalipse. Voa em direçao\n"
-    "a pessoas gritando.");
+    "The flying cockroach of the apocalypse. It\n"
+    "flies straight at screaming people."
+);
 
 const u8 gMosquim303PokedexText[] = _(
-    "Rajadinho listrado. Transmite doenças.");
+    "A streaked brown rat. It carries disease."
+);
 
 const u8 gCaoBravo304PokedexText[] = _(
-    "Contraparte selvagem do Caramelo. Vive em\n"
-    "bando defendendo território.");
+    "The wild counterpart of Caramelo. It runs in\n"
+    "packs and defends its ground."
+);
 
 const u8 gGatoPreto305PokedexText[] = _(
-    "Diz que dá azar cruzar caminho. Diz.");
+    "They say it is bad luck if it crosses your\n"
+    "path. They say."
+);
 
 const u8 gPerereca306PokedexText[] = _(
-    "Aparece em vasos sanitários. Salta na cara\n"
-    "de quem senta.");
+    "It turns up in toilet bowls and jumps at the\n"
+    "face of whoever sits down."
+);
 
 const u8 gLagartixa307PokedexText[] = _(
-    "Come mosquitos. Rabo cai e continua se\n"
-    "mexendo.");
+    "It eats mosquitoes. Its tail drops off and\n"
+    "keeps moving."
+);
 
 const u8 gTracaPapel308PokedexText[] = _(
-    "Come papel antigo. Absorve o conhecimento\n"
-    "dos livros.");
+    "It eats old paper, taking in the knowledge\n"
+    "of the books."
+);
 
 const u8 gPoeirao309PokedexText[] = _(
-    "Bola de poeira ambulante. Aumenta em salas\n"
-    "fechadas.");
+    "A walking ball of dust. It grows in shut\n"
+    "rooms."
+);
 
 const u8 gFerrugem310PokedexText[] = _(
-    "Come metal de dentro. Pontes desabam sem\n"
-    "aviso.");
+    "It eats metal from the inside. Bridges fall\n"
+    "without warning."
+);
 
 const u8 gFumacento311PokedexText[] = _(
-    "Nuvem de fumaça de ônibus. Escurece céus\n"
-    "urbanos.");
+    "A cloud of bus exhaust. It darkens city\n"
+    "skies."
+);
 
 const u8 gOleoso312PokedexText[] = _(
-    "Mancha de vazamento. Mata Pokémon marinhos.");
+    "An oil slick given shape. It kills sea\n"
+    "Pokémon."
+);
 
 const u8 gLixao313PokedexText[] = _(
-    "Pilha viva de lixo urbano. Vira Chorume\n"
-    "quando chove.");
+    "A living heap of city rubbish. Rain turns it\n"
+    "into Chorume."
+);
 
 const u8 gChorume314PokedexText[] = _(
-    "Líquido preto que sai do lixao. Envenena\n"
-    "tudo por onde passa.");
+    "The black liquid that seeps from the dump.\n"
+    "It poisons all it touches."
+);
 
 const u8 gBituca315PokedexText[] = _(
-    "Ainda queima quando jogada. Causa incêndios\n"
-    "em pastos.");
+    "Still burning when thrown away. It starts\n"
+    "fires in the pastures."
+);
 
 const u8 gLatinha316PokedexText[] = _(
-    "Vive procurando outra Latinha pra brigar.\n"
-    "Recompensa quem recicla.");
+    "It roams looking for another Latinha to\n"
+    "fight. It rewards whoever recycles."
+);
 
 const u8 gSacolim317PokedexText[] = _(
-    "Voa com o vento. Enrosca em árvores por\n"
-    "décadas.");
+    "It rides the wind, and catches in trees for\n"
+    "decades."
+);
 
 const u8 gGarrafao318PokedexText[] = _(
-    "Vive boiando em rios. Desce até o mar.");
+    "It drifts down the rivers all the way to the\n"
+    "sea."
+);
 
 const u8 gNetzero319PokedexText[] = _(
-    "Ave feita de plástico do estômago. Símbolo\n"
-    "da poluiçao.");
+    "A bird made of the plastic in its own\n"
+    "stomach. The emblem of pollution."
+);
 
 const u8 gPilhoso320PokedexText[] = _(
-    "Vaza ácido corrosivo. Nao deve ser tocada.");
+    "It leaks a corrosive acid. It should not be\n"
+    "handled."
+);
 
 const u8 gCabofio321PokedexText[] = _(
-    "Fios elétricos emaranhados. Curto-circuito\n"
-    "ambulante.");
+    "A tangle of live wires. A walking short\n"
+    "circuit."
+);
 
 const u8 gBugao322PokedexText[] = _(
-    "Bug urbano gigante. Aparece em cozinhas mal\n"
-    "cuidadas.");
+    "A giant city bug. It shows up in badly kept\n"
+    "kitchens."
+);
 
 const u8 gAluminio323PokedexText[] = _(
-    "Papel alumínio dobrado voa como pipa.");
+    "Folded kitchen foil that flies like a kite."
+);
 
 const u8 gConcretim324PokedexText[] = _(
-    "Pedaço de calçada quebrada. Tropeça pessoas.");
+    "A piece of broken pavement. It trips people."
+);
 
 const u8 gBueiro325PokedexText[] = _(
-    "Espírito das águas residuais. Sobe em\n"
-    "enchentes.");
+    "The spirit of waste water. It rises in the\n"
+    "floods."
+);
 
 const u8 gSinal326PokedexText[] = _(
-    "Semáforo que muda de cor sem motivo. Causa\n"
-    "confusao no trânsito.");
+    "A traffic light that changes for no reason,\n"
+    "snarling up the junction."
+);
 
 const u8 gPoste327PokedexText[] = _(
-    "Poste de luz que anda. Ilumina ruas escuras.");
+    "A lamp post that walks, lighting the dark\n"
+    "streets."
+);
 
 const u8 gGrafiteiro328PokedexText[] = _(
-    "Espírito da arte urbana. Muda de forma\n"
-    "conforme o desenho.");
+    "The spirit of street art. It changes shape\n"
+    "with the drawing."
+);
 
 const u8 gGuaraciana329PokedexText[] = _(
-    "Consorte de Guaraci. Brilha ao amanhecer.");
+    "Consort of Guaraci. It shines at daybreak."
+);
 
 const u8 gJaciana330PokedexText[] = _(
-    "Consorte de Jaci. Brilha à meia-noite.");
+    "Consort of Jaci. It shines at midnight."
+);
 
 const u8 gTupanau331PokedexText[] = _(
-    "Tupan em forma primordial. Um trovao só\n"
-    "destrói montes.");
+    "Tupan in his first form. A single\n"
+    "thunderclap levels hills."
+);
 
 const u8 gIarau332PokedexText[] = _(
-    "Iara em forma suprema. Rio inteiro obedece\n"
-    "ao canto.");
+    "Iara at her greatest. A whole river obeys\n"
+    "her song."
+);
 
 const u8 gKuarahy333PokedexText[] = _(
-    "Sol dos primeiros dias. Deu vida ao\n"
-    "continente.");
+    "The sun of the first days. It gave the\n"
+    "continent life."
+);
 
 const u8 gYasy334PokedexText[] = _(
-    "Lua dos primeiros dias. Rege marés e sonhos.");
+    "The moon of the first days. It rules tides\n"
+    "and dreams."
+);
 
 const u8 gRudarauna335PokedexText[] = _(
-    "Amor primordial. Une casais destinados.");
+    "Love in its first form. It binds the couples\n"
+    "that were meant to be."
+);
 
 const u8 gPerybe336PokedexText[] = _(
-    "Espírito da bacia amazônica inteira. Um só\n"
-    "corpo, milhares de afluentes.");
+    "The spirit of the whole Amazon basin. One\n"
+    "body, a thousand tributaries."
+);
 
 const u8 gArauanau337PokedexText[] = _(
-    "Guardiao supremo da regiao. Só aparece\n"
-    "quando Arauana está em perigo.");
+    "Supreme guardian of the region. It appears\n"
+    "only when Arauana is in danger."
+);
 
 const u8 gVerdejante338PokedexText[] = _(
-    "Espírito da mata atlântica primordial. Brota\n"
-    "das cinzas de queimadas.");
+    "The spirit of the first Atlantic forest. It\n"
+    "sprouts from the ash of burnings."
+);
 
 const u8 gChuvao339PokedexText[] = _(
-    "Espírito da chuva de dezembro. Encharca\n"
-    "Arauana em três dias.");
+    "The spirit of the December rain. It soaks\n"
+    "Arauana in three days."
+);
 
 const u8 gSolzao340PokedexText[] = _(
-    "Espírito da estiagem. Queima os campos por\n"
-    "meses.");
+    "The spirit of the drought. It burns the\n"
+    "fields for months."
+);
 
 const u8 gVentania341PokedexText[] = _(
-    "Vento sul que traz frio no inverno. Assobia\n"
-    "melodias mortais.");
+    "The south wind that brings the winter cold,\n"
+    "whistling deadly tunes."
+);
 
 const u8 gTerraao342PokedexText[] = _(
-    "Terra fértil ambulante. Onde pisa, brota\n"
-    "lavoura.");
+    "Walking fertile earth. Where it steps, a\n"
+    "crop comes up."
+);
 
 const u8 gFogareu343PokedexText[] = _(
-    "Fogo primordial que aqueceu Arauana no\n"
-    "início.");
+    "The first fire, which warmed Arauana at the\n"
+    "beginning."
+);
 
 const u8 gMarulho344PokedexText[] = _(
-    "Espírito do oceano Atlântico. Ondas obedecem\n"
-    "seu compasso.");
+    "The spirit of the Atlantic. The waves keep\n"
+    "his time."
+);
 
 const u8 gAlvorecer345PokedexText[] = _(
-    "Espírito do amanhecer. Cor rosa dourada\n"
-    "preenche o céu.");
+    "The spirit of daybreak. A rose and gold that\n"
+    "fills the sky."
+);
 
 const u8 gPoente346PokedexText[] = _(
-    "Espírito do pôr do sol. Cores queimadas em\n"
-    "fim de tarde.");
+    "The spirit of sunset, and its burnt colours\n"
+    "at the end of the day."
+);
 
 const u8 gEstrelinha347PokedexText[] = _(
-    "Estrela cadente que fez ninho. Faz desejos\n"
-    "se realizarem.");
+    "A shooting star that made a nest. It grants\n"
+    "wishes."
+);
 
 const u8 gArauanamon348PokedexText[] = _(
-    "Encarnaçao de toda a regiao de Arauana. Só\n"
-    "existe um.");
+    "The whole region of Arauana made flesh.\n"
+    "There is only one."
+);
 
 const u8 gAracua349PokedexText[] = _(
-    "Grita ao amanhecer alertando o bando. Serve\n"
-    "de despertador da mata.");
+    "It shouts at dawn to warn the troop. The\n"
+    "alarm clock of the forest."
+);
 
 const u8 gBugio350PokedexText[] = _(
-    "Uiva ao alvorecer. Marca território a\n"
-    "quilômetros.");
+    "It howls at first light. It marks its ground\n"
+    "for kilometres."
+);
 
 const u8 gTuim351PokedexText[] = _(
-    "Menor papagaio do Brasil. Voa em bandos\n"
-    "verdes ruidosos.");
+    "The smallest parrot in Brazil. It flies in\n"
+    "loud green flocks."
+);
 
 const u8 gPeriquitao352PokedexText[] = _(
-    "Papagaio esperdo. Imita vozes humanas para\n"
-    "enganar predadores.");
+    "A clever parrot. It mimics human voices to\n"
+    "fool predators."
+);
 
 const u8 gArarunao353PokedexText[] = _(
-    "Arara azul de bico curvo. Casais permanecem\n"
-    "juntos por toda a vida.");
+    "A blue macaw with a hooked bill. Pairs stay\n"
+    "together for life."
+);
 
 const u8 gPreazinho354PokedexText[] = _(
-    "Roedor tímido de olhos redondos. Vive em\n"
-    "tocas nos campos.");
+    "A shy round-eyed rodent. It lives in burrows\n"
+    "out in the fields."
+);
 
 const u8 gCapivarao355PokedexText[] = _(
-    "O maior roedor do mundo. Serve de assento\n"
-    "pra aves e macacos.");
+    "The largest rodent in the world. Birds and\n"
+    "monkeys use it as a seat."
+);
 
 const u8 gTamandui356PokedexText[] = _(
-    "Filhote monta nas costas da mae até crescer.\n"
-    "Lambe formigas o dia inteiro.");
+    "The young rides on its mother's back until\n"
+    "grown. It licks ants all day."
+);
 
 const u8 gTamandua357PokedexText[] = _(
-    "Língua pegajosa de 60cm. Cheira formigueiro\n"
-    "a quilômetros.");
+    "A sticky tongue sixty centimetres long. It\n"
+    "smells an ant nest kilometres off."
+);
 
 const u8 gTamanduao358PokedexText[] = _(
-    "Garras dianteiras enormes. Espanta onças de\n"
-    "pé em pé.");
+    "Enormous front claws. It sees off jaguars\n"
+    "standing upright."
+);
 
 const u8 gPreguicinha359PokedexText[] = _(
-    "Move-se tao devagar que musgo cresce no\n"
-    "pelo.");
+    "It moves so slowly that moss grows in its\n"
+    "fur."
+);
 
 const u8 gPreguicoso360PokedexText[] = _(
-    "Dorme 20 horas por dia. Sonhos alteram o\n"
-    "clima ao redor.");
+    "It sleeps twenty hours a day. Its dreams\n"
+    "change the weather around it."
+);
 
 const u8 gBeijaFlor361PokedexText[] = _(
-    "Bate as asas 80 vezes por segundo. Bebe\n"
-    "néctar em pleno voo.");
+    "Its wings beat eighty times a second. It\n"
+    "drinks nectar in mid-air."
+);
 
 const u8 gBeijaLuz362PokedexText[] = _(
-    "Penas refletem luz solar em espectros\n"
-    "iridescentes.");
+    "Its feathers throw sunlight back in\n"
+    "iridescent bands."
+);
 
 const u8 gBeijaSol363PokedexText[] = _(
-    "Núcleo do peito guarda uma centelha do\n"
-    "próprio sol.");
+    "The core in its chest holds a spark of the\n"
+    "sun itself."
+);
 
 const u8 gSarara364PokedexText[] = _(
-    "Cabelos loiros cacheados. Traz sorte a quem\n"
-    "pesca perto.");
+    "Curly blonde hair. It brings luck to anyone\n"
+    "fishing nearby."
+);
 
 const u8 gCambota365PokedexText[] = _(
-    "Ginga sem parar. Chuta enquanto dança.");
+    "It sways without stopping, and kicks while\n"
+    "it dances."
+);
 
 const u8 gBerimbau366PokedexText[] = _(
-    "Cabaça viva que toca sozinha. Impoe o ritmo\n"
-    "da roda.");
+    "A living gourd that plays itself. It sets\n"
+    "the rhythm of the circle."
+);
 
 const u8 gAtabaque367PokedexText[] = _(
-    "Cada batida faz o chao tremer. Marca o\n"
-    "compasso do candomblé.");
+    "Every beat shakes the ground. It keeps the\n"
+    "time of the candomblé."
+);
 
 const u8 gPandeirim368PokedexText[] = _(
-    "Rodopia sozinho tocando samba.");
+    "It spins on its own, playing samba."
+);
 
 const u8 gSanfoninha369PokedexText[] = _(
-    "Sopra melodias que fazem quem escuta chorar\n"
-    "de saudade.");
+    "It blows tunes that make the listener weep\n"
+    "with longing."
+);
 
 const u8 gVioleiro370PokedexText[] = _(
-    "Viola caipira ambulante. Canta modas de\n"
-    "causos antigos.");
+    "A walking country guitar. It sings the old\n"
+    "tales in verse."
+);
 
 const u8 gZabumba371PokedexText[] = _(
-    "Tambor grave que puxa o forró. Faz coraçoes\n"
-    "baterem em compasso.");
+    "A deep drum that pulls the forró along. It\n"
+    "sets hearts beating in time."
+);
 
 const u8 gCordelim372PokedexText[] = _(
-    "Panfleto de cordel que se lê sozinho em voz\n"
-    "alta.");
+    "A cordel pamphlet that reads itself aloud."
+);
 
 const u8 gRendeira373PokedexText[] = _(
-    "Tece rendas invisíveis que capturam sonhos\n"
-    "ruins.");
+    "It weaves invisible lace that catches bad\n"
+    "dreams."
+);
 
 const u8 gEscamoso374PokedexText[] = _(
-    "Pele coberta de escamas afiadas. Pescadores\n"
-    "respeitam.");
+    "Its skin is covered in sharp scales.\n"
+    "Fishermen treat it with respect."
+);
 
 const u8 gPiranhita375PokedexText[] = _(
-    "Nada em cardumes de dezenas. Come vaca\n"
-    "inteira em minutos.");
+    "It swims in shoals of dozens. They eat a\n"
+    "whole cow in minutes."
+);
 
 const u8 gBoitata376PokedexText[] = _(
-    "Cobra de fogo que castiga quem queima a\n"
-    "mata. Olhos brasas.");
+    "A snake of fire that punishes whoever burns\n"
+    "the forest. Its eyes are coals."
+);
 
 const u8 gPiraruacu377PokedexText[] = _(
-    "Pirarucu ancestral. Um único golpe de cauda\n"
-    "esvazia um lago.");
+    "The ancestral pirarucu. One stroke of its\n"
+    "tail empties a lake."
+);
 
 const u8 gMataMata378PokedexText[] = _(
-    "Cágado antigo. Casco esconde uma floresta em\n"
-    "miniatura.");
+    "An ancient turtle. Its shell hides a forest\n"
+    "in miniature."
+);
 
 const u8 gSolaris379PokedexText[] = _(
-    "Corpo é uma esfera solar viva. Apaga\n"
-    "estrelas ao surgir.");
+    "Its body is a living sphere of sun. Stars go\n"
+    "out when it rises."
+);
 
 const u8 gSelene380PokedexText[] = _(
-    "Corpo é uma lua crescente prateada. Domina\n"
-    "marés e sonhos.");
+    "Its body is a silver crescent moon. It rules\n"
+    "tides and dreams."
+);
 
 const u8 gZumbiRei381PokedexText[] = _(
-    "Rei de Palmares reencarnado. Símbolo da\n"
-    "liberdade.");
+    "The king of Palmares returned. The emblem of\n"
+    "freedom."
+);
 
 const u8 gIemanja382PokedexText[] = _(
-    "Rainha do mar. Recebe oferendas em\n"
-    "fevereiro.");
+    "Queen of the sea. She receives her offerings\n"
+    "in February."
+);
 
 const u8 gOxumara383PokedexText[] = _(
-    "Serpente arco-íris. Une céu e terra em ponte\n"
-    "colorida.");
+    "The rainbow serpent. It bridges earth and\n"
+    "sky in colour."
+);
 
 const u8 gCurupixel384PokedexText[] = _(
-    "Filhote de Curupira em forma primordial. Só\n"
-    "aparece a crianças puras.");
+    "A young Curupira in its first form. It shows\n"
+    "itself only to pure children."
+);
 
 const u8 gSacinho385PokedexText[] = _(
-    "Saci recém-nascido. Redemoinhos onde passa.");
+    "A newborn Saci. Whirlwinds follow wherever\n"
+    "it goes."
+);
 
 const u8 gAraua386PokedexText[] = _(
-    "O primeiro Pokémon de Arauana. Contém a\n"
-    "essência de toda a regiao.");
+    "The first Pokémon of Arauana. It holds the\n"
+    "essence of the whole region."
+);
