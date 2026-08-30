@@ -83,55 +83,55 @@ FLOOR2_TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         ),
     ),
     "MtPyre_2F_Text_LukeIntro": (
-        ("LUKE:", "show her how cool"),
+        ("LUCA:", "show her how cool"),
         (
-            "LUKE: We came here together.\\p",
+            "LUCA: We came here together.\\p",
             "I said I wasn't nervous.\\p",
             "That was a lie. Battle me?$",
         ),
     ),
     "MtPyre_2F_Text_LukeDefeat": (
         ("Whoopsie",),
-        ("LUKE: Yeah... still nervous.$",),
+        ("LUCA: Yeah... still nervous.$",),
     ),
     "MtPyre_2F_Text_LukePostBattle": (
         ("right here by your side",),
         (
-            "LUKE: DEZ stayed beside me.\\p",
+            "LUCA: LIA stayed beside me.\\p",
             "That helped more than bravado.$",
         ),
     ),
     "MtPyre_2F_Text_LukeNotEnoughMons": (
         ("bring some more POKéMON",),
         (
-            "LUKE: Bring two POKéMON.\\p",
+            "LUCA: Bring two POKéMON.\\p",
             "We shouldn't turn this into\\n",
             "a careless fight.$",
         ),
     ),
     "MtPyre_2F_Text_DezIntro": (
-        ("DEZ:", "came here on a dare"),
+        ("LIA:", "came here on a dare"),
         (
-            "DEZ: We came to leave flowers.\\p",
-            "LUKE keeps pretending he's calm.\\p",
+            "LIA: We came to leave flowers.\\p",
+            "LUCA keeps pretending he's calm.\\p",
             "Help me prove otherwise.$",
         ),
     ),
     "MtPyre_2F_Text_DezDefeat": (
         ("Waaaah",),
-        ("DEZ: Okay, that proved enough.$",),
+        ("LIA: Okay, that proved enough.$",),
     ),
     "MtPyre_2F_Text_DezPostBattle": (
         ("lovey-dovey",),
         (
-            "DEZ: Being scared together is\\n",
+            "LIA: Being scared together is\\n",
             "still being together.$",
         ),
     ),
     "MtPyre_2F_Text_DezNotEnoughMons": (
         ("at least two POKéMON",),
         (
-            "DEZ: Bring at least two POKéMON.\\p",
+            "LIA: Bring at least two POKéMON.\\p",
             "If we battle here, do it right.$",
         ),
     ),

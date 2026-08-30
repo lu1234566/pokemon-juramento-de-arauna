@@ -14,7 +14,7 @@ PLACEHOLDER_RE = re.compile(r"\{[^}]+\}")
 
 SOURCE_SIGNATURES = (
     "CAPT. STERN",
-    "GABBY:",
+    "BIA:",
     "huge discovery",
     "HORIZONTE: Nao somos soldados",
     "What was that all about",
@@ -164,7 +164,7 @@ def render(source: str, targets: dict[str, tuple[str, ...]]) -> str:
 
 def render_city(source: str) -> str:
     rendered = render(source, CITY_TARGETS)
-    for token in ("CAPT. STERN", "GABBY:", "huge discovery", "Please, come with me"):
+    for token in ("CAPT. STERN", "BIA:", "huge discovery", "Please, come with me"):
         for label in CITY_TARGETS:
             body = block_pattern(label).search(rendered).group("body")
             if token in body:

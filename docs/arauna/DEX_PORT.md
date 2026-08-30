@@ -18,6 +18,7 @@ Rodam nesta ordem. Todos aceitam `--check` (não escreve nada) e `--write`.
 | `tools/arauna/build_gym_teams.py` | times dos ginásios e da Elite Four, por tipo |
 | `tools/arauna/build_cries.py` | grito e tom de cada criatura |
 | `tools/arauna/build_availability.py` | garante que as 386 podem ser capturadas |
+| `tools/arauna/build_trainer_names.py` | nome brasileiro dos treinadores de rota (independente da dex) |
 
 **Ordem importa em dois pontos.** `build_placement.py` reescreve a tabela de
 encontros inteira a partir de um baseline fixo, então desfaz o
@@ -42,6 +43,7 @@ Cada julgamento que tive de fazer virou uma linha de CSV em `docs/arauna/`:
 | `ARAUNA_CATEGORIES_SHORT.csv` | forma de 11 caracteres das 6 categorias que não cabem |
 | `ARAUNA_EVOLUTIONS.csv` | as 81 relações |
 | `ARAUNA_PLACEMENT.csv` | qual criatura responde por cada slot nos encontros e times |
+| `ARAUNA_TRAINER_NAMES.csv` | nome brasileiro de cada um dos 434 treinadores de rota |
 
 Editar uma linha e rodar o gerador de novo é a forma de discordar de qualquer
 escolha. Os geradores de placement e movesets leem sempre a última versão
@@ -100,4 +102,6 @@ uma espécie que só vive lá continua inobtenível.
 - **19 das 46 habilidades** são aproximações de coisas que a terceira geração não
   tem (Harvest, Motor Drive, Prankster, Leaf Guard). Marcadas como
   `approximated` no CSV.
-- **35 dos 855 treinadores** ainda têm nome de Hoenn.
+- **Nomes de treinador fora de `src/data/trainers.h`.** Battle Tower, Battle
+  Dome, aprendizes e adversários de concurso ainda usam os nomes ingleses; são
+  tabelas separadas e ficaram para uma passagem própria.

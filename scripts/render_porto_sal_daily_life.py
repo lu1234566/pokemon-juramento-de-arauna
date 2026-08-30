@@ -149,11 +149,11 @@ TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         "HOMEM: Entrevista ao vivo aqui?\\p",
         "O ENGENHEIRO virou celebridade.$",
     )),
-    "SlateportCity_Text_BigSmileForCamera": (("TY:", "CAPT. STERN"), (
+    "SlateportCity_Text_BigSmileForCamera": (("TITO:", "CAPT. STERN"), (
         "CAMERAMAN: ENGENHEIRO, sorria\\n",
         "para a camera!$",
     )),
-    "SlateportCity_Text_MostInvaluableExperience": (("GABBY:", "invaluable experience"), (
+    "SlateportCity_Text_MostInvaluableExperience": (("BIA:", "invaluable experience"), (
         "REPORTER: Entendo...\\p",
         "Foi uma experiencia importante.$",
     )),
@@ -206,7 +206,7 @@ def render(source: str) -> str:
     if mask(source) != mask(rendered):
         raise ValueError("non-dialogue structure changed while rendering Porto do Sal daily life")
 
-    for token in ("ENERGY GURU", "EFFORT RIBBON", "MAUVILLE CITY", "CAPT. STERN", "GABBY:", "TY:"):
+    for token in ("ENERGY GURU", "EFFORT RIBBON", "MAUVILLE CITY", "CAPT. STERN", "BIA:", "TITO:"):
         for label in TARGETS:
             if token in block_pattern(label).search(rendered).group("body"):
                 raise ValueError(f"{label}: stale daily-life token survived: {token}")
