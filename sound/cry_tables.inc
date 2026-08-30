@@ -1,781 +1,781 @@
 	.align 2
 gCryTable::
-	cry Cry_Bulbasaur
-	cry Cry_Ivysaur
-	cry Cry_Venusaur
-	cry Cry_Charmander
-	cry Cry_Charmeleon
-	cry Cry_Charizard
-	cry Cry_Squirtle
-	cry Cry_Wartortle
-	cry Cry_Blastoise
-	cry Cry_Caterpie
-	cry Cry_Metapod
-	cry Cry_Butterfree
-	cry Cry_Weedle
-	cry Cry_Kakuna
-	cry Cry_Beedrill
-	cry Cry_Pidgey
-	cry Cry_Pidgeotto
-	cry Cry_Pidgeot
-	cry Cry_Rattata
-	cry Cry_Raticate
-	cry Cry_Spearow
-	cry Cry_Fearow
-	cry Cry_Ekans
-	cry Cry_Arbok
-	cry Cry_Pikachu
-	cry Cry_Raichu
-	cry Cry_Sandshrew
-	cry Cry_Sandslash
-	cry Cry_NidoranF
-	cry Cry_Nidorina
-	cry Cry_Nidoqueen
-	cry Cry_NidoranM
-	cry Cry_Nidorino
-	cry Cry_Nidoking
-	cry Cry_Clefairy
-	cry Cry_Clefable
-	cry Cry_Vulpix
-	cry Cry_Ninetales
-	cry Cry_Jigglypuff
-	cry Cry_Wigglytuff
-	cry Cry_Zubat
-	cry Cry_Golbat
-	cry Cry_Oddish
-	cry Cry_Gloom
-	cry Cry_Vileplume
-	cry Cry_Paras
-	cry Cry_Parasect
-	cry Cry_Venonat
-	cry Cry_Venomoth
-	cry Cry_Diglett
-	cry Cry_Dugtrio
-	cry Cry_Meowth
-	cry Cry_Persian
-	cry Cry_Psyduck
-	cry Cry_Golduck
-	cry Cry_Mankey
-	cry Cry_Primeape
-	cry Cry_Growlithe
-	cry Cry_Arcanine
-	cry Cry_Poliwag
-	cry Cry_Poliwhirl
-	cry Cry_Poliwrath
-	cry Cry_Abra
-	cry Cry_Kadabra
-	cry Cry_Alakazam
-	cry Cry_Machop
-	cry Cry_Machoke
-	cry Cry_Machamp
-	cry Cry_Bellsprout
-	cry Cry_Weepinbell
-	cry Cry_Victreebel
-	cry Cry_Tentacool
-	cry Cry_Tentacruel
-	cry Cry_Geodude
-	cry Cry_Graveler
-	cry Cry_Golem
-	cry Cry_Ponyta
-	cry Cry_Rapidash
-	cry Cry_Slowpoke
-	cry Cry_Slowbro
-	cry Cry_Magnemite
-	cry Cry_Magneton
-	cry Cry_Farfetchd
-	cry Cry_Doduo
-	cry Cry_Dodrio
-	cry Cry_Seel
-	cry Cry_Dewgong
-	cry Cry_Grimer
-	cry Cry_Muk
-	cry Cry_Shellder
-	cry Cry_Cloyster
-	cry Cry_Gastly
-	cry Cry_Haunter
-	cry Cry_Gengar
-	cry Cry_Onix
-	cry Cry_Drowzee
-	cry Cry_Hypno
-	cry Cry_Krabby
-	cry Cry_Kingler
-	cry Cry_Voltorb
-	cry Cry_Electrode
-	cry Cry_Exeggcute
-	cry Cry_Exeggutor
-	cry Cry_Cubone
-	cry Cry_Marowak
-	cry Cry_Hitmonlee
-	cry Cry_Hitmonchan
-	cry Cry_Lickitung
-	cry Cry_Koffing
-	cry Cry_Weezing
-	cry Cry_Rhyhorn
-	cry Cry_Rhydon
-	cry Cry_Chansey
-	cry Cry_Tangela
-	cry Cry_Kangaskhan
-	cry Cry_Horsea
-	cry Cry_Seadra
-	cry Cry_Goldeen
-	cry Cry_Seaking
-	cry Cry_Staryu
-	cry Cry_Starmie
-	cry Cry_MrMime
-	cry Cry_Scyther
-	cry Cry_Jynx
-	cry Cry_Electabuzz
-	cry Cry_Magmar
-	cry Cry_Pinsir
-	cry Cry_Tauros
-	cry Cry_Magikarp
-	cry Cry_Gyarados
-	cry Cry_Lapras
-	cry Cry_Ditto
-	cry Cry_Eevee
-	cry Cry_Vaporeon
-	cry Cry_Jolteon
-	cry Cry_Flareon
-	cry Cry_Porygon
-	cry Cry_Omanyte
-	cry Cry_Omastar
-	cry Cry_Kabuto
-	cry Cry_Kabutops
-	cry Cry_Aerodactyl
-	cry Cry_Snorlax
-	cry Cry_Articuno
-	cry Cry_Zapdos
-	cry Cry_Moltres
-	cry Cry_Dratini
-	cry Cry_Dragonair
-	cry Cry_Dragonite
-	cry Cry_Mewtwo
-	cry Cry_Mew
-	cry Cry_Chikorita
-	cry Cry_Bayleef
-	cry Cry_Meganium
-	cry Cry_Cyndaquil
-	cry Cry_Quilava
-	cry Cry_Typhlosion
-	cry Cry_Totodile
-	cry Cry_Croconaw
-	cry Cry_Feraligatr
-	cry Cry_Sentret
-	cry Cry_Furret
-	cry Cry_Hoothoot
-	cry Cry_Noctowl
-	cry Cry_Ledyba
-	cry Cry_Ledian
-	cry Cry_Spinarak
-	cry Cry_Ariados
-	cry Cry_Crobat
-	cry Cry_Chinchou
-	cry Cry_Lanturn
-	cry Cry_Pichu
-	cry Cry_Cleffa
-	cry Cry_Igglybuff
-	cry Cry_Togepi
-	cry Cry_Togetic
-	cry Cry_Natu
-	cry Cry_Xatu
-	cry Cry_Mareep
-	cry Cry_Flaaffy
-	cry Cry_Ampharos
-	cry Cry_Bellossom
-	cry Cry_Marill
-	cry Cry_Azumarill
-	cry Cry_Sudowoodo
-	cry Cry_Politoed
-	cry Cry_Hoppip
-	cry Cry_Skiploom
-	cry Cry_Jumpluff
-	cry Cry_Aipom
-	cry Cry_Sunkern
-	cry Cry_Sunflora
-	cry Cry_Yanma
-	cry Cry_Wooper
-	cry Cry_Quagsire
-	cry Cry_Espeon
-	cry Cry_Umbreon
-	cry Cry_Murkrow
-	cry Cry_Slowking
-	cry Cry_Misdreavus
-	cry Cry_Unown
-	cry Cry_Wobbuffet
-	cry Cry_Girafarig
-	cry Cry_Pineco
-	cry Cry_Forretress
-	cry Cry_Dunsparce
-	cry Cry_Gligar
-	cry Cry_Steelix
-	cry Cry_Snubbull
-	cry Cry_Granbull
-	cry Cry_Qwilfish
-	cry Cry_Scizor
-	cry Cry_Shuckle
-	cry Cry_Heracross
-	cry Cry_Sneasel
-	cry Cry_Teddiursa
-	cry Cry_Ursaring
-	cry Cry_Slugma
-	cry Cry_Magcargo
-	cry Cry_Swinub
-	cry Cry_Piloswine
-	cry Cry_Corsola
-	cry Cry_Remoraid
-	cry Cry_Octillery
-	cry Cry_Delibird
-	cry Cry_Mantine
-	cry Cry_Skarmory
-	cry Cry_Houndour
-	cry Cry_Houndoom
-	cry Cry_Kingdra
-	cry Cry_Phanpy
-	cry Cry_Donphan
-	cry Cry_Porygon2
-	cry Cry_Stantler
-	cry Cry_Smeargle
-	cry Cry_Tyrogue
-	cry Cry_Hitmontop
-	cry Cry_Smoochum
-	cry Cry_Elekid
-	cry Cry_Magby
-	cry Cry_Miltank
-	cry Cry_Blissey
-	cry Cry_Raikou
-	cry Cry_Entei
-	cry Cry_Suicune
-	cry Cry_Larvitar
-	cry Cry_Pupitar
-	cry Cry_Tyranitar
-	cry Cry_Lugia
-	cry Cry_HoOh
-	cry Cry_Celebi
-	cry Cry_Kecleon
-	cry Cry_Roselia
-	cry Cry_Torkoal
-	cry Cry_Electrike
-	cry Cry_Manectric
-	cry Cry_Duskull
-	cry Cry_Latias
-	cry Cry_Wynaut
-	cry Cry_Seviper
-	cry Cry_Sharpedo
-	cry Cry_Zangoose
-	cry Cry_Azurill
-	cry Cry_Swablu
-	cry Cry_Altaria
+	cry_pitched Cry_Caterpie, 61
+	cry_pitched Cry_Yanma, 59
+	cry_pitched Cry_Lanturn, 60
+	cry_pitched Cry_Illumise, 60
+	cry_pitched Cry_Togepi, 60
+	cry_pitched Cry_Wigglytuff, 60
+	cry_pitched Cry_Torchic, 69
+	cry_pitched Cry_Sunflora, 60
+	cry_pitched Cry_Grovyle, 60
+	cry_pitched Cry_Tentacool, 60
+	cry_pitched Cry_Houndour, 64
+	cry_pitched Cry_Bellossom, 60
+	cry_pitched Cry_Shedinja, 66
+	cry_pitched Cry_Absol, 57
+	cry_pitched Cry_Gligar, 61
+	cry_pitched Cry_Seaking, 60
+	cry_pitched Cry_Seaking, 61
+	cry_pitched Cry_Tentacool, 61
+	cry_pitched Cry_Marowak, 60
+	cry_pitched Cry_Marowak, 61
+	cry_pitched Cry_Marowak, 62
+	cry_pitched Cry_Gardevoir, 60
+	cry_pitched Cry_Hitmonchan, 60
+	cry_pitched Cry_Cacnea, 60
+	cry_pitched Cry_Clamperl, 60
+	cry_pitched Cry_Ludicolo, 60
+	cry_pitched Cry_Ludicolo, 61
+	cry_pitched Cry_Shiftry, 60
+	cry_pitched Cry_Shiftry, 61
+	cry_pitched Cry_Shiftry, 59
+	cry_pitched Cry_Nidoking, 60
+	cry_pitched Cry_Gligar, 60
+	cry_pitched Cry_Arbok, 60
+	cry_pitched Cry_Lickitung, 60
+	cry_pitched Cry_Lickitung, 61
+	cry_pitched Cry_Stantler, 60
+	cry_pitched Cry_Quagsire, 60
+	cry_pitched Cry_Seel, 60
+	cry_pitched Cry_Wailord, 60
+	cry_pitched Cry_Scyther, 58
+	cry_pitched Cry_Scyther, 59
+	cry_pitched Cry_Scyther, 57
+	cry_pitched Cry_Torkoal, 60
+	cry_pitched Cry_Torkoal, 61
+	cry_pitched Cry_Torkoal, 59
+	cry_pitched Cry_Blastoise, 60
+	cry_pitched Cry_Blastoise, 61
+	cry_pitched Cry_Feraligatr, 60
+	cry_pitched Cry_Feraligatr, 61
+	cry_pitched Cry_Seel, 61
+	cry_pitched Cry_Barboach, 60
+	cry_pitched Cry_Rattata, 60
+	cry_pitched Cry_Meditite, 65
+	cry_pitched Cry_Meditite, 63
+	cry_pitched Cry_Spinarak, 60
+	cry_pitched Cry_Metapod, 60
+	cry_pitched Cry_Ledyba, 60
+	cry_pitched Cry_Wigglytuff, 61
+	cry_pitched Cry_Dunsparce, 60
+	cry_pitched Cry_Poochyena, 59
+	cry_pitched Cry_Zigzagoon, 60
+	cry_pitched Cry_Raticate, 60
+	cry_pitched Cry_Swellow, 60
+	cry_pitched Cry_Shuckle, 60
+	cry_pitched Cry_Shuckle, 59
+	cry_pitched Cry_Beautifly, 61
+	cry_pitched Cry_Slakoth, 60
+	cry_pitched Cry_Pidgeotto, 61
+	cry_pitched Cry_Sneasel, 60
+	cry_pitched Cry_Grimer, 60
+	cry_pitched Cry_Grimer, 63
+	cry_pitched Cry_Grimer, 59
+	cry_pitched Cry_Houndoom, 60
+	cry_pitched Cry_Porygon, 60
+	cry_pitched Cry_Fearow, 60
+	cry_pitched Cry_Seaking, 59
+	cry_pitched Cry_Seaking, 62
+	cry_pitched Cry_Seviper, 61
+	cry_pitched Cry_Vigoroth, 60
+	cry_pitched Cry_Vigoroth, 61
+	cry_pitched Cry_Blissey, 60
+	cry_pitched Cry_Gardevoir, 61
+	cry_pitched Cry_Hitmonchan, 61
+	cry_pitched Cry_Cacnea, 61
+	cry_pitched Cry_Zapdos, 60
+	cry_pitched Cry_MrMime, 60
+	cry_pitched Cry_Scyther, 60
+	cry_pitched Cry_Smeargle, 60
+	cry_pitched Cry_Smeargle, 61
+	cry_pitched Cry_Moltres, 60
+	cry_pitched Cry_Cradily, 60
+	cry_pitched Cry_Lickitung, 59
+	cry_pitched Cry_Lickitung, 62
+	cry_pitched Cry_Lickitung, 58
+	cry_pitched Cry_Quagsire, 61
+	cry_pitched Cry_Quagsire, 61
+	cry_pitched Cry_Absol, 58
+	cry_pitched Cry_Electrode, 60
+	cry_pitched Cry_Quagsire, 59
+	cry_pitched Cry_Quagsire, 62
+	cry_pitched Cry_Beldum, 61
+	cry_pitched Cry_Kangaskhan, 60
+	cry_pitched Cry_Kangaskhan, 61
+	cry_pitched Cry_Kangaskhan, 59
+	cry_pitched Cry_Exploud, 60
+	cry_pitched Cry_Exploud, 61
+	cry_pitched Cry_Dodrio, 60
+	cry_pitched Cry_Swalot, 59
+	cry_pitched Cry_Swalot, 60
+	cry_pitched Cry_Swalot, 58
+	cry_pitched Cry_Koffing, 56
+	cry_pitched Cry_Qwilfish, 61
+	cry_pitched Cry_Corsola, 60
+	cry_pitched Cry_Krabby, 60
+	cry_pitched Cry_Horsea, 60
+	cry_pitched Cry_Totodile, 60
+	cry_pitched Cry_Voltorb, 60
+	cry_pitched Cry_Poliwag, 60
+	cry_pitched Cry_Goldeen, 60
+	cry_pitched Cry_Goldeen, 61
+	cry_pitched Cry_Goldeen, 59
+	cry_pitched Cry_Psyduck, 60
+	cry_pitched Cry_Poliwhirl, 60
+	cry_pitched Cry_Carvanha, 60
+	cry_pitched Cry_Relicanth, 60
+	cry_pitched Cry_Croconaw, 60
+	cry_pitched Cry_Beautifly, 62
+	cry_pitched Cry_Beautifly, 60
+	cry_pitched Cry_Beedrill, 60
+	cry_pitched Cry_Venonat, 60
+	cry_pitched Cry_Butterfree, 60
+	cry_pitched Cry_Ariados, 60
+	cry_pitched Cry_Grimer, 60
+	cry_pitched Cry_Grimer, 58
+	cry_pitched Cry_Yanma, 60
+	cry_pitched Cry_Yanma, 63
+	cry_pitched Cry_Yanma, 64
+	cry_pitched Cry_Yanma, 60
+	cry_pitched Cry_Yanma, 58
+	cry_pitched Cry_Heracross, 61
+	cry_pitched Cry_Heracross, 64
+	cry_pitched Cry_Heracross, 65
+	cry_pitched Cry_Heracross, 60
+	cry_pitched Cry_Heracross, 61
+	cry_pitched Cry_Heracross, 59
+	cry_pitched Cry_Pinsir, 60
+	cry_pitched Cry_Scyther, 62
+	cry_pitched Cry_Smeargle, 59
+	cry_pitched Cry_Aerodactyl, 60
+	cry_pitched Cry_Cradily, 61
+	cry_pitched Cry_Nidoking, 61
+	cry_pitched Cry_Gligar, 61
+	cry_pitched Cry_Arbok, 61
+	cry_pitched Cry_Electrode, 61
+	cry_pitched Cry_Armaldo, 60
+	cry_pitched Cry_Machoke, 60
+	cry_pitched Cry_Stantler, 61
+	cry_pitched Cry_Larvitar, 60
+	cry_pitched Cry_Crobat, 60
+	cry_pitched Cry_Miltank, 60
+	cry_pitched Cry_Cacturne, 60
+	cry_pitched Cry_Slowbro, 60
+	cry_pitched Cry_Kangaskhan, 62
+	cry_pitched Cry_Swampert, 60
+	cry_pitched Cry_Exploud, 59
+	cry_pitched Cry_Exploud, 62
+	cry_pitched Cry_Cacturne, 59
+	cry_pitched Cry_Cacturne, 60
+	cry_pitched Cry_Tropius, 61
+	cry_pitched Cry_Tropius, 62
+	cry_pitched Cry_Roselia, 60
+	cry_pitched Cry_Bellsprout, 61
+	cry_pitched Cry_Treecko, 60
+	cry_pitched Cry_Chikorita, 60
+	cry_pitched Cry_Sunflora, 61
+	cry_pitched Cry_Gloom, 59
+	cry_pitched Cry_Ivysaur, 61
+	cry_pitched Cry_Ivysaur, 60
+	cry_pitched Cry_Ivysaur, 61
+	cry_pitched Cry_Victreebel, 60
+	cry_pitched Cry_Bayleef, 60
+	cry_pitched Cry_Vileplume, 60
+	cry_pitched Cry_Vileplume, 61
+	cry_pitched Cry_Grovyle, 61
+	cry_pitched Cry_Grovyle, 62
+	cry_pitched Cry_Grovyle, 59
+	cry_pitched Cry_Lileep, 59
+	cry_pitched Cry_Lileep, 60
+	cry_pitched Cry_Omastar, 61
+	cry_pitched Cry_Omastar, 62
+	cry_pitched Cry_Skarmory, 63
+	cry_pitched Cry_Skarmory, 62
+	cry_pitched Cry_Omastar, 60
+	cry_pitched Cry_Skarmory, 63
+	cry_pitched Cry_Skarmory, 64
+	cry_pitched Cry_Kabutops, 60
+	cry_pitched Cry_Magmar, 60
+	cry_pitched Cry_Marowak, 58
+	cry_pitched Cry_Marowak, 63
+	cry_pitched Cry_Kabutops, 59
+	cry_pitched Cry_Kabutops, 60
+	cry_pitched Cry_Kabutops, 58
+	cry_pitched Cry_Aerodactyl, 61
+	cry_pitched Cry_Blaziken, 60
+	cry_pitched Cry_Aerodactyl, 63
+	cry_pitched Cry_Aerodactyl, 61
+	cry_pitched Cry_Ludicolo, 59
+	cry_pitched Cry_Kingler, 60
+	cry_pitched Cry_Kingler, 62
+	cry_pitched Cry_Kingler, 63
+	cry_pitched Cry_Kingler, 57
+	cry_pitched Cry_Kingler, 64
+	cry_pitched Cry_Kingler, 56
+	cry_pitched Cry_Kingler, 59
+	cry_pitched Cry_Quagsire, 71
+	cry_pitched Cry_Quagsire, 58
+	cry_pitched Cry_Quagsire, 63
+	cry_pitched Cry_Quagsire, 57
+	cry_pitched Cry_Quagsire, 64
+	cry_pitched Cry_Quagsire, 56
+	cry_pitched Cry_Golduck, 60
+	cry_pitched Cry_Slowbro, 61
+	cry_pitched Cry_Starmie, 60
+	cry_pitched Cry_Swampert, 61
+	cry_pitched Cry_Gengar, 56
+	cry_pitched Cry_Absol, 59
+	cry_pitched Cry_Absol, 60
+	cry_pitched Cry_Absol, 56
+	cry_pitched Cry_Gengar, 55
+	cry_pitched Cry_Gengar, 56
+	cry_pitched Cry_Shuppet, 61
+	cry_pitched Cry_Shuppet, 58
+	cry_pitched Cry_Shuppet, 56
+	cry_pitched Cry_Houndour, 63
+	cry_pitched Cry_Mareep, 60
+	cry_pitched Cry_Totodile, 61
+	cry_pitched Cry_Vulpix, 59
+	cry_pitched Cry_Anorith, 60
+	cry_pitched Cry_Goldeen, 62
+	cry_pitched Cry_Poochyena, 60
+	cry_pitched Cry_Charmeleon, 61
+	cry_pitched Cry_Vileplume, 59
+	cry_pitched Cry_Duskull, 58
+	cry_pitched Cry_Carvanha, 61
+	cry_pitched Cry_Dusclops, 62
+	cry_pitched Cry_Dusclops, 61
+	cry_pitched Cry_Huntail, 60
+	cry_pitched Cry_Nuzleaf, 60
+	cry_pitched Cry_Pidgeotto, 60
+	cry_pitched Cry_Sneasel, 61
+	cry_pitched Cry_Houndoom, 61
+	cry_pitched Cry_Bellsprout, 60
+	cry_pitched Cry_Flareon, 60
+	cry_pitched Cry_Sudowoodo, 60
+	cry_pitched Cry_Vibrava, 60
+	cry_pitched Cry_Mawile, 58
+	cry_pitched Cry_Lickitung, 63
+	cry_pitched Cry_Absol, 53
+	cry_pitched Cry_Gloom, 60
+	cry_pitched Cry_Ludicolo, 62
+	cry_pitched Cry_Dusclops, 60
+	cry_pitched Cry_MrMime, 61
+	cry_pitched Cry_Feraligatr, 59
+	cry_pitched Cry_Blaziken, 61
+	cry_pitched Cry_Zapdos, 61
 	cry Cry_Unused265
-	cry Cry_Taillow
-	cry Cry_Swellow
+	cry_pitched Cry_Absol, 59
+	cry_pitched Cry_Hitmonchan, 59
 	cry Cry_Unused268
-	cry Cry_Spinda
-	cry Cry_Torchic
-	cry Cry_Combusken
-	cry Cry_Blaziken
-	cry Cry_Treecko
-	cry Cry_Grovyle
-	cry Cry_Sceptile
-	cry Cry_Mudkip
-	cry Cry_Marshtomp
-	cry Cry_Swampert
-	cry Cry_Pelipper
-	cry Cry_Wingull
-	cry Cry_Banette
-	cry Cry_Shuppet
-	cry Cry_Lotad
-	cry Cry_Lombre
-	cry Cry_Ludicolo
-	cry Cry_Seedot
-	cry Cry_Nuzleaf
-	cry Cry_Shiftry
-	cry Cry_Carvanha
-	cry Cry_Wurmple
-	cry Cry_Silcoon
-	cry Cry_Beautifly
-	cry Cry_Cascoon
-	cry Cry_Dustox
-	cry Cry_Ralts
-	cry Cry_Kirlia
-	cry Cry_Gardevoir
-	cry Cry_Slakoth
-	cry Cry_Vigoroth
-	cry Cry_Slaking
-	cry Cry_Nincada
-	cry Cry_Ninjask
-	cry Cry_Shedinja
-	cry Cry_Makuhita
-	cry Cry_Hariyama
-	cry Cry_Nosepass
-	cry Cry_Glalie
-	cry Cry_Plusle
-	cry Cry_Minun
-	cry Cry_Surskit
-	cry Cry_Masquerain
-	cry Cry_Skitty
-	cry Cry_Delcatty
-	cry Cry_Gulpin
-	cry Cry_Swalot
-	cry Cry_Numel
-	cry Cry_Camerupt
-	cry Cry_Barboach
-	cry Cry_Whiscash
-	cry Cry_Corphish
-	cry Cry_Crawdaunt
-	cry Cry_Spoink
-	cry Cry_Grumpig
-	cry Cry_Trapinch
-	cry Cry_Vibrava
-	cry Cry_Flygon
-	cry Cry_Cacnea
-	cry Cry_Cacturne
-	cry Cry_Baltoy
-	cry Cry_Claydol
-	cry Cry_Lunatone
-	cry Cry_Solrock
-	cry Cry_Feebas
-	cry Cry_Milotic
-	cry Cry_Absol
-	cry Cry_Meditite
-	cry Cry_Medicham
-	cry Cry_Spheal
-	cry Cry_Sealeo
-	cry Cry_Walrein
-	cry Cry_Clamperl
-	cry Cry_Huntail
-	cry Cry_Gorebyss
-	cry Cry_Lileep
-	cry Cry_Cradily
-	cry Cry_Anorith
-	cry Cry_Armaldo
-	cry Cry_Beldum
-	cry Cry_Metang
-	cry Cry_Metagross
-	cry Cry_Bagon
-	cry Cry_Shelgon
-	cry Cry_Regirock
-	cry Cry_Regice
-	cry Cry_Registeel
-	cry Cry_Castform
-	cry Cry_Volbeat
-	cry Cry_Illumise
-	cry Cry_Poochyena
-	cry Cry_Mightyena
-	cry Cry_Dusclops
-	cry Cry_Sableye
-	cry Cry_Mawile
-	cry Cry_Aron
-	cry Cry_Lairon
-	cry Cry_Aggron
-	cry Cry_Relicanth
-	cry Cry_Luvdisc
-	cry Cry_Groudon
-	cry Cry_Kyogre
-	cry Cry_Rayquaza
-	cry Cry_Salamence
-	cry Cry_Breloom
-	cry Cry_Shroomish
-	cry Cry_Linoone
-	cry Cry_Tropius
-	cry Cry_Wailmer
-	cry Cry_Zigzagoon
-	cry Cry_Exploud
-	cry Cry_Loudred
-	cry Cry_Wailord
-	cry Cry_Whismur
-	cry Cry_Snorunt
-	cry Cry_Latios
-	cry Cry_Jirachi
-	cry Cry_Deoxys
-	cry Cry_Chimecho
+	cry_pitched Cry_Skarmory, 61
+	cry_pitched Cry_Charmander, 60
+	cry_pitched Cry_Ponyta, 60
+	cry_pitched Cry_Arcanine, 61
+	cry_pitched Cry_Jumpluff, 60
+	cry_pitched Cry_Ivysaur, 59
+	cry_pitched Cry_Tropius, 60
+	cry_pitched Cry_Lotad, 59
+	cry_pitched Cry_Chinchou, 60
+	cry_pitched Cry_Tentacool, 59
+	cry_pitched Cry_Absol, 67
+	cry_pitched Cry_Smeargle, 62
+	cry_pitched Cry_Cleffa, 60
+	cry_pitched Cry_Victreebel, 61
+	cry_pitched Cry_Absol, 60
+	cry_pitched Cry_Gardevoir, 59
+	cry_pitched Cry_Granbull, 60
+	cry_pitched Cry_Granbull, 61
+	cry_pitched Cry_Zapdos, 59
+	cry_pitched Cry_Hitmonchan, 62
+	cry_pitched Cry_Vaporeon, 60
+	cry_pitched Cry_Gengar, 60
+	cry_pitched Cry_Breloom, 60
+	cry_pitched Cry_Tentacool, 62
+	cry_pitched Cry_Magmar, 61
+	cry_pitched Cry_Absol, 69
+	cry_pitched Cry_Kingler, 65
+	cry_pitched Cry_Kingler, 55
+	cry_pitched Cry_Moltres, 61
+	cry_pitched Cry_Cacturne, 62
+	cry_pitched Cry_Absol, 61
+	cry_pitched Cry_Gengar, 58
+	cry_pitched Cry_Cacturne, 63
+	cry_pitched Cry_Slowbro, 59
+	cry_pitched Cry_Cacturne, 57
+	cry_pitched Cry_Makuhita, 60
+	cry_pitched Cry_Nosepass, 61
+	cry_pitched Cry_Absol, 57
+	cry_pitched Cry_Chimecho, 60
+	cry_pitched Cry_Nidorino, 60
+	cry_pitched Cry_Nidorina, 60
+	cry_pitched Cry_Kingler, 60
+	cry_pitched Cry_Cacturne, 61
+	cry_pitched Cry_Azurill, 60
+	cry_pitched Cry_Rattata, 61
+	cry_pitched Cry_Skarmory, 64
+	cry_pitched Cry_Grimer, 61
+	cry_pitched Cry_Ledian, 60
+	cry_pitched Cry_Skarmory, 60
+	cry_pitched Cry_Kingler, 66
+	cry_pitched Cry_Moltres, 62
+	cry_pitched Cry_Gligar, 59
+	cry_pitched Cry_Gligar, 62
+	cry_pitched Cry_Seaking, 58
+	cry_pitched Cry_Manectric, 60
+	cry_pitched Cry_Absol, 70
+	cry_pitched Cry_Magmar, 59
+	cry_pitched Cry_Absol, 71
+	cry_pitched Cry_Zapdos, 62
+	cry_pitched Cry_Clamperl, 61
+	cry_pitched Cry_Moltres, 59
+	cry_pitched Cry_Quagsire, 72
+	cry_pitched Cry_Smeargle, 58
+	cry_pitched Cry_Shiftry, 62
+	cry_pitched Cry_Miltank, 61
+	cry_pitched Cry_Miltank, 59
+	cry_pitched Cry_Bellsprout, 62
+	cry_pitched Cry_Wigglytuff, 59
+	cry_pitched Cry_Venomoth, 59
+	cry_pitched Cry_Exeggcute, 60
+	cry_pitched Cry_Chinchou, 61
+	cry_pitched Cry_Mankey, 61
+	cry_pitched Cry_Illumise, 61
+	cry_pitched Cry_Hitmontop, 60
+	cry_pitched Cry_Celebi, 60
+	cry_pitched Cry_Machoke, 61
+	cry_pitched Cry_Absol, 64
+	cry_pitched Cry_Larvitar, 61
+	cry_pitched Cry_Latios, 59
+	cry_pitched Cry_Lombre, 60
+	cry_pitched Cry_Lotad, 60
+	cry_pitched Cry_Camerupt, 60
+	cry_pitched Cry_Marowak, 59
+	cry_pitched Cry_Mew, 60
+	cry_pitched Cry_Kyogre, 60
+	cry_pitched Cry_Exeggutor, 57
+	cry_pitched Cry_Entei, 61
+	cry_pitched Cry_Sunkern, 61
+	cry_pitched Cry_Nidorina, 61
+	cry_pitched Cry_Nidorina, 59
+	cry_pitched Cry_Tangela, 60
+	cry_pitched Cry_Tangela, 61
+	cry_pitched Cry_Masquerain, 59
+	cry_pitched Cry_Paras, 60
+	cry_pitched Cry_Pineco, 61
+	cry_pitched Cry_Houndour, 62
+	cry_pitched Cry_Houndour, 61
+	cry_pitched Cry_Corphish, 60
+	cry_pitched Cry_Wigglytuff, 62
+	cry_pitched Cry_Vileplume, 62
+	cry_pitched Cry_Rayquaza, 61
+	cry_pitched Cry_Milotic, 60
+	cry_pitched Cry_Jumpluff, 61
+	cry_pitched Cry_Horsea, 61
+	cry_pitched Cry_Quagsire, 65
+	cry_pitched Cry_Typhlosion, 61
+	cry_pitched Cry_Mightyena, 60
+	cry_pitched Cry_Ledian, 61
+	cry_pitched Cry_Electabuzz, 60
+	cry_pitched Cry_Mightyena, 61
+	cry_pitched Cry_Nosepass, 62
+	cry_pitched Cry_Exploud, 58
+	cry_pitched Cry_Electabuzz, 59
+	cry_pitched Cry_Swampert, 59
+	cry_pitched Cry_Hoppip, 63
+	cry_pitched Cry_Machamp, 59
+	cry_pitched Cry_Murkrow, 59
+	cry_pitched Cry_Salamence, 61
+	cry_pitched Cry_Scizor, 62
 
 	.align 2
 gCryTable_Reverse::
-	cry_reverse Cry_Bulbasaur
-	cry_reverse Cry_Ivysaur
-	cry_reverse Cry_Venusaur
-	cry_reverse Cry_Charmander
-	cry_reverse Cry_Charmeleon
-	cry_reverse Cry_Charizard
-	cry_reverse Cry_Squirtle
-	cry_reverse Cry_Wartortle
-	cry_reverse Cry_Blastoise
-	cry_reverse Cry_Caterpie
-	cry_reverse Cry_Metapod
-	cry_reverse Cry_Butterfree
-	cry_reverse Cry_Weedle
-	cry_reverse Cry_Kakuna
-	cry_reverse Cry_Beedrill
-	cry_reverse Cry_Pidgey
-	cry_reverse Cry_Pidgeotto
-	cry_reverse Cry_Pidgeot
-	cry_reverse Cry_Rattata
-	cry_reverse Cry_Raticate
-	cry_reverse Cry_Spearow
-	cry_reverse Cry_Fearow
-	cry_reverse Cry_Ekans
-	cry_reverse Cry_Arbok
-	cry_reverse Cry_Pikachu
-	cry_reverse Cry_Raichu
-	cry_reverse Cry_Sandshrew
-	cry_reverse Cry_Sandslash
-	cry_reverse Cry_NidoranF
-	cry_reverse Cry_Nidorina
-	cry_reverse Cry_Nidoqueen
-	cry_reverse Cry_NidoranM
-	cry_reverse Cry_Nidorino
-	cry_reverse Cry_Nidoking
-	cry_reverse Cry_Clefairy
-	cry_reverse Cry_Clefable
-	cry_reverse Cry_Vulpix
-	cry_reverse Cry_Ninetales
-	cry_reverse Cry_Jigglypuff
-	cry_reverse Cry_Wigglytuff
-	cry_reverse Cry_Zubat
-	cry_reverse Cry_Golbat
-	cry_reverse Cry_Oddish
-	cry_reverse Cry_Gloom
-	cry_reverse Cry_Vileplume
-	cry_reverse Cry_Paras
-	cry_reverse Cry_Parasect
-	cry_reverse Cry_Venonat
-	cry_reverse Cry_Venomoth
-	cry_reverse Cry_Diglett
-	cry_reverse Cry_Dugtrio
-	cry_reverse Cry_Meowth
-	cry_reverse Cry_Persian
-	cry_reverse Cry_Psyduck
-	cry_reverse Cry_Golduck
-	cry_reverse Cry_Mankey
-	cry_reverse Cry_Primeape
-	cry_reverse Cry_Growlithe
-	cry_reverse Cry_Arcanine
-	cry_reverse Cry_Poliwag
-	cry_reverse Cry_Poliwhirl
-	cry_reverse Cry_Poliwrath
-	cry_reverse Cry_Abra
-	cry_reverse Cry_Kadabra
-	cry_reverse Cry_Alakazam
-	cry_reverse Cry_Machop
-	cry_reverse Cry_Machoke
-	cry_reverse Cry_Machamp
-	cry_reverse Cry_Bellsprout
-	cry_reverse Cry_Weepinbell
-	cry_reverse Cry_Victreebel
-	cry_reverse Cry_Tentacool
-	cry_reverse Cry_Tentacruel
-	cry_reverse Cry_Geodude
-	cry_reverse Cry_Graveler
-	cry_reverse Cry_Golem
-	cry_reverse Cry_Ponyta
-	cry_reverse Cry_Rapidash
-	cry_reverse Cry_Slowpoke
-	cry_reverse Cry_Slowbro
-	cry_reverse Cry_Magnemite
-	cry_reverse Cry_Magneton
-	cry_reverse Cry_Farfetchd
-	cry_reverse Cry_Doduo
-	cry_reverse Cry_Dodrio
-	cry_reverse Cry_Seel
-	cry_reverse Cry_Dewgong
-	cry_reverse Cry_Grimer
-	cry_reverse Cry_Muk
-	cry_reverse Cry_Shellder
-	cry_reverse Cry_Cloyster
-	cry_reverse Cry_Gastly
-	cry_reverse Cry_Haunter
-	cry_reverse Cry_Gengar
-	cry_reverse Cry_Onix
-	cry_reverse Cry_Drowzee
-	cry_reverse Cry_Hypno
-	cry_reverse Cry_Krabby
-	cry_reverse Cry_Kingler
-	cry_reverse Cry_Voltorb
-	cry_reverse Cry_Electrode
-	cry_reverse Cry_Exeggcute
-	cry_reverse Cry_Exeggutor
-	cry_reverse Cry_Cubone
-	cry_reverse Cry_Marowak
-	cry_reverse Cry_Hitmonlee
-	cry_reverse Cry_Hitmonchan
-	cry_reverse Cry_Lickitung
-	cry_reverse Cry_Koffing
-	cry_reverse Cry_Weezing
-	cry_reverse Cry_Rhyhorn
-	cry_reverse Cry_Rhydon
-	cry_reverse Cry_Chansey
-	cry_reverse Cry_Tangela
-	cry_reverse Cry_Kangaskhan
-	cry_reverse Cry_Horsea
-	cry_reverse Cry_Seadra
-	cry_reverse Cry_Goldeen
-	cry_reverse Cry_Seaking
-	cry_reverse Cry_Staryu
-	cry_reverse Cry_Starmie
-	cry_reverse Cry_MrMime
-	cry_reverse Cry_Scyther
-	cry_reverse Cry_Jynx
-	cry_reverse Cry_Electabuzz
-	cry_reverse Cry_Magmar
-	cry_reverse Cry_Pinsir
-	cry_reverse Cry_Tauros
-	cry_reverse Cry_Magikarp
-	cry_reverse Cry_Gyarados
-	cry_reverse Cry_Lapras
-	cry_reverse Cry_Ditto
-	cry_reverse Cry_Eevee
-	cry_reverse Cry_Vaporeon
-	cry_reverse Cry_Jolteon
-	cry_reverse Cry_Flareon
-	cry_reverse Cry_Porygon
-	cry_reverse Cry_Omanyte
-	cry_reverse Cry_Omastar
-	cry_reverse Cry_Kabuto
-	cry_reverse Cry_Kabutops
-	cry_reverse Cry_Aerodactyl
-	cry_reverse Cry_Snorlax
-	cry_reverse Cry_Articuno
-	cry_reverse Cry_Zapdos
-	cry_reverse Cry_Moltres
-	cry_reverse Cry_Dratini
-	cry_reverse Cry_Dragonair
-	cry_reverse Cry_Dragonite
-	cry_reverse Cry_Mewtwo
-	cry_reverse Cry_Mew
-	cry_reverse Cry_Chikorita
-	cry_reverse Cry_Bayleef
-	cry_reverse Cry_Meganium
-	cry_reverse Cry_Cyndaquil
-	cry_reverse Cry_Quilava
-	cry_reverse Cry_Typhlosion
-	cry_reverse Cry_Totodile
-	cry_reverse Cry_Croconaw
-	cry_reverse Cry_Feraligatr
-	cry_reverse Cry_Sentret
-	cry_reverse Cry_Furret
-	cry_reverse Cry_Hoothoot
-	cry_reverse Cry_Noctowl
-	cry_reverse Cry_Ledyba
-	cry_reverse Cry_Ledian
-	cry_reverse Cry_Spinarak
-	cry_reverse Cry_Ariados
-	cry_reverse Cry_Crobat
-	cry_reverse Cry_Chinchou
-	cry_reverse Cry_Lanturn
-	cry_reverse Cry_Pichu
-	cry_reverse Cry_Cleffa
-	cry_reverse Cry_Igglybuff
-	cry_reverse Cry_Togepi
-	cry_reverse Cry_Togetic
-	cry_reverse Cry_Natu
-	cry_reverse Cry_Xatu
-	cry_reverse Cry_Mareep
-	cry_reverse Cry_Flaaffy
-	cry_reverse Cry_Ampharos
-	cry_reverse Cry_Bellossom
-	cry_reverse Cry_Marill
-	cry_reverse Cry_Azumarill
-	cry_reverse Cry_Sudowoodo
-	cry_reverse Cry_Politoed
-	cry_reverse Cry_Hoppip
-	cry_reverse Cry_Skiploom
-	cry_reverse Cry_Jumpluff
-	cry_reverse Cry_Aipom
-	cry_reverse Cry_Sunkern
-	cry_reverse Cry_Sunflora
-	cry_reverse Cry_Yanma
-	cry_reverse Cry_Wooper
-	cry_reverse Cry_Quagsire
-	cry_reverse Cry_Espeon
-	cry_reverse Cry_Umbreon
-	cry_reverse Cry_Murkrow
-	cry_reverse Cry_Slowking
-	cry_reverse Cry_Misdreavus
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Wobbuffet
-	cry_reverse Cry_Girafarig
-	cry_reverse Cry_Pineco
-	cry_reverse Cry_Forretress
-	cry_reverse Cry_Dunsparce
-	cry_reverse Cry_Gligar
-	cry_reverse Cry_Steelix
-	cry_reverse Cry_Snubbull
-	cry_reverse Cry_Granbull
-	cry_reverse Cry_Qwilfish
-	cry_reverse Cry_Scizor
-	cry_reverse Cry_Shuckle
-	cry_reverse Cry_Heracross
-	cry_reverse Cry_Sneasel
-	cry_reverse Cry_Teddiursa
-	cry_reverse Cry_Ursaring
-	cry_reverse Cry_Slugma
-	cry_reverse Cry_Magcargo
-	cry_reverse Cry_Swinub
-	cry_reverse Cry_Piloswine
-	cry_reverse Cry_Corsola
-	cry_reverse Cry_Remoraid
-	cry_reverse Cry_Octillery
-	cry_reverse Cry_Delibird
-	cry_reverse Cry_Mantine
-	cry_reverse Cry_Skarmory
-	cry_reverse Cry_Houndour
-	cry_reverse Cry_Houndoom
-	cry_reverse Cry_Kingdra
-	cry_reverse Cry_Phanpy
-	cry_reverse Cry_Donphan
-	cry_reverse Cry_Porygon2
-	cry_reverse Cry_Stantler
-	cry_reverse Cry_Smeargle
-	cry_reverse Cry_Tyrogue
-	cry_reverse Cry_Hitmontop
-	cry_reverse Cry_Smoochum
-	cry_reverse Cry_Elekid
-	cry_reverse Cry_Magby
-	cry_reverse Cry_Miltank
-	cry_reverse Cry_Blissey
-	cry_reverse Cry_Raikou
-	cry_reverse Cry_Entei
-	cry_reverse Cry_Suicune
-	cry_reverse Cry_Larvitar
-	cry_reverse Cry_Pupitar
-	cry_reverse Cry_Tyranitar
-	cry_reverse Cry_Lugia
-	cry_reverse Cry_HoOh
-	cry_reverse Cry_Celebi
-	cry_reverse Cry_Kecleon
-	cry_reverse Cry_Roselia
-	cry_reverse Cry_Torkoal
-	cry_reverse Cry_Electrike
-	cry_reverse Cry_Manectric
-	cry_reverse Cry_Duskull
-	cry_reverse Cry_Latias
-	cry_reverse Cry_Wynaut
-	cry_reverse Cry_Seviper
-	cry_reverse Cry_Sharpedo
-	cry_reverse Cry_Zangoose
-	cry_reverse Cry_Azurill
-	cry_reverse Cry_Swablu
-	cry_reverse Cry_Altaria
+	cry_reverse_pitched Cry_Caterpie, 62
+	cry_reverse_pitched Cry_Yanma, 61
+	cry_reverse_pitched Cry_Lanturn, 61
+	cry_reverse_pitched Cry_Illumise, 59
+	cry_reverse_pitched Cry_Togepi, 61
+	cry_reverse_pitched Cry_Wigglytuff, 58
+	cry_reverse_pitched Cry_Torchic, 70
+	cry_reverse_pitched Cry_Sunflora, 59
+	cry_reverse_pitched Cry_Grovyle, 58
+	cry_reverse_pitched Cry_Tentacool, 58
+	cry_reverse_pitched Cry_Houndour, 65
+	cry_reverse_pitched Cry_Bellossom, 61
+	cry_reverse_pitched Cry_Shedinja, 67
+	cry_reverse_pitched Cry_Absol, 62
+	cry_reverse_pitched Cry_Gligar, 65
+	cry_reverse_pitched Cry_Seaking, 63
+	cry_reverse_pitched Cry_Seaking, 57
+	cry_reverse_pitched Cry_Tentacool, 63
+	cry_reverse_pitched Cry_Marowak, 57
+	cry_reverse_pitched Cry_Marowak, 64
+	cry_reverse_pitched Cry_Marowak, 56
+	cry_reverse_pitched Cry_Gardevoir, 62
+	cry_reverse_pitched Cry_Hitmonchan, 58
+	cry_reverse_pitched Cry_Cacnea, 59
+	cry_reverse_pitched Cry_Clamperl, 59
+	cry_reverse_pitched Cry_Ludicolo, 58
+	cry_reverse_pitched Cry_Ludicolo, 63
+	cry_reverse_pitched Cry_Shiftry, 58
+	cry_reverse_pitched Cry_Shiftry, 63
+	cry_reverse_pitched Cry_Shiftry, 57
+	cry_reverse_pitched Cry_Nidoking, 59
+	cry_reverse_pitched Cry_Gligar, 58
+	cry_reverse_pitched Cry_Arbok, 59
+	cry_reverse_pitched Cry_Lickitung, 57
+	cry_reverse_pitched Cry_Lickitung, 64
+	cry_reverse_pitched Cry_Stantler, 59
+	cry_reverse_pitched Cry_Quagsire, 55
+	cry_reverse_pitched Cry_Seel, 59
+	cry_reverse_pitched Cry_Wailord, 61
+	cry_reverse_pitched Cry_Scyther, 60
+	cry_reverse_pitched Cry_Scyther, 56
+	cry_reverse_pitched Cry_Scyther, 61
+	cry_reverse_pitched Cry_Torkoal, 62
+	cry_reverse_pitched Cry_Torkoal, 58
+	cry_reverse_pitched Cry_Torkoal, 63
+	cry_reverse_pitched Cry_Blastoise, 59
+	cry_reverse_pitched Cry_Blastoise, 62
+	cry_reverse_pitched Cry_Feraligatr, 62
+	cry_reverse_pitched Cry_Feraligatr, 58
+	cry_reverse_pitched Cry_Seel, 62
+	cry_reverse_pitched Cry_Barboach, 61
+	cry_reverse_pitched Cry_Rattata, 59
+	cry_reverse_pitched Cry_Meditite, 66
+	cry_reverse_pitched Cry_Meditite, 64
+	cry_reverse_pitched Cry_Spinarak, 61
+	cry_reverse_pitched Cry_Metapod, 61
+	cry_reverse_pitched Cry_Ledyba, 61
+	cry_reverse_pitched Cry_Wigglytuff, 63
+	cry_reverse_pitched Cry_Dunsparce, 61
+	cry_reverse_pitched Cry_Poochyena, 58
+	cry_reverse_pitched Cry_Zigzagoon, 61
+	cry_reverse_pitched Cry_Raticate, 61
+	cry_reverse_pitched Cry_Swellow, 61
+	cry_reverse_pitched Cry_Shuckle, 61
+	cry_reverse_pitched Cry_Shuckle, 60
+	cry_reverse_pitched Cry_Beautifly, 63
+	cry_reverse_pitched Cry_Slakoth, 61
+	cry_reverse_pitched Cry_Pidgeotto, 62
+	cry_reverse_pitched Cry_Sneasel, 59
+	cry_reverse_pitched Cry_Grimer, 64
+	cry_reverse_pitched Cry_Grimer, 56
+	cry_reverse_pitched Cry_Grimer, 61
+	cry_reverse_pitched Cry_Houndoom, 61
+	cry_reverse_pitched Cry_Porygon, 61
+	cry_reverse_pitched Cry_Fearow, 61
+	cry_reverse_pitched Cry_Seaking, 64
+	cry_reverse_pitched Cry_Seaking, 56
+	cry_reverse_pitched Cry_Seviper, 62
+	cry_reverse_pitched Cry_Vigoroth, 59
+	cry_reverse_pitched Cry_Vigoroth, 62
+	cry_reverse_pitched Cry_Blissey, 61
+	cry_reverse_pitched Cry_Gardevoir, 58
+	cry_reverse_pitched Cry_Hitmonchan, 63
+	cry_reverse_pitched Cry_Cacnea, 62
+	cry_reverse_pitched Cry_Zapdos, 58
+	cry_reverse_pitched Cry_MrMime, 59
+	cry_reverse_pitched Cry_Scyther, 63
+	cry_reverse_pitched Cry_Smeargle, 63
+	cry_reverse_pitched Cry_Smeargle, 57
+	cry_reverse_pitched Cry_Moltres, 58
+	cry_reverse_pitched Cry_Cradily, 59
+	cry_reverse_pitched Cry_Lickitung, 56
+	cry_reverse_pitched Cry_Lickitung, 65
+	cry_reverse_pitched Cry_Lickitung, 55
+	cry_reverse_pitched Cry_Quagsire, 50
+	cry_reverse_pitched Cry_Quagsire, 66
+	cry_reverse_pitched Cry_Absol, 65
+	cry_reverse_pitched Cry_Electrode, 59
+	cry_reverse_pitched Cry_Quagsire, 54
+	cry_reverse_pitched Cry_Quagsire, 67
+	cry_reverse_pitched Cry_Beldum, 62
+	cry_reverse_pitched Cry_Kangaskhan, 58
+	cry_reverse_pitched Cry_Kangaskhan, 63
+	cry_reverse_pitched Cry_Kangaskhan, 57
+	cry_reverse_pitched Cry_Exploud, 63
+	cry_reverse_pitched Cry_Exploud, 57
+	cry_reverse_pitched Cry_Dodrio, 61
+	cry_reverse_pitched Cry_Swalot, 61
+	cry_reverse_pitched Cry_Swalot, 57
+	cry_reverse_pitched Cry_Swalot, 62
+	cry_reverse_pitched Cry_Koffing, 57
+	cry_reverse_pitched Cry_Qwilfish, 62
+	cry_reverse_pitched Cry_Corsola, 61
+	cry_reverse_pitched Cry_Krabby, 61
+	cry_reverse_pitched Cry_Horsea, 59
+	cry_reverse_pitched Cry_Totodile, 59
+	cry_reverse_pitched Cry_Voltorb, 61
+	cry_reverse_pitched Cry_Poliwag, 61
+	cry_reverse_pitched Cry_Goldeen, 58
+	cry_reverse_pitched Cry_Goldeen, 63
+	cry_reverse_pitched Cry_Goldeen, 60
+	cry_reverse_pitched Cry_Psyduck, 61
+	cry_reverse_pitched Cry_Poliwhirl, 61
+	cry_reverse_pitched Cry_Carvanha, 59
+	cry_reverse_pitched Cry_Relicanth, 61
+	cry_reverse_pitched Cry_Croconaw, 61
+	cry_reverse_pitched Cry_Beautifly, 59
+	cry_reverse_pitched Cry_Beautifly, 61
+	cry_reverse_pitched Cry_Beedrill, 61
+	cry_reverse_pitched Cry_Venonat, 61
+	cry_reverse_pitched Cry_Butterfree, 61
+	cry_reverse_pitched Cry_Ariados, 61
+	cry_reverse_pitched Cry_Grimer, 57
+	cry_reverse_pitched Cry_Grimer, 62
+	cry_reverse_pitched Cry_Yanma, 56
+	cry_reverse_pitched Cry_Yanma, 65
+	cry_reverse_pitched Cry_Yanma, 55
+	cry_reverse_pitched Cry_Yanma, 57
+	cry_reverse_pitched Cry_Yanma, 62
+	cry_reverse_pitched Cry_Heracross, 57
+	cry_reverse_pitched Cry_Heracross, 66
+	cry_reverse_pitched Cry_Heracross, 56
+	cry_reverse_pitched Cry_Heracross, 62
+	cry_reverse_pitched Cry_Heracross, 58
+	cry_reverse_pitched Cry_Heracross, 63
+	cry_reverse_pitched Cry_Pinsir, 61
+	cry_reverse_pitched Cry_Scyther, 64
+	cry_reverse_pitched Cry_Smeargle, 64
+	cry_reverse_pitched Cry_Aerodactyl, 59
+	cry_reverse_pitched Cry_Cradily, 62
+	cry_reverse_pitched Cry_Nidoking, 62
+	cry_reverse_pitched Cry_Gligar, 63
+	cry_reverse_pitched Cry_Arbok, 62
+	cry_reverse_pitched Cry_Electrode, 62
+	cry_reverse_pitched Cry_Armaldo, 61
+	cry_reverse_pitched Cry_Machoke, 59
+	cry_reverse_pitched Cry_Stantler, 62
+	cry_reverse_pitched Cry_Larvitar, 59
+	cry_reverse_pitched Cry_Crobat, 61
+	cry_reverse_pitched Cry_Miltank, 62
+	cry_reverse_pitched Cry_Cacturne, 64
+	cry_reverse_pitched Cry_Slowbro, 62
+	cry_reverse_pitched Cry_Kangaskhan, 64
+	cry_reverse_pitched Cry_Swampert, 62
+	cry_reverse_pitched Cry_Exploud, 64
+	cry_reverse_pitched Cry_Exploud, 56
+	cry_reverse_pitched Cry_Cacturne, 58
+	cry_reverse_pitched Cry_Cacturne, 61
+	cry_reverse_pitched Cry_Tropius, 63
+	cry_reverse_pitched Cry_Tropius, 59
+	cry_reverse_pitched Cry_Roselia, 61
+	cry_reverse_pitched Cry_Bellsprout, 63
+	cry_reverse_pitched Cry_Treecko, 61
+	cry_reverse_pitched Cry_Chikorita, 61
+	cry_reverse_pitched Cry_Sunflora, 62
+	cry_reverse_pitched Cry_Gloom, 58
+	cry_reverse_pitched Cry_Ivysaur, 64
+	cry_reverse_pitched Cry_Ivysaur, 62
+	cry_reverse_pitched Cry_Ivysaur, 58
+	cry_reverse_pitched Cry_Victreebel, 59
+	cry_reverse_pitched Cry_Bayleef, 61
+	cry_reverse_pitched Cry_Vileplume, 58
+	cry_reverse_pitched Cry_Vileplume, 63
+	cry_reverse_pitched Cry_Grovyle, 63
+	cry_reverse_pitched Cry_Grovyle, 57
+	cry_reverse_pitched Cry_Grovyle, 60
+	cry_reverse_pitched Cry_Lileep, 58
+	cry_reverse_pitched Cry_Lileep, 61
+	cry_reverse_pitched Cry_Omastar, 63
+	cry_reverse_pitched Cry_Omastar, 59
+	cry_reverse_pitched Cry_Skarmory, 67
+	cry_reverse_pitched Cry_Skarmory, 65
+	cry_reverse_pitched Cry_Omastar, 61
+	cry_reverse_pitched Cry_Skarmory, 59
+	cry_reverse_pitched Cry_Skarmory, 66
+	cry_reverse_pitched Cry_Kabutops, 63
+	cry_reverse_pitched Cry_Magmar, 62
+	cry_reverse_pitched Cry_Marowak, 65
+	cry_reverse_pitched Cry_Marowak, 55
+	cry_reverse_pitched Cry_Kabutops, 61
+	cry_reverse_pitched Cry_Kabutops, 57
+	cry_reverse_pitched Cry_Kabutops, 62
+	cry_reverse_pitched Cry_Aerodactyl, 64
+	cry_reverse_pitched Cry_Blaziken, 59
+	cry_reverse_pitched Cry_Aerodactyl, 58
+	cry_reverse_pitched Cry_Aerodactyl, 62
+	cry_reverse_pitched Cry_Ludicolo, 57
+	cry_reverse_pitched Cry_Kingler, 54
+	cry_reverse_pitched Cry_Kingler, 67
+	cry_reverse_pitched Cry_Kingler, 53
+	cry_reverse_pitched Cry_Kingler, 68
+	cry_reverse_pitched Cry_Kingler, 52
+	cry_reverse_pitched Cry_Kingler, 69
+	cry_reverse_pitched Cry_Kingler, 58
+	cry_reverse_pitched Cry_Quagsire, 73
+	cry_reverse_pitched Cry_Quagsire, 53
+	cry_reverse_pitched Cry_Quagsire, 68
+	cry_reverse_pitched Cry_Quagsire, 52
+	cry_reverse_pitched Cry_Quagsire, 69
+	cry_reverse_pitched Cry_Quagsire, 51
+	cry_reverse_pitched Cry_Golduck, 61
+	cry_reverse_pitched Cry_Slowbro, 58
+	cry_reverse_pitched Cry_Starmie, 61
+	cry_reverse_pitched Cry_Swampert, 58
+	cry_reverse_pitched Cry_Gengar, 59
+	cry_reverse_pitched Cry_Absol, 52
+	cry_reverse_pitched Cry_Absol, 63
+	cry_reverse_pitched Cry_Absol, 55
+	cry_reverse_pitched Cry_Gengar, 54
+	cry_reverse_pitched Cry_Gengar, 57
+	cry_reverse_pitched Cry_Shuppet, 62
+	cry_reverse_pitched Cry_Shuppet, 59
+	cry_reverse_pitched Cry_Shuppet, 57
+	cry_reverse_pitched Cry_Houndour, 64
+	cry_reverse_pitched Cry_Mareep, 61
+	cry_reverse_pitched Cry_Totodile, 62
+	cry_reverse_pitched Cry_Vulpix, 60
+	cry_reverse_pitched Cry_Anorith, 61
+	cry_reverse_pitched Cry_Goldeen, 57
+	cry_reverse_pitched Cry_Poochyena, 61
+	cry_reverse_pitched Cry_Charmeleon, 62
+	cry_reverse_pitched Cry_Vileplume, 57
+	cry_reverse_pitched Cry_Duskull, 59
+	cry_reverse_pitched Cry_Carvanha, 62
+	cry_reverse_pitched Cry_Dusclops, 63
+	cry_reverse_pitched Cry_Dusclops, 62
+	cry_reverse_pitched Cry_Huntail, 61
+	cry_reverse_pitched Cry_Nuzleaf, 61
+	cry_reverse_pitched Cry_Pidgeotto, 61
+	cry_reverse_pitched Cry_Sneasel, 62
+	cry_reverse_pitched Cry_Houndoom, 62
+	cry_reverse_pitched Cry_Bellsprout, 61
+	cry_reverse_pitched Cry_Flareon, 61
+	cry_reverse_pitched Cry_Sudowoodo, 61
+	cry_reverse_pitched Cry_Vibrava, 61
+	cry_reverse_pitched Cry_Mawile, 59
+	cry_reverse_pitched Cry_Lickitung, 66
+	cry_reverse_pitched Cry_Absol, 54
+	cry_reverse_pitched Cry_Gloom, 61
+	cry_reverse_pitched Cry_Ludicolo, 64
+	cry_reverse_pitched Cry_Dusclops, 61
+	cry_reverse_pitched Cry_MrMime, 62
+	cry_reverse_pitched Cry_Feraligatr, 63
+	cry_reverse_pitched Cry_Blaziken, 62
+	cry_reverse_pitched Cry_Zapdos, 63
 	cry_reverse Cry_Unused265
-	cry_reverse Cry_Taillow
-	cry_reverse Cry_Swellow
+	cry_reverse_pitched Cry_Absol, 68
+	cry_reverse_pitched Cry_Hitmonchan, 60
 	cry_reverse Cry_Unused268
-	cry_reverse Cry_Spinda
-	cry_reverse Cry_Torchic
-	cry_reverse Cry_Combusken
-	cry_reverse Cry_Blaziken
-	cry_reverse Cry_Treecko
-	cry_reverse Cry_Grovyle
-	cry_reverse Cry_Sceptile
-	cry_reverse Cry_Mudkip
-	cry_reverse Cry_Marshtomp
-	cry_reverse Cry_Swampert
-	cry_reverse Cry_Pelipper
-	cry_reverse Cry_Wingull
-	cry_reverse Cry_Banette
-	cry_reverse Cry_Shuppet
-	cry_reverse Cry_Lotad
-	cry_reverse Cry_Lombre
-	cry_reverse Cry_Ludicolo
-	cry_reverse Cry_Seedot
-	cry_reverse Cry_Nuzleaf
-	cry_reverse Cry_Shiftry
-	cry_reverse Cry_Carvanha
-	cry_reverse Cry_Wurmple
-	cry_reverse Cry_Silcoon
-	cry_reverse Cry_Beautifly
-	cry_reverse Cry_Cascoon
-	cry_reverse Cry_Dustox
-	cry_reverse Cry_Ralts
-	cry_reverse Cry_Kirlia
-	cry_reverse Cry_Gardevoir
-	cry_reverse Cry_Slakoth
-	cry_reverse Cry_Vigoroth
-	cry_reverse Cry_Slaking
-	cry_reverse Cry_Nincada
-	cry_reverse Cry_Ninjask
-	cry_reverse Cry_Shedinja
-	cry_reverse Cry_Makuhita
-	cry_reverse Cry_Hariyama
-	cry_reverse Cry_Nosepass
-	cry_reverse Cry_Glalie
-	cry_reverse Cry_Plusle
-	cry_reverse Cry_Minun
-	cry_reverse Cry_Surskit
-	cry_reverse Cry_Masquerain
-	cry_reverse Cry_Skitty
-	cry_reverse Cry_Delcatty
-	cry_reverse Cry_Gulpin
-	cry_reverse Cry_Swalot
-	cry_reverse Cry_Numel
-	cry_reverse Cry_Camerupt
-	cry_reverse Cry_Barboach
-	cry_reverse Cry_Whiscash
-	cry_reverse Cry_Corphish
-	cry_reverse Cry_Crawdaunt
-	cry_reverse Cry_Spoink
-	cry_reverse Cry_Grumpig
-	cry_reverse Cry_Trapinch
-	cry_reverse Cry_Vibrava
-	cry_reverse Cry_Flygon
-	cry_reverse Cry_Cacnea
-	cry_reverse Cry_Cacturne
-	cry_reverse Cry_Baltoy
-	cry_reverse Cry_Claydol
-	cry_reverse Cry_Lunatone
-	cry_reverse Cry_Solrock
-	cry_reverse Cry_Feebas
-	cry_reverse Cry_Milotic
-	cry_reverse Cry_Absol
-	cry_reverse Cry_Meditite
-	cry_reverse Cry_Medicham
-	cry_reverse Cry_Spheal
-	cry_reverse Cry_Sealeo
-	cry_reverse Cry_Walrein
-	cry_reverse Cry_Clamperl
-	cry_reverse Cry_Huntail
-	cry_reverse Cry_Gorebyss
-	cry_reverse Cry_Lileep
-	cry_reverse Cry_Cradily
-	cry_reverse Cry_Anorith
-	cry_reverse Cry_Armaldo
-	cry_reverse Cry_Beldum
-	cry_reverse Cry_Metang
-	cry_reverse Cry_Metagross
-	cry_reverse Cry_Bagon
-	cry_reverse Cry_Shelgon
-	cry_reverse Cry_Regirock
-	cry_reverse Cry_Regice
-	cry_reverse Cry_Registeel
-	cry_reverse Cry_Castform
-	cry_reverse Cry_Volbeat
-	cry_reverse Cry_Illumise
-	cry_reverse Cry_Poochyena
-	cry_reverse Cry_Mightyena
-	cry_reverse Cry_Dusclops
-	cry_reverse Cry_Sableye
-	cry_reverse Cry_Mawile
-	cry_reverse Cry_Aron
-	cry_reverse Cry_Lairon
-	cry_reverse Cry_Aggron
-	cry_reverse Cry_Relicanth
-	cry_reverse Cry_Luvdisc
-	cry_reverse Cry_Groudon
-	cry_reverse Cry_Kyogre
-	cry_reverse Cry_Rayquaza
-	cry_reverse Cry_Salamence
-	cry_reverse Cry_Breloom
-	cry_reverse Cry_Shroomish
-	cry_reverse Cry_Linoone
-	cry_reverse Cry_Tropius
-	cry_reverse Cry_Wailmer
-	cry_reverse Cry_Zigzagoon
-	cry_reverse Cry_Exploud
-	cry_reverse Cry_Loudred
-	cry_reverse Cry_Wailord
-	cry_reverse Cry_Whismur
-	cry_reverse Cry_Snorunt
-	cry_reverse Cry_Latios
-	cry_reverse Cry_Jirachi
-	cry_reverse Cry_Deoxys
-	cry_reverse Cry_Chimecho
+	cry_reverse_pitched Cry_Skarmory, 62
+	cry_reverse_pitched Cry_Charmander, 61
+	cry_reverse_pitched Cry_Ponyta, 61
+	cry_reverse_pitched Cry_Arcanine, 62
+	cry_reverse_pitched Cry_Jumpluff, 59
+	cry_reverse_pitched Cry_Ivysaur, 63
+	cry_reverse_pitched Cry_Tropius, 64
+	cry_reverse_pitched Cry_Lotad, 58
+	cry_reverse_pitched Cry_Chinchou, 59
+	cry_reverse_pitched Cry_Tentacool, 57
+	cry_reverse_pitched Cry_Absol, 50
+	cry_reverse_pitched Cry_Smeargle, 56
+	cry_reverse_pitched Cry_Cleffa, 61
+	cry_reverse_pitched Cry_Victreebel, 62
+	cry_reverse_pitched Cry_Absol, 49
+	cry_reverse_pitched Cry_Gardevoir, 63
+	cry_reverse_pitched Cry_Granbull, 59
+	cry_reverse_pitched Cry_Granbull, 62
+	cry_reverse_pitched Cry_Zapdos, 57
+	cry_reverse_pitched Cry_Hitmonchan, 57
+	cry_reverse_pitched Cry_Vaporeon, 61
+	cry_reverse_pitched Cry_Gengar, 61
+	cry_reverse_pitched Cry_Breloom, 61
+	cry_reverse_pitched Cry_Tentacool, 64
+	cry_reverse_pitched Cry_Magmar, 58
+	cry_reverse_pitched Cry_Absol, 72
+	cry_reverse_pitched Cry_Kingler, 51
+	cry_reverse_pitched Cry_Kingler, 70
+	cry_reverse_pitched Cry_Moltres, 63
+	cry_reverse_pitched Cry_Cacturne, 56
+	cry_reverse_pitched Cry_Absol, 51
+	cry_reverse_pitched Cry_Gengar, 53
+	cry_reverse_pitched Cry_Cacturne, 65
+	cry_reverse_pitched Cry_Slowbro, 63
+	cry_reverse_pitched Cry_Cacturne, 55
+	cry_reverse_pitched Cry_Makuhita, 61
+	cry_reverse_pitched Cry_Nosepass, 60
+	cry_reverse_pitched Cry_Absol, 58
+	cry_reverse_pitched Cry_Chimecho, 61
+	cry_reverse_pitched Cry_Nidorino, 61
+	cry_reverse_pitched Cry_Nidorina, 62
+	cry_reverse_pitched Cry_Kingler, 61
+	cry_reverse_pitched Cry_Cacturne, 66
+	cry_reverse_pitched Cry_Azurill, 61
+	cry_reverse_pitched Cry_Rattata, 62
+	cry_reverse_pitched Cry_Skarmory, 68
+	cry_reverse_pitched Cry_Grimer, 65
+	cry_reverse_pitched Cry_Ledian, 59
+	cry_reverse_pitched Cry_Skarmory, 58
+	cry_reverse_pitched Cry_Kingler, 50
+	cry_reverse_pitched Cry_Moltres, 57
+	cry_reverse_pitched Cry_Gligar, 57
+	cry_reverse_pitched Cry_Gligar, 64
+	cry_reverse_pitched Cry_Seaking, 65
+	cry_reverse_pitched Cry_Manectric, 61
+	cry_reverse_pitched Cry_Absol, 48
+	cry_reverse_pitched Cry_Magmar, 63
+	cry_reverse_pitched Cry_Absol, 60
+	cry_reverse_pitched Cry_Zapdos, 64
+	cry_reverse_pitched Cry_Clamperl, 62
+	cry_reverse_pitched Cry_Moltres, 60
+	cry_reverse_pitched Cry_Quagsire, 49
+	cry_reverse_pitched Cry_Smeargle, 65
+	cry_reverse_pitched Cry_Shiftry, 64
+	cry_reverse_pitched Cry_Miltank, 58
+	cry_reverse_pitched Cry_Miltank, 63
+	cry_reverse_pitched Cry_Bellsprout, 59
+	cry_reverse_pitched Cry_Wigglytuff, 57
+	cry_reverse_pitched Cry_Venomoth, 60
+	cry_reverse_pitched Cry_Exeggcute, 61
+	cry_reverse_pitched Cry_Chinchou, 62
+	cry_reverse_pitched Cry_Mankey, 62
+	cry_reverse_pitched Cry_Illumise, 62
+	cry_reverse_pitched Cry_Hitmontop, 61
+	cry_reverse_pitched Cry_Celebi, 61
+	cry_reverse_pitched Cry_Machoke, 62
+	cry_reverse_pitched Cry_Absol, 66
+	cry_reverse_pitched Cry_Larvitar, 62
+	cry_reverse_pitched Cry_Latios, 60
+	cry_reverse_pitched Cry_Lombre, 61
+	cry_reverse_pitched Cry_Lotad, 61
+	cry_reverse_pitched Cry_Camerupt, 61
+	cry_reverse_pitched Cry_Marowak, 60
+	cry_reverse_pitched Cry_Mew, 61
+	cry_reverse_pitched Cry_Kyogre, 61
+	cry_reverse_pitched Cry_Exeggutor, 58
+	cry_reverse_pitched Cry_Entei, 62
+	cry_reverse_pitched Cry_Sunkern, 62
+	cry_reverse_pitched Cry_Nidorina, 58
+	cry_reverse_pitched Cry_Nidorina, 60
+	cry_reverse_pitched Cry_Tangela, 59
+	cry_reverse_pitched Cry_Tangela, 62
+	cry_reverse_pitched Cry_Masquerain, 60
+	cry_reverse_pitched Cry_Paras, 61
+	cry_reverse_pitched Cry_Pineco, 62
+	cry_reverse_pitched Cry_Houndour, 63
+	cry_reverse_pitched Cry_Houndour, 62
+	cry_reverse_pitched Cry_Corphish, 61
+	cry_reverse_pitched Cry_Wigglytuff, 64
+	cry_reverse_pitched Cry_Vileplume, 64
+	cry_reverse_pitched Cry_Rayquaza, 62
+	cry_reverse_pitched Cry_Milotic, 61
+	cry_reverse_pitched Cry_Jumpluff, 62
+	cry_reverse_pitched Cry_Horsea, 62
+	cry_reverse_pitched Cry_Quagsire, 70
+	cry_reverse_pitched Cry_Typhlosion, 62
+	cry_reverse_pitched Cry_Mightyena, 59
+	cry_reverse_pitched Cry_Ledian, 62
+	cry_reverse_pitched Cry_Electabuzz, 61
+	cry_reverse_pitched Cry_Mightyena, 62
+	cry_reverse_pitched Cry_Nosepass, 63
+	cry_reverse_pitched Cry_Exploud, 65
+	cry_reverse_pitched Cry_Electabuzz, 60
+	cry_reverse_pitched Cry_Swampert, 63
+	cry_reverse_pitched Cry_Hoppip, 64
+	cry_reverse_pitched Cry_Machamp, 60
+	cry_reverse_pitched Cry_Murkrow, 60
+	cry_reverse_pitched Cry_Salamence, 62
+	cry_reverse_pitched Cry_Scizor, 63

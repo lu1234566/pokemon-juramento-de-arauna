@@ -145,6 +145,21 @@
 	.byte 0xff, 0, 0xff, 0
 	.endm
 
+	@ Same as cry, but the sample plays at an explicit key instead of 60.
+	@ Nothing in the engine reads this byte for anything else, so it is free to
+	@ tell two creatures sharing a sample apart by size.
+	.macro cry_pitched sample:req, key=60
+	.byte 0x20, \key, 0, 0
+	.4byte \sample
+	.byte 0xff, 0, 0xff, 0
+	.endm
+
+	.macro cry_reverse_pitched sample:req, key=60
+	.byte 0x30, \key, 0, 0
+	.4byte \sample
+	.byte 0xff, 0, 0xff, 0
+	.endm
+
 	.macro cry_reverse sample:req
 	.byte 0x30, 60, 0, 0
 	.4byte \sample
