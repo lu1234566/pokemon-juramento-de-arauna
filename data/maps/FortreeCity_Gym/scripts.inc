@@ -136,7 +136,7 @@ FortreeCity_Gym_EventScript_GymStatue::
 FortreeCity_Gym_Text_GymGuideAdvice:
 	.string "Yo, how's it going, CHAMPION-\n"
 	.string "bound {PLAYER}?\p"
-	.string "FORTREE GYM LEADER WINONA is\n"
+	.string "MATA DO MEIO GYM LEADER WINONA is\n"
 	.string "a master of FLYING-type POKéMON.\p"
 	.string "She's waiting at the back of this GYM,\n"
 	.string "behind the rotating doors.\p"
@@ -165,7 +165,7 @@ FortreeCity_Gym_Text_JaredPostBattle:
 FortreeCity_Gym_Text_EdwardoIntro:
 	.string "The lovers of BIRD POKéMON aspire\n"
 	.string "to join this GYM.\p"
-	.string "As a member of the FORTREE GYM,\n"
+	.string "As a member of the MATA DO MEIO GYM,\n"
 	.string "I'm not allowed to lose!$"
 
 FortreeCity_Gym_Text_EdwardoDefeat:
@@ -201,7 +201,7 @@ FortreeCity_Gym_Text_AshleyDefeat:
 
 FortreeCity_Gym_Text_AshleyPostBattle:
 	.string "Thanks to WINONA, the people of\n"
-	.string "FORTREE can live without fear.$"
+	.string "MATA DO MEIO can live without fear.$"
 
 FortreeCity_Gym_Text_HumbertoIntro:
 	.string "When WINONA takes to battle, her face\n"
@@ -266,10 +266,10 @@ FortreeCity_Gym_Text_WinonaPostBattle:
 	.string "entre geracoes, alguma coisa\nantiga foi ferida.$"
 
 FortreeCity_Gym_Text_GymStatue:
-	.string "FORTREE CITY POKéMON GYM$"
+	.string "MATA DO MEIO POKéMON GYM$"
 
 FortreeCity_Gym_Text_GymStatueCertified:
-	.string "FORTREE CITY POKéMON GYM\p"
+	.string "MATA DO MEIO POKéMON GYM\p"
 	.string "WINONA'S CERTIFIED TRAINERS:\n"
 	.string "{PLAYER}$"
 

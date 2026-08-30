@@ -110,23 +110,23 @@ static const struct MenuAction MultichoiceList_WheresRayquaza[] =
 LANDMARK_REPLACEMENTS = {
     'static const u8 LandmarkName_MrBrineysCottage[] = _("MR. BRINEY\'S COTTAGE");':
         'static const u8 LandmarkName_MrBrineysCottage[] = _("SAILOR\'S COTTAGE");',
-    'static const u8 LandmarkName_SlateportBeach[] = _("SLATEPORT BEACH");':
+    'static const u8 LandmarkName_SlateportBeach[] = _("PORTO DO SAL BEACH");':
         'static const u8 LandmarkName_SlateportBeach[] = _("PORTO DO SAL BEACH");',
-    'static const u8 LandmarkName_NewMauville[] = _("NEW MAUVILLE");':
+    'static const u8 LandmarkName_NewMauville[] = _("NEW ENCRUZILHADA");':
         'static const u8 LandmarkName_NewMauville[] = _("OLD POWER RELAY");',
-    'static const u8 LandmarkName_MeteorFalls[] = _("METEOR FALLS");':
+    'static const u8 LandmarkName_MeteorFalls[] = _("RUINAS DA QUEDA");':
         'static const u8 LandmarkName_MeteorFalls[] = _("RUINAS DA QUEDA");',
-    'static const u8 LandmarkName_RusturfTunnel[] = _("RUSTURF TUNNEL");':
+    'static const u8 LandmarkName_RusturfTunnel[] = _("GALERIAS SERRA");':
         'static const u8 LandmarkName_RusturfTunnel[] = _("GALERIAS SERRA");',
     'static const u8 LandmarkName_SafariZoneEntrance[] = _("SAFARI ZONE ENTRANCE");':
         'static const u8 LandmarkName_SafariZoneEntrance[] = _("ARAUNA PRESERVE");',
-    'static const u8 LandmarkName_MtPyre[] = _("MT. PYRE");':
+    'static const u8 LandmarkName_MtPyre[] = _("MEMORIAL DOS NOMES");':
         'static const u8 LandmarkName_MtPyre[] = _("MEMORIAL NOMES");',
-    'static const u8 LandmarkName_SeafloorCavern[] = _("SEAFLOOR CAVERN");':
+    'static const u8 LandmarkName_SeafloorCavern[] = _("CAVERNAS M\'BOI");':
         'static const u8 LandmarkName_SeafloorCavern[] = _("CAVERNAS M\'BOI");',
-    'static const u8 LandmarkName_GraniteCave[] = _("GRANITE CAVE");':
+    'static const u8 LandmarkName_GraniteCave[] = _("GRUTA DAS VOZES");':
         'static const u8 LandmarkName_GraniteCave[] = _("GRUTA DAS VOZES");',
-    'static const u8 LandmarkName_SkyPillar[] = _("SKY PILLAR");':
+    'static const u8 LandmarkName_SkyPillar[] = _("TORRE JURAMENTO");':
         'static const u8 LandmarkName_SkyPillar[] = _("TORRE JURAMENTO");',
     'static const u8 LandmarkName_MagmaHideout[] = _("MAGMA HIDEOUT");':
         'static const u8 LandmarkName_MagmaHideout[] = _("REMEMBRANCERS BASE");',
@@ -260,6 +260,10 @@ def validate_menu(source: str, rendered: str) -> None:
 def render_landmarks(source: str) -> str:
     rendered = source
     for old, new in LANDMARK_REPLACEMENTS.items():
+        if old == new:
+            # The base file already says this; the entry survives only to
+            # record that the landmark was looked at. Nothing to replace.
+            continue
         old_count = rendered.count(old)
         new_count = rendered.count(new)
         if old_count == 1 and new_count == 0:

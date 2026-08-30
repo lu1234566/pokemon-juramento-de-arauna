@@ -12,7 +12,7 @@ CONTROL_RE = re.compile(r"\\[npl]")
 PLACEHOLDER_RE = re.compile(r"\{[^}]+\}")
 
 SOURCE_SIGNATURES = (
-    "MOSSDEEP has mainly",
+    "MISSOES DO CEU has mainly",
     "Os engenheiros insistem",
     "If only I was",
     "A rede de comunicacao daqui",

@@ -76,7 +76,7 @@ FallarborTown_Text_HaveYouChallengedFlannery:
 	.string "tudo; tambem nao devemos fingir\nque nada queimou.$"
 
 FallarborTown_Text_BattleTentSign:
-	.string "BATTLE TENT FALLARBOR SITE\n"
+	.string "BATTLE TENT CAMPO DAS CINZAS SITE\n"
 	.string "“May the Greatest Teams Gather!”$"
 
 FallarborTown_Text_TownSign:

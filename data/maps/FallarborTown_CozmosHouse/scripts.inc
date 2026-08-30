@@ -102,9 +102,9 @@ FallarborTown_CozmosHouse_Text_MayIHaveMeteorite:
 	.string "o bastante para saber que nao\nquero viver preso ao que perdi.$"
 
 FallarborTown_CozmosHouse_Text_CozmoWentToMeteorFalls:
-	.string "PROF. COZMO went off to RUINAS DA QUEDA\n"
-	.string "on ROUTE 114 with some people from\l"
-	.string "LEMBRANTES.$"
+	.string "PROF. COZMO went off to\n"
+	.string "RUINAS DA QUEDA on ROUTE 114 with some\l"
+	.string "people from LEMBRANTES.$"
 
 FallarborTown_CozmosHouse_Text_FeelSorryForCozmo:
 	.string "Poor PROF. COZMO…\n"

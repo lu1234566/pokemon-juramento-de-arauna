@@ -509,10 +509,11 @@ MtPyre_Summit_Text_SuperAncientPokemonTaughtUs:
 	.string "taught us that…$"
 
 MtPyre_Summit_Text_WillYouHearOutMyTale:
-	.string "MT. PYRE is where we calm the spirits\n"
-	.string "of POKéMON that have passed on…\p"
-	.string "This is a high place where one can\n"
-	.string "see all of ARAUNA…\p"
+	.string "MEMORIAL DOS NOMES is where we calm the\n"
+	.string "spirits of POKéMON that have passed\l"
+	.string "on…\p"
+	.string "This is a high place where one can see\n"
+	.string "all of ARAUNA…\p"
 	.string "The disembodied spirits of POKéMON\n"
 	.string "must find solace here…\p"
 	.string "Is it coincidence that you are here…\p"
@@ -537,7 +538,7 @@ MtPyre_Summit_Text_HearTheNewLegendOfHoenn:
 	.string "It is my role to pass on the legends\n"
 	.string "of ARAUNA to future generations.\p"
 	.string "And the crisis that just ended in\n"
-	.string "SOOTOPOLIS rewrote a legend…\p"
+	.string "AGUAS DE M'BOI rewrote a legend…\p"
 	.string "Have you the time to hear the new\n"
 	.string "legend of ARAUNA?$"
 

@@ -67,7 +67,7 @@ SSTidalRooms_Text_TakeRestOnBed:
 	.string "Let's take a rest.$"
 
 SSTidalRooms_Text_ColtonIntro:
-	.string "I often sail to LILYCOVE CITY.\p"
+	.string "I often sail to BAIA DAS LUZES.\p"
 	.string "I enjoy attending CONTESTS,\n"
 	.string "you see.$"
 
@@ -110,8 +110,8 @@ SSTidalRooms_Text_JedDefeat:
 	.string "JAIR: Sigh…$"
 
 SSTidalRooms_Text_JedPostBattle:
-	.string "JAIR: It's the first time that our lovey-\n"
-	.string "dovey power couldn't prevail!\l"
+	.string "JAIR: It's the first time that our\n"
+	.string "lovey- dovey power couldn't prevail!\l"
 	.string "You must be an awesome TRAINER!$"
 
 SSTidalRooms_Text_JedNotEnoughMons:
@@ -160,7 +160,7 @@ SSTidalRooms_Text_NaomiPostBattle:
 	.string "A world cruise on a luxury liner has its\n"
 	.string "charms, I must say…\p"
 	.string "But, I will admit there is an appealing\n"
-	.string "side to touring HOENN by ferry.$"
+	.string "side to touring ARAUNA by ferry.$"
 
 SSTidalRooms_Text_NotSuspiciousTakeThis:
 	.string "Uh… Hi! I… I'm not acting suspicious!\n"

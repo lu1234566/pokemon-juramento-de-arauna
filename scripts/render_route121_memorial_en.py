@@ -11,14 +11,14 @@ MAX_VISIBLE_WIDTH = 32
 
 TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
     "Route121_Text_OkayMoveOutToMtPyre": (
-        ("Okay!", "MT. PYRE"),
+        ("Okay!", "MEMORIAL DOS NOMES"),
         (
             "HORIZON: Move to the MEMORIAL.\\p",
             "Secure the RECORD-MATRIX first.$",
         ),
     ),
     "Route121_Text_AheadLoomsMtPyre": (
-        ("Ahead looms MT. PYRE", "departed POKéMON"),
+        ("Ahead looms MEMORIAL DOS NOMES", "departed POKéMON"),
         (
             "A boy named CIRO passed here.\\p",
             "He asked if M'BOI's names were\\n",
@@ -27,7 +27,7 @@ TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         ),
     ),
     "Route121_Text_MtPyrePierSign": (
-        ("MT. PYRE PIER", "old and worn out"),
+        ("MEMORIAL DOS NOMES PIER", "old and worn out"),
         (
             "MEMORIAL DOS NOMES PIER\\p",
             "Old names, newer flowers.\\n",

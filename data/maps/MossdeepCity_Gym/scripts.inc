@@ -581,10 +581,10 @@ MossdeepCity_Gym_Text_TateAndLizaNeedTwoMons:
 	.string "dentro delas nunca sao.$"
 
 MossdeepCity_Gym_Text_GymStatue:
-	.string "MOSSDEEP CITY POKéMON GYM$"
+	.string "MISSOES DO CEU POKéMON GYM$"
 
 MossdeepCity_Gym_Text_GymStatueCertified:
-	.string "MOSSDEEP CITY POKéMON GYM\p"
+	.string "MISSOES DO CEU POKéMON GYM\p"
 	.string "LIZA AND TATE'S CERTIFIED TRAINERS:\n"
 	.string "{PLAYER}$"
 

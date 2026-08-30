@@ -324,7 +324,7 @@ MossdeepCity_Text_WhatToDoWithWeirdRock:
 	.string "supposed to do with some weird rock?$"
 
 MossdeepCity_Text_WailmerWatching:
-	.string "Around MOSSDEEP, you can see wild\n"
+	.string "Around MISSOES DO CEU, you can see wild\n"
 	.string "WAILMER.\p"
 	.string "It's called, uh…\n"
 	.string "What was it now…\p"
@@ -344,11 +344,11 @@ MossdeepCity_Text_SpaceCenterLaunchingRockets:
 MossdeepCity_Text_MossdeepTargetedByMagma:
 	.string "I heard from a SAILOR buddy that\n"
 	.string "CONSORCIO HORIZONTE set up shop in\l"
-	.string "LILYCOVE.\p"
+	.string "BAIA DAS LUZES.\p"
 	.string "I also heard that someone came along\n"
 	.string "and wiped the floor with them!\p"
-	.string "But MOSSDEEP here's been targeted by\n"
-	.string "that LEMBRANTES.\p"
+	.string "But MISSOES DO CEU here's been\n"
+	.string "targeted by that LEMBRANTES.\p"
 	.string "If you want to know what they're up to,\n"
 	.string "go visit the SPACE CENTER.$"
 
@@ -402,27 +402,27 @@ MossdeepCity_Text_CitySign:
 	.string "de comunicacao para ampliar o\nARQUIVO VIVO.$"
 
 MossdeepCity_Text_SpaceCenterSign:
-	.string "MOSSDEEP SPACE CENTER\n"
+	.string "MISSOES DO CEU SPACE CENTER\n"
 	.string "“The closest place to space.”$"
 
 MossdeepCity_Text_ScottSomethingWrongWithTown:
-	.string "SCOTT: {PLAYER}{KUN}, feeling good?\n"
-	.string "I'm doing great!\p"
-	.string "I'd heard MOSSDEEP's GYM LEADER is\n"
-	.string "pretty strong, so I decided to come\l"
+	.string "SCOTT: {PLAYER}{KUN}, feeling good? I'm doing\n"
+	.string "great!\p"
+	.string "I'd heard MISSOES DO CEU's GYM LEADER\n"
+	.string "is pretty strong, so I decided to come\l"
 	.string "take a look-see for myself.\p"
-	.string "But there's something wrong about\n"
-	.string "this town.\p"
+	.string "But there's something wrong about this\n"
+	.string "town.\p"
 	.string "People are going on about a warning\n"
 	.string "letter and the SPACE CENTER…\p"
-	.string "I don't think it concerns me in any\n"
-	.string "way, though.$"
+	.string "I don't think it concerns me in any way,\n"
+	.string "though.$"
 
 MossdeepCity_Text_SootopolisNewGymLeader:
 	.string "Ahh… It feels great letting the waves\n"
 	.string "wash over my feet…\p"
 	.string "Speaking of the waves, you know that\n"
-	.string "island city SOOTOPOLIS?\p"
+	.string "island city AGUAS DE M'BOI?\p"
 	.string "I think the GYM there had a new\n"
 	.string "LEADER come in.\p"
 	.string "People tell me the new LEADER once\n"

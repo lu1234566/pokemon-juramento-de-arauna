@@ -99,7 +99,7 @@ B2F_TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         ),
     ),
     "AquaHideout_B2F_Text_MattPostBattle": (
-        ("Our BOSS", "LILYCOVE", "cave under the sea"),
+        ("Our BOSS", "BAIA DAS LUZES", "cave under the sea"),
         (
             "BRENO: Se vai persegui-lo,\\n",
             "siga alem da BAIA DAS LUZES.\\p",

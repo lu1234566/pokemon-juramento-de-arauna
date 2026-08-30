@@ -55,7 +55,7 @@ RAW_MARKERS = {
     "FortreeCity_House4_Text_WelcomeWingullTakeMentalHerb": ("MENTAL HERB",),
     "FortreeCity_House4_Text_FriendsFarAwayThanksToWingull": ("friends", "WINGULL"),
     "FortreeCity_House4_Text_Wingull": ("Pihyoh",),
-    "FortreeCity_House5_Text_TreeHousesAreGreat": ("FORTREE",),
+    "FortreeCity_House5_Text_TreeHousesAreGreat": ("MATA DO MEIO",),
     "FortreeCity_House5_Text_AdaptedToNature": ("adapted to", "nature"),
     "FortreeCity_House5_Text_Zigzagoon": ("Bufuu",),
     "FortreeCity_DecorationShop_Text_MerchandiseSentToPC": ("Merchandise you buy",),

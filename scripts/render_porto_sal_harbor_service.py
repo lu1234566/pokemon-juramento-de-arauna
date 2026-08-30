@@ -34,7 +34,7 @@ TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         "ATENDENTE: Volte quando quiser\\n",
         "viajar.$",
     )),
-    "SlateportCity_Harbor_Text_LilycoveItIs": (("LILYCOVE CITY",), (
+    "SlateportCity_Harbor_Text_LilycoveItIs": (("BAIA DAS LUZES",), (
         "ATENDENTE: BAIA DAS LUZES, certo?$",
     )),
     "SlateportCity_Harbor_Text_BattleFrontierItIs": (("BATTLE FRONTIER",), (
@@ -115,9 +115,9 @@ TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
 }
 
 STRING_REPLACEMENTS = {
-    'const u8 gText_LilycoveCity[] = _("LILYCOVE CITY");':
+    'const u8 gText_LilycoveCity[] = _("BAIA DAS LUZES");':
         'const u8 gText_LilycoveCity[] = _("BAIA DAS LUZES");',
-    'const u8 gText_SlateportCity[] = _("SLATEPORT CITY");':
+    'const u8 gText_SlateportCity[] = _("PORTO DO SAL");':
         'const u8 gText_SlateportCity[] = _("PORTO DO SAL");',
 }
 

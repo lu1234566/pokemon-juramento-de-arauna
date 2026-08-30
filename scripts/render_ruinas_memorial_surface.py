@@ -17,7 +17,7 @@ PLACEHOLDER_RE = re.compile(r"\{[^}]+\}")
 
 METEOR_TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
     "MeteorFalls_1F_1R_Text_WithThisMeteorite": (
-        ("METEORITE", "MT. CHIMNEY"),
+        ("METEORITE", "SERRA DA CINZA"),
         (
             "LEMBRANTE: Este METEORITO\\n",
             "faz o amplificador reagir.\\p",
@@ -59,7 +59,7 @@ METEOR_TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         ("HORIZONTE: Diretor, precisamos\\n", "ir atras dos LEMBRANTES.$"),
     ),
     "MeteorFalls_1F_1R_Text_ArchieYesNoTellingWhatMagmaWillDo": (
-        ("LEMBRANTES", "MT. CHIMNEY"),
+        ("LEMBRANTES", "SERRA DA CINZA"),
         (
             "OTACILIO: Sim. Vamos agora.\\p",
             "LUZIA levou o METEORITO para\\n",
@@ -75,7 +75,7 @@ METEOR_TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         ),
     ),
     "MeteorFalls_1F_1R_Text_MeetProfCozmo": (
-        ("COZMO", "PROFESSOR", "METEOR FALLS", "CONSORCIO HORIZONTE"),
+        ("COZMO", "PROFESSOR", "RUINAS DA QUEDA", "CONSORCIO HORIZONTE"),
         (
             "Sou pesquisador de minerais.\\p",
             "Os LEMBRANTES pediram que eu\\n",
@@ -87,7 +87,7 @@ METEOR_TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         ),
     ),
     "MeteorFalls_1F_1R_Text_WhatsTeamMagmaDoingAtMtChimney": (
-        ("PROF. COZMO", "MT. CHIMNEY"),
+        ("PROF. COZMO", "SERRA DA CINZA"),
         (
             "PESQUISADOR: Os LEMBRANTES\\n",
             "levaram meu METEORITO para\\n",
@@ -199,7 +199,7 @@ MEMORIAL_TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         ),
     ),
     "MtPyre_Summit_Text_WillYouHearOutMyTale": (
-        ("MT. PYRE", "ARAUNA region"),
+        ("MEMORIAL DOS NOMES", "ARAUNA region"),
         (
             "GUARDIA: Este e o MEMORIAL DOS\\n",
             "NOMES. Aqui repetimos historias\\n",

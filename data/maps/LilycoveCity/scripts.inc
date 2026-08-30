@@ -606,10 +606,10 @@ LilycoveCity_Text_TeamAquaRenovatedCavern:
 	.string "Hm, you know of the peculiar cavern in\n"
 	.string "this cove?\p"
 	.string "That had been a natural formation, but\n"
-	.string "then that CONSORCIO HORIZONTE lot came\l"
-	.string "along and made their renovations.\p"
-	.string "They call themselves the “nature-loving\n"
-	.string "CONSORCIO HORIZONTE”!\p"
+	.string "then that CONSORCIO HORIZONTE lot\l"
+	.string "came along and made their renovations.\p"
+	.string "They call themselves the\n"
+	.string "“nature-loving CONSORCIO HORIZONTE”!\p"
 	.string "But what they do and what they say\n"
 	.string "don't match at all!$"
 
@@ -631,27 +631,27 @@ LilycoveCity_Text_ContestHallSign:
 LilycoveCity_Text_MotelSign:
 	.string "COVE LILY MOTEL\p"
 	.string "“Remember us as COVE LILY of\n"
-	.string "LILYCOVE.”$"
+	.string "BAIA DAS LUZES.”$"
 
 LilycoveCity_Text_MuseumSign:
-	.string "LILYCOVE MUSEUM\p"
+	.string "BAIA DAS LUZES MUSEUM\p"
 	.string "“POKéMON Masterpiece Collection\n"
 	.string "on exhibit!”$"
 
 LilycoveCity_Text_MuseumSignPlayersExhibit:
-	.string "LILYCOVE MUSEUM\p"
+	.string "BAIA DAS LUZES MUSEUM\p"
 	.string "“{PLAYER}'s POKéMON Collection\n"
 	.string "on exhibit!”$"
 
 LilycoveCity_Text_HarborSignUnderConstruction:
-	.string "LILYCOVE CITY HARBOR\p"
+	.string "BAIA DAS LUZES HARBOR\p"
 	.string "“The ferry S.S. TIDAL is under\n"
-	.string "construction in SLATEPORT CITY.\p"
+	.string "construction in PORTO DO SAL.\p"
 	.string "“Service is scheduled to begin\n"
 	.string "shortly.”$"
 
 LilycoveCity_Text_HarborSign:
-	.string "LILYCOVE CITY HARBOR\p"
+	.string "BAIA DAS LUZES HARBOR\p"
 	.string "“Enjoy a delightful cruise on\n"
 	.string "the ferry S.S. TIDAL.”$"
 
@@ -661,7 +661,7 @@ LilycoveCity_Text_TrainerFanClubSign:
 	.string "all over the sign…$"
 
 LilycoveCity_Text_DepartmentStoreSign:
-	.string "LILYCOVE DEPARTMENT STORE\p"
+	.string "BAIA DAS LUZES DEPARTMENT STORE\p"
 	.string "“Overflowing with great merchandise\n"
 	.string "and excitement!\p"
 	.string "“A great place to find that something\n"
@@ -690,7 +690,7 @@ LilycoveCity_Text_ExplainBerryBlender:
 LilycoveCity_Text_HeardTowerCalledSkyPillar:
 	.string "I heard there's a tower somewhere out\n"
 	.string "on the sea routes.\p"
-	.string "It's called the SKY PILLAR, I hear.$"
+	.string "It's called the TORRE JURAMENTO, I hear.$"
 
 LilycoveCity_Text_SawTallTowerOnRoute131:
 	.string "I saw this tall tower somewhere\n"

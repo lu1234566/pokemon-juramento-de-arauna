@@ -382,25 +382,26 @@ Route116_Text_GoonHightailedItOutOfTunnel:
 Route116_Text_ThankYouTokenOfAppreciation:
 	.string "Oh! It's you!\p"
 	.string "You're that person who not only helped\n"
-	.string "me in PETALBURG WOODS, but also got\l"
-	.string "back my stolen package and then even\l"
-	.string "graciously delivered it to SLATEPORT!\p"
+	.string "me in PAMPA DA ESPERA WOODS, but also\l"
+	.string "got back my stolen package and then\l"
+	.string "even graciously delivered it to\l"
+	.string "PORTO DO SAL!\p"
 	.string "CAPT. STERN informed us that the\n"
 	.string "package arrived, too!\p"
 	.string "I thank you very, very much!\p"
 	.string "Why, if I were a rain cloud, I would\n"
-	.string "shower you with gratitude and hail\l"
-	.string "you as a hero!\p"
-	.string "For you, the most wonderful TRAINER,\n"
-	.string "I bear good news!\p"
-	.string "Recently, our company developed\n"
-	.string "a new kind of POKé BALL.\p"
-	.string "As a token of our appreciation, this\n"
-	.string "is our gift to our wonderful TRAINER!$"
+	.string "shower you with gratitude and hail you\l"
+	.string "as a hero!\p"
+	.string "For you, the most wonderful TRAINER, I\n"
+	.string "bear good news!\p"
+	.string "Recently, our company developed a new\n"
+	.string "kind of POKé BALL.\p"
+	.string "As a token of our appreciation, this is\n"
+	.string "our gift to our wonderful TRAINER!$"
 
 Route116_Text_NewBallAvailableAtMart:
 	.string "Our new POKé BALL will be available\n"
-	.string "at the POKéMON MART in RUSTBORO.\p"
+	.string "at the POKéMON MART in SERRA DO UIVO.\p"
 	.string "Please do try it out!\n"
 	.string "Thank you and bye-bye!$"
 
@@ -441,11 +442,11 @@ Route116_Text_NotWhatImLookingFor:
 
 Route116_Text_RouteSignRustboro:
 	.string "ROUTE 116\n"
-	.string "{LEFT_ARROW} RUSTBORO CITY$"
+	.string "{LEFT_ARROW} SERRA DO UIVO$"
 
 Route116_Text_RusturfTunnelSign:
-	.string "RUSTURF TUNNEL\n"
-	.string "“Linking RUSTBORO and VERDANTURF\p"
+	.string "GALERIAS SERRA “Linking SERRA DO UIVO\n"
+	.string "and VALE DO SILENCIO\p"
 	.string "“The tunnel project has been\n"
 	.string "canceled.”$"
 

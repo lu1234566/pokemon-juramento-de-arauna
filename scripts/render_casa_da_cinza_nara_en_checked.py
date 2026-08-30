@@ -34,7 +34,7 @@ RAW_MARKERS = {
     "LavaridgeTown_Gym_1F_Text_FlanneryIntro": ("NARA:",),
     "LavaridgeTown_Gym_1F_Text_ReceivedHeatBadge": ("INSÍGNIA CINZA",),
     "LavaridgeTown_Gym_1F_Text_RegisteredFlannery": ("FLANNERY",),
-    "LavaridgeTown_Gym_1F_Text_GymStatue": ("LAVARIDGE",),
+    "LavaridgeTown_Gym_1F_Text_GymStatue": ("SERTAO DE DENTRO",),
     "LavaridgeTown_Gym_1F_Text_GymStatueCertified": ("FLANNERY",),
 }
 

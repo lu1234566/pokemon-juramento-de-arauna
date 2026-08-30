@@ -39,11 +39,11 @@ ROUTE_TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         "I'm going to catch lots of\\n",
         "POKéMON and learn their habits.$",
     )),
-    "Route102_Text_RouteSignOldale": (("ROUTE 102", "OLDALE TOWN"), (
+    "Route102_Text_RouteSignOldale": (("ROUTE 102", "VILA DA PASSAGEM"), (
         "ROUTE 102\\n",
         "{RIGHT_ARROW} VILA DA PASSAGEM$",
     )),
-    "Route102_Text_RouteSignPetalburg": (("ROUTE 102", "PETALBURG CITY"), (
+    "Route102_Text_RouteSignPetalburg": (("ROUTE 102", "PAMPA DA ESPERA"), (
         "ROUTE 102\\n",
         "{LEFT_ARROW} PAMPA DA ESPERA$",
     )),
@@ -62,7 +62,7 @@ CITY_TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         "the local GYM first.\\p",
         "Want me to show you?$",
     )),
-    "PetalburgCity_Text_ThisIsPetalburgGym": (("PETALBURG CITY", "GYM"), (
+    "PetalburgCity_Text_ThisIsPetalburgGym": (("PAMPA DA ESPERA", "GYM"), (
         "BOY: This is PAMPA DA ESPERA\\n",
         "GYM.$",
     )),

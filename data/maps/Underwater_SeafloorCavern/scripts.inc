@@ -45,7 +45,7 @@ Underwater_SeafloorCavern_Text_SubExplorer1:
 	.string "the hull.\p"
 	.string "This is the submarine\n"
 	.string "CONSORCIO HORIZONTE stole in\l"
-	.string "SLATEPORT!\p"
+	.string "PORTO DO SAL!\p"
 	.string "CONSORCIO HORIZONTE must have gone\n"
 	.string "ashore here.$"
 

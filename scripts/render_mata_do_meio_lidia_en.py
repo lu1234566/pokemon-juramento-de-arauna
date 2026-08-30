@@ -111,7 +111,7 @@ CITY_TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
 
 GYM_TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
     "FortreeCity_Gym_Text_GymGuideAdvice": (
-        ("FORTREE GYM LEADER WINONA",),
+        ("MATA DO MEIO GYM LEADER WINONA",),
         (
             "Welcome to LIDIA's challenge!\\p",
             "FLYING POKéMON read wind well.\\p",
@@ -137,7 +137,7 @@ GYM_TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         ("Every turn tests attention.\\p", "Do not rush the next gate.$"),
     ),
     "FortreeCity_Gym_Text_EdwardoIntro": (
-        ("BIRD POKéMON", "FORTREE GYM"),
+        ("BIRD POKéMON", "MATA DO MEIO GYM"),
         (
             "Birds inherit routes in the sky.\\p",
             "We train to notice when they\\n",
@@ -173,7 +173,7 @@ GYM_TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         ("You found the opening.$",),
     ),
     "FortreeCity_Gym_Text_AshleyPostBattle": (
-        ("WINONA", "FORTREE"),
+        ("WINONA", "MATA DO MEIO"),
         ("MATA DO MEIO trusts LIDIA\\n", "because she listens first.$"),
     ),
     "FortreeCity_Gym_Text_HumbertoIntro": (
@@ -241,11 +241,11 @@ GYM_TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         ("LIDIA: A path is not a command.\\p", "Memory should guide, not own us.$"),
     ),
     "FortreeCity_Gym_Text_GymStatue": (
-        ("FORTREE CITY POKéMON GYM",),
+        ("MATA DO MEIO POKéMON GYM",),
         ("MATA DO MEIO POKéMON GYM$",),
     ),
     "FortreeCity_Gym_Text_GymStatueCertified": (
-        ("FORTREE CITY POKéMON GYM", "WINONA'S CERTIFIED TRAINERS"),
+        ("MATA DO MEIO POKéMON GYM", "WINONA'S CERTIFIED TRAINERS"),
         (
             "MATA DO MEIO POKéMON GYM\\p",
             "LIDIA'S CERTIFIED TRAINERS:\\n",

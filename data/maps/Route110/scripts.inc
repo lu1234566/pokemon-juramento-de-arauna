@@ -743,7 +743,7 @@ Route110_Text_WeCantTalkAboutAquaActivities:
 	.string "We can't talk about them yet.$"
 
 Route110_Text_KickUpARuckus:
-	.string "I want to get going to SLATEPORT and\n"
+	.string "I want to get going to PORTO DO SAL and\n"
 	.string "kick up a ruckus!$"
 
 Route110_Text_MyFirstJobInAqua:
@@ -837,7 +837,7 @@ Route110_Text_BikeTechniques:
 
 Route110_Text_WhichShouldIChoose:
 	.string "Which should I choose?\p"
-	.string "Make a beeline for MAUVILLE on\n"
+	.string "Make a beeline for ENCRUZILHADA on\n"
 	.string "CYCLING ROAD, or take the low road\l"
 	.string "and look for POKéMON?$"
 
@@ -879,10 +879,11 @@ Route110_Text_ChallengeReactionWorst:
 
 Route110_Text_RatedForNumberOfCollisions:
 	.string "This is CYCLING ROAD.\p"
-	.string "If you were to ride from MAUVILLE to\n"
-	.string "SLATEPORT on a MACH BIKE, you would\l"
-	.string "be rated for the number of collisions\l"
-	.string "and your total time.$"
+	.string "If you were to ride from ENCRUZILHADA\n"
+	.string "to PORTO DO SAL on a MACH BIKE, you\l"
+	.string "would be\l"
+	.string "rated for the number of collisions and\l"
+	.string "your total time.$"
 
 Route110_Text_AlwaysAimHigher:
 	.string "Regardless of the results, I count on\n"

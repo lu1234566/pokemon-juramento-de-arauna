@@ -50,9 +50,10 @@ MossdeepCity_Mart_Text_MaxRepelLastsLongest:
 
 MossdeepCity_Mart_Text_NetAndDiveBallsRare:
 	.string "The NET and DIVE BALLS are rare POKé\n"
-	.string "BALLS that are only made in MOSSDEEP.\p"
+	.string "BALLS that are only made in\l"
+	.string "MISSOES DO CEU.\p"
 	.string "A NET BALL is effective against\n"
 	.string "BUG-type and WATER-type POKéMON.\p"
-	.string "A DIVE BALL works best on POKéMON\n"
-	.string "at the bottom of the sea.$"
+	.string "A DIVE BALL works best on POKéMON at\n"
+	.string "the bottom of the sea.$"
 

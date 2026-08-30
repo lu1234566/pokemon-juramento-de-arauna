@@ -528,11 +528,11 @@ MauvilleCity_Text_UncleNoNeedToBeDown:
 MauvilleCity_Text_UncleVisitUsSometime:
 	.string "UNCLE: {PLAYER}{KUN}, it just dawned on me\n"
 	.string "that you must be the TRAINER who kept\l"
-	.string "an eye out for WALLY when he caught\l"
-	.string "his POKéMON.\p"
-	.string "Why don't you visit us in VERDANTURF\n"
-	.string "sometime?\l"
-	.string "I'm sure WALLY would enjoy it.$"
+	.string "an eye out for WALLY when he caught his\l"
+	.string "POKéMON.\p"
+	.string "Why don't you visit us in\n"
+	.string "VALE DO SILENCIO sometime? I'm sure\l"
+	.string "WALLY would enjoy it.$"
 
 
 MauvilleCity_Text_WallyPokenavCall:
@@ -613,7 +613,7 @@ MauvilleCity_Text_BikeShopSign:
 
 MauvilleCity_Text_GameCornerSign:
 	.string "“The play spot for all!”\n"
-	.string "MAUVILLE GAME CORNER$"
+	.string "ENCRUZILHADA GAME CORNER$"
 
 MauvilleCity_Text_ExplainTV:
 	.string "Hi, do you check out TV at all?\p"

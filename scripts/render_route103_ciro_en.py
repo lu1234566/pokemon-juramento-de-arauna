@@ -45,12 +45,12 @@ TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         "My POKéMON is exhausted...\\p",
         "I should have brought a POTION.$",
     )),
-    "Route103_Text_ShortcutToOldale": (("shortcut", "OLDALE TOWN"), (
+    "Route103_Text_ShortcutToOldale": (("shortcut", "VILA DA PASSAGEM"), (
         "Across the water is a shortcut\\n",
         "back to ENCRUZILHADA CENTRAL.\\p",
         "Useful if you can cross the sea.$",
     )),
-    "Route103_Text_RouteSign": (("ROUTE 103", "OLDALE TOWN"), (
+    "Route103_Text_RouteSign": (("ROUTE 103", "VILA DA PASSAGEM"), (
         "ROUTE 103\\n",
         "{DOWN_ARROW} ENCRUZILHADA CENTRAL$",
     )),

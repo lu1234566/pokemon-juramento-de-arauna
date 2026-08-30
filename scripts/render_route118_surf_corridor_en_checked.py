@@ -22,7 +22,7 @@ RAW_MARKERS: dict[str, tuple[str, ...]] = {
     "Route118_Text_DontYouLikeToFish": ("Don't you like to fish",),
     "Route118_Text_TryCatchingMonWithGoodRod": ("GOOD ROD",),
     "Route118_Text_CanCrossRiversWithSurf": ("SURF", "cross rivers"),
-    "Route118_Text_RouteSignMauville": ("ROUTE 118", "MAUVILLE CITY"),
+    "Route118_Text_RouteSignMauville": ("ROUTE 118", "ENCRUZILHADA"),
     "Route118_Text_RouteSign119": ("ROUTE 118", "ROUTE 119"),
 }
 

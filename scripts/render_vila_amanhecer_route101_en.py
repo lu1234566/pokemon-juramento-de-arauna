@@ -118,7 +118,7 @@ ROUTE_TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         "Maybe I was right to trust you.\\p",
         "Come to my lab. We should talk.$",
     )),
-    "Route101_Text_TakeTiredPokemonToPokeCenter": (("POKéMON CENTER", "OLDALE"), (
+    "Route101_Text_TakeTiredPokemonToPokeCenter": (("POKéMON CENTER", "VILA DA PASSAGEM"), (
         "If your POKéMON get tired,\\n",
         "visit a POKéMON CENTER.\\p",
         "The nearest one is just ahead.$",
@@ -128,7 +128,7 @@ ROUTE_TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         "To meet them, step off the road\\n",
         "and search carefully.$",
     )),
-    "Route101_Text_RouteSign": (("ROUTE 101", "OLDALE TOWN"), (
+    "Route101_Text_RouteSign": (("ROUTE 101", "VILA DA PASSAGEM"), (
         "ROUTE 101\\n",
         "{UP_ARROW} ENCRUZILHADA CENTRAL$",
     )),

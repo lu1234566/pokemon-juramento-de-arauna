@@ -61,7 +61,7 @@ TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         "encontram, nasce um mercado.\\p",
         "Foi assim que a cidade cresceu.$",
     )),
-    "SlateportCity_Text_SlateportWonderfulPlace": (("SLATEPORT", "wonderful place"), (
+    "SlateportCity_Text_SlateportWonderfulPlace": (("PORTO DO SAL", "wonderful place"), (
         "GAROTA: Comprar sentindo cheiro\\n",
         "do mar e bom demais.\\p",
         "PORTO DO SAL e um lugar unico.$",
@@ -78,7 +78,7 @@ TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         "Antes disso, preciso montar uma\\n",
         "equipe melhor.$",
     )),
-    "SlateportCity_Text_BushedHikingFromMauville": (("MAUVILLE CITY", "BIKE"), (
+    "SlateportCity_Text_BushedHikingFromMauville": (("ENCRUZILHADA", "BIKE"), (
         "HOMEM: Ufa... estou acabado.\\p",
         "Vim caminhando desde o interior.\\p",
         "Se soubesse que a cidade era tao\\n",
@@ -115,7 +115,7 @@ TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         "E uma lembranca do TREINADOR que\\n",
         "cuidou dele primeiro.$",
     )),
-    "SlateportCity_Text_BattleTentBuiltRecently": (("BATTLE TENT", "SLATEPORT"), (
+    "SlateportCity_Text_BattleTentBuiltRecently": (("BATTLE TENT", "PORTO DO SAL"), (
         "HOMEM: A TENDA DE BATALHA chegou\\n",
         "ha pouco tempo a PORTO DO SAL.\\p",
         "E diferente de um GINASIO, mas\\n",

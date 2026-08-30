@@ -43,7 +43,7 @@ base.TARGETS.update({
         ),
     ),
     "SlateportCity_Harbor_Text_LilycoveItIs": (
-        ("LILYCOVE CITY",),
+        ("BAIA DAS LUZES",),
         (
             "ATTENDANT: BAIA DAS LUZES,\\n",
             "right?$",
@@ -166,9 +166,9 @@ base.TARGETS.update({
 
 # Keep internal gText_* symbol names but replace visible destination literals.
 base.STRING_REPLACEMENTS = {
-    'const u8 gText_LilycoveCity[] = _("LILYCOVE CITY");':
+    'const u8 gText_LilycoveCity[] = _("BAIA DAS LUZES");':
         'const u8 gText_LilycoveCity[] = _("BAIA DAS LUZES");',
-    'const u8 gText_SlateportCity[] = _("SLATEPORT CITY");':
+    'const u8 gText_SlateportCity[] = _("PORTO DO SAL");':
         'const u8 gText_SlateportCity[] = _("PORTO DO SAL");',
 }
 

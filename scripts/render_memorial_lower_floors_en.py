@@ -12,7 +12,7 @@ MAX_VISIBLE_WIDTH = 32
 
 FLOOR1_TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
     "MtPyre_1F_Text_TakeThisForYourOwnGood": (
-        ("MT. PYRE", "for your own good"),
+        ("MEMORIAL DOS NOMES", "for your own good"),
         (
             "The upper memorial is quieter.\\p",
             "Take this CLEANSE TAG.\\p",

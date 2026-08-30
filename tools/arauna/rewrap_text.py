@@ -43,6 +43,7 @@ STRING_LINE = re.compile(r'\t\.string "((?:[^"\\]|\\.)*)"\n')
 LEFTOVERS = {"CONSORCIO HORIZONTEORATION": "CONSORCIO HORIZONTE"}
 
 REGION_MAP = ROOT / "src/data/region_map/region_map_sections.json"
+PLACE_NAMES = ROOT / "docs/arauna/ARAUNA_PLACE_NAMES.csv"
 
 
 def unbreakable() -> list[str]:
@@ -51,14 +52,47 @@ def unbreakable() -> list[str]:
     Two reasons, and they agree. A place reads badly with its name cut in half,
     and the English renderers find their text by searching for a phrase -- so
     putting a newline inside CONSORCIO HORIZONTE would leave a renderer looking
-    for something that is no longer there. The list is the region map's own
-    multi-word names plus the company, not a list maintained by hand.
+    for something that is no longer there.
+
+    The list is generated: the names build_place_names.py settled on, which
+    includes the prose forms the map label is too short to hold (MEMORIAL DOS
+    NOMES against the map's MEMORIAL NOMES), plus the region map's own names
+    and the company.
     """
+    import csv
     import json
     names = {section["name"] for section
              in json.loads(REGION_MAP.read_text(encoding="utf-8"))["map_sections"]}
+    if PLACE_NAMES.exists():
+        names |= {row["arauna_name"] for row
+                  in csv.DictReader(PLACE_NAMES.open(encoding="utf-8"))
+                  if row["arauna_name"]}
     return sorted((n for n in names | {"CONSORCIO HORIZONTE"} if " " in n),
                   key=len, reverse=True)
+
+
+def renderer_anchors() -> set[str]:
+    r"""Phrases an English renderer searches the base text for.
+
+    A renderer locates the block it rewrites by a fragment quoted out of the
+    dialogue -- "rated for the number of collisions", "S.S. TIDAL" -- so a line
+    break dropped inside one leaves it searching for text that no longer exists
+    as a contiguous string. Every literal in those scripts that could be such a
+    fragment is treated as one word here. What a renderer *writes* is not: those
+    carry \n, \p or a terminating $, which is how they are told apart.
+    """
+    found = set()
+    for name in subprocess.run(["git", "ls-files", "scripts"], cwd=ROOT,
+                               capture_output=True, text=True, check=True).stdout.split():
+        if not name.endswith(".py"):
+            continue
+        for double, single in re.findall(r'"([^"\n]*)"|\'([^\'\n]*)\'',
+                                         (ROOT / name).read_text(encoding="utf-8")):
+            literal = double or single
+            if " " not in literal or "\\" in literal or "{" in literal or "$" in literal:
+                continue
+            found.add(literal)
+    return found
 
 
 def ceiling(ruler: Ruler, files: list[str]) -> int:
@@ -121,9 +155,15 @@ def main() -> int:
                                        capture_output=True, text=True,
                                        check=True).stdout.split() if f.endswith(".inc")]
     limit = ceiling(ruler, files)
-    whole = unbreakable()
+    # A phrase too wide to fit on a line of its own cannot be kept whole; it
+    # would make the string unwrappable.
+    def fits(phrase: str) -> bool:
+        return ruler.width(phrase) <= limit
+
+    places = [n for n in unbreakable() if fits(n)]
+    anchors = sorted((a for a in renderer_anchors() if fits(a)), key=len, reverse=True)
     print(f"wrapping to {limit}px, the widest line vanilla renders; "
-          f"{len(whole)} names kept whole")
+          f"{len(places)} names kept whole, {len(anchors)} renderer anchors watched")
 
     touched = 0
     for name in files:
@@ -145,7 +185,21 @@ def main() -> int:
             if all("{" in line or ruler.width(line) <= limit
                    for line in ruler.lines(text)):
                 return block
-            wrapped = rewrap(ruler, text, limit, whole)
+            # An anchor a renderer searches for lives inside one .string line;
+            # if the re-flow drops a break into the middle of one, the renderer
+            # stops finding it. Glue only the anchors that actually broke, and
+            # try again, so wrapping stays as free as it can be.
+            glue = list(places)
+            for _ in range(8):
+                wrapped = rewrap(ruler, text, limit, glue)
+                after = set(re.split(r"\\[nlp]", wrapped))
+                broke = [a for a in anchors
+                         if any(a in line for line in parts)
+                         and not any(a in line for line in after)
+                         and a not in glue]
+                if not broke:
+                    break
+                glue = broke + glue
             if wrapped == text:
                 return block
             touched += 1

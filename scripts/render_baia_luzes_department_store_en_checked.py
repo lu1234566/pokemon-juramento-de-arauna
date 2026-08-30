@@ -215,8 +215,8 @@ def validate_rendered(section: str, rendered: str, targets: dict[str, list[str]]
         rendered[body_span(rendered, label)[0]:body_span(rendered, label)[1]]
         for label in EXPECTED[section]
     )
-    if section == "1f" and "LILYCOVE DEPARTMENT STORE" in owned:
-        raise ValueError("1f: legacy LILYCOVE store name survived")
+    if section == "1f" and "BAIA DAS LUZES DEPARTMENT STORE" in owned:
+        raise ValueError("1f: legacy BAIA DAS LUZES store name survived")
     if section == "1f" and "BAIA DAS LUZES" not in owned:
         raise ValueError("1f: BAIA DAS LUZES identity missing")
 

@@ -31,7 +31,7 @@ DAILY_CITY_TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         ),
     ),
     "SootopolisCity_Text_NoOrdinaryTourist": (
-        ("ordinary tourist", "SOOTOPOLIS"),
+        ("ordinary tourist", "AGUAS DE M'BOI"),
         (
             "HOMEM: Voce veio de longe?\\p",
             "Pouca gente chega a AGUAS DE\\n",
@@ -39,7 +39,7 @@ DAILY_CITY_TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         ),
     ),
     "SootopolisCity_Text_SootopolisSkyBeautiful": (
-        ("SOOTOPOLIS sprang up", "crater of a volcano"),
+        ("AGUAS DE M'BOI sprang up", "crater of a volcano"),
         (
             "MULHER: A cidade cresceu dentro\\n",
             "de uma cratera.\\p",

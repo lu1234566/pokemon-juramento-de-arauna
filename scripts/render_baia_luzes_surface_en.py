@@ -182,21 +182,21 @@ TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         ),
     ),
     "LilycoveCity_Text_MotelSign": (
-        ("COVE LILY MOTEL", "LILYCOVE"),
+        ("COVE LILY MOTEL", "BAIA DAS LUZES"),
         (
             "LUZES INN\\p",
             "Rooms facing the western cove.$",
         ),
     ),
     "LilycoveCity_Text_MuseumSign": (
-        ("LILYCOVE MUSEUM", "Masterpiece"),
+        ("BAIA DAS LUZES MUSEUM", "Masterpiece"),
         (
             "BAIA DAS LUZES MUSEUM\\p",
             "Art, memory and coastal history.$",
         ),
     ),
     "LilycoveCity_Text_MuseumSignPlayersExhibit": (
-        ("LILYCOVE MUSEUM", "{PLAYER}"),
+        ("BAIA DAS LUZES MUSEUM", "{PLAYER}"),
         (
             "BAIA DAS LUZES MUSEUM\\p",
             "{PLAYER}'s POKéMON COLLECTION\\n",
@@ -204,7 +204,7 @@ TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         ),
     ),
     "LilycoveCity_Text_HarborSignUnderConstruction": (
-        ("LILYCOVE CITY HARBOR", "SLATEPORT CITY"),
+        ("BAIA DAS LUZES HARBOR", "PORTO DO SAL"),
         (
             "BAIA DAS LUZES HARBOR\\p",
             "Passenger ferry service is\\n",
@@ -212,7 +212,7 @@ TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         ),
     ),
     "LilycoveCity_Text_HarborSign": (
-        ("LILYCOVE CITY HARBOR", "S.S. TIDAL"),
+        ("BAIA DAS LUZES HARBOR", "S.S. TIDAL"),
         (
             "BAIA DAS LUZES HARBOR\\p",
             "Passenger ferries depart here.$",
@@ -227,7 +227,7 @@ TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         ),
     ),
     "LilycoveCity_Text_DepartmentStoreSign": (
-        ("LILYCOVE DEPARTMENT STORE", "merchandise"),
+        ("BAIA DAS LUZES DEPARTMENT STORE", "merchandise"),
         (
             "BAIA DAS LUZES DEPT. STORE\\p",
             "Supplies from across Arauna.$",
@@ -241,7 +241,7 @@ TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         ),
     ),
     "LilycoveCity_Text_HeardTowerCalledSkyPillar": (
-        ("SKY PILLAR", "sea routes"),
+        ("TORRE JURAMENTO", "sea routes"),
         (
             "I heard about a tower beyond\\n",
             "the western sea routes.\\p",

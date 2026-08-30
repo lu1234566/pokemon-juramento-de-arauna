@@ -70,7 +70,7 @@ TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         ),
     ),
     "Route120_Text_RouteSignFortree": (
-        ("ROUTE 120", "FORTREE CITY"),
+        ("ROUTE 120", "MATA DO MEIO"),
         ("ROUTE 120\\n", "{LEFT_ARROW} MATA DO MEIO$"),
     ),
 }

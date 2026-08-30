@@ -110,11 +110,11 @@ CITY_TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         ),
     ),
     "SootopolisCity_Text_SootopolisWillBeWrecked": (
-        ("SOOTOPOLIS CITY will get wrecked",),
+        ("AGUAS DE M'BOI will get wrecked",),
         ("MULHER: AGUAS DE M'BOI vai\\n", "se partir desse jeito!$"),
     ),
     "SootopolisCity_Text_SootopolisDidntGetWrecked": (
-        ("SOOTOPOLIS CITY didn't get wrecked",),
+        ("AGUAS DE M'BOI didn't get wrecked",),
         ("MULHER: A cidade ficou de pe.\\p", "Nem todas as memorias voltaram.$"),
     ),
     "SootopolisCity_Text_CityRegainedCalm": (

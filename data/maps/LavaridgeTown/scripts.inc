@@ -275,13 +275,12 @@ LavaridgeTown_EventScript_HerbShopSign::
 
 LavaridgeTown_Text_MayNiceBadgesTakeThis:
 	.string "MAY: {PLAYER}{KUN}! Long time no see!\p"
-	.string "Oh? While I visited the hot springs,\n"
-	.string "you got the LAVARIDGE GYM BADGE.\p"
-	.string "You must have collected\n"
-	.string "good POKéMON…\l"
+	.string "Oh? While I visited the hot springs, you\n"
+	.string "got the SERTAO DE DENTRO GYM BADGE.\p"
+	.string "You must have collected good POKéMON…\n"
 	.string "No, I believe you raised some.\p"
-	.string "I guess it would be okay for you to\n"
-	.string "have this.$"
+	.string "I guess it would be okay for you to have\n"
+	.string "this.$"
 
 LavaridgeTown_Text_MayExplainGoGogglesChallengeDad:
 	.string "CIRO: Nao confunda minha pressa\ncom falta de memoria. Eu lembro\p"

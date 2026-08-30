@@ -34,11 +34,12 @@ EventTicket_Text_OddTicketGetOnBoard:
 FarawayIsland_Entrance_Text_SailorReturn:
 	.string "CAPT. BRINEY can be so maddeningly\n"
 	.string "fickle…\p"
-	.string "Do you want to return to LILYCOVE?$"
+	.string "Do you want to return to\n"
+	.string "BAIA DAS LUZES?$"
 
 BirthIsland_Harbor_Text_SailorReturn:
-	.string "What an oddly shaped island, eh?\n"
-	.string "Do you want to return to LILYCOVE?$"
+	.string "What an oddly shaped island, eh? Do you\n"
+	.string "want to return to BAIA DAS LUZES?$"
 
 EventTicket_Text_OddTicketsWhereTo:
 	.string "Is it you who brought those\n"

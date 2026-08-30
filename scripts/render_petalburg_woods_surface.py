@@ -24,7 +24,7 @@ TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         ),
     ),
     "PetalburgWoods_Text_IWasGoingToAmbushYou": (
-        ("ambush you", "PETALBURG WOODS"),
+        ("ambush you", "PAMPA DA ESPERA WOODS"),
         (
             "I was supposed to wait for you.\\p",
             "You took too long.\\n",
@@ -52,7 +52,7 @@ TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         ("No way... You're good!$",),
     ),
     "PetalburgWoods_Text_YouveGotSomeNerve": (
-        ("CONSORCIO HORIZONTE", "RUSTBORO"),
+        ("CONSORCIO HORIZONTE", "SERRA DO UIVO"),
         (
             "You've got nerve...\\p",
             "HORIZON is already moving on\\n",
@@ -70,7 +70,7 @@ TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         ),
     ),
     "PetalburgWoods_Text_TeamAquaAfterSomethingInRustboro": (
-        ("CONSORCIO HORIZONTE", "RUSTBORO"),
+        ("CONSORCIO HORIZONTE", "SERRA DO UIVO"),
         (
             "He said HORIZON is moving on\\n",
             "SERRA DO UIVO, right?$",

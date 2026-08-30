@@ -101,7 +101,7 @@ MUSEUM_TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         "HORIZONTE: Esses modelos explicam\\n", "correntes e pressao.\\p",
         "Isso pode ser util em campo.$",
     )),
-    "SlateportCity_OceanicMuseum_1F_Text_RustboroBungled": (("RUSTBORO",), (
+    "SlateportCity_OceanicMuseum_1F_Text_RustboroBungled": (("SERRA DO UIVO",), (
         "HORIZONTE: Se a operacao anterior\\n", "tivesse dado certo, eu nao estaria\\n", "aqui hoje.$",
     )),
     "SlateportCity_OceanicMuseum_1F_Text_DidntHaveMoney": (("didn't have ¥50",), (

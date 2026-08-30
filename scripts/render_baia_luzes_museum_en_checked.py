@@ -213,8 +213,8 @@ def validate_rendered(section: str, rendered: str, targets: dict[str, list[str]]
         rendered[body_span(rendered, label)[0]:body_span(rendered, label)[1]]
         for label in EXPECTED[section]
     )
-    if "Welcome to LILYCOVE MUSEUM" in owned or "great for LILYCOVE" in owned:
-        raise ValueError(f"{section}: legacy LILYCOVE museum identity survived")
+    if "Welcome to BAIA DAS LUZES MUSEUM" in owned or "great for BAIA DAS LUZES" in owned:
+        raise ValueError(f"{section}: legacy BAIA DAS LUZES museum identity survived")
     if section == "1f" and "BAIA DAS LUZES MUSEUM" not in owned:
         raise ValueError("1f: BAIA DAS LUZES MUSEUM identity missing")
     if section == "2f":

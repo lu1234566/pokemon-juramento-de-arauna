@@ -141,5 +141,5 @@ Route115_Text_RouteSignRustboro:
 
 Route115_Text_MeteorFallsSign:
 	.string "RUINAS DA QUEDA\n"
-	.string "FALLARBOR TOWN THROUGH HERE$"
+	.string "CAMPO DAS CINZAS THROUGH HERE$"
 

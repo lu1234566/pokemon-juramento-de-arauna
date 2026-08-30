@@ -1484,17 +1484,17 @@ SootopolisCity_Text_PrettyMonCameFromSky:
 
 SootopolisCity_Text_SootopolisWillBeWrecked:
 	.string "Oh, no!\n"
-	.string "SOOTOPOLIS CITY will get wrecked!$"
+	.string "AGUAS DE M'BOI will get wrecked!$"
 
 SootopolisCity_Text_SootopolisDidntGetWrecked:
-	.string "SOOTOPOLIS CITY didn't get wrecked!$"
+	.string "AGUAS DE M'BOI didn't get wrecked!$"
 
 SootopolisCity_Text_NoOrdinaryTourist:
-	.string "Hm!\n"
-	.string "You've come all the way to SOOTOPOLIS?\l"
-	.string "You're no ordinary tourist.\p"
-	.string "But I suppose that doesn't make you\n"
-	.string "an extraordinary tourist, either.$"
+	.string "Hm! You've come all the way to\n"
+	.string "AGUAS DE M'BOI? You're no ordinary\l"
+	.string "tourist.\p"
+	.string "But I suppose that doesn't make you an\n"
+	.string "extraordinary tourist, either.$"
 
 SootopolisCity_Text_CityRegainedCalm:
 	.string "The city has regained its calm…$"
@@ -1525,13 +1525,13 @@ SootopolisCity_Text_CaveOfOriginSleepsToo:
 	.string "the cave, too, shall sleep…$"
 
 SootopolisCity_Text_SootopolisSkyBeautiful:
-	.string "SOOTOPOLIS sprang up as a town in\n"
+	.string "AGUAS DE M'BOI sprang up as a town in\n"
 	.string "the crater of a volcano.\p"
 	.string "If you look up at the sky, the lip of\n"
 	.string "the crater is also visible.\l"
 	.string "So, all you see is the sky in a circle.\p"
 	.string "But that's what makes the sky above\n"
-	.string "SOOTOPOLIS the most beautiful.$"
+	.string "AGUAS DE M'BOI the most beautiful.$"
 
 SootopolisCity_Text_GiganticPokemonFight:
 	.string "When two POKéMON that gigantic\n"

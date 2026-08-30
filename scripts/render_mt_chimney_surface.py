@@ -11,7 +11,7 @@ MAX_VISIBLE_WIDTH = 32
 
 TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
     "MtChimney_Text_MeteoriteWillActivateVolcano": (
-        ("METEORITE", "MT. CHIMNEY"),
+        ("METEORITE", "SERRA DA CINZA"),
         (
             "LUZIA: This METEORITE amplifies\\n",
             "stored BONDS.\\p",
@@ -214,7 +214,7 @@ TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         ("The amplifier is offline.\\n", "There is no response.$"),
     ),
     "MtChimney_Text_RouteSign": (
-        ("JAGGED PATH", "LAVARIDGE TOWN"),
+        ("JAGGED PATH", "SERTAO DE DENTRO"),
         ("SERRA DA CINZA\\n", "{DOWN_ARROW} SERTAO DE DENTRO$"),
     ),
 }

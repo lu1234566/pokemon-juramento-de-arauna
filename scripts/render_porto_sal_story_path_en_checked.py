@@ -14,16 +14,16 @@ CONTROL_RE = re.compile(r"\\[npl]")
 PLACEHOLDER_RE = re.compile(r"\{[^}]+\}")
 
 MARKERS: dict[str, tuple[str, ...]] = {
-    "SlateportCity_Text_BattleTentSign": ("BATTLE TENT SLATEPORT SITE",),
+    "SlateportCity_Text_BattleTentSign": ("BATTLE TENT PORTO DO SAL SITE",),
     "SlateportCity_Text_SternsShipyardWantedSign": ("STERN'S SHIPYARD", "Wanted"),
-    "SlateportCity_Text_SternsShipyardNearsCompletion": ("S.S. TIDAL", "SLATEPORT", "LILYCOVE"),
-    "SlateportCity_Text_SternsShipyardFerryComplete": ("SLATEPORT-LILYCOVE", "S.S. TIDAL"),
+    "SlateportCity_Text_SternsShipyardNearsCompletion": ("S.S. TIDAL", "PORTO DO SAL", "BAIA DAS LUZES"),
+    "SlateportCity_Text_SternsShipyardFerryComplete": ("PORTO DO SAL-BAIA DAS LUZES", "S.S. TIDAL"),
     "SlateportCity_Text_PokemonFanClubSign": ("POKéMON FAN CLUB",),
     "SlateportCity_Text_OceanicMuseumSign": ("OCEANIC MUSEUM",),
     "SlateportCity_Text_CitySign": ("ARQUIVO VIVO", "DESENCANTO"),
-    "SlateportCity_Text_MarketSign": ("SLATEPORT MARKET",),
-    "SlateportCity_Text_HarborFerryUnderConstruction": ("SLATEPORT HARBOR", "S.S. TIDAL"),
-    "SlateportCity_Text_HarborSign": ("SLATEPORT HARBOR", "S.S. TIDAL"),
+    "SlateportCity_Text_MarketSign": ("PORTO DO SAL MARKET",),
+    "SlateportCity_Text_HarborFerryUnderConstruction": ("PORTO DO SAL HARBOR", "S.S. TIDAL"),
+    "SlateportCity_Text_HarborSign": ("PORTO DO SAL HARBOR", "S.S. TIDAL"),
     "SlateportCity_Text_NameRatersHouseSign": ("NAME RATER'S HOUSE",),
     "SlateportCity_Text_YouDroveTeamAquaAway": ("HORIZONTE: Nao somos soldados",),
     "SlateportCity_Text_MaybeThisTrainer": ("CIRO:", "HORIZONTE"),

@@ -92,7 +92,7 @@ TARGETS_2F: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         "Quanto maior a profundidade,\\n",
         "maior a pressao da agua.$",
     )),
-    "SlateportCity_OceanicMuseum_2F_Text_HoennModel": (("MODEL OF ARAUNA REGION", "LITTLEROOT"), (
+    "SlateportCity_OceanicMuseum_2F_Text_HoennModel": (("MODEL OF ARAUNA REGION", "VILA AMANHECER"), (
         "MODELO DA REGIAO DE ARAUNA\\p",
         "Uma miniatura mostra cidades,\\n",
         "rios, serras e rotas costeiras.$",
@@ -128,7 +128,7 @@ TARGETS_2F: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         "Modelo de antigo transatlantico\\n",
         "que cruzava oceanos inteiros.$",
     )),
-    "SlateportCity_OceanicMuseum_2F_Text_RemindsMeOfAbandonedShip": (("ABANDONED SHIP", "DEWFORD"), (
+    "SlateportCity_OceanicMuseum_2F_Text_RemindsMeOfAbandonedShip": (("ABANDONED SHIP", "PORTO DAS REDES"), (
         "VISITANTE: Esse modelo me lembra\\n",
         "um navio encalhado na costa.$",
     )),

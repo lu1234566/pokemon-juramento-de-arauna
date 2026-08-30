@@ -50,8 +50,8 @@ VerdanturfTown_Mart_Text_NoStrategyGuidesForBattleTent:
 	.string "ARQUIVO tentou transformar\nambas em ferramentas.$"
 
 VerdanturfTown_Mart_Text_NestBallOnWeakenedPokemon:
-	.string "The NEST BALL works better on\n"
-	.string "weakened POKéMON.\p"
-	.string "VERDANTURF is the only place you can\n"
-	.string "buy it.$"
+	.string "The NEST BALL works better on weakened\n"
+	.string "POKéMON.\p"
+	.string "VALE DO SILENCIO is the only place you\n"
+	.string "can buy it.$"
 

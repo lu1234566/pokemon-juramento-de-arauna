@@ -627,9 +627,10 @@ DewfordTown_EventScript_PhraseNotTrendyEnough::
 	end
 
 DewfordTown_Text_TinyIslandCommunity:
-	.string "DEWFORD is a tiny island community.\n"
-	.string "If something gets trendy here,\l"
-	.string "everyone picks up on it right away.$"
+	.string "PORTO DAS REDES is a tiny island\n"
+	.string "community. If something gets trendy\l"
+	.string "here, everyone picks up on it right\l"
+	.string "away.$"
 
 DewfordTown_Text_TownSign:
 	.string "PORTO DAS REDES. Pescadores\nlembram de uma comunidade que\p"
@@ -641,12 +642,12 @@ DewfordTown_Text_GymSign:
 	.string "O mar devolve historias.$"
 
 DewfordTown_Text_HallSign:
-	.string "DEWFORD HALL\n"
+	.string "PORTO DAS REDES HALL\n"
 	.string "“Everyone's information exchange!”$"
 
 Route104_Text_LandedInDewfordDeliverLetter:
 	.string "MR. BRINEY: Ahoy!\n"
-	.string "We've hit land in DEWFORD.\p"
+	.string "We've hit land in PORTO DAS REDES.\p"
 	.string "I suppose you're off to deliver that\n"
 	.string "LETTER to, who was it now, STEVEN!$"
 
@@ -654,10 +655,10 @@ DewfordTown_Text_SetSailBackToPetalburg:
 	.string "MR. BRINEY: Have you delivered your\n"
 	.string "LETTER?\p"
 	.string "Or were you meaning to sail back to\n"
-	.string "PETALBURG?$"
+	.string "PAMPA DA ESPERA?$"
 
 DewfordTown_Text_PetalburgWereSettingSail2:
-	.string "MR. BRINEY: PETALBURG it is, then!\p"
+	.string "MR. BRINEY: PAMPA DA ESPERA it is, then!\p"
 	.string "Anchors aweigh!\n"
 	.string "PEEKO, we're setting sail, my darling!$"
 
@@ -667,7 +668,7 @@ DewfordTown_Text_GoDeliverIllBeWaiting:
 
 DewfordTown_Text_BrineyLandedInDewford:
 	.string "MR. BRINEY: Ahoy!\n"
-	.string "We've hit land in DEWFORD!\p"
+	.string "We've hit land in PORTO DAS REDES!\p"
 	.string "You just go on and tell me whenever\n"
 	.string "you want to set sail again!$"
 
@@ -677,12 +678,12 @@ DewfordTown_Text_WhereAreWeBound:
 	.string "Now, my friend, where are we bound?$"
 
 DewfordTown_Text_PetalburgWereSettingSail:
-	.string "MR. BRINEY: PETALBURG, is it?\p"
+	.string "MR. BRINEY: PAMPA DA ESPERA, is it?\p"
 	.string "Anchors aweigh!\n"
 	.string "PEEKO, we're setting sail, my darling!$"
 
 DewfordTown_Text_SlateportWereSettingSail:
-	.string "MR. BRINEY: SLATEPORT, is it?\p"
+	.string "MR. BRINEY: PORTO DO SAL, is it?\p"
 	.string "Anchors aweigh!\n"
 	.string "PEEKO, we're setting sail, my darling!$"
 

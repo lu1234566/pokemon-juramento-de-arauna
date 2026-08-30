@@ -1,6 +1,6 @@
 FallarborTown_BattleTentLobby_Text_WelcomeToBattleTent:
 	.string "I welcome you to the BATTLE TENT\n"
-	.string "FALLARBOR SITE!\p"
+	.string "CAMPO DAS CINZAS SITE!\p"
 	.string "I am your guide to the Set KO Tourney!$"
 
 FallarborTown_BattleTentLobby_Text_TakeChallenge:
@@ -12,7 +12,7 @@ FallarborTown_BattleTentLobby_Text_AwaitAnotherChallenge:
 	.string "another occasion!$"
 
 FallarborTown_BattleTentLobby_Text_ExplainFallarborTent:
-	.string "In the FALLARBOR BATTLE TENT,\n"
+	.string "In the CAMPO DAS CINZAS BATTLE TENT,\n"
 	.string "we undertake the Set KO Tourney.\p"
 	.string "All participants enter with a team of\n"
 	.string "three POKéMON.\p"
@@ -119,16 +119,17 @@ FallarborTown_BattleTentLobby_Text_LookingForwardToArrival:
 
 VerdanturfTown_BattleTentLobby_Text_WelcomeToBattleTent:
 	.string "I welcome you to the BATTLE TENT\n"
-	.string "VERDANTURF SITE!\p"
+	.string "VALE DO SILENCIO SITE!\p"
 	.string "Here, the TRAINER's trust toward\n"
 	.string "POKéMON is tested.$"
 
 VerdanturfTown_BattleTentLobby_Text_TakeChallenge:
-	.string "Do you wish to take the VERDANTURF\n"
-	.string "BATTLE TENT challenge?$"
+	.string "Do you wish to take the\n"
+	.string "VALE DO SILENCIO BATTLE TENT\l"
+	.string "challenge?$"
 
 VerdanturfTown_BattleTentLobby_Text_ExplainVerdanturfTent:
-	.string "In the VERDANTURF BATTLE TENT,\n"
+	.string "In the VALE DO SILENCIO BATTLE TENT,\n"
 	.string "there is one crucial rule that must\l"
 	.string "be obeyed.\p"
 	.string "TRAINERS are permitted only to switch\n"
@@ -214,7 +215,7 @@ VerdanturfTown_BattleTentLobby_Text_PresentYouWithPrize:
 
 SlateportCity_BattleTentLobby_Text_WelcomeToBattleTent:
 	.string "Welcome to the BATTLE TENT\n"
-	.string "SLATEPORT SITE!\p"
+	.string "PORTO DO SAL SITE!\p"
 	.string "I am your guide to the Battle Swap\n"
 	.string "Tournament.$"
 
@@ -223,7 +224,7 @@ SlateportCity_BattleTentLobby_Text_TakeChallenge:
 	.string "Swap challenge?$"
 
 SlateportCity_BattleTentLobby_Text_ExplainSlateportTent:
-	.string "Here at the SLATEPORT BATTLE TENT,\n"
+	.string "Here at the PORTO DO SAL BATTLE TENT,\n"
 	.string "we hold Battle Swap events\l"
 	.string "using rental POKéMON.\p"
 	.string "First, you will be loaned three\n"
@@ -351,14 +352,14 @@ SlateportCity_BattleTentLobby_Text_ExplainSwapNotes:
 	.string "even when swaps are made.$"
 
 SlateportCity_BattleTentLobby_Text_ExplainMonRules:
-	.string "The POKéMON of the SLATEPORT\n"
+	.string "The POKéMON of the PORTO DO SAL\n"
 	.string "BATTLE TENT are all rentals.\p"
 	.string "All rental POKéMON are kept at\n"
 	.string "Level 30.$"
 
 @ Unused
 VerdanturfTown_BattleTentLobby_Text_RulesAreListed2:
-	.string "The VERDANTURF BATTLE TENT\n"
+	.string "The VALE DO SILENCIO BATTLE TENT\n"
 	.string "rules are listed.$"
 
 @ Unused
@@ -367,9 +368,9 @@ VerdanturfTown_BattleTentLobby_Text_ReadWhichHeading:
 
 @ Unused
 VerdanturfTown_BattleTentLobby_Text_ExplainBasicRules:
-	.string "Here at the VERDANTURF BATTLE TENT,\n"
-	.string "POKéMON are required to think and\l"
-	.string "battle by themselves.\p"
+	.string "Here at the VALE DO SILENCIO\n"
+	.string "BATTLE TENT, POKéMON are required to\l"
+	.string "think and battle by themselves.\p"
 	.string "Unlike in the wild, POKéMON that live\n"
 	.string "with people behave differently\l"
 	.string "depending on their nature.$"
@@ -429,5 +430,5 @@ BattleTentLobby_Text_ExplainLevelRules:
 	.string "have any POKéMON below Level 30.$"
 
 VerdanturfTown_BattleTentLobby_Text_RulesAreListed:
-	.string "The VERDANTURF BATTLE TENT\n"
+	.string "The VALE DO SILENCIO BATTLE TENT\n"
 	.string "rules are listed.$"

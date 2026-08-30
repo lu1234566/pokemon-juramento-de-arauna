@@ -958,8 +958,8 @@ Route110_TrickHousePuzzle5_Text_Mechadoll2Quiz2:
 Route110_TrickHousePuzzle5_Text_Mechadoll2Quiz3:
 	.string "MECHADOLL 2 QUIZ.\p"
 	.string "Which of these POKéMON did\n"
-	.string "CONSORCIO HORIZONTE use in PETALBURG\l"
-	.string "FOREST?$"
+	.string "CONSORCIO HORIZONTE use in\l"
+	.string "PAMPA DA ESPERA FOREST?$"
 
 Route110_TrickHousePuzzle5_Text_Mechadoll3Intro:
 	.string "CLICKETY-CLACK…\n"
@@ -1009,7 +1009,7 @@ Route110_TrickHousePuzzle5_Text_Mechadoll5Intro:
 
 Route110_TrickHousePuzzle5_Text_Mechadoll5Quiz1:
 	.string "MECHADOLL 5 QUIZ.\p"
-	.string "In SLATEPORT's POKéMON FAN CLUB,\n"
+	.string "In PORTO DO SAL's POKéMON FAN CLUB,\n"
 	.string "how many POKéMON were there?$"
 
 Route110_TrickHousePuzzle5_Text_Mechadoll5Quiz2:

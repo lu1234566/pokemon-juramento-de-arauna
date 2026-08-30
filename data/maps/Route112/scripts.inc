@@ -115,24 +115,25 @@ Route112_Text_YeahWeNeedMeteorite:
 	.string "we need a METEORITE to do it.$"
 
 Route112_Text_OhThatsWhyCrewWentToFallarbor:
-	.string "Oh, I get it now. That's why the rest\n"
-	.string "of the crew went out to FALLARBOR.$"
+	.string "Oh, I get it now. That's why the rest of\n"
+	.string "the crew went out to CAMPO DAS CINZAS.$"
 
 Route112_Text_CantLetAnyonePassUntilTheyreBack:
 	.string "You got it. And until they come back,\n"
 	.string "we're not to let anyone pass, right.$"
 
 Route112_Text_NotEasyToGetBackToLavaridge:
-	.string "Eh, I'd like to get to MAUVILLE, but if\n"
-	.string "I went down these ledges, it'd be no\l"
-	.string "easy matter to get back to LAVARIDGE.$"
+	.string "Eh, I'd like to get to ENCRUZILHADA, but\n"
+	.string "if I went down these ledges, it'd be no\l"
+	.string "easy matter to get back to\l"
+	.string "SERTAO DE DENTRO.$"
 
 Route112_Text_MtChimneyCableCarSign:
-	.string "MT. CHIMNEY CABLE CAR\n"
+	.string "SERRA DA CINZA CABLE CAR\n"
 	.string "“A short walk {UP_ARROW} way!”$"
 
 Route112_Text_MtChimneySign:
-	.string "MT. CHIMNEY\p"
+	.string "SERRA DA CINZA\p"
 	.string "“For CASA DA CINZA or the summit,\n"
 	.string "please take the CABLE CAR.”$"
 

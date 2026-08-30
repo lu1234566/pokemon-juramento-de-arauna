@@ -61,6 +61,8 @@ class Ruler:
 
     def width(self, line: str) -> int:
         """Pixel width of one rendered line, placeholders estimated."""
+        # '$' is EOS in charmap.txt: it ends the string and draws nothing.
+        line = line[:-1] if line.endswith("$") else line
         total, index = 0, 0
         while index < len(line):
             if line[index] == "{":
