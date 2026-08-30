@@ -82,10 +82,11 @@ LilycoveCity_CoveLilyMotel_1F_Text_GuestsDoubledByMascot:
 	.string "guests to stay with us?$"
 
 LilycoveCity_CoveLilyMotel_1F_Text_NoGuestsWithTeamAqua:
-	.string "Oh, sorry, sorry!\n"
-	.string "I was too involved in watching TV!\p"
-	.string "Since that CONSORCIO HORIZONTE came to town,\n"
-	.string "the tourists have been staying away.$"
+	.string "Oh, sorry, sorry! I was too involved in\n"
+	.string "watching TV!\p"
+	.string "Since that CONSORCIO HORIZONTE came to\n"
+	.string "town, the tourists have been staying\l"
+	.string "away.$"
 
 LilycoveCity_CoveLilyMotel_1F_Text_CantSeeTheTV:
 	.string "Hey, down in front!\n"

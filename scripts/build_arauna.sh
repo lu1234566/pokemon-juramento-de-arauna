@@ -212,6 +212,9 @@ done < scripts/english_renderers.txt
 # compiler is allowed to emit an official ROM.
 python3 scripts/check_english_only_policy.py
 python3 scripts/check_arauna_story_coverage.py
+# The ROM being built is this rendered tree, so this is where a line too wide
+# for the message box would actually reach a player.
+python3 tools/arauna/check_text_width.py
 
 cpp="${CPP:-arm-none-eabi-cpp}"
 

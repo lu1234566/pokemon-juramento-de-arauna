@@ -2394,10 +2394,10 @@ MatchCall_Text_May7::
 
 MatchCall_Text_May8::
 	.string "CIRO: {PLAYER}{KUN}, hi.\p"
-	.string "MEMORIAL DOS NOMES is a memorial to POKéMON\n"
-	.string "whose lives have ended.\p"
-	.string "Maybe as a result, it's infested\n"
-	.string "with many GHOST-type POKéMON!$"
+	.string "MEMORIAL DOS NOMES is a memorial to\n"
+	.string "POKéMON whose lives have ended.\p"
+	.string "Maybe as a result, it's infested with\n"
+	.string "many GHOST-type POKéMON!$"
 
 MatchCall_Text_May9::
 	.string "CIRO: Hi, {PLAYER}{KUN}!\p"
@@ -2521,10 +2521,10 @@ MatchCall_Text_Brendan7::
 
 MatchCall_Text_Brendan8::
 	.string "CIRO: {PLAYER}!\p"
-	.string "MEMORIAL DOS NOMES is a memorial to POKéMON\n"
-	.string "whose lives have ended.\p"
-	.string "That's probably why it's infested\n"
-	.string "with many GHOST-type POKéMON!$"
+	.string "MEMORIAL DOS NOMES is a memorial to\n"
+	.string "POKéMON whose lives have ended.\p"
+	.string "That's probably why it's infested with\n"
+	.string "many GHOST-type POKéMON!$"
 
 MatchCall_Text_Brendan9::
 	.string "CIRO: Hey there, {PLAYER}.\p"

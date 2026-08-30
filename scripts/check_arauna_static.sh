@@ -32,4 +32,8 @@ python3 tools/arauna/check_overworld_registry.py
 # Every one of the 386 must be catchable, or the Pokedex cannot be finished.
 python3 tools/arauna/check_availability.py
 
+# Renaming things lengthens lines, and a line past the message box is silently
+# cut off on screen. The ceiling is measured from vanilla, not chosen here.
+python3 tools/arauna/check_text_width.py
+
 echo "Arauna static readiness: PASS (official rendered composition validated; ARM compile intentionally skipped)."

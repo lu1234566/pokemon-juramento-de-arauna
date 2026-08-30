@@ -748,11 +748,12 @@ Route110_Text_KickUpARuckus:
 
 Route110_Text_MyFirstJobInAqua:
 	.string "This is my first job after joining\n"
-	.string "CONSORCIO HORIZONTE. It's a little scary.$"
+	.string "CONSORCIO HORIZONTE. It's a little\l"
+	.string "scary.$"
 
 Route110_Text_AquaActionsBringSmiles:
-	.string "CONSORCIO HORIZONTE's actions should bring\n"
-	.string "smiles to people's faces!$"
+	.string "CONSORCIO HORIZONTE's actions should\n"
+	.string "bring smiles to people's faces!$"
 
 Route110_Text_MayLetsBattle:
 	.string "CIRO: Voce continua olhando\npara cada cicatriz como se ela\p"

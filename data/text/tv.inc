@@ -2825,8 +2825,8 @@ GabbyAndTy_Text_TyNotEnoughMons:
 	.string "better footage, but…$"
 
 GabbyAndTy_Text_TyDefeatFirstTime:
-	.string "TITO: Yep, we sure spotted a hot TRAINER.\n"
-	.string "This is a huge scoop for us!$"
+	.string "TITO: Yep, we sure spotted a hot\n"
+	.string "TRAINER. This is a huge scoop for us!$"
 
 GabbyAndTy_Text_TyDefeat:
 	.string "TITO: Yep, I got it all.\n"

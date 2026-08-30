@@ -342,21 +342,22 @@ PetalburgWoods_Text_YouHaveToHelpMe:
 PetalburgWoods_Text_NoOneCrossesTeamAqua:
 	.string "Hunh? What do you think you're doing?\n"
 	.string "What, you're going to protect him?\p"
-	.string "No one who crosses CONSORCIO HORIZONTE\n"
-	.string "gets any mercy, not even a kid!\p"
+	.string "No one who crosses\n"
+	.string "CONSORCIO HORIZONTE gets any mercy,\l"
+	.string "not even a kid!\p"
 	.string "Come on and battle me!$"
 
 PetalburgWoods_Text_YoureKiddingMe:
 	.string "You're kidding me! You're tough!$"
 
 PetalburgWoods_Text_YouveGotSomeNerve:
-	.string "Grrr… You've got some nerve\n"
-	.string "meddling with CONSORCIO HORIZONTE!\l"
-	.string "Come on and battle me again!\p"
+	.string "Grrr… You've got some nerve meddling\n"
+	.string "with CONSORCIO HORIZONTE! Come on and\l"
+	.string "battle me again!\p"
 	.string "I wish I could say that, but I'm out of\n"
 	.string "POKéMON…\p"
-	.string "And, hey, we of CONSORCIO HORIZONTE are also\n"
-	.string "after something in RUSTBORO.\p"
+	.string "And, hey, we of CONSORCIO HORIZONTE are\n"
+	.string "also after something in RUSTBORO.\p"
 	.string "I'll let you go today!$"
 
 PetalburgWoods_Text_ThatWasAwfullyClose:
@@ -368,8 +369,8 @@ PetalburgWoods_Text_ThatWasAwfullyClose:
 	.string "my thanks!$"
 
 PetalburgWoods_Text_TeamAquaAfterSomethingInRustboro:
-	.string "Didn't that CONSORCIO HORIZONTE thug say\n"
-	.string "they were after something in\l"
+	.string "Didn't that CONSORCIO HORIZONTE thug\n"
+	.string "say they were after something in\l"
 	.string "RUSTBORO, too?$"
 
 PetalburgWoods_Text_ICantBeWastingTime:

@@ -507,10 +507,11 @@ LilycoveCity_Text_MovedLootIntoHideoutToday:
 LilycoveCity_Text_ChanceToDoBigThings:
 	.string "I'm just a GRUNT, so I don't know what\n"
 	.string "the BOSS is thinking…\p"
-	.string "But being on CONSORCIO HORIZONTE, I know I'll get\n"
-	.string "the chance to do big things!\p"
-	.string "Wh-who are you?!\n"
-	.string "I was just talking to myself!$"
+	.string "But being on CONSORCIO HORIZONTE, I\n"
+	.string "know I'll get the chance to do big\l"
+	.string "things!\p"
+	.string "Wh-who are you?! I was just talking to\n"
+	.string "myself!$"
 
 LilycoveCity_Text_DontGoNearCaveInCove:
 	.string "Hey, you!\p"
@@ -520,8 +521,8 @@ LilycoveCity_Text_DontGoNearCaveInCove:
 
 LilycoveCity_Text_IfWorldBecomesOurs:
 	.string "If this whole wide world becomes ours,\n"
-	.string "CONSORCIO HORIZONTE's, it will be a happier\l"
-	.string "place for POKéMON, too.$"
+	.string "CONSORCIO HORIZONTE's, it will be a\l"
+	.string "happier place for POKéMON, too.$"
 
 LilycoveCity_Text_WailmerLeapOutOfWater:
 	.string "There! WAILMER!\n"
@@ -558,15 +559,15 @@ LilycoveCity_Text_ImFromKanto:
 	.string "only in this area?$"
 
 LilycoveCity_Text_TeamAquaBeenTrainingWailmer:
-	.string "CONSORCIO HORIZONTE's been training their\n"
-	.string "WAILMER in the cove.\p"
-	.string "We SAILORS can't get our boats out\n"
-	.string "to sea with them in the way!$"
+	.string "CONSORCIO HORIZONTE's been training\n"
+	.string "their WAILMER in the cove.\p"
+	.string "We SAILORS can't get our boats out to\n"
+	.string "sea with them in the way!$"
 
 LilycoveCity_Text_SomeonePuntedTeamAquaOut:
 	.string "Ahoy, did you know?\p"
-	.string "Someone punted CONSORCIO HORIZONTE out of\n"
-	.string "the way for us!\p"
+	.string "Someone punted CONSORCIO HORIZONTE\n"
+	.string "out of the way for us!\p"
 	.string "That got the WAILMER out of the cove,\n"
 	.string "so we can get our boats out again.$"
 
@@ -575,7 +576,8 @@ LilycoveCity_Text_SomeoneStoleMyPokemon:
 	.string "seaside inn to the sound of waves…\p"
 	.string "When someone stole my POKéMON!\p"
 	.string "Who's the abductor?\n"
-	.string "CONSORCIO HORIZONTE? Is it CONSORCIO HORIZONTE?$"
+	.string "CONSORCIO HORIZONTE? Is it\l"
+	.string "CONSORCIO HORIZONTE?$"
 
 LilycoveCity_Text_MissingPokemonCameBack:
 	.string "My missing POKéMON…\n"
@@ -601,22 +603,22 @@ LilycoveCity_Text_SixtyYearsAgoHusbandProposed:
 	.string "Mufufufu mufufufufufu…$"
 
 LilycoveCity_Text_TeamAquaRenovatedCavern:
-	.string "Hm, you know of the peculiar cavern\n"
-	.string "in this cove?\p"
-	.string "That had been a natural formation,\n"
-	.string "but then that CONSORCIO HORIZONTE lot came\l"
+	.string "Hm, you know of the peculiar cavern in\n"
+	.string "this cove?\p"
+	.string "That had been a natural formation, but\n"
+	.string "then that CONSORCIO HORIZONTE lot came\l"
 	.string "along and made their renovations.\p"
-	.string "They call themselves\n"
-	.string "the “nature-loving CONSORCIO HORIZONTE”!\p"
+	.string "They call themselves the “nature-loving\n"
+	.string "CONSORCIO HORIZONTE”!\p"
 	.string "But what they do and what they say\n"
 	.string "don't match at all!$"
 
 LilycoveCity_Text_TeamAquaLotGoneForGood:
 	.string "That cave in the cove…\p"
-	.string "I didn't notice it right away,\n"
-	.string "but it's completely empty now.\p"
-	.string "That CONSORCIO HORIZONTE lot, they must\n"
-	.string "have gone away for good.$"
+	.string "I didn't notice it right away, but it's\n"
+	.string "completely empty now.\p"
+	.string "That CONSORCIO HORIZONTE lot, they\n"
+	.string "must have gone away for good.$"
 
 LilycoveCity_Text_CitySign:
 	.string "BAIA DAS LUZES. Por tras da\nfachada moderna fica o centro\p"

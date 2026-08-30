@@ -197,7 +197,7 @@ RustboroCity_DevonCorp_3F_EventScript_RareRocksDisplay::
 
 RustboroCity_DevonCorp_3F_Text_MrStoneIHaveFavor:
 	.string "I'm MR. STONE, the PRESIDENT of\n"
-	.string "the CONSORCIO HORIZONTEORATION.\p"
+	.string "the CONSORCIO HORIZONTE.\p"
 	.string "I'd just got word about you!\p"
 	.string "You saved our staff not just once,\n"
 	.string "but twice!\p"
@@ -266,7 +266,7 @@ RustboroCity_DevonCorp_3F_Text_NotFamiliarWithTrends:
 	.string "TRAINERS in the POKéMON LEAGUE?$"
 
 RustboroCity_DevonCorp_3F_Text_ThisIs3rdFloorWaitHere:
-	.string "This is the CONSORCIO HORIZONTEORATION's\n"
+	.string "This is the CONSORCIO HORIZONTE's\n"
 	.string "third floor.\p"
 	.string "Our PRESIDENT's OFFICE is on\n"
 	.string "this floor.\p"

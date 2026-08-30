@@ -102,8 +102,9 @@ SSTidalRooms_Text_ThomasPostBattle:
 	.string "the GENTLEMAN's code of conduct.$"
 
 SSTidalRooms_Text_JedIntro:
-	.string "JAIR: I feel a little shy about this, but…\n"
-	.string "We'll show you our lovey-dovey power!$"
+	.string "JAIR: I feel a little shy about this,\n"
+	.string "but… We'll show you our lovey-dovey\l"
+	.string "power!$"
 
 SSTidalRooms_Text_JedDefeat:
 	.string "JAIR: Sigh…$"
