@@ -41,3 +41,4 @@ data/maps/AbandonedShip_CaptainsOffice/scripts.inc
 src/landmark.c
 data/text/trainers.inc
 data/text/apprentice.inc
+data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc
