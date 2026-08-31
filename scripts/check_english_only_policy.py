@@ -31,6 +31,7 @@ EXPECTED_RENDERER_ORDER = (
     'render_match_call_people_en.py',
     'render_personalized_calls_en.py',
     'render_call_templates_en.py',
+    'render_tv_bravo_trainer_en.py',
     'render_pampa_elias_gym_core_en_checked.py',
     'render_pampa_gym_rooms_en_checked.py',
     'render_val_house_en_checked.py',
