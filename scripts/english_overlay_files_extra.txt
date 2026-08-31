@@ -68,3 +68,5 @@ data/text/contest_strings.inc
 data/maps/MauvilleCity_BikeShop/scripts.inc
 data/maps/MauvilleCity_GameCorner/scripts.inc
 data/text/lottery_corner.inc
+data/maps/SlateportCity_PokemonFanClub/scripts.inc
+data/maps/SlateportCity_BattleTentCorridor/scripts.inc

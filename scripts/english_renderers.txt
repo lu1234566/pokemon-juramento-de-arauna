@@ -64,6 +64,7 @@ render_trick_house_en.py
 render_contest_strings_en.py
 render_encruzilhada_amusements_en.py
 render_lottery_corner_en.py
+render_porto_sal_fan_club_en.py
 render_pampa_elias_gym_core_en_checked.py
 render_pampa_gym_rooms_en_checked.py
 render_val_house_en_checked.py
