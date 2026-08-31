@@ -13,6 +13,11 @@ get to look before they decide.
 The two tournament explanations are one text with the format swapped in, and
 the four "previous results" lines are one sentence with two variables in it,
 so both are generated rather than kept as hand-maintained copies.
+
+The offer to record a match on the CIRCUIT PASS is not here: it belongs to
+render_circuit_pass_facilities_en_checked.py, further down the manifest,
+which writes that offer for every facility at once. Writing it here as well
+would only mean writing it into a block the later renderer overwrites.
 """
 from __future__ import annotations
 
@@ -168,9 +173,6 @@ TARGETS: dict[str, tuple[str, ...]] = {
     "AwardTheseBattlePoints": (
         "In recognition of a plan that was a pleasure to watch, we award you "
         "these Battle Point(s)!",
-    ),
-    "RecordLastMatch": (
-        "Shall I put your last BATTLE DOME match on your CIRCUIT PASS?",
     ),
     "RulesAreListed": (
         "The tournament rules are set out here.",
