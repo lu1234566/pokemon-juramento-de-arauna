@@ -569,8 +569,8 @@ MossdeepCity_Gym_Text_ExplainCalmMind:
 	.string "dentro delas nunca sao.$"
 
 MossdeepCity_Gym_Text_RegisteredTateAndLiza:
-	.string "Registered GYM LEADERS TATE & LIZA\n"
-	.string "in the POKéNAV.$"
+	.string "Registered GYM LEADERS CECILIA &\n"
+	.string "CAETANO in the POKéNAV.$"
 
 MossdeepCity_Gym_Text_TateAndLizaPostBattle:
 	.string "CECILIA: Do alto, cidades\nparecem pequenas. As vidas\p"
@@ -585,8 +585,8 @@ MossdeepCity_Gym_Text_GymStatue:
 
 MossdeepCity_Gym_Text_GymStatueCertified:
 	.string "MISSOES DO CEU POKéMON GYM\p"
-	.string "LIZA AND TATE'S CERTIFIED TRAINERS:\n"
-	.string "{PLAYER}$"
+	.string "CAETANO AND CECILIA'S CERTIFIED\n"
+	.string "TRAINERS: {PLAYER}$"
 
 MossdeepCity_Gym_Text_TateAndLizaPreRematch:
 	.string "CECILIA: Do alto, cidades\nparecem pequenas. As vidas\p"

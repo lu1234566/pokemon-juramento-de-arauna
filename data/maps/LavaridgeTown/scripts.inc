@@ -274,7 +274,7 @@ LavaridgeTown_EventScript_HerbShopSign::
 	end
 
 LavaridgeTown_Text_MayNiceBadgesTakeThis:
-	.string "MAY: {PLAYER}{KUN}! Long time no see!\p"
+	.string "CIRO: {PLAYER}{KUN}! Long time no see!\p"
 	.string "Oh? While I visited the hot springs, you\n"
 	.string "got the SERTAO DE DENTRO GYM BADGE.\p"
 	.string "You must have collected good POKéMON…\n"
@@ -287,7 +287,7 @@ LavaridgeTown_Text_MayExplainGoGogglesChallengeDad:
 	.string "o bastante para saber que nao\nquero viver preso ao que perdi.$"
 
 LavaridgeTown_Text_BrendanNiceBadgesTakeThis:
-	.string "BRENDAN: {PLAYER}, hey, it's been a while.\n"
+	.string "CIRO: {PLAYER}, hey, it's been a while.\n"
 	.string "How's it going?\p"
 	.string "Hmm…\n"
 	.string "That's a decent collection of BADGES.\p"
@@ -357,7 +357,7 @@ LavaridgeTown_Text_OhYouLikeHotSprings:
 LavaridgeTown_Text_BatheInHotSpringsEveryDay:
 	.string "I bathe in the hot springs every day.\p"
 	.string "I want to become a beautiful and strong\n"
-	.string "GYM LEADER like FLANNERY.$"
+	.string "GYM LEADER like NARA.$"
 
 LavaridgeTown_Text_IfPokemonInHotSprings:
 	.string "If people put POKéMON in hot springs,\n"

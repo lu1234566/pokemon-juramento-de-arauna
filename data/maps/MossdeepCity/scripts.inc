@@ -312,7 +312,7 @@ MossdeepCity_Text_YouCanKeepIt:
 	.string "Why would you want it?\n"
 	.string "You're weird.\p"
 	.string "You can keep it, but keep it a secret\n"
-	.string "from STEVEN.$"
+	.string "from BENTO.$"
 
 MossdeepCity_Text_StevensHouseOverThere:
 	.string "SEU BENTO: Quando um nome some\nda boca das pessoas, eu\p"
@@ -426,5 +426,5 @@ MossdeepCity_Text_SootopolisNewGymLeader:
 	.string "I think the GYM there had a new\n"
 	.string "LEADER come in.\p"
 	.string "People tell me the new LEADER once\n"
-	.string "mentored WALLACE.$"
+	.string "mentored AMALIA.$"
 

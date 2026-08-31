@@ -13,7 +13,7 @@ CONTROL_RE = re.compile(r"\\[npl]")
 PLACEHOLDER_RE = re.compile(r"\{[^}]+\}")
 
 ROUTE_TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
-    "Route102_Text_WatchMeCatchPokemon": (("WALLY:", "catch one properly"), (
+    "Route102_Text_WatchMeCatchPokemon": (("VAL:", "catch one properly"), (
         "VAL: {PLAYER}...\\p",
         "Could you watch me try this?\\p",
         "I'm still nervous.\\p",

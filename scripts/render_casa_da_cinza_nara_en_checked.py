@@ -19,23 +19,23 @@ CONTROL_RE = re.compile(r"\\[npl]")
 PLACEHOLDER_RE = re.compile(r"\{[^}]+\}")
 
 RAW_MARKERS = {
-    "LavaridgeTown_Text_MayNiceBadgesTakeThis": ("MAY:",),
+    "LavaridgeTown_Text_MayNiceBadgesTakeThis": ("CIRO:",),
     "LavaridgeTown_Text_MayExplainGoGogglesChallengeDad": ("CIRO:",),
-    "LavaridgeTown_Text_BrendanNiceBadgesTakeThis": ("BRENDAN:",),
+    "LavaridgeTown_Text_BrendanNiceBadgesTakeThis": ("CIRO:",),
     "LavaridgeTown_Text_BrendanExplainGoGogglesChallengeDad": ("CIRO:",),
-    "LavaridgeTown_Text_BatheInHotSpringsEveryDay": ("FLANNERY",),
+    "LavaridgeTown_Text_BatheInHotSpringsEveryDay": ("NARA",),
     "LavaridgeTown_Text_TownSign": ("SERTAO DE DENTRO",),
     "LavaridgeTown_Text_GymSign": ("NARA",),
-    "LavaridgeTown_Gym_1F_Text_GymGuideAdvice": ("FLANNERY",),
-    "LavaridgeTown_Gym_1F_Text_AxleDefeat": ("FLANNERY",),
-    "LavaridgeTown_Gym_B1F_Text_KeeganPostBattle": ("FLANNERY",),
-    "LavaridgeTown_Gym_1F_Text_DaniellePostBattle": ("FLANNERY",),
-    "LavaridgeTown_Gym_B1F_Text_EliPostBattle": ("FLANNERY",),
+    "LavaridgeTown_Gym_1F_Text_GymGuideAdvice": ("NARA",),
+    "LavaridgeTown_Gym_1F_Text_AxleDefeat": ("NARA",),
+    "LavaridgeTown_Gym_B1F_Text_KeeganPostBattle": ("NARA",),
+    "LavaridgeTown_Gym_1F_Text_DaniellePostBattle": ("NARA",),
+    "LavaridgeTown_Gym_B1F_Text_EliPostBattle": ("NARA",),
     "LavaridgeTown_Gym_1F_Text_FlanneryIntro": ("NARA:",),
     "LavaridgeTown_Gym_1F_Text_ReceivedHeatBadge": ("INSÍGNIA CINZA",),
-    "LavaridgeTown_Gym_1F_Text_RegisteredFlannery": ("FLANNERY",),
+    "LavaridgeTown_Gym_1F_Text_RegisteredFlannery": ("NARA",),
     "LavaridgeTown_Gym_1F_Text_GymStatue": ("SERTAO DE DENTRO",),
-    "LavaridgeTown_Gym_1F_Text_GymStatueCertified": ("FLANNERY",),
+    "LavaridgeTown_Gym_1F_Text_GymStatueCertified": ("NARA",),
 }
 
 CRITICAL_TOKENS = {

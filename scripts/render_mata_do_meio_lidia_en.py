@@ -111,7 +111,7 @@ CITY_TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
 
 GYM_TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
     "FortreeCity_Gym_Text_GymGuideAdvice": (
-        ("MATA DO MEIO GYM LEADER WINONA",),
+        ("MATA DO MEIO GYM LEADER LIDIA",),
         (
             "Welcome to LIDIA's challenge!\\p",
             "FLYING POKéMON read wind well.\\p",
@@ -153,19 +153,19 @@ GYM_TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         ("A familiar route can still fail.\\p", "Adapt without erasing it.$"),
     ),
     "FortreeCity_Gym_Text_FlintIntro": (
-        ("WINONA", "LEADER,"),
+        ("LIDIA", "LEADER,"),
         ("LIDIA taught us to watch first.\\p", "Then decide what a change means.$"),
     ),
     "FortreeCity_Gym_Text_FlintDefeat": (
-        ("WINONA", "I lost"),
+        ("LIDIA", "I lost"),
         ("LIDIA... I lost.$",),
     ),
     "FortreeCity_Gym_Text_FlintPostBattle": (
-        ("WINONA is cute",),
+        ("LIDIA is cute",),
         ("LIDIA never guesses too early.\\p", "That's harder than it sounds.$"),
     ),
     "FortreeCity_Gym_Text_AshleyIntro": (
-        ("WINONA taught me",),
+        ("LIDIA taught me",),
         ("LIDIA taught me personally.\\p", "I won't waste that lesson.$"),
     ),
     "FortreeCity_Gym_Text_AshleyDefeat": (
@@ -173,11 +173,11 @@ GYM_TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         ("You found the opening.$",),
     ),
     "FortreeCity_Gym_Text_AshleyPostBattle": (
-        ("WINONA", "MATA DO MEIO"),
+        ("LIDIA", "MATA DO MEIO"),
         ("MATA DO MEIO trusts LIDIA\\n", "because she listens first.$"),
     ),
     "FortreeCity_Gym_Text_HumbertoIntro": (
-        ("WINONA takes to battle",),
+        ("LIDIA takes to battle",),
         ("Balance matters more than speed.\\p", "Reach LIDIA and prove it.$"),
     ),
     "FortreeCity_Gym_Text_HumbertoDefeat": (
@@ -185,7 +185,7 @@ GYM_TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         ("I couldn't hold the line.$",),
     ),
     "FortreeCity_Gym_Text_HumbertoPostBattle": (
-        ("staring at WINONA",),
+        ("staring at LIDIA",),
         ("Watch the gates, not the height.\\p", "The floor teaches too.$"),
     ),
     "FortreeCity_Gym_Text_DariusIntro": (
@@ -197,7 +197,7 @@ GYM_TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         ("You read that well.$",),
     ),
     "FortreeCity_Gym_Text_DariusPostBattle": (
-        ("WINONA's POKéMON",),
+        ("LIDIA's POKéMON",),
         ("LIDIA watches how you adapt.\\p", "She notices hesitation.$"),
     ),
     "FortreeCity_Gym_Text_WinonaIntro": (
@@ -233,7 +233,7 @@ GYM_TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         ("TM40 contains AERIAL ACE.\\p", "It strikes before foes can move.$"),
     ),
     "FortreeCity_Gym_Text_RegisteredWinona": (
-        ("GYM LEADER WINONA", "POKéNAV"),
+        ("GYM LEADER LIDIA", "POKéNAV"),
         ("Registered GYM LEADER LIDIA\\n", "in the POKéNAV.$"),
     ),
     "FortreeCity_Gym_Text_WinonaPostBattle": (
@@ -245,7 +245,7 @@ GYM_TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         ("MATA DO MEIO POKéMON GYM$",),
     ),
     "FortreeCity_Gym_Text_GymStatueCertified": (
-        ("MATA DO MEIO POKéMON GYM", "WINONA'S CERTIFIED TRAINERS"),
+        ("MATA DO MEIO POKéMON GYM", "LIDIA'S CERTIFIED TRAINERS"),
         (
             "MATA DO MEIO POKéMON GYM\\p",
             "LIDIA'S CERTIFIED TRAINERS:\\n",

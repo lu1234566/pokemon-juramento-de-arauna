@@ -208,7 +208,7 @@ RustboroCity_DevonCorp_3F_Text_MrStoneIHaveFavor:
 	.string "Well, on the way, could you stop off in\n"
 	.string "PORTO DAS REDES?\p"
 	.string "I was hoping that you'd deliver a\n"
-	.string "LETTER to STEVEN in PORTO DAS REDES.$"
+	.string "LETTER to BENTO in PORTO DAS REDES.$"
 
 RustboroCity_DevonCorp_3F_Text_MrStoneWantYouToHaveThis:
 	.string "MR. STONE: Now, you should know that\n"

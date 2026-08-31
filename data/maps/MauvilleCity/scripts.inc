@@ -469,7 +469,7 @@ MauvilleCity_Text_WallyWantToChallengeGym:
 	.string "proprio ritmo.$"
 
 MauvilleCity_Text_UncleYourePushingIt:
-	.string "UNCLE: Now hold on, WALLY.\p"
+	.string "UNCLE: Now hold on, VAL.\p"
 	.string "Since you started living with POKéMON,\n"
 	.string "you have grown quite a lot stronger.\p"
 	.string "But don't you think you're pushing it\n"
@@ -518,7 +518,7 @@ MauvilleCity_Text_ThankYouNotEnoughToBattle:
 	.string "being a real TRAINER is about.$"
 
 MauvilleCity_Text_UncleNoNeedToBeDown:
-	.string "UNCLE: WALLY, there's no need to be so\n"
+	.string "UNCLE: VAL, there's no need to be so\n"
 	.string "down on yourself.\p"
 	.string "Why, what's keeping you from becoming\n"
 	.string "stronger and stronger?\p"
@@ -528,11 +528,11 @@ MauvilleCity_Text_UncleNoNeedToBeDown:
 MauvilleCity_Text_UncleVisitUsSometime:
 	.string "UNCLE: {PLAYER}{KUN}, it just dawned on me\n"
 	.string "that you must be the TRAINER who kept\l"
-	.string "an eye out for WALLY when he caught his\l"
+	.string "an eye out for VAL when he caught his\l"
 	.string "POKéMON.\p"
 	.string "Why don't you visit us in\n"
 	.string "VALE DO SILENCIO sometime? I'm sure\l"
-	.string "WALLY would enjoy it.$"
+	.string "VAL would enjoy it.$"
 
 
 MauvilleCity_Text_WallyPokenavCall:
@@ -540,13 +540,13 @@ MauvilleCity_Text_WallyPokenavCall:
 	.string "esquecer o medo; e caminhar\nmesmo lembrando dele.$"
 
 MauvilleCity_Text_RegisteredWally:
-	.string "Registered WALLY\n"
+	.string "Registered VAL\n"
 	.string "in the POKéNAV.$"
 
 MauvilleCity_Text_ScottYouDidntHoldBack:
 	.string "SCOTT: Hehe…\n"
 	.string "I was watching that match!\p"
-	.string "You're friends with that boy WALLY,\n"
+	.string "You're friends with that boy VAL,\n"
 	.string "aren't you?\p"
 	.string "But you didn't hold anything back\n"
 	.string "and beat him impressively.\p"
@@ -565,7 +565,7 @@ MauvilleCity_Text_WattsonWontBeChallenge:
 	.string "toda fonte de energia deva ser\naceita.$"
 
 MauvilleCity_Text_WattsonThanksTakeTM:
-	.string "WATTSON: Wahahahaha!\p"
+	.string "OLIVIA: Wahahahaha!\p"
 	.string "I knew it, {PLAYER}{KUN}! I knew I'd made\n"
 	.string "the right choice asking you!\p"
 	.string "This is my thanks--a TM containing\n"

@@ -246,7 +246,7 @@ CITY_TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         ),
     ),
     "SootopolisCity_Text_LeadSuperiorTrainerToCave": (
-        ("superior talent", "WALLACE"),
+        ("superior talent", "AMALIA"),
         (
             "GUARDIA: SEU BENTO pediu que\\n",
             "eu deixasse voce passar.\\p",
@@ -283,7 +283,7 @@ CITY_TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         ),
     ),
     "SootopolisCity_Text_AquaMagmaDidntMeanHarm": (
-        ("WALLACE", "LEMBRANTES and AQUA"),
+        ("AMALIA", "LEMBRANTES and AQUA"),
         (
             "AMALIA: LUZIA e OTACILIO\\n",
             "precisam responder pelo que\\n",

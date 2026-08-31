@@ -192,7 +192,7 @@ TARGETS: dict[str, tuple[str, ...]] = {
 }
 
 SOURCE_MARKERS = (
-    "DAD:", "VAL:", "ELIAS:", "WALLY", "PAMPA DA ESPERA", "NORMAN",
+    "DAD:", "VAL:", "ELIAS:", "VAL", "PAMPA DA ESPERA", "ELIAS",
     "INSÍGNIA", "{PLAYER}", "GYM", "TRAINER", "BADGES",
 )
 
