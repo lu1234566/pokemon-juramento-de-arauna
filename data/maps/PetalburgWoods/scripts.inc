@@ -326,12 +326,12 @@ PetalburgWoods_Text_HaveYouSeenShroomish:
 
 PetalburgWoods_Text_IWasGoingToAmbushYou:
 	.string "I was going to ambush you, but you\n"
-	.string "had to dawdle in PAMPA DA ESPERA WOODS\l"
+	.string "had to dawdle in MATA DA ESPERA\l"
 	.string "forever, didn't you?\p"
 	.string "I got sick of waiting, so here I am!$"
 
 PetalburgWoods_Text_HandOverThosePapers:
-	.string "You! DEVON RESEARCHER!\p"
+	.string "You! HORIZONTE RESEARCHER!\p"
 	.string "Hand over those papers!$"
 
 PetalburgWoods_Text_YouHaveToHelpMe:

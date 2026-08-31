@@ -34,10 +34,25 @@ VANILLA = "c210195e"
 STRING = re.compile(r'\.string "((?:[^"\\]|\\.)*)"')
 
 
+# A description in the bag is drawn in a much narrower window than a message
+# box, so it gets its own ceiling measured from its own file. The literals are
+# adjacent strings the compiler joins, not one _("").
+DESCRIPTIONS = ["src/data/text/item_descriptions.h"]
+DESCRIPTION_BLOCK = re.compile(r'_\(\n((?:\s*"(?:[^"\\]|\\.)*"\n?)+)\);')
+
+
 def scripts() -> list[str]:
     return [f for f in subprocess.run(["git", "ls-files", "data"], cwd=ROOT,
                                       capture_output=True, text=True,
                                       check=True).stdout.split() if f.endswith(".inc")]
+
+
+def described(ruler: Ruler, text: str):
+    for block in DESCRIPTION_BLOCK.finditer(text):
+        for literal in re.findall(r'"((?:[^"\\]|\\.)*)"', block.group(1)):
+            for line in ruler.lines(literal):
+                if line and "{" not in line:
+                    yield ruler.width(line), line
 
 
 def measure(ruler: Ruler, text: str):
@@ -72,6 +87,15 @@ def main() -> int:
             if width > ceiling:
                 over.append((width, name, line))
     over.sort(reverse=True)
+
+    for name in DESCRIPTIONS:
+        original = subprocess.run(["git", "show", f"{VANILLA}:{name}"], cwd=ROOT,
+                                  capture_output=True, text=True).stdout
+        cap = max(width for width, _ in described(ruler, original))
+        for width, line in described(ruler, (ROOT / name).read_text(encoding="utf-8")):
+            if width > cap:
+                over.append((width, name, line))
+        print(f"widest {Path(name).name} line vanilla renders: {cap}px")
 
     print(f"widest line vanilla renders: {ceiling}px  \"{widest}\"")
     if args.ceiling:

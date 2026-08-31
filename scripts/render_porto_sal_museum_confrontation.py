@@ -98,7 +98,7 @@ TARGETS: dict[str, tuple[str, ...]] = {
     ),
 }
 
-ITEM_NAME_OLD = '.name = _("DEVON GOODS"),'
+ITEM_NAME_OLD = '.name = _("ENCOMENDA"),'
 ITEM_NAME_NEW = '.name = _("PECAS OCEAN."),'
 ITEM_DESC_RE = re.compile(
     r'(?ms)^static const u8 sDevonGoodsDesc\[\] = _\(\n(?P<body>.*?^\s*"[^"\n]*"\);)'
@@ -173,7 +173,7 @@ def render_museum(source: str) -> str:
 def render_items(source: str) -> str:
     count = source.count(ITEM_NAME_OLD)
     if count != 1:
-        raise ValueError(f"expected one DEVON GOODS item-name anchor, found {count}")
+        raise ValueError(f"expected one ENCOMENDA item-name anchor, found {count}")
     rendered = source.replace(ITEM_NAME_OLD, ITEM_NAME_NEW, 1)
     if ITEM_NAME_OLD in rendered or ITEM_NAME_NEW not in rendered:
         raise ValueError("Devon Goods visible-name rendering failed")
@@ -185,12 +185,12 @@ def render_item_descs(source: str) -> str:
     if len(matches) != 1:
         raise ValueError(f"expected one sDevonGoodsDesc block, found {len(matches)}")
     body = matches[0].group("body")
-    for marker in ("DEVON's", "machine parts"):
+    for marker in ("HORIZONTE's", "machine parts"):
         if marker not in body:
             raise ValueError(f"Devon Goods description marker missing: {marker!r}")
     start, end = matches[0].span()
     rendered = source[:start] + ITEM_DESC_NEW + source[end:]
-    if "DEVON's" in rendered[start:start + 180]:
+    if "HORIZONTE's" in rendered[start:start + 180]:
         raise ValueError("legacy Devon Goods description survived")
     return rendered
 

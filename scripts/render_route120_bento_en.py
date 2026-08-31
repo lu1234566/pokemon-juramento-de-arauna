@@ -77,7 +77,7 @@ TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
 
 CONTROL_RE = re.compile(r"\\[npl]")
 PLACEHOLDER_RE = re.compile(r"\{[^}]+\}")
-ITEM_NAME_OLD = '.name = _("DEVON SCOPE"),'
+ITEM_NAME_OLD = '.name = _("VISOR VERDADE"),'
 ITEM_NAME_NEW = '.name = _("FIELD SCOPE"),'
 ITEM_DESC_RE = re.compile(
     r'(?ms)^static const u8 sDevonScopeDesc\[\] = _\(\n'
@@ -133,7 +133,7 @@ def render_map(source: str) -> str:
 def render_items(source: str) -> str:
     count = source.count(ITEM_NAME_OLD)
     if count != 1:
-        raise ValueError(f"expected one DEVON SCOPE item name, found {count}")
+        raise ValueError(f"expected one VISOR VERDADE item name, found {count}")
     return source.replace(ITEM_NAME_OLD, ITEM_NAME_NEW, 1)
 
 
@@ -170,7 +170,7 @@ def validate_rendered(map_text: str, items: str, descs: str) -> None:
 
     if ITEM_NAME_NEW not in items or ITEM_NAME_OLD in items:
         raise ValueError("FIELD SCOPE item-name surface was not rendered correctly")
-    if "A field device that" not in descs or "A device by DEVON" in descs:
+    if "A field device that" not in descs or "A device by HORIZONTE" in descs:
         raise ValueError("FIELD SCOPE item description was not rendered correctly")
 
     preserved = (

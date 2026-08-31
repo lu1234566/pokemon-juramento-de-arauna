@@ -458,7 +458,7 @@
     },
     {
       "id": "MAPSEC_SAFARI_ZONE",
-      "name": "SAFARI ZONE",
+      "name": "RESERVA ARAUNA",
       "x": 16,
       "y": 2,
       "width": 1,
@@ -474,7 +474,7 @@
     },
     {
       "id": "MAPSEC_PETALBURG_WOODS",
-      "name": "PETALBURG WOODS",
+      "name": "MATA DA ESPERA",
       "x": 0,
       "y": 8,
       "width": 1,
@@ -490,7 +490,7 @@
     },
     {
       "id": "MAPSEC_ABANDONED_SHIP",
-      "name": "ABANDONED SHIP",
+      "name": "NAVIO PERDIDO",
       "x": 6,
       "y": 14,
       "width": 1,
@@ -498,7 +498,7 @@
     },
     {
       "id": "MAPSEC_NEW_MAUVILLE",
-      "name": "NEW MAUVILLE",
+      "name": "USINA VELHA",
       "x": 8,
       "y": 7,
       "width": 1,
@@ -539,7 +539,7 @@
     },
     {
       "id": "MAPSEC_SHOAL_CAVE",
-      "name": "SHOAL CAVE",
+      "name": "GRUTA DA MARE",
       "x": 24,
       "y": 4,
       "width": 1,
@@ -571,7 +571,7 @@
     },
     {
       "id": "MAPSEC_MIRAGE_ISLAND",
-      "name": "MIRAGE ISLAND",
+      "name": "ILHA MIRAGEM",
       "x": 17,
       "y": 10,
       "width": 1,
@@ -579,7 +579,7 @@
     },
     {
       "id": "MAPSEC_CAVE_OF_ORIGIN",
-      "name": "CAVE OF ORIGIN",
+      "name": "GRUTA DA ORIGEM",
       "x": 21,
       "y": 7,
       "width": 1,
@@ -587,7 +587,7 @@
     },
     {
       "id": "MAPSEC_SOUTHERN_ISLAND",
-      "name": "SOUTHERN ISLAND",
+      "name": "ILHA DO SUL",
       "x": 12,
       "y": 14,
       "width": 1,
@@ -595,7 +595,7 @@
     },
     {
       "id": "MAPSEC_FIERY_PATH",
-      "name": "FIERY PATH",
+      "name": "TRILHA DE BRASA",
       "x": 6,
       "y": 3,
       "width": 1,
@@ -603,7 +603,7 @@
     },
     {
       "id": "MAPSEC_FIERY_PATH2",
-      "name": "FIERY PATH",
+      "name": "TRILHA DE BRASA",
       "x": 7,
       "y": 3,
       "width": 1,
@@ -611,7 +611,7 @@
     },
     {
       "id": "MAPSEC_JAGGED_PASS",
-      "name": "JAGGED PASS",
+      "name": "PASSO CORTADO",
       "x": 6,
       "y": 3,
       "width": 1,
@@ -619,7 +619,7 @@
     },
     {
       "id": "MAPSEC_JAGGED_PASS2",
-      "name": "JAGGED PASS",
+      "name": "PASSO CORTADO",
       "x": 7,
       "y": 2,
       "width": 1,
@@ -627,7 +627,7 @@
     },
     {
       "id": "MAPSEC_SEALED_CHAMBER",
-      "name": "SEALED CHAMBER",
+      "name": "CAMARA SELADA",
       "x": 11,
       "y": 10,
       "width": 1,
@@ -643,7 +643,7 @@
     },
     {
       "id": "MAPSEC_SCORCHED_SLAB",
-      "name": "SCORCHED SLAB",
+      "name": "LAJE QUEIMADA",
       "x": 13,
       "y": 0,
       "width": 1,
@@ -651,7 +651,7 @@
     },
     {
       "id": "MAPSEC_ISLAND_CAVE",
-      "name": "ISLAND CAVE",
+      "name": "GRUTA DA ILHA",
       "x": 0,
       "y": 10,
       "width": 1,
@@ -659,7 +659,7 @@
     },
     {
       "id": "MAPSEC_DESERT_RUINS",
-      "name": "DESERT RUINS",
+      "name": "RUINAS DA AREIA",
       "x": 8,
       "y": 3,
       "width": 1,
@@ -667,7 +667,7 @@
     },
     {
       "id": "MAPSEC_ANCIENT_TOMB",
-      "name": "ANCIENT TOMB",
+      "name": "TUMBA ANTIGA",
       "x": 13,
       "y": 2,
       "width": 1,
@@ -1153,7 +1153,7 @@
     },
     {
       "id": "MAPSEC_MIRAGE_TOWER",
-      "name": "MIRAGE TOWER",
+      "name": "TORRE MIRAGEM",
       "x": 8,
       "y": 2,
       "width": 1,
@@ -1169,7 +1169,7 @@
     },
     {
       "id": "MAPSEC_ARTISAN_CAVE",
-      "name": "ARTISAN CAVE",
+      "name": "GRUTA DO OFICIO",
       "x": 22,
       "y": 12,
       "width": 1,
@@ -1177,7 +1177,7 @@
     },
     {
       "id": "MAPSEC_MARINE_CAVE",
-      "name": "MARINE CAVE"
+      "name": "GRUTA DAS MARES"
     },
     {
       "id": "MAPSEC_UNDERWATER_MARINE_CAVE",
@@ -1185,7 +1185,7 @@
     },
     {
       "id": "MAPSEC_TERRA_CAVE",
-      "name": "TERRA CAVE"
+      "name": "GRUTA DA TERRA"
     },
     {
       "id": "MAPSEC_UNDERWATER_105",
@@ -1213,7 +1213,7 @@
     },
     {
       "id": "MAPSEC_DESERT_UNDERPASS",
-      "name": "DESERT UNDERPASS",
+      "name": "PASSAGEM SECA",
       "x": 2,
       "y": 0,
       "width": 1,

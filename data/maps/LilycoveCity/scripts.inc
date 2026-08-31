@@ -645,7 +645,7 @@ LilycoveCity_Text_MuseumSignPlayersExhibit:
 
 LilycoveCity_Text_HarborSignUnderConstruction:
 	.string "BAIA DAS LUZES HARBOR\p"
-	.string "“The ferry S.S. TIDAL is under\n"
+	.string "“The ferry MARE ALTA is under\n"
 	.string "construction in PORTO DO SAL.\p"
 	.string "“Service is scheduled to begin\n"
 	.string "shortly.”$"
@@ -653,7 +653,7 @@ LilycoveCity_Text_HarborSignUnderConstruction:
 LilycoveCity_Text_HarborSign:
 	.string "BAIA DAS LUZES HARBOR\p"
 	.string "“Enjoy a delightful cruise on\n"
-	.string "the ferry S.S. TIDAL.”$"
+	.string "the ferry MARE ALTA.”$"
 
 LilycoveCity_Text_TrainerFanClubSign:
 	.string "POKéMON TRAINER FAN CLUB\p"

@@ -77,14 +77,14 @@ CITY_TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         ("Something unseen blocks the way.$",),
     ),
     "FortreeCity_Text_UnseeableUseDevonScope": (
-        ("DEVON SCOPE",),
+        ("VISOR VERDADE",),
         (
             "Something unseen blocks the way.\\p",
             "Use the FIELD SCOPE?$",
         ),
     ),
     "FortreeCity_Text_UsedDevonScopePokemonFled": (
-        ("used the DEVON SCOPE",),
+        ("used the VISOR VERDADE",),
         (
             "{PLAYER} used the FIELD SCOPE.\\p",
             "An unseen POKéMON appeared!\\p",

@@ -265,7 +265,7 @@ CITY_TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         ),
     ),
     "SootopolisCity_Text_CaveOfOriginSleepsToo": (
-        ("CAVE OF ORIGIN", "cave, too, shall sleep"),
+        ("GRUTA DA ORIGEM", "cave, too, shall sleep"),
         (
             "GUARDIA: O nucleo voltou a\\n",
             "silenciar.\\p",

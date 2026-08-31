@@ -382,7 +382,7 @@ Route116_Text_GoonHightailedItOutOfTunnel:
 Route116_Text_ThankYouTokenOfAppreciation:
 	.string "Oh! It's you!\p"
 	.string "You're that person who not only helped\n"
-	.string "me in PAMPA DA ESPERA WOODS, but also\l"
+	.string "me in MATA DA ESPERA, but also\l"
 	.string "got back my stolen package and then\l"
 	.string "even graciously delivered it to\l"
 	.string "PORTO DO SAL!\p"

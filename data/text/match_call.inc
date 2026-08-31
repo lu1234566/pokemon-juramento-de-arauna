@@ -747,13 +747,13 @@ MatchCall_PersonalizedText10::
 MatchCall_PersonalizedText11::
 	.string "It's {STR_VAR_1}!\n"
 	.string "Will you listen to this?\p"
-	.string "I like the SAFARI ZONE a lot,\n"
+	.string "I like the RESERVA ARAUNA a lot,\n"
 	.string "but whenever I go, I get lost!\p"
 	.string "All that tall grass!\n"
 	.string "And it's much too spread out!\p"
 	.string "I feel better getting that off\n"
 	.string "my chest!\p"
-	.string "I'm off to the SAFARI ZONE again!\n"
+	.string "I'm off to the RESERVA ARAUNA again!\n"
 	.string "Catch you!$"
 
 MatchCall_PersonalizedText12::
@@ -783,7 +783,7 @@ MatchCall_PersonalizedText13::
 MatchCall_PersonalizedText14::
 	.string "Oh, it's {STR_VAR_1}!\p"
 	.string "I was just thinking I'm getting\n"
-	.string "bored of the ABANDONED SHIP.\p"
+	.string "bored of the NAVIO PERDIDO.\p"
 	.string "But since I'm already here,\n"
 	.string "and I want to beat you once,\l"
 	.string "I'll be sticking around a bit more.\p"
@@ -1102,7 +1102,7 @@ MatchCall_PersonalizedText39::
 	.string "I just put on some suntan oil.\p"
 	.string "So my POKéNAV went whoopsy\n"
 	.string "out of my hand into the water!\p"
-	.string "But, boy, DEVON's POKéNAV is built\n"
+	.string "But, boy, HORIZONTE's POKéNAV is built\n"
 	.string "tough. It survived that dunking!\p"
 	.string "Anyways, I'm busy sunbathing,\n"
 	.string "so let's chat another time.$"
@@ -2532,7 +2532,7 @@ MatchCall_Text_Brendan9::
 	.string "CIRO: Hey there, {PLAYER}.\p"
 	.string "I was on my way back to the hot\n"
 	.string "spring in SERTAO DE DENTRO.\p"
-	.string "But around JAGGED PASS, I ran into\n"
+	.string "But around PASSO CORTADO, I ran into\n"
 	.string "some nasty-looking characters.\p"
 	.string "Those creeps…\n"
 	.string "I think they were TEAM MAGMA.$"
@@ -2880,7 +2880,7 @@ MatchCall_Text_MrStone3::
 
 MatchCall_Text_MrStone4::
 	.string "MR. STONE: Oh! {PLAYER}{KUN}!\p"
-	.string "Did you know that DEVON was\n"
+	.string "Did you know that HORIZONTE was\n"
 	.string "digging the GALERIAS DA SERRA?\p"
 	.string "But we shut down the operation to\n"
 	.string "protect the POKéMON in the area.\p"
@@ -2906,7 +2906,7 @@ MatchCall_Text_MrStone6::
 
 MatchCall_Text_MrStone7::
 	.string "Hello!\n"
-	.string "This is DEVON CORPORATI…\l"
+	.string "This is HORIZONTE CORPORATI…\l"
 	.string "Oh, hello, {PLAYER}!\p"
 	.string "Our PRESIDENT was here a little\n"
 	.string "while ago, but he's gone out.\p"
@@ -2942,5 +2942,5 @@ MatchCall_Text_MrStone11::
 	.string "Is this maybe {PLAYER}{KUN}?\p"
 	.string "Your voice is so full of confidence,\n"
 	.string "I didn't recognize you right off!\p"
-	.string "Hm! You must come visit us at DEVON\n"
+	.string "Hm! You must come visit us at HORIZONTE\n"
 	.string "sometime!$"

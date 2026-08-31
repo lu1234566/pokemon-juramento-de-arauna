@@ -43,7 +43,7 @@ TARGETS_1F: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         "Com a experiencia dele, o BARCO\\n",
         "DE LINHA esta tomando forma.$",
     )),
-    "SlateportCity_SternsShipyard_1F_Text_FerryIsReady": (("S.S. TIDAL",), (
+    "SlateportCity_SternsShipyard_1F_Text_FerryIsReady": (("MARE ALTA",), (
         "MESTRE: O BARCO DE LINHA ficou\\n",
         "pronto!\\p",
         "E o melhor projeto que fizemos.\\p",

@@ -35,7 +35,7 @@ TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         ),
     ),
     "Route121_Text_SafariZoneSign": (
-        ("rare POKéMON", "SAFARI ZONE"),
+        ("rare POKéMON", "RESERVA ARAUNA"),
         (
             "ARAUNA WILDLIFE PRESERVE\\n",
             "Observe. Do not disturb.$",

@@ -30,7 +30,7 @@ FortreeCity_PokemonCenter_1F_EventScript_Boy::
 FortreeCity_PokemonCenter_1F_Text_GoToSafariZone:
 	.string "Ei, voce esta montando uma\n"
 	.string "POKéDEX?\p"
-	.string "Entao visite a SAFARI ZONE.\n"
+	.string "Entao visite a RESERVA ARAUNA.\n"
 	.string "Pode encontrar coisas novas la.$"
 
 FortreeCity_PokemonCenter_1F_Text_RecordCornerIsNeat:

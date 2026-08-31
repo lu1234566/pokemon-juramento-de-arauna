@@ -22,14 +22,14 @@ TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         "PROCURA-SE: marinheiro veterano\\n",
         "que conheca todas as correntes.$",
     )),
-    "SlateportCity_Text_SternsShipyardNearsCompletion": (("S.S. TIDAL", "PORTO DO SAL", "BAIA DAS LUZES"), (
+    "SlateportCity_Text_SternsShipyardNearsCompletion": (("MARE ALTA", "PORTO DO SAL", "BAIA DAS LUZES"), (
         "ESTALEIRO DE PORTO DO SAL\\p",
         "O BARCO DE LINHA esta na fase\\n",
         "final de construcao.\\p",
         "Rota prevista: PORTO DO SAL -\\n",
         "BAIA DAS LUZES.$",
     )),
-    "SlateportCity_Text_SternsShipyardFerryComplete": (("PORTO DO SAL-BAIA DAS LUZES", "S.S. TIDAL"), (
+    "SlateportCity_Text_SternsShipyardFerryComplete": (("PORTO DO SAL-BAIA DAS LUZES", "MARE ALTA"), (
         "ESTALEIRO DE PORTO DO SAL\\p",
         "BARCO DE LINHA concluido.\\p",
         "Embarque e horarios no PORTO.$",
@@ -54,13 +54,13 @@ TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         "Produtos de toda Arauna chegam\\n",
         "aqui pelo mar.$",
     )),
-    "SlateportCity_Text_HarborFerryUnderConstruction": (("PORTO DO SAL HARBOR", "S.S. TIDAL"), (
+    "SlateportCity_Text_HarborFerryUnderConstruction": (("PORTO DO SAL HARBOR", "MARE ALTA"), (
         "PORTO DO SAL - CAIS\\p",
         "BARCO DE LINHA em construcao no\\n",
         "ESTALEIRO.\\p",
         "O servico comeca em breve.$",
     )),
-    "SlateportCity_Text_HarborSign": (("PORTO DO SAL HARBOR", "S.S. TIDAL"), (
+    "SlateportCity_Text_HarborSign": (("PORTO DO SAL HARBOR", "MARE ALTA"), (
         "PORTO DO SAL - CAIS\\p",
         "Embarque no BARCO DE LINHA para\\n",
         "as rotas costeiras.$",

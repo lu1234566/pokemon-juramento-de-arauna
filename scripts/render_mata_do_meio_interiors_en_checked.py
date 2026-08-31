@@ -63,7 +63,7 @@ RAW_MARKERS = {
     "FortreeCity_Mart_Text_SuperRepelBetter": ("SUPER REPEL lasts",),
     "FortreeCity_Mart_Text_StockUpOnItems": ("stock up",),
     "FortreeCity_Mart_Text_RareCandyMakesMonGrow": ("RARE CANDY",),
-    "FortreeCity_PokemonCenter_1F_Text_GoToSafariZone": ("Ei, voce", "SAFARI ZONE"),
+    "FortreeCity_PokemonCenter_1F_Text_GoToSafariZone": ("Ei, voce", "RESERVA ARAUNA"),
     "FortreeCity_PokemonCenter_1F_Text_RecordCornerIsNeat": ("Ja usou", "RECORD CORNER"),
     "FortreeCity_PokemonCenter_1F_Text_DoYouKnowAboutPokenav": ("HORIZONTE", "MATCH CALL"),
 }

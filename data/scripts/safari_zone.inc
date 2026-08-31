@@ -96,7 +96,7 @@ SafariZone_Text_PokeblockWasPlaced:
 	.string "on the {POKEBLOCK} FEEDER.$"
 
 Route121_SafariZoneEntrance_Text_WelcomeToSafariZone:
-	.string "Welcome to the SAFARI ZONE!\p"
+	.string "Welcome to the RESERVA ARAUNA!\p"
 	.string "Here, you may witness many kinds of\n"
 	.string "POKéMON rarely seen in ARAUNA.\p"
 	.string "And, you'll see them in their wild,\n"
@@ -105,26 +105,26 @@ Route121_SafariZoneEntrance_Text_WelcomeToSafariZone:
 	.string "gates to POKéMON TRAINERS.\p"
 	.string "You're encouraged to catch POKéMON\n"
 	.string "for keeps!\p"
-	.string "Come in and enjoy the SAFARI ZONE!$"
+	.string "Come in and enjoy the RESERVA ARAUNA!$"
 
 Route121_SafariZoneEntrance_Text_WelcomeFirstTime:
-	.string "Welcome to the SAFARI ZONE!\n"
+	.string "Welcome to the RESERVA ARAUNA!\n"
 	.string "Is it your first time here?$"
 
 Route121_SafariZoneEntrance_Text_ComeInAndEnjoy:
-	.string "Come in and enjoy the SAFARI ZONE!$"
+	.string "Come in and enjoy the RESERVA ARAUNA!$"
 
 Route121_SafariZoneEntrance_Text_FirstTimeInfo:
-	.string "When you enter the SAFARI ZONE, you\n"
+	.string "When you enter the RESERVA ARAUNA, you\n"
 	.string "start with 30 SAFARI BALLS for\l"
 	.string "catching POKéMON.\p"
 	.string "The SAFARI Game is over when you run\n"
 	.string "out of SAFARI BALLS, or when you've\l"
 	.string "walked 500 steps.\p"
-	.string "Come in and enjoy the SAFARI ZONE!$"
+	.string "Come in and enjoy the RESERVA ARAUNA!$"
 
 Route121_SafariZoneEntrance_Text_WouldYouLikeToPlay:
-	.string "Welcome to the SAFARI ZONE!\p"
+	.string "Welcome to the RESERVA ARAUNA!\p"
 	.string "All you can catch for just ¥500!\n"
 	.string "Would you like to play a SAFARI Game?$"
 
@@ -166,7 +166,7 @@ Route121_SafariZoneEntrance_Text_YouNeedPokeblockCase:
 
 SafariZone_South_Text_StillHaveTimeExit:
 	.string "You still have time left. Would you like\n"
-	.string "to exit the SAFARI ZONE now?$"
+	.string "to exit the RESERVA ARAUNA now?$"
 
 SafariZone_South_Text_EnjoyTheRestOfYourAdventure:
 	.string "Please enjoy the rest of your wild\n"
@@ -223,7 +223,7 @@ SafariZone_South_Text_Youngster:
 	.string "without me noticing.$"
 
 Route121_SafariZoneEntrance_Text_TrainerTip:
-	.string "SAFARI ZONE TRAINER TIP!\p"
+	.string "RESERVA ARAUNA TRAINER TIP!\p"
 	.string "Throw {POKEBLOCK}S at wild POKéMON to make\n"
 	.string "them less likely to flee.$"
 
@@ -255,8 +255,8 @@ SafariZone_South_Text_AreaOffLimits1:
 	.string "It's off-limits, sorry!$"
 
 SafariZone_Southeast_Text_ExpansionIsFinished:
-	.string "The SAFARI ZONE's expansion project\n"
-	.string "is finished now.\p"
+	.string "The RESERVA ARAUNA's expansion\n"
+	.string "project is finished now.\p"
 	.string "We hope you will enjoy the new area.$"
 
 SafariZone_South_Text_AreaOffLimits2:

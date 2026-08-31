@@ -442,7 +442,7 @@ RusturfTunnel_Text_GruntTakePackage:
 	.string "The BOSS told me this would be a\n"
 	.string "slick-and-easy job to pull.\p"
 	.string "All I had to do was steal some package\n"
-	.string "from DEVON.\p"
+	.string "from HORIZONTE.\p"
 	.string "Tch!\n"
 	.string "You want it back that badly, take it!$"
 
@@ -461,7 +461,7 @@ RusturfTunnel_Text_ThankYouLetsGoHomePeeko:
 	.string "Now, if there's anything that troubles\n"
 	.string "you, don't hesitate to tell me!\p"
 	.string "You can usually find me in my cottage\n"
-	.string "by the sea near PAMPA DA ESPERA WOODS.\p"
+	.string "by the sea near MATA DA ESPERA.\p"
 	.string "Come, PEEKO, we should make our way\n"
 	.string "home.\p"
 	.string "PEEKO: Pihyoh!$"

@@ -104,8 +104,8 @@ VerdanturfTown_Text_EasyToGetToRustboroNow:
 	.string "That cave next to the POKéMON MART is\n"
 	.string "now a tunnel to the other side.\p"
 	.string "It's great--it's easy to go shop for\n"
-	.string "new DEVON products in SERRA DO UIVO\l"
-	.string "now.$"
+	.string "new HORIZONTE products in\l"
+	.string "SERRA DO UIVO now.$"
 
 VerdanturfTown_Text_TownSign:
 	.string "VALE DO SILENCIO. Familias\ndeslocadas vivem aqui. Muitas\p"

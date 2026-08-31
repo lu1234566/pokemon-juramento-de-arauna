@@ -18,13 +18,22 @@ sit on top, both recorded in the CSV rather than hidden in code:
   * HOENN is the region, which has no map section, and the project already
     calls it ARAUNA in the text it wrote.
 
-Places the project has not renamed are left alone and listed at the end. Naming
-PETALBURG WOODS or SHOAL CAVE is a story decision, not something to infer.
+Anything with a map section is named there and read from there, so the map and
+the dialogue cannot drift apart; EXTRA below is only for named things that have
+no section of their own, like the company and the ferry. What is left in
+UNDECIDED is left on purpose: the BATTLE FRONTIER is already BATTLE CIRCUIT in
+the English renderers and renaming it belongs with them, and the event islands
+are never spoken of.
+
+Generic descriptors are not names and are not touched. UNDERWATER, SECRET BASE
+and INSIDE OF TRUCK stay as they are, the way a real map keeps "Rio de Janeiro"
+and "the harbour" in different languages.
 
 Replacement happens only inside strings the player reads, and CITY and TOWN go
 with the name they belong to: "SLATEPORT CITY" is one place, not a place and a
 word. Lines get longer, so run rewrap_text.py afterwards -- check_text_width.py
-fails loudly if anyone forgets.
+fails loudly if anyone forgets, for the message box and for the much narrower
+description box in the bag.
 
   --check   report what would change
   --write   rewrite the scripts and the CSV
@@ -49,18 +58,43 @@ ROSTER = ROOT / "docs/arauna/ARAUNA_PLACE_NAMES.csv"
 # project's own writing already says something longer, that is the real name.
 PROSE = {"MEMORIAL NOMES": "MEMORIAL DOS NOMES"}
 
-# The region itself has no map section, and the text already calls it ARAUNA.
-EXTRA = {"HOENN": "ARAUNA"}
+# Named things with no map section of their own. Everything that has one is
+# named there instead, so the map and the dialogue cannot drift apart.
+#
+# DEVON is the awkward one. The company was already CONSORCIO HORIZONTE in
+# three lines and DEVON everywhere else; the short form the writing uses for it
+# is HORIZONTE. Its two items cannot carry that -- an item name is thirteen
+# characters -- so they are named for what they are: the package the plot is
+# about, and the lens that shows what is hiding.
+EXTRA = {
+    "HOENN": "ARAUNA",              # the region; the text already says ARAUNA
+    "DEVON GOODS": "ENCOMENDA",
+    "DEVON SCOPE": "VISOR VERDADE",
+    "DEVON CORPORATION": "CONSORCIO HORIZONTE",
+    "DEVON CORP": "CONSORCIO HORIZONTE",
+    "DEVON": "HORIZONTE",
+    "TRICK HOUSE": "CASA DOS TRUQUES",
+    "S.S. TIDAL": "MARE ALTA",      # the vessel; the service is the LINE FERRY
+    "SAFARI ZONE ENTRANCE": "ENTRADA DA RESERVA",
+    # Two half-renames from the pass that named the towns: PETALBURG WOODS and
+    # NEW MAUVILLE had no name of their own then, so only the town inside them
+    # changed and they came out as a town's name with an English word stuck to
+    # it. Now that they are named, these are the forms to repair.
+    "PAMPA DA ESPERA WOODS": "MATA DA ESPERA",
+    "NEW ENCRUZILHADA": "USINA VELHA",
+}
 
 # Hoenn names the project has not decided on. Left alone, and reported.
-UNDECIDED = ["PETALBURG WOODS", "SHOAL CAVE", "NEW MAUVILLE", "TRICK HOUSE",
-             "SAFARI ZONE", "ABANDONED SHIP", "FIERY PATH", "JAGGED PASS",
-             "CAVE OF ORIGIN", "SEALED CHAMBER", "MIRAGE ISLAND",
-             "SOUTHERN ISLAND", "DESERT RUINS", "ISLAND CAVE", "ANCIENT TOMB",
-             "SCORCHED SLAB", "S.S. TIDAL", "DEVON"]
+UNDECIDED = ["BATTLE FRONTIER", "TRAINER HILL", "NAVEL ROCK", "BIRTH ISLAND",
+             "FARAWAY ISLAND", "ALTERING CAVE"]
 
 STRING = re.compile(r'(\.string ")((?:[^"\\]|\\.)*)(")')
 QUOTED = re.compile(r'(_\(")((?:[^"\\]|\\.)*)("\))')
+# A description is written as adjacent literals the compiler joins, so it never
+# sits inside one _(""). Under src/data/text every quoted literal is display
+# text, so there they can all be read as one.
+PROSE_FILES = ("src/data/text/",)
+C_STRING = re.compile(r'(")((?:[^"\\]|\\.)*)(")')
 # An English renderer finds the block it rewrites by searching the base text for
 # a phrase, so a renamed place has to be renamed in its anchors too or the
 # renderer looks for something that no longer exists. Its replacement text needs
@@ -76,6 +110,23 @@ PYTHON_STRING = re.compile(r'(["\'])((?:(?!\1)[^\\]|\\.)*)(\1)')
 # "MT. CHIMNEY" as an anchor too, so this cannot be decided by the text -- only
 # by where it sits. Python's own parser answers that.
 GUARD_NAME = re.compile(r"forbidden|stale|legacy|residue|banned", re.I)
+
+
+def asserts_absence(loop) -> bool:
+    """True for `for token in (...): if token in body: raise`.
+
+    A renderer loops over string lists for two opposite reasons, and the
+    difference is one word. A stale-token loop raises when the token IS still
+    there, so its strings are Hoenn names that must stay Hoenn. A marker loop
+    raises when the phrase is NOT there, so its strings are anchors and have to
+    follow the rename. `in` versus `not in` tells them apart.
+    """
+    import ast
+
+    for node in ast.walk(loop):
+        if isinstance(node, ast.Compare) and node.ops:
+            return isinstance(node.ops[0], ast.In)
+    return False
 
 
 def guarded(body: str) -> list[tuple[int, int, int, int]]:
@@ -102,7 +153,7 @@ def guarded(body: str) -> list[tuple[int, int, int, int]]:
                     holders.append(argument)
             holders += [kw.value for kw in node.keywords
                         if kw.arg and GUARD_NAME.search(kw.arg)]
-        elif isinstance(node, ast.For):
+        elif isinstance(node, ast.For) and asserts_absence(node):
             holders.append(node.iter)
         elif isinstance(node, (ast.Assign, ast.AnnAssign)):
             names = [t for t in (node.targets if isinstance(node, ast.Assign)
@@ -224,6 +275,8 @@ def main() -> int:
         body = path.read_text(encoding="utf-8", errors="replace")
         one = renamer(name)
         updated = QUOTED.sub(one, STRING.sub(one, body))
+        if name.startswith(PROSE_FILES):
+            updated = C_STRING.sub(one, updated)
         if updated != body:
             changed.append((path, updated))
 

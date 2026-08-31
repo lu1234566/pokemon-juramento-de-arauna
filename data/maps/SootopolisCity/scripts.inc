@@ -1520,7 +1520,7 @@ SootopolisCity_Text_AwakenedPokemonClash:
 	.string "of a third POKéMON…$"
 
 SootopolisCity_Text_CaveOfOriginSleepsToo:
-	.string "This is the CAVE OF ORIGIN…\p"
+	.string "This is the GRUTA DA ORIGEM…\p"
 	.string "With the passing of the crisis,\n"
 	.string "the cave, too, shall sleep…$"
 

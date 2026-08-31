@@ -1198,7 +1198,7 @@ SlateportCity_Text_SternsShipyardWantedSign:
 
 SlateportCity_Text_SternsShipyardNearsCompletion:
 	.string "STERN'S SHIPYARD\p"
-	.string "“The ferry S.S. TIDAL nears\n"
+	.string "“The ferry MARE ALTA nears\n"
 	.string "completion for serving the ports of\l"
 	.string "PORTO DO SAL and BAIA DAS LUZES.”$"
 
@@ -1206,7 +1206,7 @@ SlateportCity_Text_SternsShipyardFerryComplete:
 	.string "STERN'S SHIPYARD\p"
 	.string "“Boarding of the\n"
 	.string "PORTO DO SAL-BAIA DAS LUZES ferry\l"
-	.string "S.S. TIDAL is handled at the HARBOR.”$"
+	.string "MARE ALTA is handled at the HARBOR.”$"
 
 SlateportCity_Text_PokemonFanClubSign:
 	.string "POKéMON FAN CLUB\n"
@@ -1227,7 +1227,7 @@ SlateportCity_Text_MarketSign:
 
 SlateportCity_Text_HarborFerryUnderConstruction:
 	.string "PORTO DO SAL HARBOR\p"
-	.string "“The ferry S.S. TIDAL is under\n"
+	.string "“The ferry MARE ALTA is under\n"
 	.string "construction in the SHIPYARD.\p"
 	.string "“Service is scheduled to begin\n"
 	.string "shortly.”$"
@@ -1235,7 +1235,7 @@ SlateportCity_Text_HarborFerryUnderConstruction:
 SlateportCity_Text_HarborSign:
 	.string "PORTO DO SAL HARBOR\p"
 	.string "“Enjoy a delightful cruise on\n"
-	.string "the ferry S.S. TIDAL.”$"
+	.string "the ferry MARE ALTA.”$"
 
 SlateportCity_Text_NameRatersHouseSign:
 	.string "NAME RATER'S HOUSE\n"

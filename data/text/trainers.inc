@@ -727,7 +727,7 @@ Route108_Text_JeromePostBattle:
 
 Route108_Text_MatthewIntro:
 	.string "Ahoy, there! Are you going out to\n"
-	.string "the ABANDONED SHIP, too?$"
+	.string "the NAVIO PERDIDO, too?$"
 
 Route108_Text_MatthewDefeated:
 	.string "I'm sinking!\n"
@@ -735,7 +735,7 @@ Route108_Text_MatthewDefeated:
 
 Route108_Text_MatthewPostBattle:
 	.string "Some people even go inside that\n"
-	.string "ABANDONED SHIP.$"
+	.string "NAVIO PERDIDO.$"
 
 Route108_Text_TaraIntro:
 	.string "My liar of a boyfriend told me that\n"
@@ -1585,8 +1585,8 @@ Route112_Text_CarolPostBattle:
 	.string "If you have the most fun, you win!$"
 
 Route112_Text_BryantIntro:
-	.string "I caught hot POKéMON in FIERY PATH!\n"
-	.string "Take a look!$"
+	.string "I caught hot POKéMON in\n"
+	.string "TRILHA DE BRASA! Take a look!$"
 
 Route112_Text_BryantDefeat:
 	.string "What a bumpy ride that was!$"
@@ -3646,7 +3646,8 @@ Route124_Text_JennyRematchDefeat:
 
 Route124_Text_JennyPostRematch:
 	.string "This has nothing to do with anything,\n"
-	.string "but maybe I'll visit the TRICK HOUSE.$"
+	.string "but maybe I'll visit the\l"
+	.string "CASA DOS TRUQUES.$"
 
 Route124_Text_GraceIntro:
 	.string "I'm growing bored of swimming…\n"
@@ -3836,7 +3837,7 @@ Route125_Text_ErnestDefeat:
 
 Route125_Text_ErnestPostBattle:
 	.string "The tide ebbs and flows inside the\n"
-	.string "SHOAL CAVE.\p"
+	.string "GRUTA DA MARE.\p"
 	.string "By the way, it's about six hours from\n"
 	.string "high tide to low tide. Did you know?$"
 
@@ -3853,7 +3854,7 @@ Route125_Text_ErnestRematchDefeat:
 	.string "I flat out couldn't win!$"
 
 Route125_Text_ErnestRematchPostBattle:
-	.string "The SHOAL CAVE…\p"
+	.string "The GRUTA DA MARE…\p"
 	.string "There are places you can and can't\n"
 	.string "get to depending on the rise and fall\l"
 	.string "of the tide.\p"
@@ -3862,7 +3863,7 @@ Route125_Text_ErnestRematchPostBattle:
 
 Route125_Text_KimIntro:
 	.string "LIS: A funny old man lives in the\n"
-	.string "SHOAL CAVE. Someone told me.\l"
+	.string "GRUTA DA MARE. Someone told me.\l"
 	.string "Are you going to see him, too?$"
 
 Route125_Text_KimDefeat:
@@ -3870,7 +3871,7 @@ Route125_Text_KimDefeat:
 
 Route125_Text_KimPostBattle:
 	.string "LIS: A funny old man lives in the\n"
-	.string "SHOAL CAVE, doesn't he?\p"
+	.string "GRUTA DA MARE, doesn't he?\p"
 	.string "Let's go see him, IRIS!$"
 
 Route125_Text_KimNotEnoughMons:
@@ -3886,7 +3887,7 @@ Route125_Text_IrisDefeat:
 
 Route125_Text_IrisPostBattle:
 	.string "IRIS: LIS, are we really going into\n"
-	.string "the SHOAL CAVE?\l"
+	.string "the GRUTA DA MARE?\l"
 	.string "We'll get all wet.$"
 
 Route125_Text_IrisNotEnoughMons:

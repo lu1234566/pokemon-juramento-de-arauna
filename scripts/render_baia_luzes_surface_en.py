@@ -212,7 +212,7 @@ TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         ),
     ),
     "LilycoveCity_Text_HarborSign": (
-        ("BAIA DAS LUZES HARBOR", "S.S. TIDAL"),
+        ("BAIA DAS LUZES HARBOR", "MARE ALTA"),
         (
             "BAIA DAS LUZES HARBOR\\p",
             "Passenger ferries depart here.$",

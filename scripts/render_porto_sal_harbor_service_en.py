@@ -104,7 +104,7 @@ base.TARGETS.update({
         ),
     ),
     "SlateportCity_Harbor_Text_FinishedMakingFerry": (
-        ("S.S. TIDAL", "MR. BRINEY"),
+        ("MARE ALTA", "MR. BRINEY"),
         (
             "ENGINEER: {PLAYER}, it's ready!\\p",
             "The LINE FERRY can finally sail.\\p",

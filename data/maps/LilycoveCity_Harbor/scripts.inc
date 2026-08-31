@@ -579,7 +579,7 @@ LilycoveCity_Harbor_Text_SailorFerryUnavailable:
 	.string "at the SHIPYARD in PORTO DO SAL.$"
 
 LilycoveCity_Harbor_Text_SailorFerryAvailable:
-	.string "The ferry S.S. TIDAL is finally in\n"
+	.string "The ferry MARE ALTA is finally in\n"
 	.string "operation.\p"
 	.string "The folks at the SHIPYARD in\n"
 	.string "PORTO DO SAL must've worked extra hard.\p"

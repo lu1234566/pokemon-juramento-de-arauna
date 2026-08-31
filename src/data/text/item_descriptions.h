@@ -25,7 +25,7 @@ static const u8 sPokeBallDesc[] = _(
 static const u8 sSafariBallDesc[] = _(
     "A special BALL that\n"
     "is used only in the\n"
-    "SAFARI ZONE.");
+    "RESERVA ARAUNA.");
 
 static const u8 sNetBallDesc[] = _(
     "A BALL that works\n"
@@ -224,12 +224,12 @@ static const u8 sSacredAshDesc[] = _(
 static const u8 sShoalSaltDesc[] = _(
     "Salt obtained from\n"
     "deep inside the\n"
-    "SHOAL CAVE.");
+    "GRUTA DA MARE.");
 
 static const u8 sShoalShellDesc[] = _(
     "A seashell found\n"
     "deep inside the\n"
-    "SHOAL CAVE.");
+    "GRUTA DA MARE.");
 
 static const u8 sRedShardDesc[] = _(
     "A shard from an\n"
@@ -1018,8 +1018,8 @@ static const u8 sWailmerPailDesc[] = _(
     "and plants.");
 
 static const u8 sDevonGoodsDesc[] = _(
-    "A package that\n"
-    "contains DEVON's\n"
+    "A package of\n"
+    "HORIZONTE's own\n"
     "machine parts.");
 
 static const u8 sSootSackDesc[] = _(
@@ -1028,9 +1028,9 @@ static const u8 sSootSackDesc[] = _(
     "volcanic ash.");
 
 static const u8 sBasementKeyDesc[] = _(
-    "The key for NEW\n"
-    "MAUVILLE beneath\n"
-    "MAUVILLE CITY.");
+    "The key for the\n"
+    "USINA VELHA under\n"
+    "ENCRUZILHADA.");
 
 static const u8 sAcroBikeDesc[] = _(
     "A folding bicycle\n"
@@ -1043,9 +1043,9 @@ static const u8 sPokeblockCaseDesc[] = _(
     "a BERRY BLENDER.");
 
 static const u8 sLetterDesc[] = _(
-    "A letter to STEVEN\n"
-    "from the PRESIDENT\n"
-    "of the DEVON CORP.");
+    "A letter to BENTO\n"
+    "from the HORIZONTE\n"
+    "PRESIDENT.");
 
 static const u8 sEonTicketDesc[] = _(
     "The ticket for a\n"
@@ -1065,7 +1065,7 @@ static const u8 sBlueOrbDesc[] = _(
 static const u8 sScannerDesc[] = _(
     "A device found\n"
     "inside the\n"
-    "ABANDONED SHIP.");
+    "NAVIO PERDIDO.");
 
 static const u8 sGoGogglesDesc[] = _(
     "Nifty goggles that\n"
@@ -1074,32 +1074,32 @@ static const u8 sGoGogglesDesc[] = _(
 
 static const u8 sMeteoriteDesc[] = _(
     "A meteorite found\n"
-    "at METEOR FALLS.");
+    "at RUINAS DA QUEDA.");
 
 static const u8 sRoom1KeyDesc[] = _(
     "A key that opens a\n"
     "door inside the\n"
-    "ABANDONED SHIP.");
+    "NAVIO PERDIDO.");
 
 static const u8 sRoom2KeyDesc[] = _(
     "A key that opens a\n"
     "door inside the\n"
-    "ABANDONED SHIP.");
+    "NAVIO PERDIDO.");
 
 static const u8 sRoom4KeyDesc[] = _(
     "A key that opens a\n"
     "door inside the\n"
-    "ABANDONED SHIP.");
+    "NAVIO PERDIDO.");
 
 static const u8 sRoom6KeyDesc[] = _(
     "A key that opens a\n"
     "door inside the\n"
-    "ABANDONED SHIP.");
+    "NAVIO PERDIDO.");
 
 static const u8 sStorageKeyDesc[] = _(
     "The key to the\n"
     "storage inside the\n"
-    "ABANDONED SHIP.");
+    "NAVIO PERDIDO.");
 
 static const u8 sRootFossilDesc[] = _(
     "A fossil of an\n"
@@ -1112,7 +1112,7 @@ static const u8 sClawFossilDesc[] = _(
     "dwelling POKéMON.");
 
 static const u8 sDevonScopeDesc[] = _(
-    "A device by DEVON\n"
+    "A HORIZONTE device\n"
     "that signals any\n"
     "unseeable POKéMON.");
 

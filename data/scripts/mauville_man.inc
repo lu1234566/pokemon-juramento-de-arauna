@@ -455,15 +455,15 @@ MauvilleCity_PokemonCenter_1F_Text_SafariGamesTitle::
 	.string "The SAFARI-Loving TRAINER$"
 
 MauvilleCity_PokemonCenter_1F_Text_SafariGamesAction::
-	.string "Entered the SAFARI ZONE$"
+	.string "Entered the RESERVA ARAUNA$"
 
 MauvilleCity_PokemonCenter_1F_Text_SafariGamesStory::
-	.string "This is a tale of a TRAINER\n"
-	.string "named {STR_VAR_3}.\p"
-	.string "This TRAINER went into the SAFARI ZONE\n"
-	.string "{STR_VAR_1} times!\p"
+	.string "This is a tale of a TRAINER named\n"
+	.string "{STR_VAR_3}.\p"
+	.string "This TRAINER went into the\n"
+	.string "RESERVA ARAUNA {STR_VAR_1} times!\p"
 	.string "{STR_VAR_3} is a TRAINER whose wild side\n"
-	.string "must come out in the SAFARI ZONE!$"
+	.string "must come out in the RESERVA ARAUNA!$"
 
 MauvilleCity_PokemonCenter_1F_Text_UsedCutTitle::
 	.string "The CUT-Frenzy TRAINER$"

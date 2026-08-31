@@ -108,7 +108,7 @@ TARGETS_2F: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         "Perto da superficie, o vento\\n",
         "empurra grandes fluxos de agua.$",
     )),
-    "SlateportCity_OceanicMuseum_2F_Text_SSTidalReplica": (("S.S. TIDAL", "STERN'S SHIPYARD"), (
+    "SlateportCity_OceanicMuseum_2F_Text_SSTidalReplica": (("MARE ALTA", "STERN'S SHIPYARD"), (
         "REPLICA: BARCO DE LINHA\\p",
         "Modelo do barco construido para\\n",
         "ligar os portos de Arauna.$",
@@ -128,7 +128,7 @@ TARGETS_2F: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         "Modelo de antigo transatlantico\\n",
         "que cruzava oceanos inteiros.$",
     )),
-    "SlateportCity_OceanicMuseum_2F_Text_RemindsMeOfAbandonedShip": (("ABANDONED SHIP", "PORTO DAS REDES"), (
+    "SlateportCity_OceanicMuseum_2F_Text_RemindsMeOfAbandonedShip": (("NAVIO PERDIDO", "PORTO DAS REDES"), (
         "VISITANTE: Esse modelo me lembra\\n",
         "um navio encalhado na costa.$",
     )),

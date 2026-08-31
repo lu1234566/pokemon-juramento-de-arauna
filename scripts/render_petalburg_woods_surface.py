@@ -24,7 +24,7 @@ TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         ),
     ),
     "PetalburgWoods_Text_IWasGoingToAmbushYou": (
-        ("ambush you", "PAMPA DA ESPERA WOODS"),
+        ("ambush you", "MATA DA ESPERA"),
         (
             "I was supposed to wait for you.\\p",
             "You took too long.\\n",
@@ -32,7 +32,7 @@ TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         ),
     ),
     "PetalburgWoods_Text_HandOverThosePapers": (
-        ("DEVON RESEARCHER", "Hand over those papers"),
+        ("HORIZONTE RESEARCHER", "Hand over those papers"),
         ("You. RESEARCHER.\\p", "Hand over the field reports!$"),
     ),
     "PetalburgWoods_Text_YouHaveToHelpMe": (

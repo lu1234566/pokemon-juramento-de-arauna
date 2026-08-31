@@ -438,7 +438,7 @@ SlateportCity_Harbor_Text_SubTooSmallForMe:
 SlateportCity_Harbor_Text_SameThugsTriedToRobAtMuseum:
 	.string "CAPT. STERN: Those thugs…\p"
 	.string "They're the same lot who tried to rob\n"
-	.string "the DEVON GOODS at the MUSEUM.$"
+	.string "the ENCOMENDA at the MUSEUM.$"
 
 SlateportCity_Harbor_Text_ArchieYouAgainHideoutInLilycove:
 	.string "OTACILIO: Eu vi o que uma\nmemoria pode fazer com quem\p"
@@ -468,7 +468,7 @@ SlateportCity_Harbor_Text_WontBeLongBeforeWeFinishFerry:
 SlateportCity_Harbor_Text_FinishedMakingFerry:
 	.string "CAPT. STERN: {PLAYER}{KUN}!\p"
 	.string "We finally finished making the ferry\n"
-	.string "S.S. TIDAL!\p"
+	.string "MARE ALTA!\p"
 	.string "We couldn't have done it without\n"
 	.string "your friend MR. BRINEY.\p"
 	.string "Please go for a short cruise on it!$"

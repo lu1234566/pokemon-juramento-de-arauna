@@ -51,7 +51,7 @@ base.TARGETS_1F.update({
         ),
     ),
     "SlateportCity_SternsShipyard_1F_Text_FerryIsReady": (
-        ("S.S. TIDAL",),
+        ("MARE ALTA",),
         (
             "MASTER: The LINE FERRY is ready!\\p",
             "It's our best design yet.\\p",
