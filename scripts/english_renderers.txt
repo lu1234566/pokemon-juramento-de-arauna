@@ -51,6 +51,7 @@ render_cable_club_en.py
 render_battle_tent_en.py
 render_frontier_lounges_en.py
 render_secret_base_trainers_en.py
+render_move_tutors_en.py
 render_pampa_elias_gym_core_en_checked.py
 render_pampa_gym_rooms_en_checked.py
 render_val_house_en_checked.py
