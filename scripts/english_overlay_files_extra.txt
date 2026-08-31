@@ -61,3 +61,6 @@ data/text/pokemon_news.inc
 data/scripts/safari_zone.inc
 data/text/battle_dome.inc
 data/maps/TrainerHill_Entrance/scripts.inc
+data/maps/Route110_TrickHouseEntrance/scripts.inc
+data/maps/Route110_TrickHouseEnd/scripts.inc
+data/maps/Route110_TrickHousePuzzle5/scripts.inc

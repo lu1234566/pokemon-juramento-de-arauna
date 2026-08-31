@@ -60,6 +60,7 @@ render_battle_dome_board_en.py
 render_battle_dome_battle_room_en.py
 render_exchange_service_corner_en.py
 render_trainer_hill_en.py
+render_trick_house_en.py
 render_pampa_elias_gym_core_en_checked.py
 render_pampa_gym_rooms_en_checked.py
 render_val_house_en_checked.py
