@@ -38,6 +38,7 @@ render_tv_contest_updates_en.py
 render_tv_reporters_en.py
 render_apprentice_en.py
 render_multi_partner_room_en.py
+render_mauville_man_en.py
 render_pampa_elias_gym_core_en_checked.py
 render_pampa_gym_rooms_en_checked.py
 render_val_house_en_checked.py

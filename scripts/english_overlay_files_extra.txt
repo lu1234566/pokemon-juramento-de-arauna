@@ -42,3 +42,4 @@ src/landmark.c
 data/text/trainers.inc
 data/text/apprentice.inc
 data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc
+data/scripts/mauville_man.inc
