@@ -60,3 +60,4 @@ data/scripts/berry_blender.inc
 data/text/pokemon_news.inc
 data/scripts/safari_zone.inc
 data/text/battle_dome.inc
+data/maps/TrainerHill_Entrance/scripts.inc
