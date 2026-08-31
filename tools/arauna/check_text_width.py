@@ -40,6 +40,14 @@ STRING = re.compile(r'\.string "((?:[^"\\]|\\.)*)"')
 DESCRIPTIONS = ["src/data/text/item_descriptions.h"]
 DESCRIPTION_BLOCK = re.compile(r'_\(\n((?:\s*"(?:[^"\\]|\\.)*"\n?)+)\);')
 
+# Files drawn in a window narrower than the message box, which the global
+# ceiling is therefore far too generous for. These are not files that merely
+# happen to have no long line: contest_strings.inc holds 226 measurable lines
+# and not one of them passes 144px, where the next narrowest file in the game
+# reaches 184px and the rest sit at 196-202px. That is a window, not a
+# coincidence, and a line written to the 208px ceiling is cut off inside it.
+NARROW = ["data/text/contest_strings.inc"]
+
 
 def scripts() -> list[str]:
     return [f for f in subprocess.run(["git", "ls-files", "data"], cwd=ROOT,
@@ -82,9 +90,15 @@ def main() -> int:
 
     over = []
     for name in files:
+        cap = ceiling
+        if name in NARROW:
+            original = subprocess.run(["git", "show", f"{VANILLA}:{name}"], cwd=ROOT,
+                                      capture_output=True, text=True).stdout
+            cap = max(width for width, _ in measure(ruler, original))
+            print(f"widest {Path(name).name} line vanilla renders: {cap}px")
         for width, line in measure(ruler, (ROOT / name).read_text(encoding="utf-8",
                                                                   errors="replace")):
-            if width > ceiling:
+            if width > cap:
                 over.append((width, name, line))
     over.sort(reverse=True)
 
