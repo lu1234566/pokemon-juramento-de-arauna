@@ -56,3 +56,4 @@ data/maps/BattleFrontier_Lounge7/scripts.inc
 data/text/secret_base_trainers.inc
 data/text/move_tutors.inc
 data/scripts/lilycove_lady.inc
+data/scripts/berry_blender.inc
