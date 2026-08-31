@@ -64,3 +64,4 @@ data/maps/TrainerHill_Entrance/scripts.inc
 data/maps/Route110_TrickHouseEntrance/scripts.inc
 data/maps/Route110_TrickHouseEnd/scripts.inc
 data/maps/Route110_TrickHousePuzzle5/scripts.inc
+data/text/contest_strings.inc
