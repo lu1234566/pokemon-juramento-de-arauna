@@ -57,3 +57,5 @@ data/text/secret_base_trainers.inc
 data/text/move_tutors.inc
 data/scripts/lilycove_lady.inc
 data/scripts/berry_blender.inc
+data/text/pokemon_news.inc
+data/scripts/safari_zone.inc

@@ -236,9 +236,9 @@ def main() -> int:
     overlays = load_base_overlay_paths(build) | set(read_manifest(EXTRA_OVERLAY_MANIFEST))
 
     # The count is a tripwire against a renderer being dropped, not a ceiling.
-    # It moved to 108 when berry blender was rendered.
-    if len(renderers) != 108:
-        fail(f"expected 108 official English renderers, found {len(renderers)}")
+    # It moved to 110 when reserva arauna was rendered.
+    if len(renderers) != 110:
+        fail(f"expected 110 official English renderers, found {len(renderers)}")
 
     missing_stages: list[str] = []
     for stage, required in STAGES.items():
