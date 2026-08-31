@@ -1,5 +1,11 @@
 # Official English-only renderer order for Pokemon Juramento de Arauna.
 # One renderer per line. Order is significant where surfaces overlap.
+#
+# The last renderer to touch a block wins, and it wins in silence: a renderer
+# whose blocks are claimed further down still passes its own --check and every
+# gate while contributing nothing to the ROM. After adding or reordering an
+# entry, run tools/arauna/audit_renderer_contribution.py, which runs the chain
+# and reports any renderer whose text does not survive it.
 render_shared_trainer_names_en.py
 render_vila_amanhecer_route101_en_checked.py
 render_vila_amanhecer_houses_en_checked.py
