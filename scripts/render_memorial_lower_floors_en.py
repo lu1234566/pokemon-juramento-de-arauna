@@ -37,9 +37,9 @@ FLOOR1_TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         ),
     ),
     "MtPyre_1F_Text_RestingPlaceOfZigzagoon": (
-        ("final resting place", "ZIGZAGOON"),
+        ("final resting place", "Pomba-Gira"),
         (
-            "My ZIGZAGOON's name is here.\\p",
+            "My Pomba-Gira's name is here.\\p",
             "Saying it aloud still hurts.\\p",
             "Not saying it hurts differently.$",
         ),
@@ -48,9 +48,9 @@ FLOOR1_TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
 
 FLOOR2_TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
     "MtPyre_2F_Text_MemoriesOfSkitty": (
-        ("darling SKITTY", "eyes overflow"),
+        ("darling Pombim", "eyes overflow"),
         (
-            "My SKITTY's name is upstairs.\\p",
+            "My Pombim's name is upstairs.\\p",
             "I bring these flowers each year.\\p",
             "They wilt. The name stays.$",
         ),

@@ -45,7 +45,7 @@
     "BattleFrontier_PokemonCenter_1F_Text_NeverSeenPokemon": ["I saw a POKéMON here I'd never\\p", "studied before.\\p", "The CIRCUIT brings TRAINERS from\\p", "all over ARAUNA.$"],
     "BattleFrontier_PokemonCenter_1F_Text_NextStopBattleArena": ["Next stop: BATTLE ARENA.\\p", "I came back to the PC to adjust\\p", "my team first.$"],
     "BattleFrontier_PokemonCenter_1F_Text_GoingThroughEveryChallenge": ["I'm taking this partner through\\p", "every format I can.$"],
-    "BattleFrontier_PokemonCenter_1F_Text_Skitty": ["SKITTY: Mya myaaah!$"]
+    "BattleFrontier_PokemonCenter_1F_Text_Skitty": ["Pombim: Mya myaaah!$"]
   },
   "mart": {
     "BattleFrontier_Mart_Text_ChaperonGrandson": ["We came with our grandson.\\p", "He's here for the challenges.\\p", "We need supplies and maybe\\p", "a souvenir.$"],

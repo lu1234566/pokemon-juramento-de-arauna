@@ -341,7 +341,7 @@ TOWER_TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         ),
     ),
     "SkyPillar_Outside_Text_GotToGoBackForSootopolis": (
-        ("AGUAS DE M'BOI", "RAYQUAZA"),
+        ("AGUAS DE M'BOI", "Curupixel"),
         (
             "AMALIA: Preciso voltar para\\n",
             "AGUAS DE M'BOI.\\p",
@@ -428,8 +428,8 @@ def render_city(source: str) -> str:
 def render_tower(source: str) -> str:
     rendered = render(source, TOWER_TARGETS)
     body = block_pattern("SkyPillar_Outside_Text_GotToGoBackForSootopolis").search(rendered).group("body")
-    if "RAYQUAZA" in body:
-        raise ValueError("visible RAYQUAZA survived tower handoff")
+    if "Curupixel" in body:
+        raise ValueError("visible Curupixel survived tower handoff")
     return rendered
 
 

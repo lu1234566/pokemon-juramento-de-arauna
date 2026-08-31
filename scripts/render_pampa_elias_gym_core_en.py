@@ -43,7 +43,7 @@ TARGETS: dict[str, tuple[str, ...]] = {
     ),
     "PetalburgCity_Gym_Text_IllLoanYouMyZigzagoon": (
         "ELIAS: VAL, borrow my POKéMON.\\p",
-        "VAL received a ZIGZAGOON!$",
+        "VAL received a Pomba-Gira!$",
     ),
     "PetalburgCity_Gym_Text_WallyThankYouAndDadGivesPokeBall": (
         "VAL: Really? Thank you!\\p",
@@ -64,7 +64,7 @@ TARGETS: dict[str, tuple[str, ...]] = {
         "VAL: I caught one myself.\\p",
         "I was scared, but I did it.\\p",
         "Thank you, {PLAYER}.\\n",
-        "I'll return ZIGZAGOON now.$",
+        "I'll return Pomba-Gira now.$",
     ),
     "PetalburgCity_Gym_Text_DadGoCollectBadges": (
         "ELIAS: Now, {PLAYER}...\\p",

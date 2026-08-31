@@ -2,11 +2,11 @@
   "sailor_house": {
     "Route104_MrBrineysHouse_Text_WaitUpPeeko": [
       "VETERAN SAILOR: Easy there!\\n",
-      "Stay close, WINGULL.$"
+      "Stay close, Foliao.$"
     ],
     "Route104_MrBrineysHouse_Text_ItsYouLetsSailToDewford": [
       "VETERAN SAILOR: It's you!\\p",
-      "You brought my WINGULL home.\\p",
+      "You brought my Foliao home.\\p",
       "Need passage across the water?\\p",
       "That LETTER is for SEU BENTO\\n",
       "in PORTO DAS REDES, right?\\p",
@@ -18,7 +18,7 @@
     "Route104_MrBrineysHouse_Text_SetSailForDewford": [
       "VETERAN SAILOR: To\\n",
       "PORTO DAS REDES, then!\\p",
-      "WINGULL, watch the wind.$"
+      "Foliao, watch the wind.$"
     ],
     "Route104_MrBrineysHouse_Text_DeclineDeliverySail": [
       "VETERAN SAILOR: No hurry.\\p",
@@ -49,7 +49,7 @@
       "another crossing.$"
     ],
     "Route104_MrBrineysHouse_Text_Peeko": [
-      "WINGULL: Pii pihyoh!$"
+      "Foliao: Pii pihyoh!$"
     ]
   },
   "town": {
@@ -86,7 +86,7 @@
     "DewfordTown_Text_PetalburgWereSettingSail2": [
       "VETERAN SAILOR: Back toward\\n",
       "PAMPA DA ESPERA, then!\\p",
-      "WINGULL, watch the wind.$"
+      "Foliao, watch the wind.$"
     ],
     "DewfordTown_Text_GoDeliverIllBeWaiting": [
       "VETERAN SAILOR: Find BENTO.\\p",
@@ -103,7 +103,7 @@
     "DewfordTown_Text_PetalburgWereSettingSail": [
       "VETERAN SAILOR: Toward\\n",
       "PAMPA DA ESPERA.\\p",
-      "WINGULL, watch the wind.$"
+      "Foliao, watch the wind.$"
     ],
     "DewfordTown_Text_SlateportWereSettingSail": [
       "VETERAN SAILOR: PORTO DO SAL.\\p",
@@ -238,7 +238,7 @@
     ],
     "Route109_Text_BrineyDewfordItIs": [
       "VETERAN SAILOR: PORTO DAS REDES.\\p",
-      "WINGULL, watch the wind.$"
+      "Foliao, watch the wind.$"
     ],
     "Route109_Text_BrineyDeliverDevonGoods": [
       "VETERAN SAILOR: Deliver the\\n",

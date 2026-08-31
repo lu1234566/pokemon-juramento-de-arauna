@@ -159,4 +159,4 @@ SkyPillar_Outside_Text_GotToGoBackForSootopolis:
 	.string "AMALIA: Eu preciso voltar\n"
 	.string "para AGUAS DE M'BOI.\p"
 	.string "Voce continua subindo.\n"
-	.string "Encontre RAYQUAZA.$"
+	.string "Encontre Curupixel.$"

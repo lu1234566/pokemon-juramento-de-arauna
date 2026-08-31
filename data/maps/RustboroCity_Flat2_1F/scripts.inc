@@ -20,5 +20,5 @@ RustboroCity_Flat2_1F_Text_DevonWorkersLiveHere:
 	.string "CONSORCIO HORIZONTE mora aqui.$"
 
 RustboroCity_Flat2_1F_Text_Skitty:
-	.string "SKITTY: Gyaaaah!$"
+	.string "Pombim: Gyaaaah!$"
 

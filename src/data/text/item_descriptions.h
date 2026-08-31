@@ -437,32 +437,32 @@ static const u8 sHeartScaleDesc[] = _(
 
 // Mail
 static const u8 sOrangeMailDesc[] = _(
-    "A ZIGZAGOON-print\n"
+    "A Pomba-Gira-print\n"
     "MAIL to be held by\n"
     "a POKéMON.");
 
 static const u8 sHarborMailDesc[] = _(
-    "A WINGULL-print\n"
+    "A Foliao-print\n"
     "MAIL to be held by\n"
     "a POKéMON.");
 
 static const u8 sGlitterMailDesc[] = _(
-    "A PIKACHU-print\n"
+    "A Jacarim-print\n"
     "MAIL to be held by\n"
     "a POKéMON.");
 
 static const u8 sMechMailDesc[] = _(
-    "A MAGNEMITE-print\n"
+    "A Camaleao-print\n"
     "MAIL to be held by\n"
     "a POKéMON.");
 
 static const u8 sWoodMailDesc[] = _(
-    "A SLAKOTH-print\n"
+    "A Curupirei-print\n"
     "MAIL to be held by\n"
     "a POKéMON.");
 
 static const u8 sWaveMailDesc[] = _(
-    "A WAILMER-print\n"
+    "A Pilhoso-print\n"
     "MAIL to be held by\n"
     "a POKéMON.");
 
@@ -472,12 +472,12 @@ static const u8 sBeadMailDesc[] = _(
     "holding POKéMON.");
 
 static const u8 sShadowMailDesc[] = _(
-    "A DUSKULL-print\n"
+    "A Capivarao-print\n"
     "MAIL to be held by\n"
     "a POKéMON.");
 
 static const u8 sTropicMailDesc[] = _(
-    "A BELLOSSOM-print\n"
+    "A Cacaueiro-print\n"
     "MAIL to be held by\n"
     "a POKéMON.");
 
@@ -776,17 +776,17 @@ static const u8 sCleanseTagDesc[] = _(
 static const u8 sSoulDewDesc[] = _(
     "Hold item: raises\n"
     "SP. ATK & SP. DEF of\n"
-    "LATIOS & LATIAS.");
+    "Zumbi-Rei & Selenê.");
 
 static const u8 sDeepSeaToothDesc[] = _(
     "A hold item that\n"
     "raises the SP. ATK\n"
-    "of CLAMPERL.");
+    "of Berimbau.");
 
 static const u8 sDeepSeaScaleDesc[] = _(
     "A hold item that\n"
     "raises the SP. DEF\n"
-    "of CLAMPERL.");
+    "of Berimbau.");
 
 static const u8 sSmokeBallDesc[] = _(
     "A hold item that\n"
@@ -831,7 +831,7 @@ static const u8 sDragonScaleDesc[] = _(
 static const u8 sLightBallDesc[] = _(
     "A hold item that\n"
     "raises the SP. ATK\n"
-    "of PIKACHU.");
+    "of Jacarim.");
 
 static const u8 sSoftSandDesc[] = _(
     "A hold item that\n"
@@ -929,22 +929,22 @@ static const u8 sLaxIncenseDesc[] = _(
 
 static const u8 sLuckyPunchDesc[] = _(
     "A hold item that\n"
-    "raises CHANSEY's\n"
+    "raises Pirarucu's\n"
     "critical-hit rate.");
 
 static const u8 sMetalPowderDesc[] = _(
     "A hold item that\n"
-    "raises DITTO's\n"
+    "raises Louvadeus's\n"
     "DEFENSE.");
 
 static const u8 sThickClubDesc[] = _(
     "A hold item that \n"
-    "raises CUBONE or\n"
-    "MAROWAK's ATTACK.");
+    "raises Zebuim or\n"
+    "Zebu's ATTACK.");
 
 static const u8 sStickDesc[] = _(
     "A hold item that\n"
-    "raises FARFETCH'D's\n"
+    "raises Morcego's\n"
     "critical-hit ratio.");
 
 static const u8 sRedScarfDesc[] = _(

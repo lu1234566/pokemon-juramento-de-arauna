@@ -22,9 +22,9 @@
       "sides can refuse.$"
     ],
     "FortreeCity_House1_Text_GoingToMakeVolbeatStrong": [
-      "I'll train VOLBEAT here.\\p",
-      "I hope PLUSLE learns something\\n",
-      "new on your road too.$"
+      "I'll train Lixao here.\\p",
+      "I hope Fumacento learns\\n",
+      "something new on your road too.$"
     ],
     "FortreeCity_House1_Text_TradingMemoriesWithOthers": [
       "Trading a POKéMON also trades\\n",
@@ -32,7 +32,7 @@
       "New care doesn't erase old care.$"
     ],
     "FortreeCity_House1_Text_Zigzagoon": [
-      "ZIGZAGOON: Gumomoh?$"
+      "Pomba-Gira: Gumomoh?$"
     ]
   },
   "house2": {
@@ -86,29 +86,29 @@
     "FortreeCity_House4_Text_BringsWorldCloserTogether": [
       "POKéMON connect homes that roads\\n",
       "cannot reach easily.\\p",
-      "A call or WINGULL can keep\\n",
+      "A call or Foliao can keep\\n",
       "faraway friends close.$"
     ],
     "FortreeCity_House4_Text_GoBirdPokemon": [
-      "All right, WINGULL.\\n",
+      "All right, Foliao.\\n",
       "Take the usual route.$"
     ],
     "FortreeCity_House4_Text_AskedWingullToRunErrand": [
-      "I sent WINGULL on an errand.\\p",
+      "I sent Foliao on an errand.\\p",
       "It knows this route by heart.$"
     ],
     "FortreeCity_House4_Text_WelcomeWingullTakeMentalHerb": [
-      "Welcome back, WINGULL!\\p",
+      "Welcome back, Foliao!\\p",
       "Hm? You're carrying something.\\p",
       "A MENTAL HERB?\\p",
       "I'm not a TRAINER. You take it.$"
     ],
     "FortreeCity_House4_Text_FriendsFarAwayThanksToWingull": [
-      "WINGULL keeps my faraway friends\\n",
+      "Foliao keeps my faraway friends\\n",
       "within reach.$"
     ],
     "FortreeCity_House4_Text_Wingull": [
-      "WINGULL: Pihyoh!$"
+      "Foliao: Pihyoh!$"
     ]
   },
   "house5": {
@@ -124,7 +124,7 @@
       "comfort we invent.$"
     ],
     "FortreeCity_House5_Text_Zigzagoon": [
-      "ZIGZAGOON: Bufuu!$"
+      "Pomba-Gira: Bufuu!$"
     ]
   },
   "decor": {

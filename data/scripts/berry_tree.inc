@@ -237,7 +237,7 @@ BerryTree_Text_BerryLeftUnpicked:
 
 BerryTree_Text_WantToWater:
 	.string "Want to water the {STR_VAR_1} with the\n"
-	.string "WAILMER PAIL?$"
+	.string "Pilhoso PAIL?$"
 
 BerryTree_Text_WateredTheBerry:
 	.string "{PLAYER} watered the {STR_VAR_1}.$"

@@ -692,29 +692,29 @@ BattleFrontier_BattlePikeRoomNormal_Text_WatchOut:
 
 BattleFrontier_BattlePikeRoomNormal_Text_KirliaStop:
 	.string "Now, now!\n"
-	.string "KIRLIA, stop that!$"
+	.string "Pirarumbá, stop that!$"
 
 BattleFrontier_BattlePikeRoomNormal_Text_DusclopsStop:
 	.string "Now, now!\n"
-	.string "DUSCLOPS, stop that!$"
+	.string "Tamanduí, stop that!$"
 
 BattleFrontier_BattlePikeRoomNormal_Text_KirliaUsedToxic:
-	.string "KIRLIA used TOXIC!$"
+	.string "Pirarumbá used TOXIC!$"
 
 BattleFrontier_BattlePikeRoomNormal_Text_KirliaUsedHypnosis:
-	.string "KIRLIA used HYPNOSIS!$"
+	.string "Pirarumbá used HYPNOSIS!$"
 
 BattleFrontier_BattlePikeRoomNormal_Text_KirliaUsedThunderWave:
-	.string "KIRLIA used THUNDER WAVE!$"
+	.string "Pirarumbá used THUNDER WAVE!$"
 
 BattleFrontier_BattlePikeRoomNormal_Text_KirliaUsedWillOWisp:
-	.string "KIRLIA used WILL-O-WISP!$"
+	.string "Pirarumbá used WILL-O-WISP!$"
 
 BattleFrontier_BattlePikeRoomNormal_Text_DusclopsUsedWillOWisp:
-	.string "DUSCLOPS used WILL-O-WISP!$"
+	.string "Tamanduí used WILL-O-WISP!$"
 
 BattleFrontier_BattlePikeRoomNormal_Text_DusclopsUsedIceBeam:
-	.string "DUSCLOPS used ICE BEAM!$"
+	.string "Tamanduí used ICE BEAM!$"
 
 BattleFrontier_BattlePikeRoomNormal_Text_ThatsEnough:
 	.string "Look here!\n"
@@ -722,11 +722,11 @@ BattleFrontier_BattlePikeRoomNormal_Text_ThatsEnough:
 
 BattleFrontier_BattlePikeRoomNormal_Text_ApologizeForKirlia:
 	.string "I must apologize to you…\p"
-	.string "My KIRLIA has a TIMID nature…$"
+	.string "My Pirarumbá has a TIMID nature…$"
 
 BattleFrontier_BattlePikeRoomNormal_Text_ApologizeForDusclops:
 	.string "I must apologize to you…\p"
-	.string "My DUSCLOPS has a TIMID nature…$"
+	.string "My Tamanduí has a TIMID nature…$"
 
 BattleFrontier_BattlePikeRoomNormal_Text_AttacksWhenStartled:
 	.string "It attacks without warning if it is\n"

@@ -1171,7 +1171,7 @@ PetalburgCity_Gym_Text_DadPlayerGoWithWally:
 
 PetalburgCity_Gym_Text_IllLoanYouMyZigzagoon:
 	.string "VAL, here, I'll loan you my POKéMON.\p"
-	.string "VAL received a ZIGZAGOON!$"
+	.string "VAL received a Pomba-Gira!$"
 
 PetalburgCity_Gym_Text_WallyThankYouAndDadGivesPokeBall:
 	.string "VAL: Oh, wow!\n"

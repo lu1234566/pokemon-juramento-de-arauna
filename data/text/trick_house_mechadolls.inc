@@ -1,56 +1,56 @@
 gTrickHouse_Mechadoll_Oddish::
-	.string "ODDISH$"
+	.string "Guaracim$"
 
 gTrickHouse_Mechadoll_Poochyena::
-	.string "POOCHYENA$"
+	.string "Curupirao$"
 
 gTrickHouse_Mechadoll_Taillow::
-	.string "TAILLOW$"
+	.string "Maracatu$"
 
 gTrickHouse_Mechadoll_Azurill::
-	.string "AZURILL$"
+	.string "Cristo$"
 
 gTrickHouse_Mechadoll_Lotad::
-	.string "LOTAD$"
+	.string "Beata$"
 
 gTrickHouse_Mechadoll_Wingull::
-	.string "WINGULL$"
+	.string "Foliao$"
 
 gTrickHouse_Mechadoll_Dustox::
-	.string "DUSTOX$"
+	.string "Cangaceiro$"
 
 gTrickHouse_Mechadoll_Zubat::
-	.string "ZUBAT$"
+	.string "Casulete$"
 
 gTrickHouse_Mechadoll_Nincada::
-	.string "NINCADA$"
+	.string "Muirakytan$"
 
 gTrickHouse_Mechadoll_Ralts::
-	.string "RALTS$"
+	.string "Sucuriaçu$"
 
 gTrickHouse_Mechadoll_Zigzagoon::
-	.string "ZIGZAGOON$"
+	.string "Pomba-Gira$"
 
 gTrickHouse_Mechadoll_Slakoth::
-	.string "SLAKOTH$"
+	.string "Curupirei$"
 
 gTrickHouse_Mechadoll_Poochyena2::
-	.string "POOCHYENA$"
+	.string "Curupirao$"
 
 gTrickHouse_Mechadoll_Shroomish::
-	.string "SHROOMISH$"
+	.string "Boitapuro$"
 
 gTrickHouse_Mechadoll_Zigzagoon2::
-	.string "ZIGZAGOON$"
+	.string "Pomba-Gira$"
 
 gTrickHouse_Mechadoll_Poochyena3::
-	.string "POOCHYENA$"
+	.string "Curupirao$"
 
 gTrickHouse_Mechadoll_Zubat2::
-	.string "ZUBAT$"
+	.string "Casulete$"
 
 gTrickHouse_Mechadoll_Carvanha::
-	.string "CARVANHA$"
+	.string "Garrafao$"
 
 gTrickHouse_Mechadoll_BurnHeal::
 	.string "BURN HEAL$"

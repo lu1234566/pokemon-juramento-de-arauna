@@ -15,7 +15,7 @@ TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         ("Nothing...\\n", "Still nothing out here.$"),
     ),
     "PetalburgWoods_Text_HaveYouSeenShroomish": (
-        ("SHROOMISH", "I really love that POKéMON"),
+        ("Boitapuro", "I really love that POKéMON"),
         (
             "Hey. Have you seen anything\\n",
             "unusual in these woods?\\p",

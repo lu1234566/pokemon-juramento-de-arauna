@@ -424,7 +424,7 @@ Route104_Text_DarianDefeat:
 	.string "What the…$"
 
 Route104_Text_DarianPostBattle:
-	.string "Hey, MAGIKARP, you sure don't live up\n"
+	.string "Hey, Cigarrinho, you sure don't live up\n"
 	.string "to your name, do you?$"
 
 Route105_Text_FosterIntro:
@@ -1458,7 +1458,7 @@ Route111_Text_BrandenDefeat:
 	.string "enough of a bribe…$"
 
 Route111_Text_BrandenPostBattle:
-	.string "My SANDSHREW loves eating\n"
+	.string "My Jacarodon loves eating\n"
 	.string "my sandwiches.$"
 
 Route111_Text_TyronIntro:
@@ -1639,7 +1639,7 @@ Route113_Text_DillonPostBattle:
 Route113_Text_MadelineIntro:
 	.string "I use this parasol to ward off this\n"
 	.string "filthy, yucky volcanic ash from\l"
-	.string "my dear NUMEL.$"
+	.string "my dear Bugao.$"
 
 Route113_Text_MadelineDefeat:
 	.string "Huff, huff…\n"
@@ -2030,14 +2030,14 @@ Route115_Text_TimothyPostRematch:
 
 Route115_Text_KoichiIntro:
 	.string "You!\p"
-	.string "My MACHOP!\p"
+	.string "My Abelhinha!\p"
 	.string "Demand a battle!$"
 
 Route115_Text_KoichiDefeat:
 	.string "Ouch, ouch, ouch!$"
 
 Route115_Text_KoichiPostBattle:
-	.string "My MACHOP crew!\p"
+	.string "My Abelhinha crew!\p"
 	.string "So long as they seek power, I will\n"
 	.string "grow strong with them!$"
 
@@ -3802,7 +3802,7 @@ Route125_Text_StanDefeat:
 	.string "I floundered…$"
 
 Route125_Text_StanPostBattle:
-	.string "I was blown away by HORSEA's charm,\n"
+	.string "I was blown away by Aruanan's charm,\n"
 	.string "so I started swimming, too.$"
 
 Route125_Text_TanyaIntro:
@@ -4685,7 +4685,7 @@ Route134_Text_JackPostBattle:
 	.string "currents around these parts.$"
 
 Route134_Text_LaurelIntro:
-	.string "My LUVDISC are looking for a fun\n"
+	.string "My Violeiro are looking for a fun\n"
 	.string "match. Will you join us?$"
 
 Route134_Text_LaurelDefeat:
@@ -4693,7 +4693,7 @@ Route134_Text_LaurelDefeat:
 
 Route134_Text_LaurelPostBattle:
 	.string "There's a collector who's after\n"
-	.string "the SCALES of LUVDISC.$"
+	.string "the SCALES of Violeiro.$"
 
 Route134_Text_AlexIntro:
 	.string "Okeydokey! That's enough rest, gang!\n"

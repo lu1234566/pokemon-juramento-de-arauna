@@ -391,7 +391,7 @@ BattleFrontier_OutsideWest_Text_WhosRaisingThoseRentalMons:
 
 BattleFrontier_OutsideWest_Text_ScaredOfPikeBecauseSeviper:
 	.string "I'm scared of going into the BATTLE\n"
-	.string "PIKE because of SEVIPER…\p"
+	.string "PIKE because of Perybé…\p"
 	.string "B-but I came all the way here, so I will\n"
 	.string "try to conquer everything!\l"
 	.string "…Shudder…$"

@@ -718,11 +718,11 @@ SecretBase_Text_ToyTV:
 	.string "mistaken for the real thing.$"
 
 SecretBase_Text_SeedotTV:
-	.string "A toy TV shaped like a SEEDOT.\n"
+	.string "A toy TV shaped like a Bumba-Boi.\n"
 	.string "It looks ready to roll away on its own…$"
 
 SecretBase_Text_SkittyTV:
-	.string "A toy TV shaped like a SKITTY.\n"
+	.string "A toy TV shaped like a Pombim.\n"
 	.string "It looks ready to stroll away…$"
 
 SecretBase_Text_WouldYouLikeToMoveBases:

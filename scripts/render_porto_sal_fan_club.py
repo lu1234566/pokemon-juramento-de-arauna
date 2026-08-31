@@ -40,9 +40,9 @@ TEXT_TARGETS = {
     "SlateportCity_PokemonFanClub_Text_TreatPokemonWithLove": [["POKéMON percebem como sao", "tratados por seus treinadores."], ["Cuide deles com carinho e", "a confianca vai crescer."]],
     "SlateportCity_PokemonFanClub_Text_PokemonDontLikeFainting": [["Se um POKéMON desmaia muitas", "vezes, sua confianca pode cair."], ["Cuide dele e evite forca-lo", "alem do limite."]],
     "SlateportCity_PokemonFanClub_Text_MonEnjoyedProtein": [["POKéMON gostam de certos itens?"], ["O meu ficou animado quando", "recebeu PROTEIN."]],
-    "SlateportCity_PokemonFanClub_Text_Skitty": [["SKITTY: Fffnyaaaah..."]],
-    "SlateportCity_PokemonFanClub_Text_Zigzagoon": [["ZIGZAGOON: Kyuuu..."]],
-    "SlateportCity_PokemonFanClub_Text_Azumarill": [["AZUMARILL: Marimari?"]],
+    "SlateportCity_PokemonFanClub_Text_Skitty": [["Pombim: Fffnyaaaah..."]],
+    "SlateportCity_PokemonFanClub_Text_Zigzagoon": [["Pomba-Gira: Kyuuu..."]],
+    "SlateportCity_PokemonFanClub_Text_Azumarill": [["Mate: Marimari?"]],
 }
 
 ITEM_NAMES = {

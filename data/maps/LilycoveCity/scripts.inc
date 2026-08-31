@@ -525,7 +525,7 @@ LilycoveCity_Text_IfWorldBecomesOurs:
 	.string "happier place for POKéMON, too.$"
 
 LilycoveCity_Text_WailmerLeapOutOfWater:
-	.string "There! WAILMER!\n"
+	.string "There! Pilhoso!\n"
 	.string "Leap out of the water now!$"
 
 LilycoveCity_Text_GetLostMessingUpTraining:
@@ -560,7 +560,7 @@ LilycoveCity_Text_ImFromKanto:
 
 LilycoveCity_Text_TeamAquaBeenTrainingWailmer:
 	.string "CONSORCIO HORIZONTE's been training\n"
-	.string "their WAILMER in the cove.\p"
+	.string "their Pilhoso in the cove.\p"
 	.string "We SAILORS can't get our boats out to\n"
 	.string "sea with them in the way!$"
 
@@ -568,7 +568,7 @@ LilycoveCity_Text_SomeonePuntedTeamAquaOut:
 	.string "Ahoy, did you know?\p"
 	.string "Someone punted CONSORCIO HORIZONTE\n"
 	.string "out of the way for us!\p"
-	.string "That got the WAILMER out of the cove,\n"
+	.string "That got the Pilhoso out of the cove,\n"
 	.string "so we can get our boats out again.$"
 
 LilycoveCity_Text_SomeoneStoleMyPokemon:

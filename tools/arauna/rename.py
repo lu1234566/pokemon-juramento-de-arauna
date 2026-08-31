@@ -97,8 +97,10 @@ def guarded(body: str) -> set[tuple[int, int, int, int]]:
 class Renamer:
     """Applies one old-word -> new-word table across everything displayed."""
 
-    def __init__(self, mapping: dict[str, str]) -> None:
+    def __init__(self, mapping: dict[str, str], keep=None) -> None:
+        """`keep(text)` may return False to leave one whole string alone."""
         self.mapping = mapping
+        self.keep = keep
         names = sorted(mapping, key=len, reverse=True)   # longest first
         self.finder = re.compile(r"(?<![A-Za-z_])("
                                  + "|".join(re.escape(n) for n in names)
@@ -109,6 +111,8 @@ class Renamer:
     def _one(self, name: str):
         def substitute(found):
             head, text, tail = found.groups()
+            if self.keep is not None and not self.keep(text):
+                return head + text + tail
             for word in self.finder.findall(text):
                 self.hits[word] += 1
                 self.per_file[name] += 1
@@ -161,6 +165,17 @@ class Renamer:
             updated = QUOTED.sub(one, STRING.sub(one, body))
             if name.startswith(PROSE_FILES):
                 updated = C_STRING.sub(one, updated)
+            if updated != body:
+                changed.append((path, updated))
+
+        # The English text a renderer writes is not in the renderer: it is in a
+        # JSON bank under data/text. A key there is a symbol name in mixed case,
+        # so the word boundary refuses it and only the payloads are touched.
+        for name in (f for f in tracked
+                     if f.startswith("data/text/") and f.endswith(".json")):
+            path = ROOT / name
+            body = path.read_text(encoding="utf-8")
+            updated = C_STRING.sub(self._one(name), body)
             if updated != body:
                 changed.append((path, updated))
 

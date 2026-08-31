@@ -12,7 +12,7 @@ REQUIRED = (
     "HORIZON seizure order",
     "Remembrancer scouts",
     "They have a RECORD-MATRIX",
-    "CASTFORM changes with weather",
+    "Tuim changes with weather",
     "near {STR_VAR_1}",
     "deep BOND signature",
 )

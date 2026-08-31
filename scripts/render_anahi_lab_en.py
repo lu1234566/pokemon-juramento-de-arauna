@@ -206,13 +206,13 @@ TARGETS: dict[str, tuple[str, ...]] = {
         "The others will stay here.$",
     ),
     "LittlerootTown_ProfessorBirchsLab_Text_YoullTakeCyndaquil": (
-        "ANAHI: Choose CYNDAQUIL?$",
+        "ANAHI: Choose Coruja?$",
     ),
     "LittlerootTown_ProfessorBirchsLab_Text_YoullTakeTotodile": (
-        "ANAHI: Choose TOTODILE?$",
+        "ANAHI: Choose Seriema?$",
     ),
     "LittlerootTown_ProfessorBirchsLab_Text_YoullTakeChikorita": (
-        "ANAHI: Choose CHIKORITA?$",
+        "ANAHI: Choose Gaviao?$",
     ),
     "LittlerootTown_ProfessorBirchsLab_Text_TakeYourTimeAllInvaluable": (
         "ANAHI: Take your time.\\p",

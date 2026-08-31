@@ -65,11 +65,11 @@ FallarborTown_Text_RegionKnownForMeteors:
 
 FallarborTown_Text_MyPreciousAzurill:
 	.string "See! Take a look!\n"
-	.string "This is my precious AZURILL!\p"
+	.string "This is my precious Cristo!\p"
 	.string "It's slick and smooth and plushy, too!$"
 
 FallarborTown_Text_Azurill:
-	.string "AZURILL: Rooreelooo.$"
+	.string "Cristo: Rooreelooo.$"
 
 FallarborTown_Text_HaveYouChallengedFlannery:
 	.string "NARA: Cinza e o que sobra\ndepois do fogo. Nao e o fim de\p"

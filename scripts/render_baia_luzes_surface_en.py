@@ -47,9 +47,9 @@ TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         ),
     ),
     "LilycoveCity_Text_WailmerLeapOutOfWater": (
-        ("WAILMER", "Leap out"),
+        ("Pilhoso", "Leap out"),
         (
-            "There! WAILMER!\\n",
+            "There! Pilhoso!\\n",
             "Follow the signal buoy!$",
         ),
     ),
@@ -58,7 +58,7 @@ TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         (
             "HORIZON: Sorry. We're testing\\n",
             "a coastal signal pattern.\\p",
-            "Give the WAILMER some room.$",
+            "Give the Pilhoso some room.$",
         ),
     ),
     "LilycoveCity_Text_ContestHallInTown": (
@@ -96,18 +96,18 @@ TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         ),
     ),
     "LilycoveCity_Text_TeamAquaBeenTrainingWailmer": (
-        ("CONSORCIO HORIZONTE", "WAILMER"),
+        ("CONSORCIO HORIZONTE", "Pilhoso"),
         (
-            "SAILOR: HORIZON has WAILMER\\n",
+            "SAILOR: HORIZON has Pilhoso\\n",
             "following signal buoys.\\p",
             "They're blocking the cove, so\\n",
             "our boats cannot leave.$",
         ),
     ),
     "LilycoveCity_Text_SomeonePuntedTeamAquaOut": (
-        ("CONSORCIO HORIZONTE", "WAILMER"),
+        ("CONSORCIO HORIZONTE", "Pilhoso"),
         (
-            "SAILOR: The WAILMER moved on!\\p",
+            "SAILOR: The Pilhoso moved on!\\p",
             "The cove is open again, so our\\n",
             "boats can finally leave.$",
         ),
