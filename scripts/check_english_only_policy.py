@@ -36,6 +36,7 @@ EXPECTED_RENDERER_ORDER = (
     'render_tv_name_rater_en.py',
     'render_tv_pokemon_today_en.py',
     'render_tv_breaking_news_en.py',
+    'render_tv_secret_base_en.py',
     'render_pampa_elias_gym_core_en_checked.py',
     'render_pampa_gym_rooms_en_checked.py',
     'render_val_house_en_checked.py',
