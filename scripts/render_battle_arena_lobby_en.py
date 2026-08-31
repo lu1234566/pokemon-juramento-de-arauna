@@ -35,7 +35,7 @@ PREFIX = "BattleFrontier_BattleArenaLobby_Text_"
 BOX = TextBox({"{PLAYER}": 7, "{STR_VAR_1}": 14}, width=34)
 
 # Names the arena prints elsewhere and cannot contradict here.
-WHOLE = ("BATTLE ARENA", "Set KO Tourney", "CIRCUIT PASS", "ARENA TYCOON",
+WHOLE = ("BATTLE ARENA", "Set KO Tourney", "CIRCUIT PASS",
          "Open Level", "Battle Point", "Battle Points")
 FACTORS = ("Mind", "Skill", "Body")
 
@@ -182,7 +182,7 @@ TARGETS: dict[str, tuple[str, ...]] = {
         "when the turns run out.",
     ),
     "CongratsOnDefeatingTycoon": (
-        "A win taken off the ARENA TYCOON, and seven TRAINERS besides.",
+        "A win taken off the MASTER, and seven TRAINERS besides.",
         "Our congratulations on a most splendid challenge.",
     ),
     "PleaseAcceptBattlePoints": (

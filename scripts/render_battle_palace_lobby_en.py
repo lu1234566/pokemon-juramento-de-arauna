@@ -35,7 +35,7 @@ PREFIX = "BattleFrontier_BattlePalaceLobby_Text_"
 BOX = TextBox({"{PLAYER}": 7, "{STR_VAR_1}": 14}, width=34)
 
 WHOLE = ("BATTLE PALACE", "BATTLE HALL", "BATTLE HALLS", "CIRCUIT PASS",
-         "PALACE MAVEN", "SINGLE BATTLE", "SINGLE BATTLES", "DOUBLE BATTLE",
+         "SINGLE BATTLE", "SINGLE BATTLES", "DOUBLE BATTLE",
          "DOUBLE BATTLES", "Open Level", "Battle Point", "Battle Points")
 
 
@@ -174,7 +174,7 @@ TARGETS: dict[str, tuple[str, ...]] = {
         "No. That can't be right.",
     ),
     "ToDefeatMavenAnd7Trainers": (
-        "To beat the PALACE MAVEN, and seven TRAINERS before that...",
+        "To beat the MASTER, and seven TRAINERS before that...",
     ),
     "PresentYouWithBattlePoints": (
         "In honour of what you and your POKéMON evidently are to one "

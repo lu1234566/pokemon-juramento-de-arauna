@@ -31,7 +31,7 @@ PREFIX = "BattleFrontier_BattleFactoryLobby_Text_"
 
 BOX = TextBox({"{PLAYER}": 7, "{STR_VAR_1}": 14}, width=34)
 
-WHOLE = ("BATTLE FACTORY", "Battle Swap", "CIRCUIT PASS", "FACTORY HEAD",
+WHOLE = ("BATTLE FACTORY", "Battle Swap", "CIRCUIT PASS",
          "SINGLE BATTLE", "DOUBLE BATTLE", "Open Level", "Level 100",
          "Battle Point", "Battle Points")
 
@@ -122,8 +122,8 @@ TARGETS: dict[str, tuple[str, ...]] = {
         "{PLAYER} received the prize {STR_VAR_1}.",
     ),
     "CongratsForDefeatingHead": (
-        "Congratulations on beating the FACTORY HEAD, and on seven matches "
-        "in a row!",
+        "Congratulations on beating the MASTER, and on seven matches in a "
+        "row!",
     ),
     "AwardBattlePoints": (
         "In recognition of what you clearly know about POKéMON, we award you "

@@ -36,7 +36,7 @@ PREFIX = "BattleFrontier_BattleDomeLobby_Text_"
 
 BOX = TextBox({"{PLAYER}": 7, "{STR_VAR_1}": 14}, width=34)
 
-WHOLE = ("BATTLE DOME", "CIRCUIT PASS", "DOME ACE", "SINGLE BATTLE",
+WHOLE = ("BATTLE DOME", "CIRCUIT PASS", "SINGLE BATTLE",
          "SINGLE BATTLES", "DOUBLE BATTLE", "DOUBLE BATTLES", "Open Level",
          "Battle Point", "Battle Points", "Battle Tournament", "Waiting Room")
 
@@ -168,7 +168,7 @@ TARGETS: dict[str, tuple[str, ...]] = {
     ),
     "CongratsDefeatedTucker": (
         "Congratulations!",
-        "You beat the DOME ACE and took the tournament!",
+        "You beat the MASTER and took the tournament!",
     ),
     "AwardTheseBattlePoints": (
         "In recognition of a plan that was a pleasure to watch, we award you "
