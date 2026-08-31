@@ -23,6 +23,7 @@ EXPECTED_RENDERER_ORDER = (
     'render_beach_and_pass_trainers_en.py',
     'render_cycling_and_daycare_trainers_en.py',
     'render_desert_and_ash_trainers_en.py',
+    'render_river_and_ridge_trainers_en.py',
     'render_pampa_elias_gym_core_en_checked.py',
     'render_pampa_gym_rooms_en_checked.py',
     'render_val_house_en_checked.py',
