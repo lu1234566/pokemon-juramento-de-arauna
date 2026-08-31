@@ -19,6 +19,7 @@ EXPECTED_RENDERER_ORDER = (
     'render_vila_da_passagem_en.py',
     'render_route102_pampa_en_checked.py',
     'render_early_route_trainers_en.py',
+    'render_sea_route_trainers_en.py',
     'render_pampa_elias_gym_core_en_checked.py',
     'render_pampa_gym_rooms_en_checked.py',
     'render_val_house_en_checked.py',
