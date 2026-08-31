@@ -17,6 +17,12 @@ the lines even out, so no page ends on a two-word straggler.
 A "|" inside a paragraph forces a break -- for a greeting that belongs on its
 own line, or a beat the prose depends on. Everything else is chosen here.
 
+The opposite is GLUE. A place or a facility read as one name -- "BATTLE PIKE",
+"PORTO DAS REDES" -- must not be split across a line, because a reader will
+take the halves for two things. Join those words with GLUE instead of a space
+and the wrapper treats the whole name as one word; it becomes an ordinary
+space again in the finished payload. `glued(name)` does it for you.
+
 The final page ends in "$"; every other page ends in "\\p"; inside a page the
 first line ends in "\\n" and the rest in "\\l", which is what the engine reads
 as "scroll".
@@ -24,6 +30,12 @@ as "scroll".
 from __future__ import annotations
 
 BREAK = "|"
+GLUE = "\x01"
+
+
+def glued(name: str) -> str:
+    """A multi-word name the wrapper must never break across lines."""
+    return GLUE.join(name.split())
 
 
 class TextBox:
@@ -33,6 +45,7 @@ class TextBox:
 
     def measured(self, text: str) -> int:
         """How wide the text gets once every slot holds its worst content."""
+        text = text.replace(GLUE, " ")
         for slot, cost in self.slots.items():
             text = text.replace(slot, "x" * cost)
         if "{" in text:
@@ -81,5 +94,5 @@ class TextBox:
                     code = "\\n"
                 else:
                     code = "\\l"
-                payloads.append(line + code)
+                payloads.append(line.replace(GLUE, " ") + code)
         return tuple(payloads)
