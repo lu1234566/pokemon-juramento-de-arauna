@@ -48,3 +48,4 @@ data/maps/BattleFrontier_BattleFactoryLobby/scripts.inc
 data/maps/BattleFrontier_BattlePalaceLobby/scripts.inc
 data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc
 data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc
+data/scripts/contest_hall.inc
