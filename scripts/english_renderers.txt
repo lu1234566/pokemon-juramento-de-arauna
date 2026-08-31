@@ -47,6 +47,7 @@ render_battle_tower_lobby_en.py
 render_battle_pyramid_lobby_en.py
 render_battle_pyramid_floor_en.py
 render_contest_hall_en.py
+render_cable_club_en.py
 render_pampa_elias_gym_core_en_checked.py
 render_pampa_gym_rooms_en_checked.py
 render_val_house_en_checked.py
