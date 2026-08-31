@@ -70,3 +70,6 @@ data/maps/MauvilleCity_GameCorner/scripts.inc
 data/text/lottery_corner.inc
 data/maps/SlateportCity_PokemonFanClub/scripts.inc
 data/maps/SlateportCity_BattleTentCorridor/scripts.inc
+data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.inc
+data/maps/BattleFrontier_Lounge1/scripts.inc
+data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc
