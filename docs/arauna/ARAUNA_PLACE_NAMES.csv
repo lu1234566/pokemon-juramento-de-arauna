@@ -5,7 +5,7 @@ ARTISAN CAVE,GRUTA DO OFICIO,0,region map
 CAVE OF ORIGIN,GRUTA DA ORIGEM,0,region map
 DESERT RUINS,RUINAS DA AREIA,0,region map
 DESERT UNDERPASS,PASSAGEM SECA,0,region map
-DEVON,HORIZONTE,1,already used in the text
+DEVON,HORIZONTE,0,already used in the text
 DEVON CORP,CONSORCIO HORIZONTE,0,already used in the text
 DEVON CORPORATION,CONSORCIO HORIZONTE,0,already used in the text
 DEVON GOODS,ENCOMENDA,0,already used in the text
@@ -53,7 +53,7 @@ RUSTBORO,SERRA DO UIVO,0,region map
 RUSTBORO CITY,SERRA DO UIVO,0,region map
 RUSTURF TUNNEL,GALERIAS SERRA,0,region map
 S.S. TIDAL,MARE ALTA,0,already used in the text
-SAFARI ZONE,RESERVA ARAUNA,0,region map
+SAFARI ZONE,RESERVA ARAUNA,1,region map
 SAFARI ZONE ENTRANCE,ENTRADA DA RESERVA,0,already used in the text
 SCORCHED SLAB,LAJE QUEIMADA,0,region map
 SEAFLOOR CAVERN,CAVERNAS M'BOI,0,region map
@@ -66,13 +66,13 @@ SOOTOPOLIS,AGUAS DE M'BOI,0,region map
 SOOTOPOLIS CITY,AGUAS DE M'BOI,0,region map
 SOUTHERN ISLAND,ILHA DO SUL,0,region map
 TERRA CAVE,GRUTA DA TERRA,0,region map
-TRICK HOUSE,CASA DOS TRUQUES,0,already used in the text
+TRICK HOUSE,CASA DOS TRUQUES,1,already used in the text
 VERDANTURF,VALE DO SILENCIO,0,region map
 VERDANTURF TOWN,VALE DO SILENCIO,0,region map
 VICTORY ROAD,ESTR. JURAMENTO,0,region map
 BATTLE FRONTIER,,16,not named yet
-TRAINER HILL,,7,not named yet
-NAVEL ROCK,,0,not named yet
-BIRTH ISLAND,,0,not named yet
-FARAWAY ISLAND,,0,not named yet
-ALTERING CAVE,,1,not named yet
+TRAINER HILL,,8,not named yet
+NAVEL ROCK,,1,not named yet
+BIRTH ISLAND,,1,not named yet
+FARAWAY ISLAND,,1,not named yet
+ALTERING CAVE,,2,not named yet
