@@ -65,3 +65,6 @@ data/maps/Route110_TrickHouseEntrance/scripts.inc
 data/maps/Route110_TrickHouseEnd/scripts.inc
 data/maps/Route110_TrickHousePuzzle5/scripts.inc
 data/text/contest_strings.inc
+data/maps/MauvilleCity_BikeShop/scripts.inc
+data/maps/MauvilleCity_GameCorner/scripts.inc
+data/text/lottery_corner.inc
