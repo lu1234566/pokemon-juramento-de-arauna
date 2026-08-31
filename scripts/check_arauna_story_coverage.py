@@ -236,9 +236,9 @@ def main() -> int:
     overlays = load_base_overlay_paths(build) | set(read_manifest(EXTRA_OVERLAY_MANIFEST))
 
     # The count is a tripwire against a renderer being dropped, not a ceiling.
-    # It moved to 67 when the Pokedex renderer was added.
-    if len(renderers) != 67:
-        fail(f"expected 67 official English renderers, found {len(renderers)}")
+    # It moved to 68 when the early-route trainers were rendered.
+    if len(renderers) != 68:
+        fail(f"expected 68 official English renderers, found {len(renderers)}")
 
     missing_stages: list[str] = []
     for stage, required in STAGES.items():

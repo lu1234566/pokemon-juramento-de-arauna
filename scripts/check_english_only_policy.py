@@ -18,6 +18,7 @@ EXPECTED_RENDERER_ORDER = (
     'render_route103_ciro_en_checked.py',
     'render_vila_da_passagem_en.py',
     'render_route102_pampa_en_checked.py',
+    'render_early_route_trainers_en.py',
     'render_pampa_elias_gym_core_en_checked.py',
     'render_pampa_gym_rooms_en_checked.py',
     'render_val_house_en_checked.py',
@@ -150,8 +151,8 @@ for renderer in renderers:
         fail(f"Portuguese renderer path is active: {renderer}")
 
 extra_overlays = read_manifest(OVERLAY_EXTRA_MANIFEST)
-if len(extra_overlays) != 40:
-    fail(f"expected 40 final transactional overlay files, found {len(extra_overlays)}")
+if len(extra_overlays) != 41:
+    fail(f"expected 41 final transactional overlay files, found {len(extra_overlays)}")
 for rel_path in extra_overlays:
     if rel_path.startswith("/") or ".." in Path(rel_path).parts:
         fail(f"unsafe overlay path: {rel_path}")
