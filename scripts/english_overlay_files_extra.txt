@@ -50,3 +50,4 @@ data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc
 data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc
 data/scripts/contest_hall.inc
 data/text/cable_club.inc
+data/text/battle_tent.inc

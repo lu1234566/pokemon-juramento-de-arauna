@@ -236,9 +236,9 @@ def main() -> int:
     overlays = load_base_overlay_paths(build) | set(read_manifest(EXTRA_OVERLAY_MANIFEST))
 
     # The count is a tripwire against a renderer being dropped, not a ceiling.
-    # It moved to 102 when cable club was rendered.
-    if len(renderers) != 102:
-        fail(f"expected 102 official English renderers, found {len(renderers)}")
+    # It moved to 103 when battle tent was rendered.
+    if len(renderers) != 103:
+        fail(f"expected 103 official English renderers, found {len(renderers)}")
 
     missing_stages: list[str] = []
     for stage, required in STAGES.items():
