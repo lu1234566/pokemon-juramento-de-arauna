@@ -53,3 +53,4 @@ data/text/cable_club.inc
 data/text/battle_tent.inc
 data/maps/BattleFrontier_Lounge5/scripts.inc
 data/maps/BattleFrontier_Lounge7/scripts.inc
+data/text/secret_base_trainers.inc
