@@ -96,6 +96,37 @@ def cast() -> dict[str, str]:
     return mapping
 
 
+STRINGS = ROOT / "src/strings.c"
+LEAGUE_RENDERER = "render_arauna_league_en_checked"
+
+
+def league_link_records() -> list[tuple[Path, str]]:
+    """The Elite Four's two leftovers, from the renderer that owns their names.
+
+    The Battle Tower link-record screen falls back to six hard-coded names when
+    there is no record to show. Four of them followed the story rename because
+    trainers.h had been changed by hand; PHOEBE and GLACIA did not, because the
+    Elite Four are renamed by the English renderer instead. That renderer owns
+    src/data/trainers.h and nothing else, so those two strings were left
+    behind, and the record screen credits ROSA's fight to PHOEBE.
+
+    The mapping is imported from the renderer rather than repeated here, and
+    applied to this one file only -- rewriting the renderer's own table would
+    leave it searching trainers.h for a name it had already replaced.
+    """
+    sys.path.insert(0, str(ROOT / "scripts"))
+    league = __import__(LEAGUE_RENDERER)
+    body = STRINGS.read_text(encoding="utf-8")
+    updated = body
+    for old, new in league.TRAINER_NAMES.values():
+        updated = updated.replace(f'_("{old}")', f'_("{new}")')
+    if updated == body:
+        return []
+    print(f"  Elite Four link-record names: "
+          + ", ".join(f"{old}->{new}" for old, new in league.TRAINER_NAMES.values()))
+    return [(STRINGS, updated)]
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__,
                                      formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -108,6 +139,7 @@ def main() -> int:
     changed = renamer.apply()
     renamer.report()
     print(f"  {len(changed)} files")
+    changed += league_link_records()
 
     left = count(UNNAMED)
     print("still Hoenn because the project never named them: "
