@@ -1,19 +1,20 @@
 #!/usr/bin/env python3
-"""The TRAINER FAN CLUB special, THE NAME RATER SHOW, and the fishing programme.
+"""THE NAME RATER SHOW, and the fishing programme.
 
-Three shows and the fan who stops you in the club to ask what you make of
-somebody. The fan's answers become the special that airs later, so the two
-have to sound like the same week of television.
-
-THE NAME RATER SHOW is the delicate one. Its host reads a nickname the way a
-fortune teller reads a palm, and the engine hands him the pieces to read: a
-whole nickname in one slot, single letters out of it in others, and in four
-blocks a nickname assembled by butting two slots together --
-{STR_VAR_2}{STR_VAR_3} is one word, not two. Put a space or a line break
-between them and the show starts recommending nicknames that do not exist, so
-the renderer checks that every such pair is still touching.
+The name rater reads a nickname the way a fortune teller reads a palm, and
+the engine hands him the pieces to read: a whole nickname in one slot, single
+letters out of it in others, and in five blocks a nickname assembled by
+butting two slots together -- {STR_VAR_2}{STR_VAR_3} is one word, not two.
+Put a space or a line break between them and the show starts recommending
+nicknames nobody could give, so the renderer checks every such pair is still
+touching.
 
 The fishing programme has two hosts who disagree about what patience is.
+
+The TRAINER FAN CLUB special used to be written here as well, and was thrown
+away every build: render_baia_luzes_fan_club_en_checked.py owns those sixteen
+blocks and runs later in the manifest.
+tools/arauna/audit_renderer_contribution.py is what found it.
 """
 from __future__ import annotations
 
@@ -36,91 +37,6 @@ GLUED = ("gTVNameRaterText13", "gTVNameRaterText14",
          "gTVNameRaterText17")
 
 TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
-    # -- the fan in the club --------------------------------------------------
-    "LilycoveCity_PokemonTrainerFanClub_Text_WhatsYourOpinionOfTrainer": (
-        ("big fan", "opinion"), (
-            "Hello there!",
-            "I'm a great admirer of {STR_VAR_1}.|What do you make of "
-            "{STR_VAR_1}?",
-        )),
-    "LilycoveCity_PokemonTrainerFanClub_Text_ThatsWhatYouThink": (
-        ("That's what you think",), (
-            "I see, I see. So that's how you find the TRAINER.",
-        )),
-    "LilycoveCity_PokemonTrainerFanClub_Text_HaveYouForgottenTrainer": (
-        ("forgotten",), (
-            "Have you gone and forgotten {STR_VAR_1} entirely?",
-        )),
-    "LilycoveCity_PokemonTrainerFanClub_Text_WhatsYourOpinionOfTrainer2": (
-        ("big fan", "opinion"), (
-            "I'm a great admirer of {STR_VAR_1}.|What do you make of "
-            "{STR_VAR_1}?",
-        )),
-    "LilycoveCity_PokemonTrainerFanClub_Text_HowStrongRateTrainer": (
-        ("How strong", "one hundred"), (
-            "And how strong would you call {STR_VAR_1}, out of a hundred?",
-        )),
-    "LilycoveCity_PokemonTrainerFanClub_Text_HaveYouForgottenTrainer2": (
-        ("forgotten",), (
-            "Have you gone and forgotten {STR_VAR_1} entirely?",
-        )),
-    "LilycoveCity_PokemonTrainerFanClub_Text_YouShouldMeetTrainer": (
-        ("You should meet", "become a fan"), (
-            "Oh, I see!",
-            "You ought to meet {STR_VAR_1} one day.|You'd come away an "
-            "admirer as well, I'm sure of it!",
-        )),
-    "LilycoveCity_PokemonTrainerFanClub_Text_ThankYouIllShareThisInfo": (
-        ("useful to know", "fans and discuss"), (
-            "I see, I see.",
-            "Thank you!|That is worth knowing.",
-            "I shall put it to the other {STR_VAR_1} people and see what they "
-            "say.",
-        )),
-    "LilycoveCity_PokemonTrainerFanClub_HopeYouCatchTVSpecial": (
-        ("TV special", "catch it"), (
-            "There's to be a programme about {STR_VAR_1} shortly.",
-            "Do watch it!",
-        )),
-
-    # -- the special that comes of it -----------------------------------------
-    "gTVTrainerFanClubSpecialText00": (("SPECIAL", "representative"), (
-        "TRAINER FAN CLUB|{STR_VAR_1} SPECIAL!",
-        "This one is for everyone in ARAUNA who follows {STR_VAR_1}.",
-        "Tonight we ask: what do people make of {STR_VAR_1}?",
-        "We put it to {STR_VAR_2}, speaking for the TRAINERS.",
-        "We asked: “In one word -- what is {STR_VAR_1}?”",
-        "The answer: “{STR_VAR_3}.”",
-        "Well said, {STR_VAR_2}!|That is seeing clearly!",
-        "“{STR_VAR_3} {STR_VAR_1}.”|It has a ring to it, that!",
-        "{STR_VAR_2} also put a number on {STR_VAR_1}'s strength, from nought "
-        "to a hundred.",
-    )),
-    "gTVTrainerFanClubSpecialText01": (("very high score", "esteem"), (
-        "{STR_VAR_3} points!|That is a very high mark indeed.",
-        "{STR_VAR_2} plainly thinks the world of {STR_VAR_1}.",
-    )),
-    "gTVTrainerFanClubSpecialText02": (("quite a good score", "rival"), (
-        "{STR_VAR_3} points!|A respectable mark, that.",
-        "{STR_VAR_2} must count {STR_VAR_1} a rival.",
-    )),
-    "gTVTrainerFanClubSpecialText03": (("weak score", "sidekick"), (
-        "{STR_VAR_3} points!|A thin mark, I'm afraid.",
-        "{STR_VAR_2} seems to think of {STR_VAR_1} as somebody who tags "
-        "along.",
-    )),
-    "gTVTrainerFanClubSpecialText04": (("terrible score", "underling"), (
-        "{STR_VAR_3} point(s)!|A dreadful mark.",
-        "{STR_VAR_2} seems to think of {STR_VAR_1} as somebody to be sent on "
-        "errands.",
-    )),
-    "gTVTrainerFanClubSpecialText05": (("There you have it", "In closing"), (
-        "There you have it.",
-        "I think we all know {STR_VAR_1} a little better tonight.",
-        "And I'll leave you with {STR_VAR_2}'s word for it.",
-        "{STR_VAR_3} {STR_VAR_1}!",
-    )),
-
     # -- the nickname reading -------------------------------------------------
     "gTVNameRaterText00": (("NAME RATER SHOW", "reading of"), (
         "And now it is time for...|THE NAME RATER SHOW.",
