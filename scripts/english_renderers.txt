@@ -34,6 +34,7 @@ render_tv_breaking_news_en.py
 render_tv_secret_base_en.py
 render_tv_ribbons_and_circuit_en.py
 render_tv_base_secrets_en.py
+render_tv_contest_updates_en.py
 render_pampa_elias_gym_core_en_checked.py
 render_pampa_gym_rooms_en_checked.py
 render_val_house_en_checked.py
