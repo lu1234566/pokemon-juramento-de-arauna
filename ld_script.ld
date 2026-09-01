@@ -1239,6 +1239,31 @@ SECTIONS {
         sound/songs/midi/ph_nurse_blend.o(.rodata);
         sound/songs/midi/ph_nurse_held.o(.rodata);
         sound/songs/midi/ph_nurse_solo.o(.rodata);
+
+        /* Arauna original soundtrack. Kept in sound/song_table.inc order;
+           tools/arauna/check_arauna_song_link.py fails the build if this
+           list and the song table ever fall out of step. */
+        sound/songs/midi/mus_arauna_main.o(.rodata);
+        sound/songs/midi/mus_arauna_vila_amanhecer.o(.rodata);
+        sound/songs/midi/mus_arauna_route.o(.rodata);
+        sound/songs/midi/mus_arauna_wild_battle.o(.rodata);
+        sound/songs/midi/mus_arauna_trainer_battle.o(.rodata);
+        sound/songs/midi/mus_arauna_ciro.o(.rodata);
+        sound/songs/midi/mus_arauna_ciro_battle.o(.rodata);
+        sound/songs/midi/mus_arauna_ciro_final.o(.rodata);
+        sound/songs/midi/mus_arauna_horizon.o(.rodata);
+        sound/songs/midi/mus_arauna_horizon_battle.o(.rodata);
+        sound/songs/midi/mus_arauna_gym_battle.o(.rodata);
+        sound/songs/midi/mus_arauna_story_boss.o(.rodata);
+        sound/songs/midi/mus_arauna_legend_encounter.o(.rodata);
+        sound/songs/midi/mus_arauna_legend_battle.o(.rodata);
+        sound/songs/midi/mus_arauna_araua_encounter.o(.rodata);
+        sound/songs/midi/mus_arauna_araua_battle.o(.rodata);
+        sound/songs/midi/mus_arauna_oath_road.o(.rodata);
+        sound/songs/midi/mus_arauna_elite_battle.o(.rodata);
+        sound/songs/midi/mus_arauna_champion_battle.o(.rodata);
+        sound/songs/midi/mus_arauna_credits.o(.rodata);
+        sound/songs/midi/mus_arauna_sapphire_crypt.o(.rodata);
     } > ROM =0
 
     lib_rodata :

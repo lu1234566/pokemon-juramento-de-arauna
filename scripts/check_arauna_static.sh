@@ -36,4 +36,10 @@ python3 tools/arauna/check_availability.py
 # cut off on screen. The ceiling is measured from vanilla, not chosen here.
 python3 tools/arauna/check_text_width.py
 
+# ld_script.ld names all 551 song objects one at a time while
+# ld_script_modern.ld matches them with a wildcard, so a song added to the
+# table reaches a MODERN=1 build and silently misses a MODERN=0 one. That is
+# how the twenty-one Arauna songs went unlinked.
+python3 tools/arauna/check_arauna_song_link.py
+
 echo "Arauna static readiness: PASS (official rendered composition validated; ARM compile intentionally skipped)."
