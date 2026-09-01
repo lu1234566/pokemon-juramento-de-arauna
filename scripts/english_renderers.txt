@@ -71,6 +71,7 @@ render_desert_pass_and_falls_en.py
 render_aguas_mboi_interiors_en.py
 render_crafts_and_captions_en.py
 render_field_and_services_en.py
+render_trick_house_rooms_en.py
 render_pampa_elias_gym_core_en_checked.py
 render_pampa_gym_rooms_en_checked.py
 render_val_house_en_checked.py

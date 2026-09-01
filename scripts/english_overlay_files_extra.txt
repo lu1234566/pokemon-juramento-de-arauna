@@ -90,3 +90,10 @@ data/scripts/berry_tree.inc
 data/scripts/secret_power_tm.inc
 data/text/questionnaire.inc
 data/scripts/gift_trainer.inc
+data/maps/Route110_TrickHousePuzzle1/scripts.inc
+data/maps/Route110_TrickHousePuzzle2/scripts.inc
+data/maps/Route110_TrickHousePuzzle3/scripts.inc
+data/maps/Route110_TrickHousePuzzle4/scripts.inc
+data/maps/Route110_TrickHousePuzzle6/scripts.inc
+data/maps/Route110_TrickHousePuzzle7/scripts.inc
+data/maps/Route110_TrickHousePuzzle8/scripts.inc

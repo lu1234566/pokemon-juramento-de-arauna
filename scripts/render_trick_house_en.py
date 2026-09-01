@@ -264,12 +264,9 @@ END_BLOCKS: dict[str, tuple[str, ...]] = {
     ),
 }
 
+# The eight secret-code doors are one family and live together in
+# render_trick_house_rooms_en.py, including this room's.
 PUZZLE5_BLOCKS: dict[str, tuple[str, ...]] = {
-    "Route110_TrickHousePuzzle5_Text_WroteSecretCodeLockOpened": (
-        "{PLAYER} wrote the secret code on the door.",
-        "“TRICK MASTER is a genius.”|... ... ... ... ... ... ... ...",
-        "The lock clicked open.",
-    ),
     "Route110_TrickHousePuzzle5_Text_Mechadoll1Intro": (
         "CLICKETY-CLACK...|MECHADOLL 1 AM I.",
         "ANSWER THE QUIZZES CORRECTLY AND YOU WILL REACH MECHADOLL 5. THERE "

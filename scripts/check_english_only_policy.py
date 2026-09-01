@@ -76,6 +76,7 @@ EXPECTED_RENDERER_ORDER = (
     'render_aguas_mboi_interiors_en.py',
     'render_crafts_and_captions_en.py',
     'render_field_and_services_en.py',
+    'render_trick_house_rooms_en.py',
     'render_pampa_elias_gym_core_en_checked.py',
     'render_pampa_gym_rooms_en_checked.py',
     'render_val_house_en_checked.py',
@@ -208,8 +209,8 @@ for renderer in renderers:
         fail(f"Portuguese renderer path is active: {renderer}")
 
 extra_overlays = read_manifest(OVERLAY_EXTRA_MANIFEST)
-if len(extra_overlays) != 91:
-    fail(f"expected 91 final transactional overlay files, found {len(extra_overlays)}")
+if len(extra_overlays) != 98:
+    fail(f"expected 98 final transactional overlay files, found {len(extra_overlays)}")
 for rel_path in extra_overlays:
     if rel_path.startswith("/") or ".." in Path(rel_path).parts:
         fail(f"unsafe overlay path: {rel_path}")
