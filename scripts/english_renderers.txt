@@ -67,6 +67,7 @@ render_lottery_corner_en.py
 render_porto_sal_fan_club_en.py
 render_frontier_service_rooms_en.py
 render_daycare_and_bases_en.py
+render_desert_pass_and_falls_en.py
 render_pampa_elias_gym_core_en_checked.py
 render_pampa_gym_rooms_en_checked.py
 render_val_house_en_checked.py

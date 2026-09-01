@@ -76,3 +76,6 @@ data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc
 data/scripts/day_care.inc
 data/scripts/secret_base.inc
 data/scripts/profile_man.inc
+data/maps/Route111/scripts.inc
+data/maps/JaggedPass/scripts.inc
+data/maps/MeteorFalls_1F_2R/scripts.inc
