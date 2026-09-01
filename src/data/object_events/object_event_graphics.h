@@ -148,6 +148,7 @@ const u32 gObjectEventPic_Phoebe[] = INCGFX_U32("graphics/object_events/pics/peo
 const u32 gObjectEventPic_Glacia[] = INCGFX_U32("graphics/object_events/pics/people/elite_four/glacia.png", ".4bpp", "-mwidth 2 -mheight 4");
 const u32 gObjectEventPic_Drake[] = INCGFX_U32("graphics/object_events/pics/people/elite_four/drake.png", ".4bpp", "-mwidth 2 -mheight 4");
 const u32 gObjectEventPic_Roxanne[] = INCGFX_U32("graphics/object_events/pics/people/gym_leaders/roxanne.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u16 gObjectEventPal_Dalva[] = INCGFX_U16("graphics/object_events/palettes/dalva.pal", ".gbapal");
 const u32 gObjectEventPic_Brawly[] = INCGFX_U32("graphics/object_events/pics/people/gym_leaders/brawly.png", ".4bpp", "-mwidth 2 -mheight 4");
 const u32 gObjectEventPic_Wattson[] = INCGFX_U32("graphics/object_events/pics/people/gym_leaders/wattson.png", ".4bpp", "-mwidth 2 -mheight 4");
 const u32 gObjectEventPic_Flannery[] = INCGFX_U32("graphics/object_events/pics/people/gym_leaders/flannery.png", ".4bpp", "-mwidth 2 -mheight 4");
