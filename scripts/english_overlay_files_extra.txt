@@ -101,3 +101,7 @@ data/maps/Route114_LanettesHouse/scripts.inc
 data/maps/SlateportCity_NameRatersHouse/scripts.inc
 data/maps/FallarborTown_MoveRelearnersHouse/scripts.inc
 data/maps/VerdanturfTown_FriendshipRatersHouse/scripts.inc
+data/maps/Route109_SeashoreHouse/scripts.inc
+data/maps/Route124_DivingTreasureHuntersHouse/scripts.inc
+data/maps/Route111_WinstrateFamilysHouse/scripts.inc
+data/maps/Route116_TunnelersRestHouse/scripts.inc
