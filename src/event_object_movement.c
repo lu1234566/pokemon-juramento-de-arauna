@@ -538,6 +538,14 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 
 // Dalva reuses Roxanne's internal graphics ID but needs her own colors.
 #define OBJ_EVENT_PAL_TAG_DALVA                       0x11AD
+#define OBJ_EVENT_PAL_TAG_ADEMAR                     0x11AE
+#define OBJ_EVENT_PAL_TAG_OLIVIA                     0x11AF
+#define OBJ_EVENT_PAL_TAG_NARA                       0x11B0
+#define OBJ_EVENT_PAL_TAG_ELIAS                      0x11B1
+#define OBJ_EVENT_PAL_TAG_LIDIA                      0x11B2
+#define OBJ_EVENT_PAL_TAG_CECILIA                    0x11B3
+#define OBJ_EVENT_PAL_TAG_CAETANO                    0x11B4
+#define OBJ_EVENT_PAL_TAG_CELINA                     0x11B5
 
 #define OBJ_EVENT_PAL_TAG_NONE                    0x11FF
 
@@ -603,6 +611,14 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_RubySapphireBrendan,   OBJ_EVENT_PAL_TAG_RS_BRENDAN},
     {gObjectEventPal_RubySapphireMay,       OBJ_EVENT_PAL_TAG_RS_MAY},
     {gObjectEventPal_Dalva,                 OBJ_EVENT_PAL_TAG_DALVA},
+    {gObjectEventPal_Ademar,                OBJ_EVENT_PAL_TAG_ADEMAR},
+    {gObjectEventPal_Olivia,                OBJ_EVENT_PAL_TAG_OLIVIA},
+    {gObjectEventPal_Nara,                  OBJ_EVENT_PAL_TAG_NARA},
+    {gObjectEventPal_Elias,                 OBJ_EVENT_PAL_TAG_ELIAS},
+    {gObjectEventPal_Lidia,                 OBJ_EVENT_PAL_TAG_LIDIA},
+    {gObjectEventPal_Cecilia,               OBJ_EVENT_PAL_TAG_CECILIA},
+    {gObjectEventPal_Caetano,               OBJ_EVENT_PAL_TAG_CAETANO},
+    {gObjectEventPal_Celina,                OBJ_EVENT_PAL_TAG_CELINA},
 #ifdef BUGFIX
         {gObjectEventPal_AraunaIemanja,                           OBJ_EVENT_PAL_TAG_ARAUNA_IEMANJA},
     {gObjectEventPal_AraunaLobisomem,                         OBJ_EVENT_PAL_TAG_ARAUNA_LOBISOMEM},

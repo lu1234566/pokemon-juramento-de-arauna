@@ -12,7 +12,10 @@
   "characters": [
     {
       "name": "DALVA",
-      "surfaces": ["front", "overworld"],
+      "surfaces": [
+        "front",
+        "overworld"
+      ],
       "trainer_pic": "TRAINER_PIC_LEADER_ROXANNE",
       "trainer_pic_index": 40,
       "front": "graphics/trainers/front_pics/leader_roxanne.png",
@@ -25,7 +28,10 @@
     },
     {
       "name": "ADEMAR",
-      "surfaces": ["front"],
+      "surfaces": [
+        "front",
+        "overworld"
+      ],
       "trainer_pic": "TRAINER_PIC_LEADER_BRAWLY",
       "trainer_pic_index": 41,
       "front": "graphics/trainers/front_pics/leader_brawly.png",
@@ -38,7 +44,10 @@
     },
     {
       "name": "OLIVIA",
-      "surfaces": ["front"],
+      "surfaces": [
+        "front",
+        "overworld"
+      ],
       "trainer_pic": "TRAINER_PIC_LEADER_WATTSON",
       "trainer_pic_index": 42,
       "front": "graphics/trainers/front_pics/leader_wattson.png",
@@ -51,7 +60,10 @@
     },
     {
       "name": "NARA",
-      "surfaces": ["front"],
+      "surfaces": [
+        "front",
+        "overworld"
+      ],
       "trainer_pic": "TRAINER_PIC_LEADER_FLANNERY",
       "trainer_pic_index": 43,
       "front": "graphics/trainers/front_pics/leader_flannery.png",
@@ -64,7 +76,10 @@
     },
     {
       "name": "ELIAS",
-      "surfaces": ["front"],
+      "surfaces": [
+        "front",
+        "overworld"
+      ],
       "trainer_pic": "TRAINER_PIC_LEADER_NORMAN",
       "trainer_pic_index": 44,
       "front": "graphics/trainers/front_pics/leader_norman.png",
@@ -78,7 +93,10 @@
     },
     {
       "name": "LIDIA",
-      "surfaces": ["front"],
+      "surfaces": [
+        "front",
+        "overworld"
+      ],
       "trainer_pic": "TRAINER_PIC_LEADER_WINONA",
       "trainer_pic_index": 45,
       "front": "graphics/trainers/front_pics/leader_winona.png",
@@ -91,7 +109,9 @@
     },
     {
       "name": "CECILIA",
-      "surfaces": ["front"],
+      "surfaces": [
+        "overworld"
+      ],
       "trainer_pic": "TRAINER_PIC_LEADER_TATE_AND_LIZA",
       "trainer_pic_index": 46,
       "front": "graphics/trainers/front_pics/leader_tate_and_liza.png",
@@ -105,7 +125,9 @@
     },
     {
       "name": "CAETANO",
-      "surfaces": [],
+      "surfaces": [
+        "overworld"
+      ],
       "trainer_pic": "TRAINER_PIC_LEADER_TATE_AND_LIZA",
       "trainer_pic_index": 46,
       "front": "graphics/trainers/front_pics/leader_tate_and_liza.png",
@@ -120,7 +142,10 @@
     },
     {
       "name": "DONA CELINA",
-      "surfaces": ["front"],
+      "surfaces": [
+        "front",
+        "overworld"
+      ],
       "trainer_pic": "TRAINER_PIC_LEADER_JUAN",
       "trainer_pic_index": 47,
       "front": "graphics/trainers/front_pics/leader_juan.png",
