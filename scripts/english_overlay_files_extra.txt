@@ -97,3 +97,7 @@ data/maps/Route110_TrickHousePuzzle4/scripts.inc
 data/maps/Route110_TrickHousePuzzle6/scripts.inc
 data/maps/Route110_TrickHousePuzzle7/scripts.inc
 data/maps/Route110_TrickHousePuzzle8/scripts.inc
+data/maps/Route114_LanettesHouse/scripts.inc
+data/maps/SlateportCity_NameRatersHouse/scripts.inc
+data/maps/FallarborTown_MoveRelearnersHouse/scripts.inc
+data/maps/VerdanturfTown_FriendshipRatersHouse/scripts.inc
