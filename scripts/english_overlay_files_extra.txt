@@ -79,3 +79,8 @@ data/scripts/profile_man.inc
 data/maps/Route111/scripts.inc
 data/maps/JaggedPass/scripts.inc
 data/maps/MeteorFalls_1F_2R/scripts.inc
+data/maps/SootopolisCity_Gym_B1F/scripts.inc
+data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc
+data/maps/Route113_GlassWorkshop/scripts.inc
+data/text/blend_master.inc
+data/text/contest_painting.inc
