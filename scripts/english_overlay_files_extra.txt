@@ -84,3 +84,9 @@ data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc
 data/maps/Route113_GlassWorkshop/scripts.inc
 data/text/blend_master.inc
 data/text/contest_painting.inc
+data/text/pkmn_center_nurse.inc
+data/scripts/field_move_scripts.inc
+data/scripts/berry_tree.inc
+data/scripts/secret_power_tm.inc
+data/text/questionnaire.inc
+data/scripts/gift_trainer.inc
