@@ -42,4 +42,9 @@ python3 tools/arauna/check_text_width.py
 # how the twenty-one Arauna songs went unlinked.
 python3 tools/arauna/check_arauna_song_link.py
 
+# Character art the GBA reads directly, plus the wiring behind it. The trap
+# the Dalva work found is that art can be perfect and still render in another
+# NPC's colours, so the palette tag is checked for exclusivity too.
+python3 tools/validate_arauna_character_assets.py
+
 echo "Arauna static readiness: PASS (official rendered composition validated; ARM compile intentionally skipped)."
