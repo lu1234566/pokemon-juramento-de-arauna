@@ -4575,10 +4575,24 @@ static void UNUSED DrawSpindaSpotsUnused(u16 species, u32 personality, u8 *dest)
         DRAW_SPINDA_SPOTS(personality, dest);
 }
 
+// The slot vanilla gave Spinda now holds POSTE, a lamp post, and one design
+// of it rather than one per individual.
+//
+// This overlay stamps four personality-placed spots into the decompressed
+// front pic, and it runs from all three LoadSpecialPokePic paths, so it
+// reaches battle, the Pokedex, the summary, the party and the PC alike.
+// Replaying the macro over POSTE's own art changes between zero and ten
+// pixels depending on the individual -- the spots only land where the pixel
+// underneath already uses palette index 1 to 3, which on POSTE is the pale
+// blue of the lamp and the post. The result is cyan speckle scattered down
+// the shaft that differs from one specimen to the next.
+//
+// Nothing else about the slot changes. pokedex.spindaPersonality is still
+// written and still read, the macro and its spot graphics stay where they
+// are, every Pokemon keeps its personality, and no save field moves. Only
+// the overlay is gone.
 void DrawSpindaSpots(u16 species, u32 personality, u8 *dest, bool8 isFrontPic)
 {
-    if (species == SPECIES_SPINDA && isFrontPic)
-        DRAW_SPINDA_SPOTS(personality, dest);
 }
 
 void EvolutionRenameMon(struct Pokemon *mon, u16 oldSpecies, u16 newSpecies)
