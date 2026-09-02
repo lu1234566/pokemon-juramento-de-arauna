@@ -36,7 +36,13 @@ source edit can break:
     map object using the matching OBJ_EVENT_GFX_VAR_x, and has that var
     written before objects spawn on every map that places it;
   - RAUL draws his own art, not the Magma grunt's;
-  - the one-byte graphics id and NUM_OBJ_EVENT_GFX have not moved.
+  - the one-byte graphics id and NUM_OBJ_EVENT_GFX have not moved;
+  - each Battle Circuit Master still sits on the internal Frontier Brain slot
+    it was mapped to, draws its own front and overworld, and shares neither
+    with anybody else;
+  - the Silver and Gold tiers resolve to the same visible identity, because
+    the three functions that answer "who is this" take no symbol input;
+  - the streak thresholds that decide when a Master appears are untouched.
 
 Nothing matches on line numbers.
 """
@@ -286,6 +292,87 @@ def main() -> int:
         want = f"sPicTable_{c.get('graphics_info', '')}"
         check(bool(pic) and pic.group(1) == want,
               f"{c['name']} draws his own art", pic.group(1) if pic else "none")
+
+    # ---- the Battle Circuit Masters -------------------------------------
+    #
+    # The Masters are a visual layer over the inherited Frontier Brains. The
+    # engine keeps seeing TRAINER_ANABEL and OBJ_EVENT_GFX_ANABEL; the player
+    # sees MAIRA. What has to stay true is that the internal slot never moves,
+    # that the art on it belongs to exactly one Master, and that Silver and
+    # Gold cannot end up looking like different people.
+    frontier = (ROOT / "src/frontier_util.c").read_text(encoding="utf-8")
+    trainers_h = (ROOT / "include/constants/trainers.h").read_text(encoding="utf-8")
+    trainer_data = (ROOT / "src/data/trainers.h").read_text(encoding="utf-8")
+    front_decl = (ROOT / "src/data/graphics/trainers.h").read_text(encoding="utf-8")
+
+    brain_gfx = dict(re.findall(
+        r"\[FRONTIER_FACILITY_(\w+)\]\s*=\s*\{OBJ_EVENT_GFX_(\w+),", frontier))
+    brain_ids = dict(re.findall(
+        r"\[FRONTIER_FACILITY_(\w+)\]\s*=\s*TRAINER_(\w+),", frontier))
+    masters = [c for c in cast if c.get("internal_trainer")]
+    for c in masters:
+        internal = c["internal_trainer"].replace("TRAINER_", "")
+        gfx = c["object_event"].replace("OBJ_EVENT_GFX_", "")
+        check(gfx == internal,
+              f"{c['name']} still stands on the {internal} object slot", gfx)
+        check(internal in brain_ids.values(),
+              f"{c['name']}'s internal trainer is still a Frontier Brain",
+              c["internal_trainer"])
+        check(gfx in brain_gfx.values(),
+              f"{c['name']}'s object slot is still the facility's brain graphic")
+        # And on the right facility: the Tower's brain has to be the Tower's
+        # Master, or Silver and Gold would hand the player somebody else.
+        key = c.get("facility", "").replace("Battle ", "").upper()
+        check(brain_ids.get(key) == internal
+              and brain_gfx.get(key) == gfx,
+              f"{c['name']} is the {c.get('facility')}'s Master",
+              f"{key} -> {brain_ids.get(key)} / {brain_gfx.get(key)}")
+        # The front has to be this Master's and nobody else's.
+        pic = c["trainer_pic"]
+        users = re.findall(rf"\.trainerPic = {re.escape(pic)}\b", trainer_data)
+        check(len(users) == 1, f"{c['name']}'s trainer pic has one owner",
+              f"{len(users)} trainers use {pic}")
+        # Not just "the file is mentioned somewhere" -- the symbol the ROM
+        # links for this trainer pic has to be the one built from it.
+        stem = Path(c["front"]).stem
+        camel = "".join(part.capitalize() for part in stem.split("_"))
+        linked = re.search(rf'gTrainerFrontPic_{camel}\[\]\s*=\s*INCGFX_U32\("([^"]+)"',
+                           front_decl)
+        check(bool(linked) and linked.group(1) == c["front"],
+              f"{c['name']}'s front file is the one the ROM links",
+              linked.group(1) if linked else "no gTrainerFrontPic_" + camel)
+
+    if masters:
+        pics = [c["trainer_pic"] for c in masters]
+        check(len(set(pics)) == len(pics),
+              "no two Circuit Masters share a trainer pic")
+        fronts = [c["front"] for c in masters]
+        check(len(set(fronts)) == len(fronts),
+              "no two Circuit Masters share a front file")
+
+    # Silver and Gold pick different parties and different words. They must not
+    # pick a different person: these three read sFrontierBrainTrainerIds by
+    # facility alone, and a symbol lookup creeping in here is what would make
+    # one tier show somebody else.
+    for fn in ("GetFrontierBrainTrainerPicIndex", "GetFrontierBrainTrainerClass",
+               "CopyFrontierBrainTrainerName"):
+        m = re.search(rf"\b{fn}\([^;]*?\)\s*\n\{{.*?\n\}}\n", frontier, re.S)
+        body = m.group(0) if m else ""
+        check(bool(body) and "sFrontierBrainTrainerIds" in body
+              and "GetFronterBrainSymbol" not in body,
+              f"{fn} answers the same for Silver and Gold",
+              "reads the facility only" if body else "not found")
+
+    # The thresholds that decide when a Master turns up are mechanics, not art.
+    streaks = re.search(r"sFrontierBrainStreakAppearances\[NUM_FRONTIER_FACILITIES\]\[4\]"
+                        r"\s*=\s*\{(.*?)\};", frontier, re.S)
+    rows = re.findall(r"\{\s*(\d+),\s*(\d+),\s*(\d+),\s*(\d+)\s*\}",
+                      streaks.group(1) if streaks else "")
+    check(rows == [("35","70","35","1"), ("4","9","5","0"), ("21","42","21","1"),
+                   ("28","56","28","1"), ("21","42","21","1"), ("28","140","56","1"),
+                   ("21","70","35","0")],
+          "the Silver and Gold streak thresholds are unchanged",
+          f"{len(rows)} rows")
 
     # ---- the id space itself -------------------------------------------
     check("#define NUM_OBJ_EVENT_GFX                        239" in events_h,

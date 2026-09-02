@@ -451,6 +451,146 @@
       "overworld_palette": "graphics/object_events/palettes/bento.pal",
       "palette_tag": "OBJ_EVENT_PAL_TAG_BENTO",
       "palette_slot": "ARAUNA_EXCLUSIVE_POOL"
+    },
+    {
+      "name": "MAIRA",
+      "surfaces": [
+        "front",
+        "overworld"
+      ],
+      "internal_trainer": "TRAINER_ANABEL",
+      "facility": "Battle Tower",
+      "front": "graphics/trainers/front_pics/salon_maiden_anabel.png",
+      "trainer_pic": "TRAINER_PIC_SALON_MAIDEN_ANABEL",
+      "trainer_pic_index": 82,
+      "object_event": "OBJ_EVENT_GFX_ANABEL",
+      "graphics_info": "Anabel",
+      "overworld": "graphics/object_events/pics/people/frontier_brains/anabel.png",
+      "overworld_palette": "graphics/object_events/palettes/maira.pal",
+      "palette_tag": "OBJ_EVENT_PAL_TAG_MAIRA",
+      "palette_slot": "ARAUNA_EXCLUSIVE_POOL",
+      "palette_slot_reason": "Battle Tower. The room's two attendants are on NPC_1, so NPC_4 -- the slot her graphics info already named -- stays the documented fallback.",
+      "runtime_notes": "One Circuit Master per facility, never two at once: the overworld is written into VAR_OBJ_GFX_ID_0 by SetFrontierBrainObjEventGfx, and only TADEU also stands as a fixed object, at the Pyramid summit. Silver and Gold share this front, this overworld and this name -- GetFrontierBrainTrainerPicIndex, GetFrontierBrainTrainerClass and CopyFrontierBrainTrainerName all read sFrontierBrainTrainerIds[facility] with no symbol input, so only the party and the result text differ."
+    },
+    {
+      "name": "DARIO",
+      "surfaces": [
+        "front",
+        "overworld"
+      ],
+      "internal_trainer": "TRAINER_TUCKER",
+      "facility": "Battle Dome",
+      "front": "graphics/trainers/front_pics/dome_ace_tucker.png",
+      "trainer_pic": "TRAINER_PIC_DOME_ACE_TUCKER",
+      "trainer_pic_index": 83,
+      "object_event": "OBJ_EVENT_GFX_TUCKER",
+      "graphics_info": "Tucker",
+      "overworld": "graphics/object_events/pics/people/frontier_brains/tucker.png",
+      "overworld_palette": "graphics/object_events/palettes/dario.pal",
+      "palette_tag": "OBJ_EVENT_PAL_TAG_DARIO",
+      "palette_slot": "ARAUNA_EXCLUSIVE_POOL",
+      "palette_slot_reason": "Battle Dome. The thirteen-strong audience covers all four generic banks, so neither a generic fallback nor a borrowed reflection bank is available there; he holds a pool bank, which the room leaves free.",
+      "runtime_notes": "One Circuit Master per facility, never two at once: the overworld is written into VAR_OBJ_GFX_ID_0 by SetFrontierBrainObjEventGfx, and only TADEU also stands as a fixed object, at the Pyramid summit. Silver and Gold share this front, this overworld and this name -- GetFrontierBrainTrainerPicIndex, GetFrontierBrainTrainerClass and CopyFrontierBrainTrainerName all read sFrontierBrainTrainerIds[facility] with no symbol input, so only the party and the result text differ."
+    },
+    {
+      "name": "NILO",
+      "surfaces": [
+        "front",
+        "overworld"
+      ],
+      "internal_trainer": "TRAINER_NOLAND",
+      "facility": "Battle Factory",
+      "front": "graphics/trainers/front_pics/factory_head_noland.png",
+      "trainer_pic": "TRAINER_PIC_FACTORY_HEAD_NOLAND",
+      "trainer_pic_index": 86,
+      "object_event": "OBJ_EVENT_GFX_NOLAND",
+      "graphics_info": "Noland",
+      "overworld": "graphics/object_events/pics/people/frontier_brains/noland.png",
+      "overworld_palette": "graphics/object_events/palettes/nilo.pal",
+      "palette_tag": "OBJ_EVENT_PAL_TAG_NILO",
+      "palette_slot": "ARAUNA_EXCLUSIVE_POOL",
+      "palette_slot_reason": "Battle Factory. The six scientists sit on NPC_3, which used to be his fallback; it is now NPC_1, measured free in that room.",
+      "runtime_notes": "One Circuit Master per facility, never two at once: the overworld is written into VAR_OBJ_GFX_ID_0 by SetFrontierBrainObjEventGfx, and only TADEU also stands as a fixed object, at the Pyramid summit. Silver and Gold share this front, this overworld and this name -- GetFrontierBrainTrainerPicIndex, GetFrontierBrainTrainerClass and CopyFrontierBrainTrainerName all read sFrontierBrainTrainerIds[facility] with no symbol input, so only the party and the result text differ."
+    },
+    {
+      "name": "JACI",
+      "surfaces": [
+        "front",
+        "overworld"
+      ],
+      "internal_trainer": "TRAINER_LUCY",
+      "facility": "Battle Pike",
+      "front": "graphics/trainers/front_pics/pike_queen_lucy.png",
+      "trainer_pic": "TRAINER_PIC_PIKE_QUEEN_LUCY",
+      "trainer_pic_index": 87,
+      "object_event": "OBJ_EVENT_GFX_LUCY",
+      "graphics_info": "Lucy",
+      "overworld": "graphics/object_events/pics/people/frontier_brains/lucy.png",
+      "overworld_palette": "graphics/object_events/palettes/jaci.pal",
+      "palette_tag": "OBJ_EVENT_PAL_TAG_JACI",
+      "palette_slot": "ARAUNA_EXCLUSIVE_POOL",
+      "palette_slot_reason": "Battle Pike. The room holds nothing but the two dynamic objects, so every generic bank is free and NPC_4 remains the fallback.",
+      "runtime_notes": "One Circuit Master per facility, never two at once: the overworld is written into VAR_OBJ_GFX_ID_0 by SetFrontierBrainObjEventGfx, and only TADEU also stands as a fixed object, at the Pyramid summit. Silver and Gold share this front, this overworld and this name -- GetFrontierBrainTrainerPicIndex, GetFrontierBrainTrainerClass and CopyFrontierBrainTrainerName all read sFrontierBrainTrainerIds[facility] with no symbol input, so only the party and the result text differ."
+    },
+    {
+      "name": "RITA",
+      "surfaces": [
+        "front",
+        "overworld"
+      ],
+      "internal_trainer": "TRAINER_GRETA",
+      "facility": "Battle Arena",
+      "front": "graphics/trainers/front_pics/arena_tycoon_greta.png",
+      "trainer_pic": "TRAINER_PIC_ARENA_TYCOON_GRETA",
+      "trainer_pic_index": 85,
+      "object_event": "OBJ_EVENT_GFX_GRETA",
+      "graphics_info": "Greta",
+      "overworld": "graphics/object_events/pics/people/frontier_brains/greta.png",
+      "overworld_palette": "graphics/object_events/palettes/rita.pal",
+      "palette_tag": "OBJ_EVENT_PAL_TAG_RITA",
+      "palette_slot": "ARAUNA_EXCLUSIVE_POOL",
+      "palette_slot_reason": "Battle Arena. The six black belts are on NPC_3; NPC_1 is free and stays the fallback.",
+      "runtime_notes": "One Circuit Master per facility, never two at once: the overworld is written into VAR_OBJ_GFX_ID_0 by SetFrontierBrainObjEventGfx, and only TADEU also stands as a fixed object, at the Pyramid summit. Silver and Gold share this front, this overworld and this name -- GetFrontierBrainTrainerPicIndex, GetFrontierBrainTrainerClass and CopyFrontierBrainTrainerName all read sFrontierBrainTrainerIds[facility] with no symbol input, so only the party and the result text differ."
+    },
+    {
+      "name": "AMARO",
+      "surfaces": [
+        "front",
+        "overworld"
+      ],
+      "internal_trainer": "TRAINER_SPENSER",
+      "facility": "Battle Palace",
+      "front": "graphics/trainers/front_pics/palace_maven_spenser.png",
+      "trainer_pic": "TRAINER_PIC_PALACE_MAVEN_SPENSER",
+      "trainer_pic_index": 84,
+      "object_event": "OBJ_EVENT_GFX_SPENSER",
+      "graphics_info": "Spenser",
+      "overworld": "graphics/object_events/pics/people/frontier_brains/spenser.png",
+      "overworld_palette": "graphics/object_events/palettes/amaro.pal",
+      "palette_tag": "OBJ_EVENT_PAL_TAG_AMARO",
+      "palette_slot": "ARAUNA_EXCLUSIVE_POOL",
+      "palette_slot_reason": "Battle Palace. The attendant is on NPC_4 and the two creature dispatchers hold NPC_SPECIAL; NPC_1 is free and stays the fallback.",
+      "runtime_notes": "One Circuit Master per facility, never two at once: the overworld is written into VAR_OBJ_GFX_ID_0 by SetFrontierBrainObjEventGfx, and only TADEU also stands as a fixed object, at the Pyramid summit. Silver and Gold share this front, this overworld and this name -- GetFrontierBrainTrainerPicIndex, GetFrontierBrainTrainerClass and CopyFrontierBrainTrainerName all read sFrontierBrainTrainerIds[facility] with no symbol input, so only the party and the result text differ."
+    },
+    {
+      "name": "TADEU",
+      "surfaces": [
+        "front",
+        "overworld"
+      ],
+      "internal_trainer": "TRAINER_BRANDON",
+      "facility": "Battle Pyramid",
+      "front": "graphics/trainers/front_pics/pyramid_king_brandon.png",
+      "trainer_pic": "TRAINER_PIC_PYRAMID_KING_BRANDON",
+      "trainer_pic_index": 88,
+      "object_event": "OBJ_EVENT_GFX_BRANDON",
+      "graphics_info": "Brandon",
+      "overworld": "graphics/object_events/pics/people/frontier_brains/brandon.png",
+      "overworld_palette": "graphics/object_events/palettes/tadeu.pal",
+      "palette_tag": "OBJ_EVENT_PAL_TAG_TADEU",
+      "palette_slot": "ARAUNA_EXCLUSIVE_POOL",
+      "palette_slot_reason": "Battle Pyramid summit. The attendant is a Hiker on NPC_1; NPC_3 is free and stays the fallback.",
+      "runtime_notes": "One Circuit Master per facility, never two at once: the overworld is written into VAR_OBJ_GFX_ID_0 by SetFrontierBrainObjEventGfx, and only TADEU also stands as a fixed object, at the Pyramid summit. Silver and Gold share this front, this overworld and this name -- GetFrontierBrainTrainerPicIndex, GetFrontierBrainTrainerClass and CopyFrontierBrainTrainerName all read sFrontierBrainTrainerIds[facility] with no symbol input, so only the party and the result text differ."
     }
   ]
 }
