@@ -154,6 +154,8 @@ static void ResetObjectEventFldEffData(struct ObjectEvent *);
 static u8 LoadSpritePaletteIfTagExists(const struct SpritePalette *);
 static u8 FindObjectEventPaletteIndexByTag(u16);
 static void _PatchObjectPalette(u16, u8);
+static bool8 AraunaWantsExclusivePalette(u16);
+static u8 AraunaExclusivePaletteSlot(const struct ObjectEventGraphicsInfo *);
 static bool8 ObjectEventDoesElevationMatch(struct ObjectEvent *, u8);
 static void SpriteCB_CameraObject(struct Sprite *);
 static void CameraObject_Init(struct Sprite *);
@@ -557,6 +559,10 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_TAG_VAL                          0x11BE
 #define OBJ_EVENT_PAL_TAG_VAL_EVOLUIDO                 0x11BF
 #define OBJ_EVENT_PAL_TAG_MARTA                        0x11C1
+#define OBJ_EVENT_PAL_TAG_OTACILIO                       0x11C2
+#define OBJ_EVENT_PAL_TAG_LUZIA                          0x11C3
+#define OBJ_EVENT_PAL_TAG_BENTO                          0x11C4
+#define OBJ_EVENT_PAL_TAG_BRENO                          0x11C5
 
 #define OBJ_EVENT_PAL_TAG_NONE                    0x11FF
 
@@ -641,6 +647,10 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_Val,                   OBJ_EVENT_PAL_TAG_VAL},
     {gObjectEventPal_ValEvoluido,           OBJ_EVENT_PAL_TAG_VAL_EVOLUIDO},
     {gObjectEventPal_Marta,                 OBJ_EVENT_PAL_TAG_MARTA},
+    {gObjectEventPal_Otacilio,              OBJ_EVENT_PAL_TAG_OTACILIO},
+    {gObjectEventPal_Luzia,                 OBJ_EVENT_PAL_TAG_LUZIA},
+    {gObjectEventPal_Bento,                 OBJ_EVENT_PAL_TAG_BENTO},
+    {gObjectEventPal_Breno,                 OBJ_EVENT_PAL_TAG_BRENO},
 #ifdef BUGFIX
         {gObjectEventPal_AraunaIemanja,                           OBJ_EVENT_PAL_TAG_ARAUNA_IEMANJA},
     {gObjectEventPal_AraunaLobisomem,                         OBJ_EVENT_PAL_TAG_ARAUNA_LOBISOMEM},
@@ -1616,7 +1626,11 @@ static u8 TrySetupObjectEventSprite(const struct ObjectEventTemplate *objectEven
     objectEvent = &gObjectEvents[objectEventId];
     graphicsInfo = GetObjectEventGraphicsInfo(objectEvent->graphicsId);
     paletteSlot = graphicsInfo->paletteSlot;
-    if (paletteSlot == PALSLOT_PLAYER)
+    if (AraunaWantsExclusivePalette(graphicsInfo->paletteTag))
+    {
+        paletteSlot = AraunaExclusivePaletteSlot(graphicsInfo);
+    }
+    else if (paletteSlot == PALSLOT_PLAYER)
     {
         LoadPlayerObjectReflectionPalette(graphicsInfo->paletteTag, paletteSlot);
     }
@@ -1957,7 +1971,11 @@ static void SpawnObjectEventOnReturnToField(u8 objectEventId, s16 x, s16 y)
 
     *(u16 *)&spriteTemplate.paletteTag = TAG_NONE;
     paletteSlot = graphicsInfo->paletteSlot;
-    if (paletteSlot == PALSLOT_PLAYER)
+    if (AraunaWantsExclusivePalette(graphicsInfo->paletteTag))
+    {
+        paletteSlot = AraunaExclusivePaletteSlot(graphicsInfo);
+    }
+    else if (paletteSlot == PALSLOT_PLAYER)
     {
         LoadPlayerObjectReflectionPalette(graphicsInfo->paletteTag, graphicsInfo->paletteSlot);
     }
@@ -2040,7 +2058,11 @@ void ObjectEventSetGraphicsId(struct ObjectEvent *objectEvent, u8 graphicsId)
     graphicsInfo = GetObjectEventGraphicsInfo(graphicsId);
     sprite = &gSprites[objectEvent->spriteId];
     paletteSlot = graphicsInfo->paletteSlot;
-    if (paletteSlot == PALSLOT_PLAYER)
+    if (AraunaWantsExclusivePalette(graphicsInfo->paletteTag))
+    {
+        paletteSlot = AraunaExclusivePaletteSlot(graphicsInfo);
+    }
+    else if (paletteSlot == PALSLOT_PLAYER)
     {
         PatchObjectPalette(graphicsInfo->paletteTag, graphicsInfo->paletteSlot);
     }
@@ -2339,6 +2361,76 @@ void LoadSpecialObjectReflectionPalette(u16 tag, u8 slot)
             return;
         }
     }
+}
+
+// ===== Arauna: exclusive overworld palettes beyond the two special banks =====
+//
+// The engine hands object events twelve banks by slot: the player and its
+// reflection, four generic NPC palettes and their four reflections, and one
+// bank for a character with colours of its own plus that character's
+// reflection. Two named characters on one map already exhaust the last pair,
+// and Arauna has maps that want more -- AGUAS DE M'BOI puts BENTO, AMALIA,
+// LUZIA and OTACILIO in one scene with the redrawn Rayquaza.
+//
+// Banks twelve to fifteen are not idle, they simply belong to somebody else:
+// gReservedSpritePaletteCount stops at OBJ_PALSLOT_COUNT, so everything above
+// it is the general sprite palette allocator's, handed out by tag. Weather
+// takes two of them the moment the overworld starts, which leaves two free on
+// a water-reflection map and more on an ice one, where the engine itself
+// reserves only eight.
+//
+// So a character listed here asks that allocator for a bank of its own,
+// through the same LoadSpritePalette every field effect uses rather than a
+// second allocator competing with it. FreeAndReserveObjectSpritePalettes
+// already clears the whole pool on every map load, so the reservation
+// rebuilds itself per map and nothing persists.
+//
+// When the pool is full the character falls back to the slot its graphics
+// info names, which is the generic NPC palette it used before any of this.
+// That is the same picture the player saw yesterday rather than a garbage
+// bank, so a crowded scene degrades to the old behaviour for whoever asked
+// last instead of breaking.
+//
+// The list is metadata, not engine logic: adding a character here is a data
+// change, and no part of the engine names one.
+static const u16 sAraunaExclusivePaletteTags[] = {
+    OBJ_EVENT_PAL_TAG_OTACILIO,
+    OBJ_EVENT_PAL_TAG_LUZIA,
+    OBJ_EVENT_PAL_TAG_BENTO,
+    OBJ_EVENT_PAL_TAG_BRENO,
+    OBJ_EVENT_PAL_TAG_NONE
+};
+
+static bool8 AraunaWantsExclusivePalette(u16 paletteTag)
+{
+    u32 i;
+
+    for (i = 0; sAraunaExclusivePaletteTags[i] != OBJ_EVENT_PAL_TAG_NONE; i++)
+        if (sAraunaExclusivePaletteTags[i] == paletteTag)
+            return TRUE;
+
+    return FALSE;
+}
+
+// Returns the bank this character should draw from: one of its own if the
+// allocator had a spare, otherwise the slot the graphics info asked for.
+static u8 AraunaExclusivePaletteSlot(const struct ObjectEventGraphicsInfo *graphicsInfo)
+{
+    u8 index;
+    u16 i;
+
+    if (!AraunaWantsExclusivePalette(graphicsInfo->paletteTag))
+        return graphicsInfo->paletteSlot;
+
+    i = FindObjectEventPaletteIndexByTag(graphicsInfo->paletteTag);
+    if (i == 0xFF)
+        return graphicsInfo->paletteSlot;
+
+    index = LoadSpritePalette(&sObjectEventSpritePalettes[i]);
+    if (index == 0xFF)
+        return graphicsInfo->paletteSlot;
+
+    return index;
 }
 
 static void _PatchObjectPalette(u16 tag, u8 slot)
