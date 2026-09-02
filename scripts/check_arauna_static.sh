@@ -47,4 +47,11 @@ python3 tools/arauna/check_arauna_song_link.py
 # NPC's colours, so the palette tag is checked for exclusivity too.
 python3 tools/validate_arauna_character_assets.py
 
+# Some Arauna creatures sit in slots Emerald draws differently per
+# individual. ESTALAGMITE inherited Unown's twenty-eight letters and POSTE
+# inherited Spinda's spot overlay; both are single designs here, and this
+# refuses to let either quirk come back. It also fails if Castform's
+# machinery is disabled, since TUIM is deliberately deferred, not switched off.
+python3 tools/arauna/check_special_species.py
+
 echo "Arauna static readiness: PASS (official rendered composition validated; ARM compile intentionally skipped)."
