@@ -28,6 +28,19 @@ Two species land in engine slots whose folder is not a single sprite:
   #351 Tuim occupies SPECIES_CASTFORM, whose sheet is the four weather forms
        concatenated, so the same sprite goes into all four.
 
+ESTALAGMITE IS INTENTIONALLY SINGLE-FORM. The twenty-eight identical images
+under graphics/pokemon/unown are not a gap in the art and must not be read as
+one: Unown's letters are an engine detail of the slot, not a concept Arauna
+uses, and Estalagmite has no A-Z, no "!" and no "?" variants. The folders exist
+only because the engine addresses the species that way, and the Pokedex draws
+the canonical representation regardless of which individual was seen first --
+see GetPokedexMonPersonality in src/pokedex.c. Giving the twenty-eight folders
+different pictures would put designs in front of the player that the species
+does not have.
+
+Tuim's four weather forms are a separate matter and are deferred until the
+approved art for each of them exists.
+
 Icons and footprints are not touched: the icon sheet is drawn from three shared
 palettes, which is a separate problem from this one.
 """

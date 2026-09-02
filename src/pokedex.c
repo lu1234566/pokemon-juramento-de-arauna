@@ -4649,21 +4649,26 @@ static u16 GetNextPosition(u8 direction, u16 position, u16 min, u16 max)
     return position;
 }
 
-// Unown and Spinda use the personality of the first seen individual of that species
-// All others use personality 0
+// Vanilla drew Unown and Spinda here using the personality of the first
+// individual seen, so the entry showed that specimen's letter or spot
+// pattern, and every other species used personality 0.
+//
+// Neither slot varies in Arauna. ESTALAGMITE is one design: the twenty-eight
+// Unown form folders all hold the same approved art, kept only because the
+// engine addresses the slot that way, and the player is never offered a
+// choice of them -- there is no form selector, counter or navigation
+// anywhere in this file, only this function. POSTE is one design too, now
+// that the Spinda spot overlay is switched off in DrawSpindaSpots.
+//
+// So the entry uses the canonical representation, exactly as the other three
+// hundred and eighty-four species do. The saved personalities are untouched:
+// pokedex.unownPersonality and pokedex.spindaPersonality are still written by
+// HandleSetPokedexFlag and still occupy the same bytes of SaveBlock2. This
+// only stops the Pokedex reading them to vary a species that has nothing to
+// vary, so a specimen caught later can never redraw the entry.
 static u32 GetPokedexMonPersonality(u16 species)
 {
-    if (species == SPECIES_UNOWN || species == SPECIES_SPINDA)
-    {
-        if (species == SPECIES_UNOWN)
-            return gSaveBlock2Ptr->pokedex.unownPersonality;
-        else
-            return gSaveBlock2Ptr->pokedex.spindaPersonality;
-    }
-    else
-    {
-        return 0;
-    }
+    return 0;
 }
 
 u16 CreateMonSpriteFromNationalDexNumber(u16 nationalNum, s16 x, s16 y, u16 paletteSlot)
