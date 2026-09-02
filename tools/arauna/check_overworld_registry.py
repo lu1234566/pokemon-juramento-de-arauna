@@ -82,10 +82,18 @@ def main() -> int:
     tables = set(re.findall(r"\.images = sPicTable_Arauna(\w+),", registry))
     results.append(check("each creature has its own pic table", len(tables) == 46, f"{len(tables)}"))
 
+    # Channel B used to be written as 16 + the slot, aiming at a branch that
+    # cannot run: paletteSlot is a four-bit field, so 16 + n is stored as n.
+    # The slot is written plainly now, and this refuses the old spelling
+    # outright rather than accepting either -- it read as though a different
+    # mechanism were in play, and that is how the bank went unloaded.
     slot_a = registry.count(".paletteSlot = PALSLOT_NPC_SPECIAL,")
-    slot_b = registry.count(".paletteSlot = 16 + PALSLOT_NPC_SPECIAL_REFLECTION,")
+    slot_b = registry.count(".paletteSlot = PALSLOT_NPC_SPECIAL_REFLECTION,")
+    stale = registry.count(".paletteSlot = 16 + ")
     results.append(check("the two channels claim different palette slots",
-                         slot_a == 46 and slot_b == 46, f"A={slot_a} B={slot_b}"))
+                         slot_a == 46 and slot_b == 46 and stale == 0,
+                         f"A={slot_a} B={slot_b}"
+                         + (f" and {stale} still written as 16 + the slot" if stale else "")))
 
     print("\ndispatch")
     results.append(check("GetObjectEventGraphicsInfo dispatches both channels",

@@ -24,11 +24,19 @@ never writes, so the choice survives a save without adding a var.
 Two channels, because the limit that actually bites is palettes, not ids. A
 graphics info names one palette slot, and two objects sharing a slot with
 different tags fight over it. Channel A takes PALSLOT_NPC_SPECIAL, the vanilla
-"unique NPC" slot. Channel B sets paletteSlot to 16 + PALSLOT_NPC_SPECIAL_REFLECTION,
-which is the engine's own escape hatch -- TrySetupObjectEventSprite subtracts 16
-and patches that hardware bank directly -- and bank 11 is otherwise only the
-reflection of a special NPC, which these never cast because they set
-disableReflectionPaletteLoad.
+"unique NPC" slot. Channel B takes PALSLOT_NPC_SPECIAL_REFLECTION, which is
+otherwise only the reflection of a special NPC -- and these never cast one,
+because they set disableReflectionPaletteLoad and name no reflection tag.
+
+Channel B used to be written as 16 + PALSLOT_NPC_SPECIAL_REFLECTION, aiming at
+the escape hatch vanilla appears to offer, where TrySetupObjectEventSprite
+subtracts 16 and patches the hardware bank directly. That hatch does not open:
+paletteSlot is a four-bit field, so 16 + n is stored as n and the branch
+guarded by `paletteSlot >= 16` is unreachable. Every channel B sprite pointed
+at bank 11 and nothing ever filled it. The engine now recognises
+PALSLOT_NPC_SPECIAL_REFLECTION as a second bank of its own and loads the
+palette there, so the slot is written plainly: it is the same number either
+way, and only this spelling is honest about it.
 
 Generated:
 
@@ -176,13 +184,12 @@ def render_registry(mons) -> str:
         "//",
         "// Every one of the 46 redraws, twice: once per dispatcher channel. The two",
         "// copies differ only in which palette slot they claim, which is what lets two",
-        "// different creatures stand on the same map at the same time. Channel B uses",
-        "// the engine's 16 + slot form, so TrySetupObjectEventSprite patches hardware",
-        "// bank PALSLOT_NPC_SPECIAL_REFLECTION directly instead of contending for the",
-        "// single special slot.",
+        "// different creatures stand on the same map at the same time. Channel A takes",
+        "// the single special slot; channel B takes PALSLOT_NPC_SPECIAL_REFLECTION,",
+        "// which TrySetupObjectEventSprite loads as a second bank of its own.",
         "",
     ]
-    slots = {"A": "PALSLOT_NPC_SPECIAL", "B": "16 + PALSLOT_NPC_SPECIAL_REFLECTION"}
+    slots = {"A": "PALSLOT_NPC_SPECIAL", "B": "PALSLOT_NPC_SPECIAL_REFLECTION"}
     for channel in ("A", "B"):
         for mon in mons:
             out.append(INFO.format(channel=channel, sym=mon["sym"],
