@@ -54,4 +54,9 @@ python3 tools/validate_arauna_character_assets.py
 # machinery is disabled, since TUIM is deliberately deferred, not switched off.
 python3 tools/arauna/check_special_species.py
 
+# Sixteen OBJ palette banks is hardware capacity, not what an object event may
+# use. This keeps the reserve boundary, the exclusive-palette pool and the
+# audited same-slot pairs honest, and refuses the old 16 + PALSLOT spelling.
+python3 tools/arauna/check_overworld_palette_capacity.py
+
 echo "Arauna static readiness: PASS (official rendered composition validated; ARM compile intentionally skipped)."

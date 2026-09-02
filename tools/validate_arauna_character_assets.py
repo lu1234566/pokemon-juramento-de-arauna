@@ -232,7 +232,21 @@ def validate_wiring(entry: dict, blocks: dict[str, str], errors: list[str],
     if not tag or tag.group(1) != want_tag:
         errors.append(f"paletteTag is {tag.group(1) if tag else '?'}, "
                       f"manifest says {want_tag}")
-    if not slot or slot.group(1).strip() != want_slot:
+    if want_slot == "ARAUNA_EXCLUSIVE_POOL":
+        # The character asks the general sprite palette allocator for a bank
+        # of its own. Its graphics info still names a slot, and that is the
+        # documented fallback for a scene where the pool is full, so the check
+        # is not "which slot" but "is it actually in the pool list".
+        movement = (REPO_ROOT / "src/event_object_movement.c").read_text(encoding="utf-8")
+        table = re.search(r"sAraunaExclusivePaletteTags\[\]\s*=\s*\{(.*?)\};",
+                          movement, re.S)
+        listed = re.findall(r"OBJ_EVENT_PAL_TAG_\w+", table.group(1)) if table else []
+        if want_tag not in listed:
+            errors.append(f"manifest says the pool allocates {want_tag}, but it "
+                          f"is not in sAraunaExclusivePaletteTags")
+        if not slot:
+            errors.append("the graphics info names no fallback paletteSlot")
+    elif not slot or slot.group(1).strip() != want_slot:
         errors.append(f"paletteSlot is {slot.group(1).strip() if slot else '?'}, "
                       f"manifest says {want_slot}")
 

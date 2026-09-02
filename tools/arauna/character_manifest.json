@@ -89,7 +89,11 @@
       "overworld_palette": "graphics/object_events/palettes/elias.pal",
       "palette_tag": "OBJ_EVENT_PAL_TAG_ELIAS",
       "palette_slot": "PALSLOT_NPC_SPECIAL",
-      "palette_slot_reason": "He shares the LittlerootTown houses with two Vigoroth and the rival, which hold the special slot, but never at the same moment: FLAG_HIDE_PLAYERS_HOUSE_DAD is cleared only in hall_of_fame.inc, by which time the Vigoroth are hidden for good. Runtime confirms the special slot carries his palette."
+      "palette_slot_reason": "He shares the LittlerootTown houses with two Vigoroth and the rival, which hold the special slot, but never at the same moment: FLAG_HIDE_PLAYERS_HOUSE_DAD is cleared only in hall_of_fame.inc, by which time the Vigoroth are hidden for good. Runtime confirms the special slot carries his palette.",
+      "same_slot_safe_with": {
+        "CIRO F1": "Audited: never on screen together. ELIAS is hidden behind FLAG_HIDE_PLAYERS_HOUSE_DAD, which nothing clears until hall_of_fame.inc, and the rival's ground-floor object is hidden at new game and never shown again.",
+        "CIRO F1 MIRROR": "Audited: never on screen together. ELIAS is hidden behind FLAG_HIDE_PLAYERS_HOUSE_DAD, which nothing clears until hall_of_fame.inc, and the rival's ground-floor object is hidden at new game and never shown again."
+      }
     },
     {
       "name": "LIDIA",
@@ -253,7 +257,10 @@
       "graphics_info_shared_with": "CIRO F1 MIRROR",
       "front": "graphics/trainers/front_pics/brendan.png",
       "trainer_pic": "TRAINER_PIC_BRENDAN",
-      "trainer_pic_index": 13
+      "trainer_pic_index": 13,
+      "same_slot_safe_with": {
+        "ELIAS": "Audited: never on screen together. ELIAS is hidden behind FLAG_HIDE_PLAYERS_HOUSE_DAD, which nothing clears until hall_of_fame.inc, and the rival's ground-floor object is hidden at new game and never shown again."
+      }
     },
     {
       "name": "CIRO F1 MIRROR",
@@ -272,7 +279,10 @@
       "graphics_info_shared_with": "CIRO F1",
       "front": "graphics/trainers/front_pics/may.png",
       "trainer_pic": "TRAINER_PIC_MAY",
-      "trainer_pic_index": 14
+      "trainer_pic_index": 14,
+      "same_slot_safe_with": {
+        "ELIAS": "Audited: never on screen together. ELIAS is hidden behind FLAG_HIDE_PLAYERS_HOUSE_DAD, which nothing clears until hall_of_fame.inc, and the rival's ground-floor object is hidden at new game and never shown again."
+      }
     },
     {
       "name": "CIRO F2",
@@ -344,14 +354,19 @@
     {
       "name": "BRENO",
       "surfaces": [
-        "front"
+        "front",
+        "overworld"
       ],
       "front": "graphics/trainers/front_pics/aqua_admin_m.png",
       "trainer_pic": "TRAINER_PIC_AQUA_ADMIN_M",
       "trainer_pic_index": 32,
-      "surfaces_not_applicable": {
-        "overworld": "The submarine shadow in AquaHideout_B2F stands four tiles from him, holds PALSLOT_NPC_SPECIAL, and its tag is in sSpecialObjectReflectionPaletteSets, so creating it also writes the reflection bank. Both exclusive banks are spoken for before BRENO is created, and the shadow's hide flag is never set. Runtime confirmed bank 11 carried the shadow's reflection, not his palette."
-      }
+      "object_event": "OBJ_EVENT_GFX_ADMIN_CAMPO",
+      "graphics_info": "UnusedPikachuDoll",
+      "overworld": "graphics/object_events/pics/people/arauna/admin_field.png",
+      "overworld_palette": "graphics/object_events/palettes/breno.pal",
+      "palette_tag": "OBJ_EVENT_PAL_TAG_BRENO",
+      "palette_slot": "ARAUNA_EXCLUSIVE_POOL",
+      "palette_slot_reason": "Allocated from the pool, which is what unblocks him: the submarine shadow in AquaHideout_B2F holds both special banks, and runtime confirms he takes bank 14 while it keeps 10 and 11."
     },
     {
       "name": "MARTA",
@@ -372,26 +387,35 @@
     {
       "name": "OTACILIO",
       "surfaces": [
-        "front"
+        "front",
+        "overworld"
       ],
       "front": "graphics/trainers/front_pics/aqua_leader_archie.png",
       "trainer_pic": "TRAINER_PIC_AQUA_LEADER_ARCHIE",
       "trainer_pic_index": 30,
-      "surfaces_not_applicable": {
-        "overworld": "OBJ_EVENT_GFX_ARCHIE is on screen with MAXIE and STEVEN in SootopolisCity, Route128, MtPyre_Summit, MtChimney and SeafloorCavern_Room9, and in SootopolisCity also with AMALIA and the redrawn Rayquaza. The engine offers two exclusive palette banks; that scene needs four. An exclusive palette here would repaint whoever loaded last."
-      }
+      "object_event": "OBJ_EVENT_GFX_ARCHIE",
+      "graphics_info": "Archie",
+      "overworld": "graphics/object_events/pics/people/team_aqua/archie.png",
+      "overworld_palette": "graphics/object_events/palettes/otacilio.pal",
+      "palette_tag": "OBJ_EVENT_PAL_TAG_OTACILIO",
+      "palette_slot": "ARAUNA_EXCLUSIVE_POOL",
+      "palette_slot_reason": "Allocated from the general sprite palette pool. In SootopolisCity's five-way scene the pool is full and he falls back to PALSLOT_NPC_1, the generic bank he used before; everywhere else he holds a bank of his own."
     },
     {
       "name": "LUZIA",
       "surfaces": [
-        "front"
+        "front",
+        "overworld"
       ],
       "front": "graphics/trainers/front_pics/magma_leader_maxie.png",
       "trainer_pic": "TRAINER_PIC_MAGMA_LEADER_MAXIE",
       "trainer_pic_index": 31,
-      "surfaces_not_applicable": {
-        "overworld": "Same scene as OTACILIO: MAXIE stands beside ARCHIE and STEVEN in five maps and cannot hold a third exclusive bank."
-      }
+      "object_event": "OBJ_EVENT_GFX_MAXIE",
+      "graphics_info": "Maxie",
+      "overworld": "graphics/object_events/pics/people/team_magma/maxie.png",
+      "overworld_palette": "graphics/object_events/palettes/luzia.pal",
+      "palette_tag": "OBJ_EVENT_PAL_TAG_LUZIA",
+      "palette_slot": "ARAUNA_EXCLUSIVE_POOL"
     },
     {
       "name": "RAUL",
@@ -402,20 +426,24 @@
       "trainer_pic": "TRAINER_PIC_MAGMA_ADMIN",
       "trainer_pic_index": 34,
       "surfaces_not_applicable": {
-        "overworld": "His map objects use OBJ_EVENT_GFX_MAGMA_MEMBER_M, the generic grunt graphic on fourteen maps. Repainting it would convert every grunt, which section 27 defers to a later batch."
+        "overworld": "Blocked on graphics-id capacity, not palettes. His map objects use OBJ_EVENT_GFX_MAGMA_MEMBER_M, the generic grunt graphic on fourteen maps, and there is no free static id to move him to: every unused doll is already claimed by another Arauna character, and NUM_OBJ_EVENT_GFX cannot grow because OBJ_EVENT_GFX_VARS is NUM+1 and the sixteen var ids already end at 255."
       }
     },
     {
       "name": "BENTO",
       "surfaces": [
-        "front"
+        "front",
+        "overworld"
       ],
       "front": "graphics/trainers/front_pics/steven.png",
       "trainer_pic": "TRAINER_PIC_STEVEN",
       "trainer_pic_index": 61,
-      "surfaces_not_applicable": {
-        "overworld": "Same scene as OTACILIO: STEVEN stands beside ARCHIE and MAXIE, and in SootopolisCity beside AMALIA on the reflection bank."
-      }
+      "object_event": "OBJ_EVENT_GFX_STEVEN",
+      "graphics_info": "Steven",
+      "overworld": "graphics/object_events/pics/people/steven.png",
+      "overworld_palette": "graphics/object_events/palettes/bento.pal",
+      "palette_tag": "OBJ_EVENT_PAL_TAG_BENTO",
+      "palette_slot": "ARAUNA_EXCLUSIVE_POOL"
     }
   ]
 }
