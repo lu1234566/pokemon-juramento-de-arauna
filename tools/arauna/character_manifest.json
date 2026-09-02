@@ -155,6 +155,87 @@
       "overworld_palette": "graphics/object_events/palettes/celina.pal",
       "palette_tag": "OBJ_EVENT_PAL_TAG_CELINA",
       "palette_slot": "PALSLOT_NPC_SPECIAL"
+    },
+    {
+      "name": "LAZARO",
+      "surfaces": [
+        "front",
+        "overworld"
+      ],
+      "trainer_pic": "TRAINER_PIC_ELITE_FOUR_SIDNEY",
+      "trainer_pic_index": 36,
+      "front": "graphics/trainers/front_pics/elite_four_sidney.png",
+      "object_event": "OBJ_EVENT_GFX_SIDNEY",
+      "graphics_info": "Sidney",
+      "overworld": "graphics/object_events/pics/people/elite_four/sidney.png",
+      "overworld_palette": "graphics/object_events/palettes/lazaro.pal",
+      "palette_tag": "OBJ_EVENT_PAL_TAG_LAZARO",
+      "palette_slot": "PALSLOT_NPC_SPECIAL"
+    },
+    {
+      "name": "ROSA",
+      "surfaces": [
+        "front",
+        "overworld"
+      ],
+      "trainer_pic": "TRAINER_PIC_ELITE_FOUR_PHOEBE",
+      "trainer_pic_index": 37,
+      "front": "graphics/trainers/front_pics/elite_four_phoebe.png",
+      "object_event": "OBJ_EVENT_GFX_PHOEBE",
+      "graphics_info": "Phoebe",
+      "overworld": "graphics/object_events/pics/people/elite_four/phoebe.png",
+      "overworld_palette": "graphics/object_events/palettes/rosa.pal",
+      "palette_tag": "OBJ_EVENT_PAL_TAG_ROSA",
+      "palette_slot": "PALSLOT_NPC_SPECIAL"
+    },
+    {
+      "name": "CLARA",
+      "surfaces": [
+        "front",
+        "overworld"
+      ],
+      "trainer_pic": "TRAINER_PIC_ELITE_FOUR_GLACIA",
+      "trainer_pic_index": 38,
+      "front": "graphics/trainers/front_pics/elite_four_glacia.png",
+      "object_event": "OBJ_EVENT_GFX_GLACIA",
+      "graphics_info": "Glacia",
+      "overworld": "graphics/object_events/pics/people/elite_four/glacia.png",
+      "overworld_palette": "graphics/object_events/palettes/clara.pal",
+      "palette_tag": "OBJ_EVENT_PAL_TAG_CLARA",
+      "palette_slot": "PALSLOT_NPC_SPECIAL"
+    },
+    {
+      "name": "TIBURCIO",
+      "surfaces": [
+        "front",
+        "overworld"
+      ],
+      "trainer_pic": "TRAINER_PIC_ELITE_FOUR_DRAKE",
+      "trainer_pic_index": 39,
+      "front": "graphics/trainers/front_pics/elite_four_drake.png",
+      "object_event": "OBJ_EVENT_GFX_DRAKE",
+      "graphics_info": "Drake",
+      "overworld": "graphics/object_events/pics/people/elite_four/drake.png",
+      "overworld_palette": "graphics/object_events/palettes/tiburcio.pal",
+      "palette_tag": "OBJ_EVENT_PAL_TAG_TIBURCIO",
+      "palette_slot": "PALSLOT_NPC_SPECIAL"
+    },
+    {
+      "name": "AMALIA",
+      "surfaces": [
+        "front",
+        "overworld"
+      ],
+      "trainer_pic": "TRAINER_PIC_CHAMPION_WALLACE",
+      "trainer_pic_index": 54,
+      "front": "graphics/trainers/front_pics/champion_wallace.png",
+      "object_event": "OBJ_EVENT_GFX_WALLACE",
+      "graphics_info": "Wallace",
+      "overworld": "graphics/object_events/pics/people/wallace.png",
+      "overworld_palette": "graphics/object_events/palettes/amalia.pal",
+      "palette_tag": "OBJ_EVENT_PAL_TAG_AMALIA",
+      "palette_slot": "PALSLOT_NPC_SPECIAL_REFLECTION",
+      "palette_slot_reason": "The Rayquaza scene in SootopolisCity adds the redrawn Rayquaza, which holds PALSLOT_NPC_SPECIAL, while she stands at 31,33 and is never removed, so she takes the second special bank."
     }
   ]
 }

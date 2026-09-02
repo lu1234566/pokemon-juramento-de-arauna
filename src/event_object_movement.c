@@ -546,6 +546,11 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_TAG_CECILIA                    0x11B3
 #define OBJ_EVENT_PAL_TAG_CAETANO                    0x11B4
 #define OBJ_EVENT_PAL_TAG_CELINA                     0x11B5
+#define OBJ_EVENT_PAL_TAG_LAZARO                     0x11B6
+#define OBJ_EVENT_PAL_TAG_ROSA                       0x11B7
+#define OBJ_EVENT_PAL_TAG_CLARA                      0x11B8
+#define OBJ_EVENT_PAL_TAG_TIBURCIO                   0x11B9
+#define OBJ_EVENT_PAL_TAG_AMALIA                     0x11BA
 
 #define OBJ_EVENT_PAL_TAG_NONE                    0x11FF
 
@@ -619,6 +624,11 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_Cecilia,               OBJ_EVENT_PAL_TAG_CECILIA},
     {gObjectEventPal_Caetano,               OBJ_EVENT_PAL_TAG_CAETANO},
     {gObjectEventPal_Celina,                OBJ_EVENT_PAL_TAG_CELINA},
+    {gObjectEventPal_Lazaro,                OBJ_EVENT_PAL_TAG_LAZARO},
+    {gObjectEventPal_Rosa,                  OBJ_EVENT_PAL_TAG_ROSA},
+    {gObjectEventPal_Clara,                 OBJ_EVENT_PAL_TAG_CLARA},
+    {gObjectEventPal_Tiburcio,              OBJ_EVENT_PAL_TAG_TIBURCIO},
+    {gObjectEventPal_Amalia,                OBJ_EVENT_PAL_TAG_AMALIA},
 #ifdef BUGFIX
         {gObjectEventPal_AraunaIemanja,                           OBJ_EVENT_PAL_TAG_ARAUNA_IEMANJA},
     {gObjectEventPal_AraunaLobisomem,                         OBJ_EVENT_PAL_TAG_ARAUNA_LOBISOMEM},

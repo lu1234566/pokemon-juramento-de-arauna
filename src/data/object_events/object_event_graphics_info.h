@@ -2321,15 +2321,15 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MagmaMemberF = {
 
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Sidney = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_2,
+    .paletteTag = OBJ_EVENT_PAL_TAG_LAZARO,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
     .size = 256,
     .width = 16,
     .height = 32,
-    .paletteSlot = PALSLOT_NPC_2,
+    .paletteSlot = PALSLOT_NPC_SPECIAL,
     .shadowSize = SHADOW_SIZE_M,
     .inanimate = FALSE,
-    .disableReflectionPaletteLoad = FALSE,
+    .disableReflectionPaletteLoad = TRUE,
     .tracks = TRACKS_FOOT,
     .oam = &gObjectEventBaseOam_16x32,
     .subspriteTables = sOamTables_16x32,
@@ -2340,15 +2340,15 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Sidney = {
 
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Phoebe = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1,
+    .paletteTag = OBJ_EVENT_PAL_TAG_ROSA,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
     .size = 256,
     .width = 16,
     .height = 32,
-    .paletteSlot = PALSLOT_NPC_1,
+    .paletteSlot = PALSLOT_NPC_SPECIAL,
     .shadowSize = SHADOW_SIZE_M,
     .inanimate = FALSE,
-    .disableReflectionPaletteLoad = FALSE,
+    .disableReflectionPaletteLoad = TRUE,
     .tracks = TRACKS_FOOT,
     .oam = &gObjectEventBaseOam_16x32,
     .subspriteTables = sOamTables_16x32,
@@ -2359,15 +2359,15 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Phoebe = {
 
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Glacia = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_2,
+    .paletteTag = OBJ_EVENT_PAL_TAG_CLARA,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
     .size = 256,
     .width = 16,
     .height = 32,
-    .paletteSlot = PALSLOT_NPC_2,
+    .paletteSlot = PALSLOT_NPC_SPECIAL,
     .shadowSize = SHADOW_SIZE_M,
     .inanimate = FALSE,
-    .disableReflectionPaletteLoad = FALSE,
+    .disableReflectionPaletteLoad = TRUE,
     .tracks = TRACKS_FOOT,
     .oam = &gObjectEventBaseOam_16x32,
     .subspriteTables = sOamTables_16x32,
@@ -2378,15 +2378,15 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Glacia = {
 
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Drake = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_3,
+    .paletteTag = OBJ_EVENT_PAL_TAG_TIBURCIO,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
     .size = 256,
     .width = 16,
     .height = 32,
-    .paletteSlot = PALSLOT_NPC_3,
+    .paletteSlot = PALSLOT_NPC_SPECIAL,
     .shadowSize = SHADOW_SIZE_M,
     .inanimate = FALSE,
-    .disableReflectionPaletteLoad = FALSE,
+    .disableReflectionPaletteLoad = TRUE,
     .tracks = TRACKS_FOOT,
     .oam = &gObjectEventBaseOam_16x32,
     .subspriteTables = sOamTables_16x32,
@@ -2558,17 +2558,24 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Tate = {
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
+// AMALIA takes the second special bank. She is the one character in this
+// batch who genuinely cannot have the first: SootopolisCity_EventScript_
+// RayquazaSceneFromPokeCenter adds Rayquaza while she is standing at
+// 31,33 and never removes her, and the redrawn Rayquaza holds
+// PALSLOT_NPC_SPECIAL. Nothing writes the reflection bank over her: her
+// reflectionPaletteTag is NONE, so is Rayquaza's, and OBJ_EVENT_PAL_TAG_
+// ARAUA is not in sSpecialObjectReflectionPaletteSets.
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Wallace = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_4,
+    .paletteTag = OBJ_EVENT_PAL_TAG_AMALIA,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
     .size = 256,
     .width = 16,
     .height = 32,
-    .paletteSlot = PALSLOT_NPC_4,
+    .paletteSlot = PALSLOT_NPC_SPECIAL_REFLECTION,
     .shadowSize = SHADOW_SIZE_M,
     .inanimate = FALSE,
-    .disableReflectionPaletteLoad = FALSE,
+    .disableReflectionPaletteLoad = TRUE,
     .tracks = TRACKS_FOOT,
     .oam = &gObjectEventBaseOam_16x32,
     .subspriteTables = sOamTables_16x32,
