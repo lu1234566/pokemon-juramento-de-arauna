@@ -88,8 +88,8 @@
       "overworld": "graphics/object_events/pics/people/gym_leaders/norman.png",
       "overworld_palette": "graphics/object_events/palettes/elias.pal",
       "palette_tag": "OBJ_EVENT_PAL_TAG_ELIAS",
-      "palette_slot": "16 + PALSLOT_NPC_SPECIAL_REFLECTION",
-      "palette_slot_reason": "He shares LittlerootTown Brendans/Mays House 1F with two Vigoroth and the rival, all of which already claim PALSLOT_NPC_SPECIAL."
+      "palette_slot": "PALSLOT_NPC_SPECIAL",
+      "palette_slot_reason": "He shares the LittlerootTown houses with two Vigoroth and the rival, which hold the special slot, but never at the same moment: FLAG_HIDE_PLAYERS_HOUSE_DAD is cleared only in hall_of_fame.inc, by which time the Vigoroth are hidden for good. Runtime confirms the special slot carries his palette."
     },
     {
       "name": "LIDIA",
@@ -137,8 +137,8 @@
       "overworld": "graphics/object_events/pics/people/gym_leaders/liza.png",
       "overworld_palette": "graphics/object_events/palettes/caetano.pal",
       "palette_tag": "OBJ_EVENT_PAL_TAG_CAETANO",
-      "palette_slot": "16 + PALSLOT_NPC_SPECIAL_REFLECTION",
-      "palette_slot_reason": "He stands beside CECILIA in MossdeepCity_Gym at x=24,y=7 with no hide flag, so the two are always on screen together and cannot share one palette bank."
+      "palette_slot": "PALSLOT_NPC_SPECIAL_REFLECTION",
+      "palette_slot_reason": "He stands beside CECILIA in MossdeepCity_Gym at x=24,y=7 with no hide flag, so the two are always on screen together and cannot share one palette bank. Runtime confirms bank 11 carries his palette while CECILIA holds bank 10."
     },
     {
       "name": "DONA CELINA",

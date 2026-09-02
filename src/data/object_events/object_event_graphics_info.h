@@ -2471,6 +2471,13 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Flannery = {
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
+// ELIAS keeps the ordinary special slot. He shares his three maps with
+// characters that hold it -- two Vigoroth and the rival in the LittlerootTown
+// houses -- but never at the same moment: his object stays hidden behind
+// FLAG_HIDE_PLAYERS_HOUSE_DAD, which nothing clears until hall_of_fame.inc,
+// and by then the Vigoroth are hidden for good and the rival's ground-floor
+// object never comes back. Sharing a map is not the same as being on screen
+// together, and only the second one forces a character onto another bank.
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Norman = {
     .tileTag = TAG_NONE,
     .paletteTag = OBJ_EVENT_PAL_TAG_ELIAS,
@@ -2478,7 +2485,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Norman = {
     .size = 256,
     .width = 16,
     .height = 32,
-    .paletteSlot = 16 + PALSLOT_NPC_SPECIAL_REFLECTION,
+    .paletteSlot = PALSLOT_NPC_SPECIAL,
     .shadowSize = SHADOW_SIZE_M,
     .inanimate = FALSE,
     .disableReflectionPaletteLoad = TRUE,
@@ -2516,7 +2523,11 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Liza = {
     .size = 256,
     .width = 16,
     .height = 32,
-    .paletteSlot = 16 + PALSLOT_NPC_SPECIAL_REFLECTION,
+    // CAETANO stands beside CECILIA at 24,7 in MossdeepCity_Gym with no hide
+    // flag, so the two really are on screen together and need a bank each.
+    // Written plainly rather than as 16 + the slot: paletteSlot is four bits
+    // wide, so the two forms are the same number, and only this one says so.
+    .paletteSlot = PALSLOT_NPC_SPECIAL_REFLECTION,
     .shadowSize = SHADOW_SIZE_M,
     .inanimate = FALSE,
     .disableReflectionPaletteLoad = TRUE,

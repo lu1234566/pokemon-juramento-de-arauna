@@ -1602,6 +1602,27 @@ static u8 TrySetupObjectEventSprite(const struct ObjectEventTemplate *objectEven
     {
         LoadSpecialObjectReflectionPalette(graphicsInfo->paletteTag, paletteSlot);
     }
+    else if (paletteSlot == PALSLOT_NPC_SPECIAL_REFLECTION)
+    {
+        // A second bank for a character with colours of its own.
+        //
+        // The engine sets aside one such bank, PALSLOT_NPC_SPECIAL, and uses
+        // the one after it for that character's reflection. Arauna needs two
+        // at once on several maps: CECILIA and CAETANO stand side by side in
+        // the AGUAS DE M'BOI gym, AMALIA shares SootopolisCity with the
+        // redesigned Rayquaza, and the redrawn creatures pair up all over the
+        // region. The reflection bank is free on those maps -- a character
+        // claiming it declares reflectionPaletteTag OBJ_EVENT_PAL_TAG_NONE,
+        // and so does the one on PALSLOT_NPC_SPECIAL beside it, so nothing
+        // ever writes a reflection over it.
+        //
+        // The data already asks for this by writing 16 + the slot, which is
+        // the form the branch below expects. It cannot arrive: paletteSlot is
+        // four bits wide, so 16 + n is stored as n and that branch is dead
+        // code. Reading the slot the struct can actually hold is what makes
+        // the request the data has always made take effect.
+        PatchObjectPalette(graphicsInfo->paletteTag, paletteSlot);
+    }
     else if (paletteSlot >= 16)
     {
         paletteSlot -= 16;
@@ -1922,6 +1943,14 @@ static void SpawnObjectEventOnReturnToField(u8 objectEventId, s16 x, s16 y)
     {
         LoadSpecialObjectReflectionPalette(graphicsInfo->paletteTag, graphicsInfo->paletteSlot);
     }
+    else if (paletteSlot == PALSLOT_NPC_SPECIAL_REFLECTION)
+    {
+        // The second special bank, as in TrySetupObjectEventSprite. Coming
+        // back from a battle or a menu respawns the objects through here, so
+        // without this the character keeps its colours until the player
+        // fights someone and loses them on the way back.
+        PatchObjectPalette(graphicsInfo->paletteTag, paletteSlot);
+    }
     else if (paletteSlot >= 16)
     {
         paletteSlot -= 16;
@@ -1996,6 +2025,12 @@ void ObjectEventSetGraphicsId(struct ObjectEvent *objectEvent, u8 graphicsId)
     else if (paletteSlot == PALSLOT_NPC_SPECIAL)
     {
         LoadSpecialObjectReflectionPalette(graphicsInfo->paletteTag, graphicsInfo->paletteSlot);
+    }
+    else if (paletteSlot == PALSLOT_NPC_SPECIAL_REFLECTION)
+    {
+        // The second special bank again, for a script that swaps an object's
+        // graphics in place.
+        PatchObjectPalette(graphicsInfo->paletteTag, paletteSlot);
     }
     else if (paletteSlot >= 16)
     {
