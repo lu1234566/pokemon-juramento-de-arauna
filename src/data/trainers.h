@@ -7937,7 +7937,7 @@ const struct Trainer gTrainers[] = {
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_BRENDAN,
+        .trainerPic = TRAINER_PIC_CIRO_CONSORCIO,
         .trainerName = _("CIRO"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7949,7 +7949,7 @@ const struct Trainer gTrainers[] = {
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_BRENDAN,
+        .trainerPic = TRAINER_PIC_CIRO_CONSORCIO,
         .trainerName = _("CIRO"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7961,7 +7961,7 @@ const struct Trainer gTrainers[] = {
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_BRENDAN,
+        .trainerPic = TRAINER_PIC_CIRO_CONSORCIO,
         .trainerName = _("CIRO"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7973,7 +7973,7 @@ const struct Trainer gTrainers[] = {
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_MAY,
+        .trainerPic = TRAINER_PIC_CIRO_CONSORCIO,
         .trainerName = _("CIRO"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7985,7 +7985,7 @@ const struct Trainer gTrainers[] = {
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_MAY,
+        .trainerPic = TRAINER_PIC_CIRO_CONSORCIO,
         .trainerName = _("CIRO"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7997,7 +7997,7 @@ const struct Trainer gTrainers[] = {
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_MAY,
+        .trainerPic = TRAINER_PIC_CIRO_CONSORCIO,
         .trainerName = _("CIRO"),
         .items = {},
         .doubleBattle = FALSE,
