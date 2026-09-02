@@ -4492,9 +4492,11 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BirthIslandStone =
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
+// MAIRA. Battle Tower: the room's two attendants are on NPC_1, so
+// NPC_4 is the free generic bank there and stays her fallback.
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Anabel = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_4,
+    .paletteTag = OBJ_EVENT_PAL_TAG_MAIRA,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
     .size = 256,
     .width = 16,
@@ -4502,7 +4504,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Anabel = {
     .paletteSlot = PALSLOT_NPC_4,
     .shadowSize = SHADOW_SIZE_M,
     .inanimate = FALSE,
-    .disableReflectionPaletteLoad = FALSE,
+    .disableReflectionPaletteLoad = TRUE,
     .tracks = TRACKS_FOOT,
     .oam = &gObjectEventBaseOam_16x32,
     .subspriteTables = sOamTables_16x32,
@@ -4511,9 +4513,13 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Anabel = {
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
+// DARIO. Battle Dome: the thirteen-strong audience covers all four
+// generic banks, so the fallback is only a last resort -- the pool
+// bank is what he actually holds, and no reflection bank is
+// borrowable there because every base palette has an owner.
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Tucker = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1,
+    .paletteTag = OBJ_EVENT_PAL_TAG_DARIO,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
     .size = 256,
     .width = 16,
@@ -4521,7 +4527,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Tucker = {
     .paletteSlot = PALSLOT_NPC_1,
     .shadowSize = SHADOW_SIZE_M,
     .inanimate = FALSE,
-    .disableReflectionPaletteLoad = FALSE,
+    .disableReflectionPaletteLoad = TRUE,
     .tracks = TRACKS_FOOT,
     .oam = &gObjectEventBaseOam_16x32,
     .subspriteTables = sOamTables_16x32,
@@ -4530,9 +4536,10 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Tucker = {
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
+// RITA. Battle Arena: the six black belts are on NPC_3.
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Greta = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1,
+    .paletteTag = OBJ_EVENT_PAL_TAG_RITA,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
     .size = 256,
     .width = 16,
@@ -4540,7 +4547,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Greta = {
     .paletteSlot = PALSLOT_NPC_1,
     .shadowSize = SHADOW_SIZE_M,
     .inanimate = FALSE,
-    .disableReflectionPaletteLoad = FALSE,
+    .disableReflectionPaletteLoad = TRUE,
     .tracks = TRACKS_FOOT,
     .oam = &gObjectEventBaseOam_16x32,
     .subspriteTables = sOamTables_16x32,
@@ -4549,9 +4556,11 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Greta = {
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
+// AMARO. Battle Palace: the attendant is on NPC_4 and the two
+// creature dispatchers hold NPC_SPECIAL.
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Spenser = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1,
+    .paletteTag = OBJ_EVENT_PAL_TAG_AMARO,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
     .size = 256,
     .width = 16,
@@ -4559,7 +4568,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Spenser = {
     .paletteSlot = PALSLOT_NPC_1,
     .shadowSize = SHADOW_SIZE_M,
     .inanimate = FALSE,
-    .disableReflectionPaletteLoad = FALSE,
+    .disableReflectionPaletteLoad = TRUE,
     .tracks = TRACKS_FOOT,
     .oam = &gObjectEventBaseOam_16x32,
     .subspriteTables = sOamTables_16x32,
@@ -4568,17 +4577,19 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Spenser = {
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
+// NILO. Battle Factory: the six scientists sit on NPC_3, which is
+// where he used to fall back; NPC_1 measured free in that room.
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Noland = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_3,
+    .paletteTag = OBJ_EVENT_PAL_TAG_NILO,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
     .size = 256,
     .width = 16,
     .height = 32,
-    .paletteSlot = PALSLOT_NPC_3,
+    .paletteSlot = PALSLOT_NPC_1,
     .shadowSize = SHADOW_SIZE_M,
     .inanimate = FALSE,
-    .disableReflectionPaletteLoad = FALSE,
+    .disableReflectionPaletteLoad = TRUE,
     .tracks = TRACKS_FOOT,
     .oam = &gObjectEventBaseOam_16x32,
     .subspriteTables = sOamTables_16x32,
@@ -4587,9 +4598,11 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Noland = {
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
+// JACI. Battle Pike: the room holds nobody but the two dynamic
+// objects, so every generic bank is free.
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Lucy = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_4,
+    .paletteTag = OBJ_EVENT_PAL_TAG_JACI,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
     .size = 256,
     .width = 16,
@@ -4597,7 +4610,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Lucy = {
     .paletteSlot = PALSLOT_NPC_4,
     .shadowSize = SHADOW_SIZE_M,
     .inanimate = FALSE,
-    .disableReflectionPaletteLoad = FALSE,
+    .disableReflectionPaletteLoad = TRUE,
     .tracks = TRACKS_FOOT,
     .oam = &gObjectEventBaseOam_16x32,
     .subspriteTables = sOamTables_16x32,
@@ -4606,9 +4619,10 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Lucy = {
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
+// TADEU. Battle Pyramid summit: the attendant is a Hiker on NPC_1.
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Brandon = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_3,
+    .paletteTag = OBJ_EVENT_PAL_TAG_TADEU,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
     .size = 256,
     .width = 16,
@@ -4616,7 +4630,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Brandon = {
     .paletteSlot = PALSLOT_NPC_3,
     .shadowSize = SHADOW_SIZE_M,
     .inanimate = FALSE,
-    .disableReflectionPaletteLoad = FALSE,
+    .disableReflectionPaletteLoad = TRUE,
     .tracks = TRACKS_FOOT,
     .oam = &gObjectEventBaseOam_16x32,
     .subspriteTables = sOamTables_16x32,

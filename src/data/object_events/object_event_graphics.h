@@ -17,6 +17,15 @@ const u16 gObjectEventPal_Breno[] = INCGFX_U16("graphics/object_events/palettes/
 // the Arauna virtual graphics registry instead.
 const u32 gObjectEventPic_Raul[] = INCGFX_U32("graphics/object_events/pics/people/arauna/raul.png", ".4bpp", "-mwidth 2 -mheight 4");
 const u16 gObjectEventPal_Raul[] = INCGFX_U16("graphics/object_events/palettes/raul.pal", ".gbapal");
+// The seven Battle Circuit Masters. Their art lands on the Frontier Brain
+// files the engine already names; only the colours are their own.
+const u16 gObjectEventPal_Maira[] = INCGFX_U16("graphics/object_events/palettes/maira.pal", ".gbapal");
+const u16 gObjectEventPal_Dario[] = INCGFX_U16("graphics/object_events/palettes/dario.pal", ".gbapal");
+const u16 gObjectEventPal_Nilo[] = INCGFX_U16("graphics/object_events/palettes/nilo.pal", ".gbapal");
+const u16 gObjectEventPal_Jaci[] = INCGFX_U16("graphics/object_events/palettes/jaci.pal", ".gbapal");
+const u16 gObjectEventPal_Rita[] = INCGFX_U16("graphics/object_events/palettes/rita.pal", ".gbapal");
+const u16 gObjectEventPal_Amaro[] = INCGFX_U16("graphics/object_events/palettes/amaro.pal", ".gbapal");
+const u16 gObjectEventPal_Tadeu[] = INCGFX_U16("graphics/object_events/palettes/tadeu.pal", ".gbapal");
 const u16 gObjectEventPal_Brendan[] = INCGFX_U16("graphics/object_events/palettes/brendan.pal", ".gbapal");
 const u32 gObjectEventPic_RubySapphireBrendanNormal[] = INCGFX_U32("graphics/object_events/pics/people/ruby_sapphire_brendan/walking.png", ".4bpp", "-mwidth 2 -mheight 4");
 const u32 gObjectEventPic_RubySapphireBrendanRunning[] = INCGFX_U32("graphics/object_events/pics/people/ruby_sapphire_brendan/running.png", ".4bpp", "-mwidth 2 -mheight 4");

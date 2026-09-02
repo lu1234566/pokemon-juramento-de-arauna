@@ -580,6 +580,13 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_TAG_BENTO                          0x11C4
 #define OBJ_EVENT_PAL_TAG_BRENO                          0x11C5
 #define OBJ_EVENT_PAL_TAG_RAUL                           0x11C6
+#define OBJ_EVENT_PAL_TAG_MAIRA                            0x11C7
+#define OBJ_EVENT_PAL_TAG_DARIO                            0x11C8
+#define OBJ_EVENT_PAL_TAG_NILO                             0x11C9
+#define OBJ_EVENT_PAL_TAG_JACI                             0x11CA
+#define OBJ_EVENT_PAL_TAG_RITA                             0x11CB
+#define OBJ_EVENT_PAL_TAG_AMARO                            0x11CC
+#define OBJ_EVENT_PAL_TAG_TADEU                            0x11CD
 
 #define OBJ_EVENT_PAL_TAG_NONE                    0x11FF
 
@@ -669,6 +676,13 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_Bento,                 OBJ_EVENT_PAL_TAG_BENTO},
     {gObjectEventPal_Breno,                 OBJ_EVENT_PAL_TAG_BRENO},
     {gObjectEventPal_Raul,                  OBJ_EVENT_PAL_TAG_RAUL},
+    {gObjectEventPal_Maira,            OBJ_EVENT_PAL_TAG_MAIRA},
+    {gObjectEventPal_Dario,            OBJ_EVENT_PAL_TAG_DARIO},
+    {gObjectEventPal_Nilo,             OBJ_EVENT_PAL_TAG_NILO},
+    {gObjectEventPal_Jaci,             OBJ_EVENT_PAL_TAG_JACI},
+    {gObjectEventPal_Rita,             OBJ_EVENT_PAL_TAG_RITA},
+    {gObjectEventPal_Amaro,            OBJ_EVENT_PAL_TAG_AMARO},
+    {gObjectEventPal_Tadeu,            OBJ_EVENT_PAL_TAG_TADEU},
 #ifdef BUGFIX
         {gObjectEventPal_AraunaIemanja,                           OBJ_EVENT_PAL_TAG_ARAUNA_IEMANJA},
     {gObjectEventPal_AraunaLobisomem,                         OBJ_EVENT_PAL_TAG_ARAUNA_LOBISOMEM},
@@ -2466,6 +2480,13 @@ static const u16 sAraunaExclusivePaletteTags[] = {
     OBJ_EVENT_PAL_TAG_BENTO,
     OBJ_EVENT_PAL_TAG_BRENO,
     OBJ_EVENT_PAL_TAG_RAUL,
+    OBJ_EVENT_PAL_TAG_MAIRA,
+    OBJ_EVENT_PAL_TAG_DARIO,
+    OBJ_EVENT_PAL_TAG_NILO,
+    OBJ_EVENT_PAL_TAG_JACI,
+    OBJ_EVENT_PAL_TAG_RITA,
+    OBJ_EVENT_PAL_TAG_AMARO,
+    OBJ_EVENT_PAL_TAG_TADEU,
     OBJ_EVENT_PAL_TAG_NONE
 };
 
