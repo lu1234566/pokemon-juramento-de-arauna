@@ -4,6 +4,7 @@ MossdeepCity_SpaceCenter_2F_MapScripts::
 	.byte 0
 
 MossdeepCity_SpaceCenter_2F_OnTransition:
+	setvar VAR_OBJ_GFX_ID_B, ARAUNA_VIRTUAL_GFX_RAUL
 	call_if_eq VAR_MOSSDEEP_CITY_STATE, 2, MossdeepCity_SpaceCenter_2F_EventScript_MoveCivilians
 	call_if_eq VAR_MOSSDEEP_SPACE_CENTER_STATE, 2, MossdeepCity_SpaceCenter_2F_EventScript_MoveDefeatedGrunts
 	end

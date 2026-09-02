@@ -156,6 +156,12 @@ static u8 FindObjectEventPaletteIndexByTag(u16);
 static void _PatchObjectPalette(u16, u8);
 static bool8 AraunaWantsExclusivePalette(u16);
 static u8 AraunaExclusivePaletteSlot(const struct ObjectEventGraphicsInfo *);
+static u8 AraunaClaimReflectionSlot(const struct ObjectEventGraphicsInfo *);
+static bool8 AraunaReflectionSlotIsIdle(u8);
+static void AraunaReleaseReflectionSlotForBase(u8);
+static void AraunaRehomeExclusiveCharacter(u16, u8);
+static const struct ObjectEventGraphicsInfo *AraunaGetVirtualGraphicsInfo(u16);
+static void AraunaResetReflectionClaims(void);
 static bool8 ObjectEventDoesElevationMatch(struct ObjectEvent *, u8);
 static void SpriteCB_CameraObject(struct Sprite *);
 static void CameraObject_Init(struct Sprite *);
@@ -194,7 +200,17 @@ const u8 gReflectionEffectPaletteMap[16] = {
         [PALSLOT_NPC_3_REFLECTION]       = PALSLOT_NPC_3_REFLECTION,
         [PALSLOT_NPC_4_REFLECTION]       = PALSLOT_NPC_4_REFLECTION,
         [PALSLOT_NPC_SPECIAL]            = PALSLOT_NPC_SPECIAL_REFLECTION,
-        [PALSLOT_NPC_SPECIAL_REFLECTION] = PALSLOT_NPC_SPECIAL_REFLECTION
+        [PALSLOT_NPC_SPECIAL_REFLECTION] = PALSLOT_NPC_SPECIAL_REFLECTION,
+        // Banks twelve to fifteen belong to the general sprite palette
+        // allocator. No vanilla object event is ever on one, so these four
+        // entries were zero and unreachable; an Arauna character holding a
+        // pool bank can reach them, and a zero here would draw its reflection
+        // out of the player's palette. Mapping each to itself is what every
+        // other bank without a tinted twin already does.
+        [12]                             = 12,
+        [13]                             = 13,
+        [14]                             = 14,
+        [15]                             = 15
 };
 
 static const struct SpriteTemplate sCameraSpriteTemplate = {
@@ -563,6 +579,7 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_TAG_LUZIA                          0x11C3
 #define OBJ_EVENT_PAL_TAG_BENTO                          0x11C4
 #define OBJ_EVENT_PAL_TAG_BRENO                          0x11C5
+#define OBJ_EVENT_PAL_TAG_RAUL                           0x11C6
 
 #define OBJ_EVENT_PAL_TAG_NONE                    0x11FF
 
@@ -651,6 +668,7 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_Luzia,                 OBJ_EVENT_PAL_TAG_LUZIA},
     {gObjectEventPal_Bento,                 OBJ_EVENT_PAL_TAG_BENTO},
     {gObjectEventPal_Breno,                 OBJ_EVENT_PAL_TAG_BRENO},
+    {gObjectEventPal_Raul,                  OBJ_EVENT_PAL_TAG_RAUL},
 #ifdef BUGFIX
         {gObjectEventPal_AraunaIemanja,                           OBJ_EVENT_PAL_TAG_ARAUNA_IEMANJA},
     {gObjectEventPal_AraunaLobisomem,                         OBJ_EVENT_PAL_TAG_ARAUNA_LOBISOMEM},
@@ -1626,6 +1644,11 @@ static u8 TrySetupObjectEventSprite(const struct ObjectEventTemplate *objectEven
     objectEvent = &gObjectEvents[objectEventId];
     graphicsInfo = GetObjectEventGraphicsInfo(objectEvent->graphicsId);
     paletteSlot = graphicsInfo->paletteSlot;
+    // Anything not on the exclusive pool takes the bank its graphics info
+    // names, so a loan of that bank's reflection ends here -- before this
+    // sprite exists and can reflect into it.
+    if (!AraunaWantsExclusivePalette(graphicsInfo->paletteTag))
+        AraunaReleaseReflectionSlotForBase(paletteSlot);
     if (AraunaWantsExclusivePalette(graphicsInfo->paletteTag))
     {
         paletteSlot = AraunaExclusivePaletteSlot(graphicsInfo);
@@ -1971,6 +1994,8 @@ static void SpawnObjectEventOnReturnToField(u8 objectEventId, s16 x, s16 y)
 
     *(u16 *)&spriteTemplate.paletteTag = TAG_NONE;
     paletteSlot = graphicsInfo->paletteSlot;
+    if (!AraunaWantsExclusivePalette(graphicsInfo->paletteTag))
+        AraunaReleaseReflectionSlotForBase(paletteSlot);
     if (AraunaWantsExclusivePalette(graphicsInfo->paletteTag))
     {
         paletteSlot = AraunaExclusivePaletteSlot(graphicsInfo);
@@ -2058,6 +2083,8 @@ void ObjectEventSetGraphicsId(struct ObjectEvent *objectEvent, u8 graphicsId)
     graphicsInfo = GetObjectEventGraphicsInfo(graphicsId);
     sprite = &gSprites[objectEvent->spriteId];
     paletteSlot = graphicsInfo->paletteSlot;
+    if (!AraunaWantsExclusivePalette(graphicsInfo->paletteTag))
+        AraunaReleaseReflectionSlotForBase(paletteSlot);
     if (AraunaWantsExclusivePalette(graphicsInfo->paletteTag))
     {
         paletteSlot = AraunaExclusivePaletteSlot(graphicsInfo);
@@ -2164,12 +2191,40 @@ static u16 AraunaOverworldSelection(u16 var)
     return selection;
 }
 
+// The Arauna virtual graphics registry: characters addressed by a two-byte id
+// held in an object gfx var, for whom the one-byte id space has nothing left.
+// The engine never names an entry; a character is added by putting its
+// graphics info here and its constant in include/constants/event_objects.h.
+static const struct ObjectEventGraphicsInfo *const sAraunaVirtualGraphicsInfo[ARAUNA_VIRTUAL_GFX_COUNT] = {
+    [ARAUNA_VIRTUAL_GFX_RAUL - ARAUNA_VIRTUAL_GFX_START] = &gObjectEventGraphicsInfo_Raul,
+};
+
+static const struct ObjectEventGraphicsInfo *AraunaGetVirtualGraphicsInfo(u16 virtualId)
+{
+    u16 index = virtualId - ARAUNA_VIRTUAL_GFX_START;
+
+    // An id past the end of the registry falls back exactly the way an id
+    // past NUM_OBJ_EVENT_GFX does, so a var left holding a stale value shows
+    // a placeholder NPC instead of reading off the end of a table.
+    if (index >= ARRAY_COUNT(sAraunaVirtualGraphicsInfo)
+     || sAraunaVirtualGraphicsInfo[index] == NULL)
+        return gObjectEventGraphicsInfoPointers[OBJ_EVENT_GFX_NINJA_BOY];
+
+    return sAraunaVirtualGraphicsInfo[index];
+}
+
 const struct ObjectEventGraphicsInfo *GetObjectEventGraphicsInfo(u8 graphicsId)
 {
     u8 bard;
+    u16 resolved = graphicsId;
 
-    if (graphicsId >= OBJ_EVENT_GFX_VARS)
-        graphicsId = VarGetObjectEventGraphicsId(graphicsId - OBJ_EVENT_GFX_VARS);
+    if (resolved >= OBJ_EVENT_GFX_VARS)
+    {
+        resolved = VarGetObjectEventGraphicsId(resolved - OBJ_EVENT_GFX_VARS);
+        if (resolved >= ARAUNA_VIRTUAL_GFX_START)
+            return AraunaGetVirtualGraphicsInfo(resolved);
+        graphicsId = resolved;
+    }
 
     if (graphicsId == OBJ_EVENT_GFX_BARD)
     {
@@ -2194,8 +2249,18 @@ const struct ObjectEventGraphicsInfo *GetObjectEventGraphicsInfo(u8 graphicsId)
 
 static void SetObjectEventDynamicGraphicsId(struct ObjectEvent *objectEvent)
 {
-    if (objectEvent->graphicsId >= OBJ_EVENT_GFX_VARS)
-        objectEvent->graphicsId = VarGetObjectEventGraphicsId(objectEvent->graphicsId - OBJ_EVENT_GFX_VARS);
+    u16 resolved;
+
+    if (objectEvent->graphicsId < OBJ_EVENT_GFX_VARS)
+        return;
+
+    resolved = VarGetObjectEventGraphicsId(objectEvent->graphicsId - OBJ_EVENT_GFX_VARS);
+    // A virtual id does not fit in the one byte an object event stores, so
+    // the object keeps its var id and resolves it again on every lookup.
+    // Writing the truncated value here is what would turn it into somebody
+    // else's graphic.
+    if (resolved < ARAUNA_VIRTUAL_GFX_START)
+        objectEvent->graphicsId = resolved;
 }
 
 void SetObjectInvisibility(u8 localId, u8 mapNum, u8 mapGroup, bool8 invisible)
@@ -2271,6 +2336,8 @@ void FreeAndReserveObjectSpritePalettes(void)
 {
     FreeAllSpritePalettes();
     gReservedSpritePaletteCount = OBJ_PALSLOT_COUNT;
+    // The pool is empty again, so no reflection bank is on loan any more.
+    AraunaResetReflectionClaims();
 }
 
 static void LoadObjectEventPalette(u16 paletteTag)
@@ -2398,6 +2465,7 @@ static const u16 sAraunaExclusivePaletteTags[] = {
     OBJ_EVENT_PAL_TAG_LUZIA,
     OBJ_EVENT_PAL_TAG_BENTO,
     OBJ_EVENT_PAL_TAG_BRENO,
+    OBJ_EVENT_PAL_TAG_RAUL,
     OBJ_EVENT_PAL_TAG_NONE
 };
 
@@ -2412,8 +2480,23 @@ static bool8 AraunaWantsExclusivePalette(u16 paletteTag)
     return FALSE;
 }
 
+// The four reflection banks, and which character's palette each is on loan to
+// right now. Defined here because the allocator below reads them; what the
+// loan means and how it ends is explained with the functions that manage it.
+#define ARAUNA_REFLECTION_CLAIM_COUNT (PALSLOT_NPC_4_REFLECTION - PALSLOT_NPC_1_REFLECTION + 1)
+#define ARAUNA_REFLECTION_OF(base)    ((base) + (PALSLOT_NPC_1_REFLECTION - PALSLOT_NPC_1))
+#define ARAUNA_BASE_OF(reflection)    ((reflection) - (PALSLOT_NPC_1_REFLECTION - PALSLOT_NPC_1))
+
+static u16 sAraunaReflectionClaims[ARAUNA_REFLECTION_CLAIM_COUNT];
+// Set while a loan is being handed back, so the borrower being rehoused
+// cannot immediately claim the very bank it is vacating. Zero means nothing
+// is blocked: bank zero is the player's and is never a reflection bank.
+#define ARAUNA_NO_BLOCKED_SLOT 0
+static u8 sAraunaBlockedReflectionSlot;
+
 // Returns the bank this character should draw from: one of its own if the
-// allocator had a spare, otherwise the slot the graphics info asked for.
+// allocator had a spare, otherwise a reflection bank nobody reflects into,
+// otherwise the slot the graphics info asked for.
 static u8 AraunaExclusivePaletteSlot(const struct ObjectEventGraphicsInfo *graphicsInfo)
 {
     u8 index;
@@ -2428,9 +2511,169 @@ static u8 AraunaExclusivePaletteSlot(const struct ObjectEventGraphicsInfo *graph
 
     index = LoadSpritePalette(&sObjectEventSpritePalettes[i]);
     if (index == 0xFF)
-        return graphicsInfo->paletteSlot;
+        return AraunaClaimReflectionSlot(graphicsInfo);
+
+    // A pool bank is the better home, so a reflection bank borrowed earlier
+    // for this same character goes back the moment one frees up.
+    for (i = PALSLOT_NPC_1_REFLECTION; i <= PALSLOT_NPC_4_REFLECTION; i++)
+    {
+        if (sAraunaReflectionClaims[i - PALSLOT_NPC_1_REFLECTION] == graphicsInfo->paletteTag)
+        {
+            sAraunaReflectionClaims[i - PALSLOT_NPC_1_REFLECTION] = OBJ_EVENT_PAL_TAG_NONE;
+            PatchObjectPalette(GetObjectPaletteTag(i), i);
+        }
+    }
 
     return index;
+}
+
+// ===== Arauna: borrowing a reflection bank nobody reflects into =============
+//
+// Four of the twelve reserved banks hold reflections: one per generic NPC
+// palette, filled at map load whether or not anything will ever use them.
+// A reflection bank is read by the hardware only when a sprite drawn from
+// its base palette acquires a reflection sprite, and that cannot happen
+// while nothing on the map is on that base palette at all.
+//
+// So the test here is per owner, never per map. "This map has water" says
+// nothing: the AGUAS DE M'BOI scene at Sootopolis has water in front of the
+// characters and still leaves three of the four base palettes with no owner,
+// because the five people standing in it all have colours of their own.
+//
+// A borrowed bank is recorded, not merely handed out. Two things can end the
+// loan: the map changes, which clears the whole table along with the pool, or
+// an object event arrives that wants the base palette the loan mirrors. The
+// second case is the one that would otherwise corrupt quietly, so the arrival
+// path gives the bank back -- rebuilding the engine's reflection palette from
+// the same tag set InitObjectEventPalettes used -- and moves the borrower to
+// another bank before the newcomer's sprite exists to reflect.
+static void AraunaResetReflectionClaims(void)
+{
+    u32 i;
+
+    for (i = 0; i < ARAUNA_REFLECTION_CLAIM_COUNT; i++)
+        sAraunaReflectionClaims[i] = OBJ_EVENT_PAL_TAG_NONE;
+    sAraunaBlockedReflectionSlot = ARAUNA_NO_BLOCKED_SLOT;
+}
+
+// Idle means two things at once, and both are measured rather than assumed:
+// nothing is drawing from the base palette or from the reflection bank right
+// now, and no live object event names that base palette as its own.
+static bool8 AraunaReflectionSlotIsIdle(u8 reflectionSlot)
+{
+    u8 baseSlot = ARAUNA_BASE_OF(reflectionSlot);
+    u32 i;
+
+    for (i = 0; i < MAX_SPRITES; i++)
+    {
+        if (!gSprites[i].inUse)
+            continue;
+        if (gSprites[i].oam.paletteNum == baseSlot
+         || gSprites[i].oam.paletteNum == reflectionSlot)
+            return FALSE;
+    }
+
+    for (i = 0; i < OBJECT_EVENTS_COUNT; i++)
+    {
+        const struct ObjectEventGraphicsInfo *graphicsInfo;
+
+        if (!gObjectEvents[i].active)
+            continue;
+
+        graphicsInfo = GetObjectEventGraphicsInfo(gObjectEvents[i].graphicsId);
+        // For a character on the exclusive pool the slot in its graphics info
+        // is only a fallback, not a claim on that bank. Where it really is
+        // shows in its sprite, which the loop above already read.
+        if (AraunaWantsExclusivePalette(graphicsInfo->paletteTag))
+            continue;
+        if (graphicsInfo->paletteSlot == baseSlot)
+            return FALSE;
+    }
+
+    return TRUE;
+}
+
+static u8 AraunaClaimReflectionSlot(const struct ObjectEventGraphicsInfo *graphicsInfo)
+{
+    u8 slot;
+
+    for (slot = PALSLOT_NPC_1_REFLECTION; slot <= PALSLOT_NPC_4_REFLECTION; slot++)
+    {
+        if (slot != sAraunaBlockedReflectionSlot
+         && sAraunaReflectionClaims[slot - PALSLOT_NPC_1_REFLECTION] == graphicsInfo->paletteTag)
+            return slot;
+    }
+
+    // Highest first. The order is arbitrary and only has to be stable; what
+    // makes a bank safe is the idle test above and the handback below, not
+    // which one is tried first.
+    for (slot = PALSLOT_NPC_4_REFLECTION; slot >= PALSLOT_NPC_1_REFLECTION; slot--)
+    {
+        if (slot == sAraunaBlockedReflectionSlot)
+            continue;
+        if (sAraunaReflectionClaims[slot - PALSLOT_NPC_1_REFLECTION] != OBJ_EVENT_PAL_TAG_NONE)
+            continue;
+        if (!AraunaReflectionSlotIsIdle(slot))
+            continue;
+
+        sAraunaReflectionClaims[slot - PALSLOT_NPC_1_REFLECTION] = graphicsInfo->paletteTag;
+        PatchObjectPalette(graphicsInfo->paletteTag, slot);
+        return slot;
+    }
+
+    return graphicsInfo->paletteSlot;
+}
+
+// Move whoever holds a bank being handed back. Asking the allocator again is
+// what decides where they go, so they land on a pool bank if one has freed
+// and on another idle reflection bank otherwise, and only fall back to the
+// generic slot in their graphics info when neither exists.
+static void AraunaRehomeExclusiveCharacter(u16 paletteTag, u8 vacatedSlot)
+{
+    u8 replacement = 0xFF;
+    u32 i;
+
+    for (i = 0; i < OBJECT_EVENTS_COUNT; i++)
+    {
+        const struct ObjectEventGraphicsInfo *graphicsInfo;
+        struct Sprite *sprite;
+
+        if (!gObjectEvents[i].active)
+            continue;
+
+        graphicsInfo = GetObjectEventGraphicsInfo(gObjectEvents[i].graphicsId);
+        if (graphicsInfo->paletteTag != paletteTag)
+            continue;
+
+        sprite = &gSprites[gObjectEvents[i].spriteId];
+        if (sprite->oam.paletteNum != vacatedSlot)
+            continue;
+
+        if (replacement == 0xFF)
+            replacement = AraunaExclusivePaletteSlot(graphicsInfo);
+        sprite->oam.paletteNum = replacement;
+    }
+}
+
+static void AraunaReleaseReflectionSlotForBase(u8 baseSlot)
+{
+    u8 slot;
+    u16 paletteTag;
+
+    if (baseSlot < PALSLOT_NPC_1 || baseSlot > PALSLOT_NPC_4)
+        return;
+
+    slot = ARAUNA_REFLECTION_OF(baseSlot);
+    paletteTag = sAraunaReflectionClaims[slot - PALSLOT_NPC_1_REFLECTION];
+    if (paletteTag == OBJ_EVENT_PAL_TAG_NONE)
+        return;
+
+    sAraunaReflectionClaims[slot - PALSLOT_NPC_1_REFLECTION] = OBJ_EVENT_PAL_TAG_NONE;
+    PatchObjectPalette(GetObjectPaletteTag(slot), slot);
+
+    sAraunaBlockedReflectionSlot = slot;
+    AraunaRehomeExclusiveCharacter(paletteTag, slot);
+    sAraunaBlockedReflectionSlot = ARAUNA_NO_BLOCKED_SLOT;
 }
 
 static void _PatchObjectPalette(u16 tag, u8 slot)

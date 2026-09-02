@@ -399,7 +399,7 @@
       "overworld_palette": "graphics/object_events/palettes/otacilio.pal",
       "palette_tag": "OBJ_EVENT_PAL_TAG_OTACILIO",
       "palette_slot": "ARAUNA_EXCLUSIVE_POOL",
-      "palette_slot_reason": "Allocated from the general sprite palette pool. In SootopolisCity's five-way scene the pool is full and he falls back to PALSLOT_NPC_1, the generic bank he used before; everywhere else he holds a bank of his own."
+      "palette_slot_reason": "Allocated from the general sprite palette pool. In SootopolisCity's five-way scene the pool is full and he takes an idle reflection bank instead -- measured per owner, not per map: nothing in that scene is on NPC_2, NPC_3 or NPC_4, so their reflection banks are never read. The fallback in his graphics info is PALSLOT_NPC_1 and is not reached there."
     },
     {
       "name": "LUZIA",
@@ -420,14 +420,21 @@
     {
       "name": "RAUL",
       "surfaces": [
-        "front"
+        "front",
+        "overworld"
       ],
       "front": "graphics/trainers/front_pics/magma_admin.png",
       "trainer_pic": "TRAINER_PIC_MAGMA_ADMIN",
       "trainer_pic_index": 34,
-      "surfaces_not_applicable": {
-        "overworld": "Blocked on graphics-id capacity, not palettes. His map objects use OBJ_EVENT_GFX_MAGMA_MEMBER_M, the generic grunt graphic on fourteen maps, and there is no free static id to move him to: every unused doll is already claimed by another Arauna character, and NUM_OBJ_EVENT_GFX cannot grow because OBJ_EVENT_GFX_VARS is NUM+1 and the sixteen var ids already end at 255."
-      }
+      "object_event": "OBJ_EVENT_GFX_VAR_B",
+      "virtual_graphics_id": "ARAUNA_VIRTUAL_GFX_RAUL",
+      "graphics_info": "Raul",
+      "overworld": "graphics/object_events/pics/people/arauna/raul.png",
+      "overworld_palette": "graphics/object_events/palettes/raul.pal",
+      "palette_tag": "OBJ_EVENT_PAL_TAG_RAUL",
+      "palette_slot": "ARAUNA_EXCLUSIVE_POOL",
+      "palette_slot_reason": "Allocated from the pool like the rest of the story cast. His fallback is PALSLOT_NPC_1, measured empty on all three of his maps; PALSLOT_NPC_2 is where the Magma grunts stand and falling back onto their bank would put him in their colours again.",
+      "graphics_id_reason": "He has no static graphics id: every unused doll is already another Arauna character's and NUM_OBJ_EVENT_GFX cannot grow. He is reached instead through the Arauna virtual graphics registry, with OBJ_EVENT_GFX_VAR_B in the map data and ARAUNA_VIRTUAL_GFX_RAUL in VAR_OBJ_GFX_ID_B, set by the ON_TRANSITION script of each of his three maps."
     },
     {
       "name": "BENTO",

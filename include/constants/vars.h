@@ -40,7 +40,7 @@
 #define VAR_OBJ_GFX_ID_8           0x4018
 #define VAR_OBJ_GFX_ID_9           0x4019
 #define VAR_OBJ_GFX_ID_A           0x401A
-#define VAR_OBJ_GFX_ID_B           0x401B
+#define VAR_OBJ_GFX_ID_B           0x401B  // Also RAUL's channel; see below.
 #define VAR_OBJ_GFX_ID_C           0x401C  // RESERVED: Arauna overworld channel A (VAR_ARAUNA_OW_A). Not free.
 #define VAR_OBJ_GFX_ID_D           0x401D  // RESERVED: Arauna overworld channel B (VAR_ARAUNA_OW_B). Not free.
 #define VAR_OBJ_GFX_ID_E           0x401E
@@ -55,7 +55,16 @@
 //
 // THEY ARE NOT FREE. Anything else that writes VAR_OBJ_GFX_ID_C or _D will
 // change what an Arauna overworld object looks like, wherever one stands.
-// VAR_OBJ_GFX_ID_B is the one object-gfx var still unclaimed.
+// VAR_OBJ_GFX_ID_B carries RAUL. Unlike _C and _D it is shared rather than
+// reserved: it is also decoration slot twelve in the secret bases and the two
+// bedrooms. That is safe because an object gfx var is per-map scratch -- every
+// decoration room rewrites all of them from the save on entry
+// (InitSecretBaseDecorationSprites), and RAUL's three maps write this one in
+// their ON_TRANSITION before any object spawns. Whoever owns the current map
+// owns the var, which is how vanilla already uses _0, _1, _E and _F.
+//
+// It holds ARAUNA_VIRTUAL_GFX_RAUL, a two-byte virtual graphics id rather than
+// a one-byte graphics id; see include/constants/event_objects.h.
 // tools/arauna/check_overworld_registry.py fails the build's static check if
 // anything outside the Arauna system starts writing them.
 #define VAR_ARAUNA_OW_A            VAR_OBJ_GFX_ID_C

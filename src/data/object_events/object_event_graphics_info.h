@@ -2603,6 +2603,33 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Steven = {
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
+// RAUL. Reached through the Arauna virtual graphics registry rather than a
+// graphics id, so this struct is not in gObjectEventGraphicsInfoPointers and
+// NUM_OBJ_EVENT_GFX does not move. paletteSlot is the fallback the exclusive
+// palette allocator uses when neither a pool bank nor an idle reflection bank
+// is available. It is PALSLOT_NPC_1 because that bank measured empty on all
+// three of his maps, while PALSLOT_NPC_2 is where the Magma grunts stand --
+// falling back onto their bank is exactly the picture this work exists to
+// stop.
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Raul = {
+    .tileTag = TAG_NONE,
+    .paletteTag = OBJ_EVENT_PAL_TAG_RAUL,
+    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256,
+    .width = 16,
+    .height = 32,
+    .paletteSlot = PALSLOT_NPC_1,
+    .shadowSize = SHADOW_SIZE_M,
+    .inanimate = FALSE,
+    .disableReflectionPaletteLoad = TRUE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32,
+    .subspriteTables = sOamTables_16x32,
+    .anims = sAnimTable_Standard,
+    .images = sPicTable_Raul,
+    .affineAnims = gDummySpriteAffineAnimTable,
+};
+
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Wally = {
     .tileTag = TAG_NONE,
     .paletteTag = OBJ_EVENT_PAL_TAG_VAL,

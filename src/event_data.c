@@ -188,7 +188,10 @@ bool8 VarSet(u16 id, u16 value)
     return TRUE;
 }
 
-u8 VarGetObjectEventGraphicsId(u8 id)
+// The var is sixteen bits and so is what comes back. Truncating here is what
+// used to make an object gfx var no wider than a graphics id; the callers
+// decide what to do with a value that does not fit in one byte.
+u16 VarGetObjectEventGraphicsId(u8 id)
 {
     return VarGet(VAR_OBJ_GFX_ID_0 + id);
 }

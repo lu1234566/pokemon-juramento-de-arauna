@@ -10,9 +10,10 @@ belongs to the general sprite palette allocator, handed out by tag, and
 weather claims two of those the moment the overworld starts.
 
 So the real budget on a water-reflection map is two pooled banks plus the two
-special slots, and a scene that wants more gets the documented fallback rather
-than a wrong bank. This checks the parts of that arrangement a source edit can
-break:
+special slots, plus whichever of the four NPC reflection banks no live object
+event can reflect into. A scene that wants more than that gets the documented
+fallback rather than a wrong bank. This checks the parts of that arrangement a
+source edit can break:
 
   - a character declared as pool-allocated is actually in the pool list;
   - a character declared on a fixed special slot is not also in the pool list,
@@ -23,7 +24,19 @@ break:
   - the reserve boundary is still OBJ_PALSLOT_COUNT, so banks the allocator
     hands out cannot overlap the object-event slots;
   - the forbidden `16 + PALSLOT_...` spelling has not come back;
-  - a manifest blocker is not removed while the asset is still missing.
+  - a manifest blocker is not removed while the asset is still missing;
+  - a borrowed reflection bank is only ever one of the four NPC ones, is
+    decided by measured occupancy rather than by map, is given back on every
+    path where a generic NPC arrives, and is released with the pool at map
+    load;
+  - the widest scene still fits in the budget, counting borrowable banks;
+  - the virtual graphics registry is bounded, is reached only through the
+    ARAUNA_VIRTUAL_GFX_* constants, and falls back for an id past its end;
+  - a character on a virtual id has that id defined and in the table, has a
+    map object using the matching OBJ_EVENT_GFX_VAR_x, and has that var
+    written before objects spawn on every map that places it;
+  - RAUL draws his own art, not the Magma grunt's;
+  - the one-byte graphics id and NUM_OBJ_EVENT_GFX have not moved.
 
 Nothing matches on line numbers.
 """
@@ -139,6 +152,147 @@ def main() -> int:
                     missing.append(f"{c['name']} {surface}")
     check(not missing, "every declared surface has its asset on disk",
           ", ".join(missing) if missing else "none")
+
+    # ---- borrowed reflection banks -------------------------------------
+    def body_of(name: str) -> str:
+        """The definition, not the forward declaration above it."""
+        m = re.search(r"\b" + name + r"\([^;]*?\)\s*\n\{.*?\n\}\n",
+                      movement, re.S)
+        return m.group(0) if m else ""
+
+    claim_body = body_of("AraunaClaimReflectionSlot")
+    check(bool(claim_body), "the reflection-bank claim exists")
+    named = set(re.findall(r"PALSLOT_\w+", claim_body))
+    stray = named - {"PALSLOT_NPC_1_REFLECTION", "PALSLOT_NPC_4_REFLECTION"}
+    check(not stray, "only the four NPC reflection banks can be borrowed",
+          ", ".join(sorted(stray)) if stray else
+          "PALSLOT_NPC_1_REFLECTION..PALSLOT_NPC_4_REFLECTION")
+
+    idle_body = body_of("AraunaReflectionSlotIsIdle")
+    check(bool(idle_body), "the idle test exists")
+    # Measured per owner, never by map. A map name or the player's location
+    # appearing here is the rule this work exists to refuse.
+    by_map = re.findall(r"MAP_[A-Z0-9_]+|gSaveBlock1Ptr->location",
+                        idle_body + claim_body)
+    check(not by_map, "the idle test is measured, not decided by map",
+          ", ".join(sorted(set(by_map))) if by_map else
+          "reads gSprites and gObjectEvents only")
+    check("gSprites[" in idle_body and "gObjectEvents[" in idle_body,
+          "the idle test reads both live sprites and live object events")
+
+    releases = len(re.findall(r"AraunaReleaseReflectionSlotForBase\(paletteSlot\)",
+                              movement))
+    assigns = len(re.findall(
+        r"paletteSlot = graphicsInfo->paletteSlot;", movement))
+    check(releases == assigns and assigns >= 3,
+          "every path that hands out a base slot gives a loan back first",
+          f"{releases} handbacks for {assigns} assignments")
+
+    reserve = re.search(r"void FreeAndReserveObjectSpritePalettes\(void\)"
+                        r".*?\n\}\n", movement, re.S)
+    check(bool(reserve) and "AraunaResetReflectionClaims" in reserve.group(0),
+          "loans are released when the palette pool is cleared")
+
+    # ---- the widest scene still fits -----------------------------------
+    # Two pool banks after weather, plus the four borrowable reflection banks,
+    # plus the two special slots. Counted from the maps rather than assumed.
+    pool_gfx = {c["object_event"].replace("OBJ_EVENT_GFX_", ""): c["name"]
+                for c in cast
+                if c.get("palette_slot") == POOL_SLOT and c.get("object_event")}
+    worst, worst_map = 0, ""
+    for ev in (ROOT / "data/maps").glob("*/events.inc"):
+        here = {pool_gfx[g] for g in re.findall(
+            r"object_event \d+, OBJ_EVENT_GFX_(\w+),",
+            ev.read_text(encoding="utf-8")) if g in pool_gfx}
+        if len(here) > worst:
+            worst, worst_map = len(here), ev.parent.name
+    budget = (16 - 12) - 2 + 4          # allocator pool less weather, plus loans
+    check(worst <= budget,
+          "the widest pooled scene fits in the palette budget",
+          f"{worst_map} wants {worst}, budget is {budget}")
+
+    # ---- the virtual graphics registry ---------------------------------
+    events_h = (ROOT / "include/constants/event_objects.h").read_text(
+        encoding="utf-8")
+    virt_consts = dict(re.findall(
+        r"#define (ARAUNA_VIRTUAL_GFX_\w+)\s+(.+)", events_h))
+    declared_count = virt_consts.get("ARAUNA_VIRTUAL_GFX_COUNT", "").strip()
+    vtable = re.search(r"sAraunaVirtualGraphicsInfo\[ARAUNA_VIRTUAL_GFX_COUNT\]"
+                       r"\s*=\s*\{(.*?)\};", movement, re.S)
+    entries = re.findall(r"\[(ARAUNA_VIRTUAL_GFX_\w+) - ARAUNA_VIRTUAL_GFX_START\]"
+                         r"\s*=\s*&gObjectEventGraphicsInfo_(\w+),",
+                         vtable.group(1) if vtable else "")
+    check(vtable is not None, "the virtual graphics registry exists",
+          f"{len(entries)} entries, ARAUNA_VIRTUAL_GFX_COUNT = {declared_count}")
+    check(declared_count.isdigit() and int(declared_count) == len(entries),
+          "the registry's declared size matches its entries",
+          f"{declared_count} declared, {len(entries)} present")
+    unknown = [c for c, _ in entries if c not in virt_consts]
+    check(not unknown, "every registry entry is named by a constant",
+          ", ".join(unknown) if unknown else "none")
+
+    getter = re.search(r"AraunaGetVirtualGraphicsInfo\(u16 virtualId\)"
+                       r".*?\n\}\n", movement, re.S)
+    body = getter.group(0) if getter else ""
+    check("ARRAY_COUNT(sAraunaVirtualGraphicsInfo)" in body
+          and "OBJ_EVENT_GFX_NINJA_BOY" in body,
+          "an id past the end of the registry falls back instead of reading on")
+
+    dispatch = re.search(r"GetObjectEventGraphicsInfo\(u8 graphicsId\)"
+                         r".*?\n\}\n", movement, re.S)
+    dbody = dispatch.group(0) if dispatch else ""
+    check("ARAUNA_VIRTUAL_GFX_START" in dbody
+          and "AraunaGetVirtualGraphicsInfo" in dbody,
+          "the dispatch reaches the registry by range, not by name")
+    named_here = [c for c in virt_consts
+                  if c not in ("ARAUNA_VIRTUAL_GFX_START",
+                               "ARAUNA_VIRTUAL_GFX_COUNT") and c in dbody]
+    check(not named_here, "no character is hardcoded in the dispatch",
+          ", ".join(named_here) if named_here else "none")
+
+    # ---- characters on a virtual id ------------------------------------
+    scripts_by_map = {p.parent.name: p.read_text(encoding="utf-8")
+                      for p in (ROOT / "data/maps").glob("*/scripts.inc")}
+    for c in cast:
+        vid = c.get("virtual_graphics_id")
+        if not vid:
+            continue
+        check(vid in virt_consts, f"{c['name']}'s virtual id is defined", vid)
+        check(vid in [e for e, _ in entries],
+              f"{c['name']}'s virtual id is in the registry")
+        gfx_var = c.get("object_event", "")
+        check(gfx_var.startswith("OBJ_EVENT_GFX_VAR_"),
+              f"{c['name']} is placed through an object gfx var", gfx_var)
+        var_name = gfx_var.replace("OBJ_EVENT_GFX_VAR_", "VAR_OBJ_GFX_ID_")
+        # Every map that places this object must name the character in the var
+        # before the map spawns anything -- or be a decoration room, which
+        # rewrites the same var from the save on entry.
+        unset = []
+        for ev in (ROOT / "data/maps").glob("*/events.inc"):
+            text = ev.read_text(encoding="utf-8")
+            for line in text.splitlines():
+                if f"OBJ_EVENT_GFX_VAR_{gfx_var[-1]}," not in line:
+                    continue
+                if "FLAG_DECORATION_" in line:
+                    continue
+                script = scripts_by_map.get(ev.parent.name, "")
+                if f"setvar {var_name}, {vid}" not in script:
+                    unset.append(ev.parent.name)
+        check(not unset, f"{c['name']}'s var is set before his maps spawn",
+              ", ".join(sorted(set(unset))) if unset else "all three maps")
+
+        body = blocks.get(c.get("graphics_info", ""), "")
+        pic = re.search(r"\.images = (\w+),", body)
+        want = f"sPicTable_{c.get('graphics_info', '')}"
+        check(bool(pic) and pic.group(1) == want,
+              f"{c['name']} draws his own art", pic.group(1) if pic else "none")
+
+    # ---- the id space itself -------------------------------------------
+    check("#define NUM_OBJ_EVENT_GFX                        239" in events_h,
+          "NUM_OBJ_EVENT_GFX has not grown")
+    field = (ROOT / "include/global.fieldmap.h").read_text(encoding="utf-8")
+    check("u8 graphicsId;" in field,
+          "an object event still stores a one-byte graphics id")
 
     width = max(len(l) for _, l, _ in results)
     failed = sum(1 for ok, _, _ in results if not ok)

@@ -1,5 +1,14 @@
 MagmaHideout_4F_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, MagmaHideout_4F_OnTransition
 	.byte 0
+
+@ RAUL's object event is OBJ_EVENT_GFX_VAR_B, so the var has to name him before
+@ the map spawns its objects. The object gfx vars are per-map scratch -- the
+@ decoration rooms rewrite the same one from the save on every entry -- so this
+@ claims it here and nothing else's use of it is disturbed.
+MagmaHideout_4F_OnTransition:
+	setvar VAR_OBJ_GFX_ID_B, ARAUNA_VIRTUAL_GFX_RAUL
+	end
 
 MagmaHideout_4F_EventScript_Maxie::
 	lockall

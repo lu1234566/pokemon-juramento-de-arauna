@@ -114,7 +114,7 @@
     },
     {
       "local_id": "LOCALID_SPACE_CENTER_TABITHA",
-      "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_M",
+      "graphics_id": "OBJ_EVENT_GFX_VAR_B",
       "x": 0,
       "y": 8,
       "elevation": 3,

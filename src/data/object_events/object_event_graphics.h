@@ -12,6 +12,11 @@ const u16 gObjectEventPal_Otacilio[] = INCGFX_U16("graphics/object_events/palett
 const u16 gObjectEventPal_Luzia[] = INCGFX_U16("graphics/object_events/palettes/luzia.pal", ".gbapal");
 const u16 gObjectEventPal_Bento[] = INCGFX_U16("graphics/object_events/palettes/bento.pal", ".gbapal");
 const u16 gObjectEventPal_Breno[] = INCGFX_U16("graphics/object_events/palettes/breno.pal", ".gbapal");
+// RAUL has no static graphics id of his own, so unlike the rest of the cast
+// his art is not attached to a repurposed vanilla slot. It is reached through
+// the Arauna virtual graphics registry instead.
+const u32 gObjectEventPic_Raul[] = INCGFX_U32("graphics/object_events/pics/people/arauna/raul.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u16 gObjectEventPal_Raul[] = INCGFX_U16("graphics/object_events/palettes/raul.pal", ".gbapal");
 const u16 gObjectEventPal_Brendan[] = INCGFX_U16("graphics/object_events/palettes/brendan.pal", ".gbapal");
 const u32 gObjectEventPic_RubySapphireBrendanNormal[] = INCGFX_U32("graphics/object_events/pics/people/ruby_sapphire_brendan/walking.png", ".4bpp", "-mwidth 2 -mheight 4");
 const u32 gObjectEventPic_RubySapphireBrendanRunning[] = INCGFX_U32("graphics/object_events/pics/people/ruby_sapphire_brendan/running.png", ".4bpp", "-mwidth 2 -mheight 4");

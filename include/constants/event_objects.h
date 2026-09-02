@@ -287,6 +287,29 @@
 #define OBJ_EVENT_GFX_VAR_E  (OBJ_EVENT_GFX_VARS + 0xE)
 #define OBJ_EVENT_GFX_VAR_F  (OBJ_EVENT_GFX_VARS + 0xF) // 255
 
+// ===== Arauna virtual overworld graphics ids ==============================
+//
+// The one-byte id space is full: 0..238 are the static graphics, 239 is the
+// gap the note above describes and 240..255 are the sixteen dynamic ids. A
+// character with no free static id is not out of ids, though, only out of
+// *bytes*: the value an object event stores is one byte, but the value a
+// VAR_OBJ_GFX_ID_x var holds is two, and only the assignment back into the
+// object event ever truncated it.
+//
+// So ids from here up live in the second byte the var already has. They are
+// never stored in an object event -- the object keeps the OBJ_EVENT_GFX_VAR_x
+// id and resolves it on every lookup -- so no engine structure grows, the
+// save layout does not move and NUM_OBJ_EVENT_GFX stays where it is. They
+// cannot collide with a real graphics id either, since every one of those is
+// below 256.
+//
+// GetObjectEventGraphicsInfo turns a virtual id into an entry of the Arauna
+// virtual graphics registry. Adding a character is a table entry and a
+// constant here; nothing in the engine names one.
+#define ARAUNA_VIRTUAL_GFX_START  0x1000
+#define ARAUNA_VIRTUAL_GFX_RAUL   (ARAUNA_VIRTUAL_GFX_START + 0)
+#define ARAUNA_VIRTUAL_GFX_COUNT  1
+
 #define SHADOW_SIZE_S   0
 #define SHADOW_SIZE_M   1
 #define SHADOW_SIZE_L   2

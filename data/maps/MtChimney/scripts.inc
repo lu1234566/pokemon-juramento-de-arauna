@@ -5,6 +5,7 @@ MtChimney_MapScripts::
 
 MtChimney_OnTransition:
 	setvar VAR_JAGGED_PASS_ASH_WEATHER, 1
+	setvar VAR_OBJ_GFX_ID_B, ARAUNA_VIRTUAL_GFX_RAUL
 	end
 
 MtChimney_OnResume:
