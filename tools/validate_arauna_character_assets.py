@@ -215,7 +215,8 @@ def graphics_info_blocks() -> dict[str, str]:
                            text, re.S))
 
 
-def validate_wiring(entry: dict, blocks: dict[str, str], errors: list[str]) -> None:
+def validate_wiring(entry: dict, blocks: dict[str, str], errors: list[str],
+                    cast: list[dict]) -> None:
     """The half that art QC cannot see: which palette this character gets."""
     name = entry["graphics_info"]
     block = blocks.get(name)
@@ -237,9 +238,30 @@ def validate_wiring(entry: dict, blocks: dict[str, str], errors: list[str]) -> N
 
     # The trap the Dalva work found: art can be perfect and still render in
     # somebody else's colours if the tag is a shared one.
+    #
+    # One character may legitimately occupy two graphics infos: the engine
+    # picks the rival slot opposite the player's gender, so CIRO is drawn from
+    # RivalBrendanNormal or RivalMayNormal and never both. That has to be
+    # declared in the manifest, and the partner has to declare it back, so a
+    # tag can never drift into being shared by accident.
+    allowed = 1
+    partner = entry.get("graphics_info_shared_with")
+    if partner:
+        mate = next((c for c in cast if c["name"] == partner), None)
+        if mate is None:
+            errors.append(f"graphics_info_shared_with names {partner!r}, "
+                          f"which is not in the manifest")
+        elif mate.get("graphics_info_shared_with") != entry["name"]:
+            errors.append(f"{partner} does not declare the shared palette back")
+        elif mate.get("palette_tag") != want_tag:
+            errors.append(f"{partner} shares the graphics info but carries "
+                          f"{mate.get('palette_tag')}, not {want_tag}")
+        else:
+            allowed = 2
+
     sharers = [other for other, body in blocks.items()
                if re.search(rf"\.paletteTag\s*=\s*{re.escape(want_tag)}\b", body)]
-    if len(sharers) != 1:
+    if len(sharers) != allowed:
         errors.append(f"{want_tag} is used by {len(sharers)} graphics infos "
                       f"({', '.join(sorted(sharers))}); a character's palette "
                       f"must be their own")
@@ -274,7 +296,8 @@ def main() -> int:
     failures = 0
     outstanding: list[str] = []
 
-    for entry in manifest["characters"]:
+    characters = manifest["characters"]
+    for entry in characters:
         name = entry["name"]
         surfaces = set(entry.get("surfaces", []))
         errors: list[str] = []
@@ -297,7 +320,13 @@ def main() -> int:
                   f"{Path(entry['front']).name} with "
                   f"{entry['front_shared_with']}")
         else:
-            outstanding.append(f"{name}: battle portrait")
+            na = entry.get("surfaces_not_applicable", {}).get("front")
+            if na:
+                # Deliberately absent, not unfinished. A phase that never
+                # battles must not hold a trainer pic slot.
+                print(f"[ -- ] {name:12} front     not needed: {na[:64]}...")
+            else:
+                outstanding.append(f"{name}: battle portrait")
 
         if "overworld" in surfaces:
             path = REPO_ROOT / entry["overworld"]
@@ -309,14 +338,18 @@ def main() -> int:
                 if palette != metadata.palette:
                     raise ValueError(f"{entry['overworld_palette']} does not match "
                                      f"the PNG index order")
-                validate_wiring(entry, blocks, errors)
+                validate_wiring(entry, blocks, errors, characters)
                 print(f"[PASS] {name:12} overworld 144x32, 9 frames, "
                       f"{len(set(pixels))} indices, walk pairs alternate, "
                       f"{entry['palette_tag']} exclusive")
             except (OSError, ValueError) as exc:
                 errors.append(f"overworld: {exc}")
         else:
-            outstanding.append(f"{name}: overworld sheet and palette")
+            na = entry.get("surfaces_not_applicable", {}).get("overworld")
+            if na:
+                print(f"[ -- ] {name:12} overworld not possible: {na[:60]}...")
+            else:
+                outstanding.append(f"{name}: overworld sheet and palette")
 
         for error in errors:
             print(f"[FAIL] {name}: {error}", file=sys.stderr)

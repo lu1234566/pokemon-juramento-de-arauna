@@ -236,6 +236,186 @@
       "palette_tag": "OBJ_EVENT_PAL_TAG_AMALIA",
       "palette_slot": "PALSLOT_NPC_SPECIAL_REFLECTION",
       "palette_slot_reason": "The Rayquaza scene in SootopolisCity adds the redrawn Rayquaza, which holds PALSLOT_NPC_SPECIAL, while she stands at 31,33 and is never removed, so she takes the second special bank."
+    },
+    {
+      "name": "CIRO F1",
+      "surfaces": [
+        "overworld",
+        "front"
+      ],
+      "object_event": "OBJ_EVENT_GFX_RIVAL_BRENDAN_NORMAL",
+      "graphics_info": "RivalBrendanNormal",
+      "overworld": "graphics/object_events/pics/people/ciro/phase1_brendan.png",
+      "overworld_palette": "graphics/object_events/palettes/ciro_f1.pal",
+      "palette_tag": "OBJ_EVENT_PAL_TAG_CIRO_F1",
+      "palette_slot": "PALSLOT_NPC_SPECIAL",
+      "phase": "1",
+      "graphics_info_shared_with": "CIRO F1 MIRROR",
+      "front": "graphics/trainers/front_pics/brendan.png",
+      "trainer_pic": "TRAINER_PIC_BRENDAN",
+      "trainer_pic_index": 13
+    },
+    {
+      "name": "CIRO F1 MIRROR",
+      "surfaces": [
+        "overworld",
+        "front"
+      ],
+      "object_event": "OBJ_EVENT_GFX_RIVAL_MAY_NORMAL",
+      "graphics_info": "RivalMayNormal",
+      "overworld": "graphics/object_events/pics/people/ciro/phase1_may.png",
+      "overworld_palette": "graphics/object_events/palettes/ciro_f1.pal",
+      "palette_tag": "OBJ_EVENT_PAL_TAG_CIRO_F1",
+      "palette_slot": "PALSLOT_NPC_SPECIAL",
+      "phase": "1",
+      "palette_slot_reason": "The engine picks the rival graphic opposite the player's gender, so CIRO occupies both rival slots with one design and one palette. Only one of the two is ever spawned, so the shared tag never contends.",
+      "graphics_info_shared_with": "CIRO F1",
+      "front": "graphics/trainers/front_pics/may.png",
+      "trainer_pic": "TRAINER_PIC_MAY",
+      "trainer_pic_index": 14
+    },
+    {
+      "name": "CIRO F2",
+      "surfaces": [
+        "overworld",
+        "front"
+      ],
+      "object_event": "OBJ_EVENT_GFX_CIRO_CONSORCIO",
+      "graphics_info": "UnusedMagnemiteDoll",
+      "overworld": "graphics/object_events/pics/people/ciro/phase2.png",
+      "overworld_palette": "graphics/object_events/palettes/ciro_f2.pal",
+      "palette_tag": "OBJ_EVENT_PAL_TAG_CIRO_F2",
+      "palette_slot": "PALSLOT_NPC_SPECIAL",
+      "phase": "2",
+      "front": "graphics/trainers/front_pics/ciro_consorcio.png",
+      "trainer_pic": "TRAINER_PIC_CIRO_CONSORCIO",
+      "trainer_pic_index": 93
+    },
+    {
+      "name": "CIRO F3",
+      "surfaces": [
+        "overworld"
+      ],
+      "object_event": "OBJ_EVENT_GFX_CIRO_FINAL",
+      "graphics_info": "UnusedSquirtleDoll",
+      "overworld": "graphics/object_events/pics/people/ciro/phase3.png",
+      "overworld_palette": "graphics/object_events/palettes/ciro_f3.pal",
+      "palette_tag": "OBJ_EVENT_PAL_TAG_CIRO_F3",
+      "palette_slot": "PALSLOT_NPC_SPECIAL",
+      "phase": "3",
+      "palette_slot_reason": "Alone on the special bank in EverGrandeCity_ChampionsRoom; AMALIA holds the reflection bank there.",
+      "surfaces_not_applicable": {
+        "front": "No battle exists in this phase. The EverGrandeCity_ChampionsRoom object carries script 0x0 and TRAINER_TYPE_NONE, so a portrait would occupy a trainer pic slot nothing can ever display."
+      }
+    },
+    {
+      "name": "VAL",
+      "surfaces": [
+        "overworld",
+        "front"
+      ],
+      "object_event": "OBJ_EVENT_GFX_WALLY",
+      "graphics_info": "Wally",
+      "overworld": "graphics/object_events/pics/people/wally.png",
+      "overworld_palette": "graphics/object_events/palettes/val.pal",
+      "palette_tag": "OBJ_EVENT_PAL_TAG_VAL",
+      "palette_slot": "PALSLOT_NPC_SPECIAL_REFLECTION",
+      "palette_slot_reason": "PetalburgCity_Gym_OnTransition parks ELIAS at 4,107 while VAL stands at 4,111 in the same entrance room, so the two are on screen together and ELIAS holds the first special bank.",
+      "front": "graphics/trainers/front_pics/wally.png",
+      "trainer_pic": "TRAINER_PIC_WALLY",
+      "trainer_pic_index": 57
+    },
+    {
+      "name": "VAL EVOLUIDO",
+      "surfaces": [
+        "overworld"
+      ],
+      "object_event": "OBJ_EVENT_GFX_VAL_EVOLUIDO",
+      "graphics_info": "UnusedWooperDoll",
+      "overworld": "graphics/object_events/pics/people/val/phase2.png",
+      "overworld_palette": "graphics/object_events/palettes/val_evoluido.pal",
+      "palette_tag": "OBJ_EVENT_PAL_TAG_VAL_EVOLUIDO",
+      "palette_slot": "PALSLOT_NPC_SPECIAL",
+      "phase": "2",
+      "surfaces_not_applicable": {
+        "front": "The Victory Road objects are cutscene appearances with TRAINER_TYPE_NONE; VAL's battles all run from OBJ_EVENT_GFX_WALLY and use the portrait installed there."
+      }
+    },
+    {
+      "name": "BRENO",
+      "surfaces": [
+        "front"
+      ],
+      "front": "graphics/trainers/front_pics/aqua_admin_m.png",
+      "trainer_pic": "TRAINER_PIC_AQUA_ADMIN_M",
+      "trainer_pic_index": 32,
+      "surfaces_not_applicable": {
+        "overworld": "The submarine shadow in AquaHideout_B2F stands four tiles from him, holds PALSLOT_NPC_SPECIAL, and its tag is in sSpecialObjectReflectionPaletteSets, so creating it also writes the reflection bank. Both exclusive banks are spoken for before BRENO is created, and the shadow's hide flag is never set. Runtime confirmed bank 11 carried the shadow's reflection, not his palette."
+      }
+    },
+    {
+      "name": "MARTA",
+      "surfaces": [
+        "overworld",
+        "front"
+      ],
+      "object_event": "OBJ_EVENT_GFX_ADMIN_ARQUIVO",
+      "graphics_info": "UnusedPorygon2Doll",
+      "overworld": "graphics/object_events/pics/people/arauna/admin_archive.png",
+      "overworld_palette": "graphics/object_events/palettes/marta.pal",
+      "palette_tag": "OBJ_EVENT_PAL_TAG_MARTA",
+      "palette_slot": "PALSLOT_NPC_SPECIAL",
+      "front": "graphics/trainers/front_pics/aqua_admin_f.png",
+      "trainer_pic": "TRAINER_PIC_AQUA_ADMIN_F",
+      "trainer_pic_index": 33
+    },
+    {
+      "name": "OTACILIO",
+      "surfaces": [
+        "front"
+      ],
+      "front": "graphics/trainers/front_pics/aqua_leader_archie.png",
+      "trainer_pic": "TRAINER_PIC_AQUA_LEADER_ARCHIE",
+      "trainer_pic_index": 30,
+      "surfaces_not_applicable": {
+        "overworld": "OBJ_EVENT_GFX_ARCHIE is on screen with MAXIE and STEVEN in SootopolisCity, Route128, MtPyre_Summit, MtChimney and SeafloorCavern_Room9, and in SootopolisCity also with AMALIA and the redrawn Rayquaza. The engine offers two exclusive palette banks; that scene needs four. An exclusive palette here would repaint whoever loaded last."
+      }
+    },
+    {
+      "name": "LUZIA",
+      "surfaces": [
+        "front"
+      ],
+      "front": "graphics/trainers/front_pics/magma_leader_maxie.png",
+      "trainer_pic": "TRAINER_PIC_MAGMA_LEADER_MAXIE",
+      "trainer_pic_index": 31,
+      "surfaces_not_applicable": {
+        "overworld": "Same scene as OTACILIO: MAXIE stands beside ARCHIE and STEVEN in five maps and cannot hold a third exclusive bank."
+      }
+    },
+    {
+      "name": "RAUL",
+      "surfaces": [
+        "front"
+      ],
+      "front": "graphics/trainers/front_pics/magma_admin.png",
+      "trainer_pic": "TRAINER_PIC_MAGMA_ADMIN",
+      "trainer_pic_index": 34,
+      "surfaces_not_applicable": {
+        "overworld": "His map objects use OBJ_EVENT_GFX_MAGMA_MEMBER_M, the generic grunt graphic on fourteen maps. Repainting it would convert every grunt, which section 27 defers to a later batch."
+      }
+    },
+    {
+      "name": "BENTO",
+      "surfaces": [
+        "front"
+      ],
+      "front": "graphics/trainers/front_pics/steven.png",
+      "trainer_pic": "TRAINER_PIC_STEVEN",
+      "trainer_pic_index": 61,
+      "surfaces_not_applicable": {
+        "overworld": "Same scene as OTACILIO: STEVEN stands beside ARCHIE and MAXIE, and in SootopolisCity beside AMALIA on the reflection bank."
+      }
     }
   ]
 }
