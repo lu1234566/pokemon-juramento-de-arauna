@@ -64,4 +64,11 @@ python3 tools/arauna/check_overworld_palette_capacity.py
 # normal in a diff. This checks the visual wiring instead of the words.
 python3 tools/arauna/check_faction_visual_identity.py
 
+# The protagonist is replaced one avatar state at a time, so for several
+# passes most states still wear inherited Emerald art. This refuses a state
+# claimed ready without its art, a state half-replaced, a NORMAL whose walk
+# and run sheets disagree on the palette they share, and any crossing of the
+# player with CIRO or with the other gender.
+python3 tools/arauna/check_protagonist_assets.py
+
 echo "Arauna static readiness: PASS (official rendered composition validated; ARM compile intentionally skipped)."

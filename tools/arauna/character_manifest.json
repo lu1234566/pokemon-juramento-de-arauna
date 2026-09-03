@@ -676,5 +676,130 @@
       "internal_trainer_class": "TRAINER_CLASS_TEAM_MAGMA",
       "runtime_notes": "An archetype, not a person: the same graphic and palette serve every grunt of that faction and gender, so the cost is one palette bank per variant on screen. The internal names stay Aqua and Magma; the player sees HORIZONTE and LEMBRANTE, which the trainer class names and the trainer names AGENTE and ATIVISTA already say."
     }
+  ],
+  "protagonist_states": [
+    {
+      "state": "NORMAL",
+      "gfx_male": "OBJ_EVENT_GFX_BRENDAN_NORMAL",
+      "gfx_female": "OBJ_EVENT_GFX_MAY_NORMAL",
+      "sheets": [
+        "walking.png",
+        "running.png"
+      ],
+      "status": "PARTIAL",
+      "note": "Both sheets of this state share one 16-colour bank, and the approved conversion quantised walking and running separately: 29 distinct colours across the pair, against a hardware ceiling of 16. No shared palette can represent both without changing pixels, so the state is not integrable until PixelLab re-exports the pair against one palette.",
+      "arauna_source": [
+        "02_gba_overworld_candidates/Protagonista_M/{walking,running}.png",
+        "02_gba_overworld_candidates/Protagonista_F/{walking,running}.png"
+      ],
+      "blocked_by": "walking and running do not share a palette"
+    },
+    {
+      "state": "MACH_BIKE",
+      "gfx_male": "OBJ_EVENT_GFX_BRENDAN_MACH_BIKE",
+      "gfx_female": "OBJ_EVENT_GFX_MAY_MACH_BIKE",
+      "sheets": [
+        "mach_bike.png"
+      ],
+      "status": "MISSING",
+      "note": "No Arauna art exists for this state in any approved package."
+    },
+    {
+      "state": "ACRO_BIKE",
+      "gfx_male": "OBJ_EVENT_GFX_BRENDAN_ACRO_BIKE",
+      "gfx_female": "OBJ_EVENT_GFX_MAY_ACRO_BIKE",
+      "sheets": [
+        "acro_bike.png"
+      ],
+      "status": "MISSING",
+      "note": "No Arauna art exists for this state in any approved package."
+    },
+    {
+      "state": "SURFING",
+      "gfx_male": "OBJ_EVENT_GFX_BRENDAN_SURFING",
+      "gfx_female": "OBJ_EVENT_GFX_MAY_SURFING",
+      "sheets": [
+        "surfing.png"
+      ],
+      "status": "MISSING",
+      "note": "No Arauna art exists for this state in any approved package. The surf blob is FLDEFFOBJ_SURF_BLOB, a separate sprite; this sheet holds the rider only."
+    },
+    {
+      "state": "UNDERWATER",
+      "gfx_male": "OBJ_EVENT_GFX_BRENDAN_UNDERWATER",
+      "gfx_female": "OBJ_EVENT_GFX_MAY_UNDERWATER",
+      "sheets": [
+        "underwater.png"
+      ],
+      "status": "MISSING",
+      "note": "No Arauna art exists for this state in any approved package. Both genders share graphics/object_events/palettes/player_underwater.pal, so the two sheets must be drawn against one palette."
+    },
+    {
+      "state": "FIELD_MOVE",
+      "gfx_male": "OBJ_EVENT_GFX_BRENDAN_FIELD_MOVE",
+      "gfx_female": "OBJ_EVENT_GFX_MAY_FIELD_MOVE",
+      "sheets": [
+        "field_move.png"
+      ],
+      "status": "MISSING",
+      "note": "No Arauna art exists for this state in any approved package. One five-frame south-facing throw, used by every field move: Cut, Rock Smash, Strength, Secret Power, Dig, Teleport, Sweet Scent, Waterfall, Dive and Flash."
+    },
+    {
+      "state": "FISHING",
+      "gfx_male": "OBJ_EVENT_GFX_BRENDAN_FISHING",
+      "gfx_female": "OBJ_EVENT_GFX_MAY_FISHING",
+      "sheets": [
+        "fishing.png"
+      ],
+      "status": "MISSING",
+      "note": "No Arauna art exists for this state in any approved package. Rod and line are drawn inside these frames; there is no separate rod field effect."
+    },
+    {
+      "state": "WATERING",
+      "gfx_male": "OBJ_EVENT_GFX_BRENDAN_WATERING",
+      "gfx_female": "OBJ_EVENT_GFX_MAY_WATERING",
+      "sheets": [
+        "watering.png"
+      ],
+      "status": "MISSING",
+      "note": "No Arauna art exists for this state in any approved package."
+    },
+    {
+      "state": "DECORATING",
+      "gfx_male": "OBJ_EVENT_GFX_BRENDAN_DECORATING",
+      "gfx_female": "OBJ_EVENT_GFX_MAY_DECORATING",
+      "sheets": [
+        "decorating.png"
+      ],
+      "status": "MISSING",
+      "note": "No Arauna art exists for this state in any approved package. Still reachable: src/decoration.c creates this sprite in the Secret Base decoration placement screen."
+    }
+  ],
+  "protagonist_battle_surfaces": [
+    {
+      "surface": "TRAINER_BACK",
+      "male": "graphics/trainers/back_pics/brendan.png",
+      "female": "graphics/trainers/back_pics/may.png",
+      "status": "MISSING",
+      "note": "The battle back sprite with its Poke Ball throw. Not the overworld back-facing walk frame, and not covered by any approved package."
+    },
+    {
+      "surface": "TRAINER_FRONT",
+      "male": "graphics/trainers/front_pics/brendan.png",
+      "female": "graphics/trainers/front_pics/may.png",
+      "status": "MISSING",
+      "note": "Required: the gender-select screen, the trainer card, Match Call and every facility that resolves FACILITY_CLASS_BRENDAN/MAY through gFacilityClassToPicIndex. The approved battle_pose_reference.png is marked intended_for_battle=False and is reference only."
+    }
+  ],
+  "_protagonist_comment": [
+    "Player avatar states. Unlike the characters above, a player state is not",
+    "one 144x32 sheet: each has its own frame size, pic table and animation",
+    "table, and NORMAL alone spans two sheets sharing a single palette.",
+    "",
+    "status is asset readiness, never a claim about the tree: READY means the",
+    "Arauna art is installed and wired, PARTIAL means art exists but cannot be",
+    "used as delivered, MISSING means no approved art exists. Anything not",
+    "READY must still be wired to the inherited Emerald art -- a state half in",
+    "Arauna and half in Brendan/May is the one outcome worse than waiting."
   ]
 }
