@@ -591,6 +591,90 @@
       "palette_slot": "ARAUNA_EXCLUSIVE_POOL",
       "palette_slot_reason": "Battle Pyramid summit. The attendant is a Hiker on NPC_1; NPC_3 is free and stays the fallback.",
       "runtime_notes": "One Circuit Master per facility, never two at once: the overworld is written into VAR_OBJ_GFX_ID_0 by SetFrontierBrainObjEventGfx, and only TADEU also stands as a fixed object, at the Pyramid summit. Silver and Gold share this front, this overworld and this name -- GetFrontierBrainTrainerPicIndex, GetFrontierBrainTrainerClass and CopyFrontierBrainTrainerName all read sFrontierBrainTrainerIds[facility] with no symbol input, so only the party and the result text differ."
+    },
+    {
+      "name": "HORIZONTE_M",
+      "kind": "faction archetype",
+      "faction": "CONSORCIO HORIZONTE",
+      "surfaces": [
+        "front",
+        "overworld"
+      ],
+      "object_event": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "graphics_info": "AquaMemberM",
+      "overworld": "graphics/object_events/pics/people/team_aqua/aqua_member_m.png",
+      "overworld_palette": "graphics/object_events/palettes/horizonte_m.pal",
+      "palette_tag": "OBJ_EVENT_PAL_TAG_HORIZONTE_M",
+      "palette_slot": "ARAUNA_EXCLUSIVE_POOL",
+      "palette_slot_reason": "Falls back to PALSLOT_NPC_4, the bank this slot used before. Sixty-one map objects wear this graphic and they all share the single bank its tag holds, so the pool cost is one, not sixty-one.",
+      "front": "graphics/trainers/front_pics/aqua_grunt_m.png",
+      "trainer_pic": "TRAINER_PIC_AQUA_GRUNT_M",
+      "trainer_pic_index": 1,
+      "internal_trainer_class": "TRAINER_CLASS_TEAM_AQUA",
+      "runtime_notes": "An archetype, not a person: the same graphic and palette serve every grunt of that faction and gender, so the cost is one palette bank per variant on screen. The internal names stay Aqua and Magma; the player sees HORIZONTE and LEMBRANTE, which the trainer class names and the trainer names AGENTE and ATIVISTA already say."
+    },
+    {
+      "name": "HORIZONTE_F",
+      "kind": "faction archetype",
+      "faction": "CONSORCIO HORIZONTE",
+      "surfaces": [
+        "front",
+        "overworld"
+      ],
+      "object_event": "OBJ_EVENT_GFX_AQUA_MEMBER_F",
+      "graphics_info": "AquaMemberF",
+      "overworld": "graphics/object_events/pics/people/team_aqua/aqua_member_f.png",
+      "overworld_palette": "graphics/object_events/palettes/horizonte_f.pal",
+      "palette_tag": "OBJ_EVENT_PAL_TAG_HORIZONTE_F",
+      "palette_slot": "ARAUNA_EXCLUSIVE_POOL",
+      "palette_slot_reason": "Falls back to PALSLOT_NPC_3 rather than NPC_4, so an exhausted pool can never put her on the same bank as HORIZONTE M.",
+      "front": "graphics/trainers/front_pics/aqua_grunt_f.png",
+      "trainer_pic": "TRAINER_PIC_AQUA_GRUNT_F",
+      "trainer_pic_index": 6,
+      "internal_trainer_class": "TRAINER_CLASS_TEAM_AQUA",
+      "runtime_notes": "An archetype, not a person: the same graphic and palette serve every grunt of that faction and gender, so the cost is one palette bank per variant on screen. The internal names stay Aqua and Magma; the player sees HORIZONTE and LEMBRANTE, which the trainer class names and the trainer names AGENTE and ATIVISTA already say."
+    },
+    {
+      "name": "LEMBRANTE_M",
+      "kind": "faction archetype",
+      "faction": "LEMBRANTES",
+      "surfaces": [
+        "front",
+        "overworld"
+      ],
+      "object_event": "OBJ_EVENT_GFX_MAGMA_MEMBER_M",
+      "graphics_info": "MagmaMemberM",
+      "overworld": "graphics/object_events/pics/people/team_magma/magma_member_m.png",
+      "overworld_palette": "graphics/object_events/palettes/lembrante_m.pal",
+      "palette_tag": "OBJ_EVENT_PAL_TAG_LEMBRANTE_M",
+      "palette_slot": "ARAUNA_EXCLUSIVE_POOL",
+      "palette_slot_reason": "Falls back to PALSLOT_NPC_2, the bank this slot used before. RAUL no longer shares this graphic: he is on the Arauna virtual graphics registry.",
+      "front": "graphics/trainers/front_pics/magma_grunt_m.png",
+      "trainer_pic": "TRAINER_PIC_MAGMA_GRUNT_M",
+      "trainer_pic_index": 8,
+      "internal_trainer_class": "TRAINER_CLASS_TEAM_MAGMA",
+      "runtime_notes": "An archetype, not a person: the same graphic and palette serve every grunt of that faction and gender, so the cost is one palette bank per variant on screen. The internal names stay Aqua and Magma; the player sees HORIZONTE and LEMBRANTE, which the trainer class names and the trainer names AGENTE and ATIVISTA already say."
+    },
+    {
+      "name": "LEMBRANTE_F",
+      "kind": "faction archetype",
+      "faction": "LEMBRANTES",
+      "surfaces": [
+        "front",
+        "overworld"
+      ],
+      "object_event": "OBJ_EVENT_GFX_MAGMA_MEMBER_F",
+      "graphics_info": "MagmaMemberF",
+      "overworld": "graphics/object_events/pics/people/team_magma/magma_member_f.png",
+      "overworld_palette": "graphics/object_events/palettes/lembrante_f.pal",
+      "palette_tag": "OBJ_EVENT_PAL_TAG_LEMBRANTE_F",
+      "palette_slot": "ARAUNA_EXCLUSIVE_POOL",
+      "palette_slot_reason": "Falls back to PALSLOT_NPC_1, the fourth of four distinct fallbacks.",
+      "front": "graphics/trainers/front_pics/magma_grunt_f.png",
+      "trainer_pic": "TRAINER_PIC_MAGMA_GRUNT_F",
+      "trainer_pic_index": 26,
+      "internal_trainer_class": "TRAINER_CLASS_TEAM_MAGMA",
+      "runtime_notes": "An archetype, not a person: the same graphic and palette serve every grunt of that faction and gender, so the cost is one palette bank per variant on screen. The internal names stay Aqua and Magma; the player sees HORIZONTE and LEMBRANTE, which the trainer class names and the trainer names AGENTE and ATIVISTA already say."
     }
   ]
 }

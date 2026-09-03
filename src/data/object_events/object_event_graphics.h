@@ -26,6 +26,13 @@ const u16 gObjectEventPal_Jaci[] = INCGFX_U16("graphics/object_events/palettes/j
 const u16 gObjectEventPal_Rita[] = INCGFX_U16("graphics/object_events/palettes/rita.pal", ".gbapal");
 const u16 gObjectEventPal_Amaro[] = INCGFX_U16("graphics/object_events/palettes/amaro.pal", ".gbapal");
 const u16 gObjectEventPal_Tadeu[] = INCGFX_U16("graphics/object_events/palettes/tadeu.pal", ".gbapal");
+// The two Arauna factions. Their art lands on the inherited Aqua and Magma
+// slots, but their colours are their own: the generic NPC ramps those
+// slots used to borrow are shared with about sixty other people.
+const u16 gObjectEventPal_HorizonteM[] = INCGFX_U16("graphics/object_events/palettes/horizonte_m.pal", ".gbapal");
+const u16 gObjectEventPal_HorizonteF[] = INCGFX_U16("graphics/object_events/palettes/horizonte_f.pal", ".gbapal");
+const u16 gObjectEventPal_LembranteM[] = INCGFX_U16("graphics/object_events/palettes/lembrante_m.pal", ".gbapal");
+const u16 gObjectEventPal_LembranteF[] = INCGFX_U16("graphics/object_events/palettes/lembrante_f.pal", ".gbapal");
 const u16 gObjectEventPal_Brendan[] = INCGFX_U16("graphics/object_events/palettes/brendan.pal", ".gbapal");
 const u32 gObjectEventPic_RubySapphireBrendanNormal[] = INCGFX_U32("graphics/object_events/pics/people/ruby_sapphire_brendan/walking.png", ".4bpp", "-mwidth 2 -mheight 4");
 const u32 gObjectEventPic_RubySapphireBrendanRunning[] = INCGFX_U32("graphics/object_events/pics/people/ruby_sapphire_brendan/running.png", ".4bpp", "-mwidth 2 -mheight 4");

@@ -2243,9 +2243,12 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DevonEmployee = {
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
+// HORIZONTE agent. The four faction slots cost one pool bank per
+// variant, not per grunt: eleven of them stand in Porto Sal at once and
+// share the one bank their tag holds.
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AquaMemberM = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_4,
+    .paletteTag = OBJ_EVENT_PAL_TAG_HORIZONTE_M,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
     .size = 256,
     .width = 16,
@@ -2253,7 +2256,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AquaMemberM = {
     .paletteSlot = PALSLOT_NPC_4,
     .shadowSize = SHADOW_SIZE_M,
     .inanimate = FALSE,
-    .disableReflectionPaletteLoad = FALSE,
+    .disableReflectionPaletteLoad = TRUE,
     .tracks = TRACKS_FOOT,
     .oam = &gObjectEventBaseOam_16x32,
     .subspriteTables = sOamTables_16x32,
@@ -2262,17 +2265,18 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AquaMemberM = {
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
+// HORIZONTE technician.
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AquaMemberF = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_4,
+    .paletteTag = OBJ_EVENT_PAL_TAG_HORIZONTE_F,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
     .size = 256,
     .width = 16,
     .height = 32,
-    .paletteSlot = PALSLOT_NPC_4,
+    .paletteSlot = PALSLOT_NPC_3,
     .shadowSize = SHADOW_SIZE_M,
     .inanimate = FALSE,
-    .disableReflectionPaletteLoad = FALSE,
+    .disableReflectionPaletteLoad = TRUE,
     .tracks = TRACKS_FOOT,
     .oam = &gObjectEventBaseOam_16x32,
     .subspriteTables = sOamTables_16x32,
@@ -2281,9 +2285,10 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AquaMemberF = {
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
+// LEMBRANTE field member.
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MagmaMemberM = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_2,
+    .paletteTag = OBJ_EVENT_PAL_TAG_LEMBRANTE_M,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
     .size = 256,
     .width = 16,
@@ -2291,7 +2296,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MagmaMemberM = {
     .paletteSlot = PALSLOT_NPC_2,
     .shadowSize = SHADOW_SIZE_M,
     .inanimate = FALSE,
-    .disableReflectionPaletteLoad = FALSE,
+    .disableReflectionPaletteLoad = TRUE,
     .tracks = TRACKS_FOOT,
     .oam = &gObjectEventBaseOam_16x32,
     .subspriteTables = sOamTables_16x32,
@@ -2300,17 +2305,20 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MagmaMemberM = {
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
+// LEMBRANTE field worker. The four fallbacks are four different
+// generic banks, so even an exhausted pool never puts two faction
+// variants on one palette.
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MagmaMemberF = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_2,
+    .paletteTag = OBJ_EVENT_PAL_TAG_LEMBRANTE_F,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
     .size = 256,
     .width = 16,
     .height = 32,
-    .paletteSlot = PALSLOT_NPC_2,
+    .paletteSlot = PALSLOT_NPC_1,
     .shadowSize = SHADOW_SIZE_M,
     .inanimate = FALSE,
-    .disableReflectionPaletteLoad = FALSE,
+    .disableReflectionPaletteLoad = TRUE,
     .tracks = TRACKS_FOOT,
     .oam = &gObjectEventBaseOam_16x32,
     .subspriteTables = sOamTables_16x32,

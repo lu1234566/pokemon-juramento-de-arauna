@@ -59,4 +59,9 @@ python3 tools/arauna/check_special_species.py
 # audited same-slot pairs honest, and refuses the old 16 + PALSLOT spelling.
 python3 tools/arauna/check_overworld_palette_capacity.py
 
+# The two factions wear inherited Aqua and Magma slots, so their symbols still
+# say Aqua and Magma and a graphic sliding back to vanilla art would read as
+# normal in a diff. This checks the visual wiring instead of the words.
+python3 tools/arauna/check_faction_visual_identity.py
+
 echo "Arauna static readiness: PASS (official rendered composition validated; ARM compile intentionally skipped)."

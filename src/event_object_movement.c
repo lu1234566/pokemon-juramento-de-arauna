@@ -587,6 +587,10 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_TAG_RITA                             0x11CB
 #define OBJ_EVENT_PAL_TAG_AMARO                            0x11CC
 #define OBJ_EVENT_PAL_TAG_TADEU                            0x11CD
+#define OBJ_EVENT_PAL_TAG_HORIZONTE_M                      0x11CE
+#define OBJ_EVENT_PAL_TAG_HORIZONTE_F                      0x11CF
+#define OBJ_EVENT_PAL_TAG_LEMBRANTE_M                      0x11D0
+#define OBJ_EVENT_PAL_TAG_LEMBRANTE_F                      0x11D1
 
 #define OBJ_EVENT_PAL_TAG_NONE                    0x11FF
 
@@ -683,6 +687,10 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_Rita,             OBJ_EVENT_PAL_TAG_RITA},
     {gObjectEventPal_Amaro,            OBJ_EVENT_PAL_TAG_AMARO},
     {gObjectEventPal_Tadeu,            OBJ_EVENT_PAL_TAG_TADEU},
+    {gObjectEventPal_HorizonteM,       OBJ_EVENT_PAL_TAG_HORIZONTE_M},
+    {gObjectEventPal_HorizonteF,       OBJ_EVENT_PAL_TAG_HORIZONTE_F},
+    {gObjectEventPal_LembranteM,       OBJ_EVENT_PAL_TAG_LEMBRANTE_M},
+    {gObjectEventPal_LembranteF,       OBJ_EVENT_PAL_TAG_LEMBRANTE_F},
 #ifdef BUGFIX
         {gObjectEventPal_AraunaIemanja,                           OBJ_EVENT_PAL_TAG_ARAUNA_IEMANJA},
     {gObjectEventPal_AraunaLobisomem,                         OBJ_EVENT_PAL_TAG_ARAUNA_LOBISOMEM},
@@ -2487,6 +2495,10 @@ static const u16 sAraunaExclusivePaletteTags[] = {
     OBJ_EVENT_PAL_TAG_RITA,
     OBJ_EVENT_PAL_TAG_AMARO,
     OBJ_EVENT_PAL_TAG_TADEU,
+    OBJ_EVENT_PAL_TAG_HORIZONTE_M,
+    OBJ_EVENT_PAL_TAG_HORIZONTE_F,
+    OBJ_EVENT_PAL_TAG_LEMBRANTE_M,
+    OBJ_EVENT_PAL_TAG_LEMBRANTE_F,
     OBJ_EVENT_PAL_TAG_NONE
 };
 
