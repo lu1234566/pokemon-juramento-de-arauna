@@ -1,0 +1,68 @@
+{
+  "id": "MAP_ARAUNA_PRIMEIRA_CAMARA_INTERIOR",
+  "name": "Arauna_PrimeiraCamara_Interior",
+  "layout": "LAYOUT_ARAUNA_PRIMEIRA_CAMARA_INTERIOR",
+  "music": "MUS_ARAUNA_SAPPHIRE_CRYPT",
+  "region_map_section": "MAPSEC_ROUTE_101",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [],
+  "coord_events": [],
+  "warp_events": [
+    {
+      "x": 10,
+      "y": 23,
+      "elevation": 3,
+      "dest_map": "MAP_ARAUNA_PRIMEIRA_CAMARA_CHEGADA",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 11,
+      "y": 23,
+      "elevation": 3,
+      "dest_map": "MAP_ARAUNA_PRIMEIRA_CAMARA_CHEGADA",
+      "dest_warp_id": "3"
+    }
+  ],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 10,
+      "y": 11,
+      "elevation": 5,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "PrimeiraCamara_EventScript_Altar"
+    },
+    {
+      "type": "sign",
+      "x": 11,
+      "y": 11,
+      "elevation": 5,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "PrimeiraCamara_EventScript_Altar"
+    },
+    {
+      "type": "sign",
+      "x": 4,
+      "y": 19,
+      "elevation": 3,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "PrimeiraCamara_EventScript_Augusto"
+    },
+    {
+      "type": "sign",
+      "x": 16,
+      "y": 19,
+      "elevation": 3,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "PrimeiraCamara_EventScript_Memory"
+    }
+  ]
+}

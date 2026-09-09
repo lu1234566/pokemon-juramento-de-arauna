@@ -21,7 +21,7 @@ OldaleTown_EventScript_BlockWestEntrance::
 	return
 
 OldaleTown_EventScript_MoveMartEmployee::
-	setobjectxyperm LOCALID_OLDALE_MART_EMPLOYEE, 13, 14
+	setobjectxyperm LOCALID_OLDALE_MART_EMPLOYEE, 24, 13
 	setobjectmovementtype LOCALID_OLDALE_MART_EMPLOYEE, MOVEMENT_TYPE_FACE_DOWN
 	return
 
@@ -46,6 +46,7 @@ OldaleTown_EventScript_MartEmployee::
 	case DIR_SOUTH, OldaleTown_EventScript_GoToMartSouth
 	case DIR_NORTH, OldaleTown_EventScript_GoToMartNorth
 	case DIR_EAST, OldaleTown_EventScript_GoToMartEast
+	case DIR_WEST, OldaleTown_EventScript_GoToMartWest
 	end
 
 OldaleTown_EventScript_GoToMartSouth::
@@ -68,6 +69,22 @@ OldaleTown_EventScript_GoToMartEast::
 	waitmovement 0
 	goto OldaleTown_EventScript_ExplainPokemonMart
 	end
+
+OldaleTown_EventScript_GoToMartWest::
+	applymovement LOCALID_PLAYER, OldaleTown_Movement_PlayerWest
+	applymovement LOCALID_OLDALE_MART_EMPLOYEE, OldaleTown_Movement_EmployeeEast
+	waitmovement 0
+	goto OldaleTown_EventScript_ExplainPokemonMart
+	end
+
+OldaleTown_Movement_PlayerWest:
+	walk_left
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	step_end
 
 OldaleTown_EventScript_ExplainPokemonMart::
 	msgbox OldaleTown_Text_ThisIsAPokemonMart, MSGBOX_DEFAULT
@@ -97,7 +114,6 @@ OldaleTown_Movement_EmployeeEast:
 	walk_up
 	walk_up
 	walk_up
-	walk_up
 	walk_in_place_faster_down
 	step_end
 
@@ -110,12 +126,10 @@ OldaleTown_Movement_EmployeeSouth:
 	walk_up
 	walk_up
 	walk_up
-	walk_up
 	walk_in_place_faster_down
 	step_end
 
 OldaleTown_Movement_EmployeeNorth:
-	walk_up
 	walk_up
 	walk_up
 	walk_up
@@ -148,7 +162,6 @@ OldaleTown_Movement_PlayerEast:
 	walk_up
 	walk_up
 	walk_up
-	walk_up
 	step_end
 
 OldaleTown_Movement_PlayerSouth:
@@ -160,11 +173,9 @@ OldaleTown_Movement_PlayerSouth:
 	walk_up
 	walk_up
 	walk_up
-	walk_up
 	step_end
 
 OldaleTown_Movement_PlayerNorth:
-	walk_up
 	walk_up
 	walk_up
 	walk_up
@@ -322,16 +333,14 @@ OldaleTown_Movement_WatchRivalExit:
 	step_end
 
 OldaleTown_Movement_PlayerStepBack:
-	delay_8
+	delay_16
 	walk_right
 	step_end
 
 OldaleTown_Movement_BackUp:
+	walk_fast_right
 	walk_fast_up
 	walk_in_place_faster_left
-	lock_facing_direction
-	walk_right
-	unlock_facing_direction
 	step_end
 
 OldaleTown_Movement_ReturnToOriginalPosition:

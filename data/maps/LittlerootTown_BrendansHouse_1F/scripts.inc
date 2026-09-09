@@ -5,6 +5,7 @@ LittlerootTown_BrendansHouse_1F_MapScripts::
 	.byte 0
 
 LittlerootTown_BrendansHouse_1F_OnLoad:
+	call LittlerootTown_BrendansHouse_1F_V9_SelectHomeRole
 	call_if_lt VAR_LITTLEROOT_INTRO_STATE, 6, LittlerootTown_BrendansHouse_1F_EventScript_SetMovingBoxes
 	call_if_set FLAG_RECEIVED_RUNNING_SHOES, LittlerootTown_BrendansHouse_1F_EventScript_CheckShowShoesManual
 	end
@@ -442,3 +443,12 @@ PlayersHouse_1F_Text_WhatColorDidTheySay:
 PlayersHouse_1F_Text_StillUnknownPokemon:
 	.string "MOM: Well, isn't that something!\n"
 	.string "There are still unknown POKéMON.$"
+
+LittlerootTown_BrendansHouse_1F_V9_SelectHomeRole:
+	checkplayergender
+	goto_if_eq VAR_RESULT, FEMALE, LittlerootTown_BrendansHouse_1F_V9_SelectHomeRole_Ciro
+	return
+
+LittlerootTown_BrendansHouse_1F_V9_SelectHomeRole_Ciro:
+	setmaplayoutindex LAYOUT_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F_CIRO
+	return

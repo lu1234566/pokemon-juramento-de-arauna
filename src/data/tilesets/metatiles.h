@@ -207,3 +207,50 @@ const u16 gMetatileAttributes_MysteryEventsHouse[] = INCBIN_U16("data/tilesets/s
 
 const u16 gMetatiles_UnionRoom[] = INCBIN_U16("data/tilesets/secondary/union_room/metatiles.bin");
 const u16 gMetatileAttributes_UnionRoom[] = INCBIN_U16("data/tilesets/secondary/union_room/metatile_attributes.bin");
+
+// BEGIN ARAUNA_AMANHECER_V8
+const u16 gMetatiles_AraunaAmanhecer[] = INCBIN_U16("data/tilesets/secondary/arauna_amanhecer/metatiles.bin");
+const u16 gMetatileAttributes_AraunaAmanhecer[] = INCBIN_U16("data/tilesets/secondary/arauna_amanhecer/metatile_attributes.bin");
+// END ARAUNA_AMANHECER_V8
+
+const u16 gMetatiles_AraunaRedes[] = INCBIN_U16("data/tilesets/secondary/arauna_redes/metatiles.bin");
+const u16 gMetatileAttributes_AraunaRedes[] = INCBIN_U16("data/tilesets/secondary/arauna_redes/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaMare[] = INCBIN_U16("data/tilesets/secondary/arauna_mare/metatiles.bin");
+const u16 gMetatileAttributes_AraunaMare[] = INCBIN_U16("data/tilesets/secondary/arauna_mare/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaTerra[] = INCBIN_U16("data/tilesets/secondary/arauna_terra/metatiles.bin");
+const u16 gMetatileAttributes_AraunaTerra[] = INCBIN_U16("data/tilesets/secondary/arauna_terra/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaPrimeiraCamara[] = INCBIN_U16("data/tilesets/secondary/arauna_primeira_camara/metatiles.bin");
+const u16 gMetatileAttributes_AraunaPrimeiraCamara[] = INCBIN_U16("data/tilesets/secondary/arauna_primeira_camara/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaCasaAmanhecer[] = INCBIN_U16("data/tilesets/secondary/arauna_casa_amanhecer/metatiles.bin");
+const u16 gMetatileAttributes_AraunaCasaAmanhecer[] = INCBIN_U16("data/tilesets/secondary/arauna_casa_amanhecer/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaCasaCiro[] = INCBIN_U16("data/tilesets/secondary/arauna_casa_ciro/metatiles.bin");
+const u16 gMetatileAttributes_AraunaCasaCiro[] = INCBIN_U16("data/tilesets/secondary/arauna_casa_ciro/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaAnahi[] = INCBIN_U16("data/tilesets/secondary/arauna_anahi/metatiles.bin");
+const u16 gMetatileAttributes_AraunaAnahi[] = INCBIN_U16("data/tilesets/secondary/arauna_anahi/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaSerraUivo[] = INCBIN_U16("data/tilesets/secondary/arauna_serra_uivo/metatiles.bin");
+const u16 gMetatileAttributes_AraunaSerraUivo[] = INCBIN_U16("data/tilesets/secondary/arauna_serra_uivo/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaUivoRefugio[] = INCBIN_U16("data/tilesets/secondary/arauna_uivo_refugio/metatiles.bin");
+const u16 gMetatileAttributes_AraunaUivoRefugio[] = INCBIN_U16("data/tilesets/secondary/arauna_uivo_refugio/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaUivoInterior[] = INCBIN_U16("data/tilesets/secondary/arauna_uivo_interior/metatiles.bin");
+const u16 gMetatileAttributes_AraunaUivoInterior[] = INCBIN_U16("data/tilesets/secondary/arauna_uivo_interior/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaPampa[] = INCBIN_U16("data/tilesets/secondary/arauna_pampa/metatiles.bin");
+const u16 gMetatileAttributes_AraunaPampa[] = INCBIN_U16("data/tilesets/secondary/arauna_pampa/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaPampaGalpao[] = INCBIN_U16("data/tilesets/secondary/arauna_pampa_galpao/metatiles.bin");
+const u16 gMetatileAttributes_AraunaPampaGalpao[] = INCBIN_U16("data/tilesets/secondary/arauna_pampa_galpao/metatile_attributes.bin");
+const u16 gMetatiles_AraunaPampaCasas[] = INCBIN_U16("data/tilesets/secondary/arauna_pampa_casas/metatiles.bin");
+const u16 gMetatileAttributes_AraunaPampaCasas[] = INCBIN_U16("data/tilesets/secondary/arauna_pampa_casas/metatile_attributes.bin");
+const u16 gMetatiles_AraunaPampaVenda[] = INCBIN_U16("data/tilesets/secondary/arauna_pampa_venda/metatiles.bin");
+const u16 gMetatileAttributes_AraunaPampaVenda[] = INCBIN_U16("data/tilesets/secondary/arauna_pampa_venda/metatile_attributes.bin");
+const u16 gMetatiles_AraunaPampaCentro[] = INCBIN_U16("data/tilesets/secondary/arauna_pampa_centro/metatiles.bin");
+const u16 gMetatileAttributes_AraunaPampaCentro[] = INCBIN_U16("data/tilesets/secondary/arauna_pampa_centro/metatile_attributes.bin");

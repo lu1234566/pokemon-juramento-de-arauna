@@ -12,12 +12,12 @@ RustboroCity_OnTransition:
 	end
 
 RustboroCity_EventScript_PositionScientistForExit::
-	goto_if_eq VAR_TEMP_0, 11, RustboroCity_EventScript_PositionScientistLeftExit
-	setobjectxyperm LOCALID_RUSTBORO_SCIENTIST, 12, 15
+	goto_if_eq VAR_TEMP_0, 9, RustboroCity_EventScript_PositionScientistLeftExit
+	setobjectxyperm LOCALID_RUSTBORO_SCIENTIST, 10, 17
 	end
 
 RustboroCity_EventScript_PositionScientistLeftExit::
-	setobjectxyperm LOCALID_RUSTBORO_SCIENTIST, 11, 15
+	setobjectxyperm LOCALID_RUSTBORO_SCIENTIST, 9, 17
 	end
 
 RustboroCity_EventScript_HideMapNamePopup::
@@ -1266,3 +1266,11 @@ RustboroCity_Text_YouCanHave2On2Battle:
 	.string "they'll both challenge you.\p"
 	.string "Don't you think it'd be cool if you\n"
 	.string "could beat two TRAINERS by yourself?$"
+
+CasaUivo_EventScript_Trail::
+	msgbox CasaUivo_Text_Trail, MSGBOX_SIGN
+	end
+
+CasaUivo_Text_Trail:
+	.string "Casa do Uivo\n"
+	.string "Mountain trail.$"

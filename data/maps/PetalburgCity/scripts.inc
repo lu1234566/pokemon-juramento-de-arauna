@@ -60,8 +60,8 @@ PetalburgCity_EventScript_WalkToWallyHouse::
 	applymovement LOCALID_PETALBURG_WALLYS_DAD, PetalburgCity_Movement_WalkToWallyHouseWallysDad
 	applymovement LOCALID_PLAYER, PetalburgCity_Movement_WalkToWallyHousePlayer
 	waitmovement 0
-	setvar VAR_0x8004, 7
-	setvar VAR_0x8005, 5
+	setvar VAR_0x8004, 26
+	setvar VAR_0x8005, 7
 	opendoor VAR_0x8004, VAR_0x8005
 	waitdooranim
 	applymovement LOCALID_PETALBURG_WALLYS_DAD, PetalburgCity_Movement_WalkInsideHouseWallysDad
@@ -98,18 +98,19 @@ PetalburgCity_Movement_WalkToWallyHousePlayer:
 	walk_down
 	walk_down
 	walk_down
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
 	walk_up
 	walk_up
-	walk_up
-	walk_up
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
 	walk_up
 	step_end
 
@@ -122,18 +123,19 @@ PetalburgCity_Movement_WalkToWallyHouseWallysDad:
 	delay_8
 	walk_down
 	walk_down
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
 	walk_up
 	walk_up
-	walk_up
-	walk_up
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
 	walk_up
 	walk_up
 	step_end
@@ -173,6 +175,14 @@ PetalburgCity_Movement_WallyTutorialPlayer:
 	walk_right
 	walk_right
 	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
 	walk_up
 	walk_up
 	walk_in_place_faster_right
@@ -187,6 +197,14 @@ PetalburgCity_Movement_WallyTutorialWally:
 	walk_down
 	walk_down
 	walk_down
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
 	walk_right
 	walk_right
 	walk_right

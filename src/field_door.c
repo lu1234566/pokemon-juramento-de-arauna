@@ -220,8 +220,19 @@ static const u8 sDoorAnimPalettes_BattleTentInterior[] = {9, 9, 9, 9, 9, 9, 9, 9
 static const u8 sDoorAnimPalettes_TrainerHillLobbyElevator[] = {7, 7, 7, 7, 7, 7, 7, 7};
 static const u8 sDoorAnimPalettes_TrainerHillRoofElevator[] = {9, 9, 7, 7, 7, 7, 7, 7};
 
+// BEGIN ARAUNA_AMANHECER_DOOR_ASSETS
+static const u8 sDoorAnimTiles_AraunaHouse[] = INCGFX_U8("graphics/door_anims/arauna_amanhecer_house.png", ".4bpp");
+static const u8 sDoorAnimPalettes_AraunaHouse[] = {6, 6, 6, 6, 6, 6, 6, 6};
+static const u8 sDoorAnimTiles_AraunaLab[] = INCGFX_U8("graphics/door_anims/arauna_amanhecer_lab.png", ".4bpp");
+static const u8 sDoorAnimPalettes_AraunaLab[] = {7, 7, 7, 7, 7, 7, 7, 7};
+// END ARAUNA_AMANHECER_DOOR_ASSETS
 static const struct DoorGraphics sDoorAnimGraphicsTable[] =
 {
+// BEGIN ARAUNA_AMANHECER_DOOR_TABLE
+    {0x380, DOOR_SOUND_NORMAL, 1, sDoorAnimTiles_AraunaHouse, sDoorAnimPalettes_AraunaHouse},
+    {0x381, DOOR_SOUND_NORMAL, 1, sDoorAnimTiles_AraunaLab, sDoorAnimPalettes_AraunaLab},
+// END ARAUNA_AMANHECER_DOOR_TABLE
+
     {METATILE_General_Door,                                 DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_General, sDoorAnimPalettes_General},
     {METATILE_General_Door_PokeCenter,                      DOOR_SOUND_SLIDING, 1, sDoorAnimTiles_PokeCenter, sDoorAnimPalettes_PokeCenter},
     {METATILE_General_Door_Gym,                             DOOR_SOUND_SLIDING, 1, sDoorAnimTiles_Gym, sDoorAnimPalettes_Gym},

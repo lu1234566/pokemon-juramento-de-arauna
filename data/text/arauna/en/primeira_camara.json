@@ -1,0 +1,59 @@
+{
+  "Route101_Text_PrimeiraCamara": [
+    "MIST TRAIL\\n",
+    "First Chamber {RIGHT_ARROW}$"
+  ],
+  "PrimeiraCamara_Text_FirstSeen": [
+    "Two marks seal the passage:\\n",
+    "TIDE and EARTH.\\p",
+    "The stone remembers\\n",
+    "your visit.$"
+  ],
+  "PrimeiraCamara_Text_Locked": [
+    "The door is still sealed.\\p",
+    "The achievements of the Tide\\n",
+    "and Earth Houses are needed.$"
+  ],
+  "PrimeiraCamara_Text_Opened": [
+    "Both marks respond.\\p",
+    "The passage opens beneath\\n",
+    "the blue core.$"
+  ],
+  "PrimeiraCamara_Text_AlreadyOpen": [
+    "The passage remains open.$"
+  ],
+  "PrimeiraCamara_Text_Mare": [
+    "TIDE: stories arrive\\n",
+    "from many shores.$"
+  ],
+  "PrimeiraCamara_Text_Terra": [
+    "EARTH: names remain wherever\\n",
+    "someone remembers them.$"
+  ],
+  "PrimeiraCamara_Text_Augusto": [
+    "One name in the stone: AUGUSTO.\\p",
+    "What binds us remains.$"
+  ],
+  "PrimeiraCamara_Text_Memory": [
+    "To remember is to connect,\\n",
+    "not to possess.$"
+  ],
+  "PrimeiraCamara_Text_Listen": [
+    "The bond is broken, but light\\n",
+    "shines between its pieces.\\p",
+    "Will you stop and listen?$"
+  ],
+  "PrimeiraCamara_Text_Decline": [
+    "The silence waits.\\n",
+    "Return whenever you wish.$"
+  ],
+  "PrimeiraCamara_Text_Heard": [
+    "Light reaches both sides\\n",
+    "of the bond.\\p",
+    "What binds us remains.$"
+  ],
+  "PrimeiraCamara_Text_Return": [
+    "The bond holds the light\\n",
+    "of your listening.$"
+  ]
+}
