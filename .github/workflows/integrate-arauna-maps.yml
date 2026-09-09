@@ -18,6 +18,13 @@ jobs:
         with:
           fetch-depth: 1
 
+      - name: Fetch vanilla baseline used by QA gates
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch --no-tags --depth=1 origin c210195e2781dd94384c9298acfdfa8777743e6b
+          git cat-file -e c210195e2781dd94384c9298acfdfa8777743e6b^{commit}
+
       - name: Reconstruct and verify base map overlay
         shell: bash
         run: |
@@ -71,20 +78,6 @@ jobs:
           print(f'Integrated JSON validation PASS: {count} files; Pampa interiors 7/7')
           PY
 
-      - name: Work around pre-existing empty text-width measurement bug
-        shell: bash
-        run: |
-          python3 - <<'PY'
-          from pathlib import Path
-          p = Path('tools/arauna/check_text_width.py')
-          s = p.read_text(encoding='utf-8')
-          old = '        cap = max(width for width, _ in measure(ruler, original))'
-          new = '        cap = max((width for width, _ in measure(ruler, original)), default=0)'
-          if old not in s:
-              raise SystemExit('Expected pre-existing text-width line not found')
-          p.write_text(s.replace(old, new, 1), encoding='utf-8')
-          PY
-
       - name: Install build dependencies
         shell: bash
         run: |
@@ -118,7 +111,6 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          git checkout -- tools/arauna/check_text_width.py
           rm -rf .integration_payload .integration_payload_pampa
           rm -f .github/workflows/integrate-arauna-maps.yml
           git config user.name "github-actions[bot]"
