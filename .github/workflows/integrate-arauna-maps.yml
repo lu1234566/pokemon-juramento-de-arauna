@@ -16,9 +16,9 @@ jobs:
       - name: Checkout integration branch
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          fetch-depth: 1
 
-      - name: Reconstruct and verify map overlay
+      - name: Reconstruct and verify base map overlay
         shell: bash
         run: |
           set -euo pipefail
@@ -27,18 +27,48 @@ jobs:
           echo "d089b07ab3eea3b8b0db742c87efa5e6c0775b3eb208ea55c7ab86b9c96fc0fb  /tmp/arauna_overlay.tar.xz" | sha256sum -c -
           tar -xJf /tmp/arauna_overlay.tar.xz
 
-      - name: Validate integrated JSON
+      - name: Reconstruct and apply Pampa interiors V1
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat .integration_payload_pampa/part_* > /tmp/pampa_interiores.b64
+          base64 -d /tmp/pampa_interiores.b64 > /tmp/pampa_interiores.tar.xz
+          echo "8138322cb121ddafe54fb77deaa4871f458615f184b97d531f4494666b58bbb1  /tmp/pampa_interiores.tar.xz" | sha256sum -c -
+          tar -xJf /tmp/pampa_interiores.tar.xz
+
+      - name: Validate integrated maps and JSON
         shell: bash
         run: |
           python3 - <<'PY'
           import json
           from pathlib import Path
+
           count = 0
           for root in (Path('data'), Path('src')):
               for path in root.rglob('*.json'):
                   json.loads(path.read_text(encoding='utf-8'))
                   count += 1
-          print(f'JSON validation PASS: {count} files')
+
+          expected = {
+              'PetalburgCity_Gym': 'LAYOUT_ARAUNA_PAMPA_GYM',
+              'PetalburgCity_House1': 'LAYOUT_ARAUNA_PAMPA_HOUSE1',
+              'PetalburgCity_House2': 'LAYOUT_ARAUNA_PAMPA_HOUSE2',
+              'PetalburgCity_WallysHouse': 'LAYOUT_ARAUNA_PAMPA_WALLYSHOUSE',
+              'PetalburgCity_Mart': 'LAYOUT_ARAUNA_PAMPA_MART',
+              'PetalburgCity_PokemonCenter_1F': 'LAYOUT_ARAUNA_PAMPA_POKEMONCENTER_1F',
+              'PetalburgCity_PokemonCenter_2F': 'LAYOUT_ARAUNA_PAMPA_POKEMONCENTER_2F',
+          }
+          for name, layout in expected.items():
+              path = Path('data/maps') / name / 'map.json'
+              data = json.loads(path.read_text(encoding='utf-8'))
+              assert data['layout'] == layout, (name, data['layout'], layout)
+
+          for bank in ('galpao', 'casas', 'venda', 'centro'):
+              base = Path('data/tilesets/secondary') / f'arauna_pampa_{bank}'
+              for rel in ('tiles.png', 'metatiles.bin', 'metatile_attributes.bin'):
+                  assert (base / rel).is_file(), base / rel
+
+          print(f'Integrated JSON validation PASS: {count} files; Pampa interiors 7/7')
           PY
 
       - name: Work around pre-existing empty text-width measurement bug
@@ -49,7 +79,7 @@ jobs:
           p = Path('tools/arauna/check_text_width.py')
           s = p.read_text(encoding='utf-8')
           old = '        cap = max(width for width, _ in measure(ruler, original))'
-          new = "        _widths = [width for width, _ in measure(ruler, original)]\n        if not _widths:\n            continue\n        cap = max(_widths)"
+          new = '        cap = max((width for width, _ in measure(ruler, original)), default=0)'
           if old not in s:
               raise SystemExit('Expected pre-existing text-width line not found')
           p.write_text(s.replace(old, new, 1), encoding='utf-8')
@@ -69,7 +99,7 @@ jobs:
       - name: Publish test ROM
         uses: actions/upload-artifact@v4
         with:
-          name: arauna-maps-test-rom
+          name: arauna-maps-pampa-interiors-test-rom
           path: |
             pokemon-juramento-de-arauna-en_modern.gba
             ROM_SHA256.txt
@@ -81,9 +111,10 @@ jobs:
         run: |
           set -euo pipefail
           git checkout -- tools/arauna/check_text_width.py
-          rm -rf .integration_payload
+          rm -rf .integration_payload .integration_payload_pampa
+          rm -f .github/workflows/integrate-arauna-maps.yml
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
-          git commit -m "Integrate Arauna concept maps"
+          git commit -m "Integrate Arauna concept maps through Pampa interiors V1"
           git push origin HEAD:feature/integrate-arauna-concept-maps-20260909
