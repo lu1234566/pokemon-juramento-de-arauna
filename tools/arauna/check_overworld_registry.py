@@ -226,6 +226,49 @@ def main() -> int:
     results.append(check("no creature blocks a chokepoint",
                          not blocked, ", ".join(blocked[:4])))
 
+    # The palette table is searched linearly for a terminator, and vanilla ships
+    # the terminator spelt two different ways behind an #ifdef that is off. The
+    # creatures' palettes were added inside that dead branch, so none of them
+    # was compiled in and the search ran past the end of the table -- the
+    # freeze you hit by walking near any of them. Three things keep it fixed:
+    # the table ends in the sentinel the search looks for, it ends exactly once,
+    # and no palette a graphics info asks for is missing from it.
+    print("\npalette table")
+    start = movement.index("static const struct SpritePalette sObjectEventSpritePalettes[] = {")
+    table = movement[start:movement.index("\n};", start)]
+    # A bare {} counts as an entry too: that is exactly the spelling vanilla
+    # used for the broken terminator, and it must not be mistaken for absent.
+    entries = [l for l in table.splitlines()
+               if re.search(r"\{\s*(NULL|gObjectEventPal_\w+)\s*,", l)
+               or re.search(r"^\s*\{\s*\}\s*,", l)]
+    sentinels = [i for i, l in enumerate(entries)
+                 if "OBJ_EVENT_PAL_TAG_NONE" in l]
+    results.append(check("the palette table ends with OBJ_EVENT_PAL_TAG_NONE",
+                         bool(sentinels) and sentinels[-1] == len(entries) - 1,
+                         f"{len(entries)} entries, sentinel at {sentinels}"))
+    results.append(check("nothing sits after the terminator, and there is only one",
+                         len(sentinels) == 1,
+                         f"{len(sentinels)} sentinels"))
+    directives = [l.strip() for l in table.splitlines()
+                  if l.lstrip().startswith("#")]
+    results.append(check("no palette entry is hidden behind a disabled #ifdef",
+                         not directives,
+                         ", ".join(directives[:3]) if directives
+                         else "the creatures' palettes were once inside #ifdef BUGFIX"))
+
+    registered = set(re.findall(r"OBJ_EVENT_PAL_TAG_\w+", table))
+    asked = set()
+    for path in ("src/data/object_events/object_event_graphics_info.h",
+                 "src/data/object_events/arauna_overworld.h"):
+        text = (ROOT / path).read_text(encoding="utf-8")
+        asked |= set(re.findall(r"\.(?:paletteTag|reflectionPaletteTag)\s*=\s*"
+                                r"(OBJ_EVENT_PAL_TAG_\w+)", text))
+    unregistered = sorted(asked - registered - {"OBJ_EVENT_PAL_TAG_NONE"})
+    results.append(check("every palette a graphics info asks for is in the table",
+                         not unregistered,
+                         ", ".join(unregistered[:4]) if unregistered
+                         else f"{len(asked)} tags asked for"))
+
     print(f"\n{sum(results)}/{len(results)} checks passed")
     return 0 if all(results) else 1
 

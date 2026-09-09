@@ -691,70 +691,62 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_HorizonteF,       OBJ_EVENT_PAL_TAG_HORIZONTE_F},
     {gObjectEventPal_LembranteM,       OBJ_EVENT_PAL_TAG_LEMBRANTE_M},
     {gObjectEventPal_LembranteF,       OBJ_EVENT_PAL_TAG_LEMBRANTE_F},
-#ifdef BUGFIX
-        {gObjectEventPal_AraunaIemanja,                           OBJ_EVENT_PAL_TAG_ARAUNA_IEMANJA},
-    {gObjectEventPal_AraunaLobisomem,                         OBJ_EVENT_PAL_TAG_ARAUNA_LOBISOMEM},
-    {gObjectEventPal_AraunaOxala,                             OBJ_EVENT_PAL_TAG_ARAUNA_OXALA},
-    {gObjectEventPal_AraunaCurupiraAnciao,                    OBJ_EVENT_PAL_TAG_ARAUNA_CURUPIRA_ANCIAO},
-    {gObjectEventPal_AraunaPretoVelho,                        OBJ_EVENT_PAL_TAG_ARAUNA_PRETO_VELHO},
-    {gObjectEventPal_AraunaCristo,                            OBJ_EVENT_PAL_TAG_ARAUNA_CRISTO},
-        {gObjectEventPal_AraunaIemanja,                           OBJ_EVENT_PAL_TAG_ARAUNA_IEMANJA},
-    {gObjectEventPal_AraunaLobisomem,                         OBJ_EVENT_PAL_TAG_ARAUNA_LOBISOMEM},
-    {gObjectEventPal_AraunaOxala,                             OBJ_EVENT_PAL_TAG_ARAUNA_OXALA},
-    {gObjectEventPal_AraunaCurupiraAnciao,                    OBJ_EVENT_PAL_TAG_ARAUNA_CURUPIRA_ANCIAO},
-    {gObjectEventPal_AraunaPretoVelho,                        OBJ_EVENT_PAL_TAG_ARAUNA_PRETO_VELHO},
-    {gObjectEventPal_AraunaCristo,                            OBJ_EVENT_PAL_TAG_ARAUNA_CRISTO},
-        {gObjectEventPal_AraunaQueribela,                         OBJ_EVENT_PAL_TAG_ARAUNA_QUERIBELA},
-    {gObjectEventPal_AraunaPetropico,                         OBJ_EVENT_PAL_TAG_ARAUNA_PETROPICO},
-    {gObjectEventPal_AraunaMuricoco,                          OBJ_EVENT_PAL_TAG_ARAUNA_MURICOCO},
-    {gObjectEventPal_AraunaBotogalau,                         OBJ_EVENT_PAL_TAG_ARAUNA_BOTOGALAU},
-    {gObjectEventPal_AraunaTatubola,                          OBJ_EVENT_PAL_TAG_ARAUNA_TATUBOLA},
-    {gObjectEventPal_AraunaTatucu,                            OBJ_EVENT_PAL_TAG_ARAUNA_TATUCU},
-    {gObjectEventPal_AraunaJacarodon,                         OBJ_EVENT_PAL_TAG_ARAUNA_JACARODON},
-    {gObjectEventPal_AraunaPreguicim,                         OBJ_EVENT_PAL_TAG_ARAUNA_PREGUICIM},
-    {gObjectEventPal_AraunaPapaguim,                          OBJ_EVENT_PAL_TAG_ARAUNA_PAPAGUIM},
-    {gObjectEventPal_AraunaPapagaiao,                         OBJ_EVENT_PAL_TAG_ARAUNA_PAPAGAIAO},
-    {gObjectEventPal_AraunaAntarau,                           OBJ_EVENT_PAL_TAG_ARAUNA_ANTARAU},
-    {gObjectEventPal_AraunaBoiuna,                            OBJ_EVENT_PAL_TAG_ARAUNA_BOIUNA},
-    {gObjectEventPal_AraunaGuaracim,                          OBJ_EVENT_PAL_TAG_ARAUNA_GUARACIM},
-    {gObjectEventPal_AraunaGuara,                             OBJ_EVENT_PAL_TAG_ARAUNA_GUARA},
-    {gObjectEventPal_AraunaGuaraflama,                        OBJ_EVENT_PAL_TAG_ARAUNA_GUARAFLAMA},
-    {gObjectEventPal_AraunaTeiuzim,                           OBJ_EVENT_PAL_TAG_ARAUNA_TEIUZIM},
-    {gObjectEventPal_AraunaXango,                             OBJ_EVENT_PAL_TAG_ARAUNA_XANGO},
-    {gObjectEventPal_AraunaIemanja,                           OBJ_EVENT_PAL_TAG_ARAUNA_IEMANJA},
-    {gObjectEventPal_AraunaOxum,                              OBJ_EVENT_PAL_TAG_ARAUNA_OXUM},
-    {gObjectEventPal_AraunaOgum,                              OBJ_EVENT_PAL_TAG_ARAUNA_OGUM},
-    {gObjectEventPal_AraunaCavalim,                           OBJ_EVENT_PAL_TAG_ARAUNA_CAVALIM},
-    {gObjectEventPal_AraunaOvelhinha,                         OBJ_EVENT_PAL_TAG_ARAUNA_OVELHINHA},
-    {gObjectEventPal_AraunaCigarrao,                          OBJ_EVENT_PAL_TAG_ARAUNA_CIGARRAO},
-    {gObjectEventPal_AraunaMuda,                              OBJ_EVENT_PAL_TAG_ARAUNA_MUDA},
-    {gObjectEventPal_AraunaOrquidina,                         OBJ_EVENT_PAL_TAG_ARAUNA_ORQUIDINA},
-    {gObjectEventPal_AraunaBuriti,                            OBJ_EVENT_PAL_TAG_ARAUNA_BURITI},
-    {gObjectEventPal_AraunaPeixeEspada,                       OBJ_EVENT_PAL_TAG_ARAUNA_PEIXE_ESPADA},
-    {gObjectEventPal_AraunaLoirinha,                          OBJ_EVENT_PAL_TAG_ARAUNA_LOIRINHA},
-    {gObjectEventPal_AraunaLobisomem,                         OBJ_EVENT_PAL_TAG_ARAUNA_LOBISOMEM},
-    {gObjectEventPal_AraunaAnhanga,                           OBJ_EVENT_PAL_TAG_ARAUNA_ANHANGA},
-    {gObjectEventPal_AraunaRuda,                              OBJ_EVENT_PAL_TAG_ARAUNA_RUDA},
-    {gObjectEventPal_AraunaAnhangaPita,                       OBJ_EVENT_PAL_TAG_ARAUNA_ANHANGA_PITA},
-    {gObjectEventPal_AraunaZumbi,                             OBJ_EVENT_PAL_TAG_ARAUNA_ZUMBI},
-    {gObjectEventPal_AraunaIemanjaPequena,                    OBJ_EVENT_PAL_TAG_ARAUNA_IEMANJA_PEQUENA},
-    {gObjectEventPal_AraunaOxala,                             OBJ_EVENT_PAL_TAG_ARAUNA_OXALA},
-    {gObjectEventPal_AraunaCurupiraAnciao,                    OBJ_EVENT_PAL_TAG_ARAUNA_CURUPIRA_ANCIAO},
-    {gObjectEventPal_AraunaPretoVelho,                        OBJ_EVENT_PAL_TAG_ARAUNA_PRETO_VELHO},
-    {gObjectEventPal_AraunaTerolibraRainha,                   OBJ_EVENT_PAL_TAG_ARAUNA_TEROLIBRA_RAINHA},
-    {gObjectEventPal_AraunaAnhangau,                          OBJ_EVENT_PAL_TAG_ARAUNA_ANHANGAU},
-    {gObjectEventPal_AraunaAmazona,                           OBJ_EVENT_PAL_TAG_ARAUNA_AMAZONA},
-    {gObjectEventPal_AraunaCorcovadoAnciao,                   OBJ_EVENT_PAL_TAG_ARAUNA_CORCOVADO_ANCIAO},
-    {gObjectEventPal_AraunaCristo,                            OBJ_EVENT_PAL_TAG_ARAUNA_CRISTO},
-    {gObjectEventPal_AraunaPerereca,                          OBJ_EVENT_PAL_TAG_ARAUNA_PERERECA},
-    {gObjectEventPal_AraunaFerrugem,                          OBJ_EVENT_PAL_TAG_ARAUNA_FERRUGEM},
-    {gObjectEventPal_AraunaBituca,                            OBJ_EVENT_PAL_TAG_ARAUNA_BITUCA},
-    {gObjectEventPal_AraunaSanfoninha,                        OBJ_EVENT_PAL_TAG_ARAUNA_SANFONINHA},
+    // The redrawn Arauna creatures. These used to sit inside an #ifdef
+    // BUGFIX that is switched off, so none of them was compiled in and
+    // FindObjectEventPaletteIndexByTag walked off the end of the table
+    // looking for a tag that was never there -- the infinite loop the
+    // comment below warns about, reached by walking near any one of the
+    // forty-five creatures placed on twenty-five maps.
+    {gObjectEventPal_AraunaIemanja,             OBJ_EVENT_PAL_TAG_ARAUNA_IEMANJA},
+    {gObjectEventPal_AraunaLobisomem,           OBJ_EVENT_PAL_TAG_ARAUNA_LOBISOMEM},
+    {gObjectEventPal_AraunaOxala,               OBJ_EVENT_PAL_TAG_ARAUNA_OXALA},
+    {gObjectEventPal_AraunaCurupiraAnciao,      OBJ_EVENT_PAL_TAG_ARAUNA_CURUPIRA_ANCIAO},
+    {gObjectEventPal_AraunaPretoVelho,          OBJ_EVENT_PAL_TAG_ARAUNA_PRETO_VELHO},
+    {gObjectEventPal_AraunaCristo,              OBJ_EVENT_PAL_TAG_ARAUNA_CRISTO},
+    {gObjectEventPal_AraunaQueribela,           OBJ_EVENT_PAL_TAG_ARAUNA_QUERIBELA},
+    {gObjectEventPal_AraunaPetropico,           OBJ_EVENT_PAL_TAG_ARAUNA_PETROPICO},
+    {gObjectEventPal_AraunaMuricoco,            OBJ_EVENT_PAL_TAG_ARAUNA_MURICOCO},
+    {gObjectEventPal_AraunaBotogalau,           OBJ_EVENT_PAL_TAG_ARAUNA_BOTOGALAU},
+    {gObjectEventPal_AraunaTatubola,            OBJ_EVENT_PAL_TAG_ARAUNA_TATUBOLA},
+    {gObjectEventPal_AraunaTatucu,              OBJ_EVENT_PAL_TAG_ARAUNA_TATUCU},
+    {gObjectEventPal_AraunaJacarodon,           OBJ_EVENT_PAL_TAG_ARAUNA_JACARODON},
+    {gObjectEventPal_AraunaPreguicim,           OBJ_EVENT_PAL_TAG_ARAUNA_PREGUICIM},
+    {gObjectEventPal_AraunaPapaguim,            OBJ_EVENT_PAL_TAG_ARAUNA_PAPAGUIM},
+    {gObjectEventPal_AraunaPapagaiao,           OBJ_EVENT_PAL_TAG_ARAUNA_PAPAGAIAO},
+    {gObjectEventPal_AraunaAntarau,             OBJ_EVENT_PAL_TAG_ARAUNA_ANTARAU},
+    {gObjectEventPal_AraunaBoiuna,              OBJ_EVENT_PAL_TAG_ARAUNA_BOIUNA},
+    {gObjectEventPal_AraunaGuaracim,            OBJ_EVENT_PAL_TAG_ARAUNA_GUARACIM},
+    {gObjectEventPal_AraunaGuara,               OBJ_EVENT_PAL_TAG_ARAUNA_GUARA},
+    {gObjectEventPal_AraunaGuaraflama,          OBJ_EVENT_PAL_TAG_ARAUNA_GUARAFLAMA},
+    {gObjectEventPal_AraunaTeiuzim,             OBJ_EVENT_PAL_TAG_ARAUNA_TEIUZIM},
+    {gObjectEventPal_AraunaXango,               OBJ_EVENT_PAL_TAG_ARAUNA_XANGO},
+    {gObjectEventPal_AraunaOxum,                OBJ_EVENT_PAL_TAG_ARAUNA_OXUM},
+    {gObjectEventPal_AraunaOgum,                OBJ_EVENT_PAL_TAG_ARAUNA_OGUM},
+    {gObjectEventPal_AraunaCavalim,             OBJ_EVENT_PAL_TAG_ARAUNA_CAVALIM},
+    {gObjectEventPal_AraunaOvelhinha,           OBJ_EVENT_PAL_TAG_ARAUNA_OVELHINHA},
+    {gObjectEventPal_AraunaCigarrao,            OBJ_EVENT_PAL_TAG_ARAUNA_CIGARRAO},
+    {gObjectEventPal_AraunaMuda,                OBJ_EVENT_PAL_TAG_ARAUNA_MUDA},
+    {gObjectEventPal_AraunaOrquidina,           OBJ_EVENT_PAL_TAG_ARAUNA_ORQUIDINA},
+    {gObjectEventPal_AraunaBuriti,              OBJ_EVENT_PAL_TAG_ARAUNA_BURITI},
+    {gObjectEventPal_AraunaPeixeEspada,         OBJ_EVENT_PAL_TAG_ARAUNA_PEIXE_ESPADA},
+    {gObjectEventPal_AraunaLoirinha,            OBJ_EVENT_PAL_TAG_ARAUNA_LOIRINHA},
+    {gObjectEventPal_AraunaAnhanga,             OBJ_EVENT_PAL_TAG_ARAUNA_ANHANGA},
+    {gObjectEventPal_AraunaRuda,                OBJ_EVENT_PAL_TAG_ARAUNA_RUDA},
+    {gObjectEventPal_AraunaAnhangaPita,         OBJ_EVENT_PAL_TAG_ARAUNA_ANHANGA_PITA},
+    {gObjectEventPal_AraunaZumbi,               OBJ_EVENT_PAL_TAG_ARAUNA_ZUMBI},
+    {gObjectEventPal_AraunaIemanjaPequena,      OBJ_EVENT_PAL_TAG_ARAUNA_IEMANJA_PEQUENA},
+    {gObjectEventPal_AraunaTerolibraRainha,     OBJ_EVENT_PAL_TAG_ARAUNA_TEROLIBRA_RAINHA},
+    {gObjectEventPal_AraunaAnhangau,            OBJ_EVENT_PAL_TAG_ARAUNA_ANHANGAU},
+    {gObjectEventPal_AraunaAmazona,             OBJ_EVENT_PAL_TAG_ARAUNA_AMAZONA},
+    {gObjectEventPal_AraunaCorcovadoAnciao,     OBJ_EVENT_PAL_TAG_ARAUNA_CORCOVADO_ANCIAO},
+    {gObjectEventPal_AraunaPerereca,            OBJ_EVENT_PAL_TAG_ARAUNA_PERERECA},
+    {gObjectEventPal_AraunaFerrugem,            OBJ_EVENT_PAL_TAG_ARAUNA_FERRUGEM},
+    {gObjectEventPal_AraunaBituca,              OBJ_EVENT_PAL_TAG_ARAUNA_BITUCA},
+    {gObjectEventPal_AraunaSanfoninha,          OBJ_EVENT_PAL_TAG_ARAUNA_SANFONINHA},
+    // Unconditional terminator. The vanilla #else spelt it {}, which is
+    // tag 0 rather than OBJ_EVENT_PAL_TAG_NONE, and that is what let the
+    // search run past the end.
     {NULL,                                  OBJ_EVENT_PAL_TAG_NONE},
-#else
-    {}, // BUG: FindObjectEventPaletteIndexByTag looks for OBJ_EVENT_PAL_TAG_NONE and not 0x0.
-        // If it's looking for a tag that isn't in this table, the game locks in an infinite loop.
-#endif
 };
 
 static const u16 sReflectionPaletteTags_Brendan[] = {
@@ -2393,8 +2385,15 @@ static u8 LoadSpritePaletteIfTagExists(const struct SpritePalette *spritePalette
 
 void PatchObjectPalette(u16 paletteTag, u8 paletteSlot)
 {
-    // paletteTag is assumed to exist in sObjectEventSpritePalettes
     u8 paletteIndex = FindObjectEventPaletteIndexByTag(paletteTag);
+
+    // Vanilla assumes the tag is in the table and indexes with whatever comes
+    // back, so a tag that is not there reads entry 255 and loads a palette
+    // from a wild pointer. Leaving the bank alone instead turns a missing
+    // registration into a character wearing the previous occupant's colours,
+    // which is visible and survivable, rather than into corruption.
+    if (paletteIndex == 0xFF)
+        return;
 
     LoadPalette(sObjectEventSpritePalettes[paletteIndex].data, OBJ_PLTT_ID(paletteSlot), PLTT_SIZE_4BPP);
 }
