@@ -2926,6 +2926,8 @@ extern const u32 gTrainerFrontPic_Youngster[];
 extern const u32 gTrainerFrontPic_ChampionWallace[];
 extern const u32 gTrainerFrontPic_CiroConsorcio[];
 extern const u32 gTrainerPalette_CiroConsorcio[];
+extern const u32 gTrainerFrontPic_CiroFase1[];
+extern const u32 gTrainerPalette_CiroFase1[];
 extern const u32 gTrainerFrontPic_Fisherman[];
 extern const u32 gTrainerFrontPic_CyclingTriathleteM[];
 extern const u32 gTrainerFrontPic_CyclingTriathleteF[];

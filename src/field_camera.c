@@ -285,11 +285,20 @@ static void DrawMetatile(s32 metatileLayerType, const u16 *tiles, u16 offset)
         gOverworldTilemapBuffer_Bg1[offset + 0x21] = 0;
         break;
     case METATILE_LAYER_TYPE_NORMAL:
-        // Draw garbage to the bottom background layer.
-        gOverworldTilemapBuffer_Bg3[offset] = 0x3014;
-        gOverworldTilemapBuffer_Bg3[offset + 1] = 0x3014;
-        gOverworldTilemapBuffer_Bg3[offset + 0x20] = 0x3014;
-        gOverworldTilemapBuffer_Bg3[offset + 0x21] = 0x3014;
+        // Draw transparent tiles to the bottom background layer.
+        //
+        // Vanilla writes 0x3014 here and calls it garbage, which is safe only
+        // while every NORMAL metatile is opaque in the layer above: the entry
+        // points at palette 3, and palette 3 of the inside-building tileset is
+        // an unused magenta placeholder. The Arauna tilesets have transparent
+        // NORMAL metatiles -- the interior borders and the empty cells around
+        // a room -- so that placeholder was showing through as flat magenta.
+        // A transparent entry leaves the backdrop instead, which is what the
+        // opaque case was hiding all along.
+        gOverworldTilemapBuffer_Bg3[offset] = 0;
+        gOverworldTilemapBuffer_Bg3[offset + 1] = 0;
+        gOverworldTilemapBuffer_Bg3[offset + 0x20] = 0;
+        gOverworldTilemapBuffer_Bg3[offset + 0x21] = 0;
 
         // Draw metatile's bottom layer to the middle background layer.
         gOverworldTilemapBuffer_Bg2[offset] = tiles[0];

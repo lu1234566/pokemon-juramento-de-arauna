@@ -165,6 +165,8 @@ const u32 gTrainerPalette_ChampionWallace[] = INCGFX_U32("graphics/trainers/fron
 
 const u32 gTrainerFrontPic_CiroConsorcio[] = INCGFX_U32("graphics/trainers/front_pics/ciro_consorcio.png", ".4bpp.lz");
 const u32 gTrainerPalette_CiroConsorcio[] = INCGFX_U32("graphics/trainers/front_pics/ciro_consorcio.png", ".gbapal.lz");
+const u32 gTrainerFrontPic_CiroFase1[] = INCGFX_U32("graphics/trainers/front_pics/ciro_fase1.png", ".4bpp.lz");
+const u32 gTrainerPalette_CiroFase1[] = INCGFX_U32("graphics/trainers/front_pics/ciro_fase1.png", ".gbapal.lz");
 
 const u32 gTrainerFrontPic_Fisherman[] = INCGFX_U32("graphics/trainers/front_pics/fisherman.png", ".4bpp.lz");
 const u32 gTrainerPalette_Fisherman[] = INCGFX_U32("graphics/trainers/front_pics/fisherman.png", ".gbapal.lz");
