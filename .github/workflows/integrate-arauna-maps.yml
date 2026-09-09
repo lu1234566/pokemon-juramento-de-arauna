@@ -43,6 +43,29 @@ jobs:
           echo "8138322cb121ddafe54fb77deaa4871f458615f184b97d531f4494666b58bbb1  /tmp/pampa_interiores.tar.xz" | sha256sum -c -
           tar -xJf /tmp/pampa_interiores.tar.xz
 
+      - name: Normalize Casa Uivo quotes for Emerald charmap
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          p = Path('data/maps/Arauna_CasaUivo_Sala/scripts.inc')
+          s = p.read_text(encoding='utf-8')
+          replacements = {
+              r'\"Please sit': '“Please sit',
+              r'time.\"$': 'time.”$',
+              r'\"You can sit': '“You can sit',
+              r'everyone.\"$': 'everyone.”$',
+          }
+          for old, new in replacements.items():
+              if old not in s:
+                  raise SystemExit(f'Expected Casa Uivo quote sequence not found: {old}')
+              s = s.replace(old, new, 1)
+          if r'\"' in s:
+              raise SystemExit('Unconverted ASCII escaped quote remains in Casa Uivo')
+          p.write_text(s, encoding='utf-8')
+          print('Casa Uivo quote normalization: PASS (4/4)')
+          PY
+
       - name: Validate integrated maps and JSON
         shell: bash
         run: |
