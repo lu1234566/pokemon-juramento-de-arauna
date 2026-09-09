@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "maps": [
+    "Arauna_CasaUivo_Refugio",
+    "Arauna_CasaUivo_Sala",
+    "Arauna_CasaUivo_Memorias"
+  ],
+  "blocks": {
+    "CasaUivo_Text_Trail": [
+      "Casa do Uivo\\n",
+      "Mountain trail.$"
+    ],
+    "CasaUivo_Text_Refuge": [
+      "Casa do Uivo\\n",
+      "A place to meet and remember.$"
+    ],
+    "CasaUivo_Text_Water": [
+      "Water falls through the rocks.\\n",
+      "The path stays above the pool.$"
+    ],
+    "CasaUivo_Text_Welcome": [
+      "Take a seat where everyone\\n",
+      "can see one another.$"
+    ],
+    "CasaUivo_Text_Books": [
+      "Stories are kept here in\\n",
+      "notebooks and drawings.\\p",
+      "Their authors are named\\n",
+      "beside each record.$"
+    ],
+    "CasaUivo_Text_Drawings": [
+      "Drawings show where people sit\\n",
+      "and how they share the room.\\p",
+      "No one should be hidden\\n",
+      "behind another person.$"
+    ],
+    "CasaUivo_Text_Hermit": [
+      "He turns a notebook toward you.\\p",
+      "\"Please sit where we can see\\n",
+      "each other. Take your time.\"$"
+    ],
+    "CasaUivo_Text_Child": [
+      "\"You can sit beside me.\\n",
+      "There is room for everyone.\"$"
+    ],
+    "CasaUivo_Text_Memory": [
+      "Notebooks and drawings kept\\n",
+      "by the Hermit and his mother.\\p",
+      "Her name remains beside\\n",
+      "the stories she shared.$"
+    ],
+    "CasaUivo_Text_Cloth": [
+      "A carefully folded cloth\\n",
+      "rests beside the notebooks.$"
+    ],
+    "CasaUivo_Text_Window": [
+      "Blue light falls across\\n",
+      "the quiet wooden floor.$"
+    ]
+  },
+  "rendered_directly": true
+}

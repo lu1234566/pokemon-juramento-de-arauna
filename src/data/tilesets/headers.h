@@ -825,3 +825,178 @@ const struct Tileset gTileset_UnionRoom =
     .metatileAttributes = gMetatileAttributes_UnionRoom,
     .callback = NULL,
 };
+
+// BEGIN ARAUNA_AMANHECER_V8
+const struct Tileset gTileset_AraunaAmanhecer =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaAmanhecer,
+    .palettes = gTilesetPalettes_AraunaAmanhecer,
+    .metatiles = gMetatiles_AraunaAmanhecer,
+    .metatileAttributes = gMetatileAttributes_AraunaAmanhecer,
+    .callback = InitTilesetAnim_Petalburg,
+};
+// END ARAUNA_AMANHECER_V8
+
+const struct Tileset gTileset_AraunaRedes =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaRedes,
+    .palettes = gTilesetPalettes_AraunaRedes,
+    .metatiles = gMetatiles_AraunaRedes,
+    .metatileAttributes = gMetatileAttributes_AraunaRedes,
+    .callback = InitTilesetAnim_Dewford,
+};
+
+const struct Tileset gTileset_AraunaMare =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaMare,
+    .palettes = gTilesetPalettes_AraunaMare,
+    .metatiles = gMetatiles_AraunaMare,
+    .metatileAttributes = gMetatileAttributes_AraunaMare,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_AraunaTerra =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaTerra,
+    .palettes = gTilesetPalettes_AraunaTerra,
+    .metatiles = gMetatiles_AraunaTerra,
+    .metatileAttributes = gMetatileAttributes_AraunaTerra,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_AraunaPrimeiraCamara =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaPrimeiraCamara,
+    .palettes = gTilesetPalettes_AraunaPrimeiraCamara,
+    .metatiles = gMetatiles_AraunaPrimeiraCamara,
+    .metatileAttributes = gMetatileAttributes_AraunaPrimeiraCamara,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_AraunaCasaAmanhecer =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaCasaAmanhecer,
+    .palettes = gTilesetPalettes_AraunaCasaAmanhecer,
+    .metatiles = gMetatiles_AraunaCasaAmanhecer,
+    .metatileAttributes = gMetatileAttributes_AraunaCasaAmanhecer,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_AraunaCasaCiro =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaCasaCiro,
+    .palettes = gTilesetPalettes_AraunaCasaCiro,
+    .metatiles = gMetatiles_AraunaCasaCiro,
+    .metatileAttributes = gMetatileAttributes_AraunaCasaCiro,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_AraunaAnahi =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaAnahi,
+    .palettes = gTilesetPalettes_AraunaAnahi,
+    .metatiles = gMetatiles_AraunaAnahi,
+    .metatileAttributes = gMetatileAttributes_AraunaAnahi,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_AraunaSerraUivo =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaSerraUivo,
+    .palettes = gTilesetPalettes_AraunaSerraUivo,
+    .metatiles = gMetatiles_AraunaSerraUivo,
+    .metatileAttributes = gMetatileAttributes_AraunaSerraUivo,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_AraunaUivoRefugio =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaUivoRefugio,
+    .palettes = gTilesetPalettes_AraunaUivoRefugio,
+    .metatiles = gMetatiles_AraunaUivoRefugio,
+    .metatileAttributes = gMetatileAttributes_AraunaUivoRefugio,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_AraunaUivoInterior =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaUivoInterior,
+    .palettes = gTilesetPalettes_AraunaUivoInterior,
+    .metatiles = gMetatiles_AraunaUivoInterior,
+    .metatileAttributes = gMetatileAttributes_AraunaUivoInterior,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_AraunaPampa =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaPampa,
+    .palettes = gTilesetPalettes_AraunaPampa,
+    .metatiles = gMetatiles_AraunaPampa,
+    .metatileAttributes = gMetatileAttributes_AraunaPampa,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_AraunaPampaGalpao =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaPampaGalpao,
+    .palettes = gTilesetPalettes_AraunaPampaGalpao,
+    .metatiles = gMetatiles_AraunaPampaGalpao,
+    .metatileAttributes = gMetatileAttributes_AraunaPampaGalpao,
+    .callback = NULL,
+};
+const struct Tileset gTileset_AraunaPampaCasas =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaPampaCasas,
+    .palettes = gTilesetPalettes_AraunaPampaCasas,
+    .metatiles = gMetatiles_AraunaPampaCasas,
+    .metatileAttributes = gMetatileAttributes_AraunaPampaCasas,
+    .callback = NULL,
+};
+const struct Tileset gTileset_AraunaPampaVenda =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaPampaVenda,
+    .palettes = gTilesetPalettes_AraunaPampaVenda,
+    .metatiles = gMetatiles_AraunaPampaVenda,
+    .metatileAttributes = gMetatileAttributes_AraunaPampaVenda,
+    .callback = NULL,
+};
+const struct Tileset gTileset_AraunaPampaCentro =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaPampaCentro,
+    .palettes = gTilesetPalettes_AraunaPampaCentro,
+    .metatiles = gMetatiles_AraunaPampaCentro,
+    .metatileAttributes = gMetatileAttributes_AraunaPampaCentro,
+    .callback = NULL,
+};

@@ -116,7 +116,7 @@ DewfordTown_EventScript_SailToPetalburg::
 	applymovement LOCALID_DEWFORD_BRINEY, DewfordTown_Movement_BrineyBoardBoat
 	waitmovement 0
 	removeobject LOCALID_DEWFORD_BRINEY
-	applymovement LOCALID_PLAYER, DewfordTown_Movement_PlayerBoardBoat
+	call DewfordTown_EventScript_BoardPlayerAtNewPier
 	waitmovement 0
 	hideobjectat LOCALID_PLAYER, MAP_DEWFORD_TOWN
 	call Common_EventScript_PlayBrineysBoatMusic
@@ -148,7 +148,7 @@ DewfordTown_EventScript_SailToSlateport::
 	applymovement LOCALID_DEWFORD_BRINEY, DewfordTown_Movement_BrineyBoardBoat
 	waitmovement 0
 	removeobject LOCALID_DEWFORD_BRINEY
-	applymovement LOCALID_PLAYER, DewfordTown_Movement_PlayerBoardBoat
+	call DewfordTown_EventScript_BoardPlayerAtNewPier
 	waitmovement 0
 	hideobjectat LOCALID_PLAYER, MAP_DEWFORD_TOWN
 	call Common_EventScript_PlayBrineysBoatMusic
@@ -789,3 +789,28 @@ DewfordTown_Text_YeahDefinitionOfInRightNow:
 	.string "Yeah, absolutely right!\p"
 	.string "“{STR_VAR_1}” is the\n"
 	.string "definition of “in” right now.$"
+
+DewfordTown_EventScript_BoardPlayerAtNewPier::
+	switch VAR_FACING
+	case DIR_WEST, DewfordTown_EventScript_BoardPlayerFromEast
+	case DIR_NORTH, DewfordTown_EventScript_BoardPlayerFromSouth
+	applymovement LOCALID_PLAYER, DewfordTown_Movement_PlayerBoardBoat
+	return
+
+DewfordTown_EventScript_BoardPlayerFromEast::
+	applymovement LOCALID_PLAYER, DewfordTown_Movement_BoardFromEast
+	return
+
+DewfordTown_EventScript_BoardPlayerFromSouth::
+	applymovement LOCALID_PLAYER, DewfordTown_Movement_BoardFromSouth
+	return
+
+DewfordTown_Movement_BoardFromEast:
+	walk_left
+	walk_up
+	step_end
+
+DewfordTown_Movement_BoardFromSouth:
+	walk_up
+	walk_up
+	step_end

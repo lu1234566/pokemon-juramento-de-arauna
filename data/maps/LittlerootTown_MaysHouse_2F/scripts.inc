@@ -1,4 +1,5 @@
 LittlerootTown_MaysHouse_2F_MapScripts::
+	map_script MAP_SCRIPT_ON_LOAD, LittlerootTown_MaysHouse_2F_V9_OnLoad
 	map_script MAP_SCRIPT_ON_TRANSITION, LittlerootTown_MaysHouse_2F_OnTransition
 	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, LittlerootTown_MaysHouse_2F_OnWarp
 	.byte 0
@@ -356,3 +357,16 @@ RivalsHouse_2F_Text_BrendanWhereShouldIGoNext:
 	.string "CIRO: O HORIZONTE nao me pediu\npara esquecer nada. So me\p"
 	.string "mostrou que existe um futuro\nque nao precisa ser governado\p"
 	.string "pelo passado.$"
+
+LittlerootTown_MaysHouse_2F_V9_OnLoad:
+	call LittlerootTown_MaysHouse_2F_V9_SelectHomeRole
+	end
+
+LittlerootTown_MaysHouse_2F_V9_SelectHomeRole:
+	checkplayergender
+	goto_if_eq VAR_RESULT, MALE, LittlerootTown_MaysHouse_2F_V9_SelectHomeRole_Ciro
+	return
+
+LittlerootTown_MaysHouse_2F_V9_SelectHomeRole_Ciro:
+	setmaplayoutindex LAYOUT_LITTLEROOT_TOWN_MAYS_HOUSE_2F_CIRO
+	return

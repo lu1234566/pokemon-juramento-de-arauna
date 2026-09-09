@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "maps": [
+    "Arauna_Anahi_Pesquisa",
+    "Arauna_Anahi_Equipamentos"
+  ],
+  "blocks": {
+    "AnahiPesquisa_Text_Records": [
+      "Field notebooks hold maps,\\n",
+      "sketches and notes from Arauna.$"
+    ],
+    "AnahiPesquisa_Text_Specimens": [
+      "Every specimen is labeled\\n",
+      "with the place it was found.$"
+    ],
+    "AnahiPesquisa_Text_Computer": [
+      "The computer organizes records\\n",
+      "from the lab expeditions.$"
+    ],
+    "AnahiEquipamentos_Text_Machines": [
+      "Clean, calibrated instruments\\n",
+      "are ready for the next study.$"
+    ],
+    "AnahiEquipamentos_Text_Supplies": [
+      "Supplies and tools are sorted\\n",
+      "by their intended use.$"
+    ],
+    "AnahiEquipamentos_Text_Notes": [
+      "Each instrument has a record\\n",
+      "of its care and maintenance.$"
+    ]
+  }
+}

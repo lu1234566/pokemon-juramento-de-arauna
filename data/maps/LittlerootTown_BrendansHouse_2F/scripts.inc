@@ -1,4 +1,5 @@
 LittlerootTown_BrendansHouse_2F_MapScripts::
+	map_script MAP_SCRIPT_ON_LOAD, LittlerootTown_BrendansHouse_2F_V9_OnLoad
 	map_script MAP_SCRIPT_ON_TRANSITION, LittlerootTown_BrendansHouse_2F_OnTransition
 	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, LittlerootTown_BrendansHouse_2F_OnWarp
 	.byte 0
@@ -299,3 +300,16 @@ PlayersHouse_2F_Text_ItsAGameCube:
 	.string "It's a Nintendo GameCube.\p"
 	.string "A Game Boy Advance is connected to\n"
 	.string "serve as the Controller.$"
+
+LittlerootTown_BrendansHouse_2F_V9_OnLoad:
+	call LittlerootTown_BrendansHouse_2F_V9_SelectHomeRole
+	end
+
+LittlerootTown_BrendansHouse_2F_V9_SelectHomeRole:
+	checkplayergender
+	goto_if_eq VAR_RESULT, FEMALE, LittlerootTown_BrendansHouse_2F_V9_SelectHomeRole_Ciro
+	return
+
+LittlerootTown_BrendansHouse_2F_V9_SelectHomeRole_Ciro:
+	setmaplayoutindex LAYOUT_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F_CIRO
+	return

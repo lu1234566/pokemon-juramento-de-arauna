@@ -71,7 +71,7 @@ LittlerootTown_EventScript_SetExitedHouseAfterLatiSSTicketEvent::
 	return
 
 LittlerootTown_EventScript_MoveMomToMaysDoor::
-	setobjectxyperm LOCALID_LITTLEROOT_MOM, 14, 8
+	setobjectxyperm LOCALID_LITTLEROOT_MOM, 24, 13
 	return
 
 LittlerootTown_EventScript_SetTwinPos::
@@ -81,7 +81,7 @@ LittlerootTown_EventScript_SetTwinPos::
 	return
 
 LittlerootTown_EventScript_SetTwinGuardingRoutePos::
-	setobjectxyperm LOCALID_LITTLEROOT_TWIN, 7, 2
+	setobjectxyperm LOCALID_LITTLEROOT_TWIN, 8, 2
 	setobjectmovementtype LOCALID_LITTLEROOT_TWIN, MOVEMENT_TYPE_FACE_DOWN
 	return
 
@@ -94,11 +94,11 @@ LittlerootTown_EventScript_SetMomStandingInFrontOfDoorPos::
 	return
 
 LittlerootTown_EventScript_SetMomInFrontOfDoorMale::
-	setobjectxyperm LOCALID_LITTLEROOT_MOM, 5, 9
+	setobjectxyperm LOCALID_LITTLEROOT_MOM, 6, 11
 	return
 
 LittlerootTown_EventScript_SetMomInFrontOfDoorFemale::
-	setobjectxyperm LOCALID_LITTLEROOT_MOM, 14, 9
+	setobjectxyperm LOCALID_LITTLEROOT_MOM, 24, 14
 	return
 
 LittlerootTown_OnFrame:
@@ -109,8 +109,8 @@ LittlerootTown_OnFrame:
 
 LittlerootTown_EventScript_StepOffTruckMale::
 	lockall
-	setvar VAR_0x8004, 5
-	setvar VAR_0x8005, 8
+	setvar VAR_0x8004, 6
+	setvar VAR_0x8005, 10
 	call LittlerootTown_EventScript_GoInsideWithMom
 	setflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_TRUCK
 	warpsilent MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F, 8, 8
@@ -120,8 +120,8 @@ LittlerootTown_EventScript_StepOffTruckMale::
 
 LittlerootTown_EventScript_StepOffTruckFemale::
 	lockall
-	setvar VAR_0x8004, 14
-	setvar VAR_0x8005, 8
+	setvar VAR_0x8004, 24
+	setvar VAR_0x8005, 13
 	call LittlerootTown_EventScript_GoInsideWithMom
 	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_TRUCK
 	warpsilent MAP_LITTLEROOT_TOWN_MAYS_HOUSE_1F, 2, 8
@@ -232,13 +232,13 @@ LittlerootTown_EventScript_SetRivalBirchPosForDexUpgrade::
 	end
 
 LittlerootTown_EventScript_SetRivalBirchPosForDexUpgradeMale::
-	setobjectxy LOCALID_LITTLEROOT_RIVAL, 6, 10
-	setobjectxy LOCALID_LITTLEROOT_BIRCH, 5, 10
+	setobjectxy LOCALID_LITTLEROOT_RIVAL, 7, 12
+	setobjectxy LOCALID_LITTLEROOT_BIRCH, 6, 12
 	end
 
 LittlerootTown_EventScript_SetRivalBirchPosForDexUpgradeFemale::
-	setobjectxy LOCALID_LITTLEROOT_RIVAL, 13, 10
-	setobjectxy LOCALID_LITTLEROOT_BIRCH, 14, 10
+	setobjectxy LOCALID_LITTLEROOT_RIVAL, 23, 15
+	setobjectxy LOCALID_LITTLEROOT_BIRCH, 24, 15
 	end
 
 LittlerootTown_EventScript_FatMan::
@@ -301,19 +301,8 @@ LittlerootTown_EventScript_DangerousWithoutPokemon::
 	return
 
 LittlerootTown_Movement_TwinApproachPlayerLeft:
-	face_right
-	delay_8
-	disable_jump_landing_ground_effect
-	jump_in_place_right
-	delay_8
-	walk_fast_right
-	walk_fast_right
-	walk_fast_right
-	walk_fast_right
-	walk_fast_up
-	walk_fast_up
-	walk_fast_left
-	face_down
+	walk_right
+	walk_in_place_faster_up
 	step_end
 
 LittlerootTown_Movement_TwinPushPlayerFromRoute:
@@ -321,12 +310,6 @@ LittlerootTown_Movement_TwinPushPlayerFromRoute:
 	step_end
 
 LittlerootTown_Movement_TwinReturnLeft:
-	walk_right
-	walk_down
-	walk_down
-	walk_left
-	walk_left
-	walk_left
 	walk_left
 	walk_up
 	walk_in_place_faster_down
@@ -349,26 +332,15 @@ LittlerootTown_EventScript_NeedPokemonTriggerRight::
 	end
 
 LittlerootTown_Movement_TwinApproachPlayerRight:
-	face_right
-	delay_8
-	disable_jump_landing_ground_effect
-	jump_in_place_right
-	delay_8
-	walk_fast_right
-	walk_fast_right
-	walk_fast_right
-	walk_fast_up
-	walk_fast_up
-	walk_fast_right
-	face_down
+	walk_right
+	walk_right
+	walk_in_place_faster_up
 	step_end
 
 LittlerootTown_Movement_TwinReturnRight:
 	walk_left
-	walk_down
 	walk_left
-	walk_left
-	walk_left
+	walk_up
 	walk_in_place_faster_down
 	step_end
 
@@ -485,13 +457,13 @@ LittlerootTown_EventScript_GiveRunningShoesTrigger::
 	end
 
 LittlerootTown_EventScript_SetHomeDoorCoordsMale::
-	setvar VAR_0x8009, 5
-	setvar VAR_0x800A, 8
+	setvar VAR_0x8009, 6
+	setvar VAR_0x800A, 10
 	return
 
 LittlerootTown_EventScript_SetHomeDoorCoordsFemale::
-	setvar VAR_0x8009, 14
-	setvar VAR_0x800A, 8
+	setvar VAR_0x8009, 24
+	setvar VAR_0x800A, 13
 	return
 
 LittlerootTown_EventScript_MomNoticePlayerMale::

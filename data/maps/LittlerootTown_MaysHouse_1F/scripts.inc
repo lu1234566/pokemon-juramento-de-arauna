@@ -5,6 +5,7 @@ LittlerootTown_MaysHouse_1F_MapScripts::
 	.byte 0
 
 LittlerootTown_MaysHouse_1F_OnLoad:
+	call LittlerootTown_MaysHouse_1F_V9_SelectHomeRole
 	call_if_lt VAR_LITTLEROOT_INTRO_STATE, 6, LittlerootTown_MaysHouse_1F_EventScript_SetMovingBoxes
 	call_if_set FLAG_RECEIVED_RUNNING_SHOES, LittlerootTown_MaysHouse_1F_EventScript_CheckShowShoesManual
 	end
@@ -365,3 +366,12 @@ RivalsHouse_1F_Text_DoYouHavePokemon:
 	.string "Oi, {PLAYER}!\p"
 	.string "Voce ja viaja com seu proprio\n"
 	.string "POKéMON?$"
+
+LittlerootTown_MaysHouse_1F_V9_SelectHomeRole:
+	checkplayergender
+	goto_if_eq VAR_RESULT, MALE, LittlerootTown_MaysHouse_1F_V9_SelectHomeRole_Ciro
+	return
+
+LittlerootTown_MaysHouse_1F_V9_SelectHomeRole_Ciro:
+	setmaplayoutindex LAYOUT_LITTLEROOT_TOWN_MAYS_HOUSE_1F_CIRO
+	return

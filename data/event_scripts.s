@@ -1060,3 +1060,13 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/text/frontier_brain.inc"
 	.include "data/text/save.inc"
 	.include "data/text/birch_speech.inc"
+
+	.include "data/maps/Arauna_PrimeiraCamara_Chegada/scripts.inc"
+	.include "data/maps/Arauna_PrimeiraCamara_Interior/scripts.inc"
+
+	.include "data/maps/Arauna_Anahi_Pesquisa/scripts.inc"
+	.include "data/maps/Arauna_Anahi_Equipamentos/scripts.inc"
+
+	.include "data/maps/Arauna_CasaUivo_Refugio/scripts.inc"
+	.include "data/maps/Arauna_CasaUivo_Sala/scripts.inc"
+	.include "data/maps/Arauna_CasaUivo_Memorias/scripts.inc"

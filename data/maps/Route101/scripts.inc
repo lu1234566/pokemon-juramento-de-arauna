@@ -21,8 +21,8 @@ Route101_EventScript_StartBirchRescue::
 	playbgm MUS_HELP, TRUE
 	msgbox Route101_Text_HelpMe, MSGBOX_DEFAULT
 	closemessage
-	setobjectxy LOCALID_ROUTE101_BIRCH, 0, 15
-	setobjectxy LOCALID_ROUTE101_ZIGZAGOON, 0, 16
+	setobjectxy LOCALID_ROUTE101_BIRCH, 5, 24
+	setobjectxy LOCALID_ROUTE101_ZIGZAGOON, 5, 25
 	applymovement LOCALID_PLAYER, Route101_Movement_EnterScene
 	applymovement LOCALID_ROUTE101_BIRCH, Route101_Movement_BirchRunAway1
 	applymovement LOCALID_ROUTE101_ZIGZAGOON, Route101_Movement_ZigzagoonChase1
@@ -137,7 +137,7 @@ Route101_Movement_EnterScene:
 	walk_fast_up
 	walk_fast_up
 	walk_fast_up
-	walk_in_place_faster_left
+	walk_in_place_faster_up
 	step_end
 
 Route101_Movement_BirchRunInCircles:
@@ -222,7 +222,7 @@ Route101_EventScript_BirchsBag::
 	setflag FLAG_RESCUED_BIRCH
 	fadescreen FADE_TO_BLACK
 	removeobject LOCALID_ROUTE101_ZIGZAGOON
-	setobjectxy LOCALID_PLAYER, 6, 13
+	setobjectxy LOCALID_PLAYER, 11, 22
 	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	special ChooseStarter
@@ -290,3 +290,10 @@ Route101_Text_RouteSign:
 	.string "ROUTE 101\n"
 	.string "{UP_ARROW} VILA DA PASSAGEM$"
 
+Route101_EventScript_PrimeiraCamara::
+	msgbox Route101_Text_PrimeiraCamara, MSGBOX_SIGN
+	end
+
+Route101_Text_PrimeiraCamara:
+	.string "TRILHA DA NEBLINA\n"
+	.string "Primeira Camara {RIGHT_ARROW}$"
