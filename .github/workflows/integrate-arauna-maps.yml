@@ -92,7 +92,21 @@ jobs:
           sudo apt-get -o Acquire::Retries=3 install -y --no-install-recommends gcc-arm-none-eabi binutils-arm-none-eabi libnewlib-arm-none-eabi libpng-dev
 
       - name: Build Arauna English test ROM
-        run: bash scripts/build_arauna.sh -j2 all
+        shell: bash
+        run: |
+          set +e
+          bash scripts/build_arauna.sh -j2 all > /tmp/arauna-build.log 2>&1
+          rc=$?
+          if [ "$rc" -ne 0 ]; then
+            echo "===== BUILD ERROR SUMMARY ====="
+            grep -E -n -i 'fatal error:|error:|undefined reference|multiple definition|No rule to make target|cannot find|collect2:|ld:|make(\[[0-9]+\])?: \*\*\*' /tmp/arauna-build.log | tail -n 120 || true
+            echo "===== BUILD LOG TAIL ====="
+            tail -n 120 /tmp/arauna-build.log
+          else
+            echo "Arauna build: PASS"
+            tail -n 30 /tmp/arauna-build.log
+          fi
+          exit "$rc"
 
       - name: Hash test ROM
         run: sha256sum pokemon-juramento-de-arauna-en_modern.gba | tee ROM_SHA256.txt
