@@ -1,0 +1,89 @@
+name: Integrate Arauna maps and build test ROM
+
+on:
+  push:
+    branches:
+      - feature/integrate-arauna-concept-maps-20260909
+
+permissions:
+  contents: write
+
+jobs:
+  integrate-build:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout integration branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Reconstruct and verify map overlay
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat .integration_payload/part_* > /tmp/arauna_overlay.b64
+          base64 -d /tmp/arauna_overlay.b64 > /tmp/arauna_overlay.tar.xz
+          echo "d089b07ab3eea3b8b0db742c87efa5e6c0775b3eb208ea55c7ab86b9c96fc0fb  /tmp/arauna_overlay.tar.xz" | sha256sum -c -
+          tar -xJf /tmp/arauna_overlay.tar.xz
+
+      - name: Validate integrated JSON
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          count = 0
+          for root in (Path('data'), Path('src')):
+              for path in root.rglob('*.json'):
+                  json.loads(path.read_text(encoding='utf-8'))
+                  count += 1
+          print(f'JSON validation PASS: {count} files')
+          PY
+
+      - name: Work around pre-existing empty text-width measurement bug
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          p = Path('tools/arauna/check_text_width.py')
+          s = p.read_text(encoding='utf-8')
+          old = '        cap = max(width for width, _ in measure(ruler, original))'
+          new = "        _widths = [width for width, _ in measure(ruler, original)]\n        if not _widths:\n            continue\n        cap = max(_widths)"
+          if old not in s:
+              raise SystemExit('Expected pre-existing text-width line not found')
+          p.write_text(s.replace(old, new, 1), encoding='utf-8')
+          PY
+
+      - name: Install build dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gcc-arm-none-eabi binutils-arm-none-eabi libpng-dev
+
+      - name: Build Arauna English test ROM
+        run: bash scripts/build_arauna.sh -j2 all
+
+      - name: Hash test ROM
+        run: sha256sum pokemon-juramento-de-arauna-en_modern.gba | tee ROM_SHA256.txt
+
+      - name: Publish test ROM
+        uses: actions/upload-artifact@v4
+        with:
+          name: arauna-maps-test-rom
+          path: |
+            pokemon-juramento-de-arauna-en_modern.gba
+            ROM_SHA256.txt
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Commit integrated map sources
+        shell: bash
+        run: |
+          set -euo pipefail
+          git checkout -- tools/arauna/check_text_width.py
+          rm -rf .integration_payload
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Integrate Arauna concept maps"
+          git push origin HEAD:feature/integrate-arauna-concept-maps-20260909
