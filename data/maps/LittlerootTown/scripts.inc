@@ -300,9 +300,23 @@ LittlerootTown_EventScript_DangerousWithoutPokemon::
 	closemessage
 	return
 
+@ The twin guards the route exit from (8, 2). The exit is the two-tile gap at
+@ x = 10 and 11, so she has to come round the player and stand in the gap to
+@ block it -- walking one step east and turning, as this did, left her beside
+@ the player shoving thin air.
 LittlerootTown_Movement_TwinApproachPlayerLeft:
-	walk_right
-	walk_in_place_faster_up
+	face_right
+	delay_8
+	disable_jump_landing_ground_effect
+	jump_in_place_right
+	delay_8
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_up
+	walk_fast_up
+	walk_fast_left
+	face_down
 	step_end
 
 LittlerootTown_Movement_TwinPushPlayerFromRoute:
@@ -310,6 +324,11 @@ LittlerootTown_Movement_TwinPushPlayerFromRoute:
 	step_end
 
 LittlerootTown_Movement_TwinReturnLeft:
+	walk_right
+	walk_down
+	walk_down
+	walk_left
+	walk_left
 	walk_left
 	walk_up
 	walk_in_place_faster_down
@@ -332,15 +351,24 @@ LittlerootTown_EventScript_NeedPokemonTriggerRight::
 	end
 
 LittlerootTown_Movement_TwinApproachPlayerRight:
-	walk_right
-	walk_right
-	walk_in_place_faster_up
+	face_right
+	delay_8
+	disable_jump_landing_ground_effect
+	jump_in_place_right
+	delay_8
+	walk_fast_right
+	walk_fast_right
+	walk_fast_up
+	walk_fast_up
+	walk_fast_right
+	face_down
 	step_end
 
 LittlerootTown_Movement_TwinReturnRight:
 	walk_left
+	walk_down
 	walk_left
-	walk_up
+	walk_left
 	walk_in_place_faster_down
 	step_end
 
