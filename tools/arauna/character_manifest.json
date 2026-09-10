@@ -342,7 +342,7 @@
       ],
       "object_event": "OBJ_EVENT_GFX_VAL_EVOLUIDO",
       "graphics_info": "UnusedWooperDoll",
-      "overworld": "graphics/object_events/pics/people/val/phase2.png",
+      "overworld": "graphics/object_events/pics/people/val/mata_do_meio.png",
       "overworld_palette": "graphics/object_events/palettes/val_evoluido.pal",
       "palette_tag": "OBJ_EVENT_PAL_TAG_VAL_EVOLUIDO",
       "palette_slot": "PALSLOT_NPC_SPECIAL",
