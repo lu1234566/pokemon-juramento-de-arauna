@@ -148,26 +148,24 @@ MossdeepCity_StevensHouse_EventScript_DiveItemBall::
 	end
 
 MossdeepCity_StevensHouse_Text_YouveEarnedHMDive:
-	.string "MR. BENTO: {PLAYER}, chegou\n"
-	.string "na hora certa.\p"
-	.string "Os registros de M'BOI apontam\n"
-	.string "para algo sob a agua.\p"
-	.string "Leve esta tecnica de MERGULHO.\n"
-	.string "Voce vai precisar dela.$"
+	.string "MR. BENTO: {PLAYER}, you've come at the\n"
+	.string "right moment.\p"
+	.string "The M'BOI records point to something\n"
+	.string "under the water.\p"
+	.string "Take this DIVE technique. You're going\n"
+	.string "to need it.$"
 
 MossdeepCity_StevensHouse_Text_ExplainDive:
-	.string "MR. BENTO: Quando um nome some\n"
-	.string "da boca das pessoas, eu\p"
-	.string "escrevo. Nao para substituir\n"
-	.string "quem lembra; para deixar uma\p"
-	.string "pista.$"
+	.string "MR. BENTO: When a name falls out of\n"
+	.string "people's mouths, I write it down. Not to\l"
+	.string "replace whoever remembers it. To leave\l"
+	.string "a trail.$"
 
 MossdeepCity_StevensHouse_Text_UnderwateCavernBetweenMossdeepSootopolis:
-	.string "MR. BENTO: Quando um nome some\n"
-	.string "da boca das pessoas, eu\p"
-	.string "escrevo. Nao para substituir\n"
-	.string "quem lembra; para deixar uma\p"
-	.string "pista.$"
+	.string "MR. BENTO: When a name falls out of\n"
+	.string "people's mouths, I write it down. Not to\l"
+	.string "replace whoever remembers it. To leave\l"
+	.string "a trail.$"
 
 MossdeepCity_StevensHouse_Text_TakeBallContainingBeldum:
 	.string "{PLAYER} checked the POKé BALL.\p"
@@ -187,14 +185,13 @@ MossdeepCity_StevensHouse_Text_LeftPokeBallWhereItWas:
 	.string "it was.$"
 
 MossdeepCity_StevensHouse_Text_LetterFromSteven:
-	.string "MR. BENTO: Quando um nome some\n"
-	.string "da boca das pessoas, eu\p"
-	.string "escrevo. Nao para substituir\n"
-	.string "quem lembra; para deixar uma\p"
-	.string "pista.$"
+	.string "MR. BENTO: When a name falls out of\n"
+	.string "people's mouths, I write it down. Not to\l"
+	.string "replace whoever remembers it. To leave\l"
+	.string "a trail.$"
 
 MossdeepCity_StevensHouse_Text_CollectionOfRareRocks:
-	.string "Pedras, etiquetas e cadernos.\p"
-	.string "Cada peca tem data, lugar e\n"
-	.string "um nome escrito por MR. BENTO.$"
+	.string "Stones, labels and notebooks.\p"
+	.string "Every piece has a date, a place, and a\n"
+	.string "name written by MR. BENTO.$"
 

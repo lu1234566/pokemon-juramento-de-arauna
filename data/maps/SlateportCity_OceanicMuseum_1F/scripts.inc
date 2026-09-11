@@ -241,17 +241,16 @@ SlateportCity_OceanicMuseum_1F_Text_CatchUpWithYourGroup:
 	.string "You'd better go catch up to them!$"
 
 SlateportCity_OceanicMuseum_1F_Text_AquaExistForGoodOfAll:
-	.string "HORIZON: O projeto de M'BOI\n"
-	.string "foi um desastre. O ARCHIVE\p"
-	.string "atual existe justamente porque\n"
-	.string "aprendemos com ele. E o que\p"
-	.string "consta nos relatorios.$"
+	.string "HORIZON: The M'BOI project was a\n"
+	.string "disaster. The present ARCHIVE exists\l"
+	.string "precisely because we learned from it.\l"
+	.string "That is what the reports say.$"
 
 SlateportCity_OceanicMuseum_1F_Text_OurBossIsntHere:
-	.string "HORIZON: O LIVING ARCHIVE nao\n"
-	.string "apaga pessoas. Ele separa\p"
-	.string "trauma de identidade. Pelo\n"
-	.string "menos e isso que nos ensinaram.$"
+	.string "HORIZON: The LIVING ARCHIVE does not\n"
+	.string "erase people. It separates trauma from\l"
+	.string "identity. At least that is what we were\l"
+	.string "taught.$"
 
 SlateportCity_OceanicMuseum_1F_Text_WouldStuffHereMakeMeRich:
 	.string "If I ripped off the stuff here,\n"
@@ -270,12 +269,10 @@ SlateportCity_OceanicMuseum_1F_Text_DidntHaveMoney:
 	.string "time getting by the receptionist.$"
 
 SlateportCity_OceanicMuseum_1F_Text_LearnAboutSeaForBattling:
-	.string "Os sensores registram duas\n"
-	.string "correntes antigas sob Arauna:\p"
-	.string "uma conserva BONDS; a outra\n"
-	.string "permite que eles terminem. O\p"
-	.string "ARCHIVE tentou transformar\n"
-	.string "ambas em ferramentas.$"
+	.string "The sensors register two old currents\n"
+	.string "under Arauna: one preserves BONDS, the\l"
+	.string "other lets them end. The ARCHIVE tried\l"
+	.string "to turn both into tools.$"
 
 SlateportCity_OceanicMuseum_1F_Text_SternIsRoleModel:
 	.string "I get all giddy and gooey when\n"
@@ -295,11 +292,10 @@ SlateportCity_OceanicMuseum_1F_Text_WantSeaPokemon:
 	.string "to hug.$"
 
 SlateportCity_OceanicMuseum_1F_Text_RememberMeTakeThis:
-	.string "HORIZON: O projeto de M'BOI\n"
-	.string "foi um desastre. O ARCHIVE\p"
-	.string "atual existe justamente porque\n"
-	.string "aprendemos com ele. E o que\p"
-	.string "consta nos relatorios.$"
+	.string "HORIZON: The M'BOI project was a\n"
+	.string "disaster. The present ARCHIVE exists\l"
+	.string "precisely because we learned from it.\l"
+	.string "That is what the reports say.$"
 
 SlateportCity_OceanicMuseum_1F_Text_HopeINeverSeeYouAgain:
 	.string "That TM, it suits you more than it\n"

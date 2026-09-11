@@ -49,35 +49,34 @@ PrimeiraCamara_ActiveAltarTiles:
 	return
 
 PrimeiraCamara_Text_Listen:
-	.string "O elo esta partido, mas ha\n"
-	.string "uma luz entre as partes.\p"
-	.string "Voce quer parar e escutar?$"
+	.string "The tie is broken, but there is a light\n"
+	.string "between the parts.\p"
+	.string "Will you stop and listen?$"
 
 PrimeiraCamara_Text_Heard:
-	.string "A luz alcanca os dois lados\n"
-	.string "do elo.\p"
-	.string "O que nos liga, permanece.$"
+	.string "The light reaches both ends of the tie.\p"
+	.string "What binds us stays.$"
 
 PrimeiraCamara_Text_Decline:
-	.string "O silencio espera.\n"
-	.string "Voce pode voltar quando quiser.$"
+	.string "The silence waits. You can come back\n"
+	.string "whenever you like.$"
 
 PrimeiraCamara_Text_Return:
-	.string "O elo conserva a luz\n"
-	.string "da sua escuta.$"
+	.string "The tie keeps the light of your\n"
+	.string "listening.$"
 
 PrimeiraCamara_EventScript_Augusto::
 	msgbox PrimeiraCamara_Text_Augusto, MSGBOX_SIGN
 	end
 
 PrimeiraCamara_Text_Augusto:
-	.string "Na pedra, um nome: AUGUSTO.\p"
-	.string "O que nos liga, permanece.$"
+	.string "One name on the stone: AUGUSTO.\p"
+	.string "What binds us stays.$"
 
 PrimeiraCamara_EventScript_Memory::
 	msgbox PrimeiraCamara_Text_Memory, MSGBOX_SIGN
 	end
 
 PrimeiraCamara_Text_Memory:
-	.string "Lembrar e um ato de conexao,\n"
-	.string "nao de posse.$"
+	.string "Remembering is an act of connection,\n"
+	.string "not of ownership.$"

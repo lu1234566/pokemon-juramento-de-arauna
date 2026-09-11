@@ -318,54 +318,54 @@ LittlerootTown_MaysHouse_1F_Movement_MayGoUpstairs2:
 	step_end
 
 RivalsHouse_1F_Text_OhYoureTheNewNeighbor:
-	.string "Ah, voce deve ser {PLAYER}.\p"
-	.string "CIRO comentou que alguem da\n"
-	.string "idade dele viria morar perto.\p"
-	.string "Ele esta no andar de cima.\n"
-	.string "Se ainda nao saiu correndo.$"
+	.string "Ah, you must be {PLAYER}.\p"
+	.string "CIRO mentioned someone his own age was\n"
+	.string "moving in nearby.\p"
+	.string "He is upstairs. If he has not run off\n"
+	.string "already.$"
 
 RivalsHouse_1F_Text_LikeChildLikeFather:
-	.string "CIRO quase nao para em casa.\p"
-	.string "Desde que o HORIZON ofereceu\n"
-	.string "aquela bolsa, ele vive entre\n"
-	.string "mapas, sensores e POKéMON.$"
+	.string "CIRO is hardly ever home.\p"
+	.string "Since HORIZON offered him that grant,\n"
+	.string "he lives among maps, sensors and\l"
+	.string "POKéMON.$"
 
 RivalsHouse_1F_Text_TooBusyToNoticeVisit:
-	.string "CIRO nem percebeu que voce\n"
-	.string "veio, nao e?\p"
-	.string "Quando coloca uma ideia na\n"
-	.string "cabeca, esquece o resto.$"
+	.string "CIRO did not even notice you come in,\n"
+	.string "did he?\p"
+	.string "Once he gets an idea in his head he\n"
+	.string "forgets everything else.$"
 
 RivalsHouse_1F_Text_WentOutToRoute103:
-	.string "CIRO saiu para a ROTA 103\n"
-	.string "ha pouco.\p"
-	.string "Disse que precisava testar\n"
-	.string "dados novos do HORIZON.$"
+	.string "CIRO left for ROUTE 103 a little while\n"
+	.string "ago.\p"
+	.string "He said he had new HORIZON data to\n"
+	.string "test.$"
 
 RivalsHouse_1F_Text_ShouldGoHomeEverySoOften:
-	.string "Viajar com POKéMON muda a\n"
-	.string "gente.\p"
-	.string "Mas volte para casa de vez em\n"
-	.string "quando. Sua mae vai gostar.$"
+	.string "Traveling with POKéMON changes a\n"
+	.string "person.\p"
+	.string "But come home now and then. Your mother\n"
+	.string "will like that.$"
 
 RivalsHouse_1F_Text_MayWhoAreYou:
-	.string "CIRO: Entao voce e {PLAYER}.\p"
-	.string "ANAHI falou que voce chegaria.\n"
-	.string "Eu esperava alguem... diferente.\p"
-	.string "Depois conversamos. Estou\n"
-	.string "atrasado para o campo.$"
+	.string "CIRO: So you are {PLAYER}.\p"
+	.string "ANAHI said you would turn up. I was\n"
+	.string "expecting someone... different.\p"
+	.string "We will talk later. I am late for the\n"
+	.string "field.$"
 
 RivalsHouse_1F_Text_BrendanWhoAreYou:
-	.string "CIRO: Entao voce e {PLAYER}.\p"
-	.string "ANAHI falou que voce chegaria.\n"
-	.string "Eu esperava alguem... diferente.\p"
-	.string "Depois conversamos. Estou\n"
-	.string "atrasado para o campo.$"
+	.string "CIRO: So you are {PLAYER}.\p"
+	.string "ANAHI said you would turn up. I was\n"
+	.string "expecting someone... different.\p"
+	.string "We will talk later. I am late for the\n"
+	.string "field.$"
 
 RivalsHouse_1F_Text_DoYouHavePokemon:
-	.string "Oi, {PLAYER}!\p"
-	.string "Voce ja viaja com seu proprio\n"
-	.string "POKéMON?$"
+	.string "Hi, {PLAYER}!\p"
+	.string "Are you traveling with a POKéMON of\n"
+	.string "your own already?$"
 
 LittlerootTown_MaysHouse_1F_V9_SelectHomeRole:
 	checkplayergender

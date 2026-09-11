@@ -134,113 +134,98 @@ MagmaHideout_4F_EventScript_Tabitha::
 	end
 
 MagmaHideout_4F_Text_Grunt11Intro:
-	.string "Os sensores registram duas\n"
-	.string "correntes antigas sob Arauna:\p"
-	.string "uma conserva BONDS; a outra\n"
-	.string "permite que eles terminem. O\p"
-	.string "ARCHIVE tentou transformar\n"
-	.string "ambas em ferramentas.$"
+	.string "The sensors register two old currents\n"
+	.string "under Arauna: one preserves BONDS, the\l"
+	.string "other lets them end. The ARCHIVE tried\l"
+	.string "to turn both into tools.$"
 
 MagmaHideout_4F_Text_Grunt11Defeat:
-	.string "REMEMBRANCER: Se uma historia\n"
-	.string "incomoda quem manda, ela vira\p"
-	.string "'ruido', depois 'trauma',\n"
-	.string "depois desaparece do registro.$"
+	.string "REMEMBRANCER: When a story bothers the\n"
+	.string "people in charge, it becomes 'noise',\l"
+	.string "then 'trauma', then it is gone from the\l"
+	.string "record.$"
 
 MagmaHideout_4F_Text_Grunt11PostBattle:
-	.string "Os sensores registram duas\n"
-	.string "correntes antigas sob Arauna:\p"
-	.string "uma conserva BONDS; a outra\n"
-	.string "permite que eles terminem. O\p"
-	.string "ARCHIVE tentou transformar\n"
-	.string "ambas em ferramentas.$"
+	.string "The sensors register two old currents\n"
+	.string "under Arauna: one preserves BONDS, the\l"
+	.string "other lets them end. The ARCHIVE tried\l"
+	.string "to turn both into tools.$"
 
 MagmaHideout_4F_Text_Grunt12Intro:
-	.string "REMEMBRANCER: LUZIA diz que\n"
-	.string "memoria devolvida sem permissao\p"
-	.string "ainda e melhor que memoria\n"
-	.string "roubada. Nem todos aqui\p"
-	.string "concordam com essa parte.$"
+	.string "REMEMBRANCER: LUZIA says memory\n"
+	.string "handed back without permission is still\l"
+	.string "better than memory stolen. Not\l"
+	.string "everyone here agrees with that part.$"
 
 MagmaHideout_4F_Text_Grunt12Defeat:
-	.string "REMEMBRANCER: Se uma historia\n"
-	.string "incomoda quem manda, ela vira\p"
-	.string "'ruido', depois 'trauma',\n"
-	.string "depois desaparece do registro.$"
+	.string "REMEMBRANCER: When a story bothers the\n"
+	.string "people in charge, it becomes 'noise',\l"
+	.string "then 'trauma', then it is gone from the\l"
+	.string "record.$"
 
 MagmaHideout_4F_Text_Grunt12PostBattle:
-	.string "REMEMBRANCER: Guardar um nome pode\n"
-	.string "ser resistencia. Obrigar alguem\p"
-	.string "a reviver tudo tambem pode ser\n"
-	.string "violencia.$"
+	.string "REMEMBRANCER: Keeping a name can be\n"
+	.string "resistance. Forcing someone to live it\l"
+	.string "all again can be violence.$"
 
 MagmaHideout_4F_Text_Grunt13Intro:
-	.string "REMEMBRANCER: Se uma historia\n"
-	.string "incomoda quem manda, ela vira\p"
-	.string "'ruido', depois 'trauma',\n"
-	.string "depois desaparece do registro.$"
+	.string "REMEMBRANCER: When a story bothers the\n"
+	.string "people in charge, it becomes 'noise',\l"
+	.string "then 'trauma', then it is gone from the\l"
+	.string "record.$"
 
 MagmaHideout_4F_Text_Grunt13Defeat:
-	.string "REMEMBRANCER: O HORIZON quer uma\n"
-	.string "Arauna estavel. Eu quero uma\p"
-	.string "Arauna que saiba por que suas\n"
-	.string "ruinas existem.$"
+	.string "REMEMBRANCER: HORIZON wants a stable\n"
+	.string "Arauna. I want an Arauna that knows why\l"
+	.string "its ruins are there.$"
 
 MagmaHideout_4F_Text_Grunt13PostBattle:
-	.string "REMEMBRANCER: O HORIZON quer uma\n"
-	.string "Arauna estavel. Eu quero uma\p"
-	.string "Arauna que saiba por que suas\n"
-	.string "ruinas existem.$"
+	.string "REMEMBRANCER: HORIZON wants a stable\n"
+	.string "Arauna. I want an Arauna that knows why\l"
+	.string "its ruins are there.$"
 
 MagmaHideout_4F_Text_TabithaIntro:
-	.string "Os sensores registram duas\n"
-	.string "correntes antigas sob Arauna:\p"
-	.string "uma conserva BONDS; a outra\n"
-	.string "permite que eles terminem. O\p"
-	.string "ARCHIVE tentou transformar\n"
-	.string "ambas em ferramentas.$"
+	.string "The sensors register two old currents\n"
+	.string "under Arauna: one preserves BONDS, the\l"
+	.string "other lets them end. The ARCHIVE tried\l"
+	.string "to turn both into tools.$"
 
 MagmaHideout_4F_Text_TabithaDefeat:
 	.string "Taken down again…\n"
 	.string "Hehe…$"
 
 MagmaHideout_4F_Text_TabithaPostBattle:
-	.string "Os sensores registram duas\n"
-	.string "correntes antigas sob Arauna:\p"
-	.string "uma conserva BONDS; a outra\n"
-	.string "permite que eles terminem. O\p"
-	.string "ARCHIVE tentou transformar\n"
-	.string "ambas em ferramentas.$"
+	.string "The sensors register two old currents\n"
+	.string "under Arauna: one preserves BONDS, the\l"
+	.string "other lets them end. The ARCHIVE tried\l"
+	.string "to turn both into tools.$"
 
 MagmaHideout_4F_Text_MaxieAwakenGroudon:
-	.string "Os sensores registram duas\n"
-	.string "correntes antigas sob Arauna:\p"
-	.string "uma conserva BONDS; a outra\n"
-	.string "permite que eles terminem. O\p"
-	.string "ARCHIVE tentou transformar\n"
-	.string "ambas em ferramentas.$"
+	.string "The sensors register two old currents\n"
+	.string "under Arauna: one preserves BONDS, the\l"
+	.string "other lets them end. The ARCHIVE tried\l"
+	.string "to turn both into tools.$"
 
 MagmaHideout_4F_Text_MaxieGroudonWhatsWrong:
-	.string "Os sensores registram duas\n"
-	.string "correntes antigas sob Arauna:\p"
-	.string "uma conserva BONDS; a outra\n"
-	.string "permite que eles terminem. O\p"
-	.string "ARCHIVE tentou transformar\n"
-	.string "ambas em ferramentas.$"
+	.string "The sensors register two old currents\n"
+	.string "under Arauna: one preserves BONDS, the\l"
+	.string "other lets them end. The ARCHIVE tried\l"
+	.string "to turn both into tools.$"
 
 MagmaHideout_4F_Text_MaxieOhItWasYou:
-	.string "LUZIA: O problema nunca foi\nlembrar demais. Foi deixar quem\p"
-	.string "tem poder decidir quais\nlembrancas os outros podem\p"
-	.string "conservar.$"
+	.string "LUZIA: The problem was never\n"
+	.string "remembering too much. It was letting\l"
+	.string "whoever holds power decide which\l"
+	.string "memories the rest may keep.$"
 
 MagmaHideout_4F_Text_MaxieDefeat:
-	.string "LUZIA: Se devolver as memorias\ndoer, entao vai doer. Dor nao\p"
-	.string "autoriza ninguem a reescrever a\nvida de outra pessoa.$"
+	.string "LUZIA: If giving the memories back\n"
+	.string "hurts, then it will hurt. Pain does not\l"
+	.string "authorize anyone to rewrite another\l"
+	.string "person's life.$"
 
 MagmaHideout_4F_Text_MaxieImGoingAfterGroudon:
-	.string "Os sensores registram duas\n"
-	.string "correntes antigas sob Arauna:\p"
-	.string "uma conserva BONDS; a outra\n"
-	.string "permite que eles terminem. O\p"
-	.string "ARCHIVE tentou transformar\n"
-	.string "ambas em ferramentas.$"
+	.string "The sensors register two old currents\n"
+	.string "under Arauna: one preserves BONDS, the\l"
+	.string "other lets them end. The ARCHIVE tried\l"
+	.string "to turn both into tools.$"

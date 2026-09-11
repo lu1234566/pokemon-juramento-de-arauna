@@ -12,28 +12,28 @@ SeafloorCavern_Room4_EventScript_Grunt4::
 	end
 
 SeafloorCavern_Room4_Text_Grunt3Intro:
-	.string "Daqui para baixo, o ARCHIVE\n"
-	.string "deixa de responder direito.\p"
-	.string "Nao e lugar para curiosos.$"
+	.string "Below this point the ARCHIVE stops\n"
+	.string "answering properly.\p"
+	.string "This is no place for the curious.$"
 
 SeafloorCavern_Room4_Text_Grunt3Defeat:
-	.string "Voce realmente vai continuar?$"
+	.string "Are you really going on?$"
 
 SeafloorCavern_Room4_Text_Grunt3PostBattle:
-	.string "As gravacoes daqui misturam\n"
-	.string "evacuacao, socorro e silencio.\p"
-	.string "Talvez por isso OTACILIO tenha\n"
-	.string "vindo pessoalmente.$"
+	.string "The recordings here run evacuation,\n"
+	.string "rescue and silence together.\p"
+	.string "Maybe that is why OTACILIO came in\n"
+	.string "person.$"
 
 SeafloorCavern_Room4_Text_Grunt4Intro:
-	.string "O nucleo esta logo adiante.\n"
-	.string "Um passo a mais e eu te paro.$"
+	.string "The core is just ahead. One more step\n"
+	.string "and I stop you.$"
 
 SeafloorCavern_Room4_Text_Grunt4Defeat:
-	.string "Nao protegi a passagem.$"
+	.string "I failed to hold the way.$"
 
 SeafloorCavern_Room4_Text_Grunt4PostBattle:
-	.string "Os sensores perderam a leitura.\p"
-	.string "Se algo despertar la embaixo,\n"
-	.string "ninguem sabe o que acontece.$"
+	.string "The sensors have lost the reading.\p"
+	.string "If something wakes down there, nobody\n"
+	.string "knows what happens.$"
 

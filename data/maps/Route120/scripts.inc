@@ -360,64 +360,56 @@ Route120_EventScript_Callie::
 	end
 
 Route120_Text_StevenGreeting:
-	.string "MR. BENTO: Quando um nome some\n"
-	.string "da boca das pessoas, eu\p"
-	.string "escrevo. Nao para substituir\n"
-	.string "quem lembra; para deixar uma\p"
-	.string "pista.$"
+	.string "MR. BENTO: When a name falls out of\n"
+	.string "people's mouths, I write it down. Not to\l"
+	.string "replace whoever remembers it. To leave\l"
+	.string "a trail.$"
 
 Route120_Text_StevenIllWaitHere:
-	.string "MR. BENTO: Quando um nome some\n"
-	.string "da boca das pessoas, eu\p"
-	.string "escrevo. Nao para substituir\n"
-	.string "quem lembra; para deixar uma\p"
-	.string "pista.$"
+	.string "MR. BENTO: When a name falls out of\n"
+	.string "people's mouths, I write it down. Not to\l"
+	.string "replace whoever remembers it. To leave\l"
+	.string "a trail.$"
 
 Route120_Text_StevenReadyForBattle:
-	.string "Os sensores registram duas\n"
-	.string "correntes antigas sob Arauna:\p"
-	.string "uma conserva BONDS; a outra\n"
-	.string "permite que eles terminem. O\p"
-	.string "ARCHIVE tentou transformar\n"
-	.string "ambas em ferramentas.$"
+	.string "The sensors register two old currents\n"
+	.string "under Arauna: one preserves BONDS, the\l"
+	.string "other lets them end. The ARCHIVE tried\l"
+	.string "to turn both into tools.$"
 
 Route120_Text_StevenShowMeYourPower:
-	.string "MR. BENTO: Quando um nome some\n"
-	.string "da boca das pessoas, eu\p"
-	.string "escrevo. Nao para substituir\n"
-	.string "quem lembra; para deixar uma\p"
-	.string "pista.$"
+	.string "MR. BENTO: When a name falls out of\n"
+	.string "people's mouths, I write it down. Not to\l"
+	.string "replace whoever remembers it. To leave\l"
+	.string "a trail.$"
 
 Route120_Text_StevenUsedDevonScope:
-	.string "MR. BENTO: Quando um nome some\n"
-	.string "da boca das pessoas, eu\p"
-	.string "escrevo. Nao para substituir\n"
-	.string "quem lembra; para deixar uma\p"
-	.string "pista.$"
+	.string "MR. BENTO: When a name falls out of\n"
+	.string "people's mouths, I write it down. Not to\l"
+	.string "replace whoever remembers it. To leave\l"
+	.string "a trail.$"
 
 Route120_Text_StevenGiveDevonScope:
-	.string "MR. BENTO: Quando um nome some\n"
-	.string "da boca das pessoas, eu\p"
-	.string "escrevo. Nao para substituir\n"
-	.string "quem lembra; para deixar uma\p"
-	.string "pista.$"
+	.string "MR. BENTO: When a name falls out of\n"
+	.string "people's mouths, I write it down. Not to\l"
+	.string "replace whoever remembers it. To leave\l"
+	.string "a trail.$"
 
 Route120_Text_StevenGoodbye:
-	.string "MR. BENTO: Quando um nome some\n"
-	.string "da boca das pessoas, eu\p"
-	.string "escrevo. Nao para substituir\n"
-	.string "quem lembra; para deixar uma\p"
-	.string "pista.$"
+	.string "MR. BENTO: When a name falls out of\n"
+	.string "people's mouths, I write it down. Not to\l"
+	.string "replace whoever remembers it. To leave\l"
+	.string "a trail.$"
 
 Kecleon_Text_SomethingUnseeable:
 	.string "Something unseeable is in the way.$"
 
 Kecleon_Text_WantToUseDevonScope:
 	.string "Something unseeable is in the way.\p"
-	.string "Want to use the VISOR VERDADE?$"
+	.string "Want to use the TRUTH VISOR?$"
 
 Kecleon_Text_UseDevonScopeMonAttacked:
-	.string "{PLAYER} used the VISOR VERDADE.\p"
+	.string "{PLAYER} used the TRUTH VISOR.\p"
 	.string "An invisible POKéMON became completely\n"
 	.string "visible!\p"
 	.string "The startled POKéMON attacked!$"

@@ -756,45 +756,50 @@ Route110_Text_AquaActionsBringSmiles:
 	.string "bring smiles to people's faces!$"
 
 Route110_Text_MayLetsBattle:
-	.string "CIRO: Voce continua olhando\npara cada cicatriz como se ela\p"
-	.string "fosse uma resposta. Eu quero\nsaber o que existe depois dela.$"
+	.string "CIRO: You keep looking at every scar as\n"
+	.string "if it were an answer. I want to know\l"
+	.string "what comes after it.$"
 
 Route110_Text_MayDefeated:
-	.string "CIRO: Nao confunda minha pressa\ncom falta de memoria. Eu lembro\p"
-	.string "o bastante para saber que nao\nquero viver preso ao que perdi.$"
+	.string "CIRO: Do not mistake my hurry for a bad\n"
+	.string "memory. I remember enough to know I do\l"
+	.string "not want to live shackled to what I\l"
+	.string "lost.$"
 
 Route110_Text_MayTakeThis:
-	.string "CIRO: Voce continua olhando\npara cada cicatriz como se ela\p"
-	.string "fosse uma resposta. Eu quero\nsaber o que existe depois dela.$"
+	.string "CIRO: You keep looking at every scar as\n"
+	.string "if it were an answer. I want to know\l"
+	.string "what comes after it.$"
 
 Route110_Text_MayExplainItemfinder:
-	.string "CIRO: Isso e um ITEMFINDER.\p"
-	.string "Ele reage quando ha algo\n"
-	.string "escondido por perto.\p"
-	.string "Use direito. Nao vou ficar\n"
-	.string "marcando tudo para voce.$"
+	.string "CIRO: That is an ITEMFINDER.\p"
+	.string "It reacts when something is hidden\n"
+	.string "nearby.\p"
+	.string "Use it properly. I am not going to mark\n"
+	.string "everything out for you.$"
 
 Route110_Text_BrendanLetsBattle:
-	.string "CIRO: Voce continua olhando\npara cada cicatriz como se ela\p"
-	.string "fosse uma resposta. Eu quero\nsaber o que existe depois dela.$"
+	.string "CIRO: You keep looking at every scar as\n"
+	.string "if it were an answer. I want to know\l"
+	.string "what comes after it.$"
 
 Route110_Text_BrendanDefeated:
-	.string "CIRO: Voce continua olhando\npara cada cicatriz como se ela\p"
-	.string "fosse uma resposta. Eu quero\nsaber o que existe depois dela.$"
+	.string "CIRO: You keep looking at every scar as\n"
+	.string "if it were an answer. I want to know\l"
+	.string "what comes after it.$"
 
 Route110_Text_BrendanTakeThis:
-	.string "CIRO: O HORIZON nao me pediu\n"
-	.string "para esquecer nada. So me\p"
-	.string "mostrou que existe um futuro\n"
-	.string "que nao precisa ser governado\p"
-	.string "pelo passado.$"
+	.string "CIRO: HORIZON never asked me to forget\n"
+	.string "anything. It only showed me there is a\l"
+	.string "future that does not have to be ruled\l"
+	.string "by the past.$"
 
 Route110_Text_BrendanExplainItemfinder:
-	.string "CIRO: Isso e um ITEMFINDER.\p"
-	.string "Ele reage quando ha algo\n"
-	.string "escondido por perto.\p"
-	.string "Use direito. Nao vou ficar\n"
-	.string "marcando tudo para voce.$"
+	.string "CIRO: That is an ITEMFINDER.\p"
+	.string "It reacts when something is hidden\n"
+	.string "nearby.\p"
+	.string "Use it properly. I am not going to mark\n"
+	.string "everything out for you.$"
 
 Route110_Text_RideBikeAtFullSpeed:
 	.string "Wouldn't it be great to ride a BIKE\n"
@@ -900,12 +905,11 @@ Route110_Text_AcroBikesDoNotQualify:
 	.string "They are easy to turn, so it's not fair.$"
 
 Route110_Text_SlateportCitySign:
-	.string "ROUTE110. As estradas de Arauna\n"
-	.string "guardam sinais do DISENCHANTMENT:\p"
-	.string "nomes riscados, historias\n"
-	.string "incompletas e Pokemon que\p"
-	.string "hesitam diante de lugares\n"
-	.string "conhecidos.$"
+	.string "ROUTE110. The roads of Arauna hold the\n"
+	.string "signs of DISENCHANTMENT: crossed-out\l"
+	.string "names, unfinished stories, and POKéMON\l"
+	.string "that hesitate in front of places they\l"
+	.string "know.$"
 
 Route110_Text_CyclingRoadSign:
 	.string "SEASIDE CYCLING ROAD$"
@@ -925,12 +929,11 @@ Route110_Text_SeasideParkingSign:
 	.string "SEASIDE PARKING$"
 
 Route110_Text_MauvilleCitySign:
-	.string "ROUTE110. As estradas de Arauna\n"
-	.string "guardam sinais do DISENCHANTMENT:\p"
-	.string "nomes riscados, historias\n"
-	.string "incompletas e Pokemon que\p"
-	.string "hesitam diante de lugares\n"
-	.string "conhecidos.$"
+	.string "ROUTE110. The roads of Arauna hold the\n"
+	.string "signs of DISENCHANTMENT: crossed-out\l"
+	.string "names, unfinished stories, and POKéMON\l"
+	.string "that hesitate in front of places they\l"
+	.string "know.$"
 
 Route110_Text_TrainerTipsPrlzSleep:
 	.string "TRAINER TIPS\p"
@@ -947,7 +950,7 @@ Route110_Text_TrainerTipsRegisterItems:
 Route110_Text_TrickHouseSign:
 	.string "“Three steps {RIGHT_ARROW} and two\n"
 	.string "steps {UP_ARROW} to reach the wondrous\l"
-	.string "CASA DOS TRUQUES.”$"
+	.string "TRICK HOUSE.”$"
 
 Route110_Text_BestRecord:
 	.string "THE BEST RECORD TO DATE…\p"
@@ -960,10 +963,9 @@ Route110_Text_ThereIsNoRecord:
 	.string "challenge. There is no record…$"
 
 Route110_Text_ImagineSeeingYouHere:
-	.string "ANAHI: Se eu continuar calada\n"
-	.string "sobre o que o HORIZON fez com\p"
-	.string "minha pesquisa, o erro tambem\n"
-	.string "sera meu.$"
+	.string "ANAHI: If I stay quiet about what\n"
+	.string "HORIZON did with my research, the\l"
+	.string "mistake becomes mine too.$"
 
 Route110_Text_HeardYouInstallMatchCall:
 	.string "Oh, I see!\n"
@@ -982,9 +984,8 @@ Route110_Text_RegisteredBirchInPokenav:
 	.string "in the POKéNAV.$"
 
 Route110_Text_KeepAnEyeOutForRival:
-	.string "ANAHI: Eu ajudei a criar os\n"
-	.string "primeiros sensores de BOND.\p"
-	.string "Na epoca achei que medir\n"
-	.string "significava compreender. Hoje\p"
-	.string "sei que nao e a mesma coisa.$"
+	.string "ANAHI: I helped build the first BOND\n"
+	.string "sensors. Back then I thought measuring\l"
+	.string "meant understanding. I know better\l"
+	.string "now.$"
 

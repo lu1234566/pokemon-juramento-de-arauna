@@ -304,11 +304,10 @@ MossdeepCity_Movement_ScottExitEast:
 	step_end
 
 MossdeepCity_Text_WantKingsRockStevenGaveMe:
-	.string "MR. BENTO: Quando um nome some\n"
-	.string "da boca das pessoas, eu\p"
-	.string "escrevo. Nao para substituir\n"
-	.string "quem lembra; para deixar uma\p"
-	.string "pista.$"
+	.string "MR. BENTO: When a name falls out of\n"
+	.string "people's mouths, I write it down. Not to\l"
+	.string "replace whoever remembers it. To leave\l"
+	.string "a trail.$"
 
 MossdeepCity_Text_YouCanKeepIt:
 	.string "Why would you want it?\n"
@@ -317,11 +316,10 @@ MossdeepCity_Text_YouCanKeepIt:
 	.string "from BENTO.$"
 
 MossdeepCity_Text_StevensHouseOverThere:
-	.string "MR. BENTO: Quando um nome some\n"
-	.string "da boca das pessoas, eu\p"
-	.string "escrevo. Nao para substituir\n"
-	.string "quem lembra; para deixar uma\p"
-	.string "pista.$"
+	.string "MR. BENTO: When a name falls out of\n"
+	.string "people's mouths, I write it down. Not to\l"
+	.string "replace whoever remembers it. To leave\l"
+	.string "a trail.$"
 
 MossdeepCity_Text_WhatToDoWithWeirdRock:
 	.string "Yeah, you think so, too! What are you\n"
@@ -397,15 +395,13 @@ MossdeepCity_Text_ItsAWhiteRock:
 	.string "It's a white rock.$"
 
 MossdeepCity_Text_GymSign:
-	.string "MISSOES DO CEU\n"
-	.string "CECILIA E CAETANO\p"
-	.string "Toda estrela tem testemunhas.$"
+	.string "MISSOES DO CEU CECILIA AND CAETANO\p"
+	.string "Every star has witnesses.$"
 
 MossdeepCity_Text_CitySign:
-	.string "MISSOES DO CEU. O HORIZON\n"
-	.string "pretende usar a rede regional\p"
-	.string "de comunicacao para ampliar o\n"
-	.string "LIVING ARCHIVE.$"
+	.string "MISSOES DO CEU. HORIZON means to use\n"
+	.string "the regional communication network to\l"
+	.string "widen the reach of the LIVING ARCHIVE.$"
 
 MossdeepCity_Text_SpaceCenterSign:
 	.string "MISSOES DO CEU SPACE CENTER\n"

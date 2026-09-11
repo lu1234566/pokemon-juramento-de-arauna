@@ -3190,9 +3190,8 @@ Route121_Text_TammyDefeat:
 	.string "I have lost…$"
 
 Route121_Text_TammyPostBattle:
-	.string "MEMORIAL DOS NOMES…\n"
-	.string "There is a mysterious power\l"
-	.string "at work there…$"
+	.string "MEMORIAL DOS NOMES… There is a\n"
+	.string "mysterious power at work there…$"
 
 Route121_Text_KateIntro:
 	.string "NEIA: Together, we're fearless!\n"
@@ -3462,16 +3461,16 @@ Route123_Text_YukiNotEnoughMons:
 	.string "don't have two POKéMON.$"
 
 Route123_Text_KindraIntro:
-	.string "MEMORIAL DOS NOMES…\n"
-	.string "Where the spirits of POKéMON sleep…\l"
-	.string "Will your POKéMON sleep?$"
+	.string "MEMORIAL DOS NOMES… Where the spirits\n"
+	.string "of POKéMON sleep… Will your POKéMON\l"
+	.string "sleep?$"
 
 Route123_Text_KindraDefeat:
 	.string "Overflowing with vitality…$"
 
 Route123_Text_KindraPostBattle:
-	.string "MEMORIAL DOS NOMES…\n"
-	.string "Where the spirits of POKéMON sleep…\p"
+	.string "MEMORIAL DOS NOMES… Where the spirits\n"
+	.string "of POKéMON sleep…\p"
 	.string "It must overflow with a power that\n"
 	.string "soothes spirits…$"
 
@@ -3646,8 +3645,7 @@ Route124_Text_JennyRematchDefeat:
 
 Route124_Text_JennyPostRematch:
 	.string "This has nothing to do with anything,\n"
-	.string "but maybe I'll visit the\l"
-	.string "CASA DOS TRUQUES.$"
+	.string "but maybe I'll visit the TRICK HOUSE.$"
 
 Route124_Text_GraceIntro:
 	.string "I'm growing bored of swimming…\n"

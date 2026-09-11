@@ -259,9 +259,10 @@ MeteorFalls_1F_1R_Text_BeSeeingYouTeamAqua:
 	.string "AQUA dingbats!$"
 
 MeteorFalls_1F_1R_Text_ArchieSeenYouBefore:
-	.string "OTACILIO: Preservar tudo nao e\ncompaixao. As vezes e apenas\p"
-	.string "obrigar uma ferida a continuar\naberta e chamar isso de\p"
-	.string "respeito.$"
+	.string "OTACILIO: Preserving everything is not\n"
+	.string "compassion. Sometimes it is only\l"
+	.string "forcing a wound to stay open and\l"
+	.string "calling that respect.$"
 
 MeteorFalls_1F_1R_Text_BossWeShouldChaseMagma:
 	.string "BOSS, we should give chase to\n"
@@ -274,9 +275,10 @@ MeteorFalls_1F_1R_Text_ArchieYesNoTellingWhatMagmaWillDo:
 	.string "will do at SERRA DA CINZA!$"
 
 MeteorFalls_1F_1R_Text_ArchieFarewell:
-	.string "OTACILIO: M'BOI me ensinou que\nlembrar tambem pode destruir.\p"
-	.string "Eu me recuso a aceitar que\nsofrimento seja sagrado so\p"
-	.string "porque aconteceu.$"
+	.string "OTACILIO: M'BOI taught me that\n"
+	.string "remembering can destroy too. I refuse\l"
+	.string "to accept that suffering is sacred\l"
+	.string "just because it happened.$"
 
 MeteorFalls_1F_1R_Text_MeetProfCozmo:
 	.string "I… I'm COZMO…\n"

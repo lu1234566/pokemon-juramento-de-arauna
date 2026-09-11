@@ -8,7 +8,7 @@ const u8 gDummyPokedexText[] = _(
     "at this time.");
 
 const u8 gCaramelo001PokedexText[] = _(
-    "A stray pup the colour of caramel. Once it\n"
+    "A stray pup the color of caramel. Once it\n"
     "trusts its trainer, the tip of its tail\n"
     "lights a small steady flame that never burns\n"
     "a friendly hand."
@@ -82,7 +82,7 @@ const u8 gCapivim012PokedexText[] = _(
 const u8 gTucanhao013PokedexText[] = _(
     "Its huge beak is hollow and light. It\n"
     "swallows a fruit whole and spits the seed 40\n"
-    "metres, planting forests alone."
+    "meters, planting forests alone."
 );
 
 const u8 gSaguim014PokedexText[] = _(
@@ -180,7 +180,7 @@ const u8 gTatubola029PokedexText[] = _(
 );
 
 const u8 gTatucu030PokedexText[] = _(
-    "It digs twenty metres of tunnel a night.\n"
+    "It digs twenty meters of tunnel a night.\n"
     "Whole villages have sunk into its galleries."
 );
 
@@ -248,7 +248,7 @@ const u8 gPapagaiao042PokedexText[] = _(
 
 const u8 gAntinha043PokedexText[] = _(
     "Striped like a small boar. Its short snout\n"
-    "smells fruit a hundred metres off."
+    "smells fruit a hundred meters off."
 );
 
 const u8 gAnta044PokedexText[] = _(
@@ -262,7 +262,7 @@ const u8 gAntarau045PokedexText[] = _(
 );
 
 const u8 gSucurim046PokedexText[] = _(
-    "It is already two metres long at birth. It\n"
+    "It is already two meters long at birth. It\n"
     "coils in branches and waits for prey."
 );
 
@@ -436,7 +436,7 @@ const u8 gGamba079PokedexText[] = _(
 );
 
 const u8 gCangamba080PokedexText[] = _(
-    "Its stink jet reaches three metres and lasts\n"
+    "Its stink jet reaches three meters and lasts\n"
     "weeks in your clothes."
 );
 
@@ -486,7 +486,7 @@ const u8 gTeiu089PokedexText[] = _(
 );
 
 const u8 gCamaleao090PokedexText[] = _(
-    "It changes colour to match its surroundings,\n"
+    "It changes color to match its surroundings,\n"
     "and its mood by the second."
 );
 
@@ -633,7 +633,7 @@ const u8 gCascavelim118PokedexText[] = _(
 
 const u8 gCascavao119PokedexText[] = _(
     "One bite paralyses even Onçaléu. Its rattle\n"
-    "carries a hundred metres."
+    "carries a hundred meters."
 );
 
 const u8 gJararaca120PokedexText[] = _(
@@ -643,11 +643,11 @@ const u8 gJararaca120PokedexText[] = _(
 
 const u8 gPirarim121PokedexText[] = _(
     "Thirty centimetres at birth. It grows a\n"
-    "metre a year in a well-fed river."
+    "meter a year in a well-fed river."
 );
 
 const u8 gPirarucu122PokedexText[] = _(
-    "Up to three metres long. It breathes surface\n"
+    "Up to three meters long. It breathes surface\n"
     "air like a mammal."
 );
 
@@ -662,7 +662,7 @@ const u8 gTambaqui124PokedexText[] = _(
 );
 
 const u8 gAruana125PokedexText[] = _(
-    "It leaps two metres clear of the water to\n"
+    "It leaps two meters clear of the water to\n"
     "take insects off branches."
 );
 
@@ -698,7 +698,7 @@ const u8 gPacu131PokedexText[] = _(
 
 const u8 gMatrinxa132PokedexText[] = _(
     "Dark shoals slip through the rapids. A\n"
-    "favourite of sport anglers."
+    "favorite of sport anglers."
 );
 
 const u8 gPiau133PokedexText[] = _(
@@ -723,7 +723,7 @@ const u8 gVagalumim136PokedexText[] = _(
 
 const u8 gVagalume137PokedexText[] = _(
     "It blinks in code to draw females, lighting\n"
-    "five metres around it."
+    "five meters around it."
 );
 
 const u8 gCigarrinho138PokedexText[] = _(
@@ -833,7 +833,7 @@ const u8 gBemTeVi158PokedexText[] = _(
 
 const u8 gUrutau159PokedexText[] = _(
     "It disguises itself as a dead branch. Its\n"
-    "mournful night song frightens travellers."
+    "mournful night song frightens travelers."
 );
 
 const u8 gCarcara160PokedexText[] = _(
@@ -1052,7 +1052,7 @@ const u8 gDiamantina202PokedexText[] = _(
 );
 
 const u8 gBauxito203PokedexText[] = _(
-    "Terracotta coloured. It flakes away in metal\n"
+    "Terracotta colored. It flakes away in metal\n"
     "sheets."
 );
 
@@ -1137,7 +1137,7 @@ const u8 gCamarao219PokedexText[] = _(
 );
 
 const u8 gPolvim220PokedexText[] = _(
-    "It changes colour to match the sea floor,\n"
+    "It changes color to match the sea floor,\n"
     "and squirts ink."
 );
 
@@ -1147,7 +1147,7 @@ const u8 gPolvao221PokedexText[] = _(
 );
 
 const u8 gAguaviva222PokedexText[] = _(
-    "Stinging tentacles metres long. It drifts\n"
+    "Stinging tentacles meters long. It drifts\n"
     "with the current."
 );
 
@@ -1436,12 +1436,12 @@ const u8 gOncuma279PokedexText[] = _(
 );
 
 const u8 gSucuriacu280PokedexText[] = _(
-    "A ten-metre anaconda. It swallows capybaras\n"
+    "A ten-meter anaconda. It swallows capybaras\n"
     "whole."
 );
 
 const u8 gPirarumba281PokedexText[] = _(
-    "The king pirarucu. Five metres, with scales\n"
+    "The king pirarucu. Five meters, with scales\n"
     "like armour."
 );
 
@@ -1472,7 +1472,7 @@ const u8 gIaraMae286PokedexText[] = _(
 
 const u8 gCurupiraRei287PokedexText[] = _(
     "The Curupira king of the forest. His hair is\n"
-    "fire the colour of urucum."
+    "fire the color of urucum."
 );
 
 const u8 gSaciRei288PokedexText[] = _(
@@ -1761,7 +1761,7 @@ const u8 gAlvorecer345PokedexText[] = _(
 );
 
 const u8 gPoente346PokedexText[] = _(
-    "The spirit of sunset, and its burnt colours\n"
+    "The spirit of sunset, and its burnt colors\n"
     "at the end of the day."
 );
 
@@ -1945,7 +1945,7 @@ const u8 gIemanja382PokedexText[] = _(
 
 const u8 gOxumara383PokedexText[] = _(
     "The rainbow serpent. It bridges earth and\n"
-    "sky in colour."
+    "sky in color."
 );
 
 const u8 gCurupixel384PokedexText[] = _(

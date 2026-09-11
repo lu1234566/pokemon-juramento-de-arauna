@@ -716,9 +716,10 @@ PetalburgCity_EventScript_GymBoy::
 	end
 
 PetalburgCity_Text_WhereIsWally:
-	.string "VAL: Passei muito tempo achando\nque precisava virar outra\p"
-	.string "pessoa para seguir viagem. Eu\nso precisava descobrir meu\p"
-	.string "proprio ritmo.$"
+	.string "VAL: I spent a long time thinking I had\n"
+	.string "to become someone else to keep\l"
+	.string "traveling. All I had to find was my own\l"
+	.string "pace.$"
 
 PetalburgCity_Text_AreYouRookieTrainer:
 	.string "Hiya! Are you maybe…\n"
@@ -749,18 +750,20 @@ PetalburgCity_Text_FullPartyExplanation:
 	.string "BOX over a PC connection.$"
 
 PetalburgCity_Text_GymSign:
-	.string "PAMPA DA ESPERA\n"
-	.string "RESPONSAVEL: ELIAS\p"
-	.string "Voltar nao apaga o caminho.$"
+	.string "PAMPA DA ESPERA LEADER: ELIAS\p"
+	.string "Coming back does not erase the road.$"
 
 PetalburgCity_Text_CitySign:
-	.string "PAMPA DA ESPERA. A cidade vive\nentre partidas e retornos.\p"
-	.string "Elias conhece mais sobre o\ndesastre de M'BOI do que aceita\p"
-	.string "contar.$"
+	.string "PAMPA DA ESPERA. The town lives\n"
+	.string "between departures and returns. Elias\l"
+	.string "knows more about the M'BOI disaster\l"
+	.string "than he will admit.$"
 
 PetalburgCity_Text_WallyHouseSign:
-	.string "VAL: Eu ainda tenho medo. Mas\nagora sei que coragem nao e\p"
-	.string "esquecer o medo; e caminhar\nmesmo lembrando dele.$"
+	.string "VAL: I am still afraid. But I know now\n"
+	.string "that courage is not forgetting the\l"
+	.string "fear. It is walking on while you\l"
+	.string "remember it.$"
 
 PetalburgCity_Text_AreYouATrainer:
 	.string "Excuse me!\p"

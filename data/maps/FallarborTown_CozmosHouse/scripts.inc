@@ -98,8 +98,10 @@ FallarborTown_CozmosHouse_Text_CrushedWithDisappointment:
 	.string "I'm crushed with disappointment…$"
 
 FallarborTown_CozmosHouse_Text_MayIHaveMeteorite:
-	.string "CIRO: Nao confunda minha pressa\ncom falta de memoria. Eu lembro\p"
-	.string "o bastante para saber que nao\nquero viver preso ao que perdi.$"
+	.string "CIRO: Do not mistake my hurry for a bad\n"
+	.string "memory. I remember enough to know I do\l"
+	.string "not want to live shackled to what I\l"
+	.string "lost.$"
 
 FallarborTown_CozmosHouse_Text_CozmoWentToMeteorFalls:
 	.string "PROF. COZMO went off to\n"

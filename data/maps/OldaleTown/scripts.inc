@@ -391,20 +391,19 @@ OldaleTown_Text_FinishedSketchingFootprints:
 	.string "own footprints…$"
 
 OldaleTown_Text_MayLetsGoBack:
-	.string "CIRO: Nao confunda minha pressa\ncom falta de memoria. Eu lembro\p"
-	.string "o bastante para saber que nao\nquero viver preso ao que perdi.$"
+	.string "CIRO: Do not mistake my hurry for a bad\n"
+	.string "memory. I remember enough to know I do\l"
+	.string "not want to live shackled to what I\l"
+	.string "lost.$"
 
 OldaleTown_Text_BrendanLetsGoBack:
-	.string "CIRO: O HORIZON nao me pediu\n"
-	.string "para esquecer nada. So me\p"
-	.string "mostrou que existe um futuro\n"
-	.string "que nao precisa ser governado\p"
-	.string "pelo passado.$"
+	.string "CIRO: HORIZON never asked me to forget\n"
+	.string "anything. It only showed me there is a\l"
+	.string "future that does not have to be ruled\l"
+	.string "by the past.$"
 
 OldaleTown_Text_TownSign:
-	.string "VILA DA PASSAGEM. Um Pokemon\n"
-	.string "local deixou de responder ao\p"
-	.string "proprio nome. Os moradores\n"
-	.string "chamam o fenomeno de\p"
-	.string "DISENCHANTMENT.$"
+	.string "VILA DA PASSAGEM. A local POKéMON\n"
+	.string "stopped answering to its own name.\l"
+	.string "People here call it DISENCHANTMENT.$"
 

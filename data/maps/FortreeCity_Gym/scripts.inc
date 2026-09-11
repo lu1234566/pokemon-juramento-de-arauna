@@ -232,24 +232,25 @@ FortreeCity_Gym_Text_DariusPostBattle:
 	.string "LIDIA's POKéMON are all business.$"
 
 FortreeCity_Gym_Text_WinonaIntro:
-	.string "LIDIA: Quando os POKéMON\nesquecem caminhos transmitidos\p"
-	.string "entre geracoes, alguma coisa\nantiga foi ferida.$"
+	.string "LIDIA: When POKéMON forget paths\n"
+	.string "handed down through generations,\l"
+	.string "something old has been hurt.$"
 
 FortreeCity_Gym_Text_WinonaDefeat:
-	.string "LIDIA: Quando os POKéMON\nesquecem caminhos transmitidos\p"
-	.string "entre geracoes, alguma coisa\nantiga foi ferida.$"
+	.string "LIDIA: When POKéMON forget paths\n"
+	.string "handed down through generations,\l"
+	.string "something old has been hurt.$"
 
 FortreeCity_Gym_Text_ReceivedFeatherBadge:
-	.string "{PLAYER} recebeu a\n"
-	.string "PLUME BADGE de LIDIA.$"
+	.string "{PLAYER} received the PLUME BADGE from\n"
+	.string "LIDIA.$"
 
 FortreeCity_Gym_Text_ExplainFeatherBadgeTakeThis:
-	.string "Com a PLUME BADGE, POKéMON\n"
-	.string "até o nível 70 obedecem,\l"
-	.string "mesmo os recebidos em troca.\p"
-	.string "Ela também permite usar FLY\n"
-	.string "fora de batalha.\p"
-	.string "Aceite este presente.$"
+	.string "With the PLUME BADGE, POKéMON up to\n"
+	.string "level 70 obey, even ones received in a\l"
+	.string "trade.\p"
+	.string "It also lets you use FLY outside battle.\p"
+	.string "Take this gift.$"
 
 FortreeCity_Gym_Text_ExplainAerialAce:
 	.string "TM40 contains AERIAL ACE.\p"
@@ -262,8 +263,9 @@ FortreeCity_Gym_Text_RegisteredWinona:
 	.string "in the POKéNAV.$"
 
 FortreeCity_Gym_Text_WinonaPostBattle:
-	.string "LIDIA: Quando os POKéMON\nesquecem caminhos transmitidos\p"
-	.string "entre geracoes, alguma coisa\nantiga foi ferida.$"
+	.string "LIDIA: When POKéMON forget paths\n"
+	.string "handed down through generations,\l"
+	.string "something old has been hurt.$"
 
 FortreeCity_Gym_Text_GymStatue:
 	.string "MATA DO MEIO POKéMON GYM$"
@@ -274,17 +276,21 @@ FortreeCity_Gym_Text_GymStatueCertified:
 	.string "{PLAYER}$"
 
 FortreeCity_Gym_Text_WinonaPreRematch:
-	.string "LIDIA: Quando os POKéMON\nesquecem caminhos transmitidos\p"
-	.string "entre geracoes, alguma coisa\nantiga foi ferida.$"
+	.string "LIDIA: When POKéMON forget paths\n"
+	.string "handed down through generations,\l"
+	.string "something old has been hurt.$"
 
 FortreeCity_Gym_Text_WinonaRematchDefeat:
-	.string "LIDIA: Quando os POKéMON\nesquecem caminhos transmitidos\p"
-	.string "entre geracoes, alguma coisa\nantiga foi ferida.$"
+	.string "LIDIA: When POKéMON forget paths\n"
+	.string "handed down through generations,\l"
+	.string "something old has been hurt.$"
 
 FortreeCity_Gym_Text_WinonaPostRematch:
-	.string "LIDIA: Quando os POKéMON\nesquecem caminhos transmitidos\p"
-	.string "entre geracoes, alguma coisa\nantiga foi ferida.$"
+	.string "LIDIA: When POKéMON forget paths\n"
+	.string "handed down through generations,\l"
+	.string "something old has been hurt.$"
 
 FortreeCity_Gym_Text_WinonaRematchNeedTwoMons:
-	.string "LIDIA: Quando os POKéMON\nesquecem caminhos transmitidos\p"
-	.string "entre geracoes, alguma coisa\nantiga foi ferida.$"
+	.string "LIDIA: When POKéMON forget paths\n"
+	.string "handed down through generations,\l"
+	.string "something old has been hurt.$"

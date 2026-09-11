@@ -476,72 +476,78 @@ Route119_EventScript_ScottWonAtFortreeGymCall::
 	end
 
 Route119_Text_MayIntro:
-	.string "CIRO: Voce continua olhando\npara cada cicatriz como se ela\p"
-	.string "fosse uma resposta. Eu quero\nsaber o que existe depois dela.$"
+	.string "CIRO: You keep looking at every scar as\n"
+	.string "if it were an answer. I want to know\l"
+	.string "what comes after it.$"
 
 Route119_Text_MayDefeat:
-	.string "CIRO: Nao confunda minha pressa\ncom falta de memoria. Eu lembro\p"
-	.string "o bastante para saber que nao\nquero viver preso ao que perdi.$"
+	.string "CIRO: Do not mistake my hurry for a bad\n"
+	.string "memory. I remember enough to know I do\l"
+	.string "not want to live shackled to what I\l"
+	.string "lost.$"
 
 Route119_Text_MayPresentForYou:
-	.string "CIRO: Voce continua olhando\npara cada cicatriz como se ela\p"
-	.string "fosse uma resposta. Eu quero\nsaber o que existe depois dela.$"
+	.string "CIRO: You keep looking at every scar as\n"
+	.string "if it were an answer. I want to know\l"
+	.string "what comes after it.$"
 
 Route119_Text_MayExplainFly:
-	.string "CIRO: Voce continua olhando\npara cada cicatriz como se ela\p"
-	.string "fosse uma resposta. Eu quero\nsaber o que existe depois dela.$"
+	.string "CIRO: You keep looking at every scar as\n"
+	.string "if it were an answer. I want to know\l"
+	.string "what comes after it.$"
 
 Route119_Text_BrendanIntro:
-	.string "CIRO: Nao confunda minha pressa\ncom falta de memoria. Eu lembro\p"
-	.string "o bastante para saber que nao\nquero viver preso ao que perdi.$"
+	.string "CIRO: Do not mistake my hurry for a bad\n"
+	.string "memory. I remember enough to know I do\l"
+	.string "not want to live shackled to what I\l"
+	.string "lost.$"
 
 Route119_Text_BrendanDefeat:
-	.string "CIRO: O HORIZON nao me pediu\n"
-	.string "para esquecer nada. So me\p"
-	.string "mostrou que existe um futuro\n"
-	.string "que nao precisa ser governado\p"
-	.string "pelo passado.$"
+	.string "CIRO: HORIZON never asked me to forget\n"
+	.string "anything. It only showed me there is a\l"
+	.string "future that does not have to be ruled\l"
+	.string "by the past.$"
 
 Route119_Text_BrendanIllGiveYouThis:
-	.string "CIRO: Nao confunda minha pressa\ncom falta de memoria. Eu lembro\p"
-	.string "o bastante para saber que nao\nquero viver preso ao que perdi.$"
+	.string "CIRO: Do not mistake my hurry for a bad\n"
+	.string "memory. I remember enough to know I do\l"
+	.string "not want to live shackled to what I\l"
+	.string "lost.$"
 
 Route119_Text_BrendanExplainFly:
-	.string "CIRO: O HORIZON nao me pediu\n"
-	.string "para esquecer nada. So me\p"
-	.string "mostrou que existe um futuro\n"
-	.string "que nao precisa ser governado\p"
-	.string "pelo passado.$"
+	.string "CIRO: HORIZON never asked me to forget\n"
+	.string "anything. It only showed me there is a\l"
+	.string "future that does not have to be ruled\l"
+	.string "by the past.$"
 
 Route119_Text_ScottWayToGoBeSeeingYou:
-	.string "VIAJANTE: Ei, {PLAYER}!\p"
-	.string "Cruzei com CIRO subindo a trilha.\n"
-	.string "Ele parecia com pressa demais.\p"
-	.string "Se vai para a MATA DO MEIO,\n"
-	.string "continue atento ao caminho.$"
+	.string "TRAVELER: Hey, {PLAYER}!\p"
+	.string "I passed CIRO heading up the trail. He\n"
+	.string "looked in far too much of a hurry.\p"
+	.string "If you're going to MATA DO MEIO, keep\n"
+	.string "your eyes on the path.$"
 
 
 Route119_Text_ScottYouWonAtFortreeGym:
-	.string "... ... ... ... ... ...\n"
-	.string "... ... ... ... ... Bip!\p"
-	.string "VIAJANTE: {PLAYER}, sou eu!\p"
-	.string "Ouvi que venceu o desafio\n"
-	.string "de LIDIA na MATA DO MEIO.\p"
-	.string "Continue assim. Arauna anda\n"
-	.string "precisando de gente atenta.\p"
-	.string "... ... ... ... ... Clique!$"
+	.string "... ... ... ... ... ... ... ... ... ... ... Beep!\p"
+	.string "TRAVELER: {PLAYER}, it is me!\p"
+	.string "I hear you beat LIDIA's challenge at\n"
+	.string "MATA DO MEIO.\p"
+	.string "Keep it up. Arauna could use people who\n"
+	.string "pay attention.\p"
+	.string "... ... ... ... ... Click!$"
 
 Route119_Text_StayAwayFromWeatherInstitute:
-	.string "HORIZON: Estamos isolando\n"
-	.string "o INSTITUTO DAS AGUAS.\p"
-	.string "Nao se aproxime enquanto a\n"
-	.string "operacao estiver em andamento.$"
+	.string "HORIZON: We're sealing off the WATER\n"
+	.string "INSTITUTE.\p"
+	.string "Stay away while the operation is under\n"
+	.string "way.$"
 
 Route119_Text_DontGoNearWeatherInstitute:
-	.string "HORIZON: Vigiar esta ponte\n"
-	.string "e mais tedioso do que parece.\p"
-	.string "Mesmo assim, nao chegue perto\n"
-	.string "do INSTITUTO DAS AGUAS.$"
+	.string "HORIZON: Watching this bridge is duller\n"
+	.string "than it looks.\p"
+	.string "Even so, don't go near the WATER\n"
+	.string "INSTITUTE.$"
 
 Route119_Text_ThoughtFlyByCatchingBirdMons:
 	.string "I thought you FLY by catching a whole\n"
@@ -564,11 +570,10 @@ Route119_Text_CanYourMonMakeSecretBase:
 	.string "SECRET BASE?$"
 
 Route119_Text_RouteSignFortree:
-	.string "ROTA 119\n"
-	.string "{RIGHT_ARROW} MATA DO MEIO$"
+	.string "ROUTE 119 {RIGHT_ARROW} MATA DO MEIO$"
 
 Route119_Text_WeatherInstitute:
-	.string "INSTITUTO DAS AGUAS$"
+	.string "WATER INSTITUTE$"
 
 Route119_Text_TrainerTipsDecoration:
 	.string "TRAINER TIPS\p"

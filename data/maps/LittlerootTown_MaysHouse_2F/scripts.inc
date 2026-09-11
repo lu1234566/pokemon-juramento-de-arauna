@@ -309,62 +309,56 @@ LittlerootTown_MaysHouse_2F_EventScript_TurnOffPlayerPC::
 	end
 
 RivalsHouse_2F_Text_MayWhoAreYou:
-	.string "CIRO: Entao voce e {PLAYER}.\p"
-	.string "ANAHI falou que voce chegaria.\n"
-	.string "Eu esperava alguem... diferente.\p"
-	.string "Depois conversamos. Estou\n"
-	.string "atrasado para o campo.$"
+	.string "CIRO: So you are {PLAYER}.\p"
+	.string "ANAHI said you would turn up. I was\n"
+	.string "expecting someone... different.\p"
+	.string "We will talk later. I am late for the\n"
+	.string "field.$"
 
 RivalsHouse_2F_Text_MayGettingReady:
-	.string "CIRO: Estou terminando minhas\n"
-	.string "anotacoes da ROTA 103.\p"
-	.string "O HORIZON quer dados antes\n"
-	.string "do anoitecer.$"
+	.string "CIRO: I am finishing my notes from\n"
+	.string "ROUTE 103.\p"
+	.string "HORIZON wants the data before dark.$"
 
 RivalsHouse_2F_Text_BrendanWhoAreYou:
-	.string "CIRO: Entao voce e {PLAYER}.\p"
-	.string "ANAHI falou que voce chegaria.\n"
-	.string "Eu esperava alguem... diferente.\p"
-	.string "Depois conversamos. Estou\n"
-	.string "atrasado para o campo.$"
+	.string "CIRO: So you are {PLAYER}.\p"
+	.string "ANAHI said you would turn up. I was\n"
+	.string "expecting someone... different.\p"
+	.string "We will talk later. I am late for the\n"
+	.string "field.$"
 
 RivalsHouse_2F_Text_BrendanGettingReady:
-	.string "CIRO: Estou terminando minhas\n"
-	.string "anotacoes da ROTA 103.\p"
-	.string "O HORIZON quer dados antes\n"
-	.string "do anoitecer.$"
+	.string "CIRO: I am finishing my notes from\n"
+	.string "ROUTE 103.\p"
+	.string "HORIZON wants the data before dark.$"
 
 RivalsHouse_2F_Text_ItsRivalsPokeBall:
-	.string "Essa POKé BOLA e de CIRO.\p"
-	.string "Melhor deixar onde esta.$"
+	.string "That POKé BALL belongs to CIRO.\p"
+	.string "Better leave it where it is.$"
 
 RivalsHouse_2F_Text_MayJustCheckingMyPokedex:
-	.string "CIRO: Se os dados estiverem\n"
-	.string "certos, o DISENCHANTMENT pode ser\p"
-	.string "tratado. Eu prefiro testar uma\n"
-	.string "resposta a transformar\p"
-	.string "sofrimento em tradicao.$"
+	.string "CIRO: If the data is right,\n"
+	.string "DISENCHANTMENT can be treated. I would\l"
+	.string "rather test an answer than turn\l"
+	.string "suffering into tradition.$"
 
 RivalsHouse_2F_Text_MayWhereShouldIGoNext:
-	.string "CIRO: O HORIZON nao me pediu\n"
-	.string "para esquecer nada. So me\p"
-	.string "mostrou que existe um futuro\n"
-	.string "que nao precisa ser governado\p"
-	.string "pelo passado.$"
+	.string "CIRO: HORIZON never asked me to forget\n"
+	.string "anything. It only showed me there is a\l"
+	.string "future that does not have to be ruled\l"
+	.string "by the past.$"
 
 RivalsHouse_2F_Text_BrendanJustCheckingMyPokedex:
-	.string "CIRO: Se os dados estiverem\n"
-	.string "certos, o DISENCHANTMENT pode ser\p"
-	.string "tratado. Eu prefiro testar uma\n"
-	.string "resposta a transformar\p"
-	.string "sofrimento em tradicao.$"
+	.string "CIRO: If the data is right,\n"
+	.string "DISENCHANTMENT can be treated. I would\l"
+	.string "rather test an answer than turn\l"
+	.string "suffering into tradition.$"
 
 RivalsHouse_2F_Text_BrendanWhereShouldIGoNext:
-	.string "CIRO: O HORIZON nao me pediu\n"
-	.string "para esquecer nada. So me\p"
-	.string "mostrou que existe um futuro\n"
-	.string "que nao precisa ser governado\p"
-	.string "pelo passado.$"
+	.string "CIRO: HORIZON never asked me to forget\n"
+	.string "anything. It only showed me there is a\l"
+	.string "future that does not have to be ruled\l"
+	.string "by the past.$"
 
 LittlerootTown_MaysHouse_2F_V9_OnLoad:
 	call LittlerootTown_MaysHouse_2F_V9_SelectHomeRole

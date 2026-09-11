@@ -174,13 +174,13 @@ Route121_Text_OkayMoveOutToMtPyre:
 
 Route121_Text_AheadLoomsMtPyre:
 	.string "Ahead looms MEMORIAL DOS NOMES…\p"
-	.string "It is a natural monument to the spirits \n"
+	.string "It is a natural monument to the spirits\n"
 	.string "of departed POKéMON…$"
 
 Route121_Text_MtPyrePierSign:
 	.string "MEMORIAL DOS NOMES PIER\p"
-	.string "…The sign is old and worn out.\n"
-	.string "The words are barely legible…$"
+	.string "…The sign is old and worn out. The words\n"
+	.string "are barely legible…$"
 
 Route121_Text_SafariZoneSign:
 	.string "“Filled with rare POKéMON!”\n"

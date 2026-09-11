@@ -27,10 +27,11 @@ EverGrandeCity_Text_EnteringVictoryRoad:
 	.string "ESTRADA DO JURAMENTO$"
 
 EverGrandeCity_Text_EnteringPokemonLeague:
-	.string "ENTRADA DA LEAGUE POKéMON$"
+	.string "POKéMON LEAGUE ENTRANCE$"
 
 EverGrandeCity_Text_CitySign:
-	.string "ESTRADA DO JURAMENTO. A Liga e\no ultimo rito da viagem. Vencer\p"
-	.string "nao apaga o que aconteceu;\napenas define quem voce sera\p"
-	.string "depois.$"
+	.string "ESTRADA DO JURAMENTO. The LEAGUE is\n"
+	.string "the last rite of the journey. Winning\l"
+	.string "erases nothing that happened; it only\l"
+	.string "settles who you will be afterward.$"
 

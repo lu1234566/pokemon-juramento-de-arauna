@@ -6,21 +6,21 @@ AnahiEquipamentos_EventScript_Machines::
 	end
 
 AnahiEquipamentos_Text_Machines:
-	.string "Instrumentos limpos e calibrados\n"
-	.string "prontos para a proxima pesquisa.$"
+	.string "Clean, calibrated instruments, ready\n"
+	.string "for the next survey.$"
 
 AnahiEquipamentos_EventScript_Supplies::
 	msgbox AnahiEquipamentos_Text_Supplies, MSGBOX_SIGN
 	end
 
 AnahiEquipamentos_Text_Supplies:
-	.string "Materiais e ferramentas\n"
-	.string "estao separadas por uso.$"
+	.string "Materials and tools are sorted by what\n"
+	.string "they're for.$"
 
 AnahiEquipamentos_EventScript_Notes::
 	msgbox AnahiEquipamentos_Text_Notes, MSGBOX_SIGN
 	end
 
 AnahiEquipamentos_Text_Notes:
-	.string "Cada equipamento tem uma ficha\n"
-	.string "de conservacao e manutencao.$"
+	.string "Every piece of equipment has a\n"
+	.string "conservation and maintenance record.$"

@@ -1381,13 +1381,14 @@ SootopolisCity_Movement_DestroyTask::
 	step_end
 
 SootopolisCity_Text_GymSign:
-	.string "M'BOI\n"
-	.string "RESPONSAVEL: MRS. CELINA\p"
-	.string "A agua lembra por nos.$"
+	.string "M'BOI LEADER: MRS. CELINA\p"
+	.string "The water remembers for us.$"
 
 SootopolisCity_Text_CitySign:
-	.string "AGUAS DE M'BOI. O colapso do\nArquivo espalha lembrancas\p"
-	.string "alheias e vazios de memoria por\ntoda Arauna.$"
+	.string "AGUAS DE M'BOI. The collapse of the\n"
+	.string "ARCHIVE is spreading other people's\l"
+	.string "memories, and holes where memory should\l"
+	.string "be, across all of Arauna.$"
 
 SootopolisCity_Text_DoorIsClosed:
 	.string "The door is closed.$"
@@ -1412,9 +1413,10 @@ SootopolisCity_Text_WhatIsThatGreenPokemon:
 	.string "What is that green POKéMON?!$"
 
 SootopolisCity_Text_WhereDidLegendariesGo:
-	.string "A cidade inteira sente o\nresultado de duas ideias\p"
-	.string "transformadas em absolutos:\nlembrar tudo e apagar a dor a\p"
-	.string "qualquer custo.$"
+	.string "The whole city is living with what\n"
+	.string "happens when two ideas are taken as\l"
+	.string "absolutes: remember everything, and\l"
+	.string "erase the pain at any cost.$"
 
 SootopolisCity_Text_TwoPokemonArentAngry:
 	.string "I just get this sense somehow that\n"
@@ -1500,9 +1502,10 @@ SootopolisCity_Text_CityRegainedCalm:
 	.string "The city has regained its calm…$"
 
 SootopolisCity_Text_CaveOfOriginPleaseLeave:
-	.string "As aguas carregam lembrancas\nque nao pertencem a quem as\p"
-	.string "recebe. Pessoas reconhecem\nnomes que nunca ouviram e\p"
-	.string "esquecem rostos que amam.$"
+	.string "The waters carry memories that do not\n"
+	.string "belong to whoever receives them. People\l"
+	.string "recognize names they have never heard\l"
+	.string "and forget faces they love.$"
 
 SootopolisCity_Text_LeadSuperiorTrainerToCave:
 	.string "A person with a strong will and\n"
@@ -1550,9 +1553,10 @@ SootopolisCity_Text_NightSkyFavoriteScenery:
 	.string "It's my favorite scenery.$"
 
 SootopolisCity_Text_WeatherWentWild:
-	.string "A cidade inteira sente o\nresultado de duas ideias\p"
-	.string "transformadas em absolutos:\nlembrar tudo e apagar a dor a\p"
-	.string "qualquer custo.$"
+	.string "The whole city is living with what\n"
+	.string "happens when two ideas are taken as\l"
+	.string "absolutes: remember everything, and\l"
+	.string "erase the pain at any cost.$"
 
 SootopolisCity_Text_YouBroughtFlyingMon:
 	.string "Oh?\p"
@@ -1561,84 +1565,78 @@ SootopolisCity_Text_YouBroughtFlyingMon:
 	.string "Well, aren't you amazing!$"
 
 SootopolisCity_Text_GroudonPleaseStop:
-	.string "A cidade inteira sente o\nresultado de duas ideias\p"
-	.string "transformadas em absolutos:\nlembrar tudo e apagar a dor a\p"
-	.string "qualquer custo.$"
+	.string "The whole city is living with what\n"
+	.string "happens when two ideas are taken as\l"
+	.string "absolutes: remember everything, and\l"
+	.string "erase the pain at any cost.$"
 
 SootopolisCity_Text_AfterAllOurScheming:
-	.string "IARA-MOM puxa BONDS de\n"
-	.string "volta. ANHANGUERA encerra os\p"
-	.string "que nao podem continuar. O\n"
-	.string "colapso obrigou as duas\p"
-	.string "correntes a se manifestar ao\n"
-	.string "mesmo tempo.$"
+	.string "IARA-MAE pulls BONDS back. ANHANGUERA\n"
+	.string "closes the ones that cannot go on. The\l"
+	.string "collapse forced both currents to show\l"
+	.string "themselves at once.$"
 
 SootopolisCity_Text_KyogreCalmDown:
-	.string "A cidade inteira sente o\nresultado de duas ideias\p"
-	.string "transformadas em absolutos:\nlembrar tudo e apagar a dor a\p"
-	.string "qualquer custo.$"
+	.string "The whole city is living with what\n"
+	.string "happens when two ideas are taken as\l"
+	.string "absolutes: remember everything, and\l"
+	.string "erase the pain at any cost.$"
 
 SootopolisCity_Text_TryingMeaninglessToPokemon:
-	.string "IARA-MOM puxa BONDS de\n"
-	.string "volta. ANHANGUERA encerra os\p"
-	.string "que nao podem continuar. O\n"
-	.string "colapso obrigou as duas\p"
-	.string "correntes a se manifestar ao\n"
-	.string "mesmo tempo.$"
+	.string "IARA-MAE pulls BONDS back. ANHANGUERA\n"
+	.string "closes the ones that cannot go on. The\l"
+	.string "collapse forced both currents to show\l"
+	.string "themselves at once.$"
 
 SootopolisCity_Text_InvolvedWithCrisisComeWithMe:
-	.string "MR. BENTO: Olhe para a agua.\p"
-	.string "Isso nao e so uma tempestade.\p"
-	.string "As duas correntes antigas foram\n"
-	.string "forcadas a despertar juntas.\p"
-	.string "Venha comigo. Ha algo no centro\n"
-	.string "que voce precisa ver.$"
+	.string "MR. BENTO: Look at the water.\p"
+	.string "That is not only a storm.\p"
+	.string "The two old currents have been forced\n"
+	.string "awake together.\p"
+	.string "Come with me. There is something at the\n"
+	.string "center you need to see.$"
 
 SootopolisCity_Text_DoesThisMakeYourFearPokemon:
-	.string "As aguas carregam lembrancas\nque nao pertencem a quem as\p"
-	.string "recebe. Pessoas reconhecem\nnomes que nunca ouviram e\p"
-	.string "esquecem rostos que amam.$"
+	.string "The waters carry memories that do not\n"
+	.string "belong to whoever receives them. People\l"
+	.string "recognize names they have never heard\l"
+	.string "and forget faces they love.$"
 
 SootopolisCity_Text_HereWereAreHelpWallace:
-	.string "MR. BENTO: Quando um nome some\n"
-	.string "da boca das pessoas, eu\p"
-	.string "escrevo. Nao para substituir\n"
-	.string "quem lembra; para deixar uma\p"
-	.string "pista.$"
+	.string "MR. BENTO: When a name falls out of\n"
+	.string "people's mouths, I write it down. Not to\l"
+	.string "replace whoever remembers it. To leave\l"
+	.string "a trail.$"
 
 SootopolisCity_Text_KnowWhatsNeededToHelpHim:
-	.string "MR. BENTO: Quando um nome some\n"
-	.string "da boca das pessoas, eu\p"
-	.string "escrevo. Nao para substituir\n"
-	.string "quem lembra; para deixar uma\p"
-	.string "pista.$"
+	.string "MR. BENTO: When a name falls out of\n"
+	.string "people's mouths, I write it down. Not to\l"
+	.string "replace whoever remembers it. To leave\l"
+	.string "a trail.$"
 
 SootopolisCity_Text_NeverBeenToSkyPillar:
-	.string "MR. BENTO: Quando um nome some\n"
-	.string "da boca das pessoas, eu\p"
-	.string "escrevo. Nao para substituir\n"
-	.string "quem lembra; para deixar uma\p"
-	.string "pista.$"
+	.string "MR. BENTO: When a name falls out of\n"
+	.string "people's mouths, I write it down. Not to\l"
+	.string "replace whoever remembers it. To leave\l"
+	.string "a trail.$"
 
 SootopolisCity_Text_SoThatsRayquaza:
-	.string "IARA-MOM puxa BONDS de\n"
-	.string "volta. ANHANGUERA encerra os\p"
-	.string "que nao podem continuar. O\n"
-	.string "colapso obrigou as duas\p"
-	.string "correntes a se manifestar ao\n"
-	.string "mesmo tempo.$"
+	.string "IARA-MAE pulls BONDS back. ANHANGUERA\n"
+	.string "closes the ones that cannot go on. The\l"
+	.string "collapse forced both currents to show\l"
+	.string "themselves at once.$"
 
 SootopolisCity_Text_MaxieArchieLeft:
-	.string "IARA-MOM puxa BONDS de\n"
-	.string "volta. ANHANGUERA encerra os\p"
-	.string "que nao podem continuar. O\n"
-	.string "colapso obrigou as duas\p"
-	.string "correntes a se manifestar ao\n"
-	.string "mesmo tempo.$"
+	.string "IARA-MAE pulls BONDS back. ANHANGUERA\n"
+	.string "closes the ones that cannot go on. The\l"
+	.string "collapse forced both currents to show\l"
+	.string "themselves at once.$"
 
 SootopolisCity_Text_HaventYouScaledSkyPillar:
-	.string "AMALIA: Arauna sobreviveu a\nverdade pela metade por tempo\p"
-	.string "demais. A Liga tambem tem\ndividas com quem foi apagado.$"
+	.string "AMALIA: Arauna has lived on half the\n"
+	.string "truth for far too long. The LEAGUE has\l"
+	.string "debts of its own to the people who were\l"
+	.string "erased.$"
 
 SootopolisCity_Text_AquaMagmaDidntMeanHarm:
 	.string "AMALIA: {PLAYER}{KUN}…\p"
@@ -1648,23 +1646,27 @@ SootopolisCity_Text_AquaMagmaDidntMeanHarm:
 	.string "have to say for themselves.$"
 
 SootopolisCity_Text_ThankYouForHelpAcceptThis:
-	.string "AMALIA: Arauna sobreviveu a\nverdade pela metade por tempo\p"
-	.string "demais. A Liga tambem tem\ndividas com quem foi apagado.$"
+	.string "AMALIA: Arauna has lived on half the\n"
+	.string "truth for far too long. The LEAGUE has\l"
+	.string "debts of its own to the people who were\l"
+	.string "erased.$"
 
 SootopolisCity_Text_ExplainWaterfallGoToGym:
-	.string "Esta HIDDEN MACHINE contém\n"
+	.string "This HIDDEN MACHINE contains\n"
 	.string "WATERFALL.\p"
-	.string "Com a SPRING BADGE,\n"
-	.string "um POKéMON que saiba WATERFALL\l"
-	.string "pode subir cachoeiras.\p"
-	.string "E onde se consegue a\n"
-	.string "SPRING BADGE?\p"
-	.string "Você sabe, nao sabe?\p"
-	.string "Derrotando a LÍDER DE GINÁSIO\n"
-	.string "de ÁGUAS DE M'BOI.\p"
-	.string "Quando estiver pronto, passe\n"
-	.string "por aquela porta.$"
+	.string "With the SPRING BADGE, a POKéMON that\n"
+	.string "knows WATERFALL can climb falling\l"
+	.string "water.\p"
+	.string "And where does one get the SPRING\n"
+	.string "BADGE?\p"
+	.string "You know, don't you?\p"
+	.string "By defeating the GYM LEADER of\n"
+	.string "AGUAS DE M'BOI.\p"
+	.string "When you're ready, go through that\n"
+	.string "door.$"
 
 SootopolisCity_Text_DazzledByMentor:
-	.string "AMALIA: Arauna sobreviveu a\nverdade pela metade por tempo\p"
-	.string "demais. A Liga tambem tem\ndividas com quem foi apagado.$"
+	.string "AMALIA: Arauna has lived on half the\n"
+	.string "truth for far too long. The LEAGUE has\l"
+	.string "debts of its own to the people who were\l"
+	.string "erased.$"

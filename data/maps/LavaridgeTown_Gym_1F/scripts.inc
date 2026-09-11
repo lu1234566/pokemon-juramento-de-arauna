@@ -299,24 +299,27 @@ LavaridgeTown_Gym_B1F_Text_EliPostBattle:
 	.string "Hehehehe.$"
 
 LavaridgeTown_Gym_1F_Text_FlanneryIntro:
-	.string "NARA: Cinza e o que sobra\ndepois do fogo. Nao e o fim de\p"
-	.string "tudo; tambem nao devemos fingir\nque nada queimou.$"
+	.string "NARA: Ash is what is left after the fire.\n"
+	.string "It is not the end of everything, and we\l"
+	.string "should not pretend nothing burned\l"
+	.string "either.$"
 
 LavaridgeTown_Gym_1F_Text_FlanneryDefeat:
-	.string "NARA: Cinza e o que sobra\ndepois do fogo. Nao e o fim de\p"
-	.string "tudo; tambem nao devemos fingir\nque nada queimou.$"
+	.string "NARA: Ash is what is left after the fire.\n"
+	.string "It is not the end of everything, and we\l"
+	.string "should not pretend nothing burned\l"
+	.string "either.$"
 
 LavaridgeTown_Gym_1F_Text_ReceivedHeatBadge:
-	.string "{PLAYER} recebeu a\n"
-	.string "ASH BADGE de NARA.$"
+	.string "{PLAYER} received the ASH BADGE from\n"
+	.string "NARA.$"
 
 LavaridgeTown_Gym_1F_Text_ExplainHeatBadgeTakeThis:
-	.string "Com a ASH BADGE, POKéMON\n"
-	.string "até o nível 50 obedecem,\l"
-	.string "mesmo os recebidos em troca.\p"
-	.string "Ela permite usar STRENGTH\n"
-	.string "fora de batalha.\p"
-	.string "Aceite este presente também!$"
+	.string "With the ASH BADGE, POKéMON up to level\n"
+	.string "50 obey, even ones received in a trade.\p"
+	.string "It lets you use STRENGTH outside\n"
+	.string "battle.\p"
+	.string "Take this gift as well!$"
 
 LavaridgeTown_Gym_1F_Text_ExplainOverheat:
 	.string "That TM50 contains OVERHEAT.\p"
@@ -331,8 +334,10 @@ LavaridgeTown_Gym_1F_Text_RegisteredFlannery:
 	.string "in the POKéNAV.$"
 
 LavaridgeTown_Gym_1F_Text_FlanneryPostBattle:
-	.string "NARA: Cinza e o que sobra\ndepois do fogo. Nao e o fim de\p"
-	.string "tudo; tambem nao devemos fingir\nque nada queimou.$"
+	.string "NARA: Ash is what is left after the fire.\n"
+	.string "It is not the end of everything, and we\l"
+	.string "should not pretend nothing burned\l"
+	.string "either.$"
 
 LavaridgeTown_Gym_1F_Text_GymStatue:
 	.string "SERTAO DE DENTRO POKéMON GYM$"
@@ -343,17 +348,25 @@ LavaridgeTown_Gym_1F_Text_GymStatueCertified:
 	.string "{PLAYER}$"
 
 LavaridgeTown_Gym_1F_Text_FlanneryPreRematch:
-	.string "NARA: Cinza e o que sobra\ndepois do fogo. Nao e o fim de\p"
-	.string "tudo; tambem nao devemos fingir\nque nada queimou.$"
+	.string "NARA: Ash is what is left after the fire.\n"
+	.string "It is not the end of everything, and we\l"
+	.string "should not pretend nothing burned\l"
+	.string "either.$"
 
 LavaridgeTown_Gym_1F_Text_FlanneryRematchDefeat:
-	.string "NARA: Cinza e o que sobra\ndepois do fogo. Nao e o fim de\p"
-	.string "tudo; tambem nao devemos fingir\nque nada queimou.$"
+	.string "NARA: Ash is what is left after the fire.\n"
+	.string "It is not the end of everything, and we\l"
+	.string "should not pretend nothing burned\l"
+	.string "either.$"
 
 LavaridgeTown_Gym_1F_Text_FlanneryPostRematch:
-	.string "NARA: Cinza e o que sobra\ndepois do fogo. Nao e o fim de\p"
-	.string "tudo; tambem nao devemos fingir\nque nada queimou.$"
+	.string "NARA: Ash is what is left after the fire.\n"
+	.string "It is not the end of everything, and we\l"
+	.string "should not pretend nothing burned\l"
+	.string "either.$"
 
 LavaridgeTown_Gym_1F_Text_FlanneryRematchNeedTwoMons:
-	.string "NARA: Cinza e o que sobra\ndepois do fogo. Nao e o fim de\p"
-	.string "tudo; tambem nao devemos fingir\nque nada queimou.$"
+	.string "NARA: Ash is what is left after the fire.\n"
+	.string "It is not the end of everything, and we\l"
+	.string "should not pretend nothing burned\l"
+	.string "either.$"

@@ -32,76 +32,74 @@ VictoryRoad_B2F_EventScript_Dianne::
 	end
 
 VictoryRoad_B2F_Text_VitoIntro:
-	.string "Treinei com toda minha familia.\n"
-	.string "Nao vou perder para ninguem!$"
+	.string "I trained with my whole family. I'm not\n"
+	.string "losing to anyone!$"
 
 VictoryRoad_B2F_Text_VitoDefeat:
-	.string "Melhor que toda minha familia?!\n"
-	.string "Isso e possivel?!$"
+	.string "Better than my whole family?! Is that\n"
+	.string "even possible?!$"
 
 VictoryRoad_B2F_Text_VitoPostBattle:
-	.string "Eu era o melhor da familia\n"
-	.string "e nunca tinha perdido...\p"
-	.string "Acho que perdi a confianca.\n"
-	.string "Talvez eu volte para casa.$"
+	.string "I was the best in my family and I had\n"
+	.string "never lost...\p"
+	.string "I think I've lost my nerve. Maybe I'll go\n"
+	.string "home.$"
 
 VictoryRoad_B2F_Text_OwenIntro:
-	.string "Ouvi falar de um jovem durao.\n"
-	.string "Entao era voce?$"
+	.string "I heard about some tough young\n"
+	.string "TRAINER. So that was you?$"
 
 VictoryRoad_B2F_Text_OwenDefeat:
-	.string "O baixinho e forte!$"
+	.string "The little one is strong!$"
 
 VictoryRoad_B2F_Text_OwenPostBattle:
-	.string "Entao os boatos eram verdade.\n"
-	.string "Aquele jovem forte veio da\n"
+	.string "So the rumors were true. That strong\n"
+	.string "young TRAINER came from\l"
 	.string "VILA AMANHECER.$"
 
 VictoryRoad_B2F_Text_CarolineIntro:
-	.string "Voce deve estar ficando cansado.$"
+	.string "You must be getting tired.$"
 
 VictoryRoad_B2F_Text_CarolineDefeat:
-	.string "Nem sinal de cansaco!$"
+	.string "Not a sign of tiredness!$"
 
 VictoryRoad_B2F_Text_CarolinePostBattle:
-	.string "A ESTRADA DO JURAMENTO e a LEAGUE\n"
-	.string "sao desafios longos.\p"
-	.string "Nao deixe o cansaco vencer.$"
+	.string "ESTRADA DO JURAMENTO and the LEAGUE\n"
+	.string "are both long challenges.\p"
+	.string "Do not let tiredness win.$"
 
 VictoryRoad_B2F_Text_JulieIntro:
-	.string "Nao se acomode so porque\n"
-	.string "conquistou muitas INSIGNIAS.\p"
-	.string "Sempre existe alguem melhor.$"
+	.string "Don't get comfortable just because\n"
+	.string "you've won a lot of BADGES.\p"
+	.string "There's always someone better.$"
 
 VictoryRoad_B2F_Text_JulieDefeat:
-	.string "Voce e melhor do que eu!$"
+	.string "You're better than me!$"
 
 VictoryRoad_B2F_Text_JuliePostBattle:
-	.string "Olhe para suas INSIGNIAS e\n"
-	.string "lembre dos TRAINERS que venceu.$"
+	.string "Look at your BADGES and remember the\n"
+	.string "TRAINERS you beat.$"
 
 VictoryRoad_B2F_Text_FelixIntro:
-	.string "Cheguei longe, mas a tensao\n"
-	.string "esta atacando meu estomago...$"
+	.string "I got a long way, but the tension is\n"
+	.string "going straight to my stomach...$"
 
 VictoryRoad_B2F_Text_FelixDefeat:
-	.string "Ai...\n"
-	.string "Isso doi...$"
+	.string "Ow... That hurts...$"
 
 VictoryRoad_B2F_Text_FelixPostBattle:
-	.string "Fico tenso so de pensar que\n"
-	.string "estou perto da LEAGUE.\p"
-	.string "So consigo fingir calma.$"
+	.string "Just thinking about how close the\n"
+	.string "LEAGUE is makes me tense.\p"
+	.string "All I can do is pretend to be calm.$"
 
 VictoryRoad_B2F_Text_DianneIntro:
-	.string "Os melhores chegam ate esta\n"
-	.string "caverna.\p"
-	.string "E entao, o que esta achando?$"
+	.string "The best of them make it as far as this\n"
+	.string "cave.\p"
+	.string "So then, what do you make of it?$"
 
 VictoryRoad_B2F_Text_DianneDefeat:
-	.string "Voce nem se abalou!$"
+	.string "You didn't even flinch!$"
 
 VictoryRoad_B2F_Text_DiannePostBattle:
-	.string "Voce tem coragem! Gostei!\n"
-	.string "Continue assim!$"
+	.string "You've got nerve! I like it! Keep it up!$"
 

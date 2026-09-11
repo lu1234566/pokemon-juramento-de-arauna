@@ -71,11 +71,10 @@ SlateportCity_SternsShipyard_1F_Text_CantMakeHeadsOrTails:
 	.string "of this!$"
 
 SlateportCity_SternsShipyard_1F_Text_MeetDockDeliverToStern:
-	.string "HORIZON: O projeto de M'BOI\n"
-	.string "foi um desastre. O ARCHIVE\p"
-	.string "atual existe justamente porque\n"
-	.string "aprendemos com ele. E o que\p"
-	.string "consta nos relatorios.$"
+	.string "HORIZON: The M'BOI project was a\n"
+	.string "disaster. The present ARCHIVE exists\l"
+	.string "precisely because we learned from it.\l"
+	.string "That is what the reports say.$"
 
 SlateportCity_SternsShipyard_1F_Text_CouldYouFindStern:
 	.string "DOCK: Where could CAPT. STERN have\n"

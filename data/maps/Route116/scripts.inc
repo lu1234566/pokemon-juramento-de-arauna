@@ -420,8 +420,9 @@ Route116_Text_CanYouHelpMeFindGlasses:
 	.string "Can you help me find them?$"
 
 Route116_Text_MayISeeThoseGlasses:
-	.string "CIRO: Voce continua olhando\npara cada cicatriz como se ela\p"
-	.string "fosse uma resposta. Eu quero\nsaber o que existe depois dela.$"
+	.string "CIRO: You keep looking at every scar as\n"
+	.string "if it were an answer. I want to know\l"
+	.string "what comes after it.$"
 
 Route116_Text_NotWhatImLookingForMaybeTheyArentHere:
 	.string "Hmm…\n"

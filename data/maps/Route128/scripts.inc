@@ -242,56 +242,52 @@ Route128_EventScript_Carlee::
 	end
 
 Route128_Text_ArchieWhatHappened:
-	.string "OTACILIO: Eu vi o que uma\n"
-	.string "memoria pode fazer com quem\p"
-	.string "sobrevive. O LIVING ARCHIVE\n"
-	.string "existe para que ninguem seja\p"
-	.string "condenado a carregar a pior\n"
-	.string "noite da propria vida para\p"
-	.string "sempre.$"
+	.string "OTACILIO: I have seen what one memory\n"
+	.string "can do to the person who survives it.\l"
+	.string "The LIVING ARCHIVE exists so that\l"
+	.string "nobody is sentenced to carry the worst\l"
+	.string "night of their life forever.$"
 
 Route128_Text_ArchieIOnlyWanted:
-	.string "OTACILIO: Preservar tudo nao e\ncompaixao. As vezes e apenas\p"
-	.string "obrigar uma ferida a continuar\naberta e chamar isso de\p"
-	.string "respeito.$"
+	.string "OTACILIO: Preserving everything is not\n"
+	.string "compassion. Sometimes it is only\l"
+	.string "forcing a wound to stay open and\l"
+	.string "calling that respect.$"
 
 Route128_Text_MaxieDoYouUnderstandNow:
-	.string "LUZIA: O problema nunca foi\nlembrar demais. Foi deixar quem\p"
-	.string "tem poder decidir quais\nlembrancas os outros podem\p"
-	.string "conservar.$"
+	.string "LUZIA: The problem was never\n"
+	.string "remembering too much. It was letting\l"
+	.string "whoever holds power decide which\l"
+	.string "memories the rest may keep.$"
 
 Route128_Text_MaxieResposibilityFallsToArchieAndMe:
-	.string "OTACILIO: Eu vi o que uma\n"
-	.string "memoria pode fazer com quem\p"
-	.string "sobrevive. O LIVING ARCHIVE\n"
-	.string "existe para que ninguem seja\p"
-	.string "condenado a carregar a pior\n"
-	.string "noite da propria vida para\p"
-	.string "sempre.$"
+	.string "OTACILIO: I have seen what one memory\n"
+	.string "can do to the person who survives it.\l"
+	.string "The LIVING ARCHIVE exists so that\l"
+	.string "nobody is sentenced to carry the worst\l"
+	.string "night of their life forever.$"
 
 Route128_Text_MaxieThisDefiesBelief:
-	.string "LUZIA: O problema nunca foi\nlembrar demais. Foi deixar quem\p"
-	.string "tem poder decidir quais\nlembrancas os outros podem\p"
-	.string "conservar.$"
+	.string "LUZIA: The problem was never\n"
+	.string "remembering too much. It was letting\l"
+	.string "whoever holds power decide which\l"
+	.string "memories the rest may keep.$"
 
 Route128_Text_StevenWhatIsHappening:
-	.string "MR. BENTO: Quando um nome some\n"
-	.string "da boca das pessoas, eu\p"
-	.string "escrevo. Nao para substituir\n"
-	.string "quem lembra; para deixar uma\p"
-	.string "pista.$"
+	.string "MR. BENTO: When a name falls out of\n"
+	.string "people's mouths, I write it down. Not to\l"
+	.string "replace whoever remembers it. To leave\l"
+	.string "a trail.$"
 
 Route128_Text_StevenWholeWorldWillDrown:
-	.string "MR. BENTO: Quando um nome some\n"
-	.string "da boca das pessoas, eu\p"
-	.string "escrevo. Nao para substituir\n"
-	.string "quem lembra; para deixar uma\p"
-	.string "pista.$"
+	.string "MR. BENTO: When a name falls out of\n"
+	.string "people's mouths, I write it down. Not to\l"
+	.string "replace whoever remembers it. To leave\l"
+	.string "a trail.$"
 
 Route128_Text_StevenImGoingToSootopolis:
-	.string "MR. BENTO: Quando um nome some\n"
-	.string "da boca das pessoas, eu\p"
-	.string "escrevo. Nao para substituir\n"
-	.string "quem lembra; para deixar uma\p"
-	.string "pista.$"
+	.string "MR. BENTO: When a name falls out of\n"
+	.string "people's mouths, I write it down. Not to\l"
+	.string "replace whoever remembers it. To leave\l"
+	.string "a trail.$"
 

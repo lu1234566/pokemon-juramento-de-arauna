@@ -333,23 +333,25 @@ MauvilleCity_Gym_Text_AngeloPostBattle:
 	.string "forehead. It makes me happy!$"
 
 MauvilleCity_Gym_Text_WattsonIntro:
-	.string "OLIVIA: Energia move uma\ncidade. Isso nao significa que\p"
-	.string "toda fonte de energia deva ser\naceita.$"
+	.string "OLIVIA: Power moves a city. That does\n"
+	.string "not mean every source of power should\l"
+	.string "be accepted.$"
 
 MauvilleCity_Gym_Text_WattsonDefeat:
-	.string "OLIVIA: Energia move uma\ncidade. Isso nao significa que\p"
-	.string "toda fonte de energia deva ser\naceita.$"
+	.string "OLIVIA: Power moves a city. That does\n"
+	.string "not mean every source of power should\l"
+	.string "be accepted.$"
 
 MauvilleCity_Gym_Text_ReceivedDynamoBadge:
-	.string "{PLAYER} recebeu a\n"
-	.string "BEACON BADGE de OLIVIA.$"
+	.string "{PLAYER} received the BEACON BADGE\n"
+	.string "from OLIVIA.$"
 
 MauvilleCity_Gym_Text_ExplainDynamoBadgeTakeThis:
-	.string "A BEACON BADGE permite usar\n"
-	.string "ROCK SMASH fora de batalha.\p"
-	.string "Ela também aumenta um pouco a\n"
-	.string "VELOCIDADE dos seus POKéMON.\p"
-	.string "Leve isto também!$"
+	.string "The BEACON BADGE lets you use ROCK\n"
+	.string "SMASH outside battle.\p"
+	.string "It also raises your POKéMON's SPEED a\n"
+	.string "little.\p"
+	.string "Take this as well!$"
 
 MauvilleCity_Gym_Text_ExplainShockWave:
 	.string "That TM34 there contains SHOCK WAVE.\p"
@@ -362,12 +364,14 @@ MauvilleCity_Gym_Text_RegisteredWattson:
 	.string "in the POKéNAV.$"
 
 MauvilleCity_Gym_Text_WattsonPostBattle:
-	.string "OLIVIA: Energia move uma\ncidade. Isso nao significa que\p"
-	.string "toda fonte de energia deva ser\naceita.$"
+	.string "OLIVIA: Power moves a city. That does\n"
+	.string "not mean every source of power should\l"
+	.string "be accepted.$"
 
 MauvilleCity_Gym_Text_WattsonGoForthAndEndeavor:
-	.string "OLIVIA: Energia move uma\ncidade. Isso nao significa que\p"
-	.string "toda fonte de energia deva ser\naceita.$"
+	.string "OLIVIA: Power moves a city. That does\n"
+	.string "not mean every source of power should\l"
+	.string "be accepted.$"
 
 MauvilleCity_Gym_Text_GymStatue:
 	.string "ENCRUZILHADA POKéMON GYM$"
@@ -378,18 +382,22 @@ MauvilleCity_Gym_Text_GymStatueCertified:
 	.string "{PLAYER}$"
 
 MauvilleCity_Gym_Text_WattsonPreRematch:
-	.string "OLIVIA: Energia move uma\ncidade. Isso nao significa que\p"
-	.string "toda fonte de energia deva ser\naceita.$"
+	.string "OLIVIA: Power moves a city. That does\n"
+	.string "not mean every source of power should\l"
+	.string "be accepted.$"
 
 MauvilleCity_Gym_Text_WattsonRematchDefeat:
-	.string "OLIVIA: Energia move uma\ncidade. Isso nao significa que\p"
-	.string "toda fonte de energia deva ser\naceita.$"
+	.string "OLIVIA: Power moves a city. That does\n"
+	.string "not mean every source of power should\l"
+	.string "be accepted.$"
 
 MauvilleCity_Gym_Text_WattsonPostRematch:
-	.string "OLIVIA: Energia move uma\ncidade. Isso nao significa que\p"
-	.string "toda fonte de energia deva ser\naceita.$"
+	.string "OLIVIA: Power moves a city. That does\n"
+	.string "not mean every source of power should\l"
+	.string "be accepted.$"
 
 MauvilleCity_Gym_Text_WattsonRematchNeedTwoMons:
-	.string "OLIVIA: Energia move uma\ncidade. Isso nao significa que\p"
-	.string "toda fonte de energia deva ser\naceita.$"
+	.string "OLIVIA: Power moves a city. That does\n"
+	.string "not mean every source of power should\l"
+	.string "be accepted.$"
 

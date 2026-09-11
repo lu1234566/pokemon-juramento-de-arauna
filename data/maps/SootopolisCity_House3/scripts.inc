@@ -20,10 +20,10 @@ SootopolisCity_House3_EventScript_Girl::
 	end
 
 SootopolisCity_House3_Text_JuanHasManyFansDoYou:
-	.string "MRS. CELINA: Viver e aprender o\n"
-	.string "que guardar e o que deixar\p"
-	.string "seguir. Escolher isso pelo\n"
-	.string "outro e que nao cabe a nos.$"
+	.string "MRS. CELINA: Living is learning what to\n"
+	.string "keep and what to let go. Choosing that\l"
+	.string "for someone else is what is not ours to\l"
+	.string "do.$"
 
 SootopolisCity_House3_Text_YouMustBePrettyStrong:
 	.string "Oh, then you must be pretty strong.$"

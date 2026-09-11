@@ -137,26 +137,25 @@ SkyPillar_Outside_EventScript_ClosedDoor::
 	end
 
 SkyPillar_Outside_Text_DoorIsClosed:
-	.string "A porta esta fechada.$"
+	.string "The door is shut.$"
 
 SkyPillar_Outside_Text_OpenedDoorToSkyPillar:
-	.string "AMALIA: Abri a entrada.\p"
-	.string "A TORRE JURAMENTO reage ao\n"
-	.string "clima que cobre ARAUNA.\p"
-	.string "Vamos subir antes que piore.$"
+	.string "AMALIA: I have opened the way in.\p"
+	.string "TORRE JURAMENTO answers the weather\n"
+	.string "sitting over ARAUNA.\p"
+	.string "Let us climb before it worsens.$"
 
 SkyPillar_Outside_Text_EarthquakeNotMomentToWaste:
-	.string "AMALIA: Um tremor!\p"
-	.string "A situacao esta piorando.\n"
-	.string "Precisamos subir.$"
+	.string "AMALIA: A tremor!\p"
+	.string "It is getting worse. We need to climb.$"
 
 SkyPillar_Outside_Text_SituationGettingWorse:
-	.string "AMALIA: Espere...\p"
-	.string "O clima mudou de novo.\n"
-	.string "Algo mudou em AGUAS DE M'BOI.$"
+	.string "AMALIA: Wait...\p"
+	.string "The weather has turned again.\n"
+	.string "Something has changed at\l"
+	.string "AGUAS DE M'BOI.$"
 
 SkyPillar_Outside_Text_GotToGoBackForSootopolis:
-	.string "AMALIA: Eu preciso voltar\n"
-	.string "para AGUAS DE M'BOI.\p"
-	.string "Voce continua subindo.\n"
-	.string "Encontre Curupixel.$"
+	.string "AMALIA: I have to get back to\n"
+	.string "AGUAS DE M'BOI.\p"
+	.string "You keep climbing. Find Curupixel.$"

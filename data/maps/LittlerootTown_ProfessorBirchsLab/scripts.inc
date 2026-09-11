@@ -713,13 +713,13 @@ LittlerootTown_ProfessorBirchsLab_Text_HeardYouBeatRivalTakePokedex:
 	.string "POKéDEX and record what you find.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_ReceivedPokedex:
-	.string "{PLAYER} recebeu a POKéDEX!$"
+	.string "{PLAYER} received the POKéDEX!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_ExplainPokedex:
 	.string "ANAHI: The POKéDEX records species and\n"
 	.string "encounters. I want something else too:\l"
 	.string "note memory lapses, changes in\l"
-	.string "behaviour, and any sign of\l"
+	.string "behavior, and any sign of\l"
 	.string "DISENCHANTMENT.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_CountlessPokemonAwait:
@@ -773,13 +773,13 @@ LittlerootTown_ProfessorBirchsLab_Text_SeriousLookingMachine:
 
 LittlerootTown_ProfessorBirchsLab_Text_PCUsedForResearch:
 	.string "The PC holds field data on POKéMON that\n"
-	.string "stopped recognising familiar places and\l"
+	.string "stopped recognizing familiar places and\l"
 	.string "people.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_CrammedWithBooksOnPokemon:
 	.string "Field notebooks share the shelf with\n"
 	.string "books on memory, grief and POKéMON\l"
-	.string "behaviour.$"
+	.string "behavior.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BookTooHardToRead:
 	.string "The notes mix POKéMON neurology, BOND\n"

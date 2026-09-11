@@ -10,12 +10,14 @@ PetalburgCity_House2_EventScript_SchoolKid::
 	end
 
 PetalburgCity_House2_Text_NormanBecameGymLeader:
-	.string "ELIAS: Algumas culpas nao\ndesaparecem quando ficamos em\p"
-	.string "silencio. Eu aprovei parte do\nprojeto de M'BOI e passei anos\p"
-	.string "chamando meu medo de prudencia.$"
+	.string "ELIAS: Some guilt does not go away when\n"
+	.string "we keep quiet. I signed off on part of\l"
+	.string "the M'BOI project, then spent years\l"
+	.string "calling my fear prudence.$"
 
 PetalburgCity_House2_Text_BattledNormanOnce:
-	.string "ELIAS: Ser seu pai nunca me deu\no direito de escolher que\p"
-	.string "verdade voce podia suportar.\nDemorei demais para entender\p"
-	.string "isso.$"
+	.string "ELIAS: Being your father never gave me\n"
+	.string "the right to choose which truth you\l"
+	.string "could bear. It took me far too long to\l"
+	.string "understand that.$"
 

@@ -80,12 +80,11 @@ EverGrandeCity_HallOfFame_Movement_WalkIntoHallOfFame2:
 	step_end
 
 EverGrandeCity_HallOfFame_Text_HereWeHonorLeagueChampions:
-	.string "AMALIA: A Liga registra quem\n"
-	.string "chega ate aqui sem apagar\p"
-	.string "as marcas do caminho.$"
+	.string "AMALIA: The LEAGUE keeps a record of\n"
+	.string "everyone who gets here without erasing\l"
+	.string "the marks the road left on them.$"
 
 EverGrandeCity_HallOfFame_Text_LetsRecordYouAndYourPartnersNames:
-	.string "AMALIA: Seu nome e o dos seus\n"
-	.string "parceiros entram agora\p"
-	.string "na memoria de Arauna.$"
+	.string "AMALIA: Your name and your partners'\n"
+	.string "names enter the memory of Arauna now.$"
 

@@ -287,39 +287,50 @@ Route103_EventScript_Isabelle::
 	end
 
 Route103_Text_MayRoute103Pokemon:
-	.string "CIRO: Se os dados estiverem\n"
-	.string "certos, o DISENCHANTMENT pode ser\p"
-	.string "tratado. Eu prefiro testar uma\n"
-	.string "resposta a transformar\p"
-	.string "sofrimento em tradicao.$"
+	.string "CIRO: If the data is right,\n"
+	.string "DISENCHANTMENT can be treated. I would\l"
+	.string "rather test an answer than turn\l"
+	.string "suffering into tradition.$"
 
 Route103_Text_MayLetsBattle:
-	.string "CIRO: Nao confunda minha pressa\ncom falta de memoria. Eu lembro\p"
-	.string "o bastante para saber que nao\nquero viver preso ao que perdi.$"
+	.string "CIRO: Do not mistake my hurry for a bad\n"
+	.string "memory. I remember enough to know I do\l"
+	.string "not want to live shackled to what I\l"
+	.string "lost.$"
 
 Route103_Text_MayDefeated:
-	.string "CIRO: Nao confunda minha pressa\ncom falta de memoria. Eu lembro\p"
-	.string "o bastante para saber que nao\nquero viver preso ao que perdi.$"
+	.string "CIRO: Do not mistake my hurry for a bad\n"
+	.string "memory. I remember enough to know I do\l"
+	.string "not want to live shackled to what I\l"
+	.string "lost.$"
 
 Route103_Text_MayTimeToHeadBack:
-	.string "CIRO: Voce continua olhando\npara cada cicatriz como se ela\p"
-	.string "fosse uma resposta. Eu quero\nsaber o que existe depois dela.$"
+	.string "CIRO: You keep looking at every scar as\n"
+	.string "if it were an answer. I want to know\l"
+	.string "what comes after it.$"
 
 Route103_Text_BrendanRoute103Pokemon:
-	.string "CIRO: Nao confunda minha pressa\ncom falta de memoria. Eu lembro\p"
-	.string "o bastante para saber que nao\nquero viver preso ao que perdi.$"
+	.string "CIRO: Do not mistake my hurry for a bad\n"
+	.string "memory. I remember enough to know I do\l"
+	.string "not want to live shackled to what I\l"
+	.string "lost.$"
 
 Route103_Text_BrendanLetsBattle:
-	.string "CIRO: Nao confunda minha pressa\ncom falta de memoria. Eu lembro\p"
-	.string "o bastante para saber que nao\nquero viver preso ao que perdi.$"
+	.string "CIRO: Do not mistake my hurry for a bad\n"
+	.string "memory. I remember enough to know I do\l"
+	.string "not want to live shackled to what I\l"
+	.string "lost.$"
 
 Route103_Text_BrendanDefeated:
-	.string "CIRO: Voce continua olhando\npara cada cicatriz como se ela\p"
-	.string "fosse uma resposta. Eu quero\nsaber o que existe depois dela.$"
+	.string "CIRO: You keep looking at every scar as\n"
+	.string "if it were an answer. I want to know\l"
+	.string "what comes after it.$"
 
 Route103_Text_BrendanTimeToHeadBack:
-	.string "CIRO: Nao confunda minha pressa\ncom falta de memoria. Eu lembro\p"
-	.string "o bastante para saber que nao\nquero viver preso ao que perdi.$"
+	.string "CIRO: Do not mistake my hurry for a bad\n"
+	.string "memory. I remember enough to know I do\l"
+	.string "not want to live shackled to what I\l"
+	.string "lost.$"
 
 Route103_Text_ShouldHaveBroughtPotion:
 	.string "My POKéMON is staggeringly tired…\n"

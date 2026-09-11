@@ -80,35 +80,33 @@ GraniteCave_StevensRoom_Movement_StevenExitSouth:
 	step_end
 
 GraniteCave_StevensRoom_Text_ImStevenLetterForMe:
-	.string "MR. BENTO: Quando um nome some\n"
-	.string "da boca das pessoas, eu\p"
-	.string "escrevo. Nao para substituir\n"
-	.string "quem lembra; para deixar uma\p"
-	.string "pista.$"
+	.string "MR. BENTO: When a name falls out of\n"
+	.string "people's mouths, I write it down. Not to\l"
+	.string "replace whoever remembers it. To leave\l"
+	.string "a trail.$"
 
 GraniteCave_StevensRoom_Text_ThankYouTakeThis:
-	.string "MR. BENTO: Quando um nome some\n"
-	.string "da boca das pessoas, eu\p"
-	.string "escrevo. Nao para substituir\n"
-	.string "quem lembra; para deixar uma\p"
-	.string "pista.$"
+	.string "MR. BENTO: When a name falls out of\n"
+	.string "people's mouths, I write it down. Not to\l"
+	.string "replace whoever remembers it. To leave\l"
+	.string "a trail.$"
 
 GraniteCave_StevensRoom_Text_CouldBecomeChampionLetsRegister:
-	.string "MR. BENTO: Voce presta atencao.\p"
-	.string "Isso vale mais que pressa.\p"
-	.string "Registre meu contato no POKéNAV.\p"
-	.string "Se eu achar outro nome perdido,\n"
-	.string "aviso voce.$"
+	.string "MR. BENTO: You pay attention.\p"
+	.string "That's worth more than speed.\p"
+	.string "Register my contact in the POKéNAV.\p"
+	.string "If I turn up another lost name, you'll\n"
+	.string "hear it from me.$"
 
 GraniteCave_StevensRoom_Text_RegisteredSteven:
-	.string "MR. BENTO foi registrado\n"
-	.string "no POKéNAV.$"
+	.string "MR. BENTO was registered in the\n"
+	.string "POKéNAV.$"
 
 GraniteCave_StevensRoom_Text_IveGotToHurryAlong:
-	.string "MR. BENTO: Ainda tenho cadernos\n"
-	.string "para conferir. A gente se ve.$"
+	.string "MR. BENTO: I still have notebooks to go\n"
+	.string "through. I'll see you around.$"
 
 GraniteCave_StevensRoom_Text_OhBagIsFull:
-	.string "MR. BENTO: Sua mochila esta cheia.\n"
-	.string "Guarde espaco e volte aqui.$"
+	.string "MR. BENTO: Your BAG is full. Make some\n"
+	.string "room and come back.$"
 

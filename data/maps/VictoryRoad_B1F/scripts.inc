@@ -27,63 +27,59 @@ VictoryRoad_B1F_EventScript_Halle::
 	end
 
 VictoryRoad_B1F_Text_SamuelIntro:
-	.string "Quanto mais perto da LEAGUE fico,\n"
-	.string "mais nervoso eu me sinto...$"
+	.string "The closer I get to the LEAGUE, the\n"
+	.string "more nervous I feel...$"
 
 VictoryRoad_B1F_Text_SamuelDefeat:
-	.string "Eu nao consegui fazer nada...$"
+	.string "I couldn't do a thing...$"
 
 VictoryRoad_B1F_Text_SamuelPostBattle:
-	.string "A LEAGUE parece longe de novo...\n"
-	.string "Que decepcao...$"
+	.string "The LEAGUE feels far away again... How\n"
+	.string "disappointing...$"
 
 VictoryRoad_B1F_Text_ShannonIntro:
-	.string "Na LEAGUE, voce precisa\n"
-	.string "da confianca dos seus POKéMON.$"
+	.string "At the LEAGUE, you need your POKéMON\n"
+	.string "to trust you.$"
 
 VictoryRoad_B1F_Text_ShannonDefeat:
-	.string "A confianca entre voces e forte.$"
+	.string "The trust between you two is strong.$"
 
 VictoryRoad_B1F_Text_ShannonPostBattle:
-	.string "Quanto mais tempo passam juntos,\n"
-	.string "mais cresce a confianca entre\n"
-	.string "TRAINER e POKéMON.$"
+	.string "The longer they spend together, the\n"
+	.string "more trust grows between a TRAINER and\l"
+	.string "a POKéMON.$"
 
 VictoryRoad_B1F_Text_MichelleIntro:
-	.string "Isto nao e a chegada.\n"
-	.string "E so mais um passo ate a LEAGUE.$"
+	.string "This isn't the finish. It's one more step\n"
+	.string "toward the LEAGUE.$"
 
 VictoryRoad_B1F_Text_MichelleDefeat:
-	.string "Esse e o caminho!$"
+	.string "That's the way!$"
 
 VictoryRoad_B1F_Text_MichellePostBattle:
-	.string "Voce vai ficar bem!\n"
-	.string "Seus POKéMON estao prontos.$"
+	.string "You'll be fine! Your POKéMON are ready.$"
 
 VictoryRoad_B1F_Text_MitchellIntro:
-	.string "Meus POKéMON sao uma forca\n"
-	.string "de outro mundo!$"
+	.string "My POKéMON are a force from another\n"
+	.string "world!$"
 
 VictoryRoad_B1F_Text_MitchellDefeat:
-	.string "Nunca enfrentei alguem assim.$"
+	.string "I've never faced anyone like that.$"
 
 VictoryRoad_B1F_Text_MitchellPostBattle:
-	.string "Mesmo fora de batalha, da para\n"
-	.string "sentir a forca que existe entre\n"
-	.string "voce e seus POKéMON.$"
+	.string "Even outside battle, you can feel the\n"
+	.string "strength between you and your POKéMON.$"
 
 VictoryRoad_B1F_Text_HalleIntro:
-	.string "Ei, relaxe um pouco!\n"
-	.string "Vamos lutar sem tanta tensao.$"
+	.string "Hey, loosen up a little! Let's battle\n"
+	.string "without all that tension.$"
 
 VictoryRoad_B1F_Text_HalleDefeat:
-	.string "Uau!\n"
-	.string "Que maravilha!$"
+	.string "Wow! How wonderful!$"
 
 VictoryRoad_B1F_Text_HallePostBattle:
-	.string "Sim, esta e a ESTRADA DO\n"
-	.string "JURAMENTO.\p"
-	.string "Mas ela nao e tao diferente\n"
-	.string "do caminho que trouxe voce ate\n"
-	.string "aqui. Aproveite o restante!$"
+	.string "Yes, this is ESTRADA DO JURAMENTO.\p"
+	.string "But it isn't so different from the road\n"
+	.string "that brought you here. Enjoy the rest\l"
+	.string "of it!$"
 

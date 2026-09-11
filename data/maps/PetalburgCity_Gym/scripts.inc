@@ -1150,24 +1150,31 @@ PetalburgCity_Gym_Text_DadYoureHereWithYourPokemon:
 	.string "I'll be looking forward to it!$"
 
 PetalburgCity_Gym_Text_WallyIdLikeAPokemon:
-	.string "VAL: Passei muito tempo achando\nque precisava virar outra\p"
-	.string "pessoa para seguir viagem. Eu\nso precisava descobrir meu\p"
-	.string "proprio ritmo.$"
+	.string "VAL: I spent a long time thinking I had\n"
+	.string "to become someone else to keep\l"
+	.string "traveling. All I had to find was my own\l"
+	.string "pace.$"
 
 PetalburgCity_Gym_Text_DadOhYoureWallyRight:
-	.string "VAL: Eu ainda tenho medo. Mas\nagora sei que coragem nao e\p"
-	.string "esquecer o medo; e caminhar\nmesmo lembrando dele.$"
+	.string "VAL: I am still afraid. But I know now\n"
+	.string "that courage is not forgetting the\l"
+	.string "fear. It is walking on while you\l"
+	.string "remember it.$"
 
 PetalburgCity_Gym_Text_WallyIveNeverCaughtAPokemon:
-	.string "VAL: Eu ainda tenho medo. Mas\nagora sei que coragem nao e\p"
-	.string "esquecer o medo; e caminhar\nmesmo lembrando dele.$"
+	.string "VAL: I am still afraid. But I know now\n"
+	.string "that courage is not forgetting the\l"
+	.string "fear. It is walking on while you\l"
+	.string "remember it.$"
 
 PetalburgCity_Gym_Text_DadHmISee:
 	.string "DAD: Hm. I see.$"
 
 PetalburgCity_Gym_Text_DadPlayerGoWithWally:
-	.string "VAL: Eu ainda tenho medo. Mas\nagora sei que coragem nao e\p"
-	.string "esquecer o medo; e caminhar\nmesmo lembrando dele.$"
+	.string "VAL: I am still afraid. But I know now\n"
+	.string "that courage is not forgetting the\l"
+	.string "fear. It is walking on while you\l"
+	.string "remember it.$"
 
 PetalburgCity_Gym_Text_IllLoanYouMyZigzagoon:
 	.string "VAL, here, I'll loan you my POKéMON.\p"
@@ -1181,8 +1188,10 @@ PetalburgCity_Gym_Text_WallyThankYouAndDadGivesPokeBall:
 	.string "VAL received a POKé BALL!$"
 
 PetalburgCity_Gym_Text_WallyOhWowThankYou:
-	.string "VAL: Eu ainda tenho medo. Mas\nagora sei que coragem nao e\p"
-	.string "esquecer o medo; e caminhar\nmesmo lembrando dele.$"
+	.string "VAL: I am still afraid. But I know now\n"
+	.string "that courage is not forgetting the\l"
+	.string "fear. It is walking on while you\l"
+	.string "remember it.$"
 
 PetalburgCity_Gym_Text_WouldYouReallyComeWithMe:
 	.string "{PLAYER}… Would you really come\n"
@@ -1192,8 +1201,10 @@ PetalburgCity_Gym_Text_DadSoDidItWorkOut:
 	.string "DAD: So, did it work out?$"
 
 PetalburgCity_Gym_Text_WallyThankYouBye:
-	.string "VAL: Eu ainda tenho medo. Mas\nagora sei que coragem nao e\p"
-	.string "esquecer o medo; e caminhar\nmesmo lembrando dele.$"
+	.string "VAL: I am still afraid. But I know now\n"
+	.string "that courage is not forgetting the\l"
+	.string "fear. It is walking on while you\l"
+	.string "remember it.$"
 
 PetalburgCity_Gym_Text_DadGoCollectBadges:
 	.string "DAD: Now…\p"
@@ -1213,14 +1224,16 @@ PetalburgCity_Gym_Text_DadGoCollectBadges:
 	.string "stronger.$"
 
 PetalburgCity_Gym_Text_NormanGoToRustboro:
-	.string "ELIAS: Ser seu pai nunca me deu\no direito de escolher que\p"
-	.string "verdade voce podia suportar.\nDemorei demais para entender\p"
-	.string "isso.$"
+	.string "ELIAS: Being your father never gave me\n"
+	.string "the right to choose which truth you\l"
+	.string "could bear. It took me far too long to\l"
+	.string "understand that.$"
 
 PetalburgCity_Gym_Text_NormanGoToDewford:
-	.string "ELIAS: Algumas culpas nao\ndesaparecem quando ficamos em\p"
-	.string "silencio. Eu aprovei parte do\nprojeto de M'BOI e passei anos\p"
-	.string "chamando meu medo de prudencia.$"
+	.string "ELIAS: Some guilt does not go away when\n"
+	.string "we keep quiet. I signed off on part of\l"
+	.string "the M'BOI project, then spent years\l"
+	.string "calling my fear prudence.$"
 
 PetalburgCity_Gym_Text_YouHaveGottenStronger:
 	.string "DAD: Hm… {PLAYER}, you have gotten\n"
@@ -1229,26 +1242,27 @@ PetalburgCity_Gym_Text_YouHaveGottenStronger:
 	.string "that you've earned.$"
 
 PetalburgCity_Gym_Text_NormanIntro:
-	.string "ELIAS: Algumas culpas nao\ndesaparecem quando ficamos em\p"
-	.string "silencio. Eu aprovei parte do\nprojeto de M'BOI e passei anos\p"
-	.string "chamando meu medo de prudencia.$"
+	.string "ELIAS: Some guilt does not go away when\n"
+	.string "we keep quiet. I signed off on part of\l"
+	.string "the M'BOI project, then spent years\l"
+	.string "calling my fear prudence.$"
 
 PetalburgCity_Gym_Text_NormanDefeat:
-	.string "ELIAS: Algumas culpas nao\ndesaparecem quando ficamos em\p"
-	.string "silencio. Eu aprovei parte do\nprojeto de M'BOI e passei anos\p"
-	.string "chamando meu medo de prudencia.$"
+	.string "ELIAS: Some guilt does not go away when\n"
+	.string "we keep quiet. I signed off on part of\l"
+	.string "the M'BOI project, then spent years\l"
+	.string "calling my fear prudence.$"
 
 PetalburgCity_Gym_Text_ReceivedBalanceBadge:
-	.string "{PLAYER} recebeu a\n"
-	.string "COMPASS BADGE!$"
+	.string "{PLAYER} received the COMPASS BADGE!$"
 
 PetalburgCity_Gym_Text_ExplainBalanceBadgeTakeThis:
-	.string "A COMPASS BADGE aumenta\n"
-	.string "a DEFESA dos seus POKéMON.\p"
-	.string "POKéMON que conhecem SURF\n"
-	.string "podem viajar sobre a água.\p"
-	.string "Este presente é para você,\n"
-	.string "{PLAYER}. Sei que saberá usá-lo.$"
+	.string "The COMPASS BADGE raises your\n"
+	.string "POKéMON's DEFENSE.\p"
+	.string "POKéMON that know SURF can travel over\n"
+	.string "water.\p"
+	.string "This gift is for you, {PLAYER}. I know\n"
+	.string "you will use it well.$"
 
 PetalburgCity_Gym_Text_ExplainFacade:
 	.string "DAD: TM42 contains FACADE.\p"
@@ -1517,22 +1531,26 @@ PetalburgCity_Gym_Text_GymStatueCertified:
 	.string "{PLAYER}$"
 
 PetalburgCity_Gym_Text_NormanPreRematch:
-	.string "ELIAS: Ser seu pai nunca me deu\no direito de escolher que\p"
-	.string "verdade voce podia suportar.\nDemorei demais para entender\p"
-	.string "isso.$"
+	.string "ELIAS: Being your father never gave me\n"
+	.string "the right to choose which truth you\l"
+	.string "could bear. It took me far too long to\l"
+	.string "understand that.$"
 
 PetalburgCity_Gym_Text_NormanRematchDefeat:
-	.string "ELIAS: Ser seu pai nunca me deu\no direito de escolher que\p"
-	.string "verdade voce podia suportar.\nDemorei demais para entender\p"
-	.string "isso.$"
+	.string "ELIAS: Being your father never gave me\n"
+	.string "the right to choose which truth you\l"
+	.string "could bear. It took me far too long to\l"
+	.string "understand that.$"
 
 PetalburgCity_Gym_Text_NormanPostRematch:
-	.string "ELIAS: Ser seu pai nunca me deu\no direito de escolher que\p"
-	.string "verdade voce podia suportar.\nDemorei demais para entender\p"
-	.string "isso.$"
+	.string "ELIAS: Being your father never gave me\n"
+	.string "the right to choose which truth you\l"
+	.string "could bear. It took me far too long to\l"
+	.string "understand that.$"
 
 PetalburgCity_Gym_Text_NormanRematchNeedTwoMons:
-	.string "ELIAS: Algumas culpas nao\ndesaparecem quando ficamos em\p"
-	.string "silencio. Eu aprovei parte do\nprojeto de M'BOI e passei anos\p"
-	.string "chamando meu medo de prudencia.$"
+	.string "ELIAS: Some guilt does not go away when\n"
+	.string "we keep quiet. I signed off on part of\l"
+	.string "the M'BOI project, then spent years\l"
+	.string "calling my fear prudence.$"
 

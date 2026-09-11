@@ -20,13 +20,14 @@ SootopolisCity_House2_EventScript_DontKnowAboutOrbs::
 
 SootopolisCity_House2_Text_DidYouKnowAboutMtPyreOrbs:
 	.string "MEMORIAL DOS NOMES…\p"
-	.string "At its peak are two orbs placed side\n"
-	.string "by side. Did you know?$"
+	.string "At its peak are two orbs placed side by\n"
+	.string "side. Did you know?$"
 
 SootopolisCity_House2_Text_YesTwoOrbsSideBySide:
-	.string "A cidade inteira sente o\nresultado de duas ideias\p"
-	.string "transformadas em absolutos:\nlembrar tudo e apagar a dor a\p"
-	.string "qualquer custo.$"
+	.string "The whole city is living with what\n"
+	.string "happens when two ideas are taken as\l"
+	.string "absolutes: remember everything, and\l"
+	.string "erase the pain at any cost.$"
 
 SootopolisCity_House2_Text_OughtToVisitAndSee:
 	.string "Is that so?\n"

@@ -1013,10 +1013,10 @@ RustboroCity_EventScript_Boy1::
 	end
 
 RustboroCity_Text_WeShortenItToDevon:
-	.string "O HORIZON CONSORTIUM mantem\n"
-	.string "um centro tecnico na serra.\p"
-	.string "Muita gente daqui depende dele,\n"
-	.string "mas nem todos confiam no projeto.$"
+	.string "The HORIZON CONSORTIUM keeps a\n"
+	.string "technical center up in the highlands.\p"
+	.string "Many people here depend on it, though\n"
+	.string "not everyone trusts the project.$"
 
 RustboroCity_Text_SneakyLookingManWentAroundCorner:
 	.string "Hm? A sneaky-looking man?\p"
@@ -1127,81 +1127,91 @@ RustboroCity_Text_PleaseComeWithMe:
 	.string "Please come with me!$"
 
 RustboroCity_Text_MayHiLetsRegister:
-	.string "CIRO: Voce ativou o contato\n"
-	.string "do seu POKéNAV? Registre o meu.\p"
-	.string "Assim ninguem pode dizer que eu\n"
-	.string "sumi quando chegar antes de voce.$"
+	.string "CIRO: Have you switched on your\n"
+	.string "POKéNAV contacts? Register mine.\p"
+	.string "Then nobody can say I vanished when I\n"
+	.string "get somewhere first.$"
 
 RustboroCity_Text_RegisteredMay:
-	.string "CIRO foi registrado\n"
-	.string "no POKéNAV.$"
+	.string "CIRO was registered in the POKéNAV.$"
 
 RustboroCity_Text_MayPassedBrineyWantToBattle:
-	.string "CIRO: Se os dados estiverem\n"
-	.string "certos, o DISENCHANTMENT pode ser\p"
-	.string "tratado. Eu prefiro testar uma\n"
-	.string "resposta a transformar\p"
-	.string "sofrimento em tradicao.$"
+	.string "CIRO: If the data is right,\n"
+	.string "DISENCHANTMENT can be treated. I would\l"
+	.string "rather test an answer than turn\l"
+	.string "suffering into tradition.$"
 
 RustboroCity_Text_MayOhHaventRaisedPokemonEnough:
-	.string "CIRO: Nao confunda minha pressa\ncom falta de memoria. Eu lembro\p"
-	.string "o bastante para saber que nao\nquero viver preso ao que perdi.$"
+	.string "CIRO: Do not mistake my hurry for a bad\n"
+	.string "memory. I remember enough to know I do\l"
+	.string "not want to live shackled to what I\l"
+	.string "lost.$"
 
 RustboroCity_Text_MayWantToBattle:
-	.string "CIRO: Nao confunda minha pressa\ncom falta de memoria. Eu lembro\p"
-	.string "o bastante para saber que nao\nquero viver preso ao que perdi.$"
+	.string "CIRO: Do not mistake my hurry for a bad\n"
+	.string "memory. I remember enough to know I do\l"
+	.string "not want to live shackled to what I\l"
+	.string "lost.$"
 
 RustboroCity_Text_MayImNotGoingToLose:
-	.string "CIRO: O HORIZON nao me pediu\n"
-	.string "para esquecer nada. So me\p"
-	.string "mostrou que existe um futuro\n"
-	.string "que nao precisa ser governado\p"
-	.string "pelo passado.$"
+	.string "CIRO: HORIZON never asked me to forget\n"
+	.string "anything. It only showed me there is a\l"
+	.string "future that does not have to be ruled\l"
+	.string "by the past.$"
 
 RustboroCity_Text_MayDefeat:
-	.string "CIRO: Nao confunda minha pressa\ncom falta de memoria. Eu lembro\p"
-	.string "o bastante para saber que nao\nquero viver preso ao que perdi.$"
+	.string "CIRO: Do not mistake my hurry for a bad\n"
+	.string "memory. I remember enough to know I do\l"
+	.string "not want to live shackled to what I\l"
+	.string "lost.$"
 
 RustboroCity_Text_MayMrBrineyHint:
-	.string "CIRO: Voce continua olhando\npara cada cicatriz como se ela\p"
-	.string "fosse uma resposta. Eu quero\nsaber o que existe depois dela.$"
+	.string "CIRO: You keep looking at every scar as\n"
+	.string "if it were an answer. I want to know\l"
+	.string "what comes after it.$"
 
 RustboroCity_Text_BrendanHiLetsRegister:
-	.string "CIRO: Voce ativou o contato\n"
-	.string "do seu POKéNAV? Registre o meu.\p"
-	.string "Assim ninguem pode dizer que eu\n"
-	.string "sumi quando chegar antes de voce.$"
+	.string "CIRO: Have you switched on your\n"
+	.string "POKéNAV contacts? Register mine.\p"
+	.string "Then nobody can say I vanished when I\n"
+	.string "get somewhere first.$"
 
 RustboroCity_Text_RegisteredBrendan:
-	.string "CIRO foi registrado\n"
-	.string "no POKéNAV.$"
+	.string "CIRO was registered in the POKéNAV.$"
 
 RustboroCity_Text_BrendanPassedBrineyWantToBattle:
-	.string "CIRO: Voce continua olhando\npara cada cicatriz como se ela\p"
-	.string "fosse uma resposta. Eu quero\nsaber o que existe depois dela.$"
+	.string "CIRO: You keep looking at every scar as\n"
+	.string "if it were an answer. I want to know\l"
+	.string "what comes after it.$"
 
 RustboroCity_Text_BrendanNoConfidenceInPokemon:
-	.string "CIRO: Nao confunda minha pressa\ncom falta de memoria. Eu lembro\p"
-	.string "o bastante para saber que nao\nquero viver preso ao que perdi.$"
+	.string "CIRO: Do not mistake my hurry for a bad\n"
+	.string "memory. I remember enough to know I do\l"
+	.string "not want to live shackled to what I\l"
+	.string "lost.$"
 
 RustboroCity_Text_BrendanWantToBattle:
-	.string "CIRO: Se os dados estiverem\n"
-	.string "certos, o DISENCHANTMENT pode ser\p"
-	.string "tratado. Eu prefiro testar uma\n"
-	.string "resposta a transformar\p"
-	.string "sofrimento em tradicao.$"
+	.string "CIRO: If the data is right,\n"
+	.string "DISENCHANTMENT can be treated. I would\l"
+	.string "rather test an answer than turn\l"
+	.string "suffering into tradition.$"
 
 RustboroCity_Text_BrendanIWontGoEasy:
-	.string "CIRO: Voce continua olhando\npara cada cicatriz como se ela\p"
-	.string "fosse uma resposta. Eu quero\nsaber o que existe depois dela.$"
+	.string "CIRO: You keep looking at every scar as\n"
+	.string "if it were an answer. I want to know\l"
+	.string "what comes after it.$"
 
 RustboroCity_Text_BrendanDefeat:
-	.string "CIRO: Nao confunda minha pressa\ncom falta de memoria. Eu lembro\p"
-	.string "o bastante para saber que nao\nquero viver preso ao que perdi.$"
+	.string "CIRO: Do not mistake my hurry for a bad\n"
+	.string "memory. I remember enough to know I do\l"
+	.string "not want to live shackled to what I\l"
+	.string "lost.$"
 
 RustboroCity_Text_BrendanMrBrineyHint:
-	.string "CIRO: Nao confunda minha pressa\ncom falta de memoria. Eu lembro\p"
-	.string "o bastante para saber que nao\nquero viver preso ao que perdi.$"
+	.string "CIRO: Do not mistake my hurry for a bad\n"
+	.string "memory. I remember enough to know I do\l"
+	.string "not want to live shackled to what I\l"
+	.string "lost.$"
 
 RustboroCity_Text_TunnelNearingCompletion:
 	.string "“Timesaving tunnel nearing\n"
@@ -1212,24 +1222,22 @@ RustboroCity_Text_TunnelNearingCompletion:
 
 RustboroCity_Text_DevonCorpSign:
 	.string "HORIZON CONSORTIUM\p"
-	.string "CENTRO TECNICO\n"
-	.string "SERRA DO UIVO.$"
+	.string "SERRA DO UIVO TECHNICAL CENTER.$"
 
 RustboroCity_Text_GymSign:
-	.string "SERRA DO UIVO\n"
-	.string "RESPONSAVEL: DALVA\p"
-	.string "A serra lembra.$"
+	.string "SERRA DO UIVO LEADER: DALVA\p"
+	.string "The mountain remembers.$"
 
 RustboroCity_Text_DevonCorpBranchOfficeSign:
 	.string "HORIZON CONSORTIUM\p"
-	.string "ACESSO RESTRITO A FUNCIONARIOS\n"
-	.string "E PESSOAL AUTORIZADO.$"
+	.string "RESTRICTED TO STAFF AND AUTHORIZED\n"
+	.string "PERSONNEL.$"
 
 RustboroCity_Text_CitySign:
-	.string "SERRA DO UIVO. O HORIZON CONSORTIUM\n"
-	.string "trouxe emprego e\p"
-	.string "obras. Tambem trouxe maquinas capazes\n"
-	.string "de medir BONDS.$"
+	.string "SERRA DO UIVO. The HORIZON CONSORTIUM\n"
+	.string "brought work and building. It also\l"
+	.string "brought machines that can measure\l"
+	.string "BONDS.$"
 
 RustboroCity_Text_TrainersSchoolSign:
 	.string "POKéMON TRAINER'S SCHOOL\p"

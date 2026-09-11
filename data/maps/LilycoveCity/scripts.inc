@@ -410,37 +410,39 @@ LilycoveCity_EventScript_DontKnowAboutBerryBlender::
 	return
 
 LilycoveCity_Text_MayShoppingLetsBattle:
-	.string "CIRO: Se os dados estiverem\n"
-	.string "certos, o DISENCHANTMENT pode ser\p"
-	.string "tratado. Eu prefiro testar uma\n"
-	.string "resposta a transformar\p"
-	.string "sofrimento em tradicao.$"
+	.string "CIRO: If the data is right,\n"
+	.string "DISENCHANTMENT can be treated. I would\l"
+	.string "rather test an answer than turn\l"
+	.string "suffering into tradition.$"
 
 LilycoveCity_Text_MayNotRaisingPokemon:
-	.string "CIRO: O HORIZON nao me pediu\n"
-	.string "para esquecer nada. So me\p"
-	.string "mostrou que existe um futuro\n"
-	.string "que nao precisa ser governado\p"
-	.string "pelo passado.$"
+	.string "CIRO: HORIZON never asked me to forget\n"
+	.string "anything. It only showed me there is a\l"
+	.string "future that does not have to be ruled\l"
+	.string "by the past.$"
 
 LilycoveCity_Text_MayBattleMe:
-	.string "CIRO: Voce continua olhando\npara cada cicatriz como se ela\p"
-	.string "fosse uma resposta. Eu quero\nsaber o que existe depois dela.$"
+	.string "CIRO: You keep looking at every scar as\n"
+	.string "if it were an answer. I want to know\l"
+	.string "what comes after it.$"
 
 LilycoveCity_Text_MayWontBeBeaten:
-	.string "CIRO: Se os dados estiverem\n"
-	.string "certos, o DISENCHANTMENT pode ser\p"
-	.string "tratado. Eu prefiro testar uma\n"
-	.string "resposta a transformar\p"
-	.string "sofrimento em tradicao.$"
+	.string "CIRO: If the data is right,\n"
+	.string "DISENCHANTMENT can be treated. I would\l"
+	.string "rather test an answer than turn\l"
+	.string "suffering into tradition.$"
 
 LilycoveCity_Text_MayDefeat:
-	.string "CIRO: Nao confunda minha pressa\ncom falta de memoria. Eu lembro\p"
-	.string "o bastante para saber que nao\nquero viver preso ao que perdi.$"
+	.string "CIRO: Do not mistake my hurry for a bad\n"
+	.string "memory. I remember enough to know I do\l"
+	.string "not want to live shackled to what I\l"
+	.string "lost.$"
 
 LilycoveCity_Text_MayGoingBackToLittleroot:
-	.string "CIRO: Nao confunda minha pressa\ncom falta de memoria. Eu lembro\p"
-	.string "o bastante para saber que nao\nquero viver preso ao que perdi.$"
+	.string "CIRO: Do not mistake my hurry for a bad\n"
+	.string "memory. I remember enough to know I do\l"
+	.string "not want to live shackled to what I\l"
+	.string "lost.$"
 
 LilycoveCity_Text_MayYouGoingToCollectBadges:
 	.string "{PLAYER}{KUN}, what are you going to do?\p"
@@ -452,51 +454,50 @@ LilycoveCity_Text_MayYouGoingToCollectBadges:
 	.string "See you!$"
 
 LilycoveCity_Text_MayYouGoingToPokemonLeague:
-	.string "CIRO: Nao confunda minha pressa\ncom falta de memoria. Eu lembro\p"
-	.string "o bastante para saber que nao\nquero viver preso ao que perdi.$"
+	.string "CIRO: Do not mistake my hurry for a bad\n"
+	.string "memory. I remember enough to know I do\l"
+	.string "not want to live shackled to what I\l"
+	.string "lost.$"
 
 LilycoveCity_Text_MayYouGoingToBattleFrontier:
-	.string "CIRO: Voce continua olhando\npara cada cicatriz como se ela\p"
-	.string "fosse uma resposta. Eu quero\nsaber o que existe depois dela.$"
+	.string "CIRO: You keep looking at every scar as\n"
+	.string "if it were an answer. I want to know\l"
+	.string "what comes after it.$"
 
 LilycoveCity_Text_BrendanShoppingLetsBattle:
-	.string "CIRO: Se os dados estiverem\n"
-	.string "certos, o DISENCHANTMENT pode ser\p"
-	.string "tratado. Eu prefiro testar uma\n"
-	.string "resposta a transformar\p"
-	.string "sofrimento em tradicao.$"
+	.string "CIRO: If the data is right,\n"
+	.string "DISENCHANTMENT can be treated. I would\l"
+	.string "rather test an answer than turn\l"
+	.string "suffering into tradition.$"
 
 LilycoveCity_Text_BrendanNoConfidence:
-	.string "CIRO: O HORIZON nao me pediu\n"
-	.string "para esquecer nada. So me\p"
-	.string "mostrou que existe um futuro\n"
-	.string "que nao precisa ser governado\p"
-	.string "pelo passado.$"
+	.string "CIRO: HORIZON never asked me to forget\n"
+	.string "anything. It only showed me there is a\l"
+	.string "future that does not have to be ruled\l"
+	.string "by the past.$"
 
 LilycoveCity_Text_BrendanBattleMe:
-	.string "CIRO: Voce continua olhando\npara cada cicatriz como se ela\p"
-	.string "fosse uma resposta. Eu quero\nsaber o que existe depois dela.$"
+	.string "CIRO: You keep looking at every scar as\n"
+	.string "if it were an answer. I want to know\l"
+	.string "what comes after it.$"
 
 LilycoveCity_Text_BrendanWontBeBeaten:
-	.string "CIRO: O HORIZON nao me pediu\n"
-	.string "para esquecer nada. So me\p"
-	.string "mostrou que existe um futuro\n"
-	.string "que nao precisa ser governado\p"
-	.string "pelo passado.$"
+	.string "CIRO: HORIZON never asked me to forget\n"
+	.string "anything. It only showed me there is a\l"
+	.string "future that does not have to be ruled\l"
+	.string "by the past.$"
 
 LilycoveCity_Text_BrendanDefeat:
-	.string "CIRO: Se os dados estiverem\n"
-	.string "certos, o DISENCHANTMENT pode ser\p"
-	.string "tratado. Eu prefiro testar uma\n"
-	.string "resposta a transformar\p"
-	.string "sofrimento em tradicao.$"
+	.string "CIRO: If the data is right,\n"
+	.string "DISENCHANTMENT can be treated. I would\l"
+	.string "rather test an answer than turn\l"
+	.string "suffering into tradition.$"
 
 LilycoveCity_Text_BrendanGoingBackToLittleroot:
-	.string "CIRO: Se os dados estiverem\n"
-	.string "certos, o DISENCHANTMENT pode ser\p"
-	.string "tratado. Eu prefiro testar uma\n"
-	.string "resposta a transformar\p"
-	.string "sofrimento em tradicao.$"
+	.string "CIRO: If the data is right,\n"
+	.string "DISENCHANTMENT can be treated. I would\l"
+	.string "rather test an answer than turn\l"
+	.string "suffering into tradition.$"
 
 LilycoveCity_Text_BrendanYouGoingToCollectBadges:
 	.string "{PLAYER}, what are you going to do?\p"
@@ -506,12 +507,15 @@ LilycoveCity_Text_BrendanYouGoingToCollectBadges:
 	.string "Well, anyway, hang in there!$"
 
 LilycoveCity_Text_BrendanYouGoingToPokemonLeague:
-	.string "CIRO: Voce continua olhando\npara cada cicatriz como se ela\p"
-	.string "fosse uma resposta. Eu quero\nsaber o que existe depois dela.$"
+	.string "CIRO: You keep looking at every scar as\n"
+	.string "if it were an answer. I want to know\l"
+	.string "what comes after it.$"
 
 LilycoveCity_Text_BrendanYouGoingToBattleFrontier:
-	.string "CIRO: Nao confunda minha pressa\ncom falta de memoria. Eu lembro\p"
-	.string "o bastante para saber que nao\nquero viver preso ao que perdi.$"
+	.string "CIRO: Do not mistake my hurry for a bad\n"
+	.string "memory. I remember enough to know I do\l"
+	.string "not want to live shackled to what I\l"
+	.string "lost.$"
 
 LilycoveCity_Text_MovedLootIntoHideoutToday:
 	.string "Fufufu…\p"
@@ -637,9 +641,9 @@ LilycoveCity_Text_TeamAquaLotGoneForGood:
 	.string "must have gone away for good.$"
 
 LilycoveCity_Text_CitySign:
-	.string "BAIA DAS LUZES. Por tras da\n"
-	.string "fachada moderna fica o centro\p"
-	.string "de operacoes do LIVING ARCHIVE.$"
+	.string "BAIA DAS LUZES. Behind the modern\n"
+	.string "front sits the operations center of\l"
+	.string "the LIVING ARCHIVE.$"
 
 LilycoveCity_Text_ContestHallSign:
 	.string "POKéMON CONTEST HALL\n"

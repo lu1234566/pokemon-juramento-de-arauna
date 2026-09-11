@@ -722,16 +722,14 @@ MatchCall_PersonalizedText8::
 	.string "friends? Let's meet again!$"
 
 MatchCall_PersonalizedText9::
-	.string "It's {STR_VAR_1}…\n"
-	.string "Right now, behind you…\l"
-	.string "Wasn't there something…?\p"
-	.string "The power of the POKéMON that\n"
-	.string "sleep here at MEMORIAL DOS NOMES…\p"
+	.string "It's {STR_VAR_1}… Right now, behind\n"
+	.string "you… Wasn't there something…?\p"
+	.string "The power of the POKéMON that sleep\n"
+	.string "here at MEMORIAL DOS NOMES…\p"
 	.string "It's telling me about you…\p"
-	.string "You should walk away quickly and\n"
-	.string "never once look back…\p"
-	.string "Giggle…\n"
-	.string "Farewell…$"
+	.string "You should walk away quickly and never\n"
+	.string "once look back…\p"
+	.string "Giggle… Farewell…$"
 
 MatchCall_PersonalizedText10::
 	.string "This is {STR_VAR_1}.\n"
@@ -2190,8 +2188,7 @@ MatchCall_Text_Winona_PostRematch::
 	.string "you never lost sight of your dream.$"
 
 MatchCall_Text_TateLiza_Preparing::
-	.string "CECILIA: Oh! You're…\n"
-	.string "CAETANO: {PLAYER}!\p"
+	.string "CECILIA: Oh! You're… CAETANO: {PLAYER}!\p"
 	.string "CECILIA: We're in training again…\n"
 	.string "CAETANO: So we can reopen our GYM!\p"
 	.string "CECILIA: When our GYM is ready…\n"
@@ -2202,26 +2199,25 @@ MatchCall_Text_TateLiza_Preparing::
 MatchCall_Text_TateLiza_PreparingPostGame::
 	.string "CECILIA: {PLAYER}, congratulations!\n"
 	.string "CAETANO: {PLAYER}, congratulations!\p"
-	.string "CECILIA: The two of us are…\n"
-	.string "CAETANO: Still in training!\p"
+	.string "CECILIA: The two of us are… CAETANO:\n"
+	.string "Still in training!\p"
 	.string "CECILIA: We need some more time, but…\n"
 	.string "CAETANO: When our GYM is ready…\p"
 	.string "CECILIA: A mark'll appear by our name…\n"
 	.string "CAETANO: On the MATCH CALL list.$"
 
 MatchCall_Text_TateLiza_RematchReady::
-	.string "CECILIA: {PLAYER}!\n"
-	.string "CAETANO: {PLAYER}!\p"
-	.string "CECILIA: Our GYM is ready!\n"
-	.string "CAETANO: Our GYM is ready!\p"
-	.string "CECILIA: Please come visit…\n"
-	.string "CAETANO: MISSOES DO CEU anytime!$"
+	.string "CECILIA: {PLAYER}! CAETANO: {PLAYER}!\p"
+	.string "CECILIA: Our GYM is ready! CAETANO: Our\n"
+	.string "GYM is ready!\p"
+	.string "CECILIA: Please come visit… CAETANO:\n"
+	.string "MISSOES DO CEU anytime!$"
 
 MatchCall_Text_TateLiza_PostRematch::
 	.string "CECILIA: {PLAYER}, the battle we had…\n"
 	.string "CAETANO: Is an invaluable experience.\p"
-	.string "CECILIA: It would be nice if…\n"
-	.string "CAETANO: We could all battle again!$"
+	.string "CECILIA: It would be nice if… CAETANO:\n"
+	.string "We could all battle again!$"
 
 MatchCall_Text_Juan_Preparing::
 	.string "CELINA: Hmm…\n"
@@ -2666,10 +2662,10 @@ MatchCall_Text_Scott3::
 	.string "SCOTT: Hi, hi, {PLAYER}{KUN}!\p"
 	.string "Have you had the chance to climb\n"
 	.string "MEMORIAL DOS NOMES?\p"
-	.string "The place is a memorial to POKéMON\n"
-	.string "that have passed away.\p"
-	.string "It's somewhere every TRAINER\n"
-	.string "should climb to the top of once.$"
+	.string "The place is a memorial to POKéMON that\n"
+	.string "have passed away.\p"
+	.string "It's somewhere every TRAINER should\n"
+	.string "climb to the top of once.$"
 
 MatchCall_Text_Scott4::
 	.string "SCOTT: Hi, {PLAYER}{KUN}!\p"
@@ -2777,66 +2773,64 @@ MatchCall_Text_Norman_PostRematch::
 	.string "How much higher will you soar?$"
 
 MatchCall_Text_Steven1::
-	.string "MR. BENTO: {PLAYER}, achei uma\n"
-	.string "anotacao antiga hoje.\p"
-	.string "Um nome aparece tres vezes e\n"
-	.string "some na pagina seguinte.\p"
-	.string "Continue ouvindo as pessoas.\n"
-	.string "Papel sozinho nao basta.$"
+	.string "MR. BENTO: {PLAYER}, I found an old note\n"
+	.string "today.\p"
+	.string "A name appears three times, then it's\n"
+	.string "gone on the next page.\p"
+	.string "Keep listening to people. Paper alone\n"
+	.string "isn't enough.$"
 
 MatchCall_Text_Steven2::
-	.string "MR. BENTO: O caminho da serra\n"
-	.string "voltou a respirar.\p"
-	.string "Marcas antigas apareceram\n"
-	.string "onde a pedra foi aberta.\p"
-	.string "Anote o que vir. Eu comparo\n"
-	.string "com meus cadernos.$"
+	.string "MR. BENTO: The mountain road is\n"
+	.string "breathing again.\p"
+	.string "Old marks have surfaced where the\n"
+	.string "stone was opened.\p"
+	.string "Write down what you see. I'll compare it\n"
+	.string "against my notebooks.$"
 
 MatchCall_Text_Steven3::
-	.string "MR. BENTO: Certos objetos\n"
-	.string "guardam mais que historia.\p"
-	.string "Nao confunda memoria com\n"
-	.string "resposta.\p"
-	.string "Uma pista tambem pode mentir.$"
+	.string "MR. BENTO: Some objects hold more than\n"
+	.string "history.\p"
+	.string "Don't mistake a memory for an answer.\p"
+	.string "A clue can lie too.$"
 
 MatchCall_Text_Steven4::
-	.string "MR. BENTO: O movimento no\n"
-	.string "litoral mudou de repente.\p"
-	.string "Tem equipamento sumindo dos\n"
-	.string "registros oficiais.\p"
-	.string "No porto, confira cada lista\n"
-	.string "duas vezes.$"
+	.string "MR. BENTO: Traffic on the coast changed\n"
+	.string "overnight.\p"
+	.string "Equipment is vanishing from the\n"
+	.string "official records.\p"
+	.string "At the port, check every manifest\n"
+	.string "twice.$"
 
 MatchCall_Text_Steven5::
-	.string "MR. BENTO: Missoes do Ceu\n"
-	.string "esta ouvindo sinais demais.\p"
-	.string "Quando toda rede fala junto,\n"
-	.string "o silencio importa mais.\p"
-	.string "Confie no que voce viu.$"
+	.string "MR. BENTO: MISSOES DO CEU is hearing too\n"
+	.string "many signals.\p"
+	.string "When the whole network talks at once,\n"
+	.string "the silences matter more.\p"
+	.string "Trust what you saw.$"
 
 MatchCall_Text_Steven6::
-	.string "O sinal de MR. BENTO nao\n"
-	.string "responde.\p"
-	.string "So ha estatica e o ruido\n"
-	.string "distante da agua.$"
+	.string "MR. BENTO's signal doesn't answer.\p"
+	.string "There is only static and the far-off\n"
+	.string "noise of water.$"
 
 MatchCall_Text_Steven7::
-	.string "MR. BENTO: {PLAYER}, meus\n"
-	.string "cadernos nao registram tudo.\p"
-	.string "Talvez seja melhor assim.\p"
-	.string "Algumas coisas precisam viver\n"
-	.string "na boca das pessoas.$"
+	.string "MR. BENTO: {PLAYER}, my notebooks don't\n"
+	.string "record everything.\p"
+	.string "Perhaps that's for the best.\p"
+	.string "Some things have to live in people's\n"
+	.string "mouths.$"
 
 MatchCall_Text_BirchRegisterCall:
-	.string "ANAHI: {PLAYER}, seu POKéNAV\n"
-	.string "ja esta recebendo chamadas.\p"
-	.string "Registre meu contato tambem.\p"
-	.string "Se eu encontrar algo estranho,\n"
-	.string "aviso voce primeiro.$"
+	.string "ANAHI: {PLAYER}, your POKéNAV is taking\n"
+	.string "calls now.\p"
+	.string "Register my contact as well.\p"
+	.string "If I run into anything strange, you\n"
+	.string "hear it first.$"
 
 MatchCall_Text_RegisteredBirch:
-	.string "PROF. ANAHI foi registrada\n"
-	.string "no POKéNAV.$"
+	.string "PROF. ANAHI was registered in the\n"
+	.string "POKéNAV.$"
 
 MatchCall_Text_UnusedProfBirch:
 	.string "PROF. ANAHI: When one has both\n"

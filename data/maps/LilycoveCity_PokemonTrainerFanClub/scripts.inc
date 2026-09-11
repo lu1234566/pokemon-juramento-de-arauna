@@ -614,20 +614,24 @@ LilycoveCity_PokemonTrainerFanClub_Text_ImPullingForYou:
 	.string "I'm pulling for you!$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_BrawlyNoImYourFan:
-	.string "ADEMAR: O mar devolve coisas\nquando quer. Homem nenhum manda\p"
-	.string "na memoria da agua.$"
+	.string "ADEMAR: The sea gives things back when\n"
+	.string "it feels like it. No man gives orders to\l"
+	.string "the memory of water.$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_ICantHelpLikingBrawly:
-	.string "ADEMAR: O mar devolve coisas\nquando quer. Homem nenhum manda\p"
-	.string "na memoria da agua.$"
+	.string "ADEMAR: The sea gives things back when\n"
+	.string "it feels like it. No man gives orders to\l"
+	.string "the memory of water.$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_NobodyUnderstandsBrawly:
-	.string "ADEMAR: O mar devolve coisas\nquando quer. Homem nenhum manda\p"
-	.string "na memoria da agua.$"
+	.string "ADEMAR: The sea gives things back when\n"
+	.string "it feels like it. No man gives orders to\l"
+	.string "the memory of water.$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_MyFavoriteTrainerIsBrawly:
-	.string "ADEMAR: O mar devolve coisas\nquando quer. Homem nenhum manda\p"
-	.string "na memoria da agua.$"
+	.string "ADEMAR: The sea gives things back when\n"
+	.string "it feels like it. No man gives orders to\l"
+	.string "the memory of water.$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_YouveSurpassedYourFather:
 	.string "You've surpassed your own father in\n"
@@ -643,14 +647,16 @@ LilycoveCity_PokemonTrainerFanClub_Text_YourFatherNeverGaveUpSoKeepOnBattling:
 	.string "So keep on battling!$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_LongWayToGoComparedToNorman:
-	.string "ELIAS: Ser seu pai nunca me deu\no direito de escolher que\p"
-	.string "verdade voce podia suportar.\nDemorei demais para entender\p"
-	.string "isso.$"
+	.string "ELIAS: Being your father never gave me\n"
+	.string "the right to choose which truth you\l"
+	.string "could bear. It took me far too long to\l"
+	.string "understand that.$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_YouAndNormanAreDifferent:
-	.string "ELIAS: Ser seu pai nunca me deu\no direito de escolher que\p"
-	.string "verdade voce podia suportar.\nDemorei demais para entender\p"
-	.string "isso.$"
+	.string "ELIAS: Being your father never gave me\n"
+	.string "the right to choose which truth you\l"
+	.string "could bear. It took me far too long to\l"
+	.string "understand that.$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_WeDiscussStrongestTrainers:
 	.string "Everyone here, we're all huge fans\n"

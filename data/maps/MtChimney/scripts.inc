@@ -537,21 +537,22 @@ MtChimney_Text_MeteoriteWillActivateVolcano:
 	.string "Fufufu…$"
 
 MtChimney_Text_MaxieIntro:
-	.string "LUZIA: Se devolver as memorias\ndoer, entao vai doer. Dor nao\p"
-	.string "autoriza ninguem a reescrever a\nvida de outra pessoa.$"
+	.string "LUZIA: If giving the memories back\n"
+	.string "hurts, then it will hurt. Pain does not\l"
+	.string "authorize anyone to rewrite another\l"
+	.string "person's life.$"
 
 MtChimney_Text_MaxieDefeat:
-	.string "LUZIA: O problema nunca foi\nlembrar demais. Foi deixar quem\p"
-	.string "tem poder decidir quais\nlembrancas os outros podem\p"
-	.string "conservar.$"
+	.string "LUZIA: The problem was never\n"
+	.string "remembering too much. It was letting\l"
+	.string "whoever holds power decide which\l"
+	.string "memories the rest may keep.$"
 
 MtChimney_Text_MaxieYouHaventSeenLastOfMagma:
-	.string "Os sensores registram duas\n"
-	.string "correntes antigas sob Arauna:\p"
-	.string "uma conserva BONDS; a outra\n"
-	.string "permite que eles terminem. O\p"
-	.string "ARCHIVE tentou transformar\n"
-	.string "ambas em ferramentas.$"
+	.string "The sensors register two old currents\n"
+	.string "under Arauna: one preserves BONDS, the\l"
+	.string "other lets them end. The ARCHIVE tried\l"
+	.string "to turn both into tools.$"
 
 MtChimney_Text_TabithaIntro:
 	.string "Hehehe!\p"
@@ -571,46 +572,43 @@ MtChimney_Text_TabithaPostBattle:
 	.string "Hehehe…$"
 
 MtChimney_Text_Grunt2Intro:
-	.string "REMEMBRANCER: O HORIZON quer uma\n"
-	.string "Arauna estavel. Eu quero uma\p"
-	.string "Arauna que saiba por que suas\n"
-	.string "ruinas existem.$"
+	.string "REMEMBRANCER: HORIZON wants a stable\n"
+	.string "Arauna. I want an Arauna that knows why\l"
+	.string "its ruins are there.$"
 
 MtChimney_Text_Grunt2Defeat:
-	.string "HORIZON: O LIVING ARCHIVE nao\n"
-	.string "apaga pessoas. Ele separa\p"
-	.string "trauma de identidade. Pelo\n"
-	.string "menos e isso que nos ensinaram.$"
+	.string "HORIZON: The LIVING ARCHIVE does not\n"
+	.string "erase people. It separates trauma from\l"
+	.string "identity. At least that is what we were\l"
+	.string "taught.$"
 
 MtChimney_Text_Grunt2PostBattle:
-	.string "HORIZON: Nao somos soldados.\n"
-	.string "Somos tecnicos, guardas e\p"
-	.string "pesquisadores. Isso nao torna\n"
-	.string "todas as nossas ordens certas.$"
+	.string "HORIZON: We are not soldiers. We are\n"
+	.string "technicians, guards and researchers.\l"
+	.string "That does not make every order we are\l"
+	.string "given right.$"
 
 MtChimney_Text_Grunt1Intro:
-	.string "HORIZON: Os sensores detectam\n"
-	.string "BONDS instaveis antes do\p"
-	.string "DISENCHANTMENT completo. Isso pode\n"
-	.string "salvar familias inteiras.$"
+	.string "HORIZON: The sensors pick up unstable\n"
+	.string "BONDS before DISENCHANTMENT is\l"
+	.string "complete. That can save whole families.$"
 
 MtChimney_Text_Grunt1Defeat:
-	.string "HORIZON: O LIVING ARCHIVE nao\n"
-	.string "apaga pessoas. Ele separa\p"
-	.string "trauma de identidade. Pelo\n"
-	.string "menos e isso que nos ensinaram.$"
+	.string "HORIZON: The LIVING ARCHIVE does not\n"
+	.string "erase people. It separates trauma from\l"
+	.string "identity. At least that is what we were\l"
+	.string "taught.$"
 
 MtChimney_Text_Grunt1PostBattle:
-	.string "HORIZON: Os sensores detectam\n"
-	.string "BONDS instaveis antes do\p"
-	.string "DISENCHANTMENT completo. Isso pode\n"
-	.string "salvar familias inteiras.$"
+	.string "HORIZON: The sensors pick up unstable\n"
+	.string "BONDS before DISENCHANTMENT is\l"
+	.string "complete. That can save whole families.$"
 
 MtChimney_Text_TeamAquaAlwaysMessingWithPlans:
-	.string "HORIZON: Nao somos soldados.\n"
-	.string "Somos tecnicos, guardas e\p"
-	.string "pesquisadores. Isso nao torna\n"
-	.string "todas as nossas ordens certas.$"
+	.string "HORIZON: We are not soldiers. We are\n"
+	.string "technicians, guards and researchers.\l"
+	.string "That does not make every order we are\l"
+	.string "given right.$"
 
 MtChimney_Text_MeteoritesPackAmazingPower:
 	.string "METEORITES pack amazing power!$"
@@ -621,11 +619,10 @@ MtChimney_Text_YouBetterNotMessWithUs:
 	.string "for the benefit of everyone!$"
 
 MtChimney_Text_AquasNameSimilar:
-	.string "REMEMBRANCER: LUZIA diz que\n"
-	.string "memoria devolvida sem permissao\p"
-	.string "ainda e melhor que memoria\n"
-	.string "roubada. Nem todos aqui\p"
-	.string "concordam com essa parte.$"
+	.string "REMEMBRANCER: LUZIA says memory\n"
+	.string "handed back without permission is still\l"
+	.string "better than memory stolen. Not\l"
+	.string "everyone here agrees with that part.$"
 
 MtChimney_Text_DouseThemInFire:
 	.string "Yeah!\n"
@@ -638,39 +635,39 @@ MtChimney_Text_Bufoh:
 	.string "Bufoh!$"
 
 MtChimney_Text_ArchieGoStopTeamMagma:
-	.string "OTACILIO: Preservar tudo nao e\ncompaixao. As vezes e apenas\p"
-	.string "obrigar uma ferida a continuar\naberta e chamar isso de\p"
-	.string "respeito.$"
+	.string "OTACILIO: Preserving everything is not\n"
+	.string "compassion. Sometimes it is only\l"
+	.string "forcing a wound to stay open and\l"
+	.string "calling that respect.$"
 
 MtChimney_Text_ArchieIHaveMyHandsFull:
-	.string "OTACILIO: M'BOI me ensinou que\nlembrar tambem pode destruir.\p"
-	.string "Eu me recuso a aceitar que\nsofrimento seja sagrado so\p"
-	.string "porque aconteceu.$"
+	.string "OTACILIO: M'BOI taught me that\n"
+	.string "remembering can destroy too. I refuse\l"
+	.string "to accept that suffering is sacred\l"
+	.string "just because it happened.$"
 
 MtChimney_Text_ArchieThankYou:
-	.string "OTACILIO: Eu vi o que uma\n"
-	.string "memoria pode fazer com quem\p"
-	.string "sobrevive. O LIVING ARCHIVE\n"
-	.string "existe para que ninguem seja\p"
-	.string "condenado a carregar a pior\n"
-	.string "noite da propria vida para\p"
-	.string "sempre.$"
+	.string "OTACILIO: I have seen what one memory\n"
+	.string "can do to the person who survives it.\l"
+	.string "The LIVING ARCHIVE exists so that\l"
+	.string "nobody is sentenced to carry the worst\l"
+	.string "night of their life forever.$"
 
 MtChimney_Text_MagmaOutnumbersUs:
-	.string "REMEMBRANCER: Se uma historia\n"
-	.string "incomoda quem manda, ela vira\p"
-	.string "'ruido', depois 'trauma',\n"
-	.string "depois desaparece do registro.$"
+	.string "REMEMBRANCER: When a story bothers the\n"
+	.string "people in charge, it becomes 'noise',\l"
+	.string "then 'trauma', then it is gone from the\l"
+	.string "record.$"
 
 MtChimney_Text_LessHabitatForWaterPokemon:
 	.string "If they expand the land, there'll be\n"
 	.string "less habitats for WATER POKéMON!$"
 
 MtChimney_Text_MagmasNameSimilar:
-	.string "REMEMBRANCER: Se uma historia\n"
-	.string "incomoda quem manda, ela vira\p"
-	.string "'ruido', depois 'trauma',\n"
-	.string "depois desaparece do registro.$"
+	.string "REMEMBRANCER: When a story bothers the\n"
+	.string "people in charge, it becomes 'noise',\l"
+	.string "then 'trauma', then it is gone from the\l"
+	.string "record.$"
 
 MtChimney_Text_Bushaa:
 	.string "Bushaa!$"

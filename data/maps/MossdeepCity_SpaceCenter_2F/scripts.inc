@@ -361,9 +361,10 @@ MossdeepCity_SpaceCenter_2F_Text_MossdeepIdealForRockets:
 	.string "rockets.$"
 
 MossdeepCity_SpaceCenter_2F_Text_WhyWouldMagmaStealRocketFuel:
-	.string "Os engenheiros insistem que\ncomunicacao nao e controle. Os\p"
-	.string "cabos no andar superior sugerem\nque alguem pretende testar essa\p"
-	.string "diferenca.$"
+	.string "The engineers insist that\n"
+	.string "communication is not control. The\l"
+	.string "cabling on the floor above suggests\l"
+	.string "somebody means to test the difference.$"
 
 MossdeepCity_SpaceCenter_2F_Text_WouldveLikedToBeAstronaut:
 	.string "If only I was a little younger, I would\n"
@@ -372,22 +373,20 @@ MossdeepCity_SpaceCenter_2F_Text_WouldveLikedToBeAstronaut:
 	.string "I can and will try!$"
 
 MossdeepCity_SpaceCenter_2F_Text_MagmaCantGetAwayWithThis:
-	.string "A rede de comunicacao daqui\n"
-	.string "pode espalhar o protocolo do\p"
-	.string "LIVING ARCHIVE por toda Arauna.\n"
-	.string "Por isso o HORIZON e os\p"
-	.string "REMEMBRANCERS vieram ate aqui.$"
+	.string "The communication network here could\n"
+	.string "spread the LIVING ARCHIVE protocol\l"
+	.string "across all of Arauna. That is why\l"
+	.string "HORIZON and the REMEMBRANCERS both\l"
+	.string "came.$"
 
 MossdeepCity_SpaceCenter_2F_Text_WishOrdinaryPeopleCouldGoIntoSpace:
 	.string "I wish ordinary people could go into\n"
 	.string "space one day…$"
 
 MossdeepCity_SpaceCenter_2F_Text_DoesMagmaWantToGoToSpace:
-	.string "Um sinal capaz de atravessar a\n"
-	.string "regiao inteira tambem poderia\p"
-	.string "sincronizar milhares de\n"
-	.string "sensores de BOND ao mesmo\p"
-	.string "tempo.$"
+	.string "A signal strong enough to cross the\n"
+	.string "whole region could just as easily hold\l"
+	.string "thousands of BOND sensors in step.$"
 
 MossdeepCity_SpaceCenter_2F_Text_YoureOutnumberedTakeUsOn:
 	.string "What's wrong with you?\p"
@@ -399,67 +398,61 @@ MossdeepCity_SpaceCenter_2F_Text_GoodAnswer:
 	.string "That's what a smart person'll do!$"
 
 MossdeepCity_SpaceCenter_2F_Text_Grunt5Intro:
-	.string "A rede de comunicacao daqui\n"
-	.string "pode espalhar o protocolo do\p"
-	.string "LIVING ARCHIVE por toda Arauna.\n"
-	.string "Por isso o HORIZON e os\p"
-	.string "REMEMBRANCERS vieram ate aqui.$"
+	.string "The communication network here could\n"
+	.string "spread the LIVING ARCHIVE protocol\l"
+	.string "across all of Arauna. That is why\l"
+	.string "HORIZON and the REMEMBRANCERS both\l"
+	.string "came.$"
 
 MossdeepCity_SpaceCenter_2F_Text_Grunt5Defeat:
-	.string "Um sinal capaz de atravessar a\n"
-	.string "regiao inteira tambem poderia\p"
-	.string "sincronizar milhares de\n"
-	.string "sensores de BOND ao mesmo\p"
-	.string "tempo.$"
+	.string "A signal strong enough to cross the\n"
+	.string "whole region could just as easily hold\l"
+	.string "thousands of BOND sensors in step.$"
 
 MossdeepCity_SpaceCenter_2F_Text_Grunt6Intro:
-	.string "A rede de comunicacao daqui\n"
-	.string "pode espalhar o protocolo do\p"
-	.string "LIVING ARCHIVE por toda Arauna.\n"
-	.string "Por isso o HORIZON e os\p"
-	.string "REMEMBRANCERS vieram ate aqui.$"
+	.string "The communication network here could\n"
+	.string "spread the LIVING ARCHIVE protocol\l"
+	.string "across all of Arauna. That is why\l"
+	.string "HORIZON and the REMEMBRANCERS both\l"
+	.string "came.$"
 
 MossdeepCity_SpaceCenter_2F_Text_Grunt6Defeat:
-	.string "A rede de comunicacao daqui\n"
-	.string "pode espalhar o protocolo do\p"
-	.string "LIVING ARCHIVE por toda Arauna.\n"
-	.string "Por isso o HORIZON e os\p"
-	.string "REMEMBRANCERS vieram ate aqui.$"
+	.string "The communication network here could\n"
+	.string "spread the LIVING ARCHIVE protocol\l"
+	.string "across all of Arauna. That is why\l"
+	.string "HORIZON and the REMEMBRANCERS both\l"
+	.string "came.$"
 
 MossdeepCity_SpaceCenter_2F_Text_Grunt7Intro:
-	.string "Um sinal capaz de atravessar a\n"
-	.string "regiao inteira tambem poderia\p"
-	.string "sincronizar milhares de\n"
-	.string "sensores de BOND ao mesmo\p"
-	.string "tempo.$"
+	.string "A signal strong enough to cross the\n"
+	.string "whole region could just as easily hold\l"
+	.string "thousands of BOND sensors in step.$"
 
 MossdeepCity_SpaceCenter_2F_Text_Grunt7Defeat:
-	.string "A rede de comunicacao daqui\n"
-	.string "pode espalhar o protocolo do\p"
-	.string "LIVING ARCHIVE por toda Arauna.\n"
-	.string "Por isso o HORIZON e os\p"
-	.string "REMEMBRANCERS vieram ate aqui.$"
+	.string "The communication network here could\n"
+	.string "spread the LIVING ARCHIVE protocol\l"
+	.string "across all of Arauna. That is why\l"
+	.string "HORIZON and the REMEMBRANCERS both\l"
+	.string "came.$"
 
 MossdeepCity_SpaceCenter_2F_Text_Grunt6PostBattle:
-	.string "Um sinal capaz de atravessar a\n"
-	.string "regiao inteira tambem poderia\p"
-	.string "sincronizar milhares de\n"
-	.string "sensores de BOND ao mesmo\p"
-	.string "tempo.$"
+	.string "A signal strong enough to cross the\n"
+	.string "whole region could just as easily hold\l"
+	.string "thousands of BOND sensors in step.$"
 
 MossdeepCity_SpaceCenter_2F_Text_Grunt7PostBattle:
-	.string "A rede de comunicacao daqui\n"
-	.string "pode espalhar o protocolo do\p"
-	.string "LIVING ARCHIVE por toda Arauna.\n"
-	.string "Por isso o HORIZON e os\p"
-	.string "REMEMBRANCERS vieram ate aqui.$"
+	.string "The communication network here could\n"
+	.string "spread the LIVING ARCHIVE protocol\l"
+	.string "across all of Arauna. That is why\l"
+	.string "HORIZON and the REMEMBRANCERS both\l"
+	.string "came.$"
 
 MossdeepCity_SpaceCenter_2F_Text_Grunt5PostBattle:
-	.string "A rede de comunicacao daqui\n"
-	.string "pode espalhar o protocolo do\p"
-	.string "LIVING ARCHIVE por toda Arauna.\n"
-	.string "Por isso o HORIZON e os\p"
-	.string "REMEMBRANCERS vieram ate aqui.$"
+	.string "The communication network here could\n"
+	.string "spread the LIVING ARCHIVE protocol\l"
+	.string "across all of Arauna. That is why\l"
+	.string "HORIZON and the REMEMBRANCERS both\l"
+	.string "came.$"
 
 MossdeepCity_SpaceCenter_2F_Text_WellTakeCareOfYou:
 	.string "Hehehe!\p"
@@ -469,38 +462,34 @@ MossdeepCity_SpaceCenter_2F_Text_WellTakeCareOfYou:
 	.string "we'll take care of you at the same time!$"
 
 MossdeepCity_SpaceCenter_2F_Text_MaxieDontInterfere:
-	.string "LUZIA: O problema nunca foi\nlembrar demais. Foi deixar quem\p"
-	.string "tem poder decidir quais\nlembrancas os outros podem\p"
-	.string "conservar.$"
+	.string "LUZIA: The problem was never\n"
+	.string "remembering too much. It was letting\l"
+	.string "whoever holds power decide which\l"
+	.string "memories the rest may keep.$"
 
 MossdeepCity_SpaceCenter_2F_Text_StevenWhyStealRocketFuel:
-	.string "MR. BENTO: Quando um nome some\n"
-	.string "da boca das pessoas, eu\p"
-	.string "escrevo. Nao para substituir\n"
-	.string "quem lembra; para deixar uma\p"
-	.string "pista.$"
+	.string "MR. BENTO: When a name falls out of\n"
+	.string "people's mouths, I write it down. Not to\l"
+	.string "replace whoever remembers it. To leave\l"
+	.string "a trail.$"
 
 MossdeepCity_SpaceCenter_2F_Text_MaxieUseFuelToEruptVolcano:
-	.string "Os sensores registram duas\n"
-	.string "correntes antigas sob Arauna:\p"
-	.string "uma conserva BONDS; a outra\n"
-	.string "permite que eles terminem. O\p"
-	.string "ARCHIVE tentou transformar\n"
-	.string "ambas em ferramentas.$"
+	.string "The sensors register two old currents\n"
+	.string "under Arauna: one preserves BONDS, the\l"
+	.string "other lets them end. The ARCHIVE tried\l"
+	.string "to turn both into tools.$"
 
 MossdeepCity_SpaceCenter_2F_Text_StevenAreYouReadyToBattle:
-	.string "MR. BENTO: Quando um nome some\n"
-	.string "da boca das pessoas, eu\p"
-	.string "escrevo. Nao para substituir\n"
-	.string "quem lembra; para deixar uma\p"
-	.string "pista.$"
+	.string "MR. BENTO: When a name falls out of\n"
+	.string "people's mouths, I write it down. Not to\l"
+	.string "replace whoever remembers it. To leave\l"
+	.string "a trail.$"
 
 MossdeepCity_SpaceCenter_2F_Text_StevenHurryGetReadyQuickly:
-	.string "MR. BENTO: Quando um nome some\n"
-	.string "da boca das pessoas, eu\p"
-	.string "escrevo. Nao para substituir\n"
-	.string "quem lembra; para deixar uma\p"
-	.string "pista.$"
+	.string "MR. BENTO: When a name falls out of\n"
+	.string "people's mouths, I write it down. Not to\l"
+	.string "replace whoever remembers it. To leave\l"
+	.string "a trail.$"
 
 MossdeepCity_SpaceCenter_2F_Text_JustWantToExpandLand:
 	.string "All I want…\n"
@@ -510,23 +499,19 @@ MossdeepCity_SpaceCenter_Text_TabithaDefeat:
 	.string "I'm with our leader…$"
 
 MossdeepCity_SpaceCenter_2F_Text_MaxieWeFailedIsAquaAlsoMisguided:
-	.string "Os sensores registram duas\n"
-	.string "correntes antigas sob Arauna:\p"
-	.string "uma conserva BONDS; a outra\n"
-	.string "permite que eles terminem. O\p"
-	.string "ARCHIVE tentou transformar\n"
-	.string "ambas em ferramentas.$"
+	.string "The sensors register two old currents\n"
+	.string "under Arauna: one preserves BONDS, the\l"
+	.string "other lets them end. The ARCHIVE tried\l"
+	.string "to turn both into tools.$"
 
 MossdeepCity_SpaceCenter_2F_Text_MaxieWeWillGiveUp:
-	.string "LUZIA: Ninguem tem o direito de\n"
-	.string "escolher que memoria merece\p"
-	.string "morrer. O HORIZON chama\n"
-	.string "censura de tratamento porque a\p"
-	.string "palavra soa mais limpa.$"
+	.string "LUZIA: Nobody has the right to choose\n"
+	.string "which memory deserves to die. HORIZON\l"
+	.string "calls censorship treatment because the\l"
+	.string "word sounds cleaner.$"
 
 MossdeepCity_SpaceCenter_2F_Text_StevenThankYouComeSeeMeAtHome:
-	.string "MR. BENTO: Quando um nome some\n"
-	.string "da boca das pessoas, eu\p"
-	.string "escrevo. Nao para substituir\n"
-	.string "quem lembra; para deixar uma\p"
-	.string "pista.$"
+	.string "MR. BENTO: When a name falls out of\n"
+	.string "people's mouths, I write it down. Not to\l"
+	.string "replace whoever remembers it. To leave\l"
+	.string "a trail.$"

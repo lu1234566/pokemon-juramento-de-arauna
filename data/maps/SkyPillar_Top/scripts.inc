@@ -178,7 +178,8 @@ SkyPillar_Top_Movement_CameraPanDown:
 	step_end
 
 SkyPillar_Top_Text_RayquazaFlewOff:
-	.string "O JURAMENTO nunca prometeu\nmemoria perfeita. Prometeu que\p"
-	.string "nenhuma pessoa escolheria\nsozinha o que todos os outros\p"
-	.string "deveriam esquecer.$"
+	.string "The OATH never promised perfect\n"
+	.string "memory. It promised that no single\l"
+	.string "person would decide alone what\l"
+	.string "everyone else had to forget.$"
 

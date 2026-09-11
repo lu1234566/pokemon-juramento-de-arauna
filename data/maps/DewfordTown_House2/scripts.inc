@@ -48,6 +48,7 @@ DewfordTown_House2_Text_ExplainSilkScarf:
 	.string "with almost all POKéMON!$"
 
 DewfordTown_House2_Text_BrawlySoCool:
-	.string "ADEMAR: O mar devolve coisas\nquando quer. Homem nenhum manda\p"
-	.string "na memoria da agua.$"
+	.string "ADEMAR: The sea gives things back when\n"
+	.string "it feels like it. No man gives orders to\l"
+	.string "the memory of water.$"
 

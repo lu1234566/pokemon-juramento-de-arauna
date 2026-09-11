@@ -10,10 +10,10 @@ RustboroCity_Flat2_3F_EventScript_Woman::
 	end
 
 RustboroCity_Flat2_3F_Text_PresidentCollectsRareStones:
-	.string "A DIRETORIA DO HORIZON guarda\n"
-	.string "amostras raras da serra.$"
+	.string "The HORIZON BOARD keeps rare samples\n"
+	.string "from the highlands here.$"
 
 RustboroCity_Flat2_3F_Text_PresidentsSonAlsoCollectsRareStones:
-	.string "Muita gente daqui coleciona\n"
-	.string "pedras e minerais de campo.$"
+	.string "A lot of people here collect stones and\n"
+	.string "minerals from the field.$"
 

@@ -16,8 +16,8 @@ RustboroCity_Flat2_1F_EventScript_Skitty::
 	end
 
 RustboroCity_Flat2_1F_Text_DevonWorkersLiveHere:
-	.string "Muita gente que trabalha no\n"
-	.string "HORIZON CONSORTIUM mora aqui.$"
+	.string "Plenty of the people who work at the\n"
+	.string "HORIZON CONSORTIUM live here.$"
 
 RustboroCity_Flat2_1F_Text_Skitty:
 	.string "Pombim: Gyaaaah!$"

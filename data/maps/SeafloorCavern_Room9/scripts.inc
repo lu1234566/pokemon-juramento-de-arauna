@@ -216,87 +216,91 @@ SeafloorCavern_Room9_Movement_Delay32:
 	step_end
 
 SeafloorCavern_Room9_Text_ArchieHoldItRightThere:
-	.string "OTACILIO: Eu vi o que uma\n"
-	.string "memoria pode fazer com quem\p"
-	.string "sobrevive. O LIVING ARCHIVE\n"
-	.string "existe para que ninguem seja\p"
-	.string "condenado a carregar a pior\n"
-	.string "noite da propria vida para\p"
-	.string "sempre.$"
+	.string "OTACILIO: I have seen what one memory\n"
+	.string "can do to the person who survives it.\l"
+	.string "The LIVING ARCHIVE exists so that\l"
+	.string "nobody is sentenced to carry the worst\l"
+	.string "night of their life forever.$"
 
 SeafloorCavern_Room9_Text_ArchieSoItWasYou:
-	.string "OTACILIO: M'BOI me ensinou que\nlembrar tambem pode destruir.\p"
-	.string "Eu me recuso a aceitar que\nsofrimento seja sagrado so\p"
-	.string "porque aconteceu.$"
+	.string "OTACILIO: M'BOI taught me that\n"
+	.string "remembering can destroy too. I refuse\l"
+	.string "to accept that suffering is sacred\l"
+	.string "just because it happened.$"
 
 SeafloorCavern_Room9_Text_ArchieBeholdKyogre:
-	.string "O ARCHIVE reage como se memoria\n"
-	.string "e esquecimento fossem forcas\p"
-	.string "fisicas. Pela primeira vez fica\n"
-	.string "claro que ele nunca esteve\p"
-	.string "realmente sob controle humano.$"
+	.string "The ARCHIVE responds as though memory\n"
+	.string "and forgetting were physical forces.\l"
+	.string "For the first time it is plain that it\l"
+	.string "was never really under human control.$"
 
 SeafloorCavern_Room9_Text_ArchieYouMustDisappear:
-	.string "OTACILIO: M'BOI me ensinou que\nlembrar tambem pode destruir.\p"
-	.string "Eu me recuso a aceitar que\nsofrimento seja sagrado so\p"
-	.string "porque aconteceu.$"
+	.string "OTACILIO: M'BOI taught me that\n"
+	.string "remembering can destroy too. I refuse\l"
+	.string "to accept that suffering is sacred\l"
+	.string "just because it happened.$"
 
 SeafloorCavern_Room9_Text_ArchieDefeat:
-	.string "OTACILIO: Preservar tudo nao e\ncompaixao. As vezes e apenas\p"
-	.string "obrigar uma ferida a continuar\naberta e chamar isso de\p"
-	.string "respeito.$"
+	.string "OTACILIO: Preserving everything is not\n"
+	.string "compassion. Sometimes it is only\l"
+	.string "forcing a wound to stay open and\l"
+	.string "calling that respect.$"
 
 SeafloorCavern_Room9_Text_ArchieWithThisRedOrb:
-	.string "Os sensores enlouquecem. As\n"
-	.string "cavernas de M'BOI ainda\p"
-	.string "carregam BONDS que o ARCHIVE\n"
-	.string "nunca conseguiu classificar.$"
+	.string "The sensors go wild. The M'BOI caverns\n"
+	.string "still carry BONDS the ARCHIVE was never\l"
+	.string "able to classify.$"
 
 SeafloorCavern_Room9_Text_RedOrbShinesByItself:
-	.string "O ARCHIVE reage como se memoria\n"
-	.string "e esquecimento fossem forcas\p"
-	.string "fisicas. Pela primeira vez fica\n"
-	.string "claro que ele nunca esteve\p"
-	.string "realmente sob controle humano.$"
+	.string "The ARCHIVE responds as though memory\n"
+	.string "and forgetting were physical forces.\l"
+	.string "For the first time it is plain that it\l"
+	.string "was never really under human control.$"
 
 SeafloorCavern_Room9_Text_ArchieWhereDidKyogreGo:
-	.string "Os sensores enlouquecem. As\n"
-	.string "cavernas de M'BOI ainda\p"
-	.string "carregam BONDS que o ARCHIVE\n"
-	.string "nunca conseguiu classificar.$"
+	.string "The sensors go wild. The M'BOI caverns\n"
+	.string "still carry BONDS the ARCHIVE was never\l"
+	.string "able to classify.$"
 
 SeafloorCavern_Room9_Text_ArchieAMessageFromOutside:
-	.string "OTACILIO: M'BOI me ensinou que\nlembrar tambem pode destruir.\p"
-	.string "Eu me recuso a aceitar que\nsofrimento seja sagrado so\p"
-	.string "porque aconteceu.$"
+	.string "OTACILIO: M'BOI taught me that\n"
+	.string "remembering can destroy too. I refuse\l"
+	.string "to accept that suffering is sacred\l"
+	.string "just because it happened.$"
 
 SeafloorCavern_Room9_Text_ArchieWhatRainingTooHard:
-	.string "Os sensores enlouquecem. As\n"
-	.string "cavernas de M'BOI ainda\p"
-	.string "carregam BONDS que o ARCHIVE\n"
-	.string "nunca conseguiu classificar.$"
+	.string "The sensors go wild. The M'BOI caverns\n"
+	.string "still carry BONDS the ARCHIVE was never\l"
+	.string "able to classify.$"
 
 SeafloorCavern_Room9_Text_ArchieWhyDidKyogreDisappear:
-	.string "Gravacoes antigas misturam\nordens de evacuacao, pedidos de\p"
-	.string "socorro e trechos que alguem\nmarcou para exclusao.$"
+	.string "Old recordings run evacuation orders,\n"
+	.string "calls for help and stretches that\l"
+	.string "somebody marked for deletion all\l"
+	.string "together.$"
 
 SeafloorCavern_Room9_Text_MaxieWhatHaveYouWrought:
-	.string "OTACILIO e LUZIA chegaram ao\nmesmo lugar por razoes opostas:\p"
-	.string "um quer encerrar a dor; a outra\nquer devolver tudo. Nenhum\p"
-	.string "perguntou a quem tera de viver\ncom a escolha.$"
+	.string "OTACILIO and LUZIA arrived at the same\n"
+	.string "place for opposite reasons: one wants\l"
+	.string "the pain to end, the other wants\l"
+	.string "everything given back. Neither asked\l"
+	.string "the people who will have to live with the\l"
+	.string "choice.$"
 
 SeafloorCavern_Room9_Text_ArchieDontGetAllHighAndMighty:
-	.string "Gravacoes antigas misturam\nordens de evacuacao, pedidos de\p"
-	.string "socorro e trechos que alguem\nmarcou para exclusao.$"
+	.string "Old recordings run evacuation orders,\n"
+	.string "calls for help and stretches that\l"
+	.string "somebody marked for deletion all\l"
+	.string "together.$"
 
 SeafloorCavern_Room9_Text_MaxieWeDontHaveTimeToArgue:
-	.string "LUZIA: O problema nunca foi\nlembrar demais. Foi deixar quem\p"
-	.string "tem poder decidir quais\nlembrancas os outros podem\p"
-	.string "conservar.$"
+	.string "LUZIA: The problem was never\n"
+	.string "remembering too much. It was letting\l"
+	.string "whoever holds power decide which\l"
+	.string "memories the rest may keep.$"
 
 SeafloorCavern_Room9_Text_MaxieComeOnPlayer:
-	.string "LUZIA: Ninguem tem o direito de\n"
-	.string "escolher que memoria merece\p"
-	.string "morrer. O HORIZON chama\n"
-	.string "censura de tratamento porque a\p"
-	.string "palavra soa mais limpa.$"
+	.string "LUZIA: Nobody has the right to choose\n"
+	.string "which memory deserves to die. HORIZON\l"
+	.string "calls censorship treatment because the\l"
+	.string "word sounds cleaner.$"

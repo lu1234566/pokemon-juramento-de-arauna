@@ -633,13 +633,13 @@ DewfordTown_Text_TinyIslandCommunity:
 	.string "away.$"
 
 DewfordTown_Text_TownSign:
-	.string "PORTO DAS REDES. Pescadores\nlembram de uma comunidade que\p"
-	.string "os registros oficiais dizem\nnunca ter existido.$"
+	.string "PORTO DAS REDES. The fishermen\n"
+	.string "remember a community the official\l"
+	.string "records say never existed.$"
 
 DewfordTown_Text_GymSign:
-	.string "PORTO DAS REDES\n"
-	.string "RESPONSAVEL: ADEMAR\p"
-	.string "O mar devolve historias.$"
+	.string "PORTO DAS REDES LEADER: ADEMAR\p"
+	.string "The sea gives stories back.$"
 
 DewfordTown_Text_HallSign:
 	.string "PORTO DAS REDES HALL\n"

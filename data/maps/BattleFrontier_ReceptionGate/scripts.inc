@@ -294,152 +294,172 @@ BattleFrontier_ReceptionGate_EventScript_ExitFrontierPassGuide::
 	end
 
 BattleFrontier_ReceptionGate_Text_FirstTimeHereThisWay:
-	.string "E sua primeira visita?\nPor favor, venha por aqui!$"
+	.string "Is this your first visit? Right this way,\n"
+	.string "please!$"
 
 BattleFrontier_ReceptionGate_Text_WelcomeToBattleFrontier:
-	.string "Este e o BATTLE CIRCUIT!\n"
-	.string "Bem-vindo ao desafio final.$"
+	.string "This is the BATTLE CIRCUIT! Welcome to\n"
+	.string "the final challenge.$"
 
 BattleFrontier_ReceptionGate_Text_IssueFrontierPass:
-	.string "Na primeira visita entregamos\n"
-	.string "o CIRCUIT PASS.\p"
-	.string "Ele vale em todas as instalacoes\n"
-	.string "deste complexo.\p"
-	.string "Aqui esta!$"
+	.string "On a first visit we hand out the\n"
+	.string "CIRCUIT PASS.\p"
+	.string "It's good at every facility in this\n"
+	.string "complex.\p"
+	.string "Here you are!$"
 
 BattleFrontier_ReceptionGate_Text_ObtainedFrontierPass:
-	.string "{PLAYER} recebeu o\n"
-	.string "CIRCUIT PASS.$"
+	.string "{PLAYER} received the CIRCUIT PASS.$"
 
 BattleFrontier_ReceptionGate_Text_PlacedTrainerCardInFrontierPass:
-	.string "Os dados do TREINADOR foram\nregistrados no PASSE.$"
+	.string "The TRAINER's data was recorded on the\n"
+	.string "PASS.$"
 
 BattleFrontier_ReceptionGate_Text_EnjoyBattleFrontier:
-	.string "Aproveite tudo que o BATTLE CIRCUIT\n"
-	.string "oferece!$"
+	.string "Make the most of everything the BATTLE\n"
+	.string "CIRCUIT has to offer!$"
 
 BattleFrontier_ReceptionGate_Text_IfItIsntPlayerYouCame:
-	.string "???: {PLAYER}{KUN}! Entao voce veio.$"
+	.string "???: {PLAYER}{KUN}! So you came.$"
 
 BattleFrontier_ReceptionGate_Text_OhMrScottGoodDay:
-	.string "GUIA: Ah! MR. BENTO!\n"
-	.string "Bom dia, senhor!$"
+	.string "GUIDE: Ah! MR. BENTO! Good morning, sir!$"
 
 BattleFrontier_ReceptionGate_Text_ScottGreatToSeeYouHere:
-	.string "MR. BENTO: Bom ver voce aqui.\n"
-	.string "Explore tudo com calma.\p"
-	.string "Quero que descubra ate onde\n"
-	.string "seu modo de batalhar aguenta.\p"
-	.string "Tenho um quarto aqui perto.\n"
-	.string "Passe la quando quiser.$"
+	.string "MR. BENTO: Good to see you here. Take\n"
+	.string "your time and look around.\p"
+	.string "I want you to find out how far your way\n"
+	.string "of battling holds up.\p"
+	.string "I keep a room nearby. Drop in whenever\n"
+	.string "you like.$"
 
 BattleFrontier_ReceptionGate_Text_YourGuideToFacilities:
-	.string "Sou o guia das instalacoes do\n"
-	.string "BATTLE CIRCUIT.$"
+	.string "I'm the guide to the BATTLE CIRCUIT\n"
+	.string "facilities.$"
 
 BattleFrontier_ReceptionGate_Text_LearnAboutWhich2:
-	.string "Sobre qual quer saber?$"
+	.string "Which one would you like to know about?$"
 
 BattleFrontier_ReceptionGate_Text_BattleTowerInfo:
-	.string "A BATTLE TOWER e a grande torre\n"
-	.string "e simbolo do CIRCUIT.\p"
-	.string "Ha desafios SINGLE, DOUBLE,\n"
-	.string "MULTI e LINK MULTI.$"
+	.string "The BATTLE TOWER is the great tower,\n"
+	.string "the symbol of the CIRCUIT.\p"
+	.string "There are SINGLE, DOUBLE, MULTI and\n"
+	.string "LINK MULTI challenges.$"
 
 BattleFrontier_ReceptionGate_Text_BattleDomeInfo:
-	.string "O BATTLE DOME e o predio em\nforma de grande ovo.\p"
-	.string "La ocorrem torneios em duas\nmodalidades: SINGLE e DOUBLE.$"
+	.string "The BATTLE DOME is the building shaped\n"
+	.string "like a great egg.\p"
+	.string "It runs tournaments in two formats:\n"
+	.string "SINGLE and DOUBLE.$"
 
 BattleFrontier_ReceptionGate_Text_BattlePalaceInfo:
-	.string "O BATTLE PALACE e o predio\nvermelho do lado direito.\p"
-	.string "Ha desafios SINGLE e DOUBLE.$"
+	.string "The BATTLE PALACE is the red building\n"
+	.string "on the right.\p"
+	.string "There are SINGLE and DOUBLE\n"
+	.string "challenges.$"
 
 BattleFrontier_ReceptionGate_Text_BattleArenaInfo:
-	.string "A BATTLE ARENA fica na parte\n"
-	.string "central direita do CIRCUIT.\p"
-	.string "Ali ocorre um torneio curto\n"
-	.string "baseado em nocautes.$"
+	.string "The BATTLE ARENA is in the middle right\n"
+	.string "of the CIRCUIT.\p"
+	.string "It runs a short knockout tournament.$"
 
 BattleFrontier_ReceptionGate_Text_BattleFactoryInfo:
-	.string "A BATTLE FACTORY e o grande\npredio mais perto da entrada.\p"
-	.string "Ali voce luta com POKéMON\nemprestados e pode troca-los.\p"
-	.string "Ha modalidades SINGLE e DOUBLE.$"
+	.string "The BATTLE FACTORY is the large\n"
+	.string "building nearest the entrance.\p"
+	.string "You battle there with rented POKéMON\n"
+	.string "and may trade them.\p"
+	.string "There are SINGLE and DOUBLE formats.$"
 
 BattleFrontier_ReceptionGate_Text_BattlePikeInfo:
-	.string "A BATTLE PIKE e o predio com\nforma de POKéMON a esquerda.\p"
-	.string "Cada sala obriga voce a fazer\numa escolha antes de seguir.$"
+	.string "The BATTLE PIKE is the POKéMON-shaped\n"
+	.string "building on the left.\p"
+	.string "Every room makes you choose before you\n"
+	.string "go on.$"
 
 BattleFrontier_ReceptionGate_Text_BattlePyramidInfo:
-	.string "A BATTLE PYRAMID e a enorme\npiramide do complexo.\p"
-	.string "O desafio exige explorar e\nvencer batalhas ate o topo.$"
+	.string "The BATTLE PYRAMID is the huge pyramid\n"
+	.string "in the complex.\p"
+	.string "The challenge is to explore and win your\n"
+	.string "way to the top.$"
 
 BattleFrontier_ReceptionGate_Text_RankingHallInfo:
-	.string "O RANKING HALL fica perto da\n"
-	.string "BATTLE TOWER.\p"
-	.string "La ficam os melhores registros\n"
-	.string "de quem enfrentou o CIRCUIT.$"
+	.string "The RANKING HALL is near the BATTLE\n"
+	.string "TOWER.\p"
+	.string "It holds the best records of everyone\n"
+	.string "who has taken on the CIRCUIT.$"
 
 BattleFrontier_ReceptionGate_Text_ExchangeCornerInfo:
-	.string "O EXCHANGE CORNER fica perto\nda BATTLE TOWER.\p"
-	.string "Troque seus Pontos de Batalha\npor recompensas ali.$"
+	.string "The EXCHANGE CORNER is near the BATTLE\n"
+	.string "TOWER.\p"
+	.string "Trade your Battle Points for rewards\n"
+	.string "there.$"
 
 BattleFrontier_ReceptionGate_Text_YourGuideToRules:
-	.string "Sou o guia das regras comuns\n"
-	.string "aos desafios do CIRCUIT.$"
+	.string "I'm the guide to the rules the CIRCUIT\n"
+	.string "challenges have in common.$"
 
 BattleFrontier_ReceptionGate_Text_LearnAboutWhat:
-	.string "Sobre qual regra quer saber?$"
+	.string "Which rule would you like to know about?$"
 
 BattleFrontier_ReceptionGate_Text_LevelModeInfo:
-	.string "Os desafios usam dois modos:\nLevel 50 e Open Level.$"
+	.string "The challenges use two modes: Level 50\n"
+	.string "and Open Level.$"
 
 BattleFrontier_ReceptionGate_Text_Level50Info:
-	.string "No Level 50 entram POKéMON de\nnivel 50 ou menos.\p"
-	.string "Seus adversarios nunca terao\nPOKéMON abaixo do nivel 50.\p"
-	.string "E o modo indicado para comecar.$"
+	.string "Level 50 takes POKéMON at level 50 or\n"
+	.string "below.\p"
+	.string "Your opponents will never bring POKéMON\n"
+	.string "under level 50.\p"
+	.string "It's the mode to start with.$"
 
 BattleFrontier_ReceptionGate_Text_OpenLevelInfo:
-	.string "No Open Level nao ha limite de\nnivel para entrar.\p"
-	.string "Os adversarios acompanham o\nnivel dos seus POKéMON,\p"
-	.string "mas nunca ficam abaixo do\nnivel 60.$"
+	.string "Open Level has no level limit to enter.\p"
+	.string "Opponents follow the level of your\n"
+	.string "POKéMON,\p"
+	.string "but never drop below level 60.$"
 
 BattleFrontier_ReceptionGate_Text_MonEntryInfo:
-	.string "Quase todo POKéMON pode entrar\nnos desafios.\p"
-	.string "OVOS e algumas especies nao\nsao permitidos.\p"
-	.string "A quantidade exigida varia\nentre as instalacoes.\p"
-	.string "Nao use dois POKéMON da mesma\nespecie no mesmo desafio.$"
+	.string "Almost any POKéMON can enter the\n"
+	.string "challenges.\p"
+	.string "EGGS and a few species aren't allowed.\p"
+	.string "How many you need varies between\n"
+	.string "facilities.\p"
+	.string "Don't use two POKéMON of the same\n"
+	.string "species in one challenge.$"
 
 BattleFrontier_ReceptionGate_Text_HoldItemsInfo:
-	.string "POKéMON inscritos nao podem\nsegurar itens iguais.\p"
-	.string "Cada integrante deve entrar\ncom um item diferente.$"
+	.string "Entered POKéMON can't hold the same\n"
+	.string "items.\p"
+	.string "Every member has to come in with a\n"
+	.string "different item.$"
 
 BattleFrontier_ReceptionGate_Text_YourGuideToFrontierPass:
-	.string "Sou o guia do CIRCUIT PASS.$"
+	.string "I'm the guide to the CIRCUIT PASS.$"
 
 BattleFrontier_ReceptionGate_Text_LearnAboutWhich1:
-	.string "Sobre qual parte quer saber?$"
+	.string "Which part would you like to know\n"
+	.string "about?$"
 
 BattleFrontier_ReceptionGate_Text_SymbolsInfo:
-	.string "O CIRCUIT possui sete grandes\n"
-	.string "instalacoes.\p"
-	.string "Quem se destaca pode receber\n"
-	.string "um SIMBOLO em cada uma.\p"
-	.string "Para conquista-los, sera preciso\n"
-	.string "vencer repetidas vezes.\p"
-	.string "Nao e facil. Boa sorte!$"
+	.string "The CIRCUIT has seven great facilities.\p"
+	.string "Anyone who stands out can be given a\n"
+	.string "SYMBOL at each one.\p"
+	.string "To earn them, you'll have to win again\n"
+	.string "and again.\p"
+	.string "It isn't easy. Good luck!$"
 
 BattleFrontier_ReceptionGate_Text_RecordedBattleInfo:
-	.string "O PASSE pode guardar o registro\n"
-	.string "de uma batalha.\p"
-	.string "Pode ser uma luta com amigos\n"
-	.string "ou um desafio do CIRCUIT,\p"
-	.string "exceto partidas da BATTLE PIKE\n"
-	.string "e da BATTLE PYRAMID.\p"
-	.string "Voce decide ao fim da batalha\n"
-	.string "se quer salvar o registro.$"
+	.string "The PASS can keep the record of a\n"
+	.string "battle.\p"
+	.string "It can be a bout with friends or a\n"
+	.string "CIRCUIT challenge,\p"
+	.string "apart from matches at the BATTLE PIKE\n"
+	.string "and the BATTLE PYRAMID.\p"
+	.string "You decide at the end of a battle\n"
+	.string "whether to save the record.$"
 
 BattleFrontier_ReceptionGate_Text_BattlePointsInfo:
-	.string "Pontos de Batalha premiam quem\n"
-	.string "se destaca no CIRCUIT.\p"
-	.string "Eles podem ser trocados por\n"
-	.string "recompensas no EXCHANGE CORNER.$"
+	.string "Battle Points reward anyone who stands\n"
+	.string "out on the CIRCUIT.\p"
+	.string "They can be traded for rewards at the\n"
+	.string "EXCHANGE CORNER.$"

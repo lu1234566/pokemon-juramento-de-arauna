@@ -15,6 +15,6 @@ RustboroCity_House2_Text_TrainerSchoolExcellent:
 	.string "become a GYM LEADER.$"
 
 RustboroCity_House2_Text_RoxanneKnowsALot:
-	.string "DALVA: Pedra guarda marcas.\nAlgumas rachaduras contam mais\p"
-	.string "que monumentos inteiros.$"
+	.string "DALVA: Stone keeps its marks. Some\n"
+	.string "cracks say more than whole monuments.$"
 

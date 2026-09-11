@@ -195,33 +195,31 @@ SootopolisCity_Gym_1F_Text_GymGuidePostVictory:
 	.string "set for the POKéMON LEAGUE challenge!$"
 
 SootopolisCity_Gym_1F_Text_JuanIntro:
-	.string "MRS. CELINA: Viver e aprender o\n"
-	.string "que guardar e o que deixar\p"
-	.string "seguir. Escolher isso pelo\n"
-	.string "outro e que nao cabe a nos.$"
+	.string "MRS. CELINA: Living is learning what to\n"
+	.string "keep and what to let go. Choosing that\l"
+	.string "for someone else is what is not ours to\l"
+	.string "do.$"
 
 @ NOTE: This defeat text actually causes a buffer overflow. It's about 50 bytes too long for
 @ the gDisplayedStringBattle buffer that it's put into, and it stomps all over the gBattleTextBuffs
 @ after, as well as the otherwise unused array after that. One wonders if that's the reason for
 @ the existence of that unused array of ints.
 SootopolisCity_Gym_1F_Text_JuanDefeat:
-	.string "MRS. CELINA: Viver e aprender o\n"
-	.string "que guardar e o que deixar\p"
-	.string "seguir. Escolher isso pelo\n"
-	.string "outro e que nao cabe a nos.$"
+	.string "MRS. CELINA: Living is learning what to\n"
+	.string "keep and what to let go. Choosing that\l"
+	.string "for someone else is what is not ours to\l"
+	.string "do.$"
 
 SootopolisCity_Gym_1F_Text_ReceivedRainBadge:
-	.string "{PLAYER} recebeu a\n"
-	.string "SPRING BADGE de\n"
-	.string "MRS. CELINA.$"
+	.string "{PLAYER} received the SPRING BADGE\n"
+	.string "from MRS. CELINA.$"
 
 SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis:
-	.string "A SPRING BADGE garante\n"
-	.string "total obediência dos POKéMON.\p"
-	.string "Também permite usar WATERFALL\n"
-	.string "para subir por cachoeiras.\p"
-	.string "Para lembrar nossa batalha,\n"
-	.string "leve isto…$"
+	.string "The SPRING BADGE earns you the full\n"
+	.string "obedience of your POKéMON.\p"
+	.string "It also lets you use WATERFALL to climb\n"
+	.string "falling water.\p"
+	.string "To remember our battle by, take this…$"
 
 SootopolisCity_Gym_1F_Text_ExplainWaterPulse:
 	.string "The TECHNICAL MACHINE I handed you\n"
@@ -235,10 +233,10 @@ SootopolisCity_Gym_1F_Text_RegisteredJuan:
 	.string "in the POKéNAV.$"
 
 SootopolisCity_Gym_1F_Text_JuanPostBattle:
-	.string "MRS. CELINA: Viver e aprender o\n"
-	.string "que guardar e o que deixar\p"
-	.string "seguir. Escolher isso pelo\n"
-	.string "outro e que nao cabe a nos.$"
+	.string "MRS. CELINA: Living is learning what to\n"
+	.string "keep and what to let go. Choosing that\l"
+	.string "for someone else is what is not ours to\l"
+	.string "do.$"
 
 SootopolisCity_Gym_1F_Text_GoGetFortreeBadge:
 	.string "There remains but one BADGE to\n"
@@ -256,26 +254,26 @@ SootopolisCity_Gym_1F_Text_GymStatueCertified:
 	.string "{PLAYER}$"
 
 SootopolisCity_Gym_1F_Text_JuanPreRematch:
-	.string "MRS. CELINA: Viver e aprender o\n"
-	.string "que guardar e o que deixar\p"
-	.string "seguir. Escolher isso pelo\n"
-	.string "outro e que nao cabe a nos.$"
+	.string "MRS. CELINA: Living is learning what to\n"
+	.string "keep and what to let go. Choosing that\l"
+	.string "for someone else is what is not ours to\l"
+	.string "do.$"
 
 SootopolisCity_Gym_1F_Text_JuanRematchDefeat:
-	.string "MRS. CELINA: Viver e aprender o\n"
-	.string "que guardar e o que deixar\p"
-	.string "seguir. Escolher isso pelo\n"
-	.string "outro e que nao cabe a nos.$"
+	.string "MRS. CELINA: Living is learning what to\n"
+	.string "keep and what to let go. Choosing that\l"
+	.string "for someone else is what is not ours to\l"
+	.string "do.$"
 
 SootopolisCity_Gym_1F_Text_JuanPostRematch:
-	.string "MRS. CELINA: Viver e aprender o\n"
-	.string "que guardar e o que deixar\p"
-	.string "seguir. Escolher isso pelo\n"
-	.string "outro e que nao cabe a nos.$"
+	.string "MRS. CELINA: Living is learning what to\n"
+	.string "keep and what to let go. Choosing that\l"
+	.string "for someone else is what is not ours to\l"
+	.string "do.$"
 
 SootopolisCity_Gym_1F_Text_JuanRematchNeedTwoMons:
-	.string "MRS. CELINA: Viver e aprender o\n"
-	.string "que guardar e o que deixar\p"
-	.string "seguir. Escolher isso pelo\n"
-	.string "outro e que nao cabe a nos.$"
+	.string "MRS. CELINA: Living is learning what to\n"
+	.string "keep and what to let go. Choosing that\l"
+	.string "for someone else is what is not ours to\l"
+	.string "do.$"
 

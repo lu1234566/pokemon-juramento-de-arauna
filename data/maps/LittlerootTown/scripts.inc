@@ -905,85 +905,80 @@ LittlerootTown_EventScript_GiveRunningShoes::
 	return
 
 LittlerootTown_Text_OurNewHomeLetsGoInside:
-	.string "MOM: {PLAYER}, chegamos.\p"
-	.string "Esta e a VILA AMANHECER.\n"
-	.string "Nossa nova casa fica logo ali.\p"
-	.string "Vai levar um tempo para tudo\n"
-	.string "parecer nosso de verdade.\p"
-	.string "Venha. Quero que veja seu quarto.$"
+	.string "MOM: {PLAYER}, we're here.\p"
+	.string "This is VILA AMANHECER. Our new house\n"
+	.string "is right over there.\p"
+	.string "It will take a while before any of it\n"
+	.string "really feels like ours.\p"
+	.string "Come. I want you to see your room.$"
 
 LittlerootTown_Text_WaitPlayer:
-	.string "MOM: Espere, {PLAYER}!$"
+	.string "MOM: Wait, {PLAYER}!$"
 
 LittlerootTown_Text_WearTheseRunningShoes:
-	.string "MOM: {PLAYER}! Encontrou ANAHI?\p"
-	.string "E esse POKéMON... entao voces\n"
-	.string "decidiram viajar juntos.\p"
-	.string "ELIAS vai querer saber disso.\p"
-	.string "Se vai seguir pela estrada,\n"
-	.string "leve estes TENIS DE CORRIDA.$"
+	.string "MOM: {PLAYER}! Did you find ANAHI?\p"
+	.string "And that POKéMON... so the two of you\n"
+	.string "decided to travel together.\p"
+	.string "ELIAS will want to hear about this.\p"
+	.string "If you're taking the road, take these\n"
+	.string "RUNNING SHOES.$"
 
 LittlerootTown_Text_SwitchShoesWithRunningShoes:
-	.string "{PLAYER} calcou os\n"
-	.string "TENIS DE CORRIDA.$"
+	.string "{PLAYER} put on the RUNNING SHOES.$"
 
 LittlerootTown_Text_ExplainRunningShoes:
-	.string "MOM: Segure o Botao B para\n"
-	.string "correr quando estiver usando\l"
-	.string "os TENIS DE CORRIDA.$"
+	.string "MOM: Hold the B Button to run while\n"
+	.string "you're wearing the RUNNING SHOES.$"
 
 LittlerootTown_Text_ComeHomeIfAnythingHappens:
-	.string "MOM: Agora voce tem seu proprio\n"
-	.string "companheiro de viagem.\p"
-	.string "Nao tente carregar tudo sozinho.\n"
-	.string "Se precisar, volte para casa.\p"
-	.string "E mande noticias, {PLAYER}.$"
+	.string "MOM: Now you have a traveling partner\n"
+	.string "of your own.\p"
+	.string "Don't try to carry everything alone.\n"
+	.string "Come home if you need to.\p"
+	.string "And send word, {PLAYER}.$"
 
 LittlerootTown_Text_CanUsePCToStoreItems:
-	.string "Os PCs guardam itens e dados\n"
-	.string "de POKéMON.\p"
-	.string "Ainda acho estranho confiar\n"
-	.string "tanta coisa a uma tela.$"
+	.string "The PCs hold items and POKéMON data.\p"
+	.string "I still find it strange, trusting that\n"
+	.string "much to a screen.$"
 
 LittlerootTown_Text_BirchSpendsDaysInLab:
-	.string "A PROFESSORA ANAHI vive no campo.\p"
-	.string "Quando o laboratorio esta vazio,\n"
-	.string "ela deve estar seguindo alguma\l"
-	.string "pista pela mata.$"
+	.string "PROF. ANAHI lives out in the field.\p"
+	.string "When the lab is empty, she is off\n"
+	.string "following some trail through the woods.$"
 
 LittlerootTown_Text_IfYouGoInGrassPokemonWillJumpOut:
-	.string "Ei! Nao siga pela mata sozinho.\p"
-	.string "POKéMON selvagens aparecem no\n"
-	.string "capim alto.$"
+	.string "Hey! Don't head into the woods alone.\p"
+	.string "Wild POKéMON turn up in the tall grass.$"
 
 LittlerootTown_Text_DangerousIfYouDontHavePokemon:
-	.string "Sem um POKéMON ao seu lado,\n"
-	.string "e perigoso seguir por ali.$"
+	.string "Without a POKéMON at your side, it's\n"
+	.string "dangerous to go that way.$"
 
 LittlerootTown_Text_CanYouGoSeeWhatsHappening:
-	.string "Tem alguma coisa acontecendo\n"
-	.string "mais adiante!\p"
-	.string "Ouvi a PROFESSORA ANAHI e um\n"
-	.string "POKéMON no meio da mata.\p"
-	.string "Pode ir ver se ela esta bem?$"
+	.string "Something's happening further up the\n"
+	.string "path!\p"
+	.string "I heard PROF. ANAHI and a POKéMON in\n"
+	.string "the middle of the woods.\p"
+	.string "Could you go and see if she's all right?$"
 
 LittlerootTown_Text_YouSavedBirch:
-	.string "Voce ajudou a PROFESSORA ANAHI!\p"
-	.string "Eu ouvi a confusao daqui.\n"
-	.string "Ainda bem que os dois voltaram.$"
+	.string "You helped PROF. ANAHI!\p"
+	.string "I heard the commotion from here. I'm\n"
+	.string "glad they both came back.$"
 
 LittlerootTown_Text_GoodLuckCatchingPokemon:
-	.string "Vai seguir viagem com POKéMON?\n"
-	.string "Boa sorte, {PLAYER}!$"
+	.string "Off traveling with POKéMON? Good luck,\n"
+	.string "{PLAYER}!$"
 
 LittlerootTown_Text_TownSign:
-	.string "VILA AMANHECER. Aqui o\nJuramento ainda e contado de\p"
-	.string "boca em boca. Dona Zila diz que\num nome so morre quando ninguem\p"
-	.string "mais o pronuncia.$"
+	.string "VILA AMANHECER. The OATH is still\n"
+	.string "passed mouth to mouth here. Mrs. Zila\l"
+	.string "says a name only dies when nobody says\l"
+	.string "it any more.$"
 
 LittlerootTown_Text_ProfBirchsLab:
-	.string "LABORATORIO DE CAMPO\n"
-	.string "PROFESSORA ANAHI.$"
+	.string "PROF. ANAHI'S FIELD LAB.$"
 
 LittlerootTown_Text_PlayersHouse:
 	.string "CASA DE {PLAYER}$"
@@ -992,7 +987,7 @@ LittlerootTown_Text_ProfBirchsHouse:
 	.string "CASA DE CIRO$"
 
 LittlerootTown_Text_BirchSomethingToShowYouAtLab:
-	.string "ANAHI: {PLAYER}, venha comigo.\p"
-	.string "Encontrei algo nos registros\n"
-	.string "que quero mostrar no laboratorio.$"
+	.string "ANAHI: {PLAYER}, come with me.\p"
+	.string "I found something in the records I want\n"
+	.string "to show you at the lab.$"
 

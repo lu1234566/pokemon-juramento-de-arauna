@@ -126,15 +126,14 @@ RustboroCity_Gym_Text_GymGuideAdvice:
 	.string "Well, go for it!$"
 
 RustboroCity_Gym_Text_GymGuidePostVictory:
-	.string "Whoa! What a breathtaking victory!\n"
-	.string "My cheering must've worked!\p"
-	.string "Great!\n"
-	.string "Check your TRAINER CARD.\p"
-	.string "A RIFT BADGE deve estar\n"
-	.string "registrada no seu TRAINER CARD.\p"
+	.string "Whoa! What a breathtaking victory! My\n"
+	.string "cheering must've worked!\p"
+	.string "Great! Check your TRAINER CARD.\p"
+	.string "The RIFT BADGE should be recorded on\n"
+	.string "your TRAINER CARD.\p"
 	.string "In other words…\p"
-	.string "You've climbed the first step on\n"
-	.string "the stairs to the CHAMPIONSHIP!\p"
+	.string "You've climbed the first step on the\n"
+	.string "stairs to the CHAMPIONSHIP!\p"
 	.string "That's got to feel awesome!$"
 
 RustboroCity_Gym_Text_JoshIntro:
@@ -176,23 +175,22 @@ RustboroCity_Gym_Text_MarcPostBattle:
 	.string "pick the ROCK type at her young age.$"
 
 RustboroCity_Gym_Text_RoxanneIntro:
-	.string "DALVA: Pedra guarda marcas.\nAlgumas rachaduras contam mais\p"
-	.string "que monumentos inteiros.$"
+	.string "DALVA: Stone keeps its marks. Some\n"
+	.string "cracks say more than whole monuments.$"
 
 RustboroCity_Gym_Text_RoxanneDefeat:
-	.string "DALVA: Pedra guarda marcas.\nAlgumas rachaduras contam mais\p"
-	.string "que monumentos inteiros.$"
+	.string "DALVA: Stone keeps its marks. Some\n"
+	.string "cracks say more than whole monuments.$"
 
 RustboroCity_Gym_Text_ReceivedStoneBadge:
-	.string "{PLAYER} recebeu a\n"
-	.string "RIFT BADGE de DALVA.$"
+	.string "{PLAYER} received the RIFT BADGE from\n"
+	.string "DALVA.$"
 
 RustboroCity_Gym_Text_StoneBadgeInfoTakeThis:
-	.string "A RIFT BADGE aumenta o\n"
-	.string "ATAQUE dos seus POKéMON.\p"
-	.string "Ela também permite usar CUT\n"
-	.string "fora de batalha.\p"
-	.string "Leve isto com você também.$"
+	.string "The RIFT BADGE raises your POKéMON's\n"
+	.string "ATTACK.\p"
+	.string "It also lets you use CUT outside battle.\p"
+	.string "Take this with you as well.$"
 
 RustboroCity_Gym_Text_ExplainRockTomb:
 	.string "That TECHNICAL MACHINE, TM39,\n"
@@ -205,8 +203,8 @@ RustboroCity_Gym_Text_ExplainRockTomb:
 	.string "so think before you use it.$"
 
 RustboroCity_Gym_Text_RoxannePostBattle:
-	.string "DALVA: Pedra guarda marcas.\nAlgumas rachaduras contam mais\p"
-	.string "que monumentos inteiros.$"
+	.string "DALVA: Stone keeps its marks. Some\n"
+	.string "cracks say more than whole monuments.$"
 
 RustboroCity_Gym_Text_GymStatue:
 	.string "SERRA DO UIVO POKéMON GYM$"
@@ -238,17 +236,17 @@ RustboroCity_Gym_Text_RegisteredRoxanne:
 	.string "in the POKéNAV.$"
 
 RustboroCity_Gym_Text_RoxannePreRematch:
-	.string "DALVA: Pedra guarda marcas.\nAlgumas rachaduras contam mais\p"
-	.string "que monumentos inteiros.$"
+	.string "DALVA: Stone keeps its marks. Some\n"
+	.string "cracks say more than whole monuments.$"
 
 RustboroCity_Gym_Text_RoxanneRematchDefeat:
-	.string "DALVA: Pedra guarda marcas.\nAlgumas rachaduras contam mais\p"
-	.string "que monumentos inteiros.$"
+	.string "DALVA: Stone keeps its marks. Some\n"
+	.string "cracks say more than whole monuments.$"
 
 RustboroCity_Gym_Text_RoxannePostRematch:
-	.string "DALVA: Pedra guarda marcas.\nAlgumas rachaduras contam mais\p"
-	.string "que monumentos inteiros.$"
+	.string "DALVA: Stone keeps its marks. Some\n"
+	.string "cracks say more than whole monuments.$"
 
 RustboroCity_Gym_Text_RoxanneRematchNeedTwoMons:
-	.string "DALVA: Pedra guarda marcas.\nAlgumas rachaduras contam mais\p"
-	.string "que monumentos inteiros.$"
+	.string "DALVA: Stone keeps its marks. Some\n"
+	.string "cracks say more than whole monuments.$"

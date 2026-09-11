@@ -220,75 +220,75 @@ EverGrandeCity_ChampionsRoom_Movement_BirchArrives:
 	step_end
 
 EverGrandeCity_ChampionsRoom_Text_IntroSpeech:
-	.string "AMALIA: A Liga nao pode mais\n"
-	.string "chamar silencio de ordem.\p"
-	.string "Se veio ate aqui, mostre-me\n"
-	.string "o que Arauna fez de voce.$"
+	.string "AMALIA: The LEAGUE cannot go on calling\n"
+	.string "silence order.\p"
+	.string "If you came this far, show me what\n"
+	.string "Arauna has made of you.$"
 
 EverGrandeCity_ChampionsRoom_Text_Defeat:
-	.string "AMALIA: Entao e assim que\n"
-	.string "Arauna muda de maos...\p"
-	.string "Voce venceu. E venceu sem\n"
-	.string "pedir que o passado sumisse.$"
+	.string "AMALIA: So this is how Arauna changes\n"
+	.string "hands...\p"
+	.string "You won. And you won without asking the\n"
+	.string "past to disappear.$"
 
 EverGrandeCity_ChampionsRoom_Text_PostBattleSpeech:
-	.string "AMALIA: O titulo agora e seu.\n"
-	.string "Mas o titulo nao apaga nada.\p"
-	.string "Ele apenas aumenta o peso\n"
-	.string "do que voce escolhe lembrar.$"
+	.string "AMALIA: The title is yours now. But a\n"
+	.string "title erases nothing.\p"
+	.string "All it does is add weight to what you\n"
+	.string "choose to remember.$"
 
 EverGrandeCity_ChampionsRoom_Text_MayAdvice:
-	.string "CIRO: {PLAYER}! Eu vim te dizer\n"
-	.string "uma coisa antes da luta...\p"
-	.string "Use tudo o que aprendeu. E nao\n"
-	.string "lute para provar nada a mim.$"
+	.string "CIRO: {PLAYER}! I came to tell you\n"
+	.string "something before the fight...\p"
+	.string "Use everything you have learned. And do\n"
+	.string "not fight to prove anything to me.$"
 
 EverGrandeCity_ChampionsRoom_Text_MayItsAlreadyOver:
-	.string "CIRO: ...Espera.\p"
-	.string "Ja acabou? Voce venceu AMALIA?\p"
-	.string "Claro que venceu. Eu devia ter\n"
-	.string "chegado cinco minutos antes.$"
+	.string "CIRO: ...Wait.\p"
+	.string "It is over already? You beat AMALIA?\p"
+	.string "Of course you did. I should have got\n"
+	.string "here five minutes earlier.$"
 
 EverGrandeCity_ChampionsRoom_Text_BrendanAdvice:
-	.string "CIRO: {PLAYER}! Eu vim te dizer\n"
-	.string "uma coisa antes da luta...\p"
-	.string "Use tudo o que aprendeu. E nao\n"
-	.string "lute para provar nada a mim.$"
+	.string "CIRO: {PLAYER}! I came to tell you\n"
+	.string "something before the fight...\p"
+	.string "Use everything you have learned. And do\n"
+	.string "not fight to prove anything to me.$"
 
 EverGrandeCity_ChampionsRoom_Text_BrendanYouveWon:
-	.string "CIRO: ...Espera.\p"
-	.string "Ja acabou? Voce venceu AMALIA?\p"
-	.string "Claro que venceu. Eu devia ter\n"
-	.string "chegado cinco minutos antes.$"
+	.string "CIRO: ...Wait.\p"
+	.string "It is over already? You beat AMALIA?\p"
+	.string "Of course you did. I should have got\n"
+	.string "here five minutes earlier.$"
 
 EverGrandeCity_ChampionsRoom_Text_BirchArriveRatePokedex:
-	.string "ANAHI: Eu cheguei tarde tambem.\p"
-	.string "Antes de qualquer discurso,\n"
-	.string "quero ver sua POKéDEX.$"
+	.string "ANAHI: I was late myself.\p"
+	.string "Before any speeches, I want to see your\n"
+	.string "POKéDEX.$"
 
 EverGrandeCity_ChampionsRoom_Text_BirchCongratulations:
-	.string "ANAHI: Excelente, {PLAYER}.\p"
-	.string "Voce foi mais longe do que\n"
-	.string "qualquer relatorio mede.$"
+	.string "ANAHI: Splendid, {PLAYER}.\p"
+	.string "You have gone further than any report\n"
+	.string "can measure.$"
 
 EverGrandeCity_ChampionsRoom_Text_WallaceComeWithMe:
 	.string "AMALIA: {PLAYER}...\p"
-	.string "Nao. Agora devo dizer direito.\p"
-	.string "O novo nome da Liga e o seu.\p"
-	.string "Venha comigo.$"
+	.string "No. Let me say it properly.\p"
+	.string "The LEAGUE's new name is yours.\p"
+	.string "Come with me.$"
 
 EverGrandeCity_ChampionsRoom_Text_WallaceWaitOutside:
-	.string "AMALIA: Ciro. Anahi. Esperem.\p"
-	.string "O registro e de quem venceu.\n"
-	.string "Depois conversaremos.$"
+	.string "AMALIA: Ciro. Anahi. Wait.\p"
+	.string "The record belongs to whoever won. We\n"
+	.string "can talk afterwards.$"
 
 EverGrandeCity_ChampionsRoom_Text_MayCongratulations:
-	.string "CIRO: Eu ainda quero te vencer.\p"
-	.string "Mas hoje... parabens.\n"
-	.string "Voce mereceu isso.$"
+	.string "CIRO: I still want to beat you.\p"
+	.string "But today... congratulations. You\n"
+	.string "earned this.$"
 
 EverGrandeCity_ChampionsRoom_Text_BrendanCongratulations:
-	.string "CIRO: Eu ainda quero te vencer.\p"
-	.string "Mas hoje... parabens.\n"
-	.string "Voce mereceu isso.$"
+	.string "CIRO: I still want to beat you.\p"
+	.string "But today... congratulations. You\n"
+	.string "earned this.$"
 

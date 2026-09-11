@@ -83,25 +83,34 @@ VerdanturfTown_WandasHouse_EventScript_WallysAuntEverGrande::
 	end
 
 VerdanturfTown_WandasHouse_Text_StrongerSpeech:
-	.string "VAL: Eu ainda tenho medo. Mas\nagora sei que coragem nao e\p"
-	.string "esquecer o medo; e caminhar\nmesmo lembrando dele.$"
+	.string "VAL: I am still afraid. But I know now\n"
+	.string "that courage is not forgetting the\l"
+	.string "fear. It is walking on while you\l"
+	.string "remember it.$"
 
 VerdanturfTown_WandasHouse_Text_StrongerSpeechShort:
-	.string "VAL: Eu ainda tenho medo. Mas\nagora sei que coragem nao e\p"
-	.string "esquecer o medo; e caminhar\nmesmo lembrando dele.$"
+	.string "VAL: I am still afraid. But I know now\n"
+	.string "that courage is not forgetting the\l"
+	.string "fear. It is walking on while you\l"
+	.string "remember it.$"
 
 VerdanturfTown_WandasHouse_Text_WallysNextDoor:
-	.string "VAL: Eu ainda tenho medo. Mas\nagora sei que coragem nao e\p"
-	.string "esquecer o medo; e caminhar\nmesmo lembrando dele.$"
+	.string "VAL: I am still afraid. But I know now\n"
+	.string "that courage is not forgetting the\l"
+	.string "fear. It is walking on while you\l"
+	.string "remember it.$"
 
 VerdanturfTown_WandasHouse_Text_WallySlippedOff:
-	.string "VAL: Eu ainda tenho medo. Mas\nagora sei que coragem nao e\p"
-	.string "esquecer o medo; e caminhar\nmesmo lembrando dele.$"
+	.string "VAL: I am still afraid. But I know now\n"
+	.string "that courage is not forgetting the\l"
+	.string "fear. It is walking on while you\l"
+	.string "remember it.$"
 
 VerdanturfTown_WandasHouse_Text_WallyGoneThatFar:
-	.string "VAL: Passei muito tempo achando\nque precisava virar outra\p"
-	.string "pessoa para seguir viagem. Eu\nso precisava descobrir meu\p"
-	.string "proprio ritmo.$"
+	.string "VAL: I spent a long time thinking I had\n"
+	.string "to become someone else to keep\l"
+	.string "traveling. All I had to find was my own\l"
+	.string "pace.$"
 
 VerdanturfTown_WandasHouse_Text_MeetWanda:
 	.string "WANDA: You are?\n"
@@ -114,9 +123,10 @@ VerdanturfTown_WandasHouse_Text_MeetWanda:
 	.string "and healthy since he came here.$"
 
 VerdanturfTown_WandasHouse_Text_DontWorryAboutWally:
-	.string "VAL: Passei muito tempo achando\nque precisava virar outra\p"
-	.string "pessoa para seguir viagem. Eu\nso precisava descobrir meu\p"
-	.string "proprio ritmo.$"
+	.string "VAL: I spent a long time thinking I had\n"
+	.string "to become someone else to keep\l"
+	.string "traveling. All I had to find was my own\l"
+	.string "pace.$"
 
 VerdanturfTown_WandasHouse_Text_CanSeeGirlfriendEveryDay:
 	.string "Thanks to you, I can see my girlfriend\n"
@@ -137,11 +147,14 @@ VerdanturfTown_WandasHouse_Text_DaughtersBoyfriendWasDigging:
 	.string "It's so incredible!$"
 
 VerdanturfTown_WandasHouse_Text_IfAnythingHappenedToWally:
-	.string "VAL: Eu ainda tenho medo. Mas\nagora sei que coragem nao e\p"
-	.string "esquecer o medo; e caminhar\nmesmo lembrando dele.$"
+	.string "VAL: I am still afraid. But I know now\n"
+	.string "that courage is not forgetting the\l"
+	.string "fear. It is walking on while you\l"
+	.string "remember it.$"
 
 VerdanturfTown_WandasHouse_Text_WallyWasInEverGrande:
-	.string "VAL: Passei muito tempo achando\nque precisava virar outra\p"
-	.string "pessoa para seguir viagem. Eu\nso precisava descobrir meu\p"
-	.string "proprio ritmo.$"
+	.string "VAL: I spent a long time thinking I had\n"
+	.string "to become someone else to keep\l"
+	.string "traveling. All I had to find was my own\l"
+	.string "pace.$"
 

@@ -746,13 +746,13 @@ Route110_TrickHouseEntrance_Text_TheyCallMeTrickMaster:
 	.string "Wahahaha! Glad to meet you!$"
 
 Route110_TrickHouseEntrance_Text_ComeToChallengeTrickHouse:
-	.string "You, you've come to challenge\n"
-	.string "my CASA DOS TRUQUES, haven't you?\p"
-	.string "That's why you're here, isn't it?\n"
-	.string "Yes, it is!\p"
+	.string "You, you've come to challenge my TRICK\n"
+	.string "HOUSE, haven't you?\p"
+	.string "That's why you're here, isn't it? Yes, it\n"
+	.string "is!\p"
 	.string "Consider your challenge accepted!\p"
-	.string "Enter through the scroll there,\n"
-	.string "and let your challenge commence!\p"
+	.string "Enter through the scroll there, and let\n"
+	.string "your challenge commence!\p"
 	.string "I shall be waiting in the back!$"
 
 Route110_TrickHouseEntrance_Text_ItsAScroll:

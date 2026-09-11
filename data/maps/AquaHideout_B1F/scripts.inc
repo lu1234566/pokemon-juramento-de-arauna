@@ -107,75 +107,71 @@ AquaHideout_B1F_EventScript_Grunt7::
 	end
 
 AquaHideout_B1F_Text_Grunt2Intro:
-	.string "HORIZON: O projeto de M'BOI\n"
-	.string "foi um desastre. O ARCHIVE\p"
-	.string "atual existe justamente porque\n"
-	.string "aprendemos com ele. E o que\p"
-	.string "consta nos relatorios.$"
+	.string "HORIZON: The M'BOI project was a\n"
+	.string "disaster. The present ARCHIVE exists\l"
+	.string "precisely because we learned from it.\l"
+	.string "That is what the reports say.$"
 
 AquaHideout_B1F_Text_Grunt2Defeat:
-	.string "HORIZON: OTACILIO diz que\n"
-	.string "memoria sem escolha e outra\p"
-	.string "forma de prisao. Eu ainda estou\n"
-	.string "tentando decidir se concordo.$"
+	.string "HORIZON: OTACILIO says memory without\n"
+	.string "a choice is just another kind of prison.\l"
+	.string "I am still working out whether I agree.$"
 
 AquaHideout_B1F_Text_Grunt2PostBattle:
-	.string "HORIZON: Nao somos soldados.\n"
-	.string "Somos tecnicos, guardas e\p"
-	.string "pesquisadores. Isso nao torna\n"
-	.string "todas as nossas ordens certas.$"
+	.string "HORIZON: We are not soldiers. We are\n"
+	.string "technicians, guards and researchers.\l"
+	.string "That does not make every order we are\l"
+	.string "given right.$"
 
 AquaHideout_B1F_Text_Grunt3Intro:
-	.string "HORIZON: OTACILIO diz que\n"
-	.string "memoria sem escolha e outra\p"
-	.string "forma de prisao. Eu ainda estou\n"
-	.string "tentando decidir se concordo.$"
+	.string "HORIZON: OTACILIO says memory without\n"
+	.string "a choice is just another kind of prison.\l"
+	.string "I am still working out whether I agree.$"
 
 AquaHideout_B1F_Text_Grunt3Defeat:
-	.string "HORIZON: Nao somos soldados.\n"
-	.string "Somos tecnicos, guardas e\p"
-	.string "pesquisadores. Isso nao torna\n"
-	.string "todas as nossas ordens certas.$"
+	.string "HORIZON: We are not soldiers. We are\n"
+	.string "technicians, guards and researchers.\l"
+	.string "That does not make every order we are\l"
+	.string "given right.$"
 
 AquaHideout_B1F_Text_Grunt3PostBattle:
-	.string "HORIZON: O LIVING ARCHIVE nao\n"
-	.string "apaga pessoas. Ele separa\p"
-	.string "trauma de identidade. Pelo\n"
-	.string "menos e isso que nos ensinaram.$"
+	.string "HORIZON: The LIVING ARCHIVE does not\n"
+	.string "erase people. It separates trauma from\l"
+	.string "identity. At least that is what we were\l"
+	.string "taught.$"
 
 AquaHideout_B1F_Text_Grunt5Intro:
-	.string "HORIZON: Nao somos soldados.\n"
-	.string "Somos tecnicos, guardas e\p"
-	.string "pesquisadores. Isso nao torna\n"
-	.string "todas as nossas ordens certas.$"
+	.string "HORIZON: We are not soldiers. We are\n"
+	.string "technicians, guards and researchers.\l"
+	.string "That does not make every order we are\l"
+	.string "given right.$"
 
 AquaHideout_B1F_Text_Grunt5Defeat:
-	.string "HORIZON: O LIVING ARCHIVE nao\n"
-	.string "apaga pessoas. Ele separa\p"
-	.string "trauma de identidade. Pelo\n"
-	.string "menos e isso que nos ensinaram.$"
+	.string "HORIZON: The LIVING ARCHIVE does not\n"
+	.string "erase people. It separates trauma from\l"
+	.string "identity. At least that is what we were\l"
+	.string "taught.$"
 
 AquaHideout_B1F_Text_Grunt5PostBattle:
-	.string "HORIZON: O LIVING ARCHIVE nao\n"
-	.string "apaga pessoas. Ele separa\p"
-	.string "trauma de identidade. Pelo\n"
-	.string "menos e isso que nos ensinaram.$"
+	.string "HORIZON: The LIVING ARCHIVE does not\n"
+	.string "erase people. It separates trauma from\l"
+	.string "identity. At least that is what we were\l"
+	.string "taught.$"
 
 AquaHideout_B1F_Text_Grunt7Intro:
-	.string "HORIZON: O LIVING ARCHIVE nao\n"
-	.string "apaga pessoas. Ele separa\p"
-	.string "trauma de identidade. Pelo\n"
-	.string "menos e isso que nos ensinaram.$"
+	.string "HORIZON: The LIVING ARCHIVE does not\n"
+	.string "erase people. It separates trauma from\l"
+	.string "identity. At least that is what we were\l"
+	.string "taught.$"
 
 AquaHideout_B1F_Text_Grunt7Defeat:
-	.string "HORIZON: Nao somos soldados.\n"
-	.string "Somos tecnicos, guardas e\p"
-	.string "pesquisadores. Isso nao torna\n"
-	.string "todas as nossas ordens certas.$"
+	.string "HORIZON: We are not soldiers. We are\n"
+	.string "technicians, guards and researchers.\l"
+	.string "That does not make every order we are\l"
+	.string "given right.$"
 
 AquaHideout_B1F_Text_Grunt7PostBattle:
-	.string "HORIZON: O projeto de M'BOI\n"
-	.string "foi um desastre. O ARCHIVE\p"
-	.string "atual existe justamente porque\n"
-	.string "aprendemos com ele. E o que\p"
-	.string "consta nos relatorios.$"
+	.string "HORIZON: The M'BOI project was a\n"
+	.string "disaster. The present ARCHIVE exists\l"
+	.string "precisely because we learned from it.\l"
+	.string "That is what the reports say.$"

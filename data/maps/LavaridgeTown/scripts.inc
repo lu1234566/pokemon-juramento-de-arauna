@@ -283,8 +283,10 @@ LavaridgeTown_Text_MayNiceBadgesTakeThis:
 	.string "this.$"
 
 LavaridgeTown_Text_MayExplainGoGogglesChallengeDad:
-	.string "CIRO: Nao confunda minha pressa\ncom falta de memoria. Eu lembro\p"
-	.string "o bastante para saber que nao\nquero viver preso ao que perdi.$"
+	.string "CIRO: Do not mistake my hurry for a bad\n"
+	.string "memory. I remember enough to know I do\l"
+	.string "not want to live shackled to what I\l"
+	.string "lost.$"
 
 LavaridgeTown_Text_BrendanNiceBadgesTakeThis:
 	.string "CIRO: {PLAYER}, hey, it's been a while.\n"
@@ -295,11 +297,10 @@ LavaridgeTown_Text_BrendanNiceBadgesTakeThis:
 	.string "You may as well have this.$"
 
 LavaridgeTown_Text_BrendanExplainGoGogglesChallengeDad:
-	.string "CIRO: Se os dados estiverem\n"
-	.string "certos, o DISENCHANTMENT pode ser\p"
-	.string "tratado. Eu prefiro testar uma\n"
-	.string "resposta a transformar\p"
-	.string "sofrimento em tradicao.$"
+	.string "CIRO: If the data is right,\n"
+	.string "DISENCHANTMENT can be treated. I would\l"
+	.string "rather test an answer than turn\l"
+	.string "suffering into tradition.$"
 
 LavaridgeTown_Text_HaveEggWillYouTakeIt:
 	.string "I have here an EGG.\p"
@@ -375,13 +376,13 @@ LavaridgeTown_Text_HotSpringsClaims:
 	.string "money…$"
 
 LavaridgeTown_Text_TownSign:
-	.string "SERTAO DE DENTRO. Cinza, calor\ne abandono marcaram esta\p"
-	.string "regiao. Aqui o luto nao e\ntratado como fraqueza.$"
+	.string "SERTAO DE DENTRO. Ash, heat and\n"
+	.string "abandonment marked this region. Here\l"
+	.string "grief is not treated as weakness.$"
 
 LavaridgeTown_Text_GymSign:
-	.string "CASA DA CINZA\n"
-	.string "RESPONSAVEL: NARA\p"
-	.string "Cinza tambem guarda memoria.$"
+	.string "CASA DA CINZA LEADER: NARA\p"
+	.string "Ash keeps memory too.$"
 
 LavaridgeTown_Text_HerbShopSign:
 	.string "POKéMON HERB SHOP\n"

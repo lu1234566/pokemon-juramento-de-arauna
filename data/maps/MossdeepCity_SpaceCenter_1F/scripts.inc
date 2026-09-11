@@ -302,11 +302,9 @@ MossdeepCity_SpaceCenter_1F_Text_RocketLaunchDemandsPerfection:
 	.string "Why? It's a dream that never ends.$"
 
 MossdeepCity_SpaceCenter_1F_Text_MagmaHaveSightsOnSpaceCenter:
-	.string "Um sinal capaz de atravessar a\n"
-	.string "regiao inteira tambem poderia\p"
-	.string "sincronizar milhares de\n"
-	.string "sensores de BOND ao mesmo\p"
-	.string "tempo.$"
+	.string "A signal strong enough to cross the\n"
+	.string "whole region could just as easily hold\l"
+	.string "thousands of BOND sensors in step.$"
 
 MossdeepCity_SpaceCenter_1F_Text_FoundThisYouCanHaveIt:
 	.string "I was taking a stroll down the beach\n"
@@ -319,11 +317,11 @@ MossdeepCity_SpaceCenter_1F_Text_HoennFamousForMeteorShowers:
 	.string "its meteor showers for a long time.$"
 
 MossdeepCity_SpaceCenter_1F_Text_MagmaCantStealFuelTakeThis:
-	.string "A rede de comunicacao daqui\n"
-	.string "pode espalhar o protocolo do\p"
-	.string "LIVING ARCHIVE por toda Arauna.\n"
-	.string "Por isso o HORIZON e os\p"
-	.string "REMEMBRANCERS vieram ate aqui.$"
+	.string "The communication network here could\n"
+	.string "spread the LIVING ARCHIVE protocol\l"
+	.string "across all of Arauna. That is why\l"
+	.string "HORIZON and the REMEMBRANCERS both\l"
+	.string "came.$"
 
 MossdeepCity_SpaceCenter_1F_Text_CantStrollOnBeachWithMagma:
 	.string "With REMEMBRANCERS around, I guess\n"
@@ -346,96 +344,86 @@ MossdeepCity_SpaceCenter_1F_Text_RocketsBoggleMyMind:
 	.string "It boggles my mind!$"
 
 MossdeepCity_SpaceCenter_1F_Text_MagmaWantsToSpoilMyDream:
-	.string "Um sinal capaz de atravessar a\n"
-	.string "regiao inteira tambem poderia\p"
-	.string "sincronizar milhares de\n"
-	.string "sensores de BOND ao mesmo\p"
-	.string "tempo.$"
+	.string "A signal strong enough to cross the\n"
+	.string "whole region could just as easily hold\l"
+	.string "thousands of BOND sensors in step.$"
 
 MossdeepCity_SpaceCenter_1F_Text_StevenMagmaCantBeAllowedToTakeFuel:
-	.string "MR. BENTO: Quando um nome some\n"
-	.string "da boca das pessoas, eu\p"
-	.string "escrevo. Nao para substituir\n"
-	.string "quem lembra; para deixar uma\p"
-	.string "pista.$"
+	.string "MR. BENTO: When a name falls out of\n"
+	.string "people's mouths, I write it down. Not to\l"
+	.string "replace whoever remembers it. To leave\l"
+	.string "a trail.$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt3Intro:
-	.string "Um sinal capaz de atravessar a\n"
-	.string "regiao inteira tambem poderia\p"
-	.string "sincronizar milhares de\n"
-	.string "sensores de BOND ao mesmo\p"
-	.string "tempo.$"
+	.string "A signal strong enough to cross the\n"
+	.string "whole region could just as easily hold\l"
+	.string "thousands of BOND sensors in step.$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt3Defeat:
-	.string "Um sinal capaz de atravessar a\n"
-	.string "regiao inteira tambem poderia\p"
-	.string "sincronizar milhares de\n"
-	.string "sensores de BOND ao mesmo\p"
-	.string "tempo.$"
+	.string "A signal strong enough to cross the\n"
+	.string "whole region could just as easily hold\l"
+	.string "thousands of BOND sensors in step.$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt3PostBattle:
-	.string "Um sinal capaz de atravessar a\n"
-	.string "regiao inteira tambem poderia\p"
-	.string "sincronizar milhares de\n"
-	.string "sensores de BOND ao mesmo\p"
-	.string "tempo.$"
+	.string "A signal strong enough to cross the\n"
+	.string "whole region could just as easily hold\l"
+	.string "thousands of BOND sensors in step.$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt1Intro:
-	.string "Um sinal capaz de atravessar a\n"
-	.string "regiao inteira tambem poderia\p"
-	.string "sincronizar milhares de\n"
-	.string "sensores de BOND ao mesmo\p"
-	.string "tempo.$"
+	.string "A signal strong enough to cross the\n"
+	.string "whole region could just as easily hold\l"
+	.string "thousands of BOND sensors in step.$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt1Defeat:
-	.string "Os engenheiros insistem que\ncomunicacao nao e controle. Os\p"
-	.string "cabos no andar superior sugerem\nque alguem pretende testar essa\p"
-	.string "diferenca.$"
+	.string "The engineers insist that\n"
+	.string "communication is not control. The\l"
+	.string "cabling on the floor above suggests\l"
+	.string "somebody means to test the difference.$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt1PostBattle:
-	.string "A rede de comunicacao daqui\n"
-	.string "pode espalhar o protocolo do\p"
-	.string "LIVING ARCHIVE por toda Arauna.\n"
-	.string "Por isso o HORIZON e os\p"
-	.string "REMEMBRANCERS vieram ate aqui.$"
+	.string "The communication network here could\n"
+	.string "spread the LIVING ARCHIVE protocol\l"
+	.string "across all of Arauna. That is why\l"
+	.string "HORIZON and the REMEMBRANCERS both\l"
+	.string "came.$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt4Intro:
-	.string "Um sinal capaz de atravessar a\n"
-	.string "regiao inteira tambem poderia\p"
-	.string "sincronizar milhares de\n"
-	.string "sensores de BOND ao mesmo\p"
-	.string "tempo.$"
+	.string "A signal strong enough to cross the\n"
+	.string "whole region could just as easily hold\l"
+	.string "thousands of BOND sensors in step.$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt4Defeat:
-	.string "Um sinal capaz de atravessar a\n"
-	.string "regiao inteira tambem poderia\p"
-	.string "sincronizar milhares de\n"
-	.string "sensores de BOND ao mesmo\p"
-	.string "tempo.$"
+	.string "A signal strong enough to cross the\n"
+	.string "whole region could just as easily hold\l"
+	.string "thousands of BOND sensors in step.$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt4PostBattle:
-	.string "Os engenheiros insistem que\ncomunicacao nao e controle. Os\p"
-	.string "cabos no andar superior sugerem\nque alguem pretende testar essa\p"
-	.string "diferenca.$"
+	.string "The engineers insist that\n"
+	.string "communication is not control. The\l"
+	.string "cabling on the floor above suggests\l"
+	.string "somebody means to test the difference.$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt2Intro:
-	.string "Os engenheiros insistem que\ncomunicacao nao e controle. Os\p"
-	.string "cabos no andar superior sugerem\nque alguem pretende testar essa\p"
-	.string "diferenca.$"
+	.string "The engineers insist that\n"
+	.string "communication is not control. The\l"
+	.string "cabling on the floor above suggests\l"
+	.string "somebody means to test the difference.$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt2Defeat:
-	.string "A rede de comunicacao daqui\n"
-	.string "pode espalhar o protocolo do\p"
-	.string "LIVING ARCHIVE por toda Arauna.\n"
-	.string "Por isso o HORIZON e os\p"
-	.string "REMEMBRANCERS vieram ate aqui.$"
+	.string "The communication network here could\n"
+	.string "spread the LIVING ARCHIVE protocol\l"
+	.string "across all of Arauna. That is why\l"
+	.string "HORIZON and the REMEMBRANCERS both\l"
+	.string "came.$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt2PostBattle:
-	.string "Os engenheiros insistem que\ncomunicacao nao e controle. Os\p"
-	.string "cabos no andar superior sugerem\nque alguem pretende testar essa\p"
-	.string "diferenca.$"
+	.string "The engineers insist that\n"
+	.string "communication is not control. The\l"
+	.string "cabling on the floor above suggests\l"
+	.string "somebody means to test the difference.$"
 
 MossdeepCity_SpaceCenter_1F_Text_MagmaIntentToStealNotice:
-	.string "Os engenheiros insistem que\ncomunicacao nao e controle. Os\p"
-	.string "cabos no andar superior sugerem\nque alguem pretende testar essa\p"
-	.string "diferenca.$"
+	.string "The engineers insist that\n"
+	.string "communication is not control. The\l"
+	.string "cabling on the floor above suggests\l"
+	.string "somebody means to test the difference.$"

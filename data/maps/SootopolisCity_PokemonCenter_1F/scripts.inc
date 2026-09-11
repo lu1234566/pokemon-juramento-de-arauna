@@ -44,8 +44,10 @@ SootopolisCity_PokemonCenter_1F_EventScript_WomanNoLegendaries::
 	end
 
 SootopolisCity_PokemonCenter_1F_Text_WallaceToughestInHoenn:
-	.string "AMALIA: Arauna sobreviveu a\nverdade pela metade por tempo\p"
-	.string "demais. A Liga tambem tem\ndividas com quem foi apagado.$"
+	.string "AMALIA: Arauna has lived on half the\n"
+	.string "truth for far too long. The LEAGUE has\l"
+	.string "debts of its own to the people who were\l"
+	.string "erased.$"
 
 SootopolisCity_PokemonCenter_1F_Text_EveryoneTakenRefuge:
 	.string "Everyone in town has taken refuge\n"

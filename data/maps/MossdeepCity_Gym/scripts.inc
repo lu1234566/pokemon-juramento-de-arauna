@@ -546,39 +546,39 @@ MossdeepCity_Gym_Text_NicholasPostBattle:
 	.string "invincible POKéMON power next.$"
 
 MossdeepCity_Gym_Text_TateAndLizaIntro:
-	.string "CECILIA: Do alto, cidades\nparecem pequenas. As vidas\p"
-	.string "dentro delas nunca sao.$"
+	.string "CECILIA: From up high, cities look small.\n"
+	.string "The lives inside them never are.$"
 
 MossdeepCity_Gym_Text_TateAndLizaDefeat:
-	.string "CECILIA: Do alto, cidades\nparecem pequenas. As vidas\p"
-	.string "dentro delas nunca sao.$"
+	.string "CECILIA: From up high, cities look small.\n"
+	.string "The lives inside them never are.$"
 
 MossdeepCity_Gym_Text_ReceivedMindBadge:
-	.string "{PLAYER} recebeu a\n"
-	.string "PRISM BADGE de CECILIA.$"
+	.string "{PLAYER} received the PRISM BADGE from\n"
+	.string "CECILIA.$"
 
 MossdeepCity_Gym_Text_ExplainMindBadgeTakeThis:
-	.string "A PRISM BADGE aumenta\n"
-	.string "SP. ATK e SP. DEF dos POKéMON.\p"
-	.string "Ela também permite usar DIVE\n"
-	.string "fora de batalha.\p"
-	.string "Leve isto também.$"
+	.string "The PRISM BADGE raises your POKéMON's\n"
+	.string "SP. ATK and SP. DEF.\p"
+	.string "It also lets you use DIVE outside\n"
+	.string "battle.\p"
+	.string "Take this as well.$"
 
 MossdeepCity_Gym_Text_ExplainCalmMind:
-	.string "CECILIA: Do alto, cidades\nparecem pequenas. As vidas\p"
-	.string "dentro delas nunca sao.$"
+	.string "CECILIA: From up high, cities look small.\n"
+	.string "The lives inside them never are.$"
 
 MossdeepCity_Gym_Text_RegisteredTateAndLiza:
 	.string "Registered GYM LEADERS CECILIA &\n"
 	.string "CAETANO in the POKéNAV.$"
 
 MossdeepCity_Gym_Text_TateAndLizaPostBattle:
-	.string "CECILIA: Do alto, cidades\nparecem pequenas. As vidas\p"
-	.string "dentro delas nunca sao.$"
+	.string "CECILIA: From up high, cities look small.\n"
+	.string "The lives inside them never are.$"
 
 MossdeepCity_Gym_Text_TateAndLizaNeedTwoMons:
-	.string "CECILIA: Do alto, cidades\nparecem pequenas. As vidas\p"
-	.string "dentro delas nunca sao.$"
+	.string "CECILIA: From up high, cities look small.\n"
+	.string "The lives inside them never are.$"
 
 MossdeepCity_Gym_Text_GymStatue:
 	.string "MISSOES DO CEU POKéMON GYM$"
@@ -589,17 +589,17 @@ MossdeepCity_Gym_Text_GymStatueCertified:
 	.string "TRAINERS: {PLAYER}$"
 
 MossdeepCity_Gym_Text_TateAndLizaPreRematch:
-	.string "CECILIA: Do alto, cidades\nparecem pequenas. As vidas\p"
-	.string "dentro delas nunca sao.$"
+	.string "CECILIA: From up high, cities look small.\n"
+	.string "The lives inside them never are.$"
 
 MossdeepCity_Gym_Text_TateAndLizaRematchDefeat:
-	.string "CECILIA: Do alto, cidades\nparecem pequenas. As vidas\p"
-	.string "dentro delas nunca sao.$"
+	.string "CECILIA: From up high, cities look small.\n"
+	.string "The lives inside them never are.$"
 
 MossdeepCity_Gym_Text_TateAndLizaPostRematch:
-	.string "CECILIA: Do alto, cidades\nparecem pequenas. As vidas\p"
-	.string "dentro delas nunca sao.$"
+	.string "CECILIA: From up high, cities look small.\n"
+	.string "The lives inside them never are.$"
 
 MossdeepCity_Gym_Text_TateAndLizaRematchNeedTwoMons:
-	.string "CECILIA: Do alto, cidades\nparecem pequenas. As vidas\p"
-	.string "dentro delas nunca sao.$"
+	.string "CECILIA: From up high, cities look small.\n"
+	.string "The lives inside them never are.$"

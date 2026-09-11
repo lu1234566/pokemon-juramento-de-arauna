@@ -44,36 +44,34 @@ PrimeiraCamara_OpenTiles:
 	return
 
 PrimeiraCamara_Text_FirstSeen:
-	.string "Duas marcas fecham a passagem:\n"
-	.string "MARE e TERRA.\p"
-	.string "A pedra guarda o sinal\n"
-	.string "da sua visita.$"
+	.string "Two marks close the way: TIDE and\n"
+	.string "EARTH.\p"
+	.string "The stone keeps the sign of your visit.$"
 
 PrimeiraCamara_Text_Locked:
-	.string "A porta ainda esta selada.\p"
-	.string "Faltam as conquistas das\n"
-	.string "Casas da Mare e da Terra.$"
+	.string "The door is still sealed.\p"
+	.string "The marks of the CASA DA MARE and the\n"
+	.string "CASA DA TERRA are still missing.$"
 
 PrimeiraCamara_Text_Opened:
-	.string "As duas marcas respondem.\p"
-	.string "A passagem se abre diante\n"
-	.string "do nucleo azul.$"
+	.string "Both marks answer.\p"
+	.string "The way opens in front of the blue core.$"
 
 PrimeiraCamara_Text_AlreadyOpen:
-	.string "A passagem permanece aberta.$"
+	.string "The way is still open.$"
 
 PrimeiraCamara_EventScript_Mare::
 	msgbox PrimeiraCamara_Text_Mare, MSGBOX_SIGN
 	end
 
 PrimeiraCamara_Text_Mare:
-	.string "MARE: as historias chegam\n"
-	.string "de muitas margens.$"
+	.string "TIDE: the stories arrive from many\n"
+	.string "shores.$"
 
 PrimeiraCamara_EventScript_Terra::
 	msgbox PrimeiraCamara_Text_Terra, MSGBOX_SIGN
 	end
 
 PrimeiraCamara_Text_Terra:
-	.string "TERRA: os nomes permanecem\n"
-	.string "onde alguem os recorda.$"
+	.string "EARTH: names stay where somebody\n"
+	.string "remembers them.$"

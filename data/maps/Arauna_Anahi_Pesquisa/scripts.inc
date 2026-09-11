@@ -6,21 +6,21 @@ AnahiPesquisa_EventScript_Records::
 	end
 
 AnahiPesquisa_Text_Records:
-	.string "Cadernos de campo reunem mapas,\n"
-	.string "desenhos e anotacoes de Arauna.$"
+	.string "Field notebooks gather maps, drawings\n"
+	.string "and notes from all over Arauna.$"
 
 AnahiPesquisa_EventScript_Specimens::
 	msgbox AnahiPesquisa_Text_Specimens, MSGBOX_SIGN
 	end
 
 AnahiPesquisa_Text_Specimens:
-	.string "As amostras estao identificadas\n"
-	.string "com seu local de coleta.$"
+	.string "The samples are labeled with the place\n"
+	.string "they were collected.$"
 
 AnahiPesquisa_EventScript_Computer::
 	msgbox AnahiPesquisa_Text_Computer, MSGBOX_SIGN
 	end
 
 AnahiPesquisa_Text_Computer:
-	.string "O computador organiza registros\n"
-	.string "das expedicoes do laboratorio.$"
+	.string "The computer keeps the records of the\n"
+	.string "lab's expeditions in order.$"

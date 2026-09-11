@@ -1,105 +1,104 @@
 gBirchDexRatingText_AreYouCurious::
-	.string "ANAHI: {PLAYER}, quer conferir\n"
-	.string "como seus registros estao?$"
+	.string "ANAHI: {PLAYER}, would you like to see\n"
+	.string "how your records are coming along?$"
 
 gBirchDexRatingText_Cancel::
-	.string "Ainda ha poucos registros para\n"
-	.string "uma avaliacao completa.$"
+	.string "There are still too few records for a\n"
+	.string "full rating.$"
 
 gBirchDexRatingText_SoYouveSeenAndCaught::
-	.string "Vamos ver...\p"
-	.string "Voce viu {STR_VAR_1} POKéMON e\n"
-	.string "capturou {STR_VAR_2} POKéMON.$"
+	.string "Let's have a look...\p"
+	.string "You've seen {STR_VAR_1} POKéMON and\n"
+	.string "caught {STR_VAR_2} POKéMON.$"
 
 gBirchDexRatingText_LessThan10::
-	.string "Explore mais as areas de mato.\n"
-	.string "Observe com bastante atencao.$"
+	.string "Search the grassy areas more. And\n"
+	.string "watch them closely.$"
 
 gBirchDexRatingText_LessThan20::
-	.string "Voce esta pegando o jeito.\n"
-	.string "Agora fica mais dificil.$"
+	.string "You're getting the hang of it. It gets\n"
+	.string "harder from here.$"
 
 gBirchDexRatingText_LessThan30::
-	.string "Alguns POKéMON so aparecem em\n"
-	.string "lugares especificos.\l"
-	.string "Continue procurando.$"
+	.string "Some POKéMON only appear in particular\n"
+	.string "places. Keep looking.$"
 
 gBirchDexRatingText_LessThan40::
-	.string "Ainda faltam muitos registros,\n"
-	.string "mas sua POKéDEX ja toma forma.$"
+	.string "Plenty of records still missing, but\n"
+	.string "your POKéDEX is taking shape.$"
 
 gBirchDexRatingText_LessThan50::
-	.string "O trabalho esta avancando bem.\n"
-	.string "Mantenha esse ritmo.$"
+	.string "The work is coming along well. Keep that\n"
+	.string "pace.$"
 
 gBirchDexRatingText_LessThan60::
-	.string "Voce ja tentou usar VARAS?\n"
-	.string "Ha muitos POKéMON na agua.$"
+	.string "Have you tried using RODS? There are\n"
+	.string "plenty of POKéMON in the water.$"
 
 gBirchDexRatingText_LessThan70::
-	.string "Nao pense apenas em capturar.\n"
-	.string "Alguns POKéMON podem evoluir.$"
+	.string "Don't only think about catching. Some\n"
+	.string "POKéMON can evolve.$"
 
 gBirchDexRatingText_LessThan80::
-	.string "Esta POKéDEX pode virar um\n"
-	.string "registro excelente de ARAUNA.$"
+	.string "This POKéDEX could become a fine record\n"
+	.string "of ARAUNA.$"
 
 gBirchDexRatingText_LessThan90::
-	.string "Voce reuniu muitos registros.\n"
-	.string "Seu trabalho e impressionante!$"
+	.string "You've gathered a great many records.\n"
+	.string "Your work is impressive!$"
 
 gBirchDexRatingText_LessThan100::
-	.string "Ja visitou a ZONA SAFARI?\p"
-	.string "Alguns POKéMON so podem ser\n"
-	.string "encontrados por la.$"
+	.string "Have you visited the SAFARI ZONE?\p"
+	.string "Some POKéMON can only be found in\n"
+	.string "there.$"
 
 gBirchDexRatingText_LessThan110::
-	.string "Voce passou da marca de cem.\p"
-	.string "E uma POKéDEX impressionante!$"
+	.string "You've passed the hundred mark.\p"
+	.string "That's an impressive POKéDEX!$"
 
 gBirchDexRatingText_LessThan120::
-	.string "Alguns POKéMON podem aparecer\n"
-	.string "quando voce usa ROCK SMASH.$"
+	.string "Some POKéMON may turn up when you use\n"
+	.string "ROCK SMASH.$"
 
 gBirchDexRatingText_LessThan130::
-	.string "Trocar POKéMON com outras\n"
-	.string "pessoas amplia seus registros.$"
+	.string "Trading POKéMON with other people fills\n"
+	.string "out your records.$"
 
 gBirchDexRatingText_LessThan140::
-	.string "Ha POKéMON que evoluem quando\n"
-	.string "criam um forte vinculo com\l"
-	.string "seus TREINADORES.$"
+	.string "Some POKéMON evolve once they form a\n"
+	.string "strong bond with their TRAINERS.$"
 
 gBirchDexRatingText_LessThan150::
-	.string "ARAUNA abriga mais especies\n"
-	.string "do que eu imaginava.$"
+	.string "ARAUNA holds more species than I ever\n"
+	.string "imagined.$"
 
 gBirchDexRatingText_LessThan160::
-	.string "As vezes certas especies surgem\n"
-	.string "em grande numero.\p"
-	.string "Nao perca essas oportunidades.$"
+	.string "Sometimes certain species turn up in\n"
+	.string "great numbers.\p"
+	.string "Do not waste those chances.$"
 
 gBirchDexRatingText_LessThan170::
-	.string "Sua POKéDEX ja mostra muito bem\n"
-	.string "a diversidade de ARAUNA.$"
+	.string "Your POKéDEX already shows the variety\n"
+	.string "of ARAUNA very well.$"
 
 gBirchDexRatingText_LessThan180::
-	.string "Seu trabalho ja esta no nivel\n"
-	.string "de uma grande pesquisadora.$"
+	.string "Your work is already at the level of a\n"
+	.string "great researcher.$"
 
 gBirchDexRatingText_LessThan190::
-	.string "Uma POKéDEX assim exige metodo,\n"
-	.string "paciencia e muita experiencia.$"
+	.string "A POKéDEX like that takes method,\n"
+	.string "patience and a great deal of\l"
+	.string "experience.$"
 
 gBirchDexRatingText_LessThan200::
-	.string "Falta muito pouco para completar\n"
-	.string "esta POKéDEX. Continue!$"
+	.string "This POKéDEX is very close to complete.\n"
+	.string "Keep going!$"
 
 gBirchDexRatingText_DexCompleted::
-	.string "Parabens!\n"
-	.string "POKéDEX de ARAUNA completa!$"
+	.string "Congratulations! The ARAUNA POKéDEX is\n"
+	.string "complete!$"
 
 gBirchDexRatingText_OnANationwideBasis::
-	.string "Agora, olhando todos os dados...\p"
-	.string "Voce viu {STR_VAR_1} POKéMON e\n"
-	.string "capturou {STR_VAR_2} POKéMON.$"
+	.string "Now, looking at all the data...\p"
+	.string "You have seen {STR_VAR_1} POKéMON and\n"
+	.string "caught {STR_VAR_2} POKéMON.$"

@@ -103,16 +103,15 @@ FortreeCity_Text_SomethingBlockingGym:
 	.string "training on ROUTE 120…$"
 
 FortreeCity_Text_ThisTimeIllBeatWinona:
-	.string "LIDIA: Quando os POKéMON\nesquecem caminhos transmitidos\p"
-	.string "entre geracoes, alguma coisa\nantiga foi ferida.$"
+	.string "LIDIA: When POKéMON forget paths\n"
+	.string "handed down through generations,\l"
+	.string "something old has been hurt.$"
 
 FortreeCity_Text_TreesGrowByDrinkingRainwater:
-	.string "Os sensores registram duas\n"
-	.string "correntes antigas sob Arauna:\p"
-	.string "uma conserva BONDS; a outra\n"
-	.string "permite que eles terminem. O\p"
-	.string "ARCHIVE tentou transformar\n"
-	.string "ambas em ferramentas.$"
+	.string "The sensors register two old currents\n"
+	.string "under Arauna: one preserves BONDS, the\l"
+	.string "other lets them end. The ARCHIVE tried\l"
+	.string "to turn both into tools.$"
 
 FortreeCity_Text_EveryoneHealthyAndLively:
 	.string "The CITY consists of homes built on\n"
@@ -123,12 +122,11 @@ FortreeCity_Text_EveryoneHealthyAndLively:
 	.string "grown thirty years younger.$"
 
 FortreeCity_Text_BugPokemonComeThroughWindow:
-	.string "Meu POKéMON me seguia desde\n"
-	.string "que eu era pequeno. Hoje ele\p"
-	.string "recuou quando chamei seu nome.\n"
-	.string "CIRO viu tudo. Ficou olhando\p"
-	.string "para o aparelho do HORIZON\n"
-	.string "sem conseguir dizer nada.$"
+	.string "My POKéMON had followed me since I was\n"
+	.string "small. Today it backed away when I\l"
+	.string "called its name. CIRO saw the whole\l"
+	.string "thing. He just stared at the HORIZON\l"
+	.string "device without a word.$"
 
 FortreeCity_Text_PokemonThatEvolveWhenTraded:
 	.string "There are POKéMON that evolve when\n"
@@ -139,20 +137,20 @@ FortreeCity_Text_SomethingUnseeable:
 
 FortreeCity_Text_UnseeableUseDevonScope:
 	.string "Something unseeable is in the way.\p"
-	.string "Want to use the VISOR VERDADE?$"
+	.string "Want to use the TRUTH VISOR?$"
 
 FortreeCity_Text_UsedDevonScopePokemonFled:
-	.string "{PLAYER} used the VISOR VERDADE.\p"
+	.string "{PLAYER} used the TRUTH VISOR.\p"
 	.string "An invisible POKéMON became completely\n"
 	.string "visible!\p"
 	.string "The startled POKéMON fled!$"
 
 FortreeCity_Text_CitySign:
-	.string "MATA DO MEIO. Pokemon selvagens\nesquecem rotas, cantos e\p"
-	.string "habitos passados entre\ngeracoes.$"
+	.string "MATA DO MEIO. Wild POKéMON are\n"
+	.string "forgetting routes, songs and habits\l"
+	.string "handed down through generations.$"
 
 FortreeCity_Text_GymSign:
-	.string "MATA DO MEIO\n"
-	.string "RESPONSAVEL: LIDIA\p"
-	.string "Escute antes de subir.$"
+	.string "MATA DO MEIO LEADER: LIDIA\p"
+	.string "Listen before you climb.$"
 

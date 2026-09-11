@@ -464,9 +464,10 @@ MauvilleCity_Text_UncleHesTooPeppy:
 	.string "But he's become a bit too peppy…$"
 
 MauvilleCity_Text_WallyWantToChallengeGym:
-	.string "VAL: Passei muito tempo achando\nque precisava virar outra\p"
-	.string "pessoa para seguir viagem. Eu\nso precisava descobrir meu\p"
-	.string "proprio ritmo.$"
+	.string "VAL: I spent a long time thinking I had\n"
+	.string "to become someone else to keep\l"
+	.string "traveling. All I had to find was my own\l"
+	.string "pace.$"
 
 MauvilleCity_Text_UncleYourePushingIt:
 	.string "UNCLE: Now hold on, VAL.\p"
@@ -476,39 +477,52 @@ MauvilleCity_Text_UncleYourePushingIt:
 	.string "to suddenly challenge a GYM?$"
 
 MauvilleCity_Text_WallyWeCanBeatAnyone:
-	.string "VAL: Passei muito tempo achando\nque precisava virar outra\p"
-	.string "pessoa para seguir viagem. Eu\nso precisava descobrir meu\p"
-	.string "proprio ritmo.$"
+	.string "VAL: I spent a long time thinking I had\n"
+	.string "to become someone else to keep\l"
+	.string "traveling. All I had to find was my own\l"
+	.string "pace.$"
 
 MauvilleCity_Text_WallyWillYouBattleMe:
-	.string "VAL: Passei muito tempo achando\nque precisava virar outra\p"
-	.string "pessoa para seguir viagem. Eu\nso precisava descobrir meu\p"
-	.string "proprio ritmo.$"
+	.string "VAL: I spent a long time thinking I had\n"
+	.string "to become someone else to keep\l"
+	.string "traveling. All I had to find was my own\l"
+	.string "pace.$"
 
 MauvilleCity_Text_WallyMyUncleWontKnowImStrong:
-	.string "VAL: Eu ainda tenho medo. Mas\nagora sei que coragem nao e\p"
-	.string "esquecer o medo; e caminhar\nmesmo lembrando dele.$"
+	.string "VAL: I am still afraid. But I know now\n"
+	.string "that courage is not forgetting the\l"
+	.string "fear. It is walking on while you\l"
+	.string "remember it.$"
 
 MauvilleCity_Text_UncleCanYouBattleWally:
-	.string "VAL: Eu ainda tenho medo. Mas\nagora sei que coragem nao e\p"
-	.string "esquecer o medo; e caminhar\nmesmo lembrando dele.$"
+	.string "VAL: I am still afraid. But I know now\n"
+	.string "that courage is not forgetting the\l"
+	.string "fear. It is walking on while you\l"
+	.string "remember it.$"
 
 MauvilleCity_Text_WallyPleaseBattleMe:
-	.string "VAL: Eu ainda tenho medo. Mas\nagora sei que coragem nao e\p"
-	.string "esquecer o medo; e caminhar\nmesmo lembrando dele.$"
+	.string "VAL: I am still afraid. But I know now\n"
+	.string "that courage is not forgetting the\l"
+	.string "fear. It is walking on while you\l"
+	.string "remember it.$"
 
 MauvilleCity_Text_WallyHereICome:
-	.string "VAL: Eu ainda tenho medo. Mas\nagora sei que coragem nao e\p"
-	.string "esquecer o medo; e caminhar\nmesmo lembrando dele.$"
+	.string "VAL: I am still afraid. But I know now\n"
+	.string "that courage is not forgetting the\l"
+	.string "fear. It is walking on while you\l"
+	.string "remember it.$"
 
 MauvilleCity_Text_WallyDefeat:
-	.string "VAL: Eu ainda tenho medo. Mas\nagora sei que coragem nao e\p"
-	.string "esquecer o medo; e caminhar\nmesmo lembrando dele.$"
+	.string "VAL: I am still afraid. But I know now\n"
+	.string "that courage is not forgetting the\l"
+	.string "fear. It is walking on while you\l"
+	.string "remember it.$"
 
 MauvilleCity_Text_WallyIllGoBackToVerdanturf:
-	.string "VAL: Passei muito tempo achando\nque precisava virar outra\p"
-	.string "pessoa para seguir viagem. Eu\nso precisava descobrir meu\p"
-	.string "proprio ritmo.$"
+	.string "VAL: I spent a long time thinking I had\n"
+	.string "to become someone else to keep\l"
+	.string "traveling. All I had to find was my own\l"
+	.string "pace.$"
 
 MauvilleCity_Text_ThankYouNotEnoughToBattle:
 	.string "{PLAYER}, thank you.\n"
@@ -536,8 +550,10 @@ MauvilleCity_Text_UncleVisitUsSometime:
 
 
 MauvilleCity_Text_WallyPokenavCall:
-	.string "VAL: Eu ainda tenho medo. Mas\nagora sei que coragem nao e\p"
-	.string "esquecer o medo; e caminhar\nmesmo lembrando dele.$"
+	.string "VAL: I am still afraid. But I know now\n"
+	.string "that courage is not forgetting the\l"
+	.string "fear. It is walking on while you\l"
+	.string "remember it.$"
 
 MauvilleCity_Text_RegisteredWally:
 	.string "Registered VAL\n"
@@ -557,12 +573,14 @@ MauvilleCity_Text_ScottYouDidntHoldBack:
 	.string "I'll be cheering for you!$"
 
 MauvilleCity_Text_WattsonNeedFavorTakeKey:
-	.string "OLIVIA: Energia move uma\ncidade. Isso nao significa que\p"
-	.string "toda fonte de energia deva ser\naceita.$"
+	.string "OLIVIA: Power moves a city. That does\n"
+	.string "not mean every source of power should\l"
+	.string "be accepted.$"
 
 MauvilleCity_Text_WattsonWontBeChallenge:
-	.string "OLIVIA: Energia move uma\ncidade. Isso nao significa que\p"
-	.string "toda fonte de energia deva ser\naceita.$"
+	.string "OLIVIA: Power moves a city. That does\n"
+	.string "not mean every source of power should\l"
+	.string "be accepted.$"
 
 MauvilleCity_Text_WattsonThanksTakeTM:
 	.string "OLIVIA: Wahahahaha!\p"
@@ -573,8 +591,9 @@ MauvilleCity_Text_WattsonThanksTakeTM:
 	.string "Go on, you've earned it!$"
 
 MauvilleCity_Text_WattsonYoungTakeCharge:
-	.string "OLIVIA: Energia move uma\ncidade. Isso nao significa que\p"
-	.string "toda fonte de energia deva ser\naceita.$"
+	.string "OLIVIA: Power moves a city. That does\n"
+	.string "not mean every source of power should\l"
+	.string "be accepted.$"
 
 MauvilleCity_Text_NurseHurtMonBackToHealth:
 	.string "You know, it's cool to have POKéMON\n"
@@ -598,15 +617,14 @@ MauvilleCity_Text_PokemonCanJumpYouOnBike:
 	.string "wild POKéMON could jump you.$"
 
 MauvilleCity_Text_CitySign:
-	.string "ENCRUZILHADA CENTRAL. A cidade\n"
-	.string "prosperou com o HORIZON. Ciro\p"
-	.string "agora veste o uniforme de quem\n"
-	.string "promete construir o futuro.$"
+	.string "ENCRUZILHADA CENTRAL. The city grew\n"
+	.string "rich on HORIZON. Ciro wears the uniform\l"
+	.string "of people who promise to build the\l"
+	.string "future now.$"
 
 MauvilleCity_Text_GymSign:
-	.string "ENCRUZILHADA CENTRAL\n"
-	.string "RESPONSAVEL: OLIVIA\p"
-	.string "Toda rede deixa rastros.$"
+	.string "ENCRUZILHADA CENTRAL LEADER: OLIVIA\p"
+	.string "Every network leaves a trail.$"
 
 MauvilleCity_Text_BikeShopSign:
 	.string "“Ride in gravel and shake up your\n"

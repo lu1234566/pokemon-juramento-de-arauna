@@ -270,11 +270,10 @@ Route101_Text_DontLeaveMe:
 	.string "Don't leave me like this!$"
 
 Route101_Text_YouSavedMe:
-	.string "ANAHI: Eu ajudei a criar os\n"
-	.string "primeiros sensores de BOND.\p"
-	.string "Na epoca achei que medir\n"
-	.string "significava compreender. Hoje\p"
-	.string "sei que nao e a mesma coisa.$"
+	.string "ANAHI: I helped build the first BOND\n"
+	.string "sensors. Back then I thought measuring\l"
+	.string "meant understanding. I know better\l"
+	.string "now.$"
 
 Route101_Text_TakeTiredPokemonToPokeCenter:
 	.string "If POKéMON get tired, take them to a\n"
@@ -297,5 +296,5 @@ Route101_EventScript_PrimeiraCamara::
 	end
 
 Route101_Text_PrimeiraCamara:
-	.string "TRILHA DA NEBLINA\n"
-	.string "Primeira Camara {RIGHT_ARROW}$"
+	.string "TRILHA DA NEBLINA PRIMEIRA CAMARA\n"
+	.string "{RIGHT_ARROW}$"

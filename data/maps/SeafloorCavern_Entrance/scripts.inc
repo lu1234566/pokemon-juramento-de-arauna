@@ -57,14 +57,13 @@ SeafloorCavern_Entrance_EventScript_GruntFacePlayerNorth::
 	return
 
 SeafloorCavern_Entrance_Text_HearMagmaNearMossdeep:
-	.string "AGENT: Recebemos noticia dos\n"
-	.string "REMEMBRANCERS perto de MISSOES DO\n"
-	.string "CEU.\p"
-	.string "LUZIA esta mobilizando gente\n"
-	.string "fora daqui. OTACILIO mandou\n"
-	.string "manter o foco em M'BOI.$"
+	.string "AGENT: We have word of REMEMBRANCERS\n"
+	.string "near MISSOES DO CEU.\p"
+	.string "LUZIA is rallying people outside.\n"
+	.string "OTACILIO said to keep our focus on\l"
+	.string "M'BOI.$"
 
 SeafloorCavern_Entrance_Text_HearMagmaNearMossdeepShort:
-	.string "REMEMBRANCERS perto de MISSOES DO\n"
-	.string "CEU... e nos presos aqui.$"
+	.string "REMEMBRANCERS near MISSOES DO CEU...\n"
+	.string "and us stuck in here.$"
 

@@ -380,24 +380,26 @@ DewfordTown_Gym_Text_CristianPostBattle:
 	.string "Go after that BADGE!$"
 
 DewfordTown_Gym_Text_BrawlyIntro:
-	.string "ADEMAR: O mar devolve coisas\nquando quer. Homem nenhum manda\p"
-	.string "na memoria da agua.$"
+	.string "ADEMAR: The sea gives things back when\n"
+	.string "it feels like it. No man gives orders to\l"
+	.string "the memory of water.$"
 
 DewfordTown_Gym_Text_BrawlyDefeat:
-	.string "ADEMAR: O mar devolve coisas\nquando quer. Homem nenhum manda\p"
-	.string "na memoria da agua.$"
+	.string "ADEMAR: The sea gives things back when\n"
+	.string "it feels like it. No man gives orders to\l"
+	.string "the memory of water.$"
 
 DewfordTown_Gym_Text_ReceivedKnuckleBadge:
-	.string "{PLAYER} recebeu a\n"
-	.string "TIDE BADGE de ADEMAR.$"
+	.string "{PLAYER} received the TIDE BADGE from\n"
+	.string "ADEMAR.$"
 
 DewfordTown_Gym_Text_KnuckleBadgeInfoTakeThis:
-	.string "A TIDE BADGE faz POKéMON\n"
-	.string "até o nível 30 obedecerem,\l"
-	.string "mesmo os recebidos em troca.\p"
-	.string "Também permite usar FLASH\n"
-	.string "fora de batalha.\p"
-	.string "Leve esta TM também.$"
+	.string "The TIDE BADGE makes POKéMON up to\n"
+	.string "level 30 obey, even ones received in a\l"
+	.string "trade.\p"
+	.string "It also lets you use FLASH outside\n"
+	.string "battle.\p"
+	.string "Take this TM as well.$"
 
 DewfordTown_Gym_Text_ExplainBulkUp:
 	.string "That TM08 contains BULK UP.\p"
@@ -410,8 +412,9 @@ DewfordTown_Gym_Text_RegisteredBrawly:
 	.string "in the POKéNAV.$"
 
 DewfordTown_Gym_Text_BrawlyPostBattle:
-	.string "ADEMAR: O mar devolve coisas\nquando quer. Homem nenhum manda\p"
-	.string "na memoria da agua.$"
+	.string "ADEMAR: The sea gives things back when\n"
+	.string "it feels like it. No man gives orders to\l"
+	.string "the memory of water.$"
 
 DewfordTown_Gym_Text_GymStatue:
 	.string "PORTO DAS REDES POKéMON GYM$"
@@ -422,17 +425,21 @@ DewfordTown_Gym_Text_GymStatueCertified:
 	.string "{PLAYER}$"
 
 DewfordTown_Gym_Text_BrawlyPreRematch:
-	.string "ADEMAR: O mar devolve coisas\nquando quer. Homem nenhum manda\p"
-	.string "na memoria da agua.$"
+	.string "ADEMAR: The sea gives things back when\n"
+	.string "it feels like it. No man gives orders to\l"
+	.string "the memory of water.$"
 
 DewfordTown_Gym_Text_BrawlyRematchDefeat:
-	.string "ADEMAR: O mar devolve coisas\nquando quer. Homem nenhum manda\p"
-	.string "na memoria da agua.$"
+	.string "ADEMAR: The sea gives things back when\n"
+	.string "it feels like it. No man gives orders to\l"
+	.string "the memory of water.$"
 
 DewfordTown_Gym_Text_BrawlyPostRematch:
-	.string "ADEMAR: O mar devolve coisas\nquando quer. Homem nenhum manda\p"
-	.string "na memoria da agua.$"
+	.string "ADEMAR: The sea gives things back when\n"
+	.string "it feels like it. No man gives orders to\l"
+	.string "the memory of water.$"
 
 DewfordTown_Gym_Text_BrawlyRematchNeedTwoMons:
-	.string "ADEMAR: O mar devolve coisas\nquando quer. Homem nenhum manda\p"
-	.string "na memoria da agua.$"
+	.string "ADEMAR: The sea gives things back when\n"
+	.string "it feels like it. No man gives orders to\l"
+	.string "the memory of water.$"

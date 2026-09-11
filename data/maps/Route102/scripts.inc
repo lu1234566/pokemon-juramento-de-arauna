@@ -82,9 +82,10 @@ Route102_Text_WatchMeCatchPokemon:
 	.string "…Whoa!$"
 
 Route102_Text_WallyIDidIt:
-	.string "VAL: Passei muito tempo achando\nque precisava virar outra\p"
-	.string "pessoa para seguir viagem. Eu\nso precisava descobrir meu\p"
-	.string "proprio ritmo.$"
+	.string "VAL: I spent a long time thinking I had\n"
+	.string "to become someone else to keep\l"
+	.string "traveling. All I had to find was my own\l"
+	.string "pace.$"
 
 Route102_Text_LetsGoBack:
 	.string "{PLAYER}, thank you!\n"

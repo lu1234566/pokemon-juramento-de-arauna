@@ -54,35 +54,33 @@ Route114_FossilManiacsTunnel_EventScript_PlayerRevivedFossil::
 	end
 
 Route114_FossilManiacsTunnel_Text_LookInDesertForFossils:
-	.string "Sou o MANIACO DOS FOSSEIS...\n"
-	.string "Gosto muito de FOSSEIS.\p"
-	.string "Voce quer um FOSSIL?\p"
-	.string "Os daqui eu encontrei primeiro.\p"
-	.string "Se quiser procurar por conta\n"
-	.string "propria, tente o deserto.\p"
-	.string "Pedras e areia escondem\n"
-	.string "coisas por muito tempo.$"
+	.string "I'm the FOSSIL MANIAC... I love FOSSILS.\p"
+	.string "Do you want a FOSSIL?\p"
+	.string "The ones here, I found first.\p"
+	.string "If you want to look on your own, try the\n"
+	.string "desert.\p"
+	.string "Stone and sand hide things for a very\n"
+	.string "long time.$"
 
 Route114_FossilManiacsTunnel_Text_DevonCorpRevivingFossils:
-	.string "Voce encontrou um FOSSIL?\n"
-	.string "Que achado bonito...\p"
-	.string "O que pretende fazer com ele?\p"
-	.string "Ouvi dizer que o HORIZON\n"
-	.string "pesquisa formas de recuperar\l"
-	.string "POKéMON a partir de FOSSEIS.\p"
-	.string "Eu prefiro deixar os meus\n"
-	.string "do jeito que encontrei.$"
+	.string "You found a FOSSIL? What a beautiful\n"
+	.string "find...\p"
+	.string "What do you mean to do with it?\p"
+	.string "I hear HORIZON is researching ways to\n"
+	.string "bring POKéMON back from FOSSILS.\p"
+	.string "I'd rather leave mine the way I found\n"
+	.string "them.$"
 
 Route114_FossilManiacsTunnel_Text_FossilsAreWonderful:
-	.string "FOSSEIS sao maravilhosos...\n"
-	.string "Da vontade de ficar olhando.$"
+	.string "FOSSILS are wonderful... I could stare\n"
+	.string "at them all day.$"
 
 Route114_FossilManiacsTunnel_Text_NotSafeThatWay:
-	.string "Ei... por ali nao e seguro.\p"
-	.string "Eu estava escavando quando\n"
-	.string "a parede inteira desabou.\p"
-	.string "Parece haver uma caverna\n"
-	.string "enorme logo abaixo.\p"
-	.string "Deixei tudo quieto porque\n"
-	.string "nao achei FOSSEIS por la.$"
+	.string "Hey... it isn't safe over there.\p"
+	.string "I was digging when the whole wall came\n"
+	.string "down.\p"
+	.string "There seems to be an enormous cave\n"
+	.string "right below.\p"
+	.string "I left it alone, since I found no\n"
+	.string "FOSSILS down there.$"
 
