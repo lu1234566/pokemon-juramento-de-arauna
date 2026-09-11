@@ -287,8 +287,10 @@ Route103_EventScript_Isabelle::
 	end
 
 Route103_Text_MayRoute103Pokemon:
-	.string "CIRO: Se os dados estiverem\ncertos, o DESENCANTO pode ser\p"
-	.string "tratado. Eu prefiro testar uma\nresposta a transformar\p"
+	.string "CIRO: Se os dados estiverem\n"
+	.string "certos, o DISENCHANTMENT pode ser\p"
+	.string "tratado. Eu prefiro testar uma\n"
+	.string "resposta a transformar\p"
 	.string "sofrimento em tradicao.$"
 
 Route103_Text_MayLetsBattle:

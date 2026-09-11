@@ -270,8 +270,10 @@ Route101_Text_DontLeaveMe:
 	.string "Don't leave me like this!$"
 
 Route101_Text_YouSavedMe:
-	.string "ANAHI: Eu ajudei a criar os\nprimeiros sensores de VINCULO.\p"
-	.string "Na epoca achei que medir\nsignificava compreender. Hoje\p"
+	.string "ANAHI: Eu ajudei a criar os\n"
+	.string "primeiros sensores de BOND.\p"
+	.string "Na epoca achei que medir\n"
+	.string "significava compreender. Hoje\p"
 	.string "sei que nao e a mesma coisa.$"
 
 Route101_Text_TakeTiredPokemonToPokeCenter:

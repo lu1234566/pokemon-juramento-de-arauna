@@ -161,7 +161,7 @@ VictoryRoad_1F_Text_EdgarDefeat:
 VictoryRoad_1F_Text_EdgarPostBattle:
 	.string "Voce chegou longe.\n"
 	.string "Nao pare agora!\p"
-	.string "Va e conquiste a LIGA!$"
+	.string "Va e conquiste a LEAGUE!$"
 
 VictoryRoad_1F_Text_AlbertIntro:
 	.string "Nao vim ate aqui para perder.\n"
@@ -174,7 +174,7 @@ VictoryRoad_1F_Text_AlbertDefeat:
 VictoryRoad_1F_Text_AlbertPostBattle:
 	.string "Perdi aqui...\p"
 	.string "Ainda nao estou pronto\n"
-	.string "para conquistar a LIGA.$"
+	.string "para conquistar a LEAGUE.$"
 
 VictoryRoad_1F_Text_HopeIntro:
 	.string "Esta estrada parece nao ter fim.\n"
@@ -185,7 +185,7 @@ VictoryRoad_1F_Text_HopeDefeat:
 
 VictoryRoad_1F_Text_HopePostBattle:
 	.string "Voce tem forca para chegar\n"
-	.string "ate o topo da LIGA.$"
+	.string "ate o topo da LEAGUE.$"
 
 VictoryRoad_1F_Text_QuincyIntro:
 	.string "O que e esta estrada?\n"
@@ -197,7 +197,7 @@ VictoryRoad_1F_Text_QuincyDefeat:
 
 VictoryRoad_1F_Text_QuincyPostBattle:
 	.string "Este caminho e o ultimo teste\n"
-	.string "de quem busca o topo da LIGA.\p"
+	.string "de quem busca o topo da LEAGUE.\p"
 	.string "Por isso ele se chama\n"
 	.string "ESTRADA DO JURAMENTO.$"
 

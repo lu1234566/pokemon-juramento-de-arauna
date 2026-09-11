@@ -12,7 +12,7 @@ SeafloorCavern_Room4_EventScript_Grunt4::
 	end
 
 SeafloorCavern_Room4_Text_Grunt3Intro:
-	.string "Daqui para baixo, o ARQUIVO\n"
+	.string "Daqui para baixo, o ARCHIVE\n"
 	.string "deixa de responder direito.\p"
 	.string "Nao e lugar para curiosos.$"
 

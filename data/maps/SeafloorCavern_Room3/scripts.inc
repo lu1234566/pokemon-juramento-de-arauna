@@ -35,7 +35,7 @@ SeafloorCavern_Room3_Text_Grunt5Defeat:
 	.string "relatorios...$"
 
 SeafloorCavern_Room3_Text_Grunt5PostBattle:
-	.string "O ARQUIVO ficou instavel desde\n"
+	.string "O ARCHIVE ficou instavel desde\n"
 	.string "que descemos para M'BOI.\p"
 	.string "Mesmo assim, OTACILIO continua.$"
 

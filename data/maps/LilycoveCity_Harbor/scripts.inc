@@ -541,8 +541,10 @@ LilycoveCity_Harbor_Text_FerryUnavailable:
 	.string "available at present…$"
 
 LilycoveCity_Harbor_Text_MayISeeYourTicket:
-	.string "CIRO: Se os dados estiverem\ncertos, o DESENCANTO pode ser\p"
-	.string "tratado. Eu prefiro testar uma\nresposta a transformar\p"
+	.string "CIRO: Se os dados estiverem\n"
+	.string "certos, o DISENCHANTMENT pode ser\p"
+	.string "tratado. Eu prefiro testar uma\n"
+	.string "resposta a transformar\p"
 	.string "sofrimento em tradicao.$"
 
 LilycoveCity_Harbor_Text_NoTicket:

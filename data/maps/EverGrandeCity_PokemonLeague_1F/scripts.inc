@@ -127,7 +127,7 @@ EverGrandeCity_PokemonLeague_1F_Text_MustHaveAllGymBadges:
 
 EverGrandeCity_PokemonLeague_1F_Text_HaventObtainedAllBadges:
 	.string "Ainda faltam INSIGNIAS.\p"
-	.string "Se quer enfrentar a LIGA,\n"
+	.string "Se quer enfrentar a LEAGUE,\n"
 	.string "volte quando tiver as oito.$"
 
 EverGrandeCity_PokemonLeague_1F_Text_GoForth:

@@ -80,31 +80,35 @@ GraniteCave_StevensRoom_Movement_StevenExitSouth:
 	step_end
 
 GraniteCave_StevensRoom_Text_ImStevenLetterForMe:
-	.string "SEU BENTO: Quando um nome some\nda boca das pessoas, eu\p"
-	.string "escrevo. Nao para substituir\nquem lembra; para deixar uma\p"
+	.string "MR. BENTO: Quando um nome some\n"
+	.string "da boca das pessoas, eu\p"
+	.string "escrevo. Nao para substituir\n"
+	.string "quem lembra; para deixar uma\p"
 	.string "pista.$"
 
 GraniteCave_StevensRoom_Text_ThankYouTakeThis:
-	.string "SEU BENTO: Quando um nome some\nda boca das pessoas, eu\p"
-	.string "escrevo. Nao para substituir\nquem lembra; para deixar uma\p"
+	.string "MR. BENTO: Quando um nome some\n"
+	.string "da boca das pessoas, eu\p"
+	.string "escrevo. Nao para substituir\n"
+	.string "quem lembra; para deixar uma\p"
 	.string "pista.$"
 
 GraniteCave_StevensRoom_Text_CouldBecomeChampionLetsRegister:
-	.string "SEU BENTO: Voce presta atencao.\p"
+	.string "MR. BENTO: Voce presta atencao.\p"
 	.string "Isso vale mais que pressa.\p"
 	.string "Registre meu contato no POKéNAV.\p"
 	.string "Se eu achar outro nome perdido,\n"
 	.string "aviso voce.$"
 
 GraniteCave_StevensRoom_Text_RegisteredSteven:
-	.string "SEU BENTO foi registrado\n"
+	.string "MR. BENTO foi registrado\n"
 	.string "no POKéNAV.$"
 
 GraniteCave_StevensRoom_Text_IveGotToHurryAlong:
-	.string "SEU BENTO: Ainda tenho cadernos\n"
+	.string "MR. BENTO: Ainda tenho cadernos\n"
 	.string "para conferir. A gente se ve.$"
 
 GraniteCave_StevensRoom_Text_OhBagIsFull:
-	.string "SEU BENTO: Sua mochila esta cheia.\n"
+	.string "MR. BENTO: Sua mochila esta cheia.\n"
 	.string "Guarde espaco e volte aqui.$"
 

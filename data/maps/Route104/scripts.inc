@@ -1100,8 +1100,10 @@ Route104_Text_MayHaventRaisedPokemon:
 	.string "fosse uma resposta. Eu quero\nsaber o que existe depois dela.$"
 
 Route104_Text_MayLetsBattle:
-	.string "CIRO: Se os dados estiverem\ncertos, o DESENCANTO pode ser\p"
-	.string "tratado. Eu prefiro testar uma\nresposta a transformar\p"
+	.string "CIRO: Se os dados estiverem\n"
+	.string "certos, o DISENCHANTMENT pode ser\p"
+	.string "tratado. Eu prefiro testar uma\n"
+	.string "resposta a transformar\p"
 	.string "sofrimento em tradicao.$"
 
 Route104_Text_MayIntro:
@@ -1109,8 +1111,10 @@ Route104_Text_MayIntro:
 	.string "o bastante para saber que nao\nquero viver preso ao que perdi.$"
 
 Route104_Text_MayDefeat:
-	.string "CIRO: Se os dados estiverem\ncertos, o DESENCANTO pode ser\p"
-	.string "tratado. Eu prefiro testar uma\nresposta a transformar\p"
+	.string "CIRO: Se os dados estiverem\n"
+	.string "certos, o DISENCHANTMENT pode ser\p"
+	.string "tratado. Eu prefiro testar uma\n"
+	.string "resposta a transformar\p"
 	.string "sofrimento em tradicao.$"
 
 Route104_Text_MayPostBattle:
@@ -1132,8 +1136,10 @@ Route104_Text_BrendanHowsYourPokedex:
 	.string "fosse uma resposta. Eu quero\nsaber o que existe depois dela.$"
 
 Route104_Text_BrendanDoingGreatLetsBattle:
-	.string "CIRO: Se os dados estiverem\ncertos, o DESENCANTO pode ser\p"
-	.string "tratado. Eu prefiro testar uma\nresposta a transformar\p"
+	.string "CIRO: Se os dados estiverem\n"
+	.string "certos, o DISENCHANTMENT pode ser\p"
+	.string "tratado. Eu prefiro testar uma\n"
+	.string "resposta a transformar\p"
 	.string "sofrimento em tradicao.$"
 
 Route104_Text_BrendanNoConfidence:
@@ -1145,8 +1151,10 @@ Route104_Text_BrendanLetsBattle:
 	.string "fosse uma resposta. Eu quero\nsaber o que existe depois dela.$"
 
 Route104_Text_BrendanIntro:
-	.string "CIRO: O HORIZONTE nao me pediu\npara esquecer nada. So me\p"
-	.string "mostrou que existe um futuro\nque nao precisa ser governado\p"
+	.string "CIRO: O HORIZON nao me pediu\n"
+	.string "para esquecer nada. So me\p"
+	.string "mostrou que existe um futuro\n"
+	.string "que nao precisa ser governado\p"
 	.string "pelo passado.$"
 
 Route104_Text_BrendanDefeat:

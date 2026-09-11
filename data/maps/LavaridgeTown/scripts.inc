@@ -295,8 +295,10 @@ LavaridgeTown_Text_BrendanNiceBadgesTakeThis:
 	.string "You may as well have this.$"
 
 LavaridgeTown_Text_BrendanExplainGoGogglesChallengeDad:
-	.string "CIRO: Se os dados estiverem\ncertos, o DESENCANTO pode ser\p"
-	.string "tratado. Eu prefiro testar uma\nresposta a transformar\p"
+	.string "CIRO: Se os dados estiverem\n"
+	.string "certos, o DISENCHANTMENT pode ser\p"
+	.string "tratado. Eu prefiro testar uma\n"
+	.string "resposta a transformar\p"
 	.string "sofrimento em tradicao.$"
 
 LavaridgeTown_Text_HaveEggWillYouTakeIt:

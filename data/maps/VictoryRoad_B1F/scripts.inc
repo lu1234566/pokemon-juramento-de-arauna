@@ -27,18 +27,18 @@ VictoryRoad_B1F_EventScript_Halle::
 	end
 
 VictoryRoad_B1F_Text_SamuelIntro:
-	.string "Quanto mais perto da LIGA fico,\n"
+	.string "Quanto mais perto da LEAGUE fico,\n"
 	.string "mais nervoso eu me sinto...$"
 
 VictoryRoad_B1F_Text_SamuelDefeat:
 	.string "Eu nao consegui fazer nada...$"
 
 VictoryRoad_B1F_Text_SamuelPostBattle:
-	.string "A LIGA parece longe de novo...\n"
+	.string "A LEAGUE parece longe de novo...\n"
 	.string "Que decepcao...$"
 
 VictoryRoad_B1F_Text_ShannonIntro:
-	.string "Na LIGA, voce precisa\n"
+	.string "Na LEAGUE, voce precisa\n"
 	.string "da confianca dos seus POKéMON.$"
 
 VictoryRoad_B1F_Text_ShannonDefeat:
@@ -51,7 +51,7 @@ VictoryRoad_B1F_Text_ShannonPostBattle:
 
 VictoryRoad_B1F_Text_MichelleIntro:
 	.string "Isto nao e a chegada.\n"
-	.string "E so mais um passo ate a LIGA.$"
+	.string "E so mais um passo ate a LEAGUE.$"
 
 VictoryRoad_B1F_Text_MichelleDefeat:
 	.string "Esse e o caminho!$"

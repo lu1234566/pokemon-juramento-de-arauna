@@ -555,10 +555,10 @@ MossdeepCity_Gym_Text_TateAndLizaDefeat:
 
 MossdeepCity_Gym_Text_ReceivedMindBadge:
 	.string "{PLAYER} recebeu a\n"
-	.string "INSÍGNIA PRISMA de CECILIA.$"
+	.string "PRISM BADGE de CECILIA.$"
 
 MossdeepCity_Gym_Text_ExplainMindBadgeTakeThis:
-	.string "A INSÍGNIA PRISMA aumenta\n"
+	.string "A PRISM BADGE aumenta\n"
 	.string "SP. ATK e SP. DEF dos POKéMON.\p"
 	.string "Ela também permite usar DIVE\n"
 	.string "fora de batalha.\p"

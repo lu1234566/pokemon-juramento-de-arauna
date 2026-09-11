@@ -48,6 +48,6 @@ FortreeCity_PokemonCenter_1F_Text_DoYouKnowAboutPokenav:
 	.string "que voce ja registrou.\p"
 	.string "Tambem mostra quem esta pronto\n"
 	.string "para uma revanche.\p"
-	.string "O pessoal do HORIZONTE fez\n"
+	.string "O pessoal do HORIZON fez\n"
 	.string "um sistema bem util.$"
 

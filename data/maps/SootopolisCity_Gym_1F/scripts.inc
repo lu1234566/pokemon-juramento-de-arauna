@@ -195,24 +195,28 @@ SootopolisCity_Gym_1F_Text_GymGuidePostVictory:
 	.string "set for the POKéMON LEAGUE challenge!$"
 
 SootopolisCity_Gym_1F_Text_JuanIntro:
-	.string "DONA CELINA: Viver e aprender o\nque guardar e o que deixar\p"
-	.string "seguir. Escolher isso pelo\noutro e que nao cabe a nos.$"
+	.string "MRS. CELINA: Viver e aprender o\n"
+	.string "que guardar e o que deixar\p"
+	.string "seguir. Escolher isso pelo\n"
+	.string "outro e que nao cabe a nos.$"
 
 @ NOTE: This defeat text actually causes a buffer overflow. It's about 50 bytes too long for
 @ the gDisplayedStringBattle buffer that it's put into, and it stomps all over the gBattleTextBuffs
 @ after, as well as the otherwise unused array after that. One wonders if that's the reason for
 @ the existence of that unused array of ints.
 SootopolisCity_Gym_1F_Text_JuanDefeat:
-	.string "DONA CELINA: Viver e aprender o\nque guardar e o que deixar\p"
-	.string "seguir. Escolher isso pelo\noutro e que nao cabe a nos.$"
+	.string "MRS. CELINA: Viver e aprender o\n"
+	.string "que guardar e o que deixar\p"
+	.string "seguir. Escolher isso pelo\n"
+	.string "outro e que nao cabe a nos.$"
 
 SootopolisCity_Gym_1F_Text_ReceivedRainBadge:
 	.string "{PLAYER} recebeu a\n"
-	.string "INSÍGNIA NASCENTE de\n"
-	.string "DONA CELINA.$"
+	.string "SPRING BADGE de\n"
+	.string "MRS. CELINA.$"
 
 SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis:
-	.string "A INSÍGNIA NASCENTE garante\n"
+	.string "A SPRING BADGE garante\n"
 	.string "total obediência dos POKéMON.\p"
 	.string "Também permite usar WATERFALL\n"
 	.string "para subir por cachoeiras.\p"
@@ -231,8 +235,10 @@ SootopolisCity_Gym_1F_Text_RegisteredJuan:
 	.string "in the POKéNAV.$"
 
 SootopolisCity_Gym_1F_Text_JuanPostBattle:
-	.string "DONA CELINA: Viver e aprender o\nque guardar e o que deixar\p"
-	.string "seguir. Escolher isso pelo\noutro e que nao cabe a nos.$"
+	.string "MRS. CELINA: Viver e aprender o\n"
+	.string "que guardar e o que deixar\p"
+	.string "seguir. Escolher isso pelo\n"
+	.string "outro e que nao cabe a nos.$"
 
 SootopolisCity_Gym_1F_Text_GoGetFortreeBadge:
 	.string "There remains but one BADGE to\n"
@@ -250,18 +256,26 @@ SootopolisCity_Gym_1F_Text_GymStatueCertified:
 	.string "{PLAYER}$"
 
 SootopolisCity_Gym_1F_Text_JuanPreRematch:
-	.string "DONA CELINA: Viver e aprender o\nque guardar e o que deixar\p"
-	.string "seguir. Escolher isso pelo\noutro e que nao cabe a nos.$"
+	.string "MRS. CELINA: Viver e aprender o\n"
+	.string "que guardar e o que deixar\p"
+	.string "seguir. Escolher isso pelo\n"
+	.string "outro e que nao cabe a nos.$"
 
 SootopolisCity_Gym_1F_Text_JuanRematchDefeat:
-	.string "DONA CELINA: Viver e aprender o\nque guardar e o que deixar\p"
-	.string "seguir. Escolher isso pelo\noutro e que nao cabe a nos.$"
+	.string "MRS. CELINA: Viver e aprender o\n"
+	.string "que guardar e o que deixar\p"
+	.string "seguir. Escolher isso pelo\n"
+	.string "outro e que nao cabe a nos.$"
 
 SootopolisCity_Gym_1F_Text_JuanPostRematch:
-	.string "DONA CELINA: Viver e aprender o\nque guardar e o que deixar\p"
-	.string "seguir. Escolher isso pelo\noutro e que nao cabe a nos.$"
+	.string "MRS. CELINA: Viver e aprender o\n"
+	.string "que guardar e o que deixar\p"
+	.string "seguir. Escolher isso pelo\n"
+	.string "outro e que nao cabe a nos.$"
 
 SootopolisCity_Gym_1F_Text_JuanRematchNeedTwoMons:
-	.string "DONA CELINA: Viver e aprender o\nque guardar e o que deixar\p"
-	.string "seguir. Escolher isso pelo\noutro e que nao cabe a nos.$"
+	.string "MRS. CELINA: Viver e aprender o\n"
+	.string "que guardar e o que deixar\p"
+	.string "seguir. Escolher isso pelo\n"
+	.string "outro e que nao cabe a nos.$"
 

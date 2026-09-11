@@ -239,17 +239,17 @@ MeteorFalls_1F_1R_Text_WithThisMeteorite:
 MeteorFalls_1F_1R_Text_DontExpectMercyFromMagma:
 	.string "Heh?\p"
 	.string "I don't know who you are, but if you get\n"
-	.string "in the way of LEMBRANTES, don't\l"
+	.string "in the way of REMEMBRANCERS, don't\l"
 	.string "expect any mercy!$"
 
 MeteorFalls_1F_1R_Text_HoldItRightThereMagma:
-	.string "Hold it right there, LEMBRANTES!\p"
+	.string "Hold it right there, REMEMBRANCERS!\p"
 	.string "You're badly mistaken if you think you\n"
 	.string "can have your way with the world!$"
 
 MeteorFalls_1F_1R_Text_BeSeeingYouTeamAqua:
 	.string "Hehehe!\n"
-	.string "Even CONSORCIO HORIZONTE joins us!\p"
+	.string "Even HORIZON CONSORTIUM joins us!\p"
 	.string "But it's too much trouble to deal with\n"
 	.string "you all…\p"
 	.string "Heh, it doesn't matter!\p"
@@ -265,12 +265,12 @@ MeteorFalls_1F_1R_Text_ArchieSeenYouBefore:
 
 MeteorFalls_1F_1R_Text_BossWeShouldChaseMagma:
 	.string "BOSS, we should give chase to\n"
-	.string "LEMBRANTES…$"
+	.string "REMEMBRANCERS…$"
 
 MeteorFalls_1F_1R_Text_ArchieYesNoTellingWhatMagmaWillDo:
 	.string "OTACILIO: Yes, yes, we must!\n"
 	.string "We've got to hurry.\p"
-	.string "There's no telling what LEMBRANTES\n"
+	.string "There's no telling what REMEMBRANCERS\n"
 	.string "will do at SERRA DA CINZA!$"
 
 MeteorFalls_1F_1R_Text_ArchieFarewell:
@@ -281,19 +281,19 @@ MeteorFalls_1F_1R_Text_ArchieFarewell:
 MeteorFalls_1F_1R_Text_MeetProfCozmo:
 	.string "I… I'm COZMO…\n"
 	.string "I'm a PROFESSOR…\p"
-	.string "LEMBRANTES asked me to guide them\n"
+	.string "REMEMBRANCERS asked me to guide them\n"
 	.string "to RUINAS DA QUEDA…\p"
 	.string "But they tricked me.\n"
 	.string "They even took my METEORITE away…\p"
 	.string "And then another similar bunch,\n"
-	.string "CONSORCIO HORIZONTE showed up.\p"
+	.string "HORIZON CONSORTIUM showed up.\p"
 	.string "After that…\n"
 	.string "I don't understand any of it.\p"
-	.string "But that LEMBRANTES…\p"
+	.string "But that REMEMBRANCERS…\p"
 	.string "What are they going to do with that\n"
 	.string "METEORITE at SERRA DA CINZA?$"
 
 MeteorFalls_1F_1R_Text_WhatsTeamMagmaDoingAtMtChimney:
-	.string "PROF. COZMO: But that LEMBRANTES…\p"
+	.string "PROF. COZMO: But that REMEMBRANCERS…\p"
 	.string "What are they going to do with that\n"
 	.string "METEORITE at SERRA DA CINZA?$"

@@ -1012,13 +1012,17 @@ SlateportCity_Text_QuitPushing:
 	.string "This is the line, can't you see?$"
 
 SlateportCity_Text_AquaHasPolicy:
-	.string "HORIZONTE: O projeto de M'BOI\nfoi um desastre. O ARQUIVO\p"
-	.string "atual existe justamente porque\naprendemos com ele. E o que\p"
+	.string "HORIZON: O projeto de M'BOI\n"
+	.string "foi um desastre. O ARCHIVE\p"
+	.string "atual existe justamente porque\n"
+	.string "aprendemos com ele. E o que\p"
 	.string "consta nos relatorios.$"
 
 SlateportCity_Text_BossIsBrilliant:
-	.string "HORIZONTE: Nao somos soldados.\nSomos tecnicos, guardas e\p"
-	.string "pesquisadores. Isso nao torna\ntodas as nossas ordens certas.$"
+	.string "HORIZON: Nao somos soldados.\n"
+	.string "Somos tecnicos, guardas e\p"
+	.string "pesquisadores. Isso nao torna\n"
+	.string "todas as nossas ordens certas.$"
 
 SlateportCity_Text_WhatsNewSchemeIWonder:
 	.string "What's the new scheme, I wonder?\p"
@@ -1169,8 +1173,10 @@ SlateportCity_Text_OhPlayerWeMadeDiscovery:
 	.string "that's said to have been long extinct.$"
 
 SlateportCity_Text_AquaWillAssumeControlOfSubmarine:
-	.string "HORIZONTE: Nao somos soldados.\nSomos tecnicos, guardas e\p"
-	.string "pesquisadores. Isso nao torna\ntodas as nossas ordens certas.$"
+	.string "HORIZON: Nao somos soldados.\n"
+	.string "Somos tecnicos, guardas e\p"
+	.string "pesquisadores. Isso nao torna\n"
+	.string "todas as nossas ordens certas.$"
 
 SlateportCity_Text_SternWhatWasAllThat:
 	.string "CAPT. STERN: What was that all about?\p"
@@ -1179,8 +1185,10 @@ SlateportCity_Text_SternWhatWasAllThat:
 	.string "Where did it come from?$"
 
 SlateportCity_Text_FromHarborTryingToTakeSub:
-	.string "HORIZONTE: O projeto de M'BOI\nfoi um desastre. O ARQUIVO\p"
-	.string "atual existe justamente porque\naprendemos com ele. E o que\p"
+	.string "HORIZON: O projeto de M'BOI\n"
+	.string "foi um desastre. O ARCHIVE\p"
+	.string "atual existe justamente porque\n"
+	.string "aprendemos com ele. E o que\p"
 	.string "consta nos relatorios.$"
 
 SlateportCity_Text_PleaseComeWithMe:
@@ -1218,8 +1226,10 @@ SlateportCity_Text_OceanicMuseumSign:
 	.string "OCEANIC MUSEUM$"
 
 SlateportCity_Text_CitySign:
-	.string "PORTO DO SAL. O ARQUIVO VIVO e\napresentado como a cura do\p"
-	.string "DESENCANTO. Os LEMBRANTES\ntentam impedir a demonstracao.$"
+	.string "PORTO DO SAL. O LIVING ARCHIVE e\n"
+	.string "apresentado como a cura do\p"
+	.string "DISENCHANTMENT. Os REMEMBRANCERS\n"
+	.string "tentam impedir a demonstracao.$"
 
 SlateportCity_Text_MarketSign:
 	.string "PORTO DO SAL MARKET\n"
@@ -1300,12 +1310,16 @@ SlateportCity_Text_ComeBackToTradeBerryPowder:
 	.string "Did you know?$"
 
 SlateportCity_Text_YouDroveTeamAquaAway:
-	.string "HORIZONTE: Nao somos soldados.\nSomos tecnicos, guardas e\p"
-	.string "pesquisadores. Isso nao torna\ntodas as nossas ordens certas.$"
+	.string "HORIZON: Nao somos soldados.\n"
+	.string "Somos tecnicos, guardas e\p"
+	.string "pesquisadores. Isso nao torna\n"
+	.string "todas as nossas ordens certas.$"
 
 SlateportCity_Text_MaybeThisTrainer:
-	.string "CIRO: O HORIZONTE nao me pediu\npara esquecer nada. So me\p"
-	.string "mostrou que existe um futuro\nque nao precisa ser governado\p"
+	.string "CIRO: O HORIZON nao me pediu\n"
+	.string "para esquecer nada. So me\p"
+	.string "mostrou que existe um futuro\n"
+	.string "que nao precisa ser governado\p"
 	.string "pelo passado.$"
 
 SlateportCity_Text_LetsRegisterEachOther:

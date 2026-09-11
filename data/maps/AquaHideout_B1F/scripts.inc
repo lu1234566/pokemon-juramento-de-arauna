@@ -107,51 +107,75 @@ AquaHideout_B1F_EventScript_Grunt7::
 	end
 
 AquaHideout_B1F_Text_Grunt2Intro:
-	.string "HORIZONTE: O projeto de M'BOI\nfoi um desastre. O ARQUIVO\p"
-	.string "atual existe justamente porque\naprendemos com ele. E o que\p"
+	.string "HORIZON: O projeto de M'BOI\n"
+	.string "foi um desastre. O ARCHIVE\p"
+	.string "atual existe justamente porque\n"
+	.string "aprendemos com ele. E o que\p"
 	.string "consta nos relatorios.$"
 
 AquaHideout_B1F_Text_Grunt2Defeat:
-	.string "HORIZONTE: OTACILIO diz que\nmemoria sem escolha e outra\p"
-	.string "forma de prisao. Eu ainda estou\ntentando decidir se concordo.$"
+	.string "HORIZON: OTACILIO diz que\n"
+	.string "memoria sem escolha e outra\p"
+	.string "forma de prisao. Eu ainda estou\n"
+	.string "tentando decidir se concordo.$"
 
 AquaHideout_B1F_Text_Grunt2PostBattle:
-	.string "HORIZONTE: Nao somos soldados.\nSomos tecnicos, guardas e\p"
-	.string "pesquisadores. Isso nao torna\ntodas as nossas ordens certas.$"
+	.string "HORIZON: Nao somos soldados.\n"
+	.string "Somos tecnicos, guardas e\p"
+	.string "pesquisadores. Isso nao torna\n"
+	.string "todas as nossas ordens certas.$"
 
 AquaHideout_B1F_Text_Grunt3Intro:
-	.string "HORIZONTE: OTACILIO diz que\nmemoria sem escolha e outra\p"
-	.string "forma de prisao. Eu ainda estou\ntentando decidir se concordo.$"
+	.string "HORIZON: OTACILIO diz que\n"
+	.string "memoria sem escolha e outra\p"
+	.string "forma de prisao. Eu ainda estou\n"
+	.string "tentando decidir se concordo.$"
 
 AquaHideout_B1F_Text_Grunt3Defeat:
-	.string "HORIZONTE: Nao somos soldados.\nSomos tecnicos, guardas e\p"
-	.string "pesquisadores. Isso nao torna\ntodas as nossas ordens certas.$"
+	.string "HORIZON: Nao somos soldados.\n"
+	.string "Somos tecnicos, guardas e\p"
+	.string "pesquisadores. Isso nao torna\n"
+	.string "todas as nossas ordens certas.$"
 
 AquaHideout_B1F_Text_Grunt3PostBattle:
-	.string "HORIZONTE: O ARQUIVO VIVO nao\napaga pessoas. Ele separa\p"
-	.string "trauma de identidade. Pelo\nmenos e isso que nos ensinaram.$"
+	.string "HORIZON: O LIVING ARCHIVE nao\n"
+	.string "apaga pessoas. Ele separa\p"
+	.string "trauma de identidade. Pelo\n"
+	.string "menos e isso que nos ensinaram.$"
 
 AquaHideout_B1F_Text_Grunt5Intro:
-	.string "HORIZONTE: Nao somos soldados.\nSomos tecnicos, guardas e\p"
-	.string "pesquisadores. Isso nao torna\ntodas as nossas ordens certas.$"
+	.string "HORIZON: Nao somos soldados.\n"
+	.string "Somos tecnicos, guardas e\p"
+	.string "pesquisadores. Isso nao torna\n"
+	.string "todas as nossas ordens certas.$"
 
 AquaHideout_B1F_Text_Grunt5Defeat:
-	.string "HORIZONTE: O ARQUIVO VIVO nao\napaga pessoas. Ele separa\p"
-	.string "trauma de identidade. Pelo\nmenos e isso que nos ensinaram.$"
+	.string "HORIZON: O LIVING ARCHIVE nao\n"
+	.string "apaga pessoas. Ele separa\p"
+	.string "trauma de identidade. Pelo\n"
+	.string "menos e isso que nos ensinaram.$"
 
 AquaHideout_B1F_Text_Grunt5PostBattle:
-	.string "HORIZONTE: O ARQUIVO VIVO nao\napaga pessoas. Ele separa\p"
-	.string "trauma de identidade. Pelo\nmenos e isso que nos ensinaram.$"
+	.string "HORIZON: O LIVING ARCHIVE nao\n"
+	.string "apaga pessoas. Ele separa\p"
+	.string "trauma de identidade. Pelo\n"
+	.string "menos e isso que nos ensinaram.$"
 
 AquaHideout_B1F_Text_Grunt7Intro:
-	.string "HORIZONTE: O ARQUIVO VIVO nao\napaga pessoas. Ele separa\p"
-	.string "trauma de identidade. Pelo\nmenos e isso que nos ensinaram.$"
+	.string "HORIZON: O LIVING ARCHIVE nao\n"
+	.string "apaga pessoas. Ele separa\p"
+	.string "trauma de identidade. Pelo\n"
+	.string "menos e isso que nos ensinaram.$"
 
 AquaHideout_B1F_Text_Grunt7Defeat:
-	.string "HORIZONTE: Nao somos soldados.\nSomos tecnicos, guardas e\p"
-	.string "pesquisadores. Isso nao torna\ntodas as nossas ordens certas.$"
+	.string "HORIZON: Nao somos soldados.\n"
+	.string "Somos tecnicos, guardas e\p"
+	.string "pesquisadores. Isso nao torna\n"
+	.string "todas as nossas ordens certas.$"
 
 AquaHideout_B1F_Text_Grunt7PostBattle:
-	.string "HORIZONTE: O projeto de M'BOI\nfoi um desastre. O ARQUIVO\p"
-	.string "atual existe justamente porque\naprendemos com ele. E o que\p"
+	.string "HORIZON: O projeto de M'BOI\n"
+	.string "foi um desastre. O ARCHIVE\p"
+	.string "atual existe justamente porque\n"
+	.string "aprendemos com ele. E o que\p"
 	.string "consta nos relatorios.$"

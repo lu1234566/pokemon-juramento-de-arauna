@@ -80,8 +80,10 @@ FallarborTown_Text_BattleTentSign:
 	.string "“May the Greatest Teams Gather!”$"
 
 FallarborTown_Text_TownSign:
-	.string "CAMPO DAS CINZAS. O DESENCANTO\navanca onde a terra ja foi\p"
-	.string "ferida. Zila percebe que o\npadrao e mais antigo que o\p"
+	.string "CAMPO DAS CINZAS. O DISENCHANTMENT\n"
+	.string "avanca onde a terra ja foi\p"
+	.string "ferida. Zila percebe que o\n"
+	.string "padrao e mais antigo que o\p"
 	.string "Consorcio.$"
 
 FallarborTown_Text_MoveTutorSign:

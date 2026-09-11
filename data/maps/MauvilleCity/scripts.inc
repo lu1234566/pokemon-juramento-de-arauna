@@ -598,8 +598,10 @@ MauvilleCity_Text_PokemonCanJumpYouOnBike:
 	.string "wild POKéMON could jump you.$"
 
 MauvilleCity_Text_CitySign:
-	.string "ENCRUZILHADA CENTRAL. A cidade\nprosperou com o HORIZONTE. Ciro\p"
-	.string "agora veste o uniforme de quem\npromete construir o futuro.$"
+	.string "ENCRUZILHADA CENTRAL. A cidade\n"
+	.string "prosperou com o HORIZON. Ciro\p"
+	.string "agora veste o uniforme de quem\n"
+	.string "promete construir o futuro.$"
 
 MauvilleCity_Text_GymSign:
 	.string "ENCRUZILHADA CENTRAL\n"

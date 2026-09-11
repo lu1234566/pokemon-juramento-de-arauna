@@ -210,11 +210,11 @@ BattleFrontier_ScottsHouse_EventScript_ScottFaceAwayWest::
 	return
 
 BattleFrontier_ScottsHouse_Text_WelcomeToBattleFrontier:
-	.string "SEU BENTO: Entao voce veio.\n"
+	.string "MR. BENTO: Entao voce veio.\n"
 	.string "Esse lugar nao parece grande,\p"
 	.string "mas o desafio aqui e serio.\p"
 	.string "{PLAYER}{KUN}, bem-vindo ao\n"
-	.string "CIRCUITO DE BATALHA.\p"
+	.string "BATTLE CIRCUIT.\p"
 	.string "Levei anos reunindo gente\n"
 	.string "capaz de sustentar isso.$"
 
@@ -238,9 +238,9 @@ BattleFrontier_ScottsHouse_Text_ObtainedXBattlePoints:
 	.string "{STR_VAR_1} Ponto(s) de Batalha.$"
 
 BattleFrontier_ScottsHouse_Text_ExplainBattlePoints:
-	.string "SEU BENTO: Seus Pontos de\n"
+	.string "MR. BENTO: Seus Pontos de\n"
 	.string "Batalha ficam registrados\p"
-	.string "no PASSE DO CIRCUITO.\p"
+	.string "no CIRCUIT PASS.\p"
 	.string "Quanto melhor for seu resultado,\n"
 	.string "mais pontos voce acumula.\p"
 	.string "Troque-os por itens quando\n"
@@ -250,7 +250,7 @@ BattleFrontier_ScottsHouse_Text_ExpectingGreatThings:
 	.string "Quero ver ate onde voce chega!$"
 
 BattleFrontier_ScottsHouse_Text_WhyIGoSeekingTrainers:
-	.string "SEU BENTO: Cada treinador\n"
+	.string "MR. BENTO: Cada treinador\n"
 	.string "carrega uma historia diferente.\p"
 	.string "Mas numa batalha, desculpas\n"
 	.string "nao mudam o resultado.\p"
@@ -259,32 +259,32 @@ BattleFrontier_ScottsHouse_Text_WhyIGoSeekingTrainers:
 	.string "E trago essa gente para ca.$"
 
 BattleFrontier_ScottsHouse_Text_HaveYouMetFrontierBrain:
-	.string "SEU BENTO: Ja encontrou algum\n"
-	.string "MESTRE DO CIRCUITO?\p"
+	.string "MR. BENTO: Ja encontrou algum\n"
+	.string "MESTRE DO CIRCUIT?\p"
 	.string "E conseguiu algum SIMBOLO?\p"
 	.string "Escolhi cada um porque sabia\n"
 	.string "que eles nao facilitariam.\p"
 	.string "Quero ver se voce os surpreende.$"
 
 BattleFrontier_ScottsHouse_Text_MayFindWildMonsInFrontier:
-	.string "SEU BENTO: Voce ainda observa\n"
+	.string "MR. BENTO: Voce ainda observa\n"
 	.string "POKéMON para a POKéDEX, certo?\p"
-	.string "Entao explore bem o CIRCUITO.\p"
+	.string "Entao explore bem o CIRCUIT.\p"
 	.string "Ha POKéMON selvagens onde\n"
 	.string "menos se espera.$"
 
 BattleFrontier_ScottsHouse_Text_YouveCollectedAllSilverSymbols:
-	.string "SEU BENTO: Esta gostando do\n"
-	.string "CIRCUITO DE BATALHA?\p"
+	.string "MR. BENTO: Esta gostando do\n"
+	.string "BATTLE CIRCUIT?\p"
 	.string "... Espere.\p"
-	.string "Seu PASSE DO CIRCUITO mostra\n"
+	.string "Seu CIRCUIT PASS mostra\n"
 	.string "todos os SIMBOLOS PRATEADOS!\p"
 	.string "Isso nao e pouca coisa.\p"
 	.string "Voce mereceu esta recompensa.$"
 
 BattleFrontier_ScottsHouse_Text_YouveCollectedAllGoldSymbols:
-	.string "SEU BENTO: Deixe-me ver seu\n"
-	.string "PASSE DO CIRCUITO...\p"
+	.string "MR. BENTO: Deixe-me ver seu\n"
+	.string "CIRCUIT PASS...\p"
 	.string "Todos os SIMBOLOS DOURADOS.\p"
 	.string "Pouca gente chega tao longe.\p"
 	.string "{PLAYER}, aceite isto.\p"
@@ -301,14 +301,14 @@ BattleFrontier_ScottsHouse_Text_BerryPocketStuffed:
 	.string "da sua BOLSA esta cheio.$"
 
 BattleFrontier_ScottsHouse_Text_Beat50TrainersInARow:
-	.string "SEU BENTO: Ouvi falar de voce!\n"
+	.string "MR. BENTO: Ouvi falar de voce!\n"
 	.string "Cinquenta vitorias seguidas\p"
-	.string "na TORRE DE BATALHA?\p"
+	.string "na BATTLE TOWER?\p"
 	.string "Nada mal. Pegue isto.$"
 
 BattleFrontier_ScottsHouse_Text_Beat100TrainersInARow:
-	.string "SEU BENTO: Cem vitorias\n"
-	.string "seguidas na TORRE DE BATALHA?\p"
+	.string "MR. BENTO: Cem vitorias\n"
+	.string "seguidas na BATTLE TOWER?\p"
 	.string "Agora voce esta me obrigando\n"
 	.string "a aumentar minhas apostas.\p"
 	.string "Pegue isto.$"

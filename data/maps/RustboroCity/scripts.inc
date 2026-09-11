@@ -1013,7 +1013,7 @@ RustboroCity_EventScript_Boy1::
 	end
 
 RustboroCity_Text_WeShortenItToDevon:
-	.string "O CONSORCIO HORIZONTE mantem\n"
+	.string "O HORIZON CONSORTIUM mantem\n"
 	.string "um centro tecnico na serra.\p"
 	.string "Muita gente daqui depende dele,\n"
 	.string "mas nem todos confiam no projeto.$"
@@ -1100,7 +1100,7 @@ RustboroCity_Text_HelpMeIWasRobbed:
 	.string "You're that fantastic TRAINER who\n"
 	.string "helped me in MATA DA ESPERA!\p"
 	.string "Help me! I was robbed by\n"
-	.string "CONSORCIO HORIZONTE! I have to get the\l"
+	.string "HORIZON CONSORTIUM! I have to get the\l"
 	.string "ENCOMENDA back!\p"
 	.string "If I don't… I'm going to be in serious\n"
 	.string "trouble.$"
@@ -1137,8 +1137,10 @@ RustboroCity_Text_RegisteredMay:
 	.string "no POKéNAV.$"
 
 RustboroCity_Text_MayPassedBrineyWantToBattle:
-	.string "CIRO: Se os dados estiverem\ncertos, o DESENCANTO pode ser\p"
-	.string "tratado. Eu prefiro testar uma\nresposta a transformar\p"
+	.string "CIRO: Se os dados estiverem\n"
+	.string "certos, o DISENCHANTMENT pode ser\p"
+	.string "tratado. Eu prefiro testar uma\n"
+	.string "resposta a transformar\p"
 	.string "sofrimento em tradicao.$"
 
 RustboroCity_Text_MayOhHaventRaisedPokemonEnough:
@@ -1150,8 +1152,10 @@ RustboroCity_Text_MayWantToBattle:
 	.string "o bastante para saber que nao\nquero viver preso ao que perdi.$"
 
 RustboroCity_Text_MayImNotGoingToLose:
-	.string "CIRO: O HORIZONTE nao me pediu\npara esquecer nada. So me\p"
-	.string "mostrou que existe um futuro\nque nao precisa ser governado\p"
+	.string "CIRO: O HORIZON nao me pediu\n"
+	.string "para esquecer nada. So me\p"
+	.string "mostrou que existe um futuro\n"
+	.string "que nao precisa ser governado\p"
 	.string "pelo passado.$"
 
 RustboroCity_Text_MayDefeat:
@@ -1181,8 +1185,10 @@ RustboroCity_Text_BrendanNoConfidenceInPokemon:
 	.string "o bastante para saber que nao\nquero viver preso ao que perdi.$"
 
 RustboroCity_Text_BrendanWantToBattle:
-	.string "CIRO: Se os dados estiverem\ncertos, o DESENCANTO pode ser\p"
-	.string "tratado. Eu prefiro testar uma\nresposta a transformar\p"
+	.string "CIRO: Se os dados estiverem\n"
+	.string "certos, o DISENCHANTMENT pode ser\p"
+	.string "tratado. Eu prefiro testar uma\n"
+	.string "resposta a transformar\p"
 	.string "sofrimento em tradicao.$"
 
 RustboroCity_Text_BrendanIWontGoEasy:
@@ -1205,7 +1211,7 @@ RustboroCity_Text_TunnelNearingCompletion:
 	.string "across it in red paint…$"
 
 RustboroCity_Text_DevonCorpSign:
-	.string "CONSORCIO HORIZONTE\p"
+	.string "HORIZON CONSORTIUM\p"
 	.string "CENTRO TECNICO\n"
 	.string "SERRA DO UIVO.$"
 
@@ -1215,13 +1221,15 @@ RustboroCity_Text_GymSign:
 	.string "A serra lembra.$"
 
 RustboroCity_Text_DevonCorpBranchOfficeSign:
-	.string "CONSORCIO HORIZONTE\p"
+	.string "HORIZON CONSORTIUM\p"
 	.string "ACESSO RESTRITO A FUNCIONARIOS\n"
 	.string "E PESSOAL AUTORIZADO.$"
 
 RustboroCity_Text_CitySign:
-	.string "SERRA DO UIVO. O CONSORCIO\nHORIZONTE trouxe emprego e\p"
-	.string "obras. Tambem trouxe maquinas\ncapazes de medir VINCULOS.$"
+	.string "SERRA DO UIVO. O HORIZON CONSORTIUM\n"
+	.string "trouxe emprego e\p"
+	.string "obras. Tambem trouxe maquinas capazes\n"
+	.string "de medir BONDS.$"
 
 RustboroCity_Text_TrainersSchoolSign:
 	.string "POKéMON TRAINER'S SCHOOL\p"

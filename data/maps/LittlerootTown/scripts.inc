@@ -905,7 +905,7 @@ LittlerootTown_EventScript_GiveRunningShoes::
 	return
 
 LittlerootTown_Text_OurNewHomeLetsGoInside:
-	.string "MAE: {PLAYER}, chegamos.\p"
+	.string "MOM: {PLAYER}, chegamos.\p"
 	.string "Esta e a VILA AMANHECER.\n"
 	.string "Nossa nova casa fica logo ali.\p"
 	.string "Vai levar um tempo para tudo\n"
@@ -913,10 +913,10 @@ LittlerootTown_Text_OurNewHomeLetsGoInside:
 	.string "Venha. Quero que veja seu quarto.$"
 
 LittlerootTown_Text_WaitPlayer:
-	.string "MAE: Espere, {PLAYER}!$"
+	.string "MOM: Espere, {PLAYER}!$"
 
 LittlerootTown_Text_WearTheseRunningShoes:
-	.string "MAE: {PLAYER}! Encontrou ANAHI?\p"
+	.string "MOM: {PLAYER}! Encontrou ANAHI?\p"
 	.string "E esse POKéMON... entao voces\n"
 	.string "decidiram viajar juntos.\p"
 	.string "ELIAS vai querer saber disso.\p"
@@ -928,12 +928,12 @@ LittlerootTown_Text_SwitchShoesWithRunningShoes:
 	.string "TENIS DE CORRIDA.$"
 
 LittlerootTown_Text_ExplainRunningShoes:
-	.string "MAE: Segure o Botao B para\n"
+	.string "MOM: Segure o Botao B para\n"
 	.string "correr quando estiver usando\l"
 	.string "os TENIS DE CORRIDA.$"
 
 LittlerootTown_Text_ComeHomeIfAnythingHappens:
-	.string "MAE: Agora voce tem seu proprio\n"
+	.string "MOM: Agora voce tem seu proprio\n"
 	.string "companheiro de viagem.\p"
 	.string "Nao tente carregar tudo sozinho.\n"
 	.string "Se precisar, volte para casa.\p"

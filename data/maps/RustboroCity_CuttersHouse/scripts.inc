@@ -40,7 +40,7 @@ RustboroCity_CuttersHouse_Text_ExplainCut:
 	.string "by POKéMON outside of battle.\p"
 	.string "Um POKéMON que conheça CUT pode\n"
 	.string "cortar árvores finas se o seu\l"
-	.string "TRAINER tiver a INSÍGNIA FENDA.\p"
+	.string "TRAINER tiver a RIFT BADGE.\p"
 	.string "And, unlike a TM, an HM can be used\n"
 	.string "more than once.$"
 

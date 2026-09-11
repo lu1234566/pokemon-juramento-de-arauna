@@ -304,8 +304,10 @@ MossdeepCity_Movement_ScottExitEast:
 	step_end
 
 MossdeepCity_Text_WantKingsRockStevenGaveMe:
-	.string "SEU BENTO: Quando um nome some\nda boca das pessoas, eu\p"
-	.string "escrevo. Nao para substituir\nquem lembra; para deixar uma\p"
+	.string "MR. BENTO: Quando um nome some\n"
+	.string "da boca das pessoas, eu\p"
+	.string "escrevo. Nao para substituir\n"
+	.string "quem lembra; para deixar uma\p"
 	.string "pista.$"
 
 MossdeepCity_Text_YouCanKeepIt:
@@ -315,8 +317,10 @@ MossdeepCity_Text_YouCanKeepIt:
 	.string "from BENTO.$"
 
 MossdeepCity_Text_StevensHouseOverThere:
-	.string "SEU BENTO: Quando um nome some\nda boca das pessoas, eu\p"
-	.string "escrevo. Nao para substituir\nquem lembra; para deixar uma\p"
+	.string "MR. BENTO: Quando um nome some\n"
+	.string "da boca das pessoas, eu\p"
+	.string "escrevo. Nao para substituir\n"
+	.string "quem lembra; para deixar uma\p"
 	.string "pista.$"
 
 MossdeepCity_Text_WhatToDoWithWeirdRock:
@@ -343,12 +347,12 @@ MossdeepCity_Text_SpaceCenterLaunchingRockets:
 
 MossdeepCity_Text_MossdeepTargetedByMagma:
 	.string "I heard from a SAILOR buddy that\n"
-	.string "CONSORCIO HORIZONTE set up shop in\l"
+	.string "HORIZON CONSORTIUM set up shop in\l"
 	.string "BAIA DAS LUZES.\p"
 	.string "I also heard that someone came along\n"
 	.string "and wiped the floor with them!\p"
 	.string "But MISSOES DO CEU here's been\n"
-	.string "targeted by that LEMBRANTES.\p"
+	.string "targeted by that REMEMBRANCERS.\p"
 	.string "If you want to know what they're up to,\n"
 	.string "go visit the SPACE CENTER.$"
 
@@ -398,8 +402,10 @@ MossdeepCity_Text_GymSign:
 	.string "Toda estrela tem testemunhas.$"
 
 MossdeepCity_Text_CitySign:
-	.string "MISSOES DO CEU. O HORIZONTE\npretende usar a rede regional\p"
-	.string "de comunicacao para ampliar o\nARQUIVO VIVO.$"
+	.string "MISSOES DO CEU. O HORIZON\n"
+	.string "pretende usar a rede regional\p"
+	.string "de comunicacao para ampliar o\n"
+	.string "LIVING ARCHIVE.$"
 
 MossdeepCity_Text_SpaceCenterSign:
 	.string "MISSOES DO CEU SPACE CENTER\n"

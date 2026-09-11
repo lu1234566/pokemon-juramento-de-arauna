@@ -84,7 +84,7 @@ LilycoveCity_CoveLilyMotel_1F_Text_GuestsDoubledByMascot:
 LilycoveCity_CoveLilyMotel_1F_Text_NoGuestsWithTeamAqua:
 	.string "Oh, sorry, sorry! I was too involved in\n"
 	.string "watching TV!\p"
-	.string "Since that CONSORCIO HORIZONTE came\n"
+	.string "Since that HORIZON CONSORTIUM came\n"
 	.string "to town, the tourists have been staying\l"
 	.string "away.$"
 
@@ -104,7 +104,7 @@ LilycoveCity_CoveLilyMotel_1F_Text_HeardAquaHideoutBusted:
 	.string "Oh, sorry, sorry!\n"
 	.string "I was too involved in watching TV!\p"
 	.string "I heard that someone busted\n"
-	.string "the CONSORCIO HORIZONTE HIDEOUT.\p"
+	.string "the HORIZON CONSORTIUM HIDEOUT.\p"
 	.string "Thanks to that, we just booked\n"
 	.string "a reservation from a big group.\p"
 	.string "It was a company called… Uh…\n"

@@ -242,9 +242,12 @@ Route128_EventScript_Carlee::
 	end
 
 Route128_Text_ArchieWhatHappened:
-	.string "OTACILIO: Eu vi o que uma\nmemoria pode fazer com quem\p"
-	.string "sobrevive. O ARQUIVO VIVO\nexiste para que ninguem seja\p"
-	.string "condenado a carregar a pior\nnoite da propria vida para\p"
+	.string "OTACILIO: Eu vi o que uma\n"
+	.string "memoria pode fazer com quem\p"
+	.string "sobrevive. O LIVING ARCHIVE\n"
+	.string "existe para que ninguem seja\p"
+	.string "condenado a carregar a pior\n"
+	.string "noite da propria vida para\p"
 	.string "sempre.$"
 
 Route128_Text_ArchieIOnlyWanted:
@@ -258,9 +261,12 @@ Route128_Text_MaxieDoYouUnderstandNow:
 	.string "conservar.$"
 
 Route128_Text_MaxieResposibilityFallsToArchieAndMe:
-	.string "OTACILIO: Eu vi o que uma\nmemoria pode fazer com quem\p"
-	.string "sobrevive. O ARQUIVO VIVO\nexiste para que ninguem seja\p"
-	.string "condenado a carregar a pior\nnoite da propria vida para\p"
+	.string "OTACILIO: Eu vi o que uma\n"
+	.string "memoria pode fazer com quem\p"
+	.string "sobrevive. O LIVING ARCHIVE\n"
+	.string "existe para que ninguem seja\p"
+	.string "condenado a carregar a pior\n"
+	.string "noite da propria vida para\p"
 	.string "sempre.$"
 
 Route128_Text_MaxieThisDefiesBelief:
@@ -269,17 +275,23 @@ Route128_Text_MaxieThisDefiesBelief:
 	.string "conservar.$"
 
 Route128_Text_StevenWhatIsHappening:
-	.string "SEU BENTO: Quando um nome some\nda boca das pessoas, eu\p"
-	.string "escrevo. Nao para substituir\nquem lembra; para deixar uma\p"
+	.string "MR. BENTO: Quando um nome some\n"
+	.string "da boca das pessoas, eu\p"
+	.string "escrevo. Nao para substituir\n"
+	.string "quem lembra; para deixar uma\p"
 	.string "pista.$"
 
 Route128_Text_StevenWholeWorldWillDrown:
-	.string "SEU BENTO: Quando um nome some\nda boca das pessoas, eu\p"
-	.string "escrevo. Nao para substituir\nquem lembra; para deixar uma\p"
+	.string "MR. BENTO: Quando um nome some\n"
+	.string "da boca das pessoas, eu\p"
+	.string "escrevo. Nao para substituir\n"
+	.string "quem lembra; para deixar uma\p"
 	.string "pista.$"
 
 Route128_Text_StevenImGoingToSootopolis:
-	.string "SEU BENTO: Quando um nome some\nda boca das pessoas, eu\p"
-	.string "escrevo. Nao para substituir\nquem lembra; para deixar uma\p"
+	.string "MR. BENTO: Quando um nome some\n"
+	.string "da boca das pessoas, eu\p"
+	.string "escrevo. Nao para substituir\n"
+	.string "quem lembra; para deixar uma\p"
 	.string "pista.$"
 

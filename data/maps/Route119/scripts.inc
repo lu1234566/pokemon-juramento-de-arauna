@@ -496,8 +496,10 @@ Route119_Text_BrendanIntro:
 	.string "o bastante para saber que nao\nquero viver preso ao que perdi.$"
 
 Route119_Text_BrendanDefeat:
-	.string "CIRO: O HORIZONTE nao me pediu\npara esquecer nada. So me\p"
-	.string "mostrou que existe um futuro\nque nao precisa ser governado\p"
+	.string "CIRO: O HORIZON nao me pediu\n"
+	.string "para esquecer nada. So me\p"
+	.string "mostrou que existe um futuro\n"
+	.string "que nao precisa ser governado\p"
 	.string "pelo passado.$"
 
 Route119_Text_BrendanIllGiveYouThis:
@@ -505,8 +507,10 @@ Route119_Text_BrendanIllGiveYouThis:
 	.string "o bastante para saber que nao\nquero viver preso ao que perdi.$"
 
 Route119_Text_BrendanExplainFly:
-	.string "CIRO: O HORIZONTE nao me pediu\npara esquecer nada. So me\p"
-	.string "mostrou que existe um futuro\nque nao precisa ser governado\p"
+	.string "CIRO: O HORIZON nao me pediu\n"
+	.string "para esquecer nada. So me\p"
+	.string "mostrou que existe um futuro\n"
+	.string "que nao precisa ser governado\p"
 	.string "pelo passado.$"
 
 Route119_Text_ScottWayToGoBeSeeingYou:
@@ -528,13 +532,13 @@ Route119_Text_ScottYouWonAtFortreeGym:
 	.string "... ... ... ... ... Clique!$"
 
 Route119_Text_StayAwayFromWeatherInstitute:
-	.string "HORIZONTE: Estamos isolando\n"
+	.string "HORIZON: Estamos isolando\n"
 	.string "o INSTITUTO DAS AGUAS.\p"
 	.string "Nao se aproxime enquanto a\n"
 	.string "operacao estiver em andamento.$"
 
 Route119_Text_DontGoNearWeatherInstitute:
-	.string "HORIZONTE: Vigiar esta ponte\n"
+	.string "HORIZON: Vigiar esta ponte\n"
 	.string "e mais tedioso do que parece.\p"
 	.string "Mesmo assim, nao chegue perto\n"
 	.string "do INSTITUTO DAS AGUAS.$"

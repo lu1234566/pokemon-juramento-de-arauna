@@ -27,17 +27,23 @@ MeteorFalls_StevensCave_EventScript_Defeated::
 	end
 
 MeteorFalls_StevensCave_Text_ShouldKnowHowGoodIAmExpectWorst:
-	.string "SEU BENTO: Quando um nome some\nda boca das pessoas, eu\p"
-	.string "escrevo. Nao para substituir\nquem lembra; para deixar uma\p"
+	.string "MR. BENTO: Quando um nome some\n"
+	.string "da boca das pessoas, eu\p"
+	.string "escrevo. Nao para substituir\n"
+	.string "quem lembra; para deixar uma\p"
 	.string "pista.$"
 
 MeteorFalls_StevensCave_Text_StevenDefeat:
-	.string "SEU BENTO: Quando um nome some\nda boca das pessoas, eu\p"
-	.string "escrevo. Nao para substituir\nquem lembra; para deixar uma\p"
+	.string "MR. BENTO: Quando um nome some\n"
+	.string "da boca das pessoas, eu\p"
+	.string "escrevo. Nao para substituir\n"
+	.string "quem lembra; para deixar uma\p"
 	.string "pista.$"
 
 MeteorFalls_StevensCave_Text_MyPredictionCameTrue:
-	.string "SEU BENTO: Quando um nome some\nda boca das pessoas, eu\p"
-	.string "escrevo. Nao para substituir\nquem lembra; para deixar uma\p"
+	.string "MR. BENTO: Quando um nome some\n"
+	.string "da boca das pessoas, eu\p"
+	.string "escrevo. Nao para substituir\n"
+	.string "quem lembra; para deixar uma\p"
 	.string "pista.$"
 

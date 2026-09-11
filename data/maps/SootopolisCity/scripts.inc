@@ -1382,7 +1382,7 @@ SootopolisCity_Movement_DestroyTask::
 
 SootopolisCity_Text_GymSign:
 	.string "M'BOI\n"
-	.string "RESPONSAVEL: DONA CELINA\p"
+	.string "RESPONSAVEL: MRS. CELINA\p"
 	.string "A agua lembra por nos.$"
 
 SootopolisCity_Text_CitySign:
@@ -1566,9 +1566,12 @@ SootopolisCity_Text_GroudonPleaseStop:
 	.string "qualquer custo.$"
 
 SootopolisCity_Text_AfterAllOurScheming:
-	.string "IARA-MAE puxa VINCULOS de\nvolta. ANHANGUERA encerra os\p"
-	.string "que nao podem continuar. O\ncolapso obrigou as duas\p"
-	.string "correntes a se manifestar ao\nmesmo tempo.$"
+	.string "IARA-MOM puxa BONDS de\n"
+	.string "volta. ANHANGUERA encerra os\p"
+	.string "que nao podem continuar. O\n"
+	.string "colapso obrigou as duas\p"
+	.string "correntes a se manifestar ao\n"
+	.string "mesmo tempo.$"
 
 SootopolisCity_Text_KyogreCalmDown:
 	.string "A cidade inteira sente o\nresultado de duas ideias\p"
@@ -1576,12 +1579,15 @@ SootopolisCity_Text_KyogreCalmDown:
 	.string "qualquer custo.$"
 
 SootopolisCity_Text_TryingMeaninglessToPokemon:
-	.string "IARA-MAE puxa VINCULOS de\nvolta. ANHANGUERA encerra os\p"
-	.string "que nao podem continuar. O\ncolapso obrigou as duas\p"
-	.string "correntes a se manifestar ao\nmesmo tempo.$"
+	.string "IARA-MOM puxa BONDS de\n"
+	.string "volta. ANHANGUERA encerra os\p"
+	.string "que nao podem continuar. O\n"
+	.string "colapso obrigou as duas\p"
+	.string "correntes a se manifestar ao\n"
+	.string "mesmo tempo.$"
 
 SootopolisCity_Text_InvolvedWithCrisisComeWithMe:
-	.string "SEU BENTO: Olhe para a agua.\p"
+	.string "MR. BENTO: Olhe para a agua.\p"
 	.string "Isso nao e so uma tempestade.\p"
 	.string "As duas correntes antigas foram\n"
 	.string "forcadas a despertar juntas.\p"
@@ -1594,29 +1600,41 @@ SootopolisCity_Text_DoesThisMakeYourFearPokemon:
 	.string "esquecem rostos que amam.$"
 
 SootopolisCity_Text_HereWereAreHelpWallace:
-	.string "SEU BENTO: Quando um nome some\nda boca das pessoas, eu\p"
-	.string "escrevo. Nao para substituir\nquem lembra; para deixar uma\p"
+	.string "MR. BENTO: Quando um nome some\n"
+	.string "da boca das pessoas, eu\p"
+	.string "escrevo. Nao para substituir\n"
+	.string "quem lembra; para deixar uma\p"
 	.string "pista.$"
 
 SootopolisCity_Text_KnowWhatsNeededToHelpHim:
-	.string "SEU BENTO: Quando um nome some\nda boca das pessoas, eu\p"
-	.string "escrevo. Nao para substituir\nquem lembra; para deixar uma\p"
+	.string "MR. BENTO: Quando um nome some\n"
+	.string "da boca das pessoas, eu\p"
+	.string "escrevo. Nao para substituir\n"
+	.string "quem lembra; para deixar uma\p"
 	.string "pista.$"
 
 SootopolisCity_Text_NeverBeenToSkyPillar:
-	.string "SEU BENTO: Quando um nome some\nda boca das pessoas, eu\p"
-	.string "escrevo. Nao para substituir\nquem lembra; para deixar uma\p"
+	.string "MR. BENTO: Quando um nome some\n"
+	.string "da boca das pessoas, eu\p"
+	.string "escrevo. Nao para substituir\n"
+	.string "quem lembra; para deixar uma\p"
 	.string "pista.$"
 
 SootopolisCity_Text_SoThatsRayquaza:
-	.string "IARA-MAE puxa VINCULOS de\nvolta. ANHANGUERA encerra os\p"
-	.string "que nao podem continuar. O\ncolapso obrigou as duas\p"
-	.string "correntes a se manifestar ao\nmesmo tempo.$"
+	.string "IARA-MOM puxa BONDS de\n"
+	.string "volta. ANHANGUERA encerra os\p"
+	.string "que nao podem continuar. O\n"
+	.string "colapso obrigou as duas\p"
+	.string "correntes a se manifestar ao\n"
+	.string "mesmo tempo.$"
 
 SootopolisCity_Text_MaxieArchieLeft:
-	.string "IARA-MAE puxa VINCULOS de\nvolta. ANHANGUERA encerra os\p"
-	.string "que nao podem continuar. O\ncolapso obrigou as duas\p"
-	.string "correntes a se manifestar ao\nmesmo tempo.$"
+	.string "IARA-MOM puxa BONDS de\n"
+	.string "volta. ANHANGUERA encerra os\p"
+	.string "que nao podem continuar. O\n"
+	.string "colapso obrigou as duas\p"
+	.string "correntes a se manifestar ao\n"
+	.string "mesmo tempo.$"
 
 SootopolisCity_Text_HaventYouScaledSkyPillar:
 	.string "AMALIA: Arauna sobreviveu a\nverdade pela metade por tempo\p"
@@ -1624,7 +1642,7 @@ SootopolisCity_Text_HaventYouScaledSkyPillar:
 
 SootopolisCity_Text_AquaMagmaDidntMeanHarm:
 	.string "AMALIA: {PLAYER}{KUN}…\p"
-	.string "The leaders of LEMBRANTES and AQUA,\n"
+	.string "The leaders of REMEMBRANCERS and AQUA,\n"
 	.string "I don't think they meant harm.\p"
 	.string "It wouldn't hurt to hear what they\n"
 	.string "have to say for themselves.$"
@@ -1636,11 +1654,11 @@ SootopolisCity_Text_ThankYouForHelpAcceptThis:
 SootopolisCity_Text_ExplainWaterfallGoToGym:
 	.string "Esta HIDDEN MACHINE contém\n"
 	.string "WATERFALL.\p"
-	.string "Com a INSÍGNIA NASCENTE,\n"
+	.string "Com a SPRING BADGE,\n"
 	.string "um POKéMON que saiba WATERFALL\l"
 	.string "pode subir cachoeiras.\p"
 	.string "E onde se consegue a\n"
-	.string "INSÍGNIA NASCENTE?\p"
+	.string "SPRING BADGE?\p"
 	.string "Você sabe, nao sabe?\p"
 	.string "Derrotando a LÍDER DE GINÁSIO\n"
 	.string "de ÁGUAS DE M'BOI.\p"

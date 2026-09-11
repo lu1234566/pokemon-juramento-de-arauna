@@ -268,8 +268,10 @@ SlateportCity_OceanicMuseum_2F_EventScript_MuseumPatron3::
 	end
 
 SlateportCity_OceanicMuseum_2F_Text_ThankYouForTheParts:
-	.string "HORIZONTE: Nao somos soldados.\nSomos tecnicos, guardas e\p"
-	.string "pesquisadores. Isso nao torna\ntodas as nossas ordens certas.$"
+	.string "HORIZON: Nao somos soldados.\n"
+	.string "Somos tecnicos, guardas e\p"
+	.string "pesquisadores. Isso nao torna\n"
+	.string "todas as nossas ordens certas.$"
 
 SlateportCity_OceanicMuseum_2F_Text_WellTakeThoseParts:
 	.string "Hehehe, hold it!\n"
@@ -280,25 +282,33 @@ SlateportCity_OceanicMuseum_2F_Text_SternWhoAreYou:
 	.string "Who are you people?$"
 
 SlateportCity_OceanicMuseum_2F_Text_WereTeamAqua:
-	.string "HORIZONTE: OTACILIO diz que\nmemoria sem escolha e outra\p"
-	.string "forma de prisao. Eu ainda estou\ntentando decidir se concordo.$"
+	.string "HORIZON: OTACILIO diz que\n"
+	.string "memoria sem escolha e outra\p"
+	.string "forma de prisao. Eu ainda estou\n"
+	.string "tentando decidir se concordo.$"
 
 SlateportCity_OceanicMuseum_2F_Text_Grunt1Defeat:
-	.string "HORIZONTE: O projeto de M'BOI\nfoi um desastre. O ARQUIVO\p"
-	.string "atual existe justamente porque\naprendemos com ele. E o que\p"
+	.string "HORIZON: O projeto de M'BOI\n"
+	.string "foi um desastre. O ARCHIVE\p"
+	.string "atual existe justamente porque\n"
+	.string "aprendemos com ele. E o que\p"
 	.string "consta nos relatorios.$"
 
 SlateportCity_OceanicMuseum_2F_Text_BossGoingToBeFurious:
-	.string "HORIZONTE: Os sensores detectam\nVINCULOS instaveis antes do\p"
-	.string "DESENCANTO completo. Isso pode\nsalvar familias inteiras.$"
+	.string "HORIZON: Os sensores detectam\n"
+	.string "BONDS instaveis antes do\p"
+	.string "DISENCHANTMENT completo. Isso pode\n"
+	.string "salvar familias inteiras.$"
 
 SlateportCity_OceanicMuseum_2F_Text_LetMeTakeCareOfThis:
 	.string "Humph, sniveling wimp!\n"
 	.string "Let me take care of this!$"
 
 SlateportCity_OceanicMuseum_2F_Text_Grunt2Defeat:
-	.string "HORIZONTE: O ARQUIVO VIVO nao\napaga pessoas. Ele separa\p"
-	.string "trauma de identidade. Pelo\nmenos e isso que nos ensinaram.$"
+	.string "HORIZON: O LIVING ARCHIVE nao\n"
+	.string "apaga pessoas. Ele separa\p"
+	.string "trauma de identidade. Pelo\n"
+	.string "menos e isso que nos ensinaram.$"
 
 SlateportCity_OceanicMuseum_2F_Text_MeddlingKid:
 	.string "Now what? If we don't get the parts,\n"
@@ -312,14 +322,19 @@ SlateportCity_OceanicMuseum_2F_Text_CameToSeeWhatsTakingSoLong:
 	.string "simps are held up by a mere child?$"
 
 SlateportCity_OceanicMuseum_2F_Text_ArchieWarning:
-	.string "OTACILIO: Eu vi o que uma\nmemoria pode fazer com quem\p"
-	.string "sobrevive. O ARQUIVO VIVO\nexiste para que ninguem seja\p"
-	.string "condenado a carregar a pior\nnoite da propria vida para\p"
+	.string "OTACILIO: Eu vi o que uma\n"
+	.string "memoria pode fazer com quem\p"
+	.string "sobrevive. O LIVING ARCHIVE\n"
+	.string "existe para que ninguem seja\p"
+	.string "condenado a carregar a pior\n"
+	.string "noite da propria vida para\p"
 	.string "sempre.$"
 
 SlateportCity_OceanicMuseum_2F_Text_SternThankYouForSavingUs:
-	.string "HORIZONTE: Nao somos soldados.\nSomos tecnicos, guardas e\p"
-	.string "pesquisadores. Isso nao torna\ntodas as nossas ordens certas.$"
+	.string "HORIZON: Nao somos soldados.\n"
+	.string "Somos tecnicos, guardas e\p"
+	.string "pesquisadores. Isso nao torna\n"
+	.string "todas as nossas ordens certas.$"
 
 SlateportCity_OceanicMuseum_2F_Text_SternIveGotToGo:
 	.string "CAPT. STERN: Whoops!\n"
@@ -341,8 +356,10 @@ SlateportCity_OceanicMuseum_2F_Text_DontRunInMuseum:
 	.string "the MUSEUM!$"
 
 SlateportCity_OceanicMuseum_2F_Text_WantToRideSubmarine:
-	.string "HORIZONTE: Nao somos soldados.\nSomos tecnicos, guardas e\p"
-	.string "pesquisadores. Isso nao torna\ntodas as nossas ordens certas.$"
+	.string "HORIZON: Nao somos soldados.\n"
+	.string "Somos tecnicos, guardas e\p"
+	.string "pesquisadores. Isso nao torna\n"
+	.string "todas as nossas ordens certas.$"
 
 SlateportCity_OceanicMuseum_2F_Text_WaterQualitySample1:
 	.string "“WATER QUALITY SAMPLE 1,” the\n"
@@ -390,8 +407,10 @@ SlateportCity_OceanicMuseum_2F_Text_SSTidalReplica:
 	.string "construction at STERN'S SHIPYARD.”$"
 
 SlateportCity_OceanicMuseum_2F_Text_SubmarineReplica:
-	.string "HORIZONTE: Os sensores detectam\nVINCULOS instaveis antes do\p"
-	.string "DESENCANTO completo. Isso pode\nsalvar familias inteiras.$"
+	.string "HORIZON: Os sensores detectam\n"
+	.string "BONDS instaveis antes do\p"
+	.string "DISENCHANTMENT completo. Isso pode\n"
+	.string "salvar familias inteiras.$"
 
 SlateportCity_OceanicMuseum_2F_Text_SumbersibleReplica:
 	.string "“SUBMERSIBLE POD\p"

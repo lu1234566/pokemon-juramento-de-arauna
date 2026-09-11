@@ -22,54 +22,79 @@ MagmaHideout_2F_2R_EventScript_Grunt8::
 	end
 
 MagmaHideout_2F_2R_Text_Grunt15Intro:
-	.string "LEMBRANTE: O HORIZONTE quer uma\nArauna estavel. Eu quero uma\p"
-	.string "Arauna que saiba por que suas\nruinas existem.$"
+	.string "REMEMBRANCER: O HORIZON quer uma\n"
+	.string "Arauna estavel. Eu quero uma\p"
+	.string "Arauna que saiba por que suas\n"
+	.string "ruinas existem.$"
 
 MagmaHideout_2F_2R_Text_Grunt15Defeat:
-	.string "LEMBRANTE: Se uma historia\nincomoda quem manda, ela vira\p"
-	.string "'ruido', depois 'trauma',\ndepois desaparece do registro.$"
+	.string "REMEMBRANCER: Se uma historia\n"
+	.string "incomoda quem manda, ela vira\p"
+	.string "'ruido', depois 'trauma',\n"
+	.string "depois desaparece do registro.$"
 
 MagmaHideout_2F_2R_Text_Grunt15PostBattle:
-	.string "Os sensores registram duas\ncorrentes antigas sob Arauna:\p"
-	.string "uma conserva VINCULOS; a outra\npermite que eles terminem. O\p"
-	.string "ARQUIVO tentou transformar\nambas em ferramentas.$"
+	.string "Os sensores registram duas\n"
+	.string "correntes antigas sob Arauna:\p"
+	.string "uma conserva BONDS; a outra\n"
+	.string "permite que eles terminem. O\p"
+	.string "ARCHIVE tentou transformar\n"
+	.string "ambas em ferramentas.$"
 
 MagmaHideout_2F_2R_Text_Grunt6Intro:
-	.string "LEMBRANTE: LUZIA diz que\nmemoria devolvida sem permissao\p"
-	.string "ainda e melhor que memoria\nroubada. Nem todos aqui\p"
+	.string "REMEMBRANCER: LUZIA diz que\n"
+	.string "memoria devolvida sem permissao\p"
+	.string "ainda e melhor que memoria\n"
+	.string "roubada. Nem todos aqui\p"
 	.string "concordam com essa parte.$"
 
 MagmaHideout_2F_2R_Text_Grunt6Defeat:
-	.string "LEMBRANTE: Se uma historia\nincomoda quem manda, ela vira\p"
-	.string "'ruido', depois 'trauma',\ndepois desaparece do registro.$"
+	.string "REMEMBRANCER: Se uma historia\n"
+	.string "incomoda quem manda, ela vira\p"
+	.string "'ruido', depois 'trauma',\n"
+	.string "depois desaparece do registro.$"
 
 MagmaHideout_2F_2R_Text_Grunt6PostBattle:
-	.string "LEMBRANTE: LUZIA diz que\nmemoria devolvida sem permissao\p"
-	.string "ainda e melhor que memoria\nroubada. Nem todos aqui\p"
+	.string "REMEMBRANCER: LUZIA diz que\n"
+	.string "memoria devolvida sem permissao\p"
+	.string "ainda e melhor que memoria\n"
+	.string "roubada. Nem todos aqui\p"
 	.string "concordam com essa parte.$"
 
 MagmaHideout_2F_2R_Text_Grunt7Intro:
-	.string "LEMBRANTE: O HORIZONTE quer uma\nArauna estavel. Eu quero uma\p"
-	.string "Arauna que saiba por que suas\nruinas existem.$"
+	.string "REMEMBRANCER: O HORIZON quer uma\n"
+	.string "Arauna estavel. Eu quero uma\p"
+	.string "Arauna que saiba por que suas\n"
+	.string "ruinas existem.$"
 
 MagmaHideout_2F_2R_Text_Grunt7Defeat:
-	.string "LEMBRANTE: O HORIZONTE quer uma\nArauna estavel. Eu quero uma\p"
-	.string "Arauna que saiba por que suas\nruinas existem.$"
+	.string "REMEMBRANCER: O HORIZON quer uma\n"
+	.string "Arauna estavel. Eu quero uma\p"
+	.string "Arauna que saiba por que suas\n"
+	.string "ruinas existem.$"
 
 MagmaHideout_2F_2R_Text_Grunt7PostBattle:
-	.string "LEMBRANTE: Se uma historia\nincomoda quem manda, ela vira\p"
-	.string "'ruido', depois 'trauma',\ndepois desaparece do registro.$"
+	.string "REMEMBRANCER: Se uma historia\n"
+	.string "incomoda quem manda, ela vira\p"
+	.string "'ruido', depois 'trauma',\n"
+	.string "depois desaparece do registro.$"
 
 MagmaHideout_2F_2R_Text_Grunt8Intro:
-	.string "LEMBRANTE: Guardar um nome pode\nser resistencia. Obrigar alguem\p"
-	.string "a reviver tudo tambem pode ser\nviolencia.$"
+	.string "REMEMBRANCER: Guardar um nome pode\n"
+	.string "ser resistencia. Obrigar alguem\p"
+	.string "a reviver tudo tambem pode ser\n"
+	.string "violencia.$"
 
 MagmaHideout_2F_2R_Text_Grunt8Defeat:
-	.string "LEMBRANTE: Guardar um nome pode\nser resistencia. Obrigar alguem\p"
-	.string "a reviver tudo tambem pode ser\nviolencia.$"
+	.string "REMEMBRANCER: Guardar um nome pode\n"
+	.string "ser resistencia. Obrigar alguem\p"
+	.string "a reviver tudo tambem pode ser\n"
+	.string "violencia.$"
 
 MagmaHideout_2F_2R_Text_Grunt8PostBattle:
-	.string "LEMBRANTE: LUZIA diz que\nmemoria devolvida sem permissao\p"
-	.string "ainda e melhor que memoria\nroubada. Nem todos aqui\p"
+	.string "REMEMBRANCER: LUZIA diz que\n"
+	.string "memoria devolvida sem permissao\p"
+	.string "ainda e melhor que memoria\n"
+	.string "roubada. Nem todos aqui\p"
 	.string "concordam com essa parte.$"
 

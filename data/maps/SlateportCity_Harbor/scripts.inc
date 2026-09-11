@@ -387,8 +387,10 @@ SlateportCity_Harbor_Text_FerryServiceUnavailable:
 	.string "available at present…$"
 
 SlateportCity_Harbor_Text_MayISeeYourTicket:
-	.string "CIRO: Se os dados estiverem\ncertos, o DESENCANTO pode ser\p"
-	.string "tratado. Eu prefiro testar uma\nresposta a transformar\p"
+	.string "CIRO: Se os dados estiverem\n"
+	.string "certos, o DISENCHANTMENT pode ser\p"
+	.string "tratado. Eu prefiro testar uma\n"
+	.string "resposta a transformar\p"
 	.string "sofrimento em tradicao.$"
 
 SlateportCity_Harbor_Text_YouMustHaveTicket:
@@ -425,8 +427,10 @@ SlateportCity_Harbor_Text_LoveToGoDeepUnderwaterSomeday:
 	.string "that someday.$"
 
 SlateportCity_Harbor_Text_AbnormalWeather:
-	.string "HORIZONTE: Os sensores detectam\nVINCULOS instaveis antes do\p"
-	.string "DESENCANTO completo. Isso pode\nsalvar familias inteiras.$"
+	.string "HORIZON: Os sensores detectam\n"
+	.string "BONDS instaveis antes do\p"
+	.string "DISENCHANTMENT completo. Isso pode\n"
+	.string "salvar familias inteiras.$"
 
 SlateportCity_Harbor_Text_SubTooSmallForMe:
 	.string "I wanted to go with CAPT. STERN on\n"
@@ -441,22 +445,31 @@ SlateportCity_Harbor_Text_SameThugsTriedToRobAtMuseum:
 	.string "the ENCOMENDA at the MUSEUM.$"
 
 SlateportCity_Harbor_Text_ArchieYouAgainHideoutInLilycove:
-	.string "OTACILIO: Eu vi o que uma\nmemoria pode fazer com quem\p"
-	.string "sobrevive. O ARQUIVO VIVO\nexiste para que ninguem seja\p"
-	.string "condenado a carregar a pior\nnoite da propria vida para\p"
+	.string "OTACILIO: Eu vi o que uma\n"
+	.string "memoria pode fazer com quem\p"
+	.string "sobrevive. O LIVING ARCHIVE\n"
+	.string "existe para que ninguem seja\p"
+	.string "condenado a carregar a pior\n"
+	.string "noite da propria vida para\p"
 	.string "sempre.$"
 
 SlateportCity_Harbor_Text_CaptSternWhyStealMySubmarine:
-	.string "HORIZONTE: Os sensores detectam\nVINCULOS instaveis antes do\p"
-	.string "DESENCANTO completo. Isso pode\nsalvar familias inteiras.$"
+	.string "HORIZON: Os sensores detectam\n"
+	.string "BONDS instaveis antes do\p"
+	.string "DISENCHANTMENT completo. Isso pode\n"
+	.string "salvar familias inteiras.$"
 
 SlateportCity_Harbor_Text_TeamAquaLeftNeedDive:
-	.string "HORIZONTE: Os sensores detectam\nVINCULOS instaveis antes do\p"
-	.string "DESENCANTO completo. Isso pode\nsalvar familias inteiras.$"
+	.string "HORIZON: Os sensores detectam\n"
+	.string "BONDS instaveis antes do\p"
+	.string "DISENCHANTMENT completo. Isso pode\n"
+	.string "salvar familias inteiras.$"
 
 SlateportCity_Harbor_Text_NeedDiveToCatchSub:
-	.string "HORIZONTE: O projeto de M'BOI\nfoi um desastre. O ARQUIVO\p"
-	.string "atual existe justamente porque\naprendemos com ele. E o que\p"
+	.string "HORIZON: O projeto de M'BOI\n"
+	.string "foi um desastre. O ARCHIVE\p"
+	.string "atual existe justamente porque\n"
+	.string "aprendemos com ele. E o que\p"
 	.string "consta nos relatorios.$"
 
 SlateportCity_Harbor_Text_WontBeLongBeforeWeFinishFerry:

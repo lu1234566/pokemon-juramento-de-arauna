@@ -241,10 +241,10 @@ FortreeCity_Gym_Text_WinonaDefeat:
 
 FortreeCity_Gym_Text_ReceivedFeatherBadge:
 	.string "{PLAYER} recebeu a\n"
-	.string "INSÍGNIA PLUMA de LIDIA.$"
+	.string "PLUME BADGE de LIDIA.$"
 
 FortreeCity_Gym_Text_ExplainFeatherBadgeTakeThis:
-	.string "Com a INSÍGNIA PLUMA, POKéMON\n"
+	.string "Com a PLUME BADGE, POKéMON\n"
 	.string "até o nível 70 obedecem,\l"
 	.string "mesmo os recebidos em troca.\p"
 	.string "Ela também permite usar FLY\n"

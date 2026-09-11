@@ -27,7 +27,7 @@ EverGrandeCity_Text_EnteringVictoryRoad:
 	.string "ESTRADA DO JURAMENTO$"
 
 EverGrandeCity_Text_EnteringPokemonLeague:
-	.string "ENTRADA DA LIGA POKéMON$"
+	.string "ENTRADA DA LEAGUE POKéMON$"
 
 EverGrandeCity_Text_CitySign:
 	.string "ESTRADA DO JURAMENTO. A Liga e\no ultimo rito da viagem. Vencer\p"

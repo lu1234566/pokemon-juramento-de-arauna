@@ -342,10 +342,10 @@ MauvilleCity_Gym_Text_WattsonDefeat:
 
 MauvilleCity_Gym_Text_ReceivedDynamoBadge:
 	.string "{PLAYER} recebeu a\n"
-	.string "INSÍGNIA FAROL de OLIVIA.$"
+	.string "BEACON BADGE de OLIVIA.$"
 
 MauvilleCity_Gym_Text_ExplainDynamoBadgeTakeThis:
-	.string "A INSÍGNIA FAROL permite usar\n"
+	.string "A BEACON BADGE permite usar\n"
 	.string "ROCK SMASH fora de batalha.\p"
 	.string "Ela também aumenta um pouco a\n"
 	.string "VELOCIDADE dos seus POKéMON.\p"

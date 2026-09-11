@@ -130,7 +130,7 @@ RustboroCity_Gym_Text_GymGuidePostVictory:
 	.string "My cheering must've worked!\p"
 	.string "Great!\n"
 	.string "Check your TRAINER CARD.\p"
-	.string "A INSÍGNIA FENDA deve estar\n"
+	.string "A RIFT BADGE deve estar\n"
 	.string "registrada no seu TRAINER CARD.\p"
 	.string "In other words…\p"
 	.string "You've climbed the first step on\n"
@@ -185,10 +185,10 @@ RustboroCity_Gym_Text_RoxanneDefeat:
 
 RustboroCity_Gym_Text_ReceivedStoneBadge:
 	.string "{PLAYER} recebeu a\n"
-	.string "INSÍGNIA FENDA de DALVA.$"
+	.string "RIFT BADGE de DALVA.$"
 
 RustboroCity_Gym_Text_StoneBadgeInfoTakeThis:
-	.string "A INSÍGNIA FENDA aumenta o\n"
+	.string "A RIFT BADGE aumenta o\n"
 	.string "ATAQUE dos seus POKéMON.\p"
 	.string "Ela também permite usar CUT\n"
 	.string "fora de batalha.\p"

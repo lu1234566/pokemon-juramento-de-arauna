@@ -51,39 +51,57 @@ AquaHideout_1F_EventScript_Grunt1Defeated::
 	end
 
 AquaHideout_1F_Text_OurBossIsSnatchingSomething:
-	.string "HORIZONTE: O diretor saiu para\nbuscar um componente essencial\p"
-	.string "do ARQUIVO VIVO. Nao espere que\neu diga onde.$"
+	.string "HORIZON: O diretor saiu para\n"
+	.string "buscar um componente essencial\p"
+	.string "do LIVING ARCHIVE. Nao espere que\n"
+	.string "eu diga onde.$"
 
 AquaHideout_1F_Text_WhereMightMagmaHideoutBe:
-	.string "HORIZONTE: Os LEMBRANTES\nmontaram uma base perto da\p"
-	.string "SERRA DA CINZA. Luzia quer\nchegar aos registros antes de\p"
+	.string "HORIZON: Os REMEMBRANCERS\n"
+	.string "montaram uma base perto da\p"
+	.string "SERRA DA CINZA. Luzia quer\n"
+	.string "chegar aos registros antes de\p"
 	.string "nos.$"
 
 AquaHideout_1F_Text_BossWentToJackASubmarine:
-	.string "HORIZONTE: OTACILIO foi ao\nPORTO DO SAL. O submersivel\p"
-	.string "consegue chegar as cavernas de\nM'BOI.$"
+	.string "HORIZON: OTACILIO foi ao\n"
+	.string "PORTO DO SAL. O submersivel\p"
+	.string "consegue chegar as cavernas de\n"
+	.string "M'BOI.$"
 
 AquaHideout_1F_Text_BossIsOnRoute122:
-	.string "HORIZONTE: OTACILIO seguiu para\no MEMORIAL DOS NOMES, na ROTA\p"
-	.string "122. Ele quer os registros\nguardados la.$"
+	.string "HORIZON: OTACILIO seguiu para\n"
+	.string "o MEMORIAL DOS NOMES, na ROTA\p"
+	.string "122. Ele quer os registros\n"
+	.string "guardados la.$"
 
 AquaHideout_1F_Text_TeamMagmaAtMtChimney:
-	.string "HORIZONTE: Os LEMBRANTES estao\nna SERRA DA CINZA. Dizem que\p"
-	.string "LUZIA pretende devolver\nmemorias extraidas a forca.$"
+	.string "HORIZON: Os REMEMBRANCERS estao\n"
+	.string "na SERRA DA CINZA. Dizem que\p"
+	.string "LUZIA pretende devolver\n"
+	.string "memorias extraidas a forca.$"
 
 AquaHideout_1F_Text_BossIsInSlateportCity:
-	.string "HORIZONTE: OTACILIO esta no\nPORTO DO SAL. A demonstracao\p"
-	.string "publica do ARQUIVO VIVO comeca\nla.$"
+	.string "HORIZON: OTACILIO esta no\n"
+	.string "PORTO DO SAL. A demonstracao\p"
+	.string "publica do LIVING ARCHIVE comeca\n"
+	.string "la.$"
 
 AquaHideout_1F_Text_Grunt1Intro:
-	.string "HORIZONTE: Os sensores detectam\nVINCULOS instaveis antes do\p"
-	.string "DESENCANTO completo. Isso pode\nsalvar familias inteiras.$"
+	.string "HORIZON: Os sensores detectam\n"
+	.string "BONDS instaveis antes do\p"
+	.string "DISENCHANTMENT completo. Isso pode\n"
+	.string "salvar familias inteiras.$"
 
 AquaHideout_1F_Text_Grunt1Defeat:
-	.string "HORIZONTE: O ARQUIVO VIVO nao\napaga pessoas. Ele separa\p"
-	.string "trauma de identidade. Pelo\nmenos e isso que nos ensinaram.$"
+	.string "HORIZON: O LIVING ARCHIVE nao\n"
+	.string "apaga pessoas. Ele separa\p"
+	.string "trauma de identidade. Pelo\n"
+	.string "menos e isso que nos ensinaram.$"
 
 AquaHideout_1F_Text_Grunt1PostBattle:
-	.string "HORIZONTE: Os sensores detectam\nVINCULOS instaveis antes do\p"
-	.string "DESENCANTO completo. Isso pode\nsalvar familias inteiras.$"
+	.string "HORIZON: Os sensores detectam\n"
+	.string "BONDS instaveis antes do\p"
+	.string "DISENCHANTMENT completo. Isso pode\n"
+	.string "salvar familias inteiras.$"
 

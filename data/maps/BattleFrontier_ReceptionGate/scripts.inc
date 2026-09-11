@@ -297,42 +297,54 @@ BattleFrontier_ReceptionGate_Text_FirstTimeHereThisWay:
 	.string "E sua primeira visita?\nPor favor, venha por aqui!$"
 
 BattleFrontier_ReceptionGate_Text_WelcomeToBattleFrontier:
-	.string "Este e o CIRCUITO DE BATALHA!\nBem-vindo ao desafio final.$"
+	.string "Este e o BATTLE CIRCUIT!\n"
+	.string "Bem-vindo ao desafio final.$"
 
 BattleFrontier_ReceptionGate_Text_IssueFrontierPass:
-	.string "Na primeira visita entregamos\no PASSE DO CIRCUITO.\p"
-	.string "Ele vale em todas as instalacoes\ndeste complexo.\p"
+	.string "Na primeira visita entregamos\n"
+	.string "o CIRCUIT PASS.\p"
+	.string "Ele vale em todas as instalacoes\n"
+	.string "deste complexo.\p"
 	.string "Aqui esta!$"
 
 BattleFrontier_ReceptionGate_Text_ObtainedFrontierPass:
-	.string "{PLAYER} recebeu o\nPASSE DO CIRCUITO.$"
+	.string "{PLAYER} recebeu o\n"
+	.string "CIRCUIT PASS.$"
 
 BattleFrontier_ReceptionGate_Text_PlacedTrainerCardInFrontierPass:
 	.string "Os dados do TREINADOR foram\nregistrados no PASSE.$"
 
 BattleFrontier_ReceptionGate_Text_EnjoyBattleFrontier:
-	.string "Aproveite tudo que o CIRCUITO\nDE BATALHA oferece!$"
+	.string "Aproveite tudo que o BATTLE CIRCUIT\n"
+	.string "oferece!$"
 
 BattleFrontier_ReceptionGate_Text_IfItIsntPlayerYouCame:
 	.string "???: {PLAYER}{KUN}! Entao voce veio.$"
 
 BattleFrontier_ReceptionGate_Text_OhMrScottGoodDay:
-	.string "GUIA: Ah! SEU BENTO!\nBom dia, senhor!$"
+	.string "GUIA: Ah! MR. BENTO!\n"
+	.string "Bom dia, senhor!$"
 
 BattleFrontier_ReceptionGate_Text_ScottGreatToSeeYouHere:
-	.string "SEU BENTO: Bom ver voce aqui.\nExplore tudo com calma.\p"
-	.string "Quero que descubra ate onde\nseu modo de batalhar aguenta.\p"
-	.string "Tenho um quarto aqui perto.\nPasse la quando quiser.$"
+	.string "MR. BENTO: Bom ver voce aqui.\n"
+	.string "Explore tudo com calma.\p"
+	.string "Quero que descubra ate onde\n"
+	.string "seu modo de batalhar aguenta.\p"
+	.string "Tenho um quarto aqui perto.\n"
+	.string "Passe la quando quiser.$"
 
 BattleFrontier_ReceptionGate_Text_YourGuideToFacilities:
-	.string "Sou o guia das instalacoes do\nCIRCUITO DE BATALHA.$"
+	.string "Sou o guia das instalacoes do\n"
+	.string "BATTLE CIRCUIT.$"
 
 BattleFrontier_ReceptionGate_Text_LearnAboutWhich2:
 	.string "Sobre qual quer saber?$"
 
 BattleFrontier_ReceptionGate_Text_BattleTowerInfo:
-	.string "A BATTLE TOWER e a grande torre\ne simbolo do CIRCUITO.\p"
-	.string "Ha desafios SINGLE, DOUBLE,\nMULTI e LINK MULTI.$"
+	.string "A BATTLE TOWER e a grande torre\n"
+	.string "e simbolo do CIRCUIT.\p"
+	.string "Ha desafios SINGLE, DOUBLE,\n"
+	.string "MULTI e LINK MULTI.$"
 
 BattleFrontier_ReceptionGate_Text_BattleDomeInfo:
 	.string "O BATTLE DOME e o predio em\nforma de grande ovo.\p"
@@ -343,8 +355,10 @@ BattleFrontier_ReceptionGate_Text_BattlePalaceInfo:
 	.string "Ha desafios SINGLE e DOUBLE.$"
 
 BattleFrontier_ReceptionGate_Text_BattleArenaInfo:
-	.string "A BATTLE ARENA fica na parte\ncentral direita do CIRCUITO.\p"
-	.string "Ali ocorre um torneio curto\nbaseado em nocautes.$"
+	.string "A BATTLE ARENA fica na parte\n"
+	.string "central direita do CIRCUIT.\p"
+	.string "Ali ocorre um torneio curto\n"
+	.string "baseado em nocautes.$"
 
 BattleFrontier_ReceptionGate_Text_BattleFactoryInfo:
 	.string "A BATTLE FACTORY e o grande\npredio mais perto da entrada.\p"
@@ -360,15 +374,18 @@ BattleFrontier_ReceptionGate_Text_BattlePyramidInfo:
 	.string "O desafio exige explorar e\nvencer batalhas ate o topo.$"
 
 BattleFrontier_ReceptionGate_Text_RankingHallInfo:
-	.string "O RANKING HALL fica perto da\nBATTLE TOWER.\p"
-	.string "La ficam os melhores registros\nde quem enfrentou o CIRCUITO.$"
+	.string "O RANKING HALL fica perto da\n"
+	.string "BATTLE TOWER.\p"
+	.string "La ficam os melhores registros\n"
+	.string "de quem enfrentou o CIRCUIT.$"
 
 BattleFrontier_ReceptionGate_Text_ExchangeCornerInfo:
 	.string "O EXCHANGE CORNER fica perto\nda BATTLE TOWER.\p"
 	.string "Troque seus Pontos de Batalha\npor recompensas ali.$"
 
 BattleFrontier_ReceptionGate_Text_YourGuideToRules:
-	.string "Sou o guia das regras comuns\naos desafios do CIRCUITO.$"
+	.string "Sou o guia das regras comuns\n"
+	.string "aos desafios do CIRCUIT.$"
 
 BattleFrontier_ReceptionGate_Text_LearnAboutWhat:
 	.string "Sobre qual regra quer saber?$"
@@ -397,23 +414,32 @@ BattleFrontier_ReceptionGate_Text_HoldItemsInfo:
 	.string "Cada integrante deve entrar\ncom um item diferente.$"
 
 BattleFrontier_ReceptionGate_Text_YourGuideToFrontierPass:
-	.string "Sou o guia do PASSE DO CIRCUITO.$"
+	.string "Sou o guia do CIRCUIT PASS.$"
 
 BattleFrontier_ReceptionGate_Text_LearnAboutWhich1:
 	.string "Sobre qual parte quer saber?$"
 
 BattleFrontier_ReceptionGate_Text_SymbolsInfo:
-	.string "O CIRCUITO possui sete grandes\ninstalacoes.\p"
-	.string "Quem se destaca pode receber\num SIMBOLO em cada uma.\p"
-	.string "Para conquista-los, sera preciso\nvencer repetidas vezes.\p"
+	.string "O CIRCUIT possui sete grandes\n"
+	.string "instalacoes.\p"
+	.string "Quem se destaca pode receber\n"
+	.string "um SIMBOLO em cada uma.\p"
+	.string "Para conquista-los, sera preciso\n"
+	.string "vencer repetidas vezes.\p"
 	.string "Nao e facil. Boa sorte!$"
 
 BattleFrontier_ReceptionGate_Text_RecordedBattleInfo:
-	.string "O PASSE pode guardar o registro\nde uma batalha.\p"
-	.string "Pode ser uma luta com amigos\nou um desafio do CIRCUITO,\p"
-	.string "exceto partidas da BATTLE PIKE\ne da BATTLE PYRAMID.\p"
-	.string "Voce decide ao fim da batalha\nse quer salvar o registro.$"
+	.string "O PASSE pode guardar o registro\n"
+	.string "de uma batalha.\p"
+	.string "Pode ser uma luta com amigos\n"
+	.string "ou um desafio do CIRCUIT,\p"
+	.string "exceto partidas da BATTLE PIKE\n"
+	.string "e da BATTLE PYRAMID.\p"
+	.string "Voce decide ao fim da batalha\n"
+	.string "se quer salvar o registro.$"
 
 BattleFrontier_ReceptionGate_Text_BattlePointsInfo:
-	.string "Pontos de Batalha premiam quem\nse destaca no CIRCUITO.\p"
-	.string "Eles podem ser trocados por\nrecompensas no EXCHANGE CORNER.$"
+	.string "Pontos de Batalha premiam quem\n"
+	.string "se destaca no CIRCUIT.\p"
+	.string "Eles podem ser trocados por\n"
+	.string "recompensas no EXCHANGE CORNER.$"

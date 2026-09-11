@@ -250,12 +250,16 @@ SSTidalCorridor_Movement_SailorReturn:
 	step_end
 
 SSTidalCorridor_Text_ScottBattleFrontierInvite:
-	.string "SEU BENTO: {PLAYER}{KUN}, que bom\nencontrar voce aqui.\p"
-	.string "Preciso desembarcar antes de\nvoce, mas vim fazer um convite.\p"
-	.string "Parabens pela LIGA.\p"
-	.string "Quero ver como voce se sai no\nCIRCUITO DE BATALHA.\p"
+	.string "MR. BENTO: {PLAYER}{KUN}, que bom\n"
+	.string "encontrar voce aqui.\p"
+	.string "Preciso desembarcar antes de\n"
+	.string "voce, mas vim fazer um convite.\p"
+	.string "Parabens pela LEAGUE.\p"
+	.string "Quero ver como voce se sai no\n"
+	.string "BATTLE CIRCUIT.\p"
 	.string "Falei com a tripulacao.\p"
-	.string "Na proxima viagem, esta balsa\npodera leva-lo ate o CIRCUITO.\p"
+	.string "Na proxima viagem, esta balsa\n"
+	.string "podera leva-lo ate o CIRCUIT.\p"
 	.string "Eu estarei esperando la.$"
 
 SSTidal_Text_FastCurrentsHopeYouEnjoyVoyage:

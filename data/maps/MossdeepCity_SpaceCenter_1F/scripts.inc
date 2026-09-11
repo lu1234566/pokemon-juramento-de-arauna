@@ -302,8 +302,10 @@ MossdeepCity_SpaceCenter_1F_Text_RocketLaunchDemandsPerfection:
 	.string "Why? It's a dream that never ends.$"
 
 MossdeepCity_SpaceCenter_1F_Text_MagmaHaveSightsOnSpaceCenter:
-	.string "Um sinal capaz de atravessar a\nregiao inteira tambem poderia\p"
-	.string "sincronizar milhares de\nsensores de VINCULO ao mesmo\p"
+	.string "Um sinal capaz de atravessar a\n"
+	.string "regiao inteira tambem poderia\p"
+	.string "sincronizar milhares de\n"
+	.string "sensores de BOND ao mesmo\p"
 	.string "tempo.$"
 
 MossdeepCity_SpaceCenter_1F_Text_FoundThisYouCanHaveIt:
@@ -317,12 +319,14 @@ MossdeepCity_SpaceCenter_1F_Text_HoennFamousForMeteorShowers:
 	.string "its meteor showers for a long time.$"
 
 MossdeepCity_SpaceCenter_1F_Text_MagmaCantStealFuelTakeThis:
-	.string "A rede de comunicacao daqui\npode espalhar o protocolo do\p"
-	.string "ARQUIVO VIVO por toda Arauna.\nPor isso o HORIZONTE e os\p"
-	.string "LEMBRANTES vieram ate aqui.$"
+	.string "A rede de comunicacao daqui\n"
+	.string "pode espalhar o protocolo do\p"
+	.string "LIVING ARCHIVE por toda Arauna.\n"
+	.string "Por isso o HORIZON e os\p"
+	.string "REMEMBRANCERS vieram ate aqui.$"
 
 MossdeepCity_SpaceCenter_1F_Text_CantStrollOnBeachWithMagma:
-	.string "With LEMBRANTES around, I guess\n"
+	.string "With REMEMBRANCERS around, I guess\n"
 	.string "strolls on the beach aren't safe.$"
 
 MossdeepCity_SpaceCenter_1F_Text_DidPokemonComeFromSpace:
@@ -330,10 +334,10 @@ MossdeepCity_SpaceCenter_1F_Text_DidPokemonComeFromSpace:
 	.string "from space. Could it be true?$"
 
 MossdeepCity_SpaceCenter_1F_Text_AquaShouldBeatMagma:
-	.string "CONSORCIO HORIZONTE should take care\n"
-	.string "of LEMBRANTES!\p"
+	.string "HORIZON CONSORTIUM should take care\n"
+	.string "of REMEMBRANCERS!\p"
 	.string "But if they did that,\n"
-	.string "CONSORCIO HORIZONTE will become bold\l"
+	.string "HORIZON CONSORTIUM will become bold\l"
 	.string "and brazen, won't they?$"
 
 MossdeepCity_SpaceCenter_1F_Text_RocketsBoggleMyMind:
@@ -342,33 +346,45 @@ MossdeepCity_SpaceCenter_1F_Text_RocketsBoggleMyMind:
 	.string "It boggles my mind!$"
 
 MossdeepCity_SpaceCenter_1F_Text_MagmaWantsToSpoilMyDream:
-	.string "Um sinal capaz de atravessar a\nregiao inteira tambem poderia\p"
-	.string "sincronizar milhares de\nsensores de VINCULO ao mesmo\p"
+	.string "Um sinal capaz de atravessar a\n"
+	.string "regiao inteira tambem poderia\p"
+	.string "sincronizar milhares de\n"
+	.string "sensores de BOND ao mesmo\p"
 	.string "tempo.$"
 
 MossdeepCity_SpaceCenter_1F_Text_StevenMagmaCantBeAllowedToTakeFuel:
-	.string "SEU BENTO: Quando um nome some\nda boca das pessoas, eu\p"
-	.string "escrevo. Nao para substituir\nquem lembra; para deixar uma\p"
+	.string "MR. BENTO: Quando um nome some\n"
+	.string "da boca das pessoas, eu\p"
+	.string "escrevo. Nao para substituir\n"
+	.string "quem lembra; para deixar uma\p"
 	.string "pista.$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt3Intro:
-	.string "Um sinal capaz de atravessar a\nregiao inteira tambem poderia\p"
-	.string "sincronizar milhares de\nsensores de VINCULO ao mesmo\p"
+	.string "Um sinal capaz de atravessar a\n"
+	.string "regiao inteira tambem poderia\p"
+	.string "sincronizar milhares de\n"
+	.string "sensores de BOND ao mesmo\p"
 	.string "tempo.$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt3Defeat:
-	.string "Um sinal capaz de atravessar a\nregiao inteira tambem poderia\p"
-	.string "sincronizar milhares de\nsensores de VINCULO ao mesmo\p"
+	.string "Um sinal capaz de atravessar a\n"
+	.string "regiao inteira tambem poderia\p"
+	.string "sincronizar milhares de\n"
+	.string "sensores de BOND ao mesmo\p"
 	.string "tempo.$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt3PostBattle:
-	.string "Um sinal capaz de atravessar a\nregiao inteira tambem poderia\p"
-	.string "sincronizar milhares de\nsensores de VINCULO ao mesmo\p"
+	.string "Um sinal capaz de atravessar a\n"
+	.string "regiao inteira tambem poderia\p"
+	.string "sincronizar milhares de\n"
+	.string "sensores de BOND ao mesmo\p"
 	.string "tempo.$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt1Intro:
-	.string "Um sinal capaz de atravessar a\nregiao inteira tambem poderia\p"
-	.string "sincronizar milhares de\nsensores de VINCULO ao mesmo\p"
+	.string "Um sinal capaz de atravessar a\n"
+	.string "regiao inteira tambem poderia\p"
+	.string "sincronizar milhares de\n"
+	.string "sensores de BOND ao mesmo\p"
 	.string "tempo.$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt1Defeat:
@@ -377,18 +393,24 @@ MossdeepCity_SpaceCenter_1F_Text_Grunt1Defeat:
 	.string "diferenca.$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt1PostBattle:
-	.string "A rede de comunicacao daqui\npode espalhar o protocolo do\p"
-	.string "ARQUIVO VIVO por toda Arauna.\nPor isso o HORIZONTE e os\p"
-	.string "LEMBRANTES vieram ate aqui.$"
+	.string "A rede de comunicacao daqui\n"
+	.string "pode espalhar o protocolo do\p"
+	.string "LIVING ARCHIVE por toda Arauna.\n"
+	.string "Por isso o HORIZON e os\p"
+	.string "REMEMBRANCERS vieram ate aqui.$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt4Intro:
-	.string "Um sinal capaz de atravessar a\nregiao inteira tambem poderia\p"
-	.string "sincronizar milhares de\nsensores de VINCULO ao mesmo\p"
+	.string "Um sinal capaz de atravessar a\n"
+	.string "regiao inteira tambem poderia\p"
+	.string "sincronizar milhares de\n"
+	.string "sensores de BOND ao mesmo\p"
 	.string "tempo.$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt4Defeat:
-	.string "Um sinal capaz de atravessar a\nregiao inteira tambem poderia\p"
-	.string "sincronizar milhares de\nsensores de VINCULO ao mesmo\p"
+	.string "Um sinal capaz de atravessar a\n"
+	.string "regiao inteira tambem poderia\p"
+	.string "sincronizar milhares de\n"
+	.string "sensores de BOND ao mesmo\p"
 	.string "tempo.$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt4PostBattle:
@@ -402,9 +424,11 @@ MossdeepCity_SpaceCenter_1F_Text_Grunt2Intro:
 	.string "diferenca.$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt2Defeat:
-	.string "A rede de comunicacao daqui\npode espalhar o protocolo do\p"
-	.string "ARQUIVO VIVO por toda Arauna.\nPor isso o HORIZONTE e os\p"
-	.string "LEMBRANTES vieram ate aqui.$"
+	.string "A rede de comunicacao daqui\n"
+	.string "pode espalhar o protocolo do\p"
+	.string "LIVING ARCHIVE por toda Arauna.\n"
+	.string "Por isso o HORIZON e os\p"
+	.string "REMEMBRANCERS vieram ate aqui.$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt2PostBattle:
 	.string "Os engenheiros insistem que\ncomunicacao nao e controle. Os\p"

@@ -1240,10 +1240,10 @@ PetalburgCity_Gym_Text_NormanDefeat:
 
 PetalburgCity_Gym_Text_ReceivedBalanceBadge:
 	.string "{PLAYER} recebeu a\n"
-	.string "INSÍGNIA COMPASSO!$"
+	.string "COMPASS BADGE!$"
 
 PetalburgCity_Gym_Text_ExplainBalanceBadgeTakeThis:
-	.string "A INSÍGNIA COMPASSO aumenta\n"
+	.string "A COMPASS BADGE aumenta\n"
 	.string "a DEFESA dos seus POKéMON.\p"
 	.string "POKéMON que conhecem SURF\n"
 	.string "podem viajar sobre a água.\p"

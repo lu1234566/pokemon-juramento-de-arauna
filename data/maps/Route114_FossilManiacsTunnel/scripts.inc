@@ -67,7 +67,7 @@ Route114_FossilManiacsTunnel_Text_DevonCorpRevivingFossils:
 	.string "Voce encontrou um FOSSIL?\n"
 	.string "Que achado bonito...\p"
 	.string "O que pretende fazer com ele?\p"
-	.string "Ouvi dizer que o HORIZONTE\n"
+	.string "Ouvi dizer que o HORIZON\n"
 	.string "pesquisa formas de recuperar\l"
 	.string "POKéMON a partir de FOSSEIS.\p"
 	.string "Eu prefiro deixar os meus\n"

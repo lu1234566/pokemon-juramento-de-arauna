@@ -107,9 +107,12 @@ FortreeCity_Text_ThisTimeIllBeatWinona:
 	.string "entre geracoes, alguma coisa\nantiga foi ferida.$"
 
 FortreeCity_Text_TreesGrowByDrinkingRainwater:
-	.string "Os sensores registram duas\ncorrentes antigas sob Arauna:\p"
-	.string "uma conserva VINCULOS; a outra\npermite que eles terminem. O\p"
-	.string "ARQUIVO tentou transformar\nambas em ferramentas.$"
+	.string "Os sensores registram duas\n"
+	.string "correntes antigas sob Arauna:\p"
+	.string "uma conserva BONDS; a outra\n"
+	.string "permite que eles terminem. O\p"
+	.string "ARCHIVE tentou transformar\n"
+	.string "ambas em ferramentas.$"
 
 FortreeCity_Text_EveryoneHealthyAndLively:
 	.string "The CITY consists of homes built on\n"
@@ -120,9 +123,12 @@ FortreeCity_Text_EveryoneHealthyAndLively:
 	.string "grown thirty years younger.$"
 
 FortreeCity_Text_BugPokemonComeThroughWindow:
-	.string "Meu POKéMON me seguia desde\nque eu era pequeno. Hoje ele\p"
-	.string "recuou quando chamei seu nome.\nCIRO viu tudo. Ficou olhando\p"
-	.string "para o aparelho do HORIZONTE\nsem conseguir dizer nada.$"
+	.string "Meu POKéMON me seguia desde\n"
+	.string "que eu era pequeno. Hoje ele\p"
+	.string "recuou quando chamei seu nome.\n"
+	.string "CIRO viu tudo. Ficou olhando\p"
+	.string "para o aparelho do HORIZON\n"
+	.string "sem conseguir dizer nada.$"
 
 FortreeCity_Text_PokemonThatEvolveWhenTraded:
 	.string "There are POKéMON that evolve when\n"

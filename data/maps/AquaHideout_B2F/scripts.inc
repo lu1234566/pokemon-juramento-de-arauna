@@ -101,8 +101,10 @@ AquaHideout_B2F_Text_MattDefeat:
 	.string "So, I lost, too…$"
 
 AquaHideout_B2F_Text_OurBossGotThroughHisPreparations:
-	.string "HORIZONTE: O ARQUIVO VIVO nao\napaga pessoas. Ele separa\p"
-	.string "trauma de identidade. Pelo\nmenos e isso que nos ensinaram.$"
+	.string "HORIZON: O LIVING ARCHIVE nao\n"
+	.string "apaga pessoas. Ele separa\p"
+	.string "trauma de identidade. Pelo\n"
+	.string "menos e isso que nos ensinaram.$"
 
 AquaHideout_B2F_Text_MattPostBattle:
 	.string "Hehehe!\p"
@@ -115,38 +117,56 @@ AquaHideout_B2F_Text_MattPostBattle:
 	.string "Hehehe!$"
 
 AquaHideout_B2F_Text_Grunt4Intro:
-	.string "HORIZONTE: Os sensores detectam\nVINCULOS instaveis antes do\p"
-	.string "DESENCANTO completo. Isso pode\nsalvar familias inteiras.$"
+	.string "HORIZON: Os sensores detectam\n"
+	.string "BONDS instaveis antes do\p"
+	.string "DISENCHANTMENT completo. Isso pode\n"
+	.string "salvar familias inteiras.$"
 
 AquaHideout_B2F_Text_Grunt4Defeat:
-	.string "HORIZONTE: Nao somos soldados.\nSomos tecnicos, guardas e\p"
-	.string "pesquisadores. Isso nao torna\ntodas as nossas ordens certas.$"
+	.string "HORIZON: Nao somos soldados.\n"
+	.string "Somos tecnicos, guardas e\p"
+	.string "pesquisadores. Isso nao torna\n"
+	.string "todas as nossas ordens certas.$"
 
 AquaHideout_B2F_Text_Grunt4PostBattle:
-	.string "HORIZONTE: O projeto de M'BOI\nfoi um desastre. O ARQUIVO\p"
-	.string "atual existe justamente porque\naprendemos com ele. E o que\p"
+	.string "HORIZON: O projeto de M'BOI\n"
+	.string "foi um desastre. O ARCHIVE\p"
+	.string "atual existe justamente porque\n"
+	.string "aprendemos com ele. E o que\p"
 	.string "consta nos relatorios.$"
 
 AquaHideout_B2F_Text_Grunt6Intro:
-	.string "HORIZONTE: Nao somos soldados.\nSomos tecnicos, guardas e\p"
-	.string "pesquisadores. Isso nao torna\ntodas as nossas ordens certas.$"
+	.string "HORIZON: Nao somos soldados.\n"
+	.string "Somos tecnicos, guardas e\p"
+	.string "pesquisadores. Isso nao torna\n"
+	.string "todas as nossas ordens certas.$"
 
 AquaHideout_B2F_Text_Grunt6Defeat:
-	.string "HORIZONTE: Os sensores detectam\nVINCULOS instaveis antes do\p"
-	.string "DESENCANTO completo. Isso pode\nsalvar familias inteiras.$"
+	.string "HORIZON: Os sensores detectam\n"
+	.string "BONDS instaveis antes do\p"
+	.string "DISENCHANTMENT completo. Isso pode\n"
+	.string "salvar familias inteiras.$"
 
 AquaHideout_B2F_Text_Grunt6PostBattle:
-	.string "HORIZONTE: OTACILIO diz que\nmemoria sem escolha e outra\p"
-	.string "forma de prisao. Eu ainda estou\ntentando decidir se concordo.$"
+	.string "HORIZON: OTACILIO diz que\n"
+	.string "memoria sem escolha e outra\p"
+	.string "forma de prisao. Eu ainda estou\n"
+	.string "tentando decidir se concordo.$"
 
 AquaHideout_B2F_Text_Grunt8Intro:
-	.string "HORIZONTE: O ARQUIVO VIVO nao\napaga pessoas. Ele separa\p"
-	.string "trauma de identidade. Pelo\nmenos e isso que nos ensinaram.$"
+	.string "HORIZON: O LIVING ARCHIVE nao\n"
+	.string "apaga pessoas. Ele separa\p"
+	.string "trauma de identidade. Pelo\n"
+	.string "menos e isso que nos ensinaram.$"
 
 AquaHideout_B2F_Text_Grunt8Defeat:
-	.string "HORIZONTE: Nao somos soldados.\nSomos tecnicos, guardas e\p"
-	.string "pesquisadores. Isso nao torna\ntodas as nossas ordens certas.$"
+	.string "HORIZON: Nao somos soldados.\n"
+	.string "Somos tecnicos, guardas e\p"
+	.string "pesquisadores. Isso nao torna\n"
+	.string "todas as nossas ordens certas.$"
 
 AquaHideout_B2F_Text_Grunt8PostBattle:
-	.string "HORIZONTE: Os sensores detectam\nVINCULOS instaveis antes do\p"
-	.string "DESENCANTO completo. Isso pode\nsalvar familias inteiras.$"
+	.string "HORIZON: Os sensores detectam\n"
+	.string "BONDS instaveis antes do\p"
+	.string "DISENCHANTMENT completo. Isso pode\n"
+	.string "salvar familias inteiras.$"

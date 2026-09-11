@@ -10,7 +10,7 @@ RustboroCity_Flat2_3F_EventScript_Woman::
 	end
 
 RustboroCity_Flat2_3F_Text_PresidentCollectsRareStones:
-	.string "A DIRETORIA DO HORIZONTE guarda\n"
+	.string "A DIRETORIA DO HORIZON guarda\n"
 	.string "amostras raras da serra.$"
 
 RustboroCity_Flat2_3F_Text_PresidentsSonAlsoCollectsRareStones:

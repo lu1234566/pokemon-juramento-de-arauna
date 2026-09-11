@@ -657,240 +657,277 @@ LittlerootTown_ProfessorBirchsLab_EventScript_ScottAboardSSTidalCall::
 	end
 
 LittlerootTown_ProfessorBirchsLab_Text_BirchAwayOnFieldwork:
-	.string "ANAHI: Se eu continuar calada\nsobre o que o HORIZONTE fez com\p"
-	.string "minha pesquisa, o erro tambem\nsera meu.$"
+	.string "ANAHI: If I stay quiet about what\n"
+	.string "HORIZON did with my research, the\l"
+	.string "mistake becomes mine too.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BirchIsntOneForDeskWork:
-	.string "ANAHI: Eu ajudei a criar os\nprimeiros sensores de VINCULO.\p"
-	.string "Na epoca achei que medir\nsignificava compreender. Hoje\p"
-	.string "sei que nao e a mesma coisa.$"
+	.string "ANAHI: I helped build the first BOND\n"
+	.string "sensors. Back then I thought measuring\l"
+	.string "meant understanding. I know better\l"
+	.string "now.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BirchEnjoysRivalsHelpToo:
-	.string "ANAHI: O DESENCANTO nao apaga\napenas fatos. Ele rompe\p"
-	.string "caminhos entre pessoas, lugares\ne POKéMON. E esses caminhos nao\p"
-	.string "pertencem a uma empresa.$"
+	.string "ANAHI: DISENCHANTMENT does not only\n"
+	.string "erase facts. It breaks the paths\l"
+	.string "between people, places and POKéMON.\l"
+	.string "And those paths belong to no company.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_LikeYouToHavePokemon:
-	.string "ANAHI: Esse POKéMON escolheu\nficar ao seu lado. Nao trate\p"
-	.string "isso como propriedade. Um\nVINCULO so existe enquanto os\p"
-	.string "dois lados continuam\nescolhendo.$"
+	.string "ANAHI: That POKéMON chose to stay at\n"
+	.string "your side. Do not treat it as property. A\l"
+	.string "BOND lasts only while both sides keep\l"
+	.string "choosing it.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_WhyNotGiveNicknameToMon:
-	.string "ANAHI: Um nome pode virar\nmemoria. Quer dar um nome a\p"
-	.string "{STR_VAR_1}?$"
+	.string "ANAHI: A name can become a memory.\n"
+	.string "Would you like to name {STR_VAR_1}?$"
 
 LittlerootTown_ProfessorBirchsLab_Text_MightBeGoodIdeaToGoSeeRival:
-	.string "ANAHI: CIRO esta fazendo\nobservacoes na ROTA 103. Ele\p"
-	.string "recebeu apoio do HORIZONTE e\nacha que isso prova que ja\p"
-	.string "entendeu o mundo. Va\nencontra-lo.$"
+	.string "ANAHI: CIRO is taking readings on\n"
+	.string "ROUTE 103. HORIZON backed him, and he\l"
+	.string "thinks that proves he already\l"
+	.string "understands the world. Go and find him.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_GetRivalToTeachYou:
-	.string "ANAHI: Encontre CIRO na ROTA\n103. Prestem atencao ao modo\p"
-	.string "como seus POKéMON reagem um ao\noutro.$"
+	.string "ANAHI: Find CIRO on ROUTE 103. Both of\n"
+	.string "you watch how your POKéMON react to\l"
+	.string "each other.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_DontBeThatWay:
-	.string "ANAHI: Voce nao precisa gostar\nde CIRO. Mas precisa ouvir o\p"
-	.string "que ele escolheu acreditar\nantes de decidir no que voce\p"
-	.string "acredita.$"
+	.string "ANAHI: You do not have to like CIRO. But\n"
+	.string "you do have to hear what he chose to\l"
+	.string "believe before you decide what you\l"
+	.string "believe.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BirchRivalGoneHome:
-	.string "ANAHI: CIRO saiu de novo. Desde\nque o HORIZONTE ofereceu uma\p"
-	.string "bolsa, ele quase nao para em\ncasa.$"
+	.string "ANAHI: CIRO is out again. Since HORIZON\n"
+	.string "offered him a grant, he is hardly ever\l"
+	.string "home.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_HeardYouBeatRivalTakePokedex:
-	.string "ANAHI: CIRO contou sobre a\nbatalha. Mais importante que\p"
-	.string "vencer: seu POKéMON reagiu ao\nVINCULO de um jeito que meus\p"
-	.string "sensores nao previram. Leve\nesta POKéDEX e registre o que\p"
-	.string "encontrar.$"
+	.string "ANAHI: CIRO told me about the battle.\n"
+	.string "More important than winning: your\l"
+	.string "POKéMON answered the BOND in a way my\l"
+	.string "sensors did not predict. Take this\l"
+	.string "POKéDEX and record what you find.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_ReceivedPokedex:
 	.string "{PLAYER} recebeu a POKéDEX!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_ExplainPokedex:
-	.string "ANAHI: A POKéDEX registra\nespecies e encontros. Eu quero\p"
-	.string "outra coisa tambem: anote\nfalhas de memoria, mudancas de\p"
-	.string "comportamento e qualquer sinal\nde DESENCANTO.$"
+	.string "ANAHI: The POKéDEX records species and\n"
+	.string "encounters. I want something else too:\l"
+	.string "note memory lapses, changes in\l"
+	.string "behaviour, and any sign of\l"
+	.string "DISENCHANTMENT.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_CountlessPokemonAwait:
-	.string "ANAHI: Nao transforme a viagem\nnuma coleta de numeros. Observe\p"
-	.string "quem lembra, quem esquece e\nquem esta decidindo isso por\p"
-	.string "eles.$"
+	.string "ANAHI: Do not turn the journey into a\n"
+	.string "tally of numbers. Watch who remembers,\l"
+	.string "who forgets, and who is deciding that\l"
+	.string "for them.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_MayGotPokedexTooTakeThese:
-	.string "CIRO: Entao ela te entregou uma\nPOKéDEX tambem. Certo. Pegue\p"
-	.string "estas POKé BOLAS. Quero ver\nquanto tempo voce leva para me\p"
-	.string "alcancar.$"
+	.string "CIRO: So she gave you a POKéDEX too.\n"
+	.string "Fine. Take these POKé BALLS. I want to\l"
+	.string "see how long you take to catch up to me.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_CatchCutePokemonWithPokeBalls:
-	.string "CIRO: Eu vou seguir os pontos\nmarcados pelo HORIZONTE. Dizem\p"
-	.string "que la fora existem POKéMON que\nquase nao sofrem DESENCANTO.$"
+	.string "CIRO: I am following the points HORIZON\n"
+	.string "marked. They say there are POKéMON out\l"
+	.string "there that barely suffer\l"
+	.string "DISENCHANTMENT.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_OhYourBagsFull:
-	.string "Sua BOLSA esta cheia.$"
+	.string "Your BAG is full.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_MayWhereShouldIGoNext:
-	.string "CIRO: O HORIZONTE tem equipes\npor toda Arauna. Se os dados\p"
-	.string "deles estiverem certos, eu vou\nchegar antes de voce.$"
+	.string "CIRO: HORIZON has teams all over\n"
+	.string "Arauna. If their data is right, I will get\l"
+	.string "there before you do.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BrendanGotPokedexTooTakeThese:
-	.string "CIRO: Entao ela te entregou uma\nPOKéDEX tambem. Certo. Pegue\p"
-	.string "estas POKé BOLAS. Quero ver\nquanto tempo voce leva para me\p"
-	.string "alcancar.$"
+	.string "CIRO: So she gave you a POKéDEX too.\n"
+	.string "Fine. Take these POKé BALLS. I want to\l"
+	.string "see how long you take to catch up to me.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_CatchCoolPokemonWithPokeBalls:
-	.string "CIRO: Eu vou seguir os pontos\nmarcados pelo HORIZONTE. Dizem\p"
-	.string "que la fora existem POKéMON que\nquase nao sofrem DESENCANTO.$"
+	.string "CIRO: I am following the points HORIZON\n"
+	.string "marked. They say there are POKéMON out\l"
+	.string "there that barely suffer\l"
+	.string "DISENCHANTMENT.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_HeyYourBagsFull:
-	.string "Sua BOLSA esta cheia.$"
+	.string "Your BAG is full.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BrendanWhereShouldIGoNext:
-	.string "CIRO: O HORIZONTE tem equipes\npor toda Arauna. Se os dados\p"
-	.string "deles estiverem certos, eu vou\nchegar antes de voce.$"
+	.string "CIRO: HORIZON has teams all over\n"
+	.string "Arauna. If their data is right, I will get\l"
+	.string "there before you do.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_SeriousLookingMachine:
-	.string "Um sensor de VINCULO ocupa\nquase toda a bancada. Ha marcas\p"
-	.string "de uso muito anteriores ao\nprojeto atual do HORIZONTE.$"
+	.string "A BOND sensor takes up most of the\n"
+	.string "bench. The wear on it is far older than\l"
+	.string "HORIZON's current project.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_PCUsedForResearch:
-	.string "O PC contem dados de campo\nsobre POKéMON que deixaram de\p"
-	.string "reconhecer lugares e pessoas\nfamiliares.$"
+	.string "The PC holds field data on POKéMON that\n"
+	.string "stopped recognising familiar places and\l"
+	.string "people.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_CrammedWithBooksOnPokemon:
-	.string "Cadernos de campo dividem a\nestante com livros sobre\p"
-	.string "memoria, luto e comportamento\nPOKéMON.$"
+	.string "Field notebooks share the shelf with\n"
+	.string "books on memory, grief and POKéMON\l"
+	.string "behaviour.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BookTooHardToRead:
-	.string "As anotacoes misturam\nneurologia POKéMON, teoria de\p"
-	.string "VINCULOS e muitas correcoes\nfeitas a mao.$"
+	.string "The notes mix POKéMON neurology, BOND\n"
+	.string "theory and a great many corrections\l"
+	.string "made by hand.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_OtherRegionsUpgradeToNational:
-	.string "ANAHI: O DESENCANTO nao apaga\napenas fatos. Ele rompe\p"
-	.string "caminhos entre pessoas, lugares\ne POKéMON. E esses caminhos nao\p"
-	.string "pertencem a uma empresa.$"
+	.string "ANAHI: DISENCHANTMENT does not only\n"
+	.string "erase facts. It breaks the paths\l"
+	.string "between people, places and POKéMON.\l"
+	.string "And those paths belong to no company.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_MayUpgradeSoCool:
-	.string "CIRO: O HORIZONTE nao me pediu\npara esquecer nada. So me\p"
-	.string "mostrou que existe um futuro\nque nao precisa ser governado\p"
-	.string "pelo passado.$"
+	.string "CIRO: HORIZON never asked me to forget\n"
+	.string "anything. It only showed me there is a\l"
+	.string "future that does not have to be ruled\l"
+	.string "by the past.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BrendanYouCanThankMe:
-	.string "CIRO: O HORIZONTE nao me pediu\npara esquecer nada. So me\p"
-	.string "mostrou que existe um futuro\nque nao precisa ser governado\p"
-	.string "pelo passado.$"
+	.string "CIRO: HORIZON never asked me to forget\n"
+	.string "anything. It only showed me there is a\l"
+	.string "future that does not have to be ruled\l"
+	.string "by the past.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_OkayAllDone:
-	.string "ANAHI: O DESENCANTO nao apaga\napenas fatos. Ele rompe\p"
-	.string "caminhos entre pessoas, lugares\ne POKéMON. E esses caminhos nao\p"
-	.string "pertencem a uma empresa.$"
+	.string "ANAHI: DISENCHANTMENT does not only\n"
+	.string "erase facts. It breaks the paths\l"
+	.string "between people, places and POKéMON.\l"
+	.string "And those paths belong to no company.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_PokedexUpgradedToNational:
-	.string "POKéDEX atualizada para o\n"
-	.string "Modo NACIONAL!$"
+	.string "POKéDEX upgraded to NATIONAL Mode!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_GrassyPatchWaiting2:
-	.string "ANAHI: Eu ajudei a criar os\nprimeiros sensores de VINCULO.\p"
-	.string "Na epoca achei que medir\nsignificava compreender. Hoje\p"
-	.string "sei que nao e a mesma coisa.$"
+	.string "ANAHI: I helped build the first BOND\n"
+	.string "sensors. Back then I thought measuring\l"
+	.string "meant understanding. I know better\l"
+	.string "now.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_MayTakeBreakFromFieldwork:
-	.string "CIRO: O HORIZONTE nao me pediu\npara esquecer nada. So me\p"
-	.string "mostrou que existe um futuro\nque nao precisa ser governado\p"
-	.string "pelo passado.$"
+	.string "CIRO: HORIZON never asked me to forget\n"
+	.string "anything. It only showed me there is a\l"
+	.string "future that does not have to be ruled\l"
+	.string "by the past.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BrendanTakeBreakFromFieldwork:
-	.string "CIRO: Nao confunda minha pressa\ncom falta de memoria. Eu lembro\p"
-	.string "o bastante para saber que nao\nquero viver preso ao que perdi.$"
+	.string "CIRO: Do not mistake my hurry for a bad\n"
+	.string "memory. I remember enough to know I do\l"
+	.string "not want to live shackled to what I\l"
+	.string "lost.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_CompletedDexChoosePokemon:
-	.string "ANAHI: Se eu continuar calada\nsobre o que o HORIZONTE fez com\p"
-	.string "minha pesquisa, o erro tambem\nsera meu.$"
+	.string "ANAHI: If I stay quiet about what\n"
+	.string "HORIZON did with my research, the\l"
+	.string "mistake becomes mine too.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_CanHaveAnyOneOfRarePokemon:
-	.string "ANAHI: Eu ajudei a criar os\nprimeiros sensores de VINCULO.\p"
-	.string "Na epoca achei que medir\nsignificava compreender. Hoje\p"
-	.string "sei que nao e a mesma coisa.$"
+	.string "ANAHI: I helped build the first BOND\n"
+	.string "sensors. Back then I thought measuring\l"
+	.string "meant understanding. I know better\l"
+	.string "now.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_YoullTakeCyndaquil:
-	.string "ANAHI: Eu ajudei a criar os\nprimeiros sensores de VINCULO.\p"
-	.string "Na epoca achei que medir\nsignificava compreender. Hoje\p"
-	.string "sei que nao e a mesma coisa.$"
+	.string "ANAHI: I helped build the first BOND\n"
+	.string "sensors. Back then I thought measuring\l"
+	.string "meant understanding. I know better\l"
+	.string "now.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_YoullTakeTotodile:
-	.string "ANAHI: Eu ajudei a criar os\nprimeiros sensores de VINCULO.\p"
-	.string "Na epoca achei que medir\nsignificava compreender. Hoje\p"
-	.string "sei que nao e a mesma coisa.$"
+	.string "ANAHI: I helped build the first BOND\n"
+	.string "sensors. Back then I thought measuring\l"
+	.string "meant understanding. I know better\l"
+	.string "now.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_YoullTakeChikorita:
-	.string "ANAHI: O DESENCANTO nao apaga\napenas fatos. Ele rompe\p"
-	.string "caminhos entre pessoas, lugares\ne POKéMON. E esses caminhos nao\p"
-	.string "pertencem a uma empresa.$"
+	.string "ANAHI: DISENCHANTMENT does not only\n"
+	.string "erase facts. It breaks the paths\l"
+	.string "between people, places and POKéMON.\l"
+	.string "And those paths belong to no company.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_TakeYourTimeAllInvaluable:
-	.string "ANAHI: Eu ajudei a criar os\nprimeiros sensores de VINCULO.\p"
-	.string "Na epoca achei que medir\nsignificava compreender. Hoje\p"
-	.string "sei que nao e a mesma coisa.$"
+	.string "ANAHI: I helped build the first BOND\n"
+	.string "sensors. Back then I thought measuring\l"
+	.string "meant understanding. I know better\l"
+	.string "now.$"
 
 @ Unused
 LittlerootTown_ProfessorBirchsLab_Text_PickedFinePokemon:
-	.string "ANAHI: Eu ajudei a criar os\nprimeiros sensores de VINCULO.\p"
-	.string "Na epoca achei que medir\nsignificava compreender. Hoje\p"
-	.string "sei que nao e a mesma coisa.$"
+	.string "ANAHI: I helped build the first BOND\n"
+	.string "sensors. Back then I thought measuring\l"
+	.string "meant understanding. I know better\l"
+	.string "now.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_ReceivedJohtoStarter:
-	.string "{PLAYER} recebeu {STR_VAR_1}\n"
-	.string "de PROF. ANAHI!$"
+	.string "{PLAYER} received {STR_VAR_1} from\n"
+	.string "PROF. ANAHI!$"
 
 @ Unused
 LittlerootTown_ProfessorBirchsLab_Text_NicknameJohtoStarter:
-	.string "Quer dar um apelido ao\n"
-	.string "{STR_VAR_1} que recebeu?$"
+	.string "Would you like to nickname the\n"
+	.string "{STR_VAR_1} you received?$"
 
 LittlerootTown_ProfessorBirchsLab_Text_GrassyPatchWaiting:
-	.string "ANAHI: O DESENCANTO nao apaga\napenas fatos. Ele rompe\p"
-	.string "caminhos entre pessoas, lugares\ne POKéMON. E esses caminhos nao\p"
-	.string "pertencem a uma empresa.$"
+	.string "ANAHI: DISENCHANTMENT does not only\n"
+	.string "erase facts. It breaks the paths\l"
+	.string "between people, places and POKéMON.\l"
+	.string "And those paths belong to no company.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BetterLeaveOthersAlone:
-	.string "Voce ja recebeu o POKéMON\n"
-	.string "prometido. Deixe os outros.$"
+	.string "You already received the POKéMON you\n"
+	.string "were promised. Leave the others be.$"
 
 @ Unused
 LittlerootTown_ProfessorBirchsLab_Text_DontHaveAnyRoomForPokemon:
-	.string "Voce nao tem espaco para\n"
-	.string "este POKéMON.$"
+	.string "You have no room for this POKéMON.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_MayWhatNextImStayingHere:
-	.string "CIRO: Voce continua olhando\npara cada cicatriz como se ela\p"
-	.string "fosse uma resposta. Eu quero\nsaber o que existe depois dela.$"
+	.string "CIRO: You keep looking at every scar as\n"
+	.string "if it were an answer. I want to know\l"
+	.string "what comes after it.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BrendanPreferCollectingSlowly:
-	.string "CIRO: Se os dados estiverem\ncertos, o DESENCANTO pode ser\p"
-	.string "tratado. Eu prefiro testar uma\nresposta a transformar\p"
-	.string "sofrimento em tradicao.$"
+	.string "CIRO: If the data is right,\n"
+	.string "DISENCHANTMENT can be treated. I would\l"
+	.string "rather test an answer than turn\l"
+	.string "suffering into tradition.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_MayHaveYouGoneToBattleFrontier:
-	.string "CIRO: Voce continua olhando\npara cada cicatriz como se ela\p"
-	.string "fosse uma resposta. Eu quero\nsaber o que existe depois dela.$"
+	.string "CIRO: You keep looking at every scar as\n"
+	.string "if it were an answer. I want to know\l"
+	.string "what comes after it.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BrendanHaveYouGoneToBattleFrontier:
-	.string "CIRO: Se os dados estiverem\ncertos, o DESENCANTO pode ser\p"
-	.string "tratado. Eu prefiro testar uma\nresposta a transformar\p"
-	.string "sofrimento em tradicao.$"
+	.string "CIRO: If the data is right,\n"
+	.string "DISENCHANTMENT can be treated. I would\l"
+	.string "rather test an answer than turn\l"
+	.string "suffering into tradition.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_ScottAboardSSTidalCall:
-	.string "… … … … … …\n"
-	.string "… … … … … Bip!\p"
-	.string "SEU BENTO: {PLAYER}, escute.\n"
-	.string "Sou eu, BENTO.\p"
-	.string "ANAHI disse que sua POKéDEX\n"
-	.string "foi ampliada.\p"
-	.string "Ha um circuito de batalha\n"
-	.string "alem da LIGA.\p"
-	.string "Se quiser testar seu VINCULO,\n"
-	.string "pegue o barco no PORTO DO SAL\p"
-	.string "ou na BAIA DAS LUZES.\p"
-	.string "Eu explico o resto quando\n"
-	.string "voce chegar. Estarei la!\p"
-	.string "… … … … … …\n"
-	.string "… … … … … Bip!$"
+	.string "… … … … … … … … … … … Beep!\p"
+	.string "MR. BENTO: {PLAYER}, listen. It is me,\n"
+	.string "BENTO.\p"
+	.string "ANAHI says your POKéDEX has been\n"
+	.string "expanded.\p"
+	.string "There is a battle circuit beyond the\n"
+	.string "LEAGUE.\p"
+	.string "If you want to test your BOND, take the\n"
+	.string "boat at PORTO DO SAL or BAIA DAS LUZES.\p"
+	.string "I will explain the rest when you get\n"
+	.string "there. I will be waiting!\p"
+	.string "… … … … … … … … … … … Beep!$"

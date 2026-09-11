@@ -308,10 +308,10 @@ LavaridgeTown_Gym_1F_Text_FlanneryDefeat:
 
 LavaridgeTown_Gym_1F_Text_ReceivedHeatBadge:
 	.string "{PLAYER} recebeu a\n"
-	.string "INSÍGNIA CINZA de NARA.$"
+	.string "ASH BADGE de NARA.$"
 
 LavaridgeTown_Gym_1F_Text_ExplainHeatBadgeTakeThis:
-	.string "Com a INSÍGNIA CINZA, POKéMON\n"
+	.string "Com a ASH BADGE, POKéMON\n"
 	.string "até o nível 50 obedecem,\l"
 	.string "mesmo os recebidos em troca.\p"
 	.string "Ela permite usar STRENGTH\n"

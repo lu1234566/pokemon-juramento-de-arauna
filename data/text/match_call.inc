@@ -1102,7 +1102,7 @@ MatchCall_PersonalizedText39::
 	.string "I just put on some suntan oil.\p"
 	.string "So my POKéNAV went whoopsy\n"
 	.string "out of my hand into the water!\p"
-	.string "But, boy, HORIZONTE's POKéNAV is built\n"
+	.string "But, boy, HORIZON's POKéNAV is built\n"
 	.string "tough. It survived that dunking!\p"
 	.string "Anyways, I'm busy sunbathing,\n"
 	.string "so let's chat another time.$"
@@ -2675,7 +2675,7 @@ MatchCall_Text_Scott4::
 	.string "SCOTT: Hi, {PLAYER}{KUN}!\p"
 	.string "I've been hearing about these odd\n"
 	.string "gangs being a nuisance.\p"
-	.string "TEAM MAGMA and CONSORCIO HORIZONTE,\n"
+	.string "TEAM MAGMA and HORIZON CONSORTIUM,\n"
 	.string "I think they were.\p"
 	.string "I would think there'd be some\n"
 	.string "skilled TRAINERS among them.\p"
@@ -2777,7 +2777,7 @@ MatchCall_Text_Norman_PostRematch::
 	.string "How much higher will you soar?$"
 
 MatchCall_Text_Steven1::
-	.string "SEU BENTO: {PLAYER}, achei uma\n"
+	.string "MR. BENTO: {PLAYER}, achei uma\n"
 	.string "anotacao antiga hoje.\p"
 	.string "Um nome aparece tres vezes e\n"
 	.string "some na pagina seguinte.\p"
@@ -2785,7 +2785,7 @@ MatchCall_Text_Steven1::
 	.string "Papel sozinho nao basta.$"
 
 MatchCall_Text_Steven2::
-	.string "SEU BENTO: O caminho da serra\n"
+	.string "MR. BENTO: O caminho da serra\n"
 	.string "voltou a respirar.\p"
 	.string "Marcas antigas apareceram\n"
 	.string "onde a pedra foi aberta.\p"
@@ -2793,14 +2793,14 @@ MatchCall_Text_Steven2::
 	.string "com meus cadernos.$"
 
 MatchCall_Text_Steven3::
-	.string "SEU BENTO: Certos objetos\n"
+	.string "MR. BENTO: Certos objetos\n"
 	.string "guardam mais que historia.\p"
 	.string "Nao confunda memoria com\n"
 	.string "resposta.\p"
 	.string "Uma pista tambem pode mentir.$"
 
 MatchCall_Text_Steven4::
-	.string "SEU BENTO: O movimento no\n"
+	.string "MR. BENTO: O movimento no\n"
 	.string "litoral mudou de repente.\p"
 	.string "Tem equipamento sumindo dos\n"
 	.string "registros oficiais.\p"
@@ -2808,20 +2808,20 @@ MatchCall_Text_Steven4::
 	.string "duas vezes.$"
 
 MatchCall_Text_Steven5::
-	.string "SEU BENTO: Missoes do Ceu\n"
+	.string "MR. BENTO: Missoes do Ceu\n"
 	.string "esta ouvindo sinais demais.\p"
 	.string "Quando toda rede fala junto,\n"
 	.string "o silencio importa mais.\p"
 	.string "Confie no que voce viu.$"
 
 MatchCall_Text_Steven6::
-	.string "O sinal de SEU BENTO nao\n"
+	.string "O sinal de MR. BENTO nao\n"
 	.string "responde.\p"
 	.string "So ha estatica e o ruido\n"
 	.string "distante da agua.$"
 
 MatchCall_Text_Steven7::
-	.string "SEU BENTO: {PLAYER}, meus\n"
+	.string "MR. BENTO: {PLAYER}, meus\n"
 	.string "cadernos nao registram tudo.\p"
 	.string "Talvez seja melhor assim.\p"
 	.string "Algumas coisas precisam viver\n"
@@ -2880,7 +2880,7 @@ MatchCall_Text_MrStone3::
 
 MatchCall_Text_MrStone4::
 	.string "MR. STONE: Oh! {PLAYER}{KUN}!\p"
-	.string "Did you know that HORIZONTE was\n"
+	.string "Did you know that HORIZON was\n"
 	.string "digging the GALERIAS DA SERRA?\p"
 	.string "But we shut down the operation to\n"
 	.string "protect the POKéMON in the area.\p"
@@ -2906,7 +2906,7 @@ MatchCall_Text_MrStone6::
 
 MatchCall_Text_MrStone7::
 	.string "Hello!\n"
-	.string "This is HORIZONTE CORPORATI…\l"
+	.string "This is HORIZON CORPORATI…\l"
 	.string "Oh, hello, {PLAYER}!\p"
 	.string "Our PRESIDENT was here a little\n"
 	.string "while ago, but he's gone out.\p"
@@ -2942,5 +2942,5 @@ MatchCall_Text_MrStone11::
 	.string "Is this maybe {PLAYER}{KUN}?\p"
 	.string "Your voice is so full of confidence,\n"
 	.string "I didn't recognize you right off!\p"
-	.string "Hm! You must come visit us at HORIZONTE\n"
+	.string "Hm! You must come visit us at HORIZON\n"
 	.string "sometime!$"

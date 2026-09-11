@@ -410,13 +410,17 @@ LilycoveCity_EventScript_DontKnowAboutBerryBlender::
 	return
 
 LilycoveCity_Text_MayShoppingLetsBattle:
-	.string "CIRO: Se os dados estiverem\ncertos, o DESENCANTO pode ser\p"
-	.string "tratado. Eu prefiro testar uma\nresposta a transformar\p"
+	.string "CIRO: Se os dados estiverem\n"
+	.string "certos, o DISENCHANTMENT pode ser\p"
+	.string "tratado. Eu prefiro testar uma\n"
+	.string "resposta a transformar\p"
 	.string "sofrimento em tradicao.$"
 
 LilycoveCity_Text_MayNotRaisingPokemon:
-	.string "CIRO: O HORIZONTE nao me pediu\npara esquecer nada. So me\p"
-	.string "mostrou que existe um futuro\nque nao precisa ser governado\p"
+	.string "CIRO: O HORIZON nao me pediu\n"
+	.string "para esquecer nada. So me\p"
+	.string "mostrou que existe um futuro\n"
+	.string "que nao precisa ser governado\p"
 	.string "pelo passado.$"
 
 LilycoveCity_Text_MayBattleMe:
@@ -424,8 +428,10 @@ LilycoveCity_Text_MayBattleMe:
 	.string "fosse uma resposta. Eu quero\nsaber o que existe depois dela.$"
 
 LilycoveCity_Text_MayWontBeBeaten:
-	.string "CIRO: Se os dados estiverem\ncertos, o DESENCANTO pode ser\p"
-	.string "tratado. Eu prefiro testar uma\nresposta a transformar\p"
+	.string "CIRO: Se os dados estiverem\n"
+	.string "certos, o DISENCHANTMENT pode ser\p"
+	.string "tratado. Eu prefiro testar uma\n"
+	.string "resposta a transformar\p"
 	.string "sofrimento em tradicao.$"
 
 LilycoveCity_Text_MayDefeat:
@@ -454,13 +460,17 @@ LilycoveCity_Text_MayYouGoingToBattleFrontier:
 	.string "fosse uma resposta. Eu quero\nsaber o que existe depois dela.$"
 
 LilycoveCity_Text_BrendanShoppingLetsBattle:
-	.string "CIRO: Se os dados estiverem\ncertos, o DESENCANTO pode ser\p"
-	.string "tratado. Eu prefiro testar uma\nresposta a transformar\p"
+	.string "CIRO: Se os dados estiverem\n"
+	.string "certos, o DISENCHANTMENT pode ser\p"
+	.string "tratado. Eu prefiro testar uma\n"
+	.string "resposta a transformar\p"
 	.string "sofrimento em tradicao.$"
 
 LilycoveCity_Text_BrendanNoConfidence:
-	.string "CIRO: O HORIZONTE nao me pediu\npara esquecer nada. So me\p"
-	.string "mostrou que existe um futuro\nque nao precisa ser governado\p"
+	.string "CIRO: O HORIZON nao me pediu\n"
+	.string "para esquecer nada. So me\p"
+	.string "mostrou que existe um futuro\n"
+	.string "que nao precisa ser governado\p"
 	.string "pelo passado.$"
 
 LilycoveCity_Text_BrendanBattleMe:
@@ -468,18 +478,24 @@ LilycoveCity_Text_BrendanBattleMe:
 	.string "fosse uma resposta. Eu quero\nsaber o que existe depois dela.$"
 
 LilycoveCity_Text_BrendanWontBeBeaten:
-	.string "CIRO: O HORIZONTE nao me pediu\npara esquecer nada. So me\p"
-	.string "mostrou que existe um futuro\nque nao precisa ser governado\p"
+	.string "CIRO: O HORIZON nao me pediu\n"
+	.string "para esquecer nada. So me\p"
+	.string "mostrou que existe um futuro\n"
+	.string "que nao precisa ser governado\p"
 	.string "pelo passado.$"
 
 LilycoveCity_Text_BrendanDefeat:
-	.string "CIRO: Se os dados estiverem\ncertos, o DESENCANTO pode ser\p"
-	.string "tratado. Eu prefiro testar uma\nresposta a transformar\p"
+	.string "CIRO: Se os dados estiverem\n"
+	.string "certos, o DISENCHANTMENT pode ser\p"
+	.string "tratado. Eu prefiro testar uma\n"
+	.string "resposta a transformar\p"
 	.string "sofrimento em tradicao.$"
 
 LilycoveCity_Text_BrendanGoingBackToLittleroot:
-	.string "CIRO: Se os dados estiverem\ncertos, o DESENCANTO pode ser\p"
-	.string "tratado. Eu prefiro testar uma\nresposta a transformar\p"
+	.string "CIRO: Se os dados estiverem\n"
+	.string "certos, o DISENCHANTMENT pode ser\p"
+	.string "tratado. Eu prefiro testar uma\n"
+	.string "resposta a transformar\p"
 	.string "sofrimento em tradicao.$"
 
 LilycoveCity_Text_BrendanYouGoingToCollectBadges:
@@ -507,7 +523,7 @@ LilycoveCity_Text_MovedLootIntoHideoutToday:
 LilycoveCity_Text_ChanceToDoBigThings:
 	.string "I'm just a GRUNT, so I don't know what\n"
 	.string "the BOSS is thinking…\p"
-	.string "But being on CONSORCIO HORIZONTE, I\n"
+	.string "But being on HORIZON CONSORTIUM, I\n"
 	.string "know I'll get the chance to do big\l"
 	.string "things!\p"
 	.string "Wh-who are you?! I was just talking to\n"
@@ -521,7 +537,7 @@ LilycoveCity_Text_DontGoNearCaveInCove:
 
 LilycoveCity_Text_IfWorldBecomesOurs:
 	.string "If this whole wide world becomes ours,\n"
-	.string "CONSORCIO HORIZONTE's, it will be a\l"
+	.string "HORIZON CONSORTIUM's, it will be a\l"
 	.string "happier place for POKéMON, too.$"
 
 LilycoveCity_Text_WailmerLeapOutOfWater:
@@ -559,14 +575,14 @@ LilycoveCity_Text_ImFromKanto:
 	.string "only in this area?$"
 
 LilycoveCity_Text_TeamAquaBeenTrainingWailmer:
-	.string "CONSORCIO HORIZONTE's been training\n"
+	.string "HORIZON CONSORTIUM's been training\n"
 	.string "their Pilhoso in the cove.\p"
 	.string "We SAILORS can't get our boats out to\n"
 	.string "sea with them in the way!$"
 
 LilycoveCity_Text_SomeonePuntedTeamAquaOut:
 	.string "Ahoy, did you know?\p"
-	.string "Someone punted CONSORCIO HORIZONTE\n"
+	.string "Someone punted HORIZON CONSORTIUM\n"
 	.string "out of the way for us!\p"
 	.string "That got the Pilhoso out of the cove,\n"
 	.string "so we can get our boats out again.$"
@@ -576,8 +592,8 @@ LilycoveCity_Text_SomeoneStoleMyPokemon:
 	.string "seaside inn to the sound of waves…\p"
 	.string "When someone stole my POKéMON!\p"
 	.string "Who's the abductor?\n"
-	.string "CONSORCIO HORIZONTE? Is it\l"
-	.string "CONSORCIO HORIZONTE?$"
+	.string "HORIZON CONSORTIUM? Is it\l"
+	.string "HORIZON CONSORTIUM?$"
 
 LilycoveCity_Text_MissingPokemonCameBack:
 	.string "My missing POKéMON…\n"
@@ -606,10 +622,10 @@ LilycoveCity_Text_TeamAquaRenovatedCavern:
 	.string "Hm, you know of the peculiar cavern in\n"
 	.string "this cove?\p"
 	.string "That had been a natural formation, but\n"
-	.string "then that CONSORCIO HORIZONTE lot\l"
+	.string "then that HORIZON CONSORTIUM lot\l"
 	.string "came along and made their renovations.\p"
 	.string "They call themselves the\n"
-	.string "“nature-loving CONSORCIO HORIZONTE”!\p"
+	.string "“nature-loving HORIZON CONSORTIUM”!\p"
 	.string "But what they do and what they say\n"
 	.string "don't match at all!$"
 
@@ -617,12 +633,13 @@ LilycoveCity_Text_TeamAquaLotGoneForGood:
 	.string "That cave in the cove…\p"
 	.string "I didn't notice it right away, but it's\n"
 	.string "completely empty now.\p"
-	.string "That CONSORCIO HORIZONTE lot, they\n"
+	.string "That HORIZON CONSORTIUM lot, they\n"
 	.string "must have gone away for good.$"
 
 LilycoveCity_Text_CitySign:
-	.string "BAIA DAS LUZES. Por tras da\nfachada moderna fica o centro\p"
-	.string "de operacoes do ARQUIVO VIVO.$"
+	.string "BAIA DAS LUZES. Por tras da\n"
+	.string "fachada moderna fica o centro\p"
+	.string "de operacoes do LIVING ARCHIVE.$"
 
 LilycoveCity_Text_ContestHallSign:
 	.string "POKéMON CONTEST HALL\n"

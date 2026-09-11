@@ -148,7 +148,7 @@ MossdeepCity_StevensHouse_EventScript_DiveItemBall::
 	end
 
 MossdeepCity_StevensHouse_Text_YouveEarnedHMDive:
-	.string "SEU BENTO: {PLAYER}, chegou\n"
+	.string "MR. BENTO: {PLAYER}, chegou\n"
 	.string "na hora certa.\p"
 	.string "Os registros de M'BOI apontam\n"
 	.string "para algo sob a agua.\p"
@@ -156,13 +156,17 @@ MossdeepCity_StevensHouse_Text_YouveEarnedHMDive:
 	.string "Voce vai precisar dela.$"
 
 MossdeepCity_StevensHouse_Text_ExplainDive:
-	.string "SEU BENTO: Quando um nome some\nda boca das pessoas, eu\p"
-	.string "escrevo. Nao para substituir\nquem lembra; para deixar uma\p"
+	.string "MR. BENTO: Quando um nome some\n"
+	.string "da boca das pessoas, eu\p"
+	.string "escrevo. Nao para substituir\n"
+	.string "quem lembra; para deixar uma\p"
 	.string "pista.$"
 
 MossdeepCity_StevensHouse_Text_UnderwateCavernBetweenMossdeepSootopolis:
-	.string "SEU BENTO: Quando um nome some\nda boca das pessoas, eu\p"
-	.string "escrevo. Nao para substituir\nquem lembra; para deixar uma\p"
+	.string "MR. BENTO: Quando um nome some\n"
+	.string "da boca das pessoas, eu\p"
+	.string "escrevo. Nao para substituir\n"
+	.string "quem lembra; para deixar uma\p"
 	.string "pista.$"
 
 MossdeepCity_StevensHouse_Text_TakeBallContainingBeldum:
@@ -183,12 +187,14 @@ MossdeepCity_StevensHouse_Text_LeftPokeBallWhereItWas:
 	.string "it was.$"
 
 MossdeepCity_StevensHouse_Text_LetterFromSteven:
-	.string "SEU BENTO: Quando um nome some\nda boca das pessoas, eu\p"
-	.string "escrevo. Nao para substituir\nquem lembra; para deixar uma\p"
+	.string "MR. BENTO: Quando um nome some\n"
+	.string "da boca das pessoas, eu\p"
+	.string "escrevo. Nao para substituir\n"
+	.string "quem lembra; para deixar uma\p"
 	.string "pista.$"
 
 MossdeepCity_StevensHouse_Text_CollectionOfRareRocks:
 	.string "Pedras, etiquetas e cadernos.\p"
 	.string "Cada peca tem data, lugar e\n"
-	.string "um nome escrito por SEU BENTO.$"
+	.string "um nome escrito por MR. BENTO.$"
 

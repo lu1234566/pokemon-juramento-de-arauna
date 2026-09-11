@@ -422,16 +422,22 @@ MtPyre_Summit_EventScript_Grunt4::
 	end
 
 MtPyre_Summit_Text_Grunt1Intro:
-	.string "DONA ZILA: Nome repetido nao\nressuscita ninguem. Mas impede\p"
-	.string "que o silencio finja que aquela\npessoa nunca existiu.$"
+	.string "MRS. ZILA: Nome repetido nao\n"
+	.string "ressuscita ninguem. Mas impede\p"
+	.string "que o silencio finja que aquela\n"
+	.string "pessoa nunca existiu.$"
 
 MtPyre_Summit_Text_Grunt1Defeat:
-	.string "DONA ZILA: Nome repetido nao\nressuscita ninguem. Mas impede\p"
-	.string "que o silencio finja que aquela\npessoa nunca existiu.$"
+	.string "MRS. ZILA: Nome repetido nao\n"
+	.string "ressuscita ninguem. Mas impede\p"
+	.string "que o silencio finja que aquela\n"
+	.string "pessoa nunca existiu.$"
 
 MtPyre_Summit_Text_Grunt1PostBattle:
-	.string "DONA ZILA: Nome repetido nao\nressuscita ninguem. Mas impede\p"
-	.string "que o silencio finja que aquela\npessoa nunca existiu.$"
+	.string "MRS. ZILA: Nome repetido nao\n"
+	.string "ressuscita ninguem. Mas impede\p"
+	.string "que o silencio finja que aquela\n"
+	.string "pessoa nunca existiu.$"
 
 MtPyre_Summit_Text_Grunt2Intro:
 	.string "Os nomes gravados aqui\npertencem a mortos,\p"
@@ -439,24 +445,34 @@ MtPyre_Summit_Text_Grunt2Intro:
 	.string "oficiais.$"
 
 MtPyre_Summit_Text_Grunt2Defeat:
-	.string "Um funcionario do HORIZONTE\nfotografa cada inscricao antes\p"
-	.string "de autorizar a retirada de\nalgumas placas.$"
+	.string "Um funcionario do HORIZON\n"
+	.string "fotografa cada inscricao antes\p"
+	.string "de autorizar a retirada de\n"
+	.string "algumas placas.$"
 
 MtPyre_Summit_Text_Grunt2PostBattle:
-	.string "DONA ZILA: Nome repetido nao\nressuscita ninguem. Mas impede\p"
-	.string "que o silencio finja que aquela\npessoa nunca existiu.$"
+	.string "MRS. ZILA: Nome repetido nao\n"
+	.string "ressuscita ninguem. Mas impede\p"
+	.string "que o silencio finja que aquela\n"
+	.string "pessoa nunca existiu.$"
 
 MtPyre_Summit_Text_Grunt3Intro:
-	.string "Um funcionario do HORIZONTE\nfotografa cada inscricao antes\p"
-	.string "de autorizar a retirada de\nalgumas placas.$"
+	.string "Um funcionario do HORIZON\n"
+	.string "fotografa cada inscricao antes\p"
+	.string "de autorizar a retirada de\n"
+	.string "algumas placas.$"
 
 MtPyre_Summit_Text_Grunt3Defeat:
-	.string "Um funcionario do HORIZONTE\nfotografa cada inscricao antes\p"
-	.string "de autorizar a retirada de\nalgumas placas.$"
+	.string "Um funcionario do HORIZON\n"
+	.string "fotografa cada inscricao antes\p"
+	.string "de autorizar a retirada de\n"
+	.string "algumas placas.$"
 
 MtPyre_Summit_Text_Grunt3PostBattle:
-	.string "DONA ZILA: Nome repetido nao\nressuscita ninguem. Mas impede\p"
-	.string "que o silencio finja que aquela\npessoa nunca existiu.$"
+	.string "MRS. ZILA: Nome repetido nao\n"
+	.string "ressuscita ninguem. Mas impede\p"
+	.string "que o silencio finja que aquela\n"
+	.string "pessoa nunca existiu.$"
 
 MtPyre_Summit_Text_Grunt4Intro:
 	.string "Os nomes gravados aqui\npertencem a mortos,\p"
@@ -469,33 +485,50 @@ MtPyre_Summit_Text_Grunt4Defeat:
 	.string "oficiais.$"
 
 MtPyre_Summit_Text_Grunt4PostBattle:
-	.string "Um funcionario do HORIZONTE\nfotografa cada inscricao antes\p"
-	.string "de autorizar a retirada de\nalgumas placas.$"
+	.string "Um funcionario do HORIZON\n"
+	.string "fotografa cada inscricao antes\p"
+	.string "de autorizar a retirada de\n"
+	.string "algumas placas.$"
 
 MtPyre_Summit_Text_ArchieWeGotTheOrbLetsGo:
-	.string "Os sensores registram duas\ncorrentes antigas sob Arauna:\p"
-	.string "uma conserva VINCULOS; a outra\npermite que eles terminem. O\p"
-	.string "ARQUIVO tentou transformar\nambas em ferramentas.$"
+	.string "Os sensores registram duas\n"
+	.string "correntes antigas sob Arauna:\p"
+	.string "uma conserva BONDS; a outra\n"
+	.string "permite que eles terminem. O\p"
+	.string "ARCHIVE tentou transformar\n"
+	.string "ambas em ferramentas.$"
 
 MtPyre_Summit_Text_BothOrbsTakenMagmaLeftThis:
-	.string "Os sensores registram duas\ncorrentes antigas sob Arauna:\p"
-	.string "uma conserva VINCULOS; a outra\npermite que eles terminem. O\p"
-	.string "ARQUIVO tentou transformar\nambas em ferramentas.$"
+	.string "Os sensores registram duas\n"
+	.string "correntes antigas sob Arauna:\p"
+	.string "uma conserva BONDS; a outra\n"
+	.string "permite que eles terminem. O\p"
+	.string "ARCHIVE tentou transformar\n"
+	.string "ambas em ferramentas.$"
 
 MtPyre_Summit_Text_OrbsHaveBeenTaken:
-	.string "Os sensores registram duas\ncorrentes antigas sob Arauna:\p"
-	.string "uma conserva VINCULOS; a outra\npermite que eles terminem. O\p"
-	.string "ARQUIVO tentou transformar\nambas em ferramentas.$"
+	.string "Os sensores registram duas\n"
+	.string "correntes antigas sob Arauna:\p"
+	.string "uma conserva BONDS; a outra\n"
+	.string "permite que eles terminem. O\p"
+	.string "ARCHIVE tentou transformar\n"
+	.string "ambas em ferramentas.$"
 
 MtPyre_Summit_Text_GroudonKyogreAwakened:
-	.string "Os sensores registram duas\ncorrentes antigas sob Arauna:\p"
-	.string "uma conserva VINCULOS; a outra\npermite que eles terminem. O\p"
-	.string "ARQUIVO tentou transformar\nambas em ferramentas.$"
+	.string "Os sensores registram duas\n"
+	.string "correntes antigas sob Arauna:\p"
+	.string "uma conserva BONDS; a outra\n"
+	.string "permite que eles terminem. O\p"
+	.string "ARCHIVE tentou transformar\n"
+	.string "ambas em ferramentas.$"
 
 MtPyre_Summit_Text_ThoseTwoMenReturnedOrbs:
-	.string "Os sensores registram duas\ncorrentes antigas sob Arauna:\p"
-	.string "uma conserva VINCULOS; a outra\npermite que eles terminem. O\p"
-	.string "ARQUIVO tentou transformar\nambas em ferramentas.$"
+	.string "Os sensores registram duas\n"
+	.string "correntes antigas sob Arauna:\p"
+	.string "uma conserva BONDS; a outra\n"
+	.string "permite que eles terminem. O\p"
+	.string "ARCHIVE tentou transformar\n"
+	.string "ambas em ferramentas.$"
 
 MtPyre_Summit_Text_SuperAncientPokemonTaughtUs:
 	.string "The embodiments of the land, sea,\n"
@@ -521,17 +554,22 @@ MtPyre_Summit_Text_WillYouHearOutMyTale:
 	.string "told in the ARAUNA region?$"
 
 MtPyre_Summit_Text_GroudonKyogreTale:
-	.string "Os sensores registram duas\ncorrentes antigas sob Arauna:\p"
-	.string "uma conserva VINCULOS; a outra\npermite que eles terminem. O\p"
-	.string "ARQUIVO tentou transformar\nambas em ferramentas.$"
+	.string "Os sensores registram duas\n"
+	.string "correntes antigas sob Arauna:\p"
+	.string "uma conserva BONDS; a outra\n"
+	.string "permite que eles terminem. O\p"
+	.string "ARCHIVE tentou transformar\n"
+	.string "ambas em ferramentas.$"
 
 MtPyre_Summit_Text_WellThatTooIsFine:
 	.string "I see…\n"
 	.string "Well, that, too, is fine…$"
 
 MtPyre_Summit_Text_MaxieSilence:
-	.string "LUZIA: Ninguem tem o direito de\nescolher que memoria merece\p"
-	.string "morrer. O HORIZONTE chama\ncensura de tratamento porque a\p"
+	.string "LUZIA: Ninguem tem o direito de\n"
+	.string "escolher que memoria merece\p"
+	.string "morrer. O HORIZON chama\n"
+	.string "censura de tratamento porque a\p"
 	.string "palavra soa mais limpa.$"
 
 MtPyre_Summit_Text_HearTheNewLegendOfHoenn:

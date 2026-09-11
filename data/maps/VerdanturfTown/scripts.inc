@@ -104,7 +104,7 @@ VerdanturfTown_Text_EasyToGetToRustboroNow:
 	.string "The cave beyond the stone bridge\n"
 	.string "now leads through the hills.\p"
 	.string "It's great--it's easy to go shop for\n"
-	.string "new HORIZONTE products in\l"
+	.string "new HORIZON products in\l"
 	.string "SERRA DO UIVO now.$"
 
 VerdanturfTown_Text_TownSign:

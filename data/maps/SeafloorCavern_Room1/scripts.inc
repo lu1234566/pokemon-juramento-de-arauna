@@ -35,7 +35,7 @@ SeafloorCavern_Room1_Text_Grunt2Defeat:
 
 SeafloorCavern_Room1_Text_Grunt2PostBattle:
 	.string "Quanto mais fundo descemos,\n"
-	.string "menos o ARQUIVO obedece.\p"
+	.string "menos o ARCHIVE obedece.\p"
 	.string "Talvez nunca tenha sido uma\n"
 	.string "ferramenta de verdade.$"
 

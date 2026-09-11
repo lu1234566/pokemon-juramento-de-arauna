@@ -326,7 +326,7 @@ RivalsHouse_1F_Text_OhYoureTheNewNeighbor:
 
 RivalsHouse_1F_Text_LikeChildLikeFather:
 	.string "CIRO quase nao para em casa.\p"
-	.string "Desde que o HORIZONTE ofereceu\n"
+	.string "Desde que o HORIZON ofereceu\n"
 	.string "aquela bolsa, ele vive entre\n"
 	.string "mapas, sensores e POKéMON.$"
 
@@ -340,7 +340,7 @@ RivalsHouse_1F_Text_WentOutToRoute103:
 	.string "CIRO saiu para a ROTA 103\n"
 	.string "ha pouco.\p"
 	.string "Disse que precisava testar\n"
-	.string "dados novos do HORIZONTE.$"
+	.string "dados novos do HORIZON.$"
 
 RivalsHouse_1F_Text_ShouldGoHomeEverySoOften:
 	.string "Viajar com POKéMON muda a\n"

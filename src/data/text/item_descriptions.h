@@ -1019,7 +1019,7 @@ static const u8 sWailmerPailDesc[] = _(
 
 static const u8 sDevonGoodsDesc[] = _(
     "A package of\n"
-    "HORIZONTE's own\n"
+    "HORIZON's own\n"
     "machine parts.");
 
 static const u8 sSootSackDesc[] = _(
@@ -1044,7 +1044,7 @@ static const u8 sPokeblockCaseDesc[] = _(
 
 static const u8 sLetterDesc[] = _(
     "A letter to BENTO\n"
-    "from the HORIZONTE\n"
+    "from the HORIZON\n"
     "PRESIDENT.");
 
 static const u8 sEonTicketDesc[] = _(
@@ -1112,7 +1112,7 @@ static const u8 sClawFossilDesc[] = _(
     "dwelling POKéMON.");
 
 static const u8 sDevonScopeDesc[] = _(
-    "A HORIZONTE device\n"
+    "A HORIZON device\n"
     "that signals any\n"
     "unseeable POKéMON.");
 

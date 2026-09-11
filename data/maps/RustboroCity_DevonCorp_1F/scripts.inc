@@ -79,7 +79,7 @@ RustboroCity_DevonCorp_1F_EventScript_ProductsDisplay::
 	end
 
 RustboroCity_DevonCorp_1F_Text_WelcomeToDevonCorp:
-	.string "Hello and welcome to the HORIZONTE\n"
+	.string "Hello and welcome to the HORIZON\n"
 	.string "CORPORATION.\p"
 	.string "We're proud producers of items and\n"
 	.string "medicine that enhance your life.$"
@@ -121,13 +121,13 @@ RustboroCity_DevonCorp_1F_Text_RocksMetalDisplay:
 	.string "Samples of rocks and metal are\n"
 	.string "displayed in the glass case.\p"
 	.string "There's a panel with some writing on it…\p"
-	.string "“CONSORCIO HORIZONTE got its start as\n"
+	.string "“HORIZON CONSORTIUM got its start as\n"
 	.string "a producer of stones from quarries.\p"
 	.string "“The company also produced iron from\n"
 	.string "filings in the sand.\p"
 	.string "“From that humble start as a producer\n"
-	.string "of raw materials, HORIZONTE developed.\p"
-	.string "“HORIZONTE is now a manufacturer of a\n"
+	.string "of raw materials, HORIZON developed.\p"
+	.string "“HORIZON is now a manufacturer of a\n"
 	.string "wide range of industrial products.”$"
 
 RustboroCity_DevonCorp_1F_Text_ProductDisplay:
@@ -135,9 +135,9 @@ RustboroCity_DevonCorp_1F_Text_ProductDisplay:
 	.string "glass display case.\p"
 	.string "There's a panel with a description…\p"
 	.string "“In addition to industrial products,\n"
-	.string "HORIZONTE now markets sundries and\l"
+	.string "HORIZON now markets sundries and\l"
 	.string "pharmaceuticals for better lifestyles.\p"
-	.string "“Recently, HORIZONTE has begun\n"
+	.string "“Recently, HORIZON has begun\n"
 	.string "marketing tools for POKéMON TRAINERS,\l"
 	.string "including POKé BALLS and POKéNAV\l"
 	.string "systems.”$"

@@ -389,10 +389,10 @@ DewfordTown_Gym_Text_BrawlyDefeat:
 
 DewfordTown_Gym_Text_ReceivedKnuckleBadge:
 	.string "{PLAYER} recebeu a\n"
-	.string "INSÍGNIA MARÉ de ADEMAR.$"
+	.string "TIDE BADGE de ADEMAR.$"
 
 DewfordTown_Gym_Text_KnuckleBadgeInfoTakeThis:
-	.string "A INSÍGNIA MARÉ faz POKéMON\n"
+	.string "A TIDE BADGE faz POKéMON\n"
 	.string "até o nível 30 obedecerem,\l"
 	.string "mesmo os recebidos em troca.\p"
 	.string "Também permite usar FLASH\n"

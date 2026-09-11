@@ -739,7 +739,7 @@ Route110_Movement_BirchExit4:
 	step_end
 
 Route110_Text_WeCantTalkAboutAquaActivities:
-	.string "CONSORCIO HORIZONTE's activities…\n"
+	.string "HORIZON CONSORTIUM's activities…\n"
 	.string "We can't talk about them yet.$"
 
 Route110_Text_KickUpARuckus:
@@ -748,11 +748,11 @@ Route110_Text_KickUpARuckus:
 
 Route110_Text_MyFirstJobInAqua:
 	.string "This is my first job after joining\n"
-	.string "CONSORCIO HORIZONTE. It's a little\l"
+	.string "HORIZON CONSORTIUM. It's a little\l"
 	.string "scary.$"
 
 Route110_Text_AquaActionsBringSmiles:
-	.string "CONSORCIO HORIZONTE's actions should\n"
+	.string "HORIZON CONSORTIUM's actions should\n"
 	.string "bring smiles to people's faces!$"
 
 Route110_Text_MayLetsBattle:
@@ -783,8 +783,10 @@ Route110_Text_BrendanDefeated:
 	.string "fosse uma resposta. Eu quero\nsaber o que existe depois dela.$"
 
 Route110_Text_BrendanTakeThis:
-	.string "CIRO: O HORIZONTE nao me pediu\npara esquecer nada. So me\p"
-	.string "mostrou que existe um futuro\nque nao precisa ser governado\p"
+	.string "CIRO: O HORIZON nao me pediu\n"
+	.string "para esquecer nada. So me\p"
+	.string "mostrou que existe um futuro\n"
+	.string "que nao precisa ser governado\p"
 	.string "pelo passado.$"
 
 Route110_Text_BrendanExplainItemfinder:
@@ -898,18 +900,21 @@ Route110_Text_AcroBikesDoNotQualify:
 	.string "They are easy to turn, so it's not fair.$"
 
 Route110_Text_SlateportCitySign:
-	.string "ROUTE110. As estradas de Arauna\nguardam sinais do DESENCANTO:\p"
-	.string "nomes riscados, historias\nincompletas e Pokemon que\p"
-	.string "hesitam diante de lugares\nconhecidos.$"
+	.string "ROUTE110. As estradas de Arauna\n"
+	.string "guardam sinais do DISENCHANTMENT:\p"
+	.string "nomes riscados, historias\n"
+	.string "incompletas e Pokemon que\p"
+	.string "hesitam diante de lugares\n"
+	.string "conhecidos.$"
 
 Route110_Text_CyclingRoadSign:
 	.string "SEASIDE CYCLING ROAD$"
 
 Route110_Text_AquaWasHere:
-	.string "“CONSORCIO HORIZONTE was here!”\p"
+	.string "“HORIZON CONSORTIUM was here!”\p"
 	.string "Someone painted that onto this sign,\n"
 	.string "but then someone else painted over it.\p"
-	.string "“LEMBRANTES rules!” is what it\n"
+	.string "“REMEMBRANCERS rules!” is what it\n"
 	.string "says now.$"
 
 Route110_Text_Route103Sign:
@@ -920,9 +925,12 @@ Route110_Text_SeasideParkingSign:
 	.string "SEASIDE PARKING$"
 
 Route110_Text_MauvilleCitySign:
-	.string "ROUTE110. As estradas de Arauna\nguardam sinais do DESENCANTO:\p"
-	.string "nomes riscados, historias\nincompletas e Pokemon que\p"
-	.string "hesitam diante de lugares\nconhecidos.$"
+	.string "ROUTE110. As estradas de Arauna\n"
+	.string "guardam sinais do DISENCHANTMENT:\p"
+	.string "nomes riscados, historias\n"
+	.string "incompletas e Pokemon que\p"
+	.string "hesitam diante de lugares\n"
+	.string "conhecidos.$"
 
 Route110_Text_TrainerTipsPrlzSleep:
 	.string "TRAINER TIPS\p"
@@ -952,8 +960,10 @@ Route110_Text_ThereIsNoRecord:
 	.string "challenge. There is no record…$"
 
 Route110_Text_ImagineSeeingYouHere:
-	.string "ANAHI: Se eu continuar calada\nsobre o que o HORIZONTE fez com\p"
-	.string "minha pesquisa, o erro tambem\nsera meu.$"
+	.string "ANAHI: Se eu continuar calada\n"
+	.string "sobre o que o HORIZON fez com\p"
+	.string "minha pesquisa, o erro tambem\n"
+	.string "sera meu.$"
 
 Route110_Text_HeardYouInstallMatchCall:
 	.string "Oh, I see!\n"
@@ -972,7 +982,9 @@ Route110_Text_RegisteredBirchInPokenav:
 	.string "in the POKéNAV.$"
 
 Route110_Text_KeepAnEyeOutForRival:
-	.string "ANAHI: Eu ajudei a criar os\nprimeiros sensores de VINCULO.\p"
-	.string "Na epoca achei que medir\nsignificava compreender. Hoje\p"
+	.string "ANAHI: Eu ajudei a criar os\n"
+	.string "primeiros sensores de BOND.\p"
+	.string "Na epoca achei que medir\n"
+	.string "significava compreender. Hoje\p"
 	.string "sei que nao e a mesma coisa.$"
 

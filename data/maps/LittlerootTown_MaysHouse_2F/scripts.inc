@@ -318,7 +318,7 @@ RivalsHouse_2F_Text_MayWhoAreYou:
 RivalsHouse_2F_Text_MayGettingReady:
 	.string "CIRO: Estou terminando minhas\n"
 	.string "anotacoes da ROTA 103.\p"
-	.string "O HORIZONTE quer dados antes\n"
+	.string "O HORIZON quer dados antes\n"
 	.string "do anoitecer.$"
 
 RivalsHouse_2F_Text_BrendanWhoAreYou:
@@ -331,7 +331,7 @@ RivalsHouse_2F_Text_BrendanWhoAreYou:
 RivalsHouse_2F_Text_BrendanGettingReady:
 	.string "CIRO: Estou terminando minhas\n"
 	.string "anotacoes da ROTA 103.\p"
-	.string "O HORIZONTE quer dados antes\n"
+	.string "O HORIZON quer dados antes\n"
 	.string "do anoitecer.$"
 
 RivalsHouse_2F_Text_ItsRivalsPokeBall:
@@ -339,23 +339,31 @@ RivalsHouse_2F_Text_ItsRivalsPokeBall:
 	.string "Melhor deixar onde esta.$"
 
 RivalsHouse_2F_Text_MayJustCheckingMyPokedex:
-	.string "CIRO: Se os dados estiverem\ncertos, o DESENCANTO pode ser\p"
-	.string "tratado. Eu prefiro testar uma\nresposta a transformar\p"
+	.string "CIRO: Se os dados estiverem\n"
+	.string "certos, o DISENCHANTMENT pode ser\p"
+	.string "tratado. Eu prefiro testar uma\n"
+	.string "resposta a transformar\p"
 	.string "sofrimento em tradicao.$"
 
 RivalsHouse_2F_Text_MayWhereShouldIGoNext:
-	.string "CIRO: O HORIZONTE nao me pediu\npara esquecer nada. So me\p"
-	.string "mostrou que existe um futuro\nque nao precisa ser governado\p"
+	.string "CIRO: O HORIZON nao me pediu\n"
+	.string "para esquecer nada. So me\p"
+	.string "mostrou que existe um futuro\n"
+	.string "que nao precisa ser governado\p"
 	.string "pelo passado.$"
 
 RivalsHouse_2F_Text_BrendanJustCheckingMyPokedex:
-	.string "CIRO: Se os dados estiverem\ncertos, o DESENCANTO pode ser\p"
-	.string "tratado. Eu prefiro testar uma\nresposta a transformar\p"
+	.string "CIRO: Se os dados estiverem\n"
+	.string "certos, o DISENCHANTMENT pode ser\p"
+	.string "tratado. Eu prefiro testar uma\n"
+	.string "resposta a transformar\p"
 	.string "sofrimento em tradicao.$"
 
 RivalsHouse_2F_Text_BrendanWhereShouldIGoNext:
-	.string "CIRO: O HORIZONTE nao me pediu\npara esquecer nada. So me\p"
-	.string "mostrou que existe um futuro\nque nao precisa ser governado\p"
+	.string "CIRO: O HORIZON nao me pediu\n"
+	.string "para esquecer nada. So me\p"
+	.string "mostrou que existe um futuro\n"
+	.string "que nao precisa ser governado\p"
 	.string "pelo passado.$"
 
 LittlerootTown_MaysHouse_2F_V9_OnLoad:

@@ -331,7 +331,7 @@ PetalburgWoods_Text_IWasGoingToAmbushYou:
 	.string "I got sick of waiting, so here I am!$"
 
 PetalburgWoods_Text_HandOverThosePapers:
-	.string "You! HORIZONTE RESEARCHER!\p"
+	.string "You! HORIZON RESEARCHER!\p"
 	.string "Hand over those papers!$"
 
 PetalburgWoods_Text_YouHaveToHelpMe:
@@ -343,7 +343,7 @@ PetalburgWoods_Text_NoOneCrossesTeamAqua:
 	.string "Hunh? What do you think you're doing?\n"
 	.string "What, you're going to protect him?\p"
 	.string "No one who crosses\n"
-	.string "CONSORCIO HORIZONTE gets any mercy,\l"
+	.string "HORIZON CONSORTIUM gets any mercy,\l"
 	.string "not even a kid!\p"
 	.string "Come on and battle me!$"
 
@@ -352,11 +352,11 @@ PetalburgWoods_Text_YoureKiddingMe:
 
 PetalburgWoods_Text_YouveGotSomeNerve:
 	.string "Grrr… You've got some nerve meddling\n"
-	.string "with CONSORCIO HORIZONTE! Come on and\l"
+	.string "with HORIZON CONSORTIUM! Come on and\l"
 	.string "battle me again!\p"
 	.string "I wish I could say that, but I'm out of\n"
 	.string "POKéMON…\p"
-	.string "And, hey, we of CONSORCIO HORIZONTE\n"
+	.string "And, hey, we of HORIZON CONSORTIUM\n"
 	.string "are also after something in\l"
 	.string "SERRA DO UIVO.\p"
 	.string "I'll let you go today!$"
@@ -370,7 +370,7 @@ PetalburgWoods_Text_ThatWasAwfullyClose:
 	.string "my thanks!$"
 
 PetalburgWoods_Text_TeamAquaAfterSomethingInRustboro:
-	.string "Didn't that CONSORCIO HORIZONTE thug\n"
+	.string "Didn't that HORIZON CONSORTIUM thug\n"
 	.string "say they were after something in\l"
 	.string "SERRA DO UIVO, too?$"
 

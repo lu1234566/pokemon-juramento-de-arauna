@@ -395,12 +395,16 @@ OldaleTown_Text_MayLetsGoBack:
 	.string "o bastante para saber que nao\nquero viver preso ao que perdi.$"
 
 OldaleTown_Text_BrendanLetsGoBack:
-	.string "CIRO: O HORIZONTE nao me pediu\npara esquecer nada. So me\p"
-	.string "mostrou que existe um futuro\nque nao precisa ser governado\p"
+	.string "CIRO: O HORIZON nao me pediu\n"
+	.string "para esquecer nada. So me\p"
+	.string "mostrou que existe um futuro\n"
+	.string "que nao precisa ser governado\p"
 	.string "pelo passado.$"
 
 OldaleTown_Text_TownSign:
-	.string "VILA DA PASSAGEM. Um Pokemon\nlocal deixou de responder ao\p"
-	.string "proprio nome. Os moradores\nchamam o fenomeno de\p"
-	.string "DESENCANTO.$"
+	.string "VILA DA PASSAGEM. Um Pokemon\n"
+	.string "local deixou de responder ao\p"
+	.string "proprio nome. Os moradores\n"
+	.string "chamam o fenomeno de\p"
+	.string "DISENCHANTMENT.$"
 

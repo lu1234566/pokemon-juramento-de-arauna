@@ -12,28 +12,40 @@ MagmaHideout_3F_1R_EventScript_Grunt16::
 	end
 
 MagmaHideout_3F_1R_Text_Grunt9Intro:
-	.string "LEMBRANTE: Guardar um nome pode\nser resistencia. Obrigar alguem\p"
-	.string "a reviver tudo tambem pode ser\nviolencia.$"
+	.string "REMEMBRANCER: Guardar um nome pode\n"
+	.string "ser resistencia. Obrigar alguem\p"
+	.string "a reviver tudo tambem pode ser\n"
+	.string "violencia.$"
 
 MagmaHideout_3F_1R_Text_Grunt9Defeat:
-	.string "LEMBRANTE: O HORIZONTE quer uma\nArauna estavel. Eu quero uma\p"
-	.string "Arauna que saiba por que suas\nruinas existem.$"
+	.string "REMEMBRANCER: O HORIZON quer uma\n"
+	.string "Arauna estavel. Eu quero uma\p"
+	.string "Arauna que saiba por que suas\n"
+	.string "ruinas existem.$"
 
 MagmaHideout_3F_1R_Text_Grunt9PostBattle:
-	.string "LEMBRANTE: Se uma historia\nincomoda quem manda, ela vira\p"
-	.string "'ruido', depois 'trauma',\ndepois desaparece do registro.$"
+	.string "REMEMBRANCER: Se uma historia\n"
+	.string "incomoda quem manda, ela vira\p"
+	.string "'ruido', depois 'trauma',\n"
+	.string "depois desaparece do registro.$"
 
 MagmaHideout_3F_1R_Text_Grunt16Intro:
-	.string "LEMBRANTE: LUZIA diz que\nmemoria devolvida sem permissao\p"
-	.string "ainda e melhor que memoria\nroubada. Nem todos aqui\p"
+	.string "REMEMBRANCER: LUZIA diz que\n"
+	.string "memoria devolvida sem permissao\p"
+	.string "ainda e melhor que memoria\n"
+	.string "roubada. Nem todos aqui\p"
 	.string "concordam com essa parte.$"
 
 MagmaHideout_3F_1R_Text_Grunt16Defeat:
-	.string "LEMBRANTE: LUZIA diz que\nmemoria devolvida sem permissao\p"
-	.string "ainda e melhor que memoria\nroubada. Nem todos aqui\p"
+	.string "REMEMBRANCER: LUZIA diz que\n"
+	.string "memoria devolvida sem permissao\p"
+	.string "ainda e melhor que memoria\n"
+	.string "roubada. Nem todos aqui\p"
 	.string "concordam com essa parte.$"
 
 MagmaHideout_3F_1R_Text_Grunt16PostBattle:
-	.string "LEMBRANTE: Se uma historia\nincomoda quem manda, ela vira\p"
-	.string "'ruido', depois 'trauma',\ndepois desaparece do registro.$"
+	.string "REMEMBRANCER: Se uma historia\n"
+	.string "incomoda quem manda, ela vira\p"
+	.string "'ruido', depois 'trauma',\n"
+	.string "depois desaparece do registro.$"
 

@@ -216,9 +216,12 @@ SeafloorCavern_Room9_Movement_Delay32:
 	step_end
 
 SeafloorCavern_Room9_Text_ArchieHoldItRightThere:
-	.string "OTACILIO: Eu vi o que uma\nmemoria pode fazer com quem\p"
-	.string "sobrevive. O ARQUIVO VIVO\nexiste para que ninguem seja\p"
-	.string "condenado a carregar a pior\nnoite da propria vida para\p"
+	.string "OTACILIO: Eu vi o que uma\n"
+	.string "memoria pode fazer com quem\p"
+	.string "sobrevive. O LIVING ARCHIVE\n"
+	.string "existe para que ninguem seja\p"
+	.string "condenado a carregar a pior\n"
+	.string "noite da propria vida para\p"
 	.string "sempre.$"
 
 SeafloorCavern_Room9_Text_ArchieSoItWasYou:
@@ -227,8 +230,10 @@ SeafloorCavern_Room9_Text_ArchieSoItWasYou:
 	.string "porque aconteceu.$"
 
 SeafloorCavern_Room9_Text_ArchieBeholdKyogre:
-	.string "O ARQUIVO reage como se memoria\ne esquecimento fossem forcas\p"
-	.string "fisicas. Pela primeira vez fica\nclaro que ele nunca esteve\p"
+	.string "O ARCHIVE reage como se memoria\n"
+	.string "e esquecimento fossem forcas\p"
+	.string "fisicas. Pela primeira vez fica\n"
+	.string "claro que ele nunca esteve\p"
 	.string "realmente sob controle humano.$"
 
 SeafloorCavern_Room9_Text_ArchieYouMustDisappear:
@@ -242,17 +247,23 @@ SeafloorCavern_Room9_Text_ArchieDefeat:
 	.string "respeito.$"
 
 SeafloorCavern_Room9_Text_ArchieWithThisRedOrb:
-	.string "Os sensores enlouquecem. As\ncavernas de M'BOI ainda\p"
-	.string "carregam VINCULOS que o ARQUIVO\nnunca conseguiu classificar.$"
+	.string "Os sensores enlouquecem. As\n"
+	.string "cavernas de M'BOI ainda\p"
+	.string "carregam BONDS que o ARCHIVE\n"
+	.string "nunca conseguiu classificar.$"
 
 SeafloorCavern_Room9_Text_RedOrbShinesByItself:
-	.string "O ARQUIVO reage como se memoria\ne esquecimento fossem forcas\p"
-	.string "fisicas. Pela primeira vez fica\nclaro que ele nunca esteve\p"
+	.string "O ARCHIVE reage como se memoria\n"
+	.string "e esquecimento fossem forcas\p"
+	.string "fisicas. Pela primeira vez fica\n"
+	.string "claro que ele nunca esteve\p"
 	.string "realmente sob controle humano.$"
 
 SeafloorCavern_Room9_Text_ArchieWhereDidKyogreGo:
-	.string "Os sensores enlouquecem. As\ncavernas de M'BOI ainda\p"
-	.string "carregam VINCULOS que o ARQUIVO\nnunca conseguiu classificar.$"
+	.string "Os sensores enlouquecem. As\n"
+	.string "cavernas de M'BOI ainda\p"
+	.string "carregam BONDS que o ARCHIVE\n"
+	.string "nunca conseguiu classificar.$"
 
 SeafloorCavern_Room9_Text_ArchieAMessageFromOutside:
 	.string "OTACILIO: M'BOI me ensinou que\nlembrar tambem pode destruir.\p"
@@ -260,8 +271,10 @@ SeafloorCavern_Room9_Text_ArchieAMessageFromOutside:
 	.string "porque aconteceu.$"
 
 SeafloorCavern_Room9_Text_ArchieWhatRainingTooHard:
-	.string "Os sensores enlouquecem. As\ncavernas de M'BOI ainda\p"
-	.string "carregam VINCULOS que o ARQUIVO\nnunca conseguiu classificar.$"
+	.string "Os sensores enlouquecem. As\n"
+	.string "cavernas de M'BOI ainda\p"
+	.string "carregam BONDS que o ARCHIVE\n"
+	.string "nunca conseguiu classificar.$"
 
 SeafloorCavern_Room9_Text_ArchieWhyDidKyogreDisappear:
 	.string "Gravacoes antigas misturam\nordens de evacuacao, pedidos de\p"
@@ -282,6 +295,8 @@ SeafloorCavern_Room9_Text_MaxieWeDontHaveTimeToArgue:
 	.string "conservar.$"
 
 SeafloorCavern_Room9_Text_MaxieComeOnPlayer:
-	.string "LUZIA: Ninguem tem o direito de\nescolher que memoria merece\p"
-	.string "morrer. O HORIZONTE chama\ncensura de tratamento porque a\p"
+	.string "LUZIA: Ninguem tem o direito de\n"
+	.string "escolher que memoria merece\p"
+	.string "morrer. O HORIZON chama\n"
+	.string "censura de tratamento porque a\p"
 	.string "palavra soa mais limpa.$"

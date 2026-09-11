@@ -372,17 +372,21 @@ MossdeepCity_SpaceCenter_2F_Text_WouldveLikedToBeAstronaut:
 	.string "I can and will try!$"
 
 MossdeepCity_SpaceCenter_2F_Text_MagmaCantGetAwayWithThis:
-	.string "A rede de comunicacao daqui\npode espalhar o protocolo do\p"
-	.string "ARQUIVO VIVO por toda Arauna.\nPor isso o HORIZONTE e os\p"
-	.string "LEMBRANTES vieram ate aqui.$"
+	.string "A rede de comunicacao daqui\n"
+	.string "pode espalhar o protocolo do\p"
+	.string "LIVING ARCHIVE por toda Arauna.\n"
+	.string "Por isso o HORIZON e os\p"
+	.string "REMEMBRANCERS vieram ate aqui.$"
 
 MossdeepCity_SpaceCenter_2F_Text_WishOrdinaryPeopleCouldGoIntoSpace:
 	.string "I wish ordinary people could go into\n"
 	.string "space one day…$"
 
 MossdeepCity_SpaceCenter_2F_Text_DoesMagmaWantToGoToSpace:
-	.string "Um sinal capaz de atravessar a\nregiao inteira tambem poderia\p"
-	.string "sincronizar milhares de\nsensores de VINCULO ao mesmo\p"
+	.string "Um sinal capaz de atravessar a\n"
+	.string "regiao inteira tambem poderia\p"
+	.string "sincronizar milhares de\n"
+	.string "sensores de BOND ao mesmo\p"
 	.string "tempo.$"
 
 MossdeepCity_SpaceCenter_2F_Text_YoureOutnumberedTakeUsOn:
@@ -395,49 +399,67 @@ MossdeepCity_SpaceCenter_2F_Text_GoodAnswer:
 	.string "That's what a smart person'll do!$"
 
 MossdeepCity_SpaceCenter_2F_Text_Grunt5Intro:
-	.string "A rede de comunicacao daqui\npode espalhar o protocolo do\p"
-	.string "ARQUIVO VIVO por toda Arauna.\nPor isso o HORIZONTE e os\p"
-	.string "LEMBRANTES vieram ate aqui.$"
+	.string "A rede de comunicacao daqui\n"
+	.string "pode espalhar o protocolo do\p"
+	.string "LIVING ARCHIVE por toda Arauna.\n"
+	.string "Por isso o HORIZON e os\p"
+	.string "REMEMBRANCERS vieram ate aqui.$"
 
 MossdeepCity_SpaceCenter_2F_Text_Grunt5Defeat:
-	.string "Um sinal capaz de atravessar a\nregiao inteira tambem poderia\p"
-	.string "sincronizar milhares de\nsensores de VINCULO ao mesmo\p"
+	.string "Um sinal capaz de atravessar a\n"
+	.string "regiao inteira tambem poderia\p"
+	.string "sincronizar milhares de\n"
+	.string "sensores de BOND ao mesmo\p"
 	.string "tempo.$"
 
 MossdeepCity_SpaceCenter_2F_Text_Grunt6Intro:
-	.string "A rede de comunicacao daqui\npode espalhar o protocolo do\p"
-	.string "ARQUIVO VIVO por toda Arauna.\nPor isso o HORIZONTE e os\p"
-	.string "LEMBRANTES vieram ate aqui.$"
+	.string "A rede de comunicacao daqui\n"
+	.string "pode espalhar o protocolo do\p"
+	.string "LIVING ARCHIVE por toda Arauna.\n"
+	.string "Por isso o HORIZON e os\p"
+	.string "REMEMBRANCERS vieram ate aqui.$"
 
 MossdeepCity_SpaceCenter_2F_Text_Grunt6Defeat:
-	.string "A rede de comunicacao daqui\npode espalhar o protocolo do\p"
-	.string "ARQUIVO VIVO por toda Arauna.\nPor isso o HORIZONTE e os\p"
-	.string "LEMBRANTES vieram ate aqui.$"
+	.string "A rede de comunicacao daqui\n"
+	.string "pode espalhar o protocolo do\p"
+	.string "LIVING ARCHIVE por toda Arauna.\n"
+	.string "Por isso o HORIZON e os\p"
+	.string "REMEMBRANCERS vieram ate aqui.$"
 
 MossdeepCity_SpaceCenter_2F_Text_Grunt7Intro:
-	.string "Um sinal capaz de atravessar a\nregiao inteira tambem poderia\p"
-	.string "sincronizar milhares de\nsensores de VINCULO ao mesmo\p"
+	.string "Um sinal capaz de atravessar a\n"
+	.string "regiao inteira tambem poderia\p"
+	.string "sincronizar milhares de\n"
+	.string "sensores de BOND ao mesmo\p"
 	.string "tempo.$"
 
 MossdeepCity_SpaceCenter_2F_Text_Grunt7Defeat:
-	.string "A rede de comunicacao daqui\npode espalhar o protocolo do\p"
-	.string "ARQUIVO VIVO por toda Arauna.\nPor isso o HORIZONTE e os\p"
-	.string "LEMBRANTES vieram ate aqui.$"
+	.string "A rede de comunicacao daqui\n"
+	.string "pode espalhar o protocolo do\p"
+	.string "LIVING ARCHIVE por toda Arauna.\n"
+	.string "Por isso o HORIZON e os\p"
+	.string "REMEMBRANCERS vieram ate aqui.$"
 
 MossdeepCity_SpaceCenter_2F_Text_Grunt6PostBattle:
-	.string "Um sinal capaz de atravessar a\nregiao inteira tambem poderia\p"
-	.string "sincronizar milhares de\nsensores de VINCULO ao mesmo\p"
+	.string "Um sinal capaz de atravessar a\n"
+	.string "regiao inteira tambem poderia\p"
+	.string "sincronizar milhares de\n"
+	.string "sensores de BOND ao mesmo\p"
 	.string "tempo.$"
 
 MossdeepCity_SpaceCenter_2F_Text_Grunt7PostBattle:
-	.string "A rede de comunicacao daqui\npode espalhar o protocolo do\p"
-	.string "ARQUIVO VIVO por toda Arauna.\nPor isso o HORIZONTE e os\p"
-	.string "LEMBRANTES vieram ate aqui.$"
+	.string "A rede de comunicacao daqui\n"
+	.string "pode espalhar o protocolo do\p"
+	.string "LIVING ARCHIVE por toda Arauna.\n"
+	.string "Por isso o HORIZON e os\p"
+	.string "REMEMBRANCERS vieram ate aqui.$"
 
 MossdeepCity_SpaceCenter_2F_Text_Grunt5PostBattle:
-	.string "A rede de comunicacao daqui\npode espalhar o protocolo do\p"
-	.string "ARQUIVO VIVO por toda Arauna.\nPor isso o HORIZONTE e os\p"
-	.string "LEMBRANTES vieram ate aqui.$"
+	.string "A rede de comunicacao daqui\n"
+	.string "pode espalhar o protocolo do\p"
+	.string "LIVING ARCHIVE por toda Arauna.\n"
+	.string "Por isso o HORIZON e os\p"
+	.string "REMEMBRANCERS vieram ate aqui.$"
 
 MossdeepCity_SpaceCenter_2F_Text_WellTakeCareOfYou:
 	.string "Hehehe!\p"
@@ -452,23 +474,32 @@ MossdeepCity_SpaceCenter_2F_Text_MaxieDontInterfere:
 	.string "conservar.$"
 
 MossdeepCity_SpaceCenter_2F_Text_StevenWhyStealRocketFuel:
-	.string "SEU BENTO: Quando um nome some\nda boca das pessoas, eu\p"
-	.string "escrevo. Nao para substituir\nquem lembra; para deixar uma\p"
+	.string "MR. BENTO: Quando um nome some\n"
+	.string "da boca das pessoas, eu\p"
+	.string "escrevo. Nao para substituir\n"
+	.string "quem lembra; para deixar uma\p"
 	.string "pista.$"
 
 MossdeepCity_SpaceCenter_2F_Text_MaxieUseFuelToEruptVolcano:
-	.string "Os sensores registram duas\ncorrentes antigas sob Arauna:\p"
-	.string "uma conserva VINCULOS; a outra\npermite que eles terminem. O\p"
-	.string "ARQUIVO tentou transformar\nambas em ferramentas.$"
+	.string "Os sensores registram duas\n"
+	.string "correntes antigas sob Arauna:\p"
+	.string "uma conserva BONDS; a outra\n"
+	.string "permite que eles terminem. O\p"
+	.string "ARCHIVE tentou transformar\n"
+	.string "ambas em ferramentas.$"
 
 MossdeepCity_SpaceCenter_2F_Text_StevenAreYouReadyToBattle:
-	.string "SEU BENTO: Quando um nome some\nda boca das pessoas, eu\p"
-	.string "escrevo. Nao para substituir\nquem lembra; para deixar uma\p"
+	.string "MR. BENTO: Quando um nome some\n"
+	.string "da boca das pessoas, eu\p"
+	.string "escrevo. Nao para substituir\n"
+	.string "quem lembra; para deixar uma\p"
 	.string "pista.$"
 
 MossdeepCity_SpaceCenter_2F_Text_StevenHurryGetReadyQuickly:
-	.string "SEU BENTO: Quando um nome some\nda boca das pessoas, eu\p"
-	.string "escrevo. Nao para substituir\nquem lembra; para deixar uma\p"
+	.string "MR. BENTO: Quando um nome some\n"
+	.string "da boca das pessoas, eu\p"
+	.string "escrevo. Nao para substituir\n"
+	.string "quem lembra; para deixar uma\p"
 	.string "pista.$"
 
 MossdeepCity_SpaceCenter_2F_Text_JustWantToExpandLand:
@@ -479,16 +510,23 @@ MossdeepCity_SpaceCenter_Text_TabithaDefeat:
 	.string "I'm with our leader…$"
 
 MossdeepCity_SpaceCenter_2F_Text_MaxieWeFailedIsAquaAlsoMisguided:
-	.string "Os sensores registram duas\ncorrentes antigas sob Arauna:\p"
-	.string "uma conserva VINCULOS; a outra\npermite que eles terminem. O\p"
-	.string "ARQUIVO tentou transformar\nambas em ferramentas.$"
+	.string "Os sensores registram duas\n"
+	.string "correntes antigas sob Arauna:\p"
+	.string "uma conserva BONDS; a outra\n"
+	.string "permite que eles terminem. O\p"
+	.string "ARCHIVE tentou transformar\n"
+	.string "ambas em ferramentas.$"
 
 MossdeepCity_SpaceCenter_2F_Text_MaxieWeWillGiveUp:
-	.string "LUZIA: Ninguem tem o direito de\nescolher que memoria merece\p"
-	.string "morrer. O HORIZONTE chama\ncensura de tratamento porque a\p"
+	.string "LUZIA: Ninguem tem o direito de\n"
+	.string "escolher que memoria merece\p"
+	.string "morrer. O HORIZON chama\n"
+	.string "censura de tratamento porque a\p"
 	.string "palavra soa mais limpa.$"
 
 MossdeepCity_SpaceCenter_2F_Text_StevenThankYouComeSeeMeAtHome:
-	.string "SEU BENTO: Quando um nome some\nda boca das pessoas, eu\p"
-	.string "escrevo. Nao para substituir\nquem lembra; para deixar uma\p"
+	.string "MR. BENTO: Quando um nome some\n"
+	.string "da boca das pessoas, eu\p"
+	.string "escrevo. Nao para substituir\n"
+	.string "quem lembra; para deixar uma\p"
 	.string "pista.$"

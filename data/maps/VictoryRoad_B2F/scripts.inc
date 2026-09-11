@@ -64,7 +64,7 @@ VictoryRoad_B2F_Text_CarolineDefeat:
 	.string "Nem sinal de cansaco!$"
 
 VictoryRoad_B2F_Text_CarolinePostBattle:
-	.string "A ESTRADA DO JURAMENTO e a LIGA\n"
+	.string "A ESTRADA DO JURAMENTO e a LEAGUE\n"
 	.string "sao desafios longos.\p"
 	.string "Nao deixe o cansaco vencer.$"
 
@@ -90,7 +90,7 @@ VictoryRoad_B2F_Text_FelixDefeat:
 
 VictoryRoad_B2F_Text_FelixPostBattle:
 	.string "Fico tenso so de pensar que\n"
-	.string "estou perto da LIGA.\p"
+	.string "estou perto da LEAGUE.\p"
 	.string "So consigo fingir calma.$"
 
 VictoryRoad_B2F_Text_DianneIntro:

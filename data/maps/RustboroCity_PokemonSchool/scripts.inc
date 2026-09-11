@@ -324,7 +324,7 @@ RustboroCity_PokemonSchool_Text_StudentTalentLevelUnknown:
 
 RustboroCity_PokemonSchool_Text_ScottStoneBadge:
 	.string "SCOTT: Oh, what's that?\p"
-	.string "É uma INSÍGNIA FENDA, nao é?\n"
+	.string "É uma RIFT BADGE, nao é?\n"
 	.string "Isso é impressionante, eu diria.\p"
 	.string "But, you know, I would've loved to see\n"
 	.string "you in battle.\p"
@@ -341,7 +341,7 @@ RustboroCity_PokemonSchool_Text_ScottMetAlreadyStoneBadge:
 	.string "More specifically, I'm looking for\n"
 	.string "POKéMON battle experts.\p"
 	.string "Oh, what's that?\n"
-	.string "É uma INSÍGNIA FENDA, nao é?\p"
+	.string "É uma RIFT BADGE, nao é?\p"
 	.string "Impressionante para um TRAINER\n"
 	.string "que está começando.\p"
 	.string "But, you know, I would've loved to see\n"
