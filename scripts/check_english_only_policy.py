@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import re
+import subprocess
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -145,8 +146,115 @@ EXPECTED_RENDERER_ORDER = (
 APPROVED_ENGLISH_RENDERERS = set(EXPECTED_RENDERER_ORDER)
 
 
+LEXICON = ROOT / "scripts" / "portuguese_lexicon.txt"
+ASM_STRING_RE = re.compile(r'(?m)^\s*\.string\s+"((?:[^"\\]|\\.)*)"')
+C_TEXT_RE = re.compile(r'_\(\s*("(?:[^"\\]|\\(?:.|\n))*"(?:\s*"(?:[^"\\]|\\(?:.|\n))*")*)\s*\)')
+QUOTED_RE = re.compile(r'"((?:[^"\\]|\\.)*)"')
+CONTROL_RE = re.compile(r"\{[^}]*\}|\\[nlp]|\$")
+WORD_RE = re.compile(r"[A-Za-zÁÂÃÀÇÉÊÍÓÔÕÚáâãàçéêíóôõú]+")
+
+# Names of the setting. A place is one name, not a sentence, so the ordinary
+# words inside it -- DE, DA, DAS, CASA, MATA -- are not a translation gap.
+# region_map_entries.h is generated, so the tracked JSON is read instead: on a
+# clean checkout the header does not exist yet.
+NAME_SOURCES = (
+    ("src/data/region_map/region_map_sections.json", r'"name":\s*"([^"]*)"'),
+    ("src/data/text/species_names.h", r'_\("([^"]*)"\)'),
+    ("src/data/trainers.h", r'\.trainerName = _\("([^"]*)"\)'),
+)
+EXTRA_NAMES = (
+    "MEMORIAL DOS NOMES", "ESTRADA DO JURAMENTO", "CASA DA CINZA",
+    "CASA DO UIVO", "CAVERNAS M'BOI", "SERRA DA CINZA", "MATA DA ESPERA",
+    "TRILHA DA NEBLINA", "TRILHA DE BRASA", "CASA DA MARE", "CASA DA TERRA",
+    "ENCRUZILHADA CENTRAL", "PRIMEIRA CAMARA", "MARE ALTA", "ARAUNA PRESERVE",
+    "GRUTA DA MARE", "GRUTA DA TERRA", "GRUTA DA ORIGEM", "GRUTA DA ILHA",
+    "GRUTA DO OFICIO", "GRUTA DAS MARES", "RUINAS DA AREIA", "ILHA DO SUL",
+    "ILHA MIRAGEM", "NAVIO PERDIDO", "USINA VELHA", "LAJE QUEIMADA",
+    "PASSAGEM SECA", "PASSO CORTADO", "TUMBA ANTIGA", "CAMARA SELADA",
+    "TORRE MIRAGEM", "MATA DO MEIO", "VILA DA PASSAGEM", "VILA AMANHECER",
+    "PORTO DAS REDES", "PORTO DO SAL", "PAMPA DA ESPERA", "SERRA DO UIVO",
+    "BAIA DAS LUZES", "MISSOES DO CEU", "AGUAS DE M'BOI", "VALE DO SILENCIO",
+    "CASA DA FOGUEIRA", "CAMPO DAS CINZAS", "SERTAO DE DENTRO",
+    "GALERIAS SERRA", "GRUTA DAS VOZES", "RUINAS DA QUEDA", "ARQUIVO CENTRAL",
+    "TORRE JURAMENTO", "ESTR. JURAMENTO", "MEMORIAL NOMES", "ENCRUZILHADA",
+)
+
+
 def fail(message: str) -> None:
     raise SystemExit(f"English-only policy violation: {message}")
+
+
+def load_lexicon() -> set[str]:
+    if not LEXICON.is_file():
+        fail(f"required lexicon is missing: {LEXICON.relative_to(ROOT)}")
+    words = set()
+    for raw in LEXICON.read_text(encoding="utf-8").splitlines():
+        line = raw.strip()
+        if line and not line.startswith("#"):
+            words.add(line.lower())
+    return words
+
+
+def name_pattern() -> re.Pattern[str]:
+    """Every proper name of the setting, longest first so the longest wins."""
+    names = set(EXTRA_NAMES)
+    import unicodedata
+    for rel, pattern in NAME_SOURCES:
+        text = (ROOT / rel).read_text(encoding="utf-8")
+        for name in re.findall(pattern, text):
+            flat = "".join(c for c in unicodedata.normalize("NFD", name)
+                           if unicodedata.category(c) != "Mn")
+            names |= {name, name.upper(), flat, flat.upper()}
+    ordered = sorted((n for n in names if n), key=len, reverse=True)
+    # Bounded on both sides, or masking the species "Araua" out of "Arauana"
+    # leaves a bare "na" behind and the scan reads it as Portuguese.
+    body = "|".join(re.escape(n) for n in ordered)
+    return re.compile(rf"(?<![A-Za-zÀ-ÿ0-9])(?:{body})(?![A-Za-zÀ-ÿ0-9])")
+
+
+def visible_strings(rel: str, text: str):
+    if rel.endswith((".inc", ".s")):
+        for match in ASM_STRING_RE.finditer(text):
+            yield match.start(), match.group(1)
+    else:
+        for match in C_TEXT_RE.finditer(text):
+            yield match.start(), "".join(QUOTED_RE.findall(match.group(1)))
+
+
+def check_no_portuguese_residue() -> int:
+    """No word a player can read may be Portuguese.
+
+    This is the invariant the English pass leaves behind, and it is the one
+    worth guarding: the renderers that used to translate at build time cannot
+    check anything now that the source they rewrote is already English.
+    """
+    lexicon = load_lexicon()
+    names = name_pattern()
+    tracked = subprocess.run(["git", "ls-files", "data", "src", "include"],
+                             cwd=ROOT, capture_output=True, text=True,
+                             check=True).stdout.split()
+    scanned = 0
+    findings: list[str] = []
+    for rel in tracked:
+        if not rel.endswith((".inc", ".s", ".c", ".h")):
+            continue
+        try:
+            text = (ROOT / rel).read_text(encoding="utf-8")
+        except (UnicodeDecodeError, OSError):
+            continue
+        for offset, body in visible_strings(rel, text):
+            scanned += 1
+            stripped = CONTROL_RE.sub(" ", names.sub(" ", body))
+            hits = sorted({w for w in WORD_RE.findall(stripped)
+                           if w.lower() in lexicon})
+            if hits:
+                line = text.count("\n", 0, offset) + 1
+                findings.append(f"{rel}:{line}: {', '.join(hits[:4])} -- {body[:60]}")
+    if findings:
+        shown = "\n  ".join(findings[:20])
+        more = "" if len(findings) <= 20 else f"\n  ... and {len(findings) - 20} more"
+        fail(f"Portuguese text reached {len(findings)} visible string(s):\n  {shown}{more}")
+    return scanned
 
 
 def read_manifest(path: Path, pattern: re.Pattern[str] | None = None) -> list[str]:
@@ -240,8 +348,8 @@ if "scripts/english_renderers.txt" not in build:
     fail("official build is not driven by the reviewed English renderer manifest")
 if "scripts/english_overlay_files_extra.txt" not in build:
     fail("official build is not loading the final transactional overlay manifest")
-if 'python3 "scripts/$renderer" --in-place' not in build:
-    fail("official build does not execute renderer manifest entries in-place")
+if 'python3 "scripts/$renderer" --in-place' in build:
+    fail("official build still rewrites the source at build time; the translation lives in the source now")
 if "python3 scripts/check_english_only_policy.py" not in build:
     fail("official build does not enforce the English-only gate")
 if "python3 scripts/check_arauna_story_coverage.py" not in build:
@@ -268,7 +376,10 @@ if "bash scripts/check_arauna_static.sh" not in workflow:
 if "run: python3 scripts/render_" in workflow:
     fail("CI still hard-codes individual renderers instead of using the official manifest")
 
+scanned = check_no_portuguese_residue()
+
 print(
     f"English-only policy: OK ({len(renderers)} approved English renderers in locked order; "
-    f"{len(extra_overlays)} final transactional overlay files)"
+    f"{len(extra_overlays)} final transactional overlay files; "
+    f"{scanned} visible strings scanned, no Portuguese)"
 )

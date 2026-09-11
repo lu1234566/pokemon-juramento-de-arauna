@@ -25,7 +25,7 @@ static const u8 sPokeBallDesc[] = _(
 static const u8 sSafariBallDesc[] = _(
     "A special BALL that\n"
     "is used only in the\n"
-    "RESERVA ARAUNA.");
+    "ARAUNA PRESERVE.");
 
 static const u8 sNetBallDesc[] = _(
     "A BALL that works\n"

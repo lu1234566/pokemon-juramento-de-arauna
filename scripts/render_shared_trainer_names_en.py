@@ -14,11 +14,18 @@ REPLACEMENTS = {
 
 
 def render(source: str) -> str:
+    """Rewrite the faction trainer names, whichever language they arrive in.
+
+    The names are English in the tree now, so counting only the Portuguese
+    spelling would fail on a source this has already been run against. What
+    has to hold is the total: 26 agents and 27 activists, and every one of
+    them English by the time this returns.
+    """
     rendered = source
     for old, (new, expected_count) in REPLACEMENTS.items():
-        count = rendered.count(old)
+        count = rendered.count(old) + rendered.count(new)
         if count != expected_count:
-            raise ValueError(f"expected {expected_count} occurrences of {old!r}, found {count}")
+            raise ValueError(f"expected {expected_count} occurrences of {old!r} or {new!r}, found {count}")
         rendered = rendered.replace(old, new)
     return rendered
 

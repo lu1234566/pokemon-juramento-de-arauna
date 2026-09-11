@@ -26,7 +26,7 @@
     },
     {
       "id": "MAPSEC_LAVARIDGE_TOWN",
-      "name": "SERTAO DE DENTRO",
+      "name": "CASA DA CINZA",
       "x": 5,
       "y": 3,
       "width": 1,
@@ -458,7 +458,7 @@
     },
     {
       "id": "MAPSEC_SAFARI_ZONE",
-      "name": "RESERVA ARAUNA",
+      "name": "ARAUNA PRESERVE",
       "x": 16,
       "y": 2,
       "width": 1,
@@ -466,7 +466,7 @@
     },
     {
       "id": "MAPSEC_BATTLE_FRONTIER",
-      "name": "BATTLE FRONTIER",
+      "name": "BATTLE CIRCUIT",
       "x": 22,
       "y": 12,
       "width": 1,

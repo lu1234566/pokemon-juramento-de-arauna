@@ -184,5 +184,5 @@ Route121_Text_MtPyrePierSign:
 
 Route121_Text_SafariZoneSign:
 	.string "“Filled with rare POKéMON!”\n"
-	.string "RESERVA ARAUNA$"
+	.string "ARAUNA PRESERVE$"
 

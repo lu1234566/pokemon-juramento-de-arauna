@@ -49,8 +49,12 @@ CANON = {
     "LEMBRANTE_M": ("OBJ_EVENT_GFX_MAGMA_MEMBER_M", "LEMBRANTES"),
     "LEMBRANTE_F": ("OBJ_EVENT_GFX_MAGMA_MEMBER_F", "LEMBRANTES"),
 }
-VISIBLE_CLASS = {"TRAINER_CLASS_TEAM_AQUA": "HORIZONTE",
-                 "TRAINER_CLASS_TEAM_MAGMA": "LEMBRANTE"}
+# What the class is called in battle. The point of the check is that it names
+# an Arauna faction rather than the Emerald team whose slot it borrows, so it
+# follows the English the game now speaks. The internal identifiers above --
+# HORIZONTE_M, LEMBRANTE_F -- are symbols and stay as they are.
+VISIBLE_CLASS = {"TRAINER_CLASS_TEAM_AQUA": "HORIZON",
+                 "TRAINER_CLASS_TEAM_MAGMA": "REMEMBRANCER"}
 
 
 def main() -> int:

@@ -29,7 +29,7 @@ const u8 gDraguara003PokedexText[] = _(
 const u8 gQuero004PokedexText[] = _(
     "It never sleeps all the way. One eye stays\n"
     "open over the nest, and its quero-quero cry\n"
-    "carries for kilometres."
+    "carries for kilometers."
 );
 
 const u8 gQueribela005PokedexText[] = _(
@@ -351,7 +351,7 @@ const u8 gPrego062PokedexText[] = _(
 );
 
 const u8 gPregarcanjo063PokedexText[] = _(
-    "Held to be the cleverest primate in Arauana.\n"
+    "Held to be the cleverest primate in Arauna.\n"
     "It solves human riddles."
 );
 
@@ -407,7 +407,7 @@ const u8 gFormigao073PokedexText[] = _(
 
 const u8 gMarimbondo074PokedexText[] = _(
     "An aggressive swarm. It chases a threat for\n"
-    "kilometres."
+    "kilometers."
 );
 
 const u8 gAbelhinha075PokedexText[] = _(
@@ -457,7 +457,7 @@ const u8 gAracari083PokedexText[] = _(
 
 const u8 gCuricaca084PokedexText[] = _(
     "A shrill cry at daybreak. Every farm in\n"
-    "Arauana hates this Pokémon."
+    "Arauna hates this Pokémon."
 );
 
 const u8 gSapim085PokedexText[] = _(
@@ -598,7 +598,7 @@ const u8 gCavalim111PokedexText[] = _(
 
 const u8 gCavalgado112PokedexText[] = _(
     "It runs at sixty an hour for hours. The\n"
-    "gauchos of Arauana tamed it."
+    "gauchos of Arauna tamed it."
 );
 
 const u8 gZebuim113PokedexText[] = _(
@@ -733,7 +733,7 @@ const u8 gCigarrinho138PokedexText[] = _(
 
 const u8 gCigarrao139PokedexText[] = _(
     "A hundred-decibel song. The sign of summer\n"
-    "in Arauana."
+    "in Arauna."
 );
 
 const u8 gLouvadinha140PokedexText[] = _(
@@ -812,7 +812,7 @@ const u8 gCupinzim154PokedexText[] = _(
 );
 
 const u8 gFormigaoPreto155PokedexText[] = _(
-    "It marches in single file for kilometres,\n"
+    "It marches in single file for kilometers,\n"
     "devouring everything on the way."
 );
 
@@ -938,7 +938,7 @@ const u8 gBromelinha179PokedexText[] = _(
 
 const u8 gOrquidina180PokedexText[] = _(
     "Iridescent petals. Its scent draws\n"
-    "pollinators from kilometres away."
+    "pollinators from kilometers away."
 );
 
 const u8 gVitoriaregia181PokedexText[] = _(
@@ -992,7 +992,7 @@ const u8 gCacauim190PokedexText[] = _(
 );
 
 const u8 gCacaueiro191PokedexText[] = _(
-    "Purple pods when ripe. The origin of Arauana\n"
+    "Purple pods when ripe. The origin of Arauna\n"
     "chocolate."
 );
 
@@ -1003,7 +1003,7 @@ const u8 gGuarana192PokedexText[] = _(
 
 const u8 gMate193PokedexText[] = _(
     "Its bitter leaves make chimarrao, companion\n"
-    "of the Arauana gauchos."
+    "of the Arauna gauchos."
 );
 
 const u8 gMilho194PokedexText[] = _(
@@ -1038,7 +1038,7 @@ const u8 gAmetista199PokedexText[] = _(
 
 const u8 gOurico200PokedexText[] = _(
     "A walking nugget. Bandits chase it across\n"
-    "the whole of Arauana."
+    "the whole of Arauna."
 );
 
 const u8 gFerrolho201PokedexText[] = _(
@@ -1268,7 +1268,7 @@ const u8 gJaci245PokedexText[] = _(
 
 const u8 gGuaraci246PokedexText[] = _(
     "God of the sun. His golden crown lights the\n"
-    "whole of Arauana."
+    "whole of Arauna."
 );
 
 const u8 gRuda247PokedexText[] = _(
@@ -1717,7 +1717,7 @@ const u8 gPerybe336PokedexText[] = _(
 
 const u8 gArauanau337PokedexText[] = _(
     "Supreme guardian of the region. It appears\n"
-    "only when Arauana is in danger."
+    "only when Arauna is in danger."
 );
 
 const u8 gVerdejante338PokedexText[] = _(
@@ -1727,7 +1727,7 @@ const u8 gVerdejante338PokedexText[] = _(
 
 const u8 gChuvao339PokedexText[] = _(
     "The spirit of the December rain. It soaks\n"
-    "Arauana in three days."
+    "Arauna in three days."
 );
 
 const u8 gSolzao340PokedexText[] = _(
@@ -1746,7 +1746,7 @@ const u8 gTerraao342PokedexText[] = _(
 );
 
 const u8 gFogareu343PokedexText[] = _(
-    "The first fire, which warmed Arauana at the\n"
+    "The first fire, which warmed Arauna at the\n"
     "beginning."
 );
 
@@ -1771,7 +1771,7 @@ const u8 gEstrelinha347PokedexText[] = _(
 );
 
 const u8 gArauanamon348PokedexText[] = _(
-    "The whole region of Arauana made flesh.\n"
+    "The whole region of Arauna made flesh.\n"
     "There is only one."
 );
 
@@ -1782,7 +1782,7 @@ const u8 gAracua349PokedexText[] = _(
 
 const u8 gBugio350PokedexText[] = _(
     "It howls at first light. It marks its ground\n"
-    "for kilometres."
+    "for kilometers."
 );
 
 const u8 gTuim351PokedexText[] = _(
@@ -1817,7 +1817,7 @@ const u8 gTamandui356PokedexText[] = _(
 
 const u8 gTamandua357PokedexText[] = _(
     "A sticky tongue sixty centimetres long. It\n"
-    "smells an ant nest kilometres off."
+    "smells an ant nest kilometers off."
 );
 
 const u8 gTamanduao358PokedexText[] = _(
@@ -1959,6 +1959,6 @@ const u8 gSacinho385PokedexText[] = _(
 );
 
 const u8 gAraua386PokedexText[] = _(
-    "The first Pokémon of Arauana. It holds the\n"
+    "The first Pokémon of Arauna. It holds the\n"
     "essence of the whole region."
 );

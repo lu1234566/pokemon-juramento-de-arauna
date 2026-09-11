@@ -19,10 +19,12 @@ if [[ $# -gt 0 ]]; then
     esac
 fi
 
-# Every source file temporarily rewritten by reviewed English renderers is
-# backed up before rendering and restored on every exit path. The historical
-# reviewed set stays explicit here; final-story additions live in the small
-# append-only manifest so completion work does not risk dropping old coverage.
+# The files the English pass owns. These used to be rewritten from Portuguese
+# on every build and restored afterwards; the translation now lives in the
+# source, so the list is what must exist rather than what must be rewritten.
+# The historical reviewed set stays explicit here; final-story additions live
+# in the small append-only manifest so completion work does not risk dropping
+# old coverage.
 overlay_files=(
     "src/strings.c"
     "src/data/trainers.h"
@@ -175,41 +177,33 @@ while IFS= read -r file; do
     overlay_files+=("$file")
 done < scripts/english_overlay_files_extra.txt
 
-overlay_backup_dir="$(mktemp -d)"
-
 for file in "${overlay_files[@]}"; do
     if [[ ! -f "$file" ]]; then
         echo "English overlay source is missing: $file" >&2
         exit 3
     fi
-    mkdir -p "$overlay_backup_dir/$(dirname "$file")"
-    cp "$file" "$overlay_backup_dir/$file"
 done
 
-restore_overlays() {
-    for file in "${overlay_files[@]}"; do
-        cp "$overlay_backup_dir/$file" "$file"
-    done
-    rm -rf "$overlay_backup_dir"
-}
-trap restore_overlays EXIT
-trap 'exit 129' HUP
-trap 'exit 130' INT
-trap 'exit 143' TERM
+# The 128 renderers in scripts/english_renderers.txt used to run here, in
+# locked order, rewriting each of those files from Portuguese into English for
+# the length of the build and putting the Portuguese back afterwards. They have
+# no work left: the English they produced was written into the source, so a
+# renderer run against it now finds none of the Portuguese markers it asserts
+# and fails. The files stay, and the manifest is still validated, because they
+# are the record of how each scene was translated and by whom.
+#
+# What replaces them is stricter, not looser. The old arrangement guaranteed
+# that 128 reviewed transforms had been applied; the gate below reads every
+# string a player can see and fails on any Portuguese word in any of them,
+# including in files no renderer ever covered.
+if [[ ! -f scripts/english_renderers.txt ]]; then
+    echo "English renderer manifest is missing: scripts/english_renderers.txt" >&2
+    exit 4
+fi
 
 python3 tools/cleanup_region_map_names.py
 
-while IFS= read -r renderer; do
-    [[ -z "$renderer" || "$renderer" == \#* ]] && continue
-    if [[ ! "$renderer" =~ ^render_[A-Za-z0-9_]+\.py$ ]]; then
-        echo "Invalid English renderer manifest entry: $renderer" >&2
-        exit 4
-    fi
-    python3 "scripts/$renderer" --in-place
-done < scripts/english_renderers.txt
-
-# These gates run after every reviewed overlay has been applied and before the
-# compiler is allowed to emit an official ROM.
+# These gates run on the tree the compiler is about to read.
 python3 scripts/check_english_only_policy.py
 python3 scripts/check_arauna_story_coverage.py
 # The ROM being built is this rendered tree, so this is where a line too wide

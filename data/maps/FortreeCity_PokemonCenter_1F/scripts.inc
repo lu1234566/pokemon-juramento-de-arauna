@@ -30,8 +30,8 @@ FortreeCity_PokemonCenter_1F_EventScript_Boy::
 FortreeCity_PokemonCenter_1F_Text_GoToSafariZone:
 	.string "Hey, are you putting a POKéDEX\n"
 	.string "together?\p"
-	.string "Then visit the RESERVA ARAUNA. You may\n"
-	.string "find new things there.$"
+	.string "Then visit the ARAUNA PRESERVE.\n"
+	.string "You may find new things there.$"
 
 FortreeCity_PokemonCenter_1F_Text_RecordCornerIsNeat:
 	.string "Have you used the RECORD CORNER?\p"
