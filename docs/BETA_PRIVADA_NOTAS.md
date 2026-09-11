@@ -47,9 +47,12 @@ Nada disto é regressão: são frentes que ainda não foram feitas.
   e os do Vale do Silêncio. Os pacotes de mapa declaram essas frentes como
   pendentes.
 - **Cenas S09 a S13** da Encruzilhada.
-- **Idioma misto.** Cerca de 5% das falas estão em português e o resto em
-  inglês, com cinquenta arquivos misturando os dois no mesmo script. Não é bug
-  de build: a tradução está parcial.
+- ~~**Idioma misto.**~~ Resolvido. A ROM é inteiramente em inglês: 834 falas
+  em 115 arquivos foram traduzidas, o vocabulário do mundo foi unificado
+  (`docs/GLOSSARIO_EN.md`) e um portão lê as 37.265 falas visíveis e falha
+  se qualquer palavra em português voltar. Nomes próprios — lugares, pessoas
+  e criaturas — continuam como são; é a única coisa que a ROM ainda escreve
+  em português, por escolha.
 - **Quatro sprites fora de escala.** A mãe do protagonista (25px), a
   recepcionista de link (27px), a enfermeira da sala de união (27px) e o Dusclops
   do overworld (26px), contra os 20 a 21 da vanilla. Não há arte de substituição
