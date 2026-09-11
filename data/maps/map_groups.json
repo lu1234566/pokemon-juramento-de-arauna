@@ -696,6 +696,9 @@
     "Arauna_Anahi_Equipamentos",
     "Arauna_CasaUivo_Refugio",
     "Arauna_CasaUivo_Sala",
-    "Arauna_CasaUivo_Memorias"
+    "Arauna_CasaUivo_Memorias",
+    "Arauna_CasaFogueira_Entrada",
+    "Arauna_CasaFogueira_Memorial",
+    "Arauna_CasaFogueira_Salao"
   ]
 }

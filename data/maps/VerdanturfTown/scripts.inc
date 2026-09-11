@@ -91,8 +91,8 @@ VerdanturfTown_Text_MakeBattleTentDebut:
 	.string "debut in this town.$"
 
 VerdanturfTown_Text_GuyTryingToBustThroughCave:
-	.string "Did you see the cave next to the\n"
-	.string "POKéMON MART?\p"
+	.string "Did you see the cave beyond\n"
+	.string "the stone bridge?\p"
 	.string "There's a guy in there who's trying to\n"
 	.string "bust up boulders so he can bust out\l"
 	.string "through to the other side.\p"
@@ -101,8 +101,8 @@ VerdanturfTown_Text_GuyTryingToBustThroughCave:
 	.string "SERRA DO UIVO.$"
 
 VerdanturfTown_Text_EasyToGetToRustboroNow:
-	.string "That cave next to the POKéMON MART is\n"
-	.string "now a tunnel to the other side.\p"
+	.string "The cave beyond the stone bridge\n"
+	.string "now leads through the hills.\p"
 	.string "It's great--it's easy to go shop for\n"
 	.string "new HORIZONTE products in\l"
 	.string "SERRA DO UIVO now.$"

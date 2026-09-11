@@ -1070,3 +1070,6 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Arauna_CasaUivo_Refugio/scripts.inc"
 	.include "data/maps/Arauna_CasaUivo_Sala/scripts.inc"
 	.include "data/maps/Arauna_CasaUivo_Memorias/scripts.inc"
+	.include "data/maps/Arauna_CasaFogueira_Entrada/scripts.inc"
+	.include "data/maps/Arauna_CasaFogueira_Memorial/scripts.inc"
+	.include "data/maps/Arauna_CasaFogueira_Salao/scripts.inc"

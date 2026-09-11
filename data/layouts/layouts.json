@@ -14,20 +14,20 @@
     {
       "id": "LAYOUT_SLATEPORT_CITY",
       "name": "SlateportCity_Layout",
-      "width": 40,
-      "height": 60,
+      "width": 52,
+      "height": 40,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Slateport",
+      "secondary_tileset": "gTileset_AraunaPortoSal",
       "border_filepath": "data/layouts/SlateportCity/border.bin",
       "blockdata_filepath": "data/layouts/SlateportCity/map.bin"
     },
     {
       "id": "LAYOUT_MAUVILLE_CITY",
       "name": "MauvilleCity_Layout",
-      "width": 40,
-      "height": 20,
+      "width": 50,
+      "height": 38,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Mauville",
+      "secondary_tileset": "gTileset_AraunaEncruzilhada",
       "border_filepath": "data/layouts/MauvilleCity/border.bin",
       "blockdata_filepath": "data/layouts/MauvilleCity/map.bin"
     },
@@ -144,10 +144,10 @@
     {
       "id": "LAYOUT_VERDANTURF_TOWN",
       "name": "VerdanturfTown_Layout",
-      "width": 20,
-      "height": 20,
+      "width": 30,
+      "height": 24,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Mauville",
+      "secondary_tileset": "gTileset_AraunaValeSilencio",
       "border_filepath": "data/layouts/VerdanturfTown/border.bin",
       "blockdata_filepath": "data/layouts/VerdanturfTown/map.bin"
     },
@@ -4590,6 +4590,36 @@
       "secondary_tileset": "gTileset_AraunaPampaCentro",
       "border_filepath": "data/layouts/Arauna_Pampa_PokemonCenter_2F/border.bin",
       "blockdata_filepath": "data/layouts/Arauna_Pampa_PokemonCenter_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_CASA_FOGUEIRA_ENTRADA",
+      "name": "Arauna_CasaFogueira_Entrada_Layout",
+      "width": 15,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaFogueira",
+      "border_filepath": "data/layouts/Arauna_CasaFogueira_Entrada/border.bin",
+      "blockdata_filepath": "data/layouts/Arauna_CasaFogueira_Entrada/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_CASA_FOGUEIRA_MEMORIAL",
+      "name": "Arauna_CasaFogueira_Memorial_Layout",
+      "width": 15,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaFogueira",
+      "border_filepath": "data/layouts/Arauna_CasaFogueira_Memorial/border.bin",
+      "blockdata_filepath": "data/layouts/Arauna_CasaFogueira_Memorial/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_CASA_FOGUEIRA_SALAO",
+      "name": "Arauna_CasaFogueira_Salao_Layout",
+      "width": 15,
+      "height": 14,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaFogueira",
+      "border_filepath": "data/layouts/Arauna_CasaFogueira_Salao/border.bin",
+      "blockdata_filepath": "data/layouts/Arauna_CasaFogueira_Salao/map.bin"
     }
   ]
 }

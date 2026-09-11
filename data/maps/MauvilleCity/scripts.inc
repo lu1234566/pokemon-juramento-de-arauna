@@ -178,7 +178,7 @@ MauvilleCity_EventScript_ScottApproachPlayerNorth::
 	return
 
 MauvilleCity_EventScript_ScottApproachPlayerEast::
-	setobjectxyperm LOCALID_MAUVILLE_SCOTT, 12, 13
+	setobjectxyperm LOCALID_MAUVILLE_SCOTT, 12, 21
 	addobject LOCALID_MAUVILLE_SCOTT
 	applymovement LOCALID_MAUVILLE_SCOTT, MauvilleCity_Movement_ScottApproachPlayerEast
 	waitmovement 0
@@ -629,3 +629,12 @@ MauvilleCity_Text_ExplainTV:
 
 MauvilleCity_Text_BeenCheckingOutTV:
 	.string "Hi, have you been checking out TVs?$"
+
+@ Encruzilhada V2: spatial hearth-house landmark; no story flags.
+MauvilleCity_EventScript_CasaFogueiraSign::
+	msgbox MauvilleCity_Text_CasaFogueiraSign, MSGBOX_SIGN
+	end
+
+MauvilleCity_Text_CasaFogueiraSign:
+	.string "CASA DA FOGUEIRA\n"
+	.string "A place to gather and remember.$"
