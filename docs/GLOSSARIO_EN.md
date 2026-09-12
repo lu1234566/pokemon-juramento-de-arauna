@@ -61,6 +61,35 @@ folklore and the memory loss in one term.
 | PASSE DO CIRCUITO | CIRCUIT PASS |
 | TORRE DE BATALHA | BATTLE TOWER |
 | INSÍGNIA | BADGE |
+| ENCOMENDA *(the key item)* | HORIZON PARTS |
+| VISOR VERDADE | TRUTH VISOR |
+| CASA DOS TRUQUES | TRICK HOUSE |
+| INSTITUTO DAS AGUAS | WATER INSTITUTE |
+| TENIS DE CORRIDA | RUNNING SHOES |
+| RESPONSAVEL *(on a gym sign)* | LEADER |
+
+### Emerald names the rename had missed
+
+These are not translations. They are places where the game had already decided
+on an Arauna name and some corner of the text had never been told.
+
+| Emerald | Arauna |
+|---|---|
+| TEAM AQUA | HORIZON |
+| TEAM MAGMA | the REMEMBRANCERS |
+| AQUA HIDEOUT | HORIZON HIDEOUT |
+| MAGMA HIDEOUT | ASH HIDEOUT |
+| MAGMA EMBLEM | ASH EMBLEM |
+| BATTLE FRONTIER | BATTLE CIRCUIT |
+| FRONTIER PASS | CIRCUIT PASS |
+| FRONTIER BRAIN | CIRCUIT MASTER |
+| SAFARI ZONE | ARAUNA PRESERVE |
+| HOENN | ARAUNA |
+| WALLY | VAL |
+
+The faction names need an article in English where the Emerald ones did not.
+"That TEAM MAGMA" is fine and "that REMEMBRANCERS" is not, so the lines that
+inherited vanilla's phrasing say *the* REMEMBRANCERS.
 
 ### Badges
 
