@@ -2279,13 +2279,12 @@ MatchCall_Text_Glacia::
 MatchCall_Text_Drake::
 	.string "TIBURCIO: That voice… {PLAYER}, is it?\n"
 	.string "You sound well…\p"
-	.string "I understand that there is now\n"
-	.string "a facility called the BATTLE\l"
-	.string "FRONTIER that tests the skills of\l"
-	.string "TRAINERS.\p"
+	.string "I understand that there is now a\n"
+	.string "facility called the BATTLE CIRCUIT\l"
+	.string "that tests the skills of TRAINERS.\p"
 	.string "However, if you wish to have real\n"
-	.string "battles, there is no substitute for\l"
-	.string "the POKéMON LEAGUE!\p"
+	.string "battles, there is no substitute for the\l"
+	.string "POKéMON LEAGUE!\p"
 	.string "Don't you agree, {PLAYER}?$"
 
 MatchCall_Text_Wallace::

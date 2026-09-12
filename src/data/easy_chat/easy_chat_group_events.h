@@ -26,7 +26,7 @@ const u8 gEasyChatWord_Tower[] = _("TOWER");
 const u8 gEasyChatWord_Union[] = _("UNION");
 const u8 gEasyChatWord_Room[] = _("ROOM");
 const u8 gEasyChatWord_Wireless[] = _("WIRELESS");
-const u8 gEasyChatWord_Frontier[] = _("FRONTIER");
+const u8 gEasyChatWord_Frontier[] = _("CIRCUIT");
 
 const struct EasyChatWordInfo gEasyChatGroup_Events[] = {
     [EC_INDEX(EC_WORD_APPEAL)] =

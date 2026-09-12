@@ -354,7 +354,7 @@ BattleFrontier_OutsideWest_Text_BestOutOfAllMyFriends:
 BattleFrontier_OutsideWest_Text_CantFindBattleTower:
 	.string "I want to go to the BATTLE TOWER,\n"
 	.string "but I can't find it even though I have\l"
-	.string "a map of the BATTLE FRONTIER.\p"
+	.string "a map of the BATTLE CIRCUIT.\p"
 	.string "This place is just too big!$"
 
 BattleFrontier_OutsideWest_Text_GotSeasickOnWayHere:
@@ -369,7 +369,7 @@ BattleFrontier_OutsideWest_Text_OnlyToughTrainersBroughtHere:
 	.string "Only those TRAINERS who've been\n"
 	.string "recognized as tough are brought here.\p"
 	.string "That's why many TRAINERS don't even\n"
-	.string "know about the BATTLE FRONTIER.$"
+	.string "know about the BATTLE CIRCUIT.$"
 
 BattleFrontier_OutsideWest_Text_SureWeCanChallengeWithNoMons:
 	.string "Hey, bro…\p"
@@ -447,10 +447,10 @@ BattleFrontier_OutsideWest_Text_NothingHereNotLongAgo:
 	.string "I'll bring my mother out to see this.$"
 
 BattleFrontier_OutsideWest_Text_FinallyArrivedAtFrontier:
-	.string "I've finally arrived at the BATTLE\n"
-	.string "FRONTIER!\p"
-	.string "I'm sure to grab attention with\n"
-	.string "my looks and ability!$"
+	.string "I've finally arrived at the\n"
+	.string "BATTLE CIRCUIT!\p"
+	.string "I'm sure to grab attention with my looks\n"
+	.string "and ability!$"
 
 BattleFrontier_OutsideWest_Text_SquareFilledWithToughPeople:
 	.string "Munch, munch…\p"
@@ -510,7 +510,7 @@ BattleFrontier_OutsideWest_Text_FansOverThereUsedToBeTrainers:
 BattleFrontier_OutsideWest_Text_MonWithLongTailInFrontier:
 	.string "I heard a rumor that someone saw\n"
 	.string "a POKéMON with an unusually long tail\l"
-	.string "somewhere in the BATTLE FRONTIER.\p"
+	.string "somewhere in the BATTLE CIRCUIT.\p"
 	.string "It must be adorable. I'm sure of it…\p"
 	.string "Oh, challenges can wait. I feel driven\n"
 	.string "to find the delightful creature!$"

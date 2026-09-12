@@ -2365,10 +2365,11 @@ TVSecretBaseSecrets_Text_UsedJumpMat::
 
 gTVSafariFanClubText00::
 	.string "SAFARI FAN CLUB!\p"
-	.string "REPORTER: All right, mates!\n"
-	.string "Tossing them SAFARI BALLS, are you?\p"
-	.string "You can bet I am here in the SAFARI\n"
-	.string "ZONE chock-full of amazing POKéMON!\p"
+	.string "REPORTER: All right, mates! Tossing them\n"
+	.string "SAFARI BALLS, are you?\p"
+	.string "You can bet I am here in the\n"
+	.string "ARAUNA PRESERVE chock-full of amazing\l"
+	.string "POKéMON!\p"
 	.string "Let's get with it and have a chat with\n"
 	.string "this good fellow of a SAFARI GUIDE!\p"
 	.string "All right, mate, how are the visiting\n"

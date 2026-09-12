@@ -564,7 +564,7 @@ LilycoveCity_Harbor_Text_SlateportItIs:
 	.string "PORTO DO SAL it is, then!$"
 
 LilycoveCity_Harbor_Text_BattleFrontierItIs:
-	.string "BATTLE FRONTIER it is, then!$"
+	.string "BATTLE CIRCUIT it is, then!$"
 
 LilycoveCity_Harbor_Text_PleaseBoard:
 	.string "Please board the ferry and wait for\n"

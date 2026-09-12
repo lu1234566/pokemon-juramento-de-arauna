@@ -48,7 +48,7 @@ gBirchDexRatingText_LessThan90::
 	.string "Your work is impressive!$"
 
 gBirchDexRatingText_LessThan100::
-	.string "Have you visited the SAFARI ZONE?\p"
+	.string "Have you visited the ARAUNA PRESERVE?\p"
 	.string "Some POKéMON can only be found in\n"
 	.string "there.$"
 
