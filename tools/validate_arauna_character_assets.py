@@ -154,7 +154,43 @@ def frame_bbox(frame: tuple[int, ...]) -> tuple[int, int, int, int] | None:
     return min(xs), min(ys), max(xs) + 1, max(ys) + 1
 
 
-def validate_overworld(pixels: tuple[int, ...], metadata: PngMetadata) -> None:
+# Sheets that already ship with a walking pose identical to the standing one.
+# The engine plays a step as pose-A, idle, pose-B, idle, so a pose that is the
+# idle frame means the character stands still for three quarters of every step
+# and kicks once. It reads as a limp, and it is invisible in the sheet itself --
+# which is why it got this far.
+#
+# Each entry is a promise to fix, not a verdict that it is fine. Delete the
+# line when the sheet is redrawn; anything not listed here fails.
+KNOWN_DEAD_WALK_POSES = {
+    "graphics/object_events/pics/people/arauna/admin_archive.png": {"south", "north"},
+    "graphics/object_events/pics/people/arauna/admin_field.png": {"south"},
+    "graphics/object_events/pics/people/ciro/phase1_brendan.png": {"south", "west"},
+    "graphics/object_events/pics/people/ciro/phase1_may.png": {"south", "west"},
+    "graphics/object_events/pics/people/ciro/phase2.png": {"south", "north"},
+    "graphics/object_events/pics/people/ciro/phase3.png": {"south", "north"},
+    "graphics/object_events/pics/people/dona_zila.png": {"south", "north", "west"},
+    "graphics/object_events/pics/people/elite_four/drake.png": {"south", "north"},
+    "graphics/object_events/pics/people/elite_four/glacia.png": {"north"},
+    "graphics/object_events/pics/people/frontier_brains/anabel.png": {"south"},
+    "graphics/object_events/pics/people/frontier_brains/brandon.png": {"north"},
+    "graphics/object_events/pics/people/frontier_brains/noland.png": {"north"},
+    "graphics/object_events/pics/people/frontier_brains/tucker.png": {"north", "west"},
+    "graphics/object_events/pics/people/gym_leaders/flannery.png": {"north"},
+    "graphics/object_events/pics/people/gym_leaders/roxanne.png": {"north"},
+    "graphics/object_events/pics/people/hot_springs_old_woman.png": {"south", "north", "west"},
+    "graphics/object_events/pics/people/prof_birch.png": {"north", "west"},
+    "graphics/object_events/pics/people/team_aqua/aqua_member_f.png": {"north"},
+    "graphics/object_events/pics/people/team_aqua/aqua_member_m.png": {"south"},
+    "graphics/object_events/pics/people/team_aqua/archie.png": {"west"},
+    "graphics/object_events/pics/people/team_magma/magma_member_f.png": {"north"},
+    "graphics/object_events/pics/people/team_magma/maxie.png": {"north"},
+    "graphics/object_events/pics/people/wallace.png": {"south"},
+}
+
+
+def validate_overworld(pixels: tuple[int, ...], metadata: PngMetadata,
+                       rel_path: str = "") -> None:
     if metadata.width != 144 or metadata.height != 32:
         raise ValueError("sheet must be 144x32, nine 16x32 frames")
 
@@ -169,10 +205,20 @@ def validate_overworld(pixels: tuple[int, ...], metadata: PngMetadata) -> None:
     if len({frames[0], frames[1], frames[2]}) != 3:
         raise ValueError("the south, north and west idle frames must be distinct")
     # A walk pair that does not alternate is a character gliding along with
-    # both feet planted.
-    for first, second, direction in ((3, 4, "south"), (5, 6, "north"), (7, 8, "west")):
+    # both feet planted. A pose that is the idle frame is the same fault seen
+    # from the other side: the engine plays pose-A, idle, pose-B, idle, so the
+    # step loses half its travel and the character limps.
+    excused = KNOWN_DEAD_WALK_POSES.get(rel_path, set())
+    for first, second, idle, direction in ((3, 4, 0, "south"),
+                                           (5, 6, 1, "north"),
+                                           (7, 8, 2, "west")):
+        if direction in excused:
+            continue
         if frames[first] == frames[second]:
             raise ValueError(f"the {direction} walking frames do not alternate")
+        if frames[first] == frames[idle] or frames[second] == frames[idle]:
+            raise ValueError(f"a {direction} walking frame is a copy of the "
+                             f"{direction} standing frame, so the step is half dead")
 
     top_edges = {box[1] for box in boxes if box is not None}
     foot_edges = {box[3] for box in boxes if box is not None}
@@ -347,7 +393,7 @@ def main() -> int:
             pal_path = REPO_ROOT / entry["overworld_palette"]
             try:
                 metadata, pixels = validate_indexed_png(path, (144, 32))
-                validate_overworld(pixels, metadata)
+                validate_overworld(pixels, metadata, entry["overworld"])
                 palette = parse_jasc_palette(pal_path)
                 if palette != metadata.palette:
                     raise ValueError(f"{entry['overworld_palette']} does not match "
