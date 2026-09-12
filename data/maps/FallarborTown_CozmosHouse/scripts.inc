@@ -76,9 +76,8 @@ FallarborTown_CozmosHouse_Text_IsThatMeteoriteMayIHaveIt:
 	.string "Oh! Hah?\p"
 	.string "That item…\p"
 	.string "Could it be?\p"
-	.string "Is it the METEORITE that\n"
-	.string "REMEMBRANCERS took from\l"
-	.string "RUINAS DA QUEDA?\p"
+	.string "Is it the METEORITE the REMEMBRANCERS\n"
+	.string "took from RUINAS DA QUEDA?\p"
 	.string "Please, may I have it?\p"
 	.string "I'm not asking for it for free. How\n"
 	.string "about in exchange for this TM?$"
@@ -106,7 +105,7 @@ FallarborTown_CozmosHouse_Text_MayIHaveMeteorite:
 FallarborTown_CozmosHouse_Text_CozmoWentToMeteorFalls:
 	.string "PROF. COZMO went off to\n"
 	.string "RUINAS DA QUEDA on ROUTE 114 with some\l"
-	.string "people from REMEMBRANCERS.$"
+	.string "of the REMEMBRANCERS.$"
 
 FallarborTown_CozmosHouse_Text_FeelSorryForCozmo:
 	.string "Poor PROF. COZMO…\n"

@@ -1640,10 +1640,11 @@ SootopolisCity_Text_HaventYouScaledSkyPillar:
 
 SootopolisCity_Text_AquaMagmaDidntMeanHarm:
 	.string "AMALIA: {PLAYER}{KUN}…\p"
-	.string "The leaders of REMEMBRANCERS and AQUA,\n"
-	.string "I don't think they meant harm.\p"
-	.string "It wouldn't hurt to hear what they\n"
-	.string "have to say for themselves.$"
+	.string "The leaders of the REMEMBRANCERS and\n"
+	.string "of HORIZON, I don't think either of them\l"
+	.string "meant harm.\p"
+	.string "It wouldn't hurt to hear what they have\n"
+	.string "to say for themselves.$"
 
 SootopolisCity_Text_ThankYouForHelpAcceptThis:
 	.string "AMALIA: Arauna has lived on half the\n"

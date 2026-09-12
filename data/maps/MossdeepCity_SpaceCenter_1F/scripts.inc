@@ -332,11 +332,10 @@ MossdeepCity_SpaceCenter_1F_Text_DidPokemonComeFromSpace:
 	.string "from space. Could it be true?$"
 
 MossdeepCity_SpaceCenter_1F_Text_AquaShouldBeatMagma:
-	.string "HORIZON CONSORTIUM should take care\n"
-	.string "of REMEMBRANCERS!\p"
-	.string "But if they did that,\n"
-	.string "HORIZON CONSORTIUM will become bold\l"
-	.string "and brazen, won't they?$"
+	.string "The HORIZON CONSORTIUM should take\n"
+	.string "care of the REMEMBRANCERS!\p"
+	.string "But if they did that, HORIZON would only\n"
+	.string "get bolder, wouldn't they?$"
 
 MossdeepCity_SpaceCenter_1F_Text_RocketsBoggleMyMind:
 	.string "A giant chunk of metal bursts through\n"

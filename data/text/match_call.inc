@@ -2526,12 +2526,12 @@ MatchCall_Text_Brendan8::
 
 MatchCall_Text_Brendan9::
 	.string "CIRO: Hey there, {PLAYER}.\p"
-	.string "I was on my way back to the hot\n"
-	.string "spring in SERTAO DE DENTRO.\p"
+	.string "I was on my way back to the hot spring\n"
+	.string "in SERTAO DE DENTRO.\p"
 	.string "But around PASSO CORTADO, I ran into\n"
 	.string "some nasty-looking characters.\p"
-	.string "Those creeps…\n"
-	.string "I think they were TEAM MAGMA.$"
+	.string "Those creeps… I think they were\n"
+	.string "REMEMBRANCERS.$"
 
 MatchCall_Text_Brendan10::
 	.string "CIRO: Hi, {PLAYER}!\n"
@@ -2671,10 +2671,10 @@ MatchCall_Text_Scott4::
 	.string "SCOTT: Hi, {PLAYER}{KUN}!\p"
 	.string "I've been hearing about these odd\n"
 	.string "gangs being a nuisance.\p"
-	.string "TEAM MAGMA and HORIZON CONSORTIUM,\n"
-	.string "I think they were.\p"
-	.string "I would think there'd be some\n"
-	.string "skilled TRAINERS among them.\p"
+	.string "The REMEMBRANCERS and the HORIZON\n"
+	.string "CONSORTIUM, I think they were.\p"
+	.string "I would think there'd be some skilled\n"
+	.string "TRAINERS among them.\p"
 	.string "…But if they're thugs…$"
 
 MatchCall_Text_Scott5::
@@ -2742,10 +2742,10 @@ MatchCall_Text_Norman4::
 
 MatchCall_Text_Norman5::
 	.string "DAD: Oh, hi, {PLAYER}!\p"
-	.string "What's that? MAGMA EMBLEM?\n"
-	.string "I don't know what that's about.\p"
-	.string "But with a name like that, it may\n"
-	.string "be somehow linked to a volcano!$"
+	.string "What's that? ASH EMBLEM? I don't know\n"
+	.string "what that's about.\p"
+	.string "But with a name like that, it may be\n"
+	.string "somehow linked to a volcano!$"
 
 MatchCall_Text_Norman_Preparing::
 	.string "DAD: Hiyah! Haah! Dwah!\p"

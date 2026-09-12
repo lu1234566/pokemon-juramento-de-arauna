@@ -239,7 +239,7 @@ MeteorFalls_1F_1R_Text_WithThisMeteorite:
 MeteorFalls_1F_1R_Text_DontExpectMercyFromMagma:
 	.string "Heh?\p"
 	.string "I don't know who you are, but if you get\n"
-	.string "in the way of REMEMBRANCERS, don't\l"
+	.string "in the way of the REMEMBRANCERS, don't\l"
 	.string "expect any mercy!$"
 
 MeteorFalls_1F_1R_Text_HoldItRightThereMagma:
@@ -255,8 +255,8 @@ MeteorFalls_1F_1R_Text_BeSeeingYouTeamAqua:
 	.string "Heh, it doesn't matter!\p"
 	.string "We've got the METEORITE, so off to\n"
 	.string "SERRA DA CINZA we go!\p"
-	.string "Hehehe! Be seeing you, you TEAM\n"
-	.string "AQUA dingbats!$"
+	.string "Hehehe! Be seeing you, you HORIZON\n"
+	.string "dingbats!$"
 
 MeteorFalls_1F_1R_Text_ArchieSeenYouBefore:
 	.string "OTACILIO: Preserving everything is not\n"
@@ -281,21 +281,20 @@ MeteorFalls_1F_1R_Text_ArchieFarewell:
 	.string "just because it happened.$"
 
 MeteorFalls_1F_1R_Text_MeetProfCozmo:
-	.string "I… I'm COZMO…\n"
-	.string "I'm a PROFESSOR…\p"
-	.string "REMEMBRANCERS asked me to guide them\n"
-	.string "to RUINAS DA QUEDA…\p"
-	.string "But they tricked me.\n"
-	.string "They even took my METEORITE away…\p"
-	.string "And then another similar bunch,\n"
-	.string "HORIZON CONSORTIUM showed up.\p"
-	.string "After that…\n"
-	.string "I don't understand any of it.\p"
-	.string "But that REMEMBRANCERS…\p"
+	.string "I… I'm COZMO… I'm a PROFESSOR…\p"
+	.string "The REMEMBRANCERS asked me to guide\n"
+	.string "them to RUINAS DA QUEDA…\p"
+	.string "But they tricked me. They even took my\n"
+	.string "METEORITE away…\p"
+	.string "And then another similar bunch, the\n"
+	.string "HORIZON CONSORTIUM, showed up.\p"
+	.string "After that… I don't understand any of\n"
+	.string "it.\p"
+	.string "But those REMEMBRANCERS…\p"
 	.string "What are they going to do with that\n"
 	.string "METEORITE at SERRA DA CINZA?$"
 
 MeteorFalls_1F_1R_Text_WhatsTeamMagmaDoingAtMtChimney:
-	.string "PROF. COZMO: But that REMEMBRANCERS…\p"
+	.string "PROF. COZMO: But those REMEMBRANCERS…\p"
 	.string "What are they going to do with that\n"
 	.string "METEORITE at SERRA DA CINZA?$"

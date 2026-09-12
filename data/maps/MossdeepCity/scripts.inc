@@ -344,13 +344,13 @@ MossdeepCity_Text_SpaceCenterLaunchingRockets:
 	.string "launching huge rockets.$"
 
 MossdeepCity_Text_MossdeepTargetedByMagma:
-	.string "I heard from a SAILOR buddy that\n"
+	.string "I heard from a SAILOR buddy that the\n"
 	.string "HORIZON CONSORTIUM set up shop in\l"
 	.string "BAIA DAS LUZES.\p"
 	.string "I also heard that someone came along\n"
 	.string "and wiped the floor with them!\p"
 	.string "But MISSOES DO CEU here's been\n"
-	.string "targeted by that REMEMBRANCERS.\p"
+	.string "targeted by the REMEMBRANCERS.\p"
 	.string "If you want to know what they're up to,\n"
 	.string "go visit the SPACE CENTER.$"
 

@@ -230,9 +230,10 @@ RustboroCity_DevonCorp_3F_Text_MrStoneExplainPokenavRestUp:
 	.string "You can check the locations of\n"
 	.string "PORTO DAS REDES and PORTO DO SAL\l"
 	.string "easily!\p"
-	.string "By the way, I've heard that sinister\n"
-	.string "criminals--MAGMA and AQUA, I believe--\l"
-	.string "have been making trouble far and wide.\p"
+	.string "By the way, I've heard that two\n"
+	.string "outfits--the REMEMBRANCERS and\l"
+	.string "HORIZON, I believe-- have been making\l"
+	.string "trouble far and wide.\p"
 	.string "I think it would be best if you rested\n"
 	.string "up before you go on your way.$"
 
