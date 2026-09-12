@@ -148,7 +148,9 @@ APPROVED_ENGLISH_RENDERERS = set(EXPECTED_RENDERER_ORDER)
 
 LEXICON = ROOT / "scripts" / "portuguese_lexicon.txt"
 ASM_STRING_RE = re.compile(r'(?m)^\s*\.string\s+"((?:[^"\\]|\\.)*)"')
-C_TEXT_RE = re.compile(r'_\(\s*("(?:[^"\\]|\\(?:.|\n))*"(?:\s*"(?:[^"\\]|\\(?:.|\n))*")*)\s*\)')
+# `__()` is the unformatted spelling of the same macro, used where a string is
+# padded to a fixed width. It is text a player can read too.
+C_TEXT_RE = re.compile(r'\b_{1,2}\(\s*("(?:[^"\\]|\\(?:.|\n))*"(?:\s*"(?:[^"\\]|\\(?:.|\n))*")*)\s*\)')
 QUOTED_RE = re.compile(r'"((?:[^"\\]|\\.)*)"')
 CONTROL_RE = re.compile(r"\{[^}]*\}|\\[nlp]|\$")
 WORD_RE = re.compile(r"[A-Za-zÁÂÃÀÇÉÊÍÓÔÕÚáâãàçéêíóôõú]+")

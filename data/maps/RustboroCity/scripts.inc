@@ -1101,7 +1101,7 @@ RustboroCity_Text_HelpMeIWasRobbed:
 	.string "helped me in MATA DA ESPERA!\p"
 	.string "Help me! I was robbed by\n"
 	.string "HORIZON CONSORTIUM! I have to get the\l"
-	.string "ENCOMENDA back!\p"
+	.string "HORIZON PARTS back!\p"
 	.string "If I don't… I'm going to be in serious\n"
 	.string "trouble.$"
 
@@ -1111,7 +1111,7 @@ RustboroCity_Text_ShadyCharacterTookOffTowardsTunnel:
 
 RustboroCity_Text_YouGotItThankYou:
 	.string "Oh! How did it go?\n"
-	.string "The ENCOMENDA?\p"
+	.string "The HORIZON PARTS?\p"
 	.string "You did!\n"
 	.string "You got them back!\p"
 	.string "You really are a great TRAINER!\p"
