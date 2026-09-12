@@ -99,11 +99,30 @@ Os outros não têm original na vanilla: `admin_archive`, `admin_field`,
 
 `hot_springs_old_woman` é da vanilla assim mesmo — não é problema do projeto.
 
-## O que ainda está fora de escala
+## Os três que estão fora de escala — e o que isso causa
 
-Quatro sprites continuam altos demais, e não há arte de substituição para eles
-nos pacotes recebidos: a mãe do protagonista (25 px contra 20–21), a
-recepcionista de link (27), a enfermeira da sala de união (27) e o Dusclops do
-overworld (26). A mãe é a mais visível, porque aparece nos primeiros minutos;
-trocar a arte dela exige antes lhe dar paleta própria, já que hoje ela usa uma
-paleta genérica compartilhada.
+| sprite | corpo | topo (y) | onde | na vanilla era |
+|---|---:|---:|---|---|
+| `mom.png` | 25 px | 6 | 5 mapas, incluindo a primeira casa | 20 px, topo 11 |
+| `link_receptionist.png` | 27 px | 5 | **10 mapas** — o balcão de link de todo CENTRO | 20 px, topo 11 |
+| `dusclops.png` | 26 px | 6 | 1 mapa | 20 px, topo 11 |
+
+Um NPC da vanilla começa a cabeça em y=11. Esses três começam em y=5 ou 6 —
+seis pixels acima de todo o resto do elenco. Num frame de 32 px isso não é só
+"alto demais": **a cabeça invade o tile de cima**, que é exatamente o sprite
+sobreposto que apareceu na screenshot 5 da beta.
+
+Nenhum dos três tem arte de substituição nos pacotes recebidos. A recepcionista
+é a de maior exposição, porque está em dez mapas; a mãe é a mais visível,
+porque aparece nos primeiros minutos. Trocar a arte da mãe exige antes lhe dar
+paleta própria — hoje ela usa uma paleta genérica compartilhada com outros NPCs.
+
+`union_room_nurse.png` também tem 27 px, mas é arquivo morto: nenhuma
+declaração em `object_event_graphics.h` aponta para ele, e a vanilla nunca teve
+esse arquivo. Não chega à ROM.
+
+## Ao redesenhar, a âncora importa mais que a altura
+
+O frame tem 32 px de altura e o pé fica na base. Se o corpo cresce, ele cresce
+para cima e entra no tile de cima. Por isso a faixa é **corpo 19–21 px com o
+topo em y=10–12**, e não "menos de 25". Duas medidas, não uma.

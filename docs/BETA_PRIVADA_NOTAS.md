@@ -53,12 +53,13 @@ Nada disto é regressão: são frentes que ainda não foram feitas.
   se qualquer palavra em português voltar. Nomes próprios — lugares, pessoas
   e criaturas — continuam como são; é a única coisa que a ROM ainda escreve
   em português, por escolha.
-- **Quatro sprites fora de escala.** A mãe do protagonista (25px), a
-  recepcionista de link (27px), a enfermeira da sala de união (27px) e o Dusclops
-  do overworld (26px), contra os 20 a 21 da vanilla. Não há arte de substituição
-  para eles nos pacotes recebidos. A mãe é o caso mais visível, porque aparece nos
-  primeiros minutos; ela usa uma paleta compartilhada de NPC genérico, então
-  trocar a arte dela exige antes lhe dar paleta própria.
+- **Três sprites fora de escala, e 23 com o passo pela metade.** Medido e
+  escrito em `docs/SPRITES_OVERWORLD.md`. Em resumo: a mãe (25px), a
+  recepcionista de link (27px, em dez mapas) e o Dusclops (26px) começam a
+  cabeça seis pixels acima do resto do elenco e invadem o tile de cima — é o
+  sprite sobreposto da screenshot 5. E em 23 folhas uma das poses de caminhada
+  é cópia da pose parada, então o personagem anda mancando. O QC já recusa
+  isso em folhas novas.
 - **Arcos narrativos.** A visita à Casa do Uivo está implementada, mas o arco
   U03–U11, a batalha, o Selo e as Libras continuam pendentes. A Primeira Câmara
   tem portão e altar funcionando, mas não o Sistema de Vínculos completo.
