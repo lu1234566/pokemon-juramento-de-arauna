@@ -7,9 +7,9 @@ entregou até agora cai fora dela em dois eixos — cor e passo.
 Este arquivo é a faixa medida, não uma opinião. Os números saem dos 94 sheets
 da vanilla que o projeto ainda não tocou.
 
-> **Atualização — lote 01 instalado.** Quinze slots receberam arte nova em
-> 13/09. A cor e o passo entraram na faixa; a escala não. O que mudou e o que
-> continua fora está no fim do arquivo, em *O que o lote 01 resolveu*.
+> **Atualização — lotes 01 e 02 instalados.** Quinze slots receberam arte nova.
+> Os quatro eixos — cor, tons, passo e escala — estão dentro da faixa da
+> vanilla pela primeira vez. Detalhe no fim do arquivo.
 
 ## O diagnóstico, em duas linhas
 
@@ -143,8 +143,9 @@ as quinze paletas exatamente como o manifesto os declara.
 
 Cor e animação entraram na faixa. A escala saiu dela: catorze dos quinze
 ficaram mais altos do que estavam, e a altura extra sobe, porque o pé continua
-na base do quadro. Maira chega a 29 px com o topo em y=2 — nove pixels acima
-da linha onde começa a cabeça de qualquer outro NPC.
+na base do quadro. Maira chegou a 29 px com o topo em y=2 — nove pixels acima
+da linha onde começa a cabeça de qualquer outro NPC. **Isso foi corrigido pelo
+lote 02**, abaixo.
 
 Vale registrar o tamanho real do desvio: das 126 folhas da vanilla, **112 têm
 19 a 21 px** e as quatro que passam disso não são gente parada — são o
@@ -155,3 +156,37 @@ Na prática a leitura melhorou muito mesmo assim, e boa parte da altura extra é
 cabelo e chapéu, não corpo. Mas a cabeça atravessando o tile de cima é o mesmo
 artefato de `mom`, `link_receptionist` e `dusclops`. Se for refazer a escala,
 o alvo é **cortar 3 a 8 px do topo**, não redimensionar a figura inteira.
+
+
+## O lote 02 fechou a escala
+
+Correção dos mesmos 19 personagens, entregue depois do `docs/FEEDBACK_LOTE_02.md`.
+171 de 171 quadros com o topo em y=10 (Amaro em y=11, que já estava certo), pé
+em y=30 e altura 21 px. Nenhum pixel visível acima de y=10.
+
+Conferido contra o que o pacote afirma, e a afirmação se sustenta:
+
+- Os 19 hashes SHA-256 do lote 01 gravados no `baseline.json` batem com os
+  arquivos que estavam instalados, ou seja, a correção partiu exatamente do
+  que estava no jogo.
+- Da linha protegida para baixo (y=13 a y=16, individual por personagem) os
+  pixels são **idênticos byte a byte** ao lote 01. O corpo não foi mexido.
+- Acima dela todos mudaram, menos Amaro, declarado intocado e de fato intocado.
+- Os 17 sprites de batalha e as 15 paletas são byte a byte os mesmos. Só as
+  14 folhas de overworld aparecem como modificadas no git.
+
+Não foi corte: o topo do cabelo não ficou chapado, foi redesenhado com menos
+volume vertical.
+
+### Estado final dos 15 slots
+
+| medida | antes dos lotes | lote 01 | lote 02 | faixa da vanilla |
+|---|---|---|---|---|
+| saturação | 21 – 47, med 33 | 35 – 60, med 47 | 38 – 61, med **47** | 29 – 69 |
+| tons distintos | 9 – 12 | 12 – 15 | 13 – 15, med **15** | 11 – 15 |
+| pose de caminhada morta | 10 dos 15 | nenhuma | **nenhuma** | — |
+| altura do corpo | 21 | 20 – 29, med 24 | **20 – 21** | 19 – 21 |
+| topo do corpo | y=11 | y=2 – 11, med 7 | **y=10 – 11** | y=10 – 12 |
+
+A distribuição de altura do elenco inteiro voltou a ser a da vanilla: p10=19,
+mediana=20, p90=21.

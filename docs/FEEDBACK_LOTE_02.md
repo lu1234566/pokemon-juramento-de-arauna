@@ -1,3 +1,8 @@
+> **ATENDIDO.** O lote 02 cumpriu a regra em 171 de 171 quadros e foi
+> instalado. Este arquivo fica como registro do que foi pedido e do
+> formato que o lote 03 deve seguir — a seção 1 (*não mexa*) continua
+> valendo, e as pendências da seção 5 e 6 continuam abertas.
+
 # Feedback do lote 01 — o que mudar no lote 02
 
 Lote 01 instalado, compilado e conferido no jogo. **Um defeito só, e é de
