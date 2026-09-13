@@ -163,8 +163,6 @@ def frame_bbox(frame: tuple[int, ...]) -> tuple[int, int, int, int] | None:
 # Each entry is a promise to fix, not a verdict that it is fine. Delete the
 # line when the sheet is redrawn; anything not listed here fails.
 KNOWN_DEAD_WALK_POSES = {
-    "graphics/object_events/pics/people/arauna/admin_archive.png": {"south", "north"},
-    "graphics/object_events/pics/people/arauna/admin_field.png": {"south"},
     "graphics/object_events/pics/people/ciro/phase1_brendan.png": {"south", "west"},
     "graphics/object_events/pics/people/ciro/phase1_may.png": {"south", "west"},
     "graphics/object_events/pics/people/ciro/phase2.png": {"south", "north"},
@@ -172,20 +170,12 @@ KNOWN_DEAD_WALK_POSES = {
     "graphics/object_events/pics/people/dona_zila.png": {"south", "north", "west"},
     "graphics/object_events/pics/people/elite_four/drake.png": {"south", "north"},
     "graphics/object_events/pics/people/elite_four/glacia.png": {"north"},
-    "graphics/object_events/pics/people/frontier_brains/anabel.png": {"south"},
-    "graphics/object_events/pics/people/frontier_brains/brandon.png": {"north"},
-    "graphics/object_events/pics/people/frontier_brains/noland.png": {"north"},
-    "graphics/object_events/pics/people/frontier_brains/tucker.png": {"north", "west"},
     "graphics/object_events/pics/people/gym_leaders/flannery.png": {"north"},
     "graphics/object_events/pics/people/gym_leaders/roxanne.png": {"north"},
     "graphics/object_events/pics/people/hot_springs_old_woman.png": {"south", "north", "west"},
     "graphics/object_events/pics/people/prof_birch.png": {"north", "west"},
-    "graphics/object_events/pics/people/team_aqua/aqua_member_f.png": {"north"},
-    "graphics/object_events/pics/people/team_aqua/aqua_member_m.png": {"south"},
     "graphics/object_events/pics/people/team_aqua/archie.png": {"west"},
-    "graphics/object_events/pics/people/team_magma/magma_member_f.png": {"north"},
     "graphics/object_events/pics/people/team_magma/maxie.png": {"north"},
-    "graphics/object_events/pics/people/wallace.png": {"south"},
 }
 
 

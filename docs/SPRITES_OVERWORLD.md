@@ -7,6 +7,10 @@ entregou até agora cai fora dela em dois eixos — cor e passo.
 Este arquivo é a faixa medida, não uma opinião. Os números saem dos 94 sheets
 da vanilla que o projeto ainda não tocou.
 
+> **Atualização — lote 01 instalado.** Quinze slots receberam arte nova em
+> 13/09. A cor e o passo entraram na faixa; a escala não. O que mudou e o que
+> continua fora está no fim do arquivo, em *O que o lote 01 resolveu*.
+
 ## O diagnóstico, em duas linhas
 
 **A cor.** Os 32 personagens redesenhados têm saturação média 34. Os mesmos
@@ -15,8 +19,8 @@ elenco novo inteiro cabe entre 26 e 40 — todo mundo na mesma faixa de bege
 acinzentado. De longe eles não se distinguem uns dos outros, e é por isso que
 o mapa vira uma papa.
 
-**O passo.** Em 23 sheets uma das poses de caminhada é cópia exata da pose
-parada. O motor toca `pose A → parado → pose B → parado`; se a pose A é a
+**O passo.** Em 23 sheets uma das poses de caminhada era cópia exata da pose
+parada; o lote 01 corrigiu dez, faltam treze. O motor toca `pose A → parado → pose B → parado`; se a pose A é a
 parada, o personagem fica imóvel em três quartos de cada passo e dá um
 chute só. Dez desses sheets tinham a animação certa na vanilla e a perderam
 na substituição.
@@ -85,14 +89,9 @@ linha dessa lista é uma promessa, não um perdão: **apague a linha quando
 redesenhar o personagem**, e a partir daí o sheet é checado como qualquer
 outro. Qualquer sheet novo já entra checado.
 
-### Os 23, para conferência
+### Os treze que faltam
 
-Dez são regressões — a vanilla animava e a substituição parou de animar:
-
-`prof_birch` (ANAHI), `wallace` (AMALIA), `aqua_member_m`, `aqua_member_f`,
-`archie`, `magma_member_f`, `maxie`, `anabel`, `brandon`, `noland`, `tucker`.
-
-Os outros não têm original na vanilla: `admin_archive`, `admin_field`,
+`prof_birch` (ANAHI), `team_aqua/archie`, `team_magma/maxie`,
 `ciro/phase1_brendan`, `ciro/phase1_may`, `ciro/phase2`, `ciro/phase3`,
 `dona_zila`, `elite_four/drake`, `elite_four/glacia`, `gym_leaders/flannery`,
 `gym_leaders/roxanne`.
@@ -126,3 +125,33 @@ esse arquivo. Não chega à ROM.
 O frame tem 32 px de altura e o pé fica na base. Se o corpo cresce, ele cresce
 para cima e entra no tile de cima. Por isso a faixa é **corpo 19–21 px com o
 topo em y=10–12**, e não "menos de 25". Duas medidas, não uma.
+
+
+## O que o lote 01 resolveu
+
+Quinze slots trocados em 13/09, a partir de `Arauna_Sprites_Nativos_Lote_01`.
+O pacote foi gerado contra o commit `979fb6c1b6` e acertou os quinze destinos e
+as quinze paletas exatamente como o manifesto os declara.
+
+| medida | antes (15 slots) | lote 01 | faixa da vanilla |
+|---|---|---|---|
+| saturação | 21 – 47, med **33** | 35 – 60, med **47** | 29 – 69 |
+| tons distintos | 9 – 12 | 12 – 15, med **15** | 11 – 15 |
+| pose de caminhada morta | 10 dos 15 | **nenhuma** | — |
+| altura do corpo | 21 (certo) | 20 – 29, med **24** | 19 – 21 |
+| topo do corpo | y=11 (certo) | y=2 – 11, med **7** | y=10 – 12 |
+
+Cor e animação entraram na faixa. A escala saiu dela: catorze dos quinze
+ficaram mais altos do que estavam, e a altura extra sobe, porque o pé continua
+na base do quadro. Maira chega a 29 px com o topo em y=2 — nove pixels acima
+da linha onde começa a cabeça de qualquer outro NPC.
+
+Vale registrar o tamanho real do desvio: das 126 folhas da vanilla, **112 têm
+19 a 21 px** e as quatro que passam disso não são gente parada — são o
+`quinty_plump`, as duas bicicletas e a pose de mergulho. Para um NPC humano de
+pé, 19–21 px com o topo em y=10–12 não é recomendação, é o formato.
+
+Na prática a leitura melhorou muito mesmo assim, e boa parte da altura extra é
+cabelo e chapéu, não corpo. Mas a cabeça atravessando o tile de cima é o mesmo
+artefato de `mom`, `link_receptionist` e `dusclops`. Se for refazer a escala,
+o alvo é **cortar 3 a 8 px do topo**, não redimensionar a figura inteira.
