@@ -16,18 +16,18 @@ LilycoveCity_OnLoad:
 	end
 
 LilycoveCity_EventScript_SetWailmerMetatiles::
-	setmetatile 76, 12, METATILE_Lilycove_Wailmer0, TRUE
-	setmetatile 77, 12, METATILE_Lilycove_Wailmer1, TRUE
-	setmetatile 76, 13, METATILE_Lilycove_Wailmer2, TRUE
-	setmetatile 77, 13, METATILE_Lilycove_Wailmer3, TRUE
-	setmetatile 76, 14, METATILE_Lilycove_Wailmer0_Alt, TRUE
-	setmetatile 77, 14, METATILE_Lilycove_Wailmer1_Alt, TRUE
-	setmetatile 76, 15, METATILE_Lilycove_Wailmer2, TRUE
-	setmetatile 77, 15, METATILE_Lilycove_Wailmer3, TRUE
-	setmetatile 77, 16, METATILE_Lilycove_Wailmer0_Alt, TRUE
-	setmetatile 78, 16, METATILE_Lilycove_Wailmer1_Alt, TRUE
-	setmetatile 77, 17, METATILE_Lilycove_Wailmer2, TRUE
-	setmetatile 78, 17, METATILE_Lilycove_Wailmer3, TRUE
+	setmetatile 50, 12, METATILE_Lilycove_Wailmer0, TRUE
+	setmetatile 51, 12, METATILE_Lilycove_Wailmer1, TRUE
+	setmetatile 50, 13, METATILE_Lilycove_Wailmer2, TRUE
+	setmetatile 51, 13, METATILE_Lilycove_Wailmer3, TRUE
+	setmetatile 50, 14, METATILE_Lilycove_Wailmer0_Alt, TRUE
+	setmetatile 51, 14, METATILE_Lilycove_Wailmer1_Alt, TRUE
+	setmetatile 50, 15, METATILE_Lilycove_Wailmer2, TRUE
+	setmetatile 51, 15, METATILE_Lilycove_Wailmer3, TRUE
+	setmetatile 51, 16, METATILE_Lilycove_Wailmer0_Alt, TRUE
+	setmetatile 52, 16, METATILE_Lilycove_Wailmer1_Alt, TRUE
+	setmetatile 51, 17, METATILE_Lilycove_Wailmer2, TRUE
+	setmetatile 52, 17, METATILE_Lilycove_Wailmer3, TRUE
 	return
 
 LilycoveCity_EventScript_BerryGentleman::

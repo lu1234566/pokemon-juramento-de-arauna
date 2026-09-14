@@ -1043,3 +1043,42 @@ const struct Tileset gTileset_AraunaValeSilencio =
     .metatileAttributes = gMetatileAttributes_AraunaValeSilencio,
     .callback = NULL,
 };
+
+// MATA_DO_MEIO_V3_BEGIN
+const struct Tileset gTileset_AraunaMataMeioV3 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaMataMeioV3,
+    .palettes = gTilesetPalettes_AraunaMataMeioV3,
+    .metatiles = gMetatiles_AraunaMataMeioV3,
+    .metatileAttributes = gMetatileAttributes_AraunaMataMeioV3,
+    .callback = InitTilesetAnim_Fortree,
+};
+// MATA_DO_MEIO_V3_END
+
+// BAIA_LUZES_V2_BEGIN
+const struct Tileset gTileset_AraunaBaiaLuzesV2 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaBaiaLuzesV2,
+    .palettes = gTilesetPalettes_AraunaBaiaLuzesV2,
+    .metatiles = gMetatiles_AraunaBaiaLuzesV2,
+    .metatileAttributes = gMetatileAttributes_AraunaBaiaLuzesV2,
+    .callback = InitTilesetAnim_Lilycove,
+};
+// BAIA_LUZES_V2_END
+
+// MISSOES_CEU_V2_BEGIN
+const struct Tileset gTileset_AraunaMissoesCeuV2 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaMissoesCeuV2,
+    .palettes = gTilesetPalettes_AraunaMissoesCeuV2,
+    .metatiles = gMetatiles_AraunaMissoesCeuV2,
+    .metatileAttributes = gMetatileAttributes_AraunaMissoesCeuV2,
+    .callback = InitTilesetAnim_Mossdeep,
+};
+// MISSOES_CEU_V2_END

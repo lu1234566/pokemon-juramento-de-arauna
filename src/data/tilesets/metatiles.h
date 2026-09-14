@@ -265,3 +265,18 @@ const u16 gMetatileAttributes_AraunaFogueira[] = INCBIN_U16("data/tilesets/secon
 
 const u16 gMetatiles_AraunaValeSilencio[] = INCBIN_U16("data/tilesets/secondary/arauna_vale_silencio/metatiles.bin");
 const u16 gMetatileAttributes_AraunaValeSilencio[] = INCBIN_U16("data/tilesets/secondary/arauna_vale_silencio/metatile_attributes.bin");
+
+// MATA_DO_MEIO_V3_BEGIN
+const u16 gMetatiles_AraunaMataMeioV3[] = INCBIN_U16("data/tilesets/secondary/arauna_mata_meio_v3/metatiles.bin");
+const u16 gMetatileAttributes_AraunaMataMeioV3[] = INCBIN_U16("data/tilesets/secondary/arauna_mata_meio_v3/metatile_attributes.bin");
+// MATA_DO_MEIO_V3_END
+
+// BAIA_LUZES_V2_BEGIN
+const u16 gMetatiles_AraunaBaiaLuzesV2[] = INCBIN_U16("data/tilesets/secondary/arauna_baia_luzes_v2/metatiles.bin");
+const u16 gMetatileAttributes_AraunaBaiaLuzesV2[] = INCBIN_U16("data/tilesets/secondary/arauna_baia_luzes_v2/metatile_attributes.bin");
+// BAIA_LUZES_V2_END
+
+// MISSOES_CEU_V2_BEGIN
+const u16 gMetatiles_AraunaMissoesCeuV2[] = INCBIN_U16("data/tilesets/secondary/arauna_missoes_ceu_v2/metatiles.bin");
+const u16 gMetatileAttributes_AraunaMissoesCeuV2[] = INCBIN_U16("data/tilesets/secondary/arauna_missoes_ceu_v2/metatile_attributes.bin");
+// MISSOES_CEU_V2_END
