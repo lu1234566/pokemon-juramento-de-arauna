@@ -18,16 +18,15 @@ MarineCave_End_OnTransition:
 	end
 
 MarineCave_End_EventScript_ShowKyogre::
-	clearflag FLAG_HIDE_MARINE_CAVE_KYOGRE
-	setvar VAR_TEMP_1, 1
+	setflag FLAG_HIDE_MARINE_CAVE_KYOGRE
+	setvar VAR_TEMP_1, 1  @ #382 Iemanja is sensed, not shown with stale Kyogre art
 	return
 
 MarineCave_End_EventScript_Kyogre::
 	lockall
 	applymovement LOCALID_PLAYER, Common_Movement_FaceUp
 	waitmovement 0
-	applymovement LOCALID_MARINE_CAVE_KYOGRE, MarineCave_End_Movement_KyogreApproach
-	waitmovement 0
+	msgbox MarineCave_End_Text_IemanjaPresence, MSGBOX_DEFAULT
 	waitse
 	playmoncry SPECIES_KYOGRE, CRY_MODE_ENCOUNTER
 	delay 40
@@ -69,3 +68,7 @@ MarineCave_End_Movement_KyogreApproach:
 	walk_down_affine
 	step_end
 
+
+MarineCave_End_Text_IemanjaPresence:
+	.string "The water becomes perfectly still.\p"
+	.string "Something older than the tide answers.$"
