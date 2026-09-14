@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 from __future__ import annotations
-import argparse, csv, hashlib, json, re, shutil
+import argparse, csv, hashlib, json, re, shutil, subprocess
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -21,7 +21,7 @@ FAIRY_OVERLAY_FILES = [
     "src/data/battle_anim.h","src/battle_anim_fairy.c","data/battle_anim_scripts.s",
     "src/data/pokemon/arauna_fairy_learnsets.h",
     "src/data/pokemon/level_up_learnset_pointers.h","src/pokemon.c",
-    "tools/arauna/build_movesets.py","src/pokedex.c","src/data/union_room.h",
+    "tools/arauna/build_movesets.py","tools/arauna/validate_fairy_pngs.py","src/pokedex.c","src/data/union_room.h",
     "data/battle_ai_scripts.s","docs/arauna/FAIRY_MOVES_AND_ANIMATIONS.md",
     "docs/arauna/ARAUNA_DEX_ENGINE_MAPPING.csv",
     "graphics/battle_anims/sprites/fairy_spark.png",
@@ -176,6 +176,10 @@ def main():
     write_csv(master,mapping,out/"master/learnsets_386_integrated_fairy.csv")
     generate_c(master,mapping,out/"rom_ready/generated")
     copy_overlay(out)
+    subprocess.run([
+        "python3", str(ROOT/"tools/arauna/validate_fairy_pngs.py"),
+        "--json", str(out/"reports/fairy_png_validation.json")
+    ], check=True)
 
     base_entries=sum(len(x) for x in base.values()); master_entries=sum(len(x) for x in master.values())
     fairy_entries=sum(len(x) for x in fairy.values())
