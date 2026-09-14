@@ -583,12 +583,15 @@ void StartRegiBattle(void)
     switch (species)
     {
     case SPECIES_REGIROCK:
+    case SPECIES_CRAWDAUNT: // #342 Terraao, Desert Ruins
         transitionId = B_TRANSITION_REGIROCK;
         break;
     case SPECIES_REGICE:
+    case SPECIES_CLAYDOL: // #344 Marulho, Island Cave
         transitionId = B_TRANSITION_REGICE;
         break;
     case SPECIES_REGISTEEL:
+    case SPECIES_SOLROCK: // #338 Verdejante, Ancient Tomb
         transitionId = B_TRANSITION_REGISTEEL;
         break;
     default:
