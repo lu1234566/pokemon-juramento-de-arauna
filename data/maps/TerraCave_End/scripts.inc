@@ -71,4 +71,4 @@ TerraCave_End_Movement_GroudonApproach:
 
 TerraCave_End_Text_OxumaraPresence:
 	.string "The stone warms beneath your feet.\p"
-	.string "A ribbon of light coils through the dust.$"
+	.string "Light coils through the dust.$"
