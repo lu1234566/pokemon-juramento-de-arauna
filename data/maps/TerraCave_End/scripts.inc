@@ -18,16 +18,15 @@ TerraCave_End_OnTransition:
 	end
 
 TerraCave_End_EventScript_ShowGroudon::
-	clearflag FLAG_HIDE_TERRA_CAVE_GROUDON
-	setvar VAR_TEMP_1, 1
+	setflag FLAG_HIDE_TERRA_CAVE_GROUDON
+	setvar VAR_TEMP_1, 1  @ #383 Oxumara is sensed, not shown with stale Groudon art
 	return
 
 TerraCave_End_EventScript_Groudon::
 	lockall
 	applymovement LOCALID_PLAYER, Common_Movement_FaceUp
 	waitmovement 0
-	applymovement LOCALID_TERRA_CAVE_GROUDON, TerraCave_End_Movement_GroudonApproach
-	waitmovement 0
+	msgbox TerraCave_End_Text_OxumaraPresence, MSGBOX_DEFAULT
 	waitse
 	playmoncry SPECIES_GROUDON, CRY_MODE_ENCOUNTER
 	delay 40
@@ -69,3 +68,7 @@ TerraCave_End_Movement_GroudonApproach:
 	walk_down_affine
 	step_end
 
+
+TerraCave_End_Text_OxumaraPresence:
+	.string "The stone warms beneath your feet.\p"
+	.string "A ribbon of light coils through the dust.$"
