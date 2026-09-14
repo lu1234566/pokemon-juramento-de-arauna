@@ -24,26 +24,36 @@ BOOSTER={
 "dragon":"ITEM_DRAGON_FANG","dark":"ITEM_BLACK_GLASSES"}
 
 def objects(text):
-    out=[]; i=0
-    while True:
-        i=text.find("{ id:",i)
-        if i<0: break
-        depth=0; q=False; esc=False; j=i
-        while j<len(text):
-            c=text[j]
-            if q:
-                if esc: esc=False
-                elif c=="\\": esc=True
-                elif c=='"': q=False
-            else:
-                if c=='"': q=True
-                elif c=="{": depth+=1
-                elif c=="}":
-                    depth-=1
-                    if depth==0:
-                        j+=1; break
-            j+=1
-        out.append(text[i:j]); i=j
+    """Extract only top-level objects from the POKEDEX array.
+
+    Evolution targets and stats contain nested object literals, so searching for
+    '{ id:' directly incorrectly treats those as Pokémon.
+    """
+    marker=text.index("export const POKEDEX")
+    i=text.index("[",marker)
+    out=[]; square=0; curly=0; q=False; esc=False; obj_start=None
+    while i<len(text):
+        c=text[i]
+        if q:
+            if esc: esc=False
+            elif c=="\\": esc=True
+            elif c=='"': q=False
+        else:
+            if c=='"':
+                q=True
+            elif c=="[":
+                square+=1
+            elif c=="]":
+                square-=1
+                if square==0: break
+            elif c=="{" and square==1:
+                if curly==0: obj_start=i
+                curly+=1
+            elif c=="}" and square==1 and curly:
+                curly-=1
+                if curly==0 and obj_start is not None:
+                    out.append(text[obj_start:i+1]); obj_start=None
+        i+=1
     return out
 
 def field(o,key):
