@@ -57,11 +57,12 @@ DesertRuins_EventScript_CaveEntranceSide::
 DesertRuins_EventScript_Regirock::
 	lock
 	faceplayer
+	msgbox DesertRuins_Text_TerraaoAwakens, MSGBOX_DEFAULT
 	waitse
-	playmoncry SPECIES_REGIROCK, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_CRAWDAUNT, CRY_MODE_ENCOUNTER
 	delay 40
 	waitmoncry
-	setwildbattle SPECIES_REGIROCK, 40
+	setwildbattle SPECIES_CRAWDAUNT, 60  @ #342 Terraao
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 	special StartRegiBattle
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
@@ -79,7 +80,11 @@ DesertRuins_EventScript_DefeatedRegirock::
 	end
 
 DesertRuins_EventScript_RanFromRegirock::
-	setvar VAR_0x8004, SPECIES_REGIROCK
+	setvar VAR_0x8004, SPECIES_CRAWDAUNT
 	goto Common_EventScript_LegendaryFlewAway
 	end
 
+
+DesertRuins_Text_TerraaoAwakens:
+	.string "The buried seal answers.\p"
+	.string "The ground itself begins to breathe.$"
