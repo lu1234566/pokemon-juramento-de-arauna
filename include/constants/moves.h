@@ -357,7 +357,18 @@
 #define MOVE_DOOM_DESIRE 353
 #define MOVE_PSYCHO_BOOST 354
 
-#define MOVES_COUNT 355
+// Arauana Fairy move extension. Damaging Fairy moves remain special under
+// Emerald's type-based physical/special split (TYPE_FAIRY > TYPE_MYSTERY).
+#define MOVE_FAIRY_WIND 355
+#define MOVE_DISARMING_VOICE 356
+#define MOVE_DRAINING_KISS 357
+#define MOVE_DAZZLING_GLEAM 358
+#define MOVE_MOONBLAST 359
+#define MOVE_LUAR_DE_JACI 360
+#define MOVE_JURAMENTO_DE_ARAUANA 361
+#define MOVE_ECLIPSE_DIVINO 362
+
+#define MOVES_COUNT 363
 
 // Used for checks for moves affected by Disable, Mimic, etc.
 #define MOVE_UNAVAILABLE 0xFFFF

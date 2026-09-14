@@ -371,7 +371,15 @@ gBattleAnims_Moves::
 	.4byte Move_WATER_PULSE
 	.4byte Move_DOOM_DESIRE
 	.4byte Move_PSYCHO_BOOST
-	.4byte Move_COUNT @ cannot be reached, because last move is Psycho Boost
+	.4byte Move_FAIRY_WIND
+	.4byte Move_DISARMING_VOICE
+	.4byte Move_DRAINING_KISS
+	.4byte Move_DAZZLING_GLEAM
+	.4byte Move_MOONBLAST
+	.4byte Move_LUAR_DE_JACI
+	.4byte Move_JURAMENTO_DE_ARAUANA
+	.4byte Move_ECLIPSE_DIVINO
+	.4byte Move_COUNT @ sentinel
 
 	.align 2
 gBattleAnims_StatusConditions::
@@ -10760,4 +10768,141 @@ Special_SubstituteToMon:
 
 Special_MonToSubstitute:
 	createvisualtask AnimTask_SwapMonSpriteToFromSubstitute, 2, FALSE
+	end
+
+
+@ -----------------------------------------------------------------------------
+@ Arauana Fairy move animations
+@ PNGs are 4bpp indexed source art. Motion is engine-side so these remain
+@ compact and match the timing/particle language of Emerald's vanilla attacks.
+@ -----------------------------------------------------------------------------
+
+Move_FAIRY_WIND:
+	loadspritegfx ANIM_TAG_FAIRY_WAVE
+	loadspritegfx ANIM_TAG_FAIRY_SPARK
+	playsewithpan SE_M_RAZOR_WIND2, SOUND_PAN_ATTACKER
+	createsprite gFairyWaveSpriteTemplate, ANIM_ATTACKER, 2, 0, -4, 24, 0, 0
+	delay 5
+	createsprite gFairyWaveSpriteTemplate, ANIM_ATTACKER, 2, 4, 4, 22, 0, -4
+	delay 10
+	createsprite gFairySparkSpriteTemplate, ANIM_TARGET, 3, -14, -6, 24, 3
+	createsprite gFairySparkSpriteTemplate, ANIM_TARGET, 3, 10, 5, 26, 2
+	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 1, 0, 10, 1
+	waitforvisualfinish
+	end
+
+Move_DISARMING_VOICE:
+	loadspritegfx ANIM_TAG_FAIRY_WAVE
+	loadspritegfx ANIM_TAG_FAIRY_SPARK
+	playsewithpan SE_M_HEAL_BELL, SOUND_PAN_ATTACKER
+	createsprite gFairyWaveSpriteTemplate, ANIM_ATTACKER, 2, 0, -8, 26, 0, -8
+	delay 4
+	createsprite gFairyWaveSpriteTemplate, ANIM_ATTACKER, 2, 0, 2, 26, 0, 2
+	delay 4
+	createsprite gFairyWaveSpriteTemplate, ANIM_ATTACKER, 2, 0, 10, 26, 0, 10
+	delay 12
+	createsprite gFairySparkSpriteTemplate, ANIM_TARGET, 3, -16, -10, 24, 2
+	createsprite gFairySparkSpriteTemplate, ANIM_TARGET, 3, 14, 2, 24, 3
+	waitforvisualfinish
+	end
+
+Move_DRAINING_KISS:
+	loadspritegfx ANIM_TAG_FAIRY_SPARK
+	loadspritegfx ANIM_TAG_PINK_HEART
+	loadspritegfx ANIM_TAG_ORBS
+	playsewithpan SE_M_ATTRACT, SOUND_PAN_TARGET
+	createsprite gPinkHeartSpriteTemplate, ANIM_TARGET, 3, -128, -22
+	createsprite gPinkHeartSpriteTemplate, ANIM_TARGET, 3, 128, -30
+	createsprite gFairySparkSpriteTemplate, ANIM_TARGET, 4, -8, -8, 22, 2
+	delay 12
+	call AbsorbEffect
+	waitforvisualfinish
+	end
+
+Move_DAZZLING_GLEAM:
+	loadspritegfx ANIM_TAG_FAIRY_SPARK
+	loadspritegfx ANIM_TAG_FAIRY_OATH
+	playsewithpan SE_M_PSYBEAM, SOUND_PAN_ATTACKER
+	simple_palette_blend selector=F_PAL_BG | F_PAL_BATTLERS, delay=1, initial_blend_y=0, target_blend_y=5, color=RGB_WHITE
+	createsprite gFairyOathTargetSpriteTemplate, ANIM_TARGET, 2, 0, 0, 30
+	createsprite gFairySparkSpriteTemplate, ANIM_TARGET, 3, -22, -12, 28, 4
+	createsprite gFairySparkSpriteTemplate, ANIM_TARGET, 3, 20, -4, 26, 3
+	createsprite gFairySparkSpriteTemplate, ANIM_TARGET, 3, -8, 10, 24, 2
+	delay 8
+	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 2, 0, 14, 1
+	waitforvisualfinish
+	simple_palette_blend selector=F_PAL_BG | F_PAL_BATTLERS, delay=1, initial_blend_y=5, target_blend_y=0, color=RGB_WHITE
+	waitforvisualfinish
+	end
+
+Move_MOONBLAST:
+	loadspritegfx ANIM_TAG_FAIRY_CRESCENT
+	loadspritegfx ANIM_TAG_FAIRY_WAVE
+	loadspritegfx ANIM_TAG_FAIRY_SPARK
+	playsewithpan SE_M_MOONLIGHT, SOUND_PAN_ATTACKER
+	createsprite gFairyCrescentSpriteTemplate, ANIM_TARGET, 1, 0, -34, 42
+	delay 10
+	playsewithpan SE_M_PSYBEAM2, SOUND_PAN_ATTACKER
+	createsprite gFairyWaveSpriteTemplate, ANIM_ATTACKER, 2, 0, -6, 28, 0, -4
+	delay 14
+	createsprite gFairySparkSpriteTemplate, ANIM_TARGET, 3, -18, -8, 28, 4
+	createsprite gFairySparkSpriteTemplate, ANIM_TARGET, 3, 16, 6, 26, 3
+	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 2, 0, 18, 1
+	waitforvisualfinish
+	end
+
+Move_LUAR_DE_JACI:
+	loadspritegfx ANIM_TAG_FAIRY_CRESCENT
+	loadspritegfx ANIM_TAG_FAIRY_WAVE
+	loadspritegfx ANIM_TAG_FAIRY_SPARK
+	simple_palette_blend selector=F_PAL_BG, delay=1, initial_blend_y=0, target_blend_y=10, color=RGB_BLACK
+	waitforvisualfinish
+	playsewithpan SE_M_MOONLIGHT, SOUND_PAN_ATTACKER
+	createsprite gFairyCrescentSpriteTemplate, ANIM_TARGET, 1, 0, -38, 54
+	createsprite gFairySparkSpriteTemplate, ANIM_TARGET, 3, -24, -18, 36, 4
+	delay 6
+	createsprite gFairySparkSpriteTemplate, ANIM_TARGET, 3, 24, -8, 34, 3
+	delay 10
+	playsewithpan SE_M_PSYBEAM2, SOUND_PAN_TARGET
+	createsprite gFairyWaveSpriteTemplate, ANIM_ATTACKER, 2, 0, -10, 30, 0, -4
+	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 3, 0, 20, 1
+	waitforvisualfinish
+	simple_palette_blend selector=F_PAL_BG, delay=1, initial_blend_y=10, target_blend_y=0, color=RGB_BLACK
+	waitforvisualfinish
+	end
+
+Move_JURAMENTO_DE_ARAUANA:
+	loadspritegfx ANIM_TAG_FAIRY_OATH
+	loadspritegfx ANIM_TAG_FAIRY_WAVE
+	loadspritegfx ANIM_TAG_FAIRY_SPARK
+	playsewithpan SE_M_HEAL_BELL, SOUND_PAN_ATTACKER
+	createsprite gFairyOathAttackerSpriteTemplate, ANIM_ATTACKER, 1, 0, -4, 36
+	createsprite gFairySparkSpriteTemplate, ANIM_TARGET, 3, -18, -8, 28, 3
+	delay 14
+	playsewithpan SE_M_PSYBEAM, SOUND_PAN_ATTACKER
+	createsprite gFairyWaveSpriteTemplate, ANIM_ATTACKER, 2, 0, -4, 30, 0, 0
+	delay 18
+	createsprite gFairyOathTargetSpriteTemplate, ANIM_TARGET, 2, 0, 0, 32
+	createsprite gFairySparkSpriteTemplate, ANIM_TARGET, 3, 18, 6, 26, 3
+	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 3, 0, 18, 1
+	waitforvisualfinish
+	end
+
+Move_ECLIPSE_DIVINO:
+	loadspritegfx ANIM_TAG_FAIRY_ECLIPSE
+	loadspritegfx ANIM_TAG_FAIRY_SPARK
+	simple_palette_blend selector=F_PAL_BG | F_PAL_BATTLERS, delay=2, initial_blend_y=0, target_blend_y=9, color=RGB(12, 4, 15)
+	waitforvisualfinish
+	playsewithpan SE_M_CONFUSE_RAY, SOUND_PAN_TARGET
+	createsprite gFairyEclipseSpriteTemplate, ANIM_TARGET, 1, 0, -8, 56
+	delay 8
+	createsprite gFairySparkSpriteTemplate, ANIM_TARGET, 3, -24, -16, 34, 4
+	createsprite gFairySparkSpriteTemplate, ANIM_TARGET, 3, 22, -10, 34, 4
+	delay 12
+	playsewithpan SE_M_PSYBEAM2, SOUND_PAN_TARGET
+	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 5, 0, 24, 1
+	simple_palette_blend selector=F_PAL_BG | F_PAL_BATTLERS, delay=1, initial_blend_y=9, target_blend_y=3, color=RGB_WHITE
+	waitforvisualfinish
+	simple_palette_blend selector=F_PAL_BG | F_PAL_BATTLERS, delay=1, initial_blend_y=3, target_blend_y=0, color=RGB_BLACK
+	waitforvisualfinish
 	end
