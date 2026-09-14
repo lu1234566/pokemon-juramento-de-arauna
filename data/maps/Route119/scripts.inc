@@ -574,3 +574,53 @@ Route119_Text_TrainerTipsDecoration:
 	.string "Pick your favorite items and create\n"
 	.string "your very own SECRET BASE exactly the\l"
 	.string "way you want.$"
+
+
+@ Postgame forest altar on the former Leaf Stone pickup tile.
+@ Once the item ball is gone, the empty patch becomes Mata-Mata's shrine.
+Route119_EventScript_MataMataShrine::
+	lockall
+	goto_if_set FLAG_ARAUNA_CAUGHT_MATA_MATA, Route119_EventScript_MataMataEmpty
+	goto_if_unset FLAG_ITEM_ROUTE_119_LEAF_STONE, Route119_EventScript_MataMataDormant
+	goto_if_unset FLAG_IS_CHAMPION, Route119_EventScript_MataMataDormant
+	msgbox Route119_Text_MataMataAwakens, MSGBOX_DEFAULT
+	playbgm MUS_ARAUNA_LEGEND_ENCOUNTER, FALSE
+	waitse
+	playmoncry SPECIES_REGICE, CRY_MODE_ENCOUNTER  @ #378 Mata-Mata
+	delay 40
+	waitmoncry
+	setwildbattle SPECIES_REGICE, 65  @ #378 Mata-Mata
+	special BattleSetup_StartLegendaryBattle
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_WON, Route119_EventScript_MataMataFled
+	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, Route119_EventScript_MataMataFled
+	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, Route119_EventScript_MataMataFled
+	setflag FLAG_ARAUNA_CAUGHT_MATA_MATA
+	releaseall
+	end
+
+Route119_EventScript_MataMataFled::
+	setvar VAR_0x8004, SPECIES_REGICE
+	goto Common_EventScript_LegendaryFlewAway
+	end
+
+Route119_EventScript_MataMataDormant::
+	msgbox Route119_Text_MataMataDormant, MSGBOX_DEFAULT
+	releaseall
+	end
+
+Route119_EventScript_MataMataEmpty::
+	msgbox Route119_Text_MataMataEmpty, MSGBOX_DEFAULT
+	releaseall
+	end
+
+Route119_Text_MataMataAwakens:
+	.string "The roots around you begin to move.\p"
+	.string "A shell rises from the flooded earth.$"
+
+Route119_Text_MataMataDormant:
+	.string "Old roots knot beneath the wet soil.\p"
+	.string "They do not answer you yet.$"
+
+Route119_Text_MataMataEmpty:
+	.string "Only a round hollow remains in the mud.$"

@@ -70,20 +70,15 @@ BirthIsland_Exterior_EventScript_Deoxys::
 	setfieldeffectargument 1, MAP_NUM(MAP_BIRTH_ISLAND_EXTERIOR)
 	setfieldeffectargument 2, MAP_GROUP(MAP_BIRTH_ISLAND_EXTERIOR)
 	dofieldeffect FLDEFF_DESTROY_DEOXYS_ROCK
-	playbgm MUS_RG_ENCOUNTER_DEOXYS, FALSE
+	playbgm MUS_ARAUNA_LEGEND_ENCOUNTER, FALSE
 	waitfieldeffect FLDEFF_DESTROY_DEOXYS_ROCK
-	addobject LOCALID_BIRTH_ISLAND_DEOXYS
-	applymovement LOCALID_BIRTH_ISLAND_DEOXYS, BirthIsland_Exterior_Movement_DeoxysApproach
-	waitmovement 0
+	msgbox BirthIsland_Exterior_Text_EstrelinhaAwakens, MSGBOX_DEFAULT
 	waitse
-	playmoncry SPECIES_DEOXYS, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_ANORITH, CRY_MODE_ENCOUNTER  @ #347 Estrelinha
 	delay 40
 	waitmoncry
-	setvar VAR_LAST_TALKED, LOCALID_BIRTH_ISLAND_DEOXYS
-	seteventmon SPECIES_DEOXYS, 30
-	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	seteventmon SPECIES_ANORITH, 65  @ #347 Estrelinha
 	special BattleSetup_StartLegendaryBattle
-	clearflag FLAG_SYS_CTRL_OBJ_DELETE
 	specialvar VAR_RESULT, GetBattleOutcome
 	goto_if_eq VAR_RESULT, B_OUTCOME_WON, BirthIsland_Exterior_EventScript_DefeatedDeoxys
 	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, BirthIsland_Exterior_EventScript_RanFromDeoxys
@@ -94,12 +89,12 @@ BirthIsland_Exterior_EventScript_Deoxys::
 
 BirthIsland_Exterior_EventScript_DefeatedDeoxys::
 	setflag FLAG_DEFEATED_DEOXYS
-	setvar VAR_0x8004, SPECIES_DEOXYS
+	setvar VAR_0x8004, SPECIES_ANORITH  @ #347 Estrelinha
 	goto Common_EventScript_LegendaryFlewAway
 	end
 
 BirthIsland_Exterior_EventScript_RanFromDeoxys::
-	setvar VAR_0x8004, SPECIES_DEOXYS
+	setvar VAR_0x8004, SPECIES_ANORITH  @ #347 Estrelinha
 	goto Common_EventScript_LegendaryFlewAway
 	end
 
@@ -112,3 +107,8 @@ BirthIsland_Exterior_Movement_DeoxysApproach:
 	walk_slow_down
 	walk_slow_down
 	step_end
+
+
+BirthIsland_Exterior_Text_EstrelinhaAwakens:
+	.string "The triangle breaks into light.\p"
+	.string "A small star has made its nest here.$"

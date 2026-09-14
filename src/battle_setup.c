@@ -518,21 +518,20 @@ void BattleSetup_StartLegendaryBattle(void)
 
     switch (GetMonData(&gEnemyParty[0], MON_DATA_SPECIES, NULL))
     {
-    default:
-    case SPECIES_GROUDON:
+    case SPECIES_GROUDON: // #383 Oxumara
         gBattleTypeFlags |= BATTLE_TYPE_GROUDON;
         CreateBattleStartTask(B_TRANSITION_GROUDON, MUS_ARAUNA_LEGEND_BATTLE);
         break;
-    case SPECIES_KYOGRE:
+    case SPECIES_KYOGRE: // #382 Iemanja
         gBattleTypeFlags |= BATTLE_TYPE_KYOGRE;
         CreateBattleStartTask(B_TRANSITION_KYOGRE, MUS_ARAUNA_LEGEND_BATTLE);
         break;
-    case SPECIES_RAYQUAZA:
+    case SPECIES_DEOXYS: // #386 Araua
         gBattleTypeFlags |= BATTLE_TYPE_RAYQUAZA;
-        CreateBattleStartTask(B_TRANSITION_RAYQUAZA, MUS_ARAUNA_ARAUA_BATTLE); // #386 Araua
+        CreateBattleStartTask(B_TRANSITION_RAYQUAZA, MUS_ARAUNA_ARAUA_BATTLE);
         break;
-    case SPECIES_DEOXYS:
-        CreateBattleStartTask(B_TRANSITION_BLUR, MUS_ARAUNA_LEGEND_BATTLE);
+    case SPECIES_RAYQUAZA: // #384 Curupixel
+        CreateBattleStartTask(B_TRANSITION_GRID_SQUARES, MUS_ARAUNA_LEGEND_BATTLE);
         break;
     case SPECIES_LUGIA:
     case SPECIES_HO_OH:
@@ -540,6 +539,11 @@ void BattleSetup_StartLegendaryBattle(void)
         break;
     case SPECIES_MEW:
         CreateBattleStartTask(B_TRANSITION_GRID_SQUARES, MUS_ARAUNA_LEGEND_BATTLE);
+        break;
+    default:
+        // Arauna has many scripted legendary/mythical species in ordinary
+        // engine slots. They must not silently inherit Groudon's flags/transition.
+        CreateBattleStartTask(B_TRANSITION_BLUR, MUS_ARAUNA_LEGEND_BATTLE);
         break;
     }
 
@@ -579,12 +583,15 @@ void StartRegiBattle(void)
     switch (species)
     {
     case SPECIES_REGIROCK:
+    case SPECIES_CRAWDAUNT: // #342 Terraao, Desert Ruins
         transitionId = B_TRANSITION_REGIROCK;
         break;
     case SPECIES_REGICE:
+    case SPECIES_CLAYDOL: // #344 Marulho, Island Cave
         transitionId = B_TRANSITION_REGICE;
         break;
     case SPECIES_REGISTEEL:
+    case SPECIES_SOLROCK: // #338 Verdejante, Ancient Tomb
         transitionId = B_TRANSITION_REGISTEEL;
         break;
     default:

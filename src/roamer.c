@@ -64,7 +64,7 @@ static const u8 sRoamerLocations[][6] =
 void ClearRoamerData(void)
 {
     memset(ROAMER, 0, sizeof(*ROAMER));
-    ROAMER->species = SPECIES_LATIAS;
+    ROAMER->species = SPECIES_VIBRAVA; // #329 Guaraciana
 }
 
 void ClearRoamerLocationData(void)
@@ -81,15 +81,15 @@ void ClearRoamerLocationData(void)
     sRoamerLocation[MAP_NUM] = 0;
 }
 
-static void CreateInitialRoamerMon(bool16 createLatios)
+static void CreateInitialRoamerMon(bool16 createJaciana)
 {
-    if (!createLatios)
-        ROAMER->species = SPECIES_LATIAS;
+    if (!createJaciana)
+        ROAMER->species = SPECIES_VIBRAVA; // #329 Guaraciana
     else
-        ROAMER->species = SPECIES_LATIOS;
+        ROAMER->species = SPECIES_FLYGON;  // #330 Jaciana
 
-    CreateMon(&gEnemyParty[0], ROAMER->species, 40, USE_RANDOM_IVS, FALSE, 0, OT_ID_PLAYER_ID, 0);
-    ROAMER->level = 40;
+    CreateMon(&gEnemyParty[0], ROAMER->species, 55, USE_RANDOM_IVS, FALSE, 0, OT_ID_PLAYER_ID, 0);
+    ROAMER->level = 55;
     ROAMER->status = 0;
     ROAMER->active = TRUE;
     ROAMER->ivs = GetMonData(&gEnemyParty[0], MON_DATA_IVS);
@@ -104,7 +104,8 @@ static void CreateInitialRoamerMon(bool16 createLatios)
     sRoamerLocation[MAP_NUM] = sRoamerLocations[Random() % NUM_LOCATION_SETS][0];
 }
 
-// gSpecialVar_0x8004 here corresponds to the options in the multichoice MULTI_TV_LATI (0 for 'Red', 1 for 'Blue')
+// gSpecialVar_0x8004 keeps the old two-choice TV contract:
+ // 0 = Guaraciana, 1 = Jaciana. The save variable/roamer machinery is unchanged.
 void InitRoamer(void)
 {
     ClearRoamerData();

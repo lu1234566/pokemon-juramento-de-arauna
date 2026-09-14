@@ -57,11 +57,12 @@ AncientTomb_EventScript_CaveEntranceSide::
 AncientTomb_EventScript_Registeel::
 	lock
 	faceplayer
+	msgbox AncientTomb_Text_VerdejanteAwakens, MSGBOX_DEFAULT
 	waitse
-	playmoncry SPECIES_REGISTEEL, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_SOLROCK, CRY_MODE_ENCOUNTER
 	delay 40
 	waitmoncry
-	setwildbattle SPECIES_REGISTEEL, 40
+	setwildbattle SPECIES_SOLROCK, 60  @ #338 Verdejante
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 	special StartRegiBattle
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
@@ -79,7 +80,11 @@ AncientTomb_EventScript_DefeatedRegisteel::
 	end
 
 AncientTomb_EventScript_RanFromRegisteel::
-	setvar VAR_0x8004, SPECIES_REGISTEEL
+	setvar VAR_0x8004, SPECIES_SOLROCK
 	goto Common_EventScript_LegendaryFlewAway
 	end
 
+
+AncientTomb_Text_VerdejanteAwakens:
+	.string "Roots split the ancient stone.\p"
+	.string "Something green wakes below.$"

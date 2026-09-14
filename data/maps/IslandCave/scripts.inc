@@ -90,11 +90,12 @@ IslandCave_EventScript_ClearSteps::
 IslandCave_EventScript_Regice::
 	lock
 	faceplayer
+	msgbox IslandCave_Text_MarulhoAwakens, MSGBOX_DEFAULT
 	waitse
-	playmoncry SPECIES_REGICE, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_CLAYDOL, CRY_MODE_ENCOUNTER
 	delay 40
 	waitmoncry
-	setwildbattle SPECIES_REGICE, 40
+	setwildbattle SPECIES_CLAYDOL, 60  @ #344 Marulho
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 	special StartRegiBattle
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
@@ -112,6 +113,10 @@ IslandCave_EventScript_DefeatedRegice::
 	end
 
 IslandCave_EventScript_RanFromRegice::
-	setvar VAR_0x8004, SPECIES_REGICE
+	setvar VAR_0x8004, SPECIES_CLAYDOL
 	goto Common_EventScript_LegendaryFlewAway
 	end
+
+IslandCave_Text_MarulhoAwakens:
+	.string "Salt water gathers on the old seal.\p"
+	.string "A deep tide answers from below.$"
