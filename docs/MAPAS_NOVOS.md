@@ -34,11 +34,22 @@ faltou.
 warp)`. Se o mapa de destino tem 3 warps e você aponta para o 4, o jogo lê
 lixo.
 
-## Conferências que o auditor não faz
+**Warp dentro do mapa mas inalcançável.** Bounds é uma coisa, chegar lá é
+outra: um warp em cima de água, atrás de uma parede ou numa ilha sem ponte
+compila, roda, e só aparece quando o jogador tenta ir. O auditor faz um flood
+fill do ponto de Fly de cada mapa e reclama de warp que não dá para alcançar
+nem de barco; os que exigem Surf ele só conta, porque dez deles são de
+propósito. Duas conferências que o flood **não** faz: ele lê colisão e
+comportamento, não elevação, e não pula ledge de mão única. Por isso dois
+platôs da vanilla — o centro de Lavaridge e a entrada da Artisan Cave — estão
+numa lista de exceções no próprio arquivo.
 
-**O warp cai num tile onde dá para ficar de pé.** Bounds é uma coisa,
-caminhabilidade é outra: um warp dentro do mapa mas em cima de água ou parede
-deixa o jogador preso. Vale um flood fill a partir do ponto de chegada.
+**Porta é de dois tipos.** Uma parte delas é tile caminhável e o warp dispara
+sob os pés; outra parte é tile de colisão 1 em que você *esbarra*, e o warp
+dispara do tile da frente — o portão da Liga é assim. Uma conferência que
+exija o tile do warp caminhável marca metade das portas do jogo como quebrada.
+
+## Conferências que o auditor não faz
 
 **O metatile de porta combina com a animação.** Porta é um par (moldura +
 abertura) mais uma entrada em `data/tilesets/*/anim`. Trocar o desenho da porta
@@ -60,6 +71,28 @@ divergência que o instalador aponta, confirmar uma a uma que é alteração
 nossa e intencional, e só então converter o `raise` em aviso. Uma divergência
 que você não reconhece é exatamente o que a guarda existe para pegar.
 
+**Desde a tradução, toda divergência de `scripts.inc` é esperada.** Os pacotes
+foram gerados antes do inglês, então cada `.inc` que eles protegem por hash
+bate diferente. A guarda existe para pegar warp movido, coordenada mudada ou
+flag trocada — não texto. A conferência que resolve isso em segundos: apague o
+conteúdo de cada `.string` dos dois arquivos, colapse sequências de `.string`
+numa só marca, e compare o que sobra. Se o esqueleto for idêntico, só o texto
+mudou e a guarda pode passar; se não for, pare e olhe.
+
+**Cuidado com o instalador que reescreve um `scripts.inc` inteiro.** Alguns
+pacotes não só protegem o arquivo: eles o substituem, para mexer em duas ou
+três linhas. Como o pacote é anterior ao inglês, essa substituição **desfaz a
+tradução** do arquivo. O que funcionou foi extrair só as linhas não-`.string`
+que o pacote quer mudar e aplicá-las sobre o arquivo traduzido — em Baía das
+Luzes eram treze linhas (doze coordenadas de Wailmer e um `setescapewarp`)
+dentro de dois arquivos de duzentas falas.
+
+**Pacote gerado sobre pacote tem ordem.** Se a árvore de referência de um
+pacote já contém o registro de tileset de outro, ele foi gerado depois daquele
+e precisa ser instalado depois. Dá para ver com um `grep` dos marcadores
+`// NOME_VERSAO_BEGIN` em `src/data/tilesets/headers.h` de cada pacote: quem
+tem menos marcadores vem primeiro.
+
 ## Ordem que funciona
 
 1. Copiar layout, `map.bin`, `border.bin`, tilesets e `map.json`.
@@ -67,8 +100,18 @@ que você não reconhece é exatamente o que a guarda existe para pegar.
    `data/layouts/layouts.json`.
 3. `python3 tools/arauna/audit_map_data.py` — antes de compilar.
 4. `make MODERN=1 -j$(nproc)`.
-5. `bash scripts/check_arauna_static.sh`.
+5. `bash scripts/check_arauna_static.sh` e
+   `python3 scripts/check_english_only_policy.py`.
 6. Andar pelo mapa no emulador, entrando e saindo de cada porta.
 
 O passo 3 é o que economiza tempo: os erros que ele pega são todos do tipo que
 compila limpo e só aparece com o jogador em cima.
+
+O passo 6 dá para automatizar e vale a pena: com o harness local, nascer um
+tile ao lado de cada porta, segurar a direção e ler em que mapa o jogador
+parou. As três cidades desta rodada foram conferidas assim, 32 portas, uma a
+uma. **Um detalhe que custa tempo se você não souber:** o harness pula o
+script de novo jogo que devolveria o controle ao jogador, então o campo fica
+travado e toda tecla é engolida — o personagem simplesmente não anda. Zere
+`sLockFieldControls` (é `static`, sai de `elf_locals()`, não do `.map`) depois
+do boot e antes de apertar qualquer coisa.

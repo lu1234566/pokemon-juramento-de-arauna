@@ -18,8 +18,10 @@ elenco inteiro é hoje a mesma da vanilla, percentil a percentil.
 
 **Mapas.** Dez mapas nativos do Arauna, mais as cidades adaptadas às concept
 arts: Vila Amanhecer, Vila da Passagem, Pampa da Espera e seus interiores, Serra
-do Uivo, Porto das Redes, Liga, e agora Porto do Sal, Encruzilhada com a Casa da
-Fogueira, e Vale do Silêncio.
+do Uivo, Porto das Redes, Liga, Porto do Sal, Encruzilhada com a Casa da
+Fogueira, Vale do Silêncio, e agora **Mata do Meio, Baía das Luzes e Missões do
+Céu** — três exteriores inteiramente redesenhados, cada um com banco de tiles
+próprio.
 
 **Criaturas no overworld.** Quarenta e cinco delas, espalhadas por vinte e cinco
 mapas.
@@ -29,15 +31,20 @@ mapas.
 1. **Andar por aí, sem pressa.** O travamento mais sério que apareceu nesta
    fase disparava só de uma criatura entrar no alcance de spawn — sem ação
    nenhuma. Está corrigido, mas é o tipo de falha que só a caminhada acha.
-2. **As três cidades novas.** Porto do Sal, Encruzilhada e Vale do Silêncio.
-   Entrar e sair de todos os prédios, conferir se as passagens levam onde
-   deveriam.
-3. **A Casa da Fogueira.** Entrada, memorial e salão. São interiores recém
+2. **As três cidades recém-redesenhadas.** Mata do Meio, Baía das Luzes e
+   Missões do Céu. As 32 portas já foram percorridas a pé no emulador e todas
+   levam ao interior certo, então o que falta aqui é o que só uma partida
+   pega: as cenas de história de cada cidade, os treinadores, e chegar por
+   Surf e por Fly em vez de a pé.
+3. **As três cidades anteriores.** Porto do Sal, Encruzilhada e Vale do
+   Silêncio. Entrar e sair de todos os prédios, conferir se as passagens levam
+   onde deveriam.
+4. **A Casa da Fogueira.** Entrada, memorial e salão. São interiores recém
    chegados e nunca jogados.
-4. **Chegar de barco em Porto do Sal.** O ponto de desembarque estava fora do
+5. **Chegar de barco em Porto do Sal.** O ponto de desembarque estava fora do
    mapa e foi movido para o cais; vale confirmar que o jogador aparece em pé no
    lugar certo.
-5. **Os personagens de perto.** Se algum parecer fora de escala em relação aos
+6. **Os personagens de perto.** Se algum parecer fora de escala em relação aos
    NPCs comuns ao lado, é defeito.
 
 ## O que sabidamente falta
@@ -46,7 +53,13 @@ Nada disto é regressão: são frentes que ainda não foram feitas.
 
 - **Interiores das cidades.** Os sete antigos da Encruzilhada, os do Porto do Sal
   e os do Vale do Silêncio. Os pacotes de mapa declaram essas frentes como
-  pendentes.
+  pendentes. Some-se a isso o Centro Espacial de Missões do Céu: o exterior foi
+  refeito, o interior não.
+- **As rotas ao lado das três cidades novas.** Mata do Meio, Baía das Luzes e
+  Missões do Céu ganharam bancos de tiles próprios; as rotas vizinhas não. Na
+  costura oeste da Mata do Meio dá para ver a linha: o verde da rota 119 é mais
+  claro que o da mata. Não é defeito de integração — é arte de rota que ainda
+  não foi feita.
 - **Cenas S09 a S13** da Encruzilhada.
 - ~~**Idioma misto.**~~ Resolvido. A ROM é inteiramente em inglês: 834 falas
   em 115 arquivos foram traduzidas, o vocabulário do mundo foi unificado
