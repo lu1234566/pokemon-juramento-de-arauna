@@ -8,7 +8,7 @@ mapping, not the vanilla constant name.
 
 ## Wave 1 — implemented
 
-Ten of the 31 special species now have concrete acquisition events:
+Thirteen of the 31 special species now have concrete acquisition events:
 
 - **Guaraciana #329 / Jaciana #330** — the post-League roaming pair. The TV
   report is rewritten around the sun-red / moon-blue sightings. The chosen one
@@ -22,6 +22,12 @@ Ten of the 31 special species now have concrete acquisition events:
 - **Marulho #344** — Island Cave, Lv.60, through the old Regice seal.
 - **Estrelinha #347** — Birth Island, Lv.65. Solving the triangle breaks it into
   light and directly awakens Estrelinha; no Deoxys sprite is shown.
+- **Piraruaçu #377** — Navel Rock Bottom, Lv.70. The abyss altar is interactive
+  while the inherited Lugia object remains hidden.
+- **Mata-Mata #378** — Route 119, Lv.65. After the Leaf Stone pickup is cleared,
+  the same flooded hollow becomes a postgame root shrine.
+- **Solaris #379** — Navel Rock Top, Lv.70. The existing summit trigger is reused
+  as a solar altar; stale Ho-Oh art stays hidden.
 - **Iemanjã #382** — Marine Cave, Lv.70. The stale Kyogre overworld is kept
   hidden; the player senses the presence before battle.
 - **Oxumará #383** — Terra Cave, Lv.70. Same treatment, avoiding stale Groudon
@@ -56,7 +62,7 @@ Wave 1 does **not** expand the save layout. Native anchor flags such as
 encounter is now an Arauna species. Renaming those flags would add risk without
 changing anything the player sees.
 
-The remaining 21 species and their intended anchors are tracked in
+The remaining 18 species and their intended anchors are tracked in
 `docs/arauna/ARAUNA_LEGENDARY_MYTHICAL_EVENTS.csv`. New persistent flags will
 be allocated from proven-unused flag aliases only when each event is actually
 implemented.
