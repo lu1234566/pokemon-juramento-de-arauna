@@ -1,0 +1,32 @@
+name: Build Arauna base data package
+
+on:
+  push:
+    branches:
+      - feat/fairy-moves-animations
+    paths:
+      - "tools/arauna/build_base_data_package.py"
+      - ".github/workflows/build-base-data-package.yml"
+      - "tools/arauna/package_sources/lovable/pokedex.ts"
+      - "docs/arauna/ARAUNA_DEX_ENGINE_MAPPING.csv"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build Base Data v2
+        run: |
+          python3 tools/arauna/build_base_data_package.py dist/Arauna_Base_Data_386_v2
+          cd dist
+          zip -r Arauna_Base_Data_386_v2.zip Arauna_Base_Data_386_v2
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Arauna_Base_Data_386_v2
+          path: dist/Arauna_Base_Data_386_v2.zip
+          if-no-files-found: error
+          retention-days: 30

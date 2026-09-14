@@ -142,7 +142,7 @@
 #define EFFECT_DEFENSE_UP_HIT 138
 #define EFFECT_ATTACK_UP_HIT 139
 #define EFFECT_ALL_STATS_UP_HIT 140
-#define EFFECT_UNUSED_8D 141  // incomplete fake out in gen 2
+#define EFFECT_SPECIAL_DEFENSE_UP_HIT 141  // Arauana: damaging move, +1 Sp. Def to user
 #define EFFECT_BELLY_DRUM 142
 #define EFFECT_PSYCH_UP 143
 #define EFFECT_MIRROR_COAT 144
@@ -164,7 +164,7 @@
 #define EFFECT_STOCKPILE 160
 #define EFFECT_SPIT_UP 161
 #define EFFECT_SWALLOW 162
-#define EFFECT_UNUSED_A3 163
+#define EFFECT_SPECIAL_ATTACK_DOWN_USER_HIT 163  // Arauana: damaging move, -1 Sp. Atk to user
 #define EFFECT_HAIL 164
 #define EFFECT_TORMENT 165
 #define EFFECT_FLATTER 166

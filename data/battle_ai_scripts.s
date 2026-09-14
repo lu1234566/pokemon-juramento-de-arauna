@@ -1181,6 +1181,7 @@ AI_CV_SpAtkDown_SpecialTypeList:
 	.byte TYPE_ICE
 	.byte TYPE_DRAGON
 	.byte TYPE_DARK
+	.byte TYPE_FAIRY
 	.byte -1
 
 AI_CV_SpDefDown:

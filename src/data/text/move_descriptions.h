@@ -1418,6 +1418,38 @@ static const u8 sPsychoBoostDescription[] = _(
     "but sharply lowers SP. ATK.");
 
 // MOVE_NONE is ignored in this table. Make sure to always subtract 1 before getting the right pointer.
+static const u8 sFairyWindDescription[] = _(
+    "A gentle fairy wind that\n"
+    "strikes the foe.");
+
+static const u8 sDisarmingVoiceDescription[] = _(
+    "A charming cry that never\n"
+    "misses its targets.");
+
+static const u8 sDrainingKissDescription[] = _(
+    "A life-stealing kiss that\n"
+    "restores the user's HP.");
+
+static const u8 sDazzlingGleamDescription[] = _(
+    "A brilliant fairy flash\n"
+    "that hits opposing POKeMON.");
+
+static const u8 sMoonblastDescription[] = _(
+    "Moonlight erupts at the foe.\n"
+    "It may lower SP. ATK.");
+
+static const u8 sLuarDeJaciDescription[] = _(
+    "Jaci's moonlight crashes down.\n"
+    "It may lower SP. ATK.");
+
+static const u8 sJuramentoDeArauanaDescription[] = _(
+    "A regional oath strikes and\n"
+    "raises the user's SP. DEF.");
+
+static const u8 sEclipseDivinoDescription[] = _(
+    "A divine eclipse erupts, but\n"
+    "lowers the user's SP. ATK.");
+
 const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
 {
     [MOVE_POUND - 1] = sPoundDescription,
@@ -1774,4 +1806,12 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_WATER_PULSE - 1] = sWaterPulseDescription,
     [MOVE_DOOM_DESIRE - 1] = sDoomDesireDescription,
     [MOVE_PSYCHO_BOOST - 1] = sPsychoBoostDescription,
+    [MOVE_FAIRY_WIND - 1] = sFairyWindDescription,
+    [MOVE_DISARMING_VOICE - 1] = sDisarmingVoiceDescription,
+    [MOVE_DRAINING_KISS - 1] = sDrainingKissDescription,
+    [MOVE_DAZZLING_GLEAM - 1] = sDazzlingGleamDescription,
+    [MOVE_MOONBLAST - 1] = sMoonblastDescription,
+    [MOVE_LUAR_DE_JACI - 1] = sLuarDeJaciDescription,
+    [MOVE_JURAMENTO_DE_ARAUANA - 1] = sJuramentoDeArauanaDescription,
+    [MOVE_ECLIPSE_DIVINO - 1] = sEclipseDivinoDescription,
 };

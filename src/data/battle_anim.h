@@ -1298,6 +1298,11 @@ const struct CompressedSpriteSheet gBattleAnimPicTable[] =
     {gBattleAnimSpriteGfx_Slash, 0x0800, ANIM_TAG_SLASH_2},
     {gBattleAnimSpriteGfx_SlamHit, 0x1000, ANIM_TAG_WHIP_HIT},
     {gBattleAnimSpriteGfx_GoldRing, 0x0100, ANIM_TAG_BLUE_RING_2},
+    {gBattleAnimSpriteGfx_FairySpark, 0x0200, ANIM_TAG_FAIRY_SPARK},
+    {gBattleAnimSpriteGfx_FairyWave, 0x0600, ANIM_TAG_FAIRY_WAVE},
+    {gBattleAnimSpriteGfx_FairyCrescent, 0x0400, ANIM_TAG_FAIRY_CRESCENT},
+    {gBattleAnimSpriteGfx_FairyOath, 0x0400, ANIM_TAG_FAIRY_OATH},
+    {gBattleAnimSpriteGfx_FairyEclipse, 0x0400, ANIM_TAG_FAIRY_ECLIPSE},
 };
 
 const struct CompressedSpritePalette gBattleAnimPaletteTable[] =
@@ -1591,6 +1596,11 @@ const struct CompressedSpritePalette gBattleAnimPaletteTable[] =
     {gBattleAnimSpritePal_Slash2, ANIM_TAG_SLASH_2},
     {gBattleAnimSpritePal_WhipHit, ANIM_TAG_WHIP_HIT},
     {gBattleAnimSpritePal_BlueRing2, ANIM_TAG_BLUE_RING_2},
+    {gBattleAnimSpritePal_FairySpark, ANIM_TAG_FAIRY_SPARK},
+    {gBattleAnimSpritePal_FairyWave, ANIM_TAG_FAIRY_WAVE},
+    {gBattleAnimSpritePal_FairyCrescent, ANIM_TAG_FAIRY_CRESCENT},
+    {gBattleAnimSpritePal_FairyOath, ANIM_TAG_FAIRY_OATH},
+    {gBattleAnimSpritePal_FairyEclipse, ANIM_TAG_FAIRY_ECLIPSE},
 };
 
 const struct BattleAnimBackground gBattleAnimBackgroundTable[] =

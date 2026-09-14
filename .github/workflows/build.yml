@@ -20,6 +20,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          # Several validation tools compare against pinned historical commits
+          # (for example c210195e for vanilla text width). A shallow PR
+          # checkout makes git show silently return no baseline content.
+          fetch-depth: 0
 
       - name: Validate canonical English rendered composition
         run: bash scripts/check_arauna_static.sh
@@ -30,6 +35,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          # Several validation tools compare against pinned historical commits
+          # (for example c210195e for vanilla text width). A shallow PR
+          # checkout makes git show silently return no baseline content.
+          fetch-depth: 0
 
       - name: Install build dependencies
         run: |

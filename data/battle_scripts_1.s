@@ -159,7 +159,7 @@ gBattleScriptsForMoveEffects::
 	.4byte BattleScript_EffectDefenseUpHit           @ EFFECT_DEFENSE_UP_HIT
 	.4byte BattleScript_EffectAttackUpHit            @ EFFECT_ATTACK_UP_HIT
 	.4byte BattleScript_EffectAllStatsUpHit          @ EFFECT_ALL_STATS_UP_HIT
-	.4byte BattleScript_EffectHit                    @ EFFECT_UNUSED_8D
+	.4byte BattleScript_EffectSpecialDefenseUpHit    @ EFFECT_SPECIAL_DEFENSE_UP_HIT
 	.4byte BattleScript_EffectBellyDrum              @ EFFECT_BELLY_DRUM
 	.4byte BattleScript_EffectPsychUp                @ EFFECT_PSYCH_UP
 	.4byte BattleScript_EffectMirrorCoat             @ EFFECT_MIRROR_COAT
@@ -181,7 +181,7 @@ gBattleScriptsForMoveEffects::
 	.4byte BattleScript_EffectStockpile              @ EFFECT_STOCKPILE
 	.4byte BattleScript_EffectSpitUp                 @ EFFECT_SPIT_UP
 	.4byte BattleScript_EffectSwallow                @ EFFECT_SWALLOW
-	.4byte BattleScript_EffectHit                    @ EFFECT_UNUSED_A3
+	.4byte BattleScript_EffectSpecialAttackDownUserHit @ EFFECT_SPECIAL_ATTACK_DOWN_USER_HIT
 	.4byte BattleScript_EffectHail                   @ EFFECT_HAIL
 	.4byte BattleScript_EffectTorment                @ EFFECT_TORMENT
 	.4byte BattleScript_EffectFlatter                @ EFFECT_FLATTER
@@ -1767,6 +1767,10 @@ BattleScript_EffectDefenseUpHit::
 
 BattleScript_EffectAttackUpHit::
 	setmoveeffect MOVE_EFFECT_ATK_PLUS_1 | MOVE_EFFECT_AFFECTS_USER
+	goto BattleScript_EffectHit
+
+BattleScript_EffectSpecialDefenseUpHit::
+	setmoveeffect MOVE_EFFECT_SP_DEF_PLUS_1 | MOVE_EFFECT_AFFECTS_USER
 	goto BattleScript_EffectHit
 
 BattleScript_EffectAllStatsUpHit::
@@ -4560,3 +4564,9 @@ BattleScript_PrintPlayerForfeitedLinkBattle::
 	endlinkbattle
 	waitmessage B_WAIT_TIME_LONG
 	end2
+
+
+@ Arauana Fairy signature: lower the user's Sp. Atk after a successful hit.
+BattleScript_EffectSpecialAttackDownUserHit::
+	setmoveeffect MOVE_EFFECT_SP_ATK_MINUS_1 | MOVE_EFFECT_AFFECTS_USER
+	goto BattleScript_EffectHit
