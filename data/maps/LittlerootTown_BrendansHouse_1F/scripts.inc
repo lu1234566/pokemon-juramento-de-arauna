@@ -427,22 +427,21 @@ PlayersHouse_1F_Text_IsThatABreakingStory:
 PlayersHouse_1F_Text_LatiEmergencyNewsFlash:
 	.string "We bring you this emergency\n"
 	.string "news flash!\p"
-	.string "In various ARAUNA locales, there have\n"
-	.string "been reports of a BZZT…colored\l"
-	.string "POKéMON in flight.\p"
-	.string "The identity of this POKéMON is\n"
-	.string "currently unknown.\p"
-	.string "We now return you to the regular\n"
-	.string "movie program.$"
+	.string "Across ARAUNA, witnesses report a\n"
+	.string "great winged POKéMON crossing the sky.\p"
+	.string "Some call its light sun-red. Others\n"
+	.string "swear it was moon-blue.\p"
+	.string "Researchers believe the old names\n"
+	.string "GUARACIANA and JACIANA may be linked.$"
 
 PlayersHouse_1F_Text_WhatColorDidTheySay:
 	.string "MOM: {PLAYER}, did you catch that?\p"
-	.string "What color did the announcer say\n"
-	.string "that POKéMON was?$"
+	.string "Did the witness say sun-red or\n"
+	.string "moon-blue?$"
 
 PlayersHouse_1F_Text_StillUnknownPokemon:
-	.string "MOM: Well, isn't that something!\n"
-	.string "There are still unknown POKéMON.$"
+	.string "MOM: Then one of those old names may\n"
+	.string "still be flying over ARAUNA.$"
 
 LittlerootTown_BrendansHouse_1F_V9_SelectHomeRole:
 	checkplayergender
