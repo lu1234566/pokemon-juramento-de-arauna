@@ -598,7 +598,7 @@ static void InheritIVs(struct Pokemon *egg, struct DayCare *daycare)
 
 // Counts the number of egg moves a Pokémon learns and stores the moves in
 // the given array.
-static u8 GetEggMoves(struct Pokemon *pokemon, u16 *eggMoves)
+u8 GetEggMoves(struct Pokemon *pokemon, u16 *eggMoves)
 {
     u16 eggMoveIdx;
     u16 numEggMoves;
@@ -895,10 +895,18 @@ static bool8 TryProduceOrHatchEgg(struct DayCare *daycare)
     }
 
     // Try to hatch Egg
-    if (++daycare->stepCounter == 255)
+    //
+    // Arauna hatches in two steps instead of thousands. Vanilla only looks at
+    // the eggs every 255 steps and then shaves a cycle or two off a counter
+    // that starts around twenty, so this checks every step and empties the
+    // counter in one go: step one takes any egg to its last cycle, step two
+    // hatches it.
+    if (++daycare->stepCounter >= ARAUNA_EGG_STEPS_PER_CHECK)
     {
         u32 eggCycles;
         u8 toSub = GetEggCyclesToSubtract();
+
+        daycare->stepCounter = 0;
 
         for (i = 0; i < gPlayerPartyCount; i++)
         {
@@ -910,7 +918,9 @@ static bool8 TryProduceOrHatchEgg(struct DayCare *daycare)
             eggCycles = GetMonData(&gPlayerParty[i], MON_DATA_FRIENDSHIP);
             if (eggCycles != 0)
             {
-                if (eggCycles >= toSub)
+                if (ARAUNA_EGG_STEPS_PER_CHECK == 1)
+                    eggCycles = 0;      // one step to the brink, the next hatches
+                else if (eggCycles >= toSub)
                     eggCycles -= toSub;
                 else
                     eggCycles -= 1;

@@ -92,7 +92,13 @@
 #define MAX_STAT_STAGE    12
 
 // Shiny odds
-#define SHINY_ODDS 8 // Actual probability is SHINY_ODDS/65536
+// Arauna runs at 1 in 100 rather than the vanilla 1 in 8192: 65536/100 = 655.
+// Note for anyone changing this again: a few callers pass SHINY_ODDS as an
+// *otId* with personality 0 to force a non-shiny preview sprite (the Pokedex,
+// the starter picker, the main menu Lotad). That works for any value, because
+// 0 ^ n is n and n < n is false, so raising the odds does not turn those
+// sprites shiny -- but the coupling is real, so check them if you touch it.
+#define SHINY_ODDS 655 // Actual probability is SHINY_ODDS/65536
 
 // Ribbon IDs used by TV and Pokénav
 #define CHAMPION_RIBBON       0

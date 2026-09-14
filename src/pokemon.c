@@ -22,6 +22,8 @@
 #include "pokedex.h"
 #include "pokeblock.h"
 #include "pokemon.h"
+#include "arauna_qol.h"
+#include "constants/daycare.h"
 #include "pokemon_animation.h"
 #include "pokemon_summary_screen.h"
 #include "pokemon_storage_system.h"
@@ -5084,6 +5086,21 @@ u32 CanSpeciesLearnTMHM(u16 species, u8 tm)
     }
 }
 
+// Arauna: the egg-move tutor reuses the relearner screen whole, so the only
+// difference between the two is which list of moves gets built. This flag says
+// which, and is set by the script right before the screen opens.
+static bool8 sAraunaEggMoveMode = FALSE;
+
+void AraunaSetEggMoveMode(bool8 on)
+{
+    sAraunaEggMoveMode = on;
+}
+
+bool8 AraunaGetEggMoveMode(void)
+{
+    return sAraunaEggMoveMode;
+}
+
 u8 GetMoveRelearnerMoves(struct Pokemon *mon, u16 *moves)
 {
     u16 learnedMoves[MAX_MON_MOVES];
@@ -5091,6 +5108,9 @@ u8 GetMoveRelearnerMoves(struct Pokemon *mon, u16 *moves)
     u16 species = GetMonData(mon, MON_DATA_SPECIES, 0);
     u8 level = GetMonData(mon, MON_DATA_LEVEL, 0);
     int i, j, k;
+
+    if (sAraunaEggMoveMode)
+        return AraunaGetTeachableEggMoves(mon, moves);
 
     for (i = 0; i < MAX_MON_MOVES; i++)
         learnedMoves[i] = GetMonData(mon, MON_DATA_MOVE1 + i, 0);
@@ -5140,6 +5160,17 @@ u8 GetNumberOfRelearnableMoves(struct Pokemon *mon)
     u16 moves[MAX_LEVEL_UP_MOVES];
     u8 numMoves = 0;
     u16 species = GetMonData(mon, MON_DATA_SPECIES_OR_EGG, 0);
+
+    if (sAraunaEggMoveMode)
+    {
+        u16 eggMoves[EGG_MOVES_ARRAY_COUNT];
+
+        if (species == SPECIES_EGG)
+            return 0;
+
+        return AraunaGetTeachableEggMoves(mon, eggMoves);
+    }
+
     u8 level = GetMonData(mon, MON_DATA_LEVEL, 0);
     int i, j, k;
 

@@ -114,10 +114,32 @@ def main() -> int:
                          len(species) == 46 and len(dispatchers) == 2))
 
     print("\nnothing persistent moved")
+    # What has to hold is that the save LAYOUT has not moved -- not that the
+    # file text is untouched. Comparing the text was a proxy for that, and the
+    # proxy fails the moment someone spends a bit of the padding these structs
+    # already reserve, which moves nothing.
+    #
+    # So compare the layout itself: every field in these headers carries its
+    # own byte offset in a comment, and that mapping of offset to field name
+    # IS the layout. If all 400-odd offsets still name the same fields, no
+    # save can have shifted, whatever else changed in the file.
+    offsets = re.compile(r"/\*(0x[0-9A-Fa-f]+)\*/\s*([^;]+);")
+
+    def layout(text):
+        return [(off.lower(), " ".join(decl.split()))
+                for off, decl in offsets.findall(text)]
+
     for path in PERSISTENT:
-        diff = subprocess.run(["git", "diff", BEFORE, "--", path],
-                              cwd=ROOT, capture_output=True, text=True).stdout
-        results.append(check(f"{path} unchanged since {BEFORE}", diff == ""))
+        before = subprocess.run(["git", "show", f"{BEFORE}:{path}"],
+                                cwd=ROOT, capture_output=True, text=True).stdout
+        now = (ROOT / path).read_text(encoding="utf-8")
+        was, is_ = layout(before), layout(now)
+        moved = [f"{o} was {a!r}, now {b!r}"
+                 for (o, a), (_, b) in zip(was, is_) if a != b]
+        ok = len(was) == len(is_) and not moved
+        results.append(check(f"{path} save layout unmoved since {BEFORE}", ok,
+                             f"{len(is_)} offsets"
+                             + ("" if ok else "; " + "; ".join(moved[:3]))))
     fieldmap = (ROOT / "include/global.fieldmap.h").read_text(encoding="utf-8")
     results.append(check("graphicsId is u8 in both structs",
                          fieldmap.count("u8 graphicsId;") == 2))

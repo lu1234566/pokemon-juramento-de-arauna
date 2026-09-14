@@ -22,6 +22,11 @@
 
 // Array buffers
 #define EGG_MOVES_ARRAY_COUNT           10
+
+// How many steps pass between two looks at the eggs in the party. Vanilla is
+// 255; Arauna checks every step so an egg hatches in two. Set it back to 255
+// to restore the original pace -- src/daycare.c reads it in both places.
+#define ARAUNA_EGG_STEPS_PER_CHECK      1
 #define EGG_LVL_UP_MOVES_ARRAY_COUNT    (MAX_LEVEL_UP_MOVES > 50 ? MAX_LEVEL_UP_MOVES : 50)
 
 #endif //GUARD_DAYCARE_CONSTANTS_H

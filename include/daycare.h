@@ -25,6 +25,7 @@ void GiveEggFromDaycare(void);
 bool8 ShouldEggHatch(void);
 u16 GetSelectedMonNicknameAndSpecies(void);
 void GetDaycareMonNicknames(void);
+u8 GetEggMoves(struct Pokemon *pokemon, u16 *eggMoves);
 u8 GetDaycareState(void);
 void SetDaycareCompatibilityString(void);
 bool8 NameHasGenderSymbol(const u8 *name, u8 genderRatio);

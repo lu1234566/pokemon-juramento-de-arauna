@@ -776,6 +776,16 @@ static const struct MenuAction MultichoiceList_Exit[] =
     {gText_Exit},
 };
 
+static const struct MenuAction MultichoiceList_AraunaQol[] =
+{
+    {gText_AraunaQolLevel},
+    {gText_AraunaQolRelearn},
+    {gText_AraunaQolEggMoves},
+    {gText_AraunaQolStorage},
+    {gText_AraunaQolHeal},
+    {gText_Exit},
+};
+
 struct MultichoiceListStruct
 {
     const struct MenuAction *list;
@@ -898,6 +908,7 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_SLATEPORT_TENT_RULES]       = MULTICHOICE(MultichoiceList_SlateportTentRules),
     [MULTI_FALLARBOR_TENT_RULES]       = MULTICHOICE(MultichoiceList_FallarborTentRules),
     [MULTI_TAG_MATCH_TYPE]             = MULTICHOICE(MultichoiceList_TagMatchType),
+    [MULTI_ARAUNA_QOL]                 = MULTICHOICE(MultichoiceList_AraunaQol),
 };
 
 const u8 *const gStdStrings[] =

@@ -28,6 +28,7 @@
 #include "pokemon_storage_system.h"
 #include "task.h"
 #include "naming_screen.h"
+#include "arauna_qol.h"
 #include "battle_setup.h"
 #include "overworld.h"
 #include "party_menu.h"
@@ -3348,7 +3349,10 @@ static void Cmd_getexp(void)
                 gBattleScripting.getexpState = 5;
                 gBattleMoveDamage = 0; // used for exp
             }
-            else if (GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_LEVEL) == MAX_LEVEL)
+            // The Arauna level cap rides on the same branch the game already
+            // had for a maxed Pokemon: at the cap there is nothing left to
+            // gain, so it stops earning rather than being told off about it.
+            else if (AraunaIsAtLevelCap(&gPlayerParty[gBattleStruct->expGetterMonId]))
             {
                 *(&gBattleStruct->sentInPokes) >>= 1;
                 gBattleScripting.getexpState = 5;

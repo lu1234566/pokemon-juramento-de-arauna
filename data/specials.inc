@@ -235,6 +235,11 @@ gSpecials::
 	def_special SetDeptStoreFloor
 	def_special DoLotteryCornerComputerEffect
 	def_special EndLotteryCornerComputerEffect
+	def_special AraunaSpecial_GetLevelCap
+	def_special AraunaSpecial_SetPartyToLevelCap
+	def_special AraunaSpecial_HealParty
+	def_special AraunaSpecial_EggMoveModeOn
+	def_special AraunaSpecial_EggMoveModeOff
 	def_special ChooseMonForMoveRelearner, waitstate=1
 	def_special MoveDeleterChooseMoveToForget
 	def_special MoveDeleterForgetMove

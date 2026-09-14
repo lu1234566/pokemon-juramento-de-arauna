@@ -1,6 +1,7 @@
 #include "global.h"
 #include "battle_pike.h"
 #include "battle_pyramid.h"
+#include "arauna_qol.h"
 #include "battle_pyramid_bag.h"
 #include "bg.h"
 #include "event_data.h"
@@ -54,6 +55,7 @@ enum
     MENU_ACTION_POKEMON,
     MENU_ACTION_BAG,
     MENU_ACTION_POKENAV,
+    MENU_ACTION_ARAUNA,
     MENU_ACTION_PLAYER,
     MENU_ACTION_SAVE,
     MENU_ACTION_OPTION,
@@ -96,6 +98,7 @@ static bool8 StartMenuPokemonCallback(void);
 static bool8 StartMenuBagCallback(void);
 static bool8 StartMenuPokeNavCallback(void);
 static bool8 StartMenuPlayerNameCallback(void);
+static bool8 StartMenuAraunaCallback(void);
 static bool8 StartMenuSaveCallback(void);
 static bool8 StartMenuOptionCallback(void);
 static bool8 StartMenuExitCallback(void);
@@ -185,6 +188,7 @@ static const struct MenuAction sStartMenuItems[] =
     [MENU_ACTION_POKEMON]         = {gText_MenuPokemon, {.u8_void = StartMenuPokemonCallback}},
     [MENU_ACTION_BAG]             = {gText_MenuBag,     {.u8_void = StartMenuBagCallback}},
     [MENU_ACTION_POKENAV]         = {gText_MenuPokenav, {.u8_void = StartMenuPokeNavCallback}},
+    [MENU_ACTION_ARAUNA]          = {gText_MenuArauna,  {.u8_void = StartMenuAraunaCallback}},
     [MENU_ACTION_PLAYER]          = {gText_MenuPlayer,  {.u8_void = StartMenuPlayerNameCallback}},
     [MENU_ACTION_SAVE]            = {gText_MenuSave,    {.u8_void = StartMenuSaveCallback}},
     [MENU_ACTION_OPTION]          = {gText_MenuOption,  {.u8_void = StartMenuOptionCallback}},
@@ -330,6 +334,7 @@ static void BuildNormalStartMenu(void)
         AddStartMenuAction(MENU_ACTION_POKENAV);
     }
 
+    AddStartMenuAction(MENU_ACTION_ARAUNA);
     AddStartMenuAction(MENU_ACTION_PLAYER);
     AddStartMenuAction(MENU_ACTION_SAVE);
     AddStartMenuAction(MENU_ACTION_OPTION);
@@ -615,8 +620,13 @@ static bool8 HandleStartMenuInput(void)
 
         gMenuCallback = sStartMenuItems[sCurrentStartMenuActions[sStartMenuCursorPos]].func.u8_void;
 
+        // Everything that leaves the overworld fades out first. The entries
+        // listed here stay on the field and draw over it, so fading them would
+        // black the map out with nothing to fade back in -- which is exactly
+        // what the Arauna menu did before it was added to this list.
         if (gMenuCallback != StartMenuSaveCallback
             && gMenuCallback != StartMenuExitCallback
+            && gMenuCallback != StartMenuAraunaCallback
             && gMenuCallback != StartMenuSafariZoneRetireCallback
             && gMenuCallback != StartMenuBattlePyramidRetireCallback)
         {
@@ -691,6 +701,23 @@ static bool8 StartMenuPokeNavCallback(void)
         CleanupOverworldWindowsAndTilemaps();
         SetMainCallback2(CB2_InitPokeNav);  // Display PokéNav
 
+        return TRUE;
+    }
+
+    return FALSE;
+}
+
+// Hands over to AraunaQol_EventScript_Menu. The start menu closes first and
+// the script takes the field lock itself, which is the path a PC or a sign
+// already takes -- so nothing here needs to know how menus are drawn.
+static bool8 StartMenuAraunaCallback(void)
+{
+    if (!gPaletteFade.active)
+    {
+        RemoveExtraStartMenuWindows();
+        HideStartMenu();
+        LockPlayerFieldControls();
+        ScriptContext_SetupScript(AraunaQol_EventScript_Menu);
         return TRUE;
     }
 
