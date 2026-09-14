@@ -22,6 +22,8 @@ void AraunaSpecial_SetPartyToLevelCap(void);
 void AraunaSpecial_HealParty(void);
 void AraunaSpecial_EggMoveModeOn(void);
 void AraunaSpecial_EggMoveModeOff(void);
+void AraunaSpecial_ToggleInfiniteRepel(void);
+void AraunaSpecial_ToggleShowIVs(void);
 
 // Set by the script before the relearner screen opens, read by
 // GetMoveRelearnerMoves so the same screen can serve egg moves.

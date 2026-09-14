@@ -317,6 +317,8 @@ extern const u8 gText_AraunaQolRelearn[];
 extern const u8 gText_AraunaQolEggMoves[];
 extern const u8 gText_AraunaQolStorage[];
 extern const u8 gText_AraunaQolHeal[];
+extern const u8 gText_AraunaQolRepel[];
+extern const u8 gText_AraunaQolIVs[];
 extern const u8 gText_MenuArauna[];
 extern const u8 gText_BattleStyle[];
 extern const u8 gText_Sound[];

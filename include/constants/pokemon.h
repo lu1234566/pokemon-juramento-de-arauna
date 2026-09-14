@@ -91,6 +91,10 @@
 #define DEFAULT_STAT_STAGE 6
 #define MAX_STAT_STAGE    12
 
+// Arauna: every party member earns from a battle without carrying an Exp
+// Share. Set to FALSE to put the item back in charge.
+#define ARAUNA_NATIVE_EXP_SHARE TRUE
+
 // Shiny odds
 // Arauna runs at 1 in 100 rather than the vanilla 1 in 8192: 65536/100 = 655.
 // Note for anyone changing this again: a few callers pass SHINY_ODDS as an

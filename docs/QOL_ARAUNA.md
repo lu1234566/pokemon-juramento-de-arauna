@@ -1,6 +1,6 @@
 # Conforto de jogo
 
-Oito adições. Sete são opcionais — o jogador só as encontra se as procurar — e
+Doze adições. Sete são opcionais — o jogador só as encontra se as procurar — e
 a oitava, o teto de experiência, é a única que muda uma regra sozinha, porque é
 justamente para isso que um level cap existe.
 
@@ -15,6 +15,8 @@ Entrada nova no START, entre POKéNAV e o nome do jogador. Abre cinco itens:
 | **LINEAGE** | ensina os egg moves da linhagem dele |
 | **STORAGE** | abre o PC de onde você estiver |
 | **REST** | restaura HP, PP e status da equipe inteira, de graça |
+| **WARD** | liga/desliga o repelente permanente |
+| **POTENTIAL** | liga/desliga a leitura de IVs na tela de resumo |
 
 É um **script**, não uma tela nova em C. O `multichoice` do próprio motor já
 resolve janela, cursor, botão B e a linha de cancelar, e o relearner já era
@@ -59,7 +61,20 @@ Reaproveita a tela do relearner inteira. A única diferença entre os dois é de
 onde sai a lista de movimentos, e isso é uma variável que o script liga antes
 de abrir a tela. Nenhuma tela nova, nenhum desenho novo.
 
-## As três de fora do menu
+## Os dois interruptores
+
+**WARD — repelente que não acaba.** A regra é a mesma de um repelente comprado:
+selvagens de nível abaixo do líder da equipe são pulados. Não é "sem encontro
+nenhum", então nada raro fica inalcançável por ligar isso. Um repelente comprado
+continua contando os passos, mas não anuncia mais que acabou, porque o efeito
+não acaba.
+
+**POTENTIAL — a página SKILLS mostra os IVs.** Mesmos seis campos, mesmo
+desenho: só os números trocam, de "no que ele virou" para "com o que ele
+nasceu". O HP aparece como `IV/31` para dar a escala. Desligar devolve os
+atributos na hora.
+
+## As cinco de fora do menu
 
 **Correr por padrão.** Opção `AUTO RUN` no menu Opções, ligada em jogo novo. Com
 ela o B inverte: você corre andando e segura B para andar devagar, que é o que
@@ -76,6 +91,22 @@ tira um ou dois de um contador que começa perto de vinte. Agora olha a cada
 passo e zera o contador de uma vez: o primeiro passo leva o ovo à última volta,
 o segundo choca. O intervalo é `ARAUNA_EGG_STEPS_PER_CHECK`; pôr 255 devolve o
 ritmo original.
+
+**EXP Share nativo.** Todo Pokémon vivo da equipe ganha da batalha sem carregar
+o item. O rateio em si é o do jogo — metade para quem lutou, metade dividida —
+então o que muda é só o banco parar de ficar para trás. A chave é
+`ARAUNA_NATIVE_EXP_SHARE`; pôr `FALSE` devolve o item ao comando.
+
+**Sem HM slave.** Os oito movimentos de HM são oferecidos por qualquer Pokémon
+assim que a insígnia correspondente estiver na mão, tanto no menu da equipe
+quanto nos avisos do mundo (cortar árvore, quebrar rocha, empurrar pedra,
+surfar, mergulhar, cachoeira). **A insígnia continua obrigatória** — cada script
+checa a sua antes de qualquer coisa, e `CursorCb_FieldMove` também — então a
+ordem em que o mundo abre é exatamente a mesma. O que some é a vaga que um
+Bidoof ocupava.
+
+Dig, Teleport, Sweet Scent e Milk Drink ficaram como estavam: são coisas que um
+Pokémon de fato faz, não pedágio de estrada.
 
 **Shiny em 1/100.** `SHINY_ODDS` foi de 8 para 655 — 655/65536 é 1 em 100,1.
 
@@ -117,9 +148,26 @@ Tudo, exceto a taxa de shiny, que é aritmética e não amostra:
   `src/data/pokemon/egg_moves.h` declara;
 - STORAGE: abre o PC com as cinco opções;
 - AUTO RUN: 15 tiles sem B contra 7 tiles com B na mesma faixa, em 120 frames;
-- ovo: chocou no segundo passo.
+- ovo: chocou no segundo passo;
+- WARD: liga e desliga, com a fala certa dos dois lados;
+- POTENTIAL: a página SKILLS mostrou 6 / 0 / 5 / 16 / 7 / 26 contra os IVs lidos
+  da RAM na mesma partida — 6, 0, 5, 26, 16, 7 — batendo campo a campo;
+- sem HM slave: CUT apareceu no menu de um Sementim cujos movimentos são
+  [167, 0, 0, 0], com a primeira insígnia na mão;
+- EXP Share: em três partidas seguidas, o lutador ganhou 26 de experiência e o
+  Pokémon que ficou no banco ganhou 6, com `gExpShareExp = 6`, sem item nenhum.
 
-Um defeito foi achado assim e corrigido: o menu inicial escurece a tela antes de
+**Dois** defeitos foram achados assim, e nenhum dos dois aparecia na compilação.
+
+O primeiro: o menu inicial escurece a tela antes de
 qualquer callback, menos os de uma lista curta que ficam no campo. O menu ARAUNA
 não estava na lista, então o mapa apagava e nada o trazia de volta. Ele entrou
 na lista, ao lado de SAVE e EXIT.
+
+O segundo, mais instrutivo: o EXP Share nativo não funcionava, e o código
+*parecia* certo. Eu havia mudado os dois pontos que fazem a conta do rateio,
+mas quem não lutou e não segura o item é **descartado antes deles**, numa
+terceira condição lá em cima na máquina de estados. As duas mudanças
+compilavam, liam bem e não faziam absolutamente nada. Só a medição em batalha
+pegou: o banco ganhava zero. Com a terceira condição corrigida, o banco passou
+a ganhar 6 por batalha, reproduzível em três partidas.

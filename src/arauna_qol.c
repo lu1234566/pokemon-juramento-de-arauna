@@ -180,3 +180,17 @@ void AraunaSpecial_EggMoveModeOff(void)
 {
     AraunaSetEggMoveMode(FALSE);
 }
+
+// The two switches the menu offers. Each reports its new state in VAR_RESULT so
+// the script can say which way it went without duplicating the knowledge.
+void AraunaSpecial_ToggleInfiniteRepel(void)
+{
+    gSaveBlock2Ptr->optionsInfiniteRepel ^= 1;
+    gSpecialVar_Result = gSaveBlock2Ptr->optionsInfiniteRepel;
+}
+
+void AraunaSpecial_ToggleShowIVs(void)
+{
+    gSaveBlock2Ptr->optionsShowIVs ^= 1;
+    gSpecialVar_Result = gSaveBlock2Ptr->optionsShowIVs;
+}

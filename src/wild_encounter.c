@@ -856,6 +856,11 @@ bool8 UpdateRepelCounter(void)
     if (InUnionRoom() == TRUE)
         return FALSE;
 
+    // A bought repel keeps ticking down while the toggle is on, but it is not
+    // allowed to announce that it wore off -- the effect never actually stops.
+    if (gSaveBlock2Ptr->optionsInfiniteRepel)
+        return FALSE;
+
     steps = VarGet(VAR_REPEL_STEP_COUNT);
 
     if (steps != 0)
@@ -875,7 +880,10 @@ static bool8 IsWildLevelAllowedByRepel(u8 wildLevel)
 {
     u8 i;
 
-    if (!VarGet(VAR_REPEL_STEP_COUNT))
+    // Arauna: with the toggle on, repel is simply always in effect. It is the
+    // same rule as a real repel -- wild Pokemon weaker than the lead are
+    // skipped -- so nothing rarer becomes unreachable by turning it on.
+    if (!VarGet(VAR_REPEL_STEP_COUNT) && !gSaveBlock2Ptr->optionsInfiniteRepel)
         return TRUE;
 
     for (i = 0; i < PARTY_SIZE; i++)

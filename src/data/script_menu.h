@@ -783,6 +783,8 @@ static const struct MenuAction MultichoiceList_AraunaQol[] =
     {gText_AraunaQolEggMoves},
     {gText_AraunaQolStorage},
     {gText_AraunaQolHeal},
+    {gText_AraunaQolRepel},
+    {gText_AraunaQolIVs},
     {gText_Exit},
 };
 

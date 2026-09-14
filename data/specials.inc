@@ -240,6 +240,8 @@ gSpecials::
 	def_special AraunaSpecial_HealParty
 	def_special AraunaSpecial_EggMoveModeOn
 	def_special AraunaSpecial_EggMoveModeOff
+	def_special AraunaSpecial_ToggleInfiniteRepel
+	def_special AraunaSpecial_ToggleShowIVs
 	def_special ChooseMonForMoveRelearner, waitstate=1
 	def_special MoveDeleterChooseMoveToForget
 	def_special MoveDeleterForgetMove

@@ -3304,7 +3304,12 @@ static void Cmd_getexp(void)
                 else
                     holdEffect = GetItemHoldEffect(item);
 
-                if (holdEffect == HOLD_EFFECT_EXP_SHARE)
+                // Arauna: the Exp Share is native, so every living party
+                // member counts as a holder whether it carries one or not.
+                // The split itself is untouched -- half to whoever fought,
+                // half shared -- so nothing about the pacing changes beyond
+                // the bench no longer falling behind.
+                if (holdEffect == HOLD_EFFECT_EXP_SHARE || ARAUNA_NATIVE_EXP_SHARE)
                     viaExpShare++;
             }
 
@@ -3343,7 +3348,13 @@ static void Cmd_getexp(void)
             else
                 holdEffect = GetItemHoldEffect(item);
 
-            if (holdEffect != HOLD_EFFECT_EXP_SHARE && !(gBattleStruct->sentInPokes & 1))
+            // A Pokemon that sat the fight out and holds no Exp Share is thrown
+            // out here, before any of the exp maths further down runs. With the
+            // native share on, nobody is thrown out for sitting it out -- which
+            // is the whole point, and is the line that actually makes the
+            // feature work.
+            if (holdEffect != HOLD_EFFECT_EXP_SHARE && !ARAUNA_NATIVE_EXP_SHARE
+             && !(gBattleStruct->sentInPokes & 1))
             {
                 *(&gBattleStruct->sentInPokes) >>= 1;
                 gBattleScripting.getexpState = 5;
@@ -3375,7 +3386,7 @@ static void Cmd_getexp(void)
                     else
                         gBattleMoveDamage = 0;
 
-                    if (holdEffect == HOLD_EFFECT_EXP_SHARE)
+                    if (holdEffect == HOLD_EFFECT_EXP_SHARE || ARAUNA_NATIVE_EXP_SHARE)
                         gBattleMoveDamage += gExpShareExp;
                     if (holdEffect == HOLD_EFFECT_LUCKY_EGG)
                         gBattleMoveDamage = (gBattleMoveDamage * 150) / 100;

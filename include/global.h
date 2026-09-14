@@ -523,7 +523,9 @@ struct SaveBlock2
              u16 optionsBattleSceneOff:1; // whether battle animations are disabled
              u16 regionMapZoom:1; // whether the map is zoomed in
              u16 optionsAutoRun:1; // Arauna: run without holding B, B walks
-             //u16 padding1:3;
+             u16 optionsInfiniteRepel:1; // Arauna: repel never runs out
+             u16 optionsShowIVs:1; // Arauna: summary shows IVs, not stats
+             //u16 padding1:1;
              //u16 padding2;
     /*0x18*/ struct Pokedex pokedex;
     /*0x90*/ u8 filler_90[0x8];

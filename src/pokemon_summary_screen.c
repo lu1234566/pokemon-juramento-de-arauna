@@ -3396,10 +3396,25 @@ static void BufferLeftColumnStats(void)
     u8 *attackString = Alloc(8);
     u8 *defenseString = Alloc(8);
 
+    // Arauna: with the IV toggle on this page shows what the Pokemon was born
+    // with instead of what it grew into. Same six slots, same layout -- only
+    // the numbers change, and the toggle puts them straight back.
+    if (gSaveBlock2Ptr->optionsShowIVs)
+    {
+        struct Pokemon *mon = &sMonSummaryScreen->currentMon;
+
+        ConvertIntToDecimalStringN(currentHPString, GetMonData(mon, MON_DATA_HP_IV), STR_CONV_MODE_RIGHT_ALIGN, 3);
+        ConvertIntToDecimalStringN(maxHPString, 31, STR_CONV_MODE_RIGHT_ALIGN, 3);
+        ConvertIntToDecimalStringN(attackString, GetMonData(mon, MON_DATA_ATK_IV), STR_CONV_MODE_RIGHT_ALIGN, 7);
+        ConvertIntToDecimalStringN(defenseString, GetMonData(mon, MON_DATA_DEF_IV), STR_CONV_MODE_RIGHT_ALIGN, 7);
+    }
+    else
+    {
     ConvertIntToDecimalStringN(currentHPString, sMonSummaryScreen->summary.currentHP, STR_CONV_MODE_RIGHT_ALIGN, 3);
     ConvertIntToDecimalStringN(maxHPString, sMonSummaryScreen->summary.maxHP, STR_CONV_MODE_RIGHT_ALIGN, 3);
     ConvertIntToDecimalStringN(attackString, sMonSummaryScreen->summary.atk, STR_CONV_MODE_RIGHT_ALIGN, 7);
     ConvertIntToDecimalStringN(defenseString, sMonSummaryScreen->summary.def, STR_CONV_MODE_RIGHT_ALIGN, 7);
+    }
 
     DynamicPlaceholderTextUtil_Reset();
     DynamicPlaceholderTextUtil_SetPlaceholderPtr(0, currentHPString);
@@ -3421,9 +3436,20 @@ static void PrintLeftColumnStats(void)
 
 static void BufferRightColumnStats(void)
 {
+    if (gSaveBlock2Ptr->optionsShowIVs)
+    {
+        struct Pokemon *mon = &sMonSummaryScreen->currentMon;
+
+        ConvertIntToDecimalStringN(gStringVar1, GetMonData(mon, MON_DATA_SPATK_IV), STR_CONV_MODE_RIGHT_ALIGN, 3);
+        ConvertIntToDecimalStringN(gStringVar2, GetMonData(mon, MON_DATA_SPDEF_IV), STR_CONV_MODE_RIGHT_ALIGN, 3);
+        ConvertIntToDecimalStringN(gStringVar3, GetMonData(mon, MON_DATA_SPEED_IV), STR_CONV_MODE_RIGHT_ALIGN, 3);
+    }
+    else
+    {
     ConvertIntToDecimalStringN(gStringVar1, sMonSummaryScreen->summary.spatk, STR_CONV_MODE_RIGHT_ALIGN, 3);
     ConvertIntToDecimalStringN(gStringVar2, sMonSummaryScreen->summary.spdef, STR_CONV_MODE_RIGHT_ALIGN, 3);
     ConvertIntToDecimalStringN(gStringVar3, sMonSummaryScreen->summary.speed, STR_CONV_MODE_RIGHT_ALIGN, 3);
+    }
 
     DynamicPlaceholderTextUtil_Reset();
     DynamicPlaceholderTextUtil_SetPlaceholderPtr(0, gStringVar1);

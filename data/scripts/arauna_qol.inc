@@ -18,7 +18,9 @@ AraunaQol_EventScript_Choose::
 	case 2, AraunaQol_EventScript_EggMoves
 	case 3, AraunaQol_EventScript_Storage
 	case 4, AraunaQol_EventScript_Heal
-	case 5, AraunaQol_EventScript_Done
+	case 5, AraunaQol_EventScript_Ward
+	case 6, AraunaQol_EventScript_Potential
+	case 7, AraunaQol_EventScript_Done
 	case MULTI_B_PRESSED, AraunaQol_EventScript_Done
 	goto AraunaQol_EventScript_Done
 	end
@@ -120,6 +122,32 @@ AraunaQol_EventScript_Heal::
 	goto AraunaQol_EventScript_Choose
 	end
 
+@ --- Os dois interruptores --------------------------------------------------
+
+AraunaQol_EventScript_Ward::
+	special AraunaSpecial_ToggleInfiniteRepel
+	goto_if_eq VAR_RESULT, 0, AraunaQol_EventScript_WardOff
+	msgbox AraunaQol_Text_WardOn, MSGBOX_DEFAULT
+	goto AraunaQol_EventScript_Choose
+	end
+
+AraunaQol_EventScript_WardOff::
+	msgbox AraunaQol_Text_WardOff, MSGBOX_DEFAULT
+	goto AraunaQol_EventScript_Choose
+	end
+
+AraunaQol_EventScript_Potential::
+	special AraunaSpecial_ToggleShowIVs
+	goto_if_eq VAR_RESULT, 0, AraunaQol_EventScript_PotentialOff
+	msgbox AraunaQol_Text_PotentialOn, MSGBOX_DEFAULT
+	goto AraunaQol_EventScript_Choose
+	end
+
+AraunaQol_EventScript_PotentialOff::
+	msgbox AraunaQol_Text_PotentialOff, MSGBOX_DEFAULT
+	goto AraunaQol_EventScript_Choose
+	end
+
 @ --- Text ------------------------------------------------------------------
 
 AraunaQol_Text_WhatDoYouNeed:
@@ -174,3 +202,18 @@ AraunaQol_Text_AccessedStorage:
 
 AraunaQol_Text_PartyHealed:
 	.string "Your POKéMON are rested and whole.$"
+
+AraunaQol_Text_WardOn:
+	.string "The weaker ones will keep their\n"
+	.string "distance from now on.$"
+
+AraunaQol_Text_WardOff:
+	.string "They will come as they come again.$"
+
+AraunaQol_Text_PotentialOn:
+	.string "The SKILLS page will show what each\n"
+	.string "one was born with.$"
+
+AraunaQol_Text_PotentialOff:
+	.string "The SKILLS page is back to what they\n"
+	.string "grew into.$"

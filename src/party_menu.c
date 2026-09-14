@@ -2624,6 +2624,21 @@ static void SetPartyMonFieldSelectionActions(struct Pokemon *mons, u8 slotId)
         }
     }
 
+    // Arauna: no HM slaves. The eight HM field moves are offered by any
+    // Pokemon once the matching badge is in hand, so nobody has to keep a
+    // Bidoof around to carry them. CursorCb_FieldMove still checks the badge,
+    // so this only removes the "must know the move" half of the requirement.
+    // The moves past WATERFALL are left alone: Dig, Teleport and the rest are
+    // things a Pokemon genuinely does, not tolls on the road.
+    for (j = 0; j <= FIELD_MOVE_WATERFALL; j++)
+    {
+        if (!FlagGet(FLAG_BADGE01_GET + j))
+            continue;
+        if (MonKnowsMove(&mons[slotId], sFieldMoves[j]))
+            continue;       // ja foi acrescentado acima
+        AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, j + MENU_FIELD_MOVES);
+    }
+
     if (!InBattlePike())
     {
         if (GetMonData(&mons[1], MON_DATA_SPECIES) != SPECIES_NONE)

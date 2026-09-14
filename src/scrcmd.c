@@ -1728,6 +1728,27 @@ bool8 ScrCmd_checkpartymove(struct ScriptContext *ctx)
             break;
         }
     }
+
+    // Arauna: no HM slaves. If nobody carries the move, the first healthy
+    // Pokemon in the party does it anyway. The badge is still required -- each
+    // of these scripts checks its own badge flag before calling this -- so the
+    // order the world opens up in is untouched. All that goes away is the slot
+    // a Bidoof used to occupy.
+    if (gSpecialVar_Result == PARTY_SIZE)
+    {
+        for (i = 0; i < PARTY_SIZE; i++)
+        {
+            u16 species = GetMonData(&gPlayerParty[i], MON_DATA_SPECIES, NULL);
+
+            if (!species)
+                break;
+            if (GetMonData(&gPlayerParty[i], MON_DATA_IS_EGG))
+                continue;
+            gSpecialVar_Result = i;
+            gSpecialVar_0x8004 = species;
+            break;
+        }
+    }
     return FALSE;
 }
 
