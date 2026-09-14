@@ -41,6 +41,7 @@ ROOT = Path(__file__).resolve().parents[2]
 # The tree before the moveset pass landed; see committed().
 BASELINE = "25bf1442"
 PLACEMENT = ROOT / "docs/arauna/ARAUNA_PLACEMENT.csv"
+DEX_MAPPING = ROOT / "docs/arauna/ARAUNA_DEX_ENGINE_MAPPING.csv"
 LEVEL_UP = ROOT / "src/data/pokemon/level_up_learnset_pointers.h"
 TMHM = ROOT / "src/data/pokemon/tmhm_learnsets.h"
 TUTOR = ROOT / "src/data/pokemon/tutor_learnsets.h"
@@ -67,6 +68,35 @@ def resembles() -> dict[str, str]:
     for row in csv.DictReader(PLACEMENT.open(encoding="utf-8")):
         inverse[row["now_holds_slot"]] = row["engine_slot"]
     return inverse
+
+
+def fairy_slots() -> set[str]:
+    """Engine slots that contain an Arauana Fairy-type species.
+
+    Their level-up pointers intentionally target custom overlay tables declared
+    in arauna_fairy_learnsets.h. Keeping this pass here makes --write
+    idempotent instead of silently restoring a vanilla/resembled pointer.
+    """
+    slots = set()
+    with DEX_MAPPING.open(encoding="utf-8") as f:
+        for row in csv.DictReader(f):
+            if "fairy" in row["types"].split("/"):
+                slots.add(row["species_constant"])
+    return slots
+
+
+def fairy_pointer_name(slot: str) -> str:
+    return f"sAraunaFairy{slot.removeprefix('SPECIES_')}LevelUpLearnset"
+
+
+def apply_fairy_pointers(text: str) -> tuple[str, int]:
+    changed = 0
+    for slot in fairy_slots():
+        pattern = rf"(\[{slot}\] = )s[A-Za-z0-9_]+LevelUpLearnset,"
+        replacement = rf"\1{fairy_pointer_name(slot)},"
+        text, n = re.subn(pattern, replacement, text)
+        changed += n
+    return text, changed
 
 
 def repoint_pointers(text: str, inverse) -> tuple[str, int]:
@@ -137,6 +167,7 @@ def main() -> int:
           f"that resembles a different species")
 
     level_up, n_level = repoint_pointers(committed(LEVEL_UP), inverse)
+    level_up, n_fairy = apply_fairy_pointers(level_up)
     tmhm, n_tm = repoint_blocks(committed(TMHM), inverse,
                                 r"\[(SPECIES_\w+)\] = \{ \.learnset = \{(.*?)\}\s*\},")
     tutor, n_tutor = repoint_blocks(committed(TUTOR), inverse,
@@ -144,6 +175,7 @@ def main() -> int:
     eggs, n_egg = repoint_eggs(committed(EGG), inverse)
 
     print(f"  level-up progressions repointed: {n_level}")
+    print(f"  Fairy level-up overlays pinned:  {n_fairy}")
     print(f"  TM/HM sets repointed:            {n_tm}")
     print(f"  tutor sets repointed:            {n_tutor}")
     print(f"  egg move lists rebuilt:          {n_egg}")
