@@ -91,13 +91,38 @@ def arauna():
     return by_slot, by_dex
 
 
+def obtainable_items() -> set[str]:
+    """Items the world actually hands over, by any of the ways it hands things
+    over. An evolution stone that exists only in the item table is a dead end."""
+    # Only places that HAND an item over. src/data/items.h is deliberately not
+    # read: it declares every item in the game, so including it would make this
+    # check pass for everything and mean nothing.
+    found = subprocess.run(
+        ["grep", "-rhoE",
+         r"(finditem|giveitem|setvar VAR_0x[0-9A-Fa-f]+,|\.2byte)\s*(ITEM_[A-Z_0-9]+)", "data"],
+        cwd=ROOT, capture_output=True, text=True).stdout
+    return set(re.findall(r"ITEM_[A-Z_0-9]+", found))
+
+
 def evolution_links(by_slot):
-    """dex -> dex it evolves into, and the reverse."""
+    """dex -> dex it evolves into, and the reverse.
+
+    Every method counts, not just EVO_LEVEL: friendship and stones reach a
+    species just as surely as a level does. The one method that can fail to
+    reach is EVO_ITEM, and only when the item itself is unobtainable, so that
+    is the one case checked. Reading only EVO_LEVEL used to quietly call three
+    species unobtainable the moment their method changed.
+    """
     forward, backward = {}, {}
-    for match in re.finditer(r"\[(SPECIES_\w+)\]\s*= \{\{EVO_LEVEL, \d+, (SPECIES_\w+)\}\}",
-                             EVOLUTION.read_text(encoding="utf-8")):
+    items = obtainable_items()
+    for match in re.finditer(
+            r"\[(SPECIES_\w+)\]\s*= \{\{(EVO_\w+),\s*([^,]+?),\s*(SPECIES_\w+)\}\}",
+            EVOLUTION.read_text(encoding="utf-8")):
+        method, param = match.group(2), match.group(3).strip()
+        if method in ("EVO_ITEM", "EVO_TRADE_ITEM") and param not in items:
+            continue
         source = by_slot.get(match.group(1))
-        target = by_slot.get(match.group(2))
+        target = by_slot.get(match.group(4))
         if source and target:
             forward.setdefault(source["dex"], []).append(target["dex"])
             backward[target["dex"]] = source["dex"]

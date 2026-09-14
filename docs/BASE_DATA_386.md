@@ -86,20 +86,24 @@ Dois achados o relatório chama de erro objetivo, e os dois merecem uma correç�
 - **#049 Borbolim → #050 Casulete**, BST caindo de 287 para 283;
 - **#163 Corurupim**, "evolui para o próprio #163".
 
-**Nenhum dos dois é o que parece.** Fui conferir no repo antes de repetir:
-`src/data/pokemon/evolution.h` **não declara uma única evolução** — nem para
-essas duas espécies, nem para nenhuma das 386. Não existe autoevolução no
-arquivo, existe arquivo vazio.
+O de #163 **não é o que parece**, e o de #049 é meio-verdade.
 
-O que o relatório está descrevendo é o modelo de família do **próprio pacote**,
-que infere parentesco por número de Pokédex consecutivo. Conferido: das 81
-espécies que o pacote trata como tendo evolução, o repo confirma **zero**, e o
-#163 é um caso de `family_length = 2` numa família que só tem um membro — daí a
-comparação dele consigo mesmo.
+`src/data/pokemon/evolution.h` declara as 81 relações, e nenhuma delas é uma
+autoevolução — Corurupim já evolui para o #164 Coruja. O que o relatório está
+descrevendo é o modelo de família do **próprio pacote de dados de base**, que
+infere parentesco por número de Pokédex consecutivo e marcou o #163 com
+`family_length = 2` numa família de um membro só; daí ele se comparar consigo
+mesmo. Nada a consertar no repositório.
 
-Ou seja: o achado verdadeiro é maior e mais simples do que os dois listados —
-**o jogo não tem tabela de evoluções**. Isso não se conserta em dados de base;
-é o assunto do pacote de evoluções.
+> **Correção:** numa primeira leitura eu disse que o repositório não tinha
+> tabela de evoluções nenhuma. Estava errado — a expressão que usei para ler o
+> arquivo esperava blocos de várias linhas, e as 81 entradas são de uma linha
+> cada, então ela não achou nenhuma. A tabela sempre esteve lá. A mensagem do
+> commit que instalou os dados de base carrega essa afirmação errada.
+
+O #049 é real como número — o BST cai de 287 para 283 ao evoluir — mas é
+decisão de balanceamento, e os seis stats são justamente o que este pacote não
+mexe.
 
 ## Se for mexer nisso
 
