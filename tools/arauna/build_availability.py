@@ -129,8 +129,25 @@ def evolution_links(by_slot):
     return forward, backward
 
 
+def hardcoded_in_c(by_slot) -> set[int]:
+    """Species the engine produces from C, outside every table.
+
+    Route 119's rare fishing tile is the one that matters: sWildFeebas names its
+    species in src/wild_encounter.c and appears in no encounter table at all, so
+    reading only the tables calls it unobtainable when it is the only place it
+    lives. The roamer is here for the same reason.
+    """
+    found = subprocess.run(
+        ["grep", "-rhoE", r"SPECIES_[A-Z_0-9]+",
+         "src/wild_encounter.c", "src/roamer.c"],
+        cwd=ROOT, capture_output=True, text=True).stdout
+    return {by_slot[name]["dex"] for name in re.findall(r"SPECIES_[A-Z_0-9]+", found)
+            if name in by_slot}
+
+
 def scripted(by_slot) -> set[int]:
-    """Everything a map script hands out or starts a battle with, plus the starters."""
+    """Everything a map script hands out or starts a battle with, plus the
+    starters, plus what the engine hardcodes in C."""
     found = subprocess.run(
         ["grep", "-rhoE", r"(givemon|setwildbattle|createmon)[^\n]*SPECIES_[A-Z_0-9]+", "data"],
         cwd=ROOT, capture_output=True, text=True).stdout
@@ -138,7 +155,7 @@ def scripted(by_slot) -> set[int]:
            if name in by_slot}
     for starter in ("SPECIES_TREECKO", "SPECIES_TORCHIC", "SPECIES_MUDKIP"):
         out.add(by_slot[starter]["dex"])
-    return out
+    return out | hardcoded_in_c(by_slot)
 
 
 # The Battle Pyramid and Battle Pike have wild battles you cannot catch in, so

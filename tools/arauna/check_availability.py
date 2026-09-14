@@ -23,6 +23,24 @@ build = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(build)
 
 
+PLAN = ROOT / "docs/arauna/ESPECIAIS_ESTATICOS.csv"
+
+
+def planned() -> dict[int, str]:
+    """The legendaries and mythicals that are deliberately out of the random
+    tables, each with the placement it is waiting for.
+
+    They are not a loophole: a special still has to be reachable OR be named
+    here, so the hole stays exactly the size the file says it is, and closing
+    one means deleting its line.
+    """
+    import csv
+    if not PLAN.exists():
+        return {}
+    return {int(row["dex"]): row["placement"]
+            for row in csv.DictReader(PLAN.open(encoding="utf-8"))}
+
+
 def main() -> int:
     by_slot, by_dex = build.arauna()
     forward, _ = build.evolution_links(by_slot)
@@ -32,13 +50,22 @@ def main() -> int:
     obtainable = build.reachable(wild | build.scripted(by_slot), forward)
     missing = sorted(set(by_dex) - obtainable)
 
-    if missing:
-        names = ", ".join(f"#{d:03d} {by_dex[d]['name']}" for d in missing[:10])
-        print(f"Arauna availability FAILED: {len(missing)} unobtainable -- {names}",
+    plan = planned()
+    awaiting = [d for d in missing if d in plan]
+    broken = [d for d in missing if d not in plan]
+
+    if broken:
+        names = ", ".join(f"#{d:03d} {by_dex[d]['name']}" for d in broken[:10])
+        print(f"Arauna availability FAILED: {len(broken)} unobtainable -- {names}",
               file=sys.stderr)
         return 1
     print(f"Arauna availability: OK ({len(wild)} species catchable in the wild, "
-          f"all {len(by_dex)} obtainable counting evolution and gifts).")
+          f"{len(obtainable)} of {len(by_dex)} obtainable counting evolution and gifts).")
+    if awaiting:
+        print(f"  {len(awaiting)} legendaries/mythicals are held back for a static "
+              f"placement that does not exist yet, all named in {PLAN.name}:")
+        for d in awaiting:
+            print(f"    #{d:03d} {by_dex[d]['name']:14s} -> {plan[d]}")
     return 0
 
 

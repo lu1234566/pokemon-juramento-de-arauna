@@ -64,7 +64,12 @@ EWRAM_DATA static u32 sFeebasRngValue = 0;
 
 #include "data/wild_encounters.h"
 
-static const struct WildPokemon sWildFeebas = {20, 25, SPECIES_FEEBAS};
+// The rare-tile fishing slot on Route 119 is hardcoded here, outside the
+// encounter tables. SPECIES_FEEBAS is Arauna #349 Aracua, a Flying/Normal
+// bird, so leaving it would have the secret fishing spot pull a bird out of
+// the water. #121 Pirarim is the Water creature the design puts there, and
+// it is the only place it can be caught.
+static const struct WildPokemon sWildFeebas = {20, 25, SPECIES_RHYDON}; // #121 Pirarim
 
 static const u16 sRoute119WaterTileData[] =
 {
