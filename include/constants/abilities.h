@@ -80,6 +80,51 @@
 #define ABILITY_CACOPHONY 76
 #define ABILITY_AIR_LOCK 77
 
-#define ABILITIES_COUNT 78
+// The Arauna abilities. One per species, and the same one in both slots of
+// that species: Gen III stores only a single "which of the two" bit on the
+// Pokemon, chosen at random, so a species with two different abilities cannot
+// be relied on to have either. Putting the same ability in both slots is the
+// only way to guarantee the one that was designed for it.
+//
+// The constants keep the Portuguese spelling the design package uses, so the
+// package's ids and assignments still line up with the code; the names the
+// player reads are English, the same split the signature moves already use.
+#define ABILITY_FOGO_LEAL 78
+#define ABILITY_VIGIA_ALADO 79
+#define ABILITY_BICO_GRANITO 80
+#define ABILITY_COBRA_GRANDE 81
+#define ABILITY_COROA_SOLAR 82
+#define ABILITY_VEU_LUNAR 83
+#define ABILITY_VOZ_DE_TUPA 84
+#define ABILITY_CANTO_RIO 85
+#define ABILITY_SOL_PRIMEIRO 86
+#define ABILITY_LUA_PRIMEVA 87
+#define ABILITY_LACO_ETERNO 88
+#define ABILITY_MIL_RIOS 89
+#define ABILITY_GUARDIAO 90
+#define ABILITY_MATA_RENOVA 91
+#define ABILITY_TEMPESTADE 92
+#define ABILITY_SECA_BRAVA 93
+#define ABILITY_VENTO_SUL 94
+#define ABILITY_SOLO_VIVO 95
+#define ABILITY_FOGO_ANTIGO 96
+#define ABILITY_MARE_MESTRA 97
+#define ABILITY_PRIMEIRA_LUZ 98
+#define ABILITY_ULTIMA_LUZ 99
+#define ABILITY_DESEJO_VIVO 100
+#define ABILITY_JURAMENTO 101
+#define ABILITY_FOGO_VIGIA 102
+#define ABILITY_REI_DO_RIO 103
+#define ABILITY_CASCO_ANTIGO 104
+#define ABILITY_SOL_ABSOLUTO 105
+#define ABILITY_NOITE_ETERNA 106
+#define ABILITY_RESISTENCIA 107
+#define ABILITY_MAR_SAGRADO 108
+#define ABILITY_ARCO_VIVO 109
+#define ABILITY_PE_INVERSO 110
+#define ABILITY_REDEMOINHO 111
+#define ABILITY_ESSENCIA 112
+
+#define ABILITIES_COUNT 113
 
 #endif  // GUARD_CONSTANTS_ABILITIES_H

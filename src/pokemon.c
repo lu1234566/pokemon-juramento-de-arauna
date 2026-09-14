@@ -23,6 +23,7 @@
 #include "pokeblock.h"
 #include "pokemon.h"
 #include "arauna_qol.h"
+#include "arauna_abilities.h"
 #include "constants/daycare.h"
 #include "pokemon_animation.h"
 #include "pokemon_summary_screen.h"
@@ -1986,6 +1987,7 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
         attack = (150 * attack) / 100;
     if (defender->ability == ABILITY_MARVEL_SCALE && defender->status1)
         defense = (150 * defense) / 100;
+    spDefense = AraunaModifySpDefense(spDefense, defender);
     if (type == TYPE_ELECTRIC && AbilityBattleEffects(ABILITYEFFECT_FIELD_SPORT, 0, 0, ABILITYEFFECT_MUD_SPORT, 0))
         gBattleMovePower /= 2;
     if (type == TYPE_FIRE && AbilityBattleEffects(ABILITYEFFECT_FIELD_SPORT, 0, 0, ABILITYEFFECT_WATER_SPORT, 0))
@@ -2141,6 +2143,10 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
         if ((gBattleResources->flags->flags[battlerIdAtk] & RESOURCE_FLAG_FLASH_FIRE) && type == TYPE_FIRE)
             damage = (15 * damage) / 10;
     }
+
+    // The Arauna abilities that scale damage, dealt or taken. Last, so they see
+    // the finished number -- weather, screens and the rest already applied.
+    damage = AraunaModifyDamage(damage, attacker, defender, type, battlerIdAtk, battlerIdDef);
 
     return damage + 2;
 }

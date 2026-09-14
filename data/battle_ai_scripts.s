@@ -59,6 +59,10 @@ AI_CBM_CheckIfNegatesType:
 	get_ability AI_TARGET
 	if_equal ABILITY_VOLT_ABSORB, CheckIfVoltAbsorbCancelsElectric
 	if_equal ABILITY_WATER_ABSORB, CheckIfWaterAbsorbCancelsWater
+	@ SACRED SEA drinks water the same way, so the AI must stop throwing it.
+	if_equal ABILITY_MAR_SAGRADO, CheckIfWaterAbsorbCancelsWater
+	@ DRY SPELL halves it, which is worth a smaller nudge than an immunity.
+	if_equal ABILITY_SECA_BRAVA, CheckIfDrySpellSoftensWater
 	if_equal ABILITY_FLASH_FIRE, CheckIfFlashFireCancelsFire
 	if_equal ABILITY_WONDER_GUARD, CheckIfWonderGuardCancelsMove
 	if_equal ABILITY_LEVITATE, CheckIfLevitateCancelsGroundMove
@@ -72,6 +76,11 @@ CheckIfVoltAbsorbCancelsElectric:
 CheckIfWaterAbsorbCancelsWater:
 	get_curr_move_type
 	if_equal_ TYPE_WATER, Score_Minus12
+	goto AI_CheckBadMove_CheckSoundproof_
+
+CheckIfDrySpellSoftensWater:
+	get_curr_move_type
+	if_equal_ TYPE_WATER, Score_Minus5
 	goto AI_CheckBadMove_CheckSoundproof_
 
 CheckIfFlashFireCancelsFire:

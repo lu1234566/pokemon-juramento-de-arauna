@@ -4059,6 +4059,81 @@ BattleScript_DroughtActivates::
 	call BattleScript_WeatherFormChanges
 	end3
 
+@ --- The Arauna abilities -------------------------------------------------
+@ SOUTH WIND and LONG NIGHT are Intimidate with another stat, so they reuse
+@ its whole machine: the same deferral bit, the same target loop, the same
+@ trygetintimidatetarget. Only the stat and the message differ, and the
+@ message is the generic "stat fell" line because Emerald's ability-flavoured
+@ one names ATTACK in the string itself.
+
+BattleScript_AraunaSouthWindEnd3::
+	call BattleScript_AraunaSouthWind
+	end3
+
+BattleScript_AraunaLongNightEnd3::
+	call BattleScript_AraunaLongNight
+	end3
+
+BattleScript_AraunaSouthWind::
+	pause B_WAIT_TIME_SHORT
+	setbyte gBattlerTarget, 0
+	setstatchanger STAT_SPEED, 1, TRUE
+	goto BattleScript_AraunaSideStatDropLoop
+
+BattleScript_AraunaLongNight::
+	pause B_WAIT_TIME_SHORT
+	setbyte gBattlerTarget, 0
+	setstatchanger STAT_SPATK, 1, TRUE
+BattleScript_AraunaSideStatDropLoop:
+	trygetintimidatetarget BattleScript_AraunaSideStatDropReturn
+	jumpifstatus2 BS_TARGET, STATUS2_SUBSTITUTE, BattleScript_AraunaSideStatDropNext
+	statbuffchange STAT_CHANGE_NOT_PROTECT_AFFECTED | STAT_CHANGE_ALLOW_PTR, BattleScript_AraunaSideStatDropNext
+	jumpifbyte CMP_GREATER_THAN, cMULTISTRING_CHOOSER, 1, BattleScript_AraunaSideStatDropNext
+	setgraphicalstatchangevalues
+	playanimation BS_TARGET, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
+	printfromtable gStatDownStringIds
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_AraunaSideStatDropNext:
+	addbyte gBattlerTarget, 1
+	goto BattleScript_AraunaSideStatDropLoop
+BattleScript_AraunaSideStatDropReturn:
+	return
+
+@ OATH raises its own SP. DEF as it arrives.
+BattleScript_AraunaOathActivates::
+	pause B_WAIT_TIME_SHORT
+	setstatchanger STAT_SPDEF, 1, FALSE
+	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_CHANGE_ALLOW_PTR, BattleScript_AraunaOathEnd
+	jumpifbyte CMP_GREATER_THAN, cMULTISTRING_CHOOSER, 1, BattleScript_AraunaOathEnd
+	setgraphicalstatchangevalues
+	playanimation BS_ATTACKER, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
+	printfromtable gStatUpStringIds
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_AraunaOathEnd:
+	end3
+
+@ RAINBOW ARC answers a super effective hit it survived, mid-move rather than
+@ on entry, so it returns to the move instead of ending the turn.
+BattleScript_AraunaRainbowArc::
+	setstatchanger STAT_SPEED, 1, FALSE
+	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_CHANGE_ALLOW_PTR, BattleScript_AraunaRainbowArcEnd
+	jumpifbyte CMP_GREATER_THAN, cMULTISTRING_CHOOSER, 1, BattleScript_AraunaRainbowArcEnd
+	setgraphicalstatchangevalues
+	playanimation BS_ATTACKER, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
+	printfromtable gStatUpStringIds
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_AraunaRainbowArcEnd:
+	return
+
+@ MANY RIVERS drinks from its own water move.
+BattleScript_AraunaManyRivers::
+	printstring STRINGID_PKMNSXRESTOREDHPALITTLE2
+	waitmessage B_WAIT_TIME_LONG
+	orword gHitMarker, HITMARKER_IGNORE_SUBSTITUTE
+	healthbarupdate BS_ATTACKER
+	datahpupdate BS_ATTACKER
+	return
+
 BattleScript_TookAttack::
 	attackstring
 	pause B_WAIT_TIME_SHORT

@@ -25,6 +25,7 @@
 #include "link.h"
 #include "field_weather.h"
 #include "constants/abilities.h"
+#include "arauna_abilities.h"
 #include "constants/battle_anim.h"
 #include "constants/battle_move_effects.h"
 #include "constants/battle_script_commands.h"
@@ -2543,10 +2544,72 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u8 ability, u8 special, u16 moveA
                 }
                 break;
             case ABILITY_INTIMIDATE:
+            case ABILITY_VENTO_SUL:
+            case ABILITY_NOITE_ETERNA:
+                // The drop has to wait until both sides are out, which is what
+                // this bit is for. SOUTH WIND and LONG NIGHT queue on the same
+                // one and are told apart when it is spent.
                 if (!(gSpecialStatuses[battler].intimidatedMon))
                 {
                     gStatuses3[battler] |= STATUS3_INTIMIDATE_POKES;
                     gSpecialStatuses[battler].intimidatedMon = 1;
+                }
+                break;
+            case ABILITY_COROA_SOLAR:
+            case ABILITY_SOL_ABSOLUTO:
+                // Five turns, not Drought's endless sun: the design asks for
+                // five, and the way to say that is Sunny Day's own shape --
+                // the TEMPORARY bit plus the duration counter.
+                if (!(gBattleWeather & B_WEATHER_SUN))
+                {
+                    gBattleWeather = B_WEATHER_SUN_TEMPORARY;
+                    gWishFutureKnock.weatherDuration = 5;
+                    BattleScriptPushCursorAndCallback(BattleScript_DroughtActivates);
+                    gBattleScripting.battler = battler;
+                    effect++;
+                }
+                break;
+            case ABILITY_TEMPESTADE:
+                if (!(gBattleWeather & B_WEATHER_RAIN))
+                {
+                    gBattleWeather = B_WEATHER_RAIN_TEMPORARY;
+                    gWishFutureKnock.weatherDuration = 5;
+                    BattleScriptPushCursorAndCallback(BattleScript_DrizzleActivates);
+                    gBattleScripting.battler = battler;
+                    effect++;
+                }
+                break;
+            case ABILITY_JURAMENTO:
+                if (gBattleMons[battler].statStages[STAT_SPDEF] < MAX_STAT_STAGE)
+                {
+                    gBattlerAttacker = battler;
+                    gBattleScripting.battler = battler;
+                    BattleScriptPushCursorAndCallback(BattleScript_AraunaOathActivates);
+                    effect++;
+                }
+                break;
+            case ABILITY_PRIMEIRA_LUZ:
+                // Same shape as Shed Skin, without the dice: it arrives clean.
+                if ((gBattleMons[battler].status1 & STATUS1_ANY)
+                 || (gBattleMons[battler].status2 & STATUS2_CONFUSION))
+                {
+                    if (gBattleMons[battler].status1 & (STATUS1_POISON | STATUS1_TOXIC_POISON))
+                        StringCopy(gBattleTextBuff1, gStatusConditionString_PoisonJpn);
+                    if (gBattleMons[battler].status1 & STATUS1_SLEEP)
+                        StringCopy(gBattleTextBuff1, gStatusConditionString_SleepJpn);
+                    if (gBattleMons[battler].status1 & STATUS1_PARALYSIS)
+                        StringCopy(gBattleTextBuff1, gStatusConditionString_ParalysisJpn);
+                    if (gBattleMons[battler].status1 & STATUS1_BURN)
+                        StringCopy(gBattleTextBuff1, gStatusConditionString_BurnJpn);
+                    if (gBattleMons[battler].status1 & STATUS1_FREEZE)
+                        StringCopy(gBattleTextBuff1, gStatusConditionString_IceJpn);
+                    gBattleMons[battler].status1 = 0;
+                    gBattleMons[battler].status2 &= ~(STATUS2_CONFUSION | STATUS2_NIGHTMARE);
+                    gBattleScripting.battler = gActiveBattler = battler;
+                    BattleScriptPushCursorAndCallback(BattleScript_ShedSkinActivates);
+                    BtlController_EmitSetMonData(B_COMM_TO_CONTROLLER, REQUEST_STATUS_BATTLE, 0, 4, &gBattleMons[battler].status1);
+                    MarkBattlerForControllerExec(gActiveBattler);
+                    effect++;
                 }
                 break;
             case ABILITY_FORECAST:
@@ -2601,6 +2664,60 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u8 ability, u8 special, u16 moveA
                             gBattleMoveDamage = 1;
                         gBattleMoveDamage *= -1;
                         effect++;
+                    }
+                    break;
+                case ABILITY_MATA_RENOVA:
+                case ABILITY_SOLO_VIVO:
+                case ABILITY_DESEJO_VIVO:
+                    {
+                        s32 heal = 0;
+
+                        if (gLastUsedAbility == ABILITY_MATA_RENOVA)
+                        {
+                            heal = gBattleMons[battler].maxHP / 16;
+                            if (WEATHER_HAS_EFFECT && (gBattleWeather & B_WEATHER_SUN))
+                                heal = gBattleMons[battler].maxHP / 8;
+                        }
+                        else if (gLastUsedAbility == ABILITY_SOLO_VIVO)
+                        {
+                            if (WEATHER_HAS_EFFECT && (gBattleWeather & B_WEATHER_SANDSTORM))
+                                heal = gBattleMons[battler].maxHP / 16;
+                        }
+                        else
+                        {
+                            heal = gBattleMons[battler].maxHP / 16;
+                        }
+                        if (heal == 0 && gLastUsedAbility != ABILITY_SOLO_VIVO)
+                            heal = 1;
+
+                        // LIVING WISH also mends its ally. A battle script can
+                        // only commit one battler's HP per run, so the ally is
+                        // healed here and its bar refreshed directly -- the
+                        // message below speaks for the holder.
+                        if (gLastUsedAbility == ABILITY_DESEJO_VIVO
+                         && (gBattleTypeFlags & BATTLE_TYPE_DOUBLE))
+                        {
+                            u8 ally = BATTLE_PARTNER(battler);
+
+                            if (!(gAbsentBattlerFlags & gBitTable[ally])
+                             && gBattleMons[ally].hp != 0
+                             && gBattleMons[ally].hp < gBattleMons[ally].maxHP)
+                            {
+                                gBattleMons[ally].hp += heal;
+                                if (gBattleMons[ally].hp > gBattleMons[ally].maxHP)
+                                    gBattleMons[ally].hp = gBattleMons[ally].maxHP;
+                                gActiveBattler = ally;
+                                BtlController_EmitSetMonData(B_COMM_TO_CONTROLLER, REQUEST_HP_BATTLE, 0, 2, &gBattleMons[ally].hp);
+                                MarkBattlerForControllerExec(gActiveBattler);
+                            }
+                        }
+
+                        if (heal != 0 && gBattleMons[battler].maxHP > gBattleMons[battler].hp)
+                        {
+                            BattleScriptPushCursorAndCallback(BattleScript_RainDishActivates);
+                            gBattleMoveDamage = -heal;
+                            effect++;
+                        }
                     }
                     break;
                 case ABILITY_SHED_SKIN:
@@ -2675,6 +2792,7 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u8 ability, u8 special, u16 moveA
                         effect = 1;
                     }
                     break;
+                case ABILITY_MAR_SAGRADO:
                 case ABILITY_WATER_ABSORB:
                     if (moveType == TYPE_WATER && gBattleMoves[move].power != 0)
                     {
@@ -2834,6 +2952,40 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u8 ability, u8 special, u16 moveA
                     effect++;
                 }
                 break;
+            case ABILITY_ARCO_VIVO:
+                if (!(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
+                 && (gMoveResultFlags & MOVE_RESULT_SUPER_EFFECTIVE)
+                 && !(gMoveResultFlags & MOVE_RESULT_NOT_VERY_EFFECTIVE)
+                 && TARGET_TURN_DAMAGED
+                 && gBattleMons[battler].hp != 0
+                 && gBattleMons[battler].statStages[STAT_SPEED] < MAX_STAT_STAGE)
+                {
+                    // The script raises the attacker's stat, so point that at
+                    // the Pokemon that took the hit for the length of the raise.
+                    gBattlerAttacker = battler;
+                    gBattleScripting.battler = battler;
+                    BattleScriptPushCursor();
+                    gBattlescriptCurrInstr = BattleScript_AraunaRainbowArc;
+                    effect++;
+                }
+                break;
+            case ABILITY_FOGO_VIGIA:
+            case ABILITY_REDEMOINHO:
+                if (!(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
+                 && gBattleMons[gBattlerAttacker].hp != 0
+                 && !gProtectStructs[gBattlerAttacker].confusionSelfDmg
+                 && (gBattleMoves[move].flags & FLAG_MAKES_CONTACT)
+                 && TARGET_TURN_DAMAGED
+                 && (Random() % 10) < 3)
+                {
+                    gBattleCommunication[MOVE_EFFECT_BYTE] = MOVE_EFFECT_AFFECTS_USER
+                        | (gLastUsedAbility == ABILITY_FOGO_VIGIA ? MOVE_EFFECT_BURN : MOVE_EFFECT_CONFUSION);
+                    BattleScriptPushCursor();
+                    gBattlescriptCurrInstr = BattleScript_ApplySecondaryEffect;
+                    gHitMarker |= HITMARKER_STATUS_ABILITY_EFFECT;
+                    effect++;
+                }
+                break;
             case ABILITY_CUTE_CHARM:
                 if (!(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
                  && gBattleMons[gBattlerAttacker].hp != 0
@@ -2851,6 +3003,46 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u8 ability, u8 special, u16 moveA
                     gBattleMons[gBattlerAttacker].status2 |= STATUS2_INFATUATED_WITH(gBattlerTarget);
                     BattleScriptPushCursor();
                     gBattlescriptCurrInstr = BattleScript_CuteCharmActivates;
+                    effect++;
+                }
+                break;
+            }
+            break;
+        case ABILITYEFFECT_ARAUNA_ATTACKER: // 20
+            switch (gLastUsedAbility)
+            {
+            case ABILITY_MIL_RIOS:
+                if (!(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
+                 && moveType == TYPE_WATER
+                 && gBattleMoves[move].power != 0
+                 && TARGET_TURN_DAMAGED
+                 && gBattleMons[battler].hp != 0
+                 && gBattleMons[battler].hp < gBattleMons[battler].maxHP)
+                {
+                    gBattleMoveDamage = gBattleMons[battler].maxHP / 16;
+                    if (gBattleMoveDamage == 0)
+                        gBattleMoveDamage = 1;
+                    gBattleMoveDamage *= -1;
+                    gBattlerAttacker = battler;
+                    gBattleScripting.battler = battler;
+                    BattleScriptPushCursor();
+                    gBattlescriptCurrInstr = BattleScript_AraunaManyRivers;
+                    effect++;
+                }
+                break;
+            case ABILITY_VOZ_DE_TUPA:
+                if (!(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
+                 && AraunaAddsParalysis(gLastUsedAbility, moveType, move)
+                 && TARGET_TURN_DAMAGED
+                 && gBattleMons[gBattlerTarget].hp != 0
+                 && gBattleMons[gBattlerTarget].status1 == 0
+                 && (Random() % 5) == 0)
+                {
+                    gBattleCommunication[MOVE_EFFECT_BYTE] = MOVE_EFFECT_PARALYSIS;
+                    gEffectBattler = gBattlerTarget;
+                    BattleScriptPushCursor();
+                    gBattlescriptCurrInstr = BattleScript_ApplySecondaryEffect;
+                    gHitMarker |= HITMARKER_STATUS_ABILITY_EFFECT;
                     effect++;
                 }
                 break;
@@ -2989,11 +3181,19 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u8 ability, u8 special, u16 moveA
         case ABILITYEFFECT_INTIMIDATE1: // 9
             for (i = 0; i < gBattlersCount; i++)
             {
-                if (gBattleMons[i].ability == ABILITY_INTIMIDATE && gStatuses3[i] & STATUS3_INTIMIDATE_POKES)
+                if ((gBattleMons[i].ability == ABILITY_INTIMIDATE
+                     || gBattleMons[i].ability == ABILITY_VENTO_SUL
+                     || gBattleMons[i].ability == ABILITY_NOITE_ETERNA)
+                 && gStatuses3[i] & STATUS3_INTIMIDATE_POKES)
                 {
-                    gLastUsedAbility = ABILITY_INTIMIDATE;
+                    gLastUsedAbility = gBattleMons[i].ability;
                     gStatuses3[i] &= ~STATUS3_INTIMIDATE_POKES;
-                    BattleScriptPushCursorAndCallback(BattleScript_IntimidateActivatesEnd3);
+                    if (gLastUsedAbility == ABILITY_VENTO_SUL)
+                        BattleScriptPushCursorAndCallback(BattleScript_AraunaSouthWindEnd3);
+                    else if (gLastUsedAbility == ABILITY_NOITE_ETERNA)
+                        BattleScriptPushCursorAndCallback(BattleScript_AraunaLongNightEnd3);
+                    else
+                        BattleScriptPushCursorAndCallback(BattleScript_IntimidateActivatesEnd3);
                     gBattleStruct->intimidateBattler = i;
                     effect++;
                     break;
@@ -3060,12 +3260,20 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u8 ability, u8 special, u16 moveA
         case ABILITYEFFECT_INTIMIDATE2: // 10
             for (i = 0; i < gBattlersCount; i++)
             {
-                if (gBattleMons[i].ability == ABILITY_INTIMIDATE && (gStatuses3[i] & STATUS3_INTIMIDATE_POKES))
+                if ((gBattleMons[i].ability == ABILITY_INTIMIDATE
+                     || gBattleMons[i].ability == ABILITY_VENTO_SUL
+                     || gBattleMons[i].ability == ABILITY_NOITE_ETERNA)
+                 && (gStatuses3[i] & STATUS3_INTIMIDATE_POKES))
                 {
-                    gLastUsedAbility = ABILITY_INTIMIDATE;
+                    gLastUsedAbility = gBattleMons[i].ability;
                     gStatuses3[i] &= ~STATUS3_INTIMIDATE_POKES;
                     BattleScriptPushCursor();
-                    gBattlescriptCurrInstr = BattleScript_IntimidateActivates;
+                    if (gLastUsedAbility == ABILITY_VENTO_SUL)
+                        gBattlescriptCurrInstr = BattleScript_AraunaSouthWind;
+                    else if (gLastUsedAbility == ABILITY_NOITE_ETERNA)
+                        gBattlescriptCurrInstr = BattleScript_AraunaLongNight;
+                    else
+                        gBattlescriptCurrInstr = BattleScript_IntimidateActivates;
                     gBattleStruct->intimidateBattler = i;
                     effect++;
                     break;

@@ -29,6 +29,7 @@
 #include "task.h"
 #include "naming_screen.h"
 #include "arauna_qol.h"
+#include "arauna_abilities.h"
 #include "battle_setup.h"
 #include "overworld.h"
 #include "party_menu.h"
@@ -1060,6 +1061,16 @@ static bool8 AccuracyCalcHelper(u16 move)
         return TRUE;
     }
 
+    // RIVER SONG. It sits with the other never-miss cases rather than as a
+    // multiplier below, because "cannot miss" is not 100% accuracy: evasion
+    // and the accuracy stages would still get a vote.
+    if (AraunaMoveNeverMisses(gBattleMons[gBattlerAttacker].ability, move))
+    {
+        RecordAbilityBattle(gBattlerAttacker, gBattleMons[gBattlerAttacker].ability);
+        JumpIfMoveFailed(7, move);
+        return TRUE;
+    }
+
     if (!(gHitMarker & HITMARKER_IGNORE_ON_AIR) && gStatuses3[gBattlerTarget] & STATUS3_ON_AIR)
     {
         gMoveResultFlags |= MOVE_RESULT_MISSED;
@@ -1420,6 +1431,29 @@ static void Cmd_typecalc(void)
     }
     if (gMoveResultFlags & MOVE_RESULT_DOESNT_AFFECT_FOE)
         gProtectStructs[gBattlerAttacker].targetNotAffected = 1;
+
+    // GUARDIAN and OLD CARAPACE blunt a hit the type chart made super
+    // effective. It has to be read here and nowhere else: the damage formula
+    // has not met the type chart yet, and once the damage is dealt the
+    // multiplier is already folded in. Only a net super effective hit counts --
+    // a move that is both super and not very effective comes out even.
+    if ((gMoveResultFlags & MOVE_RESULT_SUPER_EFFECTIVE)
+     && !(gMoveResultFlags & (MOVE_RESULT_NOT_VERY_EFFECTIVE | MOVE_RESULT_NO_EFFECT | MOVE_RESULT_MISSED))
+     && gBattleMoveDamage != 0)
+    {
+        if (gBattleMons[gBattlerTarget].ability == ABILITY_GUARDIAO)
+        {
+            gBattleMoveDamage = (75 * gBattleMoveDamage) / 100;
+            RecordAbilityBattle(gBattlerTarget, ABILITY_GUARDIAO);
+        }
+        else if (gBattleMons[gBattlerTarget].ability == ABILITY_CASCO_ANTIGO)
+        {
+            gBattleMoveDamage = (80 * gBattleMoveDamage) / 100;
+            RecordAbilityBattle(gBattlerTarget, ABILITY_CASCO_ANTIGO);
+        }
+        if (gBattleMoveDamage == 0)
+            gBattleMoveDamage = 1;
+    }
 
     gBattlescriptCurrInstr++;
 }
@@ -2340,11 +2374,12 @@ void SetMoveEffect(bool8 primary, u8 certain)
             statusChanged = TRUE;
             break;
         case STATUS1_BURN:
-            if (gBattleMons[gEffectBattler].ability == ABILITY_WATER_VEIL
+            if ((gBattleMons[gEffectBattler].ability == ABILITY_WATER_VEIL
+                 || AraunaBlocksBurn(gBattleMons[gEffectBattler].ability))
                 && (primary == TRUE || certain == MOVE_EFFECT_CERTAIN))
             {
-                gLastUsedAbility = ABILITY_WATER_VEIL;
-                RecordAbilityBattle(gEffectBattler, ABILITY_WATER_VEIL);
+                gLastUsedAbility = gBattleMons[gEffectBattler].ability;
+                RecordAbilityBattle(gEffectBattler, gLastUsedAbility);
 
                 BattleScriptPush(gBattlescriptCurrInstr + 1);
                 gBattlescriptCurrInstr = BattleScript_BRNPrevention;
@@ -2371,7 +2406,8 @@ void SetMoveEffect(bool8 primary, u8 certain)
             }
             if (IS_BATTLER_OF_TYPE(gEffectBattler, TYPE_FIRE))
                 break;
-            if (gBattleMons[gEffectBattler].ability == ABILITY_WATER_VEIL)
+            if (gBattleMons[gEffectBattler].ability == ABILITY_WATER_VEIL
+                || AraunaBlocksBurn(gBattleMons[gEffectBattler].ability))
                 break;
             if (gBattleMons[gEffectBattler].status1)
                 break;
@@ -2546,12 +2582,13 @@ void SetMoveEffect(bool8 primary, u8 certain)
                 }
                 break;
             case MOVE_EFFECT_FLINCH:
-                if (gBattleMons[gEffectBattler].ability == ABILITY_INNER_FOCUS)
+                if (gBattleMons[gEffectBattler].ability == ABILITY_INNER_FOCUS
+                 || AraunaBlocksFlinch(gBattleMons[gEffectBattler].ability))
                 {
                     if (primary == TRUE || certain == MOVE_EFFECT_CERTAIN)
                     {
-                        gLastUsedAbility = ABILITY_INNER_FOCUS;
-                        RecordAbilityBattle(gEffectBattler, ABILITY_INNER_FOCUS);
+                        gLastUsedAbility = gBattleMons[gEffectBattler].ability;
+                        RecordAbilityBattle(gEffectBattler, gLastUsedAbility);
                         gBattlescriptCurrInstr = BattleScript_FlinchPrevention;
                     }
                     else
@@ -4157,7 +4194,8 @@ static void Cmd_playstatchangeanimation(void)
                         && gBattleMons[gActiveBattler].ability != ABILITY_CLEAR_BODY
                         && gBattleMons[gActiveBattler].ability != ABILITY_WHITE_SMOKE
                         && !(gBattleMons[gActiveBattler].ability == ABILITY_KEEN_EYE && currStat == STAT_ACC)
-                        && !(gBattleMons[gActiveBattler].ability == ABILITY_HYPER_CUTTER && currStat == STAT_ATK))
+                        && !(gBattleMons[gActiveBattler].ability == ABILITY_HYPER_CUTTER && currStat == STAT_ATK)
+                        && AraunaStatDropGuard(gActiveBattler, currStat) == 0xFF)
                 {
                     if (gBattleMons[gActiveBattler].statStages[currStat] > MIN_STAT_STAGE)
                     {
@@ -4294,6 +4332,11 @@ static void Cmd_moveend(void)
             break;
         case MOVEEND_ON_DAMAGE_ABILITIES: // Such as abilities activating on contact (Effect Spore, Rough Skin, etc.).
             if (AbilityBattleEffects(ABILITYEFFECT_ON_DAMAGE, gBattlerTarget, 0, 0, 0))
+                effect = TRUE;
+            gBattleScripting.moveendState++;
+            break;
+        case MOVEEND_ARAUNA_ATTACKER_ABILITIES: // MANY RIVERS, TUPA VOICE
+            if (AbilityBattleEffects(ABILITYEFFECT_ARAUNA_ATTACKER, gBattlerAttacker, 0, 0, 0))
                 effect = TRUE;
             gBattleScripting.moveendState++;
             break;
@@ -6997,6 +7040,31 @@ static u8 ChangeStatBuffs(s8 statValue, u8 statId, u8 flags, const u8 *BS_ptr)
                  && notProtectAffected != TRUE && JumpIfMoveAffectedByProtect(0))
         {
             gBattlescriptCurrInstr = BattleScript_ButItFailed;
+            return STAT_CHANGE_DIDNT_WORK;
+        }
+        else if (AraunaStatDropGuard(gActiveBattler, statId) != 0xFF
+                 && !certain && gCurrentMove != MOVE_CURSE)
+        {
+            u8 guard = AraunaStatDropGuard(gActiveBattler, statId);
+
+            if (flags == STAT_CHANGE_ALLOW_PTR)
+            {
+                if (gSpecialStatuses[gActiveBattler].statLowered)
+                {
+                    gBattlescriptCurrInstr = BS_ptr;
+                }
+                else
+                {
+                    BattleScriptPush(BS_ptr);
+                    // ETERNAL BOND can be the ally's, so the name in the
+                    // message is the guard's, not the one being lowered.
+                    gBattleScripting.battler = guard;
+                    gBattlescriptCurrInstr = BattleScript_AbilityNoStatLoss;
+                    gLastUsedAbility = gBattleMons[guard].ability;
+                    RecordAbilityBattle(guard, gLastUsedAbility);
+                    gSpecialStatuses[gActiveBattler].statLowered = 1;
+                }
+            }
             return STAT_CHANGE_DIDNT_WORK;
         }
         else if ((gBattleMons[gActiveBattler].ability == ABILITY_CLEAR_BODY

@@ -29,6 +29,10 @@
 #define ABILITYEFFECT_COUNT_BATTLER_SIDE         17
 #define ABILITYEFFECT_COUNT_ON_FIELD             18
 #define ABILITYEFFECT_CHECK_ON_FIELD             19
+// The Arauna abilities that answer for the ATTACKER once its move has landed.
+// Everything else the engine runs at move end reads the target's ability, so
+// MANY RIVERS and TUPA VOICE have nowhere else to live.
+#define ABILITYEFFECT_ARAUNA_ATTACKER            20
 #define ABILITYEFFECT_MUD_SPORT                  253
 #define ABILITYEFFECT_WATER_SPORT                254
 #define ABILITYEFFECT_SWITCH_IN_WEATHER          255

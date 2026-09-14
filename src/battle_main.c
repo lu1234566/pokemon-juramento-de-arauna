@@ -12,6 +12,7 @@
 #include "battle_setup.h"
 #include "battle_tower.h"
 #include "battle_util.h"
+#include "arauna_abilities.h"
 #include "berry.h"
 #include "bg.h"
 #include "data.h"
@@ -4613,6 +4614,7 @@ u8 GetWhoStrikesFirst(u8 battler1, u8 battler2, bool8 ignoreChosenMoves)
     u8 holdEffect = 0;
     u8 holdEffectParam = 0;
     u16 moveBattler1 = 0, moveBattler2 = 0;
+    s8 priorityBattler1, priorityBattler2;
 
     if (WEATHER_HAS_EFFECT)
     {
@@ -4732,11 +4734,20 @@ u8 GetWhoStrikesFirst(u8 battler1, u8 battler2, bool8 ignoreChosenMoves)
         }
     }
 
+    // TURNED FEET adds a step to a status move, so priority is read from these
+    // two locals rather than straight off the move for the rest of the compare.
+    priorityBattler1 = gBattleMoves[moveBattler1].priority;
+    priorityBattler2 = gBattleMoves[moveBattler2].priority;
+    if (AraunaMoveGetsPriority(gBattleMons[battler1].ability, moveBattler1))
+        priorityBattler1++;
+    if (AraunaMoveGetsPriority(gBattleMons[battler2].ability, moveBattler2))
+        priorityBattler2++;
+
     // both move priorities are different than 0
-    if (gBattleMoves[moveBattler1].priority != 0 || gBattleMoves[moveBattler2].priority != 0)
+    if (priorityBattler1 != 0 || priorityBattler2 != 0)
     {
         // both priorities are the same
-        if (gBattleMoves[moveBattler1].priority == gBattleMoves[moveBattler2].priority)
+        if (priorityBattler1 == priorityBattler2)
         {
             if (speedBattler1 == speedBattler2 && Random() & 1)
                 strikesFirst = 2; // same speeds, same priorities
@@ -4745,7 +4756,7 @@ u8 GetWhoStrikesFirst(u8 battler1, u8 battler2, bool8 ignoreChosenMoves)
 
             // else battler1 has more speed
         }
-        else if (gBattleMoves[moveBattler1].priority < gBattleMoves[moveBattler2].priority)
+        else if (priorityBattler1 < priorityBattler2)
         {
             strikesFirst = 1; // battler2's move has greater priority
         }

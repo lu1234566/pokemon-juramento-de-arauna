@@ -159,6 +159,11 @@ static bool8 FindMonThatAbsorbsOpponentsMove(void)
 
     if (gBattleMons[gActiveBattler].ability == absorbingTypeAbility)
         return FALSE;
+    // SACRED SEA is the Arauna Water Absorb, so the AI should see it as one
+    // when it looks down its bench for something to take the hit.
+    if (absorbingTypeAbility == ABILITY_WATER_ABSORB
+     && gBattleMons[gActiveBattler].ability == ABILITY_MAR_SAGRADO)
+        return FALSE;
 
     if (gBattleTypeFlags & (BATTLE_TYPE_TWO_OPPONENTS | BATTLE_TYPE_TOWER_LINK_MULTI))
     {
@@ -203,7 +208,9 @@ static bool8 FindMonThatAbsorbsOpponentsMove(void)
         else
             monAbility = gSpeciesInfo[species].abilities[0];
 
-        if (absorbingTypeAbility == monAbility && Random() & 1)
+        if ((absorbingTypeAbility == monAbility
+             || (absorbingTypeAbility == ABILITY_WATER_ABSORB && monAbility == ABILITY_MAR_SAGRADO))
+            && Random() & 1)
         {
             // we found a mon.
             *(gBattleStruct->AI_monToSwitchIntoId + gActiveBattler) = i;
