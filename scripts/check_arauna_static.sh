@@ -32,6 +32,10 @@ python3 tools/arauna/check_overworld_registry.py
 # Every one of the 386 must be catchable, or the Pokedex cannot be finished.
 python3 tools/arauna/check_availability.py
 
+# Legendary/Mythical encounters use many inherited Emerald anchors whose
+# constant names no longer match Arauna species. Catch stale slot regressions.
+python3 tools/arauna/check_legendary_events.py
+
 # Renaming things lengthens lines, and a line past the message box is silently
 # cut off on screen. The ceiling is measured from vanilla, not chosen here.
 python3 tools/arauna/check_text_width.py
