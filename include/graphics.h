@@ -4715,6 +4715,18 @@ extern const u32 gBattleAnimSpritePal_Slash2[];
 extern const u32 gBattleAnimSpritePal_WhipHit[];
 extern const u32 gBattleAnimSpritePal_BlueRing2[];
 
+// Arauana Fairy battle animation particles.
+extern const u32 gBattleAnimSpriteGfx_FairySpark[];
+extern const u32 gBattleAnimSpritePal_FairySpark[];
+extern const u32 gBattleAnimSpriteGfx_FairyWave[];
+extern const u32 gBattleAnimSpritePal_FairyWave[];
+extern const u32 gBattleAnimSpriteGfx_FairyCrescent[];
+extern const u32 gBattleAnimSpritePal_FairyCrescent[];
+extern const u32 gBattleAnimSpriteGfx_FairyOath[];
+extern const u32 gBattleAnimSpritePal_FairyOath[];
+extern const u32 gBattleAnimSpriteGfx_FairyEclipse[];
+extern const u32 gBattleAnimSpritePal_FairyEclipse[];
+
 extern const u32 gBattleAnimBgImage_Dark[];
 extern const u32 gBattleAnimBgImage_Ghost[];
 extern const u32 gBattleAnimBgImage_Psychic[];
