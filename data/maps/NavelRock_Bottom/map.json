@@ -2,7 +2,7 @@
   "id": "MAP_NAVEL_ROCK_BOTTOM",
   "name": "NavelRock_Bottom",
   "layout": "LAYOUT_NAVEL_ROCK_BOTTOM",
-  "music": "MUS_RG_SEVII_CAVE",
+  "music": "MUS_ARAUNA_LEGEND_ENCOUNTER",
   "region_map_section": "MAPSEC_NAVEL_ROCK",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -39,5 +39,14 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 11,
+      "y": 13,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "NavelRock_Bottom_EventScript_Lugia"
+    }
+  ]
 }
