@@ -82,7 +82,7 @@ def parse_signature_moves(text):
 def parse_mapping():
     out={}
     with (ROOT/"docs/arauna/ARAUNA_DEX_ENGINE_MAPPING.csv").open(encoding="utf-8") as f:
-        for r in csv.DictReader(f): out[int(r["dex_id"])]=r
+        for r in csv.DictReader(f): out[int(r["arauna_dex"])]=r
     return out
 
 def parse_fairy_overlay():
@@ -122,7 +122,7 @@ def generate_c(master,mapping,outdir):
     for dex in range(1,387):
         r=mapping[dex]; species=r["species_constant"]; short=species.removeprefix("SPECIES_")
         arr="sAraunaComplete"+short+"LevelUpLearnset"
-        h += [f"// #{dex:03d} {r['name_ptbr']} ({species})",f"static const u16 {arr}[] = {{"]
+        h += [f"// #{dex:03d} {r['full_name']} ({species})",f"static const u16 {arr}[] = {{"]
         for e in master[dex]: h.append(f"    LEVEL_UP_MOVE({e['level']:2d}, {rom_move(e['move'])}),")
         h += ["    LEVEL_UP_END","};",""]
         p.append(f"    [{species}] = {arr},")
@@ -143,7 +143,7 @@ def write_csv(master,mapping,path):
         w=csv.writer(f); w.writerow(["dex_id","pokemon","species_constant","level","move"])
         for dex in range(1,387):
             for e in master[dex]:
-                w.writerow([dex,mapping[dex]["name_ptbr"],mapping[dex]["species_constant"],e["level"],e["move"]])
+                w.writerow([dex,mapping[dex]["full_name"],mapping[dex]["species_constant"],e["level"],e["move"]])
 
 def checksum_tree(out):
     lines=[]
