@@ -87,6 +87,36 @@ que o pacote quer mudar e aplicá-las sobre o arquivo traduzido — em Baía das
 Luzes eram treze linhas (doze coordenadas de Wailmer e um `setescapewarp`)
 dentro de dois arquivos de duzentas falas.
 
+### Conferir se um pacote antigo realmente entrou
+
+Vale refazer de tempos em tempos: comparar cada pacote recebido com a árvore e
+ver se o que ele queria escrever está lá. Comparar byte a byte dá **centenas de
+falsos positivos**. Cinco regras, cada uma responsável por uma leva deles:
+
+1. **Escopo.** O pacote carrega a árvore inteira (500+ `map.json`), mas só
+   declara como sua a parte coberta por `review/*_source` — nos antigos, 10 a 20
+   arquivos de 500. Fora dessa lista não dá para saber a intenção; não se cobra.
+2. **Supersessão.** Pacotes se sobrepõem. Casa do Uivo V1 reenvia o Rustboro do
+   Serra do Uivo V4; Vila Amanhecer V9 move NPCs que a V8 tinha posto em outro
+   lugar. O repo bater com o **mais novo** é o resultado certo, não uma falha do
+   mais antigo.
+3. **Fim de linha.** O repo normaliza texto para CRLF, o pacote traz LF. Todo
+   `.pal` acusa diferença com conteúdo idêntico.
+4. **Registros que acumulam** — `headers.h`, `graphics.h`, `metatiles.h`,
+   `layouts.json`, `heal_locations.json`, `event_scripts.s`. O repo tem a entrada
+   de todos os pacotes, o pacote só tem até a dele. O que importa é se **a
+   entrada dele** existe, não a igualdade byte a byte.
+5. **Tradução.** Depois dos pacotes o jogo virou inglês, então todo `.inc`
+   difere dentro de `.string`. Apague o conteúdo das `.string` e compare o
+   esqueleto.
+
+Com as cinco, a última varredura dos 19 pacotes recebidos passou de 503
+divergências para 11, e as 11 se explicam todas: quatro são a passada de clima
+por bioma, quatro são pacote posterior substituindo anterior, uma é a correção
+do desembarque do Porto do Sal, uma é a do telhado do mart da Vila da Passagem,
+e a última é o repo tendo **mais** do que o pacote — uma placa que um pacote
+seguinte acrescentou. Nenhum pacote ficou de fora.
+
 **Pacote gerado sobre pacote tem ordem.** Se a árvore de referência de um
 pacote já contém o registro de tileset de outro, ele foi gerado depois daquele
 e precisa ser instalado depois. Dá para ver com um `grep` dos marcadores
