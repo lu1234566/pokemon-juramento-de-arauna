@@ -20,9 +20,9 @@ dex,name,engine_species,class,status,event_anchor,level,event_style,notes
 347,Estrelinha,SPECIES_ANORITH,Legendary+Mythical,IMPLEMENTED,Birth Island triangle,65,meteor puzzle,Triangle ritual now resolves into the shooting-star mythical
 348,Arauanamon,SPECIES_ARMALDO,Legendary,PLANNED,Cave of Origin postgame altar,72,regional embodiment trial,Only one exists; late postgame encounter
 376,Boitata,SPECIES_METAGROSS,Legendary,PLANNED,Scorched Slab,65,will-o-wisp shrine,Fire serpent folklore encounter
-377,Piraruacu,SPECIES_REGIROCK,Legendary,PLANNED,Route119 hidden deep pool,65,deep-water trial,Amazonian Water/Dragon giant
-378,Mata-Mata,SPECIES_REGICE,Legendary,PLANNED,Safari Northwest swamp,65,swamp shrine,Grass/Dragon Amazonian turtle
-379,Solaris,SPECIES_REGISTEEL,Legendary,PLANNED,Mt Chimney summit postgame,68,solar furnace,High-power solar psychic encounter
+377,Piraruacu,SPECIES_REGIROCK,Legendary,IMPLEMENTED,Navel Rock Bottom,70,abyss altar,Deep-ocean cavern reuses Lugia state flags but never shows stale Lugia art
+378,Mata-Mata,SPECIES_REGICE,Legendary,IMPLEMENTED,Route119 Leaf Stone hollow,65,postgame root shrine,Appears only after the Leaf Stone is collected and the player is Champion
+379,Solaris,SPECIES_REGISTEEL,Legendary,IMPLEMENTED,Navel Rock Top,70,solar summit,Ho-Oh state flags are retained internally while the stale object stays hidden
 380,Selene,SPECIES_LATIAS,Legendary,PLANNED,Shoal Cave ice room at night,65,lunar reflection shrine,Dark/Psychic lunar encounter
 381,Zumbi-Rei,SPECIES_LATIOS,Legendary,PLANNED,Abandoned Ship hidden floor,65,memory-haunt event,Fighting/Dark ruler bound to a place of loss
 382,Iemanja,SPECIES_KYOGRE,Legendary,IMPLEMENTED,Marine Cave End,70,presence trigger,Stale Kyogre overworld is deliberately hidden
