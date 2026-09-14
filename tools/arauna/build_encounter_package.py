@@ -15,7 +15,7 @@ STARTER_ROOTS={1,4,7}
 STARTER_FAMILY=set(range(1,10))
 FEebAS_REPLACEMENT_DEX=121  # Pirarim: rare Route119 fishing mechanic.
 WATER_KINDS={"water_mons","fishing_mons"}
-TABLE_CAP={"land_mons":4,"water_mons":2,"fishing_mons":3,"rock_smash_mons":2}
+TABLE_CAP={"land_mons":7,"water_mons":3,"fishing_mons":5,"rock_smash_mons":3}
 
 REGION_TAGS={
  "Cerrado de Arauana":{"cerrado"},
@@ -253,14 +253,19 @@ def iter_tables(data):
 
 def species_score(mon,table):
     score=adjacency_score(mon_tags(mon),table["tags"])+habitat_bonus(mon,table["tags"])
-    score-=abs(mon["bst"]-expected_bst(table["stage"]))*0.34
+    score-=abs(mon["bst"]-expected_bst(table["stage"]))*0.78
+    # Basic low-BST forms belong early unless their ecology truly has nowhere else.
+    if mon["bst"]<=320 and table["stage"]>20:
+        score-=(table["stage"]-20)*12
+    elif mon["bst"]<=360 and table["stage"]>28:
+        score-=(table["stage"]-28)*6
     if table["kind"]=="fishing_mons":
         score+=25 if fish_like(mon) else -8
     elif table["kind"]=="water_mons":
         score+=8 if not fish_like(mon) else 0
     if mon["bst"]>520 and table["stage"]<25:score-=150
     if mon["bst"]>470 and table["stage"]<12:score-=90
-    if mon["dex"]==46 and table["stage"]<30:score-=500
+    if mon["dex"]==46 and table["stage"]<28:score-=500
     return score
 
 def incoming_gates():
@@ -335,6 +340,8 @@ def main():
     def candidates_for_root(d):
         m=mons[d]; opts=[]
         for t in tables:
+            # Never make Dex completion depend on unused RS rooms or event-only Altering Cave.
+            if "UNUSED" in t["map"] or "ALTERING_CAVE" in t["map"]:continue
             if loads[t["key"]]>=TABLE_CAP[t["kind"]]:continue
             if not eligible(m,t["kind"],t["tags"]):continue
             if d in STARTER_ROOTS and not ("postgame" in t["tags"] and "SAFARI_ZONE" in t["map"]):continue
