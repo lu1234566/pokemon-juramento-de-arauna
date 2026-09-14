@@ -5210,8 +5210,9 @@ void ClearBattleMonForms(void)
 
 u16 GetBattleBGM(void)
 {
-    // Arauna: every scripted legendary shares Forca Primordial; #386 Araua
-    // (the Rayquaza slot) keeps its own theme, applied in battle_setup.c.
+    // Arauna: scripted legendary battles use Forca Primordial by default.
+    // #386 Araua occupies the Deoxys engine slot and gets its dedicated theme
+    // directly from BattleSetup_StartLegendaryBattle().
     if (gBattleTypeFlags & BATTLE_TYPE_KYOGRE_GROUDON)
     {
         return MUS_ARAUNA_LEGEND_BATTLE;
