@@ -1,6 +1,7 @@
 #include "global.h"
 #include "battle_anim.h"
 #include "battle_anim_internal.h"
+#include "trig.h"
 #include "constants/battle_anim.h"
 
 static void AnimFairySpark(struct Sprite *sprite);
