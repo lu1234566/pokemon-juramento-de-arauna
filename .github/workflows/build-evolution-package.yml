@@ -1,0 +1,33 @@
+name: Build Arauna evolution v2 package
+
+on:
+  push:
+    branches:
+      - feat/fairy-moves-animations
+    paths:
+      - "tools/arauna/build_evolution_package.py"
+      - ".github/workflows/build-evolution-package.yml"
+      - "docs/arauna/ARAUNA_EVOLUTIONS.csv"
+      - "docs/arauna/ARAUNA_DEX_ENGINE_MAPPING.csv"
+      - "tools/arauna/package_sources/lovable/pokedex.ts"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build evolution v2
+        run: |
+          python3 tools/arauna/build_evolution_package.py dist/Arauna_Evolutions_v2
+          cd dist
+          zip -r Arauna_Evolutions_v2.zip Arauna_Evolutions_v2
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Arauna_Evolutions_v2
+          path: dist/Arauna_Evolutions_v2.zip
+          if-no-files-found: error
+          retention-days: 30
