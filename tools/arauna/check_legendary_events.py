@@ -31,6 +31,9 @@ EXPECT={
    "setwildbattle SPECIES_GROUDON, 70",
  ],
  "data/maps/FarawayIsland_Interior/scripts.inc":["seteventmon SPECIES_RAYQUAZA, 65"],
+ "data/maps/NavelRock_Bottom/scripts.inc":["setwildbattle SPECIES_REGIROCK, 70"],
+ "data/maps/NavelRock_Top/scripts.inc":["setwildbattle SPECIES_REGISTEEL, 70"],
+ "data/maps/Route119/scripts.inc":["setwildbattle SPECIES_REGICE, 65"],
  "data/maps/SkyPillar_Top/scripts.inc":["setwildbattle SPECIES_DEOXYS, 75"],
  "src/battle_setup.c":[
    "case SPECIES_DEOXYS: // #386 Araua",
@@ -43,7 +46,7 @@ FORBID={
  "data/maps/FarawayIsland_Interior/scripts.inc":["seteventmon SPECIES_MEW, 30"],
  "data/maps/BirthIsland_Exterior/scripts.inc":["seteventmon SPECIES_DEOXYS, 30"],
 }
-EXPECTED_IMPLEMENTED={329,330,338,342,344,347,382,383,384,386}
+EXPECTED_IMPLEMENTED={329,330,338,342,344,347,377,378,379,382,383,384,386}
 
 def main()->int:
     failures=[]
@@ -66,7 +69,7 @@ def main()->int:
         print("Arauna legendary event validation FAILED:")
         for f in failures:print("-",f)
         return 1
-    print("Arauna legendary event validation PASS: 31 planned, 10 Wave-1 events implemented.")
+    print("Arauna legendary event validation PASS: 31 planned, 13 Wave-1 events implemented.")
     return 0
 
 if __name__=="__main__":
