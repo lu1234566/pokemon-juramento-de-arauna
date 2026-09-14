@@ -110,5 +110,5 @@ BirthIsland_Exterior_Movement_DeoxysApproach:
 
 
 BirthIsland_Exterior_Text_EstrelinhaAwakens:
-	.string "The triangle breaks into points of light.\p"
+	.string "The triangle breaks into light.\p"
 	.string "A small star has made its nest here.$"
