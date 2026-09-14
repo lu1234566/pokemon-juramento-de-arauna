@@ -1,0 +1,42 @@
+name: Build complete moveset handoff
+
+on:
+  push:
+    branches:
+      - feat/fairy-moves-animations
+    paths:
+      - "tools/arauna/build_moves_package.py"
+      - "tools/arauna/package_sources/**"
+      - "src/data/pokemon/arauna_fairy_learnsets.h"
+      - "src/data/battle_moves.h"
+      - "data/battle_anim_scripts.s"
+      - "src/battle_anim_fairy.c"
+      - "graphics/battle_anims/sprites/fairy_*.png"
+      - ".github/workflows/build-moves-package.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Build package
+        run: |
+          python3 tools/arauna/build_moves_package.py --out dist/Arauna_Move_Package
+          cd dist
+          zip -r Arauna_Move_Package_386_Fairy.zip Arauna_Move_Package
+
+      - name: Upload package
+        uses: actions/upload-artifact@v4
+        with:
+          name: Arauna_Move_Package_386_Fairy
+          path: dist/Arauna_Move_Package_386_Fairy.zip
+          if-no-files-found: error
+          retention-days: 30
