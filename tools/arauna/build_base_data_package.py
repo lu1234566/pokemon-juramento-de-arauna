@@ -30,7 +30,7 @@ def objects(text):
     '{ id:' directly incorrectly treats those as Pokémon.
     """
     marker=text.index("export const POKEDEX")
-    i=text.index("[",marker)
+    i=text.index("[", text.index("=", marker))
     out=[]; square=0; curly=0; q=False; esc=False; obj_start=None
     while i<len(text):
         c=text[i]
