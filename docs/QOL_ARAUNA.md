@@ -1,12 +1,12 @@
 # Conforto de jogo
 
-Doze adições. Sete são opcionais — o jogador só as encontra se as procurar — e
-a oitava, o teto de experiência, é a única que muda uma regra sozinha, porque é
-justamente para isso que um level cap existe.
+Doze adições. Nove são opcionais — o jogador só as encontra se as procurar — e
+o teto de experiência, o EXP Share nativo e a liberdade dos HMs mudam regra
+sozinhas, que é o que foi pedido delas.
 
 ## O menu ARAUNA
 
-Entrada nova no START, entre POKéNAV e o nome do jogador. Abre cinco itens:
+Entrada nova no START, entre POKéNAV e o nome do jogador. Abre sete itens:
 
 | item | o que faz |
 |---|---|
