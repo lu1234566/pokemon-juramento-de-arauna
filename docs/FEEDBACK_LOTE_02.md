@@ -1,7 +1,10 @@
 > **ATENDIDO.** O lote 02 cumpriu a regra em 171 de 171 quadros e foi
-> instalado. Este arquivo fica como registro do que foi pedido e do
-> formato que o lote 03 deve seguir — a seção 1 (*não mexa*) continua
-> valendo, e as pendências da seção 5 e 6 continuam abertas.
+> instalado. O lote 03 fechou a correção da Mãe do Ciro (seção 5, item 1) e
+> as duas prioridades por exposição da seção 6 — a mãe do protagonista e a
+> recepcionista de link. Este arquivo fica como registro do que foi pedido e
+> do formato que os próximos lotes devem seguir: a seção 1 (*não mexa*)
+> continua valendo, e continuam abertos o item 2 e o item 3 da seção 5 (que
+> são decisões suas, não técnicas) e os personagens da seção 6.
 
 # Feedback do lote 01 — o que mudar no lote 02
 
@@ -116,9 +119,10 @@ Passa quando imprimir `OK` para todos: `topo>=10`, `pe=30`, `altura` entre 19 e 
 
 ## 5. Pendências do próprio lote 01
 
-1. **Mãe do Ciro** — o lado do portfólio e da ponta da faixa está trocado nos
-   três quadros de costas (`5`, `6` e o `1`). Já está registrado no
-   `manifest.json` do pacote.
+1. ~~**Mãe do Ciro** — o lado do portfólio e da ponta da faixa está trocado nos
+   três quadros de costas (`5`, `6` e o `1`).~~ **Corrigido no lote 03**: os
+   quadros `1`, `5` e `6`, linhas 20 a 27, exatamente 99 pixels, paleta
+   idêntica — bate com o que o pacote declara.
 2. **Mãe do Ciro e Criança da Floresta** não entraram no jogo: não têm slot
    próprio no projeto. As folhas estão prontas; falta decidir em que mapas eles
    ficam para eu criar o gráfico e a paleta.
@@ -130,11 +134,13 @@ Passa quando imprimir `OK` para todos: `topo>=10`, `pe=30`, `altura` entre 19 e 
 
 ## 6. O que falta dos 42
 
-Os 23 que o lote 01 não trouxe:
+Os 23 que o lote 01 não trouxe — o lote 03 entregou a **mãe do protagonista**,
+e a **recepcionista de link** (que não estava nesta lista, mas era a de maior
+exposição de todas). Faltam 21:
 
 Protagonista masculino, Protagonista feminina, Ciro, Anahi, Val, Elias,
-Otacílio, Luzia, Zila, Bento, Mãe do protagonista, Dalva, Ademar, Olivia, Nara,
-Lídia, Cecilia, Caetano, Celina, Lázaro, Rosa, Clara, Tibúrcio.
+Otacílio, Luzia, Zila, Bento, Dalva, Ademar, Olivia, Nara, Lídia, Cecilia,
+Caetano, Celina, Lázaro, Rosa, Clara, Tibúrcio.
 
 Três observações para quando forem feitos:
 
@@ -142,6 +148,8 @@ Três observações para quando forem feitos:
   grande da apresentação da região).
 - **Os protagonistas** precisam das superfícies extras além da caminhada:
   bicicleta, surf, pesca, field move, e a costas de batalha.
-- **Prioridade por exposição:** a recepcionista de link aparece em dez mapas e
+- ~~**Prioridade por exposição:** a recepcionista de link aparece em dez mapas e
   a mãe do protagonista em cinco, incluindo a primeira casa do jogo. Ambas
-  estão hoje com 27 px e 25 px, fora da caixa. Se couber, elas antes do resto.
+  estão hoje com 27 px e 25 px, fora da caixa.~~ **Feito no lote 03**: as duas
+  estão em 21 px com o topo em y=10, cada uma com paleta própria. Sobra o
+  `dusclops.png`, com 26 px, num mapa só.

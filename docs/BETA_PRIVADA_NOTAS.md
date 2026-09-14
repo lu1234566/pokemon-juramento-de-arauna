@@ -10,10 +10,11 @@ vá para onde rende.
 Birch, na fala de apresentação da região e no overworld. O prólogo roda inteiro:
 caminhão, chegada à vila, a mãe, a casa.
 
-**Elenco.** Trinta e sete personagens nomeados estão desenhados na escala do
+**Elenco.** Trinta e nove personagens nomeados estão desenhados na escala do
 overworld — vinte e um pixels de corpo, que é a medida dos NPCs da vanilla. Antes
 desta rodada quase todos estavam a vinte e oito, um terço mais altos que qualquer
-pessoa com quem dividiam a tela.
+pessoa com quem dividiam a tela. A distribuição de altura, largura e âncora do
+elenco inteiro é hoje a mesma da vanilla, percentil a percentil.
 
 **Mapas.** Dez mapas nativos do Arauna, mais as cidades adaptadas às concept
 arts: Vila Amanhecer, Vila da Passagem, Pampa da Espera e seus interiores, Serra
@@ -53,13 +54,14 @@ Nada disto é regressão: são frentes que ainda não foram feitas.
   se qualquer palavra em português voltar. Nomes próprios — lugares, pessoas
   e criaturas — continuam como são; é a única coisa que a ROM ainda escreve
   em português, por escolha.
-- **Três sprites fora de escala, e 23 com o passo pela metade.** Medido e
-  escrito em `docs/SPRITES_OVERWORLD.md`. Em resumo: a mãe (25px), a
-  recepcionista de link (27px, em dez mapas) e o Dusclops (26px) começam a
-  cabeça seis pixels acima do resto do elenco e invadem o tile de cima — é o
-  sprite sobreposto da screenshot 5. E em 23 folhas uma das poses de caminhada
-  é cópia da pose parada, então o personagem anda mancando. O QC já recusa
-  isso em folhas novas.
+- **Um sprite fora de escala, e treze com o passo pela metade.** Medido e
+  escrito em `docs/SPRITES_OVERWORLD.md`. A mãe e a recepcionista de link,
+  que eram o sprite sobreposto da screenshot 5, foram refeitas: as duas estão
+  em 21 px com a cabeça começando em y=10, como qualquer NPC da vanilla, e
+  cada uma ganhou paleta própria. Sobra o Dusclops (26px), que aparece num
+  mapa só. E em treze folhas uma das poses de caminhada ainda é cópia da pose
+  parada, então o personagem anda mancando; o QC já recusa isso em folhas
+  novas.
 - **Arcos narrativos.** A visita à Casa do Uivo está implementada, mas o arco
   U03–U11, a batalha, o Selo e as Libras continuam pendentes. A Primeira Câmara
   tem portão e altar funcionando, mas não o Sistema de Vínculos completo.

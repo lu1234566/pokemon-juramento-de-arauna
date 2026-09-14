@@ -675,6 +675,38 @@
       "trainer_pic_index": 26,
       "internal_trainer_class": "TRAINER_CLASS_TEAM_MAGMA",
       "runtime_notes": "An archetype, not a person: the same graphic and palette serve every grunt of that faction and gender, so the cost is one palette bank per variant on screen. The internal names stay Aqua and Magma; the player sees HORIZONTE and LEMBRANTE, which the trainer class names and the trainer names AGENTE and ATIVISTA already say."
+    },
+    {
+      "name": "Mãe do protagonista",
+      "kind": "civilian NPC",
+      "surfaces": [
+        "overworld"
+      ],
+      "object_event": "OBJ_EVENT_GFX_MOM",
+      "graphics_info": "Mom",
+      "overworld": "graphics/object_events/pics/people/mom.png",
+      "overworld_palette": "graphics/object_events/palettes/mae_protagonista.pal",
+      "palette_tag": "OBJ_EVENT_PAL_TAG_MAE_PROTAGONISTA",
+      "palette_slot": "ARAUNA_EXCLUSIVE_POOL",
+      "palette_slot_reason": "Dedicated palette in the existing allocator; retains PALSLOT_NPC_4 as fallback. Shared npc_3/npc_4 palettes are unchanged.",
+      "asset_batch": "Arauna Lote03",
+      "runtime_tested": true
+    },
+    {
+      "name": "Recepcionista de link",
+      "kind": "civilian NPC",
+      "surfaces": [
+        "overworld"
+      ],
+      "object_event": "OBJ_EVENT_GFX_LINK_RECEPTIONIST",
+      "graphics_info": "LinkReceptionist",
+      "overworld": "graphics/object_events/pics/people/link_receptionist.png",
+      "overworld_palette": "graphics/object_events/palettes/recepcionista_link.pal",
+      "palette_tag": "OBJ_EVENT_PAL_TAG_RECEPCIONISTA_LINK",
+      "palette_slot": "ARAUNA_EXCLUSIVE_POOL",
+      "palette_slot_reason": "Dedicated palette in the existing allocator; retains PALSLOT_NPC_3 as fallback. Shared npc_3/npc_4 palettes are unchanged.",
+      "asset_batch": "Arauna Lote03",
+      "runtime_tested": true
     }
   ],
   "protagonist_states": [

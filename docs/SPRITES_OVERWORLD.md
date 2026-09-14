@@ -7,9 +7,11 @@ entregou até agora cai fora dela em dois eixos — cor e passo.
 Este arquivo é a faixa medida, não uma opinião. Os números saem dos 94 sheets
 da vanilla que o projeto ainda não tocou.
 
-> **Atualização — lotes 01 e 02 instalados.** Quinze slots receberam arte nova.
-> Os quatro eixos — cor, tons, passo e escala — estão dentro da faixa da
-> vanilla pela primeira vez. Detalhe no fim do arquivo.
+> **Atualização — lotes 01, 02 e 03 instalados.** Dezessete slots receberam
+> arte nova. Os quatro eixos — cor, tons, passo e escala — estão dentro da
+> faixa da vanilla, e a distribuição de altura, largura e âncora do elenco
+> inteiro do projeto é hoje **idêntica à da vanilla**. Detalhe no fim do
+> arquivo.
 
 ## O diagnóstico, em duas linhas
 
@@ -98,23 +100,21 @@ outro. Qualquer sheet novo já entra checado.
 
 `hot_springs_old_woman` é da vanilla assim mesmo — não é problema do projeto.
 
-## Os três que estão fora de escala — e o que isso causa
+## Os três que estavam fora de escala — e o que isso causava
 
-| sprite | corpo | topo (y) | onde | na vanilla era |
+| sprite | corpo | topo (y) | onde | estado |
 |---|---:|---:|---|---|
-| `mom.png` | 25 px | 6 | 5 mapas, incluindo a primeira casa | 20 px, topo 11 |
-| `link_receptionist.png` | 27 px | 5 | **10 mapas** — o balcão de link de todo CENTRO | 20 px, topo 11 |
-| `dusclops.png` | 26 px | 6 | 1 mapa | 20 px, topo 11 |
+| `mom.png` | 25 px → **21** | 6 → **10** | 5 mapas, incluindo a primeira casa | **corrigido, lote 03** |
+| `link_receptionist.png` | 27 px → **21** | 5 → **10** | **10 mapas** — o balcão de link de todo CENTRO | **corrigido, lote 03** |
+| `dusclops.png` | 26 px | 6 | 1 mapa | pendente |
 
-Um NPC da vanilla começa a cabeça em y=11. Esses três começam em y=5 ou 6 —
+Um NPC da vanilla começa a cabeça em y=11. Esses três começavam em y=5 ou 6 —
 seis pixels acima de todo o resto do elenco. Num frame de 32 px isso não é só
 "alto demais": **a cabeça invade o tile de cima**, que é exatamente o sprite
 sobreposto que apareceu na screenshot 5 da beta.
 
-Nenhum dos três tem arte de substituição nos pacotes recebidos. A recepcionista
-é a de maior exposição, porque está em dez mapas; a mãe é a mais visível,
-porque aparece nos primeiros minutos. Trocar a arte da mãe exige antes lhe dar
-paleta própria — hoje ela usa uma paleta genérica compartilhada com outros NPCs.
+Os dois piores casos — os dois de gente — saíram no lote 03. Sobra o Dusclops,
+que aparece num mapa só.
 
 `union_room_nurse.png` também tem 27 px, mas é arquivo morto: nenhuma
 declaração em `object_event_graphics.h` aponta para ele, e a vanilla nunca teve
@@ -190,3 +190,57 @@ volume vertical.
 
 A distribuição de altura do elenco inteiro voltou a ser a da vanilla: p10=19,
 mediana=20, p90=21.
+
+
+## O lote 03 fechou os dois piores casos
+
+Três folhas: a correção da Mãe do Ciro, a **mãe do protagonista** e a
+**recepcionista de link**. São exatamente as duas que este arquivo vinha
+apontando como prioridade por exposição — a recepcionista está em onze
+colocações de mapa, a mãe aparece nos primeiros minutos de jogo.
+
+| sprite | antes | lote 03 | faixa da vanilla |
+|---|---|---|---|
+| `mom.png` — corpo | 25 px, topo y=6 | **21 px, topo y=10** | 19–21, y=10–12 |
+| `mom.png` — largura / tons | — | 14 px / 13 tons | ≤16 / 11–15 |
+| `link_receptionist.png` — corpo | 27 px, topo y=5 | **21 px, topo y=10** | 19–21, y=10–12 |
+| `link_receptionist.png` — largura / tons | — | 15 px / 15 tons | ≤16 / 11–15 |
+
+Pé em y=30 nos nove quadros de ambas, poses de caminhada alternando de
+verdade, PNG indexado de 4 bits com o índice 0 transparente.
+
+Com essas duas, **a distribuição do elenco inteiro do projeto (136 folhas)
+passou a bater com a da vanilla (126 folhas) em altura, largura e âncora,
+percentil a percentil**: p10 19 / mediana 20 / p90 21 para a altura, p10 7 /
+mediana 14 / p90 16 para a largura, p10 10 / mediana 11 / p90 12 para o topo.
+Não é "próximo": é o mesmo número nos três quartis, nos três eixos.
+
+### A paleta própria, que era o bloqueio
+
+Trocar a arte da mãe estava travado por uma razão técnica registrada aqui:
+ela usava `OBJ_EVENT_PAL_TAG_NPC_4`, uma paleta genérica dividida com outros
+NPCs, então arte nova com cores próprias sairia com as cores de outra pessoa.
+A recepcionista tinha o mesmo problema com `NPC_3`.
+
+O lote 03 veio com o patch que resolve isso pelo mecanismo que o projeto já
+tem: duas tags novas (`OBJ_EVENT_PAL_TAG_MAE_PROTAGONISTA` = `0x11D2`,
+`OBJ_EVENT_PAL_TAG_RECEPCIONISTA_LINK` = `0x11D3`) **acrescentadas no fim**,
+sem renumerar nada, mais as duas entradas em `sObjectEventSpritePalettes` e as
+duas tags em `sAraunaExclusivePaletteTags`. Daí `AraunaExclusivePaletteSlot()`
+sobrescreve o `paletteSlot` estático em tempo de execução, com as quedas de
+segurança que já existiam.
+
+`disableReflectionPaletteLoad` foi de `FALSE` para `TRUE` nas duas, que é o que
+os dezesseis personagens de paleta exclusiva do projeto já faziam. As dezesseis
+bancadas de OBJ continuam dentro do limite: `check_overworld_palette_capacity.py`
+passa em 94 de 94.
+
+### Conferido no jogo
+
+`LittlerootTown_BrendansHouse_1F` põe a mãe em `(2,6)` e a recepcionista em
+`(2,7)` — uma diretamente acima da outra, que é o pior caso possível para o
+defeito. Antes, o cabelo da recepcionista subia por cima do corpo da mãe e as
+duas viravam uma mancha escura só. Depois, as duas ficam separadas, cada uma no
+seu tile, com o avanço de 6 px sobre o tile de cima que **todo** NPC da vanilla
+tem. A cena também exercita a alocação de paleta exclusiva para dois
+personagens no mesmo mapa ao mesmo tempo.
