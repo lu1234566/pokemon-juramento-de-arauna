@@ -107,7 +107,7 @@ def evolution_links(by_slot):
 def scripted(by_slot) -> set[int]:
     """Everything a map script hands out or starts a battle with, plus the starters."""
     found = subprocess.run(
-        ["grep", "-rhoE", r"(givemon|setwildbattle|createmon)[^\n]*SPECIES_[A-Z_0-9]+", "data"],
+        ["grep", "-rhoE", r"(givemon|setwildbattle|seteventmon|createmon)[^\n]*SPECIES_[A-Z_0-9]+", "data"],
         cwd=ROOT, capture_output=True, text=True).stdout
     out = {by_slot[name]["dex"] for name in re.findall(r"SPECIES_[A-Z_0-9]+", found)
            if name in by_slot}
