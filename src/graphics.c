@@ -546,6 +546,19 @@ const u32 gBattleAnimSpriteGfx_GoldRing[] = INCGFX_U32("graphics/battle_anims/sp
 const u32 gBattleAnimSpritePal_GoldRing[] = INCGFX_U32("graphics/battle_anims/sprites/gold_ring.png", ".gbapal.lz");
 
 const u32 gBattleAnimSpritePal_BlueRing2[] = INCGFX_U32("graphics/battle_anims/sprites/blue_ring_2.pal", ".gbapal.lz");
+
+// Arauana Fairy move particles. Source PNGs are indexed and kept within one
+// 16-color OBJ palette; movement is handled by battle_anim_fairy.c.
+const u32 gBattleAnimSpriteGfx_FairySpark[] = INCGFX_U32("graphics/battle_anims/sprites/fairy_spark.png", ".4bpp.lz");
+const u32 gBattleAnimSpritePal_FairySpark[] = INCGFX_U32("graphics/battle_anims/sprites/fairy_spark.png", ".gbapal.lz");
+const u32 gBattleAnimSpriteGfx_FairyWave[] = INCGFX_U32("graphics/battle_anims/sprites/fairy_wave.png", ".4bpp.lz");
+const u32 gBattleAnimSpritePal_FairyWave[] = INCGFX_U32("graphics/battle_anims/sprites/fairy_wave.png", ".gbapal.lz");
+const u32 gBattleAnimSpriteGfx_FairyCrescent[] = INCGFX_U32("graphics/battle_anims/sprites/fairy_crescent.png", ".4bpp.lz");
+const u32 gBattleAnimSpritePal_FairyCrescent[] = INCGFX_U32("graphics/battle_anims/sprites/fairy_crescent.png", ".gbapal.lz");
+const u32 gBattleAnimSpriteGfx_FairyOath[] = INCGFX_U32("graphics/battle_anims/sprites/fairy_oath.png", ".4bpp.lz");
+const u32 gBattleAnimSpritePal_FairyOath[] = INCGFX_U32("graphics/battle_anims/sprites/fairy_oath.png", ".gbapal.lz");
+const u32 gBattleAnimSpriteGfx_FairyEclipse[] = INCGFX_U32("graphics/battle_anims/sprites/fairy_eclipse.png", ".4bpp.lz");
+const u32 gBattleAnimSpritePal_FairyEclipse[] = INCGFX_U32("graphics/battle_anims/sprites/fairy_eclipse.png", ".gbapal.lz");
 const u32 gBattleAnimSpritePal_PurpleRing[] = INCGFX_U32("graphics/battle_anims/sprites/purple_ring.pal", ".gbapal.lz");
 const u32 gBattleAnimSpritePal_BlueRing[] = INCGFX_U32("graphics/battle_anims/sprites/blue_ring.pal", ".gbapal.lz");
 
