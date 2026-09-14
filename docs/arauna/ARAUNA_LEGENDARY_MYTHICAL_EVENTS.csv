@@ -1,0 +1,32 @@
+dex,name,engine_species,class,status,event_anchor,level,event_style,notes
+329,Guaraciana,SPECIES_VIBRAVA,Legendary,IMPLEMENTED,Roamer + Southern Island,55,roamer/static-opposite,TV choice 0 roams; the opposite member waits on Southern Island
+330,Jaciana,SPECIES_FLYGON,Legendary,IMPLEMENTED,Roamer + Southern Island,55,roamer/static-opposite,TV choice 1 roams; the opposite member waits on Southern Island
+331,Tupanau,SPECIES_CACNEA,Legendary,PLANNED,New Mauville core,62,reactor-storm shrine,Electric/Dragon spirit tied to the old power infrastructure
+332,Iarau,SPECIES_CACTURNE,Legendary,PLANNED,Safari Northwest lagoon,60,water shrine,Amazonian water/fairy encounter
+333,Kuarahy,SPECIES_SWABLU,Legendary,PLANNED,Navel Rock Top,65,solar summit,Solar deity at the highest altar
+334,Yasy,SPECIES_ALTARIA,Legendary,PLANNED,Navel Rock Bottom,65,lunar abyss,Lunar counterpart at the deepest altar
+335,Rudarauna,SPECIES_ZANGOOSE,Legendary,PLANNED,Southern Island exterior postgame,62,oath shrine,Primordial bond unlocked after the roaming pair arc
+336,Perybe,SPECIES_SEVIPER,Legendary,PLANNED,Route119 source pool,62,river-source shrine,Spirit of the whole Amazon basin
+337,Arauanau,SPECIES_LUNATONE,Legendary,PLANNED,Victory Road oath chamber,68,guardian trial,Supreme guardian before the League/postgame threshold
+338,Verdejante,SPECIES_SOLROCK,Legendary,IMPLEMENTED,Ancient Tomb,60,sealed-relic shrine,Old Registeel anchor retained internally for save compatibility
+339,Chuvao,SPECIES_BARBOACH,Legendary,PLANNED,Route120 rain clearing,60,weather shrine,December rain spirit
+340,Solzao,SPECIES_WHISCASH,Legendary,PLANNED,Mirage Tower top,60,drought shrine,Drought spirit of the Caatinga
+341,Ventania,SPECIES_CORPHISH,Legendary,PLANNED,Sky Pillar 5F,62,wind trial,High-altitude wind/dragon encounter below Araua
+342,Terraao,SPECIES_CRAWDAUNT,Legendary,IMPLEMENTED,Desert Ruins,60,sealed-relic shrine,Old Regirock anchor retained internally for save compatibility
+343,Fogareu,SPECIES_BALTOY,Legendary,PLANNED,Fiery Path deep chamber,62,fire shrine,Primordial fire/dragon encounter
+344,Marulho,SPECIES_CLAYDOL,Legendary,IMPLEMENTED,Island Cave,60,sealed-relic shrine,Old Regice anchor retained internally for save compatibility
+345,Alvorecer,SPECIES_LILEEP,Legendary,PLANNED,Route109 sunrise altar,60,dawn shrine,Coastal dawn spirit
+346,Poente,SPECIES_CRADILY,Legendary,PLANNED,Route134 sunset altar,60,dusk shrine,Coastal dusk counterpart
+347,Estrelinha,SPECIES_ANORITH,Legendary+Mythical,IMPLEMENTED,Birth Island triangle,65,meteor puzzle,Triangle ritual now resolves into the shooting-star mythical
+348,Arauanamon,SPECIES_ARMALDO,Legendary,PLANNED,Cave of Origin postgame altar,72,regional embodiment trial,Only one exists; late postgame encounter
+376,Boitata,SPECIES_METAGROSS,Legendary,PLANNED,Scorched Slab,65,will-o-wisp shrine,Fire serpent folklore encounter
+377,Piraruacu,SPECIES_REGIROCK,Legendary,PLANNED,Route119 hidden deep pool,65,deep-water trial,Amazonian Water/Dragon giant
+378,Mata-Mata,SPECIES_REGICE,Legendary,PLANNED,Safari Northwest swamp,65,swamp shrine,Grass/Dragon Amazonian turtle
+379,Solaris,SPECIES_REGISTEEL,Legendary,PLANNED,Mt Chimney summit postgame,68,solar furnace,High-power solar psychic encounter
+380,Selene,SPECIES_LATIAS,Legendary,PLANNED,Shoal Cave ice room at night,65,lunar reflection shrine,Dark/Psychic lunar encounter
+381,Zumbi-Rei,SPECIES_LATIOS,Legendary,PLANNED,Abandoned Ship hidden floor,65,memory-haunt event,Fighting/Dark ruler bound to a place of loss
+382,Iemanja,SPECIES_KYOGRE,Legendary,IMPLEMENTED,Marine Cave End,70,presence trigger,Stale Kyogre overworld is deliberately hidden
+383,Oxumara,SPECIES_GROUDON,Legendary,IMPLEMENTED,Terra Cave End,70,presence trigger,Stale Groudon overworld is deliberately hidden
+384,Curupixel,SPECIES_RAYQUAZA,Mythical,IMPLEMENTED,Faraway Island,65,hide-and-seek chase,Mew event machinery retained but species/art identity is Curupixel
+385,Sacinho,SPECIES_JIRACHI,Mythical,PLANNED,Mirage Tower whirlwind chamber,65,whirlwind puzzle,Saci newborn mythical
+386,Araua,SPECIES_DEOXYS,Mythical,IMPLEMENTED,Sky Pillar Top,75,story summit,Dedicated encounter and battle themes
