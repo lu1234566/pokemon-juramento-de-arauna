@@ -379,6 +379,25 @@ gBattleAnims_Moves::
 	.4byte Move_LUAR_DE_JACI
 	.4byte Move_JURAMENTO_DE_ARAUANA
 	.4byte Move_ECLIPSE_DIVINO
+	.4byte Move_FLAMETHROWER
+	.4byte Move_SURF
+	.4byte Move_ROCK_SLIDE
+	.4byte Move_FLAMETHROWER
+	.4byte Move_MAGICAL_LEAF
+	.4byte Move_SURF
+	.4byte Move_AERIAL_ACE
+	.4byte Move_PSYCHIC
+	.4byte Move_DRAGON_CLAW
+	.4byte Move_FLAMETHROWER
+	.4byte Move_SURF
+	.4byte Move_IRON_TAIL
+	.4byte Move_SHADOW_BALL
+	.4byte Move_FLAMETHROWER
+	.4byte Move_THUNDERBOLT
+	.4byte Move_SURF
+	.4byte Move_FLAMETHROWER
+	.4byte Move_SURF
+	.4byte Move_DRAGON_CLAW
 	.4byte Move_COUNT @ sentinel
 
 	.align 2

@@ -37,8 +37,26 @@ STRING = re.compile(r'\.string "((?:[^"\\]|\\.)*)"')
 # A description in the bag is drawn in a much narrower window than a message
 # box, so it gets its own ceiling measured from its own file. The literals are
 # adjacent strings the compiler joins, not one _("").
-DESCRIPTIONS = ["src/data/text/item_descriptions.h"]
+DESCRIPTIONS = ["src/data/text/item_descriptions.h",
+                "src/data/text/move_descriptions.h"]
 DESCRIPTION_BLOCK = re.compile(r'_\(\n((?:\s*"(?:[^"\\]|\\.)*"\n?)+)\);')
+
+# A move's description is reached through a pointer table, so two moves can
+# quietly share one text and nothing in the build notices. That is not a
+# hypothetical: the nineteen Arauna signature moves were all pointed at the
+# ECLIPSE description and every one of them read "A divine eclipse erupts" on
+# the summary screen. Vanilla never does this, so any reuse is a mistake.
+DESCRIPTION_TABLE = "src/data/text/move_descriptions.h"
+TABLE_ROW = re.compile(r'\[MOVE_(\w+)\s*-\s*1\]\s*=\s*(\w+)\s*,')
+
+
+def shared_descriptions(text: str):
+    """Moves that do not have a description of their own."""
+    rows = TABLE_ROW.findall(text)
+    users: dict[str, list[str]] = {}
+    for move, symbol in rows:
+        users.setdefault(symbol, []).append(move)
+    return len(rows), {s: m for s, m in users.items() if len(m) > 1}
 
 # Files drawn in a window narrower than the message box, which the global
 # ceiling is therefore far too generous for. These are not files that merely
@@ -114,6 +132,18 @@ def main() -> int:
     print(f"widest line vanilla renders: {ceiling}px  \"{widest}\"")
     if args.ceiling:
         return 0
+
+    rows, shared = shared_descriptions(
+        (ROOT / DESCRIPTION_TABLE).read_text(encoding="utf-8"))
+    if shared:
+        print(f"move descriptions: {len(shared)} texts are used by more than one "
+              f"move", file=sys.stderr)
+        for symbol, moves in sorted(shared.items()):
+            print(f"  {symbol} <- {', '.join('MOVE_' + m for m in moves)}",
+                  file=sys.stderr)
+        return 1
+    print(f"move descriptions: OK ({rows} moves, each with its own text)")
+
     if not over:
         print(f"text width: OK ({len(files)} script files, nothing past {ceiling}px)")
         return 0

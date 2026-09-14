@@ -1201,6 +1201,24 @@ const u32 gBattleAnimSpriteGfx_WhiteFeather[] = INCGFX_U32("graphics/battle_anim
 const u32 gBattleAnimSpritePal_Sparkle6[] = INCGFX_U32("graphics/battle_anims/sprites/sparkle_6.png", ".gbapal.lz");
 const u32 gBattleAnimSpriteGfx_Sparkle6[] = INCGFX_U32("graphics/battle_anims/sprites/sparkle_6.png", ".4bpp.lz");
 
+// Fairy. Each sheet is one frame wide, so the 8x8 tiles come out of gbagfx in
+// the order the OBJ hardware wants them and the frame offsets in
+// src/battle_anim_fairy.c are just (tiles per frame) apart.
+const u32 gBattleAnimSpritePal_FairySpark[] = INCGFX_U32("graphics/battle_anims/sprites/fairy_spark.png", ".gbapal.lz");
+const u32 gBattleAnimSpriteGfx_FairySpark[] = INCGFX_U32("graphics/battle_anims/sprites/fairy_spark.png", ".4bpp.lz");
+
+const u32 gBattleAnimSpritePal_FairyWave[] = INCGFX_U32("graphics/battle_anims/sprites/fairy_wave.png", ".gbapal.lz");
+const u32 gBattleAnimSpriteGfx_FairyWave[] = INCGFX_U32("graphics/battle_anims/sprites/fairy_wave.png", ".4bpp.lz");
+
+const u32 gBattleAnimSpritePal_FairyCrescent[] = INCGFX_U32("graphics/battle_anims/sprites/fairy_crescent.png", ".gbapal.lz");
+const u32 gBattleAnimSpriteGfx_FairyCrescent[] = INCGFX_U32("graphics/battle_anims/sprites/fairy_crescent.png", ".4bpp.lz");
+
+const u32 gBattleAnimSpritePal_FairyOath[] = INCGFX_U32("graphics/battle_anims/sprites/fairy_oath.png", ".gbapal.lz");
+const u32 gBattleAnimSpriteGfx_FairyOath[] = INCGFX_U32("graphics/battle_anims/sprites/fairy_oath.png", ".4bpp.lz");
+
+const u32 gBattleAnimSpritePal_FairyEclipse[] = INCGFX_U32("graphics/battle_anims/sprites/fairy_eclipse.png", ".gbapal.lz");
+const u32 gBattleAnimSpriteGfx_FairyEclipse[] = INCGFX_U32("graphics/battle_anims/sprites/fairy_eclipse.png", ".4bpp.lz");
+
 const u16 gCableCarBg_Pal[]    = INCGFX_U16("graphics/cable_car/bg.png", ".gbapal");
 const u16 gCableCar_Pal[]      = INCGFX_U16("graphics/cable_car/cable_car.png", ".gbapal");
 const u32 gCableCarBg_Gfx[]    = INCGFX_U32("graphics/cable_car/bg.png", ".4bpp.lz");

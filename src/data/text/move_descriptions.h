@@ -1435,11 +1435,11 @@ static const u8 sDazzlingGleamDescription[] = _(
     "that hits opposing POKeMON.");
 
 static const u8 sMoonblastDescription[] = _(
-    "Moonlight erupts at the foe.\n"
+    "Moonlight strikes the foe.\n"
     "It may lower SP. ATK.");
 
 static const u8 sLuarDeJaciDescription[] = _(
-    "Jaci's moonlight crashes down.\n"
+    "Jaci's moonlight falls hard.\n"
     "It may lower SP. ATK.");
 
 static const u8 sJuramentoDeArauanaDescription[] = _(
@@ -1448,6 +1448,85 @@ static const u8 sJuramentoDeArauanaDescription[] = _(
 
 static const u8 sEclipseDivinoDescription[] = _(
     "A divine eclipse erupts, but\n"
+    "lowers the user's SP. ATK.");
+
+// The nineteen signatures that still ride on a vanilla effect. Each line here
+// describes what the engine actually does today, not what the move is meant to
+// become -- see docs/MOVESETS_386.md for the seven that fall short.
+static const u8 sViraLataCelesteDescription[] = _(
+    "A stray's starlit charge.\n"
+    "It may inflict a burn.");
+
+static const u8 sRajadaDoBanhadoDescription[] = _(
+    "A burst of marsh water that\n"
+    "may reduce SPEED.");
+
+static const u8 sMarteloDeGranitoDescription[] = _(
+    "A hammering stone blow that\n"
+    "may lower DEFENSE.");
+
+static const u8 sFogoFatuoAncestralDescription[] = _(
+    "An old wisp-fire that may\n"
+    "inflict a burn.");
+
+static const u8 sPassoAoContrarioDescription[] = _(
+    "A backward step so quick it\n"
+    "always strikes first.");
+
+static const u8 sCantoDaIaraDescription[] = _(
+    "A luring song that may\n"
+    "leave the foe confused.");
+
+static const u8 sRedemoinhoDoSaciDescription[] = _(
+    "A sudden whirlwind that\n"
+    "always strikes first.");
+
+static const u8 sEncantoDoBotoDescription[] = _(
+    "A river charm that may\n"
+    "leave the foe confused.");
+
+static const u8 sAbracoDaBoiunaDescription[] = _(
+    "A crushing coil that traps\n"
+    "the foe for 2 to 5 turns.");
+
+static const u8 sGalopeSemCabecaDescription[] = _(
+    "A headlong charge that also\n"
+    "hurts the user.");
+
+static const u8 sMareDaMaeDescription[] = _(
+    "A mothering tide that\n"
+    "restores the user's HP.");
+
+static const u8 sForjaDeOgumDescription[] = _(
+    "A forged strike that raises\n"
+    "the user's DEFENSE.");
+
+static const u8 sOlharDaCobraGrandeDescription[] = _(
+    "A serpent's stare that\n"
+    "paralyzes the foe.");
+
+static const u8 sAuroraDeGuaraciDescription[] = _(
+    "A dawn that calls harsh\n"
+    "sunlight for five turns.");
+
+static const u8 sTrovaoDeTupaDescription[] = _(
+    "A thunderclap that may\n"
+    "leave the foe paralyzed.");
+
+static const u8 sCorrentezaSupremaDescription[] = _(
+    "An overwhelming current\n"
+    "that may reduce SPEED.");
+
+static const u8 sIncendioPrimordialDescription[] = _(
+    "A first fire so fierce it\n"
+    "also hurts the user.");
+
+static const u8 sMarulhoAtlanticoDescription[] = _(
+    "An ocean swell that may\n"
+    "make the foe flinch.");
+
+static const u8 sEssenciaPrimordialDescription[] = _(
+    "A first-born surge that\n"
     "lowers the user's SP. ATK.");
 
 const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
@@ -1814,4 +1893,23 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_LUAR_DE_JACI - 1] = sLuarDeJaciDescription,
     [MOVE_JURAMENTO_DE_ARAUANA - 1] = sJuramentoDeArauanaDescription,
     [MOVE_ECLIPSE_DIVINO - 1] = sEclipseDivinoDescription,
+    [MOVE_VIRA_LATA_CELESTE - 1] = sViraLataCelesteDescription,
+    [MOVE_RAJADA_DO_BANHADO - 1] = sRajadaDoBanhadoDescription,
+    [MOVE_MARTELO_DE_GRANITO - 1] = sMarteloDeGranitoDescription,
+    [MOVE_FOGO_FATUO_ANCESTRAL - 1] = sFogoFatuoAncestralDescription,
+    [MOVE_PASSO_AO_CONTRARIO - 1] = sPassoAoContrarioDescription,
+    [MOVE_CANTO_DA_IARA - 1] = sCantoDaIaraDescription,
+    [MOVE_REDEMOINHO_DO_SACI - 1] = sRedemoinhoDoSaciDescription,
+    [MOVE_ENCANTO_DO_BOTO - 1] = sEncantoDoBotoDescription,
+    [MOVE_ABRACO_DA_BOIUNA - 1] = sAbracoDaBoiunaDescription,
+    [MOVE_GALOPE_SEM_CABECA - 1] = sGalopeSemCabecaDescription,
+    [MOVE_MARE_DA_MAE - 1] = sMareDaMaeDescription,
+    [MOVE_FORJA_DE_OGUM - 1] = sForjaDeOgumDescription,
+    [MOVE_OLHAR_DA_COBRA_GRANDE - 1] = sOlharDaCobraGrandeDescription,
+    [MOVE_AURORA_DE_GUARACI - 1] = sAuroraDeGuaraciDescription,
+    [MOVE_TROVAO_DE_TUPA - 1] = sTrovaoDeTupaDescription,
+    [MOVE_CORRENTEZA_SUPREMA - 1] = sCorrentezaSupremaDescription,
+    [MOVE_INCENDIO_PRIMORDIAL - 1] = sIncendioPrimordialDescription,
+    [MOVE_MARULHO_ATLANTICO - 1] = sMarulhoAtlanticoDescription,
+    [MOVE_ESSENCIA_PRIMORDIAL - 1] = sEssenciaPrimordialDescription,
 };

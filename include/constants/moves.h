@@ -368,7 +368,32 @@
 #define MOVE_JURAMENTO_DE_ARAUANA 361
 #define MOVE_ECLIPSE_DIVINO 362
 
-#define MOVES_COUNT 363
+
+// The nineteen remaining Arauana signature moves. Their specifications
+// live in the moveset package; each one is mapped onto an effect this
+// engine already runs, and the seven that could not be matched exactly are
+// listed in docs/arauna/SIGNATURE_MOVES.md rather than quietly approximated.
+#define MOVE_VIRA_LATA_CELESTE 363
+#define MOVE_RAJADA_DO_BANHADO 364
+#define MOVE_MARTELO_DE_GRANITO 365
+#define MOVE_FOGO_FATUO_ANCESTRAL 366
+#define MOVE_PASSO_AO_CONTRARIO 367
+#define MOVE_CANTO_DA_IARA 368
+#define MOVE_REDEMOINHO_DO_SACI 369
+#define MOVE_ENCANTO_DO_BOTO 370
+#define MOVE_ABRACO_DA_BOIUNA 371
+#define MOVE_GALOPE_SEM_CABECA 372
+#define MOVE_MARE_DA_MAE 373
+#define MOVE_FORJA_DE_OGUM 374
+#define MOVE_OLHAR_DA_COBRA_GRANDE 375
+#define MOVE_AURORA_DE_GUARACI 376
+#define MOVE_TROVAO_DE_TUPA 377
+#define MOVE_CORRENTEZA_SUPREMA 378
+#define MOVE_INCENDIO_PRIMORDIAL 379
+#define MOVE_MARULHO_ATLANTICO 380
+#define MOVE_ESSENCIA_PRIMORDIAL 381
+
+#define MOVES_COUNT 382
 
 // Used for checks for moves affected by Disable, Mimic, etc.
 #define MOVE_UNAVAILABLE 0xFFFF
