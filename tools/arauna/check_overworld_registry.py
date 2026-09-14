@@ -169,8 +169,10 @@ def main() -> int:
         ["grep", "-rl", "MAP_AQUA_HIDEOUT_UNUSED_RUBY_MAP1", "data", "src"],
         cwd=ROOT, capture_output=True, text=True).stdout.split()
         if not h.startswith("data/maps/AquaHideout_UnusedRubyMap1/")]
-    connections = (ROOT / "data/maps/AquaHideout_UnusedRubyMap1/connections.inc").read_text(
-        encoding="utf-8").strip()
+    connections_path = ROOT / "data/maps/AquaHideout_UnusedRubyMap1/connections.inc"
+    # Maps with zero connections legitimately omit connections.inc.
+    connections = (connections_path.read_text(encoding="utf-8").strip()
+                   if connections_path.exists() else "")
     results.append(check("the harness map is still unreachable",
                          not elsewhere and not connections,
                          ", ".join(elsewhere) or ("has connections" if connections else "")))
