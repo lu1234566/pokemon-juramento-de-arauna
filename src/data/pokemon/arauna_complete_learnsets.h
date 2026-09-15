@@ -5091,18 +5091,27 @@ static const u16 sAraunaCompleteKIRLIALevelUpLearnset[] = {
 };
 
 // #282 Draguará-Alfa (SPECIES_GARDEVOIR)
+// Os tres DRAGON abaixo (19/34/48) foram acrescentados a mao: o pacote gerou
+// esta especie no mesmo molde dos outros Dragon de ~600 BST -- #280 Sucuriacu,
+// #281 Pirarumba, #297 Corcovado-Anciao, todos com DRAGON_RAGE 19,
+// DRAGON_BREATH 34 e OUTRAGE 48 -- mas as tres linhas sairam Fire, deixando o
+// Alfa sem nenhum golpe Dragon ofensivo (so o DRAGON_DANCE do nv44, que nao da
+// dano). Nada foi removido; os golpes Fire continuam todos onde estavam.
 static const u16 sAraunaCompleteGARDEVOIRLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 2, MOVE_EMBER),
     LEVEL_UP_MOVE(10, MOVE_SMOKESCREEN),
     LEVEL_UP_MOVE(15, MOVE_LEER),
     LEVEL_UP_MOVE(19, MOVE_FLAME_WHEEL),
+    LEVEL_UP_MOVE(19, MOVE_DRAGON_RAGE),
     LEVEL_UP_MOVE(24, MOVE_WILL_O_WISP),
     LEVEL_UP_MOVE(29, MOVE_SCARY_FACE),
     LEVEL_UP_MOVE(34, MOVE_FIRE_SPIN),
+    LEVEL_UP_MOVE(34, MOVE_DRAGON_BREATH),
     LEVEL_UP_MOVE(39, MOVE_FLAMETHROWER),
     LEVEL_UP_MOVE(44, MOVE_DRAGON_DANCE),
     LEVEL_UP_MOVE(48, MOVE_SUNNY_DAY),
+    LEVEL_UP_MOVE(48, MOVE_OUTRAGE),
     LEVEL_UP_MOVE(53, MOVE_HEAT_WAVE),
     LEVEL_UP_MOVE(58, MOVE_FIRE_BLAST),
     LEVEL_UP_END

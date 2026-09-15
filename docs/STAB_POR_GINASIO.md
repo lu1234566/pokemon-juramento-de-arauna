@@ -26,7 +26,7 @@ as tres linhas iniciais (#001-#009) e a familia pseudo #046-#048.
 | Sidney | DARK | 49 | 56 | **56** |
 | Phoebe | GHOST | 51 | 18 | **18** |
 | Glacia | STEEL | 53 | 16 | **16** |
-| Drake | DRAGON | 55 | 11 | **10** |
+| Drake | DRAGON | 55 | 11 | **11** |
 
 ## Dalva — ROCK, ate nv15
 
@@ -564,25 +564,19 @@ daquele tipo so chega depois do teto:
 
 ## Drake — DRAGON, ate nv55
 
-10 das 11 especies do tipo. Ordenado por BST.
+11 das 11 especies do tipo. Ordenado por BST.
 
 | dex | nome | tipos | BST | melhor golpe STAB no teto | nv |
 |---:|---|---|---:|---|---:|
 | 280 | Sucuriaçu | Water/Dragon | 607 | OUTRAGE (90) | 48 |
 | 291 | Cobra-Norato | Water/Dragon | 607 | OUTRAGE (90) | 47 |
 | 244 | Tupã | Electric/Dragon | 606 | OUTRAGE (90) | 48 |
-| 285 | Boitatá-Puro | Fire/Dragon | 606 | TWISTER (40) | 2 |
+| 285 | Boitatá-Puro | Fire/Dragon | 606 | DRAGON_RAGE (variavel) | 15 |
+| 282 | Draguará-Alfa | Fire/Dragon | 605 | OUTRAGE (90) | 48 |
 | 100 | Corcovado | Rock/Dragon | 604 | OUTRAGE (90) | 53 |
 | 281 | Pirarumbá | Water/Dragon | 603 | OUTRAGE (90) | 48 |
 | 297 | Corcovado-Ancião | Rock/Dragon | 602 | OUTRAGE (90) | 48 |
 | 122 | Pirarucu | Water/Dragon | 552 | DRAGON_BREATH (60) | 50 |
 | 36 | Jacarodon | Water/Dragon | 551 | OUTRAGE (90) | 50 |
 | 211 | Fóssil | Rock/Dragon | 448 | OUTRAGE (90) | 53 |
-
-Fora por pouco — sao do tipo, mas o primeiro golpe ofensivo
-daquele tipo so chega depois do teto:
-
-| dex | nome | tipos | BST | primeiro STAB ofensivo |
-|---:|---|---|---:|---|
-| 282 | Draguará-Alfa | Fire/Dragon | 605 | **nunca — nao existe no learnset** |
 

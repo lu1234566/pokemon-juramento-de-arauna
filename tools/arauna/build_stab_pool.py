@@ -75,15 +75,13 @@ def base_stat_totals():
     return out
 
 
-# Golpes cujo .power na tabela e so um marcador: o dano real e calculado em
-# tempo de batalha (peso, nivel, amizade, HP restante...). Um deles e o
-# LOW_KICK, que tem .power = 1 e nao vale 1 de dano.
-VARIABLE_POWER = {
-    "EFFECT_COUNTER", "EFFECT_FLAIL", "EFFECT_FRUSTRATION", "EFFECT_HIDDEN_POWER",
-    "EFFECT_LEVEL_DAMAGE", "EFFECT_LOW_KICK", "EFFECT_MAGNITUDE",
-    "EFFECT_MIRROR_COAT", "EFFECT_OHKO", "EFFECT_PRESENT", "EFFECT_PSYWAVE",
-    "EFFECT_RETURN", "EFFECT_SPIT_UP",
-}
+# Golpes cujo .power na tabela e so um marcador: o dano real sai em tempo de
+# batalha, do peso, do nivel, da amizade, do HP restante. Na tabela deste
+# repositorio o marcador e sempre .power = 1 -- conferido nos 22 golpes que
+# tem esse valor, de GUILLOTINE a ENDEAVOR, todos de dano variavel ou fixo, e
+# nenhum golpe comum de 1 de poder existe. Por isso a regra e o proprio 1, e
+# nao uma lista de efeitos a mao: assim DRAGON_RAGE e SONIC_BOOM entram
+# sozinhos, sem ninguem precisar lembrar deles.
 VARIABLE_RANK = 50   # so para ordenar: um golpe de dano variavel vale um medio
 
 
@@ -95,10 +93,9 @@ def move_table():
         move, body = block.group(1), block.group(2)
         t = re.search(r"\.type\s*=\s*TYPE_(\w+)", body)
         p = re.search(r"\.power\s*=\s*(\d+)", body)
-        e = re.search(r"\.effect\s*=\s*(EFFECT_\w+)", body)
         if t:
-            out[move] = (t.group(1), int(p.group(1)) if p else 0,
-                         bool(e) and e.group(1) in VARIABLE_POWER)
+            power = int(p.group(1)) if p else 0
+            out[move] = (t.group(1), power, power == 1)
     return out
 
 
