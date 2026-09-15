@@ -45,13 +45,13 @@ O remendo também conserta um defeito de verdade herdado do Emerald: `SPECIES_FE
 secreto de pesca da Route 119 tirar um pássaro da água. O `SPECIES_RHYDON` que
 entra no lugar é o #121 Pirarim, Water/Water. Conferido nos dois sentidos.
 
-## Os 21 lendários que ficaram sem casa
+## Os 20 lendários que ficaram sem casa
 
 Aqui está o custo real de instalar este pacote hoje, e ele não foi escondido.
 
 O pacote tira os 31 especiais das tabelas aleatórias de propósito, e o plano de
 encontros estáticos ainda não existe. Oito deles já têm encontro por script
-herdado do Emerald e dois são os errantes — sobram **21 sem nenhuma forma de
+herdado do Emerald e dois são os errantes — sobram **20 sem nenhuma forma de
 serem obtidos**. Antes deste pacote eles estavam espalhados na grama; depois
 dele, não estão em lugar nenhum.
 
@@ -62,7 +62,7 @@ O gate de disponibilidade reprovou, e com razão. A resposta não foi desligá-l
 - um especial inalcançável só passa se estiver nomeado em
   `docs/arauna/ESPECIAIS_ESTATICOS.csv`, que é o plano do pacote trazido para
   dentro do repositório, com os 31 e o lugar que cada um espera;
-- o gate imprime os 21 e onde cada um deveria ficar, toda vez que roda.
+- o gate imprime os que faltam e onde cada um deveria ficar, toda vez que roda.
 
 Assim o buraco tem exatamente o tamanho que o arquivo diz, não pode crescer em
 silêncio, e fechar um deles é apagar uma linha. Testado de propósito: tirando a
@@ -71,7 +71,7 @@ linha do #329 do plano, o gate reprova e nomeia "#329 Guaraciana".
 > **Conflito a resolver junto com o plano estático:** #380 Selenê e #381
 > Zumbi-Rei estão no plano como santuário, mas hoje são os **errantes** do
 > Emerald — `src/roamer.c` os solta pelo mapa. São obtíveis por isso, e é por
-> isso que sobram 21 e não 23. Quando o santuário existir, é preciso decidir se
+> isso que sobram 20 e não 23. Quando o santuário existir, é preciso decidir se
 > eles continuam errando ou não.
 
 ## Um ponto cego do gate, fechado
@@ -80,6 +80,12 @@ O gate lia as tabelas e os scripts, e só. O Pirarim mostrou que isso não basta
 espécie que o motor produz de dentro do C — a vaga rara de pesca, os errantes —
 era invisível para ele. Agora `build_availability.py` também lê
 `src/wild_encounter.c` e `src/roamer.c`.
+
+E havia um terceiro: ele procurava `givemon`, `setwildbattle` e `createmon`, mas
+**não** `seteventmon`, que é como todas as ilhas de evento entregam o seu
+lendário. Seis espécies eram invisíveis por isso, entre elas o **#386 Arauá**,
+que está na Ilha do Nascimento desde sempre e que eu mesmo listei como pendente
+no commit anterior. Corrigido; são 20, não 21.
 
 ## Conferido no emulador
 
