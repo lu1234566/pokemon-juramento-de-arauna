@@ -90,9 +90,28 @@ def constant(name: str) -> str:
     return re.sub(r"[^A-Z0-9]+", "_", ascii_name.upper()).strip("_")
 
 
+# A creature is 64x64 walking art unless the manifest says otherwise. The one
+# other shape the registry accepts is 32x32 standing art, for the legendaries
+# that hold a chamber and never take a step: same shape the Regis already use
+# -- one pose, inanimate, half the tiles.
+SHAPES = {
+    64: dict(size=2048, tiles=8, oam="gObjectEventBaseOam_64x64",
+             subsprites="sOamTables_64x64", inanimate="FALSE"),
+    32: dict(size=512, tiles=4, oam="gObjectEventBaseOam_32x32",
+             subsprites="sOamTables_32x32", inanimate="TRUE"),
+}
+
+
 def species(rows):
-    return [dict(row, sym=symbol(row["slug"]), const=f"ARAUNA_OW_{constant(row['name'])}")
-            for row in rows]
+    out = []
+    for row in rows:
+        side = int(row.get("ow_size") or 64)
+        if side not in SHAPES:
+            raise SystemExit(f"{row['name']}: ow_size {side} is neither 64 nor 32")
+        out.append(dict(row, sym=symbol(row["slug"]),
+                        const=f"ARAUNA_OW_{constant(row['name'])}",
+                        side=side, **SHAPES[side]))
+    return out
 
 
 def splice(text: str, block: str, anchor: str) -> str:
@@ -139,7 +158,7 @@ def render_graphics(mons) -> str:
         name = f"{mon['arauna_dex']}_{mon['slug']}"
         lines.append(f'const u32 gObjectEventPic_Arauna{mon["sym"]}[] = '
                      f'INCGFX_U32("graphics/object_events/pics/pokemon/arauna/{name}.png", '
-                     f'".4bpp", "-mwidth 8 -mheight 8");')
+                     f'".4bpp", "-mwidth {mon["tiles"]} -mheight {mon["tiles"]}");')
         lines.append(f'const u16 gObjectEventPal_Arauna{mon["sym"]}[] = '
                      f'INCGFX_U16("graphics/object_events/palettes/arauna_{name}.pal", ".gbapal");')
     return "\n".join(lines) + "\n"
@@ -151,8 +170,11 @@ def render_pic_tables(mons) -> str:
         lines.append(f"static const struct SpriteFrameImage sPicTable_Arauna{mon['sym']}[] = {{")
         # South, North, West, then the walk frames, which reuse the idle pose:
         # these are single-pose redraws, so a walking creature keeps facing.
-        for frame in (0, 1, 2, 0, 0, 1, 1, 2, 2):
-            lines.append(f"    overworld_frame(gObjectEventPic_Arauna{mon['sym']}, 8, 8, {frame}),")
+        # Standing art has one pose full stop, so every slot points at frame 0.
+        frames = (0, 1, 2, 0, 0, 1, 1, 2, 2) if mon["side"] == 64 else (0,) * 9
+        for frame in frames:
+            lines.append(f"    overworld_frame(gObjectEventPic_Arauna{mon['sym']}, "
+                         f"{mon['tiles']}, {mon['tiles']}, {frame}),")
         lines.append("};")
     return "\n".join(lines) + "\n"
 
@@ -161,16 +183,16 @@ INFO = """static const struct ObjectEventGraphicsInfo sAraunaOverworld{channel}_
     .tileTag = TAG_NONE,
     .paletteTag = OBJ_EVENT_PAL_TAG_ARAUNA_{tag},
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
-    .size = 2048,
-    .width = 64,
-    .height = 64,
+    .size = {size},
+    .width = {side},
+    .height = {side},
     .paletteSlot = {slot},
     .shadowSize = SHADOW_SIZE_M,
-    .inanimate = FALSE,
+    .inanimate = {inanimate},
     .disableReflectionPaletteLoad = TRUE,
     .tracks = TRACKS_FOOT,
-    .oam = &gObjectEventBaseOam_64x64,
-    .subspriteTables = sOamTables_64x64,
+    .oam = &{oam},
+    .subspriteTables = {subsprites},
     .anims = sAnimTable_Standard,
     .images = sPicTable_Arauna{sym},
     .affineAnims = gDummySpriteAffineAnimTable,
@@ -193,7 +215,10 @@ def render_registry(mons) -> str:
     for channel in ("A", "B"):
         for mon in mons:
             out.append(INFO.format(channel=channel, sym=mon["sym"],
-                                   tag=mon["slug"].upper(), slot=slots[channel]))
+                                   tag=mon["slug"].upper(), slot=slots[channel],
+                                   size=mon["size"], side=mon["side"],
+                                   inanimate=mon["inanimate"], oam=mon["oam"],
+                                   subsprites=mon["subsprites"]))
     out.append("static const struct ObjectEventGraphicsInfo *const "
                "gAraunaOverworldGraphicsInfo[ARAUNA_OW_CHANNELS][ARAUNA_OW_COUNT] =\n{")
     for channel in ("A", "B"):
@@ -256,7 +281,21 @@ def edit_vars(text: str) -> str:
              "//\n"
              "// THEY ARE NOT FREE. Anything else that writes VAR_OBJ_GFX_ID_C or _D will\n"
              "// change what an Arauna overworld object looks like, wherever one stands.\n"
-             "// VAR_OBJ_GFX_ID_B is the one object-gfx var still unclaimed.\n"
+             # VAR_OBJ_GFX_ID_B picked up an owner after this generator was
+             # written -- it carries RAUL, and the note explaining why that is
+             # safe is maintained by hand in vars.h. Regenerating used to
+             # replace it with a stale "still unclaimed", which is how a comment
+             # that took work to get right quietly became wrong.
+             "// VAR_OBJ_GFX_ID_B carries RAUL. Unlike _C and _D it is shared rather than\n"
+             "// reserved: it is also decoration slot twelve in the secret bases and the two\n"
+             "// bedrooms. That is safe because an object gfx var is per-map scratch -- every\n"
+             "// decoration room rewrites all of them from the save on entry\n"
+             "// (InitSecretBaseDecorationSprites), and RAUL's three maps write this one in\n"
+             "// their ON_TRANSITION before any object spawns. Whoever owns the current map\n"
+             "// owns the var, which is how vanilla already uses _0, _1, _E and _F.\n"
+             "//\n"
+             "// It holds ARAUNA_VIRTUAL_GFX_RAUL, a two-byte virtual graphics id rather than\n"
+             "// a one-byte graphics id; see include/constants/event_objects.h.\n"
              "// tools/arauna/check_overworld_registry.py fails the build's static check if\n"
              "// anything outside the Arauna system starts writing them.\n"
              "#define VAR_ARAUNA_OW_A            VAR_OBJ_GFX_ID_C\n"

@@ -68,10 +68,14 @@ boneco da criatura do Emerald: `OBJ_EVENT_GFX_REGISTEEL` no Ancient Tomb,
 Nascimento. Hoje o boneco e a batalha **combinam**. Trocar só a espécie da
 batalha faria o jogador andar até um Registeel e lutar contra um Verdejante.
 
-A mensagem já antecipa isso e a resposta dela é **esconder** o sprite herdado.
-É implementável, mas transforma um encontro visível e icônico num gatilho
-invisível, e isso é decisão sua, não minha. É exatamente o que o pacote quer
-dizer com "não integrar sem revisão de flags/local".
+> **Correção:** numa primeira leitura eu disse que não havia arte própria
+> disponível porque `OBJ_EVENT_GFX_ARAUNA_POKEMON_A/B` apontam para o NinjaBoy.
+> Os dois ids são **despachantes** — `VAR_ARAUNA_OW_A`/`_B` escolhe o gráfico em
+> tempo de execução no registry próprio de Arauana, e o NinjaBoy é só o resto da
+> tabela estática, que nunca é lida para eles. O impedimento real é outro e
+> continua valendo: **Verdejante, Terraão, Marulho e Estrelinha não estão entre
+> as 46 do registry**. O caminho para resolver isso está em
+> `docs/OVERWORLD_LENDARIOS_PENDENTE.md`.
 
 ## O que foi feito
 
