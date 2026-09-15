@@ -8,9 +8,16 @@ O que e conferido, por vaga:
   golpes       os quatro ids existem em constants/moves.h, e nao repetem
   learnset     o nivel que o editor declara bate com o learnset do repositorio
                (nivel, TM/HM ou golpe de ovo); "fora do learnset" e apontado
+  categoria    fisico/especial sai do TIPO, como o motor faz
+               (IS_TYPE_PHYSICAL: tipo < TYPE_MYSTERY)
   iv           iv31 == iv * MAX_PER_STAT_IVS / 255, que e a conta do motor
   item         o ITEM_* existe
   nivel        1..100, e comparado com o teto do chefe quando passado --cap
+
+Fora disso, sob ATENCAO, ficam as escolhas que compilam mas contrariam um
+plano ja escrito: lendario/mitico da lista dos especiais estaticos, inicial,
+familia pseudo, e vaga com nivel muito abaixo do resto do time -- que quase
+sempre e o nivel 1 que o editor poe numa vaga nova.
 
 Uso:  python3 tools/arauna/check_boss_team.py time.json [--cap 15]
 Saida: relatorio, e codigo 1 se houver erro (aviso nao reprova).
@@ -23,6 +30,13 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 MAX_PER_STAT_IVS = 31
+STARTERS = set(range(1, 10))       # #001-#009, as tres linhas iniciais
+PSEUDO = {46, 47, 48}              # a familia pseudo-lendaria
+LEVEL_GAP = 5                      # vaga tantos niveis abaixo do time e suspeita
+
+# include/constants/pokemon.h: fisico e tipo < TYPE_MYSTERY(9), especial e > 9.
+PHYSICAL_TYPES = {"normal", "fighting", "flying", "poison", "ground",
+                  "rock", "bug", "ghost", "steel"}
 
 
 def constants(path, prefix):
@@ -39,6 +53,36 @@ def dex_table():
             out[int(row["arauna_dex"])] = (
                 row["full_name"], row["species_constant"],
                 [t.strip().lower() for t in row["types"].split("/") if t.strip()])
+    return out
+
+
+def specials():
+    """dex -> (nivel recomendado, lugar) dos lendarios/miticos planejados."""
+    import csv
+    with open(ROOT / "docs/arauna/ESPECIAIS_ESTATICOS.csv") as fh:
+        return {int(r["dex"]): (r["recommended_level"], r["placement"])
+                for r in csv.DictReader(fh)}
+
+
+def base_stat_totals():
+    text = (ROOT / "src/data/pokemon/species_info.h").read_text()
+    out = {}
+    for block in re.finditer(r"\[(SPECIES_\w+)\][^\n]*\n    \{(.*?)\n    \}", text, re.S):
+        out[block.group(1)] = sum(
+            int(m.group(1)) for field in
+            ("baseHP", "baseAttack", "baseDefense", "baseSpeed", "baseSpAttack", "baseSpDefense")
+            for m in [re.search(r"\.%s\s*=\s*(\d+)" % field, block.group(2))] if m)
+    return out
+
+
+def move_types():
+    """MOVE_* -> tipo em minusculas."""
+    text = (ROOT / "src/data/battle_moves.h").read_text()
+    out = {}
+    for block in re.finditer(r"\[(MOVE_\w+)\]\s*=\s*\{(.*?)\n    \}", text, re.S):
+        m = re.search(r"\.type\s*=\s*TYPE_(\w+)", block.group(2))
+        if m:
+            out[block.group(1)] = m.group(1).lower()
     return out
 
 
@@ -98,8 +142,9 @@ def main():
     tms, eggs = tm_hm(), egg_moves()
     moves = constants("include/constants/moves.h", "MOVE_")
     items = constants("include/constants/items.h", "ITEM_")
+    special_plan, bst, mtypes = specials(), base_stat_totals(), move_types()
 
-    errors, warnings = [], []
+    errors, warnings, attention = [], [], []
     print("esquema %s v%s   customMoveset=%s   ivMode=%s" % (
         data.get("schema"), data.get("version"),
         data.get("trainerParty", {}).get("customMoveset"),
@@ -107,6 +152,7 @@ def main():
     print()
 
     filled = [s for s in data["slots"] if s.get("pokemonId")]
+    top_level = max((s["level"] or 0) for s in filled) if filled else 0
     for slot in filled:
         n, name = slot["pokemonId"], slot["pokemonName"]
         tag = "vaga %d  #%03d %s" % (slot["slot"], n, name)
@@ -114,9 +160,23 @@ def main():
             errors.append("%s: dex %d nao existe" % (tag, n))
             continue
         real_name, species, dex_types = dex[n]
-        print("%s  ->  %s  nv%d  iv=%s(%s)  %s" % (
-            tag, species[len("SPECIES_"):], slot["level"], slot["iv"], slot["iv31"],
+        print("%s  ->  %s  nv%s  BST %d  iv=%s(%s)  %s" % (
+            tag, species[len("SPECIES_"):], slot["level"], bst.get(species, 0),
+            slot["iv"], slot["iv31"],
             (slot.get("heldItem") or {}).get("id", "ITEM_NONE")))
+
+        if n in special_plan:
+            lvl, place = special_plan[n]
+            attention.append("%s: e lendario/mitico. O plano estatico pede nv%s em %s"
+                             % (tag, lvl, place.split(" - ")[0]))
+        if n in STARTERS:
+            attention.append("%s: e de linha inicial (#001-#009)" % tag)
+        if n in PSEUDO:
+            attention.append("%s: e da familia pseudo #046-#048" % tag)
+        if slot["level"] and top_level - slot["level"] > LEVEL_GAP:
+            attention.append("%s: nv%d, %d abaixo do nv%d do resto do time%s"
+                             % (tag, slot["level"], top_level - slot["level"], top_level,
+                                " -- e o nivel 1 de vaga nova" if slot["level"] == 1 else ""))
 
         if real_name != name:
             warnings.append("%s: o editor chama de %r, o repositorio de %r" % (tag, name, real_name))
@@ -159,8 +219,21 @@ def main():
                 continue
             mid = m["id"]
             if mid not in moves:
-                errors.append("%s: golpe %s nao existe" % (tag, mid))
+                near = "MOVE_" + mid
+                errors.append("%s: golpe %s nao existe%s"
+                              % (tag, mid, " -- falta o prefixo, seria %s" % near
+                                 if near in moves else ""))
                 continue
+
+            engine_type = mtypes.get(mid)
+            if engine_type and m.get("type") and m["type"] != engine_type:
+                errors.append("%s: %s e %s no jogo, o editor diz %s"
+                              % (tag, mid, engine_type, m["type"]))
+            if engine_type and m.get("category") in ("physical", "special"):
+                want = "physical" if engine_type in PHYSICAL_TYPES else "special"
+                if m["category"] != want:
+                    errors.append("%s: %s e %s (tipo %s), o editor diz %s"
+                                  % (tag, mid, want, engine_type, m["category"]))
             claimed = m.get("learnsetLevel")
             if mid in first:
                 if claimed != first[mid]:
@@ -179,9 +252,11 @@ def main():
     print()
     print("vagas preenchidas: %d" % len(filled))
     for w in warnings:
-        print("  AVISO  %s" % w)
+        print("  AVISO    %s" % w)
+    for a in attention:
+        print("  ATENCAO  %s" % a)
     for e in errors:
-        print("  ERRO   %s" % e)
+        print("  ERRO     %s" % e)
     if not errors:
         print("  sem erros")
     if errors:

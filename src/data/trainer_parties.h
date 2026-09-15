@@ -4266,27 +4266,43 @@ static const struct TrainerMonItemCustomMoves sParty_Roxanne1[] = {
     }
 };
 
+// ADEMAR, segunda insignia. Time do editor (arauana-team v4), cinco vagas.
+// #062 Prego, #105 Caboclo, #161 Gaviao, #239 Mao-Peluda, #255 Zumbi.
 static const struct TrainerMonItemCustomMoves sParty_Brawly1[] = {
     {
-    .iv = 100,
-    .lvl = 16,
-    .species = SPECIES_LINOONE,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_KARATE_CHOP, MOVE_LOW_KICK, MOVE_SEISMIC_TOSS, MOVE_BULK_UP}
-    },
-    {
-    .iv = 100,
-    .lvl = 16,
+    .iv = 99,
+    .lvl = 17,
     .species = SPECIES_PERSIAN,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_FOCUS_PUNCH, MOVE_LIGHT_SCREEN, MOVE_REFLECT, MOVE_BULK_UP}
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_DOUBLE_EDGE, MOVE_CROSS_CHOP, MOVE_HEADBUTT, MOVE_FOCUS_ENERGY}
     },
     {
-    .iv = 200,
-    .lvl = 19,
-    .species = SPECIES_SHIFTRY,
+    .iv = 107,
+    .lvl = 17,
+    .species = SPECIES_DROWZEE,
     .heldItem = ITEM_SITRUS_BERRY,
-    .moves = {MOVE_ARM_THRUST, MOVE_VITAL_THROW, MOVE_REVERSAL, MOVE_BULK_UP}
+    .moves = {MOVE_RAIN_DANCE, MOVE_SURF, MOVE_MACH_PUNCH, MOVE_KARATE_CHOP}
+    },
+    {
+    .iv = 116,
+    .lvl = 17,
+    .species = SPECIES_CHIKORITA,
+    .heldItem = ITEM_BLACK_BELT,
+    .moves = {MOVE_BRICK_BREAK, MOVE_MACH_PUNCH, MOVE_WING_ATTACK, MOVE_WHIRLWIND}
+    },
+    {
+    .iv = 132,
+    .lvl = 17,
+    .species = SPECIES_KINGDRA,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_CONFUSE_RAY, MOVE_SING, MOVE_LOW_KICK, MOVE_MACH_PUNCH}
+    },
+    {
+    .iv = 255,
+    .lvl = 19,
+    .species = SPECIES_LARVITAR,
+    .heldItem = ITEM_RAWST_BERRY,
+    .moves = {MOVE_DESTINY_BOND, MOVE_SHADOW_BALL, MOVE_MACH_PUNCH, MOVE_SKY_UPPERCUT}
     }
 };
 

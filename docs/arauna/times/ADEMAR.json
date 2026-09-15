@@ -1,0 +1,385 @@
+{
+  "schema": "arauana-team",
+  "version": 4,
+  "exportedAt": "2026-09-15T22:42:20.731Z",
+  "trainerParty": {
+    "customMoveset": true,
+    "ivMode": "single-fixed-iv"
+  },
+  "slots": [
+    {
+      "slot": 1,
+      "pokemonId": 62,
+      "pokemonName": "Prego",
+      "level": 17,
+      "iv": 99,
+      "iv31": 12,
+      "heldItem": {
+        "id": "ITEM_SITRUS_BERRY",
+        "name": "SITRUS BERRY"
+      },
+      "types": [
+        "fighting",
+        "normal"
+      ],
+      "moves": [
+        {
+          "id": "MOVE_DOUBLE_EDGE",
+          "name": "Double-Edge",
+          "type": "normal",
+          "category": "physical",
+          "power": 120,
+          "accuracy": 100,
+          "pp": 15,
+          "learnsetLevel": 18,
+          "warning": "Aprendido no Nv. 18; treinador está no Nv. 17. O moveset custom permite.",
+          "signature": false
+        },
+        {
+          "id": "MOVE_CROSS_CHOP",
+          "name": "Cross Chop",
+          "type": "fighting",
+          "category": "physical",
+          "power": 100,
+          "accuracy": 80,
+          "pp": 5,
+          "learnsetLevel": 48,
+          "warning": "Aprendido no Nv. 48; treinador está no Nv. 17. O moveset custom permite.",
+          "signature": false
+        },
+        {
+          "id": "MOVE_HEADBUTT",
+          "name": "Headbutt",
+          "type": "normal",
+          "category": "physical",
+          "power": 70,
+          "accuracy": 100,
+          "pp": 15,
+          "learnsetLevel": 9,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_FOCUS_ENERGY",
+          "name": "Focus Energy",
+          "type": "normal",
+          "category": "status",
+          "power": null,
+          "accuracy": null,
+          "pp": 30,
+          "learnsetLevel": 26,
+          "warning": "Aprendido no Nv. 26; treinador está no Nv. 17. O moveset custom permite.",
+          "signature": false
+        }
+      ],
+      "warnings": [
+        "Double-Edge: Aprendido no Nv. 18; treinador está no Nv. 17. O moveset custom permite.",
+        "Cross Chop: Aprendido no Nv. 48; treinador está no Nv. 17. O moveset custom permite.",
+        "Focus Energy: Aprendido no Nv. 26; treinador está no Nv. 17. O moveset custom permite."
+      ]
+    },
+    {
+      "slot": 2,
+      "pokemonId": 105,
+      "pokemonName": "Caboclo",
+      "level": 17,
+      "iv": 107,
+      "iv31": 13,
+      "heldItem": {
+        "id": "ITEM_SITRUS_BERRY",
+        "name": "SITRUS BERRY"
+      },
+      "types": [
+        "water",
+        "fighting"
+      ],
+      "moves": [
+        {
+          "id": "MOVE_RAIN_DANCE",
+          "name": "Rain Dance",
+          "type": "water",
+          "category": "status",
+          "power": null,
+          "accuracy": null,
+          "pp": 5,
+          "learnsetLevel": 17,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_SURF",
+          "name": "Surf",
+          "type": "water",
+          "category": "special",
+          "power": 95,
+          "accuracy": 100,
+          "pp": 15,
+          "learnsetLevel": 21,
+          "warning": "Aprendido no Nv. 21; treinador está no Nv. 17. O moveset custom permite.",
+          "signature": false
+        },
+        {
+          "id": "MOVE_MACH_PUNCH",
+          "name": "Mach Punch",
+          "type": "fighting",
+          "category": "physical",
+          "power": 40,
+          "accuracy": 100,
+          "pp": 30,
+          "learnsetLevel": 42,
+          "warning": "Aprendido no Nv. 42; treinador está no Nv. 17. O moveset custom permite.",
+          "signature": false
+        },
+        {
+          "id": "MOVE_KARATE_CHOP",
+          "name": "Karate Chop",
+          "type": "fighting",
+          "category": "physical",
+          "power": 50,
+          "accuracy": 100,
+          "pp": 25,
+          "learnsetLevel": 38,
+          "warning": "Aprendido no Nv. 38; treinador está no Nv. 17. O moveset custom permite.",
+          "signature": false
+        }
+      ],
+      "warnings": [
+        "Surf: Aprendido no Nv. 21; treinador está no Nv. 17. O moveset custom permite.",
+        "Mach Punch: Aprendido no Nv. 42; treinador está no Nv. 17. O moveset custom permite.",
+        "Karate Chop: Aprendido no Nv. 38; treinador está no Nv. 17. O moveset custom permite."
+      ]
+    },
+    {
+      "slot": 3,
+      "pokemonId": 161,
+      "pokemonName": "Gavião",
+      "level": 17,
+      "iv": 116,
+      "iv31": 14,
+      "heldItem": {
+        "id": "ITEM_BLACK_BELT",
+        "name": "BLACK BELT"
+      },
+      "types": [
+        "flying",
+        "fighting"
+      ],
+      "moves": [
+        {
+          "id": "MOVE_BRICK_BREAK",
+          "name": "Brick Break",
+          "type": "fighting",
+          "category": "physical",
+          "power": 75,
+          "accuracy": 100,
+          "pp": 15,
+          "learnsetLevel": 39,
+          "warning": "Aprendido no Nv. 39; treinador está no Nv. 17. O moveset custom permite.",
+          "signature": false
+        },
+        {
+          "id": "MOVE_MACH_PUNCH",
+          "name": "Mach Punch",
+          "type": "fighting",
+          "category": "physical",
+          "power": 40,
+          "accuracy": 100,
+          "pp": 30,
+          "learnsetLevel": 29,
+          "warning": "Aprendido no Nv. 29; treinador está no Nv. 17. O moveset custom permite.",
+          "signature": false
+        },
+        {
+          "id": "MOVE_WING_ATTACK",
+          "name": "Wing Attack",
+          "type": "flying",
+          "category": "physical",
+          "power": 60,
+          "accuracy": 100,
+          "pp": 35,
+          "learnsetLevel": 24,
+          "warning": "Aprendido no Nv. 24; treinador está no Nv. 17. O moveset custom permite.",
+          "signature": false
+        },
+        {
+          "id": "MOVE_WHIRLWIND",
+          "name": "Whirlwind",
+          "type": "normal",
+          "category": "status",
+          "power": null,
+          "accuracy": 100,
+          "pp": 20,
+          "learnsetLevel": 58,
+          "warning": "Aprendido no Nv. 58; treinador está no Nv. 17. O moveset custom permite.",
+          "signature": false
+        }
+      ],
+      "warnings": [
+        "Brick Break: Aprendido no Nv. 39; treinador está no Nv. 17. O moveset custom permite.",
+        "Mach Punch: Aprendido no Nv. 29; treinador está no Nv. 17. O moveset custom permite.",
+        "Wing Attack: Aprendido no Nv. 24; treinador está no Nv. 17. O moveset custom permite.",
+        "Whirlwind: Aprendido no Nv. 58; treinador está no Nv. 17. O moveset custom permite."
+      ]
+    },
+    {
+      "slot": 4,
+      "pokemonId": 239,
+      "pokemonName": "Mão-Peluda",
+      "level": 17,
+      "iv": 132,
+      "iv31": 16,
+      "heldItem": {
+        "id": "ITEM_SITRUS_BERRY",
+        "name": "SITRUS BERRY"
+      },
+      "types": [
+        "ghost",
+        "fighting"
+      ],
+      "moves": [
+        {
+          "id": "MOVE_CONFUSE_RAY",
+          "name": "Confuse Ray",
+          "type": "ghost",
+          "category": "status",
+          "power": null,
+          "accuracy": 100,
+          "pp": 10,
+          "learnsetLevel": 15,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_SING",
+          "name": "Sing",
+          "type": "normal",
+          "category": "status",
+          "power": null,
+          "accuracy": 55,
+          "pp": 15,
+          "learnsetLevel": 58,
+          "warning": "Aprendido no Nv. 58; treinador está no Nv. 17. O moveset custom permite.",
+          "signature": false
+        },
+        {
+          "id": "MOVE_LOW_KICK",
+          "name": "Low Kick",
+          "type": "fighting",
+          "category": "physical",
+          "power": 1,
+          "accuracy": 100,
+          "pp": 20,
+          "learnsetLevel": 24,
+          "warning": "Aprendido no Nv. 24; treinador está no Nv. 17. O moveset custom permite.",
+          "signature": false
+        },
+        {
+          "id": "MOVE_MACH_PUNCH",
+          "name": "Mach Punch",
+          "type": "fighting",
+          "category": "physical",
+          "power": 40,
+          "accuracy": 100,
+          "pp": 30,
+          "learnsetLevel": 29,
+          "warning": "Aprendido no Nv. 29; treinador está no Nv. 17. O moveset custom permite.",
+          "signature": false
+        }
+      ],
+      "warnings": [
+        "Sing: Aprendido no Nv. 58; treinador está no Nv. 17. O moveset custom permite.",
+        "Low Kick: Aprendido no Nv. 24; treinador está no Nv. 17. O moveset custom permite.",
+        "Mach Punch: Aprendido no Nv. 29; treinador está no Nv. 17. O moveset custom permite."
+      ]
+    },
+    {
+      "slot": 5,
+      "pokemonId": 255,
+      "pokemonName": "Zumbi",
+      "level": 19,
+      "iv": 255,
+      "iv31": 31,
+      "heldItem": {
+        "id": "ITEM_RAWST_BERRY",
+        "name": "RAWST BERRY"
+      },
+      "types": [
+        "ghost",
+        "fighting"
+      ],
+      "moves": [
+        {
+          "id": "MOVE_DESTINY_BOND",
+          "name": "Destiny Bond",
+          "type": "ghost",
+          "category": "status",
+          "power": null,
+          "accuracy": null,
+          "pp": 5,
+          "learnsetLevel": 44,
+          "warning": "Aprendido no Nv. 44; treinador está no Nv. 19. O moveset custom permite.",
+          "signature": false
+        },
+        {
+          "id": "MOVE_SHADOW_BALL",
+          "name": "Shadow Ball",
+          "type": "ghost",
+          "category": "physical",
+          "power": 80,
+          "accuracy": 100,
+          "pp": 15,
+          "learnsetLevel": 39,
+          "warning": "Aprendido no Nv. 39; treinador está no Nv. 19. O moveset custom permite.",
+          "signature": false
+        },
+        {
+          "id": "MOVE_MACH_PUNCH",
+          "name": "Mach Punch",
+          "type": "fighting",
+          "category": "physical",
+          "power": 40,
+          "accuracy": 100,
+          "pp": 30,
+          "learnsetLevel": 34,
+          "warning": "Aprendido no Nv. 34; treinador está no Nv. 19. O moveset custom permite.",
+          "signature": false
+        },
+        {
+          "id": "MOVE_SKY_UPPERCUT",
+          "name": "Sky Uppercut",
+          "type": "fighting",
+          "category": "physical",
+          "power": 85,
+          "accuracy": 90,
+          "pp": 15,
+          "learnsetLevel": 53,
+          "warning": "Aprendido no Nv. 53; treinador está no Nv. 19. O moveset custom permite.",
+          "signature": false
+        }
+      ],
+      "warnings": [
+        "Destiny Bond: Aprendido no Nv. 44; treinador está no Nv. 19. O moveset custom permite.",
+        "Shadow Ball: Aprendido no Nv. 39; treinador está no Nv. 19. O moveset custom permite.",
+        "Mach Punch: Aprendido no Nv. 34; treinador está no Nv. 19. O moveset custom permite.",
+        "Sky Uppercut: Aprendido no Nv. 53; treinador está no Nv. 19. O moveset custom permite."
+      ]
+    },
+    {
+      "slot": 6,
+      "pokemonId": null,
+      "pokemonName": null,
+      "level": null,
+      "iv": null,
+      "iv31": null,
+      "heldItem": null,
+      "types": [],
+      "moves": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "warnings": []
+    }
+  ]
+}

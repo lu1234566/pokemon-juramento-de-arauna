@@ -1,0 +1,382 @@
+{
+  "schema": "arauana-team",
+  "version": 4,
+  "exportedAt": "2026-09-15T22:47:45.872Z",
+  "trainerParty": {
+    "customMoveset": true,
+    "ivMode": "single-fixed-iv"
+  },
+  "slots": [
+    {
+      "slot": 1,
+      "pokemonId": 200,
+      "pokemonName": "Ouríço",
+      "level": 1,
+      "iv": 83,
+      "iv31": 10,
+      "heldItem": {
+        "id": "ITEM_SITRUS_BERRY",
+        "name": "SITRUS BERRY"
+      },
+      "types": [
+        "steel",
+        "electric"
+      ],
+      "moves": [
+        {
+          "id": "MOVE_STEEL_WING",
+          "name": "Steel Wing",
+          "type": "steel",
+          "category": "physical",
+          "power": 70,
+          "accuracy": 90,
+          "pp": 25,
+          "learnsetLevel": 29,
+          "warning": "Aprendido no Nv. 29; treinador está no Nv. 1. O moveset custom permite.",
+          "signature": false
+        },
+        {
+          "id": "MOVE_AGILITY",
+          "name": "Agility",
+          "type": "psychic",
+          "category": "status",
+          "power": null,
+          "accuracy": null,
+          "pp": 30,
+          "learnsetLevel": 48,
+          "warning": "Aprendido no Nv. 48; treinador está no Nv. 1. O moveset custom permite.",
+          "signature": false
+        },
+        {
+          "id": "MOVE_THUNDERBOLT",
+          "name": "Thunderbolt",
+          "type": "electric",
+          "category": "special",
+          "power": 95,
+          "accuracy": 100,
+          "pp": 15,
+          "learnsetLevel": 53,
+          "warning": "Aprendido no Nv. 53; treinador está no Nv. 1. O moveset custom permite.",
+          "signature": false
+        },
+        {
+          "id": "MOVE_THUNDER_WAVE",
+          "name": "Thunder Wave",
+          "type": "electric",
+          "category": "status",
+          "power": null,
+          "accuracy": 100,
+          "pp": 20,
+          "learnsetLevel": 24,
+          "warning": "Aprendido no Nv. 24; treinador está no Nv. 1. O moveset custom permite.",
+          "signature": false
+        }
+      ],
+      "warnings": [
+        "Steel Wing: Aprendido no Nv. 29; treinador está no Nv. 1. O moveset custom permite.",
+        "Agility: Aprendido no Nv. 48; treinador está no Nv. 1. O moveset custom permite.",
+        "Thunderbolt: Aprendido no Nv. 53; treinador está no Nv. 1. O moveset custom permite.",
+        "Thunder Wave: Aprendido no Nv. 24; treinador está no Nv. 1. O moveset custom permite."
+      ]
+    },
+    {
+      "slot": 2,
+      "pokemonId": 321,
+      "pokemonName": "Cabofio",
+      "level": 23,
+      "iv": 99,
+      "iv31": 12,
+      "heldItem": {
+        "id": "ITEM_SITRUS_BERRY",
+        "name": "SITRUS BERRY"
+      },
+      "types": [
+        "electric",
+        "steel"
+      ],
+      "moves": [
+        {
+          "id": "MOVE_METAL_CLAW",
+          "name": "Metal Claw",
+          "type": "steel",
+          "category": "physical",
+          "power": 50,
+          "accuracy": 95,
+          "pp": 35,
+          "learnsetLevel": 15,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_SPIDER_WEB",
+          "name": "Spider Web",
+          "type": "bug",
+          "category": "status",
+          "power": null,
+          "accuracy": 100,
+          "pp": 10,
+          "learnsetLevel": 48,
+          "warning": "Aprendido no Nv. 48; treinador está no Nv. 23. O moveset custom permite.",
+          "signature": false
+        },
+        {
+          "id": "MOVE_WATER_PULSE",
+          "name": "Water Pulse",
+          "type": "water",
+          "category": "special",
+          "power": 60,
+          "accuracy": 100,
+          "pp": 20,
+          "learnsetLevel": 58,
+          "warning": "Aprendido no Nv. 58; treinador está no Nv. 23. O moveset custom permite.",
+          "signature": false
+        },
+        {
+          "id": "MOVE_IRON_DEFENSE",
+          "name": "Iron Defense",
+          "type": "steel",
+          "category": "status",
+          "power": null,
+          "accuracy": null,
+          "pp": 15,
+          "learnsetLevel": 19,
+          "warning": null,
+          "signature": false
+        }
+      ],
+      "warnings": [
+        "Spider Web: Aprendido no Nv. 48; treinador está no Nv. 23. O moveset custom permite.",
+        "Water Pulse: Aprendido no Nv. 58; treinador está no Nv. 23. O moveset custom permite."
+      ]
+    },
+    {
+      "slot": 3,
+      "pokemonId": 230,
+      "pokemonName": "Arraia",
+      "level": 24,
+      "iv": 107,
+      "iv31": 13,
+      "heldItem": {
+        "id": "ITEM_SITRUS_BERRY",
+        "name": "SITRUS BERRY"
+      },
+      "types": [
+        "water",
+        "electric"
+      ],
+      "moves": [
+        {
+          "id": "MOVE_FAINT_ATTACK",
+          "name": "Feint Attack",
+          "type": "dark",
+          "category": "special",
+          "power": 60,
+          "accuracy": null,
+          "pp": 20,
+          "learnsetLevel": 17,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_SPARK",
+          "name": "Spark",
+          "type": "electric",
+          "category": "special",
+          "power": 65,
+          "accuracy": 100,
+          "pp": 20,
+          "learnsetLevel": 42,
+          "warning": "Aprendido no Nv. 42; treinador está no Nv. 24. O moveset custom permite.",
+          "signature": false
+        },
+        {
+          "id": "MOVE_WATER_PULSE",
+          "name": "Water Pulse",
+          "type": "water",
+          "category": "special",
+          "power": 60,
+          "accuracy": 100,
+          "pp": 20,
+          "learnsetLevel": 50,
+          "warning": "Aprendido no Nv. 50; treinador está no Nv. 24. O moveset custom permite.",
+          "signature": false
+        },
+        {
+          "id": "MOVE_WITHDRAW",
+          "name": "Withdraw",
+          "type": "water",
+          "category": "status",
+          "power": null,
+          "accuracy": null,
+          "pp": 40,
+          "learnsetLevel": 9,
+          "warning": null,
+          "signature": false
+        }
+      ],
+      "warnings": [
+        "Spark: Aprendido no Nv. 42; treinador está no Nv. 24. O moveset custom permite.",
+        "Water Pulse: Aprendido no Nv. 50; treinador está no Nv. 24. O moveset custom permite."
+      ]
+    },
+    {
+      "slot": 4,
+      "pokemonId": 339,
+      "pokemonName": "Chuvão",
+      "level": 24,
+      "iv": 140,
+      "iv31": 17,
+      "heldItem": {
+        "id": "ITEM_SITRUS_BERRY",
+        "name": "SITRUS BERRY"
+      },
+      "types": [
+        "water",
+        "electric"
+      ],
+      "moves": [
+        {
+          "id": "MOVE_THUNDER_SHOCK",
+          "name": "Thunder Shock",
+          "type": "electric",
+          "category": "special",
+          "power": 40,
+          "accuracy": 100,
+          "pp": 30,
+          "learnsetLevel": 10,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_HYDRO_PUMP",
+          "name": "Hydro Pump",
+          "type": "water",
+          "category": "special",
+          "power": 120,
+          "accuracy": 80,
+          "pp": 5,
+          "learnsetLevel": 65,
+          "warning": "Aprendido no Nv. 65; treinador está no Nv. 24. O moveset custom permite.",
+          "signature": false
+        },
+        {
+          "id": "MOVE_SCRATCH",
+          "name": "Scratch",
+          "type": "normal",
+          "category": "physical",
+          "power": 40,
+          "accuracy": 100,
+          "pp": 35,
+          "learnsetLevel": 1,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_RAIN_DANCE",
+          "name": "Rain Dance",
+          "type": "water",
+          "category": "status",
+          "power": null,
+          "accuracy": null,
+          "pp": 5,
+          "learnsetLevel": 40,
+          "warning": "Aprendido no Nv. 40; treinador está no Nv. 24. O moveset custom permite.",
+          "signature": false
+        }
+      ],
+      "warnings": [
+        "Hydro Pump: Aprendido no Nv. 65; treinador está no Nv. 24. O moveset custom permite.",
+        "Rain Dance: Aprendido no Nv. 40; treinador está no Nv. 24. O moveset custom permite."
+      ]
+    },
+    {
+      "slot": 5,
+      "pokemonId": 331,
+      "pokemonName": "Tupanaú",
+      "level": 24,
+      "iv": 255,
+      "iv31": 31,
+      "heldItem": {
+        "id": "ITEM_SCOPE_LENS",
+        "name": "SCOPE LENS"
+      },
+      "types": [
+        "electric",
+        "dragon"
+      ],
+      "moves": [
+        {
+          "id": "TROVAO_DE_TUPA",
+          "name": "Trovão de Tupã",
+          "type": "electric",
+          "category": "special",
+          "power": 105,
+          "accuracy": 85,
+          "pp": 5,
+          "learnsetLevel": 62,
+          "warning": "Aprendido no Nv. 62; treinador está no Nv. 24. O moveset custom permite.",
+          "signature": true
+        },
+        {
+          "id": "MOVE_OUTRAGE",
+          "name": "Outrage",
+          "type": "dragon",
+          "category": "special",
+          "power": 90,
+          "accuracy": 100,
+          "pp": 15,
+          "learnsetLevel": 70,
+          "warning": "Aprendido no Nv. 70; treinador está no Nv. 24. O moveset custom permite.",
+          "signature": false
+        },
+        {
+          "id": "MOVE_THUNDER_WAVE",
+          "name": "Thunder Wave",
+          "type": "electric",
+          "category": "status",
+          "power": null,
+          "accuracy": 100,
+          "pp": 20,
+          "learnsetLevel": 27,
+          "warning": "Aprendido no Nv. 27; treinador está no Nv. 24. O moveset custom permite.",
+          "signature": false
+        },
+        {
+          "id": "MOVE_SCARY_FACE",
+          "name": "Scary Face",
+          "type": "normal",
+          "category": "status",
+          "power": null,
+          "accuracy": 90,
+          "pp": 10,
+          "learnsetLevel": 38,
+          "warning": "Aprendido no Nv. 38; treinador está no Nv. 24. O moveset custom permite.",
+          "signature": false
+        }
+      ],
+      "warnings": [
+        "Trovão de Tupã: Aprendido no Nv. 62; treinador está no Nv. 24. O moveset custom permite.",
+        "Outrage: Aprendido no Nv. 70; treinador está no Nv. 24. O moveset custom permite.",
+        "Thunder Wave: Aprendido no Nv. 27; treinador está no Nv. 24. O moveset custom permite.",
+        "Scary Face: Aprendido no Nv. 38; treinador está no Nv. 24. O moveset custom permite."
+      ]
+    },
+    {
+      "slot": 6,
+      "pokemonId": null,
+      "pokemonName": null,
+      "level": null,
+      "iv": null,
+      "iv31": null,
+      "heldItem": null,
+      "types": [],
+      "moves": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "warnings": []
+    }
+  ]
+}
