@@ -1,0 +1,381 @@
+{
+  "schema": "arauana-team",
+  "version": 4,
+  "exportedAt": "2026-09-15T22:31:15.735Z",
+  "trainerParty": {
+    "customMoveset": true,
+    "ivMode": "single-fixed-iv"
+  },
+  "slots": [
+    {
+      "slot": 1,
+      "pokemonId": 196,
+      "pokemonName": "Pedrinha",
+      "level": 13,
+      "iv": 83,
+      "iv31": 10,
+      "heldItem": {
+        "id": "ITEM_SHELL_BELL",
+        "name": "SHELL BELL"
+      },
+      "types": [
+        "rock"
+      ],
+      "moves": [
+        {
+          "id": "MOVE_DEFENSE_CURL",
+          "name": "Defense Curl",
+          "type": "normal",
+          "category": "status",
+          "power": null,
+          "accuracy": null,
+          "pp": 40,
+          "learnsetLevel": 14,
+          "warning": "Aprendido no Nv. 14; treinador está no Nv. 13. O moveset custom permite.",
+          "signature": false
+        },
+        {
+          "id": "MOVE_ROLLOUT",
+          "name": "Rollout",
+          "type": "rock",
+          "category": "physical",
+          "power": 30,
+          "accuracy": 90,
+          "pp": 20,
+          "learnsetLevel": 19,
+          "warning": "Aprendido no Nv. 19; treinador está no Nv. 13. O moveset custom permite.",
+          "signature": false
+        },
+        {
+          "id": "MOVE_SANDSTORM",
+          "name": "Sandstorm",
+          "type": "rock",
+          "category": "status",
+          "power": null,
+          "accuracy": null,
+          "pp": 10,
+          "learnsetLevel": 33,
+          "warning": "Aprendido no Nv. 33; treinador está no Nv. 13. O moveset custom permite.",
+          "signature": false
+        },
+        {
+          "id": "MOVE_TACKLE",
+          "name": "Tackle",
+          "type": "normal",
+          "category": "physical",
+          "power": 35,
+          "accuracy": 95,
+          "pp": 35,
+          "learnsetLevel": 1,
+          "warning": null,
+          "signature": false
+        }
+      ],
+      "warnings": [
+        "Defense Curl: Aprendido no Nv. 14; treinador está no Nv. 13. O moveset custom permite.",
+        "Rollout: Aprendido no Nv. 19; treinador está no Nv. 13. O moveset custom permite.",
+        "Sandstorm: Aprendido no Nv. 33; treinador está no Nv. 13. O moveset custom permite."
+      ]
+    },
+    {
+      "slot": 2,
+      "pokemonId": 134,
+      "pokemonName": "Cascudo",
+      "level": 14,
+      "iv": 124,
+      "iv31": 15,
+      "heldItem": {
+        "id": "ITEM_KINGS_ROCK",
+        "name": "KING'S ROCK"
+      },
+      "types": [
+        "water",
+        "rock"
+      ],
+      "moves": [
+        {
+          "id": "MOVE_SURF",
+          "name": "Surf",
+          "type": "water",
+          "category": "special",
+          "power": 95,
+          "accuracy": 100,
+          "pp": 15,
+          "learnsetLevel": 48,
+          "warning": "Aprendido no Nv. 48; treinador está no Nv. 14. O moveset custom permite.",
+          "signature": false
+        },
+        {
+          "id": "MOVE_TACKLE",
+          "name": "Tackle",
+          "type": "normal",
+          "category": "physical",
+          "power": 35,
+          "accuracy": 95,
+          "pp": 35,
+          "learnsetLevel": 1,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_WITHDRAW",
+          "name": "Withdraw",
+          "type": "water",
+          "category": "status",
+          "power": null,
+          "accuracy": null,
+          "pp": 40,
+          "learnsetLevel": 19,
+          "warning": "Aprendido no Nv. 19; treinador está no Nv. 14. O moveset custom permite.",
+          "signature": false
+        },
+        {
+          "id": "MOVE_ROLLOUT",
+          "name": "Rollout",
+          "type": "rock",
+          "category": "physical",
+          "power": 30,
+          "accuracy": 90,
+          "pp": 20,
+          "learnsetLevel": 29,
+          "warning": "Aprendido no Nv. 29; treinador está no Nv. 14. O moveset custom permite.",
+          "signature": false
+        }
+      ],
+      "warnings": [
+        "Surf: Aprendido no Nv. 48; treinador está no Nv. 14. O moveset custom permite.",
+        "Withdraw: Aprendido no Nv. 19; treinador está no Nv. 14. O moveset custom permite.",
+        "Rollout: Aprendido no Nv. 29; treinador está no Nv. 14. O moveset custom permite."
+      ]
+    },
+    {
+      "slot": 3,
+      "pokemonId": 198,
+      "pokemonName": "Cristalim",
+      "level": 14,
+      "iv": 149,
+      "iv31": 18,
+      "heldItem": {
+        "id": "ITEM_SITRUS_BERRY",
+        "name": "SITRUS BERRY"
+      },
+      "types": [
+        "rock",
+        "fairy"
+      ],
+      "moves": [
+        {
+          "id": "MOVE_CONFUSION",
+          "name": "Confusion",
+          "type": "psychic",
+          "category": "special",
+          "power": 50,
+          "accuracy": 100,
+          "pp": 25,
+          "learnsetLevel": 14,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_ANCIENT_POWER",
+          "name": "Ancient Power",
+          "type": "rock",
+          "category": "physical",
+          "power": 60,
+          "accuracy": 100,
+          "pp": 5,
+          "learnsetLevel": 24,
+          "warning": "Aprendido no Nv. 24; treinador está no Nv. 14. O moveset custom permite.",
+          "signature": false
+        },
+        {
+          "id": "MOVE_ROCK_SLIDE",
+          "name": "Rock Slide",
+          "type": "rock",
+          "category": "physical",
+          "power": 75,
+          "accuracy": 90,
+          "pp": 10,
+          "learnsetLevel": 33,
+          "warning": "Aprendido no Nv. 33; treinador está no Nv. 14. O moveset custom permite.",
+          "signature": false
+        },
+        {
+          "id": "MOVE_CHARM",
+          "name": "Charm",
+          "type": "normal",
+          "category": "status",
+          "power": null,
+          "accuracy": 100,
+          "pp": 20,
+          "learnsetLevel": 2,
+          "warning": null,
+          "signature": false
+        }
+      ],
+      "warnings": [
+        "Ancient Power: Aprendido no Nv. 24; treinador está no Nv. 14. O moveset custom permite.",
+        "Rock Slide: Aprendido no Nv. 33; treinador está no Nv. 14. O moveset custom permite."
+      ]
+    },
+    {
+      "slot": 4,
+      "pokemonId": 211,
+      "pokemonName": "Fóssil",
+      "level": 14,
+      "iv": 165,
+      "iv31": 20,
+      "heldItem": {
+        "id": "ITEM_SITRUS_BERRY",
+        "name": "SITRUS BERRY"
+      },
+      "types": [
+        "rock",
+        "dragon"
+      ],
+      "moves": [
+        {
+          "id": "MOVE_DRAGON_RAGE",
+          "name": "Dragon Rage",
+          "type": "dragon",
+          "category": "special",
+          "power": 1,
+          "accuracy": 100,
+          "pp": 10,
+          "learnsetLevel": 24,
+          "warning": "Aprendido no Nv. 24; treinador está no Nv. 14. O moveset custom permite.",
+          "signature": false
+        },
+        {
+          "id": "MOVE_HARDEN",
+          "name": "Harden",
+          "type": "normal",
+          "category": "status",
+          "power": null,
+          "accuracy": null,
+          "pp": 30,
+          "learnsetLevel": 2,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_ANCIENT_POWER",
+          "name": "Ancient Power",
+          "type": "rock",
+          "category": "physical",
+          "power": 60,
+          "accuracy": 100,
+          "pp": 5,
+          "learnsetLevel": 34,
+          "warning": "Aprendido no Nv. 34; treinador está no Nv. 14. O moveset custom permite.",
+          "signature": false
+        },
+        {
+          "id": "MOVE_DRAGON_DANCE",
+          "name": "Dragon Dance",
+          "type": "dragon",
+          "category": "status",
+          "power": null,
+          "accuracy": null,
+          "pp": 20,
+          "learnsetLevel": 48,
+          "warning": "Aprendido no Nv. 48; treinador está no Nv. 14. O moveset custom permite.",
+          "signature": false
+        }
+      ],
+      "warnings": [
+        "Dragon Rage: Aprendido no Nv. 24; treinador está no Nv. 14. O moveset custom permite.",
+        "Ancient Power: Aprendido no Nv. 34; treinador está no Nv. 14. O moveset custom permite.",
+        "Dragon Dance: Aprendido no Nv. 48; treinador está no Nv. 14. O moveset custom permite."
+      ]
+    },
+    {
+      "slot": 5,
+      "pokemonId": 215,
+      "pokemonName": "Granito",
+      "level": 15,
+      "iv": 255,
+      "iv31": 31,
+      "heldItem": {
+        "id": "ITEM_SITRUS_BERRY",
+        "name": "SITRUS BERRY"
+      },
+      "types": [
+        "rock",
+        "fighting"
+      ],
+      "moves": [
+        {
+          "id": "MOVE_KARATE_CHOP",
+          "name": "Karate Chop",
+          "type": "fighting",
+          "category": "physical",
+          "power": 50,
+          "accuracy": 100,
+          "pp": 25,
+          "learnsetLevel": 19,
+          "warning": "Aprendido no Nv. 19; treinador está no Nv. 15. O moveset custom permite.",
+          "signature": false
+        },
+        {
+          "id": "MOVE_ANCIENT_POWER",
+          "name": "Ancient Power",
+          "type": "rock",
+          "category": "physical",
+          "power": 60,
+          "accuracy": 100,
+          "pp": 5,
+          "learnsetLevel": 29,
+          "warning": "Aprendido no Nv. 29; treinador está no Nv. 15. O moveset custom permite.",
+          "signature": false
+        },
+        {
+          "id": "MOVE_MACH_PUNCH",
+          "name": "Mach Punch",
+          "type": "fighting",
+          "category": "physical",
+          "power": 40,
+          "accuracy": 100,
+          "pp": 30,
+          "learnsetLevel": 34,
+          "warning": "Aprendido no Nv. 34; treinador está no Nv. 15. O moveset custom permite.",
+          "signature": false
+        },
+        {
+          "id": "MOVE_TACKLE",
+          "name": "Tackle",
+          "type": "normal",
+          "category": "physical",
+          "power": 35,
+          "accuracy": 95,
+          "pp": 35,
+          "learnsetLevel": 1,
+          "warning": null,
+          "signature": false
+        }
+      ],
+      "warnings": [
+        "Karate Chop: Aprendido no Nv. 19; treinador está no Nv. 15. O moveset custom permite.",
+        "Ancient Power: Aprendido no Nv. 29; treinador está no Nv. 15. O moveset custom permite.",
+        "Mach Punch: Aprendido no Nv. 34; treinador está no Nv. 15. O moveset custom permite."
+      ]
+    },
+    {
+      "slot": 6,
+      "pokemonId": null,
+      "pokemonName": null,
+      "level": null,
+      "iv": null,
+      "iv31": null,
+      "heldItem": null,
+      "types": [],
+      "moves": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "warnings": []
+    }
+  ]
+}

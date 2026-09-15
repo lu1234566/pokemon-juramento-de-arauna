@@ -4226,27 +4226,43 @@ static const struct TrainerMonItemCustomMoves sParty_Drake[] = {
     }
 };
 
+// DALVA, primeira insignia. Time do editor (arauana-team v4), cinco vagas.
+// #196 Pedrinha, #134 Cascudo, #198 Cristalim, #211 Fossil, #215 Granito.
 static const struct TrainerMonItemCustomMoves sParty_Roxanne1[] = {
     {
-    .iv = 100,
-    .lvl = 12,
-    .species = SPECIES_HITMONCHAN,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_TACKLE, MOVE_DEFENSE_CURL, MOVE_ROCK_THROW, MOVE_ROCK_TOMB}
+    .iv = 83,
+    .lvl = 13,
+    .species = SPECIES_HOPPIP,
+    .heldItem = ITEM_SHELL_BELL,
+    .moves = {MOVE_DEFENSE_CURL, MOVE_ROLLOUT, MOVE_SANDSTORM, MOVE_TACKLE}
     },
     {
-    .iv = 100,
-    .lvl = 12,
-    .species = SPECIES_DUNSPARCE,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_TACKLE, MOVE_DEFENSE_CURL, MOVE_ROCK_THROW, MOVE_ROCK_TOMB}
+    .iv = 124,
+    .lvl = 14,
+    .species = SPECIES_ELECTABUZZ,
+    .heldItem = ITEM_KINGS_ROCK,
+    .moves = {MOVE_SURF, MOVE_TACKLE, MOVE_WITHDRAW, MOVE_ROLLOUT}
     },
     {
-    .iv = 200,
+    .iv = 149,
+    .lvl = 14,
+    .species = SPECIES_JUMPLUFF,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_CONFUSION, MOVE_ANCIENT_POWER, MOVE_ROCK_SLIDE, MOVE_CHARM}
+    },
+    {
+    .iv = 165,
+    .lvl = 14,
+    .species = SPECIES_WOBBUFFET,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_DRAGON_RAGE, MOVE_HARDEN, MOVE_ANCIENT_POWER, MOVE_DRAGON_DANCE}
+    },
+    {
+    .iv = 255,
     .lvl = 15,
-    .species = SPECIES_ESPEON,
-    .heldItem = ITEM_ORAN_BERRY,
-    .moves = {MOVE_BLOCK, MOVE_HARDEN, MOVE_TACKLE, MOVE_ROCK_TOMB}
+    .species = SPECIES_DUNSPARCE,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_KARATE_CHOP, MOVE_ANCIENT_POWER, MOVE_MACH_PUNCH, MOVE_TACKLE}
     }
 };
 
