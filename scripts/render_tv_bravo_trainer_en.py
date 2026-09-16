@@ -277,7 +277,7 @@ def mask(text: str) -> str:
 
 
 def validate_slots(source: str) -> None:
-    """A slot the engine does not fill for a block prints the previous one."""
+    "\"\"A slot the engine does not fill for a block prints the previous one.\"\""
     composed = payloads()
     for label in TARGETS:
         available = set(re.findall(r"\{STR_VAR_\d\}",

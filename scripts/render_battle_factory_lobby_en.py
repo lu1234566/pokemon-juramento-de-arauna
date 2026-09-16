@@ -37,7 +37,7 @@ WHOLE = ("BATTLE FACTORY", "Battle Swap", "CIRCUIT PASS",
 
 
 def challenge(format_name: str, kind: str) -> tuple[str, ...]:
-    """The two tournament explanations differ only where the format does."""
+    "\"\"The two tournament explanations differ only where the format does.\"\""
     return (
         f"The Battle Swap {format_name} Tournament is a {kind} competition, "
         f"fought entirely with rented POKéMON.",

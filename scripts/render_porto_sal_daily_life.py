@@ -84,7 +84,7 @@ TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         "Se soubesse que a cidade era tao\\n",
         "grande, teria vindo de BIKE.$",
     )),
-    "SlateportCity_Text_EveryoneCallsHimCaptStern": (("CAPT. STERN", "MUSEUM"), (
+    "SlateportCity_Text_EveryoneCallsHimCaptStern": (("CAPT. NUNES", "MUSEUM"), (
         "HOMEM: O ENGENHEIRO DO PORTO\\n",
         "ajudou a construir o MUSEU e\\n",
         "lidera expedicoes submarinas.$",
@@ -121,7 +121,7 @@ TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         "E diferente de um GINASIO, mas\\n",
         "tambem exige boa equipe.$",
     )),
-    "SlateportCity_Text_CaptSternBeingInterviewed": (("CAPT. STERN", "interviewed"), (
+    "SlateportCity_Text_CaptSternBeingInterviewed": (("CAPT. NUNES", "interviewed"), (
         "SENHORA: Pensei que fosse algum\\n",
         "artista famoso.\\p",
         "Mas e o ENGENHEIRO DO PORTO!$",
@@ -131,7 +131,7 @@ TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         "Quando crescer, quero contar\\n",
         "historias pelo mundo inteiro.$",
     )),
-    "SlateportCity_Text_SternSaysDiscoveredSomething": (("CAPT. STERN", "bottom of the sea"), (
+    "SlateportCity_Text_SternSaysDiscoveredSomething": (("CAPT. NUNES", "bottom of the sea"), (
         "RAPAZ: O ENGENHEIRO disse que\\n",
         "acharam algo no fundo do mar.\\p",
         "O que sera?$",
@@ -149,7 +149,7 @@ TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         "HOMEM: Entrevista ao vivo aqui?\\p",
         "O ENGENHEIRO virou celebridade.$",
     )),
-    "SlateportCity_Text_BigSmileForCamera": (("TITO:", "CAPT. STERN"), (
+    "SlateportCity_Text_BigSmileForCamera": (("TITO:", "CAPT. NUNES"), (
         "CAMERAMAN: ENGENHEIRO, sorria\\n",
         "para a camera!$",
     )),

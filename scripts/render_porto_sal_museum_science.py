@@ -108,7 +108,7 @@ TARGETS_2F: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         "Perto da superficie, o vento\\n",
         "empurra grandes fluxos de agua.$",
     )),
-    "SlateportCity_OceanicMuseum_2F_Text_SSTidalReplica": (("MARE ALTA", "STERN'S SHIPYARD"), (
+    "SlateportCity_OceanicMuseum_2F_Text_SSTidalReplica": (("MARE ALTA", "NUNES'S SHIPYARD"), (
         "REPLICA: BARCO DE LINHA\\p",
         "Modelo do barco construido para\\n",
         "ligar os portos de Arauna.$",

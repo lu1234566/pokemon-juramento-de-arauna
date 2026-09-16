@@ -51,18 +51,18 @@ BIKE_BLOCKS: dict[str, tuple[str, ...]] = {
     "RydelGreeting": (
         "Well, well. What have we here?|A customer with some energy about "
         "them!",
-        "Me? You may call me RYDEL.|This cycle shop is mine.",
+        "Me? You may call me ZEFERINO.|This cycle shop is mine.",
     ),
     "DidYouComeFromFarAway": (
-        "RYDEL: Those RUNNING SHOES of yours...|They are filthy.",
+        "ZEFERINO: Those RUNNING SHOES of yours...|They are filthy.",
         "Have you come a long way?",
     ),
     "GuessYouDontNeedBike": (
-        "RYDEL: Is that so?",
+        "ZEFERINO: Is that so?",
         "Then I suppose none of my BIKES would be of use to you.",
     ),
     "ExplainBikesChooseWhichOne": (
-        "RYDEL: Hm. Hm... ... ... ...",
+        "ZEFERINO: Hm. Hm... ... ... ...",
         "You are telling me you walked all the way here from VILA AMANHECER?",
         "My word!|That is a ridiculous distance!",
         "With one of my BIKES you could go anywhere you liked, and feel the "
@@ -88,10 +88,10 @@ BIKE_BLOCKS: dict[str, tuple[str, ...]] = {
         "shall swap it over.",
     ),
     "WantToSwitchBikes": (
-        "RYDEL: Oh? Were you thinking of swapping BIKES?",
+        "ZEFERINO: Oh? Were you thinking of swapping BIKES?",
     ),
     "IllSwitchBikes": (
-        "RYDEL: Of course, no trouble at all.|I shall swap it over.",
+        "ZEFERINO: Of course, no trouble at all.|I shall swap it over.",
     ),
     "ExchangedMachForAcro": (
         "{PLAYER} exchanged the MACH BIKE for an ACRO BIKE.",
@@ -100,7 +100,7 @@ BIKE_BLOCKS: dict[str, tuple[str, ...]] = {
         "{PLAYER} exchanged the ACRO BIKE for a MACH BIKE.",
     ),
     "HappyYouLikeIt": (
-        "RYDEL: Good, good!|I am glad it suits you!",
+        "ZEFERINO: Good, good!|I am glad it suits you!",
     ),
     "OhYourBikeIsInPC": (
         "Oh? And what has become of the BIKE I gave you?",

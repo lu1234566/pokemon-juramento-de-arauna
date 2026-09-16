@@ -431,14 +431,14 @@ SlateportCity_Harbor_Text_AbnormalWeather:
 	.string "complete. That can save whole families.$"
 
 SlateportCity_Harbor_Text_SubTooSmallForMe:
-	.string "I wanted to go with CAPT. STERN on\n"
+	.string "I wanted to go with CAPT. NUNES on\n"
 	.string "the ocean floor exploration.\p"
 	.string "But the sub's too small for me.\p"
 	.string "If I squeezed in, there wouldn't be\n"
 	.string "any room for the CAPTAIN…$"
 
 SlateportCity_Harbor_Text_SameThugsTriedToRobAtMuseum:
-	.string "CAPT. STERN: Those thugs…\p"
+	.string "CAPT. NUNES: Those thugs…\p"
 	.string "They're the same lot who tried to rob\n"
 	.string "the HORIZON PARTS at the MUSEUM.$"
 
@@ -466,21 +466,21 @@ SlateportCity_Harbor_Text_NeedDiveToCatchSub:
 	.string "That is what the reports say.$"
 
 SlateportCity_Harbor_Text_WontBeLongBeforeWeFinishFerry:
-	.string "CAPT. STERN: Oh, yes.\n"
-	.string "MR. BRINEY came to our SHIPYARD.\p"
+	.string "CAPT. NUNES: Oh, yes.\n"
+	.string "MR. HONORIO came to our SHIPYARD.\p"
 	.string "It won't be long now before we finish\n"
 	.string "making the ferry!$"
 
 SlateportCity_Harbor_Text_FinishedMakingFerry:
-	.string "CAPT. STERN: {PLAYER}{KUN}!\p"
+	.string "CAPT. NUNES: {PLAYER}{KUN}!\p"
 	.string "We finally finished making the ferry\n"
 	.string "MARE ALTA!\p"
 	.string "We couldn't have done it without\n"
-	.string "your friend MR. BRINEY.\p"
+	.string "your friend MR. HONORIO.\p"
 	.string "Please go for a short cruise on it!$"
 
 SlateportCity_Harbor_Text_WouldYouTradeScanner:
-	.string "CAPT. STERN: Oh?\n"
+	.string "CAPT. NUNES: Oh?\n"
 	.string "{PLAYER}{KUN}, that item you have…\p"
 	.string "That's a SCANNER! That would sure\n"
 	.string "help us on our explorations.\p"
@@ -490,26 +490,26 @@ SlateportCity_Harbor_Text_WouldYouTradeScanner:
 	.string "a DEEPSEASCALE that I have?$"
 
 SlateportCity_Harbor_Text_IfYouWantToTradeLetMeKnow:
-	.string "CAPT. STERN: Are you certain?\n"
+	.string "CAPT. NUNES: Are you certain?\n"
 	.string "It's useless to you, {PLAYER}{KUN}…\p"
 	.string "Well, okay, then. If you want to trade\n"
 	.string "your SCANNER, let me know.$"
 
 SlateportCity_Harbor_Text_TradeForDeepSeaTooth:
-	.string "CAPT. STERN: So you'll trade it for\n"
+	.string "CAPT. NUNES: So you'll trade it for\n"
 	.string "my DEEPSEATOOTH?$"
 
 SlateportCity_Harbor_Text_TradeForDeepSeaScale:
-	.string "CAPT. STERN: So you'll trade it for\n"
+	.string "CAPT. NUNES: So you'll trade it for\n"
 	.string "my DEEPSEASCALE?$"
 
 SlateportCity_Harbor_Text_WhichOneDoYouWant:
-	.string "CAPT. STERN: Which one do you want?$"
+	.string "CAPT. NUNES: Which one do you want?$"
 
 SlateportCity_Harbor_Text_HandedScannerToStern:
 	.string "{PLAYER} handed the SCANNER to\n"
-	.string "CAPT. STERN.$"
+	.string "CAPT. NUNES.$"
 
 SlateportCity_Harbor_Text_ThisWillHelpResearch:
-	.string "CAPT. STERN: Thanks, {PLAYER}{KUN}!\n"
+	.string "CAPT. NUNES: Thanks, {PLAYER}{KUN}!\n"
 	.string "This will help our research a lot!$"

@@ -39,7 +39,7 @@ SPECIES_TABLE = ROOT / "src" / "data" / "text" / "species_names.h"
 BOX = TextBox({"{PLAYER}": 7, "{STR_VAR_1}": 12, "{KUN}": 0}, width=34)
 
 WHOLE = ("NAME RATER", "MOVE TUTOR", "HEART SCALE", "Storage System",
-         "POKéMON Storage System", "LANETTE", "BILL")
+         "POKéMON Storage System", "LENITA", "ELCIO")
 
 # How a POKéMON feels about the person carrying it, worst first. This is the
 # only reading of affection in the game, and a player ranks their own by
@@ -67,7 +67,7 @@ AFFECTION: tuple[tuple[str, tuple[str, ...]], ...] = (
 
 LANETTE_BLOCKS: dict[str, tuple[str, ...]] = {
     "EverythingClutteredKeepThis": (
-        "LANETTE: Oh! {PLAYER}{KUN}!",
+        "LENITA: Oh! {PLAYER}{KUN}!",
         "I am sorry about the mess...|When the research takes hold of me "
         "this is what happens...",
         "It is embarrassing. Keep it to yourself and take this for your "
@@ -79,7 +79,7 @@ LANETTE_BLOCKS: dict[str, tuple[str, ...]] = {
         "each of them.",
     ),
     "ResearchNotesPage1": (
-        "LANETTE's research notes. There is a section on BOXES.",
+        "LENITA's research notes. There is a section on BOXES.",
         "BOXES to be designed to hold thirty POKéMON each.",
         "Every TRAINER to be able to store 420 POKéMON on the PC system.",
         "Keep reading?",
@@ -108,7 +108,7 @@ LANETTE_BLOCKS: dict[str, tuple[str, ...]] = {
         "as useful.",
         "“I am proud to have had a hand in how it started.",
         "“Here is hoping you carry on with the work.",
-        "“From BILL|... ... ... ... ... ... ... ...”",
+        "“From ELCIO|... ... ... ... ... ... ... ...”",
     ),
 }
 

@@ -15,7 +15,7 @@ PLACEHOLDER_RE = re.compile(r"\{[^}]+\}")
 
 MARKERS: dict[str, tuple[str, ...]] = {
     "SlateportCity_Text_BattleTentSign": ("BATTLE TENT PORTO DO SAL SITE",),
-    "SlateportCity_Text_SternsShipyardWantedSign": ("STERN'S SHIPYARD", "Wanted"),
+    "SlateportCity_Text_SternsShipyardWantedSign": ("NUNES'S SHIPYARD", "Wanted"),
     "SlateportCity_Text_SternsShipyardNearsCompletion": ("MARE ALTA", "PORTO DO SAL", "BAIA DAS LUZES"),
     "SlateportCity_Text_SternsShipyardFerryComplete": ("PORTO DO SAL-BAIA DAS LUZES", "MARE ALTA"),
     "SlateportCity_Text_PokemonFanClubSign": ("POKéMON FAN CLUB",),
@@ -27,10 +27,10 @@ MARKERS: dict[str, tuple[str, ...]] = {
     "SlateportCity_Text_NameRatersHouseSign": ("NAME RATER'S HOUSE",),
     "SlateportCity_Text_YouDroveTeamAquaAway": ("HORIZONTE: Nao somos soldados",),
     "SlateportCity_Text_MaybeThisTrainer": ("CIRO:", "HORIZONTE"),
-    "SlateportCity_Text_LetsRegisterEachOther": ("SCOTT:", "POKéNAVS"),
-    "SlateportCity_Text_RegisteredScott": ("SCOTT", "POKéNAV"),
-    "SlateportCity_Text_KeepEyeOnTrainersBeSeeingYou": ("SCOTT:", "other towns"),
-    "SlateportCity_Text_TakingBattleTentChallenge": ("SCOTT:", "BATTLE TENT"),
+    "SlateportCity_Text_LetsRegisterEachOther": ("BENTO:", "POKéNAVS"),
+    "SlateportCity_Text_RegisteredScott": ("BENTO", "POKéNAV"),
+    "SlateportCity_Text_KeepEyeOnTrainersBeSeeingYou": ("BENTO:", "other towns"),
+    "SlateportCity_Text_TakingBattleTentChallenge": ("BENTO:", "BATTLE TENT"),
 }
 
 CRITICAL_TOKENS = (

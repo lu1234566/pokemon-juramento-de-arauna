@@ -38,5 +38,5 @@
     "Route114_FossilManiacsTunnel_Text_NotSafeThatWay": ["Hey, that way is not safe.\\p", "I was digging when the whole\\n", "wall collapsed.\\p", "There is a huge cave below. I\\n", "left it alone. No FOSSILS there.$"]
   },
   "verdanturf": {"VerdanturfTown_Text_TownSign": ["VALE DO SILENCIO. Displaced\\n", "families live here.\\p", "Many remember the loss but can\\n", "no longer name the place they\\n", "lost.$"]},
-  "cozmo": {"FallarborTown_CozmosHouse_Text_MayIHaveMeteorite": ["PROF. COZMO: You still have the\\n", "METEORITE?\\p", "May I have it for my research?$"]}
+  "cozmo": {"FallarborTown_CozmosHouse_Text_MayIHaveMeteorite": ["PROF. SALUSTIO: You still have the\\n", "METEORITE?\\p", "May I have it for my research?$"]}
 }

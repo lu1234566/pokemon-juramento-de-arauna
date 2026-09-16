@@ -111,7 +111,7 @@ MUSEUM_TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
     "SlateportCity_OceanicMuseum_1F_Text_LearnAboutSeaForBattling": (("sensores registram",), (
         "VISITANTE: Vim aprender sobre o\\n", "mar para entender meus POKéMON.$",
     )),
-    "SlateportCity_OceanicMuseum_1F_Text_SternIsRoleModel": (("CAPT. STERN",), (
+    "SlateportCity_OceanicMuseum_1F_Text_SternIsRoleModel": (("CAPT. NUNES",), (
         "VISITANTE: O ENGENHEIRO DO PORTO\\n", "e minha maior inspiracao.\\p",
         "Quero explorar o fundo do mar.$",
     )),

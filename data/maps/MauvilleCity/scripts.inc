@@ -560,7 +560,7 @@ MauvilleCity_Text_RegisteredWally:
 	.string "in the POKéNAV.$"
 
 MauvilleCity_Text_ScottYouDidntHoldBack:
-	.string "SCOTT: Hehe…\n"
+	.string "BENTO: Hehe…\n"
 	.string "I was watching that match!\p"
 	.string "You're friends with that boy VAL,\n"
 	.string "aren't you?\p"
@@ -608,8 +608,9 @@ MauvilleCity_Text_AllSortsOfPeopleComeThrough:
 	.string "people coming through.$"
 
 MauvilleCity_Text_RydelVeryGenerous:
-	.string "Have you been to RYDEL'S CYCLES yet?\p"
-	.string "RYDEL, the owner, is a very generous\n"
+	.string "Have you been to ZEFERINO'S CYCLES\n"
+	.string "yet?\p"
+	.string "ZEFERINO, the owner, is a very generous\n"
 	.string "man.$"
 
 MauvilleCity_Text_PokemonCanJumpYouOnBike:
@@ -629,7 +630,7 @@ MauvilleCity_Text_GymSign:
 MauvilleCity_Text_BikeShopSign:
 	.string "“Ride in gravel and shake up your\n"
 	.string "soul!”\l"
-	.string "RYDEL'S CYCLES$"
+	.string "ZEFERINO'S CYCLES$"
 
 MauvilleCity_Text_GameCornerSign:
 	.string "“The play spot for all!”\n"

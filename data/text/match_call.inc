@@ -2334,7 +2334,7 @@ MatchCall_Text_May1::
 	.string "CIRO: Hi, {PLAYER}{KUN}!\p"
 	.string "THE SAILOR retired as a SAILOR,\n"
 	.string "but I still see him out on the sea\l"
-	.string "with his pet PEEKO sometimes.\p"
+	.string "with his pet PEROLA sometimes.\p"
 	.string "He must love the sea still.$"
 
 MatchCall_Text_May2::
@@ -2406,7 +2406,7 @@ MatchCall_Text_May9::
 MatchCall_Text_May10::
 	.string "CIRO: Hi, {PLAYER}{KUN}!\n"
 	.string "Did you see the news?\p"
-	.string "They say CAPT. STERN discovered\n"
+	.string "They say CAPT. NUNES discovered\n"
 	.string "the CAVERNAS M'BOI while on his\l"
 	.string "submarine expedition.$"
 
@@ -2460,7 +2460,7 @@ MatchCall_Text_Brendan1::
 	.string "CIRO: Hey, {PLAYER}!\p"
 	.string "THE SAILOR retired as a SAILOR,\n"
 	.string "but I still see him out on the sea\l"
-	.string "with his pet PEEKO sometimes.\p"
+	.string "with his pet PEROLA sometimes.\p"
 	.string "I guess he must love\n"
 	.string "the sea still.$"
 
@@ -2535,7 +2535,7 @@ MatchCall_Text_Brendan9::
 MatchCall_Text_Brendan10::
 	.string "CIRO: Hi, {PLAYER}!\n"
 	.string "Did you catch the news?\p"
-	.string "They say CAPT. STERN discovered\n"
+	.string "They say CAPT. NUNES discovered\n"
 	.string "the CAVERNAS M'BOI while on his\l"
 	.string "submarine expedition.$"
 
@@ -2639,7 +2639,7 @@ MatchCall_Text_Wally7::
 	.string "Thank you…$"
 
 MatchCall_Text_Scott1::
-	.string "SCOTT: Howdy, {PLAYER}{KUN}!\p"
+	.string "BENTO: Howdy, {PLAYER}{KUN}!\p"
 	.string "You know how POKéMON can be found\n"
 	.string "everywhere?\p"
 	.string "Like in the mountains, in the sea,\n"
@@ -2650,7 +2650,7 @@ MatchCall_Text_Scott1::
 	.string "everywhere, too. Busy, busy!$"
 
 MatchCall_Text_Scott2::
-	.string "SCOTT: I'm on ROUTE 119 right now.\n"
+	.string "BENTO: I'm on ROUTE 119 right now.\n"
 	.string "It's teeming with TRAINERS!\p"
 	.string "It's also overgrown with tall grass\n"
 	.string "everywhere, it seems.\p"
@@ -2658,7 +2658,7 @@ MatchCall_Text_Scott2::
 	.string "makes me all ticklish!$"
 
 MatchCall_Text_Scott3::
-	.string "SCOTT: Hi, hi, {PLAYER}{KUN}!\p"
+	.string "BENTO: Hi, hi, {PLAYER}{KUN}!\p"
 	.string "Have you had the chance to climb\n"
 	.string "MEMORIAL DOS NOMES?\p"
 	.string "The place is a memorial to POKéMON that\n"
@@ -2667,7 +2667,7 @@ MatchCall_Text_Scott3::
 	.string "climb to the top of once.$"
 
 MatchCall_Text_Scott4::
-	.string "SCOTT: Hi, {PLAYER}{KUN}!\p"
+	.string "BENTO: Hi, {PLAYER}{KUN}!\p"
 	.string "I've been hearing about these odd\n"
 	.string "gangs being a nuisance.\p"
 	.string "The REMEMBRANCERS and the HORIZON\n"
@@ -2677,7 +2677,7 @@ MatchCall_Text_Scott4::
 	.string "…But if they're thugs…$"
 
 MatchCall_Text_Scott5::
-	.string "SCOTT: Oh, hi, {PLAYER}{KUN}.\p"
+	.string "BENTO: Oh, hi, {PLAYER}{KUN}.\p"
 	.string "Might there be tough TRAINERS\n"
 	.string "at the bottom of the sea?\p"
 	.string "I can't go check for myself.\n"
@@ -2685,7 +2685,7 @@ MatchCall_Text_Scott5::
 	.string "And I don't raise POKéMON…$"
 
 MatchCall_Text_Scott6::
-	.string "SCOTT: Hi, hi, {PLAYER}{KUN}!\p"
+	.string "BENTO: Hi, hi, {PLAYER}{KUN}!\p"
 	.string "You know that you can challenge\n"
 	.string "the POKéMON LEAGUE when you've\l"
 	.string "collected all the GYM BADGES?\p"
@@ -2704,7 +2704,7 @@ MatchCall_Text_Scott6::
 MatchCall_Text_Scott7::
 	.string "… … … … … …\n"
 	.string "… … … … … …\p"
-	.string "SCOTT appears to be out of\n"
+	.string "BENTO appears to be out of\n"
 	.string "the POKéNAV's service area…$"
 
 MatchCall_Text_Norman1::
@@ -2837,7 +2837,7 @@ MatchCall_Text_UnusedProfBirch:
 	.string "POKéMON becomes more fun, eh?$"
 
 MatchCall_Text_MrStone1::
-	.string "MR. STONE: Oh? {PLAYER}{KUN}!\p"
+	.string "MR. AMARAL: Oh? {PLAYER}{KUN}!\p"
 	.string "Since you called me, the POKéNAV\n"
 	.string "must be working properly!\p"
 	.string "Other people will be registered,\n"
@@ -2852,19 +2852,19 @@ MatchCall_Text_MrStone1::
 	.string "See you again!$"
 
 MatchCall_Text_MrStone2::
-	.string "MR. STONE: Oh? {PLAYER}{KUN}!\p"
+	.string "MR. AMARAL: Oh? {PLAYER}{KUN}!\p"
 	.string "What's wrong? Have you forgotten\n"
 	.string "about that little errand of mine?\p"
 	.string "I need you to deliver my letter\n"
 	.string "to BENTO in PORTO DAS REDES.\p"
 	.string "After that, deliver our parcel to\n"
-	.string "CAPT. STERN in PORTO DO SAL.\p"
+	.string "CAPT. NUNES in PORTO DO SAL.\p"
 	.string "You remember, don't you?\p"
 	.string "Now, since I am a busy PRESIDENT,\n"
 	.string "I have to go! Bye-bye!$"
 
 MatchCall_Text_MrStone3::
-	.string "MR. STONE: Oh! {PLAYER}{KUN}!\p"
+	.string "MR. AMARAL: Oh! {PLAYER}{KUN}!\p"
 	.string "Ah, so you've met BENTO!\n"
 	.string "I'd better reward you, then!\p"
 	.string "When you visit SERRA DO UIVO again,\n"
@@ -2872,7 +2872,7 @@ MatchCall_Text_MrStone3::
 	.string "I'll be waiting for you!$"
 
 MatchCall_Text_MrStone4::
-	.string "MR. STONE: Oh! {PLAYER}{KUN}!\p"
+	.string "MR. AMARAL: Oh! {PLAYER}{KUN}!\p"
 	.string "Did you know that HORIZON was\n"
 	.string "digging the GALERIAS DA SERRA?\p"
 	.string "But we shut down the operation to\n"
@@ -2883,14 +2883,14 @@ MatchCall_Text_MrStone4::
 	.string "own convenience.$"
 
 MatchCall_Text_MrStone5::
-	.string "MR. STONE: Hello, hello, {PLAYER}{KUN}!\p"
+	.string "MR. AMARAL: Hello, hello, {PLAYER}{KUN}!\p"
 	.string "I heard from someone in\n"
 	.string "PAMPA DA ESPERA that you're ELIAS's\l"
 	.string "child!\p"
 	.string "No wonder you're such a capable being!$"
 
 MatchCall_Text_MrStone6::
-	.string "MR. STONE: What's that?\p"
+	.string "MR. AMARAL: What's that?\p"
 	.string "You battled your own father and\n"
 	.string "defeated him?\p"
 	.string "That's astounding!\p"
@@ -2921,7 +2921,7 @@ MatchCall_Text_MrStone9::
 	.string "BZZZZ…$"
 
 MatchCall_Text_MrStone10::
-	.string "MR. STONE: {PLAYER}{KUN}! It's me!\p"
+	.string "MR. AMARAL: {PLAYER}{KUN}! It's me!\p"
 	.string "You were apparently involved in all\n"
 	.string "sorts of things, but I, being busy,\l"
 	.string "haven't a clue exactly what!\p"
@@ -2931,7 +2931,7 @@ MatchCall_Text_MrStone10::
 	.string "Take care!$"
 
 MatchCall_Text_MrStone11::
-	.string "MR. STONE: … … … … … …\n"
+	.string "MR. AMARAL: … … … … … …\n"
 	.string "Is this maybe {PLAYER}{KUN}?\p"
 	.string "Your voice is so full of confidence,\n"
 	.string "I didn't recognize you right off!\p"

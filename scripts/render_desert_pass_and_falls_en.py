@@ -148,7 +148,7 @@ ROUTE111_BLOCKS: dict[str, tuple[str, ...]] = {
         "ROUTE 111|{DOWN_ARROW} ENCRUZILHADA",
     ),
     "WinstrateHouseSign": (
-        "“Our hearts beat as one.”|THE WINSTRATE'S HOUSE",
+        "“Our hearts beat as one.”|THE QUEIROZ'S HOUSE",
     ),
     "RouteSign112": (
         "ROUTE 111|{LEFT_ARROW} ROUTE 112",
@@ -263,7 +263,7 @@ JAGGED_BLOCKS: dict[str, tuple[str, ...]] = {
         "It is still no easy thing, battling on ground like this...",
     ),
     "EthanPostRematch": (
-        "I really ought to get an ACRO BIKE from RYDEL in ENCRUZILHADA...",
+        "I really ought to get an ACRO BIKE from ZEFERINO in ENCRUZILHADA...",
     ),
     "GruntIntro": (
         "Wah!|What are you doing up here?",

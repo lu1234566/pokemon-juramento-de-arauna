@@ -86,7 +86,7 @@ base.TARGETS.update({
         ),
     ),
     "SlateportCity_Harbor_Text_SubTooSmallForMe": (
-        ("CAPT. STERN", "sub's too small"),
+        ("CAPT. NUNES", "sub's too small"),
         (
             "MAN: I wanted to join the\\n",
             "ENGINEER's expedition.\\p",
@@ -95,7 +95,7 @@ base.TARGETS.update({
         ),
     ),
     "SlateportCity_Harbor_Text_WontBeLongBeforeWeFinishFerry": (
-        ("MR. BRINEY", "SHIPYARD", "ferry"),
+        ("MR. HONORIO", "SHIPYARD", "ferry"),
         (
             "ENGINEER: The VETERAN is\\n",
             "helping at the SHIPYARD.\\p",
@@ -104,7 +104,7 @@ base.TARGETS.update({
         ),
     ),
     "SlateportCity_Harbor_Text_FinishedMakingFerry": (
-        ("MARE ALTA", "MR. BRINEY"),
+        ("MARE ALTA", "MR. HONORIO"),
         (
             "ENGINEER: {PLAYER}, it's ready!\\p",
             "The LINE FERRY can finally sail.\\p",
@@ -149,7 +149,7 @@ base.TARGETS.update({
         ("ENGINEER: Which one do you want?$",),
     ),
     "SlateportCity_Harbor_Text_HandedScannerToStern": (
-        ("SCANNER", "CAPT. STERN"),
+        ("SCANNER", "CAPT. NUNES"),
         (
             "{PLAYER} handed the SCANNER to\\n",
             "the ENGINEER.$",

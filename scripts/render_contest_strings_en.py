@@ -480,7 +480,7 @@ def validate_rendered(source: str, rendered: str) -> None:
     codes = trailing_codes(source)
 
     def flat(label: str) -> str:
-        """The words only: pause runs are timing, and are checked separately."""
+        "\"\"The words only: pause runs are timing, and are checked separately.\"\""
         text = "".join(composed[label])
         text = re.sub(r"\{PAUSE[^}]*\}", "", text)
         return re.sub(r"\s+", " ",

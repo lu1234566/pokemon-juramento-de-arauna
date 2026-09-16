@@ -1049,18 +1049,18 @@ RustboroCity_Text_GymLeaderIsntEasyWithFire:
 	.string "well against ROCK-type POKéMON…$"
 
 RustboroCity_Text_MrBrineyWalksInTheTunnel:
-	.string "The old sailor MR. BRINEY lives in\n"
+	.string "The old sailor MR. HONORIO lives in\n"
 	.string "a cottage by the sea.\p"
 	.string "He goes for walks in the tunnel every\n"
 	.string "so often.$"
 
 RustboroCity_Text_MrBrineyLovesPeeko:
-	.string "The old sailor MR. BRINEY lives in\n"
+	.string "The old sailor MR. HONORIO lives in\n"
 	.string "a cottage by the sea.\p"
 	.string "He said he was going shopping in\n"
-	.string "PORTO DO SAL for his pet, PEEKO.\p"
+	.string "PORTO DO SAL for his pet, PEROLA.\p"
 	.string "That old sea dog, he must really love\n"
-	.string "that PEEKO.$"
+	.string "that PEROLA.$"
 
 RustboroCity_Text_WowYouHavePokemon:
 	.string "Wow, you have POKéMON with you, too.\p"
@@ -1261,7 +1261,7 @@ RustboroCity_Text_AddedMatchCallPleaseCallMrStone:
 	.string "Using the MATCH CALL feature,\n"
 	.string "you can chat with people who have\l"
 	.string "been registered in your POKéNAV.\p"
-	.string "{PLAYER}, our PRESIDENT STONE should\n"
+	.string "{PLAYER}, our PRESIDENT AMARAL should\n"
 	.string "be registered in your POKéNAV.\p"
 	.string "Test it out.\n"
 	.string "Please give our PRESIDENT a call.$"

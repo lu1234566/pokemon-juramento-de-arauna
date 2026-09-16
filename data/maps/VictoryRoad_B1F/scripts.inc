@@ -27,59 +27,63 @@ VictoryRoad_B1F_EventScript_Halle::
 	end
 
 VictoryRoad_B1F_Text_SamuelIntro:
-	.string "The closer I get to the LEAGUE, the\n"
-	.string "more nervous I feel...$"
+	.string "The closer I get to the LEAGUE,\n"
+	.string "the more nervous I become...$"
 
 VictoryRoad_B1F_Text_SamuelDefeat:
-	.string "I couldn't do a thing...$"
+	.string "I froze when it mattered.$"
 
 VictoryRoad_B1F_Text_SamuelPostBattle:
-	.string "The LEAGUE feels far away again... How\n"
-	.string "disappointing...$"
+	.string "I am disappointed, but the road\n"
+	.string "does not owe me a victory.\p"
+	.string "I can try again.$"
 
 VictoryRoad_B1F_Text_ShannonIntro:
-	.string "At the LEAGUE, you need your POKéMON\n"
-	.string "to trust you.$"
+	.string "A battle this late in the road\n"
+	.string "depends on trust. Show me yours.$"
 
 VictoryRoad_B1F_Text_ShannonDefeat:
-	.string "The trust between you two is strong.$"
+	.string "You and your POKéMON stayed\n"
+	.string "steady.$"
 
 VictoryRoad_B1F_Text_ShannonPostBattle:
-	.string "The longer they spend together, the\n"
-	.string "more trust grows between a TRAINER and\l"
-	.string "a POKéMON.$"
+	.string "Trust grows through time\n"
+	.string "together.\p"
+	.string "It is not the same as control.$"
 
 VictoryRoad_B1F_Text_MichelleIntro:
-	.string "This isn't the finish. It's one more step\n"
-	.string "toward the LEAGUE.$"
+	.string "This is not the finish. It is\n"
+	.string "one more step to the LEAGUE.$"
 
 VictoryRoad_B1F_Text_MichelleDefeat:
-	.string "That's the way!$"
+	.string "That was a clean step forward.$"
 
 VictoryRoad_B1F_Text_MichellePostBattle:
-	.string "You'll be fine! Your POKéMON are ready.$"
+	.string "You look ready. So do your\n"
+	.string "POKéMON.$"
 
 VictoryRoad_B1F_Text_MitchellIntro:
-	.string "My POKéMON are a force from another\n"
-	.string "world!$"
+	.string "My POKéMON have carried me far.\n"
+	.string "Let us see how far together.$"
 
 VictoryRoad_B1F_Text_MitchellDefeat:
-	.string "I've never faced anyone like that.$"
+	.string "I have not faced a team like\n"
+	.string "yours.$"
 
 VictoryRoad_B1F_Text_MitchellPostBattle:
-	.string "Even outside battle, you can feel the\n"
-	.string "strength between you and your POKéMON.$"
+	.string "Even outside battle, I can see\n"
+	.string "how well your team reads you.$"
 
 VictoryRoad_B1F_Text_HalleIntro:
-	.string "Hey, loosen up a little! Let's battle\n"
-	.string "without all that tension.$"
+	.string "Hey, loosen your shoulders. We\n"
+	.string "can battle without pretending\n"
+	.string "the pressure is not here.$"
 
 VictoryRoad_B1F_Text_HalleDefeat:
-	.string "Wow! How wonderful!$"
+	.string "That was good! Really good!$"
 
 VictoryRoad_B1F_Text_HallePostBattle:
-	.string "Yes, this is ESTRADA DO JURAMENTO.\p"
-	.string "But it isn't so different from the road\n"
-	.string "that brought you here. Enjoy the rest\l"
-	.string "of it!$"
+	.string "Yes, this is OATH ROAD.\p"
+	.string "It is still only a road. Walk\n"
+	.string "the part in front of you.$"
 

@@ -46,7 +46,7 @@ Route114_LanettesHouse_EventScript_PC::
 	end
 
 Route114_LanettesHouse_Text_EverythingClutteredKeepThis:
-	.string "LANETTE: Oh! {PLAYER}{KUN}!\p"
+	.string "LENITA: Oh! {PLAYER}{KUN}!\p"
 	.string "I'm sorry everything is so cluttered…\n"
 	.string "When I get engrossed in research,\l"
 	.string "things end up this way…\p"
@@ -60,7 +60,7 @@ Route114_LanettesHouse_Text_OrganizeYourBoxes:
 	.string "can tell which POKéMON are in them.$"
 
 Route114_LanettesHouse_Text_ResearchNotesPage1:
-	.string "It's LANETTE's research notes.\n"
+	.string "It's LENITA's research notes.\n"
 	.string "There's information about BOXES.\p"
 	.string "Design BOXES to hold 30 POKéMON each.\p"
 	.string "Each TRAINER should be able to store\n"
@@ -99,6 +99,6 @@ Route114_LanettesHouse_Text_EmailFromBill:
 	.string "a part in its development.\p"
 	.string "“Here's hoping that you'll continue\n"
 	.string "research in Storage Systems.\p"
-	.string "“From BILL\n"
+	.string "“From ELCIO\n"
 	.string "… … … … … … … …”$"
 

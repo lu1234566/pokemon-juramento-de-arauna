@@ -24,14 +24,14 @@ EverGrandeCity_EventScript_SetVisitedEverGrande::
 	end
 
 EverGrandeCity_Text_EnteringVictoryRoad:
-	.string "ESTRADA DO JURAMENTO$"
+	.string "OATH ROAD$"
 
 EverGrandeCity_Text_EnteringPokemonLeague:
-	.string "POKéMON LEAGUE ENTRANCE$"
+	.string "ARAUNA POKéMON LEAGUE$"
 
 EverGrandeCity_Text_CitySign:
-	.string "ESTRADA DO JURAMENTO. The LEAGUE is\n"
-	.string "the last rite of the journey. Winning\l"
-	.string "erases nothing that happened; it only\l"
-	.string "settles who you will be afterward.$"
+	.string "OATH ROAD. The LEAGUE is the\n"
+	.string "last rite of this journey.\p"
+	.string "Winning cannot erase the past.\n"
+	.string "It asks what you do next.$"
 

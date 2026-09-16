@@ -1,60 +1,97 @@
-# Treze nomes de Hoenn que ainda falam no jogo
+# Os nomes de Hoenn acabaram
 
-A passagem para o inglês terminou e o vocabulário do mundo está unificado. O
-que sobra não é tradução: são personagens que nunca receberam nome de Arauna.
-Eles continuam se apresentando como o elenco do Emerald, em 227 falas.
+Este documento pedia treze nomes. Não pede mais nenhum: as 227 falas que ainda
+chamavam personagens pelo elenco do Emerald foram renomeadas, e o gate
+`tools/arauna/build_character_names.py --check` agora relata **zero**.
 
-Isto não foi decidido aqui de propósito. Trocar HORIZONTE por HORIZON é
-terminar uma decisão que o projeto já tinha tomado; dar um nome novo ao
-capitão do submersível é *tomar* uma decisão, e essa é sua.
+Foram dois caminhos diferentes, porque os dois grupos estavam em estados
+diferentes.
 
-| nome | falas | quem é |
-|---|---:|---|
-| RYDEL | 59 | dono da loja de bicicletas na ENCRUZILHADA |
-| CAPT. STERN | 38 | capitão do submersível, PORTO DO SAL |
-| SCOTT | 35 | o recrutador do BATTLE CIRCUIT |
-| MR. BRINEY | 33 | o velho marinheiro que leva o jogador de barco |
-| MR. STONE | 29 | presidente — a ficha dele no POKéNAV já diz HORIZON PRES |
-| PROF. COZMO | 10 | o pesquisador do METEORITE, CAMPO DAS CINZAS |
-| LANETTE | 10 | a dona do sistema de PC |
-| WINSTRATE | 4 | a família de quatro treinadores da ROUTE 111 |
-| SIDNEY | 2 | GREAT HOUSE |
-| PHOEBE | 2 | GREAT HOUSE |
-| GLACIA | 2 | GREAT HOUSE |
-| DRAKE | 2 | GREAT HOUSE |
-| BILL | 1 | assinatura numa carta |
+## A Elite dos Quatro já tinha nome — faltava rodar o renderer
 
-## Onde isso já incomoda
+`scripts/render_arauna_league_en_checked.py` existia, estava na ordem travada
+de `scripts/english_renderers.txt`, carregava a tabela de nomes desde sempre e
+**nunca tinha sido aplicado**. Bastou rodá-lo:
 
-Dois casos são contradições dentro da mesma tela, não só sotaque:
+| Hoenn | Arauna |
+|---|---|
+| SIDNEY | **LÁZARO** |
+| PHOEBE | **ROSA** |
+| GLACIA | **CLARA** |
+| DRAKE | **TIBÚRCIO** |
 
-**MR. STONE.** A descrição dele no POKéNAV diz `HORIZON PRES` — presidente do
-HORIZON. Ou seja, o jogo já o colocou na organização renomeada e manteve o
-sobrenome da Devon.
+Junto com os quatro `trainerName`, ele reescreveu 88 blocos de texto em onze
+mapas: a Estrada do Juramento inteira, as quatro salas da Elite, a sala da
+Campeã e o Centro.
 
-**SCOTT.** Ele e MR. BENTO fazem o mesmo trabalho — recrutar o jogador para o
-circuito — e em várias cenas falam quase as mesmas falas. `MR. BENTO` é o
-nome que o projeto escolheu para o Steven; SCOTT continua SCOTT. Vale decidir
-se são duas pessoas ou uma.
+## Os outros dez não tinham nome nenhum
 
-**A GREAT HOUSE.** A classe já se chama GREAT HOUSE e a campeã já é AMALIA,
-mas os quatro membros ainda são Sidney, Phoebe, Glacia e Drake.
+Esses foram escolhidos agora, e `tools/arauna/build_remaining_names.py` os
+aplicou em 280 menções e 74 arquivos.
 
-## O que falta para fechar
+| Hoenn | Arauna | menções | quem é |
+|---|---|---:|---|
+| RYDEL | **ZEFERINO** | 68 | a loja de bicicletas na ENCRUZILHADA |
+| CAPT. STERN | **CAPT. NUNES** | 54 | o capitão do submersível |
+| SCOTT | **BENTO** | 42 | o recrutador do BATTLE CIRCUIT |
+| MR. BRINEY | **MR. HONÓRIO** | 42 | o velho marinheiro do barco |
+| PEEKO | **PÉROLA** | 21 | a ave dele |
+| MR. STONE | **MR. AMARAL** | 19 | presidente da HORIZON |
+| LANETTE | **LENITA** | 13 | a dona do sistema de PC |
+| PROF. COZMO | **PROF. SALÚSTIO** | 13 | o pesquisador do METEORITE |
+| WINSTRATE | **QUEIROZ** | 5 | a família de quatro da ROUTE 111 |
+| BILL | **ELCIO** | 3 | a assinatura numa carta |
 
-O `tools/arauna/character_manifest.json` tem 37 personagens, e alguns deles
-não estão atribuídos a papel nenhum: MAIRA, DARIO, NILO, JACI, AMARO, TADEU,
-ROSA, CLARA, TIBURCIO, LAZARO. Pode ser que alguns desses já tenham sido
-pensados para esses postos.
+**O BENTO não foi escolha minha.** O projeto já tinha decidido: o renderer
+`render_battle_circuit_public_services_en_checked.py` chama o mapa
+`BattleFrontier_ScottsHouse` de `bento_room`, e o texto lá já dizia
+`MR. BENTO`. Só faltava o resto do jogo saber.
 
-Bastam os treze nomes — a substituição em si é mecânica e reversível, do mesmo
-tipo que já foi feita para HORIZONTE e BATTLE FRONTIER. O que não dá para
-fazer sem você é escolher quem é quem.
+Os outros nove foram conferidos contra tudo que já tem nome no jogo — as 386
+criaturas, os 434 treinadores de rota, os 526 do Frontier, os 16 aprendizes, os
+lugares e o elenco da história. **Nenhum colide.** Foi por isso que caíram
+alguns candidatos melhores de ouvido: NIVALDO, JOAQUIM, CELSO e TITO já eram
+gente no jogo.
 
-## O que deliberadamente não é problema
+## Trocar um destes nomes é editar uma célula
 
-`SPACE CENTER`, `OCEANIC MUSEUM`, `TRICK HOUSE` e `WEATHER INSTITUTE`
-descrevem o prédio em inglês comum; não são nomes de Hoenn. `MAGMA ARMOR` é
-habilidade de POKéMON, não facção. E os nomes próprios de lugar, pessoa e
-criatura em português continuam em português por escolha — está escrito em
-`docs/GLOSSARIO_EN.md`.
+Todos saem da coluna `arauna_name` de `docs/arauna/ARAUNA_CHARACTER_NAMES.csv`.
+Para trocar um:
+
+```
+edite a célula, depois
+python3 tools/arauna/build_remaining_names.py --write
+python3 tools/arauna/rewrap_text.py --write
+python3 tools/arauna/check_text_width.py
+```
+
+O renomeador compara com o que está na árvore, então rodar duas vezes não
+empilha. O da Elite dos Quatro mora em `TRAINER_NAMES`, dentro do renderer da
+Liga.
+
+## Duas coisas que o título carrega
+
+**O título anda junto.** `MR. BRINEY` e um `BRINEY` solto são o mesmo homem, e
+os dois foram renomeados. `CAPT. STERN` virou `CAPT. NUNES`, e o estaleiro que
+leva o nome dele virou `NUNES'S SHIPYARD`.
+
+**O STONE é a exceção, e é por isso que não foi uma lista de palavras.** O
+presidente é `MR. STONE` e `PRESIDENT STONE`, mas o jogo também vende MOON
+STONE, WATER STONE, FIRE STONE e LEAF STONE. Só as duas formas com título foram
+trocadas; um `STONE` sozinho continua sendo pedra.
+
+## Um defeito que só apareceu porque o renderer rodou
+
+O renderer da Liga escrevia **`SEU BENTO`** na fala do Centro de Ever Grande.
+Como ele nunca tinha sido aplicado, o `check_english_only_policy.py` nunca tinha
+visto aquela linha — e "seu" está no léxico português, então ela reprovou o
+gate na hora.
+
+O resto do jogo já dizia `MR. BENTO`, que é a forma que passa. Corrigido na
+origem, em `data/text/arauna/en/league_finale.json`, e não no texto gerado.
+
+Vale a nota para quem vier depois: os bancos JSON de `data/text/arauna/en/`
+**não são varridos pelo gate de português** — ele lê `.inc`, `.s` e C. Ainda
+existem cinco `SEU BENTO` em `baia_luzes_harbor_tickets.json` e
+`baia_luzes_interiors.json` que vão reprovar o gate no dia em que aqueles
+renderers forem aplicados.

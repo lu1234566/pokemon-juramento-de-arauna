@@ -196,7 +196,7 @@ RustboroCity_DevonCorp_3F_EventScript_RareRocksDisplay::
 	end
 
 RustboroCity_DevonCorp_3F_Text_MrStoneIHaveFavor:
-	.string "I'm MR. STONE, the PRESIDENT of\n"
+	.string "I'm MR. AMARAL, the PRESIDENT of\n"
 	.string "the HORIZON CONSORTIUM.\p"
 	.string "I'd just got word about you!\p"
 	.string "You saved our staff not just once,\n"
@@ -211,7 +211,7 @@ RustboroCity_DevonCorp_3F_Text_MrStoneIHaveFavor:
 	.string "LETTER to BENTO in PORTO DAS REDES.$"
 
 RustboroCity_DevonCorp_3F_Text_MrStoneWantYouToHaveThis:
-	.string "MR. STONE: Now, you should know that\n"
+	.string "MR. AMARAL: Now, you should know that\n"
 	.string "I am a great PRESIDENT.\p"
 	.string "So, I'd never be so cheap as to ask\n"
 	.string "a favor for nothing in return.\p"
@@ -221,7 +221,7 @@ RustboroCity_DevonCorp_3F_Text_ReceivedPokenav:
 	.string "{PLAYER} received a POKéNAV.$"
 
 RustboroCity_DevonCorp_3F_Text_MrStoneExplainPokenavRestUp:
-	.string "MR. STONE: That device…\p"
+	.string "MR. AMARAL: That device…\p"
 	.string "It's a POKéMON NAVIGATOR, or POKéNAV\n"
 	.string "for short.\p"
 	.string "It's an indispensable tool for any\n"
@@ -238,20 +238,20 @@ RustboroCity_DevonCorp_3F_Text_MrStoneExplainPokenavRestUp:
 	.string "up before you go on your way.$"
 
 RustboroCity_DevonCorp_3F_Text_MrStoneGoWithCautionAndCare:
-	.string "MR. STONE: Well, then, {PLAYER}{KUN},\n"
+	.string "MR. AMARAL: Well, then, {PLAYER}{KUN},\n"
 	.string "go with caution and care!$"
 
 RustboroCity_DevonCorp_3F_Text_CountingOnYou:
-	.string "MR. STONE: I'm counting on you!$"
+	.string "MR. AMARAL: I'm counting on you!$"
 
 RustboroCity_DevonCorp_3F_Text_ThankYouForDeliveringLetter:
-	.string "MR. STONE: You delivered my LETTER?\n"
+	.string "MR. AMARAL: You delivered my LETTER?\n"
 	.string "Thank you kindly!\p"
 	.string "This is my way of thanking you.\n"
 	.string "It should help you, a TRAINER.$"
 
 RustboroCity_DevonCorp_3F_Text_ExplainExpShare:
-	.string "MR. STONE: A POKéMON holding that\n"
+	.string "MR. AMARAL: A POKéMON holding that\n"
 	.string "EXP. SHARE will be given some of the\l"
 	.string "EXP Points from battle.\p"
 	.string "It will get EXP Points even if it didn't\n"
@@ -260,8 +260,8 @@ RustboroCity_DevonCorp_3F_Text_ExplainExpShare:
 	.string "for raising weak POKéMON.$"
 
 RustboroCity_DevonCorp_3F_Text_NotFamiliarWithTrends:
-	.string "MR. STONE: Since my youth, I've immersed\n"
-	.string "myself in work.\p"
+	.string "MR. AMARAL: Since my youth, I've\n"
+	.string "immersed myself in work.\p"
 	.string "Consequently, I'm not familiar with\n"
 	.string "trends and that sort of thing.\p"
 	.string "But do young people all want to be\n"
@@ -296,7 +296,7 @@ RustboroCity_DevonCorp_3F_Text_PleaseGoAhead:
 RustboroCity_DevonCorp_3F_Text_VisitCaptSternShipyard:
 	.string "If you visit the SHIPYARD in\n"
 	.string "PORTO DO SAL, you should go see\l"
-	.string "CAPT. STERN.$"
+	.string "CAPT. NUNES.$"
 
 RustboroCity_DevonCorp_3F_Text_RepeatAndTimerHugelyPopular:
 	.string "HORIZON's new products, the REPEAT\n"

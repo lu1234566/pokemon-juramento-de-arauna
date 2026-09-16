@@ -77,9 +77,9 @@ SlateportCity_SternsShipyard_1F_Text_MeetDockDeliverToStern:
 	.string "That is what the reports say.$"
 
 SlateportCity_SternsShipyard_1F_Text_CouldYouFindStern:
-	.string "DOCK: Where could CAPT. STERN have\n"
+	.string "DOCK: Where could CAPT. NUNES have\n"
 	.string "gone off to?\p"
-	.string "Could you go find CAPT. STERN and\n"
+	.string "Could you go find CAPT. NUNES and\n"
 	.string "deliver that parcel to him?$"
 
 SlateportCity_SternsShipyard_1F_Text_CouldUseAdviceFromVeteran:
@@ -90,7 +90,7 @@ SlateportCity_SternsShipyard_1F_Text_CouldUseAdviceFromVeteran:
 	.string "who knows the seas…$"
 
 SlateportCity_SternsShipyard_1F_Text_BrineyJoinedUs:
-	.string "DOCK: Hi! MR. BRINEY's joined us to\n"
+	.string "DOCK: Hi! MR. HONORIO's joined us to\n"
 	.string "lend us his help.\p"
 	.string "Thanks to the veteran sailor, the\n"
 	.string "ferry is steadily coming together.$"
@@ -105,7 +105,7 @@ SlateportCity_SternsShipyard_1F_Text_FerryIsReady:
 	.string "technology's march.$"
 
 SlateportCity_SternsShipyard_1F_Text_DecidedToHelpDock:
-	.string "MR. BRINEY: Ah, {PLAYER}{KUN}!\n"
+	.string "MR. HONORIO: Ah, {PLAYER}{KUN}!\n"
 	.string "It's been too long!\p"
 	.string "Aye, since I met you, this old sea dog's\n"
 	.string "been feeling frisky!\p"

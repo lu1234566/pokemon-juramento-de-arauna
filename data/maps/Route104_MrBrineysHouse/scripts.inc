@@ -95,12 +95,12 @@ Route104_MrBrineysHouse_EventScript_Peeko::
 	end
 
 Route104_MrBrineysHouse_Text_WaitUpPeeko:
-	.string "MR. BRINEY: Hold on, lass!\n"
-	.string "Wait up, PEEKO!$"
+	.string "MR. HONORIO: Hold on, lass!\n"
+	.string "Wait up, PEROLA!$"
 
 Route104_MrBrineysHouse_Text_ItsYouLetsSailToDewford:
 	.string "Hm? You're {PLAYER}{KUN}! You saved my\n"
-	.string "darling PEEKO! We owe so much to you!\p"
+	.string "darling PEROLA! We owe so much to you!\p"
 	.string "What's that? You want to sail with me?\p"
 	.string "Hmhm…\p"
 	.string "You have a LETTER bound for\n"
@@ -113,18 +113,19 @@ Route104_MrBrineysHouse_Text_ItsYouLetsSailToDewford:
 	.string "sail for PORTO DAS REDES.$"
 
 Route104_MrBrineysHouse_Text_SetSailForDewford:
-	.string "MR. BRINEY: PORTO DAS REDES it is, then!\p"
-	.string "Anchors aweigh!\n"
-	.string "PEEKO, we're setting sail, my darling!$"
+	.string "MR. HONORIO: PORTO DAS REDES it is,\n"
+	.string "then!\p"
+	.string "Anchors aweigh! PEROLA, we're setting\n"
+	.string "sail, my darling!$"
 
 Route104_MrBrineysHouse_Text_DeclineDeliverySail:
-	.string "MR. BRINEY: Is that so?\n"
+	.string "MR. HONORIO: Is that so?\n"
 	.string "Your deliveries can wait?\p"
 	.string "You just go on and tell me whenever\n"
 	.string "you want to set sail!$"
 
 Route104_MrBrineysHouse_Text_NeedToMakeDeliveriesSailToDewford:
-	.string "MR. BRINEY: Ahoy! I know exactly what\n"
+	.string "MR. HONORIO: Ahoy! I know exactly what\n"
 	.string "you want to say!\p"
 	.string "You're to deliver a LETTER to\n"
 	.string "PORTO DAS REDES and a package to\l"
@@ -135,26 +136,26 @@ Route104_MrBrineysHouse_Text_NeedToMakeDeliveriesSailToDewford:
 	.string "PORTO DAS REDES.$"
 
 Route104_MrBrineysHouse_Text_NeedToDeliverPackageSailToDewford:
-	.string "MR. BRINEY: Ahoy! I know exactly what\n"
+	.string "MR. HONORIO: Ahoy! I know exactly what\n"
 	.string "you want to say!\p"
 	.string "You're to deliver a package to\n"
-	.string "CAPT. STERN in PORTO DO SAL.\p"
+	.string "CAPT. NUNES in PORTO DO SAL.\p"
 	.string "What you need me to do is no problem at\n"
 	.string "all--I'm the man for the job!\p"
 	.string "First, we'll set sail for\n"
 	.string "PORTO DAS REDES.$"
 
 Route104_MrBrineysHouse_Text_WhereAreWeBound:
-	.string "MR. BRINEY: Ahoy!\n"
+	.string "MR. HONORIO: Ahoy!\n"
 	.string "For you, I'll go out to sea anytime!\p"
 	.string "Now, my friend, where are we bound?$"
 
 Route104_MrBrineysHouse_Text_TellMeWheneverYouWantToSail:
-	.string "MR. BRINEY: Is that so?\n"
-	.string "Well, PEEKO owes her life to you.\p"
+	.string "MR. HONORIO: Is that so?\n"
+	.string "Well, PEROLA owes her life to you.\p"
 	.string "You just go on and tell me whenever\n"
 	.string "you want to set sail!$"
 
 Route104_MrBrineysHouse_Text_Peeko:
-	.string "PEEKO: Pii piihyoro!$"
+	.string "PEROLA: Pii piihyoro!$"
 

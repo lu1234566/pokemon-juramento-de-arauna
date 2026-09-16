@@ -217,8 +217,8 @@ JaggedPass_Text_EthanRematchDefeat:
 	.string "bumpy ground…$"
 
 JaggedPass_Text_EthanPostRematch:
-	.string "I should get an ACRO BIKE from RYDEL\n"
-	.string "in ENCRUZILHADA…$"
+	.string "I should get an ACRO BIKE from\n"
+	.string "ZEFERINO in ENCRUZILHADA…$"
 
 JaggedPass_Text_GruntIntro:
 	.string "Wah!\n"

@@ -346,7 +346,7 @@ def block_pattern(label: str) -> re.Pattern[str]:
 
 
 def present(source: str) -> tuple[str, ...]:
-    """Only the labels this file actually has -- the shared ones vary."""
+    "\"\"Only the labels this file actually has -- the shared ones vary.\"\""
     return tuple(label for label in TARGETS
                  if block_pattern(label).search(source))
 

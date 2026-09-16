@@ -631,7 +631,7 @@ Route111_Text_ToughToKeepWinningUpTheRanks:
 	.string "any GYM LEADER.$"
 
 Route111_Text_WinstrateFamilyDestroyedMe:
-	.string "I challenged the WINSTRATE family,\n"
+	.string "I challenged the QUEIROZ family,\n"
 	.string "but four matches in a row is tough\l"
 	.string "going… They destroyed me.$"
 
@@ -641,7 +641,7 @@ Route111_Text_RouteSignMauville:
 
 Route111_Text_WinstrateHouseSign:
 	.string "“Our family's hearts beat as one!”\n"
-	.string "THE WINSTRATE'S HOUSE$"
+	.string "THE QUEIROZ'S HOUSE$"
 
 Route111_Text_RouteSign112:
 	.string "ROUTE 111\n"

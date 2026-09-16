@@ -75,7 +75,7 @@ METEOR_TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         ),
     ),
     "MeteorFalls_1F_1R_Text_MeetProfCozmo": (
-        ("COZMO", "PROFESSOR", "RUINAS DA QUEDA", "CONSORCIO HORIZONTE"),
+        ("SALUSTIO", "PROFESSOR", "RUINAS DA QUEDA", "CONSORCIO HORIZONTE"),
         (
             "Sou pesquisador de minerais.\\p",
             "Os LEMBRANTES pediram que eu\\n",
@@ -87,7 +87,7 @@ METEOR_TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         ),
     ),
     "MeteorFalls_1F_1R_Text_WhatsTeamMagmaDoingAtMtChimney": (
-        ("PROF. COZMO", "SERRA DA CINZA"),
+        ("PROF. SALUSTIO", "SERRA DA CINZA"),
         (
             "PESQUISADOR: Os LEMBRANTES\\n",
             "levaram meu METEORITO para\\n",

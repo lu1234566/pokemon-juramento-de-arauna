@@ -18,17 +18,17 @@ WALLACE,AMALIA,0,renamed in trainers.h by the story work
 WALLY,VAL,0,renamed in trainers.h by the story work
 WATTSON,OLIVIA,0,renamed in trainers.h by the story work
 WINONA,LIDIA,0,renamed in trainers.h by the story work
-RYDEL,,59,not named yet
-SCOTT,,35,not named yet
-CAPT. STERN,,32,not named yet
-MR. BRINEY,,31,not named yet
-PEEKO,,21,not named yet
-MR. STONE,,18,not named yet
-LANETTE,,10,not named yet
-COZMO,,10,not named yet
-WINSTRATE,,4,not named yet
-BILL,,1,not named yet
-SIDNEY,,2,not named yet
-PHOEBE,,3,not named yet
-GLACIA,,3,not named yet
-DRAKE,,2,not named yet
+RYDEL,ZEFERINO,59,renamed in text by build_remaining_names.py
+SCOTT,BENTO,35,renamed in text by build_remaining_names.py
+CAPT. STERN,NUNES,32,renamed in text by build_remaining_names.py
+MR. BRINEY,HONORIO,31,renamed in text by build_remaining_names.py
+PEEKO,PEROLA,21,renamed in text by build_remaining_names.py
+MR. STONE,AMARAL,18,renamed in text by build_remaining_names.py
+LANETTE,LENITA,10,renamed in text by build_remaining_names.py
+COZMO,SALUSTIO,10,renamed in text by build_remaining_names.py
+WINSTRATE,QUEIROZ,4,renamed in text by build_remaining_names.py
+BILL,ELCIO,1,renamed in text by build_remaining_names.py
+SIDNEY,LAZARO,2,renamed by render_arauna_league_en_checked.py
+PHOEBE,ROSA,3,renamed by render_arauna_league_en_checked.py
+GLACIA,CLARA,3,renamed by render_arauna_league_en_checked.py
+DRAKE,TIBURCIO,2,renamed by render_arauna_league_en_checked.py

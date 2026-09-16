@@ -518,7 +518,7 @@ def render(source: str) -> str:
 
 
 def mask(text: str) -> str:
-    """Everything that is not one of these bodies, so nothing else can move."""
+    "\"\"Everything that is not one of these bodies, so nothing else can move.\"\""
     masked = text
     for label in TARGETS:
         match = block_pattern(label).search(masked)

@@ -13,7 +13,7 @@ CONTROL_RE = re.compile(r"\\[npl]")
 PLACEHOLDER_RE = re.compile(r"\{[^}]+\}")
 
 SOURCE_SIGNATURES = (
-    "CAPT. STERN",
+    "CAPT. NUNES",
     "BIA:",
     "huge discovery",
     "HORIZONTE: Nao somos soldados",

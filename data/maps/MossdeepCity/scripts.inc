@@ -408,7 +408,7 @@ MossdeepCity_Text_SpaceCenterSign:
 	.string "“The closest place to space.”$"
 
 MossdeepCity_Text_ScottSomethingWrongWithTown:
-	.string "SCOTT: {PLAYER}{KUN}, feeling good? I'm doing\n"
+	.string "BENTO: {PLAYER}{KUN}, feeling good? I'm doing\n"
 	.string "great!\p"
 	.string "I'd heard MISSOES DO CEU's GYM LEADER\n"
 	.string "is pretty strong, so I decided to come\l"

@@ -65,8 +65,8 @@ FallarborTown_CozmosHouse_EventScript_CozmoIsHappy::
 	end
 
 FallarborTown_CozmosHouse_Text_MeteoriteWillNeverBeMineNow:
-	.string "PROF. COZMO: Oh… I never should have let\n"
-	.string "myself be conned into telling\l"
+	.string "PROF. SALUSTIO: Oh… I never should have\n"
+	.string "let myself be conned into telling\l"
 	.string "REMEMBRANCERS where you can find\l"
 	.string "METEORITES…\p"
 	.string "That METEORITE from RUINAS DA QUEDA…\n"
@@ -83,17 +83,17 @@ FallarborTown_CozmosHouse_Text_IsThatMeteoriteMayIHaveIt:
 	.string "about in exchange for this TM?$"
 
 FallarborTown_CozmosHouse_Text_PleaseUseThisTM:
-	.string "PROF. COZMO: This TM, it represents\n"
+	.string "PROF. SALUSTIO: This TM, it represents\n"
 	.string "my feeling of gratitude.\l"
 	.string "Please use it!$"
 
 FallarborTown_CozmosHouse_Text_ReallyGoingToHelpMyResearch:
-	.string "PROF. COZMO: Oh, I can't believe it.\n"
+	.string "PROF. SALUSTIO: Oh, I can't believe it.\n"
 	.string "This is really, really great!\p"
 	.string "This is really going to help my research!$"
 
 FallarborTown_CozmosHouse_Text_CrushedWithDisappointment:
-	.string "PROF. COZMO: Oh, but…\n"
+	.string "PROF. SALUSTIO: Oh, but…\n"
 	.string "I'm crushed with disappointment…$"
 
 FallarborTown_CozmosHouse_Text_MayIHaveMeteorite:
@@ -103,15 +103,15 @@ FallarborTown_CozmosHouse_Text_MayIHaveMeteorite:
 	.string "lost.$"
 
 FallarborTown_CozmosHouse_Text_CozmoWentToMeteorFalls:
-	.string "PROF. COZMO went off to\n"
+	.string "PROF. SALUSTIO went off to\n"
 	.string "RUINAS DA QUEDA on ROUTE 114 with some\l"
 	.string "of the REMEMBRANCERS.$"
 
 FallarborTown_CozmosHouse_Text_FeelSorryForCozmo:
-	.string "Poor PROF. COZMO…\n"
+	.string "Poor PROF. SALUSTIO…\n"
 	.string "He's so depressed… I feel sorry for him.$"
 
 FallarborTown_CozmosHouse_Text_CozmoIsSoHappy:
-	.string "Look at PROF. COZMO…\n"
+	.string "Look at PROF. SALUSTIO…\n"
 	.string "He's so happy! I think it's cute.$"
 

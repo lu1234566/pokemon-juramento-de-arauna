@@ -32,74 +32,81 @@ VictoryRoad_B2F_EventScript_Dianne::
 	end
 
 VictoryRoad_B2F_Text_VitoIntro:
-	.string "I trained with my whole family. I'm not\n"
-	.string "losing to anyone!$"
+	.string "My whole family trained with me.\n"
+	.string "I want to make that time count.$"
 
 VictoryRoad_B2F_Text_VitoDefeat:
-	.string "Better than my whole family?! Is that\n"
-	.string "even possible?!$"
+	.string "You beat me. That does not erase\n"
+	.string "what my family taught me.$"
 
 VictoryRoad_B2F_Text_VitoPostBattle:
-	.string "I was the best in my family and I had\n"
-	.string "never lost...\p"
-	.string "I think I've lost my nerve. Maybe I'll go\n"
-	.string "home.$"
+	.string "I thought being the best at home\n"
+	.string "meant I could not lose here.\p"
+	.string "I was wrong. I can go home,\n"
+	.string "learn, and come back.$"
 
 VictoryRoad_B2F_Text_OwenIntro:
-	.string "I heard about some tough young\n"
-	.string "TRAINER. So that was you?$"
+	.string "I heard about a tough young\n"
+	.string "TRAINER from VILA AMANHECER.\p"
+	.string "So that was you?$"
 
 VictoryRoad_B2F_Text_OwenDefeat:
-	.string "The little one is strong!$"
+	.string "The stories did not exaggerate.$"
 
 VictoryRoad_B2F_Text_OwenPostBattle:
-	.string "So the rumors were true. That strong\n"
-	.string "young TRAINER came from\l"
-	.string "VILA AMANHECER.$"
+	.string "So the traveler from\n"
+	.string "VILA AMANHECER reached OATH\n"
+	.string "ROAD.\p"
+	.string "People will talk about that.$"
 
 VictoryRoad_B2F_Text_CarolineIntro:
-	.string "You must be getting tired.$"
+	.string "You must be tired by now. Do not\n"
+	.string "hide it from your team.$"
 
 VictoryRoad_B2F_Text_CarolineDefeat:
-	.string "Not a sign of tiredness!$"
+	.string "You managed your strength well.$"
 
 VictoryRoad_B2F_Text_CarolinePostBattle:
-	.string "ESTRADA DO JURAMENTO and the LEAGUE\n"
-	.string "are both long challenges.\p"
-	.string "Do not let tiredness win.$"
+	.string "OATH ROAD and the LEAGUE are\n"
+	.string "long.\p"
+	.string "Rest is part of finishing.$"
 
 VictoryRoad_B2F_Text_JulieIntro:
-	.string "Don't get comfortable just because\n"
-	.string "you've won a lot of BADGES.\p"
-	.string "There's always someone better.$"
+	.string "Eight BADGES can open the door.\p"
+	.string "They cannot fight the next\n"
+	.string "battle for you.$"
 
 VictoryRoad_B2F_Text_JulieDefeat:
-	.string "You're better than me!$"
+	.string "You were better in this battle.$"
 
 VictoryRoad_B2F_Text_JuliePostBattle:
-	.string "Look at your BADGES and remember the\n"
-	.string "TRAINERS you beat.$"
+	.string "Look at your BADGES and remember\n"
+	.string "the people behind each one.\p"
+	.string "A record is not the whole\n"
+	.string "journey.$"
 
 VictoryRoad_B2F_Text_FelixIntro:
-	.string "I got a long way, but the tension is\n"
-	.string "going straight to my stomach...$"
+	.string "I came far, but the pressure is\n"
+	.string "doing terrible things to my\n"
+	.string "stomach.$"
 
 VictoryRoad_B2F_Text_FelixDefeat:
-	.string "Ow... That hurts...$"
+	.string "Ow... That did not help.$"
 
 VictoryRoad_B2F_Text_FelixPostBattle:
-	.string "Just thinking about how close the\n"
-	.string "LEAGUE is makes me tense.\p"
-	.string "All I can do is pretend to be calm.$"
+	.string "I get tense just thinking about\n"
+	.string "how close the LEAGUE is.\p"
+	.string "Pretending I am calm makes it\n"
+	.string "worse.$"
 
 VictoryRoad_B2F_Text_DianneIntro:
-	.string "The best of them make it as far as this\n"
-	.string "cave.\p"
-	.string "So then, what do you make of it?$"
+	.string "Strong TRAINERS reach this cave.\p"
+	.string "What has the road shown you?$"
 
 VictoryRoad_B2F_Text_DianneDefeat:
-	.string "You didn't even flinch!$"
+	.string "You did not lose your balance.$"
 
 VictoryRoad_B2F_Text_DiannePostBattle:
-	.string "You've got nerve! I like it! Keep it up!$"
+	.string "Courage is not looking fearless.\p"
+	.string "Keep going.$"
 

@@ -277,7 +277,7 @@ SlateportCity_OceanicMuseum_1F_Text_LearnAboutSeaForBattling:
 SlateportCity_OceanicMuseum_1F_Text_SternIsRoleModel:
 	.string "I get all giddy and gooey when\n"
 	.string "I see the sea!\p"
-	.string "For me, CAPT. STERN is the number\n"
+	.string "For me, CAPT. NUNES is the number\n"
 	.string "one role model!$"
 
 SlateportCity_OceanicMuseum_1F_Text_MustBePokemonWeDontKnow:

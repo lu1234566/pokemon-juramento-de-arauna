@@ -477,39 +477,40 @@ Route109_EventScript_Elijah::
 	end
 
 DewfordTown_Text_BrineyLandedInSlateportDeliverGoods:
-	.string "MR. BRINEY: Ahoy!\n"
+	.string "MR. HONORIO: Ahoy!\n"
 	.string "We've made land in PORTO DO SAL!\p"
 	.string "I suppose you're going to visit CAPT.\n"
-	.string "STERN and deliver the HORIZON PARTS?$"
+	.string "NUNES and deliver the HORIZON PARTS?$"
 
 Route109_Text_BrineySailToDewfordQuestion:
-	.string "MR. BRINEY: I thought you're supposed\n"
+	.string "MR. HONORIO: I thought you're supposed\n"
 	.string "to deliver the HORIZON PARTS.\p"
 	.string "Would you like to sail back to\n"
 	.string "PORTO DAS REDES, then?$"
 
 Route109_Text_BrineyDewfordItIs:
-	.string "MR. BRINEY: PORTO DAS REDES it is, then!\p"
-	.string "Anchors aweigh!\n"
-	.string "PEEKO, we're setting sail, my darling!$"
+	.string "MR. HONORIO: PORTO DAS REDES it is,\n"
+	.string "then!\p"
+	.string "Anchors aweigh! PEROLA, we're setting\n"
+	.string "sail, my darling!$"
 
 Route109_Text_BrineyDeliverDevonGoods:
-	.string "MR. BRINEY: Then you go on and deliver\n"
+	.string "MR. HONORIO: Then you go on and deliver\n"
 	.string "the HORIZON PARTS. I'll be waiting.$"
 
 DewfordTown_Text_BrineyLandedInSlateport:
-	.string "MR. BRINEY: Ahoy! We've made land in\n"
+	.string "MR. HONORIO: Ahoy! We've made land in\n"
 	.string "PORTO DO SAL!\p"
 	.string "You just go on and tell me whenever\n"
 	.string "you want to set sail again!$"
 
 Route109_Text_BrineyWhereAreWeBound:
-	.string "MR. BRINEY: Ahoy!\n"
+	.string "MR. HONORIO: Ahoy!\n"
 	.string "For you, I'll go out to sea anytime!\p"
 	.string "Now, my friend, where are we bound?$"
 
 Route109_Text_BrineyTellMeWhenYouNeedToSail:
-	.string "MR. BRINEY: You just tell me whenever\n"
+	.string "MR. HONORIO: You just tell me whenever\n"
 	.string "you need to set sail again!$"
 
 Route109_Text_ChillAtMyPapasSpot:

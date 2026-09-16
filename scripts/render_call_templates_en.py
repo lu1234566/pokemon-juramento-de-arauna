@@ -279,7 +279,7 @@ THIRD_SLOT = frozenset(FRONTIER_FEAT)
 
 
 def measured(text: str) -> int:
-    """How wide the text gets once every slot holds its worst realistic value."""
+    "\"\"How wide the text gets once every slot holds its worst realistic value.\"\""
     for slot, width in SLOT.items():
         text = text.replace(slot, "x" * width)
     if "{" in text:
@@ -325,7 +325,7 @@ def wrap(paragraph: str) -> list[str]:
 
 
 def compose(paragraphs: tuple[str, ...]) -> tuple[str, ...]:
-    """Paragraphs into .string payloads, with the page and scroll codes."""
+    "\"\"Paragraphs into .string payloads, with the page and scroll codes.\"\""
     payloads: list[str] = []
     pages = [wrap(paragraph) for paragraph in paragraphs]
     for index, lines in enumerate(pages):
@@ -366,7 +366,7 @@ def block_pattern(label: str) -> re.Pattern[str]:
 
 
 def validate_slots() -> None:
-    """A slot the engine never fills prints whatever was left in the buffer."""
+    "\"\"A slot the engine never fills prints whatever was left in the buffer.\"\""
     for family, (count, _) in FAMILIES.items():
         for index in range(count):
             payload = "".join(TARGETS[f"{family}{index + 1}"])

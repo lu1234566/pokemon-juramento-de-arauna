@@ -350,11 +350,11 @@ Route116_EventScript_Johnson::
 
 Route116_Text_ScoundrelMadeOffWithPeeko:
 	.string "Ohhh, what am I to do?\p"
-	.string "We were on our walk, PEEKO and I, when\n"
+	.string "We were on our walk, PEROLA and I, when\n"
 	.string "we were jumped by an odd thug…\p"
 	.string "The scoundrel made off with my\n"
-	.string "darling PEEKO!\p"
-	.string "Wrrrooooooaaaar! PEEKO!$"
+	.string "darling PEROLA!\p"
+	.string "Wrrrooooooaaaar! PEROLA!$"
 
 Route116_Text_WantToDigTunnel:
 	.string "Nnn… Roar!\p"
@@ -386,7 +386,7 @@ Route116_Text_ThankYouTokenOfAppreciation:
 	.string "got back my stolen package and then\l"
 	.string "even graciously delivered it to\l"
 	.string "PORTO DO SAL!\p"
-	.string "CAPT. STERN informed us that the\n"
+	.string "CAPT. NUNES informed us that the\n"
 	.string "package arrived, too!\p"
 	.string "I thank you very, very much!\p"
 	.string "Why, if I were a rain cloud, I would\n"

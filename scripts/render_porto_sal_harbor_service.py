@@ -60,19 +60,19 @@ TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         "Correntes mudam sem aviso. Quem\\n",
         "navega precisa redobrar cuidado.$",
     )),
-    "SlateportCity_Harbor_Text_SubTooSmallForMe": (("CAPT. STERN", "sub's too small"), (
+    "SlateportCity_Harbor_Text_SubTooSmallForMe": (("CAPT. NUNES", "sub's too small"), (
         "HOMEM: Queria acompanhar o\\n",
         "ENGENHEIRO na expedicao.\\p",
         "Mas o submersivel e pequeno.\\n",
         "Comigo dentro, faltaria espaco.$",
     )),
-    "SlateportCity_Harbor_Text_WontBeLongBeforeWeFinishFerry": (("MR. BRINEY", "SHIPYARD", "ferry"), (
+    "SlateportCity_Harbor_Text_WontBeLongBeforeWeFinishFerry": (("MR. HONORIO", "SHIPYARD", "ferry"), (
         "ENGENHEIRO: O VETERANO esta\\n",
         "ajudando no ESTALEIRO.\\p",
         "O BARCO DE LINHA deve ficar\\n",
         "pronto em breve.$",
     )),
-    "SlateportCity_Harbor_Text_FinishedMakingFerry": (("MARE ALTA", "MR. BRINEY"), (
+    "SlateportCity_Harbor_Text_FinishedMakingFerry": (("MARE ALTA", "MR. HONORIO"), (
         "ENGENHEIRO: {PLAYER}, ficou\\n",
         "pronto!\\p",
         "O BARCO DE LINHA finalmente pode\\n",
@@ -103,7 +103,7 @@ TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
     "SlateportCity_Harbor_Text_WhichOneDoYouWant": (("Which one",), (
         "ENGENHEIRO: Qual dos dois quer?$",
     )),
-    "SlateportCity_Harbor_Text_HandedScannerToStern": (("SCANNER", "CAPT. STERN"), (
+    "SlateportCity_Harbor_Text_HandedScannerToStern": (("SCANNER", "CAPT. NUNES"), (
         "{PLAYER} entregou o SCANNER ao\\n",
         "ENGENHEIRO.$",
     )),

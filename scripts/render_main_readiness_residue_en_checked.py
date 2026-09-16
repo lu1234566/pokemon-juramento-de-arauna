@@ -108,7 +108,7 @@ static const struct MenuAction MultichoiceList_WheresRayquaza[] =
 };'''
 
 LANDMARK_REPLACEMENTS = {
-    'static const u8 LandmarkName_MrBrineysCottage[] = _("MR. BRINEY\'S COTTAGE");':
+    'static const u8 LandmarkName_MrBrineysCottage[] = _("MR. HONORIO\'S COTTAGE");':
         'static const u8 LandmarkName_MrBrineysCottage[] = _("SAILOR\'S COTTAGE");',
     'static const u8 LandmarkName_SlateportBeach[] = _("PORTO DO SAL BEACH");':
         'static const u8 LandmarkName_SlateportBeach[] = _("PORTO DO SAL BEACH");',

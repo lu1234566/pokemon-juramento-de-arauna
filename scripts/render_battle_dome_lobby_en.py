@@ -42,7 +42,7 @@ WHOLE = ("BATTLE DOME", "CIRCUIT PASS", "SINGLE BATTLE",
 
 
 def challenge(kind: str) -> tuple[str, ...]:
-    """The two tournaments differ only where the format does."""
+    "\"\"The two tournaments differ only where the format does.\"\""
     return (
         f"The {kind} Tournament is what it sounds like: a knockout of "
         f"{kind}S.",

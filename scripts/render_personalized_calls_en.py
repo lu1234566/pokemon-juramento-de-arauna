@@ -826,7 +826,7 @@ def validate_widths() -> None:
 
 
 def validate_string_vars() -> None:
-    """A block only gets {STR_VAR_2} if match_call.c hands it a second string."""
+    "\"\"A block only gets {STR_VAR_2} if match_call.c hands it a second string.\"\""
     for label, (_, payloads) in TARGETS.items():
         uses = any("{STR_VAR_2}" in payload for payload in payloads)
         allowed = label in WITH_SECOND_VAR

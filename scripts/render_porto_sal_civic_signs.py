@@ -17,7 +17,7 @@ TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         "Teste equipes e estrategias sem\\n",
         "arriscar a sua jornada.$",
     )),
-    "SlateportCity_Text_SternsShipyardWantedSign": (("STERN'S SHIPYARD", "Wanted"), (
+    "SlateportCity_Text_SternsShipyardWantedSign": (("NUNES'S SHIPYARD", "Wanted"), (
         "ESTALEIRO DE PORTO DO SAL\\p",
         "PROCURA-SE: marinheiro veterano\\n",
         "que conheca todas as correntes.$",

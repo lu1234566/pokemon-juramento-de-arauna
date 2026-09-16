@@ -281,7 +281,7 @@ MeteorFalls_1F_1R_Text_ArchieFarewell:
 	.string "just because it happened.$"
 
 MeteorFalls_1F_1R_Text_MeetProfCozmo:
-	.string "I… I'm COZMO… I'm a PROFESSOR…\p"
+	.string "I… I'm SALUSTIO… I'm a PROFESSOR…\p"
 	.string "The REMEMBRANCERS asked me to guide\n"
 	.string "them to RUINAS DA QUEDA…\p"
 	.string "But they tricked me. They even took my\n"
@@ -295,6 +295,7 @@ MeteorFalls_1F_1R_Text_MeetProfCozmo:
 	.string "METEORITE at SERRA DA CINZA?$"
 
 MeteorFalls_1F_1R_Text_WhatsTeamMagmaDoingAtMtChimney:
-	.string "PROF. COZMO: But those REMEMBRANCERS…\p"
+	.string "PROF. SALUSTIO: But those\n"
+	.string "REMEMBRANCERS…\p"
 	.string "What are they going to do with that\n"
 	.string "METEORITE at SERRA DA CINZA?$"

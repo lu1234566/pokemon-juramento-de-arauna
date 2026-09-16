@@ -59,25 +59,23 @@ EverGrandeCity_GlaciasRoom_EventScript_Defeated::
 	end
 
 EverGrandeCity_GlaciasRoom_Text_IntroSpeech:
-	.string "Welcome, my name is GLACIA\n"
-	.string "of the ELITE FOUR.\p"
-	.string "I've traveled from afar to ARAUNA\n"
-	.string "so that I may hone my ice skills.\p"
-	.string "But all I have seen are challenges by\n"
-	.string "weak TRAINERS and their POKéMON.\p"
-	.string "What about you?\p"
-	.string "It would please me to no end if I could\n"
-	.string "go all out against you!$"
+	.string "CLARA: I am the third of\n"
+	.string "Arauna's ELITE FOUR.\p"
+	.string "A document says one thing. A\n"
+	.string "witness remembers another.\p"
+	.string "Evidence has limits. So do we.\p"
+	.string "Show me you can act without\n"
+	.string "pretending either source is\n"
+	.string "complete.$"
 
 EverGrandeCity_GlaciasRoom_Text_Defeat:
-	.string "You and your POKéMON…\n"
-	.string "How hot your spirits burn!\p"
-	.string "The all-consuming heat overwhelms.\p"
-	.string "It's no surprise that my icy skills\n"
-	.string "failed to harm you.$"
+	.string "CLARA: Precise, but not narrow.\n"
+	.string "That distinction matters.$"
 
 EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech:
-	.string "Advance to the next room.\p"
-	.string "And there, confirm the truly fearsome\n"
-	.string "side of the POKéMON LEAGUE.$"
+	.string "CLARA: Proof is strongest when\n"
+	.string "you also state what it cannot\l"
+	.string "prove.\p"
+	.string "TIBURCIO is the last voice\n"
+	.string "ahead.$"
 

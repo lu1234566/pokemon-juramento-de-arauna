@@ -119,89 +119,101 @@ VictoryRoad_1F_EventScript_Katelynn::
 	end
 
 VictoryRoad_1F_Text_WallyNotGoingToLoseAnymore:
-	.string "VAL: I got here at my own pace, {PLAYER}.\n"
-	.string "This time I'm not going to try to be\l"
-	.string "somebody else.\p"
-	.string "I want to find out how far I can go as\n"
-	.string "myself.$"
+	.string "VAL: I reached this place at my\n"
+	.string "own pace, {PLAYER}.\p"
+	.string "I am done trying to become\n"
+	.string "someone else.\p"
+	.string "I want to see how far I can go\n"
+	.string "as myself.$"
 
 VictoryRoad_1F_Text_WallyEntranceDefeat:
-	.string "VAL: I lost... but I didn't back away.\p"
-	.string "That would have broken me once. Now it\n"
-	.string "only shows me how much further I can\l"
-	.string "grow.$"
+	.string "VAL: I lost... but I did not\n"
+	.string "fold.\p"
+	.string "That used to break me. Now it\n"
+	.string "shows me where I can still grow.$"
 
 VictoryRoad_1F_Text_WallyPostEntranceBattle:
-	.string "VAL: Go on ahead, {PLAYER}.\p"
-	.string "I'm going to keep at it too. When we\n"
-	.string "meet again, I want to be stronger still.$"
+	.string "VAL: Keep going,\n"
+	.string "{PLAYER}.\p"
+	.string "I will keep moving too.\p"
+	.string "Next time we meet, I want to be\n"
+	.string "stronger on my own terms.$"
 
 VictoryRoad_1F_Text_WallyIntro:
-	.string "VAL: CHAMPION or not, I still want to\n"
-	.string "measure my stride against yours.\p"
-	.string "Come on, {PLAYER}. No excuses.$"
+	.string "VAL: CHAMPION or not, I still\n"
+	.string "want to measure my pace with\n"
+	.string "yours.\p"
+	.string "Come on, {PLAYER}.\n"
+	.string "No excuses.$"
 
 VictoryRoad_1F_Text_WallyDefeat:
-	.string "VAL: Ha! I've still got road to cover\n"
-	.string "before I catch you.$"
+	.string "VAL: Ha! I still have some road\n"
+	.string "left before I catch you.$"
 
 VictoryRoad_1F_Text_WallyPostBattle:
-	.string "VAL: Every defeat shows me something I\n"
-	.string "wasn't seeing.\p"
-	.string "Next time, I'll get closer.$"
+	.string "VAL: Every loss shows me\n"
+	.string "something I could not see\l"
+	.string "before.\p"
+	.string "Next time, I will be closer.$"
 
 VictoryRoad_1F_Text_EdgarIntro:
-	.string "I've made it this far before, but the\n"
-	.string "end always looks a long way off.$"
+	.string "I have made it this far before.\n"
+	.string "The end still feels distant.$"
 
 VictoryRoad_1F_Text_EdgarDefeat:
-	.string "My dream stops here again...$"
+	.string "My run ends here again...$"
 
 VictoryRoad_1F_Text_EdgarPostBattle:
-	.string "You've come a long way. Don't stop now!\p"
-	.string "Go and take the LEAGUE!$"
+	.string "You have come a long way.\p"
+	.string "Do not stop because I did. Go\n"
+	.string "face the LEAGUE.$"
 
 VictoryRoad_1F_Text_AlbertIntro:
-	.string "I didn't come this far to lose. That\n"
-	.string "option doesn't exist!$"
+	.string "I did not come here planning to\n"
+	.string "lose. Let us see what happens.$"
 
 VictoryRoad_1F_Text_AlbertDefeat:
-	.string "Impossible... I lost?$"
+	.string "So I lost. I have work to do.$"
 
 VictoryRoad_1F_Text_AlbertPostBattle:
-	.string "I lost here...\p"
-	.string "I'm not ready to take the LEAGUE yet.$"
+	.string "This road showed me what my plan\n"
+	.string "did not account for.\p"
+	.string "I will learn before I return.$"
 
 VictoryRoad_1F_Text_HopeIntro:
-	.string "This road seems to have no end. Now I\n"
+	.string "This road feels endless. Now I\n"
 	.string "understand its name.$"
 
 VictoryRoad_1F_Text_HopeDefeat:
-	.string "The way you battle is incredible...$"
+	.string "You kept your footing to the\n"
+	.string "end.$"
 
 VictoryRoad_1F_Text_HopePostBattle:
-	.string "You have the strength to reach the top\n"
-	.string "of the LEAGUE.$"
+	.string "You can reach the LEAGUE.\p"
+	.string "What matters next is what you do\n"
+	.string "with the chance.$"
 
 VictoryRoad_1F_Text_QuincyIntro:
-	.string "What is this road? I'll tell you if you\n"
-	.string "win!$"
+	.string "What makes this an oath road?\n"
+	.string "Beat me and I will answer.$"
 
 VictoryRoad_1F_Text_QuincyDefeat:
-	.string "Right! Very good!$"
+	.string "All right. Fair is fair.$"
 
 VictoryRoad_1F_Text_QuincyPostBattle:
-	.string "This path is the last test for anyone\n"
-	.string "reaching for the top of the LEAGUE.\p"
-	.string "That is why it is called\n"
-	.string "ESTRADA DO JURAMENTO.$"
+	.string "OATH ROAD is not a promise that\n"
+	.string "you will win.\p"
+	.string "It is a promise to answer for\n"
+	.string "the choices that brought you\n"
+	.string "here.$"
 
 VictoryRoad_1F_Text_KatelynnIntro:
-	.string "If you got this far, I don't need to\n"
-	.string "explain a thing. Let's go!$"
+	.string "If you reached this point, you\n"
+	.string "do not need another speech. Go!$"
 
 VictoryRoad_1F_Text_KatelynnDefeat:
-	.string "How embarrassing...$"
+	.string "Hmph. You got through.$"
 
 VictoryRoad_1F_Text_KatelynnPostBattle:
-	.string "Hmph. Go on through. See if I care.$"
+	.string "You may pass.\p"
+	.string "The LEAGUE will ask more of you.$"

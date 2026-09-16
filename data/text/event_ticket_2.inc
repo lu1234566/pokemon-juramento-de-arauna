@@ -8,7 +8,7 @@ EventTicket_Text_OldSeaMapTooFar:
 	.string "I'm afraid I can't help you…$"
 
 EventTicket_Text_BrineyHoldOnASecond:
-	.string "BRINEY: Hold on a second!\p"
+	.string "HONORIO: Hold on a second!\p"
 	.string "What's the idea of turning down\n"
 	.string "someone that I owe so much to?$"
 
@@ -32,7 +32,7 @@ EventTicket_Text_OddTicketGetOnBoard:
 	.string "Get on board, youngster!$"
 
 FarawayIsland_Entrance_Text_SailorReturn:
-	.string "CAPT. BRINEY can be so maddeningly\n"
+	.string "CAPT. HONORIO can be so maddeningly\n"
 	.string "fickle…\p"
 	.string "Do you want to return to\n"
 	.string "BAIA DAS LUZES?$"

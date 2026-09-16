@@ -74,27 +74,26 @@ EverGrandeCity_PokemonCenter_1F_Movement_ScottExit:
 	step_end
 
 EverGrandeCity_PokemonCenter_1F_Text_LeagueAfterVictoryRoad:
-	.string "The POKéMON LEAGUE is only a short\n"
-	.string "distance after the ESTR. JURAMENTO.\p"
-	.string "If you've come this far, what choice\n"
-	.string "do you have but to keep going?$"
+	.string "The ARAUNA LEAGUE waits beyond\n"
+	.string "OATH ROAD.\p"
+	.string "You made it this far. Rest\n"
+	.string "first, then choose your next\n"
+	.string "step.$"
 
 EverGrandeCity_PokemonCenter_1F_Text_BelieveInYourPokemon:
-	.string "The long and harrowing\n"
-	.string "ESTR. JURAMENTO…\p"
-	.string "It's like reliving the path one has\n"
-	.string "traveled in life…\p"
-	.string "Believe in your POKéMON and give it your\n"
-	.string "very best!$"
+	.string "OATH ROAD can feel like every\n"
+	.string "mile of the journey at once.\p"
+	.string "Trust your POKéMON. You do not\n"
+	.string "have to carry it alone.$"
 
 EverGrandeCity_PokemonCenter_1F_Text_ScottHappyForYou:
-	.string "SCOTT: {PLAYER}{KUN}, you've clawed your\n"
-	.string "way up to face the POKéMON LEAGUE!\p"
-	.string "I'm happy for you!\n"
-	.string "You made my cheering worthwhile!\p"
-	.string "{PLAYER}{KUN}, if you were to become\n"
-	.string "the POKéMON LEAGUE CHAMPION…\p"
-	.string "I'll get in touch with you then.\p"
-	.string "Okay, {PLAYER}{KUN}.\n"
-	.string "Go for greatness!$"
+	.string "MR. BENTO: {PLAYER}, you\n"
+	.string "made it.\p"
+	.string "The LEAGUE is just ahead.\p"
+	.string "I will not tell you what this\n"
+	.string "journey has to mean.\p"
+	.string "If you become CHAMPION, we still\n"
+	.string "have work to do afterward.\p"
+	.string "For now, finish what you\n"
+	.string "started.$"
 

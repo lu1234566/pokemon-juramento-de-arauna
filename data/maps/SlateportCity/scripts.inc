@@ -992,10 +992,10 @@ SlateportCity_Text_BushedHikingFromMauville:
 	.string "my BIKE here.$"
 
 SlateportCity_Text_EveryoneCallsHimCaptStern:
-	.string "STERN, the fellow who built the\n"
+	.string "NUNES, the fellow who built the\n"
 	.string "MUSEUM, also happens to be the leader\l"
 	.string "of an undersea exploration team.\p"
-	.string "So, everyone calls him CAPT. STERN.$"
+	.string "So, everyone calls him CAPT. NUNES.$"
 
 SlateportCity_Text_WhatsLongLineOverThere:
 	.string "What is that over there?\n"
@@ -1110,7 +1110,7 @@ SlateportCity_Text_CaptSternBeingInterviewed:
 	.string "I was hoping that it was a famous star\n"
 	.string "so I could get an autograph.\p"
 	.string "But who's that being interviewed?\n"
-	.string "Isn't that CAPT. STERN?$"
+	.string "Isn't that CAPT. NUNES?$"
 
 SlateportCity_Text_InterviewerSoCool:
 	.string "That lady interviewer is so cool\n"
@@ -1119,7 +1119,7 @@ SlateportCity_Text_InterviewerSoCool:
 	.string "an international journalist!$"
 
 SlateportCity_Text_SternSaysDiscoveredSomething:
-	.string "CAPT. STERN says they discovered\n"
+	.string "CAPT. NUNES says they discovered\n"
 	.string "something at the bottom of the sea.\p"
 	.string "I wonder what it is?\n"
 	.string "What could it be?$"
@@ -1138,7 +1138,7 @@ SlateportCity_Text_CaptainsACelebrity:
 	.string "The CAPTAIN's a celebrity!$"
 
 SlateportCity_Text_BigSmileForCamera:
-	.string "TITO: Okay, CAPT. STERN, a big smile\n"
+	.string "TITO: Okay, CAPT. NUNES, a big smile\n"
 	.string "for the camera!$"
 
 SlateportCity_Text_MostInvaluableExperience:
@@ -1146,18 +1146,18 @@ SlateportCity_Text_MostInvaluableExperience:
 	.string "invaluable experience…$"
 
 SlateportCity_Text_SternMoveAheadWithExploration:
-	.string "CAPT. STERN: Yes, indeed. We intend to\n"
+	.string "CAPT. NUNES: Yes, indeed. We intend to\n"
 	.string "move ahead with our exploration.$"
 
 SlateportCity_Text_GabbyWonderfulThanksForInterview:
-	.string "BIA: That's wonderful, CAPT. STERN!\n"
+	.string "BIA: That's wonderful, CAPT. NUNES!\n"
 	.string "Thank you for taking the time from\l"
 	.string "your busy schedule to talk to us.\p"
 	.string "We hope we can interview you again\n"
 	.string "with news of more discoveries!$"
 
 SlateportCity_Text_SternWhewFirstInterview:
-	.string "CAPT. STERN: Whew…\p"
+	.string "CAPT. NUNES: Whew…\p"
 	.string "That was my first time to be filmed for\n"
 	.string "TV. That was nerve-wracking.$"
 
@@ -1178,7 +1178,7 @@ SlateportCity_Text_AquaWillAssumeControlOfSubmarine:
 	.string "given right.$"
 
 SlateportCity_Text_SternWhatWasAllThat:
-	.string "CAPT. STERN: What was that all about?\p"
+	.string "CAPT. NUNES: What was that all about?\p"
 	.string "It sounded like someone using\n"
 	.string "a megaphone…\p"
 	.string "Where did it come from?$"
@@ -1198,18 +1198,18 @@ SlateportCity_Text_BattleTentSign:
 	.string "“Find it! The ultimate POKéMON!”$"
 
 SlateportCity_Text_SternsShipyardWantedSign:
-	.string "STERN'S SHIPYARD\p"
+	.string "NUNES'S SHIPYARD\p"
 	.string "“Wanted: A sailor capable of sailing\n"
 	.string "in all currents.”$"
 
 SlateportCity_Text_SternsShipyardNearsCompletion:
-	.string "STERN'S SHIPYARD\p"
+	.string "NUNES'S SHIPYARD\p"
 	.string "“The ferry MARE ALTA nears\n"
 	.string "completion for serving the ports of\l"
 	.string "PORTO DO SAL and BAIA DAS LUZES.”$"
 
 SlateportCity_Text_SternsShipyardFerryComplete:
-	.string "STERN'S SHIPYARD\p"
+	.string "NUNES'S SHIPYARD\p"
 	.string "“Boarding of the\n"
 	.string "PORTO DO SAL-BAIA DAS LUZES ferry\l"
 	.string "MARE ALTA is handled at the HARBOR.”$"
@@ -1320,18 +1320,18 @@ SlateportCity_Text_MaybeThisTrainer:
 	.string "by the past.$"
 
 SlateportCity_Text_LetsRegisterEachOther:
-	.string "SCOTT: All right! I think you're going\n"
+	.string "BENTO: All right! I think you're going\n"
 	.string "to become a good friend.\p"
 	.string "So, let's register each other in our\n"
 	.string "POKéNAVS.\p"
 	.string "… … … … … …$"
 
 SlateportCity_Text_RegisteredScott:
-	.string "Registered this SCOTT person\n"
+	.string "Registered this BENTO person\n"
 	.string "in the POKéNAV.$"
 
 SlateportCity_Text_KeepEyeOnTrainersBeSeeingYou:
-	.string "SCOTT: What I'd like to do is tag along\n"
+	.string "BENTO: What I'd like to do is tag along\n"
 	.string "with you, but I do want to keep an eye\l"
 	.string "on the talents of other people, too.\p"
 	.string "So, I'll be off to roam other towns\n"
@@ -1339,7 +1339,7 @@ SlateportCity_Text_KeepEyeOnTrainersBeSeeingYou:
 	.string "Be seeing you, {PLAYER}{KUN}!$"
 
 SlateportCity_Text_TakingBattleTentChallenge:
-	.string "SCOTT: Oh, hey!\n"
+	.string "BENTO: Oh, hey!\n"
 	.string "If it isn't {PLAYER}{KUN}!\p"
 	.string "{PLAYER}{KUN}, let me guess--you're going\n"
 	.string "to take the BATTLE TENT challenge?\p"

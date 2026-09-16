@@ -40,7 +40,7 @@ WHOLE = ("BATTLE PALACE", "BATTLE HALL", "BATTLE HALLS", "CIRCUIT PASS",
 
 
 def challenge(kind: str, halls: str) -> tuple[str, ...]:
-    """The two hall explanations differ only where the format does."""
+    "\"\"The two hall explanations differ only where the format does.\"\""
     return (
         f"The BATTLE PALACE holds several auditoriums for {kind}S. They are "
         f"called the {halls}.",

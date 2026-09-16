@@ -579,7 +579,7 @@ WIN_SPEECH_THANKS: tuple[tuple[str, ...], ...] = (
 
 
 def questions(voice: dict[str, str]) -> dict[str, tuple[str, ...]]:
-    """The fourteen questions every apprentice asks, in their own words."""
+    "\"\"The fourteen questions every apprentice asks, in their own words.\"\""
     return {
         "RejectTeaching": (voice["plead"],),
         "WhichLevelMode": (

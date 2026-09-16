@@ -59,7 +59,7 @@ def welcome(rooms: str) -> tuple[str, ...]:
 
 
 def refusal(count: str, capped: bool) -> tuple[str, ...]:
-    """One refusal, crossed eight ways by count and level cap."""
+    "\"\"One refusal, crossed eight ways by count and level cap.\"\""
     requirement = (
         f"You need {count} different POKéMON, all of them Level 50 or lower."
         if capped else

@@ -23,8 +23,10 @@ Two adjustments, both visible in the CSV rather than buried:
     other, and which one a line means depends on who is speaking -- that is
     reading, not a table.
 
-People the project never named are left alone and reported: RYDEL, LANETTE,
-PROF. COZMO, CAPT. STERN, MR. BRINEY and the rest have no Arauna name to use.
+People the project never named are left alone and reported. That list is empty
+today: build_remaining_names.py took the last ten -- RYDEL, SCOTT, CAPT. STERN,
+MR. BRINEY, PEEKO, MR. STONE, PROF. COZMO, LANETTE, WINSTRATE and BILL -- and
+the Elite Four went with the League renderer.
 
 Lines get longer, so run rewrap_text.py afterwards.
 
@@ -58,9 +60,10 @@ PROSE = {"CEC": "CECILIA", "CAET": "CAETANO"}
 SKIP = {"GRUNT"}
 
 # Named in the dialogue, never given an Arauna name. Reported, not renamed.
-UNNAMED = ["RYDEL", "SCOTT", "CAPT. STERN", "MR. BRINEY", "PEEKO", "MR. STONE",
-           "LANETTE", "COZMO", "WINSTRATE", "BILL", "SIDNEY", "PHOEBE",
-           "GLACIA", "DRAKE"]
+# Empty now: the Elite Four went with render_arauna_league_en_checked.py, and
+# the other ten with build_remaining_names.py. The list stays because it is the
+# report that would catch a new Hoenn name arriving with a future package.
+UNNAMED: list[str] = []
 
 ENTRY = re.compile(r'\[(TRAINER_\w+)\] =\s*\{(.*?)\n    \},', re.S)
 NAME = re.compile(r'\.trainerName = _\("([^"]*)"\)')

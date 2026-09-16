@@ -278,7 +278,7 @@ SlateportCity_OceanicMuseum_2F_Text_WellTakeThoseParts:
 	.string "We'll take those parts!$"
 
 SlateportCity_OceanicMuseum_2F_Text_SternWhoAreYou:
-	.string "CAPT. STERN: Wh-what?\n"
+	.string "CAPT. NUNES: Wh-what?\n"
 	.string "Who are you people?$"
 
 SlateportCity_OceanicMuseum_2F_Text_WereTeamAqua:
@@ -332,7 +332,7 @@ SlateportCity_OceanicMuseum_2F_Text_SternThankYouForSavingUs:
 	.string "given right.$"
 
 SlateportCity_OceanicMuseum_2F_Text_SternIveGotToGo:
-	.string "CAPT. STERN: Whoops!\n"
+	.string "CAPT. NUNES: Whoops!\n"
 	.string "There's no time to lose!\p"
 	.string "We have to set out on our ocean-floor\n"
 	.string "expedition really soon.\p"
@@ -399,7 +399,7 @@ SlateportCity_OceanicMuseum_2F_Text_SurfaceSeawaterDisplay:
 SlateportCity_OceanicMuseum_2F_Text_SSTidalReplica:
 	.string "“THE FERRY MARE ALTA\p"
 	.string "“A scale replica of the ship under\n"
-	.string "construction at STERN'S SHIPYARD.”$"
+	.string "construction at NUNES'S SHIPYARD.”$"
 
 SlateportCity_OceanicMuseum_2F_Text_SubmarineReplica:
 	.string "HORIZON: The sensors pick up unstable\n"

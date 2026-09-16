@@ -43,7 +43,7 @@ WHOLE = ("UNION ROOM", "DIRECT CORNER", "RECORD CORNER", "BERRY CRUSH",
 
 
 def tour(first_time: bool) -> tuple[str, ...]:
-    """The two rooms upstairs, told once. Only the framing differs."""
+    "\"\"The two rooms upstairs, told once. Only the framing differs.\"\""
     body = (
         "There are two rooms on this floor.",
         "The one on the left is the UNION ROOM.",

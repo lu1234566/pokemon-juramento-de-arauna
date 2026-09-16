@@ -413,7 +413,7 @@ def validate_slots(source: str) -> None:
 
 
 def lobby(name: str) -> str:
-    """Everything the matching frontier lobby says, flattened."""
+    "\"\"Everything the matching frontier lobby says, flattened.\"\""
     spec = importlib.util.spec_from_file_location(
         name, ROOT / "scripts" / f"{name}.py")
     module = importlib.util.module_from_spec(spec)

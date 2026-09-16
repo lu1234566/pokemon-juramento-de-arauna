@@ -24,7 +24,7 @@ base.TARGETS_1F.update({
         ),
     ),
     "SlateportCity_SternsShipyard_1F_Text_CouldYouFindStern": (
-        ("CAPT. STERN",),
+        ("CAPT. NUNES",),
         (
             "MASTER: The HARBOR ENGINEER\\n",
             "should be at the MUSEUM.\\p",
@@ -42,7 +42,7 @@ base.TARGETS_1F.update({
         ),
     ),
     "SlateportCity_SternsShipyard_1F_Text_BrineyJoinedUs": (
-        ("MR. BRINEY", "veteran sailor"),
+        ("MR. HONORIO", "veteran sailor"),
         (
             "MASTER: A VETERAN SAILOR came\\n",
             "to help us.\\p",
@@ -60,7 +60,7 @@ base.TARGETS_1F.update({
         ),
     ),
     "SlateportCity_SternsShipyard_1F_Text_DecidedToHelpDock": (
-        ("MR. BRINEY", "sea dog's"),
+        ("MR. HONORIO", "sea dog's"),
         (
             "VETERAN: {PLAYER}! Been a while!\\p",
             "I decided to help the shipyard.\\p",

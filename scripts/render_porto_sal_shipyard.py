@@ -25,7 +25,7 @@ TARGETS_1F: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         "Eu cuido de casco e estrutura.\\n",
         "Procure o ENGENHEIRO no MUSEU.$",
     )),
-    "SlateportCity_SternsShipyard_1F_Text_CouldYouFindStern": (("CAPT. STERN",), (
+    "SlateportCity_SternsShipyard_1F_Text_CouldYouFindStern": (("CAPT. NUNES",), (
         "MESTRE: O ENGENHEIRO DO PORTO\\n",
         "deve estar no MUSEU.\\p",
         "Entregue as PECAS OCEANICAS a\\n",
@@ -37,7 +37,7 @@ TARGETS_1F: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         "Preciso de marinheiro veterano\\n",
         "que conheca estas correntes.$",
     )),
-    "SlateportCity_SternsShipyard_1F_Text_BrineyJoinedUs": (("MR. BRINEY", "veteran sailor"), (
+    "SlateportCity_SternsShipyard_1F_Text_BrineyJoinedUs": (("MR. HONORIO", "veteran sailor"), (
         "MESTRE: Um MARINHEIRO VETERANO\\n",
         "veio nos ajudar.\\p",
         "Com a experiencia dele, o BARCO\\n",
@@ -50,7 +50,7 @@ TARGETS_1F: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         "Mas todo barco ensina como fazer\\n",
         "o proximo ainda melhor.$",
     )),
-    "SlateportCity_SternsShipyard_1F_Text_DecidedToHelpDock": (("MR. BRINEY", "sea dog's"), (
+    "SlateportCity_SternsShipyard_1F_Text_DecidedToHelpDock": (("MR. HONORIO", "sea dog's"), (
         "VETERANO: {PLAYER}! Faz tempo!\\p",
         "Resolvi ajudar este estaleiro.\\p",
         "O MESTRE entende de projeto.\\n",

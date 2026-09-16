@@ -24,24 +24,24 @@ TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         "Voce acabou de entrar no meu\\n",
         "caderno.$",
     )),
-    "SlateportCity_Text_LetsRegisterEachOther": (("SCOTT:", "POKéNAVS"), (
+    "SlateportCity_Text_LetsRegisterEachOther": (("BENTO:", "POKéNAVS"), (
         "SEU BENTO: Vamos registrar um\\n",
         "ao outro no POKéNAV.\\p",
         "Assim eu aviso quando encontrar\\n",
         "uma pista que valha a viagem.$",
     )),
-    "SlateportCity_Text_RegisteredScott": (("SCOTT", "POKéNAV"), (
+    "SlateportCity_Text_RegisteredScott": (("BENTO", "POKéNAV"), (
         "SEU BENTO foi registrado no\\n",
         "POKéNAV.$",
     )),
-    "SlateportCity_Text_KeepEyeOnTrainersBeSeeingYou": (("SCOTT:", "other towns"), (
+    "SlateportCity_Text_KeepEyeOnTrainersBeSeeingYou": (("BENTO:", "other towns"), (
         "SEU BENTO: Eu ficaria por aqui,\\n",
         "mas ha muito caminho para ver.\\p",
         "Vou circular por outras cidades\\n",
         "e anotar o que encontrar.\\p",
         "A gente se ve, {PLAYER}.$",
     )),
-    "SlateportCity_Text_TakingBattleTentChallenge": (("SCOTT:", "BATTLE TENT"), (
+    "SlateportCity_Text_TakingBattleTentChallenge": (("BENTO:", "BATTLE TENT"), (
         "SEU BENTO: {PLAYER}!\\p",
         "Vai testar a equipe na TENDA DE\\n",
         "BATALHA? Boa escolha.\\p",

@@ -198,7 +198,7 @@ def load_lexicon() -> set[str]:
 
 
 def name_pattern() -> re.Pattern[str]:
-    """Every proper name of the setting, longest first so the longest wins."""
+    "\"\"Every proper name of the setting, longest first so the longest wins.\"\""
     names = set(EXTRA_NAMES)
     import unicodedata
     for rel, pattern in NAME_SOURCES:

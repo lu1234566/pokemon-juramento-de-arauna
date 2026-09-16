@@ -17,7 +17,7 @@ struct LandmarkList
 
 static const u8 LandmarkName_FlowerShop[] = _("FLOWER SHOP");
 static const u8 LandmarkName_PetalburgWoods[] = _("MATA DA ESPERA");
-static const u8 LandmarkName_MrBrineysCottage[] = _("MR. BRINEY'S COTTAGE");
+static const u8 LandmarkName_MrBrineysCottage[] = _("MR. HONORIO'S COTTAGE");
 static const u8 LandmarkName_AbandonedShip[] = _("NAVIO PERDIDO");
 static const u8 LandmarkName_SeashoreHouse[] = _("SEASHORE HOUSE");
 static const u8 LandmarkName_SlateportBeach[] = _("PORTO DO SAL BEACH");
@@ -26,7 +26,7 @@ static const u8 LandmarkName_NewMauville[] = _("USINA VELHA");
 static const u8 LandmarkName_TrickHouse[] = _("TRICK HOUSE");
 static const u8 LandmarkName_OldLadysRestShop[] = _("OLD LADY'S REST STOP");
 static const u8 LandmarkName_Desert[] = _("DESERT");
-static const u8 LandmarkName_WinstrateFamily[] = _("THE WINSTRATE FAMILY");
+static const u8 LandmarkName_WinstrateFamily[] = _("THE QUEIROZ FAMILY");
 static const u8 LandmarkName_CableCar[] = _("CABLE CAR");
 static const u8 LandmarkName_GlassWorkshop[] = _("GLASS WORKSHOP");
 static const u8 LandmarkName_WeatherInstitute[] = _("WATER INSTITUTE");
@@ -40,7 +40,7 @@ static const u8 LandmarkName_ShoalCave[] = _("GRUTA DA MARE");
 static const u8 LandmarkName_SeafloorCavern[] = _("CAVERNAS M'BOI");
 static const u8 LandmarkName_GraniteCave[] = _("GRUTA DAS VOZES");
 static const u8 LandmarkName_OceanCurrent[] = _("OCEAN CURRENT");
-static const u8 LandmarkName_LanettesHouse[] = _("LANETTE'S HOUSE");
+static const u8 LandmarkName_LanettesHouse[] = _("LENITA'S HOUSE");
 static const u8 LandmarkName_FieryPath[] = _("TRILHA DE BRASA");
 static const u8 LandmarkName_JaggedPass[] = _("PASSO CORTADO");
 static const u8 LandmarkName_SkyPillar[] = _("TORRE JURAMENTO");

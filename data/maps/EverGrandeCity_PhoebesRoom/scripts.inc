@@ -59,26 +59,25 @@ EverGrandeCity_PhoebesRoom_EventScript_Defeated::
 	end
 
 EverGrandeCity_PhoebesRoom_Text_IntroSpeech:
-	.string "Ahahaha!\p"
-	.string "I'm PHOEBE of the ELITE FOUR. I did my\n"
-	.string "training on MEMORIAL DOS NOMES.\p"
-	.string "While I trained, I gained the ability to\n"
-	.string "commune with GHOST-type POKéMON.\p"
-	.string "Yes, the bond I developed with POKéMON\n"
-	.string "is extremely tight.\p"
-	.string "So, come on, just try and see if you can\n"
-	.string "even inflict damage on my POKéMON!$"
+	.string "ROSA: I am the second of\n"
+	.string "Arauna's ELITE FOUR.\p"
+	.string "Two people can remember the same\n"
+	.string "moment and tell it differently.\p"
+	.string "Your task is not to steal either\n"
+	.string "voice and call it the only\l"
+	.string "truth.\p"
+	.string "Battle me. Keep the source\n"
+	.string "clear.$"
 
 EverGrandeCity_PhoebesRoom_Text_Defeat:
-	.string "Oh, darn.\n"
-	.string "I've gone and lost.$"
+	.string "ROSA: You listened without\n"
+	.string "turning my voice into your own.$"
 
 EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech:
-	.string "There's a definite bond between you\n"
-	.string "and your POKéMON, too.\p"
-	.string "I didn't recognize it, so it's only\n"
-	.string "natural that I lost.\p"
-	.string "Yup, I'd like to see how far your bond\n"
-	.string "will carry you.\p"
-	.string "Go ahead, move on to the next room.$"
+	.string "ROSA: Attribution is part of\n"
+	.string "memory.\p"
+	.string "Carry a story, but carry the\n"
+	.string "name of the person who gave it\l"
+	.string "to you.\p"
+	.string "CLARA waits in the next room.$"
 

@@ -16,7 +16,7 @@ PLACEHOLDER_RE = re.compile(r"\{[^}]+\}")
 SOURCE_SIGNATURES = (
     "HORIZONTE: Nao somos soldados",
     "Hehehe, hold it",
-    "CAPT. STERN",
+    "CAPT. NUNES",
     "OTACILIO diz que",
     "projeto de M'BOI",
     "sensores detectam",
