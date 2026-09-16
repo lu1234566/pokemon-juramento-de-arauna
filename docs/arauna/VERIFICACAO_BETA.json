@@ -1,0 +1,14 @@
+{
+  "resumo": "Nada aqui foi so compilado. Cada linha abaixo foi provada com a ROM rodando num emulador, lendo a memoria do jogo -- equipe, niveis, IVs, golpes, HP turno a turno -- e nao olhando o codigo-fonte.",
+  "itens": [
+    {"nome": "Varredura de mapas", "resultado": "403 mapas visitados com o jogador andando 5s em cada um, checando a cada segundo se o ponteiro do save saiu da EWRAM, se o id do mapa deixou de existir, se a tela congelou com input aceito ou se o jogo voltou para a tela de copyright. **Zero achados.**"},
+    {"nome": "Times dos tres chefes novos", "resultado": "Dalva, Ademar e Olivia lidos de gEnemyParty dentro da batalha: as cinco vagas de cada um chegam com especie, nivel, item, os seis IVs e os quatro golpes customizados exatos."},
+    {"nome": "Dificuldade medida", "resultado": "Seis partidas completas. Contra a Dalva, um inicial de nv15 com o golpe certo derruba 4 de 5. Contra o Ademar, 2 de 5. Contra a Olivia, um Ground derruba 2 e trava na dupla Water/Electric."},
+    {"nome": "Learnsets dos 386", "resultado": "Lidos de volta da ROM linkada, decodificando gLevelUpLearnsets. Criaturas criadas em quatro niveis diferentes recebem exatamente os golpes que a tabela promete."},
+    {"nome": "Portugues residual", "resultado": "37418 strings visiveis varridas contra um lexico portugues. Nenhuma passa."},
+    {"nome": "Largura de texto", "resultado": "575 arquivos de script medidos como o motor mede, a partir de charmap.txt e gFontNormalLatinGlyphWidths. Nada acima dos 208px da caixa de fala."},
+    {"nome": "Disponibilidade", "resultado": "293 criaturas capturaveis na natureza, 366 de 386 obteniveis contando evolucao e presentes."},
+    {"nome": "ROM limpa", "resultado": "Nenhum simbolo do harness de teste sobrevive na ROM final; a arvore fica limpa depois de cada prova."}
+  ],
+  "ressalvas": "Ninguem jogou esta beta do inicio ao fim. A varredura prova que os mapas carregam e que da para andar neles, e as partidas provam que os chefes funcionam -- mas nenhum teste automatico seguiu a cadeia de flags da historia da Vila do Amanhecer ate a Campea. Esse e o teste que a beta publica existe para fazer. Os seis mapas UnusedContestHall* ficaram de fora da varredura: sao conteudo morto do Emerald, inalcancavel em jogo, e o harness trava ao entrar neles justamente por isso."
+}

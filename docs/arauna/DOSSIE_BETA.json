@@ -1,0 +1,8187 @@
+{
+ "criaturas": {
+  "total": 386,
+  "na_natureza": 293,
+  "mapas_com_encontro": 116,
+  "learnsets": 412,
+  "entradas_de_golpe": 5260
+ },
+ "evolucoes": {
+  "total": 81,
+  "metodos": [
+   "EVO_FRIENDSHIP",
+   "EVO_FRIENDSHIP_NIGHT",
+   "EVO_ITEM",
+   "EVO_LEVEL"
+  ]
+ },
+ "dex": [
+  {
+   "dex": 1,
+   "nome": "Caramelo",
+   "tipos": [
+    "Fire"
+   ],
+   "bst": 325,
+   "selvagem": true,
+   "golpes_por_nivel": 10
+  },
+  {
+   "dex": 2,
+   "nome": "Caramelão",
+   "tipos": [
+    "Fire"
+   ],
+   "bst": 425,
+   "selvagem": false,
+   "golpes_por_nivel": 12
+  },
+  {
+   "dex": 3,
+   "nome": "Draguará",
+   "tipos": [
+    "Fire",
+    "Dragon"
+   ],
+   "bst": 595,
+   "selvagem": false,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 4,
+   "nome": "Querô",
+   "tipos": [
+    "Water"
+   ],
+   "bst": 340,
+   "selvagem": true,
+   "golpes_por_nivel": 10
+  },
+  {
+   "dex": 5,
+   "nome": "Queribela",
+   "tipos": [
+    "Water",
+    "Bug"
+   ],
+   "bst": 434,
+   "selvagem": false,
+   "golpes_por_nivel": 12
+  },
+  {
+   "dex": 6,
+   "nome": "Terolibra",
+   "tipos": [
+    "Water",
+    "Bug"
+   ],
+   "bst": 595,
+   "selvagem": false,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 7,
+   "nome": "Pimpau",
+   "tipos": [
+    "Grass"
+   ],
+   "bst": 332,
+   "selvagem": true,
+   "golpes_por_nivel": 10
+  },
+  {
+   "dex": 8,
+   "nome": "Bicopau",
+   "tipos": [
+    "Grass"
+   ],
+   "bst": 432,
+   "selvagem": false,
+   "golpes_por_nivel": 12
+  },
+  {
+   "dex": 9,
+   "nome": "Petropico",
+   "tipos": [
+    "Grass",
+    "Rock"
+   ],
+   "bst": 574,
+   "selvagem": false,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 10,
+   "nome": "Formilim",
+   "tipos": [
+    "Bug"
+   ],
+   "bst": 248,
+   "selvagem": true,
+   "golpes_por_nivel": 10
+  },
+  {
+   "dex": 11,
+   "nome": "Saúvarco",
+   "tipos": [
+    "Bug",
+    "Ground"
+   ],
+   "bst": 473,
+   "selvagem": true,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 12,
+   "nome": "Capivim",
+   "tipos": [
+    "Water",
+    "Normal"
+   ],
+   "bst": 360,
+   "selvagem": true,
+   "golpes_por_nivel": 12
+  },
+  {
+   "dex": 13,
+   "nome": "Tucanhão",
+   "tipos": [
+    "Flying",
+    "Grass"
+   ],
+   "bst": 437,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 14,
+   "nome": "Sagüim",
+   "tipos": [
+    "Normal"
+   ],
+   "bst": 308,
+   "selvagem": true,
+   "golpes_por_nivel": 9
+  },
+  {
+   "dex": 15,
+   "nome": "Micuiras",
+   "tipos": [
+    "Normal",
+    "Psychic"
+   ],
+   "bst": 468,
+   "selvagem": false,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 16,
+   "nome": "Boitatá",
+   "tipos": [
+    "Fire",
+    "Ghost"
+   ],
+   "bst": 514,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 17,
+   "nome": "Curupim",
+   "tipos": [
+    "Grass",
+    "Fairy"
+   ],
+   "bst": 445,
+   "selvagem": true,
+   "golpes_por_nivel": 12
+  },
+  {
+   "dex": 18,
+   "nome": "Curupira",
+   "tipos": [
+    "Grass",
+    "Fairy"
+   ],
+   "bst": 603,
+   "selvagem": false,
+   "golpes_por_nivel": 18
+  },
+  {
+   "dex": 19,
+   "nome": "Iaraço",
+   "tipos": [
+    "Water",
+    "Fairy"
+   ],
+   "bst": 548,
+   "selvagem": true,
+   "golpes_por_nivel": 17
+  },
+  {
+   "dex": 20,
+   "nome": "Sacizinho",
+   "tipos": [
+    "Dark",
+    "Flying"
+   ],
+   "bst": 461,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 21,
+   "nome": "Cactula",
+   "tipos": [
+    "Grass",
+    "Poison"
+   ],
+   "bst": 382,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 22,
+   "nome": "Muriçoco",
+   "tipos": [
+    "Bug",
+    "Poison"
+   ],
+   "bst": 287,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 23,
+   "nome": "Onçaléu",
+   "tipos": [
+    "Dark"
+   ],
+   "bst": 524,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 24,
+   "nome": "Tamanduá",
+   "tipos": [
+    "Ground",
+    "Steel"
+   ],
+   "bst": 470,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 25,
+   "nome": "Botim",
+   "tipos": [
+    "Water"
+   ],
+   "bst": 283,
+   "selvagem": true,
+   "golpes_por_nivel": 10
+  },
+  {
+   "dex": 26,
+   "nome": "Botão",
+   "tipos": [
+    "Water",
+    "Psychic"
+   ],
+   "bst": 404,
+   "selvagem": false,
+   "golpes_por_nivel": 12
+  },
+  {
+   "dex": 27,
+   "nome": "Botogaláu",
+   "tipos": [
+    "Water",
+    "Psychic"
+   ],
+   "bst": 555,
+   "selvagem": false,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 28,
+   "nome": "Tatuim",
+   "tipos": [
+    "Ground"
+   ],
+   "bst": 283,
+   "selvagem": true,
+   "golpes_por_nivel": 10
+  },
+  {
+   "dex": 29,
+   "nome": "Tatubola",
+   "tipos": [
+    "Ground",
+    "Steel"
+   ],
+   "bst": 404,
+   "selvagem": true,
+   "golpes_por_nivel": 12
+  },
+  {
+   "dex": 30,
+   "nome": "Tatuçu",
+   "tipos": [
+    "Ground",
+    "Steel"
+   ],
+   "bst": 555,
+   "selvagem": true,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 31,
+   "nome": "Ararinha",
+   "tipos": [
+    "Flying"
+   ],
+   "bst": 284,
+   "selvagem": true,
+   "golpes_por_nivel": 10
+  },
+  {
+   "dex": 32,
+   "nome": "Arará",
+   "tipos": [
+    "Flying",
+    "Fire"
+   ],
+   "bst": 405,
+   "selvagem": false,
+   "golpes_por_nivel": 12
+  },
+  {
+   "dex": 33,
+   "nome": "Araracanga",
+   "tipos": [
+    "Flying",
+    "Fire"
+   ],
+   "bst": 550,
+   "selvagem": false,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 34,
+   "nome": "Jacarim",
+   "tipos": [
+    "Water"
+   ],
+   "bst": 284,
+   "selvagem": true,
+   "golpes_por_nivel": 10
+  },
+  {
+   "dex": 35,
+   "nome": "Jacarão",
+   "tipos": [
+    "Water",
+    "Dark"
+   ],
+   "bst": 405,
+   "selvagem": true,
+   "golpes_por_nivel": 12
+  },
+  {
+   "dex": 36,
+   "nome": "Jacarodon",
+   "tipos": [
+    "Water",
+    "Dragon"
+   ],
+   "bst": 551,
+   "selvagem": false,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 37,
+   "nome": "Preguicim",
+   "tipos": [
+    "Grass"
+   ],
+   "bst": 285,
+   "selvagem": true,
+   "golpes_por_nivel": 10
+  },
+  {
+   "dex": 38,
+   "nome": "Preguicão",
+   "tipos": [
+    "Grass",
+    "Psychic"
+   ],
+   "bst": 406,
+   "selvagem": true,
+   "golpes_por_nivel": 12
+  },
+  {
+   "dex": 39,
+   "nome": "Bicho-Preguiça",
+   "tipos": [
+    "Grass",
+    "Psychic"
+   ],
+   "bst": 551,
+   "selvagem": false,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 40,
+   "nome": "Papaguim",
+   "tipos": [
+    "Flying"
+   ],
+   "bst": 285,
+   "selvagem": true,
+   "golpes_por_nivel": 10
+  },
+  {
+   "dex": 41,
+   "nome": "Papagaio",
+   "tipos": [
+    "Flying",
+    "Psychic"
+   ],
+   "bst": 406,
+   "selvagem": true,
+   "golpes_por_nivel": 12
+  },
+  {
+   "dex": 42,
+   "nome": "Papagaião",
+   "tipos": [
+    "Flying",
+    "Psychic"
+   ],
+   "bst": 552,
+   "selvagem": false,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 43,
+   "nome": "Antinha",
+   "tipos": [
+    "Normal"
+   ],
+   "bst": 286,
+   "selvagem": true,
+   "golpes_por_nivel": 9
+  },
+  {
+   "dex": 44,
+   "nome": "Anta",
+   "tipos": [
+    "Normal",
+    "Water"
+   ],
+   "bst": 550,
+   "selvagem": false,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 45,
+   "nome": "Antaraú",
+   "tipos": [
+    "Normal",
+    "Water"
+   ],
+   "bst": 446,
+   "selvagem": true,
+   "golpes_por_nivel": 12
+  },
+  {
+   "dex": 46,
+   "nome": "Sucurim",
+   "tipos": [
+    "Water",
+    "Poison"
+   ],
+   "bst": 286,
+   "selvagem": true,
+   "golpes_por_nivel": 10
+  },
+  {
+   "dex": 47,
+   "nome": "Sucuri",
+   "tipos": [
+    "Water",
+    "Poison"
+   ],
+   "bst": 480,
+   "selvagem": false,
+   "golpes_por_nivel": 12
+  },
+  {
+   "dex": 48,
+   "nome": "Boiuna",
+   "tipos": [
+    "Water",
+    "Dragon"
+   ],
+   "bst": 600,
+   "selvagem": false,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 49,
+   "nome": "Borbolim",
+   "tipos": [
+    "Bug"
+   ],
+   "bst": 287,
+   "selvagem": true,
+   "golpes_por_nivel": 10
+  },
+  {
+   "dex": 50,
+   "nome": "Casulete",
+   "tipos": [
+    "Bug"
+   ],
+   "bst": 283,
+   "selvagem": false,
+   "golpes_por_nivel": 12
+  },
+  {
+   "dex": 51,
+   "nome": "Morphália",
+   "tipos": [
+    "Bug",
+    "Fairy"
+   ],
+   "bst": 553,
+   "selvagem": false,
+   "golpes_por_nivel": 18
+  },
+  {
+   "dex": 52,
+   "nome": "Guaracim",
+   "tipos": [
+    "Fire"
+   ],
+   "bst": 287,
+   "selvagem": true,
+   "golpes_por_nivel": 10
+  },
+  {
+   "dex": 53,
+   "nome": "Guará",
+   "tipos": [
+    "Fire",
+    "Normal"
+   ],
+   "bst": 552,
+   "selvagem": false,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 54,
+   "nome": "Guaraflama",
+   "tipos": [
+    "Fire",
+    "Ghost"
+   ],
+   "bst": 448,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 55,
+   "nome": "Peixim",
+   "tipos": [
+    "Water"
+   ],
+   "bst": 282,
+   "selvagem": true,
+   "golpes_por_nivel": 10
+  },
+  {
+   "dex": 56,
+   "nome": "Peixeboi",
+   "tipos": [
+    "Water"
+   ],
+   "bst": 552,
+   "selvagem": false,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 57,
+   "nome": "Mãe-d'Água",
+   "tipos": [
+    "Water",
+    "Fairy"
+   ],
+   "bst": 448,
+   "selvagem": true,
+   "golpes_por_nivel": 17
+  },
+  {
+   "dex": 58,
+   "nome": "Mandim",
+   "tipos": [
+    "Water"
+   ],
+   "bst": 283,
+   "selvagem": true,
+   "golpes_por_nivel": 10
+  },
+  {
+   "dex": 59,
+   "nome": "Mandí",
+   "tipos": [
+    "Water",
+    "Poison"
+   ],
+   "bst": 404,
+   "selvagem": true,
+   "golpes_por_nivel": 12
+  },
+  {
+   "dex": 60,
+   "nome": "Mandubé",
+   "tipos": [
+    "Water",
+    "Dark"
+   ],
+   "bst": 555,
+   "selvagem": false,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 61,
+   "nome": "Preguim",
+   "tipos": [
+    "Normal"
+   ],
+   "bst": 283,
+   "selvagem": true,
+   "golpes_por_nivel": 9
+  },
+  {
+   "dex": 62,
+   "nome": "Prego",
+   "tipos": [
+    "Fighting",
+    "Normal"
+   ],
+   "bst": 404,
+   "selvagem": false,
+   "golpes_por_nivel": 12
+  },
+  {
+   "dex": 63,
+   "nome": "Pregarcanjo",
+   "tipos": [
+    "Fighting",
+    "Psychic"
+   ],
+   "bst": 555,
+   "selvagem": false,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 64,
+   "nome": "Aranin",
+   "tipos": [
+    "Bug"
+   ],
+   "bst": 284,
+   "selvagem": true,
+   "golpes_por_nivel": 10
+  },
+  {
+   "dex": 65,
+   "nome": "Caraninha",
+   "tipos": [
+    "Bug",
+    "Poison"
+   ],
+   "bst": 405,
+   "selvagem": true,
+   "golpes_por_nivel": 12
+  },
+  {
+   "dex": 66,
+   "nome": "Caranga",
+   "tipos": [
+    "Bug",
+    "Poison"
+   ],
+   "bst": 550,
+   "selvagem": false,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 67,
+   "nome": "Gatim",
+   "tipos": [
+    "Normal"
+   ],
+   "bst": 284,
+   "selvagem": true,
+   "golpes_por_nivel": 9
+  },
+  {
+   "dex": 68,
+   "nome": "Gato-do-mato",
+   "tipos": [
+    "Normal",
+    "Dark"
+   ],
+   "bst": 554,
+   "selvagem": false,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 69,
+   "nome": "Jaguatirica",
+   "tipos": [
+    "Dark",
+    "Normal"
+   ],
+   "bst": 445,
+   "selvagem": true,
+   "golpes_por_nivel": 12
+  },
+  {
+   "dex": 70,
+   "nome": "Cutim",
+   "tipos": [
+    "Normal"
+   ],
+   "bst": 285,
+   "selvagem": true,
+   "golpes_por_nivel": 9
+  },
+  {
+   "dex": 71,
+   "nome": "Cutia",
+   "tipos": [
+    "Normal"
+   ],
+   "bst": 555,
+   "selvagem": false,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 72,
+   "nome": "Paca",
+   "tipos": [
+    "Normal",
+    "Dark"
+   ],
+   "bst": 445,
+   "selvagem": true,
+   "golpes_por_nivel": 12
+  },
+  {
+   "dex": 73,
+   "nome": "Formigão",
+   "tipos": [
+    "Bug",
+    "Fighting"
+   ],
+   "bst": 447,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 74,
+   "nome": "Marimbondo",
+   "tipos": [
+    "Bug",
+    "Poison"
+   ],
+   "bst": 449,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 75,
+   "nome": "Abelhinha",
+   "tipos": [
+    "Bug",
+    "Flying"
+   ],
+   "bst": 446,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 76,
+   "nome": "Quatim",
+   "tipos": [
+    "Normal"
+   ],
+   "bst": 286,
+   "selvagem": true,
+   "golpes_por_nivel": 9
+  },
+  {
+   "dex": 77,
+   "nome": "Quati",
+   "tipos": [
+    "Normal",
+    "Dark"
+   ],
+   "bst": 550,
+   "selvagem": false,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 78,
+   "nome": "Coati",
+   "tipos": [
+    "Dark",
+    "Ground"
+   ],
+   "bst": 446,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 79,
+   "nome": "Gambá",
+   "tipos": [
+    "Poison",
+    "Normal"
+   ],
+   "bst": 286,
+   "selvagem": true,
+   "golpes_por_nivel": 9
+  },
+  {
+   "dex": 80,
+   "nome": "Cangambá",
+   "tipos": [
+    "Poison",
+    "Dark"
+   ],
+   "bst": 551,
+   "selvagem": false,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 81,
+   "nome": "Sarué",
+   "tipos": [
+    "Poison",
+    "Ghost"
+   ],
+   "bst": 447,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 82,
+   "nome": "Tuquinho",
+   "tipos": [
+    "Flying"
+   ],
+   "bst": 287,
+   "selvagem": true,
+   "golpes_por_nivel": 10
+  },
+  {
+   "dex": 83,
+   "nome": "Aracari",
+   "tipos": [
+    "Flying",
+    "Grass"
+   ],
+   "bst": 551,
+   "selvagem": false,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 84,
+   "nome": "Curicaca",
+   "tipos": [
+    "Flying",
+    "Normal"
+   ],
+   "bst": 447,
+   "selvagem": true,
+   "golpes_por_nivel": 12
+  },
+  {
+   "dex": 85,
+   "nome": "Sapim",
+   "tipos": [
+    "Water"
+   ],
+   "bst": 287,
+   "selvagem": true,
+   "golpes_por_nivel": 10
+  },
+  {
+   "dex": 86,
+   "nome": "Sapão",
+   "tipos": [
+    "Water",
+    "Poison"
+   ],
+   "bst": 403,
+   "selvagem": true,
+   "golpes_por_nivel": 12
+  },
+  {
+   "dex": 87,
+   "nome": "Cururu",
+   "tipos": [
+    "Poison",
+    "Ground"
+   ],
+   "bst": 554,
+   "selvagem": false,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 88,
+   "nome": "Teiuzim",
+   "tipos": [
+    "Normal"
+   ],
+   "bst": 282,
+   "selvagem": true,
+   "golpes_por_nivel": 9
+  },
+  {
+   "dex": 89,
+   "nome": "Teiú",
+   "tipos": [
+    "Normal",
+    "Dark"
+   ],
+   "bst": 552,
+   "selvagem": false,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 90,
+   "nome": "Camaleão",
+   "tipos": [
+    "Normal",
+    "Psychic"
+   ],
+   "bst": 448,
+   "selvagem": true,
+   "golpes_por_nivel": 12
+  },
+  {
+   "dex": 91,
+   "nome": "Morcim",
+   "tipos": [
+    "Flying"
+   ],
+   "bst": 283,
+   "selvagem": true,
+   "golpes_por_nivel": 10
+  },
+  {
+   "dex": 92,
+   "nome": "Morcego",
+   "tipos": [
+    "Flying",
+    "Psychic"
+   ],
+   "bst": 404,
+   "selvagem": false,
+   "golpes_por_nivel": 12
+  },
+  {
+   "dex": 93,
+   "nome": "Vampiro",
+   "tipos": [
+    "Flying",
+    "Dark"
+   ],
+   "bst": 555,
+   "selvagem": true,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 94,
+   "nome": "Piuiuim",
+   "tipos": [
+    "Flying"
+   ],
+   "bst": 283,
+   "selvagem": true,
+   "golpes_por_nivel": 10
+  },
+  {
+   "dex": 95,
+   "nome": "Tuiuiú",
+   "tipos": [
+    "Flying",
+    "Water"
+   ],
+   "bst": 553,
+   "selvagem": false,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 96,
+   "nome": "Colhereiro",
+   "tipos": [
+    "Flying",
+    "Fairy"
+   ],
+   "bst": 449,
+   "selvagem": true,
+   "golpes_por_nivel": 17
+  },
+  {
+   "dex": 97,
+   "nome": "Mulinha",
+   "tipos": [
+    "Normal"
+   ],
+   "bst": 284,
+   "selvagem": true,
+   "golpes_por_nivel": 9
+  },
+  {
+   "dex": 98,
+   "nome": "Mula",
+   "tipos": [
+    "Normal",
+    "Fire"
+   ],
+   "bst": 405,
+   "selvagem": true,
+   "golpes_por_nivel": 11
+  },
+  {
+   "dex": 99,
+   "nome": "Mula-sem-Cabeça",
+   "tipos": [
+    "Fire",
+    "Ghost"
+   ],
+   "bst": 550,
+   "selvagem": false,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 100,
+   "nome": "Corcovado",
+   "tipos": [
+    "Rock",
+    "Dragon"
+   ],
+   "bst": 604,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 101,
+   "nome": "Cerválo",
+   "tipos": [
+    "Normal"
+   ],
+   "bst": 286,
+   "selvagem": true,
+   "golpes_por_nivel": 9
+  },
+  {
+   "dex": 102,
+   "nome": "Catingueiro",
+   "tipos": [
+    "Normal",
+    "Grass"
+   ],
+   "bst": 551,
+   "selvagem": false,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 103,
+   "nome": "Suçuapara",
+   "tipos": [
+    "Normal",
+    "Fighting"
+   ],
+   "bst": 447,
+   "selvagem": true,
+   "golpes_por_nivel": 12
+  },
+  {
+   "dex": 104,
+   "nome": "Cabocim",
+   "tipos": [
+    "Water"
+   ],
+   "bst": 287,
+   "selvagem": true,
+   "golpes_por_nivel": 10
+  },
+  {
+   "dex": 105,
+   "nome": "Caboclo",
+   "tipos": [
+    "Water",
+    "Fighting"
+   ],
+   "bst": 551,
+   "selvagem": false,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 106,
+   "nome": "Cangaço",
+   "tipos": [
+    "Dark",
+    "Flying"
+   ],
+   "bst": 447,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 107,
+   "nome": "Xangô",
+   "tipos": [
+    "Electric",
+    "Fighting"
+   ],
+   "bst": 449,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 108,
+   "nome": "Iemanjá",
+   "tipos": [
+    "Water",
+    "Fairy"
+   ],
+   "bst": 604,
+   "selvagem": true,
+   "golpes_por_nivel": 17
+  },
+  {
+   "dex": 109,
+   "nome": "Oxum",
+   "tipos": [
+    "Water",
+    "Fairy"
+   ],
+   "bst": 606,
+   "selvagem": true,
+   "golpes_por_nivel": 17
+  },
+  {
+   "dex": 110,
+   "nome": "Ogum",
+   "tipos": [
+    "Steel",
+    "Fire"
+   ],
+   "bst": 602,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 111,
+   "nome": "Cavalim",
+   "tipos": [
+    "Normal"
+   ],
+   "bst": 284,
+   "selvagem": true,
+   "golpes_por_nivel": 9
+  },
+  {
+   "dex": 112,
+   "nome": "Cavalgado",
+   "tipos": [
+    "Normal",
+    "Fighting"
+   ],
+   "bst": 554,
+   "selvagem": false,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 113,
+   "nome": "Zebuim",
+   "tipos": [
+    "Normal"
+   ],
+   "bst": 283,
+   "selvagem": true,
+   "golpes_por_nivel": 9
+  },
+  {
+   "dex": 114,
+   "nome": "Zebu",
+   "tipos": [
+    "Normal",
+    "Fighting"
+   ],
+   "bst": 553,
+   "selvagem": false,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 115,
+   "nome": "Ovelhinha",
+   "tipos": [
+    "Normal",
+    "Fairy"
+   ],
+   "bst": 449,
+   "selvagem": true,
+   "golpes_por_nivel": 16
+  },
+  {
+   "dex": 116,
+   "nome": "Cabrita",
+   "tipos": [
+    "Normal",
+    "Rock"
+   ],
+   "bst": 445,
+   "selvagem": true,
+   "golpes_por_nivel": 12
+  },
+  {
+   "dex": 117,
+   "nome": "Chocalhão",
+   "tipos": [
+    "Poison"
+   ],
+   "bst": 285,
+   "selvagem": true,
+   "golpes_por_nivel": 10
+  },
+  {
+   "dex": 118,
+   "nome": "Cascavelim",
+   "tipos": [
+    "Poison"
+   ],
+   "bst": 406,
+   "selvagem": true,
+   "golpes_por_nivel": 12
+  },
+  {
+   "dex": 119,
+   "nome": "Cascavão",
+   "tipos": [
+    "Poison",
+    "Dark"
+   ],
+   "bst": 552,
+   "selvagem": false,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 120,
+   "nome": "Jararaca",
+   "tipos": [
+    "Poison",
+    "Grass"
+   ],
+   "bst": 448,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 121,
+   "nome": "Pirarim",
+   "tipos": [
+    "Water"
+   ],
+   "bst": 282,
+   "selvagem": false,
+   "golpes_por_nivel": 10
+  },
+  {
+   "dex": 122,
+   "nome": "Pirarucu",
+   "tipos": [
+    "Water",
+    "Dragon"
+   ],
+   "bst": 552,
+   "selvagem": true,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 123,
+   "nome": "Piranha",
+   "tipos": [
+    "Water",
+    "Dark"
+   ],
+   "bst": 448,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 124,
+   "nome": "Tambaqui",
+   "tipos": [
+    "Water",
+    "Normal"
+   ],
+   "bst": 445,
+   "selvagem": true,
+   "golpes_por_nivel": 12
+  },
+  {
+   "dex": 125,
+   "nome": "Aruanã",
+   "tipos": [
+    "Water",
+    "Flying"
+   ],
+   "bst": 447,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 126,
+   "nome": "Poraquê",
+   "tipos": [
+    "Electric",
+    "Water"
+   ],
+   "bst": 449,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 127,
+   "nome": "Curimbatá",
+   "tipos": [
+    "Water",
+    "Ground"
+   ],
+   "bst": 445,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 128,
+   "nome": "Traíra",
+   "tipos": [
+    "Water",
+    "Dark"
+   ],
+   "bst": 447,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 129,
+   "nome": "Dourado",
+   "tipos": [
+    "Water",
+    "Fighting"
+   ],
+   "bst": 449,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 130,
+   "nome": "Tucunaré",
+   "tipos": [
+    "Water",
+    "Dark"
+   ],
+   "bst": 446,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 131,
+   "nome": "Pacu",
+   "tipos": [
+    "Water",
+    "Grass"
+   ],
+   "bst": 448,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 132,
+   "nome": "Matrinxã",
+   "tipos": [
+    "Water",
+    "Normal"
+   ],
+   "bst": 444,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 133,
+   "nome": "Piau",
+   "tipos": [
+    "Water",
+    "Normal"
+   ],
+   "bst": 446,
+   "selvagem": true,
+   "golpes_por_nivel": 12
+  },
+  {
+   "dex": 134,
+   "nome": "Cascudo",
+   "tipos": [
+    "Water",
+    "Rock"
+   ],
+   "bst": 448,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 135,
+   "nome": "Acará",
+   "tipos": [
+    "Water",
+    "Psychic"
+   ],
+   "bst": 445,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 136,
+   "nome": "Vagalumim",
+   "tipos": [
+    "Bug",
+    "Electric"
+   ],
+   "bst": 285,
+   "selvagem": true,
+   "golpes_por_nivel": 10
+  },
+  {
+   "dex": 137,
+   "nome": "Vagalume",
+   "tipos": [
+    "Bug",
+    "Electric"
+   ],
+   "bst": 555,
+   "selvagem": false,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 138,
+   "nome": "Cigarrinho",
+   "tipos": [
+    "Bug"
+   ],
+   "bst": 283,
+   "selvagem": true,
+   "golpes_por_nivel": 10
+  },
+  {
+   "dex": 139,
+   "nome": "Cigarrão",
+   "tipos": [
+    "Bug",
+    "Flying"
+   ],
+   "bst": 553,
+   "selvagem": false,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 140,
+   "nome": "Louvadinha",
+   "tipos": [
+    "Bug"
+   ],
+   "bst": 287,
+   "selvagem": true,
+   "golpes_por_nivel": 10
+  },
+  {
+   "dex": 141,
+   "nome": "Louvadeus",
+   "tipos": [
+    "Bug",
+    "Psychic"
+   ],
+   "bst": 552,
+   "selvagem": false,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 142,
+   "nome": "Escorpim",
+   "tipos": [
+    "Poison"
+   ],
+   "bst": 286,
+   "selvagem": true,
+   "golpes_por_nivel": 10
+  },
+  {
+   "dex": 143,
+   "nome": "Escorpião",
+   "tipos": [
+    "Poison",
+    "Dark"
+   ],
+   "bst": 550,
+   "selvagem": true,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 144,
+   "nome": "Caramulão",
+   "tipos": [
+    "Bug",
+    "Water"
+   ],
+   "bst": 446,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 145,
+   "nome": "Piolhão",
+   "tipos": [
+    "Bug",
+    "Poison"
+   ],
+   "bst": 448,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 146,
+   "nome": "Barata",
+   "tipos": [
+    "Bug",
+    "Dark"
+   ],
+   "bst": 445,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 147,
+   "nome": "Grilim",
+   "tipos": [
+    "Bug"
+   ],
+   "bst": 285,
+   "selvagem": true,
+   "golpes_por_nivel": 10
+  },
+  {
+   "dex": 148,
+   "nome": "Grilão",
+   "tipos": [
+    "Bug",
+    "Normal"
+   ],
+   "bst": 555,
+   "selvagem": false,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 149,
+   "nome": "Aranhão",
+   "tipos": [
+    "Bug",
+    "Poison"
+   ],
+   "bst": 445,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 150,
+   "nome": "Vespão",
+   "tipos": [
+    "Bug",
+    "Flying"
+   ],
+   "bst": 447,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 151,
+   "nome": "Marimbondão",
+   "tipos": [
+    "Bug",
+    "Poison"
+   ],
+   "bst": 449,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 152,
+   "nome": "Traça",
+   "tipos": [
+    "Bug",
+    "Normal"
+   ],
+   "bst": 446,
+   "selvagem": true,
+   "golpes_por_nivel": 12
+  },
+  {
+   "dex": 153,
+   "nome": "Corupião",
+   "tipos": [
+    "Bug",
+    "Ground"
+   ],
+   "bst": 448,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 154,
+   "nome": "Cupinzim",
+   "tipos": [
+    "Bug",
+    "Ground"
+   ],
+   "bst": 444,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 155,
+   "nome": "Formigão-Preto",
+   "tipos": [
+    "Bug",
+    "Dark"
+   ],
+   "bst": 446,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 156,
+   "nome": "Beija-flor",
+   "tipos": [
+    "Flying",
+    "Fairy"
+   ],
+   "bst": 448,
+   "selvagem": true,
+   "golpes_por_nivel": 17
+  },
+  {
+   "dex": 157,
+   "nome": "Sabiá",
+   "tipos": [
+    "Flying",
+    "Normal"
+   ],
+   "bst": 445,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 158,
+   "nome": "Bem-te-vi",
+   "tipos": [
+    "Flying",
+    "Normal"
+   ],
+   "bst": 447,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 159,
+   "nome": "Urutau",
+   "tipos": [
+    "Flying",
+    "Ghost"
+   ],
+   "bst": 449,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 160,
+   "nome": "Carcará",
+   "tipos": [
+    "Flying",
+    "Dark"
+   ],
+   "bst": 445,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 161,
+   "nome": "Gavião",
+   "tipos": [
+    "Flying",
+    "Fighting"
+   ],
+   "bst": 447,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 162,
+   "nome": "Urubu",
+   "tipos": [
+    "Flying",
+    "Dark"
+   ],
+   "bst": 555,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 163,
+   "nome": "Corurupim",
+   "tipos": [
+    "Flying",
+    "Psychic"
+   ],
+   "bst": 284,
+   "selvagem": true,
+   "golpes_por_nivel": 12
+  },
+  {
+   "dex": 164,
+   "nome": "Coruja",
+   "tipos": [
+    "Flying",
+    "Psychic"
+   ],
+   "bst": 554,
+   "selvagem": false,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 165,
+   "nome": "Jaburu",
+   "tipos": [
+    "Flying",
+    "Water"
+   ],
+   "bst": 444,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 166,
+   "nome": "Ema",
+   "tipos": [
+    "Normal",
+    "Flying"
+   ],
+   "bst": 446,
+   "selvagem": true,
+   "golpes_por_nivel": 12
+  },
+  {
+   "dex": 167,
+   "nome": "Seriema",
+   "tipos": [
+    "Flying",
+    "Fighting"
+   ],
+   "bst": 448,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 168,
+   "nome": "Anú",
+   "tipos": [
+    "Flying",
+    "Dark"
+   ],
+   "bst": 445,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 169,
+   "nome": "Trinca-Ferro",
+   "tipos": [
+    "Flying",
+    "Steel"
+   ],
+   "bst": 447,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 170,
+   "nome": "Curió",
+   "tipos": [
+    "Flying",
+    "Normal"
+   ],
+   "bst": 449,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 171,
+   "nome": "Sanhaço",
+   "tipos": [
+    "Flying",
+    "Fairy"
+   ],
+   "bst": 445,
+   "selvagem": true,
+   "golpes_por_nivel": 17
+  },
+  {
+   "dex": 172,
+   "nome": "Papa-Formiga",
+   "tipos": [
+    "Flying",
+    "Bug"
+   ],
+   "bst": 447,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 173,
+   "nome": "Choca",
+   "tipos": [
+    "Flying",
+    "Normal"
+   ],
+   "bst": 449,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 174,
+   "nome": "Bacurau",
+   "tipos": [
+    "Flying",
+    "Dark"
+   ],
+   "bst": 446,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 175,
+   "nome": "João-de-Barro",
+   "tipos": [
+    "Flying",
+    "Ground"
+   ],
+   "bst": 448,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 176,
+   "nome": "Sementim",
+   "tipos": [
+    "Grass"
+   ],
+   "bst": 282,
+   "selvagem": true,
+   "golpes_por_nivel": 10
+  },
+  {
+   "dex": 177,
+   "nome": "Muda",
+   "tipos": [
+    "Grass"
+   ],
+   "bst": 403,
+   "selvagem": false,
+   "golpes_por_nivel": 12
+  },
+  {
+   "dex": 178,
+   "nome": "Jequitibá",
+   "tipos": [
+    "Grass",
+    "Rock"
+   ],
+   "bst": 554,
+   "selvagem": true,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 179,
+   "nome": "Bromelinha",
+   "tipos": [
+    "Grass",
+    "Water"
+   ],
+   "bst": 445,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 180,
+   "nome": "Orquidina",
+   "tipos": [
+    "Grass",
+    "Fairy"
+   ],
+   "bst": 447,
+   "selvagem": true,
+   "golpes_por_nivel": 16
+  },
+  {
+   "dex": 181,
+   "nome": "Vitóriarégia",
+   "tipos": [
+    "Grass",
+    "Water"
+   ],
+   "bst": 449,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 182,
+   "nome": "Ipê",
+   "tipos": [
+    "Grass",
+    "Fairy"
+   ],
+   "bst": 445,
+   "selvagem": true,
+   "golpes_por_nivel": 16
+  },
+  {
+   "dex": 183,
+   "nome": "Cipó",
+   "tipos": [
+    "Grass",
+    "Poison"
+   ],
+   "bst": 447,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 184,
+   "nome": "Palmito",
+   "tipos": [
+    "Grass",
+    "Fighting"
+   ],
+   "bst": 449,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 185,
+   "nome": "Babaçu",
+   "tipos": [
+    "Grass",
+    "Ground"
+   ],
+   "bst": 446,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 186,
+   "nome": "Buriti",
+   "tipos": [
+    "Grass",
+    "Water"
+   ],
+   "bst": 448,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 187,
+   "nome": "Cajuzim",
+   "tipos": [
+    "Grass"
+   ],
+   "bst": 282,
+   "selvagem": true,
+   "golpes_por_nivel": 10
+  },
+  {
+   "dex": 188,
+   "nome": "Cajueiro",
+   "tipos": [
+    "Grass",
+    "Fire"
+   ],
+   "bst": 552,
+   "selvagem": false,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 189,
+   "nome": "Açaí",
+   "tipos": [
+    "Grass",
+    "Dark"
+   ],
+   "bst": 448,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 190,
+   "nome": "Cacauim",
+   "tipos": [
+    "Grass"
+   ],
+   "bst": 283,
+   "selvagem": true,
+   "golpes_por_nivel": 10
+  },
+  {
+   "dex": 191,
+   "nome": "Cacaueiro",
+   "tipos": [
+    "Grass",
+    "Normal"
+   ],
+   "bst": 553,
+   "selvagem": false,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 192,
+   "nome": "Guaraná",
+   "tipos": [
+    "Grass",
+    "Electric"
+   ],
+   "bst": 449,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 193,
+   "nome": "Mate",
+   "tipos": [
+    "Grass",
+    "Water"
+   ],
+   "bst": 445,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 194,
+   "nome": "Milho",
+   "tipos": [
+    "Grass",
+    "Normal"
+   ],
+   "bst": 447,
+   "selvagem": true,
+   "golpes_por_nivel": 12
+  },
+  {
+   "dex": 195,
+   "nome": "Mandioca",
+   "tipos": [
+    "Grass",
+    "Ground"
+   ],
+   "bst": 449,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 196,
+   "nome": "Pedrinha",
+   "tipos": [
+    "Rock"
+   ],
+   "bst": 284,
+   "selvagem": true,
+   "golpes_por_nivel": 10
+  },
+  {
+   "dex": 197,
+   "nome": "Rochão",
+   "tipos": [
+    "Rock"
+   ],
+   "bst": 554,
+   "selvagem": true,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 198,
+   "nome": "Cristalim",
+   "tipos": [
+    "Rock",
+    "Fairy"
+   ],
+   "bst": 282,
+   "selvagem": true,
+   "golpes_por_nivel": 12
+  },
+  {
+   "dex": 199,
+   "nome": "Ametista",
+   "tipos": [
+    "Rock",
+    "Psychic"
+   ],
+   "bst": 552,
+   "selvagem": true,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 200,
+   "nome": "Ouríço",
+   "tipos": [
+    "Steel",
+    "Electric"
+   ],
+   "bst": 448,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 201,
+   "nome": "Ferrolho",
+   "tipos": [
+    "Steel",
+    "Ground"
+   ],
+   "bst": 445,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 202,
+   "nome": "Diamantina",
+   "tipos": [
+    "Rock",
+    "Fairy"
+   ],
+   "bst": 605,
+   "selvagem": true,
+   "golpes_por_nivel": 16
+  },
+  {
+   "dex": 203,
+   "nome": "Bauxito",
+   "tipos": [
+    "Steel",
+    "Ground"
+   ],
+   "bst": 449,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 204,
+   "nome": "Manganim",
+   "tipos": [
+    "Steel",
+    "Dark"
+   ],
+   "bst": 445,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 205,
+   "nome": "Salitre",
+   "tipos": [
+    "Rock",
+    "Water"
+   ],
+   "bst": 447,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 206,
+   "nome": "Enxofrino",
+   "tipos": [
+    "Fire",
+    "Poison"
+   ],
+   "bst": 449,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 207,
+   "nome": "Argilim",
+   "tipos": [
+    "Ground"
+   ],
+   "bst": 284,
+   "selvagem": true,
+   "golpes_por_nivel": 10
+  },
+  {
+   "dex": 208,
+   "nome": "Boneco",
+   "tipos": [
+    "Ground",
+    "Psychic"
+   ],
+   "bst": 554,
+   "selvagem": false,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 209,
+   "nome": "Estalactite",
+   "tipos": [
+    "Rock",
+    "Water"
+   ],
+   "bst": 444,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 210,
+   "nome": "Estalagmite",
+   "tipos": [
+    "Rock",
+    "Ground"
+   ],
+   "bst": 446,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 211,
+   "nome": "Fóssil",
+   "tipos": [
+    "Rock",
+    "Dragon"
+   ],
+   "bst": 448,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 212,
+   "nome": "Meteorito",
+   "tipos": [
+    "Rock",
+    "Psychic"
+   ],
+   "bst": 603,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 213,
+   "nome": "Vulcanite",
+   "tipos": [
+    "Fire",
+    "Rock"
+   ],
+   "bst": 447,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 214,
+   "nome": "Marmim",
+   "tipos": [
+    "Rock",
+    "Fairy"
+   ],
+   "bst": 449,
+   "selvagem": true,
+   "golpes_por_nivel": 16
+  },
+  {
+   "dex": 215,
+   "nome": "Granito",
+   "tipos": [
+    "Rock",
+    "Fighting"
+   ],
+   "bst": 445,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 216,
+   "nome": "Caranguim",
+   "tipos": [
+    "Water"
+   ],
+   "bst": 285,
+   "selvagem": true,
+   "golpes_por_nivel": 10
+  },
+  {
+   "dex": 217,
+   "nome": "Guaiamum",
+   "tipos": [
+    "Water",
+    "Ground"
+   ],
+   "bst": 555,
+   "selvagem": false,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 218,
+   "nome": "Siri",
+   "tipos": [
+    "Water",
+    "Fighting"
+   ],
+   "bst": 446,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 219,
+   "nome": "Camarão",
+   "tipos": [
+    "Water"
+   ],
+   "bst": 448,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 220,
+   "nome": "Polvim",
+   "tipos": [
+    "Water",
+    "Psychic"
+   ],
+   "bst": 282,
+   "selvagem": true,
+   "golpes_por_nivel": 10
+  },
+  {
+   "dex": 221,
+   "nome": "Polvão",
+   "tipos": [
+    "Water",
+    "Psychic"
+   ],
+   "bst": 552,
+   "selvagem": false,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 222,
+   "nome": "Águaviva",
+   "tipos": [
+    "Water",
+    "Poison"
+   ],
+   "bst": 448,
+   "selvagem": true,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 223,
+   "nome": "Cavalim-Marinho",
+   "tipos": [
+    "Water",
+    "Fairy"
+   ],
+   "bst": 445,
+   "selvagem": true,
+   "golpes_por_nivel": 17
+  },
+  {
+   "dex": 224,
+   "nome": "Tartaruguim",
+   "tipos": [
+    "Water"
+   ],
+   "bst": 285,
+   "selvagem": true,
+   "golpes_por_nivel": 10
+  },
+  {
+   "dex": 225,
+   "nome": "Tartaruga",
+   "tipos": [
+    "Water",
+    "Rock"
+   ],
+   "bst": 555,
+   "selvagem": false,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 226,
+   "nome": "Golfinho",
+   "tipos": [
+    "Water",
+    "Psychic"
+   ],
+   "bst": 445,
+   "selvagem": true,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 227,
+   "nome": "Baleia",
+   "tipos": [
+    "Water",
+    "Normal"
+   ],
+   "bst": 447,
+   "selvagem": true,
+   "golpes_por_nivel": 12
+  },
+  {
+   "dex": 228,
+   "nome": "Tubarim",
+   "tipos": [
+    "Water",
+    "Dark"
+   ],
+   "bst": 287,
+   "selvagem": true,
+   "golpes_por_nivel": 10
+  },
+  {
+   "dex": 229,
+   "nome": "Tubarão",
+   "tipos": [
+    "Water",
+    "Dark"
+   ],
+   "bst": 552,
+   "selvagem": false,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 230,
+   "nome": "Arraia",
+   "tipos": [
+    "Water",
+    "Electric"
+   ],
+   "bst": 448,
+   "selvagem": true,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 231,
+   "nome": "Peixe-Espada",
+   "tipos": [
+    "Water",
+    "Steel"
+   ],
+   "bst": 444,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 232,
+   "nome": "Pargo",
+   "tipos": [
+    "Water",
+    "Fire"
+   ],
+   "bst": 446,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 233,
+   "nome": "Pescadão",
+   "tipos": [
+    "Water",
+    "Dark"
+   ],
+   "bst": 448,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 234,
+   "nome": "Loirinha",
+   "tipos": [
+    "Ghost",
+    "Fairy"
+   ],
+   "bst": 445,
+   "selvagem": true,
+   "golpes_por_nivel": 17
+  },
+  {
+   "dex": 235,
+   "nome": "Cuca",
+   "tipos": [
+    "Dark",
+    "Psychic"
+   ],
+   "bst": 447,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 236,
+   "nome": "Bicho-Papão",
+   "tipos": [
+    "Dark",
+    "Ghost"
+   ],
+   "bst": 449,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 237,
+   "nome": "Lobisomem",
+   "tipos": [
+    "Dark",
+    "Normal"
+   ],
+   "bst": 445,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 238,
+   "nome": "Corpo-Seco",
+   "tipos": [
+    "Ghost",
+    "Dark"
+   ],
+   "bst": 447,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 239,
+   "nome": "Mão-Peluda",
+   "tipos": [
+    "Ghost",
+    "Fighting"
+   ],
+   "bst": 449,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 240,
+   "nome": "Perna-Cabeluda",
+   "tipos": [
+    "Ghost",
+    "Normal"
+   ],
+   "bst": 446,
+   "selvagem": true,
+   "golpes_por_nivel": 12
+  },
+  {
+   "dex": 241,
+   "nome": "Comadre",
+   "tipos": [
+    "Ghost",
+    "Fairy"
+   ],
+   "bst": 448,
+   "selvagem": true,
+   "golpes_por_nivel": 17
+  },
+  {
+   "dex": 242,
+   "nome": "Anhangá",
+   "tipos": [
+    "Ghost",
+    "Grass"
+   ],
+   "bst": 444,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 243,
+   "nome": "Jurupari",
+   "tipos": [
+    "Dark",
+    "Fairy"
+   ],
+   "bst": 604,
+   "selvagem": true,
+   "golpes_por_nivel": 16
+  },
+  {
+   "dex": 244,
+   "nome": "Tupã",
+   "tipos": [
+    "Electric",
+    "Dragon"
+   ],
+   "bst": 606,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 245,
+   "nome": "Jaci",
+   "tipos": [
+    "Fairy",
+    "Psychic"
+   ],
+   "bst": 603,
+   "selvagem": true,
+   "golpes_por_nivel": 18
+  },
+  {
+   "dex": 246,
+   "nome": "Guaraci",
+   "tipos": [
+    "Fire",
+    "Fairy"
+   ],
+   "bst": 605,
+   "selvagem": true,
+   "golpes_por_nivel": 16
+  },
+  {
+   "dex": 247,
+   "nome": "Rudá",
+   "tipos": [
+    "Fairy",
+    "Psychic"
+   ],
+   "bst": 449,
+   "selvagem": true,
+   "golpes_por_nivel": 18
+  },
+  {
+   "dex": 248,
+   "nome": "Aluá",
+   "tipos": [
+    "Water",
+    "Poison"
+   ],
+   "bst": 445,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 249,
+   "nome": "Jenipapo",
+   "tipos": [
+    "Dark",
+    "Grass"
+   ],
+   "bst": 447,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 250,
+   "nome": "Urucum",
+   "tipos": [
+    "Fire",
+    "Grass"
+   ],
+   "bst": 449,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 251,
+   "nome": "Caipora",
+   "tipos": [
+    "Grass",
+    "Fighting"
+   ],
+   "bst": 552,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 252,
+   "nome": "Anhangá-Pitã",
+   "tipos": [
+    "Ghost",
+    "Fire"
+   ],
+   "bst": 448,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 253,
+   "nome": "Yara-Pindá",
+   "tipos": [
+    "Water",
+    "Fairy"
+   ],
+   "bst": 444,
+   "selvagem": true,
+   "golpes_por_nivel": 17
+  },
+  {
+   "dex": 254,
+   "nome": "Pisadeira",
+   "tipos": [
+    "Ghost",
+    "Fighting"
+   ],
+   "bst": 446,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 255,
+   "nome": "Zumbi",
+   "tipos": [
+    "Ghost",
+    "Fighting"
+   ],
+   "bst": 606,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 256,
+   "nome": "Iemanjá-Pequena",
+   "tipos": [
+    "Water",
+    "Fairy"
+   ],
+   "bst": 445,
+   "selvagem": true,
+   "golpes_por_nivel": 17
+  },
+  {
+   "dex": 257,
+   "nome": "Ossanha",
+   "tipos": [
+    "Grass",
+    "Fairy"
+   ],
+   "bst": 447,
+   "selvagem": true,
+   "golpes_por_nivel": 16
+  },
+  {
+   "dex": 258,
+   "nome": "Oxalá",
+   "tipos": [
+    "Normal",
+    "Fairy"
+   ],
+   "bst": 607,
+   "selvagem": true,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 259,
+   "nome": "Saciamigo",
+   "tipos": [
+    "Dark",
+    "Fairy"
+   ],
+   "bst": 445,
+   "selvagem": true,
+   "golpes_por_nivel": 16
+  },
+  {
+   "dex": 260,
+   "nome": "Sacipererê",
+   "tipos": [
+    "Dark",
+    "Fairy"
+   ],
+   "bst": 605,
+   "selvagem": true,
+   "golpes_por_nivel": 16
+  },
+  {
+   "dex": 261,
+   "nome": "Curupira-Ancião",
+   "tipos": [
+    "Grass",
+    "Fairy"
+   ],
+   "bst": 449,
+   "selvagem": true,
+   "golpes_por_nivel": 16
+  },
+  {
+   "dex": 262,
+   "nome": "Caipora-Fêmea",
+   "tipos": [
+    "Grass",
+    "Fighting"
+   ],
+   "bst": 446,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 263,
+   "nome": "Pomba-Gira",
+   "tipos": [
+    "Dark",
+    "Fairy"
+   ],
+   "bst": 448,
+   "selvagem": true,
+   "golpes_por_nivel": 16
+  },
+  {
+   "dex": 264,
+   "nome": "Exu",
+   "tipos": [
+    "Dark",
+    "Fighting"
+   ],
+   "bst": 444,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 265,
+   "nome": "Preto-Velho",
+   "tipos": [
+    "Ghost",
+    "Psychic"
+   ],
+   "bst": 604,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 266,
+   "nome": "Caboclo-Guerreiro",
+   "tipos": [
+    "Grass",
+    "Fighting"
+   ],
+   "bst": 448,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 267,
+   "nome": "Marinheiro",
+   "tipos": [
+    "Water",
+    "Dark"
+   ],
+   "bst": 445,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 268,
+   "nome": "Baiano",
+   "tipos": [
+    "Fire",
+    "Fighting"
+   ],
+   "bst": 447,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 269,
+   "nome": "Cangaceiro",
+   "tipos": [
+    "Dark",
+    "Fighting"
+   ],
+   "bst": 449,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 270,
+   "nome": "Beata",
+   "tipos": [
+    "Fairy",
+    "Psychic"
+   ],
+   "bst": 445,
+   "selvagem": true,
+   "golpes_por_nivel": 18
+  },
+  {
+   "dex": 271,
+   "nome": "Menino-Deus",
+   "tipos": [
+    "Fairy",
+    "Normal"
+   ],
+   "bst": 447,
+   "selvagem": true,
+   "golpes_por_nivel": 17
+  },
+  {
+   "dex": 272,
+   "nome": "Rei-Momo",
+   "tipos": [
+    "Normal",
+    "Fire"
+   ],
+   "bst": 449,
+   "selvagem": true,
+   "golpes_por_nivel": 12
+  },
+  {
+   "dex": 273,
+   "nome": "Bumba-Meu-Boi",
+   "tipos": [
+    "Normal",
+    "Fire"
+   ],
+   "bst": 446,
+   "selvagem": true,
+   "golpes_por_nivel": 12
+  },
+  {
+   "dex": 274,
+   "nome": "Reisado",
+   "tipos": [
+    "Fairy",
+    "Normal"
+   ],
+   "bst": 448,
+   "selvagem": true,
+   "golpes_por_nivel": 17
+  },
+  {
+   "dex": 275,
+   "nome": "Frevinho",
+   "tipos": [
+    "Fighting",
+    "Fire"
+   ],
+   "bst": 444,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 276,
+   "nome": "Maracatu",
+   "tipos": [
+    "Dark",
+    "Fairy"
+   ],
+   "bst": 446,
+   "selvagem": true,
+   "golpes_por_nivel": 17
+  },
+  {
+   "dex": 277,
+   "nome": "Congada",
+   "tipos": [
+    "Fighting",
+    "Fire"
+   ],
+   "bst": 448,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 278,
+   "nome": "Folião",
+   "tipos": [
+    "Normal",
+    "Fairy"
+   ],
+   "bst": 445,
+   "selvagem": true,
+   "golpes_por_nivel": 16
+  },
+  {
+   "dex": 279,
+   "nome": "Onçuma",
+   "tipos": [
+    "Dark",
+    "Ghost"
+   ],
+   "bst": 605,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 280,
+   "nome": "Sucuriaçu",
+   "tipos": [
+    "Water",
+    "Dragon"
+   ],
+   "bst": 607,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 281,
+   "nome": "Pirarumbá",
+   "tipos": [
+    "Water",
+    "Dragon"
+   ],
+   "bst": 603,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 282,
+   "nome": "Draguará-Alfa",
+   "tipos": [
+    "Fire",
+    "Dragon"
+   ],
+   "bst": 605,
+   "selvagem": true,
+   "golpes_por_nivel": 16
+  },
+  {
+   "dex": 283,
+   "nome": "Terolibra-Rainha",
+   "tipos": [
+    "Water",
+    "Bug"
+   ],
+   "bst": 607,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 284,
+   "nome": "Petropico-Ancião",
+   "tipos": [
+    "Grass",
+    "Rock"
+   ],
+   "bst": 604,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 285,
+   "nome": "Boitatá-Puro",
+   "tipos": [
+    "Fire",
+    "Dragon"
+   ],
+   "bst": 606,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 286,
+   "nome": "Iara-Mãe",
+   "tipos": [
+    "Water",
+    "Fairy"
+   ],
+   "bst": 602,
+   "selvagem": true,
+   "golpes_por_nivel": 17
+  },
+  {
+   "dex": 287,
+   "nome": "Curupira-Rei",
+   "tipos": [
+    "Grass",
+    "Fairy"
+   ],
+   "bst": 604,
+   "selvagem": true,
+   "golpes_por_nivel": 16
+  },
+  {
+   "dex": 288,
+   "nome": "Saci-Rei",
+   "tipos": [
+    "Dark",
+    "Fairy"
+   ],
+   "bst": 606,
+   "selvagem": true,
+   "golpes_por_nivel": 16
+  },
+  {
+   "dex": 289,
+   "nome": "Anhangaú",
+   "tipos": [
+    "Ghost",
+    "Grass"
+   ],
+   "bst": 603,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 290,
+   "nome": "Muirá-Kytã",
+   "tipos": [
+    "Grass",
+    "Fairy"
+   ],
+   "bst": 605,
+   "selvagem": true,
+   "golpes_por_nivel": 16
+  },
+  {
+   "dex": 291,
+   "nome": "Cobra-Norato",
+   "tipos": [
+    "Water",
+    "Dragon"
+   ],
+   "bst": 607,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 292,
+   "nome": "Mapinguari",
+   "tipos": [
+    "Grass",
+    "Fighting"
+   ],
+   "bst": 603,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 293,
+   "nome": "Ipupiara",
+   "tipos": [
+    "Water",
+    "Dark"
+   ],
+   "bst": 605,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 294,
+   "nome": "Uirapuru",
+   "tipos": [
+    "Flying",
+    "Fairy"
+   ],
+   "bst": 607,
+   "selvagem": true,
+   "golpes_por_nivel": 17
+  },
+  {
+   "dex": 295,
+   "nome": "Muiraquitã",
+   "tipos": [
+    "Rock",
+    "Fairy"
+   ],
+   "bst": 604,
+   "selvagem": true,
+   "golpes_por_nivel": 16
+  },
+  {
+   "dex": 296,
+   "nome": "Amazona",
+   "tipos": [
+    "Fighting",
+    "Fairy"
+   ],
+   "bst": 606,
+   "selvagem": true,
+   "golpes_por_nivel": 16
+  },
+  {
+   "dex": 297,
+   "nome": "Corcovado-Ancião",
+   "tipos": [
+    "Rock",
+    "Dragon"
+   ],
+   "bst": 602,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 298,
+   "nome": "Cristo",
+   "tipos": [
+    "Fairy",
+    "Psychic"
+   ],
+   "bst": 604,
+   "selvagem": true,
+   "golpes_por_nivel": 18
+  },
+  {
+   "dex": 299,
+   "nome": "Ratão",
+   "tipos": [
+    "Dark",
+    "Poison"
+   ],
+   "bst": 448,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 300,
+   "nome": "Pombim",
+   "tipos": [
+    "Flying",
+    "Normal"
+   ],
+   "bst": 283,
+   "selvagem": true,
+   "golpes_por_nivel": 9
+  },
+  {
+   "dex": 301,
+   "nome": "Pombão",
+   "tipos": [
+    "Flying",
+    "Poison"
+   ],
+   "bst": 553,
+   "selvagem": false,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 302,
+   "nome": "Baratão",
+   "tipos": [
+    "Bug",
+    "Flying"
+   ],
+   "bst": 449,
+   "selvagem": true,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 303,
+   "nome": "Mosquim",
+   "tipos": [
+    "Bug",
+    "Poison"
+   ],
+   "bst": 445,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 304,
+   "nome": "Cão-Bravo",
+   "tipos": [
+    "Dark",
+    "Normal"
+   ],
+   "bst": 447,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 305,
+   "nome": "Gato-Preto",
+   "tipos": [
+    "Dark",
+    "Psychic"
+   ],
+   "bst": 449,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 306,
+   "nome": "Perereca",
+   "tipos": [
+    "Water",
+    "Poison"
+   ],
+   "bst": 446,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 307,
+   "nome": "Lagartixa",
+   "tipos": [
+    "Normal",
+    "Psychic"
+   ],
+   "bst": 448,
+   "selvagem": true,
+   "golpes_por_nivel": 12
+  },
+  {
+   "dex": 308,
+   "nome": "Traça-Papel",
+   "tipos": [
+    "Bug",
+    "Psychic"
+   ],
+   "bst": 444,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 309,
+   "nome": "Poeirão",
+   "tipos": [
+    "Ground",
+    "Dark"
+   ],
+   "bst": 446,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 310,
+   "nome": "Ferrugem",
+   "tipos": [
+    "Steel",
+    "Water"
+   ],
+   "bst": 448,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 311,
+   "nome": "Fumacento",
+   "tipos": [
+    "Poison",
+    "Flying"
+   ],
+   "bst": 445,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 312,
+   "nome": "Óleoso",
+   "tipos": [
+    "Poison",
+    "Water"
+   ],
+   "bst": 447,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 313,
+   "nome": "Lixão",
+   "tipos": [
+    "Poison",
+    "Ground"
+   ],
+   "bst": 287,
+   "selvagem": true,
+   "golpes_por_nivel": 10
+  },
+  {
+   "dex": 314,
+   "nome": "Chorume",
+   "tipos": [
+    "Poison",
+    "Dark"
+   ],
+   "bst": 551,
+   "selvagem": false,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 315,
+   "nome": "Bituca",
+   "tipos": [
+    "Fire",
+    "Poison"
+   ],
+   "bst": 447,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 316,
+   "nome": "Latinha",
+   "tipos": [
+    "Steel",
+    "Normal"
+   ],
+   "bst": 449,
+   "selvagem": true,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 317,
+   "nome": "Sacolim",
+   "tipos": [
+    "Poison",
+    "Flying"
+   ],
+   "bst": 446,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 318,
+   "nome": "Garrafão",
+   "tipos": [
+    "Water",
+    "Poison"
+   ],
+   "bst": 448,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 319,
+   "nome": "Netzero",
+   "tipos": [
+    "Flying",
+    "Poison"
+   ],
+   "bst": 444,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 320,
+   "nome": "Pilhoso",
+   "tipos": [
+    "Electric",
+    "Poison"
+   ],
+   "bst": 446,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 321,
+   "nome": "Cabofio",
+   "tipos": [
+    "Electric",
+    "Steel"
+   ],
+   "bst": 448,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 322,
+   "nome": "Bugão",
+   "tipos": [
+    "Bug",
+    "Dark"
+   ],
+   "bst": 445,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 323,
+   "nome": "Aluminio",
+   "tipos": [
+    "Steel",
+    "Flying"
+   ],
+   "bst": 447,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 324,
+   "nome": "Concretim",
+   "tipos": [
+    "Rock",
+    "Steel"
+   ],
+   "bst": 449,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 325,
+   "nome": "Bueiro",
+   "tipos": [
+    "Water",
+    "Dark"
+   ],
+   "bst": 445,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 326,
+   "nome": "Sinal",
+   "tipos": [
+    "Electric",
+    "Psychic"
+   ],
+   "bst": 447,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 327,
+   "nome": "Poste",
+   "tipos": [
+    "Steel",
+    "Electric"
+   ],
+   "bst": 449,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 328,
+   "nome": "Grafiteiro",
+   "tipos": [
+    "Dark",
+    "Fairy"
+   ],
+   "bst": 446,
+   "selvagem": true,
+   "golpes_por_nivel": 16
+  },
+  {
+   "dex": 329,
+   "nome": "Guaraciana",
+   "tipos": [
+    "Fire",
+    "Fairy"
+   ],
+   "bst": 606,
+   "selvagem": false,
+   "golpes_por_nivel": 18
+  },
+  {
+   "dex": 330,
+   "nome": "Jaciana",
+   "tipos": [
+    "Fairy",
+    "Water"
+   ],
+   "bst": 602,
+   "selvagem": false,
+   "golpes_por_nivel": 20
+  },
+  {
+   "dex": 331,
+   "nome": "Tupanaú",
+   "tipos": [
+    "Electric",
+    "Dragon"
+   ],
+   "bst": 604,
+   "selvagem": false,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 332,
+   "nome": "Iaraú",
+   "tipos": [
+    "Water",
+    "Fairy"
+   ],
+   "bst": 606,
+   "selvagem": true,
+   "golpes_por_nivel": 19
+  },
+  {
+   "dex": 333,
+   "nome": "Kuarahy",
+   "tipos": [
+    "Fire",
+    "Psychic"
+   ],
+   "bst": 603,
+   "selvagem": false,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 334,
+   "nome": "Yasy",
+   "tipos": [
+    "Fairy",
+    "Dark"
+   ],
+   "bst": 605,
+   "selvagem": false,
+   "golpes_por_nivel": 20
+  },
+  {
+   "dex": 335,
+   "nome": "Rudarauna",
+   "tipos": [
+    "Fairy",
+    "Psychic"
+   ],
+   "bst": 607,
+   "selvagem": false,
+   "golpes_por_nivel": 20
+  },
+  {
+   "dex": 336,
+   "nome": "Perybé",
+   "tipos": [
+    "Water",
+    "Psychic"
+   ],
+   "bst": 603,
+   "selvagem": false,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 337,
+   "nome": "Arauanaú",
+   "tipos": [
+    "Fairy",
+    "Dragon"
+   ],
+   "bst": 605,
+   "selvagem": false,
+   "golpes_por_nivel": 20
+  },
+  {
+   "dex": 338,
+   "nome": "Verdejante",
+   "tipos": [
+    "Grass",
+    "Dragon"
+   ],
+   "bst": 607,
+   "selvagem": false,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 339,
+   "nome": "Chuvão",
+   "tipos": [
+    "Water",
+    "Electric"
+   ],
+   "bst": 604,
+   "selvagem": false,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 340,
+   "nome": "Solzão",
+   "tipos": [
+    "Fire",
+    "Ground"
+   ],
+   "bst": 606,
+   "selvagem": false,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 341,
+   "nome": "Ventania",
+   "tipos": [
+    "Flying",
+    "Dragon"
+   ],
+   "bst": 602,
+   "selvagem": false,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 342,
+   "nome": "Terraão",
+   "tipos": [
+    "Ground",
+    "Rock"
+   ],
+   "bst": 604,
+   "selvagem": false,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 343,
+   "nome": "Fogaréu",
+   "tipos": [
+    "Fire",
+    "Dragon"
+   ],
+   "bst": 606,
+   "selvagem": false,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 344,
+   "nome": "Marulho",
+   "tipos": [
+    "Water",
+    "Dragon"
+   ],
+   "bst": 603,
+   "selvagem": false,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 345,
+   "nome": "Alvorecer",
+   "tipos": [
+    "Fairy",
+    "Fire"
+   ],
+   "bst": 605,
+   "selvagem": false,
+   "golpes_por_nivel": 20
+  },
+  {
+   "dex": 346,
+   "nome": "Poente",
+   "tipos": [
+    "Dark",
+    "Fire"
+   ],
+   "bst": 607,
+   "selvagem": false,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 347,
+   "nome": "Estrelinha",
+   "tipos": [
+    "Fairy",
+    "Psychic"
+   ],
+   "bst": 648,
+   "selvagem": false,
+   "golpes_por_nivel": 20
+  },
+  {
+   "dex": 348,
+   "nome": "Arauanamon",
+   "tipos": [
+    "Dragon",
+    "Fairy"
+   ],
+   "bst": 650,
+   "selvagem": false,
+   "golpes_por_nivel": 19
+  },
+  {
+   "dex": 349,
+   "nome": "Aracuã",
+   "tipos": [
+    "Flying",
+    "Normal"
+   ],
+   "bst": 449,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 350,
+   "nome": "Bugio",
+   "tipos": [
+    "Normal",
+    "Dark"
+   ],
+   "bst": 446,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 351,
+   "nome": "Tuim",
+   "tipos": [
+    "Grass"
+   ],
+   "bst": 305,
+   "selvagem": true,
+   "golpes_por_nivel": 10
+  },
+  {
+   "dex": 352,
+   "nome": "Periquitão",
+   "tipos": [
+    "Grass",
+    "Flying"
+   ],
+   "bst": 439,
+   "selvagem": false,
+   "golpes_por_nivel": 12
+  },
+  {
+   "dex": 353,
+   "nome": "Ararunão",
+   "tipos": [
+    "Grass",
+    "Flying"
+   ],
+   "bst": 598,
+   "selvagem": false,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 354,
+   "nome": "Preazinho",
+   "tipos": [
+    "Normal"
+   ],
+   "bst": 328,
+   "selvagem": true,
+   "golpes_por_nivel": 9
+  },
+  {
+   "dex": 355,
+   "nome": "Capivarão",
+   "tipos": [
+    "Normal",
+    "Water"
+   ],
+   "bst": 510,
+   "selvagem": false,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 356,
+   "nome": "Tamanduí",
+   "tipos": [
+    "Bug"
+   ],
+   "bst": 320,
+   "selvagem": true,
+   "golpes_por_nivel": 10
+  },
+  {
+   "dex": 357,
+   "nome": "Tamanduá",
+   "tipos": [
+    "Bug",
+    "Ground"
+   ],
+   "bst": 440,
+   "selvagem": true,
+   "golpes_por_nivel": 12
+  },
+  {
+   "dex": 358,
+   "nome": "Tamanduão",
+   "tipos": [
+    "Bug",
+    "Ground"
+   ],
+   "bst": 545,
+   "selvagem": true,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 359,
+   "nome": "Preguicinha",
+   "tipos": [
+    "Grass"
+   ],
+   "bst": 285,
+   "selvagem": true,
+   "golpes_por_nivel": 10
+  },
+  {
+   "dex": 360,
+   "nome": "Preguiçoso",
+   "tipos": [
+    "Grass",
+    "Psychic"
+   ],
+   "bst": 520,
+   "selvagem": true,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 361,
+   "nome": "Beija-Flor",
+   "tipos": [
+    "Fairy",
+    "Flying"
+   ],
+   "bst": 377,
+   "selvagem": true,
+   "golpes_por_nivel": 14
+  },
+  {
+   "dex": 362,
+   "nome": "Beija-Luz",
+   "tipos": [
+    "Fairy",
+    "Fire"
+   ],
+   "bst": 482,
+   "selvagem": true,
+   "golpes_por_nivel": 16
+  },
+  {
+   "dex": 363,
+   "nome": "Beija-Sol",
+   "tipos": [
+    "Fairy",
+    "Fire"
+   ],
+   "bst": 610,
+   "selvagem": false,
+   "golpes_por_nivel": 20
+  },
+  {
+   "dex": 364,
+   "nome": "Sarará",
+   "tipos": [
+    "Fairy",
+    "Water"
+   ],
+   "bst": 472,
+   "selvagem": true,
+   "golpes_por_nivel": 18
+  },
+  {
+   "dex": 365,
+   "nome": "Cambota",
+   "tipos": [
+    "Fighting",
+    "Normal"
+   ],
+   "bst": 485,
+   "selvagem": true,
+   "golpes_por_nivel": 12
+  },
+  {
+   "dex": 366,
+   "nome": "Berimbau",
+   "tipos": [
+    "Fairy",
+    "Fighting"
+   ],
+   "bst": 505,
+   "selvagem": true,
+   "golpes_por_nivel": 18
+  },
+  {
+   "dex": 367,
+   "nome": "Atabaque",
+   "tipos": [
+    "Fighting",
+    "Ground"
+   ],
+   "bst": 495,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 368,
+   "nome": "Pandeirim",
+   "tipos": [
+    "Fairy",
+    "Normal"
+   ],
+   "bst": 460,
+   "selvagem": true,
+   "golpes_por_nivel": 18
+  },
+  {
+   "dex": 369,
+   "nome": "Sanfoninha",
+   "tipos": [
+    "Normal",
+    "Fairy"
+   ],
+   "bst": 510,
+   "selvagem": true,
+   "golpes_por_nivel": 16
+  },
+  {
+   "dex": 370,
+   "nome": "Violeiro",
+   "tipos": [
+    "Grass",
+    "Fairy"
+   ],
+   "bst": 523,
+   "selvagem": true,
+   "golpes_por_nivel": 17
+  },
+  {
+   "dex": 371,
+   "nome": "Zabumba",
+   "tipos": [
+    "Ground",
+    "Fighting"
+   ],
+   "bst": 515,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 372,
+   "nome": "Cordelim",
+   "tipos": [
+    "Psychic",
+    "Fairy"
+   ],
+   "bst": 485,
+   "selvagem": true,
+   "golpes_por_nivel": 18
+  },
+  {
+   "dex": 373,
+   "nome": "Rendeira",
+   "tipos": [
+    "Fairy",
+    "Bug"
+   ],
+   "bst": 515,
+   "selvagem": true,
+   "golpes_por_nivel": 18
+  },
+  {
+   "dex": 374,
+   "nome": "Escamoso",
+   "tipos": [
+    "Water",
+    "Dark"
+   ],
+   "bst": 498,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 375,
+   "nome": "Piranhita",
+   "tipos": [
+    "Water",
+    "Dark"
+   ],
+   "bst": 395,
+   "selvagem": true,
+   "golpes_por_nivel": 13
+  },
+  {
+   "dex": 376,
+   "nome": "Boitatã",
+   "tipos": [
+    "Fire",
+    "Dragon"
+   ],
+   "bst": 650,
+   "selvagem": false,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 377,
+   "nome": "Piraruaçu",
+   "tipos": [
+    "Water",
+    "Dragon"
+   ],
+   "bst": 630,
+   "selvagem": false,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 378,
+   "nome": "Mata-Mata",
+   "tipos": [
+    "Grass",
+    "Dragon"
+   ],
+   "bst": 640,
+   "selvagem": false,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 379,
+   "nome": "Solaris",
+   "tipos": [
+    "Fire",
+    "Psychic"
+   ],
+   "bst": 670,
+   "selvagem": false,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 380,
+   "nome": "Selenê",
+   "tipos": [
+    "Dark",
+    "Psychic"
+   ],
+   "bst": 670,
+   "selvagem": false,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 381,
+   "nome": "Zumbi-Rei",
+   "tipos": [
+    "Fighting",
+    "Dark"
+   ],
+   "bst": 655,
+   "selvagem": false,
+   "golpes_por_nivel": 15
+  },
+  {
+   "dex": 382,
+   "nome": "Iemanjã",
+   "tipos": [
+    "Water",
+    "Fairy"
+   ],
+   "bst": 695,
+   "selvagem": false,
+   "golpes_por_nivel": 19
+  },
+  {
+   "dex": 383,
+   "nome": "Oxumará",
+   "tipos": [
+    "Dragon",
+    "Fairy"
+   ],
+   "bst": 695,
+   "selvagem": false,
+   "golpes_por_nivel": 18
+  },
+  {
+   "dex": 384,
+   "nome": "Curupixel",
+   "tipos": [
+    "Grass",
+    "Fairy"
+   ],
+   "bst": 645,
+   "selvagem": false,
+   "golpes_por_nivel": 18
+  },
+  {
+   "dex": 385,
+   "nome": "Sacinho",
+   "tipos": [
+    "Dark",
+    "Fairy"
+   ],
+   "bst": 650,
+   "selvagem": false,
+   "golpes_por_nivel": 18
+  },
+  {
+   "dex": 386,
+   "nome": "Arauá",
+   "tipos": [
+    "Dragon",
+    "Psychic"
+   ],
+   "bst": 720,
+   "selvagem": false,
+   "golpes_por_nivel": 15
+  }
+ ],
+ "habilidades": [
+  [
+   78,
+   "FOGO_LEAL"
+  ],
+  [
+   79,
+   "VIGIA_ALADO"
+  ],
+  [
+   80,
+   "BICO_GRANITO"
+  ],
+  [
+   81,
+   "COBRA_GRANDE"
+  ],
+  [
+   82,
+   "COROA_SOLAR"
+  ],
+  [
+   83,
+   "VEU_LUNAR"
+  ],
+  [
+   84,
+   "VOZ_DE_TUPA"
+  ],
+  [
+   85,
+   "CANTO_RIO"
+  ],
+  [
+   86,
+   "SOL_PRIMEIRO"
+  ],
+  [
+   87,
+   "LUA_PRIMEVA"
+  ],
+  [
+   88,
+   "LACO_ETERNO"
+  ],
+  [
+   89,
+   "MIL_RIOS"
+  ],
+  [
+   90,
+   "GUARDIAO"
+  ],
+  [
+   91,
+   "MATA_RENOVA"
+  ],
+  [
+   92,
+   "TEMPESTADE"
+  ],
+  [
+   93,
+   "SECA_BRAVA"
+  ],
+  [
+   94,
+   "VENTO_SUL"
+  ],
+  [
+   95,
+   "SOLO_VIVO"
+  ],
+  [
+   96,
+   "FOGO_ANTIGO"
+  ],
+  [
+   97,
+   "MARE_MESTRA"
+  ],
+  [
+   98,
+   "PRIMEIRA_LUZ"
+  ],
+  [
+   99,
+   "ULTIMA_LUZ"
+  ],
+  [
+   100,
+   "DESEJO_VIVO"
+  ],
+  [
+   101,
+   "JURAMENTO"
+  ],
+  [
+   102,
+   "FOGO_VIGIA"
+  ],
+  [
+   103,
+   "REI_DO_RIO"
+  ],
+  [
+   104,
+   "CASCO_ANTIGO"
+  ],
+  [
+   105,
+   "SOL_ABSOLUTO"
+  ],
+  [
+   106,
+   "NOITE_ETERNA"
+  ],
+  [
+   107,
+   "RESISTENCIA"
+  ],
+  [
+   108,
+   "MAR_SAGRADO"
+  ],
+  [
+   109,
+   "ARCO_VIVO"
+  ],
+  [
+   110,
+   "PE_INVERSO"
+  ],
+  [
+   111,
+   "REDEMOINHO"
+  ],
+  [
+   112,
+   "ESSENCIA"
+  ]
+ ],
+ "golpes_assinatura": [
+  [
+   355,
+   "FAIRY_WIND",
+   "FAIRY",
+   40
+  ],
+  [
+   356,
+   "DISARMING_VOICE",
+   "FAIRY",
+   40
+  ],
+  [
+   357,
+   "DRAINING_KISS",
+   "FAIRY",
+   50
+  ],
+  [
+   358,
+   "DAZZLING_GLEAM",
+   "FAIRY",
+   80
+  ],
+  [
+   359,
+   "MOONBLAST",
+   "FAIRY",
+   95
+  ],
+  [
+   360,
+   "LUAR_DE_JACI",
+   "FAIRY",
+   100
+  ],
+  [
+   361,
+   "JURAMENTO_DE_ARAUANA",
+   "FAIRY",
+   105
+  ],
+  [
+   362,
+   "ECLIPSE_DIVINO",
+   "FAIRY",
+   110
+  ],
+  [
+   363,
+   "VIRA_LATA_CELESTE",
+   "FIRE",
+   90
+  ],
+  [
+   364,
+   "RAJADA_DO_BANHADO",
+   "WATER",
+   90
+  ],
+  [
+   365,
+   "MARTELO_DE_GRANITO",
+   "ROCK",
+   95
+  ],
+  [
+   366,
+   "FOGO_FATUO_ANCESTRAL",
+   "FIRE",
+   85
+  ],
+  [
+   367,
+   "PASSO_AO_CONTRARIO",
+   "GRASS",
+   80
+  ],
+  [
+   368,
+   "CANTO_DA_IARA",
+   "WATER",
+   75
+  ],
+  [
+   369,
+   "REDEMOINHO_DO_SACI",
+   "FLYING",
+   80
+  ],
+  [
+   370,
+   "ENCANTO_DO_BOTO",
+   "PSYCHIC",
+   85
+  ],
+  [
+   371,
+   "ABRACO_DA_BOIUNA",
+   "DRAGON",
+   95
+  ],
+  [
+   372,
+   "GALOPE_SEM_CABECA",
+   "FIRE",
+   90
+  ],
+  [
+   373,
+   "MARE_DA_MAE",
+   "WATER",
+   90
+  ],
+  [
+   374,
+   "FORJA_DE_OGUM",
+   "STEEL",
+   90
+  ],
+  [
+   375,
+   "OLHAR_DA_COBRA_GRANDE",
+   "GHOST",
+   0
+  ],
+  [
+   376,
+   "AURORA_DE_GUARACI",
+   "FIRE",
+   0
+  ],
+  [
+   377,
+   "TROVAO_DE_TUPA",
+   "ELECTRIC",
+   105
+  ],
+  [
+   378,
+   "CORRENTEZA_SUPREMA",
+   "WATER",
+   100
+  ],
+  [
+   379,
+   "INCENDIO_PRIMORDIAL",
+   "FIRE",
+   110
+  ],
+  [
+   380,
+   "MARULHO_ATLANTICO",
+   "WATER",
+   105
+  ],
+  [
+   381,
+   "ESSENCIA_PRIMORDIAL",
+   "DRAGON",
+   110
+  ]
+ ],
+ "treinadores": 855,
+ "elenco": [
+  [
+   "ARCHIE",
+   "OTACILIO"
+  ],
+  [
+   "BRAWLY",
+   "ADEMAR"
+  ],
+  [
+   "BRENDAN",
+   "CIRO"
+  ],
+  [
+   "FLANNERY",
+   "NARA"
+  ],
+  [
+   "JUAN",
+   "CELINA"
+  ],
+  [
+   "LIZA",
+   "CAETANO"
+  ],
+  [
+   "MATT",
+   "BRENO"
+  ],
+  [
+   "MAXIE",
+   "LUZIA"
+  ],
+  [
+   "MAY",
+   "CIRO"
+  ],
+  [
+   "NORMAN",
+   "ELIAS"
+  ],
+  [
+   "ROXANNE",
+   "DALVA"
+  ],
+  [
+   "SHELLY",
+   "MARTA"
+  ],
+  [
+   "STEVEN",
+   "BENTO"
+  ],
+  [
+   "TABITHA",
+   "RAUL"
+  ],
+  [
+   "TATE",
+   "CECILIA"
+  ],
+  [
+   "WALLACE",
+   "AMALIA"
+  ],
+  [
+   "WALLY",
+   "VAL"
+  ],
+  [
+   "WATTSON",
+   "OLIVIA"
+  ],
+  [
+   "WINONA",
+   "LIDIA"
+  ],
+  [
+   "RYDEL",
+   "ZEFERINO"
+  ],
+  [
+   "SCOTT",
+   "BENTO"
+  ],
+  [
+   "CAPT. STERN",
+   "NUNES"
+  ],
+  [
+   "MR. BRINEY",
+   "HONORIO"
+  ],
+  [
+   "PEEKO",
+   "PEROLA"
+  ],
+  [
+   "MR. STONE",
+   "AMARAL"
+  ],
+  [
+   "LANETTE",
+   "LENITA"
+  ],
+  [
+   "COZMO",
+   "SALUSTIO"
+  ],
+  [
+   "WINSTRATE",
+   "QUEIROZ"
+  ],
+  [
+   "BILL",
+   "ELCIO"
+  ],
+  [
+   "SIDNEY",
+   "LAZARO"
+  ],
+  [
+   "PHOEBE",
+   "ROSA"
+  ],
+  [
+   "GLACIA",
+   "CLARA"
+  ],
+  [
+   "DRAKE",
+   "TIBURCIO"
+  ]
+ ],
+ "canone": [
+  [
+   "Core theme",
+   "memory, grief, erasure and consent."
+  ],
+  [
+   "Phenomenon",
+   "Desencanto."
+  ],
+  [
+   "Technology",
+   "Arquivo Vivo."
+  ],
+  [
+   "Corporate force",
+   "Consorcio Horizonte, led by Dr. Otacilio Meira."
+  ],
+  [
+   "Radical opposition",
+   "Lembrantes, led by Luzia Ferraz."
+  ],
+  [
+   "Mentor",
+   "Professora Anahi, who helped create the first Vinculo sensors."
+  ],
+  [
+   "Oral-memory keeper",
+   "Dona Zila."
+  ],
+  [
+   "Rival",
+   "Ciro, initially sponsored by Horizonte."
+  ],
+  [
+   "Father",
+   "Elias, connected to the approvals behind the M'Boi disaster."
+  ],
+  [
+   "Final thesis",
+   "nobody has the right to decide for someone else what deserves to be remembered."
+  ]
+ ],
+ "lugares": [
+  [
+   "ABANDONED SHIP",
+   "NAVIO PERDIDO"
+  ],
+  [
+   "ANCIENT TOMB",
+   "TUMBA ANTIGA"
+  ],
+  [
+   "ARTISAN CAVE",
+   "GRUTA DO OFICIO"
+  ],
+  [
+   "CAVE OF ORIGIN",
+   "GRUTA DA ORIGEM"
+  ],
+  [
+   "DESERT RUINS",
+   "RUINAS DA AREIA"
+  ],
+  [
+   "DESERT UNDERPASS",
+   "PASSAGEM SECA"
+  ],
+  [
+   "DEWFORD",
+   "PORTO DAS REDES"
+  ],
+  [
+   "EVER GRANDE",
+   "ESTR. JURAMENTO"
+  ],
+  [
+   "FALLARBOR",
+   "CAMPO DAS CINZAS"
+  ],
+  [
+   "FIERY PATH",
+   "TRILHA DE BRASA"
+  ],
+  [
+   "FORTREE",
+   "MATA DO MEIO"
+  ],
+  [
+   "GRANITE CAVE",
+   "GRUTA DAS VOZES"
+  ],
+  [
+   "ISLAND CAVE",
+   "GRUTA DA ILHA"
+  ],
+  [
+   "JAGGED PASS",
+   "PASSO CORTADO"
+  ],
+  [
+   "LAVARIDGE",
+   "SERTAO DE DENTRO"
+  ],
+  [
+   "LILYCOVE",
+   "BAIA DAS LUZES"
+  ],
+  [
+   "LITTLEROOT",
+   "VILA AMANHECER"
+  ],
+  [
+   "MARINE CAVE",
+   "GRUTA DAS MARES"
+  ],
+  [
+   "MAUVILLE",
+   "ENCRUZILHADA"
+  ],
+  [
+   "METEOR FALLS",
+   "RUINAS DA QUEDA"
+  ],
+  [
+   "MIRAGE ISLAND",
+   "ILHA MIRAGEM"
+  ],
+  [
+   "MIRAGE TOWER",
+   "TORRE MIRAGEM"
+  ],
+  [
+   "MOSSDEEP",
+   "MISSOES DO CEU"
+  ],
+  [
+   "MT. CHIMNEY",
+   "SERRA DA CINZA"
+  ],
+  [
+   "MT. PYRE",
+   "MEMORIAL DOS NOMES"
+  ],
+  [
+   "NEW MAUVILLE",
+   "USINA VELHA"
+  ],
+  [
+   "OLDALE",
+   "VILA DA PASSAGEM"
+  ],
+  [
+   "PACIFIDLOG",
+   "CASA DA FOGUEIRA"
+  ],
+  [
+   "PETALBURG",
+   "PAMPA DA ESPERA"
+  ],
+  [
+   "PETALBURG WOODS",
+   "MATA DA ESPERA"
+  ],
+  [
+   "RUSTBORO",
+   "SERRA DO UIVO"
+  ],
+  [
+   "RUSTURF TUNNEL",
+   "GALERIAS SERRA"
+  ],
+  [
+   "SAFARI ZONE",
+   "RESERVA ARAUNA"
+  ],
+  [
+   "SCORCHED SLAB",
+   "LAJE QUEIMADA"
+  ],
+  [
+   "SEAFLOOR CAVERN",
+   "CAVERNAS M'BOI"
+  ],
+  [
+   "SEALED CHAMBER",
+   "CAMARA SELADA"
+  ],
+  [
+   "SHOAL CAVE",
+   "GRUTA DA MARE"
+  ],
+  [
+   "SKY PILLAR",
+   "TORRE JURAMENTO"
+  ],
+  [
+   "SLATEPORT",
+   "PORTO DO SAL"
+  ],
+  [
+   "SOOTOPOLIS",
+   "AGUAS DE M'BOI"
+  ],
+  [
+   "SOUTHERN ISLAND",
+   "ILHA DO SUL"
+  ],
+  [
+   "TERRA CAVE",
+   "GRUTA DA TERRA"
+  ],
+  [
+   "VERDANTURF",
+   "VALE DO SILENCIO"
+  ]
+ ],
+ "ligacoes": {
+  "PetalburgCity": [
+   [
+    "left",
+    "ROUTE104"
+   ],
+   [
+    "right",
+    "ROUTE102"
+   ]
+  ],
+  "SlateportCity": [
+   [
+    "up",
+    "ROUTE110"
+   ],
+   [
+    "down",
+    "ROUTE109"
+   ],
+   [
+    "right",
+    "ROUTE134"
+   ]
+  ],
+  "MauvilleCity": [
+   [
+    "up",
+    "ROUTE111"
+   ],
+   [
+    "down",
+    "ROUTE110"
+   ],
+   [
+    "left",
+    "ROUTE117"
+   ],
+   [
+    "right",
+    "ROUTE118"
+   ]
+  ],
+  "RustboroCity": [
+   [
+    "up",
+    "ROUTE115"
+   ],
+   [
+    "down",
+    "ROUTE104"
+   ],
+   [
+    "right",
+    "ROUTE116"
+   ]
+  ],
+  "FortreeCity": [
+   [
+    "left",
+    "ROUTE119"
+   ],
+   [
+    "right",
+    "ROUTE120"
+   ]
+  ],
+  "LilycoveCity": [
+   [
+    "left",
+    "ROUTE121"
+   ],
+   [
+    "right",
+    "ROUTE124"
+   ]
+  ],
+  "MossdeepCity": [
+   [
+    "up",
+    "ROUTE125"
+   ],
+   [
+    "down",
+    "ROUTE127"
+   ],
+   [
+    "left",
+    "ROUTE124"
+   ]
+  ],
+  "EverGrandeCity": [
+   [
+    "left",
+    "ROUTE128"
+   ]
+  ],
+  "LittlerootTown": [
+   [
+    "up",
+    "ROUTE101"
+   ]
+  ],
+  "OldaleTown": [
+   [
+    "up",
+    "ROUTE103"
+   ],
+   [
+    "down",
+    "ROUTE101"
+   ],
+   [
+    "left",
+    "ROUTE102"
+   ]
+  ],
+  "DewfordTown": [
+   [
+    "up",
+    "ROUTE106"
+   ],
+   [
+    "right",
+    "ROUTE107"
+   ]
+  ],
+  "LavaridgeTown": [
+   [
+    "right",
+    "ROUTE112"
+   ]
+  ],
+  "FallarborTown": [
+   [
+    "left",
+    "ROUTE114"
+   ],
+   [
+    "right",
+    "ROUTE113"
+   ]
+  ],
+  "VerdanturfTown": [
+   [
+    "up",
+    "ROUTE116"
+   ],
+   [
+    "right",
+    "ROUTE117"
+   ]
+  ],
+  "PacifidlogTown": [
+   [
+    "left",
+    "ROUTE132"
+   ],
+   [
+    "right",
+    "ROUTE131"
+   ]
+  ],
+  "Route101": [
+   [
+    "up",
+    "OLDALE_TOWN"
+   ],
+   [
+    "down",
+    "LITTLEROOT_TOWN"
+   ]
+  ],
+  "Route102": [
+   [
+    "left",
+    "PETALBURG_CITY"
+   ],
+   [
+    "right",
+    "OLDALE_TOWN"
+   ]
+  ],
+  "Route103": [
+   [
+    "down",
+    "OLDALE_TOWN"
+   ],
+   [
+    "right",
+    "ROUTE110"
+   ]
+  ],
+  "Route104": [
+   [
+    "up",
+    "RUSTBORO_CITY"
+   ],
+   [
+    "down",
+    "ROUTE105"
+   ],
+   [
+    "right",
+    "PETALBURG_CITY"
+   ]
+  ],
+  "Route105": [
+   [
+    "up",
+    "ROUTE104"
+   ],
+   [
+    "down",
+    "ROUTE106"
+   ],
+   [
+    "dive",
+    "UNDERWATER_ROUTE105"
+   ]
+  ],
+  "Route106": [
+   [
+    "up",
+    "ROUTE105"
+   ],
+   [
+    "down",
+    "DEWFORD_TOWN"
+   ]
+  ],
+  "Route107": [
+   [
+    "left",
+    "DEWFORD_TOWN"
+   ],
+   [
+    "right",
+    "ROUTE108"
+   ]
+  ],
+  "Route108": [
+   [
+    "left",
+    "ROUTE107"
+   ],
+   [
+    "right",
+    "ROUTE109"
+   ]
+  ],
+  "Route109": [
+   [
+    "up",
+    "SLATEPORT_CITY"
+   ],
+   [
+    "left",
+    "ROUTE108"
+   ]
+  ],
+  "Route110": [
+   [
+    "up",
+    "MAUVILLE_CITY"
+   ],
+   [
+    "down",
+    "SLATEPORT_CITY"
+   ],
+   [
+    "left",
+    "ROUTE103"
+   ]
+  ],
+  "Route111": [
+   [
+    "down",
+    "MAUVILLE_CITY"
+   ],
+   [
+    "left",
+    "ROUTE113"
+   ],
+   [
+    "left",
+    "ROUTE112"
+   ]
+  ],
+  "Route112": [
+   [
+    "up",
+    "ROUTE113"
+   ],
+   [
+    "left",
+    "LAVARIDGE_TOWN"
+   ],
+   [
+    "right",
+    "ROUTE111"
+   ]
+  ],
+  "Route113": [
+   [
+    "down",
+    "ROUTE112"
+   ],
+   [
+    "left",
+    "FALLARBOR_TOWN"
+   ],
+   [
+    "right",
+    "ROUTE111"
+   ]
+  ],
+  "Route114": [
+   [
+    "left",
+    "ROUTE115"
+   ],
+   [
+    "right",
+    "FALLARBOR_TOWN"
+   ]
+  ],
+  "Route115": [
+   [
+    "down",
+    "RUSTBORO_CITY"
+   ],
+   [
+    "right",
+    "ROUTE114"
+   ]
+  ],
+  "Route116": [
+   [
+    "down",
+    "VERDANTURF_TOWN"
+   ],
+   [
+    "left",
+    "RUSTBORO_CITY"
+   ]
+  ],
+  "Route117": [
+   [
+    "left",
+    "VERDANTURF_TOWN"
+   ],
+   [
+    "right",
+    "MAUVILLE_CITY"
+   ]
+  ],
+  "Route118": [
+   [
+    "up",
+    "ROUTE119"
+   ],
+   [
+    "left",
+    "MAUVILLE_CITY"
+   ],
+   [
+    "right",
+    "ROUTE123"
+   ]
+  ],
+  "Route119": [
+   [
+    "down",
+    "ROUTE118"
+   ],
+   [
+    "right",
+    "FORTREE_CITY"
+   ]
+  ],
+  "Route120": [
+   [
+    "left",
+    "FORTREE_CITY"
+   ],
+   [
+    "right",
+    "ROUTE121"
+   ]
+  ],
+  "Route121": [
+   [
+    "down",
+    "ROUTE122"
+   ],
+   [
+    "left",
+    "ROUTE120"
+   ],
+   [
+    "right",
+    "LILYCOVE_CITY"
+   ]
+  ],
+  "Route122": [
+   [
+    "up",
+    "ROUTE121"
+   ],
+   [
+    "down",
+    "ROUTE123"
+   ]
+  ],
+  "Route123": [
+   [
+    "up",
+    "ROUTE122"
+   ],
+   [
+    "left",
+    "ROUTE118"
+   ]
+  ],
+  "Route124": [
+   [
+    "down",
+    "ROUTE126"
+   ],
+   [
+    "left",
+    "LILYCOVE_CITY"
+   ],
+   [
+    "right",
+    "ROUTE125"
+   ],
+   [
+    "right",
+    "MOSSDEEP_CITY"
+   ],
+   [
+    "dive",
+    "UNDERWATER_ROUTE124"
+   ]
+  ],
+  "Route125": [
+   [
+    "down",
+    "MOSSDEEP_CITY"
+   ],
+   [
+    "left",
+    "ROUTE124"
+   ],
+   [
+    "dive",
+    "UNDERWATER_ROUTE125"
+   ]
+  ],
+  "Route126": [
+   [
+    "up",
+    "ROUTE124"
+   ],
+   [
+    "right",
+    "ROUTE127"
+   ],
+   [
+    "dive",
+    "UNDERWATER_ROUTE126"
+   ]
+  ],
+  "Route127": [
+   [
+    "up",
+    "MOSSDEEP_CITY"
+   ],
+   [
+    "down",
+    "ROUTE128"
+   ],
+   [
+    "left",
+    "ROUTE126"
+   ],
+   [
+    "dive",
+    "UNDERWATER_ROUTE127"
+   ]
+  ],
+  "Route128": [
+   [
+    "up",
+    "ROUTE127"
+   ],
+   [
+    "down",
+    "ROUTE129"
+   ],
+   [
+    "right",
+    "EVER_GRANDE_CITY"
+   ],
+   [
+    "dive",
+    "UNDERWATER_ROUTE128"
+   ]
+  ],
+  "Route129": [
+   [
+    "up",
+    "ROUTE128"
+   ],
+   [
+    "left",
+    "ROUTE130"
+   ],
+   [
+    "dive",
+    "UNDERWATER_ROUTE129"
+   ]
+  ],
+  "Route130": [
+   [
+    "left",
+    "ROUTE131"
+   ],
+   [
+    "right",
+    "ROUTE129"
+   ]
+  ],
+  "Route131": [
+   [
+    "left",
+    "PACIFIDLOG_TOWN"
+   ],
+   [
+    "right",
+    "ROUTE130"
+   ]
+  ],
+  "Route132": [
+   [
+    "left",
+    "ROUTE133"
+   ],
+   [
+    "right",
+    "PACIFIDLOG_TOWN"
+   ]
+  ],
+  "Route133": [
+   [
+    "left",
+    "ROUTE134"
+   ],
+   [
+    "right",
+    "ROUTE132"
+   ]
+  ],
+  "Route134": [
+   [
+    "left",
+    "SLATEPORT_CITY"
+   ],
+   [
+    "right",
+    "ROUTE133"
+   ]
+  ],
+  "Underwater_Route124": [
+   [
+    "down",
+    "UNDERWATER_ROUTE126"
+   ],
+   [
+    "emerge",
+    "ROUTE124"
+   ]
+  ],
+  "Underwater_Route126": [
+   [
+    "up",
+    "UNDERWATER_ROUTE124"
+   ],
+   [
+    "right",
+    "UNDERWATER_ROUTE127"
+   ],
+   [
+    "emerge",
+    "ROUTE126"
+   ]
+  ],
+  "Underwater_Route127": [
+   [
+    "emerge",
+    "ROUTE127"
+   ],
+   [
+    "left",
+    "UNDERWATER_ROUTE126"
+   ],
+   [
+    "down",
+    "UNDERWATER_ROUTE128"
+   ]
+  ],
+  "Underwater_Route128": [
+   [
+    "up",
+    "UNDERWATER_ROUTE127"
+   ],
+   [
+    "emerge",
+    "ROUTE128"
+   ]
+  ],
+  "Underwater_Route129": [
+   [
+    "emerge",
+    "ROUTE129"
+   ]
+  ],
+  "Underwater_Route105": [
+   [
+    "emerge",
+    "ROUTE105"
+   ]
+  ],
+  "Underwater_Route125": [
+   [
+    "emerge",
+    "ROUTE125"
+   ]
+  ],
+  "SafariZone_Northwest": [
+   [
+    "right",
+    "SAFARI_ZONE_NORTH"
+   ],
+   [
+    "down",
+    "SAFARI_ZONE_SOUTHWEST"
+   ]
+  ],
+  "SafariZone_North": [
+   [
+    "left",
+    "SAFARI_ZONE_NORTHWEST"
+   ],
+   [
+    "down",
+    "SAFARI_ZONE_SOUTH"
+   ],
+   [
+    "right",
+    "SAFARI_ZONE_NORTHEAST"
+   ]
+  ],
+  "SafariZone_Southwest": [
+   [
+    "up",
+    "SAFARI_ZONE_NORTHWEST"
+   ],
+   [
+    "right",
+    "SAFARI_ZONE_SOUTH"
+   ]
+  ],
+  "SafariZone_South": [
+   [
+    "up",
+    "SAFARI_ZONE_NORTH"
+   ],
+   [
+    "left",
+    "SAFARI_ZONE_SOUTHWEST"
+   ],
+   [
+    "right",
+    "SAFARI_ZONE_SOUTHEAST"
+   ]
+  ],
+  "BattleFrontier_OutsideWest": [
+   [
+    "right",
+    "BATTLE_FRONTIER_OUTSIDE_EAST"
+   ]
+  ],
+  "SafariZone_Northeast": [
+   [
+    "left",
+    "SAFARI_ZONE_NORTH"
+   ],
+   [
+    "down",
+    "SAFARI_ZONE_SOUTHEAST"
+   ]
+  ],
+  "SafariZone_Southeast": [
+   [
+    "left",
+    "SAFARI_ZONE_SOUTH"
+   ],
+   [
+    "up",
+    "SAFARI_ZONE_NORTHEAST"
+   ]
+  ],
+  "BattleFrontier_OutsideEast": [
+   [
+    "left",
+    "BATTLE_FRONTIER_OUTSIDE_WEST"
+   ]
+  ]
+ },
+ "especiais_pendentes": [
+  {
+   "dex": "329",
+   "name": "Guaraciana",
+   "types": "fire/fairy",
+   "recommended_level": "60",
+   "placement": "SERRA DO UIVO / TORRE JURAMENTO - santuario dedicado",
+   "tem_casa": false
+  },
+  {
+   "dex": "330",
+   "name": "Jaciana",
+   "types": "fairy/water",
+   "recommended_level": "60",
+   "placement": "BAIA DAS LUZES / aguas costeiras - encontro estatico",
+   "tem_casa": false
+  },
+  {
+   "dex": "331",
+   "name": "Tupanaú",
+   "types": "electric/dragon",
+   "recommended_level": "60",
+   "placement": "SERRA DO UIVO / TORRE JURAMENTO - santuario dedicado",
+   "tem_casa": false
+  },
+  {
+   "dex": "332",
+   "name": "Iaraú",
+   "types": "water/fairy",
+   "recommended_level": "60",
+   "placement": "MATA DO MEIO / CAVERNAS M'BOI - encontro estatico",
+   "tem_casa": false
+  },
+  {
+   "dex": "333",
+   "name": "Kuarahy",
+   "types": "fire/psychic",
+   "recommended_level": "60",
+   "placement": "SERRA DO UIVO / TORRE JURAMENTO - santuario dedicado",
+   "tem_casa": false
+  },
+  {
+   "dex": "334",
+   "name": "Yasy",
+   "types": "fairy/dark",
+   "recommended_level": "60",
+   "placement": "SERRA DO UIVO / TORRE JURAMENTO - santuario dedicado",
+   "tem_casa": false
+  },
+  {
+   "dex": "335",
+   "name": "Rudarauna",
+   "types": "fairy/psychic",
+   "recommended_level": "60",
+   "placement": "BAIA DAS LUZES / aguas costeiras - encontro estatico",
+   "tem_casa": false
+  },
+  {
+   "dex": "336",
+   "name": "Perybé",
+   "types": "water/psychic",
+   "recommended_level": "60",
+   "placement": "MATA DO MEIO / CAVERNAS M'BOI - encontro estatico",
+   "tem_casa": false
+  },
+  {
+   "dex": "337",
+   "name": "Arauanaú",
+   "types": "fairy/dragon",
+   "recommended_level": "62",
+   "placement": "TORRE JURAMENTO / ESTR. JURAMENTO",
+   "tem_casa": false
+  },
+  {
+   "dex": "338",
+   "name": "Verdejante",
+   "types": "grass/dragon",
+   "recommended_level": "60",
+   "placement": "MATA DO MEIO / CAVERNAS M'BOI - encontro estatico",
+   "tem_casa": false
+  },
+  {
+   "dex": "339",
+   "name": "Chuvão",
+   "types": "water/electric",
+   "recommended_level": "60",
+   "placement": "BAIA DAS LUZES / aguas costeiras - encontro estatico",
+   "tem_casa": false
+  },
+  {
+   "dex": "340",
+   "name": "Solzão",
+   "types": "fire/ground",
+   "recommended_level": "58",
+   "placement": "SERRA DA CINZA / torre ou ruina dedicada",
+   "tem_casa": false
+  },
+  {
+   "dex": "341",
+   "name": "Ventania",
+   "types": "flying/dragon",
+   "recommended_level": "58",
+   "placement": "Cerrado tardio / santuario dedicado",
+   "tem_casa": false
+  },
+  {
+   "dex": "342",
+   "name": "Terraão",
+   "types": "ground/rock",
+   "recommended_level": "62",
+   "placement": "RUINAS DA QUEDA / ESTR. JURAMENTO",
+   "tem_casa": false
+  },
+  {
+   "dex": "343",
+   "name": "Fogaréu",
+   "types": "fire/dragon",
+   "recommended_level": "60",
+   "placement": "SERRA DO UIVO / TORRE JURAMENTO - santuario dedicado",
+   "tem_casa": false
+  },
+  {
+   "dex": "344",
+   "name": "Marulho",
+   "types": "water/dragon",
+   "recommended_level": "60",
+   "placement": "BAIA DAS LUZES / aguas costeiras - encontro estatico",
+   "tem_casa": false
+  },
+  {
+   "dex": "345",
+   "name": "Alvorecer",
+   "types": "fairy/fire",
+   "recommended_level": "60",
+   "placement": "BAIA DAS LUZES / aguas costeiras - encontro estatico",
+   "tem_casa": true
+  },
+  {
+   "dex": "346",
+   "name": "Poente",
+   "types": "dark/fire",
+   "recommended_level": "60",
+   "placement": "BAIA DAS LUZES / aguas costeiras - encontro estatico",
+   "tem_casa": false
+  },
+  {
+   "dex": "347",
+   "name": "Estrelinha",
+   "types": "fairy/psychic",
+   "recommended_level": "65",
+   "placement": "SERRA DO UIVO / TORRE JURAMENTO - santuario dedicado",
+   "tem_casa": true
+  },
+  {
+   "dex": "348",
+   "name": "Arauanamon",
+   "types": "dragon/fairy",
+   "recommended_level": "68",
+   "placement": "TORRE JURAMENTO / ESTR. JURAMENTO",
+   "tem_casa": false
+  },
+  {
+   "dex": "376",
+   "name": "Boitatã",
+   "types": "fire/dragon",
+   "recommended_level": "65",
+   "placement": "Cerrado tardio / santuario dedicado",
+   "tem_casa": false
+  },
+  {
+   "dex": "377",
+   "name": "Piraruaçu",
+   "types": "water/dragon",
+   "recommended_level": "65",
+   "placement": "MATA DO MEIO / CAVERNAS M'BOI - encontro estatico",
+   "tem_casa": true
+  },
+  {
+   "dex": "378",
+   "name": "Mata-Mata",
+   "types": "grass/dragon",
+   "recommended_level": "65",
+   "placement": "MATA DO MEIO / CAVERNAS M'BOI - encontro estatico",
+   "tem_casa": true
+  },
+  {
+   "dex": "379",
+   "name": "Solaris",
+   "types": "fire/psychic",
+   "recommended_level": "65",
+   "placement": "SERRA DO UIVO / TORRE JURAMENTO - santuario dedicado",
+   "tem_casa": true
+  },
+  {
+   "dex": "380",
+   "name": "Selenê",
+   "types": "dark/psychic",
+   "recommended_level": "65",
+   "placement": "SERRA DO UIVO / TORRE JURAMENTO - santuario dedicado",
+   "tem_casa": true
+  },
+  {
+   "dex": "381",
+   "name": "Zumbi-Rei",
+   "types": "fighting/dark",
+   "recommended_level": "65",
+   "placement": "SERRA DO UIVO / TORRE JURAMENTO - santuario dedicado",
+   "tem_casa": true
+  },
+  {
+   "dex": "382",
+   "name": "Iemanjã",
+   "types": "water/fairy",
+   "recommended_level": "65",
+   "placement": "BAIA DAS LUZES / aguas costeiras - encontro estatico",
+   "tem_casa": true
+  },
+  {
+   "dex": "383",
+   "name": "Oxumará",
+   "types": "dragon/fairy",
+   "recommended_level": "65",
+   "placement": "BAIA DAS LUZES / aguas costeiras - encontro estatico",
+   "tem_casa": true
+  },
+  {
+   "dex": "384",
+   "name": "Curupixel",
+   "types": "grass/fairy",
+   "recommended_level": "65",
+   "placement": "MATA DO MEIO / CAVERNAS M'BOI - encontro estatico",
+   "tem_casa": true
+  },
+  {
+   "dex": "385",
+   "name": "Sacinho",
+   "types": "dark/fairy",
+   "recommended_level": "65",
+   "placement": "Cerrado tardio / santuario dedicado",
+   "tem_casa": false
+  },
+  {
+   "dex": "386",
+   "name": "Arauá",
+   "types": "dragon/psychic",
+   "recommended_level": "75",
+   "placement": "TORRE JURAMENTO / evento final dedicado",
+   "tem_casa": true
+  }
+ ],
+ "verificacao": {
+  "resumo": "Nada aqui foi so compilado. Cada linha abaixo foi provada com a ROM rodando num emulador, lendo a memoria do jogo -- equipe, niveis, IVs, golpes, HP turno a turno -- e nao olhando o codigo-fonte.",
+  "itens": [
+   {
+    "nome": "Varredura de mapas",
+    "resultado": "403 mapas visitados com o jogador andando 5s em cada um, checando a cada segundo se o ponteiro do save saiu da EWRAM, se o id do mapa deixou de existir, se a tela congelou com input aceito ou se o jogo voltou para a tela de copyright. **Zero achados.**"
+   },
+   {
+    "nome": "Times dos tres chefes novos",
+    "resultado": "Dalva, Ademar e Olivia lidos de gEnemyParty dentro da batalha: as cinco vagas de cada um chegam com especie, nivel, item, os seis IVs e os quatro golpes customizados exatos."
+   },
+   {
+    "nome": "Dificuldade medida",
+    "resultado": "Seis partidas completas. Contra a Dalva, um inicial de nv15 com o golpe certo derruba 4 de 5. Contra o Ademar, 2 de 5. Contra a Olivia, um Ground derruba 2 e trava na dupla Water/Electric."
+   },
+   {
+    "nome": "Learnsets dos 386",
+    "resultado": "Lidos de volta da ROM linkada, decodificando gLevelUpLearnsets. Criaturas criadas em quatro niveis diferentes recebem exatamente os golpes que a tabela promete."
+   },
+   {
+    "nome": "Portugues residual",
+    "resultado": "37418 strings visiveis varridas contra um lexico portugues. Nenhuma passa."
+   },
+   {
+    "nome": "Largura de texto",
+    "resultado": "575 arquivos de script medidos como o motor mede, a partir de charmap.txt e gFontNormalLatinGlyphWidths. Nada acima dos 208px da caixa de fala."
+   },
+   {
+    "nome": "Disponibilidade",
+    "resultado": "293 criaturas capturaveis na natureza, 366 de 386 obteniveis contando evolucao e presentes."
+   },
+   {
+    "nome": "ROM limpa",
+    "resultado": "Nenhum simbolo do harness de teste sobrevive na ROM final; a arvore fica limpa depois de cada prova."
+   }
+  ],
+  "ressalvas": "Ninguem jogou esta beta do inicio ao fim. A varredura prova que os mapas carregam e que da para andar neles, e as partidas provam que os chefes funcionam -- mas nenhum teste automatico seguiu a cadeia de flags da historia da Vila do Amanhecer ate a Campea. Esse e o teste que a beta publica existe para fazer. Os seis mapas UnusedContestHall* ficaram de fora da varredura: sao conteudo morto do Emerald, inalcancavel em jogo, e o harness trava ao entrar neles justamente por isso."
+ },
+ "ginasios": [
+  {
+   "chefe": "Dalva",
+   "tipo": "ROCK",
+   "casa": "Serra do Uivo",
+   "ordem": 1,
+   "teto": 15,
+   "time": [
+    {
+     "dex": 196,
+     "nome": "Pedrinha",
+     "tipos": [
+      "Rock"
+     ],
+     "bst": 284,
+     "nivel": 13,
+     "iv": 83,
+     "iv31": 10,
+     "item": "Shell Bell",
+     "golpes": [
+      {
+       "nome": "Defense Curl",
+       "tipo": "Normal",
+       "poder": null
+      },
+      {
+       "nome": "Rollout",
+       "tipo": "Rock",
+       "poder": 30
+      },
+      {
+       "nome": "Sandstorm",
+       "tipo": "Rock",
+       "poder": null
+      },
+      {
+       "nome": "Tackle",
+       "tipo": "Normal",
+       "poder": 35
+      }
+     ]
+    },
+    {
+     "dex": 134,
+     "nome": "Cascudo",
+     "tipos": [
+      "Water",
+      "Rock"
+     ],
+     "bst": 448,
+     "nivel": 14,
+     "iv": 124,
+     "iv31": 15,
+     "item": "Kings Rock",
+     "golpes": [
+      {
+       "nome": "Surf",
+       "tipo": "Water",
+       "poder": 95
+      },
+      {
+       "nome": "Tackle",
+       "tipo": "Normal",
+       "poder": 35
+      },
+      {
+       "nome": "Withdraw",
+       "tipo": "Water",
+       "poder": null
+      },
+      {
+       "nome": "Rollout",
+       "tipo": "Rock",
+       "poder": 30
+      }
+     ]
+    },
+    {
+     "dex": 198,
+     "nome": "Cristalim",
+     "tipos": [
+      "Rock",
+      "Fairy"
+     ],
+     "bst": 282,
+     "nivel": 14,
+     "iv": 149,
+     "iv31": 18,
+     "item": "Sitrus Berry",
+     "golpes": [
+      {
+       "nome": "Confusion",
+       "tipo": "Psychic",
+       "poder": 50
+      },
+      {
+       "nome": "Ancient Power",
+       "tipo": "Rock",
+       "poder": 60
+      },
+      {
+       "nome": "Rock Slide",
+       "tipo": "Rock",
+       "poder": 75
+      },
+      {
+       "nome": "Charm",
+       "tipo": "Fairy",
+       "poder": null
+      }
+     ]
+    },
+    {
+     "dex": 211,
+     "nome": "Fóssil",
+     "tipos": [
+      "Rock",
+      "Dragon"
+     ],
+     "bst": 448,
+     "nivel": 14,
+     "iv": 165,
+     "iv31": 20,
+     "item": "Sitrus Berry",
+     "golpes": [
+      {
+       "nome": "Dragon Rage",
+       "tipo": "Dragon",
+       "poder": 1
+      },
+      {
+       "nome": "Harden",
+       "tipo": "Normal",
+       "poder": null
+      },
+      {
+       "nome": "Ancient Power",
+       "tipo": "Rock",
+       "poder": 60
+      },
+      {
+       "nome": "Dragon Dance",
+       "tipo": "Dragon",
+       "poder": null
+      }
+     ]
+    },
+    {
+     "dex": 215,
+     "nome": "Granito",
+     "tipos": [
+      "Rock",
+      "Fighting"
+     ],
+     "bst": 445,
+     "nivel": 15,
+     "iv": 255,
+     "iv31": 31,
+     "item": "Sitrus Berry",
+     "golpes": [
+      {
+       "nome": "Karate Chop",
+       "tipo": "Fighting",
+       "poder": 50
+      },
+      {
+       "nome": "Ancient Power",
+       "tipo": "Rock",
+       "poder": 60
+      },
+      {
+       "nome": "Mach Punch",
+       "tipo": "Fighting",
+       "poder": 40
+      },
+      {
+       "nome": "Tackle",
+       "tipo": "Normal",
+       "poder": 35
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "chefe": "Ademar",
+   "tipo": "FIGHTING",
+   "casa": "Casa da Mare",
+   "ordem": 2,
+   "teto": 19,
+   "time": [
+    {
+     "dex": 62,
+     "nome": "Prego",
+     "tipos": [
+      "Fighting",
+      "Normal"
+     ],
+     "bst": 404,
+     "nivel": 17,
+     "iv": 99,
+     "iv31": 12,
+     "item": "Sitrus Berry",
+     "golpes": [
+      {
+       "nome": "Double Edge",
+       "tipo": "Normal",
+       "poder": 120
+      },
+      {
+       "nome": "Cross Chop",
+       "tipo": "Fighting",
+       "poder": 100
+      },
+      {
+       "nome": "Headbutt",
+       "tipo": "Normal",
+       "poder": 70
+      },
+      {
+       "nome": "Focus Energy",
+       "tipo": "Normal",
+       "poder": null
+      }
+     ]
+    },
+    {
+     "dex": 105,
+     "nome": "Caboclo",
+     "tipos": [
+      "Water",
+      "Fighting"
+     ],
+     "bst": 551,
+     "nivel": 17,
+     "iv": 107,
+     "iv31": 13,
+     "item": "Sitrus Berry",
+     "golpes": [
+      {
+       "nome": "Rain Dance",
+       "tipo": "Water",
+       "poder": null
+      },
+      {
+       "nome": "Surf",
+       "tipo": "Water",
+       "poder": 95
+      },
+      {
+       "nome": "Mach Punch",
+       "tipo": "Fighting",
+       "poder": 40
+      },
+      {
+       "nome": "Karate Chop",
+       "tipo": "Fighting",
+       "poder": 50
+      }
+     ]
+    },
+    {
+     "dex": 161,
+     "nome": "Gavião",
+     "tipos": [
+      "Flying",
+      "Fighting"
+     ],
+     "bst": 447,
+     "nivel": 17,
+     "iv": 116,
+     "iv31": 14,
+     "item": "Black Belt",
+     "golpes": [
+      {
+       "nome": "Brick Break",
+       "tipo": "Fighting",
+       "poder": 75
+      },
+      {
+       "nome": "Mach Punch",
+       "tipo": "Fighting",
+       "poder": 40
+      },
+      {
+       "nome": "Wing Attack",
+       "tipo": "Flying",
+       "poder": 60
+      },
+      {
+       "nome": "Whirlwind",
+       "tipo": "Normal",
+       "poder": null
+      }
+     ]
+    },
+    {
+     "dex": 239,
+     "nome": "Mão-Peluda",
+     "tipos": [
+      "Ghost",
+      "Fighting"
+     ],
+     "bst": 449,
+     "nivel": 17,
+     "iv": 132,
+     "iv31": 16,
+     "item": "Sitrus Berry",
+     "golpes": [
+      {
+       "nome": "Confuse Ray",
+       "tipo": "Ghost",
+       "poder": null
+      },
+      {
+       "nome": "Sing",
+       "tipo": "Normal",
+       "poder": null
+      },
+      {
+       "nome": "Low Kick",
+       "tipo": "Fighting",
+       "poder": 1
+      },
+      {
+       "nome": "Mach Punch",
+       "tipo": "Fighting",
+       "poder": 40
+      }
+     ]
+    },
+    {
+     "dex": 255,
+     "nome": "Zumbi",
+     "tipos": [
+      "Ghost",
+      "Fighting"
+     ],
+     "bst": 606,
+     "nivel": 19,
+     "iv": 255,
+     "iv31": 31,
+     "item": "Rawst Berry",
+     "golpes": [
+      {
+       "nome": "Destiny Bond",
+       "tipo": "Ghost",
+       "poder": null
+      },
+      {
+       "nome": "Shadow Ball",
+       "tipo": "Ghost",
+       "poder": 80
+      },
+      {
+       "nome": "Mach Punch",
+       "tipo": "Fighting",
+       "poder": 40
+      },
+      {
+       "nome": "Sky Uppercut",
+       "tipo": "Fighting",
+       "poder": 85
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "chefe": "Olivia",
+   "tipo": "ELECTRIC",
+   "casa": "Encruzilhada",
+   "ordem": 3,
+   "teto": 24,
+   "time": [
+    {
+     "dex": 200,
+     "nome": "Ouríço",
+     "tipos": [
+      "Steel",
+      "Electric"
+     ],
+     "bst": 448,
+     "nivel": 22,
+     "iv": 83,
+     "iv31": 10,
+     "item": "Sitrus Berry",
+     "golpes": [
+      {
+       "nome": "Steel Wing",
+       "tipo": "Steel",
+       "poder": 70
+      },
+      {
+       "nome": "Agility",
+       "tipo": "Psychic",
+       "poder": null
+      },
+      {
+       "nome": "Thunderbolt",
+       "tipo": "Electric",
+       "poder": 95
+      },
+      {
+       "nome": "Thunder Wave",
+       "tipo": "Electric",
+       "poder": null
+      }
+     ]
+    },
+    {
+     "dex": 321,
+     "nome": "Cabofio",
+     "tipos": [
+      "Electric",
+      "Steel"
+     ],
+     "bst": 448,
+     "nivel": 23,
+     "iv": 99,
+     "iv31": 12,
+     "item": "Sitrus Berry",
+     "golpes": [
+      {
+       "nome": "Metal Claw",
+       "tipo": "Steel",
+       "poder": 50
+      },
+      {
+       "nome": "Shock Wave",
+       "tipo": "Electric",
+       "poder": 60
+      },
+      {
+       "nome": "Water Pulse",
+       "tipo": "Water",
+       "poder": 60
+      },
+      {
+       "nome": "Iron Defense",
+       "tipo": "Steel",
+       "poder": null
+      }
+     ]
+    },
+    {
+     "dex": 230,
+     "nome": "Arraia",
+     "tipos": [
+      "Water",
+      "Electric"
+     ],
+     "bst": 448,
+     "nivel": 24,
+     "iv": 107,
+     "iv31": 13,
+     "item": "Sitrus Berry",
+     "golpes": [
+      {
+       "nome": "Faint Attack",
+       "tipo": "Dark",
+       "poder": 60
+      },
+      {
+       "nome": "Spark",
+       "tipo": "Electric",
+       "poder": 65
+      },
+      {
+       "nome": "Water Pulse",
+       "tipo": "Water",
+       "poder": 60
+      },
+      {
+       "nome": "Withdraw",
+       "tipo": "Water",
+       "poder": null
+      }
+     ]
+    },
+    {
+     "dex": 137,
+     "nome": "Vagalume",
+     "tipos": [
+      "Bug",
+      "Electric"
+     ],
+     "bst": 555,
+     "nivel": 24,
+     "iv": 140,
+     "iv31": 17,
+     "item": "Sitrus Berry",
+     "golpes": [
+      {
+       "nome": "Shock Wave",
+       "tipo": "Electric",
+       "poder": 60
+      },
+      {
+       "nome": "Signal Beam",
+       "tipo": "Bug",
+       "poder": 75
+      },
+      {
+       "nome": "Thunder Wave",
+       "tipo": "Electric",
+       "poder": null
+      },
+      {
+       "nome": "Agility",
+       "tipo": "Psychic",
+       "poder": null
+      }
+     ]
+    },
+    {
+     "dex": 244,
+     "nome": "Tupã",
+     "tipos": [
+      "Electric",
+      "Dragon"
+     ],
+     "bst": 606,
+     "nivel": 24,
+     "iv": 255,
+     "iv31": 31,
+     "item": "Scope Lens",
+     "golpes": [
+      {
+       "nome": "Spark",
+       "tipo": "Electric",
+       "poder": 65
+      },
+      {
+       "nome": "Dragon Breath",
+       "tipo": "Dragon",
+       "poder": 60
+      },
+      {
+       "nome": "Scary Face",
+       "tipo": "Normal",
+       "poder": null
+      },
+      {
+       "nome": "Thunderbolt",
+       "tipo": "Electric",
+       "poder": 95
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "chefe": "Nara",
+   "tipo": "FIRE",
+   "casa": "Casa da Cinza",
+   "ordem": 4,
+   "teto": 29,
+   "time": [
+    {
+     "dex": 232,
+     "nome": "Pargo",
+     "tipos": [
+      "Water",
+      "Fire"
+     ],
+     "bst": 446,
+     "nivel": 24,
+     "iv": 200,
+     "iv31": 24,
+     "item": "None",
+     "golpes": [
+      {
+       "nome": "Overheat",
+       "tipo": "Fire",
+       "poder": 140
+      },
+      {
+       "nome": "Take Down",
+       "tipo": "Normal",
+       "poder": 90
+      },
+      {
+       "nome": "Magnitude",
+       "tipo": "Ground",
+       "poder": 1
+      },
+      {
+       "nome": "Sunny Day",
+       "tipo": "Fire",
+       "poder": null
+      }
+     ]
+    },
+    {
+     "dex": 52,
+     "nome": "Guaracim",
+     "tipos": [
+      "Fire"
+     ],
+     "bst": 287,
+     "nivel": 24,
+     "iv": 200,
+     "iv31": 24,
+     "item": "None",
+     "golpes": [
+      {
+       "nome": "Overheat",
+       "tipo": "Fire",
+       "poder": 140
+      },
+      {
+       "nome": "Smog",
+       "tipo": "Poison",
+       "poder": 20
+      },
+      {
+       "nome": "Light Screen",
+       "tipo": "Psychic",
+       "poder": null
+      },
+      {
+       "nome": "Sunny Day",
+       "tipo": "Fire",
+       "poder": null
+      }
+     ]
+    },
+    {
+     "dex": 206,
+     "nome": "Enxofrino",
+     "tipos": [
+      "Fire",
+      "Poison"
+     ],
+     "bst": 449,
+     "nivel": 26,
+     "iv": 250,
+     "iv31": 30,
+     "item": "None",
+     "golpes": [
+      {
+       "nome": "Overheat",
+       "tipo": "Fire",
+       "poder": 140
+      },
+      {
+       "nome": "Tackle",
+       "tipo": "Normal",
+       "poder": 35
+      },
+      {
+       "nome": "Sunny Day",
+       "tipo": "Fire",
+       "poder": null
+      },
+      {
+       "nome": "Attract",
+       "tipo": "Normal",
+       "poder": null
+      }
+     ]
+    },
+    {
+     "dex": 16,
+     "nome": "Boitatá",
+     "tipos": [
+      "Fire",
+      "Ghost"
+     ],
+     "bst": 514,
+     "nivel": 29,
+     "iv": 250,
+     "iv31": 30,
+     "item": "White Herb",
+     "golpes": [
+      {
+       "nome": "Overheat",
+       "tipo": "Fire",
+       "poder": 140
+      },
+      {
+       "nome": "Sunny Day",
+       "tipo": "Fire",
+       "poder": null
+      },
+      {
+       "nome": "Body Slam",
+       "tipo": "Normal",
+       "poder": 85
+      },
+      {
+       "nome": "Attract",
+       "tipo": "Normal",
+       "poder": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "chefe": "Elias",
+   "tipo": "NORMAL",
+   "casa": "Pampa da Espera",
+   "ordem": 5,
+   "teto": 31,
+   "time": [
+    {
+     "dex": 84,
+     "nome": "Curicaca",
+     "tipos": [
+      "Flying",
+      "Normal"
+     ],
+     "bst": 447,
+     "nivel": 27,
+     "iv": 200,
+     "iv31": 24,
+     "item": "None",
+     "golpes": [
+      {
+       "nome": "Teeter Dance",
+       "tipo": "Normal",
+       "poder": null
+      },
+      {
+       "nome": "Psybeam",
+       "tipo": "Psychic",
+       "poder": 65
+      },
+      {
+       "nome": "Facade",
+       "tipo": "Normal",
+       "poder": 70
+      },
+      {
+       "nome": "Encore",
+       "tipo": "Normal",
+       "poder": null
+      }
+     ]
+    },
+    {
+     "dex": 115,
+     "nome": "Ovelhinha",
+     "tipos": [
+      "Normal",
+      "Fairy"
+     ],
+     "bst": 449,
+     "nivel": 27,
+     "iv": 200,
+     "iv31": 24,
+     "item": "None",
+     "golpes": [
+      {
+       "nome": "Slash",
+       "tipo": "Normal",
+       "poder": 70
+      },
+      {
+       "nome": "Facade",
+       "tipo": "Normal",
+       "poder": 70
+      },
+      {
+       "nome": "Encore",
+       "tipo": "Normal",
+       "poder": null
+      },
+      {
+       "nome": "Faint Attack",
+       "tipo": "Dark",
+       "poder": 60
+      }
+     ]
+    },
+    {
+     "dex": 103,
+     "nome": "Suçuapara",
+     "tipos": [
+      "Normal",
+      "Fighting"
+     ],
+     "bst": 447,
+     "nivel": 29,
+     "iv": 200,
+     "iv31": 24,
+     "item": "None",
+     "golpes": [
+      {
+       "nome": "Slash",
+       "tipo": "Normal",
+       "poder": 70
+      },
+      {
+       "nome": "Belly Drum",
+       "tipo": "Normal",
+       "poder": null
+      },
+      {
+       "nome": "Facade",
+       "tipo": "Normal",
+       "poder": 70
+      },
+      {
+       "nome": "Headbutt",
+       "tipo": "Normal",
+       "poder": 70
+      }
+     ]
+    },
+    {
+     "dex": 71,
+     "nome": "Cutia",
+     "tipos": [
+      "Normal"
+     ],
+     "bst": 555,
+     "nivel": 31,
+     "iv": 250,
+     "iv31": 30,
+     "item": "Sitrus Berry",
+     "golpes": [
+      {
+       "nome": "Counter",
+       "tipo": "Fighting",
+       "poder": 1
+      },
+      {
+       "nome": "Yawn",
+       "tipo": "Normal",
+       "poder": null
+      },
+      {
+       "nome": "Facade",
+       "tipo": "Normal",
+       "poder": 70
+      },
+      {
+       "nome": "Faint Attack",
+       "tipo": "Dark",
+       "poder": 60
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "chefe": "Lidia",
+   "tipo": "FLYING",
+   "casa": "Mata do Meio",
+   "ordem": 6,
+   "teto": 33,
+   "time": [
+    {
+     "dex": 157,
+     "nome": "Sabiá",
+     "tipos": [
+      "Flying",
+      "Normal"
+     ],
+     "bst": 445,
+     "nivel": 29,
+     "iv": 210,
+     "iv31": 25,
+     "item": "None",
+     "golpes": [
+      {
+       "nome": "Perish Song",
+       "tipo": "Normal",
+       "poder": null
+      },
+      {
+       "nome": "Mirror Move",
+       "tipo": "Flying",
+       "poder": null
+      },
+      {
+       "nome": "Safeguard",
+       "tipo": "Normal",
+       "poder": null
+      },
+      {
+       "nome": "Aerial Ace",
+       "tipo": "Flying",
+       "poder": 60
+      }
+     ]
+    },
+    {
+     "dex": 33,
+     "nome": "Araracanga",
+     "tipos": [
+      "Flying",
+      "Fire"
+     ],
+     "bst": 550,
+     "nivel": 29,
+     "iv": 210,
+     "iv31": 25,
+     "item": "None",
+     "golpes": [
+      {
+       "nome": "Sunny Day",
+       "tipo": "Fire",
+       "poder": null
+      },
+      {
+       "nome": "Aerial Ace",
+       "tipo": "Flying",
+       "poder": 60
+      },
+      {
+       "nome": "Solar Beam",
+       "tipo": "Grass",
+       "poder": 120
+      },
+      {
+       "nome": "Synthesis",
+       "tipo": "Grass",
+       "poder": null
+      }
+     ]
+    },
+    {
+     "dex": 156,
+     "nome": "Beija-flor",
+     "tipos": [
+      "Flying",
+      "Fairy"
+     ],
+     "bst": 448,
+     "nivel": 30,
+     "iv": 210,
+     "iv31": 25,
+     "item": "None",
+     "golpes": [
+      {
+       "nome": "Water Gun",
+       "tipo": "Water",
+       "poder": 40
+      },
+      {
+       "nome": "Supersonic",
+       "tipo": "Normal",
+       "poder": null
+      },
+      {
+       "nome": "Protect",
+       "tipo": "Normal",
+       "poder": null
+      },
+      {
+       "nome": "Aerial Ace",
+       "tipo": "Flying",
+       "poder": 60
+      }
+     ]
+    },
+    {
+     "dex": 20,
+     "nome": "Sacizinho",
+     "tipos": [
+      "Dark",
+      "Flying"
+     ],
+     "bst": 461,
+     "nivel": 31,
+     "iv": 220,
+     "iv31": 26,
+     "item": "None",
+     "golpes": [
+      {
+       "nome": "Sand Attack",
+       "tipo": "Ground",
+       "poder": null
+      },
+      {
+       "nome": "Fury Attack",
+       "tipo": "Normal",
+       "poder": 15
+      },
+      {
+       "nome": "Steel Wing",
+       "tipo": "Steel",
+       "poder": 70
+      },
+      {
+       "nome": "Aerial Ace",
+       "tipo": "Flying",
+       "poder": 60
+      }
+     ]
+    },
+    {
+     "dex": 83,
+     "nome": "Aracari",
+     "tipos": [
+      "Flying",
+      "Grass"
+     ],
+     "bst": 551,
+     "nivel": 33,
+     "iv": 255,
+     "iv31": 31,
+     "item": "Oran Berry",
+     "golpes": [
+      {
+       "nome": "Earthquake",
+       "tipo": "Ground",
+       "poder": 100
+      },
+      {
+       "nome": "Dragon Breath",
+       "tipo": "Dragon",
+       "poder": 60
+      },
+      {
+       "nome": "Dragon Dance",
+       "tipo": "Dragon",
+       "poder": null
+      },
+      {
+       "nome": "Aerial Ace",
+       "tipo": "Flying",
+       "poder": 60
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "chefe": "Cec&Caet",
+   "tipo": "PSYCHIC",
+   "casa": "Missoes do Ceu",
+   "ordem": 7,
+   "teto": 42,
+   "time": [
+    {
+     "dex": 265,
+     "nome": "Preto-Velho",
+     "tipos": [
+      "Ghost",
+      "Psychic"
+     ],
+     "bst": 604,
+     "nivel": 41,
+     "iv": 250,
+     "iv31": 30,
+     "item": "None",
+     "golpes": [
+      {
+       "nome": "Earthquake",
+       "tipo": "Ground",
+       "poder": 100
+      },
+      {
+       "nome": "Ancient Power",
+       "tipo": "Rock",
+       "poder": 60
+      },
+      {
+       "nome": "Psychic",
+       "tipo": "Psychic",
+       "poder": 90
+      },
+      {
+       "nome": "Light Screen",
+       "tipo": "Psychic",
+       "poder": null
+      }
+     ]
+    },
+    {
+     "dex": 39,
+     "nome": "Bicho-Preguiça",
+     "tipos": [
+      "Grass",
+      "Psychic"
+     ],
+     "bst": 551,
+     "nivel": 41,
+     "iv": 250,
+     "iv31": 30,
+     "item": "None",
+     "golpes": [
+      {
+       "nome": "Psychic",
+       "tipo": "Psychic",
+       "poder": 90
+      },
+      {
+       "nome": "Sunny Day",
+       "tipo": "Fire",
+       "poder": null
+      },
+      {
+       "nome": "Confuse Ray",
+       "tipo": "Ghost",
+       "poder": null
+      },
+      {
+       "nome": "Calm Mind",
+       "tipo": "Psychic",
+       "poder": null
+      }
+     ]
+    },
+    {
+     "dex": 247,
+     "nome": "Rudá",
+     "tipos": [
+      "Fairy",
+      "Psychic"
+     ],
+     "bst": 449,
+     "nivel": 42,
+     "iv": 250,
+     "iv31": 30,
+     "item": "Sitrus Berry",
+     "golpes": [
+      {
+       "nome": "Light Screen",
+       "tipo": "Psychic",
+       "poder": null
+      },
+      {
+       "nome": "Psychic",
+       "tipo": "Psychic",
+       "poder": 90
+      },
+      {
+       "nome": "Hypnosis",
+       "tipo": "Psychic",
+       "poder": null
+      },
+      {
+       "nome": "Calm Mind",
+       "tipo": "Psychic",
+       "poder": null
+      }
+     ]
+    },
+    {
+     "dex": 305,
+     "nome": "Gato-Preto",
+     "tipos": [
+      "Dark",
+      "Psychic"
+     ],
+     "bst": 449,
+     "nivel": 42,
+     "iv": 250,
+     "iv31": 30,
+     "item": "Sitrus Berry",
+     "golpes": [
+      {
+       "nome": "Sunny Day",
+       "tipo": "Fire",
+       "poder": null
+      },
+      {
+       "nome": "Solar Beam",
+       "tipo": "Grass",
+       "poder": 120
+      },
+      {
+       "nome": "Psychic",
+       "tipo": "Psychic",
+       "poder": 90
+      },
+      {
+       "nome": "Flamethrower",
+       "tipo": "Fire",
+       "poder": 95
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "chefe": "Celina",
+   "tipo": "WATER",
+   "casa": "Aguas M'Boi",
+   "ordem": 8,
+   "teto": 46,
+   "time": [
+    {
+     "dex": 124,
+     "nome": "Tambaqui",
+     "tipos": [
+      "Water",
+      "Normal"
+     ],
+     "bst": 445,
+     "nivel": 41,
+     "iv": 200,
+     "iv31": 24,
+     "item": "None",
+     "golpes": [
+      {
+       "nome": "Water Pulse",
+       "tipo": "Water",
+       "poder": 60
+      },
+      {
+       "nome": "Attract",
+       "tipo": "Normal",
+       "poder": null
+      },
+      {
+       "nome": "Sweet Kiss",
+       "tipo": "Fairy",
+       "poder": null
+      },
+      {
+       "nome": "Flail",
+       "tipo": "Normal",
+       "poder": 1
+      }
+     ]
+    },
+    {
+     "dex": 364,
+     "nome": "Sarará",
+     "tipos": [
+      "Fairy",
+      "Water"
+     ],
+     "bst": 472,
+     "nivel": 41,
+     "iv": 200,
+     "iv31": 24,
+     "item": "None",
+     "golpes": [
+      {
+       "nome": "Rain Dance",
+       "tipo": "Water",
+       "poder": null
+      },
+      {
+       "nome": "Water Pulse",
+       "tipo": "Water",
+       "poder": 60
+      },
+      {
+       "nome": "Amnesia",
+       "tipo": "Psychic",
+       "poder": null
+      },
+      {
+       "nome": "Earthquake",
+       "tipo": "Ground",
+       "poder": 100
+      }
+     ]
+    },
+    {
+     "dex": 132,
+     "nome": "Matrinxã",
+     "tipos": [
+      "Water",
+      "Normal"
+     ],
+     "bst": 444,
+     "nivel": 43,
+     "iv": 200,
+     "iv31": 24,
+     "item": "None",
+     "golpes": [
+      {
+       "nome": "Encore",
+       "tipo": "Normal",
+       "poder": null
+      },
+      {
+       "nome": "Body Slam",
+       "tipo": "Normal",
+       "poder": 85
+      },
+      {
+       "nome": "Aurora Beam",
+       "tipo": "Ice",
+       "poder": 65
+      },
+      {
+       "nome": "Water Pulse",
+       "tipo": "Water",
+       "poder": 60
+      }
+     ]
+    },
+    {
+     "dex": 47,
+     "nome": "Sucuri",
+     "tipos": [
+      "Water",
+      "Poison"
+     ],
+     "bst": 480,
+     "nivel": 43,
+     "iv": 200,
+     "iv31": 24,
+     "item": "None",
+     "golpes": [
+      {
+       "nome": "Water Pulse",
+       "tipo": "Water",
+       "poder": 60
+      },
+      {
+       "nome": "Crabhammer",
+       "tipo": "Water",
+       "poder": 90
+      },
+      {
+       "nome": "Taunt",
+       "tipo": "Dark",
+       "poder": null
+      },
+      {
+       "nome": "Leer",
+       "tipo": "Normal",
+       "poder": null
+      }
+     ]
+    },
+    {
+     "dex": 280,
+     "nome": "Sucuriaçu",
+     "tipos": [
+      "Water",
+      "Dragon"
+     ],
+     "bst": 607,
+     "nivel": 46,
+     "iv": 250,
+     "iv31": 30,
+     "item": "Chesto Berry",
+     "golpes": [
+      {
+       "nome": "Water Pulse",
+       "tipo": "Water",
+       "poder": 60
+      },
+      {
+       "nome": "Double Team",
+       "tipo": "Normal",
+       "poder": null
+      },
+      {
+       "nome": "Ice Beam",
+       "tipo": "Ice",
+       "poder": 95
+      },
+      {
+       "nome": "Rest",
+       "tipo": "Psychic",
+       "poder": null
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "elite": [
+  {
+   "chefe": "Lazaro",
+   "tipo": "DARK",
+   "teto": 49,
+   "time": [
+    {
+     "dex": 123,
+     "nome": "Piranha",
+     "tipos": [
+      "Water",
+      "Dark"
+     ],
+     "bst": 448,
+     "nivel": 46,
+     "iv": 250,
+     "iv31": 30,
+     "item": "None",
+     "golpes": [
+      {
+       "nome": "Roar",
+       "tipo": "Normal",
+       "poder": null
+      },
+      {
+       "nome": "Double Edge",
+       "tipo": "Normal",
+       "poder": 120
+      },
+      {
+       "nome": "Sand Attack",
+       "tipo": "Ground",
+       "poder": null
+      },
+      {
+       "nome": "Crunch",
+       "tipo": "Dark",
+       "poder": 80
+      }
+     ]
+    },
+    {
+     "dex": 68,
+     "nome": "Gato-do-mato",
+     "tipos": [
+      "Normal",
+      "Dark"
+     ],
+     "bst": 554,
+     "nivel": 48,
+     "iv": 250,
+     "iv31": 30,
+     "item": "None",
+     "golpes": [
+      {
+       "nome": "Torment",
+       "tipo": "Dark",
+       "poder": null
+      },
+      {
+       "nome": "Double Team",
+       "tipo": "Normal",
+       "poder": null
+      },
+      {
+       "nome": "Swagger",
+       "tipo": "Normal",
+       "poder": null
+      },
+      {
+       "nome": "Extrasensory",
+       "tipo": "Psychic",
+       "poder": 80
+      }
+     ]
+    },
+    {
+     "dex": 23,
+     "nome": "Onçaléu",
+     "tipos": [
+      "Dark"
+     ],
+     "bst": 524,
+     "nivel": 46,
+     "iv": 250,
+     "iv31": 30,
+     "item": "None",
+     "golpes": [
+      {
+       "nome": "Leech Seed",
+       "tipo": "Grass",
+       "poder": null
+      },
+      {
+       "nome": "Faint Attack",
+       "tipo": "Dark",
+       "poder": 60
+      },
+      {
+       "nome": "Needle Arm",
+       "tipo": "Grass",
+       "poder": 60
+      },
+      {
+       "nome": "Cotton Spore",
+       "tipo": "Grass",
+       "poder": null
+      }
+     ]
+    },
+    {
+     "dex": 374,
+     "nome": "Escamoso",
+     "tipos": [
+      "Water",
+      "Dark"
+     ],
+     "bst": 498,
+     "nivel": 48,
+     "iv": 250,
+     "iv31": 30,
+     "item": "None",
+     "golpes": [
+      {
+       "nome": "Surf",
+       "tipo": "Water",
+       "poder": 95
+      },
+      {
+       "nome": "Swords Dance",
+       "tipo": "Normal",
+       "poder": null
+      },
+      {
+       "nome": "Strength",
+       "tipo": "Normal",
+       "poder": 80
+      },
+      {
+       "nome": "Facade",
+       "tipo": "Normal",
+       "poder": 70
+      }
+     ]
+    },
+    {
+     "dex": 77,
+     "nome": "Quati",
+     "tipos": [
+      "Normal",
+      "Dark"
+     ],
+     "bst": 550,
+     "nivel": 49,
+     "iv": 255,
+     "iv31": 31,
+     "item": "Sitrus Berry",
+     "golpes": [
+      {
+       "nome": "Aerial Ace",
+       "tipo": "Flying",
+       "poder": 60
+      },
+      {
+       "nome": "Rock Slide",
+       "tipo": "Rock",
+       "poder": 75
+      },
+      {
+       "nome": "Swords Dance",
+       "tipo": "Normal",
+       "poder": null
+      },
+      {
+       "nome": "Slash",
+       "tipo": "Normal",
+       "poder": 70
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "chefe": "Rosa",
+   "tipo": "GHOST",
+   "teto": 51,
+   "time": [
+    {
+     "dex": 236,
+     "nome": "Bicho-Papão",
+     "tipos": [
+      "Dark",
+      "Ghost"
+     ],
+     "bst": 449,
+     "nivel": 48,
+     "iv": 250,
+     "iv31": 30,
+     "item": "None",
+     "golpes": [
+      {
+       "nome": "Shadow Punch",
+       "tipo": "Ghost",
+       "poder": 60
+      },
+      {
+       "nome": "Confuse Ray",
+       "tipo": "Ghost",
+       "poder": null
+      },
+      {
+       "nome": "Curse",
+       "tipo": "Mystery",
+       "poder": null
+      },
+      {
+       "nome": "Protect",
+       "tipo": "Normal",
+       "poder": null
+      }
+     ]
+    },
+    {
+     "dex": 239,
+     "nome": "Mão-Peluda",
+     "tipos": [
+      "Ghost",
+      "Fighting"
+     ],
+     "bst": 449,
+     "nivel": 49,
+     "iv": 250,
+     "iv31": 30,
+     "item": "None",
+     "golpes": [
+      {
+       "nome": "Shadow Ball",
+       "tipo": "Ghost",
+       "poder": 80
+      },
+      {
+       "nome": "Grudge",
+       "tipo": "Ghost",
+       "poder": null
+      },
+      {
+       "nome": "Will O Wisp",
+       "tipo": "Fire",
+       "poder": null
+      },
+      {
+       "nome": "Faint Attack",
+       "tipo": "Dark",
+       "poder": 60
+      }
+     ]
+    },
+    {
+     "dex": 240,
+     "nome": "Perna-Cabeluda",
+     "tipos": [
+      "Ghost",
+      "Normal"
+     ],
+     "bst": 446,
+     "nivel": 50,
+     "iv": 250,
+     "iv31": 30,
+     "item": "None",
+     "golpes": [
+      {
+       "nome": "Shadow Ball",
+       "tipo": "Ghost",
+       "poder": 80
+      },
+      {
+       "nome": "Double Team",
+       "tipo": "Normal",
+       "poder": null
+      },
+      {
+       "nome": "Night Shade",
+       "tipo": "Ghost",
+       "poder": 1
+      },
+      {
+       "nome": "Faint Attack",
+       "tipo": "Dark",
+       "poder": 60
+      }
+     ]
+    },
+    {
+     "dex": 54,
+     "nome": "Guaraflama",
+     "tipos": [
+      "Fire",
+      "Ghost"
+     ],
+     "bst": 448,
+     "nivel": 49,
+     "iv": 250,
+     "iv31": 30,
+     "item": "None",
+     "golpes": [
+      {
+       "nome": "Shadow Ball",
+       "tipo": "Ghost",
+       "poder": 80
+      },
+      {
+       "nome": "Psychic",
+       "tipo": "Psychic",
+       "poder": 90
+      },
+      {
+       "nome": "Thunderbolt",
+       "tipo": "Electric",
+       "poder": 95
+      },
+      {
+       "nome": "Facade",
+       "tipo": "Normal",
+       "poder": 70
+      }
+     ]
+    },
+    {
+     "dex": 241,
+     "nome": "Comadre",
+     "tipos": [
+      "Ghost",
+      "Fairy"
+     ],
+     "bst": 448,
+     "nivel": 51,
+     "iv": 255,
+     "iv31": 31,
+     "item": "Sitrus Berry",
+     "golpes": [
+      {
+       "nome": "Shadow Ball",
+       "tipo": "Ghost",
+       "poder": 80
+      },
+      {
+       "nome": "Ice Beam",
+       "tipo": "Ice",
+       "poder": 95
+      },
+      {
+       "nome": "Rock Slide",
+       "tipo": "Rock",
+       "poder": 75
+      },
+      {
+       "nome": "Earthquake",
+       "tipo": "Ground",
+       "poder": 100
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "chefe": "Clara",
+   "tipo": "STEEL",
+   "teto": 53,
+   "time": [
+    {
+     "dex": 231,
+     "nome": "Peixe-Espada",
+     "tipos": [
+      "Water",
+      "Steel"
+     ],
+     "bst": 444,
+     "nivel": 50,
+     "iv": 250,
+     "iv31": 30,
+     "item": "None",
+     "golpes": [
+      {
+       "nome": "Encore",
+       "tipo": "Normal",
+       "poder": null
+      },
+      {
+       "nome": "Body Slam",
+       "tipo": "Normal",
+       "poder": 85
+      },
+      {
+       "nome": "Hail",
+       "tipo": "Ice",
+       "poder": null
+      },
+      {
+       "nome": "Ice Ball",
+       "tipo": "Ice",
+       "poder": 30
+      }
+     ]
+    },
+    {
+     "dex": 30,
+     "nome": "Tatuçu",
+     "tipos": [
+      "Ground",
+      "Steel"
+     ],
+     "bst": 555,
+     "nivel": 50,
+     "iv": 250,
+     "iv31": 30,
+     "item": "None",
+     "golpes": [
+      {
+       "nome": "Light Screen",
+       "tipo": "Psychic",
+       "poder": null
+      },
+      {
+       "nome": "Crunch",
+       "tipo": "Dark",
+       "poder": 80
+      },
+      {
+       "nome": "Icy Wind",
+       "tipo": "Ice",
+       "poder": 55
+      },
+      {
+       "nome": "Ice Beam",
+       "tipo": "Ice",
+       "poder": 95
+      }
+     ]
+    },
+    {
+     "dex": 201,
+     "nome": "Ferrolho",
+     "tipos": [
+      "Steel",
+      "Ground"
+     ],
+     "bst": 445,
+     "nivel": 52,
+     "iv": 250,
+     "iv31": 30,
+     "item": "None",
+     "golpes": [
+      {
+       "nome": "Attract",
+       "tipo": "Normal",
+       "poder": null
+      },
+      {
+       "nome": "Double Edge",
+       "tipo": "Normal",
+       "poder": 120
+      },
+      {
+       "nome": "Hail",
+       "tipo": "Ice",
+       "poder": null
+      },
+      {
+       "nome": "Blizzard",
+       "tipo": "Ice",
+       "poder": 120
+      }
+     ]
+    },
+    {
+     "dex": 110,
+     "nome": "Ogum",
+     "tipos": [
+      "Steel",
+      "Fire"
+     ],
+     "bst": 602,
+     "nivel": 52,
+     "iv": 250,
+     "iv31": 30,
+     "item": "None",
+     "golpes": [
+      {
+       "nome": "Shadow Ball",
+       "tipo": "Ghost",
+       "poder": 80
+      },
+      {
+       "nome": "Explosion",
+       "tipo": "Normal",
+       "poder": 250
+      },
+      {
+       "nome": "Hail",
+       "tipo": "Ice",
+       "poder": null
+      },
+      {
+       "nome": "Ice Beam",
+       "tipo": "Ice",
+       "poder": 95
+      }
+     ]
+    },
+    {
+     "dex": 24,
+     "nome": "Tamanduá",
+     "tipos": [
+      "Ground",
+      "Steel"
+     ],
+     "bst": 470,
+     "nivel": 53,
+     "iv": 255,
+     "iv31": 31,
+     "item": "Sitrus Berry",
+     "golpes": [
+      {
+       "nome": "Surf",
+       "tipo": "Water",
+       "poder": 95
+      },
+      {
+       "nome": "Body Slam",
+       "tipo": "Normal",
+       "poder": 85
+      },
+      {
+       "nome": "Ice Beam",
+       "tipo": "Ice",
+       "poder": 95
+      },
+      {
+       "nome": "Sheer Cold",
+       "tipo": "Ice",
+       "poder": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "chefe": "Tiburcio",
+   "tipo": "DRAGON",
+   "teto": 55,
+   "time": [
+    {
+     "dex": 211,
+     "nome": "Fóssil",
+     "tipos": [
+      "Rock",
+      "Dragon"
+     ],
+     "bst": 448,
+     "nivel": 52,
+     "iv": 250,
+     "iv31": 30,
+     "item": "None",
+     "golpes": [
+      {
+       "nome": "Rock Tomb",
+       "tipo": "Rock",
+       "poder": 50
+      },
+      {
+       "nome": "Dragon Claw",
+       "tipo": "Dragon",
+       "poder": 80
+      },
+      {
+       "nome": "Protect",
+       "tipo": "Normal",
+       "poder": null
+      },
+      {
+       "nome": "Double Edge",
+       "tipo": "Normal",
+       "poder": 120
+      }
+     ]
+    },
+    {
+     "dex": 36,
+     "nome": "Jacarodon",
+     "tipos": [
+      "Water",
+      "Dragon"
+     ],
+     "bst": 551,
+     "nivel": 54,
+     "iv": 250,
+     "iv31": 30,
+     "item": "None",
+     "golpes": [
+      {
+       "nome": "Double Edge",
+       "tipo": "Normal",
+       "poder": 120
+      },
+      {
+       "nome": "Dragon Breath",
+       "tipo": "Dragon",
+       "poder": 60
+      },
+      {
+       "nome": "Dragon Dance",
+       "tipo": "Dragon",
+       "poder": null
+      },
+      {
+       "nome": "Aerial Ace",
+       "tipo": "Flying",
+       "poder": 60
+      }
+     ]
+    },
+    {
+     "dex": 280,
+     "nome": "Sucuriaçu",
+     "tipos": [
+      "Water",
+      "Dragon"
+     ],
+     "bst": 607,
+     "nivel": 53,
+     "iv": 250,
+     "iv31": 30,
+     "item": "None",
+     "golpes": [
+      {
+       "nome": "Smokescreen",
+       "tipo": "Normal",
+       "poder": null
+      },
+      {
+       "nome": "Dragon Dance",
+       "tipo": "Dragon",
+       "poder": null
+      },
+      {
+       "nome": "Surf",
+       "tipo": "Water",
+       "poder": 95
+      },
+      {
+       "nome": "Body Slam",
+       "tipo": "Normal",
+       "poder": 85
+      }
+     ]
+    },
+    {
+     "dex": 122,
+     "nome": "Pirarucu",
+     "tipos": [
+      "Water",
+      "Dragon"
+     ],
+     "bst": 552,
+     "nivel": 53,
+     "iv": 250,
+     "iv31": 30,
+     "item": "None",
+     "golpes": [
+      {
+       "nome": "Flamethrower",
+       "tipo": "Fire",
+       "poder": 95
+      },
+      {
+       "nome": "Crunch",
+       "tipo": "Dark",
+       "poder": 80
+      },
+      {
+       "nome": "Dragon Breath",
+       "tipo": "Dragon",
+       "poder": 60
+      },
+      {
+       "nome": "Earthquake",
+       "tipo": "Ground",
+       "poder": 100
+      }
+     ]
+    },
+    {
+     "dex": 348,
+     "nome": "Arauanamon",
+     "tipos": [
+      "Dragon",
+      "Fairy"
+     ],
+     "bst": 650,
+     "nivel": 55,
+     "iv": 255,
+     "iv31": 31,
+     "item": "Sitrus Berry",
+     "golpes": [
+      {
+       "nome": "Flamethrower",
+       "tipo": "Fire",
+       "poder": 95
+      },
+      {
+       "nome": "Dragon Claw",
+       "tipo": "Dragon",
+       "poder": 80
+      },
+      {
+       "nome": "Rock Slide",
+       "tipo": "Rock",
+       "poder": 75
+      },
+      {
+       "nome": "Crunch",
+       "tipo": "Dark",
+       "poder": 80
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "chefe": "Amalia",
+   "tipo": "CAMPEA",
+   "teto": 58,
+   "time": [
+    {
+     "dex": 286,
+     "nome": "Iara-Mãe",
+     "tipos": [
+      "Water",
+      "Fairy"
+     ],
+     "bst": 602,
+     "nivel": 57,
+     "iv": 255,
+     "iv31": 31,
+     "item": "None",
+     "golpes": [
+      {
+       "nome": "Rain Dance",
+       "tipo": "Water",
+       "poder": null
+      },
+      {
+       "nome": "Water Spout",
+       "tipo": "Water",
+       "poder": 150
+      },
+      {
+       "nome": "Double Edge",
+       "tipo": "Normal",
+       "poder": 120
+      },
+      {
+       "nome": "Blizzard",
+       "tipo": "Ice",
+       "poder": 120
+      }
+     ]
+    },
+    {
+     "dex": 280,
+     "nome": "Sucuriaçu",
+     "tipos": [
+      "Water",
+      "Dragon"
+     ],
+     "bst": 607,
+     "nivel": 55,
+     "iv": 255,
+     "iv31": 31,
+     "item": "None",
+     "golpes": [
+      {
+       "nome": "Toxic",
+       "tipo": "Poison",
+       "poder": null
+      },
+      {
+       "nome": "Hydro Pump",
+       "tipo": "Water",
+       "poder": 120
+      },
+      {
+       "nome": "Sludge Bomb",
+       "tipo": "Poison",
+       "poder": 90
+      },
+      {
+       "nome": "Ice Beam",
+       "tipo": "Ice",
+       "poder": 95
+      }
+     ]
+    },
+    {
+     "dex": 48,
+     "nome": "Boiuna",
+     "tipos": [
+      "Water",
+      "Dragon"
+     ],
+     "bst": 600,
+     "nivel": 56,
+     "iv": 255,
+     "iv31": 31,
+     "item": "None",
+     "golpes": [
+      {
+       "nome": "Giga Drain",
+       "tipo": "Grass",
+       "poder": 60
+      },
+      {
+       "nome": "Surf",
+       "tipo": "Water",
+       "poder": 95
+      },
+      {
+       "nome": "Leech Seed",
+       "tipo": "Grass",
+       "poder": null
+      },
+      {
+       "nome": "Double Team",
+       "tipo": "Normal",
+       "poder": null
+      }
+     ]
+    },
+    {
+     "dex": 364,
+     "nome": "Sarará",
+     "tipos": [
+      "Fairy",
+      "Water"
+     ],
+     "bst": 472,
+     "nivel": 56,
+     "iv": 255,
+     "iv31": 31,
+     "item": "None",
+     "golpes": [
+      {
+       "nome": "Earthquake",
+       "tipo": "Ground",
+       "poder": 100
+      },
+      {
+       "nome": "Surf",
+       "tipo": "Water",
+       "poder": 95
+      },
+      {
+       "nome": "Amnesia",
+       "tipo": "Psychic",
+       "poder": null
+      },
+      {
+       "nome": "Hyper Beam",
+       "tipo": "Normal",
+       "poder": 150
+      }
+     ]
+    },
+    {
+     "dex": 27,
+     "nome": "Botogaláu",
+     "tipos": [
+      "Water",
+      "Psychic"
+     ],
+     "bst": 555,
+     "nivel": 56,
+     "iv": 255,
+     "iv31": 31,
+     "item": "None",
+     "golpes": [
+      {
+       "nome": "Dragon Dance",
+       "tipo": "Dragon",
+       "poder": null
+      },
+      {
+       "nome": "Earthquake",
+       "tipo": "Ground",
+       "poder": 100
+      },
+      {
+       "nome": "Hyper Beam",
+       "tipo": "Normal",
+       "poder": 150
+      },
+      {
+       "nome": "Surf",
+       "tipo": "Water",
+       "poder": 95
+      }
+     ]
+    },
+    {
+     "dex": 109,
+     "nome": "Oxum",
+     "tipos": [
+      "Water",
+      "Fairy"
+     ],
+     "bst": 606,
+     "nivel": 58,
+     "iv": 255,
+     "iv31": 31,
+     "item": "Sitrus Berry",
+     "golpes": [
+      {
+       "nome": "Recover",
+       "tipo": "Normal",
+       "poder": null
+      },
+      {
+       "nome": "Surf",
+       "tipo": "Water",
+       "poder": 95
+      },
+      {
+       "nome": "Ice Beam",
+       "tipo": "Ice",
+       "poder": 95
+      },
+      {
+       "nome": "Toxic",
+       "tipo": "Poison",
+       "poder": null
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
