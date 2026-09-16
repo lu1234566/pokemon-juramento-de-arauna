@@ -4306,34 +4306,45 @@ static const struct TrainerMonItemCustomMoves sParty_Brawly1[] = {
     }
 };
 
+// OLIVIA, terceira insignia. Time do editor (arauana-team v4), cinco vagas.
+// #200 Ourico, #321 Cabofio, #230 Arraia, #137 Vagalume, #244 Tupa.
+// As vagas 4 e 5 substituem os lendarios #339 Chuvao e #331 Tupanau, que
+// voltam para os santuarios de nv60 de docs/arauna/ESPECIAIS_ESTATICOS.csv.
 static const struct TrainerMonItemCustomMoves sParty_Wattson1[] = {
     {
-    .iv = 200,
-    .lvl = 20,
-    .species = SPECIES_SMEARGLE,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_ROLLOUT, MOVE_SPARK, MOVE_SELF_DESTRUCT, MOVE_SHOCK_WAVE}
-    },
-    {
-    .iv = 200,
-    .lvl = 20,
-    .species = SPECIES_WAILMER,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_SHOCK_WAVE, MOVE_LEER, MOVE_QUICK_ATTACK, MOVE_HOWL}
-    },
-    {
-    .iv = 220,
+    .iv = 83,
     .lvl = 22,
-    .species = SPECIES_KRABBY,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_SUPERSONIC, MOVE_SHOCK_WAVE, MOVE_THUNDER_WAVE, MOVE_SONIC_BOOM}
+    .species = SPECIES_SUNKERN,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_STEEL_WING, MOVE_AGILITY, MOVE_THUNDERBOLT, MOVE_THUNDER_WAVE}
     },
     {
-    .iv = 250,
-    .lvl = 24,
-    .species = SPECIES_SEADRA,
+    .iv = 99,
+    .lvl = 23,
+    .species = SPECIES_WAILORD,
     .heldItem = ITEM_SITRUS_BERRY,
-    .moves = {MOVE_QUICK_ATTACK, MOVE_THUNDER_WAVE, MOVE_SHOCK_WAVE, MOVE_HOWL}
+    .moves = {MOVE_METAL_CLAW, MOVE_SHOCK_WAVE, MOVE_WATER_PULSE, MOVE_IRON_DEFENSE}
+    },
+    {
+    .iv = 107,
+    .lvl = 24,
+    .species = SPECIES_PILOSWINE,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_FAINT_ATTACK, MOVE_SPARK, MOVE_WATER_PULSE, MOVE_WITHDRAW}
+    },
+    {
+    .iv = 140,
+    .lvl = 24,
+    .species = SPECIES_TAUROS,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_SHOCK_WAVE, MOVE_SIGNAL_BEAM, MOVE_THUNDER_WAVE, MOVE_AGILITY}
+    },
+    {
+    .iv = 255,
+    .lvl = 24,
+    .species = SPECIES_SMEARGLE,
+    .heldItem = ITEM_SCOPE_LENS,
+    .moves = {MOVE_SPARK, MOVE_DRAGON_BREATH, MOVE_SCARY_FACE, MOVE_THUNDERBOLT}
     }
 };
 
