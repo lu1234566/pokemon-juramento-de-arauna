@@ -1,0 +1,10813 @@
+{
+ "habilidades": [
+  {
+   "id": "ABILITY_FOGO_LEAL",
+   "numero": 78,
+   "nome": "LOYAL FLAME",
+   "descricao": ""
+  },
+  {
+   "id": "ABILITY_VIGIA_ALADO",
+   "numero": 79,
+   "nome": "WINGED WATCH",
+   "descricao": "Ups water, bug if faster."
+  },
+  {
+   "id": "ABILITY_BICO_GRANITO",
+   "numero": 80,
+   "nome": "GRANITE BEAK",
+   "descricao": ""
+  },
+  {
+   "id": "ABILITY_COBRA_GRANDE",
+   "numero": 81,
+   "nome": "SERPENT COIL",
+   "descricao": "Tough while at full HP."
+  },
+  {
+   "id": "ABILITY_COROA_SOLAR",
+   "numero": 82,
+   "nome": "SUN CROWN",
+   "descricao": "Summons sunlight in battle."
+  },
+  {
+   "id": "ABILITY_VEU_LUNAR",
+   "numero": 83,
+   "nome": "MOON VEIL",
+   "descricao": "Blunts special hits in calm."
+  },
+  {
+   "id": "ABILITY_VOZ_DE_TUPA",
+   "numero": 84,
+   "nome": "TUPA VOICE",
+   "descricao": "Electric and dragon numb."
+  },
+  {
+   "id": "ABILITY_CANTO_RIO",
+   "numero": 85,
+   "nome": "RIVER SONG",
+   "descricao": "Sound moves never miss."
+  },
+  {
+   "id": "ABILITY_SOL_PRIMEIRO",
+   "numero": 86,
+   "nome": "FIRST SUN",
+   "descricao": "Ups fire and psychic in sun."
+  },
+  {
+   "id": "ABILITY_LUA_PRIMEVA",
+   "numero": 87,
+   "nome": "FIRST MOON",
+   "descricao": "Ups SP. DEF in calm air."
+  },
+  {
+   "id": "ABILITY_LACO_ETERNO",
+   "numero": 88,
+   "nome": "ETERNAL BOND",
+   "descricao": "Guards the team's stats."
+  },
+  {
+   "id": "ABILITY_MIL_RIOS",
+   "numero": 89,
+   "nome": "MANY RIVERS",
+   "descricao": "Water moves heal the user."
+  },
+  {
+   "id": "ABILITY_GUARDIAO",
+   "numero": 90,
+   "nome": "GUARDIAN",
+   "descricao": "Softens weakness hits."
+  },
+  {
+   "id": "ABILITY_MATA_RENOVA",
+   "numero": 91,
+   "nome": "FOREST RENEW",
+   "descricao": "Heals a little each turn."
+  },
+  {
+   "id": "ABILITY_TEMPESTADE",
+   "numero": 92,
+   "nome": "STORMCALL",
+   "descricao": "Summons rain in battle."
+  },
+  {
+   "id": "ABILITY_SECA_BRAVA",
+   "numero": 93,
+   "nome": "DRY SPELL",
+   "descricao": "Halves damage from water."
+  },
+  {
+   "id": "ABILITY_VENTO_SUL",
+   "numero": 94,
+   "nome": "SOUTH WIND",
+   "descricao": "Lowers the foes' SPEED."
+  },
+  {
+   "id": "ABILITY_SOLO_VIVO",
+   "numero": 95,
+   "nome": "LIVING SOIL",
+   "descricao": "Heals in a sandstorm."
+  },
+  {
+   "id": "ABILITY_FOGO_ANTIGO",
+   "numero": 96,
+   "nome": "ANCIENT FIRE",
+   "descricao": "Ups fire, even in rain."
+  },
+  {
+   "id": "ABILITY_MARE_MESTRA",
+   "numero": 97,
+   "nome": "MASTER TIDE",
+   "descricao": "Ups water, dragon in rain."
+  },
+  {
+   "id": "ABILITY_PRIMEIRA_LUZ",
+   "numero": 98,
+   "nome": "FIRST LIGHT",
+   "descricao": "Arrives cured of all ills."
+  },
+  {
+   "id": "ABILITY_ULTIMA_LUZ",
+   "numero": 99,
+   "nome": "LAST LIGHT",
+   "descricao": "Ups dark, fire when hurt."
+  },
+  {
+   "id": "ABILITY_DESEJO_VIVO",
+   "numero": 100,
+   "nome": "LIVING WISH",
+   "descricao": "Heals itself and its ally."
+  },
+  {
+   "id": "ABILITY_JURAMENTO",
+   "numero": 101,
+   "nome": "OATH",
+   "descricao": "Raises SP. DEF on entry."
+  },
+  {
+   "id": "ABILITY_FOGO_VIGIA",
+   "numero": 102,
+   "nome": "WATCHFIRE",
+   "descricao": "Burns on contact."
+  },
+  {
+   "id": "ABILITY_REI_DO_RIO",
+   "numero": 103,
+   "nome": "RIVER KING",
+   "descricao": ""
+  },
+  {
+   "id": "ABILITY_CASCO_ANTIGO",
+   "numero": 104,
+   "nome": "OLD CARAPACE",
+   "descricao": "Its shell blunts weakness."
+  },
+  {
+   "id": "ABILITY_SOL_ABSOLUTO",
+   "numero": 105,
+   "nome": "ABSOLUTE SUN",
+   "descricao": "Calls the sun on entry."
+  },
+  {
+   "id": "ABILITY_NOITE_ETERNA",
+   "numero": 106,
+   "nome": "LONG NIGHT",
+   "descricao": "Lowers the foes' SP. ATK."
+  },
+  {
+   "id": "ABILITY_RESISTENCIA",
+   "numero": 107,
+   "nome": "ENDURANCE",
+   "descricao": ""
+  },
+  {
+   "id": "ABILITY_MAR_SAGRADO",
+   "numero": 108,
+   "nome": "SACRED SEA",
+   "descricao": ""
+  },
+  {
+   "id": "ABILITY_ARCO_VIVO",
+   "numero": 109,
+   "nome": "RAINBOW ARC",
+   "descricao": "SPEED rises when hit hard."
+  },
+  {
+   "id": "ABILITY_PE_INVERSO",
+   "numero": 110,
+   "nome": "TURNED FEET",
+   "descricao": "Status moves go first."
+  },
+  {
+   "id": "ABILITY_REDEMOINHO",
+   "numero": 111,
+   "nome": "WHIRLWIND",
+   "descricao": "Confuses on contact."
+  },
+  {
+   "id": "ABILITY_ESSENCIA",
+   "numero": 112,
+   "nome": "ESSENCE",
+   "descricao": ""
+  }
+ ],
+ "golpes": [
+  {
+   "id": "MOVE_FAIRY_WIND",
+   "numero": 355,
+   "nome": "FAIRY WIND",
+   "nome_completo": "Fairy Wind",
+   "descricao": "A gentle fairy wind that strikes the foe.",
+   "efeito": "HIT",
+   "poder": 40,
+   "tipo": "Fairy",
+   "precisao": 100,
+   "pp": 30,
+   "chance": 0
+  },
+  {
+   "id": "MOVE_DISARMING_VOICE",
+   "numero": 356,
+   "nome": "DISARM VOICE",
+   "nome_completo": "Disarming Voice",
+   "descricao": "A charming cry that never misses its targets.",
+   "efeito": "ALWAYS_HIT",
+   "poder": 40,
+   "tipo": "Fairy",
+   "precisao": 0,
+   "pp": 15,
+   "chance": 0
+  },
+  {
+   "id": "MOVE_DRAINING_KISS",
+   "numero": 357,
+   "nome": "DRAIN KISS",
+   "nome_completo": "Draining Kiss",
+   "descricao": "A life-stealing kiss that restores the user's HP.",
+   "efeito": "ABSORB",
+   "poder": 50,
+   "tipo": "Fairy",
+   "precisao": 100,
+   "pp": 10,
+   "chance": 0
+  },
+  {
+   "id": "MOVE_DAZZLING_GLEAM",
+   "numero": 358,
+   "nome": "DAZZLE GLEAM",
+   "nome_completo": "Dazzling Gleam",
+   "descricao": "A brilliant fairy flash that hits opposing POKeMON.",
+   "efeito": "HIT",
+   "poder": 80,
+   "tipo": "Fairy",
+   "precisao": 100,
+   "pp": 10,
+   "chance": 0
+  },
+  {
+   "id": "MOVE_MOONBLAST",
+   "numero": 359,
+   "nome": "MOONBLAST",
+   "nome_completo": "Moonblast",
+   "descricao": "Moonlight strikes the foe. It may lower SP. ATK.",
+   "efeito": "SPECIAL_ATTACK_DOWN_HIT",
+   "poder": 95,
+   "tipo": "Fairy",
+   "precisao": 100,
+   "pp": 10,
+   "chance": 30
+  },
+  {
+   "id": "MOVE_LUAR_DE_JACI",
+   "numero": 360,
+   "nome": "JACI MOON",
+   "nome_completo": "Luar De Jaci",
+   "descricao": "Jaci's moonlight falls hard. It may lower SP. ATK.",
+   "efeito": "SPECIAL_ATTACK_DOWN_HIT",
+   "poder": 100,
+   "tipo": "Fairy",
+   "precisao": 90,
+   "pp": 5,
+   "chance": 30
+  },
+  {
+   "id": "MOVE_JURAMENTO_DE_ARAUANA",
+   "numero": 361,
+   "nome": "ARAUANA OATH",
+   "nome_completo": "Juramento De Arauana",
+   "descricao": "A regional oath strikes and raises the user's SP. DEF.",
+   "efeito": "SPECIAL_DEFENSE_UP_HIT",
+   "poder": 105,
+   "tipo": "Fairy",
+   "precisao": 90,
+   "pp": 5,
+   "chance": 100
+  },
+  {
+   "id": "MOVE_ECLIPSE_DIVINO",
+   "numero": 362,
+   "nome": "ECLIPSE",
+   "nome_completo": "Eclipse Divino",
+   "descricao": "A divine eclipse erupts, but lowers the user's SP. ATK.",
+   "efeito": "SPECIAL_ATTACK_DOWN_USER_HIT",
+   "poder": 110,
+   "tipo": "Fairy",
+   "precisao": 85,
+   "pp": 5,
+   "chance": 100
+  },
+  {
+   "id": "MOVE_VIRA_LATA_CELESTE",
+   "numero": 363,
+   "nome": "CELESTIAL ST",
+   "nome_completo": "Vira Lata Celeste",
+   "descricao": "A stray's starlit charge. It may inflict a burn.",
+   "efeito": "BURN_HIT",
+   "poder": 90,
+   "tipo": "Fire",
+   "precisao": 100,
+   "pp": 10,
+   "chance": 30
+  },
+  {
+   "id": "MOVE_RAJADA_DO_BANHADO",
+   "numero": 364,
+   "nome": "WETLAND BURS",
+   "nome_completo": "Rajada Do Banhado",
+   "descricao": "A burst of marsh water that may reduce SPEED.",
+   "efeito": "SPEED_DOWN_HIT",
+   "poder": 90,
+   "tipo": "Water",
+   "precisao": 95,
+   "pp": 10,
+   "chance": 30
+  },
+  {
+   "id": "MOVE_MARTELO_DE_GRANITO",
+   "numero": 365,
+   "nome": "GRANITE HAMM",
+   "nome_completo": "Martelo De Granito",
+   "descricao": "A hammering stone blow that may lower DEFENSE.",
+   "efeito": "DEFENSE_DOWN_HIT",
+   "poder": 95,
+   "tipo": "Rock",
+   "precisao": 90,
+   "pp": 10,
+   "chance": 30
+  },
+  {
+   "id": "MOVE_FOGO_FATUO_ANCESTRAL",
+   "numero": 366,
+   "nome": "ANCESTRAL WI",
+   "nome_completo": "Fogo Fatuo Ancestral",
+   "descricao": "An old wisp-fire that may inflict a burn.",
+   "efeito": "BURN_HIT",
+   "poder": 85,
+   "tipo": "Fire",
+   "precisao": 100,
+   "pp": 10,
+   "chance": 30
+  },
+  {
+   "id": "MOVE_PASSO_AO_CONTRARIO",
+   "numero": 367,
+   "nome": "BACKWARD STE",
+   "nome_completo": "Passo Ao Contrario",
+   "descricao": "A backward step so quick it always strikes first.",
+   "efeito": "QUICK_ATTACK",
+   "poder": 80,
+   "tipo": "Grass",
+   "precisao": 100,
+   "pp": 15,
+   "chance": 0
+  },
+  {
+   "id": "MOVE_CANTO_DA_IARA",
+   "numero": 368,
+   "nome": "IARA SONG",
+   "nome_completo": "Canto Da Iara",
+   "descricao": "A luring song that may leave the foe confused.",
+   "efeito": "CONFUSE_HIT",
+   "poder": 75,
+   "tipo": "Water",
+   "precisao": 100,
+   "pp": 10,
+   "chance": 100
+  },
+  {
+   "id": "MOVE_REDEMOINHO_DO_SACI",
+   "numero": 369,
+   "nome": "SACI WHIRLWI",
+   "nome_completo": "Redemoinho Do Saci",
+   "descricao": "A sudden whirlwind that always strikes first.",
+   "efeito": "QUICK_ATTACK",
+   "poder": 80,
+   "tipo": "Flying",
+   "precisao": 95,
+   "pp": 10,
+   "chance": 0
+  },
+  {
+   "id": "MOVE_ENCANTO_DO_BOTO",
+   "numero": 370,
+   "nome": "RIVER ENCHAN",
+   "nome_completo": "Encanto Do Boto",
+   "descricao": "A river charm that may leave the foe confused.",
+   "efeito": "CONFUSE_HIT",
+   "poder": 85,
+   "tipo": "Psychic",
+   "precisao": 100,
+   "pp": 10,
+   "chance": 30
+  },
+  {
+   "id": "MOVE_ABRACO_DA_BOIUNA",
+   "numero": 371,
+   "nome": "BOIUNA EMBRA",
+   "nome_completo": "Abraco Da Boiuna",
+   "descricao": "A crushing coil that traps the foe for 2 to 5 turns.",
+   "efeito": "TRAP",
+   "poder": 95,
+   "tipo": "Dragon",
+   "precisao": 90,
+   "pp": 10,
+   "chance": 100
+  },
+  {
+   "id": "MOVE_GALOPE_SEM_CABECA",
+   "numero": 372,
+   "nome": "HEADLESS GAL",
+   "nome_completo": "Galope Sem Cabeca",
+   "descricao": "A headlong charge that also hurts the user.",
+   "efeito": "RECOIL",
+   "poder": 90,
+   "tipo": "Fire",
+   "precisao": 100,
+   "pp": 10,
+   "chance": 0
+  },
+  {
+   "id": "MOVE_MARE_DA_MAE",
+   "numero": 373,
+   "nome": "MOTHER TIDE",
+   "nome_completo": "Mare Da Mae",
+   "descricao": "A mothering tide that restores the user's HP.",
+   "efeito": "ABSORB",
+   "poder": 90,
+   "tipo": "Water",
+   "precisao": 100,
+   "pp": 10,
+   "chance": 0
+  },
+  {
+   "id": "MOVE_FORJA_DE_OGUM",
+   "numero": 374,
+   "nome": "OGUN FORGE",
+   "nome_completo": "Forja De Ogum",
+   "descricao": "A forged strike that raises the user's DEFENSE.",
+   "efeito": "DEFENSE_UP_HIT",
+   "poder": 90,
+   "tipo": "Steel",
+   "precisao": 100,
+   "pp": 10,
+   "chance": 100
+  },
+  {
+   "id": "MOVE_OLHAR_DA_COBRA_GRANDE",
+   "numero": 375,
+   "nome": "GREAT SERPEN",
+   "nome_completo": "Olhar Da Cobra Grande",
+   "descricao": "A serpent's stare that paralyzes the foe.",
+   "efeito": "PARALYZE",
+   "poder": 0,
+   "tipo": "Ghost",
+   "precisao": 90,
+   "pp": 10,
+   "chance": 0
+  },
+  {
+   "id": "MOVE_AURORA_DE_GUARACI",
+   "numero": 376,
+   "nome": "GUARACI DAWN",
+   "nome_completo": "Aurora De Guaraci",
+   "descricao": "A dawn that calls harsh sunlight for five turns.",
+   "efeito": "SUNNY_DAY",
+   "poder": 0,
+   "tipo": "Fire",
+   "precisao": 0,
+   "pp": 5,
+   "chance": 0
+  },
+  {
+   "id": "MOVE_TROVAO_DE_TUPA",
+   "numero": 377,
+   "nome": "TUPA THUNDER",
+   "nome_completo": "Trovao De Tupa",
+   "descricao": "A thunderclap that may leave the foe paralyzed.",
+   "efeito": "PARALYZE_HIT",
+   "poder": 105,
+   "tipo": "Electric",
+   "precisao": 85,
+   "pp": 5,
+   "chance": 30
+  },
+  {
+   "id": "MOVE_CORRENTEZA_SUPREMA",
+   "numero": 378,
+   "nome": "SUPREME CURR",
+   "nome_completo": "Correnteza Suprema",
+   "descricao": "An overwhelming current that may reduce SPEED.",
+   "efeito": "SPEED_DOWN_HIT",
+   "poder": 100,
+   "tipo": "Water",
+   "precisao": 95,
+   "pp": 5,
+   "chance": 100
+  },
+  {
+   "id": "MOVE_INCENDIO_PRIMORDIAL",
+   "numero": 379,
+   "nome": "PRIMORDIAL B",
+   "nome_completo": "Incendio Primordial",
+   "descricao": "A first fire so fierce it also hurts the user.",
+   "efeito": "RECOIL",
+   "poder": 110,
+   "tipo": "Fire",
+   "precisao": 85,
+   "pp": 5,
+   "chance": 0
+  },
+  {
+   "id": "MOVE_MARULHO_ATLANTICO",
+   "numero": 380,
+   "nome": "ATLANTIC SUR",
+   "nome_completo": "Marulho Atlantico",
+   "descricao": "An ocean swell that may make the foe flinch.",
+   "efeito": "FLINCH_HIT",
+   "poder": 105,
+   "tipo": "Water",
+   "precisao": 90,
+   "pp": 5,
+   "chance": 30
+  },
+  {
+   "id": "MOVE_ESSENCIA_PRIMORDIAL",
+   "numero": 381,
+   "nome": "PRIMORDIAL E",
+   "nome_completo": "Essencia Primordial",
+   "descricao": "A first-born surge that lowers the user's SP. ATK.",
+   "efeito": "SPECIAL_ATTACK_DOWN_USER_HIT",
+   "poder": 110,
+   "tipo": "Dragon",
+   "precisao": 90,
+   "pp": 5,
+   "chance": 100
+  }
+ ],
+ "encontros": {
+  "ROUTE101": {
+   "grama": {
+    "taxa": 20,
+    "criaturas": [
+     {
+      "dex": 10,
+      "nome": "Formilim",
+      "min": 3,
+      "max": 3
+     },
+     {
+      "dex": 52,
+      "nome": "Guaracim",
+      "min": 2,
+      "max": 2
+     },
+     {
+      "dex": 64,
+      "nome": "Aranin",
+      "min": 2,
+      "max": 2
+     },
+     {
+      "dex": 88,
+      "nome": "Teiuzim",
+      "min": 2,
+      "max": 2
+     },
+     {
+      "dex": 97,
+      "nome": "Mulinha",
+      "min": 2,
+      "max": 2
+     },
+     {
+      "dex": 111,
+      "nome": "Cavalim",
+      "min": 3,
+      "max": 3
+     },
+     {
+      "dex": 113,
+      "nome": "Zebuim",
+      "min": 3,
+      "max": 3
+     },
+     {
+      "dex": 140,
+      "nome": "Louvadinha",
+      "min": 3,
+      "max": 3
+     },
+     {
+      "dex": 176,
+      "nome": "Sementim",
+      "min": 3,
+      "max": 3
+     },
+     {
+      "dex": 207,
+      "nome": "Argilim",
+      "min": 3,
+      "max": 3
+     },
+     {
+      "dex": 351,
+      "nome": "Tuim",
+      "min": 3,
+      "max": 3
+     },
+     {
+      "dex": 354,
+      "nome": "Preazinho",
+      "min": 2,
+      "max": 2
+     }
+    ]
+   }
+  },
+  "ROUTE102": {
+   "grama": {
+    "taxa": 20,
+    "criaturas": [
+     {
+      "dex": 22,
+      "nome": "Muriçoco",
+      "min": 3,
+      "max": 3
+     },
+     {
+      "dex": 31,
+      "nome": "Ararinha",
+      "min": 4,
+      "max": 4
+     },
+     {
+      "dex": 52,
+      "nome": "Guaracim",
+      "min": 3,
+      "max": 3
+     },
+     {
+      "dex": 64,
+      "nome": "Aranin",
+      "min": 3,
+      "max": 3
+     },
+     {
+      "dex": 94,
+      "nome": "Piuiuim",
+      "min": 4,
+      "max": 4
+     },
+     {
+      "dex": 113,
+      "nome": "Zebuim",
+      "min": 4,
+      "max": 4
+     },
+     {
+      "dex": 140,
+      "nome": "Louvadinha",
+      "min": 3,
+      "max": 3
+     },
+     {
+      "dex": 147,
+      "nome": "Grilim",
+      "min": 4,
+      "max": 4
+     },
+     {
+      "dex": 176,
+      "nome": "Sementim",
+      "min": 4,
+      "max": 4
+     },
+     {
+      "dex": 190,
+      "nome": "Cacauim",
+      "min": 3,
+      "max": 3
+     },
+     {
+      "dex": 351,
+      "nome": "Tuim",
+      "min": 3,
+      "max": 3
+     },
+     {
+      "dex": 359,
+      "nome": "Preguicinha",
+      "min": 4,
+      "max": 4
+     }
+    ]
+   },
+   "surfe": {
+    "taxa": 4,
+    "criaturas": [
+     {
+      "dex": 25,
+      "nome": "Botim",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 34,
+      "nome": "Jacarim",
+      "min": 10,
+      "max": 20
+     },
+     {
+      "dex": 58,
+      "nome": "Mandim",
+      "min": 20,
+      "max": 30
+     },
+     {
+      "dex": 85,
+      "nome": "Sapim",
+      "min": 20,
+      "max": 30
+     },
+     {
+      "dex": 104,
+      "nome": "Cabocim",
+      "min": 5,
+      "max": 10
+     }
+    ]
+   },
+   "pesca": {
+    "taxa": 30,
+    "criaturas": [
+     {
+      "dex": 12,
+      "nome": "Capivim",
+      "min": 35,
+      "max": 40
+     },
+     {
+      "dex": 25,
+      "nome": "Botim",
+      "min": 20,
+      "max": 30
+     },
+     {
+      "dex": 34,
+      "nome": "Jacarim",
+      "min": 10,
+      "max": 30
+     },
+     {
+      "dex": 55,
+      "nome": "Peixim",
+      "min": 10,
+      "max": 30
+     },
+     {
+      "dex": 58,
+      "nome": "Mandim",
+      "min": 5,
+      "max": 10
+     },
+     {
+      "dex": 85,
+      "nome": "Sapim",
+      "min": 10,
+      "max": 30
+     },
+     {
+      "dex": 104,
+      "nome": "Cabocim",
+      "min": 5,
+      "max": 10
+     },
+     {
+      "dex": 216,
+      "nome": "Caranguim",
+      "min": 40,
+      "max": 45
+     },
+     {
+      "dex": 228,
+      "nome": "Tubarim",
+      "min": 30,
+      "max": 35
+     }
+    ]
+   }
+  },
+  "ROUTE103": {
+   "grama": {
+    "taxa": 20,
+    "criaturas": [
+     {
+      "dex": 12,
+      "nome": "Capivim",
+      "min": 3,
+      "max": 3
+     },
+     {
+      "dex": 22,
+      "nome": "Muriçoco",
+      "min": 3,
+      "max": 3
+     },
+     {
+      "dex": 31,
+      "nome": "Ararinha",
+      "min": 3,
+      "max": 3
+     },
+     {
+      "dex": 43,
+      "nome": "Antinha",
+      "min": 2,
+      "max": 2
+     },
+     {
+      "dex": 94,
+      "nome": "Piuiuim",
+      "min": 4,
+      "max": 4
+     },
+     {
+      "dex": 111,
+      "nome": "Cavalim",
+      "min": 3,
+      "max": 3
+     },
+     {
+      "dex": 113,
+      "nome": "Zebuim",
+      "min": 4,
+      "max": 4
+     },
+     {
+      "dex": 190,
+      "nome": "Cacauim",
+      "min": 3,
+      "max": 3
+     },
+     {
+      "dex": 196,
+      "nome": "Pedrinha",
+      "min": 2,
+      "max": 2
+     },
+     {
+      "dex": 228,
+      "nome": "Tubarim",
+      "min": 4,
+      "max": 4
+     },
+     {
+      "dex": 354,
+      "nome": "Preazinho",
+      "min": 2,
+      "max": 2
+     },
+     {
+      "dex": 359,
+      "nome": "Preguicinha",
+      "min": 3,
+      "max": 3
+     }
+    ]
+   },
+   "surfe": {
+    "taxa": 4,
+    "criaturas": [
+     {
+      "dex": 25,
+      "nome": "Botim",
+      "min": 15,
+      "max": 25
+     },
+     {
+      "dex": 34,
+      "nome": "Jacarim",
+      "min": 5,
+      "max": 35
+     },
+     {
+      "dex": 58,
+      "nome": "Mandim",
+      "min": 25,
+      "max": 30
+     },
+     {
+      "dex": 85,
+      "nome": "Sapim",
+      "min": 10,
+      "max": 30
+     },
+     {
+      "dex": 104,
+      "nome": "Cabocim",
+      "min": 25,
+      "max": 30
+     }
+    ]
+   },
+   "pesca": {
+    "taxa": 30,
+    "criaturas": [
+     {
+      "dex": 12,
+      "nome": "Capivim",
+      "min": 35,
+      "max": 40
+     },
+     {
+      "dex": 25,
+      "nome": "Botim",
+      "min": 5,
+      "max": 10
+     },
+     {
+      "dex": 34,
+      "nome": "Jacarim",
+      "min": 10,
+      "max": 30
+     },
+     {
+      "dex": 55,
+      "nome": "Peixim",
+      "min": 5,
+      "max": 10
+     },
+     {
+      "dex": 58,
+      "nome": "Mandim",
+      "min": 10,
+      "max": 30
+     },
+     {
+      "dex": 85,
+      "nome": "Sapim",
+      "min": 25,
+      "max": 35
+     },
+     {
+      "dex": 104,
+      "nome": "Cabocim",
+      "min": 10,
+      "max": 30
+     },
+     {
+      "dex": 165,
+      "nome": "Jaburu",
+      "min": 40,
+      "max": 45
+     },
+     {
+      "dex": 228,
+      "nome": "Tubarim",
+      "min": 30,
+      "max": 35
+     }
+    ]
+   }
+  },
+  "ROUTE104": {
+   "grama": {
+    "taxa": 20,
+    "criaturas": [
+     {
+      "dex": 22,
+      "nome": "Muriçoco",
+      "min": 4,
+      "max": 4
+     },
+     {
+      "dex": 37,
+      "nome": "Preguicim",
+      "min": 4,
+      "max": 4
+     },
+     {
+      "dex": 40,
+      "nome": "Papaguim",
+      "min": 5,
+      "max": 5
+     },
+     {
+      "dex": 43,
+      "nome": "Antinha",
+      "min": 5,
+      "max": 5
+     },
+     {
+      "dex": 49,
+      "nome": "Borbolim",
+      "min": 4,
+      "max": 4
+     },
+     {
+      "dex": 79,
+      "nome": "Gambá",
+      "min": 5,
+      "max": 5
+     },
+     {
+      "dex": 82,
+      "nome": "Tuquinho",
+      "min": 4,
+      "max": 4
+     },
+     {
+      "dex": 136,
+      "nome": "Vagalumim",
+      "min": 4,
+      "max": 4
+     },
+     {
+      "dex": 138,
+      "nome": "Cigarrinho",
+      "min": 5,
+      "max": 5
+     },
+     {
+      "dex": 163,
+      "nome": "Corurupim",
+      "min": 5,
+      "max": 5
+     },
+     {
+      "dex": 190,
+      "nome": "Cacauim",
+      "min": 4,
+      "max": 4
+     },
+     {
+      "dex": 220,
+      "nome": "Polvim",
+      "min": 3,
+      "max": 3
+     }
+    ]
+   },
+   "surfe": {
+    "taxa": 4,
+    "criaturas": [
+     {
+      "dex": 55,
+      "nome": "Peixim",
+      "min": 25,
+      "max": 30
+     },
+     {
+      "dex": 85,
+      "nome": "Sapim",
+      "min": 25,
+      "max": 30
+     },
+     {
+      "dex": 216,
+      "nome": "Caranguim",
+      "min": 10,
+      "max": 30
+     },
+     {
+      "dex": 220,
+      "nome": "Polvim",
+      "min": 15,
+      "max": 25
+     },
+     {
+      "dex": 228,
+      "nome": "Tubarim",
+      "min": 15,
+      "max": 25
+     }
+    ]
+   },
+   "pesca": {
+    "taxa": 30,
+    "criaturas": [
+     {
+      "dex": 55,
+      "nome": "Peixim",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 58,
+      "nome": "Mandim",
+      "min": 35,
+      "max": 40
+     },
+     {
+      "dex": 104,
+      "nome": "Cabocim",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 125,
+      "nome": "Aruanã",
+      "min": 40,
+      "max": 45
+     },
+     {
+      "dex": 216,
+      "nome": "Caranguim",
+      "min": 10,
+      "max": 30
+     },
+     {
+      "dex": 220,
+      "nome": "Polvim",
+      "min": 20,
+      "max": 30
+     },
+     {
+      "dex": 224,
+      "nome": "Tartaruguim",
+      "min": 5,
+      "max": 10
+     },
+     {
+      "dex": 228,
+      "nome": "Tubarim",
+      "min": 10,
+      "max": 30
+     }
+    ]
+   }
+  },
+  "ROUTE105": {
+   "surfe": {
+    "taxa": 4,
+    "criaturas": [
+     {
+      "dex": 12,
+      "nome": "Capivim",
+      "min": 5,
+      "max": 35
+     },
+     {
+      "dex": 85,
+      "nome": "Sapim",
+      "min": 15,
+      "max": 25
+     },
+     {
+      "dex": 216,
+      "nome": "Caranguim",
+      "min": 25,
+      "max": 30
+     },
+     {
+      "dex": 224,
+      "nome": "Tartaruguim",
+      "min": 25,
+      "max": 30
+     }
+    ]
+   },
+   "pesca": {
+    "taxa": 30,
+    "criaturas": [
+     {
+      "dex": 12,
+      "nome": "Capivim",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 55,
+      "nome": "Peixim",
+      "min": 20,
+      "max": 30
+     },
+     {
+      "dex": 58,
+      "nome": "Mandim",
+      "min": 10,
+      "max": 30
+     },
+     {
+      "dex": 85,
+      "nome": "Sapim",
+      "min": 35,
+      "max": 40
+     },
+     {
+      "dex": 104,
+      "nome": "Cabocim",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 216,
+      "nome": "Caranguim",
+      "min": 40,
+      "max": 45
+     },
+     {
+      "dex": 228,
+      "nome": "Tubarim",
+      "min": 5,
+      "max": 30
+     }
+    ]
+   }
+  },
+  "ROUTE110": {
+   "grama": {
+    "taxa": 20,
+    "criaturas": [
+     {
+      "dex": 86,
+      "nome": "Sapão",
+      "min": 13,
+      "max": 13
+     },
+     {
+      "dex": 220,
+      "nome": "Polvim",
+      "min": 12,
+      "max": 13
+     },
+     {
+      "dex": 226,
+      "nome": "Golfinho",
+      "min": 13,
+      "max": 13
+     },
+     {
+      "dex": 228,
+      "nome": "Tubarim",
+      "min": 12,
+      "max": 12
+     },
+     {
+      "dex": 231,
+      "nome": "Peixe-Espada",
+      "min": 12,
+      "max": 12
+     },
+     {
+      "dex": 300,
+      "nome": "Pombim",
+      "min": 12,
+      "max": 12
+     },
+     {
+      "dex": 308,
+      "nome": "Traça-Papel",
+      "min": 13,
+      "max": 13
+     },
+     {
+      "dex": 313,
+      "nome": "Lixão",
+      "min": 12,
+      "max": 12
+     },
+     {
+      "dex": 317,
+      "nome": "Sacolim",
+      "min": 13,
+      "max": 13
+     },
+     {
+      "dex": 351,
+      "nome": "Tuim",
+      "min": 12,
+      "max": 12
+     },
+     {
+      "dex": 356,
+      "nome": "Tamanduí",
+      "min": 13,
+      "max": 13
+     }
+    ]
+   },
+   "surfe": {
+    "taxa": 4,
+    "criaturas": [
+     {
+      "dex": 86,
+      "nome": "Sapão",
+      "min": 5,
+      "max": 35
+     },
+     {
+      "dex": 216,
+      "nome": "Caranguim",
+      "min": 25,
+      "max": 30
+     },
+     {
+      "dex": 220,
+      "nome": "Polvim",
+      "min": 15,
+      "max": 25
+     },
+     {
+      "dex": 228,
+      "nome": "Tubarim",
+      "min": 25,
+      "max": 30
+     }
+    ]
+   },
+   "pesca": {
+    "taxa": 30,
+    "criaturas": [
+     {
+      "dex": 86,
+      "nome": "Sapão",
+      "min": 10,
+      "max": 30
+     },
+     {
+      "dex": 216,
+      "nome": "Caranguim",
+      "min": 35,
+      "max": 40
+     },
+     {
+      "dex": 220,
+      "nome": "Polvim",
+      "min": 20,
+      "max": 30
+     },
+     {
+      "dex": 224,
+      "nome": "Tartaruguim",
+      "min": 40,
+      "max": 45
+     },
+     {
+      "dex": 228,
+      "nome": "Tubarim",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 231,
+      "nome": "Peixe-Espada",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 233,
+      "nome": "Pescadão",
+      "min": 30,
+      "max": 35
+     }
+    ]
+   }
+  },
+  "ROUTE111": {
+   "grama": {
+    "taxa": 10,
+    "criaturas": [
+     {
+      "dex": 21,
+      "nome": "Cactula",
+      "min": 21,
+      "max": 21
+     },
+     {
+      "dex": 29,
+      "nome": "Tatubola",
+      "min": 20,
+      "max": 21
+     },
+     {
+      "dex": 81,
+      "nome": "Sarué",
+      "min": 19,
+      "max": 19
+     },
+     {
+      "dex": 116,
+      "nome": "Cabrita",
+      "min": 19,
+      "max": 20
+     },
+     {
+      "dex": 154,
+      "nome": "Cupinzim",
+      "min": 22,
+      "max": 22
+     },
+     {
+      "dex": 185,
+      "nome": "Babaçu",
+      "min": 20,
+      "max": 21
+     },
+     {
+      "dex": 215,
+      "nome": "Granito",
+      "min": 22,
+      "max": 22
+     },
+     {
+      "dex": 237,
+      "nome": "Lobisomem",
+      "min": 19,
+      "max": 19
+     },
+     {
+      "dex": 357,
+      "nome": "Tamanduá",
+      "min": 20,
+      "max": 20
+     }
+    ]
+   },
+   "surfe": {
+    "taxa": 4,
+    "criaturas": [
+     {
+      "dex": 35,
+      "nome": "Jacarão",
+      "min": 5,
+      "max": 10
+     },
+     {
+      "dex": 86,
+      "nome": "Sapão",
+      "min": 10,
+      "max": 30
+     },
+     {
+      "dex": 186,
+      "nome": "Buriti",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 209,
+      "nome": "Estalactite",
+      "min": 20,
+      "max": 30
+     }
+    ]
+   },
+   "pedra": {
+    "taxa": 20,
+    "criaturas": [
+     {
+      "dex": 24,
+      "nome": "Tamanduá",
+      "min": 15,
+      "max": 20
+     },
+     {
+      "dex": 29,
+      "nome": "Tatubola",
+      "min": 5,
+      "max": 15
+     },
+     {
+      "dex": 154,
+      "nome": "Cupinzim",
+      "min": 15,
+      "max": 20
+     },
+     {
+      "dex": 357,
+      "nome": "Tamanduá",
+      "min": 15,
+      "max": 20
+     }
+    ]
+   },
+   "pesca": {
+    "taxa": 30,
+    "criaturas": [
+     {
+      "dex": 35,
+      "nome": "Jacarão",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 86,
+      "nome": "Sapão",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 126,
+      "nome": "Poraquê",
+      "min": 10,
+      "max": 30
+     },
+     {
+      "dex": 130,
+      "nome": "Tucunaré",
+      "min": 20,
+      "max": 30
+     },
+     {
+      "dex": 165,
+      "nome": "Jaburu",
+      "min": 40,
+      "max": 45
+     },
+     {
+      "dex": 186,
+      "nome": "Buriti",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 209,
+      "nome": "Estalactite",
+      "min": 35,
+      "max": 40
+     }
+    ]
+   }
+  },
+  "ROUTE112": {
+   "grama": {
+    "taxa": 20,
+    "criaturas": [
+     {
+      "dex": 21,
+      "nome": "Cactula",
+      "min": 16,
+      "max": 16
+     },
+     {
+      "dex": 28,
+      "nome": "Tatuim",
+      "min": 14,
+      "max": 14
+     },
+     {
+      "dex": 29,
+      "nome": "Tatubola",
+      "min": 15,
+      "max": 16
+     },
+     {
+      "dex": 116,
+      "nome": "Cabrita",
+      "min": 14,
+      "max": 16
+     },
+     {
+      "dex": 142,
+      "nome": "Escorpim",
+      "min": 15,
+      "max": 15
+     },
+     {
+      "dex": 185,
+      "nome": "Babaçu",
+      "min": 16,
+      "max": 16
+     },
+     {
+      "dex": 187,
+      "nome": "Cajuzim",
+      "min": 15,
+      "max": 15
+     },
+     {
+      "dex": 201,
+      "nome": "Ferrolho",
+      "min": 14,
+      "max": 14
+     },
+     {
+      "dex": 213,
+      "nome": "Vulcanite",
+      "min": 16,
+      "max": 16
+     },
+     {
+      "dex": 215,
+      "nome": "Granito",
+      "min": 16,
+      "max": 16
+     }
+    ]
+   }
+  },
+  "ROUTE113": {
+   "grama": {
+    "taxa": 20,
+    "criaturas": [
+     {
+      "dex": 28,
+      "nome": "Tatuim",
+      "min": 14,
+      "max": 16
+     },
+     {
+      "dex": 29,
+      "nome": "Tatubola",
+      "min": 15,
+      "max": 15
+     },
+     {
+      "dex": 98,
+      "nome": "Mula",
+      "min": 14,
+      "max": 15
+     },
+     {
+      "dex": 116,
+      "nome": "Cabrita",
+      "min": 16,
+      "max": 16
+     },
+     {
+      "dex": 154,
+      "nome": "Cupinzim",
+      "min": 16,
+      "max": 16
+     },
+     {
+      "dex": 201,
+      "nome": "Ferrolho",
+      "min": 16,
+      "max": 16
+     },
+     {
+      "dex": 207,
+      "nome": "Argilim",
+      "min": 15,
+      "max": 15
+     },
+     {
+      "dex": 238,
+      "nome": "Corpo-Seco",
+      "min": 16,
+      "max": 16
+     },
+     {
+      "dex": 357,
+      "nome": "Tamanduá",
+      "min": 14,
+      "max": 14
+     },
+     {
+      "dex": 361,
+      "nome": "Beija-Flor",
+      "min": 16,
+      "max": 16
+     }
+    ]
+   }
+  },
+  "ROUTE114": {
+   "grama": {
+    "taxa": 20,
+    "criaturas": [
+     {
+      "dex": 12,
+      "nome": "Capivim",
+      "min": 15,
+      "max": 17
+     },
+     {
+      "dex": 35,
+      "nome": "Jacarão",
+      "min": 16,
+      "max": 16
+     },
+     {
+      "dex": 59,
+      "nome": "Mandí",
+      "min": 15,
+      "max": 15
+     },
+     {
+      "dex": 86,
+      "nome": "Sapão",
+      "min": 16,
+      "max": 16
+     },
+     {
+      "dex": 127,
+      "nome": "Curimbatá",
+      "min": 17,
+      "max": 17
+     },
+     {
+      "dex": 130,
+      "nome": "Tucunaré",
+      "min": 15,
+      "max": 15
+     },
+     {
+      "dex": 174,
+      "nome": "Bacurau",
+      "min": 18,
+      "max": 18
+     },
+     {
+      "dex": 235,
+      "nome": "Cuca",
+      "min": 16,
+      "max": 16
+     },
+     {
+      "dex": 361,
+      "nome": "Beija-Flor",
+      "min": 15,
+      "max": 15
+     },
+     {
+      "dex": 375,
+      "nome": "Piranhita",
+      "min": 16,
+      "max": 17
+     }
+    ]
+   },
+   "surfe": {
+    "taxa": 4,
+    "criaturas": [
+     {
+      "dex": 12,
+      "nome": "Capivim",
+      "min": 5,
+      "max": 10
+     },
+     {
+      "dex": 35,
+      "nome": "Jacarão",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 86,
+      "nome": "Sapão",
+      "min": 20,
+      "max": 30
+     },
+     {
+      "dex": 375,
+      "nome": "Piranhita",
+      "min": 10,
+      "max": 30
+     }
+    ]
+   },
+   "pedra": {
+    "taxa": 20,
+    "criaturas": [
+     {
+      "dex": 127,
+      "nome": "Curimbatá",
+      "min": 5,
+      "max": 15
+     },
+     {
+      "dex": 134,
+      "nome": "Cascudo",
+      "min": 15,
+      "max": 20
+     },
+     {
+      "dex": 154,
+      "nome": "Cupinzim",
+      "min": 15,
+      "max": 20
+     },
+     {
+      "dex": 357,
+      "nome": "Tamanduá",
+      "min": 15,
+      "max": 20
+     }
+    ]
+   },
+   "pesca": {
+    "taxa": 30,
+    "criaturas": [
+     {
+      "dex": 35,
+      "nome": "Jacarão",
+      "min": 35,
+      "max": 40
+     },
+     {
+      "dex": 59,
+      "nome": "Mandí",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 127,
+      "nome": "Curimbatá",
+      "min": 10,
+      "max": 30
+     },
+     {
+      "dex": 128,
+      "nome": "Traíra",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 130,
+      "nome": "Tucunaré",
+      "min": 20,
+      "max": 30
+     },
+     {
+      "dex": 134,
+      "nome": "Cascudo",
+      "min": 40,
+      "max": 45
+     },
+     {
+      "dex": 375,
+      "nome": "Piranhita",
+      "min": 5,
+      "max": 30
+     }
+    ]
+   }
+  },
+  "ROUTE116": {
+   "grama": {
+    "taxa": 20,
+    "criaturas": [
+     {
+      "dex": 10,
+      "nome": "Formilim",
+      "min": 7,
+      "max": 7
+     },
+     {
+      "dex": 52,
+      "nome": "Guaracim",
+      "min": 7,
+      "max": 7
+     },
+     {
+      "dex": 64,
+      "nome": "Aranin",
+      "min": 6,
+      "max": 6
+     },
+     {
+      "dex": 88,
+      "nome": "Teiuzim",
+      "min": 6,
+      "max": 6
+     },
+     {
+      "dex": 97,
+      "nome": "Mulinha",
+      "min": 8,
+      "max": 8
+     },
+     {
+      "dex": 140,
+      "nome": "Louvadinha",
+      "min": 6,
+      "max": 6
+     },
+     {
+      "dex": 147,
+      "nome": "Grilim",
+      "min": 8,
+      "max": 8
+     },
+     {
+      "dex": 176,
+      "nome": "Sementim",
+      "min": 7,
+      "max": 7
+     },
+     {
+      "dex": 207,
+      "nome": "Argilim",
+      "min": 7,
+      "max": 7
+     },
+     {
+      "dex": 351,
+      "nome": "Tuim",
+      "min": 7,
+      "max": 7
+     },
+     {
+      "dex": 356,
+      "nome": "Tamanduí",
+      "min": 6,
+      "max": 6
+     },
+     {
+      "dex": 361,
+      "nome": "Beija-Flor",
+      "min": 8,
+      "max": 8
+     }
+    ]
+   }
+  },
+  "ROUTE117": {
+   "grama": {
+    "taxa": 20,
+    "criaturas": [
+     {
+      "dex": 38,
+      "nome": "Preguicão",
+      "min": 13,
+      "max": 13
+     },
+     {
+      "dex": 41,
+      "nome": "Papagaio",
+      "min": 14,
+      "max": 14
+     },
+     {
+      "dex": 65,
+      "nome": "Caraninha",
+      "min": 13,
+      "max": 14
+     },
+     {
+      "dex": 86,
+      "nome": "Sapão",
+      "min": 14,
+      "max": 14
+     },
+     {
+      "dex": 98,
+      "nome": "Mula",
+      "min": 13,
+      "max": 13
+     },
+     {
+      "dex": 152,
+      "nome": "Traça",
+      "min": 13,
+      "max": 13
+     },
+     {
+      "dex": 259,
+      "nome": "Saciamigo",
+      "min": 13,
+      "max": 13
+     },
+     {
+      "dex": 263,
+      "nome": "Pomba-Gira",
+      "min": 13,
+      "max": 13
+     },
+     {
+      "dex": 361,
+      "nome": "Beija-Flor",
+      "min": 13,
+      "max": 13
+     },
+     {
+      "dex": 366,
+      "nome": "Berimbau",
+      "min": 13,
+      "max": 13
+     }
+    ]
+   },
+   "surfe": {
+    "taxa": 4,
+    "criaturas": [
+     {
+      "dex": 86,
+      "nome": "Sapão",
+      "min": 10,
+      "max": 30
+     },
+     {
+      "dex": 144,
+      "nome": "Caramulão",
+      "min": 20,
+      "max": 30
+     },
+     {
+      "dex": 179,
+      "nome": "Bromelinha",
+      "min": 5,
+      "max": 10
+     },
+     {
+      "dex": 253,
+      "nome": "Yara-Pindá",
+      "min": 30,
+      "max": 35
+     }
+    ]
+   },
+   "pesca": {
+    "taxa": 30,
+    "criaturas": [
+     {
+      "dex": 57,
+      "nome": "Mãe-d'Água",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 86,
+      "nome": "Sapão",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 124,
+      "nome": "Tambaqui",
+      "min": 20,
+      "max": 30
+     },
+     {
+      "dex": 125,
+      "nome": "Aruanã",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 126,
+      "nome": "Poraquê",
+      "min": 40,
+      "max": 45
+     },
+     {
+      "dex": 130,
+      "nome": "Tucunaré",
+      "min": 35,
+      "max": 40
+     },
+     {
+      "dex": 131,
+      "nome": "Pacu",
+      "min": 10,
+      "max": 30
+     }
+    ]
+   }
+  },
+  "ROUTE118": {
+   "grama": {
+    "taxa": 20,
+    "criaturas": [
+     {
+      "dex": 57,
+      "nome": "Mãe-d'Água",
+      "min": 26,
+      "max": 26
+     },
+     {
+      "dex": 74,
+      "nome": "Marimbondo",
+      "min": 25,
+      "max": 25
+     },
+     {
+      "dex": 125,
+      "nome": "Aruanã",
+      "min": 24,
+      "max": 24
+     },
+     {
+      "dex": 131,
+      "nome": "Pacu",
+      "min": 26,
+      "max": 26
+     },
+     {
+      "dex": 144,
+      "nome": "Caramulão",
+      "min": 24,
+      "max": 26
+     },
+     {
+      "dex": 165,
+      "nome": "Jaburu",
+      "min": 27,
+      "max": 27
+     },
+     {
+      "dex": 179,
+      "nome": "Bromelinha",
+      "min": 25,
+      "max": 25
+     },
+     {
+      "dex": 262,
+      "nome": "Caipora-Fêmea",
+      "min": 26,
+      "max": 26
+     },
+     {
+      "dex": 271,
+      "nome": "Menino-Deus",
+      "min": 26,
+      "max": 26
+     },
+     {
+      "dex": 349,
+      "nome": "Aracuã",
+      "min": 25,
+      "max": 25
+     }
+    ]
+   },
+   "surfe": {
+    "taxa": 4,
+    "criaturas": [
+     {
+      "dex": 125,
+      "nome": "Aruanã",
+      "min": 25,
+      "max": 30
+     },
+     {
+      "dex": 144,
+      "nome": "Caramulão",
+      "min": 5,
+      "max": 35
+     },
+     {
+      "dex": 181,
+      "nome": "Vitóriarégia",
+      "min": 15,
+      "max": 25
+     },
+     {
+      "dex": 253,
+      "nome": "Yara-Pindá",
+      "min": 25,
+      "max": 30
+     }
+    ]
+   },
+   "pesca": {
+    "taxa": 30,
+    "criaturas": [
+     {
+      "dex": 57,
+      "nome": "Mãe-d'Água",
+      "min": 10,
+      "max": 30
+     },
+     {
+      "dex": 59,
+      "nome": "Mandí",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 124,
+      "nome": "Tambaqui",
+      "min": 40,
+      "max": 45
+     },
+     {
+      "dex": 125,
+      "nome": "Aruanã",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 131,
+      "nome": "Pacu",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 144,
+      "nome": "Caramulão",
+      "min": 35,
+      "max": 40
+     },
+     {
+      "dex": 165,
+      "nome": "Jaburu",
+      "min": 20,
+      "max": 35
+     }
+    ]
+   }
+  },
+  "ROUTE124": {
+   "surfe": {
+    "taxa": 4,
+    "criaturas": [
+     {
+      "dex": 19,
+      "nome": "Iaraço",
+      "min": 25,
+      "max": 30
+     },
+     {
+      "dex": 125,
+      "nome": "Aruanã",
+      "min": 25,
+      "max": 30
+     },
+     {
+      "dex": 144,
+      "nome": "Caramulão",
+      "min": 5,
+      "max": 35
+     },
+     {
+      "dex": 181,
+      "nome": "Vitóriarégia",
+      "min": 15,
+      "max": 25
+     }
+    ]
+   },
+   "pesca": {
+    "taxa": 30,
+    "criaturas": [
+     {
+      "dex": 57,
+      "nome": "Mãe-d'Água",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 124,
+      "nome": "Tambaqui",
+      "min": 40,
+      "max": 45
+     },
+     {
+      "dex": 125,
+      "nome": "Aruanã",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 130,
+      "nome": "Tucunaré",
+      "min": 35,
+      "max": 40
+     },
+     {
+      "dex": 131,
+      "nome": "Pacu",
+      "min": 10,
+      "max": 30
+     },
+     {
+      "dex": 144,
+      "nome": "Caramulão",
+      "min": 25,
+      "max": 35
+     },
+     {
+      "dex": 181,
+      "nome": "Vitóriarégia",
+      "min": 30,
+      "max": 35
+     }
+    ]
+   }
+  },
+  "PETALBURG_WOODS": {
+   "grama": {
+    "taxa": 20,
+    "criaturas": [
+     {
+      "dex": 14,
+      "nome": "Sagüim",
+      "min": 5,
+      "max": 5
+     },
+     {
+      "dex": 37,
+      "nome": "Preguicim",
+      "min": 6,
+      "max": 6
+     },
+     {
+      "dex": 49,
+      "nome": "Borbolim",
+      "min": 5,
+      "max": 5
+     },
+     {
+      "dex": 67,
+      "nome": "Gatim",
+      "min": 5,
+      "max": 5
+     },
+     {
+      "dex": 70,
+      "nome": "Cutim",
+      "min": 5,
+      "max": 5
+     },
+     {
+      "dex": 76,
+      "nome": "Quatim",
+      "min": 5,
+      "max": 5
+     },
+     {
+      "dex": 136,
+      "nome": "Vagalumim",
+      "min": 6,
+      "max": 6
+     },
+     {
+      "dex": 138,
+      "nome": "Cigarrinho",
+      "min": 6,
+      "max": 6
+     },
+     {
+      "dex": 163,
+      "nome": "Corurupim",
+      "min": 6,
+      "max": 6
+     },
+     {
+      "dex": 190,
+      "nome": "Cacauim",
+      "min": 6,
+      "max": 6
+     },
+     {
+      "dex": 228,
+      "nome": "Tubarim",
+      "min": 5,
+      "max": 5
+     },
+     {
+      "dex": 359,
+      "nome": "Preguicinha",
+      "min": 5,
+      "max": 5
+     }
+    ]
+   }
+  },
+  "RUSTURF_TUNNEL": {
+   "grama": {
+    "taxa": 10,
+    "criaturas": [
+     {
+      "dex": 14,
+      "nome": "Sagüim",
+      "min": 7,
+      "max": 7
+     },
+     {
+      "dex": 28,
+      "nome": "Tatuim",
+      "min": 5,
+      "max": 6
+     },
+     {
+      "dex": 61,
+      "nome": "Preguim",
+      "min": 6,
+      "max": 6
+     },
+     {
+      "dex": 91,
+      "nome": "Morcim",
+      "min": 7,
+      "max": 7
+     },
+     {
+      "dex": 198,
+      "nome": "Cristalim",
+      "min": 5,
+      "max": 6
+     },
+     {
+      "dex": 201,
+      "nome": "Ferrolho",
+      "min": 8,
+      "max": 8
+     },
+     {
+      "dex": 204,
+      "nome": "Manganim",
+      "min": 5,
+      "max": 5
+     },
+     {
+      "dex": 209,
+      "nome": "Estalactite",
+      "min": 8,
+      "max": 8
+     },
+     {
+      "dex": 215,
+      "nome": "Granito",
+      "min": 8,
+      "max": 8
+     }
+    ]
+   }
+  },
+  "GRANITE_CAVE_1F": {
+   "grama": {
+    "taxa": 10,
+    "criaturas": [
+     {
+      "dex": 78,
+      "nome": "Coati",
+      "min": 6,
+      "max": 6
+     },
+     {
+      "dex": 91,
+      "nome": "Morcim",
+      "min": 7,
+      "max": 7
+     },
+     {
+      "dex": 198,
+      "nome": "Cristalim",
+      "min": 7,
+      "max": 10
+     },
+     {
+      "dex": 201,
+      "nome": "Ferrolho",
+      "min": 6,
+      "max": 6
+     },
+     {
+      "dex": 204,
+      "nome": "Manganim",
+      "min": 8,
+      "max": 8
+     },
+     {
+      "dex": 209,
+      "nome": "Estalactite",
+      "min": 8,
+      "max": 8
+     },
+     {
+      "dex": 210,
+      "nome": "Estalagmite",
+      "min": 9,
+      "max": 9
+     },
+     {
+      "dex": 211,
+      "nome": "Fóssil",
+      "min": 7,
+      "max": 8
+     },
+     {
+      "dex": 215,
+      "nome": "Granito",
+      "min": 8,
+      "max": 9
+     }
+    ]
+   }
+  },
+  "GRANITE_CAVE_B1F": {
+   "grama": {
+    "taxa": 10,
+    "criaturas": [
+     {
+      "dex": 78,
+      "nome": "Coati",
+      "min": 11,
+      "max": 11
+     },
+     {
+      "dex": 91,
+      "nome": "Morcim",
+      "min": 10,
+      "max": 10
+     },
+     {
+      "dex": 198,
+      "nome": "Cristalim",
+      "min": 9,
+      "max": 10
+     },
+     {
+      "dex": 201,
+      "nome": "Ferrolho",
+      "min": 10,
+      "max": 10
+     },
+     {
+      "dex": 204,
+      "nome": "Manganim",
+      "min": 9,
+      "max": 9
+     },
+     {
+      "dex": 209,
+      "nome": "Estalactite",
+      "min": 11,
+      "max": 11
+     },
+     {
+      "dex": 211,
+      "nome": "Fóssil",
+      "min": 9,
+      "max": 9
+     },
+     {
+      "dex": 215,
+      "nome": "Granito",
+      "min": 10,
+      "max": 11
+     }
+    ]
+   }
+  },
+  "MT_PYRE_1F": {
+   "grama": {
+    "taxa": 10,
+    "criaturas": [
+     {
+      "dex": 38,
+      "nome": "Preguicão",
+      "min": 24,
+      "max": 24
+     },
+     {
+      "dex": 159,
+      "nome": "Urutau",
+      "min": 24,
+      "max": 24
+     },
+     {
+      "dex": 171,
+      "nome": "Sanhaço",
+      "min": 22,
+      "max": 22
+     },
+     {
+      "dex": 172,
+      "nome": "Papa-Formiga",
+      "min": 23,
+      "max": 23
+     },
+     {
+      "dex": 189,
+      "nome": "Açaí",
+      "min": 25,
+      "max": 29
+     },
+     {
+      "dex": 242,
+      "nome": "Anhangá",
+      "min": 26,
+      "max": 27
+     },
+     {
+      "dex": 249,
+      "nome": "Jenipapo",
+      "min": 28,
+      "max": 29
+     },
+     {
+      "dex": 253,
+      "nome": "Yara-Pindá",
+      "min": 24,
+      "max": 24
+     },
+     {
+      "dex": 296,
+      "nome": "Amazona",
+      "min": 29,
+      "max": 29
+     }
+    ]
+   }
+  },
+  "VICTORY_ROAD_1F": {
+   "grama": {
+    "taxa": 10,
+    "criaturas": [
+     {
+      "dex": 16,
+      "nome": "Boitatá",
+      "min": 38,
+      "max": 40
+     },
+     {
+      "dex": 78,
+      "nome": "Coati",
+      "min": 36,
+      "max": 36
+     },
+     {
+      "dex": 197,
+      "nome": "Rochão",
+      "min": 36,
+      "max": 36
+     },
+     {
+      "dex": 200,
+      "nome": "Ouríço",
+      "min": 36,
+      "max": 36
+     },
+     {
+      "dex": 211,
+      "nome": "Fóssil",
+      "min": 36,
+      "max": 40
+     },
+     {
+      "dex": 213,
+      "nome": "Vulcanite",
+      "min": 36,
+      "max": 36
+     },
+     {
+      "dex": 214,
+      "nome": "Marmim",
+      "min": 38,
+      "max": 38
+     },
+     {
+      "dex": 215,
+      "nome": "Granito",
+      "min": 36,
+      "max": 40
+     }
+    ]
+   }
+  },
+  "SAFARI_ZONE_SOUTH": {
+   "grama": {
+    "taxa": 25,
+    "criaturas": [
+     {
+      "dex": 20,
+      "nome": "Sacizinho",
+      "min": 25,
+      "max": 25
+     },
+     {
+      "dex": 115,
+      "nome": "Ovelhinha",
+      "min": 27,
+      "max": 27
+     },
+     {
+      "dex": 153,
+      "nome": "Corupião",
+      "min": 27,
+      "max": 27
+     },
+     {
+      "dex": 155,
+      "nome": "Formigão-Preto",
+      "min": 27,
+      "max": 27
+     },
+     {
+      "dex": 165,
+      "nome": "Jaburu",
+      "min": 25,
+      "max": 27
+     },
+     {
+      "dex": 166,
+      "nome": "Ema",
+      "min": 25,
+      "max": 25
+     },
+     {
+      "dex": 167,
+      "nome": "Seriema",
+      "min": 29,
+      "max": 29
+     },
+     {
+      "dex": 186,
+      "nome": "Buriti",
+      "min": 25,
+      "max": 25
+     },
+     {
+      "dex": 193,
+      "nome": "Mate",
+      "min": 27,
+      "max": 27
+     },
+     {
+      "dex": 194,
+      "nome": "Milho",
+      "min": 25,
+      "max": 25
+     }
+    ]
+   }
+  },
+  "UNDERWATER_ROUTE126": {
+   "surfe": {
+    "taxa": 4,
+    "criaturas": [
+     {
+      "dex": 123,
+      "nome": "Piranha",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 205,
+      "nome": "Salitre",
+      "min": 20,
+      "max": 30
+     },
+     {
+      "dex": 209,
+      "nome": "Estalactite",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 267,
+      "nome": "Marinheiro",
+      "min": 30,
+      "max": 35
+     }
+    ]
+   }
+  },
+  "ABANDONED_SHIP_ROOMS_B1F": {
+   "surfe": {
+    "taxa": 4,
+    "criaturas": [
+     {
+      "dex": 223,
+      "nome": "Cavalim-Marinho",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 226,
+      "nome": "Golfinho",
+      "min": 5,
+      "max": 35
+     },
+     {
+      "dex": 233,
+      "nome": "Pescadão",
+      "min": 5,
+      "max": 35
+     },
+     {
+      "dex": 267,
+      "nome": "Marinheiro",
+      "min": 5,
+      "max": 35
+     }
+    ]
+   },
+   "pesca": {
+    "taxa": 20,
+    "criaturas": [
+     {
+      "dex": 223,
+      "nome": "Cavalim-Marinho",
+      "min": 25,
+      "max": 30
+     },
+     {
+      "dex": 226,
+      "nome": "Golfinho",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 231,
+      "nome": "Peixe-Espada",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 233,
+      "nome": "Pescadão",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 256,
+      "nome": "Iemanjá-Pequena",
+      "min": 20,
+      "max": 25
+     },
+     {
+      "dex": 267,
+      "nome": "Marinheiro",
+      "min": 10,
+      "max": 30
+     },
+     {
+      "dex": 325,
+      "nome": "Bueiro",
+      "min": 25,
+      "max": 35
+     }
+    ]
+   }
+  },
+  "GRANITE_CAVE_B2F": {
+   "grama": {
+    "taxa": 10,
+    "criaturas": [
+     {
+      "dex": 78,
+      "nome": "Coati",
+      "min": 10,
+      "max": 10
+     },
+     {
+      "dex": 91,
+      "nome": "Morcim",
+      "min": 11,
+      "max": 12
+     },
+     {
+      "dex": 198,
+      "nome": "Cristalim",
+      "min": 10,
+      "max": 10
+     },
+     {
+      "dex": 201,
+      "nome": "Ferrolho",
+      "min": 10,
+      "max": 10
+     },
+     {
+      "dex": 204,
+      "nome": "Manganim",
+      "min": 12,
+      "max": 12
+     },
+     {
+      "dex": 209,
+      "nome": "Estalactite",
+      "min": 11,
+      "max": 11
+     },
+     {
+      "dex": 211,
+      "nome": "Fóssil",
+      "min": 10,
+      "max": 10
+     },
+     {
+      "dex": 215,
+      "nome": "Granito",
+      "min": 11,
+      "max": 12
+     }
+    ]
+   },
+   "pedra": {
+    "taxa": 20,
+    "criaturas": [
+     {
+      "dex": 198,
+      "nome": "Cristalim",
+      "min": 10,
+      "max": 20
+     },
+     {
+      "dex": 209,
+      "nome": "Estalactite",
+      "min": 15,
+      "max": 20
+     },
+     {
+      "dex": 211,
+      "nome": "Fóssil",
+      "min": 15,
+      "max": 20
+     },
+     {
+      "dex": 215,
+      "nome": "Granito",
+      "min": 5,
+      "max": 10
+     }
+    ]
+   }
+  },
+  "FIERY_PATH": {
+   "grama": {
+    "taxa": 10,
+    "criaturas": [
+     {
+      "dex": 28,
+      "nome": "Tatuim",
+      "min": 16,
+      "max": 16
+     },
+     {
+      "dex": 29,
+      "nome": "Tatubola",
+      "min": 16,
+      "max": 16
+     },
+     {
+      "dex": 78,
+      "nome": "Coati",
+      "min": 16,
+      "max": 16
+     },
+     {
+      "dex": 101,
+      "nome": "Cerválo",
+      "min": 15,
+      "max": 15
+     },
+     {
+      "dex": 116,
+      "nome": "Cabrita",
+      "min": 14,
+      "max": 14
+     },
+     {
+      "dex": 117,
+      "nome": "Chocalhão",
+      "min": 15,
+      "max": 15
+     },
+     {
+      "dex": 185,
+      "nome": "Babaçu",
+      "min": 14,
+      "max": 14
+     },
+     {
+      "dex": 198,
+      "nome": "Cristalim",
+      "min": 15,
+      "max": 15
+     },
+     {
+      "dex": 201,
+      "nome": "Ferrolho",
+      "min": 15,
+      "max": 15
+     },
+     {
+      "dex": 209,
+      "nome": "Estalactite",
+      "min": 15,
+      "max": 15
+     },
+     {
+      "dex": 210,
+      "nome": "Estalagmite",
+      "min": 14,
+      "max": 14
+     },
+     {
+      "dex": 215,
+      "nome": "Granito",
+      "min": 16,
+      "max": 16
+     }
+    ]
+   }
+  },
+  "METEOR_FALLS_B1F_2R": {
+   "grama": {
+    "taxa": 10,
+    "criaturas": [
+     {
+      "dex": 123,
+      "nome": "Piranha",
+      "min": 30,
+      "max": 33
+     },
+     {
+      "dex": 127,
+      "nome": "Curimbatá",
+      "min": 39,
+      "max": 39
+     },
+     {
+      "dex": 128,
+      "nome": "Traíra",
+      "min": 35,
+      "max": 38
+     },
+     {
+      "dex": 130,
+      "nome": "Tucunaré",
+      "min": 37,
+      "max": 37
+     },
+     {
+      "dex": 131,
+      "nome": "Pacu",
+      "min": 40,
+      "max": 40
+     },
+     {
+      "dex": 134,
+      "nome": "Cascudo",
+      "min": 35,
+      "max": 35
+     },
+     {
+      "dex": 181,
+      "nome": "Vitóriarégia",
+      "min": 38,
+      "max": 38
+     },
+     {
+      "dex": 204,
+      "nome": "Manganim",
+      "min": 25,
+      "max": 25
+     },
+     {
+      "dex": 209,
+      "nome": "Estalactite",
+      "min": 40,
+      "max": 40
+     }
+    ]
+   },
+   "surfe": {
+    "taxa": 4,
+    "criaturas": [
+     {
+      "dex": 123,
+      "nome": "Piranha",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 128,
+      "nome": "Traíra",
+      "min": 5,
+      "max": 15
+     },
+     {
+      "dex": 134,
+      "nome": "Cascudo",
+      "min": 15,
+      "max": 25
+     },
+     {
+      "dex": 209,
+      "nome": "Estalactite",
+      "min": 25,
+      "max": 35
+     }
+    ]
+   },
+   "pesca": {
+    "taxa": 30,
+    "criaturas": [
+     {
+      "dex": 125,
+      "nome": "Aruanã",
+      "min": 35,
+      "max": 40
+     },
+     {
+      "dex": 127,
+      "nome": "Curimbatá",
+      "min": 25,
+      "max": 35
+     },
+     {
+      "dex": 128,
+      "nome": "Traíra",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 130,
+      "nome": "Tucunaré",
+      "min": 10,
+      "max": 30
+     },
+     {
+      "dex": 131,
+      "nome": "Pacu",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 134,
+      "nome": "Cascudo",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 165,
+      "nome": "Jaburu",
+      "min": 40,
+      "max": 45
+     }
+    ]
+   }
+  },
+  "JAGGED_PASS": {
+   "grama": {
+    "taxa": 20,
+    "criaturas": [
+     {
+      "dex": 21,
+      "nome": "Cactula",
+      "min": 22,
+      "max": 22
+     },
+     {
+      "dex": 29,
+      "nome": "Tatubola",
+      "min": 21,
+      "max": 21
+     },
+     {
+      "dex": 116,
+      "nome": "Cabrita",
+      "min": 20,
+      "max": 20
+     },
+     {
+      "dex": 185,
+      "nome": "Babaçu",
+      "min": 22,
+      "max": 22
+     },
+     {
+      "dex": 201,
+      "nome": "Ferrolho",
+      "min": 22,
+      "max": 22
+     },
+     {
+      "dex": 211,
+      "nome": "Fóssil",
+      "min": 20,
+      "max": 22
+     },
+     {
+      "dex": 213,
+      "nome": "Vulcanite",
+      "min": 22,
+      "max": 22
+     },
+     {
+      "dex": 215,
+      "nome": "Granito",
+      "min": 20,
+      "max": 21
+     }
+    ]
+   }
+  },
+  "ROUTE106": {
+   "surfe": {
+    "taxa": 4,
+    "criaturas": [
+     {
+      "dex": 12,
+      "nome": "Capivim",
+      "min": 5,
+      "max": 35
+     },
+     {
+      "dex": 85,
+      "nome": "Sapim",
+      "min": 15,
+      "max": 25
+     },
+     {
+      "dex": 216,
+      "nome": "Caranguim",
+      "min": 25,
+      "max": 30
+     },
+     {
+      "dex": 224,
+      "nome": "Tartaruguim",
+      "min": 25,
+      "max": 30
+     }
+    ]
+   },
+   "pesca": {
+    "taxa": 30,
+    "criaturas": [
+     {
+      "dex": 12,
+      "nome": "Capivim",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 55,
+      "nome": "Peixim",
+      "min": 20,
+      "max": 30
+     },
+     {
+      "dex": 58,
+      "nome": "Mandim",
+      "min": 10,
+      "max": 30
+     },
+     {
+      "dex": 85,
+      "nome": "Sapim",
+      "min": 35,
+      "max": 40
+     },
+     {
+      "dex": 104,
+      "nome": "Cabocim",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 216,
+      "nome": "Caranguim",
+      "min": 40,
+      "max": 45
+     },
+     {
+      "dex": 228,
+      "nome": "Tubarim",
+      "min": 5,
+      "max": 30
+     }
+    ]
+   }
+  },
+  "ROUTE107": {
+   "surfe": {
+    "taxa": 4,
+    "criaturas": [
+     {
+      "dex": 12,
+      "nome": "Capivim",
+      "min": 5,
+      "max": 35
+     },
+     {
+      "dex": 85,
+      "nome": "Sapim",
+      "min": 15,
+      "max": 25
+     },
+     {
+      "dex": 216,
+      "nome": "Caranguim",
+      "min": 25,
+      "max": 30
+     },
+     {
+      "dex": 224,
+      "nome": "Tartaruguim",
+      "min": 25,
+      "max": 30
+     }
+    ]
+   },
+   "pesca": {
+    "taxa": 30,
+    "criaturas": [
+     {
+      "dex": 12,
+      "nome": "Capivim",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 55,
+      "nome": "Peixim",
+      "min": 20,
+      "max": 30
+     },
+     {
+      "dex": 58,
+      "nome": "Mandim",
+      "min": 10,
+      "max": 30
+     },
+     {
+      "dex": 85,
+      "nome": "Sapim",
+      "min": 35,
+      "max": 40
+     },
+     {
+      "dex": 104,
+      "nome": "Cabocim",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 216,
+      "nome": "Caranguim",
+      "min": 40,
+      "max": 45
+     },
+     {
+      "dex": 228,
+      "nome": "Tubarim",
+      "min": 5,
+      "max": 30
+     }
+    ]
+   }
+  },
+  "ROUTE108": {
+   "surfe": {
+    "taxa": 4,
+    "criaturas": [
+     {
+      "dex": 12,
+      "nome": "Capivim",
+      "min": 5,
+      "max": 35
+     },
+     {
+      "dex": 85,
+      "nome": "Sapim",
+      "min": 15,
+      "max": 25
+     },
+     {
+      "dex": 216,
+      "nome": "Caranguim",
+      "min": 25,
+      "max": 30
+     },
+     {
+      "dex": 224,
+      "nome": "Tartaruguim",
+      "min": 25,
+      "max": 30
+     }
+    ]
+   },
+   "pesca": {
+    "taxa": 30,
+    "criaturas": [
+     {
+      "dex": 12,
+      "nome": "Capivim",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 55,
+      "nome": "Peixim",
+      "min": 20,
+      "max": 30
+     },
+     {
+      "dex": 58,
+      "nome": "Mandim",
+      "min": 10,
+      "max": 30
+     },
+     {
+      "dex": 85,
+      "nome": "Sapim",
+      "min": 35,
+      "max": 40
+     },
+     {
+      "dex": 104,
+      "nome": "Cabocim",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 216,
+      "nome": "Caranguim",
+      "min": 40,
+      "max": 45
+     },
+     {
+      "dex": 228,
+      "nome": "Tubarim",
+      "min": 5,
+      "max": 30
+     }
+    ]
+   }
+  },
+  "ROUTE109": {
+   "surfe": {
+    "taxa": 4,
+    "criaturas": [
+     {
+      "dex": 12,
+      "nome": "Capivim",
+      "min": 5,
+      "max": 35
+     },
+     {
+      "dex": 85,
+      "nome": "Sapim",
+      "min": 15,
+      "max": 25
+     },
+     {
+      "dex": 216,
+      "nome": "Caranguim",
+      "min": 25,
+      "max": 30
+     },
+     {
+      "dex": 224,
+      "nome": "Tartaruguim",
+      "min": 25,
+      "max": 30
+     }
+    ]
+   },
+   "pesca": {
+    "taxa": 30,
+    "criaturas": [
+     {
+      "dex": 12,
+      "nome": "Capivim",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 55,
+      "nome": "Peixim",
+      "min": 20,
+      "max": 30
+     },
+     {
+      "dex": 58,
+      "nome": "Mandim",
+      "min": 10,
+      "max": 30
+     },
+     {
+      "dex": 85,
+      "nome": "Sapim",
+      "min": 35,
+      "max": 40
+     },
+     {
+      "dex": 104,
+      "nome": "Cabocim",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 216,
+      "nome": "Caranguim",
+      "min": 40,
+      "max": 45
+     },
+     {
+      "dex": 228,
+      "nome": "Tubarim",
+      "min": 5,
+      "max": 30
+     }
+    ]
+   }
+  },
+  "ROUTE115": {
+   "grama": {
+    "taxa": 20,
+    "criaturas": [
+     {
+      "dex": 38,
+      "nome": "Preguicão",
+      "min": 24,
+      "max": 24
+     },
+     {
+      "dex": 41,
+      "nome": "Papagaio",
+      "min": 26,
+      "max": 26
+     },
+     {
+      "dex": 103,
+      "nome": "Suçuapara",
+      "min": 24,
+      "max": 24
+     },
+     {
+      "dex": 125,
+      "nome": "Aruanã",
+      "min": 24,
+      "max": 24
+     },
+     {
+      "dex": 131,
+      "nome": "Pacu",
+      "min": 25,
+      "max": 25
+     },
+     {
+      "dex": 144,
+      "nome": "Caramulão",
+      "min": 23,
+      "max": 25
+     },
+     {
+      "dex": 157,
+      "nome": "Sabiá",
+      "min": 25,
+      "max": 25
+     },
+     {
+      "dex": 179,
+      "nome": "Bromelinha",
+      "min": 23,
+      "max": 25
+     },
+     {
+      "dex": 253,
+      "nome": "Yara-Pindá",
+      "min": 25,
+      "max": 25
+     }
+    ]
+   },
+   "surfe": {
+    "taxa": 4,
+    "criaturas": [
+     {
+      "dex": 144,
+      "nome": "Caramulão",
+      "min": 15,
+      "max": 25
+     },
+     {
+      "dex": 179,
+      "nome": "Bromelinha",
+      "min": 5,
+      "max": 35
+     },
+     {
+      "dex": 181,
+      "nome": "Vitóriarégia",
+      "min": 25,
+      "max": 30
+     },
+     {
+      "dex": 253,
+      "nome": "Yara-Pindá",
+      "min": 25,
+      "max": 30
+     }
+    ]
+   },
+   "pesca": {
+    "taxa": 30,
+    "criaturas": [
+     {
+      "dex": 57,
+      "nome": "Mãe-d'Água",
+      "min": 10,
+      "max": 30
+     },
+     {
+      "dex": 125,
+      "nome": "Aruanã",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 130,
+      "nome": "Tucunaré",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 131,
+      "nome": "Pacu",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 179,
+      "nome": "Bromelinha",
+      "min": 40,
+      "max": 45
+     },
+     {
+      "dex": 231,
+      "nome": "Peixe-Espada",
+      "min": 20,
+      "max": 30
+     },
+     {
+      "dex": 233,
+      "nome": "Pescadão",
+      "min": 35,
+      "max": 40
+     }
+    ]
+   }
+  },
+  "NEW_MAUVILLE_INSIDE": {
+   "grama": {
+    "taxa": 10,
+    "criaturas": [
+     {
+      "dex": 146,
+      "nome": "Barata",
+      "min": 26,
+      "max": 26
+     },
+     {
+      "dex": 236,
+      "nome": "Bicho-Papão",
+      "min": 26,
+      "max": 26
+     },
+     {
+      "dex": 299,
+      "nome": "Ratão",
+      "min": 26,
+      "max": 26
+     },
+     {
+      "dex": 308,
+      "nome": "Traça-Papel",
+      "min": 26,
+      "max": 26
+     },
+     {
+      "dex": 310,
+      "nome": "Ferrugem",
+      "min": 25,
+      "max": 25
+     },
+     {
+      "dex": 315,
+      "nome": "Bituca",
+      "min": 23,
+      "max": 23
+     },
+     {
+      "dex": 320,
+      "nome": "Pilhoso",
+      "min": 23,
+      "max": 23
+     },
+     {
+      "dex": 321,
+      "nome": "Cabofio",
+      "min": 22,
+      "max": 22
+     },
+     {
+      "dex": 323,
+      "nome": "Aluminio",
+      "min": 24,
+      "max": 25
+     },
+     {
+      "dex": 324,
+      "nome": "Concretim",
+      "min": 22,
+      "max": 22
+     },
+     {
+      "dex": 326,
+      "nome": "Sinal",
+      "min": 24,
+      "max": 24
+     }
+    ]
+   }
+  },
+  "ROUTE119": {
+   "grama": {
+    "taxa": 15,
+    "criaturas": [
+     {
+      "dex": 57,
+      "nome": "Mãe-d'Água",
+      "min": 26,
+      "max": 26
+     },
+     {
+      "dex": 73,
+      "nome": "Formigão",
+      "min": 24,
+      "max": 24
+     },
+     {
+      "dex": 125,
+      "nome": "Aruanã",
+      "min": 25,
+      "max": 25
+     },
+     {
+      "dex": 131,
+      "nome": "Pacu",
+      "min": 25,
+      "max": 25
+     },
+     {
+      "dex": 144,
+      "nome": "Caramulão",
+      "min": 25,
+      "max": 27
+     },
+     {
+      "dex": 165,
+      "nome": "Jaburu",
+      "min": 27,
+      "max": 27
+     },
+     {
+      "dex": 179,
+      "nome": "Bromelinha",
+      "min": 25,
+      "max": 25
+     },
+     {
+      "dex": 181,
+      "nome": "Vitóriarégia",
+      "min": 26,
+      "max": 26
+     },
+     {
+      "dex": 183,
+      "nome": "Cipó",
+      "min": 27,
+      "max": 27
+     },
+     {
+      "dex": 184,
+      "nome": "Palmito",
+      "min": 27,
+      "max": 27
+     }
+    ]
+   },
+   "surfe": {
+    "taxa": 4,
+    "criaturas": [
+     {
+      "dex": 125,
+      "nome": "Aruanã",
+      "min": 25,
+      "max": 30
+     },
+     {
+      "dex": 144,
+      "nome": "Caramulão",
+      "min": 5,
+      "max": 35
+     },
+     {
+      "dex": 179,
+      "nome": "Bromelinha",
+      "min": 15,
+      "max": 25
+     },
+     {
+      "dex": 253,
+      "nome": "Yara-Pindá",
+      "min": 25,
+      "max": 30
+     }
+    ]
+   },
+   "pesca": {
+    "taxa": 30,
+    "criaturas": [
+     {
+      "dex": 124,
+      "nome": "Tambaqui",
+      "min": 10,
+      "max": 30
+     },
+     {
+      "dex": 125,
+      "nome": "Aruanã",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 130,
+      "nome": "Tucunaré",
+      "min": 35,
+      "max": 40
+     },
+     {
+      "dex": 131,
+      "nome": "Pacu",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 144,
+      "nome": "Caramulão",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 165,
+      "nome": "Jaburu",
+      "min": 20,
+      "max": 30
+     },
+     {
+      "dex": 181,
+      "nome": "Vitóriarégia",
+      "min": 40,
+      "max": 45
+     }
+    ]
+   }
+  },
+  "ROUTE120": {
+   "grama": {
+    "taxa": 20,
+    "criaturas": [
+     {
+      "dex": 153,
+      "nome": "Corupião",
+      "min": 25,
+      "max": 25
+     },
+     {
+      "dex": 154,
+      "nome": "Cupinzim",
+      "min": 25,
+      "max": 25
+     },
+     {
+      "dex": 155,
+      "nome": "Formigão-Preto",
+      "min": 25,
+      "max": 25
+     },
+     {
+      "dex": 168,
+      "nome": "Anú",
+      "min": 26,
+      "max": 26
+     },
+     {
+      "dex": 169,
+      "nome": "Trinca-Ferro",
+      "min": 27,
+      "max": 27
+     },
+     {
+      "dex": 170,
+      "nome": "Curió",
+      "min": 27,
+      "max": 27
+     },
+     {
+      "dex": 241,
+      "nome": "Comadre",
+      "min": 27,
+      "max": 27
+     },
+     {
+      "dex": 242,
+      "nome": "Anhangá",
+      "min": 25,
+      "max": 25
+     },
+     {
+      "dex": 288,
+      "nome": "Saci-Rei",
+      "min": 25,
+      "max": 25
+     },
+     {
+      "dex": 357,
+      "nome": "Tamanduá",
+      "min": 25,
+      "max": 27
+     }
+    ]
+   },
+   "surfe": {
+    "taxa": 4,
+    "criaturas": [
+     {
+      "dex": 144,
+      "nome": "Caramulão",
+      "min": 5,
+      "max": 10
+     },
+     {
+      "dex": 179,
+      "nome": "Bromelinha",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 186,
+      "nome": "Buriti",
+      "min": 20,
+      "max": 30
+     },
+     {
+      "dex": 253,
+      "nome": "Yara-Pindá",
+      "min": 10,
+      "max": 30
+     }
+    ]
+   },
+   "pesca": {
+    "taxa": 30,
+    "criaturas": [
+     {
+      "dex": 57,
+      "nome": "Mãe-d'Água",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 124,
+      "nome": "Tambaqui",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 125,
+      "nome": "Aruanã",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 126,
+      "nome": "Poraquê",
+      "min": 35,
+      "max": 40
+     },
+     {
+      "dex": 130,
+      "nome": "Tucunaré",
+      "min": 20,
+      "max": 30
+     },
+     {
+      "dex": 131,
+      "nome": "Pacu",
+      "min": 10,
+      "max": 30
+     },
+     {
+      "dex": 253,
+      "nome": "Yara-Pindá",
+      "min": 40,
+      "max": 45
+     }
+    ]
+   }
+  },
+  "ROUTE121": {
+   "grama": {
+    "taxa": 20,
+    "criaturas": [
+     {
+      "dex": 125,
+      "nome": "Aruanã",
+      "min": 26,
+      "max": 28
+     },
+     {
+      "dex": 144,
+      "nome": "Caramulão",
+      "min": 26,
+      "max": 26
+     },
+     {
+      "dex": 158,
+      "nome": "Bem-te-vi",
+      "min": 28,
+      "max": 28
+     },
+     {
+      "dex": 162,
+      "nome": "Urubu",
+      "min": 25,
+      "max": 25
+     },
+     {
+      "dex": 179,
+      "nome": "Bromelinha",
+      "min": 26,
+      "max": 26
+     },
+     {
+      "dex": 253,
+      "nome": "Yara-Pindá",
+      "min": 27,
+      "max": 27
+     },
+     {
+      "dex": 265,
+      "nome": "Preto-Velho",
+      "min": 28,
+      "max": 28
+     },
+     {
+      "dex": 278,
+      "nome": "Folião",
+      "min": 26,
+      "max": 26
+     },
+     {
+      "dex": 302,
+      "nome": "Baratão",
+      "min": 28,
+      "max": 28
+     },
+     {
+      "dex": 368,
+      "nome": "Pandeirim",
+      "min": 28,
+      "max": 28
+     }
+    ]
+   },
+   "surfe": {
+    "taxa": 4,
+    "criaturas": [
+     {
+      "dex": 144,
+      "nome": "Caramulão",
+      "min": 15,
+      "max": 25
+     },
+     {
+      "dex": 179,
+      "nome": "Bromelinha",
+      "min": 5,
+      "max": 35
+     },
+     {
+      "dex": 181,
+      "nome": "Vitóriarégia",
+      "min": 25,
+      "max": 30
+     },
+     {
+      "dex": 253,
+      "nome": "Yara-Pindá",
+      "min": 25,
+      "max": 30
+     }
+    ]
+   },
+   "pesca": {
+    "taxa": 30,
+    "criaturas": [
+     {
+      "dex": 57,
+      "nome": "Mãe-d'Água",
+      "min": 10,
+      "max": 30
+     },
+     {
+      "dex": 124,
+      "nome": "Tambaqui",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 125,
+      "nome": "Aruanã",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 130,
+      "nome": "Tucunaré",
+      "min": 35,
+      "max": 40
+     },
+     {
+      "dex": 131,
+      "nome": "Pacu",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 231,
+      "nome": "Peixe-Espada",
+      "min": 20,
+      "max": 30
+     },
+     {
+      "dex": 233,
+      "nome": "Pescadão",
+      "min": 40,
+      "max": 45
+     }
+    ]
+   }
+  },
+  "ROUTE122": {
+   "surfe": {
+    "taxa": 4,
+    "criaturas": [
+     {
+      "dex": 135,
+      "nome": "Acará",
+      "min": 15,
+      "max": 25
+     },
+     {
+      "dex": 223,
+      "nome": "Cavalim-Marinho",
+      "min": 25,
+      "max": 30
+     },
+     {
+      "dex": 226,
+      "nome": "Golfinho",
+      "min": 25,
+      "max": 30
+     },
+     {
+      "dex": 253,
+      "nome": "Yara-Pindá",
+      "min": 5,
+      "max": 35
+     }
+    ]
+   },
+   "pesca": {
+    "taxa": 30,
+    "criaturas": [
+     {
+      "dex": 57,
+      "nome": "Mãe-d'Água",
+      "min": 10,
+      "max": 30
+     },
+     {
+      "dex": 125,
+      "nome": "Aruanã",
+      "min": 35,
+      "max": 40
+     },
+     {
+      "dex": 128,
+      "nome": "Traíra",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 130,
+      "nome": "Tucunaré",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 131,
+      "nome": "Pacu",
+      "min": 40,
+      "max": 45
+     },
+     {
+      "dex": 165,
+      "nome": "Jaburu",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 233,
+      "nome": "Pescadão",
+      "min": 25,
+      "max": 35
+     }
+    ]
+   }
+  },
+  "ROUTE123": {
+   "grama": {
+    "taxa": 20,
+    "criaturas": [
+     {
+      "dex": 57,
+      "nome": "Mãe-d'Água",
+      "min": 27,
+      "max": 27
+     },
+     {
+      "dex": 75,
+      "nome": "Abelhinha",
+      "min": 28,
+      "max": 28
+     },
+     {
+      "dex": 125,
+      "nome": "Aruanã",
+      "min": 26,
+      "max": 26
+     },
+     {
+      "dex": 131,
+      "nome": "Pacu",
+      "min": 26,
+      "max": 28
+     },
+     {
+      "dex": 144,
+      "nome": "Caramulão",
+      "min": 26,
+      "max": 26
+     },
+     {
+      "dex": 151,
+      "nome": "Marimbondão",
+      "min": 28,
+      "max": 28
+     },
+     {
+      "dex": 167,
+      "nome": "Seriema",
+      "min": 28,
+      "max": 28
+     },
+     {
+      "dex": 179,
+      "nome": "Bromelinha",
+      "min": 25,
+      "max": 25
+     },
+     {
+      "dex": 182,
+      "nome": "Ipê",
+      "min": 26,
+      "max": 26
+     },
+     {
+      "dex": 251,
+      "nome": "Caipora",
+      "min": 28,
+      "max": 28
+     }
+    ]
+   },
+   "surfe": {
+    "taxa": 4,
+    "criaturas": [
+     {
+      "dex": 125,
+      "nome": "Aruanã",
+      "min": 25,
+      "max": 30
+     },
+     {
+      "dex": 144,
+      "nome": "Caramulão",
+      "min": 5,
+      "max": 35
+     },
+     {
+      "dex": 186,
+      "nome": "Buriti",
+      "min": 15,
+      "max": 25
+     },
+     {
+      "dex": 253,
+      "nome": "Yara-Pindá",
+      "min": 25,
+      "max": 30
+     }
+    ]
+   },
+   "pesca": {
+    "taxa": 30,
+    "criaturas": [
+     {
+      "dex": 57,
+      "nome": "Mãe-d'Água",
+      "min": 10,
+      "max": 30
+     },
+     {
+      "dex": 124,
+      "nome": "Tambaqui",
+      "min": 35,
+      "max": 40
+     },
+     {
+      "dex": 125,
+      "nome": "Aruanã",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 130,
+      "nome": "Tucunaré",
+      "min": 40,
+      "max": 45
+     },
+     {
+      "dex": 131,
+      "nome": "Pacu",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 144,
+      "nome": "Caramulão",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 165,
+      "nome": "Jaburu",
+      "min": 20,
+      "max": 30
+     }
+    ]
+   }
+  },
+  "MT_PYRE_2F": {
+   "grama": {
+    "taxa": 10,
+    "criaturas": [
+     {
+      "dex": 17,
+      "nome": "Curupim",
+      "min": 24,
+      "max": 24
+     },
+     {
+      "dex": 41,
+      "nome": "Papagaio",
+      "min": 24,
+      "max": 24
+     },
+     {
+      "dex": 159,
+      "nome": "Urutau",
+      "min": 25,
+      "max": 29
+     },
+     {
+      "dex": 180,
+      "nome": "Orquidina",
+      "min": 23,
+      "max": 23
+     },
+     {
+      "dex": 189,
+      "nome": "Açaí",
+      "min": 28,
+      "max": 29
+     },
+     {
+      "dex": 214,
+      "nome": "Marmim",
+      "min": 24,
+      "max": 24
+     },
+     {
+      "dex": 242,
+      "nome": "Anhangá",
+      "min": 22,
+      "max": 22
+     },
+     {
+      "dex": 249,
+      "nome": "Jenipapo",
+      "min": 26,
+      "max": 27
+     },
+     {
+      "dex": 287,
+      "nome": "Curupira-Rei",
+      "min": 29,
+      "max": 29
+     }
+    ]
+   }
+  },
+  "MT_PYRE_3F": {
+   "grama": {
+    "taxa": 10,
+    "criaturas": [
+     {
+      "dex": 17,
+      "nome": "Curupim",
+      "min": 29,
+      "max": 29
+     },
+     {
+      "dex": 38,
+      "nome": "Preguicão",
+      "min": 24,
+      "max": 24
+     },
+     {
+      "dex": 159,
+      "nome": "Urutau",
+      "min": 23,
+      "max": 23
+     },
+     {
+      "dex": 171,
+      "nome": "Sanhaço",
+      "min": 24,
+      "max": 24
+     },
+     {
+      "dex": 189,
+      "nome": "Açaí",
+      "min": 28,
+      "max": 29
+     },
+     {
+      "dex": 214,
+      "nome": "Marmim",
+      "min": 25,
+      "max": 29
+     },
+     {
+      "dex": 242,
+      "nome": "Anhangá",
+      "min": 26,
+      "max": 27
+     },
+     {
+      "dex": 249,
+      "nome": "Jenipapo",
+      "min": 22,
+      "max": 22
+     },
+     {
+      "dex": 253,
+      "nome": "Yara-Pindá",
+      "min": 24,
+      "max": 24
+     }
+    ]
+   }
+  },
+  "MT_PYRE_4F": {
+   "grama": {
+    "taxa": 10,
+    "criaturas": [
+     {
+      "dex": 38,
+      "nome": "Preguicão",
+      "min": 27,
+      "max": 27
+     },
+     {
+      "dex": 41,
+      "nome": "Papagaio",
+      "min": 25,
+      "max": 25
+     },
+     {
+      "dex": 159,
+      "nome": "Urutau",
+      "min": 24,
+      "max": 24
+     },
+     {
+      "dex": 189,
+      "nome": "Açaí",
+      "min": 25,
+      "max": 27
+     },
+     {
+      "dex": 242,
+      "nome": "Anhangá",
+      "min": 26,
+      "max": 27
+     },
+     {
+      "dex": 249,
+      "nome": "Jenipapo",
+      "min": 28,
+      "max": 29
+     },
+     {
+      "dex": 253,
+      "nome": "Yara-Pindá",
+      "min": 29,
+      "max": 29
+     },
+     {
+      "dex": 257,
+      "nome": "Ossanha",
+      "min": 22,
+      "max": 22
+     },
+     {
+      "dex": 261,
+      "nome": "Curupira-Ancião",
+      "min": 23,
+      "max": 23
+     }
+    ]
+   }
+  },
+  "MT_PYRE_5F": {
+   "grama": {
+    "taxa": 10,
+    "criaturas": [
+     {
+      "dex": 17,
+      "nome": "Curupim",
+      "min": 22,
+      "max": 22
+     },
+     {
+      "dex": 38,
+      "nome": "Preguicão",
+      "min": 27,
+      "max": 27
+     },
+     {
+      "dex": 41,
+      "nome": "Papagaio",
+      "min": 25,
+      "max": 25
+     },
+     {
+      "dex": 120,
+      "nome": "Jararaca",
+      "min": 23,
+      "max": 23
+     },
+     {
+      "dex": 159,
+      "nome": "Urutau",
+      "min": 24,
+      "max": 24
+     },
+     {
+      "dex": 189,
+      "nome": "Açaí",
+      "min": 25,
+      "max": 27
+     },
+     {
+      "dex": 242,
+      "nome": "Anhangá",
+      "min": 26,
+      "max": 27
+     },
+     {
+      "dex": 249,
+      "nome": "Jenipapo",
+      "min": 28,
+      "max": 29
+     },
+     {
+      "dex": 253,
+      "nome": "Yara-Pindá",
+      "min": 29,
+      "max": 29
+     }
+    ]
+   }
+  },
+  "MT_PYRE_6F": {
+   "grama": {
+    "taxa": 10,
+    "criaturas": [
+     {
+      "dex": 38,
+      "nome": "Preguicão",
+      "min": 27,
+      "max": 27
+     },
+     {
+      "dex": 41,
+      "nome": "Papagaio",
+      "min": 25,
+      "max": 25
+     },
+     {
+      "dex": 69,
+      "nome": "Jaguatirica",
+      "min": 22,
+      "max": 22
+     },
+     {
+      "dex": 145,
+      "nome": "Piolhão",
+      "min": 23,
+      "max": 23
+     },
+     {
+      "dex": 159,
+      "nome": "Urutau",
+      "min": 24,
+      "max": 24
+     },
+     {
+      "dex": 189,
+      "nome": "Açaí",
+      "min": 25,
+      "max": 27
+     },
+     {
+      "dex": 242,
+      "nome": "Anhangá",
+      "min": 26,
+      "max": 27
+     },
+     {
+      "dex": 249,
+      "nome": "Jenipapo",
+      "min": 28,
+      "max": 29
+     },
+     {
+      "dex": 253,
+      "nome": "Yara-Pindá",
+      "min": 29,
+      "max": 29
+     }
+    ]
+   }
+  },
+  "MT_PYRE_EXTERIOR": {
+   "grama": {
+    "taxa": 10,
+    "criaturas": [
+     {
+      "dex": 38,
+      "nome": "Preguicão",
+      "min": 27,
+      "max": 27
+     },
+     {
+      "dex": 41,
+      "nome": "Papagaio",
+      "min": 26,
+      "max": 26
+     },
+     {
+      "dex": 72,
+      "nome": "Paca",
+      "min": 25,
+      "max": 25
+     },
+     {
+      "dex": 156,
+      "nome": "Beija-flor",
+      "min": 29,
+      "max": 29
+     },
+     {
+      "dex": 159,
+      "nome": "Urutau",
+      "min": 27,
+      "max": 27
+     },
+     {
+      "dex": 189,
+      "nome": "Açaí",
+      "min": 27,
+      "max": 29
+     },
+     {
+      "dex": 242,
+      "nome": "Anhangá",
+      "min": 27,
+      "max": 28
+     },
+     {
+      "dex": 249,
+      "nome": "Jenipapo",
+      "min": 27,
+      "max": 29
+     },
+     {
+      "dex": 253,
+      "nome": "Yara-Pindá",
+      "min": 28,
+      "max": 28
+     }
+    ]
+   }
+  },
+  "MT_PYRE_SUMMIT": {
+   "grama": {
+    "taxa": 10,
+    "criaturas": [
+     {
+      "dex": 17,
+      "nome": "Curupim",
+      "min": 28,
+      "max": 28
+     },
+     {
+      "dex": 41,
+      "nome": "Papagaio",
+      "min": 30,
+      "max": 30
+     },
+     {
+      "dex": 149,
+      "nome": "Aranhão",
+      "min": 28,
+      "max": 28
+     },
+     {
+      "dex": 159,
+      "nome": "Urutau",
+      "min": 26,
+      "max": 26
+     },
+     {
+      "dex": 189,
+      "nome": "Açaí",
+      "min": 24,
+      "max": 24
+     },
+     {
+      "dex": 214,
+      "nome": "Marmim",
+      "min": 25,
+      "max": 25
+     },
+     {
+      "dex": 242,
+      "nome": "Anhangá",
+      "min": 27,
+      "max": 28
+     },
+     {
+      "dex": 249,
+      "nome": "Jenipapo",
+      "min": 29,
+      "max": 30
+     },
+     {
+      "dex": 253,
+      "nome": "Yara-Pindá",
+      "min": 28,
+      "max": 28
+     }
+    ]
+   }
+  },
+  "GRANITE_CAVE_STEVENS_ROOM": {
+   "grama": {
+    "taxa": 10,
+    "criaturas": [
+     {
+      "dex": 78,
+      "nome": "Coati",
+      "min": 8,
+      "max": 8
+     },
+     {
+      "dex": 91,
+      "nome": "Morcim",
+      "min": 8,
+      "max": 9
+     },
+     {
+      "dex": 198,
+      "nome": "Cristalim",
+      "min": 7,
+      "max": 10
+     },
+     {
+      "dex": 201,
+      "nome": "Ferrolho",
+      "min": 8,
+      "max": 8
+     },
+     {
+      "dex": 204,
+      "nome": "Manganim",
+      "min": 7,
+      "max": 7
+     },
+     {
+      "dex": 209,
+      "nome": "Estalactite",
+      "min": 6,
+      "max": 6
+     },
+     {
+      "dex": 211,
+      "nome": "Fóssil",
+      "min": 8,
+      "max": 8
+     },
+     {
+      "dex": 215,
+      "nome": "Granito",
+      "min": 7,
+      "max": 8
+     }
+    ]
+   }
+  },
+  "ROUTE125": {
+   "surfe": {
+    "taxa": 4,
+    "criaturas": [
+     {
+      "dex": 131,
+      "nome": "Pacu",
+      "min": 25,
+      "max": 30
+     },
+     {
+      "dex": 144,
+      "nome": "Caramulão",
+      "min": 5,
+      "max": 35
+     },
+     {
+      "dex": 181,
+      "nome": "Vitóriarégia",
+      "min": 15,
+      "max": 25
+     },
+     {
+      "dex": 253,
+      "nome": "Yara-Pindá",
+      "min": 25,
+      "max": 30
+     }
+    ]
+   },
+   "pesca": {
+    "taxa": 30,
+    "criaturas": [
+     {
+      "dex": 57,
+      "nome": "Mãe-d'Água",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 124,
+      "nome": "Tambaqui",
+      "min": 40,
+      "max": 45
+     },
+     {
+      "dex": 125,
+      "nome": "Aruanã",
+      "min": 10,
+      "max": 30
+     },
+     {
+      "dex": 130,
+      "nome": "Tucunaré",
+      "min": 35,
+      "max": 40
+     },
+     {
+      "dex": 131,
+      "nome": "Pacu",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 144,
+      "nome": "Caramulão",
+      "min": 25,
+      "max": 35
+     },
+     {
+      "dex": 181,
+      "nome": "Vitóriarégia",
+      "min": 30,
+      "max": 35
+     }
+    ]
+   }
+  },
+  "ROUTE126": {
+   "surfe": {
+    "taxa": 4,
+    "criaturas": [
+     {
+      "dex": 45,
+      "nome": "Antaraú",
+      "min": 15,
+      "max": 25
+     },
+     {
+      "dex": 125,
+      "nome": "Aruanã",
+      "min": 25,
+      "max": 30
+     },
+     {
+      "dex": 131,
+      "nome": "Pacu",
+      "min": 25,
+      "max": 30
+     },
+     {
+      "dex": 144,
+      "nome": "Caramulão",
+      "min": 5,
+      "max": 35
+     }
+    ]
+   },
+   "pesca": {
+    "taxa": 30,
+    "criaturas": [
+     {
+      "dex": 57,
+      "nome": "Mãe-d'Água",
+      "min": 10,
+      "max": 30
+     },
+     {
+      "dex": 125,
+      "nome": "Aruanã",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 130,
+      "nome": "Tucunaré",
+      "min": 40,
+      "max": 45
+     },
+     {
+      "dex": 131,
+      "nome": "Pacu",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 144,
+      "nome": "Caramulão",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 165,
+      "nome": "Jaburu",
+      "min": 25,
+      "max": 35
+     },
+     {
+      "dex": 181,
+      "nome": "Vitóriarégia",
+      "min": 35,
+      "max": 40
+     }
+    ]
+   }
+  },
+  "ROUTE127": {
+   "surfe": {
+    "taxa": 4,
+    "criaturas": [
+     {
+      "dex": 131,
+      "nome": "Pacu",
+      "min": 25,
+      "max": 30
+     },
+     {
+      "dex": 144,
+      "nome": "Caramulão",
+      "min": 15,
+      "max": 25
+     },
+     {
+      "dex": 181,
+      "nome": "Vitóriarégia",
+      "min": 5,
+      "max": 35
+     },
+     {
+      "dex": 253,
+      "nome": "Yara-Pindá",
+      "min": 25,
+      "max": 30
+     }
+    ]
+   },
+   "pesca": {
+    "taxa": 30,
+    "criaturas": [
+     {
+      "dex": 57,
+      "nome": "Mãe-d'Água",
+      "min": 10,
+      "max": 30
+     },
+     {
+      "dex": 125,
+      "nome": "Aruanã",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 130,
+      "nome": "Tucunaré",
+      "min": 40,
+      "max": 45
+     },
+     {
+      "dex": 131,
+      "nome": "Pacu",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 144,
+      "nome": "Caramulão",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 165,
+      "nome": "Jaburu",
+      "min": 25,
+      "max": 35
+     },
+     {
+      "dex": 181,
+      "nome": "Vitóriarégia",
+      "min": 35,
+      "max": 40
+     }
+    ]
+   }
+  },
+  "ROUTE128": {
+   "surfe": {
+    "taxa": 4,
+    "criaturas": [
+     {
+      "dex": 125,
+      "nome": "Aruanã",
+      "min": 25,
+      "max": 30
+     },
+     {
+      "dex": 131,
+      "nome": "Pacu",
+      "min": 25,
+      "max": 30
+     },
+     {
+      "dex": 144,
+      "nome": "Caramulão",
+      "min": 5,
+      "max": 35
+     },
+     {
+      "dex": 248,
+      "nome": "Aluá",
+      "min": 15,
+      "max": 25
+     }
+    ]
+   },
+   "pesca": {
+    "taxa": 30,
+    "criaturas": [
+     {
+      "dex": 57,
+      "nome": "Mãe-d'Água",
+      "min": 10,
+      "max": 30
+     },
+     {
+      "dex": 125,
+      "nome": "Aruanã",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 130,
+      "nome": "Tucunaré",
+      "min": 40,
+      "max": 45
+     },
+     {
+      "dex": 131,
+      "nome": "Pacu",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 144,
+      "nome": "Caramulão",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 165,
+      "nome": "Jaburu",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 181,
+      "nome": "Vitóriarégia",
+      "min": 35,
+      "max": 40
+     }
+    ]
+   }
+  },
+  "ROUTE129": {
+   "surfe": {
+    "taxa": 4,
+    "criaturas": [
+     {
+      "dex": 125,
+      "nome": "Aruanã",
+      "min": 25,
+      "max": 30
+     },
+     {
+      "dex": 131,
+      "nome": "Pacu",
+      "min": 25,
+      "max": 30
+     },
+     {
+      "dex": 144,
+      "nome": "Caramulão",
+      "min": 5,
+      "max": 35
+     },
+     {
+      "dex": 256,
+      "nome": "Iemanjá-Pequena",
+      "min": 15,
+      "max": 25
+     }
+    ]
+   },
+   "pesca": {
+    "taxa": 30,
+    "criaturas": [
+     {
+      "dex": 57,
+      "nome": "Mãe-d'Água",
+      "min": 10,
+      "max": 30
+     },
+     {
+      "dex": 125,
+      "nome": "Aruanã",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 130,
+      "nome": "Tucunaré",
+      "min": 40,
+      "max": 45
+     },
+     {
+      "dex": 131,
+      "nome": "Pacu",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 144,
+      "nome": "Caramulão",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 165,
+      "nome": "Jaburu",
+      "min": 25,
+      "max": 35
+     },
+     {
+      "dex": 181,
+      "nome": "Vitóriarégia",
+      "min": 35,
+      "max": 40
+     }
+    ]
+   }
+  },
+  "ROUTE130": {
+   "grama": {
+    "taxa": 20,
+    "criaturas": [
+     {
+      "dex": 125,
+      "nome": "Aruanã",
+      "min": 25,
+      "max": 30
+     },
+     {
+      "dex": 131,
+      "nome": "Pacu",
+      "min": 20,
+      "max": 35
+     },
+     {
+      "dex": 144,
+      "nome": "Caramulão",
+      "min": 10,
+      "max": 40
+     },
+     {
+      "dex": 161,
+      "nome": "Gavião",
+      "min": 50,
+      "max": 50
+     },
+     {
+      "dex": 181,
+      "nome": "Vitóriarégia",
+      "min": 45,
+      "max": 45
+     },
+     {
+      "dex": 223,
+      "nome": "Cavalim-Marinho",
+      "min": 5,
+      "max": 5
+     },
+     {
+      "dex": 250,
+      "nome": "Urucum",
+      "min": 15,
+      "max": 15
+     },
+     {
+      "dex": 253,
+      "nome": "Yara-Pindá",
+      "min": 5,
+      "max": 5
+     },
+     {
+      "dex": 290,
+      "nome": "Muirá-Kytã",
+      "min": 10,
+      "max": 10
+     }
+    ]
+   },
+   "surfe": {
+    "taxa": 4,
+    "criaturas": [
+     {
+      "dex": 125,
+      "nome": "Aruanã",
+      "min": 25,
+      "max": 30
+     },
+     {
+      "dex": 131,
+      "nome": "Pacu",
+      "min": 25,
+      "max": 30
+     },
+     {
+      "dex": 144,
+      "nome": "Caramulão",
+      "min": 5,
+      "max": 35
+     },
+     {
+      "dex": 253,
+      "nome": "Yara-Pindá",
+      "min": 15,
+      "max": 25
+     }
+    ]
+   },
+   "pesca": {
+    "taxa": 30,
+    "criaturas": [
+     {
+      "dex": 57,
+      "nome": "Mãe-d'Água",
+      "min": 10,
+      "max": 30
+     },
+     {
+      "dex": 125,
+      "nome": "Aruanã",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 130,
+      "nome": "Tucunaré",
+      "min": 40,
+      "max": 45
+     },
+     {
+      "dex": 131,
+      "nome": "Pacu",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 144,
+      "nome": "Caramulão",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 165,
+      "nome": "Jaburu",
+      "min": 25,
+      "max": 35
+     },
+     {
+      "dex": 181,
+      "nome": "Vitóriarégia",
+      "min": 35,
+      "max": 40
+     }
+    ]
+   }
+  },
+  "ROUTE131": {
+   "surfe": {
+    "taxa": 4,
+    "criaturas": [
+     {
+      "dex": 125,
+      "nome": "Aruanã",
+      "min": 25,
+      "max": 30
+     },
+     {
+      "dex": 131,
+      "nome": "Pacu",
+      "min": 25,
+      "max": 30
+     },
+     {
+      "dex": 144,
+      "nome": "Caramulão",
+      "min": 5,
+      "max": 35
+     },
+     {
+      "dex": 181,
+      "nome": "Vitóriarégia",
+      "min": 15,
+      "max": 25
+     }
+    ]
+   },
+   "pesca": {
+    "taxa": 30,
+    "criaturas": [
+     {
+      "dex": 57,
+      "nome": "Mãe-d'Água",
+      "min": 10,
+      "max": 30
+     },
+     {
+      "dex": 125,
+      "nome": "Aruanã",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 130,
+      "nome": "Tucunaré",
+      "min": 40,
+      "max": 45
+     },
+     {
+      "dex": 131,
+      "nome": "Pacu",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 144,
+      "nome": "Caramulão",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 165,
+      "nome": "Jaburu",
+      "min": 25,
+      "max": 35
+     },
+     {
+      "dex": 181,
+      "nome": "Vitóriarégia",
+      "min": 35,
+      "max": 40
+     }
+    ]
+   }
+  },
+  "ROUTE132": {
+   "surfe": {
+    "taxa": 4,
+    "criaturas": [
+     {
+      "dex": 125,
+      "nome": "Aruanã",
+      "min": 25,
+      "max": 30
+     },
+     {
+      "dex": 131,
+      "nome": "Pacu",
+      "min": 25,
+      "max": 30
+     },
+     {
+      "dex": 144,
+      "nome": "Caramulão",
+      "min": 5,
+      "max": 35
+     },
+     {
+      "dex": 181,
+      "nome": "Vitóriarégia",
+      "min": 15,
+      "max": 25
+     }
+    ]
+   },
+   "pesca": {
+    "taxa": 30,
+    "criaturas": [
+     {
+      "dex": 57,
+      "nome": "Mãe-d'Água",
+      "min": 10,
+      "max": 30
+     },
+     {
+      "dex": 125,
+      "nome": "Aruanã",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 130,
+      "nome": "Tucunaré",
+      "min": 40,
+      "max": 45
+     },
+     {
+      "dex": 131,
+      "nome": "Pacu",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 144,
+      "nome": "Caramulão",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 165,
+      "nome": "Jaburu",
+      "min": 25,
+      "max": 35
+     },
+     {
+      "dex": 181,
+      "nome": "Vitóriarégia",
+      "min": 35,
+      "max": 40
+     }
+    ]
+   }
+  },
+  "ROUTE133": {
+   "surfe": {
+    "taxa": 4,
+    "criaturas": [
+     {
+      "dex": 125,
+      "nome": "Aruanã",
+      "min": 25,
+      "max": 30
+     },
+     {
+      "dex": 131,
+      "nome": "Pacu",
+      "min": 25,
+      "max": 30
+     },
+     {
+      "dex": 144,
+      "nome": "Caramulão",
+      "min": 5,
+      "max": 35
+     },
+     {
+      "dex": 181,
+      "nome": "Vitóriarégia",
+      "min": 15,
+      "max": 25
+     }
+    ]
+   },
+   "pesca": {
+    "taxa": 30,
+    "criaturas": [
+     {
+      "dex": 57,
+      "nome": "Mãe-d'Água",
+      "min": 10,
+      "max": 30
+     },
+     {
+      "dex": 125,
+      "nome": "Aruanã",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 130,
+      "nome": "Tucunaré",
+      "min": 40,
+      "max": 45
+     },
+     {
+      "dex": 131,
+      "nome": "Pacu",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 144,
+      "nome": "Caramulão",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 165,
+      "nome": "Jaburu",
+      "min": 25,
+      "max": 35
+     },
+     {
+      "dex": 181,
+      "nome": "Vitóriarégia",
+      "min": 35,
+      "max": 40
+     }
+    ]
+   }
+  },
+  "ROUTE134": {
+   "surfe": {
+    "taxa": 4,
+    "criaturas": [
+     {
+      "dex": 125,
+      "nome": "Aruanã",
+      "min": 25,
+      "max": 30
+     },
+     {
+      "dex": 131,
+      "nome": "Pacu",
+      "min": 25,
+      "max": 30
+     },
+     {
+      "dex": 144,
+      "nome": "Caramulão",
+      "min": 5,
+      "max": 35
+     },
+     {
+      "dex": 181,
+      "nome": "Vitóriarégia",
+      "min": 15,
+      "max": 25
+     }
+    ]
+   },
+   "pesca": {
+    "taxa": 30,
+    "criaturas": [
+     {
+      "dex": 57,
+      "nome": "Mãe-d'Água",
+      "min": 10,
+      "max": 30
+     },
+     {
+      "dex": 125,
+      "nome": "Aruanã",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 130,
+      "nome": "Tucunaré",
+      "min": 40,
+      "max": 45
+     },
+     {
+      "dex": 131,
+      "nome": "Pacu",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 144,
+      "nome": "Caramulão",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 165,
+      "nome": "Jaburu",
+      "min": 25,
+      "max": 35
+     },
+     {
+      "dex": 181,
+      "nome": "Vitóriarégia",
+      "min": 35,
+      "max": 40
+     }
+    ]
+   }
+  },
+  "ABANDONED_SHIP_HIDDEN_FLOOR_CORRIDORS": {
+   "surfe": {
+    "taxa": 4,
+    "criaturas": [
+     {
+      "dex": 226,
+      "nome": "Golfinho",
+      "min": 5,
+      "max": 35
+     },
+     {
+      "dex": 233,
+      "nome": "Pescadão",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 306,
+      "nome": "Perereca",
+      "min": 5,
+      "max": 35
+     },
+     {
+      "dex": 325,
+      "nome": "Bueiro",
+      "min": 5,
+      "max": 35
+     }
+    ]
+   },
+   "pesca": {
+    "taxa": 20,
+    "criaturas": [
+     {
+      "dex": 223,
+      "nome": "Cavalim-Marinho",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 226,
+      "nome": "Golfinho",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 231,
+      "nome": "Peixe-Espada",
+      "min": 25,
+      "max": 35
+     },
+     {
+      "dex": 233,
+      "nome": "Pescadão",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 256,
+      "nome": "Iemanjá-Pequena",
+      "min": 25,
+      "max": 30
+     },
+     {
+      "dex": 306,
+      "nome": "Perereca",
+      "min": 20,
+      "max": 25
+     },
+     {
+      "dex": 325,
+      "nome": "Bueiro",
+      "min": 10,
+      "max": 30
+     }
+    ]
+   }
+  },
+  "SEAFLOOR_CAVERN_ROOM1": {
+   "grama": {
+    "taxa": 4,
+    "criaturas": [
+     {
+      "dex": 123,
+      "nome": "Piranha",
+      "min": 30,
+      "max": 32
+     },
+     {
+      "dex": 128,
+      "nome": "Traíra",
+      "min": 29,
+      "max": 29
+     },
+     {
+      "dex": 130,
+      "nome": "Tucunaré",
+      "min": 35,
+      "max": 35
+     },
+     {
+      "dex": 134,
+      "nome": "Cascudo",
+      "min": 28,
+      "max": 31
+     },
+     {
+      "dex": 233,
+      "nome": "Pescadão",
+      "min": 33,
+      "max": 34
+     },
+     {
+      "dex": 243,
+      "nome": "Jurupari",
+      "min": 33,
+      "max": 33
+     },
+     {
+      "dex": 267,
+      "nome": "Marinheiro",
+      "min": 36,
+      "max": 36
+     },
+     {
+      "dex": 304,
+      "nome": "Cão-Bravo",
+      "min": 34,
+      "max": 34
+     },
+     {
+      "dex": 309,
+      "nome": "Poeirão",
+      "min": 35,
+      "max": 35
+     }
+    ]
+   }
+  },
+  "SEAFLOOR_CAVERN_ROOM2": {
+   "grama": {
+    "taxa": 4,
+    "criaturas": [
+     {
+      "dex": 123,
+      "nome": "Piranha",
+      "min": 30,
+      "max": 32
+     },
+     {
+      "dex": 128,
+      "nome": "Traíra",
+      "min": 29,
+      "max": 29
+     },
+     {
+      "dex": 130,
+      "nome": "Tucunaré",
+      "min": 35,
+      "max": 35
+     },
+     {
+      "dex": 134,
+      "nome": "Cascudo",
+      "min": 28,
+      "max": 31
+     },
+     {
+      "dex": 205,
+      "nome": "Salitre",
+      "min": 35,
+      "max": 35
+     },
+     {
+      "dex": 233,
+      "nome": "Pescadão",
+      "min": 33,
+      "max": 34
+     },
+     {
+      "dex": 240,
+      "nome": "Perna-Cabeluda",
+      "min": 34,
+      "max": 34
+     },
+     {
+      "dex": 267,
+      "nome": "Marinheiro",
+      "min": 36,
+      "max": 36
+     },
+     {
+      "dex": 289,
+      "nome": "Anhangaú",
+      "min": 33,
+      "max": 33
+     }
+    ]
+   }
+  },
+  "SEAFLOOR_CAVERN_ROOM3": {
+   "grama": {
+    "taxa": 4,
+    "criaturas": [
+     {
+      "dex": 23,
+      "nome": "Onçaléu",
+      "min": 33,
+      "max": 33
+     },
+     {
+      "dex": 123,
+      "nome": "Piranha",
+      "min": 30,
+      "max": 32
+     },
+     {
+      "dex": 128,
+      "nome": "Traíra",
+      "min": 29,
+      "max": 29
+     },
+     {
+      "dex": 130,
+      "nome": "Tucunaré",
+      "min": 35,
+      "max": 35
+     },
+     {
+      "dex": 134,
+      "nome": "Cascudo",
+      "min": 28,
+      "max": 31
+     },
+     {
+      "dex": 205,
+      "nome": "Salitre",
+      "min": 35,
+      "max": 35
+     },
+     {
+      "dex": 233,
+      "nome": "Pescadão",
+      "min": 33,
+      "max": 34
+     },
+     {
+      "dex": 254,
+      "nome": "Pisadeira",
+      "min": 34,
+      "max": 34
+     },
+     {
+      "dex": 267,
+      "nome": "Marinheiro",
+      "min": 36,
+      "max": 36
+     }
+    ]
+   }
+  },
+  "SEAFLOOR_CAVERN_ROOM4": {
+   "grama": {
+    "taxa": 4,
+    "criaturas": [
+     {
+      "dex": 123,
+      "nome": "Piranha",
+      "min": 30,
+      "max": 32
+     },
+     {
+      "dex": 128,
+      "nome": "Traíra",
+      "min": 29,
+      "max": 29
+     },
+     {
+      "dex": 130,
+      "nome": "Tucunaré",
+      "min": 35,
+      "max": 35
+     },
+     {
+      "dex": 134,
+      "nome": "Cascudo",
+      "min": 28,
+      "max": 31
+     },
+     {
+      "dex": 205,
+      "nome": "Salitre",
+      "min": 35,
+      "max": 35
+     },
+     {
+      "dex": 233,
+      "nome": "Pescadão",
+      "min": 33,
+      "max": 34
+     },
+     {
+      "dex": 267,
+      "nome": "Marinheiro",
+      "min": 36,
+      "max": 36
+     },
+     {
+      "dex": 276,
+      "nome": "Maracatu",
+      "min": 34,
+      "max": 34
+     },
+     {
+      "dex": 373,
+      "nome": "Rendeira",
+      "min": 33,
+      "max": 33
+     }
+    ]
+   }
+  },
+  "SEAFLOOR_CAVERN_ROOM5": {
+   "grama": {
+    "taxa": 4,
+    "criaturas": [
+     {
+      "dex": 123,
+      "nome": "Piranha",
+      "min": 30,
+      "max": 32
+     },
+     {
+      "dex": 127,
+      "nome": "Curimbatá",
+      "min": 33,
+      "max": 33
+     },
+     {
+      "dex": 128,
+      "nome": "Traíra",
+      "min": 29,
+      "max": 29
+     },
+     {
+      "dex": 130,
+      "nome": "Tucunaré",
+      "min": 35,
+      "max": 35
+     },
+     {
+      "dex": 134,
+      "nome": "Cascudo",
+      "min": 28,
+      "max": 31
+     },
+     {
+      "dex": 233,
+      "nome": "Pescadão",
+      "min": 33,
+      "max": 34
+     },
+     {
+      "dex": 239,
+      "nome": "Mão-Peluda",
+      "min": 34,
+      "max": 34
+     },
+     {
+      "dex": 267,
+      "nome": "Marinheiro",
+      "min": 36,
+      "max": 36
+     },
+     {
+      "dex": 328,
+      "nome": "Grafiteiro",
+      "min": 35,
+      "max": 35
+     }
+    ]
+   }
+  },
+  "SEAFLOOR_CAVERN_ROOM6": {
+   "grama": {
+    "taxa": 4,
+    "criaturas": [
+     {
+      "dex": 123,
+      "nome": "Piranha",
+      "min": 30,
+      "max": 32
+     },
+     {
+      "dex": 127,
+      "nome": "Curimbatá",
+      "min": 33,
+      "max": 33
+     },
+     {
+      "dex": 128,
+      "nome": "Traíra",
+      "min": 29,
+      "max": 29
+     },
+     {
+      "dex": 130,
+      "nome": "Tucunaré",
+      "min": 35,
+      "max": 35
+     },
+     {
+      "dex": 134,
+      "nome": "Cascudo",
+      "min": 28,
+      "max": 31
+     },
+     {
+      "dex": 146,
+      "nome": "Barata",
+      "min": 35,
+      "max": 35
+     },
+     {
+      "dex": 233,
+      "nome": "Pescadão",
+      "min": 33,
+      "max": 34
+     },
+     {
+      "dex": 247,
+      "nome": "Rudá",
+      "min": 34,
+      "max": 34
+     },
+     {
+      "dex": 267,
+      "nome": "Marinheiro",
+      "min": 36,
+      "max": 36
+     }
+    ]
+   },
+   "surfe": {
+    "taxa": 4,
+    "criaturas": [
+     {
+      "dex": 123,
+      "nome": "Piranha",
+      "min": 5,
+      "max": 35
+     },
+     {
+      "dex": 205,
+      "nome": "Salitre",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 267,
+      "nome": "Marinheiro",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 291,
+      "nome": "Cobra-Norato",
+      "min": 30,
+      "max": 35
+     }
+    ]
+   },
+   "pesca": {
+    "taxa": 10,
+    "criaturas": [
+     {
+      "dex": 127,
+      "nome": "Curimbatá",
+      "min": 20,
+      "max": 30
+     },
+     {
+      "dex": 130,
+      "nome": "Tucunaré",
+      "min": 10,
+      "max": 30
+     },
+     {
+      "dex": 131,
+      "nome": "Pacu",
+      "min": 35,
+      "max": 40
+     },
+     {
+      "dex": 134,
+      "nome": "Cascudo",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 231,
+      "nome": "Peixe-Espada",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 233,
+      "nome": "Pescadão",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 374,
+      "nome": "Escamoso",
+      "min": 40,
+      "max": 45
+     }
+    ]
+   }
+  },
+  "SEAFLOOR_CAVERN_ROOM7": {
+   "grama": {
+    "taxa": 4,
+    "criaturas": [
+     {
+      "dex": 123,
+      "nome": "Piranha",
+      "min": 30,
+      "max": 32
+     },
+     {
+      "dex": 127,
+      "nome": "Curimbatá",
+      "min": 33,
+      "max": 33
+     },
+     {
+      "dex": 128,
+      "nome": "Traíra",
+      "min": 29,
+      "max": 29
+     },
+     {
+      "dex": 130,
+      "nome": "Tucunaré",
+      "min": 35,
+      "max": 35
+     },
+     {
+      "dex": 134,
+      "nome": "Cascudo",
+      "min": 28,
+      "max": 31
+     },
+     {
+      "dex": 233,
+      "nome": "Pescadão",
+      "min": 33,
+      "max": 34
+     },
+     {
+      "dex": 234,
+      "nome": "Loirinha",
+      "min": 35,
+      "max": 35
+     },
+     {
+      "dex": 267,
+      "nome": "Marinheiro",
+      "min": 36,
+      "max": 36
+     },
+     {
+      "dex": 305,
+      "nome": "Gato-Preto",
+      "min": 34,
+      "max": 34
+     }
+    ]
+   },
+   "surfe": {
+    "taxa": 4,
+    "criaturas": [
+     {
+      "dex": 109,
+      "nome": "Oxum",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 123,
+      "nome": "Piranha",
+      "min": 5,
+      "max": 35
+     },
+     {
+      "dex": 205,
+      "nome": "Salitre",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 267,
+      "nome": "Marinheiro",
+      "min": 30,
+      "max": 35
+     }
+    ]
+   },
+   "pesca": {
+    "taxa": 10,
+    "criaturas": [
+     {
+      "dex": 126,
+      "nome": "Poraquê",
+      "min": 10,
+      "max": 30
+     },
+     {
+      "dex": 127,
+      "nome": "Curimbatá",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 130,
+      "nome": "Tucunaré",
+      "min": 20,
+      "max": 30
+     },
+     {
+      "dex": 131,
+      "nome": "Pacu",
+      "min": 40,
+      "max": 45
+     },
+     {
+      "dex": 133,
+      "nome": "Piau",
+      "min": 10,
+      "max": 30
+     },
+     {
+      "dex": 134,
+      "nome": "Cascudo",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 231,
+      "nome": "Peixe-Espada",
+      "min": 35,
+      "max": 40
+     },
+     {
+      "dex": 233,
+      "nome": "Pescadão",
+      "min": 5,
+      "max": 10
+     }
+    ]
+   }
+  },
+  "SEAFLOOR_CAVERN_ROOM8": {
+   "grama": {
+    "taxa": 4,
+    "criaturas": [
+     {
+      "dex": 90,
+      "nome": "Camaleão",
+      "min": 34,
+      "max": 34
+     },
+     {
+      "dex": 123,
+      "nome": "Piranha",
+      "min": 30,
+      "max": 32
+     },
+     {
+      "dex": 127,
+      "nome": "Curimbatá",
+      "min": 33,
+      "max": 33
+     },
+     {
+      "dex": 128,
+      "nome": "Traíra",
+      "min": 29,
+      "max": 29
+     },
+     {
+      "dex": 130,
+      "nome": "Tucunaré",
+      "min": 35,
+      "max": 35
+     },
+     {
+      "dex": 134,
+      "nome": "Cascudo",
+      "min": 28,
+      "max": 31
+     },
+     {
+      "dex": 233,
+      "nome": "Pescadão",
+      "min": 33,
+      "max": 34
+     },
+     {
+      "dex": 267,
+      "nome": "Marinheiro",
+      "min": 36,
+      "max": 36
+     },
+     {
+      "dex": 322,
+      "nome": "Bugão",
+      "min": 35,
+      "max": 35
+     }
+    ]
+   }
+  },
+  "SEAFLOOR_CAVERN_ENTRANCE": {
+   "surfe": {
+    "taxa": 4,
+    "criaturas": [
+     {
+      "dex": 123,
+      "nome": "Piranha",
+      "min": 5,
+      "max": 35
+     },
+     {
+      "dex": 267,
+      "nome": "Marinheiro",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 280,
+      "nome": "Sucuriaçu",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 318,
+      "nome": "Garrafão",
+      "min": 30,
+      "max": 35
+     }
+    ]
+   },
+   "pesca": {
+    "taxa": 10,
+    "criaturas": [
+     {
+      "dex": 127,
+      "nome": "Curimbatá",
+      "min": 20,
+      "max": 30
+     },
+     {
+      "dex": 128,
+      "nome": "Traíra",
+      "min": 10,
+      "max": 30
+     },
+     {
+      "dex": 131,
+      "nome": "Pacu",
+      "min": 35,
+      "max": 40
+     },
+     {
+      "dex": 134,
+      "nome": "Cascudo",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 231,
+      "nome": "Peixe-Espada",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 233,
+      "nome": "Pescadão",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 281,
+      "nome": "Pirarumbá",
+      "min": 40,
+      "max": 45
+     }
+    ]
+   }
+  },
+  "CAVE_OF_ORIGIN_ENTRANCE": {
+   "grama": {
+    "taxa": 4,
+    "criaturas": [
+     {
+      "dex": 123,
+      "nome": "Piranha",
+      "min": 30,
+      "max": 32
+     },
+     {
+      "dex": 127,
+      "nome": "Curimbatá",
+      "min": 35,
+      "max": 35
+     },
+     {
+      "dex": 128,
+      "nome": "Traíra",
+      "min": 33,
+      "max": 34
+     },
+     {
+      "dex": 130,
+      "nome": "Tucunaré",
+      "min": 29,
+      "max": 29
+     },
+     {
+      "dex": 131,
+      "nome": "Pacu",
+      "min": 36,
+      "max": 36
+     },
+     {
+      "dex": 134,
+      "nome": "Cascudo",
+      "min": 28,
+      "max": 31
+     },
+     {
+      "dex": 209,
+      "nome": "Estalactite",
+      "min": 35,
+      "max": 35
+     },
+     {
+      "dex": 279,
+      "nome": "Onçuma",
+      "min": 33,
+      "max": 33
+     },
+     {
+      "dex": 350,
+      "nome": "Bugio",
+      "min": 34,
+      "max": 34
+     }
+    ]
+   }
+  },
+  "CAVE_OF_ORIGIN_1F": {
+   "grama": {
+    "taxa": 4,
+    "criaturas": [
+     {
+      "dex": 123,
+      "nome": "Piranha",
+      "min": 30,
+      "max": 32
+     },
+     {
+      "dex": 127,
+      "nome": "Curimbatá",
+      "min": 34,
+      "max": 34
+     },
+     {
+      "dex": 128,
+      "nome": "Traíra",
+      "min": 30,
+      "max": 34
+     },
+     {
+      "dex": 130,
+      "nome": "Tucunaré",
+      "min": 34,
+      "max": 34
+     },
+     {
+      "dex": 131,
+      "nome": "Pacu",
+      "min": 36,
+      "max": 36
+     },
+     {
+      "dex": 134,
+      "nome": "Cascudo",
+      "min": 31,
+      "max": 32
+     },
+     {
+      "dex": 209,
+      "nome": "Estalactite",
+      "min": 35,
+      "max": 35
+     },
+     {
+      "dex": 252,
+      "nome": "Anhangá-Pitã",
+      "min": 33,
+      "max": 33
+     },
+     {
+      "dex": 255,
+      "nome": "Zumbi",
+      "min": 33,
+      "max": 33
+     }
+    ]
+   }
+  },
+  "CAVE_OF_ORIGIN_UNUSED_RUBY_SAPPHIRE_MAP1": {
+   "grama": {
+    "taxa": 4,
+    "criaturas": [
+     {
+      "dex": 123,
+      "nome": "Piranha",
+      "min": 30,
+      "max": 33
+     },
+     {
+      "dex": 127,
+      "nome": "Curimbatá",
+      "min": 34,
+      "max": 34
+     },
+     {
+      "dex": 128,
+      "nome": "Traíra",
+      "min": 30,
+      "max": 34
+     },
+     {
+      "dex": 130,
+      "nome": "Tucunaré",
+      "min": 34,
+      "max": 34
+     },
+     {
+      "dex": 131,
+      "nome": "Pacu",
+      "min": 36,
+      "max": 36
+     },
+     {
+      "dex": 134,
+      "nome": "Cascudo",
+      "min": 31,
+      "max": 32
+     },
+     {
+      "dex": 181,
+      "nome": "Vitóriarégia",
+      "min": 33,
+      "max": 33
+     },
+     {
+      "dex": 209,
+      "nome": "Estalactite",
+      "min": 35,
+      "max": 35
+     }
+    ]
+   }
+  },
+  "CAVE_OF_ORIGIN_UNUSED_RUBY_SAPPHIRE_MAP2": {
+   "grama": {
+    "taxa": 4,
+    "criaturas": [
+     {
+      "dex": 123,
+      "nome": "Piranha",
+      "min": 30,
+      "max": 33
+     },
+     {
+      "dex": 127,
+      "nome": "Curimbatá",
+      "min": 34,
+      "max": 34
+     },
+     {
+      "dex": 128,
+      "nome": "Traíra",
+      "min": 30,
+      "max": 34
+     },
+     {
+      "dex": 130,
+      "nome": "Tucunaré",
+      "min": 34,
+      "max": 34
+     },
+     {
+      "dex": 131,
+      "nome": "Pacu",
+      "min": 36,
+      "max": 36
+     },
+     {
+      "dex": 134,
+      "nome": "Cascudo",
+      "min": 31,
+      "max": 32
+     },
+     {
+      "dex": 181,
+      "nome": "Vitóriarégia",
+      "min": 33,
+      "max": 33
+     },
+     {
+      "dex": 209,
+      "nome": "Estalactite",
+      "min": 35,
+      "max": 35
+     }
+    ]
+   }
+  },
+  "CAVE_OF_ORIGIN_UNUSED_RUBY_SAPPHIRE_MAP3": {
+   "grama": {
+    "taxa": 4,
+    "criaturas": [
+     {
+      "dex": 123,
+      "nome": "Piranha",
+      "min": 30,
+      "max": 33
+     },
+     {
+      "dex": 127,
+      "nome": "Curimbatá",
+      "min": 34,
+      "max": 34
+     },
+     {
+      "dex": 128,
+      "nome": "Traíra",
+      "min": 30,
+      "max": 34
+     },
+     {
+      "dex": 130,
+      "nome": "Tucunaré",
+      "min": 34,
+      "max": 34
+     },
+     {
+      "dex": 131,
+      "nome": "Pacu",
+      "min": 36,
+      "max": 36
+     },
+     {
+      "dex": 134,
+      "nome": "Cascudo",
+      "min": 31,
+      "max": 32
+     },
+     {
+      "dex": 181,
+      "nome": "Vitóriarégia",
+      "min": 33,
+      "max": 33
+     },
+     {
+      "dex": 209,
+      "nome": "Estalactite",
+      "min": 35,
+      "max": 35
+     }
+    ]
+   }
+  },
+  "NEW_MAUVILLE_ENTRANCE": {
+   "grama": {
+    "taxa": 10,
+    "criaturas": [
+     {
+      "dex": 146,
+      "nome": "Barata",
+      "min": 22,
+      "max": 22
+     },
+     {
+      "dex": 264,
+      "nome": "Exu",
+      "min": 22,
+      "max": 22
+     },
+     {
+      "dex": 272,
+      "nome": "Rei-Momo",
+      "min": 26,
+      "max": 26
+     },
+     {
+      "dex": 307,
+      "nome": "Lagartixa",
+      "min": 26,
+      "max": 26
+     },
+     {
+      "dex": 310,
+      "nome": "Ferrugem",
+      "min": 25,
+      "max": 25
+     },
+     {
+      "dex": 316,
+      "nome": "Latinha",
+      "min": 23,
+      "max": 23
+     },
+     {
+      "dex": 320,
+      "nome": "Pilhoso",
+      "min": 24,
+      "max": 25
+     },
+     {
+      "dex": 323,
+      "nome": "Aluminio",
+      "min": 24,
+      "max": 24
+     },
+     {
+      "dex": 326,
+      "nome": "Sinal",
+      "min": 23,
+      "max": 23
+     },
+     {
+      "dex": 327,
+      "nome": "Poste",
+      "min": 22,
+      "max": 22
+     },
+     {
+      "dex": 365,
+      "nome": "Cambota",
+      "min": 22,
+      "max": 22
+     }
+    ]
+   }
+  },
+  "SAFARI_ZONE_SOUTHWEST": {
+   "grama": {
+    "taxa": 25,
+    "criaturas": [
+     {
+      "dex": 57,
+      "nome": "Mãe-d'Água",
+      "min": 27,
+      "max": 27
+     },
+     {
+      "dex": 84,
+      "nome": "Curicaca",
+      "min": 27,
+      "max": 27
+     },
+     {
+      "dex": 96,
+      "nome": "Colhereiro",
+      "min": 25,
+      "max": 25
+     },
+     {
+      "dex": 125,
+      "nome": "Aruanã",
+      "min": 25,
+      "max": 27
+     },
+     {
+      "dex": 131,
+      "nome": "Pacu",
+      "min": 25,
+      "max": 27
+     },
+     {
+      "dex": 144,
+      "nome": "Caramulão",
+      "min": 27,
+      "max": 27
+     },
+     {
+      "dex": 165,
+      "nome": "Jaburu",
+      "min": 25,
+      "max": 25
+     },
+     {
+      "dex": 179,
+      "nome": "Bromelinha",
+      "min": 29,
+      "max": 29
+     },
+     {
+      "dex": 292,
+      "nome": "Mapinguari",
+      "min": 27,
+      "max": 27
+     }
+    ]
+   },
+   "surfe": {
+    "taxa": 9,
+    "criaturas": [
+     {
+      "dex": 144,
+      "nome": "Caramulão",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 165,
+      "nome": "Jaburu",
+      "min": 20,
+      "max": 30
+     },
+     {
+      "dex": 181,
+      "nome": "Vitóriarégia",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 283,
+      "nome": "Terolibra-Rainha",
+      "min": 30,
+      "max": 35
+     }
+    ]
+   },
+   "pesca": {
+    "taxa": 35,
+    "criaturas": [
+     {
+      "dex": 124,
+      "nome": "Tambaqui",
+      "min": 25,
+      "max": 30
+     },
+     {
+      "dex": 125,
+      "nome": "Aruanã",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 130,
+      "nome": "Tucunaré",
+      "min": 35,
+      "max": 40
+     },
+     {
+      "dex": 131,
+      "nome": "Pacu",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 144,
+      "nome": "Caramulão",
+      "min": 25,
+      "max": 35
+     },
+     {
+      "dex": 165,
+      "nome": "Jaburu",
+      "min": 10,
+      "max": 25
+     },
+     {
+      "dex": 181,
+      "nome": "Vitóriarégia",
+      "min": 30,
+      "max": 35
+     }
+    ]
+   }
+  },
+  "SAFARI_ZONE_NORTH": {
+   "grama": {
+    "taxa": 25,
+    "criaturas": [
+     {
+      "dex": 13,
+      "nome": "Tucanhão",
+      "min": 27,
+      "max": 27
+     },
+     {
+      "dex": 73,
+      "nome": "Formigão",
+      "min": 31,
+      "max": 31
+     },
+     {
+      "dex": 125,
+      "nome": "Aruanã",
+      "min": 29,
+      "max": 29
+     },
+     {
+      "dex": 169,
+      "nome": "Trinca-Ferro",
+      "min": 29,
+      "max": 29
+     },
+     {
+      "dex": 173,
+      "nome": "Choca",
+      "min": 31,
+      "max": 31
+     },
+     {
+      "dex": 189,
+      "nome": "Açaí",
+      "min": 27,
+      "max": 27
+     },
+     {
+      "dex": 214,
+      "nome": "Marmim",
+      "min": 27,
+      "max": 27
+     },
+     {
+      "dex": 242,
+      "nome": "Anhangá",
+      "min": 29,
+      "max": 29
+     },
+     {
+      "dex": 249,
+      "nome": "Jenipapo",
+      "min": 27,
+      "max": 29
+     },
+     {
+      "dex": 266,
+      "nome": "Caboclo-Guerreiro",
+      "min": 29,
+      "max": 29
+     }
+    ]
+   },
+   "pedra": {
+    "taxa": 25,
+    "criaturas": [
+     {
+      "dex": 169,
+      "nome": "Trinca-Ferro",
+      "min": 15,
+      "max": 20
+     },
+     {
+      "dex": 213,
+      "nome": "Vulcanite",
+      "min": 20,
+      "max": 25
+     },
+     {
+      "dex": 214,
+      "nome": "Marmim",
+      "min": 5,
+      "max": 15
+     },
+     {
+      "dex": 295,
+      "nome": "Muiraquitã",
+      "min": 25,
+      "max": 30
+     }
+    ]
+   }
+  },
+  "SAFARI_ZONE_NORTHWEST": {
+   "grama": {
+    "taxa": 25,
+    "criaturas": [
+     {
+      "dex": 125,
+      "nome": "Aruanã",
+      "min": 27,
+      "max": 29
+     },
+     {
+      "dex": 131,
+      "nome": "Pacu",
+      "min": 27,
+      "max": 27
+     },
+     {
+      "dex": 144,
+      "nome": "Caramulão",
+      "min": 29,
+      "max": 29
+     },
+     {
+      "dex": 150,
+      "nome": "Vespão",
+      "min": 29,
+      "max": 29
+     },
+     {
+      "dex": 179,
+      "nome": "Bromelinha",
+      "min": 29,
+      "max": 29
+     },
+     {
+      "dex": 181,
+      "nome": "Vitóriarégia",
+      "min": 29,
+      "max": 29
+     },
+     {
+      "dex": 192,
+      "nome": "Guaraná",
+      "min": 31,
+      "max": 31
+     },
+     {
+      "dex": 253,
+      "nome": "Yara-Pindá",
+      "min": 27,
+      "max": 27
+     },
+     {
+      "dex": 294,
+      "nome": "Uirapuru",
+      "min": 31,
+      "max": 31
+     }
+    ]
+   },
+   "surfe": {
+    "taxa": 9,
+    "criaturas": [
+     {
+      "dex": 125,
+      "nome": "Aruanã",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 144,
+      "nome": "Caramulão",
+      "min": 20,
+      "max": 30
+     },
+     {
+      "dex": 181,
+      "nome": "Vitóriarégia",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 286,
+      "nome": "Iara-Mãe",
+      "min": 25,
+      "max": 40
+     }
+    ]
+   },
+   "pesca": {
+    "taxa": 35,
+    "criaturas": [
+     {
+      "dex": 57,
+      "nome": "Mãe-d'Água",
+      "min": 10,
+      "max": 25
+     },
+     {
+      "dex": 124,
+      "nome": "Tambaqui",
+      "min": 25,
+      "max": 30
+     },
+     {
+      "dex": 125,
+      "nome": "Aruanã",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 130,
+      "nome": "Tucunaré",
+      "min": 35,
+      "max": 40
+     },
+     {
+      "dex": 131,
+      "nome": "Pacu",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 144,
+      "nome": "Caramulão",
+      "min": 25,
+      "max": 35
+     },
+     {
+      "dex": 181,
+      "nome": "Vitóriarégia",
+      "min": 30,
+      "max": 35
+     }
+    ]
+   }
+  },
+  "VICTORY_ROAD_B1F": {
+   "grama": {
+    "taxa": 10,
+    "criaturas": [
+     {
+      "dex": 16,
+      "nome": "Boitatá",
+      "min": 40,
+      "max": 42
+     },
+     {
+      "dex": 78,
+      "nome": "Coati",
+      "min": 38,
+      "max": 38
+     },
+     {
+      "dex": 197,
+      "nome": "Rochão",
+      "min": 38,
+      "max": 38
+     },
+     {
+      "dex": 200,
+      "nome": "Ouríço",
+      "min": 38,
+      "max": 38
+     },
+     {
+      "dex": 211,
+      "nome": "Fóssil",
+      "min": 38,
+      "max": 40
+     },
+     {
+      "dex": 213,
+      "nome": "Vulcanite",
+      "min": 42,
+      "max": 42
+     },
+     {
+      "dex": 214,
+      "nome": "Marmim",
+      "min": 42,
+      "max": 42
+     },
+     {
+      "dex": 215,
+      "nome": "Granito",
+      "min": 40,
+      "max": 42
+     }
+    ]
+   },
+   "pedra": {
+    "taxa": 20,
+    "criaturas": [
+     {
+      "dex": 197,
+      "nome": "Rochão",
+      "min": 35,
+      "max": 40
+     },
+     {
+      "dex": 211,
+      "nome": "Fóssil",
+      "min": 30,
+      "max": 40
+     },
+     {
+      "dex": 214,
+      "nome": "Marmim",
+      "min": 35,
+      "max": 40
+     },
+     {
+      "dex": 215,
+      "nome": "Granito",
+      "min": 35,
+      "max": 40
+     }
+    ]
+   }
+  },
+  "VICTORY_ROAD_B2F": {
+   "grama": {
+    "taxa": 10,
+    "criaturas": [
+     {
+      "dex": 16,
+      "nome": "Boitatá",
+      "min": 40,
+      "max": 44
+     },
+     {
+      "dex": 78,
+      "nome": "Coati",
+      "min": 44,
+      "max": 44
+     },
+     {
+      "dex": 197,
+      "nome": "Rochão",
+      "min": 42,
+      "max": 42
+     },
+     {
+      "dex": 200,
+      "nome": "Ouríço",
+      "min": 42,
+      "max": 42
+     },
+     {
+      "dex": 211,
+      "nome": "Fóssil",
+      "min": 40,
+      "max": 42
+     },
+     {
+      "dex": 213,
+      "nome": "Vulcanite",
+      "min": 44,
+      "max": 44
+     },
+     {
+      "dex": 214,
+      "nome": "Marmim",
+      "min": 44,
+      "max": 44
+     },
+     {
+      "dex": 215,
+      "nome": "Granito",
+      "min": 40,
+      "max": 42
+     }
+    ]
+   },
+   "surfe": {
+    "taxa": 4,
+    "criaturas": [
+     {
+      "dex": 122,
+      "nome": "Pirarucu",
+      "min": 35,
+      "max": 40
+     },
+     {
+      "dex": 130,
+      "nome": "Tucunaré",
+      "min": 35,
+      "max": 40
+     },
+     {
+      "dex": 181,
+      "nome": "Vitóriarégia",
+      "min": 35,
+      "max": 40
+     },
+     {
+      "dex": 209,
+      "nome": "Estalactite",
+      "min": 25,
+      "max": 35
+     }
+    ]
+   },
+   "pesca": {
+    "taxa": 30,
+    "criaturas": [
+     {
+      "dex": 57,
+      "nome": "Mãe-d'Água",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 122,
+      "nome": "Pirarucu",
+      "min": 10,
+      "max": 30
+     },
+     {
+      "dex": 125,
+      "nome": "Aruanã",
+      "min": 40,
+      "max": 45
+     },
+     {
+      "dex": 126,
+      "nome": "Poraquê",
+      "min": 25,
+      "max": 35
+     },
+     {
+      "dex": 130,
+      "nome": "Tucunaré",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 131,
+      "nome": "Pacu",
+      "min": 35,
+      "max": 40
+     },
+     {
+      "dex": 209,
+      "nome": "Estalactite",
+      "min": 5,
+      "max": 30
+     }
+    ]
+   }
+  },
+  "METEOR_FALLS_1F_1R": {
+   "grama": {
+    "taxa": 10,
+    "criaturas": [
+     {
+      "dex": 123,
+      "nome": "Piranha",
+      "min": 16,
+      "max": 18
+     },
+     {
+      "dex": 127,
+      "nome": "Curimbatá",
+      "min": 14,
+      "max": 14
+     },
+     {
+      "dex": 128,
+      "nome": "Traíra",
+      "min": 15,
+      "max": 19
+     },
+     {
+      "dex": 130,
+      "nome": "Tucunaré",
+      "min": 16,
+      "max": 16
+     },
+     {
+      "dex": 131,
+      "nome": "Pacu",
+      "min": 20,
+      "max": 20
+     },
+     {
+      "dex": 134,
+      "nome": "Cascudo",
+      "min": 14,
+      "max": 17
+     },
+     {
+      "dex": 181,
+      "nome": "Vitóriarégia",
+      "min": 19,
+      "max": 19
+     },
+     {
+      "dex": 209,
+      "nome": "Estalactite",
+      "min": 20,
+      "max": 20
+     },
+     {
+      "dex": 273,
+      "nome": "Bumba-Meu-Boi",
+      "min": 18,
+      "max": 18
+     }
+    ]
+   },
+   "surfe": {
+    "taxa": 4,
+    "criaturas": [
+     {
+      "dex": 123,
+      "nome": "Piranha",
+      "min": 5,
+      "max": 35
+     },
+     {
+      "dex": 128,
+      "nome": "Traíra",
+      "min": 5,
+      "max": 15
+     },
+     {
+      "dex": 134,
+      "nome": "Cascudo",
+      "min": 15,
+      "max": 25
+     },
+     {
+      "dex": 209,
+      "nome": "Estalactite",
+      "min": 25,
+      "max": 35
+     }
+    ]
+   },
+   "pesca": {
+    "taxa": 30,
+    "criaturas": [
+     {
+      "dex": 125,
+      "nome": "Aruanã",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 126,
+      "nome": "Poraquê",
+      "min": 40,
+      "max": 45
+     },
+     {
+      "dex": 128,
+      "nome": "Traíra",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 130,
+      "nome": "Tucunaré",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 131,
+      "nome": "Pacu",
+      "min": 20,
+      "max": 30
+     },
+     {
+      "dex": 134,
+      "nome": "Cascudo",
+      "min": 10,
+      "max": 30
+     },
+     {
+      "dex": 165,
+      "nome": "Jaburu",
+      "min": 35,
+      "max": 40
+     }
+    ]
+   }
+  },
+  "METEOR_FALLS_1F_2R": {
+   "grama": {
+    "taxa": 10,
+    "criaturas": [
+     {
+      "dex": 123,
+      "nome": "Piranha",
+      "min": 33,
+      "max": 33
+     },
+     {
+      "dex": 127,
+      "nome": "Curimbatá",
+      "min": 39,
+      "max": 39
+     },
+     {
+      "dex": 128,
+      "nome": "Traíra",
+      "min": 35,
+      "max": 38
+     },
+     {
+      "dex": 130,
+      "nome": "Tucunaré",
+      "min": 37,
+      "max": 37
+     },
+     {
+      "dex": 131,
+      "nome": "Pacu",
+      "min": 40,
+      "max": 40
+     },
+     {
+      "dex": 134,
+      "nome": "Cascudo",
+      "min": 33,
+      "max": 35
+     },
+     {
+      "dex": 181,
+      "nome": "Vitóriarégia",
+      "min": 38,
+      "max": 38
+     },
+     {
+      "dex": 203,
+      "nome": "Bauxito",
+      "min": 35,
+      "max": 35
+     },
+     {
+      "dex": 209,
+      "nome": "Estalactite",
+      "min": 40,
+      "max": 40
+     }
+    ]
+   },
+   "surfe": {
+    "taxa": 4,
+    "criaturas": [
+     {
+      "dex": 123,
+      "nome": "Piranha",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 128,
+      "nome": "Traíra",
+      "min": 5,
+      "max": 15
+     },
+     {
+      "dex": 134,
+      "nome": "Cascudo",
+      "min": 15,
+      "max": 25
+     },
+     {
+      "dex": 209,
+      "nome": "Estalactite",
+      "min": 25,
+      "max": 35
+     }
+    ]
+   },
+   "pesca": {
+    "taxa": 30,
+    "criaturas": [
+     {
+      "dex": 125,
+      "nome": "Aruanã",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 126,
+      "nome": "Poraquê",
+      "min": 40,
+      "max": 45
+     },
+     {
+      "dex": 127,
+      "nome": "Curimbatá",
+      "min": 10,
+      "max": 30
+     },
+     {
+      "dex": 128,
+      "nome": "Traíra",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 131,
+      "nome": "Pacu",
+      "min": 25,
+      "max": 35
+     },
+     {
+      "dex": 134,
+      "nome": "Cascudo",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 165,
+      "nome": "Jaburu",
+      "min": 35,
+      "max": 40
+     }
+    ]
+   }
+  },
+  "METEOR_FALLS_B1F_1R": {
+   "grama": {
+    "taxa": 10,
+    "criaturas": [
+     {
+      "dex": 123,
+      "nome": "Piranha",
+      "min": 33,
+      "max": 33
+     },
+     {
+      "dex": 127,
+      "nome": "Curimbatá",
+      "min": 39,
+      "max": 39
+     },
+     {
+      "dex": 128,
+      "nome": "Traíra",
+      "min": 35,
+      "max": 38
+     },
+     {
+      "dex": 130,
+      "nome": "Tucunaré",
+      "min": 37,
+      "max": 37
+     },
+     {
+      "dex": 131,
+      "nome": "Pacu",
+      "min": 40,
+      "max": 40
+     },
+     {
+      "dex": 134,
+      "nome": "Cascudo",
+      "min": 33,
+      "max": 35
+     },
+     {
+      "dex": 181,
+      "nome": "Vitóriarégia",
+      "min": 38,
+      "max": 38
+     },
+     {
+      "dex": 200,
+      "nome": "Ouríço",
+      "min": 35,
+      "max": 35
+     },
+     {
+      "dex": 209,
+      "nome": "Estalactite",
+      "min": 40,
+      "max": 40
+     }
+    ]
+   },
+   "surfe": {
+    "taxa": 4,
+    "criaturas": [
+     {
+      "dex": 123,
+      "nome": "Piranha",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 128,
+      "nome": "Traíra",
+      "min": 5,
+      "max": 15
+     },
+     {
+      "dex": 134,
+      "nome": "Cascudo",
+      "min": 15,
+      "max": 25
+     },
+     {
+      "dex": 209,
+      "nome": "Estalactite",
+      "min": 25,
+      "max": 35
+     }
+    ]
+   },
+   "pesca": {
+    "taxa": 30,
+    "criaturas": [
+     {
+      "dex": 125,
+      "nome": "Aruanã",
+      "min": 35,
+      "max": 40
+     },
+     {
+      "dex": 127,
+      "nome": "Curimbatá",
+      "min": 25,
+      "max": 35
+     },
+     {
+      "dex": 128,
+      "nome": "Traíra",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 130,
+      "nome": "Tucunaré",
+      "min": 10,
+      "max": 30
+     },
+     {
+      "dex": 131,
+      "nome": "Pacu",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 134,
+      "nome": "Cascudo",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 165,
+      "nome": "Jaburu",
+      "min": 40,
+      "max": 45
+     }
+    ]
+   }
+  },
+  "SHOAL_CAVE_LOW_TIDE_STAIRS_ROOM": {
+   "grama": {
+    "taxa": 10,
+    "criaturas": [
+     {
+      "dex": 205,
+      "nome": "Salitre",
+      "min": 26,
+      "max": 28
+     },
+     {
+      "dex": 209,
+      "nome": "Estalactite",
+      "min": 30,
+      "max": 30
+     },
+     {
+      "dex": 218,
+      "nome": "Siri",
+      "min": 32,
+      "max": 32
+     },
+     {
+      "dex": 222,
+      "nome": "Águaviva",
+      "min": 32,
+      "max": 32
+     },
+     {
+      "dex": 227,
+      "nome": "Baleia",
+      "min": 32,
+      "max": 32
+     },
+     {
+      "dex": 233,
+      "nome": "Pescadão",
+      "min": 26,
+      "max": 30
+     },
+     {
+      "dex": 267,
+      "nome": "Marinheiro",
+      "min": 28,
+      "max": 32
+     },
+     {
+      "dex": 275,
+      "nome": "Frevinho",
+      "min": 32,
+      "max": 32
+     },
+     {
+      "dex": 312,
+      "nome": "Óleoso",
+      "min": 32,
+      "max": 32
+     }
+    ]
+   }
+  },
+  "SHOAL_CAVE_LOW_TIDE_LOWER_ROOM": {
+   "grama": {
+    "taxa": 10,
+    "criaturas": [
+     {
+      "dex": 205,
+      "nome": "Salitre",
+      "min": 26,
+      "max": 28
+     },
+     {
+      "dex": 209,
+      "nome": "Estalactite",
+      "min": 30,
+      "max": 30
+     },
+     {
+      "dex": 218,
+      "nome": "Siri",
+      "min": 32,
+      "max": 32
+     },
+     {
+      "dex": 222,
+      "nome": "Águaviva",
+      "min": 32,
+      "max": 32
+     },
+     {
+      "dex": 227,
+      "nome": "Baleia",
+      "min": 32,
+      "max": 32
+     },
+     {
+      "dex": 233,
+      "nome": "Pescadão",
+      "min": 26,
+      "max": 30
+     },
+     {
+      "dex": 264,
+      "nome": "Exu",
+      "min": 32,
+      "max": 32
+     },
+     {
+      "dex": 267,
+      "nome": "Marinheiro",
+      "min": 28,
+      "max": 32
+     },
+     {
+      "dex": 312,
+      "nome": "Óleoso",
+      "min": 32,
+      "max": 32
+     }
+    ]
+   }
+  },
+  "SHOAL_CAVE_LOW_TIDE_INNER_ROOM": {
+   "grama": {
+    "taxa": 10,
+    "criaturas": [
+     {
+      "dex": 205,
+      "nome": "Salitre",
+      "min": 26,
+      "max": 28
+     },
+     {
+      "dex": 209,
+      "nome": "Estalactite",
+      "min": 30,
+      "max": 30
+     },
+     {
+      "dex": 218,
+      "nome": "Siri",
+      "min": 32,
+      "max": 32
+     },
+     {
+      "dex": 227,
+      "nome": "Baleia",
+      "min": 32,
+      "max": 32
+     },
+     {
+      "dex": 233,
+      "nome": "Pescadão",
+      "min": 26,
+      "max": 30
+     },
+     {
+      "dex": 267,
+      "nome": "Marinheiro",
+      "min": 28,
+      "max": 32
+     },
+     {
+      "dex": 311,
+      "nome": "Fumacento",
+      "min": 32,
+      "max": 32
+     },
+     {
+      "dex": 312,
+      "nome": "Óleoso",
+      "min": 32,
+      "max": 32
+     },
+     {
+      "dex": 323,
+      "nome": "Aluminio",
+      "min": 32,
+      "max": 32
+     }
+    ]
+   },
+   "surfe": {
+    "taxa": 4,
+    "criaturas": [
+     {
+      "dex": 205,
+      "nome": "Salitre",
+      "min": 5,
+      "max": 35
+     },
+     {
+      "dex": 230,
+      "nome": "Arraia",
+      "min": 25,
+      "max": 30
+     },
+     {
+      "dex": 231,
+      "nome": "Peixe-Espada",
+      "min": 25,
+      "max": 35
+     },
+     {
+      "dex": 267,
+      "nome": "Marinheiro",
+      "min": 5,
+      "max": 35
+     },
+     {
+      "dex": 364,
+      "nome": "Sarará",
+      "min": 25,
+      "max": 30
+     }
+    ]
+   },
+   "pesca": {
+    "taxa": 10,
+    "criaturas": [
+     {
+      "dex": 108,
+      "nome": "Iemanjá",
+      "min": 40,
+      "max": 45
+     },
+     {
+      "dex": 209,
+      "nome": "Estalactite",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 218,
+      "nome": "Siri",
+      "min": 10,
+      "max": 30
+     },
+     {
+      "dex": 227,
+      "nome": "Baleia",
+      "min": 35,
+      "max": 40
+     },
+     {
+      "dex": 231,
+      "nome": "Peixe-Espada",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 233,
+      "nome": "Pescadão",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 267,
+      "nome": "Marinheiro",
+      "min": 20,
+      "max": 30
+     }
+    ]
+   }
+  },
+  "SHOAL_CAVE_LOW_TIDE_ENTRANCE_ROOM": {
+   "grama": {
+    "taxa": 10,
+    "criaturas": [
+     {
+      "dex": 205,
+      "nome": "Salitre",
+      "min": 30,
+      "max": 30
+     },
+     {
+      "dex": 209,
+      "nome": "Estalactite",
+      "min": 28,
+      "max": 32
+     },
+     {
+      "dex": 218,
+      "nome": "Siri",
+      "min": 32,
+      "max": 32
+     },
+     {
+      "dex": 222,
+      "nome": "Águaviva",
+      "min": 32,
+      "max": 32
+     },
+     {
+      "dex": 231,
+      "nome": "Peixe-Espada",
+      "min": 30,
+      "max": 30
+     },
+     {
+      "dex": 233,
+      "nome": "Pescadão",
+      "min": 26,
+      "max": 28
+     },
+     {
+      "dex": 267,
+      "nome": "Marinheiro",
+      "min": 26,
+      "max": 26
+     },
+     {
+      "dex": 268,
+      "nome": "Baiano",
+      "min": 32,
+      "max": 32
+     },
+     {
+      "dex": 312,
+      "nome": "Óleoso",
+      "min": 32,
+      "max": 32
+     },
+     {
+      "dex": 319,
+      "nome": "Netzero",
+      "min": 32,
+      "max": 32
+     }
+    ]
+   },
+   "surfe": {
+    "taxa": 4,
+    "criaturas": [
+     {
+      "dex": 205,
+      "nome": "Salitre",
+      "min": 5,
+      "max": 35
+     },
+     {
+      "dex": 219,
+      "nome": "Camarão",
+      "min": 25,
+      "max": 30
+     },
+     {
+      "dex": 222,
+      "nome": "Águaviva",
+      "min": 25,
+      "max": 30
+     },
+     {
+      "dex": 232,
+      "nome": "Pargo",
+      "min": 5,
+      "max": 35
+     },
+     {
+      "dex": 233,
+      "nome": "Pescadão",
+      "min": 25,
+      "max": 35
+     }
+    ]
+   },
+   "pesca": {
+    "taxa": 10,
+    "criaturas": [
+     {
+      "dex": 205,
+      "nome": "Salitre",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 218,
+      "nome": "Siri",
+      "min": 35,
+      "max": 40
+     },
+     {
+      "dex": 227,
+      "nome": "Baleia",
+      "min": 20,
+      "max": 30
+     },
+     {
+      "dex": 231,
+      "nome": "Peixe-Espada",
+      "min": 10,
+      "max": 30
+     },
+     {
+      "dex": 233,
+      "nome": "Pescadão",
+      "min": 10,
+      "max": 30
+     },
+     {
+      "dex": 267,
+      "nome": "Marinheiro",
+      "min": 5,
+      "max": 10
+     },
+     {
+      "dex": 293,
+      "nome": "Ipupiara",
+      "min": 40,
+      "max": 45
+     },
+     {
+      "dex": 312,
+      "nome": "Óleoso",
+      "min": 30,
+      "max": 35
+     }
+    ]
+   }
+  },
+  "LILYCOVE_CITY": {
+   "surfe": {
+    "taxa": 4,
+    "criaturas": [
+     {
+      "dex": 226,
+      "nome": "Golfinho",
+      "min": 5,
+      "max": 35
+     },
+     {
+      "dex": 306,
+      "nome": "Perereca",
+      "min": 25,
+      "max": 30
+     },
+     {
+      "dex": 310,
+      "nome": "Ferrugem",
+      "min": 15,
+      "max": 25
+     },
+     {
+      "dex": 325,
+      "nome": "Bueiro",
+      "min": 25,
+      "max": 30
+     }
+    ]
+   },
+   "pesca": {
+    "taxa": 10,
+    "criaturas": [
+     {
+      "dex": 226,
+      "nome": "Golfinho",
+      "min": 10,
+      "max": 30
+     },
+     {
+      "dex": 227,
+      "nome": "Baleia",
+      "min": 40,
+      "max": 45
+     },
+     {
+      "dex": 231,
+      "nome": "Peixe-Espada",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 233,
+      "nome": "Pescadão",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 267,
+      "nome": "Marinheiro",
+      "min": 25,
+      "max": 30
+     },
+     {
+      "dex": 306,
+      "nome": "Perereca",
+      "min": 35,
+      "max": 40
+     },
+     {
+      "dex": 325,
+      "nome": "Bueiro",
+      "min": 30,
+      "max": 35
+     }
+    ]
+   }
+  },
+  "DEWFORD_TOWN": {
+   "surfe": {
+    "taxa": 4,
+    "criaturas": [
+     {
+      "dex": 12,
+      "nome": "Capivim",
+      "min": 5,
+      "max": 35
+     },
+     {
+      "dex": 85,
+      "nome": "Sapim",
+      "min": 15,
+      "max": 25
+     },
+     {
+      "dex": 216,
+      "nome": "Caranguim",
+      "min": 25,
+      "max": 30
+     },
+     {
+      "dex": 224,
+      "nome": "Tartaruguim",
+      "min": 25,
+      "max": 30
+     }
+    ]
+   },
+   "pesca": {
+    "taxa": 10,
+    "criaturas": [
+     {
+      "dex": 12,
+      "nome": "Capivim",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 55,
+      "nome": "Peixim",
+      "min": 20,
+      "max": 30
+     },
+     {
+      "dex": 58,
+      "nome": "Mandim",
+      "min": 10,
+      "max": 30
+     },
+     {
+      "dex": 85,
+      "nome": "Sapim",
+      "min": 35,
+      "max": 40
+     },
+     {
+      "dex": 104,
+      "nome": "Cabocim",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 216,
+      "nome": "Caranguim",
+      "min": 40,
+      "max": 45
+     },
+     {
+      "dex": 228,
+      "nome": "Tubarim",
+      "min": 5,
+      "max": 30
+     }
+    ]
+   }
+  },
+  "SLATEPORT_CITY": {
+   "surfe": {
+    "taxa": 4,
+    "criaturas": [
+     {
+      "dex": 12,
+      "nome": "Capivim",
+      "min": 15,
+      "max": 25
+     },
+     {
+      "dex": 85,
+      "nome": "Sapim",
+      "min": 25,
+      "max": 30
+     },
+     {
+      "dex": 220,
+      "nome": "Polvim",
+      "min": 5,
+      "max": 35
+     },
+     {
+      "dex": 375,
+      "nome": "Piranhita",
+      "min": 25,
+      "max": 30
+     }
+    ]
+   },
+   "pesca": {
+    "taxa": 10,
+    "criaturas": [
+     {
+      "dex": 12,
+      "nome": "Capivim",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 55,
+      "nome": "Peixim",
+      "min": 20,
+      "max": 30
+     },
+     {
+      "dex": 58,
+      "nome": "Mandim",
+      "min": 10,
+      "max": 30
+     },
+     {
+      "dex": 85,
+      "nome": "Sapim",
+      "min": 40,
+      "max": 45
+     },
+     {
+      "dex": 104,
+      "nome": "Cabocim",
+      "min": 10,
+      "max": 30
+     },
+     {
+      "dex": 220,
+      "nome": "Polvim",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 228,
+      "nome": "Tubarim",
+      "min": 5,
+      "max": 10
+     },
+     {
+      "dex": 375,
+      "nome": "Piranhita",
+      "min": 35,
+      "max": 40
+     }
+    ]
+   }
+  },
+  "MOSSDEEP_CITY": {
+   "surfe": {
+    "taxa": 4,
+    "criaturas": [
+     {
+      "dex": 223,
+      "nome": "Cavalim-Marinho",
+      "min": 15,
+      "max": 25
+     },
+     {
+      "dex": 226,
+      "nome": "Golfinho",
+      "min": 5,
+      "max": 35
+     },
+     {
+      "dex": 267,
+      "nome": "Marinheiro",
+      "min": 25,
+      "max": 30
+     },
+     {
+      "dex": 364,
+      "nome": "Sarará",
+      "min": 25,
+      "max": 30
+     }
+    ]
+   },
+   "pesca": {
+    "taxa": 10,
+    "criaturas": [
+     {
+      "dex": 223,
+      "nome": "Cavalim-Marinho",
+      "min": 25,
+      "max": 35
+     },
+     {
+      "dex": 226,
+      "nome": "Golfinho",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 231,
+      "nome": "Peixe-Espada",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 233,
+      "nome": "Pescadão",
+      "min": 10,
+      "max": 30
+     },
+     {
+      "dex": 256,
+      "nome": "Iemanjá-Pequena",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 267,
+      "nome": "Marinheiro",
+      "min": 40,
+      "max": 45
+     },
+     {
+      "dex": 364,
+      "nome": "Sarará",
+      "min": 35,
+      "max": 40
+     }
+    ]
+   }
+  },
+  "PACIFIDLOG_TOWN": {
+   "surfe": {
+    "taxa": 4,
+    "criaturas": [
+     {
+      "dex": 144,
+      "nome": "Caramulão",
+      "min": 5,
+      "max": 35
+     },
+     {
+      "dex": 165,
+      "nome": "Jaburu",
+      "min": 25,
+      "max": 30
+     },
+     {
+      "dex": 181,
+      "nome": "Vitóriarégia",
+      "min": 15,
+      "max": 25
+     },
+     {
+      "dex": 253,
+      "nome": "Yara-Pindá",
+      "min": 25,
+      "max": 30
+     }
+    ]
+   },
+   "pesca": {
+    "taxa": 10,
+    "criaturas": [
+     {
+      "dex": 124,
+      "nome": "Tambaqui",
+      "min": 35,
+      "max": 40
+     },
+     {
+      "dex": 125,
+      "nome": "Aruanã",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 127,
+      "nome": "Curimbatá",
+      "min": 40,
+      "max": 45
+     },
+     {
+      "dex": 131,
+      "nome": "Pacu",
+      "min": 10,
+      "max": 30
+     },
+     {
+      "dex": 132,
+      "nome": "Matrinxã",
+      "min": 25,
+      "max": 35
+     },
+     {
+      "dex": 165,
+      "nome": "Jaburu",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 231,
+      "nome": "Peixe-Espada",
+      "min": 30,
+      "max": 35
+     }
+    ]
+   }
+  },
+  "EVER_GRANDE_CITY": {
+   "surfe": {
+    "taxa": 4,
+    "criaturas": [
+     {
+      "dex": 130,
+      "nome": "Tucunaré",
+      "min": 15,
+      "max": 25
+     },
+     {
+      "dex": 181,
+      "nome": "Vitóriarégia",
+      "min": 25,
+      "max": 30
+     },
+     {
+      "dex": 186,
+      "nome": "Buriti",
+      "min": 25,
+      "max": 30
+     },
+     {
+      "dex": 209,
+      "nome": "Estalactite",
+      "min": 5,
+      "max": 35
+     }
+    ]
+   },
+   "pesca": {
+    "taxa": 10,
+    "criaturas": [
+     {
+      "dex": 57,
+      "nome": "Mãe-d'Água",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 122,
+      "nome": "Pirarucu",
+      "min": 10,
+      "max": 30
+     },
+     {
+      "dex": 125,
+      "nome": "Aruanã",
+      "min": 40,
+      "max": 45
+     },
+     {
+      "dex": 126,
+      "nome": "Poraquê",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 130,
+      "nome": "Tucunaré",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 131,
+      "nome": "Pacu",
+      "min": 35,
+      "max": 40
+     },
+     {
+      "dex": 209,
+      "nome": "Estalactite",
+      "min": 5,
+      "max": 30
+     }
+    ]
+   }
+  },
+  "PETALBURG_CITY": {
+   "surfe": {
+    "taxa": 1,
+    "criaturas": [
+     {
+      "dex": 35,
+      "nome": "Jacarão",
+      "min": 10,
+      "max": 30
+     },
+     {
+      "dex": 193,
+      "nome": "Mate",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 248,
+      "nome": "Aluá",
+      "min": 5,
+      "max": 10
+     },
+     {
+      "dex": 325,
+      "nome": "Bueiro",
+      "min": 5,
+      "max": 10
+     }
+    ]
+   },
+   "pesca": {
+    "taxa": 10,
+    "criaturas": [
+     {
+      "dex": 46,
+      "nome": "Sucurim",
+      "min": 40,
+      "max": 45
+     },
+     {
+      "dex": 59,
+      "nome": "Mandí",
+      "min": 10,
+      "max": 30
+     },
+     {
+      "dex": 124,
+      "nome": "Tambaqui",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 128,
+      "nome": "Traíra",
+      "min": 35,
+      "max": 40
+     },
+     {
+      "dex": 130,
+      "nome": "Tucunaré",
+      "min": 20,
+      "max": 30
+     },
+     {
+      "dex": 132,
+      "nome": "Matrinxã",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 133,
+      "nome": "Piau",
+      "min": 30,
+      "max": 35
+     }
+    ]
+   }
+  },
+  "UNDERWATER_ROUTE124": {
+   "surfe": {
+    "taxa": 4,
+    "criaturas": [
+     {
+      "dex": 123,
+      "nome": "Piranha",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 205,
+      "nome": "Salitre",
+      "min": 20,
+      "max": 30
+     },
+     {
+      "dex": 209,
+      "nome": "Estalactite",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 267,
+      "nome": "Marinheiro",
+      "min": 30,
+      "max": 35
+     }
+    ]
+   }
+  },
+  "SHOAL_CAVE_LOW_TIDE_ICE_ROOM": {
+   "grama": {
+    "taxa": 10,
+    "criaturas": [
+     {
+      "dex": 205,
+      "nome": "Salitre",
+      "min": 26,
+      "max": 28
+     },
+     {
+      "dex": 209,
+      "nome": "Estalactite",
+      "min": 32,
+      "max": 32
+     },
+     {
+      "dex": 222,
+      "nome": "Águaviva",
+      "min": 30,
+      "max": 30
+     },
+     {
+      "dex": 231,
+      "nome": "Peixe-Espada",
+      "min": 30,
+      "max": 30
+     },
+     {
+      "dex": 233,
+      "nome": "Pescadão",
+      "min": 26,
+      "max": 30
+     },
+     {
+      "dex": 267,
+      "nome": "Marinheiro",
+      "min": 28,
+      "max": 30
+     },
+     {
+      "dex": 303,
+      "nome": "Mosquim",
+      "min": 26,
+      "max": 26
+     },
+     {
+      "dex": 312,
+      "nome": "Óleoso",
+      "min": 28,
+      "max": 28
+     },
+     {
+      "dex": 367,
+      "nome": "Atabaque",
+      "min": 32,
+      "max": 32
+     }
+    ]
+   }
+  },
+  "SKY_PILLAR_1F": {
+   "grama": {
+    "taxa": 10,
+    "criaturas": [
+     {
+      "dex": 16,
+      "nome": "Boitatá",
+      "min": 37,
+      "max": 37
+     },
+     {
+      "dex": 199,
+      "nome": "Ametista",
+      "min": 34,
+      "max": 37
+     },
+     {
+      "dex": 200,
+      "nome": "Ouríço",
+      "min": 38,
+      "max": 38
+     },
+     {
+      "dex": 211,
+      "nome": "Fóssil",
+      "min": 33,
+      "max": 38
+     },
+     {
+      "dex": 214,
+      "nome": "Marmim",
+      "min": 34,
+      "max": 36
+     },
+     {
+      "dex": 215,
+      "nome": "Granito",
+      "min": 36,
+      "max": 36
+     },
+     {
+      "dex": 258,
+      "nome": "Oxalá",
+      "min": 37,
+      "max": 37
+     },
+     {
+      "dex": 298,
+      "nome": "Cristo",
+      "min": 38,
+      "max": 38
+     }
+    ]
+   }
+  },
+  "SOOTOPOLIS_CITY": {
+   "surfe": {
+    "taxa": 1,
+    "criaturas": [
+     {
+      "dex": 123,
+      "nome": "Piranha",
+      "min": 15,
+      "max": 25
+     },
+     {
+      "dex": 130,
+      "nome": "Tucunaré",
+      "min": 25,
+      "max": 30
+     },
+     {
+      "dex": 209,
+      "nome": "Estalactite",
+      "min": 5,
+      "max": 35
+     },
+     {
+      "dex": 375,
+      "nome": "Piranhita",
+      "min": 25,
+      "max": 30
+     }
+    ]
+   },
+   "pesca": {
+    "taxa": 10,
+    "criaturas": [
+     {
+      "dex": 125,
+      "nome": "Aruanã",
+      "min": 35,
+      "max": 45
+     },
+     {
+      "dex": 127,
+      "nome": "Curimbatá",
+      "min": 5,
+      "max": 30
+     },
+     {
+      "dex": 129,
+      "nome": "Dourado",
+      "min": 10,
+      "max": 30
+     },
+     {
+      "dex": 130,
+      "nome": "Tucunaré",
+      "min": 5,
+      "max": 10
+     },
+     {
+      "dex": 131,
+      "nome": "Pacu",
+      "min": 5,
+      "max": 45
+     },
+     {
+      "dex": 132,
+      "nome": "Matrinxã",
+      "min": 10,
+      "max": 30
+     },
+     {
+      "dex": 134,
+      "nome": "Cascudo",
+      "min": 30,
+      "max": 40
+     },
+     {
+      "dex": 165,
+      "nome": "Jaburu",
+      "min": 30,
+      "max": 35
+     }
+    ]
+   }
+  },
+  "SKY_PILLAR_3F": {
+   "grama": {
+    "taxa": 10,
+    "criaturas": [
+     {
+      "dex": 16,
+      "nome": "Boitatá",
+      "min": 37,
+      "max": 37
+     },
+     {
+      "dex": 199,
+      "nome": "Ametista",
+      "min": 34,
+      "max": 37
+     },
+     {
+      "dex": 200,
+      "nome": "Ouríço",
+      "min": 38,
+      "max": 38
+     },
+     {
+      "dex": 211,
+      "nome": "Fóssil",
+      "min": 33,
+      "max": 38
+     },
+     {
+      "dex": 214,
+      "nome": "Marmim",
+      "min": 34,
+      "max": 36
+     },
+     {
+      "dex": 215,
+      "nome": "Granito",
+      "min": 36,
+      "max": 36
+     },
+     {
+      "dex": 244,
+      "nome": "Tupã",
+      "min": 37,
+      "max": 37
+     },
+     {
+      "dex": 245,
+      "nome": "Jaci",
+      "min": 38,
+      "max": 38
+     }
+    ]
+   }
+  },
+  "SKY_PILLAR_5F": {
+   "grama": {
+    "taxa": 10,
+    "criaturas": [
+     {
+      "dex": 16,
+      "nome": "Boitatá",
+      "min": 37,
+      "max": 37
+     },
+     {
+      "dex": 199,
+      "nome": "Ametista",
+      "min": 34,
+      "max": 37
+     },
+     {
+      "dex": 200,
+      "nome": "Ouríço",
+      "min": 38,
+      "max": 38
+     },
+     {
+      "dex": 211,
+      "nome": "Fóssil",
+      "min": 33,
+      "max": 38
+     },
+     {
+      "dex": 212,
+      "nome": "Meteorito",
+      "min": 39,
+      "max": 39
+     },
+     {
+      "dex": 214,
+      "nome": "Marmim",
+      "min": 34,
+      "max": 36
+     },
+     {
+      "dex": 215,
+      "nome": "Granito",
+      "min": 36,
+      "max": 36
+     },
+     {
+      "dex": 260,
+      "nome": "Sacipererê",
+      "min": 39,
+      "max": 39
+     }
+    ]
+   }
+  },
+  "SAFARI_ZONE_SOUTHEAST": {
+   "grama": {
+    "taxa": 25,
+    "criaturas": [
+     {
+      "dex": 1,
+      "nome": "Caramelo",
+      "min": 34,
+      "max": 34
+     },
+     {
+      "dex": 7,
+      "nome": "Pimpau",
+      "min": 33,
+      "max": 33
+     },
+     {
+      "dex": 11,
+      "nome": "Saúvarco",
+      "min": 34,
+      "max": 34
+     },
+     {
+      "dex": 24,
+      "nome": "Tamanduá",
+      "min": 36,
+      "max": 36
+     },
+     {
+      "dex": 54,
+      "nome": "Guaraflama",
+      "min": 34,
+      "max": 34
+     },
+     {
+      "dex": 153,
+      "nome": "Corupião",
+      "min": 37,
+      "max": 37
+     },
+     {
+      "dex": 175,
+      "nome": "João-de-Barro",
+      "min": 39,
+      "max": 39
+     },
+     {
+      "dex": 195,
+      "nome": "Mandioca",
+      "min": 33,
+      "max": 33
+     },
+     {
+      "dex": 277,
+      "nome": "Congada",
+      "min": 40,
+      "max": 40
+     },
+     {
+      "dex": 362,
+      "nome": "Beija-Luz",
+      "min": 35,
+      "max": 35
+     }
+    ]
+   },
+   "surfe": {
+    "taxa": 9,
+    "criaturas": [
+     {
+      "dex": 4,
+      "nome": "Querô",
+      "min": 25,
+      "max": 30
+     },
+     {
+      "dex": 86,
+      "nome": "Sapão",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 126,
+      "nome": "Poraquê",
+      "min": 35,
+      "max": 40
+     },
+     {
+      "dex": 186,
+      "nome": "Buriti",
+      "min": 25,
+      "max": 30
+     },
+     {
+      "dex": 193,
+      "nome": "Mate",
+      "min": 25,
+      "max": 30
+     }
+    ]
+   },
+   "pesca": {
+    "taxa": 35,
+    "criaturas": [
+     {
+      "dex": 57,
+      "nome": "Mãe-d'Água",
+      "min": 25,
+      "max": 30
+     },
+     {
+      "dex": 86,
+      "nome": "Sapão",
+      "min": 25,
+      "max": 35
+     },
+     {
+      "dex": 125,
+      "nome": "Aruanã",
+      "min": 35,
+      "max": 40
+     },
+     {
+      "dex": 126,
+      "nome": "Poraquê",
+      "min": 25,
+      "max": 30
+     },
+     {
+      "dex": 131,
+      "nome": "Pacu",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 186,
+      "nome": "Buriti",
+      "min": 25,
+      "max": 30
+     },
+     {
+      "dex": 193,
+      "nome": "Mate",
+      "min": 25,
+      "max": 35
+     }
+    ]
+   }
+  },
+  "SAFARI_ZONE_NORTHEAST": {
+   "grama": {
+    "taxa": 25,
+    "criaturas": [
+     {
+      "dex": 159,
+      "nome": "Urutau",
+      "min": 33,
+      "max": 35
+     },
+     {
+      "dex": 169,
+      "nome": "Trinca-Ferro",
+      "min": 33,
+      "max": 33
+     },
+     {
+      "dex": 189,
+      "nome": "Açaí",
+      "min": 36,
+      "max": 36
+     },
+     {
+      "dex": 211,
+      "nome": "Fóssil",
+      "min": 39,
+      "max": 39
+     },
+     {
+      "dex": 214,
+      "nome": "Marmim",
+      "min": 34,
+      "max": 34
+     },
+     {
+      "dex": 215,
+      "nome": "Granito",
+      "min": 40,
+      "max": 40
+     },
+     {
+      "dex": 242,
+      "nome": "Anhangá",
+      "min": 37,
+      "max": 37
+     },
+     {
+      "dex": 249,
+      "nome": "Jenipapo",
+      "min": 34,
+      "max": 34
+     }
+    ]
+   },
+   "pedra": {
+    "taxa": 25,
+    "criaturas": [
+     {
+      "dex": 169,
+      "nome": "Trinca-Ferro",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 211,
+      "nome": "Fóssil",
+      "min": 30,
+      "max": 35
+     },
+     {
+      "dex": 214,
+      "nome": "Marmim",
+      "min": 20,
+      "max": 30
+     },
+     {
+      "dex": 215,
+      "nome": "Granito",
+      "min": 35,
+      "max": 40
+     }
+    ]
+   }
+  },
+  "MAGMA_HIDEOUT_1F": {
+   "grama": {
+    "taxa": 10,
+    "criaturas": [
+     {
+      "dex": 110,
+      "nome": "Ogum",
+      "min": 33,
+      "max": 33
+     },
+     {
+      "dex": 116,
+      "nome": "Cabrita",
+      "min": 28,
+      "max": 29
+     },
+     {
+      "dex": 185,
+      "nome": "Babaçu",
+      "min": 31,
+      "max": 31
+     },
+     {
+      "dex": 201,
+      "nome": "Ferrolho",
+      "min": 30,
+      "max": 30
+     },
+     {
+      "dex": 209,
+      "nome": "Estalactite",
+      "min": 27,
+      "max": 28
+     },
+     {
+      "dex": 213,
+      "nome": "Vulcanite",
+      "min": 30,
+      "max": 30
+     },
+     {
+      "dex": 215,
+      "nome": "Granito",
+      "min": 30,
+      "max": 30
+     },
+     {
+      "dex": 274,
+      "nome": "Reisado",
+      "min": 30,
+      "max": 30
+     },
+     {
+      "dex": 285,
+      "nome": "Boitatá-Puro",
+      "min": 32,
+      "max": 32
+     }
+    ]
+   }
+  },
+  "MAGMA_HIDEOUT_2F_1R": {
+   "grama": {
+    "taxa": 10,
+    "criaturas": [
+     {
+      "dex": 78,
+      "nome": "Coati",
+      "min": 30,
+      "max": 30
+     },
+     {
+      "dex": 116,
+      "nome": "Cabrita",
+      "min": 28,
+      "max": 29
+     },
+     {
+      "dex": 201,
+      "nome": "Ferrolho",
+      "min": 30,
+      "max": 30
+     },
+     {
+      "dex": 209,
+      "nome": "Estalactite",
+      "min": 27,
+      "max": 28
+     },
+     {
+      "dex": 210,
+      "nome": "Estalagmite",
+      "min": 31,
+      "max": 31
+     },
+     {
+      "dex": 215,
+      "nome": "Granito",
+      "min": 30,
+      "max": 30
+     },
+     {
+      "dex": 246,
+      "nome": "Guaraci",
+      "min": 32,
+      "max": 32
+     },
+     {
+      "dex": 277,
+      "nome": "Congada",
+      "min": 30,
+      "max": 30
+     },
+     {
+      "dex": 297,
+      "nome": "Corcovado-Ancião",
+      "min": 33,
+      "max": 33
+     }
+    ]
+   }
+  },
+  "MAGMA_HIDEOUT_2F_2R": {
+   "grama": {
+    "taxa": 10,
+    "criaturas": [
+     {
+      "dex": 106,
+      "nome": "Cangaço",
+      "min": 30,
+      "max": 30
+     },
+     {
+      "dex": 116,
+      "nome": "Cabrita",
+      "min": 28,
+      "max": 29
+     },
+     {
+      "dex": 185,
+      "nome": "Babaçu",
+      "min": 30,
+      "max": 30
+     },
+     {
+      "dex": 201,
+      "nome": "Ferrolho",
+      "min": 30,
+      "max": 30
+     },
+     {
+      "dex": 209,
+      "nome": "Estalactite",
+      "min": 27,
+      "max": 28
+     },
+     {
+      "dex": 210,
+      "nome": "Estalagmite",
+      "min": 31,
+      "max": 31
+     },
+     {
+      "dex": 215,
+      "nome": "Granito",
+      "min": 30,
+      "max": 30
+     },
+     {
+      "dex": 282,
+      "nome": "Draguará-Alfa",
+      "min": 32,
+      "max": 32
+     },
+     {
+      "dex": 371,
+      "nome": "Zabumba",
+      "min": 33,
+      "max": 33
+     }
+    ]
+   }
+  },
+  "MAGMA_HIDEOUT_3F_1R": {
+   "grama": {
+    "taxa": 10,
+    "criaturas": [
+     {
+      "dex": 107,
+      "nome": "Xangô",
+      "min": 30,
+      "max": 30
+     },
+     {
+      "dex": 116,
+      "nome": "Cabrita",
+      "min": 30,
+      "max": 30
+     },
+     {
+      "dex": 201,
+      "nome": "Ferrolho",
+      "min": 28,
+      "max": 28
+     },
+     {
+      "dex": 209,
+      "nome": "Estalactite",
+      "min": 27,
+      "max": 28
+     },
+     {
+      "dex": 210,
+      "nome": "Estalagmite",
+      "min": 31,
+      "max": 31
+     },
+     {
+      "dex": 211,
+      "nome": "Fóssil",
+      "min": 33,
+      "max": 33
+     },
+     {
+      "dex": 213,
+      "nome": "Vulcanite",
+      "min": 32,
+      "max": 32
+     },
+     {
+      "dex": 214,
+      "nome": "Marmim",
+      "min": 29,
+      "max": 29
+     },
+     {
+      "dex": 215,
+      "nome": "Granito",
+      "min": 30,
+      "max": 30
+     },
+     {
+      "dex": 270,
+      "nome": "Beata",
+      "min": 30,
+      "max": 30
+     }
+    ]
+   }
+  },
+  "MAGMA_HIDEOUT_3F_2R": {
+   "grama": {
+    "taxa": 10,
+    "criaturas": [
+     {
+      "dex": 78,
+      "nome": "Coati",
+      "min": 30,
+      "max": 30
+     },
+     {
+      "dex": 116,
+      "nome": "Cabrita",
+      "min": 28,
+      "max": 28
+     },
+     {
+      "dex": 153,
+      "nome": "Corupião",
+      "min": 30,
+      "max": 30
+     },
+     {
+      "dex": 201,
+      "nome": "Ferrolho",
+      "min": 29,
+      "max": 29
+     },
+     {
+      "dex": 202,
+      "nome": "Diamantina",
+      "min": 32,
+      "max": 32
+     },
+     {
+      "dex": 206,
+      "nome": "Enxofrino",
+      "min": 30,
+      "max": 30
+     },
+     {
+      "dex": 209,
+      "nome": "Estalactite",
+      "min": 27,
+      "max": 28
+     },
+     {
+      "dex": 210,
+      "nome": "Estalagmite",
+      "min": 31,
+      "max": 31
+     },
+     {
+      "dex": 211,
+      "nome": "Fóssil",
+      "min": 33,
+      "max": 33
+     },
+     {
+      "dex": 215,
+      "nome": "Granito",
+      "min": 30,
+      "max": 30
+     }
+    ]
+   }
+  },
+  "MAGMA_HIDEOUT_4F": {
+   "grama": {
+    "taxa": 10,
+    "criaturas": [
+     {
+      "dex": 54,
+      "nome": "Guaraflama",
+      "min": 30,
+      "max": 30
+     },
+     {
+      "dex": 116,
+      "nome": "Cabrita",
+      "min": 28,
+      "max": 29
+     },
+     {
+      "dex": 185,
+      "nome": "Babaçu",
+      "min": 31,
+      "max": 31
+     },
+     {
+      "dex": 201,
+      "nome": "Ferrolho",
+      "min": 30,
+      "max": 30
+     },
+     {
+      "dex": 209,
+      "nome": "Estalactite",
+      "min": 27,
+      "max": 28
+     },
+     {
+      "dex": 211,
+      "nome": "Fóssil",
+      "min": 30,
+      "max": 30
+     },
+     {
+      "dex": 213,
+      "nome": "Vulcanite",
+      "min": 33,
+      "max": 33
+     },
+     {
+      "dex": 215,
+      "nome": "Granito",
+      "min": 30,
+      "max": 30
+     },
+     {
+      "dex": 284,
+      "nome": "Petropico-Ancião",
+      "min": 32,
+      "max": 32
+     }
+    ]
+   }
+  },
+  "MAGMA_HIDEOUT_3F_3R": {
+   "grama": {
+    "taxa": 10,
+    "criaturas": [
+     {
+      "dex": 78,
+      "nome": "Coati",
+      "min": 30,
+      "max": 30
+     },
+     {
+      "dex": 100,
+      "nome": "Corcovado",
+      "min": 32,
+      "max": 32
+     },
+     {
+      "dex": 116,
+      "nome": "Cabrita",
+      "min": 28,
+      "max": 28
+     },
+     {
+      "dex": 175,
+      "nome": "João-de-Barro",
+      "min": 30,
+      "max": 30
+     },
+     {
+      "dex": 201,
+      "nome": "Ferrolho",
+      "min": 30,
+      "max": 30
+     },
+     {
+      "dex": 209,
+      "nome": "Estalactite",
+      "min": 27,
+      "max": 28
+     },
+     {
+      "dex": 210,
+      "nome": "Estalagmite",
+      "min": 31,
+      "max": 31
+     },
+     {
+      "dex": 211,
+      "nome": "Fóssil",
+      "min": 33,
+      "max": 33
+     },
+     {
+      "dex": 215,
+      "nome": "Granito",
+      "min": 29,
+      "max": 29
+     },
+     {
+      "dex": 269,
+      "nome": "Cangaceiro",
+      "min": 30,
+      "max": 30
+     }
+    ]
+   }
+  },
+  "MAGMA_HIDEOUT_2F_3R": {
+   "grama": {
+    "taxa": 10,
+    "criaturas": [
+     {
+      "dex": 16,
+      "nome": "Boitatá",
+      "min": 32,
+      "max": 32
+     },
+     {
+      "dex": 116,
+      "nome": "Cabrita",
+      "min": 28,
+      "max": 28
+     },
+     {
+      "dex": 160,
+      "nome": "Carcará",
+      "min": 30,
+      "max": 30
+     },
+     {
+      "dex": 185,
+      "nome": "Babaçu",
+      "min": 31,
+      "max": 31
+     },
+     {
+      "dex": 195,
+      "nome": "Mandioca",
+      "min": 30,
+      "max": 30
+     },
+     {
+      "dex": 201,
+      "nome": "Ferrolho",
+      "min": 30,
+      "max": 30
+     },
+     {
+      "dex": 209,
+      "nome": "Estalactite",
+      "min": 27,
+      "max": 28
+     },
+     {
+      "dex": 210,
+      "nome": "Estalagmite",
+      "min": 29,
+      "max": 29
+     },
+     {
+      "dex": 211,
+      "nome": "Fóssil",
+      "min": 33,
+      "max": 33
+     },
+     {
+      "dex": 215,
+      "nome": "Granito",
+      "min": 30,
+      "max": 30
+     }
+    ]
+   }
+  },
+  "MIRAGE_TOWER_1F": {
+   "grama": {
+    "taxa": 10,
+    "criaturas": [
+     {
+      "dex": 21,
+      "nome": "Cactula",
+      "min": 22,
+      "max": 22
+     },
+     {
+      "dex": 29,
+      "nome": "Tatubola",
+      "min": 20,
+      "max": 21
+     },
+     {
+      "dex": 106,
+      "nome": "Cangaço",
+      "min": 24,
+      "max": 24
+     },
+     {
+      "dex": 116,
+      "nome": "Cabrita",
+      "min": 20,
+      "max": 21
+     },
+     {
+      "dex": 118,
+      "nome": "Cascavelim",
+      "min": 23,
+      "max": 23
+     },
+     {
+      "dex": 160,
+      "nome": "Carcará",
+      "min": 24,
+      "max": 24
+     },
+     {
+      "dex": 185,
+      "nome": "Babaçu",
+      "min": 20,
+      "max": 23
+     },
+     {
+      "dex": 211,
+      "nome": "Fóssil",
+      "min": 22,
+      "max": 22
+     },
+     {
+      "dex": 215,
+      "nome": "Granito",
+      "min": 20,
+      "max": 20
+     }
+    ]
+   }
+  },
+  "MIRAGE_TOWER_2F": {
+   "grama": {
+    "taxa": 10,
+    "criaturas": [
+     {
+      "dex": 21,
+      "nome": "Cactula",
+      "min": 20,
+      "max": 20
+     },
+     {
+      "dex": 29,
+      "nome": "Tatubola",
+      "min": 20,
+      "max": 22
+     },
+     {
+      "dex": 116,
+      "nome": "Cabrita",
+      "min": 20,
+      "max": 21
+     },
+     {
+      "dex": 118,
+      "nome": "Cascavelim",
+      "min": 24,
+      "max": 24
+     },
+     {
+      "dex": 160,
+      "nome": "Carcará",
+      "min": 24,
+      "max": 24
+     },
+     {
+      "dex": 185,
+      "nome": "Babaçu",
+      "min": 20,
+      "max": 23
+     },
+     {
+      "dex": 211,
+      "nome": "Fóssil",
+      "min": 23,
+      "max": 23
+     },
+     {
+      "dex": 215,
+      "nome": "Granito",
+      "min": 22,
+      "max": 22
+     }
+    ]
+   }
+  },
+  "MIRAGE_TOWER_3F": {
+   "grama": {
+    "taxa": 10,
+    "criaturas": [
+     {
+      "dex": 21,
+      "nome": "Cactula",
+      "min": 20,
+      "max": 20
+     },
+     {
+      "dex": 29,
+      "nome": "Tatubola",
+      "min": 20,
+      "max": 22
+     },
+     {
+      "dex": 116,
+      "nome": "Cabrita",
+      "min": 20,
+      "max": 21
+     },
+     {
+      "dex": 118,
+      "nome": "Cascavelim",
+      "min": 24,
+      "max": 24
+     },
+     {
+      "dex": 160,
+      "nome": "Carcará",
+      "min": 24,
+      "max": 24
+     },
+     {
+      "dex": 185,
+      "nome": "Babaçu",
+      "min": 20,
+      "max": 23
+     },
+     {
+      "dex": 211,
+      "nome": "Fóssil",
+      "min": 23,
+      "max": 23
+     },
+     {
+      "dex": 215,
+      "nome": "Granito",
+      "min": 22,
+      "max": 22
+     }
+    ]
+   }
+  },
+  "MIRAGE_TOWER_4F": {
+   "grama": {
+    "taxa": 10,
+    "criaturas": [
+     {
+      "dex": 21,
+      "nome": "Cactula",
+      "min": 20,
+      "max": 20
+     },
+     {
+      "dex": 29,
+      "nome": "Tatubola",
+      "min": 20,
+      "max": 22
+     },
+     {
+      "dex": 116,
+      "nome": "Cabrita",
+      "min": 20,
+      "max": 21
+     },
+     {
+      "dex": 118,
+      "nome": "Cascavelim",
+      "min": 24,
+      "max": 24
+     },
+     {
+      "dex": 160,
+      "nome": "Carcará",
+      "min": 24,
+      "max": 24
+     },
+     {
+      "dex": 185,
+      "nome": "Babaçu",
+      "min": 20,
+      "max": 23
+     },
+     {
+      "dex": 211,
+      "nome": "Fóssil",
+      "min": 23,
+      "max": 23
+     },
+     {
+      "dex": 215,
+      "nome": "Granito",
+      "min": 22,
+      "max": 22
+     }
+    ]
+   }
+  },
+  "DESERT_UNDERPASS": {
+   "grama": {
+    "taxa": 10,
+    "criaturas": [
+     {
+      "dex": 16,
+      "nome": "Boitatá",
+      "min": 35,
+      "max": 41
+     },
+     {
+      "dex": 30,
+      "nome": "Tatuçu",
+      "min": 40,
+      "max": 40
+     },
+     {
+      "dex": 78,
+      "nome": "Coati",
+      "min": 43,
+      "max": 43
+     },
+     {
+      "dex": 116,
+      "nome": "Cabrita",
+      "min": 42,
+      "max": 42
+     },
+     {
+      "dex": 185,
+      "nome": "Babaçu",
+      "min": 36,
+      "max": 36
+     },
+     {
+      "dex": 369,
+      "nome": "Sanfoninha",
+      "min": 45,
+      "max": 45
+     },
+     {
+      "dex": 370,
+      "nome": "Violeiro",
+      "min": 44,
+      "max": 44
+     },
+     {
+      "dex": 371,
+      "nome": "Zabumba",
+      "min": 38,
+      "max": 40
+     },
+     {
+      "dex": 372,
+      "nome": "Cordelim",
+      "min": 38,
+      "max": 38
+     }
+    ]
+   }
+  },
+  "ARTISAN_CAVE_B1F": {
+   "grama": {
+    "taxa": 10,
+    "criaturas": [
+     {
+      "dex": 16,
+      "nome": "Boitatá",
+      "min": 40,
+      "max": 46
+     },
+     {
+      "dex": 93,
+      "nome": "Vampiro",
+      "min": 45,
+      "max": 45
+     },
+     {
+      "dex": 197,
+      "nome": "Rochão",
+      "min": 43,
+      "max": 48
+     },
+     {
+      "dex": 199,
+      "nome": "Ametista",
+      "min": 41,
+      "max": 44
+     },
+     {
+      "dex": 200,
+      "nome": "Ouríço",
+      "min": 49,
+      "max": 49
+     },
+     {
+      "dex": 211,
+      "nome": "Fóssil",
+      "min": 50,
+      "max": 50
+     },
+     {
+      "dex": 213,
+      "nome": "Vulcanite",
+      "min": 50,
+      "max": 50
+     },
+     {
+      "dex": 214,
+      "nome": "Marmim",
+      "min": 47,
+      "max": 47
+     }
+    ]
+   }
+  },
+  "ARTISAN_CAVE_1F": {
+   "grama": {
+    "taxa": 10,
+    "criaturas": [
+     {
+      "dex": 16,
+      "nome": "Boitatá",
+      "min": 40,
+      "max": 46
+     },
+     {
+      "dex": 93,
+      "nome": "Vampiro",
+      "min": 45,
+      "max": 45
+     },
+     {
+      "dex": 197,
+      "nome": "Rochão",
+      "min": 43,
+      "max": 48
+     },
+     {
+      "dex": 199,
+      "nome": "Ametista",
+      "min": 41,
+      "max": 44
+     },
+     {
+      "dex": 200,
+      "nome": "Ouríço",
+      "min": 49,
+      "max": 49
+     },
+     {
+      "dex": 211,
+      "nome": "Fóssil",
+      "min": 50,
+      "max": 50
+     },
+     {
+      "dex": 213,
+      "nome": "Vulcanite",
+      "min": 50,
+      "max": 50
+     },
+     {
+      "dex": 214,
+      "nome": "Marmim",
+      "min": 47,
+      "max": 47
+     }
+    ]
+   }
+  },
+  "ALTERING_CAVE": {
+   "grama": {
+    "taxa": 7,
+    "criaturas": [
+     {
+      "dex": 11,
+      "nome": "Saúvarco",
+      "min": 22,
+      "max": 24
+     },
+     {
+      "dex": 16,
+      "nome": "Boitatá",
+      "min": 20,
+      "max": 28
+     },
+     {
+      "dex": 178,
+      "nome": "Jequitibá",
+      "min": 18,
+      "max": 18
+     },
+     {
+      "dex": 195,
+      "nome": "Mandioca",
+      "min": 26,
+      "max": 26
+     },
+     {
+      "dex": 358,
+      "nome": "Tamanduão",
+      "min": 20,
+      "max": 26
+     },
+     {
+      "dex": 360,
+      "nome": "Preguiçoso",
+      "min": 20,
+      "max": 20
+     },
+     {
+      "dex": 362,
+      "nome": "Beija-Luz",
+      "min": 26,
+      "max": 26
+     },
+     {
+      "dex": 371,
+      "nome": "Zabumba",
+      "min": 24,
+      "max": 24
+     }
+    ]
+   }
+  },
+  "METEOR_FALLS_STEVENS_CAVE": {
+   "grama": {
+    "taxa": 10,
+    "criaturas": [
+     {
+      "dex": 123,
+      "nome": "Piranha",
+      "min": 33,
+      "max": 35
+     },
+     {
+      "dex": 127,
+      "nome": "Curimbatá",
+      "min": 39,
+      "max": 39
+     },
+     {
+      "dex": 128,
+      "nome": "Traíra",
+      "min": 35,
+      "max": 38
+     },
+     {
+      "dex": 130,
+      "nome": "Tucunaré",
+      "min": 37,
+      "max": 37
+     },
+     {
+      "dex": 131,
+      "nome": "Pacu",
+      "min": 40,
+      "max": 40
+     },
+     {
+      "dex": 134,
+      "nome": "Cascudo",
+      "min": 33,
+      "max": 35
+     },
+     {
+      "dex": 181,
+      "nome": "Vitóriarégia",
+      "min": 38,
+      "max": 38
+     },
+     {
+      "dex": 209,
+      "nome": "Estalactite",
+      "min": 40,
+      "max": 40
+     }
+    ]
+   }
+  }
+ },
+ "sprites": {
+  "exportados": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19,
+   20,
+   21,
+   22,
+   23,
+   24,
+   25,
+   26,
+   27,
+   28,
+   29,
+   30,
+   31,
+   32,
+   33,
+   34,
+   35,
+   36,
+   37,
+   38,
+   39,
+   40,
+   41,
+   42,
+   43,
+   44,
+   45,
+   46,
+   47,
+   48,
+   49,
+   50,
+   51,
+   52,
+   53,
+   54,
+   55,
+   56,
+   57,
+   58,
+   59,
+   60,
+   61,
+   62,
+   63,
+   64,
+   65,
+   66,
+   67,
+   68,
+   69,
+   70,
+   71,
+   72,
+   73,
+   74,
+   75,
+   76,
+   77,
+   78,
+   79,
+   80,
+   81,
+   82,
+   83,
+   84,
+   85,
+   86,
+   87,
+   88,
+   89,
+   90,
+   91,
+   92,
+   93,
+   94,
+   95,
+   96,
+   97,
+   98,
+   99,
+   100,
+   101,
+   102,
+   103,
+   104,
+   105,
+   106,
+   107,
+   108,
+   109,
+   110,
+   111,
+   112,
+   113,
+   114,
+   115,
+   116,
+   117,
+   118,
+   119,
+   120,
+   121,
+   122,
+   123,
+   124,
+   125,
+   126,
+   127,
+   128,
+   129,
+   130,
+   131,
+   132,
+   133,
+   134,
+   135,
+   136,
+   137,
+   138,
+   139,
+   140,
+   141,
+   142,
+   143,
+   144,
+   145,
+   146,
+   147,
+   148,
+   149,
+   150,
+   151,
+   152,
+   153,
+   154,
+   155,
+   156,
+   157,
+   158,
+   159,
+   160,
+   161,
+   162,
+   163,
+   164,
+   165,
+   166,
+   167,
+   168,
+   169,
+   170,
+   171,
+   172,
+   173,
+   174,
+   175,
+   176,
+   177,
+   178,
+   179,
+   180,
+   181,
+   182,
+   183,
+   184,
+   185,
+   186,
+   187,
+   188,
+   189,
+   190,
+   191,
+   192,
+   193,
+   194,
+   195,
+   196,
+   197,
+   198,
+   199,
+   200,
+   201,
+   202,
+   203,
+   204,
+   205,
+   206,
+   207,
+   208,
+   209,
+   210,
+   211,
+   212,
+   213,
+   214,
+   215,
+   216,
+   217,
+   218,
+   219,
+   220,
+   221,
+   222,
+   223,
+   224,
+   225,
+   226,
+   227,
+   228,
+   229,
+   230,
+   231,
+   232,
+   233,
+   234,
+   235,
+   236,
+   237,
+   238,
+   239,
+   240,
+   241,
+   242,
+   243,
+   244,
+   245,
+   246,
+   247,
+   248,
+   249,
+   250,
+   251,
+   252,
+   253,
+   254,
+   255,
+   256,
+   257,
+   258,
+   259,
+   260,
+   261,
+   262,
+   263,
+   264,
+   265,
+   266,
+   267,
+   268,
+   269,
+   270,
+   271,
+   272,
+   273,
+   274,
+   275,
+   276,
+   277,
+   278,
+   279,
+   280,
+   281,
+   282,
+   283,
+   284,
+   285,
+   286,
+   287,
+   288,
+   289,
+   290,
+   291,
+   292,
+   293,
+   294,
+   295,
+   296,
+   297,
+   298,
+   299,
+   300,
+   301,
+   302,
+   303,
+   304,
+   305,
+   306,
+   307,
+   308,
+   309,
+   310,
+   311,
+   312,
+   313,
+   314,
+   315,
+   316,
+   317,
+   318,
+   319,
+   320,
+   321,
+   322,
+   323,
+   324,
+   325,
+   326,
+   327,
+   328,
+   329,
+   330,
+   331,
+   332,
+   333,
+   334,
+   335,
+   336,
+   337,
+   338,
+   339,
+   340,
+   341,
+   342,
+   343,
+   344,
+   345,
+   346,
+   347,
+   348,
+   349,
+   350,
+   351,
+   352,
+   353,
+   354,
+   355,
+   356,
+   357,
+   358,
+   359,
+   360,
+   361,
+   362,
+   363,
+   364,
+   365,
+   366,
+   367,
+   368,
+   369,
+   370,
+   371,
+   372,
+   373,
+   374,
+   375,
+   376,
+   377,
+   378,
+   379,
+   380,
+   381,
+   382,
+   383,
+   384,
+   385,
+   386
+  ],
+  "sem_arte": []
+ }
+}
