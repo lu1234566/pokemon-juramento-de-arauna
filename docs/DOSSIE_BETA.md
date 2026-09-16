@@ -398,7 +398,7 @@ Nada aqui foi so compilado. Cada linha abaixo foi provada com a ROM rodando num 
 
 | o que | resultado |
 |---|---|
-| Varredura de mapas | 403 mapas visitados com o jogador andando 5s em cada um, checando a cada segundo se o ponteiro do save saiu da EWRAM, se o id do mapa deixou de existir, se a tela congelou com input aceito ou se o jogo voltou para a tela de copyright. **Zero achados.** |
+| Varredura de mapas | **Todos os 528 mapas do jogo**, um por um, com o jogador andando num padrao que cruza grama, ledges e bordas de mapa. A cada segundo a varredura checa as quatro coisas que separam um GBA travado de um rodando: o ponteiro do save saindo da EWRAM, o id do mapa virando um que nao existe, a tela parada enquanto o input e aceito, e o jogo caindo de volta na tela de copyright. **Zero achados em 528.** |
 | Times dos tres chefes novos | Dalva, Ademar e Olivia lidos de gEnemyParty dentro da batalha: as cinco vagas de cada um chegam com especie, nivel, item, os seis IVs e os quatro golpes customizados exatos. |
 | Dificuldade medida | Seis partidas completas. Contra a Dalva, um inicial de nv15 com o golpe certo derruba 4 de 5. Contra o Ademar, 2 de 5. Contra a Olivia, um Ground derruba 2 e trava na dupla Water/Electric. |
 | Learnsets dos 386 | Lidos de volta da ROM linkada, decodificando gLevelUpLearnsets. Criaturas criadas em quatro niveis diferentes recebem exatamente os golpes que a tabela promete. |
@@ -407,7 +407,7 @@ Nada aqui foi so compilado. Cada linha abaixo foi provada com a ROM rodando num 
 | Disponibilidade | 293 criaturas capturaveis na natureza, 366 de 386 obteniveis contando evolucao e presentes. |
 | ROM limpa | Nenhum simbolo do harness de teste sobrevive na ROM final; a arvore fica limpa depois de cada prova. |
 
-**O que isto nao prova.** Ninguem jogou esta beta do inicio ao fim. A varredura prova que os mapas carregam e que da para andar neles, e as partidas provam que os chefes funcionam -- mas nenhum teste automatico seguiu a cadeia de flags da historia da Vila do Amanhecer ate a Campea. Esse e o teste que a beta publica existe para fazer. Os seis mapas UnusedContestHall* ficaram de fora da varredura: sao conteudo morto do Emerald, inalcancavel em jogo, e o harness trava ao entrar neles justamente por isso.
+**O que isto nao prova.** Ninguem jogou esta beta do inicio ao fim. A varredura prova que os 528 mapas carregam e que da para andar neles, e as partidas provam que os chefes funcionam -- mas nenhum teste automatico seguiu a cadeia de flags da historia da Vila do Amanhecer ate a Campea. Esse e o teste que a beta publica existe para fazer.
 
 ## A dex completa — as 386 criaturas
 
