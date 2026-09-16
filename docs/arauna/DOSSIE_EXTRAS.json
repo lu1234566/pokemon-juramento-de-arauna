@@ -4,7 +4,7 @@
    "id": "ABILITY_FOGO_LEAL",
    "numero": 78,
    "nome": "LOYAL FLAME",
-   "descricao": ""
+   "descricao": "Ups fire, dragon; no burn."
   },
   {
    "id": "ABILITY_VIGIA_ALADO",
@@ -16,7 +16,7 @@
    "id": "ABILITY_BICO_GRANITO",
    "numero": 80,
    "nome": "GRANITE BEAK",
-   "descricao": ""
+   "descricao": "Ups rock; DEFENSE holds."
   },
   {
    "id": "ABILITY_COBRA_GRANDE",
@@ -154,7 +154,7 @@
    "id": "ABILITY_REI_DO_RIO",
    "numero": 103,
    "nome": "RIVER KING",
-   "descricao": ""
+   "descricao": "Ups water; never flinches."
   },
   {
    "id": "ABILITY_CASCO_ANTIGO",
@@ -178,13 +178,13 @@
    "id": "ABILITY_RESISTENCIA",
    "numero": 107,
    "nome": "ENDURANCE",
-   "descricao": ""
+   "descricao": "Stats hold; never flinches."
   },
   {
    "id": "ABILITY_MAR_SAGRADO",
    "numero": 108,
    "nome": "SACRED SEA",
-   "descricao": ""
+   "descricao": "Drinks water; rain ups it."
   },
   {
    "id": "ABILITY_ARCO_VIVO",
@@ -208,7 +208,7 @@
    "id": "ABILITY_ESSENCIA",
    "numero": 112,
    "nome": "ESSENCE",
-   "descricao": ""
+   "descricao": "Stats hold; ups dragon."
   }
  ],
  "golpes": [

@@ -44,17 +44,36 @@ def _strings(path: Path) -> dict[str, str]:
     os cola. Ler so a forma de uma linha devolve descricao vazia para os 27
     golpes novos, sem erro nenhum -- foi o que aconteceu na primeira versao.
 
-    Entao a leitura nao tenta casar a forma: pega tudo entre o `=` e o `;` e
-    tira de la todos os literais, o que cobre as duas.
+    Entao a leitura nao tenta casar a forma: vai do `=` ate o `;` que fecha a
+    declaracao, e tira de la todos os literais.
+
+    O `;` que fecha nao pode ser achado com uma busca nao-gulosa. Seis
+    descricoes de habilidade tem ponto e virgula **dentro do texto** -- "Ups
+    fire, dragon; no burn." -- e um `.*?;` para no primeiro, que esta no meio
+    da string. O resultado nao e erro: e descricao vazia, silenciosa, em
+    exatamente essas seis. Por isso o fim da declaracao e achado varrendo os
+    caracteres e contando aspas, que e a unica forma de saber se um `;` esta
+    dentro ou fora de um literal.
     """
     text = path.read_text(encoding="utf-8")
     out = {}
-    for block in re.finditer(
-            r"static const u8 (\w+)\[\]\s*=\s*(.*?);", text, re.S):
-        literais = re.findall(r'"((?:[^"\\]|\\.)*)"', block.group(2))
-        colado = "".join(literais)
-        out[block.group(1)] = (colado.replace("\\n", " ").replace("\\p", " ")
-                               .replace("\\l", " ").strip())
+    for inicio in re.finditer(r"static const u8 (\w+)\[\]\s*=", text):
+        posicao, dentro, escapado = inicio.end(), False, False
+        while posicao < len(text):
+            letra = text[posicao]
+            if escapado:
+                escapado = False
+            elif letra == "\\":
+                escapado = True
+            elif letra == '"':
+                dentro = not dentro
+            elif letra == ";" and not dentro:
+                break
+            posicao += 1
+        corpo = text[inicio.end():posicao]
+        colado = "".join(re.findall(r'"((?:[^"\\]|\\.)*)"', corpo))
+        out[inicio.group(1)] = (colado.replace("\\n", " ").replace("\\p", " ")
+                                .replace("\\l", " ").strip())
     return out
 
 
@@ -325,6 +344,20 @@ def main():
         "encontros": encounters(),
         "sprites": {"exportados": exportados, "sem_arte": faltando},
     }
+
+    # Descricao vazia nao e erro de leitura: e leitura que devolveu nada e
+    # seguiu em frente. Foi assim que os 27 golpes sairam em branco numa
+    # versao, e seis habilidades noutra -- as seis cujo texto tem ponto e
+    # virgula. Nas duas vezes o documento saiu bonito e errado. Aqui isso
+    # reprova.
+    mudos = ([("habilidade", a["nome"]) for a in data["habilidades"] if not a["descricao"]]
+             + [("golpe", m["nome"]) for m in data["golpes"] if not m["descricao"]])
+    if mudos:
+        print("descricao vazia em %d entradas -- nada foi escrito:" % len(mudos),
+              file=sys.stderr)
+        for tipo, nome in mudos:
+            print("  %s %s" % (tipo, nome), file=sys.stderr)
+        return 1
     text = markdown(data)
     if args.write:
         (ROOT / "docs/DOSSIE_EXTRAS.md").write_text(text + "\n", encoding="utf-8")

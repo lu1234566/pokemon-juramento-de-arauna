@@ -26,9 +26,9 @@ A descricao e exatamente a que aparece na tela de resumo do jogo.
 
 | # | habilidade | o que faz |
 |---:|---|---|
-| 78 | **LOYAL FLAME** |  |
+| 78 | **LOYAL FLAME** | Ups fire, dragon; no burn. |
 | 79 | **WINGED WATCH** | Ups water, bug if faster. |
-| 80 | **GRANITE BEAK** |  |
+| 80 | **GRANITE BEAK** | Ups rock; DEFENSE holds. |
 | 81 | **SERPENT COIL** | Tough while at full HP. |
 | 82 | **SUN CROWN** | Summons sunlight in battle. |
 | 83 | **MOON VEIL** | Blunts special hits in calm. |
@@ -51,16 +51,16 @@ A descricao e exatamente a que aparece na tela de resumo do jogo.
 | 100 | **LIVING WISH** | Heals itself and its ally. |
 | 101 | **OATH** | Raises SP. DEF on entry. |
 | 102 | **WATCHFIRE** | Burns on contact. |
-| 103 | **RIVER KING** |  |
+| 103 | **RIVER KING** | Ups water; never flinches. |
 | 104 | **OLD CARAPACE** | Its shell blunts weakness. |
 | 105 | **ABSOLUTE SUN** | Calls the sun on entry. |
 | 106 | **LONG NIGHT** | Lowers the foes' SP. ATK. |
-| 107 | **ENDURANCE** |  |
-| 108 | **SACRED SEA** |  |
+| 107 | **ENDURANCE** | Stats hold; never flinches. |
+| 108 | **SACRED SEA** | Drinks water; rain ups it. |
 | 109 | **RAINBOW ARC** | SPEED rises when hit hard. |
 | 110 | **TURNED FEET** | Status moves go first. |
 | 111 | **WHIRLWIND** | Confuses on contact. |
-| 112 | **ESSENCE** |  |
+| 112 | **ESSENCE** | Stats hold; ups dragon. |
 
 ## Os 27 golpes exclusivos
 
