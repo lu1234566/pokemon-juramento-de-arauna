@@ -23,6 +23,7 @@ aqui.
 from __future__ import annotations
 
 import argparse
+import hashlib
 import sys
 import zlib
 from pathlib import Path
@@ -163,6 +164,11 @@ def main() -> int:
     iguais = sum(n for a, _, n in runs(source, target) if a == SOURCE_READ)
     print("origem : %-42s %9d bytes  CRC32 %08X"
           % (origem.name, len(source), zlib.crc32(source)))
+    # O jogador precisa deste numero para saber se a copia dele serve. A ROM
+    # usada aqui vira a ROM obrigatoria para todo mundo: o BPS guarda o CRC32
+    # dela e o aplicador recusa qualquer outra.
+    print("         publique este MD5 da base: %s"
+          % hashlib.md5(source).hexdigest())
     print("alvo   : %-42s %9d bytes  CRC32 %08X"
           % (alvo.name, len(target), zlib.crc32(target)))
     # O CRC que o formato grava e o de tudo que vem antes dele, nao o do
