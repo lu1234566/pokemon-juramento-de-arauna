@@ -216,11 +216,11 @@ const u32 gTrainerPalette_MagmaAdmin[] = INCGFX_U32("graphics/trainers/front_pic
 const u32 gTrainerFrontPic_Wally[] = INCGFX_U32("graphics/trainers/front_pics/wally.png", ".4bpp.lz");
 const u32 gTrainerPalette_Wally[] = INCGFX_U32("graphics/trainers/palettes/wally.pal", ".gbapal.lz");
 
-const u32 gTrainerFrontPic_Brendan[] = INCGFX_U32("graphics/trainers/front_pics/brendan.png", ".4bpp.lz");
-const u32 gTrainerPalette_Brendan[] = INCGFX_U32("graphics/trainers/palettes/brendan.pal", ".gbapal.lz");
+const u32 gTrainerFrontPic_Brendan[] = INCGFX_U32("graphics/trainers/front_pics/protagonist_m.png", ".4bpp.lz");
+const u32 gTrainerPalette_Brendan[] = INCGFX_U32("graphics/trainers/palettes/protagonist_m.pal", ".gbapal.lz");
 
-const u32 gTrainerFrontPic_May[] = INCGFX_U32("graphics/trainers/front_pics/may.png", ".4bpp.lz");
-const u32 gTrainerPalette_May[] = INCGFX_U32("graphics/trainers/palettes/may.pal", ".gbapal.lz");
+const u32 gTrainerFrontPic_May[] = INCGFX_U32("graphics/trainers/front_pics/protagonist_f.png", ".4bpp.lz");
+const u32 gTrainerPalette_May[] = INCGFX_U32("graphics/trainers/palettes/protagonist_f.pal", ".gbapal.lz");
 
 const u32 gTrainerFrontPic_BugCatcher[] = INCGFX_U32("graphics/trainers/front_pics/bug_catcher.png", ".4bpp.lz");
 const u32 gTrainerPalette_BugCatcher[] = INCGFX_U32("graphics/trainers/front_pics/bug_catcher.png", ".gbapal.lz");
@@ -282,8 +282,8 @@ const u32 gTrainerPalette_RubySapphireBrendan[] = INCGFX_U32("graphics/trainers/
 const u32 gTrainerFrontPic_RubySapphireMay[] = INCGFX_U32("graphics/trainers/front_pics/may_rs.png", ".4bpp.lz");
 const u32 gTrainerPalette_RubySapphireMay[] = INCGFX_U32("graphics/trainers/palettes/may_rs.pal", ".gbapal.lz");
 
-const u8 gTrainerBackPic_Brendan[] = INCGFX_U8("graphics/trainers/back_pics/brendan.png", ".4bpp");
-const u8 gTrainerBackPic_May[] = INCGFX_U8("graphics/trainers/back_pics/may.png", ".4bpp");
+const u8 gTrainerBackPic_Brendan[] = INCGFX_U8("graphics/trainers/back_pics/protagonist_m.png", ".4bpp");
+const u8 gTrainerBackPic_May[] = INCGFX_U8("graphics/trainers/back_pics/protagonist_f.png", ".4bpp");
 const u8 gTrainerBackPic_Red[] = INCGFX_U8("graphics/trainers/back_pics/red.png", ".4bpp");
 const u8 gTrainerBackPic_Leaf[] = INCGFX_U8("graphics/trainers/back_pics/leaf.png", ".4bpp");
 const u8 gTrainerBackPic_RubySapphireBrendan[] = INCGFX_U8("graphics/trainers/back_pics/brendan_rs.png", ".4bpp");

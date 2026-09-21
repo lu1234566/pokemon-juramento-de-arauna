@@ -257,12 +257,13 @@
       "palette_slot": "PALSLOT_NPC_SPECIAL",
       "phase": "1",
       "graphics_info_shared_with": "CIRO F1 MIRROR",
-      "front": "graphics/trainers/front_pics/brendan.png",
-      "trainer_pic": "TRAINER_PIC_BRENDAN",
-      "trainer_pic_index": 13,
+      "front": "graphics/trainers/front_pics/ciro_fase1.png",
+      "trainer_pic": "TRAINER_PIC_CIRO_FASE1",
+      "trainer_pic_index": 94,
       "same_slot_safe_with": {
         "ELIAS": "Audited: never on screen together. ELIAS is hidden behind FLAG_HIDE_PLAYERS_HOUSE_DAD, which nothing clears until hall_of_fame.inc, and the rival's ground-floor object is hidden at new game and never shown again."
-      }
+      },
+      "front_split_note": "O retrato de batalha nao e mais o do jogador. CIRO foi separado dos slots TRAINER_PIC_BRENDAN/MAY e tem os seus proprios; o lote 09 repontou os do jogador para protagonist_m/f, e os dois nao se encontram mais."
     },
     {
       "name": "CIRO F1 MIRROR",
@@ -279,12 +280,13 @@
       "phase": "1",
       "palette_slot_reason": "The engine picks the rival graphic opposite the player's gender, so CIRO occupies both rival slots with one design and one palette. Only one of the two is ever spawned, so the shared tag never contends.",
       "graphics_info_shared_with": "CIRO F1",
-      "front": "graphics/trainers/front_pics/may.png",
-      "trainer_pic": "TRAINER_PIC_MAY",
-      "trainer_pic_index": 14,
+      "front": "graphics/trainers/front_pics/ciro_fase1.png",
+      "trainer_pic": "TRAINER_PIC_CIRO_FASE1",
+      "trainer_pic_index": 94,
       "same_slot_safe_with": {
         "ELIAS": "Audited: never on screen together. ELIAS is hidden behind FLAG_HIDE_PLAYERS_HOUSE_DAD, which nothing clears until hall_of_fame.inc, and the rival's ground-floor object is hidden at new game and never shown again."
-      }
+      },
+      "front_split_note": "O retrato de batalha nao e mais o do jogador. CIRO foi separado dos slots TRAINER_PIC_BRENDAN/MAY e tem os seus proprios; o lote 09 repontou os do jogador para protagonist_m/f, e os dois nao se encontram mais."
     },
     {
       "name": "CIRO F2",
@@ -720,13 +722,16 @@
         "walking.png",
         "running.png"
       ],
-      "status": "PARTIAL",
-      "note": "Both sheets of this state share one 16-colour bank, and the approved conversion quantised walking and running separately: 29 distinct colours across the pair, against a hardware ceiling of 16. No shared palette can represent both without changing pixels, so the state is not integrable until PixelLab re-exports the pair against one palette.",
+      "status": "READY",
+      "note": "Walking and running use one shared 16-entry player palette. Nine 16x32 frames per sheet, standing bodies y10..30; engine order and horizontal mirroring retained.",
       "arauna_source": [
-        "02_gba_overworld_candidates/Protagonista_M/{walking,running}.png",
-        "02_gba_overworld_candidates/Protagonista_F/{walking,running}.png"
+        "graphics/object_events/pics/people/protagonist_m/walking.png",
+        "graphics/object_events/pics/people/protagonist_m/running.png",
+        "graphics/object_events/pics/people/protagonist_f/walking.png",
+        "graphics/object_events/pics/people/protagonist_f/running.png"
       ],
-      "blocked_by": "walking and running do not share a palette"
+      "asset_batch": "Arauna Lote09",
+      "runtime_tested": false
     },
     {
       "state": "MACH_BIKE",
@@ -735,8 +740,14 @@
       "sheets": [
         "mach_bike.png"
       ],
-      "status": "MISSING",
-      "note": "No Arauna art exists for this state in any approved package."
+      "status": "READY",
+      "note": "Nine riding frames; same visual bicycle as the ordinary Acro cycle, with the original Mach runtime movement.",
+      "asset_batch": "Arauna Lote09",
+      "runtime_tested": false,
+      "arauna_source": [
+        "graphics/object_events/pics/people/protagonist_m/mach_bike.png",
+        "graphics/object_events/pics/people/protagonist_f/mach_bike.png"
+      ]
     },
     {
       "state": "ACRO_BIKE",
@@ -745,8 +756,14 @@
       "sheets": [
         "acro_bike.png"
       ],
-      "status": "MISSING",
-      "note": "No Arauna art exists for this state in any approved package."
+      "status": "READY",
+      "note": "27 frames: ordinary riding plus direction-specific rear/front wheel balance, hopping and moving-wheelie poses. Corrected west-facing wheel geometry.",
+      "asset_batch": "Arauna Lote09",
+      "runtime_tested": false,
+      "arauna_source": [
+        "graphics/object_events/pics/people/protagonist_m/acro_bike.png",
+        "graphics/object_events/pics/people/protagonist_f/acro_bike.png"
+      ]
     },
     {
       "state": "SURFING",
@@ -755,8 +772,14 @@
       "sheets": [
         "surfing.png"
       ],
-      "status": "MISSING",
-      "note": "No Arauna art exists for this state in any approved package. The surf blob is FLDEFFOBJ_SURF_BLOB, a separate sprite; this sheet holds the rider only."
+      "status": "READY",
+      "note": "Six rider-only frames; native engine pic-table aliases retained. FLDEFFOBJ_SURF_BLOB remains the separate surf mount.",
+      "asset_batch": "Arauna Lote09",
+      "runtime_tested": false,
+      "arauna_source": [
+        "graphics/object_events/pics/people/protagonist_m/surfing.png",
+        "graphics/object_events/pics/people/protagonist_f/surfing.png"
+      ]
     },
     {
       "state": "UNDERWATER",
@@ -765,8 +788,14 @@
       "sheets": [
         "underwater.png"
       ],
-      "status": "MISSING",
-      "note": "No Arauna art exists for this state in any approved package. Both genders share graphics/object_events/palettes/player_underwater.pal, so the two sheets must be drawn against one palette."
+      "status": "READY",
+      "note": "Four 32x32 frames for each gender, with an integrated underwater mount and exactly one shared player_underwater.pal bank. Engine uses three directions and horizontal mirroring.",
+      "asset_batch": "Arauna Lote09",
+      "runtime_tested": false,
+      "arauna_source": [
+        "graphics/object_events/pics/people/protagonist_m/underwater.png",
+        "graphics/object_events/pics/people/protagonist_f/underwater.png"
+      ]
     },
     {
       "state": "FIELD_MOVE",
@@ -775,8 +804,14 @@
       "sheets": [
         "field_move.png"
       ],
-      "status": "MISSING",
-      "note": "No Arauna art exists for this state in any approved package. One five-frame south-facing throw, used by every field move: Cut, Rock Smash, Strength, Secret Power, Dig, Teleport, Sweet Scent, Waterfall, Dive and Flash."
+      "status": "READY",
+      "note": "Five distinct south-facing item gestures for the existing shared field-move animation.",
+      "asset_batch": "Arauna Lote09",
+      "runtime_tested": false,
+      "arauna_source": [
+        "graphics/object_events/pics/people/protagonist_m/field_move.png",
+        "graphics/object_events/pics/people/protagonist_f/field_move.png"
+      ]
     },
     {
       "state": "FISHING",
@@ -785,8 +820,14 @@
       "sheets": [
         "fishing.png"
       ],
-      "status": "MISSING",
-      "note": "No Arauna art exists for this state in any approved package. Rod and line are drawn inside these frames; there is no separate rod field effect."
+      "status": "READY",
+      "note": "Twelve frames: west 0..3, north 4..7, south 8..11. Rods and short lines are embedded; no separate fishing-rod effect.",
+      "asset_batch": "Arauna Lote09",
+      "runtime_tested": false,
+      "arauna_source": [
+        "graphics/object_events/pics/people/protagonist_m/fishing.png",
+        "graphics/object_events/pics/people/protagonist_f/fishing.png"
+      ]
     },
     {
       "state": "WATERING",
@@ -795,8 +836,14 @@
       "sheets": [
         "watering.png"
       ],
-      "status": "MISSING",
-      "note": "No Arauna art exists for this state in any approved package."
+      "status": "READY",
+      "note": "Six frames: hold/pour south, north and west; original nine-entry pic-table aliases retained.",
+      "asset_batch": "Arauna Lote09",
+      "runtime_tested": false,
+      "arauna_source": [
+        "graphics/object_events/pics/people/protagonist_m/watering.png",
+        "graphics/object_events/pics/people/protagonist_f/watering.png"
+      ]
     },
     {
       "state": "DECORATING",
@@ -805,35 +852,73 @@
       "sheets": [
         "decorating.png"
       ],
-      "status": "MISSING",
-      "note": "No Arauna art exists for this state in any approved package. Still reachable: src/decoration.c creates this sprite in the Secret Base decoration placement screen."
+      "status": "READY",
+      "note": "One stationary west-facing 16x32 frame, sourced from walking frame2; existing Secret Base decoration state and palette slot retained.",
+      "asset_batch": "Arauna Lote09",
+      "runtime_tested": false,
+      "arauna_source": [
+        "graphics/object_events/pics/people/protagonist_m/decorating.png",
+        "graphics/object_events/pics/people/protagonist_f/decorating.png"
+      ]
     }
   ],
   "protagonist_battle_surfaces": [
     {
       "surface": "TRAINER_BACK",
-      "male": "graphics/trainers/back_pics/brendan.png",
-      "female": "graphics/trainers/back_pics/may.png",
-      "status": "MISSING",
-      "note": "The battle back sprite with its Poke Ball throw. Not the overworld back-facing walk frame, and not covered by any approved package."
+      "male": "graphics/trainers/back_pics/protagonist_m.png",
+      "female": "graphics/trainers/back_pics/protagonist_f.png",
+      "status": "READY",
+      "note": "Arauna protagonist artwork. Front and all four back frames share the exact same 16-entry trainer palette; original trainer IDs, throw timings and Ciro separation retained.",
+      "asset_batch": "Arauna Lote09",
+      "runtime_tested": false
     },
     {
       "surface": "TRAINER_FRONT",
-      "male": "graphics/trainers/front_pics/brendan.png",
-      "female": "graphics/trainers/front_pics/may.png",
-      "status": "MISSING",
-      "note": "Required: the gender-select screen, the trainer card, Match Call and every facility that resolves FACILITY_CLASS_BRENDAN/MAY through gFacilityClassToPicIndex. The approved battle_pose_reference.png is marked intended_for_battle=False and is reference only."
+      "male": "graphics/trainers/front_pics/protagonist_m.png",
+      "female": "graphics/trainers/front_pics/protagonist_f.png",
+      "status": "READY",
+      "note": "Arauna protagonist artwork. Front and all four back frames share the exact same 16-entry trainer palette; original trainer IDs, throw timings and Ciro separation retained.",
+      "asset_batch": "Arauna Lote09",
+      "runtime_tested": false
     }
   ],
-  "_protagonist_comment": [
-    "Player avatar states. Unlike the characters above, a player state is not",
-    "one 144x32 sheet: each has its own frame size, pic table and animation",
-    "table, and NORMAL alone spans two sheets sharing a single palette.",
-    "",
-    "status is asset readiness, never a claim about the tree: READY means the",
-    "Arauna art is installed and wired, PARTIAL means art exists but cannot be",
-    "used as delivered, MISSING means no approved art exists. Anything not",
-    "READY must still be wired to the inherited Emerald art -- a state half in",
-    "Arauna and half in Brendan/May is the one outcome worse than waiting."
-  ]
+  "_protagonist_comment": "Lote09 replaces all nine avatar states, front/back trainer surfaces and intro/credits actor art. READY means native files and static wiring validated; ROM/emulator review remains pending.",
+  "protagonist_cinematic_surfaces": [
+    {
+      "surface": "intro",
+      "status": "READY",
+      "male": "graphics/intro/scene_2/protagonist_m_intro.png",
+      "female": "graphics/intro/scene_2/protagonist_f_intro.png",
+      "frame_size": [
+        64,
+        64
+      ],
+      "frames": 4,
+      "shared_palette": "graphics/intro/scene_2/arauna_player.pal",
+      "runtime_tested": false
+    },
+    {
+      "surface": "credits",
+      "status": "READY",
+      "male": "graphics/intro/scene_2/protagonist_m_credits.png",
+      "female": "graphics/intro/scene_2/protagonist_f_credits.png",
+      "frame_size": [
+        64,
+        64
+      ],
+      "frames": 7,
+      "shared_palette": "graphics/intro/scene_2/arauna_player.pal",
+      "runtime_tested": false
+    }
+  ],
+  "protagonist_cinematic_bicycle": {
+    "path": "graphics/intro/scene_2/arauna_bicycle.png",
+    "frame_size": [
+      64,
+      32
+    ],
+    "frames": 4,
+    "palette": "shared with rider",
+    "runtime_tested": false
+  }
 }

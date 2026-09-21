@@ -108,7 +108,7 @@ def main() -> int:
         images = field(body, "images")
         m = re.search(rf"{re.escape(images or '')}\[\]\s*=\s*\{{(.*?)\n\}};",
                       pic_src, re.S)
-        pics = re.findall(r"overworld_frame\((\w+),", m.group(1)) if m else []
+        pics = re.findall(r"(?:overworld_frame|obj_frame_tiles)\((\w+)[,)]", m.group(1)) if m else []
         files = []
         for pic in dict.fromkeys(pics):
             d = re.search(rf"\b{pic}\[\]\s*=\s*INCGFX_U32\(\"([^\"]+)\"", decl)
