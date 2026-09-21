@@ -114,6 +114,7 @@
     {
       "name": "CECILIA",
       "surfaces": [
+        "front",
         "overworld"
       ],
       "trainer_pic": "TRAINER_PIC_LEADER_TATE_AND_LIZA",
@@ -130,6 +131,7 @@
     {
       "name": "CAETANO",
       "surfaces": [
+        "front",
         "overworld"
       ],
       "trainer_pic": "TRAINER_PIC_LEADER_TATE_AND_LIZA",
