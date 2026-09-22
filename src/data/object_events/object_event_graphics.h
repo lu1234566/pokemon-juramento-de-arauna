@@ -126,6 +126,7 @@ const u32 gObjectEventPic_Woman4[] = INCGFX_U32("graphics/object_events/pics/peo
 const u32 gObjectEventPic_Cook[] = INCGFX_U32("graphics/object_events/pics/people/cook.png", ".4bpp", "-mwidth 2 -mheight 4");
 const u32 gObjectEventPic_LinkReceptionist[] = INCGFX_U32("graphics/object_events/pics/people/link_receptionist.png", ".4bpp", "-mwidth 2 -mheight 4");
 const u16 gObjectEventPal_RecepcionistaLink[] = INCGFX_U16("graphics/object_events/palettes/recepcionista_link.pal", ".gbapal");
+const u16 gObjectEventPal_DonaZila[] = INCGFX_U16("graphics/object_events/palettes/dona_zila.pal", ".gbapal");
 const u32 gObjectEventPic_OldMan[] = INCGFX_U32("graphics/object_events/pics/people/old_man.png", ".4bpp", "-mwidth 2 -mheight 4");
 const u32 gObjectEventPic_OldWoman[] = INCGFX_U32("graphics/object_events/pics/people/old_woman.png", ".4bpp", "-mwidth 2 -mheight 4");
 const u32 gObjectEventPic_Camper[] = INCGFX_U32("graphics/object_events/pics/people/camper.png", ".4bpp", "-mwidth 2 -mheight 4");

@@ -350,6 +350,25 @@ def main() -> int:
         check(len(set(fronts)) == len(fronts),
               "no two Circuit Masters share a front file")
 
+    # ---- the written-down pic numbers are the real ones ----------------
+    # Nothing in the build reads these numbers, which is exactly why they
+    # drift: seven of them were wrong at once, all in the story-cast block,
+    # and the next package to trust them would have put someone else's
+    # portrait on a character. Cheap to check, so check it.
+    pic_value = dict(re.findall(r"#define\s+(TRAINER_(?:BACK_)?PIC_\w+)\s+(\d+)",
+                                trainers_h))
+    wrong = []
+    for c in cast:
+        for name_key, index_key in (("trainer_pic", "trainer_pic_index"),
+                                    ("trainer_back_pic", "trainer_back_pic_index")):
+            if name_key in c and index_key in c:
+                real = pic_value.get(c[name_key])
+                if real is None or int(real) != c[index_key]:
+                    wrong.append("%s %s=%s (real %s)"
+                                 % (c["name"], c[name_key], c[index_key], real))
+    check(not wrong, "every trainer pic number in the manifest is the real one",
+          "; ".join(wrong) if wrong else "%d checked" % len(pic_value))
+
     # Silver and Gold pick different parties and different words. They must not
     # pick a different person: these three read sFrontierBrainTrainerIds by
     # facility alone, and a symbol lookup creeping in here is what would make

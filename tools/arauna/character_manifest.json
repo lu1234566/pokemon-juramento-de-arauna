@@ -337,7 +337,7 @@
       "palette_slot_reason": "PetalburgCity_Gym_OnTransition parks ELIAS at 4,107 while VAL stands at 4,111 in the same entrance room, so the two are on screen together and ELIAS holds the first special bank.",
       "front": "graphics/trainers/front_pics/wally.png",
       "trainer_pic": "TRAINER_PIC_WALLY",
-      "trainer_pic_index": 57
+      "trainer_pic_index": 70
     },
     {
       "name": "VAL EVOLUIDO",
@@ -363,7 +363,7 @@
       ],
       "front": "graphics/trainers/front_pics/aqua_admin_m.png",
       "trainer_pic": "TRAINER_PIC_AQUA_ADMIN_M",
-      "trainer_pic_index": 32,
+      "trainer_pic_index": 10,
       "object_event": "OBJ_EVENT_GFX_ADMIN_CAMPO",
       "graphics_info": "UnusedPikachuDoll",
       "overworld": "graphics/object_events/pics/people/arauna/admin_field.png",
@@ -386,7 +386,7 @@
       "palette_slot": "PALSLOT_NPC_SPECIAL",
       "front": "graphics/trainers/front_pics/aqua_admin_f.png",
       "trainer_pic": "TRAINER_PIC_AQUA_ADMIN_F",
-      "trainer_pic_index": 33
+      "trainer_pic_index": 12
     },
     {
       "name": "OTACILIO",
@@ -396,7 +396,7 @@
       ],
       "front": "graphics/trainers/front_pics/aqua_leader_archie.png",
       "trainer_pic": "TRAINER_PIC_AQUA_LEADER_ARCHIE",
-      "trainer_pic_index": 30,
+      "trainer_pic_index": 13,
       "object_event": "OBJ_EVENT_GFX_ARCHIE",
       "graphics_info": "Archie",
       "overworld": "graphics/object_events/pics/people/team_aqua/archie.png",
@@ -413,7 +413,7 @@
       ],
       "front": "graphics/trainers/front_pics/magma_leader_maxie.png",
       "trainer_pic": "TRAINER_PIC_MAGMA_LEADER_MAXIE",
-      "trainer_pic_index": 31,
+      "trainer_pic_index": 76,
       "object_event": "OBJ_EVENT_GFX_MAXIE",
       "graphics_info": "Maxie",
       "overworld": "graphics/object_events/pics/people/team_magma/maxie.png",
@@ -429,7 +429,7 @@
       ],
       "front": "graphics/trainers/front_pics/magma_admin.png",
       "trainer_pic": "TRAINER_PIC_MAGMA_ADMIN",
-      "trainer_pic_index": 34,
+      "trainer_pic_index": 69,
       "object_event": "OBJ_EVENT_GFX_VAR_B",
       "virtual_graphics_id": "ARAUNA_VIRTUAL_GFX_RAUL",
       "graphics_info": "Raul",
@@ -444,17 +444,43 @@
       "name": "BENTO",
       "surfaces": [
         "front",
+        "back",
         "overworld"
       ],
       "front": "graphics/trainers/front_pics/steven.png",
       "trainer_pic": "TRAINER_PIC_STEVEN",
-      "trainer_pic_index": 61,
+      "trainer_pic_index": 81,
+      "back": "graphics/trainers/back_pics/steven.png",
+      "trainer_back_pic": "TRAINER_BACK_PIC_STEVEN",
+      "trainer_back_pic_index": 7,
+      "back_palette_source": "graphics/trainers/front_pics/steven.png",
+      "back_palette_reason": "gTrainerBackPicPaletteTable gives TRAINER_BACK_PIC_STEVEN the front pic's palette, so the back sheet has to be indexed against front_pics/steven.png and not against a palette of its own.",
+      "back_frames": 4,
       "object_event": "OBJ_EVENT_GFX_STEVEN",
       "graphics_info": "Steven",
       "overworld": "graphics/object_events/pics/people/steven.png",
       "overworld_palette": "graphics/object_events/palettes/bento.pal",
       "palette_tag": "OBJ_EVENT_PAL_TAG_BENTO",
-      "palette_slot": "ARAUNA_EXCLUSIVE_POOL"
+      "palette_slot": "ARAUNA_EXCLUSIVE_POOL",
+      "additional_overworld_maps": [
+        "BattleFrontier_ReceptionGate",
+        "BattleFrontier_ScottsHouse",
+        "EverGrandeCity_PokemonCenter_1F",
+        "FallarborTown_BattleTentLobby",
+        "LilycoveCity_CoveLilyMotel_2F",
+        "MauvilleCity",
+        "MossdeepCity",
+        "PetalburgCity",
+        "Route119",
+        "RustboroCity_PokemonSchool",
+        "SSTidalCorridor",
+        "SlateportCity",
+        "VerdanturfTown_BattleTentLobby"
+      ],
+      "additional_overworld_reason": "Both STEVEN and SCOTT were renamed to BENTO, so the inherited Scott objects are him as well. The lote named three of them; all thirteen were swapped, because all thirteen share the same VAR_SCOTT_STATE counter and eleven name MR. BENTO in text the object's own script reaches. PetalburgCity is his unnamed first meeting and Route119 calls him TRAVELER -- see scott_scenes_wording. OBJ_EVENT_GFX_SCOTT is now unused by any map, so no Hoenn Scott pixel is left on screen.",
+      "scott_scenes_wording": "Route119_Text_ScottWayToGoBeSeeingYou addresses him as TRAVELER while every other scene of the same counter says BENTO. The art is now his either way; the wording is still the author's call.",
+      "additional_overworld_palette_check": "Pooled palette demand recomputed per map with the swap applied: the worst case is MossdeepCity and SlateportCity at 3 of a budget of 6.",
+      "asset_batch": "Arauna Lote06"
     },
     {
       "name": "MAIRA",
@@ -711,6 +737,23 @@
       "palette_slot_reason": "Dedicated palette in the existing allocator; retains PALSLOT_NPC_3 as fallback. Shared npc_3/npc_4 palettes are unchanged.",
       "asset_batch": "Arauna Lote03",
       "runtime_tested": true
+    },
+    {
+      "name": "DONA ZILA",
+      "kind": "civilian NPC",
+      "surfaces": [
+        "overworld"
+      ],
+      "object_event": "OBJ_EVENT_GFX_DONA_ZILA",
+      "graphics_info": "UnusedNatuDoll",
+      "overworld": "graphics/object_events/pics/people/dona_zila.png",
+      "overworld_palette": "graphics/object_events/palettes/dona_zila.pal",
+      "palette_tag": "OBJ_EVENT_PAL_TAG_DONA_ZILA",
+      "palette_slot": "PALSLOT_NPC_SPECIAL",
+      "palette_slot_reason": "MtPyre_Summit has no other fixed special-slot object: the old man keeps NPC_4, and Otacilio, Luzia and the Horizonte grunts all draw from the exclusive pool.",
+      "graphics_id_reason": "Existing OBJ_EVENT_GFX_DONA_ZILA alias of OBJ_EVENT_GFX_UNUSED_NATU_DOLL, whose graphics info she is the only user of. No object id added and no generic old-woman graphic replaced.",
+      "asset_batch": "Arauna Lote06",
+      "runtime_tested": false
     }
   ],
   "protagonist_states": [

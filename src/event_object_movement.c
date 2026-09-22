@@ -594,6 +594,11 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 
 #define OBJ_EVENT_PAL_TAG_MAE_PROTAGONISTA          0x11D2
 #define OBJ_EVENT_PAL_TAG_RECEPCIONISTA_LINK        0x11D3
+// Dona Zila rides the unused-doll graphics alias at Mt Pyre. The 0x11D4 gap is
+// left on purpose: the sprite packages reserve it, and renumbering a tag that
+// someone else's package already wrote down is how two characters end up
+// sharing one palette.
+#define OBJ_EVENT_PAL_TAG_DONA_ZILA                 0x11D5
 
 #define OBJ_EVENT_PAL_TAG_NONE                    0x11FF
 
@@ -696,6 +701,7 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_LembranteF,       OBJ_EVENT_PAL_TAG_LEMBRANTE_F},
     {gObjectEventPal_MaeProtagonista,  OBJ_EVENT_PAL_TAG_MAE_PROTAGONISTA},
     {gObjectEventPal_RecepcionistaLink, OBJ_EVENT_PAL_TAG_RECEPCIONISTA_LINK},
+    {gObjectEventPal_DonaZila,          OBJ_EVENT_PAL_TAG_DONA_ZILA},
     // The redrawn Arauna creatures. These used to sit inside an #ifdef
     // BUGFIX that is switched off, so none of them was compiled in and
     // FindObjectEventPaletteIndexByTag walked off the end of the table
