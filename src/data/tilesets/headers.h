@@ -1082,3 +1082,29 @@ const struct Tileset gTileset_AraunaMissoesCeuV2 =
     .callback = InitTilesetAnim_Mossdeep,
 };
 // MISSOES_CEU_V2_END
+
+// AGUAS_MBOI_V2_BEGIN
+const struct Tileset gTileset_AraunaAguasMBoiV2 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaAguasMBoiV2,
+    .palettes = gTilesetPalettes_AraunaAguasMBoiV2,
+    .metatiles = gMetatiles_AraunaAguasMBoiV2,
+    .metatileAttributes = gMetatileAttributes_AraunaAguasMBoiV2,
+    .callback = InitTilesetAnim_Sootopolis,
+};
+// AGUAS_MBOI_V2_END
+
+// CASA_FOGUEIRA_V2_BEGIN
+const struct Tileset gTileset_AraunaCasaFogueiraV2 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaCasaFogueiraV2,
+    .palettes = gTilesetPalettes_AraunaCasaFogueiraV2,
+    .metatiles = gMetatiles_AraunaCasaFogueiraV2,
+    .metatileAttributes = gMetatileAttributes_AraunaCasaFogueiraV2,
+    .callback = InitTilesetAnim_Pacifidlog,
+};
+// CASA_FOGUEIRA_V2_END

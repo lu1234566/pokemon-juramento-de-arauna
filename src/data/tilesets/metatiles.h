@@ -280,3 +280,13 @@ const u16 gMetatileAttributes_AraunaBaiaLuzesV2[] = INCBIN_U16("data/tilesets/se
 const u16 gMetatiles_AraunaMissoesCeuV2[] = INCBIN_U16("data/tilesets/secondary/arauna_missoes_ceu_v2/metatiles.bin");
 const u16 gMetatileAttributes_AraunaMissoesCeuV2[] = INCBIN_U16("data/tilesets/secondary/arauna_missoes_ceu_v2/metatile_attributes.bin");
 // MISSOES_CEU_V2_END
+
+// AGUAS_MBOI_V2_BEGIN
+const u16 gMetatiles_AraunaAguasMBoiV2[] = INCBIN_U16("data/tilesets/secondary/arauna_aguas_mboi_v2/metatiles.bin");
+const u16 gMetatileAttributes_AraunaAguasMBoiV2[] = INCBIN_U16("data/tilesets/secondary/arauna_aguas_mboi_v2/metatile_attributes.bin");
+// AGUAS_MBOI_V2_END
+
+// CASA_FOGUEIRA_V2_BEGIN
+const u16 gMetatiles_AraunaCasaFogueiraV2[] = INCBIN_U16("data/tilesets/secondary/arauna_casa_fogueira_v2/metatiles.bin");
+const u16 gMetatileAttributes_AraunaCasaFogueiraV2[] = INCBIN_U16("data/tilesets/secondary/arauna_casa_fogueira_v2/metatile_attributes.bin");
+// CASA_FOGUEIRA_V2_END
