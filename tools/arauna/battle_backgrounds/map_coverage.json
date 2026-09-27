@@ -1,0 +1,62 @@
+[
+  {
+    "map": "MAP_RUSTBORO_CITY_GYM",
+    "background": "G01"
+  },
+  {
+    "map": "MAP_DEWFORD_TOWN_GYM",
+    "background": "G02"
+  },
+  {
+    "map": "MAP_MAUVILLE_CITY_GYM",
+    "background": "G03"
+  },
+  {
+    "map": "MAP_LAVARIDGE_TOWN_GYM_1F",
+    "background": "G04"
+  },
+  {
+    "map": "MAP_LAVARIDGE_TOWN_GYM_B1F",
+    "background": "G04"
+  },
+  {
+    "map": "MAP_PETALBURG_CITY_GYM",
+    "background": "G05"
+  },
+  {
+    "map": "MAP_FORTREE_CITY_GYM",
+    "background": "G06"
+  },
+  {
+    "map": "MAP_MOSSDEEP_CITY_GYM",
+    "background": "G07"
+  },
+  {
+    "map": "MAP_SOOTOPOLIS_CITY_GYM_1F",
+    "background": "G08"
+  },
+  {
+    "map": "MAP_SOOTOPOLIS_CITY_GYM_B1F",
+    "background": "G08"
+  },
+  {
+    "map": "MAP_EVER_GRANDE_CITY_SIDNEYS_ROOM",
+    "background": "E01"
+  },
+  {
+    "map": "MAP_EVER_GRANDE_CITY_PHOEBES_ROOM",
+    "background": "E02"
+  },
+  {
+    "map": "MAP_EVER_GRANDE_CITY_GLACIAS_ROOM",
+    "background": "E03"
+  },
+  {
+    "map": "MAP_EVER_GRANDE_CITY_DRAKES_ROOM",
+    "background": "E04"
+  },
+  {
+    "map": "MAP_EVER_GRANDE_CITY_CHAMPIONS_ROOM",
+    "background": "C01"
+  }
+]

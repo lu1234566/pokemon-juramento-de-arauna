@@ -24,6 +24,7 @@
 #include "constants/rgb.h"
 #include "constants/songs.h"
 #include "constants/trainers.h"
+#include "constants/opponents.h"
 
 struct BattleBackground
 {
@@ -33,6 +34,8 @@ struct BattleBackground
     const void *entryTilemap;
     const void *palette;
 };
+
+#include "data/arauna_battle_backgrounds.h"
 
 // .rodata
 static const u16 sUnrefArray[] = {0x0300, 0x0000}; //OamData?
@@ -759,6 +762,15 @@ void LoadBattleMenuWindowGfx(void)
 
 void DrawMainBattleBackground(void)
 {
+    const struct BattleBackground *arauna = GetAraunaBattleBackground();
+    if (arauna != NULL)
+    {
+        LZDecompressVram(arauna->tileset, (void *)BG_CHAR_ADDR(2));
+        LZDecompressVram(arauna->tilemap, (void *)BG_SCREEN_ADDR(26));
+        LoadCompressedPalette(arauna->palette, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+        return;
+    }
+
     if (gBattleTypeFlags & (BATTLE_TYPE_LINK | BATTLE_TYPE_FRONTIER | BATTLE_TYPE_EREADER_TRAINER | BATTLE_TYPE_RECORDED_LINK))
     {
         LZDecompressVram(gBattleEnvironmentTiles_Building, (void *)(BG_CHAR_ADDR(2)));
@@ -1123,6 +1135,14 @@ void InitLinkBattleVsScreen(u8 taskId)
 
 void DrawBattleEntryBackground(void)
 {
+    const struct BattleBackground *arauna = GetAraunaBattleBackground();
+    if (arauna != NULL)
+    {
+        LZDecompressVram(arauna->entryTileset, (void *)BG_CHAR_ADDR(1));
+        LZDecompressVram(arauna->entryTilemap, (void *)BG_SCREEN_ADDR(28));
+        return;
+    }
+
     if (gBattleTypeFlags & BATTLE_TYPE_LINK)
     {
         LZDecompressVram(gBattleVSFrame_Gfx, (void *)(BG_CHAR_ADDR(1)));
@@ -1209,6 +1229,18 @@ void DrawBattleEntryBackground(void)
 bool8 LoadChosenBattleElement(u8 caseId)
 {
     bool8 ret = FALSE;
+    const struct BattleBackground *arauna = GetAraunaBattleBackground();
+
+    if (arauna != NULL && caseId >= 3 && caseId <= 5)
+    {
+        if (caseId == 3)
+            LZDecompressVram(arauna->tileset, (void *)BG_CHAR_ADDR(2));
+        else if (caseId == 4)
+            LZDecompressVram(arauna->tilemap, (void *)BG_SCREEN_ADDR(26));
+        else
+            LoadCompressedPalette(arauna->palette, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+        return FALSE;
+    }
 
     switch (caseId)
     {
