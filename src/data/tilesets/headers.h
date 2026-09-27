@@ -1108,3 +1108,16 @@ const struct Tileset gTileset_AraunaCasaFogueiraV2 =
     .callback = InitTilesetAnim_Pacifidlog,
 };
 // CASA_FOGUEIRA_V2_END
+
+// CASA_FOGUEIRA_INTERIORS_V2_BEGIN
+const struct Tileset gTileset_AraunaCasaFogueiraInteriorsV2 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaCasaFogueiraInteriorsV2,
+    .palettes = gTilesetPalettes_AraunaCasaFogueiraInteriorsV2,
+    .metatiles = gMetatiles_AraunaCasaFogueiraInteriorsV2,
+    .metatileAttributes = gMetatileAttributes_AraunaCasaFogueiraInteriorsV2,
+    .callback = NULL,
+};
+// CASA_FOGUEIRA_INTERIORS_V2_END

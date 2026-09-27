@@ -76,3 +76,44 @@ alcance do próprio pacote dá 1245 estados alcançáveis com Surf em cada lado.
 - O interior da casa comunal da Casa da Fogueira, o destino `House5`, ainda
   usa o interior herdado e espera adaptação narrativa própria.
 - Ninguém jogou as duas cidades dentro da campanha, com os eventos na ordem.
+
+## Os interiores da Casa da Fogueira
+
+Sete ambientes, do pacote de interiores V2: quatro residências de 12 × 11, o
+salão comunal de 18 × 14 com a fogueira central, e os dois andares do Centro
+Pokémon. Banco de tiles próprio, 385 tiles e 229 metatiles, dos quais 138 em
+uso — bem abaixo do teto de 512.
+
+O instalador desse pacote passou sem nenhum conflito: ele cria sete layouts
+novos, com sufixo `_Arauna`, em vez de sobrescrever os herdados, e acrescenta
+um bloco isolado às três declarações de tileset.
+
+**A única correção necessária foi de idioma.** O pacote traz o `scripts.inc`
+do salão comunal com as falas novas em português — a cena em que as pessoas
+contam, ao redor do fogo, cada uma a sua versão da ILHA MIRAGEM. O texto
+visível deste repositório é inglês desde a passagem de tradução, e há um gate
+de resíduo. As quatro falas foram traduzidas mantendo o conteúdo novo, e o
+gate passa com zero candidatos.
+
+### Conferido em jogo
+
+Os sete ambientes percorridos no emulador, 90 a 140 voltas cada, com checagem
+de tela parada. Nenhuma assinatura de travamento, e todos renderizam com a
+paleta certa: a fogueira no salão, o balcão de cura e o PC no térreo, as mesas
+de conexão no andar de cima.
+
+Duas portas foram atravessadas de verdade: sair do salão comunal cai no
+exterior novo, e a porta da frente do Centro também.
+
+**A escada para o 2º andar do Centro não disparou no meu teste de caminhada.**
+Isso não é defeito do pacote: o mesmo teste, feito num Centro Pokémon que
+ninguém tocou, para no mesmo tile. O bloco da escada é idêntico ao da vanilla
+— metatile 0x289, colisão 0, elevação 4 — e o 2º andar foi percorrido
+entrando nele direto. É o meu método de teste que não serve para escada.
+
+### Observação
+
+A borda dos sete mapas é o metatile `0x201`, o mesmo que `SootopolisCity_House1`
+já usava. Como o banco de tiles mudou, a área fora da sala agora aparece como
+tábua de madeira em vez de vazio. É coerente com o resto, mas quem preferir o
+vazio muda o `border.bin`.

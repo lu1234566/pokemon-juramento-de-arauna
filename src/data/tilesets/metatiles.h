@@ -290,3 +290,8 @@ const u16 gMetatileAttributes_AraunaAguasMBoiV2[] = INCBIN_U16("data/tilesets/se
 const u16 gMetatiles_AraunaCasaFogueiraV2[] = INCBIN_U16("data/tilesets/secondary/arauna_casa_fogueira_v2/metatiles.bin");
 const u16 gMetatileAttributes_AraunaCasaFogueiraV2[] = INCBIN_U16("data/tilesets/secondary/arauna_casa_fogueira_v2/metatile_attributes.bin");
 // CASA_FOGUEIRA_V2_END
+
+// CASA_FOGUEIRA_INTERIORS_V2_BEGIN
+const u16 gMetatiles_AraunaCasaFogueiraInteriorsV2[] = INCBIN_U16("data/tilesets/secondary/arauna_casa_fogueira_interiors_v2/metatiles.bin");
+const u16 gMetatileAttributes_AraunaCasaFogueiraInteriorsV2[] = INCBIN_U16("data/tilesets/secondary/arauna_casa_fogueira_interiors_v2/metatile_attributes.bin");
+// CASA_FOGUEIRA_INTERIORS_V2_END

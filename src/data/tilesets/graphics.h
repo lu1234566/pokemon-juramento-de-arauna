@@ -2172,3 +2172,26 @@ const u16 gTilesetPalettes_AraunaCasaFogueiraV2[][16] =
     INCGFX_U16("data/tilesets/secondary/arauna_casa_fogueira_v2/palettes/15.pal", ".gbapal"),
 };
 // CASA_FOGUEIRA_V2_END
+
+// CASA_FOGUEIRA_INTERIORS_V2_BEGIN
+const u32 gTilesetTiles_AraunaCasaFogueiraInteriorsV2[] = INCGFX_U32("data/tilesets/secondary/arauna_casa_fogueira_interiors_v2/tiles.png", ".4bpp.lz");
+const u16 gTilesetPalettes_AraunaCasaFogueiraInteriorsV2[][16] =
+{
+    INCGFX_U16("data/tilesets/secondary/arauna_casa_fogueira_interiors_v2/palettes/00.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_casa_fogueira_interiors_v2/palettes/01.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_casa_fogueira_interiors_v2/palettes/02.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_casa_fogueira_interiors_v2/palettes/03.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_casa_fogueira_interiors_v2/palettes/04.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_casa_fogueira_interiors_v2/palettes/05.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_casa_fogueira_interiors_v2/palettes/06.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_casa_fogueira_interiors_v2/palettes/07.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_casa_fogueira_interiors_v2/palettes/08.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_casa_fogueira_interiors_v2/palettes/09.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_casa_fogueira_interiors_v2/palettes/10.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_casa_fogueira_interiors_v2/palettes/11.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_casa_fogueira_interiors_v2/palettes/12.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_casa_fogueira_interiors_v2/palettes/13.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_casa_fogueira_interiors_v2/palettes/14.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_casa_fogueira_interiors_v2/palettes/15.pal", ".gbapal"),
+};
+// CASA_FOGUEIRA_INTERIORS_V2_END

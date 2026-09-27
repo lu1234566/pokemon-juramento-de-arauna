@@ -20,17 +20,15 @@ PacifidlogTown_House5_EventScript_Gentleman::
 	end
 
 PacifidlogTown_House5_Text_CantSeeMirageIslandToday:
-	.string "I can't see ILHA MIRAGEM today…$"
+	.string "From the fire, I can't see\n"
+	.string "ILHA MIRAGEM today…$"
 
 PacifidlogTown_House5_Text_CanSeeMirageIslandToday:
-	.string "Oh! Oh my!\n"
-	.string "I can see ILHA MIRAGEM today!$"
+	.string "Look out past the water!\n"
+	.string "ILHA MIRAGEM has appeared!$"
 
 PacifidlogTown_House5_Text_MirageIslandAppearDependingOnWeather:
-	.string "ILHA MIRAGEM…\p"
-	.string "It must become visible and invisible\n"
-	.string "depending on the weather conditions\l"
-	.string "that make mirages appear.\p"
-	.string "Or is it really appearing and\n"
-	.string "disappearing?$"
-
+	.string "Around the fire, everyone tells\n"
+	.string "the island a different way.\p"
+	.string "Some say it's the weather turning.\n"
+	.string "Others, that it comes and goes.$"
