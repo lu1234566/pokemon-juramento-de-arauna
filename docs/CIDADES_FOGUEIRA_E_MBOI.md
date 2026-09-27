@@ -291,3 +291,38 @@ sem nome nenhum ao lado.
 BEATRIZ's account."; o mural antigo diz "The old-bank mural lists families
 displaced by the dam. Several names were scratched out but can still be
 read." As fotos estão em `docs/arauna/cidades/`.
+
+### A arena das duas margens
+
+O V4 abre um canal de água no meio da arena. As duas margens passam a ser
+alcançadas por caminhos secos separados, a partir da passarela em `(8,5)`, e a
+margem leste fica mais inundada que a oeste. São 22 células trocadas.
+
+O pacote é inteiramente sobre as Gêmeas: ele põe as duas em `(6,2)` e `(10,2)`,
+uma de cada lado do canal. **O canal passa exatamente por `x=8`, que é onde a
+Celina estava** — sem ajuste, ela ficaria dentro da água.
+
+A geometria vale mesmo com uma líder só: o canal é o rio, que é a história
+inteira desta casa. Então o mapa entrou e a Celina foi para a **margem oeste**,
+em `(6,2)` — a margem antiga, a que os murais defendem. A margem leste ficou
+vaga, e é exatamente onde a segunda figura ficaria se um dia a Casa virar das
+Gêmeas ou a Celina ganhar uma parceira.
+
+O V4 também repõe a placa da passarela em `(9,3)`, com o mesmo defeito de
+antes: no novo mapa `(9,3)` continua andável e `(9,4)` passou a ser andável
+também, então a correção anterior deixou de valer. A placa foi para `(8,4)`,
+que é a beira do canal, bloqueada e colada na chegada da passarela — o jogador
+sobe pelas travessias, chega em `(8,5)`, encara a água e a ponte oferece a
+volta.
+
+**Conferido em jogo:** a Celina é alcançável na margem oeste e o portão das
+três vozes continua funcionando; a passarela em `(8,4)` pergunta "Leave now?"
+com SIM e NÃO.
+
+### Por que a 7ª Chancela não é uma troca de flag
+
+O V4 explica melhor do que os anteriores: Mossdeep já ocupa a 7ª e libera os
+eventos de Missões do Céu, e o slot de Sootopolis não só entrega a 8ª insígnia
+como aciona estados ligados ao fim da crise. Mudar uma flag sozinha colide com
+esses eventos. A migração teria de realocar a 7ª e a 8ª Casas junto com os
+gatilhos das duas.
