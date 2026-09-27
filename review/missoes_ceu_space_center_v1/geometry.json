@@ -1,0 +1,29 @@
+{
+  "maps": {
+    "MossdeepCity_SpaceCenter_1F": {
+      "size": [
+        16,
+        10
+      ],
+      "original_sha256": "d9835923b2316b3cd7a689aa81e0998a04b42e7aa6fe0228716626d02838cbaa",
+      "sha256": "79097077984a1ef4fff5142c1ea52bb4c433b5a4383d47cbc3f6403025aabd7e",
+      "changed_cells": 157,
+      "collision_elevation_unchanged": true
+    },
+    "MossdeepCity_SpaceCenter_2F": {
+      "size": [
+        16,
+        10
+      ],
+      "original_sha256": "66185e428181f0ed1a4d17aacda8a773a4ebfa3af2780753648e1624e2e79c77",
+      "sha256": "60b353e0066cef66fb477eacf50a56e02b8d2a29dc43de0ef40a24e40130a5d6",
+      "changed_cells": 159,
+      "collision_elevation_unchanged": true
+    }
+  },
+  "atlas": "art/arauna_missoes_ceu_space_center_v1/source_atlas.png",
+  "source_concept": "10_Centro_Espacial_Missoes_do_Ceu.png",
+  "metatiles": 205,
+  "new_tiles": 172,
+  "used_metatiles": 43
+}

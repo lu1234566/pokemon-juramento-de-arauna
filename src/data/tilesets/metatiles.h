@@ -305,3 +305,8 @@ const u16 gMetatileAttributes_AraunaAguasMboiInteriorsV1[] = INCBIN_U16("data/ti
 const u16 gMetatiles_AraunaAguasMboiSpecialV1[] = INCBIN_U16("data/tilesets/secondary/arauna_aguas_mboi_special_v1/metatiles.bin");
 const u16 gMetatileAttributes_AraunaAguasMboiSpecialV1[] = INCBIN_U16("data/tilesets/secondary/arauna_aguas_mboi_special_v1/metatile_attributes.bin");
 // AGUAS_MBOI_SPECIAL_V1_END
+
+// MISSOES_CEU_SPACE_CENTER_V1_BEGIN
+const u16 gMetatiles_AraunaMissoesCeuSpaceCenterV1[] = INCBIN_U16("data/tilesets/secondary/arauna_missoes_ceu_space_center_v1/metatiles.bin");
+const u16 gMetatileAttributes_AraunaMissoesCeuSpaceCenterV1[] = INCBIN_U16("data/tilesets/secondary/arauna_missoes_ceu_space_center_v1/metatile_attributes.bin");
+// MISSOES_CEU_SPACE_CENTER_V1_END

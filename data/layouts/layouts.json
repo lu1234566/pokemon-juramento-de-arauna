@@ -2747,9 +2747,9 @@
       "width": 16,
       "height": 10,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Facility",
-      "border_filepath": "data/layouts/MossdeepCity_SpaceCenter_1F/border.bin",
-      "blockdata_filepath": "data/layouts/MossdeepCity_SpaceCenter_1F/map.bin"
+      "secondary_tileset": "gTileset_AraunaMissoesCeuSpaceCenterV1",
+      "border_filepath": "data/layouts/MossdeepCity_SpaceCenter_1F_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/MossdeepCity_SpaceCenter_1F_Arauna/map.bin"
     },
     {
       "id": "LAYOUT_MOSSDEEP_CITY_SPACE_CENTER_2F",
@@ -2757,9 +2757,9 @@
       "width": 16,
       "height": 10,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Facility",
-      "border_filepath": "data/layouts/MossdeepCity_SpaceCenter_2F/border.bin",
-      "blockdata_filepath": "data/layouts/MossdeepCity_SpaceCenter_2F/map.bin"
+      "secondary_tileset": "gTileset_AraunaMissoesCeuSpaceCenterV1",
+      "border_filepath": "data/layouts/MossdeepCity_SpaceCenter_2F_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/MossdeepCity_SpaceCenter_2F_Arauna/map.bin"
     },
     {
       "id": "LAYOUT_SS_TIDAL_CORRIDOR",
