@@ -295,3 +295,13 @@ const u16 gMetatileAttributes_AraunaCasaFogueiraV2[] = INCBIN_U16("data/tilesets
 const u16 gMetatiles_AraunaCasaFogueiraInteriorsV2[] = INCBIN_U16("data/tilesets/secondary/arauna_casa_fogueira_interiors_v2/metatiles.bin");
 const u16 gMetatileAttributes_AraunaCasaFogueiraInteriorsV2[] = INCBIN_U16("data/tilesets/secondary/arauna_casa_fogueira_interiors_v2/metatile_attributes.bin");
 // CASA_FOGUEIRA_INTERIORS_V2_END
+
+// AGUAS_MBOI_INTERIORS_V1_BEGIN
+const u16 gMetatiles_AraunaAguasMboiInteriorsV1[] = INCBIN_U16("data/tilesets/secondary/arauna_aguas_mboi_interiors_v1/metatiles.bin");
+const u16 gMetatileAttributes_AraunaAguasMboiInteriorsV1[] = INCBIN_U16("data/tilesets/secondary/arauna_aguas_mboi_interiors_v1/metatile_attributes.bin");
+// AGUAS_MBOI_INTERIORS_V1_END
+
+// AGUAS_MBOI_SPECIAL_V1_BEGIN
+const u16 gMetatiles_AraunaAguasMboiSpecialV1[] = INCBIN_U16("data/tilesets/secondary/arauna_aguas_mboi_special_v1/metatiles.bin");
+const u16 gMetatileAttributes_AraunaAguasMboiSpecialV1[] = INCBIN_U16("data/tilesets/secondary/arauna_aguas_mboi_special_v1/metatile_attributes.bin");
+// AGUAS_MBOI_SPECIAL_V1_END

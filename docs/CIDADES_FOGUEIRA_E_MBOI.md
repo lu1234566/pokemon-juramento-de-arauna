@@ -117,3 +117,56 @@ A borda dos sete mapas é o metatile `0x201`, o mesmo que `SootopolisCity_House1
 já usava. Como o banco de tiles mudou, a área fora da sala agora aparece como
 tábua de madeira em vez de vazio. É coerente com o resto, mas quem preferir o
 vazio muda o `border.bin`.
+
+## Os interiores das Águas de M'Boi
+
+Vinte ambientes, em dois pacotes. O primeiro traz onze comuns: sete casas, a
+casa dos recordes, a loja e os dois andares do Centro Pokémon. O segundo traz
+os quatro especiais: os dois pisos da Casa Dupla, que é o antigo ginásio de
+gelo, e os dois do arquivo, com a variante de passagem aberta.
+
+A linguagem é a do exterior: piso de pedra clara, vigas de madeira escura e
+janelas de veneziana azul. É de propósito diferente da Casa da Fogueira, que
+é tábua escura inteira — são dois assentamentos distintos.
+
+Os dois instaladores passaram sem conflito nenhum, e nenhum dos dois traz uma
+única linha de diálogo: são conversão visual pura, ao contrário dos interiores
+da Fogueira, que precisaram de tradução.
+
+### A Casa Dupla é o quebra-cabeça do ginásio reskinnado
+
+O antigo ginásio de gelo vira travessia de madeira sobre água, e **a mecânica
+é a mesma, não uma reescrita**. Conferido comparando os atributos do banco
+novo com os do `sootopolis_gym` da base, metatile a metatile:
+
+| Metatile | Papel | Comportamento | Vanilla |
+|---|---|---|---|
+| `0x20D` | travessia inteira | `MB_THIN_ICE` (0x26) | igual |
+| `0x20E` | travessia marcada | `MB_CRACKED_ICE` (0x27) | igual |
+| `0x206` | travessia rompida | `MB_CRACKED_FLOOR_HOLE` (0x66) | igual |
+| `0x207` | escada | `MB_NORMAL` (0x00) | igual |
+
+Os quatro batem byte a byte. O `SootopolisGymIcePerStepCallback` continua
+achando o que procura; o gelo que racha virou tábua que cede.
+
+### Conferido em jogo
+
+Nove ambientes percorridos no emulador, entre 80 e 200 voltas cada. Todos
+renderizam com a paleta certa e ninguém travou.
+
+Dois deles — a Casa Dupla B1F e o arquivo B1F — dispararam o meu detector de
+"tela parada". **É falso positivo**: o detector compara o quadro inteiro, e
+numa sala pequena com a câmera travada e nada animado em volta o quadro repete
+mesmo. Fui conferir lendo a posição do jogador passo a passo, e ele anda nos
+dois — 3 posições distintas num caso, 8 no outro, todas dentro da sala.
+
+**O quebra-cabeça em si não foi resolvido de ponta a ponta.** Ele só liga com
+o estado de script do ginásio, que um warp frio não monta, e as leituras que
+tentei fazer do mapa vivo não ficaram confiáveis o bastante para eu afirmar
+qualquer coisa. O que está provado é a equivalência dos atributos acima.
+
+### O que os próprios pacotes deixam pendente
+
+As três confrontações de lore, a cura antes do chefe e a arena dupla da
+Bíblia continuam sem implementação narrativa. A Casa da História não está
+concluída.

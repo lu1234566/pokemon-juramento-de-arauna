@@ -1121,3 +1121,29 @@ const struct Tileset gTileset_AraunaCasaFogueiraInteriorsV2 =
     .callback = NULL,
 };
 // CASA_FOGUEIRA_INTERIORS_V2_END
+
+// AGUAS_MBOI_INTERIORS_V1_BEGIN
+const struct Tileset gTileset_AraunaAguasMboiInteriorsV1 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaAguasMboiInteriorsV1,
+    .palettes = gTilesetPalettes_AraunaAguasMboiInteriorsV1,
+    .metatiles = gMetatiles_AraunaAguasMboiInteriorsV1,
+    .metatileAttributes = gMetatileAttributes_AraunaAguasMboiInteriorsV1,
+    .callback = NULL,
+};
+// AGUAS_MBOI_INTERIORS_V1_END
+
+// AGUAS_MBOI_SPECIAL_V1_BEGIN
+const struct Tileset gTileset_AraunaAguasMboiSpecialV1 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaAguasMboiSpecialV1,
+    .palettes = gTilesetPalettes_AraunaAguasMboiSpecialV1,
+    .metatiles = gMetatiles_AraunaAguasMboiSpecialV1,
+    .metatileAttributes = gMetatileAttributes_AraunaAguasMboiSpecialV1,
+    .callback = NULL,
+};
+// AGUAS_MBOI_SPECIAL_V1_END

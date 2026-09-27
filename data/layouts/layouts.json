@@ -1087,7 +1087,7 @@
       "width": 17,
       "height": 26,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_SootopolisGym",
+      "secondary_tileset": "gTileset_AraunaAguasMboiSpecialV1",
       "border_filepath": "data/layouts/SootopolisCity_Gym_1F/border.bin",
       "blockdata_filepath": "data/layouts/SootopolisCity_Gym_1F/map.bin"
     },
@@ -1097,7 +1097,7 @@
       "width": 17,
       "height": 26,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_SootopolisGym",
+      "secondary_tileset": "gTileset_AraunaAguasMboiSpecialV1",
       "border_filepath": "data/layouts/SootopolisCity_Gym_B1F/border.bin",
       "blockdata_filepath": "data/layouts/SootopolisCity_Gym_B1F/map.bin"
     },
@@ -4387,7 +4387,7 @@
       "width": 11,
       "height": 8,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_MysteryEventsHouse",
+      "secondary_tileset": "gTileset_AraunaAguasMboiSpecialV1",
       "border_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F/border.bin",
       "blockdata_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F/map.bin"
     },
@@ -4397,7 +4397,7 @@
       "width": 12,
       "height": 9,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_MysteryEventsHouse",
+      "secondary_tileset": "gTileset_AraunaAguasMboiSpecialV1",
       "border_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_B1F/border.bin",
       "blockdata_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_B1F/map.bin"
     },
@@ -4407,7 +4407,7 @@
       "width": 11,
       "height": 8,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_MysteryEventsHouse",
+      "secondary_tileset": "gTileset_AraunaAguasMboiSpecialV1",
       "border_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/border.bin",
       "blockdata_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/map.bin"
     },
@@ -4690,6 +4690,116 @@
       "secondary_tileset": "gTileset_AraunaCasaFogueiraInteriorsV2",
       "border_filepath": "data/layouts/PacifidlogTown_PokemonCenter_2F_Arauna/border.bin",
       "blockdata_filepath": "data/layouts/PacifidlogTown_PokemonCenter_2F_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_AGUAS_MBOI_INTERIORS_HOUSE1",
+      "name": "SootopolisCity_House1_Arauna_Layout",
+      "width": 12,
+      "height": 11,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaAguasMboiInteriorsV1",
+      "border_filepath": "data/layouts/SootopolisCity_House1_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/SootopolisCity_House1_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_AGUAS_MBOI_INTERIORS_HOUSE2",
+      "name": "SootopolisCity_House2_Arauna_Layout",
+      "width": 12,
+      "height": 11,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaAguasMboiInteriorsV1",
+      "border_filepath": "data/layouts/SootopolisCity_House2_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/SootopolisCity_House2_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_AGUAS_MBOI_INTERIORS_HOUSE3",
+      "name": "SootopolisCity_House3_Arauna_Layout",
+      "width": 12,
+      "height": 11,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaAguasMboiInteriorsV1",
+      "border_filepath": "data/layouts/SootopolisCity_House3_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/SootopolisCity_House3_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_AGUAS_MBOI_INTERIORS_HOUSE4",
+      "name": "SootopolisCity_House4_Arauna_Layout",
+      "width": 12,
+      "height": 11,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaAguasMboiInteriorsV1",
+      "border_filepath": "data/layouts/SootopolisCity_House4_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/SootopolisCity_House4_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_AGUAS_MBOI_INTERIORS_HOUSE5",
+      "name": "SootopolisCity_House5_Arauna_Layout",
+      "width": 12,
+      "height": 11,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaAguasMboiInteriorsV1",
+      "border_filepath": "data/layouts/SootopolisCity_House5_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/SootopolisCity_House5_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_AGUAS_MBOI_INTERIORS_HOUSE6",
+      "name": "SootopolisCity_House6_Arauna_Layout",
+      "width": 12,
+      "height": 11,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaAguasMboiInteriorsV1",
+      "border_filepath": "data/layouts/SootopolisCity_House6_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/SootopolisCity_House6_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_AGUAS_MBOI_INTERIORS_HOUSE7",
+      "name": "SootopolisCity_House7_Arauna_Layout",
+      "width": 12,
+      "height": 11,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaAguasMboiInteriorsV1",
+      "border_filepath": "data/layouts/SootopolisCity_House7_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/SootopolisCity_House7_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_AGUAS_MBOI_INTERIORS_LOTADANDSEEDOTHOUSE",
+      "name": "SootopolisCity_LotadAndSeedotHouse_Arauna_Layout",
+      "width": 12,
+      "height": 11,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaAguasMboiInteriorsV1",
+      "border_filepath": "data/layouts/SootopolisCity_LotadAndSeedotHouse_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/SootopolisCity_LotadAndSeedotHouse_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_AGUAS_MBOI_INTERIORS_MART",
+      "name": "SootopolisCity_Mart_Arauna_Layout",
+      "width": 12,
+      "height": 11,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaAguasMboiInteriorsV1",
+      "border_filepath": "data/layouts/SootopolisCity_Mart_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/SootopolisCity_Mart_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_AGUAS_MBOI_INTERIORS_POKEMONCENTER_1F",
+      "name": "SootopolisCity_PokemonCenter_1F_Arauna_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaAguasMboiInteriorsV1",
+      "border_filepath": "data/layouts/SootopolisCity_PokemonCenter_1F_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/SootopolisCity_PokemonCenter_1F_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_AGUAS_MBOI_INTERIORS_POKEMONCENTER_2F",
+      "name": "SootopolisCity_PokemonCenter_2F_Arauna_Layout",
+      "width": 14,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaAguasMboiInteriorsV1",
+      "border_filepath": "data/layouts/SootopolisCity_PokemonCenter_2F_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/SootopolisCity_PokemonCenter_2F_Arauna/map.bin"
     }
   ]
 }
