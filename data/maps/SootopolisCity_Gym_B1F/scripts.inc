@@ -1,8 +1,24 @@
 SootopolisCity_Gym_B1F_MapScripts::
+	map_script MAP_SCRIPT_ON_LOAD, SootopolisCity_Gym_B1F_OnLoad
 	.byte 0
+
+SootopolisCity_Gym_B1F_OnLoad:
+	call_if_defeated TRAINER_ANDREA, SootopolisCity_Gym_B1F_EventScript_OpenOldBankGate
+	call_if_defeated TRAINER_DAPHNE, SootopolisCity_Gym_B1F_EventScript_OpenNewBankGate
+	end
+
+SootopolisCity_Gym_B1F_EventScript_OpenOldBankGate::
+	setmetatile 8, 16, 0x20F, FALSE
+	return
+
+SootopolisCity_Gym_B1F_EventScript_OpenNewBankGate::
+	setmetatile 8, 11, 0x20F, FALSE
+	return
 
 SootopolisCity_Gym_B1F_EventScript_Andrea::
 	trainerbattle_single TRAINER_ANDREA, SootopolisCity_Gym_B1F_Text_AndreaIntro, SootopolisCity_Gym_B1F_Text_AndreaDefeat
+	call SootopolisCity_Gym_B1F_EventScript_OpenOldBankGate
+	special DrawWholeMapView
 	msgbox SootopolisCity_Gym_B1F_Text_AndreaPostBattle, MSGBOX_AUTOCLOSE
 	end
 
@@ -12,8 +28,19 @@ SootopolisCity_Gym_B1F_EventScript_Crissy::
 	end
 
 SootopolisCity_Gym_B1F_EventScript_Brianna::
+	goto_if_not_defeated TRAINER_DAPHNE, SootopolisCity_Gym_B1F_EventScript_NeedNewBank
 	trainerbattle_single TRAINER_BRIANNA, SootopolisCity_Gym_B1F_Text_BriannaIntro, SootopolisCity_Gym_B1F_Text_BriannaDefeat
 	msgbox SootopolisCity_Gym_B1F_Text_BriannaPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+SootopolisCity_Gym_B1F_EventScript_NeedNewBank::
+	msgbox SootopolisCity_Gym_B1F_Text_NeedNewBank, MSGBOX_DEFAULT
+	release
+	end
+
+SootopolisCity_Gym_B1F_EventScript_NeedOldBank::
+	msgbox SootopolisCity_Gym_B1F_Text_NeedOldBank, MSGBOX_DEFAULT
+	release
 	end
 
 SootopolisCity_Gym_B1F_EventScript_Connie::
@@ -47,9 +74,72 @@ SootopolisCity_Gym_B1F_EventScript_Annika::
 	end
 
 SootopolisCity_Gym_B1F_EventScript_Daphne::
+	goto_if_not_defeated TRAINER_ANDREA, SootopolisCity_Gym_B1F_EventScript_NeedOldBank
 	trainerbattle_single TRAINER_DAPHNE, SootopolisCity_Gym_B1F_Text_DaphneIntro, SootopolisCity_Gym_B1F_Text_DaphneDefeat
+	call SootopolisCity_Gym_B1F_EventScript_OpenNewBankGate
+	special DrawWholeMapView
 	msgbox SootopolisCity_Gym_B1F_Text_DaphnePostBattle, MSGBOX_AUTOCLOSE
 	end
+
+SootopolisCity_Gym_B1F_EventScript_OldBankGate::
+	lockall
+	getplayerxy VAR_0x8004, VAR_0x8005
+	goto_if_lt VAR_0x8005, 16, SootopolisCity_Gym_B1F_EventScript_OldBankGateOpen
+	goto_if_defeated TRAINER_ANDREA, SootopolisCity_Gym_B1F_EventScript_OldBankGateOpen
+	msgbox SootopolisCity_Gym_B1F_Text_OldBankGateClosed, MSGBOX_DEFAULT
+	releaseall
+	end
+
+SootopolisCity_Gym_B1F_EventScript_OldBankGateOpen::
+	call SootopolisCity_Gym_B1F_EventScript_OpenOldBankGate
+	special DrawWholeMapView
+	releaseall
+	end
+
+SootopolisCity_Gym_B1F_EventScript_NewBankGate::
+	lockall
+	getplayerxy VAR_0x8004, VAR_0x8005
+	goto_if_lt VAR_0x8005, 11, SootopolisCity_Gym_B1F_EventScript_NewBankGateOpen
+	goto_if_defeated TRAINER_DAPHNE, SootopolisCity_Gym_B1F_EventScript_NewBankGateOpen
+	msgbox SootopolisCity_Gym_B1F_Text_NewBankGateClosed, MSGBOX_DEFAULT
+	releaseall
+	end
+
+SootopolisCity_Gym_B1F_EventScript_NewBankGateOpen::
+	call SootopolisCity_Gym_B1F_EventScript_OpenNewBankGate
+	special DrawWholeMapView
+	releaseall
+	end
+
+SootopolisCity_Gym_B1F_EventScript_FloodedRecords::
+	lockall
+	msgbox SootopolisCity_Gym_B1F_Text_FloodedRecords, MSGBOX_DEFAULT
+	releaseall
+	end
+
+SootopolisCity_Gym_B1F_Text_NeedOldBank:
+	.string "Hear BEATRIZ on the old bank\n"
+	.string "before you ask for my story.$"
+
+SootopolisCity_Gym_B1F_Text_NeedNewBank:
+	.string "Hear ELENA on the new bank\n"
+	.string "before you read the archive.$"
+
+SootopolisCity_Gym_B1F_Text_OldBankGateClosed:
+	.string "The first gate is shut.\p"
+	.string "An old-bank name is carved\n"
+	.string "into the stone: BEATRIZ.$"
+
+SootopolisCity_Gym_B1F_Text_NewBankGateClosed:
+	.string "The second gate is shut.\p"
+	.string "ELENA's testimony opens\n"
+	.string "this crossing.$"
+
+SootopolisCity_Gym_B1F_Text_FloodedRecords:
+	.string "Names from both banks share\n"
+	.string "the same soaked page.\p"
+	.string "The vote named fewer people\n"
+	.string "than the river took.$"
 
 SootopolisCity_Gym_B1F_Text_AndreaIntro:
 	.string "BEATRIZ: On the old bank the\n"
@@ -197,4 +287,3 @@ SootopolisCity_Gym_B1F_Text_BriannaPostBattle:
 	.string "The archive names those who\n"
 	.string "voted. Many were never asked\l"
 	.string "to decide the river's fate.$"
-

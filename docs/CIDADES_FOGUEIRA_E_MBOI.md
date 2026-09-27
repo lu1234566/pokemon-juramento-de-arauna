@@ -224,3 +224,31 @@ fotos estão em `docs/arauna/cidades/`.
 derrotar as três testemunhas dentro do emulador, que é uma sessão longa. O
 ramo fechado é o que está fotografado; o aberto é a queda natural para o
 `trainerbattle_single` que já existia, mais um `special HealPlayerParty`.
+
+### As comportas
+
+O pacote V2 das comportas troca a lógica reativa que a rodada anterior tinha
+deixado por uma mecânica de verdade. Duas passagens centrais do piso inferior
+viram comportas fechadas: a primeira abre depois da margem antiga (Beatriz), a
+segunda depois da margem nova (Elena). Um nicho a oeste guarda um registro das
+duas margens, e a ala leste ganha água rasa que continua sendo chão.
+
+A engenharia é limpa. Um `MAP_SCRIPT_ON_LOAD` reabre as comportas a partir das
+flags de derrota guardadas no save, então o estado sobrevive a sair e voltar.
+Cada comporta também confere a posição do jogador: quem cair do piso de cima
+do lado norte ainda consegue abri-la por dentro e sair pelo warp original, em
+vez de ficar preso. Elena e Cilene deixaram de ser treinadoras de linha de
+visão e passaram a esperar conversa, para não dispararem fora de ordem quando
+alguém cai do andar de cima.
+
+Fechadas, as comportas são colisão 1; abertas, o script escreve `0x20F`, que
+é o tile de deslize do quebra-cabeça — coerente com o piso reskinnado.
+
+Como o pacote foi escrito para as Gêmeas, as mesmas cinco menções voltaram
+para a Celina antes de entrar.
+
+**Conferido em jogo:** encarar a segunda comporta dá "The second gate is shut.
+ELENA's testimony…"; o nicho dá "Names from both banks share the same soaked
+page."; e a Beatriz abre com a fala nova da margem antiga. As fotos estão em
+`docs/arauna/cidades/`. A abertura depois da vitória não foi percorrida, pelo
+mesmo motivo de antes: exigiria vencer as três dentro do emulador.
