@@ -52,132 +52,149 @@ SootopolisCity_Gym_B1F_EventScript_Daphne::
 	end
 
 SootopolisCity_Gym_B1F_Text_AndreaIntro:
-	.string "I'll show you the sublime techniques\n"
-	.string "I learned from our LEADER CELINA!$"
+	.string "BEATRIZ: On the old bank the\n"
+	.string "river was a road for everyone.\p"
+	.string "I fight for the people\n"
+	.string "erased from the maps.$"
 
 SootopolisCity_Gym_B1F_Text_AndreaDefeat:
-	.string "Please forgive me, CELINA…$"
+	.string "BEATRIZ: Water does not forget.$"
 
 SootopolisCity_Gym_B1F_Text_AndreaPostBattle:
-	.string "Watch what happens if you crack all\n"
-	.string "the floor tiles.$"
+	.string "Our bank was here before the\n"
+	.string "gates. The other bank's records\l"
+	.string "nearly erased our names.\p"
+	.string "When tiles crack, they\n"
+	.string "open the next crossing.$"
 
 SootopolisCity_Gym_B1F_Text_CrissyIntro:
-	.string "You came all the way here, but you won't\n"
-	.string "get to see CELINA.\p"
-	.string "Not if you lose to me, you won't!$"
+	.string "You have come all this way and you\n"
+	.string "will not get to see CELINA.\p"
+	.string "Not if you lose to me\n"
+	.string "you will not.$"
 
 SootopolisCity_Gym_B1F_Text_CrissyDefeat:
-	.string "You're strong!\n"
-	.string "I was fooled by your cute looks!$"
+	.string "You are strong!\n"
+	.string "Your sweet face had me\l"
+	.string "completely fooled!$"
 
 SootopolisCity_Gym_B1F_Text_CrissyPostBattle:
-	.string "You might be good enough to avoid\n"
-	.string "being wiped out in one hit by CELINA.$"
+	.string "You might just be good\n"
+	.string "enough not to be finished\l"
+	.string "by CELINA in one go.$"
 
 SootopolisCity_Gym_B1F_Text_DaphneIntro:
-	.string "The sight of CELINA conducting\n"
-	.string "a battle…\p"
-	.string "The very beauty of it compelled me to\n"
-	.string "become a TRAINER.$"
+	.string "On the new bank, the dam\n"
+	.string "saved homes from the flood.\p"
+	.string "Our history is true, too.\n"
+	.string "Will you hear it in battle?$"
 
 SootopolisCity_Gym_B1F_Text_DaphneDefeat:
-	.string "You battled with more beauty than\n"
-	.string "I could muster…$"
+	.string "I had not heard the other bank.$"
 
 SootopolisCity_Gym_B1F_Text_DaphnePostBattle:
-	.string "The grace you bring to battle is\n"
-	.string "fabulous.\p"
-	.string "Oh… I'm so fortunate to have found\n"
-	.string "POKéMON.$"
+	.string "Our homes stayed dry, but\n"
+	.string "others paid the price.\p"
+	.string "The memory I kept was\n"
+	.string "true and incomplete.$"
 
 SootopolisCity_Gym_B1F_Text_ConnieIntro:
-	.string "I should teach you how harsh battles\n"
-	.string "can be.$"
+	.string "Somebody ought to show you\n"
+	.string "how hard a battle can be.$"
 
 SootopolisCity_Gym_B1F_Text_ConnieDefeat:
 	.string "Oh.\n"
-	.string "You're strong.$"
+	.string "You are strong.$"
 
 SootopolisCity_Gym_B1F_Text_ConniePostBattle:
-	.string "I'll tell you something good.\p"
-	.string "If you want to reach CELINA, you\n"
-	.string "need to walk on each floor tile once.$"
+	.string "I shall tell you\n"
+	.string "something worth knowing.\p"
+	.string "To reach CELINA you must step\n"
+	.string "on every tile of the floor, and\l"
+	.string "each of them only once.$"
 
 SootopolisCity_Gym_B1F_Text_BridgetIntro:
-	.string "The POKéMON GYM of the highest level\n"
-	.string "in the ARAUNA region…\p"
-	.string "That's the AGUAS DE M'BOI GYM.$"
+	.string "The POKéMON GYM of the highest\n"
+	.string "standing anywhere in ARAUNA...\p"
+	.string "That is the AGUAS DE M'BOI GYM.$"
 
 SootopolisCity_Gym_B1F_Text_BridgetDefeat:
-	.string "What a high level you are!$"
+	.string "What a standard you are at!$"
 
 SootopolisCity_Gym_B1F_Text_BridgetPostBattle:
-	.string "Rather than being satisfied by being\n"
-	.string "in a strong GYM, I imagine training in\l"
-	.string "other places will make you stronger.\l"
-	.string "But above all, it looks more fun.$"
+	.string "Rather than sit content in a\n"
+	.string "strong GYM, I imagine training\l"
+	.string "elsewhere would make you stronger.\p"
+	.string "And more to the point, it\n"
+	.string "looks a great deal more fun.$"
 
 SootopolisCity_Gym_B1F_Text_OliviaIntro:
-	.string "I train my POKéMON together with\n"
-	.string "CELINA.\p"
-	.string "Don't think I'm a pushover.$"
+	.string "I train my POKéMON\n"
+	.string "alongside CELINA.\p"
+	.string "Do not take me for an\n"
+	.string "easy afternoon.$"
 
 SootopolisCity_Gym_B1F_Text_OliviaDefeat:
-	.string "I was beaten…$"
+	.string "Beaten...$"
 
 SootopolisCity_Gym_B1F_Text_OliviaPostBattle:
-	.string "I think you have potential.\n"
-	.string "Why don't you stay and train with us?$"
+	.string "I think there is something in you.\n"
+	.string "Why not stay and train with us?$"
 
 SootopolisCity_Gym_B1F_Text_TiffanyIntro:
-	.string "A graceful glide across the ice while\n"
-	.string "crossing no lines…\p"
-	.string "A TRAINER putting on that performance\n"
-	.string "would be elegantly beautiful!$"
+	.string "A careful crossing over the\n"
+	.string "planks, and not a line crossed...\p"
+	.string "A TRAINER doing that would be\n"
+	.string "a beautiful thing to watch.$"
 
 SootopolisCity_Gym_B1F_Text_TiffanyDefeat:
-	.string "Well, excuse me?!$"
+	.string "Well, excuse me!$"
 
 SootopolisCity_Gym_B1F_Text_TiffanyPostBattle:
-	.string "This is really obvious, but how strong\n"
-	.string "you are as a TRAINER has nothing to do\l"
-	.string "with how young or old you are.$"
+	.string "It is obvious enough, but\n"
+	.string "how strong a TRAINER is\l"
+	.string "has nothing whatever to\l"
+	.string "do with how old they are.$"
 
 SootopolisCity_Gym_B1F_Text_BethanyIntro:
-	.string "When I'm with my POKéMON, the time\n"
-	.string "flies by before you can say, “Oops!”$"
+	.string "When I am with my POKéMON the time\n"
+	.string "goes before you can say “Oops!”$"
 
 SootopolisCity_Gym_B1F_Text_BethanyDefeat:
 	.string "Oops!$"
 
 SootopolisCity_Gym_B1F_Text_BethanyPostBattle:
-	.string "I wish I could forget about lost causes\n"
-	.string "before I can manage an “Oops!”$"
+	.string "I do wish I could let go\n"
+	.string "of a lost cause before I\l"
+	.string "get as far as “Oops!”$"
 
 SootopolisCity_Gym_B1F_Text_AnnikaIntro:
-	.string "I can battle with really rare POKéMON\n"
-	.string "if you'd like.$"
+	.string "I can battle you with\n"
+	.string "some genuinely rare\l"
+	.string "POKéMON, if you like.$"
 
 SootopolisCity_Gym_B1F_Text_AnnikaDefeat:
-	.string "Oh, there now! Did you have a good look\n"
-	.string "at my POKéMON?$"
+	.string "Oh, there now. Did you get\n"
+	.string "a proper look at mine?$"
 
 SootopolisCity_Gym_B1F_Text_AnnikaPostBattle:
-	.string "I came to this GYM because CELINA\n"
-	.string "praised me for my darling POKéMON.\p"
-	.string "Oh, if only I'd met CELINA years ago\n"
-	.string "when I was younger…$"
+	.string "I came to this house\n"
+	.string "because CELINA said kind\l"
+	.string "things about my darlings.\p"
+	.string "Oh, if only I had met her years\n"
+	.string "ago, when I was younger...$"
 
 SootopolisCity_Gym_B1F_Text_BriannaIntro:
-	.string "Giggle…\n"
-	.string "Your grim look is so charming.$"
+	.string "I keep the flooded\n"
+	.string "archive. These wet pages\l"
+	.string "name who opened the gate.\p"
+	.string "Read them with me in battle!$"
 
 SootopolisCity_Gym_B1F_Text_BriannaDefeat:
-	.string "Oh, dear.\n"
-	.string "I went much too easy on you.$"
+	.string "The ink still leaves marks.$"
 
 SootopolisCity_Gym_B1F_Text_BriannaPostBattle:
-	.string "You couldn't lay a finger on CELINA,\n"
-	.string "I'm sure. Giggle…$"
+	.string "The archive names those who\n"
+	.string "voted. Many were never asked\l"
+	.string "to decide the river's fate.$"
 

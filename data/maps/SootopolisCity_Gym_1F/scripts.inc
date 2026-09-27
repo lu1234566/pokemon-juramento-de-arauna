@@ -80,12 +80,45 @@ SootopolisCity_Gym_1F_Movement_FallThroughIce:
 	step_end
 
 SootopolisCity_Gym_1F_EventScript_Juan::
+@ As tres testemunhas do piso de baixo -- a margem antiga, a margem nova e o
+@ arquivo alagado -- precisam ser ouvidas antes da CELINA. A guarda usa as
+@ flags de treinador derrotado que ja existem, entao um save antigo em que as
+@ tres ja cairam abre o desafio direto.
+	goto_if_set FLAG_DEFEATED_SOOTOPOLIS_GYM, SootopolisCity_Gym_1F_EventScript_CelinaReady
+	goto_if_not_defeated TRAINER_ANDREA, SootopolisCity_Gym_1F_EventScript_ThreeMemoriesMissing
+	goto_if_not_defeated TRAINER_DAPHNE, SootopolisCity_Gym_1F_EventScript_ThreeMemoriesMissing
+	goto_if_not_defeated TRAINER_BRIANNA, SootopolisCity_Gym_1F_EventScript_ThreeMemoriesMissing
+	msgbox SootopolisCity_Gym_1F_Text_MemoriesTogether, MSGBOX_DEFAULT
+	special HealPlayerParty
+	setrespawn HEAL_LOCATION_SOOTOPOLIS_CITY
+SootopolisCity_Gym_1F_EventScript_CelinaReady::
 	trainerbattle_single TRAINER_JUAN_1, SootopolisCity_Gym_1F_Text_JuanIntro, SootopolisCity_Gym_1F_Text_JuanDefeat, SootopolisCity_Gym_1F_EventScript_JuanDefeated, NO_MUSIC
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, SootopolisCity_Gym_1F_EventScript_JuanRematch
 	goto_if_unset FLAG_RECEIVED_TM_WATER_PULSE, SootopolisCity_Gym_1F_EventScript_GiveWaterPulse2
 	goto_if_unset FLAG_BADGE06_GET, SootopolisCity_Gym_1F_EventScript_GoGetFortreeBadge
 	msgbox SootopolisCity_Gym_1F_Text_JuanPostBattle, MSGBOX_DEFAULT
+	release
+	end
+
+SootopolisCity_Gym_1F_EventScript_ThreeMemoriesMissing::
+	msgbox SootopolisCity_Gym_1F_Text_ThreeMemoriesMissing, MSGBOX_DEFAULT
+	release
+	end
+
+@ A passarela da arena devolve o jogador a cidade sem precisar perder: o
+@ quebra-cabeca do piso pode ser refeito.
+SootopolisCity_Gym_1F_EventScript_ReturnToCity::
+	lock
+	faceplayer
+	msgbox SootopolisCity_Gym_1F_Text_ReturnToCity, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, SootopolisCity_Gym_1F_EventScript_StayInHouse
+	warp MAP_SOOTOPOLIS_CITY, 25, 23
+	waitstate
+	release
+	end
+
+SootopolisCity_Gym_1F_EventScript_StayInHouse::
 	release
 	end
 
@@ -277,3 +310,18 @@ SootopolisCity_Gym_1F_Text_JuanRematchNeedTwoMons:
 	.string "for someone else is what is not ours to\l"
 	.string "do.$"
 
+
+SootopolisCity_Gym_1F_Text_ThreeMemoriesMissing:
+	.string "MRS. CELINA: Hear the three voices\n"
+	.string "below before you face me:\p"
+	.string "the old bank, the new bank\n"
+	.string "and the flooded archive.$"
+
+SootopolisCity_Gym_1F_Text_MemoriesTogether:
+	.string "MRS. CELINA: You heard all three.\p"
+	.string "Rest your POKéMON here.\n"
+	.string "If you fall, return through town.$"
+
+SootopolisCity_Gym_1F_Text_ReturnToCity:
+	.string "This return bridge leads\n"
+	.string "back to town. Leave now?$"

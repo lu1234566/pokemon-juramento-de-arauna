@@ -170,3 +170,57 @@ qualquer coisa. O que está provado é a equivalência dos atributos acima.
 As três confrontações de lore, a cura antes do chefe e a arena dupla da
 Bíblia continuam sem implementação narrativa. A Casa da História não está
 concluída.
+
+## A Casa da História, rebaseada
+
+O pacote narrativo da Casa Dupla chegou construído sobre uma base muito
+antiga, e o instalador dele **recusou-se a escrever** — corretamente. Se
+tivesse escrito, teria revertido três trabalhos prontos: `trainers.h` estava
+1014 linhas atrás e desfaria 26 `AGENT` → `AGENTE` e **434** movesets
+customizados; `trainer_parties.h`, 10000 linhas atrás, levaria junto os times
+da Dalva, do Ademar e da Olívia; `match_call.inc`, 990 linhas atrás, a
+tradução do Match Call. A Elite Four voltaria a se chamar Drake, Glacia,
+Phoebe e Sidney.
+
+O pacote também **substituía a Dona Celina** por "GEMEAS": retrato de Tate e
+Liza, que neste jogo é de Cecília e Caetano, batalha dupla e teto 42 — igual
+ao 7º ginásio e abaixo dos 46 dela. A raiz está no próprio doc do pacote: a
+Bíblia põe a Casa Dupla na 7ª Chancela, mas o slot herdado é o ginásio da 8ª.
+
+Por decisão do autor, **a Celina fica**. Do pacote foi aproveitado só o que é
+aditivo, reescrito para ela:
+
+- **A guarda das três testemunhas.** Beatriz, Elena e Cilene já existiam no
+  repositório — são `TRAINER_ANDREA`, `TRAINER_DAPHNE` e `TRAINER_BRIANNA`.
+  Agora a Celina só aceita o desafio depois das três, usando as flags de
+  treinador derrotado que já existem; num save antigo em que as três já
+  cairam, o desafio abre direto.
+- **A cura antes do chefe**, com `setrespawn` para o Centro da cidade.
+- **A passarela de retorno**, que devolve à cidade sem precisar perder.
+- **O texto do piso de baixo**, que dá às três testemunhas a margem antiga, a
+  margem nova e o arquivo alagado, e reescreve os outros sete treinadores num
+  registro mais literário. As cinco menções às Gêmeas voltaram para a Celina.
+
+Ficou de fora tudo que dependia das Gêmeas: `trainerbattle_double`, o segundo
+objeto na arena, o texto de "duas criaturas prontas" e as reescritas que
+trocavam a Celina por elas.
+
+### Uma correção de posicionamento
+
+O pacote punha a placa da passarela em `(9,3)`, que é **andável**: o jogador
+passaria por cima e ela nunca dispararia. No desenho original havia um segundo
+objeto ao lado que mudava o acesso; sem ele, a placa é inerte. Movida para
+`(9,4)`, que é bloqueado e encosta no corredor, então se lê encarando de
+`(9,3)`.
+
+### Conferido em jogo
+
+Falar com a Celina antes das três testemunhas mostra "Hear the three voices
+below before you face me" e **não** inicia batalha. A passarela pergunta
+"This return bridge leads back to town. Leave now?" com SIM/NÃO. As duas
+fotos estão em `docs/arauna/cidades/`.
+
+**O caminho aberto não foi percorrido:** provar a cura e a liberação exigiria
+derrotar as três testemunhas dentro do emulador, que é uma sessão longa. O
+ramo fechado é o que está fotografado; o aberto é a queda natural para o
+`trainerbattle_single` que já existia, mais um `special HealPlayerParty`.
