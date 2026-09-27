@@ -154,8 +154,8 @@ SootopolisCity_Gym_B1F_Text_AndreaPostBattle:
 	.string "Our bank was here before the\n"
 	.string "gates. The other bank's records\l"
 	.string "nearly erased our names.\p"
-	.string "When tiles crack, they\n"
-	.string "open the next crossing.$"
+	.string "The old-bank gate is open.\n"
+	.string "Cross to the next testimony.$"
 
 SootopolisCity_Gym_B1F_Text_CrissyIntro:
 	.string "You have come all this way and you\n"
@@ -199,9 +199,10 @@ SootopolisCity_Gym_B1F_Text_ConnieDefeat:
 SootopolisCity_Gym_B1F_Text_ConniePostBattle:
 	.string "I shall tell you\n"
 	.string "something worth knowing.\p"
-	.string "To reach CELINA you must step\n"
-	.string "on every tile of the floor, and\l"
-	.string "each of them only once.$"
+	.string "Take the stair near the entrance\n"
+	.string "to hear three testimonies.\p"
+	.string "Each one opens a crossing\n"
+	.string "toward CELINA.$"
 
 SootopolisCity_Gym_B1F_Text_BridgetIntro:
 	.string "The POKéMON GYM of the highest\n"

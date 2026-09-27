@@ -252,3 +252,42 @@ ELENA's testimony…"; o nicho dá "Names from both banks share the same soaked
 page."; e a Beatriz abre com a fala nova da margem antiga. As fotos estão em
 `docs/arauna/cidades/`. A abertura depois da vitória não foi percorrida, pelo
 mesmo motivo de antes: exigiria vencer as três dentro do emulador.
+
+### O salão das duas margens, e o fim do quebra-cabeça de gelo
+
+O V3 do salão faz uma troca grande, e vale dizer com todas as letras: **o
+quebra-cabeça de gelo do piso de cima deixou de existir.** Saíram o contador
+de passos (`VAR_ICE_STEP_COUNT`), o `STEP_CB_SOOTOPOLIS_ICE`, a quebra
+progressiva das escadas e a queda pelo piso frágil. No lugar entram três
+travessias centrais, abertas uma a uma pelos testemunhos de Beatriz, Elena e
+Cilene lá embaixo, mais dois murais nas margens.
+
+É uma decisão de desenho, não um conserto. O que se ganha é coerência: o
+andar de cima passa a depender da mesma história que o de baixo conta, em vez
+de um enigma de gelo reskinnado que já não tinha gelo. O que se perde é uma
+mecânica. Os pacotes anteriores tinham preservado o enigma com cuidado —
+conferi na época que os quatro atributos batiam byte a byte com a vanilla — e
+este o aposenta.
+
+Nada ficou pendurado: nenhum mapa referencia mais `STEP_CB_SOOTOPOLIS_ICE`, e
+o `VAR_ICE_STEP_COUNT` continua sendo usado, de forma independente, pelo Sky
+Pillar e pelo `cave_hole` — o ginásio simplesmente deixou de ser mais um
+usuário de uma variável compartilhada, o que é melhor e não pior.
+
+Como os anteriores, o V3 veio escrito para as Gêmeas. Desta vez não precisei
+refazer a troca de texto inteira: o **delta** do V3 sobre a rodada anterior
+não tem uma única menção às Gêmeas nem toca na batalha da Celina. Apliquei só
+esse delta sobre a minha versão, então o portão das três testemunhas, a cura,
+a passarela e a batalha simples continuam como estavam. No piso de baixo
+entraram as duas correções de texto que o pacote trazia — as falas que ainda
+mandavam "quebrar o gelo" agora falam das comportas.
+
+Os dois murais são o melhor texto do pacote: o da margem antiga lista as
+famílias deslocadas pela barragem, com nomes riscados mas ainda legíveis; o da
+margem nova registra as casas salvas da cheia, e tem um canto marcado CUSTO
+sem nome nenhum ao lado.
+
+**Conferido em jogo:** a travessia diz "The old-bank crossing waits for
+BEATRIZ's account."; o mural antigo diz "The old-bank mural lists families
+displaced by the dam. Several names were scratched out but can still be
+read." As fotos estão em `docs/arauna/cidades/`.

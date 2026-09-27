@@ -1,83 +1,83 @@
 SootopolisCity_Gym_1F_MapScripts::
-	map_script MAP_SCRIPT_ON_FRAME_TABLE, SootopolisCity_Gym_1F_OnFrame
 	map_script MAP_SCRIPT_ON_RESUME, SootopolisCity_Gym_1F_OnResume
 	map_script MAP_SCRIPT_ON_LOAD, SootopolisCity_Gym_1F_OnLoad
-	map_script MAP_SCRIPT_ON_TRANSITION, SootopolisCity_Gym_1F_OnTransition
 	.byte 0
 
-SootopolisCity_Gym_1F_OnTransition:
-	setvar VAR_ICE_STEP_COUNT, 1
-	end
-
+@ O piso de cima nao e mais o quebra-cabeca de gelo contado por passos: as
+@ tres travessias centrais abrem pelos testemunhos do piso de baixo, e o
+@ estado vem das flags de derrota guardadas no save.
 SootopolisCity_Gym_1F_OnResume:
-	setstepcallback STEP_CB_SOOTOPOLIS_ICE
+	setstepcallback STEP_CB_DUMMY
 	end
 
 SootopolisCity_Gym_1F_OnLoad:
-	call SootopolisCity_Gym_1F_EventScript_CheckSetStairMetatiles
-	special SetSootopolisGymCrackedIceMetatiles
+	call_if_defeated TRAINER_ANDREA, SootopolisCity_Gym_1F_EventScript_OpenOldCrossing
+	call_if_defeated TRAINER_DAPHNE, SootopolisCity_Gym_1F_EventScript_OpenNewCrossing
+	call_if_defeated TRAINER_BRIANNA, SootopolisCity_Gym_1F_EventScript_OpenArchiveCrossing
 	end
 
-SootopolisCity_Gym_1F_EventScript_CheckSetStairMetatiles::
-	goto_if_lt VAR_ICE_STEP_COUNT, 8, SootopolisCity_Gym_1F_EventScript_StopCheckingStairs  @ All stairs ice
-	goto_if_lt VAR_ICE_STEP_COUNT, 28, SootopolisCity_Gym_1F_EventScript_OpenFirstStairs
-	goto_if_lt VAR_ICE_STEP_COUNT, 67, SootopolisCity_Gym_1F_EventScript_OpenFirstAndSecondStairs
-	setmetatile 8, 4, METATILE_SootopolisGym_Stairs, FALSE
-	setmetatile 8, 5, METATILE_SootopolisGym_Stairs, FALSE
-SootopolisCity_Gym_1F_EventScript_OpenFirstAndSecondStairs::
-	setmetatile 8, 10, METATILE_SootopolisGym_Stairs, FALSE
-	setmetatile 8, 11, METATILE_SootopolisGym_Stairs, FALSE
-SootopolisCity_Gym_1F_EventScript_OpenFirstStairs::
-	setmetatile 8, 15, METATILE_SootopolisGym_Stairs, FALSE
-	setmetatile 8, 16, METATILE_SootopolisGym_Stairs, FALSE
-SootopolisCity_Gym_1F_EventScript_StopCheckingStairs::
+SootopolisCity_Gym_1F_EventScript_OpenOldCrossing::
+	setmetatile 8, 16, 0x211, FALSE
 	return
 
-SootopolisCity_Gym_1F_OnFrame:
-	map_script_2 VAR_ICE_STEP_COUNT, 8, SootopolisCity_Gym_1F_EventScript_UnlockFirstStairs
-	map_script_2 VAR_ICE_STEP_COUNT, 28, SootopolisCity_Gym_1F_EventScript_UnlockSecondStairs
-	map_script_2 VAR_ICE_STEP_COUNT, 67, SootopolisCity_Gym_1F_EventScript_UnlockThirdStairs
-	map_script_2 VAR_ICE_STEP_COUNT, 0, SootopolisCity_Gym_1F_EventScript_FallThroughIce
-	.2byte 0
+SootopolisCity_Gym_1F_EventScript_OpenNewCrossing::
+	setmetatile 8, 11, 0x211, FALSE
+	return
 
-SootopolisCity_Gym_1F_EventScript_UnlockFirstStairs::
-	addvar VAR_ICE_STEP_COUNT, 1
-	delay 40
-	playse SE_ICE_STAIRS
-	call SootopolisCity_Gym_1F_EventScript_CheckSetStairMetatiles
-	special DrawWholeMapView
-	end
+SootopolisCity_Gym_1F_EventScript_OpenArchiveCrossing::
+	setmetatile 8, 6, 0x211, FALSE
+	return
 
-SootopolisCity_Gym_1F_EventScript_UnlockSecondStairs::
-	addvar VAR_ICE_STEP_COUNT, 1
-	delay 40
-	playse SE_ICE_STAIRS
-	call SootopolisCity_Gym_1F_EventScript_CheckSetStairMetatiles
-	special DrawWholeMapView
-	end
-
-SootopolisCity_Gym_1F_EventScript_UnlockThirdStairs::
-	addvar VAR_ICE_STEP_COUNT, 1
-	delay 40
-	playse SE_ICE_STAIRS
-	call SootopolisCity_Gym_1F_EventScript_CheckSetStairMetatiles
-	special DrawWholeMapView
-	end
-
-SootopolisCity_Gym_1F_EventScript_FallThroughIce::
+SootopolisCity_Gym_1F_EventScript_OldCrossing::
 	lockall
-	delay 20
-	applymovement LOCALID_PLAYER, SootopolisCity_Gym_1F_Movement_FallThroughIce
-	waitmovement 0
-	playse SE_FALL
-	delay 60
-	warphole MAP_SOOTOPOLIS_CITY_GYM_B1F
-	waitstate
+	goto_if_defeated TRAINER_ANDREA, SootopolisCity_Gym_1F_EventScript_OldCrossingOpen
+	msgbox SootopolisCity_Gym_1F_Text_OldCrossingClosed, MSGBOX_DEFAULT
+	releaseall
 	end
 
-SootopolisCity_Gym_1F_Movement_FallThroughIce:
-	set_invisible
-	step_end
+SootopolisCity_Gym_1F_EventScript_OldCrossingOpen::
+	call SootopolisCity_Gym_1F_EventScript_OpenOldCrossing
+	special DrawWholeMapView
+	releaseall
+	end
+
+SootopolisCity_Gym_1F_EventScript_NewCrossing::
+	lockall
+	goto_if_defeated TRAINER_DAPHNE, SootopolisCity_Gym_1F_EventScript_NewCrossingOpen
+	msgbox SootopolisCity_Gym_1F_Text_NewCrossingClosed, MSGBOX_DEFAULT
+	releaseall
+	end
+
+SootopolisCity_Gym_1F_EventScript_NewCrossingOpen::
+	call SootopolisCity_Gym_1F_EventScript_OpenNewCrossing
+	special DrawWholeMapView
+	releaseall
+	end
+
+SootopolisCity_Gym_1F_EventScript_ArchiveCrossing::
+	lockall
+	goto_if_defeated TRAINER_BRIANNA, SootopolisCity_Gym_1F_EventScript_ArchiveCrossingOpen
+	msgbox SootopolisCity_Gym_1F_Text_ArchiveCrossingClosed, MSGBOX_DEFAULT
+	releaseall
+	end
+
+SootopolisCity_Gym_1F_EventScript_ArchiveCrossingOpen::
+	call SootopolisCity_Gym_1F_EventScript_OpenArchiveCrossing
+	special DrawWholeMapView
+	releaseall
+	end
+
+SootopolisCity_Gym_1F_EventScript_OldBankMural::
+	lockall
+	msgbox SootopolisCity_Gym_1F_Text_OldBankMural, MSGBOX_DEFAULT
+	releaseall
+	end
+
+SootopolisCity_Gym_1F_EventScript_NewBankMural::
+	lockall
+	msgbox SootopolisCity_Gym_1F_Text_NewBankMural, MSGBOX_DEFAULT
+	releaseall
+	end
 
 SootopolisCity_Gym_1F_EventScript_Juan::
 @ As tres testemunhas do piso de baixo -- a margem antiga, a margem nova e o
@@ -325,3 +325,27 @@ SootopolisCity_Gym_1F_Text_MemoriesTogether:
 SootopolisCity_Gym_1F_Text_ReturnToCity:
 	.string "This return bridge leads\n"
 	.string "back to town. Leave now?$"
+
+SootopolisCity_Gym_1F_Text_OldCrossingClosed:
+	.string "The old-bank crossing waits\n"
+	.string "for BEATRIZ's account.$"
+
+SootopolisCity_Gym_1F_Text_NewCrossingClosed:
+	.string "The new-bank crossing waits\n"
+	.string "for ELENA's account.$"
+
+SootopolisCity_Gym_1F_Text_ArchiveCrossingClosed:
+	.string "The last crossing holds\n"
+	.string "CILENE's flooded record.$"
+
+SootopolisCity_Gym_1F_Text_OldBankMural:
+	.string "The old-bank mural lists\n"
+	.string "families displaced by the dam.\p"
+	.string "Several names were scratched\n"
+	.string "out but can still be read.$"
+
+SootopolisCity_Gym_1F_Text_NewBankMural:
+	.string "The new-bank mural records\n"
+	.string "homes saved from the flood.\p"
+	.string "A corner marked COST has\n"
+	.string "no names beside it.$"

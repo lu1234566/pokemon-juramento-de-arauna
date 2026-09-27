@@ -89,6 +89,46 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "SootopolisCity_Gym_1F_EventScript_ReturnToCity"
+    },
+    {
+      "type": "sign",
+      "x": 8,
+      "y": 16,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "SootopolisCity_Gym_1F_EventScript_OldCrossing"
+    },
+    {
+      "type": "sign",
+      "x": 8,
+      "y": 11,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "SootopolisCity_Gym_1F_EventScript_NewCrossing"
+    },
+    {
+      "type": "sign",
+      "x": 8,
+      "y": 6,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "SootopolisCity_Gym_1F_EventScript_ArchiveCrossing"
+    },
+    {
+      "type": "sign",
+      "x": 4,
+      "y": 8,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "SootopolisCity_Gym_1F_EventScript_OldBankMural"
+    },
+    {
+      "type": "sign",
+      "x": 12,
+      "y": 12,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "SootopolisCity_Gym_1F_EventScript_NewBankMural"
     }
   ]
 }
