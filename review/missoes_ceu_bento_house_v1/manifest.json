@@ -1,0 +1,33 @@
+{
+  "new_files": [
+    "data/layouts/MossdeepCity_StevensHouse_Arauna/border.bin",
+    "data/layouts/MossdeepCity_StevensHouse_Arauna/map.bin",
+    "data/tilesets/secondary/arauna_missoes_ceu_bento_house_v1/metatile_attributes.bin",
+    "data/tilesets/secondary/arauna_missoes_ceu_bento_house_v1/metatiles.bin",
+    "data/tilesets/secondary/arauna_missoes_ceu_bento_house_v1/palettes/00.pal",
+    "data/tilesets/secondary/arauna_missoes_ceu_bento_house_v1/palettes/01.pal",
+    "data/tilesets/secondary/arauna_missoes_ceu_bento_house_v1/palettes/02.pal",
+    "data/tilesets/secondary/arauna_missoes_ceu_bento_house_v1/palettes/03.pal",
+    "data/tilesets/secondary/arauna_missoes_ceu_bento_house_v1/palettes/04.pal",
+    "data/tilesets/secondary/arauna_missoes_ceu_bento_house_v1/palettes/05.pal",
+    "data/tilesets/secondary/arauna_missoes_ceu_bento_house_v1/palettes/06.pal",
+    "data/tilesets/secondary/arauna_missoes_ceu_bento_house_v1/palettes/07.pal",
+    "data/tilesets/secondary/arauna_missoes_ceu_bento_house_v1/palettes/08.pal",
+    "data/tilesets/secondary/arauna_missoes_ceu_bento_house_v1/palettes/09.pal",
+    "data/tilesets/secondary/arauna_missoes_ceu_bento_house_v1/palettes/10.pal",
+    "data/tilesets/secondary/arauna_missoes_ceu_bento_house_v1/palettes/11.pal",
+    "data/tilesets/secondary/arauna_missoes_ceu_bento_house_v1/palettes/12.pal",
+    "data/tilesets/secondary/arauna_missoes_ceu_bento_house_v1/palettes/13.pal",
+    "data/tilesets/secondary/arauna_missoes_ceu_bento_house_v1/palettes/14.pal",
+    "data/tilesets/secondary/arauna_missoes_ceu_bento_house_v1/palettes/15.pal",
+    "data/tilesets/secondary/arauna_missoes_ceu_bento_house_v1/tiles.png",
+    "docs/MISSOES_CEU_BENTO_HOUSE_V1.md",
+    "review/missoes_ceu_bento_house_v1/manifest.json",
+    "tools/arauna_maps/apply_missoes_ceu_bento_house_v1.py",
+    "tools/arauna_maps/build_missoes_ceu_bento_house_v1.py",
+    "tools/arauna_maps/package_missoes_ceu_bento_house_v1.py",
+    "tools/arauna_maps/validate_missoes_ceu_bento_house_v1.py"
+  ],
+  "map_baseline": "a99b1a2f8d5c404839e9889cd717b4d12c8d846de5e42749926beeeb9abeb247",
+  "new_layout_id": "LAYOUT_ARAUNA_MISSOES_CEU_BENTO_HOUSE"
+}

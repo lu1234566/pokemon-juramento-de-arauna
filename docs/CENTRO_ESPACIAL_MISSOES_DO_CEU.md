@@ -92,3 +92,32 @@ verdade**: sair da Casa 1 cai em Missões do Céu. A foto está em
 
 A Casa de Bento, a arena do ginásio e os dois andares da antiga Game Corner
 ainda esperam arte própria.
+
+## A Casa de Seu Bento
+
+A casa no slot `MossdeepCity_StevensHouse`, 11 × 8, com banco próprio derivado
+da arte costeira dos interiores: mesa com os registros em cima, parede clara e
+vitrines na lateral. É o estúdio do guardião de nomes, e a mesa cheia de
+papéis é exatamente a fala dele — "quando um nome cai da boca das pessoas, eu
+anoto".
+
+### O detalhe que podia quebrar
+
+O script desta casa esconde a carta com
+`setmetatile 6, 4, METATILE_GenericBuilding_TableEdge, TRUE`, e esse metatile
+é o `0x2F1` do banco `generic_building`. Trocar o banco secundário do mapa sem
+esse número no lugar certo deixaria a carta impossível de esconder.
+
+Conferido: o banco novo tem o `0x2F1` com o atributo `0x1000`, **idêntico** ao
+do banco antigo. E as 88 células mantêm colisão e elevação sem uma única
+diferença, então os dois warps, os três objetos, os quatro pontos de leitura e
+o corredor em que Seu Bento anda, de `(9,6)` a `(3,6)`, continuam como estavam.
+O validador do pacote marca `script_commands_unchanged` e
+`collision_elevation_unchanged`.
+
+### Conferido em jogo
+
+A casa percorrida no emulador, 110 voltas, sem travamento e com a paleta
+certa. A foto está em `docs/arauna/cidades/casa_de_bento.png`.
+
+Sobram a arena do ginásio e os dois andares da antiga Game Corner.

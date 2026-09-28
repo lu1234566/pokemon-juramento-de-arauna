@@ -4870,6 +4870,16 @@
       "secondary_tileset": "gTileset_AraunaMissoesCeuInteriorsV1",
       "border_filepath": "data/layouts/MossdeepCity_PokemonCenter_2F_Arauna/border.bin",
       "blockdata_filepath": "data/layouts/MossdeepCity_PokemonCenter_2F_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_MISSOES_CEU_BENTO_HOUSE",
+      "name": "MossdeepCity_BentoHouse_Arauna_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaMissoesCeuBentoHouseV1",
+      "border_filepath": "data/layouts/MossdeepCity_StevensHouse_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/MossdeepCity_StevensHouse_Arauna/map.bin"
     }
   ]
 }
