@@ -1160,3 +1160,16 @@ const struct Tileset gTileset_AraunaMissoesCeuSpaceCenterV1 =
     .callback = NULL,
 };
 // MISSOES_CEU_SPACE_CENTER_V1_END
+
+// MISSOES_CEU_INTERIORS_V1_BEGIN
+const struct Tileset gTileset_AraunaMissoesCeuInteriorsV1 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaMissoesCeuInteriorsV1,
+    .palettes = gTilesetPalettes_AraunaMissoesCeuInteriorsV1,
+    .metatiles = gMetatiles_AraunaMissoesCeuInteriorsV1,
+    .metatileAttributes = gMetatileAttributes_AraunaMissoesCeuInteriorsV1,
+    .callback = NULL,
+};
+// MISSOES_CEU_INTERIORS_V1_END

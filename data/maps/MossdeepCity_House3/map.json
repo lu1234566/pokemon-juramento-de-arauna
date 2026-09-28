@@ -1,7 +1,7 @@
 {
   "id": "MAP_MOSSDEEP_CITY_HOUSE3",
   "name": "MossdeepCity_House3",
-  "layout": "LAYOUT_HOUSE2",
+  "layout": "LAYOUT_ARAUNA_MISSOES_CEU_INTERIORS_HOUSE3",
   "music": "MUS_RUSTBORO",
   "region_map_section": "MAPSEC_MOSSDEEP_CITY",
   "requires_flash": false,
@@ -16,8 +16,8 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_FISHERMAN",
-      "x": 4,
-      "y": 4,
+      "x": 5,
+      "y": 7,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
@@ -30,15 +30,15 @@
   ],
   "warp_events": [
     {
-      "x": 3,
-      "y": 7,
+      "x": 5,
+      "y": 10,
       "elevation": 0,
       "dest_map": "MAP_MOSSDEEP_CITY",
       "dest_warp_id": "5"
     },
     {
-      "x": 4,
-      "y": 7,
+      "x": 6,
+      "y": 10,
       "elevation": 0,
       "dest_map": "MAP_MOSSDEEP_CITY",
       "dest_warp_id": "5"

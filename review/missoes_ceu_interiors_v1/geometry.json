@@ -1,0 +1,912 @@
+{
+  "maps": {
+    "MossdeepCity_House1": {
+      "layout": "LAYOUT_ARAUNA_MISSOES_CEU_INTERIORS_HOUSE1",
+      "size": [
+        12,
+        11
+      ],
+      "warps": [
+        [
+          5,
+          10,
+          "MAP_MOSSDEEP_CITY",
+          "0"
+        ],
+        [
+          6,
+          10,
+          "MAP_MOSSDEEP_CITY",
+          "0"
+        ]
+      ],
+      "npcs": [
+        [
+          4,
+          7,
+          "MossdeepCity_House1_EventScript_BlackBelt"
+        ],
+        [
+          8,
+          6,
+          "MossdeepCity_House1_EventScript_Woman"
+        ]
+      ],
+      "modules": [
+        {
+          "name": "table",
+          "cells": [
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              3
+            ],
+            [
+              4,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              4,
+              4
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              4,
+              5
+            ]
+          ]
+        },
+        {
+          "name": "bed",
+          "cells": [
+            [
+              8,
+              2
+            ],
+            [
+              9,
+              2
+            ],
+            [
+              8,
+              3
+            ],
+            [
+              9,
+              3
+            ]
+          ]
+        },
+        {
+          "name": "rug",
+          "cells": [
+            [
+              4,
+              7
+            ],
+            [
+              5,
+              7
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              4,
+              8
+            ],
+            [
+              5,
+              8
+            ],
+            [
+              6,
+              8
+            ]
+          ]
+        },
+        {
+          "name": "lantern",
+          "cells": [
+            [
+              10,
+              2
+            ],
+            [
+              10,
+              3
+            ]
+          ]
+        }
+      ]
+    },
+    "MossdeepCity_House2": {
+      "layout": "LAYOUT_ARAUNA_MISSOES_CEU_INTERIORS_HOUSE2",
+      "size": [
+        10,
+        9
+      ],
+      "warps": [
+        [
+          3,
+          8,
+          "MAP_MOSSDEEP_CITY",
+          "3"
+        ],
+        [
+          4,
+          8,
+          "MAP_MOSSDEEP_CITY",
+          "3"
+        ]
+      ],
+      "npcs": [
+        [
+          6,
+          6,
+          "MossdeepCity_House2_EventScript_Man"
+        ],
+        [
+          4,
+          4,
+          "MossdeepCity_House2_EventScript_Twin"
+        ],
+        [
+          4,
+          5,
+          "MossdeepCity_House2_EventScript_Wingull"
+        ]
+      ],
+      "collision_elevation_unchanged": true,
+      "wingull_path_fixed": true
+    },
+    "MossdeepCity_House3": {
+      "layout": "LAYOUT_ARAUNA_MISSOES_CEU_INTERIORS_HOUSE3",
+      "size": [
+        12,
+        11
+      ],
+      "warps": [
+        [
+          5,
+          10,
+          "MAP_MOSSDEEP_CITY",
+          "5"
+        ],
+        [
+          6,
+          10,
+          "MAP_MOSSDEEP_CITY",
+          "5"
+        ]
+      ],
+      "npcs": [
+        [
+          5,
+          7,
+          "MossdeepCity_House3_EventScript_SuperRodFisherman"
+        ]
+      ],
+      "modules": [
+        {
+          "name": "shelf",
+          "cells": [
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              3
+            ]
+          ]
+        },
+        {
+          "name": "table",
+          "cells": [
+            [
+              7,
+              3
+            ],
+            [
+              8,
+              3
+            ],
+            [
+              9,
+              3
+            ],
+            [
+              7,
+              4
+            ],
+            [
+              8,
+              4
+            ],
+            [
+              9,
+              4
+            ],
+            [
+              7,
+              5
+            ],
+            [
+              8,
+              5
+            ],
+            [
+              9,
+              5
+            ]
+          ]
+        },
+        {
+          "name": "bed",
+          "cells": [
+            [
+              2,
+              6
+            ],
+            [
+              3,
+              6
+            ],
+            [
+              2,
+              7
+            ],
+            [
+              3,
+              7
+            ]
+          ]
+        },
+        {
+          "name": "lantern",
+          "cells": [
+            [
+              10,
+              2
+            ],
+            [
+              10,
+              3
+            ]
+          ]
+        }
+      ]
+    },
+    "MossdeepCity_House4": {
+      "layout": "LAYOUT_ARAUNA_MISSOES_CEU_INTERIORS_HOUSE4",
+      "size": [
+        12,
+        11
+      ],
+      "warps": [
+        [
+          5,
+          10,
+          "MAP_MOSSDEEP_CITY",
+          "7"
+        ],
+        [
+          6,
+          10,
+          "MAP_MOSSDEEP_CITY",
+          "7"
+        ]
+      ],
+      "npcs": [
+        [
+          4,
+          7,
+          "MossdeepCity_House4_EventScript_Woman"
+        ],
+        [
+          8,
+          6,
+          "MossdeepCity_House4_EventScript_NinjaBoy"
+        ],
+        [
+          5,
+          8,
+          "MossdeepCity_House4_EventScript_Skitty"
+        ]
+      ],
+      "modules": [
+        {
+          "name": "bed",
+          "cells": [
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ]
+        },
+        {
+          "name": "table",
+          "cells": [
+            [
+              7,
+              3
+            ],
+            [
+              8,
+              3
+            ],
+            [
+              9,
+              3
+            ],
+            [
+              7,
+              4
+            ],
+            [
+              8,
+              4
+            ],
+            [
+              9,
+              4
+            ],
+            [
+              7,
+              5
+            ],
+            [
+              8,
+              5
+            ],
+            [
+              9,
+              5
+            ]
+          ]
+        },
+        {
+          "name": "plant",
+          "cells": [
+            [
+              9,
+              7
+            ],
+            [
+              10,
+              7
+            ],
+            [
+              9,
+              8
+            ],
+            [
+              10,
+              8
+            ]
+          ]
+        },
+        {
+          "name": "lantern",
+          "cells": [
+            [
+              10,
+              2
+            ],
+            [
+              10,
+              3
+            ]
+          ]
+        }
+      ]
+    },
+    "MossdeepCity_Mart": {
+      "layout": "LAYOUT_ARAUNA_MISSOES_CEU_INTERIORS_MART",
+      "size": [
+        12,
+        11
+      ],
+      "warps": [
+        [
+          5,
+          10,
+          "MAP_MOSSDEEP_CITY",
+          "4"
+        ],
+        [
+          6,
+          10,
+          "MAP_MOSSDEEP_CITY",
+          "4"
+        ]
+      ],
+      "npcs": [
+        [
+          4,
+          6,
+          "MossdeepCity_Mart_EventScript_Clerk"
+        ],
+        [
+          6,
+          7,
+          "MossdeepCity_Mart_EventScript_Woman"
+        ],
+        [
+          9,
+          7,
+          "MossdeepCity_Mart_EventScript_Boy"
+        ],
+        [
+          8,
+          5,
+          "MossdeepCity_Mart_EventScript_Sailor"
+        ]
+      ],
+      "modules": [
+        {
+          "name": "chart",
+          "cells": [
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              3
+            ]
+          ]
+        },
+        {
+          "name": "shelf",
+          "cells": [
+            [
+              8,
+              3
+            ],
+            [
+              9,
+              3
+            ],
+            [
+              8,
+              4
+            ],
+            [
+              9,
+              4
+            ]
+          ]
+        },
+        {
+          "name": "rug",
+          "cells": [
+            [
+              4,
+              7
+            ],
+            [
+              5,
+              7
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              4,
+              8
+            ],
+            [
+              5,
+              8
+            ],
+            [
+              6,
+              8
+            ]
+          ]
+        },
+        {
+          "name": "lantern",
+          "cells": [
+            [
+              10,
+              2
+            ],
+            [
+              10,
+              3
+            ]
+          ]
+        }
+      ]
+    },
+    "MossdeepCity_PokemonCenter_1F": {
+      "layout": "LAYOUT_ARAUNA_MISSOES_CEU_INTERIORS_POKEMONCENTER_1F",
+      "size": [
+        14,
+        9
+      ],
+      "warps": [
+        [
+          7,
+          8,
+          "MAP_MOSSDEEP_CITY",
+          "2"
+        ],
+        [
+          6,
+          8,
+          "MAP_MOSSDEEP_CITY",
+          "2"
+        ],
+        [
+          1,
+          6,
+          "MAP_MOSSDEEP_CITY_POKEMON_CENTER_2F",
+          "0"
+        ]
+      ],
+      "npcs": [
+        [
+          7,
+          3,
+          "MossdeepCity_PokemonCenter_1F_EventScript_Nurse"
+        ],
+        [
+          8,
+          4,
+          "MossdeepCity_PokemonCenter_1F_EventScript_Woman"
+        ],
+        [
+          3,
+          5,
+          "MossdeepCity_PokemonCenter_1F_EventScript_Girl"
+        ]
+      ],
+      "modules": [
+        {
+          "name": "healer",
+          "cells": [
+            [
+              5,
+              0
+            ],
+            [
+              6,
+              0
+            ],
+            [
+              7,
+              0
+            ],
+            [
+              8,
+              0
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              6,
+              1
+            ],
+            [
+              7,
+              1
+            ],
+            [
+              8,
+              1
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              6,
+              2
+            ],
+            [
+              7,
+              2
+            ],
+            [
+              8,
+              2
+            ]
+          ]
+        },
+        {
+          "name": "shelf",
+          "cells": [
+            [
+              11,
+              2
+            ],
+            [
+              12,
+              2
+            ],
+            [
+              11,
+              3
+            ],
+            [
+              12,
+              3
+            ]
+          ]
+        },
+        {
+          "name": "plant",
+          "cells": [
+            [
+              11,
+              6
+            ],
+            [
+              12,
+              6
+            ],
+            [
+              11,
+              7
+            ],
+            [
+              12,
+              7
+            ]
+          ]
+        },
+        {
+          "name": "pc",
+          "cells": [
+            [
+              11,
+              4
+            ],
+            [
+              12,
+              4
+            ],
+            [
+              11,
+              5
+            ],
+            [
+              12,
+              5
+            ]
+          ]
+        },
+        {
+          "name": "rug",
+          "cells": [
+            [
+              5,
+              5
+            ],
+            [
+              6,
+              5
+            ],
+            [
+              7,
+              5
+            ],
+            [
+              5,
+              6
+            ],
+            [
+              6,
+              6
+            ],
+            [
+              7,
+              6
+            ]
+          ]
+        }
+      ]
+    },
+    "MossdeepCity_PokemonCenter_2F": {
+      "layout": "LAYOUT_ARAUNA_MISSOES_CEU_INTERIORS_POKEMONCENTER_2F",
+      "size": [
+        14,
+        10
+      ],
+      "warps": [
+        [
+          1,
+          6,
+          "MAP_MOSSDEEP_CITY_POKEMON_CENTER_1F",
+          "2"
+        ],
+        [
+          5,
+          1,
+          "MAP_UNION_ROOM",
+          "0"
+        ],
+        [
+          9,
+          1,
+          "MAP_TRADE_CENTER",
+          "0"
+        ]
+      ],
+      "npcs": [
+        [
+          6,
+          2,
+          "Common_EventScript_UnionRoomAttendant"
+        ],
+        [
+          2,
+          2,
+          "Common_EventScript_WirelessClubAttendant"
+        ],
+        [
+          10,
+          2,
+          "Common_EventScript_DirectCornerAttendant"
+        ],
+        [
+          1,
+          2,
+          "CableClub_EventScript_MysteryGiftMan"
+        ],
+        [
+          11,
+          7,
+          "MossdeepCity_PokemonCenter_2F_EventScript_Woman5"
+        ]
+      ],
+      "modules": [
+        {
+          "name": "link",
+          "cells": [
+            [
+              4,
+              4
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              6,
+              4
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              5,
+              5
+            ],
+            [
+              6,
+              5
+            ]
+          ]
+        },
+        {
+          "name": "link",
+          "cells": [
+            [
+              8,
+              4
+            ],
+            [
+              9,
+              4
+            ],
+            [
+              10,
+              4
+            ],
+            [
+              8,
+              5
+            ],
+            [
+              9,
+              5
+            ],
+            [
+              10,
+              5
+            ]
+          ]
+        },
+        {
+          "name": "rug",
+          "cells": [
+            [
+              5,
+              7
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              7,
+              7
+            ],
+            [
+              5,
+              8
+            ],
+            [
+              6,
+              8
+            ],
+            [
+              7,
+              8
+            ]
+          ]
+        }
+      ]
+    }
+  },
+  "atlas": "art/arauna_missoes_ceu_interiors_v1/source_atlas.png",
+  "metatiles": 229,
+  "new_tiles": 387,
+  "used_metatiles": 144
+}

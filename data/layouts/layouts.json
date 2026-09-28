@@ -4800,6 +4800,76 @@
       "secondary_tileset": "gTileset_AraunaAguasMboiInteriorsV1",
       "border_filepath": "data/layouts/SootopolisCity_PokemonCenter_2F_Arauna/border.bin",
       "blockdata_filepath": "data/layouts/SootopolisCity_PokemonCenter_2F_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_MISSOES_CEU_INTERIORS_HOUSE1",
+      "name": "MossdeepCity_House1_Arauna_Layout",
+      "width": 12,
+      "height": 11,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaMissoesCeuInteriorsV1",
+      "border_filepath": "data/layouts/MossdeepCity_House1_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/MossdeepCity_House1_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_MISSOES_CEU_INTERIORS_HOUSE2",
+      "name": "MossdeepCity_House2_Arauna_Layout",
+      "width": 10,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaMissoesCeuInteriorsV1",
+      "border_filepath": "data/layouts/MossdeepCity_House2_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/MossdeepCity_House2_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_MISSOES_CEU_INTERIORS_HOUSE3",
+      "name": "MossdeepCity_House3_Arauna_Layout",
+      "width": 12,
+      "height": 11,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaMissoesCeuInteriorsV1",
+      "border_filepath": "data/layouts/MossdeepCity_House3_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/MossdeepCity_House3_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_MISSOES_CEU_INTERIORS_HOUSE4",
+      "name": "MossdeepCity_House4_Arauna_Layout",
+      "width": 12,
+      "height": 11,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaMissoesCeuInteriorsV1",
+      "border_filepath": "data/layouts/MossdeepCity_House4_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/MossdeepCity_House4_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_MISSOES_CEU_INTERIORS_MART",
+      "name": "MossdeepCity_Mart_Arauna_Layout",
+      "width": 12,
+      "height": 11,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaMissoesCeuInteriorsV1",
+      "border_filepath": "data/layouts/MossdeepCity_Mart_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/MossdeepCity_Mart_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_MISSOES_CEU_INTERIORS_POKEMONCENTER_1F",
+      "name": "MossdeepCity_PokemonCenter_1F_Arauna_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaMissoesCeuInteriorsV1",
+      "border_filepath": "data/layouts/MossdeepCity_PokemonCenter_1F_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/MossdeepCity_PokemonCenter_1F_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_MISSOES_CEU_INTERIORS_POKEMONCENTER_2F",
+      "name": "MossdeepCity_PokemonCenter_2F_Arauna_Layout",
+      "width": 14,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaMissoesCeuInteriorsV1",
+      "border_filepath": "data/layouts/MossdeepCity_PokemonCenter_2F_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/MossdeepCity_PokemonCenter_2F_Arauna/map.bin"
     }
   ]
 }

@@ -47,3 +47,48 @@ tela do aparelho.
 ## Pendente
 
 Os demais interiores de Missões do Céu.
+
+## Os sete interiores
+
+Quatro casas, a loja e os dois pisos do Centro Pokémon, em banco próprio:
+reboco costeiro claro, madeira verde azulada, tapete geométrico azul e piso
+de pedra. É de propósito diferente das outras duas cidades — a Casa da
+Fogueira é tábua escura inteira, as Águas de M'Boi são pedra com viga escura,
+e Missões do Céu é costeira e clara.
+
+### Layouts próprios, e por que isso importa
+
+Estes sete mapas usavam os layouts **compartilhados** do jogo —
+`LAYOUT_HOUSE1`, `LAYOUT_MART`, `LAYOUT_POKEMON_CENTER_1F` e companhia. Se o
+pacote tivesse reaproveitado esses registros, toda casa genérica de Arauna
+teria virado costeira. Em vez disso ele cria sete layouts novos e repontatoma
+só estes sete `map.json`. Conferido: nenhum outro mapa mudou.
+
+### O que foi redesenhado e o que foi congelado
+
+Três casas, a loja e o Centro ganharam ambientes novos, com NPCs e portas
+reposicionados — as portas desceram de `y=7` para `y=10`.
+
+**A Casa 2 ficou intocada de propósito**, e é a mais importante: um Wingull
+anda por lá em coordenadas fixas, em dois trajetos. Conferido célula a
+célula: zero diferenças de colisão, zero de elevação, e nenhum objeto movido.
+O validador do pacote também marca `wingull_path_preserved` e
+`center_special_metatiles_preserved`.
+
+### Uma limpeza que se repetiu
+
+O instalador deste pacote trouxe de novo o `build_casa_fogueira_interiors_v2.py`,
+cuja fonte não está no repositório. Removido outra vez. Se vier um terceiro
+pacote desta série, vale conferir de novo.
+
+### Conferido em jogo
+
+Os cinco ambientes percorridos no emulador, 80 a 100 voltas cada, sem
+travamento e com a paleta certa. **A porta reposicionada foi atravessada de
+verdade**: sair da Casa 1 cai em Missões do Céu. A foto está em
+`docs/arauna/cidades/ceu_interiores.png`.
+
+### Pendente
+
+A Casa de Bento, a arena do ginásio e os dois andares da antiga Game Corner
+ainda esperam arte própria.
