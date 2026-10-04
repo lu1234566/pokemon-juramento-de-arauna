@@ -1,0 +1,459 @@
+{
+  "maps": {
+    "VerdanturfTown_House": {
+      "size": [
+        12,
+        11
+      ],
+      "modules": [
+        {
+          "name": "bed",
+          "at": [
+            8,
+            2
+          ]
+        },
+        {
+          "name": "table",
+          "at": [
+            1,
+            3
+          ]
+        },
+        {
+          "name": "shelf",
+          "at": [
+            6,
+            2
+          ]
+        },
+        {
+          "name": "rug",
+          "at": [
+            5,
+            7
+          ]
+        },
+        {
+          "name": "plant",
+          "at": [
+            9,
+            7
+          ]
+        }
+      ],
+      "warps": 2,
+      "objects": 2
+    },
+    "VerdanturfTown_FriendshipRatersHouse": {
+      "size": [
+        12,
+        11
+      ],
+      "modules": [
+        {
+          "name": "shelf",
+          "at": [
+            1,
+            2
+          ]
+        },
+        {
+          "name": "plant",
+          "at": [
+            8,
+            2
+          ]
+        },
+        {
+          "name": "rug",
+          "at": [
+            4,
+            6
+          ]
+        },
+        {
+          "name": "table",
+          "at": [
+            7,
+            5
+          ]
+        }
+      ],
+      "warps": 2,
+      "objects": 2
+    },
+    "VerdanturfTown_WandasHouse": {
+      "size": [
+        18,
+        12
+      ],
+      "modules": [
+        {
+          "name": "shelf",
+          "at": [
+            1,
+            2
+          ]
+        },
+        {
+          "name": "chart",
+          "at": [
+            9,
+            2
+          ]
+        },
+        {
+          "name": "bed",
+          "at": [
+            14,
+            2
+          ]
+        },
+        {
+          "name": "table",
+          "at": [
+            5,
+            4
+          ]
+        },
+        {
+          "name": "rug",
+          "at": [
+            11,
+            7
+          ]
+        },
+        {
+          "name": "plant",
+          "at": [
+            1,
+            8
+          ]
+        }
+      ],
+      "warps": 2,
+      "objects": 5
+    },
+    "VerdanturfTown_Mart": {
+      "size": [
+        14,
+        11
+      ],
+      "modules": [
+        {
+          "name": "shelf",
+          "at": [
+            9,
+            2
+          ]
+        },
+        {
+          "name": "shelf",
+          "at": [
+            11,
+            2
+          ]
+        },
+        {
+          "name": "chart",
+          "at": [
+            5,
+            2
+          ]
+        },
+        {
+          "name": "plant",
+          "at": [
+            10,
+            7
+          ]
+        }
+      ],
+      "warps": 2,
+      "objects": 4
+    },
+    "VerdanturfTown_PokemonCenter_1F": {
+      "size": [
+        14,
+        9
+      ],
+      "modules": [
+        {
+          "name": "healer",
+          "cells": [
+            [
+              5,
+              0
+            ],
+            [
+              6,
+              0
+            ],
+            [
+              7,
+              0
+            ],
+            [
+              8,
+              0
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              6,
+              1
+            ],
+            [
+              7,
+              1
+            ],
+            [
+              8,
+              1
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              6,
+              2
+            ],
+            [
+              7,
+              2
+            ],
+            [
+              8,
+              2
+            ]
+          ]
+        },
+        {
+          "name": "shelf",
+          "cells": [
+            [
+              11,
+              2
+            ],
+            [
+              12,
+              2
+            ],
+            [
+              11,
+              3
+            ],
+            [
+              12,
+              3
+            ]
+          ]
+        },
+        {
+          "name": "plant",
+          "cells": [
+            [
+              11,
+              6
+            ],
+            [
+              12,
+              6
+            ],
+            [
+              11,
+              7
+            ],
+            [
+              12,
+              7
+            ]
+          ]
+        },
+        {
+          "name": "pc",
+          "cells": [
+            [
+              11,
+              4
+            ],
+            [
+              12,
+              4
+            ],
+            [
+              11,
+              5
+            ],
+            [
+              12,
+              5
+            ]
+          ]
+        },
+        {
+          "name": "rug",
+          "cells": [
+            [
+              5,
+              5
+            ],
+            [
+              6,
+              5
+            ],
+            [
+              7,
+              5
+            ],
+            [
+              5,
+              6
+            ],
+            [
+              6,
+              6
+            ],
+            [
+              7,
+              6
+            ]
+          ]
+        }
+      ],
+      "warps": 3,
+      "objects": 4
+    },
+    "VerdanturfTown_PokemonCenter_2F": {
+      "size": [
+        14,
+        10
+      ],
+      "modules": [
+        {
+          "name": "link",
+          "cells": [
+            [
+              4,
+              4
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              6,
+              4
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              5,
+              5
+            ],
+            [
+              6,
+              5
+            ]
+          ]
+        },
+        {
+          "name": "link",
+          "cells": [
+            [
+              8,
+              4
+            ],
+            [
+              9,
+              4
+            ],
+            [
+              10,
+              4
+            ],
+            [
+              8,
+              5
+            ],
+            [
+              9,
+              5
+            ],
+            [
+              10,
+              5
+            ]
+          ]
+        },
+        {
+          "name": "rug",
+          "cells": [
+            [
+              5,
+              7
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              7,
+              7
+            ],
+            [
+              5,
+              8
+            ],
+            [
+              6,
+              8
+            ],
+            [
+              7,
+              8
+            ]
+          ]
+        }
+      ],
+      "warps": 3,
+      "objects": 4
+    },
+    "VerdanturfTown_BattleTentLobby": {
+      "size": [
+        13,
+        10
+      ],
+      "modules": [],
+      "warps": 2,
+      "objects": 6
+    },
+    "VerdanturfTown_BattleTentCorridor": {
+      "size": [
+        5,
+        8
+      ],
+      "modules": [],
+      "warps": 0,
+      "objects": 1
+    },
+    "VerdanturfTown_BattleTentBattleRoom": {
+      "size": [
+        13,
+        9
+      ],
+      "modules": [],
+      "warps": 0,
+      "objects": 3
+    }
+  },
+  "tiles": 357,
+  "metatiles": 229,
+  "used_metatiles": 147
+}

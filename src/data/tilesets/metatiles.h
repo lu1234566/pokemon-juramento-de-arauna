@@ -425,3 +425,11 @@ const u16 gMetatileAttributes_AraunaMissoesCeuInteriorsV1[] = INCBIN_U16("data/t
 const u16 gMetatiles_AraunaMissoesCeuBentoHouseV1[] = INCBIN_U16("data/tilesets/secondary/arauna_missoes_ceu_bento_house_v1/metatiles.bin");
 const u16 gMetatileAttributes_AraunaMissoesCeuBentoHouseV1[] = INCBIN_U16("data/tilesets/secondary/arauna_missoes_ceu_bento_house_v1/metatile_attributes.bin");
 // MISSOES_CEU_BENTO_HOUSE_V1_END
+
+// VALE_INTERIORS_V1_BEGIN
+const u16 gMetatiles_AraunaValeInteriorsV1[] = INCBIN_U16("data/tilesets/secondary/arauna_vale_interiors_v1/metatiles.bin");
+const u16 gMetatileAttributes_AraunaValeInteriorsV1[] = INCBIN_U16("data/tilesets/secondary/arauna_vale_interiors_v1/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaValePavilhao[] = INCBIN_U16("data/tilesets/secondary/arauna_vale_pavilhao/metatiles.bin");
+const u16 gMetatileAttributes_AraunaValePavilhao[] = INCBIN_U16("data/tilesets/secondary/arauna_vale_pavilhao/metatile_attributes.bin");
+// VALE_INTERIORS_V1_END

@@ -5750,6 +5750,96 @@
       "secondary_tileset": "gTileset_AraunaPassoCortado",
       "border_filepath": "data/layouts/AraunaPassoCortado/border.bin",
       "blockdata_filepath": "data/layouts/AraunaPassoCortado/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_VALE_INTERIORS_HOUSE",
+      "name": "VerdanturfTown_House_Arauna_Layout",
+      "width": 12,
+      "height": 11,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaValeInteriorsV1",
+      "border_filepath": "data/layouts/VerdanturfTown_House_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/VerdanturfTown_House_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_VALE_INTERIORS_FRIENDSHIPRATERSHOUSE",
+      "name": "VerdanturfTown_FriendshipRatersHouse_Arauna_Layout",
+      "width": 12,
+      "height": 11,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaValeInteriorsV1",
+      "border_filepath": "data/layouts/VerdanturfTown_FriendshipRatersHouse_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/VerdanturfTown_FriendshipRatersHouse_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_VALE_INTERIORS_WANDASHOUSE",
+      "name": "VerdanturfTown_WandasHouse_Arauna_Layout",
+      "width": 18,
+      "height": 12,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaValeInteriorsV1",
+      "border_filepath": "data/layouts/VerdanturfTown_WandasHouse_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/VerdanturfTown_WandasHouse_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_VALE_INTERIORS_MART",
+      "name": "VerdanturfTown_Mart_Arauna_Layout",
+      "width": 14,
+      "height": 11,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaValeInteriorsV1",
+      "border_filepath": "data/layouts/VerdanturfTown_Mart_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/VerdanturfTown_Mart_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_VALE_INTERIORS_POKEMONCENTER_1F",
+      "name": "VerdanturfTown_PokemonCenter_1F_Arauna_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaValeInteriorsV1",
+      "border_filepath": "data/layouts/VerdanturfTown_PokemonCenter_1F_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/VerdanturfTown_PokemonCenter_1F_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_VALE_INTERIORS_POKEMONCENTER_2F",
+      "name": "VerdanturfTown_PokemonCenter_2F_Arauna_Layout",
+      "width": 14,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaValeInteriorsV1",
+      "border_filepath": "data/layouts/VerdanturfTown_PokemonCenter_2F_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/VerdanturfTown_PokemonCenter_2F_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_VALE_INTERIORS_BATTLETENTLOBBY",
+      "name": "VerdanturfTown_BattleTentLobby_Arauna_Layout",
+      "width": 13,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaValePavilhao",
+      "border_filepath": "data/layouts/VerdanturfTown_BattleTentLobby_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/VerdanturfTown_BattleTentLobby_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_VALE_INTERIORS_BATTLETENTCORRIDOR",
+      "name": "VerdanturfTown_BattleTentCorridor_Arauna_Layout",
+      "width": 5,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaValePavilhao",
+      "border_filepath": "data/layouts/VerdanturfTown_BattleTentCorridor_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/VerdanturfTown_BattleTentCorridor_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_VALE_INTERIORS_BATTLETENTBATTLEROOM",
+      "name": "VerdanturfTown_BattleTentBattleRoom_Arauna_Layout",
+      "width": 13,
+      "height": 9,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_AraunaValePavilhao",
+      "border_filepath": "data/layouts/VerdanturfTown_BattleTentBattleRoom_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/VerdanturfTown_BattleTentBattleRoom_Arauna/map.bin"
     }
   ]
 }

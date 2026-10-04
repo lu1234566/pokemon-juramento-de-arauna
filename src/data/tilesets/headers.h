@@ -1603,3 +1603,27 @@ const struct Tileset gTileset_AraunaMissoesCeuBentoHouseV1 =
     .callback = NULL,
 };
 // MISSOES_CEU_BENTO_HOUSE_V1_END
+
+// VALE_INTERIORS_V1_BEGIN
+const struct Tileset gTileset_AraunaValeInteriorsV1 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaValeInteriorsV1,
+    .palettes = gTilesetPalettes_AraunaValeInteriorsV1,
+    .metatiles = gMetatiles_AraunaValeInteriorsV1,
+    .metatileAttributes = gMetatileAttributes_AraunaValeInteriorsV1,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_AraunaValePavilhao =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaValePavilhao,
+    .palettes = gTilesetPalettes_AraunaValePavilhao,
+    .metatiles = gMetatiles_AraunaValePavilhao,
+    .metatileAttributes = gMetatileAttributes_AraunaValePavilhao,
+    .callback = NULL,
+};
+// VALE_INTERIORS_V1_END
