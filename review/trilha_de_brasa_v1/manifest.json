@@ -1,0 +1,33 @@
+{
+  "new_files": [
+    "data/layouts/FieryPath_AraunaTrilhaBrasa/border.bin",
+    "data/layouts/FieryPath_AraunaTrilhaBrasa/map.bin",
+    "data/tilesets/secondary/arauna_trilha_brasa/metatile_attributes.bin",
+    "data/tilesets/secondary/arauna_trilha_brasa/metatiles.bin",
+    "data/tilesets/secondary/arauna_trilha_brasa/palettes/00.pal",
+    "data/tilesets/secondary/arauna_trilha_brasa/palettes/01.pal",
+    "data/tilesets/secondary/arauna_trilha_brasa/palettes/02.pal",
+    "data/tilesets/secondary/arauna_trilha_brasa/palettes/03.pal",
+    "data/tilesets/secondary/arauna_trilha_brasa/palettes/04.pal",
+    "data/tilesets/secondary/arauna_trilha_brasa/palettes/05.pal",
+    "data/tilesets/secondary/arauna_trilha_brasa/palettes/06.pal",
+    "data/tilesets/secondary/arauna_trilha_brasa/palettes/07.pal",
+    "data/tilesets/secondary/arauna_trilha_brasa/palettes/08.pal",
+    "data/tilesets/secondary/arauna_trilha_brasa/palettes/09.pal",
+    "data/tilesets/secondary/arauna_trilha_brasa/palettes/10.pal",
+    "data/tilesets/secondary/arauna_trilha_brasa/palettes/11.pal",
+    "data/tilesets/secondary/arauna_trilha_brasa/palettes/12.pal",
+    "data/tilesets/secondary/arauna_trilha_brasa/palettes/13.pal",
+    "data/tilesets/secondary/arauna_trilha_brasa/palettes/14.pal",
+    "data/tilesets/secondary/arauna_trilha_brasa/palettes/15.pal",
+    "data/tilesets/secondary/arauna_trilha_brasa/tiles.png",
+    "docs/TRILHA_DE_BRASA_V1.md",
+    "review/trilha_de_brasa_v1/manifest.json",
+    "tools/arauna_maps/apply_trilha_de_brasa_v1.py",
+    "tools/arauna_maps/build_trilha_de_brasa_v1.py",
+    "tools/arauna_maps/package_trilha_de_brasa_v1.py",
+    "tools/arauna_maps/validate_trilha_de_brasa_v1.py"
+  ],
+  "map_baseline": "79d72ab7b3773e3916e67fdd77571ad61897a80eb57df500b5415c127fb1d0f6",
+  "new_layout_id": "LAYOUT_ARAUNA_TRILHA_BRASA_V1"
+}

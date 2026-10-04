@@ -1,7 +1,7 @@
 {
   "id": "MAP_ABANDONED_SHIP_DECK",
   "name": "AbandonedShip_Deck",
-  "layout": "LAYOUT_ABANDONED_SHIP_DECK",
+  "layout": "LAYOUT_ARAUNA_NAVIO_DECK_V1",
   "music": "MUS_ABANDONED_SHIP",
   "region_map_section": "MAPSEC_ABANDONED_SHIP",
   "requires_flash": false,
