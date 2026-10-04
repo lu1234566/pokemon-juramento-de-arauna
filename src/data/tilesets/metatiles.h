@@ -296,6 +296,18 @@ const u16 gMetatileAttributes_AraunaSerraCinzaEstacao[] = INCBIN_U16("data/tiles
 const u16 gMetatiles_AraunaMemorialNomes[] = INCBIN_U16("data/tilesets/secondary/arauna_memorial_nomes/metatiles.bin");
 const u16 gMetatileAttributes_AraunaMemorialNomes[] = INCBIN_U16("data/tilesets/secondary/arauna_memorial_nomes/metatile_attributes.bin");
 
+const u16 gMetatiles_AraunaLigaPedra[] = INCBIN_U16("data/tilesets/primary/arauna_liga_pedra/metatiles.bin");
+const u16 gMetatileAttributes_AraunaLigaPedra[] = INCBIN_U16("data/tilesets/primary/arauna_liga_pedra/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaLigaVozes[] = INCBIN_U16("data/tilesets/secondary/arauna_liga_vozes/metatiles.bin");
+const u16 gMetatileAttributes_AraunaLigaVozes[] = INCBIN_U16("data/tilesets/secondary/arauna_liga_vozes/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaLigaHall[] = INCBIN_U16("data/tilesets/secondary/arauna_liga_hall/metatiles.bin");
+const u16 gMetatileAttributes_AraunaLigaHall[] = INCBIN_U16("data/tilesets/secondary/arauna_liga_hall/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaLigaMemoria[] = INCBIN_U16("data/tilesets/secondary/arauna_liga_memoria/metatiles.bin");
+const u16 gMetatileAttributes_AraunaLigaMemoria[] = INCBIN_U16("data/tilesets/secondary/arauna_liga_memoria/metatile_attributes.bin");
+
 const u16 gMetatiles_AraunaAmanhecer[] = INCBIN_U16("data/tilesets/secondary/arauna_amanhecer/metatiles.bin");
 const u16 gMetatileAttributes_AraunaAmanhecer[] = INCBIN_U16("data/tilesets/secondary/arauna_amanhecer/metatile_attributes.bin");
 // END ARAUNA_AMANHECER_V8

@@ -1178,6 +1178,50 @@ const struct Tileset gTileset_AraunaMemorialNomes =
     .callback = NULL,
 };
 
+const struct Tileset gTileset_AraunaLigaPedra =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AraunaLigaPedra,
+    .palettes = gTilesetPalettes_AraunaLigaPedra,
+    .metatiles = gMetatiles_AraunaLigaPedra,
+    .metatileAttributes = gMetatileAttributes_AraunaLigaPedra,
+    .callback = InitTilesetAnim_Building,
+};
+
+const struct Tileset gTileset_AraunaLigaVozes =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaLigaVozes,
+    .palettes = gTilesetPalettes_AraunaLigaVozes,
+    .metatiles = gMetatiles_AraunaLigaVozes,
+    .metatileAttributes = gMetatileAttributes_AraunaLigaVozes,
+    .callback = InitTilesetAnim_EliteFour,
+};
+
+const struct Tileset gTileset_AraunaLigaHall =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaLigaHall,
+    .palettes = gTilesetPalettes_AraunaLigaHall,
+    .metatiles = gMetatiles_AraunaLigaHall,
+    .metatileAttributes = gMetatileAttributes_AraunaLigaHall,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_AraunaLigaMemoria =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaLigaMemoria,
+    .palettes = gTilesetPalettes_AraunaLigaMemoria,
+    .metatiles = gMetatiles_AraunaLigaMemoria,
+    .metatileAttributes = gMetatileAttributes_AraunaLigaMemoria,
+    .callback = NULL,
+};
+
 const struct Tileset gTileset_AraunaAmanhecer =
 {
     .isCompressed = TRUE,

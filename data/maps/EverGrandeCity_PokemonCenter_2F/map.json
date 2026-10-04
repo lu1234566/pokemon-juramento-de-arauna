@@ -1,7 +1,7 @@
 {
   "id": "MAP_EVER_GRANDE_CITY_POKEMON_CENTER_2F",
   "name": "EverGrandeCity_PokemonCenter_2F",
-  "layout": "LAYOUT_POKEMON_CENTER_2F",
+  "layout": "LAYOUT_ARAUNA_LIGA_POKEMONCENTER_2F_V1",
   "music": "MUS_POKE_CENTER",
   "region_map_section": "MAPSEC_EVER_GRANDE_CITY",
   "requires_flash": false,

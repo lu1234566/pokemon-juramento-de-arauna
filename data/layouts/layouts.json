@@ -5590,6 +5590,156 @@
       "secondary_tileset": "gTileset_AraunaMemorialNomes",
       "border_filepath": "data/layouts/AraunaMemorial_Summit/border.bin",
       "blockdata_filepath": "data/layouts/AraunaMemorial_Summit/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_LIGA_CHAMPIONSROOM_V1",
+      "name": "AraunaLiga_ChampionsRoom_Layout",
+      "width": 13,
+      "height": 13,
+      "primary_tileset": "gTileset_AraunaLigaPedra",
+      "secondary_tileset": "gTileset_AraunaLigaVozes",
+      "border_filepath": "data/layouts/AraunaLiga_ChampionsRoom/border.bin",
+      "blockdata_filepath": "data/layouts/AraunaLiga_ChampionsRoom/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_LIGA_DRAKESROOM_V1",
+      "name": "AraunaLiga_DrakesRoom_Layout",
+      "width": 13,
+      "height": 14,
+      "primary_tileset": "gTileset_AraunaLigaPedra",
+      "secondary_tileset": "gTileset_AraunaLigaVozes",
+      "border_filepath": "data/layouts/AraunaLiga_DrakesRoom/border.bin",
+      "blockdata_filepath": "data/layouts/AraunaLiga_DrakesRoom/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_LIGA_GLACIASROOM_V1",
+      "name": "AraunaLiga_GlaciasRoom_Layout",
+      "width": 13,
+      "height": 14,
+      "primary_tileset": "gTileset_AraunaLigaPedra",
+      "secondary_tileset": "gTileset_AraunaLigaVozes",
+      "border_filepath": "data/layouts/AraunaLiga_GlaciasRoom/border.bin",
+      "blockdata_filepath": "data/layouts/AraunaLiga_GlaciasRoom/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_LIGA_HALL1_V1",
+      "name": "AraunaLiga_Hall1_Layout",
+      "width": 11,
+      "height": 13,
+      "primary_tileset": "gTileset_AraunaLigaPedra",
+      "secondary_tileset": "gTileset_AraunaLigaVozes",
+      "border_filepath": "data/layouts/AraunaLiga_Hall1/border.bin",
+      "blockdata_filepath": "data/layouts/AraunaLiga_Hall1/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_LIGA_HALL2_V1",
+      "name": "AraunaLiga_Hall2_Layout",
+      "width": 11,
+      "height": 13,
+      "primary_tileset": "gTileset_AraunaLigaPedra",
+      "secondary_tileset": "gTileset_AraunaLigaVozes",
+      "border_filepath": "data/layouts/AraunaLiga_Hall2/border.bin",
+      "blockdata_filepath": "data/layouts/AraunaLiga_Hall2/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_LIGA_HALL3_V1",
+      "name": "AraunaLiga_Hall3_Layout",
+      "width": 11,
+      "height": 13,
+      "primary_tileset": "gTileset_AraunaLigaPedra",
+      "secondary_tileset": "gTileset_AraunaLigaVozes",
+      "border_filepath": "data/layouts/AraunaLiga_Hall3/border.bin",
+      "blockdata_filepath": "data/layouts/AraunaLiga_Hall3/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_LIGA_HALL4_V1",
+      "name": "AraunaLiga_Hall4_Layout",
+      "width": 11,
+      "height": 34,
+      "primary_tileset": "gTileset_AraunaLigaPedra",
+      "secondary_tileset": "gTileset_AraunaLigaVozes",
+      "border_filepath": "data/layouts/AraunaLiga_Hall4/border.bin",
+      "blockdata_filepath": "data/layouts/AraunaLiga_Hall4/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_LIGA_HALL5_V1",
+      "name": "AraunaLiga_Hall5_Layout",
+      "width": 11,
+      "height": 13,
+      "primary_tileset": "gTileset_AraunaLigaPedra",
+      "secondary_tileset": "gTileset_AraunaLigaVozes",
+      "border_filepath": "data/layouts/AraunaLiga_Hall5/border.bin",
+      "blockdata_filepath": "data/layouts/AraunaLiga_Hall5/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_LIGA_HALLOFFAME_V1",
+      "name": "AraunaLiga_HallOfFame_Layout",
+      "width": 15,
+      "height": 17,
+      "primary_tileset": "gTileset_AraunaLigaPedra",
+      "secondary_tileset": "gTileset_AraunaLigaMemoria",
+      "border_filepath": "data/layouts/AraunaLiga_HallOfFame/border.bin",
+      "blockdata_filepath": "data/layouts/AraunaLiga_HallOfFame/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_LIGA_PHOEBESROOM_V1",
+      "name": "AraunaLiga_PhoebesRoom_Layout",
+      "width": 13,
+      "height": 14,
+      "primary_tileset": "gTileset_AraunaLigaPedra",
+      "secondary_tileset": "gTileset_AraunaLigaVozes",
+      "border_filepath": "data/layouts/AraunaLiga_PhoebesRoom/border.bin",
+      "blockdata_filepath": "data/layouts/AraunaLiga_PhoebesRoom/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_LIGA_POKEMONCENTER_1F_V1",
+      "name": "AraunaLiga_PokemonCenter_1F_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_AraunaLigaPedra",
+      "secondary_tileset": "gTileset_AraunaLigaHall",
+      "border_filepath": "data/layouts/AraunaLiga_PokemonCenter_1F/border.bin",
+      "blockdata_filepath": "data/layouts/AraunaLiga_PokemonCenter_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_LIGA_POKEMONCENTER_2F_V1",
+      "name": "AraunaLiga_PokemonCenter_2F_Layout",
+      "width": 14,
+      "height": 10,
+      "primary_tileset": "gTileset_AraunaLigaPedra",
+      "secondary_tileset": "gTileset_AraunaLigaHall",
+      "border_filepath": "data/layouts/AraunaLiga_PokemonCenter_2F/border.bin",
+      "blockdata_filepath": "data/layouts/AraunaLiga_PokemonCenter_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_LIGA_POKEMONLEAGUE_1F_V1",
+      "name": "AraunaLiga_PokemonLeague_1F_Layout",
+      "width": 19,
+      "height": 12,
+      "primary_tileset": "gTileset_AraunaLigaPedra",
+      "secondary_tileset": "gTileset_AraunaLigaHall",
+      "border_filepath": "data/layouts/AraunaLiga_PokemonLeague_1F/border.bin",
+      "blockdata_filepath": "data/layouts/AraunaLiga_PokemonLeague_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_LIGA_POKEMONLEAGUE_2F_V1",
+      "name": "AraunaLiga_PokemonLeague_2F_Layout",
+      "width": 14,
+      "height": 10,
+      "primary_tileset": "gTileset_AraunaLigaPedra",
+      "secondary_tileset": "gTileset_AraunaLigaHall",
+      "border_filepath": "data/layouts/AraunaLiga_PokemonLeague_2F/border.bin",
+      "blockdata_filepath": "data/layouts/AraunaLiga_PokemonLeague_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_LIGA_SIDNEYSROOM_V1",
+      "name": "AraunaLiga_SidneysRoom_Layout",
+      "width": 13,
+      "height": 14,
+      "primary_tileset": "gTileset_AraunaLigaPedra",
+      "secondary_tileset": "gTileset_AraunaLigaVozes",
+      "border_filepath": "data/layouts/AraunaLiga_SidneysRoom/border.bin",
+      "blockdata_filepath": "data/layouts/AraunaLiga_SidneysRoom/map.bin"
     }
   ]
 }
