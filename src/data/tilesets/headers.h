@@ -1222,6 +1222,28 @@ const struct Tileset gTileset_AraunaLigaMemoria =
     .callback = NULL,
 };
 
+const struct Tileset gTileset_AraunaPassoPedra =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AraunaPassoPedra,
+    .palettes = gTilesetPalettes_AraunaPassoPedra,
+    .metatiles = gMetatiles_AraunaPassoPedra,
+    .metatileAttributes = gMetatileAttributes_AraunaPassoPedra,
+    .callback = InitTilesetAnim_General,
+};
+
+const struct Tileset gTileset_AraunaPassoCortado =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaPassoCortado,
+    .palettes = gTilesetPalettes_AraunaPassoCortado,
+    .metatiles = gMetatiles_AraunaPassoCortado,
+    .metatileAttributes = gMetatileAttributes_AraunaPassoCortado,
+    .callback = NULL,
+};
+
 const struct Tileset gTileset_AraunaAmanhecer =
 {
     .isCompressed = TRUE,

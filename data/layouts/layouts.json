@@ -5740,6 +5740,16 @@
       "secondary_tileset": "gTileset_AraunaLigaVozes",
       "border_filepath": "data/layouts/AraunaLiga_SidneysRoom/border.bin",
       "blockdata_filepath": "data/layouts/AraunaLiga_SidneysRoom/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_PASSO_CORTADO_V1",
+      "name": "AraunaPassoCortado_Layout",
+      "width": 30,
+      "height": 46,
+      "primary_tileset": "gTileset_AraunaPassoPedra",
+      "secondary_tileset": "gTileset_AraunaPassoCortado",
+      "border_filepath": "data/layouts/AraunaPassoCortado/border.bin",
+      "blockdata_filepath": "data/layouts/AraunaPassoCortado/map.bin"
     }
   ]
 }

@@ -308,6 +308,12 @@ const u16 gMetatileAttributes_AraunaLigaHall[] = INCBIN_U16("data/tilesets/secon
 const u16 gMetatiles_AraunaLigaMemoria[] = INCBIN_U16("data/tilesets/secondary/arauna_liga_memoria/metatiles.bin");
 const u16 gMetatileAttributes_AraunaLigaMemoria[] = INCBIN_U16("data/tilesets/secondary/arauna_liga_memoria/metatile_attributes.bin");
 
+const u16 gMetatiles_AraunaPassoPedra[] = INCBIN_U16("data/tilesets/primary/arauna_passo_pedra/metatiles.bin");
+const u16 gMetatileAttributes_AraunaPassoPedra[] = INCBIN_U16("data/tilesets/primary/arauna_passo_pedra/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaPassoCortado[] = INCBIN_U16("data/tilesets/secondary/arauna_passo_cortado/metatiles.bin");
+const u16 gMetatileAttributes_AraunaPassoCortado[] = INCBIN_U16("data/tilesets/secondary/arauna_passo_cortado/metatile_attributes.bin");
+
 const u16 gMetatiles_AraunaAmanhecer[] = INCBIN_U16("data/tilesets/secondary/arauna_amanhecer/metatiles.bin");
 const u16 gMetatileAttributes_AraunaAmanhecer[] = INCBIN_U16("data/tilesets/secondary/arauna_amanhecer/metatile_attributes.bin");
 // END ARAUNA_AMANHECER_V8
