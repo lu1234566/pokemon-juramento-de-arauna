@@ -1,7 +1,7 @@
 {
   "id": "MAP_SLATEPORT_CITY_MART",
   "name": "SlateportCity_Mart",
-  "layout": "LAYOUT_MART",
+  "layout": "LAYOUT_ARAUNA_PORTO_INTERIORS_MART",
   "music": "MUS_POKE_MART",
   "region_map_section": "MAPSEC_SLATEPORT_CITY",
   "requires_flash": false,

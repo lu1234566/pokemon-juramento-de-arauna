@@ -1,7 +1,7 @@
 {
   "id": "MAP_SLATEPORT_CITY_POKEMON_FAN_CLUB",
   "name": "SlateportCity_PokemonFanClub",
-  "layout": "LAYOUT_SLATEPORT_CITY_POKEMON_FAN_CLUB",
+  "layout": "LAYOUT_ARAUNA_PORTO_INTERIORS_POKEMONFANCLUB",
   "music": "MUS_SLATEPORT",
   "region_map_section": "MAPSEC_SLATEPORT_CITY",
   "requires_flash": false,

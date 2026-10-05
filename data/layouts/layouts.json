@@ -5840,6 +5840,866 @@
       "secondary_tileset": "gTileset_AraunaValePavilhao",
       "border_filepath": "data/layouts/VerdanturfTown_BattleTentBattleRoom_Arauna/border.bin",
       "blockdata_filepath": "data/layouts/VerdanturfTown_BattleTentBattleRoom_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_SERRA_INTERIORS_CUTTERSHOUSE",
+      "name": "RustboroCity_CuttersHouse_Arauna_Layout",
+      "width": 11,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaSerraCasas",
+      "border_filepath": "data/layouts/RustboroCity_CuttersHouse_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/RustboroCity_CuttersHouse_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_SERRA_INTERIORS_DEVONCORP_1F",
+      "name": "RustboroCity_DevonCorp_1F_Arauna_Layout",
+      "width": 19,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaSerraTecnica",
+      "border_filepath": "data/layouts/RustboroCity_DevonCorp_1F_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/RustboroCity_DevonCorp_1F_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_SERRA_INTERIORS_DEVONCORP_2F",
+      "name": "RustboroCity_DevonCorp_2F_Arauna_Layout",
+      "width": 19,
+      "height": 9,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_AraunaSerraTecnica",
+      "border_filepath": "data/layouts/RustboroCity_DevonCorp_2F_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/RustboroCity_DevonCorp_2F_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_SERRA_INTERIORS_DEVONCORP_3F",
+      "name": "RustboroCity_DevonCorp_3F_Arauna_Layout",
+      "width": 19,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaSerraTecnica",
+      "border_filepath": "data/layouts/RustboroCity_DevonCorp_3F_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/RustboroCity_DevonCorp_3F_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_SERRA_INTERIORS_FLAT1_1F",
+      "name": "RustboroCity_Flat1_1F_Arauna_Layout",
+      "width": 14,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaSerraCasas",
+      "border_filepath": "data/layouts/RustboroCity_Flat1_1F_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/RustboroCity_Flat1_1F_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_SERRA_INTERIORS_FLAT1_2F",
+      "name": "RustboroCity_Flat1_2F_Arauna_Layout",
+      "width": 14,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaSerraCasas",
+      "border_filepath": "data/layouts/RustboroCity_Flat1_2F_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/RustboroCity_Flat1_2F_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_SERRA_INTERIORS_FLAT2_1F",
+      "name": "RustboroCity_Flat2_1F_Arauna_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaSerraCasas",
+      "border_filepath": "data/layouts/RustboroCity_Flat2_1F_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/RustboroCity_Flat2_1F_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_SERRA_INTERIORS_FLAT2_2F",
+      "name": "RustboroCity_Flat2_2F_Arauna_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaSerraCasas",
+      "border_filepath": "data/layouts/RustboroCity_Flat2_2F_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/RustboroCity_Flat2_2F_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_SERRA_INTERIORS_FLAT2_3F",
+      "name": "RustboroCity_Flat2_3F_Arauna_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaSerraCasas",
+      "border_filepath": "data/layouts/RustboroCity_Flat2_3F_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/RustboroCity_Flat2_3F_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_SERRA_INTERIORS_HOUSE1",
+      "name": "RustboroCity_House1_Arauna_Layout",
+      "width": 13,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaSerraCasas",
+      "border_filepath": "data/layouts/RustboroCity_House1_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/RustboroCity_House1_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_SERRA_INTERIORS_HOUSE2",
+      "name": "RustboroCity_House2_Arauna_Layout",
+      "width": 12,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaSerraCasas",
+      "border_filepath": "data/layouts/RustboroCity_House2_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/RustboroCity_House2_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_SERRA_INTERIORS_HOUSE3",
+      "name": "RustboroCity_House3_Arauna_Layout",
+      "width": 12,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaSerraCasas",
+      "border_filepath": "data/layouts/RustboroCity_House3_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/RustboroCity_House3_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_SERRA_INTERIORS_MART",
+      "name": "RustboroCity_Mart_Arauna_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaSerraVenda",
+      "border_filepath": "data/layouts/RustboroCity_Mart_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/RustboroCity_Mart_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_SERRA_INTERIORS_POKEMONCENTER_1F",
+      "name": "RustboroCity_PokemonCenter_1F_Arauna_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaSerraCentro",
+      "border_filepath": "data/layouts/RustboroCity_PokemonCenter_1F_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/RustboroCity_PokemonCenter_1F_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_SERRA_INTERIORS_POKEMONCENTER_2F",
+      "name": "RustboroCity_PokemonCenter_2F_Arauna_Layout",
+      "width": 14,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaSerraCentro",
+      "border_filepath": "data/layouts/RustboroCity_PokemonCenter_2F_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/RustboroCity_PokemonCenter_2F_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_SERRA_INTERIORS_POKEMONSCHOOL",
+      "name": "RustboroCity_PokemonSchool_Arauna_Layout",
+      "width": 12,
+      "height": 11,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaSerraEscola",
+      "border_filepath": "data/layouts/RustboroCity_PokemonSchool_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/RustboroCity_PokemonSchool_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_PORTO_INTERIORS_BATTLETENTBATTLEROOM",
+      "name": "SlateportCity_BattleTentBattleRoom_Arauna_Layout",
+      "width": 10,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaPortoPavilhao",
+      "border_filepath": "data/layouts/SlateportCity_BattleTentBattleRoom_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/SlateportCity_BattleTentBattleRoom_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_PORTO_INTERIORS_BATTLETENTCORRIDOR",
+      "name": "SlateportCity_BattleTentCorridor_Arauna_Layout",
+      "width": 5,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaPortoPavilhao",
+      "border_filepath": "data/layouts/SlateportCity_BattleTentCorridor_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/SlateportCity_BattleTentCorridor_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_PORTO_INTERIORS_BATTLETENTLOBBY",
+      "name": "SlateportCity_BattleTentLobby_Arauna_Layout",
+      "width": 13,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaPortoPavilhao",
+      "border_filepath": "data/layouts/SlateportCity_BattleTentLobby_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/SlateportCity_BattleTentLobby_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_PORTO_INTERIORS_HARBOR",
+      "name": "SlateportCity_Harbor_Arauna_Layout",
+      "width": 24,
+      "height": 15,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_AraunaPortoEstaleiro",
+      "border_filepath": "data/layouts/SlateportCity_Harbor_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/SlateportCity_Harbor_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_PORTO_INTERIORS_HOUSE",
+      "name": "SlateportCity_House_Arauna_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaPortoCasas",
+      "border_filepath": "data/layouts/SlateportCity_House_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/SlateportCity_House_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_PORTO_INTERIORS_MART",
+      "name": "SlateportCity_Mart_Arauna_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaPortoVenda",
+      "border_filepath": "data/layouts/SlateportCity_Mart_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/SlateportCity_Mart_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_PORTO_INTERIORS_NAMERATERSHOUSE",
+      "name": "SlateportCity_NameRatersHouse_Arauna_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaPortoCasas",
+      "border_filepath": "data/layouts/SlateportCity_NameRatersHouse_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/SlateportCity_NameRatersHouse_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_PORTO_INTERIORS_OCEANICMUSEUM_1F",
+      "name": "SlateportCity_OceanicMuseum_1F_Arauna_Layout",
+      "width": 20,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaPortoMuseu",
+      "border_filepath": "data/layouts/SlateportCity_OceanicMuseum_1F_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/SlateportCity_OceanicMuseum_1F_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_PORTO_INTERIORS_OCEANICMUSEUM_2F",
+      "name": "SlateportCity_OceanicMuseum_2F_Arauna_Layout",
+      "width": 20,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaPortoMuseu",
+      "border_filepath": "data/layouts/SlateportCity_OceanicMuseum_2F_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/SlateportCity_OceanicMuseum_2F_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_PORTO_INTERIORS_POKEMONCENTER_1F",
+      "name": "SlateportCity_PokemonCenter_1F_Arauna_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaPortoCentro",
+      "border_filepath": "data/layouts/SlateportCity_PokemonCenter_1F_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/SlateportCity_PokemonCenter_1F_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_PORTO_INTERIORS_POKEMONCENTER_2F",
+      "name": "SlateportCity_PokemonCenter_2F_Arauna_Layout",
+      "width": 14,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaPortoCentro",
+      "border_filepath": "data/layouts/SlateportCity_PokemonCenter_2F_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/SlateportCity_PokemonCenter_2F_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_PORTO_INTERIORS_POKEMONFANCLUB",
+      "name": "SlateportCity_PokemonFanClub_Arauna_Layout",
+      "width": 14,
+      "height": 11,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaPortoClube",
+      "border_filepath": "data/layouts/SlateportCity_PokemonFanClub_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/SlateportCity_PokemonFanClub_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_PORTO_INTERIORS_STERNSSHIPYARD_1F",
+      "name": "SlateportCity_SternsShipyard_1F_Arauna_Layout",
+      "width": 21,
+      "height": 15,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_AraunaPortoEstaleiro",
+      "border_filepath": "data/layouts/SlateportCity_SternsShipyard_1F_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/SlateportCity_SternsShipyard_1F_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_PORTO_INTERIORS_STERNSSHIPYARD_2F",
+      "name": "SlateportCity_SternsShipyard_2F_Arauna_Layout",
+      "width": 17,
+      "height": 15,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_AraunaPortoEstaleiro",
+      "border_filepath": "data/layouts/SlateportCity_SternsShipyard_2F_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/SlateportCity_SternsShipyard_2F_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_ENCRUZ_INTERIORS_BIKESHOP",
+      "name": "MauvilleCity_BikeShop_Arauna_Layout",
+      "width": 12,
+      "height": 9,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_AraunaEncruzOficina",
+      "border_filepath": "data/layouts/MauvilleCity_BikeShop_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/MauvilleCity_BikeShop_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_ENCRUZ_INTERIORS_GAMECORNER",
+      "name": "MauvilleCity_GameCorner_Arauna_Layout",
+      "width": 22,
+      "height": 11,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaEncruzJogos",
+      "border_filepath": "data/layouts/MauvilleCity_GameCorner_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/MauvilleCity_GameCorner_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_ENCRUZ_INTERIORS_GYM",
+      "name": "MauvilleCity_Gym_Arauna_Layout",
+      "width": 10,
+      "height": 21,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaEncruzCasaEletrica",
+      "border_filepath": "data/layouts/MauvilleCity_Gym_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/MauvilleCity_Gym_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_ENCRUZ_INTERIORS_HOUSE1",
+      "name": "MauvilleCity_House1_Arauna_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaEncruzCasas",
+      "border_filepath": "data/layouts/MauvilleCity_House1_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/MauvilleCity_House1_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_ENCRUZ_INTERIORS_HOUSE2",
+      "name": "MauvilleCity_House2_Arauna_Layout",
+      "width": 10,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaEncruzCasas",
+      "border_filepath": "data/layouts/MauvilleCity_House2_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/MauvilleCity_House2_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_ENCRUZ_INTERIORS_MART",
+      "name": "MauvilleCity_Mart_Arauna_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaEncruzVenda",
+      "border_filepath": "data/layouts/MauvilleCity_Mart_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/MauvilleCity_Mart_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_ENCRUZ_INTERIORS_POKEMONCENTER_1F",
+      "name": "MauvilleCity_PokemonCenter_1F_Arauna_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaEncruzCentro",
+      "border_filepath": "data/layouts/MauvilleCity_PokemonCenter_1F_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/MauvilleCity_PokemonCenter_1F_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_ENCRUZ_INTERIORS_POKEMONCENTER_2F",
+      "name": "MauvilleCity_PokemonCenter_2F_Arauna_Layout",
+      "width": 14,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaEncruzCentro",
+      "border_filepath": "data/layouts/MauvilleCity_PokemonCenter_2F_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/MauvilleCity_PokemonCenter_2F_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_QUATRO_INTERIORS_FALLARBORTOWN_BATTLETENTBATTLEROOM",
+      "name": "FallarborTown_BattleTentBattleRoom_Arauna_Layout",
+      "width": 10,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaCampoBattleTent",
+      "border_filepath": "data/layouts/FallarborTown_BattleTentBattleRoom_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/FallarborTown_BattleTentBattleRoom_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_QUATRO_INTERIORS_FALLARBORTOWN_BATTLETENTCORRIDOR",
+      "name": "FallarborTown_BattleTentCorridor_Arauna_Layout",
+      "width": 5,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaCampoBattleTent",
+      "border_filepath": "data/layouts/FallarborTown_BattleTentCorridor_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/FallarborTown_BattleTentCorridor_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_QUATRO_INTERIORS_FALLARBORTOWN_BATTLETENTLOBBY",
+      "name": "FallarborTown_BattleTentLobby_Arauna_Layout",
+      "width": 13,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaCampoBattleTent",
+      "border_filepath": "data/layouts/FallarborTown_BattleTentLobby_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/FallarborTown_BattleTentLobby_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_QUATRO_INTERIORS_FALLARBORTOWN_COZMOSHOUSE",
+      "name": "FallarborTown_CozmosHouse_Arauna_Layout",
+      "width": 10,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaCampoGenericBuilding",
+      "border_filepath": "data/layouts/FallarborTown_CozmosHouse_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/FallarborTown_CozmosHouse_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_QUATRO_INTERIORS_FALLARBORTOWN_MART",
+      "name": "FallarborTown_Mart_Arauna_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaCampoShop",
+      "border_filepath": "data/layouts/FallarborTown_Mart_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/FallarborTown_Mart_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_QUATRO_INTERIORS_FALLARBORTOWN_MOVERELEARNERSHOUSE",
+      "name": "FallarborTown_MoveRelearnersHouse_Arauna_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaCampoGenericBuilding",
+      "border_filepath": "data/layouts/FallarborTown_MoveRelearnersHouse_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/FallarborTown_MoveRelearnersHouse_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_QUATRO_INTERIORS_FALLARBORTOWN_POKEMONCENTER_1F",
+      "name": "FallarborTown_PokemonCenter_1F_Arauna_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaCampoPokemonCenter",
+      "border_filepath": "data/layouts/FallarborTown_PokemonCenter_1F_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/FallarborTown_PokemonCenter_1F_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_QUATRO_INTERIORS_FALLARBORTOWN_POKEMONCENTER_2F",
+      "name": "FallarborTown_PokemonCenter_2F_Arauna_Layout",
+      "width": 14,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaCampoPokemonCenter",
+      "border_filepath": "data/layouts/FallarborTown_PokemonCenter_2F_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/FallarborTown_PokemonCenter_2F_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_QUATRO_INTERIORS_LAVARIDGETOWN_GYM_1F",
+      "name": "LavaridgeTown_Gym_1F_Arauna_Layout",
+      "width": 17,
+      "height": 19,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaCinzaLavaridgeGym",
+      "border_filepath": "data/layouts/LavaridgeTown_Gym_1F_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/LavaridgeTown_Gym_1F_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_QUATRO_INTERIORS_LAVARIDGETOWN_GYM_B1F",
+      "name": "LavaridgeTown_Gym_B1F_Arauna_Layout",
+      "width": 17,
+      "height": 19,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaCinzaLavaridgeGym",
+      "border_filepath": "data/layouts/LavaridgeTown_Gym_B1F_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/LavaridgeTown_Gym_B1F_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_QUATRO_INTERIORS_LAVARIDGETOWN_HERBSHOP",
+      "name": "LavaridgeTown_HerbShop_Arauna_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaCinzaShop",
+      "border_filepath": "data/layouts/LavaridgeTown_HerbShop_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/LavaridgeTown_HerbShop_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_QUATRO_INTERIORS_LAVARIDGETOWN_HOUSE",
+      "name": "LavaridgeTown_House_Arauna_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaCinzaGenericBuilding",
+      "border_filepath": "data/layouts/LavaridgeTown_House_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/LavaridgeTown_House_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_QUATRO_INTERIORS_LAVARIDGETOWN_MART",
+      "name": "LavaridgeTown_Mart_Arauna_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaCinzaShop",
+      "border_filepath": "data/layouts/LavaridgeTown_Mart_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/LavaridgeTown_Mart_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_QUATRO_INTERIORS_LAVARIDGETOWN_POKEMONCENTER_1F",
+      "name": "LavaridgeTown_PokemonCenter_1F_Arauna_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaCinzaPokemonCenter",
+      "border_filepath": "data/layouts/LavaridgeTown_PokemonCenter_1F_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/LavaridgeTown_PokemonCenter_1F_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_QUATRO_INTERIORS_LAVARIDGETOWN_POKEMONCENTER_2F",
+      "name": "LavaridgeTown_PokemonCenter_2F_Arauna_Layout",
+      "width": 14,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaCinzaPokemonCenter",
+      "border_filepath": "data/layouts/LavaridgeTown_PokemonCenter_2F_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/LavaridgeTown_PokemonCenter_2F_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_QUATRO_INTERIORS_FORTREECITY_DECORATIONSHOP",
+      "name": "FortreeCity_DecorationShop_Arauna_Layout",
+      "width": 8,
+      "height": 6,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaMataGenericBuilding",
+      "border_filepath": "data/layouts/FortreeCity_DecorationShop_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/FortreeCity_DecorationShop_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_QUATRO_INTERIORS_FORTREECITY_GYM",
+      "name": "FortreeCity_Gym_Arauna_Layout",
+      "width": 20,
+      "height": 25,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaMataFortreeGym",
+      "border_filepath": "data/layouts/FortreeCity_Gym_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/FortreeCity_Gym_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_QUATRO_INTERIORS_FORTREECITY_HOUSE1",
+      "name": "FortreeCity_House1_Arauna_Layout",
+      "width": 8,
+      "height": 6,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaMataGenericBuilding",
+      "border_filepath": "data/layouts/FortreeCity_House1_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/FortreeCity_House1_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_QUATRO_INTERIORS_FORTREECITY_HOUSE2",
+      "name": "FortreeCity_House2_Arauna_Layout",
+      "width": 8,
+      "height": 6,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaMataGenericBuilding",
+      "border_filepath": "data/layouts/FortreeCity_House2_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/FortreeCity_House2_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_QUATRO_INTERIORS_FORTREECITY_HOUSE3",
+      "name": "FortreeCity_House3_Arauna_Layout",
+      "width": 8,
+      "height": 6,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaMataGenericBuilding",
+      "border_filepath": "data/layouts/FortreeCity_House3_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/FortreeCity_House3_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_QUATRO_INTERIORS_FORTREECITY_HOUSE4",
+      "name": "FortreeCity_House4_Arauna_Layout",
+      "width": 8,
+      "height": 6,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaMataGenericBuilding",
+      "border_filepath": "data/layouts/FortreeCity_House4_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/FortreeCity_House4_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_QUATRO_INTERIORS_FORTREECITY_HOUSE5",
+      "name": "FortreeCity_House5_Arauna_Layout",
+      "width": 8,
+      "height": 6,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaMataGenericBuilding",
+      "border_filepath": "data/layouts/FortreeCity_House5_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/FortreeCity_House5_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_QUATRO_INTERIORS_FORTREECITY_MART",
+      "name": "FortreeCity_Mart_Arauna_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaMataShop",
+      "border_filepath": "data/layouts/FortreeCity_Mart_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/FortreeCity_Mart_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_QUATRO_INTERIORS_FORTREECITY_POKEMONCENTER_1F",
+      "name": "FortreeCity_PokemonCenter_1F_Arauna_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaMataPokemonCenter",
+      "border_filepath": "data/layouts/FortreeCity_PokemonCenter_1F_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/FortreeCity_PokemonCenter_1F_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_QUATRO_INTERIORS_FORTREECITY_POKEMONCENTER_2F",
+      "name": "FortreeCity_PokemonCenter_2F_Arauna_Layout",
+      "width": 14,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaMataPokemonCenter",
+      "border_filepath": "data/layouts/FortreeCity_PokemonCenter_2F_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/FortreeCity_PokemonCenter_2F_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_QUATRO_INTERIORS_LILYCOVECITY_CONTESTHALL",
+      "name": "LilycoveCity_ContestHall_Arauna_Layout",
+      "width": 51,
+      "height": 33,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaBaiaContest",
+      "border_filepath": "data/layouts/LilycoveCity_ContestHall_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/LilycoveCity_ContestHall_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_QUATRO_INTERIORS_LILYCOVECITY_CONTESTLOBBY",
+      "name": "LilycoveCity_ContestLobby_Arauna_Layout",
+      "width": 31,
+      "height": 12,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaBaiaContest",
+      "border_filepath": "data/layouts/LilycoveCity_ContestLobby_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/LilycoveCity_ContestLobby_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_QUATRO_INTERIORS_LILYCOVECITY_COVELILYMOTEL_1F",
+      "name": "LilycoveCity_CoveLilyMotel_1F_Arauna_Layout",
+      "width": 12,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaBaiaGenericBuilding",
+      "border_filepath": "data/layouts/LilycoveCity_CoveLilyMotel_1F_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/LilycoveCity_CoveLilyMotel_1F_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_QUATRO_INTERIORS_LILYCOVECITY_COVELILYMOTEL_2F",
+      "name": "LilycoveCity_CoveLilyMotel_2F_Arauna_Layout",
+      "width": 12,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaBaiaGenericBuilding",
+      "border_filepath": "data/layouts/LilycoveCity_CoveLilyMotel_2F_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/LilycoveCity_CoveLilyMotel_2F_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_QUATRO_INTERIORS_LILYCOVECITY_DEPARTMENTSTOREELEVATOR",
+      "name": "LilycoveCity_DepartmentStoreElevator_Arauna_Layout",
+      "width": 5,
+      "height": 6,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaBaiaBattleFrontier",
+      "border_filepath": "data/layouts/LilycoveCity_DepartmentStoreElevator_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/LilycoveCity_DepartmentStoreElevator_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_QUATRO_INTERIORS_LILYCOVECITY_DEPARTMENTSTOREROOFTOP",
+      "name": "LilycoveCity_DepartmentStoreRooftop_Arauna_Layout",
+      "width": 18,
+      "height": 12,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaBaiaShop",
+      "border_filepath": "data/layouts/LilycoveCity_DepartmentStoreRooftop_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/LilycoveCity_DepartmentStoreRooftop_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_QUATRO_INTERIORS_LILYCOVECITY_DEPARTMENTSTORE_1F",
+      "name": "LilycoveCity_DepartmentStore_1F_Arauna_Layout",
+      "width": 18,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaBaiaShop",
+      "border_filepath": "data/layouts/LilycoveCity_DepartmentStore_1F_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/LilycoveCity_DepartmentStore_1F_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_QUATRO_INTERIORS_LILYCOVECITY_DEPARTMENTSTORE_2F",
+      "name": "LilycoveCity_DepartmentStore_2F_Arauna_Layout",
+      "width": 18,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaBaiaShop",
+      "border_filepath": "data/layouts/LilycoveCity_DepartmentStore_2F_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/LilycoveCity_DepartmentStore_2F_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_QUATRO_INTERIORS_LILYCOVECITY_DEPARTMENTSTORE_3F",
+      "name": "LilycoveCity_DepartmentStore_3F_Arauna_Layout",
+      "width": 18,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaBaiaShop",
+      "border_filepath": "data/layouts/LilycoveCity_DepartmentStore_3F_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/LilycoveCity_DepartmentStore_3F_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_QUATRO_INTERIORS_LILYCOVECITY_DEPARTMENTSTORE_4F",
+      "name": "LilycoveCity_DepartmentStore_4F_Arauna_Layout",
+      "width": 18,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaBaiaShop",
+      "border_filepath": "data/layouts/LilycoveCity_DepartmentStore_4F_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/LilycoveCity_DepartmentStore_4F_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_QUATRO_INTERIORS_LILYCOVECITY_DEPARTMENTSTORE_5F",
+      "name": "LilycoveCity_DepartmentStore_5F_Arauna_Layout",
+      "width": 18,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaBaiaShop",
+      "border_filepath": "data/layouts/LilycoveCity_DepartmentStore_5F_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/LilycoveCity_DepartmentStore_5F_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_QUATRO_INTERIORS_LILYCOVECITY_HARBOR",
+      "name": "LilycoveCity_Harbor_Arauna_Layout",
+      "width": 24,
+      "height": 15,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_AraunaBaiaFacility",
+      "border_filepath": "data/layouts/LilycoveCity_Harbor_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/LilycoveCity_Harbor_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_QUATRO_INTERIORS_LILYCOVECITY_HOUSE1",
+      "name": "LilycoveCity_House1_Arauna_Layout",
+      "width": 10,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaBaiaGenericBuilding",
+      "border_filepath": "data/layouts/LilycoveCity_House1_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/LilycoveCity_House1_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_QUATRO_INTERIORS_LILYCOVECITY_HOUSE2",
+      "name": "LilycoveCity_House2_Arauna_Layout",
+      "width": 8,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaBaiaGenericBuilding",
+      "border_filepath": "data/layouts/LilycoveCity_House2_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/LilycoveCity_House2_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_QUATRO_INTERIORS_LILYCOVECITY_HOUSE3",
+      "name": "LilycoveCity_House3_Arauna_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaBaiaGenericBuilding",
+      "border_filepath": "data/layouts/LilycoveCity_House3_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/LilycoveCity_House3_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_QUATRO_INTERIORS_LILYCOVECITY_HOUSE4",
+      "name": "LilycoveCity_House4_Arauna_Layout",
+      "width": 10,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaBaiaGenericBuilding",
+      "border_filepath": "data/layouts/LilycoveCity_House4_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/LilycoveCity_House4_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_QUATRO_INTERIORS_LILYCOVECITY_LILYCOVEMUSEUM_1F",
+      "name": "LilycoveCity_LilycoveMuseum_1F_Arauna_Layout",
+      "width": 21,
+      "height": 14,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaBaiaLilycoveMuseum",
+      "border_filepath": "data/layouts/LilycoveCity_LilycoveMuseum_1F_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/LilycoveCity_LilycoveMuseum_1F_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_QUATRO_INTERIORS_LILYCOVECITY_LILYCOVEMUSEUM_2F",
+      "name": "LilycoveCity_LilycoveMuseum_2F_Arauna_Layout",
+      "width": 22,
+      "height": 13,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaBaiaLilycoveMuseum",
+      "border_filepath": "data/layouts/LilycoveCity_LilycoveMuseum_2F_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/LilycoveCity_LilycoveMuseum_2F_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_QUATRO_INTERIORS_LILYCOVECITY_MOVEDELETERSHOUSE",
+      "name": "LilycoveCity_MoveDeletersHouse_Arauna_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaBaiaGenericBuilding",
+      "border_filepath": "data/layouts/LilycoveCity_MoveDeletersHouse_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/LilycoveCity_MoveDeletersHouse_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_QUATRO_INTERIORS_LILYCOVECITY_POKEMONCENTER_1F",
+      "name": "LilycoveCity_PokemonCenter_1F_Arauna_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaBaiaPokemonCenter",
+      "border_filepath": "data/layouts/LilycoveCity_PokemonCenter_1F_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/LilycoveCity_PokemonCenter_1F_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_QUATRO_INTERIORS_LILYCOVECITY_POKEMONCENTER_2F",
+      "name": "LilycoveCity_PokemonCenter_2F_Arauna_Layout",
+      "width": 14,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaBaiaPokemonCenter",
+      "border_filepath": "data/layouts/LilycoveCity_PokemonCenter_2F_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/LilycoveCity_PokemonCenter_2F_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_QUATRO_INTERIORS_LILYCOVECITY_POKEMONTRAINERFANCLUB",
+      "name": "LilycoveCity_PokemonTrainerFanClub_Arauna_Layout",
+      "width": 12,
+      "height": 14,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaBaiaGenericBuilding",
+      "border_filepath": "data/layouts/LilycoveCity_PokemonTrainerFanClub_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/LilycoveCity_PokemonTrainerFanClub_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_QUATRO_INTERIORS_LILYCOVECITY_UNUSEDMART",
+      "name": "LilycoveCity_UnusedMart_Arauna_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaBaiaShop",
+      "border_filepath": "data/layouts/LilycoveCity_UnusedMart_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/LilycoveCity_UnusedMart_Arauna/map.bin"
     }
   ]
 }

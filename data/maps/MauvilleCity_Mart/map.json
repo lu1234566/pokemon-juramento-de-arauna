@@ -1,7 +1,7 @@
 {
   "id": "MAP_MAUVILLE_CITY_MART",
   "name": "MauvilleCity_Mart",
-  "layout": "LAYOUT_MART",
+  "layout": "LAYOUT_ARAUNA_ENCRUZ_INTERIORS_MART",
   "music": "MUS_POKE_MART",
   "region_map_section": "MAPSEC_MAUVILLE_CITY",
   "requires_flash": false,

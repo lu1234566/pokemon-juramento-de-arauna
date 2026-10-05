@@ -1,7 +1,7 @@
 {
   "id": "MAP_SLATEPORT_CITY_BATTLE_TENT_CORRIDOR",
   "name": "SlateportCity_BattleTentCorridor",
-  "layout": "LAYOUT_BATTLE_TENT_CORRIDOR",
+  "layout": "LAYOUT_ARAUNA_PORTO_INTERIORS_BATTLETENTCORRIDOR",
   "music": "MUS_B_TOWER_RS",
   "region_map_section": "MAPSEC_SLATEPORT_CITY",
   "requires_flash": false,

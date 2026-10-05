@@ -1,7 +1,7 @@
 {
   "id": "MAP_FALLARBOR_TOWN_POKEMON_CENTER_2F",
   "name": "FallarborTown_PokemonCenter_2F",
-  "layout": "LAYOUT_POKEMON_CENTER_2F",
+  "layout": "LAYOUT_ARAUNA_QUATRO_INTERIORS_FALLARBORTOWN_POKEMONCENTER_2F",
   "music": "MUS_POKE_CENTER",
   "region_map_section": "MAPSEC_FALLARBOR_TOWN",
   "requires_flash": false,

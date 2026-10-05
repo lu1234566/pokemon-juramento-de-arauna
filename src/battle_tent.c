@@ -282,8 +282,11 @@ static void SwapRentalMons(void)
 
 bool8 InSlateportBattleTent(void)
 {
-    return gMapHeader.regionMapSectionId == MAPSEC_SLATEPORT_CITY
-           && (gMapHeader.mapLayoutId == LAYOUT_BATTLE_TENT_CORRIDOR || gMapHeader.mapLayoutId == LAYOUT_BATTLE_TENT_BATTLE_ROOM);
+    // Checks the map rather than the layout: the Arauna interiors give the
+    // Slateport tent rooms their own layouts.
+    return gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_SLATEPORT_CITY_BATTLE_TENT_CORRIDOR)
+           && (gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_SLATEPORT_CITY_BATTLE_TENT_CORRIDOR)
+            || gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_SLATEPORT_CITY_BATTLE_TENT_BATTLE_ROOM));
 }
 
 static void GenerateInitialRentalMons(void)

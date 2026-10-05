@@ -433,3 +433,126 @@ const u16 gMetatileAttributes_AraunaValeInteriorsV1[] = INCBIN_U16("data/tileset
 const u16 gMetatiles_AraunaValePavilhao[] = INCBIN_U16("data/tilesets/secondary/arauna_vale_pavilhao/metatiles.bin");
 const u16 gMetatileAttributes_AraunaValePavilhao[] = INCBIN_U16("data/tilesets/secondary/arauna_vale_pavilhao/metatile_attributes.bin");
 // VALE_INTERIORS_V1_END
+
+// SERRA_INTERIORS_V1_BEGIN
+const u16 gMetatiles_AraunaSerraCasas[] = INCBIN_U16("data/tilesets/secondary/arauna_serra_casas/metatiles.bin");
+const u16 gMetatileAttributes_AraunaSerraCasas[] = INCBIN_U16("data/tilesets/secondary/arauna_serra_casas/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaSerraTecnica[] = INCBIN_U16("data/tilesets/secondary/arauna_serra_tecnica/metatiles.bin");
+const u16 gMetatileAttributes_AraunaSerraTecnica[] = INCBIN_U16("data/tilesets/secondary/arauna_serra_tecnica/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaSerraEscola[] = INCBIN_U16("data/tilesets/secondary/arauna_serra_escola/metatiles.bin");
+const u16 gMetatileAttributes_AraunaSerraEscola[] = INCBIN_U16("data/tilesets/secondary/arauna_serra_escola/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaSerraCentro[] = INCBIN_U16("data/tilesets/secondary/arauna_serra_centro/metatiles.bin");
+const u16 gMetatileAttributes_AraunaSerraCentro[] = INCBIN_U16("data/tilesets/secondary/arauna_serra_centro/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaSerraVenda[] = INCBIN_U16("data/tilesets/secondary/arauna_serra_venda/metatiles.bin");
+const u16 gMetatileAttributes_AraunaSerraVenda[] = INCBIN_U16("data/tilesets/secondary/arauna_serra_venda/metatile_attributes.bin");
+
+// SERRA_INTERIORS_V1_END
+
+// PORTO_INTERIORS_V1_BEGIN
+const u16 gMetatiles_AraunaPortoCasas[] = INCBIN_U16("data/tilesets/secondary/arauna_porto_casas/metatiles.bin");
+const u16 gMetatileAttributes_AraunaPortoCasas[] = INCBIN_U16("data/tilesets/secondary/arauna_porto_casas/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaPortoEstaleiro[] = INCBIN_U16("data/tilesets/secondary/arauna_porto_estaleiro/metatiles.bin");
+const u16 gMetatileAttributes_AraunaPortoEstaleiro[] = INCBIN_U16("data/tilesets/secondary/arauna_porto_estaleiro/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaPortoMuseu[] = INCBIN_U16("data/tilesets/secondary/arauna_porto_museu/metatiles.bin");
+const u16 gMetatileAttributes_AraunaPortoMuseu[] = INCBIN_U16("data/tilesets/secondary/arauna_porto_museu/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaPortoClube[] = INCBIN_U16("data/tilesets/secondary/arauna_porto_clube/metatiles.bin");
+const u16 gMetatileAttributes_AraunaPortoClube[] = INCBIN_U16("data/tilesets/secondary/arauna_porto_clube/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaPortoPavilhao[] = INCBIN_U16("data/tilesets/secondary/arauna_porto_pavilhao/metatiles.bin");
+const u16 gMetatileAttributes_AraunaPortoPavilhao[] = INCBIN_U16("data/tilesets/secondary/arauna_porto_pavilhao/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaPortoCentro[] = INCBIN_U16("data/tilesets/secondary/arauna_porto_centro/metatiles.bin");
+const u16 gMetatileAttributes_AraunaPortoCentro[] = INCBIN_U16("data/tilesets/secondary/arauna_porto_centro/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaPortoVenda[] = INCBIN_U16("data/tilesets/secondary/arauna_porto_venda/metatiles.bin");
+const u16 gMetatileAttributes_AraunaPortoVenda[] = INCBIN_U16("data/tilesets/secondary/arauna_porto_venda/metatile_attributes.bin");
+
+// PORTO_INTERIORS_V1_END
+
+// ENCRUZ_INTERIORS_V1_BEGIN
+const u16 gMetatiles_AraunaEncruzCasas[] = INCBIN_U16("data/tilesets/secondary/arauna_encruz_casas/metatiles.bin");
+const u16 gMetatileAttributes_AraunaEncruzCasas[] = INCBIN_U16("data/tilesets/secondary/arauna_encruz_casas/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaEncruzOficina[] = INCBIN_U16("data/tilesets/secondary/arauna_encruz_oficina/metatiles.bin");
+const u16 gMetatileAttributes_AraunaEncruzOficina[] = INCBIN_U16("data/tilesets/secondary/arauna_encruz_oficina/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaEncruzJogos[] = INCBIN_U16("data/tilesets/secondary/arauna_encruz_jogos/metatiles.bin");
+const u16 gMetatileAttributes_AraunaEncruzJogos[] = INCBIN_U16("data/tilesets/secondary/arauna_encruz_jogos/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaEncruzCasaEletrica[] = INCBIN_U16("data/tilesets/secondary/arauna_encruz_casa_eletrica/metatiles.bin");
+const u16 gMetatileAttributes_AraunaEncruzCasaEletrica[] = INCBIN_U16("data/tilesets/secondary/arauna_encruz_casa_eletrica/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaEncruzCentro[] = INCBIN_U16("data/tilesets/secondary/arauna_encruz_centro/metatiles.bin");
+const u16 gMetatileAttributes_AraunaEncruzCentro[] = INCBIN_U16("data/tilesets/secondary/arauna_encruz_centro/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaEncruzVenda[] = INCBIN_U16("data/tilesets/secondary/arauna_encruz_venda/metatiles.bin");
+const u16 gMetatileAttributes_AraunaEncruzVenda[] = INCBIN_U16("data/tilesets/secondary/arauna_encruz_venda/metatile_attributes.bin");
+
+// ENCRUZ_INTERIORS_V1_END
+
+// QUATRO_INTERIORS_V1_BEGIN
+const u16 gMetatiles_AraunaCampoGenericBuilding[] = INCBIN_U16("data/tilesets/secondary/arauna_campo_generic_building/metatiles.bin");
+const u16 gMetatileAttributes_AraunaCampoGenericBuilding[] = INCBIN_U16("data/tilesets/secondary/arauna_campo_generic_building/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaCampoBattleTent[] = INCBIN_U16("data/tilesets/secondary/arauna_campo_battle_tent/metatiles.bin");
+const u16 gMetatileAttributes_AraunaCampoBattleTent[] = INCBIN_U16("data/tilesets/secondary/arauna_campo_battle_tent/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaCampoShop[] = INCBIN_U16("data/tilesets/secondary/arauna_campo_shop/metatiles.bin");
+const u16 gMetatileAttributes_AraunaCampoShop[] = INCBIN_U16("data/tilesets/secondary/arauna_campo_shop/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaCampoPokemonCenter[] = INCBIN_U16("data/tilesets/secondary/arauna_campo_pokemon_center/metatiles.bin");
+const u16 gMetatileAttributes_AraunaCampoPokemonCenter[] = INCBIN_U16("data/tilesets/secondary/arauna_campo_pokemon_center/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaCinzaGenericBuilding[] = INCBIN_U16("data/tilesets/secondary/arauna_cinza_generic_building/metatiles.bin");
+const u16 gMetatileAttributes_AraunaCinzaGenericBuilding[] = INCBIN_U16("data/tilesets/secondary/arauna_cinza_generic_building/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaCinzaLavaridgeGym[] = INCBIN_U16("data/tilesets/secondary/arauna_cinza_lavaridge_gym/metatiles.bin");
+const u16 gMetatileAttributes_AraunaCinzaLavaridgeGym[] = INCBIN_U16("data/tilesets/secondary/arauna_cinza_lavaridge_gym/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaCinzaShop[] = INCBIN_U16("data/tilesets/secondary/arauna_cinza_shop/metatiles.bin");
+const u16 gMetatileAttributes_AraunaCinzaShop[] = INCBIN_U16("data/tilesets/secondary/arauna_cinza_shop/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaCinzaPokemonCenter[] = INCBIN_U16("data/tilesets/secondary/arauna_cinza_pokemon_center/metatiles.bin");
+const u16 gMetatileAttributes_AraunaCinzaPokemonCenter[] = INCBIN_U16("data/tilesets/secondary/arauna_cinza_pokemon_center/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaMataGenericBuilding[] = INCBIN_U16("data/tilesets/secondary/arauna_mata_generic_building/metatiles.bin");
+const u16 gMetatileAttributes_AraunaMataGenericBuilding[] = INCBIN_U16("data/tilesets/secondary/arauna_mata_generic_building/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaMataFortreeGym[] = INCBIN_U16("data/tilesets/secondary/arauna_mata_fortree_gym/metatiles.bin");
+const u16 gMetatileAttributes_AraunaMataFortreeGym[] = INCBIN_U16("data/tilesets/secondary/arauna_mata_fortree_gym/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaMataShop[] = INCBIN_U16("data/tilesets/secondary/arauna_mata_shop/metatiles.bin");
+const u16 gMetatileAttributes_AraunaMataShop[] = INCBIN_U16("data/tilesets/secondary/arauna_mata_shop/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaMataPokemonCenter[] = INCBIN_U16("data/tilesets/secondary/arauna_mata_pokemon_center/metatiles.bin");
+const u16 gMetatileAttributes_AraunaMataPokemonCenter[] = INCBIN_U16("data/tilesets/secondary/arauna_mata_pokemon_center/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaBaiaGenericBuilding[] = INCBIN_U16("data/tilesets/secondary/arauna_baia_generic_building/metatiles.bin");
+const u16 gMetatileAttributes_AraunaBaiaGenericBuilding[] = INCBIN_U16("data/tilesets/secondary/arauna_baia_generic_building/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaBaiaShop[] = INCBIN_U16("data/tilesets/secondary/arauna_baia_shop/metatiles.bin");
+const u16 gMetatileAttributes_AraunaBaiaShop[] = INCBIN_U16("data/tilesets/secondary/arauna_baia_shop/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaBaiaPokemonCenter[] = INCBIN_U16("data/tilesets/secondary/arauna_baia_pokemon_center/metatiles.bin");
+const u16 gMetatileAttributes_AraunaBaiaPokemonCenter[] = INCBIN_U16("data/tilesets/secondary/arauna_baia_pokemon_center/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaBaiaFacility[] = INCBIN_U16("data/tilesets/secondary/arauna_baia_facility/metatiles.bin");
+const u16 gMetatileAttributes_AraunaBaiaFacility[] = INCBIN_U16("data/tilesets/secondary/arauna_baia_facility/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaBaiaContest[] = INCBIN_U16("data/tilesets/secondary/arauna_baia_contest/metatiles.bin");
+const u16 gMetatileAttributes_AraunaBaiaContest[] = INCBIN_U16("data/tilesets/secondary/arauna_baia_contest/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaBaiaLilycoveMuseum[] = INCBIN_U16("data/tilesets/secondary/arauna_baia_lilycove_museum/metatiles.bin");
+const u16 gMetatileAttributes_AraunaBaiaLilycoveMuseum[] = INCBIN_U16("data/tilesets/secondary/arauna_baia_lilycove_museum/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaBaiaBattleFrontier[] = INCBIN_U16("data/tilesets/secondary/arauna_baia_battle_frontier/metatiles.bin");
+const u16 gMetatileAttributes_AraunaBaiaBattleFrontier[] = INCBIN_U16("data/tilesets/secondary/arauna_baia_battle_frontier/metatile_attributes.bin");
+
+// QUATRO_INTERIORS_V1_END
