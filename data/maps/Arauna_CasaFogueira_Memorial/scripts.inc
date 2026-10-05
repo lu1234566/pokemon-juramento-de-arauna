@@ -10,12 +10,41 @@ Arauna_CasaFogueira_Memorial_Text_Portraits:
 	.string "Each frame has been cared for.$"
 
 Arauna_CasaFogueira_Memorial_EventScript_Letters::
-	msgbox Arauna_CasaFogueira_Memorial_Text_Letters, MSGBOX_SIGN
+	lockall
+	goto_if_set FLAG_ARAUNA_FOGUEIRA_MEMORIAL_READ, Arauna_CasaFogueira_Memorial_EventScript_LettersReturn
+	msgbox Arauna_CasaFogueira_Memorial_Text_Letters, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, Arauna_CasaFogueira_Memorial_EventScript_LettersDeferred
+	msgbox Arauna_CasaFogueira_Memorial_Text_Letter, MSGBOX_DEFAULT
+	setflag FLAG_ARAUNA_FOGUEIRA_MEMORIAL_READ
+	releaseall
+	end
+
+Arauna_CasaFogueira_Memorial_EventScript_LettersReturn::
+	msgbox Arauna_CasaFogueira_Memorial_Text_Letter, MSGBOX_DEFAULT
+	releaseall
+	end
+
+Arauna_CasaFogueira_Memorial_EventScript_LettersDeferred::
+	msgbox Arauna_CasaFogueira_Memorial_Text_LettersDeferred, MSGBOX_DEFAULT
+	releaseall
 	end
 
 Arauna_CasaFogueira_Memorial_Text_Letters:
-	.string "Letters lie beside an open book.\n"
-	.string "Their paper is worn at the edges.$"
+	.string "Letters rest by an open book.\n"
+	.string "Read a letter left for visitors?$"
+
+Arauna_CasaFogueira_Memorial_Text_Letter:
+	.string "A note beside the letter says:\n"
+	.string "You may read this one aloud.\p"
+	.string "We kept your place at the table.\n"
+	.string "Not because we forgot you left.\p"
+	.string "Because a place can hold a name\n"
+	.string "when a voice cannot say it yet.\p"
+	.string "The letter has no signature.$"
+
+Arauna_CasaFogueira_Memorial_Text_LettersDeferred:
+	.string "You leave the pages as they are.\n"
+	.string "There is no hurry.$"
 
 Arauna_CasaFogueira_Memorial_EventScript_Memory::
 	msgbox Arauna_CasaFogueira_Memorial_Text_Memory, MSGBOX_SIGN
