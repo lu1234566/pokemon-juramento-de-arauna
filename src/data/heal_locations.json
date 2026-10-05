@@ -99,8 +99,8 @@
     {
       "id": "HEAL_LOCATION_FALLARBOR_TOWN",
       "map": "MAP_FALLARBOR_TOWN",
-      "x": 14,
-      "y": 8
+      "x": 22,
+      "y": 16
     },
     {
       "id": "HEAL_LOCATION_VERDANTURF_TOWN",

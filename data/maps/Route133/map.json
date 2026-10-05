@@ -1,7 +1,7 @@
 {
   "id": "MAP_ROUTE133",
   "name": "Route133",
-  "layout": "LAYOUT_ROUTE133",
+  "layout": "LAYOUT_ARAUNA_ROUTE133_CURRENT_NODES_V1",
   "music": "MUS_ROUTE119",
   "region_map_section": "MAPSEC_ROUTE_133",
   "requires_flash": false,

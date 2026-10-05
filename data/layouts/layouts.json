@@ -67,7 +67,7 @@
       "width": 44,
       "height": 34,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_AraunaMissoesCeuV2",
+      "secondary_tileset": "gTileset_AraunaMissoesCeuCumulativeV3",
       "border_filepath": "data/layouts/MossdeepCity/border.bin",
       "blockdata_filepath": "data/layouts/MossdeepCity/map.bin"
     },
@@ -126,18 +126,18 @@
       "name": "LavaridgeTown_Layout",
       "width": 20,
       "height": 20,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Lavaridge",
+      "primary_tileset": "gTileset_AraunaCasaCinzaPrimaryV2",
+      "secondary_tileset": "gTileset_AraunaCasaCinzaCumulativeV2",
       "border_filepath": "data/layouts/LavaridgeTown/border.bin",
       "blockdata_filepath": "data/layouts/LavaridgeTown/map.bin"
     },
     {
       "id": "LAYOUT_FALLARBOR_TOWN",
       "name": "FallarborTown_Layout",
-      "width": 20,
-      "height": 20,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Fallarbor",
+      "width": 32,
+      "height": 25,
+      "primary_tileset": "gTileset_AraunaCampoCinzasCidadeSoloV3",
+      "secondary_tileset": "gTileset_AraunaCampoInterfacesV4",
       "border_filepath": "data/layouts/FallarborTown/border.bin",
       "blockdata_filepath": "data/layouts/FallarborTown/map.bin"
     },
@@ -6700,6 +6700,406 @@
       "secondary_tileset": "gTileset_AraunaBaiaShop",
       "border_filepath": "data/layouts/LilycoveCity_UnusedMart_Arauna/border.bin",
       "blockdata_filepath": "data/layouts/LilycoveCity_UnusedMart_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_ROUTE104_MATA_V1",
+      "name": "Route104_AraunaMata_Layout",
+      "width": 40,
+      "height": 80,
+      "primary_tileset": "gTileset_AraunaMataEspera",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/Route104_AraunaMata/border.bin",
+      "blockdata_filepath": "data/layouts/Route104_AraunaMata/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_ROUTE105_ARCO_V1",
+      "name": "Route105_AraunaArco_Layout",
+      "width": 40,
+      "height": 80,
+      "primary_tileset": "gTileset_AraunaArcoCosteiro",
+      "secondary_tileset": "gTileset_Dewford",
+      "border_filepath": "data/layouts/Route105_AraunaArco/border.bin",
+      "blockdata_filepath": "data/layouts/Route105_AraunaArco/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_ROUTE108_WRECK_V1",
+      "name": "Route108_AraunaWreck_Layout",
+      "width": 60,
+      "height": 20,
+      "primary_tileset": "gTileset_AraunaArcoCosteiro",
+      "secondary_tileset": "gTileset_AraunaNaufragio",
+      "border_filepath": "data/layouts/Route108_AraunaWreck/border.bin",
+      "blockdata_filepath": "data/layouts/Route108_AraunaWreck/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_ROUTE109_URBAN_BEACH_V1",
+      "name": "Route109_AraunaUrbanBeach_Layout",
+      "width": 40,
+      "height": 63,
+      "primary_tileset": "gTileset_AraunaArcoCosteiro",
+      "secondary_tileset": "gTileset_AraunaPraiaUrbana",
+      "border_filepath": "data/layouts/Route109_AraunaUrbanBeach/border.bin",
+      "blockdata_filepath": "data/layouts/Route109_AraunaUrbanBeach/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_ROUTE110_MANGROVE_V1",
+      "name": "Route110_AraunaMangrove_Layout",
+      "width": 40,
+      "height": 100,
+      "primary_tileset": "gTileset_AraunaMangue",
+      "secondary_tileset": "gTileset_AraunaCiclovia",
+      "border_filepath": "data/layouts/Route110_AraunaMangrove/border.bin",
+      "blockdata_filepath": "data/layouts/Route110_AraunaMangrove/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_ROUTE111_THREE_ACTS_V1",
+      "name": "Route111_AraunaThreeActs_Layout",
+      "width": 40,
+      "height": 140,
+      "primary_tileset": "gTileset_AraunaEixoInterior",
+      "secondary_tileset": "gTileset_Arauna111Regions",
+      "border_filepath": "data/layouts/Route111_AraunaThreeActs/border.bin",
+      "blockdata_filepath": "data/layouts/Route111_AraunaThreeActs/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_ROUTE112_VOLCANIC_BASE_V1",
+      "name": "Route112_AraunaVolcanicBase_Layout",
+      "width": 40,
+      "height": 60,
+      "primary_tileset": "gTileset_AraunaPedraEscura",
+      "secondary_tileset": "gTileset_Arauna112CasaCinzaInterfaceV2",
+      "border_filepath": "data/layouts/Route112_AraunaVolcanicBase/border.bin",
+      "blockdata_filepath": "data/layouts/Route112_AraunaVolcanicBase/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_ROUTE113_ASH_FIELD_V1",
+      "name": "Route113_AraunaAshField_Layout",
+      "width": 100,
+      "height": 20,
+      "primary_tileset": "gTileset_AraunaCampoCinzas",
+      "secondary_tileset": "gTileset_Arauna113CampoInterfaceV4",
+      "border_filepath": "data/layouts/Route113_AraunaAshField/border.bin",
+      "blockdata_filepath": "data/layouts/Route113_AraunaAshField/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_ROUTE114_VALLEY_V1",
+      "name": "Route114_AraunaValley_Layout",
+      "width": 40,
+      "height": 80,
+      "primary_tileset": "gTileset_AraunaValeTransicao",
+      "secondary_tileset": "gTileset_Arauna114CampoInterfaceV4",
+      "border_filepath": "data/layouts/Route114_AraunaValley/border.bin",
+      "blockdata_filepath": "data/layouts/Route114_AraunaValley/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_ROUTE115_COASTAL_CLIFF_V1",
+      "name": "Route115_AraunaCoastalCliff_Layout",
+      "width": 40,
+      "height": 80,
+      "primary_tileset": "gTileset_AraunaCostaSerrana",
+      "secondary_tileset": "gTileset_Arauna115Arrebentacao",
+      "border_filepath": "data/layouts/Route115_AraunaCoastalCliff/border.bin",
+      "blockdata_filepath": "data/layouts/Route115_AraunaCoastalCliff/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_ROUTE116_MINING_CORRIDOR_V1",
+      "name": "Route116_AraunaMiningCorridor_Layout",
+      "width": 100,
+      "height": 20,
+      "primary_tileset": "gTileset_AraunaCorredorMinerario",
+      "secondary_tileset": "gTileset_Arauna116Trilho",
+      "border_filepath": "data/layouts/Route116_AraunaMiningCorridor/border.bin",
+      "blockdata_filepath": "data/layouts/Route116_AraunaMiningCorridor/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_ROUTE117_CULTIVATED_FIELDS_V1",
+      "name": "Route117_AraunaCultivatedFields_Layout",
+      "width": 60,
+      "height": 20,
+      "primary_tileset": "gTileset_AraunaCamposCultivados",
+      "secondary_tileset": "gTileset_Arauna117Lavoura",
+      "border_filepath": "data/layouts/Route117_AraunaCultivatedFields/border.bin",
+      "blockdata_filepath": "data/layouts/Route117_AraunaCultivatedFields/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_ROUTE118_RIVER_CROSSING_V1",
+      "name": "Route118_AraunaRiverCrossing_Layout",
+      "width": 80,
+      "height": 20,
+      "primary_tileset": "gTileset_AraunaRioFronteira",
+      "secondary_tileset": "gTileset_Arauna118MataUmida",
+      "border_filepath": "data/layouts/Route118_AraunaRiverCrossing/border.bin",
+      "blockdata_filepath": "data/layouts/Route118_AraunaRiverCrossing/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_ROUTE121_URBAN_TRANSITION_V1",
+      "name": "Route121_AraunaUrbanTransition_Layout",
+      "width": 80,
+      "height": 20,
+      "primary_tileset": "gTileset_AraunaTransicaoBaia",
+      "secondary_tileset": "gTileset_Arauna121BaiaInterfaceV3",
+      "border_filepath": "data/layouts/Route121_AraunaUrbanTransition/border.bin",
+      "blockdata_filepath": "data/layouts/Route121_AraunaUrbanTransition/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_ROUTE122_MEMORIAL_WATER_V1",
+      "name": "Route122_AraunaMemorialWater_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_AraunaRioMemorial",
+      "secondary_tileset": "gTileset_Arauna122MarcosMemoria",
+      "border_filepath": "data/layouts/Route122_AraunaMemorialWater/border.bin",
+      "blockdata_filepath": "data/layouts/Route122_AraunaMemorialWater/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_ROUTE123_COASTAL_FARMS_V1",
+      "name": "Route123_AraunaCoastalFarms_Layout",
+      "width": 140,
+      "height": 20,
+      "primary_tileset": "gTileset_AraunaFazendasCosteiras",
+      "secondary_tileset": "gTileset_Arauna123CostaLavoura",
+      "border_filepath": "data/layouts/Route123_AraunaCoastalFarms/border.bin",
+      "blockdata_filepath": "data/layouts/Route123_AraunaCoastalFarms/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_ROUTE124_ARCHIPELAGO_V1",
+      "name": "Route124_AraunaArchipelago_Layout",
+      "width": 80,
+      "height": 80,
+      "primary_tileset": "gTileset_AraunaArquipelago",
+      "secondary_tileset": "gTileset_Arauna124MissoesInterfaceV3",
+      "border_filepath": "data/layouts/Route124_AraunaArchipelago/border.bin",
+      "blockdata_filepath": "data/layouts/Route124_AraunaArchipelago/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_ROUTE125_COLD_SEA_V1",
+      "name": "Route125_AraunaColdSea_Layout",
+      "width": 80,
+      "height": 40,
+      "primary_tileset": "gTileset_AraunaMarFrio",
+      "secondary_tileset": "gTileset_Arauna125MissoesInterfaceV3",
+      "border_filepath": "data/layouts/Route125_AraunaColdSea/border.bin",
+      "blockdata_filepath": "data/layouts/Route125_AraunaColdSea/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_ROUTE126_ANCESTRAL_WATERS_V1",
+      "name": "Route126_AraunaAncestralWaters_Layout",
+      "width": 80,
+      "height": 80,
+      "primary_tileset": "gTileset_AraunaAguasMboi",
+      "secondary_tileset": "gTileset_Arauna126Estruturas",
+      "border_filepath": "data/layouts/Route126_AraunaAncestralWaters/border.bin",
+      "blockdata_filepath": "data/layouts/Route126_AraunaAncestralWaters/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_ROUTE127_DEEP_OCEAN_V1",
+      "name": "Route127_AraunaDeepOcean_Layout",
+      "width": 80,
+      "height": 80,
+      "primary_tileset": "gTileset_AraunaOceanoProfundo",
+      "secondary_tileset": "gTileset_Arauna127MissoesInterfaceV3",
+      "border_filepath": "data/layouts/Route127_AraunaDeepOcean/border.bin",
+      "blockdata_filepath": "data/layouts/Route127_AraunaDeepOcean/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_ROUTE128_DIVE_REEF_V1",
+      "name": "Route128_AraunaDiveReef_Layout",
+      "width": 120,
+      "height": 40,
+      "primary_tileset": "gTileset_AraunaRecifeMergulho",
+      "secondary_tileset": "gTileset_Arauna128Recife",
+      "border_filepath": "data/layouts/Route128_AraunaDiveReef/border.bin",
+      "blockdata_filepath": "data/layouts/Route128_AraunaDiveReef/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_ROUTE129_ISLAND_LANDMARKS_V1",
+      "name": "Route129_AraunaIslandLandmarks_Layout",
+      "width": 80,
+      "height": 40,
+      "primary_tileset": "gTileset_AraunaIlhotas",
+      "secondary_tileset": "gTileset_Arauna129Bosque",
+      "border_filepath": "data/layouts/Route129_AraunaIslandLandmarks/border.bin",
+      "blockdata_filepath": "data/layouts/Route129_AraunaIslandLandmarks/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_ROUTE130_CROSS_CURRENTS_V1",
+      "name": "Route130_AraunaCrossCurrents_Layout",
+      "width": 80,
+      "height": 40,
+      "primary_tileset": "gTileset_AraunaMarCorrente",
+      "secondary_tileset": "gTileset_Arauna130Correntes",
+      "border_filepath": "data/layouts/Route130_AraunaCrossCurrents/border.bin",
+      "blockdata_filepath": "data/layouts/Route130_AraunaCrossCurrents/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_ROUTE131_LAST_FREE_SEA_V1",
+      "name": "Route131_AraunaLastFreeSea_Layout",
+      "width": 60,
+      "height": 40,
+      "primary_tileset": "gTileset_AraunaMarLivre",
+      "secondary_tileset": "gTileset_Arauna131Vento",
+      "border_filepath": "data/layouts/Route131_AraunaLastFreeSea/border.bin",
+      "blockdata_filepath": "data/layouts/Route131_AraunaLastFreeSea/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_ROUTE132_CURRENT_NODES_V1",
+      "name": "Route132_AraunaCurrentNodes_Layout",
+      "width": 80,
+      "height": 40,
+      "primary_tileset": "gTileset_AraunaCorrentesFinais",
+      "secondary_tileset": "gTileset_Arauna132134Balizas",
+      "border_filepath": "data/layouts/Route132_AraunaCurrentNodes/border.bin",
+      "blockdata_filepath": "data/layouts/Route132_AraunaCurrentNodes/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_ROUTE133_CURRENT_NODES_V1",
+      "name": "Route133_AraunaCurrentNodes_Layout",
+      "width": 80,
+      "height": 40,
+      "primary_tileset": "gTileset_AraunaCorrentesFinais",
+      "secondary_tileset": "gTileset_Arauna132134Balizas",
+      "border_filepath": "data/layouts/Route133_AraunaCurrentNodes/border.bin",
+      "blockdata_filepath": "data/layouts/Route133_AraunaCurrentNodes/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_ROUTE134_CURRENT_NODES_V1",
+      "name": "Route134_AraunaCurrentNodes_Layout",
+      "width": 80,
+      "height": 40,
+      "primary_tileset": "gTileset_AraunaCorrentesFinais",
+      "secondary_tileset": "gTileset_Arauna132134Balizas",
+      "border_filepath": "data/layouts/Route134_AraunaCurrentNodes/border.bin",
+      "blockdata_filepath": "data/layouts/Route134_AraunaCurrentNodes/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_PASSAGEM_INTERIORS_POKEMONCENTER_1F",
+      "name": "OldaleTown_PokemonCenter_1F_Arauna_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaPassagemInteriorsV1",
+      "border_filepath": "data/layouts/OldaleTown_PokemonCenter_1F_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/OldaleTown_PokemonCenter_1F_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_PASSAGEM_INTERIORS_HOUSE1",
+      "name": "OldaleTown_House1_Arauna_Layout",
+      "width": 12,
+      "height": 11,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaPassagemInteriorsV1",
+      "border_filepath": "data/layouts/OldaleTown_House1_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/OldaleTown_House1_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_PASSAGEM_INTERIORS_MART",
+      "name": "OldaleTown_Mart_Arauna_Layout",
+      "width": 12,
+      "height": 11,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaPassagemInteriorsV1",
+      "border_filepath": "data/layouts/OldaleTown_Mart_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/OldaleTown_Mart_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_PASSAGEM_INTERIORS_HOUSE2",
+      "name": "OldaleTown_House2_Arauna_Layout",
+      "width": 12,
+      "height": 11,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaPassagemInteriorsV1",
+      "border_filepath": "data/layouts/OldaleTown_House2_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/OldaleTown_House2_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_PASSAGEM_INTERIORS_POKEMONCENTER_2F",
+      "name": "OldaleTown_PokemonCenter_2F_Arauna_Layout",
+      "width": 14,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaPassagemInteriorsV1",
+      "border_filepath": "data/layouts/OldaleTown_PokemonCenter_2F_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/OldaleTown_PokemonCenter_2F_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_REDES_INTERIORS_HOUSE2",
+      "name": "DewfordTown_House2_Arauna_Layout",
+      "width": 12,
+      "height": 11,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaRedesInteriorsV1",
+      "border_filepath": "data/layouts/DewfordTown_House2_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/DewfordTown_House2_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_REDES_INTERIORS_HALL",
+      "name": "DewfordTown_Hall_Arauna_Layout",
+      "width": 17,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaRedesInteriorsV1",
+      "border_filepath": "data/layouts/DewfordTown_Hall_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/DewfordTown_Hall_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_REDES_INTERIORS_POKEMONCENTER_2F",
+      "name": "DewfordTown_PokemonCenter_2F_Arauna_Layout",
+      "width": 14,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaRedesInteriorsV1",
+      "border_filepath": "data/layouts/DewfordTown_PokemonCenter_2F_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/DewfordTown_PokemonCenter_2F_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_REDES_INTERIORS_POKEMONCENTER_1F",
+      "name": "DewfordTown_PokemonCenter_1F_Arauna_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaRedesInteriorsV1",
+      "border_filepath": "data/layouts/DewfordTown_PokemonCenter_1F_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/DewfordTown_PokemonCenter_1F_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_REDES_INTERIORS_HOUSE1",
+      "name": "DewfordTown_House1_Arauna_Layout",
+      "width": 12,
+      "height": 11,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaRedesInteriorsV1",
+      "border_filepath": "data/layouts/DewfordTown_House1_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/DewfordTown_House1_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_MISSOES_CEU_GYM",
+      "name": "MossdeepCity_Gym_Arauna_Layout",
+      "width": 26,
+      "height": 36,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaMissoesCeuGymV1",
+      "border_filepath": "data/layouts/MossdeepCity_Gym_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/MossdeepCity_Gym_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_MISSOES_CEU_GAME_CORNER_1F",
+      "name": "MossdeepCity_GameCorner_1F_Arauna_Layout",
+      "width": 12,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaMissoesCeuGameCorner1FV1",
+      "border_filepath": "data/layouts/MossdeepCity_GameCorner_1F_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/MossdeepCity_GameCorner_1F_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_MISSOES_CEU_GAME_CORNER_B1F",
+      "name": "MossdeepCity_GameCorner_B1F_Arauna_Layout",
+      "width": 12,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaMissoesCeuGameCornerB1FV1",
+      "border_filepath": "data/layouts/MossdeepCity_GameCorner_B1F_Arauna/border.bin",
+      "blockdata_filepath": "data/layouts/MossdeepCity_GameCorner_B1F_Arauna/map.bin"
     }
   ]
 }

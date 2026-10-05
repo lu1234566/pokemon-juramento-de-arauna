@@ -1,7 +1,7 @@
 {
   "id": "MAP_ROUTE112",
   "name": "Route112",
-  "layout": "LAYOUT_ROUTE112",
+  "layout": "LAYOUT_ARAUNA_ROUTE112_VOLCANIC_BASE_V1",
   "music": "MUS_ROUTE110",
   "region_map_section": "MAPSEC_ROUTE_112",
   "requires_flash": false,

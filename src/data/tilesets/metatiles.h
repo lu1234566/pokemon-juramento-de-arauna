@@ -559,3 +559,227 @@ const u16 gMetatiles_AraunaBaiaBattleFrontier[] = INCBIN_U16("data/tilesets/seco
 const u16 gMetatileAttributes_AraunaBaiaBattleFrontier[] = INCBIN_U16("data/tilesets/secondary/arauna_baia_battle_frontier/metatile_attributes.bin");
 
 // QUATRO_INTERIORS_V1_END
+
+const u16 gMetatiles_AraunaMataEspera[] = INCBIN_U16("data/tilesets/primary/arauna_mata_espera/metatiles.bin");
+
+const u16 gMetatileAttributes_AraunaMataEspera[] = INCBIN_U16("data/tilesets/primary/arauna_mata_espera/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaArcoCosteiro[] = INCBIN_U16("data/tilesets/primary/arauna_arco_costeiro/metatiles.bin");
+
+const u16 gMetatileAttributes_AraunaArcoCosteiro[] = INCBIN_U16("data/tilesets/primary/arauna_arco_costeiro/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaNaufragio[] = INCBIN_U16("data/tilesets/secondary/arauna_naufragio/metatiles.bin");
+
+const u16 gMetatileAttributes_AraunaNaufragio[] = INCBIN_U16("data/tilesets/secondary/arauna_naufragio/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaPraiaUrbana[] = INCBIN_U16("data/tilesets/secondary/arauna_praia_urbana/metatiles.bin");
+
+const u16 gMetatileAttributes_AraunaPraiaUrbana[] = INCBIN_U16("data/tilesets/secondary/arauna_praia_urbana/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaMangue[] = INCBIN_U16("data/tilesets/primary/arauna_mangue/metatiles.bin");
+
+const u16 gMetatileAttributes_AraunaMangue[] = INCBIN_U16("data/tilesets/primary/arauna_mangue/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaCiclovia[] = INCBIN_U16("data/tilesets/secondary/arauna_ciclovia/metatiles.bin");
+
+const u16 gMetatileAttributes_AraunaCiclovia[] = INCBIN_U16("data/tilesets/secondary/arauna_ciclovia/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaEixoInterior[] = INCBIN_U16("data/tilesets/primary/arauna_eixo_interior/metatiles.bin");
+
+const u16 gMetatileAttributes_AraunaEixoInterior[] = INCBIN_U16("data/tilesets/primary/arauna_eixo_interior/metatile_attributes.bin");
+
+const u16 gMetatiles_Arauna111Regions[] = INCBIN_U16("data/tilesets/secondary/arauna111_regions/metatiles.bin");
+
+const u16 gMetatileAttributes_Arauna111Regions[] = INCBIN_U16("data/tilesets/secondary/arauna111_regions/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaPedraEscura[] = INCBIN_U16("data/tilesets/primary/arauna_pedra_escura/metatiles.bin");
+
+const u16 gMetatileAttributes_AraunaPedraEscura[] = INCBIN_U16("data/tilesets/primary/arauna_pedra_escura/metatile_attributes.bin");
+
+const u16 gMetatiles_Arauna112CasaCinzaInterfaceV2[] = INCBIN_U16("data/tilesets/secondary/arauna112_casa_cinza_interface_v2/metatiles.bin");
+
+const u16 gMetatileAttributes_Arauna112CasaCinzaInterfaceV2[] = INCBIN_U16("data/tilesets/secondary/arauna112_casa_cinza_interface_v2/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaCampoCinzas[] = INCBIN_U16("data/tilesets/primary/arauna_campo_cinzas/metatiles.bin");
+
+const u16 gMetatileAttributes_AraunaCampoCinzas[] = INCBIN_U16("data/tilesets/primary/arauna_campo_cinzas/metatile_attributes.bin");
+
+const u16 gMetatiles_Arauna113CampoInterfaceV4[] = INCBIN_U16("data/tilesets/secondary/arauna113_campo_interface_v4/metatiles.bin");
+
+const u16 gMetatileAttributes_Arauna113CampoInterfaceV4[] = INCBIN_U16("data/tilesets/secondary/arauna113_campo_interface_v4/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaValeTransicao[] = INCBIN_U16("data/tilesets/primary/arauna_vale_transicao/metatiles.bin");
+
+const u16 gMetatileAttributes_AraunaValeTransicao[] = INCBIN_U16("data/tilesets/primary/arauna_vale_transicao/metatile_attributes.bin");
+
+const u16 gMetatiles_Arauna114CampoInterfaceV4[] = INCBIN_U16("data/tilesets/secondary/arauna114_campo_interface_v4/metatiles.bin");
+
+const u16 gMetatileAttributes_Arauna114CampoInterfaceV4[] = INCBIN_U16("data/tilesets/secondary/arauna114_campo_interface_v4/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaCostaSerrana[] = INCBIN_U16("data/tilesets/primary/arauna_costa_serrana/metatiles.bin");
+
+const u16 gMetatileAttributes_AraunaCostaSerrana[] = INCBIN_U16("data/tilesets/primary/arauna_costa_serrana/metatile_attributes.bin");
+
+const u16 gMetatiles_Arauna115Arrebentacao[] = INCBIN_U16("data/tilesets/secondary/arauna115_arrebentacao/metatiles.bin");
+
+const u16 gMetatileAttributes_Arauna115Arrebentacao[] = INCBIN_U16("data/tilesets/secondary/arauna115_arrebentacao/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaCorredorMinerario[] = INCBIN_U16("data/tilesets/primary/arauna_corredor_minerario/metatiles.bin");
+
+const u16 gMetatileAttributes_AraunaCorredorMinerario[] = INCBIN_U16("data/tilesets/primary/arauna_corredor_minerario/metatile_attributes.bin");
+
+const u16 gMetatiles_Arauna116Trilho[] = INCBIN_U16("data/tilesets/secondary/arauna116_trilho/metatiles.bin");
+
+const u16 gMetatileAttributes_Arauna116Trilho[] = INCBIN_U16("data/tilesets/secondary/arauna116_trilho/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaCamposCultivados[] = INCBIN_U16("data/tilesets/primary/arauna_campos_cultivados/metatiles.bin");
+
+const u16 gMetatileAttributes_AraunaCamposCultivados[] = INCBIN_U16("data/tilesets/primary/arauna_campos_cultivados/metatile_attributes.bin");
+
+const u16 gMetatiles_Arauna117Lavoura[] = INCBIN_U16("data/tilesets/secondary/arauna117_lavoura/metatiles.bin");
+
+const u16 gMetatileAttributes_Arauna117Lavoura[] = INCBIN_U16("data/tilesets/secondary/arauna117_lavoura/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaRioFronteira[] = INCBIN_U16("data/tilesets/primary/arauna_rio_fronteira/metatiles.bin");
+
+const u16 gMetatileAttributes_AraunaRioFronteira[] = INCBIN_U16("data/tilesets/primary/arauna_rio_fronteira/metatile_attributes.bin");
+
+const u16 gMetatiles_Arauna118MataUmida[] = INCBIN_U16("data/tilesets/secondary/arauna118_mata_umida/metatiles.bin");
+
+const u16 gMetatileAttributes_Arauna118MataUmida[] = INCBIN_U16("data/tilesets/secondary/arauna118_mata_umida/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaTransicaoBaia[] = INCBIN_U16("data/tilesets/primary/arauna_transicao_baia/metatiles.bin");
+
+const u16 gMetatileAttributes_AraunaTransicaoBaia[] = INCBIN_U16("data/tilesets/primary/arauna_transicao_baia/metatile_attributes.bin");
+
+const u16 gMetatiles_Arauna121BaiaInterfaceV3[] = INCBIN_U16("data/tilesets/secondary/arauna121_baia_interface_v3/metatiles.bin");
+
+const u16 gMetatileAttributes_Arauna121BaiaInterfaceV3[] = INCBIN_U16("data/tilesets/secondary/arauna121_baia_interface_v3/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaRioMemorial[] = INCBIN_U16("data/tilesets/primary/arauna_rio_memorial/metatiles.bin");
+
+const u16 gMetatileAttributes_AraunaRioMemorial[] = INCBIN_U16("data/tilesets/primary/arauna_rio_memorial/metatile_attributes.bin");
+
+const u16 gMetatiles_Arauna122MarcosMemoria[] = INCBIN_U16("data/tilesets/secondary/arauna122_marcos_memoria/metatiles.bin");
+
+const u16 gMetatileAttributes_Arauna122MarcosMemoria[] = INCBIN_U16("data/tilesets/secondary/arauna122_marcos_memoria/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaFazendasCosteiras[] = INCBIN_U16("data/tilesets/primary/arauna_fazendas_costeiras/metatiles.bin");
+
+const u16 gMetatileAttributes_AraunaFazendasCosteiras[] = INCBIN_U16("data/tilesets/primary/arauna_fazendas_costeiras/metatile_attributes.bin");
+
+const u16 gMetatiles_Arauna123CostaLavoura[] = INCBIN_U16("data/tilesets/secondary/arauna123_costa_lavoura/metatiles.bin");
+
+const u16 gMetatileAttributes_Arauna123CostaLavoura[] = INCBIN_U16("data/tilesets/secondary/arauna123_costa_lavoura/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaArquipelago[] = INCBIN_U16("data/tilesets/primary/arauna_arquipelago/metatiles.bin");
+
+const u16 gMetatileAttributes_AraunaArquipelago[] = INCBIN_U16("data/tilesets/primary/arauna_arquipelago/metatile_attributes.bin");
+
+const u16 gMetatiles_Arauna124MissoesInterfaceV3[] = INCBIN_U16("data/tilesets/secondary/arauna124_missoes_interface_v3/metatiles.bin");
+
+const u16 gMetatileAttributes_Arauna124MissoesInterfaceV3[] = INCBIN_U16("data/tilesets/secondary/arauna124_missoes_interface_v3/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaMarFrio[] = INCBIN_U16("data/tilesets/primary/arauna_mar_frio/metatiles.bin");
+
+const u16 gMetatileAttributes_AraunaMarFrio[] = INCBIN_U16("data/tilesets/primary/arauna_mar_frio/metatile_attributes.bin");
+
+const u16 gMetatiles_Arauna125MissoesInterfaceV3[] = INCBIN_U16("data/tilesets/secondary/arauna125_missoes_interface_v3/metatiles.bin");
+
+const u16 gMetatileAttributes_Arauna125MissoesInterfaceV3[] = INCBIN_U16("data/tilesets/secondary/arauna125_missoes_interface_v3/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaAguasMboi[] = INCBIN_U16("data/tilesets/primary/arauna_aguas_mboi/metatiles.bin");
+
+const u16 gMetatileAttributes_AraunaAguasMboi[] = INCBIN_U16("data/tilesets/primary/arauna_aguas_mboi/metatile_attributes.bin");
+
+const u16 gMetatiles_Arauna126Estruturas[] = INCBIN_U16("data/tilesets/secondary/arauna126_estruturas/metatiles.bin");
+
+const u16 gMetatileAttributes_Arauna126Estruturas[] = INCBIN_U16("data/tilesets/secondary/arauna126_estruturas/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaOceanoProfundo[] = INCBIN_U16("data/tilesets/primary/arauna_oceano_profundo/metatiles.bin");
+
+const u16 gMetatileAttributes_AraunaOceanoProfundo[] = INCBIN_U16("data/tilesets/primary/arauna_oceano_profundo/metatile_attributes.bin");
+
+const u16 gMetatiles_Arauna127MissoesInterfaceV3[] = INCBIN_U16("data/tilesets/secondary/arauna127_missoes_interface_v3/metatiles.bin");
+
+const u16 gMetatileAttributes_Arauna127MissoesInterfaceV3[] = INCBIN_U16("data/tilesets/secondary/arauna127_missoes_interface_v3/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaRecifeMergulho[] = INCBIN_U16("data/tilesets/primary/arauna_recife_mergulho/metatiles.bin");
+
+const u16 gMetatileAttributes_AraunaRecifeMergulho[] = INCBIN_U16("data/tilesets/primary/arauna_recife_mergulho/metatile_attributes.bin");
+
+const u16 gMetatiles_Arauna128Recife[] = INCBIN_U16("data/tilesets/secondary/arauna128_recife/metatiles.bin");
+
+const u16 gMetatileAttributes_Arauna128Recife[] = INCBIN_U16("data/tilesets/secondary/arauna128_recife/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaIlhotas[] = INCBIN_U16("data/tilesets/primary/arauna_ilhotas/metatiles.bin");
+
+const u16 gMetatileAttributes_AraunaIlhotas[] = INCBIN_U16("data/tilesets/primary/arauna_ilhotas/metatile_attributes.bin");
+
+const u16 gMetatiles_Arauna129Bosque[] = INCBIN_U16("data/tilesets/secondary/arauna129_bosque/metatiles.bin");
+
+const u16 gMetatileAttributes_Arauna129Bosque[] = INCBIN_U16("data/tilesets/secondary/arauna129_bosque/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaMarCorrente[] = INCBIN_U16("data/tilesets/primary/arauna_mar_corrente/metatiles.bin");
+
+const u16 gMetatileAttributes_AraunaMarCorrente[] = INCBIN_U16("data/tilesets/primary/arauna_mar_corrente/metatile_attributes.bin");
+
+const u16 gMetatiles_Arauna130Correntes[] = INCBIN_U16("data/tilesets/secondary/arauna130_correntes/metatiles.bin");
+
+const u16 gMetatileAttributes_Arauna130Correntes[] = INCBIN_U16("data/tilesets/secondary/arauna130_correntes/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaMarLivre[] = INCBIN_U16("data/tilesets/primary/arauna_mar_livre/metatiles.bin");
+
+const u16 gMetatileAttributes_AraunaMarLivre[] = INCBIN_U16("data/tilesets/primary/arauna_mar_livre/metatile_attributes.bin");
+
+const u16 gMetatiles_Arauna131Vento[] = INCBIN_U16("data/tilesets/secondary/arauna131_vento/metatiles.bin");
+
+const u16 gMetatileAttributes_Arauna131Vento[] = INCBIN_U16("data/tilesets/secondary/arauna131_vento/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaCorrentesFinais[] = INCBIN_U16("data/tilesets/primary/arauna_correntes_finais/metatiles.bin");
+
+const u16 gMetatileAttributes_AraunaCorrentesFinais[] = INCBIN_U16("data/tilesets/primary/arauna_correntes_finais/metatile_attributes.bin");
+
+const u16 gMetatiles_Arauna132134Balizas[] = INCBIN_U16("data/tilesets/secondary/arauna132134_balizas/metatiles.bin");
+
+const u16 gMetatileAttributes_Arauna132134Balizas[] = INCBIN_U16("data/tilesets/secondary/arauna132134_balizas/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaCampoCinzasCidadeSoloV3[] = INCBIN_U16("data/tilesets/primary/arauna_campo_cinzas_cidade_solo_v3/metatiles.bin");
+
+const u16 gMetatileAttributes_AraunaCampoCinzasCidadeSoloV3[] = INCBIN_U16("data/tilesets/primary/arauna_campo_cinzas_cidade_solo_v3/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaCampoInterfacesV4[] = INCBIN_U16("data/tilesets/secondary/arauna_campo_interfaces_v4/metatiles.bin");
+
+const u16 gMetatileAttributes_AraunaCampoInterfacesV4[] = INCBIN_U16("data/tilesets/secondary/arauna_campo_interfaces_v4/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaCasaCinzaPrimaryV2[] = INCBIN_U16("data/tilesets/primary/arauna_casa_cinza_primary_v2/metatiles.bin");
+
+const u16 gMetatileAttributes_AraunaCasaCinzaPrimaryV2[] = INCBIN_U16("data/tilesets/primary/arauna_casa_cinza_primary_v2/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaCasaCinzaCumulativeV2[] = INCBIN_U16("data/tilesets/secondary/arauna_casa_cinza_cumulative_v2/metatiles.bin");
+
+const u16 gMetatileAttributes_AraunaCasaCinzaCumulativeV2[] = INCBIN_U16("data/tilesets/secondary/arauna_casa_cinza_cumulative_v2/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaMissoesCeuCumulativeV3[] = INCBIN_U16("data/tilesets/secondary/arauna_missoes_ceu_cumulative_v3/metatiles.bin");
+
+const u16 gMetatileAttributes_AraunaMissoesCeuCumulativeV3[] = INCBIN_U16("data/tilesets/secondary/arauna_missoes_ceu_cumulative_v3/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaPassagemInteriorsV1[] = INCBIN_U16("data/tilesets/secondary/arauna_passagem_interiors_v1/metatiles.bin");
+
+const u16 gMetatileAttributes_AraunaPassagemInteriorsV1[] = INCBIN_U16("data/tilesets/secondary/arauna_passagem_interiors_v1/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaRedesInteriorsV1[] = INCBIN_U16("data/tilesets/secondary/arauna_redes_interiors_v1/metatiles.bin");
+
+const u16 gMetatileAttributes_AraunaRedesInteriorsV1[] = INCBIN_U16("data/tilesets/secondary/arauna_redes_interiors_v1/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaMissoesCeuGymV1[] = INCBIN_U16("data/tilesets/secondary/arauna_missoes_ceu_gym_v1/metatiles.bin");
+
+const u16 gMetatileAttributes_AraunaMissoesCeuGymV1[] = INCBIN_U16("data/tilesets/secondary/arauna_missoes_ceu_gym_v1/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaMissoesCeuGameCorner1FV1[] = INCBIN_U16("data/tilesets/secondary/arauna_missoes_ceu_game_corner_1f_v1/metatiles.bin");
+
+const u16 gMetatileAttributes_AraunaMissoesCeuGameCorner1FV1[] = INCBIN_U16("data/tilesets/secondary/arauna_missoes_ceu_game_corner_1f_v1/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaMissoesCeuGameCornerB1FV1[] = INCBIN_U16("data/tilesets/secondary/arauna_missoes_ceu_game_corner_b1f_v1/metatiles.bin");
+
+const u16 gMetatileAttributes_AraunaMissoesCeuGameCornerB1FV1[] = INCBIN_U16("data/tilesets/secondary/arauna_missoes_ceu_game_corner_b1f_v1/metatile_attributes.bin");
