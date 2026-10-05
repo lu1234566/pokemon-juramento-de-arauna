@@ -56,6 +56,9 @@ Compilação de ROM, batalha real e conexão de cabo em emulador continuam pende
     (`MB_WIRELESS_BOX_RESULTS`, `MB_CABLE_BOX_RESULTS_2`).
   - Venda: prateleiras (`MB_SHOP_SHELF`). Casa da avaliadora: TV. Casa de
     Wanda: estante.
+  - Devolvido depois: as prateleiras de potes e livros (metatiles
+    0x226–0x227, presentes na venda, no Centro 1F e nas casas da avaliadora
+    e de Wanda) respondem como estante (`MB_BOOKSHELF`).
 - A enfermeira passou de (7,2) para (7,3), sem balcão entre ela e o jogador.
   A cura funciona no emulador; a Pokébola e o monitor da animação são sprites
   de posição fixa e caem sobre o móvel atrás dela.

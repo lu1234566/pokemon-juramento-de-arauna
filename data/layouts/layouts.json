@@ -5607,7 +5607,7 @@
       "width": 13,
       "height": 14,
       "primary_tileset": "gTileset_AraunaLigaPedra",
-      "secondary_tileset": "gTileset_AraunaLigaVozes",
+      "secondary_tileset": "gTileset_AraunaLigaVozesDrake",
       "border_filepath": "data/layouts/AraunaLiga_DrakesRoom/border.bin",
       "blockdata_filepath": "data/layouts/AraunaLiga_DrakesRoom/map.bin"
     },
@@ -5617,7 +5617,7 @@
       "width": 13,
       "height": 14,
       "primary_tileset": "gTileset_AraunaLigaPedra",
-      "secondary_tileset": "gTileset_AraunaLigaVozes",
+      "secondary_tileset": "gTileset_AraunaLigaVozesGlacia",
       "border_filepath": "data/layouts/AraunaLiga_GlaciasRoom/border.bin",
       "blockdata_filepath": "data/layouts/AraunaLiga_GlaciasRoom/map.bin"
     },
@@ -5687,7 +5687,7 @@
       "width": 13,
       "height": 14,
       "primary_tileset": "gTileset_AraunaLigaPedra",
-      "secondary_tileset": "gTileset_AraunaLigaVozes",
+      "secondary_tileset": "gTileset_AraunaLigaVozesPhoebe",
       "border_filepath": "data/layouts/AraunaLiga_PhoebesRoom/border.bin",
       "blockdata_filepath": "data/layouts/AraunaLiga_PhoebesRoom/map.bin"
     },

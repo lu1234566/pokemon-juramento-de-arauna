@@ -1200,6 +1200,45 @@ const struct Tileset gTileset_AraunaLigaVozes =
     .callback = InitTilesetAnim_EliteFour,
 };
 
+// Same tiles as AraunaLigaVozes; this room's ceremonial palette sits in slot 12,
+// because the overworld only loads background palettes 0-12.
+const struct Tileset gTileset_AraunaLigaVozesPhoebe =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaLigaVozes,
+    .palettes = gTilesetPalettes_AraunaLigaVozesPhoebe,
+    .metatiles = gMetatiles_AraunaLigaVozesPhoebe,
+    .metatileAttributes = gMetatileAttributes_AraunaLigaVozes,
+    .callback = InitTilesetAnim_EliteFour,
+};
+
+// Same tiles as AraunaLigaVozes; this room's ceremonial palette sits in slot 12,
+// because the overworld only loads background palettes 0-12.
+const struct Tileset gTileset_AraunaLigaVozesGlacia =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaLigaVozes,
+    .palettes = gTilesetPalettes_AraunaLigaVozesGlacia,
+    .metatiles = gMetatiles_AraunaLigaVozesGlacia,
+    .metatileAttributes = gMetatileAttributes_AraunaLigaVozes,
+    .callback = InitTilesetAnim_EliteFour,
+};
+
+// Same tiles as AraunaLigaVozes; this room's ceremonial palette sits in slot 12,
+// because the overworld only loads background palettes 0-12.
+const struct Tileset gTileset_AraunaLigaVozesDrake =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaLigaVozes,
+    .palettes = gTilesetPalettes_AraunaLigaVozesDrake,
+    .metatiles = gMetatiles_AraunaLigaVozesDrake,
+    .metatileAttributes = gMetatileAttributes_AraunaLigaVozes,
+    .callback = InitTilesetAnim_EliteFour,
+};
+
 const struct Tileset gTileset_AraunaLigaHall =
 {
     .isCompressed = TRUE,

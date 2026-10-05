@@ -2360,6 +2360,66 @@ const u16 gTilesetPalettes_AraunaLigaVozes[][16] =
     INCGFX_U16("data/tilesets/secondary/arauna_liga_vozes/palettes/15.pal", ".gbapal"),
 };
 
+const u16 gTilesetPalettes_AraunaLigaVozesPhoebe[][16] =
+{
+    INCGFX_U16("data/tilesets/secondary/arauna_liga_vozes_phoebe/palettes/00.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_liga_vozes_phoebe/palettes/01.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_liga_vozes_phoebe/palettes/02.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_liga_vozes_phoebe/palettes/03.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_liga_vozes_phoebe/palettes/04.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_liga_vozes_phoebe/palettes/05.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_liga_vozes_phoebe/palettes/06.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_liga_vozes_phoebe/palettes/07.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_liga_vozes_phoebe/palettes/08.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_liga_vozes_phoebe/palettes/09.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_liga_vozes_phoebe/palettes/10.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_liga_vozes_phoebe/palettes/11.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_liga_vozes_phoebe/palettes/12.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_liga_vozes_phoebe/palettes/13.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_liga_vozes_phoebe/palettes/14.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_liga_vozes_phoebe/palettes/15.pal", ".gbapal"),
+};
+
+const u16 gTilesetPalettes_AraunaLigaVozesGlacia[][16] =
+{
+    INCGFX_U16("data/tilesets/secondary/arauna_liga_vozes_glacia/palettes/00.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_liga_vozes_glacia/palettes/01.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_liga_vozes_glacia/palettes/02.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_liga_vozes_glacia/palettes/03.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_liga_vozes_glacia/palettes/04.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_liga_vozes_glacia/palettes/05.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_liga_vozes_glacia/palettes/06.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_liga_vozes_glacia/palettes/07.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_liga_vozes_glacia/palettes/08.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_liga_vozes_glacia/palettes/09.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_liga_vozes_glacia/palettes/10.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_liga_vozes_glacia/palettes/11.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_liga_vozes_glacia/palettes/12.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_liga_vozes_glacia/palettes/13.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_liga_vozes_glacia/palettes/14.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_liga_vozes_glacia/palettes/15.pal", ".gbapal"),
+};
+
+const u16 gTilesetPalettes_AraunaLigaVozesDrake[][16] =
+{
+    INCGFX_U16("data/tilesets/secondary/arauna_liga_vozes_drake/palettes/00.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_liga_vozes_drake/palettes/01.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_liga_vozes_drake/palettes/02.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_liga_vozes_drake/palettes/03.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_liga_vozes_drake/palettes/04.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_liga_vozes_drake/palettes/05.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_liga_vozes_drake/palettes/06.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_liga_vozes_drake/palettes/07.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_liga_vozes_drake/palettes/08.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_liga_vozes_drake/palettes/09.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_liga_vozes_drake/palettes/10.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_liga_vozes_drake/palettes/11.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_liga_vozes_drake/palettes/12.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_liga_vozes_drake/palettes/13.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_liga_vozes_drake/palettes/14.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_liga_vozes_drake/palettes/15.pal", ".gbapal"),
+};
+
 const u32 gTilesetTiles_AraunaLigaHall[] = INCGFX_U32("data/tilesets/secondary/arauna_liga_hall/tiles.png", ".4bpp.lz");
 const u16 gTilesetPalettes_AraunaLigaHall[][16] =
 {

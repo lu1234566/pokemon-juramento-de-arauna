@@ -301,6 +301,9 @@ const u16 gMetatileAttributes_AraunaLigaPedra[] = INCBIN_U16("data/tilesets/prim
 
 const u16 gMetatiles_AraunaLigaVozes[] = INCBIN_U16("data/tilesets/secondary/arauna_liga_vozes/metatiles.bin");
 const u16 gMetatileAttributes_AraunaLigaVozes[] = INCBIN_U16("data/tilesets/secondary/arauna_liga_vozes/metatile_attributes.bin");
+const u16 gMetatiles_AraunaLigaVozesPhoebe[] = INCBIN_U16("data/tilesets/secondary/arauna_liga_vozes_phoebe/metatiles.bin");
+const u16 gMetatiles_AraunaLigaVozesGlacia[] = INCBIN_U16("data/tilesets/secondary/arauna_liga_vozes_glacia/metatiles.bin");
+const u16 gMetatiles_AraunaLigaVozesDrake[] = INCBIN_U16("data/tilesets/secondary/arauna_liga_vozes_drake/metatiles.bin");
 
 const u16 gMetatiles_AraunaLigaHall[] = INCBIN_U16("data/tilesets/secondary/arauna_liga_hall/metatiles.bin");
 const u16 gMetatileAttributes_AraunaLigaHall[] = INCBIN_U16("data/tilesets/secondary/arauna_liga_hall/metatile_attributes.bin");
