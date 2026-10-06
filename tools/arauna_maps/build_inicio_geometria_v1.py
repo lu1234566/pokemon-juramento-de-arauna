@@ -78,15 +78,24 @@ class Bank:
  def block(self,rgba,attr=0,forced=None):
   # Quantize each metatile to the best unchanged palette. No reserved BG
   # palette or transparent colour is consumed by opaque floor pixels.
-  im=rgba.convert('RGB');cache_key=(im.tobytes(),attr,forced)
+  rgba=rgba.convert('RGBA');im=rgba.convert('RGB');cache_key=(rgba.tobytes(),attr,forced)
   if cache_key in self.rgba_cache:return self.rgba_cache[cache_key]
-  pixels=list(im.getdata());best=None
+  if rgba.getextrema()[3][1]==0:return self.floor(attr=attr)
+  # Preserve the original foreground palette choice. Only composition changes:
+  # foreground pixels keep their previous quantization, grass uses its own.
+  sample=self.grass.copy();sample.alpha_composite(rgba)
+  pixels=list(sample.convert('RGB').getdata());best=None
   for q,pal in enumerate(self.pals):
    mapping={c:min(range(1,16),key=lambda j:sum((a-b)**2 for a,b in zip(c,pal[j]))) for c in set(pixels)}
    loss=sum(sum((a-b)**2 for a,b in zip(c,pal[mapping[c]])) for c in pixels)
    if best is None or loss<best[0]:best=(loss,q,mapping)
-  _,q,mp=best;pix=Image.new('L',(16,16));pix.putdata([mp[c] for c in pixels])
-  entries=[self.tile(pix.crop((x,y,x+8,y+8)).tobytes()) | q<<12 for y in (0,8) for x in (0,8)]+[0]*4
+  _,q,mp=best;pix=Image.new('L',(16,16));pix.putdata([mp[c[:3]] if c[3] else 0 for c in rgba.getdata()])
+  foreground=[self.tile(pix.crop((x,y,x+8,y+8)).tobytes()) | q<<12 for y in (0,8) for x in (0,8)]
+  if rgba.getextrema()[3][0]<255:
+   # An object palette need not contain grass green. Keep the opaque grass
+   # on the bottom layer and quantize only the silhouette on the top layer.
+   floor=self.floor();entries=self.meta[floor*8:floor*8+4]+foreground
+  else:entries=foreground+[0]*4
   key=(tuple(entries),attr)
   if forced is None and key in self.known:
    self.rgba_cache[cache_key]=self.known[key];return self.known[key]
@@ -95,10 +104,31 @@ class Bank:
   self.rgba_cache[cache_key]=mid;return mid
  def floor(self,kind='grass',attr=0):return self.block(self.earth if kind=='earth' else self.grass,attr)
  def sprite(self,n,size):
-  im=Image.new('RGBA',size);base=self.grass
-  for y in range(0,size[1],16):
-   for x in range(0,size[0],16):im.paste(base,(x,y))
-  im.alpha_composite(self.asset(n,size));return im
+  asset=self.asset(n,size)
+  if n=='fern':
+   # The border strip is also rendered by neighboring banks. Its original
+   # opaque composition stays exact; only standalone objects are layered.
+   im=Image.new('RGBA',size)
+   for y in range(0,size[1],16):
+    for x in range(0,size[0],16):im.paste(self.grass,(x,y))
+   im.alpha_composite(asset);return im
+  return asset
+ def rustic_door(self):
+  # Native editable pattern: plaster jamb, timber frame and vertical boards.
+  # Palette 6 already contains all its colours; no global palette is changed.
+  im=Image.new('P',(16,32),8);im.putpalette([v for i in range(256) for v in (i,i,i)])
+  d=ImageDraw.Draw(im);d.rectangle((2,2,13,29),fill=1);d.rectangle((3,3,12,28),fill=10)
+  for x in (4,7,10):d.line((x,4,x,27),fill=11)
+  d.line((3,3,12,3),fill=12);d.line((3,28,12,28),fill=12)
+  d.rectangle((4,4,11,8),fill=10);d.line((4,6,11,6),fill=12);d.line((8,4,8,8),fill=1)
+  d.point((10,19),fill=12);d.rectangle((0,30,15,31),fill=10);d.line((0,30,15,30),fill=11)
+  closed=Image.new('RGBA',im.size);closed.putdata([(*self.pals[6][i],255) for i in im.getdata()])
+  frames=Image.new('P',(16,96));frames.putpalette(im.getpalette())
+  for i,(left,right) in enumerate(((7,8),(5,10),(3,12))):
+   frame=im.copy();draw=ImageDraw.Draw(frame);draw.rectangle((left,4,right,28),fill=1)
+   frames.paste(frame,(0,i*32))
+  frames.save(ROOT/'graphics/door_anims/arauna_inicio_madeira_v2.png',bits=4)
+  return closed
  def write(self):
   for primary,sym,slug in [(True,'AraunaInicioBaseV1','arauna_inicio_base_v1'),(False,'AraunaInicioSulV1','arauna_inicio_sul_v1')]:
    dest=ROOT/'data/tilesets'/('primary' if primary else 'secondary')/slug;dest.mkdir(parents=True,exist_ok=True)
@@ -140,7 +170,13 @@ class Map:
   for yy in range(h):
    for xx in range(w):self.set(x+xx,y+yy,self.bank.block(im.crop((xx*16,yy*16,(xx+1)*16,(yy+1)*16))),1)
   if door:
-   dx,dy,raw=door;self.g[dy*self.w+dx]=raw;self.required.add((dx,dy+1))
+   dx,dy,raw=door
+   if n in ('clinic','shop'):
+    closed=self.bank.rustic_door()
+    top=self.bank.block(closed.crop((0,0,16,16)))
+    self.set(dx,dy-1,top,1)
+    self.bank.block(closed.crop((0,16,16,32)),self.bank.attrs[raw&1023],forced=raw&1023)
+   self.g[dy*self.w+dx]=raw;self.required.add((dx,dy+1))
  def sign(self,x,y):self.put('sign',x,y,1,1)
  def edge(self):
   # Keep exactly the native crossing cells and their upper flags.

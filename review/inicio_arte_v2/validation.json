@@ -1,0 +1,134 @@
+{
+  "base_commit": "01bf15e5ac957a21c24d49cd6c78658d07154e38",
+  "map_jsons_identical": 528,
+  "maps": {
+    "LittlerootTown": {
+      "cells_checked": 780,
+      "collision_elevation_behavior_identical": true
+    },
+    "OldaleTown": {
+      "cells_checked": 780,
+      "collision_elevation_behavior_identical": true
+    },
+    "Route101": {
+      "cells_checked": 1120,
+      "collision_elevation_behavior_identical": true
+    },
+    "Route102": {
+      "cells_checked": 1000,
+      "collision_elevation_behavior_identical": true,
+      "RGB_identical": true
+    },
+    "Route103": {
+      "cells_checked": 1760,
+      "collision_elevation_behavior_identical": true,
+      "RGB_identical": true
+    }
+  },
+  "borders": [
+    {
+      "from": "LittlerootTown",
+      "to": "Route101",
+      "cells_checked": 266,
+      "corrected_object_cells": 6,
+      "wrong_drawing_cells_before": 0,
+      "wrong_drawing_cells_after": 0
+    },
+    {
+      "from": "OldaleTown",
+      "to": "Route103",
+      "cells_checked": 196,
+      "corrected_object_cells": 0,
+      "wrong_drawing_cells_before": 0,
+      "wrong_drawing_cells_after": 0
+    },
+    {
+      "from": "OldaleTown",
+      "to": "Route101",
+      "cells_checked": 266,
+      "corrected_object_cells": 2,
+      "wrong_drawing_cells_before": 0,
+      "wrong_drawing_cells_after": 0
+    },
+    {
+      "from": "OldaleTown",
+      "to": "Route102",
+      "cells_checked": 140,
+      "corrected_object_cells": 0,
+      "wrong_drawing_cells_before": 0,
+      "wrong_drawing_cells_after": 0
+    },
+    {
+      "from": "PetalburgCity",
+      "to": "Route102",
+      "cells_checked": 160,
+      "corrected_object_cells": 0,
+      "wrong_drawing_cells_before": 0,
+      "wrong_drawing_cells_after": 0
+    },
+    {
+      "from": "Route101",
+      "to": "OldaleTown",
+      "cells_checked": 210,
+      "corrected_object_cells": 6,
+      "wrong_drawing_cells_before": 0,
+      "wrong_drawing_cells_after": 0
+    },
+    {
+      "from": "Route101",
+      "to": "LittlerootTown",
+      "cells_checked": 210,
+      "corrected_object_cells": 0,
+      "wrong_drawing_cells_before": 0,
+      "wrong_drawing_cells_after": 0
+    },
+    {
+      "from": "Route102",
+      "to": "PetalburgCity",
+      "cells_checked": 189,
+      "corrected_object_cells": 0,
+      "wrong_drawing_cells_before": 0,
+      "wrong_drawing_cells_after": 0
+    },
+    {
+      "from": "Route102",
+      "to": "OldaleTown",
+      "cells_checked": 208,
+      "corrected_object_cells": 11,
+      "wrong_drawing_cells_before": 0,
+      "wrong_drawing_cells_after": 0
+    },
+    {
+      "from": "Route103",
+      "to": "OldaleTown",
+      "cells_checked": 189,
+      "corrected_object_cells": 4,
+      "wrong_drawing_cells_before": 0,
+      "wrong_drawing_cells_after": 0
+    },
+    {
+      "from": "Route103",
+      "to": "Route110",
+      "cells_checked": 288,
+      "corrected_object_cells": 0,
+      "wrong_drawing_cells_before": 251,
+      "wrong_drawing_cells_after": 251
+    },
+    {
+      "from": "Route110",
+      "to": "Route103",
+      "cells_checked": 154,
+      "corrected_object_cells": 0,
+      "wrong_drawing_cells_before": 126,
+      "wrong_drawing_cells_after": 126
+    }
+  ],
+  "layered_object_metatiles_with_exact_grass_bottom": 99,
+  "door_selector": {
+    "real_C_compiled": true,
+    "foreign_ids_unchanged": 1024,
+    "scoped_ids_checked": 1024,
+    "distinct_opaque_animation_frames": 3
+  },
+  "save_routine_and_continue_warp_priority_identical_to_installed_base": true
+}

@@ -1,0 +1,65 @@
+{
+  "engine": "mGBA 0.10.2",
+  "rom_sha256": "38efbd8e6b493961b3153d953c220b25396a3da1715f2594ec61f059b0000948",
+  "disk_ROM_unchanged": true,
+  "entry_initialization": "memory only; hooks restored before traversal/captures",
+  "door_capture": "all three linked 4bpp frames matched in VRAM while the opening animation task was active",
+  "cases": [
+    {
+      "case": "clinic",
+      "status": "PASS",
+      "illegal_opcodes": 0,
+      "checks": [
+        "map=2,2 pos=7,7 illegal=0",
+        "map=2,2 pos=7,7 illegal=0",
+        "map=2,2 pos=7,7 illegal=0",
+        "map=0,10 pos=7,20 illegal=0",
+        "map=0,10 pos=7,20 illegal=0",
+        "door animation phases PASS",
+        "map=2,2 pos=7,8 illegal=0",
+        "map=2,2 pos=7,8 illegal=0",
+        "map=2,2 pos=7,7 illegal=0",
+        "map=0,10 pos=7,20 illegal=0",
+        "map=0,10 pos=7,20 illegal=0",
+        "map=0,10 pos=12,13 illegal=0"
+      ]
+    },
+    {
+      "case": "mart",
+      "status": "PASS",
+      "illegal_opcodes": 0,
+      "checks": [
+        "map=2,4 pos=5,9 illegal=0",
+        "map=2,4 pos=5,9 illegal=0",
+        "map=2,4 pos=5,9 illegal=0",
+        "map=0,10 pos=20,9 illegal=0",
+        "map=0,10 pos=20,9 illegal=0",
+        "door animation phases PASS",
+        "map=2,4 pos=5,10 illegal=0",
+        "map=2,4 pos=5,10 illegal=0",
+        "map=2,4 pos=5,9 illegal=0",
+        "map=0,10 pos=20,9 illegal=0",
+        "map=0,10 pos=20,9 illegal=0"
+      ]
+    },
+    {
+      "case": "lab",
+      "status": "PASS",
+      "illegal_opcodes": 0,
+      "checks": [
+        "map=1,4 pos=6,11 illegal=0",
+        "map=1,4 pos=6,11 illegal=0",
+        "map=1,4 pos=6,11 illegal=0",
+        "map=1,4 pos=6,12 illegal=0",
+        "map=1,4 pos=6,12 illegal=0",
+        "map=0,9 pos=20,23 illegal=0",
+        "map=0,9 pos=18,15 illegal=0",
+        "map=0,9 pos=10,0 illegal=0",
+        "map=0,9 pos=10,0 illegal=0",
+        "map=0,16 pos=10,27 illegal=0",
+        "map=0,16 pos=10,27 illegal=0",
+        "map=0,16 pos=16,8 illegal=0"
+      ]
+    }
+  ]
+}

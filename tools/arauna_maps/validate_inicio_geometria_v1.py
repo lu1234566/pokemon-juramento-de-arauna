@@ -118,7 +118,7 @@ def main():
  for row in old_rows:
   if row['map']=='Route101' and row['channel']=='B':row.update(x='13',y='11')
  assert old_rows==new_rows,'creature registry drift'
- allowed={'data/layouts/layouts.json','src/data/heal_locations.json','src/overworld.c','src/fldeff_cut.c','data/maps/OldaleTown/scripts.inc',path}|{f'data/maps/{n}/map.json' for n in TARGETS}|{f'src/data/tilesets/{n}.h' for n in ('graphics','headers','metatiles')}
+ allowed={'data/layouts/layouts.json','src/data/heal_locations.json','src/overworld.c','src/fldeff_cut.c','src/field_door.c','data/maps/OldaleTown/scripts.inc',path}|{f'data/maps/{n}/map.json' for n in TARGETS}|{f'src/data/tilesets/{n}.h' for n in ('graphics','headers','metatiles')}
  protected=subprocess.check_output(['git','ls-files','data','src','include','graphics'],cwd=a.base,text=True).splitlines();count=0
  for p in protected:
   if p in allowed:continue

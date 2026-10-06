@@ -1,0 +1,174 @@
+{
+  "base_commit": "42cff21717d138690118555fb23b0fc13bcb571b",
+  "maps": {
+    "LittlerootTown": {
+      "dimensions": [
+        30,
+        26
+      ],
+      "reachable_cells": 564,
+      "doors": [
+        {
+          "id": 0,
+          "from": [
+            24,
+            13
+          ],
+          "to": [
+            24,
+            13
+          ]
+        },
+        {
+          "id": 1,
+          "from": [
+            6,
+            10
+          ],
+          "to": [
+            6,
+            10
+          ]
+        },
+        {
+          "id": 2,
+          "from": [
+            12,
+            21
+          ],
+          "to": [
+            20,
+            22
+          ]
+        }
+      ],
+      "collision_cells_changed": 336,
+      "native_behavior_cells_changed": 286
+    },
+    "Route101": {
+      "dimensions": [
+        40,
+        28
+      ],
+      "reachable_cells": 861,
+      "doors": [
+        {
+          "id": 0,
+          "from": [
+            39,
+            16
+          ],
+          "to": [
+            39,
+            16
+          ]
+        },
+        {
+          "id": 1,
+          "from": [
+            39,
+            17
+          ],
+          "to": [
+            39,
+            17
+          ]
+        }
+      ],
+      "collision_cells_changed": 461,
+      "native_behavior_cells_changed": 186,
+      "rescue_gate_cut_cells": 64
+    },
+    "OldaleTown": {
+      "dimensions": [
+        30,
+        26
+      ],
+      "reachable_cells": 574,
+      "doors": [
+        {
+          "id": 0,
+          "from": [
+            6,
+            7
+          ],
+          "to": [
+            8,
+            9
+          ]
+        },
+        {
+          "id": 1,
+          "from": [
+            22,
+            21
+          ],
+          "to": [
+            22,
+            20
+          ]
+        },
+        {
+          "id": 2,
+          "from": [
+            3,
+            18
+          ],
+          "to": [
+            7,
+            19
+          ]
+        },
+        {
+          "id": 3,
+          "from": [
+            25,
+            6
+          ],
+          "to": [
+            20,
+            8
+          ]
+        }
+      ],
+      "collision_cells_changed": 280,
+      "native_behavior_cells_changed": 273,
+      "potion_tour_directions_checked": 4
+    }
+  },
+  "neighbors": {
+    "Route102": {
+      "cells_checked": 1000,
+      "pixels_identical": true,
+      "behavior_identical": true
+    },
+    "Route103": {
+      "cells_checked": 1760,
+      "pixels_identical": true,
+      "behavior_identical": true
+    }
+  },
+  "checks": [
+    "event identities/flags/warp destinations unchanged",
+    "connections/dimensions/crossing flags unchanged",
+    "all warp approaches and signs reachable",
+    "rescue collision/behavior staging exact and gate cut closed",
+    "four potion tour movement lanes open",
+    "Route102/103 grids, RGB and behaviors exact",
+    "incoming unchanged-neighbor strips exact",
+    "palette bytes and animation slots protected",
+    "script logic unchanged; heal point migrated"
+  ],
+  "protected_files_unchanged": 15266,
+  "save_migration": {
+    "legacy_walkable_positions_checked": 1124,
+    "positions_relocated_to_nearest_floor": 101,
+    "new_and_unrelated_caches_untouched": true,
+    "real_c_routine_compiled": true
+  },
+  "cut": {
+    "foreign_metatile_ids_unchanged": 1024,
+    "custom_capim_becomes_custom_campo": true,
+    "real_c_selector_compiled": true
+  }
+}

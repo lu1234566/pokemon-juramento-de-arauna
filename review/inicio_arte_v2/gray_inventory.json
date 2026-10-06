@@ -1,0 +1,14 @@
+{
+  "amanhecer": {
+    "gray_pixels_before": 1265,
+    "gray_pixels_after": 169
+  },
+  "rota101": {
+    "gray_pixels_before": 1320,
+    "gray_pixels_after": 38
+  },
+  "passagem": {
+    "gray_pixels_before": 1915,
+    "gray_pixels_after": 186
+  }
+}

@@ -103,3 +103,7 @@ um cinza (RGB 106,123,115) no lugar da grama: o ipê e as laterais de
 algumas casas (29 em Amanhecer, 12 na Rota 101, 44 na Passagem). As portas
 do Centro e da venda usam o vidro azul do Emerald, que destoa da fachada
 rústica.
+
+## Atualização — correção de arte V2
+
+Os fundos cinzas externos e as portas de vidro da Passagem registrados na revisão da V1 foram corrigidos sobre a base instalada `01bf15e5ac`. A lógica de save, incluindo a prioridade do continue warp, permanece idêntica a essa base. Detalhes e validação atual estão em `docs/INICIO_ARTE_V2.md`. Os registros originais desta página ficam preservados como histórico.

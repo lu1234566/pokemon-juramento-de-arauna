@@ -8,6 +8,8 @@
 #include "constants/songs.h"
 #include "constants/metatile_labels.h"
 
+extern const struct Tileset gTileset_AraunaInicioBaseV1;
+
 #define DOOR_SOUND_NORMAL  0
 #define DOOR_SOUND_SLIDING 1
 #define DOOR_SOUND_ARENA   2
@@ -226,6 +228,12 @@ static const u8 sDoorAnimPalettes_AraunaHouse[] = {6, 6, 6, 6, 6, 6, 6, 6};
 static const u8 sDoorAnimTiles_AraunaLab[] = INCGFX_U8("graphics/door_anims/arauna_amanhecer_lab.png", ".4bpp");
 static const u8 sDoorAnimPalettes_AraunaLab[] = {7, 7, 7, 7, 7, 7, 7, 7};
 // END ARAUNA_AMANHECER_DOOR_ASSETS
+static const u8 sDoorAnimTiles_AraunaInicioMadeira[] = INCGFX_U8("graphics/door_anims/arauna_inicio_madeira_v2.png", ".4bpp");
+static const u8 sDoorAnimPalettes_AraunaInicioMadeira[] = {6, 6, 6, 6, 6, 6, 6, 6};
+static const struct DoorGraphics sDoorGraphics_AraunaInicioMadeira =
+{
+    0, DOOR_SOUND_NORMAL, 1, sDoorAnimTiles_AraunaInicioMadeira, sDoorAnimPalettes_AraunaInicioMadeira
+};
 static const struct DoorGraphics sDoorAnimGraphicsTable[] =
 {
 // BEGIN ARAUNA_AMANHECER_DOOR_TABLE
@@ -436,6 +444,11 @@ static const struct DoorAnimFrame *GetLastDoorFrame(const struct DoorAnimFrame *
 
 static const struct DoorGraphics *GetDoorGraphics(const struct DoorGraphics *gfx, u16 metatileNum)
 {
+    if (gMapHeader.mapLayout->primaryTileset == &gTileset_AraunaInicioBaseV1
+        && (metatileNum == METATILE_General_Door_PokeCenter
+            || metatileNum == METATILE_General_Door_PokeMart))
+        return &sDoorGraphics_AraunaInicioMadeira;
+
     while (gfx->tiles != NULL)
     {
         if (gfx->metatileNum == metatileNum)

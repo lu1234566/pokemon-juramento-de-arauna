@@ -1,0 +1,20 @@
+{
+  "arauna_inicio_base_v1": {
+    "4bpp_bytes": 16384,
+    "independent_roundtrip": true,
+    "linked_rom_tiles_identical": true,
+    "linked_rgb555_palettes_checked": 16
+  },
+  "arauna_inicio_sul_v1": {
+    "4bpp_bytes": 16384,
+    "independent_roundtrip": true,
+    "linked_rom_tiles_identical": true,
+    "linked_rgb555_palettes_checked": 16
+  },
+  "rom_sha256": "38efbd8e6b493961b3153d953c220b25396a3da1715f2594ec61f059b0000948",
+  "wooden_door": {
+    "linked_4bpp_bytes_identical": true,
+    "bytes": 768,
+    "frames": 3
+  }
+}

@@ -522,6 +522,8 @@
       898
     ],
     "custom_metatile_ids": [
+      65,
+      97,
       512,
       513,
       514,
@@ -655,7 +657,8 @@
       703,
       759,
       785,
-      798
+      798,
+      806
     ],
     "new_static_tile_slots": [
       1,
@@ -1165,7 +1168,13 @@
       769,
       770,
       771,
-      772
+      772,
+      773,
+      774,
+      775,
+      776,
+      777,
+      778
     ],
     "palettes_unchanged": true,
     "animation_slots_reserved": [
@@ -1175,6 +1184,6 @@
       1023
     ],
     "short_grass_id": 512,
-    "tall_grass_id": 759
+    "tall_grass_id": 785
   }
 }
