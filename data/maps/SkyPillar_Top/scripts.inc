@@ -20,7 +20,7 @@ SkyPillar_Top_OnTransition:
 	end
 
 SkyPillar_Top_EventScript_SetCleanLayout::
-	setmaplayoutindex LAYOUT_SKY_PILLAR_TOP_CLEAN
+	setmaplayoutindex LAYOUT_ARAUNA_TORRE_TOP_CLEAN_V1
 	setobjectmovementtype LOCALID_RAYQUAZA_SLEEPING, MOVEMENT_TYPE_FACE_DOWN
 	return
 

@@ -14,7 +14,7 @@ SkyPillar_2F_OnTransition:
 	end
 
 SkyPillar_2F_EventScript_CleanFloor::
-	setmaplayoutindex LAYOUT_SKY_PILLAR_2F_CLEAN
+	setmaplayoutindex LAYOUT_ARAUNA_TORRE_2F_CLEAN_V1
 	return
 
 SkyPillar_2F_SetHoleWarp:

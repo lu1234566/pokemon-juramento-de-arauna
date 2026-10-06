@@ -8,7 +8,7 @@ Route131_OnTransition:
 	end
 
 Route131_EventScript_SetLayout::
-	setmaplayoutindex LAYOUT_ROUTE131_SKY_PILLAR
+	setmaplayoutindex LAYOUT_ARAUNA_ROUTE131_LAST_FREE_SEA_SKY_PILLAR_V1
 	return
 
 Route131_EventScript_CheckSetAbnormalWeather::

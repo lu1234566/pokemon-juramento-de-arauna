@@ -8,11 +8,11 @@ ShoalCave_LowTideInnerRoom_OnTransition:
 	goto ShoalCave_LowTideInnerRoom_EventScript_SetLowTide
 
 ShoalCave_LowTideInnerRoom_EventScript_SetHighTide::
-	setmaplayoutindex LAYOUT_SHOAL_CAVE_HIGH_TIDE_INNER_ROOM
+	setmaplayoutindex LAYOUT_ARAUNA_MARE_HIGHTIDEINNERROOM_V1
 	end
 
 ShoalCave_LowTideInnerRoom_EventScript_SetLowTide::
-	setmaplayoutindex LAYOUT_SHOAL_CAVE_LOW_TIDE_INNER_ROOM
+	setmaplayoutindex LAYOUT_ARAUNA_MARE_LOWTIDEINNERROOM_V1
 	end
 
 ShoalCave_LowTideInnerRoom_OnLoad:

@@ -7110,6 +7110,96 @@
       "secondary_tileset": "gTileset_AraunaMataEsperaV1",
       "border_filepath": "data/layouts/PetalburgWoods_AraunaV1/border.bin",
       "blockdata_filepath": "data/layouts/PetalburgWoods_AraunaV1/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_ROUTE111_THREE_ACTS_NO_TOWER_V1",
+      "name": "Route111_AraunaThreeActsNoTower_Layout",
+      "width": 40,
+      "height": 140,
+      "primary_tileset": "gTileset_AraunaEixoInterior",
+      "secondary_tileset": "gTileset_Arauna111Regions",
+      "border_filepath": "data/layouts/Route111_AraunaThreeActs/border.bin",
+      "blockdata_filepath": "data/layouts/Route111_AraunaThreeActsNoTower/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_ROUTE130_CROSS_CURRENTS_MIRAGE_ISLAND_V1",
+      "name": "Route130_AraunaCrossCurrentsMirageIsland_Layout",
+      "width": 80,
+      "height": 40,
+      "primary_tileset": "gTileset_AraunaMarCorrente",
+      "secondary_tileset": "gTileset_Arauna130Correntes",
+      "border_filepath": "data/layouts/Route130_AraunaCrossCurrents/border.bin",
+      "blockdata_filepath": "data/layouts/Route130_AraunaCrossCurrentsMirageIsland/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_ROUTE131_LAST_FREE_SEA_SKY_PILLAR_V1",
+      "name": "Route131_AraunaLastFreeSeaSkyPillar_Layout",
+      "width": 60,
+      "height": 40,
+      "primary_tileset": "gTileset_AraunaMarLivre",
+      "secondary_tileset": "gTileset_Arauna131Vento",
+      "border_filepath": "data/layouts/Route131_AraunaLastFreeSea/border.bin",
+      "blockdata_filepath": "data/layouts/Route131_AraunaLastFreeSeaSkyPillar/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_TORRE_1F_CLEAN_V1",
+      "name": "AraunaTorre_1FClean_Layout",
+      "width": 14,
+      "height": 14,
+      "primary_tileset": "gTileset_AraunaTorreMar",
+      "secondary_tileset": "gTileset_AraunaTorrePisosBaixos",
+      "border_filepath": "data/layouts/AraunaTorre_1F/border.bin",
+      "blockdata_filepath": "data/layouts/AraunaTorre_1FClean/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_TORRE_2F_CLEAN_V1",
+      "name": "AraunaTorre_2FClean_Layout",
+      "width": 14,
+      "height": 14,
+      "primary_tileset": "gTileset_AraunaTorreMar",
+      "secondary_tileset": "gTileset_AraunaTorrePisosBaixos",
+      "border_filepath": "data/layouts/AraunaTorre_2F/border.bin",
+      "blockdata_filepath": "data/layouts/AraunaTorre_2FClean/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_TORRE_3F_CLEAN_V1",
+      "name": "AraunaTorre_3FClean_Layout",
+      "width": 14,
+      "height": 14,
+      "primary_tileset": "gTileset_AraunaTorreMar",
+      "secondary_tileset": "gTileset_AraunaTorrePisosBaixos",
+      "border_filepath": "data/layouts/AraunaTorre_3F/border.bin",
+      "blockdata_filepath": "data/layouts/AraunaTorre_3FClean/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_TORRE_4F_CLEAN_V1",
+      "name": "AraunaTorre_4FClean_Layout",
+      "width": 14,
+      "height": 14,
+      "primary_tileset": "gTileset_AraunaTorreMar",
+      "secondary_tileset": "gTileset_AraunaTorrePisosAltos",
+      "border_filepath": "data/layouts/AraunaTorre_4F/border.bin",
+      "blockdata_filepath": "data/layouts/AraunaTorre_4FClean/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_TORRE_5F_CLEAN_V1",
+      "name": "AraunaTorre_5FClean_Layout",
+      "width": 14,
+      "height": 14,
+      "primary_tileset": "gTileset_AraunaTorreMar",
+      "secondary_tileset": "gTileset_AraunaTorrePisosAltos",
+      "border_filepath": "data/layouts/AraunaTorre_5F/border.bin",
+      "blockdata_filepath": "data/layouts/AraunaTorre_5FClean/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_TORRE_TOP_CLEAN_V1",
+      "name": "AraunaTorre_TopClean_Layout",
+      "width": 27,
+      "height": 24,
+      "primary_tileset": "gTileset_AraunaTorreMar",
+      "secondary_tileset": "gTileset_AraunaTorreTopo",
+      "border_filepath": "data/layouts/AraunaTorre_Top/border.bin",
+      "blockdata_filepath": "data/layouts/AraunaTorre_TopClean/map.bin"
     }
   ]
 }

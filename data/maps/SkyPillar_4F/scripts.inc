@@ -14,7 +14,7 @@ SkyPillar_4F_OnTransition:
 	end
 
 SkyPillar_4F_EventScript_CleanFloor::
-	setmaplayoutindex LAYOUT_SKY_PILLAR_4F_CLEAN
+	setmaplayoutindex LAYOUT_ARAUNA_TORRE_4F_CLEAN_V1
 	return
 
 SkyPillar_4F_SetHoleWarp:
