@@ -825,3 +825,10 @@ const u16 gMetatileAttributes_AraunaCampanhaAbrigoV2[] = INCBIN_U16("data/tilese
 const u16 gMetatiles_AraunaCampanhaClimaV2[] = INCBIN_U16("data/tilesets/secondary/arauna_campanha_clima_v2/metatiles.bin");
 const u16 gMetatileAttributes_AraunaCampanhaClimaV2[] = INCBIN_U16("data/tilesets/secondary/arauna_campanha_clima_v2/metatile_attributes.bin");
 // CAMPANHA_INTERIORES_V2_END
+
+// BEGIN INICIO_GEOMETRIA_V1
+const u16 gMetatiles_AraunaInicioBaseV1[] = INCBIN_U16("data/tilesets/primary/arauna_inicio_base_v1/metatiles.bin");
+const u16 gMetatileAttributes_AraunaInicioBaseV1[] = INCBIN_U16("data/tilesets/primary/arauna_inicio_base_v1/metatile_attributes.bin");
+const u16 gMetatiles_AraunaInicioSulV1[] = INCBIN_U16("data/tilesets/secondary/arauna_inicio_sul_v1/metatiles.bin");
+const u16 gMetatileAttributes_AraunaInicioSulV1[] = INCBIN_U16("data/tilesets/secondary/arauna_inicio_sul_v1/metatile_attributes.bin");
+// END INICIO_GEOMETRIA_V1

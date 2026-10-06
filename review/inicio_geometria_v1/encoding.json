@@ -1,0 +1,15 @@
+{
+  "arauna_inicio_base_v1": {
+    "4bpp_bytes": 16384,
+    "independent_roundtrip": true,
+    "linked_rom_tiles_identical": true,
+    "linked_rgb555_palettes_checked": 16
+  },
+  "arauna_inicio_sul_v1": {
+    "4bpp_bytes": 16384,
+    "independent_roundtrip": true,
+    "linked_rom_tiles_identical": true,
+    "linked_rgb555_palettes_checked": 16
+  },
+  "rom_sha256": "a82200133bc90f07fd428e21979132b7dc5d005b8a8e792652eeb88ed9348f0a"
+}

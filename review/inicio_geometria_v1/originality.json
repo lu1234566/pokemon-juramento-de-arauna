@@ -1,0 +1,63 @@
+{
+  "original_commit": "ad0fd4d17f546ca6fd8d785c8724f9382e6e9382",
+  "original_stored_tiles": 39376,
+  "canonical_shapes": 16070,
+  "method": "Exact color-class equality with transparency and H/V mirrors; not a perceptual or Brazilian identity score. Flat areas can match incidentally. Compatibility banks retain original neighbor tiles deliberately.",
+  "banks": {
+    "data/tilesets/primary/arauna_inicio_base_v1": {
+      "nonblank_tiles": 459,
+      "matching_old_shape": 215,
+      "percent": 46.84,
+      "includes_neighbor_compatibility": true
+    },
+    "data/tilesets/secondary/arauna_inicio_sul_v1": {
+      "nonblank_tiles": 296,
+      "matching_old_shape": 18,
+      "percent": 6.08,
+      "includes_neighbor_compatibility": true
+    }
+  },
+  "maps": {
+    "LittlerootTown": {
+      "before": {
+        "opaque_map_blocks": 3120,
+        "matching_shape": 2050,
+        "percent": 65.71
+      },
+      "after": {
+        "opaque_map_blocks": 3120,
+        "matching_shape": 1152,
+        "percent": 36.92
+      }
+    },
+    "Route101": {
+      "before": {
+        "opaque_map_blocks": 4480,
+        "matching_shape": 3783,
+        "percent": 84.44
+      },
+      "after": {
+        "opaque_map_blocks": 4480,
+        "matching_shape": 1629,
+        "percent": 36.36
+      }
+    },
+    "OldaleTown": {
+      "before": {
+        "opaque_map_blocks": 3120,
+        "matching_shape": 2014,
+        "percent": 64.55
+      },
+      "after": {
+        "opaque_map_blocks": 3120,
+        "matching_shape": 1171,
+        "percent": 37.53
+      }
+    }
+  },
+  "new_art_only": {
+    "nonblank_tiles": 508,
+    "matching_old_shape": 7,
+    "percent": 1.38
+  }
+}

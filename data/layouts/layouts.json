@@ -176,8 +176,8 @@
       "name": "Route102_Layout",
       "width": 50,
       "height": 20,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_AraunaAmanhecer",
+      "primary_tileset": "gTileset_AraunaInicioBaseV1",
+      "secondary_tileset": "gTileset_AraunaInicioSulV1",
       "border_filepath": "data/layouts/Route102/border.bin",
       "blockdata_filepath": "data/layouts/Route102/map.bin"
     },
@@ -186,8 +186,8 @@
       "name": "Route103_Layout",
       "width": 80,
       "height": 22,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_AraunaAmanhecer",
+      "primary_tileset": "gTileset_AraunaInicioBaseV1",
+      "secondary_tileset": "gTileset_AraunaInicioSulV1",
       "border_filepath": "data/layouts/Route103/border.bin",
       "blockdata_filepath": "data/layouts/Route103/map.bin"
     },
@@ -7340,6 +7340,36 @@
       "secondary_tileset": "gTileset_AraunaCampanhaClimaV2",
       "border_filepath": "data/layouts/AraunaCampanhaV2_Route119_WeatherInstitute_2F/border.bin",
       "blockdata_filepath": "data/layouts/AraunaCampanhaV2_Route119_WeatherInstitute_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_LITTLEROOT_TOWN_COMPOSICAO_V1",
+      "name": "AraunaLittlerootTownComposicaoV1_Layout",
+      "width": 30,
+      "height": 26,
+      "primary_tileset": "gTileset_AraunaInicioBaseV1",
+      "secondary_tileset": "gTileset_AraunaInicioSulV1",
+      "border_filepath": "data/layouts/AraunaLittlerootTownComposicaoV1/border.bin",
+      "blockdata_filepath": "data/layouts/AraunaLittlerootTownComposicaoV1/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_OLDALE_TOWN_COMPOSICAO_V1",
+      "name": "AraunaOldaleTownComposicaoV1_Layout",
+      "width": 30,
+      "height": 26,
+      "primary_tileset": "gTileset_AraunaInicioBaseV1",
+      "secondary_tileset": "gTileset_AraunaInicioSulV1",
+      "border_filepath": "data/layouts/AraunaOldaleTownComposicaoV1/border.bin",
+      "blockdata_filepath": "data/layouts/AraunaOldaleTownComposicaoV1/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_ROUTE101_COMPOSICAO_V1",
+      "name": "AraunaRoute101ComposicaoV1_Layout",
+      "width": 40,
+      "height": 28,
+      "primary_tileset": "gTileset_AraunaInicioBaseV1",
+      "secondary_tileset": "gTileset_AraunaInicioSulV1",
+      "border_filepath": "data/layouts/AraunaRoute101ComposicaoV1/border.bin",
+      "blockdata_filepath": "data/layouts/AraunaRoute101ComposicaoV1/map.bin"
     }
   ]
 }

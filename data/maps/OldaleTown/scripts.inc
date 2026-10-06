@@ -21,7 +21,7 @@ OldaleTown_EventScript_BlockWestEntrance::
 	return
 
 OldaleTown_EventScript_MoveMartEmployee::
-	setobjectxyperm LOCALID_OLDALE_MART_EMPLOYEE, 24, 13
+	setobjectxyperm LOCALID_OLDALE_MART_EMPLOYEE, 19, 15
 	setobjectmovementtype LOCALID_OLDALE_MART_EMPLOYEE, MOVEMENT_TYPE_FACE_DOWN
 	return
 

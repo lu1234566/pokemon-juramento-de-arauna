@@ -1,4 +1,7 @@
 #include "global.h"
+#include "constants/arauna_inicio_metatiles.h"
+
+extern const struct Tileset gTileset_AraunaInicioBaseV1;
 #include "event_object_lock.h"
 #include "event_object_movement.h"
 #include "event_scripts.h"
@@ -353,6 +356,12 @@ bool8 FldEff_CutGrass(void)
 // set map grid metatile depending on x, y
 static void SetCutGrassMetatile(s16 x, s16 y)
 {
+    if (gMapHeader.mapLayout->primaryTileset == &gTileset_AraunaInicioBaseV1
+     && MapGridGetMetatileIdAt(x, y) == METATILE_AraunaInicio_Capim)
+    {
+        MapGridSetMetatileIdAt(x, y, METATILE_AraunaInicio_Campo);
+        return;
+    }
     switch (MapGridGetMetatileIdAt(x, y))
     {
     case METATILE_Fortree_LongGrass_Root:

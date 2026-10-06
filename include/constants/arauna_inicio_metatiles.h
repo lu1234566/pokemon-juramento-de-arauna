@@ -1,0 +1,5 @@
+#ifndef GUARD_ARAUNA_INICIO_METATILES_H
+#define GUARD_ARAUNA_INICIO_METATILES_H
+#define METATILE_AraunaInicio_Campo 0x200
+#define METATILE_AraunaInicio_Capim 0x2F7
+#endif

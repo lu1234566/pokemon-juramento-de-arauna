@@ -2871,3 +2871,26 @@ const struct Tileset gTileset_AraunaCampanhaClimaV2 =
     .callback = NULL,
 };
 // CAMPANHA_INTERIORES_V2_END
+
+// BEGIN INICIO_GEOMETRIA_V1
+const struct Tileset gTileset_AraunaInicioBaseV1 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AraunaInicioBaseV1,
+    .palettes = gTilesetPalettes_AraunaInicioBaseV1,
+    .metatiles = gMetatiles_AraunaInicioBaseV1,
+    .metatileAttributes = gMetatileAttributes_AraunaInicioBaseV1,
+    .callback = InitTilesetAnim_General,
+};
+const struct Tileset gTileset_AraunaInicioSulV1 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaInicioSulV1,
+    .palettes = gTilesetPalettes_AraunaInicioSulV1,
+    .metatiles = gMetatiles_AraunaInicioSulV1,
+    .metatileAttributes = gMetatileAttributes_AraunaInicioSulV1,
+    .callback = NULL,
+};
+// END INICIO_GEOMETRIA_V1

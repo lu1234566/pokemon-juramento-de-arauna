@@ -1,0 +1,12 @@
+  [PASS] events standing outside their own map: 0
+  [PASS] metatile ids past the end of their tileset: 0
+  [PASS] map.bin size disagreeing with the layout: 0
+  [PASS] warps naming a map or warp id that does not exist: 0
+  [PASS] connections to a map that does not exist: 0
+  [PASS] object events on an unwired graphics id: 0
+  [PASS] tileset animation callbacks with no definition: 0
+  [PASS] warps unreachable from their map's heal point: 0
+  [note] warps that need Surf to reach: 3
+          EverGrandeCity: warp at (8, 40) -> EVER_GRANDE_CITY_POKEMON_CENTER_1F needs Surf
+          EverGrandeCity: warp at (32, 36) -> VICTORY_ROAD_1F needs Surf
+          LilycoveCity: warp at (46, 4) -> AQUA_HIDEOUT_1F needs Surf

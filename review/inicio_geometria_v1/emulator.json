@@ -1,0 +1,149 @@
+{
+  "rom_sha256": "a82200133bc90f07fd428e21979132b7dc5d005b8a8e792652eeb88ed9348f0a",
+  "temporary_capture_code_in_rom": false,
+  "disk_rom_unchanged": true,
+  "cases": [
+    {
+      "case": "traverse",
+      "returncode": 0,
+      "log": [
+        "boot group=0 map=9 pos=20,23 littleroot=0 route101=0 oldale=0 intro=0 shoes=0 illegal=0",
+        "expect group=0 map=9 pos=20,23 littleroot=4 route101=3 oldale=1 intro=0 shoes=0 illegal=0",
+        "/workspace/scratch/d023984cb14b/tmp/emulator/amanhecer-laboratorio.ppm group=0 map=9 pos=20,23 littleroot=4 route101=3 oldale=1 intro=0 shoes=0 illegal=0",
+        "/workspace/scratch/d023984cb14b/tmp/emulator/amanhecer-clareira.ppm group=0 map=9 pos=14,16 littleroot=4 route101=3 oldale=1 intro=0 shoes=0 illegal=0",
+        "/workspace/scratch/d023984cb14b/tmp/emulator/amanhecer-casa.ppm group=0 map=9 pos=6,12 littleroot=4 route101=3 oldale=1 intro=0 shoes=0 illegal=0",
+        "/workspace/scratch/d023984cb14b/tmp/emulator/amanhecer-ciro.ppm group=0 map=9 pos=24,14 littleroot=4 route101=3 oldale=1 intro=0 shoes=0 illegal=0",
+        "expect group=0 map=16 pos=10,27 littleroot=4 route101=3 oldale=1 intro=0 shoes=0 illegal=0",
+        "/workspace/scratch/d023984cb14b/tmp/emulator/rota101-clareira.ppm group=0 map=16 pos=11,23 littleroot=4 route101=3 oldale=1 intro=0 shoes=0 illegal=0",
+        "/workspace/scratch/d023984cb14b/tmp/emulator/rota101-trilha.ppm group=0 map=16 pos=21,14 littleroot=4 route101=3 oldale=1 intro=0 shoes=0 illegal=0",
+        "/workspace/scratch/d023984cb14b/tmp/emulator/rota101-camara.ppm group=0 map=16 pos=36,16 littleroot=4 route101=3 oldale=1 intro=0 shoes=0 illegal=0",
+        "expect group=0 map=10 pos=10,25 littleroot=4 route101=3 oldale=1 intro=0 shoes=0 illegal=0",
+        "/workspace/scratch/d023984cb14b/tmp/emulator/passagem-borda103.ppm group=0 map=10 pos=20,0 littleroot=4 route101=3 oldale=1 intro=0 shoes=0 illegal=0",
+        "expect group=0 map=18 pos=10,21 littleroot=4 route101=3 oldale=1 intro=0 shoes=0 illegal=0",
+        "expect group=0 map=10 pos=20,0 littleroot=4 route101=3 oldale=1 intro=0 shoes=0 illegal=0",
+        "expect group=0 map=17 pos=49,10 littleroot=4 route101=3 oldale=1 intro=0 shoes=0 illegal=0",
+        "expect group=0 map=10 pos=0,10 littleroot=4 route101=3 oldale=1 intro=0 shoes=0 illegal=0",
+        "expect group=0 map=10 pos=8,10 littleroot=4 route101=3 oldale=1 intro=0 shoes=0 illegal=0",
+        "expect group=0 map=10 pos=22,21 littleroot=4 route101=3 oldale=1 intro=0 shoes=0 illegal=0",
+        "/workspace/scratch/d023984cb14b/tmp/emulator/passagem-casa.ppm group=0 map=10 pos=22,21 littleroot=4 route101=3 oldale=1 intro=0 shoes=0 illegal=0",
+        "final group=0 map=10 pos=22,21 littleroot=4 route101=3 oldale=1 intro=0 shoes=0 illegal=0"
+      ]
+    },
+    {
+      "case": "oldale",
+      "returncode": 0,
+      "log": [
+        "boot group=0 map=10 pos=7,20 littleroot=0 route101=0 oldale=0 intro=0 shoes=0 illegal=0",
+        "expect group=2 map=2 pos=7,8 littleroot=0 route101=0 oldale=1 intro=0 shoes=0 illegal=0",
+        "expect group=0 map=10 pos=7,20 littleroot=0 route101=0 oldale=1 intro=0 shoes=0 illegal=0",
+        "/workspace/scratch/d023984cb14b/tmp/emulator/passagem-clinica.ppm group=0 map=10 pos=7,20 littleroot=0 route101=0 oldale=1 intro=0 shoes=0 illegal=0",
+        "/workspace/scratch/d023984cb14b/tmp/emulator/passagem-entroncamento.ppm group=0 map=10 pos=14,16 littleroot=0 route101=0 oldale=1 intro=0 shoes=0 illegal=0",
+        "/workspace/scratch/d023984cb14b/tmp/emulator/passagem-venda.ppm group=0 map=10 pos=19,10 littleroot=0 route101=0 oldale=1 intro=0 shoes=0 illegal=0",
+        "/workspace/scratch/d023984cb14b/tmp/emulator/venda-interior.ppm group=2 map=4 pos=5,10 littleroot=0 route101=0 oldale=1 intro=0 shoes=0 illegal=0",
+        "final group=2 map=4 pos=5,10 littleroot=0 route101=0 oldale=1 intro=0 shoes=0 illegal=0"
+      ]
+    },
+    {
+      "case": "gate",
+      "returncode": 0,
+      "log": [
+        "boot group=0 map=9 pos=10,3 littleroot=0 route101=0 oldale=0 intro=0 shoes=0 illegal=0",
+        "expect group=0 map=9 pos=10,2 littleroot=0 route101=0 oldale=0 intro=0 shoes=0 illegal=0",
+        "expectvar group=0 map=9 pos=10,2 littleroot=0 route101=0 oldale=0 intro=0 shoes=0 illegal=0",
+        "/workspace/scratch/d023984cb14b/tmp/emulator/gate-norte.ppm group=0 map=9 pos=10,2 littleroot=0 route101=0 oldale=0 intro=0 shoes=0 illegal=0",
+        "final group=0 map=9 pos=10,2 littleroot=0 route101=0 oldale=0 intro=0 shoes=0 illegal=0"
+      ]
+    },
+    {
+      "case": "shoes",
+      "returncode": 0,
+      "log": [
+        "boot group=0 map=9 pos=20,23 littleroot=0 route101=0 oldale=0 intro=0 shoes=0 illegal=0",
+        "expectvar group=0 map=9 pos=10,2 littleroot=4 route101=0 oldale=0 intro=0 shoes=1 illegal=0",
+        "expectflag group=0 map=9 pos=10,2 littleroot=4 route101=0 oldale=0 intro=0 shoes=1 illegal=0",
+        "/workspace/scratch/d023984cb14b/tmp/emulator/tenis-entregues.ppm group=0 map=9 pos=10,2 littleroot=4 route101=0 oldale=0 intro=0 shoes=1 illegal=0",
+        "final group=0 map=9 pos=10,2 littleroot=4 route101=0 oldale=0 intro=0 shoes=1 illegal=0"
+      ]
+    },
+    {
+      "case": "potion",
+      "returncode": 0,
+      "log": [
+        "boot group=0 map=10 pos=7,20 littleroot=0 route101=0 oldale=0 intro=0 shoes=0 illegal=0",
+        "expectflag group=0 map=10 pos=19,10 littleroot=0 route101=0 oldale=1 intro=0 shoes=0 illegal=0",
+        "/workspace/scratch/d023984cb14b/tmp/emulator/pocao-recebida.ppm group=0 map=10 pos=19,10 littleroot=0 route101=0 oldale=1 intro=0 shoes=0 illegal=0",
+        "final group=0 map=10 pos=19,10 littleroot=0 route101=0 oldale=1 intro=0 shoes=0 illegal=0"
+      ]
+    },
+    {
+      "case": "rescue",
+      "returncode": 0,
+      "log": [
+        "boot group=0 map=9 pos=10,3 littleroot=0 route101=0 oldale=0 intro=0 shoes=0 illegal=0",
+        "expectvar group=0 map=16 pos=10,23 littleroot=2 route101=2 oldale=0 intro=0 shoes=0 illegal=0",
+        "/workspace/scratch/d023984cb14b/tmp/emulator/resgate-anahi.ppm group=0 map=16 pos=10,23 littleroot=2 route101=2 oldale=0 intro=0 shoes=0 illegal=0",
+        "/workspace/scratch/d023984cb14b/tmp/emulator/inicial-menu.ppm group=0 map=16 pos=12,25 littleroot=2 route101=2 oldale=0 intro=0 shoes=0 illegal=0",
+        "expectvar group=1 map=4 pos=6,5 littleroot=2 route101=3 oldale=0 intro=0 shoes=0 illegal=0",
+        "/workspace/scratch/d023984cb14b/tmp/emulator/resgate-concluido.ppm group=1 map=4 pos=6,5 littleroot=2 route101=3 oldale=0 intro=0 shoes=0 illegal=0",
+        "final group=1 map=4 pos=6,5 littleroot=2 route101=3 oldale=0 intro=0 shoes=0 illegal=0"
+      ]
+    },
+    {
+      "case": "truck",
+      "returncode": 0,
+      "log": [
+        "boot group=25 map=40 pos=2,2 littleroot=0 route101=0 oldale=0 intro=0 shoes=0 illegal=0",
+        "/workspace/scratch/d023984cb14b/tmp/emulator/truck-arrival-male.ppm group=0 map=9 pos=4,12 littleroot=0 route101=0 oldale=0 intro=1 shoes=0 illegal=0",
+        "expect group=1 map=0 pos=8,8 littleroot=0 route101=0 oldale=0 intro=3 shoes=0 illegal=0",
+        "final group=1 map=0 pos=8,8 littleroot=0 route101=0 oldale=0 intro=3 shoes=0 illegal=0"
+      ]
+    },
+    {
+      "case": "truck-female",
+      "returncode": 0,
+      "log": [
+        "boot group=25 map=40 pos=2,2 littleroot=0 route101=0 oldale=0 intro=0 shoes=0 illegal=0",
+        "/workspace/scratch/d023984cb14b/tmp/emulator/truck-arrival-female.ppm group=0 map=9 pos=22,15 littleroot=0 route101=0 oldale=0 intro=2 shoes=0 illegal=0",
+        "expectmap group=1 map=2 pos=2,7 littleroot=0 route101=0 oldale=0 intro=4 shoes=0 illegal=0",
+        "final group=1 map=2 pos=2,7 littleroot=0 route101=0 oldale=0 intro=4 shoes=0 illegal=0"
+      ]
+    },
+    {
+      "case": "save-littleroot",
+      "returncode": 0,
+      "log": [
+        "boot group=0 map=9 pos=10,3 littleroot=0 route101=0 oldale=0 intro=0 shoes=0 illegal=0",
+        "resume group=0 map=9 pos=19,18 littleroot=4 route101=0 oldale=0 intro=0 shoes=0 illegal=0",
+        "expectlayout group=0 map=9 pos=19,18 littleroot=4 route101=0 oldale=0 intro=0 shoes=0 illegal=0",
+        "expect group=0 map=9 pos=19,18 littleroot=4 route101=0 oldale=0 intro=0 shoes=0 illegal=0",
+        "expectvar group=0 map=9 pos=19,18 littleroot=4 route101=0 oldale=0 intro=0 shoes=0 illegal=0",
+        "/workspace/scratch/d023984cb14b/tmp/emulator/save-migrado.ppm group=0 map=9 pos=19,18 littleroot=4 route101=0 oldale=0 intro=0 shoes=0 illegal=0",
+        "final group=0 map=9 pos=19,18 littleroot=4 route101=0 oldale=0 intro=0 shoes=0 illegal=0"
+      ]
+    },
+    {
+      "case": "save-oldale",
+      "returncode": 0,
+      "log": [
+        "boot group=0 map=10 pos=7,20 littleroot=0 route101=0 oldale=0 intro=0 shoes=0 illegal=0",
+        "resume group=0 map=10 pos=20,9 littleroot=0 route101=0 oldale=1 intro=0 shoes=0 illegal=0",
+        "expectlayout group=0 map=10 pos=20,9 littleroot=0 route101=0 oldale=1 intro=0 shoes=0 illegal=0",
+        "expect group=0 map=10 pos=20,9 littleroot=0 route101=0 oldale=1 intro=0 shoes=0 illegal=0",
+        "expectvar group=0 map=10 pos=20,9 littleroot=0 route101=0 oldale=1 intro=0 shoes=0 illegal=0",
+        "final group=0 map=10 pos=20,9 littleroot=0 route101=0 oldale=1 intro=0 shoes=0 illegal=0"
+      ]
+    },
+    {
+      "case": "save-route",
+      "returncode": 0,
+      "log": [
+        "boot group=0 map=16 pos=21,14 littleroot=0 route101=1 oldale=0 intro=0 shoes=0 illegal=0",
+        "resume group=0 map=16 pos=10,10 littleroot=0 route101=3 oldale=0 intro=0 shoes=0 illegal=0",
+        "expectlayout group=0 map=16 pos=10,10 littleroot=0 route101=3 oldale=0 intro=0 shoes=0 illegal=0",
+        "expect group=0 map=16 pos=10,10 littleroot=0 route101=3 oldale=0 intro=0 shoes=0 illegal=0",
+        "expectvar group=0 map=16 pos=10,10 littleroot=0 route101=3 oldale=0 intro=0 shoes=0 illegal=0",
+        "final group=0 map=16 pos=10,10 littleroot=0 route101=3 oldale=0 intro=0 shoes=0 illegal=0"
+      ]
+    }
+  ]
+}

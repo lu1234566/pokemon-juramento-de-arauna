@@ -595,6 +595,47 @@ static void LoadCurrentMapData(void)
     gMapHeader.mapLayout = GetMapLayout();
 }
 
+// A saved layout ID outlives a map-header update. Reload the first-act maps
+// once so their migrated object templates are read from the new headers.
+// The staging areas of the prologue/rescue retain their old walkability.
+static bool8 AraunaMigrateInitialMapSave(void)
+{
+    const struct MapLayout *layout;
+    u16 oldId = gSaveBlock1Ptr->mapLayoutId;
+    u16 newId = gMapHeader.mapLayoutId;
+    s32 x, y, bestX = 0, bestY = 0, bestDistance = 0x7FFFFFFF;
+    s32 px = gSaveBlock1Ptr->pos.x, py = gSaveBlock1Ptr->pos.y;
+
+    if (!((oldId == LAYOUT_LITTLEROOT_TOWN && newId == LAYOUT_ARAUNA_LITTLEROOT_TOWN_COMPOSICAO_V1)
+       || (oldId == LAYOUT_ROUTE101 && newId == LAYOUT_ARAUNA_ROUTE101_COMPOSICAO_V1)
+       || (oldId == LAYOUT_OLDALE_TOWN && newId == LAYOUT_ARAUNA_OLDALE_TOWN_COMPOSICAO_V1)))
+        return FALSE;
+
+    SetCurrentMapLayout(newId);
+    layout = gMapHeader.mapLayout;
+    if (px >= 0 && py >= 0 && px < layout->width && py < layout->height
+     && !(layout->map[py * layout->width + px] & MAPGRID_COLLISION_MASK))
+        return TRUE;
+
+    for (y = 0; y < layout->height; y++)
+    {
+        for (x = 0; x < layout->width; x++)
+        {
+            s32 distance = abs(x - px) + abs(y - py);
+            if (!(layout->map[y * layout->width + x] & MAPGRID_COLLISION_MASK)
+             && distance < bestDistance)
+            {
+                bestDistance = distance;
+                bestX = x;
+                bestY = y;
+            }
+        }
+    }
+    gSaveBlock1Ptr->pos.x = bestX;
+    gSaveBlock1Ptr->pos.y = bestY;
+    return TRUE;
+}
+
 static void LoadSaveblockMapHeader(void)
 {
     gMapHeader = *Overworld_GetMapHeaderByGroupAndId(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum);
@@ -1723,6 +1764,7 @@ static void FieldCB_FadeTryShowMapPopup(void)
 void CB2_ContinueSavedGame(void)
 {
     u8 trainerHillMapId;
+    bool8 migratedInitialMap;
 
     FieldClearVBlankHBlankCallbacks();
     StopMapMusic();
@@ -1731,6 +1773,7 @@ void CB2_ContinueSavedGame(void)
         ResetWinStreaks();
 
     LoadSaveblockMapHeader();
+    migratedInitialMap = AraunaMigrateInitialMapSave();
     ClearDiveAndHoleWarps();
     trainerHillMapId = GetCurrentTrainerHillMapId();
     if (gMapHeader.mapLayoutId == LAYOUT_BATTLE_FRONTIER_BATTLE_PYRAMID_FLOOR)
@@ -1758,6 +1801,15 @@ void CB2_ContinueSavedGame(void)
     {
         ClearContinueGameWarpStatus();
         SetWarpDestinationToContinueGameWarp();
+        WarpIntoMap();
+        TryPutTodaysRivalTrainerOnAir();
+        SetMainCallback2(CB2_LoadMap);
+    }
+    else if (migratedInitialMap)
+    {
+        SetWarpDestination(gSaveBlock1Ptr->location.mapGroup,
+                           gSaveBlock1Ptr->location.mapNum, WARP_ID_NONE,
+                           gSaveBlock1Ptr->pos.x, gSaveBlock1Ptr->pos.y);
         WarpIntoMap();
         TryPutTodaysRivalTrainerOnAir();
         SetMainCallback2(CB2_LoadMap);
