@@ -1,0 +1,314 @@
+{
+  "status": "PASS",
+  "emulator": "mGBA 0.10.2, headless native core",
+  "rom_sha256": "b19ca2ff2ad0a5f4163531124999a16de1097bb4642b636b90b6443b813da1d5",
+  "capture_method": "Native new-game initialization and full map load using a temporary RAM-only boot hook; hook restored before interaction. No test code in the delivered sources or compiled disk ROM.",
+  "maps": [
+    {
+      "map": "Route109_SeashoreHouse",
+      "group": 28,
+      "number": 0,
+      "position": [
+        7,
+        4
+      ],
+      "native_map_and_player_position_asserted": true,
+      "illegal_opcodes": 0
+    },
+    {
+      "map": "Route110_SeasideCyclingRoadNorthEntrance",
+      "group": 29,
+      "number": 12,
+      "position": [
+        5,
+        4
+      ],
+      "native_map_and_player_position_asserted": true,
+      "illegal_opcodes": 0
+    },
+    {
+      "map": "Route110_SeasideCyclingRoadSouthEntrance",
+      "group": 29,
+      "number": 11,
+      "position": [
+        5,
+        4
+      ],
+      "native_map_and_player_position_asserted": true,
+      "illegal_opcodes": 0
+    },
+    {
+      "map": "Route110_TrickHouseEntrance",
+      "group": 29,
+      "number": 0,
+      "position": [
+        4,
+        3
+      ],
+      "native_map_and_player_position_asserted": true,
+      "illegal_opcodes": 0
+    },
+    {
+      "map": "Route110_TrickHouseCorridor",
+      "group": 29,
+      "number": 2,
+      "position": [
+        5,
+        10
+      ],
+      "native_map_and_player_position_asserted": true,
+      "illegal_opcodes": 0
+    },
+    {
+      "map": "Route110_TrickHouseEnd",
+      "group": 29,
+      "number": 1,
+      "position": [
+        5,
+        3
+      ],
+      "native_map_and_player_position_asserted": true,
+      "illegal_opcodes": 0
+    },
+    {
+      "map": "Route110_TrickHousePuzzle1",
+      "group": 29,
+      "number": 3,
+      "position": [
+        7,
+        10
+      ],
+      "native_map_and_player_position_asserted": true,
+      "illegal_opcodes": 0
+    },
+    {
+      "map": "Route110_TrickHousePuzzle2",
+      "group": 29,
+      "number": 4,
+      "position": [
+        7,
+        9
+      ],
+      "native_map_and_player_position_asserted": true,
+      "illegal_opcodes": 0
+    },
+    {
+      "map": "Route110_TrickHousePuzzle3",
+      "group": 29,
+      "number": 5,
+      "position": [
+        7,
+        11
+      ],
+      "native_map_and_player_position_asserted": true,
+      "illegal_opcodes": 0
+    },
+    {
+      "map": "Route110_TrickHousePuzzle4",
+      "group": 29,
+      "number": 6,
+      "position": [
+        7,
+        10
+      ],
+      "native_map_and_player_position_asserted": true,
+      "illegal_opcodes": 0
+    },
+    {
+      "map": "Route110_TrickHousePuzzle5",
+      "group": 29,
+      "number": 7,
+      "position": [
+        8,
+        10
+      ],
+      "native_map_and_player_position_asserted": true,
+      "illegal_opcodes": 0
+    },
+    {
+      "map": "Route110_TrickHousePuzzle6",
+      "group": 29,
+      "number": 8,
+      "position": [
+        7,
+        10
+      ],
+      "native_map_and_player_position_asserted": true,
+      "illegal_opcodes": 0
+    },
+    {
+      "map": "Route110_TrickHousePuzzle7",
+      "group": 29,
+      "number": 9,
+      "position": [
+        6,
+        10
+      ],
+      "native_map_and_player_position_asserted": true,
+      "illegal_opcodes": 0
+    },
+    {
+      "map": "Route110_TrickHousePuzzle8",
+      "group": 29,
+      "number": 10,
+      "position": [
+        8,
+        11
+      ],
+      "native_map_and_player_position_asserted": true,
+      "illegal_opcodes": 0
+    },
+    {
+      "map": "Route111_OldLadysRestStop",
+      "group": 18,
+      "number": 1,
+      "position": [
+        4,
+        2
+      ],
+      "native_map_and_player_position_asserted": true,
+      "illegal_opcodes": 0
+    },
+    {
+      "map": "Route111_WinstrateFamilysHouse",
+      "group": 18,
+      "number": 0,
+      "position": [
+        5,
+        3
+      ],
+      "native_map_and_player_position_asserted": true,
+      "illegal_opcodes": 0
+    },
+    {
+      "map": "Route112_CableCarStation",
+      "group": 19,
+      "number": 0,
+      "position": [
+        6,
+        5
+      ],
+      "native_map_and_player_position_asserted": true,
+      "illegal_opcodes": 0
+    },
+    {
+      "map": "Route113_GlassWorkshop",
+      "group": 30,
+      "number": 0,
+      "position": [
+        4,
+        4
+      ],
+      "native_map_and_player_position_asserted": true,
+      "illegal_opcodes": 0
+    },
+    {
+      "map": "Route114_FossilManiacsHouse",
+      "group": 20,
+      "number": 0,
+      "position": [
+        4,
+        3
+      ],
+      "native_map_and_player_position_asserted": true,
+      "illegal_opcodes": 0
+    },
+    {
+      "map": "Route114_FossilManiacsTunnel",
+      "group": 20,
+      "number": 1,
+      "position": [
+        6,
+        12
+      ],
+      "native_map_and_player_position_asserted": true,
+      "illegal_opcodes": 0
+    },
+    {
+      "map": "Route114_LanettesHouse",
+      "group": 20,
+      "number": 2,
+      "position": [
+        5,
+        3
+      ],
+      "native_map_and_player_position_asserted": true,
+      "illegal_opcodes": 0
+    },
+    {
+      "map": "Route116_TunnelersRestHouse",
+      "group": 21,
+      "number": 0,
+      "position": [
+        4,
+        4
+      ],
+      "native_map_and_player_position_asserted": true,
+      "illegal_opcodes": 0
+    },
+    {
+      "map": "Route121_SafariZoneEntrance",
+      "group": 23,
+      "number": 0,
+      "position": [
+        9,
+        4
+      ],
+      "native_map_and_player_position_asserted": true,
+      "illegal_opcodes": 0
+    },
+    {
+      "map": "Route123_BerryMastersHouse",
+      "group": 31,
+      "number": 0,
+      "position": [
+        5,
+        3
+      ],
+      "native_map_and_player_position_asserted": true,
+      "illegal_opcodes": 0
+    },
+    {
+      "map": "Route124_DivingTreasureHuntersHouse",
+      "group": 33,
+      "number": 0,
+      "position": [
+        4,
+        3
+      ],
+      "native_map_and_player_position_asserted": true,
+      "illegal_opcodes": 0
+    }
+  ],
+  "interactions": [
+    {
+      "map": "Route109_SeashoreHouse",
+      "natural_door_exit_and_reentry": true
+    },
+    {
+      "map": "Route111_OldLadysRestStop",
+      "natural_door_exit_and_reentry": true
+    },
+    {
+      "map": "Route113_GlassWorkshop",
+      "natural_door_exit_and_reentry": true
+    },
+    {
+      "map": "Route124_DivingTreasureHuntersHouse",
+      "natural_door_exit_and_reentry": true
+    },
+    {
+      "map": "Route121_SafariZoneEntrance",
+      "pc_on_tile_state_and_menu": true
+    },
+    {
+      "map": "Route110_TrickHousePuzzle3",
+      "button_up_to_pressed_native_script": true
+    }
+  ],
+  "limits": [
+    "No full campaign playthrough; puzzle button exercised, eight puzzles not solved end to end.",
+    "No historical save imported; layout indices and save/continue engine code unchanged.",
+    "Background art only; original NPC/object sprites and Cable Car travel scene preserved."
+  ]
+}

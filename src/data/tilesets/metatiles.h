@@ -832,3 +832,36 @@ const u16 gMetatileAttributes_AraunaInicioBaseV1[] = INCBIN_U16("data/tilesets/p
 const u16 gMetatiles_AraunaInicioSulV1[] = INCBIN_U16("data/tilesets/secondary/arauna_inicio_sul_v1/metatiles.bin");
 const u16 gMetatileAttributes_AraunaInicioSulV1[] = INCBIN_U16("data/tilesets/secondary/arauna_inicio_sul_v1/metatile_attributes.bin");
 // END INICIO_GEOMETRIA_V1
+
+// INTERIORES_ROTA_V1_BEGIN
+const u16 gMetatiles_AraunaRotaBaseV1[] = INCBIN_U16("data/tilesets/primary/arauna_rota_base_v1/metatiles.bin");
+const u16 gMetatileAttributes_AraunaRotaBaseV1[] = INCBIN_U16("data/tilesets/primary/arauna_rota_base_v1/metatile_attributes.bin");
+const u16 gMetatiles_AraunaRotaPraiaV1[] = INCBIN_U16("data/tilesets/secondary/arauna_rota_praia_v1/metatiles.bin");
+const u16 gMetatileAttributes_AraunaRotaPraiaV1[] = INCBIN_U16("data/tilesets/secondary/arauna_rota_praia_v1/metatile_attributes.bin");
+const u16 gMetatiles_AraunaRotaCicloviaV1[] = INCBIN_U16("data/tilesets/secondary/arauna_rota_ciclovia_v1/metatiles.bin");
+const u16 gMetatileAttributes_AraunaRotaCicloviaV1[] = INCBIN_U16("data/tilesets/secondary/arauna_rota_ciclovia_v1/metatile_attributes.bin");
+const u16 gMetatiles_AraunaRotaOficinaV1[] = INCBIN_U16("data/tilesets/secondary/arauna_rota_oficina_v1/metatiles.bin");
+const u16 gMetatileAttributes_AraunaRotaOficinaV1[] = INCBIN_U16("data/tilesets/secondary/arauna_rota_oficina_v1/metatile_attributes.bin");
+const u16 gMetatiles_AraunaRotaEnigmasV1[] = INCBIN_U16("data/tilesets/secondary/arauna_rota_enigmas_v1/metatiles.bin");
+const u16 gMetatileAttributes_AraunaRotaEnigmasV1[] = INCBIN_U16("data/tilesets/secondary/arauna_rota_enigmas_v1/metatile_attributes.bin");
+const u16 gMetatiles_AraunaRotaPousoV1[] = INCBIN_U16("data/tilesets/secondary/arauna_rota_pouso_v1/metatiles.bin");
+const u16 gMetatileAttributes_AraunaRotaPousoV1[] = INCBIN_U16("data/tilesets/secondary/arauna_rota_pouso_v1/metatile_attributes.bin");
+const u16 gMetatiles_AraunaRotaFazendaV1[] = INCBIN_U16("data/tilesets/secondary/arauna_rota_fazenda_v1/metatiles.bin");
+const u16 gMetatileAttributes_AraunaRotaFazendaV1[] = INCBIN_U16("data/tilesets/secondary/arauna_rota_fazenda_v1/metatile_attributes.bin");
+const u16 gMetatiles_AraunaRotaEstacaoV1[] = INCBIN_U16("data/tilesets/secondary/arauna_rota_estacao_v1/metatiles.bin");
+const u16 gMetatileAttributes_AraunaRotaEstacaoV1[] = INCBIN_U16("data/tilesets/secondary/arauna_rota_estacao_v1/metatile_attributes.bin");
+const u16 gMetatiles_AraunaRotaVidroV1[] = INCBIN_U16("data/tilesets/secondary/arauna_rota_vidro_v1/metatiles.bin");
+const u16 gMetatileAttributes_AraunaRotaVidroV1[] = INCBIN_U16("data/tilesets/secondary/arauna_rota_vidro_v1/metatile_attributes.bin");
+const u16 gMetatiles_AraunaRotaFosseisV1[] = INCBIN_U16("data/tilesets/secondary/arauna_rota_fosseis_v1/metatiles.bin");
+const u16 gMetatileAttributes_AraunaRotaFosseisV1[] = INCBIN_U16("data/tilesets/secondary/arauna_rota_fosseis_v1/metatile_attributes.bin");
+const u16 gMetatiles_AraunaRotaTunelV1[] = INCBIN_U16("data/tilesets/secondary/arauna_rota_tunel_v1/metatiles.bin");
+const u16 gMetatileAttributes_AraunaRotaTunelV1[] = INCBIN_U16("data/tilesets/secondary/arauna_rota_tunel_v1/metatile_attributes.bin");
+const u16 gMetatiles_AraunaRotaTecnicaV1[] = INCBIN_U16("data/tilesets/secondary/arauna_rota_tecnica_v1/metatiles.bin");
+const u16 gMetatileAttributes_AraunaRotaTecnicaV1[] = INCBIN_U16("data/tilesets/secondary/arauna_rota_tecnica_v1/metatile_attributes.bin");
+const u16 gMetatiles_AraunaRotaMineirosV1[] = INCBIN_U16("data/tilesets/secondary/arauna_rota_mineiros_v1/metatiles.bin");
+const u16 gMetatileAttributes_AraunaRotaMineirosV1[] = INCBIN_U16("data/tilesets/secondary/arauna_rota_mineiros_v1/metatile_attributes.bin");
+const u16 gMetatiles_AraunaRotaSafariV1[] = INCBIN_U16("data/tilesets/secondary/arauna_rota_safari_v1/metatiles.bin");
+const u16 gMetatileAttributes_AraunaRotaSafariV1[] = INCBIN_U16("data/tilesets/secondary/arauna_rota_safari_v1/metatile_attributes.bin");
+const u16 gMetatiles_AraunaRotaMergulhoV1[] = INCBIN_U16("data/tilesets/secondary/arauna_rota_mergulho_v1/metatiles.bin");
+const u16 gMetatileAttributes_AraunaRotaMergulhoV1[] = INCBIN_U16("data/tilesets/secondary/arauna_rota_mergulho_v1/metatile_attributes.bin");
+// INTERIORES_ROTA_V1_END

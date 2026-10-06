@@ -2894,3 +2894,156 @@ const struct Tileset gTileset_AraunaInicioSulV1 =
     .callback = NULL,
 };
 // END INICIO_GEOMETRIA_V1
+
+// INTERIORES_ROTA_V1_BEGIN
+const struct Tileset gTileset_AraunaRotaBaseV1 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AraunaRotaBaseV1,
+    .palettes = gTilesetPalettes_AraunaRotaBaseV1,
+    .metatiles = gMetatiles_AraunaRotaBaseV1,
+    .metatileAttributes = gMetatileAttributes_AraunaRotaBaseV1,
+    .callback = NULL,
+};
+const struct Tileset gTileset_AraunaRotaPraiaV1 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaRotaPraiaV1,
+    .palettes = gTilesetPalettes_AraunaRotaPraiaV1,
+    .metatiles = gMetatiles_AraunaRotaPraiaV1,
+    .metatileAttributes = gMetatileAttributes_AraunaRotaPraiaV1,
+    .callback = NULL,
+};
+const struct Tileset gTileset_AraunaRotaCicloviaV1 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaRotaCicloviaV1,
+    .palettes = gTilesetPalettes_AraunaRotaCicloviaV1,
+    .metatiles = gMetatiles_AraunaRotaCicloviaV1,
+    .metatileAttributes = gMetatileAttributes_AraunaRotaCicloviaV1,
+    .callback = NULL,
+};
+const struct Tileset gTileset_AraunaRotaOficinaV1 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaRotaOficinaV1,
+    .palettes = gTilesetPalettes_AraunaRotaOficinaV1,
+    .metatiles = gMetatiles_AraunaRotaOficinaV1,
+    .metatileAttributes = gMetatileAttributes_AraunaRotaOficinaV1,
+    .callback = NULL,
+};
+const struct Tileset gTileset_AraunaRotaEnigmasV1 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaRotaEnigmasV1,
+    .palettes = gTilesetPalettes_AraunaRotaEnigmasV1,
+    .metatiles = gMetatiles_AraunaRotaEnigmasV1,
+    .metatileAttributes = gMetatileAttributes_AraunaRotaEnigmasV1,
+    .callback = NULL,
+};
+const struct Tileset gTileset_AraunaRotaPousoV1 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaRotaPousoV1,
+    .palettes = gTilesetPalettes_AraunaRotaPousoV1,
+    .metatiles = gMetatiles_AraunaRotaPousoV1,
+    .metatileAttributes = gMetatileAttributes_AraunaRotaPousoV1,
+    .callback = NULL,
+};
+const struct Tileset gTileset_AraunaRotaFazendaV1 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaRotaFazendaV1,
+    .palettes = gTilesetPalettes_AraunaRotaFazendaV1,
+    .metatiles = gMetatiles_AraunaRotaFazendaV1,
+    .metatileAttributes = gMetatileAttributes_AraunaRotaFazendaV1,
+    .callback = NULL,
+};
+const struct Tileset gTileset_AraunaRotaEstacaoV1 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaRotaEstacaoV1,
+    .palettes = gTilesetPalettes_AraunaRotaEstacaoV1,
+    .metatiles = gMetatiles_AraunaRotaEstacaoV1,
+    .metatileAttributes = gMetatileAttributes_AraunaRotaEstacaoV1,
+    .callback = NULL,
+};
+const struct Tileset gTileset_AraunaRotaVidroV1 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaRotaVidroV1,
+    .palettes = gTilesetPalettes_AraunaRotaVidroV1,
+    .metatiles = gMetatiles_AraunaRotaVidroV1,
+    .metatileAttributes = gMetatileAttributes_AraunaRotaVidroV1,
+    .callback = NULL,
+};
+const struct Tileset gTileset_AraunaRotaFosseisV1 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaRotaFosseisV1,
+    .palettes = gTilesetPalettes_AraunaRotaFosseisV1,
+    .metatiles = gMetatiles_AraunaRotaFosseisV1,
+    .metatileAttributes = gMetatileAttributes_AraunaRotaFosseisV1,
+    .callback = NULL,
+};
+const struct Tileset gTileset_AraunaRotaTunelV1 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaRotaTunelV1,
+    .palettes = gTilesetPalettes_AraunaRotaTunelV1,
+    .metatiles = gMetatiles_AraunaRotaTunelV1,
+    .metatileAttributes = gMetatileAttributes_AraunaRotaTunelV1,
+    .callback = NULL,
+};
+const struct Tileset gTileset_AraunaRotaTecnicaV1 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaRotaTecnicaV1,
+    .palettes = gTilesetPalettes_AraunaRotaTecnicaV1,
+    .metatiles = gMetatiles_AraunaRotaTecnicaV1,
+    .metatileAttributes = gMetatileAttributes_AraunaRotaTecnicaV1,
+    .callback = NULL,
+};
+const struct Tileset gTileset_AraunaRotaMineirosV1 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaRotaMineirosV1,
+    .palettes = gTilesetPalettes_AraunaRotaMineirosV1,
+    .metatiles = gMetatiles_AraunaRotaMineirosV1,
+    .metatileAttributes = gMetatileAttributes_AraunaRotaMineirosV1,
+    .callback = NULL,
+};
+const struct Tileset gTileset_AraunaRotaSafariV1 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaRotaSafariV1,
+    .palettes = gTilesetPalettes_AraunaRotaSafariV1,
+    .metatiles = gMetatiles_AraunaRotaSafariV1,
+    .metatileAttributes = gMetatileAttributes_AraunaRotaSafariV1,
+    .callback = NULL,
+};
+const struct Tileset gTileset_AraunaRotaMergulhoV1 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaRotaMergulhoV1,
+    .palettes = gTilesetPalettes_AraunaRotaMergulhoV1,
+    .metatiles = gMetatiles_AraunaRotaMergulhoV1,
+    .metatileAttributes = gMetatileAttributes_AraunaRotaMergulhoV1,
+    .callback = NULL,
+};
+// INTERIORES_ROTA_V1_END

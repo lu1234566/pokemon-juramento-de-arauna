@@ -1,0 +1,332 @@
+{
+  "status": "PASS",
+  "base_commit": "14e56ecd6e9653c67f2ca8a111c8fabdeddd3e2f",
+  "active_maps": 25,
+  "existing_layout_count": 737,
+  "layout_ids_and_order_preserved": true,
+  "protected_files_unchanged": 15320,
+  "maps": {
+    "Route109_SeashoreHouse": {
+      "cells": 150,
+      "script_state_ids": [],
+      "grid_border_collision_elevation_behavior_identical": true,
+      "events_warps_scripts_weather_encounters_identical": true,
+      "all_grid_bottom_layers_opaque": true
+    },
+    "Route110_SeasideCyclingRoadNorthEntrance": {
+      "cells": 90,
+      "script_state_ids": [],
+      "grid_border_collision_elevation_behavior_identical": true,
+      "events_warps_scripts_weather_encounters_identical": true,
+      "all_grid_bottom_layers_opaque": true
+    },
+    "Route110_SeasideCyclingRoadSouthEntrance": {
+      "cells": 90,
+      "script_state_ids": [],
+      "grid_border_collision_elevation_behavior_identical": true,
+      "events_warps_scripts_weather_encounters_identical": true,
+      "all_grid_bottom_layers_opaque": true
+    },
+    "Route110_TrickHouseCorridor": {
+      "cells": 360,
+      "script_state_ids": [],
+      "grid_border_collision_elevation_behavior_identical": true,
+      "events_warps_scripts_weather_encounters_identical": true,
+      "all_grid_bottom_layers_opaque": true
+    },
+    "Route110_TrickHouseEnd": {
+      "cells": 96,
+      "script_state_ids": [
+        539
+      ],
+      "grid_border_collision_elevation_behavior_identical": true,
+      "events_warps_scripts_weather_encounters_identical": true,
+      "all_grid_bottom_layers_opaque": true
+    },
+    "Route110_TrickHouseEntrance": {
+      "cells": 96,
+      "script_state_ids": [
+        523,
+        537
+      ],
+      "grid_border_collision_elevation_behavior_identical": true,
+      "events_warps_scripts_weather_encounters_identical": true,
+      "all_grid_bottom_layers_opaque": true
+    },
+    "Route110_TrickHousePuzzle1": {
+      "cells": 330,
+      "script_state_ids": [
+        523
+      ],
+      "grid_border_collision_elevation_behavior_identical": true,
+      "events_warps_scripts_weather_encounters_identical": true,
+      "all_grid_bottom_layers_opaque": true
+    },
+    "Route110_TrickHousePuzzle2": {
+      "cells": 330,
+      "script_state_ids": [
+        601,
+        618
+      ],
+      "grid_border_collision_elevation_behavior_identical": true,
+      "events_warps_scripts_weather_encounters_identical": true,
+      "all_grid_bottom_layers_opaque": true
+    },
+    "Route110_TrickHousePuzzle3": {
+      "cells": 330,
+      "script_state_ids": [
+        568,
+        569,
+        570,
+        571,
+        572,
+        573,
+        576,
+        577,
+        578,
+        579,
+        580,
+        581,
+        584,
+        585,
+        586,
+        587,
+        588,
+        589,
+        592,
+        593,
+        594,
+        595,
+        596,
+        597,
+        600,
+        601
+      ],
+      "grid_border_collision_elevation_behavior_identical": true,
+      "events_warps_scripts_weather_encounters_identical": true,
+      "all_grid_bottom_layers_opaque": true
+    },
+    "Route110_TrickHousePuzzle4": {
+      "cells": 330,
+      "script_state_ids": [],
+      "grid_border_collision_elevation_behavior_identical": true,
+      "events_warps_scripts_weather_encounters_identical": true,
+      "all_grid_bottom_layers_opaque": true
+    },
+    "Route110_TrickHousePuzzle5": {
+      "cells": 330,
+      "script_state_ids": [],
+      "grid_border_collision_elevation_behavior_identical": true,
+      "events_warps_scripts_weather_encounters_identical": true,
+      "all_grid_bottom_layers_opaque": true
+    },
+    "Route110_TrickHousePuzzle6": {
+      "cells": 330,
+      "script_state_ids": [],
+      "grid_border_collision_elevation_behavior_identical": true,
+      "events_warps_scripts_weather_encounters_identical": true,
+      "all_grid_bottom_layers_opaque": true
+    },
+    "Route110_TrickHousePuzzle7": {
+      "cells": 330,
+      "script_state_ids": [
+        574,
+        575,
+        608,
+        609,
+        610,
+        611,
+        635,
+        636
+      ],
+      "grid_border_collision_elevation_behavior_identical": true,
+      "events_warps_scripts_weather_encounters_identical": true,
+      "all_grid_bottom_layers_opaque": true
+    },
+    "Route110_TrickHousePuzzle8": {
+      "cells": 330,
+      "script_state_ids": [],
+      "grid_border_collision_elevation_behavior_identical": true,
+      "events_warps_scripts_weather_encounters_identical": true,
+      "all_grid_bottom_layers_opaque": true
+    },
+    "Route111_OldLadysRestStop": {
+      "cells": 80,
+      "script_state_ids": [],
+      "grid_border_collision_elevation_behavior_identical": true,
+      "events_warps_scripts_weather_encounters_identical": true,
+      "all_grid_bottom_layers_opaque": true
+    },
+    "Route111_WinstrateFamilysHouse": {
+      "cells": 88,
+      "script_state_ids": [],
+      "grid_border_collision_elevation_behavior_identical": true,
+      "events_warps_scripts_weather_encounters_identical": true,
+      "all_grid_bottom_layers_opaque": true
+    },
+    "Route112_CableCarStation": {
+      "cells": 156,
+      "script_state_ids": [],
+      "grid_border_collision_elevation_behavior_identical": true,
+      "events_warps_scripts_weather_encounters_identical": true,
+      "all_grid_bottom_layers_opaque": true
+    },
+    "Route113_GlassWorkshop": {
+      "cells": 90,
+      "script_state_ids": [],
+      "grid_border_collision_elevation_behavior_identical": true,
+      "events_warps_scripts_weather_encounters_identical": true,
+      "all_grid_bottom_layers_opaque": true
+    },
+    "Route114_FossilManiacsHouse": {
+      "cells": 80,
+      "script_state_ids": [],
+      "grid_border_collision_elevation_behavior_identical": true,
+      "events_warps_scripts_weather_encounters_identical": true,
+      "all_grid_bottom_layers_opaque": true
+    },
+    "Route114_FossilManiacsTunnel": {
+      "cells": 338,
+      "script_state_ids": [
+        617
+      ],
+      "grid_border_collision_elevation_behavior_identical": true,
+      "events_warps_scripts_weather_encounters_identical": true,
+      "all_grid_bottom_layers_opaque": true
+    },
+    "Route114_LanettesHouse": {
+      "cells": 88,
+      "script_state_ids": [],
+      "grid_border_collision_elevation_behavior_identical": true,
+      "events_warps_scripts_weather_encounters_identical": true,
+      "all_grid_bottom_layers_opaque": true
+    },
+    "Route116_TunnelersRestHouse": {
+      "cells": 90,
+      "script_state_ids": [],
+      "grid_border_collision_elevation_behavior_identical": true,
+      "events_warps_scripts_weather_encounters_identical": true,
+      "all_grid_bottom_layers_opaque": true
+    },
+    "Route121_SafariZoneEntrance": {
+      "cells": 252,
+      "script_state_ids": [],
+      "grid_border_collision_elevation_behavior_identical": true,
+      "events_warps_scripts_weather_encounters_identical": true,
+      "all_grid_bottom_layers_opaque": true
+    },
+    "Route123_BerryMastersHouse": {
+      "cells": 88,
+      "script_state_ids": [],
+      "grid_border_collision_elevation_behavior_identical": true,
+      "events_warps_scripts_weather_encounters_identical": true,
+      "all_grid_bottom_layers_opaque": true
+    },
+    "Route124_DivingTreasureHuntersHouse": {
+      "cells": 90,
+      "script_state_ids": [],
+      "grid_border_collision_elevation_behavior_identical": true,
+      "events_warps_scripts_weather_encounters_identical": true,
+      "all_grid_bottom_layers_opaque": true
+    }
+  },
+  "banks": {
+    "data/tilesets/primary/arauna_rota_base_v1": {
+      "4bpp_roundtrip": true,
+      "tiles_with_padding": 16,
+      "attributes_preserved": true,
+      "safe_static_slots_and_palettes": true
+    },
+    "data/tilesets/secondary/arauna_rota_ciclovia_v1": {
+      "4bpp_roundtrip": true,
+      "tiles_with_padding": 96,
+      "attributes_preserved": true,
+      "safe_static_slots_and_palettes": true
+    },
+    "data/tilesets/secondary/arauna_rota_enigmas_v1": {
+      "4bpp_roundtrip": true,
+      "tiles_with_padding": 240,
+      "attributes_preserved": true,
+      "safe_static_slots_and_palettes": true
+    },
+    "data/tilesets/secondary/arauna_rota_estacao_v1": {
+      "4bpp_roundtrip": true,
+      "tiles_with_padding": 96,
+      "attributes_preserved": true,
+      "safe_static_slots_and_palettes": true
+    },
+    "data/tilesets/secondary/arauna_rota_fazenda_v1": {
+      "4bpp_roundtrip": true,
+      "tiles_with_padding": 160,
+      "attributes_preserved": true,
+      "safe_static_slots_and_palettes": true
+    },
+    "data/tilesets/secondary/arauna_rota_fosseis_v1": {
+      "4bpp_roundtrip": true,
+      "tiles_with_padding": 176,
+      "attributes_preserved": true,
+      "safe_static_slots_and_palettes": true
+    },
+    "data/tilesets/secondary/arauna_rota_mergulho_v1": {
+      "4bpp_roundtrip": true,
+      "tiles_with_padding": 176,
+      "attributes_preserved": true,
+      "safe_static_slots_and_palettes": true
+    },
+    "data/tilesets/secondary/arauna_rota_mineiros_v1": {
+      "4bpp_roundtrip": true,
+      "tiles_with_padding": 160,
+      "attributes_preserved": true,
+      "safe_static_slots_and_palettes": true
+    },
+    "data/tilesets/secondary/arauna_rota_oficina_v1": {
+      "4bpp_roundtrip": true,
+      "tiles_with_padding": 176,
+      "attributes_preserved": true,
+      "safe_static_slots_and_palettes": true
+    },
+    "data/tilesets/secondary/arauna_rota_pouso_v1": {
+      "4bpp_roundtrip": true,
+      "tiles_with_padding": 160,
+      "attributes_preserved": true,
+      "safe_static_slots_and_palettes": true
+    },
+    "data/tilesets/secondary/arauna_rota_praia_v1": {
+      "4bpp_roundtrip": true,
+      "tiles_with_padding": 112,
+      "attributes_preserved": true,
+      "safe_static_slots_and_palettes": true
+    },
+    "data/tilesets/secondary/arauna_rota_safari_v1": {
+      "4bpp_roundtrip": true,
+      "tiles_with_padding": 112,
+      "attributes_preserved": true,
+      "safe_static_slots_and_palettes": true
+    },
+    "data/tilesets/secondary/arauna_rota_tecnica_v1": {
+      "4bpp_roundtrip": true,
+      "tiles_with_padding": 128,
+      "attributes_preserved": true,
+      "safe_static_slots_and_palettes": true
+    },
+    "data/tilesets/secondary/arauna_rota_tunel_v1": {
+      "4bpp_roundtrip": true,
+      "tiles_with_padding": 48,
+      "attributes_preserved": true,
+      "safe_static_slots_and_palettes": true
+    },
+    "data/tilesets/secondary/arauna_rota_vidro_v1": {
+      "4bpp_roundtrip": true,
+      "tiles_with_padding": 176,
+      "attributes_preserved": true,
+      "safe_static_slots_and_palettes": true
+    }
+  },
+  "cells_checked": 4962,
+  "unique_script_state_ids_checked": 39,
+  "distinct_runtime_pairs": 6,
+  "save_continue_warp_code_unchanged": true,
+  "all_original_tilesets_unchanged": true,
+  "all_exterior_grids_banks_and_connections_unchanged": true,
+  "prototype_flower_shop_untouched": true
+}

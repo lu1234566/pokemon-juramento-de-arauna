@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "base_commit": "14e56ecd6e9653c67f2ca8a111c8fabdeddd3e2f",
+  "all_134_directed_connections_identical": true,
+  "improved": 0,
+  "worsened": 0,
+  "criterion_over_48_connections": 56,
+  "criterion_over_48_cells": 6023
+}

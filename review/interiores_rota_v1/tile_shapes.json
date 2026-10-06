@@ -1,0 +1,236 @@
+{
+  "original_commit": "ad0fd4d17f546ca6fd8d785c8724f9382e6e9382",
+  "original_stored_tiles": 39376,
+  "original_nonblank_tiles": 26933,
+  "canonical_patterns": 16070,
+  "method": "Exact equality of colour classes and transparency, including both flips. Blank/padding tiles excluded. Measures exact reuse, not cultural identity, quality or authorship. Corpus is expansion 1.16.2; percentages from different corpora are not directly interchangeable.",
+  "banks": {
+    "data/tilesets/secondary/arauna_rota_praia_v1": {
+      "nonblank_stored_tiles": 110,
+      "matching_hoenn_shape": 1,
+      "match_percent": 0.91
+    },
+    "data/tilesets/primary/arauna_rota_base_v1": {
+      "nonblank_stored_tiles": 10,
+      "matching_hoenn_shape": 3,
+      "match_percent": 30.0
+    },
+    "data/tilesets/secondary/arauna_rota_ciclovia_v1": {
+      "nonblank_stored_tiles": 93,
+      "matching_hoenn_shape": 5,
+      "match_percent": 5.38
+    },
+    "data/tilesets/secondary/arauna_rota_oficina_v1": {
+      "nonblank_stored_tiles": 161,
+      "matching_hoenn_shape": 2,
+      "match_percent": 1.24
+    },
+    "data/tilesets/secondary/arauna_rota_enigmas_v1": {
+      "nonblank_stored_tiles": 235,
+      "matching_hoenn_shape": 2,
+      "match_percent": 0.85
+    },
+    "data/tilesets/secondary/arauna_rota_pouso_v1": {
+      "nonblank_stored_tiles": 155,
+      "matching_hoenn_shape": 2,
+      "match_percent": 1.29
+    },
+    "data/tilesets/secondary/arauna_rota_fazenda_v1": {
+      "nonblank_stored_tiles": 145,
+      "matching_hoenn_shape": 2,
+      "match_percent": 1.38
+    },
+    "data/tilesets/secondary/arauna_rota_estacao_v1": {
+      "nonblank_stored_tiles": 88,
+      "matching_hoenn_shape": 4,
+      "match_percent": 4.55
+    },
+    "data/tilesets/secondary/arauna_rota_vidro_v1": {
+      "nonblank_stored_tiles": 170,
+      "matching_hoenn_shape": 2,
+      "match_percent": 1.18
+    },
+    "data/tilesets/secondary/arauna_rota_fosseis_v1": {
+      "nonblank_stored_tiles": 165,
+      "matching_hoenn_shape": 2,
+      "match_percent": 1.21
+    },
+    "data/tilesets/secondary/arauna_rota_tunel_v1": {
+      "nonblank_stored_tiles": 41,
+      "matching_hoenn_shape": 1,
+      "match_percent": 2.44
+    },
+    "data/tilesets/secondary/arauna_rota_tecnica_v1": {
+      "nonblank_stored_tiles": 117,
+      "matching_hoenn_shape": 3,
+      "match_percent": 2.56
+    },
+    "data/tilesets/secondary/arauna_rota_mineiros_v1": {
+      "nonblank_stored_tiles": 157,
+      "matching_hoenn_shape": 2,
+      "match_percent": 1.27
+    },
+    "data/tilesets/secondary/arauna_rota_safari_v1": {
+      "nonblank_stored_tiles": 96,
+      "matching_hoenn_shape": 5,
+      "match_percent": 5.21
+    },
+    "data/tilesets/secondary/arauna_rota_mergulho_v1": {
+      "nonblank_stored_tiles": 160,
+      "matching_hoenn_shape": 3,
+      "match_percent": 1.88
+    }
+  },
+  "maps": {
+    "Route109_SeashoreHouse": {
+      "drawn_composited_blocks": 600,
+      "composited_match_percent": 3.33,
+      "nonblank_upper_references": 384,
+      "upper_match_percent": 5.21
+    },
+    "Route110_SeasideCyclingRoadNorthEntrance": {
+      "drawn_composited_blocks": 360,
+      "composited_match_percent": 23.33,
+      "nonblank_upper_references": 222,
+      "upper_match_percent": 7.21
+    },
+    "Route110_SeasideCyclingRoadSouthEntrance": {
+      "drawn_composited_blocks": 360,
+      "composited_match_percent": 23.33,
+      "nonblank_upper_references": 222,
+      "upper_match_percent": 7.21
+    },
+    "Route110_TrickHouseCorridor": {
+      "drawn_composited_blocks": 1440,
+      "composited_match_percent": 63.54,
+      "nonblank_upper_references": 152,
+      "upper_match_percent": 9.87
+    },
+    "Route110_TrickHouseEnd": {
+      "drawn_composited_blocks": 384,
+      "composited_match_percent": 0.78,
+      "nonblank_upper_references": 124,
+      "upper_match_percent": 2.42
+    },
+    "Route110_TrickHouseEntrance": {
+      "drawn_composited_blocks": 384,
+      "composited_match_percent": 12.76,
+      "nonblank_upper_references": 244,
+      "upper_match_percent": 20.08
+    },
+    "Route110_TrickHousePuzzle1": {
+      "drawn_composited_blocks": 1320,
+      "composited_match_percent": 0.15,
+      "nonblank_upper_references": 516,
+      "upper_match_percent": 6.98
+    },
+    "Route110_TrickHousePuzzle2": {
+      "drawn_composited_blocks": 1320,
+      "composited_match_percent": 0.15,
+      "nonblank_upper_references": 600,
+      "upper_match_percent": 0.33
+    },
+    "Route110_TrickHousePuzzle3": {
+      "drawn_composited_blocks": 1320,
+      "composited_match_percent": 0.15,
+      "nonblank_upper_references": 628,
+      "upper_match_percent": 0.32
+    },
+    "Route110_TrickHousePuzzle4": {
+      "drawn_composited_blocks": 1320,
+      "composited_match_percent": 0.15,
+      "nonblank_upper_references": 472,
+      "upper_match_percent": 0.42
+    },
+    "Route110_TrickHousePuzzle5": {
+      "drawn_composited_blocks": 1320,
+      "composited_match_percent": 0.15,
+      "nonblank_upper_references": 580,
+      "upper_match_percent": 0.34
+    },
+    "Route110_TrickHousePuzzle6": {
+      "drawn_composited_blocks": 1320,
+      "composited_match_percent": 0.15,
+      "nonblank_upper_references": 468,
+      "upper_match_percent": 0.43
+    },
+    "Route110_TrickHousePuzzle7": {
+      "drawn_composited_blocks": 1320,
+      "composited_match_percent": 0.15,
+      "nonblank_upper_references": 832,
+      "upper_match_percent": 0.24
+    },
+    "Route110_TrickHousePuzzle8": {
+      "drawn_composited_blocks": 1320,
+      "composited_match_percent": 0.15,
+      "nonblank_upper_references": 396,
+      "upper_match_percent": 0.51
+    },
+    "Route111_OldLadysRestStop": {
+      "drawn_composited_blocks": 320,
+      "composited_match_percent": 12.19,
+      "nonblank_upper_references": 214,
+      "upper_match_percent": 18.22
+    },
+    "Route111_WinstrateFamilysHouse": {
+      "drawn_composited_blocks": 352,
+      "composited_match_percent": 1.7,
+      "nonblank_upper_references": 148,
+      "upper_match_percent": 4.05
+    },
+    "Route112_CableCarStation": {
+      "drawn_composited_blocks": 624,
+      "composited_match_percent": 23.88,
+      "nonblank_upper_references": 425,
+      "upper_match_percent": 10.35
+    },
+    "Route113_GlassWorkshop": {
+      "drawn_composited_blocks": 360,
+      "composited_match_percent": 11.39,
+      "nonblank_upper_references": 212,
+      "upper_match_percent": 19.34
+    },
+    "Route114_FossilManiacsHouse": {
+      "drawn_composited_blocks": 320,
+      "composited_match_percent": 12.5,
+      "nonblank_upper_references": 228,
+      "upper_match_percent": 17.54
+    },
+    "Route114_FossilManiacsTunnel": {
+      "drawn_composited_blocks": 1352,
+      "composited_match_percent": 18.05,
+      "nonblank_upper_references": 852,
+      "upper_match_percent": 0.0
+    },
+    "Route114_LanettesHouse": {
+      "drawn_composited_blocks": 352,
+      "composited_match_percent": 13.64,
+      "nonblank_upper_references": 264,
+      "upper_match_percent": 1.52
+    },
+    "Route116_TunnelersRestHouse": {
+      "drawn_composited_blocks": 360,
+      "composited_match_percent": 10.83,
+      "nonblank_upper_references": 228,
+      "upper_match_percent": 17.11
+    },
+    "Route121_SafariZoneEntrance": {
+      "drawn_composited_blocks": 1008,
+      "composited_match_percent": 55.75,
+      "nonblank_upper_references": 304,
+      "upper_match_percent": 5.92
+    },
+    "Route123_BerryMastersHouse": {
+      "drawn_composited_blocks": 352,
+      "composited_match_percent": 1.7,
+      "nonblank_upper_references": 148,
+      "upper_match_percent": 4.05
+    },
+    "Route124_DivingTreasureHuntersHouse": {
+      "drawn_composited_blocks": 360,
+      "composited_match_percent": 1.11,
+      "nonblank_upper_references": 191,
+      "upper_match_percent": 4.71
+    }
+  }
+}

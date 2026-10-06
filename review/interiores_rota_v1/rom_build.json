@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "language": "en",
+  "EWRAM_bytes": 249708,
+  "IWRAM_bytes": 30428,
+  "linked_ROM_bytes": 17388212,
+  "increase_from_base_bytes": 154364,
+  "no_capture_harness_in_disk_ROM": true
+}
