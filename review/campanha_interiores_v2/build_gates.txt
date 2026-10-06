@@ -1,0 +1,18 @@
+Region-map Arauna names: 0 changed; 30 verified.
+English-only policy: OK (128 approved English renderers in locked order; 106 final transactional overlay files; 37537 visible strings scanned, no Portuguese)
+Arauna canonical visible coverage: OK (16/16 stages; 100%; 128 English renderers; 346 final-gap runtime text blocks covered; 40 final-gap source files transactional).
+move descriptions: OK (381 moves, each with its own text)
+text width: OK (575 script files, nothing past 208px)
+Memory region         Used Size  Region Size  %age Used
+           EWRAM:      249708 B       256 KB     95.26%
+           IWRAM:       30428 B        32 KB     92.86%
+             ROM:    17187396 B        32 MB     51.22%
+
+Static checks:
+Repository safety check passed.
+28/28 checks passed
+11/11 special-species checks passed
+95/95 palette capacity checks passed
+43/43 faction identity checks passed
+189/189 protagonist asset checks passed
+Arauna static readiness: PASS (official rendered composition validated; ARM compile intentionally skipped).

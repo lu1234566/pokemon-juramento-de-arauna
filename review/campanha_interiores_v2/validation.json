@@ -1,0 +1,88 @@
+{
+  "status": "PASS",
+  "base_commit": "d561ab72aeb1c98ac72b0dd6661510effaa7362d",
+  "maps": {
+    "InsideOfTruck": {
+      "grid_cells": 25,
+      "grid_border_collision_elevation_behavior_identical": true,
+      "events_scripts_connections_weather_identical": true
+    },
+    "Route104_MrBrineysHouse": {
+      "grid_cells": 108,
+      "grid_border_collision_elevation_behavior_identical": true,
+      "events_scripts_connections_weather_identical": true
+    },
+    "Route104_PrettyPetalFlowerShop": {
+      "grid_cells": 135,
+      "grid_border_collision_elevation_behavior_identical": true,
+      "events_scripts_connections_weather_identical": true
+    },
+    "Route117_PokemonDayCare": {
+      "grid_cells": 108,
+      "grid_border_collision_elevation_behavior_identical": true,
+      "events_scripts_connections_weather_identical": true
+    },
+    "Route119_House": {
+      "grid_cells": 90,
+      "grid_border_collision_elevation_behavior_identical": true,
+      "events_scripts_connections_weather_identical": true
+    },
+    "Route119_WeatherInstitute_1F": {
+      "grid_cells": 260,
+      "grid_border_collision_elevation_behavior_identical": true,
+      "events_scripts_connections_weather_identical": true
+    },
+    "Route119_WeatherInstitute_2F": {
+      "grid_cells": 220,
+      "grid_border_collision_elevation_behavior_identical": true,
+      "events_scripts_connections_weather_identical": true
+    }
+  },
+  "banks": {
+    "data/tilesets/primary/arauna_campanha_base_v2": {
+      "4bpp_roundtrip": true,
+      "tiles_with_padding": 16,
+      "max_palette": 2,
+      "safe_static_slots": true
+    },
+    "data/tilesets/secondary/arauna_campanha_abrigo_v2": {
+      "4bpp_roundtrip": true,
+      "tiles_with_padding": 112,
+      "max_palette": 12,
+      "safe_static_slots": true
+    },
+    "data/tilesets/secondary/arauna_campanha_briney_v2": {
+      "4bpp_roundtrip": true,
+      "tiles_with_padding": 128,
+      "max_palette": 12,
+      "safe_static_slots": true
+    },
+    "data/tilesets/secondary/arauna_campanha_carga_v2": {
+      "4bpp_roundtrip": true,
+      "tiles_with_padding": 48,
+      "max_palette": 12,
+      "safe_static_slots": true
+    },
+    "data/tilesets/secondary/arauna_campanha_clima_v2": {
+      "4bpp_roundtrip": true,
+      "tiles_with_padding": 160,
+      "max_palette": 12,
+      "safe_static_slots": true
+    },
+    "data/tilesets/secondary/arauna_campanha_daycare_v2": {
+      "4bpp_roundtrip": true,
+      "tiles_with_padding": 128,
+      "max_palette": 12,
+      "safe_static_slots": true
+    },
+    "data/tilesets/secondary/arauna_campanha_flores_v2": {
+      "4bpp_roundtrip": true,
+      "tiles_with_padding": 96,
+      "max_palette": 12,
+      "safe_static_slots": true
+    }
+  },
+  "protected_files_unchanged": 15118,
+  "truck_door_ids_pc_states_and_box_geometry_preserved": true,
+  "cells_checked": 946
+}

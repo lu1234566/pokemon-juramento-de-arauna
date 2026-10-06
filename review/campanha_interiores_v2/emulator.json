@@ -1,0 +1,447 @@
+{
+  "emulator": "mGBA 0.10.2",
+  "runs": [
+    {
+      "version": "V1",
+      "case": "truck_m",
+      "states": [
+        {
+          "stage": "closed",
+          "group": 25,
+          "map": 40,
+          "x": 2,
+          "y": 2,
+          "gender": 0,
+          "illegal": 0
+        },
+        {
+          "stage": "open",
+          "group": 25,
+          "map": 40,
+          "x": 2,
+          "y": 2,
+          "gender": 0,
+          "illegal": 0
+        },
+        {
+          "stage": "exit",
+          "group": 0,
+          "map": 9,
+          "x": 5,
+          "y": 12,
+          "gender": 0,
+          "illegal": 0
+        }
+      ],
+      "disk_rom_sha256": "d0ff4b5526858811f32f49412d9442e394ee3e914e2801f029adf6ba3c3d43e1"
+    },
+    {
+      "version": "V1",
+      "case": "truck_f",
+      "states": [
+        {
+          "stage": "closed",
+          "group": 25,
+          "map": 40,
+          "x": 2,
+          "y": 2,
+          "gender": 1,
+          "illegal": 0
+        },
+        {
+          "stage": "open",
+          "group": 25,
+          "map": 40,
+          "x": 2,
+          "y": 2,
+          "gender": 1,
+          "illegal": 0
+        },
+        {
+          "stage": "exit",
+          "group": 0,
+          "map": 9,
+          "x": 23,
+          "y": 15,
+          "gender": 1,
+          "illegal": 0
+        }
+      ],
+      "disk_rom_sha256": "d0ff4b5526858811f32f49412d9442e394ee3e914e2801f029adf6ba3c3d43e1"
+    },
+    {
+      "version": "V1",
+      "case": "briney",
+      "states": [
+        {
+          "stage": "room",
+          "group": 17,
+          "map": 0,
+          "x": 5,
+          "y": 4,
+          "gender": 0,
+          "illegal": 0
+        }
+      ],
+      "disk_rom_sha256": "d0ff4b5526858811f32f49412d9442e394ee3e914e2801f029adf6ba3c3d43e1"
+    },
+    {
+      "version": "V1",
+      "case": "flores",
+      "states": [
+        {
+          "stage": "room",
+          "group": 17,
+          "map": 1,
+          "x": 7,
+          "y": 4,
+          "gender": 0,
+          "illegal": 0
+        }
+      ],
+      "disk_rom_sha256": "d0ff4b5526858811f32f49412d9442e394ee3e914e2801f029adf6ba3c3d43e1"
+    },
+    {
+      "version": "V1",
+      "case": "daycare",
+      "states": [
+        {
+          "stage": "room",
+          "group": 22,
+          "map": 0,
+          "x": 5,
+          "y": 4,
+          "gender": 0,
+          "illegal": 0
+        }
+      ],
+      "disk_rom_sha256": "d0ff4b5526858811f32f49412d9442e394ee3e914e2801f029adf6ba3c3d43e1"
+    },
+    {
+      "version": "V1",
+      "case": "abrigo",
+      "states": [
+        {
+          "stage": "room",
+          "group": 32,
+          "map": 2,
+          "x": 4,
+          "y": 4,
+          "gender": 0,
+          "illegal": 0
+        }
+      ],
+      "disk_rom_sha256": "d0ff4b5526858811f32f49412d9442e394ee3e914e2801f029adf6ba3c3d43e1"
+    },
+    {
+      "version": "V1",
+      "case": "clima1",
+      "states": [
+        {
+          "stage": "room",
+          "group": 32,
+          "map": 0,
+          "x": 9,
+          "y": 6,
+          "gender": 0,
+          "illegal": 0
+        }
+      ],
+      "disk_rom_sha256": "d0ff4b5526858811f32f49412d9442e394ee3e914e2801f029adf6ba3c3d43e1"
+    },
+    {
+      "version": "V1",
+      "case": "clima2",
+      "states": [
+        {
+          "stage": "room",
+          "group": 32,
+          "map": 1,
+          "x": 10,
+          "y": 5,
+          "gender": 0,
+          "illegal": 0
+        }
+      ],
+      "disk_rom_sha256": "d0ff4b5526858811f32f49412d9442e394ee3e914e2801f029adf6ba3c3d43e1"
+    },
+    {
+      "version": "V1",
+      "case": "pc_daycare",
+      "states": [
+        {
+          "stage": "room",
+          "group": 22,
+          "map": 0,
+          "x": 10,
+          "y": 2,
+          "gender": 0,
+          "illegal": 0
+        },
+        {
+          "stage": "pc_on",
+          "group": 22,
+          "map": 0,
+          "x": 10,
+          "y": 2,
+          "gender": 0,
+          "illegal": 0
+        }
+      ],
+      "disk_rom_sha256": "d0ff4b5526858811f32f49412d9442e394ee3e914e2801f029adf6ba3c3d43e1"
+    },
+    {
+      "version": "V2",
+      "case": "truck_m",
+      "states": [
+        {
+          "stage": "closed",
+          "group": 25,
+          "map": 40,
+          "x": 2,
+          "y": 2,
+          "gender": 0,
+          "illegal": 0
+        },
+        {
+          "stage": "open",
+          "group": 25,
+          "map": 40,
+          "x": 2,
+          "y": 2,
+          "gender": 0,
+          "illegal": 0
+        },
+        {
+          "stage": "exit",
+          "group": 0,
+          "map": 9,
+          "x": 5,
+          "y": 12,
+          "gender": 0,
+          "illegal": 0
+        }
+      ],
+      "disk_rom_sha256": "2f15e9bd5d48f0012784499f70fb0bc24457876b0e26f861664692f3ff4f2081"
+    },
+    {
+      "version": "V2",
+      "case": "truck_f",
+      "states": [
+        {
+          "stage": "closed",
+          "group": 25,
+          "map": 40,
+          "x": 2,
+          "y": 2,
+          "gender": 1,
+          "illegal": 0
+        },
+        {
+          "stage": "open",
+          "group": 25,
+          "map": 40,
+          "x": 2,
+          "y": 2,
+          "gender": 1,
+          "illegal": 0
+        },
+        {
+          "stage": "exit",
+          "group": 0,
+          "map": 9,
+          "x": 23,
+          "y": 15,
+          "gender": 1,
+          "illegal": 0
+        }
+      ],
+      "disk_rom_sha256": "2f15e9bd5d48f0012784499f70fb0bc24457876b0e26f861664692f3ff4f2081"
+    },
+    {
+      "version": "V2",
+      "case": "briney",
+      "states": [
+        {
+          "stage": "room",
+          "group": 17,
+          "map": 0,
+          "x": 5,
+          "y": 4,
+          "gender": 0,
+          "illegal": 0
+        }
+      ],
+      "disk_rom_sha256": "2f15e9bd5d48f0012784499f70fb0bc24457876b0e26f861664692f3ff4f2081"
+    },
+    {
+      "version": "V2",
+      "case": "flores",
+      "states": [
+        {
+          "stage": "room",
+          "group": 17,
+          "map": 1,
+          "x": 7,
+          "y": 4,
+          "gender": 0,
+          "illegal": 0
+        }
+      ],
+      "disk_rom_sha256": "2f15e9bd5d48f0012784499f70fb0bc24457876b0e26f861664692f3ff4f2081"
+    },
+    {
+      "version": "V2",
+      "case": "daycare",
+      "states": [
+        {
+          "stage": "room",
+          "group": 22,
+          "map": 0,
+          "x": 5,
+          "y": 4,
+          "gender": 0,
+          "illegal": 0
+        }
+      ],
+      "disk_rom_sha256": "2f15e9bd5d48f0012784499f70fb0bc24457876b0e26f861664692f3ff4f2081"
+    },
+    {
+      "version": "V2",
+      "case": "abrigo",
+      "states": [
+        {
+          "stage": "room",
+          "group": 32,
+          "map": 2,
+          "x": 4,
+          "y": 4,
+          "gender": 0,
+          "illegal": 0
+        }
+      ],
+      "disk_rom_sha256": "2f15e9bd5d48f0012784499f70fb0bc24457876b0e26f861664692f3ff4f2081"
+    },
+    {
+      "version": "V2",
+      "case": "clima1",
+      "states": [
+        {
+          "stage": "room",
+          "group": 32,
+          "map": 0,
+          "x": 9,
+          "y": 6,
+          "gender": 0,
+          "illegal": 0
+        }
+      ],
+      "disk_rom_sha256": "2f15e9bd5d48f0012784499f70fb0bc24457876b0e26f861664692f3ff4f2081"
+    },
+    {
+      "version": "V2",
+      "case": "clima2",
+      "states": [
+        {
+          "stage": "room",
+          "group": 32,
+          "map": 1,
+          "x": 10,
+          "y": 5,
+          "gender": 0,
+          "illegal": 0
+        }
+      ],
+      "disk_rom_sha256": "2f15e9bd5d48f0012784499f70fb0bc24457876b0e26f861664692f3ff4f2081"
+    },
+    {
+      "version": "V2",
+      "case": "pc_daycare",
+      "states": [
+        {
+          "stage": "room",
+          "group": 22,
+          "map": 0,
+          "x": 10,
+          "y": 2,
+          "gender": 0,
+          "illegal": 0
+        },
+        {
+          "stage": "pc_on",
+          "group": 22,
+          "map": 0,
+          "x": 10,
+          "y": 2,
+          "gender": 0,
+          "illegal": 0
+        }
+      ],
+      "disk_rom_sha256": "2f15e9bd5d48f0012784499f70fb0bc24457876b0e26f861664692f3ff4f2081"
+    }
+  ],
+  "comparisons": [
+    {
+      "case": "abrigo_room",
+      "map_cache_identical": true,
+      "sha256": "5beec252fd2f9bee8e51d76a8316caf2e8f2267d8b326a0b0538b37ab6d7467d"
+    },
+    {
+      "case": "briney_room",
+      "map_cache_identical": true,
+      "sha256": "6a9dfbb4dd62b59b15040331526c4a2b312c6e25c0e9cacc81cf19a6199da60a"
+    },
+    {
+      "case": "clima1_room",
+      "map_cache_identical": true,
+      "sha256": "ecc2d97345cd016e5f4d59ac47d056e0350fac81ba8d2d475fbd06e5af8295c5"
+    },
+    {
+      "case": "clima2_room",
+      "map_cache_identical": true,
+      "sha256": "98d96d4467a2b68fd2f5605952fc563f4e9ae919b667c45f87157d52e755ec78"
+    },
+    {
+      "case": "daycare_room",
+      "map_cache_identical": true,
+      "sha256": "d8fe871d4ee40a17b5627fdfbdaf4bc5e1ba06a1ebc16f836b1adac0f2a3280b"
+    },
+    {
+      "case": "flores_room",
+      "map_cache_identical": true,
+      "sha256": "9880ef221d8758e34d364a9953a99c945ef2b3de071786ab0dc93babdbc72d0b"
+    },
+    {
+      "case": "pc_daycare_pc_on",
+      "map_cache_identical": true,
+      "sha256": "e73fe59ec956a131070e215cacc5a6041a08c9140f4dadfbdbb5d8cfd0ceadc2"
+    },
+    {
+      "case": "pc_daycare_room",
+      "map_cache_identical": true,
+      "sha256": "d8fe871d4ee40a17b5627fdfbdaf4bc5e1ba06a1ebc16f836b1adac0f2a3280b"
+    },
+    {
+      "case": "truck_f_exit",
+      "map_cache_identical": true,
+      "sha256": "bf47f9b9e5716a3a31b808bc1d4e4c4bc311a863c82a7772b211f610b9070ee3"
+    },
+    {
+      "case": "truck_f_open",
+      "map_cache_identical": true,
+      "sha256": "485d1afd3c27b694c5f30e82a2b6387e377735b676ca02711bc601d98ee860b4"
+    },
+    {
+      "case": "truck_m_exit",
+      "map_cache_identical": true,
+      "sha256": "bf47f9b9e5716a3a31b808bc1d4e4c4bc311a863c82a7772b211f610b9070ee3"
+    },
+    {
+      "case": "truck_m_open",
+      "map_cache_identical": true,
+      "sha256": "485d1afd3c27b694c5f30e82a2b6387e377735b676ca02711bc601d98ee860b4"
+    }
+  ],
+  "status": "PASS",
+  "notes": "Disk ROMs unmodified. NewGame called after boot, no save loaded/distributed. Six temporary entry overrides restored in RAM before capture. Native truck sequence and gender-dependent exit unchanged. Gameplay services/battles not replayed."
+}

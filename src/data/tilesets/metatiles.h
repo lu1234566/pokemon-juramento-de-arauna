@@ -808,3 +808,20 @@ const u16 gMetatileAttributes_AraunaAbrigoChuvaV1[] = INCBIN_U16("data/tilesets/
 const u16 gMetatiles_AraunaInstitutoClimaV1[] = INCBIN_U16("data/tilesets/secondary/arauna_campanha_clima_v1/metatiles.bin");
 const u16 gMetatileAttributes_AraunaInstitutoClimaV1[] = INCBIN_U16("data/tilesets/secondary/arauna_campanha_clima_v1/metatile_attributes.bin");
 // CAMPANHA_INTERIORES_V1_END
+
+// CAMPANHA_INTERIORES_V2_BEGIN
+const u16 gMetatiles_AraunaCampanhaBaseV2[] = INCBIN_U16("data/tilesets/primary/arauna_campanha_base_v2/metatiles.bin");
+const u16 gMetatileAttributes_AraunaCampanhaBaseV2[] = INCBIN_U16("data/tilesets/primary/arauna_campanha_base_v2/metatile_attributes.bin");
+const u16 gMetatiles_AraunaCampanhaCargaV2[] = INCBIN_U16("data/tilesets/secondary/arauna_campanha_carga_v2/metatiles.bin");
+const u16 gMetatileAttributes_AraunaCampanhaCargaV2[] = INCBIN_U16("data/tilesets/secondary/arauna_campanha_carga_v2/metatile_attributes.bin");
+const u16 gMetatiles_AraunaCampanhaBrineyV2[] = INCBIN_U16("data/tilesets/secondary/arauna_campanha_briney_v2/metatiles.bin");
+const u16 gMetatileAttributes_AraunaCampanhaBrineyV2[] = INCBIN_U16("data/tilesets/secondary/arauna_campanha_briney_v2/metatile_attributes.bin");
+const u16 gMetatiles_AraunaCampanhaFloresV2[] = INCBIN_U16("data/tilesets/secondary/arauna_campanha_flores_v2/metatiles.bin");
+const u16 gMetatileAttributes_AraunaCampanhaFloresV2[] = INCBIN_U16("data/tilesets/secondary/arauna_campanha_flores_v2/metatile_attributes.bin");
+const u16 gMetatiles_AraunaCampanhaDaycareV2[] = INCBIN_U16("data/tilesets/secondary/arauna_campanha_daycare_v2/metatiles.bin");
+const u16 gMetatileAttributes_AraunaCampanhaDaycareV2[] = INCBIN_U16("data/tilesets/secondary/arauna_campanha_daycare_v2/metatile_attributes.bin");
+const u16 gMetatiles_AraunaCampanhaAbrigoV2[] = INCBIN_U16("data/tilesets/secondary/arauna_campanha_abrigo_v2/metatiles.bin");
+const u16 gMetatileAttributes_AraunaCampanhaAbrigoV2[] = INCBIN_U16("data/tilesets/secondary/arauna_campanha_abrigo_v2/metatile_attributes.bin");
+const u16 gMetatiles_AraunaCampanhaClimaV2[] = INCBIN_U16("data/tilesets/secondary/arauna_campanha_clima_v2/metatiles.bin");
+const u16 gMetatileAttributes_AraunaCampanhaClimaV2[] = INCBIN_U16("data/tilesets/secondary/arauna_campanha_clima_v2/metatile_attributes.bin");
+// CAMPANHA_INTERIORES_V2_END

@@ -1,7 +1,7 @@
 {
   "id": "MAP_ROUTE119_WEATHER_INSTITUTE_1F",
   "name": "Route119_WeatherInstitute_1F",
-  "layout": "LAYOUT_ARAUNA_CAMPANHA_V1_ROUTE119_WEATHER_INSTITUTE_1_F",
+  "layout": "LAYOUT_ARAUNA_CAMPANHA_V2_ROUTE119_WEATHER_INSTITUTE_1_F",
   "music": "MUS_RUSTBORO",
   "region_map_section": "MAPSEC_ROUTE_119",
   "requires_flash": false,

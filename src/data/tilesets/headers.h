@@ -2798,3 +2798,76 @@ const struct Tileset gTileset_AraunaInstitutoClimaV1 =
     .callback = NULL,
 };
 // CAMPANHA_INTERIORES_V1_END
+
+// CAMPANHA_INTERIORES_V2_BEGIN
+const struct Tileset gTileset_AraunaCampanhaBaseV2 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AraunaCampanhaBaseV2,
+    .palettes = gTilesetPalettes_AraunaCampanhaBaseV2,
+    .metatiles = gMetatiles_AraunaCampanhaBaseV2,
+    .metatileAttributes = gMetatileAttributes_AraunaCampanhaBaseV2,
+    .callback = NULL,
+};
+const struct Tileset gTileset_AraunaCampanhaCargaV2 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaCampanhaCargaV2,
+    .palettes = gTilesetPalettes_AraunaCampanhaCargaV2,
+    .metatiles = gMetatiles_AraunaCampanhaCargaV2,
+    .metatileAttributes = gMetatileAttributes_AraunaCampanhaCargaV2,
+    .callback = NULL,
+};
+const struct Tileset gTileset_AraunaCampanhaBrineyV2 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaCampanhaBrineyV2,
+    .palettes = gTilesetPalettes_AraunaCampanhaBrineyV2,
+    .metatiles = gMetatiles_AraunaCampanhaBrineyV2,
+    .metatileAttributes = gMetatileAttributes_AraunaCampanhaBrineyV2,
+    .callback = NULL,
+};
+const struct Tileset gTileset_AraunaCampanhaFloresV2 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaCampanhaFloresV2,
+    .palettes = gTilesetPalettes_AraunaCampanhaFloresV2,
+    .metatiles = gMetatiles_AraunaCampanhaFloresV2,
+    .metatileAttributes = gMetatileAttributes_AraunaCampanhaFloresV2,
+    .callback = NULL,
+};
+const struct Tileset gTileset_AraunaCampanhaDaycareV2 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaCampanhaDaycareV2,
+    .palettes = gTilesetPalettes_AraunaCampanhaDaycareV2,
+    .metatiles = gMetatiles_AraunaCampanhaDaycareV2,
+    .metatileAttributes = gMetatileAttributes_AraunaCampanhaDaycareV2,
+    .callback = NULL,
+};
+const struct Tileset gTileset_AraunaCampanhaAbrigoV2 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaCampanhaAbrigoV2,
+    .palettes = gTilesetPalettes_AraunaCampanhaAbrigoV2,
+    .metatiles = gMetatiles_AraunaCampanhaAbrigoV2,
+    .metatileAttributes = gMetatileAttributes_AraunaCampanhaAbrigoV2,
+    .callback = NULL,
+};
+const struct Tileset gTileset_AraunaCampanhaClimaV2 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaCampanhaClimaV2,
+    .palettes = gTilesetPalettes_AraunaCampanhaClimaV2,
+    .metatiles = gMetatiles_AraunaCampanhaClimaV2,
+    .metatileAttributes = gMetatileAttributes_AraunaCampanhaClimaV2,
+    .callback = NULL,
+};
+// CAMPANHA_INTERIORES_V2_END

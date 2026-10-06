@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "compiled_tile_palette_sprite_assets": 121,
+  "native_sources_match_gbagfx_bytes": true,
+  "rom_sha256_matches_final_emulator_runs": "2f15e9bd5d48f0012784499f70fb0bc24457876b0e26f861664692f3ff4f2081"
+}
