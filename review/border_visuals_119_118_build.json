@@ -1,0 +1,67 @@
+{
+  "Route119": {
+    "neighbor": "Route118",
+    "cache_cells": 329,
+    "different_rgb_before": 140,
+    "aliases": {
+      "13": 512,
+      "15": 515,
+      "22": 516,
+      "23": 523,
+      "30": 524,
+      "31": 565,
+      "38": 566,
+      "39": 581,
+      "112": 586,
+      "114": 587,
+      "120": 588,
+      "122": 589,
+      "198": 603,
+      "199": 604,
+      "206": 607,
+      "276": 616,
+      "277": 623,
+      "767": 627,
+      "773": 628,
+      "776": 629
+    },
+    "palettes_modified": [
+      9,
+      10
+    ],
+    "new_hardware_tiles": 4,
+    "new_hardware_slots": [
+      39,
+      303,
+      472,
+      484
+    ],
+    "compacted_static_entries": 105,
+    "map_grid_untouched": true
+  },
+  "Route118": {
+    "neighbor": "Route119",
+    "cache_cells": 280,
+    "different_rgb_before": 165,
+    "aliases": {
+      "1": 512,
+      "14": 516,
+      "15": 523,
+      "22": 524,
+      "104": 527,
+      "105": 529,
+      "106": 531,
+      "112": 532,
+      "114": 534,
+      "198": 535,
+      "199": 565
+    },
+    "palettes_modified": [
+      8
+    ],
+    "new_hardware_tiles": 0,
+    "new_hardware_slots": [],
+    "compacted_static_entries": 0,
+    "map_grid_untouched": true
+  }
+}

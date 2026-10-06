@@ -1,4 +1,5 @@
 #include "global.h"
+#include "arauna_border_visuals.h"
 #include "overworld.h"
 #include "battle_pyramid.h"
 #include "battle_setup.h"
@@ -784,6 +785,8 @@ bool8 SetDiveWarpDive(u16 x, u16 y)
 void LoadMapFromCameraTransition(u8 mapGroup, u8 mapNum)
 {
     s32 paletteIndex;
+    const struct MapLayout *previousLayout = gMapHeader.mapLayout;
+    bool8 reloadPrimary;
 
     SetWarpDestination(mapGroup, mapNum, WARP_ID_NONE, -1, -1);
 
@@ -807,12 +810,27 @@ void LoadMapFromCameraTransition(u8 mapGroup, u8 mapNum)
     RunOnTransitionMapScript();
     InitMap();
     CopySecondaryTilesetToVramUsingHeap(gMapHeader.mapLayout);
-    LoadSecondaryTilesetPalette(gMapHeader.mapLayout);
+    reloadPrimary = AraunaConnectionNeedsFullReload(previousLayout, gMapHeader.mapLayout);
+    if (reloadPrimary)
+    {
+        // The neighbour uses another primary bank (or the 119/118 border
+        // banks). Reload both banks, then let the camera rebuild the whole
+        // view. The heap copy frees its buffer once the DMA is done.
+        CopyPrimaryTilesetToVramUsingHeap(gMapHeader.mapLayout);
+        LoadMapTilesetPalettes(gMapHeader.mapLayout);
+    }
+    else
+    {
+        LoadSecondaryTilesetPalette(gMapHeader.mapLayout);
+    }
 
-    for (paletteIndex = NUM_PALS_IN_PRIMARY; paletteIndex < NUM_PALS_TOTAL; paletteIndex++)
+    for (paletteIndex = reloadPrimary ? 0 : NUM_PALS_IN_PRIMARY; paletteIndex < NUM_PALS_TOTAL; paletteIndex++)
         ApplyWeatherColorMapToPal(paletteIndex);
 
-    InitSecondaryTilesetAnimation();
+    if (reloadPrimary)
+        InitTilesetAnimations();
+    else
+        InitSecondaryTilesetAnimation();
     UpdateLocationHistoryForRoamer();
     RoamerMove();
     DoCurrentWeather();

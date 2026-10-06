@@ -1,0 +1,175 @@
+{
+  "status": "PASS",
+  "native_ram_caches_identical": 12,
+  "six_neighbor_crossings_match_base": true,
+  "cases": [
+    {
+      "version": "base",
+      "entry": [
+        0,
+        34,
+        39,
+        8
+      ],
+      "direction": "119-fortree",
+      "keys": 16,
+      "log": "boot callback=08112609 saveptr=0200d968\nbefore group=0 map=34 x=39 y=8 warp=255\nafter group=0 map=4 x=0 y=8 warp=255\ntemporary ROM entry patches restored before movement; mGBA boot=190 capture=900 movement=16 settle=300\nillegal_opcodes=0\n",
+      "rom_sha256": "faef1066333fef950ab40f64ba635ebda605fb85d6dc926dac54db6df15a8378",
+      "temporary_entry_restored_before_movement": true
+    },
+    {
+      "version": "base",
+      "entry": [
+        0,
+        4,
+        0,
+        8
+      ],
+      "direction": "fortree-119",
+      "keys": 32,
+      "log": "boot callback=08112609 saveptr=0200d968\nbefore group=0 map=4 x=0 y=8 warp=255\nafter group=0 map=34 x=39 y=8 warp=255\ntemporary ROM entry patches restored before movement; mGBA boot=190 capture=900 movement=16 settle=300\nillegal_opcodes=0\n",
+      "rom_sha256": "faef1066333fef950ab40f64ba635ebda605fb85d6dc926dac54db6df15a8378",
+      "temporary_entry_restored_before_movement": true
+    },
+    {
+      "version": "base",
+      "entry": [
+        0,
+        33,
+        0,
+        9
+      ],
+      "direction": "118-mauville",
+      "keys": 32,
+      "log": "boot callback=08112609 saveptr=0200d968\nbefore group=0 map=33 x=0 y=9 warp=255\nafter group=0 map=2 x=49 y=17 warp=255\ntemporary ROM entry patches restored before movement; mGBA boot=190 capture=900 movement=16 settle=300\nillegal_opcodes=0\n",
+      "rom_sha256": "faef1066333fef950ab40f64ba635ebda605fb85d6dc926dac54db6df15a8378",
+      "temporary_entry_restored_before_movement": true
+    },
+    {
+      "version": "base",
+      "entry": [
+        0,
+        2,
+        49,
+        17
+      ],
+      "direction": "mauville-118",
+      "keys": 16,
+      "log": "boot callback=08112609 saveptr=0200d968\nbefore group=0 map=2 x=49 y=17 warp=255\nafter group=0 map=33 x=0 y=9 warp=255\ntemporary ROM entry patches restored before movement; mGBA boot=190 capture=900 movement=16 settle=300\nillegal_opcodes=0\n",
+      "rom_sha256": "faef1066333fef950ab40f64ba635ebda605fb85d6dc926dac54db6df15a8378",
+      "temporary_entry_restored_before_movement": true
+    },
+    {
+      "version": "base",
+      "entry": [
+        0,
+        33,
+        79,
+        11
+      ],
+      "direction": "118-123",
+      "keys": 16,
+      "log": "boot callback=08112609 saveptr=0200d968\nbefore group=0 map=33 x=79 y=11 warp=255\nafter group=0 map=38 x=0 y=11 warp=255\ntemporary ROM entry patches restored before movement; mGBA boot=190 capture=900 movement=16 settle=300\nillegal_opcodes=0\n",
+      "rom_sha256": "faef1066333fef950ab40f64ba635ebda605fb85d6dc926dac54db6df15a8378",
+      "temporary_entry_restored_before_movement": true
+    },
+    {
+      "version": "base",
+      "entry": [
+        0,
+        38,
+        0,
+        11
+      ],
+      "direction": "123-118",
+      "keys": 32,
+      "log": "boot callback=08112609 saveptr=0200d968\nbefore group=0 map=38 x=0 y=11 warp=255\nafter group=0 map=33 x=79 y=11 warp=255\ntemporary ROM entry patches restored before movement; mGBA boot=190 capture=900 movement=16 settle=300\nillegal_opcodes=0\n",
+      "rom_sha256": "faef1066333fef950ab40f64ba635ebda605fb85d6dc926dac54db6df15a8378",
+      "temporary_entry_restored_before_movement": true
+    },
+    {
+      "version": "arauna",
+      "entry": [
+        0,
+        34,
+        39,
+        8
+      ],
+      "direction": "119-fortree",
+      "keys": 16,
+      "log": "boot callback=081126e9 saveptr=0200d968\nbefore group=0 map=34 x=39 y=8 warp=255\nafter group=0 map=4 x=0 y=8 warp=255\ntemporary ROM entry patches restored before movement; mGBA boot=190 capture=900 movement=16 settle=300\nillegal_opcodes=0\n",
+      "rom_sha256": "5a3aac913c055db7ba89c30599bc88143b2300bc2f13b60a2841f3d555343275",
+      "temporary_entry_restored_before_movement": true
+    },
+    {
+      "version": "arauna",
+      "entry": [
+        0,
+        4,
+        0,
+        8
+      ],
+      "direction": "fortree-119",
+      "keys": 32,
+      "log": "boot callback=081126e9 saveptr=0200d968\nbefore group=0 map=4 x=0 y=8 warp=255\nafter group=0 map=34 x=39 y=8 warp=255\ntemporary ROM entry patches restored before movement; mGBA boot=190 capture=900 movement=16 settle=300\nillegal_opcodes=0\n",
+      "rom_sha256": "5a3aac913c055db7ba89c30599bc88143b2300bc2f13b60a2841f3d555343275",
+      "temporary_entry_restored_before_movement": true
+    },
+    {
+      "version": "arauna",
+      "entry": [
+        0,
+        33,
+        0,
+        9
+      ],
+      "direction": "118-mauville",
+      "keys": 32,
+      "log": "boot callback=081126e9 saveptr=0200d968\nbefore group=0 map=33 x=0 y=9 warp=255\nafter group=0 map=2 x=49 y=17 warp=255\ntemporary ROM entry patches restored before movement; mGBA boot=190 capture=900 movement=16 settle=300\nillegal_opcodes=0\n",
+      "rom_sha256": "5a3aac913c055db7ba89c30599bc88143b2300bc2f13b60a2841f3d555343275",
+      "temporary_entry_restored_before_movement": true
+    },
+    {
+      "version": "arauna",
+      "entry": [
+        0,
+        2,
+        49,
+        17
+      ],
+      "direction": "mauville-118",
+      "keys": 16,
+      "log": "boot callback=081126e9 saveptr=0200d968\nbefore group=0 map=2 x=49 y=17 warp=255\nafter group=0 map=33 x=0 y=9 warp=255\ntemporary ROM entry patches restored before movement; mGBA boot=190 capture=900 movement=16 settle=300\nillegal_opcodes=0\n",
+      "rom_sha256": "5a3aac913c055db7ba89c30599bc88143b2300bc2f13b60a2841f3d555343275",
+      "temporary_entry_restored_before_movement": true
+    },
+    {
+      "version": "arauna",
+      "entry": [
+        0,
+        33,
+        79,
+        11
+      ],
+      "direction": "118-123",
+      "keys": 16,
+      "log": "boot callback=081126e9 saveptr=0200d968\nbefore group=0 map=33 x=79 y=11 warp=255\nafter group=0 map=38 x=0 y=11 warp=255\ntemporary ROM entry patches restored before movement; mGBA boot=190 capture=900 movement=16 settle=300\nillegal_opcodes=0\n",
+      "rom_sha256": "5a3aac913c055db7ba89c30599bc88143b2300bc2f13b60a2841f3d555343275",
+      "temporary_entry_restored_before_movement": true
+    },
+    {
+      "version": "arauna",
+      "entry": [
+        0,
+        38,
+        0,
+        11
+      ],
+      "direction": "123-118",
+      "keys": 32,
+      "log": "boot callback=081126e9 saveptr=0200d968\nbefore group=0 map=38 x=0 y=11 warp=255\nafter group=0 map=33 x=79 y=11 warp=255\ntemporary ROM entry patches restored before movement; mGBA boot=190 capture=900 movement=16 settle=300\nillegal_opcodes=0\n",
+      "rom_sha256": "5a3aac913c055db7ba89c30599bc88143b2300bc2f13b60a2841f3d555343275",
+      "temporary_entry_restored_before_movement": true
+    }
+  ]
+}

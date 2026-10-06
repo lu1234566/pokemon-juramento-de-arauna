@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "native_C_selector_compiled_and_checked": true,
+  "engine_Fill_functions_compiled_and_checked": true,
+  "own_maps": {
+    "Route119": {
+      "cells": 5600,
+      "rgb_identical": true,
+      "native_ids_preserved": true,
+      "behavior_identical": true
+    },
+    "Route118": {
+      "cells": 1600,
+      "rgb_identical": true,
+      "native_ids_preserved": true,
+      "behavior_identical": true
+    }
+  },
+  "all_cache_cells_checked": 40512,
+  "exact_target": {
+    "Route119": {
+      "cells": 329,
+      "before_rgb_different": 140,
+      "after_rgb_different": 0
+    },
+    "Route118": {
+      "cells": 280,
+      "before_rgb_different": 165,
+      "after_rgb_different": 0
+    }
+  },
+  "connections_changed": [
+    {
+      "receiver": "Route119",
+      "source": "Route118",
+      "changed_rgb_cells": 140,
+      "different_rgb_before": 140,
+      "different_rgb_after": 0
+    },
+    {
+      "receiver": "Route118",
+      "source": "Route119",
+      "changed_rgb_cells": 165,
+      "different_rgb_before": 165,
+      "different_rgb_after": 0
+    }
+  ],
+  "connections_worsened": 0,
+  "fallback_checks": 33792,
+  "unchanged_base_map_files": 2427
+}

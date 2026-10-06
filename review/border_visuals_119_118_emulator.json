@@ -1,0 +1,105 @@
+{
+  "status": "PASS",
+  "engine": "mGBA 0.10.2",
+  "native_ram_caches_identical": 4,
+  "screen_checks": {
+    "south": {
+      "own_screen_pixels_identical": true,
+      "changed_rows": [
+        88,
+        159
+      ],
+      "changed_pixels": 3811
+    },
+    "north": {
+      "own_screen_pixels_identical": true,
+      "changed_rows": [
+        0,
+        71
+      ],
+      "changed_pixels": 5297
+    }
+  },
+  "post_transition_background_matches_fresh_load": [
+    {
+      "after": "arauna-south-after",
+      "fresh_load": "arauna-north-before",
+      "background_pixels_different": 0,
+      "player_sprite_excluded": [
+        104,
+        52,
+        132,
+        90
+      ]
+    },
+    {
+      "after": "arauna-north-after",
+      "fresh_load": "arauna-south-before",
+      "background_pixels_different": 0,
+      "player_sprite_excluded": [
+        104,
+        52,
+        132,
+        90
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "version": "base",
+      "entry": [
+        0,
+        34,
+        18,
+        139
+      ],
+      "direction": "south",
+      "keys": 128,
+      "log": "boot callback=08112609 saveptr=0200d968\nbefore group=0 map=34 x=18 y=139 warp=255\nafter group=0 map=33 x=58 y=0 warp=255\ntemporary ROM entry patches restored before movement; mGBA boot=190 capture=900 movement=16 settle=300\nillegal_opcodes=0\n",
+      "rom_sha256": "faef1066333fef950ab40f64ba635ebda605fb85d6dc926dac54db6df15a8378",
+      "temporary_entry_restored_before_movement": true
+    },
+    {
+      "version": "base",
+      "entry": [
+        0,
+        33,
+        58,
+        0
+      ],
+      "direction": "north",
+      "keys": 64,
+      "log": "boot callback=08112609 saveptr=0200d968\nbefore group=0 map=33 x=58 y=0 warp=255\nafter group=0 map=34 x=18 y=139 warp=255\ntemporary ROM entry patches restored before movement; mGBA boot=190 capture=900 movement=16 settle=300\nillegal_opcodes=0\n",
+      "rom_sha256": "faef1066333fef950ab40f64ba635ebda605fb85d6dc926dac54db6df15a8378",
+      "temporary_entry_restored_before_movement": true
+    },
+    {
+      "version": "arauna",
+      "entry": [
+        0,
+        34,
+        18,
+        139
+      ],
+      "direction": "south",
+      "keys": 128,
+      "log": "boot callback=081126e9 saveptr=0200d968\nbefore group=0 map=34 x=18 y=139 warp=255\nafter group=0 map=33 x=58 y=0 warp=255\ntemporary ROM entry patches restored before movement; mGBA boot=190 capture=900 movement=16 settle=300\nillegal_opcodes=0\n",
+      "rom_sha256": "5a3aac913c055db7ba89c30599bc88143b2300bc2f13b60a2841f3d555343275",
+      "temporary_entry_restored_before_movement": true
+    },
+    {
+      "version": "arauna",
+      "entry": [
+        0,
+        33,
+        58,
+        0
+      ],
+      "direction": "north",
+      "keys": 64,
+      "log": "boot callback=081126e9 saveptr=0200d968\nbefore group=0 map=33 x=58 y=0 warp=255\nafter group=0 map=34 x=18 y=139 warp=255\ntemporary ROM entry patches restored before movement; mGBA boot=190 capture=900 movement=16 settle=300\nillegal_opcodes=0\n",
+      "rom_sha256": "5a3aac913c055db7ba89c30599bc88143b2300bc2f13b60a2841f3d555343275",
+      "temporary_entry_restored_before_movement": true
+    }
+  ]
+}

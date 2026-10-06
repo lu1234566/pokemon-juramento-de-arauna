@@ -2712,3 +2712,26 @@ const struct Tileset gTileset_AraunaMataEsperaV1 =
     .metatileAttributes = gMetatileAttributes_AraunaMataEsperaV1,
     .callback = NULL,
 };
+
+// ARAUNA_BORDER_VISUALS_BEGIN
+const struct Tileset gTileset_AraunaRoute119BorderV1 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaRoute119BorderV1,
+    .palettes = gTilesetPalettes_AraunaRoute119BorderV1,
+    .metatiles = gMetatiles_AraunaRoute119BorderV1,
+    .metatileAttributes = gMetatileAttributes_AraunaRoute119BorderV1,
+    .callback = InitTilesetAnim_Fortree,
+};
+const struct Tileset gTileset_AraunaRoute118BorderV1 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaRoute118BorderV1,
+    .palettes = gTilesetPalettes_AraunaRoute118BorderV1,
+    .metatiles = gMetatiles_AraunaRoute118BorderV1,
+    .metatileAttributes = gMetatileAttributes_AraunaRoute118BorderV1,
+    .callback = InitTilesetAnim_Mauville,
+};
+// ARAUNA_BORDER_VISUALS_END

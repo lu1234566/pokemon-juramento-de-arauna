@@ -347,7 +347,7 @@
       "width": 40,
       "height": 140,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_AraunaMataMeioV3",
+      "secondary_tileset": "gTileset_AraunaRoute119BorderV1",
       "border_filepath": "data/layouts/Route119/border.bin",
       "blockdata_filepath": "data/layouts/Route119/map.bin"
     },
@@ -6827,7 +6827,7 @@
       "width": 80,
       "height": 20,
       "primary_tileset": "gTileset_AraunaRioFronteira",
-      "secondary_tileset": "gTileset_Arauna118MataUmida",
+      "secondary_tileset": "gTileset_AraunaRoute118BorderV1",
       "border_filepath": "data/layouts/Route118_AraunaRiverCrossing/border.bin",
       "blockdata_filepath": "data/layouts/Route118_AraunaRiverCrossing/map.bin"
     },

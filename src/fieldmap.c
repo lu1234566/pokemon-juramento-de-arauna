@@ -863,6 +863,11 @@ void CopySecondaryTilesetToVram(struct MapLayout const *mapLayout)
     CopyTilesetToVram(mapLayout->secondaryTileset, NUM_TILES_TOTAL - NUM_TILES_IN_PRIMARY, NUM_TILES_IN_PRIMARY);
 }
 
+void CopyPrimaryTilesetToVramUsingHeap(struct MapLayout const *mapLayout)
+{
+    CopyTilesetToVramUsingHeap(mapLayout->primaryTileset, NUM_TILES_IN_PRIMARY, 0);
+}
+
 void CopySecondaryTilesetToVramUsingHeap(struct MapLayout const *mapLayout)
 {
     CopyTilesetToVramUsingHeap(mapLayout->secondaryTileset, NUM_TILES_TOTAL - NUM_TILES_IN_PRIMARY, NUM_TILES_IN_PRIMARY);

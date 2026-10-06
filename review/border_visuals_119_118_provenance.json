@@ -1,0 +1,28 @@
+{
+  "base_commit": "9db9ddbd3cb73697859e232409c1aab3ade2124c",
+  "base_branch": "claude/pokemon-juramento-arauna-fhk6ah",
+  "final_rom_sha256": "5a3aac913c055db7ba89c30599bc88143b2300bc2f13b60a2841f3d555343275",
+  "emulator": "mGBA 0.10.2",
+  "rom_source": "unmodified official build output; temporary RAM entry patches restored before movement",
+  "native_runs": 16,
+  "crossing_directions": 8,
+  "ram_cache_comparisons_identical": 16,
+  "build_memory_bytes": {
+    "EWRAM": 249708,
+    "IWRAM": 30428,
+    "ROM_linked": 17056416
+  },
+  "base_memory_bytes": {
+    "EWRAM": 249708,
+    "IWRAM": 30428,
+    "ROM_linked": 17017780
+  },
+  "delivery_excludes": [
+    "ROM",
+    "save",
+    "state",
+    "ELF",
+    "entry harness",
+    "GitHub Actions workflows"
+  ]
+}

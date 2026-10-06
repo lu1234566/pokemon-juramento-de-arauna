@@ -1,4 +1,5 @@
 #include "global.h"
+#include "arauna_border_visuals.h"
 #include "berry.h"
 #include "bike.h"
 #include "field_camera.h"
@@ -225,7 +226,7 @@ void DrawDoorMetatileAt(int x, int y, u16 *tiles)
 
 static void DrawMetatileAt(const struct MapLayout *mapLayout, u16 offset, int x, int y)
 {
-    u16 metatileId = MapGridGetMetatileIdAt(x, y);
+    u16 metatileId = AraunaBorderVisualMetatile(mapLayout, x, y, MapGridGetMetatileIdAt(x, y));
     const u16 *metatiles;
 
     if (metatileId > NUM_METATILES_TOTAL)
@@ -421,12 +422,18 @@ void CameraUpdate(void)
 
     if (deltaX != 0 || deltaY != 0)
     {
-        CameraMove(deltaX, deltaY);
+        const struct MapLayout *previousLayout = gMapHeader.mapLayout;
+        bool8 changedMap = CameraMove(deltaX, deltaY);
         UpdateObjectEventsForCameraUpdate(deltaX, deltaY);
         RotatingGatePuzzleCameraUpdate(deltaX, deltaY);
         SetBerryTreesSeen();
         AddCameraTileOffset(&sFieldCameraOffset, deltaX * 2, deltaY * 2);
-        RedrawMapSlicesForCameraUpdate(&sFieldCameraOffset, deltaX * 2, deltaY * 2);
+        // A connection retains tilemap entries drawn with the old banks. When
+        // the primary bank or the draw-only aliases change, rebuild them all.
+        if (changedMap && AraunaConnectionNeedsFullReload(previousLayout, gMapHeader.mapLayout))
+            DrawWholeMapView();
+        else
+            RedrawMapSlicesForCameraUpdate(&sFieldCameraOffset, deltaX * 2, deltaY * 2);
     }
 
     AddCameraPixelOffset(&sFieldCameraOffset, movementSpeedX, movementSpeedY);
