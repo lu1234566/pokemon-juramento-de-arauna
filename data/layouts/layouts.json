@@ -7200,6 +7200,76 @@
       "secondary_tileset": "gTileset_AraunaTorreTopo",
       "border_filepath": "data/layouts/AraunaTorre_Top/border.bin",
       "blockdata_filepath": "data/layouts/AraunaTorre_TopClean/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_CAMPANHA_V1_INSIDE_OF_TRUCK",
+      "name": "AraunaCampanhaV1_InsideOfTruck_Layout",
+      "width": 5,
+      "height": 5,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_AraunaCargaV1",
+      "border_filepath": "data/layouts/AraunaCampanhaV1_InsideOfTruck/border.bin",
+      "blockdata_filepath": "data/layouts/AraunaCampanhaV1_InsideOfTruck/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_CAMPANHA_V1_ROUTE104_MR_BRINEYS_HOUSE",
+      "name": "AraunaCampanhaV1_Route104_MrBrineysHouse_Layout",
+      "width": 12,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaBrineyV1",
+      "border_filepath": "data/layouts/AraunaCampanhaV1_Route104_MrBrineysHouse/border.bin",
+      "blockdata_filepath": "data/layouts/AraunaCampanhaV1_Route104_MrBrineysHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_CAMPANHA_V1_ROUTE104_PRETTY_PETAL_FLOWER_SHOP",
+      "name": "AraunaCampanhaV1_Route104_PrettyPetalFlowerShop_Layout",
+      "width": 15,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaFloresV1",
+      "border_filepath": "data/layouts/AraunaCampanhaV1_Route104_PrettyPetalFlowerShop/border.bin",
+      "blockdata_filepath": "data/layouts/AraunaCampanhaV1_Route104_PrettyPetalFlowerShop/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_CAMPANHA_V1_ROUTE117_POKEMON_DAY_CARE",
+      "name": "AraunaCampanhaV1_Route117_PokemonDayCare_Layout",
+      "width": 12,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaDayCareV1",
+      "border_filepath": "data/layouts/AraunaCampanhaV1_Route117_PokemonDayCare/border.bin",
+      "blockdata_filepath": "data/layouts/AraunaCampanhaV1_Route117_PokemonDayCare/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_CAMPANHA_V1_ROUTE119_HOUSE",
+      "name": "AraunaCampanhaV1_Route119_House_Layout",
+      "width": 10,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaAbrigoChuvaV1",
+      "border_filepath": "data/layouts/AraunaCampanhaV1_Route119_House/border.bin",
+      "blockdata_filepath": "data/layouts/AraunaCampanhaV1_Route119_House/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_CAMPANHA_V1_ROUTE119_WEATHER_INSTITUTE_1_F",
+      "name": "AraunaCampanhaV1_Route119_WeatherInstitute_1F_Layout",
+      "width": 20,
+      "height": 13,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaInstitutoClimaV1",
+      "border_filepath": "data/layouts/AraunaCampanhaV1_Route119_WeatherInstitute_1F/border.bin",
+      "blockdata_filepath": "data/layouts/AraunaCampanhaV1_Route119_WeatherInstitute_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_CAMPANHA_V1_ROUTE119_WEATHER_INSTITUTE_2_F",
+      "name": "AraunaCampanhaV1_Route119_WeatherInstitute_2F_Layout",
+      "width": 20,
+      "height": 11,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_AraunaInstitutoClimaV1",
+      "border_filepath": "data/layouts/AraunaCampanhaV1_Route119_WeatherInstitute_2F/border.bin",
+      "blockdata_filepath": "data/layouts/AraunaCampanhaV1_Route119_WeatherInstitute_2F/map.bin"
     }
   ]
 }

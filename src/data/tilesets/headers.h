@@ -2735,3 +2735,66 @@ const struct Tileset gTileset_AraunaRoute118BorderV1 =
     .callback = InitTilesetAnim_Mauville,
 };
 // ARAUNA_BORDER_VISUALS_END
+
+// CAMPANHA_INTERIORES_V1_BEGIN
+const struct Tileset gTileset_AraunaCargaV1 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaCargaV1,
+    .palettes = gTilesetPalettes_AraunaCargaV1,
+    .metatiles = gMetatiles_AraunaCargaV1,
+    .metatileAttributes = gMetatileAttributes_AraunaCargaV1,
+    .callback = NULL,
+};
+const struct Tileset gTileset_AraunaBrineyV1 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaBrineyV1,
+    .palettes = gTilesetPalettes_AraunaBrineyV1,
+    .metatiles = gMetatiles_AraunaBrineyV1,
+    .metatileAttributes = gMetatileAttributes_AraunaBrineyV1,
+    .callback = NULL,
+};
+const struct Tileset gTileset_AraunaFloresV1 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaFloresV1,
+    .palettes = gTilesetPalettes_AraunaFloresV1,
+    .metatiles = gMetatiles_AraunaFloresV1,
+    .metatileAttributes = gMetatileAttributes_AraunaFloresV1,
+    .callback = NULL,
+};
+const struct Tileset gTileset_AraunaDayCareV1 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaDayCareV1,
+    .palettes = gTilesetPalettes_AraunaDayCareV1,
+    .metatiles = gMetatiles_AraunaDayCareV1,
+    .metatileAttributes = gMetatileAttributes_AraunaDayCareV1,
+    .callback = NULL,
+};
+const struct Tileset gTileset_AraunaAbrigoChuvaV1 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaAbrigoChuvaV1,
+    .palettes = gTilesetPalettes_AraunaAbrigoChuvaV1,
+    .metatiles = gMetatiles_AraunaAbrigoChuvaV1,
+    .metatileAttributes = gMetatileAttributes_AraunaAbrigoChuvaV1,
+    .callback = NULL,
+};
+const struct Tileset gTileset_AraunaInstitutoClimaV1 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaInstitutoClimaV1,
+    .palettes = gTilesetPalettes_AraunaInstitutoClimaV1,
+    .metatiles = gMetatiles_AraunaInstitutoClimaV1,
+    .metatileAttributes = gMetatileAttributes_AraunaInstitutoClimaV1,
+    .callback = NULL,
+};
+// CAMPANHA_INTERIORES_V1_END

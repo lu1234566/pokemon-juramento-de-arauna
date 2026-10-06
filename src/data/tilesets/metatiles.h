@@ -793,3 +793,18 @@ const u16 gMetatileAttributes_AraunaRoute119BorderV1[] = INCBIN_U16("data/tilese
 const u16 gMetatiles_AraunaRoute118BorderV1[] = INCBIN_U16("data/tilesets/secondary/arauna_route118_border_v1/metatiles.bin");
 const u16 gMetatileAttributes_AraunaRoute118BorderV1[] = INCBIN_U16("data/tilesets/secondary/arauna_route118_border_v1/metatile_attributes.bin");
 // ARAUNA_BORDER_VISUALS_END
+
+// CAMPANHA_INTERIORES_V1_BEGIN
+const u16 gMetatiles_AraunaCargaV1[] = INCBIN_U16("data/tilesets/secondary/arauna_campanha_carga_v1/metatiles.bin");
+const u16 gMetatileAttributes_AraunaCargaV1[] = INCBIN_U16("data/tilesets/secondary/arauna_campanha_carga_v1/metatile_attributes.bin");
+const u16 gMetatiles_AraunaBrineyV1[] = INCBIN_U16("data/tilesets/secondary/arauna_campanha_briney_v1/metatiles.bin");
+const u16 gMetatileAttributes_AraunaBrineyV1[] = INCBIN_U16("data/tilesets/secondary/arauna_campanha_briney_v1/metatile_attributes.bin");
+const u16 gMetatiles_AraunaFloresV1[] = INCBIN_U16("data/tilesets/secondary/arauna_campanha_flores_v1/metatiles.bin");
+const u16 gMetatileAttributes_AraunaFloresV1[] = INCBIN_U16("data/tilesets/secondary/arauna_campanha_flores_v1/metatile_attributes.bin");
+const u16 gMetatiles_AraunaDayCareV1[] = INCBIN_U16("data/tilesets/secondary/arauna_campanha_daycare_v1/metatiles.bin");
+const u16 gMetatileAttributes_AraunaDayCareV1[] = INCBIN_U16("data/tilesets/secondary/arauna_campanha_daycare_v1/metatile_attributes.bin");
+const u16 gMetatiles_AraunaAbrigoChuvaV1[] = INCBIN_U16("data/tilesets/secondary/arauna_campanha_abrigo_v1/metatiles.bin");
+const u16 gMetatileAttributes_AraunaAbrigoChuvaV1[] = INCBIN_U16("data/tilesets/secondary/arauna_campanha_abrigo_v1/metatile_attributes.bin");
+const u16 gMetatiles_AraunaInstitutoClimaV1[] = INCBIN_U16("data/tilesets/secondary/arauna_campanha_clima_v1/metatiles.bin");
+const u16 gMetatileAttributes_AraunaInstitutoClimaV1[] = INCBIN_U16("data/tilesets/secondary/arauna_campanha_clima_v1/metatile_attributes.bin");
+// CAMPANHA_INTERIORES_V1_END

@@ -1,0 +1,122 @@
+{
+  "status": "PASS",
+  "base_commit": "258195026b8e5d1a43bfb81fdf1480c02000c4b2",
+  "maps": {
+    "InsideOfTruck": {
+      "cells": 25,
+      "changed_visual_cells": 25,
+      "grid_border_identical": true,
+      "events_scripts_weather_identical": true,
+      "behavior_collision_elevation_identical": true,
+      "warps": 3,
+      "objects": 3
+    },
+    "Route104_MrBrineysHouse": {
+      "cells": 108,
+      "changed_visual_cells": 66,
+      "grid_border_identical": true,
+      "events_scripts_weather_identical": true,
+      "behavior_collision_elevation_identical": true,
+      "warps": 2,
+      "objects": 2
+    },
+    "Route104_PrettyPetalFlowerShop": {
+      "cells": 135,
+      "changed_visual_cells": 133,
+      "grid_border_identical": true,
+      "events_scripts_weather_identical": true,
+      "behavior_collision_elevation_identical": true,
+      "warps": 2,
+      "objects": 3
+    },
+    "Route117_PokemonDayCare": {
+      "cells": 108,
+      "changed_visual_cells": 107,
+      "grid_border_identical": true,
+      "events_scripts_weather_identical": true,
+      "behavior_collision_elevation_identical": true,
+      "warps": 2,
+      "objects": 1
+    },
+    "Route119_House": {
+      "cells": 90,
+      "changed_visual_cells": 86,
+      "grid_border_identical": true,
+      "events_scripts_weather_identical": true,
+      "behavior_collision_elevation_identical": true,
+      "warps": 2,
+      "objects": 7
+    },
+    "Route119_WeatherInstitute_1F": {
+      "cells": 260,
+      "changed_visual_cells": 241,
+      "grid_border_identical": true,
+      "events_scripts_weather_identical": true,
+      "behavior_collision_elevation_identical": true,
+      "warps": 3,
+      "objects": 5
+    },
+    "Route119_WeatherInstitute_2F": {
+      "cells": 220,
+      "changed_visual_cells": 209,
+      "grid_border_identical": true,
+      "events_scripts_weather_identical": true,
+      "behavior_collision_elevation_identical": true,
+      "warps": 1,
+      "objects": 8
+    }
+  },
+  "banks": {
+    "carga": {
+      "4bpp_roundtrip": true,
+      "tiles": 512,
+      "metatiles": 38,
+      "max_palette": 12,
+      "attributes_identical": true,
+      "sha256_4bpp": "46d556bca7faf0c43578ae7ad60e0d7be582e8cf2a811428598bb640aa3bc6c0"
+    },
+    "briney": {
+      "4bpp_roundtrip": true,
+      "tiles": 512,
+      "metatiles": 512,
+      "max_palette": 12,
+      "attributes_identical": true,
+      "sha256_4bpp": "19473a547c87b8380fec9486aedcf47c5a0c1ddaf074fc6c265ca57a24e65a9a"
+    },
+    "flores": {
+      "4bpp_roundtrip": true,
+      "tiles": 512,
+      "metatiles": 72,
+      "max_palette": 12,
+      "attributes_identical": true,
+      "sha256_4bpp": "2cf25822f84292b798bdc7168cebfeef33d04b5e5acff5779de775cca2a9c0a3"
+    },
+    "daycare": {
+      "4bpp_roundtrip": true,
+      "tiles": 512,
+      "metatiles": 68,
+      "max_palette": 12,
+      "attributes_identical": true,
+      "sha256_4bpp": "2f58b81956950f1ad6ed4903ba8feb00877270961df143b836afb8ef34d7d728"
+    },
+    "abrigo": {
+      "4bpp_roundtrip": true,
+      "tiles": 512,
+      "metatiles": 512,
+      "max_palette": 12,
+      "attributes_identical": true,
+      "sha256_4bpp": "ed019797d5f0a6dc02b3ddef53c08903f7829faaf7be4e8f36e667d16bf411fb"
+    },
+    "clima": {
+      "4bpp_roundtrip": true,
+      "tiles": 512,
+      "metatiles": 158,
+      "max_palette": 12,
+      "attributes_identical": true,
+      "sha256_4bpp": "6d05079c778202d0e52c33f1f4c5aee5126f6b723e75070a1f4575c88c75537e"
+    }
+  },
+  "unchanged_protected_files": 8053,
+  "truck_runtime_door_ids_preserved": true,
+  "cells_checked": 946
+}

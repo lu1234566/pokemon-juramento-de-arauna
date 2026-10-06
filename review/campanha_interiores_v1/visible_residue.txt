@@ -1,0 +1,2 @@
+Rendered visible-residue audit: 0 owned critical; 0 global speaker/PT candidates; 0 global legacy-place candidates.
+NOTE: audit_visible_residue.py is a compatibility wrapper. English text is not residue; use check_arauna_static.sh for the official rendered composition.

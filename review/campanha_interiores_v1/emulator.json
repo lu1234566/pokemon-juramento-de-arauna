@@ -1,0 +1,226 @@
+{
+  "status": "PASS",
+  "engine": "mGBA 0.10.2",
+  "rom_on_disk_unchanged": true,
+  "native_runs": 16,
+  "native_ram_cache_comparisons_identical": 10,
+  "cases": [
+    {
+      "map": "InsideOfTruck",
+      "gender": 0,
+      "entry_coordinates": [
+        2,
+        2
+      ],
+      "log": "before group=25 map=40 x=2 y=2\nafter group=0 map=9 x=5 y=12\nnatural_truck=1 gender=0 temporary_entry_restored=0 illegal_opcodes=0\n",
+      "rom_sha256": "d0ff4b5526858811f32f49412d9442e394ee3e914e2801f029adf6ba3c3d43e1",
+      "natural_truck_sequence": true,
+      "temporary_entry_restored_before_capture": false
+    },
+    {
+      "map": "InsideOfTruck",
+      "gender": 1,
+      "entry_coordinates": [
+        2,
+        2
+      ],
+      "log": "before group=25 map=40 x=2 y=2\nafter group=0 map=9 x=23 y=15\nnatural_truck=1 gender=1 temporary_entry_restored=0 illegal_opcodes=0\n",
+      "rom_sha256": "d0ff4b5526858811f32f49412d9442e394ee3e914e2801f029adf6ba3c3d43e1",
+      "natural_truck_sequence": true,
+      "temporary_entry_restored_before_capture": false
+    },
+    {
+      "map": "Route104_MrBrineysHouse",
+      "gender": 0,
+      "entry_coordinates": [
+        5,
+        4
+      ],
+      "log": "before group=17 map=0 x=5 y=4\nnatural_truck=0 gender=0 temporary_entry_restored=1 illegal_opcodes=0\n",
+      "rom_sha256": "d0ff4b5526858811f32f49412d9442e394ee3e914e2801f029adf6ba3c3d43e1",
+      "natural_truck_sequence": false,
+      "temporary_entry_restored_before_capture": true
+    },
+    {
+      "map": "Route104_PrettyPetalFlowerShop",
+      "gender": 0,
+      "entry_coordinates": [
+        7,
+        4
+      ],
+      "log": "before group=17 map=1 x=7 y=4\nnatural_truck=0 gender=0 temporary_entry_restored=1 illegal_opcodes=0\n",
+      "rom_sha256": "d0ff4b5526858811f32f49412d9442e394ee3e914e2801f029adf6ba3c3d43e1",
+      "natural_truck_sequence": false,
+      "temporary_entry_restored_before_capture": true
+    },
+    {
+      "map": "Route117_PokemonDayCare",
+      "gender": 0,
+      "entry_coordinates": [
+        5,
+        4
+      ],
+      "log": "before group=22 map=0 x=5 y=4\nnatural_truck=0 gender=0 temporary_entry_restored=1 illegal_opcodes=0\n",
+      "rom_sha256": "d0ff4b5526858811f32f49412d9442e394ee3e914e2801f029adf6ba3c3d43e1",
+      "natural_truck_sequence": false,
+      "temporary_entry_restored_before_capture": true
+    },
+    {
+      "map": "Route119_House",
+      "gender": 0,
+      "entry_coordinates": [
+        4,
+        4
+      ],
+      "log": "before group=32 map=2 x=4 y=4\nnatural_truck=0 gender=0 temporary_entry_restored=1 illegal_opcodes=0\n",
+      "rom_sha256": "d0ff4b5526858811f32f49412d9442e394ee3e914e2801f029adf6ba3c3d43e1",
+      "natural_truck_sequence": false,
+      "temporary_entry_restored_before_capture": true
+    },
+    {
+      "map": "Route119_WeatherInstitute_1F",
+      "gender": 0,
+      "entry_coordinates": [
+        9,
+        6
+      ],
+      "log": "before group=32 map=0 x=9 y=6\nnatural_truck=0 gender=0 temporary_entry_restored=1 illegal_opcodes=0\n",
+      "rom_sha256": "d0ff4b5526858811f32f49412d9442e394ee3e914e2801f029adf6ba3c3d43e1",
+      "natural_truck_sequence": false,
+      "temporary_entry_restored_before_capture": true
+    },
+    {
+      "map": "Route119_WeatherInstitute_2F",
+      "gender": 0,
+      "entry_coordinates": [
+        10,
+        5
+      ],
+      "log": "before group=32 map=1 x=10 y=5\nnatural_truck=0 gender=0 temporary_entry_restored=1 illegal_opcodes=0\n",
+      "rom_sha256": "d0ff4b5526858811f32f49412d9442e394ee3e914e2801f029adf6ba3c3d43e1",
+      "natural_truck_sequence": false,
+      "temporary_entry_restored_before_capture": true
+    }
+  ],
+  "base_cases": [
+    {
+      "map": "InsideOfTruck",
+      "gender": 0,
+      "entry_coordinates": [
+        2,
+        2
+      ],
+      "log": "before group=25 map=40 x=2 y=2\nafter group=0 map=9 x=5 y=12\nnatural_truck=1 gender=0 temporary_entry_restored=0 illegal_opcodes=0\n",
+      "rom_sha256": "f05ad2887a2343dad1d1bb773f1eec2b8078ae54f7f6a3b4c763a992e40d5afd",
+      "natural_truck_sequence": true,
+      "temporary_entry_restored_before_capture": false
+    },
+    {
+      "map": "InsideOfTruck",
+      "gender": 1,
+      "entry_coordinates": [
+        2,
+        2
+      ],
+      "log": "before group=25 map=40 x=2 y=2\nafter group=0 map=9 x=23 y=15\nnatural_truck=1 gender=1 temporary_entry_restored=0 illegal_opcodes=0\n",
+      "rom_sha256": "f05ad2887a2343dad1d1bb773f1eec2b8078ae54f7f6a3b4c763a992e40d5afd",
+      "natural_truck_sequence": true,
+      "temporary_entry_restored_before_capture": false
+    },
+    {
+      "map": "Route104_MrBrineysHouse",
+      "gender": 0,
+      "entry_coordinates": [
+        5,
+        4
+      ],
+      "log": "before group=17 map=0 x=5 y=4\nnatural_truck=0 gender=0 temporary_entry_restored=1 illegal_opcodes=0\n",
+      "rom_sha256": "f05ad2887a2343dad1d1bb773f1eec2b8078ae54f7f6a3b4c763a992e40d5afd",
+      "natural_truck_sequence": false,
+      "temporary_entry_restored_before_capture": true
+    },
+    {
+      "map": "Route104_PrettyPetalFlowerShop",
+      "gender": 0,
+      "entry_coordinates": [
+        7,
+        4
+      ],
+      "log": "before group=17 map=1 x=7 y=4\nnatural_truck=0 gender=0 temporary_entry_restored=1 illegal_opcodes=0\n",
+      "rom_sha256": "f05ad2887a2343dad1d1bb773f1eec2b8078ae54f7f6a3b4c763a992e40d5afd",
+      "natural_truck_sequence": false,
+      "temporary_entry_restored_before_capture": true
+    },
+    {
+      "map": "Route117_PokemonDayCare",
+      "gender": 0,
+      "entry_coordinates": [
+        5,
+        4
+      ],
+      "log": "before group=22 map=0 x=5 y=4\nnatural_truck=0 gender=0 temporary_entry_restored=1 illegal_opcodes=0\n",
+      "rom_sha256": "f05ad2887a2343dad1d1bb773f1eec2b8078ae54f7f6a3b4c763a992e40d5afd",
+      "natural_truck_sequence": false,
+      "temporary_entry_restored_before_capture": true
+    },
+    {
+      "map": "Route119_House",
+      "gender": 0,
+      "entry_coordinates": [
+        4,
+        4
+      ],
+      "log": "before group=32 map=2 x=4 y=4\nnatural_truck=0 gender=0 temporary_entry_restored=1 illegal_opcodes=0\n",
+      "rom_sha256": "f05ad2887a2343dad1d1bb773f1eec2b8078ae54f7f6a3b4c763a992e40d5afd",
+      "natural_truck_sequence": false,
+      "temporary_entry_restored_before_capture": true
+    },
+    {
+      "map": "Route119_WeatherInstitute_1F",
+      "gender": 0,
+      "entry_coordinates": [
+        9,
+        6
+      ],
+      "log": "before group=32 map=0 x=9 y=6\nnatural_truck=0 gender=0 temporary_entry_restored=1 illegal_opcodes=0\n",
+      "rom_sha256": "f05ad2887a2343dad1d1bb773f1eec2b8078ae54f7f6a3b4c763a992e40d5afd",
+      "natural_truck_sequence": false,
+      "temporary_entry_restored_before_capture": true
+    },
+    {
+      "map": "Route119_WeatherInstitute_2F",
+      "gender": 0,
+      "entry_coordinates": [
+        10,
+        5
+      ],
+      "log": "before group=32 map=1 x=10 y=5\nnatural_truck=0 gender=0 temporary_entry_restored=1 illegal_opcodes=0\n",
+      "rom_sha256": "f05ad2887a2343dad1d1bb773f1eec2b8078ae54f7f6a3b4c763a992e40d5afd",
+      "natural_truck_sequence": false,
+      "temporary_entry_restored_before_capture": true
+    }
+  ],
+  "cache_comparisons": [
+    "InsideOfTruck-0-before-cache.bin",
+    "InsideOfTruck-0-after-cache.bin",
+    "InsideOfTruck-1-before-cache.bin",
+    "InsideOfTruck-1-after-cache.bin",
+    "Route104_MrBrineysHouse-0-before-cache.bin",
+    "Route104_PrettyPetalFlowerShop-0-before-cache.bin",
+    "Route117_PokemonDayCare-0-before-cache.bin",
+    "Route119_House-0-before-cache.bin",
+    "Route119_WeatherInstitute_1F-0-before-cache.bin",
+    "Route119_WeatherInstitute_2F-0-before-cache.bin"
+  ],
+  "boot_frames": 600,
+  "room_frames": 900,
+  "truck_closed_frames": 600,
+  "truck_open_frames": 1100,
+  "truck_exit_keys": 16,
+  "truck_exit_hold_frames": 60,
+  "truck_exit_settle_frames": 300,
+  "gender_verified_in_ram": true,
+  "notes": "CB2_NewGame invoked after boot; native truck sequence and dynamic exit remain unpatched. Temporary entry overrides for the six rooms restored before capture; no saves or harness are delivered.",
+  "player_name_initialized": "LUCAS, EOS terminated; native default options",
+  "main_callback_state_reset": true
+}
