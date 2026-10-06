@@ -8,9 +8,8 @@ import json,re,os,struct,sys,collections,glob
 from pathlib import Path
 from PIL import Image
 R=Path(os.environ.get("ARAUNA_REPO",".")).resolve(); os.chdir(R)
-sys.path.insert(0,os.environ["PREP"])
-import validar_integracao as V
-from fieldmap_connection_cache_v2 import rectangle
+import bancos_nativos as V
+from connection_cache import rectangle
 from render_native_map import Renderer as RGBR
 APLICAR="--aplicar" in sys.argv
 hdr=open("src/data/tilesets/headers.h").read(); met=open("src/data/tilesets/metatiles.h").read()
@@ -108,22 +107,8 @@ def get(mid):
     return l,R2[k],G[m["layout"]]
 def sig(r,mid):
     k=(str(r.primary),str(r.secondary),mid)
-    if k not in SIG: SIG[k]=V.normalized(r,mid)
+    if k not in SIG: SIG[k]=V.geometry(r,mid)
     return SIG[k]
-celulas=collections.defaultdict(lambda:{"ruim":False,"rec":set()})  # (layoutB,x,y) -> receptores
-for mid,m in maps.items():
-    for c in m.get("connections") or []:
-        if c["direction"] in ("dive","emerge"): continue
-        cur,cr,_=get(mid); oth,pr,grid=get(c["map"])
-        if cur["secondary_tileset"].startswith("gTileset_BattleFrontier"): continue
-        for x,y in rectangle(cur["width"],cur["height"],oth["width"],oth["height"],c["offset"],c["direction"]):
-            t=grid[y*oth["width"]+x]&1023
-            try: ok=sig(cr,t)==sig(pr,t) and V.bank_words(cr,t,True)==V.bank_words(pr,t,True)
-            except ValueError: ok=False
-            k=(oth["id"],x,y); celulas[k]["rec"].add((cur["primary_tileset"],cur["secondary_tileset"]))
-            VISTO[cur["secondary_tileset"]].add(t)
-            if not ok: celulas[k]["ruim"]=True
-ruins={k:v for k,v in celulas.items() if v["ruim"]}
 RGB={}
 def rgb(par,mid):
     if par not in RGB: RGB[par]=RGBR(V.resolve_bank(R,par[0]),V.resolve_bank(R,par[1]))
@@ -136,6 +121,25 @@ def ja_bom(par_rec,par_dono,mid):
     a=rgb(par_rec,mid); b=rgb(par_dono,mid)
     if a is None or b is None or a[1]!=b[1]: return False
     return max(abs(x-y) for x,y in zip(a[0],b[0]))<=48
+celulas=collections.defaultdict(lambda:{"ruim":False,"rec":set()})  # (layoutB,x,y) -> receptores
+for mid,m in maps.items():
+    for c in m.get("connections") or []:
+        if c["direction"] in ("dive","emerge"): continue
+        cur,cr,_=get(mid); oth,pr,grid=get(c["map"])
+        if cur["secondary_tileset"].startswith("gTileset_BattleFrontier"): continue
+        for x,y in rectangle(cur["width"],cur["height"],oth["width"],oth["height"],c["offset"],c["direction"]):
+            t=grid[y*oth["width"]+x]&1023
+            try:
+                ok=sig(cr,t)==sig(pr,t) and V.bank_words(cr,t,True)==V.bank_words(pr,t,True)
+                # A prior transplant may merge very close colors. Apply the
+                # same biome-tint tolerance used when cloning receptors, so
+                # a second invocation does not consume another unused ID.
+                if not ok: ok=ja_bom((cur['primary_tileset'],cur['secondary_tileset']),(oth['primary_tileset'],oth['secondary_tileset']),t)
+            except ValueError: ok=False
+            k=(oth["id"],x,y); celulas[k]["rec"].add((cur["primary_tileset"],cur["secondary_tileset"]))
+            VISTO[cur["secondary_tileset"]].add(t)
+            if not ok: celulas[k]["ruim"]=True
+ruins={k:v for k,v in celulas.items() if v["ruim"]}
 print("celulas a corrigir:",len(ruins))
 # --- agrupa por (layoutB, id original, conjunto de receptores)
 grupos=collections.defaultdict(list)
@@ -238,6 +242,8 @@ def aplica_grupo(lid,t,recs,cels,secs,nid,lb,secB,primB):
     for x,y in cels:
         i=y*lb["width"]+x; b=struct.unpack_from("<H",g,2*i)[0]; struct.pack_into("<H",g,2*i,(b&0xFC00)|nid)
 for (lid,t,recs),cels in sorted(grupos.items()):
+    filtro=next((a.split('=',1)[1] for a in sys.argv if a.startswith('--receptor=')),None)
+    if filtro and not any(rs==filtro for rp,rs in recs): continue
     lb=L[lid]; secB=lb["secondary_tileset"]; primB=lb["primary_tileset"]
     secs=[secB]+sorted({r[1] for r in recs})
     nid=livre_id(secs)

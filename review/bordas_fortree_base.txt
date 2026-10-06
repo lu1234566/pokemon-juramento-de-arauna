@@ -1,0 +1,7 @@
+celulas a corrigir: 56
+grupos (id novo cada): 38
+grupos corrigidos: 1 pulados: 3 tiles com cor aproximada: 0
+   pulado ('LAYOUT_ARAUNA_ROUTE118_RIVER_CROSSING_V1', '0x3b1', 'sem tile livre em gTileset_AraunaMataMeioV3')
+   pulado ('LAYOUT_ARAUNA_ROUTE118_RIVER_CROSSING_V1', '0x3ff', 'sem tile livre em gTileset_AraunaMataMeioV3')
+   pulado ('LAYOUT_ARAUNA_ROUTE118_RIVER_CROSSING_V1', '0x3ff', 'sem tile livre em gTileset_AraunaMataMeioV3')
+bancos alterados: ['Arauna118MataUmida', 'AraunaMataMeioV3']

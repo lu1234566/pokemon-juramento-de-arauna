@@ -783,3 +783,6 @@ const u16 gMetatileAttributes_AraunaMissoesCeuGameCorner1FV1[] = INCBIN_U16("dat
 const u16 gMetatiles_AraunaMissoesCeuGameCornerB1FV1[] = INCBIN_U16("data/tilesets/secondary/arauna_missoes_ceu_game_corner_b1f_v1/metatiles.bin");
 
 const u16 gMetatileAttributes_AraunaMissoesCeuGameCornerB1FV1[] = INCBIN_U16("data/tilesets/secondary/arauna_missoes_ceu_game_corner_b1f_v1/metatile_attributes.bin");
+
+const u16 gMetatiles_AraunaMataEsperaV1[] = INCBIN_U16("data/tilesets/secondary/arauna_mata_espera_v1/metatiles.bin");
+const u16 gMetatileAttributes_AraunaMataEsperaV1[] = INCBIN_U16("data/tilesets/secondary/arauna_mata_espera_v1/metatile_attributes.bin");

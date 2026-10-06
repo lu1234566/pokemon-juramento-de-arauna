@@ -1,0 +1,189 @@
+[
+  {
+    "name": "mata_raizes",
+    "start": [
+      24,
+      11,
+      12,
+      24
+    ],
+    "keys": 0,
+    "result": "RAM save=0200d990 location=24,11 warp=ff dest=12,24 player=12,24 frames=900"
+  },
+  {
+    "name": "mata_arvore_ancestral",
+    "start": [
+      24,
+      11,
+      8,
+      8
+    ],
+    "keys": 0,
+    "result": "RAM save=0200d990 location=24,11 warp=ff dest=8,8 player=8,8 frames=900"
+  },
+  {
+    "name": "mata_clareira",
+    "start": [
+      24,
+      11,
+      27,
+      16
+    ],
+    "keys": 0,
+    "result": "RAM save=0200d990 location=24,11 warp=ff dest=27,16 player=27,16 frames=900"
+  },
+  {
+    "name": "mata_cena_esquerda",
+    "start": [
+      24,
+      11,
+      26,
+      24
+    ],
+    "keys": 64,
+    "result": "RAM save=0200d990 location=24,11 warp=ff dest=26,24 player=26,23 frames=1292"
+  },
+  {
+    "name": "mata_cena_direita",
+    "start": [
+      24,
+      11,
+      27,
+      24
+    ],
+    "keys": 64,
+    "result": "RAM save=0200d990 location=24,11 warp=ff dest=27,24 player=27,23 frames=1292"
+  },
+  {
+    "name": "warp_norte_0",
+    "start": [
+      24,
+      11,
+      14,
+      6
+    ],
+    "keys": 64,
+    "result": "RAM save=0200d98c location=0,19 warp=02 dest=65535,65535 player=10,29 frames=1152"
+  },
+  {
+    "name": "warp_norte_1",
+    "start": [
+      24,
+      11,
+      15,
+      6
+    ],
+    "keys": 64,
+    "result": "RAM save=0200d98c location=0,19 warp=03 dest=65535,65535 player=11,29 frames=1152"
+  },
+  {
+    "name": "warp_sul_2",
+    "start": [
+      24,
+      11,
+      16,
+      37
+    ],
+    "keys": 128,
+    "result": "RAM save=0200d958 location=0,19 warp=04 dest=65535,65535 player=10,39 frames=1152"
+  },
+  {
+    "name": "warp_sul_3",
+    "start": [
+      24,
+      11,
+      17,
+      37
+    ],
+    "keys": 128,
+    "result": "RAM save=0200d92c location=0,19 warp=05 dest=65535,65535 player=11,39 frames=1152"
+  },
+  {
+    "name": "warp_leste_4",
+    "start": [
+      24,
+      11,
+      36,
+      37
+    ],
+    "keys": 128,
+    "result": "RAM save=0200d930 location=0,19 warp=06 dest=65535,65535 player=32,43 frames=1152"
+  },
+  {
+    "name": "warp_leste_5",
+    "start": [
+      24,
+      11,
+      37,
+      37
+    ],
+    "keys": 128,
+    "result": "RAM save=0200d930 location=0,19 warp=07 dest=65535,65535 player=33,43 frames=1152"
+  },
+  {
+    "name": "return_0",
+    "start": [
+      0,
+      19,
+      10,
+      29
+    ],
+    "keys": 128,
+    "result": "RAM save=0200d974 location=24,11 warp=00 dest=65535,65535 player=14,5 frames=1152"
+  },
+  {
+    "name": "return_1",
+    "start": [
+      0,
+      19,
+      11,
+      29
+    ],
+    "keys": 128,
+    "result": "RAM save=0200d974 location=24,11 warp=01 dest=65535,65535 player=15,5 frames=1152"
+  },
+  {
+    "name": "return_2",
+    "start": [
+      0,
+      19,
+      10,
+      39
+    ],
+    "keys": 64,
+    "result": "RAM save=0200d984 location=24,11 warp=02 dest=65535,65535 player=16,38 frames=1152"
+  },
+  {
+    "name": "return_3",
+    "start": [
+      0,
+      19,
+      11,
+      39
+    ],
+    "keys": 64,
+    "result": "RAM save=0200d984 location=24,11 warp=03 dest=65535,65535 player=17,38 frames=1152"
+  },
+  {
+    "name": "return_4",
+    "start": [
+      0,
+      19,
+      32,
+      43
+    ],
+    "keys": 64,
+    "result": "RAM save=0200d920 location=24,11 warp=04 dest=65535,65535 player=36,38 frames=1152"
+  },
+  {
+    "name": "return_5",
+    "start": [
+      0,
+      19,
+      33,
+      43
+    ],
+    "keys": 64,
+    "result": "RAM save=0200d920 location=24,11 warp=05 dest=65535,65535 player=37,38 frames=1152"
+  }
+]

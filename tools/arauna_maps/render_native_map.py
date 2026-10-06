@@ -15,7 +15,7 @@ from pathlib import Path
 from PIL import Image, ImageDraw
 
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 PRIMARY_METATILE_LIMIT = 512
 PRIMARY_TILE_LIMIT = 512
 INDEX_GRAYS = (255, 238, 222, 205, 189, 172, 156, 139,
@@ -30,7 +30,14 @@ def palette(path: Path) -> list[tuple[int, int, int]]:
 
 
 def indexed_tiles(path: Path) -> tuple[Image.Image, int, int]:
-    image = Image.open(path).convert("RGB")
+    native = Image.open(path)
+    if native.mode == "P":
+        if native.width % 8 or native.height % 8 or max(native.getdata()) > 15:
+            raise ValueError(f"invalid native 4bpp tile sheet: {path}")
+        pixels = Image.new("L", native.size)
+        pixels.putdata(list(native.getdata()))
+        return pixels, native.width // 8, native.width * native.height // 64
+    image = native.convert("RGB")
     if image.width % 8 or image.height % 8:
         raise ValueError(f"tile sheet must use an 8px grid: {path}")
     pixels = Image.new("L", image.size)
@@ -57,10 +64,12 @@ def resolve_tileset(symbol: str) -> Path:
     slug = symbol[len(prefix):]
     slug = "".join(("_" + c.lower()) if c.isupper() and i else c.lower()
                    for i, c in enumerate(slug))
-    kind = "primary" if symbol in ("gTileset_General", "gTileset_Building") else "secondary"
-    path = ROOT / "data" / "tilesets" / kind / slug
+    path = ROOT / "data" / "tilesets" / "primary" / slug
     if not path.is_dir():
-        raise FileNotFoundError(f"tileset directory not found for {symbol}: {path}")
+        path = ROOT / "data" / "tilesets" / "secondary" / slug
+    if not path.is_dir():
+        from bancos_nativos import resolve_bank
+        path = resolve_bank(ROOT, symbol)
     return path
 
 

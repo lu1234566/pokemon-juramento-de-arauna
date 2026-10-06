@@ -7100,6 +7100,16 @@
       "secondary_tileset": "gTileset_AraunaMissoesCeuGameCornerB1FV1",
       "border_filepath": "data/layouts/MossdeepCity_GameCorner_B1F_Arauna/border.bin",
       "blockdata_filepath": "data/layouts/MossdeepCity_GameCorner_B1F_Arauna/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_MATA_ESPERA_V1",
+      "name": "PetalburgWoods_AraunaV1_Layout",
+      "width": 48,
+      "height": 44,
+      "primary_tileset": "gTileset_AraunaMataEspera",
+      "secondary_tileset": "gTileset_AraunaMataEsperaV1",
+      "border_filepath": "data/layouts/PetalburgWoods_AraunaV1/border.bin",
+      "blockdata_filepath": "data/layouts/PetalburgWoods_AraunaV1/map.bin"
     }
   ]
 }

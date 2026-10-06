@@ -1,0 +1,17 @@
+{
+  "tileset": "gTileset_AraunaMataMeioV3",
+  "rewritten_entries": 16,
+  "freed_slots": [
+    301,
+    374,
+    385,
+    388,
+    390,
+    412,
+    472,
+    488
+  ],
+  "all_metatile_layers_identical": true,
+  "pinned_primary_slots": [],
+  "applied": true
+}

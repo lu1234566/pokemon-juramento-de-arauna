@@ -1,0 +1,8 @@
+English-only policy: OK (128 approved English renderers in locked order; 106 final transactional overlay files; 37537 visible strings scanned, no Portuguese)
+Arauna canonical visible coverage: OK (16/16 stages; 100%; 128 English renderers; 346 final-gap runtime text blocks covered; 40 final-gap source files transactional).
+move descriptions: OK (381 moves, each with its own text)
+text width: OK (575 script files, nothing past 208px)
+Memory region         Used Size  Region Size  %age Used
+           EWRAM:      249708 B       256 KB     95.26%
+           IWRAM:       30428 B        32 KB     92.86%
+             ROM:    17017780 B        32 MB     50.72%

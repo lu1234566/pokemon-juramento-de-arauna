@@ -1,0 +1,4 @@
+celulas a corrigir: 34
+grupos (id novo cada): 34
+grupos corrigidos: 0 pulados: 0 tiles com cor aproximada: 0
+bancos alterados: []

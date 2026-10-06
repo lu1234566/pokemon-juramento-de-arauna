@@ -5244,3 +5244,24 @@ const u16 gTilesetPalettes_AraunaMissoesCeuGameCornerB1FV1[][16] =
     INCGFX_U16("data/tilesets/secondary/arauna_missoes_ceu_game_corner_b1f_v1/palettes/14.pal", ".gbapal"),
     INCGFX_U16("data/tilesets/secondary/arauna_missoes_ceu_game_corner_b1f_v1/palettes/15.pal", ".gbapal"),
 };
+
+const u32 gTilesetTiles_AraunaMataEsperaV1[] = INCGFX_U32("data/tilesets/secondary/arauna_mata_espera_v1/tiles.png", ".4bpp.lz");
+const u16 gTilesetPalettes_AraunaMataEsperaV1[][16] =
+{
+    INCGFX_U16("data/tilesets/secondary/arauna_mata_espera_v1/palettes/00.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_mata_espera_v1/palettes/01.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_mata_espera_v1/palettes/02.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_mata_espera_v1/palettes/03.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_mata_espera_v1/palettes/04.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_mata_espera_v1/palettes/05.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_mata_espera_v1/palettes/06.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_mata_espera_v1/palettes/07.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_mata_espera_v1/palettes/08.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_mata_espera_v1/palettes/09.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_mata_espera_v1/palettes/10.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_mata_espera_v1/palettes/11.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_mata_espera_v1/palettes/12.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_mata_espera_v1/palettes/13.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_mata_espera_v1/palettes/14.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_mata_espera_v1/palettes/15.pal", ".gbapal"),
+};

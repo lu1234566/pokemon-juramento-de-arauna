@@ -1,0 +1,86 @@
+{
+  "layout": "LAYOUT_ARAUNA_MATA_ESPERA_V1",
+  "dimensions": [
+    48,
+    44
+  ],
+  "new_static_tiles": 229,
+  "secondary_metatiles": 434,
+  "placements": [
+    {
+      "asset": "tree",
+      "x": 2,
+      "y": 0,
+      "size": [
+        5,
+        6
+      ]
+    },
+    {
+      "asset": "tree",
+      "x": 31,
+      "y": 12,
+      "size": [
+        5,
+        6
+      ]
+    },
+    {
+      "asset": "log",
+      "x": 21,
+      "y": 12,
+      "size": [
+        4,
+        2
+      ]
+    },
+    {
+      "asset": "log",
+      "x": 37,
+      "y": 20,
+      "size": [
+        4,
+        2
+      ]
+    },
+    {
+      "asset": "fern",
+      "x": 1,
+      "y": 16,
+      "size": [
+        2,
+        2
+      ]
+    },
+    {
+      "asset": "fern",
+      "x": 21,
+      "y": 14,
+      "size": [
+        2,
+        2
+      ]
+    },
+    {
+      "asset": "root",
+      "x": 11,
+      "y": 24,
+      "size": [
+        3,
+        1
+      ]
+    },
+    {
+      "asset": "root",
+      "x": 15,
+      "y": 9,
+      "size": [
+        3,
+        1
+      ]
+    }
+  ],
+  "changed_visual_cells": 199,
+  "events_unchanged_except_layout": true,
+  "collision_and_elevation_unchanged": true
+}

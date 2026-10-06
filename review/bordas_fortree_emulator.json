@@ -1,0 +1,24 @@
+[
+  {
+    "version": "before",
+    "result": "RAM save=0200d978 location=0,33 warp=ff dest=65535,65535 player=58,0 frames=1152",
+    "start": [
+      0,
+      34,
+      18,
+      138
+    ],
+    "direction": "down"
+  },
+  {
+    "version": "after",
+    "result": "RAM save=0200d978 location=0,33 warp=ff dest=65535,65535 player=58,0 frames=1152",
+    "start": [
+      0,
+      34,
+      18,
+      138
+    ],
+    "direction": "down"
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "pokemon-juramento-de-arauna-en_modern.gba": "faef1066333fef950ab40f64ba635ebda605fb85d6dc926dac54db6df15a8378",
+  "data/maps/PetalburgWoods/scripts.inc": "d27f533a837e61429c87e919d18ca46ebf713e184dbd55afefbd8675622a7d87",
+  "src/data/wild_encounters.json": "19f98eaf8094be7a2a8485546a38285e1988f4929c218e4fcd305d1c98fb9183",
+  "ROM_file_distributed": false,
+  "runtime_fixture_patches_restored_before_input": true,
+  "emulator": "mGBA 0.10.1",
+  "base_commit": "b3fceb65b071b468e21075f11fa311c8a381e910"
+}

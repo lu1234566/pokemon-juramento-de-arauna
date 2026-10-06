@@ -2701,3 +2701,14 @@ const struct Tileset gTileset_AraunaMissoesCeuGameCornerB1FV1 =
     .metatileAttributes = gMetatileAttributes_AraunaMissoesCeuGameCornerB1FV1,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_AraunaMataEsperaV1 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaMataEsperaV1,
+    .palettes = gTilesetPalettes_AraunaMataEsperaV1,
+    .metatiles = gMetatiles_AraunaMataEsperaV1,
+    .metatileAttributes = gMetatileAttributes_AraunaMataEsperaV1,
+    .callback = NULL,
+};

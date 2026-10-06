@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "cells_checked": 2112,
+  "warps": 6,
+  "cut_objects": 2,
+  "story_triggers": 2,
+  "behavior_collision_elevation_identical": true,
+  "interactive_grass_ids_preserved": true,
+  "reachable_cells": {
+    "before_cut_0": 501,
+    "before_cut_1": 501,
+    "before_cut_2": 501,
+    "after_cut_0": 660,
+    "after_cut_1": 660,
+    "after_cut_2": 660
+  },
+  "secondary_metatiles": 434
+}

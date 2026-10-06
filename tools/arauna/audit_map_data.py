@@ -102,7 +102,8 @@ def load():
 def tileset_metatile_counts():
     """How many metatiles each tileset symbol really has, from its own file."""
     headers = (ROOT / "src/data/tilesets/headers.h").read_text()
-    graphics = (ROOT / "src/data/tilesets/graphics.h").read_text()
+    graphics = ((ROOT / "src/data/tilesets/graphics.h").read_text()
+                + (ROOT / "src/data/tilesets/metatiles.h").read_text())
     meta_sym = dict(re.findall(
         r"const struct Tileset (\w+) =\s*\{.*?\.metatiles = (\w+),", headers, re.S))
     sym_file = dict(re.findall(
