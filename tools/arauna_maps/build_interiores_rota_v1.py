@@ -101,7 +101,7 @@ def floor_art(style):
   im=Image.new('L',(16,16),8);d=ImageDraw.Draw(im)
   d.line((1,5,3,4),fill=7);d.line((10,11,12,11),fill=6)
   d.point((6,13),fill=7);d.point((14,3),fill=6)
- elif style in ('ciclovia','safari','tecnica','estacao'):
+ elif style in ('ciclovia','safari','estacao'):
   im=Image.new('L',(16,16),11);d=ImageDraw.Draw(im)
   d.rectangle((0,0,15,15),outline=9)
   d.line((1,1,14,1),fill=13);d.line((1,2,1,14),fill=12)
@@ -149,9 +149,12 @@ def native(kind,size=(16,16),state=0,direction=0):
   d.line((0,4,4,0),fill=11);d.line((3,h-1,w-1,3),fill=11,width=2)
   d.line((0,h-2,w-3,0),fill=9);d.line((w-6,h-1,w-1,h-6),fill=8)
  elif kind=='rail':
-  d.line((3,0,3,15),fill=2,width=2);d.line((12,0,12,15),fill=2,width=2)
-  for y in (3,11):d.line((1,y,14,y),fill=4,width=2)
-  d.line((3,0,3,15),fill=10);d.line((12,0,12,15),fill=10)
+  # Raised opaque rails, with a dark outline and visible crosspieces.
+  d.rectangle((3,0,12,15),fill=3,outline=1)
+  d.line((4,0,4,15),fill=7);d.line((11,0,11,15),fill=2)
+  for y in (3,11):
+   d.rectangle((1,y,14,y+2),fill=4,outline=1)
+   d.line((2,y,13,y),fill=6)
   im=im.rotate(90 if direction else 0)
  elif kind=='rim':
   d.rectangle((0,0,w-1,h-1),fill=3);d.line((0,0,w-1,0),fill=6,width=2)
@@ -350,7 +353,9 @@ class Bank:
   elif self.key=='tunel':
    for mid in (0x268,0x278):self.single(mid,'rockleft')
    for mid in (0x26a,0x27a):self.single(mid,'rockright')
-   for mid in (0x269,0x270,0x272,0x22c,0x22d):self.single(mid,'rockwall')
+   for mid in (0x269,0x270,0x272):self.single(mid,'rockwall')
+   for mid in (0x22c,0x22d):
+    self.put(mid,self.floor,self.floorpal);self.props.add(mid)
    for mid in (0x2b8,0x2c5,0x2c6):self.single(mid,'rockbase')
    for mid in (0x2af,0x2b7,0x2bf,0x2c7):self.single(mid,'boulder')
    self.module_asset(((0x347,),(0x34f,)),'mineentry')
@@ -424,13 +429,20 @@ def register(banks,pd,ps):
   bodies['metatiles.h']+=f'const u16 gMetatiles_{s}[] = INCBIN_U16("{p}/metatiles.bin");\nconst u16 gMetatileAttributes_{s}[] = INCBIN_U16("{p}/metatile_attributes.bin");\n'
   bodies['headers.h']+=f'const struct Tileset gTileset_{s} =\n{{\n    .isCompressed = TRUE,\n    .isSecondary = {"TRUE" if secondary else "FALSE"},\n    .tiles = gTilesetTiles_{s},\n    .palettes = gTilesetPalettes_{s},\n    .metatiles = gMetatiles_{s},\n    .metatileAttributes = gMetatileAttributes_{s},\n    .callback = NULL,\n}};\n'
  for filename,body in bodies.items():
-  p=ROOT/'src/data/tilesets'/filename;text=re.sub(r'\n*// '+MARK+r'_BEGIN\n.*?// '+MARK+r'_END\n','',p.read_text(),flags=re.S)
-  p.write_text(text.rstrip()+'\n\n// '+MARK+'_BEGIN\n'+body+'// '+MARK+'_END\n')
+  p=ROOT/'src/data/tilesets'/filename;text=p.read_text();entry='\n\n// '+MARK+'_BEGIN\n'+body+'// '+MARK+'_END\n'
+  if '// '+MARK+'_BEGIN' in text:text=re.sub(r'\n*// '+MARK+r'_BEGIN\n.*?// '+MARK+r'_END\n',lambda _:entry,text,flags=re.S)
+  else:text=text.rstrip()+entry
+  p.write_text(text)
 
 def main():
  node=json.loads((ROOT/'data/layouts/layouts.json').read_text());ls={l['id']:l for l in node['layouts']};configs={};source={}
  for name,key in MAPS.items():
   m=json.loads((ROOT/'data/maps'/name/'map.json').read_text());l=ls[m['layout']]
+  if key=='tunel':
+   # Mixed ID 0x279: split only walking instances into existing floor 0x303.
+   a=words(ROOT/'data/tilesets/secondary/fallarbor/metatile_attributes.bin');assert a[0x279-512]==a[0x303-512]
+   p=ROOT/l['blockdata_filepath'];g=words(p);g=[(v&~1023)|0x303 if v&1023==0x279 and not v&0xc00 else v for v in g]
+   p.write_bytes(struct.pack('<%dH'%len(g),*g))
   old=dict(l)
   if l['secondary_tileset'].startswith('gTileset_AraunaRota'):
    old['secondary_tileset']='gTileset_'+''.join(part.title() for part in SOURCES[key].split('_'))

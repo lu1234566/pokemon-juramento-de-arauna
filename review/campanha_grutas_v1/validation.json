@@ -1,0 +1,361 @@
+{
+  "status": "PASS",
+  "base_commit": "4439f996326bbe457d8a9eacbf2ae4341befa88b",
+  "new_maps": 13,
+  "V1_regression_maps_checked": 25,
+  "layout_indices_preserved": 737,
+  "protected_files_identical": 15560,
+  "maps": {
+    "SeafloorCavern_Entrance": {
+      "cells": 400,
+      "remapped_ids": 72,
+      "collision_elevation_behavior_layer_identical": true,
+      "opaque_bottom_layer": true,
+      "script_metatile_ids": []
+    },
+    "SeafloorCavern_Room1": {
+      "cells": 420,
+      "remapped_ids": 54,
+      "collision_elevation_behavior_layer_identical": true,
+      "opaque_bottom_layer": true,
+      "script_metatile_ids": []
+    },
+    "SeafloorCavern_Room2": {
+      "cells": 216,
+      "remapped_ids": 57,
+      "collision_elevation_behavior_layer_identical": true,
+      "opaque_bottom_layer": true,
+      "script_metatile_ids": []
+    },
+    "SeafloorCavern_Room3": {
+      "cells": 272,
+      "remapped_ids": 46,
+      "collision_elevation_behavior_layer_identical": true,
+      "opaque_bottom_layer": true,
+      "script_metatile_ids": []
+    },
+    "SeafloorCavern_Room4": {
+      "cells": 342,
+      "remapped_ids": 66,
+      "collision_elevation_behavior_layer_identical": true,
+      "opaque_bottom_layer": true,
+      "script_metatile_ids": []
+    },
+    "SeafloorCavern_Room5": {
+      "cells": 400,
+      "remapped_ids": 81,
+      "collision_elevation_behavior_layer_identical": true,
+      "opaque_bottom_layer": true,
+      "script_metatile_ids": []
+    },
+    "SeafloorCavern_Room6": {
+      "cells": 552,
+      "remapped_ids": 33,
+      "collision_elevation_behavior_layer_identical": true,
+      "opaque_bottom_layer": true,
+      "script_metatile_ids": []
+    },
+    "SeafloorCavern_Room7": {
+      "cells": 575,
+      "remapped_ids": 20,
+      "collision_elevation_behavior_layer_identical": true,
+      "opaque_bottom_layer": true,
+      "script_metatile_ids": []
+    },
+    "SeafloorCavern_Room8": {
+      "cells": 154,
+      "remapped_ids": 37,
+      "collision_elevation_behavior_layer_identical": true,
+      "opaque_bottom_layer": true,
+      "script_metatile_ids": []
+    },
+    "SeafloorCavern_Room9": {
+      "cells": 1242,
+      "remapped_ids": 393,
+      "collision_elevation_behavior_layer_identical": true,
+      "opaque_bottom_layer": true,
+      "script_metatile_ids": []
+    },
+    "VictoryRoad_1F": {
+      "cells": 2070,
+      "remapped_ids": 514,
+      "collision_elevation_behavior_layer_identical": true,
+      "opaque_bottom_layer": true,
+      "script_metatile_ids": []
+    },
+    "VictoryRoad_B1F": {
+      "cells": 1426,
+      "remapped_ids": 261,
+      "collision_elevation_behavior_layer_identical": true,
+      "opaque_bottom_layer": true,
+      "script_metatile_ids": []
+    },
+    "VictoryRoad_B2F": {
+      "cells": 1426,
+      "remapped_ids": 129,
+      "collision_elevation_behavior_layer_identical": true,
+      "opaque_bottom_layer": true,
+      "script_metatile_ids": []
+    },
+    "Route109_SeashoreHouse": {
+      "cells": 150,
+      "remapped_ids": 0,
+      "collision_elevation_behavior_layer_identical": true,
+      "opaque_bottom_layer": true,
+      "script_metatile_ids": []
+    },
+    "Route110_SeasideCyclingRoadNorthEntrance": {
+      "cells": 90,
+      "remapped_ids": 0,
+      "collision_elevation_behavior_layer_identical": true,
+      "opaque_bottom_layer": true,
+      "script_metatile_ids": []
+    },
+    "Route110_SeasideCyclingRoadSouthEntrance": {
+      "cells": 90,
+      "remapped_ids": 0,
+      "collision_elevation_behavior_layer_identical": true,
+      "opaque_bottom_layer": true,
+      "script_metatile_ids": []
+    },
+    "Route110_TrickHouseEntrance": {
+      "cells": 96,
+      "remapped_ids": 0,
+      "collision_elevation_behavior_layer_identical": true,
+      "opaque_bottom_layer": true,
+      "script_metatile_ids": [
+        523,
+        537
+      ]
+    },
+    "Route110_TrickHouseCorridor": {
+      "cells": 360,
+      "remapped_ids": 0,
+      "collision_elevation_behavior_layer_identical": true,
+      "opaque_bottom_layer": true,
+      "script_metatile_ids": []
+    },
+    "Route110_TrickHouseEnd": {
+      "cells": 96,
+      "remapped_ids": 0,
+      "collision_elevation_behavior_layer_identical": true,
+      "opaque_bottom_layer": true,
+      "script_metatile_ids": [
+        539
+      ]
+    },
+    "Route110_TrickHousePuzzle1": {
+      "cells": 330,
+      "remapped_ids": 0,
+      "collision_elevation_behavior_layer_identical": true,
+      "opaque_bottom_layer": true,
+      "script_metatile_ids": [
+        523
+      ]
+    },
+    "Route110_TrickHousePuzzle2": {
+      "cells": 330,
+      "remapped_ids": 0,
+      "collision_elevation_behavior_layer_identical": true,
+      "opaque_bottom_layer": true,
+      "script_metatile_ids": [
+        601,
+        618
+      ]
+    },
+    "Route110_TrickHousePuzzle3": {
+      "cells": 330,
+      "remapped_ids": 0,
+      "collision_elevation_behavior_layer_identical": true,
+      "opaque_bottom_layer": true,
+      "script_metatile_ids": [
+        568,
+        569,
+        570,
+        571,
+        572,
+        573,
+        576,
+        577,
+        578,
+        579,
+        580,
+        581,
+        584,
+        585,
+        586,
+        587,
+        588,
+        589,
+        592,
+        593,
+        594,
+        595,
+        596,
+        597,
+        600,
+        601
+      ]
+    },
+    "Route110_TrickHousePuzzle4": {
+      "cells": 330,
+      "remapped_ids": 0,
+      "collision_elevation_behavior_layer_identical": true,
+      "opaque_bottom_layer": true,
+      "script_metatile_ids": []
+    },
+    "Route110_TrickHousePuzzle5": {
+      "cells": 330,
+      "remapped_ids": 0,
+      "collision_elevation_behavior_layer_identical": true,
+      "opaque_bottom_layer": true,
+      "script_metatile_ids": []
+    },
+    "Route110_TrickHousePuzzle6": {
+      "cells": 330,
+      "remapped_ids": 0,
+      "collision_elevation_behavior_layer_identical": true,
+      "opaque_bottom_layer": true,
+      "script_metatile_ids": []
+    },
+    "Route110_TrickHousePuzzle7": {
+      "cells": 330,
+      "remapped_ids": 0,
+      "collision_elevation_behavior_layer_identical": true,
+      "opaque_bottom_layer": true,
+      "script_metatile_ids": [
+        574,
+        575,
+        608,
+        609,
+        610,
+        611,
+        635,
+        636
+      ]
+    },
+    "Route110_TrickHousePuzzle8": {
+      "cells": 330,
+      "remapped_ids": 0,
+      "collision_elevation_behavior_layer_identical": true,
+      "opaque_bottom_layer": true,
+      "script_metatile_ids": []
+    },
+    "Route111_OldLadysRestStop": {
+      "cells": 80,
+      "remapped_ids": 0,
+      "collision_elevation_behavior_layer_identical": true,
+      "opaque_bottom_layer": true,
+      "script_metatile_ids": []
+    },
+    "Route111_WinstrateFamilysHouse": {
+      "cells": 88,
+      "remapped_ids": 0,
+      "collision_elevation_behavior_layer_identical": true,
+      "opaque_bottom_layer": true,
+      "script_metatile_ids": []
+    },
+    "Route112_CableCarStation": {
+      "cells": 156,
+      "remapped_ids": 0,
+      "collision_elevation_behavior_layer_identical": true,
+      "opaque_bottom_layer": true,
+      "script_metatile_ids": []
+    },
+    "Route113_GlassWorkshop": {
+      "cells": 90,
+      "remapped_ids": 0,
+      "collision_elevation_behavior_layer_identical": true,
+      "opaque_bottom_layer": true,
+      "script_metatile_ids": []
+    },
+    "Route114_FossilManiacsHouse": {
+      "cells": 80,
+      "remapped_ids": 0,
+      "collision_elevation_behavior_layer_identical": true,
+      "opaque_bottom_layer": true,
+      "script_metatile_ids": []
+    },
+    "Route114_FossilManiacsTunnel": {
+      "cells": 338,
+      "remapped_ids": 10,
+      "collision_elevation_behavior_layer_identical": true,
+      "opaque_bottom_layer": true,
+      "script_metatile_ids": [
+        617
+      ]
+    },
+    "Route114_LanettesHouse": {
+      "cells": 88,
+      "remapped_ids": 0,
+      "collision_elevation_behavior_layer_identical": true,
+      "opaque_bottom_layer": true,
+      "script_metatile_ids": []
+    },
+    "Route116_TunnelersRestHouse": {
+      "cells": 90,
+      "remapped_ids": 0,
+      "collision_elevation_behavior_layer_identical": true,
+      "opaque_bottom_layer": true,
+      "script_metatile_ids": []
+    },
+    "Route121_SafariZoneEntrance": {
+      "cells": 252,
+      "remapped_ids": 0,
+      "collision_elevation_behavior_layer_identical": true,
+      "opaque_bottom_layer": true,
+      "script_metatile_ids": []
+    },
+    "Route123_BerryMastersHouse": {
+      "cells": 88,
+      "remapped_ids": 0,
+      "collision_elevation_behavior_layer_identical": true,
+      "opaque_bottom_layer": true,
+      "script_metatile_ids": []
+    },
+    "Route124_DivingTreasureHuntersHouse": {
+      "cells": 90,
+      "remapped_ids": 0,
+      "collision_elevation_behavior_layer_identical": true,
+      "opaque_bottom_layer": true,
+      "script_metatile_ids": []
+    }
+  },
+  "banks": {
+    "arauna_grutas_seafloor_base_v1": {
+      "native_4bpp_roundtrip": true,
+      "source_attributes_retained": true,
+      "palettes_0_to_12_CRLF": true,
+      "reserved_VRAM_tiles_unused": true
+    },
+    "arauna_grutas_seafloor_rocha_v1": {
+      "native_4bpp_roundtrip": true,
+      "source_attributes_retained": true,
+      "palettes_0_to_12_CRLF": true,
+      "reserved_VRAM_tiles_unused": true
+    },
+    "arauna_grutas_seafloor_correntes_v1": {
+      "native_4bpp_roundtrip": true,
+      "source_attributes_retained": true,
+      "palettes_0_to_12_CRLF": true,
+      "reserved_VRAM_tiles_unused": true
+    },
+    "arauna_grutas_victory_base_v1": {
+      "native_4bpp_roundtrip": true,
+      "source_attributes_retained": true,
+      "palettes_0_to_12_CRLF": true,
+      "reserved_VRAM_tiles_unused": true
+    },
+    "arauna_grutas_victory_rocha_v1": {
+      "native_4bpp_roundtrip": true,
+      "source_attributes_retained": true,
+      "palettes_0_to_12_CRLF": true,
+      "reserved_VRAM_tiles_unused": true
+    }
+  },
+  "cells_checked": 14457,
+  "remapped_ids_checked": 1773,
+  "all_map_json_scripts_objects_warps_weather_encounters_identical": true,
+  "engine_changed_only_for_scoped_animations_and_legacy_view_normalization": true,
+  "saved_view_words_checked": 458752
+}

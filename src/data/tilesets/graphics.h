@@ -5920,3 +5920,91 @@ const u16 gTilesetPalettes_AraunaRotaMergulhoV1[][16] =
     INCGFX_U16("data/tilesets/secondary/arauna_rota_mergulho_v1/palettes/15.pal", ".gbapal"),
 };
 // INTERIORES_ROTA_V1_END
+
+// CAMPANHA_GRUTAS_V1_BEGIN
+const u32 gTilesetTiles_AraunaGrutasSeafloorBaseV1[] = INCGFX_U32("data/tilesets/primary/arauna_grutas_seafloor_base_v1/tiles.png", ".4bpp.lz");
+const u16 gTilesetPalettes_AraunaGrutasSeafloorBaseV1[][16] =
+{
+    INCGFX_U16("data/tilesets/primary/arauna_grutas_seafloor_base_v1/palettes/00.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_grutas_seafloor_base_v1/palettes/01.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_grutas_seafloor_base_v1/palettes/02.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_grutas_seafloor_base_v1/palettes/03.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_grutas_seafloor_base_v1/palettes/04.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_grutas_seafloor_base_v1/palettes/05.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_grutas_seafloor_base_v1/palettes/06.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_grutas_seafloor_base_v1/palettes/07.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_grutas_seafloor_base_v1/palettes/08.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_grutas_seafloor_base_v1/palettes/09.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_grutas_seafloor_base_v1/palettes/10.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_grutas_seafloor_base_v1/palettes/11.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_grutas_seafloor_base_v1/palettes/12.pal", ".gbapal"),
+};
+const u32 gTilesetTiles_AraunaGrutasSeafloorRochaV1[] = INCGFX_U32("data/tilesets/secondary/arauna_grutas_seafloor_rocha_v1/tiles.png", ".4bpp.lz");
+const u16 gTilesetPalettes_AraunaGrutasSeafloorRochaV1[][16] =
+{
+    INCGFX_U16("data/tilesets/secondary/arauna_grutas_seafloor_rocha_v1/palettes/00.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_grutas_seafloor_rocha_v1/palettes/01.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_grutas_seafloor_rocha_v1/palettes/02.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_grutas_seafloor_rocha_v1/palettes/03.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_grutas_seafloor_rocha_v1/palettes/04.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_grutas_seafloor_rocha_v1/palettes/05.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_grutas_seafloor_rocha_v1/palettes/06.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_grutas_seafloor_rocha_v1/palettes/07.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_grutas_seafloor_rocha_v1/palettes/08.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_grutas_seafloor_rocha_v1/palettes/09.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_grutas_seafloor_rocha_v1/palettes/10.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_grutas_seafloor_rocha_v1/palettes/11.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_grutas_seafloor_rocha_v1/palettes/12.pal", ".gbapal"),
+};
+const u32 gTilesetTiles_AraunaGrutasSeafloorCorrentesV1[] = INCGFX_U32("data/tilesets/secondary/arauna_grutas_seafloor_correntes_v1/tiles.png", ".4bpp.lz");
+const u16 gTilesetPalettes_AraunaGrutasSeafloorCorrentesV1[][16] =
+{
+    INCGFX_U16("data/tilesets/secondary/arauna_grutas_seafloor_correntes_v1/palettes/00.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_grutas_seafloor_correntes_v1/palettes/01.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_grutas_seafloor_correntes_v1/palettes/02.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_grutas_seafloor_correntes_v1/palettes/03.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_grutas_seafloor_correntes_v1/palettes/04.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_grutas_seafloor_correntes_v1/palettes/05.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_grutas_seafloor_correntes_v1/palettes/06.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_grutas_seafloor_correntes_v1/palettes/07.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_grutas_seafloor_correntes_v1/palettes/08.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_grutas_seafloor_correntes_v1/palettes/09.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_grutas_seafloor_correntes_v1/palettes/10.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_grutas_seafloor_correntes_v1/palettes/11.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_grutas_seafloor_correntes_v1/palettes/12.pal", ".gbapal"),
+};
+const u32 gTilesetTiles_AraunaGrutasVictoryBaseV1[] = INCGFX_U32("data/tilesets/primary/arauna_grutas_victory_base_v1/tiles.png", ".4bpp.lz");
+const u16 gTilesetPalettes_AraunaGrutasVictoryBaseV1[][16] =
+{
+    INCGFX_U16("data/tilesets/primary/arauna_grutas_victory_base_v1/palettes/00.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_grutas_victory_base_v1/palettes/01.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_grutas_victory_base_v1/palettes/02.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_grutas_victory_base_v1/palettes/03.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_grutas_victory_base_v1/palettes/04.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_grutas_victory_base_v1/palettes/05.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_grutas_victory_base_v1/palettes/06.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_grutas_victory_base_v1/palettes/07.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_grutas_victory_base_v1/palettes/08.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_grutas_victory_base_v1/palettes/09.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_grutas_victory_base_v1/palettes/10.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_grutas_victory_base_v1/palettes/11.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_grutas_victory_base_v1/palettes/12.pal", ".gbapal"),
+};
+const u32 gTilesetTiles_AraunaGrutasVictoryRochaV1[] = INCGFX_U32("data/tilesets/secondary/arauna_grutas_victory_rocha_v1/tiles.png", ".4bpp.lz");
+const u16 gTilesetPalettes_AraunaGrutasVictoryRochaV1[][16] =
+{
+    INCGFX_U16("data/tilesets/secondary/arauna_grutas_victory_rocha_v1/palettes/00.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_grutas_victory_rocha_v1/palettes/01.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_grutas_victory_rocha_v1/palettes/02.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_grutas_victory_rocha_v1/palettes/03.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_grutas_victory_rocha_v1/palettes/04.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_grutas_victory_rocha_v1/palettes/05.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_grutas_victory_rocha_v1/palettes/06.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_grutas_victory_rocha_v1/palettes/07.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_grutas_victory_rocha_v1/palettes/08.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_grutas_victory_rocha_v1/palettes/09.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_grutas_victory_rocha_v1/palettes/10.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_grutas_victory_rocha_v1/palettes/11.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_grutas_victory_rocha_v1/palettes/12.pal", ".gbapal"),
+};
+// CAMPANHA_GRUTAS_V1_END

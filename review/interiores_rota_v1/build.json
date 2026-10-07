@@ -536,7 +536,7 @@
     "enigmas": {
       "source": "data/tilesets/secondary/trick_house_puzzle",
       "symbol": "gTileset_AraunaRotaEnigmasV1",
-      "tiles_including_transparent": 236,
+      "tiles_including_transparent": 240,
       "required_ids": [
         513,
         514,

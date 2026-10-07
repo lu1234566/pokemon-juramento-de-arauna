@@ -3047,3 +3047,56 @@ const struct Tileset gTileset_AraunaRotaMergulhoV1 =
     .callback = NULL,
 };
 // INTERIORES_ROTA_V1_END
+
+// CAMPANHA_GRUTAS_V1_BEGIN
+const struct Tileset gTileset_AraunaGrutasSeafloorBaseV1 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AraunaGrutasSeafloorBaseV1,
+    .palettes = gTilesetPalettes_AraunaGrutasSeafloorBaseV1,
+    .metatiles = gMetatiles_AraunaGrutasSeafloorBaseV1,
+    .metatileAttributes = gMetatileAttributes_AraunaGrutasSeafloorBaseV1,
+    .callback = InitTilesetAnim_AraunaGrutasSeafloorV1,
+};
+const struct Tileset gTileset_AraunaGrutasSeafloorRochaV1 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaGrutasSeafloorRochaV1,
+    .palettes = gTilesetPalettes_AraunaGrutasSeafloorRochaV1,
+    .metatiles = gMetatiles_AraunaGrutasSeafloorRochaV1,
+    .metatileAttributes = gMetatileAttributes_AraunaGrutasSeafloorRochaV1,
+    .callback = NULL,
+};
+const struct Tileset gTileset_AraunaGrutasSeafloorCorrentesV1 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaGrutasSeafloorCorrentesV1,
+    .palettes = gTilesetPalettes_AraunaGrutasSeafloorCorrentesV1,
+    .metatiles = gMetatiles_AraunaGrutasSeafloorCorrentesV1,
+    .metatileAttributes = gMetatileAttributes_AraunaGrutasSeafloorCorrentesV1,
+    .callback = NULL,
+};
+const struct Tileset gTileset_AraunaGrutasVictoryBaseV1 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AraunaGrutasVictoryBaseV1,
+    .palettes = gTilesetPalettes_AraunaGrutasVictoryBaseV1,
+    .metatiles = gMetatiles_AraunaGrutasVictoryBaseV1,
+    .metatileAttributes = gMetatileAttributes_AraunaGrutasVictoryBaseV1,
+    .callback = InitTilesetAnim_AraunaGrutasVictoryV1,
+};
+const struct Tileset gTileset_AraunaGrutasVictoryRochaV1 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaGrutasVictoryRochaV1,
+    .palettes = gTilesetPalettes_AraunaGrutasVictoryRochaV1,
+    .metatiles = gMetatiles_AraunaGrutasVictoryRochaV1,
+    .metatileAttributes = gMetatileAttributes_AraunaGrutasVictoryRochaV1,
+    .callback = NULL,
+};
+// CAMPANHA_GRUTAS_V1_END

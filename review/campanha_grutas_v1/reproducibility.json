@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "builders_executed_in_order": [
+    "build_interiores_rota_v1.py",
+    "build_campanha_grutas_v1.py"
+  ],
+  "native_and_engine_files_byte_identical": 138,
+  "python": "3.12",
+  "pillow": "12.3.0"
+}

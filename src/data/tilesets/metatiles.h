@@ -865,3 +865,16 @@ const u16 gMetatileAttributes_AraunaRotaSafariV1[] = INCBIN_U16("data/tilesets/s
 const u16 gMetatiles_AraunaRotaMergulhoV1[] = INCBIN_U16("data/tilesets/secondary/arauna_rota_mergulho_v1/metatiles.bin");
 const u16 gMetatileAttributes_AraunaRotaMergulhoV1[] = INCBIN_U16("data/tilesets/secondary/arauna_rota_mergulho_v1/metatile_attributes.bin");
 // INTERIORES_ROTA_V1_END
+
+// CAMPANHA_GRUTAS_V1_BEGIN
+const u16 gMetatiles_AraunaGrutasSeafloorBaseV1[] = INCBIN_U16("data/tilesets/primary/arauna_grutas_seafloor_base_v1/metatiles.bin");
+const u16 gMetatileAttributes_AraunaGrutasSeafloorBaseV1[] = INCBIN_U16("data/tilesets/primary/arauna_grutas_seafloor_base_v1/metatile_attributes.bin");
+const u16 gMetatiles_AraunaGrutasSeafloorRochaV1[] = INCBIN_U16("data/tilesets/secondary/arauna_grutas_seafloor_rocha_v1/metatiles.bin");
+const u16 gMetatileAttributes_AraunaGrutasSeafloorRochaV1[] = INCBIN_U16("data/tilesets/secondary/arauna_grutas_seafloor_rocha_v1/metatile_attributes.bin");
+const u16 gMetatiles_AraunaGrutasSeafloorCorrentesV1[] = INCBIN_U16("data/tilesets/secondary/arauna_grutas_seafloor_correntes_v1/metatiles.bin");
+const u16 gMetatileAttributes_AraunaGrutasSeafloorCorrentesV1[] = INCBIN_U16("data/tilesets/secondary/arauna_grutas_seafloor_correntes_v1/metatile_attributes.bin");
+const u16 gMetatiles_AraunaGrutasVictoryBaseV1[] = INCBIN_U16("data/tilesets/primary/arauna_grutas_victory_base_v1/metatiles.bin");
+const u16 gMetatileAttributes_AraunaGrutasVictoryBaseV1[] = INCBIN_U16("data/tilesets/primary/arauna_grutas_victory_base_v1/metatile_attributes.bin");
+const u16 gMetatiles_AraunaGrutasVictoryRochaV1[] = INCBIN_U16("data/tilesets/secondary/arauna_grutas_victory_rocha_v1/metatiles.bin");
+const u16 gMetatileAttributes_AraunaGrutasVictoryRochaV1[] = INCBIN_U16("data/tilesets/secondary/arauna_grutas_victory_rocha_v1/metatile_attributes.bin");
+// CAMPANHA_GRUTAS_V1_END

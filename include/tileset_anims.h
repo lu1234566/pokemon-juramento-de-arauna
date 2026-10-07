@@ -32,4 +32,9 @@ void InitTilesetAnim_EliteFour(void);
 void InitTilesetAnim_BattleDome(void);
 void InitTilesetAnim_BattlePyramid(void);
 
+// CAMPANHA_GRUTAS_V1_BEGIN
+void InitTilesetAnim_AraunaGrutasVictoryV1(void);
+void InitTilesetAnim_AraunaGrutasSeafloorV1(void);
+// CAMPANHA_GRUTAS_V1_END
+
 #endif // GUARD_TILESET_ANIMS_H

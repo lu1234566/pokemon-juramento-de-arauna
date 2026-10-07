@@ -1,0 +1,101 @@
+{
+  "status": "PASS",
+  "actual_generated_C_executed": true,
+  "historical_save_imported": false,
+  "banks": {
+    "AraunaGrutasSeafloorBaseV1": {
+      "words_checked": 65536,
+      "flags_preserved": true,
+      "idempotent": true
+    },
+    "AraunaGrutasSeafloorRochaV1": {
+      "words_checked": 65536,
+      "flags_preserved": true,
+      "idempotent": true
+    },
+    "AraunaGrutasSeafloorCorrentesV1": {
+      "words_checked": 65536,
+      "flags_preserved": true,
+      "idempotent": true
+    },
+    "AraunaGrutasVictoryBaseV1": {
+      "words_checked": 65536,
+      "flags_preserved": true,
+      "idempotent": true
+    },
+    "AraunaGrutasVictoryRochaV1": {
+      "words_checked": 65536,
+      "flags_preserved": true,
+      "idempotent": true
+    },
+    "AraunaRotaTunelV1": {
+      "words_checked": 65536,
+      "flags_preserved": true,
+      "idempotent": true
+    },
+    "Outside": {
+      "words_checked": 65536,
+      "flags_preserved": true,
+      "idempotent": true
+    }
+  },
+  "maps": {
+    "SeafloorCavern_Entrance": {
+      "legacy_cache_matches_current_grid": true,
+      "cells": 400
+    },
+    "SeafloorCavern_Room1": {
+      "legacy_cache_matches_current_grid": true,
+      "cells": 420
+    },
+    "SeafloorCavern_Room2": {
+      "legacy_cache_matches_current_grid": true,
+      "cells": 216
+    },
+    "SeafloorCavern_Room3": {
+      "legacy_cache_matches_current_grid": true,
+      "cells": 272
+    },
+    "SeafloorCavern_Room4": {
+      "legacy_cache_matches_current_grid": true,
+      "cells": 342
+    },
+    "SeafloorCavern_Room5": {
+      "legacy_cache_matches_current_grid": true,
+      "cells": 400
+    },
+    "SeafloorCavern_Room6": {
+      "legacy_cache_matches_current_grid": true,
+      "cells": 552
+    },
+    "SeafloorCavern_Room7": {
+      "legacy_cache_matches_current_grid": true,
+      "cells": 575
+    },
+    "SeafloorCavern_Room8": {
+      "legacy_cache_matches_current_grid": true,
+      "cells": 154
+    },
+    "SeafloorCavern_Room9": {
+      "legacy_cache_matches_current_grid": true,
+      "cells": 1242
+    },
+    "VictoryRoad_1F": {
+      "legacy_cache_matches_current_grid": true,
+      "cells": 2070
+    },
+    "VictoryRoad_B1F": {
+      "legacy_cache_matches_current_grid": true,
+      "cells": 1426
+    },
+    "VictoryRoad_B2F": {
+      "legacy_cache_matches_current_grid": true,
+      "cells": 1426
+    },
+    "Route114_FossilManiacsTunnel": {
+      "legacy_cache_matches_current_grid": true,
+      "cells": 338
+    }
+  },
+  "words_checked": 458752
+}

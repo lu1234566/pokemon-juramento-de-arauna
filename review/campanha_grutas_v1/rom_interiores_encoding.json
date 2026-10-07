@@ -1,0 +1,66 @@
+{
+  "status": "PASS",
+  "banks": {
+    "arauna_rota_base_v1": {
+      "4bpp_bytes": 512,
+      "tiles_palettes_metatiles_attributes_identical_to_linked_ROM": true
+    },
+    "arauna_rota_praia_v1": {
+      "4bpp_bytes": 3584,
+      "tiles_palettes_metatiles_attributes_identical_to_linked_ROM": true
+    },
+    "arauna_rota_ciclovia_v1": {
+      "4bpp_bytes": 3072,
+      "tiles_palettes_metatiles_attributes_identical_to_linked_ROM": true
+    },
+    "arauna_rota_oficina_v1": {
+      "4bpp_bytes": 5632,
+      "tiles_palettes_metatiles_attributes_identical_to_linked_ROM": true
+    },
+    "arauna_rota_enigmas_v1": {
+      "4bpp_bytes": 7680,
+      "tiles_palettes_metatiles_attributes_identical_to_linked_ROM": true
+    },
+    "arauna_rota_pouso_v1": {
+      "4bpp_bytes": 5120,
+      "tiles_palettes_metatiles_attributes_identical_to_linked_ROM": true
+    },
+    "arauna_rota_fazenda_v1": {
+      "4bpp_bytes": 5120,
+      "tiles_palettes_metatiles_attributes_identical_to_linked_ROM": true
+    },
+    "arauna_rota_estacao_v1": {
+      "4bpp_bytes": 3072,
+      "tiles_palettes_metatiles_attributes_identical_to_linked_ROM": true
+    },
+    "arauna_rota_vidro_v1": {
+      "4bpp_bytes": 5632,
+      "tiles_palettes_metatiles_attributes_identical_to_linked_ROM": true
+    },
+    "arauna_rota_fosseis_v1": {
+      "4bpp_bytes": 5632,
+      "tiles_palettes_metatiles_attributes_identical_to_linked_ROM": true
+    },
+    "arauna_rota_tunel_v1": {
+      "4bpp_bytes": 1536,
+      "tiles_palettes_metatiles_attributes_identical_to_linked_ROM": true
+    },
+    "arauna_rota_tecnica_v1": {
+      "4bpp_bytes": 4096,
+      "tiles_palettes_metatiles_attributes_identical_to_linked_ROM": true
+    },
+    "arauna_rota_mineiros_v1": {
+      "4bpp_bytes": 5120,
+      "tiles_palettes_metatiles_attributes_identical_to_linked_ROM": true
+    },
+    "arauna_rota_safari_v1": {
+      "4bpp_bytes": 3584,
+      "tiles_palettes_metatiles_attributes_identical_to_linked_ROM": true
+    },
+    "arauna_rota_mergulho_v1": {
+      "4bpp_bytes": 5632,
+      "tiles_palettes_metatiles_attributes_identical_to_linked_ROM": true
+    }
+  },
+  "rom_sha256": "045b082d9dfc69ebb267f23d60b4055f6cbda108eae0c46df7c6ba7459f8bfaf"
+}

@@ -1,0 +1,270 @@
+{
+  "status": "PASS",
+  "emulator": "mGBA 0.10.2 headless native core",
+  "rom_sha256": "045b082d9dfc69ebb267f23d60b4055f6cbda108eae0c46df7c6ba7459f8bfaf",
+  "capture_method": "Full native map load via RAM-only temporary boot hook; restored before assertions. Review lighting uses native flashLevel=0 and a temporary RAM-only bypass of the default-darkness initializer. No hook written to disk ROM or delivered sources.",
+  "maps": [
+    {
+      "case": "SeafloorCavern_Entrance",
+      "native_map_and_player_position_asserted": true,
+      "illegal_opcodes": 0,
+      "log": "PASS native assertions; illegal_opcodes=0",
+      "map": "SeafloorCavern_Entrance",
+      "group": 24,
+      "number": 27,
+      "position": [
+        10,
+        7
+      ]
+    },
+    {
+      "case": "SeafloorCavern_Room1",
+      "native_map_and_player_position_asserted": true,
+      "illegal_opcodes": 0,
+      "log": "PASS native assertions; illegal_opcodes=0",
+      "map": "SeafloorCavern_Room1",
+      "group": 24,
+      "number": 28,
+      "position": [
+        10,
+        11
+      ]
+    },
+    {
+      "case": "SeafloorCavern_Room2",
+      "native_map_and_player_position_asserted": true,
+      "illegal_opcodes": 0,
+      "log": "PASS native assertions; illegal_opcodes=0",
+      "map": "SeafloorCavern_Room2",
+      "group": 24,
+      "number": 29,
+      "position": [
+        10,
+        6
+      ]
+    },
+    {
+      "case": "SeafloorCavern_Room3",
+      "native_map_and_player_position_asserted": true,
+      "illegal_opcodes": 0,
+      "log": "PASS native assertions; illegal_opcodes=0",
+      "map": "SeafloorCavern_Room3",
+      "group": 24,
+      "number": 30,
+      "position": [
+        6,
+        11
+      ]
+    },
+    {
+      "case": "SeafloorCavern_Room4",
+      "native_map_and_player_position_asserted": true,
+      "illegal_opcodes": 0,
+      "log": "PASS native assertions; illegal_opcodes=0",
+      "map": "SeafloorCavern_Room4",
+      "group": 24,
+      "number": 31,
+      "position": [
+        10,
+        11
+      ]
+    },
+    {
+      "case": "SeafloorCavern_Room5",
+      "native_map_and_player_position_asserted": true,
+      "illegal_opcodes": 0,
+      "log": "PASS native assertions; illegal_opcodes=0",
+      "map": "SeafloorCavern_Room5",
+      "group": 24,
+      "number": 32,
+      "position": [
+        10,
+        8
+      ]
+    },
+    {
+      "case": "SeafloorCavern_Room6",
+      "native_map_and_player_position_asserted": true,
+      "illegal_opcodes": 0,
+      "log": "PASS native assertions; illegal_opcodes=0",
+      "map": "SeafloorCavern_Room6",
+      "group": 24,
+      "number": 33,
+      "position": [
+        12,
+        20
+      ]
+    },
+    {
+      "case": "SeafloorCavern_Room7",
+      "native_map_and_player_position_asserted": true,
+      "illegal_opcodes": 0,
+      "log": "PASS native assertions; illegal_opcodes=0",
+      "map": "SeafloorCavern_Room7",
+      "group": 24,
+      "number": 34,
+      "position": [
+        8,
+        21
+      ]
+    },
+    {
+      "case": "SeafloorCavern_Room8",
+      "native_map_and_player_position_asserted": true,
+      "illegal_opcodes": 0,
+      "log": "PASS native assertions; illegal_opcodes=0",
+      "map": "SeafloorCavern_Room8",
+      "group": 24,
+      "number": 35,
+      "position": [
+        5,
+        6
+      ]
+    },
+    {
+      "case": "SeafloorCavern_Room9",
+      "native_map_and_player_position_asserted": true,
+      "illegal_opcodes": 0,
+      "log": "PASS native assertions; illegal_opcodes=0",
+      "map": "SeafloorCavern_Room9",
+      "group": 24,
+      "number": 36,
+      "position": [
+        13,
+        23
+      ]
+    },
+    {
+      "case": "VictoryRoad_1F",
+      "native_map_and_player_position_asserted": true,
+      "illegal_opcodes": 0,
+      "log": "PASS native assertions; illegal_opcodes=0",
+      "map": "VictoryRoad_1F",
+      "group": 24,
+      "number": 43,
+      "position": [
+        23,
+        22
+      ]
+    },
+    {
+      "case": "VictoryRoad_B1F",
+      "native_map_and_player_position_asserted": true,
+      "illegal_opcodes": 0,
+      "log": "PASS native assertions; illegal_opcodes=0",
+      "map": "VictoryRoad_B1F",
+      "group": 24,
+      "number": 44,
+      "position": [
+        22,
+        13
+      ],
+      "review_illumination": "Native flashLevel=0, temporarily held during initial map load; restored before capture."
+    },
+    {
+      "case": "VictoryRoad_B2F",
+      "native_map_and_player_position_asserted": true,
+      "illegal_opcodes": 0,
+      "log": "PASS native assertions; illegal_opcodes=0",
+      "map": "VictoryRoad_B2F",
+      "group": 24,
+      "number": 45,
+      "position": [
+        20,
+        13
+      ],
+      "review_illumination": "Native flashLevel=0, temporarily held during initial map load; restored before capture."
+    },
+    {
+      "case": "Route110_TrickHousePuzzle2",
+      "native_map_and_player_position_asserted": true,
+      "illegal_opcodes": 0,
+      "log": "PASS native assertions; illegal_opcodes=0",
+      "map": "Route110_TrickHousePuzzle2",
+      "group": 29,
+      "number": 4,
+      "position": [
+        7,
+        9
+      ]
+    },
+    {
+      "case": "Route110_TrickHousePuzzle4",
+      "native_map_and_player_position_asserted": true,
+      "illegal_opcodes": 0,
+      "log": "PASS native assertions; illegal_opcodes=0",
+      "map": "Route110_TrickHousePuzzle4",
+      "group": 29,
+      "number": 6,
+      "position": [
+        7,
+        10
+      ]
+    },
+    {
+      "case": "Route110_TrickHousePuzzle6",
+      "native_map_and_player_position_asserted": true,
+      "illegal_opcodes": 0,
+      "log": "PASS native assertions; illegal_opcodes=0",
+      "map": "Route110_TrickHousePuzzle6",
+      "group": 29,
+      "number": 8,
+      "position": [
+        7,
+        10
+      ]
+    },
+    {
+      "case": "Route110_TrickHousePuzzle7",
+      "native_map_and_player_position_asserted": true,
+      "illegal_opcodes": 0,
+      "log": "PASS native assertions; illegal_opcodes=0",
+      "map": "Route110_TrickHousePuzzle7",
+      "group": 29,
+      "number": 9,
+      "position": [
+        6,
+        10
+      ]
+    },
+    {
+      "case": "Route114_LanettesHouse",
+      "native_map_and_player_position_asserted": true,
+      "illegal_opcodes": 0,
+      "log": "PASS native assertions; illegal_opcodes=0",
+      "map": "Route114_LanettesHouse",
+      "group": 20,
+      "number": 2,
+      "position": [
+        5,
+        3
+      ]
+    },
+    {
+      "case": "Route114_FossilManiacsTunnel",
+      "native_map_and_player_position_asserted": true,
+      "illegal_opcodes": 0,
+      "log": "PASS native assertions; illegal_opcodes=0",
+      "map": "Route114_FossilManiacsTunnel",
+      "group": 20,
+      "number": 1,
+      "position": [
+        6,
+        12
+      ]
+    },
+    {
+      "case": "Route121_SafariZoneEntrance",
+      "native_map_and_player_position_asserted": true,
+      "illegal_opcodes": 0,
+      "log": "PASS native assertions; illegal_opcodes=0",
+      "map": "Route121_SafariZoneEntrance",
+      "group": 23,
+      "number": 0,
+      "position": [
+        9,
+        4
+      ]
+    }
+  ]
+}

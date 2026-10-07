@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "banks": {
+    "arauna_grutas_seafloor_base_v1": {
+      "native_sources_identical_to_linked_ROM": true
+    },
+    "arauna_grutas_seafloor_rocha_v1": {
+      "native_sources_identical_to_linked_ROM": true
+    },
+    "arauna_grutas_seafloor_correntes_v1": {
+      "native_sources_identical_to_linked_ROM": true
+    },
+    "arauna_grutas_victory_base_v1": {
+      "native_sources_identical_to_linked_ROM": true
+    },
+    "arauna_grutas_victory_rocha_v1": {
+      "native_sources_identical_to_linked_ROM": true
+    }
+  },
+  "animation_frames_checked": 32,
+  "rom_sha256": "045b082d9dfc69ebb267f23d60b4055f6cbda108eae0c46df7c6ba7459f8bfaf",
+  "rom_bytes": 33554432
+}

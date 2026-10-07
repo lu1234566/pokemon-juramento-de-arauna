@@ -1186,3 +1186,72 @@ static void BlendAnimPalette_BattleDome_FloorLightsNoBlend(u16 timer)
             sSecondaryTilesetAnimCallback = NULL;
     }
 }
+
+// CAMPANHA_GRUTAS_V1_BEGIN
+static const u16 sAraunaGrutasVictoryV1water0[] = INCGFX_U16("graphics/tilesets/arauna_grutas_v1/victory/water/0.png", ".4bpp");
+static const u16 sAraunaGrutasVictoryV1water1[] = INCGFX_U16("graphics/tilesets/arauna_grutas_v1/victory/water/1.png", ".4bpp");
+static const u16 sAraunaGrutasVictoryV1water2[] = INCGFX_U16("graphics/tilesets/arauna_grutas_v1/victory/water/2.png", ".4bpp");
+static const u16 sAraunaGrutasVictoryV1water3[] = INCGFX_U16("graphics/tilesets/arauna_grutas_v1/victory/water/3.png", ".4bpp");
+static const u16 sAraunaGrutasVictoryV1water4[] = INCGFX_U16("graphics/tilesets/arauna_grutas_v1/victory/water/4.png", ".4bpp");
+static const u16 sAraunaGrutasVictoryV1water5[] = INCGFX_U16("graphics/tilesets/arauna_grutas_v1/victory/water/5.png", ".4bpp");
+static const u16 sAraunaGrutasVictoryV1water6[] = INCGFX_U16("graphics/tilesets/arauna_grutas_v1/victory/water/6.png", ".4bpp");
+static const u16 sAraunaGrutasVictoryV1water7[] = INCGFX_U16("graphics/tilesets/arauna_grutas_v1/victory/water/7.png", ".4bpp");
+static const u16 *const sAraunaGrutasVictoryV1waterFrames[] = {sAraunaGrutasVictoryV1water0, sAraunaGrutasVictoryV1water1, sAraunaGrutasVictoryV1water2, sAraunaGrutasVictoryV1water3, sAraunaGrutasVictoryV1water4, sAraunaGrutasVictoryV1water5, sAraunaGrutasVictoryV1water6, sAraunaGrutasVictoryV1water7};
+static const u16 sAraunaGrutasVictoryV1waterfall0[] = INCGFX_U16("graphics/tilesets/arauna_grutas_v1/victory/waterfall/0.png", ".4bpp");
+static const u16 sAraunaGrutasVictoryV1waterfall1[] = INCGFX_U16("graphics/tilesets/arauna_grutas_v1/victory/waterfall/1.png", ".4bpp");
+static const u16 sAraunaGrutasVictoryV1waterfall2[] = INCGFX_U16("graphics/tilesets/arauna_grutas_v1/victory/waterfall/2.png", ".4bpp");
+static const u16 sAraunaGrutasVictoryV1waterfall3[] = INCGFX_U16("graphics/tilesets/arauna_grutas_v1/victory/waterfall/3.png", ".4bpp");
+static const u16 sAraunaGrutasVictoryV1waterfall4[] = INCGFX_U16("graphics/tilesets/arauna_grutas_v1/victory/waterfall/4.png", ".4bpp");
+static const u16 sAraunaGrutasVictoryV1waterfall5[] = INCGFX_U16("graphics/tilesets/arauna_grutas_v1/victory/waterfall/5.png", ".4bpp");
+static const u16 sAraunaGrutasVictoryV1waterfall6[] = INCGFX_U16("graphics/tilesets/arauna_grutas_v1/victory/waterfall/6.png", ".4bpp");
+static const u16 sAraunaGrutasVictoryV1waterfall7[] = INCGFX_U16("graphics/tilesets/arauna_grutas_v1/victory/waterfall/7.png", ".4bpp");
+static const u16 *const sAraunaGrutasVictoryV1waterfallFrames[] = {sAraunaGrutasVictoryV1waterfall0, sAraunaGrutasVictoryV1waterfall1, sAraunaGrutasVictoryV1waterfall2, sAraunaGrutasVictoryV1waterfall3, sAraunaGrutasVictoryV1waterfall4, sAraunaGrutasVictoryV1waterfall5, sAraunaGrutasVictoryV1waterfall6, sAraunaGrutasVictoryV1waterfall7};
+static void TilesetAnim_AraunaGrutasVictoryV1(u16 timer)
+{
+    if (timer % 16 == 0)
+    {
+        u16 frame = (timer / 16) % 8;
+        AppendTilesetAnimToBuffer(sAraunaGrutasVictoryV1waterFrames[frame], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(424)), 4 * TILE_SIZE_4BPP);
+        AppendTilesetAnimToBuffer(sAraunaGrutasVictoryV1waterfallFrames[frame], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(428)), 4 * TILE_SIZE_4BPP);
+    }
+}
+void InitTilesetAnim_AraunaGrutasVictoryV1(void)
+{
+    sPrimaryTilesetAnimCounter = 0;
+    sPrimaryTilesetAnimCounterMax = 128;
+    sPrimaryTilesetAnimCallback = TilesetAnim_AraunaGrutasVictoryV1;
+}
+static const u16 sAraunaGrutasSeafloorV1water0[] = INCGFX_U16("graphics/tilesets/arauna_grutas_v1/seafloor/water/0.png", ".4bpp");
+static const u16 sAraunaGrutasSeafloorV1water1[] = INCGFX_U16("graphics/tilesets/arauna_grutas_v1/seafloor/water/1.png", ".4bpp");
+static const u16 sAraunaGrutasSeafloorV1water2[] = INCGFX_U16("graphics/tilesets/arauna_grutas_v1/seafloor/water/2.png", ".4bpp");
+static const u16 sAraunaGrutasSeafloorV1water3[] = INCGFX_U16("graphics/tilesets/arauna_grutas_v1/seafloor/water/3.png", ".4bpp");
+static const u16 sAraunaGrutasSeafloorV1water4[] = INCGFX_U16("graphics/tilesets/arauna_grutas_v1/seafloor/water/4.png", ".4bpp");
+static const u16 sAraunaGrutasSeafloorV1water5[] = INCGFX_U16("graphics/tilesets/arauna_grutas_v1/seafloor/water/5.png", ".4bpp");
+static const u16 sAraunaGrutasSeafloorV1water6[] = INCGFX_U16("graphics/tilesets/arauna_grutas_v1/seafloor/water/6.png", ".4bpp");
+static const u16 sAraunaGrutasSeafloorV1water7[] = INCGFX_U16("graphics/tilesets/arauna_grutas_v1/seafloor/water/7.png", ".4bpp");
+static const u16 *const sAraunaGrutasSeafloorV1waterFrames[] = {sAraunaGrutasSeafloorV1water0, sAraunaGrutasSeafloorV1water1, sAraunaGrutasSeafloorV1water2, sAraunaGrutasSeafloorV1water3, sAraunaGrutasSeafloorV1water4, sAraunaGrutasSeafloorV1water5, sAraunaGrutasSeafloorV1water6, sAraunaGrutasSeafloorV1water7};
+static const u16 sAraunaGrutasSeafloorV1waterfall0[] = INCGFX_U16("graphics/tilesets/arauna_grutas_v1/seafloor/waterfall/0.png", ".4bpp");
+static const u16 sAraunaGrutasSeafloorV1waterfall1[] = INCGFX_U16("graphics/tilesets/arauna_grutas_v1/seafloor/waterfall/1.png", ".4bpp");
+static const u16 sAraunaGrutasSeafloorV1waterfall2[] = INCGFX_U16("graphics/tilesets/arauna_grutas_v1/seafloor/waterfall/2.png", ".4bpp");
+static const u16 sAraunaGrutasSeafloorV1waterfall3[] = INCGFX_U16("graphics/tilesets/arauna_grutas_v1/seafloor/waterfall/3.png", ".4bpp");
+static const u16 sAraunaGrutasSeafloorV1waterfall4[] = INCGFX_U16("graphics/tilesets/arauna_grutas_v1/seafloor/waterfall/4.png", ".4bpp");
+static const u16 sAraunaGrutasSeafloorV1waterfall5[] = INCGFX_U16("graphics/tilesets/arauna_grutas_v1/seafloor/waterfall/5.png", ".4bpp");
+static const u16 sAraunaGrutasSeafloorV1waterfall6[] = INCGFX_U16("graphics/tilesets/arauna_grutas_v1/seafloor/waterfall/6.png", ".4bpp");
+static const u16 sAraunaGrutasSeafloorV1waterfall7[] = INCGFX_U16("graphics/tilesets/arauna_grutas_v1/seafloor/waterfall/7.png", ".4bpp");
+static const u16 *const sAraunaGrutasSeafloorV1waterfallFrames[] = {sAraunaGrutasSeafloorV1waterfall0, sAraunaGrutasSeafloorV1waterfall1, sAraunaGrutasSeafloorV1waterfall2, sAraunaGrutasSeafloorV1waterfall3, sAraunaGrutasSeafloorV1waterfall4, sAraunaGrutasSeafloorV1waterfall5, sAraunaGrutasSeafloorV1waterfall6, sAraunaGrutasSeafloorV1waterfall7};
+static void TilesetAnim_AraunaGrutasSeafloorV1(u16 timer)
+{
+    if (timer % 16 == 0)
+    {
+        u16 frame = (timer / 16) % 8;
+        AppendTilesetAnimToBuffer(sAraunaGrutasSeafloorV1waterFrames[frame], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(424)), 4 * TILE_SIZE_4BPP);
+        AppendTilesetAnimToBuffer(sAraunaGrutasSeafloorV1waterfallFrames[frame], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(428)), 4 * TILE_SIZE_4BPP);
+    }
+}
+void InitTilesetAnim_AraunaGrutasSeafloorV1(void)
+{
+    sPrimaryTilesetAnimCounter = 0;
+    sPrimaryTilesetAnimCounterMax = 128;
+    sPrimaryTilesetAnimCallback = TilesetAnim_AraunaGrutasSeafloorV1;
+}
+// CAMPANHA_GRUTAS_V1_END

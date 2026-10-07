@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "case": "VictoryRoad_1F_warp",
+      "native_map_and_player_position_asserted": true,
+      "illegal_opcodes": 0,
+      "log": "PASS native assertions; illegal_opcodes=0"
+    },
+    {
+      "case": "SeafloorCavern_Room1_warp",
+      "native_map_and_player_position_asserted": true,
+      "illegal_opcodes": 0,
+      "log": "PASS native assertions; illegal_opcodes=0"
+    },
+    {
+      "case": "Route110_TrickHousePuzzle2_collision",
+      "native_map_and_player_position_asserted": true,
+      "illegal_opcodes": 0,
+      "log": "PASS native assertions; illegal_opcodes=0"
+    },
+    {
+      "case": "Route110_TrickHousePuzzle7_collision",
+      "native_map_and_player_position_asserted": true,
+      "illegal_opcodes": 0,
+      "log": "PASS native assertions; illegal_opcodes=0"
+    },
+    {
+      "case": "Safari_PC",
+      "native_map_and_player_position_asserted": true,
+      "illegal_opcodes": 0,
+      "log": "PASS native assertions; illegal_opcodes=0"
+    },
+    {
+      "case": "Seafloor_Surf",
+      "native_map_and_player_position_asserted": true,
+      "illegal_opcodes": 0,
+      "log": "VRAM changed: 214 bytes\navatar flags 08\nPASS native assertions; illegal_opcodes=0"
+    }
+  ],
+  "scope": "Native warp exits and returns, rail collision in two puzzles, Safari PC states and menu, Surf and changing animated-water VRAM. Not a complete story playthrough."
+}

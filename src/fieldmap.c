@@ -35,6 +35,8 @@ COMMON_DATA struct BackupMapLayout gBackupMapLayout = {0};
 
 static const struct ConnectionFlags sDummyConnectionFlags = {0};
 
+#include "data/arauna_grutas_saved_view.h"
+
 static void InitMapLayoutData(const struct MapHeader *mapHeader);
 static void InitBackupMapLayoutData(const u16 *map, u16 width, u16 height);
 static void FillSouthConnection(struct MapHeader const *mapHeader, struct MapHeader const *connectedMapHeader, s32 offset);
@@ -456,7 +458,7 @@ static void LoadSavedMapView(void)
         for (j = x; j < x + MAP_OFFSET_W; j++)
         {
             if (!SkipCopyingMetatileFromSavedMap(&sBackupMapData[j + width * i], width, yMode))
-                sBackupMapData[j + width * i] = *mapView;
+                sBackupMapData[j + width * i] = AraunaGrutas_NormalizeSavedBlock(*mapView);
             mapView++;
         }
     }
