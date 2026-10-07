@@ -878,3 +878,38 @@ const u16 gMetatileAttributes_AraunaGrutasVictoryBaseV1[] = INCBIN_U16("data/til
 const u16 gMetatiles_AraunaGrutasVictoryRochaV1[] = INCBIN_U16("data/tilesets/secondary/arauna_grutas_victory_rocha_v1/metatiles.bin");
 const u16 gMetatileAttributes_AraunaGrutasVictoryRochaV1[] = INCBIN_U16("data/tilesets/secondary/arauna_grutas_victory_rocha_v1/metatile_attributes.bin");
 // CAMPANHA_GRUTAS_V1_END
+
+// BORDER_PRIORITY_V2_BEGIN
+const u16 gMetatiles_AraunaBorderRoute124BaseV2[] = INCBIN_U16("data/tilesets/primary/arauna_border_route124_v2/metatiles.bin");
+const u16 gMetatileAttributes_AraunaBorderRoute124BaseV2[] = INCBIN_U16("data/tilesets/primary/arauna_border_route124_v2/metatile_attributes.bin");
+const u16 gMetatiles_AraunaBorderRoute124ArtV2[] = INCBIN_U16("data/tilesets/secondary/arauna_border_route124_v2/metatiles.bin");
+const u16 gMetatileAttributes_AraunaBorderRoute124ArtV2[] = INCBIN_U16("data/tilesets/secondary/arauna_border_route124_v2/metatile_attributes.bin");
+const u16 gMetatiles_AraunaBorderRoute126BaseV2[] = INCBIN_U16("data/tilesets/primary/arauna_border_route126_v2/metatiles.bin");
+const u16 gMetatileAttributes_AraunaBorderRoute126BaseV2[] = INCBIN_U16("data/tilesets/primary/arauna_border_route126_v2/metatile_attributes.bin");
+const u16 gMetatiles_AraunaBorderRoute126ArtV2[] = INCBIN_U16("data/tilesets/secondary/arauna_border_route126_v2/metatiles.bin");
+const u16 gMetatileAttributes_AraunaBorderRoute126ArtV2[] = INCBIN_U16("data/tilesets/secondary/arauna_border_route126_v2/metatile_attributes.bin");
+const u16 gMetatiles_AraunaBorderRoute110BaseV2[] = INCBIN_U16("data/tilesets/primary/arauna_border_route110_v2/metatiles.bin");
+const u16 gMetatileAttributes_AraunaBorderRoute110BaseV2[] = INCBIN_U16("data/tilesets/primary/arauna_border_route110_v2/metatile_attributes.bin");
+const u16 gMetatiles_AraunaBorderRoute110ArtV2[] = INCBIN_U16("data/tilesets/secondary/arauna_border_route110_v2/metatiles.bin");
+const u16 gMetatileAttributes_AraunaBorderRoute110ArtV2[] = INCBIN_U16("data/tilesets/secondary/arauna_border_route110_v2/metatile_attributes.bin");
+const u16 gMetatiles_AraunaBorderMauvilleCityBaseV2[] = INCBIN_U16("data/tilesets/primary/arauna_border_mauville_city_v2/metatiles.bin");
+const u16 gMetatileAttributes_AraunaBorderMauvilleCityBaseV2[] = INCBIN_U16("data/tilesets/primary/arauna_border_mauville_city_v2/metatile_attributes.bin");
+const u16 gMetatiles_AraunaBorderMauvilleCityArtV2[] = INCBIN_U16("data/tilesets/secondary/arauna_border_mauville_city_v2/metatiles.bin");
+const u16 gMetatileAttributes_AraunaBorderMauvilleCityArtV2[] = INCBIN_U16("data/tilesets/secondary/arauna_border_mauville_city_v2/metatile_attributes.bin");
+const u16 gMetatiles_AraunaBorderSlateportCityBaseV2[] = INCBIN_U16("data/tilesets/primary/arauna_border_slateport_city_v2/metatiles.bin");
+const u16 gMetatileAttributes_AraunaBorderSlateportCityBaseV2[] = INCBIN_U16("data/tilesets/primary/arauna_border_slateport_city_v2/metatile_attributes.bin");
+const u16 gMetatiles_AraunaBorderSlateportCityArtV2[] = INCBIN_U16("data/tilesets/secondary/arauna_border_slateport_city_v2/metatiles.bin");
+const u16 gMetatileAttributes_AraunaBorderSlateportCityArtV2[] = INCBIN_U16("data/tilesets/secondary/arauna_border_slateport_city_v2/metatile_attributes.bin");
+const u16 gMetatiles_AraunaBorderEverGrandeCityBaseV2[] = INCBIN_U16("data/tilesets/primary/arauna_border_ever_grande_city_v2/metatiles.bin");
+const u16 gMetatileAttributes_AraunaBorderEverGrandeCityBaseV2[] = INCBIN_U16("data/tilesets/primary/arauna_border_ever_grande_city_v2/metatile_attributes.bin");
+const u16 gMetatiles_AraunaBorderEverGrandeCityArtV2[] = INCBIN_U16("data/tilesets/secondary/arauna_border_ever_grande_city_v2/metatiles.bin");
+const u16 gMetatileAttributes_AraunaBorderEverGrandeCityArtV2[] = INCBIN_U16("data/tilesets/secondary/arauna_border_ever_grande_city_v2/metatile_attributes.bin");
+const u16 gMetatiles_AraunaBorderRoute128BaseV2[] = INCBIN_U16("data/tilesets/primary/arauna_border_route128_v2/metatiles.bin");
+const u16 gMetatileAttributes_AraunaBorderRoute128BaseV2[] = INCBIN_U16("data/tilesets/primary/arauna_border_route128_v2/metatile_attributes.bin");
+const u16 gMetatiles_AraunaBorderRoute128ArtV2[] = INCBIN_U16("data/tilesets/secondary/arauna_border_route128_v2/metatiles.bin");
+const u16 gMetatileAttributes_AraunaBorderRoute128ArtV2[] = INCBIN_U16("data/tilesets/secondary/arauna_border_route128_v2/metatile_attributes.bin");
+const u16 gMetatiles_AraunaBorderRoute103BaseV2[] = INCBIN_U16("data/tilesets/primary/arauna_border_route103_v2/metatiles.bin");
+const u16 gMetatileAttributes_AraunaBorderRoute103BaseV2[] = INCBIN_U16("data/tilesets/primary/arauna_border_route103_v2/metatile_attributes.bin");
+const u16 gMetatiles_AraunaBorderRoute103ArtV2[] = INCBIN_U16("data/tilesets/secondary/arauna_border_route103_v2/metatiles.bin");
+const u16 gMetatileAttributes_AraunaBorderRoute103ArtV2[] = INCBIN_U16("data/tilesets/secondary/arauna_border_route103_v2/metatile_attributes.bin");
+// BORDER_PRIORITY_V2_END

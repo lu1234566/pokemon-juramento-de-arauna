@@ -20,6 +20,9 @@ from connection_cache import rectangle
 from render_native_map import Renderer, words
 
 def compile_selector(folder):
+    if (ROOT/'src/data/arauna_border_priority_v2.h').exists():
+        from host_visual_selector_v2 import compile_selector as modern
+        return modern(folder)
     (folder/'global.h').write_text('''#include <stdint.h>
 #include <stddef.h>
 typedef uint16_t u16; typedef uint32_t u32; typedef int32_t s32; typedef uint8_t bool8;
@@ -80,7 +83,7 @@ int test_connection(int dir,int cw,int ch,int pw,int ph,int offset,int *out) {
 }
 ''')
     so=folder/'connections.so'
-    subprocess.run(['cc','-Wall','-Wextra','-Werror','-Wno-unused-parameter','-shared','-fPIC','-I'+str(folder),str(folder/'connections.c'),'-o',str(so)],check=True)
+    subprocess.run(['cc','-Wall','-Wextra','-Werror','-Wno-unused-parameter','-Wno-missing-field-initializers','-shared','-fPIC','-I'+str(folder),str(folder/'connections.c'),'-o',str(so)],check=True)
     dll=ctypes.CDLL(str(so));f=dll.test_connection
     f.argtypes=[ctypes.c_int]*6+[ctypes.POINTER(ctypes.c_int)];f.restype=ctypes.c_int
     return f
@@ -91,6 +94,9 @@ def main():
     args = parser.parse_args()
     layouts = {l['id']:l for l in json.loads((ROOT/'data/layouts/layouts.json').read_text())['layouts']}
     maps = {m['id']:m for p in (ROOT/'data/maps').glob('*/map.json') for m in [json.loads(p.read_text())]}
+    priority_path=ROOT/'review/grutas_bordas_v2/borders_build.json'
+    priority=json.loads(priority_path.read_text()) if priority_path.exists() else {'maps':{},'regions':[]}
+    priority_pairs={(r['receiver'],r['source']) for r in priority['regions']}
     banks = {}
     def render(l,before=False):
         secondary = l['secondary_tileset']
@@ -127,6 +133,7 @@ def main():
             receiver=int(m['name'][5:]) if m['name'] in CONFIG else 0
             for c in m.get('connections') or []:
                 if c['direction'] in ('dive','emerge'):continue
+                if (m['name'],maps[c['map']]['name']) in priority_pairs:continue # audited with all animation frames by validate_grutas_bordas_v2.py
                 other=layouts[maps[c['map']]['layout']];donor=render(other);grid=words(ROOT/other['blockdata_filepath'])
                 target=(m['name']=='Route119' and maps[c['map']]['name']=='Route118') or (m['name']=='Route118' and maps[c['map']]['name']=='Route119')
                 count=before_diff=after_diff=changed=0
@@ -177,8 +184,13 @@ def main():
             for name,(_,_,symbol,_) in CONFIG.items():
                 m=maps['MAP_'+name.upper()]
                 if m['layout']==l['id']:expected['secondary_tileset']='gTileset_'+symbol
+            for name,d in priority['maps'].items():
+                m=next(m for m in maps.values() if m['name']==name)
+                if m['layout']==l['id']:
+                    expected['primary_tileset']='gTileset_'+d['symbols'][0]
+                    expected['secondary_tileset']='gTileset_'+d['symbols'][1]
             assert new==expected,('unexpected layout edit',l['id'])
-    report={'status':'PASS','native_C_selector_compiled_and_checked':True,'engine_Fill_functions_compiled_and_checked':True,'own_maps':own,'all_cache_cells_checked':cache_checked,'exact_target':exact_target,'connections_changed':changed_connections,'connections_worsened':0,'fallback_checks':checks,'unchanged_base_map_files':base_files}
+    report={'status':'PASS','priority_directions_checked_by_separate_V2_validator':len(priority_pairs),'native_C_selector_compiled_and_checked':True,'engine_Fill_functions_compiled_and_checked':True,'own_maps':own,'all_cache_cells_checked':cache_checked,'exact_target':exact_target,'connections_changed':changed_connections,'connections_worsened':0,'fallback_checks':checks,'unchanged_base_map_files':base_files}
     print(json.dumps(report,indent=2))
 
 if __name__=='__main__':main()

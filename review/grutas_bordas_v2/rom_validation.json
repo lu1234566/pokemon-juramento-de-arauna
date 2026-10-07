@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "rom_sha256": "b8460e9e2d299ef75a18eda08597335f3fd9e8357eecb956ff7e9a35d41d1231",
+  "rom_file_bytes": 33554432,
+  "native_banks": 20,
+  "cave_grid_tables": 14,
+  "border_alias_tables": 10,
+  "native_animation_frames": 32,
+  "capture_harness_symbols": 0
+}

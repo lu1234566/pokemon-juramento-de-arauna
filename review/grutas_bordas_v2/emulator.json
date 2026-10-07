@@ -1,0 +1,744 @@
+{
+  "emulator": "mGBA 0.10.2 native core",
+  "method": "RAM-only boot hook for native full map load, removed before assertions. Native flashLevel=0 for review lighting; temporary RAM-only default-darkness initializer bypass restored before commands. Disk ROM untouched; no capture harness distributed.",
+  "rom_sha256": "b8460e9e2d299ef75a18eda08597335f3fd9e8357eecb956ff7e9a35d41d1231",
+  "cases": [
+    {
+      "map": "Route124",
+      "group": 0,
+      "number": 39,
+      "start_position": [
+        32,
+        79
+      ],
+      "case": "before_Route124_to_Route126",
+      "log": "where 0/39 32,79 flags=40\nPASS 2 native assertions; illegal_opcodes=0",
+      "image": "review/grutas_bordas_v2/mgba/before_Route124_to_Route126.png"
+    },
+    {
+      "map": "Route126",
+      "group": 0,
+      "number": 41,
+      "start_position": [
+        32,
+        0
+      ],
+      "case": "before_Route126_to_Route124",
+      "log": "where 0/41 32,0 flags=40\nPASS 2 native assertions; illegal_opcodes=0",
+      "image": "review/grutas_bordas_v2/mgba/before_Route126_to_Route124.png"
+    },
+    {
+      "map": "Route110",
+      "group": 0,
+      "number": 25,
+      "start_position": [
+        18,
+        0
+      ],
+      "case": "before_Route110_to_MauvilleCity",
+      "log": "where 0/25 18,0 flags=33\nPASS 2 native assertions; illegal_opcodes=0",
+      "image": "review/grutas_bordas_v2/mgba/before_Route110_to_MauvilleCity.png"
+    },
+    {
+      "map": "Route110",
+      "group": 0,
+      "number": 25,
+      "start_position": [
+        17,
+        99
+      ],
+      "case": "before_Route110_to_SlateportCity",
+      "log": "where 0/25 17,99 flags=33\nPASS 2 native assertions; illegal_opcodes=0",
+      "image": "review/grutas_bordas_v2/mgba/before_Route110_to_SlateportCity.png"
+    },
+    {
+      "map": "Route110",
+      "group": 0,
+      "number": 25,
+      "start_position": [
+        0,
+        67
+      ],
+      "case": "before_Route110_to_Route103",
+      "log": "where 0/25 0,67 flags=33\nPASS 2 native assertions; illegal_opcodes=0",
+      "image": "review/grutas_bordas_v2/mgba/before_Route110_to_Route103.png"
+    },
+    {
+      "map": "MauvilleCity",
+      "group": 0,
+      "number": 2,
+      "start_position": [
+        25,
+        37
+      ],
+      "case": "before_MauvilleCity_to_Route110",
+      "log": "where 0/2 25,37 flags=33\nPASS 2 native assertions; illegal_opcodes=0",
+      "image": "review/grutas_bordas_v2/mgba/before_MauvilleCity_to_Route110.png"
+    },
+    {
+      "map": "SlateportCity",
+      "group": 0,
+      "number": 1,
+      "start_position": [
+        27,
+        0
+      ],
+      "case": "before_SlateportCity_to_Route110",
+      "log": "where 0/1 27,0 flags=33\nPASS 2 native assertions; illegal_opcodes=0",
+      "image": "review/grutas_bordas_v2/mgba/before_SlateportCity_to_Route110.png"
+    },
+    {
+      "map": "EverGrandeCity",
+      "group": 0,
+      "number": 8,
+      "start_position": [
+        0,
+        40
+      ],
+      "case": "before_EverGrandeCity_to_Route128",
+      "log": "where 0/8 0,40 flags=40\nPASS 2 native assertions; illegal_opcodes=0",
+      "image": "review/grutas_bordas_v2/mgba/before_EverGrandeCity_to_Route128.png"
+    },
+    {
+      "map": "Route128",
+      "group": 0,
+      "number": 43,
+      "start_position": [
+        119,
+        20
+      ],
+      "case": "before_Route128_to_EverGrandeCity",
+      "log": "where 0/43 119,20 flags=40\nPASS 2 native assertions; illegal_opcodes=0",
+      "image": "review/grutas_bordas_v2/mgba/before_Route128_to_EverGrandeCity.png"
+    },
+    {
+      "map": "Route103",
+      "group": 0,
+      "number": 18,
+      "start_position": [
+        79,
+        11
+      ],
+      "case": "before_Route103_to_Route110",
+      "log": "where 0/18 79,11 flags=33\nPASS 2 native assertions; illegal_opcodes=0",
+      "image": "review/grutas_bordas_v2/mgba/before_Route103_to_Route110.png"
+    },
+    {
+      "map": "VictoryRoad_1F",
+      "group": 24,
+      "number": 43,
+      "start_position": [
+        23,
+        22
+      ],
+      "case": "before_VictoryRoad_1F",
+      "log": "where 24/43 23,22 flags=33\nPASS 2 native assertions; illegal_opcodes=0",
+      "image": "review/grutas_bordas_v2/mgba/before_VictoryRoad_1F.png"
+    },
+    {
+      "map": "VictoryRoad_B1F",
+      "group": 24,
+      "number": 44,
+      "start_position": [
+        22,
+        13
+      ],
+      "case": "before_VictoryRoad_B1F",
+      "log": "where 24/44 22,13 flags=33\nPASS 2 native assertions; illegal_opcodes=0",
+      "image": "review/grutas_bordas_v2/mgba/before_VictoryRoad_B1F.png"
+    },
+    {
+      "map": "VictoryRoad_B2F",
+      "group": 24,
+      "number": 45,
+      "start_position": [
+        20,
+        13
+      ],
+      "case": "before_VictoryRoad_B2F",
+      "log": "where 24/45 20,13 flags=33\nPASS 2 native assertions; illegal_opcodes=0",
+      "image": "review/grutas_bordas_v2/mgba/before_VictoryRoad_B2F.png"
+    },
+    {
+      "map": "SeafloorCavern_Room6",
+      "group": 24,
+      "number": 33,
+      "start_position": [
+        12,
+        20
+      ],
+      "case": "before_SeafloorCavern_Room6",
+      "log": "where 24/33 12,20 flags=33\nPASS 2 native assertions; illegal_opcodes=0",
+      "image": "review/grutas_bordas_v2/mgba/before_SeafloorCavern_Room6.png"
+    },
+    {
+      "map": "Route114_LanettesHouse",
+      "group": 20,
+      "number": 2,
+      "start_position": [
+        5,
+        3
+      ],
+      "case": "before_Route114_LanettesHouse",
+      "log": "where 20/2 5,3 flags=33\nPASS 2 native assertions; illegal_opcodes=0",
+      "image": "review/grutas_bordas_v2/mgba/before_Route114_LanettesHouse.png"
+    },
+    {
+      "map": "Route124",
+      "group": 0,
+      "number": 39,
+      "start_position": [
+        40,
+        79
+      ],
+      "case": "before_detail_Route124_to_Route126",
+      "log": "where 0/39 40,79 flags=40\nPASS 2 native assertions; illegal_opcodes=0",
+      "image": "review/grutas_bordas_v2/mgba/before_detail_Route124_to_Route126.png"
+    },
+    {
+      "map": "Route126",
+      "group": 0,
+      "number": 41,
+      "start_position": [
+        45,
+        0
+      ],
+      "case": "before_detail_Route126_to_Route124",
+      "log": "where 0/41 45,0 flags=33\nPASS 2 native assertions; illegal_opcodes=0",
+      "image": "review/grutas_bordas_v2/mgba/before_detail_Route126_to_Route124.png"
+    },
+    {
+      "map": "Route110",
+      "group": 0,
+      "number": 25,
+      "start_position": [
+        28,
+        0
+      ],
+      "case": "before_detail_Route110_to_MauvilleCity",
+      "log": "where 0/25 28,0 flags=33\nPASS 2 native assertions; illegal_opcodes=0",
+      "image": "review/grutas_bordas_v2/mgba/before_detail_Route110_to_MauvilleCity.png"
+    },
+    {
+      "map": "Route110",
+      "group": 0,
+      "number": 25,
+      "start_position": [
+        20,
+        99
+      ],
+      "case": "before_detail_Route110_to_SlateportCity",
+      "log": "where 0/25 20,99 flags=33\nPASS 2 native assertions; illegal_opcodes=0",
+      "image": "review/grutas_bordas_v2/mgba/before_detail_Route110_to_SlateportCity.png"
+    },
+    {
+      "map": "Route110",
+      "group": 0,
+      "number": 25,
+      "start_position": [
+        0,
+        69
+      ],
+      "case": "before_detail_Route110_to_Route103",
+      "log": "where 0/25 0,69 flags=33\nPASS 2 native assertions; illegal_opcodes=0",
+      "image": "review/grutas_bordas_v2/mgba/before_detail_Route110_to_Route103.png"
+    },
+    {
+      "map": "MauvilleCity",
+      "group": 0,
+      "number": 2,
+      "start_position": [
+        25,
+        37
+      ],
+      "case": "before_detail_MauvilleCity_to_Route110",
+      "log": "where 0/2 25,37 flags=33\nPASS 2 native assertions; illegal_opcodes=0",
+      "image": "review/grutas_bordas_v2/mgba/before_detail_MauvilleCity_to_Route110.png"
+    },
+    {
+      "map": "SlateportCity",
+      "group": 0,
+      "number": 1,
+      "start_position": [
+        20,
+        0
+      ],
+      "case": "before_detail_SlateportCity_to_Route110",
+      "log": "where 0/1 20,0 flags=33\nPASS 2 native assertions; illegal_opcodes=0",
+      "image": "review/grutas_bordas_v2/mgba/before_detail_SlateportCity_to_Route110.png"
+    },
+    {
+      "map": "EverGrandeCity",
+      "group": 0,
+      "number": 8,
+      "start_position": [
+        0,
+        34
+      ],
+      "case": "before_detail_EverGrandeCity_to_Route128",
+      "log": "where 0/8 0,34 flags=33\nPASS 2 native assertions; illegal_opcodes=0",
+      "image": "review/grutas_bordas_v2/mgba/before_detail_EverGrandeCity_to_Route128.png"
+    },
+    {
+      "map": "Route128",
+      "group": 0,
+      "number": 43,
+      "start_position": [
+        119,
+        27
+      ],
+      "case": "before_detail_Route128_to_EverGrandeCity",
+      "log": "where 0/43 119,27 flags=40\nPASS 2 native assertions; illegal_opcodes=0",
+      "image": "review/grutas_bordas_v2/mgba/before_detail_Route128_to_EverGrandeCity.png"
+    },
+    {
+      "map": "Route103",
+      "group": 0,
+      "number": 18,
+      "start_position": [
+        79,
+        9
+      ],
+      "case": "before_detail_Route103_to_Route110",
+      "log": "where 0/18 79,9 flags=33\nPASS 2 native assertions; illegal_opcodes=0",
+      "image": "review/grutas_bordas_v2/mgba/before_detail_Route103_to_Route110.png"
+    },
+    {
+      "map": "VictoryRoad_1F",
+      "group": 24,
+      "number": 43,
+      "start_position": [
+        23,
+        22
+      ],
+      "case": "VictoryRoad_1F",
+      "log": "where 24/43 23,22 flags=33\nPASS 2 native assertions; illegal_opcodes=0",
+      "image": "review/grutas_bordas_v2/mgba/VictoryRoad_1F.png"
+    },
+    {
+      "map": "VictoryRoad_B1F",
+      "group": 24,
+      "number": 44,
+      "start_position": [
+        22,
+        13
+      ],
+      "case": "VictoryRoad_B1F",
+      "log": "where 24/44 22,13 flags=33\nPASS 2 native assertions; illegal_opcodes=0",
+      "image": "review/grutas_bordas_v2/mgba/VictoryRoad_B1F.png"
+    },
+    {
+      "map": "VictoryRoad_B2F",
+      "group": 24,
+      "number": 45,
+      "start_position": [
+        20,
+        13
+      ],
+      "case": "VictoryRoad_B2F",
+      "log": "where 24/45 20,13 flags=33\nPASS 2 native assertions; illegal_opcodes=0",
+      "image": "review/grutas_bordas_v2/mgba/VictoryRoad_B2F.png"
+    },
+    {
+      "map": "SeafloorCavern_Entrance",
+      "group": 24,
+      "number": 27,
+      "start_position": [
+        10,
+        7
+      ],
+      "case": "SeafloorCavern_Entrance",
+      "log": "where 24/27 10,7 flags=33\nPASS 2 native assertions; illegal_opcodes=0",
+      "image": "review/grutas_bordas_v2/mgba/SeafloorCavern_Entrance.png"
+    },
+    {
+      "map": "SeafloorCavern_Room1",
+      "group": 24,
+      "number": 28,
+      "start_position": [
+        10,
+        11
+      ],
+      "case": "SeafloorCavern_Room1",
+      "log": "where 24/28 10,11 flags=33\nPASS 2 native assertions; illegal_opcodes=0",
+      "image": "review/grutas_bordas_v2/mgba/SeafloorCavern_Room1.png"
+    },
+    {
+      "map": "SeafloorCavern_Room2",
+      "group": 24,
+      "number": 29,
+      "start_position": [
+        10,
+        6
+      ],
+      "case": "SeafloorCavern_Room2",
+      "log": "where 24/29 10,6 flags=33\nPASS 2 native assertions; illegal_opcodes=0",
+      "image": "review/grutas_bordas_v2/mgba/SeafloorCavern_Room2.png"
+    },
+    {
+      "map": "SeafloorCavern_Room3",
+      "group": 24,
+      "number": 30,
+      "start_position": [
+        6,
+        11
+      ],
+      "case": "SeafloorCavern_Room3",
+      "log": "where 24/30 6,11 flags=33\nPASS 2 native assertions; illegal_opcodes=0",
+      "image": "review/grutas_bordas_v2/mgba/SeafloorCavern_Room3.png"
+    },
+    {
+      "map": "SeafloorCavern_Room4",
+      "group": 24,
+      "number": 31,
+      "start_position": [
+        10,
+        11
+      ],
+      "case": "SeafloorCavern_Room4",
+      "log": "where 24/31 10,11 flags=33\nPASS 2 native assertions; illegal_opcodes=0",
+      "image": "review/grutas_bordas_v2/mgba/SeafloorCavern_Room4.png"
+    },
+    {
+      "map": "SeafloorCavern_Room5",
+      "group": 24,
+      "number": 32,
+      "start_position": [
+        10,
+        8
+      ],
+      "case": "SeafloorCavern_Room5",
+      "log": "where 24/32 10,8 flags=33\nPASS 2 native assertions; illegal_opcodes=0",
+      "image": "review/grutas_bordas_v2/mgba/SeafloorCavern_Room5.png"
+    },
+    {
+      "map": "SeafloorCavern_Room6",
+      "group": 24,
+      "number": 33,
+      "start_position": [
+        12,
+        20
+      ],
+      "case": "SeafloorCavern_Room6",
+      "log": "where 24/33 12,20 flags=33\nPASS 2 native assertions; illegal_opcodes=0",
+      "image": "review/grutas_bordas_v2/mgba/SeafloorCavern_Room6.png"
+    },
+    {
+      "map": "SeafloorCavern_Room7",
+      "group": 24,
+      "number": 34,
+      "start_position": [
+        8,
+        21
+      ],
+      "case": "SeafloorCavern_Room7",
+      "log": "where 24/34 8,21 flags=33\nPASS 2 native assertions; illegal_opcodes=0",
+      "image": "review/grutas_bordas_v2/mgba/SeafloorCavern_Room7.png"
+    },
+    {
+      "map": "SeafloorCavern_Room8",
+      "group": 24,
+      "number": 35,
+      "start_position": [
+        5,
+        6
+      ],
+      "case": "SeafloorCavern_Room8",
+      "log": "where 24/35 5,6 flags=33\nPASS 2 native assertions; illegal_opcodes=0",
+      "image": "review/grutas_bordas_v2/mgba/SeafloorCavern_Room8.png"
+    },
+    {
+      "map": "SeafloorCavern_Room9",
+      "group": 24,
+      "number": 36,
+      "start_position": [
+        13,
+        23
+      ],
+      "case": "SeafloorCavern_Room9",
+      "log": "where 24/36 13,23 flags=33\nPASS 2 native assertions; illegal_opcodes=0",
+      "image": "review/grutas_bordas_v2/mgba/SeafloorCavern_Room9.png"
+    },
+    {
+      "map": "Route114_LanettesHouse",
+      "group": 20,
+      "number": 2,
+      "start_position": [
+        5,
+        3
+      ],
+      "case": "Route114_LanettesHouse",
+      "log": "where 20/2 5,3 flags=33\nPASS 2 native assertions; illegal_opcodes=0",
+      "image": "review/grutas_bordas_v2/mgba/Route114_LanettesHouse.png"
+    },
+    {
+      "map": "SeafloorCavern_Room6",
+      "group": 24,
+      "number": 33,
+      "start_position": [
+        5,
+        5
+      ],
+      "case": "Seafloor_water_animation",
+      "log": "VRAM changed 214 bytes\nwhere 24/33 5,5 flags=33\nPASS 3 native assertions; illegal_opcodes=0",
+      "image": "review/grutas_bordas_v2/mgba/Seafloor_water_animation.png"
+    },
+    {
+      "map": "VictoryRoad_1F",
+      "group": 24,
+      "number": 43,
+      "start_position": [
+        21,
+        31
+      ],
+      "case": "Victory_stair_to_B1F",
+      "log": "where 24/44 20,21 flags=33\nPASS 3 native assertions; illegal_opcodes=0",
+      "image": "review/grutas_bordas_v2/mgba/Victory_stair_to_B1F.png"
+    },
+    {
+      "map": "Route124",
+      "group": 0,
+      "number": 39,
+      "start_position": [
+        32,
+        79
+      ],
+      "case": "after_Route124_to_Route126",
+      "log": "where 0/41 32,0 flags=8\nPASS 3 native assertions; illegal_opcodes=0",
+      "image": "review/grutas_bordas_v2/mgba/after_Route124_to_Route126.png"
+    },
+    {
+      "map": "Route126",
+      "group": 0,
+      "number": 41,
+      "start_position": [
+        32,
+        0
+      ],
+      "case": "after_Route126_to_Route124",
+      "log": "where 0/39 32,79 flags=8\nPASS 3 native assertions; illegal_opcodes=0",
+      "image": "review/grutas_bordas_v2/mgba/after_Route126_to_Route124.png"
+    },
+    {
+      "map": "Route110",
+      "group": 0,
+      "number": 25,
+      "start_position": [
+        18,
+        0
+      ],
+      "case": "after_Route110_to_MauvilleCity",
+      "log": "where 0/2 26,37 flags=1\nPASS 3 native assertions; illegal_opcodes=0",
+      "image": "review/grutas_bordas_v2/mgba/after_Route110_to_MauvilleCity.png"
+    },
+    {
+      "map": "Route110",
+      "group": 0,
+      "number": 25,
+      "start_position": [
+        17,
+        99
+      ],
+      "case": "after_Route110_to_SlateportCity",
+      "log": "where 0/1 29,0 flags=1\nPASS 3 native assertions; illegal_opcodes=0",
+      "image": "review/grutas_bordas_v2/mgba/after_Route110_to_SlateportCity.png"
+    },
+    {
+      "map": "Route110",
+      "group": 0,
+      "number": 25,
+      "start_position": [
+        0,
+        67
+      ],
+      "case": "after_Route110_to_Route103",
+      "log": "where 0/18 79,7 flags=1\nPASS 3 native assertions; illegal_opcodes=0",
+      "image": "review/grutas_bordas_v2/mgba/after_Route110_to_Route103.png"
+    },
+    {
+      "map": "MauvilleCity",
+      "group": 0,
+      "number": 2,
+      "start_position": [
+        25,
+        37
+      ],
+      "case": "after_MauvilleCity_to_Route110",
+      "log": "where 0/25 17,0 flags=1\nPASS 3 native assertions; illegal_opcodes=0",
+      "image": "review/grutas_bordas_v2/mgba/after_MauvilleCity_to_Route110.png"
+    },
+    {
+      "map": "SlateportCity",
+      "group": 0,
+      "number": 1,
+      "start_position": [
+        27,
+        0
+      ],
+      "case": "after_SlateportCity_to_Route110",
+      "log": "where 0/25 15,99 flags=1\nPASS 3 native assertions; illegal_opcodes=0",
+      "image": "review/grutas_bordas_v2/mgba/after_SlateportCity_to_Route110.png"
+    },
+    {
+      "map": "EverGrandeCity",
+      "group": 0,
+      "number": 8,
+      "start_position": [
+        0,
+        40
+      ],
+      "case": "after_EverGrandeCity_to_Route128",
+      "log": "where 0/43 119,16 flags=8\nPASS 3 native assertions; illegal_opcodes=0",
+      "image": "review/grutas_bordas_v2/mgba/after_EverGrandeCity_to_Route128.png"
+    },
+    {
+      "map": "Route128",
+      "group": 0,
+      "number": 43,
+      "start_position": [
+        119,
+        20
+      ],
+      "case": "after_Route128_to_EverGrandeCity",
+      "log": "where 0/8 0,44 flags=8\nPASS 3 native assertions; illegal_opcodes=0",
+      "image": "review/grutas_bordas_v2/mgba/after_Route128_to_EverGrandeCity.png"
+    },
+    {
+      "map": "Route103",
+      "group": 0,
+      "number": 18,
+      "start_position": [
+        79,
+        11
+      ],
+      "case": "after_Route103_to_Route110",
+      "log": "where 0/25 0,71 flags=1\nPASS 3 native assertions; illegal_opcodes=0",
+      "image": "review/grutas_bordas_v2/mgba/after_Route103_to_Route110.png"
+    },
+    {
+      "map": "Route124",
+      "group": 0,
+      "number": 39,
+      "start_position": [
+        40,
+        79
+      ],
+      "case": "after_detail_Route124_to_Route126",
+      "log": "where 0/39 40,79 flags=40\nPASS 2 native assertions; illegal_opcodes=0",
+      "image": "review/grutas_bordas_v2/mgba/after_detail_Route124_to_Route126.png"
+    },
+    {
+      "map": "Route126",
+      "group": 0,
+      "number": 41,
+      "start_position": [
+        45,
+        0
+      ],
+      "case": "after_detail_Route126_to_Route124",
+      "log": "where 0/41 45,0 flags=33\nPASS 2 native assertions; illegal_opcodes=0",
+      "image": "review/grutas_bordas_v2/mgba/after_detail_Route126_to_Route124.png"
+    },
+    {
+      "map": "Route110",
+      "group": 0,
+      "number": 25,
+      "start_position": [
+        28,
+        0
+      ],
+      "case": "after_detail_Route110_to_MauvilleCity",
+      "log": "where 0/25 28,0 flags=33\nPASS 2 native assertions; illegal_opcodes=0",
+      "image": "review/grutas_bordas_v2/mgba/after_detail_Route110_to_MauvilleCity.png"
+    },
+    {
+      "map": "Route110",
+      "group": 0,
+      "number": 25,
+      "start_position": [
+        20,
+        99
+      ],
+      "case": "after_detail_Route110_to_SlateportCity",
+      "log": "where 0/25 20,99 flags=33\nPASS 2 native assertions; illegal_opcodes=0",
+      "image": "review/grutas_bordas_v2/mgba/after_detail_Route110_to_SlateportCity.png"
+    },
+    {
+      "map": "Route110",
+      "group": 0,
+      "number": 25,
+      "start_position": [
+        0,
+        69
+      ],
+      "case": "after_detail_Route110_to_Route103",
+      "log": "where 0/25 0,69 flags=33\nPASS 2 native assertions; illegal_opcodes=0",
+      "image": "review/grutas_bordas_v2/mgba/after_detail_Route110_to_Route103.png"
+    },
+    {
+      "map": "MauvilleCity",
+      "group": 0,
+      "number": 2,
+      "start_position": [
+        25,
+        37
+      ],
+      "case": "after_detail_MauvilleCity_to_Route110",
+      "log": "where 0/2 25,37 flags=33\nPASS 2 native assertions; illegal_opcodes=0",
+      "image": "review/grutas_bordas_v2/mgba/after_detail_MauvilleCity_to_Route110.png"
+    },
+    {
+      "map": "SlateportCity",
+      "group": 0,
+      "number": 1,
+      "start_position": [
+        20,
+        0
+      ],
+      "case": "after_detail_SlateportCity_to_Route110",
+      "log": "where 0/1 20,0 flags=33\nPASS 2 native assertions; illegal_opcodes=0",
+      "image": "review/grutas_bordas_v2/mgba/after_detail_SlateportCity_to_Route110.png"
+    },
+    {
+      "map": "EverGrandeCity",
+      "group": 0,
+      "number": 8,
+      "start_position": [
+        0,
+        34
+      ],
+      "case": "after_detail_EverGrandeCity_to_Route128",
+      "log": "where 0/8 0,34 flags=33\nPASS 2 native assertions; illegal_opcodes=0",
+      "image": "review/grutas_bordas_v2/mgba/after_detail_EverGrandeCity_to_Route128.png"
+    },
+    {
+      "map": "Route128",
+      "group": 0,
+      "number": 43,
+      "start_position": [
+        119,
+        27
+      ],
+      "case": "after_detail_Route128_to_EverGrandeCity",
+      "log": "where 0/43 119,27 flags=40\nPASS 2 native assertions; illegal_opcodes=0",
+      "image": "review/grutas_bordas_v2/mgba/after_detail_Route128_to_EverGrandeCity.png"
+    },
+    {
+      "map": "Route103",
+      "group": 0,
+      "number": 18,
+      "start_position": [
+        79,
+        9
+      ],
+      "case": "after_detail_Route103_to_Route110",
+      "log": "where 0/18 79,9 flags=33\nPASS 2 native assertions; illegal_opcodes=0",
+      "image": "review/grutas_bordas_v2/mgba/after_detail_Route103_to_Route110.png"
+    }
+  ],
+  "status": "PASS",
+  "baseline_rom_sha256": "045b082d9dfc69ebb267f23d60b4055f6cbda108eae0c46df7c6ba7459f8bfaf",
+  "unique_capture_cases": 61,
+  "directed_border_crossings": 10,
+  "final_rom_sha256": "b8460e9e2d299ef75a18eda08597335f3fd9e8357eecb956ff7e9a35d41d1231"
+}

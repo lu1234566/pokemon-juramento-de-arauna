@@ -3100,3 +3100,166 @@ const struct Tileset gTileset_AraunaGrutasVictoryRochaV1 =
     .callback = NULL,
 };
 // CAMPANHA_GRUTAS_V1_END
+
+// BORDER_PRIORITY_V2_BEGIN
+const struct Tileset gTileset_AraunaBorderRoute124BaseV2 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AraunaBorderRoute124BaseV2,
+    .palettes = gTilesetPalettes_AraunaBorderRoute124BaseV2,
+    .metatiles = gMetatiles_AraunaBorderRoute124BaseV2,
+    .metatileAttributes = gMetatileAttributes_AraunaBorderRoute124BaseV2,
+    .callback = InitTilesetAnim_General,
+};
+const struct Tileset gTileset_AraunaBorderRoute124ArtV2 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaBorderRoute124ArtV2,
+    .palettes = gTilesetPalettes_AraunaBorderRoute124ArtV2,
+    .metatiles = gMetatiles_AraunaBorderRoute124ArtV2,
+    .metatileAttributes = gMetatileAttributes_AraunaBorderRoute124ArtV2,
+    .callback = InitTilesetAnim_Mossdeep,
+};
+const struct Tileset gTileset_AraunaBorderRoute126BaseV2 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AraunaBorderRoute126BaseV2,
+    .palettes = gTilesetPalettes_AraunaBorderRoute126BaseV2,
+    .metatiles = gMetatiles_AraunaBorderRoute126BaseV2,
+    .metatileAttributes = gMetatileAttributes_AraunaBorderRoute126BaseV2,
+    .callback = InitTilesetAnim_General,
+};
+const struct Tileset gTileset_AraunaBorderRoute126ArtV2 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaBorderRoute126ArtV2,
+    .palettes = gTilesetPalettes_AraunaBorderRoute126ArtV2,
+    .metatiles = gMetatiles_AraunaBorderRoute126ArtV2,
+    .metatileAttributes = gMetatileAttributes_AraunaBorderRoute126ArtV2,
+    .callback = InitTilesetAnim_Mossdeep,
+};
+const struct Tileset gTileset_AraunaBorderRoute110BaseV2 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AraunaBorderRoute110BaseV2,
+    .palettes = gTilesetPalettes_AraunaBorderRoute110BaseV2,
+    .metatiles = gMetatiles_AraunaBorderRoute110BaseV2,
+    .metatileAttributes = gMetatileAttributes_AraunaBorderRoute110BaseV2,
+    .callback = InitTilesetAnim_General,
+};
+const struct Tileset gTileset_AraunaBorderRoute110ArtV2 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaBorderRoute110ArtV2,
+    .palettes = gTilesetPalettes_AraunaBorderRoute110ArtV2,
+    .metatiles = gMetatiles_AraunaBorderRoute110ArtV2,
+    .metatileAttributes = gMetatileAttributes_AraunaBorderRoute110ArtV2,
+    .callback = InitTilesetAnim_Mauville,
+};
+const struct Tileset gTileset_AraunaBorderMauvilleCityBaseV2 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AraunaBorderMauvilleCityBaseV2,
+    .palettes = gTilesetPalettes_AraunaBorderMauvilleCityBaseV2,
+    .metatiles = gMetatiles_AraunaBorderMauvilleCityBaseV2,
+    .metatileAttributes = gMetatileAttributes_AraunaBorderMauvilleCityBaseV2,
+    .callback = InitTilesetAnim_General,
+};
+const struct Tileset gTileset_AraunaBorderMauvilleCityArtV2 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaBorderMauvilleCityArtV2,
+    .palettes = gTilesetPalettes_AraunaBorderMauvilleCityArtV2,
+    .metatiles = gMetatiles_AraunaBorderMauvilleCityArtV2,
+    .metatileAttributes = gMetatileAttributes_AraunaBorderMauvilleCityArtV2,
+    .callback = NULL,
+};
+const struct Tileset gTileset_AraunaBorderSlateportCityBaseV2 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AraunaBorderSlateportCityBaseV2,
+    .palettes = gTilesetPalettes_AraunaBorderSlateportCityBaseV2,
+    .metatiles = gMetatiles_AraunaBorderSlateportCityBaseV2,
+    .metatileAttributes = gMetatileAttributes_AraunaBorderSlateportCityBaseV2,
+    .callback = InitTilesetAnim_General,
+};
+const struct Tileset gTileset_AraunaBorderSlateportCityArtV2 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaBorderSlateportCityArtV2,
+    .palettes = gTilesetPalettes_AraunaBorderSlateportCityArtV2,
+    .metatiles = gMetatiles_AraunaBorderSlateportCityArtV2,
+    .metatileAttributes = gMetatileAttributes_AraunaBorderSlateportCityArtV2,
+    .callback = NULL,
+};
+const struct Tileset gTileset_AraunaBorderEverGrandeCityBaseV2 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AraunaBorderEverGrandeCityBaseV2,
+    .palettes = gTilesetPalettes_AraunaBorderEverGrandeCityBaseV2,
+    .metatiles = gMetatiles_AraunaBorderEverGrandeCityBaseV2,
+    .metatileAttributes = gMetatileAttributes_AraunaBorderEverGrandeCityBaseV2,
+    .callback = InitTilesetAnim_General,
+};
+const struct Tileset gTileset_AraunaBorderEverGrandeCityArtV2 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaBorderEverGrandeCityArtV2,
+    .palettes = gTilesetPalettes_AraunaBorderEverGrandeCityArtV2,
+    .metatiles = gMetatiles_AraunaBorderEverGrandeCityArtV2,
+    .metatileAttributes = gMetatileAttributes_AraunaBorderEverGrandeCityArtV2,
+    .callback = InitTilesetAnim_EverGrande,
+};
+const struct Tileset gTileset_AraunaBorderRoute128BaseV2 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AraunaBorderRoute128BaseV2,
+    .palettes = gTilesetPalettes_AraunaBorderRoute128BaseV2,
+    .metatiles = gMetatiles_AraunaBorderRoute128BaseV2,
+    .metatileAttributes = gMetatileAttributes_AraunaBorderRoute128BaseV2,
+    .callback = InitTilesetAnim_General,
+};
+const struct Tileset gTileset_AraunaBorderRoute128ArtV2 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaBorderRoute128ArtV2,
+    .palettes = gTilesetPalettes_AraunaBorderRoute128ArtV2,
+    .metatiles = gMetatiles_AraunaBorderRoute128ArtV2,
+    .metatileAttributes = gMetatileAttributes_AraunaBorderRoute128ArtV2,
+    .callback = InitTilesetAnim_Mossdeep,
+};
+const struct Tileset gTileset_AraunaBorderRoute103BaseV2 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AraunaBorderRoute103BaseV2,
+    .palettes = gTilesetPalettes_AraunaBorderRoute103BaseV2,
+    .metatiles = gMetatiles_AraunaBorderRoute103BaseV2,
+    .metatileAttributes = gMetatileAttributes_AraunaBorderRoute103BaseV2,
+    .callback = InitTilesetAnim_General,
+};
+const struct Tileset gTileset_AraunaBorderRoute103ArtV2 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaBorderRoute103ArtV2,
+    .palettes = gTilesetPalettes_AraunaBorderRoute103ArtV2,
+    .metatiles = gMetatiles_AraunaBorderRoute103ArtV2,
+    .metatileAttributes = gMetatileAttributes_AraunaBorderRoute103ArtV2,
+    .callback = NULL,
+};
+// BORDER_PRIORITY_V2_END

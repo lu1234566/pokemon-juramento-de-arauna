@@ -1,0 +1,16 @@
+/workspace/scratch/d023984cb14b/arauna/tools/arauna_maps/validate_grutas_bordas_v2.py:98: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.
+  p=ROOT/path;im=Image.open(p/'tiles.png');assert im.mode=='P' and max(im.getdata())<=15
+{
+  "status": "PASS",
+  "base_commit": "73312e48f3542a78377024913fcaf44da5e771c0",
+  "unchanged_map_script_grid_and_animation_files": 2471,
+  "layout_ID_order_preserved": true,
+  "cave_alias_cells": 5812,
+  "script_and_scope_fallback_checks": 56687,
+  "all_directed_connections": 134,
+  "cache_cells_checked": 40512,
+  "eight_animation_frames_target_cells_checked": 27600,
+  "target_directions": 10,
+  "target_differences_after": 0,
+  "other_directions_changed": 0
+}

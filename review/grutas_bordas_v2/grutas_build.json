@@ -1,0 +1,267 @@
+{
+  "base_commit": "73312e48f3542a78377024913fcaf44da5e771c0",
+  "maps": {
+    "VictoryRoad_1F": {
+      "cells": 2070,
+      "visual_alias_cells": 1321,
+      "layout_index": 162,
+      "primary": "data/tilesets/primary/arauna_grutas_victory_base_v1",
+      "secondary": "data/tilesets/secondary/arauna_grutas_victory_rocha_v1"
+    },
+    "VictoryRoad_B1F": {
+      "cells": 1426,
+      "visual_alias_cells": 912,
+      "layout_index": 284,
+      "primary": "data/tilesets/primary/arauna_grutas_victory_base_v1",
+      "secondary": "data/tilesets/secondary/arauna_grutas_victory_rocha_v1"
+    },
+    "VictoryRoad_B2F": {
+      "cells": 1426,
+      "visual_alias_cells": 739,
+      "layout_index": 285,
+      "primary": "data/tilesets/primary/arauna_grutas_victory_base_v1",
+      "secondary": "data/tilesets/secondary/arauna_grutas_victory_rocha_v1"
+    },
+    "SeafloorCavern_Entrance": {
+      "cells": 400,
+      "visual_alias_cells": 220,
+      "layout_index": 146,
+      "primary": "data/tilesets/primary/arauna_grutas_seafloor_base_v1",
+      "secondary": "data/tilesets/secondary/arauna_grutas_seafloor_rocha_v1"
+    },
+    "SeafloorCavern_Room1": {
+      "cells": 420,
+      "visual_alias_cells": 227,
+      "layout_index": 147,
+      "primary": "data/tilesets/primary/arauna_grutas_seafloor_base_v1",
+      "secondary": "data/tilesets/secondary/arauna_grutas_seafloor_rocha_v1"
+    },
+    "SeafloorCavern_Room2": {
+      "cells": 216,
+      "visual_alias_cells": 169,
+      "layout_index": 148,
+      "primary": "data/tilesets/primary/arauna_grutas_seafloor_base_v1",
+      "secondary": "data/tilesets/secondary/arauna_grutas_seafloor_rocha_v1"
+    },
+    "SeafloorCavern_Room3": {
+      "cells": 272,
+      "visual_alias_cells": 170,
+      "layout_index": 149,
+      "primary": "data/tilesets/primary/arauna_grutas_seafloor_base_v1",
+      "secondary": "data/tilesets/secondary/arauna_grutas_seafloor_rocha_v1"
+    },
+    "SeafloorCavern_Room4": {
+      "cells": 342,
+      "visual_alias_cells": 216,
+      "layout_index": 150,
+      "primary": "data/tilesets/primary/arauna_grutas_seafloor_base_v1",
+      "secondary": "data/tilesets/secondary/arauna_grutas_seafloor_rocha_v1"
+    },
+    "SeafloorCavern_Room5": {
+      "cells": 400,
+      "visual_alias_cells": 277,
+      "layout_index": 151,
+      "primary": "data/tilesets/primary/arauna_grutas_seafloor_base_v1",
+      "secondary": "data/tilesets/secondary/arauna_grutas_seafloor_rocha_v1"
+    },
+    "SeafloorCavern_Room6": {
+      "cells": 552,
+      "visual_alias_cells": 230,
+      "layout_index": 152,
+      "primary": "data/tilesets/primary/arauna_grutas_seafloor_base_v1",
+      "secondary": "data/tilesets/secondary/arauna_grutas_seafloor_correntes_v1"
+    },
+    "SeafloorCavern_Room7": {
+      "cells": 575,
+      "visual_alias_cells": 222,
+      "layout_index": 153,
+      "primary": "data/tilesets/primary/arauna_grutas_seafloor_base_v1",
+      "secondary": "data/tilesets/secondary/arauna_grutas_seafloor_correntes_v1"
+    },
+    "SeafloorCavern_Room8": {
+      "cells": 154,
+      "visual_alias_cells": 107,
+      "layout_index": 154,
+      "primary": "data/tilesets/primary/arauna_grutas_seafloor_base_v1",
+      "secondary": "data/tilesets/secondary/arauna_grutas_seafloor_rocha_v1"
+    },
+    "SeafloorCavern_Room9": {
+      "cells": 1242,
+      "visual_alias_cells": 972,
+      "layout_index": 155,
+      "primary": "data/tilesets/primary/arauna_grutas_seafloor_base_v1",
+      "secondary": "data/tilesets/secondary/arauna_grutas_seafloor_rocha_v1"
+    },
+    "Route114_LanettesHouse": {
+      "cells": 88,
+      "visual_alias_cells": 30,
+      "all_free_cells_are_floor_except_marked_exit": true,
+      "layout_index": 120,
+      "primary": "data/tilesets/primary/arauna_rota_base_v1",
+      "secondary": "data/tilesets/secondary/arauna_rota_tecnica_v1"
+    }
+  },
+  "banks": {
+    "gTileset_AraunaGrutasVictoryRochaV1": {
+      "primary": "data/tilesets/primary/arauna_grutas_victory_base_v1",
+      "secondary": "data/tilesets/secondary/arauna_grutas_victory_rocha_v1",
+      "alias_count": 44,
+      "new_static_graphics_slots": [
+        554,
+        555,
+        556,
+        557,
+        558,
+        559,
+        560,
+        561,
+        562,
+        563,
+        564,
+        565,
+        566,
+        567,
+        568,
+        569,
+        570,
+        571,
+        572,
+        573,
+        574,
+        575,
+        576,
+        577,
+        578,
+        579,
+        580,
+        581,
+        582,
+        583,
+        584,
+        585,
+        586,
+        587,
+        588,
+        589,
+        590,
+        591,
+        592
+      ],
+      "original_callbacks": [
+        "InitTilesetAnim_AraunaGrutasVictoryV1",
+        "NULL"
+      ]
+    },
+    "gTileset_AraunaGrutasSeafloorRochaV1": {
+      "primary": "data/tilesets/primary/arauna_grutas_seafloor_base_v1",
+      "secondary": "data/tilesets/secondary/arauna_grutas_seafloor_rocha_v1",
+      "alias_count": 33,
+      "new_static_graphics_slots": [
+        554,
+        555,
+        556,
+        557,
+        558,
+        559,
+        560,
+        561,
+        562,
+        563,
+        564,
+        565,
+        566,
+        567,
+        568,
+        569,
+        570,
+        571,
+        572,
+        573,
+        574,
+        575,
+        576,
+        577,
+        578,
+        579,
+        580,
+        581,
+        582,
+        583,
+        584,
+        585
+      ],
+      "original_callbacks": [
+        "InitTilesetAnim_AraunaGrutasSeafloorV1",
+        "NULL"
+      ]
+    },
+    "gTileset_AraunaGrutasSeafloorCorrentesV1": {
+      "primary": "data/tilesets/primary/arauna_grutas_seafloor_base_v1",
+      "secondary": "data/tilesets/secondary/arauna_grutas_seafloor_correntes_v1",
+      "alias_count": 36,
+      "new_static_graphics_slots": [
+        546,
+        547,
+        548,
+        549,
+        550,
+        551,
+        552,
+        553,
+        554,
+        555,
+        556,
+        557,
+        558,
+        559,
+        560,
+        561,
+        562,
+        563,
+        564,
+        565,
+        566,
+        567,
+        568,
+        569,
+        570,
+        571,
+        572,
+        573,
+        574,
+        575,
+        576,
+        577,
+        578,
+        579,
+        580,
+        581
+      ],
+      "original_callbacks": [
+        "InitTilesetAnim_AraunaGrutasSeafloorV1",
+        "NULL"
+      ]
+    },
+    "gTileset_AraunaRotaTecnicaV1": {
+      "primary": "data/tilesets/primary/arauna_rota_base_v1",
+      "secondary": "data/tilesets/secondary/arauna_rota_tecnica_v1",
+      "alias_count": 2,
+      "new_static_graphics_slots": [],
+      "original_callbacks": [
+        "NULL",
+        "NULL"
+      ]
+    }
+  },
+  "map_grids_unchanged": true,
+  "cliff_and_shore_cells": {
+    "left": 695,
+    "plateau": 2171,
+    "right": 579,
+    "upper": 737,
+    "lower": 737,
+    "wet_floor": 543,
+    "single": 214,
+    "shore": 106
+  }
+}

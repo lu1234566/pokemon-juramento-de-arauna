@@ -227,6 +227,7 @@ void DrawDoorMetatileAt(int x, int y, u16 *tiles)
 static void DrawMetatileAt(const struct MapLayout *mapLayout, u16 offset, int x, int y)
 {
     u16 metatileId = AraunaBorderVisualMetatile(mapLayout, x, y, MapGridGetMetatileIdAt(x, y));
+    u16 visualId = metatileId;
     const u16 *metatiles;
 
     if (metatileId > NUM_METATILES_TOTAL)
@@ -240,7 +241,8 @@ static void DrawMetatileAt(const struct MapLayout *mapLayout, u16 offset, int x,
         metatiles = mapLayout->secondaryTileset->metatiles;
         metatileId -= NUM_METATILES_IN_PRIMARY;
     }
-    DrawMetatile(MapGridGetMetatileLayerTypeAt(x, y), metatiles + metatileId * NUM_TILES_PER_METATILE, offset);
+    // Layer selection is visual too; collision and behavior still use native IDs.
+    DrawMetatile(UNPACK_LAYER_TYPE(GetMetatileAttributesById(visualId)), metatiles + metatileId * NUM_TILES_PER_METATILE, offset);
 }
 
 static void DrawMetatile(s32 metatileLayerType, const u16 *tiles, u16 offset)

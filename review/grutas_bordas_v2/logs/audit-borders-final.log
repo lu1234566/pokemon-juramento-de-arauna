@@ -1,0 +1,238 @@
+{"base_commit": "73312e48f3542a78377024913fcaf44da5e771c0", "method": "Actual C connection rectangles and scoped C border selector; repository native bank resolver; exact RGB and maximum-channel difference >48 separately. Static graphics only; VRAM water animations are not synthesized. These criteria may differ from the earlier external 55/6015 audit.", "directed_connections": 134, "exact_rgb_different_connections": 79, "exact_rgb_different_cells": 16643, "over_48_connections": 49, "over_48_cells": 3304}
+[
+  {
+    "receiver": "PetalburgCity",
+    "source": "Route104",
+    "direction": "left",
+    "cells": 259,
+    "exact_rgb_different": 258,
+    "rgb_different_over_48": 224,
+    "undefined_metatile_cells": 0,
+    "source_ids_with_errors": [
+      13,
+      199,
+      462,
+      463,
+      468,
+      469,
+      470,
+      476,
+      477,
+      484,
+      485,
+      486,
+      500,
+      501
+    ]
+  },
+  {
+    "receiver": "Route104",
+    "source": "RustboroCity",
+    "direction": "up",
+    "cells": 280,
+    "exact_rgb_different": 280,
+    "rgb_different_over_48": 224,
+    "undefined_metatile_cells": 0,
+    "source_ids_with_errors": [
+      468,
+      469,
+      476,
+      477
+    ]
+  },
+  {
+    "receiver": "Route111",
+    "source": "MauvilleCity",
+    "direction": "down",
+    "cells": 343,
+    "exact_rgb_different": 340,
+    "rgb_different_over_48": 196,
+    "undefined_metatile_cells": 0,
+    "source_ids_with_errors": [
+      4,
+      14,
+      22,
+      198
+    ]
+  },
+  {
+    "receiver": "Route115",
+    "source": "RustboroCity",
+    "direction": "down",
+    "cells": 280,
+    "exact_rgb_different": 207,
+    "rgb_different_over_48": 162,
+    "undefined_metatile_cells": 0,
+    "source_ids_with_errors": [
+      468,
+      469,
+      471,
+      476,
+      477,
+      484,
+      485,
+      486
+    ]
+  },
+  {
+    "receiver": "RustboroCity",
+    "source": "Route104",
+    "direction": "down",
+    "cells": 280,
+    "exact_rgb_different": 263,
+    "rgb_different_over_48": 155,
+    "undefined_metatile_cells": 0,
+    "source_ids_with_errors": [
+      4,
+      13,
+      462,
+      463,
+      468,
+      469,
+      470,
+      471,
+      476,
+      477,
+      484,
+      485,
+      486,
+      487
+    ]
+  },
+  {
+    "receiver": "LavaridgeTown",
+    "source": "Route112",
+    "direction": "right",
+    "cells": 216,
+    "exact_rgb_different": 215,
+    "rgb_different_over_48": 153,
+    "undefined_metatile_cells": 0,
+    "source_ids_with_errors": [
+      14,
+      22,
+      198,
+      513,
+      515,
+      523,
+      529,
+      536,
+      619,
+      620,
+      621,
+      638,
+      639,
+      790
+    ]
+  },
+  {
+    "receiver": "Route118",
+    "source": "MauvilleCity",
+    "direction": "left",
+    "cells": 238,
+    "exact_rgb_different": 211,
+    "rgb_different_over_48": 147,
+    "undefined_metatile_cells": 0,
+    "source_ids_with_errors": [
+      14,
+      22,
+      23,
+      198,
+      199
+    ]
+  },
+  {
+    "receiver": "Route117",
+    "source": "MauvilleCity",
+    "direction": "right",
+    "cells": 272,
+    "exact_rgb_different": 247,
+    "rgb_different_over_48": 136,
+    "undefined_metatile_cells": 0,
+    "source_ids_with_errors": [
+      4,
+      15,
+      198,
+      199,
+      657
+    ]
+  },
+  {
+    "receiver": "Route121",
+    "source": "LilycoveCity",
+    "direction": "right",
+    "cells": 272,
+    "exact_rgb_different": 151,
+    "rgb_different_over_48": 122,
+    "undefined_metatile_cells": 0,
+    "source_ids_with_errors": [
+      14,
+      15,
+      30,
+      31,
+      38,
+      39,
+      463,
+      469,
+      477,
+      485
+    ]
+  },
+  {
+    "receiver": "Route117",
+    "source": "VerdanturfTown",
+    "direction": "left",
+    "cells": 168,
+    "exact_rgb_different": 147,
+    "rgb_different_over_48": 121,
+    "undefined_metatile_cells": 0,
+    "source_ids_with_errors": [
+      4,
+      14,
+      15,
+      22,
+      29,
+      198,
+      199,
+      516,
+      517
+    ]
+  },
+  {
+    "receiver": "VerdanturfTown",
+    "source": "Route117",
+    "direction": "right",
+    "cells": 160,
+    "exact_rgb_different": 160,
+    "rgb_different_over_48": 121,
+    "undefined_metatile_cells": 0,
+    "source_ids_with_errors": [
+      15,
+      22,
+      64,
+      198,
+      199,
+      516,
+      517
+    ]
+  },
+  {
+    "receiver": "RustboroCity",
+    "source": "Route115",
+    "direction": "up",
+    "cells": 280,
+    "exact_rgb_different": 194,
+    "rgb_different_over_48": 120,
+    "undefined_metatile_cells": 0,
+    "source_ids_with_errors": [
+      462,
+      463,
+      468,
+      469,
+      470,
+      471,
+      476,
+      477,
+      488
+    ]
+  }
+]
