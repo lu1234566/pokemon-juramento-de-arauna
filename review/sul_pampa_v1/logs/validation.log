@@ -1,0 +1,14 @@
+$WORKSPACE/repo/tools/arauna_maps/validate_sul_pampa_v1.py:100: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.
+  im=Image.open(ROOT/p/'tiles.png');assert im.mode=='P' and max(im.getdata())<16
+{
+  "status": "PASS",
+  "base_commit": "591aeb24973622bda8d12cce60b3560cef938c00",
+  "protected_map_and_animation_files": 1005,
+  "appended_layouts": 4,
+  "all_native_attributes_checked": 61876,
+  "target_directions": 34,
+  "target_errors_after": 0,
+  "unrelated_connections_changed": 0,
+  "eight_frame_border_cells_checked": 72872,
+  "C_selector_fallback_checks": 64512
+}

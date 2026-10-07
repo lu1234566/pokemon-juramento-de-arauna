@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "actual_C_old_save_positions": 3905,
+  "positions_relocated": 8,
+  "current_layouts_not_migrated": 3905,
+  "Cut_custom_ids": 6,
+  "continue_warp_priority_preserved": true,
+  "maps": {
+    "Route102": {
+      "old_positions": 515,
+      "repositioned": 8
+    },
+    "Route103": {
+      "old_positions": 818,
+      "repositioned": 0
+    },
+    "Route104": {
+      "old_positions": 1845,
+      "repositioned": 0
+    },
+    "PetalburgCity": {
+      "old_positions": 727,
+      "repositioned": 0
+    }
+  }
+}

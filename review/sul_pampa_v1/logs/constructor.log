@@ -1,0 +1,30 @@
+Building art Route102
+$WORKSPACE/repo/tools/arauna_maps/build_sul_pampa_v1.py:25: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.
+  pixels=list(rgba.getdata());cs={c[:3] for c in pixels if c[3]};best=None
+$WORKSPACE/repo/tools/arauna_maps/build_sul_pampa_v1.py:67: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.
+  image=art.asset(kind,(ww*16,hh*16));pix,q=art.quant(image);image.putdata([(*pair.pals[q][v],255 if v else 0) for v in pix.getdata()]);assetcache[key]=image
+Building art Route103
+Building art Route104
+Building art PetalburgCity
+Packing borders Route124
+Packing borders Route126
+Packing borders Route110
+Packing borders MauvilleCity
+Packing borders SlateportCity
+Packing borders EverGrandeCity
+Packing borders Route128
+Packing borders Route103
+Packing borders PetalburgCity
+Packing borders Route104
+Packing borders RustboroCity
+Packing borders Route111
+Packing borders Route117
+Packing borders Route118
+Packing borders Route115
+Packing borders LavaridgeTown
+Packing borders Route112
+Packing borders Route102
+Packing borders OldaleTown
+Packing borders Route105
+Packing borders Route119
+Built 21 private pairs and 34 border regions

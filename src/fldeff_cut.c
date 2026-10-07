@@ -1,4 +1,11 @@
 #include "global.h"
+// SUL_CUT_EXTERNS_BEGIN
+extern const struct Tileset gTileset_AraunaBorderRoute102BaseSulV1;
+extern const struct Tileset gTileset_AraunaBorderRoute103BaseSulV1;
+extern const struct Tileset gTileset_AraunaBorderRoute104BaseSulV1;
+extern const struct Tileset gTileset_AraunaBorderPetalburgCityBaseSulV1;
+extern const struct Tileset gTileset_AraunaBorderOldaleTownBaseSulV1;
+// SUL_CUT_EXTERNS_END
 #include "constants/arauna_inicio_metatiles.h"
 
 extern const struct Tileset gTileset_AraunaInicioBaseV1;
@@ -358,11 +365,39 @@ bool8 FldEff_CutGrass(void)
 static void SetCutGrassMetatile(s16 x, s16 y)
 {
     if ((gMapHeader.mapLayout->primaryTileset == &gTileset_AraunaInicioBaseV1
-      || gMapHeader.mapLayout->primaryTileset == &gTileset_AraunaBorderRoute103BaseV2)
+      || gMapHeader.mapLayout->primaryTileset == &gTileset_AraunaBorderRoute103BaseV2
+      || gMapHeader.mapLayout->primaryTileset == &gTileset_AraunaBorderOldaleTownBaseSulV1)
      && MapGridGetMetatileIdAt(x, y) == METATILE_AraunaInicio_Capim)
     {
         MapGridSetMetatileIdAt(x, y, METATILE_AraunaInicio_Campo);
         return;
+    }
+    if (gMapHeader.mapLayout->primaryTileset == &gTileset_AraunaBorderRoute102BaseSulV1)
+    {
+        switch (MapGridGetMetatileIdAt(x, y))
+        {
+        case 784: MapGridSetMetatileIdAt(x, y, 767); return;
+        case 743: MapGridSetMetatileIdAt(x, y, 767); return;
+        default: break;
+        }
+    }
+    if (gMapHeader.mapLayout->primaryTileset == &gTileset_AraunaBorderRoute103BaseSulV1)
+    {
+        switch (MapGridGetMetatileIdAt(x, y))
+        {
+        case 722: MapGridSetMetatileIdAt(x, y, 735); return;
+        case 739: MapGridSetMetatileIdAt(x, y, 735); return;
+        default: break;
+        }
+    }
+    if (gMapHeader.mapLayout->primaryTileset == &gTileset_AraunaBorderRoute104BaseSulV1)
+    {
+        switch (MapGridGetMetatileIdAt(x, y))
+        {
+        case 766: MapGridSetMetatileIdAt(x, y, 768); return;
+        case 767: MapGridSetMetatileIdAt(x, y, 768); return;
+        default: break;
+        }
     }
     switch (MapGridGetMetatileIdAt(x, y))
     {

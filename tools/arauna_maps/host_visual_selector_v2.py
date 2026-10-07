@@ -14,6 +14,8 @@ struct MapLayout {const struct Tileset *primaryTileset;const struct Tileset *sec
  (folder/'fieldmap.h').write_text('#define MAP_OFFSET 7\n')
  text=(ROOT/'src/arauna_border_visuals.c').read_text();symbols=re.findall(r'extern const struct Tileset (\w+);',text)
  table=json.loads((ROOT/'review/grutas_bordas_v2/borders_build.json').read_text());cases={119:'gTileset_AraunaRoute119BorderV1',118:'gTileset_AraunaRoute118BorderV1'};cases.update({r['code']:'gTileset_'+r['symbols'][1] for r in table['maps'].values()})
+ extra=ROOT/'review/sul_pampa_v1/borders_build.json'
+ if extra.exists():cases.update({r['code']:'gTileset_'+r['symbols'][1] for r in json.loads(extra.read_text())['maps'].values()})
  bridge='#include "global.h"\n#include "arauna_border_visuals.h"\n'+''.join(f'const struct Tileset {s} = {{{i+1}}};\n' for i,s in enumerate(symbols))+'''const struct Tileset otherTileset={0};
 u16 AraunaCaveVisualMetatile(const struct MapLayout *l,s32 x,s32 y,u16 id) {(void)l;(void)x;(void)y;return id;}
 u16 test_selector(int map,int x,int y,u16 id) {

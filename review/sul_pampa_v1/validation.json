@@ -1,0 +1,1425 @@
+{
+  "status": "PASS",
+  "base_commit": "591aeb24973622bda8d12cce60b3560cef938c00",
+  "protected_map_and_animation_files": 1005,
+  "appended_layouts": 4,
+  "all_native_attributes_checked": 61876,
+  "maps": {
+    "Route124": {
+      "cells": 6400,
+      "same_own_RGB555": true,
+      "geometry_changed_cells": [],
+      "reach": []
+    },
+    "Route126": {
+      "cells": 6400,
+      "same_own_RGB555": true,
+      "geometry_changed_cells": [],
+      "reach": []
+    },
+    "Route110": {
+      "cells": 4000,
+      "same_own_RGB555": true,
+      "geometry_changed_cells": [],
+      "reach": []
+    },
+    "MauvilleCity": {
+      "cells": 1900,
+      "same_own_RGB555": true,
+      "geometry_changed_cells": [],
+      "reach": []
+    },
+    "SlateportCity": {
+      "cells": 2080,
+      "same_own_RGB555": true,
+      "geometry_changed_cells": [],
+      "reach": []
+    },
+    "EverGrandeCity": {
+      "cells": 2816,
+      "same_own_RGB555": true,
+      "geometry_changed_cells": [],
+      "reach": []
+    },
+    "Route128": {
+      "cells": 4800,
+      "same_own_RGB555": true,
+      "geometry_changed_cells": [],
+      "reach": []
+    },
+    "Route103": {
+      "cells": 1760,
+      "same_own_RGB555": false,
+      "geometry_changed_cells": [],
+      "reach": [
+        {
+          "surf": false,
+          "reachable_before": 238,
+          "reachable_after": 238
+        },
+        {
+          "surf": true,
+          "reachable_before": 57,
+          "reachable_after": 57
+        }
+      ]
+    },
+    "PetalburgCity": {
+      "cells": 1140,
+      "same_own_RGB555": false,
+      "geometry_changed_cells": [],
+      "reach": [
+        {
+          "surf": false,
+          "reachable_before": 727,
+          "reachable_after": 727
+        },
+        {
+          "surf": true,
+          "reachable_before": 727,
+          "reachable_after": 727
+        }
+      ]
+    },
+    "Route104": {
+      "cells": 3200,
+      "same_own_RGB555": false,
+      "geometry_changed_cells": [],
+      "reach": [
+        {
+          "surf": false,
+          "reachable_before": 723,
+          "reachable_after": 723
+        },
+        {
+          "surf": true,
+          "reachable_before": 742,
+          "reachable_after": 742
+        }
+      ]
+    },
+    "RustboroCity": {
+      "cells": 2400,
+      "same_own_RGB555": true,
+      "geometry_changed_cells": [],
+      "reach": []
+    },
+    "Route111": {
+      "cells": 5600,
+      "same_own_RGB555": true,
+      "geometry_changed_cells": [],
+      "reach": []
+    },
+    "Route117": {
+      "cells": 1200,
+      "same_own_RGB555": true,
+      "geometry_changed_cells": [],
+      "reach": []
+    },
+    "Route118": {
+      "cells": 1600,
+      "same_own_RGB555": true,
+      "geometry_changed_cells": [],
+      "reach": []
+    },
+    "Route115": {
+      "cells": 3200,
+      "same_own_RGB555": true,
+      "geometry_changed_cells": [],
+      "reach": []
+    },
+    "LavaridgeTown": {
+      "cells": 400,
+      "same_own_RGB555": true,
+      "geometry_changed_cells": [],
+      "reach": []
+    },
+    "Route112": {
+      "cells": 2400,
+      "same_own_RGB555": true,
+      "geometry_changed_cells": [],
+      "reach": []
+    },
+    "Route102": {
+      "cells": 1000,
+      "same_own_RGB555": false,
+      "geometry_changed_cells": [
+        [
+          11,
+          3
+        ],
+        [
+          12,
+          3
+        ],
+        [
+          13,
+          3
+        ],
+        [
+          14,
+          3
+        ],
+        [
+          15,
+          3
+        ],
+        [
+          26,
+          15
+        ],
+        [
+          27,
+          15
+        ],
+        [
+          28,
+          15
+        ]
+      ],
+      "reach": [
+        {
+          "surf": false,
+          "reachable_before": 515,
+          "reachable_after": 507
+        },
+        {
+          "surf": true,
+          "reachable_before": 515,
+          "reachable_after": 507
+        }
+      ]
+    },
+    "OldaleTown": {
+      "cells": 780,
+      "same_own_RGB555": true,
+      "geometry_changed_cells": [],
+      "reach": []
+    },
+    "Route105": {
+      "cells": 3200,
+      "same_own_RGB555": true,
+      "geometry_changed_cells": [],
+      "reach": []
+    },
+    "Route119": {
+      "cells": 5600,
+      "same_own_RGB555": true,
+      "geometry_changed_cells": [],
+      "reach": []
+    }
+  },
+  "connections": [
+    {
+      "receiver": "Route134",
+      "source": "SlateportCity",
+      "cells": 280,
+      "different_before": 273,
+      "different_after": 273,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "Route134",
+      "source": "Route133",
+      "cells": 320,
+      "different_before": 0,
+      "different_after": 0,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "SafariZone_North",
+      "source": "SafariZone_Northwest",
+      "cells": 280,
+      "different_before": 0,
+      "different_after": 0,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "SafariZone_North",
+      "source": "SafariZone_South",
+      "cells": 280,
+      "different_before": 0,
+      "different_after": 0,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "SafariZone_North",
+      "source": "SafariZone_Northeast",
+      "cells": 320,
+      "different_before": 0,
+      "different_after": 0,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "FortreeCity",
+      "source": "Route119",
+      "cells": 287,
+      "different_before": 0,
+      "different_after": 0,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "FortreeCity",
+      "source": "Route120",
+      "cells": 328,
+      "different_before": 0,
+      "different_after": 0,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "Route113",
+      "source": "Route112",
+      "cells": 280,
+      "different_before": 168,
+      "different_after": 168,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "Route113",
+      "source": "FallarborTown",
+      "cells": 175,
+      "different_before": 172,
+      "different_after": 172,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "Route113",
+      "source": "Route111",
+      "cells": 216,
+      "different_before": 207,
+      "different_after": 207,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "Route120",
+      "source": "FortreeCity",
+      "cells": 238,
+      "different_before": 0,
+      "different_after": 0,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "Route120",
+      "source": "Route121",
+      "cells": 160,
+      "different_before": 97,
+      "different_after": 97,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "Route111",
+      "source": "MauvilleCity",
+      "cells": 343,
+      "different_before": 340,
+      "different_after": 0,
+      "changed_cells": 340,
+      "target": true
+    },
+    {
+      "receiver": "Route111",
+      "source": "Route113",
+      "cells": 140,
+      "different_before": 140,
+      "different_after": 140,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "Route111",
+      "source": "Route112",
+      "cells": 420,
+      "different_before": 356,
+      "different_after": 356,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "LilycoveCity",
+      "source": "Route121",
+      "cells": 140,
+      "different_before": 91,
+      "different_after": 91,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "LilycoveCity",
+      "source": "Route124",
+      "cells": 448,
+      "different_before": 90,
+      "different_after": 90,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "LavaridgeTown",
+      "source": "Route112",
+      "cells": 216,
+      "different_before": 215,
+      "different_after": 0,
+      "changed_cells": 215,
+      "target": true
+    },
+    {
+      "receiver": "Underwater_Route124",
+      "source": "Underwater_Route126",
+      "cells": 560,
+      "different_before": 0,
+      "different_after": 0,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "Route116",
+      "source": "VerdanturfTown",
+      "cells": 196,
+      "different_before": 167,
+      "different_after": 167,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "Route116",
+      "source": "RustboroCity",
+      "cells": 189,
+      "different_before": 140,
+      "different_after": 140,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "PacifidlogTown",
+      "source": "Route132",
+      "cells": 280,
+      "different_before": 280,
+      "different_after": 280,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "PacifidlogTown",
+      "source": "Route131",
+      "cells": 320,
+      "different_before": 316,
+      "different_after": 316,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "Underwater_Route128",
+      "source": "Underwater_Route127",
+      "cells": 560,
+      "different_before": 0,
+      "different_after": 0,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "Route101",
+      "source": "OldaleTown",
+      "cells": 210,
+      "different_before": 0,
+      "different_after": 0,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "Route101",
+      "source": "LittlerootTown",
+      "cells": 210,
+      "different_before": 0,
+      "different_after": 0,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "Route110",
+      "source": "MauvilleCity",
+      "cells": 343,
+      "different_before": 0,
+      "different_after": 0,
+      "changed_cells": 0,
+      "target": true
+    },
+    {
+      "receiver": "Route110",
+      "source": "SlateportCity",
+      "cells": 329,
+      "different_before": 0,
+      "different_after": 0,
+      "changed_cells": 0,
+      "target": true
+    },
+    {
+      "receiver": "Route110",
+      "source": "Route103",
+      "cells": 154,
+      "different_before": 0,
+      "different_after": 0,
+      "changed_cells": 140,
+      "target": true
+    },
+    {
+      "receiver": "Route118",
+      "source": "Route119",
+      "cells": 280,
+      "different_before": 0,
+      "different_after": 0,
+      "changed_cells": 0,
+      "target": true
+    },
+    {
+      "receiver": "Route118",
+      "source": "MauvilleCity",
+      "cells": 238,
+      "different_before": 211,
+      "different_after": 0,
+      "changed_cells": 211,
+      "target": true
+    },
+    {
+      "receiver": "Route118",
+      "source": "Route123",
+      "cells": 160,
+      "different_before": 124,
+      "different_after": 124,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "Route117",
+      "source": "VerdanturfTown",
+      "cells": 168,
+      "different_before": 147,
+      "different_after": 147,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "Route117",
+      "source": "MauvilleCity",
+      "cells": 272,
+      "different_before": 247,
+      "different_after": 0,
+      "changed_cells": 247,
+      "target": true
+    },
+    {
+      "receiver": "Route102",
+      "source": "PetalburgCity",
+      "cells": 189,
+      "different_before": 0,
+      "different_after": 0,
+      "changed_cells": 189,
+      "target": true
+    },
+    {
+      "receiver": "Route102",
+      "source": "OldaleTown",
+      "cells": 208,
+      "different_before": 0,
+      "different_after": 0,
+      "changed_cells": 0,
+      "target": true
+    },
+    {
+      "receiver": "PetalburgCity",
+      "source": "Route104",
+      "cells": 259,
+      "different_before": 258,
+      "different_after": 0,
+      "changed_cells": 259,
+      "target": true
+    },
+    {
+      "receiver": "PetalburgCity",
+      "source": "Route102",
+      "cells": 160,
+      "different_before": 0,
+      "different_after": 0,
+      "changed_cells": 160,
+      "target": true
+    },
+    {
+      "receiver": "Route105",
+      "source": "Route104",
+      "cells": 280,
+      "different_before": 280,
+      "different_after": 0,
+      "changed_cells": 280,
+      "target": true
+    },
+    {
+      "receiver": "Route105",
+      "source": "Route106",
+      "cells": 336,
+      "different_before": 329,
+      "different_after": 329,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "Route109",
+      "source": "SlateportCity",
+      "cells": 329,
+      "different_before": 329,
+      "different_after": 329,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "Route109",
+      "source": "Route108",
+      "cells": 140,
+      "different_before": 0,
+      "different_after": 0,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "EverGrandeCity",
+      "source": "Route128",
+      "cells": 280,
+      "different_before": 0,
+      "different_after": 0,
+      "changed_cells": 0,
+      "target": true
+    },
+    {
+      "receiver": "Route126",
+      "source": "Route124",
+      "cells": 560,
+      "different_before": 0,
+      "different_after": 0,
+      "changed_cells": 0,
+      "target": true
+    },
+    {
+      "receiver": "Route126",
+      "source": "Route127",
+      "cells": 640,
+      "different_before": 379,
+      "different_after": 379,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "SafariZone_Southwest",
+      "source": "SafariZone_Northwest",
+      "cells": 280,
+      "different_before": 0,
+      "different_after": 0,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "SafariZone_Southwest",
+      "source": "SafariZone_South",
+      "cells": 320,
+      "different_before": 0,
+      "different_after": 0,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "DewfordTown",
+      "source": "Route106",
+      "cells": 273,
+      "different_before": 0,
+      "different_after": 0,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "DewfordTown",
+      "source": "Route107",
+      "cells": 160,
+      "different_before": 0,
+      "different_after": 0,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "VerdanturfTown",
+      "source": "Route116",
+      "cells": 189,
+      "different_before": 189,
+      "different_after": 189,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "VerdanturfTown",
+      "source": "Route117",
+      "cells": 160,
+      "different_before": 160,
+      "different_after": 160,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "MauvilleCity",
+      "source": "Route111",
+      "cells": 280,
+      "different_before": 193,
+      "different_after": 0,
+      "changed_cells": 193,
+      "target": true
+    },
+    {
+      "receiver": "MauvilleCity",
+      "source": "Route110",
+      "cells": 280,
+      "different_before": 0,
+      "different_after": 0,
+      "changed_cells": 0,
+      "target": true
+    },
+    {
+      "receiver": "MauvilleCity",
+      "source": "Route117",
+      "cells": 140,
+      "different_before": 135,
+      "different_after": 0,
+      "changed_cells": 135,
+      "target": true
+    },
+    {
+      "receiver": "MauvilleCity",
+      "source": "Route118",
+      "cells": 160,
+      "different_before": 129,
+      "different_after": 0,
+      "changed_cells": 129,
+      "target": true
+    },
+    {
+      "receiver": "Route103",
+      "source": "OldaleTown",
+      "cells": 189,
+      "different_before": 0,
+      "different_after": 0,
+      "changed_cells": 0,
+      "target": true
+    },
+    {
+      "receiver": "Route103",
+      "source": "Route110",
+      "cells": 288,
+      "different_before": 0,
+      "different_after": 0,
+      "changed_cells": 0,
+      "target": true
+    },
+    {
+      "receiver": "Route108",
+      "source": "Route107",
+      "cells": 140,
+      "different_before": 140,
+      "different_after": 140,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "Route108",
+      "source": "Route109",
+      "cells": 240,
+      "different_before": 0,
+      "different_after": 0,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "Route131",
+      "source": "PacifidlogTown",
+      "cells": 280,
+      "different_before": 56,
+      "different_after": 56,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "Route131",
+      "source": "Route130",
+      "cells": 320,
+      "different_before": 320,
+      "different_after": 320,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "Route127",
+      "source": "MossdeepCity",
+      "cells": 308,
+      "different_before": 211,
+      "different_after": 211,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "Route127",
+      "source": "Route128",
+      "cells": 616,
+      "different_before": 384,
+      "different_after": 384,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "Route127",
+      "source": "Route126",
+      "cells": 560,
+      "different_before": 416,
+      "different_after": 416,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "SafariZone_Northwest",
+      "source": "SafariZone_North",
+      "cells": 320,
+      "different_before": 0,
+      "different_after": 0,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "SafariZone_Northwest",
+      "source": "SafariZone_Southwest",
+      "cells": 280,
+      "different_before": 0,
+      "different_after": 0,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "Route128",
+      "source": "Route127",
+      "cells": 560,
+      "different_before": 370,
+      "different_after": 370,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "Route128",
+      "source": "Route129",
+      "cells": 560,
+      "different_before": 554,
+      "different_after": 554,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "Route128",
+      "source": "EverGrandeCity",
+      "cells": 376,
+      "different_before": 0,
+      "different_after": 0,
+      "changed_cells": 0,
+      "target": true
+    },
+    {
+      "receiver": "Route130",
+      "source": "Route131",
+      "cells": 280,
+      "different_before": 280,
+      "different_after": 280,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "Route130",
+      "source": "Route129",
+      "cells": 320,
+      "different_before": 320,
+      "different_after": 320,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "Route106",
+      "source": "Route105",
+      "cells": 280,
+      "different_before": 280,
+      "different_after": 280,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "Route106",
+      "source": "DewfordTown",
+      "cells": 224,
+      "different_before": 0,
+      "different_after": 0,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "Route133",
+      "source": "Route134",
+      "cells": 280,
+      "different_before": 0,
+      "different_after": 0,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "Route133",
+      "source": "Route132",
+      "cells": 320,
+      "different_before": 0,
+      "different_after": 0,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "MossdeepCity",
+      "source": "Route125",
+      "cells": 364,
+      "different_before": 89,
+      "different_after": 89,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "MossdeepCity",
+      "source": "Route127",
+      "cells": 364,
+      "different_before": 226,
+      "different_after": 226,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "MossdeepCity",
+      "source": "Route124",
+      "cells": 329,
+      "different_before": 153,
+      "different_after": 153,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "Underwater_Route126",
+      "source": "Underwater_Route124",
+      "cells": 560,
+      "different_before": 0,
+      "different_after": 0,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "Underwater_Route126",
+      "source": "Underwater_Route127",
+      "cells": 640,
+      "different_before": 0,
+      "different_after": 0,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "SafariZone_South",
+      "source": "SafariZone_North",
+      "cells": 280,
+      "different_before": 0,
+      "different_after": 0,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "SafariZone_South",
+      "source": "SafariZone_Southwest",
+      "cells": 280,
+      "different_before": 0,
+      "different_after": 0,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "SafariZone_South",
+      "source": "SafariZone_Southeast",
+      "cells": 320,
+      "different_before": 0,
+      "different_after": 0,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "FallarborTown",
+      "source": "Route114",
+      "cells": 224,
+      "different_before": 224,
+      "different_after": 224,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "FallarborTown",
+      "source": "Route113",
+      "cells": 160,
+      "different_before": 160,
+      "different_after": 160,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "BattleFrontier_OutsideWest",
+      "source": "BattleFrontier_OutsideEast",
+      "cells": 576,
+      "different_before": 12,
+      "different_after": 12,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "Route122",
+      "source": "Route121",
+      "cells": 385,
+      "different_before": 211,
+      "different_after": 211,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "Route122",
+      "source": "Route123",
+      "cells": 329,
+      "different_before": 105,
+      "different_after": 105,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "LittlerootTown",
+      "source": "Route101",
+      "cells": 266,
+      "different_before": 0,
+      "different_after": 0,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "Route114",
+      "source": "Route115",
+      "cells": 329,
+      "different_before": 315,
+      "different_after": 315,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "Route114",
+      "source": "FallarborTown",
+      "cells": 200,
+      "different_before": 200,
+      "different_after": 200,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "Route123",
+      "source": "Route122",
+      "cells": 280,
+      "different_before": 50,
+      "different_after": 50,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "Route123",
+      "source": "Route118",
+      "cells": 140,
+      "different_before": 66,
+      "different_after": 66,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "Route129",
+      "source": "Route128",
+      "cells": 616,
+      "different_before": 558,
+      "different_after": 558,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "Route129",
+      "source": "Route130",
+      "cells": 280,
+      "different_before": 280,
+      "different_after": 280,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "SafariZone_Southeast",
+      "source": "SafariZone_South",
+      "cells": 280,
+      "different_before": 0,
+      "different_after": 0,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "SafariZone_Southeast",
+      "source": "SafariZone_Northeast",
+      "cells": 280,
+      "different_before": 0,
+      "different_after": 0,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "SafariZone_Northeast",
+      "source": "SafariZone_North",
+      "cells": 280,
+      "different_before": 0,
+      "different_after": 0,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "SafariZone_Northeast",
+      "source": "SafariZone_Southeast",
+      "cells": 280,
+      "different_before": 0,
+      "different_after": 0,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "BattleFrontier_OutsideEast",
+      "source": "BattleFrontier_OutsideWest",
+      "cells": 504,
+      "different_before": 0,
+      "different_after": 0,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "Route125",
+      "source": "MossdeepCity",
+      "cells": 308,
+      "different_before": 19,
+      "different_after": 19,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "Route125",
+      "source": "Route124",
+      "cells": 329,
+      "different_before": 161,
+      "different_after": 161,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "SlateportCity",
+      "source": "Route110",
+      "cells": 280,
+      "different_before": 0,
+      "different_after": 0,
+      "changed_cells": 0,
+      "target": true
+    },
+    {
+      "receiver": "SlateportCity",
+      "source": "Route109",
+      "cells": 280,
+      "different_before": 278,
+      "different_after": 278,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "SlateportCity",
+      "source": "Route134",
+      "cells": 320,
+      "different_before": 320,
+      "different_after": 320,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "RustboroCity",
+      "source": "Route115",
+      "cells": 280,
+      "different_before": 197,
+      "different_after": 0,
+      "changed_cells": 197,
+      "target": true
+    },
+    {
+      "receiver": "RustboroCity",
+      "source": "Route104",
+      "cells": 280,
+      "different_before": 263,
+      "different_after": 0,
+      "changed_cells": 263,
+      "target": true
+    },
+    {
+      "receiver": "RustboroCity",
+      "source": "Route116",
+      "cells": 160,
+      "different_before": 159,
+      "different_after": 159,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "Route112",
+      "source": "Route113",
+      "cells": 329,
+      "different_before": 329,
+      "different_after": 329,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "Route112",
+      "source": "LavaridgeTown",
+      "cells": 140,
+      "different_before": 93,
+      "different_after": 0,
+      "changed_cells": 93,
+      "target": true
+    },
+    {
+      "receiver": "Route112",
+      "source": "Route111",
+      "cells": 592,
+      "different_before": 573,
+      "different_after": 573,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "Route124",
+      "source": "Route126",
+      "cells": 560,
+      "different_before": 0,
+      "different_after": 0,
+      "changed_cells": 0,
+      "target": true
+    },
+    {
+      "receiver": "Route124",
+      "source": "LilycoveCity",
+      "cells": 294,
+      "different_before": 0,
+      "different_after": 0,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "Route124",
+      "source": "Route125",
+      "cells": 320,
+      "different_before": 110,
+      "different_after": 110,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "Route124",
+      "source": "MossdeepCity",
+      "cells": 272,
+      "different_before": 24,
+      "different_after": 24,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "Route104",
+      "source": "RustboroCity",
+      "cells": 280,
+      "different_before": 280,
+      "different_after": 0,
+      "changed_cells": 280,
+      "target": true
+    },
+    {
+      "receiver": "Route104",
+      "source": "Route105",
+      "cells": 280,
+      "different_before": 276,
+      "different_after": 0,
+      "changed_cells": 276,
+      "target": true
+    },
+    {
+      "receiver": "Route104",
+      "source": "PetalburgCity",
+      "cells": 240,
+      "different_before": 221,
+      "different_after": 0,
+      "changed_cells": 237,
+      "target": true
+    },
+    {
+      "receiver": "Underwater_Route127",
+      "source": "Underwater_Route126",
+      "cells": 560,
+      "different_before": 0,
+      "different_after": 0,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "Underwater_Route127",
+      "source": "Underwater_Route128",
+      "cells": 616,
+      "different_before": 0,
+      "different_after": 0,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "Route115",
+      "source": "RustboroCity",
+      "cells": 280,
+      "different_before": 207,
+      "different_after": 0,
+      "changed_cells": 207,
+      "target": true
+    },
+    {
+      "receiver": "Route115",
+      "source": "Route114",
+      "cells": 376,
+      "different_before": 361,
+      "different_after": 361,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "Route119",
+      "source": "Route118",
+      "cells": 329,
+      "different_before": 0,
+      "different_after": 0,
+      "changed_cells": 0,
+      "target": true
+    },
+    {
+      "receiver": "Route119",
+      "source": "FortreeCity",
+      "cells": 272,
+      "different_before": 0,
+      "different_after": 0,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "Route132",
+      "source": "Route133",
+      "cells": 280,
+      "different_before": 0,
+      "different_after": 0,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "Route132",
+      "source": "PacifidlogTown",
+      "cells": 320,
+      "different_before": 72,
+      "different_after": 72,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "Route107",
+      "source": "DewfordTown",
+      "cells": 182,
+      "different_before": 0,
+      "different_after": 0,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "Route107",
+      "source": "Route108",
+      "cells": 160,
+      "different_before": 160,
+      "different_after": 160,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "OldaleTown",
+      "source": "Route103",
+      "cells": 196,
+      "different_before": 0,
+      "different_after": 0,
+      "changed_cells": 184,
+      "target": true
+    },
+    {
+      "receiver": "OldaleTown",
+      "source": "Route101",
+      "cells": 266,
+      "different_before": 0,
+      "different_after": 0,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "OldaleTown",
+      "source": "Route102",
+      "cells": 140,
+      "different_before": 0,
+      "different_after": 0,
+      "changed_cells": 129,
+      "target": true
+    },
+    {
+      "receiver": "Route121",
+      "source": "Route122",
+      "cells": 280,
+      "different_before": 26,
+      "different_after": 26,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "Route121",
+      "source": "Route120",
+      "cells": 189,
+      "different_before": 118,
+      "different_after": 118,
+      "changed_cells": 0,
+      "target": false
+    },
+    {
+      "receiver": "Route121",
+      "source": "LilycoveCity",
+      "cells": 272,
+      "different_before": 151,
+      "different_after": 151,
+      "changed_cells": 0,
+      "target": false
+    }
+  ],
+  "target_directions": 34,
+  "target_errors_after": 0,
+  "unrelated_connections_changed": 0,
+  "eight_frame_border_cells_checked": 72872,
+  "C_selector_fallback_checks": 64512
+}

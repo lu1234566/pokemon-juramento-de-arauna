@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "original_commit": "ad0fd4d17f546ca6fd8d785c8724f9382e6e9382",
+  "original_stored_graphics": 38800,
+  "method": "Exact color-class/alpha equality with H/V mirrors, on new-art graphics only. Functional water, ledge, door and imported neighbor graphics excluded. Flat textures may coincide. Not a perceptual identity measure.",
+  "maps": {
+    "Route102": {
+      "new_art_nonblank_graphics": 109,
+      "matching_original_color_class_shape": 1,
+      "percent": 0.92
+    },
+    "Route103": {
+      "new_art_nonblank_graphics": 68,
+      "matching_original_color_class_shape": 2,
+      "percent": 2.94
+    },
+    "Route104": {
+      "new_art_nonblank_graphics": 325,
+      "matching_original_color_class_shape": 5,
+      "percent": 1.54
+    },
+    "PetalburgCity": {
+      "new_art_nonblank_graphics": 616,
+      "matching_original_color_class_shape": 13,
+      "percent": 2.11
+    }
+  }
+}

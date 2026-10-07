@@ -16,8 +16,8 @@
       "name": "SlateportCity_Layout",
       "width": 52,
       "height": 40,
-      "primary_tileset": "gTileset_AraunaBorderSlateportCityBaseV2",
-      "secondary_tileset": "gTileset_AraunaBorderSlateportCityArtV2",
+      "primary_tileset": "gTileset_AraunaBorderSlateportCityBaseSulV1",
+      "secondary_tileset": "gTileset_AraunaBorderSlateportCityArtSulV1",
       "border_filepath": "data/layouts/SlateportCity/border.bin",
       "blockdata_filepath": "data/layouts/SlateportCity/map.bin"
     },
@@ -26,8 +26,8 @@
       "name": "MauvilleCity_Layout",
       "width": 50,
       "height": 38,
-      "primary_tileset": "gTileset_AraunaBorderMauvilleCityBaseV2",
-      "secondary_tileset": "gTileset_AraunaBorderMauvilleCityArtV2",
+      "primary_tileset": "gTileset_AraunaBorderMauvilleCityBaseSulV1",
+      "secondary_tileset": "gTileset_AraunaBorderMauvilleCityArtSulV1",
       "border_filepath": "data/layouts/MauvilleCity/border.bin",
       "blockdata_filepath": "data/layouts/MauvilleCity/map.bin"
     },
@@ -36,8 +36,8 @@
       "name": "RustboroCity_Layout",
       "width": 40,
       "height": 60,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_AraunaSerraUivo",
+      "primary_tileset": "gTileset_AraunaBorderRustboroCityBaseSulV1",
+      "secondary_tileset": "gTileset_AraunaBorderRustboroCityArtSulV1",
       "border_filepath": "data/layouts/RustboroCity/border.bin",
       "blockdata_filepath": "data/layouts/RustboroCity/map.bin"
     },
@@ -86,8 +86,8 @@
       "name": "EverGrandeCity_Layout",
       "width": 44,
       "height": 64,
-      "primary_tileset": "gTileset_AraunaBorderEverGrandeCityBaseV2",
-      "secondary_tileset": "gTileset_AraunaBorderEverGrandeCityArtV2",
+      "primary_tileset": "gTileset_AraunaBorderEverGrandeCityBaseSulV1",
+      "secondary_tileset": "gTileset_AraunaBorderEverGrandeCityArtSulV1",
       "border_filepath": "data/layouts/EverGrandeCity/border.bin",
       "blockdata_filepath": "data/layouts/EverGrandeCity/map.bin"
     },
@@ -126,8 +126,8 @@
       "name": "LavaridgeTown_Layout",
       "width": 20,
       "height": 20,
-      "primary_tileset": "gTileset_AraunaCasaCinzaPrimaryV2",
-      "secondary_tileset": "gTileset_AraunaCasaCinzaCumulativeV2",
+      "primary_tileset": "gTileset_AraunaBorderLavaridgeTownBaseSulV1",
+      "secondary_tileset": "gTileset_AraunaBorderLavaridgeTownArtSulV1",
       "border_filepath": "data/layouts/LavaridgeTown/border.bin",
       "blockdata_filepath": "data/layouts/LavaridgeTown/map.bin"
     },
@@ -346,8 +346,8 @@
       "name": "Route119_Layout",
       "width": 40,
       "height": 140,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_AraunaRoute119BorderV1",
+      "primary_tileset": "gTileset_AraunaBorderRoute119BaseSulV1",
+      "secondary_tileset": "gTileset_AraunaBorderRoute119ArtSulV1",
       "border_filepath": "data/layouts/Route119/border.bin",
       "blockdata_filepath": "data/layouts/Route119/map.bin"
     },
@@ -6716,8 +6716,8 @@
       "name": "Route105_AraunaArco_Layout",
       "width": 40,
       "height": 80,
-      "primary_tileset": "gTileset_AraunaArcoCosteiro",
-      "secondary_tileset": "gTileset_Dewford",
+      "primary_tileset": "gTileset_AraunaBorderRoute105BaseSulV1",
+      "secondary_tileset": "gTileset_AraunaBorderRoute105ArtSulV1",
       "border_filepath": "data/layouts/Route105_AraunaArco/border.bin",
       "blockdata_filepath": "data/layouts/Route105_AraunaArco/map.bin"
     },
@@ -6746,8 +6746,8 @@
       "name": "Route110_AraunaMangrove_Layout",
       "width": 40,
       "height": 100,
-      "primary_tileset": "gTileset_AraunaBorderRoute110BaseV2",
-      "secondary_tileset": "gTileset_AraunaBorderRoute110ArtV2",
+      "primary_tileset": "gTileset_AraunaBorderRoute110BaseSulV1",
+      "secondary_tileset": "gTileset_AraunaBorderRoute110ArtSulV1",
       "border_filepath": "data/layouts/Route110_AraunaMangrove/border.bin",
       "blockdata_filepath": "data/layouts/Route110_AraunaMangrove/map.bin"
     },
@@ -6756,8 +6756,8 @@
       "name": "Route111_AraunaThreeActs_Layout",
       "width": 40,
       "height": 140,
-      "primary_tileset": "gTileset_AraunaEixoInterior",
-      "secondary_tileset": "gTileset_Arauna111Regions",
+      "primary_tileset": "gTileset_AraunaBorderRoute111BaseSulV1",
+      "secondary_tileset": "gTileset_AraunaBorderRoute111ArtSulV1",
       "border_filepath": "data/layouts/Route111_AraunaThreeActs/border.bin",
       "blockdata_filepath": "data/layouts/Route111_AraunaThreeActs/map.bin"
     },
@@ -6766,8 +6766,8 @@
       "name": "Route112_AraunaVolcanicBase_Layout",
       "width": 40,
       "height": 60,
-      "primary_tileset": "gTileset_AraunaPedraEscura",
-      "secondary_tileset": "gTileset_Arauna112CasaCinzaInterfaceV2",
+      "primary_tileset": "gTileset_AraunaBorderRoute112BaseSulV1",
+      "secondary_tileset": "gTileset_AraunaBorderRoute112ArtSulV1",
       "border_filepath": "data/layouts/Route112_AraunaVolcanicBase/border.bin",
       "blockdata_filepath": "data/layouts/Route112_AraunaVolcanicBase/map.bin"
     },
@@ -6796,8 +6796,8 @@
       "name": "Route115_AraunaCoastalCliff_Layout",
       "width": 40,
       "height": 80,
-      "primary_tileset": "gTileset_AraunaCostaSerrana",
-      "secondary_tileset": "gTileset_Arauna115Arrebentacao",
+      "primary_tileset": "gTileset_AraunaBorderRoute115BaseSulV1",
+      "secondary_tileset": "gTileset_AraunaBorderRoute115ArtSulV1",
       "border_filepath": "data/layouts/Route115_AraunaCoastalCliff/border.bin",
       "blockdata_filepath": "data/layouts/Route115_AraunaCoastalCliff/map.bin"
     },
@@ -6816,8 +6816,8 @@
       "name": "Route117_AraunaCultivatedFields_Layout",
       "width": 60,
       "height": 20,
-      "primary_tileset": "gTileset_AraunaCamposCultivados",
-      "secondary_tileset": "gTileset_Arauna117Lavoura",
+      "primary_tileset": "gTileset_AraunaBorderRoute117BaseSulV1",
+      "secondary_tileset": "gTileset_AraunaBorderRoute117ArtSulV1",
       "border_filepath": "data/layouts/Route117_AraunaCultivatedFields/border.bin",
       "blockdata_filepath": "data/layouts/Route117_AraunaCultivatedFields/map.bin"
     },
@@ -6826,8 +6826,8 @@
       "name": "Route118_AraunaRiverCrossing_Layout",
       "width": 80,
       "height": 20,
-      "primary_tileset": "gTileset_AraunaRioFronteira",
-      "secondary_tileset": "gTileset_AraunaRoute118BorderV1",
+      "primary_tileset": "gTileset_AraunaBorderRoute118BaseSulV1",
+      "secondary_tileset": "gTileset_AraunaBorderRoute118ArtSulV1",
       "border_filepath": "data/layouts/Route118_AraunaRiverCrossing/border.bin",
       "blockdata_filepath": "data/layouts/Route118_AraunaRiverCrossing/map.bin"
     },
@@ -6866,8 +6866,8 @@
       "name": "Route124_AraunaArchipelago_Layout",
       "width": 80,
       "height": 80,
-      "primary_tileset": "gTileset_AraunaBorderRoute124BaseV2",
-      "secondary_tileset": "gTileset_AraunaBorderRoute124ArtV2",
+      "primary_tileset": "gTileset_AraunaBorderRoute124BaseSulV1",
+      "secondary_tileset": "gTileset_AraunaBorderRoute124ArtSulV1",
       "border_filepath": "data/layouts/Route124_AraunaArchipelago/border.bin",
       "blockdata_filepath": "data/layouts/Route124_AraunaArchipelago/map.bin"
     },
@@ -6886,8 +6886,8 @@
       "name": "Route126_AraunaAncestralWaters_Layout",
       "width": 80,
       "height": 80,
-      "primary_tileset": "gTileset_AraunaBorderRoute126BaseV2",
-      "secondary_tileset": "gTileset_AraunaBorderRoute126ArtV2",
+      "primary_tileset": "gTileset_AraunaBorderRoute126BaseSulV1",
+      "secondary_tileset": "gTileset_AraunaBorderRoute126ArtSulV1",
       "border_filepath": "data/layouts/Route126_AraunaAncestralWaters/border.bin",
       "blockdata_filepath": "data/layouts/Route126_AraunaAncestralWaters/map.bin"
     },
@@ -6906,8 +6906,8 @@
       "name": "Route128_AraunaDiveReef_Layout",
       "width": 120,
       "height": 40,
-      "primary_tileset": "gTileset_AraunaBorderRoute128BaseV2",
-      "secondary_tileset": "gTileset_AraunaBorderRoute128ArtV2",
+      "primary_tileset": "gTileset_AraunaBorderRoute128BaseSulV1",
+      "secondary_tileset": "gTileset_AraunaBorderRoute128ArtSulV1",
       "border_filepath": "data/layouts/Route128_AraunaDiveReef/border.bin",
       "blockdata_filepath": "data/layouts/Route128_AraunaDiveReef/map.bin"
     },
@@ -7116,8 +7116,8 @@
       "name": "Route111_AraunaThreeActsNoTower_Layout",
       "width": 40,
       "height": 140,
-      "primary_tileset": "gTileset_AraunaEixoInterior",
-      "secondary_tileset": "gTileset_Arauna111Regions",
+      "primary_tileset": "gTileset_AraunaBorderRoute111BaseSulV1",
+      "secondary_tileset": "gTileset_AraunaBorderRoute111ArtSulV1",
       "border_filepath": "data/layouts/Route111_AraunaThreeActs/border.bin",
       "blockdata_filepath": "data/layouts/Route111_AraunaThreeActsNoTower/map.bin"
     },
@@ -7356,8 +7356,8 @@
       "name": "AraunaOldaleTownComposicaoV1_Layout",
       "width": 30,
       "height": 26,
-      "primary_tileset": "gTileset_AraunaInicioBaseV1",
-      "secondary_tileset": "gTileset_AraunaInicioSulV1",
+      "primary_tileset": "gTileset_AraunaBorderOldaleTownBaseSulV1",
+      "secondary_tileset": "gTileset_AraunaBorderOldaleTownArtSulV1",
       "border_filepath": "data/layouts/AraunaOldaleTownComposicaoV1/border.bin",
       "blockdata_filepath": "data/layouts/AraunaOldaleTownComposicaoV1/map.bin"
     },
@@ -7370,6 +7370,46 @@
       "secondary_tileset": "gTileset_AraunaInicioSulV1",
       "border_filepath": "data/layouts/AraunaRoute101ComposicaoV1/border.bin",
       "blockdata_filepath": "data/layouts/AraunaRoute101ComposicaoV1/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_ROUTE102_SUL_PAMPA_V1",
+      "name": "AraunaSulRoute102V1_Layout",
+      "width": 50,
+      "height": 20,
+      "primary_tileset": "gTileset_AraunaBorderRoute102BaseSulV1",
+      "secondary_tileset": "gTileset_AraunaBorderRoute102ArtSulV1",
+      "border_filepath": "data/layouts/AraunaSulRoute102V1/border.bin",
+      "blockdata_filepath": "data/layouts/AraunaSulRoute102V1/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_ROUTE103_SUL_PAMPA_V1",
+      "name": "AraunaSulRoute103V1_Layout",
+      "width": 80,
+      "height": 22,
+      "primary_tileset": "gTileset_AraunaBorderRoute103BaseSulV1",
+      "secondary_tileset": "gTileset_AraunaBorderRoute103ArtSulV1",
+      "border_filepath": "data/layouts/AraunaSulRoute103V1/border.bin",
+      "blockdata_filepath": "data/layouts/AraunaSulRoute103V1/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_ROUTE104_SUL_PAMPA_V1",
+      "name": "AraunaSulRoute104V1_Layout",
+      "width": 40,
+      "height": 80,
+      "primary_tileset": "gTileset_AraunaBorderRoute104BaseSulV1",
+      "secondary_tileset": "gTileset_AraunaBorderRoute104ArtSulV1",
+      "border_filepath": "data/layouts/AraunaSulRoute104V1/border.bin",
+      "blockdata_filepath": "data/layouts/AraunaSulRoute104V1/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_PETALBURG_CITY_SUL_PAMPA_V1",
+      "name": "AraunaSulPetalburgCityV1_Layout",
+      "width": 38,
+      "height": 30,
+      "primary_tileset": "gTileset_AraunaBorderPetalburgCityBaseSulV1",
+      "secondary_tileset": "gTileset_AraunaBorderPetalburgCityArtSulV1",
+      "border_filepath": "data/layouts/AraunaSulPetalburgCityV1/border.bin",
+      "blockdata_filepath": "data/layouts/AraunaSulPetalburgCityV1/map.bin"
     }
   ]
 }

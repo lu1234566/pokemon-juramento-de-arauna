@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "base_commit": "591aeb24973622bda8d12cce60b3560cef938c00",
+  "files_identical": 822,
+  "method": "Clean detached base worktree, copied constructor and fixed source atlas/palette plan only; native data and C compared byte for byte."
+}

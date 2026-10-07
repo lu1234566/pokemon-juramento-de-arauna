@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "rom_sha256": "8b0a40bc260720ee94b11b68276cf2770d498c07a72bbce61e3439ddc7143d04",
+  "file_bytes": 33554432,
+  "native_banks": 42,
+  "alias_tables": 34,
+  "loaded_palette_rows": 13,
+  "harness_symbols": 0
+}

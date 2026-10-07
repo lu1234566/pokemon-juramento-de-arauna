@@ -1,0 +1,1231 @@
+{
+  "status": "PASS",
+  "engine": "native GBA execution in libmgba 0.10.2",
+  "rom_files_unchanged": true,
+  "cases": [
+    {
+      "label": "antes-pampa-hall",
+      "spawn_map": "PetalburgCity",
+      "spawn": [
+        15,
+        9
+      ],
+      "rom_sha256": "b8460e9e2d299ef75a18eda08597335f3fd9e8357eecb956ff7e9a35d41d1231",
+      "commands": [
+        "map 0 0",
+        "pos 15 9",
+        "press 64 16",
+        "wait 120",
+        "map 8 1",
+        "press 128 16",
+        "wait 120",
+        "map 0 0",
+        "pos 15 9",
+        "step 32 14 9",
+        "step 32 13 9",
+        "step 32 12 9",
+        "step 32 11 9",
+        "step 32 10 9",
+        "step 32 9 9",
+        "step 64 9 8",
+        "step 64 9 7",
+        "wait 180",
+        "pos 9 7",
+        "photo antes-pampa-hall.png"
+      ],
+      "log": "map 0.0 pos 15,9\nmap 8.1 pos 4,111\nmap 0.0 pos 15,9\nIllegal opcodes 0\n"
+    },
+    {
+      "label": "antes-pampa-praca",
+      "spawn_map": "PetalburgCity",
+      "spawn": [
+        15,
+        9
+      ],
+      "rom_sha256": "b8460e9e2d299ef75a18eda08597335f3fd9e8357eecb956ff7e9a35d41d1231",
+      "commands": [
+        "map 0 0",
+        "pos 15 9",
+        "press 64 16",
+        "wait 120",
+        "map 8 1",
+        "press 128 16",
+        "wait 120",
+        "map 0 0",
+        "pos 15 9",
+        "step 16 16 9",
+        "step 16 17 9",
+        "step 16 18 9",
+        "step 128 18 10",
+        "step 128 18 11",
+        "step 128 18 12",
+        "step 128 18 13",
+        "step 128 18 14",
+        "step 128 18 15",
+        "step 128 18 16",
+        "step 128 18 17",
+        "step 128 18 18",
+        "wait 180",
+        "pos 18 18",
+        "photo antes-pampa-praca.png"
+      ],
+      "log": "map 0.0 pos 15,9\nmap 8.1 pos 4,111\nmap 0.0 pos 15,9\nIllegal opcodes 0\n"
+    },
+    {
+      "label": "antes-102-campos",
+      "spawn_map": "OldaleTown",
+      "spawn": [
+        7,
+        20
+      ],
+      "rom_sha256": "b8460e9e2d299ef75a18eda08597335f3fd9e8357eecb956ff7e9a35d41d1231",
+      "commands": [
+        "map 0 10",
+        "pos 7 20",
+        "press 64 16",
+        "wait 120",
+        "map 2 2",
+        "press 128 16",
+        "wait 120",
+        "map 0 10",
+        "pos 7 20",
+        "step 32 6 20",
+        "step 32 5 20",
+        "step 32 4 20",
+        "step 32 3 20",
+        "step 64 3 19",
+        "step 32 2 19",
+        "step 32 1 19",
+        "step 64 1 18",
+        "step 64 1 17",
+        "step 64 1 16",
+        "step 64 1 15",
+        "step 64 1 14",
+        "step 64 1 13",
+        "step 64 1 12",
+        "step 64 1 11",
+        "step 64 1 10",
+        "cross 32 0 17",
+        "map 0 17",
+        "align 48 10",
+        "pos 48 10",
+        "step 32 47 10",
+        "step 32 46 10",
+        "step 32 45 10",
+        "step 32 44 10",
+        "step 32 43 10",
+        "step 32 42 10",
+        "step 32 41 10",
+        "step 32 40 10",
+        "step 32 39 10",
+        "step 32 38 10",
+        "step 32 37 10",
+        "step 32 36 10",
+        "step 128 36 11",
+        "step 128 36 12",
+        "step 128 36 13",
+        "step 128 36 14",
+        "step 32 35 14",
+        "step 32 34 14",
+        "step 128 34 15",
+        "step 32 33 15",
+        "step 32 32 15",
+        "step 32 31 15",
+        "step 32 30 15",
+        "step 32 29 15",
+        "step 64 29 14",
+        "step 32 28 14",
+        "step 32 27 14",
+        "step 32 26 14",
+        "step 32 25 14",
+        "step 64 25 13",
+        "step 32 24 13",
+        "step 64 24 12",
+        "step 64 24 11",
+        "step 64 24 10",
+        "wait 180",
+        "pos 24 10",
+        "photo antes-102-campos.png"
+      ],
+      "log": "map 0.10 pos 7,20\nmap 2.2 pos 7,8\nmap 0.10 pos 7,20\nmap 0.17 pos 49,10\nIllegal opcodes 0\n"
+    },
+    {
+      "label": "antes-103-encontro",
+      "spawn_map": "Route103",
+      "spawn": [
+        8,
+        21
+      ],
+      "rom_sha256": "b8460e9e2d299ef75a18eda08597335f3fd9e8357eecb956ff7e9a35d41d1231",
+      "commands": [
+        "map 0 18",
+        "pos 8 21",
+        "cross 128 0 10",
+        "map 0 10",
+        "cross 64 0 18",
+        "map 0 18",
+        "align 8 20",
+        "pos 8 20",
+        "step 16 9 20",
+        "step 16 10 20",
+        "step 16 11 20",
+        "step 64 11 19",
+        "step 64 11 18",
+        "step 64 11 17",
+        "step 64 11 16",
+        "step 64 11 15",
+        "step 16 12 15",
+        "step 16 13 15",
+        "step 16 14 15",
+        "step 64 14 14",
+        "step 64 14 13",
+        "step 64 14 12",
+        "step 64 14 11",
+        "step 32 13 11",
+        "step 32 12 11",
+        "step 32 11 11",
+        "step 32 10 11",
+        "step 64 10 10",
+        "step 64 10 9",
+        "step 64 10 8",
+        "wait 180",
+        "pos 10 8",
+        "photo antes-103-encontro.png"
+      ],
+      "log": "map 0.18 pos 8,21\nmap 0.10 pos 18,0\nmap 0.18 pos 8,21\nIllegal opcodes 0\n"
+    },
+    {
+      "label": "antes-104-norte",
+      "spawn_map": "Route104",
+      "spawn": [
+        5,
+        19
+      ],
+      "rom_sha256": "b8460e9e2d299ef75a18eda08597335f3fd9e8357eecb956ff7e9a35d41d1231",
+      "commands": [
+        "map 0 19",
+        "pos 5 19",
+        "press 64 16",
+        "wait 120",
+        "map 17 1",
+        "press 128 16",
+        "wait 120",
+        "map 0 19",
+        "pos 5 19",
+        "step 16 6 19",
+        "step 16 7 19",
+        "wait 180",
+        "pos 7 19",
+        "photo antes-104-norte.png"
+      ],
+      "log": "map 0.19 pos 5,19\nmap 17.1 pos 2,8\nmap 0.19 pos 5,19\nIllegal opcodes 0\n"
+    },
+    {
+      "label": "antes-104-costa",
+      "spawn_map": "Route104",
+      "spawn": [
+        17,
+        51
+      ],
+      "rom_sha256": "b8460e9e2d299ef75a18eda08597335f3fd9e8357eecb956ff7e9a35d41d1231",
+      "commands": [
+        "map 0 19",
+        "pos 17 51",
+        "press 64 16",
+        "wait 120",
+        "map 17 0",
+        "press 128 16",
+        "wait 120",
+        "map 0 19",
+        "pos 17 51",
+        "step 16 18 51",
+        "step 16 19 51",
+        "wait 180",
+        "pos 19 51",
+        "photo antes-104-costa.png"
+      ],
+      "log": "map 0.19 pos 17,51\nmap 17.0 pos 5,8\nmap 0.19 pos 17,51\nIllegal opcodes 0\n"
+    },
+    {
+      "label": "antes-103-rio",
+      "spawn_map": "Route103",
+      "spawn": [
+        34,
+        13
+      ],
+      "rom_sha256": "b8460e9e2d299ef75a18eda08597335f3fd9e8357eecb956ff7e9a35d41d1231",
+      "commands": [
+        "map 0 18",
+        "pos 34 13",
+        "surf",
+        "watch 6003600 960",
+        "wait 17",
+        "changed",
+        "photo antes-103-rio.png"
+      ],
+      "log": "map 0.18 pos 34,13\nSurf avatar active\nVRAM changed 616\nIllegal opcodes 0\n"
+    },
+    {
+      "label": "depois-pampa-hall",
+      "spawn_map": "PetalburgCity",
+      "spawn": [
+        15,
+        9
+      ],
+      "rom_sha256": "8b0a40bc260720ee94b11b68276cf2770d498c07a72bbce61e3439ddc7143d04",
+      "commands": [
+        "map 0 0",
+        "pos 15 9",
+        "press 64 16",
+        "wait 120",
+        "map 8 1",
+        "press 128 16",
+        "wait 120",
+        "map 0 0",
+        "pos 15 9",
+        "step 32 14 9",
+        "step 32 13 9",
+        "step 32 12 9",
+        "step 32 11 9",
+        "step 32 10 9",
+        "step 32 9 9",
+        "step 64 9 8",
+        "step 64 9 7",
+        "wait 180",
+        "pos 9 7",
+        "photo depois-pampa-hall.png"
+      ],
+      "log": "map 0.0 pos 15,9\nmap 8.1 pos 4,111\nmap 0.0 pos 15,9\nIllegal opcodes 0\n"
+    },
+    {
+      "label": "depois-pampa-praca",
+      "spawn_map": "PetalburgCity",
+      "spawn": [
+        15,
+        9
+      ],
+      "rom_sha256": "8b0a40bc260720ee94b11b68276cf2770d498c07a72bbce61e3439ddc7143d04",
+      "commands": [
+        "map 0 0",
+        "pos 15 9",
+        "press 64 16",
+        "wait 120",
+        "map 8 1",
+        "press 128 16",
+        "wait 120",
+        "map 0 0",
+        "pos 15 9",
+        "step 16 16 9",
+        "step 16 17 9",
+        "step 16 18 9",
+        "step 128 18 10",
+        "step 128 18 11",
+        "step 128 18 12",
+        "step 128 18 13",
+        "step 128 18 14",
+        "step 128 18 15",
+        "step 128 18 16",
+        "step 128 18 17",
+        "step 128 18 18",
+        "wait 180",
+        "pos 18 18",
+        "photo depois-pampa-praca.png"
+      ],
+      "log": "map 0.0 pos 15,9\nmap 8.1 pos 4,111\nmap 0.0 pos 15,9\nIllegal opcodes 0\n"
+    },
+    {
+      "label": "depois-102-campos",
+      "spawn_map": "OldaleTown",
+      "spawn": [
+        7,
+        20
+      ],
+      "rom_sha256": "8b0a40bc260720ee94b11b68276cf2770d498c07a72bbce61e3439ddc7143d04",
+      "commands": [
+        "map 0 10",
+        "pos 7 20",
+        "press 64 16",
+        "wait 120",
+        "map 2 2",
+        "press 128 16",
+        "wait 120",
+        "map 0 10",
+        "pos 7 20",
+        "step 32 6 20",
+        "step 32 5 20",
+        "step 32 4 20",
+        "step 32 3 20",
+        "step 64 3 19",
+        "step 32 2 19",
+        "step 32 1 19",
+        "step 64 1 18",
+        "step 64 1 17",
+        "step 64 1 16",
+        "step 64 1 15",
+        "step 64 1 14",
+        "step 64 1 13",
+        "step 64 1 12",
+        "step 64 1 11",
+        "step 64 1 10",
+        "cross 32 0 17",
+        "map 0 17",
+        "align 48 10",
+        "pos 48 10",
+        "step 32 47 10",
+        "step 32 46 10",
+        "step 32 45 10",
+        "step 32 44 10",
+        "step 32 43 10",
+        "step 32 42 10",
+        "step 32 41 10",
+        "step 32 40 10",
+        "step 32 39 10",
+        "step 32 38 10",
+        "step 32 37 10",
+        "step 32 36 10",
+        "step 128 36 11",
+        "step 128 36 12",
+        "step 128 36 13",
+        "step 128 36 14",
+        "step 32 35 14",
+        "step 32 34 14",
+        "step 128 34 15",
+        "step 32 33 15",
+        "step 32 32 15",
+        "step 32 31 15",
+        "step 32 30 15",
+        "step 32 29 15",
+        "step 64 29 14",
+        "step 32 28 14",
+        "step 32 27 14",
+        "step 32 26 14",
+        "step 32 25 14",
+        "step 64 25 13",
+        "step 32 24 13",
+        "step 64 24 12",
+        "step 64 24 11",
+        "step 64 24 10",
+        "wait 180",
+        "pos 24 10",
+        "photo depois-102-campos.png"
+      ],
+      "log": "map 0.10 pos 7,20\nmap 2.2 pos 7,8\nmap 0.10 pos 7,20\nmap 0.17 pos 49,10\nIllegal opcodes 0\n"
+    },
+    {
+      "label": "depois-103-encontro",
+      "spawn_map": "Route103",
+      "spawn": [
+        8,
+        21
+      ],
+      "rom_sha256": "8b0a40bc260720ee94b11b68276cf2770d498c07a72bbce61e3439ddc7143d04",
+      "commands": [
+        "map 0 18",
+        "pos 8 21",
+        "cross 128 0 10",
+        "map 0 10",
+        "cross 64 0 18",
+        "map 0 18",
+        "align 8 20",
+        "pos 8 20",
+        "step 16 9 20",
+        "step 16 10 20",
+        "step 16 11 20",
+        "step 64 11 19",
+        "step 64 11 18",
+        "step 64 11 17",
+        "step 64 11 16",
+        "step 64 11 15",
+        "step 16 12 15",
+        "step 16 13 15",
+        "step 16 14 15",
+        "step 64 14 14",
+        "step 64 14 13",
+        "step 64 14 12",
+        "step 64 14 11",
+        "step 32 13 11",
+        "step 32 12 11",
+        "step 32 11 11",
+        "step 32 10 11",
+        "step 64 10 10",
+        "step 64 10 9",
+        "step 64 10 8",
+        "wait 180",
+        "pos 10 8",
+        "photo depois-103-encontro.png"
+      ],
+      "log": "map 0.18 pos 8,21\nmap 0.10 pos 18,0\nmap 0.18 pos 8,21\nIllegal opcodes 0\n"
+    },
+    {
+      "label": "depois-104-norte",
+      "spawn_map": "Route104",
+      "spawn": [
+        5,
+        19
+      ],
+      "rom_sha256": "8b0a40bc260720ee94b11b68276cf2770d498c07a72bbce61e3439ddc7143d04",
+      "commands": [
+        "map 0 19",
+        "pos 5 19",
+        "press 64 16",
+        "wait 120",
+        "map 17 1",
+        "press 128 16",
+        "wait 120",
+        "map 0 19",
+        "pos 5 19",
+        "step 16 6 19",
+        "step 16 7 19",
+        "wait 180",
+        "pos 7 19",
+        "photo depois-104-norte.png"
+      ],
+      "log": "map 0.19 pos 5,19\nmap 17.1 pos 2,8\nmap 0.19 pos 5,19\nIllegal opcodes 0\n"
+    },
+    {
+      "label": "depois-104-costa",
+      "spawn_map": "Route104",
+      "spawn": [
+        17,
+        51
+      ],
+      "rom_sha256": "8b0a40bc260720ee94b11b68276cf2770d498c07a72bbce61e3439ddc7143d04",
+      "commands": [
+        "map 0 19",
+        "pos 17 51",
+        "press 64 16",
+        "wait 120",
+        "map 17 0",
+        "press 128 16",
+        "wait 120",
+        "map 0 19",
+        "pos 17 51",
+        "step 16 18 51",
+        "step 16 19 51",
+        "wait 180",
+        "pos 19 51",
+        "photo depois-104-costa.png"
+      ],
+      "log": "map 0.19 pos 17,51\nmap 17.0 pos 5,8\nmap 0.19 pos 17,51\nIllegal opcodes 0\n"
+    },
+    {
+      "label": "depois-103-rio",
+      "spawn_map": "Route103",
+      "spawn": [
+        34,
+        13
+      ],
+      "rom_sha256": "8b0a40bc260720ee94b11b68276cf2770d498c07a72bbce61e3439ddc7143d04",
+      "commands": [
+        "map 0 18",
+        "pos 34 13",
+        "surf",
+        "watch 6003600 960",
+        "wait 17",
+        "changed",
+        "photo depois-103-rio.png"
+      ],
+      "log": "map 0.18 pos 34,13\nSurf avatar active\nVRAM changed 616\nIllegal opcodes 0\n"
+    },
+    {
+      "label": "antes-borda-PetalburgCity-Route104",
+      "spawn_map": "PetalburgCity",
+      "spawn": [
+        0,
+        13
+      ],
+      "rom_sha256": "b8460e9e2d299ef75a18eda08597335f3fd9e8357eecb956ff7e9a35d41d1231",
+      "commands": [
+        "map 0 0",
+        "pos 0 13",
+        "cross 32 0 19",
+        "map 0 19",
+        "cross 16 0 0",
+        "map 0 0",
+        "align 1 13",
+        "wait 180",
+        "pos 1 13",
+        "photo antes-borda-PetalburgCity-Route104.png",
+        "cross 32 0 19",
+        "map 0 19",
+        "where"
+      ],
+      "log": "map 0.0 pos 0,13\nmap 0.19 pos 39,63\nmap 0.0 pos 0,13\nmap 0.19 pos 39,63\nwhere 0.19 39,63 flags1\nIllegal opcodes 0\n"
+    },
+    {
+      "label": "depois-borda-PetalburgCity-Route104",
+      "spawn_map": "PetalburgCity",
+      "spawn": [
+        0,
+        13
+      ],
+      "rom_sha256": "8b0a40bc260720ee94b11b68276cf2770d498c07a72bbce61e3439ddc7143d04",
+      "commands": [
+        "map 0 0",
+        "pos 0 13",
+        "cross 32 0 19",
+        "map 0 19",
+        "cross 16 0 0",
+        "map 0 0",
+        "align 1 13",
+        "wait 180",
+        "pos 1 13",
+        "photo depois-borda-PetalburgCity-Route104.png",
+        "cross 32 0 19",
+        "map 0 19",
+        "where"
+      ],
+      "log": "map 0.0 pos 0,13\nmap 0.19 pos 39,63\nmap 0.0 pos 0,13\nmap 0.19 pos 39,63\nwhere 0.19 39,63 flags1\nIllegal opcodes 0\n"
+    },
+    {
+      "label": "antes-borda-Route104-PetalburgCity",
+      "spawn_map": "Route104",
+      "spawn": [
+        39,
+        61
+      ],
+      "rom_sha256": "b8460e9e2d299ef75a18eda08597335f3fd9e8357eecb956ff7e9a35d41d1231",
+      "commands": [
+        "map 0 19",
+        "pos 39 61",
+        "cross 16 0 0",
+        "map 0 0",
+        "cross 32 0 19",
+        "map 0 19",
+        "align 38 61",
+        "wait 180",
+        "pos 38 61",
+        "photo antes-borda-Route104-PetalburgCity.png",
+        "cross 16 0 0",
+        "map 0 0",
+        "where"
+      ],
+      "log": "map 0.19 pos 39,61\nmap 0.0 pos 0,11\nmap 0.19 pos 39,61\nmap 0.0 pos 0,11\nwhere 0.0 0,11 flags1\nIllegal opcodes 0\n"
+    },
+    {
+      "label": "depois-borda-Route104-PetalburgCity",
+      "spawn_map": "Route104",
+      "spawn": [
+        39,
+        61
+      ],
+      "rom_sha256": "8b0a40bc260720ee94b11b68276cf2770d498c07a72bbce61e3439ddc7143d04",
+      "commands": [
+        "map 0 19",
+        "pos 39 61",
+        "cross 16 0 0",
+        "map 0 0",
+        "cross 32 0 19",
+        "map 0 19",
+        "align 38 61",
+        "wait 180",
+        "pos 38 61",
+        "photo depois-borda-Route104-PetalburgCity.png",
+        "cross 16 0 0",
+        "map 0 0",
+        "where"
+      ],
+      "log": "map 0.19 pos 39,61\nmap 0.0 pos 0,11\nmap 0.19 pos 39,61\nmap 0.0 pos 0,11\nwhere 0.0 0,11 flags1\nIllegal opcodes 0\n"
+    },
+    {
+      "label": "antes-borda-Route104-RustboroCity",
+      "spawn_map": "Route104",
+      "spawn": [
+        19,
+        0
+      ],
+      "rom_sha256": "b8460e9e2d299ef75a18eda08597335f3fd9e8357eecb956ff7e9a35d41d1231",
+      "commands": [
+        "map 0 19",
+        "pos 19 0",
+        "cross 64 0 3",
+        "map 0 3",
+        "cross 128 0 19",
+        "map 0 19",
+        "align 19 1",
+        "wait 180",
+        "pos 19 1",
+        "photo antes-borda-Route104-RustboroCity.png",
+        "cross 64 0 3",
+        "map 0 3",
+        "where"
+      ],
+      "log": "map 0.19 pos 19,0\nmap 0.3 pos 19,59\nmap 0.19 pos 19,0\nmap 0.3 pos 19,59\nwhere 0.3 19,59 flags1\nIllegal opcodes 0\n"
+    },
+    {
+      "label": "depois-borda-Route104-RustboroCity",
+      "spawn_map": "Route104",
+      "spawn": [
+        19,
+        0
+      ],
+      "rom_sha256": "8b0a40bc260720ee94b11b68276cf2770d498c07a72bbce61e3439ddc7143d04",
+      "commands": [
+        "map 0 19",
+        "pos 19 0",
+        "cross 64 0 3",
+        "map 0 3",
+        "cross 128 0 19",
+        "map 0 19",
+        "align 19 1",
+        "wait 180",
+        "pos 19 1",
+        "photo depois-borda-Route104-RustboroCity.png",
+        "cross 64 0 3",
+        "map 0 3",
+        "where"
+      ],
+      "log": "map 0.19 pos 19,0\nmap 0.3 pos 19,59\nmap 0.19 pos 19,0\nmap 0.3 pos 19,59\nwhere 0.3 19,59 flags1\nIllegal opcodes 0\n"
+    },
+    {
+      "label": "antes-borda-RustboroCity-Route104",
+      "spawn_map": "RustboroCity",
+      "spawn": [
+        19,
+        59
+      ],
+      "rom_sha256": "b8460e9e2d299ef75a18eda08597335f3fd9e8357eecb956ff7e9a35d41d1231",
+      "commands": [
+        "map 0 3",
+        "pos 19 59",
+        "cross 128 0 19",
+        "map 0 19",
+        "cross 64 0 3",
+        "map 0 3",
+        "align 19 58",
+        "wait 180",
+        "pos 19 58",
+        "photo antes-borda-RustboroCity-Route104.png",
+        "cross 128 0 19",
+        "map 0 19",
+        "where"
+      ],
+      "log": "map 0.3 pos 19,59\nmap 0.19 pos 19,0\nmap 0.3 pos 19,59\nmap 0.19 pos 19,0\nwhere 0.19 19,0 flags1\nIllegal opcodes 0\n"
+    },
+    {
+      "label": "depois-borda-RustboroCity-Route104",
+      "spawn_map": "RustboroCity",
+      "spawn": [
+        19,
+        59
+      ],
+      "rom_sha256": "8b0a40bc260720ee94b11b68276cf2770d498c07a72bbce61e3439ddc7143d04",
+      "commands": [
+        "map 0 3",
+        "pos 19 59",
+        "cross 128 0 19",
+        "map 0 19",
+        "cross 64 0 3",
+        "map 0 3",
+        "align 19 58",
+        "wait 180",
+        "pos 19 58",
+        "photo depois-borda-RustboroCity-Route104.png",
+        "cross 128 0 19",
+        "map 0 19",
+        "where"
+      ],
+      "log": "map 0.3 pos 19,59\nmap 0.19 pos 19,0\nmap 0.3 pos 19,59\nmap 0.19 pos 19,0\nwhere 0.19 19,0 flags1\nIllegal opcodes 0\n"
+    },
+    {
+      "label": "antes-borda-MauvilleCity-Route111",
+      "spawn_map": "MauvilleCity",
+      "spawn": [
+        23,
+        0
+      ],
+      "rom_sha256": "b8460e9e2d299ef75a18eda08597335f3fd9e8357eecb956ff7e9a35d41d1231",
+      "commands": [
+        "map 0 2",
+        "pos 23 0",
+        "cross 64 0 26",
+        "map 0 26",
+        "cross 128 0 2",
+        "map 0 2",
+        "align 23 1",
+        "wait 180",
+        "pos 23 1",
+        "photo antes-borda-MauvilleCity-Route111.png",
+        "cross 64 0 26",
+        "map 0 26",
+        "where"
+      ],
+      "log": "map 0.2 pos 23,0\nmap 0.26 pos 15,139\nmap 0.2 pos 23,0\nmap 0.26 pos 15,139\nwhere 0.26 15,139 flags1\nIllegal opcodes 0\n"
+    },
+    {
+      "label": "depois-borda-MauvilleCity-Route111",
+      "spawn_map": "MauvilleCity",
+      "spawn": [
+        23,
+        0
+      ],
+      "rom_sha256": "8b0a40bc260720ee94b11b68276cf2770d498c07a72bbce61e3439ddc7143d04",
+      "commands": [
+        "map 0 2",
+        "pos 23 0",
+        "cross 64 0 26",
+        "map 0 26",
+        "cross 128 0 2",
+        "map 0 2",
+        "align 23 1",
+        "wait 180",
+        "pos 23 1",
+        "photo depois-borda-MauvilleCity-Route111.png",
+        "cross 64 0 26",
+        "map 0 26",
+        "where"
+      ],
+      "log": "map 0.2 pos 23,0\nmap 0.26 pos 15,139\nmap 0.2 pos 23,0\nmap 0.26 pos 15,139\nwhere 0.26 15,139 flags1\nIllegal opcodes 0\n"
+    },
+    {
+      "label": "antes-borda-Route111-MauvilleCity",
+      "spawn_map": "Route111",
+      "spawn": [
+        8,
+        139
+      ],
+      "rom_sha256": "b8460e9e2d299ef75a18eda08597335f3fd9e8357eecb956ff7e9a35d41d1231",
+      "commands": [
+        "map 0 26",
+        "pos 8 139",
+        "cross 128 0 2",
+        "map 0 2",
+        "cross 64 0 26",
+        "map 0 26",
+        "align 8 138",
+        "wait 180",
+        "pos 8 138",
+        "photo antes-borda-Route111-MauvilleCity.png",
+        "cross 128 0 2",
+        "map 0 2",
+        "where"
+      ],
+      "log": "map 0.26 pos 8,139\nmap 0.2 pos 16,0\nmap 0.26 pos 8,139\nmap 0.2 pos 16,0\nwhere 0.2 16,0 flags1\nIllegal opcodes 0\n"
+    },
+    {
+      "label": "depois-borda-Route111-MauvilleCity",
+      "spawn_map": "Route111",
+      "spawn": [
+        8,
+        139
+      ],
+      "rom_sha256": "8b0a40bc260720ee94b11b68276cf2770d498c07a72bbce61e3439ddc7143d04",
+      "commands": [
+        "map 0 26",
+        "pos 8 139",
+        "cross 128 0 2",
+        "map 0 2",
+        "cross 64 0 26",
+        "map 0 26",
+        "align 8 138",
+        "wait 180",
+        "pos 8 138",
+        "photo depois-borda-Route111-MauvilleCity.png",
+        "cross 128 0 2",
+        "map 0 2",
+        "where"
+      ],
+      "log": "map 0.26 pos 8,139\nmap 0.2 pos 16,0\nmap 0.26 pos 8,139\nmap 0.2 pos 16,0\nwhere 0.2 16,0 flags1\nIllegal opcodes 0\n"
+    },
+    {
+      "label": "antes-borda-MauvilleCity-Route117",
+      "spawn_map": "MauvilleCity",
+      "spawn": [
+        0,
+        17
+      ],
+      "rom_sha256": "b8460e9e2d299ef75a18eda08597335f3fd9e8357eecb956ff7e9a35d41d1231",
+      "commands": [
+        "map 0 2",
+        "pos 0 17",
+        "cross 32 0 32",
+        "map 0 32",
+        "cross 16 0 2",
+        "map 0 2",
+        "align 1 17",
+        "wait 180",
+        "pos 1 17",
+        "photo antes-borda-MauvilleCity-Route117.png",
+        "cross 32 0 32",
+        "map 0 32",
+        "where"
+      ],
+      "log": "map 0.2 pos 0,17\nmap 0.32 pos 59,9\nmap 0.2 pos 0,17\nmap 0.32 pos 59,9\nwhere 0.32 59,9 flags1\nIllegal opcodes 0\n"
+    },
+    {
+      "label": "depois-borda-MauvilleCity-Route117",
+      "spawn_map": "MauvilleCity",
+      "spawn": [
+        0,
+        17
+      ],
+      "rom_sha256": "8b0a40bc260720ee94b11b68276cf2770d498c07a72bbce61e3439ddc7143d04",
+      "commands": [
+        "map 0 2",
+        "pos 0 17",
+        "cross 32 0 32",
+        "map 0 32",
+        "cross 16 0 2",
+        "map 0 2",
+        "align 1 17",
+        "wait 180",
+        "pos 1 17",
+        "photo depois-borda-MauvilleCity-Route117.png",
+        "cross 32 0 32",
+        "map 0 32",
+        "where"
+      ],
+      "log": "map 0.2 pos 0,17\nmap 0.32 pos 59,9\nmap 0.2 pos 0,17\nmap 0.32 pos 59,9\nwhere 0.32 59,9 flags1\nIllegal opcodes 0\n"
+    },
+    {
+      "label": "antes-borda-Route117-MauvilleCity",
+      "spawn_map": "Route117",
+      "spawn": [
+        59,
+        3
+      ],
+      "rom_sha256": "b8460e9e2d299ef75a18eda08597335f3fd9e8357eecb956ff7e9a35d41d1231",
+      "commands": [
+        "map 0 32",
+        "pos 59 3",
+        "cross 16 0 2",
+        "map 0 2",
+        "cross 32 0 32",
+        "map 0 32",
+        "align 58 3",
+        "wait 180",
+        "pos 58 3",
+        "photo antes-borda-Route117-MauvilleCity.png",
+        "cross 16 0 2",
+        "map 0 2",
+        "where"
+      ],
+      "log": "map 0.32 pos 59,3\nmap 0.2 pos 0,11\nmap 0.32 pos 59,3\nmap 0.2 pos 0,11\nwhere 0.2 0,11 flags1\nIllegal opcodes 0\n"
+    },
+    {
+      "label": "depois-borda-Route117-MauvilleCity",
+      "spawn_map": "Route117",
+      "spawn": [
+        59,
+        3
+      ],
+      "rom_sha256": "8b0a40bc260720ee94b11b68276cf2770d498c07a72bbce61e3439ddc7143d04",
+      "commands": [
+        "map 0 32",
+        "pos 59 3",
+        "cross 16 0 2",
+        "map 0 2",
+        "cross 32 0 32",
+        "map 0 32",
+        "align 58 3",
+        "wait 180",
+        "pos 58 3",
+        "photo depois-borda-Route117-MauvilleCity.png",
+        "cross 16 0 2",
+        "map 0 2",
+        "where"
+      ],
+      "log": "map 0.32 pos 59,3\nmap 0.2 pos 0,11\nmap 0.32 pos 59,3\nmap 0.2 pos 0,11\nwhere 0.2 0,11 flags1\nIllegal opcodes 0\n"
+    },
+    {
+      "label": "antes-borda-MauvilleCity-Route118",
+      "spawn_map": "MauvilleCity",
+      "spawn": [
+        49,
+        17
+      ],
+      "rom_sha256": "b8460e9e2d299ef75a18eda08597335f3fd9e8357eecb956ff7e9a35d41d1231",
+      "commands": [
+        "map 0 2",
+        "pos 49 17",
+        "cross 16 0 33",
+        "map 0 33",
+        "cross 32 0 2",
+        "map 0 2",
+        "align 48 17",
+        "wait 180",
+        "pos 48 17",
+        "photo antes-borda-MauvilleCity-Route118.png",
+        "cross 16 0 33",
+        "map 0 33",
+        "where"
+      ],
+      "log": "map 0.2 pos 49,17\nmap 0.33 pos 0,9\nmap 0.2 pos 49,17\nmap 0.33 pos 0,9\nwhere 0.33 0,9 flags1\nIllegal opcodes 0\n"
+    },
+    {
+      "label": "depois-borda-MauvilleCity-Route118",
+      "spawn_map": "MauvilleCity",
+      "spawn": [
+        49,
+        17
+      ],
+      "rom_sha256": "8b0a40bc260720ee94b11b68276cf2770d498c07a72bbce61e3439ddc7143d04",
+      "commands": [
+        "map 0 2",
+        "pos 49 17",
+        "cross 16 0 33",
+        "map 0 33",
+        "cross 32 0 2",
+        "map 0 2",
+        "align 48 17",
+        "wait 180",
+        "pos 48 17",
+        "photo depois-borda-MauvilleCity-Route118.png",
+        "cross 16 0 33",
+        "map 0 33",
+        "where"
+      ],
+      "log": "map 0.2 pos 49,17\nmap 0.33 pos 0,9\nmap 0.2 pos 49,17\nmap 0.33 pos 0,9\nwhere 0.33 0,9 flags1\nIllegal opcodes 0\n"
+    },
+    {
+      "label": "antes-borda-Route118-MauvilleCity",
+      "spawn_map": "Route118",
+      "spawn": [
+        0,
+        19
+      ],
+      "rom_sha256": "b8460e9e2d299ef75a18eda08597335f3fd9e8357eecb956ff7e9a35d41d1231",
+      "commands": [
+        "map 0 33",
+        "pos 0 19",
+        "cross 32 0 2",
+        "map 0 2",
+        "cross 16 0 33",
+        "map 0 33",
+        "align 1 19",
+        "wait 180",
+        "pos 1 19",
+        "photo antes-borda-Route118-MauvilleCity.png",
+        "cross 32 0 2",
+        "map 0 2",
+        "where"
+      ],
+      "log": "map 0.33 pos 0,19\nmap 0.2 pos 49,27\nmap 0.33 pos 0,19\nmap 0.2 pos 49,27\nwhere 0.2 49,27 flags8\nIllegal opcodes 0\n"
+    },
+    {
+      "label": "depois-borda-Route118-MauvilleCity",
+      "spawn_map": "Route118",
+      "spawn": [
+        0,
+        19
+      ],
+      "rom_sha256": "8b0a40bc260720ee94b11b68276cf2770d498c07a72bbce61e3439ddc7143d04",
+      "commands": [
+        "map 0 33",
+        "pos 0 19",
+        "cross 32 0 2",
+        "map 0 2",
+        "cross 16 0 33",
+        "map 0 33",
+        "align 1 19",
+        "wait 180",
+        "pos 1 19",
+        "photo depois-borda-Route118-MauvilleCity.png",
+        "cross 32 0 2",
+        "map 0 2",
+        "where"
+      ],
+      "log": "map 0.33 pos 0,19\nmap 0.2 pos 49,27\nmap 0.33 pos 0,19\nmap 0.2 pos 49,27\nwhere 0.2 49,27 flags8\nIllegal opcodes 0\n"
+    },
+    {
+      "label": "antes-borda-RustboroCity-Route115",
+      "spawn_map": "RustboroCity",
+      "spawn": [
+        20,
+        0
+      ],
+      "rom_sha256": "b8460e9e2d299ef75a18eda08597335f3fd9e8357eecb956ff7e9a35d41d1231",
+      "commands": [
+        "map 0 3",
+        "pos 20 0",
+        "cross 64 0 30",
+        "map 0 30",
+        "cross 128 0 3",
+        "map 0 3",
+        "align 20 1",
+        "wait 180",
+        "pos 20 1",
+        "photo antes-borda-RustboroCity-Route115.png",
+        "cross 64 0 30",
+        "map 0 30",
+        "where"
+      ],
+      "log": "map 0.3 pos 20,0\nmap 0.30 pos 20,79\nmap 0.3 pos 20,0\nmap 0.30 pos 20,79\nwhere 0.30 20,79 flags1\nIllegal opcodes 0\n"
+    },
+    {
+      "label": "depois-borda-RustboroCity-Route115",
+      "spawn_map": "RustboroCity",
+      "spawn": [
+        20,
+        0
+      ],
+      "rom_sha256": "8b0a40bc260720ee94b11b68276cf2770d498c07a72bbce61e3439ddc7143d04",
+      "commands": [
+        "map 0 3",
+        "pos 20 0",
+        "cross 64 0 30",
+        "map 0 30",
+        "cross 128 0 3",
+        "map 0 3",
+        "align 20 1",
+        "wait 180",
+        "pos 20 1",
+        "photo depois-borda-RustboroCity-Route115.png",
+        "cross 64 0 30",
+        "map 0 30",
+        "where"
+      ],
+      "log": "map 0.3 pos 20,0\nmap 0.30 pos 20,79\nmap 0.3 pos 20,0\nmap 0.30 pos 20,79\nwhere 0.30 20,79 flags1\nIllegal opcodes 0\n"
+    },
+    {
+      "label": "antes-borda-Route115-RustboroCity",
+      "spawn_map": "Route115",
+      "spawn": [
+        20,
+        79
+      ],
+      "rom_sha256": "b8460e9e2d299ef75a18eda08597335f3fd9e8357eecb956ff7e9a35d41d1231",
+      "commands": [
+        "map 0 30",
+        "pos 20 79",
+        "cross 128 0 3",
+        "map 0 3",
+        "cross 64 0 30",
+        "map 0 30",
+        "align 20 78",
+        "wait 180",
+        "pos 20 78",
+        "photo antes-borda-Route115-RustboroCity.png",
+        "cross 128 0 3",
+        "map 0 3",
+        "where"
+      ],
+      "log": "map 0.30 pos 20,79\nmap 0.3 pos 20,0\nmap 0.30 pos 20,79\nmap 0.3 pos 20,0\nwhere 0.3 20,0 flags1\nIllegal opcodes 0\n"
+    },
+    {
+      "label": "depois-borda-Route115-RustboroCity",
+      "spawn_map": "Route115",
+      "spawn": [
+        20,
+        79
+      ],
+      "rom_sha256": "8b0a40bc260720ee94b11b68276cf2770d498c07a72bbce61e3439ddc7143d04",
+      "commands": [
+        "map 0 30",
+        "pos 20 79",
+        "cross 128 0 3",
+        "map 0 3",
+        "cross 64 0 30",
+        "map 0 30",
+        "align 20 78",
+        "wait 180",
+        "pos 20 78",
+        "photo depois-borda-Route115-RustboroCity.png",
+        "cross 128 0 3",
+        "map 0 3",
+        "where"
+      ],
+      "log": "map 0.30 pos 20,79\nmap 0.3 pos 20,0\nmap 0.30 pos 20,79\nmap 0.3 pos 20,0\nwhere 0.3 20,0 flags1\nIllegal opcodes 0\n"
+    },
+    {
+      "label": "antes-borda-LavaridgeTown-Route112",
+      "spawn_map": "LavaridgeTown",
+      "spawn": [
+        19,
+        10
+      ],
+      "rom_sha256": "b8460e9e2d299ef75a18eda08597335f3fd9e8357eecb956ff7e9a35d41d1231",
+      "commands": [
+        "map 0 12",
+        "pos 19 10",
+        "cross 16 0 27",
+        "map 0 27",
+        "cross 32 0 12",
+        "map 0 12",
+        "align 18 10",
+        "wait 180",
+        "pos 18 10",
+        "photo antes-borda-LavaridgeTown-Route112.png",
+        "cross 16 0 27",
+        "map 0 27",
+        "where"
+      ],
+      "log": "map 0.12 pos 19,10\nmap 0.27 pos 0,50\nmap 0.12 pos 19,10\nmap 0.27 pos 0,50\nwhere 0.27 0,50 flags1\nIllegal opcodes 0\n"
+    },
+    {
+      "label": "depois-borda-LavaridgeTown-Route112",
+      "spawn_map": "LavaridgeTown",
+      "spawn": [
+        19,
+        10
+      ],
+      "rom_sha256": "8b0a40bc260720ee94b11b68276cf2770d498c07a72bbce61e3439ddc7143d04",
+      "commands": [
+        "map 0 12",
+        "pos 19 10",
+        "cross 16 0 27",
+        "map 0 27",
+        "cross 32 0 12",
+        "map 0 12",
+        "align 18 10",
+        "wait 180",
+        "pos 18 10",
+        "photo depois-borda-LavaridgeTown-Route112.png",
+        "cross 16 0 27",
+        "map 0 27",
+        "where"
+      ],
+      "log": "map 0.12 pos 19,10\nmap 0.27 pos 0,50\nmap 0.12 pos 19,10\nmap 0.27 pos 0,50\nwhere 0.27 0,50 flags1\nIllegal opcodes 0\n"
+    },
+    {
+      "label": "antes-borda-Route112-LavaridgeTown",
+      "spawn_map": "Route112",
+      "spawn": [
+        0,
+        49
+      ],
+      "rom_sha256": "b8460e9e2d299ef75a18eda08597335f3fd9e8357eecb956ff7e9a35d41d1231",
+      "commands": [
+        "map 0 27",
+        "pos 0 49",
+        "cross 32 0 12",
+        "map 0 12",
+        "cross 16 0 27",
+        "map 0 27",
+        "align 1 49",
+        "wait 180",
+        "pos 1 49",
+        "photo antes-borda-Route112-LavaridgeTown.png",
+        "cross 32 0 12",
+        "map 0 12",
+        "where"
+      ],
+      "log": "map 0.27 pos 0,49\nmap 0.12 pos 19,9\nmap 0.27 pos 0,49\nmap 0.12 pos 19,9\nwhere 0.12 19,9 flags1\nIllegal opcodes 0\n"
+    },
+    {
+      "label": "depois-borda-Route112-LavaridgeTown",
+      "spawn_map": "Route112",
+      "spawn": [
+        0,
+        49
+      ],
+      "rom_sha256": "8b0a40bc260720ee94b11b68276cf2770d498c07a72bbce61e3439ddc7143d04",
+      "commands": [
+        "map 0 27",
+        "pos 0 49",
+        "cross 32 0 12",
+        "map 0 12",
+        "cross 16 0 27",
+        "map 0 27",
+        "align 1 49",
+        "wait 180",
+        "pos 1 49",
+        "photo depois-borda-Route112-LavaridgeTown.png",
+        "cross 32 0 12",
+        "map 0 12",
+        "where"
+      ],
+      "log": "map 0.27 pos 0,49\nmap 0.12 pos 19,9\nmap 0.27 pos 0,49\nmap 0.12 pos 19,9\nwhere 0.12 19,9 flags1\nIllegal opcodes 0\n"
+    }
+  ]
+}

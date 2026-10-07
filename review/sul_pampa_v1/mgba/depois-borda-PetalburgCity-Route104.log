@@ -1,0 +1,6 @@
+map 0.0 pos 0,13
+map 0.19 pos 39,63
+map 0.0 pos 0,13
+map 0.19 pos 39,63
+where 0.19 39,63 flags1
+Illegal opcodes 0
