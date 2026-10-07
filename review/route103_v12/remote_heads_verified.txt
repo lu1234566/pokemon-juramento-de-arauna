@@ -1,0 +1,2 @@
+7d40f7345ab2d84b4d8710edee30cf128c346166	refs/heads/claude/pokemon-juramento-arauna-fhk6ah
+979fb6c1b6731561f3c993efd6045a9bbf096c54	refs/heads/main

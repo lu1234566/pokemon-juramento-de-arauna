@@ -1,0 +1,31 @@
+{
+  "base_commit": "7d40f7345ab2d84b4d8710edee30cf128c346166",
+  "files": [
+    {
+      "path": "data/tilesets/secondary/arauna_border_route103_uivo_v1/metatiles.bin",
+      "upper_layers": {
+        "723": 565,
+        "790": 737
+      },
+      "before_sha256": "28a893f45f939695ef94629b8d7780797a0422045b267e37863f3168000704a1",
+      "after_sha256": "31aa678914aa46e1fbfbbfa9d616104e3891b461a1869e7464262b43a59ecc37"
+    },
+    {
+      "path": "data/tilesets/secondary/arauna_border_oldale_town_uivo_v1/metatiles.bin",
+      "upper_layers": {
+        "837": 802,
+        "838": 802
+      },
+      "before_sha256": "f85fae11587fb3a0afadf9c9849dacfd8405e3de4e4d968593521c6d2a38ee62",
+      "after_sha256": "e3d95691a0af9c0ef3fc3b1c06a939b402b1ea5e72020211e0c0d10968ca865e"
+    },
+    {
+      "path": "data/tilesets/secondary/arauna_border_route110_uivo_v1/metatiles.bin",
+      "upper_layers": {
+        "986": 983
+      },
+      "before_sha256": "f74a1c418d2068999189ed03e8133982af382806d43abd17a89b3ea5e468edc5",
+      "after_sha256": "121eedfa31219b67cf36da41b1b837c19f6f021183811c76bbafed7afb5b0c45"
+    }
+  ]
+}

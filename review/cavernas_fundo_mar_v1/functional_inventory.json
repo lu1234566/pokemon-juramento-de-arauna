@@ -1,0 +1,4167 @@
+{
+  "baseline_commit": "7d40f7345ab2d84b4d8710edee30cf128c346166",
+  "groups": {
+    "cavernas": [
+      "AlteringCave",
+      "AncientTomb",
+      "ArtisanCave_1F",
+      "ArtisanCave_B1F",
+      "IslandCave",
+      "MarineCave_End",
+      "MarineCave_Entrance",
+      "SealedChamber_InnerRoom",
+      "SealedChamber_OuterRoom",
+      "TerraCave_End",
+      "TerraCave_Entrance"
+    ],
+    "dive": [
+      "Underwater_MarineCave",
+      "Underwater_Route105",
+      "Underwater_Route124",
+      "Underwater_Route125",
+      "Underwater_Route126",
+      "Underwater_Route127",
+      "Underwater_Route128",
+      "Underwater_Route129",
+      "Underwater_Route134",
+      "Underwater_SeafloorCavern",
+      "Underwater_SealedChamber",
+      "Underwater_SootopolisCity"
+    ],
+    "safari": [
+      "SafariZone_North",
+      "SafariZone_Northeast",
+      "SafariZone_Northwest",
+      "SafariZone_RestHouse",
+      "SafariZone_South",
+      "SafariZone_Southeast",
+      "SafariZone_Southwest"
+    ],
+    "correcao_rota103": [
+      "Route103"
+    ]
+  },
+  "maps": {
+    "AlteringCave": {
+      "group": "cavernas",
+      "layout": {
+        "id": "LAYOUT_ALTERING_CAVE",
+        "name": "AlteringCave_Layout",
+        "width": 32,
+        "height": 24,
+        "primary_tileset": "gTileset_General",
+        "secondary_tileset": "gTileset_Cave",
+        "border_filepath": "data/layouts/AlteringCave/border.bin",
+        "blockdata_filepath": "data/layouts/AlteringCave/map.bin"
+      },
+      "map": {
+        "id": "MAP_ALTERING_CAVE",
+        "name": "AlteringCave",
+        "layout": "LAYOUT_ALTERING_CAVE",
+        "music": "MUS_RG_SEVII_CAVE",
+        "region_map_section": "MAPSEC_ALTERING_CAVE",
+        "requires_flash": false,
+        "weather": "WEATHER_NONE",
+        "map_type": "MAP_TYPE_UNDERGROUND",
+        "allow_cycling": true,
+        "allow_escaping": true,
+        "allow_running": true,
+        "show_map_name": true,
+        "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+        "connections": null,
+        "object_events": [],
+        "warp_events": [
+          {
+            "x": 18,
+            "y": 22,
+            "elevation": 0,
+            "dest_map": "MAP_ROUTE103",
+            "dest_warp_id": "0"
+          }
+        ],
+        "coord_events": [],
+        "bg_events": []
+      },
+      "hashes": {
+        "data/maps/AlteringCave/map.json": "5d91b9d8d86a698b177a69a3e64c49906ac060c70aa22ad90bb8f7f72941a76c",
+        "data/layouts/AlteringCave/map.bin": "51fab8b4622ddd10f45814a2210b7d3c9836020edee71d51002c03c4d107b5e9",
+        "data/layouts/AlteringCave/border.bin": "a8fb987bcf19f3554623d70e41906b5eb019ae568cb1b0d5eed634c70b24f12a",
+        "data/maps/AlteringCave/scripts.inc": "17d78321c52ade52c5c1a90a6a04fe384c1bbf4a25fbd63eae33fc7e275241dd",
+        "data/tilesets/primary/general/metatiles.bin": "17974b0ba1bb9d105d5ba255c69a3b80d8484a26ea0b8ff22c6c6567c6c22910",
+        "data/tilesets/primary/general/metatile_attributes.bin": "06c9548a6c70d133b6d47638090f5d36f3fec92aace3d90deca758a4404cfa9b",
+        "data/tilesets/secondary/cave/metatiles.bin": "fca8629264b6ff2324224864ed98d929cc5a93213a5a512a3798d144470e022b",
+        "data/tilesets/secondary/cave/metatile_attributes.bin": "35737e4634461b7461e4dfab12a150d9cad7ff78591a51e23f74a61219d86ad2"
+      },
+      "script_created_metatile_ids": [],
+      "transitive_script_labels": [
+        "AlteringCave_MapScripts",
+        "AlteringCave_OnTransition"
+      ],
+      "own_functional_commands": [
+        "setflag FLAG_LANDMARK_ALTERING_CAVE"
+      ],
+      "flags": [
+        "FLAG_LANDMARK_ALTERING_CAVE"
+      ],
+      "vars": []
+    },
+    "AncientTomb": {
+      "group": "cavernas",
+      "layout": {
+        "id": "LAYOUT_ANCIENT_TOMB",
+        "name": "AncientTomb_Layout",
+        "width": 17,
+        "height": 33,
+        "primary_tileset": "gTileset_General",
+        "secondary_tileset": "gTileset_Cave",
+        "border_filepath": "data/layouts/AncientTomb/border.bin",
+        "blockdata_filepath": "data/layouts/AncientTomb/map.bin"
+      },
+      "map": {
+        "id": "MAP_ANCIENT_TOMB",
+        "name": "AncientTomb",
+        "layout": "LAYOUT_ANCIENT_TOMB",
+        "music": "MUS_ARAUNA_LEGEND_ENCOUNTER",
+        "region_map_section": "MAPSEC_ANCIENT_TOMB",
+        "requires_flash": false,
+        "weather": "WEATHER_NONE",
+        "map_type": "MAP_TYPE_UNDERGROUND",
+        "allow_cycling": true,
+        "allow_escaping": true,
+        "allow_running": true,
+        "show_map_name": true,
+        "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+        "connections": null,
+        "object_events": [
+          {
+            "graphics_id": "OBJ_EVENT_GFX_REGISTEEL",
+            "x": 8,
+            "y": 7,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "AncientTomb_EventScript_Registeel",
+            "flag": "FLAG_HIDE_REGISTEEL"
+          }
+        ],
+        "warp_events": [
+          {
+            "x": 8,
+            "y": 29,
+            "elevation": 3,
+            "dest_map": "MAP_ROUTE120",
+            "dest_warp_id": "0"
+          },
+          {
+            "x": 8,
+            "y": 20,
+            "elevation": 0,
+            "dest_map": "MAP_ANCIENT_TOMB",
+            "dest_warp_id": "2"
+          },
+          {
+            "x": 8,
+            "y": 11,
+            "elevation": 3,
+            "dest_map": "MAP_ANCIENT_TOMB",
+            "dest_warp_id": "1"
+          }
+        ],
+        "coord_events": [],
+        "bg_events": [
+          {
+            "type": "sign",
+            "x": 8,
+            "y": 20,
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "AncientTomb_EventScript_CaveEntranceMiddle"
+          },
+          {
+            "type": "sign",
+            "x": 7,
+            "y": 20,
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "AncientTomb_EventScript_CaveEntranceSide"
+          },
+          {
+            "type": "sign",
+            "x": 9,
+            "y": 20,
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "AncientTomb_EventScript_CaveEntranceSide"
+          }
+        ]
+      },
+      "hashes": {
+        "data/maps/AncientTomb/map.json": "0505fa5c8afd3fde0d79c34544f8e93ada67fda0ba6377d0aa2b6bd310072505",
+        "data/layouts/AncientTomb/map.bin": "16274566e3e109fbfb5812bc1c7bc9ebe3633526d07101baf13bf8a18863ff82",
+        "data/layouts/AncientTomb/border.bin": "8a5d0c5d51912eae9e9150ae3e511e56a4f4080d8ae508d94409247d51c56f13",
+        "data/maps/AncientTomb/scripts.inc": "11a07e6354da8a8f94f19363463e0a74fececfd696c224485dae6167e69efc8e",
+        "data/tilesets/primary/general/metatiles.bin": "17974b0ba1bb9d105d5ba255c69a3b80d8484a26ea0b8ff22c6c6567c6c22910",
+        "data/tilesets/primary/general/metatile_attributes.bin": "06c9548a6c70d133b6d47638090f5d36f3fec92aace3d90deca758a4404cfa9b",
+        "data/tilesets/secondary/cave/metatiles.bin": "fca8629264b6ff2324224864ed98d929cc5a93213a5a512a3798d144470e022b",
+        "data/tilesets/secondary/cave/metatile_attributes.bin": "35737e4634461b7461e4dfab12a150d9cad7ff78591a51e23f74a61219d86ad2"
+      },
+      "script_created_metatile_ids": [
+        553,
+        565
+      ],
+      "transitive_script_labels": [
+        "AncientTomb_EventScript_BigHoleInWall",
+        "AncientTomb_EventScript_CaveEntranceMiddle",
+        "AncientTomb_EventScript_CaveEntranceSide",
+        "AncientTomb_EventScript_DefeatedRegisteel",
+        "AncientTomb_EventScript_HideRegiEntrance",
+        "AncientTomb_EventScript_RanFromRegisteel",
+        "AncientTomb_EventScript_Registeel",
+        "AncientTomb_EventScript_ShowRegisteel",
+        "AncientTomb_EventScript_TryRemoveRegisteel",
+        "AncientTomb_MapScripts",
+        "AncientTomb_OnLoad",
+        "AncientTomb_OnResume",
+        "AncientTomb_OnTransition"
+      ],
+      "own_functional_commands": [
+        "removeobject VAR_LAST_TALKED",
+        "setflag FLAG_LANDMARK_ANCIENT_TOMB",
+        "clearflag FLAG_HIDE_REGISTEEL",
+        "setmetatile 7, 19, METATILE_Cave_EntranceCover, TRUE",
+        "setmetatile 8, 19, METATILE_Cave_EntranceCover, TRUE",
+        "setmetatile 9, 19, METATILE_Cave_EntranceCover, TRUE",
+        "setmetatile 7, 20, METATILE_Cave_SealedChamberBraille_Mid, TRUE",
+        "setmetatile 8, 20, METATILE_Cave_SealedChamberBraille_Mid, TRUE",
+        "setmetatile 9, 20, METATILE_Cave_SealedChamberBraille_Mid, TRUE",
+        "setwildbattle SPECIES_REGISTEEL, 40",
+        "setflag FLAG_SYS_CTRL_OBJ_DELETE",
+        "special StartRegiBattle",
+        "clearflag FLAG_SYS_CTRL_OBJ_DELETE",
+        "setflag FLAG_DEFEATED_REGISTEEL",
+        "setflag FLAG_DEFEATED_REGISTEEL",
+        "goto Common_EventScript_RemoveStaticPokemon",
+        "setvar VAR_0x8004, SPECIES_REGISTEEL",
+        "goto Common_EventScript_LegendaryFlewAway"
+      ],
+      "flags": [
+        "FLAG_DEFEATED_REGISTEEL",
+        "FLAG_HIDE_REGISTEEL",
+        "FLAG_LANDMARK_ANCIENT_TOMB",
+        "FLAG_SYS_CTRL_OBJ_DELETE",
+        "FLAG_SYS_REGISTEEL_PUZZLE_COMPLETED"
+      ],
+      "vars": [
+        "VAR_0x8004",
+        "VAR_LAST_TALKED",
+        "VAR_RESULT"
+      ]
+    },
+    "ArtisanCave_1F": {
+      "group": "cavernas",
+      "layout": {
+        "id": "LAYOUT_ARTISAN_CAVE_1F",
+        "name": "ArtisanCave_1F_Layout",
+        "width": 21,
+        "height": 22,
+        "primary_tileset": "gTileset_General",
+        "secondary_tileset": "gTileset_Cave",
+        "border_filepath": "data/layouts/ArtisanCave_1F/border.bin",
+        "blockdata_filepath": "data/layouts/ArtisanCave_1F/map.bin"
+      },
+      "map": {
+        "id": "MAP_ARTISAN_CAVE_1F",
+        "name": "ArtisanCave_1F",
+        "layout": "LAYOUT_ARTISAN_CAVE_1F",
+        "music": "MUS_PETALBURG_WOODS",
+        "region_map_section": "MAPSEC_ARTISAN_CAVE",
+        "requires_flash": false,
+        "weather": "WEATHER_NONE",
+        "map_type": "MAP_TYPE_UNDERGROUND",
+        "allow_cycling": true,
+        "allow_escaping": true,
+        "allow_running": true,
+        "show_map_name": true,
+        "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+        "connections": null,
+        "object_events": [
+          {
+            "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+            "x": 14,
+            "y": 5,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movement_range_x": 1,
+            "movement_range_y": 1,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "ArtisanCave_1F_EventScript_ItemCarbos",
+            "flag": "FLAG_ITEM_ARTISAN_CAVE_1F_CARBOS"
+          }
+        ],
+        "warp_events": [
+          {
+            "x": 10,
+            "y": 17,
+            "elevation": 0,
+            "dest_map": "MAP_BATTLE_FRONTIER_OUTSIDE_EAST",
+            "dest_warp_id": "13"
+          },
+          {
+            "x": 6,
+            "y": 5,
+            "elevation": 0,
+            "dest_map": "MAP_ARTISAN_CAVE_B1F",
+            "dest_warp_id": "1"
+          }
+        ],
+        "coord_events": [],
+        "bg_events": []
+      },
+      "hashes": {
+        "data/maps/ArtisanCave_1F/map.json": "73272e2900cd9080a6025c9d3a21bdab4efdeca56bda159337537aaf19228ce2",
+        "data/layouts/ArtisanCave_1F/map.bin": "3d2d505ddefe0bca0392f8afe3a09c8a569e7b2b1abd33026b0b13d915b8b0fb",
+        "data/layouts/ArtisanCave_1F/border.bin": "a8fb987bcf19f3554623d70e41906b5eb019ae568cb1b0d5eed634c70b24f12a",
+        "data/maps/ArtisanCave_1F/scripts.inc": "f2cea08515e1ebf9a57bd9d66b0269222c574534aaaaf2bfd3a3834fa9f41759",
+        "data/tilesets/primary/general/metatiles.bin": "17974b0ba1bb9d105d5ba255c69a3b80d8484a26ea0b8ff22c6c6567c6c22910",
+        "data/tilesets/primary/general/metatile_attributes.bin": "06c9548a6c70d133b6d47638090f5d36f3fec92aace3d90deca758a4404cfa9b",
+        "data/tilesets/secondary/cave/metatiles.bin": "fca8629264b6ff2324224864ed98d929cc5a93213a5a512a3798d144470e022b",
+        "data/tilesets/secondary/cave/metatile_attributes.bin": "35737e4634461b7461e4dfab12a150d9cad7ff78591a51e23f74a61219d86ad2"
+      },
+      "script_created_metatile_ids": [],
+      "transitive_script_labels": [
+        "ArtisanCave_1F_MapScripts"
+      ],
+      "own_functional_commands": [],
+      "flags": [],
+      "vars": []
+    },
+    "ArtisanCave_B1F": {
+      "group": "cavernas",
+      "layout": {
+        "id": "LAYOUT_ARTISAN_CAVE_B1F",
+        "name": "ArtisanCave_B1F_Layout",
+        "width": 46,
+        "height": 54,
+        "primary_tileset": "gTileset_General",
+        "secondary_tileset": "gTileset_Cave",
+        "border_filepath": "data/layouts/ArtisanCave_B1F/border.bin",
+        "blockdata_filepath": "data/layouts/ArtisanCave_B1F/map.bin"
+      },
+      "map": {
+        "id": "MAP_ARTISAN_CAVE_B1F",
+        "name": "ArtisanCave_B1F",
+        "layout": "LAYOUT_ARTISAN_CAVE_B1F",
+        "music": "MUS_PETALBURG_WOODS",
+        "region_map_section": "MAPSEC_ARTISAN_CAVE",
+        "requires_flash": false,
+        "weather": "WEATHER_NONE",
+        "map_type": "MAP_TYPE_UNDERGROUND",
+        "allow_cycling": true,
+        "allow_escaping": true,
+        "allow_running": true,
+        "show_map_name": true,
+        "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+        "connections": null,
+        "object_events": [
+          {
+            "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+            "x": 32,
+            "y": 38,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movement_range_x": 1,
+            "movement_range_y": 1,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "ArtisanCave_B1F_EventScript_ItemHPUp",
+            "flag": "FLAG_ITEM_ARTISAN_CAVE_B1F_HP_UP"
+          }
+        ],
+        "warp_events": [
+          {
+            "x": 8,
+            "y": 48,
+            "elevation": 0,
+            "dest_map": "MAP_BATTLE_FRONTIER_OUTSIDE_WEST",
+            "dest_warp_id": "10"
+          },
+          {
+            "x": 38,
+            "y": 5,
+            "elevation": 0,
+            "dest_map": "MAP_ARTISAN_CAVE_1F",
+            "dest_warp_id": "1"
+          }
+        ],
+        "coord_events": [],
+        "bg_events": [
+          {
+            "type": "hidden_item",
+            "x": 32,
+            "y": 29,
+            "elevation": 0,
+            "item": "ITEM_ZINC",
+            "flag": "FLAG_HIDDEN_ITEM_ARTISAN_CAVE_B1F_ZINC"
+          },
+          {
+            "type": "hidden_item",
+            "x": 27,
+            "y": 8,
+            "elevation": 0,
+            "item": "ITEM_CALCIUM",
+            "flag": "FLAG_HIDDEN_ITEM_ARTISAN_CAVE_B1F_CALCIUM"
+          },
+          {
+            "type": "hidden_item",
+            "x": 7,
+            "y": 5,
+            "elevation": 0,
+            "item": "ITEM_PROTEIN",
+            "flag": "FLAG_HIDDEN_ITEM_ARTISAN_CAVE_B1F_PROTEIN"
+          },
+          {
+            "type": "hidden_item",
+            "x": 19,
+            "y": 43,
+            "elevation": 0,
+            "item": "ITEM_IRON",
+            "flag": "FLAG_HIDDEN_ITEM_ARTISAN_CAVE_B1F_IRON"
+          }
+        ]
+      },
+      "hashes": {
+        "data/maps/ArtisanCave_B1F/map.json": "14202aa6cf9c790eaab45c3f0177de1481c44b69c8031b136d4350b1eed720ac",
+        "data/layouts/ArtisanCave_B1F/map.bin": "852d2f50cee68af7fcba76fd02acfa9e0d66b5ff146bda987b977bb2a2072e63",
+        "data/layouts/ArtisanCave_B1F/border.bin": "a8fb987bcf19f3554623d70e41906b5eb019ae568cb1b0d5eed634c70b24f12a",
+        "data/maps/ArtisanCave_B1F/scripts.inc": "c672e9e090830b90d514496b30e39fef16980727abf37808105191aca5249745",
+        "data/tilesets/primary/general/metatiles.bin": "17974b0ba1bb9d105d5ba255c69a3b80d8484a26ea0b8ff22c6c6567c6c22910",
+        "data/tilesets/primary/general/metatile_attributes.bin": "06c9548a6c70d133b6d47638090f5d36f3fec92aace3d90deca758a4404cfa9b",
+        "data/tilesets/secondary/cave/metatiles.bin": "fca8629264b6ff2324224864ed98d929cc5a93213a5a512a3798d144470e022b",
+        "data/tilesets/secondary/cave/metatile_attributes.bin": "35737e4634461b7461e4dfab12a150d9cad7ff78591a51e23f74a61219d86ad2"
+      },
+      "script_created_metatile_ids": [],
+      "transitive_script_labels": [
+        "ArtisanCave_B1F_MapScripts",
+        "ArtisanCave_B1F_OnTransition"
+      ],
+      "own_functional_commands": [
+        "setflag FLAG_LANDMARK_ARTISAN_CAVE"
+      ],
+      "flags": [
+        "FLAG_LANDMARK_ARTISAN_CAVE"
+      ],
+      "vars": []
+    },
+    "IslandCave": {
+      "group": "cavernas",
+      "layout": {
+        "id": "LAYOUT_ISLAND_CAVE",
+        "name": "IslandCave_Layout",
+        "width": 17,
+        "height": 33,
+        "primary_tileset": "gTileset_General",
+        "secondary_tileset": "gTileset_Cave",
+        "border_filepath": "data/layouts/IslandCave/border.bin",
+        "blockdata_filepath": "data/layouts/IslandCave/map.bin"
+      },
+      "map": {
+        "id": "MAP_ISLAND_CAVE",
+        "name": "IslandCave",
+        "layout": "LAYOUT_ISLAND_CAVE",
+        "music": "MUS_ARAUNA_LEGEND_ENCOUNTER",
+        "region_map_section": "MAPSEC_ISLAND_CAVE",
+        "requires_flash": false,
+        "weather": "WEATHER_NONE",
+        "map_type": "MAP_TYPE_UNDERGROUND",
+        "allow_cycling": true,
+        "allow_escaping": true,
+        "allow_running": true,
+        "show_map_name": true,
+        "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+        "connections": null,
+        "object_events": [
+          {
+            "graphics_id": "OBJ_EVENT_GFX_REGICE",
+            "x": 8,
+            "y": 7,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "IslandCave_EventScript_Regice",
+            "flag": "FLAG_HIDE_REGICE"
+          }
+        ],
+        "warp_events": [
+          {
+            "x": 8,
+            "y": 29,
+            "elevation": 3,
+            "dest_map": "MAP_ROUTE105",
+            "dest_warp_id": "0"
+          },
+          {
+            "x": 8,
+            "y": 20,
+            "elevation": 0,
+            "dest_map": "MAP_ISLAND_CAVE",
+            "dest_warp_id": "2"
+          },
+          {
+            "x": 8,
+            "y": 11,
+            "elevation": 3,
+            "dest_map": "MAP_ISLAND_CAVE",
+            "dest_warp_id": "1"
+          }
+        ],
+        "coord_events": [],
+        "bg_events": [
+          {
+            "type": "sign",
+            "x": 8,
+            "y": 20,
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "IslandCave_EventScript_CaveEntranceMiddle"
+          },
+          {
+            "type": "sign",
+            "x": 7,
+            "y": 20,
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "IslandCave_EventScript_CaveEntranceSide"
+          },
+          {
+            "type": "sign",
+            "x": 9,
+            "y": 20,
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "IslandCave_EventScript_CaveEntranceSide"
+          }
+        ]
+      },
+      "hashes": {
+        "data/maps/IslandCave/map.json": "892ff510ef2bbebc6e8beb9723d1d114bcf89c83160d2fbc1eecaa55830f32da",
+        "data/layouts/IslandCave/map.bin": "c26ef8a803db79d30aa0237f994df45c31f636f27b916cff6423c6193151e4a1",
+        "data/layouts/IslandCave/border.bin": "8a5d0c5d51912eae9e9150ae3e511e56a4f4080d8ae508d94409247d51c56f13",
+        "data/maps/IslandCave/scripts.inc": "b7af45e85d2511cf89e20a305055675b7d9aed177ef6d52e58cd782be1cf6252",
+        "data/tilesets/primary/general/metatiles.bin": "17974b0ba1bb9d105d5ba255c69a3b80d8484a26ea0b8ff22c6c6567c6c22910",
+        "data/tilesets/primary/general/metatile_attributes.bin": "06c9548a6c70d133b6d47638090f5d36f3fec92aace3d90deca758a4404cfa9b",
+        "data/tilesets/secondary/cave/metatiles.bin": "fca8629264b6ff2324224864ed98d929cc5a93213a5a512a3798d144470e022b",
+        "data/tilesets/secondary/cave/metatile_attributes.bin": "35737e4634461b7461e4dfab12a150d9cad7ff78591a51e23f74a61219d86ad2"
+      },
+      "script_created_metatile_ids": [
+        553,
+        554,
+        555,
+        556,
+        562,
+        563,
+        564,
+        565
+      ],
+      "transitive_script_labels": [
+        "IslandCave_EventScript_BigHoleInWall",
+        "IslandCave_EventScript_CaveEntranceMiddle",
+        "IslandCave_EventScript_CaveEntranceSide",
+        "IslandCave_EventScript_ClearSteps",
+        "IslandCave_EventScript_CloseBrailleMsg",
+        "IslandCave_EventScript_DefeatedRegice",
+        "IslandCave_EventScript_HideRegiEntrance",
+        "IslandCave_EventScript_OpenRegiEntrance",
+        "IslandCave_EventScript_RanFromRegice",
+        "IslandCave_EventScript_Regice",
+        "IslandCave_EventScript_ShowRegice",
+        "IslandCave_EventScript_TryRemoveRegice",
+        "IslandCave_MapScripts",
+        "IslandCave_OnLoad",
+        "IslandCave_OnResume",
+        "IslandCave_OnTransition"
+      ],
+      "own_functional_commands": [
+        "removeobject VAR_LAST_TALKED",
+        "setmetatile 7, 19, METATILE_Cave_EntranceCover, TRUE",
+        "setmetatile 8, 19, METATILE_Cave_EntranceCover, TRUE",
+        "setmetatile 9, 19, METATILE_Cave_EntranceCover, TRUE",
+        "setmetatile 7, 20, METATILE_Cave_SealedChamberBraille_Mid, TRUE",
+        "setmetatile 8, 20, METATILE_Cave_SealedChamberBraille_Mid, TRUE",
+        "setmetatile 9, 20, METATILE_Cave_SealedChamberBraille_Mid, TRUE",
+        "setflag FLAG_LANDMARK_ISLAND_CAVE",
+        "call IslandCave_EventScript_ClearSteps",
+        "clearflag FLAG_HIDE_REGICE",
+        "setmetatile 7, 19, METATILE_Cave_SealedChamberEntrance_TopLeft, TRUE",
+        "setmetatile 8, 19, METATILE_Cave_SealedChamberEntrance_TopMid, TRUE",
+        "setmetatile 9, 19, METATILE_Cave_SealedChamberEntrance_TopRight, TRUE",
+        "setmetatile 7, 20, METATILE_Cave_SealedChamberEntrance_BottomLeft, TRUE",
+        "setmetatile 8, 20, METATILE_Cave_SealedChamberEntrance_BottomMid, FALSE",
+        "setmetatile 9, 20, METATILE_Cave_SealedChamberEntrance_BottomRight, TRUE",
+        "special DrawWholeMapView",
+        "setflag FLAG_SYS_BRAILLE_REGICE_COMPLETED",
+        "setflag FLAG_TEMP_REGICE_PUZZLE_STARTED",
+        "special ShouldDoBrailleRegicePuzzle",
+        "goto IslandCave_EventScript_CloseBrailleMsg",
+        "setflag FLAG_TEMP_REGICE_PUZZLE_STARTED",
+        "special ShouldDoBrailleRegicePuzzle",
+        "goto IslandCave_EventScript_CloseBrailleMsg",
+        "setvar VAR_REGICE_STEPS_1, 0",
+        "setvar VAR_REGICE_STEPS_2, 0",
+        "setvar VAR_REGICE_STEPS_3, 0",
+        "clearflag FLAG_TEMP_REGICE_PUZZLE_FAILED",
+        "setwildbattle SPECIES_REGICE, 40",
+        "setflag FLAG_SYS_CTRL_OBJ_DELETE",
+        "special StartRegiBattle",
+        "clearflag FLAG_SYS_CTRL_OBJ_DELETE",
+        "setflag FLAG_DEFEATED_REGICE",
+        "setflag FLAG_DEFEATED_REGICE",
+        "goto Common_EventScript_RemoveStaticPokemon",
+        "setvar VAR_0x8004, SPECIES_REGICE",
+        "goto Common_EventScript_LegendaryFlewAway"
+      ],
+      "flags": [
+        "FLAG_DEFEATED_REGICE",
+        "FLAG_HIDE_REGICE",
+        "FLAG_LANDMARK_ISLAND_CAVE",
+        "FLAG_SYS_BRAILLE_REGICE_COMPLETED",
+        "FLAG_SYS_CTRL_OBJ_DELETE",
+        "FLAG_TEMP_REGICE_PUZZLE_FAILED",
+        "FLAG_TEMP_REGICE_PUZZLE_STARTED"
+      ],
+      "vars": [
+        "VAR_0x8004",
+        "VAR_LAST_TALKED",
+        "VAR_REGICE_STEPS_1",
+        "VAR_REGICE_STEPS_2",
+        "VAR_REGICE_STEPS_3",
+        "VAR_RESULT"
+      ]
+    },
+    "MarineCave_End": {
+      "group": "cavernas",
+      "layout": {
+        "id": "LAYOUT_MARINE_CAVE_END",
+        "name": "MarineCave_End_Layout",
+        "width": 27,
+        "height": 30,
+        "primary_tileset": "gTileset_General",
+        "secondary_tileset": "gTileset_Cave",
+        "border_filepath": "data/layouts/MarineCave_End/border.bin",
+        "blockdata_filepath": "data/layouts/MarineCave_End/map.bin"
+      },
+      "map": {
+        "id": "MAP_MARINE_CAVE_END",
+        "name": "MarineCave_End",
+        "layout": "LAYOUT_MARINE_CAVE_END",
+        "music": "MUS_PETALBURG_WOODS",
+        "region_map_section": "MAPSEC_MARINE_CAVE",
+        "requires_flash": false,
+        "weather": "WEATHER_FOG_HORIZONTAL",
+        "map_type": "MAP_TYPE_UNDERGROUND",
+        "allow_cycling": false,
+        "allow_escaping": true,
+        "allow_running": true,
+        "show_map_name": true,
+        "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+        "connections": null,
+        "object_events": [
+          {
+            "local_id": "LOCALID_MARINE_CAVE_KYOGRE",
+            "graphics_id": "OBJ_EVENT_GFX_KYOGRE_FRONT",
+            "x": 9,
+            "y": 22,
+            "elevation": 1,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "movement_range_x": 1,
+            "movement_range_y": 1,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "0x0",
+            "flag": "FLAG_HIDE_MARINE_CAVE_KYOGRE"
+          }
+        ],
+        "warp_events": [
+          {
+            "x": 20,
+            "y": 4,
+            "elevation": 0,
+            "dest_map": "MAP_MARINE_CAVE_ENTRANCE",
+            "dest_warp_id": "0"
+          }
+        ],
+        "coord_events": [
+          {
+            "type": "trigger",
+            "x": 9,
+            "y": 26,
+            "elevation": 3,
+            "var": "VAR_TEMP_1",
+            "var_value": "1",
+            "script": "MarineCave_End_EventScript_Kyogre"
+          }
+        ],
+        "bg_events": []
+      },
+      "hashes": {
+        "data/maps/MarineCave_End/map.json": "c0fac35975c555c16f96cb7280afce1a62c1018f397c6dc4b03840869ffb61fa",
+        "data/layouts/MarineCave_End/map.bin": "fd5befb573f36779fb29c09a4f072a90737a95001412917b7d525b1ae6062c75",
+        "data/layouts/MarineCave_End/border.bin": "0718b9fb98d3a7d4c879db2469770d6b077be9b9c51c54db153daea54a2860ce",
+        "data/maps/MarineCave_End/scripts.inc": "00ae51a9b516af9990610d1e23dfba21003dc87269f015e91c9084f444bbf36a",
+        "data/tilesets/primary/general/metatiles.bin": "17974b0ba1bb9d105d5ba255c69a3b80d8484a26ea0b8ff22c6c6567c6c22910",
+        "data/tilesets/primary/general/metatile_attributes.bin": "06c9548a6c70d133b6d47638090f5d36f3fec92aace3d90deca758a4404cfa9b",
+        "data/tilesets/secondary/cave/metatiles.bin": "fca8629264b6ff2324224864ed98d929cc5a93213a5a512a3798d144470e022b",
+        "data/tilesets/secondary/cave/metatile_attributes.bin": "35737e4634461b7461e4dfab12a150d9cad7ff78591a51e23f74a61219d86ad2"
+      },
+      "script_created_metatile_ids": [],
+      "transitive_script_labels": [
+        "Common_Movement_FaceUp",
+        "MarineCave_End_EventScript_DefeatedKyogre",
+        "MarineCave_End_EventScript_Kyogre",
+        "MarineCave_End_EventScript_RanFromKyogre",
+        "MarineCave_End_EventScript_ShowKyogre",
+        "MarineCave_End_EventScript_TryRemoveKyogre",
+        "MarineCave_End_MapScripts",
+        "MarineCave_End_Movement_KyogreApproach",
+        "MarineCave_End_OnResume",
+        "MarineCave_End_OnTransition"
+      ],
+      "own_functional_commands": [
+        "removeobject LOCALID_MARINE_CAVE_KYOGRE",
+        "clearflag FLAG_HIDE_MARINE_CAVE_KYOGRE",
+        "setvar VAR_TEMP_1, 1",
+        "applymovement LOCALID_PLAYER, Common_Movement_FaceUp",
+        "applymovement LOCALID_MARINE_CAVE_KYOGRE, MarineCave_End_Movement_KyogreApproach",
+        "setvar VAR_LAST_TALKED, LOCALID_MARINE_CAVE_KYOGRE",
+        "setwildbattle SPECIES_KYOGRE, 70",
+        "setflag FLAG_SYS_CTRL_OBJ_DELETE",
+        "special BattleSetup_StartLegendaryBattle",
+        "clearflag FLAG_SYS_CTRL_OBJ_DELETE",
+        "setvar VAR_TEMP_1, 0",
+        "setvar VAR_SHOULD_END_ABNORMAL_WEATHER, 1",
+        "setflag FLAG_DEFEATED_KYOGRE",
+        "setvar VAR_SHOULD_END_ABNORMAL_WEATHER, 1",
+        "setflag FLAG_DEFEATED_KYOGRE",
+        "goto Common_EventScript_RemoveStaticPokemon",
+        "setvar VAR_0x8004, SPECIES_KYOGRE",
+        "goto Common_EventScript_LegendaryFlewAway"
+      ],
+      "flags": [
+        "FLAG_DEFEATED_KYOGRE",
+        "FLAG_HIDE_MARINE_CAVE_KYOGRE",
+        "FLAG_SYS_CTRL_OBJ_DELETE"
+      ],
+      "vars": [
+        "VAR_0x8004",
+        "VAR_LAST_TALKED",
+        "VAR_RESULT",
+        "VAR_SHOULD_END_ABNORMAL_WEATHER",
+        "VAR_TEMP_1"
+      ]
+    },
+    "MarineCave_Entrance": {
+      "group": "cavernas",
+      "layout": {
+        "id": "LAYOUT_MARINE_CAVE_ENTRANCE",
+        "name": "MarineCave_Entrance_Layout",
+        "width": 20,
+        "height": 20,
+        "primary_tileset": "gTileset_General",
+        "secondary_tileset": "gTileset_Cave",
+        "border_filepath": "data/layouts/MarineCave_Entrance/border.bin",
+        "blockdata_filepath": "data/layouts/MarineCave_Entrance/map.bin"
+      },
+      "map": {
+        "id": "MAP_MARINE_CAVE_ENTRANCE",
+        "name": "MarineCave_Entrance",
+        "layout": "LAYOUT_MARINE_CAVE_ENTRANCE",
+        "music": "MUS_PETALBURG_WOODS",
+        "region_map_section": "MAPSEC_MARINE_CAVE",
+        "requires_flash": false,
+        "weather": "WEATHER_NONE",
+        "map_type": "MAP_TYPE_UNDERGROUND",
+        "allow_cycling": false,
+        "allow_escaping": true,
+        "allow_running": true,
+        "show_map_name": true,
+        "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+        "connections": null,
+        "object_events": [],
+        "warp_events": [
+          {
+            "x": 14,
+            "y": 1,
+            "elevation": 3,
+            "dest_map": "MAP_MARINE_CAVE_END",
+            "dest_warp_id": "0"
+          }
+        ],
+        "coord_events": [],
+        "bg_events": []
+      },
+      "hashes": {
+        "data/maps/MarineCave_Entrance/map.json": "d8228a5a8ac1b525512bb5b4aea4f0113a38b92339ef70198fe7ba398f36ede1",
+        "data/layouts/MarineCave_Entrance/map.bin": "e66b2517ab76b8ed6c3b62f9b67d4c081d7274406648de0ffcf5bd96a226a3e7",
+        "data/layouts/MarineCave_Entrance/border.bin": "0718b9fb98d3a7d4c879db2469770d6b077be9b9c51c54db153daea54a2860ce",
+        "data/maps/MarineCave_Entrance/scripts.inc": "d29e23ae5d3d379ddd901220e0fe0bc471636f021069c6f0ce79798816efc5f5",
+        "data/tilesets/primary/general/metatiles.bin": "17974b0ba1bb9d105d5ba255c69a3b80d8484a26ea0b8ff22c6c6567c6c22910",
+        "data/tilesets/primary/general/metatile_attributes.bin": "06c9548a6c70d133b6d47638090f5d36f3fec92aace3d90deca758a4404cfa9b",
+        "data/tilesets/secondary/cave/metatiles.bin": "fca8629264b6ff2324224864ed98d929cc5a93213a5a512a3798d144470e022b",
+        "data/tilesets/secondary/cave/metatile_attributes.bin": "35737e4634461b7461e4dfab12a150d9cad7ff78591a51e23f74a61219d86ad2"
+      },
+      "script_created_metatile_ids": [],
+      "transitive_script_labels": [
+        "MarineCave_Entrance_MapScripts",
+        "MarineCave_Entrance_OnResume"
+      ],
+      "own_functional_commands": [],
+      "flags": [],
+      "vars": []
+    },
+    "SealedChamber_InnerRoom": {
+      "group": "cavernas",
+      "layout": {
+        "id": "LAYOUT_SEALED_CHAMBER_INNER_ROOM",
+        "name": "SealedChamber_InnerRoom_Layout",
+        "width": 21,
+        "height": 23,
+        "primary_tileset": "gTileset_General",
+        "secondary_tileset": "gTileset_Cave",
+        "border_filepath": "data/layouts/SealedChamber_InnerRoom/border.bin",
+        "blockdata_filepath": "data/layouts/SealedChamber_InnerRoom/map.bin"
+      },
+      "map": {
+        "id": "MAP_SEALED_CHAMBER_INNER_ROOM",
+        "name": "SealedChamber_InnerRoom",
+        "layout": "LAYOUT_SEALED_CHAMBER_INNER_ROOM",
+        "music": "MUS_ARAUNA_SAPPHIRE_CRYPT",
+        "region_map_section": "MAPSEC_SEALED_CHAMBER",
+        "requires_flash": false,
+        "weather": "WEATHER_NONE",
+        "map_type": "MAP_TYPE_UNDERGROUND",
+        "allow_cycling": true,
+        "allow_escaping": true,
+        "allow_running": true,
+        "show_map_name": true,
+        "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+        "connections": null,
+        "object_events": [],
+        "warp_events": [
+          {
+            "x": 10,
+            "y": 19,
+            "elevation": 3,
+            "dest_map": "MAP_SEALED_CHAMBER_OUTER_ROOM",
+            "dest_warp_id": "0"
+          }
+        ],
+        "coord_events": [],
+        "bg_events": [
+          {
+            "type": "sign",
+            "x": 10,
+            "y": 4,
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "SealedChamber_InnerRoom_EventScript_BrailleBackWall"
+          },
+          {
+            "type": "sign",
+            "x": 6,
+            "y": 8,
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "SealedChamber_InnerRoom_EventScript_BrailleStoryPart1"
+          },
+          {
+            "type": "sign",
+            "x": 14,
+            "y": 8,
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "SealedChamber_InnerRoom_EventScript_BrailleStoryPart2"
+          },
+          {
+            "type": "sign",
+            "x": 4,
+            "y": 13,
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "SealedChamber_InnerRoom_EventScript_BrailleStoryPart3"
+          },
+          {
+            "type": "sign",
+            "x": 16,
+            "y": 13,
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "SealedChamber_InnerRoom_EventScript_BrailleStoryPart4"
+          },
+          {
+            "type": "sign",
+            "x": 6,
+            "y": 18,
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "SealedChamber_InnerRoom_EventScript_BrailleStoryPart5"
+          },
+          {
+            "type": "sign",
+            "x": 14,
+            "y": 18,
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "SealedChamber_InnerRoom_EventScript_BrailleStoryPart6"
+          },
+          {
+            "type": "sign",
+            "x": 9,
+            "y": 4,
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "SealedChamber_InnerRoom_EventScript_BrailleBackWall"
+          },
+          {
+            "type": "sign",
+            "x": 11,
+            "y": 4,
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "SealedChamber_InnerRoom_EventScript_BrailleBackWall"
+          }
+        ]
+      },
+      "hashes": {
+        "data/maps/SealedChamber_InnerRoom/map.json": "bc6772c1b529661889345fd8ac1f25a76508854ce34ad7bad61c1bdcf3fc644e",
+        "data/layouts/SealedChamber_InnerRoom/map.bin": "5c34046562706be716a55188d89cafe9aeaaa42dcb685da740f2569f5172852a",
+        "data/layouts/SealedChamber_InnerRoom/border.bin": "56df6c33017e6cf2c18e4f3182d0bba6f355f43f1710a56a4c503f1df8427a24",
+        "data/maps/SealedChamber_InnerRoom/scripts.inc": "225cb3062a51362f927e293cd262ae29ac49a05e73d079946ec4e37398b22d98",
+        "data/tilesets/primary/general/metatiles.bin": "17974b0ba1bb9d105d5ba255c69a3b80d8484a26ea0b8ff22c6c6567c6c22910",
+        "data/tilesets/primary/general/metatile_attributes.bin": "06c9548a6c70d133b6d47638090f5d36f3fec92aace3d90deca758a4404cfa9b",
+        "data/tilesets/secondary/cave/metatiles.bin": "fca8629264b6ff2324224864ed98d929cc5a93213a5a512a3798d144470e022b",
+        "data/tilesets/secondary/cave/metatile_attributes.bin": "35737e4634461b7461e4dfab12a150d9cad7ff78591a51e23f74a61219d86ad2"
+      },
+      "script_created_metatile_ids": [],
+      "transitive_script_labels": [
+        "SealedChamber_InnerRoom_EventScript_BrailleBackWall",
+        "SealedChamber_InnerRoom_EventScript_BrailleStoryPart1",
+        "SealedChamber_InnerRoom_EventScript_BrailleStoryPart2",
+        "SealedChamber_InnerRoom_EventScript_BrailleStoryPart3",
+        "SealedChamber_InnerRoom_EventScript_BrailleStoryPart4",
+        "SealedChamber_InnerRoom_EventScript_BrailleStoryPart5",
+        "SealedChamber_InnerRoom_EventScript_BrailleStoryPart6",
+        "SealedChamber_InnerRoom_EventScript_NoEffect",
+        "SealedChamber_InnerRoom_MapScripts"
+      ],
+      "own_functional_commands": [
+        "special DoSealedChamberShakingEffect_Long",
+        "special DoSealedChamberShakingEffect_Short",
+        "special DoSealedChamberShakingEffect_Short",
+        "special DoSealedChamberShakingEffect_Short",
+        "setflag FLAG_REGI_DOORS_OPENED"
+      ],
+      "flags": [
+        "FLAG_REGI_DOORS_OPENED"
+      ],
+      "vars": [
+        "VAR_RESULT"
+      ]
+    },
+    "SealedChamber_OuterRoom": {
+      "group": "cavernas",
+      "layout": {
+        "id": "LAYOUT_SEALED_CHAMBER_OUTER_ROOM",
+        "name": "SealedChamber_OuterRoom_Layout",
+        "width": 21,
+        "height": 23,
+        "primary_tileset": "gTileset_General",
+        "secondary_tileset": "gTileset_Cave",
+        "border_filepath": "data/layouts/SealedChamber_OuterRoom/border.bin",
+        "blockdata_filepath": "data/layouts/SealedChamber_OuterRoom/map.bin"
+      },
+      "map": {
+        "id": "MAP_SEALED_CHAMBER_OUTER_ROOM",
+        "name": "SealedChamber_OuterRoom",
+        "layout": "LAYOUT_SEALED_CHAMBER_OUTER_ROOM",
+        "music": "MUS_ARAUNA_SAPPHIRE_CRYPT",
+        "region_map_section": "MAPSEC_SEALED_CHAMBER",
+        "requires_flash": false,
+        "weather": "WEATHER_NONE",
+        "map_type": "MAP_TYPE_UNDERGROUND",
+        "allow_cycling": true,
+        "allow_escaping": true,
+        "allow_running": true,
+        "show_map_name": true,
+        "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+        "connections": null,
+        "object_events": [],
+        "warp_events": [
+          {
+            "x": 10,
+            "y": 2,
+            "elevation": 3,
+            "dest_map": "MAP_SEALED_CHAMBER_INNER_ROOM",
+            "dest_warp_id": "0"
+          }
+        ],
+        "coord_events": [],
+        "bg_events": [
+          {
+            "type": "sign",
+            "x": 5,
+            "y": 6,
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "SealedChamber_OuterRoom_EventScript_BrailleABC"
+          },
+          {
+            "type": "sign",
+            "x": 5,
+            "y": 9,
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "SealedChamber_OuterRoom_EventScript_BrailleGHI"
+          },
+          {
+            "type": "sign",
+            "x": 5,
+            "y": 12,
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "SealedChamber_OuterRoom_EventScript_BrailleMNO"
+          },
+          {
+            "type": "sign",
+            "x": 5,
+            "y": 15,
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "SealedChamber_OuterRoom_EventScript_BrailleTUV"
+          },
+          {
+            "type": "sign",
+            "x": 11,
+            "y": 6,
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "SealedChamber_OuterRoom_EventScript_BrailleDEF"
+          },
+          {
+            "type": "sign",
+            "x": 11,
+            "y": 9,
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "SealedChamber_OuterRoom_EventScript_BrailleJKL"
+          },
+          {
+            "type": "sign",
+            "x": 11,
+            "y": 12,
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "SealedChamber_OuterRoom_EventScript_BraillePQRS"
+          },
+          {
+            "type": "sign",
+            "x": 11,
+            "y": 15,
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "SealedChamber_OuterRoom_EventScript_BrailleWXYZ"
+          },
+          {
+            "type": "sign",
+            "x": 16,
+            "y": 6,
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "SealedChamber_OuterRoom_EventScript_BraillePeriod"
+          },
+          {
+            "type": "sign",
+            "x": 16,
+            "y": 9,
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "SealedChamber_OuterRoom_EventScript_BrailleComma"
+          },
+          {
+            "type": "sign",
+            "x": 10,
+            "y": 2,
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "SealedChamber_OuterRoom_EventScript_InnerRoomEntranceWall"
+          },
+          {
+            "type": "sign",
+            "x": 6,
+            "y": 6,
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "SealedChamber_OuterRoom_EventScript_BrailleABC"
+          },
+          {
+            "type": "sign",
+            "x": 4,
+            "y": 6,
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "SealedChamber_OuterRoom_EventScript_BrailleABC"
+          },
+          {
+            "type": "sign",
+            "x": 4,
+            "y": 9,
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "SealedChamber_OuterRoom_EventScript_BrailleGHI"
+          },
+          {
+            "type": "sign",
+            "x": 6,
+            "y": 9,
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "SealedChamber_OuterRoom_EventScript_BrailleGHI"
+          },
+          {
+            "type": "sign",
+            "x": 4,
+            "y": 12,
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "SealedChamber_OuterRoom_EventScript_BrailleMNO"
+          },
+          {
+            "type": "sign",
+            "x": 6,
+            "y": 12,
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "SealedChamber_OuterRoom_EventScript_BrailleMNO"
+          },
+          {
+            "type": "sign",
+            "x": 4,
+            "y": 15,
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "SealedChamber_OuterRoom_EventScript_BrailleTUV"
+          },
+          {
+            "type": "sign",
+            "x": 6,
+            "y": 15,
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "SealedChamber_OuterRoom_EventScript_BrailleTUV"
+          },
+          {
+            "type": "sign",
+            "x": 10,
+            "y": 6,
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "SealedChamber_OuterRoom_EventScript_BrailleDEF"
+          },
+          {
+            "type": "sign",
+            "x": 12,
+            "y": 6,
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "SealedChamber_OuterRoom_EventScript_BrailleDEF"
+          },
+          {
+            "type": "sign",
+            "x": 10,
+            "y": 9,
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "SealedChamber_OuterRoom_EventScript_BrailleJKL"
+          },
+          {
+            "type": "sign",
+            "x": 12,
+            "y": 9,
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "SealedChamber_OuterRoom_EventScript_BrailleJKL"
+          },
+          {
+            "type": "sign",
+            "x": 10,
+            "y": 12,
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "SealedChamber_OuterRoom_EventScript_BraillePQRS"
+          },
+          {
+            "type": "sign",
+            "x": 12,
+            "y": 12,
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "SealedChamber_OuterRoom_EventScript_BraillePQRS"
+          },
+          {
+            "type": "sign",
+            "x": 10,
+            "y": 15,
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "SealedChamber_OuterRoom_EventScript_BrailleWXYZ"
+          },
+          {
+            "type": "sign",
+            "x": 12,
+            "y": 15,
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "SealedChamber_OuterRoom_EventScript_BrailleWXYZ"
+          },
+          {
+            "type": "sign",
+            "x": 9,
+            "y": 2,
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "SealedChamber_OuterRoom_EventScript_BrailleDigHere"
+          },
+          {
+            "type": "sign",
+            "x": 11,
+            "y": 2,
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "SealedChamber_OuterRoom_EventScript_BrailleDigHere"
+          }
+        ]
+      },
+      "hashes": {
+        "data/maps/SealedChamber_OuterRoom/map.json": "7065019a31a373555baa9b5343da961413bb5f83a64102f648259abb812c74e9",
+        "data/layouts/SealedChamber_OuterRoom/map.bin": "c132019cf35459ee61fef1e4229d20861e9c4a5a0de27168dddc2fd0f17d5497",
+        "data/layouts/SealedChamber_OuterRoom/border.bin": "56df6c33017e6cf2c18e4f3182d0bba6f355f43f1710a56a4c503f1df8427a24",
+        "data/maps/SealedChamber_OuterRoom/scripts.inc": "53c2220f823e78ac6dc3e57cd31f78a9de7ac870f219c78b65b61c37eea2b450",
+        "data/tilesets/primary/general/metatiles.bin": "17974b0ba1bb9d105d5ba255c69a3b80d8484a26ea0b8ff22c6c6567c6c22910",
+        "data/tilesets/primary/general/metatile_attributes.bin": "06c9548a6c70d133b6d47638090f5d36f3fec92aace3d90deca758a4404cfa9b",
+        "data/tilesets/secondary/cave/metatiles.bin": "fca8629264b6ff2324224864ed98d929cc5a93213a5a512a3798d144470e022b",
+        "data/tilesets/secondary/cave/metatile_attributes.bin": "35737e4634461b7461e4dfab12a150d9cad7ff78591a51e23f74a61219d86ad2"
+      },
+      "script_created_metatile_ids": [
+        553,
+        565
+      ],
+      "transitive_script_labels": [
+        "SealedChamber_OuterRoom_EventScript_BrailleABC",
+        "SealedChamber_OuterRoom_EventScript_BrailleComma",
+        "SealedChamber_OuterRoom_EventScript_BrailleDEF",
+        "SealedChamber_OuterRoom_EventScript_BrailleDigHere",
+        "SealedChamber_OuterRoom_EventScript_BrailleGHI",
+        "SealedChamber_OuterRoom_EventScript_BrailleJKL",
+        "SealedChamber_OuterRoom_EventScript_BrailleMNO",
+        "SealedChamber_OuterRoom_EventScript_BraillePQRS",
+        "SealedChamber_OuterRoom_EventScript_BraillePeriod",
+        "SealedChamber_OuterRoom_EventScript_BrailleTUV",
+        "SealedChamber_OuterRoom_EventScript_BrailleWXYZ",
+        "SealedChamber_OuterRoom_EventScript_CloseInnerRoomEntrance",
+        "SealedChamber_OuterRoom_EventScript_HoleInWall",
+        "SealedChamber_OuterRoom_EventScript_InnerRoomEntranceWall",
+        "SealedChamber_OuterRoom_MapScripts",
+        "SealedChamber_OuterRoom_OnLoad",
+        "SealedChamber_OuterRoom_OnResume",
+        "SealedChamber_OuterRoom_OnTransition"
+      ],
+      "own_functional_commands": [
+        "setescapewarp MAP_UNDERWATER_SEALED_CHAMBER, 12, 44",
+        "setflag FLAG_LANDMARK_SEALED_CHAMBER",
+        "setmetatile 9, 1, METATILE_Cave_EntranceCover, TRUE",
+        "setmetatile 10, 1, METATILE_Cave_EntranceCover, TRUE",
+        "setmetatile 11, 1, METATILE_Cave_EntranceCover, TRUE",
+        "setmetatile 9, 2, METATILE_Cave_SealedChamberBraille_Mid, TRUE",
+        "setmetatile 10, 2, METATILE_Cave_SealedChamberBraille_Mid, TRUE",
+        "setmetatile 11, 2, METATILE_Cave_SealedChamberBraille_Mid, TRUE"
+      ],
+      "flags": [
+        "FLAG_LANDMARK_SEALED_CHAMBER",
+        "FLAG_SYS_BRAILLE_DIG"
+      ],
+      "vars": []
+    },
+    "TerraCave_End": {
+      "group": "cavernas",
+      "layout": {
+        "id": "LAYOUT_TERRA_CAVE_END",
+        "name": "TerraCave_End_Layout",
+        "width": 27,
+        "height": 30,
+        "primary_tileset": "gTileset_General",
+        "secondary_tileset": "gTileset_Cave",
+        "border_filepath": "data/layouts/TerraCave_End/border.bin",
+        "blockdata_filepath": "data/layouts/TerraCave_End/map.bin"
+      },
+      "map": {
+        "id": "MAP_TERRA_CAVE_END",
+        "name": "TerraCave_End",
+        "layout": "LAYOUT_TERRA_CAVE_END",
+        "music": "MUS_PETALBURG_WOODS",
+        "region_map_section": "MAPSEC_TERRA_CAVE",
+        "requires_flash": false,
+        "weather": "WEATHER_FOG_HORIZONTAL",
+        "map_type": "MAP_TYPE_UNDERGROUND",
+        "allow_cycling": false,
+        "allow_escaping": true,
+        "allow_running": true,
+        "show_map_name": true,
+        "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+        "connections": null,
+        "object_events": [
+          {
+            "local_id": "LOCALID_TERRA_CAVE_GROUDON",
+            "graphics_id": "OBJ_EVENT_GFX_GROUDON_FRONT",
+            "x": 17,
+            "y": 22,
+            "elevation": 1,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "movement_range_x": 1,
+            "movement_range_y": 1,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "0x0",
+            "flag": "FLAG_HIDE_TERRA_CAVE_GROUDON"
+          }
+        ],
+        "warp_events": [
+          {
+            "x": 5,
+            "y": 4,
+            "elevation": 3,
+            "dest_map": "MAP_TERRA_CAVE_ENTRANCE",
+            "dest_warp_id": "1"
+          }
+        ],
+        "coord_events": [
+          {
+            "type": "trigger",
+            "x": 17,
+            "y": 26,
+            "elevation": 3,
+            "var": "VAR_TEMP_1",
+            "var_value": "1",
+            "script": "TerraCave_End_EventScript_Groudon"
+          }
+        ],
+        "bg_events": []
+      },
+      "hashes": {
+        "data/maps/TerraCave_End/map.json": "857df0dbcbcd8758e43e37aa45f8bfe24e9e0de29423c8f79b3ceebc26bc72a8",
+        "data/layouts/TerraCave_End/map.bin": "69f4d8304c9b1a3d86a1423fa8515c58615d465b45bad9fb2369ade3906d35be",
+        "data/layouts/TerraCave_End/border.bin": "0718b9fb98d3a7d4c879db2469770d6b077be9b9c51c54db153daea54a2860ce",
+        "data/maps/TerraCave_End/scripts.inc": "9d91a27c8f3b97ae85a8a70a3e943d435a6b22c5a2fe393882803fceac7dbbcd",
+        "data/tilesets/primary/general/metatiles.bin": "17974b0ba1bb9d105d5ba255c69a3b80d8484a26ea0b8ff22c6c6567c6c22910",
+        "data/tilesets/primary/general/metatile_attributes.bin": "06c9548a6c70d133b6d47638090f5d36f3fec92aace3d90deca758a4404cfa9b",
+        "data/tilesets/secondary/cave/metatiles.bin": "fca8629264b6ff2324224864ed98d929cc5a93213a5a512a3798d144470e022b",
+        "data/tilesets/secondary/cave/metatile_attributes.bin": "35737e4634461b7461e4dfab12a150d9cad7ff78591a51e23f74a61219d86ad2"
+      },
+      "script_created_metatile_ids": [],
+      "transitive_script_labels": [
+        "Common_Movement_FaceUp",
+        "TerraCave_End_EventScript_DefeatedGroudon",
+        "TerraCave_End_EventScript_Groudon",
+        "TerraCave_End_EventScript_RanFromGroudon",
+        "TerraCave_End_EventScript_ShowGroudon",
+        "TerraCave_End_EventScript_TryRemoveGroudon",
+        "TerraCave_End_MapScripts",
+        "TerraCave_End_Movement_GroudonApproach",
+        "TerraCave_End_OnResume",
+        "TerraCave_End_OnTransition"
+      ],
+      "own_functional_commands": [
+        "removeobject LOCALID_TERRA_CAVE_GROUDON",
+        "clearflag FLAG_HIDE_TERRA_CAVE_GROUDON",
+        "setvar VAR_TEMP_1, 1",
+        "applymovement LOCALID_PLAYER, Common_Movement_FaceUp",
+        "applymovement LOCALID_TERRA_CAVE_GROUDON, TerraCave_End_Movement_GroudonApproach",
+        "setvar VAR_LAST_TALKED, LOCALID_TERRA_CAVE_GROUDON",
+        "setwildbattle SPECIES_GROUDON, 70",
+        "setflag FLAG_SYS_CTRL_OBJ_DELETE",
+        "special BattleSetup_StartLegendaryBattle",
+        "clearflag FLAG_SYS_CTRL_OBJ_DELETE",
+        "setvar VAR_TEMP_1, 0",
+        "setvar VAR_SHOULD_END_ABNORMAL_WEATHER, 1",
+        "setflag FLAG_DEFEATED_GROUDON",
+        "setvar VAR_SHOULD_END_ABNORMAL_WEATHER, 1",
+        "setflag FLAG_DEFEATED_GROUDON",
+        "goto Common_EventScript_RemoveStaticPokemon",
+        "setvar VAR_0x8004, SPECIES_GROUDON",
+        "goto Common_EventScript_LegendaryFlewAway"
+      ],
+      "flags": [
+        "FLAG_DEFEATED_GROUDON",
+        "FLAG_HIDE_TERRA_CAVE_GROUDON",
+        "FLAG_SYS_CTRL_OBJ_DELETE"
+      ],
+      "vars": [
+        "VAR_0x8004",
+        "VAR_LAST_TALKED",
+        "VAR_RESULT",
+        "VAR_SHOULD_END_ABNORMAL_WEATHER",
+        "VAR_TEMP_1"
+      ]
+    },
+    "TerraCave_Entrance": {
+      "group": "cavernas",
+      "layout": {
+        "id": "LAYOUT_TERRA_CAVE_ENTRANCE",
+        "name": "TerraCave_Entrance_Layout",
+        "width": 20,
+        "height": 20,
+        "primary_tileset": "gTileset_General",
+        "secondary_tileset": "gTileset_Cave",
+        "border_filepath": "data/layouts/TerraCave_Entrance/border.bin",
+        "blockdata_filepath": "data/layouts/TerraCave_Entrance/map.bin"
+      },
+      "map": {
+        "id": "MAP_TERRA_CAVE_ENTRANCE",
+        "name": "TerraCave_Entrance",
+        "layout": "LAYOUT_TERRA_CAVE_ENTRANCE",
+        "music": "MUS_PETALBURG_WOODS",
+        "region_map_section": "MAPSEC_TERRA_CAVE",
+        "requires_flash": false,
+        "weather": "WEATHER_NONE",
+        "map_type": "MAP_TYPE_UNDERGROUND",
+        "allow_cycling": true,
+        "allow_escaping": true,
+        "allow_running": true,
+        "show_map_name": true,
+        "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+        "connections": null,
+        "object_events": [],
+        "warp_events": [
+          {
+            "x": 8,
+            "y": 18,
+            "elevation": 0,
+            "dest_map": "MAP_DYNAMIC",
+            "dest_warp_id": "WARP_ID_DYNAMIC"
+          },
+          {
+            "x": 14,
+            "y": 1,
+            "elevation": 3,
+            "dest_map": "MAP_TERRA_CAVE_END",
+            "dest_warp_id": "0"
+          }
+        ],
+        "coord_events": [],
+        "bg_events": []
+      },
+      "hashes": {
+        "data/maps/TerraCave_Entrance/map.json": "d09876e752c42cf8d4abd3829b2a3e25f5f8476799f9af21e266ec5a1c28984b",
+        "data/layouts/TerraCave_Entrance/map.bin": "d62a00f1d0362a670e9c8361624c19400f9fabbae5afd83b4fa5cc2844bfe74d",
+        "data/layouts/TerraCave_Entrance/border.bin": "0718b9fb98d3a7d4c879db2469770d6b077be9b9c51c54db153daea54a2860ce",
+        "data/maps/TerraCave_Entrance/scripts.inc": "79f8aa2eb6dd2caa72bc31e38e1607d56ee6cc013168f56fb02c6a591af7d219",
+        "data/tilesets/primary/general/metatiles.bin": "17974b0ba1bb9d105d5ba255c69a3b80d8484a26ea0b8ff22c6c6567c6c22910",
+        "data/tilesets/primary/general/metatile_attributes.bin": "06c9548a6c70d133b6d47638090f5d36f3fec92aace3d90deca758a4404cfa9b",
+        "data/tilesets/secondary/cave/metatiles.bin": "fca8629264b6ff2324224864ed98d929cc5a93213a5a512a3798d144470e022b",
+        "data/tilesets/secondary/cave/metatile_attributes.bin": "35737e4634461b7461e4dfab12a150d9cad7ff78591a51e23f74a61219d86ad2"
+      },
+      "script_created_metatile_ids": [],
+      "transitive_script_labels": [
+        "TerraCave_Entrance_MapScripts",
+        "TerraCave_Entrance_OnTransition"
+      ],
+      "own_functional_commands": [
+        "setflag FLAG_ARRIVED_AT_TERRA_CAVE_ENTRANCE"
+      ],
+      "flags": [
+        "FLAG_ARRIVED_AT_TERRA_CAVE_ENTRANCE"
+      ],
+      "vars": []
+    },
+    "Underwater_MarineCave": {
+      "group": "dive",
+      "layout": {
+        "id": "LAYOUT_UNDERWATER_MARINE_CAVE",
+        "name": "Underwater_MarineCave_Layout",
+        "width": 20,
+        "height": 10,
+        "primary_tileset": "gTileset_General",
+        "secondary_tileset": "gTileset_Underwater",
+        "border_filepath": "data/layouts/Underwater_MarineCave/border.bin",
+        "blockdata_filepath": "data/layouts/Underwater_MarineCave/map.bin"
+      },
+      "map": {
+        "id": "MAP_UNDERWATER_MARINE_CAVE",
+        "name": "Underwater_MarineCave",
+        "layout": "LAYOUT_UNDERWATER_MARINE_CAVE",
+        "music": "MUS_PETALBURG_WOODS",
+        "region_map_section": "MAPSEC_UNDERWATER_MARINE_CAVE",
+        "requires_flash": false,
+        "weather": "WEATHER_UNDERWATER_BUBBLES",
+        "map_type": "MAP_TYPE_UNDERWATER",
+        "allow_cycling": true,
+        "allow_escaping": false,
+        "allow_running": true,
+        "show_map_name": true,
+        "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+        "connections": null,
+        "object_events": [],
+        "warp_events": [
+          {
+            "x": 9,
+            "y": 8,
+            "elevation": 0,
+            "dest_map": "MAP_DYNAMIC",
+            "dest_warp_id": "WARP_ID_DYNAMIC"
+          }
+        ],
+        "coord_events": [],
+        "bg_events": []
+      },
+      "hashes": {
+        "data/maps/Underwater_MarineCave/map.json": "c8e128ea9e0f14ff03d62583ae38378b56df1f962da6d8f641f7ae9e2a430436",
+        "data/layouts/Underwater_MarineCave/map.bin": "ad54c7478469a7d904073477fe62ce5920432762920282f8a77ac451ad253f0e",
+        "data/layouts/Underwater_MarineCave/border.bin": "16cfea6072565627ae722a11fcf3677a3c5e9dd45b0e933db62fb6bb928d0887",
+        "data/maps/Underwater_MarineCave/scripts.inc": "8ac7749866e49e0c4e3f74d4f71640a245b73623db822aa67dfe7a3e455e5080",
+        "data/tilesets/primary/general/metatiles.bin": "17974b0ba1bb9d105d5ba255c69a3b80d8484a26ea0b8ff22c6c6567c6c22910",
+        "data/tilesets/primary/general/metatile_attributes.bin": "06c9548a6c70d133b6d47638090f5d36f3fec92aace3d90deca758a4404cfa9b",
+        "data/tilesets/secondary/underwater/metatiles.bin": "04cb7a82f96ba49824463231012b4eaa237e0edda323c26cf988a07f9ccd3b81",
+        "data/tilesets/secondary/underwater/metatile_attributes.bin": "ac2c701f8d8dff826e77874d41a7fe376328cfda26b75df59b57ef3162bcbb15"
+      },
+      "script_created_metatile_ids": [],
+      "transitive_script_labels": [
+        "Underwater_MarineCave_MapScripts",
+        "Underwater_MarineCave_OnResume",
+        "Underwater_MarineCave_OnTransition"
+      ],
+      "own_functional_commands": [
+        "setflag FLAG_ARRIVED_AT_MARINE_CAVE_EMERGE_SPOT"
+      ],
+      "flags": [
+        "FLAG_ARRIVED_AT_MARINE_CAVE_EMERGE_SPOT"
+      ],
+      "vars": []
+    },
+    "Underwater_Route105": {
+      "group": "dive",
+      "layout": {
+        "id": "LAYOUT_UNDERWATER_ROUTE105",
+        "name": "Underwater_Route105_Layout",
+        "width": 40,
+        "height": 80,
+        "primary_tileset": "gTileset_General",
+        "secondary_tileset": "gTileset_Underwater",
+        "border_filepath": "data/layouts/Underwater_Route105/border.bin",
+        "blockdata_filepath": "data/layouts/Underwater_Route105/map.bin"
+      },
+      "map": {
+        "id": "MAP_UNDERWATER_ROUTE105",
+        "name": "Underwater_Route105",
+        "layout": "LAYOUT_UNDERWATER_ROUTE105",
+        "music": "MUS_UNDERWATER",
+        "region_map_section": "MAPSEC_UNDERWATER_105",
+        "requires_flash": false,
+        "weather": "WEATHER_UNDERWATER_BUBBLES",
+        "map_type": "MAP_TYPE_UNDERWATER",
+        "allow_cycling": true,
+        "allow_escaping": false,
+        "allow_running": true,
+        "show_map_name": true,
+        "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+        "connections": [
+          {
+            "map": "MAP_ROUTE105",
+            "offset": 0,
+            "direction": "emerge"
+          }
+        ],
+        "object_events": [],
+        "warp_events": [
+          {
+            "x": 13,
+            "y": 4,
+            "elevation": 0,
+            "dest_map": "MAP_UNDERWATER_MARINE_CAVE",
+            "dest_warp_id": "0"
+          },
+          {
+            "x": 17,
+            "y": 66,
+            "elevation": 0,
+            "dest_map": "MAP_UNDERWATER_MARINE_CAVE",
+            "dest_warp_id": "0"
+          }
+        ],
+        "coord_events": [],
+        "bg_events": []
+      },
+      "hashes": {
+        "data/maps/Underwater_Route105/map.json": "e53bcc1dd480f670b618d838dd9ace9b5dfe4352d235ebc2066c8f56adeb6705",
+        "data/layouts/Underwater_Route105/map.bin": "0f4ef8ecd10decd35968f9ed3e5c681d473d565f8cbe900058c8f9cb8fd31a27",
+        "data/layouts/Underwater_Route105/border.bin": "16cfea6072565627ae722a11fcf3677a3c5e9dd45b0e933db62fb6bb928d0887",
+        "data/maps/Underwater_Route105/scripts.inc": "0855a824c634de8df7ce1fa6a2d39ee53c24d3b6e2e5db34cda492092084e56d",
+        "data/tilesets/primary/general/metatiles.bin": "17974b0ba1bb9d105d5ba255c69a3b80d8484a26ea0b8ff22c6c6567c6c22910",
+        "data/tilesets/primary/general/metatile_attributes.bin": "06c9548a6c70d133b6d47638090f5d36f3fec92aace3d90deca758a4404cfa9b",
+        "data/tilesets/secondary/underwater/metatiles.bin": "04cb7a82f96ba49824463231012b4eaa237e0edda323c26cf988a07f9ccd3b81",
+        "data/tilesets/secondary/underwater/metatile_attributes.bin": "ac2c701f8d8dff826e77874d41a7fe376328cfda26b75df59b57ef3162bcbb15"
+      },
+      "script_created_metatile_ids": [],
+      "transitive_script_labels": [
+        "AbnormalWeather_Underwater_SetupEscapeWarp",
+        "AbnormalWeather_Underwater_SetupEscapeWarpRoute105North",
+        "AbnormalWeather_Underwater_SetupEscapeWarpRoute105South",
+        "AbnormalWeather_Underwater_SetupEscapeWarpRoute125East",
+        "AbnormalWeather_Underwater_SetupEscapeWarpRoute125West",
+        "AbnormalWeather_Underwater_SetupEscapeWarpRoute127North",
+        "AbnormalWeather_Underwater_SetupEscapeWarpRoute127South",
+        "AbnormalWeather_Underwater_SetupEscapeWarpRoute129East",
+        "AbnormalWeather_Underwater_SetupEscapeWarpRoute129West",
+        "Underwater_Route105_MapScripts",
+        "Underwater_Route105_OnResume"
+      ],
+      "own_functional_commands": [
+        "call AbnormalWeather_Underwater_SetupEscapeWarp"
+      ],
+      "flags": [],
+      "vars": []
+    },
+    "Underwater_Route124": {
+      "group": "dive",
+      "layout": {
+        "id": "LAYOUT_UNDERWATER_ROUTE124",
+        "name": "Underwater_Route124_Layout",
+        "width": 80,
+        "height": 80,
+        "primary_tileset": "gTileset_General",
+        "secondary_tileset": "gTileset_Underwater",
+        "border_filepath": "data/layouts/Underwater_Route124/border.bin",
+        "blockdata_filepath": "data/layouts/Underwater_Route124/map.bin"
+      },
+      "map": {
+        "id": "MAP_UNDERWATER_ROUTE124",
+        "name": "Underwater_Route124",
+        "layout": "LAYOUT_UNDERWATER_ROUTE124",
+        "music": "MUS_UNDERWATER",
+        "region_map_section": "MAPSEC_UNDERWATER_124",
+        "requires_flash": false,
+        "weather": "WEATHER_UNDERWATER_BUBBLES",
+        "map_type": "MAP_TYPE_UNDERWATER",
+        "allow_cycling": true,
+        "allow_escaping": false,
+        "allow_running": true,
+        "show_map_name": true,
+        "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+        "connections": [
+          {
+            "map": "MAP_UNDERWATER_ROUTE126",
+            "offset": 0,
+            "direction": "down"
+          },
+          {
+            "map": "MAP_ROUTE124",
+            "offset": 0,
+            "direction": "emerge"
+          }
+        ],
+        "object_events": [],
+        "warp_events": [],
+        "coord_events": [],
+        "bg_events": [
+          {
+            "type": "hidden_item",
+            "x": 42,
+            "y": 51,
+            "elevation": 0,
+            "item": "ITEM_CARBOS",
+            "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_124_CARBOS"
+          },
+          {
+            "type": "hidden_item",
+            "x": 14,
+            "y": 40,
+            "elevation": 0,
+            "item": "ITEM_GREEN_SHARD",
+            "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_124_GREEN_SHARD"
+          },
+          {
+            "type": "hidden_item",
+            "x": 66,
+            "y": 34,
+            "elevation": 3,
+            "item": "ITEM_PEARL",
+            "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_124_PEARL"
+          },
+          {
+            "type": "hidden_item",
+            "x": 64,
+            "y": 54,
+            "elevation": 3,
+            "item": "ITEM_BIG_PEARL",
+            "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_124_BIG_PEARL"
+          },
+          {
+            "type": "hidden_item",
+            "x": 70,
+            "y": 64,
+            "elevation": 3,
+            "item": "ITEM_HEART_SCALE",
+            "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_124_HEART_SCALE_1"
+          },
+          {
+            "type": "hidden_item",
+            "x": 42,
+            "y": 5,
+            "elevation": 3,
+            "item": "ITEM_CALCIUM",
+            "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_124_CALCIUM"
+          },
+          {
+            "type": "hidden_item",
+            "x": 45,
+            "y": 36,
+            "elevation": 3,
+            "item": "ITEM_HEART_SCALE",
+            "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_124_HEART_SCALE_2"
+          }
+        ]
+      },
+      "hashes": {
+        "data/maps/Underwater_Route124/map.json": "fff10274ccf738b881727873972da8aba83ee633a855f617e2b87ad6382b903d",
+        "data/layouts/Underwater_Route124/map.bin": "a2c4197407d5813e8123f8ef1df28b14e29df36e9954128d1ea3acdd49c20156",
+        "data/layouts/Underwater_Route124/border.bin": "16cfea6072565627ae722a11fcf3677a3c5e9dd45b0e933db62fb6bb928d0887",
+        "data/maps/Underwater_Route124/scripts.inc": "df6e21ebe02ac8222ce41e818e75d06dba7d4c96359886a47d98aee09c8af910",
+        "data/tilesets/primary/general/metatiles.bin": "17974b0ba1bb9d105d5ba255c69a3b80d8484a26ea0b8ff22c6c6567c6c22910",
+        "data/tilesets/primary/general/metatile_attributes.bin": "06c9548a6c70d133b6d47638090f5d36f3fec92aace3d90deca758a4404cfa9b",
+        "data/tilesets/secondary/underwater/metatiles.bin": "04cb7a82f96ba49824463231012b4eaa237e0edda323c26cf988a07f9ccd3b81",
+        "data/tilesets/secondary/underwater/metatile_attributes.bin": "ac2c701f8d8dff826e77874d41a7fe376328cfda26b75df59b57ef3162bcbb15"
+      },
+      "script_created_metatile_ids": [],
+      "transitive_script_labels": [
+        "Underwater_Route124_MapScripts"
+      ],
+      "own_functional_commands": [],
+      "flags": [],
+      "vars": []
+    },
+    "Underwater_Route125": {
+      "group": "dive",
+      "layout": {
+        "id": "LAYOUT_UNDERWATER_ROUTE125",
+        "name": "Underwater_Route125_Layout",
+        "width": 80,
+        "height": 40,
+        "primary_tileset": "gTileset_General",
+        "secondary_tileset": "gTileset_Underwater",
+        "border_filepath": "data/layouts/Underwater_Route125/border.bin",
+        "blockdata_filepath": "data/layouts/Underwater_Route125/map.bin"
+      },
+      "map": {
+        "id": "MAP_UNDERWATER_ROUTE125",
+        "name": "Underwater_Route125",
+        "layout": "LAYOUT_UNDERWATER_ROUTE125",
+        "music": "MUS_UNDERWATER",
+        "region_map_section": "MAPSEC_UNDERWATER_125",
+        "requires_flash": false,
+        "weather": "WEATHER_UNDERWATER_BUBBLES",
+        "map_type": "MAP_TYPE_UNDERWATER",
+        "allow_cycling": true,
+        "allow_escaping": false,
+        "allow_running": true,
+        "show_map_name": true,
+        "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+        "connections": [
+          {
+            "map": "MAP_ROUTE125",
+            "offset": 0,
+            "direction": "emerge"
+          }
+        ],
+        "object_events": [],
+        "warp_events": [
+          {
+            "x": 22,
+            "y": 10,
+            "elevation": 0,
+            "dest_map": "MAP_UNDERWATER_MARINE_CAVE",
+            "dest_warp_id": "0"
+          },
+          {
+            "x": 45,
+            "y": 30,
+            "elevation": 0,
+            "dest_map": "MAP_UNDERWATER_MARINE_CAVE",
+            "dest_warp_id": "0"
+          }
+        ],
+        "coord_events": [],
+        "bg_events": []
+      },
+      "hashes": {
+        "data/maps/Underwater_Route125/map.json": "89d83594b0d263501e373165f7bc63c3cc6f8a730399419e34371d906c8d96bf",
+        "data/layouts/Underwater_Route125/map.bin": "e42c399846d2383603174ebaa379ee99f638c27426acb3f7cec06168941184f1",
+        "data/layouts/Underwater_Route125/border.bin": "16cfea6072565627ae722a11fcf3677a3c5e9dd45b0e933db62fb6bb928d0887",
+        "data/maps/Underwater_Route125/scripts.inc": "3c28bd67a4a72c776bdaec1df3f8989dc8a5bc092e64b3a405ed35e2041109c5",
+        "data/tilesets/primary/general/metatiles.bin": "17974b0ba1bb9d105d5ba255c69a3b80d8484a26ea0b8ff22c6c6567c6c22910",
+        "data/tilesets/primary/general/metatile_attributes.bin": "06c9548a6c70d133b6d47638090f5d36f3fec92aace3d90deca758a4404cfa9b",
+        "data/tilesets/secondary/underwater/metatiles.bin": "04cb7a82f96ba49824463231012b4eaa237e0edda323c26cf988a07f9ccd3b81",
+        "data/tilesets/secondary/underwater/metatile_attributes.bin": "ac2c701f8d8dff826e77874d41a7fe376328cfda26b75df59b57ef3162bcbb15"
+      },
+      "script_created_metatile_ids": [],
+      "transitive_script_labels": [
+        "AbnormalWeather_Underwater_SetupEscapeWarp",
+        "AbnormalWeather_Underwater_SetupEscapeWarpRoute105North",
+        "AbnormalWeather_Underwater_SetupEscapeWarpRoute105South",
+        "AbnormalWeather_Underwater_SetupEscapeWarpRoute125East",
+        "AbnormalWeather_Underwater_SetupEscapeWarpRoute125West",
+        "AbnormalWeather_Underwater_SetupEscapeWarpRoute127North",
+        "AbnormalWeather_Underwater_SetupEscapeWarpRoute127South",
+        "AbnormalWeather_Underwater_SetupEscapeWarpRoute129East",
+        "AbnormalWeather_Underwater_SetupEscapeWarpRoute129West",
+        "Underwater_Route125_MapScripts",
+        "Underwater_Route125_OnResume"
+      ],
+      "own_functional_commands": [
+        "call AbnormalWeather_Underwater_SetupEscapeWarp"
+      ],
+      "flags": [],
+      "vars": []
+    },
+    "Underwater_Route126": {
+      "group": "dive",
+      "layout": {
+        "id": "LAYOUT_UNDERWATER_ROUTE126",
+        "name": "Underwater_Route126_Layout",
+        "width": 80,
+        "height": 80,
+        "primary_tileset": "gTileset_General",
+        "secondary_tileset": "gTileset_Underwater",
+        "border_filepath": "data/layouts/Underwater_Route126/border.bin",
+        "blockdata_filepath": "data/layouts/Underwater_Route126/map.bin"
+      },
+      "map": {
+        "id": "MAP_UNDERWATER_ROUTE126",
+        "name": "Underwater_Route126",
+        "layout": "LAYOUT_UNDERWATER_ROUTE126",
+        "music": "MUS_UNDERWATER",
+        "region_map_section": "MAPSEC_UNDERWATER_126",
+        "requires_flash": false,
+        "weather": "WEATHER_UNDERWATER_BUBBLES",
+        "map_type": "MAP_TYPE_UNDERWATER",
+        "allow_cycling": true,
+        "allow_escaping": false,
+        "allow_running": true,
+        "show_map_name": true,
+        "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+        "connections": [
+          {
+            "map": "MAP_UNDERWATER_ROUTE124",
+            "offset": 0,
+            "direction": "up"
+          },
+          {
+            "map": "MAP_UNDERWATER_ROUTE127",
+            "offset": 0,
+            "direction": "right"
+          },
+          {
+            "map": "MAP_ROUTE126",
+            "offset": 0,
+            "direction": "emerge"
+          }
+        ],
+        "object_events": [],
+        "warp_events": [
+          {
+            "x": 45,
+            "y": 65,
+            "elevation": 0,
+            "dest_map": "MAP_UNDERWATER_SOOTOPOLIS_CITY",
+            "dest_warp_id": "0"
+          }
+        ],
+        "coord_events": [],
+        "bg_events": [
+          {
+            "type": "hidden_item",
+            "x": 30,
+            "y": 17,
+            "elevation": 3,
+            "item": "ITEM_HEART_SCALE",
+            "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_126_HEART_SCALE"
+          },
+          {
+            "type": "hidden_item",
+            "x": 41,
+            "y": 19,
+            "elevation": 3,
+            "item": "ITEM_ULTRA_BALL",
+            "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_126_ULTRA_BALL"
+          },
+          {
+            "type": "hidden_item",
+            "x": 63,
+            "y": 19,
+            "elevation": 3,
+            "item": "ITEM_STARDUST",
+            "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_126_STARDUST"
+          },
+          {
+            "type": "hidden_item",
+            "x": 10,
+            "y": 36,
+            "elevation": 3,
+            "item": "ITEM_PEARL",
+            "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_126_PEARL"
+          },
+          {
+            "type": "hidden_item",
+            "x": 11,
+            "y": 39,
+            "elevation": 3,
+            "item": "ITEM_IRON",
+            "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_126_IRON"
+          },
+          {
+            "type": "hidden_item",
+            "x": 12,
+            "y": 35,
+            "elevation": 3,
+            "item": "ITEM_YELLOW_SHARD",
+            "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_126_YELLOW_SHARD"
+          },
+          {
+            "type": "hidden_item",
+            "x": 65,
+            "y": 60,
+            "elevation": 3,
+            "item": "ITEM_BIG_PEARL",
+            "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_126_BIG_PEARL"
+          },
+          {
+            "type": "hidden_item",
+            "x": 9,
+            "y": 77,
+            "elevation": 3,
+            "item": "ITEM_BLUE_SHARD",
+            "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_126_BLUE_SHARD"
+          }
+        ]
+      },
+      "hashes": {
+        "data/maps/Underwater_Route126/map.json": "1941db48638f3ee7fe58e41e2637e9ed133936b2901bbc61ad98a1afd28846c2",
+        "data/layouts/Underwater_Route126/map.bin": "fcd09e9fb1304e0b6107b953da9e7812c70d27f09e932b875574c3105ccbf1b5",
+        "data/layouts/Underwater_Route126/border.bin": "16cfea6072565627ae722a11fcf3677a3c5e9dd45b0e933db62fb6bb928d0887",
+        "data/maps/Underwater_Route126/scripts.inc": "0e4867f0f05c018127b0c56089cf8ea95ef1a991b986ced5763e5c07fc358d37",
+        "data/tilesets/primary/general/metatiles.bin": "17974b0ba1bb9d105d5ba255c69a3b80d8484a26ea0b8ff22c6c6567c6c22910",
+        "data/tilesets/primary/general/metatile_attributes.bin": "06c9548a6c70d133b6d47638090f5d36f3fec92aace3d90deca758a4404cfa9b",
+        "data/tilesets/secondary/underwater/metatiles.bin": "04cb7a82f96ba49824463231012b4eaa237e0edda323c26cf988a07f9ccd3b81",
+        "data/tilesets/secondary/underwater/metatile_attributes.bin": "ac2c701f8d8dff826e77874d41a7fe376328cfda26b75df59b57ef3162bcbb15"
+      },
+      "script_created_metatile_ids": [],
+      "transitive_script_labels": [
+        "Underwater_Route126_MapScripts"
+      ],
+      "own_functional_commands": [],
+      "flags": [],
+      "vars": []
+    },
+    "Underwater_Route127": {
+      "group": "dive",
+      "layout": {
+        "id": "LAYOUT_UNDERWATER_ROUTE127",
+        "name": "Underwater_Route127_Layout",
+        "width": 80,
+        "height": 80,
+        "primary_tileset": "gTileset_General",
+        "secondary_tileset": "gTileset_Underwater",
+        "border_filepath": "data/layouts/Underwater_Route127/border.bin",
+        "blockdata_filepath": "data/layouts/Underwater_Route127/map.bin"
+      },
+      "map": {
+        "id": "MAP_UNDERWATER_ROUTE127",
+        "name": "Underwater_Route127",
+        "layout": "LAYOUT_UNDERWATER_ROUTE127",
+        "music": "MUS_UNDERWATER",
+        "region_map_section": "MAPSEC_UNDERWATER_127",
+        "requires_flash": false,
+        "weather": "WEATHER_UNDERWATER_BUBBLES",
+        "map_type": "MAP_TYPE_UNDERWATER",
+        "allow_cycling": true,
+        "allow_escaping": false,
+        "allow_running": true,
+        "show_map_name": true,
+        "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+        "connections": [
+          {
+            "map": "MAP_ROUTE127",
+            "offset": 0,
+            "direction": "emerge"
+          },
+          {
+            "map": "MAP_UNDERWATER_ROUTE126",
+            "offset": 0,
+            "direction": "left"
+          },
+          {
+            "map": "MAP_UNDERWATER_ROUTE128",
+            "offset": 0,
+            "direction": "down"
+          }
+        ],
+        "object_events": [],
+        "warp_events": [
+          {
+            "x": 57,
+            "y": 5,
+            "elevation": 0,
+            "dest_map": "MAP_UNDERWATER_MARINE_CAVE",
+            "dest_warp_id": "0"
+          },
+          {
+            "x": 67,
+            "y": 38,
+            "elevation": 0,
+            "dest_map": "MAP_UNDERWATER_MARINE_CAVE",
+            "dest_warp_id": "0"
+          }
+        ],
+        "coord_events": [],
+        "bg_events": [
+          {
+            "type": "hidden_item",
+            "x": 12,
+            "y": 42,
+            "elevation": 3,
+            "item": "ITEM_STAR_PIECE",
+            "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_127_STAR_PIECE"
+          },
+          {
+            "type": "hidden_item",
+            "x": 50,
+            "y": 36,
+            "elevation": 3,
+            "item": "ITEM_HP_UP",
+            "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_127_HP_UP"
+          },
+          {
+            "type": "hidden_item",
+            "x": 34,
+            "y": 72,
+            "elevation": 3,
+            "item": "ITEM_HEART_SCALE",
+            "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_127_HEART_SCALE"
+          },
+          {
+            "type": "hidden_item",
+            "x": 72,
+            "y": 20,
+            "elevation": 3,
+            "item": "ITEM_RED_SHARD",
+            "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_127_RED_SHARD"
+          }
+        ]
+      },
+      "hashes": {
+        "data/maps/Underwater_Route127/map.json": "fa22cee31403278ee1bded961d77646276ea32bc5e8779c97718ce0fa2bc8a09",
+        "data/layouts/Underwater_Route127/map.bin": "a92002ce4d24f77df13e9146ea0d0097a57e36057661e780777ce48f60bcc745",
+        "data/layouts/Underwater_Route127/border.bin": "16cfea6072565627ae722a11fcf3677a3c5e9dd45b0e933db62fb6bb928d0887",
+        "data/maps/Underwater_Route127/scripts.inc": "0e90ac0766acef4fa0c499bf3f47b1d4a5a3642e4e30885e27fa3988bb21349b",
+        "data/tilesets/primary/general/metatiles.bin": "17974b0ba1bb9d105d5ba255c69a3b80d8484a26ea0b8ff22c6c6567c6c22910",
+        "data/tilesets/primary/general/metatile_attributes.bin": "06c9548a6c70d133b6d47638090f5d36f3fec92aace3d90deca758a4404cfa9b",
+        "data/tilesets/secondary/underwater/metatiles.bin": "04cb7a82f96ba49824463231012b4eaa237e0edda323c26cf988a07f9ccd3b81",
+        "data/tilesets/secondary/underwater/metatile_attributes.bin": "ac2c701f8d8dff826e77874d41a7fe376328cfda26b75df59b57ef3162bcbb15"
+      },
+      "script_created_metatile_ids": [],
+      "transitive_script_labels": [
+        "AbnormalWeather_Underwater_SetupEscapeWarp",
+        "AbnormalWeather_Underwater_SetupEscapeWarpRoute105North",
+        "AbnormalWeather_Underwater_SetupEscapeWarpRoute105South",
+        "AbnormalWeather_Underwater_SetupEscapeWarpRoute125East",
+        "AbnormalWeather_Underwater_SetupEscapeWarpRoute125West",
+        "AbnormalWeather_Underwater_SetupEscapeWarpRoute127North",
+        "AbnormalWeather_Underwater_SetupEscapeWarpRoute127South",
+        "AbnormalWeather_Underwater_SetupEscapeWarpRoute129East",
+        "AbnormalWeather_Underwater_SetupEscapeWarpRoute129West",
+        "Underwater_Route127_MapScripts",
+        "Underwater_Route127_OnResume"
+      ],
+      "own_functional_commands": [
+        "call AbnormalWeather_Underwater_SetupEscapeWarp"
+      ],
+      "flags": [],
+      "vars": []
+    },
+    "Underwater_Route128": {
+      "group": "dive",
+      "layout": {
+        "id": "LAYOUT_UNDERWATER_ROUTE128",
+        "name": "Underwater_Route128_Layout",
+        "width": 120,
+        "height": 40,
+        "primary_tileset": "gTileset_General",
+        "secondary_tileset": "gTileset_Underwater",
+        "border_filepath": "data/layouts/Underwater_Route128/border.bin",
+        "blockdata_filepath": "data/layouts/Underwater_Route128/map.bin"
+      },
+      "map": {
+        "id": "MAP_UNDERWATER_ROUTE128",
+        "name": "Underwater_Route128",
+        "layout": "LAYOUT_UNDERWATER_ROUTE128",
+        "music": "MUS_UNDERWATER",
+        "region_map_section": "MAPSEC_UNDERWATER_128",
+        "requires_flash": false,
+        "weather": "WEATHER_UNDERWATER_BUBBLES",
+        "map_type": "MAP_TYPE_UNDERWATER",
+        "allow_cycling": true,
+        "allow_escaping": false,
+        "allow_running": true,
+        "show_map_name": true,
+        "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+        "connections": [
+          {
+            "map": "MAP_UNDERWATER_ROUTE127",
+            "offset": 0,
+            "direction": "up"
+          },
+          {
+            "map": "MAP_ROUTE128",
+            "offset": 0,
+            "direction": "emerge"
+          }
+        ],
+        "object_events": [],
+        "warp_events": [
+          {
+            "x": 38,
+            "y": 26,
+            "elevation": 3,
+            "dest_map": "MAP_UNDERWATER_SEAFLOOR_CAVERN",
+            "dest_warp_id": "0"
+          }
+        ],
+        "coord_events": [],
+        "bg_events": [
+          {
+            "type": "hidden_item",
+            "x": 38,
+            "y": 19,
+            "elevation": 3,
+            "item": "ITEM_PROTEIN",
+            "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_128_PROTEIN"
+          },
+          {
+            "type": "hidden_item",
+            "x": 69,
+            "y": 18,
+            "elevation": 3,
+            "item": "ITEM_PEARL",
+            "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_128_PEARL"
+          }
+        ]
+      },
+      "hashes": {
+        "data/maps/Underwater_Route128/map.json": "597775b990d3434f57c6799fdb1be32abcbc67a19e928715a84ef6670b126c38",
+        "data/layouts/Underwater_Route128/map.bin": "95aaf886005101d9f791e0667a88080533705e90e7ce88e516d4a4a5857d1bdc",
+        "data/layouts/Underwater_Route128/border.bin": "16cfea6072565627ae722a11fcf3677a3c5e9dd45b0e933db62fb6bb928d0887",
+        "data/maps/Underwater_Route128/scripts.inc": "8cc5e4ca364e141879cba067a2c8edf60fbdec0c8d738aff8dfc94b2f8982ee5",
+        "data/tilesets/primary/general/metatiles.bin": "17974b0ba1bb9d105d5ba255c69a3b80d8484a26ea0b8ff22c6c6567c6c22910",
+        "data/tilesets/primary/general/metatile_attributes.bin": "06c9548a6c70d133b6d47638090f5d36f3fec92aace3d90deca758a4404cfa9b",
+        "data/tilesets/secondary/underwater/metatiles.bin": "04cb7a82f96ba49824463231012b4eaa237e0edda323c26cf988a07f9ccd3b81",
+        "data/tilesets/secondary/underwater/metatile_attributes.bin": "ac2c701f8d8dff826e77874d41a7fe376328cfda26b75df59b57ef3162bcbb15"
+      },
+      "script_created_metatile_ids": [],
+      "transitive_script_labels": [
+        "Underwater_Route128_MapScripts"
+      ],
+      "own_functional_commands": [],
+      "flags": [],
+      "vars": []
+    },
+    "Underwater_Route129": {
+      "group": "dive",
+      "layout": {
+        "id": "LAYOUT_UNDERWATER_ROUTE129",
+        "name": "Underwater_Route129_Layout",
+        "width": 80,
+        "height": 40,
+        "primary_tileset": "gTileset_General",
+        "secondary_tileset": "gTileset_Underwater",
+        "border_filepath": "data/layouts/Underwater_Route129/border.bin",
+        "blockdata_filepath": "data/layouts/Underwater_Route129/map.bin"
+      },
+      "map": {
+        "id": "MAP_UNDERWATER_ROUTE129",
+        "name": "Underwater_Route129",
+        "layout": "LAYOUT_UNDERWATER_ROUTE129",
+        "music": "MUS_UNDERWATER",
+        "region_map_section": "MAPSEC_UNDERWATER_129",
+        "requires_flash": false,
+        "weather": "WEATHER_UNDERWATER_BUBBLES",
+        "map_type": "MAP_TYPE_UNDERWATER",
+        "allow_cycling": true,
+        "allow_escaping": false,
+        "allow_running": true,
+        "show_map_name": true,
+        "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+        "connections": [
+          {
+            "map": "MAP_ROUTE129",
+            "offset": 0,
+            "direction": "emerge"
+          }
+        ],
+        "object_events": [],
+        "warp_events": [
+          {
+            "x": 26,
+            "y": 3,
+            "elevation": 0,
+            "dest_map": "MAP_UNDERWATER_MARINE_CAVE",
+            "dest_warp_id": "0"
+          },
+          {
+            "x": 32,
+            "y": 21,
+            "elevation": 0,
+            "dest_map": "MAP_UNDERWATER_MARINE_CAVE",
+            "dest_warp_id": "0"
+          }
+        ],
+        "coord_events": [],
+        "bg_events": []
+      },
+      "hashes": {
+        "data/maps/Underwater_Route129/map.json": "42508acbfde2cfe1fce91bbf14ad174b3858d4871f3ab2f028e5524354f41c3b",
+        "data/layouts/Underwater_Route129/map.bin": "0b0174043c169cef2769e34a1c81e779b3445317471dcf5a5b61e52f48b2930c",
+        "data/layouts/Underwater_Route129/border.bin": "16cfea6072565627ae722a11fcf3677a3c5e9dd45b0e933db62fb6bb928d0887",
+        "data/maps/Underwater_Route129/scripts.inc": "33dfaf785885a45ad4d98775048a7ab2c83645adc6b5f4db41c8a4c71a894b76",
+        "data/tilesets/primary/general/metatiles.bin": "17974b0ba1bb9d105d5ba255c69a3b80d8484a26ea0b8ff22c6c6567c6c22910",
+        "data/tilesets/primary/general/metatile_attributes.bin": "06c9548a6c70d133b6d47638090f5d36f3fec92aace3d90deca758a4404cfa9b",
+        "data/tilesets/secondary/underwater/metatiles.bin": "04cb7a82f96ba49824463231012b4eaa237e0edda323c26cf988a07f9ccd3b81",
+        "data/tilesets/secondary/underwater/metatile_attributes.bin": "ac2c701f8d8dff826e77874d41a7fe376328cfda26b75df59b57ef3162bcbb15"
+      },
+      "script_created_metatile_ids": [],
+      "transitive_script_labels": [
+        "AbnormalWeather_Underwater_SetupEscapeWarp",
+        "AbnormalWeather_Underwater_SetupEscapeWarpRoute105North",
+        "AbnormalWeather_Underwater_SetupEscapeWarpRoute105South",
+        "AbnormalWeather_Underwater_SetupEscapeWarpRoute125East",
+        "AbnormalWeather_Underwater_SetupEscapeWarpRoute125West",
+        "AbnormalWeather_Underwater_SetupEscapeWarpRoute127North",
+        "AbnormalWeather_Underwater_SetupEscapeWarpRoute127South",
+        "AbnormalWeather_Underwater_SetupEscapeWarpRoute129East",
+        "AbnormalWeather_Underwater_SetupEscapeWarpRoute129West",
+        "Underwater_Route129_MapScripts",
+        "Underwater_Route129_OnResume"
+      ],
+      "own_functional_commands": [
+        "call AbnormalWeather_Underwater_SetupEscapeWarp"
+      ],
+      "flags": [],
+      "vars": []
+    },
+    "Underwater_Route134": {
+      "group": "dive",
+      "layout": {
+        "id": "LAYOUT_UNDERWATER_ROUTE134",
+        "name": "Underwater_Route134_Layout",
+        "width": 18,
+        "height": 10,
+        "primary_tileset": "gTileset_General",
+        "secondary_tileset": "gTileset_Underwater",
+        "border_filepath": "data/layouts/Underwater_Route134/border.bin",
+        "blockdata_filepath": "data/layouts/Underwater_Route134/map.bin"
+      },
+      "map": {
+        "id": "MAP_UNDERWATER_ROUTE134",
+        "name": "Underwater_Route134",
+        "layout": "LAYOUT_UNDERWATER_ROUTE134",
+        "music": "MUS_UNDERWATER",
+        "region_map_section": "MAPSEC_UNDERWATER_SEALED_CHAMBER",
+        "requires_flash": false,
+        "weather": "WEATHER_UNDERWATER_BUBBLES",
+        "map_type": "MAP_TYPE_UNDERWATER",
+        "allow_cycling": true,
+        "allow_escaping": false,
+        "allow_running": true,
+        "show_map_name": true,
+        "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+        "connections": null,
+        "object_events": [],
+        "warp_events": [
+          {
+            "x": 8,
+            "y": 8,
+            "elevation": 0,
+            "dest_map": "MAP_UNDERWATER_SEALED_CHAMBER",
+            "dest_warp_id": "0"
+          }
+        ],
+        "coord_events": [],
+        "bg_events": []
+      },
+      "hashes": {
+        "data/maps/Underwater_Route134/map.json": "2cc4ae43859ee2ba1b5532ab90d3a10b361d49c79dc1d8ef768b4c59bc124dea",
+        "data/layouts/Underwater_Route134/map.bin": "cb2f9e740d7c6d6c2fc562dba349189387507b9500564429fa95394b82f33aef",
+        "data/layouts/Underwater_Route134/border.bin": "16cfea6072565627ae722a11fcf3677a3c5e9dd45b0e933db62fb6bb928d0887",
+        "data/maps/Underwater_Route134/scripts.inc": "1cd44c4bd7743156c37fc1682623287b62aa34e3a1a7f742b486853da22c6c47",
+        "data/tilesets/primary/general/metatiles.bin": "17974b0ba1bb9d105d5ba255c69a3b80d8484a26ea0b8ff22c6c6567c6c22910",
+        "data/tilesets/primary/general/metatile_attributes.bin": "06c9548a6c70d133b6d47638090f5d36f3fec92aace3d90deca758a4404cfa9b",
+        "data/tilesets/secondary/underwater/metatiles.bin": "04cb7a82f96ba49824463231012b4eaa237e0edda323c26cf988a07f9ccd3b81",
+        "data/tilesets/secondary/underwater/metatile_attributes.bin": "ac2c701f8d8dff826e77874d41a7fe376328cfda26b75df59b57ef3162bcbb15"
+      },
+      "script_created_metatile_ids": [],
+      "transitive_script_labels": [
+        "Underwater_Route134_MapScripts",
+        "Underwater_Route134_OnResume"
+      ],
+      "own_functional_commands": [],
+      "flags": [],
+      "vars": []
+    },
+    "Underwater_SeafloorCavern": {
+      "group": "dive",
+      "layout": {
+        "id": "LAYOUT_UNDERWATER_SEAFLOOR_CAVERN",
+        "name": "Underwater_SeafloorCavern_Layout",
+        "width": 14,
+        "height": 9,
+        "primary_tileset": "gTileset_General",
+        "secondary_tileset": "gTileset_Underwater",
+        "border_filepath": "data/layouts/Underwater_SeafloorCavern/border.bin",
+        "blockdata_filepath": "data/layouts/Underwater_SeafloorCavern/map.bin"
+      },
+      "map": {
+        "id": "MAP_UNDERWATER_SEAFLOOR_CAVERN",
+        "name": "Underwater_SeafloorCavern",
+        "layout": "LAYOUT_UNDERWATER_SEAFLOOR_CAVERN",
+        "music": "MUS_UNDERWATER",
+        "region_map_section": "MAPSEC_UNDERWATER_SEAFLOOR_CAVERN",
+        "requires_flash": false,
+        "weather": "WEATHER_UNDERWATER_BUBBLES",
+        "map_type": "MAP_TYPE_UNDERWATER",
+        "allow_cycling": true,
+        "allow_escaping": false,
+        "allow_running": true,
+        "show_map_name": true,
+        "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+        "connections": null,
+        "object_events": [
+          {
+            "graphics_id": "OBJ_EVENT_GFX_RIVAL_BRENDAN_NORMAL",
+            "x": 5,
+            "y": 4,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_INVISIBLE",
+            "movement_range_x": 1,
+            "movement_range_y": 1,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "Underwater_SeafloorCavern_EventScript_CheckStolenSub",
+            "flag": "FLAG_HIDE_UNDERWATER_SEA_FLOOR_CAVERN_STOLEN_SUBMARINE"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_RIVAL_BRENDAN_NORMAL",
+            "x": 6,
+            "y": 4,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_INVISIBLE",
+            "movement_range_x": 1,
+            "movement_range_y": 1,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "Underwater_SeafloorCavern_EventScript_CheckStolenSub",
+            "flag": "FLAG_HIDE_UNDERWATER_SEA_FLOOR_CAVERN_STOLEN_SUBMARINE"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_RIVAL_BRENDAN_NORMAL",
+            "x": 7,
+            "y": 4,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_INVISIBLE",
+            "movement_range_x": 1,
+            "movement_range_y": 1,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "Underwater_SeafloorCavern_EventScript_CheckStolenSub",
+            "flag": "FLAG_HIDE_UNDERWATER_SEA_FLOOR_CAVERN_STOLEN_SUBMARINE"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_RIVAL_BRENDAN_NORMAL",
+            "x": 8,
+            "y": 4,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_INVISIBLE",
+            "movement_range_x": 1,
+            "movement_range_y": 1,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "Underwater_SeafloorCavern_EventScript_CheckStolenSub",
+            "flag": "FLAG_HIDE_UNDERWATER_SEA_FLOOR_CAVERN_STOLEN_SUBMARINE"
+          }
+        ],
+        "warp_events": [
+          {
+            "x": 6,
+            "y": 7,
+            "elevation": 0,
+            "dest_map": "MAP_UNDERWATER_ROUTE128",
+            "dest_warp_id": "0"
+          }
+        ],
+        "coord_events": [],
+        "bg_events": []
+      },
+      "hashes": {
+        "data/maps/Underwater_SeafloorCavern/map.json": "27be93d8764cc3d4e8f767b4c689365045fd9dfb85f65b2bfd7f1ee8f8ef14a7",
+        "data/layouts/Underwater_SeafloorCavern/map.bin": "fab988562288c364a9814da013bb7e90705d4a5fb20668861e79c18656a4ed60",
+        "data/layouts/Underwater_SeafloorCavern/border.bin": "16cfea6072565627ae722a11fcf3677a3c5e9dd45b0e933db62fb6bb928d0887",
+        "data/maps/Underwater_SeafloorCavern/scripts.inc": "fa8698e5712efeee46a782adbd189d2d7886d10228daed9da091701283c0ace7",
+        "data/tilesets/primary/general/metatiles.bin": "17974b0ba1bb9d105d5ba255c69a3b80d8484a26ea0b8ff22c6c6567c6c22910",
+        "data/tilesets/primary/general/metatile_attributes.bin": "06c9548a6c70d133b6d47638090f5d36f3fec92aace3d90deca758a4404cfa9b",
+        "data/tilesets/secondary/underwater/metatiles.bin": "04cb7a82f96ba49824463231012b4eaa237e0edda323c26cf988a07f9ccd3b81",
+        "data/tilesets/secondary/underwater/metatile_attributes.bin": "ac2c701f8d8dff826e77874d41a7fe376328cfda26b75df59b57ef3162bcbb15"
+      },
+      "script_created_metatile_ids": [
+        542,
+        552
+      ],
+      "transitive_script_labels": [
+        "Underwater_SeafloorCavern_EventScript_CheckStolenSub",
+        "Underwater_SeafloorCavern_EventScript_HideSubmarine",
+        "Underwater_SeafloorCavern_EventScript_SetSubmarineGoneMetatiles",
+        "Underwater_SeafloorCavern_MapScripts",
+        "Underwater_SeafloorCavern_OnLoad",
+        "Underwater_SeafloorCavern_OnResume",
+        "Underwater_SeafloorCavern_OnTransition",
+        "Underwater_SeafloorCavern_Text_SubExplorer1"
+      ],
+      "own_functional_commands": [
+        "setflag FLAG_LANDMARK_SEAFLOOR_CAVERN",
+        "setflag FLAG_HIDE_UNDERWATER_SEA_FLOOR_CAVERN_STOLEN_SUBMARINE",
+        "setmetatile 5, 3, METATILE_Underwater_RockWall, TRUE",
+        "setmetatile 6, 3, METATILE_Underwater_RockWall, TRUE",
+        "setmetatile 7, 3, METATILE_Underwater_RockWall, TRUE",
+        "setmetatile 8, 3, METATILE_Underwater_RockWall, TRUE",
+        "setmetatile 5, 4, METATILE_Underwater_FloorShadow, FALSE",
+        "setmetatile 6, 4, METATILE_Underwater_FloorShadow, FALSE",
+        "setmetatile 7, 4, METATILE_Underwater_FloorShadow, FALSE",
+        "setmetatile 8, 4, METATILE_Underwater_FloorShadow, FALSE",
+        "setmetatile 5, 5, METATILE_Underwater_FloorShadow, FALSE",
+        "setmetatile 6, 5, METATILE_Underwater_FloorShadow, FALSE",
+        "setmetatile 7, 5, METATILE_Underwater_FloorShadow, FALSE",
+        "setmetatile 8, 5, METATILE_Underwater_FloorShadow, FALSE"
+      ],
+      "flags": [
+        "FLAG_HIDE_UNDERWATER_SEA_FLOOR_CAVERN_STOLEN_SUBMARINE",
+        "FLAG_KYOGRE_ESCAPED_SEAFLOOR_CAVERN",
+        "FLAG_LANDMARK_SEAFLOOR_CAVERN"
+      ],
+      "vars": []
+    },
+    "Underwater_SealedChamber": {
+      "group": "dive",
+      "layout": {
+        "id": "LAYOUT_UNDERWATER_SEALED_CHAMBER",
+        "name": "Underwater_SealedChamber_Layout",
+        "width": 22,
+        "height": 48,
+        "primary_tileset": "gTileset_General",
+        "secondary_tileset": "gTileset_Underwater",
+        "border_filepath": "data/layouts/Underwater_SealedChamber/border.bin",
+        "blockdata_filepath": "data/layouts/Underwater_SealedChamber/map.bin"
+      },
+      "map": {
+        "id": "MAP_UNDERWATER_SEALED_CHAMBER",
+        "name": "Underwater_SealedChamber",
+        "layout": "LAYOUT_UNDERWATER_SEALED_CHAMBER",
+        "music": "MUS_UNDERWATER",
+        "region_map_section": "MAPSEC_UNDERWATER_SEALED_CHAMBER",
+        "requires_flash": false,
+        "weather": "WEATHER_UNDERWATER_BUBBLES",
+        "map_type": "MAP_TYPE_UNDERWATER",
+        "allow_cycling": true,
+        "allow_escaping": false,
+        "allow_running": true,
+        "show_map_name": true,
+        "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+        "connections": null,
+        "object_events": [],
+        "warp_events": [
+          {
+            "x": 7,
+            "y": 1,
+            "elevation": 0,
+            "dest_map": "MAP_UNDERWATER_ROUTE134",
+            "dest_warp_id": "0"
+          }
+        ],
+        "coord_events": [],
+        "bg_events": [
+          {
+            "type": "sign",
+            "x": 12,
+            "y": 43,
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "Underwater_SealedChamber_EventScript_Braille"
+          }
+        ]
+      },
+      "hashes": {
+        "data/maps/Underwater_SealedChamber/map.json": "97d5464267b01119c598d751a2d7f2df5654d2489f65b93b0bccad5962449804",
+        "data/layouts/Underwater_SealedChamber/map.bin": "72e1629f37040ac778a843398ca5ec3fc4cff163bbbd3256c64f8ed74195c3ff",
+        "data/layouts/Underwater_SealedChamber/border.bin": "16cfea6072565627ae722a11fcf3677a3c5e9dd45b0e933db62fb6bb928d0887",
+        "data/maps/Underwater_SealedChamber/scripts.inc": "962caabca520484205f3ee2ce21b908baef3a62d3ec66225963afd19de561428",
+        "data/tilesets/primary/general/metatiles.bin": "17974b0ba1bb9d105d5ba255c69a3b80d8484a26ea0b8ff22c6c6567c6c22910",
+        "data/tilesets/primary/general/metatile_attributes.bin": "06c9548a6c70d133b6d47638090f5d36f3fec92aace3d90deca758a4404cfa9b",
+        "data/tilesets/secondary/underwater/metatiles.bin": "04cb7a82f96ba49824463231012b4eaa237e0edda323c26cf988a07f9ccd3b81",
+        "data/tilesets/secondary/underwater/metatile_attributes.bin": "ac2c701f8d8dff826e77874d41a7fe376328cfda26b75df59b57ef3162bcbb15"
+      },
+      "script_created_metatile_ids": [],
+      "transitive_script_labels": [
+        "Underwater_SealedChamber_EventScript_Braille",
+        "Underwater_SealedChamber_EventScript_SurfaceRoute134",
+        "Underwater_SealedChamber_EventScript_SurfaceSealedChamber",
+        "Underwater_SealedChamber_MapScripts",
+        "Underwater_SealedChamber_OnDive"
+      ],
+      "own_functional_commands": [
+        "goto Underwater_SealedChamber_EventScript_SurfaceSealedChamber"
+      ],
+      "flags": [],
+      "vars": [
+        "VAR_0x8004",
+        "VAR_0x8005"
+      ]
+    },
+    "Underwater_SootopolisCity": {
+      "group": "dive",
+      "layout": {
+        "id": "LAYOUT_UNDERWATER_SOOTOPOLIS_CITY",
+        "name": "Underwater_SootopolisCity_Layout",
+        "width": 20,
+        "height": 10,
+        "primary_tileset": "gTileset_General",
+        "secondary_tileset": "gTileset_Underwater",
+        "border_filepath": "data/layouts/Underwater_SootopolisCity/border.bin",
+        "blockdata_filepath": "data/layouts/Underwater_SootopolisCity/map.bin"
+      },
+      "map": {
+        "id": "MAP_UNDERWATER_SOOTOPOLIS_CITY",
+        "name": "Underwater_SootopolisCity",
+        "layout": "LAYOUT_UNDERWATER_SOOTOPOLIS_CITY",
+        "music": "MUS_UNDERWATER",
+        "region_map_section": "MAPSEC_UNDERWATER_SOOTOPOLIS",
+        "requires_flash": false,
+        "weather": "WEATHER_UNDERWATER_BUBBLES",
+        "map_type": "MAP_TYPE_UNDERWATER",
+        "allow_cycling": true,
+        "allow_escaping": false,
+        "allow_running": true,
+        "show_map_name": true,
+        "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+        "connections": null,
+        "object_events": [],
+        "warp_events": [
+          {
+            "x": 9,
+            "y": 8,
+            "elevation": 0,
+            "dest_map": "MAP_UNDERWATER_ROUTE126",
+            "dest_warp_id": "0"
+          },
+          {
+            "x": 10,
+            "y": 8,
+            "elevation": 0,
+            "dest_map": "MAP_UNDERWATER_ROUTE126",
+            "dest_warp_id": "0"
+          }
+        ],
+        "coord_events": [],
+        "bg_events": []
+      },
+      "hashes": {
+        "data/maps/Underwater_SootopolisCity/map.json": "98ae2acb2bbf5d593c571e2815059768919bb74f242edeca43dbb1d68452137f",
+        "data/layouts/Underwater_SootopolisCity/map.bin": "a9e6ac9a919b821dd76091cfbe25c532c90336ed7a3d7cb965d99c492c68619f",
+        "data/layouts/Underwater_SootopolisCity/border.bin": "16cfea6072565627ae722a11fcf3677a3c5e9dd45b0e933db62fb6bb928d0887",
+        "data/maps/Underwater_SootopolisCity/scripts.inc": "ac54353368b5a13710b351e67f566c4bf8bd1d250fb6ffedcb8a00c302b7ac82",
+        "data/tilesets/primary/general/metatiles.bin": "17974b0ba1bb9d105d5ba255c69a3b80d8484a26ea0b8ff22c6c6567c6c22910",
+        "data/tilesets/primary/general/metatile_attributes.bin": "06c9548a6c70d133b6d47638090f5d36f3fec92aace3d90deca758a4404cfa9b",
+        "data/tilesets/secondary/underwater/metatiles.bin": "04cb7a82f96ba49824463231012b4eaa237e0edda323c26cf988a07f9ccd3b81",
+        "data/tilesets/secondary/underwater/metatile_attributes.bin": "ac2c701f8d8dff826e77874d41a7fe376328cfda26b75df59b57ef3162bcbb15"
+      },
+      "script_created_metatile_ids": [],
+      "transitive_script_labels": [
+        "Underwater_SootopolisCity_MapScripts",
+        "Underwater_SootopolisCity_OnResume"
+      ],
+      "own_functional_commands": [],
+      "flags": [],
+      "vars": []
+    },
+    "SafariZone_North": {
+      "group": "safari",
+      "layout": {
+        "id": "LAYOUT_SAFARI_ZONE_NORTH",
+        "name": "SafariZone_North_Layout",
+        "width": 40,
+        "height": 40,
+        "primary_tileset": "gTileset_General",
+        "secondary_tileset": "gTileset_Lilycove",
+        "border_filepath": "data/layouts/SafariZone_North/border.bin",
+        "blockdata_filepath": "data/layouts/SafariZone_North/map.bin"
+      },
+      "map": {
+        "id": "MAP_SAFARI_ZONE_NORTH",
+        "name": "SafariZone_North",
+        "layout": "LAYOUT_SAFARI_ZONE_NORTH",
+        "music": "MUS_SAFARI_ZONE",
+        "region_map_section": "MAPSEC_SAFARI_ZONE",
+        "requires_flash": false,
+        "weather": "WEATHER_SUNNY_CLOUDS",
+        "map_type": "MAP_TYPE_ROUTE",
+        "allow_cycling": true,
+        "allow_escaping": false,
+        "allow_running": true,
+        "show_map_name": true,
+        "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+        "connections": [
+          {
+            "map": "MAP_SAFARI_ZONE_NORTHWEST",
+            "offset": 0,
+            "direction": "left"
+          },
+          {
+            "map": "MAP_SAFARI_ZONE_SOUTH",
+            "offset": 0,
+            "direction": "down"
+          },
+          {
+            "map": "MAP_SAFARI_ZONE_NORTHEAST",
+            "offset": 0,
+            "direction": "right"
+          }
+        ],
+        "object_events": [
+          {
+            "graphics_id": "OBJ_EVENT_GFX_FISHERMAN",
+            "x": 22,
+            "y": 9,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movement_range_x": 1,
+            "movement_range_y": 1,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "SafariZone_North_EventScript_Fisherman",
+            "flag": "0"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_MAN_4",
+            "x": 6,
+            "y": 29,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movement_range_x": 1,
+            "movement_range_y": 1,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "SafariZone_North_EventScript_Man",
+            "flag": "0"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
+            "x": 25,
+            "y": 10,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movement_range_x": 1,
+            "movement_range_y": 1,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "EventScript_RockSmash",
+            "flag": "FLAG_TEMP_11"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
+            "x": 25,
+            "y": 13,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movement_range_x": 1,
+            "movement_range_y": 1,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "EventScript_RockSmash",
+            "flag": "FLAG_TEMP_12"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
+            "x": 28,
+            "y": 14,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movement_range_x": 1,
+            "movement_range_y": 1,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "EventScript_RockSmash",
+            "flag": "FLAG_TEMP_13"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
+            "x": 23,
+            "y": 6,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movement_range_x": 1,
+            "movement_range_y": 1,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "EventScript_RockSmash",
+            "flag": "FLAG_TEMP_14"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
+            "x": 20,
+            "y": 7,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movement_range_x": 1,
+            "movement_range_y": 1,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "EventScript_RockSmash",
+            "flag": "FLAG_TEMP_15"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
+            "x": 27,
+            "y": 7,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movement_range_x": 1,
+            "movement_range_y": 1,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "EventScript_RockSmash",
+            "flag": "FLAG_TEMP_16"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+            "x": 7,
+            "y": 6,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movement_range_x": 1,
+            "movement_range_y": 1,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "SafariZone_North_EventScript_ItemCalcium",
+            "flag": "FLAG_ITEM_SAFARI_ZONE_NORTH_CALCIUM"
+          }
+        ],
+        "warp_events": [],
+        "coord_events": [],
+        "bg_events": []
+      },
+      "hashes": {
+        "data/maps/SafariZone_North/map.json": "db91a784bd0b8d946545392fac5632024787b818fc101a3fa7d6bd025650b069",
+        "data/layouts/SafariZone_North/map.bin": "5d3b92cceaa6d9a6543802c998cfc89e8a405e740594c456ad7ed779a09c4e70",
+        "data/layouts/SafariZone_North/border.bin": "aa298641e3346d9c7ac51454222ff057768946e61980fd82e4db65912df412fe",
+        "data/maps/SafariZone_North/scripts.inc": "887136b624de621b6a18ac309b7fc61460e5103e5859815aca12b80236840d1b",
+        "data/tilesets/primary/general/metatiles.bin": "17974b0ba1bb9d105d5ba255c69a3b80d8484a26ea0b8ff22c6c6567c6c22910",
+        "data/tilesets/primary/general/metatile_attributes.bin": "06c9548a6c70d133b6d47638090f5d36f3fec92aace3d90deca758a4404cfa9b",
+        "data/tilesets/secondary/lilycove/metatiles.bin": "cb7b2efc00894275b76699be43f3215ee0a89cc129a16fe22cffc9cef30d0868",
+        "data/tilesets/secondary/lilycove/metatile_attributes.bin": "89a199ac8077cdc00c77661f1f0e4c80149cc1f71adecc856cc02e7a04edc9c5"
+      },
+      "script_created_metatile_ids": [],
+      "transitive_script_labels": [
+        "SafariZone_North_EventScript_Fisherman",
+        "SafariZone_North_EventScript_Man",
+        "SafariZone_North_MapScripts",
+        "SafariZone_North_Text_Fisherman",
+        "SafariZone_North_Text_Man"
+      ],
+      "own_functional_commands": [],
+      "flags": [],
+      "vars": []
+    },
+    "SafariZone_Northeast": {
+      "group": "safari",
+      "layout": {
+        "id": "LAYOUT_SAFARI_ZONE_NORTHEAST",
+        "name": "SafariZone_Northeast_Layout",
+        "width": 40,
+        "height": 40,
+        "primary_tileset": "gTileset_General",
+        "secondary_tileset": "gTileset_Lilycove",
+        "border_filepath": "data/layouts/SafariZone_Northeast/border.bin",
+        "blockdata_filepath": "data/layouts/SafariZone_Northeast/map.bin"
+      },
+      "map": {
+        "id": "MAP_SAFARI_ZONE_NORTHEAST",
+        "name": "SafariZone_Northeast",
+        "layout": "LAYOUT_SAFARI_ZONE_NORTHEAST",
+        "music": "MUS_SAFARI_ZONE",
+        "region_map_section": "MAPSEC_SAFARI_ZONE",
+        "requires_flash": false,
+        "weather": "WEATHER_SUNNY_CLOUDS",
+        "map_type": "MAP_TYPE_ROUTE",
+        "allow_cycling": true,
+        "allow_escaping": false,
+        "allow_running": true,
+        "show_map_name": true,
+        "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+        "connections": [
+          {
+            "map": "MAP_SAFARI_ZONE_NORTH",
+            "offset": 0,
+            "direction": "left"
+          },
+          {
+            "map": "MAP_SAFARI_ZONE_SOUTHEAST",
+            "offset": 0,
+            "direction": "down"
+          }
+        ],
+        "object_events": [
+          {
+            "graphics_id": "OBJ_EVENT_GFX_BOY_3",
+            "x": 8,
+            "y": 20,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movement_range_x": 1,
+            "movement_range_y": 1,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "SafariZone_Northeast_EventScript_Boy",
+            "flag": "0"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_GIRL_3",
+            "x": 30,
+            "y": 22,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movement_range_x": 1,
+            "movement_range_y": 1,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "SafariZone_Northeast_EventScript_Girl",
+            "flag": "0"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
+            "x": 11,
+            "y": 11,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movement_range_x": 1,
+            "movement_range_y": 1,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "EventScript_RockSmash",
+            "flag": "FLAG_TEMP_15"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_WOMAN_1",
+            "x": 13,
+            "y": 35,
+            "elevation": 0,
+            "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movement_range_x": 1,
+            "movement_range_y": 1,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "SafariZone_Northeast_EventScript_Woman",
+            "flag": "0"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
+            "x": 8,
+            "y": 13,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movement_range_x": 1,
+            "movement_range_y": 1,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "EventScript_RockSmash",
+            "flag": "FLAG_TEMP_13"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
+            "x": 9,
+            "y": 7,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movement_range_x": 1,
+            "movement_range_y": 1,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "EventScript_RockSmash",
+            "flag": "FLAG_TEMP_11"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
+            "x": 8,
+            "y": 10,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movement_range_x": 1,
+            "movement_range_y": 1,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "EventScript_RockSmash",
+            "flag": "FLAG_TEMP_14"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
+            "x": 12,
+            "y": 8,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movement_range_x": 1,
+            "movement_range_y": 1,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "EventScript_RockSmash",
+            "flag": "FLAG_TEMP_12"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+            "x": 8,
+            "y": 17,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movement_range_x": 1,
+            "movement_range_y": 1,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "SafariZone_Northeast_EventScript_ItemNugget",
+            "flag": "FLAG_ITEM_SAFARI_ZONE_NORTH_EAST_NUGGET"
+          }
+        ],
+        "warp_events": [],
+        "coord_events": [],
+        "bg_events": [
+          {
+            "type": "hidden_item",
+            "x": 31,
+            "y": 35,
+            "elevation": 3,
+            "item": "ITEM_RARE_CANDY",
+            "flag": "FLAG_HIDDEN_ITEM_SAFARI_ZONE_NORTH_EAST_RARE_CANDY"
+          },
+          {
+            "type": "hidden_item",
+            "x": 21,
+            "y": 5,
+            "elevation": 3,
+            "item": "ITEM_ZINC",
+            "flag": "FLAG_HIDDEN_ITEM_SAFARI_ZONE_NORTH_EAST_ZINC"
+          }
+        ]
+      },
+      "hashes": {
+        "data/maps/SafariZone_Northeast/map.json": "87493d71e5cdab73d151f134e9020d153d9b4547dcc2020216c075d67f60b179",
+        "data/layouts/SafariZone_Northeast/map.bin": "528ec2de1456b9c5bc44bfb94e1245e49d2149c2a5fe3dd053ef3be5437c19d4",
+        "data/layouts/SafariZone_Northeast/border.bin": "aa298641e3346d9c7ac51454222ff057768946e61980fd82e4db65912df412fe",
+        "data/maps/SafariZone_Northeast/scripts.inc": "a6123e53fd718cf27e5e2e5b63e5179d258bf602ca1e21f8a8158d4a0b8d41f0",
+        "data/tilesets/primary/general/metatiles.bin": "17974b0ba1bb9d105d5ba255c69a3b80d8484a26ea0b8ff22c6c6567c6c22910",
+        "data/tilesets/primary/general/metatile_attributes.bin": "06c9548a6c70d133b6d47638090f5d36f3fec92aace3d90deca758a4404cfa9b",
+        "data/tilesets/secondary/lilycove/metatiles.bin": "cb7b2efc00894275b76699be43f3215ee0a89cc129a16fe22cffc9cef30d0868",
+        "data/tilesets/secondary/lilycove/metatile_attributes.bin": "89a199ac8077cdc00c77661f1f0e4c80149cc1f71adecc856cc02e7a04edc9c5"
+      },
+      "script_created_metatile_ids": [],
+      "transitive_script_labels": [
+        "SafariZone_Northeast_MapScripts"
+      ],
+      "own_functional_commands": [],
+      "flags": [],
+      "vars": []
+    },
+    "SafariZone_Northwest": {
+      "group": "safari",
+      "layout": {
+        "id": "LAYOUT_SAFARI_ZONE_NORTHWEST",
+        "name": "SafariZone_Northwest_Layout",
+        "width": 40,
+        "height": 40,
+        "primary_tileset": "gTileset_General",
+        "secondary_tileset": "gTileset_Lilycove",
+        "border_filepath": "data/layouts/SafariZone_Northwest/border.bin",
+        "blockdata_filepath": "data/layouts/SafariZone_Northwest/map.bin"
+      },
+      "map": {
+        "id": "MAP_SAFARI_ZONE_NORTHWEST",
+        "name": "SafariZone_Northwest",
+        "layout": "LAYOUT_SAFARI_ZONE_NORTHWEST",
+        "music": "MUS_SAFARI_ZONE",
+        "region_map_section": "MAPSEC_SAFARI_ZONE",
+        "requires_flash": false,
+        "weather": "WEATHER_SUNNY_CLOUDS",
+        "map_type": "MAP_TYPE_ROUTE",
+        "allow_cycling": true,
+        "allow_escaping": false,
+        "allow_running": true,
+        "show_map_name": true,
+        "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+        "connections": [
+          {
+            "map": "MAP_SAFARI_ZONE_NORTH",
+            "offset": 0,
+            "direction": "right"
+          },
+          {
+            "map": "MAP_SAFARI_ZONE_SOUTHWEST",
+            "offset": 0,
+            "direction": "down"
+          }
+        ],
+        "object_events": [
+          {
+            "graphics_id": "OBJ_EVENT_GFX_MAN_1",
+            "x": 8,
+            "y": 8,
+            "elevation": 5,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "SafariZone_Northwest_EventScript_Man",
+            "flag": "0"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+            "x": 33,
+            "y": 7,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movement_range_x": 1,
+            "movement_range_y": 1,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "SafariZone_Northwest_EventScript_ItemTMSolarBeam",
+            "flag": "FLAG_ITEM_SAFARI_ZONE_NORTH_WEST_TM_SOLAR_BEAM"
+          }
+        ],
+        "warp_events": [],
+        "coord_events": [],
+        "bg_events": []
+      },
+      "hashes": {
+        "data/maps/SafariZone_Northwest/map.json": "cb2d595abe6ade0efa85386955ee3e5fa4686ed85a6c3011ea336e9687668e94",
+        "data/layouts/SafariZone_Northwest/map.bin": "73822abe288fc0f95ee6120d98bccab5865230ceb81b13997fadfbb716db772a",
+        "data/layouts/SafariZone_Northwest/border.bin": "aa298641e3346d9c7ac51454222ff057768946e61980fd82e4db65912df412fe",
+        "data/maps/SafariZone_Northwest/scripts.inc": "145d3729ab9a88548a38a3a72cc850e98736746d7d7c1cb918ef0b0977954f8f",
+        "data/tilesets/primary/general/metatiles.bin": "17974b0ba1bb9d105d5ba255c69a3b80d8484a26ea0b8ff22c6c6567c6c22910",
+        "data/tilesets/primary/general/metatile_attributes.bin": "06c9548a6c70d133b6d47638090f5d36f3fec92aace3d90deca758a4404cfa9b",
+        "data/tilesets/secondary/lilycove/metatiles.bin": "cb7b2efc00894275b76699be43f3215ee0a89cc129a16fe22cffc9cef30d0868",
+        "data/tilesets/secondary/lilycove/metatile_attributes.bin": "89a199ac8077cdc00c77661f1f0e4c80149cc1f71adecc856cc02e7a04edc9c5"
+      },
+      "script_created_metatile_ids": [],
+      "transitive_script_labels": [
+        "SafariZone_Northwest_EventScript_Man",
+        "SafariZone_Northwest_MapScripts",
+        "SafariZone_Northwest_Text_Man"
+      ],
+      "own_functional_commands": [],
+      "flags": [],
+      "vars": []
+    },
+    "SafariZone_RestHouse": {
+      "group": "safari",
+      "layout": {
+        "id": "LAYOUT_SAFARI_ZONE_REST_HOUSE",
+        "name": "SafariZone_RestHouse_Layout",
+        "width": 10,
+        "height": 9,
+        "primary_tileset": "gTileset_Building",
+        "secondary_tileset": "gTileset_GenericBuilding",
+        "border_filepath": "data/layouts/SafariZone_RestHouse/border.bin",
+        "blockdata_filepath": "data/layouts/SafariZone_RestHouse/map.bin"
+      },
+      "map": {
+        "id": "MAP_SAFARI_ZONE_REST_HOUSE",
+        "name": "SafariZone_RestHouse",
+        "layout": "LAYOUT_SAFARI_ZONE_REST_HOUSE",
+        "music": "MUS_SAFARI_ZONE",
+        "region_map_section": "MAPSEC_SAFARI_ZONE",
+        "requires_flash": false,
+        "weather": "WEATHER_NONE",
+        "map_type": "MAP_TYPE_INDOOR",
+        "allow_cycling": false,
+        "allow_escaping": false,
+        "allow_running": false,
+        "show_map_name": false,
+        "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+        "connections": null,
+        "object_events": [
+          {
+            "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
+            "x": 7,
+            "y": 4,
+            "elevation": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movement_range_x": 1,
+            "movement_range_y": 1,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "SafariZone_RestHouse_EventScript_Youngster",
+            "flag": "0"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_PSYCHIC_M",
+            "x": 8,
+            "y": 4,
+            "elevation": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+            "movement_range_x": 1,
+            "movement_range_y": 1,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "SafariZone_RestHouse_EventScript_PsychicM",
+            "flag": "0"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_FAT_MAN",
+            "x": 2,
+            "y": 5,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movement_range_x": 1,
+            "movement_range_y": 1,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "SafariZone_RestHouse_EventScript_FatMan",
+            "flag": "0"
+          }
+        ],
+        "warp_events": [
+          {
+            "x": 3,
+            "y": 8,
+            "elevation": 0,
+            "dest_map": "MAP_SAFARI_ZONE_SOUTHWEST",
+            "dest_warp_id": "0"
+          },
+          {
+            "x": 4,
+            "y": 8,
+            "elevation": 0,
+            "dest_map": "MAP_SAFARI_ZONE_SOUTHWEST",
+            "dest_warp_id": "0"
+          }
+        ],
+        "coord_events": [],
+        "bg_events": []
+      },
+      "hashes": {
+        "data/maps/SafariZone_RestHouse/map.json": "7d606d7e75c320553aed5788e0d9c6a5c079173317faa6b62452e5a0edf46e46",
+        "data/layouts/SafariZone_RestHouse/map.bin": "abd55dcfca8910976744940b9f4d44f78c2dd66d3148be47811a04e5f2733ddb",
+        "data/layouts/SafariZone_RestHouse/border.bin": "efef8d5a9f8dbe5bb218e6b0cc452583eb9d1452b615b1c7ab66ad49c82e9d70",
+        "data/maps/SafariZone_RestHouse/scripts.inc": "c829fa04e2abf88aaa5cddd6b6caf12961da44b6150caf6e0353bbfeb21260d0",
+        "data/tilesets/primary/building/metatiles.bin": "65e40fece49f8ed09a82b33c3d590716d9740581f087acd1359665331e4683f1",
+        "data/tilesets/primary/building/metatile_attributes.bin": "7a153a1748dc4bd03e621acad6c6b7e90c2d3acfc467a928ad23d21f34e73128",
+        "data/tilesets/secondary/generic_building/metatiles.bin": "c3401446239749a25f6abc1daab0c19cd43eb6333a7ec5335bb7e1580d002b1d",
+        "data/tilesets/secondary/generic_building/metatile_attributes.bin": "eb3e942c013770224ffc7d99c469cdaf9cd31243f71ce3fb05a70b278dc5a509"
+      },
+      "script_created_metatile_ids": [],
+      "transitive_script_labels": [
+        "SafariZone_RestHouse_EventScript_FatMan",
+        "SafariZone_RestHouse_EventScript_PsychicM",
+        "SafariZone_RestHouse_EventScript_Youngster",
+        "SafariZone_RestHouse_MapScripts",
+        "SafariZone_RestHouse_Text_FatMan",
+        "SafariZone_RestHouse_Text_PsychicM",
+        "SafariZone_RestHouse_Text_Youngster"
+      ],
+      "own_functional_commands": [],
+      "flags": [],
+      "vars": []
+    },
+    "SafariZone_South": {
+      "group": "safari",
+      "layout": {
+        "id": "LAYOUT_SAFARI_ZONE_SOUTH",
+        "name": "SafariZone_South_Layout",
+        "width": 40,
+        "height": 40,
+        "primary_tileset": "gTileset_General",
+        "secondary_tileset": "gTileset_Lilycove",
+        "border_filepath": "data/layouts/SafariZone_South/border.bin",
+        "blockdata_filepath": "data/layouts/SafariZone_South/map.bin"
+      },
+      "map": {
+        "id": "MAP_SAFARI_ZONE_SOUTH",
+        "name": "SafariZone_South",
+        "layout": "LAYOUT_SAFARI_ZONE_SOUTH",
+        "music": "MUS_SAFARI_ZONE",
+        "region_map_section": "MAPSEC_SAFARI_ZONE",
+        "requires_flash": false,
+        "weather": "WEATHER_SUNNY_CLOUDS",
+        "map_type": "MAP_TYPE_ROUTE",
+        "allow_cycling": true,
+        "allow_escaping": false,
+        "allow_running": true,
+        "show_map_name": true,
+        "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+        "connections": [
+          {
+            "map": "MAP_SAFARI_ZONE_NORTH",
+            "offset": 0,
+            "direction": "up"
+          },
+          {
+            "map": "MAP_SAFARI_ZONE_SOUTHWEST",
+            "offset": 0,
+            "direction": "left"
+          },
+          {
+            "map": "MAP_SAFARI_ZONE_SOUTHEAST",
+            "offset": 0,
+            "direction": "right"
+          }
+        ],
+        "object_events": [
+          {
+            "local_id": "LOCALID_SAFARI_EXIT_ATTENDANT",
+            "graphics_id": "OBJ_EVENT_GFX_CAMPER",
+            "x": 32,
+            "y": 34,
+            "elevation": 4,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "SafariZone_South_EventScript_ExitAttendant",
+            "flag": "0"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_BOY_1",
+            "x": 26,
+            "y": 28,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movement_range_x": 1,
+            "movement_range_y": 1,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "SafariZone_South_EventScript_Boy",
+            "flag": "0"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_MAN_4",
+            "x": 16,
+            "y": 6,
+            "elevation": 5,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "SafariZone_South_EventScript_Man",
+            "flag": "0"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
+            "x": 15,
+            "y": 31,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movement_range_x": 1,
+            "movement_range_y": 1,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "SafariZone_South_EventScript_Youngster",
+            "flag": "0"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_CAMPER",
+            "x": 36,
+            "y": 16,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+            "movement_range_x": 1,
+            "movement_range_y": 1,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "SafariZone_South_EventScript_ConstructionWorker1",
+            "flag": "FLAG_HIDE_SAFARI_ZONE_SOUTH_CONSTRUCTION_WORKERS"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_CAMPER",
+            "x": 36,
+            "y": 17,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+            "movement_range_x": 1,
+            "movement_range_y": 1,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "SafariZone_South_EventScript_ConstructionWorker2",
+            "flag": "FLAG_HIDE_SAFARI_ZONE_SOUTH_CONSTRUCTION_WORKERS"
+          }
+        ],
+        "warp_events": [
+          {
+            "x": 32,
+            "y": 33,
+            "elevation": 0,
+            "dest_map": "MAP_ROUTE121_SAFARI_ZONE_ENTRANCE",
+            "dest_warp_id": "0"
+          }
+        ],
+        "coord_events": [],
+        "bg_events": []
+      },
+      "hashes": {
+        "data/maps/SafariZone_South/map.json": "a56460b4771eb85a3467e27a4be9ce1d738daa5aa9e044c205a620d16eb1782e",
+        "data/layouts/SafariZone_South/map.bin": "f58a8e3051e0af06e90f4323340aaa9dbb4545720a1032bba31f8e20e183c738",
+        "data/layouts/SafariZone_South/border.bin": "aa298641e3346d9c7ac51454222ff057768946e61980fd82e4db65912df412fe",
+        "data/maps/SafariZone_South/scripts.inc": "d6da6c2161621838f663b0ce303b81fd3810195fc62da23a3a30284eabbf8020",
+        "data/tilesets/primary/general/metatiles.bin": "17974b0ba1bb9d105d5ba255c69a3b80d8484a26ea0b8ff22c6c6567c6c22910",
+        "data/tilesets/primary/general/metatile_attributes.bin": "06c9548a6c70d133b6d47638090f5d36f3fec92aace3d90deca758a4404cfa9b",
+        "data/tilesets/secondary/lilycove/metatiles.bin": "cb7b2efc00894275b76699be43f3215ee0a89cc129a16fe22cffc9cef30d0868",
+        "data/tilesets/secondary/lilycove/metatile_attributes.bin": "89a199ac8077cdc00c77661f1f0e4c80149cc1f71adecc856cc02e7a04edc9c5"
+      },
+      "script_created_metatile_ids": [],
+      "transitive_script_labels": [
+        "SafariZone_Northeast_EventScript_Boy",
+        "SafariZone_Northeast_EventScript_Girl",
+        "SafariZone_Northeast_EventScript_Woman",
+        "SafariZone_Northeast_Text_Boy",
+        "SafariZone_Northeast_Text_Girl",
+        "SafariZone_Northeast_Text_Woman",
+        "SafariZone_South_EventScript_Boy",
+        "SafariZone_South_EventScript_ConstructionWorker1",
+        "SafariZone_South_EventScript_ConstructionWorker2",
+        "SafariZone_South_EventScript_EnterSafariZone",
+        "SafariZone_South_EventScript_Exit",
+        "SafariZone_South_EventScript_ExitAttendant",
+        "SafariZone_South_EventScript_ExitEarly",
+        "SafariZone_South_EventScript_ExitEarlyEast",
+        "SafariZone_South_EventScript_ExitEarlyNorth",
+        "SafariZone_South_EventScript_GoodLuck",
+        "SafariZone_South_EventScript_Man",
+        "SafariZone_South_EventScript_SetExitAttendantAside",
+        "SafariZone_South_EventScript_Youngster",
+        "SafariZone_South_MapScripts",
+        "SafariZone_South_Movement_ExitAttendantBlockDoor",
+        "SafariZone_South_Movement_MoveExitAttendantEast",
+        "SafariZone_South_Movement_MoveExitAttendantNorth",
+        "SafariZone_South_Movement_PlayerEnter",
+        "SafariZone_South_Movement_PlayerExitEast",
+        "SafariZone_South_Movement_PlayerExitNorth",
+        "SafariZone_South_OnFrame",
+        "SafariZone_South_OnTransition",
+        "SafariZone_South_Text_AreaOffLimits1",
+        "SafariZone_South_Text_AreaOffLimits2",
+        "SafariZone_South_Text_Boy",
+        "SafariZone_South_Text_EnjoyTheRestOfYourAdventure",
+        "SafariZone_South_Text_ExitEarlyThankYouForPlaying",
+        "SafariZone_South_Text_GoodLuck",
+        "SafariZone_South_Text_Man",
+        "SafariZone_South_Text_StillHaveTimeExit",
+        "SafariZone_South_Text_Youngster",
+        "SafariZone_Southeast_EventScript_ExpansionZoneAttendant",
+        "SafariZone_Southeast_EventScript_FatMan",
+        "SafariZone_Southeast_EventScript_LittleGirl",
+        "SafariZone_Southeast_EventScript_RichBoy",
+        "SafariZone_Southeast_Text_ExpansionIsFinished",
+        "SafariZone_Southeast_Text_FatMan",
+        "SafariZone_Southeast_Text_LittleGirl",
+        "SafariZone_Southeast_Text_RichBoy"
+      ],
+      "own_functional_commands": [
+        "applymovement LOCALID_PLAYER, SafariZone_South_Movement_PlayerEnter",
+        "applymovement LOCALID_SAFARI_EXIT_ATTENDANT, SafariZone_South_Movement_ExitAttendantBlockDoor",
+        "setvar VAR_SAFARI_ZONE_STATE, 0",
+        "setflag FLAG_GOOD_LUCK_SAFARI_ZONE",
+        "applymovement LOCALID_SAFARI_EXIT_ATTENDANT, SafariZone_South_Movement_MoveExitAttendantNorth",
+        "applymovement LOCALID_PLAYER, SafariZone_South_Movement_PlayerExitNorth",
+        "goto SafariZone_South_EventScript_Exit",
+        "applymovement LOCALID_SAFARI_EXIT_ATTENDANT, SafariZone_South_Movement_MoveExitAttendantEast",
+        "applymovement LOCALID_PLAYER, SafariZone_South_Movement_PlayerExitEast",
+        "goto SafariZone_South_EventScript_Exit",
+        "setvar VAR_SAFARI_ZONE_STATE, 1",
+        "special ExitSafariMode"
+      ],
+      "flags": [
+        "FLAG_GOOD_LUCK_SAFARI_ZONE"
+      ],
+      "vars": [
+        "VAR_FACING",
+        "VAR_RESULT",
+        "VAR_SAFARI_ZONE_STATE"
+      ]
+    },
+    "SafariZone_Southeast": {
+      "group": "safari",
+      "layout": {
+        "id": "LAYOUT_SAFARI_ZONE_SOUTHEAST",
+        "name": "SafariZone_Southeast_Layout",
+        "width": 40,
+        "height": 40,
+        "primary_tileset": "gTileset_General",
+        "secondary_tileset": "gTileset_Lilycove",
+        "border_filepath": "data/layouts/SafariZone_Southeast/border.bin",
+        "blockdata_filepath": "data/layouts/SafariZone_Southeast/map.bin"
+      },
+      "map": {
+        "id": "MAP_SAFARI_ZONE_SOUTHEAST",
+        "name": "SafariZone_Southeast",
+        "layout": "LAYOUT_SAFARI_ZONE_SOUTHEAST",
+        "music": "MUS_SAFARI_ZONE",
+        "region_map_section": "MAPSEC_SAFARI_ZONE",
+        "requires_flash": false,
+        "weather": "WEATHER_SUNNY_CLOUDS",
+        "map_type": "MAP_TYPE_ROUTE",
+        "allow_cycling": true,
+        "allow_escaping": false,
+        "allow_running": true,
+        "show_map_name": true,
+        "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+        "connections": [
+          {
+            "map": "MAP_SAFARI_ZONE_SOUTH",
+            "offset": 0,
+            "direction": "left"
+          },
+          {
+            "map": "MAP_SAFARI_ZONE_NORTHEAST",
+            "offset": 0,
+            "direction": "up"
+          }
+        ],
+        "object_events": [
+          {
+            "graphics_id": "OBJ_EVENT_GFX_RICH_BOY",
+            "x": 7,
+            "y": 7,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movement_range_x": 1,
+            "movement_range_y": 1,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "SafariZone_Southeast_EventScript_RichBoy",
+            "flag": "0"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_FAT_MAN",
+            "x": 20,
+            "y": 30,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movement_range_x": 1,
+            "movement_range_y": 1,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "SafariZone_Southeast_EventScript_FatMan",
+            "flag": "0"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_LITTLE_GIRL",
+            "x": 8,
+            "y": 26,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movement_range_x": 1,
+            "movement_range_y": 1,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "SafariZone_Southeast_EventScript_LittleGirl",
+            "flag": "0"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+            "x": 31,
+            "y": 15,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movement_range_x": 1,
+            "movement_range_y": 1,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "SafariZone_Southeast_EventScript_ItemBigPearl",
+            "flag": "FLAG_ITEM_SAFARI_ZONE_SOUTH_EAST_BIG_PEARL"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_CAMPER",
+            "x": 12,
+            "y": 16,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+            "movement_range_x": 1,
+            "movement_range_y": 1,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "SafariZone_Southeast_EventScript_ExpansionZoneAttendant",
+            "flag": "FLAG_HIDE_SAFARI_ZONE_SOUTH_EAST_EXPANSION"
+          }
+        ],
+        "warp_events": [],
+        "coord_events": [],
+        "bg_events": [
+          {
+            "type": "hidden_item",
+            "x": 19,
+            "y": 36,
+            "elevation": 3,
+            "item": "ITEM_PP_UP",
+            "flag": "FLAG_HIDDEN_ITEM_SAFARI_ZONE_SOUTH_EAST_PP_UP"
+          },
+          {
+            "type": "hidden_item",
+            "x": 32,
+            "y": 33,
+            "elevation": 0,
+            "item": "ITEM_FULL_RESTORE",
+            "flag": "FLAG_HIDDEN_ITEM_SAFARI_ZONE_SOUTH_EAST_FULL_RESTORE"
+          }
+        ]
+      },
+      "hashes": {
+        "data/maps/SafariZone_Southeast/map.json": "8ac6a99ae0c341d96b8a0186f999e6d34143ce1679cca1a9a2fc359949f15e0e",
+        "data/layouts/SafariZone_Southeast/map.bin": "2bfc58cb1dba4b070e48e6a6d2179264bcc3e4496dd1f0b7a74833d429a4d28c",
+        "data/layouts/SafariZone_Southeast/border.bin": "aa298641e3346d9c7ac51454222ff057768946e61980fd82e4db65912df412fe",
+        "data/maps/SafariZone_Southeast/scripts.inc": "3402fdc5c181f7d6d480f50dd7f1747a9b19562b72aa2a1b27aaab2725025cbc",
+        "data/tilesets/primary/general/metatiles.bin": "17974b0ba1bb9d105d5ba255c69a3b80d8484a26ea0b8ff22c6c6567c6c22910",
+        "data/tilesets/primary/general/metatile_attributes.bin": "06c9548a6c70d133b6d47638090f5d36f3fec92aace3d90deca758a4404cfa9b",
+        "data/tilesets/secondary/lilycove/metatiles.bin": "cb7b2efc00894275b76699be43f3215ee0a89cc129a16fe22cffc9cef30d0868",
+        "data/tilesets/secondary/lilycove/metatile_attributes.bin": "89a199ac8077cdc00c77661f1f0e4c80149cc1f71adecc856cc02e7a04edc9c5"
+      },
+      "script_created_metatile_ids": [],
+      "transitive_script_labels": [
+        "SafariZone_Southeast_MapScripts"
+      ],
+      "own_functional_commands": [],
+      "flags": [],
+      "vars": []
+    },
+    "SafariZone_Southwest": {
+      "group": "safari",
+      "layout": {
+        "id": "LAYOUT_SAFARI_ZONE_SOUTHWEST",
+        "name": "SafariZone_Southwest_Layout",
+        "width": 40,
+        "height": 40,
+        "primary_tileset": "gTileset_General",
+        "secondary_tileset": "gTileset_Lilycove",
+        "border_filepath": "data/layouts/SafariZone_Southwest/border.bin",
+        "blockdata_filepath": "data/layouts/SafariZone_Southwest/map.bin"
+      },
+      "map": {
+        "id": "MAP_SAFARI_ZONE_SOUTHWEST",
+        "name": "SafariZone_Southwest",
+        "layout": "LAYOUT_SAFARI_ZONE_SOUTHWEST",
+        "music": "MUS_SAFARI_ZONE",
+        "region_map_section": "MAPSEC_SAFARI_ZONE",
+        "requires_flash": false,
+        "weather": "WEATHER_SUNNY_CLOUDS",
+        "map_type": "MAP_TYPE_ROUTE",
+        "allow_cycling": true,
+        "allow_escaping": false,
+        "allow_running": true,
+        "show_map_name": true,
+        "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+        "connections": [
+          {
+            "map": "MAP_SAFARI_ZONE_NORTHWEST",
+            "offset": 0,
+            "direction": "up"
+          },
+          {
+            "map": "MAP_SAFARI_ZONE_SOUTH",
+            "offset": 0,
+            "direction": "right"
+          }
+        ],
+        "object_events": [
+          {
+            "graphics_id": "OBJ_EVENT_GFX_WOMAN_2",
+            "x": 22,
+            "y": 9,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "SafariZone_Southwest_EventScript_Woman",
+            "flag": "0"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+            "x": 0,
+            "y": 37,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movement_range_x": 1,
+            "movement_range_y": 1,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "SafariZone_Southwest_EventScript_ItemMaxRevive",
+            "flag": "FLAG_ITEM_SAFARI_ZONE_SOUTH_WEST_MAX_REVIVE"
+          }
+        ],
+        "warp_events": [
+          {
+            "x": 29,
+            "y": 7,
+            "elevation": 3,
+            "dest_map": "MAP_SAFARI_ZONE_REST_HOUSE",
+            "dest_warp_id": "0"
+          }
+        ],
+        "coord_events": [],
+        "bg_events": [
+          {
+            "type": "sign",
+            "x": 32,
+            "y": 7,
+            "elevation": 3,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "SafariZone_Southwest_EventScript_RestHouseSign"
+          }
+        ]
+      },
+      "hashes": {
+        "data/maps/SafariZone_Southwest/map.json": "1a825278eb4ff6bb504f824ecbe4295c627d355fe7b00035ff9b2588d056f505",
+        "data/layouts/SafariZone_Southwest/map.bin": "158a126e05d21315e810f9d8919d7516857bc5603f7cce06d4eee3815c9e62fe",
+        "data/layouts/SafariZone_Southwest/border.bin": "aa298641e3346d9c7ac51454222ff057768946e61980fd82e4db65912df412fe",
+        "data/maps/SafariZone_Southwest/scripts.inc": "fa76f9f9ef8b0f8a4a9e4ea146755c6f12041437f0ce9ce43970c4888a62393b",
+        "data/tilesets/primary/general/metatiles.bin": "17974b0ba1bb9d105d5ba255c69a3b80d8484a26ea0b8ff22c6c6567c6c22910",
+        "data/tilesets/primary/general/metatile_attributes.bin": "06c9548a6c70d133b6d47638090f5d36f3fec92aace3d90deca758a4404cfa9b",
+        "data/tilesets/secondary/lilycove/metatiles.bin": "cb7b2efc00894275b76699be43f3215ee0a89cc129a16fe22cffc9cef30d0868",
+        "data/tilesets/secondary/lilycove/metatile_attributes.bin": "89a199ac8077cdc00c77661f1f0e4c80149cc1f71adecc856cc02e7a04edc9c5"
+      },
+      "script_created_metatile_ids": [],
+      "transitive_script_labels": [
+        "SafariZone_Southwest_EventScript_RestHouseSign",
+        "SafariZone_Southwest_EventScript_Woman",
+        "SafariZone_Southwest_MapScripts",
+        "SafariZone_Southwest_Text_RestHouseSign",
+        "SafariZone_Southwest_Text_Woman"
+      ],
+      "own_functional_commands": [],
+      "flags": [],
+      "vars": []
+    },
+    "Route103": {
+      "group": "correcao_rota103",
+      "layout": {
+        "id": "LAYOUT_ARAUNA_ROUTE103_SUL_PAMPA_V1",
+        "name": "AraunaSulRoute103V1_Layout",
+        "width": 80,
+        "height": 22,
+        "primary_tileset": "gTileset_AraunaBorderRoute103BaseUivoV1",
+        "secondary_tileset": "gTileset_AraunaBorderRoute103ArtUivoV1",
+        "border_filepath": "data/layouts/AraunaSulRoute103V1/border.bin",
+        "blockdata_filepath": "data/layouts/AraunaSulRoute103V1/map.bin"
+      },
+      "map": {
+        "id": "MAP_ROUTE103",
+        "name": "Route103",
+        "layout": "LAYOUT_ARAUNA_ROUTE103_SUL_PAMPA_V1",
+        "music": "MUS_ARAUNA_ROUTE",
+        "region_map_section": "MAPSEC_ROUTE_103",
+        "requires_flash": false,
+        "weather": "WEATHER_SUNNY",
+        "map_type": "MAP_TYPE_ROUTE",
+        "allow_cycling": true,
+        "allow_escaping": false,
+        "allow_running": true,
+        "show_map_name": true,
+        "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+        "connections": [
+          {
+            "map": "MAP_OLDALE_TOWN",
+            "offset": -10,
+            "direction": "down"
+          },
+          {
+            "map": "MAP_ROUTE110",
+            "offset": -60,
+            "direction": "right"
+          }
+        ],
+        "object_events": [
+          {
+            "graphics_id": "OBJ_EVENT_GFX_MAN_3",
+            "x": 49,
+            "y": 12,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "Route103_EventScript_Man",
+            "flag": "0"
+          },
+          {
+            "local_id": "LOCALID_ROUTE103_RIVAL",
+            "graphics_id": "OBJ_EVENT_GFX_VAR_0",
+            "x": 10,
+            "y": 3,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "Route103_EventScript_Rival",
+            "flag": "FLAG_HIDE_ROUTE_103_RIVAL"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_WOMAN_2",
+            "x": 71,
+            "y": 11,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_RIGHT",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "trainer_type": "TRAINER_TYPE_NORMAL",
+            "trainer_sight_or_berry_tree_id": "3",
+            "script": "Route103_EventScript_Daisy",
+            "flag": "0"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_TWIN",
+            "x": 65,
+            "y": 12,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "trainer_type": "TRAINER_TYPE_NORMAL",
+            "trainer_sight_or_berry_tree_id": "1",
+            "script": "Route103_EventScript_Liv",
+            "flag": "0"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_TWIN",
+            "x": 64,
+            "y": 12,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "trainer_type": "TRAINER_TYPE_NORMAL",
+            "trainer_sight_or_berry_tree_id": "1",
+            "script": "Route103_EventScript_Amy",
+            "flag": "0"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_FISHERMAN",
+            "x": 50,
+            "y": 8,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_WALK_DOWN_AND_UP",
+            "movement_range_x": 0,
+            "movement_range_y": 1,
+            "trainer_type": "TRAINER_TYPE_NORMAL",
+            "trainer_sight_or_berry_tree_id": "3",
+            "script": "Route103_EventScript_Andrew",
+            "flag": "0"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
+            "x": 58,
+            "y": 5,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "BERRY_TREE_ROUTE_103_CHERI_1",
+            "script": "BerryTreeScript",
+            "flag": "0"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
+            "x": 59,
+            "y": 5,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "BERRY_TREE_ROUTE_103_LEPPA",
+            "script": "BerryTreeScript",
+            "flag": "0"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
+            "x": 60,
+            "y": 5,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "BERRY_TREE_ROUTE_103_CHERI_2",
+            "script": "BerryTreeScript",
+            "flag": "0"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_BOY_1",
+            "x": 20,
+            "y": 10,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movement_range_x": 1,
+            "movement_range_y": 2,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "Route103_EventScript_Boy",
+            "flag": "0"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_PROF_BIRCH",
+            "x": 7,
+            "y": 3,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movement_range_x": 1,
+            "movement_range_y": 1,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "ProfBirch_EventScript_RatePokedexOrRegister",
+            "flag": "FLAG_HIDE_ROUTE_103_BIRCH"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_POKEFAN_M",
+            "x": 56,
+            "y": 13,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "trainer_type": "TRAINER_TYPE_NORMAL",
+            "trainer_sight_or_berry_tree_id": "5",
+            "script": "Route103_EventScript_Miguel",
+            "flag": "0"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+            "x": 50,
+            "y": 5,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movement_range_x": 1,
+            "movement_range_y": 1,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "Route103_EventScript_ItemGuardSpec",
+            "flag": "FLAG_ITEM_ROUTE_103_GUARD_SPEC"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
+            "x": 67,
+            "y": 7,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movement_range_x": 1,
+            "movement_range_y": 1,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "EventScript_CutTree",
+            "flag": "FLAG_TEMP_12"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
+            "x": 72,
+            "y": 8,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movement_range_x": 1,
+            "movement_range_y": 1,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "EventScript_CutTree",
+            "flag": "FLAG_TEMP_13"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
+            "x": 67,
+            "y": 5,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "movement_range_x": 1,
+            "movement_range_y": 1,
+            "trainer_type": "TRAINER_TYPE_NORMAL",
+            "trainer_sight_or_berry_tree_id": "2",
+            "script": "Route103_EventScript_Rhett",
+            "flag": "0"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_MAN_5",
+            "x": 67,
+            "y": 9,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_FACE_UP",
+            "movement_range_x": 1,
+            "movement_range_y": 1,
+            "trainer_type": "TRAINER_TYPE_NORMAL",
+            "trainer_sight_or_berry_tree_id": "2",
+            "script": "Route103_EventScript_Marcos",
+            "flag": "0"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F",
+            "x": 36,
+            "y": 6,
+            "elevation": 1,
+            "movement_type": "MOVEMENT_TYPE_WALK_DOWN_AND_UP",
+            "movement_range_x": 1,
+            "movement_range_y": 3,
+            "trainer_type": "TRAINER_TYPE_NORMAL",
+            "trainer_sight_or_berry_tree_id": "5",
+            "script": "Route103_EventScript_Isabelle",
+            "flag": "0"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_SWIMMER_M",
+            "x": 36,
+            "y": 13,
+            "elevation": 1,
+            "movement_type": "MOVEMENT_TYPE_WALK_UP_AND_DOWN",
+            "movement_range_x": 1,
+            "movement_range_y": 3,
+            "trainer_type": "TRAINER_TYPE_NORMAL",
+            "trainer_sight_or_berry_tree_id": "5",
+            "script": "Route103_EventScript_Pete",
+            "flag": "0"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+            "x": 64,
+            "y": 7,
+            "elevation": 0,
+            "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movement_range_x": 1,
+            "movement_range_y": 1,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "Route103_EventScript_ItemPPUp",
+            "flag": "FLAG_ITEM_ROUTE_103_PP_UP"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_ARAUNA_POKEMON_A",
+            "x": 3,
+            "y": 9,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "0x0",
+            "flag": "0"
+          },
+          {
+            "graphics_id": "OBJ_EVENT_GFX_ARAUNA_POKEMON_B",
+            "x": 28,
+            "y": 8,
+            "elevation": 3,
+            "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "trainer_sight_or_berry_tree_id": "0",
+            "script": "0x0",
+            "flag": "0"
+          }
+        ],
+        "warp_events": [
+          {
+            "x": 45,
+            "y": 6,
+            "elevation": 0,
+            "dest_map": "MAP_ALTERING_CAVE",
+            "dest_warp_id": "0"
+          }
+        ],
+        "coord_events": [],
+        "bg_events": [
+          {
+            "type": "sign",
+            "x": 11,
+            "y": 9,
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "Route103_EventScript_RouteSign"
+          }
+        ]
+      },
+      "hashes": {
+        "data/maps/Route103/map.json": "f1ec14558592c847b7da4e5e48bd26f1311da5321090932606efc66c32acbe83",
+        "data/layouts/AraunaSulRoute103V1/map.bin": "d010d6efad22feeffc0941171515c6b96fafe343d44265b7bb3bf09a46310167",
+        "data/layouts/AraunaSulRoute103V1/border.bin": "aa298641e3346d9c7ac51454222ff057768946e61980fd82e4db65912df412fe",
+        "data/maps/Route103/scripts.inc": "bfbe31c8c8066269e25673a2b6f27eb4aedb0616aebcd34fcef93c81629a087b",
+        "data/tilesets/primary/arauna_border_route103_uivo_v1/metatiles.bin": "f519b1624f4dd83069056fb5b899647fce43073323c4a14e7377338c39005ef2",
+        "data/tilesets/primary/arauna_border_route103_uivo_v1/metatile_attributes.bin": "f567f528be21da95378f26512966b983b2aba27265a0d2a16673b4eafb458d88",
+        "data/tilesets/secondary/arauna_border_route103_uivo_v1/metatiles.bin": "28a893f45f939695ef94629b8d7780797a0422045b267e37863f3168000704a1",
+        "data/tilesets/secondary/arauna_border_route103_uivo_v1/metatile_attributes.bin": "15d91b60ee2f2af7c4d94405939e7581d14f3e190b1f1cf35439ae19440006c1"
+      },
+      "script_created_metatile_ids": [
+        159,
+        167
+      ],
+      "transitive_script_labels": [
+        "Common_EventScript_SetupRivalGfxId",
+        "Common_Movement_Delay48",
+        "Common_Movement_ExclamationMark",
+        "Common_Movement_FacePlayer",
+        "EventScript_SetupRivalGfxIdFemale",
+        "EventScript_SetupRivalGfxIdMale",
+        "ProfBirch_EventScript_MoveToLab",
+        "ProfBirch_EventScript_MoveToRoute101",
+        "ProfBirch_EventScript_MoveToRoute103",
+        "ProfBirch_EventScript_UpdateLocation",
+        "Route102_EventScript_AmyRegisterMatchCallAfterBattle",
+        "Route102_EventScript_AmyRematch",
+        "Route102_EventScript_LivRegisterMatchCallAfterBattle",
+        "Route102_EventScript_LivRematch",
+        "Route102_EventScript_MiguelRegisterMatchCallAfterBattle",
+        "Route103_EventScript_AfterBrendanBattle",
+        "Route103_EventScript_AfterMayBattle",
+        "Route103_EventScript_Amy",
+        "Route103_EventScript_Andrew",
+        "Route103_EventScript_Boy",
+        "Route103_EventScript_Daisy",
+        "Route103_EventScript_Isabelle",
+        "Route103_EventScript_Liv",
+        "Route103_EventScript_Man",
+        "Route103_EventScript_Marcos",
+        "Route103_EventScript_Miguel",
+        "Route103_EventScript_MiguelRematch",
+        "Route103_EventScript_OpenAlteringCave",
+        "Route103_EventScript_Pete",
+        "Route103_EventScript_Rhett",
+        "Route103_EventScript_Rival",
+        "Route103_EventScript_RivalBrendan",
+        "Route103_EventScript_RivalEnd",
+        "Route103_EventScript_RivalExit",
+        "Route103_EventScript_RivalExitFacingEastOrWest",
+        "Route103_EventScript_RivalExitFacingNorth",
+        "Route103_EventScript_RivalExitFacingSouth",
+        "Route103_EventScript_RivalMay",
+        "Route103_EventScript_RouteSign",
+        "Route103_EventScript_StartBrendanBattleMudkip",
+        "Route103_EventScript_StartBrendanBattleTorchic",
+        "Route103_EventScript_StartBrendanBattleTreecko",
+        "Route103_EventScript_StartMayBattleMudkip",
+        "Route103_EventScript_StartMayBattleTorchic",
+        "Route103_EventScript_StartMayBattleTreecko",
+        "Route103_MapScripts",
+        "Route103_Movement_RivalExit1",
+        "Route103_Movement_RivalExit2",
+        "Route103_Movement_RivalExitFacingNorth1",
+        "Route103_Movement_RivalExitFacingNorth2",
+        "Route103_Movement_WatchRivalExitFacingEastOrWest",
+        "Route103_Movement_WatchRivalExitFacingNorth",
+        "Route103_OnLoad",
+        "Route103_OnTransition",
+        "Route103_Text_BrendanDefeated",
+        "Route103_Text_BrendanLetsBattle",
+        "Route103_Text_BrendanRoute103Pokemon",
+        "Route103_Text_BrendanTimeToHeadBack",
+        "Route103_Text_MayDefeated",
+        "Route103_Text_MayLetsBattle",
+        "Route103_Text_MayRoute103Pokemon",
+        "Route103_Text_MayTimeToHeadBack",
+        "Route103_Text_RouteSign",
+        "Route103_Text_ShortcutToOldale",
+        "Route103_Text_ShouldHaveBroughtPotion"
+      ],
+      "own_functional_commands": [
+        "call Common_EventScript_SetupRivalGfxId",
+        "call ProfBirch_EventScript_UpdateLocation",
+        "setmetatile 45, 5, METATILE_General_CaveEntrance_Top, TRUE",
+        "setmetatile 45, 6, METATILE_General_CaveEntrance_Bottom, FALSE",
+        "applymovement LOCALID_ROUTE103_RIVAL, Common_Movement_FacePlayer",
+        "applymovement LOCALID_ROUTE103_RIVAL, Common_Movement_ExclamationMark",
+        "applymovement LOCALID_ROUTE103_RIVAL, Common_Movement_Delay48",
+        "applymovement LOCALID_ROUTE103_RIVAL, Common_Movement_FacePlayer",
+        "applymovement LOCALID_ROUTE103_RIVAL, Common_Movement_ExclamationMark",
+        "applymovement LOCALID_ROUTE103_RIVAL, Common_Movement_Delay48",
+        "goto Route103_EventScript_AfterMayBattle",
+        "goto Route103_EventScript_AfterMayBattle",
+        "goto Route103_EventScript_AfterMayBattle",
+        "goto Route103_EventScript_AfterBrendanBattle",
+        "goto Route103_EventScript_AfterBrendanBattle",
+        "goto Route103_EventScript_AfterBrendanBattle",
+        "goto Route103_EventScript_RivalExit",
+        "goto Route103_EventScript_RivalExit",
+        "applymovement LOCALID_PLAYER, Route103_Movement_WatchRivalExitFacingNorth",
+        "applymovement LOCALID_ROUTE103_RIVAL, Route103_Movement_RivalExitFacingNorth1",
+        "applymovement LOCALID_ROUTE103_RIVAL, Route103_Movement_RivalExitFacingNorth2",
+        "goto Route103_EventScript_RivalEnd",
+        "applymovement LOCALID_PLAYER, Route103_Movement_WatchRivalExitFacingEastOrWest",
+        "applymovement LOCALID_ROUTE103_RIVAL, Route103_Movement_RivalExit1",
+        "applymovement LOCALID_ROUTE103_RIVAL, Route103_Movement_RivalExit2",
+        "goto Route103_EventScript_RivalEnd",
+        "applymovement LOCALID_ROUTE103_RIVAL, Route103_Movement_RivalExit1",
+        "applymovement LOCALID_ROUTE103_RIVAL, Route103_Movement_RivalExit2",
+        "goto Route103_EventScript_RivalEnd",
+        "removeobject LOCALID_ROUTE103_RIVAL",
+        "setvar VAR_BIRCH_LAB_STATE, 4",
+        "clearflag FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_RIVAL",
+        "setflag FLAG_DEFEATED_RIVAL_ROUTE103",
+        "setvar VAR_OLDALE_RIVAL_STATE, 1",
+        "clearflag FLAG_HIDE_OLDALE_TOWN_RIVAL",
+        "special PlayerFaceTrainerAfterBattle"
+      ],
+      "flags": [
+        "FLAG_DEFEATED_RIVAL_ROUTE103",
+        "FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_RIVAL",
+        "FLAG_HIDE_OLDALE_TOWN_RIVAL",
+        "FLAG_SYS_GAME_CLEAR"
+      ],
+      "vars": [
+        "VAR_BIRCH_LAB_STATE",
+        "VAR_FACING",
+        "VAR_OLDALE_RIVAL_STATE",
+        "VAR_RESULT",
+        "VAR_STARTER_MON"
+      ]
+    }
+  },
+  "totals": {
+    "maps": 31,
+    "warp_events": 39,
+    "object_events": 68,
+    "coord_events": 2,
+    "bg_events": 76,
+    "connections": 29
+  },
+  "unchanged_perimeter": [
+    "DesertRuins",
+    "AbandonedShip_Underwater1",
+    "AbandonedShip_Underwater2",
+    "BattleFrontier_OutsideEast",
+    "Route119_WeatherInstitute_1F",
+    "Route119_WeatherInstitute_2F"
+  ],
+  "implementation_status": "Inventory only; no new cave, Dive or Safari graphics implemented."
+}

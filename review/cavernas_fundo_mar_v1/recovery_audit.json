@@ -1,0 +1,58 @@
+{
+  "main_commit": "979fb6c1b6731561f3c993efd6045a9bbf096c54",
+  "current_base_commit": "7d40f7345ab2d84b4d8710edee30cf128c346166",
+  "current_base_tree": "6c2ffd060387ea3f80b917090a091cab5826ce3b",
+  "commits_ahead_of_main": 81,
+  "bible_sha256": "366d4cbfa103fb58d8b13837fe58fdd0154c35ba8f51c0fd74f76e989a77a95d",
+  "bible_pages": 55,
+  "concept_png_occurrences": 96,
+  "unique_concept_png": 82,
+  "crc_and_images": "PASS",
+  "packages": [
+    {
+      "package": "Arauna_Sul_Pampa_V1_Completo",
+      "base": "591aeb24973622bda8d12cce60b3560cef938c00",
+      "release_tree": "f7e8573754e7d312fd0baa97c8e5d8f98b2b43a2",
+      "payload_files": 938,
+      "corrupted_files": [],
+      "different_from_current_branch": [
+        "data/layouts/layouts.json",
+        "docs/SUL_PAMPA_BORDAS_V1.md",
+        "src/arauna_border_visuals.c",
+        "src/data/tilesets/graphics.h",
+        "src/data/tilesets/headers.h",
+        "src/data/tilesets/metatiles.h",
+        "src/fldeff_cut.c",
+        "src/overworld.c",
+        "tools/arauna_maps/host_visual_selector_v2.py"
+      ]
+    },
+    {
+      "package": "Arauna_SulPampa_V11_Uivo_Norte_V1_Completo",
+      "base": "59f4c6eea2a7aa033bb10ca4e6074a0a2ec3883c",
+      "release_tree": "645da001631fbb57c476770f6077a3bfe57542b7",
+      "payload_files": 1144,
+      "corrupted_files": [],
+      "different_from_current_branch": [
+        "data/layouts/AraunaUivoRoute116V1/border.bin",
+        "data/layouts/AraunaUivoRustboroCityV1/border.bin",
+        "data/layouts/layouts.json",
+        "docs/SUL_PAMPA_V11_UIVO_NORTE_V1.md",
+        "review/uivo_norte_v1/rom_validation.json"
+      ]
+    }
+  ],
+  "checkpoint71": {
+    "same_files": 2719,
+    "missing_files": 1600,
+    "different_files": 1030,
+    "integration_evidence": "docs/INTEGRACAO_42_MAPAS.md",
+    "decision": "Preserve current branch. The old 71 overlay is an archive, not a replacement for 81 subsequent commits."
+  },
+  "post_install_changes_explained": [
+    "Route111 alternate no-tower banks regenerated",
+    "Rustboro and Route116 outer tree borders repaired",
+    "Installation report and ROM validation updated"
+  ],
+  "active_layouts_in_registry": 744
+}

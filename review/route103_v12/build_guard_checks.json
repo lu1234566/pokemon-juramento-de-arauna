@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "idempotent_conversion": true,
+  "unknown_local_edit_rejected_before_any_writes": true,
+  "source_and_gameplay_changes": "three secondary metatile files only",
+  "rom_build": "pending: ARM compiler unavailable",
+  "emulator": "pending: mGBA unavailable"
+}

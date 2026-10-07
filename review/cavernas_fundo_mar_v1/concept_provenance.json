@@ -1,0 +1,578 @@
+[
+  {
+    "archive": "Arauna_Caminhos_Internos_Cavernas_Conceituais(1).zip",
+    "path": "01_Galerias_Serra.png",
+    "sha256": "4c286ba23021391305c2aee6b251b656365a4d42539f7d0d11f284f2350304a7",
+    "canonical_copy": "Arauna_Caminhos_Internos_Cavernas_Conceituais/01_Galerias_Serra.png"
+  },
+  {
+    "archive": "Arauna_Caminhos_Internos_Cavernas_Conceituais(1).zip",
+    "path": "02_Gruta_das_Vozes.png",
+    "sha256": "caf5dcd645754fa76f365b12b5a39d735c03ab55239ededb16db2401ec2c414f",
+    "canonical_copy": "Arauna_Caminhos_Internos_Cavernas_Conceituais/02_Gruta_das_Vozes.png"
+  },
+  {
+    "archive": "Arauna_Caminhos_Internos_Cavernas_Conceituais(1).zip",
+    "path": "03_Ruinas_da_Queda.png",
+    "sha256": "671780b8f273a8ff6cf643cac926d3c7ca62255c43e017e352e1ee8d651b2ec3",
+    "canonical_copy": "Arauna_Caminhos_Internos_Cavernas_Conceituais/03_Ruinas_da_Queda.png"
+  },
+  {
+    "archive": "Arauna_Caminhos_Internos_Cavernas_Conceituais(1).zip",
+    "path": "04_Trilha_de_Brasa.png",
+    "sha256": "adb410f52ea3a655da968b644d9d59c4dc45440e632439c14a9eebeb27bdaea8",
+    "canonical_copy": "Arauna_Caminhos_Internos_Cavernas_Conceituais/04_Trilha_de_Brasa.png"
+  },
+  {
+    "archive": "Arauna_Caminhos_Internos_Cavernas_Conceituais(1).zip",
+    "path": "05_Usina_Velha.png",
+    "sha256": "8a1b9bc8f4c8007d22b59e20cf6f9e513cdab3458e9b0106de7602a68aff4d00",
+    "canonical_copy": "Arauna_Caminhos_Internos_Cavernas_Conceituais/05_Usina_Velha.png"
+  },
+  {
+    "archive": "Arauna_Caminhos_Internos_Cavernas_Conceituais(1).zip",
+    "path": "06_Navio_Perdido.png",
+    "sha256": "ee926c8bdce4d5478179fea6d6a31540abf35d36af69bdb855247eb5c86186e6",
+    "canonical_copy": "Arauna_Caminhos_Internos_Cavernas_Conceituais/06_Navio_Perdido.png"
+  },
+  {
+    "archive": "Arauna_Caminhos_Internos_Cavernas_Conceituais(1).zip",
+    "path": "07_Gruta_da_Mare_Alta.png",
+    "sha256": "178a77fafeae293aacf58197078c2cee569df7b15d69e00a883b02d26ca5b84e",
+    "canonical_copy": "Arauna_Caminhos_Internos_Cavernas_Conceituais/07_Gruta_da_Mare_Alta.png"
+  },
+  {
+    "archive": "Arauna_Caminhos_Internos_Cavernas_Conceituais(1).zip",
+    "path": "08_Gruta_da_Mare_Baixa.png",
+    "sha256": "0bd264e276ce12c0fd3f0ff707a96407f01a66d3881d80a1b44f39efe434ccef",
+    "canonical_copy": "Arauna_Caminhos_Internos_Cavernas_Conceituais/08_Gruta_da_Mare_Baixa.png"
+  },
+  {
+    "archive": "Arauna_Caminhos_Internos_Cavernas_Conceituais(1).zip",
+    "path": "09_Torre_Juramento.png",
+    "sha256": "7cda34cf5336b7bf0495badf529f4f7b99e0964b5dd6c40f979fb4670336dea2",
+    "canonical_copy": "Arauna_Caminhos_Internos_Cavernas_Conceituais/09_Torre_Juramento.png"
+  },
+  {
+    "archive": "Arauna_Caminhos_Internos_Cavernas_Conceituais(1).zip",
+    "path": "10_Gruta_da_Origem.png",
+    "sha256": "26542aafd955f577955162dc03077775a043492184539cd7333761f928427aba",
+    "canonical_copy": "Arauna_Caminhos_Internos_Cavernas_Conceituais/10_Gruta_da_Origem.png"
+  },
+  {
+    "archive": "Arauna_Caminhos_Internos_Cavernas_Conceituais(1).zip",
+    "path": "11_Esconderijo_da_Serra.png",
+    "sha256": "76ae8c9529e481735e47fc4a6f85aa42a45f9199ae2e4413dd545168d539d46c",
+    "canonical_copy": "Arauna_Caminhos_Internos_Cavernas_Conceituais/11_Esconderijo_da_Serra.png"
+  },
+  {
+    "archive": "Arauna_Caminhos_Internos_Cavernas_Conceituais(1).zip",
+    "path": "12_Arquivo_Central_Horizonte.png",
+    "sha256": "df8a06a3dcebc97c10aed7a9e98dcd78d805d5da2d62c1ab58880187d2b26260",
+    "canonical_copy": "Arauna_Caminhos_Internos_Cavernas_Conceituais/12_Arquivo_Central_Horizonte.png"
+  },
+  {
+    "archive": "Arauna_Caminhos_Internos_Cavernas_Conceituais(1).zip",
+    "path": "13_Serra_da_Cinza.png",
+    "sha256": "2454136a089f0500ff42411aafc529a68e29f4b5f678949498045b8f0d719193",
+    "canonical_copy": "Arauna_Caminhos_Internos_Cavernas_Conceituais/13_Serra_da_Cinza.png"
+  },
+  {
+    "archive": "Arauna_Caminhos_Internos_Cavernas_Conceituais(1).zip",
+    "path": "14_Memorial_dos_Nomes.png",
+    "sha256": "063b29750ccb7204cbe3e8ddc453c1e955e05a2c7f18a2c66eed79a2e8516300",
+    "canonical_copy": "Arauna_Caminhos_Internos_Cavernas_Conceituais/14_Memorial_dos_Nomes.png"
+  },
+  {
+    "archive": "Arauna_Casa_do_Protagonista_e_Laboratorio_Anahi(1).zip",
+    "path": "01_Casa_do_Protagonista_Exterior.png",
+    "sha256": "0572192a12efd904f3659209299d8b76d0eb9f0dec06c7c2b9c5a57abb690253",
+    "canonical_copy": "Arauna_Casa_do_Protagonista_e_Laboratorio_Anahi/01_Casa_do_Protagonista_Exterior.png"
+  },
+  {
+    "archive": "Arauna_Casa_do_Protagonista_e_Laboratorio_Anahi(1).zip",
+    "path": "02_Casa_do_Protagonista_Terreo.png",
+    "sha256": "70844396b3b613635c2981f2d9ca6fd6661201a1f12ee34c3fffcd359231971e",
+    "canonical_copy": "Arauna_Casa_do_Protagonista_e_Laboratorio_Anahi/02_Casa_do_Protagonista_Terreo.png"
+  },
+  {
+    "archive": "Arauna_Casa_do_Protagonista_e_Laboratorio_Anahi(1).zip",
+    "path": "03_Casa_do_Protagonista_Andar_Superior.png",
+    "sha256": "11697f117828592661414084a2e9e8774459cb39ee0cd42cbd6d013a430755f2",
+    "canonical_copy": "Arauna_Casa_do_Protagonista_e_Laboratorio_Anahi/03_Casa_do_Protagonista_Andar_Superior.png"
+  },
+  {
+    "archive": "Arauna_Casa_do_Protagonista_e_Laboratorio_Anahi(1).zip",
+    "path": "04_Laboratorio_Anahi_Exterior.png",
+    "sha256": "05ba958eaf4449469e8989314fd09334d8e99a97e147b2e94985979d304096b3",
+    "canonical_copy": "Arauna_Casa_do_Protagonista_e_Laboratorio_Anahi/04_Laboratorio_Anahi_Exterior.png"
+  },
+  {
+    "archive": "Arauna_Casa_do_Protagonista_e_Laboratorio_Anahi(1).zip",
+    "path": "05_Laboratorio_Anahi_Terreo_Area_Principal.png",
+    "sha256": "67ac7beeaeb52295cc3245a49efea1de3457703256a8a871bc9971bfe1426992",
+    "canonical_copy": "Arauna_Casa_do_Protagonista_e_Laboratorio_Anahi/05_Laboratorio_Anahi_Terreo_Area_Principal.png"
+  },
+  {
+    "archive": "Arauna_Casa_do_Protagonista_e_Laboratorio_Anahi(1).zip",
+    "path": "06_Laboratorio_Anahi_Sala_de_Pesquisa.png",
+    "sha256": "dc52a06726d8e605d7c7dc8856dd3b6ad08c59ac1139c7e75515063f54c7a318",
+    "canonical_copy": "Arauna_Casa_do_Protagonista_e_Laboratorio_Anahi/06_Laboratorio_Anahi_Sala_de_Pesquisa.png"
+  },
+  {
+    "archive": "Arauna_Casa_do_Protagonista_e_Laboratorio_Anahi(1).zip",
+    "path": "07_Laboratorio_Anahi_Sala_de_Equipamentos.png",
+    "sha256": "0604de6e368b75c59283fcc75fe49ebf867273a5430e7f940ef6bfb1dae80c88",
+    "canonical_copy": "Arauna_Casa_do_Protagonista_e_Laboratorio_Anahi/07_Laboratorio_Anahi_Sala_de_Equipamentos.png"
+  },
+  {
+    "archive": "Arauna_Casa_do_Protagonista_e_Laboratorio_Anahi(1).zip",
+    "path": "00_Concept_Board_Casa_e_Laboratorio.png",
+    "sha256": "57d7bdcaf3dcbb32a1bd2e8d68dea26e41ee37712b097d617fa1855fdd4a9114",
+    "canonical_copy": "Arauna_Casa_do_Protagonista_e_Laboratorio_Anahi/00_Concept_Board_Casa_e_Laboratorio.png"
+  },
+  {
+    "archive": "Arauna_Casas_da_Historia_e_Interiores_Conceituais(1).zip",
+    "path": "00_Montagem_Conceitual_Original.png",
+    "sha256": "50bdea27792a919b42e3954771c8088506c97c95d439edbee3c02aaeaa379597",
+    "canonical_copy": "Arauna_Casas_da_Historia_e_Interiores_Conceituais/00_Montagem_Conceitual_Original.png"
+  },
+  {
+    "archive": "Arauna_Casas_da_Historia_e_Interiores_Conceituais(1).zip",
+    "path": "01_Casas_da_Historia/07_Casa_Dupla_M_Boi_Gemeas.png",
+    "sha256": "56b5af84406f2efd93a2bcdc25f881ec3b02cead69f87cb021ca1c9a7e232bd6",
+    "canonical_copy": "Arauna_Casas_da_Historia_e_Interiores_Conceituais/01_Casas_da_Historia/07_Casa_Dupla_M_Boi_Gemeas.png"
+  },
+  {
+    "archive": "Arauna_Casas_da_Historia_e_Interiores_Conceituais(1).zip",
+    "path": "01_Casas_da_Historia/01_Casa_da_Terra_Bento.png",
+    "sha256": "1759aec4f3b870bb361e7d997e58e6731bee7d46ff786d651e473e0bf71b1208",
+    "canonical_copy": "Arauna_Casas_da_Historia_e_Interiores_Conceituais/01_Casas_da_Historia/01_Casa_da_Terra_Bento.png"
+  },
+  {
+    "archive": "Arauna_Casas_da_Historia_e_Interiores_Conceituais(1).zip",
+    "path": "01_Casas_da_Historia/03_Casa_das_Ruinas_Ivo.png",
+    "sha256": "541fb79baa68744af814f7124c8d50fc95f776bb35d1cca247bc2b7bcbd4a8a0",
+    "canonical_copy": "Arauna_Casas_da_Historia_e_Interiores_Conceituais/01_Casas_da_Historia/03_Casa_das_Ruinas_Ivo.png"
+  },
+  {
+    "archive": "Arauna_Casas_da_Historia_e_Interiores_Conceituais(1).zip",
+    "path": "01_Casas_da_Historia/06_Casa_do_Ar_Iracema.png",
+    "sha256": "bea91a0a4515107216d85d8a4e0d13d259b040aa8c1cb55f382dddf3f38bc314",
+    "canonical_copy": "Arauna_Casas_da_Historia_e_Interiores_Conceituais/01_Casas_da_Historia/06_Casa_do_Ar_Iracema.png"
+  },
+  {
+    "archive": "Arauna_Casas_da_Historia_e_Interiores_Conceituais(1).zip",
+    "path": "01_Casas_da_Historia/02_Casa_do_Pampa_Nabor.png",
+    "sha256": "d9b340abe74def2644fd7b8f3fc489125b072fa5496b87f8383fef20add56927",
+    "canonical_copy": "Arauna_Casas_da_Historia_e_Interiores_Conceituais/01_Casas_da_Historia/02_Casa_do_Pampa_Nabor.png"
+  },
+  {
+    "archive": "Arauna_Casas_da_Historia_e_Interiores_Conceituais(1).zip",
+    "path": "01_Casas_da_Historia/04_Casa_da_Brasa_Bras.png",
+    "sha256": "dc02db8739b64256425ee24305535e342a272139e1f6fc50a94d4eb5dbb8d903",
+    "canonical_copy": "Arauna_Casas_da_Historia_e_Interiores_Conceituais/01_Casas_da_Historia/04_Casa_da_Brasa_Bras.png"
+  },
+  {
+    "archive": "Arauna_Casas_da_Historia_e_Interiores_Conceituais(1).zip",
+    "path": "01_Casas_da_Historia/08_Casa_do_Sertao_Fogueira_Severino.png",
+    "sha256": "f8086c5b75845cfba9d2d61b383b30c5e4cc5dd8c3cc3ddb21630e05a24882d8",
+    "canonical_copy": "Arauna_Casas_da_Historia_e_Interiores_Conceituais/01_Casas_da_Historia/08_Casa_do_Sertao_Fogueira_Severino.png"
+  },
+  {
+    "archive": "Arauna_Casas_da_Historia_e_Interiores_Conceituais(1).zip",
+    "path": "01_Casas_da_Historia/05_Casa_do_Rio_Tiao.png",
+    "sha256": "154708865c68ac4b0b5b99d5636c6d1abeeff6b1b7e46baababeb1ba592bd3e4",
+    "canonical_copy": "Arauna_Casas_da_Historia_e_Interiores_Conceituais/01_Casas_da_Historia/05_Casa_do_Rio_Tiao.png"
+  },
+  {
+    "archive": "Arauna_Casas_da_Historia_e_Interiores_Conceituais(1).zip",
+    "path": "02_Locais_Importantes/02_Laboratorio_Anahi.png",
+    "sha256": "559ba517674b7c81c76efebf05175890bb4d89421045196c3b0941ff49982b40",
+    "canonical_copy": "Arauna_Casas_da_Historia_e_Interiores_Conceituais/02_Locais_Importantes/02_Laboratorio_Anahi.png"
+  },
+  {
+    "archive": "Arauna_Casas_da_Historia_e_Interiores_Conceituais(1).zip",
+    "path": "02_Locais_Importantes/01_Casa_do_Protagonista.png",
+    "sha256": "c3751f7ca1d7af859697ddbfffea42e1337c66aa5b29f1bebfcea13e44673598",
+    "canonical_copy": "Arauna_Casas_da_Historia_e_Interiores_Conceituais/02_Locais_Importantes/01_Casa_do_Protagonista.png"
+  },
+  {
+    "archive": "Arauna_Casas_da_Historia_e_Interiores_Conceituais(1).zip",
+    "path": "02_Locais_Importantes/03_Centro_Comunitario.png",
+    "sha256": "404db091feaac1390e568b38c1b2482ab4e174e0018663992bb19a12b83a5d51",
+    "canonical_copy": "Arauna_Casas_da_Historia_e_Interiores_Conceituais/02_Locais_Importantes/03_Centro_Comunitario.png"
+  },
+  {
+    "archive": "Arauna_Casas_da_Historia_e_Interiores_Conceituais(1).zip",
+    "path": "02_Locais_Importantes/05_Casa_de_Ciro.png",
+    "sha256": "0a725b90d93154a9e3ae77d2de9e6474e6119cbf061296be79feb695891ea478",
+    "canonical_copy": "Arauna_Casas_da_Historia_e_Interiores_Conceituais/02_Locais_Importantes/05_Casa_de_Ciro.png"
+  },
+  {
+    "archive": "Arauna_Casas_da_Historia_e_Interiores_Conceituais(1).zip",
+    "path": "02_Locais_Importantes/06_Casa_da_Fogueira_Exterior.png",
+    "sha256": "c6950aa8a24c7a6e8ec074ab529338bbc55454582b0d9b9933dc22d7411b7114",
+    "canonical_copy": "Arauna_Casas_da_Historia_e_Interiores_Conceituais/02_Locais_Importantes/06_Casa_da_Fogueira_Exterior.png"
+  },
+  {
+    "archive": "Arauna_Casas_da_Historia_e_Interiores_Conceituais(1).zip",
+    "path": "02_Locais_Importantes/07_Sede_da_Liga_Interior.png",
+    "sha256": "b91cd86b3781c6083015ece4003a9f44a223724f21f3acfba6461a21f5c24fab",
+    "canonical_copy": "Arauna_Casas_da_Historia_e_Interiores_Conceituais/02_Locais_Importantes/07_Sede_da_Liga_Interior.png"
+  },
+  {
+    "archive": "Arauna_Casas_da_Historia_e_Interiores_Conceituais(1).zip",
+    "path": "02_Locais_Importantes/04_Quarto_Memorial_Dona_Zila.png",
+    "sha256": "8f48f6bb5494dd5b753637ebb5265c9637faf4dfa1f66dd14f129928e4694117",
+    "canonical_copy": "Arauna_Casas_da_Historia_e_Interiores_Conceituais/02_Locais_Importantes/04_Quarto_Memorial_Dona_Zila.png"
+  },
+  {
+    "archive": "Arauna_Cidades_Conceituais_Individuais(1).zip",
+    "path": "01_Vila_Amanhecer.png",
+    "sha256": "8e1cea81a6418487ecc34d91296d5423fea5d2bdfc7efe98214cec4aafedb16c",
+    "canonical_copy": "Arauna_Cidades_Conceituais_Individuais/01_Vila_Amanhecer.png"
+  },
+  {
+    "archive": "Arauna_Cidades_Conceituais_Individuais(1).zip",
+    "path": "02_Porto_do_Sal.png",
+    "sha256": "4667fd07fff18cd4df3417814bcda78456cf93b40bc083bb4bc0bcb76a35f619",
+    "canonical_copy": "Arauna_Cidades_Conceituais_Individuais/02_Porto_do_Sal.png"
+  },
+  {
+    "archive": "Arauna_Cidades_Conceituais_Individuais(1).zip",
+    "path": "03_MBoi.png",
+    "sha256": "fd48d1b51275e05ff031fb99e373a4a2c08e3cbb6121fda01eb37fce66b7c2b3",
+    "canonical_copy": "Arauna_Cidades_Conceituais_Individuais/03_MBoi.png"
+  },
+  {
+    "archive": "Arauna_Cidades_Conceituais_Individuais(1).zip",
+    "path": "04_Serra_do_Uivo.png",
+    "sha256": "80c8ad3a0fc7fead0a6b5483c7d71ec23bcf993bfa408e6190255448152f714a",
+    "canonical_copy": "Arauna_Cidades_Conceituais_Individuais/04_Serra_do_Uivo.png"
+  },
+  {
+    "archive": "Arauna_Cidades_Conceituais_Individuais(1).zip",
+    "path": "05_Casa_da_Cinza.png",
+    "sha256": "1327faf93202198b022593b21f15ba89dc05994d50723831f9c1fcf424cf5440",
+    "canonical_copy": "Arauna_Cidades_Conceituais_Individuais/05_Casa_da_Cinza.png"
+  },
+  {
+    "archive": "Arauna_Cidades_Conceituais_Individuais(1).zip",
+    "path": "06_Vale_das_Aguas.png",
+    "sha256": "33f1fc34633ff3192dcc6b537ad05b8ec572241a0262d674a58807ac38bbb91b",
+    "canonical_copy": "Arauna_Cidades_Conceituais_Individuais/06_Vale_das_Aguas.png"
+  },
+  {
+    "archive": "Arauna_Cidades_Conceituais_Individuais(1).zip",
+    "path": "07_Aldeia_Jatoba.png",
+    "sha256": "8434502be37fdecf06ad4d6a903c5a7defaf62bf63a81594c927f4cf84d06578",
+    "canonical_copy": "Arauna_Cidades_Conceituais_Individuais/07_Aldeia_Jatoba.png"
+  },
+  {
+    "archive": "Arauna_Cidades_Conceituais_Individuais(1).zip",
+    "path": "08_Lume_Verde.png",
+    "sha256": "fdd1c83cd2b6392f1992ab0e38360a3c5ec52a1b51c805df3f555240ad6757ed",
+    "canonical_copy": "Arauna_Cidades_Conceituais_Individuais/08_Lume_Verde.png"
+  },
+  {
+    "archive": "Arauna_Cidades_Conceituais_Individuais(1).zip",
+    "path": "09_Trilha_do_Ouro.png",
+    "sha256": "718a560369319765d2b2597512e79c7ff260ce7db66e32dfaa3749f8731de9b0",
+    "canonical_copy": "Arauna_Cidades_Conceituais_Individuais/09_Trilha_do_Ouro.png"
+  },
+  {
+    "archive": "Arauna_Cidades_Conceituais_Individuais(1).zip",
+    "path": "10_Cidade_Arua.png",
+    "sha256": "710c017f4b8373912f634217a0f49b257f9c5ea56bebdc00817810c8c6b78f52",
+    "canonical_copy": "Arauna_Cidades_Conceituais_Individuais/10_Cidade_Arua.png"
+  },
+  {
+    "archive": "Arauna_Cidades_Conceituais_Individuais(1).zip",
+    "path": "11_Pontal_das_Correntes.png",
+    "sha256": "e35bed076cb7627fb53005fed31d9928b724344eef048b23c620f59265f920da",
+    "canonical_copy": "Arauna_Cidades_Conceituais_Individuais/11_Pontal_das_Correntes.png"
+  },
+  {
+    "archive": "Arauna_Cidades_Conceituais_Individuais(1).zip",
+    "path": "12_Pedra_da_Onca.png",
+    "sha256": "3f03f42e5ba72e4af28a58e2f74de0826b5fd44239aa659d6745c2278fafe97f",
+    "canonical_copy": "Arauna_Cidades_Conceituais_Individuais/12_Pedra_da_Onca.png"
+  },
+  {
+    "archive": "Arauna_Cidades_Conceituais_Individuais(1).zip",
+    "path": "13_Refugio_das_Nuvens.png",
+    "sha256": "9cd94fa03949b9660939f04c2fffd73cac08a9b5527bb1972ed8f60c703c671a",
+    "canonical_copy": "Arauna_Cidades_Conceituais_Individuais/13_Refugio_das_Nuvens.png"
+  },
+  {
+    "archive": "Arauna_Cidades_Conceituais_Individuais(1).zip",
+    "path": "14_Bravamar.png",
+    "sha256": "cef8d64718e4b3aeb2aa8555f3c0195e0a92cb3cd70b4448a23b131155d60403",
+    "canonical_copy": "Arauna_Cidades_Conceituais_Individuais/14_Bravamar.png"
+  },
+  {
+    "archive": "Arauna_Cidades_Conceituais_Individuais(1).zip",
+    "path": "15_Cidade_das_Raizes.png",
+    "sha256": "6a9306e56dc127c2de70983d1267895b928a7cf56968666269077394bc5e9131",
+    "canonical_copy": "Arauna_Cidades_Conceituais_Individuais/15_Cidade_das_Raizes.png"
+  },
+  {
+    "archive": "Arauna_Cidades_Conceituais_Individuais(1).zip",
+    "path": "16_Ever_Grande_Liga.png",
+    "sha256": "3c6457251e2870f71641354d7d541ad43b5332d135aec75ef083ce4b925fb0a0",
+    "canonical_copy": "Arauna_Cidades_Conceituais_Individuais/16_Ever_Grande_Liga.png"
+  },
+  {
+    "archive": "Arauna_Locais_Narrativos_Dedicados(1).zip",
+    "path": "01_Primeira_Camara_Primeiro_Elo.png",
+    "sha256": "a6de6f2d1b572b0c1043fe8627dea2195c8e37b6b14c98281558d3510f03cb68",
+    "canonical_copy": "Arauna_Locais_Narrativos_Dedicados/01_Primeira_Camara_Primeiro_Elo.png"
+  },
+  {
+    "archive": "Arauna_Locais_Narrativos_Dedicados(1).zip",
+    "path": "02_Casa_da_Mare_Porto_das_Redes.png",
+    "sha256": "42e7f0223e228cd0673c653aa361f71fcc31b390d43a4765563cdc1c586d1d16",
+    "canonical_copy": "Arauna_Locais_Narrativos_Dedicados/02_Casa_da_Mare_Porto_das_Redes.png"
+  },
+  {
+    "archive": "Arauna_Locais_Narrativos_Dedicados(1).zip",
+    "path": "03_Casa_do_Uivo_Serra_do_Uivo.png",
+    "sha256": "46a6e751126f5aed745331083c3f25ebec7274288b045bd701ba15c8e36885d4",
+    "canonical_copy": "Arauna_Locais_Narrativos_Dedicados/03_Casa_do_Uivo_Serra_do_Uivo.png"
+  },
+  {
+    "archive": "Arauna_Locais_Narrativos_Dedicados(1).zip",
+    "path": "04_Casa_da_Fogueira_Encruzilhada_Central.png",
+    "sha256": "a2d74a7506d2c39afb1cb12a102cc08c0bfd364f37fb32e26a7e20403d3f8f98",
+    "canonical_copy": "Arauna_Locais_Narrativos_Dedicados/04_Casa_da_Fogueira_Encruzilhada_Central.png"
+  },
+  {
+    "archive": "Arauna_Locais_Narrativos_Dedicados(1).zip",
+    "path": "05_Torre_do_Ruido.png",
+    "sha256": "3c262bc82257cc1f5743562202af606b6f2b17dea6b7169c7caa86d1d4f19cbc",
+    "canonical_copy": "Arauna_Locais_Narrativos_Dedicados/05_Torre_do_Ruido.png"
+  },
+  {
+    "archive": "Arauna_Locais_Narrativos_Dedicados(1).zip",
+    "path": "06_Liga_de_Arauna_Caminho_das_Quatro_Vozes.png",
+    "sha256": "9c9c7dd0ee0b84328e77ec3be773d95edbee1262c8a361d9bea36156f05899e7",
+    "canonical_copy": "Arauna_Locais_Narrativos_Dedicados/06_Liga_de_Arauna_Caminho_das_Quatro_Vozes.png"
+  },
+  {
+    "archive": "Arauna_Locais_Narrativos_Dedicados(1).zip",
+    "path": "07_Casa_de_Ciro.png",
+    "sha256": "a34f8bd0e5b6e7ff1ddc24f4434c3c5a735634c8d35c92d0ed0f412ebaaba3f8",
+    "canonical_copy": "Arauna_Locais_Narrativos_Dedicados/07_Casa_de_Ciro.png"
+  },
+  {
+    "archive": "Arauna_Locais_Narrativos_Dedicados(1).zip",
+    "path": "08_Museu_das_Ruinas_das_Missoes.png",
+    "sha256": "124e3d38da35ffcb99ed597f2e8a0469e79f94eee0474eac90b2be93897e9812",
+    "canonical_copy": "Arauna_Locais_Narrativos_Dedicados/08_Museu_das_Ruinas_das_Missoes.png"
+  },
+  {
+    "archive": "Arauna_Locais_Narrativos_Dedicados(1).zip",
+    "path": "09_Arquivo_Central_Horizonte.png",
+    "sha256": "0ebae6171fbb163e6a945bab2f607b568143cf62c73c12c965235baf7fced787",
+    "canonical_copy": "Arauna_Locais_Narrativos_Dedicados/09_Arquivo_Central_Horizonte.png"
+  },
+  {
+    "archive": "Arauna_Locais_Narrativos_Dedicados(1).zip",
+    "path": "10_Centro_Espacial_Missoes_do_Ceu.png",
+    "sha256": "4b9160f7df0c3a1709cb887a79ba00aad9c16a13ca38746e31179eba475cc3cb",
+    "canonical_copy": "Arauna_Locais_Narrativos_Dedicados/10_Centro_Espacial_Missoes_do_Ceu.png"
+  },
+  {
+    "archive": "Arauna_Locais_Narrativos_Dedicados(1).zip",
+    "path": "11_Memorial_dos_Nomes.png",
+    "sha256": "3779ce4a05f6ddee16c72f4883252be61253d8761609b8e023eeebaf59c59fad",
+    "canonical_copy": "Arauna_Locais_Narrativos_Dedicados/11_Memorial_dos_Nomes.png"
+  },
+  {
+    "archive": "Arauna_Locais_Narrativos_Dedicados(1).zip",
+    "path": "00_Prancha_Completa.png",
+    "sha256": "e3fd8df8009e64640baa4b391ee7a9c2b45d2d30831852c254fb5eef365e53d6",
+    "canonical_copy": "Arauna_Locais_Narrativos_Dedicados/00_Prancha_Completa.png"
+  },
+  {
+    "archive": "Arauna_Rotas_e_Cavernas_Conceituais(1).zip",
+    "path": "02_Caminhos_Internos/09_Torre_Juramento.png",
+    "sha256": "7cda34cf5336b7bf0495badf529f4f7b99e0964b5dd6c40f979fb4670336dea2",
+    "canonical_copy": "Arauna_Caminhos_Internos_Cavernas_Conceituais/09_Torre_Juramento.png"
+  },
+  {
+    "archive": "Arauna_Rotas_e_Cavernas_Conceituais(1).zip",
+    "path": "02_Caminhos_Internos/06_Navio_Perdido.png",
+    "sha256": "ee926c8bdce4d5478179fea6d6a31540abf35d36af69bdb855247eb5c86186e6",
+    "canonical_copy": "Arauna_Caminhos_Internos_Cavernas_Conceituais/06_Navio_Perdido.png"
+  },
+  {
+    "archive": "Arauna_Rotas_e_Cavernas_Conceituais(1).zip",
+    "path": "02_Caminhos_Internos/05_Usina_Velha.png",
+    "sha256": "8a1b9bc8f4c8007d22b59e20cf6f9e513cdab3458e9b0106de7602a68aff4d00",
+    "canonical_copy": "Arauna_Caminhos_Internos_Cavernas_Conceituais/05_Usina_Velha.png"
+  },
+  {
+    "archive": "Arauna_Rotas_e_Cavernas_Conceituais(1).zip",
+    "path": "02_Caminhos_Internos/12_Arquivo_Central_Horizonte.png",
+    "sha256": "df8a06a3dcebc97c10aed7a9e98dcd78d805d5da2d62c1ab58880187d2b26260",
+    "canonical_copy": "Arauna_Caminhos_Internos_Cavernas_Conceituais/12_Arquivo_Central_Horizonte.png"
+  },
+  {
+    "archive": "Arauna_Rotas_e_Cavernas_Conceituais(1).zip",
+    "path": "02_Caminhos_Internos/03_Ruinas_da_Queda.png",
+    "sha256": "671780b8f273a8ff6cf643cac926d3c7ca62255c43e017e352e1ee8d651b2ec3",
+    "canonical_copy": "Arauna_Caminhos_Internos_Cavernas_Conceituais/03_Ruinas_da_Queda.png"
+  },
+  {
+    "archive": "Arauna_Rotas_e_Cavernas_Conceituais(1).zip",
+    "path": "02_Caminhos_Internos/14_Memorial_dos_Nomes.png",
+    "sha256": "063b29750ccb7204cbe3e8ddc453c1e955e05a2c7f18a2c66eed79a2e8516300",
+    "canonical_copy": "Arauna_Caminhos_Internos_Cavernas_Conceituais/14_Memorial_dos_Nomes.png"
+  },
+  {
+    "archive": "Arauna_Rotas_e_Cavernas_Conceituais(1).zip",
+    "path": "02_Caminhos_Internos/04_Trilha_de_Brasa.png",
+    "sha256": "adb410f52ea3a655da968b644d9d59c4dc45440e632439c14a9eebeb27bdaea8",
+    "canonical_copy": "Arauna_Caminhos_Internos_Cavernas_Conceituais/04_Trilha_de_Brasa.png"
+  },
+  {
+    "archive": "Arauna_Rotas_e_Cavernas_Conceituais(1).zip",
+    "path": "02_Caminhos_Internos/10_Gruta_da_Origem.png",
+    "sha256": "26542aafd955f577955162dc03077775a043492184539cd7333761f928427aba",
+    "canonical_copy": "Arauna_Caminhos_Internos_Cavernas_Conceituais/10_Gruta_da_Origem.png"
+  },
+  {
+    "archive": "Arauna_Rotas_e_Cavernas_Conceituais(1).zip",
+    "path": "02_Caminhos_Internos/08_Gruta_da_Mare_Baixa.png",
+    "sha256": "0bd264e276ce12c0fd3f0ff707a96407f01a66d3881d80a1b44f39efe434ccef",
+    "canonical_copy": "Arauna_Caminhos_Internos_Cavernas_Conceituais/08_Gruta_da_Mare_Baixa.png"
+  },
+  {
+    "archive": "Arauna_Rotas_e_Cavernas_Conceituais(1).zip",
+    "path": "02_Caminhos_Internos/01_Galerias_Serra.png",
+    "sha256": "4c286ba23021391305c2aee6b251b656365a4d42539f7d0d11f284f2350304a7",
+    "canonical_copy": "Arauna_Caminhos_Internos_Cavernas_Conceituais/01_Galerias_Serra.png"
+  },
+  {
+    "archive": "Arauna_Rotas_e_Cavernas_Conceituais(1).zip",
+    "path": "02_Caminhos_Internos/02_Gruta_das_Vozes.png",
+    "sha256": "caf5dcd645754fa76f365b12b5a39d735c03ab55239ededb16db2401ec2c414f",
+    "canonical_copy": "Arauna_Caminhos_Internos_Cavernas_Conceituais/02_Gruta_das_Vozes.png"
+  },
+  {
+    "archive": "Arauna_Rotas_e_Cavernas_Conceituais(1).zip",
+    "path": "02_Caminhos_Internos/07_Gruta_da_Mare_Alta.png",
+    "sha256": "178a77fafeae293aacf58197078c2cee569df7b15d69e00a883b02d26ca5b84e",
+    "canonical_copy": "Arauna_Caminhos_Internos_Cavernas_Conceituais/07_Gruta_da_Mare_Alta.png"
+  },
+  {
+    "archive": "Arauna_Rotas_e_Cavernas_Conceituais(1).zip",
+    "path": "02_Caminhos_Internos/13_Serra_da_Cinza.png",
+    "sha256": "2454136a089f0500ff42411aafc529a68e29f4b5f678949498045b8f0d719193",
+    "canonical_copy": "Arauna_Caminhos_Internos_Cavernas_Conceituais/13_Serra_da_Cinza.png"
+  },
+  {
+    "archive": "Arauna_Rotas_e_Cavernas_Conceituais(1).zip",
+    "path": "02_Caminhos_Internos/11_Esconderijo_da_Serra.png",
+    "sha256": "76ae8c9529e481735e47fc4a6f85aa42a45f9199ae2e4413dd545168d539d46c",
+    "canonical_copy": "Arauna_Caminhos_Internos_Cavernas_Conceituais/11_Esconderijo_da_Serra.png"
+  },
+  {
+    "archive": "Arauna_Rotas_e_Cavernas_Conceituais(1).zip",
+    "path": "01_Rotas_de_Superficie/10_Rota_116_Corredor_de_Mineracao.png",
+    "sha256": "a4483ce5613bddd476f0ac750be923076b6712b8d201328f416fd4f1ce6b00b3",
+    "canonical_copy": "Arauna_Rotas_e_Cavernas_Conceituais/01_Rotas_de_Superficie/10_Rota_116_Corredor_de_Mineracao.png"
+  },
+  {
+    "archive": "Arauna_Rotas_e_Cavernas_Conceituais(1).zip",
+    "path": "01_Rotas_de_Superficie/11_Rota_117_Campos_Cultivados.png",
+    "sha256": "42ce1e959278ef0ceb032f78286f792ce11c9bdf14d3a1cd99e056bbbc967a61",
+    "canonical_copy": "Arauna_Rotas_e_Cavernas_Conceituais/01_Rotas_de_Superficie/11_Rota_117_Campos_Cultivados.png"
+  },
+  {
+    "archive": "Arauna_Rotas_e_Cavernas_Conceituais(1).zip",
+    "path": "01_Rotas_de_Superficie/16_Estrada_do_Juramento_Chegada_a_Liga.png",
+    "sha256": "d1c4d35685eae7ad960f1e9d393bf3cc492af41c3730c7e4674250d74a8c7fb9",
+    "canonical_copy": "Arauna_Rotas_e_Cavernas_Conceituais/01_Rotas_de_Superficie/16_Estrada_do_Juramento_Chegada_a_Liga.png"
+  },
+  {
+    "archive": "Arauna_Rotas_e_Cavernas_Conceituais(1).zip",
+    "path": "01_Rotas_de_Superficie/03_Rotas_105-109_Arco_Costeiro.png",
+    "sha256": "604c7f0db1d9aea68732749eb20f2bcfe7b4a5797121f33ec3ea0f0d24de129f",
+    "canonical_copy": "Arauna_Rotas_e_Cavernas_Conceituais/01_Rotas_de_Superficie/03_Rotas_105-109_Arco_Costeiro.png"
+  },
+  {
+    "archive": "Arauna_Rotas_e_Cavernas_Conceituais(1).zip",
+    "path": "01_Rotas_de_Superficie/14_Rotas_127-131_Oceano_Profundo.png",
+    "sha256": "9632a026557c8764b02281c98e42fdd8dffbd9d519aa07528ea8cc582fca1bf5",
+    "canonical_copy": "Arauna_Rotas_e_Cavernas_Conceituais/01_Rotas_de_Superficie/14_Rotas_127-131_Oceano_Profundo.png"
+  },
+  {
+    "archive": "Arauna_Rotas_e_Cavernas_Conceituais(1).zip",
+    "path": "01_Rotas_de_Superficie/07_Rota_113_Campo_de_Cinzas.png",
+    "sha256": "d27a115094f596cdeff138b3e422ce94107e240763038c858fa833fba3dc86d7",
+    "canonical_copy": "Arauna_Rotas_e_Cavernas_Conceituais/01_Rotas_de_Superficie/07_Rota_113_Campo_de_Cinzas.png"
+  },
+  {
+    "archive": "Arauna_Rotas_e_Cavernas_Conceituais(1).zip",
+    "path": "01_Rotas_de_Superficie/05_Rota_111_Semiarido_Deserto_Serra.png",
+    "sha256": "6bd781af2b143812439bee785c83c4f3809c5a3d8e185c50eb63dfe8b33b750f",
+    "canonical_copy": "Arauna_Rotas_e_Cavernas_Conceituais/01_Rotas_de_Superficie/05_Rota_111_Semiarido_Deserto_Serra.png"
+  },
+  {
+    "archive": "Arauna_Rotas_e_Cavernas_Conceituais(1).zip",
+    "path": "01_Rotas_de_Superficie/08_Rota_114_Vale_de_Transicao.png",
+    "sha256": "86ed5a1f3dfb809a6b2198867bc1a3405c5ba5afb37afac515155419a2161de1",
+    "canonical_copy": "Arauna_Rotas_e_Cavernas_Conceituais/01_Rotas_de_Superficie/08_Rota_114_Vale_de_Transicao.png"
+  },
+  {
+    "archive": "Arauna_Rotas_e_Cavernas_Conceituais(1).zip",
+    "path": "01_Rotas_de_Superficie/15_Rotas_132-134_Correntes_Maritimas.png",
+    "sha256": "2e9388cdc56655d81a7f199ee074ab0021a2646cffbb4e5d1c3f0cf99add014f",
+    "canonical_copy": "Arauna_Rotas_e_Cavernas_Conceituais/01_Rotas_de_Superficie/15_Rotas_132-134_Correntes_Maritimas.png"
+  },
+  {
+    "archive": "Arauna_Rotas_e_Cavernas_Conceituais(1).zip",
+    "path": "01_Rotas_de_Superficie/09_Rota_115_Costa_Serrana.png",
+    "sha256": "a70d7b2e2b0748a20eb789d454ab34e67fef0c7afc86eaa4edf3b7b5816e8112",
+    "canonical_copy": "Arauna_Rotas_e_Cavernas_Conceituais/01_Rotas_de_Superficie/09_Rota_115_Costa_Serrana.png"
+  },
+  {
+    "archive": "Arauna_Rotas_e_Cavernas_Conceituais(1).zip",
+    "path": "01_Rotas_de_Superficie/13_Rotas_124-126_Arquipelago.png",
+    "sha256": "2cf5c13a3fadddece0eb1c8bb2520609cc32f8041d81ad4332edcc2bbe8912d3",
+    "canonical_copy": "Arauna_Rotas_e_Cavernas_Conceituais/01_Rotas_de_Superficie/13_Rotas_124-126_Arquipelago.png"
+  },
+  {
+    "archive": "Arauna_Rotas_e_Cavernas_Conceituais(1).zip",
+    "path": "01_Rotas_de_Superficie/04_Rota_110_Mangue_Estrada_Ciclovia.png",
+    "sha256": "651c69e63049bf735fd157257a6cc97051b1fa1e3a2704850f34c1ad956ac0df",
+    "canonical_copy": "Arauna_Rotas_e_Cavernas_Conceituais/01_Rotas_de_Superficie/04_Rota_110_Mangue_Estrada_Ciclovia.png"
+  },
+  {
+    "archive": "Arauna_Rotas_e_Cavernas_Conceituais(1).zip",
+    "path": "01_Rotas_de_Superficie/02_Rota_104_Transicao_Mata_da_Espera.png",
+    "sha256": "5f6116c56a72d61426dc36388300982d554c99ee195a4c8d87841f14bdbbec01",
+    "canonical_copy": "Arauna_Rotas_e_Cavernas_Conceituais/01_Rotas_de_Superficie/02_Rota_104_Transicao_Mata_da_Espera.png"
+  },
+  {
+    "archive": "Arauna_Rotas_e_Cavernas_Conceituais(1).zip",
+    "path": "01_Rotas_de_Superficie/01_Rotas_101-103_Sul_de_Arauna.png",
+    "sha256": "10ec01a7a983f15320c1c09a9955c910d4ab6de3a3b97a13908ceaa9b150ecec",
+    "canonical_copy": "Arauna_Rotas_e_Cavernas_Conceituais/01_Rotas_de_Superficie/01_Rotas_101-103_Sul_de_Arauna.png"
+  },
+  {
+    "archive": "Arauna_Rotas_e_Cavernas_Conceituais(1).zip",
+    "path": "01_Rotas_de_Superficie/12_Rotas_118-123_Centro_Norte_Tropical.png",
+    "sha256": "3068d65a5953d19a78358610b62e44455743842090a253e7847ed60e19ac4fd7",
+    "canonical_copy": "Arauna_Rotas_e_Cavernas_Conceituais/01_Rotas_de_Superficie/12_Rotas_118-123_Centro_Norte_Tropical.png"
+  },
+  {
+    "archive": "Arauna_Rotas_e_Cavernas_Conceituais(1).zip",
+    "path": "01_Rotas_de_Superficie/06_Rota_112_Base_Vulcanica.png",
+    "sha256": "76478f6b6cf381fc25b523e9a7a5bc6491d87b092ac95c28704399f70f8ddf45",
+    "canonical_copy": "Arauna_Rotas_e_Cavernas_Conceituais/01_Rotas_de_Superficie/06_Rota_112_Base_Vulcanica.png"
+  }
+]
