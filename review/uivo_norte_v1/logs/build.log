@@ -1,0 +1,880 @@
+Region-map Arauna names: 0 changed; 30 verified.
+English-only policy: OK (128 approved English renderers in locked order; 106 final transactional overlay files; 37537 visible strings scanned, no Portuguese)
+Arauna canonical visible coverage: OK (16/16 stages; 100%; 128 English renderers; 346 final-gap runtime text blocks covered; 40 final-gap source files transactional).
+widest contest_strings.inc line vanilla renders: 144px
+widest item_descriptions.h line vanilla renders: 102px
+widest move_descriptions.h line vanilla renders: 147px
+widest line vanilla renders: 208px  "If a POKéMON knew how to go underwater,"
+move descriptions: OK (381 moves, each with its own text)
+text width: OK (575 script files, nothing past 208px)
+tools/mapjson/mapjson layouts emerald data/layouts/layouts.json data/layouts include/constants
+tools/mapjson/mapjson event_constants emerald <MAP_JSONS> include/constants/map_event_ids.h
+tools/jsonproc/jsonproc src/data/region_map/region_map_sections.json src/data/region_map/region_map_sections.json.txt src/data/region_map/region_map_entries.h
+tools/jsonproc/jsonproc src/data/region_map/region_map_sections.json src/data/region_map/region_map_sections.constants.json.txt include/constants/region_map_sections.h
+tools/scaninc/scaninc -M build/arauna-en/modern/data/mystery_gift.d -g build/arauna-en/assets -I include -I "" data/mystery_gift.s
+tools/mapjson/mapjson map emerald data/maps/Route115/map.json data/layouts/layouts.json data/maps/Route115
+tools/mapjson/mapjson map emerald data/maps/Route116/map.json data/layouts/layouts.json data/maps/Route116
+tools/mapjson/mapjson map emerald data/maps/RustboroCity/map.json data/layouts/layouts.json data/maps/RustboroCity
+tools/scaninc/scaninc -M build/arauna-en/modern/data/event_scripts.d -g build/arauna-en/assets -I include -I "" data/event_scripts.s
+tools/scaninc/scaninc -M build/arauna-en/modern/src/wild_encounter.d -g build/arauna-en/assets -I include -I tools/agbcc/include src/wild_encounter.c
+tools/scaninc/scaninc -M build/arauna-en/modern/src/union_room_player_avatar.d -g build/arauna-en/assets -I include -I tools/agbcc/include src/union_room_player_avatar.c
+tools/scaninc/scaninc -M build/arauna-en/modern/src/tv.d -g build/arauna-en/assets -I include -I tools/agbcc/include src/tv.c
+tools/scaninc/scaninc -M build/arauna-en/modern/src/trainer_see.d -g build/arauna-en/assets -I include -I tools/agbcc/include src/trainer_see.c
+tools/scaninc/scaninc -M build/arauna-en/modern/src/trainer_hill.d -g build/arauna-en/assets -I include -I tools/agbcc/include src/trainer_hill.c
+tools/scaninc/scaninc -M build/arauna-en/modern/src/trade.d -g build/arauna-en/assets -I include -I tools/agbcc/include src/trade.c
+tools/scaninc/scaninc -M build/arauna-en/modern/src/tilesets.d -g build/arauna-en/assets -I include -I tools/agbcc/include src/tilesets.c
+tools/scaninc/scaninc -M build/arauna-en/modern/src/secret_base.d -g build/arauna-en/assets -I include -I tools/agbcc/include src/secret_base.c
+tools/scaninc/scaninc -M build/arauna-en/modern/src/script_movement.d -g build/arauna-en/assets -I include -I tools/agbcc/include src/script_movement.c
+tools/scaninc/scaninc -M build/arauna-en/modern/src/script.d -g build/arauna-en/assets -I include -I tools/agbcc/include src/script.c
+tools/scaninc/scaninc -M build/arauna-en/modern/src/scrcmd.d -g build/arauna-en/assets -I include -I tools/agbcc/include src/scrcmd.c
+tools/scaninc/scaninc -M build/arauna-en/modern/src/rotating_tile_puzzle.d -g build/arauna-en/assets -I include -I tools/agbcc/include src/rotating_tile_puzzle.c
+tools/scaninc/scaninc -M build/arauna-en/modern/src/region_map.d -g build/arauna-en/assets -I include -I tools/agbcc/include src/region_map.c
+tools/scaninc/scaninc -M build/arauna-en/modern/src/pokenav_region_map.d -g build/arauna-en/assets -I include -I tools/agbcc/include src/pokenav_region_map.c
+tools/scaninc/scaninc -M build/arauna-en/modern/src/pokenav_match_call_gfx.d -g build/arauna-en/assets -I include -I tools/agbcc/include src/pokenav_match_call_gfx.c
+tools/scaninc/scaninc -M build/arauna-en/modern/src/pokenav_match_call_data.d -g build/arauna-en/assets -I include -I tools/agbcc/include src/pokenav_match_call_data.c
+tools/scaninc/scaninc -M build/arauna-en/modern/src/pokemon_summary_screen.d -g build/arauna-en/assets -I include -I tools/agbcc/include src/pokemon_summary_screen.c
+tools/scaninc/scaninc -M build/arauna-en/modern/src/pokemon.d -g build/arauna-en/assets -I include -I tools/agbcc/include src/pokemon.c
+tools/scaninc/scaninc -M build/arauna-en/modern/src/pokedex_area_screen.d -g build/arauna-en/assets -I include -I tools/agbcc/include src/pokedex_area_screen.c
+tools/scaninc/scaninc -M build/arauna-en/modern/src/overworld.d -g build/arauna-en/assets -I include -I tools/agbcc/include src/overworld.c
+tools/scaninc/scaninc -M build/arauna-en/modern/src/naming_screen.d -g build/arauna-en/assets -I include -I tools/agbcc/include src/naming_screen.c
+tools/scaninc/scaninc -M build/arauna-en/modern/src/mirage_tower.d -g build/arauna-en/assets -I include -I tools/agbcc/include src/mirage_tower.c
+tools/scaninc/scaninc -M build/arauna-en/modern/src/mauville_old_man.d -g build/arauna-en/assets -I include -I tools/agbcc/include src/mauville_old_man.c
+tools/scaninc/scaninc -M build/arauna-en/modern/src/match_call.d -g build/arauna-en/assets -I include -I tools/agbcc/include src/match_call.c
+tools/scaninc/scaninc -M build/arauna-en/modern/src/map_name_popup.d -g build/arauna-en/assets -I include -I tools/agbcc/include src/map_name_popup.c
+tools/scaninc/scaninc -M build/arauna-en/modern/src/lilycove_lady.d -g build/arauna-en/assets -I include -I tools/agbcc/include src/lilycove_lady.c
+tools/scaninc/scaninc -M build/arauna-en/modern/src/landmark.d -g build/arauna-en/assets -I include -I tools/agbcc/include src/landmark.c
+tools/scaninc/scaninc -M build/arauna-en/modern/src/item_use.d -g build/arauna-en/assets -I include -I tools/agbcc/include src/item_use.c
+tools/scaninc/scaninc -M build/arauna-en/modern/src/frontier_util.d -g build/arauna-en/assets -I include -I tools/agbcc/include src/frontier_util.c
+tools/scaninc/scaninc -M build/arauna-en/modern/src/frontier_pass.d -g build/arauna-en/assets -I include -I tools/agbcc/include src/frontier_pass.c
+tools/scaninc/scaninc -M build/arauna-en/modern/src/fldeff_strength.d -g build/arauna-en/assets -I include -I tools/agbcc/include src/fldeff_strength.c
+tools/scaninc/scaninc -M build/arauna-en/modern/src/fldeff_rocksmash.d -g build/arauna-en/assets -I include -I tools/agbcc/include src/fldeff_rocksmash.c
+tools/scaninc/scaninc -M build/arauna-en/modern/src/fldeff_cut.d -g build/arauna-en/assets -I include -I tools/agbcc/include src/fldeff_cut.c
+tools/scaninc/scaninc -M build/arauna-en/modern/src/field_specials.d -g build/arauna-en/assets -I include -I tools/agbcc/include src/field_specials.c
+tools/scaninc/scaninc -M build/arauna-en/modern/src/field_special_scene.d -g build/arauna-en/assets -I include -I tools/agbcc/include src/field_special_scene.c
+tools/scaninc/scaninc -M build/arauna-en/modern/src/field_screen_effect.d -g build/arauna-en/assets -I include -I tools/agbcc/include src/field_screen_effect.c
+tools/scaninc/scaninc -M build/arauna-en/modern/src/field_player_avatar.d -g build/arauna-en/assets -I include -I tools/agbcc/include src/field_player_avatar.c
+tools/scaninc/scaninc -M build/arauna-en/modern/src/field_control_avatar.d -g build/arauna-en/assets -I include -I tools/agbcc/include src/field_control_avatar.c
+tools/scaninc/scaninc -M build/arauna-en/modern/src/faraway_island.d -g build/arauna-en/assets -I include -I tools/agbcc/include src/faraway_island.c
+tools/scaninc/scaninc -M build/arauna-en/modern/src/event_object_movement.d -g build/arauna-en/assets -I include -I tools/agbcc/include src/event_object_movement.c
+tools/scaninc/scaninc -M build/arauna-en/modern/src/event_object_lock.d -g build/arauna-en/assets -I include -I tools/agbcc/include src/event_object_lock.c
+tools/scaninc/scaninc -M build/arauna-en/modern/src/easy_chat.d -g build/arauna-en/assets -I include -I tools/agbcc/include src/easy_chat.c
+tools/scaninc/scaninc -M build/arauna-en/modern/src/decoration.d -g build/arauna-en/assets -I include -I tools/agbcc/include src/decoration.c
+tools/scaninc/scaninc -M build/arauna-en/modern/src/daycare.d -g build/arauna-en/assets -I include -I tools/agbcc/include src/daycare.c
+tools/scaninc/scaninc -M build/arauna-en/modern/src/contest_util.d -g build/arauna-en/assets -I include -I tools/agbcc/include src/contest_util.c
+tools/scaninc/scaninc -M build/arauna-en/modern/src/contest.d -g build/arauna-en/assets -I include -I tools/agbcc/include src/contest.c
+tools/scaninc/scaninc -M build/arauna-en/modern/src/cable_car.d -g build/arauna-en/assets -I include -I tools/agbcc/include src/cable_car.c
+tools/scaninc/scaninc -M build/arauna-en/modern/src/battle_tower.d -g build/arauna-en/assets -I include -I tools/agbcc/include src/battle_tower.c
+tools/scaninc/scaninc -M build/arauna-en/modern/src/battle_tent.d -g build/arauna-en/assets -I include -I tools/agbcc/include src/battle_tent.c
+tools/scaninc/scaninc -M build/arauna-en/modern/src/battle_setup.d -g build/arauna-en/assets -I include -I tools/agbcc/include src/battle_setup.c
+tools/scaninc/scaninc -M build/arauna-en/modern/src/battle_pyramid.d -g build/arauna-en/assets -I include -I tools/agbcc/include src/battle_pyramid.c
+tools/scaninc/scaninc -M build/arauna-en/modern/src/battle_pike.d -g build/arauna-en/assets -I include -I tools/agbcc/include src/battle_pike.c
+tools/scaninc/scaninc -M build/arauna-en/modern/src/battle_factory.d -g build/arauna-en/assets -I include -I tools/agbcc/include src/battle_factory.c
+tools/scaninc/scaninc -M build/arauna-en/modern/src/arauna_border_visuals.d -g build/arauna-en/assets -I include -I tools/agbcc/include src/arauna_border_visuals.c
+tools/scaninc/scaninc -M build/arauna-en/modern/data/maps.d -g build/arauna-en/assets -I include -I "" data/maps.s
+tools/scaninc/scaninc -M build/arauna-en/modern/data/map_events.d -g build/arauna-en/assets -I include -I "" data/map_events.s
+$WORKSPACE/deps/root/usr/bin/../lib/gcc/arm-none-eabi/13.2.1/cc1 -quiet <flags> -o build/arauna-en/modern/src/arauna_border_visuals.o src/arauna_border_visuals.c
+$WORKSPACE/deps/root/usr/bin/../lib/gcc/arm-none-eabi/13.2.1/cc1 -quiet <flags> -o build/arauna-en/modern/src/battle_factory.o src/battle_factory.c
+$WORKSPACE/deps/root/usr/bin/../lib/gcc/arm-none-eabi/13.2.1/cc1 -quiet <flags> -o build/arauna-en/modern/src/battle_pike.o src/battle_pike.c
+$WORKSPACE/deps/root/usr/bin/../lib/gcc/arm-none-eabi/13.2.1/cc1 -quiet <flags> -o build/arauna-en/modern/src/battle_pyramid.o src/battle_pyramid.c
+$WORKSPACE/deps/root/usr/bin/../lib/gcc/arm-none-eabi/13.2.1/cc1 -quiet <flags> -o build/arauna-en/modern/src/battle_setup.o src/battle_setup.c
+$WORKSPACE/deps/root/usr/bin/../lib/gcc/arm-none-eabi/13.2.1/cc1 -quiet <flags> -o build/arauna-en/modern/src/battle_tent.o src/battle_tent.c
+$WORKSPACE/deps/root/usr/bin/../lib/gcc/arm-none-eabi/13.2.1/cc1 -quiet <flags> -o build/arauna-en/modern/src/battle_tower.o src/battle_tower.c
+$WORKSPACE/deps/root/usr/bin/../lib/gcc/arm-none-eabi/13.2.1/cc1 -quiet <flags> -o build/arauna-en/modern/src/cable_car.o src/cable_car.c
+$WORKSPACE/deps/root/usr/bin/../lib/gcc/arm-none-eabi/13.2.1/cc1 -quiet <flags> -o build/arauna-en/modern/src/contest.o src/contest.c
+$WORKSPACE/deps/root/usr/bin/../lib/gcc/arm-none-eabi/13.2.1/cc1 -quiet <flags> -o build/arauna-en/modern/src/contest_util.o src/contest_util.c
+$WORKSPACE/deps/root/usr/bin/../lib/gcc/arm-none-eabi/13.2.1/cc1 -quiet <flags> -o build/arauna-en/modern/src/daycare.o src/daycare.c
+$WORKSPACE/deps/root/usr/bin/../lib/gcc/arm-none-eabi/13.2.1/cc1 -quiet <flags> -o build/arauna-en/modern/src/decoration.o src/decoration.c
+$WORKSPACE/deps/root/usr/bin/../lib/gcc/arm-none-eabi/13.2.1/cc1 -quiet <flags> -o build/arauna-en/modern/src/easy_chat.o src/easy_chat.c
+$WORKSPACE/deps/root/usr/bin/../lib/gcc/arm-none-eabi/13.2.1/cc1 -quiet <flags> -o build/arauna-en/modern/src/event_object_lock.o src/event_object_lock.c
+$WORKSPACE/deps/root/usr/bin/../lib/gcc/arm-none-eabi/13.2.1/cc1 -quiet <flags> -o build/arauna-en/modern/src/event_object_movement.o src/event_object_movement.c
+$WORKSPACE/deps/root/usr/bin/../lib/gcc/arm-none-eabi/13.2.1/cc1 -quiet <flags> -o build/arauna-en/modern/src/faraway_island.o src/faraway_island.c
+$WORKSPACE/deps/root/usr/bin/../lib/gcc/arm-none-eabi/13.2.1/cc1 -quiet <flags> -o build/arauna-en/modern/src/field_control_avatar.o src/field_control_avatar.c
+$WORKSPACE/deps/root/usr/bin/../lib/gcc/arm-none-eabi/13.2.1/cc1 -quiet <flags> -o build/arauna-en/modern/src/field_player_avatar.o src/field_player_avatar.c
+$WORKSPACE/deps/root/usr/bin/../lib/gcc/arm-none-eabi/13.2.1/cc1 -quiet <flags> -o build/arauna-en/modern/src/field_screen_effect.o src/field_screen_effect.c
+$WORKSPACE/deps/root/usr/bin/../lib/gcc/arm-none-eabi/13.2.1/cc1 -quiet <flags> -o build/arauna-en/modern/src/field_special_scene.o src/field_special_scene.c
+$WORKSPACE/deps/root/usr/bin/../lib/gcc/arm-none-eabi/13.2.1/cc1 -quiet <flags> -o build/arauna-en/modern/src/field_specials.o src/field_specials.c
+$WORKSPACE/deps/root/usr/bin/../lib/gcc/arm-none-eabi/13.2.1/cc1 -quiet <flags> -o build/arauna-en/modern/src/fldeff_cut.o src/fldeff_cut.c
+$WORKSPACE/deps/root/usr/bin/../lib/gcc/arm-none-eabi/13.2.1/cc1 -quiet <flags> -o build/arauna-en/modern/src/fldeff_rocksmash.o src/fldeff_rocksmash.c
+$WORKSPACE/deps/root/usr/bin/../lib/gcc/arm-none-eabi/13.2.1/cc1 -quiet <flags> -o build/arauna-en/modern/src/fldeff_strength.o src/fldeff_strength.c
+$WORKSPACE/deps/root/usr/bin/../lib/gcc/arm-none-eabi/13.2.1/cc1 -quiet <flags> -o build/arauna-en/modern/src/frontier_pass.o src/frontier_pass.c
+$WORKSPACE/deps/root/usr/bin/../lib/gcc/arm-none-eabi/13.2.1/cc1 -quiet <flags> -o build/arauna-en/modern/src/frontier_util.o src/frontier_util.c
+$WORKSPACE/deps/root/usr/bin/../lib/gcc/arm-none-eabi/13.2.1/cc1 -quiet <flags> -o build/arauna-en/modern/src/item_use.o src/item_use.c
+$WORKSPACE/deps/root/usr/bin/../lib/gcc/arm-none-eabi/13.2.1/cc1 -quiet <flags> -o build/arauna-en/modern/src/landmark.o src/landmark.c
+$WORKSPACE/deps/root/usr/bin/../lib/gcc/arm-none-eabi/13.2.1/cc1 -quiet <flags> -o build/arauna-en/modern/src/lilycove_lady.o src/lilycove_lady.c
+$WORKSPACE/deps/root/usr/bin/../lib/gcc/arm-none-eabi/13.2.1/cc1 -quiet <flags> -o build/arauna-en/modern/src/map_name_popup.o src/map_name_popup.c
+$WORKSPACE/deps/root/usr/bin/../lib/gcc/arm-none-eabi/13.2.1/cc1 -quiet <flags> -o build/arauna-en/modern/src/match_call.o src/match_call.c
+$WORKSPACE/deps/root/usr/bin/../lib/gcc/arm-none-eabi/13.2.1/cc1 -quiet <flags> -o build/arauna-en/modern/src/mauville_old_man.o src/mauville_old_man.c
+$WORKSPACE/deps/root/usr/bin/../lib/gcc/arm-none-eabi/13.2.1/cc1 -quiet <flags> -o build/arauna-en/modern/src/mirage_tower.o src/mirage_tower.c
+$WORKSPACE/deps/root/usr/bin/../lib/gcc/arm-none-eabi/13.2.1/cc1 -quiet <flags> -o build/arauna-en/modern/src/naming_screen.o src/naming_screen.c
+$WORKSPACE/deps/root/usr/bin/../lib/gcc/arm-none-eabi/13.2.1/cc1 -quiet <flags> -o build/arauna-en/modern/src/overworld.o src/overworld.c
+$WORKSPACE/deps/root/usr/bin/../lib/gcc/arm-none-eabi/13.2.1/cc1 -quiet <flags> -o build/arauna-en/modern/src/pokedex_area_screen.o src/pokedex_area_screen.c
+$WORKSPACE/deps/root/usr/bin/../lib/gcc/arm-none-eabi/13.2.1/cc1 -quiet <flags> -o build/arauna-en/modern/src/pokemon.o src/pokemon.c
+$WORKSPACE/deps/root/usr/bin/../lib/gcc/arm-none-eabi/13.2.1/cc1 -quiet <flags> -o build/arauna-en/modern/src/pokemon_summary_screen.o src/pokemon_summary_screen.c
+$WORKSPACE/deps/root/usr/bin/../lib/gcc/arm-none-eabi/13.2.1/cc1 -quiet <flags> -o build/arauna-en/modern/src/pokenav_match_call_data.o src/pokenav_match_call_data.c
+$WORKSPACE/deps/root/usr/bin/../lib/gcc/arm-none-eabi/13.2.1/cc1 -quiet <flags> -o build/arauna-en/modern/src/pokenav_match_call_gfx.o src/pokenav_match_call_gfx.c
+$WORKSPACE/deps/root/usr/bin/../lib/gcc/arm-none-eabi/13.2.1/cc1 -quiet <flags> -o build/arauna-en/modern/src/pokenav_region_map.o src/pokenav_region_map.c
+$WORKSPACE/deps/root/usr/bin/../lib/gcc/arm-none-eabi/13.2.1/cc1 -quiet <flags> -o build/arauna-en/modern/src/region_map.o src/region_map.c
+$WORKSPACE/deps/root/usr/bin/../lib/gcc/arm-none-eabi/13.2.1/cc1 -quiet <flags> -o build/arauna-en/modern/src/rotating_tile_puzzle.o src/rotating_tile_puzzle.c
+$WORKSPACE/deps/root/usr/bin/../lib/gcc/arm-none-eabi/13.2.1/cc1 -quiet <flags> -o build/arauna-en/modern/src/scrcmd.o src/scrcmd.c
+$WORKSPACE/deps/root/usr/bin/../lib/gcc/arm-none-eabi/13.2.1/cc1 -quiet <flags> -o build/arauna-en/modern/src/script.o src/script.c
+$WORKSPACE/deps/root/usr/bin/../lib/gcc/arm-none-eabi/13.2.1/cc1 -quiet <flags> -o build/arauna-en/modern/src/script_movement.o src/script_movement.c
+$WORKSPACE/deps/root/usr/bin/../lib/gcc/arm-none-eabi/13.2.1/cc1 -quiet <flags> -o build/arauna-en/modern/src/secret_base.o src/secret_base.c
+src/pokemon.c: In function 'SetBoxMonData':
+src/pokemon.c:3031:48: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+ 3031 |         SET8(substruct1->pp[field - MON_DATA_PP1]);
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+In file included from include/global.h:582,
+                 from src/pokemon.c:1:
+include/pokemon.h:112:8: note: at offset [-2147483648, -7] into destination object 'pp' of size 4
+  112 |     u8 pp[MAX_MON_MOVES];
+      |        ^~
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_ever_grande_city_uivo_v1/palettes/00.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_ever_grande_city_uivo_v1/palettes/00.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_ever_grande_city_uivo_v1/palettes/01.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_ever_grande_city_uivo_v1/palettes/01.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_ever_grande_city_uivo_v1/palettes/02.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_ever_grande_city_uivo_v1/palettes/02.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_ever_grande_city_uivo_v1/palettes/03.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_ever_grande_city_uivo_v1/palettes/03.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_ever_grande_city_uivo_v1/palettes/04.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_ever_grande_city_uivo_v1/palettes/04.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_ever_grande_city_uivo_v1/palettes/05.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_ever_grande_city_uivo_v1/palettes/05.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_ever_grande_city_uivo_v1/palettes/06.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_ever_grande_city_uivo_v1/palettes/06.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_ever_grande_city_uivo_v1/palettes/07.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_ever_grande_city_uivo_v1/palettes/07.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_ever_grande_city_uivo_v1/palettes/08.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_ever_grande_city_uivo_v1/palettes/08.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_ever_grande_city_uivo_v1/palettes/10.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_ever_grande_city_uivo_v1/palettes/10.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_ever_grande_city_uivo_v1/palettes/09.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_ever_grande_city_uivo_v1/palettes/09.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_ever_grande_city_uivo_v1/tiles.png build/arauna-en/assets/data/tilesets/primary/arauna_border_ever_grande_city_uivo_v1/tiles.png.4bpp
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_ever_grande_city_uivo_v1/palettes/11.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_ever_grande_city_uivo_v1/palettes/11.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_ever_grande_city_uivo_v1/palettes/12.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_ever_grande_city_uivo_v1/palettes/12.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_lavaridge_town_uivo_v1/palettes/00.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_lavaridge_town_uivo_v1/palettes/00.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_lavaridge_town_uivo_v1/palettes/02.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_lavaridge_town_uivo_v1/palettes/02.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_lavaridge_town_uivo_v1/palettes/01.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_lavaridge_town_uivo_v1/palettes/01.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_lavaridge_town_uivo_v1/palettes/03.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_lavaridge_town_uivo_v1/palettes/03.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_lavaridge_town_uivo_v1/palettes/04.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_lavaridge_town_uivo_v1/palettes/04.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_lavaridge_town_uivo_v1/palettes/05.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_lavaridge_town_uivo_v1/palettes/05.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_lavaridge_town_uivo_v1/palettes/07.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_lavaridge_town_uivo_v1/palettes/07.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_lavaridge_town_uivo_v1/palettes/06.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_lavaridge_town_uivo_v1/palettes/06.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_lavaridge_town_uivo_v1/palettes/08.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_lavaridge_town_uivo_v1/palettes/08.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_lavaridge_town_uivo_v1/palettes/09.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_lavaridge_town_uivo_v1/palettes/09.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_lavaridge_town_uivo_v1/palettes/10.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_lavaridge_town_uivo_v1/palettes/10.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_lavaridge_town_uivo_v1/palettes/11.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_lavaridge_town_uivo_v1/palettes/11.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_lavaridge_town_uivo_v1/palettes/12.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_lavaridge_town_uivo_v1/palettes/12.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_mauville_city_uivo_v1/palettes/00.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_mauville_city_uivo_v1/palettes/00.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_mauville_city_uivo_v1/palettes/01.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_mauville_city_uivo_v1/palettes/01.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_lavaridge_town_uivo_v1/tiles.png build/arauna-en/assets/data/tilesets/primary/arauna_border_lavaridge_town_uivo_v1/tiles.png.4bpp
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_mauville_city_uivo_v1/palettes/02.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_mauville_city_uivo_v1/palettes/02.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_mauville_city_uivo_v1/palettes/03.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_mauville_city_uivo_v1/palettes/03.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_mauville_city_uivo_v1/palettes/04.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_mauville_city_uivo_v1/palettes/04.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_mauville_city_uivo_v1/palettes/05.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_mauville_city_uivo_v1/palettes/05.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_mauville_city_uivo_v1/palettes/06.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_mauville_city_uivo_v1/palettes/06.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_mauville_city_uivo_v1/palettes/07.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_mauville_city_uivo_v1/palettes/07.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_mauville_city_uivo_v1/palettes/08.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_mauville_city_uivo_v1/palettes/08.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_mauville_city_uivo_v1/palettes/09.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_mauville_city_uivo_v1/palettes/09.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_mauville_city_uivo_v1/palettes/10.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_mauville_city_uivo_v1/palettes/10.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_mauville_city_uivo_v1/palettes/12.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_mauville_city_uivo_v1/palettes/12.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_mauville_city_uivo_v1/tiles.png build/arauna-en/assets/data/tilesets/primary/arauna_border_mauville_city_uivo_v1/tiles.png.4bpp
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_mauville_city_uivo_v1/palettes/11.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_mauville_city_uivo_v1/palettes/11.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_oldale_town_uivo_v1/palettes/00.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_oldale_town_uivo_v1/palettes/00.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_oldale_town_uivo_v1/palettes/02.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_oldale_town_uivo_v1/palettes/02.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_oldale_town_uivo_v1/palettes/01.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_oldale_town_uivo_v1/palettes/01.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_oldale_town_uivo_v1/palettes/03.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_oldale_town_uivo_v1/palettes/03.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_oldale_town_uivo_v1/palettes/04.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_oldale_town_uivo_v1/palettes/04.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_oldale_town_uivo_v1/palettes/05.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_oldale_town_uivo_v1/palettes/05.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_oldale_town_uivo_v1/palettes/06.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_oldale_town_uivo_v1/palettes/06.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_oldale_town_uivo_v1/palettes/08.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_oldale_town_uivo_v1/palettes/08.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_oldale_town_uivo_v1/palettes/07.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_oldale_town_uivo_v1/palettes/07.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_oldale_town_uivo_v1/palettes/10.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_oldale_town_uivo_v1/palettes/10.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_oldale_town_uivo_v1/palettes/09.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_oldale_town_uivo_v1/palettes/09.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_oldale_town_uivo_v1/palettes/11.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_oldale_town_uivo_v1/palettes/11.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_oldale_town_uivo_v1/palettes/12.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_oldale_town_uivo_v1/palettes/12.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_petalburg_city_uivo_v1/palettes/00.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_petalburg_city_uivo_v1/palettes/00.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_oldale_town_uivo_v1/tiles.png build/arauna-en/assets/data/tilesets/primary/arauna_border_oldale_town_uivo_v1/tiles.png.4bpp
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_petalburg_city_uivo_v1/palettes/01.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_petalburg_city_uivo_v1/palettes/01.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_petalburg_city_uivo_v1/palettes/02.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_petalburg_city_uivo_v1/palettes/02.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_petalburg_city_uivo_v1/palettes/03.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_petalburg_city_uivo_v1/palettes/03.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_petalburg_city_uivo_v1/palettes/04.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_petalburg_city_uivo_v1/palettes/04.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_petalburg_city_uivo_v1/palettes/05.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_petalburg_city_uivo_v1/palettes/05.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_petalburg_city_uivo_v1/palettes/06.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_petalburg_city_uivo_v1/palettes/06.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_petalburg_city_uivo_v1/palettes/08.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_petalburg_city_uivo_v1/palettes/08.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_petalburg_city_uivo_v1/palettes/07.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_petalburg_city_uivo_v1/palettes/07.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_petalburg_city_uivo_v1/palettes/10.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_petalburg_city_uivo_v1/palettes/10.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_petalburg_city_uivo_v1/palettes/11.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_petalburg_city_uivo_v1/palettes/11.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_petalburg_city_uivo_v1/palettes/09.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_petalburg_city_uivo_v1/palettes/09.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_petalburg_city_uivo_v1/palettes/12.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_petalburg_city_uivo_v1/palettes/12.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route102_uivo_v1/palettes/01.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route102_uivo_v1/palettes/01.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route102_uivo_v1/palettes/00.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route102_uivo_v1/palettes/00.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_petalburg_city_uivo_v1/tiles.png build/arauna-en/assets/data/tilesets/primary/arauna_border_petalburg_city_uivo_v1/tiles.png.4bpp
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route102_uivo_v1/palettes/02.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route102_uivo_v1/palettes/02.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route102_uivo_v1/palettes/03.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route102_uivo_v1/palettes/03.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route102_uivo_v1/palettes/04.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route102_uivo_v1/palettes/04.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route102_uivo_v1/palettes/05.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route102_uivo_v1/palettes/05.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route102_uivo_v1/palettes/06.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route102_uivo_v1/palettes/06.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route102_uivo_v1/palettes/07.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route102_uivo_v1/palettes/07.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route102_uivo_v1/palettes/09.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route102_uivo_v1/palettes/09.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route102_uivo_v1/palettes/08.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route102_uivo_v1/palettes/08.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route102_uivo_v1/palettes/10.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route102_uivo_v1/palettes/10.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route102_uivo_v1/palettes/11.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route102_uivo_v1/palettes/11.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route102_uivo_v1/palettes/12.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route102_uivo_v1/palettes/12.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route102_uivo_v1/tiles.png build/arauna-en/assets/data/tilesets/primary/arauna_border_route102_uivo_v1/tiles.png.4bpp
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route103_uivo_v1/palettes/00.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route103_uivo_v1/palettes/00.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route103_uivo_v1/palettes/01.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route103_uivo_v1/palettes/01.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route103_uivo_v1/palettes/02.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route103_uivo_v1/palettes/02.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route103_uivo_v1/palettes/04.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route103_uivo_v1/palettes/04.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route103_uivo_v1/palettes/03.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route103_uivo_v1/palettes/03.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route103_uivo_v1/palettes/06.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route103_uivo_v1/palettes/06.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route103_uivo_v1/palettes/05.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route103_uivo_v1/palettes/05.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route103_uivo_v1/palettes/08.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route103_uivo_v1/palettes/08.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route103_uivo_v1/palettes/07.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route103_uivo_v1/palettes/07.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route103_uivo_v1/palettes/09.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route103_uivo_v1/palettes/09.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route103_uivo_v1/palettes/10.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route103_uivo_v1/palettes/10.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route103_uivo_v1/palettes/11.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route103_uivo_v1/palettes/11.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route103_uivo_v1/palettes/12.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route103_uivo_v1/palettes/12.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route103_uivo_v1/tiles.png build/arauna-en/assets/data/tilesets/primary/arauna_border_route103_uivo_v1/tiles.png.4bpp
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route104_uivo_v1/palettes/00.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route104_uivo_v1/palettes/00.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route104_uivo_v1/palettes/01.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route104_uivo_v1/palettes/01.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route104_uivo_v1/palettes/02.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route104_uivo_v1/palettes/02.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route104_uivo_v1/palettes/03.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route104_uivo_v1/palettes/03.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route104_uivo_v1/palettes/05.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route104_uivo_v1/palettes/05.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route104_uivo_v1/palettes/04.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route104_uivo_v1/palettes/04.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route104_uivo_v1/palettes/06.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route104_uivo_v1/palettes/06.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route104_uivo_v1/palettes/07.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route104_uivo_v1/palettes/07.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route104_uivo_v1/palettes/08.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route104_uivo_v1/palettes/08.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route104_uivo_v1/palettes/10.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route104_uivo_v1/palettes/10.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route104_uivo_v1/palettes/09.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route104_uivo_v1/palettes/09.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route104_uivo_v1/palettes/11.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route104_uivo_v1/palettes/11.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route104_uivo_v1/palettes/12.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route104_uivo_v1/palettes/12.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route104_uivo_v1/tiles.png build/arauna-en/assets/data/tilesets/primary/arauna_border_route104_uivo_v1/tiles.png.4bpp
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route105_uivo_v1/palettes/02.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route105_uivo_v1/palettes/02.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route105_uivo_v1/palettes/01.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route105_uivo_v1/palettes/01.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route105_uivo_v1/palettes/00.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route105_uivo_v1/palettes/00.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route105_uivo_v1/palettes/05.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route105_uivo_v1/palettes/05.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route105_uivo_v1/palettes/03.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route105_uivo_v1/palettes/03.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route105_uivo_v1/palettes/04.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route105_uivo_v1/palettes/04.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route105_uivo_v1/palettes/06.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route105_uivo_v1/palettes/06.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route105_uivo_v1/palettes/07.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route105_uivo_v1/palettes/07.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route105_uivo_v1/palettes/09.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route105_uivo_v1/palettes/09.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route105_uivo_v1/palettes/08.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route105_uivo_v1/palettes/08.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route105_uivo_v1/palettes/10.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route105_uivo_v1/palettes/10.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route105_uivo_v1/palettes/11.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route105_uivo_v1/palettes/11.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route105_uivo_v1/palettes/12.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route105_uivo_v1/palettes/12.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route105_uivo_v1/tiles.png build/arauna-en/assets/data/tilesets/primary/arauna_border_route105_uivo_v1/tiles.png.4bpp
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route110_uivo_v1/palettes/00.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route110_uivo_v1/palettes/00.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route110_uivo_v1/palettes/01.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route110_uivo_v1/palettes/01.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route110_uivo_v1/palettes/02.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route110_uivo_v1/palettes/02.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route110_uivo_v1/palettes/03.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route110_uivo_v1/palettes/03.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route110_uivo_v1/palettes/04.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route110_uivo_v1/palettes/04.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route110_uivo_v1/palettes/07.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route110_uivo_v1/palettes/07.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route110_uivo_v1/palettes/06.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route110_uivo_v1/palettes/06.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route110_uivo_v1/palettes/05.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route110_uivo_v1/palettes/05.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route110_uivo_v1/palettes/08.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route110_uivo_v1/palettes/08.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route110_uivo_v1/palettes/10.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route110_uivo_v1/palettes/10.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route110_uivo_v1/palettes/09.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route110_uivo_v1/palettes/09.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route110_uivo_v1/palettes/11.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route110_uivo_v1/palettes/11.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route110_uivo_v1/palettes/12.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route110_uivo_v1/palettes/12.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route111_uivo_v1/palettes/00.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route111_uivo_v1/palettes/00.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route110_uivo_v1/tiles.png build/arauna-en/assets/data/tilesets/primary/arauna_border_route110_uivo_v1/tiles.png.4bpp
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route111_uivo_v1/palettes/01.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route111_uivo_v1/palettes/01.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route111_uivo_v1/palettes/02.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route111_uivo_v1/palettes/02.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route111_uivo_v1/palettes/03.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route111_uivo_v1/palettes/03.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route111_uivo_v1/palettes/04.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route111_uivo_v1/palettes/04.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route111_uivo_v1/palettes/05.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route111_uivo_v1/palettes/05.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route111_uivo_v1/palettes/07.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route111_uivo_v1/palettes/07.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route111_uivo_v1/palettes/06.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route111_uivo_v1/palettes/06.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route111_uivo_v1/palettes/08.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route111_uivo_v1/palettes/08.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route111_uivo_v1/palettes/09.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route111_uivo_v1/palettes/09.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route111_uivo_v1/palettes/10.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route111_uivo_v1/palettes/10.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route111_uivo_v1/palettes/12.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route111_uivo_v1/palettes/12.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route111_uivo_v1/palettes/11.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route111_uivo_v1/palettes/11.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route111_uivo_v1/tiles.png build/arauna-en/assets/data/tilesets/primary/arauna_border_route111_uivo_v1/tiles.png.4bpp
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route112_uivo_v1/palettes/01.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route112_uivo_v1/palettes/01.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route112_uivo_v1/palettes/00.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route112_uivo_v1/palettes/00.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route112_uivo_v1/palettes/02.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route112_uivo_v1/palettes/02.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route112_uivo_v1/palettes/03.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route112_uivo_v1/palettes/03.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route112_uivo_v1/palettes/05.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route112_uivo_v1/palettes/05.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route112_uivo_v1/palettes/06.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route112_uivo_v1/palettes/06.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route112_uivo_v1/palettes/07.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route112_uivo_v1/palettes/07.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route112_uivo_v1/palettes/04.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route112_uivo_v1/palettes/04.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route112_uivo_v1/palettes/08.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route112_uivo_v1/palettes/08.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route112_uivo_v1/palettes/09.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route112_uivo_v1/palettes/09.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route112_uivo_v1/palettes/10.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route112_uivo_v1/palettes/10.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route112_uivo_v1/palettes/11.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route112_uivo_v1/palettes/11.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route112_uivo_v1/palettes/12.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route112_uivo_v1/palettes/12.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route112_uivo_v1/tiles.png build/arauna-en/assets/data/tilesets/primary/arauna_border_route112_uivo_v1/tiles.png.4bpp
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route114_uivo_v1/palettes/00.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route114_uivo_v1/palettes/00.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route114_uivo_v1/palettes/01.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route114_uivo_v1/palettes/01.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route114_uivo_v1/palettes/02.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route114_uivo_v1/palettes/02.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route114_uivo_v1/palettes/03.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route114_uivo_v1/palettes/03.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route114_uivo_v1/palettes/04.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route114_uivo_v1/palettes/04.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route114_uivo_v1/palettes/05.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route114_uivo_v1/palettes/05.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route114_uivo_v1/palettes/07.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route114_uivo_v1/palettes/07.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route114_uivo_v1/palettes/08.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route114_uivo_v1/palettes/08.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route114_uivo_v1/palettes/06.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route114_uivo_v1/palettes/06.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route114_uivo_v1/palettes/09.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route114_uivo_v1/palettes/09.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route114_uivo_v1/palettes/10.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route114_uivo_v1/palettes/10.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route114_uivo_v1/palettes/11.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route114_uivo_v1/palettes/11.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route114_uivo_v1/palettes/12.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route114_uivo_v1/palettes/12.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route114_uivo_v1/tiles.png build/arauna-en/assets/data/tilesets/primary/arauna_border_route114_uivo_v1/tiles.png.4bpp
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route115_uivo_v1/palettes/00.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route115_uivo_v1/palettes/00.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route115_uivo_v1/palettes/01.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route115_uivo_v1/palettes/01.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route115_uivo_v1/palettes/02.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route115_uivo_v1/palettes/02.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route115_uivo_v1/palettes/03.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route115_uivo_v1/palettes/03.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route115_uivo_v1/palettes/04.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route115_uivo_v1/palettes/04.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route115_uivo_v1/palettes/06.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route115_uivo_v1/palettes/06.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route115_uivo_v1/palettes/07.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route115_uivo_v1/palettes/07.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route115_uivo_v1/palettes/05.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route115_uivo_v1/palettes/05.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route115_uivo_v1/palettes/09.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route115_uivo_v1/palettes/09.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route115_uivo_v1/palettes/10.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route115_uivo_v1/palettes/10.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route115_uivo_v1/palettes/11.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route115_uivo_v1/palettes/11.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route115_uivo_v1/palettes/12.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route115_uivo_v1/palettes/12.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route115_uivo_v1/palettes/08.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route115_uivo_v1/palettes/08.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route115_uivo_v1/tiles.png build/arauna-en/assets/data/tilesets/primary/arauna_border_route115_uivo_v1/tiles.png.4bpp
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route116_uivo_v1/palettes/00.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route116_uivo_v1/palettes/00.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route116_uivo_v1/palettes/01.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route116_uivo_v1/palettes/01.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route116_uivo_v1/palettes/02.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route116_uivo_v1/palettes/02.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route116_uivo_v1/palettes/03.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route116_uivo_v1/palettes/03.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route116_uivo_v1/palettes/04.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route116_uivo_v1/palettes/04.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route116_uivo_v1/palettes/05.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route116_uivo_v1/palettes/05.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route116_uivo_v1/palettes/07.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route116_uivo_v1/palettes/07.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route116_uivo_v1/palettes/08.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route116_uivo_v1/palettes/08.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route116_uivo_v1/palettes/09.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route116_uivo_v1/palettes/09.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route116_uivo_v1/palettes/06.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route116_uivo_v1/palettes/06.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route116_uivo_v1/palettes/10.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route116_uivo_v1/palettes/10.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route116_uivo_v1/palettes/11.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route116_uivo_v1/palettes/11.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route116_uivo_v1/palettes/12.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route116_uivo_v1/palettes/12.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route116_uivo_v1/tiles.png build/arauna-en/assets/data/tilesets/primary/arauna_border_route116_uivo_v1/tiles.png.4bpp
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route117_uivo_v1/palettes/00.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route117_uivo_v1/palettes/00.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route117_uivo_v1/palettes/01.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route117_uivo_v1/palettes/01.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route117_uivo_v1/palettes/02.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route117_uivo_v1/palettes/02.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route117_uivo_v1/palettes/03.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route117_uivo_v1/palettes/03.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route117_uivo_v1/palettes/04.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route117_uivo_v1/palettes/04.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route117_uivo_v1/palettes/05.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route117_uivo_v1/palettes/05.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route117_uivo_v1/palettes/06.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route117_uivo_v1/palettes/06.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route117_uivo_v1/palettes/08.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route117_uivo_v1/palettes/08.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route117_uivo_v1/palettes/09.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route117_uivo_v1/palettes/09.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route117_uivo_v1/palettes/10.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route117_uivo_v1/palettes/10.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route117_uivo_v1/palettes/07.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route117_uivo_v1/palettes/07.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route117_uivo_v1/palettes/11.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route117_uivo_v1/palettes/11.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route117_uivo_v1/palettes/12.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route117_uivo_v1/palettes/12.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route117_uivo_v1/tiles.png build/arauna-en/assets/data/tilesets/primary/arauna_border_route117_uivo_v1/tiles.png.4bpp
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route118_uivo_v1/palettes/00.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route118_uivo_v1/palettes/00.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route118_uivo_v1/palettes/01.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route118_uivo_v1/palettes/01.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route118_uivo_v1/palettes/03.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route118_uivo_v1/palettes/03.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route118_uivo_v1/palettes/04.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route118_uivo_v1/palettes/04.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route118_uivo_v1/palettes/02.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route118_uivo_v1/palettes/02.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route118_uivo_v1/palettes/05.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route118_uivo_v1/palettes/05.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route118_uivo_v1/palettes/06.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route118_uivo_v1/palettes/06.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route118_uivo_v1/palettes/07.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route118_uivo_v1/palettes/07.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route118_uivo_v1/palettes/08.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route118_uivo_v1/palettes/08.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route118_uivo_v1/palettes/09.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route118_uivo_v1/palettes/09.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route118_uivo_v1/palettes/10.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route118_uivo_v1/palettes/10.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route118_uivo_v1/palettes/11.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route118_uivo_v1/palettes/11.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route118_uivo_v1/palettes/12.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route118_uivo_v1/palettes/12.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route118_uivo_v1/tiles.png build/arauna-en/assets/data/tilesets/primary/arauna_border_route118_uivo_v1/tiles.png.4bpp
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route119_uivo_v1/palettes/00.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route119_uivo_v1/palettes/00.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route119_uivo_v1/palettes/01.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route119_uivo_v1/palettes/01.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route119_uivo_v1/palettes/02.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route119_uivo_v1/palettes/02.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route119_uivo_v1/palettes/03.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route119_uivo_v1/palettes/03.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route119_uivo_v1/palettes/04.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route119_uivo_v1/palettes/04.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route119_uivo_v1/palettes/05.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route119_uivo_v1/palettes/05.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route119_uivo_v1/palettes/06.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route119_uivo_v1/palettes/06.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route119_uivo_v1/palettes/07.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route119_uivo_v1/palettes/07.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route119_uivo_v1/palettes/08.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route119_uivo_v1/palettes/08.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route119_uivo_v1/palettes/09.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route119_uivo_v1/palettes/09.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route119_uivo_v1/palettes/10.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route119_uivo_v1/palettes/10.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route119_uivo_v1/palettes/11.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route119_uivo_v1/palettes/11.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route119_uivo_v1/tiles.png build/arauna-en/assets/data/tilesets/primary/arauna_border_route119_uivo_v1/tiles.png.4bpp
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route119_uivo_v1/palettes/12.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route119_uivo_v1/palettes/12.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route124_uivo_v1/palettes/01.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route124_uivo_v1/palettes/01.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route124_uivo_v1/palettes/00.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route124_uivo_v1/palettes/00.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route124_uivo_v1/palettes/02.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route124_uivo_v1/palettes/02.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route124_uivo_v1/palettes/03.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route124_uivo_v1/palettes/03.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route124_uivo_v1/palettes/04.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route124_uivo_v1/palettes/04.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route124_uivo_v1/palettes/05.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route124_uivo_v1/palettes/05.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route124_uivo_v1/palettes/06.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route124_uivo_v1/palettes/06.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route124_uivo_v1/palettes/07.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route124_uivo_v1/palettes/07.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route124_uivo_v1/palettes/09.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route124_uivo_v1/palettes/09.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route124_uivo_v1/palettes/08.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route124_uivo_v1/palettes/08.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route124_uivo_v1/palettes/10.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route124_uivo_v1/palettes/10.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route124_uivo_v1/palettes/11.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route124_uivo_v1/palettes/11.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route124_uivo_v1/palettes/12.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route124_uivo_v1/palettes/12.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route124_uivo_v1/tiles.png build/arauna-en/assets/data/tilesets/primary/arauna_border_route124_uivo_v1/tiles.png.4bpp
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route126_uivo_v1/palettes/00.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route126_uivo_v1/palettes/00.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route126_uivo_v1/palettes/01.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route126_uivo_v1/palettes/01.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route126_uivo_v1/palettes/02.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route126_uivo_v1/palettes/02.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route126_uivo_v1/palettes/03.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route126_uivo_v1/palettes/03.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route126_uivo_v1/palettes/05.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route126_uivo_v1/palettes/05.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route126_uivo_v1/palettes/04.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route126_uivo_v1/palettes/04.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route126_uivo_v1/palettes/07.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route126_uivo_v1/palettes/07.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route126_uivo_v1/palettes/06.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route126_uivo_v1/palettes/06.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route126_uivo_v1/palettes/09.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route126_uivo_v1/palettes/09.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route126_uivo_v1/palettes/08.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route126_uivo_v1/palettes/08.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route126_uivo_v1/palettes/10.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route126_uivo_v1/palettes/10.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route126_uivo_v1/palettes/11.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route126_uivo_v1/palettes/11.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route126_uivo_v1/tiles.png build/arauna-en/assets/data/tilesets/primary/arauna_border_route126_uivo_v1/tiles.png.4bpp
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route128_uivo_v1/palettes/00.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route128_uivo_v1/palettes/00.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route126_uivo_v1/palettes/12.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route126_uivo_v1/palettes/12.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route128_uivo_v1/palettes/01.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route128_uivo_v1/palettes/01.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route128_uivo_v1/palettes/02.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route128_uivo_v1/palettes/02.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route128_uivo_v1/palettes/04.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route128_uivo_v1/palettes/04.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route128_uivo_v1/palettes/03.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route128_uivo_v1/palettes/03.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route128_uivo_v1/palettes/05.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route128_uivo_v1/palettes/05.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route128_uivo_v1/palettes/06.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route128_uivo_v1/palettes/06.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route128_uivo_v1/palettes/07.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route128_uivo_v1/palettes/07.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route128_uivo_v1/palettes/08.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route128_uivo_v1/palettes/08.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route128_uivo_v1/palettes/09.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route128_uivo_v1/palettes/09.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route128_uivo_v1/palettes/10.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route128_uivo_v1/palettes/10.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route128_uivo_v1/palettes/11.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route128_uivo_v1/palettes/11.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route128_uivo_v1/palettes/12.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_route128_uivo_v1/palettes/12.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_route128_uivo_v1/tiles.png build/arauna-en/assets/data/tilesets/primary/arauna_border_route128_uivo_v1/tiles.png.4bpp
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_rustboro_city_uivo_v1/palettes/00.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_rustboro_city_uivo_v1/palettes/00.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_rustboro_city_uivo_v1/palettes/01.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_rustboro_city_uivo_v1/palettes/01.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_rustboro_city_uivo_v1/palettes/02.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_rustboro_city_uivo_v1/palettes/02.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_rustboro_city_uivo_v1/palettes/03.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_rustboro_city_uivo_v1/palettes/03.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_rustboro_city_uivo_v1/palettes/04.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_rustboro_city_uivo_v1/palettes/04.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_rustboro_city_uivo_v1/palettes/05.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_rustboro_city_uivo_v1/palettes/05.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_rustboro_city_uivo_v1/palettes/06.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_rustboro_city_uivo_v1/palettes/06.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_rustboro_city_uivo_v1/palettes/08.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_rustboro_city_uivo_v1/palettes/08.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_rustboro_city_uivo_v1/palettes/09.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_rustboro_city_uivo_v1/palettes/09.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_rustboro_city_uivo_v1/palettes/07.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_rustboro_city_uivo_v1/palettes/07.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_rustboro_city_uivo_v1/palettes/10.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_rustboro_city_uivo_v1/palettes/10.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_rustboro_city_uivo_v1/tiles.png build/arauna-en/assets/data/tilesets/primary/arauna_border_rustboro_city_uivo_v1/tiles.png.4bpp
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_rustboro_city_uivo_v1/palettes/11.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_rustboro_city_uivo_v1/palettes/11.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_rustboro_city_uivo_v1/palettes/12.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_rustboro_city_uivo_v1/palettes/12.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_slateport_city_uivo_v1/palettes/00.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_slateport_city_uivo_v1/palettes/00.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_slateport_city_uivo_v1/palettes/01.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_slateport_city_uivo_v1/palettes/01.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_slateport_city_uivo_v1/palettes/02.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_slateport_city_uivo_v1/palettes/02.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_slateport_city_uivo_v1/palettes/03.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_slateport_city_uivo_v1/palettes/03.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_slateport_city_uivo_v1/palettes/04.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_slateport_city_uivo_v1/palettes/04.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_slateport_city_uivo_v1/palettes/05.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_slateport_city_uivo_v1/palettes/05.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_slateport_city_uivo_v1/palettes/06.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_slateport_city_uivo_v1/palettes/06.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_slateport_city_uivo_v1/palettes/07.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_slateport_city_uivo_v1/palettes/07.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_slateport_city_uivo_v1/palettes/08.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_slateport_city_uivo_v1/palettes/08.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_slateport_city_uivo_v1/palettes/09.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_slateport_city_uivo_v1/palettes/09.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_slateport_city_uivo_v1/palettes/10.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_slateport_city_uivo_v1/palettes/10.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_slateport_city_uivo_v1/palettes/11.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_slateport_city_uivo_v1/palettes/11.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_slateport_city_uivo_v1/palettes/12.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_slateport_city_uivo_v1/palettes/12.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_slateport_city_uivo_v1/tiles.png build/arauna-en/assets/data/tilesets/primary/arauna_border_slateport_city_uivo_v1/tiles.png.4bpp
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_verdanturf_town_uivo_v1/palettes/00.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_verdanturf_town_uivo_v1/palettes/00.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_verdanturf_town_uivo_v1/palettes/01.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_verdanturf_town_uivo_v1/palettes/01.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_verdanturf_town_uivo_v1/palettes/02.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_verdanturf_town_uivo_v1/palettes/02.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_verdanturf_town_uivo_v1/palettes/03.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_verdanturf_town_uivo_v1/palettes/03.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_verdanturf_town_uivo_v1/palettes/04.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_verdanturf_town_uivo_v1/palettes/04.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_verdanturf_town_uivo_v1/palettes/05.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_verdanturf_town_uivo_v1/palettes/05.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_verdanturf_town_uivo_v1/palettes/06.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_verdanturf_town_uivo_v1/palettes/06.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_verdanturf_town_uivo_v1/palettes/07.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_verdanturf_town_uivo_v1/palettes/07.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_verdanturf_town_uivo_v1/palettes/08.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_verdanturf_town_uivo_v1/palettes/08.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_verdanturf_town_uivo_v1/palettes/09.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_verdanturf_town_uivo_v1/palettes/09.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_verdanturf_town_uivo_v1/palettes/10.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_verdanturf_town_uivo_v1/palettes/10.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_verdanturf_town_uivo_v1/palettes/11.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_verdanturf_town_uivo_v1/palettes/11.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_verdanturf_town_uivo_v1/palettes/12.pal build/arauna-en/assets/data/tilesets/primary/arauna_border_verdanturf_town_uivo_v1/palettes/12.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/primary/arauna_border_verdanturf_town_uivo_v1/tiles.png build/arauna-en/assets/data/tilesets/primary/arauna_border_verdanturf_town_uivo_v1/tiles.png.4bpp
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_ever_grande_city_uivo_v1/palettes/00.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_ever_grande_city_uivo_v1/palettes/00.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_ever_grande_city_uivo_v1/palettes/01.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_ever_grande_city_uivo_v1/palettes/01.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_ever_grande_city_uivo_v1/palettes/02.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_ever_grande_city_uivo_v1/palettes/02.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_ever_grande_city_uivo_v1/palettes/03.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_ever_grande_city_uivo_v1/palettes/03.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_ever_grande_city_uivo_v1/palettes/04.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_ever_grande_city_uivo_v1/palettes/04.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_ever_grande_city_uivo_v1/palettes/05.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_ever_grande_city_uivo_v1/palettes/05.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_ever_grande_city_uivo_v1/palettes/06.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_ever_grande_city_uivo_v1/palettes/06.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_ever_grande_city_uivo_v1/palettes/07.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_ever_grande_city_uivo_v1/palettes/07.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_ever_grande_city_uivo_v1/palettes/08.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_ever_grande_city_uivo_v1/palettes/08.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_ever_grande_city_uivo_v1/palettes/10.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_ever_grande_city_uivo_v1/palettes/10.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_ever_grande_city_uivo_v1/palettes/11.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_ever_grande_city_uivo_v1/palettes/11.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_ever_grande_city_uivo_v1/palettes/09.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_ever_grande_city_uivo_v1/palettes/09.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_ever_grande_city_uivo_v1/palettes/12.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_ever_grande_city_uivo_v1/palettes/12.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_ever_grande_city_uivo_v1/tiles.png build/arauna-en/assets/data/tilesets/secondary/arauna_border_ever_grande_city_uivo_v1/tiles.png.4bpp
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_lavaridge_town_uivo_v1/palettes/00.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_lavaridge_town_uivo_v1/palettes/00.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_lavaridge_town_uivo_v1/palettes/01.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_lavaridge_town_uivo_v1/palettes/01.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_lavaridge_town_uivo_v1/palettes/03.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_lavaridge_town_uivo_v1/palettes/03.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_lavaridge_town_uivo_v1/palettes/04.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_lavaridge_town_uivo_v1/palettes/04.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_lavaridge_town_uivo_v1/palettes/05.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_lavaridge_town_uivo_v1/palettes/05.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_lavaridge_town_uivo_v1/palettes/06.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_lavaridge_town_uivo_v1/palettes/06.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_lavaridge_town_uivo_v1/palettes/02.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_lavaridge_town_uivo_v1/palettes/02.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_lavaridge_town_uivo_v1/palettes/07.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_lavaridge_town_uivo_v1/palettes/07.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_lavaridge_town_uivo_v1/palettes/08.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_lavaridge_town_uivo_v1/palettes/08.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_lavaridge_town_uivo_v1/palettes/09.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_lavaridge_town_uivo_v1/palettes/09.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_lavaridge_town_uivo_v1/palettes/11.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_lavaridge_town_uivo_v1/palettes/11.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_lavaridge_town_uivo_v1/palettes/12.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_lavaridge_town_uivo_v1/palettes/12.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_lavaridge_town_uivo_v1/palettes/10.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_lavaridge_town_uivo_v1/palettes/10.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_lavaridge_town_uivo_v1/tiles.png build/arauna-en/assets/data/tilesets/secondary/arauna_border_lavaridge_town_uivo_v1/tiles.png.4bpp
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_mauville_city_uivo_v1/palettes/00.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_mauville_city_uivo_v1/palettes/00.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_mauville_city_uivo_v1/palettes/01.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_mauville_city_uivo_v1/palettes/01.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_mauville_city_uivo_v1/palettes/02.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_mauville_city_uivo_v1/palettes/02.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_mauville_city_uivo_v1/palettes/03.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_mauville_city_uivo_v1/palettes/03.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_mauville_city_uivo_v1/palettes/04.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_mauville_city_uivo_v1/palettes/04.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_mauville_city_uivo_v1/palettes/05.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_mauville_city_uivo_v1/palettes/05.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_mauville_city_uivo_v1/palettes/06.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_mauville_city_uivo_v1/palettes/06.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_mauville_city_uivo_v1/palettes/08.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_mauville_city_uivo_v1/palettes/08.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_mauville_city_uivo_v1/palettes/07.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_mauville_city_uivo_v1/palettes/07.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_mauville_city_uivo_v1/palettes/09.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_mauville_city_uivo_v1/palettes/09.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_mauville_city_uivo_v1/palettes/10.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_mauville_city_uivo_v1/palettes/10.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_mauville_city_uivo_v1/palettes/11.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_mauville_city_uivo_v1/palettes/11.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_mauville_city_uivo_v1/palettes/12.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_mauville_city_uivo_v1/palettes/12.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_mauville_city_uivo_v1/tiles.png build/arauna-en/assets/data/tilesets/secondary/arauna_border_mauville_city_uivo_v1/tiles.png.4bpp
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_oldale_town_uivo_v1/palettes/00.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_oldale_town_uivo_v1/palettes/00.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_oldale_town_uivo_v1/palettes/02.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_oldale_town_uivo_v1/palettes/02.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_oldale_town_uivo_v1/palettes/01.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_oldale_town_uivo_v1/palettes/01.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_oldale_town_uivo_v1/palettes/03.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_oldale_town_uivo_v1/palettes/03.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_oldale_town_uivo_v1/palettes/04.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_oldale_town_uivo_v1/palettes/04.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_oldale_town_uivo_v1/palettes/05.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_oldale_town_uivo_v1/palettes/05.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_oldale_town_uivo_v1/palettes/06.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_oldale_town_uivo_v1/palettes/06.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_oldale_town_uivo_v1/palettes/07.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_oldale_town_uivo_v1/palettes/07.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_oldale_town_uivo_v1/palettes/08.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_oldale_town_uivo_v1/palettes/08.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_oldale_town_uivo_v1/palettes/09.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_oldale_town_uivo_v1/palettes/09.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_oldale_town_uivo_v1/palettes/10.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_oldale_town_uivo_v1/palettes/10.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_oldale_town_uivo_v1/palettes/11.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_oldale_town_uivo_v1/palettes/11.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_oldale_town_uivo_v1/palettes/12.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_oldale_town_uivo_v1/palettes/12.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_oldale_town_uivo_v1/tiles.png build/arauna-en/assets/data/tilesets/secondary/arauna_border_oldale_town_uivo_v1/tiles.png.4bpp
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_petalburg_city_uivo_v1/palettes/00.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_petalburg_city_uivo_v1/palettes/00.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_petalburg_city_uivo_v1/palettes/02.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_petalburg_city_uivo_v1/palettes/02.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_petalburg_city_uivo_v1/palettes/03.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_petalburg_city_uivo_v1/palettes/03.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_petalburg_city_uivo_v1/palettes/01.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_petalburg_city_uivo_v1/palettes/01.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_petalburg_city_uivo_v1/palettes/04.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_petalburg_city_uivo_v1/palettes/04.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_petalburg_city_uivo_v1/palettes/05.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_petalburg_city_uivo_v1/palettes/05.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_petalburg_city_uivo_v1/palettes/06.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_petalburg_city_uivo_v1/palettes/06.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_petalburg_city_uivo_v1/palettes/07.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_petalburg_city_uivo_v1/palettes/07.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_petalburg_city_uivo_v1/palettes/10.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_petalburg_city_uivo_v1/palettes/10.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_petalburg_city_uivo_v1/palettes/08.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_petalburg_city_uivo_v1/palettes/08.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_petalburg_city_uivo_v1/palettes/09.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_petalburg_city_uivo_v1/palettes/09.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_petalburg_city_uivo_v1/palettes/11.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_petalburg_city_uivo_v1/palettes/11.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_petalburg_city_uivo_v1/palettes/12.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_petalburg_city_uivo_v1/palettes/12.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_petalburg_city_uivo_v1/tiles.png build/arauna-en/assets/data/tilesets/secondary/arauna_border_petalburg_city_uivo_v1/tiles.png.4bpp
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route102_uivo_v1/palettes/01.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route102_uivo_v1/palettes/01.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route102_uivo_v1/palettes/02.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route102_uivo_v1/palettes/02.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route102_uivo_v1/palettes/00.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route102_uivo_v1/palettes/00.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route102_uivo_v1/palettes/03.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route102_uivo_v1/palettes/03.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route102_uivo_v1/palettes/04.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route102_uivo_v1/palettes/04.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route102_uivo_v1/palettes/05.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route102_uivo_v1/palettes/05.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route102_uivo_v1/palettes/06.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route102_uivo_v1/palettes/06.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route102_uivo_v1/palettes/07.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route102_uivo_v1/palettes/07.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route102_uivo_v1/palettes/08.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route102_uivo_v1/palettes/08.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route102_uivo_v1/palettes/09.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route102_uivo_v1/palettes/09.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route102_uivo_v1/palettes/10.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route102_uivo_v1/palettes/10.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route102_uivo_v1/palettes/11.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route102_uivo_v1/palettes/11.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route102_uivo_v1/palettes/12.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route102_uivo_v1/palettes/12.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route102_uivo_v1/tiles.png build/arauna-en/assets/data/tilesets/secondary/arauna_border_route102_uivo_v1/tiles.png.4bpp
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route103_uivo_v1/palettes/00.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route103_uivo_v1/palettes/00.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route103_uivo_v1/palettes/01.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route103_uivo_v1/palettes/01.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route103_uivo_v1/palettes/02.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route103_uivo_v1/palettes/02.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route103_uivo_v1/palettes/04.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route103_uivo_v1/palettes/04.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route103_uivo_v1/palettes/03.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route103_uivo_v1/palettes/03.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route103_uivo_v1/palettes/05.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route103_uivo_v1/palettes/05.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route103_uivo_v1/palettes/06.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route103_uivo_v1/palettes/06.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route103_uivo_v1/palettes/07.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route103_uivo_v1/palettes/07.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route103_uivo_v1/palettes/08.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route103_uivo_v1/palettes/08.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route103_uivo_v1/palettes/09.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route103_uivo_v1/palettes/09.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route103_uivo_v1/palettes/11.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route103_uivo_v1/palettes/11.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route103_uivo_v1/palettes/10.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route103_uivo_v1/palettes/10.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route103_uivo_v1/palettes/12.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route103_uivo_v1/palettes/12.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route103_uivo_v1/tiles.png build/arauna-en/assets/data/tilesets/secondary/arauna_border_route103_uivo_v1/tiles.png.4bpp
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route104_uivo_v1/palettes/00.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route104_uivo_v1/palettes/00.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route104_uivo_v1/palettes/01.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route104_uivo_v1/palettes/01.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route104_uivo_v1/palettes/02.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route104_uivo_v1/palettes/02.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route104_uivo_v1/palettes/03.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route104_uivo_v1/palettes/03.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route104_uivo_v1/palettes/04.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route104_uivo_v1/palettes/04.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route104_uivo_v1/palettes/05.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route104_uivo_v1/palettes/05.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route104_uivo_v1/palettes/06.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route104_uivo_v1/palettes/06.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route104_uivo_v1/palettes/07.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route104_uivo_v1/palettes/07.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route104_uivo_v1/palettes/08.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route104_uivo_v1/palettes/08.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route104_uivo_v1/palettes/09.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route104_uivo_v1/palettes/09.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route104_uivo_v1/palettes/10.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route104_uivo_v1/palettes/10.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route104_uivo_v1/palettes/11.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route104_uivo_v1/palettes/11.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route104_uivo_v1/palettes/12.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route104_uivo_v1/palettes/12.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route104_uivo_v1/tiles.png build/arauna-en/assets/data/tilesets/secondary/arauna_border_route104_uivo_v1/tiles.png.4bpp
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route105_uivo_v1/palettes/00.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route105_uivo_v1/palettes/00.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route105_uivo_v1/palettes/01.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route105_uivo_v1/palettes/01.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route105_uivo_v1/palettes/02.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route105_uivo_v1/palettes/02.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route105_uivo_v1/palettes/03.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route105_uivo_v1/palettes/03.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route105_uivo_v1/palettes/04.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route105_uivo_v1/palettes/04.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route105_uivo_v1/palettes/05.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route105_uivo_v1/palettes/05.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route105_uivo_v1/palettes/06.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route105_uivo_v1/palettes/06.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route105_uivo_v1/palettes/08.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route105_uivo_v1/palettes/08.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route105_uivo_v1/palettes/07.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route105_uivo_v1/palettes/07.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route105_uivo_v1/palettes/09.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route105_uivo_v1/palettes/09.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route105_uivo_v1/palettes/10.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route105_uivo_v1/palettes/10.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route105_uivo_v1/palettes/11.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route105_uivo_v1/palettes/11.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route105_uivo_v1/palettes/12.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route105_uivo_v1/palettes/12.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route105_uivo_v1/tiles.png build/arauna-en/assets/data/tilesets/secondary/arauna_border_route105_uivo_v1/tiles.png.4bpp
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route110_uivo_v1/palettes/01.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route110_uivo_v1/palettes/01.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route110_uivo_v1/palettes/00.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route110_uivo_v1/palettes/00.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route110_uivo_v1/palettes/02.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route110_uivo_v1/palettes/02.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route110_uivo_v1/palettes/03.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route110_uivo_v1/palettes/03.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route110_uivo_v1/palettes/04.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route110_uivo_v1/palettes/04.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route110_uivo_v1/palettes/05.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route110_uivo_v1/palettes/05.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route110_uivo_v1/palettes/06.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route110_uivo_v1/palettes/06.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route110_uivo_v1/palettes/07.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route110_uivo_v1/palettes/07.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route110_uivo_v1/palettes/08.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route110_uivo_v1/palettes/08.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route110_uivo_v1/palettes/09.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route110_uivo_v1/palettes/09.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route110_uivo_v1/palettes/10.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route110_uivo_v1/palettes/10.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route110_uivo_v1/palettes/11.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route110_uivo_v1/palettes/11.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route110_uivo_v1/palettes/12.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route110_uivo_v1/palettes/12.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route110_uivo_v1/tiles.png build/arauna-en/assets/data/tilesets/secondary/arauna_border_route110_uivo_v1/tiles.png.4bpp
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route111_uivo_v1/palettes/00.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route111_uivo_v1/palettes/00.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route111_uivo_v1/palettes/01.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route111_uivo_v1/palettes/01.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route111_uivo_v1/palettes/02.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route111_uivo_v1/palettes/02.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route111_uivo_v1/palettes/03.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route111_uivo_v1/palettes/03.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route111_uivo_v1/palettes/04.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route111_uivo_v1/palettes/04.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route111_uivo_v1/palettes/05.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route111_uivo_v1/palettes/05.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route111_uivo_v1/palettes/07.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route111_uivo_v1/palettes/07.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route111_uivo_v1/palettes/06.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route111_uivo_v1/palettes/06.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route111_uivo_v1/palettes/08.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route111_uivo_v1/palettes/08.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route111_uivo_v1/palettes/09.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route111_uivo_v1/palettes/09.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route111_uivo_v1/palettes/10.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route111_uivo_v1/palettes/10.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route111_uivo_v1/palettes/11.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route111_uivo_v1/palettes/11.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route111_uivo_v1/palettes/12.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route111_uivo_v1/palettes/12.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route111_uivo_v1/tiles.png build/arauna-en/assets/data/tilesets/secondary/arauna_border_route111_uivo_v1/tiles.png.4bpp
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route112_uivo_v1/palettes/00.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route112_uivo_v1/palettes/00.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route112_uivo_v1/palettes/01.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route112_uivo_v1/palettes/01.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route112_uivo_v1/palettes/02.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route112_uivo_v1/palettes/02.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route112_uivo_v1/palettes/03.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route112_uivo_v1/palettes/03.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route112_uivo_v1/palettes/04.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route112_uivo_v1/palettes/04.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route112_uivo_v1/palettes/05.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route112_uivo_v1/palettes/05.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route112_uivo_v1/palettes/06.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route112_uivo_v1/palettes/06.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route112_uivo_v1/palettes/07.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route112_uivo_v1/palettes/07.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route112_uivo_v1/palettes/08.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route112_uivo_v1/palettes/08.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route112_uivo_v1/palettes/09.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route112_uivo_v1/palettes/09.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route112_uivo_v1/palettes/11.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route112_uivo_v1/palettes/11.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route112_uivo_v1/palettes/10.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route112_uivo_v1/palettes/10.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route112_uivo_v1/palettes/12.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route112_uivo_v1/palettes/12.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route112_uivo_v1/tiles.png build/arauna-en/assets/data/tilesets/secondary/arauna_border_route112_uivo_v1/tiles.png.4bpp
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route114_uivo_v1/palettes/00.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route114_uivo_v1/palettes/00.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route114_uivo_v1/palettes/02.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route114_uivo_v1/palettes/02.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route114_uivo_v1/palettes/03.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route114_uivo_v1/palettes/03.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route114_uivo_v1/palettes/01.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route114_uivo_v1/palettes/01.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route114_uivo_v1/palettes/05.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route114_uivo_v1/palettes/05.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route114_uivo_v1/palettes/04.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route114_uivo_v1/palettes/04.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route114_uivo_v1/palettes/06.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route114_uivo_v1/palettes/06.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route114_uivo_v1/palettes/07.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route114_uivo_v1/palettes/07.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route114_uivo_v1/palettes/08.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route114_uivo_v1/palettes/08.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route114_uivo_v1/palettes/09.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route114_uivo_v1/palettes/09.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route114_uivo_v1/palettes/10.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route114_uivo_v1/palettes/10.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route114_uivo_v1/palettes/11.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route114_uivo_v1/palettes/11.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route114_uivo_v1/tiles.png build/arauna-en/assets/data/tilesets/secondary/arauna_border_route114_uivo_v1/tiles.png.4bpp
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route115_uivo_v1/palettes/01.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route115_uivo_v1/palettes/01.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route115_uivo_v1/palettes/02.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route115_uivo_v1/palettes/02.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route114_uivo_v1/palettes/12.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route114_uivo_v1/palettes/12.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route115_uivo_v1/palettes/00.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route115_uivo_v1/palettes/00.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route115_uivo_v1/palettes/03.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route115_uivo_v1/palettes/03.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route115_uivo_v1/palettes/04.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route115_uivo_v1/palettes/04.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route115_uivo_v1/palettes/05.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route115_uivo_v1/palettes/05.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route115_uivo_v1/palettes/06.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route115_uivo_v1/palettes/06.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route115_uivo_v1/palettes/07.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route115_uivo_v1/palettes/07.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route115_uivo_v1/palettes/08.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route115_uivo_v1/palettes/08.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route115_uivo_v1/palettes/09.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route115_uivo_v1/palettes/09.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route115_uivo_v1/palettes/10.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route115_uivo_v1/palettes/10.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route115_uivo_v1/palettes/12.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route115_uivo_v1/palettes/12.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route115_uivo_v1/palettes/11.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route115_uivo_v1/palettes/11.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route115_uivo_v1/tiles.png build/arauna-en/assets/data/tilesets/secondary/arauna_border_route115_uivo_v1/tiles.png.4bpp
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route116_uivo_v1/palettes/01.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route116_uivo_v1/palettes/01.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route116_uivo_v1/palettes/02.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route116_uivo_v1/palettes/02.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route116_uivo_v1/palettes/00.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route116_uivo_v1/palettes/00.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route116_uivo_v1/palettes/04.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route116_uivo_v1/palettes/04.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route116_uivo_v1/palettes/03.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route116_uivo_v1/palettes/03.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route116_uivo_v1/palettes/05.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route116_uivo_v1/palettes/05.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route116_uivo_v1/palettes/06.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route116_uivo_v1/palettes/06.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route116_uivo_v1/palettes/07.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route116_uivo_v1/palettes/07.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route116_uivo_v1/palettes/08.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route116_uivo_v1/palettes/08.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route116_uivo_v1/palettes/09.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route116_uivo_v1/palettes/09.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route116_uivo_v1/palettes/10.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route116_uivo_v1/palettes/10.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route116_uivo_v1/palettes/11.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route116_uivo_v1/palettes/11.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route116_uivo_v1/tiles.png build/arauna-en/assets/data/tilesets/secondary/arauna_border_route116_uivo_v1/tiles.png.4bpp
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route116_uivo_v1/palettes/12.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route116_uivo_v1/palettes/12.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route117_uivo_v1/palettes/00.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route117_uivo_v1/palettes/00.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route117_uivo_v1/palettes/01.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route117_uivo_v1/palettes/01.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route117_uivo_v1/palettes/02.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route117_uivo_v1/palettes/02.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route117_uivo_v1/palettes/03.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route117_uivo_v1/palettes/03.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route117_uivo_v1/palettes/04.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route117_uivo_v1/palettes/04.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route117_uivo_v1/palettes/05.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route117_uivo_v1/palettes/05.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route117_uivo_v1/palettes/07.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route117_uivo_v1/palettes/07.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route117_uivo_v1/palettes/06.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route117_uivo_v1/palettes/06.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route117_uivo_v1/palettes/08.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route117_uivo_v1/palettes/08.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route117_uivo_v1/palettes/10.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route117_uivo_v1/palettes/10.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route117_uivo_v1/palettes/09.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route117_uivo_v1/palettes/09.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route117_uivo_v1/palettes/11.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route117_uivo_v1/palettes/11.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route118_uivo_v1/palettes/00.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route118_uivo_v1/palettes/00.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route117_uivo_v1/palettes/12.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route117_uivo_v1/palettes/12.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route118_uivo_v1/palettes/01.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route118_uivo_v1/palettes/01.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route117_uivo_v1/tiles.png build/arauna-en/assets/data/tilesets/secondary/arauna_border_route117_uivo_v1/tiles.png.4bpp
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route118_uivo_v1/palettes/02.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route118_uivo_v1/palettes/02.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route118_uivo_v1/palettes/03.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route118_uivo_v1/palettes/03.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route118_uivo_v1/palettes/06.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route118_uivo_v1/palettes/06.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route118_uivo_v1/palettes/07.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route118_uivo_v1/palettes/07.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route118_uivo_v1/palettes/04.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route118_uivo_v1/palettes/04.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route118_uivo_v1/palettes/05.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route118_uivo_v1/palettes/05.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route118_uivo_v1/palettes/08.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route118_uivo_v1/palettes/08.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route118_uivo_v1/palettes/09.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route118_uivo_v1/palettes/09.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route118_uivo_v1/palettes/10.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route118_uivo_v1/palettes/10.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route118_uivo_v1/palettes/11.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route118_uivo_v1/palettes/11.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route118_uivo_v1/palettes/12.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route118_uivo_v1/palettes/12.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route118_uivo_v1/tiles.png build/arauna-en/assets/data/tilesets/secondary/arauna_border_route118_uivo_v1/tiles.png.4bpp
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route119_uivo_v1/palettes/00.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route119_uivo_v1/palettes/00.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route119_uivo_v1/palettes/02.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route119_uivo_v1/palettes/02.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route119_uivo_v1/palettes/01.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route119_uivo_v1/palettes/01.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route119_uivo_v1/palettes/03.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route119_uivo_v1/palettes/03.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route119_uivo_v1/palettes/05.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route119_uivo_v1/palettes/05.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route119_uivo_v1/palettes/06.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route119_uivo_v1/palettes/06.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route119_uivo_v1/palettes/07.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route119_uivo_v1/palettes/07.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route119_uivo_v1/palettes/04.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route119_uivo_v1/palettes/04.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route119_uivo_v1/palettes/08.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route119_uivo_v1/palettes/08.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route119_uivo_v1/palettes/09.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route119_uivo_v1/palettes/09.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route119_uivo_v1/palettes/10.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route119_uivo_v1/palettes/10.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route119_uivo_v1/palettes/11.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route119_uivo_v1/palettes/11.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route119_uivo_v1/palettes/12.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route119_uivo_v1/palettes/12.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route119_uivo_v1/tiles.png build/arauna-en/assets/data/tilesets/secondary/arauna_border_route119_uivo_v1/tiles.png.4bpp
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route124_uivo_v1/palettes/00.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route124_uivo_v1/palettes/00.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route124_uivo_v1/palettes/01.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route124_uivo_v1/palettes/01.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route124_uivo_v1/palettes/02.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route124_uivo_v1/palettes/02.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route124_uivo_v1/palettes/03.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route124_uivo_v1/palettes/03.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route124_uivo_v1/palettes/04.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route124_uivo_v1/palettes/04.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route124_uivo_v1/palettes/06.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route124_uivo_v1/palettes/06.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route124_uivo_v1/palettes/05.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route124_uivo_v1/palettes/05.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route124_uivo_v1/palettes/07.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route124_uivo_v1/palettes/07.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route124_uivo_v1/palettes/08.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route124_uivo_v1/palettes/08.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route124_uivo_v1/palettes/09.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route124_uivo_v1/palettes/09.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route124_uivo_v1/palettes/11.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route124_uivo_v1/palettes/11.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route124_uivo_v1/palettes/10.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route124_uivo_v1/palettes/10.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route124_uivo_v1/palettes/12.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route124_uivo_v1/palettes/12.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route124_uivo_v1/tiles.png build/arauna-en/assets/data/tilesets/secondary/arauna_border_route124_uivo_v1/tiles.png.4bpp
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route126_uivo_v1/palettes/00.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route126_uivo_v1/palettes/00.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route126_uivo_v1/palettes/01.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route126_uivo_v1/palettes/01.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route126_uivo_v1/palettes/03.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route126_uivo_v1/palettes/03.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route126_uivo_v1/palettes/02.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route126_uivo_v1/palettes/02.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route126_uivo_v1/palettes/04.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route126_uivo_v1/palettes/04.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route126_uivo_v1/palettes/06.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route126_uivo_v1/palettes/06.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route126_uivo_v1/palettes/05.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route126_uivo_v1/palettes/05.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route126_uivo_v1/palettes/07.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route126_uivo_v1/palettes/07.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route126_uivo_v1/palettes/08.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route126_uivo_v1/palettes/08.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route126_uivo_v1/palettes/09.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route126_uivo_v1/palettes/09.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route126_uivo_v1/palettes/10.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route126_uivo_v1/palettes/10.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route126_uivo_v1/palettes/11.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route126_uivo_v1/palettes/11.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route126_uivo_v1/palettes/12.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route126_uivo_v1/palettes/12.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route126_uivo_v1/tiles.png build/arauna-en/assets/data/tilesets/secondary/arauna_border_route126_uivo_v1/tiles.png.4bpp
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route128_uivo_v1/palettes/00.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route128_uivo_v1/palettes/00.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route128_uivo_v1/palettes/01.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route128_uivo_v1/palettes/01.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route128_uivo_v1/palettes/02.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route128_uivo_v1/palettes/02.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route128_uivo_v1/palettes/03.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route128_uivo_v1/palettes/03.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route128_uivo_v1/palettes/04.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route128_uivo_v1/palettes/04.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route128_uivo_v1/palettes/05.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route128_uivo_v1/palettes/05.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route128_uivo_v1/palettes/06.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route128_uivo_v1/palettes/06.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route128_uivo_v1/palettes/07.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route128_uivo_v1/palettes/07.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route128_uivo_v1/palettes/08.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route128_uivo_v1/palettes/08.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route128_uivo_v1/palettes/09.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route128_uivo_v1/palettes/09.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route128_uivo_v1/palettes/10.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route128_uivo_v1/palettes/10.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route128_uivo_v1/palettes/11.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route128_uivo_v1/palettes/11.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route128_uivo_v1/palettes/12.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_route128_uivo_v1/palettes/12.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_route128_uivo_v1/tiles.png build/arauna-en/assets/data/tilesets/secondary/arauna_border_route128_uivo_v1/tiles.png.4bpp
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_rustboro_city_uivo_v1/palettes/00.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_rustboro_city_uivo_v1/palettes/00.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_rustboro_city_uivo_v1/palettes/01.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_rustboro_city_uivo_v1/palettes/01.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_rustboro_city_uivo_v1/palettes/02.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_rustboro_city_uivo_v1/palettes/02.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_rustboro_city_uivo_v1/palettes/03.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_rustboro_city_uivo_v1/palettes/03.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_rustboro_city_uivo_v1/palettes/06.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_rustboro_city_uivo_v1/palettes/06.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_rustboro_city_uivo_v1/palettes/04.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_rustboro_city_uivo_v1/palettes/04.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_rustboro_city_uivo_v1/palettes/05.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_rustboro_city_uivo_v1/palettes/05.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_rustboro_city_uivo_v1/palettes/07.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_rustboro_city_uivo_v1/palettes/07.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_rustboro_city_uivo_v1/palettes/08.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_rustboro_city_uivo_v1/palettes/08.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_rustboro_city_uivo_v1/palettes/10.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_rustboro_city_uivo_v1/palettes/10.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_rustboro_city_uivo_v1/palettes/11.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_rustboro_city_uivo_v1/palettes/11.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_rustboro_city_uivo_v1/palettes/09.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_rustboro_city_uivo_v1/palettes/09.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_rustboro_city_uivo_v1/palettes/12.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_rustboro_city_uivo_v1/palettes/12.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_rustboro_city_uivo_v1/tiles.png build/arauna-en/assets/data/tilesets/secondary/arauna_border_rustboro_city_uivo_v1/tiles.png.4bpp
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_slateport_city_uivo_v1/palettes/00.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_slateport_city_uivo_v1/palettes/00.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_slateport_city_uivo_v1/palettes/01.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_slateport_city_uivo_v1/palettes/01.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_slateport_city_uivo_v1/palettes/04.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_slateport_city_uivo_v1/palettes/04.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_slateport_city_uivo_v1/palettes/02.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_slateport_city_uivo_v1/palettes/02.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_slateport_city_uivo_v1/palettes/05.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_slateport_city_uivo_v1/palettes/05.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_slateport_city_uivo_v1/palettes/03.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_slateport_city_uivo_v1/palettes/03.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_slateport_city_uivo_v1/palettes/06.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_slateport_city_uivo_v1/palettes/06.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_slateport_city_uivo_v1/palettes/07.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_slateport_city_uivo_v1/palettes/07.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_slateport_city_uivo_v1/palettes/08.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_slateport_city_uivo_v1/palettes/08.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_slateport_city_uivo_v1/palettes/09.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_slateport_city_uivo_v1/palettes/09.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_slateport_city_uivo_v1/palettes/10.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_slateport_city_uivo_v1/palettes/10.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_slateport_city_uivo_v1/palettes/11.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_slateport_city_uivo_v1/palettes/11.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_slateport_city_uivo_v1/tiles.png build/arauna-en/assets/data/tilesets/secondary/arauna_border_slateport_city_uivo_v1/tiles.png.4bpp
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_slateport_city_uivo_v1/palettes/12.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_slateport_city_uivo_v1/palettes/12.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_verdanturf_town_uivo_v1/palettes/00.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_verdanturf_town_uivo_v1/palettes/00.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_verdanturf_town_uivo_v1/palettes/01.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_verdanturf_town_uivo_v1/palettes/01.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_verdanturf_town_uivo_v1/palettes/03.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_verdanturf_town_uivo_v1/palettes/03.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_verdanturf_town_uivo_v1/palettes/04.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_verdanturf_town_uivo_v1/palettes/04.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_verdanturf_town_uivo_v1/palettes/02.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_verdanturf_town_uivo_v1/palettes/02.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_verdanturf_town_uivo_v1/palettes/05.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_verdanturf_town_uivo_v1/palettes/05.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_verdanturf_town_uivo_v1/palettes/06.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_verdanturf_town_uivo_v1/palettes/06.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_verdanturf_town_uivo_v1/palettes/07.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_verdanturf_town_uivo_v1/palettes/07.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_verdanturf_town_uivo_v1/palettes/08.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_verdanturf_town_uivo_v1/palettes/08.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_verdanturf_town_uivo_v1/palettes/10.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_verdanturf_town_uivo_v1/palettes/10.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_verdanturf_town_uivo_v1/palettes/09.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_verdanturf_town_uivo_v1/palettes/09.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_verdanturf_town_uivo_v1/palettes/11.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_verdanturf_town_uivo_v1/palettes/11.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_verdanturf_town_uivo_v1/palettes/12.pal build/arauna-en/assets/data/tilesets/secondary/arauna_border_verdanturf_town_uivo_v1/palettes/12.pal.gbapal
+tools/gbagfx/gbagfx data/tilesets/secondary/arauna_border_verdanturf_town_uivo_v1/tiles.png build/arauna-en/assets/data/tilesets/secondary/arauna_border_verdanturf_town_uivo_v1/tiles.png.4bpp
+$WORKSPACE/deps/root/usr/bin/../lib/gcc/arm-none-eabi/13.2.1/cc1 -quiet <flags> -o build/arauna-en/modern/src/trade.o src/trade.c
+$WORKSPACE/deps/root/usr/bin/../lib/gcc/arm-none-eabi/13.2.1/cc1 -quiet <flags> -o build/arauna-en/modern/src/trainer_hill.o src/trainer_hill.c
+$WORKSPACE/deps/root/usr/bin/../lib/gcc/arm-none-eabi/13.2.1/cc1 -quiet <flags> -o build/arauna-en/modern/src/trainer_see.o src/trainer_see.c
+$WORKSPACE/deps/root/usr/bin/../lib/gcc/arm-none-eabi/13.2.1/cc1 -quiet <flags> -o build/arauna-en/modern/src/tv.o src/tv.c
+$WORKSPACE/deps/root/usr/bin/../lib/gcc/arm-none-eabi/13.2.1/cc1 -quiet <flags> -o build/arauna-en/modern/src/union_room_player_avatar.o src/union_room_player_avatar.c
+$WORKSPACE/deps/root/usr/bin/../lib/gcc/arm-none-eabi/13.2.1/cc1 -quiet <flags> -o build/arauna-en/modern/src/wild_encounter.o src/wild_encounter.c
+tools/preproc/preproc data/event_scripts.s charmap.txt | arm-none-eabi-cpp -I include - | tools/preproc/preproc -ie data/event_scripts.s charmap.txt | arm-none-eabi-as -mcpu=arm7tdmi --defsym MODERN=1 -o build/arauna-en/modern/data/event_scripts.o
+tools/preproc/preproc data/map_events.s charmap.txt | arm-none-eabi-cpp -I include - | tools/preproc/preproc -ie data/map_events.s charmap.txt | arm-none-eabi-as -mcpu=arm7tdmi --defsym MODERN=1 -o build/arauna-en/modern/data/map_events.o
+tools/preproc/preproc data/maps.s charmap.txt | arm-none-eabi-cpp -I include - | tools/preproc/preproc -ie data/maps.s charmap.txt | arm-none-eabi-as -mcpu=arm7tdmi --defsym MODERN=1 -o build/arauna-en/modern/data/maps.o
+tools/preproc/preproc data/mystery_gift.s charmap.txt | arm-none-eabi-cpp -I include - | tools/preproc/preproc -ie data/mystery_gift.s charmap.txt | arm-none-eabi-as -mcpu=arm7tdmi --defsym MODERN=1 -o build/arauna-en/modern/data/mystery_gift.o
+tools/gbagfx/gbagfx build/arauna-en/assets/data/tilesets/primary/arauna_border_ever_grande_city_uivo_v1/tiles.png.4bpp build/arauna-en/assets/data/tilesets/primary/arauna_border_ever_grande_city_uivo_v1/tiles.png.4bpp.lz
+tools/gbagfx/gbagfx build/arauna-en/assets/data/tilesets/primary/arauna_border_lavaridge_town_uivo_v1/tiles.png.4bpp build/arauna-en/assets/data/tilesets/primary/arauna_border_lavaridge_town_uivo_v1/tiles.png.4bpp.lz
+tools/gbagfx/gbagfx build/arauna-en/assets/data/tilesets/primary/arauna_border_mauville_city_uivo_v1/tiles.png.4bpp build/arauna-en/assets/data/tilesets/primary/arauna_border_mauville_city_uivo_v1/tiles.png.4bpp.lz
+tools/gbagfx/gbagfx build/arauna-en/assets/data/tilesets/primary/arauna_border_oldale_town_uivo_v1/tiles.png.4bpp build/arauna-en/assets/data/tilesets/primary/arauna_border_oldale_town_uivo_v1/tiles.png.4bpp.lz
+tools/gbagfx/gbagfx build/arauna-en/assets/data/tilesets/primary/arauna_border_petalburg_city_uivo_v1/tiles.png.4bpp build/arauna-en/assets/data/tilesets/primary/arauna_border_petalburg_city_uivo_v1/tiles.png.4bpp.lz
+tools/gbagfx/gbagfx build/arauna-en/assets/data/tilesets/primary/arauna_border_route102_uivo_v1/tiles.png.4bpp build/arauna-en/assets/data/tilesets/primary/arauna_border_route102_uivo_v1/tiles.png.4bpp.lz
+tools/gbagfx/gbagfx build/arauna-en/assets/data/tilesets/primary/arauna_border_route103_uivo_v1/tiles.png.4bpp build/arauna-en/assets/data/tilesets/primary/arauna_border_route103_uivo_v1/tiles.png.4bpp.lz
+tools/gbagfx/gbagfx build/arauna-en/assets/data/tilesets/primary/arauna_border_route104_uivo_v1/tiles.png.4bpp build/arauna-en/assets/data/tilesets/primary/arauna_border_route104_uivo_v1/tiles.png.4bpp.lz
+tools/gbagfx/gbagfx build/arauna-en/assets/data/tilesets/primary/arauna_border_route105_uivo_v1/tiles.png.4bpp build/arauna-en/assets/data/tilesets/primary/arauna_border_route105_uivo_v1/tiles.png.4bpp.lz
+tools/gbagfx/gbagfx build/arauna-en/assets/data/tilesets/primary/arauna_border_route110_uivo_v1/tiles.png.4bpp build/arauna-en/assets/data/tilesets/primary/arauna_border_route110_uivo_v1/tiles.png.4bpp.lz
+tools/gbagfx/gbagfx build/arauna-en/assets/data/tilesets/primary/arauna_border_route111_uivo_v1/tiles.png.4bpp build/arauna-en/assets/data/tilesets/primary/arauna_border_route111_uivo_v1/tiles.png.4bpp.lz
+tools/gbagfx/gbagfx build/arauna-en/assets/data/tilesets/primary/arauna_border_route112_uivo_v1/tiles.png.4bpp build/arauna-en/assets/data/tilesets/primary/arauna_border_route112_uivo_v1/tiles.png.4bpp.lz
+tools/gbagfx/gbagfx build/arauna-en/assets/data/tilesets/primary/arauna_border_route114_uivo_v1/tiles.png.4bpp build/arauna-en/assets/data/tilesets/primary/arauna_border_route114_uivo_v1/tiles.png.4bpp.lz
+tools/gbagfx/gbagfx build/arauna-en/assets/data/tilesets/primary/arauna_border_route115_uivo_v1/tiles.png.4bpp build/arauna-en/assets/data/tilesets/primary/arauna_border_route115_uivo_v1/tiles.png.4bpp.lz
+tools/gbagfx/gbagfx build/arauna-en/assets/data/tilesets/primary/arauna_border_route116_uivo_v1/tiles.png.4bpp build/arauna-en/assets/data/tilesets/primary/arauna_border_route116_uivo_v1/tiles.png.4bpp.lz
+tools/gbagfx/gbagfx build/arauna-en/assets/data/tilesets/primary/arauna_border_route117_uivo_v1/tiles.png.4bpp build/arauna-en/assets/data/tilesets/primary/arauna_border_route117_uivo_v1/tiles.png.4bpp.lz
+tools/gbagfx/gbagfx build/arauna-en/assets/data/tilesets/primary/arauna_border_route118_uivo_v1/tiles.png.4bpp build/arauna-en/assets/data/tilesets/primary/arauna_border_route118_uivo_v1/tiles.png.4bpp.lz
+tools/gbagfx/gbagfx build/arauna-en/assets/data/tilesets/primary/arauna_border_route119_uivo_v1/tiles.png.4bpp build/arauna-en/assets/data/tilesets/primary/arauna_border_route119_uivo_v1/tiles.png.4bpp.lz
+tools/gbagfx/gbagfx build/arauna-en/assets/data/tilesets/primary/arauna_border_route124_uivo_v1/tiles.png.4bpp build/arauna-en/assets/data/tilesets/primary/arauna_border_route124_uivo_v1/tiles.png.4bpp.lz
+tools/gbagfx/gbagfx build/arauna-en/assets/data/tilesets/primary/arauna_border_route126_uivo_v1/tiles.png.4bpp build/arauna-en/assets/data/tilesets/primary/arauna_border_route126_uivo_v1/tiles.png.4bpp.lz
+tools/gbagfx/gbagfx build/arauna-en/assets/data/tilesets/primary/arauna_border_route128_uivo_v1/tiles.png.4bpp build/arauna-en/assets/data/tilesets/primary/arauna_border_route128_uivo_v1/tiles.png.4bpp.lz
+tools/gbagfx/gbagfx build/arauna-en/assets/data/tilesets/primary/arauna_border_rustboro_city_uivo_v1/tiles.png.4bpp build/arauna-en/assets/data/tilesets/primary/arauna_border_rustboro_city_uivo_v1/tiles.png.4bpp.lz
+tools/gbagfx/gbagfx build/arauna-en/assets/data/tilesets/primary/arauna_border_slateport_city_uivo_v1/tiles.png.4bpp build/arauna-en/assets/data/tilesets/primary/arauna_border_slateport_city_uivo_v1/tiles.png.4bpp.lz
+tools/gbagfx/gbagfx build/arauna-en/assets/data/tilesets/primary/arauna_border_verdanturf_town_uivo_v1/tiles.png.4bpp build/arauna-en/assets/data/tilesets/primary/arauna_border_verdanturf_town_uivo_v1/tiles.png.4bpp.lz
+tools/gbagfx/gbagfx build/arauna-en/assets/data/tilesets/secondary/arauna_border_ever_grande_city_uivo_v1/tiles.png.4bpp build/arauna-en/assets/data/tilesets/secondary/arauna_border_ever_grande_city_uivo_v1/tiles.png.4bpp.lz
+tools/gbagfx/gbagfx build/arauna-en/assets/data/tilesets/secondary/arauna_border_lavaridge_town_uivo_v1/tiles.png.4bpp build/arauna-en/assets/data/tilesets/secondary/arauna_border_lavaridge_town_uivo_v1/tiles.png.4bpp.lz
+tools/gbagfx/gbagfx build/arauna-en/assets/data/tilesets/secondary/arauna_border_mauville_city_uivo_v1/tiles.png.4bpp build/arauna-en/assets/data/tilesets/secondary/arauna_border_mauville_city_uivo_v1/tiles.png.4bpp.lz
+tools/gbagfx/gbagfx build/arauna-en/assets/data/tilesets/secondary/arauna_border_oldale_town_uivo_v1/tiles.png.4bpp build/arauna-en/assets/data/tilesets/secondary/arauna_border_oldale_town_uivo_v1/tiles.png.4bpp.lz
+tools/gbagfx/gbagfx build/arauna-en/assets/data/tilesets/secondary/arauna_border_petalburg_city_uivo_v1/tiles.png.4bpp build/arauna-en/assets/data/tilesets/secondary/arauna_border_petalburg_city_uivo_v1/tiles.png.4bpp.lz
+tools/gbagfx/gbagfx build/arauna-en/assets/data/tilesets/secondary/arauna_border_route102_uivo_v1/tiles.png.4bpp build/arauna-en/assets/data/tilesets/secondary/arauna_border_route102_uivo_v1/tiles.png.4bpp.lz
+tools/gbagfx/gbagfx build/arauna-en/assets/data/tilesets/secondary/arauna_border_route103_uivo_v1/tiles.png.4bpp build/arauna-en/assets/data/tilesets/secondary/arauna_border_route103_uivo_v1/tiles.png.4bpp.lz
+tools/gbagfx/gbagfx build/arauna-en/assets/data/tilesets/secondary/arauna_border_route104_uivo_v1/tiles.png.4bpp build/arauna-en/assets/data/tilesets/secondary/arauna_border_route104_uivo_v1/tiles.png.4bpp.lz
+tools/gbagfx/gbagfx build/arauna-en/assets/data/tilesets/secondary/arauna_border_route105_uivo_v1/tiles.png.4bpp build/arauna-en/assets/data/tilesets/secondary/arauna_border_route105_uivo_v1/tiles.png.4bpp.lz
+tools/gbagfx/gbagfx build/arauna-en/assets/data/tilesets/secondary/arauna_border_route110_uivo_v1/tiles.png.4bpp build/arauna-en/assets/data/tilesets/secondary/arauna_border_route110_uivo_v1/tiles.png.4bpp.lz
+tools/gbagfx/gbagfx build/arauna-en/assets/data/tilesets/secondary/arauna_border_route111_uivo_v1/tiles.png.4bpp build/arauna-en/assets/data/tilesets/secondary/arauna_border_route111_uivo_v1/tiles.png.4bpp.lz
+tools/gbagfx/gbagfx build/arauna-en/assets/data/tilesets/secondary/arauna_border_route112_uivo_v1/tiles.png.4bpp build/arauna-en/assets/data/tilesets/secondary/arauna_border_route112_uivo_v1/tiles.png.4bpp.lz
+tools/gbagfx/gbagfx build/arauna-en/assets/data/tilesets/secondary/arauna_border_route114_uivo_v1/tiles.png.4bpp build/arauna-en/assets/data/tilesets/secondary/arauna_border_route114_uivo_v1/tiles.png.4bpp.lz
+tools/gbagfx/gbagfx build/arauna-en/assets/data/tilesets/secondary/arauna_border_route115_uivo_v1/tiles.png.4bpp build/arauna-en/assets/data/tilesets/secondary/arauna_border_route115_uivo_v1/tiles.png.4bpp.lz
+tools/gbagfx/gbagfx build/arauna-en/assets/data/tilesets/secondary/arauna_border_route116_uivo_v1/tiles.png.4bpp build/arauna-en/assets/data/tilesets/secondary/arauna_border_route116_uivo_v1/tiles.png.4bpp.lz
+tools/gbagfx/gbagfx build/arauna-en/assets/data/tilesets/secondary/arauna_border_route117_uivo_v1/tiles.png.4bpp build/arauna-en/assets/data/tilesets/secondary/arauna_border_route117_uivo_v1/tiles.png.4bpp.lz
+tools/gbagfx/gbagfx build/arauna-en/assets/data/tilesets/secondary/arauna_border_route118_uivo_v1/tiles.png.4bpp build/arauna-en/assets/data/tilesets/secondary/arauna_border_route118_uivo_v1/tiles.png.4bpp.lz
+tools/gbagfx/gbagfx build/arauna-en/assets/data/tilesets/secondary/arauna_border_route119_uivo_v1/tiles.png.4bpp build/arauna-en/assets/data/tilesets/secondary/arauna_border_route119_uivo_v1/tiles.png.4bpp.lz
+tools/gbagfx/gbagfx build/arauna-en/assets/data/tilesets/secondary/arauna_border_route124_uivo_v1/tiles.png.4bpp build/arauna-en/assets/data/tilesets/secondary/arauna_border_route124_uivo_v1/tiles.png.4bpp.lz
+tools/gbagfx/gbagfx build/arauna-en/assets/data/tilesets/secondary/arauna_border_route126_uivo_v1/tiles.png.4bpp build/arauna-en/assets/data/tilesets/secondary/arauna_border_route126_uivo_v1/tiles.png.4bpp.lz
+tools/gbagfx/gbagfx build/arauna-en/assets/data/tilesets/secondary/arauna_border_route128_uivo_v1/tiles.png.4bpp build/arauna-en/assets/data/tilesets/secondary/arauna_border_route128_uivo_v1/tiles.png.4bpp.lz
+tools/gbagfx/gbagfx build/arauna-en/assets/data/tilesets/secondary/arauna_border_rustboro_city_uivo_v1/tiles.png.4bpp build/arauna-en/assets/data/tilesets/secondary/arauna_border_rustboro_city_uivo_v1/tiles.png.4bpp.lz
+tools/gbagfx/gbagfx build/arauna-en/assets/data/tilesets/secondary/arauna_border_slateport_city_uivo_v1/tiles.png.4bpp build/arauna-en/assets/data/tilesets/secondary/arauna_border_slateport_city_uivo_v1/tiles.png.4bpp.lz
+tools/gbagfx/gbagfx build/arauna-en/assets/data/tilesets/secondary/arauna_border_verdanturf_town_uivo_v1/tiles.png.4bpp build/arauna-en/assets/data/tilesets/secondary/arauna_border_verdanturf_town_uivo_v1/tiles.png.4bpp.lz
+$WORKSPACE/deps/root/usr/bin/../lib/gcc/arm-none-eabi/13.2.1/cc1 -quiet <flags> -o build/arauna-en/modern/src/tilesets.o src/tilesets.c
+asm/macros/event.inc: Assembler messages:
+asm/macros/event.inc:306: Warning: explicit waitstate follows implicit waitstate, ignoring
+data/scripts/arauna_qol.inc:60:  Info: macro invoked from here
+asm/macros/event.inc:306: Warning: explicit waitstate follows implicit waitstate, ignoring
+data/scripts/arauna_qol.inc:67:  Info: macro invoked from here
+asm/macros/event.inc:306: Warning: explicit waitstate follows implicit waitstate, ignoring
+data/scripts/arauna_qol.inc:85:  Info: macro invoked from here
+asm/macros/event.inc:306: Warning: explicit waitstate follows implicit waitstate, ignoring
+data/scripts/arauna_qol.inc:92:  Info: macro invoked from here
+asm/macros/event.inc:306: Warning: explicit waitstate follows implicit waitstate, ignoring
+data/scripts/arauna_qol.inc:115:  Info: macro invoked from here
+Memory region         Used Size  Region Size  %age Used
+           EWRAM:      249708 B       256 KB     95.26%
+           IWRAM:       30428 B        32 KB     92.86%
+             ROM:    19033172 B        32 MB     56.72%
+cd build/arauna-en/modern && arm-none-eabi-ld -Map ../../../pokemon-juramento-de-arauna-en_modern.map -T ../../../ld_script_modern.ld --print-memory-usage -o ../../../pokemon-juramento-de-arauna-en_modern.elf <objs> <libs> | cat
+tools/gbafix/gbafix pokemon-juramento-de-arauna-en_modern.elf -t"POKEMON EMER" -cBPEE -m01 -r0 --silent
+arm-none-eabi-objcopy -O binary pokemon-juramento-de-arauna-en_modern.elf pokemon-juramento-de-arauna-en_modern.gba
+tools/gbafix/gbafix pokemon-juramento-de-arauna-en_modern.gba -p --silent

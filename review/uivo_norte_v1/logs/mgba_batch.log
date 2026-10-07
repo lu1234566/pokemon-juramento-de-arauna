@@ -1,0 +1,65 @@
+RESUME antes-102-moitas
+CAPTURE antes-103-moitas
+RESUME antes-104-mata-norte
+RESUME antes-104-mata-sul
+RESUME antes-rustboro-gremio
+RESUME antes-rustboro-ginasio
+RESUME antes-rustboro-escola
+RESUME antes-115-costa
+CAPTURE antes-115-escarpa
+RESUME antes-116-trilho
+RESUME antes-115-terra-oeste
+RESUME antes-115-terra-leste
+RESUME antes-116-terra-norte
+RESUME antes-116-terra-sul
+CAPTURE depois-102-moitas
+CAPTURE depois-103-moitas
+CAPTURE depois-104-mata-norte
+CAPTURE depois-104-mata-sul
+CAPTURE depois-rustboro-gremio
+CAPTURE depois-rustboro-ginasio
+CAPTURE depois-rustboro-escola
+CAPTURE depois-115-costa
+CAPTURE depois-115-escarpa
+CAPTURE depois-116-trilho
+CAPTURE depois-115-terra-oeste
+CAPTURE depois-115-terra-leste
+CAPTURE depois-116-terra-norte
+CAPTURE depois-116-terra-sul
+RESUME antes-borda-PetalburgCity-Route102
+CAPTURE depois-borda-PetalburgCity-Route102
+RESUME antes-borda-Route102-PetalburgCity
+CAPTURE depois-borda-Route102-PetalburgCity
+RESUME antes-borda-OldaleTown-Route102
+CAPTURE depois-borda-OldaleTown-Route102
+RESUME antes-borda-Route102-OldaleTown
+CAPTURE depois-borda-Route102-OldaleTown
+RESUME antes-borda-OldaleTown-Route103
+CAPTURE depois-borda-OldaleTown-Route103
+RESUME antes-borda-Route103-OldaleTown
+CAPTURE depois-borda-Route103-OldaleTown
+RESUME antes-borda-Route110-Route103
+CAPTURE depois-borda-Route110-Route103
+RESUME antes-borda-Route103-Route110
+CAPTURE depois-borda-Route103-Route110
+RESUME antes-borda-PetalburgCity-Route104
+CAPTURE depois-borda-PetalburgCity-Route104
+RESUME antes-borda-Route104-PetalburgCity
+CAPTURE depois-borda-Route104-PetalburgCity
+RESUME antes-borda-RustboroCity-Route104
+CAPTURE depois-borda-RustboroCity-Route104
+RESUME antes-borda-Route104-RustboroCity
+CAPTURE depois-borda-Route104-RustboroCity
+RESUME antes-borda-RustboroCity-Route115
+CAPTURE depois-borda-RustboroCity-Route115
+RESUME antes-borda-Route115-RustboroCity
+CAPTURE depois-borda-Route115-RustboroCity
+RESUME antes-borda-RustboroCity-Route116
+CAPTURE depois-borda-RustboroCity-Route116
+RESUME antes-borda-Route116-RustboroCity
+CAPTURE depois-borda-Route116-RustboroCity
+NO NATIVE CROSSING Route115 Route114
+NO NATIVE CROSSING Route114 Route115
+NO NATIVE CROSSING Route116 VerdanturfTown
+NO NATIVE CROSSING VerdanturfTown Route116
+PASS 60 mGBA cases

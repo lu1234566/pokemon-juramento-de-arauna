@@ -1,4 +1,30 @@
 #include "global.h"
+// UIVO_CUT_EXTERNS_BEGIN
+extern const struct Tileset gTileset_AraunaBorderRoute124BaseUivoV1;
+extern const struct Tileset gTileset_AraunaBorderRoute126BaseUivoV1;
+extern const struct Tileset gTileset_AraunaBorderRoute110BaseUivoV1;
+extern const struct Tileset gTileset_AraunaBorderMauvilleCityBaseUivoV1;
+extern const struct Tileset gTileset_AraunaBorderSlateportCityBaseUivoV1;
+extern const struct Tileset gTileset_AraunaBorderEverGrandeCityBaseUivoV1;
+extern const struct Tileset gTileset_AraunaBorderRoute128BaseUivoV1;
+extern const struct Tileset gTileset_AraunaBorderRoute103BaseUivoV1;
+extern const struct Tileset gTileset_AraunaBorderPetalburgCityBaseUivoV1;
+extern const struct Tileset gTileset_AraunaBorderRoute104BaseUivoV1;
+extern const struct Tileset gTileset_AraunaBorderRustboroCityBaseUivoV1;
+extern const struct Tileset gTileset_AraunaBorderRoute111BaseUivoV1;
+extern const struct Tileset gTileset_AraunaBorderRoute117BaseUivoV1;
+extern const struct Tileset gTileset_AraunaBorderRoute118BaseUivoV1;
+extern const struct Tileset gTileset_AraunaBorderRoute115BaseUivoV1;
+extern const struct Tileset gTileset_AraunaBorderLavaridgeTownBaseUivoV1;
+extern const struct Tileset gTileset_AraunaBorderRoute112BaseUivoV1;
+extern const struct Tileset gTileset_AraunaBorderRoute102BaseUivoV1;
+extern const struct Tileset gTileset_AraunaBorderOldaleTownBaseUivoV1;
+extern const struct Tileset gTileset_AraunaBorderRoute105BaseUivoV1;
+extern const struct Tileset gTileset_AraunaBorderRoute119BaseUivoV1;
+extern const struct Tileset gTileset_AraunaBorderRoute116BaseUivoV1;
+extern const struct Tileset gTileset_AraunaBorderRoute114BaseUivoV1;
+extern const struct Tileset gTileset_AraunaBorderVerdanturfTownBaseUivoV1;
+// UIVO_CUT_EXTERNS_END
 // SUL_CUT_EXTERNS_BEGIN
 extern const struct Tileset gTileset_AraunaBorderRoute102BaseSulV1;
 extern const struct Tileset gTileset_AraunaBorderRoute103BaseSulV1;
@@ -364,15 +390,32 @@ bool8 FldEff_CutGrass(void)
 // set map grid metatile depending on x, y
 static void SetCutGrassMetatile(s16 x, s16 y)
 {
+    if (gMapHeader.mapLayout->primaryTileset == &gTileset_AraunaBorderRoute115BaseUivoV1)
+    {
+        switch (MapGridGetMetatileIdAt(x, y))
+        {
+        case 766: MapGridSetMetatileIdAt(x, y, 767); return;
+        default: break;
+        }
+    }
+    if (gMapHeader.mapLayout->primaryTileset == &gTileset_AraunaBorderRoute116BaseUivoV1)
+    {
+        switch (MapGridGetMetatileIdAt(x, y))
+        {
+        case 781: MapGridSetMetatileIdAt(x, y, 726); return;
+        case 851: MapGridSetMetatileIdAt(x, y, 726); return;
+        default: break;
+        }
+    }
     if ((gMapHeader.mapLayout->primaryTileset == &gTileset_AraunaInicioBaseV1
       || gMapHeader.mapLayout->primaryTileset == &gTileset_AraunaBorderRoute103BaseV2
-      || gMapHeader.mapLayout->primaryTileset == &gTileset_AraunaBorderOldaleTownBaseSulV1)
+      || gMapHeader.mapLayout->primaryTileset == &gTileset_AraunaBorderOldaleTownBaseSulV1 || gMapHeader.mapLayout->primaryTileset == &gTileset_AraunaBorderOldaleTownBaseUivoV1)
      && MapGridGetMetatileIdAt(x, y) == METATILE_AraunaInicio_Capim)
     {
         MapGridSetMetatileIdAt(x, y, METATILE_AraunaInicio_Campo);
         return;
     }
-    if (gMapHeader.mapLayout->primaryTileset == &gTileset_AraunaBorderRoute102BaseSulV1)
+    if (gMapHeader.mapLayout->primaryTileset == &gTileset_AraunaBorderRoute102BaseSulV1 || gMapHeader.mapLayout->primaryTileset == &gTileset_AraunaBorderRoute102BaseUivoV1)
     {
         switch (MapGridGetMetatileIdAt(x, y))
         {
@@ -381,7 +424,7 @@ static void SetCutGrassMetatile(s16 x, s16 y)
         default: break;
         }
     }
-    if (gMapHeader.mapLayout->primaryTileset == &gTileset_AraunaBorderRoute103BaseSulV1)
+    if (gMapHeader.mapLayout->primaryTileset == &gTileset_AraunaBorderRoute103BaseSulV1 || gMapHeader.mapLayout->primaryTileset == &gTileset_AraunaBorderRoute103BaseUivoV1)
     {
         switch (MapGridGetMetatileIdAt(x, y))
         {
@@ -390,7 +433,7 @@ static void SetCutGrassMetatile(s16 x, s16 y)
         default: break;
         }
     }
-    if (gMapHeader.mapLayout->primaryTileset == &gTileset_AraunaBorderRoute104BaseSulV1)
+    if (gMapHeader.mapLayout->primaryTileset == &gTileset_AraunaBorderRoute104BaseSulV1 || gMapHeader.mapLayout->primaryTileset == &gTileset_AraunaBorderRoute104BaseUivoV1)
     {
         switch (MapGridGetMetatileIdAt(x, y))
         {

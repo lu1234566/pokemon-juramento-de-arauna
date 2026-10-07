@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "base_commit": "59f4c6eea2a7aa033bb10ca4e6074a0a2ec3883c",
+  "files_identical": 979,
+  "method": "Fresh detached base worktree; only tools and fixed atlas/region/palette-plan inputs copied; native outputs and C compared byte for byte."
+}

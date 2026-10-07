@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "actual_C_old_save_positions": 2984,
+  "positions_relocated": 0,
+  "current_layouts_not_migrated": 2984,
+  "Cut_custom_ids": 9,
+  "continue_warp_priority_preserved": true,
+  "maps": {
+    "RustboroCity": {
+      "old_positions": 916,
+      "repositioned": 0
+    },
+    "Route115": {
+      "old_positions": 1429,
+      "repositioned": 0
+    },
+    "Route116": {
+      "old_positions": 639,
+      "repositioned": 0
+    }
+  }
+}

@@ -1,0 +1,53 @@
+Preparing worktree (detached HEAD 59f4c6eea2)
+Updating files:  88% (17925/20255)
+Updating files:  89% (18027/20255)
+Updating files:  90% (18230/20255)
+Updating files:  91% (18433/20255)
+Updating files:  92% (18635/20255)
+Updating files:  93% (18838/20255)
+Updating files:  94% (19040/20255)
+Updating files:  95% (19243/20255)
+Updating files:  96% (19445/20255)
+Updating files:  97% (19648/20255)
+Updating files:  98% (19850/20255)
+Updating files:  99% (20053/20255)
+Updating files: 100% (20255/20255)
+Updating files: 100% (20255/20255), done.
+HEAD is now at 59f4c6eea2 Install Sul/Pampa V1: Routes 102-104 and Petalburg, 34 border directions
+Building scenery Route102
+Building scenery Route103
+Building scenery Route104
+Building scenery RustboroCity
+Functional graphics RustboroCity 62 keep 34
+$WORKSPACE/north-reproduce-final/tools/arauna_maps/build_uivo_norte_v1.py:100: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.
+  image=art.asset(kind,(ww*16,hh*16));pix,q=art.quant(image);image.putdata([(*pair.pals[q][v],255 if v else 0) for v in pix.getdata()]);assets[key]=image
+Building scenery Route115
+Functional graphics Route115 80 keep 58
+Building scenery Route116
+Functional graphics Route116 84 keep 45
+Packing borders Route124
+Packing borders Route126
+Packing borders Route110
+Packing borders MauvilleCity
+Packing borders SlateportCity
+Packing borders EverGrandeCity
+Packing borders Route128
+Packing borders Route103
+Packing borders PetalburgCity
+Packing borders Route104
+Packing borders RustboroCity
+Packing borders Route111
+Packing borders Route117
+Packing borders Route118
+Packing borders Route115
+Packing borders LavaridgeTown
+Packing borders Route112
+Packing borders Route102
+Packing borders OldaleTown
+Packing borders Route105
+Packing borders Route119
+Packing borders Route116
+Packing borders Route114
+Packing borders VerdanturfTown
+Built 24 private pairs and 40 border regions
+PASS reproducibility 979 files

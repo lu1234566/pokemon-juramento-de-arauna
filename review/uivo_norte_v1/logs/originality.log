@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "original_commit": "ad0fd4d17f546ca6fd8d785c8724f9382e6e9382",
+  "original_stored_graphics": 38800,
+  "method": "Exact color-class/alpha equality with H/V mirrors, on new-art graphics only. Functional water, ledge, door and imported neighbor graphics excluded. Flat textures may coincide. Not a perceptual identity measure.",
+  "maps": {
+    "Route102": {
+      "new_art_nonblank_graphics": 11,
+      "matching_original_color_class_shape": 1,
+      "percent": 9.09
+    },
+    "Route103": {
+      "new_art_nonblank_graphics": 11,
+      "matching_original_color_class_shape": 1,
+      "percent": 9.09
+    },
+    "Route104": {
+      "new_art_nonblank_graphics": 7,
+      "matching_original_color_class_shape": 1,
+      "percent": 14.29
+    },
+    "RustboroCity": {
+      "new_art_nonblank_graphics": 478,
+      "matching_original_color_class_shape": 10,
+      "percent": 2.09
+    },
+    "Route115": {
+      "new_art_nonblank_graphics": 68,
+      "matching_original_color_class_shape": 7,
+      "percent": 10.29
+    },
+    "Route116": {
+      "new_art_nonblank_graphics": 224,
+      "matching_original_color_class_shape": 8,
+      "percent": 3.57
+    }
+  }
+}

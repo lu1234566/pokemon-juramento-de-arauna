@@ -1,0 +1,15 @@
+$WORKSPACE/norte/tools/arauna_maps/validate_uivo_norte_v1.py:117: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.
+  im=Image.open(ROOT/p/'tiles.png');assert im.mode=='P' and max(im.getdata())<16
+{
+  "status": "PASS",
+  "base_commit": "59f4c6eea2a7aa033bb10ca4e6074a0a2ec3883c",
+  "protected_map_and_animation_files": 1003,
+  "alternate_layouts_preserved": 717,
+  "appended_layouts": 3,
+  "all_native_attributes_checked": 67796,
+  "target_directions": 40,
+  "target_errors_after": 0,
+  "unrelated_connections_changed": 0,
+  "eight_frame_border_cells_checked": 84384,
+  "C_selector_fallback_checks": 73728
+}
