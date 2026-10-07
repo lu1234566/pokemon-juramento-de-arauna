@@ -1099,3 +1099,10 @@ const u16 gMetatileAttributes_AraunaBorderVerdanturfTownBaseUivoV1[] = INCBIN_U1
 const u16 gMetatiles_AraunaBorderVerdanturfTownArtUivoV1[] = INCBIN_U16("data/tilesets/secondary/arauna_border_verdanturf_town_uivo_v1/metatiles.bin");
 const u16 gMetatileAttributes_AraunaBorderVerdanturfTownArtUivoV1[] = INCBIN_U16("data/tilesets/secondary/arauna_border_verdanturf_town_uivo_v1/metatile_attributes.bin");
 // BORDER_UIVO_V1_END
+
+// CAVERNAS_03A_BEGIN
+const u16 gMetatiles_AraunaTerraCave03A[] = INCBIN_U16("data/tilesets/secondary/arauna_terra_cave_03a/metatiles.bin");
+const u16 gMetatileAttributes_AraunaTerraCave03A[] = INCBIN_U16("data/tilesets/secondary/arauna_terra_cave_03a/metatile_attributes.bin");
+const u16 gMetatiles_AraunaMarineCave03A[] = INCBIN_U16("data/tilesets/secondary/arauna_marine_cave_03a/metatiles.bin");
+const u16 gMetatileAttributes_AraunaMarineCave03A[] = INCBIN_U16("data/tilesets/secondary/arauna_marine_cave_03a/metatile_attributes.bin");
+// CAVERNAS_03A_END

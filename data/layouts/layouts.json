@@ -4067,7 +4067,7 @@
       "width": 20,
       "height": 20,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
+      "secondary_tileset": "gTileset_AraunaMarineCave03A",
       "border_filepath": "data/layouts/MarineCave_Entrance/border.bin",
       "blockdata_filepath": "data/layouts/MarineCave_Entrance/map.bin"
     },
@@ -4077,7 +4077,7 @@
       "width": 20,
       "height": 20,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
+      "secondary_tileset": "gTileset_AraunaTerraCave03A",
       "border_filepath": "data/layouts/TerraCave_Entrance/border.bin",
       "blockdata_filepath": "data/layouts/TerraCave_Entrance/map.bin"
     },
@@ -4087,7 +4087,7 @@
       "width": 27,
       "height": 30,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
+      "secondary_tileset": "gTileset_AraunaTerraCave03A",
       "border_filepath": "data/layouts/TerraCave_End/border.bin",
       "blockdata_filepath": "data/layouts/TerraCave_End/map.bin"
     },
@@ -4127,7 +4127,7 @@
       "width": 27,
       "height": 30,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
+      "secondary_tileset": "gTileset_AraunaMarineCave03A",
       "border_filepath": "data/layouts/MarineCave_End/border.bin",
       "blockdata_filepath": "data/layouts/MarineCave_End/map.bin"
     },

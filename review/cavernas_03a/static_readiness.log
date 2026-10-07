@@ -1,0 +1,514 @@
+Region-map Arauna names: 0 changed; 30 verified.
+English-only policy: OK (128 approved English renderers in locked order; 106 final transactional overlay files; 37537 visible strings scanned, no Portuguese)
+Arauna canonical visible coverage: OK (16/16 stages; 100%; 128 English renderers; 346 final-gap runtime text blocks covered; 40 final-gap source files transactional).
+widest contest_strings.inc line vanilla renders: 144px
+widest item_descriptions.h line vanilla renders: 102px
+widest move_descriptions.h line vanilla renders: 147px
+widest line vanilla renders: 208px  "If a POKéMON knew how to go underwater,"
+move descriptions: OK (381 moves, each with its own text)
+text width: OK (575 script files, nothing past 208px)
+Static readiness: compile step intentionally skipped after all official render/gate checks.
+Weather Institute 1F English surface OK.
+Weather Institute 2F English narrative surface OK.
+Repository safety check passed.
+registry
+  PASS  46 selector constants  -- 46
+  PASS  selector values unique and in range
+  PASS  channel A: 46 entries, each its own graphics info  -- 46 entries
+  PASS  channel B: 46 entries, each its own graphics info  -- 46 entries
+  PASS  each creature has its own pic table  -- 46
+  PASS  the two channels claim different palette slots  -- A=46 B=46
+
+dispatch
+  PASS  GetObjectEventGraphicsInfo dispatches both channels
+  PASS  the selector is clamped before it indexes
+  PASS  NUM_OBJ_EVENT_GFX is back to vanilla 239  -- 239
+  PASS  two dispatcher ids, both ordinary one-byte ids  -- OBJ_EVENT_GFX_ARAUNA_POKEMON_A=4, OBJ_EVENT_GFX_ARAUNA_POKEMON_B=136
+  PASS  46 creatures reachable from 2 ids
+
+nothing persistent moved
+  PASS  include/global.h save layout unmoved since c8557cb2  -- 324 offsets
+  PASS  include/global.fieldmap.h save layout unmoved since c8557cb2  -- 82 offsets
+  PASS  graphicsId is u8 in both structs
+  PASS  only the Arauna system touches the reserved vars
+  PASS  both selectors are marked reserved where they are defined
+
+harness
+  PASS  one object per channel on the same map
+  PASS  the five named creatures are exercised  -- []
+  PASS  the harness map is still unreachable
+
+placement
+  PASS  every redraw is somewhere  -- 43 placed + 3 with their own id
+  PASS  the map table covers every placed map  -- 24 rows
+  PASS  each placement has its object event on the map
+  PASS  every creature stands on a walkable tile
+  PASS  no creature blocks a chokepoint
+
+palette table
+  PASS  the palette table ends with OBJ_EVENT_PAL_TAG_NONE  -- 136 entries, sentinel at [135]
+  PASS  nothing sits after the terminator, and there is only one  -- 1 sentinels
+  PASS  no palette entry is hidden behind a disabled #ifdef  -- the creatures' palettes were once inside #ifdef BUGFIX
+  PASS  every palette a graphics info asks for is in the table  -- 124 tags asked for
+
+28/28 checks passed
+Arauna availability: OK (293 species catchable in the wild, 366 of 386 obtainable counting evolution and gifts).
+  20 legendaries/mythicals are held back for a static placement that does not exist yet, all named in ESPECIAIS_ESTATICOS.csv:
+    #329 Guaraciana     -> SERRA DO UIVO / TORRE JURAMENTO - santuario dedicado
+    #330 Jaciana        -> BAIA DAS LUZES / aguas costeiras - encontro estatico
+    #331 Tupanaú        -> SERRA DO UIVO / TORRE JURAMENTO - santuario dedicado
+    #332 Iaraú          -> MATA DO MEIO / CAVERNAS M'BOI - encontro estatico
+    #333 Kuarahy        -> SERRA DO UIVO / TORRE JURAMENTO - santuario dedicado
+    #334 Yasy           -> SERRA DO UIVO / TORRE JURAMENTO - santuario dedicado
+    #335 Rudarauna      -> BAIA DAS LUZES / aguas costeiras - encontro estatico
+    #336 Perybé         -> MATA DO MEIO / CAVERNAS M'BOI - encontro estatico
+    #337 Arauanaú       -> TORRE JURAMENTO / ESTR. JURAMENTO
+    #338 Verdejante     -> MATA DO MEIO / CAVERNAS M'BOI - encontro estatico
+    #339 Chuvão         -> BAIA DAS LUZES / aguas costeiras - encontro estatico
+    #340 Solzão         -> SERRA DA CINZA / torre ou ruina dedicada
+    #341 Ventania       -> Cerrado tardio / santuario dedicado
+    #342 Terraão        -> RUINAS DA QUEDA / ESTR. JURAMENTO
+    #343 Fogaréu        -> SERRA DO UIVO / TORRE JURAMENTO - santuario dedicado
+    #344 Marulho        -> BAIA DAS LUZES / aguas costeiras - encontro estatico
+    #346 Poente         -> BAIA DAS LUZES / aguas costeiras - encontro estatico
+    #348 Arauanamon     -> TORRE JURAMENTO / ESTR. JURAMENTO
+    #376 Boitatã        -> Cerrado tardio / santuario dedicado
+    #385 Sacinho        -> Cerrado tardio / santuario dedicado
+widest contest_strings.inc line vanilla renders: 144px
+widest item_descriptions.h line vanilla renders: 102px
+widest move_descriptions.h line vanilla renders: 147px
+widest line vanilla renders: 208px  "If a POKéMON knew how to go underwater,"
+move descriptions: OK (381 moves, each with its own text)
+text width: OK (575 script files, nothing past 208px)
+Arauna song link check: OK (551 song objects placed, 551 played, order matches).
+[PASS] DALVA        front     64x64, 16 indices, nothing cut off
+[PASS] DALVA        overworld 144x32, 9 frames, 16 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_DALVA exclusive
+[PASS] ADEMAR       front     64x64, 16 indices, nothing cut off
+[PASS] ADEMAR       overworld 144x32, 9 frames, 14 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_ADEMAR exclusive
+[PASS] OLIVIA       front     64x64, 16 indices, nothing cut off
+[PASS] OLIVIA       overworld 144x32, 9 frames, 16 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_OLIVIA exclusive
+[PASS] NARA         front     64x64, 16 indices, nothing cut off
+[PASS] NARA         overworld 144x32, 9 frames, 14 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_NARA exclusive
+[PASS] ELIAS        front     64x64, 16 indices, nothing cut off
+[PASS] ELIAS        overworld 144x32, 9 frames, 14 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_ELIAS exclusive
+[PASS] LIDIA        front     64x64, 16 indices, nothing cut off
+[PASS] LIDIA        overworld 144x32, 9 frames, 16 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_LIDIA exclusive
+[PASS] CECILIA      front     64x64, 16 indices, nothing cut off
+[PASS] CECILIA      overworld 144x32, 9 frames, 15 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_CECILIA exclusive
+[PASS] CAETANO      front     64x64, 16 indices, nothing cut off
+[PASS] CAETANO      overworld 144x32, 9 frames, 16 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_CAETANO exclusive
+[PASS] DONA CELINA  front     64x64, 16 indices, nothing cut off
+[PASS] DONA CELINA  overworld 144x32, 9 frames, 16 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_CELINA exclusive
+[PASS] LAZARO       front     64x64, 16 indices, nothing cut off
+[PASS] LAZARO       overworld 144x32, 9 frames, 16 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_LAZARO exclusive
+[PASS] ROSA         front     64x64, 16 indices, nothing cut off
+[PASS] ROSA         overworld 144x32, 9 frames, 16 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_ROSA exclusive
+[PASS] CLARA        front     64x64, 16 indices, nothing cut off
+[PASS] CLARA        overworld 144x32, 9 frames, 16 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_CLARA exclusive
+[PASS] TIBURCIO     front     64x64, 16 indices, nothing cut off
+[PASS] TIBURCIO     overworld 144x32, 9 frames, 16 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_TIBURCIO exclusive
+[PASS] AMALIA       front     64x64, 16 indices, nothing cut off
+[PASS] AMALIA       overworld 144x32, 9 frames, 16 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_AMALIA exclusive
+[PASS] CIRO F1      front     64x64, 15 indices, nothing cut off
+[PASS] CIRO F1      overworld 144x32, 9 frames, 12 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_CIRO_F1 exclusive
+[PASS] CIRO F1 MIRROR front     64x64, 15 indices, nothing cut off
+[PASS] CIRO F1 MIRROR overworld 144x32, 9 frames, 12 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_CIRO_F1 exclusive
+[PASS] CIRO F2      front     64x64, 16 indices, nothing cut off
+[PASS] CIRO F2      overworld 144x32, 9 frames, 12 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_CIRO_F2 exclusive
+[ -- ] CIRO F3      front     not needed: No battle exists in this phase. The EverGrandeCity_ChampionsRoom...
+[PASS] CIRO F3      overworld 144x32, 9 frames, 12 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_CIRO_F3 exclusive
+[PASS] VAL          front     64x64, 16 indices, nothing cut off
+[PASS] VAL          overworld 144x32, 9 frames, 12 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_VAL exclusive
+[ -- ] VAL EVOLUIDO front     not needed: The Victory Road objects are cutscene appearances with TRAINER_T...
+[PASS] VAL EVOLUIDO overworld 144x32, 9 frames, 12 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_VAL_EVOLUIDO exclusive
+[PASS] BRENO        front     64x64, 16 indices, nothing cut off
+[PASS] BRENO        overworld 144x32, 9 frames, 14 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_BRENO exclusive
+[PASS] MARTA        front     64x64, 16 indices, nothing cut off
+[PASS] MARTA        overworld 144x32, 9 frames, 16 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_MARTA exclusive
+[PASS] OTACILIO     front     64x64, 16 indices, nothing cut off
+[PASS] OTACILIO     overworld 144x32, 9 frames, 14 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_OTACILIO exclusive
+[PASS] LUZIA        front     64x64, 16 indices, nothing cut off
+[PASS] LUZIA        overworld 144x32, 9 frames, 14 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_LUZIA exclusive
+[PASS] RAUL         front     64x64, 16 indices, nothing cut off
+[PASS] RAUL         overworld 144x32, 9 frames, 16 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_RAUL exclusive
+[PASS] BENTO        front     64x64, 16 indices, nothing cut off
+[PASS] BENTO        overworld 144x32, 9 frames, 15 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_BENTO exclusive
+[PASS] MAIRA        front     64x64, 15 indices, nothing cut off
+[PASS] MAIRA        overworld 144x32, 9 frames, 16 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_MAIRA exclusive
+[PASS] DARIO        front     64x64, 16 indices, nothing cut off
+[PASS] DARIO        overworld 144x32, 9 frames, 16 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_DARIO exclusive
+[PASS] NILO         front     64x64, 16 indices, nothing cut off
+[PASS] NILO         overworld 144x32, 9 frames, 16 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_NILO exclusive
+[PASS] JACI         front     64x64, 16 indices, nothing cut off
+[PASS] JACI         overworld 144x32, 9 frames, 16 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_JACI exclusive
+[PASS] RITA         front     64x64, 16 indices, nothing cut off
+[PASS] RITA         overworld 144x32, 9 frames, 16 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_RITA exclusive
+[PASS] AMARO        front     64x64, 16 indices, nothing cut off
+[PASS] AMARO        overworld 144x32, 9 frames, 16 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_AMARO exclusive
+[PASS] TADEU        front     64x64, 16 indices, nothing cut off
+[PASS] TADEU        overworld 144x32, 9 frames, 16 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_TADEU exclusive
+[PASS] HORIZONTE_M  front     64x64, 15 indices, nothing cut off
+[PASS] HORIZONTE_M  overworld 144x32, 9 frames, 16 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_HORIZONTE_M exclusive
+[PASS] HORIZONTE_F  front     64x64, 16 indices, nothing cut off
+[PASS] HORIZONTE_F  overworld 144x32, 9 frames, 16 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_HORIZONTE_F exclusive
+[PASS] LEMBRANTE_M  front     64x64, 16 indices, nothing cut off
+[PASS] LEMBRANTE_M  overworld 144x32, 9 frames, 16 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_LEMBRANTE_M exclusive
+[PASS] LEMBRANTE_F  front     64x64, 16 indices, nothing cut off
+[PASS] LEMBRANTE_F  overworld 144x32, 9 frames, 16 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_LEMBRANTE_F exclusive
+[PASS] Mãe do protagonista overworld 144x32, 9 frames, 15 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_MAE_PROTAGONISTA exclusive
+[PASS] Recepcionista de link overworld 144x32, 9 frames, 16 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_RECEPCIONISTA_LINK exclusive
+[PASS] DONA ZILA    overworld 144x32, 9 frames, 16 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_DONA_ZILA exclusive
+
+Not yet integrated (reported, not failed):
+  - Mãe do protagonista: battle portrait
+  - Recepcionista de link: battle portrait
+  - DONA ZILA: battle portrait
+
+ARAUNA CHARACTER ASSET QC: PASS
+  PASS  Estalagmite still occupies SPECIES_UNOWN                                          -- Estalagmite
+  PASS  the 28 Unown form folders hold one identical design                               -- front.png:1, back.png:1, normal.pal:1, shiny.pal:1, icon.png:1, anim_front.png:1
+  PASS  GetPokedexMonPersonality is still the only place the Pokedex picks a personality
+  PASS  the Pokedex draws the canonical representation                                    -- reads nothing
+  PASS  no Unown form UI in the Pokedex                                                   -- none
+  PASS  Poste still occupies SPECIES_SPINDA                                               -- Poste
+  PASS  DrawSpindaSpots still exists                                                    
+  PASS  the Spinda spot overlay does not run for Poste                                    -- off
+  PASS  both personality fields stay in the save                                          -- unownPersonality, spindaPersonality
+  PASS  both are still written when a species is first seen                             
+  PASS  Tuim's Castform behaviour is left intact (deferred, art pending)                
+
+11/11 special-species checks passed
+  PASS  the pool list exists                                                  -- 18 characters
+  PASS  BRENO names a fallback slot                                           -- PALSLOT_NPC_3
+  PASS  OTACILIO names a fallback slot                                        -- PALSLOT_NPC_1
+  PASS  LUZIA names a fallback slot                                           -- PALSLOT_NPC_2
+  PASS  RAUL names a fallback slot                                            -- PALSLOT_NPC_1
+  PASS  BENTO names a fallback slot                                           -- PALSLOT_NPC_4
+  PASS  MAIRA names a fallback slot                                           -- PALSLOT_NPC_4
+  PASS  DARIO names a fallback slot                                           -- PALSLOT_NPC_1
+  PASS  NILO names a fallback slot                                            -- PALSLOT_NPC_1
+  PASS  JACI names a fallback slot                                            -- PALSLOT_NPC_4
+  PASS  RITA names a fallback slot                                            -- PALSLOT_NPC_1
+  PASS  AMARO names a fallback slot                                           -- PALSLOT_NPC_1
+  PASS  TADEU names a fallback slot                                           -- PALSLOT_NPC_3
+  PASS  HORIZONTE_M names a fallback slot                                     -- PALSLOT_NPC_4
+  PASS  HORIZONTE_F names a fallback slot                                     -- PALSLOT_NPC_3
+  PASS  LEMBRANTE_M names a fallback slot                                     -- PALSLOT_NPC_2
+  PASS  LEMBRANTE_F names a fallback slot                                     -- PALSLOT_NPC_1
+  PASS  Mãe do protagonista names a fallback slot                             -- PALSLOT_NPC_4
+  PASS  Recepcionista de link names a fallback slot                           -- PALSLOT_NPC_3
+  PASS  manifest and pool list agree on who is pool-allocated                 -- identical
+  PASS  no character claims a fixed slot and the pool at once                 -- none
+  PASS  no two characters share a fixed special slot on a map                 -- none
+  PASS  the allocator reserve is still tied to OBJ_PALSLOT_COUNT            
+  PASS  the forbidden 16 + PALSLOT spelling has not returned                  -- none
+  PASS  every declared surface has its asset on disk                          -- none
+  PASS  the reflection-bank claim exists                                    
+  PASS  only the four NPC reflection banks can be borrowed                    -- PALSLOT_NPC_1_REFLECTION..PALSLOT_NPC_4_REFLECTION
+  PASS  the idle test exists                                                
+  PASS  the idle test is measured, not decided by map                         -- reads gSprites and gObjectEvents only
+  PASS  the idle test reads both live sprites and live object events        
+  PASS  every path that hands out a base slot gives a loan back first         -- 3 handbacks for 3 assignments
+  PASS  loans are released when the palette pool is cleared                 
+  PASS  the widest pooled scene fits in the palette budget                    -- MtChimney wants 6, budget is 6
+  PASS  the virtual graphics registry exists                                  -- 1 entries, ARAUNA_VIRTUAL_GFX_COUNT = 1
+  PASS  the registry's declared size matches its entries                      -- 1 declared, 1 present
+  PASS  every registry entry is named by a constant                           -- none
+  PASS  an id past the end of the registry falls back instead of reading on 
+  PASS  the dispatch reaches the registry by range, not by name             
+  PASS  no character is hardcoded in the dispatch                             -- none
+  PASS  RAUL's virtual id is defined                                          -- ARAUNA_VIRTUAL_GFX_RAUL
+  PASS  RAUL's virtual id is in the registry                                
+  PASS  RAUL is placed through an object gfx var                              -- OBJ_EVENT_GFX_VAR_B
+  PASS  RAUL's var is set before his maps spawn                               -- all three maps
+  PASS  RAUL draws his own art                                                -- sPicTable_Raul
+  PASS  MAIRA still stands on the ANABEL object slot                          -- ANABEL
+  PASS  MAIRA's internal trainer is still a Frontier Brain                    -- TRAINER_ANABEL
+  PASS  MAIRA's object slot is still the facility's brain graphic           
+  PASS  MAIRA is the Battle Tower's Master                                    -- TOWER -> ANABEL / ANABEL
+  PASS  MAIRA's trainer pic has one owner                                     -- 1 trainers use TRAINER_PIC_SALON_MAIDEN_ANABEL
+  PASS  MAIRA's front file is the one the ROM links                           -- graphics/trainers/front_pics/salon_maiden_anabel.png
+  PASS  DARIO still stands on the TUCKER object slot                          -- TUCKER
+  PASS  DARIO's internal trainer is still a Frontier Brain                    -- TRAINER_TUCKER
+  PASS  DARIO's object slot is still the facility's brain graphic           
+  PASS  DARIO is the Battle Dome's Master                                     -- DOME -> TUCKER / TUCKER
+  PASS  DARIO's trainer pic has one owner                                     -- 1 trainers use TRAINER_PIC_DOME_ACE_TUCKER
+  PASS  DARIO's front file is the one the ROM links                           -- graphics/trainers/front_pics/dome_ace_tucker.png
+  PASS  NILO still stands on the NOLAND object slot                           -- NOLAND
+  PASS  NILO's internal trainer is still a Frontier Brain                     -- TRAINER_NOLAND
+  PASS  NILO's object slot is still the facility's brain graphic            
+  PASS  NILO is the Battle Factory's Master                                   -- FACTORY -> NOLAND / NOLAND
+  PASS  NILO's trainer pic has one owner                                      -- 1 trainers use TRAINER_PIC_FACTORY_HEAD_NOLAND
+  PASS  NILO's front file is the one the ROM links                            -- graphics/trainers/front_pics/factory_head_noland.png
+  PASS  JACI still stands on the LUCY object slot                             -- LUCY
+  PASS  JACI's internal trainer is still a Frontier Brain                     -- TRAINER_LUCY
+  PASS  JACI's object slot is still the facility's brain graphic            
+  PASS  JACI is the Battle Pike's Master                                      -- PIKE -> LUCY / LUCY
+  PASS  JACI's trainer pic has one owner                                      -- 1 trainers use TRAINER_PIC_PIKE_QUEEN_LUCY
+  PASS  JACI's front file is the one the ROM links                            -- graphics/trainers/front_pics/pike_queen_lucy.png
+  PASS  RITA still stands on the GRETA object slot                            -- GRETA
+  PASS  RITA's internal trainer is still a Frontier Brain                     -- TRAINER_GRETA
+  PASS  RITA's object slot is still the facility's brain graphic            
+  PASS  RITA is the Battle Arena's Master                                     -- ARENA -> GRETA / GRETA
+  PASS  RITA's trainer pic has one owner                                      -- 1 trainers use TRAINER_PIC_ARENA_TYCOON_GRETA
+  PASS  RITA's front file is the one the ROM links                            -- graphics/trainers/front_pics/arena_tycoon_greta.png
+  PASS  AMARO still stands on the SPENSER object slot                         -- SPENSER
+  PASS  AMARO's internal trainer is still a Frontier Brain                    -- TRAINER_SPENSER
+  PASS  AMARO's object slot is still the facility's brain graphic           
+  PASS  AMARO is the Battle Palace's Master                                   -- PALACE -> SPENSER / SPENSER
+  PASS  AMARO's trainer pic has one owner                                     -- 1 trainers use TRAINER_PIC_PALACE_MAVEN_SPENSER
+  PASS  AMARO's front file is the one the ROM links                           -- graphics/trainers/front_pics/palace_maven_spenser.png
+  PASS  TADEU still stands on the BRANDON object slot                         -- BRANDON
+  PASS  TADEU's internal trainer is still a Frontier Brain                    -- TRAINER_BRANDON
+  PASS  TADEU's object slot is still the facility's brain graphic           
+  PASS  TADEU is the Battle Pyramid's Master                                  -- PYRAMID -> BRANDON / BRANDON
+  PASS  TADEU's trainer pic has one owner                                     -- 1 trainers use TRAINER_PIC_PYRAMID_KING_BRANDON
+  PASS  TADEU's front file is the one the ROM links                           -- graphics/trainers/front_pics/pyramid_king_brandon.png
+  PASS  no two Circuit Masters share a trainer pic                          
+  PASS  no two Circuit Masters share a front file                           
+  PASS  every trainer pic number in the manifest is the real one              -- 103 checked
+  PASS  GetFrontierBrainTrainerPicIndex answers the same for Silver and Gold  -- reads the facility only
+  PASS  GetFrontierBrainTrainerClass answers the same for Silver and Gold     -- reads the facility only
+  PASS  CopyFrontierBrainTrainerName answers the same for Silver and Gold     -- reads the facility only
+  PASS  the Silver and Gold streak thresholds are unchanged                   -- 7 rows
+  PASS  NUM_OBJ_EVENT_GFX has not grown                                     
+  PASS  an object event still stores a one-byte graphics id                 
+
+95/95 palette capacity checks passed
+  PASS  all four faction archetypes are in the manifest                           -- HORIZONTE M/F, LEMBRANTE M/F
+  PASS  HORIZONTE_M is wired to OBJ_EVENT_GFX_AQUA_MEMBER_M                       -- OBJ_EVENT_GFX_AQUA_MEMBER_M
+  PASS  HORIZONTE_M belongs to CONSORCIO HORIZONTE                                -- CONSORCIO HORIZONTE
+  PASS  HORIZONTE_M's graphics id points at the graphics info the manifest names  -- OBJ_EVENT_GFX_AQUA_MEMBER_M -> AquaMemberM
+  PASS  HORIZONTE_M carries its own palette tag                                   -- OBJ_EVENT_PAL_TAG_HORIZONTE_M
+  PASS  HORIZONTE_M's palette belongs to nobody else                              -- AquaMemberM
+  PASS  HORIZONTE_M draws nine frames from one sheet                              -- 9 frames from ['gObjectEventPic_AquaMemberM']
+  PASS  HORIZONTE_M's sheet is the file the ROM links                             -- graphics/object_events/pics/people/team_aqua/aqua_member_m.png
+  PASS  HORIZONTE_M's front is the file the ROM links                             -- graphics/trainers/front_pics/aqua_grunt_m.png
+  PASS  HORIZONTE_M's front is only used by faction trainers                      -- 19 trainers
+  PASS  HORIZONTE_F is wired to OBJ_EVENT_GFX_AQUA_MEMBER_F                       -- OBJ_EVENT_GFX_AQUA_MEMBER_F
+  PASS  HORIZONTE_F belongs to CONSORCIO HORIZONTE                                -- CONSORCIO HORIZONTE
+  PASS  HORIZONTE_F's graphics id points at the graphics info the manifest names  -- OBJ_EVENT_GFX_AQUA_MEMBER_F -> AquaMemberF
+  PASS  HORIZONTE_F carries its own palette tag                                   -- OBJ_EVENT_PAL_TAG_HORIZONTE_F
+  PASS  HORIZONTE_F's palette belongs to nobody else                              -- AquaMemberF
+  PASS  HORIZONTE_F draws nine frames from one sheet                              -- 9 frames from ['gObjectEventPic_AquaMemberF']
+  PASS  HORIZONTE_F's sheet is the file the ROM links                             -- graphics/object_events/pics/people/team_aqua/aqua_member_f.png
+  PASS  HORIZONTE_F's front is the file the ROM links                             -- graphics/trainers/front_pics/aqua_grunt_f.png
+  PASS  HORIZONTE_F's front is only used by faction trainers                      -- 8 trainers
+  PASS  LEMBRANTE_M is wired to OBJ_EVENT_GFX_MAGMA_MEMBER_M                      -- OBJ_EVENT_GFX_MAGMA_MEMBER_M
+  PASS  LEMBRANTE_M belongs to LEMBRANTES                                         -- LEMBRANTES
+  PASS  LEMBRANTE_M's graphics id points at the graphics info the manifest names  -- OBJ_EVENT_GFX_MAGMA_MEMBER_M -> MagmaMemberM
+  PASS  LEMBRANTE_M carries its own palette tag                                   -- OBJ_EVENT_PAL_TAG_LEMBRANTE_M
+  PASS  LEMBRANTE_M's palette belongs to nobody else                              -- MagmaMemberM
+  PASS  LEMBRANTE_M draws nine frames from one sheet                              -- 9 frames from ['gObjectEventPic_MagmaMemberM']
+  PASS  LEMBRANTE_M's sheet is the file the ROM links                             -- graphics/object_events/pics/people/team_magma/magma_member_m.png
+  PASS  LEMBRANTE_M's front is the file the ROM links                             -- graphics/trainers/front_pics/magma_grunt_m.png
+  PASS  LEMBRANTE_M's front is only used by faction trainers                      -- 21 trainers
+  PASS  LEMBRANTE_F is wired to OBJ_EVENT_GFX_MAGMA_MEMBER_F                      -- OBJ_EVENT_GFX_MAGMA_MEMBER_F
+  PASS  LEMBRANTE_F belongs to LEMBRANTES                                         -- LEMBRANTES
+  PASS  LEMBRANTE_F's graphics id points at the graphics info the manifest names  -- OBJ_EVENT_GFX_MAGMA_MEMBER_F -> MagmaMemberF
+  PASS  LEMBRANTE_F carries its own palette tag                                   -- OBJ_EVENT_PAL_TAG_LEMBRANTE_F
+  PASS  LEMBRANTE_F's palette belongs to nobody else                              -- MagmaMemberF
+  PASS  LEMBRANTE_F draws nine frames from one sheet                              -- 9 frames from ['gObjectEventPic_MagmaMemberF']
+  PASS  LEMBRANTE_F's sheet is the file the ROM links                             -- graphics/object_events/pics/people/team_magma/magma_member_f.png
+  PASS  LEMBRANTE_F's front is the file the ROM links                             -- graphics/trainers/front_pics/magma_grunt_f.png
+  PASS  LEMBRANTE_F's front is only used by faction trainers                      -- 5 trainers
+  PASS  the two HORIZONTE variants are not the same character                     -- gObjectEventPic_AquaMemberM/OBJ_EVENT_PAL_TAG_HORIZONTE_M vs gObjectEventPic_AquaMemberF/OBJ_EVENT_PAL_TAG_HORIZONTE_F
+  PASS  the two LEMBRANTE variants are not the same character                     -- gObjectEventPic_MagmaMemberM/OBJ_EVENT_PAL_TAG_LEMBRANTE_M vs gObjectEventPic_MagmaMemberF/OBJ_EVENT_PAL_TAG_LEMBRANTE_F
+  PASS  the two factions are not the same character                               -- gObjectEventPic_AquaMemberM/OBJ_EVENT_PAL_TAG_HORIZONTE_M vs gObjectEventPic_MagmaMemberM/OBJ_EVENT_PAL_TAG_LEMBRANTE_M
+  PASS  TRAINER_CLASS_TEAM_AQUA shows a faction name in battle                    -- HORIZON
+  PASS  TRAINER_CLASS_TEAM_MAGMA shows a faction name in battle                   -- REMEMBRANCER
+  PASS  RAUL is not wearing the LEMBRANTE grunt graphic again                     -- OBJ_EVENT_GFX_VAR_B / Raul
+
+43/43 faction identity checks passed
+  PASS  the manifest declares the player's avatar states                      -- 9 states
+  PASS  the manifest declares the player's battle surfaces                    -- 2 surfaces
+  PASS  the player avatar gender table was found in the engine                -- 8 male ids, 8 female ids
+  PASS  NORMAL declares a known status                                        -- READY
+  PASS  NORMAL male resolves through the pointer table                        -- OBJ_EVENT_GFX_BRENDAN_NORMAL -> BrendanNormal
+  PASS  NORMAL male stays on a player palette slot                            -- PALSLOT_PLAYER
+  PASS  NORMAL male draws only Arauna art                                     -- graphics/object_events/pics/people/protagonist_m/walking.png, graphics/object_events/pics/people/protagonist_m/running.png
+  PASS  NORMAL male sheet walking.png is on disk                              -- graphics/object_events/pics/people/protagonist_m/walking.png
+  PASS  NORMAL male walking.png tiles into 16x32 frames                       -- 144x32
+  PASS  NORMAL male walking.png is 4bpp indexed                               -- depth 4 colour type 3
+  PASS  NORMAL male sheet running.png is on disk                              -- graphics/object_events/pics/people/protagonist_m/running.png
+  PASS  NORMAL male running.png tiles into 16x32 frames                       -- 144x32
+  PASS  NORMAL male running.png is 4bpp indexed                               -- depth 4 colour type 3
+  PASS  NORMAL male sheets share one 16-colour palette                        -- 2 sheets, identical
+  PASS  NORMAL male does not wear another slot's sheet                        -- walking.png
+  PASS  NORMAL male does not wear another slot's sheet                        -- running.png
+  PASS  NORMAL male is on the male side of the engine's gender table          -- OBJ_EVENT_GFX_BRENDAN_NORMAL
+  PASS  NORMAL female resolves through the pointer table                      -- OBJ_EVENT_GFX_MAY_NORMAL -> MayNormal
+  PASS  NORMAL female stays on a player palette slot                          -- PALSLOT_PLAYER
+  PASS  NORMAL female draws only Arauna art                                   -- graphics/object_events/pics/people/protagonist_f/walking.png, graphics/object_events/pics/people/protagonist_f/running.png
+  PASS  NORMAL female sheet walking.png is on disk                            -- graphics/object_events/pics/people/protagonist_f/walking.png
+  PASS  NORMAL female walking.png tiles into 16x32 frames                     -- 144x32
+  PASS  NORMAL female walking.png is 4bpp indexed                             -- depth 4 colour type 3
+  PASS  NORMAL female sheet running.png is on disk                            -- graphics/object_events/pics/people/protagonist_f/running.png
+  PASS  NORMAL female running.png tiles into 16x32 frames                     -- 144x32
+  PASS  NORMAL female running.png is 4bpp indexed                             -- depth 4 colour type 3
+  PASS  NORMAL female sheets share one 16-colour palette                      -- 2 sheets, identical
+  PASS  NORMAL female does not wear another slot's sheet                      -- walking.png
+  PASS  NORMAL female does not wear another slot's sheet                      -- running.png
+  PASS  NORMAL female is on the female side of the engine's gender table      -- OBJ_EVENT_GFX_MAY_NORMAL
+  PASS  MACH_BIKE declares a known status                                     -- READY
+  PASS  MACH_BIKE male resolves through the pointer table                     -- OBJ_EVENT_GFX_BRENDAN_MACH_BIKE -> BrendanMachBike
+  PASS  MACH_BIKE male stays on a player palette slot                         -- PALSLOT_PLAYER
+  PASS  MACH_BIKE male draws only Arauna art                                  -- graphics/object_events/pics/people/protagonist_m/mach_bike.png
+  PASS  MACH_BIKE male sheet mach_bike.png is on disk                         -- graphics/object_events/pics/people/protagonist_m/mach_bike.png
+  PASS  MACH_BIKE male mach_bike.png tiles into 32x32 frames                  -- 288x32
+  PASS  MACH_BIKE male mach_bike.png is 4bpp indexed                          -- depth 4 colour type 3
+  PASS  MACH_BIKE male does not wear another slot's sheet                     -- mach_bike.png
+  PASS  MACH_BIKE male is on the male side of the engine's gender table       -- OBJ_EVENT_GFX_BRENDAN_MACH_BIKE
+  PASS  MACH_BIKE female resolves through the pointer table                   -- OBJ_EVENT_GFX_MAY_MACH_BIKE -> MayMachBike
+  PASS  MACH_BIKE female stays on a player palette slot                       -- PALSLOT_PLAYER
+  PASS  MACH_BIKE female draws only Arauna art                                -- graphics/object_events/pics/people/protagonist_f/mach_bike.png
+  PASS  MACH_BIKE female sheet mach_bike.png is on disk                       -- graphics/object_events/pics/people/protagonist_f/mach_bike.png
+  PASS  MACH_BIKE female mach_bike.png tiles into 32x32 frames                -- 288x32
+  PASS  MACH_BIKE female mach_bike.png is 4bpp indexed                        -- depth 4 colour type 3
+  PASS  MACH_BIKE female does not wear another slot's sheet                   -- mach_bike.png
+  PASS  MACH_BIKE female is on the female side of the engine's gender table   -- OBJ_EVENT_GFX_MAY_MACH_BIKE
+  PASS  ACRO_BIKE declares a known status                                     -- READY
+  PASS  ACRO_BIKE male resolves through the pointer table                     -- OBJ_EVENT_GFX_BRENDAN_ACRO_BIKE -> BrendanAcroBike
+  PASS  ACRO_BIKE male stays on a player palette slot                         -- PALSLOT_PLAYER
+  PASS  ACRO_BIKE male draws only Arauna art                                  -- graphics/object_events/pics/people/protagonist_m/acro_bike.png
+  PASS  ACRO_BIKE male sheet acro_bike.png is on disk                         -- graphics/object_events/pics/people/protagonist_m/acro_bike.png
+  PASS  ACRO_BIKE male acro_bike.png tiles into 32x32 frames                  -- 864x32
+  PASS  ACRO_BIKE male acro_bike.png is 4bpp indexed                          -- depth 4 colour type 3
+  PASS  ACRO_BIKE male does not wear another slot's sheet                     -- acro_bike.png
+  PASS  ACRO_BIKE male is on the male side of the engine's gender table       -- OBJ_EVENT_GFX_BRENDAN_ACRO_BIKE
+  PASS  ACRO_BIKE female resolves through the pointer table                   -- OBJ_EVENT_GFX_MAY_ACRO_BIKE -> MayAcroBike
+  PASS  ACRO_BIKE female stays on a player palette slot                       -- PALSLOT_PLAYER
+  PASS  ACRO_BIKE female draws only Arauna art                                -- graphics/object_events/pics/people/protagonist_f/acro_bike.png
+  PASS  ACRO_BIKE female sheet acro_bike.png is on disk                       -- graphics/object_events/pics/people/protagonist_f/acro_bike.png
+  PASS  ACRO_BIKE female acro_bike.png tiles into 32x32 frames                -- 864x32
+  PASS  ACRO_BIKE female acro_bike.png is 4bpp indexed                        -- depth 4 colour type 3
+  PASS  ACRO_BIKE female does not wear another slot's sheet                   -- acro_bike.png
+  PASS  ACRO_BIKE female is on the female side of the engine's gender table   -- OBJ_EVENT_GFX_MAY_ACRO_BIKE
+  PASS  SURFING declares a known status                                       -- READY
+  PASS  SURFING male resolves through the pointer table                       -- OBJ_EVENT_GFX_BRENDAN_SURFING -> BrendanSurfing
+  PASS  SURFING male stays on a player palette slot                           -- PALSLOT_PLAYER
+  PASS  SURFING male draws only Arauna art                                    -- graphics/object_events/pics/people/protagonist_m/surfing.png
+  PASS  SURFING male sheet surfing.png is on disk                             -- graphics/object_events/pics/people/protagonist_m/surfing.png
+  PASS  SURFING male surfing.png tiles into 32x32 frames                      -- 192x32
+  PASS  SURFING male surfing.png is 4bpp indexed                              -- depth 4 colour type 3
+  PASS  SURFING male does not wear another slot's sheet                       -- surfing.png
+  PASS  SURFING male is on the male side of the engine's gender table         -- OBJ_EVENT_GFX_BRENDAN_SURFING
+  PASS  SURFING female resolves through the pointer table                     -- OBJ_EVENT_GFX_MAY_SURFING -> MaySurfing
+  PASS  SURFING female stays on a player palette slot                         -- PALSLOT_PLAYER
+  PASS  SURFING female draws only Arauna art                                  -- graphics/object_events/pics/people/protagonist_f/surfing.png
+  PASS  SURFING female sheet surfing.png is on disk                           -- graphics/object_events/pics/people/protagonist_f/surfing.png
+  PASS  SURFING female surfing.png tiles into 32x32 frames                    -- 192x32
+  PASS  SURFING female surfing.png is 4bpp indexed                            -- depth 4 colour type 3
+  PASS  SURFING female does not wear another slot's sheet                     -- surfing.png
+  PASS  SURFING female is on the female side of the engine's gender table     -- OBJ_EVENT_GFX_MAY_SURFING
+  PASS  UNDERWATER declares a known status                                    -- READY
+  PASS  UNDERWATER male resolves through the pointer table                    -- OBJ_EVENT_GFX_BRENDAN_UNDERWATER -> BrendanUnderwater
+  PASS  UNDERWATER male stays on a player palette slot                        -- PALSLOT_PLAYER
+  PASS  UNDERWATER male draws only Arauna art                                 -- graphics/object_events/pics/people/protagonist_m/underwater.png
+  PASS  UNDERWATER male sheet underwater.png is on disk                       -- graphics/object_events/pics/people/protagonist_m/underwater.png
+  PASS  UNDERWATER male underwater.png tiles into 32x32 frames                -- 128x32
+  PASS  UNDERWATER male underwater.png is 4bpp indexed                        -- depth 4 colour type 3
+  PASS  UNDERWATER male does not wear another slot's sheet                    -- underwater.png
+  PASS  UNDERWATER male is on the male side of the engine's gender table      -- OBJ_EVENT_GFX_BRENDAN_UNDERWATER
+  PASS  UNDERWATER female resolves through the pointer table                  -- OBJ_EVENT_GFX_MAY_UNDERWATER -> MayUnderwater
+  PASS  UNDERWATER female stays on a player palette slot                      -- PALSLOT_NPC_SPECIAL
+  PASS  UNDERWATER female draws only Arauna art                               -- graphics/object_events/pics/people/protagonist_f/underwater.png
+  PASS  UNDERWATER female sheet underwater.png is on disk                     -- graphics/object_events/pics/people/protagonist_f/underwater.png
+  PASS  UNDERWATER female underwater.png tiles into 32x32 frames              -- 128x32
+  PASS  UNDERWATER female underwater.png is 4bpp indexed                      -- depth 4 colour type 3
+  PASS  UNDERWATER female does not wear another slot's sheet                  -- underwater.png
+  PASS  UNDERWATER female is on the female side of the engine's gender table  -- OBJ_EVENT_GFX_MAY_UNDERWATER
+  PASS  FIELD_MOVE declares a known status                                    -- READY
+  PASS  FIELD_MOVE male resolves through the pointer table                    -- OBJ_EVENT_GFX_BRENDAN_FIELD_MOVE -> BrendanFieldMove
+  PASS  FIELD_MOVE male stays on a player palette slot                        -- PALSLOT_PLAYER
+  PASS  FIELD_MOVE male draws only Arauna art                                 -- graphics/object_events/pics/people/protagonist_m/field_move.png
+  PASS  FIELD_MOVE male sheet field_move.png is on disk                       -- graphics/object_events/pics/people/protagonist_m/field_move.png
+  PASS  FIELD_MOVE male field_move.png tiles into 32x32 frames                -- 160x32
+  PASS  FIELD_MOVE male field_move.png is 4bpp indexed                        -- depth 4 colour type 3
+  PASS  FIELD_MOVE male does not wear another slot's sheet                    -- field_move.png
+  PASS  FIELD_MOVE male is on the male side of the engine's gender table      -- OBJ_EVENT_GFX_BRENDAN_FIELD_MOVE
+  PASS  FIELD_MOVE female resolves through the pointer table                  -- OBJ_EVENT_GFX_MAY_FIELD_MOVE -> MayFieldMove
+  PASS  FIELD_MOVE female stays on a player palette slot                      -- PALSLOT_PLAYER
+  PASS  FIELD_MOVE female draws only Arauna art                               -- graphics/object_events/pics/people/protagonist_f/field_move.png
+  PASS  FIELD_MOVE female sheet field_move.png is on disk                     -- graphics/object_events/pics/people/protagonist_f/field_move.png
+  PASS  FIELD_MOVE female field_move.png tiles into 32x32 frames              -- 160x32
+  PASS  FIELD_MOVE female field_move.png is 4bpp indexed                      -- depth 4 colour type 3
+  PASS  FIELD_MOVE female does not wear another slot's sheet                  -- field_move.png
+  PASS  FIELD_MOVE female is on the female side of the engine's gender table  -- OBJ_EVENT_GFX_MAY_FIELD_MOVE
+  PASS  FISHING declares a known status                                       -- READY
+  PASS  FISHING male resolves through the pointer table                       -- OBJ_EVENT_GFX_BRENDAN_FISHING -> BrendanFishing
+  PASS  FISHING male stays on a player palette slot                           -- PALSLOT_PLAYER
+  PASS  FISHING male draws only Arauna art                                    -- graphics/object_events/pics/people/protagonist_m/fishing.png
+  PASS  FISHING male sheet fishing.png is on disk                             -- graphics/object_events/pics/people/protagonist_m/fishing.png
+  PASS  FISHING male fishing.png tiles into 32x32 frames                      -- 384x32
+  PASS  FISHING male fishing.png is 4bpp indexed                              -- depth 4 colour type 3
+  PASS  FISHING male does not wear another slot's sheet                       -- fishing.png
+  PASS  FISHING male is on the male side of the engine's gender table         -- OBJ_EVENT_GFX_BRENDAN_FISHING
+  PASS  FISHING female resolves through the pointer table                     -- OBJ_EVENT_GFX_MAY_FISHING -> MayFishing
+  PASS  FISHING female stays on a player palette slot                         -- PALSLOT_PLAYER
+  PASS  FISHING female draws only Arauna art                                  -- graphics/object_events/pics/people/protagonist_f/fishing.png
+  PASS  FISHING female sheet fishing.png is on disk                           -- graphics/object_events/pics/people/protagonist_f/fishing.png
+  PASS  FISHING female fishing.png tiles into 32x32 frames                    -- 384x32
+  PASS  FISHING female fishing.png is 4bpp indexed                            -- depth 4 colour type 3
+  PASS  FISHING female does not wear another slot's sheet                     -- fishing.png
+  PASS  FISHING female is on the female side of the engine's gender table     -- OBJ_EVENT_GFX_MAY_FISHING
+  PASS  WATERING declares a known status                                      -- READY
+  PASS  WATERING male resolves through the pointer table                      -- OBJ_EVENT_GFX_BRENDAN_WATERING -> BrendanWatering
+  PASS  WATERING male stays on a player palette slot                          -- PALSLOT_PLAYER
+  PASS  WATERING male draws only Arauna art                                   -- graphics/object_events/pics/people/protagonist_m/watering.png
+  PASS  WATERING male sheet watering.png is on disk                           -- graphics/object_events/pics/people/protagonist_m/watering.png
+  PASS  WATERING male watering.png tiles into 32x32 frames                    -- 192x32
+  PASS  WATERING male watering.png is 4bpp indexed                            -- depth 4 colour type 3
+  PASS  WATERING male does not wear another slot's sheet                      -- watering.png
+  PASS  WATERING male is on the male side of the engine's gender table        -- OBJ_EVENT_GFX_BRENDAN_WATERING
+  PASS  WATERING female resolves through the pointer table                    -- OBJ_EVENT_GFX_MAY_WATERING -> MayWatering
+  PASS  WATERING female stays on a player palette slot                        -- PALSLOT_PLAYER
+  PASS  WATERING female draws only Arauna art                                 -- graphics/object_events/pics/people/protagonist_f/watering.png
+  PASS  WATERING female sheet watering.png is on disk                         -- graphics/object_events/pics/people/protagonist_f/watering.png
+  PASS  WATERING female watering.png tiles into 32x32 frames                  -- 192x32
+  PASS  WATERING female watering.png is 4bpp indexed                          -- depth 4 colour type 3
+  PASS  WATERING female does not wear another slot's sheet                    -- watering.png
+  PASS  WATERING female is on the female side of the engine's gender table    -- OBJ_EVENT_GFX_MAY_WATERING
+  PASS  DECORATING declares a known status                                    -- READY
+  PASS  DECORATING male resolves through the pointer table                    -- OBJ_EVENT_GFX_BRENDAN_DECORATING -> BrendanDecorating
+  PASS  DECORATING male stays on a player palette slot                        -- PALSLOT_NPC_SPECIAL
+  PASS  DECORATING male draws only Arauna art                                 -- graphics/object_events/pics/people/protagonist_m/decorating.png
+  PASS  DECORATING male sheet decorating.png is on disk                       -- graphics/object_events/pics/people/protagonist_m/decorating.png
+  PASS  DECORATING male decorating.png tiles into 16x32 frames                -- 16x32
+  PASS  DECORATING male decorating.png is 4bpp indexed                        -- depth 4 colour type 3
+  PASS  DECORATING male does not wear another slot's sheet                    -- decorating.png
+  PASS  DECORATING female resolves through the pointer table                  -- OBJ_EVENT_GFX_MAY_DECORATING -> MayDecorating
+  PASS  DECORATING female stays on a player palette slot                      -- PALSLOT_NPC_SPECIAL
+  PASS  DECORATING female draws only Arauna art                               -- graphics/object_events/pics/people/protagonist_f/decorating.png
+  PASS  DECORATING female sheet decorating.png is on disk                     -- graphics/object_events/pics/people/protagonist_f/decorating.png
+  PASS  DECORATING female decorating.png tiles into 16x32 frames              -- 16x32
+  PASS  DECORATING female decorating.png is 4bpp indexed                      -- depth 4 colour type 3
+  PASS  DECORATING female does not wear another slot's sheet                  -- decorating.png
+  PASS  NORMAL does not draw CIRO's art                                       -- walking.png
+  PASS  NORMAL does not draw CIRO's art                                       -- running.png
+  PASS  NORMAL does not draw CIRO's art                                       -- walking.png
+  PASS  NORMAL does not draw CIRO's art                                       -- running.png
+  PASS  MACH_BIKE does not draw CIRO's art                                    -- mach_bike.png
+  PASS  MACH_BIKE does not draw CIRO's art                                    -- mach_bike.png
+  PASS  ACRO_BIKE does not draw CIRO's art                                    -- acro_bike.png
+  PASS  ACRO_BIKE does not draw CIRO's art                                    -- acro_bike.png
+  PASS  SURFING does not draw CIRO's art                                      -- surfing.png
+  PASS  SURFING does not draw CIRO's art                                      -- surfing.png
+  PASS  UNDERWATER does not draw CIRO's art                                   -- underwater.png
+  PASS  UNDERWATER does not draw CIRO's art                                   -- underwater.png
+  PASS  FIELD_MOVE does not draw CIRO's art                                   -- field_move.png
+  PASS  FIELD_MOVE does not draw CIRO's art                                   -- field_move.png
+  PASS  FISHING does not draw CIRO's art                                      -- fishing.png
+  PASS  FISHING does not draw CIRO's art                                      -- fishing.png
+  PASS  WATERING does not draw CIRO's art                                     -- watering.png
+  PASS  WATERING does not draw CIRO's art                                     -- watering.png
+  PASS  DECORATING does not draw CIRO's art                                   -- decorating.png
+  PASS  DECORATING does not draw CIRO's art                                   -- decorating.png
+  PASS  no player state shares CIRO's graphics info                           -- 18 player infos, 4 CIRO infos
+  PASS  TRAINER_BACK male art is on disk                                      -- graphics/trainers/back_pics/protagonist_m.png
+  PASS  TRAINER_BACK female art is on disk                                    -- graphics/trainers/back_pics/protagonist_f.png
+  PASS  TRAINER_FRONT male art is on disk                                     -- graphics/trainers/front_pics/protagonist_m.png
+  PASS  TRAINER_FRONT female art is on disk                                   -- graphics/trainers/front_pics/protagonist_f.png
+
+189/189 protagonist asset checks passed
+Arauna static readiness: PASS (official rendered composition validated; ARM compile intentionally skipped).

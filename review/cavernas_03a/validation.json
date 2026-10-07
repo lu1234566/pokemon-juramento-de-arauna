@@ -1,0 +1,74 @@
+{
+  "status": "PASS",
+  "base_commit": "bcd93e980e55a0f5a649baa7d6b8d154b464be23",
+  "protected_existing_files": 17753,
+  "layouts_preserved": 740,
+  "target_layout_secondary_fields_changed": 4,
+  "maps": {
+    "TerraCave_Entrance": {
+      "cells": 400,
+      "changed_visual_cells": 400,
+      "native_words_unchanged": true,
+      "attributes_compared": 400,
+      "warps_preserved": 2,
+      "objects_preserved": 0,
+      "coord_events_preserved": 0
+    },
+    "TerraCave_End": {
+      "cells": 810,
+      "changed_visual_cells": 768,
+      "native_words_unchanged": true,
+      "attributes_compared": 810,
+      "warps_preserved": 1,
+      "objects_preserved": 1,
+      "coord_events_preserved": 1
+    },
+    "MarineCave_Entrance": {
+      "cells": 400,
+      "changed_visual_cells": 345,
+      "native_words_unchanged": true,
+      "attributes_compared": 400,
+      "warps_preserved": 1,
+      "objects_preserved": 0,
+      "coord_events_preserved": 0
+    },
+    "MarineCave_End": {
+      "cells": 810,
+      "changed_visual_cells": 791,
+      "native_words_unchanged": true,
+      "attributes_compared": 810,
+      "warps_preserved": 1,
+      "objects_preserved": 1,
+      "coord_events_preserved": 1
+    }
+  },
+  "banks": [
+    {
+      "family": "terra",
+      "graphics_tiles": 432,
+      "metatiles": 414,
+      "new_graphics_tiles": 66,
+      "aliases": 60,
+      "4bpp_and_rgb555": "PASS",
+      "animations_reserved": "PASS"
+    },
+    {
+      "family": "marine",
+      "graphics_tiles": 432,
+      "metatiles": 414,
+      "new_graphics_tiles": 69,
+      "aliases": 79,
+      "4bpp_and_rgb555": "PASS",
+      "animations_reserved": "PASS"
+    }
+  ],
+  "actual_c_selector_cells": 2420,
+  "actual_c_fallback_checks": 7276,
+  "legacy_cave_selector_cells": 9583,
+  "native_animation_frames": 32,
+  "terra_temporary_entries_preserved": 8,
+  "marine_dive_return_preserved": true,
+  "legendary_encounters_scripts_flags_results_preserved": true,
+  "rom_build": "pending_toolchain_unavailable",
+  "emulator": "pending_unavailable"
+}

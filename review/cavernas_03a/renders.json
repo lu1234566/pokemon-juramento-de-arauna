@@ -1,0 +1,151 @@
+{
+  "kind": "native_render_not_emulator",
+  "full_maps": 4,
+  "before_after_viewports": 12,
+  "records": [
+    {
+      "map": "TerraCave_Entrance",
+      "crop": 1,
+      "origin": [
+        5,
+        0
+      ],
+      "native_size": [
+        240,
+        160
+      ]
+    },
+    {
+      "map": "TerraCave_Entrance",
+      "crop": 2,
+      "origin": [
+        4,
+        5
+      ],
+      "native_size": [
+        240,
+        160
+      ]
+    },
+    {
+      "map": "TerraCave_Entrance",
+      "crop": 3,
+      "origin": [
+        1,
+        10
+      ],
+      "native_size": [
+        240,
+        160
+      ]
+    },
+    {
+      "map": "TerraCave_End",
+      "crop": 1,
+      "origin": [
+        0,
+        0
+      ],
+      "native_size": [
+        240,
+        160
+      ]
+    },
+    {
+      "map": "TerraCave_End",
+      "crop": 2,
+      "origin": [
+        5,
+        9
+      ],
+      "native_size": [
+        240,
+        160
+      ]
+    },
+    {
+      "map": "TerraCave_End",
+      "crop": 3,
+      "origin": [
+        10,
+        18
+      ],
+      "native_size": [
+        240,
+        160
+      ]
+    },
+    {
+      "map": "MarineCave_Entrance",
+      "crop": 1,
+      "origin": [
+        5,
+        0
+      ],
+      "native_size": [
+        240,
+        160
+      ]
+    },
+    {
+      "map": "MarineCave_Entrance",
+      "crop": 2,
+      "origin": [
+        4,
+        5
+      ],
+      "native_size": [
+        240,
+        160
+      ]
+    },
+    {
+      "map": "MarineCave_Entrance",
+      "crop": 3,
+      "origin": [
+        1,
+        10
+      ],
+      "native_size": [
+        240,
+        160
+      ]
+    },
+    {
+      "map": "MarineCave_End",
+      "crop": 1,
+      "origin": [
+        12,
+        0
+      ],
+      "native_size": [
+        240,
+        160
+      ]
+    },
+    {
+      "map": "MarineCave_End",
+      "crop": 2,
+      "origin": [
+        5,
+        9
+      ],
+      "native_size": [
+        240,
+        160
+      ]
+    },
+    {
+      "map": "MarineCave_End",
+      "crop": 3,
+      "origin": [
+        2,
+        18
+      ],
+      "native_size": [
+        240,
+        160
+      ]
+    }
+  ]
+}

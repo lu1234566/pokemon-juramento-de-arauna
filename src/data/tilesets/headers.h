@@ -4169,3 +4169,26 @@ const struct Tileset gTileset_AraunaBorderVerdanturfTownArtUivoV1 =
     .callback = NULL,
 };
 // BORDER_UIVO_V1_END
+
+// CAVERNAS_03A_BEGIN
+const struct Tileset gTileset_AraunaTerraCave03A =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaTerraCave03A,
+    .palettes = gTilesetPalettes_AraunaTerraCave03A,
+    .metatiles = gMetatiles_AraunaTerraCave03A,
+    .metatileAttributes = gMetatileAttributes_AraunaTerraCave03A,
+    .callback = InitTilesetAnim_Cave,
+};
+const struct Tileset gTileset_AraunaMarineCave03A =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaMarineCave03A,
+    .palettes = gTilesetPalettes_AraunaMarineCave03A,
+    .metatiles = gMetatiles_AraunaMarineCave03A,
+    .metatileAttributes = gMetatileAttributes_AraunaMarineCave03A,
+    .callback = InitTilesetAnim_Cave,
+};
+// CAVERNAS_03A_END

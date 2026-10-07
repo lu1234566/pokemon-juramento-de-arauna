@@ -1,0 +1,38 @@
+{
+  "base_commit": "bcd93e980e55a0f5a649baa7d6b8d154b464be23",
+  "main_commit": "979fb6c1b6731561f3c993efd6045a9bbf096c54",
+  "commits_ahead_main": 82,
+  "packages": {
+    "Arauna_Checkpoints_01_02_Rota103_V12.zip": {
+      "files": 30,
+      "payload_integrity": "PASS",
+      "same_as_installed_base": 29,
+      "different": [
+        "docs/ROTA103_V12_CHECKPOINT_02.md"
+      ],
+      "document_difference": "Installed report adds ROM and emulator verification by the integrator; all 29 other files match byte-for-byte."
+    },
+    "Arauna_SulPampa_V11_Uivo_Norte_V1_Completo.zip": {
+      "files": 1144,
+      "payload_integrity": "PASS",
+      "same_as_installed_base": 1136,
+      "different": [
+        "data/layouts/AraunaUivoRoute116V1/border.bin",
+        "data/layouts/AraunaUivoRustboroCityV1/border.bin",
+        "data/layouts/layouts.json",
+        "data/tilesets/secondary/arauna_border_oldale_town_uivo_v1/metatiles.bin",
+        "data/tilesets/secondary/arauna_border_route103_uivo_v1/metatiles.bin",
+        "data/tilesets/secondary/arauna_border_route110_uivo_v1/metatiles.bin",
+        "docs/SUL_PAMPA_V11_UIVO_NORTE_V1.md",
+        "review/uivo_norte_v1/rom_validation.json"
+      ],
+      "difference_explanation": "Five installation adjustments documented in installed Uivo report; three metatile-bank changes are Route103 V1.2. No old overlay reapplied."
+    }
+  },
+  "comparison_target": "installed base worktree, before 03A edits",
+  "recovered_references": {
+    "files_verified": 83,
+    "unique_concepts": 82,
+    "bible_pdf": "hash_matches_recovered_package"
+  }
+}
