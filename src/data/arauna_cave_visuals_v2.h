@@ -25,6 +25,18 @@ static const u16 sVisual_IslandCave[] = INCBIN_U16("review/cavernas_03c/03b_v11_
 static const u16 sVisual_AlteringCave[] = INCBIN_U16("review/cavernas_03c/visual_grids/AlteringCave.bin");
 static const u16 sVisual_ArtisanCave_B1F[] = INCBIN_U16("review/cavernas_03c/visual_grids/ArtisanCave_B1F.bin");
 static const u16 sVisual_ArtisanCave_1F[] = INCBIN_U16("review/cavernas_03c/visual_grids/ArtisanCave_1F.bin");
+static const u16 sVisual_Underwater_Route105[] = INCBIN_U16("review/dive_04/visual_grids/Underwater_Route105.bin");
+static const u16 sVisual_Underwater_Route124[] = INCBIN_U16("review/dive_04/visual_grids/Underwater_Route124.bin");
+static const u16 sVisual_Underwater_Route126[] = INCBIN_U16("review/dive_04/visual_grids/Underwater_Route126.bin");
+static const u16 sVisual_Underwater_SootopolisCity[] = INCBIN_U16("review/dive_04/visual_grids/Underwater_SootopolisCity.bin");
+static const u16 sVisual_Underwater_Route125[] = INCBIN_U16("review/dive_04/visual_grids/Underwater_Route125.bin");
+static const u16 sVisual_Underwater_MarineCave[] = INCBIN_U16("review/dive_04/visual_grids/Underwater_MarineCave.bin");
+static const u16 sVisual_Underwater_Route127[] = INCBIN_U16("review/dive_04/visual_grids/Underwater_Route127.bin");
+static const u16 sVisual_Underwater_Route128[] = INCBIN_U16("review/dive_04/visual_grids/Underwater_Route128.bin");
+static const u16 sVisual_Underwater_Route129[] = INCBIN_U16("review/dive_04/visual_grids/Underwater_Route129.bin");
+static const u16 sVisual_Underwater_Route134[] = INCBIN_U16("review/dive_04/visual_grids/Underwater_Route134.bin");
+static const u16 sVisual_Underwater_SealedChamber[] = INCBIN_U16("review/dive_04/visual_grids/Underwater_SealedChamber.bin");
+static const u16 sVisual_Underwater_SeafloorCavern[] = INCBIN_U16("review/dive_04/visual_grids/Underwater_SeafloorCavern.bin");
 static const struct CaveVisualGrid sCaveVisualGrids[] =
 {
     {162, sVisual_VictoryRoad_1F}, // VictoryRoad_1F
@@ -52,4 +64,16 @@ static const struct CaveVisualGrid sCaveVisualGrids[] =
     {419, sVisual_AlteringCave}, // AlteringCave checkpoint 03C
     {399, sVisual_ArtisanCave_B1F}, // ArtisanCave_B1F checkpoint 03C
     {400, sVisual_ArtisanCave_1F}, // ArtisanCave_1F checkpoint 03C
+    {409, sVisual_Underwater_Route105}, // Dive checkpoint 04
+    {273, sVisual_Underwater_Route124}, // Dive checkpoint 04
+    {50, sVisual_Underwater_Route126}, // Dive checkpoint 04
+    {129, sVisual_Underwater_SootopolisCity}, // Dive checkpoint 04
+    {410, sVisual_Underwater_Route125}, // Dive checkpoint 04
+    {405, sVisual_Underwater_MarineCave}, // Dive checkpoint 04
+    {51, sVisual_Underwater_Route127}, // Dive checkpoint 04
+    {52, sVisual_Underwater_Route128}, // Dive checkpoint 04
+    {411, sVisual_Underwater_Route129}, // Dive checkpoint 04
+    {281, sVisual_Underwater_Route134}, // Dive checkpoint 04
+    {282, sVisual_Underwater_SealedChamber}, // Dive checkpoint 04
+    {145, sVisual_Underwater_SeafloorCavern}, // Dive checkpoint 04
 };

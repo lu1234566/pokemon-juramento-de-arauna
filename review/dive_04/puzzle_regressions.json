@@ -1,0 +1,261 @@
+{
+  "status": "PASS",
+  "checks": 53,
+  "cases": [
+    "Dig allowed at 9,3",
+    "Dig already opened at 9,3",
+    "Dig allowed at 10,3",
+    "Dig already opened at 10,3",
+    "Dig allowed at 11,3",
+    "Dig already opened at 11,3",
+    "Dig rejects map/position 0,8,3",
+    "Dig rejects map/position 0,10,4",
+    "Dig rejects map/position 1,10,3",
+    "Party order valid (2 members)",
+    "Reversed party rejected (2 members)",
+    "Party order valid (6 members)",
+    "Reversed party rejected (6 members)",
+    "Missing last Relicanth rejected",
+    "Field move predicate allows 1:8,25",
+    "Completed field move rejected 1:8,25",
+    "Field move wrong position 1",
+    "Field move wrong map 1",
+    "Field move predicate allows 3:5,23",
+    "Completed field move rejected 3:5,23",
+    "Field move predicate allows 3:6,23",
+    "Completed field move rejected 3:6,23",
+    "Field move predicate allows 3:7,23",
+    "Completed field move rejected 3:7,23",
+    "Field move wrong position 3",
+    "Field move wrong map 3",
+    "Regice inactive does not start automatically",
+    "Regice incomplete lap rejected",
+    "Regice all 36 mask bits reached",
+    "Complete Regice lap needs return to inscription",
+    "Complete Regice lap opens only at 8,21",
+    "Regice completed flag blocks repeated puzzle",
+    "Regice perimeter is a continuous closed 36-cell lap",
+    "Regice 35-cell partial lap cannot open",
+    "Regice continuous physical lap and return opens",
+    "Regice interior step fails and clears start",
+    "Regice failed session blocked",
+    "Regice wrong map rejected",
+    "SealedChamber_OuterRoom actual C six opening IDs",
+    "SealedChamber_OuterRoom actual C center passable, sides closed",
+    "SealedChamber_OuterRoom real fieldmap writer preserves elevation",
+    "SealedChamber_OuterRoom actual C completion flag set",
+    "AncientTomb actual C six opening IDs",
+    "AncientTomb actual C center passable, sides closed",
+    "AncientTomb real fieldmap writer preserves elevation",
+    "AncientTomb actual C completion flag set",
+    "DesertRuins actual C six opening IDs",
+    "DesertRuins actual C center passable, sides closed",
+    "DesertRuins real fieldmap writer preserves elevation",
+    "DesertRuins actual C completion flag set",
+    "Regice script opens exact six native pieces",
+    "Regice closed script write preserves elevation/collision",
+    "Regice open script write preserves elevation/collision"
+  ],
+  "source": "src/braille_puzzles.c and src/fieldmap.c extracted verbatim",
+  "scope": "host predicates/masks/writes; script branches preserved by whole-file hashes, not emulated",
+  "door_states": {
+    "SealedChamber_OuterRoom": {
+      "closed": [
+        [
+          9,
+          1,
+          3625
+        ],
+        [
+          10,
+          1,
+          3625
+        ],
+        [
+          11,
+          1,
+          3625
+        ],
+        [
+          9,
+          2,
+          3637
+        ],
+        [
+          10,
+          2,
+          3637
+        ],
+        [
+          11,
+          2,
+          3637
+        ]
+      ],
+      "open": [
+        [
+          9,
+          1,
+          554
+        ],
+        [
+          10,
+          1,
+          555
+        ],
+        [
+          11,
+          1,
+          556
+        ],
+        [
+          9,
+          2,
+          3634
+        ],
+        [
+          10,
+          2,
+          563
+        ],
+        [
+          11,
+          2,
+          3636
+        ]
+      ]
+    },
+    "AncientTomb": {
+      "closed": [
+        [
+          7,
+          19,
+          3625
+        ],
+        [
+          8,
+          19,
+          3625
+        ],
+        [
+          9,
+          19,
+          3625
+        ],
+        [
+          7,
+          20,
+          3637
+        ],
+        [
+          8,
+          20,
+          3637
+        ],
+        [
+          9,
+          20,
+          3637
+        ]
+      ],
+      "open": [
+        [
+          7,
+          19,
+          554
+        ],
+        [
+          8,
+          19,
+          555
+        ],
+        [
+          9,
+          19,
+          556
+        ],
+        [
+          7,
+          20,
+          3634
+        ],
+        [
+          8,
+          20,
+          563
+        ],
+        [
+          9,
+          20,
+          3636
+        ]
+      ]
+    },
+    "IslandCave": {
+      "closed": [
+        [
+          7,
+          19,
+          3625
+        ],
+        [
+          8,
+          19,
+          3625
+        ],
+        [
+          9,
+          19,
+          3625
+        ],
+        [
+          7,
+          20,
+          3637
+        ],
+        [
+          8,
+          20,
+          3637
+        ],
+        [
+          9,
+          20,
+          3637
+        ]
+      ],
+      "open": [
+        [
+          7,
+          19,
+          3626
+        ],
+        [
+          8,
+          19,
+          3627
+        ],
+        [
+          9,
+          19,
+          3628
+        ],
+        [
+          7,
+          20,
+          3634
+        ],
+        [
+          8,
+          20,
+          563
+        ],
+        [
+          9,
+          20,
+          3636
+        ]
+      ]
+    }
+  }
+}

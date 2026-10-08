@@ -507,7 +507,7 @@
       "width": 80,
       "height": 80,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Underwater",
+      "secondary_tileset": "gTileset_AraunaDive04Arquipelago",
       "border_filepath": "data/layouts/Underwater_Route126/border.bin",
       "blockdata_filepath": "data/layouts/Underwater_Route126/map.bin"
     },
@@ -517,7 +517,7 @@
       "width": 80,
       "height": 80,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Underwater",
+      "secondary_tileset": "gTileset_AraunaDive04Oceano",
       "border_filepath": "data/layouts/Underwater_Route127/border.bin",
       "blockdata_filepath": "data/layouts/Underwater_Route127/map.bin"
     },
@@ -527,7 +527,7 @@
       "width": 120,
       "height": 40,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Underwater",
+      "secondary_tileset": "gTileset_AraunaDive04Oceano",
       "border_filepath": "data/layouts/Underwater_Route128/border.bin",
       "blockdata_filepath": "data/layouts/Underwater_Route128/map.bin"
     },
@@ -1297,7 +1297,7 @@
       "width": 20,
       "height": 10,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Underwater",
+      "secondary_tileset": "gTileset_AraunaDive04Arquipelago",
       "border_filepath": "data/layouts/Underwater_SootopolisCity/border.bin",
       "blockdata_filepath": "data/layouts/Underwater_SootopolisCity/map.bin"
     },
@@ -1457,7 +1457,7 @@
       "width": 14,
       "height": 9,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Underwater",
+      "secondary_tileset": "gTileset_AraunaDive04Horizonte",
       "border_filepath": "data/layouts/Underwater_SeafloorCavern/border.bin",
       "blockdata_filepath": "data/layouts/Underwater_SeafloorCavern/map.bin"
     },
@@ -2737,7 +2737,7 @@
       "width": 80,
       "height": 80,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Underwater",
+      "secondary_tileset": "gTileset_AraunaDive04Arquipelago",
       "border_filepath": "data/layouts/Underwater_Route124/border.bin",
       "blockdata_filepath": "data/layouts/Underwater_Route124/map.bin"
     },
@@ -2817,7 +2817,7 @@
       "width": 18,
       "height": 10,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Underwater",
+      "secondary_tileset": "gTileset_AraunaDive04Arquivo",
       "border_filepath": "data/layouts/Underwater_Route134/border.bin",
       "blockdata_filepath": "data/layouts/Underwater_Route134/map.bin"
     },
@@ -2827,7 +2827,7 @@
       "width": 22,
       "height": 48,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Underwater",
+      "secondary_tileset": "gTileset_AraunaDive04Arquivo",
       "border_filepath": "data/layouts/Underwater_SealedChamber/border.bin",
       "blockdata_filepath": "data/layouts/Underwater_SealedChamber/map.bin"
     },
@@ -4057,7 +4057,7 @@
       "width": 20,
       "height": 10,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Underwater",
+      "secondary_tileset": "gTileset_AraunaDive04Mare",
       "border_filepath": "data/layouts/Underwater_MarineCave/border.bin",
       "blockdata_filepath": "data/layouts/Underwater_MarineCave/map.bin"
     },
@@ -4097,7 +4097,7 @@
       "width": 40,
       "height": 80,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Underwater",
+      "secondary_tileset": "gTileset_AraunaDive04Costa",
       "border_filepath": "data/layouts/Underwater_Route105/border.bin",
       "blockdata_filepath": "data/layouts/Underwater_Route105/map.bin"
     },
@@ -4107,7 +4107,7 @@
       "width": 80,
       "height": 40,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Underwater",
+      "secondary_tileset": "gTileset_AraunaDive04Mare",
       "border_filepath": "data/layouts/Underwater_Route125/border.bin",
       "blockdata_filepath": "data/layouts/Underwater_Route125/map.bin"
     },
@@ -4117,7 +4117,7 @@
       "width": 80,
       "height": 40,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Underwater",
+      "secondary_tileset": "gTileset_AraunaDive04Oceano",
       "border_filepath": "data/layouts/Underwater_Route129/border.bin",
       "blockdata_filepath": "data/layouts/Underwater_Route129/map.bin"
     },

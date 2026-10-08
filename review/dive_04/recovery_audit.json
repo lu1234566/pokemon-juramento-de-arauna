@@ -1,0 +1,33 @@
+{
+  "base_commit": "802d01c3417a9384f8de54050c469e0c5de29399",
+  "github_main": "979fb6c1b6731561f3c993efd6045a9bbf096c54",
+  "github_main_behind": 85,
+  "03c_payload_files": 185,
+  "03c_matching_files": 184,
+  "integrator_differences": [
+    "docs/CAVERNAS_CHECKPOINT_03C_03B_V11.md"
+  ],
+  "preserved_installed_fixes": [
+    "Altering native 0x0A7 door behavior",
+    "Space Center console 0x216"
+  ],
+  "fog_evidence": "docs/CAVERNAS_CHECKPOINT_03A.md integration appendix",
+  "native_dive_maps": [
+    "Underwater_MarineCave",
+    "Underwater_Route105",
+    "Underwater_Route124",
+    "Underwater_Route125",
+    "Underwater_Route126",
+    "Underwater_Route127",
+    "Underwater_Route128",
+    "Underwater_Route129",
+    "Underwater_Route134",
+    "Underwater_SeafloorCavern",
+    "Underwater_SealedChamber",
+    "Underwater_SootopolisCity"
+  ],
+  "route107_has_underwater_map": false,
+  "route107_has_dive_connection": false,
+  "reference_assets_sha256_verified": 83,
+  "reference_zip_sha256": "ecf381db95864a61e191a9fcf2525e3f892a1dd934e5aaca7c43344f5e6e19e3"
+}

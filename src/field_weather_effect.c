@@ -7,6 +7,7 @@
 #include "random.h"
 #include "script.h"
 #include "constants/weather.h"
+#include "constants/maps.h"
 #include "constants/songs.h"
 #include "sound.h"
 #include "sprite.h"
@@ -1402,7 +1403,17 @@ void FogHorizontal_Main(void)
     case 0:
         CreateFogHorizontalSprites();
         if (gWeatherPtr->currWeather == WEATHER_FOG_HORIZONTAL)
-            Weather_SetTargetBlendCoeffs(12, 8, 3);
+        {
+            // Arauna: thin haze in the two legendary chambers; keep the
+            // weather ID, lifecycle and encounter scripts unchanged.
+            if ((gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_TERRA_CAVE_END)
+              && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_TERRA_CAVE_END))
+             || (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_MARINE_CAVE_END)
+              && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_MARINE_CAVE_END)))
+                Weather_SetTargetBlendCoeffs(4, 16, 3);
+            else
+                Weather_SetTargetBlendCoeffs(12, 8, 3);
+        }
         else
             Weather_SetTargetBlendCoeffs(4, 16, 0);
         gWeatherPtr->initStep++;

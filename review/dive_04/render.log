@@ -1,0 +1,3 @@
+/workspace/scratch/70b5ee7403af/arauna-dive-04/tools/arauna_maps/render_dive_04.py:83: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.
+  for bg,fg in zip(im.getdata(),fogrgba.getdata()):data.append(tuple(min(248,(f*a_+v*b_)//16)//8*8 for f,v in zip(fg[:3],bg)) if fg[3] else bg)
+Rendered 12 maps, cameras, surface states and scoped fog study.

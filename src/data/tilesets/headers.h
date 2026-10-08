@@ -4278,3 +4278,66 @@ const struct Tileset gTileset_AraunaIslandCave03BV11 =
     .callback = InitTilesetAnim_Cave,
 };
 // CAVERNAS_03C_END
+
+// DIVE_04_BEGIN
+const struct Tileset gTileset_AraunaDive04Costa =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaDive04Costa,
+    .palettes = gTilesetPalettes_AraunaDive04Costa,
+    .metatiles = gMetatiles_AraunaDive04Costa,
+    .metatileAttributes = gMetatileAttributes_AraunaDive04Costa,
+    .callback = InitTilesetAnim_Underwater,
+};
+const struct Tileset gTileset_AraunaDive04Arquipelago =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaDive04Arquipelago,
+    .palettes = gTilesetPalettes_AraunaDive04Arquipelago,
+    .metatiles = gMetatiles_AraunaDive04Arquipelago,
+    .metatileAttributes = gMetatileAttributes_AraunaDive04Arquipelago,
+    .callback = InitTilesetAnim_Underwater,
+};
+const struct Tileset gTileset_AraunaDive04Mare =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaDive04Mare,
+    .palettes = gTilesetPalettes_AraunaDive04Mare,
+    .metatiles = gMetatiles_AraunaDive04Mare,
+    .metatileAttributes = gMetatileAttributes_AraunaDive04Mare,
+    .callback = InitTilesetAnim_Underwater,
+};
+const struct Tileset gTileset_AraunaDive04Oceano =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaDive04Oceano,
+    .palettes = gTilesetPalettes_AraunaDive04Oceano,
+    .metatiles = gMetatiles_AraunaDive04Oceano,
+    .metatileAttributes = gMetatileAttributes_AraunaDive04Oceano,
+    .callback = InitTilesetAnim_Underwater,
+};
+const struct Tileset gTileset_AraunaDive04Arquivo =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaDive04Arquivo,
+    .palettes = gTilesetPalettes_AraunaDive04Arquivo,
+    .metatiles = gMetatiles_AraunaDive04Arquivo,
+    .metatileAttributes = gMetatileAttributes_AraunaDive04Arquivo,
+    .callback = InitTilesetAnim_Underwater,
+};
+const struct Tileset gTileset_AraunaDive04Horizonte =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaDive04Horizonte,
+    .palettes = gTilesetPalettes_AraunaDive04Horizonte,
+    .metatiles = gMetatiles_AraunaDive04Horizonte,
+    .metatileAttributes = gMetatileAttributes_AraunaDive04Horizonte,
+    .callback = InitTilesetAnim_Underwater,
+};
+// DIVE_04_END

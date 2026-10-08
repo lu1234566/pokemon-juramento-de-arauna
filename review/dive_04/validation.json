@@ -1,0 +1,260 @@
+{
+  "status": "PASS",
+  "base_commit": "802d01c3417a9384f8de54050c469e0c5de29399",
+  "protected_gameplay_files": 17906,
+  "protected_dependencies": 110,
+  "maps": {
+    "Underwater_Route105": {
+      "cells": 3200,
+      "changed_visual_cells": 3200,
+      "warps": 2,
+      "connections": 1,
+      "hidden_items": 0,
+      "native_words_events_scripts_preserved": true
+    },
+    "Underwater_Route124": {
+      "cells": 6400,
+      "changed_visual_cells": 6400,
+      "warps": 0,
+      "connections": 2,
+      "hidden_items": 7,
+      "native_words_events_scripts_preserved": true
+    },
+    "Underwater_Route126": {
+      "cells": 6400,
+      "changed_visual_cells": 6400,
+      "warps": 1,
+      "connections": 3,
+      "hidden_items": 8,
+      "native_words_events_scripts_preserved": true
+    },
+    "Underwater_SootopolisCity": {
+      "cells": 200,
+      "changed_visual_cells": 200,
+      "warps": 2,
+      "connections": 0,
+      "hidden_items": 0,
+      "native_words_events_scripts_preserved": true
+    },
+    "Underwater_Route125": {
+      "cells": 3200,
+      "changed_visual_cells": 3200,
+      "warps": 2,
+      "connections": 1,
+      "hidden_items": 0,
+      "native_words_events_scripts_preserved": true
+    },
+    "Underwater_MarineCave": {
+      "cells": 200,
+      "changed_visual_cells": 200,
+      "warps": 1,
+      "connections": 0,
+      "hidden_items": 0,
+      "native_words_events_scripts_preserved": true
+    },
+    "Underwater_Route127": {
+      "cells": 6400,
+      "changed_visual_cells": 6400,
+      "warps": 2,
+      "connections": 3,
+      "hidden_items": 4,
+      "native_words_events_scripts_preserved": true
+    },
+    "Underwater_Route128": {
+      "cells": 4800,
+      "changed_visual_cells": 4800,
+      "warps": 1,
+      "connections": 2,
+      "hidden_items": 2,
+      "native_words_events_scripts_preserved": true
+    },
+    "Underwater_Route129": {
+      "cells": 3200,
+      "changed_visual_cells": 3200,
+      "warps": 2,
+      "connections": 1,
+      "hidden_items": 0,
+      "native_words_events_scripts_preserved": true
+    },
+    "Underwater_Route134": {
+      "cells": 180,
+      "changed_visual_cells": 180,
+      "warps": 1,
+      "connections": 0,
+      "hidden_items": 0,
+      "native_words_events_scripts_preserved": true
+    },
+    "Underwater_SealedChamber": {
+      "cells": 1056,
+      "changed_visual_cells": 1056,
+      "warps": 1,
+      "connections": 0,
+      "hidden_items": 0,
+      "native_words_events_scripts_preserved": true
+    },
+    "Underwater_SeafloorCavern": {
+      "cells": 126,
+      "changed_visual_cells": 126,
+      "warps": 1,
+      "connections": 0,
+      "hidden_items": 0,
+      "native_words_events_scripts_preserved": true
+    }
+  },
+  "banks": [
+    {
+      "theme": "costa",
+      "tiles": 512,
+      "aliases": 25,
+      "native_attributes_preserved": 236
+    },
+    {
+      "theme": "arquipelago",
+      "tiles": 512,
+      "aliases": 56,
+      "native_attributes_preserved": 236
+    },
+    {
+      "theme": "mare",
+      "tiles": 512,
+      "aliases": 30,
+      "native_attributes_preserved": 236
+    },
+    {
+      "theme": "oceano",
+      "tiles": 512,
+      "aliases": 41,
+      "native_attributes_preserved": 236
+    },
+    {
+      "theme": "arquivo",
+      "tiles": 512,
+      "aliases": 20,
+      "native_attributes_preserved": 236
+    },
+    {
+      "theme": "horizonte",
+      "tiles": 512,
+      "aliases": 11,
+      "native_attributes_preserved": 236
+    }
+  ],
+  "actual_c_selector_cells": 35362,
+  "actual_c_fallback_cases": 70772,
+  "previous_selector_cells_preserved": 17805,
+  "actual_c_native_alias_dive_comparisons": 35362,
+  "live_kelp_metatiles_checked": 2,
+  "hidden_items_preserved": 21,
+  "surface_landmarks": {
+    "altering": {
+      "map": "Route103",
+      "native_ids": [
+        166,
+        167
+      ],
+      "positions": [
+        [
+          45,
+          5
+        ],
+        [
+          45,
+          6
+        ]
+      ],
+      "new_tiles": [
+        512,
+        513,
+        514,
+        515,
+        516,
+        517,
+        518,
+        519
+      ]
+    },
+    "mirage": {
+      "native_ids": [
+        1008,
+        1009,
+        1010
+      ],
+      "visual_ids": [
+        515,
+        516,
+        523
+      ],
+      "layout_indices": [
+        675,
+        711
+      ],
+      "positions": [
+        [
+          18,
+          56
+        ],
+        [
+          19,
+          56
+        ],
+        [
+          20,
+          56
+        ]
+      ],
+      "new_tiles": [
+        512,
+        513,
+        514,
+        515,
+        516,
+        517,
+        518,
+        519,
+        520,
+        521,
+        522,
+        523
+      ],
+      "terrain_cells_using_native_ids": 363
+    }
+  },
+  "dive_c": {
+    "status": "PASS",
+    "predicate_and_dispatch_cases": 1536,
+    "sources": [
+      "MetatileBehavior_IsDiveable",
+      "MetatileBehavior_IsUnableToEmerge",
+      "SetDiveWarp",
+      "SetDiveWarpEmerge",
+      "SetDiveWarpDive",
+      "TrySetDiveWarp"
+    ],
+    "script_scope": "Dispatcher script callback uses explicit fixture; event script files are frozen, not interpreted."
+  },
+  "fog_c": {
+    "status": "PASS",
+    "actual_c_checks": 1056,
+    "chambers": [
+      6247,
+      6249
+    ],
+    "old_coefficients": [
+      12,
+      8,
+      3
+    ],
+    "chamber_coefficients": [
+      4,
+      16,
+      3
+    ],
+    "all_other_maps_keep_old_fog": true,
+    "underwater_fog_unchanged": true
+  },
+  "real_c_puzzle_regressions": 53,
+  "submarine_gone_script_cells": 12,
+  "mirage_absent_layout_cells_preserved": 5600,
+  "rom_build": "pending ARM toolchain unavailable",
+  "emulator": "pending mGBA unavailable"
+}

@@ -1,0 +1,83 @@
+{
+  "Underwater_Route105": {
+    "fixed_commands": [],
+    "coordinate_conditions": []
+  },
+  "Underwater_Route124": {
+    "fixed_commands": [],
+    "coordinate_conditions": []
+  },
+  "Underwater_Route126": {
+    "fixed_commands": [],
+    "coordinate_conditions": []
+  },
+  "Underwater_SootopolisCity": {
+    "fixed_commands": [
+      "setdivewarp MAP_SOOTOPOLIS_CITY, 23, 43"
+    ],
+    "coordinate_conditions": []
+  },
+  "Underwater_Route125": {
+    "fixed_commands": [],
+    "coordinate_conditions": []
+  },
+  "Underwater_MarineCave": {
+    "fixed_commands": [
+      "setdivewarp MAP_MARINE_CAVE_ENTRANCE, 10, 17"
+    ],
+    "coordinate_conditions": []
+  },
+  "Underwater_Route127": {
+    "fixed_commands": [],
+    "coordinate_conditions": []
+  },
+  "Underwater_Route128": {
+    "fixed_commands": [],
+    "coordinate_conditions": []
+  },
+  "Underwater_Route129": {
+    "fixed_commands": [],
+    "coordinate_conditions": []
+  },
+  "Underwater_Route134": {
+    "fixed_commands": [
+      "setdivewarp MAP_ROUTE134, 60, 31"
+    ],
+    "coordinate_conditions": []
+  },
+  "Underwater_SealedChamber": {
+    "fixed_commands": [
+      "setdivewarp MAP_ROUTE134, 60, 31",
+      "setdivewarp MAP_SEALED_CHAMBER_OUTER_ROOM, 10, 19"
+    ],
+    "coordinate_conditions": [
+      "goto_if_ne VAR_0x8004, 12, Underwater_SealedChamber_EventScript_SurfaceRoute134",
+      "goto_if_ne VAR_0x8005, 44, Underwater_SealedChamber_EventScript_SurfaceRoute134"
+    ]
+  },
+  "Underwater_SeafloorCavern": {
+    "fixed_commands": [
+      "setdivewarp MAP_SEAFLOOR_CAVERN_ENTRANCE, 10, 17"
+    ],
+    "coordinate_conditions": []
+  },
+  "MarineCave_Entrance": {
+    "fixed_commands": [
+      "setdivewarp MAP_UNDERWATER_MARINE_CAVE, 9, 6"
+    ],
+    "coordinate_conditions": []
+  },
+  "SealedChamber_OuterRoom": {
+    "fixed_commands": [
+      "setdivewarp MAP_UNDERWATER_SEALED_CHAMBER, 12, 44",
+      "setescapewarp MAP_UNDERWATER_SEALED_CHAMBER, 12, 44"
+    ],
+    "coordinate_conditions": []
+  },
+  "Route134": {
+    "fixed_commands": [
+      "setdivewarp MAP_UNDERWATER_ROUTE134, 8, 6"
+    ],
+    "coordinate_conditions": []
+  }
+}

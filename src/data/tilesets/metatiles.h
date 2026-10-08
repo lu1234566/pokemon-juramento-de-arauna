@@ -1128,3 +1128,18 @@ const u16 gMetatileAttributes_AraunaAncientTomb03BV11[] = INCBIN_U16("data/tiles
 const u16 gMetatiles_AraunaIslandCave03BV11[] = INCBIN_U16("data/tilesets/secondary/arauna_island_03b_v11/metatiles.bin");
 const u16 gMetatileAttributes_AraunaIslandCave03BV11[] = INCBIN_U16("data/tilesets/secondary/arauna_island_03b_v11/metatile_attributes.bin");
 // CAVERNAS_03C_END
+
+// DIVE_04_BEGIN
+const u16 gMetatiles_AraunaDive04Costa[] = INCBIN_U16("data/tilesets/secondary/arauna_dive04_costa/metatiles.bin");
+const u16 gMetatileAttributes_AraunaDive04Costa[] = INCBIN_U16("data/tilesets/secondary/arauna_dive04_costa/metatile_attributes.bin");
+const u16 gMetatiles_AraunaDive04Arquipelago[] = INCBIN_U16("data/tilesets/secondary/arauna_dive04_arquipelago/metatiles.bin");
+const u16 gMetatileAttributes_AraunaDive04Arquipelago[] = INCBIN_U16("data/tilesets/secondary/arauna_dive04_arquipelago/metatile_attributes.bin");
+const u16 gMetatiles_AraunaDive04Mare[] = INCBIN_U16("data/tilesets/secondary/arauna_dive04_mare/metatiles.bin");
+const u16 gMetatileAttributes_AraunaDive04Mare[] = INCBIN_U16("data/tilesets/secondary/arauna_dive04_mare/metatile_attributes.bin");
+const u16 gMetatiles_AraunaDive04Oceano[] = INCBIN_U16("data/tilesets/secondary/arauna_dive04_oceano/metatiles.bin");
+const u16 gMetatileAttributes_AraunaDive04Oceano[] = INCBIN_U16("data/tilesets/secondary/arauna_dive04_oceano/metatile_attributes.bin");
+const u16 gMetatiles_AraunaDive04Arquivo[] = INCBIN_U16("data/tilesets/secondary/arauna_dive04_arquivo/metatiles.bin");
+const u16 gMetatileAttributes_AraunaDive04Arquivo[] = INCBIN_U16("data/tilesets/secondary/arauna_dive04_arquivo/metatile_attributes.bin");
+const u16 gMetatiles_AraunaDive04Horizonte[] = INCBIN_U16("data/tilesets/secondary/arauna_dive04_horizonte/metatiles.bin");
+const u16 gMetatileAttributes_AraunaDive04Horizonte[] = INCBIN_U16("data/tilesets/secondary/arauna_dive04_horizonte/metatile_attributes.bin");
+// DIVE_04_END

@@ -1,0 +1,9 @@
+{
+  "source": "native assets and production C selector; no emulator or sprite screenshot",
+  "maps": 12,
+  "full_map_images": 24,
+  "camera_comparison_pairs": 12,
+  "surface_state_comparisons": 4,
+  "submarine_gone_script_state": true,
+  "fog": "Host coefficient study; runtime pending"
+}
