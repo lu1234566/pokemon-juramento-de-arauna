@@ -1,0 +1,60 @@
+/workspace/scratch/70b5ee7403af/arauna-06b/tools/arauna_maps/validate_navel_06b.py:74: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.
+  a=tuple(p[:3]==(112,184,240) for p in br.metatile(mid).getdata())
+/workspace/scratch/70b5ee7403af/arauna-06b/tools/arauna_maps/validate_navel_06b.py:75: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.
+  b=tuple(p[:3]==(112,184,240) for p in r.metatile(mid).getdata())
+/workspace/scratch/70b5ee7403af/arauna-06b/tools/arauna_maps/validate_navel_06b.py:120: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.
+  pixels=list(im.crop((i%row*8,i//row*8,i%row*8+8,i//row*8+8)).getdata());packed=bytes(pixels[j]|pixels[j+1]<<4 for j in range(0,64,2));assert [v for b in packed for v in (b&15,b>>4)]==pixels
+{
+  "status": "PASS",
+  "base_commit": "29ae94cdc2309d099cd0f8ac4fecc4775a6aef72",
+  "protected_gameplay_files": 18156,
+  "other_tracked_dependencies": 4238,
+  "core_maps": 21,
+  "dependent_harbor": 1,
+  "native_warps": 42,
+  "appended_private_layouts": 9,
+  "full_native_attributes": 7651,
+  "native_layer_masks": 498,
+  "plain_cells_checked": 647,
+  "blocked_rim_cells_checked": 301,
+  "actual_c_selector_cells": 6236,
+  "actual_c_fallback_cases": 112640,
+  "previous_cavern_dive_cells": 53167,
+  "previous_trainer_hill_generated_cells": 5376,
+  "birth_island_harbor_unchanged_cells": 221,
+  "native_c": {
+    "status": "PASS",
+    "ferry_menu_configurations": 2048,
+    "ferry_selection_cases": 7552,
+    "terrain_predicates": 768,
+    "functions": [
+      "CreateLilycoveSSTidalMultichoice",
+      "GetLilycoveSSTidalSelection",
+      "MetatileBehavior_IsLadder",
+      "MetatileBehavior_IsNonAnimDoor",
+      "MetatileBehavior_IsDeepSouthWarp"
+    ],
+    "scope": "Original C functions compiled/executed on host. Bag, flags and UI are explicit fixtures, not a full game or ferry animation session."
+  },
+  "event_fragments": {
+    "status": "PASS",
+    "event_fragment_cases": 36,
+    "encounter_slots": [
+      "SPECIES_HO_OH",
+      "SPECIES_LUGIA"
+    ],
+    "level": 70,
+    "ferry_arrival": [
+      8,
+      4
+    ],
+    "ferry_return": [
+      8,
+      11
+    ],
+    "scope": "Restricted runner of control-flow/flag commands in original event sources. Battle outcome, message answer, camera/movement services and ferry animation calls are fixtures. Not the full ROM script interpreter, battle or camera engine."
+  },
+  "rom_build": "pending: ARM compiler unavailable",
+  "emulator": "pending: mGBA unavailable",
+  "native_summit_sky_pixels_preserved": 108032
+}

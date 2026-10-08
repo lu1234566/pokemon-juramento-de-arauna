@@ -4447,3 +4447,166 @@ const struct Tileset gTileset_AraunaTrainerHill06AElevatorArt =
     .callback = NULL,
 };
 // TRAINER_HILL_06A_END
+
+// NAVEL_ROCK_06B_BEGIN
+const struct Tileset gTileset_AraunaNavel06BCoastBase =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AraunaNavel06BCoastBase,
+    .palettes = gTilesetPalettes_AraunaNavel06BCoastBase,
+    .metatiles = gMetatiles_AraunaNavel06BCoastBase,
+    .metatileAttributes = gMetatileAttributes_AraunaNavel06BCoastBase,
+    .callback = InitTilesetAnim_General,
+};
+const struct Tileset gTileset_AraunaNavel06BCoastArt =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaNavel06BCoastArt,
+    .palettes = gTilesetPalettes_AraunaNavel06BCoastArt,
+    .metatiles = gMetatiles_AraunaNavel06BCoastArt,
+    .metatileAttributes = gMetatileAttributes_AraunaNavel06BCoastArt,
+    .callback = InitTilesetAnim_Dewford,
+};
+const struct Tileset gTileset_AraunaNavel06BGalleryBase =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AraunaNavel06BGalleryBase,
+    .palettes = gTilesetPalettes_AraunaNavel06BGalleryBase,
+    .metatiles = gMetatiles_AraunaNavel06BGalleryBase,
+    .metatileAttributes = gMetatileAttributes_AraunaNavel06BGalleryBase,
+    .callback = InitTilesetAnim_General,
+};
+const struct Tileset gTileset_AraunaNavel06BGalleryArt =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaNavel06BGalleryArt,
+    .palettes = gTilesetPalettes_AraunaNavel06BGalleryArt,
+    .metatiles = gMetatiles_AraunaNavel06BGalleryArt,
+    .metatileAttributes = gMetatileAttributes_AraunaNavel06BGalleryArt,
+    .callback = NULL,
+};
+const struct Tileset gTileset_AraunaNavel06BAscentBase =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AraunaNavel06BAscentBase,
+    .palettes = gTilesetPalettes_AraunaNavel06BAscentBase,
+    .metatiles = gMetatiles_AraunaNavel06BAscentBase,
+    .metatileAttributes = gMetatileAttributes_AraunaNavel06BAscentBase,
+    .callback = InitTilesetAnim_General,
+};
+const struct Tileset gTileset_AraunaNavel06BAscentArt =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaNavel06BAscentArt,
+    .palettes = gTilesetPalettes_AraunaNavel06BAscentArt,
+    .metatiles = gMetatiles_AraunaNavel06BAscentArt,
+    .metatileAttributes = gMetatileAttributes_AraunaNavel06BAscentArt,
+    .callback = NULL,
+};
+const struct Tileset gTileset_AraunaNavel06BSummitBase =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AraunaNavel06BSummitBase,
+    .palettes = gTilesetPalettes_AraunaNavel06BSummitBase,
+    .metatiles = gMetatiles_AraunaNavel06BSummitBase,
+    .metatileAttributes = gMetatileAttributes_AraunaNavel06BSummitBase,
+    .callback = InitTilesetAnim_General,
+};
+const struct Tileset gTileset_AraunaNavel06BSummitArt =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaNavel06BSummitArt,
+    .palettes = gTilesetPalettes_AraunaNavel06BSummitArt,
+    .metatiles = gMetatiles_AraunaNavel06BSummitArt,
+    .metatileAttributes = gMetatileAttributes_AraunaNavel06BSummitArt,
+    .callback = NULL,
+};
+const struct Tileset gTileset_AraunaNavel06BDepth1Base =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AraunaNavel06BDepth1Base,
+    .palettes = gTilesetPalettes_AraunaNavel06BDepth1Base,
+    .metatiles = gMetatiles_AraunaNavel06BDepth1Base,
+    .metatileAttributes = gMetatileAttributes_AraunaNavel06BDepth1Base,
+    .callback = InitTilesetAnim_General,
+};
+const struct Tileset gTileset_AraunaNavel06BDepth1Art =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaNavel06BDepth1Art,
+    .palettes = gTilesetPalettes_AraunaNavel06BDepth1Art,
+    .metatiles = gMetatiles_AraunaNavel06BDepth1Art,
+    .metatileAttributes = gMetatileAttributes_AraunaNavel06BDepth1Art,
+    .callback = NULL,
+};
+const struct Tileset gTileset_AraunaNavel06BDepth2Base =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AraunaNavel06BDepth2Base,
+    .palettes = gTilesetPalettes_AraunaNavel06BDepth2Base,
+    .metatiles = gMetatiles_AraunaNavel06BDepth2Base,
+    .metatileAttributes = gMetatileAttributes_AraunaNavel06BDepth2Base,
+    .callback = InitTilesetAnim_General,
+};
+const struct Tileset gTileset_AraunaNavel06BDepth2Art =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaNavel06BDepth2Art,
+    .palettes = gTilesetPalettes_AraunaNavel06BDepth2Art,
+    .metatiles = gMetatiles_AraunaNavel06BDepth2Art,
+    .metatileAttributes = gMetatileAttributes_AraunaNavel06BDepth2Art,
+    .callback = NULL,
+};
+const struct Tileset gTileset_AraunaNavel06BAbyssBase =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AraunaNavel06BAbyssBase,
+    .palettes = gTilesetPalettes_AraunaNavel06BAbyssBase,
+    .metatiles = gMetatiles_AraunaNavel06BAbyssBase,
+    .metatileAttributes = gMetatileAttributes_AraunaNavel06BAbyssBase,
+    .callback = InitTilesetAnim_General,
+};
+const struct Tileset gTileset_AraunaNavel06BAbyssArt =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaNavel06BAbyssArt,
+    .palettes = gTilesetPalettes_AraunaNavel06BAbyssArt,
+    .metatiles = gMetatiles_AraunaNavel06BAbyssArt,
+    .metatileAttributes = gMetatileAttributes_AraunaNavel06BAbyssArt,
+    .callback = NULL,
+};
+const struct Tileset gTileset_AraunaNavel06BDockBase =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AraunaNavel06BDockBase,
+    .palettes = gTilesetPalettes_AraunaNavel06BDockBase,
+    .metatiles = gMetatiles_AraunaNavel06BDockBase,
+    .metatileAttributes = gMetatileAttributes_AraunaNavel06BDockBase,
+    .callback = InitTilesetAnim_General,
+};
+const struct Tileset gTileset_AraunaNavel06BDockArt =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaNavel06BDockArt,
+    .palettes = gTilesetPalettes_AraunaNavel06BDockArt,
+    .metatiles = gMetatiles_AraunaNavel06BDockArt,
+    .metatileAttributes = gMetatileAttributes_AraunaNavel06BDockArt,
+    .callback = NULL,
+};
+// NAVEL_ROCK_06B_END

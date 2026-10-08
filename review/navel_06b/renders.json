@@ -1,0 +1,297 @@
+{
+  "kind": "Native RGB555, no actors or engine weather; not emulator screenshots. Small maps centered with black padding in camera previews.",
+  "map_pairs": 22,
+  "core_maps": 21,
+  "dependent_harbor": 1,
+  "camera_pairs": [
+    {
+      "map": "NavelRock_Exterior",
+      "origin": [
+        3,
+        5
+      ],
+      "size": [
+        240,
+        160
+      ],
+      "small_map_centered": false
+    },
+    {
+      "map": "NavelRock_Entrance",
+      "origin": [
+        3,
+        0
+      ],
+      "size": [
+        240,
+        160
+      ],
+      "small_map_centered": false
+    },
+    {
+      "map": "NavelRock_B1F",
+      "origin": [
+        0,
+        0
+      ],
+      "size": [
+        240,
+        160
+      ],
+      "small_map_centered": false
+    },
+    {
+      "map": "NavelRock_Fork",
+      "origin": [
+        0,
+        1
+      ],
+      "size": [
+        240,
+        160
+      ],
+      "small_map_centered": false
+    },
+    {
+      "map": "NavelRock_Up1",
+      "origin": [
+        0,
+        0
+      ],
+      "size": [
+        240,
+        160
+      ],
+      "small_map_centered": true
+    },
+    {
+      "map": "NavelRock_Up2",
+      "origin": [
+        0,
+        0
+      ],
+      "size": [
+        240,
+        160
+      ],
+      "small_map_centered": true
+    },
+    {
+      "map": "NavelRock_Up3",
+      "origin": [
+        0,
+        0
+      ],
+      "size": [
+        240,
+        160
+      ],
+      "small_map_centered": true
+    },
+    {
+      "map": "NavelRock_Up4",
+      "origin": [
+        0,
+        0
+      ],
+      "size": [
+        240,
+        160
+      ],
+      "small_map_centered": true
+    },
+    {
+      "map": "NavelRock_Top",
+      "origin": [
+        5,
+        4
+      ],
+      "size": [
+        240,
+        160
+      ],
+      "small_map_centered": false
+    },
+    {
+      "map": "NavelRock_Down01",
+      "origin": [
+        0,
+        0
+      ],
+      "size": [
+        240,
+        160
+      ],
+      "small_map_centered": true
+    },
+    {
+      "map": "NavelRock_Down02",
+      "origin": [
+        0,
+        0
+      ],
+      "size": [
+        240,
+        160
+      ],
+      "small_map_centered": true
+    },
+    {
+      "map": "NavelRock_Down03",
+      "origin": [
+        0,
+        0
+      ],
+      "size": [
+        240,
+        160
+      ],
+      "small_map_centered": true
+    },
+    {
+      "map": "NavelRock_Down04",
+      "origin": [
+        0,
+        0
+      ],
+      "size": [
+        240,
+        160
+      ],
+      "small_map_centered": true
+    },
+    {
+      "map": "NavelRock_Down05",
+      "origin": [
+        0,
+        0
+      ],
+      "size": [
+        240,
+        160
+      ],
+      "small_map_centered": true
+    },
+    {
+      "map": "NavelRock_Down06",
+      "origin": [
+        0,
+        0
+      ],
+      "size": [
+        240,
+        160
+      ],
+      "small_map_centered": true
+    },
+    {
+      "map": "NavelRock_Down07",
+      "origin": [
+        0,
+        0
+      ],
+      "size": [
+        240,
+        160
+      ],
+      "small_map_centered": true
+    },
+    {
+      "map": "NavelRock_Down08",
+      "origin": [
+        0,
+        0
+      ],
+      "size": [
+        240,
+        160
+      ],
+      "small_map_centered": true
+    },
+    {
+      "map": "NavelRock_Down09",
+      "origin": [
+        0,
+        0
+      ],
+      "size": [
+        240,
+        160
+      ],
+      "small_map_centered": true
+    },
+    {
+      "map": "NavelRock_Down10",
+      "origin": [
+        0,
+        0
+      ],
+      "size": [
+        240,
+        160
+      ],
+      "small_map_centered": true
+    },
+    {
+      "map": "NavelRock_Down11",
+      "origin": [
+        0,
+        0
+      ],
+      "size": [
+        240,
+        160
+      ],
+      "small_map_centered": true
+    },
+    {
+      "map": "NavelRock_Bottom",
+      "origin": [
+        4,
+        10
+      ],
+      "size": [
+        240,
+        160
+      ],
+      "small_map_centered": false
+    },
+    {
+      "map": "NavelRock_Harbor",
+      "origin": [
+        1,
+        1
+      ],
+      "size": [
+        240,
+        160
+      ],
+      "small_map_centered": false
+    },
+    {
+      "map": "NavelRock_Fork",
+      "detail": "ForkWest",
+      "origin": [
+        0,
+        0
+      ],
+      "size": [
+        240,
+        160
+      ]
+    },
+    {
+      "map": "NavelRock_Fork",
+      "detail": "ForkEast",
+      "origin": [
+        12,
+        0
+      ],
+      "size": [
+        240,
+        160
+      ]
+    }
+  ],
+  "concept_is_material_reference_only": true
+}

@@ -1169,3 +1169,38 @@ const u16 gMetatileAttributes_AraunaTrainerHill06AElevatorBase[] = INCBIN_U16("d
 const u16 gMetatiles_AraunaTrainerHill06AElevatorArt[] = INCBIN_U16("data/tilesets/secondary/arauna_trainerhill06a_elevator/metatiles.bin");
 const u16 gMetatileAttributes_AraunaTrainerHill06AElevatorArt[] = INCBIN_U16("data/tilesets/secondary/arauna_trainerhill06a_elevator/metatile_attributes.bin");
 // TRAINER_HILL_06A_END
+
+// NAVEL_ROCK_06B_BEGIN
+const u16 gMetatiles_AraunaNavel06BCoastBase[] = INCBIN_U16("data/tilesets/primary/arauna_navel06b_coast/metatiles.bin");
+const u16 gMetatileAttributes_AraunaNavel06BCoastBase[] = INCBIN_U16("data/tilesets/primary/arauna_navel06b_coast/metatile_attributes.bin");
+const u16 gMetatiles_AraunaNavel06BCoastArt[] = INCBIN_U16("data/tilesets/secondary/arauna_navel06b_coast/metatiles.bin");
+const u16 gMetatileAttributes_AraunaNavel06BCoastArt[] = INCBIN_U16("data/tilesets/secondary/arauna_navel06b_coast/metatile_attributes.bin");
+const u16 gMetatiles_AraunaNavel06BGalleryBase[] = INCBIN_U16("data/tilesets/primary/arauna_navel06b_gallery/metatiles.bin");
+const u16 gMetatileAttributes_AraunaNavel06BGalleryBase[] = INCBIN_U16("data/tilesets/primary/arauna_navel06b_gallery/metatile_attributes.bin");
+const u16 gMetatiles_AraunaNavel06BGalleryArt[] = INCBIN_U16("data/tilesets/secondary/arauna_navel06b_gallery/metatiles.bin");
+const u16 gMetatileAttributes_AraunaNavel06BGalleryArt[] = INCBIN_U16("data/tilesets/secondary/arauna_navel06b_gallery/metatile_attributes.bin");
+const u16 gMetatiles_AraunaNavel06BAscentBase[] = INCBIN_U16("data/tilesets/primary/arauna_navel06b_ascent/metatiles.bin");
+const u16 gMetatileAttributes_AraunaNavel06BAscentBase[] = INCBIN_U16("data/tilesets/primary/arauna_navel06b_ascent/metatile_attributes.bin");
+const u16 gMetatiles_AraunaNavel06BAscentArt[] = INCBIN_U16("data/tilesets/secondary/arauna_navel06b_ascent/metatiles.bin");
+const u16 gMetatileAttributes_AraunaNavel06BAscentArt[] = INCBIN_U16("data/tilesets/secondary/arauna_navel06b_ascent/metatile_attributes.bin");
+const u16 gMetatiles_AraunaNavel06BSummitBase[] = INCBIN_U16("data/tilesets/primary/arauna_navel06b_summit/metatiles.bin");
+const u16 gMetatileAttributes_AraunaNavel06BSummitBase[] = INCBIN_U16("data/tilesets/primary/arauna_navel06b_summit/metatile_attributes.bin");
+const u16 gMetatiles_AraunaNavel06BSummitArt[] = INCBIN_U16("data/tilesets/secondary/arauna_navel06b_summit/metatiles.bin");
+const u16 gMetatileAttributes_AraunaNavel06BSummitArt[] = INCBIN_U16("data/tilesets/secondary/arauna_navel06b_summit/metatile_attributes.bin");
+const u16 gMetatiles_AraunaNavel06BDepth1Base[] = INCBIN_U16("data/tilesets/primary/arauna_navel06b_depth1/metatiles.bin");
+const u16 gMetatileAttributes_AraunaNavel06BDepth1Base[] = INCBIN_U16("data/tilesets/primary/arauna_navel06b_depth1/metatile_attributes.bin");
+const u16 gMetatiles_AraunaNavel06BDepth1Art[] = INCBIN_U16("data/tilesets/secondary/arauna_navel06b_depth1/metatiles.bin");
+const u16 gMetatileAttributes_AraunaNavel06BDepth1Art[] = INCBIN_U16("data/tilesets/secondary/arauna_navel06b_depth1/metatile_attributes.bin");
+const u16 gMetatiles_AraunaNavel06BDepth2Base[] = INCBIN_U16("data/tilesets/primary/arauna_navel06b_depth2/metatiles.bin");
+const u16 gMetatileAttributes_AraunaNavel06BDepth2Base[] = INCBIN_U16("data/tilesets/primary/arauna_navel06b_depth2/metatile_attributes.bin");
+const u16 gMetatiles_AraunaNavel06BDepth2Art[] = INCBIN_U16("data/tilesets/secondary/arauna_navel06b_depth2/metatiles.bin");
+const u16 gMetatileAttributes_AraunaNavel06BDepth2Art[] = INCBIN_U16("data/tilesets/secondary/arauna_navel06b_depth2/metatile_attributes.bin");
+const u16 gMetatiles_AraunaNavel06BAbyssBase[] = INCBIN_U16("data/tilesets/primary/arauna_navel06b_abyss/metatiles.bin");
+const u16 gMetatileAttributes_AraunaNavel06BAbyssBase[] = INCBIN_U16("data/tilesets/primary/arauna_navel06b_abyss/metatile_attributes.bin");
+const u16 gMetatiles_AraunaNavel06BAbyssArt[] = INCBIN_U16("data/tilesets/secondary/arauna_navel06b_abyss/metatiles.bin");
+const u16 gMetatileAttributes_AraunaNavel06BAbyssArt[] = INCBIN_U16("data/tilesets/secondary/arauna_navel06b_abyss/metatile_attributes.bin");
+const u16 gMetatiles_AraunaNavel06BDockBase[] = INCBIN_U16("data/tilesets/primary/arauna_navel06b_dock/metatiles.bin");
+const u16 gMetatileAttributes_AraunaNavel06BDockBase[] = INCBIN_U16("data/tilesets/primary/arauna_navel06b_dock/metatile_attributes.bin");
+const u16 gMetatiles_AraunaNavel06BDockArt[] = INCBIN_U16("data/tilesets/secondary/arauna_navel06b_dock/metatiles.bin");
+const u16 gMetatileAttributes_AraunaNavel06BDockArt[] = INCBIN_U16("data/tilesets/secondary/arauna_navel06b_dock/metatile_attributes.bin");
+// NAVEL_ROCK_06B_END

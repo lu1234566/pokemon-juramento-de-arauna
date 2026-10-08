@@ -1,0 +1,330 @@
+{
+  "status": "PASS",
+  "base_commit": "29ae94cdc2309d099cd0f8ac4fecc4775a6aef72",
+  "protected_gameplay_files": 18156,
+  "other_tracked_dependencies": 4238,
+  "maps": {
+    "NavelRock_Exterior": {
+      "cells": 504,
+      "changed_visual_cells": 504,
+      "theme": "coast",
+      "warps": 2,
+      "walkable_component_cells": 29,
+      "layout": "LAYOUT_NAVEL_ROCK_EXTERIOR"
+    },
+    "NavelRock_Entrance": {
+      "cells": 672,
+      "changed_visual_cells": 672,
+      "theme": "gallery",
+      "warps": 2,
+      "walkable_component_cells": 185,
+      "layout": "LAYOUT_NAVEL_ROCK_ENTRANCE"
+    },
+    "NavelRock_B1F": {
+      "cells": 253,
+      "changed_visual_cells": 253,
+      "theme": "gallery",
+      "warps": 2,
+      "walkable_component_cells": 119,
+      "layout": "LAYOUT_NAVEL_ROCK_B1F"
+    },
+    "NavelRock_Fork": {
+      "cells": 2322,
+      "changed_visual_cells": 2322,
+      "theme": "gallery",
+      "warps": 3,
+      "walkable_component_cells": 233,
+      "layout": "LAYOUT_NAVEL_ROCK_FORK"
+    },
+    "NavelRock_Up1": {
+      "cells": 72,
+      "changed_visual_cells": 72,
+      "theme": "ascent",
+      "warps": 2,
+      "walkable_component_cells": 9,
+      "layout": "LAYOUT_NAVEL_ROCK_LADDER_ROOM1"
+    },
+    "NavelRock_Up2": {
+      "cells": 72,
+      "changed_visual_cells": 72,
+      "theme": "ascent",
+      "warps": 2,
+      "walkable_component_cells": 7,
+      "layout": "LAYOUT_NAVEL_ROCK_LADDER_ROOM2"
+    },
+    "NavelRock_Up3": {
+      "cells": 72,
+      "changed_visual_cells": 72,
+      "theme": "summit",
+      "warps": 2,
+      "walkable_component_cells": 9,
+      "layout": "LAYOUT_ARAUNA_NAVEL_06B_SUMMIT_LADDER1"
+    },
+    "NavelRock_Up4": {
+      "cells": 72,
+      "changed_visual_cells": 72,
+      "theme": "summit",
+      "warps": 2,
+      "walkable_component_cells": 7,
+      "layout": "LAYOUT_ARAUNA_NAVEL_06B_SUMMIT_LADDER2"
+    },
+    "NavelRock_Top": {
+      "cells": 700,
+      "changed_visual_cells": 283,
+      "theme": "summit",
+      "warps": 1,
+      "walkable_component_cells": 37,
+      "layout": "LAYOUT_NAVEL_ROCK_TOP"
+    },
+    "NavelRock_Down01": {
+      "cells": 72,
+      "changed_visual_cells": 72,
+      "theme": "depth1",
+      "warps": 2,
+      "walkable_component_cells": 9,
+      "layout": "LAYOUT_ARAUNA_NAVEL_06B_DEPTH1_LADDER1"
+    },
+    "NavelRock_Down02": {
+      "cells": 72,
+      "changed_visual_cells": 72,
+      "theme": "depth1",
+      "warps": 2,
+      "walkable_component_cells": 7,
+      "layout": "LAYOUT_ARAUNA_NAVEL_06B_DEPTH1_LADDER2"
+    },
+    "NavelRock_Down03": {
+      "cells": 72,
+      "changed_visual_cells": 72,
+      "theme": "depth1",
+      "warps": 2,
+      "walkable_component_cells": 9,
+      "layout": "LAYOUT_ARAUNA_NAVEL_06B_DEPTH1_LADDER1"
+    },
+    "NavelRock_Down04": {
+      "cells": 72,
+      "changed_visual_cells": 72,
+      "theme": "depth1",
+      "warps": 2,
+      "walkable_component_cells": 7,
+      "layout": "LAYOUT_ARAUNA_NAVEL_06B_DEPTH1_LADDER2"
+    },
+    "NavelRock_Down05": {
+      "cells": 72,
+      "changed_visual_cells": 72,
+      "theme": "depth2",
+      "warps": 2,
+      "walkable_component_cells": 9,
+      "layout": "LAYOUT_ARAUNA_NAVEL_06B_DEPTH2_LADDER1"
+    },
+    "NavelRock_Down06": {
+      "cells": 72,
+      "changed_visual_cells": 72,
+      "theme": "depth2",
+      "warps": 2,
+      "walkable_component_cells": 7,
+      "layout": "LAYOUT_ARAUNA_NAVEL_06B_DEPTH2_LADDER2"
+    },
+    "NavelRock_Down07": {
+      "cells": 72,
+      "changed_visual_cells": 72,
+      "theme": "depth2",
+      "warps": 2,
+      "walkable_component_cells": 9,
+      "layout": "LAYOUT_ARAUNA_NAVEL_06B_DEPTH2_LADDER1"
+    },
+    "NavelRock_Down08": {
+      "cells": 72,
+      "changed_visual_cells": 72,
+      "theme": "depth2",
+      "warps": 2,
+      "walkable_component_cells": 7,
+      "layout": "LAYOUT_ARAUNA_NAVEL_06B_DEPTH2_LADDER2"
+    },
+    "NavelRock_Down09": {
+      "cells": 72,
+      "changed_visual_cells": 72,
+      "theme": "abyss",
+      "warps": 2,
+      "walkable_component_cells": 9,
+      "layout": "LAYOUT_ARAUNA_NAVEL_06B_ABYSS_LADDER1"
+    },
+    "NavelRock_Down10": {
+      "cells": 72,
+      "changed_visual_cells": 72,
+      "theme": "abyss",
+      "warps": 2,
+      "walkable_component_cells": 7,
+      "layout": "LAYOUT_ARAUNA_NAVEL_06B_ABYSS_LADDER2"
+    },
+    "NavelRock_Down11": {
+      "cells": 72,
+      "changed_visual_cells": 72,
+      "theme": "abyss",
+      "warps": 2,
+      "walkable_component_cells": 9,
+      "layout": "LAYOUT_ARAUNA_NAVEL_06B_ABYSS_LADDER1"
+    },
+    "NavelRock_Bottom": {
+      "cells": 484,
+      "changed_visual_cells": 484,
+      "theme": "abyss",
+      "warps": 1,
+      "walkable_component_cells": 28,
+      "layout": "LAYOUT_NAVEL_ROCK_BOTTOM"
+    },
+    "NavelRock_Harbor": {
+      "cells": 221,
+      "changed_visual_cells": 221,
+      "theme": "dock",
+      "warps": 1,
+      "walkable_component_cells": 23,
+      "layout": "LAYOUT_ARAUNA_NAVEL_06B_HARBOR"
+    }
+  },
+  "banks": [
+    {
+      "path": "data/tilesets/primary/arauna_navel06b_coast",
+      "tiles": 512,
+      "attribute_words": 512,
+      "callback": "InitTilesetAnim_General"
+    },
+    {
+      "path": "data/tilesets/secondary/arauna_navel06b_coast",
+      "tiles": 512,
+      "attribute_words": 379,
+      "callback": "InitTilesetAnim_Dewford"
+    },
+    {
+      "path": "data/tilesets/primary/arauna_navel06b_gallery",
+      "tiles": 512,
+      "attribute_words": 512,
+      "callback": "InitTilesetAnim_General"
+    },
+    {
+      "path": "data/tilesets/secondary/arauna_navel06b_gallery",
+      "tiles": 336,
+      "attribute_words": 451,
+      "callback": "NULL"
+    },
+    {
+      "path": "data/tilesets/primary/arauna_navel06b_ascent",
+      "tiles": 512,
+      "attribute_words": 512,
+      "callback": "InitTilesetAnim_General"
+    },
+    {
+      "path": "data/tilesets/secondary/arauna_navel06b_ascent",
+      "tiles": 288,
+      "attribute_words": 451,
+      "callback": "NULL"
+    },
+    {
+      "path": "data/tilesets/primary/arauna_navel06b_summit",
+      "tiles": 512,
+      "attribute_words": 512,
+      "callback": "InitTilesetAnim_General"
+    },
+    {
+      "path": "data/tilesets/secondary/arauna_navel06b_summit",
+      "tiles": 384,
+      "attribute_words": 451,
+      "callback": "NULL"
+    },
+    {
+      "path": "data/tilesets/primary/arauna_navel06b_depth1",
+      "tiles": 512,
+      "attribute_words": 512,
+      "callback": "InitTilesetAnim_General"
+    },
+    {
+      "path": "data/tilesets/secondary/arauna_navel06b_depth1",
+      "tiles": 288,
+      "attribute_words": 451,
+      "callback": "NULL"
+    },
+    {
+      "path": "data/tilesets/primary/arauna_navel06b_depth2",
+      "tiles": 512,
+      "attribute_words": 512,
+      "callback": "InitTilesetAnim_General"
+    },
+    {
+      "path": "data/tilesets/secondary/arauna_navel06b_depth2",
+      "tiles": 288,
+      "attribute_words": 451,
+      "callback": "NULL"
+    },
+    {
+      "path": "data/tilesets/primary/arauna_navel06b_abyss",
+      "tiles": 512,
+      "attribute_words": 512,
+      "callback": "InitTilesetAnim_General"
+    },
+    {
+      "path": "data/tilesets/secondary/arauna_navel06b_abyss",
+      "tiles": 384,
+      "attribute_words": 451,
+      "callback": "NULL"
+    },
+    {
+      "path": "data/tilesets/primary/arauna_navel06b_dock",
+      "tiles": 512,
+      "attribute_words": 512,
+      "callback": "InitTilesetAnim_General"
+    },
+    {
+      "path": "data/tilesets/secondary/arauna_navel06b_dock",
+      "tiles": 512,
+      "attribute_words": 470,
+      "callback": "NULL"
+    }
+  ],
+  "core_maps": 21,
+  "dependent_harbor": 1,
+  "native_warps": 42,
+  "appended_private_layouts": 9,
+  "full_native_attributes": 7651,
+  "native_layer_masks": 498,
+  "plain_cells_checked": 647,
+  "blocked_rim_cells_checked": 301,
+  "actual_c_selector_cells": 6236,
+  "actual_c_fallback_cases": 112640,
+  "previous_cavern_dive_cells": 53167,
+  "previous_trainer_hill_generated_cells": 5376,
+  "birth_island_harbor_unchanged_cells": 221,
+  "native_c": {
+    "status": "PASS",
+    "ferry_menu_configurations": 2048,
+    "ferry_selection_cases": 7552,
+    "terrain_predicates": 768,
+    "functions": [
+      "CreateLilycoveSSTidalMultichoice",
+      "GetLilycoveSSTidalSelection",
+      "MetatileBehavior_IsLadder",
+      "MetatileBehavior_IsNonAnimDoor",
+      "MetatileBehavior_IsDeepSouthWarp"
+    ],
+    "scope": "Original C functions compiled/executed on host. Bag, flags and UI are explicit fixtures, not a full game or ferry animation session."
+  },
+  "event_fragments": {
+    "status": "PASS",
+    "event_fragment_cases": 36,
+    "encounter_slots": [
+      "SPECIES_HO_OH",
+      "SPECIES_LUGIA"
+    ],
+    "level": 70,
+    "ferry_arrival": [
+      8,
+      4
+    ],
+    "ferry_return": [
+      8,
+      11
+    ],
+    "scope": "Restricted runner of control-flow/flag commands in original event sources. Battle outcome, message answer, camera/movement services and ferry animation calls are fixtures. Not the full ROM script interpreter, battle or camera engine."
+  },
+  "rom_build": "pending: ARM compiler unavailable",
+  "emulator": "pending: mGBA unavailable",
+  "native_summit_sky_pixels_preserved": 108032
+}

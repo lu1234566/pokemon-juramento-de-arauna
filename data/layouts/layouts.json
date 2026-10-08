@@ -4206,8 +4206,8 @@
       "name": "NavelRock_Exterior_Layout",
       "width": 21,
       "height": 24,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Dewford",
+      "primary_tileset": "gTileset_AraunaNavel06BCoastBase",
+      "secondary_tileset": "gTileset_AraunaNavel06BCoastArt",
       "border_filepath": "data/layouts/NavelRock_Exterior/border.bin",
       "blockdata_filepath": "data/layouts/NavelRock_Exterior/map.bin"
     },
@@ -4216,8 +4216,8 @@
       "name": "NavelRock_Entrance_Layout",
       "width": 21,
       "height": 32,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_NavelRock",
+      "primary_tileset": "gTileset_AraunaNavel06BGalleryBase",
+      "secondary_tileset": "gTileset_AraunaNavel06BGalleryArt",
       "border_filepath": "data/layouts/NavelRock_Entrance/border.bin",
       "blockdata_filepath": "data/layouts/NavelRock_Entrance/map.bin"
     },
@@ -4226,8 +4226,8 @@
       "name": "NavelRock_Top_Layout",
       "width": 25,
       "height": 28,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_NavelRock",
+      "primary_tileset": "gTileset_AraunaNavel06BSummitBase",
+      "secondary_tileset": "gTileset_AraunaNavel06BSummitArt",
       "border_filepath": "data/layouts/NavelRock_Top/border.bin",
       "blockdata_filepath": "data/layouts/NavelRock_Top/map.bin"
     },
@@ -4236,8 +4236,8 @@
       "name": "NavelRock_Bottom_Layout",
       "width": 22,
       "height": 22,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_NavelRock",
+      "primary_tileset": "gTileset_AraunaNavel06BAbyssBase",
+      "secondary_tileset": "gTileset_AraunaNavel06BAbyssArt",
       "border_filepath": "data/layouts/NavelRock_Bottom/border.bin",
       "blockdata_filepath": "data/layouts/NavelRock_Bottom/map.bin"
     },
@@ -4246,8 +4246,8 @@
       "name": "NavelRock_LadderRoom1_Layout",
       "width": 9,
       "height": 8,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_NavelRock",
+      "primary_tileset": "gTileset_AraunaNavel06BAscentBase",
+      "secondary_tileset": "gTileset_AraunaNavel06BAscentArt",
       "border_filepath": "data/layouts/NavelRock_LadderRoom1/border.bin",
       "blockdata_filepath": "data/layouts/NavelRock_LadderRoom1/map.bin"
     },
@@ -4256,8 +4256,8 @@
       "name": "NavelRock_LadderRoom2_Layout",
       "width": 9,
       "height": 8,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_NavelRock",
+      "primary_tileset": "gTileset_AraunaNavel06BAscentBase",
+      "secondary_tileset": "gTileset_AraunaNavel06BAscentArt",
       "border_filepath": "data/layouts/NavelRock_LadderRoom2/border.bin",
       "blockdata_filepath": "data/layouts/NavelRock_LadderRoom2/map.bin"
     },
@@ -4266,8 +4266,8 @@
       "name": "NavelRock_B1F_Layout",
       "width": 23,
       "height": 11,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_NavelRock",
+      "primary_tileset": "gTileset_AraunaNavel06BGalleryBase",
+      "secondary_tileset": "gTileset_AraunaNavel06BGalleryArt",
       "border_filepath": "data/layouts/NavelRock_B1F/border.bin",
       "blockdata_filepath": "data/layouts/NavelRock_B1F/map.bin"
     },
@@ -4276,8 +4276,8 @@
       "name": "NavelRock_Fork_Layout",
       "width": 27,
       "height": 86,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_NavelRock",
+      "primary_tileset": "gTileset_AraunaNavel06BGalleryBase",
+      "secondary_tileset": "gTileset_AraunaNavel06BGalleryArt",
       "border_filepath": "data/layouts/NavelRock_Fork/border.bin",
       "blockdata_filepath": "data/layouts/NavelRock_Fork/map.bin"
     },
@@ -7450,6 +7450,96 @@
       "secondary_tileset": "gTileset_AraunaTrainerHill06AElevatorArt",
       "border_filepath": "data/layouts/BattleElevator/border.bin",
       "blockdata_filepath": "data/layouts/BattleElevator/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_NAVEL_06B_SUMMIT_LADDER1",
+      "name": "AraunaNavel06BSummitLadder1_Layout",
+      "width": 9,
+      "height": 8,
+      "primary_tileset": "gTileset_AraunaNavel06BSummitBase",
+      "secondary_tileset": "gTileset_AraunaNavel06BSummitArt",
+      "border_filepath": "data/layouts/NavelRock_LadderRoom1/border.bin",
+      "blockdata_filepath": "data/layouts/NavelRock_LadderRoom1/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_NAVEL_06B_SUMMIT_LADDER2",
+      "name": "AraunaNavel06BSummitLadder2_Layout",
+      "width": 9,
+      "height": 8,
+      "primary_tileset": "gTileset_AraunaNavel06BSummitBase",
+      "secondary_tileset": "gTileset_AraunaNavel06BSummitArt",
+      "border_filepath": "data/layouts/NavelRock_LadderRoom2/border.bin",
+      "blockdata_filepath": "data/layouts/NavelRock_LadderRoom2/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_NAVEL_06B_DEPTH1_LADDER1",
+      "name": "AraunaNavel06BDepth1Ladder1_Layout",
+      "width": 9,
+      "height": 8,
+      "primary_tileset": "gTileset_AraunaNavel06BDepth1Base",
+      "secondary_tileset": "gTileset_AraunaNavel06BDepth1Art",
+      "border_filepath": "data/layouts/NavelRock_LadderRoom1/border.bin",
+      "blockdata_filepath": "data/layouts/NavelRock_LadderRoom1/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_NAVEL_06B_DEPTH1_LADDER2",
+      "name": "AraunaNavel06BDepth1Ladder2_Layout",
+      "width": 9,
+      "height": 8,
+      "primary_tileset": "gTileset_AraunaNavel06BDepth1Base",
+      "secondary_tileset": "gTileset_AraunaNavel06BDepth1Art",
+      "border_filepath": "data/layouts/NavelRock_LadderRoom2/border.bin",
+      "blockdata_filepath": "data/layouts/NavelRock_LadderRoom2/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_NAVEL_06B_DEPTH2_LADDER1",
+      "name": "AraunaNavel06BDepth2Ladder1_Layout",
+      "width": 9,
+      "height": 8,
+      "primary_tileset": "gTileset_AraunaNavel06BDepth2Base",
+      "secondary_tileset": "gTileset_AraunaNavel06BDepth2Art",
+      "border_filepath": "data/layouts/NavelRock_LadderRoom1/border.bin",
+      "blockdata_filepath": "data/layouts/NavelRock_LadderRoom1/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_NAVEL_06B_DEPTH2_LADDER2",
+      "name": "AraunaNavel06BDepth2Ladder2_Layout",
+      "width": 9,
+      "height": 8,
+      "primary_tileset": "gTileset_AraunaNavel06BDepth2Base",
+      "secondary_tileset": "gTileset_AraunaNavel06BDepth2Art",
+      "border_filepath": "data/layouts/NavelRock_LadderRoom2/border.bin",
+      "blockdata_filepath": "data/layouts/NavelRock_LadderRoom2/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_NAVEL_06B_ABYSS_LADDER1",
+      "name": "AraunaNavel06BAbyssLadder1_Layout",
+      "width": 9,
+      "height": 8,
+      "primary_tileset": "gTileset_AraunaNavel06BAbyssBase",
+      "secondary_tileset": "gTileset_AraunaNavel06BAbyssArt",
+      "border_filepath": "data/layouts/NavelRock_LadderRoom1/border.bin",
+      "blockdata_filepath": "data/layouts/NavelRock_LadderRoom1/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_NAVEL_06B_ABYSS_LADDER2",
+      "name": "AraunaNavel06BAbyssLadder2_Layout",
+      "width": 9,
+      "height": 8,
+      "primary_tileset": "gTileset_AraunaNavel06BAbyssBase",
+      "secondary_tileset": "gTileset_AraunaNavel06BAbyssArt",
+      "border_filepath": "data/layouts/NavelRock_LadderRoom2/border.bin",
+      "blockdata_filepath": "data/layouts/NavelRock_LadderRoom2/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_NAVEL_06B_HARBOR",
+      "name": "AraunaNavel06BHarbor_Layout",
+      "width": 17,
+      "height": 13,
+      "primary_tileset": "gTileset_AraunaNavel06BDockBase",
+      "secondary_tileset": "gTileset_AraunaNavel06BDockArt",
+      "border_filepath": "data/layouts/IslandHarbor/border.bin",
+      "blockdata_filepath": "data/layouts/IslandHarbor/map.bin"
     }
   ]
 }

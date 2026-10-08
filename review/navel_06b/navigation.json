@@ -1,0 +1,416 @@
+{
+  "warps": [
+    {
+      "map": "NavelRock_Exterior",
+      "warp": 0,
+      "x": 10,
+      "y": 18,
+      "dest_map": "NavelRock_Harbor",
+      "dest_warp": 0
+    },
+    {
+      "map": "NavelRock_Exterior",
+      "warp": 1,
+      "x": 10,
+      "y": 10,
+      "dest_map": "NavelRock_Entrance",
+      "dest_warp": 1
+    },
+    {
+      "map": "NavelRock_Entrance",
+      "warp": 0,
+      "x": 10,
+      "y": 5,
+      "dest_map": "NavelRock_B1F",
+      "dest_warp": 0
+    },
+    {
+      "map": "NavelRock_Entrance",
+      "warp": 1,
+      "x": 10,
+      "y": 26,
+      "dest_map": "NavelRock_Exterior",
+      "dest_warp": 1
+    },
+    {
+      "map": "NavelRock_B1F",
+      "warp": 0,
+      "x": 4,
+      "y": 3,
+      "dest_map": "NavelRock_Entrance",
+      "dest_warp": 0
+    },
+    {
+      "map": "NavelRock_B1F",
+      "warp": 1,
+      "x": 18,
+      "y": 9,
+      "dest_map": "NavelRock_Fork",
+      "dest_warp": 1
+    },
+    {
+      "map": "NavelRock_Fork",
+      "warp": 0,
+      "x": 4,
+      "y": 6,
+      "dest_map": "NavelRock_Up1",
+      "dest_warp": 0
+    },
+    {
+      "map": "NavelRock_Fork",
+      "warp": 1,
+      "x": 11,
+      "y": 79,
+      "dest_map": "NavelRock_B1F",
+      "dest_warp": 1
+    },
+    {
+      "map": "NavelRock_Fork",
+      "warp": 2,
+      "x": 22,
+      "y": 6,
+      "dest_map": "NavelRock_Down01",
+      "dest_warp": 0
+    },
+    {
+      "map": "NavelRock_Up1",
+      "warp": 0,
+      "x": 5,
+      "y": 5,
+      "dest_map": "NavelRock_Fork",
+      "dest_warp": 0
+    },
+    {
+      "map": "NavelRock_Up1",
+      "warp": 1,
+      "x": 3,
+      "y": 3,
+      "dest_map": "NavelRock_Up2",
+      "dest_warp": 0
+    },
+    {
+      "map": "NavelRock_Up2",
+      "warp": 0,
+      "x": 3,
+      "y": 3,
+      "dest_map": "NavelRock_Up1",
+      "dest_warp": 1
+    },
+    {
+      "map": "NavelRock_Up2",
+      "warp": 1,
+      "x": 5,
+      "y": 5,
+      "dest_map": "NavelRock_Up3",
+      "dest_warp": 0
+    },
+    {
+      "map": "NavelRock_Up3",
+      "warp": 0,
+      "x": 5,
+      "y": 5,
+      "dest_map": "NavelRock_Up2",
+      "dest_warp": 1
+    },
+    {
+      "map": "NavelRock_Up3",
+      "warp": 1,
+      "x": 3,
+      "y": 3,
+      "dest_map": "NavelRock_Up4",
+      "dest_warp": 0
+    },
+    {
+      "map": "NavelRock_Up4",
+      "warp": 0,
+      "x": 3,
+      "y": 3,
+      "dest_map": "NavelRock_Up3",
+      "dest_warp": 1
+    },
+    {
+      "map": "NavelRock_Up4",
+      "warp": 1,
+      "x": 5,
+      "y": 5,
+      "dest_map": "NavelRock_Top",
+      "dest_warp": 0
+    },
+    {
+      "map": "NavelRock_Top",
+      "warp": 0,
+      "x": 13,
+      "y": 20,
+      "dest_map": "NavelRock_Up4",
+      "dest_warp": 1
+    },
+    {
+      "map": "NavelRock_Down01",
+      "warp": 0,
+      "x": 3,
+      "y": 3,
+      "dest_map": "NavelRock_Fork",
+      "dest_warp": 2
+    },
+    {
+      "map": "NavelRock_Down01",
+      "warp": 1,
+      "x": 5,
+      "y": 5,
+      "dest_map": "NavelRock_Down02",
+      "dest_warp": 0
+    },
+    {
+      "map": "NavelRock_Down02",
+      "warp": 0,
+      "x": 5,
+      "y": 5,
+      "dest_map": "NavelRock_Down01",
+      "dest_warp": 1
+    },
+    {
+      "map": "NavelRock_Down02",
+      "warp": 1,
+      "x": 3,
+      "y": 3,
+      "dest_map": "NavelRock_Down03",
+      "dest_warp": 0
+    },
+    {
+      "map": "NavelRock_Down03",
+      "warp": 0,
+      "x": 3,
+      "y": 3,
+      "dest_map": "NavelRock_Down02",
+      "dest_warp": 1
+    },
+    {
+      "map": "NavelRock_Down03",
+      "warp": 1,
+      "x": 5,
+      "y": 5,
+      "dest_map": "NavelRock_Down04",
+      "dest_warp": 0
+    },
+    {
+      "map": "NavelRock_Down04",
+      "warp": 0,
+      "x": 5,
+      "y": 5,
+      "dest_map": "NavelRock_Down03",
+      "dest_warp": 1
+    },
+    {
+      "map": "NavelRock_Down04",
+      "warp": 1,
+      "x": 3,
+      "y": 3,
+      "dest_map": "NavelRock_Down05",
+      "dest_warp": 0
+    },
+    {
+      "map": "NavelRock_Down05",
+      "warp": 0,
+      "x": 3,
+      "y": 3,
+      "dest_map": "NavelRock_Down04",
+      "dest_warp": 1
+    },
+    {
+      "map": "NavelRock_Down05",
+      "warp": 1,
+      "x": 5,
+      "y": 5,
+      "dest_map": "NavelRock_Down06",
+      "dest_warp": 0
+    },
+    {
+      "map": "NavelRock_Down06",
+      "warp": 0,
+      "x": 5,
+      "y": 5,
+      "dest_map": "NavelRock_Down05",
+      "dest_warp": 1
+    },
+    {
+      "map": "NavelRock_Down06",
+      "warp": 1,
+      "x": 3,
+      "y": 3,
+      "dest_map": "NavelRock_Down07",
+      "dest_warp": 0
+    },
+    {
+      "map": "NavelRock_Down07",
+      "warp": 0,
+      "x": 3,
+      "y": 3,
+      "dest_map": "NavelRock_Down06",
+      "dest_warp": 1
+    },
+    {
+      "map": "NavelRock_Down07",
+      "warp": 1,
+      "x": 5,
+      "y": 5,
+      "dest_map": "NavelRock_Down08",
+      "dest_warp": 0
+    },
+    {
+      "map": "NavelRock_Down08",
+      "warp": 0,
+      "x": 5,
+      "y": 5,
+      "dest_map": "NavelRock_Down07",
+      "dest_warp": 1
+    },
+    {
+      "map": "NavelRock_Down08",
+      "warp": 1,
+      "x": 3,
+      "y": 3,
+      "dest_map": "NavelRock_Down09",
+      "dest_warp": 0
+    },
+    {
+      "map": "NavelRock_Down09",
+      "warp": 0,
+      "x": 3,
+      "y": 3,
+      "dest_map": "NavelRock_Down08",
+      "dest_warp": 1
+    },
+    {
+      "map": "NavelRock_Down09",
+      "warp": 1,
+      "x": 5,
+      "y": 5,
+      "dest_map": "NavelRock_Down10",
+      "dest_warp": 0
+    },
+    {
+      "map": "NavelRock_Down10",
+      "warp": 0,
+      "x": 5,
+      "y": 5,
+      "dest_map": "NavelRock_Down09",
+      "dest_warp": 1
+    },
+    {
+      "map": "NavelRock_Down10",
+      "warp": 1,
+      "x": 3,
+      "y": 3,
+      "dest_map": "NavelRock_Down11",
+      "dest_warp": 1
+    },
+    {
+      "map": "NavelRock_Down11",
+      "warp": 0,
+      "x": 5,
+      "y": 5,
+      "dest_map": "NavelRock_Bottom",
+      "dest_warp": 0
+    },
+    {
+      "map": "NavelRock_Down11",
+      "warp": 1,
+      "x": 3,
+      "y": 3,
+      "dest_map": "NavelRock_Down10",
+      "dest_warp": 1
+    },
+    {
+      "map": "NavelRock_Bottom",
+      "warp": 0,
+      "x": 14,
+      "y": 19,
+      "dest_map": "NavelRock_Down11",
+      "dest_warp": 0
+    },
+    {
+      "map": "NavelRock_Harbor",
+      "warp": 0,
+      "x": 8,
+      "y": 2,
+      "dest_map": "NavelRock_Exterior",
+      "dest_warp": 0
+    }
+  ],
+  "routes": {
+    "NavelRock_Harbor -> NavelRock_Top": [
+      "NavelRock_Harbor",
+      "NavelRock_Exterior",
+      "NavelRock_Entrance",
+      "NavelRock_B1F",
+      "NavelRock_Fork",
+      "NavelRock_Up1",
+      "NavelRock_Up2",
+      "NavelRock_Up3",
+      "NavelRock_Up4",
+      "NavelRock_Top"
+    ],
+    "NavelRock_Top -> NavelRock_Harbor": [
+      "NavelRock_Top",
+      "NavelRock_Up4",
+      "NavelRock_Up3",
+      "NavelRock_Up2",
+      "NavelRock_Up1",
+      "NavelRock_Fork",
+      "NavelRock_B1F",
+      "NavelRock_Entrance",
+      "NavelRock_Exterior",
+      "NavelRock_Harbor"
+    ],
+    "NavelRock_Harbor -> NavelRock_Bottom": [
+      "NavelRock_Harbor",
+      "NavelRock_Exterior",
+      "NavelRock_Entrance",
+      "NavelRock_B1F",
+      "NavelRock_Fork",
+      "NavelRock_Down01",
+      "NavelRock_Down02",
+      "NavelRock_Down03",
+      "NavelRock_Down04",
+      "NavelRock_Down05",
+      "NavelRock_Down06",
+      "NavelRock_Down07",
+      "NavelRock_Down08",
+      "NavelRock_Down09",
+      "NavelRock_Down10",
+      "NavelRock_Down11",
+      "NavelRock_Bottom"
+    ],
+    "NavelRock_Bottom -> NavelRock_Harbor": [
+      "NavelRock_Bottom",
+      "NavelRock_Down11",
+      "NavelRock_Down10",
+      "NavelRock_Down09",
+      "NavelRock_Down08",
+      "NavelRock_Down07",
+      "NavelRock_Down06",
+      "NavelRock_Down05",
+      "NavelRock_Down04",
+      "NavelRock_Down03",
+      "NavelRock_Down02",
+      "NavelRock_Down01",
+      "NavelRock_Fork",
+      "NavelRock_B1F",
+      "NavelRock_Entrance",
+      "NavelRock_Exterior",
+      "NavelRock_Harbor"
+    ]
+  },
+  "ferry": {
+    "arrival": [
+      "NavelRock_Harbor",
+      8,
+      4
+    ],
+    "return": [
+      "LilycoveCity_Harbor",
+      8,
+      11
+    ]
+  }
+}
