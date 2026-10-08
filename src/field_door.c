@@ -9,6 +9,7 @@
 #include "constants/metatile_labels.h"
 
 extern const struct Tileset gTileset_AraunaInicioBaseV1;
+extern const struct Tileset gTileset_AraunaBorderOldaleTownBaseUivoV1;
 
 #define DOOR_SOUND_NORMAL  0
 #define DOOR_SOUND_SLIDING 1
@@ -444,7 +445,10 @@ static const struct DoorAnimFrame *GetLastDoorFrame(const struct DoorAnimFrame *
 
 static const struct DoorGraphics *GetDoorGraphics(const struct DoorGraphics *gfx, u16 metatileNum)
 {
-    if (gMapHeader.mapLayout->primaryTileset == &gTileset_AraunaInicioBaseV1
+    // Oldale moved from the Inicio primary to its own border bank but kept
+    // the same wooden Center and Mart doors.
+    if ((gMapHeader.mapLayout->primaryTileset == &gTileset_AraunaInicioBaseV1
+      || gMapHeader.mapLayout->primaryTileset == &gTileset_AraunaBorderOldaleTownBaseUivoV1)
         && (metatileNum == METATILE_General_Door_PokeCenter
             || metatileNum == METATILE_General_Door_PokeMart))
         return &sDoorGraphics_AraunaInicioMadeira;
