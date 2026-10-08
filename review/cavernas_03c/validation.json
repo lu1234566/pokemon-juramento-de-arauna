@@ -1,0 +1,196 @@
+{
+  "status": "PASS",
+  "base_commit": "4410ced6384b1d71dfa562d4bb5a2486ebc01e22",
+  "protected_gameplay_files": 17833,
+  "extra_dependencies": 23,
+  "layouts_preserved": 737,
+  "target_secondary_fields": 7,
+  "maps": {
+    "AlteringCave": {
+      "stage": "03C",
+      "cells": 768,
+      "changed_visual_cells": 768,
+      "native_grid_words_preserved": true,
+      "attributes_compared": 768,
+      "warps": 1,
+      "objects": 0,
+      "bg_events": 0
+    },
+    "ArtisanCave_B1F": {
+      "stage": "03C",
+      "cells": 2484,
+      "changed_visual_cells": 2484,
+      "native_grid_words_preserved": true,
+      "attributes_compared": 2484,
+      "warps": 2,
+      "objects": 1,
+      "bg_events": 4
+    },
+    "ArtisanCave_1F": {
+      "stage": "03C",
+      "cells": 462,
+      "changed_visual_cells": 462,
+      "native_grid_words_preserved": true,
+      "attributes_compared": 462,
+      "warps": 2,
+      "objects": 1,
+      "bg_events": 0
+    },
+    "SealedChamber_OuterRoom": {
+      "stage": "03B V1.1",
+      "cells": 483,
+      "changed_visual_cells": 34,
+      "native_grid_words_preserved": true,
+      "attributes_compared": 483,
+      "warps": 1,
+      "objects": 0,
+      "bg_events": 29
+    },
+    "SealedChamber_InnerRoom": {
+      "stage": "03B V1.1",
+      "cells": 483,
+      "changed_visual_cells": 13,
+      "native_grid_words_preserved": true,
+      "attributes_compared": 483,
+      "warps": 1,
+      "objects": 0,
+      "bg_events": 9
+    },
+    "AncientTomb": {
+      "stage": "03B V1.1",
+      "cells": 561,
+      "changed_visual_cells": 23,
+      "native_grid_words_preserved": true,
+      "attributes_compared": 561,
+      "warps": 3,
+      "objects": 1,
+      "bg_events": 3
+    },
+    "IslandCave": {
+      "stage": "03B V1.1",
+      "cells": 561,
+      "changed_visual_cells": 23,
+      "native_grid_words_preserved": true,
+      "attributes_compared": 561,
+      "warps": 3,
+      "objects": 1,
+      "bg_events": 3
+    }
+  },
+  "banks": [
+    {
+      "theme": "altering",
+      "stage": "03C",
+      "graphics_tiles": 432,
+      "new_tiles": 63,
+      "native_landmark_ids": [
+        535,
+        572,
+        575,
+        600,
+        601,
+        602
+      ],
+      "gba_encoding": "PASS"
+    },
+    {
+      "theme": "artisan",
+      "stage": "03C",
+      "graphics_tiles": 432,
+      "new_tiles": 71,
+      "native_landmark_ids": [
+        535,
+        572,
+        575,
+        600,
+        601,
+        602
+      ],
+      "gba_encoding": "PASS"
+    },
+    {
+      "theme": "sealed",
+      "stage": "03B V1.1",
+      "graphics_tiles": 432,
+      "new_tiles": 40,
+      "native_landmark_ids": [
+        519,
+        553,
+        554,
+        555,
+        556,
+        562,
+        563,
+        564,
+        565,
+        566,
+        567,
+        741,
+        742,
+        743
+      ],
+      "gba_encoding": "PASS"
+    },
+    {
+      "theme": "ancient",
+      "stage": "03B V1.1",
+      "graphics_tiles": 432,
+      "new_tiles": 38,
+      "native_landmark_ids": [
+        519,
+        553,
+        554,
+        555,
+        556,
+        562,
+        563,
+        564,
+        565,
+        566,
+        567,
+        600,
+        601,
+        602
+      ],
+      "gba_encoding": "PASS"
+    },
+    {
+      "theme": "island",
+      "stage": "03B V1.1",
+      "graphics_tiles": 432,
+      "new_tiles": 38,
+      "native_landmark_ids": [
+        519,
+        553,
+        554,
+        555,
+        556,
+        562,
+        563,
+        564,
+        565,
+        566,
+        567,
+        600,
+        601,
+        602
+      ],
+      "gba_encoding": "PASS"
+    }
+  ],
+  "actual_c_selector_cells": 5802,
+  "actual_c_fallback_checks": 17434,
+  "legacy_selector_cells": 14091,
+  "existing_03b_corrected_exit_cells_preserved": 9,
+  "additional_outer_exit_cells_restored": 6,
+  "door_state_piece_checks": 36,
+  "warp_and_exit_piece_checks": 29,
+  "braille_stroke_masks_compared": 8,
+  "braille_text_and_font_unchanged": true,
+  "real_c_puzzle_checks": 53,
+  "real_c_wild_header_checks": 19,
+  "altering_tables_preserved": 9,
+  "regice_perimeter_preserved": 36,
+  "rom_build": "pending_arm_toolchain_unavailable",
+  "emulator": "pending_unavailable"
+}

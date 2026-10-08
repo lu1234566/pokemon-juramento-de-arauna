@@ -1,0 +1,23 @@
+{
+  "base_commit": "4410ced6384b1d71dfa562d4bb5a2486ebc01e22",
+  "github_tip": "4410ced6384b1d71dfa562d4bb5a2486ebc01e22",
+  "main_commit": "979fb6c1b6731561f3c993efd6045a9bbf096c54",
+  "commits_ahead_main": 84,
+  "checkpoint_03b_files": 125,
+  "matching_03b_payload_files": 121,
+  "03b_integrator_differences": [
+    "docs/CAVERNAS_CHECKPOINT_03B.md",
+    "review/cavernas_03b/visual_grids/AncientTomb.bin",
+    "review/cavernas_03b/visual_grids/IslandCave.bin",
+    "review/cavernas_03b/visual_grids/SealedChamber_InnerRoom.bin"
+  ],
+  "difference_explanation": "Integrator report adds ROM/mGBA validation and three visual grids restore 9 south-exit cells to native IDs. These installed bytes are the baseline.",
+  "reference_files_verified": 83,
+  "unique_concepts": 82,
+  "cumulative_audit_chain": [
+    "review/cavernas_03a/cumulative_audit.json",
+    "review/cavernas_03b/recovery_audit.json"
+  ],
+  "old_03b_functional_contract_matches": true,
+  "stale_overlays_not_reapplied": true
+}

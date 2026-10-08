@@ -1115,3 +1115,16 @@ const u16 gMetatileAttributes_AraunaAncientTomb03B[] = INCBIN_U16("data/tilesets
 const u16 gMetatiles_AraunaIslandCave03B[] = INCBIN_U16("data/tilesets/secondary/arauna_island_03b/metatiles.bin");
 const u16 gMetatileAttributes_AraunaIslandCave03B[] = INCBIN_U16("data/tilesets/secondary/arauna_island_03b/metatile_attributes.bin");
 // CAVERNAS_03B_END
+
+// CAVERNAS_03C_BEGIN
+const u16 gMetatiles_AraunaAlteringCave03C[] = INCBIN_U16("data/tilesets/secondary/arauna_altering_03c/metatiles.bin");
+const u16 gMetatileAttributes_AraunaAlteringCave03C[] = INCBIN_U16("data/tilesets/secondary/arauna_altering_03c/metatile_attributes.bin");
+const u16 gMetatiles_AraunaArtisanCave03C[] = INCBIN_U16("data/tilesets/secondary/arauna_artisan_03c/metatiles.bin");
+const u16 gMetatileAttributes_AraunaArtisanCave03C[] = INCBIN_U16("data/tilesets/secondary/arauna_artisan_03c/metatile_attributes.bin");
+const u16 gMetatiles_AraunaSealedChamber03BV11[] = INCBIN_U16("data/tilesets/secondary/arauna_sealed_03b_v11/metatiles.bin");
+const u16 gMetatileAttributes_AraunaSealedChamber03BV11[] = INCBIN_U16("data/tilesets/secondary/arauna_sealed_03b_v11/metatile_attributes.bin");
+const u16 gMetatiles_AraunaAncientTomb03BV11[] = INCBIN_U16("data/tilesets/secondary/arauna_ancient_03b_v11/metatiles.bin");
+const u16 gMetatileAttributes_AraunaAncientTomb03BV11[] = INCBIN_U16("data/tilesets/secondary/arauna_ancient_03b_v11/metatile_attributes.bin");
+const u16 gMetatiles_AraunaIslandCave03BV11[] = INCBIN_U16("data/tilesets/secondary/arauna_island_03b_v11/metatiles.bin");
+const u16 gMetatileAttributes_AraunaIslandCave03BV11[] = INCBIN_U16("data/tilesets/secondary/arauna_island_03b_v11/metatile_attributes.bin");
+// CAVERNAS_03C_END

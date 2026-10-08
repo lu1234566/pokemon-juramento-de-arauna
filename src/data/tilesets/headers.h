@@ -4225,3 +4225,56 @@ const struct Tileset gTileset_AraunaIslandCave03B =
     .callback = InitTilesetAnim_Cave,
 };
 // CAVERNAS_03B_END
+
+// CAVERNAS_03C_BEGIN
+const struct Tileset gTileset_AraunaAlteringCave03C =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaAlteringCave03C,
+    .palettes = gTilesetPalettes_AraunaAlteringCave03C,
+    .metatiles = gMetatiles_AraunaAlteringCave03C,
+    .metatileAttributes = gMetatileAttributes_AraunaAlteringCave03C,
+    .callback = InitTilesetAnim_Cave,
+};
+const struct Tileset gTileset_AraunaArtisanCave03C =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaArtisanCave03C,
+    .palettes = gTilesetPalettes_AraunaArtisanCave03C,
+    .metatiles = gMetatiles_AraunaArtisanCave03C,
+    .metatileAttributes = gMetatileAttributes_AraunaArtisanCave03C,
+    .callback = InitTilesetAnim_Cave,
+};
+const struct Tileset gTileset_AraunaSealedChamber03BV11 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaSealedChamber03BV11,
+    .palettes = gTilesetPalettes_AraunaSealedChamber03BV11,
+    .metatiles = gMetatiles_AraunaSealedChamber03BV11,
+    .metatileAttributes = gMetatileAttributes_AraunaSealedChamber03BV11,
+    .callback = InitTilesetAnim_Cave,
+};
+const struct Tileset gTileset_AraunaAncientTomb03BV11 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaAncientTomb03BV11,
+    .palettes = gTilesetPalettes_AraunaAncientTomb03BV11,
+    .metatiles = gMetatiles_AraunaAncientTomb03BV11,
+    .metatileAttributes = gMetatileAttributes_AraunaAncientTomb03BV11,
+    .callback = InitTilesetAnim_Cave,
+};
+const struct Tileset gTileset_AraunaIslandCave03BV11 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaIslandCave03BV11,
+    .palettes = gTilesetPalettes_AraunaIslandCave03BV11,
+    .metatiles = gMetatiles_AraunaIslandCave03BV11,
+    .metatileAttributes = gMetatileAttributes_AraunaIslandCave03BV11,
+    .callback = InitTilesetAnim_Cave,
+};
+// CAVERNAS_03C_END

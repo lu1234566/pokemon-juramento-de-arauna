@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "actual_c_checks": 19,
+  "altering_variants": 9,
+  "selection_source": "GetCurrentMapWildMonHeaderId verbatim",
+  "preserved_tables_sha256": "19f98eaf8094be7a2a8485546a38285e1988f4929c218e4fcd305d1c98fb9183",
+  "scope": "header selection; species/levels/rates preserved by full-file hash"
+}

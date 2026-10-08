@@ -40,7 +40,9 @@ MossdeepCity_SpaceCenter_1F_OnLoad:
 	end
 
 MossdeepCity_SpaceCenter_1F_EventScript_SetMagmaNote::
-	setmetatile 2, 5, METATILE_Facility_DataPad, TRUE
+	@ The Missoes do Ceu bank has no Facility data pad (0x3E4 is past its last
+	@ metatile and drew a black square); keep the console corner already there.
+	setmetatile 2, 5, 0x216, TRUE
 	return
 
 MossdeepCity_SpaceCenter_1F_EventScript_RocketLaunchCounter::

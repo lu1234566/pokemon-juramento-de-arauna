@@ -18,10 +18,13 @@ static const u16 sVisual_TerraCave_Entrance[] = INCBIN_U16("review/cavernas_03a/
 static const u16 sVisual_TerraCave_End[] = INCBIN_U16("review/cavernas_03a/visual_grids/TerraCave_End.bin");
 static const u16 sVisual_MarineCave_Entrance[] = INCBIN_U16("review/cavernas_03a/visual_grids/MarineCave_Entrance.bin");
 static const u16 sVisual_MarineCave_End[] = INCBIN_U16("review/cavernas_03a/visual_grids/MarineCave_End.bin");
-static const u16 sVisual_SealedChamber_OuterRoom[] = INCBIN_U16("review/cavernas_03b/visual_grids/SealedChamber_OuterRoom.bin");
-static const u16 sVisual_SealedChamber_InnerRoom[] = INCBIN_U16("review/cavernas_03b/visual_grids/SealedChamber_InnerRoom.bin");
-static const u16 sVisual_AncientTomb[] = INCBIN_U16("review/cavernas_03b/visual_grids/AncientTomb.bin");
-static const u16 sVisual_IslandCave[] = INCBIN_U16("review/cavernas_03b/visual_grids/IslandCave.bin");
+static const u16 sVisual_SealedChamber_OuterRoom[] = INCBIN_U16("review/cavernas_03c/03b_v11_visual_grids/SealedChamber_OuterRoom.bin");
+static const u16 sVisual_SealedChamber_InnerRoom[] = INCBIN_U16("review/cavernas_03c/03b_v11_visual_grids/SealedChamber_InnerRoom.bin");
+static const u16 sVisual_AncientTomb[] = INCBIN_U16("review/cavernas_03c/03b_v11_visual_grids/AncientTomb.bin");
+static const u16 sVisual_IslandCave[] = INCBIN_U16("review/cavernas_03c/03b_v11_visual_grids/IslandCave.bin");
+static const u16 sVisual_AlteringCave[] = INCBIN_U16("review/cavernas_03c/visual_grids/AlteringCave.bin");
+static const u16 sVisual_ArtisanCave_B1F[] = INCBIN_U16("review/cavernas_03c/visual_grids/ArtisanCave_B1F.bin");
+static const u16 sVisual_ArtisanCave_1F[] = INCBIN_U16("review/cavernas_03c/visual_grids/ArtisanCave_1F.bin");
 static const struct CaveVisualGrid sCaveVisualGrids[] =
 {
     {162, sVisual_VictoryRoad_1F}, // VictoryRoad_1F
@@ -46,4 +49,7 @@ static const struct CaveVisualGrid sCaveVisualGrids[] =
     {303, sVisual_SealedChamber_InnerRoom}, // SealedChamber_InnerRoom checkpoint 03B
     {280, sVisual_AncientTomb}, // AncientTomb checkpoint 03B
     {279, sVisual_IslandCave}, // IslandCave checkpoint 03B
+    {419, sVisual_AlteringCave}, // AlteringCave checkpoint 03C
+    {399, sVisual_ArtisanCave_B1F}, // ArtisanCave_B1F checkpoint 03C
+    {400, sVisual_ArtisanCave_1F}, // ArtisanCave_1F checkpoint 03C
 };

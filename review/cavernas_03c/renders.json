@@ -1,0 +1,262 @@
+{
+  "kind": "native_render_not_emulator",
+  "full_maps": 7,
+  "before_after_viewports": 21,
+  "door_state_pairs": 3,
+  "south_exit_pairs": 3,
+  "before_03b_uses_installed_corrected_selector_grids": true,
+  "records": [
+    {
+      "map": "AlteringCave",
+      "crop": 1,
+      "origin": [
+        2,
+        2
+      ],
+      "native_size": [
+        240,
+        160
+      ]
+    },
+    {
+      "map": "AlteringCave",
+      "crop": 2,
+      "origin": [
+        13,
+        11
+      ],
+      "native_size": [
+        240,
+        160
+      ]
+    },
+    {
+      "map": "AlteringCave",
+      "crop": 3,
+      "origin": [
+        11,
+        14
+      ],
+      "native_size": [
+        240,
+        160
+      ]
+    },
+    {
+      "map": "ArtisanCave_B1F",
+      "crop": 1,
+      "origin": [
+        1,
+        0
+      ],
+      "native_size": [
+        240,
+        160
+      ]
+    },
+    {
+      "map": "ArtisanCave_B1F",
+      "crop": 2,
+      "origin": [
+        25,
+        24
+      ],
+      "native_size": [
+        240,
+        160
+      ]
+    },
+    {
+      "map": "ArtisanCave_B1F",
+      "crop": 3,
+      "origin": [
+        1,
+        42
+      ],
+      "native_size": [
+        240,
+        160
+      ]
+    },
+    {
+      "map": "ArtisanCave_1F",
+      "crop": 1,
+      "origin": [
+        0,
+        1
+      ],
+      "native_size": [
+        240,
+        160
+      ]
+    },
+    {
+      "map": "ArtisanCave_1F",
+      "crop": 2,
+      "origin": [
+        5,
+        7
+      ],
+      "native_size": [
+        240,
+        160
+      ]
+    },
+    {
+      "map": "ArtisanCave_1F",
+      "crop": 3,
+      "origin": [
+        3,
+        12
+      ],
+      "native_size": [
+        240,
+        160
+      ]
+    },
+    {
+      "map": "SealedChamber_OuterRoom",
+      "crop": 1,
+      "origin": [
+        3,
+        0
+      ],
+      "native_size": [
+        240,
+        160
+      ]
+    },
+    {
+      "map": "SealedChamber_OuterRoom",
+      "crop": 2,
+      "origin": [
+        2,
+        5
+      ],
+      "native_size": [
+        240,
+        160
+      ]
+    },
+    {
+      "map": "SealedChamber_OuterRoom",
+      "crop": 3,
+      "origin": [
+        5,
+        13
+      ],
+      "native_size": [
+        240,
+        160
+      ]
+    },
+    {
+      "map": "SealedChamber_InnerRoom",
+      "crop": 1,
+      "origin": [
+        3,
+        1
+      ],
+      "native_size": [
+        240,
+        160
+      ]
+    },
+    {
+      "map": "SealedChamber_InnerRoom",
+      "crop": 2,
+      "origin": [
+        1,
+        7
+      ],
+      "native_size": [
+        240,
+        160
+      ]
+    },
+    {
+      "map": "SealedChamber_InnerRoom",
+      "crop": 3,
+      "origin": [
+        5,
+        13
+      ],
+      "native_size": [
+        240,
+        160
+      ]
+    },
+    {
+      "map": "AncientTomb",
+      "crop": 1,
+      "origin": [
+        1,
+        2
+      ],
+      "native_size": [
+        240,
+        160
+      ]
+    },
+    {
+      "map": "AncientTomb",
+      "crop": 2,
+      "origin": [
+        1,
+        17
+      ],
+      "native_size": [
+        240,
+        160
+      ]
+    },
+    {
+      "map": "AncientTomb",
+      "crop": 3,
+      "origin": [
+        1,
+        23
+      ],
+      "native_size": [
+        240,
+        160
+      ]
+    },
+    {
+      "map": "IslandCave",
+      "crop": 1,
+      "origin": [
+        1,
+        2
+      ],
+      "native_size": [
+        240,
+        160
+      ]
+    },
+    {
+      "map": "IslandCave",
+      "crop": 2,
+      "origin": [
+        1,
+        17
+      ],
+      "native_size": [
+        240,
+        160
+      ]
+    },
+    {
+      "map": "IslandCave",
+      "crop": 3,
+      "origin": [
+        1,
+        23
+      ],
+      "native_size": [
+        240,
+        160
+      ]
+    }
+  ]
+}

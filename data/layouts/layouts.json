@@ -2797,7 +2797,7 @@
       "width": 17,
       "height": 33,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_AraunaIslandCave03B",
+      "secondary_tileset": "gTileset_AraunaIslandCave03BV11",
       "border_filepath": "data/layouts/IslandCave/border.bin",
       "blockdata_filepath": "data/layouts/IslandCave/map.bin"
     },
@@ -2807,7 +2807,7 @@
       "width": 17,
       "height": 33,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_AraunaAncientTomb03B",
+      "secondary_tileset": "gTileset_AraunaAncientTomb03BV11",
       "border_filepath": "data/layouts/AncientTomb/border.bin",
       "blockdata_filepath": "data/layouts/AncientTomb/map.bin"
     },
@@ -2837,7 +2837,7 @@
       "width": 21,
       "height": 23,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_AraunaSealedChamber03B",
+      "secondary_tileset": "gTileset_AraunaSealedChamber03BV11",
       "border_filepath": "data/layouts/SealedChamber_OuterRoom/border.bin",
       "blockdata_filepath": "data/layouts/SealedChamber_OuterRoom/map.bin"
     },
@@ -3037,7 +3037,7 @@
       "width": 21,
       "height": 23,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_AraunaSealedChamber03B",
+      "secondary_tileset": "gTileset_AraunaSealedChamber03BV11",
       "border_filepath": "data/layouts/SealedChamber_InnerRoom/border.bin",
       "blockdata_filepath": "data/layouts/SealedChamber_InnerRoom/map.bin"
     },
@@ -3997,7 +3997,7 @@
       "width": 46,
       "height": 54,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
+      "secondary_tileset": "gTileset_AraunaArtisanCave03C",
       "border_filepath": "data/layouts/ArtisanCave_B1F/border.bin",
       "blockdata_filepath": "data/layouts/ArtisanCave_B1F/map.bin"
     },
@@ -4007,7 +4007,7 @@
       "width": 21,
       "height": 22,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
+      "secondary_tileset": "gTileset_AraunaArtisanCave03C",
       "border_filepath": "data/layouts/ArtisanCave_1F/border.bin",
       "blockdata_filepath": "data/layouts/ArtisanCave_1F/map.bin"
     },
@@ -4197,7 +4197,7 @@
       "width": 32,
       "height": 24,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
+      "secondary_tileset": "gTileset_AraunaAlteringCave03C",
       "border_filepath": "data/layouts/AlteringCave/border.bin",
       "blockdata_filepath": "data/layouts/AlteringCave/map.bin"
     },

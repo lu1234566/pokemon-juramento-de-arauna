@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "checks": 21,
+  "cases": [
+    "Dry run verifies all dependencies and writes nothing",
+    "Binary patch applies cleanly to base",
+    "Corrupt payload rejected before writes",
+    "Unknown local edit rejected: src/data/tilesets/graphics.h",
+    "Unknown local edit rejected: src/braille_puzzles.c",
+    "Unknown local edit rejected: data/maps/IslandCave/scripts.inc",
+    "Unknown local edit rejected: data/text/braille.inc",
+    "Unknown local edit rejected: src/data/wild_encounters.json",
+    "Unknown local edit rejected: data/maps/ArtisanCave_B1F/map.json",
+    "Unknown local edit rejected: review/cavernas_03b/visual_grids/AncientTomb.bin",
+    "Unknown local edit rejected: review/cavernas_03a/visual_grids/TerraCave_End.bin",
+    "Unknown local edit rejected: art/cavernas_03a/minerais_atlas.png",
+    "Unknown existing new-file target rejected",
+    "Stale GitHub main refused",
+    "Interrupted third write rolls back all old/new payload files",
+    "Installation succeeds with complete payload SHA-256",
+    "Second installation is idempotent, no new backup",
+    "Installer preserves Git HEAD",
+    "All 17,833 protected gameplay files survive installation",
+    "Installed payload passes native and real-C puzzle/selector validation",
+    "Installed builder is deterministic and idempotent"
+  ],
+  "base_commit": "4410ced6384b1d71dfa562d4bb5a2486ebc01e22",
+  "installer_source": "tools/arauna_maps/install_cavernas_03c.py",
+  "worktree_isolated": true,
+  "protected_gameplay_files": 17833
+}
