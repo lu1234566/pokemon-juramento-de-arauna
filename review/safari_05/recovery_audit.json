@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "base_commit": "5d0b14e46e98f099ef4807af71d5e9be60f88d66",
+  "github_integrator_tip": "5d0b14e46e98f099ef4807af71d5e9be60f88d66",
+  "main_commit": "979fb6c1b6731561f3c993efd6045a9bbf096c54",
+  "commits_ahead_of_main": 86,
+  "recovered_reference_assets_verified": 83,
+  "reference_zip_sha256": "ecf381db95864a61e191a9fcf2525e3f892a1dd934e5aaca7c43344f5e6e19e3",
+  "dive_zip_sha256": "27d371f23ddfcdb102e799723e79266628d00e019ba133b30c308187c9c3599a",
+  "integrator_changes_against_previous_checkpoint": [
+    "data/layouts/Underwater_MarineCave/border.bin",
+    "data/layouts/Underwater_Route105/border.bin",
+    "data/layouts/Underwater_Route124/border.bin",
+    "data/layouts/Underwater_Route125/border.bin",
+    "data/layouts/Underwater_Route126/border.bin",
+    "data/layouts/Underwater_Route127/border.bin",
+    "data/layouts/Underwater_Route128/border.bin",
+    "data/layouts/Underwater_Route129/border.bin",
+    "data/layouts/Underwater_Route134/border.bin",
+    "data/layouts/Underwater_SeafloorCavern/border.bin",
+    "data/layouts/Underwater_SealedChamber/border.bin",
+    "data/layouts/Underwater_SootopolisCity/border.bin",
+    "data/tilesets/primary/arauna_border_route103_uivo_v1/metatiles.bin",
+    "docs/DIVE_CHECKPOINT_04.md"
+  ],
+  "integrator_corrections_retained": true,
+  "read_reference": {
+    "bible": "pages 18–20: routes 118–123; p.10: M’Boi",
+    "concepts": [
+      "12_Rotas_118-123_Centro_Norte_Tropical.png",
+      "03_MBoi.png"
+    ]
+  },
+  "github_final_tip_verified": true
+}

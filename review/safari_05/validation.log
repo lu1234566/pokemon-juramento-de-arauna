@@ -1,0 +1,77 @@
+/workspace/scratch/70b5ee7403af/arauna/tools/arauna_maps/validate_safari_05.py:82: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.
+  pixels=list(im.crop((i%row*8,i//row*8,i%row*8+8,i//row*8+8)).getdata());packed=bytes(pixels[j]|pixels[j+1]<<4 for j in range(0,64,2));assert [v for x in packed for v in (x&15,x>>4)]==pixels
+{
+  "status": "PASS",
+  "base_commit": "5d0b14e46e98f099ef4807af71d5e9be60f88d66",
+  "protected_gameplay_files": 18010,
+  "protected_dependencies": 183,
+  "full_native_attributes_preserved": 1680,
+  "actual_c_camera_cells": 9942,
+  "actual_c_fallback_cases": 40960,
+  "prior_cavern_dive_selector_cells": 53167,
+  "actual_c_native_behavior_comparisons": 3423,
+  "animated_connection_cell_frames": 32640,
+  "live_animated_native_metatile_ids": [
+    179,
+    185,
+    187,
+    188,
+    344,
+    345,
+    346,
+    347,
+    368,
+    380,
+    388,
+    392,
+    393,
+    394,
+    400,
+    402,
+    408,
+    410,
+    502,
+    503
+  ],
+  "native_dynamic_refs_without_visible_change": [
+    232
+  ],
+  "semantic_art_collision_cells": 6134,
+  "inherited_shape_entries_preserved": 3048,
+  "safari_c": {
+    "status": "PASS",
+    "checks": 18,
+    "functions": [
+      "GetSafariZoneFlag",
+      "SetSafariZoneFlag",
+      "ResetSafariZoneFlag",
+      "ClearPokeblockFeeder",
+      "ClearAllPokeblockFeeders",
+      "DecrementFeederStepCounters",
+      "EnterSafariMode",
+      "ExitSafariMode",
+      "SafariZoneTakeStep",
+      "SafariZoneRetirePrompt",
+      "CB2_EndSafariBattle",
+      "GetPokeblockFeederInFront",
+      "GetPokeblockFeederWithinRange",
+      "SafariZoneActivatePokeblockFeeder"
+    ],
+    "scope": "Actual production C functions. Flag/script/callback/warp services use explicit fixtures; the script interpreter and battle engine are not emulated. 500-step session, 100-step feeder lifetime, retire/exit, feeder capacity/range/map and ball exhaustion branches checked."
+  },
+  "behavior_c": {
+    "status": "PASS",
+    "predicate_cases": 1792,
+    "functions": [
+      "MetatileBehavior_IsPokeGrass",
+      "MetatileBehavior_IsTallGrass",
+      "MetatileBehavior_IsLongGrass",
+      "MetatileBehavior_IsBumpySlope",
+      "MetatileBehavior_IsVerticalRail",
+      "MetatileBehavior_IsHorizontalRail",
+      "MetatileBehavior_IsPokeblockFeeder"
+    ]
+  },
+  "rom_build": "pending: ARM compiler unavailable",
+  "emulator": "pending: mGBA unavailable"
+}

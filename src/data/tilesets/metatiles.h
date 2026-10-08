@@ -1143,3 +1143,18 @@ const u16 gMetatileAttributes_AraunaDive04Arquivo[] = INCBIN_U16("data/tilesets/
 const u16 gMetatiles_AraunaDive04Horizonte[] = INCBIN_U16("data/tilesets/secondary/arauna_dive04_horizonte/metatiles.bin");
 const u16 gMetatileAttributes_AraunaDive04Horizonte[] = INCBIN_U16("data/tilesets/secondary/arauna_dive04_horizonte/metatile_attributes.bin");
 // DIVE_04_END
+
+// SAFARI_05_BEGIN
+const u16 gMetatiles_AraunaSafari05MataBase[] = INCBIN_U16("data/tilesets/primary/arauna_safari05_mata/metatiles.bin");
+const u16 gMetatileAttributes_AraunaSafari05MataBase[] = INCBIN_U16("data/tilesets/primary/arauna_safari05_mata/metatile_attributes.bin");
+const u16 gMetatiles_AraunaSafari05MataArt[] = INCBIN_U16("data/tilesets/secondary/arauna_safari05_mata/metatiles.bin");
+const u16 gMetatileAttributes_AraunaSafari05MataArt[] = INCBIN_U16("data/tilesets/secondary/arauna_safari05_mata/metatile_attributes.bin");
+const u16 gMetatiles_AraunaSafari05PousoBase[] = INCBIN_U16("data/tilesets/primary/arauna_safari05_pouso/metatiles.bin");
+const u16 gMetatileAttributes_AraunaSafari05PousoBase[] = INCBIN_U16("data/tilesets/primary/arauna_safari05_pouso/metatile_attributes.bin");
+const u16 gMetatiles_AraunaSafari05PousoArt[] = INCBIN_U16("data/tilesets/secondary/arauna_safari05_pouso/metatiles.bin");
+const u16 gMetatileAttributes_AraunaSafari05PousoArt[] = INCBIN_U16("data/tilesets/secondary/arauna_safari05_pouso/metatile_attributes.bin");
+const u16 gMetatiles_AraunaSafari05RecepcaoBase[] = INCBIN_U16("data/tilesets/primary/arauna_safari05_recepcao/metatiles.bin");
+const u16 gMetatileAttributes_AraunaSafari05RecepcaoBase[] = INCBIN_U16("data/tilesets/primary/arauna_safari05_recepcao/metatile_attributes.bin");
+const u16 gMetatiles_AraunaSafari05RecepcaoArt[] = INCBIN_U16("data/tilesets/secondary/arauna_safari05_recepcao/metatiles.bin");
+const u16 gMetatileAttributes_AraunaSafari05RecepcaoArt[] = INCBIN_U16("data/tilesets/secondary/arauna_safari05_recepcao/metatile_attributes.bin");
+// SAFARI_05_END

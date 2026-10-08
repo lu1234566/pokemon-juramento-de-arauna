@@ -1,0 +1,301 @@
+{
+  "status": "PASS",
+  "base_commit": "5d0b14e46e98f099ef4807af71d5e9be60f88d66",
+  "protected_gameplay_files": 18010,
+  "protected_dependencies": 183,
+  "maps": {
+    "SafariZone_Northwest": {
+      "cells": 1600,
+      "changed_visual_cells": 1600,
+      "warps": 0,
+      "connections": 2,
+      "objects": 2,
+      "hidden_items": 0,
+      "visible_items": 1
+    },
+    "SafariZone_North": {
+      "cells": 1600,
+      "changed_visual_cells": 1423,
+      "warps": 0,
+      "connections": 3,
+      "objects": 9,
+      "hidden_items": 0,
+      "visible_items": 1
+    },
+    "SafariZone_Northeast": {
+      "cells": 1600,
+      "changed_visual_cells": 1600,
+      "warps": 0,
+      "connections": 2,
+      "objects": 9,
+      "hidden_items": 2,
+      "visible_items": 1
+    },
+    "SafariZone_Southwest": {
+      "cells": 1600,
+      "changed_visual_cells": 1599,
+      "warps": 1,
+      "connections": 2,
+      "objects": 2,
+      "hidden_items": 0,
+      "visible_items": 1
+    },
+    "SafariZone_South": {
+      "cells": 1600,
+      "changed_visual_cells": 1600,
+      "warps": 1,
+      "connections": 3,
+      "objects": 6,
+      "hidden_items": 0,
+      "visible_items": 0
+    },
+    "SafariZone_Southeast": {
+      "cells": 1600,
+      "changed_visual_cells": 1600,
+      "warps": 0,
+      "connections": 2,
+      "objects": 5,
+      "hidden_items": 2,
+      "visible_items": 1
+    },
+    "SafariZone_RestHouse": {
+      "cells": 90,
+      "changed_visual_cells": 68,
+      "warps": 2,
+      "connections": 0,
+      "objects": 3,
+      "hidden_items": 0,
+      "visible_items": 0
+    },
+    "Route121_SafariZoneEntrance": {
+      "cells": 252,
+      "changed_visual_cells": 111,
+      "warps": 4,
+      "connections": 0,
+      "objects": 3,
+      "hidden_items": 0,
+      "visible_items": 0
+    }
+  },
+  "banks": [
+    {
+      "path": "data/tilesets/primary/arauna_safari05_mata",
+      "tiles": 512,
+      "native_attributes_preserved": 512,
+      "callback": "InitTilesetAnim_General"
+    },
+    {
+      "path": "data/tilesets/secondary/arauna_safari05_mata",
+      "tiles": 224,
+      "native_attributes_preserved": 351,
+      "callback": "InitTilesetAnim_Lilycove"
+    },
+    {
+      "path": "data/tilesets/primary/arauna_safari05_pouso",
+      "tiles": 512,
+      "native_attributes_preserved": 8,
+      "callback": "InitTilesetAnim_Building"
+    },
+    {
+      "path": "data/tilesets/secondary/arauna_safari05_pouso",
+      "tiles": 512,
+      "native_attributes_preserved": 512,
+      "callback": "NULL"
+    },
+    {
+      "path": "data/tilesets/primary/arauna_safari05_recepcao",
+      "tiles": 112,
+      "native_attributes_preserved": 8,
+      "callback": "NULL"
+    },
+    {
+      "path": "data/tilesets/secondary/arauna_safari05_recepcao",
+      "tiles": 16,
+      "native_attributes_preserved": 289,
+      "callback": "NULL"
+    }
+  ],
+  "full_native_attributes_preserved": 1680,
+  "actual_c_camera_cells": 9942,
+  "actual_c_fallback_cases": 40960,
+  "prior_cavern_dive_selector_cells": 53167,
+  "actual_c_native_behavior_comparisons": 3423,
+  "connections": [
+    {
+      "receiver": "SafariZone_Northwest",
+      "source": "SafariZone_North",
+      "direction": "right",
+      "native_engine_cache_cells": 320,
+      "pixel_attribute_mismatches": 0,
+      "frames": 8
+    },
+    {
+      "receiver": "SafariZone_Northwest",
+      "source": "SafariZone_Southwest",
+      "direction": "down",
+      "native_engine_cache_cells": 280,
+      "pixel_attribute_mismatches": 0,
+      "frames": 8
+    },
+    {
+      "receiver": "SafariZone_North",
+      "source": "SafariZone_Northwest",
+      "direction": "left",
+      "native_engine_cache_cells": 280,
+      "pixel_attribute_mismatches": 0,
+      "frames": 8
+    },
+    {
+      "receiver": "SafariZone_North",
+      "source": "SafariZone_South",
+      "direction": "down",
+      "native_engine_cache_cells": 280,
+      "pixel_attribute_mismatches": 0,
+      "frames": 8
+    },
+    {
+      "receiver": "SafariZone_North",
+      "source": "SafariZone_Northeast",
+      "direction": "right",
+      "native_engine_cache_cells": 320,
+      "pixel_attribute_mismatches": 0,
+      "frames": 8
+    },
+    {
+      "receiver": "SafariZone_Northeast",
+      "source": "SafariZone_North",
+      "direction": "left",
+      "native_engine_cache_cells": 280,
+      "pixel_attribute_mismatches": 0,
+      "frames": 8
+    },
+    {
+      "receiver": "SafariZone_Northeast",
+      "source": "SafariZone_Southeast",
+      "direction": "down",
+      "native_engine_cache_cells": 280,
+      "pixel_attribute_mismatches": 0,
+      "frames": 8
+    },
+    {
+      "receiver": "SafariZone_Southwest",
+      "source": "SafariZone_Northwest",
+      "direction": "up",
+      "native_engine_cache_cells": 280,
+      "pixel_attribute_mismatches": 0,
+      "frames": 8
+    },
+    {
+      "receiver": "SafariZone_Southwest",
+      "source": "SafariZone_South",
+      "direction": "right",
+      "native_engine_cache_cells": 320,
+      "pixel_attribute_mismatches": 0,
+      "frames": 8
+    },
+    {
+      "receiver": "SafariZone_South",
+      "source": "SafariZone_North",
+      "direction": "up",
+      "native_engine_cache_cells": 280,
+      "pixel_attribute_mismatches": 0,
+      "frames": 8
+    },
+    {
+      "receiver": "SafariZone_South",
+      "source": "SafariZone_Southwest",
+      "direction": "left",
+      "native_engine_cache_cells": 280,
+      "pixel_attribute_mismatches": 0,
+      "frames": 8
+    },
+    {
+      "receiver": "SafariZone_South",
+      "source": "SafariZone_Southeast",
+      "direction": "right",
+      "native_engine_cache_cells": 320,
+      "pixel_attribute_mismatches": 0,
+      "frames": 8
+    },
+    {
+      "receiver": "SafariZone_Southeast",
+      "source": "SafariZone_South",
+      "direction": "left",
+      "native_engine_cache_cells": 280,
+      "pixel_attribute_mismatches": 0,
+      "frames": 8
+    },
+    {
+      "receiver": "SafariZone_Southeast",
+      "source": "SafariZone_Northeast",
+      "direction": "up",
+      "native_engine_cache_cells": 280,
+      "pixel_attribute_mismatches": 0,
+      "frames": 8
+    }
+  ],
+  "animated_connection_cell_frames": 32640,
+  "live_animated_native_metatile_ids": [
+    179,
+    185,
+    187,
+    188,
+    344,
+    345,
+    346,
+    347,
+    368,
+    380,
+    388,
+    392,
+    393,
+    394,
+    400,
+    402,
+    408,
+    410,
+    502,
+    503
+  ],
+  "native_dynamic_refs_without_visible_change": [
+    232
+  ],
+  "semantic_art_collision_cells": 6134,
+  "inherited_shape_entries_preserved": 3048,
+  "safari_c": {
+    "status": "PASS",
+    "checks": 18,
+    "functions": [
+      "GetSafariZoneFlag",
+      "SetSafariZoneFlag",
+      "ResetSafariZoneFlag",
+      "ClearPokeblockFeeder",
+      "ClearAllPokeblockFeeders",
+      "DecrementFeederStepCounters",
+      "EnterSafariMode",
+      "ExitSafariMode",
+      "SafariZoneTakeStep",
+      "SafariZoneRetirePrompt",
+      "CB2_EndSafariBattle",
+      "GetPokeblockFeederInFront",
+      "GetPokeblockFeederWithinRange",
+      "SafariZoneActivatePokeblockFeeder"
+    ],
+    "scope": "Actual production C functions. Flag/script/callback/warp services use explicit fixtures; the script interpreter and battle engine are not emulated. 500-step session, 100-step feeder lifetime, retire/exit, feeder capacity/range/map and ball exhaustion branches checked."
+  },
+  "behavior_c": {
+    "status": "PASS",
+    "predicate_cases": 1792,
+    "functions": [
+      "MetatileBehavior_IsPokeGrass",
+      "MetatileBehavior_IsTallGrass",
+      "MetatileBehavior_IsLongGrass",
+      "MetatileBehavior_IsBumpySlope",
+      "MetatileBehavior_IsVerticalRail",
+      "MetatileBehavior_IsHorizontalRail",
+      "MetatileBehavior_IsPokeblockFeeder"
+    ]
+  },
+  "rom_build": "pending: ARM compiler unavailable",
+  "emulator": "pending: mGBA unavailable"
+}

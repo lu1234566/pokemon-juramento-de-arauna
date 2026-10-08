@@ -1,0 +1,109 @@
+{
+  "SafariZone_Northwest": {
+    "warps": [],
+    "script_commands": []
+  },
+  "SafariZone_North": {
+    "warps": [],
+    "script_commands": []
+  },
+  "SafariZone_Northeast": {
+    "warps": [],
+    "script_commands": []
+  },
+  "SafariZone_Southwest": {
+    "warps": [
+      {
+        "x": 29,
+        "y": 7,
+        "elevation": 3,
+        "dest_map": "MAP_SAFARI_ZONE_REST_HOUSE",
+        "dest_warp_id": "0"
+      }
+    ],
+    "script_commands": []
+  },
+  "SafariZone_South": {
+    "warps": [
+      {
+        "x": 32,
+        "y": 33,
+        "elevation": 0,
+        "dest_map": "MAP_ROUTE121_SAFARI_ZONE_ENTRANCE",
+        "dest_warp_id": "0"
+      }
+    ],
+    "script_commands": [
+      "setobjectxyperm LOCALID_SAFARI_EXIT_ATTENDANT, 32, 34",
+      "setvar VAR_SAFARI_ZONE_STATE, 0",
+      "setobjectxyperm LOCALID_SAFARI_EXIT_ATTENDANT, 31, 34",
+      "setflag FLAG_GOOD_LUCK_SAFARI_ZONE",
+      "setvar VAR_SAFARI_ZONE_STATE, 1",
+      "warpdoor MAP_ROUTE121_SAFARI_ZONE_ENTRANCE, 2, 5"
+    ]
+  },
+  "SafariZone_Southeast": {
+    "warps": [],
+    "script_commands": []
+  },
+  "SafariZone_RestHouse": {
+    "warps": [
+      {
+        "x": 3,
+        "y": 8,
+        "elevation": 0,
+        "dest_map": "MAP_SAFARI_ZONE_SOUTHWEST",
+        "dest_warp_id": "0"
+      },
+      {
+        "x": 4,
+        "y": 8,
+        "elevation": 0,
+        "dest_map": "MAP_SAFARI_ZONE_SOUTHWEST",
+        "dest_warp_id": "0"
+      }
+    ],
+    "script_commands": []
+  },
+  "Route121_SafariZoneEntrance": {
+    "warps": [
+      {
+        "x": 2,
+        "y": 5,
+        "elevation": 0,
+        "dest_map": "MAP_SAFARI_ZONE_SOUTH",
+        "dest_warp_id": "0"
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "elevation": 0,
+        "dest_map": "MAP_SAFARI_ZONE_SOUTH",
+        "dest_warp_id": "0"
+      },
+      {
+        "x": 14,
+        "y": 13,
+        "elevation": 0,
+        "dest_map": "MAP_ROUTE121",
+        "dest_warp_id": "0"
+      },
+      {
+        "x": 15,
+        "y": 13,
+        "elevation": 0,
+        "dest_map": "MAP_ROUTE121",
+        "dest_warp_id": "0"
+      }
+    ],
+    "script_commands": [
+      "setvar VAR_SAFARI_ZONE_STATE, 0",
+      "checkitem ITEM_POKEBLOCK_CASE",
+      "checkmoney 500",
+      "removemoney 500",
+      "setvar VAR_SAFARI_ZONE_STATE, 2",
+      "clearflag FLAG_GOOD_LUCK_SAFARI_ZONE",
+      "warp MAP_SAFARI_ZONE_SOUTH, 32, 33"
+    ]
+  }
+}

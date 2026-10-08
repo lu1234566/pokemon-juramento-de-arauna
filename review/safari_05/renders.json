@@ -1,0 +1,103 @@
+{
+  "kind": "native host renderer, RGB555, no actor sprites, not emulator screenshots",
+  "maps": 8,
+  "connected_exterior_maps": 6,
+  "camera_pairs": [
+    {
+      "map": "SafariZone_Northwest",
+      "origin": [
+        18,
+        0
+      ],
+      "size": [
+        240,
+        160
+      ],
+      "small_interior_centered": false
+    },
+    {
+      "map": "SafariZone_North",
+      "origin": [
+        0,
+        22
+      ],
+      "size": [
+        240,
+        160
+      ],
+      "small_interior_centered": false
+    },
+    {
+      "map": "SafariZone_Northeast",
+      "origin": [
+        4,
+        5
+      ],
+      "size": [
+        240,
+        160
+      ],
+      "small_interior_centered": false
+    },
+    {
+      "map": "SafariZone_Southwest",
+      "origin": [
+        23,
+        2
+      ],
+      "size": [
+        240,
+        160
+      ],
+      "small_interior_centered": false
+    },
+    {
+      "map": "SafariZone_South",
+      "origin": [
+        10,
+        23
+      ],
+      "size": [
+        240,
+        160
+      ],
+      "small_interior_centered": false
+    },
+    {
+      "map": "SafariZone_Southeast",
+      "origin": [
+        23,
+        9
+      ],
+      "size": [
+        240,
+        160
+      ],
+      "small_interior_centered": false
+    },
+    {
+      "map": "SafariZone_RestHouse",
+      "origin": [
+        0,
+        0
+      ],
+      "size": [
+        240,
+        160
+      ],
+      "small_interior_centered": true
+    },
+    {
+      "map": "Route121_SafariZoneEntrance",
+      "origin": [
+        4,
+        1
+      ],
+      "size": [
+        240,
+        160
+      ],
+      "small_interior_centered": false
+    }
+  ]
+}

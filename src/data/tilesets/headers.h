@@ -4341,3 +4341,66 @@ const struct Tileset gTileset_AraunaDive04Horizonte =
     .callback = InitTilesetAnim_Underwater,
 };
 // DIVE_04_END
+
+// SAFARI_05_BEGIN
+const struct Tileset gTileset_AraunaSafari05MataBase =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AraunaSafari05MataBase,
+    .palettes = gTilesetPalettes_AraunaSafari05MataBase,
+    .metatiles = gMetatiles_AraunaSafari05MataBase,
+    .metatileAttributes = gMetatileAttributes_AraunaSafari05MataBase,
+    .callback = InitTilesetAnim_General,
+};
+const struct Tileset gTileset_AraunaSafari05MataArt =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaSafari05MataArt,
+    .palettes = gTilesetPalettes_AraunaSafari05MataArt,
+    .metatiles = gMetatiles_AraunaSafari05MataArt,
+    .metatileAttributes = gMetatileAttributes_AraunaSafari05MataArt,
+    .callback = InitTilesetAnim_Lilycove,
+};
+const struct Tileset gTileset_AraunaSafari05PousoBase =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AraunaSafari05PousoBase,
+    .palettes = gTilesetPalettes_AraunaSafari05PousoBase,
+    .metatiles = gMetatiles_AraunaSafari05PousoBase,
+    .metatileAttributes = gMetatileAttributes_AraunaSafari05PousoBase,
+    .callback = InitTilesetAnim_Building,
+};
+const struct Tileset gTileset_AraunaSafari05PousoArt =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaSafari05PousoArt,
+    .palettes = gTilesetPalettes_AraunaSafari05PousoArt,
+    .metatiles = gMetatiles_AraunaSafari05PousoArt,
+    .metatileAttributes = gMetatileAttributes_AraunaSafari05PousoArt,
+    .callback = NULL,
+};
+const struct Tileset gTileset_AraunaSafari05RecepcaoBase =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AraunaSafari05RecepcaoBase,
+    .palettes = gTilesetPalettes_AraunaSafari05RecepcaoBase,
+    .metatiles = gMetatiles_AraunaSafari05RecepcaoBase,
+    .metatileAttributes = gMetatileAttributes_AraunaSafari05RecepcaoBase,
+    .callback = NULL,
+};
+const struct Tileset gTileset_AraunaSafari05RecepcaoArt =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaSafari05RecepcaoArt,
+    .palettes = gTilesetPalettes_AraunaSafari05RecepcaoArt,
+    .metatiles = gMetatiles_AraunaSafari05RecepcaoArt,
+    .metatileAttributes = gMetatileAttributes_AraunaSafari05RecepcaoArt,
+    .callback = NULL,
+};
+// SAFARI_05_END
