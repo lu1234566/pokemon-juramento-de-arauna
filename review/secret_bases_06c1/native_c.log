@@ -1,0 +1,204 @@
+{
+  "status": "PASS",
+  "native_catalog_entries": 121,
+  "pc_entry_return_cases": 196,
+  "saved_decoration_slot_cases": 256,
+  "decoration_placement_cases": 501600,
+  "allowed_placement_cases": 48020,
+  "actual_decoration_write_cases": 1200,
+  "maps": {
+    "SecretBase_RedCave1": {
+      "placement_cases": 23760,
+      "allowed_placement_cases": 2696,
+      "pc": [
+        1,
+        2
+      ],
+      "map_group_number": [
+        25,
+        0
+      ]
+    },
+    "SecretBase_RedCave2": {
+      "placement_cases": 26880,
+      "allowed_placement_cases": 2065,
+      "pc": [
+        5,
+        8
+      ],
+      "map_group_number": [
+        25,
+        6
+      ]
+    },
+    "SecretBase_RedCave3": {
+      "placement_cases": 28800,
+      "allowed_placement_cases": 2410,
+      "pc": [
+        1,
+        2
+      ],
+      "map_group_number": [
+        25,
+        12
+      ]
+    },
+    "SecretBase_RedCave4": {
+      "placement_cases": 32400,
+      "allowed_placement_cases": 2922,
+      "pc": [
+        7,
+        12
+      ],
+      "map_group_number": [
+        25,
+        18
+      ]
+    },
+    "SecretBase_BrownCave1": {
+      "placement_cases": 23760,
+      "allowed_placement_cases": 2832,
+      "pc": [
+        2,
+        2
+      ],
+      "map_group_number": [
+        25,
+        1
+      ]
+    },
+    "SecretBase_BrownCave2": {
+      "placement_cases": 30240,
+      "allowed_placement_cases": 2987,
+      "pc": [
+        9,
+        1
+      ],
+      "map_group_number": [
+        25,
+        7
+      ]
+    },
+    "SecretBase_BrownCave3": {
+      "placement_cases": 39600,
+      "allowed_placement_cases": 3553,
+      "pc": [
+        13,
+        3
+      ],
+      "map_group_number": [
+        25,
+        13
+      ]
+    },
+    "SecretBase_BrownCave4": {
+      "placement_cases": 40320,
+      "allowed_placement_cases": 3619,
+      "pc": [
+        1,
+        1
+      ],
+      "map_group_number": [
+        25,
+        19
+      ]
+    },
+    "SecretBase_BlueCave1": {
+      "placement_cases": 23760,
+      "allowed_placement_cases": 2659,
+      "pc": [
+        1,
+        2
+      ],
+      "map_group_number": [
+        25,
+        2
+      ]
+    },
+    "SecretBase_BlueCave2": {
+      "placement_cases": 25200,
+      "allowed_placement_cases": 3203,
+      "pc": [
+        1,
+        1
+      ],
+      "map_group_number": [
+        25,
+        8
+      ]
+    },
+    "SecretBase_BlueCave3": {
+      "placement_cases": 40800,
+      "allowed_placement_cases": 2507,
+      "pc": [
+        3,
+        14
+      ],
+      "map_group_number": [
+        25,
+        14
+      ]
+    },
+    "SecretBase_BlueCave4": {
+      "placement_cases": 36720,
+      "allowed_placement_cases": 3025,
+      "pc": [
+        3,
+        13
+      ],
+      "map_group_number": [
+        25,
+        20
+      ]
+    },
+    "SecretBase_YellowCave1": {
+      "placement_cases": 23760,
+      "allowed_placement_cases": 3123,
+      "pc": [
+        9,
+        2
+      ],
+      "map_group_number": [
+        25,
+        3
+      ]
+    },
+    "SecretBase_YellowCave2": {
+      "placement_cases": 30240,
+      "allowed_placement_cases": 3044,
+      "pc": [
+        8,
+        6
+      ],
+      "map_group_number": [
+        25,
+        9
+      ]
+    },
+    "SecretBase_YellowCave3": {
+      "placement_cases": 31680,
+      "allowed_placement_cases": 3213,
+      "pc": [
+        3,
+        5
+      ],
+      "map_group_number": [
+        25,
+        15
+      ]
+    },
+    "SecretBase_YellowCave4": {
+      "placement_cases": 43680,
+      "allowed_placement_cases": 4162,
+      "pc": [
+        5,
+        8
+      ],
+      "map_group_number": [
+        25,
+        21
+      ]
+    }
+  },
+  "scope": "Production C functions and native catalog on host; map grid, variables, save records, objects, fades/tasks and warp callbacks are explicit services. No full ROM interpreter, record mixing link session, sprite engine or emulator."
+}

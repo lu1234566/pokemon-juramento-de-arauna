@@ -4610,3 +4610,46 @@ const struct Tileset gTileset_AraunaNavel06BDockArt =
     .callback = NULL,
 };
 // NAVEL_ROCK_06B_END
+
+// SECRET_BASES_06C1_BEGIN
+const struct Tileset gTileset_AraunaSecret06C1Red =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaSecret06C1Red,
+    .palettes = gTilesetPalettes_AraunaSecret06C1Red,
+    .metatiles = gMetatiles_AraunaSecret06C1Red,
+    .metatileAttributes = gMetatileAttributes_AraunaSecret06C1Red,
+    .callback = NULL,
+};
+const struct Tileset gTileset_AraunaSecret06C1Brown =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaSecret06C1Brown,
+    .palettes = gTilesetPalettes_AraunaSecret06C1Brown,
+    .metatiles = gMetatiles_AraunaSecret06C1Brown,
+    .metatileAttributes = gMetatileAttributes_AraunaSecret06C1Brown,
+    .callback = NULL,
+};
+const struct Tileset gTileset_AraunaSecret06C1Blue =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaSecret06C1Blue,
+    .palettes = gTilesetPalettes_AraunaSecret06C1Blue,
+    .metatiles = gMetatiles_AraunaSecret06C1Blue,
+    .metatileAttributes = gMetatileAttributes_AraunaSecret06C1Blue,
+    .callback = NULL,
+};
+const struct Tileset gTileset_AraunaSecret06C1Yellow =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaSecret06C1Yellow,
+    .palettes = gTilesetPalettes_AraunaSecret06C1Yellow,
+    .metatiles = gMetatiles_AraunaSecret06C1Yellow,
+    .metatileAttributes = gMetatileAttributes_AraunaSecret06C1Yellow,
+    .callback = NULL,
+};
+// SECRET_BASES_06C1_END

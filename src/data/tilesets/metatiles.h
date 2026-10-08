@@ -1204,3 +1204,14 @@ const u16 gMetatileAttributes_AraunaNavel06BDockBase[] = INCBIN_U16("data/tilese
 const u16 gMetatiles_AraunaNavel06BDockArt[] = INCBIN_U16("data/tilesets/secondary/arauna_navel06b_dock/metatiles.bin");
 const u16 gMetatileAttributes_AraunaNavel06BDockArt[] = INCBIN_U16("data/tilesets/secondary/arauna_navel06b_dock/metatile_attributes.bin");
 // NAVEL_ROCK_06B_END
+
+// SECRET_BASES_06C1_BEGIN
+const u16 gMetatiles_AraunaSecret06C1Red[] = INCBIN_U16("data/tilesets/secondary/arauna_secret06c1_red/metatiles.bin");
+const u16 gMetatileAttributes_AraunaSecret06C1Red[] = INCBIN_U16("data/tilesets/secondary/arauna_secret06c1_red/metatile_attributes.bin");
+const u16 gMetatiles_AraunaSecret06C1Brown[] = INCBIN_U16("data/tilesets/secondary/arauna_secret06c1_brown/metatiles.bin");
+const u16 gMetatileAttributes_AraunaSecret06C1Brown[] = INCBIN_U16("data/tilesets/secondary/arauna_secret06c1_brown/metatile_attributes.bin");
+const u16 gMetatiles_AraunaSecret06C1Blue[] = INCBIN_U16("data/tilesets/secondary/arauna_secret06c1_blue/metatiles.bin");
+const u16 gMetatileAttributes_AraunaSecret06C1Blue[] = INCBIN_U16("data/tilesets/secondary/arauna_secret06c1_blue/metatile_attributes.bin");
+const u16 gMetatiles_AraunaSecret06C1Yellow[] = INCBIN_U16("data/tilesets/secondary/arauna_secret06c1_yellow/metatiles.bin");
+const u16 gMetatileAttributes_AraunaSecret06C1Yellow[] = INCBIN_U16("data/tilesets/secondary/arauna_secret06c1_yellow/metatile_attributes.bin");
+// SECRET_BASES_06C1_END

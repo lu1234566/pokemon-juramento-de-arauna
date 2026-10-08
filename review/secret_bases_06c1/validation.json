@@ -1,0 +1,339 @@
+{
+  "status": "PASS",
+  "base_commit": "2449e12b0645f9aa37ef261ba2d3ce71df93254a",
+  "github_base": "d665dc34ddea776c06c85981653a9f62aa1e19d6",
+  "maps": {
+    "SecretBase_RedCave1": {
+      "cells": 99,
+      "changed_visual_cells": 99,
+      "reachable_cells": 52,
+      "layout": "LAYOUT_SECRET_BASE_RED_CAVE1",
+      "theme": "Red"
+    },
+    "SecretBase_RedCave2": {
+      "cells": 112,
+      "changed_visual_cells": 112,
+      "reachable_cells": 44,
+      "layout": "LAYOUT_SECRET_BASE_RED_CAVE2",
+      "theme": "Red"
+    },
+    "SecretBase_RedCave3": {
+      "cells": 120,
+      "changed_visual_cells": 120,
+      "reachable_cells": 51,
+      "layout": "LAYOUT_SECRET_BASE_RED_CAVE3",
+      "theme": "Red"
+    },
+    "SecretBase_RedCave4": {
+      "cells": 135,
+      "changed_visual_cells": 135,
+      "reachable_cells": 34,
+      "layout": "LAYOUT_SECRET_BASE_RED_CAVE4",
+      "theme": "Red"
+    },
+    "SecretBase_BrownCave1": {
+      "cells": 99,
+      "changed_visual_cells": 99,
+      "reachable_cells": 55,
+      "layout": "LAYOUT_SECRET_BASE_BROWN_CAVE1",
+      "theme": "Brown"
+    },
+    "SecretBase_BrownCave2": {
+      "cells": 126,
+      "changed_visual_cells": 126,
+      "reachable_cells": 57,
+      "layout": "LAYOUT_SECRET_BASE_BROWN_CAVE2",
+      "theme": "Brown"
+    },
+    "SecretBase_BrownCave3": {
+      "cells": 165,
+      "changed_visual_cells": 165,
+      "reachable_cells": 70,
+      "layout": "LAYOUT_SECRET_BASE_BROWN_CAVE3",
+      "theme": "Brown"
+    },
+    "SecretBase_BrownCave4": {
+      "cells": 168,
+      "changed_visual_cells": 168,
+      "reachable_cells": 35,
+      "layout": "LAYOUT_SECRET_BASE_BROWN_CAVE4",
+      "theme": "Brown"
+    },
+    "SecretBase_BlueCave1": {
+      "cells": 99,
+      "changed_visual_cells": 99,
+      "reachable_cells": 51,
+      "layout": "LAYOUT_SECRET_BASE_BLUE_CAVE1",
+      "theme": "Blue"
+    },
+    "SecretBase_BlueCave2": {
+      "cells": 105,
+      "changed_visual_cells": 105,
+      "reachable_cells": 58,
+      "layout": "LAYOUT_SECRET_BASE_BLUE_CAVE2",
+      "theme": "Blue"
+    },
+    "SecretBase_BlueCave3": {
+      "cells": 170,
+      "changed_visual_cells": 170,
+      "reachable_cells": 57,
+      "layout": "LAYOUT_SECRET_BASE_BLUE_CAVE3",
+      "theme": "Blue"
+    },
+    "SecretBase_BlueCave4": {
+      "cells": 153,
+      "changed_visual_cells": 153,
+      "reachable_cells": 10,
+      "layout": "LAYOUT_SECRET_BASE_BLUE_CAVE4",
+      "theme": "Blue"
+    },
+    "SecretBase_YellowCave1": {
+      "cells": 99,
+      "changed_visual_cells": 99,
+      "reachable_cells": 58,
+      "layout": "LAYOUT_SECRET_BASE_YELLOW_CAVE1",
+      "theme": "Yellow"
+    },
+    "SecretBase_YellowCave2": {
+      "cells": 126,
+      "changed_visual_cells": 126,
+      "reachable_cells": 57,
+      "layout": "LAYOUT_SECRET_BASE_YELLOW_CAVE2",
+      "theme": "Yellow"
+    },
+    "SecretBase_YellowCave3": {
+      "cells": 132,
+      "changed_visual_cells": 132,
+      "reachable_cells": 64,
+      "layout": "LAYOUT_SECRET_BASE_YELLOW_CAVE3",
+      "theme": "Yellow"
+    },
+    "SecretBase_YellowCave4": {
+      "cells": 182,
+      "changed_visual_cells": 182,
+      "reachable_cells": 53,
+      "layout": "LAYOUT_SECRET_BASE_YELLOW_CAVE4",
+      "theme": "Yellow"
+    }
+  },
+  "cave_maps": 16,
+  "cells": 2090,
+  "changed_visual_cells": 2090,
+  "native_attributes": 1296,
+  "native_layer_masks": 2592,
+  "preserved_primary_foreground_entries": 5504,
+  "preserved_palette_files": 48,
+  "preserved_original_graphic_tiles": 332,
+  "layout_count": 754,
+  "appended_layouts": 0,
+  "external_entrances_unchanged": 75,
+  "protected_gameplay_files": 18426,
+  "other_tracked_dependencies": 4361,
+  "previous_cavern_dive_selector_cells": 53167,
+  "native_c": {
+    "status": "PASS",
+    "native_catalog_entries": 121,
+    "pc_entry_return_cases": 196,
+    "saved_decoration_slot_cases": 256,
+    "decoration_placement_cases": 501600,
+    "allowed_placement_cases": 48020,
+    "actual_decoration_write_cases": 1200,
+    "maps": {
+      "SecretBase_RedCave1": {
+        "placement_cases": 23760,
+        "allowed_placement_cases": 2696,
+        "pc": [
+          1,
+          2
+        ],
+        "map_group_number": [
+          25,
+          0
+        ]
+      },
+      "SecretBase_RedCave2": {
+        "placement_cases": 26880,
+        "allowed_placement_cases": 2065,
+        "pc": [
+          5,
+          8
+        ],
+        "map_group_number": [
+          25,
+          6
+        ]
+      },
+      "SecretBase_RedCave3": {
+        "placement_cases": 28800,
+        "allowed_placement_cases": 2410,
+        "pc": [
+          1,
+          2
+        ],
+        "map_group_number": [
+          25,
+          12
+        ]
+      },
+      "SecretBase_RedCave4": {
+        "placement_cases": 32400,
+        "allowed_placement_cases": 2922,
+        "pc": [
+          7,
+          12
+        ],
+        "map_group_number": [
+          25,
+          18
+        ]
+      },
+      "SecretBase_BrownCave1": {
+        "placement_cases": 23760,
+        "allowed_placement_cases": 2832,
+        "pc": [
+          2,
+          2
+        ],
+        "map_group_number": [
+          25,
+          1
+        ]
+      },
+      "SecretBase_BrownCave2": {
+        "placement_cases": 30240,
+        "allowed_placement_cases": 2987,
+        "pc": [
+          9,
+          1
+        ],
+        "map_group_number": [
+          25,
+          7
+        ]
+      },
+      "SecretBase_BrownCave3": {
+        "placement_cases": 39600,
+        "allowed_placement_cases": 3553,
+        "pc": [
+          13,
+          3
+        ],
+        "map_group_number": [
+          25,
+          13
+        ]
+      },
+      "SecretBase_BrownCave4": {
+        "placement_cases": 40320,
+        "allowed_placement_cases": 3619,
+        "pc": [
+          1,
+          1
+        ],
+        "map_group_number": [
+          25,
+          19
+        ]
+      },
+      "SecretBase_BlueCave1": {
+        "placement_cases": 23760,
+        "allowed_placement_cases": 2659,
+        "pc": [
+          1,
+          2
+        ],
+        "map_group_number": [
+          25,
+          2
+        ]
+      },
+      "SecretBase_BlueCave2": {
+        "placement_cases": 25200,
+        "allowed_placement_cases": 3203,
+        "pc": [
+          1,
+          1
+        ],
+        "map_group_number": [
+          25,
+          8
+        ]
+      },
+      "SecretBase_BlueCave3": {
+        "placement_cases": 40800,
+        "allowed_placement_cases": 2507,
+        "pc": [
+          3,
+          14
+        ],
+        "map_group_number": [
+          25,
+          14
+        ]
+      },
+      "SecretBase_BlueCave4": {
+        "placement_cases": 36720,
+        "allowed_placement_cases": 3025,
+        "pc": [
+          3,
+          13
+        ],
+        "map_group_number": [
+          25,
+          20
+        ]
+      },
+      "SecretBase_YellowCave1": {
+        "placement_cases": 23760,
+        "allowed_placement_cases": 3123,
+        "pc": [
+          9,
+          2
+        ],
+        "map_group_number": [
+          25,
+          3
+        ]
+      },
+      "SecretBase_YellowCave2": {
+        "placement_cases": 30240,
+        "allowed_placement_cases": 3044,
+        "pc": [
+          8,
+          6
+        ],
+        "map_group_number": [
+          25,
+          9
+        ]
+      },
+      "SecretBase_YellowCave3": {
+        "placement_cases": 31680,
+        "allowed_placement_cases": 3213,
+        "pc": [
+          3,
+          5
+        ],
+        "map_group_number": [
+          25,
+          15
+        ]
+      },
+      "SecretBase_YellowCave4": {
+        "placement_cases": 43680,
+        "allowed_placement_cases": 4162,
+        "pc": [
+          5,
+          8
+        ],
+        "map_group_number": [
+          25,
+          21
+        ]
+      }
+    },
+    "scope": "Production C functions and native catalog on host; map grid, variables, save records, objects, fades/tasks and warp callbacks are explicit services. No full ROM interpreter, record mixing link session, sprite engine or emulator."
+  },
+  "rom_build": "pending: ARM compiler unavailable",
+  "emulator": "pending: mGBA unavailable"
+}
