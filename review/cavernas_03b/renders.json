@@ -1,0 +1,153 @@
+{
+  "kind": "native_render_not_emulator",
+  "full_maps": 4,
+  "before_after_viewports": 12,
+  "door_state_pairs": 3,
+  "door_states_from": "actual C and original scripts",
+  "records": [
+    {
+      "map": "SealedChamber_OuterRoom",
+      "crop": 1,
+      "origin": [
+        3,
+        0
+      ],
+      "native_size": [
+        240,
+        160
+      ]
+    },
+    {
+      "map": "SealedChamber_OuterRoom",
+      "crop": 2,
+      "origin": [
+        2,
+        5
+      ],
+      "native_size": [
+        240,
+        160
+      ]
+    },
+    {
+      "map": "SealedChamber_OuterRoom",
+      "crop": 3,
+      "origin": [
+        5,
+        13
+      ],
+      "native_size": [
+        240,
+        160
+      ]
+    },
+    {
+      "map": "SealedChamber_InnerRoom",
+      "crop": 1,
+      "origin": [
+        3,
+        1
+      ],
+      "native_size": [
+        240,
+        160
+      ]
+    },
+    {
+      "map": "SealedChamber_InnerRoom",
+      "crop": 2,
+      "origin": [
+        1,
+        7
+      ],
+      "native_size": [
+        240,
+        160
+      ]
+    },
+    {
+      "map": "SealedChamber_InnerRoom",
+      "crop": 3,
+      "origin": [
+        5,
+        13
+      ],
+      "native_size": [
+        240,
+        160
+      ]
+    },
+    {
+      "map": "AncientTomb",
+      "crop": 1,
+      "origin": [
+        1,
+        2
+      ],
+      "native_size": [
+        240,
+        160
+      ]
+    },
+    {
+      "map": "AncientTomb",
+      "crop": 2,
+      "origin": [
+        1,
+        17
+      ],
+      "native_size": [
+        240,
+        160
+      ]
+    },
+    {
+      "map": "AncientTomb",
+      "crop": 3,
+      "origin": [
+        1,
+        23
+      ],
+      "native_size": [
+        240,
+        160
+      ]
+    },
+    {
+      "map": "IslandCave",
+      "crop": 1,
+      "origin": [
+        1,
+        2
+      ],
+      "native_size": [
+        240,
+        160
+      ]
+    },
+    {
+      "map": "IslandCave",
+      "crop": 2,
+      "origin": [
+        1,
+        17
+      ],
+      "native_size": [
+        240,
+        160
+      ]
+    },
+    {
+      "map": "IslandCave",
+      "crop": 3,
+      "origin": [
+        1,
+        23
+      ],
+      "native_size": [
+        240,
+        160
+      ]
+    }
+  ]
+}

@@ -7856,3 +7856,57 @@ const u16 gTilesetPalettes_AraunaMarineCave03A[][16] =
     INCGFX_U16("data/tilesets/secondary/arauna_marine_cave_03a/palettes/12.pal", ".gbapal"),
 };
 // CAVERNAS_03A_END
+
+// CAVERNAS_03B_BEGIN
+const u32 gTilesetTiles_AraunaSealedChamber03B[] = INCGFX_U32("data/tilesets/secondary/arauna_sealed_03b/tiles.png", ".4bpp.lz");
+const u16 gTilesetPalettes_AraunaSealedChamber03B[][16] =
+{
+    INCGFX_U16("data/tilesets/secondary/arauna_sealed_03b/palettes/00.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_sealed_03b/palettes/01.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_sealed_03b/palettes/02.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_sealed_03b/palettes/03.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_sealed_03b/palettes/04.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_sealed_03b/palettes/05.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_sealed_03b/palettes/06.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_sealed_03b/palettes/07.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_sealed_03b/palettes/08.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_sealed_03b/palettes/09.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_sealed_03b/palettes/10.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_sealed_03b/palettes/11.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_sealed_03b/palettes/12.pal", ".gbapal"),
+};
+const u32 gTilesetTiles_AraunaAncientTomb03B[] = INCGFX_U32("data/tilesets/secondary/arauna_ancient_03b/tiles.png", ".4bpp.lz");
+const u16 gTilesetPalettes_AraunaAncientTomb03B[][16] =
+{
+    INCGFX_U16("data/tilesets/secondary/arauna_ancient_03b/palettes/00.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_ancient_03b/palettes/01.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_ancient_03b/palettes/02.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_ancient_03b/palettes/03.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_ancient_03b/palettes/04.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_ancient_03b/palettes/05.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_ancient_03b/palettes/06.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_ancient_03b/palettes/07.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_ancient_03b/palettes/08.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_ancient_03b/palettes/09.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_ancient_03b/palettes/10.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_ancient_03b/palettes/11.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_ancient_03b/palettes/12.pal", ".gbapal"),
+};
+const u32 gTilesetTiles_AraunaIslandCave03B[] = INCGFX_U32("data/tilesets/secondary/arauna_island_03b/tiles.png", ".4bpp.lz");
+const u16 gTilesetPalettes_AraunaIslandCave03B[][16] =
+{
+    INCGFX_U16("data/tilesets/secondary/arauna_island_03b/palettes/00.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_island_03b/palettes/01.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_island_03b/palettes/02.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_island_03b/palettes/03.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_island_03b/palettes/04.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_island_03b/palettes/05.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_island_03b/palettes/06.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_island_03b/palettes/07.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_island_03b/palettes/08.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_island_03b/palettes/09.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_island_03b/palettes/10.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_island_03b/palettes/11.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_island_03b/palettes/12.pal", ".gbapal"),
+};
+// CAVERNAS_03B_END

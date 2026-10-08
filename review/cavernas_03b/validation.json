@@ -1,0 +1,86 @@
+{
+  "status": "PASS",
+  "base_commit": "7cb02987e896535f8b445290883ff0022a989a52",
+  "protected_existing_files": 17785,
+  "layouts_preserved": 740,
+  "target_layout_secondary_fields_changed": 4,
+  "maps": {
+    "SealedChamber_OuterRoom": {
+      "cells": 483,
+      "changed_visual_cells": 434,
+      "native_words_unchanged": true,
+      "attributes_compared": 483,
+      "warps_preserved": 1,
+      "objects_preserved": 0,
+      "coord_events_preserved": 0
+    },
+    "SealedChamber_InnerRoom": {
+      "cells": 483,
+      "changed_visual_cells": 473,
+      "native_words_unchanged": true,
+      "attributes_compared": 483,
+      "warps_preserved": 1,
+      "objects_preserved": 0,
+      "coord_events_preserved": 0
+    },
+    "AncientTomb": {
+      "cells": 561,
+      "changed_visual_cells": 544,
+      "native_words_unchanged": true,
+      "attributes_compared": 561,
+      "warps_preserved": 3,
+      "objects_preserved": 1,
+      "coord_events_preserved": 0
+    },
+    "IslandCave": {
+      "cells": 561,
+      "changed_visual_cells": 544,
+      "native_words_unchanged": true,
+      "attributes_compared": 561,
+      "warps_preserved": 3,
+      "objects_preserved": 1,
+      "coord_events_preserved": 0
+    }
+  },
+  "banks": [
+    {
+      "family": "sealed",
+      "graphics_tiles": 432,
+      "metatiles": 414,
+      "new_graphics_tiles": 45,
+      "aliases": 43,
+      "4bpp_and_rgb555": "PASS",
+      "animations_reserved": "PASS"
+    },
+    {
+      "family": "ancient",
+      "graphics_tiles": 432,
+      "metatiles": 414,
+      "new_graphics_tiles": 51,
+      "aliases": 45,
+      "4bpp_and_rgb555": "PASS",
+      "animations_reserved": "PASS"
+    },
+    {
+      "family": "island",
+      "graphics_tiles": 432,
+      "metatiles": 414,
+      "new_graphics_tiles": 50,
+      "aliases": 39,
+      "4bpp_and_rgb555": "PASS",
+      "animations_reserved": "PASS"
+    }
+  ],
+  "actual_c_selector_cells": 2088,
+  "actual_c_fallback_checks": 6280,
+  "legacy_cave_selector_cells": 12003,
+  "native_animation_frames": 32,
+  "closed_open_passage_checks": 36,
+  "braille_pixels_and_messages_preserved": true,
+  "regice_perimeter_cells_preserved": 36,
+  "actual_c_puzzle_checks": 53,
+  "sealed_dive_and_escape_return_preserved": true,
+  "legendary_encounters_scripts_flags_results_preserved": true,
+  "rom_build": "pending_toolchain_unavailable",
+  "emulator": "pending_unavailable"
+}

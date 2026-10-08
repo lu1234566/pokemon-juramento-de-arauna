@@ -4192,3 +4192,36 @@ const struct Tileset gTileset_AraunaMarineCave03A =
     .callback = InitTilesetAnim_Cave,
 };
 // CAVERNAS_03A_END
+
+// CAVERNAS_03B_BEGIN
+const struct Tileset gTileset_AraunaSealedChamber03B =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaSealedChamber03B,
+    .palettes = gTilesetPalettes_AraunaSealedChamber03B,
+    .metatiles = gMetatiles_AraunaSealedChamber03B,
+    .metatileAttributes = gMetatileAttributes_AraunaSealedChamber03B,
+    .callback = InitTilesetAnim_Cave,
+};
+const struct Tileset gTileset_AraunaAncientTomb03B =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaAncientTomb03B,
+    .palettes = gTilesetPalettes_AraunaAncientTomb03B,
+    .metatiles = gMetatiles_AraunaAncientTomb03B,
+    .metatileAttributes = gMetatileAttributes_AraunaAncientTomb03B,
+    .callback = InitTilesetAnim_Cave,
+};
+const struct Tileset gTileset_AraunaIslandCave03B =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaIslandCave03B,
+    .palettes = gTilesetPalettes_AraunaIslandCave03B,
+    .metatiles = gMetatiles_AraunaIslandCave03B,
+    .metatileAttributes = gMetatileAttributes_AraunaIslandCave03B,
+    .callback = InitTilesetAnim_Cave,
+};
+// CAVERNAS_03B_END

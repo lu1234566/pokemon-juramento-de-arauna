@@ -1,0 +1,15 @@
+{
+  "base_commit": "7cb02987e896535f8b445290883ff0022a989a52",
+  "github_branch": "claude/pokemon-juramento-arauna-fhk6ah",
+  "github_tip": "7cb02987e896535f8b445290883ff0022a989a52",
+  "main_commit": "979fb6c1b6731561f3c993efd6045a9bbf096c54",
+  "commits_ahead_main": 83,
+  "checkpoint_03a_files": 94,
+  "matching_03a_payload_files": 93,
+  "only_03a_difference": "docs/CAVERNAS_CHECKPOINT_03A.md adds integrator ROM/mGBA verification",
+  "previous_cumulative_audit": "review/cavernas_03a/cumulative_audit.json",
+  "bcd_functional_contract_matches_current": true,
+  "recovered_reference_files": 83,
+  "reference_hash_mismatches": [],
+  "do_not_reapply_stale_cumulative_overlays": true
+}

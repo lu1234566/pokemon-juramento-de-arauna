@@ -18,6 +18,10 @@ static const u16 sVisual_TerraCave_Entrance[] = INCBIN_U16("review/cavernas_03a/
 static const u16 sVisual_TerraCave_End[] = INCBIN_U16("review/cavernas_03a/visual_grids/TerraCave_End.bin");
 static const u16 sVisual_MarineCave_Entrance[] = INCBIN_U16("review/cavernas_03a/visual_grids/MarineCave_Entrance.bin");
 static const u16 sVisual_MarineCave_End[] = INCBIN_U16("review/cavernas_03a/visual_grids/MarineCave_End.bin");
+static const u16 sVisual_SealedChamber_OuterRoom[] = INCBIN_U16("review/cavernas_03b/visual_grids/SealedChamber_OuterRoom.bin");
+static const u16 sVisual_SealedChamber_InnerRoom[] = INCBIN_U16("review/cavernas_03b/visual_grids/SealedChamber_InnerRoom.bin");
+static const u16 sVisual_AncientTomb[] = INCBIN_U16("review/cavernas_03b/visual_grids/AncientTomb.bin");
+static const u16 sVisual_IslandCave[] = INCBIN_U16("review/cavernas_03b/visual_grids/IslandCave.bin");
 static const struct CaveVisualGrid sCaveVisualGrids[] =
 {
     {162, sVisual_VictoryRoad_1F}, // VictoryRoad_1F
@@ -38,4 +42,8 @@ static const struct CaveVisualGrid sCaveVisualGrids[] =
     {408, sVisual_TerraCave_End}, // TerraCave_End checkpoint 03A
     {406, sVisual_MarineCave_Entrance}, // MarineCave_Entrance checkpoint 03A
     {412, sVisual_MarineCave_End}, // MarineCave_End checkpoint 03A
+    {283, sVisual_SealedChamber_OuterRoom}, // SealedChamber_OuterRoom checkpoint 03B
+    {303, sVisual_SealedChamber_InnerRoom}, // SealedChamber_InnerRoom checkpoint 03B
+    {280, sVisual_AncientTomb}, // AncientTomb checkpoint 03B
+    {279, sVisual_IslandCave}, // IslandCave checkpoint 03B
 };
