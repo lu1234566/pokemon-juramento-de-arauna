@@ -1,0 +1,145 @@
+{
+  "TrainerHill_Entrance": {
+    "warps": [
+      {
+        "x": 9,
+        "y": 16,
+        "elevation": 3,
+        "dest_map": "MAP_ROUTE111",
+        "dest_warp_id": "4"
+      },
+      {
+        "x": 10,
+        "y": 16,
+        "elevation": 3,
+        "dest_map": "MAP_ROUTE111",
+        "dest_warp_id": "4"
+      },
+      {
+        "x": 9,
+        "y": 1,
+        "elevation": 3,
+        "dest_map": "MAP_TRAINER_HILL_1F",
+        "dest_warp_id": "0"
+      }
+    ],
+    "script_metatiles": [
+      "17, 10, METATILE_TrainerHill_GreenFloorTile, FALSE",
+      "17, 10, METATILE_TrainerHill_CounterDoor, TRUE"
+    ]
+  },
+  "TrainerHill_1F": {
+    "warps": [
+      {
+        "x": 2,
+        "y": 1,
+        "elevation": 3,
+        "dest_map": "MAP_TRAINER_HILL_ENTRANCE",
+        "dest_warp_id": "2"
+      },
+      {
+        "x": 12,
+        "y": 1,
+        "elevation": 3,
+        "dest_map": "MAP_TRAINER_HILL_2F",
+        "dest_warp_id": "0"
+      }
+    ],
+    "script_metatiles": []
+  },
+  "TrainerHill_2F": {
+    "warps": [
+      {
+        "x": 2,
+        "y": 1,
+        "elevation": 3,
+        "dest_map": "MAP_TRAINER_HILL_1F",
+        "dest_warp_id": "1"
+      },
+      {
+        "x": 12,
+        "y": 1,
+        "elevation": 3,
+        "dest_map": "MAP_TRAINER_HILL_3F",
+        "dest_warp_id": "0"
+      }
+    ],
+    "script_metatiles": []
+  },
+  "TrainerHill_3F": {
+    "warps": [
+      {
+        "x": 2,
+        "y": 1,
+        "elevation": 3,
+        "dest_map": "MAP_TRAINER_HILL_2F",
+        "dest_warp_id": "1"
+      },
+      {
+        "x": 12,
+        "y": 1,
+        "elevation": 3,
+        "dest_map": "MAP_TRAINER_HILL_4F",
+        "dest_warp_id": "0"
+      }
+    ],
+    "script_metatiles": []
+  },
+  "TrainerHill_4F": {
+    "warps": [
+      {
+        "x": 2,
+        "y": 1,
+        "elevation": 3,
+        "dest_map": "MAP_TRAINER_HILL_3F",
+        "dest_warp_id": "1"
+      },
+      {
+        "x": 12,
+        "y": 1,
+        "elevation": 3,
+        "dest_map": "MAP_TRAINER_HILL_ROOF",
+        "dest_warp_id": "0"
+      }
+    ],
+    "script_metatiles": []
+  },
+  "TrainerHill_Roof": {
+    "warps": [
+      {
+        "x": 9,
+        "y": 5,
+        "elevation": 3,
+        "dest_map": "MAP_TRAINER_HILL_4F",
+        "dest_warp_id": "1"
+      },
+      {
+        "x": 15,
+        "y": 5,
+        "elevation": 0,
+        "dest_map": "MAP_TRAINER_HILL_ELEVATOR",
+        "dest_warp_id": "1"
+      }
+    ],
+    "script_metatiles": []
+  },
+  "TrainerHill_Elevator": {
+    "warps": [
+      {
+        "x": 1,
+        "y": 6,
+        "elevation": 3,
+        "dest_map": "MAP_TRAINER_HILL_ROOF",
+        "dest_warp_id": "1"
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "elevation": 3,
+        "dest_map": "MAP_TRAINER_HILL_ROOF",
+        "dest_warp_id": "1"
+      }
+    ],
+    "script_metatiles": []
+  }
+}

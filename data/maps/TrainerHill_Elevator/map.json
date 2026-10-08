@@ -1,7 +1,7 @@
 {
   "id": "MAP_TRAINER_HILL_ELEVATOR",
   "name": "TrainerHill_Elevator",
-  "layout": "LAYOUT_BATTLE_ELEVATOR",
+  "layout": "LAYOUT_ARAUNA_TRAINER_HILL_06A_ELEVATOR",
   "music": "MUS_B_TOWER_RS",
   "region_map_section": "MAPSEC_TRAINER_HILL",
   "requires_flash": false,

@@ -4404,3 +4404,46 @@ const struct Tileset gTileset_AraunaSafari05RecepcaoArt =
     .callback = NULL,
 };
 // SAFARI_05_END
+
+// TRAINER_HILL_06A_BEGIN
+const struct Tileset gTileset_AraunaTrainerHill06APavilionBase =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AraunaTrainerHill06APavilionBase,
+    .palettes = gTilesetPalettes_AraunaTrainerHill06APavilionBase,
+    .metatiles = gMetatiles_AraunaTrainerHill06APavilionBase,
+    .metatileAttributes = gMetatileAttributes_AraunaTrainerHill06APavilionBase,
+    .callback = InitTilesetAnim_Building,
+};
+const struct Tileset gTileset_AraunaTrainerHill06APavilionArt =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaTrainerHill06APavilionArt,
+    .palettes = gTilesetPalettes_AraunaTrainerHill06APavilionArt,
+    .metatiles = gMetatiles_AraunaTrainerHill06APavilionArt,
+    .metatileAttributes = gMetatileAttributes_AraunaTrainerHill06APavilionArt,
+    .callback = NULL,
+};
+const struct Tileset gTileset_AraunaTrainerHill06AElevatorBase =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AraunaTrainerHill06AElevatorBase,
+    .palettes = gTilesetPalettes_AraunaTrainerHill06AElevatorBase,
+    .metatiles = gMetatiles_AraunaTrainerHill06AElevatorBase,
+    .metatileAttributes = gMetatileAttributes_AraunaTrainerHill06AElevatorBase,
+    .callback = InitTilesetAnim_Building,
+};
+const struct Tileset gTileset_AraunaTrainerHill06AElevatorArt =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaTrainerHill06AElevatorArt,
+    .palettes = gTilesetPalettes_AraunaTrainerHill06AElevatorArt,
+    .metatiles = gMetatiles_AraunaTrainerHill06AElevatorArt,
+    .metatileAttributes = gMetatileAttributes_AraunaTrainerHill06AElevatorArt,
+    .callback = NULL,
+};
+// TRAINER_HILL_06A_END

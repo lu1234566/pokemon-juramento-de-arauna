@@ -1,0 +1,52 @@
+/workspace/scratch/70b5ee7403af/arauna/tools/arauna_maps/validate_trainer_hill_06a.py:81: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.
+  pixels=list(im.crop((i%row*8,i//row*8,i%row*8+8,i//row*8+8)).getdata());packed=bytes(pixels[j]|pixels[j+1]<<4 for j in range(0,64,2));assert [v for b in packed for v in (b&15,b>>4)]==pixels
+{
+  "status": "PASS",
+  "base_commit": "d665dc34ddea776c06c85981653a9f62aa1e19d6",
+  "protected_gameplay_files": 18105,
+  "protected_dependencies": 183,
+  "full_native_attributes_preserved": 1011,
+  "actual_c_static_selector_cells": 2102,
+  "actual_c_runtime_selector_cells": 5376,
+  "actual_c_fallback_cases": 35840,
+  "previous_cavern_dive_selector_cells": 53167,
+  "plain_cells_checked": 2328,
+  "barrier_cells_checked": 798,
+  "architectural_layer_masks_preserved": 414,
+  "battle_tower_elevator_unchanged_cells": 35,
+  "door_palettes_preserved": [
+    7,
+    9
+  ],
+  "native_elevator_closed_door_ids_unchanged": [
+    812,
+    899
+  ],
+  "native_c": {
+    "status": "PASS",
+    "generated_cell_words": 5376,
+    "untouched_buffer_guards": 11984,
+    "mode_floor_combinations": 16,
+    "layout_classifications": 8,
+    "lifecycle_cases": 20,
+    "functions": [
+      "GetCurrentTrainerHillMapId",
+      "InTrainerHill",
+      "GetFloorId",
+      "GetMapDataForFloor",
+      "GenerateTrainerHillFloorLayout",
+      "GetTimerValue",
+      "SetTimerValue",
+      "TrainerHillStartChallenge",
+      "GetOwnerState",
+      "GiveChallengePrize",
+      "CheckFinalTime",
+      "TrainerHillResumeTimer",
+      "TrainerHillSetPlayerLost",
+      "TrainerHillGetChallengeStatus"
+    ],
+    "scope": "Production C bodies executed on host. Floor data come from original input bytes; allocation, script dispatch, bag, flag/save and VBlank services are explicit fixtures. No ROM, full event interpreter or battle engine session."
+  },
+  "rom_build": "pending: ARM compiler unavailable",
+  "emulator": "pending: mGBA unavailable"
+}

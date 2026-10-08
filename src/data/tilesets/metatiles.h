@@ -1158,3 +1158,14 @@ const u16 gMetatileAttributes_AraunaSafari05RecepcaoBase[] = INCBIN_U16("data/ti
 const u16 gMetatiles_AraunaSafari05RecepcaoArt[] = INCBIN_U16("data/tilesets/secondary/arauna_safari05_recepcao/metatiles.bin");
 const u16 gMetatileAttributes_AraunaSafari05RecepcaoArt[] = INCBIN_U16("data/tilesets/secondary/arauna_safari05_recepcao/metatile_attributes.bin");
 // SAFARI_05_END
+
+// TRAINER_HILL_06A_BEGIN
+const u16 gMetatiles_AraunaTrainerHill06APavilionBase[] = INCBIN_U16("data/tilesets/primary/arauna_trainerhill06a_pavilion/metatiles.bin");
+const u16 gMetatileAttributes_AraunaTrainerHill06APavilionBase[] = INCBIN_U16("data/tilesets/primary/arauna_trainerhill06a_pavilion/metatile_attributes.bin");
+const u16 gMetatiles_AraunaTrainerHill06APavilionArt[] = INCBIN_U16("data/tilesets/secondary/arauna_trainerhill06a_pavilion/metatiles.bin");
+const u16 gMetatileAttributes_AraunaTrainerHill06APavilionArt[] = INCBIN_U16("data/tilesets/secondary/arauna_trainerhill06a_pavilion/metatile_attributes.bin");
+const u16 gMetatiles_AraunaTrainerHill06AElevatorBase[] = INCBIN_U16("data/tilesets/primary/arauna_trainerhill06a_elevator/metatiles.bin");
+const u16 gMetatileAttributes_AraunaTrainerHill06AElevatorBase[] = INCBIN_U16("data/tilesets/primary/arauna_trainerhill06a_elevator/metatile_attributes.bin");
+const u16 gMetatiles_AraunaTrainerHill06AElevatorArt[] = INCBIN_U16("data/tilesets/secondary/arauna_trainerhill06a_elevator/metatiles.bin");
+const u16 gMetatileAttributes_AraunaTrainerHill06AElevatorArt[] = INCBIN_U16("data/tilesets/secondary/arauna_trainerhill06a_elevator/metatile_attributes.bin");
+// TRAINER_HILL_06A_END

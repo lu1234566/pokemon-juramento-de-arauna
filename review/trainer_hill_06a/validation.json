@@ -1,0 +1,353 @@
+{
+  "status": "PASS",
+  "base_commit": "d665dc34ddea776c06c85981653a9f62aa1e19d6",
+  "protected_gameplay_files": 18105,
+  "protected_dependencies": 183,
+  "maps": {
+    "TrainerHill_Entrance": {
+      "cells": 323,
+      "changed_visual_cells": 237,
+      "warps": 3,
+      "objects": 5,
+      "layout": "LAYOUT_TRAINER_HILL_ENTRANCE"
+    },
+    "TrainerHill_1F": {
+      "cells": 336,
+      "changed_visual_cells": 291,
+      "warps": 2,
+      "objects": 0,
+      "layout": "LAYOUT_TRAINER_HILL_1F"
+    },
+    "TrainerHill_2F": {
+      "cells": 336,
+      "changed_visual_cells": 291,
+      "warps": 2,
+      "objects": 0,
+      "layout": "LAYOUT_TRAINER_HILL_2F"
+    },
+    "TrainerHill_3F": {
+      "cells": 336,
+      "changed_visual_cells": 291,
+      "warps": 2,
+      "objects": 0,
+      "layout": "LAYOUT_TRAINER_HILL_3F"
+    },
+    "TrainerHill_4F": {
+      "cells": 336,
+      "changed_visual_cells": 291,
+      "warps": 2,
+      "objects": 0,
+      "layout": "LAYOUT_TRAINER_HILL_4F"
+    },
+    "TrainerHill_Roof": {
+      "cells": 400,
+      "changed_visual_cells": 398,
+      "warps": 2,
+      "objects": 1,
+      "layout": "LAYOUT_TRAINER_HILL_ROOF"
+    },
+    "TrainerHill_Elevator": {
+      "cells": 35,
+      "changed_visual_cells": 33,
+      "warps": 2,
+      "objects": 1,
+      "layout": "LAYOUT_ARAUNA_TRAINER_HILL_06A_ELEVATOR"
+    }
+  },
+  "runtime": {
+    "normal_0": {
+      "cells": 336,
+      "changed_visual_cells": 276,
+      "trainer_coordinates": [
+        [
+          11,
+          6
+        ],
+        [
+          13,
+          7
+        ]
+      ]
+    },
+    "normal_1": {
+      "cells": 336,
+      "changed_visual_cells": 267,
+      "trainer_coordinates": [
+        [
+          4,
+          16
+        ],
+        [
+          9,
+          19
+        ]
+      ]
+    },
+    "normal_2": {
+      "cells": 336,
+      "changed_visual_cells": 221,
+      "trainer_coordinates": [
+        [
+          5,
+          7
+        ],
+        [
+          9,
+          7
+        ]
+      ]
+    },
+    "normal_3": {
+      "cells": 336,
+      "changed_visual_cells": 173,
+      "trainer_coordinates": [
+        [
+          7,
+          9
+        ],
+        [
+          7,
+          15
+        ]
+      ]
+    },
+    "variety_0": {
+      "cells": 336,
+      "changed_visual_cells": 113,
+      "trainer_coordinates": [
+        [
+          5,
+          13
+        ],
+        [
+          9,
+          13
+        ]
+      ]
+    },
+    "variety_1": {
+      "cells": 336,
+      "changed_visual_cells": 245,
+      "trainer_coordinates": [
+        [
+          3,
+          13
+        ],
+        [
+          11,
+          13
+        ]
+      ]
+    },
+    "variety_2": {
+      "cells": 336,
+      "changed_visual_cells": 196,
+      "trainer_coordinates": [
+        [
+          9,
+          6
+        ],
+        [
+          14,
+          6
+        ]
+      ]
+    },
+    "variety_3": {
+      "cells": 336,
+      "changed_visual_cells": 203,
+      "trainer_coordinates": [
+        [
+          10,
+          7
+        ],
+        [
+          14,
+          7
+        ]
+      ]
+    },
+    "unique_0": {
+      "cells": 336,
+      "changed_visual_cells": 276,
+      "trainer_coordinates": [
+        [
+          4,
+          8
+        ],
+        [
+          7,
+          8
+        ]
+      ]
+    },
+    "unique_1": {
+      "cells": 336,
+      "changed_visual_cells": 276,
+      "trainer_coordinates": [
+        [
+          9,
+          11
+        ],
+        [
+          13,
+          11
+        ]
+      ]
+    },
+    "unique_2": {
+      "cells": 336,
+      "changed_visual_cells": 252,
+      "trainer_coordinates": [
+        [
+          6,
+          14
+        ],
+        [
+          8,
+          14
+        ]
+      ]
+    },
+    "unique_3": {
+      "cells": 336,
+      "changed_visual_cells": 276,
+      "trainer_coordinates": [
+        [
+          8,
+          7
+        ],
+        [
+          11,
+          10
+        ]
+      ]
+    },
+    "expert_0": {
+      "cells": 336,
+      "changed_visual_cells": 216,
+      "trainer_coordinates": [
+        [
+          4,
+          12
+        ],
+        [
+          10,
+          12
+        ]
+      ]
+    },
+    "expert_1": {
+      "cells": 336,
+      "changed_visual_cells": 256,
+      "trainer_coordinates": [
+        [
+          7,
+          15
+        ],
+        [
+          7,
+          19
+        ]
+      ]
+    },
+    "expert_2": {
+      "cells": 336,
+      "changed_visual_cells": 291,
+      "trainer_coordinates": [
+        [
+          7,
+          11
+        ],
+        [
+          7,
+          15
+        ]
+      ]
+    },
+    "expert_3": {
+      "cells": 336,
+      "changed_visual_cells": 291,
+      "trainer_coordinates": [
+        [
+          7,
+          11
+        ],
+        [
+          7,
+          15
+        ]
+      ]
+    }
+  },
+  "banks": [
+    {
+      "path": "data/tilesets/primary/arauna_trainerhill06a_pavilion",
+      "tiles": 512,
+      "original_attribute_words": 8,
+      "callback": "InitTilesetAnim_Building"
+    },
+    {
+      "path": "data/tilesets/secondary/arauna_trainerhill06a_pavilion",
+      "tiles": 208,
+      "original_attribute_words": 486,
+      "callback": "NULL"
+    },
+    {
+      "path": "data/tilesets/primary/arauna_trainerhill06a_elevator",
+      "tiles": 512,
+      "original_attribute_words": 8,
+      "callback": "InitTilesetAnim_Building"
+    },
+    {
+      "path": "data/tilesets/secondary/arauna_trainerhill06a_elevator",
+      "tiles": 16,
+      "original_attribute_words": 509,
+      "callback": "NULL"
+    }
+  ],
+  "full_native_attributes_preserved": 1011,
+  "actual_c_static_selector_cells": 2102,
+  "actual_c_runtime_selector_cells": 5376,
+  "actual_c_fallback_cases": 35840,
+  "previous_cavern_dive_selector_cells": 53167,
+  "plain_cells_checked": 2328,
+  "barrier_cells_checked": 798,
+  "architectural_layer_masks_preserved": 414,
+  "battle_tower_elevator_unchanged_cells": 35,
+  "door_palettes_preserved": [
+    7,
+    9
+  ],
+  "native_elevator_closed_door_ids_unchanged": [
+    812,
+    899
+  ],
+  "native_c": {
+    "status": "PASS",
+    "generated_cell_words": 5376,
+    "untouched_buffer_guards": 11984,
+    "mode_floor_combinations": 16,
+    "layout_classifications": 8,
+    "lifecycle_cases": 20,
+    "functions": [
+      "GetCurrentTrainerHillMapId",
+      "InTrainerHill",
+      "GetFloorId",
+      "GetMapDataForFloor",
+      "GenerateTrainerHillFloorLayout",
+      "GetTimerValue",
+      "SetTimerValue",
+      "TrainerHillStartChallenge",
+      "GetOwnerState",
+      "GiveChallengePrize",
+      "CheckFinalTime",
+      "TrainerHillResumeTimer",
+      "TrainerHillSetPlayerLost",
+      "TrainerHillGetChallengeStatus"
+    ],
+    "scope": "Production C bodies executed on host. Floor data come from original input bytes; allocation, script dispatch, bag, flag/save and VBlank services are explicit fixtures. No ROM, full event interpreter or battle engine session."
+  },
+  "rom_build": "pending: ARM compiler unavailable",
+  "emulator": "pending: mGBA unavailable"
+}

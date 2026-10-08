@@ -4136,8 +4136,8 @@
       "name": "TrainerHill_Entrance_Layout",
       "width": 19,
       "height": 17,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_TrainerHill",
+      "primary_tileset": "gTileset_AraunaTrainerHill06APavilionBase",
+      "secondary_tileset": "gTileset_AraunaTrainerHill06APavilionArt",
       "border_filepath": "data/layouts/TrainerHill_Entrance/border.bin",
       "blockdata_filepath": "data/layouts/TrainerHill_Entrance/map.bin"
     },
@@ -4146,8 +4146,8 @@
       "name": "TrainerHill_1F_Layout",
       "width": 16,
       "height": 21,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_TrainerHill",
+      "primary_tileset": "gTileset_AraunaTrainerHill06APavilionBase",
+      "secondary_tileset": "gTileset_AraunaTrainerHill06APavilionArt",
       "border_filepath": "data/layouts/TrainerHill_1F/border.bin",
       "blockdata_filepath": "data/layouts/TrainerHill_1F/map.bin"
     },
@@ -4156,8 +4156,8 @@
       "name": "TrainerHill_2F_Layout",
       "width": 16,
       "height": 21,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_TrainerHill",
+      "primary_tileset": "gTileset_AraunaTrainerHill06APavilionBase",
+      "secondary_tileset": "gTileset_AraunaTrainerHill06APavilionArt",
       "border_filepath": "data/layouts/TrainerHill_2F/border.bin",
       "blockdata_filepath": "data/layouts/TrainerHill_2F/map.bin"
     },
@@ -4166,8 +4166,8 @@
       "name": "TrainerHill_3F_Layout",
       "width": 16,
       "height": 21,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_TrainerHill",
+      "primary_tileset": "gTileset_AraunaTrainerHill06APavilionBase",
+      "secondary_tileset": "gTileset_AraunaTrainerHill06APavilionArt",
       "border_filepath": "data/layouts/TrainerHill_3F/border.bin",
       "blockdata_filepath": "data/layouts/TrainerHill_3F/map.bin"
     },
@@ -4176,8 +4176,8 @@
       "name": "TrainerHill_4F_Layout",
       "width": 16,
       "height": 21,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_TrainerHill",
+      "primary_tileset": "gTileset_AraunaTrainerHill06APavilionBase",
+      "secondary_tileset": "gTileset_AraunaTrainerHill06APavilionArt",
       "border_filepath": "data/layouts/TrainerHill_4F/border.bin",
       "blockdata_filepath": "data/layouts/TrainerHill_4F/map.bin"
     },
@@ -4186,8 +4186,8 @@
       "name": "TrainerHill_Roof_Layout",
       "width": 25,
       "height": 16,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_TrainerHill",
+      "primary_tileset": "gTileset_AraunaTrainerHill06APavilionBase",
+      "secondary_tileset": "gTileset_AraunaTrainerHill06APavilionArt",
       "border_filepath": "data/layouts/TrainerHill_Roof/border.bin",
       "blockdata_filepath": "data/layouts/TrainerHill_Roof/map.bin"
     },
@@ -7440,6 +7440,16 @@
       "secondary_tileset": "gTileset_AraunaBorderRoute116ArtUivoV1",
       "border_filepath": "data/layouts/AraunaUivoRoute116V1/border.bin",
       "blockdata_filepath": "data/layouts/AraunaUivoRoute116V1/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARAUNA_TRAINER_HILL_06A_ELEVATOR",
+      "name": "AraunaTrainerHill06AElevator_Layout",
+      "width": 5,
+      "height": 7,
+      "primary_tileset": "gTileset_AraunaTrainerHill06AElevatorBase",
+      "secondary_tileset": "gTileset_AraunaTrainerHill06AElevatorArt",
+      "border_filepath": "data/layouts/BattleElevator/border.bin",
+      "blockdata_filepath": "data/layouts/BattleElevator/map.bin"
     }
   ]
 }

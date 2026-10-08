@@ -1,0 +1,99 @@
+{
+  "kind": "native RGB555 renderer, without actors, not emulator screenshots",
+  "map_pairs": 7,
+  "generated_mode_floor_pairs": 16,
+  "camera_pairs": [
+    {
+      "map": "TrainerHill_Entrance",
+      "origin": [
+        2,
+        7
+      ],
+      "size": [
+        240,
+        160
+      ],
+      "generated_mode": null,
+      "small_elevator_centered": false
+    },
+    {
+      "map": "TrainerHill_1F",
+      "origin": [
+        0,
+        5
+      ],
+      "size": [
+        240,
+        160
+      ],
+      "generated_mode": "normal",
+      "small_elevator_centered": false
+    },
+    {
+      "map": "TrainerHill_2F",
+      "origin": [
+        0,
+        5
+      ],
+      "size": [
+        240,
+        160
+      ],
+      "generated_mode": "normal",
+      "small_elevator_centered": false
+    },
+    {
+      "map": "TrainerHill_3F",
+      "origin": [
+        0,
+        5
+      ],
+      "size": [
+        240,
+        160
+      ],
+      "generated_mode": "normal",
+      "small_elevator_centered": false
+    },
+    {
+      "map": "TrainerHill_4F",
+      "origin": [
+        0,
+        5
+      ],
+      "size": [
+        240,
+        160
+      ],
+      "generated_mode": "normal",
+      "small_elevator_centered": false
+    },
+    {
+      "map": "TrainerHill_Roof",
+      "origin": [
+        5,
+        0
+      ],
+      "size": [
+        240,
+        160
+      ],
+      "generated_mode": null,
+      "small_elevator_centered": false
+    },
+    {
+      "map": "TrainerHill_Elevator",
+      "origin": [
+        0,
+        0
+      ],
+      "size": [
+        240,
+        160
+      ],
+      "generated_mode": null,
+      "small_elevator_centered": true
+    }
+  ],
+  "source_layouts_private_elevator": true
+}
