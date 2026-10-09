@@ -1125,3 +1125,10 @@ const u16 gMetatileAttributes_AraunaSecret06C2Tree[] = INCBIN_U16("data/tilesets
 const u16 gMetatiles_AraunaSecret06C2Shrub[] = INCBIN_U16("data/tilesets/secondary/arauna_secret06c2_shrub/metatiles.bin");
 const u16 gMetatileAttributes_AraunaSecret06C2Shrub[] = INCBIN_U16("data/tilesets/secondary/arauna_secret06c2_shrub/metatile_attributes.bin");
 // SECRET_BASES_06C2_END
+
+// FRONTIER_07A_BEGIN
+const u16 gMetatiles_AraunaFrontier07ATowerBase[] = INCBIN_U16("data/tilesets/primary/arauna_frontier07a_tower/metatiles.bin");
+const u16 gMetatileAttributes_AraunaFrontier07ATowerBase[] = INCBIN_U16("data/tilesets/primary/arauna_frontier07a_tower/metatile_attributes.bin");
+const u16 gMetatiles_AraunaFrontier07ATowerArt[] = INCBIN_U16("data/tilesets/secondary/arauna_frontier07a_tower/metatiles.bin");
+const u16 gMetatileAttributes_AraunaFrontier07ATowerArt[] = INCBIN_U16("data/tilesets/secondary/arauna_frontier07a_tower/metatile_attributes.bin");
+// FRONTIER_07A_END

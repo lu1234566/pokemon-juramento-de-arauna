@@ -1,0 +1,15 @@
+{
+  "checkpoint": "989c33c94fb89b92c5f608f78233fdd8deded4c4",
+  "package_sha256": "c856cf98cb15c403ab3f6041aaea09ef304a45320c67bd154267dff521d61ec3",
+  "inner_hashes": 92,
+  "source_files_present_exact_on_7e9": 83,
+  "github_branch": "claude/pokemon-juramento-arauna-fhk6ah",
+  "github_commit": "7e9d29dc5fdab047ac663dd2953a83ff9a51c0b8",
+  "main_commit": "979fb6c1b6731561f3c993efd6045a9bbf096c54",
+  "main_commits_behind": 95,
+  "references": [
+    "docs/referencias/bible_concepts_recuperados/Arauna_Master_Map_Design_Bible.pdf",
+    "docs/referencias/bible_concepts_recuperados/concepts/Arauna_Cidades_Conceituais_Individuais/16_Ever_Grande_Liga.png"
+  ],
+  "reference_scope": "Global Bible material/viewport guidance and League stone/bronze concept. No canonical new Frontier name or progression invented."
+}

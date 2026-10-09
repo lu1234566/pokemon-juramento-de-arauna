@@ -1,0 +1,90 @@
+{
+  "status": "PASS",
+  "base_commit": "7e9d29dc5fdab047ac663dd2953a83ff9a51c0b8",
+  "maps": {
+    "BattleFrontier_BattleTowerLobby": {
+      "cells": 250,
+      "changed_visual_cells": 241,
+      "objects": 9,
+      "warps": 3,
+      "layout": "LAYOUT_BATTLE_FRONTIER_BATTLE_TOWER_LOBBY"
+    },
+    "BattleFrontier_BattleTowerElevator": {
+      "cells": 35,
+      "changed_visual_cells": 33,
+      "objects": 1,
+      "warps": 0,
+      "layout": "LAYOUT_BATTLE_ELEVATOR"
+    },
+    "BattleFrontier_BattleTowerCorridor": {
+      "cells": 85,
+      "changed_visual_cells": 83,
+      "objects": 1,
+      "warps": 0,
+      "layout": "LAYOUT_BATTLE_FRONTIER_BATTLE_TOWER_CORRIDOR"
+    },
+    "BattleFrontier_BattleTowerBattleRoom": {
+      "cells": 90,
+      "changed_visual_cells": 90,
+      "objects": 3,
+      "warps": 2,
+      "layout": "LAYOUT_BATTLE_FRONTIER_BATTLE_TOWER_BATTLE_ROOM"
+    },
+    "BattleFrontier_BattleTowerMultiPartnerRoom": {
+      "cells": 315,
+      "changed_visual_cells": 313,
+      "objects": 9,
+      "warps": 0,
+      "layout": "LAYOUT_BATTLE_FRONTIER_BATTLE_TOWER_MULTI_PARTNER_ROOM"
+    },
+    "BattleFrontier_BattleTowerMultiCorridor": {
+      "cells": 85,
+      "changed_visual_cells": 77,
+      "objects": 4,
+      "warps": 0,
+      "layout": "LAYOUT_BATTLE_FRONTIER_BATTLE_TOWER_MULTI_CORRIDOR"
+    },
+    "BattleFrontier_BattleTowerMultiBattleRoom": {
+      "cells": 90,
+      "changed_visual_cells": 90,
+      "objects": 6,
+      "warps": 0,
+      "layout": "LAYOUT_BATTLE_FRONTIER_BATTLE_TOWER_BATTLE_ROOM"
+    }
+  },
+  "native_cells": 950,
+  "protected_files": 23003,
+  "explicit_engine_protection": {
+    "src/field_door.c": "8c44134af9a2b77d2cf03c1cffdf81b6b8015977b1f04d78a8dfb0903758e8da",
+    "src/overworld.c": "312489b537e07f068952004c23cc503837d547af610354225d7325315d3e18aa"
+  },
+  "layout_count": 754,
+  "appended_layouts": 0,
+  "native_attributes": 517,
+  "secondary_layer_masks": 1018,
+  "door_footprint_cells": 10,
+  "open_corridor_metatiles": [
+    519,
+    527
+  ],
+  "production_c_selector_cells": 950,
+  "production_c_selector_fallbacks": 35840,
+  "previous_cavern_dive_selector_cells": 53167,
+  "native_doors": {
+    "status": "PASS",
+    "door_router_cases": 1026,
+    "door_frame_cases": 16,
+    "source_functions": [
+      "GetDoorGraphics",
+      "BuildDoorTiles",
+      "DrawCurrentDoorAnimFrame",
+      "DrawClosedDoorTiles",
+      "ShouldUseMultiCorridorDoor",
+      "DrawDoor"
+    ],
+    "scope": "Production C router and drawing/flag logic; explicit host flag/location/draw/VRAM services. Canonical table and palettes retained. Full VRAM animation, tasks and sprites require emulator."
+  },
+  "scope": "Production visual selectors and door functions execute on host. Scripts, battle logic, trainers, saves, Multi and link code are byte-preserved; script/battle interpreter and link sessions are not executed. All door footprint pixels and source animation palettes remain exact.",
+  "rom_build": "pending: ARM compiler unavailable",
+  "emulator": "pending: mGBA unavailable"
+}

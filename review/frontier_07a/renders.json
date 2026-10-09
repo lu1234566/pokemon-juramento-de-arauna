@@ -1,0 +1,8 @@
+{
+  "maps": 7,
+  "camera_pairs": 7,
+  "native_rgb555": true,
+  "sprites": false,
+  "emulator_screenshots": false,
+  "script_open_corridor_fixture_not_installed": true
+}

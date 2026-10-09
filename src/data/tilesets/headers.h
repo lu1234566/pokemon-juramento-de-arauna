@@ -4392,3 +4392,26 @@ const struct Tileset gTileset_AraunaSecret06C2Shrub =
     .callback = NULL,
 };
 // SECRET_BASES_06C2_END
+
+// FRONTIER_07A_BEGIN
+const struct Tileset gTileset_AraunaFrontier07ATowerBase =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AraunaFrontier07ATowerBase,
+    .palettes = gTilesetPalettes_AraunaFrontier07ATowerBase,
+    .metatiles = gMetatiles_AraunaFrontier07ATowerBase,
+    .metatileAttributes = gMetatileAttributes_AraunaFrontier07ATowerBase,
+    .callback = InitTilesetAnim_Building,
+};
+const struct Tileset gTileset_AraunaFrontier07ATowerArt =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaFrontier07ATowerArt,
+    .palettes = gTilesetPalettes_AraunaFrontier07ATowerArt,
+    .metatiles = gMetatiles_AraunaFrontier07ATowerArt,
+    .metatileAttributes = gMetatileAttributes_AraunaFrontier07ATowerArt,
+    .callback = NULL,
+};
+// FRONTIER_07A_END
