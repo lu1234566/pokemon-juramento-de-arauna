@@ -8313,3 +8313,40 @@ const u16 gTilesetPalettes_AraunaFrontier07DFactoryArt[][16] =
     INCGFX_U16("data/tilesets/secondary/arauna_frontier07d_factory/palettes/12.pal", ".gbapal"),
 };
 // FRONTIER_07D_END
+
+// FRONTIER_07E_BEGIN
+const u32 gTilesetTiles_AraunaFrontier07EPikeBase[] = INCGFX_U32("data/tilesets/primary/arauna_frontier07e_pike/tiles.png", ".4bpp.lz");
+const u16 gTilesetPalettes_AraunaFrontier07EPikeBase[][16] =
+{
+    INCGFX_U16("data/tilesets/primary/arauna_frontier07e_pike/palettes/00.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_frontier07e_pike/palettes/01.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_frontier07e_pike/palettes/02.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_frontier07e_pike/palettes/03.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_frontier07e_pike/palettes/04.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_frontier07e_pike/palettes/05.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_frontier07e_pike/palettes/06.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_frontier07e_pike/palettes/07.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_frontier07e_pike/palettes/08.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_frontier07e_pike/palettes/09.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_frontier07e_pike/palettes/10.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_frontier07e_pike/palettes/11.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_frontier07e_pike/palettes/12.pal", ".gbapal"),
+};
+const u32 gTilesetTiles_AraunaFrontier07EPikeArt[] = INCGFX_U32("data/tilesets/secondary/arauna_frontier07e_pike/tiles.png", ".4bpp.lz");
+const u16 gTilesetPalettes_AraunaFrontier07EPikeArt[][16] =
+{
+    INCGFX_U16("data/tilesets/secondary/arauna_frontier07e_pike/palettes/00.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_frontier07e_pike/palettes/01.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_frontier07e_pike/palettes/02.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_frontier07e_pike/palettes/03.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_frontier07e_pike/palettes/04.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_frontier07e_pike/palettes/05.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_frontier07e_pike/palettes/06.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_frontier07e_pike/palettes/07.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_frontier07e_pike/palettes/08.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_frontier07e_pike/palettes/09.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_frontier07e_pike/palettes/10.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_frontier07e_pike/palettes/11.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_frontier07e_pike/palettes/12.pal", ".gbapal"),
+};
+// FRONTIER_07E_END

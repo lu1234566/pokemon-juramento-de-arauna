@@ -4524,3 +4524,26 @@ const struct Tileset gTileset_AraunaFrontier07DFactoryArt =
     .callback = NULL,
 };
 // FRONTIER_07D_END
+
+// FRONTIER_07E_BEGIN
+const struct Tileset gTileset_AraunaFrontier07EPikeBase =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AraunaFrontier07EPikeBase,
+    .palettes = gTilesetPalettes_AraunaFrontier07EPikeBase,
+    .metatiles = gMetatiles_AraunaFrontier07EPikeBase,
+    .metatileAttributes = gMetatileAttributes_AraunaFrontier07EPikeBase,
+    .callback = InitTilesetAnim_Building,
+};
+const struct Tileset gTileset_AraunaFrontier07EPikeArt =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaFrontier07EPikeArt,
+    .palettes = gTilesetPalettes_AraunaFrontier07EPikeArt,
+    .metatiles = gMetatiles_AraunaFrontier07EPikeArt,
+    .metatileAttributes = gMetatileAttributes_AraunaFrontier07EPikeArt,
+    .callback = NULL,
+};
+// FRONTIER_07E_END

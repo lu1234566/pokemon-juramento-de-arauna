@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "github_integrator": "38d7879ae14817d242ef07ca4f22fb60d3df96da",
+  "previous_checkpoint": "2a1838d000482773bb25a2faffc291b1c26cb756",
+  "main": "979fb6c1b6731561f3c993efd6045a9bbf096c54",
+  "main_commits_behind_integrator": 104,
+  "previous_07d_payload_sha_match": 82,
+  "base_diff_from_07d": [
+    "docs/INTEGRACAO_07D.md"
+  ],
+  "maintenance_paths_exact": {
+    "src/field_door.c": "0aa13791192e52f2e57f1b1b611fdd3b1ea74d44df7fbabc1fd2f875f596df7e",
+    "src/overworld.c": "312489b537e07f068952004c23cc503837d547af610354225d7325315d3e18aa",
+    "src/field_specials.c": "d3a3eed4dbac4e3fc0f526b8f194fd79c25ce4487730852e9165e7cf1fe62684",
+    "src/battle_pike.c": "64f04f0814dd1bb60f2cfcd35ef9eb9027b67652f93ef7d3d9ef6367cd057f31",
+    "src/frontier_util.c": "be3ec95f9e438f385256ae8a55f53be70677f28d3fa44272f00f2e927c9b868c",
+    "src/tileset_anims.c": "6a35239142e7e81f44916dd7a5a60800129200922f860eaf1de69725638e02a1",
+    "include/constants/metatile_labels.h": "6f53ac68b105d8d72c7daa3d57c4c669a828f68d3f8d84d1902e9f6309b818f2",
+    "include/constants/battle_pike.h": "3cd64f68c180abff63b3e466428abff0c9ef426909f7a9820dd61edf2952270f",
+    "docs/INTEGRACAO_07D.md": "44c94c8a7bbf4ff5d70c0f65294b3d28e1ef87746bd434fdfacb4b85e36f57a8",
+    "docs/INTEGRACAO_07C.md": "4b8c9beea6fd947a4dcb919d3ec4b6247ad9412f13c621e568b4a2bbb7724dbe",
+    "tools/arauna_maps/corrige_agua_palace_07c.py": "57e346059d4efc153abb906fd7bcca9a535754c07a154f861dc324b80fbda503",
+    "data/tilesets/secondary/arauna_frontier07c_palace_garden/metatiles.bin": "181f026417146acf1fd998b0a71858fbe5dce8fdd591ba5392647c76aacb4946"
+  },
+  "scope": "Starts directly on 38d. Its parent is the delivered 07D on 8d. Native increment uses 38d; cumulative bundles recover documented older histories. The integrator note reports prior 07D ROM build/mGBA; that is not execution evidence for new 07E.",
+  "push": false
+}

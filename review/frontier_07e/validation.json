@@ -1,0 +1,207 @@
+{
+  "status": "PASS",
+  "base_commit": "38d7879ae14817d242ef07ca4f22fb60d3df96da",
+  "maps": {
+    "BattleFrontier_BattlePikeLobby": {
+      "cells": 143,
+      "changed_visual_cells": 143,
+      "objects": 4,
+      "warps": 3,
+      "layout": "LAYOUT_BATTLE_FRONTIER_BATTLE_PIKE_LOBBY"
+    },
+    "BattleFrontier_BattlePikeCorridor": {
+      "cells": 112,
+      "changed_visual_cells": 112,
+      "objects": 1,
+      "warps": 0,
+      "layout": "LAYOUT_BATTLE_FRONTIER_BATTLE_PIKE_CORRIDOR"
+    },
+    "BattleFrontier_BattlePikeThreePathRoom": {
+      "cells": 143,
+      "changed_visual_cells": 143,
+      "objects": 2,
+      "warps": 0,
+      "layout": "LAYOUT_BATTLE_FRONTIER_BATTLE_PIKE_THREE_PATH_ROOM"
+    },
+    "BattleFrontier_BattlePikeRoomNormal": {
+      "cells": 72,
+      "changed_visual_cells": 72,
+      "objects": 2,
+      "warps": 0,
+      "layout": "LAYOUT_BATTLE_FRONTIER_BATTLE_PIKE_ROOM_NORMAL"
+    },
+    "BattleFrontier_BattlePikeRoomFinal": {
+      "cells": 40,
+      "changed_visual_cells": 40,
+      "objects": 1,
+      "warps": 0,
+      "layout": "LAYOUT_BATTLE_FRONTIER_BATTLE_PIKE_ROOM_FINAL"
+    },
+    "BattleFrontier_BattlePikeRoomWildMons": {
+      "cells": 180,
+      "changed_visual_cells": 180,
+      "objects": 0,
+      "warps": 0,
+      "layout": "LAYOUT_BATTLE_FRONTIER_BATTLE_PIKE_ROOM_WILD_MONS"
+    }
+  },
+  "native_cells": 690,
+  "protected_files": 23431,
+  "explicit_engine_protection": {
+    "src/field_door.c": "0aa13791192e52f2e57f1b1b611fdd3b1ea74d44df7fbabc1fd2f875f596df7e",
+    "src/overworld.c": "312489b537e07f068952004c23cc503837d547af610354225d7325315d3e18aa",
+    "src/field_specials.c": "d3a3eed4dbac4e3fc0f526b8f194fd79c25ce4487730852e9165e7cf1fe62684",
+    "src/battle_pike.c": "64f04f0814dd1bb60f2cfcd35ef9eb9027b67652f93ef7d3d9ef6367cd057f31",
+    "src/frontier_util.c": "be3ec95f9e438f385256ae8a55f53be70677f28d3fa44272f00f2e927c9b868c",
+    "src/tileset_anims.c": "6a35239142e7e81f44916dd7a5a60800129200922f860eaf1de69725638e02a1",
+    "include/constants/metatile_labels.h": "6f53ac68b105d8d72c7daa3d57c4c669a828f68d3f8d84d1902e9f6309b818f2",
+    "include/constants/battle_pike.h": "3cd64f68c180abff63b3e466428abff0c9ef426909f7a9820dd61edf2952270f",
+    "docs/INTEGRACAO_07D.md": "44c94c8a7bbf4ff5d70c0f65294b3d28e1ef87746bd434fdfacb4b85e36f57a8",
+    "docs/INTEGRACAO_07C.md": "4b8c9beea6fd947a4dcb919d3ec4b6247ad9412f13c621e568b4a2bbb7724dbe",
+    "tools/arauna_maps/corrige_agua_palace_07c.py": "57e346059d4efc153abb906fd7bcca9a535754c07a154f861dc324b80fbda503",
+    "data/tilesets/secondary/arauna_frontier07c_palace_garden/metatiles.bin": "181f026417146acf1fd998b0a71858fbe5dce8fdd591ba5392647c76aacb4946"
+  },
+  "layout_count": 754,
+  "appended_layouts": 0,
+  "native_attributes": 355,
+  "layer_masks": 710,
+  "building_metatile_frame_cases": 16,
+  "previous_frontier_maps": 20,
+  "previous_frontier_frame_cases": 40,
+  "unused_pike_layout_unchanged": true,
+  "curtain_metatiles": 43,
+  "native_curtain": {
+    "status": "PASS",
+    "ticks_and_positions": 80,
+    "positions": 5,
+    "duration_ticks": 12,
+    "frame_ticks": [
+      4,
+      8,
+      12
+    ],
+    "metatile_ids": [
+      513,
+      514,
+      515,
+      521,
+      522,
+      523,
+      529,
+      530,
+      531,
+      537,
+      538,
+      539,
+      545,
+      546,
+      547,
+      553,
+      554,
+      555,
+      561,
+      562,
+      563,
+      569,
+      570,
+      571,
+      577,
+      578,
+      579,
+      585,
+      586,
+      587,
+      593,
+      594,
+      595,
+      601,
+      602,
+      603
+    ],
+    "writes_per_transition": 36,
+    "redraws_per_transition": 3,
+    "script_resumes_per_transition": 1,
+    "source_functions": [
+      "CloseBattlePikeCurtain",
+      "Task_CloseBattlePikeCurtain"
+    ],
+    "scope": "Original production C initialization and task run on host with explicit task, map-grid, redraw and script-resume services. Actual 3x4 frame IDs, timing and map-offset footprint checked; no script interpreter or GBA gameplay."
+  },
+  "palace_corrected_water_edge_frames": 8,
+  "production_c_selector_cells": 690,
+  "production_c_selector_fallbacks": 30720,
+  "previous_cavern_dive_selector_cells": 53167,
+  "native_doors": {
+    "specific_frontier_door_frame_cases": 10,
+    "status": "PASS",
+    "door_router_cases": 1028,
+    "door_frame_cases": 16,
+    "source_functions": [
+      "GetDoorGraphics",
+      "BuildDoorTiles",
+      "DrawCurrentDoorAnimFrame",
+      "DrawClosedDoorTiles",
+      "ShouldUseMultiCorridorDoor",
+      "DrawDoor"
+    ],
+    "scope": "Production C router and drawing/flag logic; explicit host flag/location/draw/VRAM services. Canonical table and palettes retained. Full VRAM animation, tasks and sprites require emulator."
+  },
+  "native_building_animation": {
+    "status": "PASS",
+    "ticks": 256,
+    "queue_updates": 32,
+    "frames": 2,
+    "source_functions": [
+      "InitTilesetAnim_Building",
+      "TilesetAnim_Building",
+      "QueueAnimTiles_Building_TVTurnedOn"
+    ],
+    "scope": "Original production C Building callback and VRAM queue execute on host with explicit buffer services and native 4bpp TV frames. Full GBA rendering requires emulator."
+  },
+  "previous_garden_animation": {
+    "status": "PASS",
+    "ticks": 256,
+    "queue_updates": 80,
+    "water_frames": 8,
+    "flower_sequence": [
+      0,
+      1,
+      0,
+      2
+    ],
+    "source_functions": [
+      "InitTilesetAnim_General",
+      "TilesetAnim_General",
+      "QueueAnimTiles_General_Flower",
+      "QueueAnimTiles_General_Water",
+      "QueueAnimTiles_General_SandWaterEdge",
+      "QueueAnimTiles_General_Waterfall",
+      "QueueAnimTiles_General_LandWaterEdge"
+    ],
+    "scope": "Actual production C callback, queue functions and canonical frame tables. Explicit host VRAM-buffer copy; real frame bytes decoded from indexed native PNGs. No GBA display execution."
+  },
+  "previous_dome_animation": {
+    "status": "PASS",
+    "cases": 865,
+    "palette": 8,
+    "frames": 4,
+    "animated_indices": [
+      13,
+      15
+    ],
+    "fade_coefficients": 17,
+    "transition_updates": 32,
+    "source_functions": [
+      "InitTilesetAnim_BattleDome",
+      "TilesetAnim_BattleDome",
+      "TilesetAnim_BattleDome2",
+      "BlendAnimPalette_BattleDome_FloorLights",
+      "BlendAnimPalette_BattleDome_FloorLightsNoBlend",
+      "BlendPalette"
+    ],
+    "scope": "Actual production C callbacks, RGB555 fade and task-state branches. Explicit host task lookup and CPU-copy services; GBA display and battle interpreter require emulator."
+  },
+  "scope": "Production C selectors, door routing/drawing, Building and General queues and Dome fade execute on host with explicit services. Pike room RNG and hints, status and healing, wild encounters, party selection, battles, Lucy, saves and progression are byte-preserved; battle/script interpreter and GBA ROM are not executed. GitHub 38d official Factory integration, 8d Palace water and Tower door corrections are preserved.",
+  "rom_build": "pending: ARM compiler unavailable",
+  "emulator": "pending: mGBA unavailable"
+}

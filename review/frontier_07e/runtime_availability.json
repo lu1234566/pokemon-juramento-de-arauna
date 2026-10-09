@@ -1,0 +1,7 @@
+{
+  "arm_compiler": null,
+  "mgba": null,
+  "new_07e_arm_build": "pending",
+  "new_07e_emulator": "pending",
+  "scope": "Checked tools in this environment; native RGB555 renders and C host tests do not substitute GBA gameplay."
+}

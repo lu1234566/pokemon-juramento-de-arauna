@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "references_before_art": true,
+  "references": {
+    "docs/referencias/bible_concepts_recuperados/Arauna_Master_Map_Design_Bible.pdf": "366d4cbfa103fb58d8b13837fe58fdd0154c35ba8f51c0fd74f76e989a77a95d",
+    "docs/referencias/bible_concepts_recuperados/concepts/Arauna_Locais_Narrativos_Dedicados/06_Liga_de_Arauna_Caminho_das_Quatro_Vozes.png": "9c9c7dd0ee0b84328e77ec3be773d95edbee1262c8a361d9bea36156f05899e7"
+  },
+  "previous_report": {
+    "file": "Arauna_Checkpoint_07D_Relatorio.md",
+    "library_file_id": "libfile_957b580bb1408191ab456514c29821fd",
+    "current_contents_read": true
+  },
+  "previous_zip": {
+    "file": "Arauna_Checkpoint_07D_BattleFrontier_Factory_V1.zip",
+    "library_file_id": "libfile_e9ef25fb2288819187e693a2510943cc",
+    "sha256": "ee85597acfaa37c8f2f641c98ed64324c9244dc1c4eb29d7e954c6804c47d1e0",
+    "crc": "PASS",
+    "verified_internal_hashes": 92,
+    "payload_files_matching_official_base": 82
+  },
+  "design": "Bible authority on materials/scale. Liga concept informs institutional basalt/copper; wine curtains and a serpentine floor coil are new native Pike artwork. No new canonical name or narrative event. Original maps and full native metatile atlas inspected first."
+}
