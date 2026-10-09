@@ -11,6 +11,7 @@
 extern const struct Tileset gTileset_AraunaInicioBaseV1;
 extern const struct Tileset gTileset_AraunaBorderOldaleTownBaseUivoV1;
 extern const struct Tileset gTileset_AraunaTrainerHill06APavilionBase;
+extern const struct Tileset gTileset_AraunaFrontier07ATowerBase;
 
 #define DOOR_SOUND_NORMAL  0
 #define DOOR_SOUND_SLIDING 1
@@ -249,6 +250,19 @@ static const struct DoorGraphics sDoorGraphics_AraunaTrainerHillRoofElevator =
 {
     METATILE_TrainerHill_Door_Elevator_Roof, DOOR_SOUND_SLIDING, 1, sDoorAnimTiles_AraunaTrainerHillRoofElevator, sDoorAnimPalettes_AraunaTrainerHillElevator
 };
+// Battle Tower 07A carries its new wall over the elevator and Multi corridor doors
+// (tools/arauna_maps/corrige_portas_frontier_07a.py).
+static const u8 sDoorAnimTiles_AraunaFrontierTowerElevator[] = INCGFX_U8("graphics/door_anims/arauna_frontier07a_tower_elevator.png", ".4bpp");
+static const u8 sDoorAnimTiles_AraunaFrontierTowerMultiCorridor[] = INCGFX_U8("graphics/door_anims/arauna_frontier07a_tower_multi_corridor.png", ".4bpp", "-mwidth 2 -mheight 4");
+static const u8 sDoorAnimPalettes_AraunaFrontierTower[] = {12, 12, 7, 7, 7, 7, 7, 7};
+static const struct DoorGraphics sDoorGraphics_AraunaFrontierTowerElevator =
+{
+    METATILE_BattleFrontier_Door_Elevator, DOOR_SOUND_SLIDING, 1, sDoorAnimTiles_AraunaFrontierTowerElevator, sDoorAnimPalettes_AraunaFrontierTower
+};
+static const struct DoorGraphics sDoorGraphics_AraunaFrontierTowerMultiCorridor =
+{
+    METATILE_BattleFrontier_Door_MultiCorridor, DOOR_SOUND_SLIDING, 2, sDoorAnimTiles_AraunaFrontierTowerMultiCorridor, sDoorAnimPalettes_AraunaFrontierTower
+};
 static const struct DoorGraphics sDoorAnimGraphicsTable[] =
 {
 // BEGIN ARAUNA_AMANHECER_DOOR_TABLE
@@ -473,6 +487,14 @@ static const struct DoorGraphics *GetDoorGraphics(const struct DoorGraphics *gfx
             return &sDoorGraphics_AraunaTrainerHillLobbyElevator;
         if (metatileNum == METATILE_TrainerHill_Door_Elevator_Roof)
             return &sDoorGraphics_AraunaTrainerHillRoofElevator;
+    }
+
+    if (gMapHeader.mapLayout->primaryTileset == &gTileset_AraunaFrontier07ATowerBase)
+    {
+        if (metatileNum == METATILE_BattleFrontier_Door_Elevator)
+            return &sDoorGraphics_AraunaFrontierTowerElevator;
+        if (metatileNum == METATILE_BattleFrontier_Door_MultiCorridor)
+            return &sDoorGraphics_AraunaFrontierTowerMultiCorridor;
     }
 
     while (gfx->tiles != NULL)
