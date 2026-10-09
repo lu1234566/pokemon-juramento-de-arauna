@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "github_integrator": "8d7cafa5d7eef106eea69bc1ad18e3097d7e343b",
+  "previous_checkpoint": "638d523c088ddc9991617031e07808119712caf7",
+  "main": "979fb6c1b6731561f3c993efd6045a9bbf096c54",
+  "main_commits_behind_integrator": 102,
+  "maintenance_paths_exact": {
+    "data/tilesets/secondary/arauna_frontier07c_palace_garden/metatiles.bin": "181f026417146acf1fd998b0a71858fbe5dce8fdd591ba5392647c76aacb4946",
+    "docs/INTEGRACAO_07C.md": "4b8c9beea6fd947a4dcb919d3ec4b6247ad9412f13c621e568b4a2bbb7724dbe",
+    "tools/arauna_maps/corrige_agua_palace_07c.py": "57e346059d4efc153abb906fd7bcca9a535754c07a154f861dc324b80fbda503"
+  },
+  "scope": "Starts directly on 8d; no merge or reversion. Includes official Palace 0x226 water fix, its generator/documentation and inherited Tower door corrections.",
+  "push": false
+}

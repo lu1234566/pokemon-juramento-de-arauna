@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "recovered_before_map_edits": true,
+  "references": {
+    "docs/referencias/bible_concepts_recuperados/Arauna_Master_Map_Design_Bible.pdf": "366d4cbfa103fb58d8b13837fe58fdd0154c35ba8f51c0fd74f76e989a77a95d",
+    "docs/referencias/bible_concepts_recuperados/concepts/Arauna_Locais_Narrativos_Dedicados/06_Liga_de_Arauna_Caminho_das_Quatro_Vozes.png": "9c9c7dd0ee0b84328e77ec3be773d95edbee1262c8a361d9bea36156f05899e7",
+    "docs/referencias/bible_concepts_recuperados/concepts/Arauna_Caminhos_Internos_Cavernas_Conceituais/05_Usina_Velha.png": "8a1b9bc8f4c8007d22b59e20cf6f9e513cdab3458e9b0106de7602a68aff4d00",
+    "previous_07c_package": {
+      "file": "Arauna_Checkpoint_07C_BattleFrontier_Palace_Arena_V1.zip",
+      "sha256": "c05e0d29dad09278e078a8280cb83218839ff9d870815ee5ad8fff81e2a97293",
+      "crc": "PASS",
+      "inner_hashes": 178,
+      "report_version": 1
+    }
+  },
+  "art_direction": "Active technical workshop: stone slabs, copper infrastructure, jade consoles. Global Bible and institutional Liga palette guide materials; Usina reference informs only infrastructure, not abandoned narrative."
+}

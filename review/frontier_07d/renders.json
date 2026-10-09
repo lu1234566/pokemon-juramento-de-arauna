@@ -1,0 +1,9 @@
+{
+  "maps": 3,
+  "whole_map_pairs": 3,
+  "camera_pairs": 3,
+  "native_rgb555": true,
+  "sprites": false,
+  "emulator_screenshots": false,
+  "whole_maps_original_above_new_below": true
+}
