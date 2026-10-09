@@ -1,0 +1,61 @@
+{
+  "map_pairs": 8,
+  "boards": 3,
+  "decoration_fixtures": {
+    "SecretBase_Tree4": [
+      {
+        "decoration": 1,
+        "x": 9,
+        "y": 5
+      },
+      {
+        "decoration": 10,
+        "x": 8,
+        "y": 5
+      },
+      {
+        "decoration": 19,
+        "x": 12,
+        "y": 4
+      },
+      {
+        "decoration": 48,
+        "x": 11,
+        "y": 5
+      },
+      {
+        "decoration": 66,
+        "x": 5,
+        "y": 8
+      }
+    ],
+    "SecretBase_Shrub4": [
+      {
+        "decoration": 1,
+        "x": 4,
+        "y": 5
+      },
+      {
+        "decoration": 10,
+        "x": 2,
+        "y": 5
+      },
+      {
+        "decoration": 19,
+        "x": 12,
+        "y": 4
+      },
+      {
+        "decoration": 48,
+        "x": 10,
+        "y": 5
+      },
+      {
+        "decoration": 66,
+        "x": 5,
+        "y": 4
+      }
+    ]
+  },
+  "scope": "Native RGB555. Decoration fixtures use production C; they are previews only, never installed into grids or saves. No engine actors/weather or emulator."
+}

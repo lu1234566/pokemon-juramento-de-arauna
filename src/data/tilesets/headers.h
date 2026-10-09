@@ -4369,3 +4369,26 @@ const struct Tileset gTileset_AraunaSecret06C1Yellow =
     .callback = NULL,
 };
 // SECRET_BASES_06C1_END
+
+// SECRET_BASES_06C2_BEGIN
+const struct Tileset gTileset_AraunaSecret06C2Tree =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaSecret06C2Tree,
+    .palettes = gTilesetPalettes_AraunaSecret06C2Tree,
+    .metatiles = gMetatiles_AraunaSecret06C2Tree,
+    .metatileAttributes = gMetatileAttributes_AraunaSecret06C2Tree,
+    .callback = NULL,
+};
+const struct Tileset gTileset_AraunaSecret06C2Shrub =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaSecret06C2Shrub,
+    .palettes = gTilesetPalettes_AraunaSecret06C2Shrub,
+    .metatiles = gMetatiles_AraunaSecret06C2Shrub,
+    .metatileAttributes = gMetatileAttributes_AraunaSecret06C2Shrub,
+    .callback = NULL,
+};
+// SECRET_BASES_06C2_END

@@ -8060,3 +8060,40 @@ const u16 gTilesetPalettes_AraunaSecret06C1Yellow[][16] =
     INCGFX_U16("data/tilesets/secondary/arauna_secret06c1_yellow/palettes/12.pal", ".gbapal"),
 };
 // SECRET_BASES_06C1_END
+
+// SECRET_BASES_06C2_BEGIN
+const u32 gTilesetTiles_AraunaSecret06C2Tree[] = INCGFX_U32("data/tilesets/secondary/arauna_secret06c2_tree/tiles.png", ".4bpp.lz");
+const u16 gTilesetPalettes_AraunaSecret06C2Tree[][16] =
+{
+    INCGFX_U16("data/tilesets/secondary/arauna_secret06c2_tree/palettes/00.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_secret06c2_tree/palettes/01.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_secret06c2_tree/palettes/02.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_secret06c2_tree/palettes/03.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_secret06c2_tree/palettes/04.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_secret06c2_tree/palettes/05.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_secret06c2_tree/palettes/06.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_secret06c2_tree/palettes/07.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_secret06c2_tree/palettes/08.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_secret06c2_tree/palettes/09.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_secret06c2_tree/palettes/10.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_secret06c2_tree/palettes/11.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_secret06c2_tree/palettes/12.pal", ".gbapal"),
+};
+const u32 gTilesetTiles_AraunaSecret06C2Shrub[] = INCGFX_U32("data/tilesets/secondary/arauna_secret06c2_shrub/tiles.png", ".4bpp.lz");
+const u16 gTilesetPalettes_AraunaSecret06C2Shrub[][16] =
+{
+    INCGFX_U16("data/tilesets/secondary/arauna_secret06c2_shrub/palettes/00.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_secret06c2_shrub/palettes/01.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_secret06c2_shrub/palettes/02.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_secret06c2_shrub/palettes/03.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_secret06c2_shrub/palettes/04.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_secret06c2_shrub/palettes/05.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_secret06c2_shrub/palettes/06.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_secret06c2_shrub/palettes/07.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_secret06c2_shrub/palettes/08.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_secret06c2_shrub/palettes/09.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_secret06c2_shrub/palettes/10.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_secret06c2_shrub/palettes/11.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_secret06c2_shrub/palettes/12.pal", ".gbapal"),
+};
+// SECRET_BASES_06C2_END

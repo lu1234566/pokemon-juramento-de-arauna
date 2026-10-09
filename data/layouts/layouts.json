@@ -2007,7 +2007,7 @@
       "width": 11,
       "height": 9,
       "primary_tileset": "gTileset_SecretBase",
-      "secondary_tileset": "gTileset_SecretBaseTree",
+      "secondary_tileset": "gTileset_AraunaSecret06C2Tree",
       "border_filepath": "data/layouts/SecretBase_Tree1/border.bin",
       "blockdata_filepath": "data/layouts/SecretBase_Tree1/map.bin"
     },
@@ -2017,7 +2017,7 @@
       "width": 11,
       "height": 9,
       "primary_tileset": "gTileset_SecretBase",
-      "secondary_tileset": "gTileset_SecretBaseShrub",
+      "secondary_tileset": "gTileset_AraunaSecret06C2Shrub",
       "border_filepath": "data/layouts/SecretBase_Shrub1/border.bin",
       "blockdata_filepath": "data/layouts/SecretBase_Shrub1/map.bin"
     },
@@ -2067,7 +2067,7 @@
       "width": 7,
       "height": 16,
       "primary_tileset": "gTileset_SecretBase",
-      "secondary_tileset": "gTileset_SecretBaseTree",
+      "secondary_tileset": "gTileset_AraunaSecret06C2Tree",
       "border_filepath": "data/layouts/SecretBase_Tree2/border.bin",
       "blockdata_filepath": "data/layouts/SecretBase_Tree2/map.bin"
     },
@@ -2077,7 +2077,7 @@
       "width": 15,
       "height": 7,
       "primary_tileset": "gTileset_SecretBase",
-      "secondary_tileset": "gTileset_SecretBaseShrub",
+      "secondary_tileset": "gTileset_AraunaSecret06C2Shrub",
       "border_filepath": "data/layouts/SecretBase_Shrub2/border.bin",
       "blockdata_filepath": "data/layouts/SecretBase_Shrub2/map.bin"
     },
@@ -2127,7 +2127,7 @@
       "width": 17,
       "height": 8,
       "primary_tileset": "gTileset_SecretBase",
-      "secondary_tileset": "gTileset_SecretBaseTree",
+      "secondary_tileset": "gTileset_AraunaSecret06C2Tree",
       "border_filepath": "data/layouts/SecretBase_Tree3/border.bin",
       "blockdata_filepath": "data/layouts/SecretBase_Tree3/map.bin"
     },
@@ -2137,7 +2137,7 @@
       "width": 13,
       "height": 11,
       "primary_tileset": "gTileset_SecretBase",
-      "secondary_tileset": "gTileset_SecretBaseShrub",
+      "secondary_tileset": "gTileset_AraunaSecret06C2Shrub",
       "border_filepath": "data/layouts/SecretBase_Shrub3/border.bin",
       "blockdata_filepath": "data/layouts/SecretBase_Shrub3/map.bin"
     },
@@ -2187,7 +2187,7 @@
       "width": 14,
       "height": 14,
       "primary_tileset": "gTileset_SecretBase",
-      "secondary_tileset": "gTileset_SecretBaseTree",
+      "secondary_tileset": "gTileset_AraunaSecret06C2Tree",
       "border_filepath": "data/layouts/SecretBase_Tree4/border.bin",
       "blockdata_filepath": "data/layouts/SecretBase_Tree4/map.bin"
     },
@@ -2197,7 +2197,7 @@
       "width": 14,
       "height": 11,
       "primary_tileset": "gTileset_SecretBase",
-      "secondary_tileset": "gTileset_SecretBaseShrub",
+      "secondary_tileset": "gTileset_AraunaSecret06C2Shrub",
       "border_filepath": "data/layouts/SecretBase_Shrub4/border.bin",
       "blockdata_filepath": "data/layouts/SecretBase_Shrub4/map.bin"
     },

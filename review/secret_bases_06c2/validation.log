@@ -1,0 +1,25 @@
+/workspace/scratch/70b5ee7403af/arauna-06c2/tools/arauna_maps/validate_secret_06c2.py:47: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.
+  px=list(im.crop((i%row*8,i//row*8,i%row*8+8,i//row*8+8)).getdata());packed=bytes(px[j]|px[j+1]<<4 for j in range(0,64,2));assert [v for b in packed for v in (b&15,b>>4)]==px
+{
+  "status": "PASS",
+  "base_commit": "6cfba8c79b4bc674d9962063f7fdb2d18a238fa4",
+  "github_base": "872f56e86f09d3dff41a9e6c7a8bc5640386fe86",
+  "forest_maps": 8,
+  "cells": 1044,
+  "changed_visual_cells": 1044,
+  "native_attributes": 648,
+  "native_layer_masks": 1296,
+  "preserved_primary_foreground_entries": 2752,
+  "preserved_palette_files": 24,
+  "preserved_original_graphic_tiles": 166,
+  "layout_count": 754,
+  "appended_layouts": 0,
+  "external_entrances_unchanged": 75,
+  "protected_gameplay_files": 18490,
+  "other_tracked_dependencies": 4430,
+  "previous_cavern_dive_selector_cells": 53167,
+  "rom_build": "pending: ARM compiler unavailable",
+  "emulator": "pending: mGBA unavailable",
+  "previous_cavern_bases_unchanged": 16,
+  "github_removed_tilesets_preserved": 26
+}

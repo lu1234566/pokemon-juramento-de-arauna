@@ -1,0 +1,189 @@
+{
+  "status": "PASS",
+  "base_commit": "6cfba8c79b4bc674d9962063f7fdb2d18a238fa4",
+  "github_base": "872f56e86f09d3dff41a9e6c7a8bc5640386fe86",
+  "maps": {
+    "SecretBase_Tree1": {
+      "cells": 99,
+      "changed_visual_cells": 99,
+      "reachable_cells": 57,
+      "layout": "LAYOUT_SECRET_BASE_TREE1",
+      "theme": "Tree"
+    },
+    "SecretBase_Tree2": {
+      "cells": 112,
+      "changed_visual_cells": 112,
+      "reachable_cells": 49,
+      "layout": "LAYOUT_SECRET_BASE_TREE2",
+      "theme": "Tree"
+    },
+    "SecretBase_Tree3": {
+      "cells": 136,
+      "changed_visual_cells": 136,
+      "reachable_cells": 64,
+      "layout": "LAYOUT_SECRET_BASE_TREE3",
+      "theme": "Tree"
+    },
+    "SecretBase_Tree4": {
+      "cells": 196,
+      "changed_visual_cells": 196,
+      "reachable_cells": 34,
+      "layout": "LAYOUT_SECRET_BASE_TREE4",
+      "theme": "Tree"
+    },
+    "SecretBase_Shrub1": {
+      "cells": 99,
+      "changed_visual_cells": 99,
+      "reachable_cells": 54,
+      "layout": "LAYOUT_SECRET_BASE_SHRUB1",
+      "theme": "Shrub"
+    },
+    "SecretBase_Shrub2": {
+      "cells": 105,
+      "changed_visual_cells": 105,
+      "reachable_cells": 58,
+      "layout": "LAYOUT_SECRET_BASE_SHRUB2",
+      "theme": "Shrub"
+    },
+    "SecretBase_Shrub3": {
+      "cells": 143,
+      "changed_visual_cells": 143,
+      "reachable_cells": 66,
+      "layout": "LAYOUT_SECRET_BASE_SHRUB3",
+      "theme": "Shrub"
+    },
+    "SecretBase_Shrub4": {
+      "cells": 154,
+      "changed_visual_cells": 154,
+      "reachable_cells": 38,
+      "layout": "LAYOUT_SECRET_BASE_SHRUB4",
+      "theme": "Shrub"
+    }
+  },
+  "forest_maps": 8,
+  "cells": 1044,
+  "changed_visual_cells": 1044,
+  "native_attributes": 648,
+  "native_layer_masks": 1296,
+  "preserved_primary_foreground_entries": 2752,
+  "preserved_palette_files": 24,
+  "preserved_original_graphic_tiles": 166,
+  "layout_count": 754,
+  "appended_layouts": 0,
+  "external_entrances_unchanged": 75,
+  "protected_gameplay_files": 18490,
+  "other_tracked_dependencies": 4430,
+  "previous_cavern_dive_selector_cells": 53167,
+  "native_c": {
+    "status": "PASS",
+    "native_catalog_entries": 121,
+    "pc_entry_return_cases": 100,
+    "saved_decoration_slot_cases": 128,
+    "decoration_placement_cases": 250560,
+    "allowed_placement_cases": 25615,
+    "actual_decoration_write_cases": 600,
+    "maps": {
+      "SecretBase_Tree1": {
+        "placement_cases": 23760,
+        "allowed_placement_cases": 3022,
+        "pc": [
+          2,
+          2
+        ],
+        "map_group_number": [
+          25,
+          4
+        ]
+      },
+      "SecretBase_Tree2": {
+        "placement_cases": 26880,
+        "allowed_placement_cases": 2467,
+        "pc": [
+          5,
+          5
+        ],
+        "map_group_number": [
+          25,
+          10
+        ]
+      },
+      "SecretBase_Tree3": {
+        "placement_cases": 32640,
+        "allowed_placement_cases": 3312,
+        "pc": [
+          15,
+          2
+        ],
+        "map_group_number": [
+          25,
+          16
+        ]
+      },
+      "SecretBase_Tree4": {
+        "placement_cases": 47040,
+        "allowed_placement_cases": 4010,
+        "pc": [
+          4,
+          9
+        ],
+        "map_group_number": [
+          25,
+          22
+        ]
+      },
+      "SecretBase_Shrub1": {
+        "placement_cases": 23760,
+        "allowed_placement_cases": 2758,
+        "pc": [
+          3,
+          2
+        ],
+        "map_group_number": [
+          25,
+          5
+        ]
+      },
+      "SecretBase_Shrub2": {
+        "placement_cases": 25200,
+        "allowed_placement_cases": 3170,
+        "pc": [
+          1,
+          1
+        ],
+        "map_group_number": [
+          25,
+          11
+        ]
+      },
+      "SecretBase_Shrub3": {
+        "placement_cases": 34320,
+        "allowed_placement_cases": 3370,
+        "pc": [
+          7,
+          7
+        ],
+        "map_group_number": [
+          25,
+          17
+        ]
+      },
+      "SecretBase_Shrub4": {
+        "placement_cases": 36960,
+        "allowed_placement_cases": 3506,
+        "pc": [
+          9,
+          5
+        ],
+        "map_group_number": [
+          25,
+          23
+        ]
+      }
+    },
+    "scope": "Production C functions and native catalog on host; map grid, variables, save records, objects, fades/tasks and warp callbacks are explicit services. No full ROM interpreter, record mixing link session, sprite engine or emulator."
+  },
+  "rom_build": "pending: ARM compiler unavailable",
+  "emulator": "pending: mGBA unavailable",
+  "previous_cavern_bases_unchanged": 16,
+  "github_removed_tilesets_preserved": 26
+}
