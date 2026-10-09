@@ -1,0 +1,124 @@
+{
+  "base_commit": "9f0a056e90fd42fa426030aca2f2e241401c0700",
+  "total_maps": 47,
+  "completed": 17,
+  "remaining": 30,
+  "checkpoints": [
+    {
+      "id": "07A",
+      "state": "completed",
+      "maps": [
+        "BattleFrontier_BattleTowerLobby",
+        "BattleFrontier_BattleTowerElevator",
+        "BattleFrontier_BattleTowerCorridor",
+        "BattleFrontier_BattleTowerBattleRoom",
+        "BattleFrontier_BattleTowerMultiPartnerRoom",
+        "BattleFrontier_BattleTowerMultiCorridor",
+        "BattleFrontier_BattleTowerMultiBattleRoom"
+      ],
+      "count": 7
+    },
+    {
+      "id": "07B",
+      "state": "completed",
+      "maps": [
+        "BattleFrontier_BattleDomeBattleRoom",
+        "BattleFrontier_BattleDomeCorridor",
+        "BattleFrontier_BattleDomeLobby",
+        "BattleFrontier_BattleDomePreBattleRoom"
+      ],
+      "count": 4
+    },
+    {
+      "id": "07C",
+      "state": "completed",
+      "maps": [
+        "BattleFrontier_BattleArenaBattleRoom",
+        "BattleFrontier_BattleArenaCorridor",
+        "BattleFrontier_BattleArenaLobby",
+        "BattleFrontier_BattlePalaceBattleRoom",
+        "BattleFrontier_BattlePalaceCorridor",
+        "BattleFrontier_BattlePalaceLobby"
+      ],
+      "count": 6
+    },
+    {
+      "id": "07D",
+      "state": "planned",
+      "maps": [
+        "BattleFrontier_BattleFactoryBattleRoom",
+        "BattleFrontier_BattleFactoryLobby",
+        "BattleFrontier_BattleFactoryPreBattleRoom"
+      ],
+      "count": 3
+    },
+    {
+      "id": "07E",
+      "state": "planned",
+      "maps": [
+        "BattleFrontier_BattlePikeCorridor",
+        "BattleFrontier_BattlePikeLobby",
+        "BattleFrontier_BattlePikeRoomFinal",
+        "BattleFrontier_BattlePikeRoomNormal",
+        "BattleFrontier_BattlePikeRoomWildMons",
+        "BattleFrontier_BattlePikeThreePathRoom"
+      ],
+      "count": 6
+    },
+    {
+      "id": "07F",
+      "state": "planned",
+      "maps": [
+        "BattleFrontier_BattlePyramidFloor",
+        "BattleFrontier_BattlePyramidLobby",
+        "BattleFrontier_BattlePyramidTop"
+      ],
+      "count": 3
+    },
+    {
+      "id": "07G",
+      "state": "planned",
+      "maps": [
+        "BattleFrontier_Lounge1",
+        "BattleFrontier_Lounge2",
+        "BattleFrontier_Lounge3",
+        "BattleFrontier_Lounge4",
+        "BattleFrontier_Lounge5",
+        "BattleFrontier_Lounge6",
+        "BattleFrontier_Lounge7",
+        "BattleFrontier_Lounge8",
+        "BattleFrontier_Lounge9",
+        "BattleFrontier_ScottsHouse"
+      ],
+      "count": 10
+    },
+    {
+      "id": "07H",
+      "state": "planned",
+      "maps": [
+        "BattleFrontier_ExchangeServiceCorner",
+        "BattleFrontier_Mart",
+        "BattleFrontier_PokemonCenter_1F",
+        "BattleFrontier_PokemonCenter_2F",
+        "BattleFrontier_RankingHall"
+      ],
+      "count": 5
+    },
+    {
+      "id": "07I",
+      "state": "planned",
+      "maps": [
+        "BattleFrontier_OutsideEast",
+        "BattleFrontier_OutsideWest",
+        "BattleFrontier_ReceptionGate"
+      ],
+      "count": 3
+    }
+  ],
+  "notes": [
+    "Battle Tower shares its battle room layout between normal and Multi: retain sharing.",
+    "Pyramid includes procedural floor generation; validate separately before art.",
+    "Shared services and exteriors may require private layouts; protect saves and engine corrections rather than overwriting them.",
+    "Current checkpoint preserves src/field_door.c and src/overworld.c by exact hashes."
+  ]
+}

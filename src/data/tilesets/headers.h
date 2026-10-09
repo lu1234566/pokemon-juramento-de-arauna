@@ -4438,3 +4438,66 @@ const struct Tileset gTileset_AraunaFrontier07BDomeArt =
     .callback = InitTilesetAnim_BattleDome,
 };
 // FRONTIER_07B_END
+
+// FRONTIER_07C_BEGIN
+const struct Tileset gTileset_AraunaFrontier07CPalaceLobbyBase =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AraunaFrontier07CPalaceLobbyBase,
+    .palettes = gTilesetPalettes_AraunaFrontier07CPalaceLobbyBase,
+    .metatiles = gMetatiles_AraunaFrontier07CPalaceLobbyBase,
+    .metatileAttributes = gMetatileAttributes_AraunaFrontier07CPalaceLobbyBase,
+    .callback = InitTilesetAnim_Building,
+};
+const struct Tileset gTileset_AraunaFrontier07CPalaceLobbyArt =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaFrontier07CPalaceLobbyArt,
+    .palettes = gTilesetPalettes_AraunaFrontier07CPalaceLobbyArt,
+    .metatiles = gMetatiles_AraunaFrontier07CPalaceLobbyArt,
+    .metatileAttributes = gMetatileAttributes_AraunaFrontier07CPalaceLobbyArt,
+    .callback = NULL,
+};
+const struct Tileset gTileset_AraunaFrontier07CPalaceGardenBase =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AraunaFrontier07CPalaceGardenBase,
+    .palettes = gTilesetPalettes_AraunaFrontier07CPalaceGardenBase,
+    .metatiles = gMetatiles_AraunaFrontier07CPalaceGardenBase,
+    .metatileAttributes = gMetatileAttributes_AraunaFrontier07CPalaceGardenBase,
+    .callback = InitTilesetAnim_General,
+};
+const struct Tileset gTileset_AraunaFrontier07CPalaceGardenArt =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaFrontier07CPalaceGardenArt,
+    .palettes = gTilesetPalettes_AraunaFrontier07CPalaceGardenArt,
+    .metatiles = gMetatiles_AraunaFrontier07CPalaceGardenArt,
+    .metatileAttributes = gMetatileAttributes_AraunaFrontier07CPalaceGardenArt,
+    .callback = NULL,
+};
+const struct Tileset gTileset_AraunaFrontier07CArenaBase =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AraunaFrontier07CArenaBase,
+    .palettes = gTilesetPalettes_AraunaFrontier07CArenaBase,
+    .metatiles = gMetatiles_AraunaFrontier07CArenaBase,
+    .metatileAttributes = gMetatileAttributes_AraunaFrontier07CArenaBase,
+    .callback = InitTilesetAnim_Building,
+};
+const struct Tileset gTileset_AraunaFrontier07CArenaArt =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaFrontier07CArenaArt,
+    .palettes = gTilesetPalettes_AraunaFrontier07CArenaArt,
+    .metatiles = gMetatiles_AraunaFrontier07CArenaArt,
+    .metatileAttributes = gMetatileAttributes_AraunaFrontier07CArenaArt,
+    .callback = NULL,
+};
+// FRONTIER_07C_END

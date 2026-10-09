@@ -1,0 +1,15 @@
+{
+  "maps": 6,
+  "camera_pairs": 6,
+  "water_cycles": 8,
+  "flower_sequence": [
+    0,
+    1,
+    0,
+    2
+  ],
+  "native_rgb555": true,
+  "sprites": false,
+  "emulator_screenshots": false,
+  "native_door_footprints": true
+}

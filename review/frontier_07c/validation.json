@@ -1,0 +1,125 @@
+{
+  "status": "PASS",
+  "base_commit": "9f0a056e90fd42fa426030aca2f2e241401c0700",
+  "maps": {
+    "BattleFrontier_BattlePalaceLobby": {
+      "cells": 300,
+      "changed_visual_cells": 296,
+      "objects": 6,
+      "warps": 3,
+      "layout": "LAYOUT_BATTLE_FRONTIER_BATTLE_PALACE_LOBBY"
+    },
+    "BattleFrontier_BattlePalaceCorridor": {
+      "cells": 238,
+      "changed_visual_cells": 172,
+      "objects": 7,
+      "warps": 4,
+      "layout": "LAYOUT_BATTLE_FRONTIER_BATTLE_PALACE_CORRIDOR"
+    },
+    "BattleFrontier_BattlePalaceBattleRoom": {
+      "cells": 150,
+      "changed_visual_cells": 106,
+      "objects": 5,
+      "warps": 2,
+      "layout": "LAYOUT_BATTLE_FRONTIER_BATTLE_PALACE_BATTLE_ROOM"
+    },
+    "BattleFrontier_BattleArenaLobby": {
+      "cells": 208,
+      "changed_visual_cells": 203,
+      "objects": 5,
+      "warps": 1,
+      "layout": "LAYOUT_BATTLE_FRONTIER_BATTLE_ARENA_LOBBY"
+    },
+    "BattleFrontier_BattleArenaCorridor": {
+      "cells": 252,
+      "changed_visual_cells": 186,
+      "objects": 1,
+      "warps": 0,
+      "layout": "LAYOUT_BATTLE_FRONTIER_BATTLE_ARENA_CORRIDOR"
+    },
+    "BattleFrontier_BattleArenaBattleRoom": {
+      "cells": 176,
+      "changed_visual_cells": 176,
+      "objects": 9,
+      "warps": 0,
+      "layout": "LAYOUT_BATTLE_FRONTIER_BATTLE_ARENA_BATTLE_ROOM"
+    }
+  },
+  "native_cells": 1324,
+  "protected_files": 23186,
+  "explicit_engine_protection": {
+    "src/field_door.c": "0aa13791192e52f2e57f1b1b611fdd3b1ea74d44df7fbabc1fd2f875f596df7e",
+    "src/overworld.c": "312489b537e07f068952004c23cc503837d547af610354225d7325315d3e18aa"
+  },
+  "layout_count": 754,
+  "appended_layouts": 0,
+  "native_attributes": 1053,
+  "layer_masks": 2106,
+  "animated_metatile_frame_cases": 72,
+  "previous_frontier_maps": 11,
+  "door_footprint_cells": 12,
+  "production_c_selector_cells": 1324,
+  "production_c_selector_fallbacks": 30720,
+  "previous_cavern_dive_selector_cells": 53167,
+  "native_doors": {
+    "specific_frontier_door_frame_cases": 10,
+    "status": "PASS",
+    "door_router_cases": 1028,
+    "door_frame_cases": 16,
+    "source_functions": [
+      "GetDoorGraphics",
+      "BuildDoorTiles",
+      "DrawCurrentDoorAnimFrame",
+      "DrawClosedDoorTiles",
+      "ShouldUseMultiCorridorDoor",
+      "DrawDoor"
+    ],
+    "scope": "Production C router and drawing/flag logic; explicit host flag/location/draw/VRAM services. Canonical table and palettes retained. Full VRAM animation, tasks and sprites require emulator."
+  },
+  "native_garden_animation": {
+    "status": "PASS",
+    "ticks": 256,
+    "queue_updates": 80,
+    "water_frames": 8,
+    "flower_sequence": [
+      0,
+      1,
+      0,
+      2
+    ],
+    "source_functions": [
+      "InitTilesetAnim_General",
+      "TilesetAnim_General",
+      "QueueAnimTiles_General_Flower",
+      "QueueAnimTiles_General_Water",
+      "QueueAnimTiles_General_SandWaterEdge",
+      "QueueAnimTiles_General_Waterfall",
+      "QueueAnimTiles_General_LandWaterEdge"
+    ],
+    "scope": "Actual production C callback, queue functions and canonical frame tables. Explicit host VRAM-buffer copy; real frame bytes decoded from indexed native PNGs. No GBA display execution."
+  },
+  "previous_dome_animation": {
+    "status": "PASS",
+    "cases": 865,
+    "palette": 8,
+    "frames": 4,
+    "animated_indices": [
+      13,
+      15
+    ],
+    "fade_coefficients": 17,
+    "transition_updates": 32,
+    "source_functions": [
+      "InitTilesetAnim_BattleDome",
+      "TilesetAnim_BattleDome",
+      "TilesetAnim_BattleDome2",
+      "BlendAnimPalette_BattleDome_FloorLights",
+      "BlendAnimPalette_BattleDome_FloorLightsNoBlend",
+      "BlendPalette"
+    ],
+    "scope": "Actual production C callbacks, RGB555 fade and task-state branches. Explicit host task lookup and CPU-copy services; GBA display and battle interpreter require emulator."
+  },
+  "scope": "Production C doors, selectors, General animation queue and previous Dome fade execute on host. Palace autonomy, Arena judging, scripts, saves and progression are byte-preserved; battle/script interpreter and ROM are not executed. Official GitHub 9f integration, including 07B and the 52e Tower door repair, is the frozen baseline.",
+  "rom_build": "pending: ARM compiler unavailable",
+  "emulator": "pending: mGBA unavailable"
+}

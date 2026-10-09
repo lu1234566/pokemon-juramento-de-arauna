@@ -1,0 +1,56 @@
+#!/usr/bin/env python3
+"""Import four bundles into independent receivers and preserve both histories."""
+import argparse,hashlib,json,subprocess,tempfile
+from pathlib import Path
+from frontier_07c_common import BASE,PREVIOUS,GITHUB,OLDER,ROOT
+from package_frontier_07c import BUNDLES
+
+def main():
+    ap=argparse.ArgumentParser();ap.add_argument('package',type=Path);pkg=ap.parse_args().package.resolve();manifest=json.loads((pkg/'manifest.json').read_text());commit=manifest['checkpoint_commits']['07C'];cases=[]
+    def ok(cond,label):assert cond,label;cases.append(label)
+    expected=subprocess.check_output(['git','rev-parse',commit+'^{tree}'],cwd=ROOT,text=True).strip()
+    with tempfile.TemporaryDirectory(prefix='arauna-bundle07c-',dir='/tmp') as tmp:
+        for name,base in BUNDLES:
+            receiver=Path(tmp)/('receiver-'+base[:8]+'.git');subprocess.run(['git','init','--bare','--quiet',str(receiver)],check=True)
+            def git(*args,check=True):return subprocess.run(['git',*args],cwd=receiver,capture_output=True,text=True,check=check)
+            # The workspace is a partial clone: older historical blobs may be
+            # absent. Load the base and only its declared ancestor prerequisites.
+            required=[]
+            with (pkg/name).open('rb') as f:
+                assert f.readline().startswith(b'# v')
+                for line in f:
+                    if line==b'\n':break
+                    if line.startswith(b'-'):required.append(line[1:].split(b' ')[0].decode())
+            for prerequisite in required:
+                assert subprocess.run(['git','merge-base','--is-ancestor',prerequisite,base],cwd=ROOT,capture_output=True).returncode==0
+            git('fetch','--quiet','--depth='+str(1 if base==OLDER else 3 if base==BASE else 2),str(ROOT),base);git('update-ref','refs/heads/base',base)
+            for prerequisite in required:
+                if git('cat-file','-e',prerequisite,check=False).returncode:
+                    git('fetch','--quiet','--depth=1',str(ROOT),prerequisite)
+            ok(True,'Bundle prerequisites are ancestors of the declared base and present in the independent receiver')
+            ok(git('cat-file','-e',commit,check=False).returncode!=0,'Independent '+base[:10]+' receiver starts without 07C')
+            if base!=BASE:ok(git('cat-file','-e',BASE,check=False).returncode!=0,'Receiver starts without reconciled baseline')
+            if base==PREVIOUS:ok(git('cat-file','-e',GITHUB,check=False).returncode!=0,'07B receiver starts without new GitHub Tower door repair')
+            if base==GITHUB:ok(git('cat-file','-e',PREVIOUS,check=False).returncode!=0,'GitHub receiver starts without 07B Dome')
+            if base==OLDER:ok(all(git('cat-file','-e',x,check=False).returncode!=0 for x in (PREVIOUS,GITHUB)),'06C2 receiver starts without both new histories')
+            ok(git('bundle','verify',str(pkg/name)).returncode==0,name+' verifies against its base ancestry')
+            git('fetch','--quiet',str(pkg/name),'HEAD:refs/heads/checkpoint')
+            ok(git('rev-parse','checkpoint').stdout.strip()==commit and git('rev-parse','checkpoint^{tree}').stdout.strip()==expected,'Import reaches exact 07C commit and complete tree')
+            ok(git('rev-parse',commit+'^').stdout.strip()==BASE,'07C retains frozen integrated baseline as parent')
+            ok(all(git('merge-base','--is-ancestor',x,BASE,check=False).returncode==0 for x in (PREVIOUS,GITHUB)),'Official 9f base retains 07B and GitHub Tower repair ancestry')
+            checkout=Path(tmp)/('checkout-'+base[:8]);git('worktree','add','--quiet','--detach',str(checkout),commit)
+            for e in manifest['files']:assert hashlib.sha256((checkout/e['path']).read_bytes()).hexdigest()==e['sha256'],e['path']
+            ok(True,'Actual checkout matches every payload hash including CRLF palettes')
+            contract=json.loads((checkout/manifest['functional_contract']).read_text())
+            for rel,h in contract['protected_hashes'].items():assert hashlib.sha256((checkout/rel).read_bytes()).hexdigest()==h,rel
+            ok(True,'Actual checkout preserves all frozen dependencies and latest engine/door maintenance')
+            if base==BASE:
+                patch=Path(tmp)/'patch';git('worktree','add','--quiet','--detach',str(patch),BASE);subprocess.run(['git','apply',str(pkg/'changes.patch')],cwd=patch,capture_output=True,check=True)
+                for e in manifest['files']:assert hashlib.sha256((patch/e['path']).read_bytes()).hexdigest()==e['sha256'],('patch',e['path'])
+                ok(True,'Actual binary patch reproduces every payload hash on integrated baseline');git('worktree','remove','--force',str(patch))
+            git('worktree','remove','--force',str(checkout))
+            print(json.dumps({'receiver':base[:10],'checks_so_far':len(cases)}),flush=True)
+        report={'status':'PASS','checks':len(cases),'cases':cases,'base_commit':BASE,'previous_checkpoint':PREVIOUS,'github_integrator':GITHUB,'checkpoint_commit':commit,'tree':expected,'payload_files':len(manifest['files']),'scope':'Independent receivers contain the declared base plus its required ancestor commits; seeded without traversing unavailable blobs in the partial workspace clone. Actual verify/fetch, merge parents, tree, checkout hashes and binary patch. No ARM build or emulator.'}
+    (pkg/'CUMULATIVE_TEST.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps({'status':'PASS','checks':len(cases)}))
+
+if __name__=='__main__':main()

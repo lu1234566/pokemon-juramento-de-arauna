@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "github_integrator": "9f0a056e90fd42fa426030aca2f2e241401c0700",
+  "previous_checkpoint": "868226c157fc24b36c24ebfc3ac0c6b83008bae7",
+  "tower_maintenance": "52e6f87e1b9e0b9452de3c40383440622a30f35a",
+  "base_commit": "9f0a056e90fd42fa426030aca2f2e241401c0700",
+  "main": "979fb6c1b6731561f3c993efd6045a9bbf096c54",
+  "main_commits_behind_integrator": 100,
+  "base_delta_from_previous_local_integration": [
+    "docs/INTEGRACAO_07B.md"
+  ],
+  "github_changes_exact": {
+    "data/tilesets/secondary/arauna_frontier07a_tower/metatiles.bin": "56c2d0ae3ed59225c97178717ecf1cbda83e07663bcac3f6a21c30367fc07a32",
+    "data/tilesets/secondary/arauna_frontier07a_tower/tiles.png": "0741fefd61764f81f1003fdc06a08bc12e6d8c8e0d00bd20aba8e12ead8041e2",
+    "docs/INTEGRACAO_07A.md": "b5f79c25151d35711a57e0a697f10376e7d2936021ba9cee5b1e172885d90e6d",
+    "graphics/door_anims/arauna_frontier07a_tower_elevator.png": "9a58e52c1ab1823bac9b3b726e785cc6ee1eb1868d96ff0cd2a836f89cd8ffd4",
+    "graphics/door_anims/arauna_frontier07a_tower_multi_corridor.png": "17dd31986af2dfdef2f855cf7e2aa7520d78b3e2c1d5942d6997126c62598cb4",
+    "src/field_door.c": "0aa13791192e52f2e57f1b1b611fdd3b1ea74d44df7fbabc1fd2f875f596df7e",
+    "tools/arauna_maps/corrige_portas_frontier_07a.py": "4ff66a95494f0cd91e8036ba5845bbb737ce0ea0f2deb32a2ec23fb55b7f9209",
+    "docs/INTEGRACAO_07B.md": "6b463d439f77987cc285698e94ac936630198a9a85433fff37f72c57f863734e"
+  },
+  "native_art_files_exact_after_base_adjustment": 44,
+  "previous_local_reconciliation": {
+    "status": "PASS",
+    "previous_checkpoint": "868226c157fc24b36c24ebfc3ac0c6b83008bae7",
+    "github_integrator": "52e6f87e1b9e0b9452de3c40383440622a30f35a",
+    "merged_base": "8fb7295a1cbac8365bb7da8d2eb86baa617ee2bd",
+    "parents": [
+      "868226c157fc24b36c24ebfc3ac0c6b83008bae7",
+      "52e6f87e1b9e0b9452de3c40383440622a30f35a"
+    ],
+    "main": "979fb6c1b6731561f3c993efd6045a9bbf096c54",
+    "main_commits_behind_integrator": 97,
+    "github_changes_exact": {
+      "data/tilesets/secondary/arauna_frontier07a_tower/metatiles.bin": "56c2d0ae3ed59225c97178717ecf1cbda83e07663bcac3f6a21c30367fc07a32",
+      "data/tilesets/secondary/arauna_frontier07a_tower/tiles.png": "0741fefd61764f81f1003fdc06a08bc12e6d8c8e0d00bd20aba8e12ead8041e2",
+      "docs/INTEGRACAO_07A.md": "b5f79c25151d35711a57e0a697f10376e7d2936021ba9cee5b1e172885d90e6d",
+      "graphics/door_anims/arauna_frontier07a_tower_elevator.png": "9a58e52c1ab1823bac9b3b726e785cc6ee1eb1868d96ff0cd2a836f89cd8ffd4",
+      "graphics/door_anims/arauna_frontier07a_tower_multi_corridor.png": "17dd31986af2dfdef2f855cf7e2aa7520d78b3e2c1d5942d6997126c62598cb4",
+      "src/field_door.c": "0aa13791192e52f2e57f1b1b611fdd3b1ea74d44df7fbabc1fd2f875f596df7e",
+      "tools/arauna_maps/corrige_portas_frontier_07a.py": "4ff66a95494f0cd91e8036ba5845bbb737ce0ea0f2deb32a2ec23fb55b7f9209"
+    },
+    "push": false
+  },
+  "push": false,
+  "native_bank_files_exact_to_previous_verified_package": 96
+}
