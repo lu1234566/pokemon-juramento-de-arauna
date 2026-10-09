@@ -1,0 +1,13 @@
+{
+  "frontier_maps": 3,
+  "whole_map_pairs": 3,
+  "camera_pairs": 3,
+  "generated_floors": 7,
+  "source_modules": 16,
+  "animation_frames": 3,
+  "native_rgb555": true,
+  "sprites": false,
+  "light_simulated": false,
+  "emulator_screenshots": false,
+  "floor_data_from_original_c": true
+}

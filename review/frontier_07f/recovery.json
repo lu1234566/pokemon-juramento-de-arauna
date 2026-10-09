@@ -1,0 +1,14 @@
+{
+  "base_commit": "9a3f9464ea6ba1e30b599c76648e4eb0e1a49405",
+  "origin_author_branch": "9a3f9464ea6ba1e30b599c76648e4eb0e1a49405",
+  "origin_main": "979fb6c1b6731561f3c993efd6045a9bbf096c54",
+  "main_commits_behind_base": 106,
+  "recovered_07e_payload_files_matching_base": 96,
+  "recovered_zip_sha256": "824ac21cd628aed9f2b2e74a6b34b34ea93dae1f5bb2c1211174069aff066013",
+  "base_diff_from_author_07e": [
+    "docs/INTEGRACAO_07E.md"
+  ],
+  "bible": "docs/referencias/bible_concepts_recuperados/Arauna_Master_Map_Design_Bible.pdf",
+  "concept": "docs/referencias/bible_concepts_recuperados/concepts/Arauna_Locais_Narrativos_Dedicados/06_Liga_de_Arauna_Caminho_das_Quatro_Vozes.png",
+  "status": "PASS"
+}

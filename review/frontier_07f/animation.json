@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "ticks": 256,
+  "queue_updates": 64,
+  "torch_frames": 3,
+  "shadow_frames": 3,
+  "reserved_slots": [
+    647,
+    648,
+    649,
+    650,
+    651,
+    652,
+    653,
+    654,
+    663,
+    664,
+    665,
+    666,
+    667,
+    668,
+    669,
+    670
+  ],
+  "source_functions": [
+    "InitTilesetAnim_BattlePyramid",
+    "TilesetAnim_BattlePyramid",
+    "QueueAnimTiles_BattlePyramid_Torch",
+    "QueueAnimTiles_BattlePyramid_StatueShadow"
+  ],
+  "scope": "Original initializer, dispatch and both queues run on host with real 4bpp frames and guarded VRAM service."
+}

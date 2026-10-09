@@ -3596,8 +3596,8 @@
       "name": "BattleFrontier_BattlePyramidLobby_Layout",
       "width": 15,
       "height": 18,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_BattlePyramid",
+      "primary_tileset": "gTileset_AraunaFrontier07FPyramidBase",
+      "secondary_tileset": "gTileset_AraunaFrontier07FPyramidArt",
       "border_filepath": "data/layouts/BattleFrontier_BattlePyramidLobby/border.bin",
       "blockdata_filepath": "data/layouts/BattleFrontier_BattlePyramidLobby/map.bin"
     },
@@ -3606,8 +3606,8 @@
       "name": "BattleFrontier_BattlePyramidFloor_Layout",
       "width": 8,
       "height": 8,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_BattlePyramid",
+      "primary_tileset": "gTileset_AraunaFrontier07FPyramidBase",
+      "secondary_tileset": "gTileset_AraunaFrontier07FPyramidArt",
       "border_filepath": "data/layouts/BattleFrontier_BattlePyramidFloor/border.bin",
       "blockdata_filepath": "data/layouts/BattleFrontier_BattlePyramidFloor/map.bin"
     },
@@ -3776,8 +3776,8 @@
       "name": "BattleFrontier_BattlePyramidTop_Layout",
       "width": 34,
       "height": 23,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_BattlePyramid",
+      "primary_tileset": "gTileset_AraunaFrontier07FPyramidBase",
+      "secondary_tileset": "gTileset_AraunaFrontier07FPyramidArt",
       "border_filepath": "data/layouts/BattleFrontier_BattlePyramidTop/border.bin",
       "blockdata_filepath": "data/layouts/BattleFrontier_BattlePyramidTop/map.bin"
     },
