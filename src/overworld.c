@@ -595,8 +595,35 @@ static void LoadCurrentMapData(void)
     gMapHeader.mapLayout = GetMapLayout();
 }
 
-// A saved layout ID outlives a map-header update. Reload the first-act maps
-// once so their migrated object templates are read from the new headers.
+// Layout IDs saved by older builds, paired with the layout their map header
+// uses now. Pairs are matched together, so a shared old layout only migrates
+// on the maps that moved off it (Birth Island keeps LAYOUT_ISLAND_HARBOR).
+static const u16 sAraunaMigratedLayouts[][2] =
+{
+    {LAYOUT_LITTLEROOT_TOWN, LAYOUT_ARAUNA_LITTLEROOT_TOWN_COMPOSICAO_V1},
+    {LAYOUT_ROUTE101, LAYOUT_ARAUNA_ROUTE101_COMPOSICAO_V1},
+    {LAYOUT_OLDALE_TOWN, LAYOUT_ARAUNA_OLDALE_TOWN_COMPOSICAO_V1},
+    {LAYOUT_ROUTE102, LAYOUT_ARAUNA_ROUTE102_SUL_PAMPA_V1},
+    {LAYOUT_ROUTE103, LAYOUT_ARAUNA_ROUTE103_SUL_PAMPA_V1},
+    {LAYOUT_ARAUNA_ROUTE104_MATA_V1, LAYOUT_ARAUNA_ROUTE104_SUL_PAMPA_V1},
+    {LAYOUT_PETALBURG_CITY, LAYOUT_ARAUNA_PETALBURG_CITY_SUL_PAMPA_V1},
+    {LAYOUT_RUSTBORO_CITY, LAYOUT_ARAUNA_UIVO_RUSTBORO_CITY_V1},
+    {LAYOUT_ARAUNA_ROUTE115_COASTAL_CLIFF_V1, LAYOUT_ARAUNA_UIVO_ROUTE115_V1},
+    {LAYOUT_ARAUNA_ROUTE116_MINING_CORRIDOR_V1, LAYOUT_ARAUNA_UIVO_ROUTE116_V1},
+    {LAYOUT_BATTLE_ELEVATOR, LAYOUT_ARAUNA_TRAINER_HILL_06A_ELEVATOR},
+    {LAYOUT_ISLAND_HARBOR, LAYOUT_ARAUNA_NAVEL_06B_HARBOR},
+    {LAYOUT_NAVEL_ROCK_LADDER_ROOM1, LAYOUT_ARAUNA_NAVEL_06B_SUMMIT_LADDER1},
+    {LAYOUT_NAVEL_ROCK_LADDER_ROOM2, LAYOUT_ARAUNA_NAVEL_06B_SUMMIT_LADDER2},
+    {LAYOUT_NAVEL_ROCK_LADDER_ROOM1, LAYOUT_ARAUNA_NAVEL_06B_DEPTH1_LADDER1},
+    {LAYOUT_NAVEL_ROCK_LADDER_ROOM2, LAYOUT_ARAUNA_NAVEL_06B_DEPTH1_LADDER2},
+    {LAYOUT_NAVEL_ROCK_LADDER_ROOM1, LAYOUT_ARAUNA_NAVEL_06B_DEPTH2_LADDER1},
+    {LAYOUT_NAVEL_ROCK_LADDER_ROOM2, LAYOUT_ARAUNA_NAVEL_06B_DEPTH2_LADDER2},
+    {LAYOUT_NAVEL_ROCK_LADDER_ROOM1, LAYOUT_ARAUNA_NAVEL_06B_ABYSS_LADDER1},
+    {LAYOUT_NAVEL_ROCK_LADDER_ROOM2, LAYOUT_ARAUNA_NAVEL_06B_ABYSS_LADDER2},
+};
+
+// A saved layout ID outlives a map-header update. Reload the migrated maps
+// once so their object templates are read from the new headers.
 // The staging areas of the prologue/rescue retain their old walkability.
 static bool8 AraunaMigrateInitialMapSave(void)
 {
@@ -605,17 +632,14 @@ static bool8 AraunaMigrateInitialMapSave(void)
     u16 newId = gMapHeader.mapLayoutId;
     s32 x, y, bestX = 0, bestY = 0, bestDistance = 0x7FFFFFFF;
     s32 px = gSaveBlock1Ptr->pos.x, py = gSaveBlock1Ptr->pos.y;
+    u32 i;
 
-    if (!((oldId == LAYOUT_LITTLEROOT_TOWN && newId == LAYOUT_ARAUNA_LITTLEROOT_TOWN_COMPOSICAO_V1)
-       || (oldId == LAYOUT_ROUTE101 && newId == LAYOUT_ARAUNA_ROUTE101_COMPOSICAO_V1)
-       || (oldId == LAYOUT_OLDALE_TOWN && newId == LAYOUT_ARAUNA_OLDALE_TOWN_COMPOSICAO_V1)
-       || (oldId == LAYOUT_ROUTE102 && newId == LAYOUT_ARAUNA_ROUTE102_SUL_PAMPA_V1)
-       || (oldId == LAYOUT_ROUTE103 && newId == LAYOUT_ARAUNA_ROUTE103_SUL_PAMPA_V1)
-       || (oldId == LAYOUT_ARAUNA_ROUTE104_MATA_V1 && newId == LAYOUT_ARAUNA_ROUTE104_SUL_PAMPA_V1)
-       || (oldId == LAYOUT_PETALBURG_CITY && newId == LAYOUT_ARAUNA_PETALBURG_CITY_SUL_PAMPA_V1)
-       || (oldId == LAYOUT_RUSTBORO_CITY && newId == LAYOUT_ARAUNA_UIVO_RUSTBORO_CITY_V1)
-       || (oldId == LAYOUT_ARAUNA_ROUTE115_COASTAL_CLIFF_V1 && newId == LAYOUT_ARAUNA_UIVO_ROUTE115_V1)
-       || (oldId == LAYOUT_ARAUNA_ROUTE116_MINING_CORRIDOR_V1 && newId == LAYOUT_ARAUNA_UIVO_ROUTE116_V1)))
+    for (i = 0; i < ARRAY_COUNT(sAraunaMigratedLayouts); i++)
+    {
+        if (oldId == sAraunaMigratedLayouts[i][0] && newId == sAraunaMigratedLayouts[i][1])
+            break;
+    }
+    if (i == ARRAY_COUNT(sAraunaMigratedLayouts))
         return FALSE;
 
     SetCurrentMapLayout(newId);

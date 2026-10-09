@@ -10,6 +10,7 @@
 
 extern const struct Tileset gTileset_AraunaInicioBaseV1;
 extern const struct Tileset gTileset_AraunaBorderOldaleTownBaseUivoV1;
+extern const struct Tileset gTileset_AraunaTrainerHill06APavilionBase;
 
 #define DOOR_SOUND_NORMAL  0
 #define DOOR_SOUND_SLIDING 1
@@ -235,6 +236,19 @@ static const struct DoorGraphics sDoorGraphics_AraunaInicioMadeira =
 {
     0, DOOR_SOUND_NORMAL, 1, sDoorAnimTiles_AraunaInicioMadeira, sDoorAnimPalettes_AraunaInicioMadeira
 };
+// Trainer Hill 06A redraws the wall above both elevator doors; these frames keep
+// that wall while the doors open (tools/arauna_maps/gera_portas_trainer_hill_06a.py).
+static const u8 sDoorAnimTiles_AraunaTrainerHillLobbyElevator[] = INCGFX_U8("graphics/door_anims/arauna_trainer_hill_lobby_elevator.png", ".4bpp");
+static const u8 sDoorAnimTiles_AraunaTrainerHillRoofElevator[] = INCGFX_U8("graphics/door_anims/arauna_trainer_hill_roof_elevator.png", ".4bpp");
+static const u8 sDoorAnimPalettes_AraunaTrainerHillElevator[] = {12, 12, 12, 12, 7, 7, 7, 7};
+static const struct DoorGraphics sDoorGraphics_AraunaTrainerHillLobbyElevator =
+{
+    METATILE_TrainerHill_Door_Elevator_Lobby, DOOR_SOUND_SLIDING, 1, sDoorAnimTiles_AraunaTrainerHillLobbyElevator, sDoorAnimPalettes_AraunaTrainerHillElevator
+};
+static const struct DoorGraphics sDoorGraphics_AraunaTrainerHillRoofElevator =
+{
+    METATILE_TrainerHill_Door_Elevator_Roof, DOOR_SOUND_SLIDING, 1, sDoorAnimTiles_AraunaTrainerHillRoofElevator, sDoorAnimPalettes_AraunaTrainerHillElevator
+};
 static const struct DoorGraphics sDoorAnimGraphicsTable[] =
 {
 // BEGIN ARAUNA_AMANHECER_DOOR_TABLE
@@ -452,6 +466,14 @@ static const struct DoorGraphics *GetDoorGraphics(const struct DoorGraphics *gfx
         && (metatileNum == METATILE_General_Door_PokeCenter
             || metatileNum == METATILE_General_Door_PokeMart))
         return &sDoorGraphics_AraunaInicioMadeira;
+
+    if (gMapHeader.mapLayout->primaryTileset == &gTileset_AraunaTrainerHill06APavilionBase)
+    {
+        if (metatileNum == METATILE_TrainerHill_Door_Elevator_Lobby)
+            return &sDoorGraphics_AraunaTrainerHillLobbyElevator;
+        if (metatileNum == METATILE_TrainerHill_Door_Elevator_Roof)
+            return &sDoorGraphics_AraunaTrainerHillRoofElevator;
+    }
 
     while (gfx->tiles != NULL)
     {
