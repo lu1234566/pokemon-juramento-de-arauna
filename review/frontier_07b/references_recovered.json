@@ -1,0 +1,9 @@
+{
+  "bible": "docs/referencias/bible_concepts_recuperados/Arauna_Master_Map_Design_Bible.pdf",
+  "concept": "docs/referencias/bible_concepts_recuperados/concepts/Arauna_Locais_Narrativos_Dedicados/06_Liga_de_Arauna_Caminho_das_Quatro_Vozes.png",
+  "previous_package": "Arauna_Checkpoint_07A_BattleFrontier_Tower_V1.zip",
+  "previous_zip_sha256": "be01cf85c3d4ae4fd018e28bdd90800636ad6cb680e5173cd7b0d6ae0671534f",
+  "previous_inner_hashes_checked": 106,
+  "previous_commit": "fc408a604b0f2c0b1cc28b3e20a7a9aac6b20596",
+  "design": "Stone, timber and bronze informed by the recovered Liga concept. ARAUNA CIRCUIT follows existing regional script terminology; no new lore or progression."
+}

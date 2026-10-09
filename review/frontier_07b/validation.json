@@ -1,0 +1,94 @@
+{
+  "status": "PASS",
+  "base_commit": "fc408a604b0f2c0b1cc28b3e20a7a9aac6b20596",
+  "maps": {
+    "BattleFrontier_BattleDomeLobby": {
+      "cells": 391,
+      "changed_visual_cells": 387,
+      "objects": 6,
+      "warps": 2,
+      "layout": "LAYOUT_BATTLE_FRONTIER_BATTLE_DOME_LOBBY"
+    },
+    "BattleFrontier_BattleDomeCorridor": {
+      "cells": 336,
+      "changed_visual_cells": 324,
+      "objects": 1,
+      "warps": 2,
+      "layout": "LAYOUT_BATTLE_FRONTIER_BATTLE_DOME_CORRIDOR"
+    },
+    "BattleFrontier_BattleDomePreBattleRoom": {
+      "cells": 72,
+      "changed_visual_cells": 54,
+      "objects": 1,
+      "warps": 2,
+      "layout": "LAYOUT_BATTLE_FRONTIER_BATTLE_DOME_PRE_BATTLE_ROOM"
+    },
+    "BattleFrontier_BattleDomeBattleRoom": {
+      "cells": 200,
+      "changed_visual_cells": 194,
+      "objects": 15,
+      "warps": 0,
+      "layout": "LAYOUT_BATTLE_FRONTIER_BATTLE_DOME_BATTLE_ROOM"
+    }
+  },
+  "native_cells": 999,
+  "protected_files": 23096,
+  "explicit_engine_protection": {
+    "src/field_door.c": "8c44134af9a2b77d2cf03c1cffdf81b6b8015977b1f04d78a8dfb0903758e8da",
+    "src/overworld.c": "312489b537e07f068952004c23cc503837d547af610354225d7325315d3e18aa"
+  },
+  "layout_count": 754,
+  "appended_layouts": 0,
+  "native_attributes": 435,
+  "secondary_layer_masks": 854,
+  "animated_color_masks": 792,
+  "previous_tower_maps": 7,
+  "door_footprint_cells": 10,
+  "animated_palette": 8,
+  "animated_indices": [
+    13,
+    15
+  ],
+  "native_animation": {
+    "status": "PASS",
+    "cases": 865,
+    "palette": 8,
+    "frames": 4,
+    "animated_indices": [
+      13,
+      15
+    ],
+    "fade_coefficients": 17,
+    "transition_updates": 32,
+    "source_functions": [
+      "InitTilesetAnim_BattleDome",
+      "TilesetAnim_BattleDome",
+      "TilesetAnim_BattleDome2",
+      "BlendAnimPalette_BattleDome_FloorLights",
+      "BlendAnimPalette_BattleDome_FloorLightsNoBlend",
+      "BlendPalette"
+    ],
+    "scope": "Actual production C callbacks, RGB555 fade and task-state branches. Explicit host task lookup and CPU-copy services; GBA display and battle interpreter require emulator."
+  },
+  "production_c_selector_cells": 999,
+  "production_c_selector_fallbacks": 20480,
+  "previous_cavern_dive_selector_cells": 53167,
+  "native_doors": {
+    "dome_door_frame_cases": 6,
+    "status": "PASS",
+    "door_router_cases": 1026,
+    "door_frame_cases": 16,
+    "source_functions": [
+      "GetDoorGraphics",
+      "BuildDoorTiles",
+      "DrawCurrentDoorAnimFrame",
+      "DrawClosedDoorTiles",
+      "ShouldUseMultiCorridorDoor",
+      "DrawDoor"
+    ],
+    "scope": "Production C router and drawing/flag logic; explicit host flag/location/draw/VRAM services. Canonical table and palettes retained. Full VRAM animation, tasks and sprites require emulator."
+  },
+  "scope": "Production visual selectors and door functions execute on host. Scripts, battle logic, trainers, saves and Dome tournament code are byte-preserved; script/battle interpreter and link sessions are not executed. All door footprint pixels and source animation palettes remain exact.",
+  "rom_build": "pending: ARM compiler unavailable",
+  "emulator": "pending: mGBA unavailable"
+}

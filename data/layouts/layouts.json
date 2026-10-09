@@ -3316,8 +3316,8 @@
       "name": "BattleFrontier_BattleDomeLobby_Layout",
       "width": 23,
       "height": 17,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_BattleDome",
+      "primary_tileset": "gTileset_AraunaFrontier07BDomeBase",
+      "secondary_tileset": "gTileset_AraunaFrontier07BDomeArt",
       "border_filepath": "data/layouts/BattleFrontier_BattleDomeLobby/border.bin",
       "blockdata_filepath": "data/layouts/BattleFrontier_BattleDomeLobby/map.bin"
     },
@@ -3326,8 +3326,8 @@
       "name": "BattleFrontier_BattleDomeCorridor_Layout",
       "width": 48,
       "height": 7,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_BattleDome",
+      "primary_tileset": "gTileset_AraunaFrontier07BDomeBase",
+      "secondary_tileset": "gTileset_AraunaFrontier07BDomeArt",
       "border_filepath": "data/layouts/BattleFrontier_BattleDomeCorridor/border.bin",
       "blockdata_filepath": "data/layouts/BattleFrontier_BattleDomeCorridor/map.bin"
     },
@@ -3336,8 +3336,8 @@
       "name": "BattleFrontier_BattleDomePreBattleRoom_Layout",
       "width": 9,
       "height": 8,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_BattleDome",
+      "primary_tileset": "gTileset_AraunaFrontier07BDomeBase",
+      "secondary_tileset": "gTileset_AraunaFrontier07BDomeArt",
       "border_filepath": "data/layouts/BattleFrontier_BattleDomePreBattleRoom/border.bin",
       "blockdata_filepath": "data/layouts/BattleFrontier_BattleDomePreBattleRoom/map.bin"
     },
@@ -3346,8 +3346,8 @@
       "name": "BattleFrontier_BattleDomeBattleRoom_Layout",
       "width": 20,
       "height": 10,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_BattleDome",
+      "primary_tileset": "gTileset_AraunaFrontier07BDomeBase",
+      "secondary_tileset": "gTileset_AraunaFrontier07BDomeArt",
       "border_filepath": "data/layouts/BattleFrontier_BattleDomeBattleRoom/border.bin",
       "blockdata_filepath": "data/layouts/BattleFrontier_BattleDomeBattleRoom/map.bin"
     },
