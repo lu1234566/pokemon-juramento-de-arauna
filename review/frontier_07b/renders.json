@@ -1,0 +1,9 @@
+{
+  "maps": 4,
+  "camera_pairs": 4,
+  "palette8_frames": 4,
+  "native_rgb555": true,
+  "sprites": false,
+  "emulator_screenshots": false,
+  "native_door_footprints": true
+}

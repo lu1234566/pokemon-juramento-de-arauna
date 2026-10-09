@@ -1132,3 +1132,10 @@ const u16 gMetatileAttributes_AraunaFrontier07ATowerBase[] = INCBIN_U16("data/ti
 const u16 gMetatiles_AraunaFrontier07ATowerArt[] = INCBIN_U16("data/tilesets/secondary/arauna_frontier07a_tower/metatiles.bin");
 const u16 gMetatileAttributes_AraunaFrontier07ATowerArt[] = INCBIN_U16("data/tilesets/secondary/arauna_frontier07a_tower/metatile_attributes.bin");
 // FRONTIER_07A_END
+
+// FRONTIER_07B_BEGIN
+const u16 gMetatiles_AraunaFrontier07BDomeBase[] = INCBIN_U16("data/tilesets/primary/arauna_frontier07b_dome/metatiles.bin");
+const u16 gMetatileAttributes_AraunaFrontier07BDomeBase[] = INCBIN_U16("data/tilesets/primary/arauna_frontier07b_dome/metatile_attributes.bin");
+const u16 gMetatiles_AraunaFrontier07BDomeArt[] = INCBIN_U16("data/tilesets/secondary/arauna_frontier07b_dome/metatiles.bin");
+const u16 gMetatileAttributes_AraunaFrontier07BDomeArt[] = INCBIN_U16("data/tilesets/secondary/arauna_frontier07b_dome/metatile_attributes.bin");
+// FRONTIER_07B_END
