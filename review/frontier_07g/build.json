@@ -1,0 +1,375 @@
+{
+  "base_commit": "eb49778fa84f058c496fdcdcdacc4888e3602c97",
+  "maps": {
+    "BattleFrontier_Lounge2": {
+      "layout": "LAYOUT_BATTLE_FRONTIER_LOUNGE1",
+      "layout_index": 396,
+      "cells": 104,
+      "bank_kind": "wide"
+    },
+    "BattleFrontier_Lounge5": {
+      "layout": "LAYOUT_BATTLE_FRONTIER_LOUNGE1",
+      "layout_index": 396,
+      "cells": 104,
+      "bank_kind": "wide"
+    },
+    "BattleFrontier_Lounge1": {
+      "layout": "LAYOUT_BATTLE_FRONTIER_LOUNGE2",
+      "layout_index": 428,
+      "cells": 90,
+      "bank_kind": "narrow"
+    },
+    "BattleFrontier_Lounge3": {
+      "layout": "LAYOUT_BATTLE_FRONTIER_LOUNGE2",
+      "layout_index": 428,
+      "cells": 90,
+      "bank_kind": "narrow"
+    },
+    "BattleFrontier_Lounge4": {
+      "layout": "LAYOUT_BATTLE_FRONTIER_LOUNGE2",
+      "layout_index": 428,
+      "cells": 90,
+      "bank_kind": "narrow"
+    },
+    "BattleFrontier_Lounge6": {
+      "layout": "LAYOUT_BATTLE_FRONTIER_LOUNGE2",
+      "layout_index": 428,
+      "cells": 90,
+      "bank_kind": "narrow"
+    },
+    "BattleFrontier_Lounge7": {
+      "layout": "LAYOUT_BATTLE_FRONTIER_LOUNGE2",
+      "layout_index": 428,
+      "cells": 90,
+      "bank_kind": "narrow"
+    },
+    "BattleFrontier_Lounge8": {
+      "layout": "LAYOUT_BATTLE_FRONTIER_LOUNGE2",
+      "layout_index": 428,
+      "cells": 90,
+      "bank_kind": "narrow"
+    },
+    "BattleFrontier_Lounge9": {
+      "layout": "LAYOUT_BATTLE_FRONTIER_LOUNGE2",
+      "layout_index": 428,
+      "cells": 90,
+      "bank_kind": "narrow"
+    },
+    "BattleFrontier_ScottsHouse": {
+      "layout": "LAYOUT_BATTLE_FRONTIER_SCOTTS_HOUSE",
+      "layout_index": 429,
+      "cells": 48,
+      "bank_kind": "house"
+    }
+  },
+  "banks": [
+    {
+      "kind": "wide",
+      "layout": "LAYOUT_BATTLE_FRONTIER_LOUNGE1",
+      "maps": [
+        "BattleFrontier_Lounge2",
+        "BattleFrontier_Lounge5"
+      ],
+      "paths": [
+        "data/tilesets/primary/arauna_frontier07g_wide",
+        "data/tilesets/secondary/arauna_frontier07g_wide"
+      ],
+      "source_paths": [
+        "data/tilesets/primary/building",
+        "data/tilesets/secondary/battle_frontier"
+      ],
+      "symbols": [
+        "AraunaFrontier07GLoungeWideBase",
+        "AraunaFrontier07GLoungeWideArt"
+      ],
+      "callbacks": [
+        "InitTilesetAnim_Building",
+        "NULL"
+      ],
+      "redrawn_ids": [
+        932,
+        933,
+        949,
+        950,
+        957,
+        958,
+        959,
+        965,
+        966,
+        967,
+        968,
+        969,
+        970,
+        974,
+        975,
+        976,
+        977,
+        986,
+        988,
+        989,
+        991,
+        992,
+        996,
+        997,
+        999,
+        1000,
+        1005,
+        1007,
+        1015
+      ],
+      "allocated_tiles": [
+        1,
+        7,
+        8,
+        11,
+        12,
+        13,
+        14,
+        15,
+        17,
+        18,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80
+      ],
+      "free_slots": 569,
+      "material_palette": 12,
+      "all_other_palettes_exact": true,
+      "attributes_and_layer_masks_exact": true
+    },
+    {
+      "kind": "narrow",
+      "layout": "LAYOUT_BATTLE_FRONTIER_LOUNGE2",
+      "maps": [
+        "BattleFrontier_Lounge1",
+        "BattleFrontier_Lounge3",
+        "BattleFrontier_Lounge4",
+        "BattleFrontier_Lounge6",
+        "BattleFrontier_Lounge7",
+        "BattleFrontier_Lounge8",
+        "BattleFrontier_Lounge9"
+      ],
+      "paths": [
+        "data/tilesets/primary/arauna_frontier07g_narrow",
+        "data/tilesets/secondary/arauna_frontier07g_narrow"
+      ],
+      "source_paths": [
+        "data/tilesets/primary/building",
+        "data/tilesets/secondary/battle_frontier"
+      ],
+      "symbols": [
+        "AraunaFrontier07GLoungeNarrowBase",
+        "AraunaFrontier07GLoungeNarrowArt"
+      ],
+      "callbacks": [
+        "InitTilesetAnim_Building",
+        "NULL"
+      ],
+      "redrawn_ids": [
+        909,
+        917,
+        933,
+        940,
+        941,
+        942,
+        957,
+        958,
+        959,
+        966,
+        967,
+        968,
+        969,
+        974,
+        975,
+        977,
+        983,
+        986,
+        989,
+        991,
+        992,
+        997,
+        999,
+        1000,
+        1005,
+        1007,
+        1015
+      ],
+      "allocated_tiles": [
+        1,
+        7,
+        8,
+        11,
+        12,
+        13,
+        14,
+        15,
+        17,
+        18,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80
+      ],
+      "free_slots": 569,
+      "material_palette": 12,
+      "all_other_palettes_exact": true,
+      "attributes_and_layer_masks_exact": true
+    },
+    {
+      "kind": "house",
+      "layout": "LAYOUT_BATTLE_FRONTIER_SCOTTS_HOUSE",
+      "maps": [
+        "BattleFrontier_ScottsHouse"
+      ],
+      "paths": [
+        "data/tilesets/primary/arauna_frontier07g_house",
+        "data/tilesets/secondary/arauna_frontier07g_house"
+      ],
+      "source_paths": [
+        "data/tilesets/primary/building",
+        "data/tilesets/secondary/battle_frontier"
+      ],
+      "symbols": [
+        "AraunaFrontier07GBentoHouseBase",
+        "AraunaFrontier07GBentoHouseArt"
+      ],
+      "callbacks": [
+        "InitTilesetAnim_Building",
+        "NULL"
+      ],
+      "redrawn_ids": [
+        949,
+        950,
+        955,
+        956,
+        963,
+        964,
+        968,
+        969,
+        970,
+        971,
+        976,
+        977,
+        978,
+        988,
+        991,
+        996
+      ],
+      "allocated_tiles": [
+        1,
+        7,
+        8,
+        11,
+        12,
+        13,
+        14,
+        15,
+        17,
+        18,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        57,
+        58,
+        59
+      ],
+      "free_slots": 586,
+      "material_palette": 12,
+      "all_other_palettes_exact": true,
+      "attributes_and_layer_masks_exact": true
+    }
+  ],
+  "unique_layouts": 3,
+  "unique_cells": 242,
+  "native_ids_and_sharing_unchanged": true
+}

@@ -1175,3 +1175,18 @@ const u16 gMetatileAttributes_AraunaFrontier07FPyramidBase[] = INCBIN_U16("data/
 const u16 gMetatiles_AraunaFrontier07FPyramidArt[] = INCBIN_U16("data/tilesets/secondary/arauna_frontier07f_pyramid/metatiles.bin");
 const u16 gMetatileAttributes_AraunaFrontier07FPyramidArt[] = INCBIN_U16("data/tilesets/secondary/arauna_frontier07f_pyramid/metatile_attributes.bin");
 // FRONTIER_07F_END
+
+// FRONTIER_07G_BEGIN
+const u16 gMetatiles_AraunaFrontier07GLoungeWideBase[] = INCBIN_U16("data/tilesets/primary/arauna_frontier07g_wide/metatiles.bin");
+const u16 gMetatileAttributes_AraunaFrontier07GLoungeWideBase[] = INCBIN_U16("data/tilesets/primary/arauna_frontier07g_wide/metatile_attributes.bin");
+const u16 gMetatiles_AraunaFrontier07GLoungeWideArt[] = INCBIN_U16("data/tilesets/secondary/arauna_frontier07g_wide/metatiles.bin");
+const u16 gMetatileAttributes_AraunaFrontier07GLoungeWideArt[] = INCBIN_U16("data/tilesets/secondary/arauna_frontier07g_wide/metatile_attributes.bin");
+const u16 gMetatiles_AraunaFrontier07GLoungeNarrowBase[] = INCBIN_U16("data/tilesets/primary/arauna_frontier07g_narrow/metatiles.bin");
+const u16 gMetatileAttributes_AraunaFrontier07GLoungeNarrowBase[] = INCBIN_U16("data/tilesets/primary/arauna_frontier07g_narrow/metatile_attributes.bin");
+const u16 gMetatiles_AraunaFrontier07GLoungeNarrowArt[] = INCBIN_U16("data/tilesets/secondary/arauna_frontier07g_narrow/metatiles.bin");
+const u16 gMetatileAttributes_AraunaFrontier07GLoungeNarrowArt[] = INCBIN_U16("data/tilesets/secondary/arauna_frontier07g_narrow/metatile_attributes.bin");
+const u16 gMetatiles_AraunaFrontier07GBentoHouseBase[] = INCBIN_U16("data/tilesets/primary/arauna_frontier07g_house/metatiles.bin");
+const u16 gMetatileAttributes_AraunaFrontier07GBentoHouseBase[] = INCBIN_U16("data/tilesets/primary/arauna_frontier07g_house/metatile_attributes.bin");
+const u16 gMetatiles_AraunaFrontier07GBentoHouseArt[] = INCBIN_U16("data/tilesets/secondary/arauna_frontier07g_house/metatiles.bin");
+const u16 gMetatileAttributes_AraunaFrontier07GBentoHouseArt[] = INCBIN_U16("data/tilesets/secondary/arauna_frontier07g_house/metatile_attributes.bin");
+// FRONTIER_07G_END

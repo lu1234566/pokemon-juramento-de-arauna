@@ -4570,3 +4570,66 @@ const struct Tileset gTileset_AraunaFrontier07FPyramidArt =
     .callback = InitTilesetAnim_BattlePyramid,
 };
 // FRONTIER_07F_END
+
+// FRONTIER_07G_BEGIN
+const struct Tileset gTileset_AraunaFrontier07GLoungeWideBase =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AraunaFrontier07GLoungeWideBase,
+    .palettes = gTilesetPalettes_AraunaFrontier07GLoungeWideBase,
+    .metatiles = gMetatiles_AraunaFrontier07GLoungeWideBase,
+    .metatileAttributes = gMetatileAttributes_AraunaFrontier07GLoungeWideBase,
+    .callback = InitTilesetAnim_Building,
+};
+const struct Tileset gTileset_AraunaFrontier07GLoungeWideArt =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaFrontier07GLoungeWideArt,
+    .palettes = gTilesetPalettes_AraunaFrontier07GLoungeWideArt,
+    .metatiles = gMetatiles_AraunaFrontier07GLoungeWideArt,
+    .metatileAttributes = gMetatileAttributes_AraunaFrontier07GLoungeWideArt,
+    .callback = NULL,
+};
+const struct Tileset gTileset_AraunaFrontier07GLoungeNarrowBase =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AraunaFrontier07GLoungeNarrowBase,
+    .palettes = gTilesetPalettes_AraunaFrontier07GLoungeNarrowBase,
+    .metatiles = gMetatiles_AraunaFrontier07GLoungeNarrowBase,
+    .metatileAttributes = gMetatileAttributes_AraunaFrontier07GLoungeNarrowBase,
+    .callback = InitTilesetAnim_Building,
+};
+const struct Tileset gTileset_AraunaFrontier07GLoungeNarrowArt =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaFrontier07GLoungeNarrowArt,
+    .palettes = gTilesetPalettes_AraunaFrontier07GLoungeNarrowArt,
+    .metatiles = gMetatiles_AraunaFrontier07GLoungeNarrowArt,
+    .metatileAttributes = gMetatileAttributes_AraunaFrontier07GLoungeNarrowArt,
+    .callback = NULL,
+};
+const struct Tileset gTileset_AraunaFrontier07GBentoHouseBase =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AraunaFrontier07GBentoHouseBase,
+    .palettes = gTilesetPalettes_AraunaFrontier07GBentoHouseBase,
+    .metatiles = gMetatiles_AraunaFrontier07GBentoHouseBase,
+    .metatileAttributes = gMetatileAttributes_AraunaFrontier07GBentoHouseBase,
+    .callback = InitTilesetAnim_Building,
+};
+const struct Tileset gTileset_AraunaFrontier07GBentoHouseArt =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaFrontier07GBentoHouseArt,
+    .palettes = gTilesetPalettes_AraunaFrontier07GBentoHouseArt,
+    .metatiles = gMetatiles_AraunaFrontier07GBentoHouseArt,
+    .metatileAttributes = gMetatileAttributes_AraunaFrontier07GBentoHouseArt,
+    .callback = NULL,
+};
+// FRONTIER_07G_END

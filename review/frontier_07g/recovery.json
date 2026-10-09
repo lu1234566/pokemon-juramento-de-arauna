@@ -1,0 +1,31 @@
+{
+  "requested_base": "eb49778fa8",
+  "base_commit": "eb49778fa84f058c496fdcdcdacc4888e3602c97",
+  "github_author_branch": "claude/pokemon-juramento-arauna-fhk6ah",
+  "github_author_branch_head": "eb49778fa84f058c496fdcdcdacc4888e3602c97",
+  "github_main": "979fb6c1b6731561f3c993efd6045a9bbf096c54",
+  "main_commits_behind_base": 108,
+  "previous_07f_art_commit": "fd298f4467329eddfa8f65f57f9ee88ab365e3e2",
+  "previous_zip": "Arauna_Checkpoint_07F_BattleFrontier_Pyramid_V1.zip",
+  "previous_zip_bytes": 14183626,
+  "previous_zip_sha256": "03c6eef6b1500794bb451b64f1de2ab583dea192c518e5c6ba9fbac6f4b46f15",
+  "previous_zip_crc": "PASS",
+  "previous_zip_internal_sha256_entries": 96,
+  "previous_manifest_payload_matches_base": 84,
+  "07f_correction_delivered": false,
+  "integration_07f_only_new_file": "docs/INTEGRACAO_07F.md",
+  "integration_07f_records_external_compile_and_three_mgba_photos": true,
+  "07g_compile_or_emulator_claim": false,
+  "references_read_before_art": [
+    "docs/referencias/bible_concepts_recuperados/Arauna_Master_Map_Design_Bible.pdf",
+    "docs/BATTLE_FRONTIER_CHECKPOINT_07F.md",
+    "docs/INTEGRACAO_07F.md",
+    "review/frontier_07f/checkpoint_plan.json"
+  ],
+  "concepts_viewed_before_art": [
+    "03_Centro_Comunitario.png",
+    "07_Sede_da_Liga_Interior.png"
+  ],
+  "original_native_unique_layouts_viewed_before_art": 3,
+  "design_authority": "Bible material/architecture/legibility rules; existing code is functional authority; no dedicated Frontier concept or new canonical room function."
+}

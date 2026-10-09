@@ -1,0 +1,321 @@
+{
+  "status": "PASS",
+  "base_commit": "eb49778fa84f058c496fdcdcdacc4888e3602c97",
+  "maps": {
+    "BattleFrontier_Lounge1": {
+      "role": "Avaliador de IVs",
+      "cells": 90,
+      "changed_visual_cells": 87,
+      "objects": 3,
+      "warps": 1,
+      "layout": "LAYOUT_BATTLE_FRONTIER_LOUNGE2",
+      "scripts_sha256": "343fa1905cb4175737333929a158d8530b8d3ee62f72be8fad3ea5e560b86291"
+    },
+    "BattleFrontier_Lounge2": {
+      "role": "Notícias das sete instalações",
+      "cells": 104,
+      "changed_visual_cells": 101,
+      "objects": 5,
+      "warps": 2,
+      "layout": "LAYOUT_BATTLE_FRONTIER_LOUNGE1",
+      "scripts_sha256": "131e7296693e88fc851036868296a1b54915f0d281cb98e3a01bc7a6a2b2e392"
+    },
+    "BattleFrontier_Lounge3": {
+      "role": "Aposta de Battle Points",
+      "cells": 90,
+      "changed_visual_cells": 87,
+      "objects": 5,
+      "warps": 1,
+      "layout": "LAYOUT_BATTLE_FRONTIER_LOUNGE2",
+      "scripts_sha256": "e819214ba82cca34517f4d7715b8a6fcd7883d9f4b3aa17f8a58349d855e03ac"
+    },
+    "BattleFrontier_Lounge4": {
+      "role": "Conversas de descanso",
+      "cells": 90,
+      "changed_visual_cells": 87,
+      "objects": 3,
+      "warps": 1,
+      "layout": "LAYOUT_BATTLE_FRONTIER_LOUNGE2",
+      "scripts_sha256": "6a4160d42a06427bb88dd3ea18c1f925af1aa6d428b0ed3a9c441d786311ed92"
+    },
+    "BattleFrontier_Lounge5": {
+      "role": "Natureza dos Pokémon",
+      "cells": 104,
+      "changed_visual_cells": 101,
+      "objects": 4,
+      "warps": 2,
+      "layout": "LAYOUT_BATTLE_FRONTIER_LOUNGE1",
+      "scripts_sha256": "f82160124abf4e53a8fd909815d8371d82319cab0e854f8f97edb32cc7e7835a"
+    },
+    "BattleFrontier_Lounge6": {
+      "role": "Troca de Pokémon",
+      "cells": 90,
+      "changed_visual_cells": 87,
+      "objects": 1,
+      "warps": 1,
+      "layout": "LAYOUT_BATTLE_FRONTIER_LOUNGE2",
+      "scripts_sha256": "9a38b7b4436274d092215fbdbd059d2292da1709411bc7e6b479fd8dce3f9a0a"
+    },
+    "BattleFrontier_Lounge7": {
+      "role": "Dois tutores por Battle Points",
+      "cells": 90,
+      "changed_visual_cells": 87,
+      "objects": 4,
+      "warps": 1,
+      "layout": "LAYOUT_BATTLE_FRONTIER_LOUNGE2",
+      "scripts_sha256": "55c034f18ec6094be3b52419685ef3dac956b82108f67007bfa590433de76eb3"
+    },
+    "BattleFrontier_Lounge8": {
+      "role": "Dicas do circuito",
+      "cells": 90,
+      "changed_visual_cells": 87,
+      "objects": 3,
+      "warps": 1,
+      "layout": "LAYOUT_BATTLE_FRONTIER_LOUNGE2",
+      "scripts_sha256": "f21c06709683bcb4abe0f47a2efdb0b38dea605918352d7d1d273b9c6c872007"
+    },
+    "BattleFrontier_Lounge9": {
+      "role": "Aprendiz",
+      "cells": 90,
+      "changed_visual_cells": 87,
+      "objects": 1,
+      "warps": 2,
+      "layout": "LAYOUT_BATTLE_FRONTIER_LOUNGE2",
+      "scripts_sha256": "293ca247543bdda3aafbee5b541019db4fb712a4f6cb6fae4415c249a5f0e33b"
+    },
+    "BattleFrontier_ScottsHouse": {
+      "role": "Bento — recompensas do Frontier",
+      "cells": 48,
+      "changed_visual_cells": 46,
+      "objects": 1,
+      "warps": 2,
+      "layout": "LAYOUT_BATTLE_FRONTIER_SCOTTS_HOUSE",
+      "scripts_sha256": "ffe944e1b1e5e058c34ca5a9008dbf139cefa9a9db698eec203beaca325db183"
+    }
+  },
+  "native_cells": 886,
+  "unique_layouts": 3,
+  "unique_cells": 242,
+  "object_events": 30,
+  "warp_events": 14,
+  "protected_files": 23605,
+  "explicit_engine_protection": {
+    "src/field_door.c": "0aa13791192e52f2e57f1b1b611fdd3b1ea74d44df7fbabc1fd2f875f596df7e",
+    "src/overworld.c": "312489b537e07f068952004c23cc503837d547af610354225d7325315d3e18aa",
+    "src/battle_pyramid.c": "28ad7cc22b83c8169cce4f04017a1f85bade866809bf30785f03e636a41f47c4",
+    "src/battle_pyramid_bag.c": "126e0ee7e8fb6673631ffab875218cc75598e7ae836ead673e202d121f2d51c0",
+    "src/frontier_util.c": "be3ec95f9e438f385256ae8a55f53be70677f28d3fa44272f00f2e927c9b868c",
+    "src/fieldmap.c": "600d3a672e4956d314ff9d0fc2b4afcba5a92425d4651edb8178a052547d9c91",
+    "src/tileset_anims.c": "6a35239142e7e81f44916dd7a5a60800129200922f860eaf1de69725638e02a1",
+    "src/field_specials.c": "d3a3eed4dbac4e3fc0f526b8f194fd79c25ce4487730852e9165e7cf1fe62684",
+    "src/apprentice.c": "53af320fe58bc7a327803a4c35d4d074b86323a8dd51f0e9f38c0acd925c7f2e",
+    "src/trade.c": "a888554a5384ab39523eb80bd3e987ed075530d1a96f97b55ae63b3a457f04ea",
+    "src/record_mixing.c": "04656395af99b72d75ee73f270d022f9949e4c8e55df9acb536e9f3a9759616c",
+    "src/graphics.c": "6d86d296f4d783e8e7d74eefc5f366106fafd8eb7ed70d818dc3d88640a7565c",
+    "include/global.h": "c4e138dafe4c6c7e33504ea35ba1ae852a74fe80279a2a112d8ed8498dbfa438",
+    "graphics/battle_frontier/pyramid_floor.pal": "29bc54e3839783effa3dc981070aabbd54247469678ff7a80b990c39cb7d1b4e",
+    "include/constants/metatile_labels.h": "6f53ac68b105d8d72c7daa3d57c4c669a828f68d3f8d84d1902e9f6309b818f2",
+    "docs/INTEGRACAO_07F.md": "be8a7c766947a04de36ebc830158c4375556bd8ab5f70500dc1035ac9bca0591",
+    "tools/arauna_maps/corrige_agua_palace_07c.py": "57e346059d4efc153abb906fd7bcca9a535754c07a154f861dc324b80fbda503",
+    "data/tilesets/secondary/arauna_frontier07c_palace_garden/metatiles.bin": "181f026417146acf1fd998b0a71858fbe5dce8fdd591ba5392647c76aacb4946"
+  },
+  "layout_count": 754,
+  "changed_layout_bank_references": 3,
+  "appended_layouts": 0,
+  "native_attributes": 1551,
+  "layer_masks": 3102,
+  "animated_layer_masks": 432,
+  "previous_frontier_maps": 29,
+  "previous_frontier_frame_cases": 58,
+  "previous_pyramid_runtime_floor_frame_cases": 14,
+  "palace_corrected_water_edge_frames": 8,
+  "production_c_selector_cells": 886,
+  "production_c_selector_fallbacks": 51200,
+  "previous_cavern_dive_selector_cells": 53167,
+  "native_doors": {
+    "specific_frontier_door_frame_cases": 10,
+    "status": "PASS",
+    "door_router_cases": 1028,
+    "door_frame_cases": 16,
+    "source_functions": [
+      "GetDoorGraphics",
+      "BuildDoorTiles",
+      "DrawCurrentDoorAnimFrame",
+      "DrawClosedDoorTiles",
+      "ShouldUseMultiCorridorDoor",
+      "DrawDoor"
+    ],
+    "scope": "Production C router and drawing/flag logic; explicit host flag/location/draw/VRAM services. Canonical table and palettes retained. Full VRAM animation, tasks and sprites require emulator."
+  },
+  "native_building_animation": {
+    "status": "PASS",
+    "ticks": 256,
+    "queue_updates": 32,
+    "frames": 2,
+    "source_functions": [
+      "InitTilesetAnim_Building",
+      "TilesetAnim_Building",
+      "QueueAnimTiles_Building_TVTurnedOn"
+    ],
+    "scope": "Original production C Building callback and VRAM queue execute on host with explicit buffer services and native 4bpp TV frames. Full GBA rendering requires emulator."
+  },
+  "previous_garden_animation": {
+    "status": "PASS",
+    "ticks": 256,
+    "queue_updates": 80,
+    "water_frames": 8,
+    "flower_sequence": [
+      0,
+      1,
+      0,
+      2
+    ],
+    "source_functions": [
+      "InitTilesetAnim_General",
+      "TilesetAnim_General",
+      "QueueAnimTiles_General_Flower",
+      "QueueAnimTiles_General_Water",
+      "QueueAnimTiles_General_SandWaterEdge",
+      "QueueAnimTiles_General_Waterfall",
+      "QueueAnimTiles_General_LandWaterEdge"
+    ],
+    "scope": "Actual production C callback, queue functions and canonical frame tables. Explicit host VRAM-buffer copy; real frame bytes decoded from indexed native PNGs. No GBA display execution."
+  },
+  "previous_dome_animation": {
+    "status": "PASS",
+    "cases": 865,
+    "palette": 8,
+    "frames": 4,
+    "animated_indices": [
+      13,
+      15
+    ],
+    "fade_coefficients": 17,
+    "transition_updates": 32,
+    "source_functions": [
+      "InitTilesetAnim_BattleDome",
+      "TilesetAnim_BattleDome",
+      "TilesetAnim_BattleDome2",
+      "BlendAnimPalette_BattleDome_FloorLights",
+      "BlendAnimPalette_BattleDome_FloorLightsNoBlend",
+      "BlendPalette"
+    ],
+    "scope": "Actual production C callbacks, RGB555 fade and task-state branches. Explicit host task lookup and CPU-copy services; GBA display and battle interpreter require emulator."
+  },
+  "previous_pike_curtain": {
+    "status": "PASS",
+    "ticks_and_positions": 80,
+    "positions": 5,
+    "duration_ticks": 12,
+    "frame_ticks": [
+      4,
+      8,
+      12
+    ],
+    "metatile_ids": [
+      513,
+      514,
+      515,
+      521,
+      522,
+      523,
+      529,
+      530,
+      531,
+      537,
+      538,
+      539,
+      545,
+      546,
+      547,
+      553,
+      554,
+      555,
+      561,
+      562,
+      563,
+      569,
+      570,
+      571,
+      577,
+      578,
+      579,
+      585,
+      586,
+      587,
+      593,
+      594,
+      595,
+      601,
+      602,
+      603
+    ],
+    "writes_per_transition": 36,
+    "redraws_per_transition": 3,
+    "script_resumes_per_transition": 1,
+    "source_functions": [
+      "CloseBattlePikeCurtain",
+      "Task_CloseBattlePikeCurtain"
+    ],
+    "scope": "Original production C initialization and task run on host with explicit task, map-grid, redraw and script-resume services. Actual 3x4 frame IDs, timing and map-offset footprint checked; no script interpreter or GBA gameplay."
+  },
+  "pyramid_generator": {
+    "status": "PASS",
+    "generator_cases": 1848,
+    "generated_cells": 1892352,
+    "untouched_padding_cells": 2103024,
+    "placed_objects": 15174,
+    "source_modules": 16,
+    "floor_templates": 16,
+    "palette_task_cases": 14,
+    "source_functions": [
+      "GetPyramidFloorTemplateId",
+      "GetPyramidFloorLayoutOffsets",
+      "GetPyramidEntranceAndExitSquareIds",
+      "GenerateBattlePyramidFloorLayout",
+      "TrySetPyramidObjectEventPositionAtCoords",
+      "TrySetPyramidObjectEventPositionInSquare",
+      "SetPyramidObjectPositionsUniformly",
+      "SetPyramidObjectPositionsInAndNearSquare",
+      "SetPyramidObjectPositionsNearSquare",
+      "LoadBattlePyramidObjectEventTemplates",
+      "Task_SetPyramidFloorPalette"
+    ],
+    "scope": "Original production C selectors, 32x32 assembly, entrance/exit handling, both player-position modes, all placement strategies and palette task execute against real module grids/events. Map lookup, allocation, load-script callback and trainer ID/graphics services are explicit host fixtures. Trainer roster RNG, script interpreter, light scanline hardware, battles, bag, saves and progression are preserved by hash, not played."
+  },
+  "pyramid_animation": {
+    "status": "PASS",
+    "ticks": 256,
+    "queue_updates": 64,
+    "torch_frames": 3,
+    "shadow_frames": 3,
+    "reserved_slots": [
+      647,
+      648,
+      649,
+      650,
+      651,
+      652,
+      653,
+      654,
+      663,
+      664,
+      665,
+      666,
+      667,
+      668,
+      669,
+      670
+    ],
+    "source_functions": [
+      "InitTilesetAnim_BattlePyramid",
+      "TilesetAnim_BattlePyramid",
+      "QueueAnimTiles_BattlePyramid_Torch",
+      "QueueAnimTiles_BattlePyramid_StatueShadow"
+    ],
+    "scope": "Original initializer, dispatch and both queues run on host with real 4bpp frames and guarded VRAM service."
+  },
+  "scope": "Native renders and selected original C execute on host with explicit fixtures; all service scripts and engine logic remain byte-preserved. No GBA ROM or emulator execution.",
+  "rom_build": "pending: ARM compiler unavailable",
+  "emulator": "pending: mGBA unavailable"
+}

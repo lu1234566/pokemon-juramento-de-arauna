@@ -3966,8 +3966,8 @@
       "name": "BattleFrontier_Lounge1_Layout",
       "width": 13,
       "height": 8,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_BattleFrontier",
+      "primary_tileset": "gTileset_AraunaFrontier07GLoungeWideBase",
+      "secondary_tileset": "gTileset_AraunaFrontier07GLoungeWideArt",
       "border_filepath": "data/layouts/BattleFrontier_Lounge1/border.bin",
       "blockdata_filepath": "data/layouts/BattleFrontier_Lounge1/map.bin"
     },
@@ -4286,8 +4286,8 @@
       "name": "BattleFrontier_Lounge2_Layout",
       "width": 9,
       "height": 10,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_BattleFrontier",
+      "primary_tileset": "gTileset_AraunaFrontier07GLoungeNarrowBase",
+      "secondary_tileset": "gTileset_AraunaFrontier07GLoungeNarrowArt",
       "border_filepath": "data/layouts/BattleFrontier_Lounge2/border.bin",
       "blockdata_filepath": "data/layouts/BattleFrontier_Lounge2/map.bin"
     },
@@ -4296,8 +4296,8 @@
       "name": "BattleFrontier_ScottsHouse_Layout",
       "width": 6,
       "height": 8,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_BattleFrontier",
+      "primary_tileset": "gTileset_AraunaFrontier07GBentoHouseBase",
+      "secondary_tileset": "gTileset_AraunaFrontier07GBentoHouseArt",
       "border_filepath": "data/layouts/BattleFrontier_ScottsHouse/border.bin",
       "blockdata_filepath": "data/layouts/BattleFrontier_ScottsHouse/map.bin"
     },

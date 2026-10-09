@@ -1,0 +1,12 @@
+{
+  "frontier_maps": 10,
+  "unique_layouts": 3,
+  "whole_map_pairs": 10,
+  "camera_pairs": 10,
+  "displayed_unique_camera_pairs": 3,
+  "tv_frames": 3,
+  "native_rgb555": true,
+  "sprites": false,
+  "emulator_screenshots": false,
+  "camera_padding": "Centered 240×160 field, not engine viewport."
+}
