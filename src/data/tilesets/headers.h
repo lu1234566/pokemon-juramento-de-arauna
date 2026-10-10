@@ -4716,3 +4716,66 @@ const struct Tileset gTileset_AraunaFrontier07HRecordsArt =
     .callback = NULL,
 };
 // FRONTIER_07H_END
+
+// FRONTIER_07I_BEGIN
+const struct Tileset gTileset_AraunaFrontier07IEastBase =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AraunaFrontier07IEastBase,
+    .palettes = gTilesetPalettes_AraunaFrontier07IEastBase,
+    .metatiles = gMetatiles_AraunaFrontier07IEastBase,
+    .metatileAttributes = gMetatileAttributes_AraunaFrontier07IEastBase,
+    .callback = InitTilesetAnim_General,
+};
+const struct Tileset gTileset_AraunaFrontier07IEastArt =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaFrontier07IEastArt,
+    .palettes = gTilesetPalettes_AraunaFrontier07IEastArt,
+    .metatiles = gMetatiles_AraunaFrontier07IEastArt,
+    .metatileAttributes = gMetatileAttributes_AraunaFrontier07IEastArt,
+    .callback = InitTilesetAnim_BattleFrontierOutsideEast,
+};
+const struct Tileset gTileset_AraunaFrontier07IWestBase =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AraunaFrontier07IWestBase,
+    .palettes = gTilesetPalettes_AraunaFrontier07IWestBase,
+    .metatiles = gMetatiles_AraunaFrontier07IWestBase,
+    .metatileAttributes = gMetatileAttributes_AraunaFrontier07IWestBase,
+    .callback = InitTilesetAnim_General,
+};
+const struct Tileset gTileset_AraunaFrontier07IWestArt =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaFrontier07IWestArt,
+    .palettes = gTilesetPalettes_AraunaFrontier07IWestArt,
+    .metatiles = gMetatiles_AraunaFrontier07IWestArt,
+    .metatileAttributes = gMetatileAttributes_AraunaFrontier07IWestArt,
+    .callback = InitTilesetAnim_BattleFrontierOutsideWest,
+};
+const struct Tileset gTileset_AraunaFrontier07IGateBase =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AraunaFrontier07IGateBase,
+    .palettes = gTilesetPalettes_AraunaFrontier07IGateBase,
+    .metatiles = gMetatiles_AraunaFrontier07IGateBase,
+    .metatileAttributes = gMetatileAttributes_AraunaFrontier07IGateBase,
+    .callback = InitTilesetAnim_General,
+};
+const struct Tileset gTileset_AraunaFrontier07IGateArt =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaFrontier07IGateArt,
+    .palettes = gTilesetPalettes_AraunaFrontier07IGateArt,
+    .metatiles = gMetatiles_AraunaFrontier07IGateArt,
+    .metatileAttributes = gMetatileAttributes_AraunaFrontier07IGateArt,
+    .callback = NULL,
+};
+// FRONTIER_07I_END

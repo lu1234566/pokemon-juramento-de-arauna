@@ -1,0 +1,11 @@
+{
+  "whole_map_pairs": 3,
+  "landmark_camera_pairs": 9,
+  "animated_doors": 16,
+  "closed_and_three_open_frames": 64,
+  "flag_frames_per_side": 4,
+  "native_rgb555": true,
+  "sprites": false,
+  "emulator_screenshots": false,
+  "door_task_playback": false
+}

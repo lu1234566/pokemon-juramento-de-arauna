@@ -2646,8 +2646,8 @@
       "name": "BattleFrontier_OutsideWest_Layout",
       "width": 56,
       "height": 72,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_BattleFrontierOutsideWest",
+      "primary_tileset": "gTileset_AraunaFrontier07IWestBase",
+      "secondary_tileset": "gTileset_AraunaFrontier07IWestArt",
       "border_filepath": "data/layouts/BattleFrontier_OutsideWest/border.bin",
       "blockdata_filepath": "data/layouts/BattleFrontier_OutsideWest/map.bin"
     },
@@ -3446,8 +3446,8 @@
       "name": "BattleFrontier_OutsideEast_Layout",
       "width": 72,
       "height": 72,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "primary_tileset": "gTileset_AraunaFrontier07IEastBase",
+      "secondary_tileset": "gTileset_AraunaFrontier07IEastArt",
       "border_filepath": "data/layouts/BattleFrontier_OutsideEast/border.bin",
       "blockdata_filepath": "data/layouts/BattleFrontier_OutsideEast/map.bin"
     },
@@ -3986,8 +3986,8 @@
       "name": "BattleFrontier_ReceptionGate_Layout",
       "width": 9,
       "height": 14,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_BattleFrontier",
+      "primary_tileset": "gTileset_AraunaFrontier07IGateBase",
+      "secondary_tileset": "gTileset_AraunaFrontier07IGateArt",
       "border_filepath": "data/layouts/BattleFrontier_ReceptionGate/border.bin",
       "blockdata_filepath": "data/layouts/BattleFrontier_ReceptionGate/map.bin"
     },

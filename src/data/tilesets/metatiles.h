@@ -1209,3 +1209,18 @@ const u16 gMetatileAttributes_AraunaFrontier07HRecordsBase[] = INCBIN_U16("data/
 const u16 gMetatiles_AraunaFrontier07HRecordsArt[] = INCBIN_U16("data/tilesets/secondary/arauna_frontier07h_records/metatiles.bin");
 const u16 gMetatileAttributes_AraunaFrontier07HRecordsArt[] = INCBIN_U16("data/tilesets/secondary/arauna_frontier07h_records/metatile_attributes.bin");
 // FRONTIER_07H_END
+
+// FRONTIER_07I_BEGIN
+const u16 gMetatiles_AraunaFrontier07IEastBase[] = INCBIN_U16("data/tilesets/primary/arauna_frontier07i_east/metatiles.bin");
+const u16 gMetatileAttributes_AraunaFrontier07IEastBase[] = INCBIN_U16("data/tilesets/primary/arauna_frontier07i_east/metatile_attributes.bin");
+const u16 gMetatiles_AraunaFrontier07IEastArt[] = INCBIN_U16("data/tilesets/secondary/arauna_frontier07i_east/metatiles.bin");
+const u16 gMetatileAttributes_AraunaFrontier07IEastArt[] = INCBIN_U16("data/tilesets/secondary/arauna_frontier07i_east/metatile_attributes.bin");
+const u16 gMetatiles_AraunaFrontier07IWestBase[] = INCBIN_U16("data/tilesets/primary/arauna_frontier07i_west/metatiles.bin");
+const u16 gMetatileAttributes_AraunaFrontier07IWestBase[] = INCBIN_U16("data/tilesets/primary/arauna_frontier07i_west/metatile_attributes.bin");
+const u16 gMetatiles_AraunaFrontier07IWestArt[] = INCBIN_U16("data/tilesets/secondary/arauna_frontier07i_west/metatiles.bin");
+const u16 gMetatileAttributes_AraunaFrontier07IWestArt[] = INCBIN_U16("data/tilesets/secondary/arauna_frontier07i_west/metatile_attributes.bin");
+const u16 gMetatiles_AraunaFrontier07IGateBase[] = INCBIN_U16("data/tilesets/primary/arauna_frontier07i_gate/metatiles.bin");
+const u16 gMetatileAttributes_AraunaFrontier07IGateBase[] = INCBIN_U16("data/tilesets/primary/arauna_frontier07i_gate/metatile_attributes.bin");
+const u16 gMetatiles_AraunaFrontier07IGateArt[] = INCBIN_U16("data/tilesets/secondary/arauna_frontier07i_gate/metatiles.bin");
+const u16 gMetatileAttributes_AraunaFrontier07IGateArt[] = INCBIN_U16("data/tilesets/secondary/arauna_frontier07i_gate/metatile_attributes.bin");
+// FRONTIER_07I_END
