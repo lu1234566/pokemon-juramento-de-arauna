@@ -68,6 +68,7 @@
 #include "constants/field_effects.h"
 #include "constants/item_effects.h"
 #include "constants/items.h"
+#include "constants/map_types.h"
 #include "constants/moves.h"
 #include "constants/party_menu.h"
 #include "constants/rgb.h"
@@ -2604,9 +2605,44 @@ static void SetPartyMonSelectionActions(struct Pokemon *mons, u8 slotId, u8 acti
     }
 }
 
+// Arauna: whether a badge-granted HM would work where the player stands. The
+// set-up functions only look around the player, but they leave behind the
+// callbacks and script vars for the move they expect to run, so those are put
+// back. Dive's real check runs the map's dive-warp script, so for Dive the
+// tile is read instead.
+static bool8 AraunaCanUseFieldMoveHere(u8 fieldMove)
+{
+    bool8 (*fieldCallback2)(void) = gFieldCallback2;
+    MainCallback postMenuCallback = gPostMenuFieldCallback;
+    struct MapPosition facing = gPlayerFacingPosition;
+    u16 result = gSpecialVar_Result;
+    u16 lastTalked = gSpecialVar_LastTalked;
+    bool8 usable;
+
+    if (fieldMove == FIELD_MOVE_DIVE)
+    {
+        s16 x, y;
+        u8 behavior;
+
+        PlayerGetDestCoords(&x, &y);
+        behavior = MapGridGetMetatileBehaviorAt(x, y);
+        if (gMapHeader.mapType == MAP_TYPE_UNDERWATER)
+            return !MetatileBehavior_IsUnableToEmerge(behavior);
+        return MetatileBehavior_IsDiveable(behavior);
+    }
+
+    usable = sFieldMoveCursorCallbacks[fieldMove].fieldMoveFunc();
+    gFieldCallback2 = fieldCallback2;
+    gPostMenuFieldCallback = postMenuCallback;
+    gPlayerFacingPosition = facing;
+    gSpecialVar_Result = result;
+    gSpecialVar_LastTalked = lastTalked;
+    return usable;
+}
+
 static void SetPartyMonFieldSelectionActions(struct Pokemon *mons, u8 slotId)
 {
-    u8 i, j;
+    u8 i, j, trailing;
 
     sPartyMenuInternal->numActions = 0;
     AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_SUMMARY);
@@ -2630,13 +2666,32 @@ static void SetPartyMonFieldSelectionActions(struct Pokemon *mons, u8 slotId)
     // so this only removes the "must know the move" half of the requirement.
     // The moves past WATERFALL are left alone: Dig, Teleport and the rest are
     // things a Pokemon genuinely does, not tolls on the road.
-    for (j = 0; j <= FIELD_MOVE_WATERFALL; j++)
+    //
+    // A move the Pokemon does not know is offered only where it works. Offering
+    // all eight overflowed the eight-slot action list from the fifth badge on
+    // (sixth with a single Pokemon) and drew the window past the top of the
+    // screen. The prompts in the world
+    // (tree, rock, boulder, water, waterfall, dive spot) work without the move,
+    // so the menu only has to cover what has no prompt: Fly, Flash, Cut on
+    // grass and the Braille puzzles. The list still leaves room for the
+    // entries that follow it.
+    trailing = 1;
+    if (!InBattlePike())
+        trailing += 1 + (GetMonData(&mons[1], MON_DATA_SPECIES) != SPECIES_NONE);
+    if (!MenuHelpers_IsLinkActive() && !InUnionRoom())
     {
-        if (!FlagGet(FLAG_BADGE01_GET + j))
-            continue;
-        if (MonKnowsMove(&mons[slotId], sFieldMoves[j]))
-            continue;       // ja foi acrescentado acima
-        AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, j + MENU_FIELD_MOVES);
+        for (j = 0; j <= FIELD_MOVE_WATERFALL; j++)
+        {
+            if (sPartyMenuInternal->numActions + trailing >= ARRAY_COUNT(sPartyMenuInternal->actions))
+                break;
+            if (!FlagGet(FLAG_BADGE01_GET + j))
+                continue;
+            if (MonKnowsMove(&mons[slotId], sFieldMoves[j]))
+                continue;       // ja foi acrescentado acima
+            if (!AraunaCanUseFieldMoveHere(j))
+                continue;
+            AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, j + MENU_FIELD_MOVES);
+        }
     }
 
     if (!InBattlePike())
