@@ -1,0 +1,8 @@
+{
+  "whole_map_pairs": 5,
+  "camera_pairs": 5,
+  "cable_script_states": 2,
+  "native_rgb555": true,
+  "sprites": false,
+  "emulator_screenshots": false
+}

@@ -1190,3 +1190,22 @@ const u16 gMetatileAttributes_AraunaFrontier07GBentoHouseBase[] = INCBIN_U16("da
 const u16 gMetatiles_AraunaFrontier07GBentoHouseArt[] = INCBIN_U16("data/tilesets/secondary/arauna_frontier07g_house/metatiles.bin");
 const u16 gMetatileAttributes_AraunaFrontier07GBentoHouseArt[] = INCBIN_U16("data/tilesets/secondary/arauna_frontier07g_house/metatile_attributes.bin");
 // FRONTIER_07G_END
+
+// FRONTIER_07H_BEGIN
+const u16 gMetatiles_AraunaFrontier07HExchangeBase[] = INCBIN_U16("data/tilesets/primary/arauna_frontier07h_exchange/metatiles.bin");
+const u16 gMetatileAttributes_AraunaFrontier07HExchangeBase[] = INCBIN_U16("data/tilesets/primary/arauna_frontier07h_exchange/metatile_attributes.bin");
+const u16 gMetatiles_AraunaFrontier07HExchangeArt[] = INCBIN_U16("data/tilesets/secondary/arauna_frontier07h_exchange/metatiles.bin");
+const u16 gMetatileAttributes_AraunaFrontier07HExchangeArt[] = INCBIN_U16("data/tilesets/secondary/arauna_frontier07h_exchange/metatile_attributes.bin");
+const u16 gMetatiles_AraunaFrontier07HMarketBase[] = INCBIN_U16("data/tilesets/primary/arauna_frontier07h_market/metatiles.bin");
+const u16 gMetatileAttributes_AraunaFrontier07HMarketBase[] = INCBIN_U16("data/tilesets/primary/arauna_frontier07h_market/metatile_attributes.bin");
+const u16 gMetatiles_AraunaFrontier07HMarketArt[] = INCBIN_U16("data/tilesets/secondary/arauna_frontier07h_market/metatiles.bin");
+const u16 gMetatileAttributes_AraunaFrontier07HMarketArt[] = INCBIN_U16("data/tilesets/secondary/arauna_frontier07h_market/metatile_attributes.bin");
+const u16 gMetatiles_AraunaFrontier07HClinicBase[] = INCBIN_U16("data/tilesets/primary/arauna_frontier07h_clinic/metatiles.bin");
+const u16 gMetatileAttributes_AraunaFrontier07HClinicBase[] = INCBIN_U16("data/tilesets/primary/arauna_frontier07h_clinic/metatile_attributes.bin");
+const u16 gMetatiles_AraunaFrontier07HClinicArt[] = INCBIN_U16("data/tilesets/secondary/arauna_frontier07h_clinic/metatiles.bin");
+const u16 gMetatileAttributes_AraunaFrontier07HClinicArt[] = INCBIN_U16("data/tilesets/secondary/arauna_frontier07h_clinic/metatile_attributes.bin");
+const u16 gMetatiles_AraunaFrontier07HRecordsBase[] = INCBIN_U16("data/tilesets/primary/arauna_frontier07h_records/metatiles.bin");
+const u16 gMetatileAttributes_AraunaFrontier07HRecordsBase[] = INCBIN_U16("data/tilesets/primary/arauna_frontier07h_records/metatile_attributes.bin");
+const u16 gMetatiles_AraunaFrontier07HRecordsArt[] = INCBIN_U16("data/tilesets/secondary/arauna_frontier07h_records/metatiles.bin");
+const u16 gMetatileAttributes_AraunaFrontier07HRecordsArt[] = INCBIN_U16("data/tilesets/secondary/arauna_frontier07h_records/metatile_attributes.bin");
+// FRONTIER_07H_END

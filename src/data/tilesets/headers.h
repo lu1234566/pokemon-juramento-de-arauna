@@ -4633,3 +4633,86 @@ const struct Tileset gTileset_AraunaFrontier07GBentoHouseArt =
     .callback = NULL,
 };
 // FRONTIER_07G_END
+
+// FRONTIER_07H_BEGIN
+const struct Tileset gTileset_AraunaFrontier07HExchangeBase =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AraunaFrontier07HExchangeBase,
+    .palettes = gTilesetPalettes_AraunaFrontier07HExchangeBase,
+    .metatiles = gMetatiles_AraunaFrontier07HExchangeBase,
+    .metatileAttributes = gMetatileAttributes_AraunaFrontier07HExchangeBase,
+    .callback = InitTilesetAnim_Building,
+};
+const struct Tileset gTileset_AraunaFrontier07HExchangeArt =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaFrontier07HExchangeArt,
+    .palettes = gTilesetPalettes_AraunaFrontier07HExchangeArt,
+    .metatiles = gMetatiles_AraunaFrontier07HExchangeArt,
+    .metatileAttributes = gMetatileAttributes_AraunaFrontier07HExchangeArt,
+    .callback = NULL,
+};
+const struct Tileset gTileset_AraunaFrontier07HMarketBase =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AraunaFrontier07HMarketBase,
+    .palettes = gTilesetPalettes_AraunaFrontier07HMarketBase,
+    .metatiles = gMetatiles_AraunaFrontier07HMarketBase,
+    .metatileAttributes = gMetatileAttributes_AraunaFrontier07HMarketBase,
+    .callback = InitTilesetAnim_Building,
+};
+const struct Tileset gTileset_AraunaFrontier07HMarketArt =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaFrontier07HMarketArt,
+    .palettes = gTilesetPalettes_AraunaFrontier07HMarketArt,
+    .metatiles = gMetatiles_AraunaFrontier07HMarketArt,
+    .metatileAttributes = gMetatileAttributes_AraunaFrontier07HMarketArt,
+    .callback = NULL,
+};
+const struct Tileset gTileset_AraunaFrontier07HClinicBase =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AraunaFrontier07HClinicBase,
+    .palettes = gTilesetPalettes_AraunaFrontier07HClinicBase,
+    .metatiles = gMetatiles_AraunaFrontier07HClinicBase,
+    .metatileAttributes = gMetatileAttributes_AraunaFrontier07HClinicBase,
+    .callback = InitTilesetAnim_Building,
+};
+const struct Tileset gTileset_AraunaFrontier07HClinicArt =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaFrontier07HClinicArt,
+    .palettes = gTilesetPalettes_AraunaFrontier07HClinicArt,
+    .metatiles = gMetatiles_AraunaFrontier07HClinicArt,
+    .metatileAttributes = gMetatileAttributes_AraunaFrontier07HClinicArt,
+    .callback = NULL,
+};
+const struct Tileset gTileset_AraunaFrontier07HRecordsBase =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AraunaFrontier07HRecordsBase,
+    .palettes = gTilesetPalettes_AraunaFrontier07HRecordsBase,
+    .metatiles = gMetatiles_AraunaFrontier07HRecordsBase,
+    .metatileAttributes = gMetatileAttributes_AraunaFrontier07HRecordsBase,
+    .callback = InitTilesetAnim_Building,
+};
+const struct Tileset gTileset_AraunaFrontier07HRecordsArt =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaFrontier07HRecordsArt,
+    .palettes = gTilesetPalettes_AraunaFrontier07HRecordsArt,
+    .metatiles = gMetatiles_AraunaFrontier07HRecordsArt,
+    .metatileAttributes = gMetatileAttributes_AraunaFrontier07HRecordsArt,
+    .callback = NULL,
+};
+// FRONTIER_07H_END
