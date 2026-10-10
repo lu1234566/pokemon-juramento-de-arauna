@@ -1,0 +1,32 @@
+[
+  {
+    "script": "tools/arauna/check_overworld_palette_capacity.py",
+    "returncode": 0,
+    "status": "PASS"
+  },
+  {
+    "script": "tools/arauna/check_special_species.py",
+    "returncode": 0,
+    "status": "PASS"
+  },
+  {
+    "script": "tools/arauna/check_faction_visual_identity.py",
+    "returncode": 0,
+    "status": "PASS"
+  },
+  {
+    "script": "tools/validate_arauna_character_assets.py",
+    "returncode": 0,
+    "status": "PASS"
+  },
+  {
+    "script": "tools/arauna/audit_map_data.py",
+    "returncode": 0,
+    "status": "PASS"
+  },
+  {
+    "script": "tools/arauna_maps/check_visual_protection_08.py",
+    "returncode": 0,
+    "status": "PASS"
+  }
+]

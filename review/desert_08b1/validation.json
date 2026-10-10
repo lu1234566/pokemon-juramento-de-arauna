@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "base_commit": "393cdf63e4cef254d5890882df572f4011c69bf4",
+  "maps": 1,
+  "cells": 561,
+  "protected_existing_files": 24108,
+  "layouts_preserved": 754,
+  "only_changed_layout": "LAYOUT_DESERT_RUINS",
+  "grid_border_map_events_and_scripts": "byte-identical",
+  "metatile_ids_attributes_and_layer_masks": "PASS",
+  "per_layer_masks_checked": 96,
+  "unaltered_metatiles_pixel_identical": 878,
+  "native_braille_dot_pixels": 90,
+  "actual_c_predicate_cases": 3366,
+  "actual_c_whole_grid_opening_cells": 561,
+  "opening_changes_exactly_six_cells": true,
+  "closed_open_reachable_cells": {
+    "closed": 91,
+    "open": 95
+  },
+  "regirock_encounter": "unchanged SPECIES_REGIROCK level 40; scripts, flags and outcome branches hash-protected",
+  "native_map_audit": "8 gates PASS; 3 inherited Surf notes",
+  "rom_build": "pending; ARM toolchain unavailable",
+  "mgba_battles_and_save": "pending; emulator unavailable"
+}

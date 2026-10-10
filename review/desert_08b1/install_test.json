@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "base_commit": "393cdf63e4cef254d5890882df572f4011c69bf4",
+  "tested_payload_files": 61,
+  "cases": [
+    "Full preflight, no writes",
+    "Corrupted payload rejected before writes",
+    "Protected corrected clinic rejected before writes",
+    "Interrupted installation automatically restores all prior bytes",
+    "Actual installation matches all payload hashes and preserves HEAD",
+    "Reapplication writes zero files",
+    "Recorded backup restores original checkout"
+  ],
+  "scope": "staged payload; final manifest and source are also checked on transport import"
+}

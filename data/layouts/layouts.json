@@ -1306,8 +1306,8 @@
       "name": "DesertRuins_Layout",
       "width": 17,
       "height": 33,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
+      "primary_tileset": "gTileset_AraunaDesert08B1Primary",
+      "secondary_tileset": "gTileset_AraunaDesert08B1",
       "border_filepath": "data/layouts/DesertRuins/border.bin",
       "blockdata_filepath": "data/layouts/DesertRuins/map.bin"
     },

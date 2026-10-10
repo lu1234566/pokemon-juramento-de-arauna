@@ -1,0 +1,97 @@
+  PASS  the pool list exists                                                  -- 18 characters
+  PASS  BRENO names a fallback slot                                           -- PALSLOT_NPC_3
+  PASS  OTACILIO names a fallback slot                                        -- PALSLOT_NPC_1
+  PASS  LUZIA names a fallback slot                                           -- PALSLOT_NPC_2
+  PASS  RAUL names a fallback slot                                            -- PALSLOT_NPC_1
+  PASS  BENTO names a fallback slot                                           -- PALSLOT_NPC_4
+  PASS  MAIRA names a fallback slot                                           -- PALSLOT_NPC_4
+  PASS  DARIO names a fallback slot                                           -- PALSLOT_NPC_1
+  PASS  NILO names a fallback slot                                            -- PALSLOT_NPC_1
+  PASS  JACI names a fallback slot                                            -- PALSLOT_NPC_4
+  PASS  RITA names a fallback slot                                            -- PALSLOT_NPC_1
+  PASS  AMARO names a fallback slot                                           -- PALSLOT_NPC_1
+  PASS  TADEU names a fallback slot                                           -- PALSLOT_NPC_3
+  PASS  HORIZONTE_M names a fallback slot                                     -- PALSLOT_NPC_4
+  PASS  HORIZONTE_F names a fallback slot                                     -- PALSLOT_NPC_3
+  PASS  LEMBRANTE_M names a fallback slot                                     -- PALSLOT_NPC_2
+  PASS  LEMBRANTE_F names a fallback slot                                     -- PALSLOT_NPC_1
+  PASS  Mãe do protagonista names a fallback slot                             -- PALSLOT_NPC_4
+  PASS  Recepcionista de link names a fallback slot                           -- PALSLOT_NPC_3
+  PASS  manifest and pool list agree on who is pool-allocated                 -- identical
+  PASS  no character claims a fixed slot and the pool at once                 -- none
+  PASS  no two characters share a fixed special slot on a map                 -- none
+  PASS  the allocator reserve is still tied to OBJ_PALSLOT_COUNT
+  PASS  the forbidden 16 + PALSLOT spelling has not returned                  -- none
+  PASS  every declared surface has its asset on disk                          -- none
+  PASS  the reflection-bank claim exists
+  PASS  only the four NPC reflection banks can be borrowed                    -- PALSLOT_NPC_1_REFLECTION..PALSLOT_NPC_4_REFLECTION
+  PASS  the idle test exists
+  PASS  the idle test is measured, not decided by map                         -- reads gSprites and gObjectEvents only
+  PASS  the idle test reads both live sprites and live object events
+  PASS  every path that hands out a base slot gives a loan back first         -- 3 handbacks for 3 assignments
+  PASS  loans are released when the palette pool is cleared
+  PASS  the widest pooled scene fits in the palette budget                    --  wants 0, budget is 6
+  PASS  the virtual graphics registry exists                                  -- 1 entries, ARAUNA_VIRTUAL_GFX_COUNT = 1
+  PASS  the registry's declared size matches its entries                      -- 1 declared, 1 present
+  PASS  every registry entry is named by a constant                           -- none
+  PASS  an id past the end of the registry falls back instead of reading on
+  PASS  the dispatch reaches the registry by range, not by name
+  PASS  no character is hardcoded in the dispatch                             -- none
+  PASS  RAUL's virtual id is defined                                          -- ARAUNA_VIRTUAL_GFX_RAUL
+  PASS  RAUL's virtual id is in the registry
+  PASS  RAUL is placed through an object gfx var                              -- OBJ_EVENT_GFX_VAR_B
+  PASS  RAUL's var is set before his maps spawn                               -- all three maps
+  PASS  RAUL draws his own art                                                -- sPicTable_Raul
+  PASS  MAIRA still stands on the ANABEL object slot                          -- ANABEL
+  PASS  MAIRA's internal trainer is still a Frontier Brain                    -- TRAINER_ANABEL
+  PASS  MAIRA's object slot is still the facility's brain graphic
+  PASS  MAIRA is the Battle Tower's Master                                    -- TOWER -> ANABEL / ANABEL
+  PASS  MAIRA's trainer pic has one owner                                     -- 1 trainers use TRAINER_PIC_SALON_MAIDEN_ANABEL
+  PASS  MAIRA's front file is the one the ROM links                           -- graphics/trainers/front_pics/salon_maiden_anabel.png
+  PASS  DARIO still stands on the TUCKER object slot                          -- TUCKER
+  PASS  DARIO's internal trainer is still a Frontier Brain                    -- TRAINER_TUCKER
+  PASS  DARIO's object slot is still the facility's brain graphic
+  PASS  DARIO is the Battle Dome's Master                                     -- DOME -> TUCKER / TUCKER
+  PASS  DARIO's trainer pic has one owner                                     -- 1 trainers use TRAINER_PIC_DOME_ACE_TUCKER
+  PASS  DARIO's front file is the one the ROM links                           -- graphics/trainers/front_pics/dome_ace_tucker.png
+  PASS  NILO still stands on the NOLAND object slot                           -- NOLAND
+  PASS  NILO's internal trainer is still a Frontier Brain                     -- TRAINER_NOLAND
+  PASS  NILO's object slot is still the facility's brain graphic
+  PASS  NILO is the Battle Factory's Master                                   -- FACTORY -> NOLAND / NOLAND
+  PASS  NILO's trainer pic has one owner                                      -- 1 trainers use TRAINER_PIC_FACTORY_HEAD_NOLAND
+  PASS  NILO's front file is the one the ROM links                            -- graphics/trainers/front_pics/factory_head_noland.png
+  PASS  JACI still stands on the LUCY object slot                             -- LUCY
+  PASS  JACI's internal trainer is still a Frontier Brain                     -- TRAINER_LUCY
+  PASS  JACI's object slot is still the facility's brain graphic
+  PASS  JACI is the Battle Pike's Master                                      -- PIKE -> LUCY / LUCY
+  PASS  JACI's trainer pic has one owner                                      -- 1 trainers use TRAINER_PIC_PIKE_QUEEN_LUCY
+  PASS  JACI's front file is the one the ROM links                            -- graphics/trainers/front_pics/pike_queen_lucy.png
+  PASS  RITA still stands on the GRETA object slot                            -- GRETA
+  PASS  RITA's internal trainer is still a Frontier Brain                     -- TRAINER_GRETA
+  PASS  RITA's object slot is still the facility's brain graphic
+  PASS  RITA is the Battle Arena's Master                                     -- ARENA -> GRETA / GRETA
+  PASS  RITA's trainer pic has one owner                                      -- 1 trainers use TRAINER_PIC_ARENA_TYCOON_GRETA
+  PASS  RITA's front file is the one the ROM links                            -- graphics/trainers/front_pics/arena_tycoon_greta.png
+  PASS  AMARO still stands on the SPENSER object slot                         -- SPENSER
+  PASS  AMARO's internal trainer is still a Frontier Brain                    -- TRAINER_SPENSER
+  PASS  AMARO's object slot is still the facility's brain graphic
+  PASS  AMARO is the Battle Palace's Master                                   -- PALACE -> SPENSER / SPENSER
+  PASS  AMARO's trainer pic has one owner                                     -- 1 trainers use TRAINER_PIC_PALACE_MAVEN_SPENSER
+  PASS  AMARO's front file is the one the ROM links                           -- graphics/trainers/front_pics/palace_maven_spenser.png
+  PASS  TADEU still stands on the BRANDON object slot                         -- BRANDON
+  PASS  TADEU's internal trainer is still a Frontier Brain                    -- TRAINER_BRANDON
+  PASS  TADEU's object slot is still the facility's brain graphic
+  PASS  TADEU is the Battle Pyramid's Master                                  -- PYRAMID -> BRANDON / BRANDON
+  PASS  TADEU's trainer pic has one owner                                     -- 1 trainers use TRAINER_PIC_PYRAMID_KING_BRANDON
+  PASS  TADEU's front file is the one the ROM links                           -- graphics/trainers/front_pics/pyramid_king_brandon.png
+  PASS  no two Circuit Masters share a trainer pic
+  PASS  no two Circuit Masters share a front file
+  PASS  every trainer pic number in the manifest is the real one              -- 103 checked
+  PASS  GetFrontierBrainTrainerPicIndex answers the same for Silver and Gold  -- reads the facility only
+  PASS  GetFrontierBrainTrainerClass answers the same for Silver and Gold     -- reads the facility only
+  PASS  CopyFrontierBrainTrainerName answers the same for Silver and Gold     -- reads the facility only
+  PASS  the Silver and Gold streak thresholds are unchanged                   -- 7 rows
+  PASS  NUM_OBJ_EVENT_GFX has not grown
+  PASS  an object event still stores a one-byte graphics id
+
+95/95 palette capacity checks passed
