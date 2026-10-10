@@ -1733,8 +1733,9 @@ bool8 ScrCmd_checkpartymove(struct ScriptContext *ctx)
     // Pokemon in the party does it anyway. The badge is still required -- each
     // of these scripts checks its own badge flag before calling this -- so the
     // order the world opens up in is untouched. All that goes away is the slot
-    // a Bidoof used to occupy.
-    if (gSpecialVar_Result == PARTY_SIZE)
+    // a Bidoof used to occupy. Only the eight HMs: Secret Power and the other
+    // TM moves still need a Pokemon that knows them.
+    if (gSpecialVar_Result == PARTY_SIZE && IsHMMove2(move))
     {
         for (i = 0; i < PARTY_SIZE; i++)
         {

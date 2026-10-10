@@ -1299,6 +1299,9 @@ u8 GetPlayerAvatarGenderByGraphicsId(u8 gfxId)
     }
 }
 
+// Arauna: no HM slaves. Like checkpartymove, any Pokemon that is not an egg
+// can Surf; both callers check the badge first. Without this, the water
+// never offered Surf unless someone knew the move.
 bool8 PartyHasMonWithSurf(void)
 {
     u8 i;
@@ -1309,7 +1312,7 @@ bool8 PartyHasMonWithSurf(void)
         {
             if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES) == SPECIES_NONE)
                 break;
-            if (MonKnowsMove(&gPlayerParty[i], MOVE_SURF))
+            if (!GetMonData(&gPlayerParty[i], MON_DATA_IS_EGG))
                 return TRUE;
         }
     }
