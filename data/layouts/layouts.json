@@ -3106,8 +3106,8 @@
       "name": "ScorchedSlab_Layout",
       "width": 15,
       "height": 20,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
+      "primary_tileset": "gTileset_AraunaScorched08B2Primary",
+      "secondary_tileset": "gTileset_AraunaScorched08B2",
       "border_filepath": "data/layouts/ScorchedSlab/border.bin",
       "blockdata_filepath": "data/layouts/ScorchedSlab/map.bin"
     },
@@ -3886,8 +3886,8 @@
       "name": "DesertUnderpass_Layout",
       "width": 139,
       "height": 23,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
+      "primary_tileset": "gTileset_AraunaUnderpass08B2Primary",
+      "secondary_tileset": "gTileset_AraunaUnderpass08B2",
       "border_filepath": "data/layouts/DesertUnderpass/border.bin",
       "blockdata_filepath": "data/layouts/DesertUnderpass/map.bin"
     },

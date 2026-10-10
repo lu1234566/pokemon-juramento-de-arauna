@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "base_commit": "0434665c07f2598f43bc399da4e8a7ce44e02979",
+  "tested_payload_files": 93,
+  "corrected_party_menu_sha256": "e05f9efb61cfd652e56a361ba1e8b826f614abc0e684438a0b031b036679d08f",
+  "cases": [
+    "Full preflight writes nothing",
+    "Historical party_menu.c rejected before writes; corrected hash required",
+    "Corrupt payload rejected before writes",
+    "Protected clinic correction rejected before writes",
+    "Interrupted installation restores prior bytes automatically",
+    "Real installation matches all hashes and keeps HEAD",
+    "Reapplication writes zero files",
+    "Backup rollback restores the complete base"
+  ],
+  "scope": "staged payload; final source is also checked during transport import"
+}

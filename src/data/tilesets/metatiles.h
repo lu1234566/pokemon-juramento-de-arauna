@@ -1231,3 +1231,14 @@ const u16 gMetatileAttributes_AraunaDesert08B1Primary[] = INCBIN_U16("data/tiles
 const u16 gMetatiles_AraunaDesert08B1[] = INCBIN_U16("data/tilesets/secondary/arauna_desert08b1/metatiles.bin");
 const u16 gMetatileAttributes_AraunaDesert08B1[] = INCBIN_U16("data/tilesets/secondary/arauna_desert08b1/metatile_attributes.bin");
 // DESERT_08B1_END
+
+// DESERT_08B2_BEGIN
+const u16 gMetatiles_AraunaUnderpass08B2Primary[] = INCBIN_U16("data/tilesets/primary/arauna_underpass08b2/metatiles.bin");
+const u16 gMetatileAttributes_AraunaUnderpass08B2Primary[] = INCBIN_U16("data/tilesets/primary/arauna_underpass08b2/metatile_attributes.bin");
+const u16 gMetatiles_AraunaUnderpass08B2[] = INCBIN_U16("data/tilesets/secondary/arauna_underpass08b2/metatiles.bin");
+const u16 gMetatileAttributes_AraunaUnderpass08B2[] = INCBIN_U16("data/tilesets/secondary/arauna_underpass08b2/metatile_attributes.bin");
+const u16 gMetatiles_AraunaScorched08B2Primary[] = INCBIN_U16("data/tilesets/primary/arauna_scorched08b2/metatiles.bin");
+const u16 gMetatileAttributes_AraunaScorched08B2Primary[] = INCBIN_U16("data/tilesets/primary/arauna_scorched08b2/metatile_attributes.bin");
+const u16 gMetatiles_AraunaScorched08B2[] = INCBIN_U16("data/tilesets/secondary/arauna_scorched08b2/metatiles.bin");
+const u16 gMetatileAttributes_AraunaScorched08B2[] = INCBIN_U16("data/tilesets/secondary/arauna_scorched08b2/metatile_attributes.bin");
+// DESERT_08B2_END

@@ -4802,3 +4802,46 @@ const struct Tileset gTileset_AraunaDesert08B1 =
     .callback = InitTilesetAnim_Cave,
 };
 // DESERT_08B1_END
+
+// DESERT_08B2_BEGIN
+const struct Tileset gTileset_AraunaUnderpass08B2Primary =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AraunaUnderpass08B2Primary,
+    .palettes = gTilesetPalettes_AraunaUnderpass08B2Primary,
+    .metatiles = gMetatiles_AraunaUnderpass08B2Primary,
+    .metatileAttributes = gMetatileAttributes_AraunaUnderpass08B2Primary,
+    .callback = InitTilesetAnim_General,
+};
+const struct Tileset gTileset_AraunaUnderpass08B2 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaUnderpass08B2,
+    .palettes = gTilesetPalettes_AraunaUnderpass08B2,
+    .metatiles = gMetatiles_AraunaUnderpass08B2,
+    .metatileAttributes = gMetatileAttributes_AraunaUnderpass08B2,
+    .callback = InitTilesetAnim_Cave,
+};
+const struct Tileset gTileset_AraunaScorched08B2Primary =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AraunaScorched08B2Primary,
+    .palettes = gTilesetPalettes_AraunaScorched08B2Primary,
+    .metatiles = gMetatiles_AraunaScorched08B2Primary,
+    .metatileAttributes = gMetatileAttributes_AraunaScorched08B2Primary,
+    .callback = InitTilesetAnim_General,
+};
+const struct Tileset gTileset_AraunaScorched08B2 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaScorched08B2,
+    .palettes = gTilesetPalettes_AraunaScorched08B2,
+    .metatiles = gMetatiles_AraunaScorched08B2,
+    .metatileAttributes = gMetatileAttributes_AraunaScorched08B2,
+    .callback = InitTilesetAnim_Cave,
+};
+// DESERT_08B2_END

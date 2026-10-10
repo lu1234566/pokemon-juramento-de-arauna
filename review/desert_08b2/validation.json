@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "base_commit": "0434665c07f2598f43bc399da4e8a7ce44e02979",
+  "protected_existing_files": 24167,
+  "corrected_party_menu_sha256": "e05f9efb61cfd652e56a361ba1e8b826f614abc0e684438a0b031b036679d08f",
+  "historical_08B1_contract": "unchanged; documented old party-menu hash remains historical",
+  "layouts_preserved": 754,
+  "maps": {
+    "DesertUnderpass": {
+      "cells": 3197,
+      "redrawn_ids": 34,
+      "native_layer_masks_checked": 68,
+      "unchanged_pixel_identical_metatiles": 892,
+      "preserved_dynamic_tile_words": 0,
+      "water_pixels_compared_over_8_frames": 0,
+      "reachable_cells_ignoring_elevation": {
+        "walk": 659,
+        "surf": 659
+      },
+      "events_warps_elevations_and_scripts": "byte-identical"
+    },
+    "ScorchedSlab": {
+      "cells": 300,
+      "redrawn_ids": 23,
+      "native_layer_masks_checked": 50,
+      "unchanged_pixel_identical_metatiles": 903,
+      "preserved_dynamic_tile_words": 38,
+      "water_pixels_compared_over_8_frames": 11600,
+      "reachable_cells_ignoring_elevation": {
+        "walk": 1,
+        "surf": 111
+      },
+      "events_warps_elevations_and_scripts": "byte-identical"
+    }
+  },
+  "source_item_logic": "fossil choices, common finditem, flags and TM scripts protected byte-for-byte",
+  "rom_build": "pending; ARM toolchain unavailable",
+  "mgba_and_save": "pending; emulator unavailable",
+  "navigation_test_scope": "native collision/behavior flood without elevation or event actors; not a gameplay run"
+}
