@@ -6,8 +6,10 @@ estão trocados. Uma correção foi necessária, nas portas do Cable Club.
 
 Conferência:
 
-- **Pacotes.** Os 173 arquivos do manifesto do 07H e os 132 do 07I batem
-  com o checkout.
+- **Pacotes.** Os 173 arquivos do manifesto do 07H batem com `725f8fe44f`,
+  e os 132 do 07I com `0103bc9731`. Depois do 07I e da correção abaixo,
+  cinco arquivos do manifesto do 07H mudaram: `layouts.json`, os três
+  headers de tilesets e o `metatiles.bin` do Centro.
 - **Layouts.** São 754, com IDs e ordem iguais. Oito layouts trocam só os
   bancos:
   - 07H: `POKEMON_CENTER_1F`, `POKEMON_CENTER_2F`, `MART`, `RANKING_HALL`
