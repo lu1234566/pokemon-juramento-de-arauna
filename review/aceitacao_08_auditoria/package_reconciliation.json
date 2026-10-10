@@ -1,0 +1,38 @@
+{
+  "07H": {
+    "zip_sha256": "c2a57f1eb652d8084f39788935bc98d8b1099d943b1faecba1192efcd976299b",
+    "archive_hashes_verified": 184,
+    "manifest_files": 173,
+    "equal_to_current_checkout": 168,
+    "documented_changes": [
+      "data/layouts/layouts.json",
+      "data/tilesets/secondary/arauna_frontier07h_clinic/metatiles.bin",
+      "src/data/tilesets/graphics.h",
+      "src/data/tilesets/headers.h",
+      "src/data/tilesets/metatiles.h"
+    ],
+    "bundles_verified": {
+      "checkpoint_BattleFrontier_07H.bundle": "725f8fe44f427b827221fdbcc3beca70e92e3b72 HEAD",
+      "cumulative_from_06C2_07H.bundle": "725f8fe44f427b827221fdbcc3beca70e92e3b72 HEAD",
+      "cumulative_from_07G_07H.bundle": "725f8fe44f427b827221fdbcc3beca70e92e3b72 HEAD",
+      "cumulative_from_GitHub_9f_07H.bundle": "725f8fe44f427b827221fdbcc3beca70e92e3b72 HEAD",
+      "cumulative_from_eb_07H.bundle": "725f8fe44f427b827221fdbcc3beca70e92e3b72 HEAD"
+    },
+    "checkpoint_is_ancestor_of_a594": true
+  },
+  "07I": {
+    "zip_sha256": "e57063d5876eae6c838c184e3438cefc959812cb61f4b9fb11ca821c100abc3d",
+    "archive_hashes_verified": 143,
+    "manifest_files": 132,
+    "equal_to_current_checkout": 132,
+    "documented_changes": [],
+    "bundles_verified": {
+      "checkpoint_BattleFrontier_07I.bundle": "0103bc9731a67dbf9a0a32026eff510aa00ee304 HEAD",
+      "cumulative_from_06C2_07I.bundle": "0103bc9731a67dbf9a0a32026eff510aa00ee304 HEAD",
+      "cumulative_from_07G_07I.bundle": "0103bc9731a67dbf9a0a32026eff510aa00ee304 HEAD",
+      "cumulative_from_531_07I.bundle": "0103bc9731a67dbf9a0a32026eff510aa00ee304 HEAD",
+      "cumulative_from_GitHub_9f_07I.bundle": "0103bc9731a67dbf9a0a32026eff510aa00ee304 HEAD"
+    },
+    "checkpoint_is_ancestor_of_a594": true
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "base_commit": "a594b3e1e64517421101d96f5b314df22d47e14f",
+  "protected_hashes": {
+    "data/tilesets/secondary/arauna_frontier07h_clinic/metatiles.bin": "aa2ce0422b3b25572bf3afcb9b521a75f2259f2d6be0268b522f83d0321b3e4b",
+    "data/tilesets/secondary/arauna_frontier07h_clinic/metatile_attributes.bin": "7c6373eced25fba8b046b61779d60b16755250aedb8945ff84c1a9c3f50b9110",
+    "data/tilesets/secondary/arauna_frontier07c_palace_garden/metatiles.bin": "181f026417146acf1fd998b0a71858fbe5dce8fdd591ba5392647c76aacb4946",
+    "data/tilesets/secondary/arauna_frontier07c_palace_garden/metatile_attributes.bin": "f27281508d17a648e68f2bc91e56e9c2a6aaefacda6086cce95207e9c0944e67",
+    "src/field_door.c": "0aa13791192e52f2e57f1b1b611fdd3b1ea74d44df7fbabc1fd2f875f596df7e",
+    "src/overworld.c": "312489b537e07f068952004c23cc503837d547af610354225d7325315d3e18aa",
+    "src/arauna_border_visuals.c": "676bb7119c126ec7fe1b4997aa100596c0ec1c95764ecd16a83c81102437fbb9",
+    "src/arauna_cave_visuals.c": "063acf38acfcecae0a0ce13cccd0c9362a0bc0b9f8aa6feefb05f4a0214e5ad1"
+  },
+  "clinic_07h_original_sha256": "f3c4ca040633bd1ca6bb80ffcc449778c7b3d1fa653a50f21501b6c487d039fe",
+  "clinic_corrected_sha256": "aa2ce0422b3b25572bf3afcb9b521a75f2259f2d6be0268b522f83d0321b3e4b",
+  "clinic_modified_metatile": "0x25C",
+  "clinic_modified_quadrants": [
+    0,
+    1,
+    4,
+    5
+  ],
+  "requirement": "Next art package starts on a594b3e1e6; preserve these files and freeze every other gameplay dependency in its own contract. Historical 07H manifest remains historical, with one documented intentional exception."
+}

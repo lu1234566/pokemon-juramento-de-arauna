@@ -1,0 +1,13 @@
+{
+  "map_audit": "PASS 8/8",
+  "surf_notes": 3,
+  "protection_actual": "PASS 8/8",
+  "old_07h_clinic_rejected": true,
+  "tracked_game_files_changed": [],
+  "native_renders": 12,
+  "city_renders": 16,
+  "regional_map_render": true,
+  "frontier_acceptance_rows": 47,
+  "rom_build_this_checkpoint": "not executed",
+  "mgba_session_this_checkpoint": "not executed"
+}

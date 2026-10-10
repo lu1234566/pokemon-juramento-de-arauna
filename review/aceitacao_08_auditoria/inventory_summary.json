@@ -1,0 +1,57 @@
+{
+  "base_commit": "a594b3e1e64517421101d96f5b314df22d47e14f",
+  "maps": 528,
+  "layouts": 754,
+  "arauna_bank_maps": 477,
+  "pyramid_runtime_modules": 16,
+  "native_remaining": {
+    "08B Ruínas e cavernas": [
+      "DesertRuins",
+      "DesertUnderpass",
+      "ScorchedSlab",
+      "MirageTower_1F",
+      "MirageTower_2F",
+      "MirageTower_3F",
+      "MirageTower_4F"
+    ],
+    "08C Navio": [
+      "SSTidalCorridor",
+      "SSTidalLowerDeck",
+      "SSTidalRooms"
+    ],
+    "08D Ilhas especiais": [
+      "SouthernIsland_Exterior",
+      "SouthernIsland_Interior",
+      "BirthIsland_Exterior",
+      "BirthIsland_Harbor",
+      "FarawayIsland_Entrance",
+      "FarawayIsland_Interior"
+    ],
+    "08E Concursos": [
+      "ContestHall",
+      "ContestHallBeauty",
+      "ContestHallCool",
+      "ContestHallCute",
+      "ContestHallSmart",
+      "ContestHallTough"
+    ],
+    "08F Conexão": [
+      "BattleColosseum_2P",
+      "BattleColosseum_4P",
+      "RecordCorner",
+      "TradeCenter",
+      "UnionRoom"
+    ]
+  },
+  "inactive_maps": [
+    "Route104_Prototype",
+    "Route104_PrototypePrettyPetalFlowerShop",
+    "UnusedContestHall1",
+    "UnusedContestHall2",
+    "UnusedContestHall3",
+    "UnusedContestHall4",
+    "UnusedContestHall5",
+    "UnusedContestHall6"
+  ],
+  "classification": "Coverage of source banks and runtime override, not artistic acceptance; 27 native + 8 inactive + 16 runtime modules + 477 Arauna banks = 528."
+}
