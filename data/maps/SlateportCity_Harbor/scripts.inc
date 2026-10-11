@@ -387,10 +387,8 @@ SlateportCity_Harbor_Text_FerryServiceUnavailable:
 	.string "available at present…$"
 
 SlateportCity_Harbor_Text_MayISeeYourTicket:
-	.string "CIRO: If the data is right,\n"
-	.string "DISENCHANTMENT can be treated. I would\l"
-	.string "rather test an answer than turn\l"
-	.string "suffering into tradition.$"
+	.string "Hello, are you here for the ferry?\n"
+	.string "May I see your TICKET?$"
 
 SlateportCity_Harbor_Text_YouMustHaveTicket:
 	.string "{PLAYER} doesn't have the TICKET…\p"

@@ -97,10 +97,10 @@ FallarborTown_CozmosHouse_Text_CrushedWithDisappointment:
 	.string "I'm crushed with disappointment…$"
 
 FallarborTown_CozmosHouse_Text_MayIHaveMeteorite:
-	.string "CIRO: Do not mistake my hurry for a bad\n"
-	.string "memory. I remember enough to know I do\l"
-	.string "not want to live shackled to what I\l"
-	.string "lost.$"
+	.string "PROF. SALUSTIO: Please, may I have that\n"
+	.string "METEORITE?\p"
+	.string "I'm not asking for it for free.\n"
+	.string "How about in exchange for this TM?$"
 
 FallarborTown_CozmosHouse_Text_CozmoWentToMeteorFalls:
 	.string "PROF. SALUSTIO went off to\n"
