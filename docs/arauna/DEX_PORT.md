@@ -85,9 +85,19 @@ saem de regra:
 ## Dex regional
 
 A dex de Arauna é uma só, lida numa ordem só, então o número regional é igual ao
-nacional. `HOENN_DEX_COUNT` continua 202, o que faz a dex regional ser
-exatamente #001–#202 e deixa intacta a checagem de dex completa que a campanha
-já usa.
+nacional. `HOENN_DEX_COUNT` é a dex inteira, 386. A versão anterior deixava a
+dex regional em #001–#202. Mas metade das criaturas selvagens tem número acima
+de 202, já a partir da Rota 101: 143 das 295. Com o corte, a Pokédex
+regional escondia o que o jogador capturava, e o resumo mostrava o número como
+desconhecido. O cabo e a Union Room também recusavam a troca dessas criaturas
+até a Pokédex nacional, que só chega depois do Hall da Fama.
+
+A ordem ainda termina em Sacinho (#385) e Arauá (#386), as posições de Jirachi
+e Deoxys. A checagem de dex completa continua deixando essas duas de fora,
+então o diploma, a estrela do cartão de treinador, o presente do laboratório e a
+classificação de ANAHI contam #001–#384. As faixas da
+classificação são distribuídas sobre esse total, e "halfway mark" substitui o
+antigo "hundred mark".
 
 ## Obtenibilidade
 

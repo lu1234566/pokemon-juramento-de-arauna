@@ -53,7 +53,7 @@ gBirchDexRatingText_LessThan100::
 	.string "there.$"
 
 gBirchDexRatingText_LessThan110::
-	.string "You've passed the hundred mark.\p"
+	.string "You've passed the halfway mark.\p"
 	.string "That's an impressive POKéDEX!$"
 
 gBirchDexRatingText_LessThan120::

@@ -61,17 +61,66 @@ atendente e a porta estão nas casas que o código espera.
   Whip, Headbutt). Os golpes de cima são de status, e repetir só eles não
   acaba a batalha.
 
-### Observação: troca de espécies fora da dex regional
+## Dex regional com as 386 espécies
 
 Numa tentativa anterior, TOBIAS ofereceu Folião (#278) e o jogo respondeu
-"That POKéMON can't be traded now." Isso segue o
-`docs/arauna/DEX_PORT.md`: a dex regional é #001–#202, e as espécies
-#203–#386 seguem a regra das espécies de fora da região. Sem a Pokédex
-nacional, a Union Room não as troca, como no original com as espécies de fora
-de Hoenn. Não é defeito, mas são 184 das 386 espécies. Se a intenção for
-liberar a troca delas sem a dex nacional, é uma decisão de projeto à parte.
+"That POKéMON can't be traded now." A dex regional era #001–#202
+(`HOENN_DEX_COUNT` 202). Mas 143 das 295 espécies selvagens têm número acima
+de 202, já a partir da Rota 101. Antes da Pokédex nacional, que só chega
+depois do Hall da Fama, o corte tinha três efeitos:
+
+- a Pokédex escondia essas capturas;
+- o resumo mostrava o número como desconhecido;
+- o cabo e a Union Room recusavam a troca.
+
+Também havia um efeito sobre a classificação: ANAHI declarava a dex completa
+com 200 espécies.
+
+Agora a dex regional é a dex inteira: `HOENN_DEX_COUNT` passa a ser
+`NATIONAL_DEX_COUNT`, 386. A ordem continua terminando em Sacinho (#385) e
+Arauá (#386), as posições de Jirachi e Deoxys. A checagem de dex completa
+continua deixando as duas de fora. Assim, o diploma, a estrela do cartão de
+treinador, o presente do laboratório e a classificação de ANAHI contam
+#001–#384.
+
+Mudanças:
+
+- **Classificação de ANAHI.** As faixas de `GetPokedexRatingText` passam a
+  ser distribuídas sobre o total. Com a dex de 202, o resultado é igual ao
+  original.
+- **Texto.** "hundred mark" vira "halfway mark".
+- **Gerador e documento.** `build_species.py` e `docs/arauna/DEX_PORT.md`
+  registram a decisão.
+
+No mGBA, comparando a ROM anterior com a nova, com scripts ligados:
+
+| Verificação | Antes | Depois |
+|---|---|---|
+| Pokédex sem a nacional, com Pomba-Gira (#263) e Folião (#278) | SEEN 0, OWN 0, lista vazia | SEEN 2, OWN 2, Nº278 Folião na lista |
+| Resumo de Folião | sem número | Nº278 |
+| ANAHI com 200 capturados | "The ARAUNA POKéDEX is complete!" | "You've passed the halfway mark." |
+| ANAHI com 384 capturados | contagem parada em 202 | "complete!" |
+| Union Room sem a nacional, TOBIAS oferece Folião (#278) | recusada | troca concluída; IARA fica com Folião, com o ID de TOBIAS |
+
+A ROM compila e os gates passam. `build_species.py --check` também passa.
+
+### Aviso ao autor
+
+Cinco arquivos que os contratos congelam mudaram.
+`validate_connections_08f.py` agora para em `data/text/pokedex_rating.inc`.
+
+| Arquivo | SHA-256 |
+|---|---|
+| `include/constants/pokedex.h` | `33c16378e34a9ac56c5a11cef64086d5dfc3a90958276ed272ca430c6f624ec4` |
+| `src/birch_pc.c` | `87d7800c864b64ac923ef741e437721a8411bbafa6010e3d35b0b8ee908b3b78` |
+| `data/text/pokedex_rating.inc` | `9e7e058be6d1a54d2752a463c0e5d79f79bc67814cc6cbb66ac2541359ce0e98` |
+| `tools/arauna/build_species.py` | `262ec1cdbd1dfb668d322ae82f46c1ff6fa9732ecd32e9a407f6048d48cb4242` |
+| `docs/arauna/DEX_PORT.md` | `6737cdd4c25c04ed36230c29dd6dbc3f3a4220ba01287e431b251c5b610ba992` |
+
+Os próximos pacotes devem partir deste commit e proteger esses cinco arquivos,
+junto das sete correções anteriores.
 
 ## Estado
 
 Cobertura, integridade e sessão sem fio aprovadas. O ciclo de mapas está
-encerrado, com as sete correções protegidas.
+encerrado, com as sete correções protegidas e a dex regional de 386.

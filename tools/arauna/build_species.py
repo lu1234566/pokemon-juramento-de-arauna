@@ -84,7 +84,7 @@ NAME_LENGTH = 10
 CATEGORY_LENGTH = 11  # u8 categoryName[12], one byte for the terminator
 DEX_LINE_WIDTH = 44   # vanilla entries reach 46; 44 leaves room for wider glyphs
 DEX_LINES = 4
-HOENN_DEX_COUNT = 202
+HOENN_DEX_COUNT = 386
 
 DERIVED_RULES = """\
 Derived fields and the rule behind each:
@@ -555,8 +555,9 @@ def render_orders(species) -> str:
 def render_dex_numbers(species):
     """Arauna has one dex read in one order, so regional number == national number.
 
-    HOENN_DEX_COUNT stays 202, which makes the regional Pokédex exactly
-    #001-#202 and leaves the completion check the campaign already uses intact.
+    HOENN_DEX_COUNT is the whole dex (386, include/constants/pokedex.h), so
+    the regional Pokédex lists every species the player can meet. Completion
+    still leaves out the last two entries, Jirachi and Deoxys.
     """
     used = {s["constant"] for s in species}
     # The vanilla tree, not the current one: pokemon.c now holds an #include

@@ -843,6 +843,9 @@ enum {
     HOENN_DEX_OLD_UNOWN_Z,
 };
 
-#define HOENN_DEX_COUNT HOENN_DEX_DEOXYS
+// Arauna has one dex read in one order: the regional number is the national
+// number, so the regional Pokédex is the whole dex. It still ends with Jirachi
+// (#385) and Deoxys (#386), which completion leaves out.
+#define HOENN_DEX_COUNT NATIONAL_DEX_COUNT
 
 #endif // GUARD_CONSTANTS_POKEDEX_H
