@@ -1,0 +1,10 @@
+{
+  "status": "PASS_STATIC",
+  "maps": [
+    "BirthIsland_Exterior",
+    "BirthIsland_Harbor"
+  ],
+  "base_commit": "72b72497acecfec8a14be009c9bebff3d2621877",
+  "validation": "review/islands_08d/validation.json",
+  "runtime_acceptance": "pending mGBA"
+}

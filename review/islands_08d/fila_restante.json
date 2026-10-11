@@ -1,0 +1,21 @@
+{
+  "maps": 528,
+  "layouts": 754,
+  "arauna_bank_maps": 493,
+  "native_remaining": [
+    "BattleColosseum_2P",
+    "BattleColosseum_4P",
+    "ContestHall",
+    "ContestHallBeauty",
+    "ContestHallCool",
+    "ContestHallCute",
+    "ContestHallSmart",
+    "ContestHallTough",
+    "RecordCorner",
+    "TradeCenter",
+    "UnionRoom"
+  ],
+  "native_remaining_count": 11,
+  "pyramid_runtime_modules": 16,
+  "inactive_maps": 8
+}

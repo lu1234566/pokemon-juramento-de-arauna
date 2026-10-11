@@ -1,0 +1,84 @@
+[PASS] DALVA        front     64x64, 16 indices, nothing cut off
+[PASS] DALVA        overworld 144x32, 9 frames, 16 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_DALVA exclusive
+[PASS] ADEMAR       front     64x64, 16 indices, nothing cut off
+[PASS] ADEMAR       overworld 144x32, 9 frames, 14 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_ADEMAR exclusive
+[PASS] OLIVIA       front     64x64, 16 indices, nothing cut off
+[PASS] OLIVIA       overworld 144x32, 9 frames, 16 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_OLIVIA exclusive
+[PASS] NARA         front     64x64, 16 indices, nothing cut off
+[PASS] NARA         overworld 144x32, 9 frames, 14 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_NARA exclusive
+[PASS] ELIAS        front     64x64, 16 indices, nothing cut off
+[PASS] ELIAS        overworld 144x32, 9 frames, 14 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_ELIAS exclusive
+[PASS] LIDIA        front     64x64, 16 indices, nothing cut off
+[PASS] LIDIA        overworld 144x32, 9 frames, 16 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_LIDIA exclusive
+[PASS] CECILIA      front     64x64, 16 indices, nothing cut off
+[PASS] CECILIA      overworld 144x32, 9 frames, 15 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_CECILIA exclusive
+[PASS] CAETANO      front     64x64, 16 indices, nothing cut off
+[PASS] CAETANO      overworld 144x32, 9 frames, 16 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_CAETANO exclusive
+[PASS] DONA CELINA  front     64x64, 16 indices, nothing cut off
+[PASS] DONA CELINA  overworld 144x32, 9 frames, 16 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_CELINA exclusive
+[PASS] LAZARO       front     64x64, 16 indices, nothing cut off
+[PASS] LAZARO       overworld 144x32, 9 frames, 16 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_LAZARO exclusive
+[PASS] ROSA         front     64x64, 16 indices, nothing cut off
+[PASS] ROSA         overworld 144x32, 9 frames, 16 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_ROSA exclusive
+[PASS] CLARA        front     64x64, 16 indices, nothing cut off
+[PASS] CLARA        overworld 144x32, 9 frames, 16 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_CLARA exclusive
+[PASS] TIBURCIO     front     64x64, 16 indices, nothing cut off
+[PASS] TIBURCIO     overworld 144x32, 9 frames, 16 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_TIBURCIO exclusive
+[PASS] AMALIA       front     64x64, 16 indices, nothing cut off
+[PASS] AMALIA       overworld 144x32, 9 frames, 16 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_AMALIA exclusive
+[PASS] CIRO F1      front     64x64, 15 indices, nothing cut off
+[PASS] CIRO F1      overworld 144x32, 9 frames, 12 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_CIRO_F1 exclusive
+[PASS] CIRO F1 MIRROR front     64x64, 15 indices, nothing cut off
+[PASS] CIRO F1 MIRROR overworld 144x32, 9 frames, 12 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_CIRO_F1 exclusive
+[PASS] CIRO F2      front     64x64, 16 indices, nothing cut off
+[PASS] CIRO F2      overworld 144x32, 9 frames, 12 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_CIRO_F2 exclusive
+[ -- ] CIRO F3      front     not needed: No battle exists in this phase. The EverGrandeCity_ChampionsRoom...
+[PASS] CIRO F3      overworld 144x32, 9 frames, 12 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_CIRO_F3 exclusive
+[PASS] VAL          front     64x64, 16 indices, nothing cut off
+[PASS] VAL          overworld 144x32, 9 frames, 12 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_VAL exclusive
+[ -- ] VAL EVOLUIDO front     not needed: The Victory Road objects are cutscene appearances with TRAINER_T...
+[PASS] VAL EVOLUIDO overworld 144x32, 9 frames, 12 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_VAL_EVOLUIDO exclusive
+[PASS] BRENO        front     64x64, 16 indices, nothing cut off
+[PASS] BRENO        overworld 144x32, 9 frames, 14 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_BRENO exclusive
+[PASS] MARTA        front     64x64, 16 indices, nothing cut off
+[PASS] MARTA        overworld 144x32, 9 frames, 16 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_MARTA exclusive
+[PASS] OTACILIO     front     64x64, 16 indices, nothing cut off
+[PASS] OTACILIO     overworld 144x32, 9 frames, 14 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_OTACILIO exclusive
+[PASS] LUZIA        front     64x64, 16 indices, nothing cut off
+[PASS] LUZIA        overworld 144x32, 9 frames, 14 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_LUZIA exclusive
+[PASS] RAUL         front     64x64, 16 indices, nothing cut off
+[PASS] RAUL         overworld 144x32, 9 frames, 16 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_RAUL exclusive
+[PASS] BENTO        front     64x64, 16 indices, nothing cut off
+[PASS] BENTO        overworld 144x32, 9 frames, 15 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_BENTO exclusive
+[PASS] MAIRA        front     64x64, 15 indices, nothing cut off
+[PASS] MAIRA        overworld 144x32, 9 frames, 16 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_MAIRA exclusive
+[PASS] DARIO        front     64x64, 16 indices, nothing cut off
+[PASS] DARIO        overworld 144x32, 9 frames, 16 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_DARIO exclusive
+[PASS] NILO         front     64x64, 16 indices, nothing cut off
+[PASS] NILO         overworld 144x32, 9 frames, 16 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_NILO exclusive
+[PASS] JACI         front     64x64, 16 indices, nothing cut off
+[PASS] JACI         overworld 144x32, 9 frames, 16 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_JACI exclusive
+[PASS] RITA         front     64x64, 16 indices, nothing cut off
+[PASS] RITA         overworld 144x32, 9 frames, 16 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_RITA exclusive
+[PASS] AMARO        front     64x64, 16 indices, nothing cut off
+[PASS] AMARO        overworld 144x32, 9 frames, 16 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_AMARO exclusive
+[PASS] TADEU        front     64x64, 16 indices, nothing cut off
+[PASS] TADEU        overworld 144x32, 9 frames, 16 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_TADEU exclusive
+[PASS] HORIZONTE_M  front     64x64, 15 indices, nothing cut off
+[PASS] HORIZONTE_M  overworld 144x32, 9 frames, 16 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_HORIZONTE_M exclusive
+[PASS] HORIZONTE_F  front     64x64, 16 indices, nothing cut off
+[PASS] HORIZONTE_F  overworld 144x32, 9 frames, 16 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_HORIZONTE_F exclusive
+[PASS] LEMBRANTE_M  front     64x64, 16 indices, nothing cut off
+[PASS] LEMBRANTE_M  overworld 144x32, 9 frames, 16 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_LEMBRANTE_M exclusive
+[PASS] LEMBRANTE_F  front     64x64, 16 indices, nothing cut off
+[PASS] LEMBRANTE_F  overworld 144x32, 9 frames, 16 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_LEMBRANTE_F exclusive
+[PASS] Mãe do protagonista overworld 144x32, 9 frames, 15 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_MAE_PROTAGONISTA exclusive
+[PASS] Recepcionista de link overworld 144x32, 9 frames, 16 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_RECEPCIONISTA_LINK exclusive
+[PASS] DONA ZILA    overworld 144x32, 9 frames, 16 indices, walk pairs alternate, OBJ_EVENT_PAL_TAG_DONA_ZILA exclusive
+
+Not yet integrated (reported, not failed):
+  - Mãe do protagonista: battle portrait
+  - Recepcionista de link: battle portrait
+  - DONA ZILA: battle portrait
+
+ARAUNA CHARACTER ASSET QC: PASS

@@ -1256,3 +1256,26 @@ const u16 gMetatileAttributes_AraunaSSTidal08CPrimary[] = INCBIN_U16("data/tiles
 const u16 gMetatiles_AraunaSSTidal08C[] = INCBIN_U16("data/tilesets/secondary/arauna_sstidal08c/metatiles.bin");
 const u16 gMetatileAttributes_AraunaSSTidal08C[] = INCBIN_U16("data/tilesets/secondary/arauna_sstidal08c/metatile_attributes.bin");
 // SS_TIDAL_08C_END
+
+// SPECIAL_ISLANDS_08D_BEGIN
+const u16 gMetatiles_AraunaIslands08DSouthernPrimary[] = INCBIN_U16("data/tilesets/primary/arauna_islands08d_southern/metatiles.bin");
+const u16 gMetatileAttributes_AraunaIslands08DSouthernPrimary[] = INCBIN_U16("data/tilesets/primary/arauna_islands08d_southern/metatile_attributes.bin");
+const u16 gMetatiles_AraunaIslands08DSouthern[] = INCBIN_U16("data/tilesets/secondary/arauna_islands08d_southern/metatiles.bin");
+const u16 gMetatileAttributes_AraunaIslands08DSouthern[] = INCBIN_U16("data/tilesets/secondary/arauna_islands08d_southern/metatile_attributes.bin");
+const u16 gMetatiles_AraunaIslands08DBirthPrimary[] = INCBIN_U16("data/tilesets/primary/arauna_islands08d_birth/metatiles.bin");
+const u16 gMetatileAttributes_AraunaIslands08DBirthPrimary[] = INCBIN_U16("data/tilesets/primary/arauna_islands08d_birth/metatile_attributes.bin");
+const u16 gMetatiles_AraunaIslands08DBirth[] = INCBIN_U16("data/tilesets/secondary/arauna_islands08d_birth/metatiles.bin");
+const u16 gMetatileAttributes_AraunaIslands08DBirth[] = INCBIN_U16("data/tilesets/secondary/arauna_islands08d_birth/metatile_attributes.bin");
+const u16 gMetatiles_AraunaIslands08DIslandHarborPrimary[] = INCBIN_U16("data/tilesets/primary/arauna_islands08d_harbor/metatiles.bin");
+const u16 gMetatileAttributes_AraunaIslands08DIslandHarborPrimary[] = INCBIN_U16("data/tilesets/primary/arauna_islands08d_harbor/metatile_attributes.bin");
+const u16 gMetatiles_AraunaIslands08DIslandHarbor[] = INCBIN_U16("data/tilesets/secondary/arauna_islands08d_harbor/metatiles.bin");
+const u16 gMetatileAttributes_AraunaIslands08DIslandHarbor[] = INCBIN_U16("data/tilesets/secondary/arauna_islands08d_harbor/metatile_attributes.bin");
+const u16 gMetatiles_AraunaIslands08DFarawayCoastPrimary[] = INCBIN_U16("data/tilesets/primary/arauna_islands08d_faraway_entrance/metatiles.bin");
+const u16 gMetatileAttributes_AraunaIslands08DFarawayCoastPrimary[] = INCBIN_U16("data/tilesets/primary/arauna_islands08d_faraway_entrance/metatile_attributes.bin");
+const u16 gMetatiles_AraunaIslands08DFarawayCoast[] = INCBIN_U16("data/tilesets/secondary/arauna_islands08d_faraway_entrance/metatiles.bin");
+const u16 gMetatileAttributes_AraunaIslands08DFarawayCoast[] = INCBIN_U16("data/tilesets/secondary/arauna_islands08d_faraway_entrance/metatile_attributes.bin");
+const u16 gMetatiles_AraunaIslands08DFarawayForestPrimary[] = INCBIN_U16("data/tilesets/primary/arauna_islands08d_faraway_interior/metatiles.bin");
+const u16 gMetatileAttributes_AraunaIslands08DFarawayForestPrimary[] = INCBIN_U16("data/tilesets/primary/arauna_islands08d_faraway_interior/metatile_attributes.bin");
+const u16 gMetatiles_AraunaIslands08DFarawayForest[] = INCBIN_U16("data/tilesets/secondary/arauna_islands08d_faraway_interior/metatiles.bin");
+const u16 gMetatileAttributes_AraunaIslands08DFarawayForest[] = INCBIN_U16("data/tilesets/secondary/arauna_islands08d_faraway_interior/metatile_attributes.bin");
+// SPECIAL_ISLANDS_08D_END

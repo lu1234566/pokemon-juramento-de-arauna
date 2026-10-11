@@ -1,0 +1,68 @@
+{
+  "status": "PASS",
+  "base_commit": "72b72497acecfec8a14be009c9bebff3d2621877",
+  "fetched_project_branch": "72b72497acecfec8a14be009c9bebff3d2621877",
+  "fetched_main": "979fb6c1b6731561f3c993efd6045a9bbf096c54",
+  "main_commits_behind_base": 126,
+  "recovered_08c_zip_sha256": "45ecb9c563b2f8234d2d1b9051dcffbc03dc84023767321f22de193a5beb42c6",
+  "crc_and_all_member_hashes": "PASS",
+  "08c_payload_files_identical_to_base_checkout": 66,
+  "git_palette_eol_normalization": {
+    "rule": "*.pal text eol=crlf",
+    "files": [
+      "data/tilesets/primary/arauna_sstidal08c/palettes/00.pal",
+      "data/tilesets/primary/arauna_sstidal08c/palettes/01.pal",
+      "data/tilesets/primary/arauna_sstidal08c/palettes/02.pal",
+      "data/tilesets/primary/arauna_sstidal08c/palettes/03.pal",
+      "data/tilesets/primary/arauna_sstidal08c/palettes/04.pal",
+      "data/tilesets/primary/arauna_sstidal08c/palettes/05.pal",
+      "data/tilesets/primary/arauna_sstidal08c/palettes/06.pal",
+      "data/tilesets/primary/arauna_sstidal08c/palettes/07.pal",
+      "data/tilesets/primary/arauna_sstidal08c/palettes/08.pal",
+      "data/tilesets/primary/arauna_sstidal08c/palettes/09.pal",
+      "data/tilesets/primary/arauna_sstidal08c/palettes/10.pal",
+      "data/tilesets/primary/arauna_sstidal08c/palettes/11.pal",
+      "data/tilesets/primary/arauna_sstidal08c/palettes/12.pal",
+      "data/tilesets/secondary/arauna_sstidal08c/palettes/00.pal",
+      "data/tilesets/secondary/arauna_sstidal08c/palettes/01.pal",
+      "data/tilesets/secondary/arauna_sstidal08c/palettes/02.pal",
+      "data/tilesets/secondary/arauna_sstidal08c/palettes/03.pal",
+      "data/tilesets/secondary/arauna_sstidal08c/palettes/04.pal",
+      "data/tilesets/secondary/arauna_sstidal08c/palettes/05.pal",
+      "data/tilesets/secondary/arauna_sstidal08c/palettes/06.pal",
+      "data/tilesets/secondary/arauna_sstidal08c/palettes/07.pal",
+      "data/tilesets/secondary/arauna_sstidal08c/palettes/08.pal",
+      "data/tilesets/secondary/arauna_sstidal08c/palettes/09.pal",
+      "data/tilesets/secondary/arauna_sstidal08c/palettes/10.pal",
+      "data/tilesets/secondary/arauna_sstidal08c/palettes/11.pal",
+      "data/tilesets/secondary/arauna_sstidal08c/palettes/12.pal"
+    ],
+    "content": "identical"
+  },
+  "08c_bundles": [
+    {
+      "bundle": "checkpoint_08C.bundle",
+      "status": "PASS",
+      "head": "5c8f309fd153b707e47a47d2f72780ac12ea0210"
+    },
+    {
+      "bundle": "cumulative_a594_08C.bundle",
+      "status": "PASS",
+      "head": "5c8f309fd153b707e47a47d2f72780ac12ea0210"
+    },
+    {
+      "bundle": "cumulative_from_08B3_08C.bundle",
+      "status": "PASS",
+      "head": "5c8f309fd153b707e47a47d2f72780ac12ea0210"
+    }
+  ],
+  "seven_protected_fixes": {
+    "src/party_menu.c": "e05f9efb61cfd652e56a361ba1e8b826f614abc0e684438a0b031b036679d08f",
+    "src/field_player_avatar.c": "81ebe4b5761f8992cb459cf37978262358231734a1c56f8b3447346f770db95f",
+    "src/scrcmd.c": "98cd4b72474c3cc7dfd5dc6cf54a4a96f807733017761a2be58d62b0dcd063a9",
+    "data/maps/SlateportCity_Harbor/scripts.inc": "fc256e12cb37712c2a2b3e026d442e6baa55ed6560909e7cadecda83c19167ea",
+    "data/maps/LilycoveCity_Harbor/scripts.inc": "46ab224e74a02b311a9a38b0eb8f940b169e9e5d83844283ccda00be39ebd18c",
+    "data/maps/FallarborTown_CozmosHouse/scripts.inc": "798dc439a26a33d0845646eab56d599d7712e34414c712304d834ae4eb89f4a6",
+    "data/maps/Route116/scripts.inc": "cd955b92f802f347645b82cc1bc54aa1715d35097009f7504ec98079c46a62c5"
+  }
+}

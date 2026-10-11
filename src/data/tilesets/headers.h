@@ -4891,3 +4891,106 @@ const struct Tileset gTileset_AraunaSSTidal08C =
     .callback = NULL,
 };
 // SS_TIDAL_08C_END
+
+// SPECIAL_ISLANDS_08D_BEGIN
+const struct Tileset gTileset_AraunaIslands08DSouthernPrimary =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AraunaIslands08DSouthernPrimary,
+    .palettes = gTilesetPalettes_AraunaIslands08DSouthernPrimary,
+    .metatiles = gMetatiles_AraunaIslands08DSouthernPrimary,
+    .metatileAttributes = gMetatileAttributes_AraunaIslands08DSouthernPrimary,
+    .callback = InitTilesetAnim_General,
+};
+const struct Tileset gTileset_AraunaIslands08DSouthern =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaIslands08DSouthern,
+    .palettes = gTilesetPalettes_AraunaIslands08DSouthern,
+    .metatiles = gMetatiles_AraunaIslands08DSouthern,
+    .metatileAttributes = gMetatileAttributes_AraunaIslands08DSouthern,
+    .callback = InitTilesetAnim_Rustboro,
+};
+const struct Tileset gTileset_AraunaIslands08DBirthPrimary =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AraunaIslands08DBirthPrimary,
+    .palettes = gTilesetPalettes_AraunaIslands08DBirthPrimary,
+    .metatiles = gMetatiles_AraunaIslands08DBirthPrimary,
+    .metatileAttributes = gMetatileAttributes_AraunaIslands08DBirthPrimary,
+    .callback = InitTilesetAnim_General,
+};
+const struct Tileset gTileset_AraunaIslands08DBirth =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaIslands08DBirth,
+    .palettes = gTilesetPalettes_AraunaIslands08DBirth,
+    .metatiles = gMetatiles_AraunaIslands08DBirth,
+    .metatileAttributes = gMetatileAttributes_AraunaIslands08DBirth,
+    .callback = InitTilesetAnim_Dewford,
+};
+const struct Tileset gTileset_AraunaIslands08DIslandHarborPrimary =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AraunaIslands08DIslandHarborPrimary,
+    .palettes = gTilesetPalettes_AraunaIslands08DIslandHarborPrimary,
+    .metatiles = gMetatiles_AraunaIslands08DIslandHarborPrimary,
+    .metatileAttributes = gMetatileAttributes_AraunaIslands08DIslandHarborPrimary,
+    .callback = InitTilesetAnim_General,
+};
+const struct Tileset gTileset_AraunaIslands08DIslandHarbor =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaIslands08DIslandHarbor,
+    .palettes = gTilesetPalettes_AraunaIslands08DIslandHarbor,
+    .metatiles = gMetatiles_AraunaIslands08DIslandHarbor,
+    .metatileAttributes = gMetatileAttributes_AraunaIslands08DIslandHarbor,
+    .callback = NULL,
+};
+const struct Tileset gTileset_AraunaIslands08DFarawayCoastPrimary =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AraunaIslands08DFarawayCoastPrimary,
+    .palettes = gTilesetPalettes_AraunaIslands08DFarawayCoastPrimary,
+    .metatiles = gMetatiles_AraunaIslands08DFarawayCoastPrimary,
+    .metatileAttributes = gMetatileAttributes_AraunaIslands08DFarawayCoastPrimary,
+    .callback = InitTilesetAnim_General,
+};
+const struct Tileset gTileset_AraunaIslands08DFarawayCoast =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaIslands08DFarawayCoast,
+    .palettes = gTilesetPalettes_AraunaIslands08DFarawayCoast,
+    .metatiles = gMetatiles_AraunaIslands08DFarawayCoast,
+    .metatileAttributes = gMetatileAttributes_AraunaIslands08DFarawayCoast,
+    .callback = InitTilesetAnim_Rustboro,
+};
+const struct Tileset gTileset_AraunaIslands08DFarawayForestPrimary =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AraunaIslands08DFarawayForestPrimary,
+    .palettes = gTilesetPalettes_AraunaIslands08DFarawayForestPrimary,
+    .metatiles = gMetatiles_AraunaIslands08DFarawayForestPrimary,
+    .metatileAttributes = gMetatileAttributes_AraunaIslands08DFarawayForestPrimary,
+    .callback = InitTilesetAnim_General,
+};
+const struct Tileset gTileset_AraunaIslands08DFarawayForest =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaIslands08DFarawayForest,
+    .palettes = gTilesetPalettes_AraunaIslands08DFarawayForest,
+    .metatiles = gMetatiles_AraunaIslands08DFarawayForest,
+    .metatileAttributes = gMetatileAttributes_AraunaIslands08DFarawayForest,
+    .callback = InitTilesetAnim_Fortree,
+};
+// SPECIAL_ISLANDS_08D_END

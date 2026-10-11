@@ -1,0 +1,281 @@
+{
+  "status": "PASS",
+  "base_commit": "72b72497acecfec8a14be009c9bebff3d2621877",
+  "protected_existing_files": 24388,
+  "protected_fixes": {
+    "src/party_menu.c": "e05f9efb61cfd652e56a361ba1e8b826f614abc0e684438a0b031b036679d08f",
+    "src/field_player_avatar.c": "81ebe4b5761f8992cb459cf37978262358231734a1c56f8b3447346f770db95f",
+    "src/scrcmd.c": "98cd4b72474c3cc7dfd5dc6cf54a4a96f807733017761a2be58d62b0dcd063a9",
+    "data/maps/SlateportCity_Harbor/scripts.inc": "fc256e12cb37712c2a2b3e026d442e6baa55ed6560909e7cadecda83c19167ea",
+    "data/maps/LilycoveCity_Harbor/scripts.inc": "46ab224e74a02b311a9a38b0eb8f940b169e9e5d83844283ccda00be39ebd18c",
+    "data/maps/FallarborTown_CozmosHouse/scripts.inc": "798dc439a26a33d0845646eab56d599d7712e34414c712304d834ae4eb89f4a6",
+    "data/maps/Route116/scripts.inc": "cd955b92f802f347645b82cc1bc54aa1715d35097009f7504ec98079c46a62c5"
+  },
+  "historical_contracts": {
+    "desert_08b1": {
+      "contract": "unchanged",
+      "documented_integration_exceptions": [
+        "data/maps/FallarborTown_CozmosHouse/scripts.inc",
+        "data/maps/LilycoveCity_Harbor/scripts.inc",
+        "data/maps/Route116/scripts.inc",
+        "data/maps/SlateportCity_Harbor/scripts.inc",
+        "src/field_player_avatar.c",
+        "src/party_menu.c",
+        "src/scrcmd.c"
+      ]
+    },
+    "desert_08b2": {
+      "contract": "unchanged",
+      "documented_integration_exceptions": [
+        "data/maps/FallarborTown_CozmosHouse/scripts.inc",
+        "data/maps/LilycoveCity_Harbor/scripts.inc",
+        "data/maps/Route116/scripts.inc",
+        "data/maps/SlateportCity_Harbor/scripts.inc",
+        "src/field_player_avatar.c",
+        "src/scrcmd.c"
+      ]
+    },
+    "mirage_08b3": {
+      "contract": "unchanged",
+      "documented_integration_exceptions": [
+        "data/maps/FallarborTown_CozmosHouse/scripts.inc",
+        "data/maps/LilycoveCity_Harbor/scripts.inc",
+        "data/maps/Route116/scripts.inc",
+        "data/maps/SlateportCity_Harbor/scripts.inc"
+      ]
+    },
+    "sstidal_08c": {
+      "contract": "unchanged",
+      "documented_integration_exceptions": [
+        "data/maps/FallarborTown_CozmosHouse/scripts.inc",
+        "data/maps/LilycoveCity_Harbor/scripts.inc",
+        "data/maps/Route116/scripts.inc",
+        "data/maps/SlateportCity_Harbor/scripts.inc"
+      ]
+    }
+  },
+  "layouts_preserved": 754,
+  "groups": {
+    "southern": {
+      "redrawn_ids": 65,
+      "new_static_slots": 125,
+      "static_sea_quarters_preserved": 0,
+      "callbacks_preserved": [
+        "InitTilesetAnim_General",
+        "InitTilesetAnim_Rustboro"
+      ],
+      "complete_attributes": "identical",
+      "palettes_0_through_11": "identical",
+      "runtime_ids_checked": [
+        "0x1",
+        "0xd",
+        "0xe",
+        "0x25",
+        "0x1c6",
+        "0x1c7",
+        "0x1ce",
+        "0x1cf"
+      ]
+    },
+    "birth": {
+      "redrawn_ids": 84,
+      "new_static_slots": 158,
+      "static_sea_quarters_preserved": 0,
+      "callbacks_preserved": [
+        "InitTilesetAnim_General",
+        "InitTilesetAnim_Dewford"
+      ],
+      "complete_attributes": "identical",
+      "palettes_0_through_11": "identical",
+      "runtime_ids_checked": []
+    },
+    "harbor": {
+      "redrawn_ids": 30,
+      "new_static_slots": 50,
+      "static_sea_quarters_preserved": 0,
+      "callbacks_preserved": [
+        "InitTilesetAnim_General",
+        "NULL"
+      ],
+      "complete_attributes": "identical",
+      "palettes_0_through_11": "identical",
+      "runtime_ids_checked": []
+    },
+    "faraway_entrance": {
+      "redrawn_ids": 48,
+      "new_static_slots": 95,
+      "static_sea_quarters_preserved": 0,
+      "callbacks_preserved": [
+        "InitTilesetAnim_General",
+        "InitTilesetAnim_Rustboro"
+      ],
+      "complete_attributes": "identical",
+      "palettes_0_through_11": "identical",
+      "runtime_ids_checked": [
+        "0x1",
+        "0xd",
+        "0xe",
+        "0x25",
+        "0x1c6",
+        "0x1c7",
+        "0x1ce",
+        "0x1cf"
+      ]
+    },
+    "faraway_interior": {
+      "redrawn_ids": 27,
+      "new_static_slots": 51,
+      "static_sea_quarters_preserved": 0,
+      "callbacks_preserved": [
+        "InitTilesetAnim_General",
+        "InitTilesetAnim_Fortree"
+      ],
+      "complete_attributes": "identical",
+      "palettes_0_through_11": "identical",
+      "runtime_ids_checked": [
+        "0x1",
+        "0xd",
+        "0xe",
+        "0x25",
+        "0x1c6",
+        "0x1c7",
+        "0x1ce",
+        "0x1cf",
+        "0x208",
+        "0x279",
+        "0x27a",
+        "0x27b",
+        "0x281",
+        "0x282",
+        "0x283"
+      ]
+    }
+  },
+  "redrawn_id_instances": 254,
+  "native_layer_masks_checked": 630,
+  "unredrawn_pixel_identical_metatiles": 4135,
+  "animated_quarters_preserved": 388,
+  "water_state_frame_comparisons": 488,
+  "maps": {
+    "SouthernIsland_Exterior": {
+      "cells": 990,
+      "warps": 2,
+      "objects": 2,
+      "coord_events": 0,
+      "bg_events": 1,
+      "scripts_grid_border_collision_elevation": "byte-identical to 72b72497ac"
+    },
+    "SouthernIsland_Interior": {
+      "cells": 648,
+      "warps": 2,
+      "objects": 2,
+      "coord_events": 0,
+      "bg_events": 1,
+      "scripts_grid_border_collision_elevation": "byte-identical to 72b72497ac"
+    },
+    "BirthIsland_Exterior": {
+      "cells": 900,
+      "warps": 1,
+      "objects": 2,
+      "coord_events": 0,
+      "bg_events": 0,
+      "scripts_grid_border_collision_elevation": "byte-identical to 72b72497ac"
+    },
+    "BirthIsland_Harbor": {
+      "cells": 221,
+      "warps": 1,
+      "objects": 2,
+      "coord_events": 0,
+      "bg_events": 0,
+      "scripts_grid_border_collision_elevation": "byte-identical to 72b72497ac"
+    },
+    "FarawayIsland_Entrance": {
+      "cells": 1564,
+      "warps": 2,
+      "objects": 2,
+      "coord_events": 3,
+      "bg_events": 1,
+      "scripts_grid_border_collision_elevation": "byte-identical to 72b72497ac"
+    },
+    "FarawayIsland_Interior": {
+      "cells": 754,
+      "warps": 2,
+      "objects": 1,
+      "coord_events": 0,
+      "bg_events": 0,
+      "scripts_grid_border_collision_elevation": "byte-identical to 72b72497ac"
+    }
+  },
+  "mew_rocks": [
+    {
+      "x": 14,
+      "y": 9,
+      "cell": "0x4e0"
+    },
+    {
+      "x": 18,
+      "y": 9,
+      "cell": "0x4e0"
+    },
+    {
+      "x": 9,
+      "y": 10,
+      "cell": "0x4e0"
+    },
+    {
+      "x": 13,
+      "y": 13,
+      "cell": "0x4e0"
+    }
+  ],
+  "deoxys_11_positions": [
+    [
+      15,
+      12
+    ],
+    [
+      11,
+      14
+    ],
+    [
+      15,
+      8
+    ],
+    [
+      19,
+      14
+    ],
+    [
+      12,
+      11
+    ],
+    [
+      18,
+      11
+    ],
+    [
+      15,
+      14
+    ],
+    [
+      11,
+      14
+    ],
+    [
+      19,
+      14
+    ],
+    [
+      15,
+      15
+    ],
+    [
+      15,
+      10
+    ]
+  ],
+  "mechanics": "tickets, ferry returns, Lati encounter/Soul Dew, Deoxys coordinates/step limits/11 sprite palettes, Mew pursuit/Cut/grass effects and capture/defeat/flee flags frozen",
+  "verification_scope": "source hashes, exact native grids and attributes, runtime state artwork, DMA words and renders; no simulated gameplay or battles",
+  "rom_build": "pending; ARM compiler unavailable",
+  "mgba": "pending for new 08D; 08C acceptance is in INTEGRACAO_08C.md"
+}
