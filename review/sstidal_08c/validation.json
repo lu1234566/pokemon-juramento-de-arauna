@@ -1,0 +1,125 @@
+{
+  "status": "PASS",
+  "base_commit": "54c82e4430fcc3673afc3686db07fcb26ce755c8",
+  "protected_existing_files": 24325,
+  "protected_fixes": {
+    "src/party_menu.c": "e05f9efb61cfd652e56a361ba1e8b826f614abc0e684438a0b031b036679d08f",
+    "src/field_player_avatar.c": "81ebe4b5761f8992cb459cf37978262358231734a1c56f8b3447346f770db95f",
+    "src/scrcmd.c": "98cd4b72474c3cc7dfd5dc6cf54a4a96f807733017761a2be58d62b0dcd063a9"
+  },
+  "historical_contracts": {
+    "08b1": {
+      "contract": "unchanged",
+      "intentional_integration_exceptions": [
+        "src/field_player_avatar.c",
+        "src/party_menu.c",
+        "src/scrcmd.c"
+      ]
+    },
+    "08b2": {
+      "contract": "unchanged",
+      "intentional_integration_exceptions": [
+        "src/field_player_avatar.c",
+        "src/scrcmd.c"
+      ]
+    },
+    "08b3": {
+      "contract": "unchanged",
+      "intentional_integration_exceptions": []
+    }
+  },
+  "layouts_preserved": 754,
+  "redrawn_ids": 125,
+  "native_layer_masks_checked": 260,
+  "unchanged_pixel_identical_metatiles": 639,
+  "maps": {
+    "SSTidalCorridor": {
+      "cells": 234,
+      "warp_count": 9,
+      "object_count": 5,
+      "bg_event_count": 12,
+      "animated_door_stacks": [
+        {
+          "x": 4,
+          "y": 9,
+          "bottom": "0x22b",
+          "top": "0x223"
+        },
+        {
+          "x": 7,
+          "y": 9,
+          "bottom": "0x22b",
+          "top": "0x223"
+        },
+        {
+          "x": 10,
+          "y": 9,
+          "bottom": "0x22b",
+          "top": "0x223"
+        },
+        {
+          "x": 13,
+          "y": 9,
+          "bottom": "0x22b",
+          "top": "0x223"
+        }
+      ],
+      "scripts_events_collision_elevation": "byte-identical"
+    },
+    "SSTidalLowerDeck": {
+      "cells": 221,
+      "warp_count": 1,
+      "object_count": 2,
+      "bg_event_count": 1,
+      "animated_door_stacks": [],
+      "scripts_events_collision_elevation": "byte-identical"
+    },
+    "SSTidalRooms": {
+      "cells": 648,
+      "warp_count": 12,
+      "object_count": 8,
+      "bg_event_count": 2,
+      "animated_door_stacks": [
+        {
+          "x": 4,
+          "y": 1,
+          "bottom": "0x297",
+          "top": "0x263"
+        },
+        {
+          "x": 13,
+          "y": 1,
+          "bottom": "0x297",
+          "top": "0x263"
+        },
+        {
+          "x": 22,
+          "y": 1,
+          "bottom": "0x297",
+          "top": "0x263"
+        },
+        {
+          "x": 31,
+          "y": 1,
+          "bottom": "0x297",
+          "top": "0x263"
+        }
+      ],
+      "scripts_events_collision_elevation": "byte-identical"
+    }
+  },
+  "door_animation": {
+    "preserved_ids": [
+      "0x223",
+      "0x22b",
+      "0x263",
+      "0x297"
+    ],
+    "stacks": 8,
+    "frames_palette7_source_and_field_door": "byte-identical; closed top/bottom preserved in all eight animated doorways"
+  },
+  "journey_logic": "Scott invitation, dynamic destinations, voyage steps, portholes, party healing, Snatch TM, Leftovers and trainer state protected byte-for-byte",
+  "verification_scope": "source hashes, native 4bpp assets, attributes and door stacks; no simulated voyage or battles",
+  "rom_build": "pending; ARM toolchain unavailable",
+  "mgba": "pending for new 08C; previous 08B3 acceptance recorded in INTEGRACAO_08B3.md"
+}

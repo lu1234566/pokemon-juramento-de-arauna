@@ -2766,8 +2766,8 @@
       "name": "SSTidalCorridor_Layout",
       "width": 18,
       "height": 13,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_InsideShip",
+      "primary_tileset": "gTileset_AraunaSSTidal08CPrimary",
+      "secondary_tileset": "gTileset_AraunaSSTidal08C",
       "border_filepath": "data/layouts/SSTidalCorridor/border.bin",
       "blockdata_filepath": "data/layouts/SSTidalCorridor/map.bin"
     },
@@ -2776,8 +2776,8 @@
       "name": "SSTidalLowerDeck_Layout",
       "width": 17,
       "height": 13,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_InsideShip",
+      "primary_tileset": "gTileset_AraunaSSTidal08CPrimary",
+      "secondary_tileset": "gTileset_AraunaSSTidal08C",
       "border_filepath": "data/layouts/SSTidalLowerDeck/border.bin",
       "blockdata_filepath": "data/layouts/SSTidalLowerDeck/map.bin"
     },
@@ -2786,8 +2786,8 @@
       "name": "SSTidalRooms_Layout",
       "width": 36,
       "height": 18,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_InsideShip",
+      "primary_tileset": "gTileset_AraunaSSTidal08CPrimary",
+      "secondary_tileset": "gTileset_AraunaSSTidal08C",
       "border_filepath": "data/layouts/SSTidalRooms/border.bin",
       "blockdata_filepath": "data/layouts/SSTidalRooms/map.bin"
     },

@@ -4868,3 +4868,26 @@ const struct Tileset gTileset_AraunaMirage08B3 =
     .callback = NULL,
 };
 // MIRAGE_08B3_END
+
+// SS_TIDAL_08C_BEGIN
+const struct Tileset gTileset_AraunaSSTidal08CPrimary =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AraunaSSTidal08CPrimary,
+    .palettes = gTilesetPalettes_AraunaSSTidal08CPrimary,
+    .metatiles = gMetatiles_AraunaSSTidal08CPrimary,
+    .metatileAttributes = gMetatileAttributes_AraunaSSTidal08CPrimary,
+    .callback = InitTilesetAnim_General,
+};
+const struct Tileset gTileset_AraunaSSTidal08C =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaSSTidal08C,
+    .palettes = gTilesetPalettes_AraunaSSTidal08C,
+    .metatiles = gMetatiles_AraunaSSTidal08C,
+    .metatileAttributes = gMetatileAttributes_AraunaSSTidal08C,
+    .callback = NULL,
+};
+// SS_TIDAL_08C_END

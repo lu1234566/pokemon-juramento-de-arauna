@@ -1249,3 +1249,10 @@ const u16 gMetatileAttributes_AraunaMirage08B3Primary[] = INCBIN_U16("data/tiles
 const u16 gMetatiles_AraunaMirage08B3[] = INCBIN_U16("data/tilesets/secondary/arauna_mirage08b3/metatiles.bin");
 const u16 gMetatileAttributes_AraunaMirage08B3[] = INCBIN_U16("data/tilesets/secondary/arauna_mirage08b3/metatile_attributes.bin");
 // MIRAGE_08B3_END
+
+// SS_TIDAL_08C_BEGIN
+const u16 gMetatiles_AraunaSSTidal08CPrimary[] = INCBIN_U16("data/tilesets/primary/arauna_sstidal08c/metatiles.bin");
+const u16 gMetatileAttributes_AraunaSSTidal08CPrimary[] = INCBIN_U16("data/tilesets/primary/arauna_sstidal08c/metatile_attributes.bin");
+const u16 gMetatiles_AraunaSSTidal08C[] = INCBIN_U16("data/tilesets/secondary/arauna_sstidal08c/metatiles.bin");
+const u16 gMetatileAttributes_AraunaSSTidal08C[] = INCBIN_U16("data/tilesets/secondary/arauna_sstidal08c/metatile_attributes.bin");
+// SS_TIDAL_08C_END
