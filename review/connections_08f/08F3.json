@@ -1,0 +1,9 @@
+{
+  "status": "PASS_STATIC",
+  "maps": [
+    "UnionRoom"
+  ],
+  "base_commit": "f0f08e4ed2edea95963f979fb81a82dbb8b53400",
+  "validation": "review/connections_08f/validation.json",
+  "runtime_acceptance": "pending mGBA and compatible multiplayer session"
+}

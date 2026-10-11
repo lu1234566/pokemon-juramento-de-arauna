@@ -1,0 +1,97 @@
+{
+  "status": "PASS",
+  "base_commit": "f0f08e4ed2edea95963f979fb81a82dbb8b53400",
+  "payload_files": 176,
+  "protected_existing_files": 24843,
+  "case_count": 17,
+  "cases": [
+    {
+      "case": "preflight writes zero",
+      "status": "PASS",
+      "files": 176,
+      "written": 0
+    },
+    {
+      "case": "reject historical src/party_menu.c",
+      "status": "PASS",
+      "written": 0
+    },
+    {
+      "case": "reject historical src/field_player_avatar.c",
+      "status": "PASS",
+      "written": 0
+    },
+    {
+      "case": "reject historical src/scrcmd.c",
+      "status": "PASS",
+      "written": 0
+    },
+    {
+      "case": "reject historical data/maps/SlateportCity_Harbor/scripts.inc",
+      "status": "PASS",
+      "written": 0
+    },
+    {
+      "case": "reject historical data/maps/LilycoveCity_Harbor/scripts.inc",
+      "status": "PASS",
+      "written": 0
+    },
+    {
+      "case": "reject historical data/maps/FallarborTown_CozmosHouse/scripts.inc",
+      "status": "PASS",
+      "written": 0
+    },
+    {
+      "case": "reject historical data/maps/Route116/scripts.inc",
+      "status": "PASS",
+      "written": 0
+    },
+    {
+      "case": "reject corrupt source payload",
+      "status": "PASS",
+      "written": 0
+    },
+    {
+      "case": "reject changed protected Clinic",
+      "status": "PASS",
+      "written": 0
+    },
+    {
+      "case": "reject altered wireless group occupancy code",
+      "status": "PASS",
+      "written": 0
+    },
+    {
+      "case": "reject unknown local registry edit",
+      "status": "PASS",
+      "written": 0
+    },
+    {
+      "case": "reject obsolete checkout base",
+      "status": "PASS",
+      "written": 0
+    },
+    {
+      "case": "automatic rollback after second write fails",
+      "status": "PASS",
+      "restored_entire_checkout": true
+    },
+    {
+      "case": "actual installation preserves all dependencies",
+      "status": "PASS",
+      "written": 176
+    },
+    {
+      "case": "reapply writes zero",
+      "status": "PASS",
+      "written": 0
+    },
+    {
+      "case": "manual rollback from shipped backup",
+      "status": "PASS",
+      "restored_entire_checkout": true
+    }
+  ],
+  "head_changed": false,
+  "method": "actual shipped install.py; isolated detached worktree, full before/after file hashes"
+}

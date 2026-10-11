@@ -1,0 +1,45 @@
+  PASS  all four faction archetypes are in the manifest                           -- HORIZONTE M/F, LEMBRANTE M/F
+  PASS  HORIZONTE_M is wired to OBJ_EVENT_GFX_AQUA_MEMBER_M                       -- OBJ_EVENT_GFX_AQUA_MEMBER_M
+  PASS  HORIZONTE_M belongs to CONSORCIO HORIZONTE                                -- CONSORCIO HORIZONTE
+  PASS  HORIZONTE_M's graphics id points at the graphics info the manifest names  -- OBJ_EVENT_GFX_AQUA_MEMBER_M -> AquaMemberM
+  PASS  HORIZONTE_M carries its own palette tag                                   -- OBJ_EVENT_PAL_TAG_HORIZONTE_M
+  PASS  HORIZONTE_M's palette belongs to nobody else                              -- AquaMemberM
+  PASS  HORIZONTE_M draws nine frames from one sheet                              -- 9 frames from ['gObjectEventPic_AquaMemberM']
+  PASS  HORIZONTE_M's sheet is the file the ROM links                             -- graphics/object_events/pics/people/team_aqua/aqua_member_m.png
+  PASS  HORIZONTE_M's front is the file the ROM links                             -- graphics/trainers/front_pics/aqua_grunt_m.png
+  PASS  HORIZONTE_M's front is only used by faction trainers                      -- 19 trainers
+  PASS  HORIZONTE_F is wired to OBJ_EVENT_GFX_AQUA_MEMBER_F                       -- OBJ_EVENT_GFX_AQUA_MEMBER_F
+  PASS  HORIZONTE_F belongs to CONSORCIO HORIZONTE                                -- CONSORCIO HORIZONTE
+  PASS  HORIZONTE_F's graphics id points at the graphics info the manifest names  -- OBJ_EVENT_GFX_AQUA_MEMBER_F -> AquaMemberF
+  PASS  HORIZONTE_F carries its own palette tag                                   -- OBJ_EVENT_PAL_TAG_HORIZONTE_F
+  PASS  HORIZONTE_F's palette belongs to nobody else                              -- AquaMemberF
+  PASS  HORIZONTE_F draws nine frames from one sheet                              -- 9 frames from ['gObjectEventPic_AquaMemberF']
+  PASS  HORIZONTE_F's sheet is the file the ROM links                             -- graphics/object_events/pics/people/team_aqua/aqua_member_f.png
+  PASS  HORIZONTE_F's front is the file the ROM links                             -- graphics/trainers/front_pics/aqua_grunt_f.png
+  PASS  HORIZONTE_F's front is only used by faction trainers                      -- 8 trainers
+  PASS  LEMBRANTE_M is wired to OBJ_EVENT_GFX_MAGMA_MEMBER_M                      -- OBJ_EVENT_GFX_MAGMA_MEMBER_M
+  PASS  LEMBRANTE_M belongs to LEMBRANTES                                         -- LEMBRANTES
+  PASS  LEMBRANTE_M's graphics id points at the graphics info the manifest names  -- OBJ_EVENT_GFX_MAGMA_MEMBER_M -> MagmaMemberM
+  PASS  LEMBRANTE_M carries its own palette tag                                   -- OBJ_EVENT_PAL_TAG_LEMBRANTE_M
+  PASS  LEMBRANTE_M's palette belongs to nobody else                              -- MagmaMemberM
+  PASS  LEMBRANTE_M draws nine frames from one sheet                              -- 9 frames from ['gObjectEventPic_MagmaMemberM']
+  PASS  LEMBRANTE_M's sheet is the file the ROM links                             -- graphics/object_events/pics/people/team_magma/magma_member_m.png
+  PASS  LEMBRANTE_M's front is the file the ROM links                             -- graphics/trainers/front_pics/magma_grunt_m.png
+  PASS  LEMBRANTE_M's front is only used by faction trainers                      -- 21 trainers
+  PASS  LEMBRANTE_F is wired to OBJ_EVENT_GFX_MAGMA_MEMBER_F                      -- OBJ_EVENT_GFX_MAGMA_MEMBER_F
+  PASS  LEMBRANTE_F belongs to LEMBRANTES                                         -- LEMBRANTES
+  PASS  LEMBRANTE_F's graphics id points at the graphics info the manifest names  -- OBJ_EVENT_GFX_MAGMA_MEMBER_F -> MagmaMemberF
+  PASS  LEMBRANTE_F carries its own palette tag                                   -- OBJ_EVENT_PAL_TAG_LEMBRANTE_F
+  PASS  LEMBRANTE_F's palette belongs to nobody else                              -- MagmaMemberF
+  PASS  LEMBRANTE_F draws nine frames from one sheet                              -- 9 frames from ['gObjectEventPic_MagmaMemberF']
+  PASS  LEMBRANTE_F's sheet is the file the ROM links                             -- graphics/object_events/pics/people/team_magma/magma_member_f.png
+  PASS  LEMBRANTE_F's front is the file the ROM links                             -- graphics/trainers/front_pics/magma_grunt_f.png
+  PASS  LEMBRANTE_F's front is only used by faction trainers                      -- 5 trainers
+  PASS  the two HORIZONTE variants are not the same character                     -- gObjectEventPic_AquaMemberM/OBJ_EVENT_PAL_TAG_HORIZONTE_M vs gObjectEventPic_AquaMemberF/OBJ_EVENT_PAL_TAG_HORIZONTE_F
+  PASS  the two LEMBRANTE variants are not the same character                     -- gObjectEventPic_MagmaMemberM/OBJ_EVENT_PAL_TAG_LEMBRANTE_M vs gObjectEventPic_MagmaMemberF/OBJ_EVENT_PAL_TAG_LEMBRANTE_F
+  PASS  the two factions are not the same character                               -- gObjectEventPic_AquaMemberM/OBJ_EVENT_PAL_TAG_HORIZONTE_M vs gObjectEventPic_MagmaMemberM/OBJ_EVENT_PAL_TAG_LEMBRANTE_M
+  PASS  TRAINER_CLASS_TEAM_AQUA shows a faction name in battle                    -- HORIZON
+  PASS  TRAINER_CLASS_TEAM_MAGMA shows a faction name in battle                   -- REMEMBRANCER
+  PASS  RAUL is not wearing the LEMBRANTE grunt graphic again                     -- OBJ_EVENT_GFX_VAR_B / Raul
+
+43/43 faction identity checks passed

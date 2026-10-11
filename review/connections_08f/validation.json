@@ -1,0 +1,620 @@
+{
+  "status": "PASS",
+  "base_commit": "f0f08e4ed2edea95963f979fb81a82dbb8b53400",
+  "protected_existing_files": 24843,
+  "protected_fixes": {
+    "src/party_menu.c": "e05f9efb61cfd652e56a361ba1e8b826f614abc0e684438a0b031b036679d08f",
+    "src/field_player_avatar.c": "81ebe4b5761f8992cb459cf37978262358231734a1c56f8b3447346f770db95f",
+    "src/scrcmd.c": "98cd4b72474c3cc7dfd5dc6cf54a4a96f807733017761a2be58d62b0dcd063a9",
+    "data/maps/SlateportCity_Harbor/scripts.inc": "fc256e12cb37712c2a2b3e026d442e6baa55ed6560909e7cadecda83c19167ea",
+    "data/maps/LilycoveCity_Harbor/scripts.inc": "46ab224e74a02b311a9a38b0eb8f940b169e9e5d83844283ccda00be39ebd18c",
+    "data/maps/FallarborTown_CozmosHouse/scripts.inc": "798dc439a26a33d0845646eab56d599d7712e34414c712304d834ae4eb89f4a6",
+    "data/maps/Route116/scripts.inc": "cd955b92f802f347645b82cc1bc54aa1715d35097009f7504ec98079c46a62c5"
+  },
+  "historical_contracts": {
+    "desert_08b1": {
+      "contract": "unchanged",
+      "documented_integration_exceptions": [
+        "data/maps/FallarborTown_CozmosHouse/scripts.inc",
+        "data/maps/LilycoveCity_Harbor/scripts.inc",
+        "data/maps/Route116/scripts.inc",
+        "data/maps/SlateportCity_Harbor/scripts.inc",
+        "src/field_player_avatar.c",
+        "src/party_menu.c",
+        "src/scrcmd.c"
+      ]
+    },
+    "desert_08b2": {
+      "contract": "unchanged",
+      "documented_integration_exceptions": [
+        "data/maps/FallarborTown_CozmosHouse/scripts.inc",
+        "data/maps/LilycoveCity_Harbor/scripts.inc",
+        "data/maps/Route116/scripts.inc",
+        "data/maps/SlateportCity_Harbor/scripts.inc",
+        "src/field_player_avatar.c",
+        "src/scrcmd.c"
+      ]
+    },
+    "mirage_08b3": {
+      "contract": "unchanged",
+      "documented_integration_exceptions": [
+        "data/maps/FallarborTown_CozmosHouse/scripts.inc",
+        "data/maps/LilycoveCity_Harbor/scripts.inc",
+        "data/maps/Route116/scripts.inc",
+        "data/maps/SlateportCity_Harbor/scripts.inc"
+      ]
+    },
+    "sstidal_08c": {
+      "contract": "unchanged",
+      "documented_integration_exceptions": [
+        "data/maps/FallarborTown_CozmosHouse/scripts.inc",
+        "data/maps/LilycoveCity_Harbor/scripts.inc",
+        "data/maps/Route116/scripts.inc",
+        "data/maps/SlateportCity_Harbor/scripts.inc"
+      ]
+    },
+    "islands_08d": {
+      "contract": "unchanged",
+      "documented_integration_exceptions": []
+    },
+    "contests_08e": {
+      "contract": "unchanged",
+      "documented_integration_exceptions": []
+    }
+  },
+  "layouts_preserved": 754,
+  "groups": {
+    "colosseum": {
+      "redrawn_ids": 59,
+      "new_static_slots": 114,
+      "callbacks_preserved": [
+        "InitTilesetAnim_Building",
+        "NULL"
+      ],
+      "complete_attributes": "identical",
+      "palettes_0_through_11": "identical",
+      "runtime_metatile_swaps": "none in these rooms; Cable Club gates are in frozen Centers; UnionRoom toggles occupancy flags",
+      "compression_preserved": [
+        true,
+        false
+      ]
+    },
+    "records": {
+      "redrawn_ids": 60,
+      "new_static_slots": 154,
+      "callbacks_preserved": [
+        "InitTilesetAnim_Building",
+        "NULL"
+      ],
+      "complete_attributes": "identical",
+      "palettes_0_through_11": "identical",
+      "runtime_metatile_swaps": "none in these rooms; Cable Club gates are in frozen Centers; UnionRoom toggles occupancy flags",
+      "compression_preserved": [
+        true,
+        false
+      ]
+    },
+    "trade": {
+      "redrawn_ids": 75,
+      "new_static_slots": 158,
+      "callbacks_preserved": [
+        "InitTilesetAnim_Building",
+        "NULL"
+      ],
+      "complete_attributes": "identical",
+      "palettes_0_through_11": "identical",
+      "runtime_metatile_swaps": "none in these rooms; Cable Club gates are in frozen Centers; UnionRoom toggles occupancy flags",
+      "compression_preserved": [
+        true,
+        false
+      ]
+    },
+    "union": {
+      "redrawn_ids": 37,
+      "new_static_slots": 115,
+      "callbacks_preserved": [
+        "InitTilesetAnim_Building",
+        "NULL"
+      ],
+      "complete_attributes": "identical",
+      "palettes_0_through_11": "identical",
+      "runtime_metatile_swaps": "none in these rooms; Cable Club gates are in frozen Centers; UnionRoom toggles occupancy flags",
+      "compression_preserved": [
+        true,
+        true
+      ]
+    }
+  },
+  "redrawn_id_instances": 231,
+  "native_layer_masks_checked": 462,
+  "unredrawn_pixel_identical_metatiles": 618,
+  "animated_quarters_preserved": 0,
+  "maps": {
+    "BattleColosseum_2P": {
+      "cells": 126,
+      "objects": 1,
+      "dynamic_return_warps": 2,
+      "coord_events": 2,
+      "scripts_grid_border_collision_elevation": "byte-identical to f0f08e4ed2"
+    },
+    "BattleColosseum_4P": {
+      "cells": 126,
+      "objects": 0,
+      "dynamic_return_warps": 4,
+      "coord_events": 4,
+      "scripts_grid_border_collision_elevation": "byte-identical to f0f08e4ed2"
+    },
+    "RecordCorner": {
+      "cells": 200,
+      "objects": 1,
+      "dynamic_return_warps": 4,
+      "coord_events": 4,
+      "scripts_grid_border_collision_elevation": "byte-identical to f0f08e4ed2"
+    },
+    "TradeCenter": {
+      "cells": 108,
+      "objects": 1,
+      "dynamic_return_warps": 2,
+      "coord_events": 2,
+      "scripts_grid_border_collision_elevation": "byte-identical to f0f08e4ed2"
+    },
+    "UnionRoom": {
+      "cells": 180,
+      "objects": 9,
+      "dynamic_return_warps": 2,
+      "coord_events": 0,
+      "scripts_grid_border_collision_elevation": "byte-identical to f0f08e4ed2"
+    }
+  },
+  "event_points_verified": [
+    {
+      "map": "BattleColosseum_2P",
+      "x": 6,
+      "y": 8,
+      "cell": "0x3221"
+    },
+    {
+      "map": "BattleColosseum_2P",
+      "x": 7,
+      "y": 8,
+      "cell": "0x3221"
+    },
+    {
+      "map": "BattleColosseum_2P",
+      "x": 3,
+      "y": 5,
+      "cell": "0x3260"
+    },
+    {
+      "map": "BattleColosseum_2P",
+      "x": 10,
+      "y": 5,
+      "cell": "0x3261"
+    },
+    {
+      "map": "BattleColosseum_4P",
+      "x": 5,
+      "y": 8,
+      "cell": "0x3221"
+    },
+    {
+      "map": "BattleColosseum_4P",
+      "x": 6,
+      "y": 8,
+      "cell": "0x3221"
+    },
+    {
+      "map": "BattleColosseum_4P",
+      "x": 7,
+      "y": 8,
+      "cell": "0x3221"
+    },
+    {
+      "map": "BattleColosseum_4P",
+      "x": 8,
+      "y": 8,
+      "cell": "0x3221"
+    },
+    {
+      "map": "BattleColosseum_4P",
+      "x": 3,
+      "y": 4,
+      "cell": "0x3260"
+    },
+    {
+      "map": "BattleColosseum_4P",
+      "x": 3,
+      "y": 6,
+      "cell": "0x3260"
+    },
+    {
+      "map": "BattleColosseum_4P",
+      "x": 10,
+      "y": 4,
+      "cell": "0x3261"
+    },
+    {
+      "map": "BattleColosseum_4P",
+      "x": 10,
+      "y": 6,
+      "cell": "0x3261"
+    },
+    {
+      "map": "RecordCorner",
+      "x": 8,
+      "y": 9,
+      "cell": "0x3222"
+    },
+    {
+      "map": "RecordCorner",
+      "x": 9,
+      "y": 9,
+      "cell": "0x3222"
+    },
+    {
+      "map": "RecordCorner",
+      "x": 11,
+      "y": 9,
+      "cell": "0x3222"
+    },
+    {
+      "map": "RecordCorner",
+      "x": 10,
+      "y": 9,
+      "cell": "0x3222"
+    },
+    {
+      "map": "RecordCorner",
+      "x": 6,
+      "y": 4,
+      "cell": "0x32ac"
+    },
+    {
+      "map": "RecordCorner",
+      "x": 6,
+      "y": 6,
+      "cell": "0x32ad"
+    },
+    {
+      "map": "RecordCorner",
+      "x": 13,
+      "y": 4,
+      "cell": "0x32ae"
+    },
+    {
+      "map": "RecordCorner",
+      "x": 13,
+      "y": 6,
+      "cell": "0x32af"
+    },
+    {
+      "map": "TradeCenter",
+      "x": 5,
+      "y": 8,
+      "cell": "0x322c"
+    },
+    {
+      "map": "TradeCenter",
+      "x": 6,
+      "y": 8,
+      "cell": "0x322d"
+    },
+    {
+      "map": "TradeCenter",
+      "x": 4,
+      "y": 5,
+      "cell": "0x3213"
+    },
+    {
+      "map": "TradeCenter",
+      "x": 7,
+      "y": 5,
+      "cell": "0x3216"
+    },
+    {
+      "map": "UnionRoom",
+      "x": 7,
+      "y": 11,
+      "cell": "0x321e"
+    },
+    {
+      "map": "UnionRoom",
+      "x": 8,
+      "y": 11,
+      "cell": "0x321f"
+    }
+  ],
+  "union_room_40_group_cells_verified": [
+    {
+      "leader": 0,
+      "member": 0,
+      "x": 4,
+      "y": 6,
+      "cell": "0x3213"
+    },
+    {
+      "leader": 0,
+      "member": 1,
+      "x": 5,
+      "y": 6,
+      "cell": "0x3213"
+    },
+    {
+      "leader": 0,
+      "member": 2,
+      "x": 4,
+      "y": 5,
+      "cell": "0x3213"
+    },
+    {
+      "leader": 0,
+      "member": 3,
+      "x": 3,
+      "y": 6,
+      "cell": "0x3213"
+    },
+    {
+      "leader": 0,
+      "member": 4,
+      "x": 4,
+      "y": 7,
+      "cell": "0x3213"
+    },
+    {
+      "leader": 1,
+      "member": 0,
+      "x": 13,
+      "y": 8,
+      "cell": "0x3213"
+    },
+    {
+      "leader": 1,
+      "member": 1,
+      "x": 14,
+      "y": 8,
+      "cell": "0x321c"
+    },
+    {
+      "leader": 1,
+      "member": 2,
+      "x": 13,
+      "y": 7,
+      "cell": "0x3213"
+    },
+    {
+      "leader": 1,
+      "member": 3,
+      "x": 12,
+      "y": 8,
+      "cell": "0x3213"
+    },
+    {
+      "leader": 1,
+      "member": 4,
+      "x": 13,
+      "y": 9,
+      "cell": "0x3213"
+    },
+    {
+      "leader": 2,
+      "member": 0,
+      "x": 10,
+      "y": 6,
+      "cell": "0x3213"
+    },
+    {
+      "leader": 2,
+      "member": 1,
+      "x": 11,
+      "y": 6,
+      "cell": "0x3213"
+    },
+    {
+      "leader": 2,
+      "member": 2,
+      "x": 10,
+      "y": 5,
+      "cell": "0x3213"
+    },
+    {
+      "leader": 2,
+      "member": 3,
+      "x": 9,
+      "y": 6,
+      "cell": "0x3213"
+    },
+    {
+      "leader": 2,
+      "member": 4,
+      "x": 10,
+      "y": 7,
+      "cell": "0x3213"
+    },
+    {
+      "leader": 3,
+      "member": 0,
+      "x": 1,
+      "y": 8,
+      "cell": "0x3213"
+    },
+    {
+      "leader": 3,
+      "member": 1,
+      "x": 2,
+      "y": 8,
+      "cell": "0x3213"
+    },
+    {
+      "leader": 3,
+      "member": 2,
+      "x": 1,
+      "y": 7,
+      "cell": "0x3213"
+    },
+    {
+      "leader": 3,
+      "member": 3,
+      "x": 0,
+      "y": 8,
+      "cell": "0x3214"
+    },
+    {
+      "leader": 3,
+      "member": 4,
+      "x": 1,
+      "y": 9,
+      "cell": "0x3213"
+    },
+    {
+      "leader": 4,
+      "member": 0,
+      "x": 13,
+      "y": 4,
+      "cell": "0x3213"
+    },
+    {
+      "leader": 4,
+      "member": 1,
+      "x": 14,
+      "y": 4,
+      "cell": "0x321c"
+    },
+    {
+      "leader": 4,
+      "member": 2,
+      "x": 13,
+      "y": 3,
+      "cell": "0x3213"
+    },
+    {
+      "leader": 4,
+      "member": 3,
+      "x": 12,
+      "y": 4,
+      "cell": "0x3213"
+    },
+    {
+      "leader": 4,
+      "member": 4,
+      "x": 13,
+      "y": 5,
+      "cell": "0x3213"
+    },
+    {
+      "leader": 5,
+      "member": 0,
+      "x": 7,
+      "y": 4,
+      "cell": "0x3213"
+    },
+    {
+      "leader": 5,
+      "member": 1,
+      "x": 8,
+      "y": 4,
+      "cell": "0x3213"
+    },
+    {
+      "leader": 5,
+      "member": 2,
+      "x": 7,
+      "y": 3,
+      "cell": "0x3213"
+    },
+    {
+      "leader": 5,
+      "member": 3,
+      "x": 6,
+      "y": 4,
+      "cell": "0x3213"
+    },
+    {
+      "leader": 5,
+      "member": 4,
+      "x": 7,
+      "y": 5,
+      "cell": "0x3211"
+    },
+    {
+      "leader": 6,
+      "member": 0,
+      "x": 1,
+      "y": 4,
+      "cell": "0x3213"
+    },
+    {
+      "leader": 6,
+      "member": 1,
+      "x": 2,
+      "y": 4,
+      "cell": "0x3213"
+    },
+    {
+      "leader": 6,
+      "member": 2,
+      "x": 1,
+      "y": 3,
+      "cell": "0x3213"
+    },
+    {
+      "leader": 6,
+      "member": 3,
+      "x": 0,
+      "y": 4,
+      "cell": "0x3214"
+    },
+    {
+      "leader": 6,
+      "member": 4,
+      "x": 1,
+      "y": 5,
+      "cell": "0x3213"
+    },
+    {
+      "leader": 7,
+      "member": 0,
+      "x": 7,
+      "y": 8,
+      "cell": "0x3213"
+    },
+    {
+      "leader": 7,
+      "member": 1,
+      "x": 8,
+      "y": 8,
+      "cell": "0x3213"
+    },
+    {
+      "leader": 7,
+      "member": 2,
+      "x": 7,
+      "y": 7,
+      "cell": "0x3221"
+    },
+    {
+      "leader": 7,
+      "member": 3,
+      "x": 6,
+      "y": 8,
+      "cell": "0x3213"
+    },
+    {
+      "leader": 7,
+      "member": 4,
+      "x": 7,
+      "y": 9,
+      "cell": "0x3213"
+    }
+  ],
+  "entry_points_verified": [
+    "warp MAP_BATTLE_COLOSSEUM_2P, 6, 8",
+    "warp MAP_BATTLE_COLOSSEUM_4P, 5, 8",
+    "setwarp MAP_TRADE_CENTER, 5, 8",
+    "setwarp MAP_RECORD_CORNER, 8, 9",
+    "warpspinenter MAP_UNION_ROOM, 7, 11"
+  ],
+  "mechanics": "two/four-player battles, party selection, trade seats, record mixing, dynamic returns, eight wireless groups and dynamic occupancy, session palettes and saved data frozen",
+  "verification_scope": "source hashes, exact native grids/attributes, layer footprints, compression, DMA words and renders; no simulated multiplayer session",
+  "rom_build": "pending; ARM compiler unavailable",
+  "mgba": "pending for new 08F; 08E real contests accepted in INTEGRACAO_08E.md; Link was not tested there"
+}

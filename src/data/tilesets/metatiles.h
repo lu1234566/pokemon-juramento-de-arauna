@@ -1306,3 +1306,22 @@ const u16 gMetatileAttributes_AraunaContests08EToughPrimary[] = INCBIN_U16("data
 const u16 gMetatiles_AraunaContests08ETough[] = INCBIN_U16("data/tilesets/secondary/arauna_contests08e_tough/metatiles.bin");
 const u16 gMetatileAttributes_AraunaContests08ETough[] = INCBIN_U16("data/tilesets/secondary/arauna_contests08e_tough/metatile_attributes.bin");
 // CONTESTS_08E_END
+
+// CONNECTIONS_08F_BEGIN
+const u16 gMetatiles_AraunaConnections08FLeaguePrimary[] = INCBIN_U16("data/tilesets/primary/arauna_connections08f_colosseum/metatiles.bin");
+const u16 gMetatileAttributes_AraunaConnections08FLeaguePrimary[] = INCBIN_U16("data/tilesets/primary/arauna_connections08f_colosseum/metatile_attributes.bin");
+const u16 gMetatiles_AraunaConnections08FLeague[] = INCBIN_U16("data/tilesets/secondary/arauna_connections08f_colosseum/metatiles.bin");
+const u16 gMetatileAttributes_AraunaConnections08FLeague[] = INCBIN_U16("data/tilesets/secondary/arauna_connections08f_colosseum/metatile_attributes.bin");
+const u16 gMetatiles_AraunaConnections08FRecordsPrimary[] = INCBIN_U16("data/tilesets/primary/arauna_connections08f_records/metatiles.bin");
+const u16 gMetatileAttributes_AraunaConnections08FRecordsPrimary[] = INCBIN_U16("data/tilesets/primary/arauna_connections08f_records/metatile_attributes.bin");
+const u16 gMetatiles_AraunaConnections08FRecords[] = INCBIN_U16("data/tilesets/secondary/arauna_connections08f_records/metatiles.bin");
+const u16 gMetatileAttributes_AraunaConnections08FRecords[] = INCBIN_U16("data/tilesets/secondary/arauna_connections08f_records/metatile_attributes.bin");
+const u16 gMetatiles_AraunaConnections08FTradePrimary[] = INCBIN_U16("data/tilesets/primary/arauna_connections08f_trade/metatiles.bin");
+const u16 gMetatileAttributes_AraunaConnections08FTradePrimary[] = INCBIN_U16("data/tilesets/primary/arauna_connections08f_trade/metatile_attributes.bin");
+const u16 gMetatiles_AraunaConnections08FTrade[] = INCBIN_U16("data/tilesets/secondary/arauna_connections08f_trade/metatiles.bin");
+const u16 gMetatileAttributes_AraunaConnections08FTrade[] = INCBIN_U16("data/tilesets/secondary/arauna_connections08f_trade/metatile_attributes.bin");
+const u16 gMetatiles_AraunaConnections08FUnionPrimary[] = INCBIN_U16("data/tilesets/primary/arauna_connections08f_union/metatiles.bin");
+const u16 gMetatileAttributes_AraunaConnections08FUnionPrimary[] = INCBIN_U16("data/tilesets/primary/arauna_connections08f_union/metatile_attributes.bin");
+const u16 gMetatiles_AraunaConnections08FUnion[] = INCBIN_U16("data/tilesets/secondary/arauna_connections08f_union/metatiles.bin");
+const u16 gMetatileAttributes_AraunaConnections08FUnion[] = INCBIN_U16("data/tilesets/secondary/arauna_connections08f_union/metatile_attributes.bin");
+// CONNECTIONS_08F_END

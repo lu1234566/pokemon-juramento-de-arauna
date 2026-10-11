@@ -1,0 +1,13 @@
+  PASS  Estalagmite still occupies SPECIES_UNOWN                                          -- Estalagmite
+  PASS  the 28 Unown form folders hold one identical design                               -- front.png:1, back.png:1, normal.pal:1, shiny.pal:1, icon.png:1, anim_front.png:1
+  PASS  GetPokedexMonPersonality is still the only place the Pokedex picks a personality
+  PASS  the Pokedex draws the canonical representation                                    -- reads nothing
+  PASS  no Unown form UI in the Pokedex                                                   -- none
+  PASS  Poste still occupies SPECIES_SPINDA                                               -- Poste
+  PASS  DrawSpindaSpots still exists
+  PASS  the Spinda spot overlay does not run for Poste                                    -- off
+  PASS  both personality fields stay in the save                                          -- unownPersonality, spindaPersonality
+  PASS  both are still written when a species is first seen
+  PASS  Tuim's Castform behaviour is left intact (deferred, art pending)
+
+11/11 special-species checks passed

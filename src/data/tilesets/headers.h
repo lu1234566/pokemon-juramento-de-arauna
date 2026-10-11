@@ -5117,3 +5117,86 @@ const struct Tileset gTileset_AraunaContests08ETough =
     .callback = NULL,
 };
 // CONTESTS_08E_END
+
+// CONNECTIONS_08F_BEGIN
+const struct Tileset gTileset_AraunaConnections08FLeaguePrimary =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AraunaConnections08FLeaguePrimary,
+    .palettes = gTilesetPalettes_AraunaConnections08FLeaguePrimary,
+    .metatiles = gMetatiles_AraunaConnections08FLeaguePrimary,
+    .metatileAttributes = gMetatileAttributes_AraunaConnections08FLeaguePrimary,
+    .callback = InitTilesetAnim_Building,
+};
+const struct Tileset gTileset_AraunaConnections08FLeague =
+{
+    .isCompressed = FALSE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaConnections08FLeague,
+    .palettes = gTilesetPalettes_AraunaConnections08FLeague,
+    .metatiles = gMetatiles_AraunaConnections08FLeague,
+    .metatileAttributes = gMetatileAttributes_AraunaConnections08FLeague,
+    .callback = NULL,
+};
+const struct Tileset gTileset_AraunaConnections08FRecordsPrimary =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AraunaConnections08FRecordsPrimary,
+    .palettes = gTilesetPalettes_AraunaConnections08FRecordsPrimary,
+    .metatiles = gMetatiles_AraunaConnections08FRecordsPrimary,
+    .metatileAttributes = gMetatileAttributes_AraunaConnections08FRecordsPrimary,
+    .callback = InitTilesetAnim_Building,
+};
+const struct Tileset gTileset_AraunaConnections08FRecords =
+{
+    .isCompressed = FALSE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaConnections08FRecords,
+    .palettes = gTilesetPalettes_AraunaConnections08FRecords,
+    .metatiles = gMetatiles_AraunaConnections08FRecords,
+    .metatileAttributes = gMetatileAttributes_AraunaConnections08FRecords,
+    .callback = NULL,
+};
+const struct Tileset gTileset_AraunaConnections08FTradePrimary =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AraunaConnections08FTradePrimary,
+    .palettes = gTilesetPalettes_AraunaConnections08FTradePrimary,
+    .metatiles = gMetatiles_AraunaConnections08FTradePrimary,
+    .metatileAttributes = gMetatileAttributes_AraunaConnections08FTradePrimary,
+    .callback = InitTilesetAnim_Building,
+};
+const struct Tileset gTileset_AraunaConnections08FTrade =
+{
+    .isCompressed = FALSE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaConnections08FTrade,
+    .palettes = gTilesetPalettes_AraunaConnections08FTrade,
+    .metatiles = gMetatiles_AraunaConnections08FTrade,
+    .metatileAttributes = gMetatileAttributes_AraunaConnections08FTrade,
+    .callback = NULL,
+};
+const struct Tileset gTileset_AraunaConnections08FUnionPrimary =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AraunaConnections08FUnionPrimary,
+    .palettes = gTilesetPalettes_AraunaConnections08FUnionPrimary,
+    .metatiles = gMetatiles_AraunaConnections08FUnionPrimary,
+    .metatileAttributes = gMetatileAttributes_AraunaConnections08FUnionPrimary,
+    .callback = InitTilesetAnim_Building,
+};
+const struct Tileset gTileset_AraunaConnections08FUnion =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaConnections08FUnion,
+    .palettes = gTilesetPalettes_AraunaConnections08FUnion,
+    .metatiles = gMetatiles_AraunaConnections08FUnion,
+    .metatileAttributes = gMetatileAttributes_AraunaConnections08FUnion,
+    .callback = NULL,
+};
+// CONNECTIONS_08F_END
