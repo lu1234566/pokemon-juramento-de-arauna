@@ -4994,3 +4994,126 @@ const struct Tileset gTileset_AraunaIslands08DFarawayForest =
     .callback = InitTilesetAnim_Fortree,
 };
 // SPECIAL_ISLANDS_08D_END
+
+// CONTESTS_08E_BEGIN
+const struct Tileset gTileset_AraunaContests08EFestivalPrimary =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AraunaContests08EFestivalPrimary,
+    .palettes = gTilesetPalettes_AraunaContests08EFestivalPrimary,
+    .metatiles = gMetatiles_AraunaContests08EFestivalPrimary,
+    .metatileAttributes = gMetatileAttributes_AraunaContests08EFestivalPrimary,
+    .callback = InitTilesetAnim_General,
+};
+const struct Tileset gTileset_AraunaContests08EFestival =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaContests08EFestival,
+    .palettes = gTilesetPalettes_AraunaContests08EFestival,
+    .metatiles = gMetatiles_AraunaContests08EFestival,
+    .metatileAttributes = gMetatileAttributes_AraunaContests08EFestival,
+    .callback = NULL,
+};
+const struct Tileset gTileset_AraunaContests08ECoolPrimary =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AraunaContests08ECoolPrimary,
+    .palettes = gTilesetPalettes_AraunaContests08ECoolPrimary,
+    .metatiles = gMetatiles_AraunaContests08ECoolPrimary,
+    .metatileAttributes = gMetatileAttributes_AraunaContests08ECoolPrimary,
+    .callback = InitTilesetAnim_General,
+};
+const struct Tileset gTileset_AraunaContests08ECool =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaContests08ECool,
+    .palettes = gTilesetPalettes_AraunaContests08ECool,
+    .metatiles = gMetatiles_AraunaContests08ECool,
+    .metatileAttributes = gMetatileAttributes_AraunaContests08ECool,
+    .callback = NULL,
+};
+const struct Tileset gTileset_AraunaContests08EBeautyPrimary =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AraunaContests08EBeautyPrimary,
+    .palettes = gTilesetPalettes_AraunaContests08EBeautyPrimary,
+    .metatiles = gMetatiles_AraunaContests08EBeautyPrimary,
+    .metatileAttributes = gMetatileAttributes_AraunaContests08EBeautyPrimary,
+    .callback = InitTilesetAnim_General,
+};
+const struct Tileset gTileset_AraunaContests08EBeauty =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaContests08EBeauty,
+    .palettes = gTilesetPalettes_AraunaContests08EBeauty,
+    .metatiles = gMetatiles_AraunaContests08EBeauty,
+    .metatileAttributes = gMetatileAttributes_AraunaContests08EBeauty,
+    .callback = NULL,
+};
+const struct Tileset gTileset_AraunaContests08ECutePrimary =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AraunaContests08ECutePrimary,
+    .palettes = gTilesetPalettes_AraunaContests08ECutePrimary,
+    .metatiles = gMetatiles_AraunaContests08ECutePrimary,
+    .metatileAttributes = gMetatileAttributes_AraunaContests08ECutePrimary,
+    .callback = InitTilesetAnim_General,
+};
+const struct Tileset gTileset_AraunaContests08ECute =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaContests08ECute,
+    .palettes = gTilesetPalettes_AraunaContests08ECute,
+    .metatiles = gMetatiles_AraunaContests08ECute,
+    .metatileAttributes = gMetatileAttributes_AraunaContests08ECute,
+    .callback = NULL,
+};
+const struct Tileset gTileset_AraunaContests08ESmartPrimary =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AraunaContests08ESmartPrimary,
+    .palettes = gTilesetPalettes_AraunaContests08ESmartPrimary,
+    .metatiles = gMetatiles_AraunaContests08ESmartPrimary,
+    .metatileAttributes = gMetatileAttributes_AraunaContests08ESmartPrimary,
+    .callback = InitTilesetAnim_General,
+};
+const struct Tileset gTileset_AraunaContests08ESmart =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaContests08ESmart,
+    .palettes = gTilesetPalettes_AraunaContests08ESmart,
+    .metatiles = gMetatiles_AraunaContests08ESmart,
+    .metatileAttributes = gMetatileAttributes_AraunaContests08ESmart,
+    .callback = NULL,
+};
+const struct Tileset gTileset_AraunaContests08EToughPrimary =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AraunaContests08EToughPrimary,
+    .palettes = gTilesetPalettes_AraunaContests08EToughPrimary,
+    .metatiles = gMetatiles_AraunaContests08EToughPrimary,
+    .metatileAttributes = gMetatileAttributes_AraunaContests08EToughPrimary,
+    .callback = InitTilesetAnim_General,
+};
+const struct Tileset gTileset_AraunaContests08ETough =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaContests08ETough,
+    .palettes = gTilesetPalettes_AraunaContests08ETough,
+    .metatiles = gMetatiles_AraunaContests08ETough,
+    .metatileAttributes = gMetatileAttributes_AraunaContests08ETough,
+    .callback = NULL,
+};
+// CONTESTS_08E_END

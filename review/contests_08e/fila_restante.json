@@ -1,0 +1,15 @@
+{
+  "maps": 528,
+  "layouts": 754,
+  "arauna_bank_maps": 499,
+  "native_remaining": [
+    "BattleColosseum_2P",
+    "BattleColosseum_4P",
+    "RecordCorner",
+    "TradeCenter",
+    "UnionRoom"
+  ],
+  "native_remaining_count": 5,
+  "pyramid_runtime_modules": 16,
+  "inactive_maps": 8
+}

@@ -1,0 +1,10 @@
+{
+  "status": "PASS_STATIC",
+  "maps": [
+    "ContestHallSmart",
+    "ContestHallTough"
+  ],
+  "base_commit": "e740b80190d1e0a5c18e2536b1705a2795f943a7",
+  "validation": "review/contests_08e/validation.json",
+  "runtime_acceptance": "pending mGBA"
+}

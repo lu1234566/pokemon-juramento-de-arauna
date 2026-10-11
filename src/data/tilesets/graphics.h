@@ -9091,3 +9091,210 @@ const u16 gTilesetPalettes_AraunaIslands08DFarawayForest[][16] =
     INCGFX_U16("data/tilesets/secondary/arauna_islands08d_faraway_interior/palettes/12.pal", ".gbapal"),
 };
 // SPECIAL_ISLANDS_08D_END
+
+// CONTESTS_08E_BEGIN
+const u32 gTilesetTiles_AraunaContests08EFestivalPrimary[] = INCGFX_U32("data/tilesets/primary/arauna_contests08e_festival/tiles.png", ".4bpp.lz");
+const u16 gTilesetPalettes_AraunaContests08EFestivalPrimary[][16] =
+{
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_festival/palettes/00.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_festival/palettes/01.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_festival/palettes/02.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_festival/palettes/03.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_festival/palettes/04.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_festival/palettes/05.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_festival/palettes/06.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_festival/palettes/07.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_festival/palettes/08.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_festival/palettes/09.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_festival/palettes/10.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_festival/palettes/11.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_festival/palettes/12.pal", ".gbapal"),
+};
+const u32 gTilesetTiles_AraunaContests08EFestival[] = INCGFX_U32("data/tilesets/secondary/arauna_contests08e_festival/tiles.png", ".4bpp.lz");
+const u16 gTilesetPalettes_AraunaContests08EFestival[][16] =
+{
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_festival/palettes/00.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_festival/palettes/01.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_festival/palettes/02.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_festival/palettes/03.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_festival/palettes/04.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_festival/palettes/05.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_festival/palettes/06.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_festival/palettes/07.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_festival/palettes/08.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_festival/palettes/09.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_festival/palettes/10.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_festival/palettes/11.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_festival/palettes/12.pal", ".gbapal"),
+};
+const u32 gTilesetTiles_AraunaContests08ECoolPrimary[] = INCGFX_U32("data/tilesets/primary/arauna_contests08e_cool/tiles.png", ".4bpp.lz");
+const u16 gTilesetPalettes_AraunaContests08ECoolPrimary[][16] =
+{
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_cool/palettes/00.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_cool/palettes/01.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_cool/palettes/02.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_cool/palettes/03.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_cool/palettes/04.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_cool/palettes/05.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_cool/palettes/06.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_cool/palettes/07.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_cool/palettes/08.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_cool/palettes/09.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_cool/palettes/10.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_cool/palettes/11.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_cool/palettes/12.pal", ".gbapal"),
+};
+const u32 gTilesetTiles_AraunaContests08ECool[] = INCGFX_U32("data/tilesets/secondary/arauna_contests08e_cool/tiles.png", ".4bpp.lz");
+const u16 gTilesetPalettes_AraunaContests08ECool[][16] =
+{
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_cool/palettes/00.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_cool/palettes/01.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_cool/palettes/02.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_cool/palettes/03.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_cool/palettes/04.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_cool/palettes/05.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_cool/palettes/06.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_cool/palettes/07.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_cool/palettes/08.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_cool/palettes/09.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_cool/palettes/10.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_cool/palettes/11.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_cool/palettes/12.pal", ".gbapal"),
+};
+const u32 gTilesetTiles_AraunaContests08EBeautyPrimary[] = INCGFX_U32("data/tilesets/primary/arauna_contests08e_beauty/tiles.png", ".4bpp.lz");
+const u16 gTilesetPalettes_AraunaContests08EBeautyPrimary[][16] =
+{
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_beauty/palettes/00.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_beauty/palettes/01.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_beauty/palettes/02.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_beauty/palettes/03.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_beauty/palettes/04.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_beauty/palettes/05.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_beauty/palettes/06.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_beauty/palettes/07.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_beauty/palettes/08.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_beauty/palettes/09.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_beauty/palettes/10.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_beauty/palettes/11.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_beauty/palettes/12.pal", ".gbapal"),
+};
+const u32 gTilesetTiles_AraunaContests08EBeauty[] = INCGFX_U32("data/tilesets/secondary/arauna_contests08e_beauty/tiles.png", ".4bpp.lz");
+const u16 gTilesetPalettes_AraunaContests08EBeauty[][16] =
+{
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_beauty/palettes/00.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_beauty/palettes/01.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_beauty/palettes/02.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_beauty/palettes/03.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_beauty/palettes/04.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_beauty/palettes/05.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_beauty/palettes/06.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_beauty/palettes/07.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_beauty/palettes/08.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_beauty/palettes/09.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_beauty/palettes/10.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_beauty/palettes/11.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_beauty/palettes/12.pal", ".gbapal"),
+};
+const u32 gTilesetTiles_AraunaContests08ECutePrimary[] = INCGFX_U32("data/tilesets/primary/arauna_contests08e_cute/tiles.png", ".4bpp.lz");
+const u16 gTilesetPalettes_AraunaContests08ECutePrimary[][16] =
+{
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_cute/palettes/00.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_cute/palettes/01.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_cute/palettes/02.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_cute/palettes/03.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_cute/palettes/04.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_cute/palettes/05.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_cute/palettes/06.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_cute/palettes/07.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_cute/palettes/08.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_cute/palettes/09.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_cute/palettes/10.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_cute/palettes/11.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_cute/palettes/12.pal", ".gbapal"),
+};
+const u32 gTilesetTiles_AraunaContests08ECute[] = INCGFX_U32("data/tilesets/secondary/arauna_contests08e_cute/tiles.png", ".4bpp.lz");
+const u16 gTilesetPalettes_AraunaContests08ECute[][16] =
+{
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_cute/palettes/00.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_cute/palettes/01.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_cute/palettes/02.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_cute/palettes/03.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_cute/palettes/04.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_cute/palettes/05.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_cute/palettes/06.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_cute/palettes/07.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_cute/palettes/08.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_cute/palettes/09.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_cute/palettes/10.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_cute/palettes/11.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_cute/palettes/12.pal", ".gbapal"),
+};
+const u32 gTilesetTiles_AraunaContests08ESmartPrimary[] = INCGFX_U32("data/tilesets/primary/arauna_contests08e_smart/tiles.png", ".4bpp.lz");
+const u16 gTilesetPalettes_AraunaContests08ESmartPrimary[][16] =
+{
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_smart/palettes/00.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_smart/palettes/01.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_smart/palettes/02.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_smart/palettes/03.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_smart/palettes/04.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_smart/palettes/05.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_smart/palettes/06.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_smart/palettes/07.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_smart/palettes/08.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_smart/palettes/09.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_smart/palettes/10.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_smart/palettes/11.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_smart/palettes/12.pal", ".gbapal"),
+};
+const u32 gTilesetTiles_AraunaContests08ESmart[] = INCGFX_U32("data/tilesets/secondary/arauna_contests08e_smart/tiles.png", ".4bpp.lz");
+const u16 gTilesetPalettes_AraunaContests08ESmart[][16] =
+{
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_smart/palettes/00.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_smart/palettes/01.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_smart/palettes/02.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_smart/palettes/03.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_smart/palettes/04.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_smart/palettes/05.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_smart/palettes/06.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_smart/palettes/07.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_smart/palettes/08.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_smart/palettes/09.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_smart/palettes/10.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_smart/palettes/11.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_smart/palettes/12.pal", ".gbapal"),
+};
+const u32 gTilesetTiles_AraunaContests08EToughPrimary[] = INCGFX_U32("data/tilesets/primary/arauna_contests08e_tough/tiles.png", ".4bpp.lz");
+const u16 gTilesetPalettes_AraunaContests08EToughPrimary[][16] =
+{
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_tough/palettes/00.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_tough/palettes/01.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_tough/palettes/02.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_tough/palettes/03.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_tough/palettes/04.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_tough/palettes/05.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_tough/palettes/06.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_tough/palettes/07.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_tough/palettes/08.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_tough/palettes/09.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_tough/palettes/10.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_tough/palettes/11.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/primary/arauna_contests08e_tough/palettes/12.pal", ".gbapal"),
+};
+const u32 gTilesetTiles_AraunaContests08ETough[] = INCGFX_U32("data/tilesets/secondary/arauna_contests08e_tough/tiles.png", ".4bpp.lz");
+const u16 gTilesetPalettes_AraunaContests08ETough[][16] =
+{
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_tough/palettes/00.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_tough/palettes/01.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_tough/palettes/02.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_tough/palettes/03.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_tough/palettes/04.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_tough/palettes/05.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_tough/palettes/06.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_tough/palettes/07.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_tough/palettes/08.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_tough/palettes/09.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_tough/palettes/10.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_tough/palettes/11.pal", ".gbapal"),
+    INCGFX_U16("data/tilesets/secondary/arauna_contests08e_tough/palettes/12.pal", ".gbapal"),
+};
+// CONTESTS_08E_END

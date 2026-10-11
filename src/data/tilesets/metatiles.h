@@ -1279,3 +1279,30 @@ const u16 gMetatileAttributes_AraunaIslands08DFarawayForestPrimary[] = INCBIN_U1
 const u16 gMetatiles_AraunaIslands08DFarawayForest[] = INCBIN_U16("data/tilesets/secondary/arauna_islands08d_faraway_interior/metatiles.bin");
 const u16 gMetatileAttributes_AraunaIslands08DFarawayForest[] = INCBIN_U16("data/tilesets/secondary/arauna_islands08d_faraway_interior/metatile_attributes.bin");
 // SPECIAL_ISLANDS_08D_END
+
+// CONTESTS_08E_BEGIN
+const u16 gMetatiles_AraunaContests08EFestivalPrimary[] = INCBIN_U16("data/tilesets/primary/arauna_contests08e_festival/metatiles.bin");
+const u16 gMetatileAttributes_AraunaContests08EFestivalPrimary[] = INCBIN_U16("data/tilesets/primary/arauna_contests08e_festival/metatile_attributes.bin");
+const u16 gMetatiles_AraunaContests08EFestival[] = INCBIN_U16("data/tilesets/secondary/arauna_contests08e_festival/metatiles.bin");
+const u16 gMetatileAttributes_AraunaContests08EFestival[] = INCBIN_U16("data/tilesets/secondary/arauna_contests08e_festival/metatile_attributes.bin");
+const u16 gMetatiles_AraunaContests08ECoolPrimary[] = INCBIN_U16("data/tilesets/primary/arauna_contests08e_cool/metatiles.bin");
+const u16 gMetatileAttributes_AraunaContests08ECoolPrimary[] = INCBIN_U16("data/tilesets/primary/arauna_contests08e_cool/metatile_attributes.bin");
+const u16 gMetatiles_AraunaContests08ECool[] = INCBIN_U16("data/tilesets/secondary/arauna_contests08e_cool/metatiles.bin");
+const u16 gMetatileAttributes_AraunaContests08ECool[] = INCBIN_U16("data/tilesets/secondary/arauna_contests08e_cool/metatile_attributes.bin");
+const u16 gMetatiles_AraunaContests08EBeautyPrimary[] = INCBIN_U16("data/tilesets/primary/arauna_contests08e_beauty/metatiles.bin");
+const u16 gMetatileAttributes_AraunaContests08EBeautyPrimary[] = INCBIN_U16("data/tilesets/primary/arauna_contests08e_beauty/metatile_attributes.bin");
+const u16 gMetatiles_AraunaContests08EBeauty[] = INCBIN_U16("data/tilesets/secondary/arauna_contests08e_beauty/metatiles.bin");
+const u16 gMetatileAttributes_AraunaContests08EBeauty[] = INCBIN_U16("data/tilesets/secondary/arauna_contests08e_beauty/metatile_attributes.bin");
+const u16 gMetatiles_AraunaContests08ECutePrimary[] = INCBIN_U16("data/tilesets/primary/arauna_contests08e_cute/metatiles.bin");
+const u16 gMetatileAttributes_AraunaContests08ECutePrimary[] = INCBIN_U16("data/tilesets/primary/arauna_contests08e_cute/metatile_attributes.bin");
+const u16 gMetatiles_AraunaContests08ECute[] = INCBIN_U16("data/tilesets/secondary/arauna_contests08e_cute/metatiles.bin");
+const u16 gMetatileAttributes_AraunaContests08ECute[] = INCBIN_U16("data/tilesets/secondary/arauna_contests08e_cute/metatile_attributes.bin");
+const u16 gMetatiles_AraunaContests08ESmartPrimary[] = INCBIN_U16("data/tilesets/primary/arauna_contests08e_smart/metatiles.bin");
+const u16 gMetatileAttributes_AraunaContests08ESmartPrimary[] = INCBIN_U16("data/tilesets/primary/arauna_contests08e_smart/metatile_attributes.bin");
+const u16 gMetatiles_AraunaContests08ESmart[] = INCBIN_U16("data/tilesets/secondary/arauna_contests08e_smart/metatiles.bin");
+const u16 gMetatileAttributes_AraunaContests08ESmart[] = INCBIN_U16("data/tilesets/secondary/arauna_contests08e_smart/metatile_attributes.bin");
+const u16 gMetatiles_AraunaContests08EToughPrimary[] = INCBIN_U16("data/tilesets/primary/arauna_contests08e_tough/metatiles.bin");
+const u16 gMetatileAttributes_AraunaContests08EToughPrimary[] = INCBIN_U16("data/tilesets/primary/arauna_contests08e_tough/metatile_attributes.bin");
+const u16 gMetatiles_AraunaContests08ETough[] = INCBIN_U16("data/tilesets/secondary/arauna_contests08e_tough/metatiles.bin");
+const u16 gMetatileAttributes_AraunaContests08ETough[] = INCBIN_U16("data/tilesets/secondary/arauna_contests08e_tough/metatile_attributes.bin");
+// CONTESTS_08E_END

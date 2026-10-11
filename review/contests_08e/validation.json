@@ -1,0 +1,180 @@
+{
+  "status": "PASS",
+  "base_commit": "e740b80190d1e0a5c18e2536b1705a2795f943a7",
+  "protected_existing_files": 24600,
+  "protected_fixes": {
+    "src/party_menu.c": "e05f9efb61cfd652e56a361ba1e8b826f614abc0e684438a0b031b036679d08f",
+    "src/field_player_avatar.c": "81ebe4b5761f8992cb459cf37978262358231734a1c56f8b3447346f770db95f",
+    "src/scrcmd.c": "98cd4b72474c3cc7dfd5dc6cf54a4a96f807733017761a2be58d62b0dcd063a9",
+    "data/maps/SlateportCity_Harbor/scripts.inc": "fc256e12cb37712c2a2b3e026d442e6baa55ed6560909e7cadecda83c19167ea",
+    "data/maps/LilycoveCity_Harbor/scripts.inc": "46ab224e74a02b311a9a38b0eb8f940b169e9e5d83844283ccda00be39ebd18c",
+    "data/maps/FallarborTown_CozmosHouse/scripts.inc": "798dc439a26a33d0845646eab56d599d7712e34414c712304d834ae4eb89f4a6",
+    "data/maps/Route116/scripts.inc": "cd955b92f802f347645b82cc1bc54aa1715d35097009f7504ec98079c46a62c5"
+  },
+  "historical_contracts": {
+    "desert_08b1": {
+      "contract": "unchanged",
+      "documented_integration_exceptions": [
+        "data/maps/FallarborTown_CozmosHouse/scripts.inc",
+        "data/maps/LilycoveCity_Harbor/scripts.inc",
+        "data/maps/Route116/scripts.inc",
+        "data/maps/SlateportCity_Harbor/scripts.inc",
+        "src/field_player_avatar.c",
+        "src/party_menu.c",
+        "src/scrcmd.c"
+      ]
+    },
+    "desert_08b2": {
+      "contract": "unchanged",
+      "documented_integration_exceptions": [
+        "data/maps/FallarborTown_CozmosHouse/scripts.inc",
+        "data/maps/LilycoveCity_Harbor/scripts.inc",
+        "data/maps/Route116/scripts.inc",
+        "data/maps/SlateportCity_Harbor/scripts.inc",
+        "src/field_player_avatar.c",
+        "src/scrcmd.c"
+      ]
+    },
+    "mirage_08b3": {
+      "contract": "unchanged",
+      "documented_integration_exceptions": [
+        "data/maps/FallarborTown_CozmosHouse/scripts.inc",
+        "data/maps/LilycoveCity_Harbor/scripts.inc",
+        "data/maps/Route116/scripts.inc",
+        "data/maps/SlateportCity_Harbor/scripts.inc"
+      ]
+    },
+    "sstidal_08c": {
+      "contract": "unchanged",
+      "documented_integration_exceptions": [
+        "data/maps/FallarborTown_CozmosHouse/scripts.inc",
+        "data/maps/LilycoveCity_Harbor/scripts.inc",
+        "data/maps/Route116/scripts.inc",
+        "data/maps/SlateportCity_Harbor/scripts.inc"
+      ]
+    },
+    "islands_08d": {
+      "contract": "unchanged",
+      "documented_integration_exceptions": []
+    }
+  },
+  "layouts_preserved": 754,
+  "groups": {
+    "festival": {
+      "redrawn_ids": 34,
+      "new_static_slots": 65,
+      "callbacks_preserved": [
+        "InitTilesetAnim_General",
+        "NULL"
+      ],
+      "complete_attributes": "identical",
+      "palettes_0_through_11": "identical",
+      "runtime_metatile_swaps": "none in the shared hall scripts; lobby swaps are in a separate frozen bank"
+    },
+    "cool": {
+      "redrawn_ids": 34,
+      "new_static_slots": 65,
+      "callbacks_preserved": [
+        "InitTilesetAnim_General",
+        "NULL"
+      ],
+      "complete_attributes": "identical",
+      "palettes_0_through_11": "identical",
+      "runtime_metatile_swaps": "none in the shared hall scripts; lobby swaps are in a separate frozen bank"
+    },
+    "beauty": {
+      "redrawn_ids": 34,
+      "new_static_slots": 65,
+      "callbacks_preserved": [
+        "InitTilesetAnim_General",
+        "NULL"
+      ],
+      "complete_attributes": "identical",
+      "palettes_0_through_11": "identical",
+      "runtime_metatile_swaps": "none in the shared hall scripts; lobby swaps are in a separate frozen bank"
+    },
+    "cute": {
+      "redrawn_ids": 34,
+      "new_static_slots": 65,
+      "callbacks_preserved": [
+        "InitTilesetAnim_General",
+        "NULL"
+      ],
+      "complete_attributes": "identical",
+      "palettes_0_through_11": "identical",
+      "runtime_metatile_swaps": "none in the shared hall scripts; lobby swaps are in a separate frozen bank"
+    },
+    "smart": {
+      "redrawn_ids": 34,
+      "new_static_slots": 65,
+      "callbacks_preserved": [
+        "InitTilesetAnim_General",
+        "NULL"
+      ],
+      "complete_attributes": "identical",
+      "palettes_0_through_11": "identical",
+      "runtime_metatile_swaps": "none in the shared hall scripts; lobby swaps are in a separate frozen bank"
+    },
+    "tough": {
+      "redrawn_ids": 34,
+      "new_static_slots": 65,
+      "callbacks_preserved": [
+        "InitTilesetAnim_General",
+        "NULL"
+      ],
+      "complete_attributes": "identical",
+      "palettes_0_through_11": "identical",
+      "runtime_metatile_swaps": "none in the shared hall scripts; lobby swaps are in a separate frozen bank"
+    }
+  },
+  "redrawn_id_instances": 204,
+  "native_layer_masks_checked": 408,
+  "unredrawn_pixel_identical_metatiles": 4266,
+  "animated_quarters_preserved": 0,
+  "maps": {
+    "ContestHall": {
+      "cells": 165,
+      "shared_event_objects": 15,
+      "static_warps": 0,
+      "scripts_grid_border_collision_elevation": "byte-identical to e740b80190"
+    },
+    "ContestHallCool": {
+      "cells": 165,
+      "shared_event_objects": 15,
+      "static_warps": 0,
+      "scripts_grid_border_collision_elevation": "byte-identical to e740b80190"
+    },
+    "ContestHallBeauty": {
+      "cells": 165,
+      "shared_event_objects": 15,
+      "static_warps": 0,
+      "scripts_grid_border_collision_elevation": "byte-identical to e740b80190"
+    },
+    "ContestHallCute": {
+      "cells": 165,
+      "shared_event_objects": 15,
+      "static_warps": 0,
+      "scripts_grid_border_collision_elevation": "byte-identical to e740b80190"
+    },
+    "ContestHallSmart": {
+      "cells": 165,
+      "shared_event_objects": 15,
+      "static_warps": 0,
+      "scripts_grid_border_collision_elevation": "byte-identical to e740b80190"
+    },
+    "ContestHallTough": {
+      "cells": 165,
+      "shared_event_objects": 15,
+      "static_warps": 0,
+      "scripts_grid_border_collision_elevation": "byte-identical to e740b80190"
+    }
+  },
+  "scripted_audience_placements_verified": 79,
+  "category_entry_points": 5,
+  "rank_returns": 4,
+  "link_returns": 1,
+  "mechanics": "all categories/ranks, entrants, scripted audience, appeals, score UI, prizes/ribbons, winner paintings, save flags, lobby gate swaps and link/wireless synchronization frozen",
+  "verification_scope": "source hashes, exact native grids/attributes, layer footprints, DMA words and renders; no simulated gameplay",
+  "rom_build": "pending; ARM compiler unavailable",
+  "mgba": "pending for new 08E; 08D acceptance recorded in INTEGRACAO_08D.md"
+}

@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "zip_sha256": "6060955f88bf2be0926d5e00ffb96325c2f27b165b89ef204ef054bbcd479e83",
+  "zip_bytes": 12619737,
+  "payload_files": 215,
+  "payload_matches_current_integrated_base": true,
+  "bundles": [
+    {
+      "bundle": "checkpoint_08D.bundle",
+      "head": "c6143a51737f4716ac347e14ab4eb0b0dbccba01",
+      "status": "PASS"
+    },
+    {
+      "bundle": "cumulative_a594_08D.bundle",
+      "head": "c6143a51737f4716ac347e14ab4eb0b0dbccba01",
+      "status": "PASS"
+    },
+    {
+      "bundle": "cumulative_from_08C_08D.bundle",
+      "head": "c6143a51737f4716ac347e14ab4eb0b0dbccba01",
+      "status": "PASS"
+    }
+  ],
+  "github_base": "e740b80190d1e0a5c18e2536b1705a2795f943a7",
+  "main_behind_commits": 128
+}
