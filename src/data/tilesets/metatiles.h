@@ -1242,3 +1242,10 @@ const u16 gMetatileAttributes_AraunaScorched08B2Primary[] = INCBIN_U16("data/til
 const u16 gMetatiles_AraunaScorched08B2[] = INCBIN_U16("data/tilesets/secondary/arauna_scorched08b2/metatiles.bin");
 const u16 gMetatileAttributes_AraunaScorched08B2[] = INCBIN_U16("data/tilesets/secondary/arauna_scorched08b2/metatile_attributes.bin");
 // DESERT_08B2_END
+
+// MIRAGE_08B3_BEGIN
+const u16 gMetatiles_AraunaMirage08B3Primary[] = INCBIN_U16("data/tilesets/primary/arauna_mirage08b3/metatiles.bin");
+const u16 gMetatileAttributes_AraunaMirage08B3Primary[] = INCBIN_U16("data/tilesets/primary/arauna_mirage08b3/metatile_attributes.bin");
+const u16 gMetatiles_AraunaMirage08B3[] = INCBIN_U16("data/tilesets/secondary/arauna_mirage08b3/metatiles.bin");
+const u16 gMetatileAttributes_AraunaMirage08B3[] = INCBIN_U16("data/tilesets/secondary/arauna_mirage08b3/metatile_attributes.bin");
+// MIRAGE_08B3_END

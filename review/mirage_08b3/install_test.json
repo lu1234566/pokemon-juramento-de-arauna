@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "base_commit": "a862cdee1d7e2c910abae6122b45951ea1690198",
+  "tested_payload_files": 69,
+  "protected_files_checked": 24258,
+  "protected_fixes": {
+    "src/party_menu.c": "e05f9efb61cfd652e56a361ba1e8b826f614abc0e684438a0b031b036679d08f",
+    "src/field_player_avatar.c": "81ebe4b5761f8992cb459cf37978262358231734a1c56f8b3447346f770db95f",
+    "src/scrcmd.c": "98cd4b72474c3cc7dfd5dc6cf54a4a96f807733017761a2be58d62b0dcd063a9"
+  },
+  "cases": [
+    "Full preflight writes nothing",
+    "Historical src/party_menu.c rejected before writes",
+    "Historical src/field_player_avatar.c rejected before writes",
+    "Historical src/scrcmd.c rejected before writes",
+    "Corrupted payload rejected before writes",
+    "Protected Clinic correction rejected before writes",
+    "Unknown local registry edit rejected before writes",
+    "Interrupted installation restores all prior bytes automatically",
+    "Real installation matches every payload hash and protected file; HEAD unchanged",
+    "Reapplication writes zero files",
+    "Backup rollback restores the complete base"
+  ],
+  "scope": "Actual source installer on isolated checkout; all baseline file bytes and HEAD checked after every rejection and rollback"
+}

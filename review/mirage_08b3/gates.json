@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "gates": [
+    {
+      "script": "tools/arauna/audit_map_data.py",
+      "returncode": 0,
+      "status": "PASS",
+      "log": "review/mirage_08b3/logs/audit_map_data.py.log"
+    },
+    {
+      "script": "tools/arauna_maps/check_visual_protection_08.py",
+      "returncode": 0,
+      "status": "PASS",
+      "log": "review/mirage_08b3/logs/check_visual_protection_08.py.log"
+    },
+    {
+      "script": "tools/arauna/check_overworld_palette_capacity.py",
+      "returncode": 0,
+      "status": "PASS",
+      "log": "review/mirage_08b3/logs/check_overworld_palette_capacity.py.log"
+    },
+    {
+      "script": "tools/arauna/check_special_species.py",
+      "returncode": 0,
+      "status": "PASS",
+      "log": "review/mirage_08b3/logs/check_special_species.py.log"
+    },
+    {
+      "script": "tools/arauna/check_faction_visual_identity.py",
+      "returncode": 0,
+      "status": "PASS",
+      "log": "review/mirage_08b3/logs/check_faction_visual_identity.py.log"
+    },
+    {
+      "script": "tools/validate_arauna_character_assets.py",
+      "returncode": 0,
+      "status": "PASS",
+      "log": "review/mirage_08b3/logs/validate_arauna_character_assets.py.log"
+    }
+  ]
+}

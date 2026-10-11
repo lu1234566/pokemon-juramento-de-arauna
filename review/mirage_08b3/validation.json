@@ -1,0 +1,128 @@
+{
+  "status": "PASS",
+  "base_commit": "a862cdee1d7e2c910abae6122b45951ea1690198",
+  "protected_existing_files": 24258,
+  "protected_fixes": {
+    "src/party_menu.c": "e05f9efb61cfd652e56a361ba1e8b826f614abc0e684438a0b031b036679d08f",
+    "src/field_player_avatar.c": "81ebe4b5761f8992cb459cf37978262358231734a1c56f8b3447346f770db95f",
+    "src/scrcmd.c": "98cd4b72474c3cc7dfd5dc6cf54a4a96f807733017761a2be58d62b0dcd063a9"
+  },
+  "historical_contracts": {
+    "08b1": {
+      "contract": "unchanged",
+      "intentional_integration_exceptions": [
+        "src/field_player_avatar.c",
+        "src/party_menu.c",
+        "src/scrcmd.c"
+      ]
+    },
+    "08b2": {
+      "contract": "unchanged",
+      "intentional_integration_exceptions": [
+        "src/field_player_avatar.c",
+        "src/scrcmd.c"
+      ]
+    }
+  },
+  "layouts_preserved": 754,
+  "redrawn_ids": 41,
+  "native_layer_masks_checked": 82,
+  "unchanged_pixel_identical_metatiles": 885,
+  "maps": {
+    "MirageTower_1F": {
+      "cells": 357,
+      "cracked_cells": [],
+      "warp_count": 2,
+      "object_count": 0,
+      "scripts_events_collision_elevation": "byte-identical"
+    },
+    "MirageTower_2F": {
+      "cells": 357,
+      "cracked_cells": [
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          2,
+          10
+        ]
+      ],
+      "warp_count": 2,
+      "object_count": 0,
+      "scripts_events_collision_elevation": "byte-identical"
+    },
+    "MirageTower_3F": {
+      "cells": 357,
+      "cracked_cells": [
+        [
+          17,
+          6
+        ],
+        [
+          16,
+          7
+        ],
+        [
+          18,
+          7
+        ]
+      ],
+      "warp_count": 2,
+      "object_count": 2,
+      "scripts_events_collision_elevation": "byte-identical"
+    },
+    "MirageTower_4F": {
+      "cells": 130,
+      "cracked_cells": [],
+      "warp_count": 1,
+      "object_count": 3,
+      "scripts_events_collision_elevation": "byte-identical"
+    }
+  },
+  "runtime_states": {
+    "crack": "0x22F, MB_CRACKED_FLOOR (0xD2)",
+    "hole": "0x206, MB_CRACKED_FLOOR_HOLE (0x66)",
+    "timing_speed_fall_warps": "src/field_tasks.c and cave_hole.inc protected byte-for-byte"
+  },
+  "fossil_collapse_and_route111": "scripts, flags, object graphics, exterior animations and corrected tower base protected byte-for-byte",
+  "verification_scope": "source hashes, native 4bpp assets, static data and rendered crack/hole states; no simulated gameplay",
+  "rom_build": "pending; ARM toolchain unavailable",
+  "mgba": "pending for new 08B3; previous 08B2 acceptance supplied by integrator"
+}

@@ -4845,3 +4845,26 @@ const struct Tileset gTileset_AraunaScorched08B2 =
     .callback = InitTilesetAnim_Cave,
 };
 // DESERT_08B2_END
+
+// MIRAGE_08B3_BEGIN
+const struct Tileset gTileset_AraunaMirage08B3Primary =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_AraunaMirage08B3Primary,
+    .palettes = gTilesetPalettes_AraunaMirage08B3Primary,
+    .metatiles = gMetatiles_AraunaMirage08B3Primary,
+    .metatileAttributes = gMetatileAttributes_AraunaMirage08B3Primary,
+    .callback = InitTilesetAnim_General,
+};
+const struct Tileset gTileset_AraunaMirage08B3 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AraunaMirage08B3,
+    .palettes = gTilesetPalettes_AraunaMirage08B3,
+    .metatiles = gMetatiles_AraunaMirage08B3,
+    .metatileAttributes = gMetatileAttributes_AraunaMirage08B3,
+    .callback = NULL,
+};
+// MIRAGE_08B3_END
