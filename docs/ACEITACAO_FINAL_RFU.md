@@ -144,7 +144,7 @@ ou seja, 365 capturas.
 | Designer do Motel de Lilycove, tudo o que dá para pegar | "If you do complete it, please come show me." | fanfarra e diploma "completed your ARAUNA POKéDEX" |
 | Mesmo caso, com a dex nacional | — | diploma "NATIONAL POKéDEX", na moldura dourada |
 | Mesmo caso, faltando #001 | — | sem diploma |
-| Cartão de treinador, tudo o que dá para pegar | cartão verde, sem estrela | cartão bronze, com estrela |
+| Cartão de treinador, tudo o que dá para pegar | cartão verde, sem estrela | o cartão muda de cor e ganha a estrela |
 | Entrar no laboratório depois do Hall da Fama, tudo o que dá para pegar | nada acontece | a mesa com as três Poké Balls aparece e ANAHI chama o jogador |
 | ANAHI pelo PokéNav, 200 capturados | "The ARAUNA POKéDEX is complete!" | "You've passed the halfway mark." |
 | ANAHI pelo PokéNav, tudo o que dá para pegar | — | "complete!" |
