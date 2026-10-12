@@ -2,7 +2,7 @@
   "id": "MAP_ARAUNA_TORRE_RUIDO_BARRAGEM",
   "name": "Arauna_TorreRuido_Barragem",
   "layout": "LAYOUT_ARAUNA_SERRA_INTERIORS_DEVONCORP_2F",
-  "music": "MUS_AQUA_HIDEOUT",
+  "music": "MUS_ARAUNA_HORIZON",
   "region_map_section": "MAPSEC_MAUVILLE_CITY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

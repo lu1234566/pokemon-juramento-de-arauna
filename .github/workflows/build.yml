@@ -24,6 +24,11 @@ jobs:
           # Width/save-layout gates read pinned historical commits with git show.
           fetch-depth: 0
 
+      - name: Install host sprite validation dependency
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y python3-pil
+
       - name: Validate canonical English rendered composition
         run: bash scripts/check_arauna_static.sh
 
@@ -44,12 +49,17 @@ jobs:
       - name: Build English-only Arauna ROM
         run: bash scripts/build_arauna.sh -j2 all
 
+      - name: Export engine symbols for verification
+        run: arm-none-eabi-nm -n pokemon-juramento-de-arauna-en_modern.elf > arauna-en.symbols.txt
+
       # The job built a playable ROM and then threw it away. Keep it.
       - name: Publish the ROM
         uses: actions/upload-artifact@v4
         with:
           name: pokeemerald-en-gba
-          path: pokemon-juramento-de-arauna-en_modern.gba
+          path: |
+            pokemon-juramento-de-arauna-en_modern.gba
+            arauna-en.symbols.txt
           if-no-files-found: error
           retention-days: 30
 

@@ -4,6 +4,11 @@ set -euo pipefail
 repo_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$repo_root"
 
+# The registry and palette checks read generated events/connections. A clean
+# checkout has only map.json, and the final fake make below cannot generate
+# those files. Prepare them with the real host converter first.
+python3 tools/arauna/generate_static_map_data.py
+
 # Run the exact official English overlay composition and all of its post-render
 # gates, while replacing only the final `make` executable with a no-op. This
 # exercises the same transactional renderer order as a real build without

@@ -2,7 +2,7 @@
   "id": "MAP_ARAUNA_TORRE_RUIDO_SIFAO",
   "name": "Arauna_TorreRuido_Sifao",
   "layout": "LAYOUT_ARAUNA_SERRA_INTERIORS_DEVONCORP_3F",
-  "music": "MUS_AQUA_HIDEOUT",
+  "music": "MUS_ARAUNA_HORIZON",
   "region_map_section": "MAPSEC_MAUVILLE_CITY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
