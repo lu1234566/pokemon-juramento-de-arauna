@@ -403,7 +403,7 @@ NoiseTower_Text_LotAfter:
 
 NoiseTower_Text_Zila:
 	.string "ANAHI: Item 11.407. They\n"
-	.string "catalogued Dona Zila as an\l"
+	.string "catalogued ZILA as an\l"
 	.string "asset.\p"
 	.string "Destroying it now would lose her\n"
 	.string "words. Make a protected copy\l"
@@ -420,7 +420,7 @@ NoiseTower_Text_ZilaDone:
 	.string "inventory number.$"
 
 NoiseTower_Text_ZilaAfter:
-	.string "Dona Zila is named beside her\n"
+	.string "ZILA is named beside her\n"
 	.string "words. The corporate copy is\l"
 	.string "sealed from use.$"
 
@@ -511,7 +511,7 @@ NoiseTower_Text_Stop:
 	.string "Ciro holds the emergency\n"
 	.string "control. Anahi reads the report\l"
 	.string "with its authors named.\p"
-	.string "The SIFAO-MESTRE stops. Nobody\n"
+	.string "The MASTER SIPHON stops. Nobody\n"
 	.string "removes Meira's memories for\l"
 	.string "him.$"
 

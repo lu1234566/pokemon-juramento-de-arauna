@@ -255,10 +255,21 @@ def geometry(s):
         l=layouts[m['layout']];w,h=l['width'],l['height'];b=(ROOT/l['blockdata_filepath']).read_bytes();assert len(b)==w*h*2,(name,len(b),w,h)
         cells=struct.unpack('<'+'H'*(w*h),b);blocked={(i%w,i//w) for i,c in enumerate(cells) if c&0xc00}
         assert len(m['object_events'])<16 and not m['coord_events']
-        for phase in range(5) if name.endswith('Salao') else (0,):
+        phases=range(5) if name.endswith('Salao') else (0,1) if name==FOGUEIRA[0] else (0,)
+        for phase in phases:
             v=VM(s,{STATE:phase})
-            if name.endswith('Salao'):v.run('Fogueira_Salao_OnTransition')
+            if name.endswith('Salao'):
+                assert 'map_script MAP_SCRIPT_ON_TRANSITION, Fogueira_Salao_OnTransition' in (ROOT/'data/maps'/name/'scripts.inc').read_text()
+                v.run('Fogueira_Salao_OnTransition')
+            elif name==FOGUEIRA[0]:
+                if phase:v.flags.add('FLAG_SYS_GAME_CLEAR')
+                v.run('Fogueira_Entrada_OnTransition')
+                assert ('FLAG_ARAUNA_TOWER_HIDE_CIRO' in v.flags)==(phase==0)
+            elif name in TOWER:
+                assert 'map_script MAP_SCRIPT_ON_FRAME_TABLE, NoiseTower_OnFrame' in (ROOT/'data/maps'/name/'scripts.inc').read_text()
             objects={(o['x'],o['y']) for o in m['object_events'] if o['flag']=='0' or o['flag'] not in v.flags}
+            visible=[o for o in m['object_events'] if o['flag']=='0' or o['flag'] not in v.flags]
+            assert len(objects)==len(visible),(name,'overlapping visible objects')
             assert not objects&blocked,(name,'object on collision',objects&blocked)
             start=(m['warp_events'][0]['x'],m['warp_events'][0]['y']);seen={start};q=collections.deque(seen)
             def neighbors(x,y):return ((x+1,y),(x-1,y),(x,y+1),(x,y-1))
@@ -266,13 +277,13 @@ def geometry(s):
                 for p in neighbors(*q.popleft()):
                     x,y=p
                     if 0<=x<w and 0<=y<h and p not in seen|objects|blocked:seen.add(p);q.append(p)
-            for e in m['warp_events']:
+            for index,e in enumerate(m['warp_events']):
                 assert (e['x'],e['y']) in seen,(name,'unreachable warp',e)
                 target=by_id[e['dest_map']]['warp_events'][int(e['dest_warp_id'])]
                 # The two lobby exits intentionally arrive through the Fogueira
                 # transport; its original city exit is the return destination.
                 transport=name==TOWER[0] and e['dest_map']==maps[FOGUEIRA[0]]['id']
-                assert target['dest_map']==m['id'] or transport,(name,'return warp',e)
+                assert transport or (target['dest_map']==m['id'] and int(target['dest_warp_id'])==index),(name,'return warp',e)
             for e in m['object_events']+m['bg_events']:
                 if e.get('flag','0') in v.flags:continue
                 assert seen.intersection(neighbors(e['x'],e['y'])),(name,'unreachable interaction',e['script'])
