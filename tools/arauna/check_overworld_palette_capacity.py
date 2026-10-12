@@ -274,6 +274,9 @@ def main() -> int:
         # before the map spawns anything -- or be a decoration room, which
         # rewrites the same var from the save on entry.
         unset = []
+        scope = set(c.get("overworld_maps", []))
+        bound = set()
+        unexpected = set()
         for ev in (ROOT / "data/maps").glob("*/events.inc"):
             text = ev.read_text(encoding="utf-8")
             for line in text.splitlines():
@@ -282,8 +285,23 @@ def main() -> int:
                 if "FLAG_DECORATION_" in line:
                     continue
                 script = scripts_by_map.get(ev.parent.name, "")
-                if f"setvar {var_name}, {vid}" not in script:
+                assignment = f"setvar {var_name}, {vid}"
+                # Gfx vars are shared channels. E also carries the vanilla
+                # Multi Battle partner, so a character with declared maps
+                # must be checked by its virtual-id assignment, not by every
+                # unrelated use of the same byte-sized channel.
+                if scope and ev.parent.name not in scope:
+                    if assignment in script:
+                        unexpected.add(ev.parent.name)
+                    continue
+                if assignment not in script:
                     unset.append(ev.parent.name)
+                else:
+                    bound.add(ev.parent.name)
+        if scope:
+            unset.extend(sorted(scope - bound))
+        check(not unexpected, f"{c['name']}'s virtual binding stays in declared maps",
+              ", ".join(sorted(unexpected)) if unexpected else "no undeclared binding")
         check(not unset, f"{c['name']}'s var is set before his maps spawn",
               ", ".join(sorted(set(unset))) if unset else "all three maps")
 
@@ -414,3 +432,4 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+

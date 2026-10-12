@@ -51,7 +51,7 @@ O rito cerimonial de Arauá continua no encontro existente de Birth Island.
 | Variáveis | 0x40FB–0x40FE para Torre; 0x40FF para compromisso do Uivo. |
 | Flags | 0x043–0x04C: conclusão, três lotes, quatro documentos, despertar de Arauá e visibilidade de Ciro. |
 | Gráficos | IDs virtuais 0x1001/0x1002; canais E/F preparados na transição. |
-| Paletas | Tags 0x1200/0x1201 na tabela e no pool existente, com fallback NPC_1. |
+| Paletas | Tags 0x1200/0x1201 na tabela; Eremita no pool com fallback NPC_1, filhote no slot especial exclusivo do Refúgio. |
 
 Nenhuma estrutura persistente, limite de flags, slot de insígnia ou variável
 de progressão de Emerald foi ampliado. Estado 4 da Fogueira em save antigo

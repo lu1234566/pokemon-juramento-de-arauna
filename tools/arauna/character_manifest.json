@@ -770,7 +770,10 @@
       "palette_slot": "ARAUNA_EXCLUSIVE_POOL",
       "palette_slot_reason": "Dedicated pool tag; unused NPC_1 fallback in CasaUivo_Sala.",
       "asset_batch": "Arauna Arcos V2",
-      "runtime_tested": false
+      "runtime_tested": false,
+      "overworld_maps": [
+        "Arauna_CasaUivo_Sala"
+      ]
     }
   ],
   "protagonist_states": [

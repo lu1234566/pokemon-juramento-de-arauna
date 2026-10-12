@@ -45,6 +45,13 @@ def main():
         obj=json.loads((map_path/'map.json').read_text())['object_events'][0]
         assert obj['graphics_id']=='OBJ_EVENT_GFX_VAR_'+gfx_var
         assert f'setvar VAR_OBJ_GFX_ID_{gfx_var}, ARAUNA_VIRTUAL_GFX_{tag}' in (map_path/'scripts.inc').read_text()
+        if sym=='UivoPup':
+            # This map has one object; its private special slot never competes
+            # with another character. Creature sheets remain outside the human
+            # 16x32 manifest, with their native 32x32 checks above.
+            assert len(json.loads((map_path/'map.json').read_text())['object_events'])==1
+            pup_info=info.split('gObjectEventGraphicsInfo_UivoPup = {',1)[1].split('};',1)[0]
+            assert '.paletteSlot = PALSLOT_NPC_SPECIAL,' in pup_info
     review=json.loads((ROOT/'data/arauna/story/libras_review.json').read_text())
     if review['signed_scene_enabled']:
         assert review['translation_status']=='approved'
