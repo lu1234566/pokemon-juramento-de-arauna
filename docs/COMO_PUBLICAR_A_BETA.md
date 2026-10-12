@@ -55,10 +55,10 @@ coisa, a base estava errada.
 | | |
 |---|---|
 | arquivo | `pokemon-juramento-de-arauna-en_modern.gba` |
-| tamanho | 16 777 216 bytes |
-| CRC32 | `EAA54F95` |
-| MD5 | `406ef199591baf6e982311ba01f38fee` |
-| SHA-1 | `198c1b6eb0167a0cba715a57f9b0a1bf51fbe27d` |
+| tamanho | 33 554 432 bytes |
+| CRC32 | `EF2B8894` |
+| MD5 | `ec9159d4fccd96ef7d51cf822bd2f678` |
+| SHA-1 | `bd4c1985b82736714791665ad885dc42f344708b` |
 
 Estes valores são desta build. Qualquer commit novo muda os três — regere a
 tabela antes de publicar.
