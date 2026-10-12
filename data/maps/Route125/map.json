@@ -159,6 +159,34 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route125_EventScript_ItemBigPearl",
       "flag": "FLAG_ITEM_ROUTE_125_BIG_PEARL"
+    },
+    {
+      "local_id": "LOCALID_ARAUNA_LEGEND_JACIANA",
+      "graphics_id": "OBJ_EVENT_GFX_ARAUNA_POKEMON_A",
+      "x": 48,
+      "y": 28,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "AraunaLegends_EventScript_Jaciana",
+      "flag": "FLAG_ARAUNA_LEGEND_JACIANA"
+    },
+    {
+      "local_id": "LOCALID_ARAUNA_LEGEND_CHUVAO",
+      "graphics_id": "OBJ_EVENT_GFX_ARAUNA_POKEMON_B",
+      "x": 10,
+      "y": 22,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "AraunaLegends_EventScript_Chuvao",
+      "flag": "FLAG_ARAUNA_LEGEND_CHUVAO"
     }
   ],
   "warp_events": [

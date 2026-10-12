@@ -599,6 +599,28 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 // someone else's package already wrote down is how two characters end up
 // sharing one palette.
 #define OBJ_EVENT_PAL_TAG_DONA_ZILA                 0x11D5
+// BEGIN Arauna legend overworlds
+#define OBJ_EVENT_PAL_TAG_ARAUNA_GUARACIANA                       0x11E0
+#define OBJ_EVENT_PAL_TAG_ARAUNA_TUPANAU                          0x11E1
+#define OBJ_EVENT_PAL_TAG_ARAUNA_FOGAREU                          0x11E2
+#define OBJ_EVENT_PAL_TAG_ARAUNA_YASY                             0x11E3
+#define OBJ_EVENT_PAL_TAG_ARAUNA_KUARAHY                          0x11E4
+#define OBJ_EVENT_PAL_TAG_ARAUNA_ARAUANAMON                       0x11E5
+#define OBJ_EVENT_PAL_TAG_ARAUNA_ARAUANAU                         0x11E6
+#define OBJ_EVENT_PAL_TAG_ARAUNA_TERRAAO                          0x11E7
+#define OBJ_EVENT_PAL_TAG_ARAUNA_SOLZAO                           0x11E8
+#define OBJ_EVENT_PAL_TAG_ARAUNA_PERYBE                           0x11E9
+#define OBJ_EVENT_PAL_TAG_ARAUNA_IARAU                            0x11EA
+#define OBJ_EVENT_PAL_TAG_ARAUNA_VERDEJANTE                       0x11EB
+#define OBJ_EVENT_PAL_TAG_ARAUNA_POENTE                           0x11EC
+#define OBJ_EVENT_PAL_TAG_ARAUNA_MARULHO                          0x11ED
+#define OBJ_EVENT_PAL_TAG_ARAUNA_JACIANA                          0x11EE
+#define OBJ_EVENT_PAL_TAG_ARAUNA_CHUVAO                           0x11EF
+#define OBJ_EVENT_PAL_TAG_ARAUNA_RUDARAUNA                        0x11F0
+#define OBJ_EVENT_PAL_TAG_ARAUNA_BOITATA                          0x11F1
+#define OBJ_EVENT_PAL_TAG_ARAUNA_VENTANIA                         0x11F2
+#define OBJ_EVENT_PAL_TAG_ARAUNA_SACINHO                          0x11F3
+// END Arauna legend overworlds
 
 #define OBJ_EVENT_PAL_TAG_NONE                    0x11FF
 
@@ -754,6 +776,28 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_AraunaFerrugem,            OBJ_EVENT_PAL_TAG_ARAUNA_FERRUGEM},
     {gObjectEventPal_AraunaBituca,              OBJ_EVENT_PAL_TAG_ARAUNA_BITUCA},
     {gObjectEventPal_AraunaSanfoninha,          OBJ_EVENT_PAL_TAG_ARAUNA_SANFONINHA},
+    // BEGIN Arauna legend overworlds
+    {gObjectEventPal_AraunaGuaraciana,                  OBJ_EVENT_PAL_TAG_ARAUNA_GUARACIANA},
+    {gObjectEventPal_AraunaTupanau,                     OBJ_EVENT_PAL_TAG_ARAUNA_TUPANAU},
+    {gObjectEventPal_AraunaFogareu,                     OBJ_EVENT_PAL_TAG_ARAUNA_FOGAREU},
+    {gObjectEventPal_AraunaYasy,                        OBJ_EVENT_PAL_TAG_ARAUNA_YASY},
+    {gObjectEventPal_AraunaKuarahy,                     OBJ_EVENT_PAL_TAG_ARAUNA_KUARAHY},
+    {gObjectEventPal_AraunaArauanamon,                  OBJ_EVENT_PAL_TAG_ARAUNA_ARAUANAMON},
+    {gObjectEventPal_AraunaArauanau,                    OBJ_EVENT_PAL_TAG_ARAUNA_ARAUANAU},
+    {gObjectEventPal_AraunaTerraao,                     OBJ_EVENT_PAL_TAG_ARAUNA_TERRAAO},
+    {gObjectEventPal_AraunaSolzao,                      OBJ_EVENT_PAL_TAG_ARAUNA_SOLZAO},
+    {gObjectEventPal_AraunaPerybe,                      OBJ_EVENT_PAL_TAG_ARAUNA_PERYBE},
+    {gObjectEventPal_AraunaIarau,                       OBJ_EVENT_PAL_TAG_ARAUNA_IARAU},
+    {gObjectEventPal_AraunaVerdejante,                  OBJ_EVENT_PAL_TAG_ARAUNA_VERDEJANTE},
+    {gObjectEventPal_AraunaPoente,                      OBJ_EVENT_PAL_TAG_ARAUNA_POENTE},
+    {gObjectEventPal_AraunaMarulho,                     OBJ_EVENT_PAL_TAG_ARAUNA_MARULHO},
+    {gObjectEventPal_AraunaJaciana,                     OBJ_EVENT_PAL_TAG_ARAUNA_JACIANA},
+    {gObjectEventPal_AraunaChuvao,                      OBJ_EVENT_PAL_TAG_ARAUNA_CHUVAO},
+    {gObjectEventPal_AraunaRudarauna,                   OBJ_EVENT_PAL_TAG_ARAUNA_RUDARAUNA},
+    {gObjectEventPal_AraunaBoitata,                     OBJ_EVENT_PAL_TAG_ARAUNA_BOITATA},
+    {gObjectEventPal_AraunaVentania,                    OBJ_EVENT_PAL_TAG_ARAUNA_VENTANIA},
+    {gObjectEventPal_AraunaSacinho,                     OBJ_EVENT_PAL_TAG_ARAUNA_SACINHO},
+    // END Arauna legend overworlds
     // Unconditional terminator. The vanilla #else spelt it {}, which is
     // tag 0 rather than OBJ_EVENT_PAL_TAG_NONE, and that is what let the
     // search run past the end.
@@ -8058,6 +8102,14 @@ static void GetGroundEffectFlags_Reflection(struct ObjectEvent *objEvent, u32 *f
         [REFL_TYPE_WATER - 1] = GROUND_EFFECT_FLAG_WATER_REFLECTION
     };
     u8 reflType = ObjectEventGetNearbyReflectionType(objEvent);
+
+    // A standing Arauna legend is 64 pixels of creature, and its reflection would
+    // be a second full-size copy four tiles further down: a twin, not a
+    // reflection. The walking redraws keep theirs.
+    if ((objEvent->graphicsId == OBJ_EVENT_GFX_ARAUNA_POKEMON_A
+      || objEvent->graphicsId == OBJ_EVENT_GFX_ARAUNA_POKEMON_B)
+     && GetObjectEventGraphicsInfo(objEvent->graphicsId)->inanimate)
+        reflType = REFL_TYPE_NONE;
 
     if (reflType)
     {

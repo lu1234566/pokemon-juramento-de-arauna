@@ -195,6 +195,34 @@
       "trainer_sight_or_berry_tree_id": "7",
       "script": "Route124_EventScript_Isabella",
       "flag": "0"
+    },
+    {
+      "local_id": "LOCALID_ARAUNA_LEGEND_POENTE",
+      "graphics_id": "OBJ_EVENT_GFX_ARAUNA_POKEMON_A",
+      "x": 60,
+      "y": 40,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "AraunaLegends_EventScript_Poente",
+      "flag": "FLAG_ARAUNA_LEGEND_POENTE"
+    },
+    {
+      "local_id": "LOCALID_ARAUNA_LEGEND_MARULHO",
+      "graphics_id": "OBJ_EVENT_GFX_ARAUNA_POKEMON_B",
+      "x": 66,
+      "y": 47,
+      "elevation": 1,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "AraunaLegends_EventScript_Marulho",
+      "flag": "FLAG_ARAUNA_LEGEND_MARULHO"
     }
   ],
   "warp_events": [

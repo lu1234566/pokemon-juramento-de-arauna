@@ -93,18 +93,18 @@ desconhecido. O cabo e a Union Room também recusavam a troca dessas criaturas
 até a Pokédex nacional, que só chega depois do Hall da Fama.
 
 A ordem ainda termina em Sacinho (#385) e Arauá (#386), as posições de Jirachi
-e Deoxys, e a dex completa continua deixando essas duas de fora. Também ficam
-de fora as especiais que `ESPECIAIS_ESTATICOS.csv` ainda segura sem casa (ver
-Obtenibilidade): ninguém consegue capturá-las. Hoje são 19 até #384, então a
-dex completa pede 365 espécies. A regra vale para o diploma, a estrela do cartão
+e Deoxys, e a dex completa continua deixando essas duas de fora. Fica de fora
+também qualquer especial que o gate de disponibilidade ainda ache sem encontro:
+ninguém conseguiria capturá-la. Hoje não há nenhuma (ver Obtenibilidade), então
+a dex completa pede #001–#384. A regra vale para o diploma, a estrela do cartão
 de treinador, o presente do laboratório e a classificação de ANAHI, no PC e no
 PokéNav. As faixas da classificação são distribuídas sobre esse total, e
 "halfway mark" substitui o antigo "hundred mark".
 
 O jogo lê essa lista de `src/data/pokemon/dex_completion_held_back.h`, gerado
-por `tools/arauna/check_availability.py --write`. Quando uma especial ganhar
-casa, apague a linha dela no CSV e rode `--write`: ela volta a contar. Sem
-isso, o gate falha.
+por `tools/arauna/check_availability.py --write`. Se um dia uma especial voltar
+a ficar sem encontro, ela entra na lista ao rodar `--write`; sem isso, o gate
+falha.
 
 A dex nacional de Arauna tem as mesmas 386 espécies. Por isso o diploma diz
 NATIONAL quando a dex está completa e o jogador já tem a dex nacional, e
@@ -112,12 +112,12 @@ ARAUNA antes disso.
 
 ## Obtenibilidade
 
-366 das 386 podem ser capturadas: 293 aparecem selvagens, o resto vem de
-evolução ou de presente por script. As outras 20 são lendárias e míticas
-seguradas para um encontro estático que ainda não existe, cada uma com a sua
-linha em `ESPECIAIS_ESTATICOS.csv`. Isso é conferido a cada
-`check_arauna_static.sh`: se alguém mexer nos encontros e deixar uma criatura
-sem casa e fora do CSV, o gate falha e diz qual.
+As 386 podem ser capturadas: 293 aparecem selvagens, o resto vem de evolução,
+de presente por script ou de encontro estático. Os 20 lendários e míticos que
+`ESPECIAIS_ESTATICOS.csv` segurava agora têm encontro próprio, descrito em
+`docs/LENDARIOS_NO_MUNDO.md`. Isso é conferido a cada `check_arauna_static.sh`:
+se alguém mexer nos encontros e deixar uma criatura sem casa e fora do CSV, o
+gate falha e diz qual.
 
 Battle Pyramid e Battle Pike não contam. Neles você luta mas não captura, então
 uma espécie que só vive lá continua inobtenível.

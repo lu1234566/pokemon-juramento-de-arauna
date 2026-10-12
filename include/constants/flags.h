@@ -1669,4 +1669,29 @@
 #define FLAG_ARAUNA_FOGUEIRA_SHARED FLAG_UNUSED_0x042
 // END ARAUNA FOGUEIRA RODA V1
 
+// BEGIN ARAUNA LEGENDS
+// The twenty specials of docs/arauna/ARAUNA_LEGENDS.csv. Set means the
+// creature is not standing in the world: asleep before the first Hall of
+// Fame, caught, or knocked out until the next one (see arauna_legends.c).
+#define FLAG_ARAUNA_LEGEND_GUARACIANA            FLAG_UNUSED_0x020
+#define FLAG_ARAUNA_LEGEND_TUPANAU               FLAG_UNUSED_0x021
+#define FLAG_ARAUNA_LEGEND_FOGAREU               FLAG_UNUSED_0x022
+#define FLAG_ARAUNA_LEGEND_YASY                  FLAG_UNUSED_0x023
+#define FLAG_ARAUNA_LEGEND_KUARAHY               FLAG_UNUSED_0x024
+#define FLAG_ARAUNA_LEGEND_ARAUANAMON            FLAG_UNUSED_0x025
+#define FLAG_ARAUNA_LEGEND_ARAUANAU              FLAG_UNUSED_0x026
+#define FLAG_ARAUNA_LEGEND_TERRAAO               FLAG_UNUSED_0x027
+#define FLAG_ARAUNA_LEGEND_SOLZAO                FLAG_UNUSED_0x028
+#define FLAG_ARAUNA_LEGEND_PERYBE                FLAG_UNUSED_0x029
+#define FLAG_ARAUNA_LEGEND_IARAU                 FLAG_UNUSED_0x02A
+#define FLAG_ARAUNA_LEGEND_VERDEJANTE            FLAG_UNUSED_0x02B
+#define FLAG_ARAUNA_LEGEND_POENTE                FLAG_UNUSED_0x02C
+#define FLAG_ARAUNA_LEGEND_MARULHO               FLAG_UNUSED_0x02D
+#define FLAG_ARAUNA_LEGEND_JACIANA               FLAG_UNUSED_0x02E
+#define FLAG_ARAUNA_LEGEND_CHUVAO                FLAG_UNUSED_0x02F
+#define FLAG_ARAUNA_LEGEND_RUDARAUNA             FLAG_UNUSED_0x030
+#define FLAG_ARAUNA_LEGEND_BOITATA               FLAG_UNUSED_0x031
+#define FLAG_ARAUNA_LEGEND_VENTANIA              FLAG_UNUSED_0x032
+#define FLAG_ARAUNA_LEGEND_SACINHO               FLAG_UNUSED_0x033
+// END ARAUNA LEGENDS
 #endif // GUARD_CONSTANTS_FLAGS_H

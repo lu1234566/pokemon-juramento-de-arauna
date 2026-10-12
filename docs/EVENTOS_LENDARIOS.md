@@ -98,3 +98,9 @@ para o santuário novo) e fecha três dos 20: **#338 Verdejante, #342 Terraão e
 
 Os outros dezessete pedem lugares que ainda não existem, e a coluna `placement`
 de `docs/arauna/ESPECIAIS_ESTATICOS.csv` já diz onde cada um deveria ficar.
+
+## Os 20 agora têm casa
+
+Os vinte ganharam encontro estático próprio, sem trocar ninguém de lugar: os
+onze pontos acima continuam como estão. A lista, as regras e os testes estão em
+`docs/LENDARIOS_NO_MUNDO.md`.

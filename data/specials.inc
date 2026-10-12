@@ -548,3 +548,5 @@ gSpecials::
 	def_special CloseDeptStoreElevatorWindow
 	def_special TrySetBattleTowerLinkType
 	def_special SetAraunaPokemonOverworld
+	def_special AraunaLegends_Reawaken
+	def_special AraunaLegends_BufferSignals

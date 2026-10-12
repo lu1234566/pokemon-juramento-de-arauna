@@ -1,7 +1,7 @@
 #ifndef GUARD_CONSTANTS_ARAUNA_OVERWORLD_H
 #define GUARD_CONSTANTS_ARAUNA_OVERWORLD_H
 
-// Which of the 46 Arauna overworld redraws a dispatcher slot is showing.
+// Which Arauna overworld a dispatcher slot is showing.
 // Store one of these in VAR_ARAUNA_OW_A or VAR_ARAUNA_OW_B; the object event
 // on the map names OBJ_EVENT_GFX_ARAUNA_POKEMON_A or _B and picks it up.
 //
@@ -55,8 +55,28 @@
 #define ARAUNA_OW_FERRUGEM                  44  // #310 Ferrugem
 #define ARAUNA_OW_BITUCA                    45  // #315 Bituca
 #define ARAUNA_OW_SANFONINHA                46  // #369 Sanfoninha
+#define ARAUNA_OW_GUARACIANA                47  // #329 Guaraciana
+#define ARAUNA_OW_TUPANAU                   48  // #331 Tupanaú
+#define ARAUNA_OW_FOGAREU                   49  // #343 Fogaréu
+#define ARAUNA_OW_YASY                      50  // #334 Yasy
+#define ARAUNA_OW_KUARAHY                   51  // #333 Kuarahy
+#define ARAUNA_OW_ARAUANAMON                52  // #348 Arauanamon
+#define ARAUNA_OW_ARAUANAU                  53  // #337 Arauanaú
+#define ARAUNA_OW_TERRAAO                   54  // #342 Terraão
+#define ARAUNA_OW_SOLZAO                    55  // #340 Solzão
+#define ARAUNA_OW_PERYBE                    56  // #336 Perybé
+#define ARAUNA_OW_IARAU                     57  // #332 Iaraú
+#define ARAUNA_OW_VERDEJANTE                58  // #338 Verdejante
+#define ARAUNA_OW_POENTE                    59  // #346 Poente
+#define ARAUNA_OW_MARULHO                   60  // #344 Marulho
+#define ARAUNA_OW_JACIANA                   61  // #330 Jaciana
+#define ARAUNA_OW_CHUVAO                    62  // #339 Chuvão
+#define ARAUNA_OW_RUDARAUNA                 63  // #335 Rudarauna
+#define ARAUNA_OW_BOITATA                   64  // #376 Boitatã
+#define ARAUNA_OW_VENTANIA                  65  // #341 Ventania
+#define ARAUNA_OW_SACINHO                   66  // #385 Sacinho
 
-#define ARAUNA_OW_COUNT 47
+#define ARAUNA_OW_COUNT 67
 
 #define ARAUNA_OW_CHANNEL_A 0
 #define ARAUNA_OW_CHANNEL_B 1

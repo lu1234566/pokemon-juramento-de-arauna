@@ -195,6 +195,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_UpgradeToNationalDex::
 	waitfanfare
 	setflag FLAG_SYS_NATIONAL_DEX
 	special EnableNationalPokedex
+	msgbox LittlerootTown_ProfessorBirchsLab_Text_BondSensorAwake, MSGBOX_DEFAULT
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_GrassyPatchWaiting2, MSGBOX_DEFAULT
 	closemessage
 	setflag FLAG_HIDE_LITTLEROOT_TOWN_BIRCH
@@ -568,7 +569,14 @@ LittlerootTown_ProfessorBirchsLab_Movement_RivalApproachPlayer:
 	step_end
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Machine::
-	msgbox LittlerootTown_ProfessorBirchsLab_Text_SeriousLookingMachine, MSGBOX_SIGN
+	lockall
+	msgbox LittlerootTown_ProfessorBirchsLab_Text_SeriousLookingMachine, MSGBOX_DEFAULT
+	@ After the Hall of Fame the sensor reads out the legends still in the world.
+	goto_if_unset FLAG_SYS_GAME_CLEAR, LittlerootTown_ProfessorBirchsLab_EventScript_MachineDone
+	special AraunaLegends_BufferSignals
+	msgbox gStringVar4, MSGBOX_DEFAULT
+LittlerootTown_ProfessorBirchsLab_EventScript_MachineDone::
+	releaseall
 	end
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Rival::
@@ -931,3 +939,14 @@ LittlerootTown_ProfessorBirchsLab_Text_ScottAboardSSTidalCall:
 	.string "I will explain the rest when you get\n"
 	.string "there. I will be waiting!\p"
 	.string "… … … … … … … … … … … Beep!$"
+
+@ The twenty legends wake at the Hall of Fame (src/arauna_legends.c); the BOND
+@ sensor on the workbench says where.
+LittlerootTown_ProfessorBirchsLab_Text_BondSensorAwake:
+	.string "ANAHI: One more thing. When you\n"
+	.string "entered the Hall of Fame, the BOND\l"
+	.string "sensor on the workbench went wild.\p"
+	.string "Twenty signals, all over ARAUNA.\n"
+	.string "Creatures from the oldest stories.\p"
+	.string "If you want to know where they are,\n"
+	.string "ask the sensor. It hasn't stopped.$"

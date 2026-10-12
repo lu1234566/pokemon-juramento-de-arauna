@@ -3,8 +3,9 @@
 
 Every claim the design makes is checked against the tree rather than asserted:
 
-  * all 46 redraws are in the registry, on both channels, each pointing at its
-    own pic table;
+  * every overworld in docs/arauna/ARAUNA_OVERWORLD_46.csv -- the 46 redraws
+    and the 20 standing legends -- is in the registry, on both channels, each
+    pointing at its own pic table;
   * the selector constants are unique and inside the registry;
   * the dispatch exists in GetObjectEventGraphicsInfo and clamps the selector;
   * both dispatcher ids are ordinary one-byte ids below NUM_OBJ_EVENT_GFX, which
@@ -66,21 +67,26 @@ def main() -> int:
                if k not in ("ARAUNA_OW_NONE", "ARAUNA_OW_COUNT",
                             "ARAUNA_OW_CHANNEL_A", "ARAUNA_OW_CHANNEL_B", "ARAUNA_OW_CHANNELS")}
     count = int(re.search(r"#define ARAUNA_OW_COUNT (\d+)", constants).group(1))
+    manifest = list(csv.DictReader((ROOT / "docs/arauna/ARAUNA_OVERWORLD_46.csv")
+                                   .open(encoding="utf-8")))
+    total = len(manifest)
+    legends = list(csv.DictReader((ROOT / "docs/arauna/ARAUNA_LEGENDS.csv").open(encoding="utf-8")))
 
     print("registry")
-    results.append(check("46 selector constants", len(species) == 46, f"{len(species)}"))
+    results.append(check(f"{total} selector constants, one per manifest row",
+                         len(species) == total, f"{len(species)}"))
     results.append(check("selector values unique and in range",
-                         sorted(species.values()) == list(range(1, 47)) and count == 47))
+                         sorted(species.values()) == list(range(1, total + 1)) and count == total + 1))
 
     for channel in ("A", "B"):
         entries = re.findall(rf"\[(ARAUNA_OW_\w+)\] = &sAraunaOverworld{channel}_(\w+),", registry)
         named = {name for name, _ in entries if name != "ARAUNA_OW_NONE"}
         infos = {info for _, info in entries if _ != "ARAUNA_OW_NONE"}
-        results.append(check(f"channel {channel}: 46 entries, each its own graphics info",
-                             named == set(species) and len(infos) == 46, f"{len(named)} entries"))
+        results.append(check(f"channel {channel}: {total} entries, each its own graphics info",
+                             named == set(species) and len(infos) == total, f"{len(named)} entries"))
 
     tables = set(re.findall(r"\.images = sPicTable_Arauna(\w+),", registry))
-    results.append(check("each creature has its own pic table", len(tables) == 46, f"{len(tables)}"))
+    results.append(check("each creature has its own pic table", len(tables) == total, f"{len(tables)}"))
 
     # Channel B used to be written as 16 + the slot, aiming at a branch that
     # cannot run: paletteSlot is a four-bit field, so 16 + n is stored as n.
@@ -91,7 +97,7 @@ def main() -> int:
     slot_b = registry.count(".paletteSlot = PALSLOT_NPC_SPECIAL_REFLECTION,")
     stale = registry.count(".paletteSlot = 16 + ")
     results.append(check("the two channels claim different palette slots",
-                         slot_a == 46 and slot_b == 46 and stale == 0,
+                         slot_a == total and slot_b == total and stale == 0,
                          f"A={slot_a} B={slot_b}"
                          + (f" and {stale} still written as 16 + the slot" if stale else "")))
 
@@ -110,8 +116,8 @@ def main() -> int:
     results.append(check("two dispatcher ids, both ordinary one-byte ids",
                          len(dispatchers) == 2 and all(v < num for v in dispatchers.values()),
                          ", ".join(f"{k}={v}" for k, v in sorted(dispatchers.items()))))
-    results.append(check("46 creatures reachable from 2 ids",
-                         len(species) == 46 and len(dispatchers) == 2))
+    results.append(check(f"{total} creatures reachable from 2 ids",
+                         len(species) == total and len(dispatchers) == 2))
 
     print("\nnothing persistent moved")
     # What has to hold is that the save LAYOUT has not moved -- not that the
@@ -151,6 +157,7 @@ def main() -> int:
         "include/constants/vars.h",                                   # the reservation itself
         "include/constants/arauna_overworld.h",                       # the selector values
         "src/event_object_movement.c",                                # the dispatcher
+        "src/arauna_legends.c",                                       # the standing legends
         "data/maps/AquaHideout_UnusedRubyMap1/scripts.inc",           # the harness
     }
     trespass = []
@@ -205,15 +212,19 @@ def main() -> int:
     layouts = {l["id"]: l for l in json.loads(
         (ROOT / "data/layouts/layouts.json").read_text(encoding="utf-8"))["layouts"] if l}
 
-    results.append(check("every redraw is somewhere",
-                         len(placed) + 3 == 46, f"{len(placed)} placed + 3 with their own id"))
+    results.append(check("every overworld is somewhere",
+                         len(placed) + 3 + len(legends) == total,
+                         f"{len(placed)} placed + 3 with their own id + {len(legends)} legends"))
     results.append(check("the map table covers every placed map",
                          len(re.findall(r"MAP_GROUP\(", table)) == len({p["map"] for p in placed}),
                          f"{len(re.findall(chr(77)+'AP_GROUP.', table))} rows"))
 
+    # The standing legends go through the same tests as the walking redraws: on
+    # their own object, on a tile the player could stand on, cutting nothing off.
+    spots = placed + legends
     bad_object, bad_tile, blocked = [], [], []
     for name, rows in collections.defaultdict(list, {
-            m: [p for p in placed if p["map"] == m] for m in {p["map"] for p in placed}}).items():
+            m: [p for p in spots if p["map"] == m] for m in {p["map"] for p in spots}}).items():
         blob = json.loads((ROOT / "data/maps" / name / "map.json").read_text(encoding="utf-8"))
         objects = {(o["x"], o["y"]): o.get("graphics_id", "")
                    for o in blob.get("object_events", [])}

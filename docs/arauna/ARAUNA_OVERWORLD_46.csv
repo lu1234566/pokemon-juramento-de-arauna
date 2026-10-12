@@ -45,3 +45,23 @@ arauna_dex,name,species_constant,slug,ow_size,wired,obj_event_gfx,reclaimed_from
 310,Ferrugem,SPECIES_MANECTRIC,ferrugem,64,no,,,arte versionada; sem id de object event livre
 315,Bituca,SPECIES_ROSELIA,bituca,64,no,,,arte versionada; sem id de object event livre
 369,Sanfoninha,SPECIES_RELICANTH,sanfoninha,64,no,,,arte versionada; sem id de object event livre
+329,Guaraciana,SPECIES_VIBRAVA,guaraciana,64s,no,,,legend; battle front sprite standing still
+331,Tupanaú,SPECIES_CACNEA,tupanau,64s,no,,,legend; battle front sprite standing still
+343,Fogaréu,SPECIES_BALTOY,fogareu,64s,no,,,legend; battle front sprite standing still
+334,Yasy,SPECIES_ALTARIA,yasy,64s,no,,,legend; battle front sprite standing still
+333,Kuarahy,SPECIES_SWABLU,kuarahy,64s,no,,,legend; battle front sprite standing still
+348,Arauanamon,SPECIES_ARMALDO,arauanamon,64s,no,,,legend; battle front sprite standing still
+337,Arauanaú,SPECIES_LUNATONE,arauanau,64s,no,,,legend; battle front sprite standing still
+342,Terraão,SPECIES_CRAWDAUNT,terraao,64s,no,,,legend; battle front sprite standing still
+340,Solzão,SPECIES_WHISCASH,solzao,64s,no,,,legend; battle front sprite standing still
+336,Perybé,SPECIES_SEVIPER,perybe,64s,no,,,legend; battle front sprite standing still
+332,Iaraú,SPECIES_CACTURNE,iarau,64s,no,,,legend; battle front sprite standing still
+338,Verdejante,SPECIES_SOLROCK,verdejante,64s,no,,,legend; battle front sprite standing still
+346,Poente,SPECIES_CRADILY,poente,64s,no,,,legend; battle front sprite standing still
+344,Marulho,SPECIES_CLAYDOL,marulho,64s,no,,,legend; battle front sprite standing still
+330,Jaciana,SPECIES_FLYGON,jaciana,64s,no,,,legend; battle front sprite standing still
+339,Chuvão,SPECIES_BARBOACH,chuvao,64s,no,,,legend; battle front sprite standing still
+335,Rudarauna,SPECIES_ZANGOOSE,rudarauna,64s,no,,,legend; battle front sprite standing still
+376,Boitatã,SPECIES_METAGROSS,boitata,64s,no,,,legend; battle front sprite standing still
+341,Ventania,SPECIES_CORPHISH,ventania,64s,no,,,legend; battle front sprite standing still
+385,Sacinho,SPECIES_JIRACHI,sacinho,64s,no,,,legend; battle front sprite standing still

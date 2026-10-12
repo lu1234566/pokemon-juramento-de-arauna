@@ -3,6 +3,11 @@
 Os 46 redraws PixelLab estão todos registrados e selecionáveis, gastando **dois**
 ids de object event em vez de 46.
 
+Desde a colocação dos lendários, o registry tem 66 entradas: as 46 que andam e
+os 20 lendários parados (`ow_size` `64s`, uma pose, ver
+`docs/LENDARIOS_NO_MUNDO.md`). Os lendários escolhem o canal pela própria
+tabela, em `src/arauna_legends.c`, não por `arauna_overworld_maps.h`.
+
 ## Como colocar um Pokémon Arauna num mapa
 
 No Porymap, dê ao object event um destes graphics:

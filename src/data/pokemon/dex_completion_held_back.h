@@ -5,25 +5,5 @@
 // completion skips them until they get one.
 static const u16 sDexCompletionHeldBack[] =
 {
-    SPECIES_VIBRAVA,    // #329 Guaraciana
-    SPECIES_FLYGON,     // #330 Jaciana
-    SPECIES_CACNEA,     // #331 Tupanaú
-    SPECIES_CACTURNE,   // #332 Iaraú
-    SPECIES_SWABLU,     // #333 Kuarahy
-    SPECIES_ALTARIA,    // #334 Yasy
-    SPECIES_ZANGOOSE,   // #335 Rudarauna
-    SPECIES_SEVIPER,    // #336 Perybé
-    SPECIES_LUNATONE,   // #337 Arauanaú
-    SPECIES_SOLROCK,    // #338 Verdejante
-    SPECIES_BARBOACH,   // #339 Chuvão
-    SPECIES_WHISCASH,   // #340 Solzão
-    SPECIES_CORPHISH,   // #341 Ventania
-    SPECIES_CRAWDAUNT,  // #342 Terraão
-    SPECIES_BALTOY,     // #343 Fogaréu
-    SPECIES_CLAYDOL,    // #344 Marulho
-    SPECIES_CRADILY,    // #346 Poente
-    SPECIES_ARMALDO,    // #348 Arauanamon
-    SPECIES_METAGROSS,  // #376 Boitatã
-    SPECIES_JIRACHI,    // #385 Sacinho
     SPECIES_NONE,
 };
