@@ -575,6 +575,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_Machine::
 	goto_if_unset FLAG_SYS_GAME_CLEAR, LittlerootTown_ProfessorBirchsLab_EventScript_MachineDone
 	special AraunaLegends_BufferSignals
 	msgbox gStringVar4, MSGBOX_DEFAULT
+	call LittlerootTown_ProfessorBirchsLab_EventScript_TryGiveAuroraTicket
 LittlerootTown_ProfessorBirchsLab_EventScript_MachineDone::
 	releaseall
 	end
@@ -939,6 +940,38 @@ LittlerootTown_ProfessorBirchsLab_Text_ScottAboardSSTidalCall:
 	.string "I will explain the rest when you get\n"
 	.string "there. I will be waiting!\p"
 	.string "… … … … … … … … … … … Beep!$"
+
+@ One needle points past every route: Araua on Birth Island, which the Baia das
+@ Luzes ferry only sails to for an AURORA TICKET. Mystery Gift was the only
+@ way to get one; now ANAHI hands it over at the sensor after the Hall of Fame.
+LittlerootTown_ProfessorBirchsLab_EventScript_TryGiveAuroraTicket::
+	goto_if_set FLAG_ENABLE_SHIP_BIRTH_ISLAND, Common_EventScript_NopReturn
+	goto_if_set FLAG_BATTLED_DEOXYS, Common_EventScript_NopReturn
+	msgbox LittlerootTown_ProfessorBirchsLab_Text_OneNeedlePointsToSea, MSGBOX_DEFAULT
+	checkitem ITEM_AURORA_TICKET
+	goto_if_eq VAR_RESULT, TRUE, LittlerootTown_ProfessorBirchsLab_EventScript_EnableBirthIsland
+	giveitem ITEM_AURORA_TICKET
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_NopReturn
+LittlerootTown_ProfessorBirchsLab_EventScript_EnableBirthIsland::
+	setflag FLAG_ENABLE_SHIP_BIRTH_ISLAND
+	setflag FLAG_RECEIVED_AURORA_TICKET
+	msgbox LittlerootTown_ProfessorBirchsLab_Text_AuroraTicketPort, MSGBOX_DEFAULT
+	return
+
+LittlerootTown_ProfessorBirchsLab_Text_OneNeedlePointsToSea:
+	.string "ANAHI: Look at that last needle.\n"
+	.string "It doesn't point at any route.\p"
+	.string "It points out to sea, past the\n"
+	.string "BAIA DAS LUZES, to an island\l"
+	.string "no chart has a name for.\p"
+	.string "That signal is older than all the\n"
+	.string "others. Here, take this.$"
+
+LittlerootTown_ProfessorBirchsLab_Text_AuroraTicketPort:
+	.string "ANAHI: Show it at the BAIA DAS LUZES\n"
+	.string "port. Whatever waits out there…\p"
+	.string "I think it has been waiting for\n"
+	.string "you, too.$"
 
 @ The twenty legends wake at the Hall of Fame (src/arauna_legends.c); the BOND
 @ sensor on the workbench says where.

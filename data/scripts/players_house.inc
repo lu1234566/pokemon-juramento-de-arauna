@@ -310,6 +310,7 @@ PlayersHouse_1F_EventScript_Mom::
 	end
 
 PlayersHouse_1F_EventScript_DontPushYourselfTooHard::
+	call PlayersHouse_1F_EventScript_TryGiveEonTicket
 	msgbox PlayersHouse_1F_Text_DontPushYourselfTooHard, MSGBOX_DEFAULT
 	release
 	end
@@ -472,6 +473,7 @@ PlayersHouse_1F_EventScript_GetSSTicketAndSeeLatiTV::
 	special InitRoamer
 	copyvar VAR_ROAMER_POKEMON, VAR_RESULT
 	msgbox PlayersHouse_1F_Text_StillUnknownPokemon, MSGBOX_DEFAULT
+	call PlayersHouse_1F_EventScript_TryGiveEonTicket
 	closemessage
 	setvar VAR_LITTLEROOT_HOUSES_STATE_MAY, 4
 	setvar VAR_LITTLEROOT_HOUSES_STATE_BRENDAN, 4
@@ -671,3 +673,31 @@ PlayersHouse_1F_Movement_PlayerApproachTVForLatiFemale:
 EventScript_RunningShoesManual::
 	msgbox PlayersHouse_1F_Text_RunningShoesManual, MSGBOX_SIGN
 	end
+
+@ The second Lati waits on Ilha do Sul, which the Baia das Luzes ferry only
+@ sails to for an EON TICKET. Mystery Gift was the only way to get one; now
+@ it comes in the envelope with the S.S. TICKET, right after the news flash,
+@ and Mom still has it for a save that saw the news before this was added.
+PlayersHouse_1F_EventScript_TryGiveEonTicket::
+	goto_if_set FLAG_ENABLE_SHIP_SOUTHERN_ISLAND, Common_EventScript_NopReturn
+	checkitem ITEM_EON_TICKET
+	goto_if_eq VAR_RESULT, TRUE, PlayersHouse_1F_EventScript_EnableSouthernIsland
+	msgbox PlayersHouse_1F_Text_EonTicketInTheEnvelope, MSGBOX_DEFAULT
+	giveitem ITEM_EON_TICKET
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_NopReturn
+	msgbox PlayersHouse_1F_Text_EonTicketSouthernIsland, MSGBOX_DEFAULT
+PlayersHouse_1F_EventScript_EnableSouthernIsland::
+	setflag FLAG_ENABLE_SHIP_SOUTHERN_ISLAND
+	return
+
+PlayersHouse_1F_Text_EonTicketInTheEnvelope:
+	.string "MOM: Oh, and this was in the same\n"
+	.string "envelope as your father's ticket.\p"
+	.string "There's a POKéMON drawn on it, just\n"
+	.string "like the one on the news…\l"
+	.string "only a different color.$"
+
+PlayersHouse_1F_Text_EonTicketSouthernIsland:
+	.string "MOM: It says ILHA DO SUL.\n"
+	.string "The ferry at BAIA DAS LUZES\l"
+	.string "should know the way.$"
