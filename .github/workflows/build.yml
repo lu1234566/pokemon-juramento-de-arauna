@@ -20,6 +20,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          # Width/save-layout gates read pinned historical commits with git show.
+          fetch-depth: 0
 
       - name: Validate canonical English rendered composition
         run: bash scripts/check_arauna_static.sh
@@ -30,6 +33,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Install build dependencies
         run: |
@@ -61,3 +66,4 @@ jobs:
         run: |
           test "$SAFETY_RESULT" = "success"
           test "$BUILD_RESULT" = "success"
+
