@@ -1,0 +1,369 @@
+{
+  "schema": "arauana-team",
+  "version": 4,
+  "exportedAt": "2026-10-12T00:00:00.000Z",
+  "trainerParty": {
+    "customMoveset": true,
+    "ivMode": "single-fixed-iv"
+  },
+  "slots": [
+    {
+      "slot": 1,
+      "pokemonId": 236,
+      "pokemonName": "Bicho-Papão",
+      "level": 49,
+      "iv": 190,
+      "iv31": 23,
+      "heldItem": {
+        "id": "ITEM_SITRUS_BERRY",
+        "name": "SITRUS BERRY"
+      },
+      "types": [
+        "dark",
+        "ghost"
+      ],
+      "moves": [
+        {
+          "id": "MOVE_SHADOW_BALL",
+          "name": "Shadow Ball",
+          "type": "ghost",
+          "category": "physical",
+          "power": 80,
+          "accuracy": 100,
+          "pp": 15,
+          "learnsetLevel": 48,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_CRUNCH",
+          "name": "Crunch",
+          "type": "dark",
+          "category": "special",
+          "power": 80,
+          "accuracy": 100,
+          "pp": 15,
+          "learnsetLevel": 53,
+          "warning": "Aprendido no Nv. 53; treinador está no Nv. 49. O moveset custom permite.",
+          "signature": false
+        },
+        {
+          "id": "MOVE_CONFUSE_RAY",
+          "name": "Confuse Ray",
+          "type": "ghost",
+          "category": "status",
+          "power": null,
+          "accuracy": 100,
+          "pp": 10,
+          "learnsetLevel": 24,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_CURSE",
+          "name": "Curse",
+          "type": "mystery",
+          "category": "status",
+          "power": null,
+          "accuracy": null,
+          "pp": 10,
+          "learnsetLevel": 44,
+          "warning": null,
+          "signature": false
+        }
+      ],
+      "warnings": [
+        "Crunch: Aprendido no Nv. 53; treinador está no Nv. 49. O moveset custom permite."
+      ]
+    },
+    {
+      "slot": 2,
+      "pokemonId": 254,
+      "pokemonName": "Pisadeira",
+      "level": 49,
+      "iv": 198,
+      "iv31": 24,
+      "heldItem": {
+        "id": "ITEM_SITRUS_BERRY",
+        "name": "SITRUS BERRY"
+      },
+      "types": [
+        "ghost",
+        "fighting"
+      ],
+      "moves": [
+        {
+          "id": "MOVE_SHADOW_BALL",
+          "name": "Shadow Ball",
+          "type": "ghost",
+          "category": "physical",
+          "power": 80,
+          "accuracy": 100,
+          "pp": 15,
+          "learnsetLevel": 34,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_SKY_UPPERCUT",
+          "name": "Sky Uppercut",
+          "type": "fighting",
+          "category": "physical",
+          "power": 85,
+          "accuracy": 90,
+          "pp": 15,
+          "learnsetLevel": 48,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_CONFUSE_RAY",
+          "name": "Confuse Ray",
+          "type": "ghost",
+          "category": "status",
+          "power": null,
+          "accuracy": 100,
+          "pp": 10,
+          "learnsetLevel": 15,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_PSYCHIC",
+          "name": "Psychic",
+          "type": "psychic",
+          "category": "special",
+          "power": 90,
+          "accuracy": 100,
+          "pp": 10,
+          "learnsetLevel": null,
+          "warning": null,
+          "signature": false
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "slot": 3,
+      "pokemonId": 240,
+      "pokemonName": "Perna-Cabeluda",
+      "level": 50,
+      "iv": 214,
+      "iv31": 26,
+      "heldItem": {
+        "id": "ITEM_LUM_BERRY",
+        "name": "LUM BERRY"
+      },
+      "types": [
+        "ghost",
+        "normal"
+      ],
+      "moves": [
+        {
+          "id": "MOVE_SHADOW_BALL",
+          "name": "Shadow Ball",
+          "type": "ghost",
+          "category": "physical",
+          "power": 80,
+          "accuracy": 100,
+          "pp": 15,
+          "learnsetLevel": 32,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_DOUBLE_EDGE",
+          "name": "Double Edge",
+          "type": "normal",
+          "category": "physical",
+          "power": 120,
+          "accuracy": 100,
+          "pp": 15,
+          "learnsetLevel": 42,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_CURSE",
+          "name": "Curse",
+          "type": "mystery",
+          "category": "status",
+          "power": null,
+          "accuracy": null,
+          "pp": 10,
+          "learnsetLevel": 26,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_SLUDGE_BOMB",
+          "name": "Sludge Bomb",
+          "type": "poison",
+          "category": "physical",
+          "power": 90,
+          "accuracy": 100,
+          "pp": 10,
+          "learnsetLevel": null,
+          "warning": null,
+          "signature": false
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "slot": 4,
+      "pokemonId": 234,
+      "pokemonName": "Loirinha",
+      "level": 50,
+      "iv": 231,
+      "iv31": 28,
+      "heldItem": {
+        "id": "ITEM_BRIGHT_POWDER",
+        "name": "BRIGHT POWDER"
+      },
+      "types": [
+        "ghost",
+        "fairy"
+      ],
+      "moves": [
+        {
+          "id": "MOVE_SHADOW_BALL",
+          "name": "Shadow Ball",
+          "type": "ghost",
+          "category": "physical",
+          "power": 80,
+          "accuracy": 100,
+          "pp": 15,
+          "learnsetLevel": null,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_DAZZLING_GLEAM",
+          "name": "Dazzling Gleam",
+          "type": "fairy",
+          "category": "special",
+          "power": 80,
+          "accuracy": 100,
+          "pp": 10,
+          "learnsetLevel": 42,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_THUNDERBOLT",
+          "name": "Thunderbolt",
+          "type": "electric",
+          "category": "special",
+          "power": 95,
+          "accuracy": 100,
+          "pp": 15,
+          "learnsetLevel": null,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_DESTINY_BOND",
+          "name": "Destiny Bond",
+          "type": "ghost",
+          "category": "status",
+          "power": null,
+          "accuracy": null,
+          "pp": 5,
+          "learnsetLevel": 53,
+          "warning": "Aprendido no Nv. 53; treinador está no Nv. 50. O moveset custom permite.",
+          "signature": false
+        }
+      ],
+      "warnings": [
+        "Destiny Bond: Aprendido no Nv. 53; treinador está no Nv. 50. O moveset custom permite."
+      ]
+    },
+    {
+      "slot": 5,
+      "pokemonId": 289,
+      "pokemonName": "Anhangaú",
+      "level": 51,
+      "iv": 255,
+      "iv31": 31,
+      "heldItem": {
+        "id": "ITEM_SPELL_TAG",
+        "name": "SPELL TAG"
+      },
+      "types": [
+        "ghost",
+        "grass"
+      ],
+      "moves": [
+        {
+          "id": "MOVE_SHADOW_BALL",
+          "name": "Shadow Ball",
+          "type": "ghost",
+          "category": "physical",
+          "power": 80,
+          "accuracy": 100,
+          "pp": 15,
+          "learnsetLevel": 44,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_GIGA_DRAIN",
+          "name": "Giga Drain",
+          "type": "grass",
+          "category": "special",
+          "power": 60,
+          "accuracy": 100,
+          "pp": 5,
+          "learnsetLevel": 53,
+          "warning": "Aprendido no Nv. 53; treinador está no Nv. 51. O moveset custom permite.",
+          "signature": false
+        },
+        {
+          "id": "MOVE_THUNDERBOLT",
+          "name": "Thunderbolt",
+          "type": "electric",
+          "category": "special",
+          "power": 95,
+          "accuracy": 100,
+          "pp": 15,
+          "learnsetLevel": null,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_LEECH_SEED",
+          "name": "Leech Seed",
+          "type": "grass",
+          "category": "status",
+          "power": null,
+          "accuracy": 90,
+          "pp": 10,
+          "learnsetLevel": 29,
+          "warning": null,
+          "signature": false
+        }
+      ],
+      "warnings": [
+        "Giga Drain: Aprendido no Nv. 53; treinador está no Nv. 51. O moveset custom permite."
+      ]
+    },
+    {
+      "slot": 6,
+      "pokemonId": null,
+      "pokemonName": null,
+      "level": null,
+      "iv": null,
+      "iv31": null,
+      "heldItem": null,
+      "types": [],
+      "moves": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "warnings": []
+    }
+  ]
+}

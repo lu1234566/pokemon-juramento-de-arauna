@@ -191,8 +191,10 @@ def specials():
     """Os 31 especiais do plano, cada um marcado com se ja tem casa hoje.
 
     "Ter casa" e a mesma pergunta que build_availability.py responde, e a
-    resposta vem dele para os dois nao discordarem: onze dos trinta e um ja sao
-    alcancaveis pelos encontros herdados do Emerald, e vinte nao sao.
+    resposta vem dele para os dois nao discordarem: onze dos trinta e um vem
+    dos encontros herdados do Emerald, e os outros vinte dos lugares de
+    docs/arauna/ARAUNA_LEGENDS.csv. Cada linha leva o mapa e o nivel de la,
+    quando houver.
     """
     sys.path.insert(0, str(Path(__file__).resolve().parent))
     import build_availability as disponivel
@@ -204,10 +206,16 @@ def specials():
         disponivel.caught_in_the_wild(data, by_slot) | disponivel.scripted(by_slot),
         forward)
 
+    with open(ROOT / "docs/arauna/ARAUNA_LEGENDS.csv", encoding="utf-8") as fh:
+        lendas = {int(r["dex"]): r for r in csv.DictReader(fh)}
+
     out = []
     with open(ROOT / "docs/arauna/ESPECIAIS_ESTATICOS.csv", encoding="utf-8") as fh:
         for row in csv.DictReader(fh):
             row["tem_casa"] = int(row["dex"]) in alcancavel
+            lenda = lendas.get(int(row["dex"]))
+            row["mapa"] = lenda["map"] if lenda else None
+            row["nivel"] = int(lenda["level"]) if lenda else None
             out.append(row)
     return out
 
@@ -453,29 +461,44 @@ def markdown(d):
             % (m["dex"], m["nome"], "/".join(m["tipos"]), m["bst"],
                "sim" if m["selvagem"] else "—", m["golpes_por_nivel"]))
     add("")
-    add("## O que a beta ainda nao tem")
-    add("")
     sem = [s for s in d["especiais_pendentes"] if not s["tem_casa"]]
     com = [s for s in d["especiais_pendentes"] if s["tem_casa"]]
-    add("O plano dos especiais tem %d lendarios e miticos. **%d ja estao no jogo**,"
+    novos = [s for s in com if s.get("mapa")]
+    herdados = [s for s in com if not s.get("mapa")]
+    add("## O que a beta ainda nao tem" if sem else "## Os lendarios e miticos")
+    add("")
+    add("O plano dos especiais tem %d lendarios e miticos. **%d ja estao no jogo**:"
         % (len(d["especiais_pendentes"]), len(com)))
-    add("nos encontros estaticos herdados do Emerald. Os outros **%d nao tem lugar"
-        % len(sem))
-    add("no mapa** -- a dex nao fecha nesta beta, e isso e conhecido.")
+    add("%d nos encontros estaticos herdados do Emerald e %d nos lugares de"
+        % (len(herdados), len(novos)))
+    add("`docs/arauna/ARAUNA_LEGENDS.csv`, onde acordam depois do primeiro Hall da Fama.")
+    if sem:
+        add("Os outros **%d nao tem lugar no mapa** -- a dex nao fecha nesta beta, e"
+            % len(sem))
+        add("isso e conhecido.")
+        add("")
+        add("### Os %d que ainda esperam lugar" % len(sem))
+        add("")
+        add("| dex | nome | tipos | nivel previsto | lugar previsto |")
+        add("|---:|---|---|---:|---|")
+        for s in sem:
+            add("| %s | %s | %s | %s | %s |"
+                % (s["dex"], s["name"], s["types"], s["recommended_level"], s["placement"]))
     add("")
-    add("### Os %d que ainda esperam lugar" % len(sem))
-    add("")
-    add("| dex | nome | tipos | nivel previsto | lugar previsto |")
-    add("|---:|---|---|---:|---|")
-    for s in sem:
-        add("| %s | %s | %s | %s | %s |"
-            % (s["dex"], s["name"], s["types"], s["recommended_level"], s["placement"]))
-    add("")
-    add("### Os %d que ja podem ser encontrados" % len(com))
+    if novos:
+        add("### Os %d que acordam depois do Hall da Fama" % len(novos))
+        add("")
+        add("| dex | nome | tipos | nivel | mapa |")
+        add("|---:|---|---|---:|---|")
+        for s in novos:
+            add("| %s | %s | %s | %d | %s |"
+                % (s["dex"], s["name"], s["types"], s["nivel"], s["mapa"]))
+        add("")
+    add("### Os %d herdados do Emerald" % len(herdados))
     add("")
     add("| dex | nome | tipos |")
     add("|---:|---|---|")
-    for s in com:
+    for s in herdados:
         add("| %s | %s | %s |" % (s["dex"], s["name"], s["types"]))
     add("")
     return "\n".join(L)

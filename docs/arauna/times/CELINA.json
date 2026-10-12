@@ -1,0 +1,367 @@
+{
+  "schema": "arauana-team",
+  "version": 4,
+  "exportedAt": "2026-10-12T00:00:00.000Z",
+  "trainerParty": {
+    "customMoveset": true,
+    "ivMode": "single-fixed-iv"
+  },
+  "slots": [
+    {
+      "slot": 1,
+      "pokemonId": 124,
+      "pokemonName": "Tambaqui",
+      "level": 44,
+      "iv": 149,
+      "iv31": 18,
+      "heldItem": {
+        "id": "ITEM_SITRUS_BERRY",
+        "name": "SITRUS BERRY"
+      },
+      "types": [
+        "water",
+        "normal"
+      ],
+      "moves": [
+        {
+          "id": "MOVE_SURF",
+          "name": "Surf",
+          "type": "water",
+          "category": "special",
+          "power": 95,
+          "accuracy": 100,
+          "pp": 15,
+          "learnsetLevel": 47,
+          "warning": "Aprendido no Nv. 47; treinador está no Nv. 44. O moveset custom permite.",
+          "signature": false
+        },
+        {
+          "id": "MOVE_BODY_SLAM",
+          "name": "Body Slam",
+          "type": "normal",
+          "category": "physical",
+          "power": 85,
+          "accuracy": 100,
+          "pp": 15,
+          "learnsetLevel": 42,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_ICE_BEAM",
+          "name": "Ice Beam",
+          "type": "ice",
+          "category": "special",
+          "power": 95,
+          "accuracy": 100,
+          "pp": 10,
+          "learnsetLevel": null,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_RAIN_DANCE",
+          "name": "Rain Dance",
+          "type": "water",
+          "category": "status",
+          "power": null,
+          "accuracy": null,
+          "pp": 5,
+          "learnsetLevel": 32,
+          "warning": null,
+          "signature": false
+        }
+      ],
+      "warnings": [
+        "Surf: Aprendido no Nv. 47; treinador está no Nv. 44. O moveset custom permite."
+      ]
+    },
+    {
+      "slot": 2,
+      "pokemonId": 364,
+      "pokemonName": "Sarará",
+      "level": 44,
+      "iv": 157,
+      "iv31": 19,
+      "heldItem": {
+        "id": "ITEM_SITRUS_BERRY",
+        "name": "SITRUS BERRY"
+      },
+      "types": [
+        "fairy",
+        "water"
+      ],
+      "moves": [
+        {
+          "id": "MOVE_SURF",
+          "name": "Surf",
+          "type": "water",
+          "category": "special",
+          "power": 95,
+          "accuracy": 100,
+          "pp": 15,
+          "learnsetLevel": 44,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_DAZZLING_GLEAM",
+          "name": "Dazzling Gleam",
+          "type": "fairy",
+          "category": "special",
+          "power": 80,
+          "accuracy": 100,
+          "pp": 10,
+          "learnsetLevel": 38,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_ICE_BEAM",
+          "name": "Ice Beam",
+          "type": "ice",
+          "category": "special",
+          "power": 95,
+          "accuracy": 100,
+          "pp": 10,
+          "learnsetLevel": null,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_RAIN_DANCE",
+          "name": "Rain Dance",
+          "type": "water",
+          "category": "status",
+          "power": null,
+          "accuracy": null,
+          "pp": 5,
+          "learnsetLevel": 34,
+          "warning": null,
+          "signature": false
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "slot": 3,
+      "pokemonId": 132,
+      "pokemonName": "Matrinxã",
+      "level": 45,
+      "iv": 173,
+      "iv31": 21,
+      "heldItem": {
+        "id": "ITEM_SITRUS_BERRY",
+        "name": "SITRUS BERRY"
+      },
+      "types": [
+        "water",
+        "normal"
+      ],
+      "moves": [
+        {
+          "id": "MOVE_SURF",
+          "name": "Surf",
+          "type": "water",
+          "category": "special",
+          "power": 95,
+          "accuracy": 100,
+          "pp": 15,
+          "learnsetLevel": null,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_BODY_SLAM",
+          "name": "Body Slam",
+          "type": "normal",
+          "category": "physical",
+          "power": 85,
+          "accuracy": 100,
+          "pp": 15,
+          "learnsetLevel": 39,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_ICE_BEAM",
+          "name": "Ice Beam",
+          "type": "ice",
+          "category": "special",
+          "power": 95,
+          "accuracy": 100,
+          "pp": 10,
+          "learnsetLevel": null,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_PROTECT",
+          "name": "Protect",
+          "type": "normal",
+          "category": "status",
+          "power": null,
+          "accuracy": null,
+          "pp": 10,
+          "learnsetLevel": null,
+          "warning": null,
+          "signature": false
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "slot": 4,
+      "pokemonId": 47,
+      "pokemonName": "Sucuri",
+      "level": 45,
+      "iv": 198,
+      "iv31": 24,
+      "heldItem": {
+        "id": "ITEM_LUM_BERRY",
+        "name": "LUM BERRY"
+      },
+      "types": [
+        "water",
+        "poison"
+      ],
+      "moves": [
+        {
+          "id": "MOVE_SURF",
+          "name": "Surf",
+          "type": "water",
+          "category": "special",
+          "power": 95,
+          "accuracy": 100,
+          "pp": 15,
+          "learnsetLevel": 35,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_SLUDGE_BOMB",
+          "name": "Sludge Bomb",
+          "type": "poison",
+          "category": "physical",
+          "power": 90,
+          "accuracy": 100,
+          "pp": 10,
+          "learnsetLevel": 18,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_ICE_BEAM",
+          "name": "Ice Beam",
+          "type": "ice",
+          "category": "special",
+          "power": 95,
+          "accuracy": 100,
+          "pp": 10,
+          "learnsetLevel": null,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_TOXIC",
+          "name": "Toxic",
+          "type": "poison",
+          "category": "status",
+          "power": null,
+          "accuracy": 85,
+          "pp": 10,
+          "learnsetLevel": null,
+          "warning": null,
+          "signature": false
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "slot": 5,
+      "pokemonId": 280,
+      "pokemonName": "Sucuriaçu",
+      "level": 46,
+      "iv": 255,
+      "iv31": 31,
+      "heldItem": {
+        "id": "ITEM_MYSTIC_WATER",
+        "name": "MYSTIC WATER"
+      },
+      "types": [
+        "water",
+        "dragon"
+      ],
+      "moves": [
+        {
+          "id": "MOVE_SURF",
+          "name": "Surf",
+          "type": "water",
+          "category": "special",
+          "power": 95,
+          "accuracy": 100,
+          "pp": 15,
+          "learnsetLevel": 44,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_OUTRAGE",
+          "name": "Outrage",
+          "type": "dragon",
+          "category": "special",
+          "power": 90,
+          "accuracy": 100,
+          "pp": 15,
+          "learnsetLevel": 48,
+          "warning": "Aprendido no Nv. 48; treinador está no Nv. 46. O moveset custom permite.",
+          "signature": false
+        },
+        {
+          "id": "MOVE_ICE_BEAM",
+          "name": "Ice Beam",
+          "type": "ice",
+          "category": "special",
+          "power": 95,
+          "accuracy": 100,
+          "pp": 10,
+          "learnsetLevel": null,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_RAIN_DANCE",
+          "name": "Rain Dance",
+          "type": "water",
+          "category": "status",
+          "power": null,
+          "accuracy": null,
+          "pp": 5,
+          "learnsetLevel": null,
+          "warning": null,
+          "signature": false
+        }
+      ],
+      "warnings": [
+        "Outrage: Aprendido no Nv. 48; treinador está no Nv. 46. O moveset custom permite."
+      ]
+    },
+    {
+      "slot": 6,
+      "pokemonId": null,
+      "pokemonName": null,
+      "level": null,
+      "iv": null,
+      "iv31": null,
+      "heldItem": null,
+      "types": [],
+      "moves": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "warnings": []
+    }
+  ]
+}

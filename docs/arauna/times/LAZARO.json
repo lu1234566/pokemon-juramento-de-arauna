@@ -1,0 +1,372 @@
+{
+  "schema": "arauana-team",
+  "version": 4,
+  "exportedAt": "2026-10-12T00:00:00.000Z",
+  "trainerParty": {
+    "customMoveset": true,
+    "ivMode": "single-fixed-iv"
+  },
+  "slots": [
+    {
+      "slot": 1,
+      "pokemonId": 123,
+      "pokemonName": "Piranha",
+      "level": 47,
+      "iv": 181,
+      "iv31": 22,
+      "heldItem": {
+        "id": "ITEM_SITRUS_BERRY",
+        "name": "SITRUS BERRY"
+      },
+      "types": [
+        "water",
+        "dark"
+      ],
+      "moves": [
+        {
+          "id": "MOVE_CRUNCH",
+          "name": "Crunch",
+          "type": "dark",
+          "category": "special",
+          "power": 80,
+          "accuracy": 100,
+          "pp": 15,
+          "learnsetLevel": 53,
+          "warning": "Aprendido no Nv. 53; treinador está no Nv. 47. O moveset custom permite.",
+          "signature": false
+        },
+        {
+          "id": "MOVE_SURF",
+          "name": "Surf",
+          "type": "water",
+          "category": "special",
+          "power": 95,
+          "accuracy": 100,
+          "pp": 15,
+          "learnsetLevel": null,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_ROCK_TOMB",
+          "name": "Rock Tomb",
+          "type": "rock",
+          "category": "physical",
+          "power": 50,
+          "accuracy": 80,
+          "pp": 10,
+          "learnsetLevel": null,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_TAUNT",
+          "name": "Taunt",
+          "type": "dark",
+          "category": "status",
+          "power": null,
+          "accuracy": 100,
+          "pp": 20,
+          "learnsetLevel": 48,
+          "warning": "Aprendido no Nv. 48; treinador está no Nv. 47. O moveset custom permite.",
+          "signature": false
+        }
+      ],
+      "warnings": [
+        "Crunch: Aprendido no Nv. 53; treinador está no Nv. 47. O moveset custom permite.",
+        "Taunt: Aprendido no Nv. 48; treinador está no Nv. 47. O moveset custom permite."
+      ]
+    },
+    {
+      "slot": 2,
+      "pokemonId": 68,
+      "pokemonName": "Gato-do-mato",
+      "level": 47,
+      "iv": 190,
+      "iv31": 23,
+      "heldItem": {
+        "id": "ITEM_SITRUS_BERRY",
+        "name": "SITRUS BERRY"
+      },
+      "types": [
+        "normal",
+        "dark"
+      ],
+      "moves": [
+        {
+          "id": "MOVE_CRUNCH",
+          "name": "Crunch",
+          "type": "dark",
+          "category": "special",
+          "power": 80,
+          "accuracy": 100,
+          "pp": 15,
+          "learnsetLevel": 54,
+          "warning": "Aprendido no Nv. 54; treinador está no Nv. 47. O moveset custom permite.",
+          "signature": false
+        },
+        {
+          "id": "MOVE_DOUBLE_EDGE",
+          "name": "Double Edge",
+          "type": "normal",
+          "category": "physical",
+          "power": 120,
+          "accuracy": 100,
+          "pp": 15,
+          "learnsetLevel": 25,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_STEEL_WING",
+          "name": "Steel Wing",
+          "type": "steel",
+          "category": "physical",
+          "power": 70,
+          "accuracy": 90,
+          "pp": 25,
+          "learnsetLevel": null,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_AERIAL_ACE",
+          "name": "Aerial Ace",
+          "type": "flying",
+          "category": "physical",
+          "power": 60,
+          "accuracy": null,
+          "pp": 20,
+          "learnsetLevel": null,
+          "warning": null,
+          "signature": false
+        }
+      ],
+      "warnings": [
+        "Crunch: Aprendido no Nv. 54; treinador está no Nv. 47. O moveset custom permite."
+      ]
+    },
+    {
+      "slot": 3,
+      "pokemonId": 23,
+      "pokemonName": "Onçaléu",
+      "level": 48,
+      "iv": 206,
+      "iv31": 25,
+      "heldItem": {
+        "id": "ITEM_SCOPE_LENS",
+        "name": "SCOPE LENS"
+      },
+      "types": [
+        "dark"
+      ],
+      "moves": [
+        {
+          "id": "MOVE_CRUNCH",
+          "name": "Crunch",
+          "type": "dark",
+          "category": "special",
+          "power": 80,
+          "accuracy": 100,
+          "pp": 15,
+          "learnsetLevel": 34,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_IRON_TAIL",
+          "name": "Iron Tail",
+          "type": "steel",
+          "category": "physical",
+          "power": 100,
+          "accuracy": 75,
+          "pp": 15,
+          "learnsetLevel": null,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_TAUNT",
+          "name": "Taunt",
+          "type": "dark",
+          "category": "status",
+          "power": null,
+          "accuracy": 100,
+          "pp": 20,
+          "learnsetLevel": 29,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_DOUBLE_EDGE",
+          "name": "Double Edge",
+          "type": "normal",
+          "category": "physical",
+          "power": 120,
+          "accuracy": 100,
+          "pp": 15,
+          "learnsetLevel": null,
+          "warning": null,
+          "signature": false
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "slot": 4,
+      "pokemonId": 374,
+      "pokemonName": "Escamoso",
+      "level": 48,
+      "iv": 223,
+      "iv31": 27,
+      "heldItem": {
+        "id": "ITEM_LUM_BERRY",
+        "name": "LUM BERRY"
+      },
+      "types": [
+        "water",
+        "dark"
+      ],
+      "moves": [
+        {
+          "id": "MOVE_CRUNCH",
+          "name": "Crunch",
+          "type": "dark",
+          "category": "special",
+          "power": 80,
+          "accuracy": 100,
+          "pp": 15,
+          "learnsetLevel": 44,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_SURF",
+          "name": "Surf",
+          "type": "water",
+          "category": "special",
+          "power": 95,
+          "accuracy": 100,
+          "pp": 15,
+          "learnsetLevel": 39,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_TORMENT",
+          "name": "Torment",
+          "type": "dark",
+          "category": "status",
+          "power": null,
+          "accuracy": 100,
+          "pp": 15,
+          "learnsetLevel": 24,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_WHIRLWIND",
+          "name": "Whirlwind",
+          "type": "normal",
+          "category": "status",
+          "power": null,
+          "accuracy": 100,
+          "pp": 20,
+          "learnsetLevel": 53,
+          "warning": "Aprendido no Nv. 53; treinador está no Nv. 48. O moveset custom permite.",
+          "signature": false
+        }
+      ],
+      "warnings": [
+        "Whirlwind: Aprendido no Nv. 53; treinador está no Nv. 48. O moveset custom permite."
+      ]
+    },
+    {
+      "slot": 5,
+      "pokemonId": 77,
+      "pokemonName": "Quati",
+      "level": 49,
+      "iv": 255,
+      "iv31": 31,
+      "heldItem": {
+        "id": "ITEM_BLACK_GLASSES",
+        "name": "BLACK GLASSES"
+      },
+      "types": [
+        "normal",
+        "dark"
+      ],
+      "moves": [
+        {
+          "id": "MOVE_CRUNCH",
+          "name": "Crunch",
+          "type": "dark",
+          "category": "special",
+          "power": 80,
+          "accuracy": 100,
+          "pp": 15,
+          "learnsetLevel": 54,
+          "warning": "Aprendido no Nv. 54; treinador está no Nv. 49. O moveset custom permite.",
+          "signature": false
+        },
+        {
+          "id": "MOVE_DOUBLE_EDGE",
+          "name": "Double Edge",
+          "type": "normal",
+          "category": "physical",
+          "power": 120,
+          "accuracy": 100,
+          "pp": 15,
+          "learnsetLevel": 25,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_FIRE_BLAST",
+          "name": "Fire Blast",
+          "type": "fire",
+          "category": "special",
+          "power": 120,
+          "accuracy": 85,
+          "pp": 5,
+          "learnsetLevel": null,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_TAUNT",
+          "name": "Taunt",
+          "type": "dark",
+          "category": "status",
+          "power": null,
+          "accuracy": 100,
+          "pp": 20,
+          "learnsetLevel": 50,
+          "warning": "Aprendido no Nv. 50; treinador está no Nv. 49. O moveset custom permite.",
+          "signature": false
+        }
+      ],
+      "warnings": [
+        "Crunch: Aprendido no Nv. 54; treinador está no Nv. 49. O moveset custom permite.",
+        "Taunt: Aprendido no Nv. 50; treinador está no Nv. 49. O moveset custom permite."
+      ]
+    },
+    {
+      "slot": 6,
+      "pokemonId": null,
+      "pokemonName": null,
+      "level": null,
+      "iv": null,
+      "iv31": null,
+      "heldItem": null,
+      "types": [],
+      "moves": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "warnings": []
+    }
+  ]
+}

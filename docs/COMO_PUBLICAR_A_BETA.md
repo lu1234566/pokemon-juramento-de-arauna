@@ -65,16 +65,19 @@ tabela antes de publicar.
 
 ## O que dizer no anúncio
 
-Duas coisas conhecidas, e é melhor você dizer antes que alguém reporte:
+Uma coisa que é melhor você dizer antes que alguém reporte:
 
-- **A dex não fecha.** Vinte lendários e míticos ainda não têm lugar no mapa.
-  Os vinte estão listados em `docs/DOSSIE_BETA.md`, com o lugar que cada um
-  deve ocupar depois.
-- **Nove dos treze times de chefe ainda são os antigos.** Funcionam e estão no
-  tema certo, mas não passaram pelo padrão novo de cinco criaturas com item e
-  IV escalonado. Dalva, Ademar e Olivia já passaram.
+- **A dex só fecha depois do Hall da Fama.** Vinte lendários e míticos esperam
+  no mapa, mas dormem até o primeiro Hall da Fama — antes disso nenhum deles
+  aparece, de propósito. Depois, o sensor de VÍNCULO do laboratório da Anahi
+  diz onde ainda há sinal. A lista com mapa e nível está em
+  `docs/DOSSIE_BETA.md`.
 
-E uma terceira, que é o motivo de existir uma beta: **ninguém jogou esta versão
+Os treze times de chefe já estão no padrão novo — cinco criaturas com item e
+IV escalonado, seis na dupla e na Campeã — e foram lidos de dentro da batalha.
+Cada um está em `docs/arauna/times/`.
+
+E outra, que é o motivo de existir uma beta: **ninguém jogou esta versão
 do início ao fim.** Os 528 mapas foram varridos e carregam; as batalhas de
 chefe foram medidas. Mas a cadeia de flags da história, da Vila do Amanhecer
 até a Campeã, nunca foi percorrida inteira por ninguém.

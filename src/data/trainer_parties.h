@@ -4074,155 +4074,171 @@ static const struct TrainerMonNoItemCustomMoves sParty_Walter5[] = {
     }
 };
 
+// LAZARO, primeiro da Elite dos Quatro. Time de docs/arauna/times/LAZARO.json
+// (arauana-team v4), cinco vagas, conferido com check_boss_team.py --cap 49.
+// #123 Piranha, #068 Gato-do-mato, #023 Oncaleu, #374 Escamoso, #077 Quati.
 static const struct TrainerMonItemCustomMoves sParty_Sidney[] = {
     {
-    .iv = 250,
-    .lvl = 46,
+    .iv = 181,
+    .lvl = 47,
     .species = SPECIES_TANGELA,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_ROAR, MOVE_DOUBLE_EDGE, MOVE_SAND_ATTACK, MOVE_CRUNCH}
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_CRUNCH, MOVE_SURF, MOVE_ROCK_TOMB, MOVE_TAUNT}
     },
     {
-    .iv = 250,
-    .lvl = 48,
+    .iv = 190,
+    .lvl = 47,
     .species = SPECIES_ARCANINE,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_TORMENT, MOVE_DOUBLE_TEAM, MOVE_SWAGGER, MOVE_EXTRASENSORY}
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_CRUNCH, MOVE_DOUBLE_EDGE, MOVE_STEEL_WING, MOVE_AERIAL_ACE}
     },
     {
-    .iv = 250,
-    .lvl = 46,
+    .iv = 206,
+    .lvl = 48,
     .species = SPECIES_KAKUNA,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_LEECH_SEED, MOVE_FAINT_ATTACK, MOVE_NEEDLE_ARM, MOVE_COTTON_SPORE}
+    .heldItem = ITEM_SCOPE_LENS,
+    .moves = {MOVE_CRUNCH, MOVE_IRON_TAIL, MOVE_TAUNT, MOVE_DOUBLE_EDGE}
     },
     {
-    .iv = 250,
+    .iv = 223,
     .lvl = 48,
     .species = SPECIES_BELDUM,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_SURF, MOVE_SWORDS_DANCE, MOVE_STRENGTH, MOVE_FACADE}
+    .heldItem = ITEM_LUM_BERRY,
+    .moves = {MOVE_CRUNCH, MOVE_SURF, MOVE_TORMENT, MOVE_WHIRLWIND}
     },
     {
     .iv = 255,
     .lvl = 49,
     .species = SPECIES_MACHAMP,
-    .heldItem = ITEM_SITRUS_BERRY,
-    .moves = {MOVE_AERIAL_ACE, MOVE_ROCK_SLIDE, MOVE_SWORDS_DANCE, MOVE_SLASH}
+    .heldItem = ITEM_BLACK_GLASSES,
+    .moves = {MOVE_CRUNCH, MOVE_DOUBLE_EDGE, MOVE_FIRE_BLAST, MOVE_TAUNT}
     }
 };
 
+// ROSA, segunda da Elite dos Quatro. Time de docs/arauna/times/ROSA.json
+// (arauana-team v4), cinco vagas, conferido com check_boss_team.py --cap 51.
+// #236 Bicho-Papao, #254 Pisadeira, #240 Perna-Cabeluda, #234 Loirinha,
+// #289 Anhangau.
 static const struct TrainerMonItemCustomMoves sParty_Phoebe[] = {
     {
-    .iv = 250,
-    .lvl = 48,
-    .species = SPECIES_SKARMORY,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_SHADOW_PUNCH, MOVE_CONFUSE_RAY, MOVE_CURSE, MOVE_PROTECT}
-    },
-    {
-    .iv = 250,
+    .iv = 190,
     .lvl = 49,
-    .species = SPECIES_KINGDRA,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_SHADOW_BALL, MOVE_GRUDGE, MOVE_WILL_O_WISP, MOVE_FAINT_ATTACK}
+    .species = SPECIES_SKARMORY,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_SHADOW_BALL, MOVE_CRUNCH, MOVE_CONFUSE_RAY, MOVE_CURSE}
     },
     {
-    .iv = 250,
+    .iv = 198,
+    .lvl = 49,
+    .species = SPECIES_SUICUNE,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_SHADOW_BALL, MOVE_SKY_UPPERCUT, MOVE_CONFUSE_RAY, MOVE_PSYCHIC}
+    },
+    {
+    .iv = 214,
     .lvl = 50,
     .species = SPECIES_PHANPY,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_SHADOW_BALL, MOVE_DOUBLE_TEAM, MOVE_NIGHT_SHADE, MOVE_FAINT_ATTACK}
+    .heldItem = ITEM_LUM_BERRY,
+    .moves = {MOVE_SHADOW_BALL, MOVE_DOUBLE_EDGE, MOVE_CURSE, MOVE_SLUDGE_BOMB}
     },
     {
-    .iv = 250,
-    .lvl = 49,
-    .species = SPECIES_VILEPLUME,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_SHADOW_BALL, MOVE_PSYCHIC, MOVE_THUNDERBOLT, MOVE_FACADE}
+    .iv = 231,
+    .lvl = 50,
+    .species = SPECIES_DELIBIRD,
+    .heldItem = ITEM_BRIGHT_POWDER,
+    .moves = {MOVE_SHADOW_BALL, MOVE_DAZZLING_GLEAM, MOVE_THUNDERBOLT, MOVE_DESTINY_BOND}
     },
     {
     .iv = 255,
     .lvl = 51,
-    .species = SPECIES_DONPHAN,
-    .heldItem = ITEM_SITRUS_BERRY,
-    .moves = {MOVE_SHADOW_BALL, MOVE_ICE_BEAM, MOVE_ROCK_SLIDE, MOVE_EARTHQUAKE}
+    .species = SPECIES_SLAKING,
+    .heldItem = ITEM_SPELL_TAG,
+    .moves = {MOVE_SHADOW_BALL, MOVE_GIGA_DRAIN, MOVE_THUNDERBOLT, MOVE_LEECH_SEED}
     }
 };
 
+// CLARA, terceira da Elite dos Quatro. Time de docs/arauna/times/CLARA.json
+// (arauana-team v4), cinco vagas, conferido com check_boss_team.py --cap 53.
+// #231 Peixe-Espada, #201 Ferrolho, #024 Tamandua, #030 Tatucu, #110 Ogum.
 static const struct TrainerMonItemCustomMoves sParty_Glacia[] = {
     {
-    .iv = 250,
-    .lvl = 50,
+    .iv = 198,
+    .lvl = 51,
     .species = SPECIES_CORSOLA,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_ENCORE, MOVE_BODY_SLAM, MOVE_HAIL, MOVE_ICE_BALL}
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_METEOR_MASH, MOVE_SURF, MOVE_EARTHQUAKE, MOVE_IRON_DEFENSE}
     },
     {
-    .iv = 250,
-    .lvl = 50,
-    .species = SPECIES_SPEAROW,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_LIGHT_SCREEN, MOVE_CRUNCH, MOVE_ICY_WIND, MOVE_ICE_BEAM}
-    },
-    {
-    .iv = 250,
-    .lvl = 52,
+    .iv = 206,
+    .lvl = 51,
     .species = SPECIES_SUNFLORA,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_ATTRACT, MOVE_DOUBLE_EDGE, MOVE_HAIL, MOVE_BLIZZARD}
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = {MOVE_METEOR_MASH, MOVE_EARTHQUAKE, MOVE_AERIAL_ACE, MOVE_IRON_DEFENSE}
     },
     {
-    .iv = 250,
+    .iv = 223,
     .lvl = 52,
-    .species = SPECIES_ELECTRODE,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_SHADOW_BALL, MOVE_EXPLOSION, MOVE_HAIL, MOVE_ICE_BEAM}
+    .species = SPECIES_BEEDRILL,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_METEOR_MASH, MOVE_EARTHQUAKE, MOVE_AERIAL_ACE, MOVE_SWORDS_DANCE}
+    },
+    {
+    .iv = 239,
+    .lvl = 52,
+    .species = SPECIES_SPEAROW,
+    .heldItem = ITEM_LUM_BERRY,
+    .moves = {MOVE_METEOR_MASH, MOVE_EARTHQUAKE, MOVE_ROCK_TOMB, MOVE_IRON_DEFENSE}
     },
     {
     .iv = 255,
     .lvl = 53,
-    .species = SPECIES_BEEDRILL,
-    .heldItem = ITEM_SITRUS_BERRY,
-    .moves = {MOVE_SURF, MOVE_BODY_SLAM, MOVE_ICE_BEAM, MOVE_SHEER_COLD}
+    .species = SPECIES_ELECTRODE,
+    .heldItem = ITEM_METAL_COAT,
+    .moves = {MOVE_FORJA_DE_OGUM, MOVE_FLAMETHROWER, MOVE_IRON_DEFENSE, MOVE_THUNDERBOLT}
     }
 };
 
+// TIBURCIO, quarto da Elite dos Quatro. Time de docs/arauna/times/TIBURCIO.json
+// (arauana-team v4), cinco vagas, conferido com check_boss_team.py --cap 55.
+// #122 Pirarucu, #036 Jacarodon, #297 Corcovado-Anciao, #282 Draguara-Alfa,
+// #291 Cobra-Norato.
+// A vaga 5 substitui o lendario #348 Arauanamon, que agora espera ao pe da
+// torre, em SkyPillar_Outside (docs/arauna/ARAUNA_LEGENDS.csv).
 static const struct TrainerMonItemCustomMoves sParty_Drake[] = {
     {
-    .iv = 250,
-    .lvl = 52,
-    .species = SPECIES_WOBBUFFET,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_ROCK_TOMB, MOVE_DRAGON_CLAW, MOVE_PROTECT, MOVE_DOUBLE_EDGE}
-    },
-    {
-    .iv = 250,
-    .lvl = 54,
-    .species = SPECIES_SANDSHREW,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_DOUBLE_EDGE, MOVE_DRAGON_BREATH, MOVE_DRAGON_DANCE, MOVE_AERIAL_ACE}
-    },
-    {
-    .iv = 250,
-    .lvl = 53,
-    .species = SPECIES_RALTS,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_SMOKESCREEN, MOVE_DRAGON_DANCE, MOVE_SURF, MOVE_BODY_SLAM}
-    },
-    {
-    .iv = 250,
+    .iv = 206,
     .lvl = 53,
     .species = SPECIES_CHANSEY,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_FLAMETHROWER, MOVE_CRUNCH, MOVE_DRAGON_BREATH, MOVE_EARTHQUAKE}
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_OUTRAGE, MOVE_HYDRO_PUMP, MOVE_ICE_BEAM, MOVE_DRAGON_DANCE}
+    },
+    {
+    .iv = 214,
+    .lvl = 53,
+    .species = SPECIES_SANDSHREW,
+    .heldItem = ITEM_LUM_BERRY,
+    .moves = {MOVE_OUTRAGE, MOVE_SURF, MOVE_ICE_BEAM, MOVE_PROTECT}
+    },
+    {
+    .iv = 231,
+    .lvl = 54,
+    .species = SPECIES_HARIYAMA,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = {MOVE_OUTRAGE, MOVE_ROCK_SLIDE, MOVE_FIRE_BLAST, MOVE_PROTECT}
+    },
+    {
+    .iv = 247,
+    .lvl = 54,
+    .species = SPECIES_GARDEVOIR,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_OUTRAGE, MOVE_HEAT_WAVE, MOVE_IRON_TAIL, MOVE_DRAGON_DANCE}
     },
     {
     .iv = 255,
     .lvl = 55,
-    .species = SPECIES_ARMALDO,
-    .heldItem = ITEM_SITRUS_BERRY,
-    .moves = {MOVE_FLAMETHROWER, MOVE_DRAGON_CLAW, MOVE_ROCK_SLIDE, MOVE_CRUNCH}
+    .species = SPECIES_NINJASK,
+    .heldItem = ITEM_DRAGON_FANG,
+    .moves = {MOVE_OUTRAGE, MOVE_SURF, MOVE_ICE_BEAM, MOVE_OLHAR_DA_COBRA_GRANDE}
     }
 };
 
@@ -4348,172 +4364,217 @@ static const struct TrainerMonItemCustomMoves sParty_Wattson1[] = {
     }
 };
 
+// NARA, quarta insignia. Time de docs/arauna/times/NARA.json
+// (arauana-team v4), cinco vagas, conferido com check_boss_team.py --cap 29.
+// #232 Pargo, #206 Enxofrino, #053 Guara, #099 Mula-sem-Cabeca, #016 Boitata.
 static const struct TrainerMonItemCustomMoves sParty_Flannery1[] = {
     {
-    .iv = 200,
-    .lvl = 24,
+    .iv = 99,
+    .lvl = 27,
     .species = SPECIES_REMORAID,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_OVERHEAT, MOVE_TAKE_DOWN, MOVE_MAGNITUDE, MOVE_SUNNY_DAY}
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_FLAME_WHEEL, MOVE_WATERFALL, MOVE_BRICK_BREAK, MOVE_WILL_O_WISP}
     },
     {
-    .iv = 200,
-    .lvl = 24,
-    .species = SPECIES_ODDISH,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_OVERHEAT, MOVE_SMOG, MOVE_LIGHT_SCREEN, MOVE_SUNNY_DAY}
-    },
-    {
-    .iv = 250,
-    .lvl = 26,
+    .iv = 107,
+    .lvl = 27,
     .species = SPECIES_UMBREON,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_OVERHEAT, MOVE_TACKLE, MOVE_SUNNY_DAY, MOVE_ATTRACT}
+    .heldItem = ITEM_WHITE_HERB,
+    .moves = {MOVE_OVERHEAT, MOVE_ACID, MOVE_DIG, MOVE_SUNNY_DAY}
     },
     {
-    .iv = 250,
+    .iv = 124,
+    .lvl = 28,
+    .species = SPECIES_GLOOM,
+    .heldItem = ITEM_QUICK_CLAW,
+    .moves = {MOVE_FLAMETHROWER, MOVE_STRENGTH, MOVE_BRICK_BREAK, MOVE_WILL_O_WISP}
+    },
+    {
+    .iv = 149,
+    .lvl = 28,
+    .species = SPECIES_SHELLDER,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_FLAMETHROWER, MOVE_SHADOW_BALL, MOVE_SHOCK_WAVE, MOVE_SUNNY_DAY}
+    },
+    {
+    .iv = 255,
     .lvl = 29,
     .species = SPECIES_SQUIRTLE,
-    .heldItem = ITEM_WHITE_HERB,
-    .moves = {MOVE_OVERHEAT, MOVE_SUNNY_DAY, MOVE_BODY_SLAM, MOVE_ATTRACT}
+    .heldItem = ITEM_CHARCOAL,
+    .moves = {MOVE_OVERHEAT, MOVE_FOGO_FATUO_ANCESTRAL, MOVE_WILL_O_WISP, MOVE_CONFUSE_RAY}
     }
 };
 
+// ELIAS, quinta insignia. Time de docs/arauna/times/ELIAS.json
+// (arauana-team v4), cinco vagas, conferido com check_boss_team.py --cap 31.
+// #084 Curicaca, #115 Ovelhinha, #103 Sucuapara, #114 Zebu, #071 Cutia.
 static const struct TrainerMonItemCustomMoves sParty_Norman1[] = {
     {
-    .iv = 200,
-    .lvl = 27,
-    .species = SPECIES_GRAVELER,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_TEETER_DANCE, MOVE_PSYBEAM, MOVE_FACADE, MOVE_ENCORE}
-    },
-    {
-    .iv = 200,
-    .lvl = 27,
-    .species = SPECIES_HITMONLEE,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_SLASH, MOVE_FACADE, MOVE_ENCORE, MOVE_FAINT_ATTACK}
-    },
-    {
-    .iv = 200,
+    .iv = 107,
     .lvl = 29,
-    .species = SPECIES_GENGAR,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_SLASH, MOVE_BELLY_DRUM, MOVE_FACADE, MOVE_HEADBUTT}
+    .species = SPECIES_GRAVELER,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_STRENGTH, MOVE_WING_ATTACK, MOVE_PROTECT, MOVE_CRUNCH}
     },
     {
-    .iv = 250,
+    .iv = 116,
+    .lvl = 29,
+    .species = SPECIES_HITMONLEE,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_STRENGTH, MOVE_FAIRY_WIND, MOVE_PROTECT, MOVE_SHADOW_BALL}
+    },
+    {
+    .iv = 132,
+    .lvl = 30,
+    .species = SPECIES_GENGAR,
+    .heldItem = ITEM_KINGS_ROCK,
+    .moves = {MOVE_BODY_SLAM, MOVE_KARATE_CHOP, MOVE_AERIAL_ACE, MOVE_BULK_UP}
+    },
+    {
+    .iv = 165,
+    .lvl = 30,
+    .species = SPECIES_MAROWAK,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_DOUBLE_EDGE, MOVE_KARATE_CHOP, MOVE_PROTECT, MOVE_WATER_PULSE}
+    },
+    {
+    .iv = 255,
     .lvl = 31,
     .species = SPECIES_POLIWRATH,
-    .heldItem = ITEM_SITRUS_BERRY,
-    .moves = {MOVE_COUNTER, MOVE_YAWN, MOVE_FACADE, MOVE_FAINT_ATTACK}
+    .heldItem = ITEM_SILK_SCARF,
+    .moves = {MOVE_DOUBLE_EDGE, MOVE_SHADOW_BALL, MOVE_DIG, MOVE_TAUNT}
     }
 };
 
+// LIDIA, sexta insignia. Time de docs/arauna/times/LIDIA.json
+// (arauana-team v4), cinco vagas, conferido com check_boss_team.py --cap 33.
+// #157 Sabia, #033 Araracanga, #156 Beija-flor, #020 Sacizinho, #083 Aracari.
 static const struct TrainerMonItemCustomMoves sParty_Winona1[] = {
     {
-    .iv = 210,
-    .lvl = 29,
-    .species = SPECIES_DRAGONAIR,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_PERISH_SONG, MOVE_MIRROR_MOVE, MOVE_SAFEGUARD, MOVE_AERIAL_ACE}
-    },
-    {
-    .iv = 210,
-    .lvl = 29,
-    .species = SPECIES_ARBOK,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_SUNNY_DAY, MOVE_AERIAL_ACE, MOVE_SOLAR_BEAM, MOVE_SYNTHESIS}
-    },
-    {
-    .iv = 210,
-    .lvl = 30,
-    .species = SPECIES_DRATINI,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_WATER_GUN, MOVE_SUPERSONIC, MOVE_PROTECT, MOVE_AERIAL_ACE}
-    },
-    {
-    .iv = 220,
+    .iv = 116,
     .lvl = 31,
+    .species = SPECIES_DRAGONAIR,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_DRILL_PECK, MOVE_DOUBLE_EDGE, MOVE_STEEL_WING, MOVE_FEATHER_DANCE}
+    },
+    {
+    .iv = 124,
+    .lvl = 31,
+    .species = SPECIES_ARBOK,
+    .heldItem = ITEM_WHITE_HERB,
+    .moves = {MOVE_DRILL_PECK, MOVE_FLAMETHROWER, MOVE_STEEL_WING, MOVE_FEATHER_DANCE}
+    },
+    {
+    .iv = 140,
+    .lvl = 32,
+    .species = SPECIES_DRATINI,
+    .heldItem = ITEM_BRIGHT_POWDER,
+    .moves = {MOVE_WING_ATTACK, MOVE_FAIRY_WIND, MOVE_STEEL_WING, MOVE_TOXIC}
+    },
+    {
+    .iv = 181,
+    .lvl = 32,
     .species = SPECIES_METAPOD,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_SAND_ATTACK, MOVE_FURY_ATTACK, MOVE_STEEL_WING, MOVE_AERIAL_ACE}
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_DRILL_PECK, MOVE_FAINT_ATTACK, MOVE_STEEL_WING, MOVE_TOXIC}
     },
     {
     .iv = 255,
     .lvl = 33,
     .species = SPECIES_GEODUDE,
-    .heldItem = ITEM_ORAN_BERRY,
-    .moves = {MOVE_EARTHQUAKE, MOVE_DRAGON_BREATH, MOVE_DRAGON_DANCE, MOVE_AERIAL_ACE}
+    .heldItem = ITEM_SHARP_BEAK,
+    .moves = {MOVE_DRILL_PECK, MOVE_DRAGON_CLAW, MOVE_STEEL_WING, MOVE_AGILITY}
     }
 };
 
+// CEC&CAET, setima insignia. Time de docs/arauna/times/CECCAET.json
+// (arauana-team v4), seis vagas, conferido com check_boss_team.py --cap 42.
+// #247 Ruda, #305 Gato-Preto, #164 Coruja, #199 Ametista, #039 Bicho-Preguica,
+// #265 Preto-Velho.
+// Batalha dupla: tres vagas para cada um, como o trainers.h ja pede.
 static const struct TrainerMonItemCustomMoves sParty_TateAndLiza1[] = {
     {
-    .iv = 250,
-    .lvl = 41,
-    .species = SPECIES_WURMPLE,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_EARTHQUAKE, MOVE_ANCIENT_POWER, MOVE_PSYCHIC, MOVE_LIGHT_SCREEN}
-    },
-    {
-    .iv = 250,
-    .lvl = 41,
-    .species = SPECIES_NIDORINA,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_PSYCHIC, MOVE_SUNNY_DAY, MOVE_CONFUSE_RAY, MOVE_CALM_MIND}
-    },
-    {
-    .iv = 250,
-    .lvl = 42,
+    .iv = 132,
+    .lvl = 40,
     .species = SPECIES_SMOOCHUM,
     .heldItem = ITEM_SITRUS_BERRY,
-    .moves = {MOVE_LIGHT_SCREEN, MOVE_PSYCHIC, MOVE_HYPNOSIS, MOVE_CALM_MIND}
+    .moves = {MOVE_PSYCHIC, MOVE_DAZZLING_GLEAM, MOVE_SHADOW_BALL, MOVE_CALM_MIND}
     },
     {
-    .iv = 250,
-    .lvl = 42,
+    .iv = 132,
+    .lvl = 40,
     .species = SPECIES_LAIRON,
     .heldItem = ITEM_SITRUS_BERRY,
-    .moves = {MOVE_SUNNY_DAY, MOVE_SOLAR_BEAM, MOVE_PSYCHIC, MOVE_FLAMETHROWER}
+    .moves = {MOVE_PSYCHIC, MOVE_CRUNCH, MOVE_REFLECT, MOVE_TAUNT}
+    },
+    {
+    .iv = 149,
+    .lvl = 41,
+    .species = SPECIES_CYNDAQUIL,
+    .heldItem = ITEM_LUM_BERRY,
+    .moves = {MOVE_PSYCHIC, MOVE_WING_ATTACK, MOVE_FLAMETHROWER, MOVE_CALM_MIND}
+    },
+    {
+    .iv = 149,
+    .lvl = 41,
+    .species = SPECIES_AIPOM,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_PSYCHIC, MOVE_ANCIENT_POWER, MOVE_SHADOW_BALL, MOVE_CALM_MIND}
+    },
+    {
+    .iv = 214,
+    .lvl = 42,
+    .species = SPECIES_NIDORINA,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = {MOVE_PSYCHIC, MOVE_GIGA_DRAIN, MOVE_SLUDGE_BOMB, MOVE_LIGHT_SCREEN}
+    },
+    {
+    .iv = 255,
+    .lvl = 42,
+    .species = SPECIES_WURMPLE,
+    .heldItem = ITEM_TWISTED_SPOON,
+    .moves = {MOVE_PSYCHIC, MOVE_SHADOW_BALL, MOVE_THUNDERBOLT, MOVE_CALM_MIND}
     }
 };
 
+// CELINA, oitava insignia. Time de docs/arauna/times/CELINA.json
+// (arauana-team v4), cinco vagas, conferido com check_boss_team.py --cap 46.
+// #124 Tambaqui, #364 Sarara, #132 Matrinxa, #047 Sucuri, #280 Sucuriacu.
 static const struct TrainerMonItemCustomMoves sParty_Juan1[] = {
     {
-    .iv = 200,
-    .lvl = 41,
+    .iv = 149,
+    .lvl = 44,
     .species = SPECIES_KANGASKHAN,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_WATER_PULSE, MOVE_ATTRACT, MOVE_SWEET_KISS, MOVE_FLAIL}
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_SURF, MOVE_BODY_SLAM, MOVE_ICE_BEAM, MOVE_RAIN_DANCE}
     },
     {
-    .iv = 200,
-    .lvl = 41,
+    .iv = 157,
+    .lvl = 44,
     .species = SPECIES_SEALEO,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_RAIN_DANCE, MOVE_WATER_PULSE, MOVE_AMNESIA, MOVE_EARTHQUAKE}
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_SURF, MOVE_DAZZLING_GLEAM, MOVE_ICE_BEAM, MOVE_RAIN_DANCE}
     },
     {
-    .iv = 200,
-    .lvl = 43,
+    .iv = 173,
+    .lvl = 45,
     .species = SPECIES_SCYTHER,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_ENCORE, MOVE_BODY_SLAM, MOVE_AURORA_BEAM, MOVE_WATER_PULSE}
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_SURF, MOVE_BODY_SLAM, MOVE_ICE_BEAM, MOVE_PROTECT}
     },
     {
-    .iv = 200,
-    .lvl = 43,
+    .iv = 198,
+    .lvl = 45,
     .species = SPECIES_NINETALES,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_WATER_PULSE, MOVE_CRABHAMMER, MOVE_TAUNT, MOVE_LEER}
+    .heldItem = ITEM_LUM_BERRY,
+    .moves = {MOVE_SURF, MOVE_SLUDGE_BOMB, MOVE_ICE_BEAM, MOVE_TOXIC}
     },
     {
-    .iv = 250,
+    .iv = 255,
     .lvl = 46,
     .species = SPECIES_RALTS,
-    .heldItem = ITEM_CHESTO_BERRY,
-    .moves = {MOVE_WATER_PULSE, MOVE_DOUBLE_TEAM, MOVE_ICE_BEAM, MOVE_REST}
+    .heldItem = ITEM_MYSTIC_WATER,
+    .moves = {MOVE_SURF, MOVE_OUTRAGE, MOVE_ICE_BEAM, MOVE_RAIN_DANCE}
     }
 };
 
@@ -5626,48 +5687,52 @@ static const struct TrainerMonNoItemCustomMoves sParty_Timmy[] = {
     }
 };
 
+// AMALIA, campea. Time de docs/arauna/times/AMALIA.json
+// (arauana-team v4), seis vagas, conferido com check_boss_team.py --cap 58.
+// #027 Botogalau, #048 Boiuna, #246 Guaraci, #294 Uirapuru, #286 Iara-Mae,
+// #109 Oxum.
 static const struct TrainerMonItemCustomMoves sParty_Wallace[] = {
     {
-    .iv = 255,
-    .lvl = 57,
-    .species = SPECIES_BRELOOM,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_RAIN_DANCE, MOVE_WATER_SPOUT, MOVE_DOUBLE_EDGE, MOVE_BLIZZARD}
-    },
-    {
-    .iv = 255,
+    .iv = 231,
     .lvl = 55,
-    .species = SPECIES_RALTS,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_TOXIC, MOVE_HYDRO_PUMP, MOVE_SLUDGE_BOMB, MOVE_ICE_BEAM}
+    .species = SPECIES_PIDGEOT,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_HYDRO_PUMP, MOVE_ENCANTO_DO_BOTO, MOVE_FIRE_BLAST, MOVE_CALM_MIND}
     },
     {
-    .iv = 255,
+    .iv = 231,
     .lvl = 56,
     .species = SPECIES_JIGGLYPUFF,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_GIGA_DRAIN, MOVE_SURF, MOVE_LEECH_SEED, MOVE_DOUBLE_TEAM}
+    .heldItem = ITEM_LUM_BERRY,
+    .moves = {MOVE_ABRACO_DA_BOIUNA, MOVE_HYDRO_PUMP, MOVE_ICE_BEAM, MOVE_GLARE}
     },
     {
-    .iv = 255,
+    .iv = 239,
     .lvl = 56,
-    .species = SPECIES_SEALEO,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_EARTHQUAKE, MOVE_SURF, MOVE_AMNESIA, MOVE_HYPER_BEAM}
+    .species = SPECIES_HITMONTOP,
+    .heldItem = ITEM_WHITE_HERB,
+    .moves = {MOVE_FIRE_BLAST, MOVE_MOONBLAST, MOVE_EARTHQUAKE, MOVE_TOXIC}
     },
     {
-    .iv = 255,
-    .lvl = 56,
-    .species = SPECIES_PIDGEOT,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_DRAGON_DANCE, MOVE_EARTHQUAKE, MOVE_HYPER_BEAM, MOVE_SURF}
+    .iv = 247,
+    .lvl = 57,
+    .species = SPECIES_LOUDRED,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_MOONBLAST, MOVE_AERIAL_ACE, MOVE_PSYCHIC, MOVE_SING}
+    },
+    {
+    .iv = 247,
+    .lvl = 57,
+    .species = SPECIES_BRELOOM,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = {MOVE_SURF, MOVE_MOONBLAST, MOVE_EARTHQUAKE, MOVE_RAIN_DANCE}
     },
     {
     .iv = 255,
     .lvl = 58,
     .species = SPECIES_VOLTORB,
-    .heldItem = ITEM_SITRUS_BERRY,
-    .moves = {MOVE_RECOVER, MOVE_SURF, MOVE_ICE_BEAM, MOVE_TOXIC}
+    .heldItem = ITEM_MYSTIC_WATER,
+    .moves = {MOVE_HYDRO_PUMP, MOVE_MOONBLAST, MOVE_RAIN_DANCE, MOVE_THUNDERBOLT}
     }
 };
 

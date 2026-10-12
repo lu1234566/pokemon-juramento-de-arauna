@@ -150,99 +150,103 @@ insignia, e e o mesmo numero que `sLevelCapByBadges` usa em
 
 | criatura | tipos | BST | nivel | IV | item | golpes |
 |---|---|---:|---:|---:|---|---|
-| #232 Pargo | Water/Fire | 446 | Nv. 24 | 24/31 | None | Overheat (140) · Take Down (90) · Magnitude (1) · Sunny Day |
-| #052 Guaracim | Fire | 287 | Nv. 24 | 24/31 | None | Overheat (140) · Smog (20) · Light Screen · Sunny Day |
-| #206 Enxofrino | Fire/Poison | 449 | Nv. 26 | 30/31 | None | Overheat (140) · Tackle (35) · Sunny Day · Attract |
-| #016 Boitatá | Fire/Ghost | 514 | Nv. 29 | 30/31 | White Herb | Overheat (140) · Sunny Day · Body Slam (85) · Attract |
+| #232 Pargo | Water/Fire | 446 | Nv. 27 | 12/31 | Sitrus Berry | Flame Wheel (60) · Waterfall (80) · Brick Break (75) · Will O Wisp |
+| #206 Enxofrino | Fire/Poison | 449 | Nv. 27 | 13/31 | White Herb | Overheat (140) · Acid (40) · Dig (60) · Sunny Day |
+| #053 Guará | Fire/Normal | 552 | Nv. 28 | 15/31 | Quick Claw | Flamethrower (95) · Strength (80) · Brick Break (75) · Will O Wisp |
+| #099 Mula-sem-Cabeça | Fire/Ghost | 550 | Nv. 28 | 18/31 | Sitrus Berry | Flamethrower (95) · Shadow Ball (80) · Shock Wave (60) · Sunny Day |
+| #016 Boitatá | Fire/Ghost | 514 | Nv. 29 | 31/31 | Charcoal | Overheat (140) · Fogo Fatuo Ancestral (85) · Will O Wisp · Confuse Ray |
 
 ### 5. Elias — Normal, Pampa da Espera (teto Nv. 31)
 
 | criatura | tipos | BST | nivel | IV | item | golpes |
 |---|---|---:|---:|---:|---|---|
-| #084 Curicaca | Flying/Normal | 447 | Nv. 27 | 24/31 | None | Teeter Dance · Psybeam (65) · Facade (70) · Encore |
-| #115 Ovelhinha | Normal/Fairy | 449 | Nv. 27 | 24/31 | None | Slash (70) · Facade (70) · Encore · Faint Attack (60) |
-| #103 Suçuapara | Normal/Fighting | 447 | Nv. 29 | 24/31 | None | Slash (70) · Belly Drum · Facade (70) · Headbutt (70) |
-| #071 Cutia | Normal | 555 | Nv. 31 | 30/31 | Sitrus Berry | Counter (1) · Yawn · Facade (70) · Faint Attack (60) |
+| #084 Curicaca | Flying/Normal | 447 | Nv. 29 | 13/31 | Sitrus Berry | Strength (80) · Wing Attack (60) · Protect · Crunch (80) |
+| #115 Ovelhinha | Normal/Fairy | 449 | Nv. 29 | 14/31 | Sitrus Berry | Strength (80) · Fairy Wind (40) · Protect · Shadow Ball (80) |
+| #103 Suçuapara | Normal/Fighting | 447 | Nv. 30 | 16/31 | Kings Rock | Body Slam (85) · Karate Chop (50) · Aerial Ace (60) · Bulk Up |
+| #114 Zebu | Normal/Fighting | 553 | Nv. 30 | 20/31 | Sitrus Berry | Double Edge (120) · Karate Chop (50) · Protect · Water Pulse (60) |
+| #071 Cutia | Normal | 555 | Nv. 31 | 31/31 | Silk Scarf | Double Edge (120) · Shadow Ball (80) · Dig (60) · Taunt |
 
 ### 6. Lidia — Flying, Mata do Meio (teto Nv. 33)
 
 | criatura | tipos | BST | nivel | IV | item | golpes |
 |---|---|---:|---:|---:|---|---|
-| #157 Sabiá | Flying/Normal | 445 | Nv. 29 | 25/31 | None | Perish Song · Mirror Move · Safeguard · Aerial Ace (60) |
-| #033 Araracanga | Flying/Fire | 550 | Nv. 29 | 25/31 | None | Sunny Day · Aerial Ace (60) · Solar Beam (120) · Synthesis |
-| #156 Beija-flor | Flying/Fairy | 448 | Nv. 30 | 25/31 | None | Water Gun (40) · Supersonic · Protect · Aerial Ace (60) |
-| #020 Sacizinho | Dark/Flying | 461 | Nv. 31 | 26/31 | None | Sand Attack · Fury Attack (15) · Steel Wing (70) · Aerial Ace (60) |
-| #083 Aracari | Flying/Grass | 551 | Nv. 33 | 31/31 | Oran Berry | Earthquake (100) · Dragon Breath (60) · Dragon Dance · Aerial Ace (60) |
+| #157 Sabiá | Flying/Normal | 445 | Nv. 31 | 14/31 | Sitrus Berry | Drill Peck (80) · Double Edge (120) · Steel Wing (70) · Feather Dance |
+| #033 Araracanga | Flying/Fire | 550 | Nv. 31 | 15/31 | White Herb | Drill Peck (80) · Flamethrower (95) · Steel Wing (70) · Feather Dance |
+| #156 Beija-flor | Flying/Fairy | 448 | Nv. 32 | 17/31 | Bright Powder | Wing Attack (60) · Fairy Wind (40) · Steel Wing (70) · Toxic |
+| #020 Sacizinho | Dark/Flying | 461 | Nv. 32 | 22/31 | Sitrus Berry | Drill Peck (80) · Faint Attack (60) · Steel Wing (70) · Toxic |
+| #083 Aracari | Flying/Grass | 551 | Nv. 33 | 31/31 | Sharp Beak | Drill Peck (80) · Dragon Claw (80) · Steel Wing (70) · Agility |
 
 ### 7. Cec&Caet — Psychic, Missoes do Ceu (teto Nv. 42)
 
 | criatura | tipos | BST | nivel | IV | item | golpes |
 |---|---|---:|---:|---:|---|---|
-| #265 Preto-Velho | Ghost/Psychic | 604 | Nv. 41 | 30/31 | None | Earthquake (100) · Ancient Power (60) · Psychic (90) · Light Screen |
-| #039 Bicho-Preguiça | Grass/Psychic | 551 | Nv. 41 | 30/31 | None | Psychic (90) · Sunny Day · Confuse Ray · Calm Mind |
-| #247 Rudá | Fairy/Psychic | 449 | Nv. 42 | 30/31 | Sitrus Berry | Light Screen · Psychic (90) · Hypnosis · Calm Mind |
-| #305 Gato-Preto | Dark/Psychic | 449 | Nv. 42 | 30/31 | Sitrus Berry | Sunny Day · Solar Beam (120) · Psychic (90) · Flamethrower (95) |
+| #247 Rudá | Fairy/Psychic | 449 | Nv. 40 | 16/31 | Sitrus Berry | Psychic (90) · Dazzling Gleam (80) · Shadow Ball (80) · Calm Mind |
+| #305 Gato-Preto | Dark/Psychic | 449 | Nv. 40 | 16/31 | Sitrus Berry | Psychic (90) · Crunch (80) · Reflect · Taunt |
+| #164 Coruja | Flying/Psychic | 554 | Nv. 41 | 18/31 | Lum Berry | Psychic (90) · Wing Attack (60) · Flamethrower (95) · Calm Mind |
+| #199 Ametista | Rock/Psychic | 552 | Nv. 41 | 18/31 | Sitrus Berry | Psychic (90) · Ancient Power (60) · Shadow Ball (80) · Calm Mind |
+| #039 Bicho-Preguiça | Grass/Psychic | 551 | Nv. 42 | 26/31 | Leftovers | Psychic (90) · Giga Drain (60) · Sludge Bomb (90) · Light Screen |
+| #265 Preto-Velho | Ghost/Psychic | 604 | Nv. 42 | 31/31 | Twisted Spoon | Psychic (90) · Shadow Ball (80) · Thunderbolt (95) · Calm Mind |
 
 ### 8. Celina — Water, Aguas M'Boi (teto Nv. 46)
 
 | criatura | tipos | BST | nivel | IV | item | golpes |
 |---|---|---:|---:|---:|---|---|
-| #124 Tambaqui | Water/Normal | 445 | Nv. 41 | 24/31 | None | Water Pulse (60) · Attract · Sweet Kiss · Flail (1) |
-| #364 Sarará | Fairy/Water | 472 | Nv. 41 | 24/31 | None | Rain Dance · Water Pulse (60) · Amnesia · Earthquake (100) |
-| #132 Matrinxã | Water/Normal | 444 | Nv. 43 | 24/31 | None | Encore · Body Slam (85) · Aurora Beam (65) · Water Pulse (60) |
-| #047 Sucuri | Water/Poison | 480 | Nv. 43 | 24/31 | None | Water Pulse (60) · Crabhammer (90) · Taunt · Leer |
-| #280 Sucuriaçu | Water/Dragon | 607 | Nv. 46 | 30/31 | Chesto Berry | Water Pulse (60) · Double Team · Ice Beam (95) · Rest |
+| #124 Tambaqui | Water/Normal | 445 | Nv. 44 | 18/31 | Sitrus Berry | Surf (95) · Body Slam (85) · Ice Beam (95) · Rain Dance |
+| #364 Sarará | Fairy/Water | 472 | Nv. 44 | 19/31 | Sitrus Berry | Surf (95) · Dazzling Gleam (80) · Ice Beam (95) · Rain Dance |
+| #132 Matrinxã | Water/Normal | 444 | Nv. 45 | 21/31 | Sitrus Berry | Surf (95) · Body Slam (85) · Ice Beam (95) · Protect |
+| #047 Sucuri | Water/Poison | 480 | Nv. 45 | 24/31 | Lum Berry | Surf (95) · Sludge Bomb (90) · Ice Beam (95) · Toxic |
+| #280 Sucuriaçu | Water/Dragon | 607 | Nv. 46 | 31/31 | Mystic Water | Surf (95) · Outrage (90) · Ice Beam (95) · Rain Dance |
 
 ### Lazaro — Dark (teto Nv. 49)
 
 | criatura | tipos | BST | nivel | IV | item | golpes |
 |---|---|---:|---:|---:|---|---|
-| #123 Piranha | Water/Dark | 448 | Nv. 46 | 30/31 | None | Roar · Double Edge (120) · Sand Attack · Crunch (80) |
-| #068 Gato-do-mato | Normal/Dark | 554 | Nv. 48 | 30/31 | None | Torment · Double Team · Swagger · Extrasensory (80) |
-| #023 Onçaléu | Dark | 524 | Nv. 46 | 30/31 | None | Leech Seed · Faint Attack (60) · Needle Arm (60) · Cotton Spore |
-| #374 Escamoso | Water/Dark | 498 | Nv. 48 | 30/31 | None | Surf (95) · Swords Dance · Strength (80) · Facade (70) |
-| #077 Quati | Normal/Dark | 550 | Nv. 49 | 31/31 | Sitrus Berry | Aerial Ace (60) · Rock Slide (75) · Swords Dance · Slash (70) |
+| #123 Piranha | Water/Dark | 448 | Nv. 47 | 22/31 | Sitrus Berry | Crunch (80) · Surf (95) · Rock Tomb (50) · Taunt |
+| #068 Gato-do-mato | Normal/Dark | 554 | Nv. 47 | 23/31 | Sitrus Berry | Crunch (80) · Double Edge (120) · Steel Wing (70) · Aerial Ace (60) |
+| #023 Onçaléu | Dark | 524 | Nv. 48 | 25/31 | Scope Lens | Crunch (80) · Iron Tail (100) · Taunt · Double Edge (120) |
+| #374 Escamoso | Water/Dark | 498 | Nv. 48 | 27/31 | Lum Berry | Crunch (80) · Surf (95) · Torment · Whirlwind |
+| #077 Quati | Normal/Dark | 550 | Nv. 49 | 31/31 | Black Glasses | Crunch (80) · Double Edge (120) · Fire Blast (120) · Taunt |
 
 ### Rosa — Ghost (teto Nv. 51)
 
 | criatura | tipos | BST | nivel | IV | item | golpes |
 |---|---|---:|---:|---:|---|---|
-| #236 Bicho-Papão | Dark/Ghost | 449 | Nv. 48 | 30/31 | None | Shadow Punch (60) · Confuse Ray · Curse · Protect |
-| #239 Mão-Peluda | Ghost/Fighting | 449 | Nv. 49 | 30/31 | None | Shadow Ball (80) · Grudge · Will O Wisp · Faint Attack (60) |
-| #240 Perna-Cabeluda | Ghost/Normal | 446 | Nv. 50 | 30/31 | None | Shadow Ball (80) · Double Team · Night Shade (1) · Faint Attack (60) |
-| #054 Guaraflama | Fire/Ghost | 448 | Nv. 49 | 30/31 | None | Shadow Ball (80) · Psychic (90) · Thunderbolt (95) · Facade (70) |
-| #241 Comadre | Ghost/Fairy | 448 | Nv. 51 | 31/31 | Sitrus Berry | Shadow Ball (80) · Ice Beam (95) · Rock Slide (75) · Earthquake (100) |
+| #236 Bicho-Papão | Dark/Ghost | 449 | Nv. 49 | 23/31 | Sitrus Berry | Shadow Ball (80) · Crunch (80) · Confuse Ray · Curse |
+| #254 Pisadeira | Ghost/Fighting | 446 | Nv. 49 | 24/31 | Sitrus Berry | Shadow Ball (80) · Sky Uppercut (85) · Confuse Ray · Psychic (90) |
+| #240 Perna-Cabeluda | Ghost/Normal | 446 | Nv. 50 | 26/31 | Lum Berry | Shadow Ball (80) · Double Edge (120) · Curse · Sludge Bomb (90) |
+| #234 Loirinha | Ghost/Fairy | 445 | Nv. 50 | 28/31 | Bright Powder | Shadow Ball (80) · Dazzling Gleam (80) · Thunderbolt (95) · Destiny Bond |
+| #289 Anhangaú | Ghost/Grass | 603 | Nv. 51 | 31/31 | Spell Tag | Shadow Ball (80) · Giga Drain (60) · Thunderbolt (95) · Leech Seed |
 
 ### Clara — Steel (teto Nv. 53)
 
 | criatura | tipos | BST | nivel | IV | item | golpes |
 |---|---|---:|---:|---:|---|---|
-| #231 Peixe-Espada | Water/Steel | 444 | Nv. 50 | 30/31 | None | Encore · Body Slam (85) · Hail · Ice Ball (30) |
-| #030 Tatuçu | Ground/Steel | 555 | Nv. 50 | 30/31 | None | Light Screen · Crunch (80) · Icy Wind (55) · Ice Beam (95) |
-| #201 Ferrolho | Steel/Ground | 445 | Nv. 52 | 30/31 | None | Attract · Double Edge (120) · Hail · Blizzard (120) |
-| #110 Ogum | Steel/Fire | 602 | Nv. 52 | 30/31 | None | Shadow Ball (80) · Explosion (250) · Hail · Ice Beam (95) |
-| #024 Tamanduá | Ground/Steel | 470 | Nv. 53 | 31/31 | Sitrus Berry | Surf (95) · Body Slam (85) · Ice Beam (95) · Sheer Cold (1) |
+| #231 Peixe-Espada | Water/Steel | 444 | Nv. 51 | 24/31 | Sitrus Berry | Meteor Mash (100) · Surf (95) · Earthquake (100) · Iron Defense |
+| #201 Ferrolho | Steel/Ground | 445 | Nv. 51 | 25/31 | Leftovers | Meteor Mash (100) · Earthquake (100) · Aerial Ace (60) · Iron Defense |
+| #024 Tamanduá | Ground/Steel | 470 | Nv. 52 | 27/31 | Sitrus Berry | Meteor Mash (100) · Earthquake (100) · Aerial Ace (60) · Swords Dance |
+| #030 Tatuçu | Ground/Steel | 555 | Nv. 52 | 29/31 | Lum Berry | Meteor Mash (100) · Earthquake (100) · Rock Tomb (50) · Iron Defense |
+| #110 Ogum | Steel/Fire | 602 | Nv. 53 | 31/31 | Metal Coat | Forja De Ogum (90) · Flamethrower (95) · Iron Defense · Thunderbolt (95) |
 
 ### Tiburcio — Dragon (teto Nv. 55)
 
 | criatura | tipos | BST | nivel | IV | item | golpes |
 |---|---|---:|---:|---:|---|---|
-| #211 Fóssil | Rock/Dragon | 448 | Nv. 52 | 30/31 | None | Rock Tomb (50) · Dragon Claw (80) · Protect · Double Edge (120) |
-| #036 Jacarodon | Water/Dragon | 551 | Nv. 54 | 30/31 | None | Double Edge (120) · Dragon Breath (60) · Dragon Dance · Aerial Ace (60) |
-| #280 Sucuriaçu | Water/Dragon | 607 | Nv. 53 | 30/31 | None | Smokescreen · Dragon Dance · Surf (95) · Body Slam (85) |
-| #122 Pirarucu | Water/Dragon | 552 | Nv. 53 | 30/31 | None | Flamethrower (95) · Crunch (80) · Dragon Breath (60) · Earthquake (100) |
-| #348 Arauanamon | Dragon/Fairy | 650 | Nv. 55 | 31/31 | Sitrus Berry | Flamethrower (95) · Dragon Claw (80) · Rock Slide (75) · Crunch (80) |
+| #122 Pirarucu | Water/Dragon | 552 | Nv. 53 | 25/31 | Sitrus Berry | Outrage (90) · Hydro Pump (120) · Ice Beam (95) · Dragon Dance |
+| #036 Jacarodon | Water/Dragon | 551 | Nv. 53 | 26/31 | Lum Berry | Outrage (90) · Surf (95) · Ice Beam (95) · Protect |
+| #297 Corcovado-Ancião | Rock/Dragon | 602 | Nv. 54 | 28/31 | Leftovers | Outrage (90) · Rock Slide (75) · Fire Blast (120) · Protect |
+| #282 Draguará-Alfa | Fire/Dragon | 605 | Nv. 54 | 30/31 | Sitrus Berry | Outrage (90) · Heat Wave (100) · Iron Tail (100) · Dragon Dance |
+| #291 Cobra-Norato | Water/Dragon | 607 | Nv. 55 | 31/31 | Dragon Fang | Outrage (90) · Surf (95) · Ice Beam (95) · Olhar Da Cobra Grande |
 
 ### Amalia — Campea (teto Nv. 58)
 
 | criatura | tipos | BST | nivel | IV | item | golpes |
 |---|---|---:|---:|---:|---|---|
-| #286 Iara-Mãe | Water/Fairy | 602 | Nv. 57 | 31/31 | None | Rain Dance · Water Spout (150) · Double Edge (120) · Blizzard (120) |
-| #280 Sucuriaçu | Water/Dragon | 607 | Nv. 55 | 31/31 | None | Toxic · Hydro Pump (120) · Sludge Bomb (90) · Ice Beam (95) |
-| #048 Boiuna | Water/Dragon | 600 | Nv. 56 | 31/31 | None | Giga Drain (60) · Surf (95) · Leech Seed · Double Team |
-| #364 Sarará | Fairy/Water | 472 | Nv. 56 | 31/31 | None | Earthquake (100) · Surf (95) · Amnesia · Hyper Beam (150) |
-| #027 Botogaláu | Water/Psychic | 555 | Nv. 56 | 31/31 | None | Dragon Dance · Earthquake (100) · Hyper Beam (150) · Surf (95) |
-| #109 Oxum | Water/Fairy | 606 | Nv. 58 | 31/31 | Sitrus Berry | Recover · Surf (95) · Ice Beam (95) · Toxic |
+| #027 Botogaláu | Water/Psychic | 555 | Nv. 55 | 28/31 | Sitrus Berry | Hydro Pump (120) · Encanto Do Boto (85) · Fire Blast (120) · Calm Mind |
+| #048 Boiuna | Water/Dragon | 600 | Nv. 56 | 28/31 | Lum Berry | Abraco Da Boiuna (95) · Hydro Pump (120) · Ice Beam (95) · Glare |
+| #246 Guaraci | Fire/Fairy | 605 | Nv. 56 | 29/31 | White Herb | Fire Blast (120) · Moonblast (95) · Earthquake (100) · Toxic |
+| #294 Uirapuru | Flying/Fairy | 607 | Nv. 57 | 30/31 | Sitrus Berry | Moonblast (95) · Aerial Ace (60) · Psychic (90) · Sing |
+| #286 Iara-Mãe | Water/Fairy | 602 | Nv. 57 | 30/31 | Leftovers | Surf (95) · Moonblast (95) · Earthquake (100) · Rain Dance |
+| #109 Oxum | Water/Fairy | 606 | Nv. 58 | 31/31 | Mystic Water | Hydro Pump (120) · Moonblast (95) · Rain Dance · Thunderbolt (95) |
 
 ## Como os mapas se ligam
 
@@ -399,12 +403,12 @@ Nada aqui foi so compilado. Cada linha abaixo foi provada com a ROM rodando num 
 | o que | resultado |
 |---|---|
 | Varredura de mapas | **Todos os 528 mapas do jogo**, um por um, com o jogador andando num padrao que cruza grama, ledges e bordas de mapa. A cada segundo a varredura checa as quatro coisas que separam um GBA travado de um rodando: o ponteiro do save saindo da EWRAM, o id do mapa virando um que nao existe, a tela parada enquanto o input e aceito, e o jogo caindo de volta na tela de copyright. **Zero achados em 528.** |
-| Times dos tres chefes novos | Dalva, Ademar e Olivia lidos de gEnemyParty dentro da batalha: as cinco vagas de cada um chegam com especie, nivel, item, os seis IVs e os quatro golpes customizados exatos. |
-| Dificuldade medida | Seis partidas completas. Contra a Dalva, um inicial de nv15 com o golpe certo derruba 4 de 5. Contra o Ademar, 2 de 5. Contra a Olivia, um Ground derruba 2 e trava na dupla Water/Electric. |
+| Times dos treze chefes | Os treze times lidos de gEnemyParty dentro da batalha. Dalva, Ademar e Olivia primeiro; depois as outras dez, de Nara a Amalia: 52 vagas, e todas chegam com especie, nivel, item, IV e os quatro golpes customizados exatos de docs/arauna/times/. |
+| Dificuldade medida | Seis partidas completas. Contra a Dalva, um inicial de nv15 com o golpe certo derruba 4 de 5. Contra o Ademar, 2 de 5. Contra a Olivia, um Ground derruba 2 e trava na dupla Water/Electric. Contra a Nara, o kit de teste de nv100 vence em cinco turnos e a insignia fica gravada. Contra a Amalia, o Guaraci (Fire/Fairy) segura o mesmo kit -- Dragon Claw nao pega em Fairy -- e vence. |
 | Learnsets dos 386 | Lidos de volta da ROM linkada, decodificando gLevelUpLearnsets. Criaturas criadas em quatro niveis diferentes recebem exatamente os golpes que a tabela promete. |
 | Portugues residual | 37418 strings visiveis varridas contra um lexico portugues. Nenhuma passa. |
 | Largura de texto | 575 arquivos de script medidos como o motor mede, a partir de charmap.txt e gFontNormalLatinGlyphWidths. Nada acima dos 208px da caixa de fala. |
-| Disponibilidade | 293 criaturas capturaveis na natureza, 366 de 386 obteniveis contando evolucao e presentes. |
+| Disponibilidade | 293 criaturas capturaveis na natureza, 386 de 386 obteniveis contando evolucao, presentes e os vinte lendarios que acordam depois do primeiro Hall da Fama. |
 | ROM limpa | Nenhum simbolo do harness de teste sobrevive na ROM final; a arvore fica limpa depois de cada prova. |
 
 **O que isto nao prova.** Ninguem jogou esta beta do inicio ao fim. A varredura prova que os 528 mapas carregam e que da para andar neles, e as partidas provam que os chefes funcionam -- mas nenhum teste automatico seguiu a cadeia de flags da historia da Vila do Amanhecer ate a Campea. Esse e o teste que a beta publica existe para fazer.
@@ -803,38 +807,38 @@ grama, agua ou pesca. As outras vem por evolucao, presente ou evento.
 | 385 | Sacinho | Dark/Fairy | 650 | — | 18 |
 | 386 | Arauá | Dragon/Psychic | 720 | — | 15 |
 
-## O que a beta ainda nao tem
+## Os lendarios e miticos
 
-O plano dos especiais tem 31 lendarios e miticos. **11 ja estao no jogo**,
-nos encontros estaticos herdados do Emerald. Os outros **20 nao tem lugar
-no mapa** -- a dex nao fecha nesta beta, e isso e conhecido.
+O plano dos especiais tem 31 lendarios e miticos. **31 ja estao no jogo**:
+11 nos encontros estaticos herdados do Emerald e 20 nos lugares de
+`docs/arauna/ARAUNA_LEGENDS.csv`, onde acordam depois do primeiro Hall da Fama.
 
-### Os 20 que ainda esperam lugar
+### Os 20 que acordam depois do Hall da Fama
 
-| dex | nome | tipos | nivel previsto | lugar previsto |
+| dex | nome | tipos | nivel | mapa |
 |---:|---|---|---:|---|
-| 329 | Guaraciana | fire/fairy | 60 | SERRA DO UIVO / TORRE JURAMENTO - santuario dedicado |
-| 330 | Jaciana | fairy/water | 60 | BAIA DAS LUZES / aguas costeiras - encontro estatico |
-| 331 | Tupanaú | electric/dragon | 60 | SERRA DO UIVO / TORRE JURAMENTO - santuario dedicado |
-| 332 | Iaraú | water/fairy | 60 | MATA DO MEIO / CAVERNAS M'BOI - encontro estatico |
-| 333 | Kuarahy | fire/psychic | 60 | SERRA DO UIVO / TORRE JURAMENTO - santuario dedicado |
-| 334 | Yasy | fairy/dark | 60 | SERRA DO UIVO / TORRE JURAMENTO - santuario dedicado |
-| 335 | Rudarauna | fairy/psychic | 60 | BAIA DAS LUZES / aguas costeiras - encontro estatico |
-| 336 | Perybé | water/psychic | 60 | MATA DO MEIO / CAVERNAS M'BOI - encontro estatico |
-| 337 | Arauanaú | fairy/dragon | 62 | TORRE JURAMENTO / ESTR. JURAMENTO |
-| 338 | Verdejante | grass/dragon | 60 | MATA DO MEIO / CAVERNAS M'BOI - encontro estatico |
-| 339 | Chuvão | water/electric | 60 | BAIA DAS LUZES / aguas costeiras - encontro estatico |
-| 340 | Solzão | fire/ground | 58 | SERRA DA CINZA / torre ou ruina dedicada |
-| 341 | Ventania | flying/dragon | 58 | Cerrado tardio / santuario dedicado |
-| 342 | Terraão | ground/rock | 62 | RUINAS DA QUEDA / ESTR. JURAMENTO |
-| 343 | Fogaréu | fire/dragon | 60 | SERRA DO UIVO / TORRE JURAMENTO - santuario dedicado |
-| 344 | Marulho | water/dragon | 60 | BAIA DAS LUZES / aguas costeiras - encontro estatico |
-| 346 | Poente | dark/fire | 60 | BAIA DAS LUZES / aguas costeiras - encontro estatico |
-| 348 | Arauanamon | dragon/fairy | 68 | TORRE JURAMENTO / ESTR. JURAMENTO |
-| 376 | Boitatã | fire/dragon | 65 | Cerrado tardio / santuario dedicado |
-| 385 | Sacinho | dark/fairy | 65 | Cerrado tardio / santuario dedicado |
+| 329 | Guaraciana | fire/fairy | 60 | SkyPillar_1F |
+| 330 | Jaciana | fairy/water | 60 | Route125 |
+| 331 | Tupanaú | electric/dragon | 60 | SkyPillar_2F |
+| 332 | Iaraú | water/fairy | 60 | Route120 |
+| 333 | Kuarahy | fire/psychic | 60 | SkyPillar_5F |
+| 334 | Yasy | fairy/dark | 60 | SkyPillar_4F |
+| 335 | Rudarauna | fairy/psychic | 60 | Route122 |
+| 336 | Perybé | water/psychic | 60 | SeafloorCavern_Room9 |
+| 337 | Arauanaú | fairy/dragon | 62 | VictoryRoad_B2F |
+| 338 | Verdejante | grass/dragon | 60 | Route120 |
+| 339 | Chuvão | water/electric | 60 | Route125 |
+| 340 | Solzão | fire/ground | 58 | MtChimney |
+| 341 | Ventania | flying/dragon | 58 | Route113 |
+| 342 | Terraão | ground/rock | 62 | MeteorFalls_StevensCave |
+| 343 | Fogaréu | fire/dragon | 60 | SkyPillar_3F |
+| 344 | Marulho | water/dragon | 60 | Route124 |
+| 346 | Poente | dark/fire | 60 | Route124 |
+| 348 | Arauanamon | dragon/fairy | 68 | SkyPillar_Outside |
+| 376 | Boitatã | fire/dragon | 65 | Route113 |
+| 385 | Sacinho | dark/fairy | 65 | DesertUnderpass |
 
-### Os 11 que ja podem ser encontrados
+### Os 11 herdados do Emerald
 
 | dex | nome | tipos |
 |---:|---|---|

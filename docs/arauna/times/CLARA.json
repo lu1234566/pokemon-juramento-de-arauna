@@ -1,0 +1,367 @@
+{
+  "schema": "arauana-team",
+  "version": 4,
+  "exportedAt": "2026-10-12T00:00:00.000Z",
+  "trainerParty": {
+    "customMoveset": true,
+    "ivMode": "single-fixed-iv"
+  },
+  "slots": [
+    {
+      "slot": 1,
+      "pokemonId": 231,
+      "pokemonName": "Peixe-Espada",
+      "level": 51,
+      "iv": 198,
+      "iv31": 24,
+      "heldItem": {
+        "id": "ITEM_SITRUS_BERRY",
+        "name": "SITRUS BERRY"
+      },
+      "types": [
+        "water",
+        "steel"
+      ],
+      "moves": [
+        {
+          "id": "MOVE_METEOR_MASH",
+          "name": "Meteor Mash",
+          "type": "steel",
+          "category": "physical",
+          "power": 100,
+          "accuracy": 85,
+          "pp": 10,
+          "learnsetLevel": 48,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_SURF",
+          "name": "Surf",
+          "type": "water",
+          "category": "special",
+          "power": 95,
+          "accuracy": 100,
+          "pp": 15,
+          "learnsetLevel": 53,
+          "warning": "Aprendido no Nv. 53; treinador está no Nv. 51. O moveset custom permite.",
+          "signature": false
+        },
+        {
+          "id": "MOVE_EARTHQUAKE",
+          "name": "Earthquake",
+          "type": "ground",
+          "category": "physical",
+          "power": 100,
+          "accuracy": 100,
+          "pp": 10,
+          "learnsetLevel": null,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_IRON_DEFENSE",
+          "name": "Iron Defense",
+          "type": "steel",
+          "category": "status",
+          "power": null,
+          "accuracy": null,
+          "pp": 15,
+          "learnsetLevel": 24,
+          "warning": null,
+          "signature": false
+        }
+      ],
+      "warnings": [
+        "Surf: Aprendido no Nv. 53; treinador está no Nv. 51. O moveset custom permite."
+      ]
+    },
+    {
+      "slot": 2,
+      "pokemonId": 201,
+      "pokemonName": "Ferrolho",
+      "level": 51,
+      "iv": 206,
+      "iv31": 25,
+      "heldItem": {
+        "id": "ITEM_LEFTOVERS",
+        "name": "LEFTOVERS"
+      },
+      "types": [
+        "steel",
+        "ground"
+      ],
+      "moves": [
+        {
+          "id": "MOVE_METEOR_MASH",
+          "name": "Meteor Mash",
+          "type": "steel",
+          "category": "physical",
+          "power": 100,
+          "accuracy": 85,
+          "pp": 10,
+          "learnsetLevel": 44,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_EARTHQUAKE",
+          "name": "Earthquake",
+          "type": "ground",
+          "category": "physical",
+          "power": 100,
+          "accuracy": 100,
+          "pp": 10,
+          "learnsetLevel": null,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_AERIAL_ACE",
+          "name": "Aerial Ace",
+          "type": "flying",
+          "category": "physical",
+          "power": 60,
+          "accuracy": null,
+          "pp": 20,
+          "learnsetLevel": null,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_IRON_DEFENSE",
+          "name": "Iron Defense",
+          "type": "steel",
+          "category": "status",
+          "power": null,
+          "accuracy": null,
+          "pp": 15,
+          "learnsetLevel": 19,
+          "warning": null,
+          "signature": false
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "slot": 3,
+      "pokemonId": 24,
+      "pokemonName": "Tamanduá",
+      "level": 52,
+      "iv": 223,
+      "iv31": 27,
+      "heldItem": {
+        "id": "ITEM_SITRUS_BERRY",
+        "name": "SITRUS BERRY"
+      },
+      "types": [
+        "ground",
+        "steel"
+      ],
+      "moves": [
+        {
+          "id": "MOVE_METEOR_MASH",
+          "name": "Meteor Mash",
+          "type": "steel",
+          "category": "physical",
+          "power": 100,
+          "accuracy": 85,
+          "pp": 10,
+          "learnsetLevel": 44,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_EARTHQUAKE",
+          "name": "Earthquake",
+          "type": "ground",
+          "category": "physical",
+          "power": 100,
+          "accuracy": 100,
+          "pp": 10,
+          "learnsetLevel": 48,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_AERIAL_ACE",
+          "name": "Aerial Ace",
+          "type": "flying",
+          "category": "physical",
+          "power": 60,
+          "accuracy": null,
+          "pp": 20,
+          "learnsetLevel": null,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_SWORDS_DANCE",
+          "name": "Swords Dance",
+          "type": "normal",
+          "category": "status",
+          "power": null,
+          "accuracy": null,
+          "pp": 30,
+          "learnsetLevel": 58,
+          "warning": "Aprendido no Nv. 58; treinador está no Nv. 52. O moveset custom permite.",
+          "signature": false
+        }
+      ],
+      "warnings": [
+        "Swords Dance: Aprendido no Nv. 58; treinador está no Nv. 52. O moveset custom permite."
+      ]
+    },
+    {
+      "slot": 4,
+      "pokemonId": 30,
+      "pokemonName": "Tatuçu",
+      "level": 52,
+      "iv": 239,
+      "iv31": 29,
+      "heldItem": {
+        "id": "ITEM_LUM_BERRY",
+        "name": "LUM BERRY"
+      },
+      "types": [
+        "ground",
+        "steel"
+      ],
+      "moves": [
+        {
+          "id": "MOVE_METEOR_MASH",
+          "name": "Meteor Mash",
+          "type": "steel",
+          "category": "physical",
+          "power": 100,
+          "accuracy": 85,
+          "pp": 10,
+          "learnsetLevel": 38,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_EARTHQUAKE",
+          "name": "Earthquake",
+          "type": "ground",
+          "category": "physical",
+          "power": 100,
+          "accuracy": 100,
+          "pp": 10,
+          "learnsetLevel": 21,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_ROCK_TOMB",
+          "name": "Rock Tomb",
+          "type": "rock",
+          "category": "physical",
+          "power": 50,
+          "accuracy": 80,
+          "pp": 10,
+          "learnsetLevel": null,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_IRON_DEFENSE",
+          "name": "Iron Defense",
+          "type": "steel",
+          "category": "status",
+          "power": null,
+          "accuracy": null,
+          "pp": 15,
+          "learnsetLevel": 29,
+          "warning": null,
+          "signature": false
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "slot": 5,
+      "pokemonId": 110,
+      "pokemonName": "Ogum",
+      "level": 53,
+      "iv": 255,
+      "iv31": 31,
+      "heldItem": {
+        "id": "ITEM_METAL_COAT",
+        "name": "METAL COAT"
+      },
+      "types": [
+        "steel",
+        "fire"
+      ],
+      "moves": [
+        {
+          "id": "MOVE_FORJA_DE_OGUM",
+          "name": "Forja De Ogum",
+          "type": "steel",
+          "category": "physical",
+          "power": 90,
+          "accuracy": 100,
+          "pp": 10,
+          "learnsetLevel": 50,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_FLAMETHROWER",
+          "name": "Flamethrower",
+          "type": "fire",
+          "category": "special",
+          "power": 95,
+          "accuracy": 100,
+          "pp": 15,
+          "learnsetLevel": 53,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_IRON_DEFENSE",
+          "name": "Iron Defense",
+          "type": "steel",
+          "category": "status",
+          "power": null,
+          "accuracy": null,
+          "pp": 15,
+          "learnsetLevel": 21,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_THUNDERBOLT",
+          "name": "Thunderbolt",
+          "type": "electric",
+          "category": "special",
+          "power": 95,
+          "accuracy": 100,
+          "pp": 15,
+          "learnsetLevel": null,
+          "warning": null,
+          "signature": false
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "slot": 6,
+      "pokemonId": null,
+      "pokemonName": null,
+      "level": null,
+      "iv": null,
+      "iv31": null,
+      "heldItem": null,
+      "types": [],
+      "moves": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "warnings": []
+    }
+  ]
+}

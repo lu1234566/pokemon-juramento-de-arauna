@@ -1,0 +1,417 @@
+{
+  "schema": "arauana-team",
+  "version": 4,
+  "exportedAt": "2026-10-12T00:00:00.000Z",
+  "trainerParty": {
+    "customMoveset": true,
+    "ivMode": "single-fixed-iv"
+  },
+  "slots": [
+    {
+      "slot": 1,
+      "pokemonId": 27,
+      "pokemonName": "Botogaláu",
+      "level": 55,
+      "iv": 231,
+      "iv31": 28,
+      "heldItem": {
+        "id": "ITEM_SITRUS_BERRY",
+        "name": "SITRUS BERRY"
+      },
+      "types": [
+        "water",
+        "psychic"
+      ],
+      "moves": [
+        {
+          "id": "MOVE_HYDRO_PUMP",
+          "name": "Hydro Pump",
+          "type": "water",
+          "category": "special",
+          "power": 120,
+          "accuracy": 80,
+          "pp": 5,
+          "learnsetLevel": 14,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_ENCANTO_DO_BOTO",
+          "name": "Encanto Do Boto",
+          "type": "psychic",
+          "category": "special",
+          "power": 85,
+          "accuracy": 100,
+          "pp": 10,
+          "learnsetLevel": 45,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_FIRE_BLAST",
+          "name": "Fire Blast",
+          "type": "fire",
+          "category": "special",
+          "power": 120,
+          "accuracy": 85,
+          "pp": 5,
+          "learnsetLevel": null,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_CALM_MIND",
+          "name": "Calm Mind",
+          "type": "psychic",
+          "category": "status",
+          "power": null,
+          "accuracy": null,
+          "pp": 20,
+          "learnsetLevel": 27,
+          "warning": null,
+          "signature": false
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "slot": 2,
+      "pokemonId": 48,
+      "pokemonName": "Boiuna",
+      "level": 56,
+      "iv": 231,
+      "iv31": 28,
+      "heldItem": {
+        "id": "ITEM_LUM_BERRY",
+        "name": "LUM BERRY"
+      },
+      "types": [
+        "water",
+        "dragon"
+      ],
+      "moves": [
+        {
+          "id": "MOVE_ABRACO_DA_BOIUNA",
+          "name": "Abraco Da Boiuna",
+          "type": "dragon",
+          "category": "special",
+          "power": 95,
+          "accuracy": 90,
+          "pp": 10,
+          "learnsetLevel": 55,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_HYDRO_PUMP",
+          "name": "Hydro Pump",
+          "type": "water",
+          "category": "special",
+          "power": 120,
+          "accuracy": 80,
+          "pp": 5,
+          "learnsetLevel": 54,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_ICE_BEAM",
+          "name": "Ice Beam",
+          "type": "ice",
+          "category": "special",
+          "power": 95,
+          "accuracy": 100,
+          "pp": 10,
+          "learnsetLevel": null,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_GLARE",
+          "name": "Glare",
+          "type": "normal",
+          "category": "status",
+          "power": null,
+          "accuracy": 75,
+          "pp": 30,
+          "learnsetLevel": 58,
+          "warning": "Aprendido no Nv. 58; treinador está no Nv. 56. O moveset custom permite.",
+          "signature": false
+        }
+      ],
+      "warnings": [
+        "Glare: Aprendido no Nv. 58; treinador está no Nv. 56. O moveset custom permite."
+      ]
+    },
+    {
+      "slot": 3,
+      "pokemonId": 246,
+      "pokemonName": "Guaraci",
+      "level": 56,
+      "iv": 239,
+      "iv31": 29,
+      "heldItem": {
+        "id": "ITEM_WHITE_HERB",
+        "name": "WHITE HERB"
+      },
+      "types": [
+        "fire",
+        "fairy"
+      ],
+      "moves": [
+        {
+          "id": "MOVE_FIRE_BLAST",
+          "name": "Fire Blast",
+          "type": "fire",
+          "category": "special",
+          "power": 120,
+          "accuracy": 85,
+          "pp": 5,
+          "learnsetLevel": 53,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_MOONBLAST",
+          "name": "Moonblast",
+          "type": "fairy",
+          "category": "special",
+          "power": 95,
+          "accuracy": 100,
+          "pp": 10,
+          "learnsetLevel": 54,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_EARTHQUAKE",
+          "name": "Earthquake",
+          "type": "ground",
+          "category": "physical",
+          "power": 100,
+          "accuracy": 100,
+          "pp": 10,
+          "learnsetLevel": null,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_TOXIC",
+          "name": "Toxic",
+          "type": "poison",
+          "category": "status",
+          "power": null,
+          "accuracy": 85,
+          "pp": 10,
+          "learnsetLevel": null,
+          "warning": null,
+          "signature": false
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "slot": 4,
+      "pokemonId": 294,
+      "pokemonName": "Uirapuru",
+      "level": 57,
+      "iv": 247,
+      "iv31": 30,
+      "heldItem": {
+        "id": "ITEM_SITRUS_BERRY",
+        "name": "SITRUS BERRY"
+      },
+      "types": [
+        "flying",
+        "fairy"
+      ],
+      "moves": [
+        {
+          "id": "MOVE_MOONBLAST",
+          "name": "Moonblast",
+          "type": "fairy",
+          "category": "special",
+          "power": 95,
+          "accuracy": 100,
+          "pp": 10,
+          "learnsetLevel": 54,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_AERIAL_ACE",
+          "name": "Aerial Ace",
+          "type": "flying",
+          "category": "physical",
+          "power": 60,
+          "accuracy": null,
+          "pp": 20,
+          "learnsetLevel": 39,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_PSYCHIC",
+          "name": "Psychic",
+          "type": "psychic",
+          "category": "special",
+          "power": 90,
+          "accuracy": 100,
+          "pp": 10,
+          "learnsetLevel": 34,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_SING",
+          "name": "Sing",
+          "type": "normal",
+          "category": "status",
+          "power": null,
+          "accuracy": 55,
+          "pp": 15,
+          "learnsetLevel": 58,
+          "warning": "Aprendido no Nv. 58; treinador está no Nv. 57. O moveset custom permite.",
+          "signature": false
+        }
+      ],
+      "warnings": [
+        "Sing: Aprendido no Nv. 58; treinador está no Nv. 57. O moveset custom permite."
+      ]
+    },
+    {
+      "slot": 5,
+      "pokemonId": 286,
+      "pokemonName": "Iara-Mãe",
+      "level": 57,
+      "iv": 247,
+      "iv31": 30,
+      "heldItem": {
+        "id": "ITEM_LEFTOVERS",
+        "name": "LEFTOVERS"
+      },
+      "types": [
+        "water",
+        "fairy"
+      ],
+      "moves": [
+        {
+          "id": "MOVE_SURF",
+          "name": "Surf",
+          "type": "water",
+          "category": "special",
+          "power": 95,
+          "accuracy": 100,
+          "pp": 15,
+          "learnsetLevel": 44,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_MOONBLAST",
+          "name": "Moonblast",
+          "type": "fairy",
+          "category": "special",
+          "power": 95,
+          "accuracy": 100,
+          "pp": 10,
+          "learnsetLevel": 54,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_EARTHQUAKE",
+          "name": "Earthquake",
+          "type": "ground",
+          "category": "physical",
+          "power": 100,
+          "accuracy": 100,
+          "pp": 10,
+          "learnsetLevel": null,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_RAIN_DANCE",
+          "name": "Rain Dance",
+          "type": "water",
+          "category": "status",
+          "power": null,
+          "accuracy": null,
+          "pp": 5,
+          "learnsetLevel": null,
+          "warning": null,
+          "signature": false
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "slot": 6,
+      "pokemonId": 109,
+      "pokemonName": "Oxum",
+      "level": 58,
+      "iv": 255,
+      "iv31": 31,
+      "heldItem": {
+        "id": "ITEM_MYSTIC_WATER",
+        "name": "MYSTIC WATER"
+      },
+      "types": [
+        "water",
+        "fairy"
+      ],
+      "moves": [
+        {
+          "id": "MOVE_HYDRO_PUMP",
+          "name": "Hydro Pump",
+          "type": "water",
+          "category": "special",
+          "power": 120,
+          "accuracy": 80,
+          "pp": 5,
+          "learnsetLevel": 58,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_MOONBLAST",
+          "name": "Moonblast",
+          "type": "fairy",
+          "category": "special",
+          "power": 95,
+          "accuracy": 100,
+          "pp": 10,
+          "learnsetLevel": 54,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_RAIN_DANCE",
+          "name": "Rain Dance",
+          "type": "water",
+          "category": "status",
+          "power": null,
+          "accuracy": null,
+          "pp": 5,
+          "learnsetLevel": 34,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_THUNDERBOLT",
+          "name": "Thunderbolt",
+          "type": "electric",
+          "category": "special",
+          "power": 95,
+          "accuracy": 100,
+          "pp": 15,
+          "learnsetLevel": null,
+          "warning": null,
+          "signature": false
+        }
+      ],
+      "warnings": []
+    }
+  ]
+}

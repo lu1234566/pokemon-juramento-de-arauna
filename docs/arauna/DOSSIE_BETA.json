@@ -5591,7 +5591,9 @@
    "types": "fire/fairy",
    "recommended_level": "60",
    "placement": "SERRA DO UIVO / TORRE JURAMENTO - santuario dedicado",
-   "tem_casa": false
+   "tem_casa": true,
+   "mapa": "SkyPillar_1F",
+   "nivel": 60
   },
   {
    "dex": "330",
@@ -5599,7 +5601,9 @@
    "types": "fairy/water",
    "recommended_level": "60",
    "placement": "BAIA DAS LUZES / aguas costeiras - encontro estatico",
-   "tem_casa": false
+   "tem_casa": true,
+   "mapa": "Route125",
+   "nivel": 60
   },
   {
    "dex": "331",
@@ -5607,7 +5611,9 @@
    "types": "electric/dragon",
    "recommended_level": "60",
    "placement": "SERRA DO UIVO / TORRE JURAMENTO - santuario dedicado",
-   "tem_casa": false
+   "tem_casa": true,
+   "mapa": "SkyPillar_2F",
+   "nivel": 60
   },
   {
    "dex": "332",
@@ -5615,7 +5621,9 @@
    "types": "water/fairy",
    "recommended_level": "60",
    "placement": "MATA DO MEIO / CAVERNAS M'BOI - encontro estatico",
-   "tem_casa": false
+   "tem_casa": true,
+   "mapa": "Route120",
+   "nivel": 60
   },
   {
    "dex": "333",
@@ -5623,7 +5631,9 @@
    "types": "fire/psychic",
    "recommended_level": "60",
    "placement": "SERRA DO UIVO / TORRE JURAMENTO - santuario dedicado",
-   "tem_casa": false
+   "tem_casa": true,
+   "mapa": "SkyPillar_5F",
+   "nivel": 60
   },
   {
    "dex": "334",
@@ -5631,7 +5641,9 @@
    "types": "fairy/dark",
    "recommended_level": "60",
    "placement": "SERRA DO UIVO / TORRE JURAMENTO - santuario dedicado",
-   "tem_casa": false
+   "tem_casa": true,
+   "mapa": "SkyPillar_4F",
+   "nivel": 60
   },
   {
    "dex": "335",
@@ -5639,7 +5651,9 @@
    "types": "fairy/psychic",
    "recommended_level": "60",
    "placement": "BAIA DAS LUZES / aguas costeiras - encontro estatico",
-   "tem_casa": false
+   "tem_casa": true,
+   "mapa": "Route122",
+   "nivel": 60
   },
   {
    "dex": "336",
@@ -5647,7 +5661,9 @@
    "types": "water/psychic",
    "recommended_level": "60",
    "placement": "MATA DO MEIO / CAVERNAS M'BOI - encontro estatico",
-   "tem_casa": false
+   "tem_casa": true,
+   "mapa": "SeafloorCavern_Room9",
+   "nivel": 60
   },
   {
    "dex": "337",
@@ -5655,7 +5671,9 @@
    "types": "fairy/dragon",
    "recommended_level": "62",
    "placement": "TORRE JURAMENTO / ESTR. JURAMENTO",
-   "tem_casa": false
+   "tem_casa": true,
+   "mapa": "VictoryRoad_B2F",
+   "nivel": 62
   },
   {
    "dex": "338",
@@ -5663,7 +5681,9 @@
    "types": "grass/dragon",
    "recommended_level": "60",
    "placement": "MATA DO MEIO / CAVERNAS M'BOI - encontro estatico",
-   "tem_casa": false
+   "tem_casa": true,
+   "mapa": "Route120",
+   "nivel": 60
   },
   {
    "dex": "339",
@@ -5671,7 +5691,9 @@
    "types": "water/electric",
    "recommended_level": "60",
    "placement": "BAIA DAS LUZES / aguas costeiras - encontro estatico",
-   "tem_casa": false
+   "tem_casa": true,
+   "mapa": "Route125",
+   "nivel": 60
   },
   {
    "dex": "340",
@@ -5679,7 +5701,9 @@
    "types": "fire/ground",
    "recommended_level": "58",
    "placement": "SERRA DA CINZA / torre ou ruina dedicada",
-   "tem_casa": false
+   "tem_casa": true,
+   "mapa": "MtChimney",
+   "nivel": 58
   },
   {
    "dex": "341",
@@ -5687,7 +5711,9 @@
    "types": "flying/dragon",
    "recommended_level": "58",
    "placement": "Cerrado tardio / santuario dedicado",
-   "tem_casa": false
+   "tem_casa": true,
+   "mapa": "Route113",
+   "nivel": 58
   },
   {
    "dex": "342",
@@ -5695,7 +5721,9 @@
    "types": "ground/rock",
    "recommended_level": "62",
    "placement": "RUINAS DA QUEDA / ESTR. JURAMENTO",
-   "tem_casa": false
+   "tem_casa": true,
+   "mapa": "MeteorFalls_StevensCave",
+   "nivel": 62
   },
   {
    "dex": "343",
@@ -5703,7 +5731,9 @@
    "types": "fire/dragon",
    "recommended_level": "60",
    "placement": "SERRA DO UIVO / TORRE JURAMENTO - santuario dedicado",
-   "tem_casa": false
+   "tem_casa": true,
+   "mapa": "SkyPillar_3F",
+   "nivel": 60
   },
   {
    "dex": "344",
@@ -5711,7 +5741,9 @@
    "types": "water/dragon",
    "recommended_level": "60",
    "placement": "BAIA DAS LUZES / aguas costeiras - encontro estatico",
-   "tem_casa": false
+   "tem_casa": true,
+   "mapa": "Route124",
+   "nivel": 60
   },
   {
    "dex": "345",
@@ -5719,7 +5751,9 @@
    "types": "fairy/fire",
    "recommended_level": "60",
    "placement": "BAIA DAS LUZES / aguas costeiras - encontro estatico",
-   "tem_casa": true
+   "tem_casa": true,
+   "mapa": null,
+   "nivel": null
   },
   {
    "dex": "346",
@@ -5727,7 +5761,9 @@
    "types": "dark/fire",
    "recommended_level": "60",
    "placement": "BAIA DAS LUZES / aguas costeiras - encontro estatico",
-   "tem_casa": false
+   "tem_casa": true,
+   "mapa": "Route124",
+   "nivel": 60
   },
   {
    "dex": "347",
@@ -5735,7 +5771,9 @@
    "types": "fairy/psychic",
    "recommended_level": "65",
    "placement": "SERRA DO UIVO / TORRE JURAMENTO - santuario dedicado",
-   "tem_casa": true
+   "tem_casa": true,
+   "mapa": null,
+   "nivel": null
   },
   {
    "dex": "348",
@@ -5743,7 +5781,9 @@
    "types": "dragon/fairy",
    "recommended_level": "68",
    "placement": "TORRE JURAMENTO / ESTR. JURAMENTO",
-   "tem_casa": false
+   "tem_casa": true,
+   "mapa": "SkyPillar_Outside",
+   "nivel": 68
   },
   {
    "dex": "376",
@@ -5751,7 +5791,9 @@
    "types": "fire/dragon",
    "recommended_level": "65",
    "placement": "Cerrado tardio / santuario dedicado",
-   "tem_casa": false
+   "tem_casa": true,
+   "mapa": "Route113",
+   "nivel": 65
   },
   {
    "dex": "377",
@@ -5759,7 +5801,9 @@
    "types": "water/dragon",
    "recommended_level": "65",
    "placement": "MATA DO MEIO / CAVERNAS M'BOI - encontro estatico",
-   "tem_casa": true
+   "tem_casa": true,
+   "mapa": null,
+   "nivel": null
   },
   {
    "dex": "378",
@@ -5767,7 +5811,9 @@
    "types": "grass/dragon",
    "recommended_level": "65",
    "placement": "MATA DO MEIO / CAVERNAS M'BOI - encontro estatico",
-   "tem_casa": true
+   "tem_casa": true,
+   "mapa": null,
+   "nivel": null
   },
   {
    "dex": "379",
@@ -5775,7 +5821,9 @@
    "types": "fire/psychic",
    "recommended_level": "65",
    "placement": "SERRA DO UIVO / TORRE JURAMENTO - santuario dedicado",
-   "tem_casa": true
+   "tem_casa": true,
+   "mapa": null,
+   "nivel": null
   },
   {
    "dex": "380",
@@ -5783,7 +5831,9 @@
    "types": "dark/psychic",
    "recommended_level": "65",
    "placement": "SERRA DO UIVO / TORRE JURAMENTO - santuario dedicado",
-   "tem_casa": true
+   "tem_casa": true,
+   "mapa": null,
+   "nivel": null
   },
   {
    "dex": "381",
@@ -5791,7 +5841,9 @@
    "types": "fighting/dark",
    "recommended_level": "65",
    "placement": "SERRA DO UIVO / TORRE JURAMENTO - santuario dedicado",
-   "tem_casa": true
+   "tem_casa": true,
+   "mapa": null,
+   "nivel": null
   },
   {
    "dex": "382",
@@ -5799,7 +5851,9 @@
    "types": "water/fairy",
    "recommended_level": "65",
    "placement": "BAIA DAS LUZES / aguas costeiras - encontro estatico",
-   "tem_casa": true
+   "tem_casa": true,
+   "mapa": null,
+   "nivel": null
   },
   {
    "dex": "383",
@@ -5807,7 +5861,9 @@
    "types": "dragon/fairy",
    "recommended_level": "65",
    "placement": "BAIA DAS LUZES / aguas costeiras - encontro estatico",
-   "tem_casa": true
+   "tem_casa": true,
+   "mapa": null,
+   "nivel": null
   },
   {
    "dex": "384",
@@ -5815,7 +5871,9 @@
    "types": "grass/fairy",
    "recommended_level": "65",
    "placement": "MATA DO MEIO / CAVERNAS M'BOI - encontro estatico",
-   "tem_casa": true
+   "tem_casa": true,
+   "mapa": null,
+   "nivel": null
   },
   {
    "dex": "385",
@@ -5823,7 +5881,9 @@
    "types": "dark/fairy",
    "recommended_level": "65",
    "placement": "Cerrado tardio / santuario dedicado",
-   "tem_casa": false
+   "tem_casa": true,
+   "mapa": "DesertUnderpass",
+   "nivel": 65
   },
   {
    "dex": "386",
@@ -5831,7 +5891,9 @@
    "types": "dragon/psychic",
    "recommended_level": "75",
    "placement": "TORRE JURAMENTO / evento final dedicado",
-   "tem_casa": true
+   "tem_casa": true,
+   "mapa": null,
+   "nivel": null
   }
  ],
  "verificacao": {
@@ -5842,12 +5904,12 @@
     "resultado": "**Todos os 528 mapas do jogo**, um por um, com o jogador andando num padrao que cruza grama, ledges e bordas de mapa. A cada segundo a varredura checa as quatro coisas que separam um GBA travado de um rodando: o ponteiro do save saindo da EWRAM, o id do mapa virando um que nao existe, a tela parada enquanto o input e aceito, e o jogo caindo de volta na tela de copyright. **Zero achados em 528.**"
    },
    {
-    "nome": "Times dos tres chefes novos",
-    "resultado": "Dalva, Ademar e Olivia lidos de gEnemyParty dentro da batalha: as cinco vagas de cada um chegam com especie, nivel, item, os seis IVs e os quatro golpes customizados exatos."
+    "nome": "Times dos treze chefes",
+    "resultado": "Os treze times lidos de gEnemyParty dentro da batalha. Dalva, Ademar e Olivia primeiro; depois as outras dez, de Nara a Amalia: 52 vagas, e todas chegam com especie, nivel, item, IV e os quatro golpes customizados exatos de docs/arauna/times/."
    },
    {
     "nome": "Dificuldade medida",
-    "resultado": "Seis partidas completas. Contra a Dalva, um inicial de nv15 com o golpe certo derruba 4 de 5. Contra o Ademar, 2 de 5. Contra a Olivia, um Ground derruba 2 e trava na dupla Water/Electric."
+    "resultado": "Seis partidas completas. Contra a Dalva, um inicial de nv15 com o golpe certo derruba 4 de 5. Contra o Ademar, 2 de 5. Contra a Olivia, um Ground derruba 2 e trava na dupla Water/Electric. Contra a Nara, o kit de teste de nv100 vence em cinco turnos e a insignia fica gravada. Contra a Amalia, o Guaraci (Fire/Fairy) segura o mesmo kit -- Dragon Claw nao pega em Fairy -- e vence."
    },
    {
     "nome": "Learnsets dos 386",
@@ -5863,7 +5925,7 @@
    },
    {
     "nome": "Disponibilidade",
-    "resultado": "293 criaturas capturaveis na natureza, 366 de 386 obteniveis contando evolucao e presentes."
+    "resultado": "293 criaturas capturaveis na natureza, 386 de 386 obteniveis contando evolucao, presentes e os vinte lendarios que acordam depois do primeiro Hall da Fama."
    },
    {
     "nome": "ROM limpa",
@@ -6439,62 +6501,28 @@
       "Fire"
      ],
      "bst": 446,
-     "nivel": 24,
-     "iv": 200,
-     "iv31": 24,
-     "item": "None",
+     "nivel": 27,
+     "iv": 99,
+     "iv31": 12,
+     "item": "Sitrus Berry",
      "golpes": [
       {
-       "nome": "Overheat",
+       "nome": "Flame Wheel",
        "tipo": "Fire",
-       "poder": 140
+       "poder": 60
       },
       {
-       "nome": "Take Down",
-       "tipo": "Normal",
-       "poder": 90
+       "nome": "Waterfall",
+       "tipo": "Water",
+       "poder": 80
       },
       {
-       "nome": "Magnitude",
-       "tipo": "Ground",
-       "poder": 1
+       "nome": "Brick Break",
+       "tipo": "Fighting",
+       "poder": 75
       },
       {
-       "nome": "Sunny Day",
-       "tipo": "Fire",
-       "poder": null
-      }
-     ]
-    },
-    {
-     "dex": 52,
-     "nome": "Guaracim",
-     "tipos": [
-      "Fire"
-     ],
-     "bst": 287,
-     "nivel": 24,
-     "iv": 200,
-     "iv31": 24,
-     "item": "None",
-     "golpes": [
-      {
-       "nome": "Overheat",
-       "tipo": "Fire",
-       "poder": 140
-      },
-      {
-       "nome": "Smog",
-       "tipo": "Poison",
-       "poder": 20
-      },
-      {
-       "nome": "Light Screen",
-       "tipo": "Psychic",
-       "poder": null
-      },
-      {
-       "nome": "Sunny Day",
+       "nome": "Will O Wisp",
        "tipo": "Fire",
        "poder": null
       }
@@ -6508,10 +6536,10 @@
       "Poison"
      ],
      "bst": 449,
-     "nivel": 26,
-     "iv": 250,
-     "iv31": 30,
-     "item": "None",
+     "nivel": 27,
+     "iv": 107,
+     "iv31": 13,
+     "item": "White Herb",
      "golpes": [
       {
        "nome": "Overheat",
@@ -6519,18 +6547,88 @@
        "poder": 140
       },
       {
-       "nome": "Tackle",
-       "tipo": "Normal",
-       "poder": 35
+       "nome": "Acid",
+       "tipo": "Poison",
+       "poder": 40
+      },
+      {
+       "nome": "Dig",
+       "tipo": "Ground",
+       "poder": 60
       },
       {
        "nome": "Sunny Day",
        "tipo": "Fire",
        "poder": null
+      }
+     ]
+    },
+    {
+     "dex": 53,
+     "nome": "Guará",
+     "tipos": [
+      "Fire",
+      "Normal"
+     ],
+     "bst": 552,
+     "nivel": 28,
+     "iv": 124,
+     "iv31": 15,
+     "item": "Quick Claw",
+     "golpes": [
+      {
+       "nome": "Flamethrower",
+       "tipo": "Fire",
+       "poder": 95
       },
       {
-       "nome": "Attract",
+       "nome": "Strength",
        "tipo": "Normal",
+       "poder": 80
+      },
+      {
+       "nome": "Brick Break",
+       "tipo": "Fighting",
+       "poder": 75
+      },
+      {
+       "nome": "Will O Wisp",
+       "tipo": "Fire",
+       "poder": null
+      }
+     ]
+    },
+    {
+     "dex": 99,
+     "nome": "Mula-sem-Cabeça",
+     "tipos": [
+      "Fire",
+      "Ghost"
+     ],
+     "bst": 550,
+     "nivel": 28,
+     "iv": 149,
+     "iv31": 18,
+     "item": "Sitrus Berry",
+     "golpes": [
+      {
+       "nome": "Flamethrower",
+       "tipo": "Fire",
+       "poder": 95
+      },
+      {
+       "nome": "Shadow Ball",
+       "tipo": "Ghost",
+       "poder": 80
+      },
+      {
+       "nome": "Shock Wave",
+       "tipo": "Electric",
+       "poder": 60
+      },
+      {
+       "nome": "Sunny Day",
+       "tipo": "Fire",
        "poder": null
       }
      ]
@@ -6544,9 +6642,9 @@
      ],
      "bst": 514,
      "nivel": 29,
-     "iv": 250,
-     "iv31": 30,
-     "item": "White Herb",
+     "iv": 255,
+     "iv31": 31,
+     "item": "Charcoal",
      "golpes": [
       {
        "nome": "Overheat",
@@ -6554,18 +6652,18 @@
        "poder": 140
       },
       {
-       "nome": "Sunny Day",
+       "nome": "Fogo Fatuo Ancestral",
+       "tipo": "Fire",
+       "poder": 85
+      },
+      {
+       "nome": "Will O Wisp",
        "tipo": "Fire",
        "poder": null
       },
       {
-       "nome": "Body Slam",
-       "tipo": "Normal",
-       "poder": 85
-      },
-      {
-       "nome": "Attract",
-       "tipo": "Normal",
+       "nome": "Confuse Ray",
+       "tipo": "Ghost",
        "poder": null
       }
      ]
@@ -6587,30 +6685,30 @@
       "Normal"
      ],
      "bst": 447,
-     "nivel": 27,
-     "iv": 200,
-     "iv31": 24,
-     "item": "None",
+     "nivel": 29,
+     "iv": 107,
+     "iv31": 13,
+     "item": "Sitrus Berry",
      "golpes": [
       {
-       "nome": "Teeter Dance",
+       "nome": "Strength",
+       "tipo": "Normal",
+       "poder": 80
+      },
+      {
+       "nome": "Wing Attack",
+       "tipo": "Flying",
+       "poder": 60
+      },
+      {
+       "nome": "Protect",
        "tipo": "Normal",
        "poder": null
       },
       {
-       "nome": "Psybeam",
-       "tipo": "Psychic",
-       "poder": 65
-      },
-      {
-       "nome": "Facade",
-       "tipo": "Normal",
-       "poder": 70
-      },
-      {
-       "nome": "Encore",
-       "tipo": "Normal",
-       "poder": null
+       "nome": "Crunch",
+       "tipo": "Dark",
+       "poder": 80
       }
      ]
     },
@@ -6622,30 +6720,30 @@
       "Fairy"
      ],
      "bst": 449,
-     "nivel": 27,
-     "iv": 200,
-     "iv31": 24,
-     "item": "None",
+     "nivel": 29,
+     "iv": 116,
+     "iv31": 14,
+     "item": "Sitrus Berry",
      "golpes": [
       {
-       "nome": "Slash",
+       "nome": "Strength",
        "tipo": "Normal",
-       "poder": 70
+       "poder": 80
       },
       {
-       "nome": "Facade",
-       "tipo": "Normal",
-       "poder": 70
+       "nome": "Fairy Wind",
+       "tipo": "Fairy",
+       "poder": 40
       },
       {
-       "nome": "Encore",
+       "nome": "Protect",
        "tipo": "Normal",
        "poder": null
       },
       {
-       "nome": "Faint Attack",
-       "tipo": "Dark",
-       "poder": 60
+       "nome": "Shadow Ball",
+       "tipo": "Ghost",
+       "poder": 80
       }
      ]
     },
@@ -6657,30 +6755,65 @@
       "Fighting"
      ],
      "bst": 447,
-     "nivel": 29,
-     "iv": 200,
-     "iv31": 24,
-     "item": "None",
+     "nivel": 30,
+     "iv": 132,
+     "iv31": 16,
+     "item": "Kings Rock",
      "golpes": [
       {
-       "nome": "Slash",
+       "nome": "Body Slam",
        "tipo": "Normal",
-       "poder": 70
+       "poder": 85
       },
       {
-       "nome": "Belly Drum",
+       "nome": "Karate Chop",
+       "tipo": "Fighting",
+       "poder": 50
+      },
+      {
+       "nome": "Aerial Ace",
+       "tipo": "Flying",
+       "poder": 60
+      },
+      {
+       "nome": "Bulk Up",
+       "tipo": "Fighting",
+       "poder": null
+      }
+     ]
+    },
+    {
+     "dex": 114,
+     "nome": "Zebu",
+     "tipos": [
+      "Normal",
+      "Fighting"
+     ],
+     "bst": 553,
+     "nivel": 30,
+     "iv": 165,
+     "iv31": 20,
+     "item": "Sitrus Berry",
+     "golpes": [
+      {
+       "nome": "Double Edge",
+       "tipo": "Normal",
+       "poder": 120
+      },
+      {
+       "nome": "Karate Chop",
+       "tipo": "Fighting",
+       "poder": 50
+      },
+      {
+       "nome": "Protect",
        "tipo": "Normal",
        "poder": null
       },
       {
-       "nome": "Facade",
-       "tipo": "Normal",
-       "poder": 70
-      },
-      {
-       "nome": "Headbutt",
-       "tipo": "Normal",
-       "poder": 70
+       "nome": "Water Pulse",
+       "tipo": "Water",
+       "poder": 60
       }
      ]
     },
@@ -6692,29 +6825,29 @@
      ],
      "bst": 555,
      "nivel": 31,
-     "iv": 250,
-     "iv31": 30,
-     "item": "Sitrus Berry",
+     "iv": 255,
+     "iv31": 31,
+     "item": "Silk Scarf",
      "golpes": [
       {
-       "nome": "Counter",
-       "tipo": "Fighting",
-       "poder": 1
-      },
-      {
-       "nome": "Yawn",
+       "nome": "Double Edge",
        "tipo": "Normal",
-       "poder": null
+       "poder": 120
       },
       {
-       "nome": "Facade",
-       "tipo": "Normal",
-       "poder": 70
+       "nome": "Shadow Ball",
+       "tipo": "Ghost",
+       "poder": 80
       },
       {
-       "nome": "Faint Attack",
-       "tipo": "Dark",
+       "nome": "Dig",
+       "tipo": "Ground",
        "poder": 60
+      },
+      {
+       "nome": "Taunt",
+       "tipo": "Dark",
+       "poder": null
       }
      ]
     }
@@ -6735,30 +6868,30 @@
       "Normal"
      ],
      "bst": 445,
-     "nivel": 29,
-     "iv": 210,
-     "iv31": 25,
-     "item": "None",
+     "nivel": 31,
+     "iv": 116,
+     "iv31": 14,
+     "item": "Sitrus Berry",
      "golpes": [
       {
-       "nome": "Perish Song",
-       "tipo": "Normal",
-       "poder": null
+       "nome": "Drill Peck",
+       "tipo": "Flying",
+       "poder": 80
       },
       {
-       "nome": "Mirror Move",
+       "nome": "Double Edge",
+       "tipo": "Normal",
+       "poder": 120
+      },
+      {
+       "nome": "Steel Wing",
+       "tipo": "Steel",
+       "poder": 70
+      },
+      {
+       "nome": "Feather Dance",
        "tipo": "Flying",
        "poder": null
-      },
-      {
-       "nome": "Safeguard",
-       "tipo": "Normal",
-       "poder": null
-      },
-      {
-       "nome": "Aerial Ace",
-       "tipo": "Flying",
-       "poder": 60
       }
      ]
     },
@@ -6770,29 +6903,29 @@
       "Fire"
      ],
      "bst": 550,
-     "nivel": 29,
-     "iv": 210,
-     "iv31": 25,
-     "item": "None",
+     "nivel": 31,
+     "iv": 124,
+     "iv31": 15,
+     "item": "White Herb",
      "golpes": [
       {
-       "nome": "Sunny Day",
-       "tipo": "Fire",
-       "poder": null
-      },
-      {
-       "nome": "Aerial Ace",
+       "nome": "Drill Peck",
        "tipo": "Flying",
-       "poder": 60
+       "poder": 80
       },
       {
-       "nome": "Solar Beam",
-       "tipo": "Grass",
-       "poder": 120
+       "nome": "Flamethrower",
+       "tipo": "Fire",
+       "poder": 95
       },
       {
-       "nome": "Synthesis",
-       "tipo": "Grass",
+       "nome": "Steel Wing",
+       "tipo": "Steel",
+       "poder": 70
+      },
+      {
+       "nome": "Feather Dance",
+       "tipo": "Flying",
        "poder": null
       }
      ]
@@ -6805,30 +6938,30 @@
       "Fairy"
      ],
      "bst": 448,
-     "nivel": 30,
-     "iv": 210,
-     "iv31": 25,
-     "item": "None",
+     "nivel": 32,
+     "iv": 140,
+     "iv31": 17,
+     "item": "Bright Powder",
      "golpes": [
       {
-       "nome": "Water Gun",
-       "tipo": "Water",
+       "nome": "Wing Attack",
+       "tipo": "Flying",
+       "poder": 60
+      },
+      {
+       "nome": "Fairy Wind",
+       "tipo": "Fairy",
        "poder": 40
       },
       {
-       "nome": "Supersonic",
-       "tipo": "Normal",
-       "poder": null
+       "nome": "Steel Wing",
+       "tipo": "Steel",
+       "poder": 70
       },
       {
-       "nome": "Protect",
-       "tipo": "Normal",
+       "nome": "Toxic",
+       "tipo": "Poison",
        "poder": null
-      },
-      {
-       "nome": "Aerial Ace",
-       "tipo": "Flying",
-       "poder": 60
       }
      ]
     },
@@ -6840,20 +6973,20 @@
       "Flying"
      ],
      "bst": 461,
-     "nivel": 31,
-     "iv": 220,
-     "iv31": 26,
-     "item": "None",
+     "nivel": 32,
+     "iv": 181,
+     "iv31": 22,
+     "item": "Sitrus Berry",
      "golpes": [
       {
-       "nome": "Sand Attack",
-       "tipo": "Ground",
-       "poder": null
+       "nome": "Drill Peck",
+       "tipo": "Flying",
+       "poder": 80
       },
       {
-       "nome": "Fury Attack",
-       "tipo": "Normal",
-       "poder": 15
+       "nome": "Faint Attack",
+       "tipo": "Dark",
+       "poder": 60
       },
       {
        "nome": "Steel Wing",
@@ -6861,9 +6994,9 @@
        "poder": 70
       },
       {
-       "nome": "Aerial Ace",
-       "tipo": "Flying",
-       "poder": 60
+       "nome": "Toxic",
+       "tipo": "Poison",
+       "poder": null
       }
      ]
     },
@@ -6878,27 +7011,27 @@
      "nivel": 33,
      "iv": 255,
      "iv31": 31,
-     "item": "Oran Berry",
+     "item": "Sharp Beak",
      "golpes": [
       {
-       "nome": "Earthquake",
-       "tipo": "Ground",
-       "poder": 100
-      },
-      {
-       "nome": "Dragon Breath",
-       "tipo": "Dragon",
-       "poder": 60
-      },
-      {
-       "nome": "Dragon Dance",
-       "tipo": "Dragon",
-       "poder": null
-      },
-      {
-       "nome": "Aerial Ace",
+       "nome": "Drill Peck",
        "tipo": "Flying",
-       "poder": 60
+       "poder": 80
+      },
+      {
+       "nome": "Dragon Claw",
+       "tipo": "Dragon",
+       "poder": 80
+      },
+      {
+       "nome": "Steel Wing",
+       "tipo": "Steel",
+       "poder": 70
+      },
+      {
+       "nome": "Agility",
+       "tipo": "Psychic",
+       "poder": null
       }
      ]
     }
@@ -6912,76 +7045,6 @@
    "teto": 42,
    "time": [
     {
-     "dex": 265,
-     "nome": "Preto-Velho",
-     "tipos": [
-      "Ghost",
-      "Psychic"
-     ],
-     "bst": 604,
-     "nivel": 41,
-     "iv": 250,
-     "iv31": 30,
-     "item": "None",
-     "golpes": [
-      {
-       "nome": "Earthquake",
-       "tipo": "Ground",
-       "poder": 100
-      },
-      {
-       "nome": "Ancient Power",
-       "tipo": "Rock",
-       "poder": 60
-      },
-      {
-       "nome": "Psychic",
-       "tipo": "Psychic",
-       "poder": 90
-      },
-      {
-       "nome": "Light Screen",
-       "tipo": "Psychic",
-       "poder": null
-      }
-     ]
-    },
-    {
-     "dex": 39,
-     "nome": "Bicho-Preguiça",
-     "tipos": [
-      "Grass",
-      "Psychic"
-     ],
-     "bst": 551,
-     "nivel": 41,
-     "iv": 250,
-     "iv31": 30,
-     "item": "None",
-     "golpes": [
-      {
-       "nome": "Psychic",
-       "tipo": "Psychic",
-       "poder": 90
-      },
-      {
-       "nome": "Sunny Day",
-       "tipo": "Fire",
-       "poder": null
-      },
-      {
-       "nome": "Confuse Ray",
-       "tipo": "Ghost",
-       "poder": null
-      },
-      {
-       "nome": "Calm Mind",
-       "tipo": "Psychic",
-       "poder": null
-      }
-     ]
-    },
-    {
      "dex": 247,
      "nome": "Rudá",
      "tipos": [
@@ -6989,25 +7052,25 @@
       "Psychic"
      ],
      "bst": 449,
-     "nivel": 42,
-     "iv": 250,
-     "iv31": 30,
+     "nivel": 40,
+     "iv": 132,
+     "iv31": 16,
      "item": "Sitrus Berry",
      "golpes": [
-      {
-       "nome": "Light Screen",
-       "tipo": "Psychic",
-       "poder": null
-      },
       {
        "nome": "Psychic",
        "tipo": "Psychic",
        "poder": 90
       },
       {
-       "nome": "Hypnosis",
-       "tipo": "Psychic",
-       "poder": null
+       "nome": "Dazzling Gleam",
+       "tipo": "Fairy",
+       "poder": 80
+      },
+      {
+       "nome": "Shadow Ball",
+       "tipo": "Ghost",
+       "poder": 80
       },
       {
        "nome": "Calm Mind",
@@ -7024,30 +7087,170 @@
       "Psychic"
      ],
      "bst": 449,
-     "nivel": 42,
-     "iv": 250,
-     "iv31": 30,
+     "nivel": 40,
+     "iv": 132,
+     "iv31": 16,
      "item": "Sitrus Berry",
      "golpes": [
-      {
-       "nome": "Sunny Day",
-       "tipo": "Fire",
-       "poder": null
-      },
-      {
-       "nome": "Solar Beam",
-       "tipo": "Grass",
-       "poder": 120
-      },
       {
        "nome": "Psychic",
        "tipo": "Psychic",
        "poder": 90
       },
       {
+       "nome": "Crunch",
+       "tipo": "Dark",
+       "poder": 80
+      },
+      {
+       "nome": "Reflect",
+       "tipo": "Psychic",
+       "poder": null
+      },
+      {
+       "nome": "Taunt",
+       "tipo": "Dark",
+       "poder": null
+      }
+     ]
+    },
+    {
+     "dex": 164,
+     "nome": "Coruja",
+     "tipos": [
+      "Flying",
+      "Psychic"
+     ],
+     "bst": 554,
+     "nivel": 41,
+     "iv": 149,
+     "iv31": 18,
+     "item": "Lum Berry",
+     "golpes": [
+      {
+       "nome": "Psychic",
+       "tipo": "Psychic",
+       "poder": 90
+      },
+      {
+       "nome": "Wing Attack",
+       "tipo": "Flying",
+       "poder": 60
+      },
+      {
        "nome": "Flamethrower",
        "tipo": "Fire",
        "poder": 95
+      },
+      {
+       "nome": "Calm Mind",
+       "tipo": "Psychic",
+       "poder": null
+      }
+     ]
+    },
+    {
+     "dex": 199,
+     "nome": "Ametista",
+     "tipos": [
+      "Rock",
+      "Psychic"
+     ],
+     "bst": 552,
+     "nivel": 41,
+     "iv": 149,
+     "iv31": 18,
+     "item": "Sitrus Berry",
+     "golpes": [
+      {
+       "nome": "Psychic",
+       "tipo": "Psychic",
+       "poder": 90
+      },
+      {
+       "nome": "Ancient Power",
+       "tipo": "Rock",
+       "poder": 60
+      },
+      {
+       "nome": "Shadow Ball",
+       "tipo": "Ghost",
+       "poder": 80
+      },
+      {
+       "nome": "Calm Mind",
+       "tipo": "Psychic",
+       "poder": null
+      }
+     ]
+    },
+    {
+     "dex": 39,
+     "nome": "Bicho-Preguiça",
+     "tipos": [
+      "Grass",
+      "Psychic"
+     ],
+     "bst": 551,
+     "nivel": 42,
+     "iv": 214,
+     "iv31": 26,
+     "item": "Leftovers",
+     "golpes": [
+      {
+       "nome": "Psychic",
+       "tipo": "Psychic",
+       "poder": 90
+      },
+      {
+       "nome": "Giga Drain",
+       "tipo": "Grass",
+       "poder": 60
+      },
+      {
+       "nome": "Sludge Bomb",
+       "tipo": "Poison",
+       "poder": 90
+      },
+      {
+       "nome": "Light Screen",
+       "tipo": "Psychic",
+       "poder": null
+      }
+     ]
+    },
+    {
+     "dex": 265,
+     "nome": "Preto-Velho",
+     "tipos": [
+      "Ghost",
+      "Psychic"
+     ],
+     "bst": 604,
+     "nivel": 42,
+     "iv": 255,
+     "iv31": 31,
+     "item": "Twisted Spoon",
+     "golpes": [
+      {
+       "nome": "Psychic",
+       "tipo": "Psychic",
+       "poder": 90
+      },
+      {
+       "nome": "Shadow Ball",
+       "tipo": "Ghost",
+       "poder": 80
+      },
+      {
+       "nome": "Thunderbolt",
+       "tipo": "Electric",
+       "poder": 95
+      },
+      {
+       "nome": "Calm Mind",
+       "tipo": "Psychic",
+       "poder": null
       }
      ]
     }
@@ -7068,30 +7271,30 @@
       "Normal"
      ],
      "bst": 445,
-     "nivel": 41,
-     "iv": 200,
-     "iv31": 24,
-     "item": "None",
+     "nivel": 44,
+     "iv": 149,
+     "iv31": 18,
+     "item": "Sitrus Berry",
      "golpes": [
       {
-       "nome": "Water Pulse",
+       "nome": "Surf",
        "tipo": "Water",
-       "poder": 60
+       "poder": 95
       },
       {
-       "nome": "Attract",
+       "nome": "Body Slam",
        "tipo": "Normal",
-       "poder": null
+       "poder": 85
       },
       {
-       "nome": "Sweet Kiss",
-       "tipo": "Fairy",
-       "poder": null
+       "nome": "Ice Beam",
+       "tipo": "Ice",
+       "poder": 95
       },
       {
-       "nome": "Flail",
-       "tipo": "Normal",
-       "poder": 1
+       "nome": "Rain Dance",
+       "tipo": "Water",
+       "poder": null
       }
      ]
     },
@@ -7103,30 +7306,30 @@
       "Water"
      ],
      "bst": 472,
-     "nivel": 41,
-     "iv": 200,
-     "iv31": 24,
-     "item": "None",
+     "nivel": 44,
+     "iv": 157,
+     "iv31": 19,
+     "item": "Sitrus Berry",
      "golpes": [
+      {
+       "nome": "Surf",
+       "tipo": "Water",
+       "poder": 95
+      },
+      {
+       "nome": "Dazzling Gleam",
+       "tipo": "Fairy",
+       "poder": 80
+      },
+      {
+       "nome": "Ice Beam",
+       "tipo": "Ice",
+       "poder": 95
+      },
       {
        "nome": "Rain Dance",
        "tipo": "Water",
        "poder": null
-      },
-      {
-       "nome": "Water Pulse",
-       "tipo": "Water",
-       "poder": 60
-      },
-      {
-       "nome": "Amnesia",
-       "tipo": "Psychic",
-       "poder": null
-      },
-      {
-       "nome": "Earthquake",
-       "tipo": "Ground",
-       "poder": 100
       }
      ]
     },
@@ -7138,15 +7341,15 @@
       "Normal"
      ],
      "bst": 444,
-     "nivel": 43,
-     "iv": 200,
-     "iv31": 24,
-     "item": "None",
+     "nivel": 45,
+     "iv": 173,
+     "iv31": 21,
+     "item": "Sitrus Berry",
      "golpes": [
       {
-       "nome": "Encore",
-       "tipo": "Normal",
-       "poder": null
+       "nome": "Surf",
+       "tipo": "Water",
+       "poder": 95
       },
       {
        "nome": "Body Slam",
@@ -7154,14 +7357,14 @@
        "poder": 85
       },
       {
-       "nome": "Aurora Beam",
+       "nome": "Ice Beam",
        "tipo": "Ice",
-       "poder": 65
+       "poder": 95
       },
       {
-       "nome": "Water Pulse",
-       "tipo": "Water",
-       "poder": 60
+       "nome": "Protect",
+       "tipo": "Normal",
+       "poder": null
       }
      ]
     },
@@ -7173,29 +7376,29 @@
       "Poison"
      ],
      "bst": 480,
-     "nivel": 43,
-     "iv": 200,
+     "nivel": 45,
+     "iv": 198,
      "iv31": 24,
-     "item": "None",
+     "item": "Lum Berry",
      "golpes": [
       {
-       "nome": "Water Pulse",
+       "nome": "Surf",
        "tipo": "Water",
-       "poder": 60
+       "poder": 95
       },
       {
-       "nome": "Crabhammer",
-       "tipo": "Water",
+       "nome": "Sludge Bomb",
+       "tipo": "Poison",
        "poder": 90
       },
       {
-       "nome": "Taunt",
-       "tipo": "Dark",
-       "poder": null
+       "nome": "Ice Beam",
+       "tipo": "Ice",
+       "poder": 95
       },
       {
-       "nome": "Leer",
-       "tipo": "Normal",
+       "nome": "Toxic",
+       "tipo": "Poison",
        "poder": null
       }
      ]
@@ -7209,19 +7412,19 @@
      ],
      "bst": 607,
      "nivel": 46,
-     "iv": 250,
-     "iv31": 30,
-     "item": "Chesto Berry",
+     "iv": 255,
+     "iv31": 31,
+     "item": "Mystic Water",
      "golpes": [
       {
-       "nome": "Water Pulse",
+       "nome": "Surf",
        "tipo": "Water",
-       "poder": 60
+       "poder": 95
       },
       {
-       "nome": "Double Team",
-       "tipo": "Normal",
-       "poder": null
+       "nome": "Outrage",
+       "tipo": "Dragon",
+       "poder": 90
       },
       {
        "nome": "Ice Beam",
@@ -7229,8 +7432,8 @@
        "poder": 95
       },
       {
-       "nome": "Rest",
-       "tipo": "Psychic",
+       "nome": "Rain Dance",
+       "tipo": "Water",
        "poder": null
       }
      ]
@@ -7252,30 +7455,30 @@
       "Dark"
      ],
      "bst": 448,
-     "nivel": 46,
-     "iv": 250,
-     "iv31": 30,
-     "item": "None",
+     "nivel": 47,
+     "iv": 181,
+     "iv31": 22,
+     "item": "Sitrus Berry",
      "golpes": [
-      {
-       "nome": "Roar",
-       "tipo": "Normal",
-       "poder": null
-      },
-      {
-       "nome": "Double Edge",
-       "tipo": "Normal",
-       "poder": 120
-      },
-      {
-       "nome": "Sand Attack",
-       "tipo": "Ground",
-       "poder": null
-      },
       {
        "nome": "Crunch",
        "tipo": "Dark",
        "poder": 80
+      },
+      {
+       "nome": "Surf",
+       "tipo": "Water",
+       "poder": 95
+      },
+      {
+       "nome": "Rock Tomb",
+       "tipo": "Rock",
+       "poder": 50
+      },
+      {
+       "nome": "Taunt",
+       "tipo": "Dark",
+       "poder": null
       }
      ]
     },
@@ -7287,30 +7490,30 @@
       "Dark"
      ],
      "bst": 554,
-     "nivel": 48,
-     "iv": 250,
-     "iv31": 30,
-     "item": "None",
+     "nivel": 47,
+     "iv": 190,
+     "iv31": 23,
+     "item": "Sitrus Berry",
      "golpes": [
       {
-       "nome": "Torment",
+       "nome": "Crunch",
        "tipo": "Dark",
-       "poder": null
-      },
-      {
-       "nome": "Double Team",
-       "tipo": "Normal",
-       "poder": null
-      },
-      {
-       "nome": "Swagger",
-       "tipo": "Normal",
-       "poder": null
-      },
-      {
-       "nome": "Extrasensory",
-       "tipo": "Psychic",
        "poder": 80
+      },
+      {
+       "nome": "Double Edge",
+       "tipo": "Normal",
+       "poder": 120
+      },
+      {
+       "nome": "Steel Wing",
+       "tipo": "Steel",
+       "poder": 70
+      },
+      {
+       "nome": "Aerial Ace",
+       "tipo": "Flying",
+       "poder": 60
       }
      ]
     },
@@ -7321,30 +7524,30 @@
       "Dark"
      ],
      "bst": 524,
-     "nivel": 46,
-     "iv": 250,
-     "iv31": 30,
-     "item": "None",
+     "nivel": 48,
+     "iv": 206,
+     "iv31": 25,
+     "item": "Scope Lens",
      "golpes": [
       {
-       "nome": "Leech Seed",
-       "tipo": "Grass",
-       "poder": null
-      },
-      {
-       "nome": "Faint Attack",
+       "nome": "Crunch",
        "tipo": "Dark",
-       "poder": 60
+       "poder": 80
       },
       {
-       "nome": "Needle Arm",
-       "tipo": "Grass",
-       "poder": 60
+       "nome": "Iron Tail",
+       "tipo": "Steel",
+       "poder": 100
       },
       {
-       "nome": "Cotton Spore",
-       "tipo": "Grass",
+       "nome": "Taunt",
+       "tipo": "Dark",
        "poder": null
+      },
+      {
+       "nome": "Double Edge",
+       "tipo": "Normal",
+       "poder": 120
       }
      ]
     },
@@ -7357,29 +7560,29 @@
      ],
      "bst": 498,
      "nivel": 48,
-     "iv": 250,
-     "iv31": 30,
-     "item": "None",
+     "iv": 223,
+     "iv31": 27,
+     "item": "Lum Berry",
      "golpes": [
+      {
+       "nome": "Crunch",
+       "tipo": "Dark",
+       "poder": 80
+      },
       {
        "nome": "Surf",
        "tipo": "Water",
        "poder": 95
       },
       {
-       "nome": "Swords Dance",
-       "tipo": "Normal",
+       "nome": "Torment",
+       "tipo": "Dark",
        "poder": null
       },
       {
-       "nome": "Strength",
+       "nome": "Whirlwind",
        "tipo": "Normal",
-       "poder": 80
-      },
-      {
-       "nome": "Facade",
-       "tipo": "Normal",
-       "poder": 70
+       "poder": null
       }
      ]
     },
@@ -7394,27 +7597,27 @@
      "nivel": 49,
      "iv": 255,
      "iv31": 31,
-     "item": "Sitrus Berry",
+     "item": "Black Glasses",
      "golpes": [
       {
-       "nome": "Aerial Ace",
-       "tipo": "Flying",
-       "poder": 60
+       "nome": "Crunch",
+       "tipo": "Dark",
+       "poder": 80
       },
       {
-       "nome": "Rock Slide",
-       "tipo": "Rock",
-       "poder": 75
-      },
-      {
-       "nome": "Swords Dance",
+       "nome": "Double Edge",
        "tipo": "Normal",
+       "poder": 120
+      },
+      {
+       "nome": "Fire Blast",
+       "tipo": "Fire",
+       "poder": 120
+      },
+      {
+       "nome": "Taunt",
+       "tipo": "Dark",
        "poder": null
-      },
-      {
-       "nome": "Slash",
-       "tipo": "Normal",
-       "poder": 70
       }
      ]
     }
@@ -7433,15 +7636,20 @@
       "Ghost"
      ],
      "bst": 449,
-     "nivel": 48,
-     "iv": 250,
-     "iv31": 30,
-     "item": "None",
+     "nivel": 49,
+     "iv": 190,
+     "iv31": 23,
+     "item": "Sitrus Berry",
      "golpes": [
       {
-       "nome": "Shadow Punch",
+       "nome": "Shadow Ball",
        "tipo": "Ghost",
-       "poder": 60
+       "poder": 80
+      },
+      {
+       "nome": "Crunch",
+       "tipo": "Dark",
+       "poder": 80
       },
       {
        "nome": "Confuse Ray",
@@ -7452,26 +7660,21 @@
        "nome": "Curse",
        "tipo": "Mystery",
        "poder": null
-      },
-      {
-       "nome": "Protect",
-       "tipo": "Normal",
-       "poder": null
       }
      ]
     },
     {
-     "dex": 239,
-     "nome": "Mão-Peluda",
+     "dex": 254,
+     "nome": "Pisadeira",
      "tipos": [
       "Ghost",
       "Fighting"
      ],
-     "bst": 449,
+     "bst": 446,
      "nivel": 49,
-     "iv": 250,
-     "iv31": 30,
-     "item": "None",
+     "iv": 198,
+     "iv31": 24,
+     "item": "Sitrus Berry",
      "golpes": [
       {
        "nome": "Shadow Ball",
@@ -7479,19 +7682,19 @@
        "poder": 80
       },
       {
-       "nome": "Grudge",
+       "nome": "Sky Uppercut",
+       "tipo": "Fighting",
+       "poder": 85
+      },
+      {
+       "nome": "Confuse Ray",
        "tipo": "Ghost",
        "poder": null
       },
       {
-       "nome": "Will O Wisp",
-       "tipo": "Fire",
-       "poder": null
-      },
-      {
-       "nome": "Faint Attack",
-       "tipo": "Dark",
-       "poder": 60
+       "nome": "Psychic",
+       "tipo": "Psychic",
+       "poder": 90
       }
      ]
     },
@@ -7504,9 +7707,9 @@
      ],
      "bst": 446,
      "nivel": 50,
-     "iv": 250,
-     "iv31": 30,
-     "item": "None",
+     "iv": 214,
+     "iv31": 26,
+     "item": "Lum Berry",
      "golpes": [
       {
        "nome": "Shadow Ball",
@@ -7514,34 +7717,34 @@
        "poder": 80
       },
       {
-       "nome": "Double Team",
+       "nome": "Double Edge",
        "tipo": "Normal",
+       "poder": 120
+      },
+      {
+       "nome": "Curse",
+       "tipo": "Mystery",
        "poder": null
       },
       {
-       "nome": "Night Shade",
-       "tipo": "Ghost",
-       "poder": 1
-      },
-      {
-       "nome": "Faint Attack",
-       "tipo": "Dark",
-       "poder": 60
+       "nome": "Sludge Bomb",
+       "tipo": "Poison",
+       "poder": 90
       }
      ]
     },
     {
-     "dex": 54,
-     "nome": "Guaraflama",
+     "dex": 234,
+     "nome": "Loirinha",
      "tipos": [
-      "Fire",
-      "Ghost"
+      "Ghost",
+      "Fairy"
      ],
-     "bst": 448,
-     "nivel": 49,
-     "iv": 250,
-     "iv31": 30,
-     "item": "None",
+     "bst": 445,
+     "nivel": 50,
+     "iv": 231,
+     "iv31": 28,
+     "item": "Bright Powder",
      "golpes": [
       {
        "nome": "Shadow Ball",
@@ -7549,9 +7752,9 @@
        "poder": 80
       },
       {
-       "nome": "Psychic",
-       "tipo": "Psychic",
-       "poder": 90
+       "nome": "Dazzling Gleam",
+       "tipo": "Fairy",
+       "poder": 80
       },
       {
        "nome": "Thunderbolt",
@@ -7559,24 +7762,24 @@
        "poder": 95
       },
       {
-       "nome": "Facade",
-       "tipo": "Normal",
-       "poder": 70
+       "nome": "Destiny Bond",
+       "tipo": "Ghost",
+       "poder": null
       }
      ]
     },
     {
-     "dex": 241,
-     "nome": "Comadre",
+     "dex": 289,
+     "nome": "Anhangaú",
      "tipos": [
       "Ghost",
-      "Fairy"
+      "Grass"
      ],
-     "bst": 448,
+     "bst": 603,
      "nivel": 51,
      "iv": 255,
      "iv31": 31,
-     "item": "Sitrus Berry",
+     "item": "Spell Tag",
      "golpes": [
       {
        "nome": "Shadow Ball",
@@ -7584,19 +7787,19 @@
        "poder": 80
       },
       {
-       "nome": "Ice Beam",
-       "tipo": "Ice",
+       "nome": "Giga Drain",
+       "tipo": "Grass",
+       "poder": 60
+      },
+      {
+       "nome": "Thunderbolt",
+       "tipo": "Electric",
        "poder": 95
       },
       {
-       "nome": "Rock Slide",
-       "tipo": "Rock",
-       "poder": 75
-      },
-      {
-       "nome": "Earthquake",
-       "tipo": "Ground",
-       "poder": 100
+       "nome": "Leech Seed",
+       "tipo": "Grass",
+       "poder": null
       }
      ]
     }
@@ -7615,65 +7818,30 @@
       "Steel"
      ],
      "bst": 444,
-     "nivel": 50,
-     "iv": 250,
-     "iv31": 30,
-     "item": "None",
+     "nivel": 51,
+     "iv": 198,
+     "iv31": 24,
+     "item": "Sitrus Berry",
      "golpes": [
       {
-       "nome": "Encore",
-       "tipo": "Normal",
-       "poder": null
+       "nome": "Meteor Mash",
+       "tipo": "Steel",
+       "poder": 100
       },
       {
-       "nome": "Body Slam",
-       "tipo": "Normal",
-       "poder": 85
-      },
-      {
-       "nome": "Hail",
-       "tipo": "Ice",
-       "poder": null
-      },
-      {
-       "nome": "Ice Ball",
-       "tipo": "Ice",
-       "poder": 30
-      }
-     ]
-    },
-    {
-     "dex": 30,
-     "nome": "Tatuçu",
-     "tipos": [
-      "Ground",
-      "Steel"
-     ],
-     "bst": 555,
-     "nivel": 50,
-     "iv": 250,
-     "iv31": 30,
-     "item": "None",
-     "golpes": [
-      {
-       "nome": "Light Screen",
-       "tipo": "Psychic",
-       "poder": null
-      },
-      {
-       "nome": "Crunch",
-       "tipo": "Dark",
-       "poder": 80
-      },
-      {
-       "nome": "Icy Wind",
-       "tipo": "Ice",
-       "poder": 55
-      },
-      {
-       "nome": "Ice Beam",
-       "tipo": "Ice",
+       "nome": "Surf",
+       "tipo": "Water",
        "poder": 95
+      },
+      {
+       "nome": "Earthquake",
+       "tipo": "Ground",
+       "poder": 100
+      },
+      {
+       "nome": "Iron Defense",
+       "tipo": "Steel",
+       "poder": null
       }
      ]
     },
@@ -7685,65 +7853,30 @@
       "Ground"
      ],
      "bst": 445,
-     "nivel": 52,
-     "iv": 250,
-     "iv31": 30,
-     "item": "None",
+     "nivel": 51,
+     "iv": 206,
+     "iv31": 25,
+     "item": "Leftovers",
      "golpes": [
       {
-       "nome": "Attract",
-       "tipo": "Normal",
+       "nome": "Meteor Mash",
+       "tipo": "Steel",
+       "poder": 100
+      },
+      {
+       "nome": "Earthquake",
+       "tipo": "Ground",
+       "poder": 100
+      },
+      {
+       "nome": "Aerial Ace",
+       "tipo": "Flying",
+       "poder": 60
+      },
+      {
+       "nome": "Iron Defense",
+       "tipo": "Steel",
        "poder": null
-      },
-      {
-       "nome": "Double Edge",
-       "tipo": "Normal",
-       "poder": 120
-      },
-      {
-       "nome": "Hail",
-       "tipo": "Ice",
-       "poder": null
-      },
-      {
-       "nome": "Blizzard",
-       "tipo": "Ice",
-       "poder": 120
-      }
-     ]
-    },
-    {
-     "dex": 110,
-     "nome": "Ogum",
-     "tipos": [
-      "Steel",
-      "Fire"
-     ],
-     "bst": 602,
-     "nivel": 52,
-     "iv": 250,
-     "iv31": 30,
-     "item": "None",
-     "golpes": [
-      {
-       "nome": "Shadow Ball",
-       "tipo": "Ghost",
-       "poder": 80
-      },
-      {
-       "nome": "Explosion",
-       "tipo": "Normal",
-       "poder": 250
-      },
-      {
-       "nome": "Hail",
-       "tipo": "Ice",
-       "poder": null
-      },
-      {
-       "nome": "Ice Beam",
-       "tipo": "Ice",
-       "poder": 95
       }
      ]
     },
@@ -7755,30 +7888,100 @@
       "Steel"
      ],
      "bst": 470,
-     "nivel": 53,
-     "iv": 255,
-     "iv31": 31,
+     "nivel": 52,
+     "iv": 223,
+     "iv31": 27,
      "item": "Sitrus Berry",
      "golpes": [
       {
-       "nome": "Surf",
-       "tipo": "Water",
-       "poder": 95
+       "nome": "Meteor Mash",
+       "tipo": "Steel",
+       "poder": 100
       },
       {
-       "nome": "Body Slam",
+       "nome": "Earthquake",
+       "tipo": "Ground",
+       "poder": 100
+      },
+      {
+       "nome": "Aerial Ace",
+       "tipo": "Flying",
+       "poder": 60
+      },
+      {
+       "nome": "Swords Dance",
        "tipo": "Normal",
-       "poder": 85
+       "poder": null
+      }
+     ]
+    },
+    {
+     "dex": 30,
+     "nome": "Tatuçu",
+     "tipos": [
+      "Ground",
+      "Steel"
+     ],
+     "bst": 555,
+     "nivel": 52,
+     "iv": 239,
+     "iv31": 29,
+     "item": "Lum Berry",
+     "golpes": [
+      {
+       "nome": "Meteor Mash",
+       "tipo": "Steel",
+       "poder": 100
       },
       {
-       "nome": "Ice Beam",
-       "tipo": "Ice",
+       "nome": "Earthquake",
+       "tipo": "Ground",
+       "poder": 100
+      },
+      {
+       "nome": "Rock Tomb",
+       "tipo": "Rock",
+       "poder": 50
+      },
+      {
+       "nome": "Iron Defense",
+       "tipo": "Steel",
+       "poder": null
+      }
+     ]
+    },
+    {
+     "dex": 110,
+     "nome": "Ogum",
+     "tipos": [
+      "Steel",
+      "Fire"
+     ],
+     "bst": 602,
+     "nivel": 53,
+     "iv": 255,
+     "iv31": 31,
+     "item": "Metal Coat",
+     "golpes": [
+      {
+       "nome": "Forja De Ogum",
+       "tipo": "Steel",
+       "poder": 90
+      },
+      {
+       "nome": "Flamethrower",
+       "tipo": "Fire",
        "poder": 95
       },
       {
-       "nome": "Sheer Cold",
-       "tipo": "Ice",
-       "poder": 1
+       "nome": "Iron Defense",
+       "tipo": "Steel",
+       "poder": null
+      },
+      {
+       "nome": "Thunderbolt",
+       "tipo": "Electric",
+       "poder": 95
       }
      ]
     }
@@ -7790,37 +7993,37 @@
    "teto": 55,
    "time": [
     {
-     "dex": 211,
-     "nome": "Fóssil",
+     "dex": 122,
+     "nome": "Pirarucu",
      "tipos": [
-      "Rock",
+      "Water",
       "Dragon"
      ],
-     "bst": 448,
-     "nivel": 52,
-     "iv": 250,
-     "iv31": 30,
-     "item": "None",
+     "bst": 552,
+     "nivel": 53,
+     "iv": 206,
+     "iv31": 25,
+     "item": "Sitrus Berry",
      "golpes": [
       {
-       "nome": "Rock Tomb",
-       "tipo": "Rock",
-       "poder": 50
-      },
-      {
-       "nome": "Dragon Claw",
+       "nome": "Outrage",
        "tipo": "Dragon",
-       "poder": 80
+       "poder": 90
       },
       {
-       "nome": "Protect",
-       "tipo": "Normal",
-       "poder": null
-      },
-      {
-       "nome": "Double Edge",
-       "tipo": "Normal",
+       "nome": "Hydro Pump",
+       "tipo": "Water",
        "poder": 120
+      },
+      {
+       "nome": "Ice Beam",
+       "tipo": "Ice",
+       "poder": 95
+      },
+      {
+       "nome": "Dragon Dance",
+       "tipo": "Dragon",
+       "poder": null
       }
      ]
     },
@@ -7832,55 +8035,15 @@
       "Dragon"
      ],
      "bst": 551,
-     "nivel": 54,
-     "iv": 250,
-     "iv31": 30,
-     "item": "None",
-     "golpes": [
-      {
-       "nome": "Double Edge",
-       "tipo": "Normal",
-       "poder": 120
-      },
-      {
-       "nome": "Dragon Breath",
-       "tipo": "Dragon",
-       "poder": 60
-      },
-      {
-       "nome": "Dragon Dance",
-       "tipo": "Dragon",
-       "poder": null
-      },
-      {
-       "nome": "Aerial Ace",
-       "tipo": "Flying",
-       "poder": 60
-      }
-     ]
-    },
-    {
-     "dex": 280,
-     "nome": "Sucuriaçu",
-     "tipos": [
-      "Water",
-      "Dragon"
-     ],
-     "bst": 607,
      "nivel": 53,
-     "iv": 250,
-     "iv31": 30,
-     "item": "None",
+     "iv": 214,
+     "iv31": 26,
+     "item": "Lum Berry",
      "golpes": [
       {
-       "nome": "Smokescreen",
-       "tipo": "Normal",
-       "poder": null
-      },
-      {
-       "nome": "Dragon Dance",
+       "nome": "Outrage",
        "tipo": "Dragon",
-       "poder": null
+       "poder": 90
       },
       {
        "nome": "Surf",
@@ -7888,69 +8051,34 @@
        "poder": 95
       },
       {
-       "nome": "Body Slam",
+       "nome": "Ice Beam",
+       "tipo": "Ice",
+       "poder": 95
+      },
+      {
+       "nome": "Protect",
        "tipo": "Normal",
-       "poder": 85
+       "poder": null
       }
      ]
     },
     {
-     "dex": 122,
-     "nome": "Pirarucu",
+     "dex": 297,
+     "nome": "Corcovado-Ancião",
      "tipos": [
-      "Water",
+      "Rock",
       "Dragon"
      ],
-     "bst": 552,
-     "nivel": 53,
-     "iv": 250,
-     "iv31": 30,
-     "item": "None",
+     "bst": 602,
+     "nivel": 54,
+     "iv": 231,
+     "iv31": 28,
+     "item": "Leftovers",
      "golpes": [
       {
-       "nome": "Flamethrower",
-       "tipo": "Fire",
-       "poder": 95
-      },
-      {
-       "nome": "Crunch",
-       "tipo": "Dark",
-       "poder": 80
-      },
-      {
-       "nome": "Dragon Breath",
+       "nome": "Outrage",
        "tipo": "Dragon",
-       "poder": 60
-      },
-      {
-       "nome": "Earthquake",
-       "tipo": "Ground",
-       "poder": 100
-      }
-     ]
-    },
-    {
-     "dex": 348,
-     "nome": "Arauanamon",
-     "tipos": [
-      "Dragon",
-      "Fairy"
-     ],
-     "bst": 650,
-     "nivel": 55,
-     "iv": 255,
-     "iv31": 31,
-     "item": "Sitrus Berry",
-     "golpes": [
-      {
-       "nome": "Flamethrower",
-       "tipo": "Fire",
-       "poder": 95
-      },
-      {
-       "nome": "Dragon Claw",
-       "tipo": "Dragon",
-       "poder": 80
+       "poder": 90
       },
       {
        "nome": "Rock Slide",
@@ -7958,9 +8086,84 @@
        "poder": 75
       },
       {
-       "nome": "Crunch",
-       "tipo": "Dark",
-       "poder": 80
+       "nome": "Fire Blast",
+       "tipo": "Fire",
+       "poder": 120
+      },
+      {
+       "nome": "Protect",
+       "tipo": "Normal",
+       "poder": null
+      }
+     ]
+    },
+    {
+     "dex": 282,
+     "nome": "Draguará-Alfa",
+     "tipos": [
+      "Fire",
+      "Dragon"
+     ],
+     "bst": 605,
+     "nivel": 54,
+     "iv": 247,
+     "iv31": 30,
+     "item": "Sitrus Berry",
+     "golpes": [
+      {
+       "nome": "Outrage",
+       "tipo": "Dragon",
+       "poder": 90
+      },
+      {
+       "nome": "Heat Wave",
+       "tipo": "Fire",
+       "poder": 100
+      },
+      {
+       "nome": "Iron Tail",
+       "tipo": "Steel",
+       "poder": 100
+      },
+      {
+       "nome": "Dragon Dance",
+       "tipo": "Dragon",
+       "poder": null
+      }
+     ]
+    },
+    {
+     "dex": 291,
+     "nome": "Cobra-Norato",
+     "tipos": [
+      "Water",
+      "Dragon"
+     ],
+     "bst": 607,
+     "nivel": 55,
+     "iv": 255,
+     "iv31": 31,
+     "item": "Dragon Fang",
+     "golpes": [
+      {
+       "nome": "Outrage",
+       "tipo": "Dragon",
+       "poder": 90
+      },
+      {
+       "nome": "Surf",
+       "tipo": "Water",
+       "poder": 95
+      },
+      {
+       "nome": "Ice Beam",
+       "tipo": "Ice",
+       "poder": 95
+      },
+      {
+       "nome": "Olhar Da Cobra Grande",
+       "tipo": "Ghost",
+       "poder": null
       }
      ]
     }
@@ -7972,72 +8175,37 @@
    "teto": 58,
    "time": [
     {
-     "dex": 286,
-     "nome": "Iara-Mãe",
+     "dex": 27,
+     "nome": "Botogaláu",
      "tipos": [
       "Water",
-      "Fairy"
+      "Psychic"
      ],
-     "bst": 602,
-     "nivel": 57,
-     "iv": 255,
-     "iv31": 31,
-     "item": "None",
-     "golpes": [
-      {
-       "nome": "Rain Dance",
-       "tipo": "Water",
-       "poder": null
-      },
-      {
-       "nome": "Water Spout",
-       "tipo": "Water",
-       "poder": 150
-      },
-      {
-       "nome": "Double Edge",
-       "tipo": "Normal",
-       "poder": 120
-      },
-      {
-       "nome": "Blizzard",
-       "tipo": "Ice",
-       "poder": 120
-      }
-     ]
-    },
-    {
-     "dex": 280,
-     "nome": "Sucuriaçu",
-     "tipos": [
-      "Water",
-      "Dragon"
-     ],
-     "bst": 607,
+     "bst": 555,
      "nivel": 55,
-     "iv": 255,
-     "iv31": 31,
-     "item": "None",
+     "iv": 231,
+     "iv31": 28,
+     "item": "Sitrus Berry",
      "golpes": [
-      {
-       "nome": "Toxic",
-       "tipo": "Poison",
-       "poder": null
-      },
       {
        "nome": "Hydro Pump",
        "tipo": "Water",
        "poder": 120
       },
       {
-       "nome": "Sludge Bomb",
-       "tipo": "Poison",
-       "poder": 90
+       "nome": "Encanto Do Boto",
+       "tipo": "Psychic",
+       "poder": 85
       },
       {
-       "nome": "Ice Beam",
-       "tipo": "Ice",
-       "poder": 95
+       "nome": "Fire Blast",
+       "tipo": "Fire",
+       "poder": 120
+      },
+      {
+       "nome": "Calm Mind",
+       "tipo": "Psychic",
+       "poder": null
       }
      ]
     },
@@ -8050,84 +8218,124 @@
      ],
      "bst": 600,
      "nivel": 56,
-     "iv": 255,
-     "iv31": 31,
-     "item": "None",
+     "iv": 231,
+     "iv31": 28,
+     "item": "Lum Berry",
      "golpes": [
       {
-       "nome": "Giga Drain",
-       "tipo": "Grass",
+       "nome": "Abraco Da Boiuna",
+       "tipo": "Dragon",
+       "poder": 95
+      },
+      {
+       "nome": "Hydro Pump",
+       "tipo": "Water",
+       "poder": 120
+      },
+      {
+       "nome": "Ice Beam",
+       "tipo": "Ice",
+       "poder": 95
+      },
+      {
+       "nome": "Glare",
+       "tipo": "Normal",
+       "poder": null
+      }
+     ]
+    },
+    {
+     "dex": 246,
+     "nome": "Guaraci",
+     "tipos": [
+      "Fire",
+      "Fairy"
+     ],
+     "bst": 605,
+     "nivel": 56,
+     "iv": 239,
+     "iv31": 29,
+     "item": "White Herb",
+     "golpes": [
+      {
+       "nome": "Fire Blast",
+       "tipo": "Fire",
+       "poder": 120
+      },
+      {
+       "nome": "Moonblast",
+       "tipo": "Fairy",
+       "poder": 95
+      },
+      {
+       "nome": "Earthquake",
+       "tipo": "Ground",
+       "poder": 100
+      },
+      {
+       "nome": "Toxic",
+       "tipo": "Poison",
+       "poder": null
+      }
+     ]
+    },
+    {
+     "dex": 294,
+     "nome": "Uirapuru",
+     "tipos": [
+      "Flying",
+      "Fairy"
+     ],
+     "bst": 607,
+     "nivel": 57,
+     "iv": 247,
+     "iv31": 30,
+     "item": "Sitrus Berry",
+     "golpes": [
+      {
+       "nome": "Moonblast",
+       "tipo": "Fairy",
+       "poder": 95
+      },
+      {
+       "nome": "Aerial Ace",
+       "tipo": "Flying",
        "poder": 60
       },
       {
-       "nome": "Surf",
-       "tipo": "Water",
-       "poder": 95
-      },
-      {
-       "nome": "Leech Seed",
-       "tipo": "Grass",
-       "poder": null
-      },
-      {
-       "nome": "Double Team",
-       "tipo": "Normal",
-       "poder": null
-      }
-     ]
-    },
-    {
-     "dex": 364,
-     "nome": "Sarará",
-     "tipos": [
-      "Fairy",
-      "Water"
-     ],
-     "bst": 472,
-     "nivel": 56,
-     "iv": 255,
-     "iv31": 31,
-     "item": "None",
-     "golpes": [
-      {
-       "nome": "Earthquake",
-       "tipo": "Ground",
-       "poder": 100
-      },
-      {
-       "nome": "Surf",
-       "tipo": "Water",
-       "poder": 95
-      },
-      {
-       "nome": "Amnesia",
+       "nome": "Psychic",
        "tipo": "Psychic",
-       "poder": null
+       "poder": 90
       },
       {
-       "nome": "Hyper Beam",
+       "nome": "Sing",
        "tipo": "Normal",
-       "poder": 150
+       "poder": null
       }
      ]
     },
     {
-     "dex": 27,
-     "nome": "Botogaláu",
+     "dex": 286,
+     "nome": "Iara-Mãe",
      "tipos": [
       "Water",
-      "Psychic"
+      "Fairy"
      ],
-     "bst": 555,
-     "nivel": 56,
-     "iv": 255,
-     "iv31": 31,
-     "item": "None",
+     "bst": 602,
+     "nivel": 57,
+     "iv": 247,
+     "iv31": 30,
+     "item": "Leftovers",
      "golpes": [
       {
-       "nome": "Dragon Dance",
-       "tipo": "Dragon",
-       "poder": null
+       "nome": "Surf",
+       "tipo": "Water",
+       "poder": 95
+      },
+      {
+       "nome": "Moonblast",
+       "tipo": "Fairy",
+       "poder": 95
       },
       {
        "nome": "Earthquake",
@@ -8135,14 +8343,9 @@
        "poder": 100
       },
       {
-       "nome": "Hyper Beam",
-       "tipo": "Normal",
-       "poder": 150
-      },
-      {
-       "nome": "Surf",
+       "nome": "Rain Dance",
        "tipo": "Water",
-       "poder": 95
+       "poder": null
       }
      ]
     },
@@ -8157,27 +8360,27 @@
      "nivel": 58,
      "iv": 255,
      "iv31": 31,
-     "item": "Sitrus Berry",
+     "item": "Mystic Water",
      "golpes": [
       {
-       "nome": "Recover",
-       "tipo": "Normal",
-       "poder": null
-      },
-      {
-       "nome": "Surf",
+       "nome": "Hydro Pump",
        "tipo": "Water",
+       "poder": 120
+      },
+      {
+       "nome": "Moonblast",
+       "tipo": "Fairy",
        "poder": 95
       },
       {
-       "nome": "Ice Beam",
-       "tipo": "Ice",
-       "poder": 95
-      },
-      {
-       "nome": "Toxic",
-       "tipo": "Poison",
+       "nome": "Rain Dance",
+       "tipo": "Water",
        "poder": null
+      },
+      {
+       "nome": "Thunderbolt",
+       "tipo": "Electric",
+       "poder": 95
       }
      ]
     }

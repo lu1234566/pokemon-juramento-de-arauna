@@ -1,0 +1,369 @@
+{
+  "schema": "arauana-team",
+  "version": 4,
+  "exportedAt": "2026-10-12T00:00:00.000Z",
+  "trainerParty": {
+    "customMoveset": true,
+    "ivMode": "single-fixed-iv"
+  },
+  "slots": [
+    {
+      "slot": 1,
+      "pokemonId": 232,
+      "pokemonName": "Pargo",
+      "level": 27,
+      "iv": 99,
+      "iv31": 12,
+      "heldItem": {
+        "id": "ITEM_SITRUS_BERRY",
+        "name": "SITRUS BERRY"
+      },
+      "types": [
+        "water",
+        "fire"
+      ],
+      "moves": [
+        {
+          "id": "MOVE_FLAME_WHEEL",
+          "name": "Flame Wheel",
+          "type": "fire",
+          "category": "special",
+          "power": 60,
+          "accuracy": 100,
+          "pp": 25,
+          "learnsetLevel": 19,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_WATERFALL",
+          "name": "Waterfall",
+          "type": "water",
+          "category": "special",
+          "power": 80,
+          "accuracy": 100,
+          "pp": 15,
+          "learnsetLevel": null,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_BRICK_BREAK",
+          "name": "Brick Break",
+          "type": "fighting",
+          "category": "physical",
+          "power": 75,
+          "accuracy": 100,
+          "pp": 15,
+          "learnsetLevel": null,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_WILL_O_WISP",
+          "name": "Will O Wisp",
+          "type": "fire",
+          "category": "status",
+          "power": null,
+          "accuracy": 75,
+          "pp": 15,
+          "learnsetLevel": 24,
+          "warning": null,
+          "signature": false
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "slot": 2,
+      "pokemonId": 206,
+      "pokemonName": "Enxofrino",
+      "level": 27,
+      "iv": 107,
+      "iv31": 13,
+      "heldItem": {
+        "id": "ITEM_WHITE_HERB",
+        "name": "WHITE HERB"
+      },
+      "types": [
+        "fire",
+        "poison"
+      ],
+      "moves": [
+        {
+          "id": "MOVE_OVERHEAT",
+          "name": "Overheat",
+          "type": "fire",
+          "category": "special",
+          "power": 140,
+          "accuracy": 90,
+          "pp": 5,
+          "learnsetLevel": null,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_ACID",
+          "name": "Acid",
+          "type": "poison",
+          "category": "physical",
+          "power": 40,
+          "accuracy": 100,
+          "pp": 30,
+          "learnsetLevel": 19,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_DIG",
+          "name": "Dig",
+          "type": "ground",
+          "category": "physical",
+          "power": 60,
+          "accuracy": 100,
+          "pp": 10,
+          "learnsetLevel": null,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_SUNNY_DAY",
+          "name": "Sunny Day",
+          "type": "fire",
+          "category": "status",
+          "power": null,
+          "accuracy": null,
+          "pp": 5,
+          "learnsetLevel": 39,
+          "warning": "Aprendido no Nv. 39; treinador está no Nv. 27. O moveset custom permite.",
+          "signature": false
+        }
+      ],
+      "warnings": [
+        "Sunny Day: Aprendido no Nv. 39; treinador está no Nv. 27. O moveset custom permite."
+      ]
+    },
+    {
+      "slot": 3,
+      "pokemonId": 53,
+      "pokemonName": "Guará",
+      "level": 28,
+      "iv": 124,
+      "iv31": 15,
+      "heldItem": {
+        "id": "ITEM_QUICK_CLAW",
+        "name": "QUICK CLAW"
+      },
+      "types": [
+        "fire",
+        "normal"
+      ],
+      "moves": [
+        {
+          "id": "MOVE_FLAMETHROWER",
+          "name": "Flamethrower",
+          "type": "fire",
+          "category": "special",
+          "power": 95,
+          "accuracy": 100,
+          "pp": 15,
+          "learnsetLevel": 21,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_STRENGTH",
+          "name": "Strength",
+          "type": "normal",
+          "category": "physical",
+          "power": 80,
+          "accuracy": 100,
+          "pp": 15,
+          "learnsetLevel": null,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_BRICK_BREAK",
+          "name": "Brick Break",
+          "type": "fighting",
+          "category": "physical",
+          "power": 75,
+          "accuracy": 100,
+          "pp": 15,
+          "learnsetLevel": null,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_WILL_O_WISP",
+          "name": "Will O Wisp",
+          "type": "fire",
+          "category": "status",
+          "power": null,
+          "accuracy": 75,
+          "pp": 15,
+          "learnsetLevel": 13,
+          "warning": null,
+          "signature": false
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "slot": 4,
+      "pokemonId": 99,
+      "pokemonName": "Mula-sem-Cabeça",
+      "level": 28,
+      "iv": 149,
+      "iv31": 18,
+      "heldItem": {
+        "id": "ITEM_SITRUS_BERRY",
+        "name": "SITRUS BERRY"
+      },
+      "types": [
+        "fire",
+        "ghost"
+      ],
+      "moves": [
+        {
+          "id": "MOVE_FLAMETHROWER",
+          "name": "Flamethrower",
+          "type": "fire",
+          "category": "special",
+          "power": 95,
+          "accuracy": 100,
+          "pp": 15,
+          "learnsetLevel": 23,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_SHADOW_BALL",
+          "name": "Shadow Ball",
+          "type": "ghost",
+          "category": "physical",
+          "power": 80,
+          "accuracy": 100,
+          "pp": 15,
+          "learnsetLevel": null,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_SHOCK_WAVE",
+          "name": "Shock Wave",
+          "type": "electric",
+          "category": "special",
+          "power": 60,
+          "accuracy": null,
+          "pp": 20,
+          "learnsetLevel": null,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_SUNNY_DAY",
+          "name": "Sunny Day",
+          "type": "fire",
+          "category": "status",
+          "power": null,
+          "accuracy": null,
+          "pp": 5,
+          "learnsetLevel": 54,
+          "warning": "Aprendido no Nv. 54; treinador está no Nv. 28. O moveset custom permite.",
+          "signature": false
+        }
+      ],
+      "warnings": [
+        "Sunny Day: Aprendido no Nv. 54; treinador está no Nv. 28. O moveset custom permite."
+      ]
+    },
+    {
+      "slot": 5,
+      "pokemonId": 16,
+      "pokemonName": "Boitatá",
+      "level": 29,
+      "iv": 255,
+      "iv31": 31,
+      "heldItem": {
+        "id": "ITEM_CHARCOAL",
+        "name": "CHARCOAL"
+      },
+      "types": [
+        "fire",
+        "ghost"
+      ],
+      "moves": [
+        {
+          "id": "MOVE_OVERHEAT",
+          "name": "Overheat",
+          "type": "fire",
+          "category": "special",
+          "power": 140,
+          "accuracy": 90,
+          "pp": 5,
+          "learnsetLevel": null,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_FOGO_FATUO_ANCESTRAL",
+          "name": "Fogo Fatuo Ancestral",
+          "type": "fire",
+          "category": "special",
+          "power": 85,
+          "accuracy": 100,
+          "pp": 10,
+          "learnsetLevel": 45,
+          "warning": "Aprendido no Nv. 45; treinador está no Nv. 29. O moveset custom permite.",
+          "signature": false
+        },
+        {
+          "id": "MOVE_WILL_O_WISP",
+          "name": "Will O Wisp",
+          "type": "fire",
+          "category": "status",
+          "power": null,
+          "accuracy": 75,
+          "pp": 15,
+          "learnsetLevel": 21,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_CONFUSE_RAY",
+          "name": "Confuse Ray",
+          "type": "ghost",
+          "category": "status",
+          "power": null,
+          "accuracy": 100,
+          "pp": 10,
+          "learnsetLevel": 16,
+          "warning": null,
+          "signature": false
+        }
+      ],
+      "warnings": [
+        "Fogo Fatuo Ancestral: Aprendido no Nv. 45; treinador está no Nv. 29. O moveset custom permite."
+      ]
+    },
+    {
+      "slot": 6,
+      "pokemonId": null,
+      "pokemonName": null,
+      "level": null,
+      "iv": null,
+      "iv31": null,
+      "heldItem": null,
+      "types": [],
+      "moves": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "warnings": []
+    }
+  ]
+}

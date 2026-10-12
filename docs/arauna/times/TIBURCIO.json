@@ -1,0 +1,366 @@
+{
+  "schema": "arauana-team",
+  "version": 4,
+  "exportedAt": "2026-10-12T00:00:00.000Z",
+  "trainerParty": {
+    "customMoveset": true,
+    "ivMode": "single-fixed-iv"
+  },
+  "slots": [
+    {
+      "slot": 1,
+      "pokemonId": 122,
+      "pokemonName": "Pirarucu",
+      "level": 53,
+      "iv": 206,
+      "iv31": 25,
+      "heldItem": {
+        "id": "ITEM_SITRUS_BERRY",
+        "name": "SITRUS BERRY"
+      },
+      "types": [
+        "water",
+        "dragon"
+      ],
+      "moves": [
+        {
+          "id": "MOVE_OUTRAGE",
+          "name": "Outrage",
+          "type": "dragon",
+          "category": "special",
+          "power": 90,
+          "accuracy": 100,
+          "pp": 15,
+          "learnsetLevel": 58,
+          "warning": "Aprendido no Nv. 58; treinador está no Nv. 53. O moveset custom permite.",
+          "signature": false
+        },
+        {
+          "id": "MOVE_HYDRO_PUMP",
+          "name": "Hydro Pump",
+          "type": "water",
+          "category": "special",
+          "power": 120,
+          "accuracy": 80,
+          "pp": 5,
+          "learnsetLevel": 29,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_ICE_BEAM",
+          "name": "Ice Beam",
+          "type": "ice",
+          "category": "special",
+          "power": 95,
+          "accuracy": 100,
+          "pp": 10,
+          "learnsetLevel": null,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_DRAGON_DANCE",
+          "name": "Dragon Dance",
+          "type": "dragon",
+          "category": "status",
+          "power": null,
+          "accuracy": null,
+          "pp": 20,
+          "learnsetLevel": 54,
+          "warning": "Aprendido no Nv. 54; treinador está no Nv. 53. O moveset custom permite.",
+          "signature": false
+        }
+      ],
+      "warnings": [
+        "Outrage: Aprendido no Nv. 58; treinador está no Nv. 53. O moveset custom permite.",
+        "Dragon Dance: Aprendido no Nv. 54; treinador está no Nv. 53. O moveset custom permite."
+      ]
+    },
+    {
+      "slot": 2,
+      "pokemonId": 36,
+      "pokemonName": "Jacarodon",
+      "level": 53,
+      "iv": 214,
+      "iv31": 26,
+      "heldItem": {
+        "id": "ITEM_LUM_BERRY",
+        "name": "LUM BERRY"
+      },
+      "types": [
+        "water",
+        "dragon"
+      ],
+      "moves": [
+        {
+          "id": "MOVE_OUTRAGE",
+          "name": "Outrage",
+          "type": "dragon",
+          "category": "special",
+          "power": 90,
+          "accuracy": 100,
+          "pp": 15,
+          "learnsetLevel": 50,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_SURF",
+          "name": "Surf",
+          "type": "water",
+          "category": "special",
+          "power": 95,
+          "accuracy": 100,
+          "pp": 15,
+          "learnsetLevel": null,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_ICE_BEAM",
+          "name": "Ice Beam",
+          "type": "ice",
+          "category": "special",
+          "power": 95,
+          "accuracy": 100,
+          "pp": 10,
+          "learnsetLevel": null,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_PROTECT",
+          "name": "Protect",
+          "type": "normal",
+          "category": "status",
+          "power": null,
+          "accuracy": null,
+          "pp": 10,
+          "learnsetLevel": null,
+          "warning": null,
+          "signature": false
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "slot": 3,
+      "pokemonId": 297,
+      "pokemonName": "Corcovado-Ancião",
+      "level": 54,
+      "iv": 231,
+      "iv31": 28,
+      "heldItem": {
+        "id": "ITEM_LEFTOVERS",
+        "name": "LEFTOVERS"
+      },
+      "types": [
+        "rock",
+        "dragon"
+      ],
+      "moves": [
+        {
+          "id": "MOVE_OUTRAGE",
+          "name": "Outrage",
+          "type": "dragon",
+          "category": "special",
+          "power": 90,
+          "accuracy": 100,
+          "pp": 15,
+          "learnsetLevel": 48,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_ROCK_SLIDE",
+          "name": "Rock Slide",
+          "type": "rock",
+          "category": "physical",
+          "power": 75,
+          "accuracy": 90,
+          "pp": 10,
+          "learnsetLevel": 44,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_FIRE_BLAST",
+          "name": "Fire Blast",
+          "type": "fire",
+          "category": "special",
+          "power": 120,
+          "accuracy": 85,
+          "pp": 5,
+          "learnsetLevel": null,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_PROTECT",
+          "name": "Protect",
+          "type": "normal",
+          "category": "status",
+          "power": null,
+          "accuracy": null,
+          "pp": 10,
+          "learnsetLevel": null,
+          "warning": null,
+          "signature": false
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "slot": 4,
+      "pokemonId": 282,
+      "pokemonName": "Draguará-Alfa",
+      "level": 54,
+      "iv": 247,
+      "iv31": 30,
+      "heldItem": {
+        "id": "ITEM_SITRUS_BERRY",
+        "name": "SITRUS BERRY"
+      },
+      "types": [
+        "fire",
+        "dragon"
+      ],
+      "moves": [
+        {
+          "id": "MOVE_OUTRAGE",
+          "name": "Outrage",
+          "type": "dragon",
+          "category": "special",
+          "power": 90,
+          "accuracy": 100,
+          "pp": 15,
+          "learnsetLevel": 48,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_HEAT_WAVE",
+          "name": "Heat Wave",
+          "type": "fire",
+          "category": "special",
+          "power": 100,
+          "accuracy": 90,
+          "pp": 10,
+          "learnsetLevel": 53,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_IRON_TAIL",
+          "name": "Iron Tail",
+          "type": "steel",
+          "category": "physical",
+          "power": 100,
+          "accuracy": 75,
+          "pp": 15,
+          "learnsetLevel": null,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_DRAGON_DANCE",
+          "name": "Dragon Dance",
+          "type": "dragon",
+          "category": "status",
+          "power": null,
+          "accuracy": null,
+          "pp": 20,
+          "learnsetLevel": 44,
+          "warning": null,
+          "signature": false
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "slot": 5,
+      "pokemonId": 291,
+      "pokemonName": "Cobra-Norato",
+      "level": 55,
+      "iv": 255,
+      "iv31": 31,
+      "heldItem": {
+        "id": "ITEM_DRAGON_FANG",
+        "name": "DRAGON FANG"
+      },
+      "types": [
+        "water",
+        "dragon"
+      ],
+      "moves": [
+        {
+          "id": "MOVE_OUTRAGE",
+          "name": "Outrage",
+          "type": "dragon",
+          "category": "special",
+          "power": 90,
+          "accuracy": 100,
+          "pp": 15,
+          "learnsetLevel": 47,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_SURF",
+          "name": "Surf",
+          "type": "water",
+          "category": "special",
+          "power": 95,
+          "accuracy": 100,
+          "pp": 15,
+          "learnsetLevel": 42,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_ICE_BEAM",
+          "name": "Ice Beam",
+          "type": "ice",
+          "category": "special",
+          "power": 95,
+          "accuracy": 100,
+          "pp": 10,
+          "learnsetLevel": null,
+          "warning": null,
+          "signature": false
+        },
+        {
+          "id": "MOVE_OLHAR_DA_COBRA_GRANDE",
+          "name": "Olhar Da Cobra Grande",
+          "type": "ghost",
+          "category": "status",
+          "power": null,
+          "accuracy": 90,
+          "pp": 10,
+          "learnsetLevel": 48,
+          "warning": null,
+          "signature": false
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "slot": 6,
+      "pokemonId": null,
+      "pokemonName": null,
+      "level": null,
+      "iv": null,
+      "iv31": null,
+      "heldItem": null,
+      "types": [],
+      "moves": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "warnings": []
+    }
+  ]
+}

@@ -6,12 +6,12 @@
       "resultado": "**Todos os 528 mapas do jogo**, um por um, com o jogador andando num padrao que cruza grama, ledges e bordas de mapa. A cada segundo a varredura checa as quatro coisas que separam um GBA travado de um rodando: o ponteiro do save saindo da EWRAM, o id do mapa virando um que nao existe, a tela parada enquanto o input e aceito, e o jogo caindo de volta na tela de copyright. **Zero achados em 528.**"
     },
     {
-      "nome": "Times dos tres chefes novos",
-      "resultado": "Dalva, Ademar e Olivia lidos de gEnemyParty dentro da batalha: as cinco vagas de cada um chegam com especie, nivel, item, os seis IVs e os quatro golpes customizados exatos."
+      "nome": "Times dos treze chefes",
+      "resultado": "Os treze times lidos de gEnemyParty dentro da batalha. Dalva, Ademar e Olivia primeiro; depois as outras dez, de Nara a Amalia: 52 vagas, e todas chegam com especie, nivel, item, IV e os quatro golpes customizados exatos de docs/arauna/times/."
     },
     {
       "nome": "Dificuldade medida",
-      "resultado": "Seis partidas completas. Contra a Dalva, um inicial de nv15 com o golpe certo derruba 4 de 5. Contra o Ademar, 2 de 5. Contra a Olivia, um Ground derruba 2 e trava na dupla Water/Electric."
+      "resultado": "Seis partidas completas. Contra a Dalva, um inicial de nv15 com o golpe certo derruba 4 de 5. Contra o Ademar, 2 de 5. Contra a Olivia, um Ground derruba 2 e trava na dupla Water/Electric. Contra a Nara, o kit de teste de nv100 vence em cinco turnos e a insignia fica gravada. Contra a Amalia, o Guaraci (Fire/Fairy) segura o mesmo kit -- Dragon Claw nao pega em Fairy -- e vence."
     },
     {
       "nome": "Learnsets dos 386",
@@ -27,7 +27,7 @@
     },
     {
       "nome": "Disponibilidade",
-      "resultado": "293 criaturas capturaveis na natureza, 366 de 386 obteniveis contando evolucao e presentes."
+      "resultado": "293 criaturas capturaveis na natureza, 386 de 386 obteniveis contando evolucao, presentes e os vinte lendarios que acordam depois do primeiro Hall da Fama."
     },
     {
       "nome": "ROM limpa",
