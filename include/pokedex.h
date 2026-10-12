@@ -38,6 +38,8 @@ u16 GetHoennPokedexCount(u8 caseID);
 u8 DisplayCaughtMonDexPage(u16 dexNum, u32 otId, u32 personality);
 s8 GetSetPokedexFlag(u16 nationalDexNo, u8 caseID);
 u16 CreateMonSpriteFromNationalDexNumber(u16 nationalNum, s16 x, s16 y, u16 paletteSlot);
+u16 GetPokedexCompletionCount(u16 *target);
+const u8 *GetPokedexRatingText(void);
 bool16 HasAllHoennMons(void);
 void ResetPokedexScrollPositions(void);
 bool16 HasAllMons(void);

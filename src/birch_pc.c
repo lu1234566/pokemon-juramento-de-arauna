@@ -20,10 +20,11 @@ bool16 ScriptGetPokedexInfo(void)
     return IsNationalPokedexEnabled();
 }
 
-// This shows your regional Pokédex rating and not your National Dex.
-// Jirachi and Deoxys do not count towards completion. The brackets are spread
-// over the rest of the dex, ten species each when the regional dex is Hoenn's.
-const u8 *GetPokedexRatingText(u16 count)
+// This shows your regional Pokédex rating and not your National Dex, at the
+// PC and over the PokéNav. It counts what completion counts (see
+// GetPokedexCompletionCount), and the brackets are spread over that total, ten
+// species each when it is Hoenn's 200.
+const u8 *GetPokedexRatingText(void)
 {
     static const u8 *const sRatingTexts[] = {
         gBirchDexRatingText_LessThan10,
@@ -47,13 +48,9 @@ const u8 *GetPokedexRatingText(u16 count)
         gBirchDexRatingText_LessThan190,
         gBirchDexRatingText_LessThan200,
     };
-    u32 caught = count;
-    u32 target = HOENN_DEX_COUNT - 2;
+    u16 target;
+    u32 caught = GetPokedexCompletionCount(&target);
 
-    if (caught && GetSetPokedexFlag(SpeciesToNationalPokedexNum(SPECIES_JIRACHI), FLAG_GET_CAUGHT))
-        caught--;
-    if (caught && GetSetPokedexFlag(SpeciesToNationalPokedexNum(SPECIES_DEOXYS), FLAG_GET_CAUGHT))
-        caught--;
     if (caught >= target)
         return gBirchDexRatingText_DexCompleted;
     return sRatingTexts[caught * ARRAY_COUNT(sRatingTexts) / target];
@@ -61,5 +58,5 @@ const u8 *GetPokedexRatingText(u16 count)
 
 void ShowPokedexRatingMessage(void)
 {
-    ShowFieldMessage(GetPokedexRatingText(gSpecialVar_0x8004));
+    ShowFieldMessage(GetPokedexRatingText());
 }

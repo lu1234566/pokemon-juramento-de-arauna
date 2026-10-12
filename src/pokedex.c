@@ -310,6 +310,7 @@ static void ClearSearchParameterBoxText(void);
 
 // const rom data
 #include "data/pokemon/pokedex_orders.h"
+#include "data/pokemon/dex_completion_held_back.h"
 
 static const struct OamData sOamData_ScrollBar =
 {
@@ -4386,17 +4387,47 @@ u16 GetKantoPokedexCount(u8 caseID)
     return count;
 }
 
-bool16 HasAllHoennMons(void)
+// Jirachi and Deoxys never count towards completion, and neither do the
+// specials still waiting for a placement, since nobody can catch them yet (see
+// dex_completion_held_back.h). Placing one puts it back in the count.
+static bool32 CountsForCompletion(u16 hoennNum)
 {
-    u16 i;
+    u16 species = HoennPokedexNumToSpecies(hoennNum);
+    u32 i;
 
-    // -2 excludes Jirachi and Deoxys
-    for (i = 0; i < HOENN_DEX_COUNT - 2; i++)
+    if (hoennNum > HOENN_DEX_COUNT - 2)
+        return FALSE;
+    for (i = 0; sDexCompletionHeldBack[i] != SPECIES_NONE; i++)
     {
-        if (!GetSetPokedexFlag(HoennToNationalOrder(i + 1), FLAG_GET_CAUGHT))
+        if (sDexCompletionHeldBack[i] == species)
             return FALSE;
     }
     return TRUE;
+}
+
+// How many species completion asks for, and how many of them are caught.
+u16 GetPokedexCompletionCount(u16 *target)
+{
+    u16 caught = 0;
+    u16 i;
+
+    *target = 0;
+    for (i = 0; i < HOENN_DEX_COUNT; i++)
+    {
+        if (!CountsForCompletion(i + 1))
+            continue;
+        (*target)++;
+        if (GetSetPokedexFlag(HoennToNationalOrder(i + 1), FLAG_GET_CAUGHT))
+            caught++;
+    }
+    return caught;
+}
+
+bool16 HasAllHoennMons(void)
+{
+    u16 target;
+
+    return GetPokedexCompletionCount(&target) == target;
 }
 
 bool8 HasAllKantoMons(void)
@@ -4412,31 +4443,12 @@ bool8 HasAllKantoMons(void)
     return TRUE;
 }
 
+// Arauna's national dex holds the same 386 species as the regional one, so
+// there is nothing more to catch for it. The diploma reads NATIONAL once the
+// player also holds the national dex.
 bool16 HasAllMons(void)
 {
-    u16 i;
-
-    // -1 excludes Mew
-    for (i = 0; i < KANTO_DEX_COUNT - 1; i++)
-    {
-        if (!GetSetPokedexFlag(i + 1, FLAG_GET_CAUGHT))
-            return FALSE;
-    }
-
-    // -3 excludes Lugia, Ho-Oh, and Celebi
-    for (i = KANTO_DEX_COUNT; i < JOHTO_DEX_COUNT - 3; i++)
-    {
-        if (!GetSetPokedexFlag(i + 1, FLAG_GET_CAUGHT))
-            return FALSE;
-    }
-
-    // -2 excludes Jirachi and Deoxys
-    for (i = JOHTO_DEX_COUNT; i < NATIONAL_DEX_COUNT - 2; i++)
-    {
-        if (!GetSetPokedexFlag(i + 1, FLAG_GET_CAUGHT))
-            return FALSE;
-    }
-    return TRUE;
+    return IsNationalPokedexEnabled() && HasAllHoennMons();
 }
 
 static void ResetOtherVideoRegisters(u16 regBits)

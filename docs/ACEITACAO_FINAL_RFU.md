@@ -79,9 +79,7 @@ com 200 espécies.
 Agora a dex regional é a dex inteira: `HOENN_DEX_COUNT` passa a ser
 `NATIONAL_DEX_COUNT`, 386. A ordem continua terminando em Sacinho (#385) e
 Arauá (#386), as posições de Jirachi e Deoxys. A checagem de dex completa
-continua deixando as duas de fora. Assim, o diploma, a estrela do cartão de
-treinador, o presente do laboratório e a classificação de ANAHI contam
-#001–#384.
+continua deixando as duas de fora. O que ela conta está na seção seguinte.
 
 Mudanças:
 
@@ -99,28 +97,85 @@ No mGBA, comparando a ROM anterior com a nova, com scripts ligados:
 | Pokédex sem a nacional, com Pomba-Gira (#263) e Folião (#278) | SEEN 0, OWN 0, lista vazia | SEEN 2, OWN 2, Nº278 Folião na lista |
 | Resumo de Folião | sem número | Nº278 |
 | ANAHI com 200 capturados | "The ARAUNA POKéDEX is complete!" | "You've passed the halfway mark." |
-| ANAHI com 384 capturados | contagem parada em 202 | "complete!" |
+| ANAHI com #001–#384 capturados | contagem parada em 202 | "complete!" |
 | Union Room sem a nacional, TOBIAS oferece Folião (#278) | recusada | troca concluída; IARA fica com Folião, com o ID de TOBIAS |
 
 A ROM compila e os gates passam. `build_species.py --check` também passa.
 
+### Dex completa sem as especiais sem casa
+
+A primeira versão dessa mudança pedia #001–#384 para a dex completa. Isso inclui
+19 lendárias e míticas que o gate de disponibilidade segura sem encontro
+(#329–#344, #346, #348 e #376), e ninguém consegue capturá-las. Com o corte
+antigo, de #001–#200, o diploma era alcançável; com o novo, tinha ficado
+impossível.
+
+Agora a dex completa pula as especiais seguradas. Elas são lidas de
+`src/data/pokemon/dex_completion_held_back.h`, gerado por
+`check_availability.py --write` a partir de `ESPECIAIS_ESTATICOS.csv`. O gate
+falha se o cabeçalho não bater com o CSV. Hoje a dex completa pede 365
+espécies. Quando uma especial ganhar casa, a linha dela sai do CSV e ela volta
+a contar.
+
+Há uma regra só, `GetPokedexCompletionCount`, usada por:
+
+- o diploma;
+- a estrela do cartão;
+- o presente do laboratório;
+- a classificação de ANAHI, no PC e no PokéNav.
+
+A classificação pelo PokéNav tinha faixas próprias. Elas ainda declaravam a dex
+completa com 200 capturas, e a mudança anterior não tinha pego isso. Agora o
+PokéNav usa a mesma classificação do PC.
+
+A dex nacional de Arauna tem as mesmas espécies. `HasAllMons` ainda pulava os
+números de Mew, Lugia, Ho-Oh e Celebi, que em Arauna são criaturas comuns
+(Marimbondão, Jenipapo, Urucum e Caipora). Agora ela é a dex completa com a
+dex nacional ligada, e o diploma diz NATIONAL nesse caso.
+
+No mGBA, com scripts ligados, comparando o commit anterior (`89591d2fd8`) com
+este. "Tudo o que dá para pegar" são #001–#384 capturados sem as 19 seguradas,
+ou seja, 365 capturas.
+
+| Verificação | Antes | Depois |
+|---|---|---|
+| ANAHI no laboratório, tudo o que dá para pegar | "very close to complete. Keep going!" | "The ARAUNA POKéDEX is complete!" |
+| Mesmo caso, faltando #001 | — | "very close to complete" |
+| Designer do Motel de Lilycove, tudo o que dá para pegar | "If you do complete it, please come show me." | fanfarra e diploma "completed your ARAUNA POKéDEX" |
+| Mesmo caso, com a dex nacional | — | diploma "NATIONAL POKéDEX", na moldura dourada |
+| Mesmo caso, faltando #001 | — | sem diploma |
+| Cartão de treinador, tudo o que dá para pegar | cartão verde, sem estrela | cartão bronze, com estrela |
+| Entrar no laboratório depois do Hall da Fama, tudo o que dá para pegar | nada acontece | a mesa com as três Poké Balls aparece e ANAHI chama o jogador |
+| ANAHI pelo PokéNav, 200 capturados | "The ARAUNA POKéDEX is complete!" | "You've passed the halfway mark." |
+| ANAHI pelo PokéNav, tudo o que dá para pegar | — | "complete!" |
+
+A ROM compila sem avisos novos e os gates passam. A ROM oficial destes fontes
+tem SHA-256 `df26159126ec16af56a402bb78291728e338113708c7bb98400a5ba8313c99ed`.
+
 ### Aviso ao autor
 
-Cinco arquivos que os contratos congelam mudaram.
-`validate_connections_08f.py` agora para em `data/text/pokedex_rating.inc`.
+Nove arquivos que os contratos congelam mudaram, e um arquivo novo entrou.
+`validate_connections_08f.py` agora para em `data/text/pokedex_rating.inc`, o
+primeiro deles que ele confere.
 
 | Arquivo | SHA-256 |
 |---|---|
 | `include/constants/pokedex.h` | `33c16378e34a9ac56c5a11cef64086d5dfc3a90958276ed272ca430c6f624ec4` |
-| `src/birch_pc.c` | `87d7800c864b64ac923ef741e437721a8411bbafa6010e3d35b0b8ee908b3b78` |
+| `include/pokedex.h` | `9d0801044e51c454c7057f5c13c59997090fd26fedd4193cb8ef4e653c2a246e` |
+| `src/pokedex.c` | `0b25c87aa8317814d2a7e463849c85cea83268ed616f5900491d4c7efcf4335d` |
+| `src/birch_pc.c` | `bd776a21a118c2020d543c83f985bf001c5d7503c244ce82efac594f2c27b7f4` |
+| `src/match_call.c` | `e23f827ec677860cd31fafcdc5e77a8e5d8b4b51e15eacf5a6772e319ecf71ed` |
 | `data/text/pokedex_rating.inc` | `9e7e058be6d1a54d2752a463c0e5d79f79bc67814cc6cbb66ac2541359ce0e98` |
 | `tools/arauna/build_species.py` | `262ec1cdbd1dfb668d322ae82f46c1ff6fa9732ecd32e9a407f6048d48cb4242` |
-| `docs/arauna/DEX_PORT.md` | `6737cdd4c25c04ed36230c29dd6dbc3f3a4220ba01287e431b251c5b610ba992` |
+| `tools/arauna/check_availability.py` | `05f457f6281166fd2609d29d596ccf6f53106a438e501ebe0bd224ef4b366fc1` |
+| `docs/arauna/DEX_PORT.md` | `5818103d70eb0b34a20133ab1191223329e91c5b24ff3ed6fa55017468a93f81` |
+| `src/data/pokemon/dex_completion_held_back.h` (novo) | `ad3f8d994d721b50e37873ecc24a8a074edcf7ff66586115e2877101d0acb04d` |
 
-Os próximos pacotes devem partir deste commit e proteger esses cinco arquivos,
+Os próximos pacotes devem partir deste commit e proteger esses dez arquivos,
 junto das sete correções anteriores.
 
 ## Estado
 
 Cobertura, integridade e sessão sem fio aprovadas. O ciclo de mapas está
-encerrado, com as sete correções protegidas e a dex regional de 386.
+encerrado, com as sete correções protegidas e a dex regional de 386. A dex
+completa pede as 365 espécies que dá para capturar hoje.
