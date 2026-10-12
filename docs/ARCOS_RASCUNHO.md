@@ -73,7 +73,7 @@ igual e funciona antes, durante e depois.
 |---|---|---|---:|
 | S09 Noite de História | 7ª insígnia, falando com o guardião | Contar uma história: o uivo, o laço partido ou o próprio caminho. As duas primeiras mudam se você viveu o arco do Uivo ou fez o rito da Câmara. | 0 → 1 |
 | S10 HORIZON | logo em seguida | BRENO e dois agentes entram para gravar tudo o que se disse na fogueira e levar ao LIVING ARCHIVE. "Ninguém aqui concordou." | 1 |
-| S11 defesa | logo em seguida | A roda se levanta; entre as batalhas os moradores bloqueiam a porta do memorial e as crianças cantarolam por cima dos gravadores. Duas batalhas com agentes (nv41–42) e BRENO (nv42–43). Perder não apaga nada: o HORIZON continua no salão e o guardião pergunta se você fica com a roda (por construção; a derrota não foi jogada no emulador). | 1 → 2 |
+| S11 defesa | logo em seguida | A roda se levanta; entre as batalhas os moradores bloqueiam a porta do memorial e as crianças cantarolam por cima dos gravadores. Duas batalhas com agentes (nv41–42) e BRENO (nv42–43). Perder não apaga nada: o HORIZON continua no salão e o guardião pergunta se você fica com a roda (derrotas e retomadas dos três oponentes conferidas na ROM final; ver `ARCOS_V2_ACEITACAO_EMULADOR.md`). | 1 → 2 |
 | S12 presságio | ao fim da defesa | O fogo sobe até as vigas; uma forma de asas de fagulha olha cada rosto. Ainda é um presságio. | → 3 |
 | S13 volta depois da Torre do Ruído | Hall da Fama **e** `FLAG_ARAUNA_TOWER_COMPLETE` | O guardião recebe você, reconta blocos do save, presencia Arauá e entrega SACRED ASH. A mochila cheia mantém o estado 3; a recompensa não repete. | → 4 |
 
@@ -156,3 +156,11 @@ ser registrada separadamente.
   finais do roteiro ainda não são os deste rascunho.
 - Revisão do texto pelo autor.
 
+
+## Aceitação adicional em 12/10/2026
+
+Derrotas/retomadas reais, quatro carregamentos a frio, limites de recompensa,
+replay e captura do filhote estão registrados em `ARCOS_V2_ACEITACAO_EMULADOR.md`,
+com a identidade da ROM e os limites da preparação em RAM. A revisão
+editorial está em `ARCOS_V2_REVISAO_EDITORIAL.md`; o texto segue sujeito à
+aprovação autoral. Libras permanece desativada até a revisão qualificada.

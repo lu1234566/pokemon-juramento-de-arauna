@@ -81,8 +81,15 @@ executadas no emulador.
 1. Tradução qualificada para Libras e revisão surda sinalizante — ainda não
    realizadas. O modo escrito é o único ativado.
 2. Revisão autoral das falas e das adaptações do rascunho.
-3. Aceitação visual no emulador: sprites, paletas, chegada/saída das cinco
-   salas, derrota/retorno reais, save/load e efeitos da Fogueira.
+3. Campanha natural completa e balanceamento. As sondagens de sprites,
+   paletas e saídas passaram na ROM final; derrotas, retomadas, quatro
+   carregamentos de save e recompensas foram confirmados no engine em
+   `ARCOS_V2_ACEITACAO_EMULADOR.md`. O carregamento final do Uivo capturado
+   ainda não teve resultado confirmado.
 
 Compilação e CI devem ser reportadas com o commit efetivamente testado. Não
 reutilizar o teste visual antigo como evidência desta versão.
+
+A revisão editorial assistida está em `ARCOS_V2_REVISAO_EDITORIAL.md`.
+Aprovação autoral e revisão qualificada de Libras continuam pendentes.
+O texto compilado não foi alterado por esta rodada.

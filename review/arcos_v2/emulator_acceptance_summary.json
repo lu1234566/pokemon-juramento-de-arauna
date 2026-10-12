@@ -1,0 +1,162 @@
+{
+  "tested_commit": "5c59b75ca91a6bedb212f788f5d1291aa1ed33ab",
+  "rom_sha256": "556aa2ad960cfe16664f66e80699c9c7df15bb2c6b69d5ed7e9e8eb6922790eb",
+  "emulator": "mGBA 0.10.2",
+  "evidence_type": "summary reconstructed from confirmed tool outputs; raw local receipts lost at environment reset before commit",
+  "method": "unmodified CI ROM; temporary RAM setup; native event execution and in-game flash save; cold loads in new processes",
+  "natural_campaign_playthrough": false,
+  "balance_assessed": false,
+  "victory_party": "level 100 test mon; HP/stats boosted to 999; no forced enemy HP or battle outcome",
+  "confirmed": {
+    "meira_loss": {
+      "outcome": 2,
+      "map": "PetalburgCity",
+      "tower": 6,
+      "complete": false,
+      "script": [
+        2,
+        0
+      ],
+      "lock": 0
+    },
+    "meira_victory_deferred": {
+      "outcome": 1,
+      "tower": 8,
+      "trainer_defeated": true,
+      "complete": false
+    },
+    "fogueira_loss_retry": [
+      1,
+      2,
+      3
+    ],
+    "cold_custody_choices": [
+      1,
+      2,
+      3
+    ],
+    "fogueira_reward": {
+      "state": 4,
+      "ash_count": 1,
+      "repeated_ash_count": 1
+    },
+    "bag_full": {
+      "fogueira_state": 3,
+      "uivo_state": 7,
+      "retry_after_space": true
+    },
+    "uivo_commitment_choices": [
+      1,
+      2,
+      3
+    ],
+    "uivo_all_commitments_refused": {
+      "state": 6,
+      "access": 0
+    },
+    "uivo_replay_branches": [
+      "returned",
+      "caught"
+    ],
+    "pup": {
+      "loss": {
+        "outcome": 2,
+        "state": 4
+      },
+      "calmed": {
+        "outcome": 1,
+        "state": 5
+      },
+      "run": {
+        "outcome": 4,
+        "state": 4
+      },
+      "caught": {
+        "outcome": 7,
+        "state": 5,
+        "caught_flag": true,
+        "party_count": 2
+      }
+    }
+  },
+  "cold_loads": [
+    {
+      "label": "tower_pre_battle",
+      "tower": 6,
+      "fogueira": 0,
+      "complete": false,
+      "awakened": false,
+      "ash": 0,
+      "callback": "CB2_Overworld",
+      "script": [
+        2,
+        0
+      ],
+      "lock": 0
+    },
+    {
+      "label": "tower_custody_deferred",
+      "tower": 8,
+      "fogueira": 0,
+      "complete": false,
+      "awakened": false,
+      "ash": 0,
+      "trainer_defeated": true,
+      "callback": "CB2_Overworld",
+      "script": [
+        2,
+        0
+      ],
+      "lock": 0
+    },
+    {
+      "label": "tower_complete",
+      "tower": 9,
+      "fogueira": 0,
+      "custody": 1,
+      "complete": true,
+      "awakened": false,
+      "ash": 0,
+      "callback": "CB2_Overworld",
+      "script": [
+        2,
+        0
+      ],
+      "lock": 0
+    },
+    {
+      "label": "fogueira_complete",
+      "tower": 9,
+      "fogueira": 4,
+      "custody": 1,
+      "complete": true,
+      "awakened": true,
+      "ash": 1,
+      "callback": "CB2_Overworld",
+      "script": [
+        2,
+        0
+      ],
+      "lock": 0
+    }
+  ],
+  "source_validator": {
+    "status": "PASS",
+    "wheel": 2240,
+    "fogueira": 30,
+    "tower": 1728,
+    "uivo": 7,
+    "ticket": 33,
+    "text_lines": 501,
+    "max_pixels": 190,
+    "available_pixels": 208
+  },
+  "assets_checker": "PASS; signed scene pending qualified human review",
+  "pending": [
+    "cold load after completed captured-pup Uivo branch; execution result not observed before reset",
+    "natural campaign and balance",
+    "authorial approval",
+    "qualified Libras translation and deaf signing review",
+    "complete canonical axes and finals"
+  ]
+}
