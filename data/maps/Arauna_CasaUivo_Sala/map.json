@@ -15,6 +15,7 @@
   "connections": null,
   "object_events": [
     {
+      "local_id": "LOCALID_CASA_UIVO_HERMIT",
       "graphics_id": "OBJ_EVENT_GFX_OLD_MAN",
       "x": 7,
       "y": 4,
@@ -28,6 +29,7 @@
       "flag": "0"
     },
     {
+      "local_id": "LOCALID_CASA_UIVO_CHILD",
       "graphics_id": "OBJ_EVENT_GFX_LITTLE_GIRL",
       "x": 11,
       "y": 8,
@@ -39,6 +41,48 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "CasaUivo_EventScript_Child",
       "flag": "0"
+    },
+    {
+      "local_id": "LOCALID_CASA_UIVO_NEIGHBOR",
+      "graphics_id": "OBJ_EVENT_GFX_HIKER",
+      "x": 8,
+      "y": 11,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "CasaUivo_EventScript_Neighbor",
+      "flag": "FLAG_ARAUNA_UIVO_HIDE_NEIGHBOR"
+    },
+    {
+      "local_id": "LOCALID_CASA_UIVO_WEAVER",
+      "graphics_id": "OBJ_EVENT_GFX_WOMAN_3",
+      "x": 9,
+      "y": 7,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "CasaUivo_EventScript_Weaver",
+      "flag": "FLAG_ARAUNA_UIVO_HIDE_CIRCLE"
+    },
+    {
+      "local_id": "LOCALID_CASA_UIVO_MINER",
+      "graphics_id": "OBJ_EVENT_GFX_MAN_2",
+      "x": 7,
+      "y": 8,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "CasaUivo_EventScript_Miner",
+      "flag": "FLAG_ARAUNA_UIVO_HIDE_CIRCLE"
     }
   ],
   "warp_events": [

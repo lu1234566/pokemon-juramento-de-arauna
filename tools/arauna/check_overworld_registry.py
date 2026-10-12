@@ -158,6 +158,7 @@ def main() -> int:
         "include/constants/arauna_overworld.h",                       # the selector values
         "src/event_object_movement.c",                                # the dispatcher
         "src/arauna_legends.c",                                       # the standing legends
+        "src/arauna_story.c",                                         # the story scenes' creatures
         "data/maps/AquaHideout_UnusedRubyMap1/scripts.inc",           # the harness
     }
     trespass = []

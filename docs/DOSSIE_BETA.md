@@ -90,7 +90,7 @@ ingles -- e a regra que `docs/GLOSSARIO_EN.md` fixa.
 | relacoes evolutivas | 81 |
 | habilidades novas | 35 |
 | golpes exclusivos | 27 |
-| treinadores no jogo | 855 |
+| treinadores no jogo | 858 |
 
 ## O caminho do jogo
 

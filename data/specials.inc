@@ -550,3 +550,6 @@ gSpecials::
 	def_special SetAraunaPokemonOverworld
 	def_special AraunaLegends_Reawaken
 	def_special AraunaLegends_BufferSignals
+	def_special AraunaBond_ReadSelected
+	def_special AraunaBond_MakeFirstLink
+	def_special AraunaBond_FindFirstLink

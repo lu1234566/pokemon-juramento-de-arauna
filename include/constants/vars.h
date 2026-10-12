@@ -350,4 +350,14 @@
 
 #define VAR_TEMP_TRANSFERRED_SPECIES  VAR_TEMP_1
 
+// BEGIN ARAUNA STORY ARCS
+// Draft scenes written from the synopsis (docs/ARCOS_RASCUNHO.md). Each arc
+// keeps one step counter; the first link keeps the personality of the chosen
+// creature, split in two halves.
+#define VAR_ARAUNA_UIVO_STATE       VAR_UNUSED_0x40F7
+#define VAR_ARAUNA_FOGUEIRA_STATE   VAR_UNUSED_0x40F8
+#define VAR_ARAUNA_FIRST_LINK_LO    VAR_UNUSED_0x40F9
+#define VAR_ARAUNA_FIRST_LINK_HI    VAR_UNUSED_0x40FA
+// END ARAUNA STORY ARCS
+
 #endif // GUARD_CONSTANTS_VARS_H

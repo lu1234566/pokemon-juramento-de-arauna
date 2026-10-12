@@ -15260,3 +15260,55 @@ static const struct TrainerMonNoItemDefaultMoves sParty_MayLinkPlaceholder[] = {
     .species = SPECIES_KYOGRE,
     }
 };
+
+// HORIZON at the Casa da Fogueira, S10-S11 (draft arc, docs/ARCOS_RASCUNHO.md).
+// After the seventh badge, so at Cec&Caet's cap of 42.
+// #200 Ourico, #162 Urubu.
+static const struct TrainerMonNoItemDefaultMoves sParty_AraunaFogueiraAgent1[] = {
+    {
+    .iv = 100,
+    .lvl = 41,
+    .species = SPECIES_SUNKERN,
+    },
+    {
+    .iv = 100,
+    .lvl = 41,
+    .species = SPECIES_BAYLEEF,
+    }
+};
+
+// #204 Manganim, #230 Arraia.
+static const struct TrainerMonNoItemDefaultMoves sParty_AraunaFogueiraAgent2[] = {
+    {
+    .iv = 120,
+    .lvl = 42,
+    .species = SPECIES_QUAGSIRE,
+    },
+    {
+    .iv = 120,
+    .lvl = 42,
+    .species = SPECIES_PILOSWINE,
+    }
+};
+
+// BRENO, who came to archive the fire. #137 Vagalume, #119 Cascavao, #229 Tubarao.
+static const struct TrainerMonItemDefaultMoves sParty_AraunaFogueiraAdmin[] = {
+    {
+    .iv = 160,
+    .lvl = 42,
+    .species = SPECIES_TAUROS,
+    .heldItem = ITEM_NONE,
+    },
+    {
+    .iv = 160,
+    .lvl = 42,
+    .species = SPECIES_WEEZING,
+    .heldItem = ITEM_NONE,
+    },
+    {
+    .iv = 200,
+    .lvl = 43,
+    .species = SPECIES_SWINUB,
+    .heldItem = ITEM_SITRUS_BERRY,
+    }
+};

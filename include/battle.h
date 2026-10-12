@@ -444,6 +444,8 @@ struct BattleStruct
     u8 arenaLostPlayerMons; // Bits for party member, lost as in referee's decision, not by fainting.
     u8 arenaLostOpponentMons;
     u8 alreadyStatusedMoveAttempt; // As bits for battlers; For example when using Thunder Wave on an already paralyzed Pokémon.
+    u8 araunaBondUsed:1;    // the first link already held on this battle (src/arauna_bond.c)
+    u8 araunaBondMessage:1; // and the next result message is its own
 };
 
 // The palaceFlags member of struct BattleStruct contains 1 flag per move to indicate which moves the AI should consider,

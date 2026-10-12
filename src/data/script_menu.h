@@ -788,6 +788,22 @@ static const struct MenuAction MultichoiceList_AraunaQol[] =
     {gText_Exit},
 };
 
+// Casa do Uivo, U05: the mother's three notebooks, put back in story order.
+static const struct MenuAction MultichoiceList_AraunaNotebooks[] =
+{
+    {gText_AraunaNotebookDusk},
+    {gText_AraunaNotebookFog},
+    {gText_AraunaNotebookCloth},
+};
+
+// Casa da Fogueira, S09: which story the player tells at the fire.
+static const struct MenuAction MultichoiceList_AraunaStoryNight[] =
+{
+    {gText_AraunaStoryHowl},
+    {gText_AraunaStoryTie},
+    {gText_AraunaStoryRoad},
+};
+
 struct MultichoiceListStruct
 {
     const struct MenuAction *list;
@@ -911,6 +927,8 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_FALLARBOR_TENT_RULES]       = MULTICHOICE(MultichoiceList_FallarborTentRules),
     [MULTI_TAG_MATCH_TYPE]             = MULTICHOICE(MultichoiceList_TagMatchType),
     [MULTI_ARAUNA_QOL]                 = MULTICHOICE(MultichoiceList_AraunaQol),
+    [MULTI_ARAUNA_NOTEBOOKS]           = MULTICHOICE(MultichoiceList_AraunaNotebooks),
+    [MULTI_ARAUNA_STORY_NIGHT]         = MULTICHOICE(MultichoiceList_AraunaStoryNight),
 };
 
 const u8 *const gStdStrings[] =

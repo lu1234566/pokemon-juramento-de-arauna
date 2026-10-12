@@ -44,3 +44,9 @@ Os dois NPCs usam representações genéricas nativas existentes (`OLD_MAN`, `LI
 | U10–U11 | Compromisso público, registro e Selo do Uivo | Nenhuma recompensa, variável ou flag concedida pela visita |
 
 A seção 20.1 determina tradução qualificada para Libras, revisão por pessoa surda sinalizante, storyboard legível, legendas e replay. Esses materiais não constam da base local. Esta versão não inventa movimentos de mãos, não apresenta poses de caminhada como Libras e não marca U03–U11 como concluídas. A criação de estados por flags, a cena assinada e a liberação narrativa do Pampa deverão seguir esse contrato em etapa própria. Os nomes de flags do roteiro não foram alocados nesta entrega.
+
+## Atualização — rascunho jogável
+
+U03–U11 ganharam um rascunho jogável que segue este contrato: o Eremita fala
+por escrito, nada é apresentado como Libras, e a cena sinalizada continua
+pendente. Estados, falas e o que ainda falta estão em `ARCOS_RASCUNHO.md`.

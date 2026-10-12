@@ -15,6 +15,7 @@
   "connections": null,
   "object_events": [
     {
+      "local_id": "LOCALID_FOGUEIRA_KEEPER",
       "graphics_id": "OBJ_EVENT_GFX_OLD_MAN",
       "x": 7,
       "y": 6,
@@ -91,6 +92,48 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Arauna_CasaFogueira_Salao_EventScript_Girl",
       "flag": "0"
+    },
+    {
+      "local_id": "LOCALID_FOGUEIRA_BRENO",
+      "graphics_id": "OBJ_EVENT_GFX_ADMIN_CAMPO",
+      "x": 10,
+      "y": 6,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Fogueira_EventScript_Breno",
+      "flag": "FLAG_ARAUNA_FOGUEIRA_HIDE_HORIZON"
+    },
+    {
+      "local_id": "LOCALID_FOGUEIRA_AGENT_1",
+      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "x": 11,
+      "y": 5,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Fogueira_EventScript_Agent",
+      "flag": "FLAG_ARAUNA_FOGUEIRA_HIDE_HORIZON"
+    },
+    {
+      "local_id": "LOCALID_FOGUEIRA_AGENT_2",
+      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_F",
+      "x": 11,
+      "y": 7,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Fogueira_EventScript_Agent",
+      "flag": "FLAG_ARAUNA_FOGUEIRA_HIDE_HORIZON"
     }
   ],
   "warp_events": [

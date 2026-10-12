@@ -1,5 +1,6 @@
 #include "global.h"
 #include "arauna_legends.h"
+#include "arauna_story.h"
 #include "event_object_movement.h"
 #include "script.h"
 #include "event_data.h"
@@ -337,6 +338,7 @@ void RunOnTransitionMapScript(void)
     // Before the map's own script, so a map can still override the choice.
     SetAraunaOverworldForCurrentMap();
     AraunaLegends_OnTransition();
+    AraunaStory_OnTransition();
     MapHeaderRunScriptType(MAP_SCRIPT_ON_TRANSITION);
 }
 

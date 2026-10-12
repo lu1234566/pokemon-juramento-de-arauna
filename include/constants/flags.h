@@ -1694,4 +1694,15 @@
 #define FLAG_ARAUNA_LEGEND_VENTANIA              FLAG_UNUSED_0x032
 #define FLAG_ARAUNA_LEGEND_SACINHO               FLAG_UNUSED_0x033
 // END ARAUNA LEGENDS
+
+// BEGIN ARAUNA STORY ARCS
+// Draft scenes written from the synopsis (docs/ARCOS_RASCUNHO.md). The hide
+// flags are recomputed from the arc state every time their map loads.
+#define FLAG_ARAUNA_FIRST_LINK_MADE              FLAG_UNUSED_0x034
+#define FLAG_ARAUNA_UIVO_PUP_CAUGHT              FLAG_UNUSED_0x035
+#define FLAG_ARAUNA_UIVO_HIDE_PUP                FLAG_UNUSED_0x036
+#define FLAG_ARAUNA_UIVO_HIDE_NEIGHBOR           FLAG_UNUSED_0x037
+#define FLAG_ARAUNA_UIVO_HIDE_CIRCLE             FLAG_UNUSED_0x038
+#define FLAG_ARAUNA_FOGUEIRA_HIDE_HORIZON        FLAG_UNUSED_0x039
+// END ARAUNA STORY ARCS
 #endif // GUARD_CONSTANTS_FLAGS_H

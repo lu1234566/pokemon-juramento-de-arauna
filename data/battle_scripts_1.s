@@ -3694,6 +3694,13 @@ BattleScript_EnduredMsg::
 	waitmessage B_WAIT_TIME_LONG
 	return
 
+@ The first link holds on (src/arauna_bond.c): the Focus Band's place in the
+@ damage step, without the item.
+BattleScript_AraunaBondHeld::
+	printstring STRINGID_ARAUNABONDHELD
+	waitmessage B_WAIT_TIME_LONG
+	return
+
 BattleScript_OneHitKOMsg::
 	printstring STRINGID_ONEHITKO
 	waitmessage B_WAIT_TIME_LONG

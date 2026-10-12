@@ -89,3 +89,12 @@ e o cânone do repositório não foram resolvidas por esta cena.
   grava a flag, todos os eventos devolvem o controle e as falas de retorno
   (fogueira, banco, moradores, recepção, livro de visitas) aparecem depois de
   compartilhar.
+
+## Atualização — S09–S13 em rascunho
+
+A Noite de História, a defesa contra o HORIZON, a manifestação de Arauá e a
+volta depois da torre ganharam um rascunho jogável no mesmo salão, a partir
+da sétima insígnia (`ARCOS_RASCUNHO.md`). A roda descrita acima continua igual
+e foi conferida de novo no emulador. Como o salão agora tem nove objetos e um
+script de mapa, `validate_fogueira_roda_v1.py` -- que confere o formato exato da
+entrega V1 -- não se aplica mais ao salão atual.

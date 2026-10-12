@@ -65,13 +65,19 @@ tabela antes de publicar.
 
 ## O que dizer no anúncio
 
-Uma coisa que é melhor você dizer antes que alguém reporte:
+Duas coisas que é melhor você dizer antes que alguém reporte:
 
 - **A dex só fecha depois do Hall da Fama.** Vinte lendários e míticos esperam
   no mapa, mas dormem até o primeiro Hall da Fama — antes disso nenhum deles
   aparece, de propósito. Depois, o sensor de VÍNCULO do laboratório da Anahi
   diz onde ainda há sinal. A lista com mapa e nível está em
   `docs/DOSSIE_BETA.md`.
+
+- **Três arcos são rascunho.** Casa do Uivo (depois da segunda insígnia),
+  o primeiro vínculo da Primeira Câmara e a Noite de História da Casa da
+  Fogueira (depois da sétima) foram escritos a partir da sinopse e podem
+  mudar. O Eremita fala por escrito; a cena em Libras ainda não existe.
+  Detalhes em `docs/ARCOS_RASCUNHO.md`.
 
 Os treze times de chefe já estão no padrão novo — cinco criaturas com item e
 IV escalonado, seis na dupla e na Campeã — e foram lidos de dentro da batalha.
