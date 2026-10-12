@@ -1308,34 +1308,34 @@ SlateportCity_Text_ComeBackToTradeBerryPowder:
 	.string "Did you know?$"
 
 SlateportCity_Text_YouDroveTeamAquaAway:
-	.string "SEU BENTO: Word travels fast.\p"
+	.string "BENTO: Word travels fast.\p"
 	.string "You stopped a HORIZON field unit\n"
 	.string "from taking the parts by force.$"
 
 SlateportCity_Text_MaybeThisTrainer:
-	.string "SEU BENTO: I follow TRAINERS who\n"
+	.string "BENTO: I follow TRAINERS who\n"
 	.string "notice what records miss.\p"
 	.string "You just entered my notebook.$"
 
 SlateportCity_Text_LetsRegisterEachOther:
-	.string "SEU BENTO: You have my number.\p"
+	.string "BENTO: You have my number.\p"
 	.string "I'll add my field route to your\n"
 	.string "POKéNAV too.\p"
 	.string "I can flag clues worth a trip.$"
 
 SlateportCity_Text_RegisteredScott:
-	.string "SEU BENTO's field route was\n"
+	.string "BENTO's field route was\n"
 	.string "added to the POKéNAV.$"
 
 SlateportCity_Text_KeepEyeOnTrainersBeSeeingYou:
-	.string "SEU BENTO: I'd stay, but roads\n"
+	.string "BENTO: I'd stay, but roads\n"
 	.string "keep moving.\p"
 	.string "I'll note what survives off the\n"
 	.string "official maps.\p"
 	.string "See you, {PLAYER}.$"
 
 SlateportCity_Text_TakingBattleTentChallenge:
-	.string "SEU BENTO: {PLAYER}!\p"
+	.string "BENTO: {PLAYER}!\p"
 	.string "Trying the BATTLE TENT? Good.\p"
 	.string "Places like this show what a\n"
 	.string "TRAINER does without a script.\p"
