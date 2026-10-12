@@ -99,7 +99,7 @@ def rows() -> list[dict]:
 
 # --- art -------------------------------------------------------------------
 
-def overworld_sheet(graphics_folder: str) -> tuple[Image.Image, str]:
+def overworld_sheet(graphics_folder: str) -> tuple[Image.Image, bytes]:
     """The front sprite, moved so the creature stands on the bottom of its tile."""
     folder = ROOT / "graphics/pokemon" / graphics_folder
     front = Image.open(folder / "front.png")
@@ -115,7 +115,8 @@ def overworld_sheet(graphics_folder: str) -> tuple[Image.Image, str]:
     dy = 63 - bottom
     sheet.paste(frame, (dx, dy))
     # The paste copies index 0 too; it is the transparent colour either way.
-    return sheet, (folder / "normal.pal").read_text(encoding="utf-8")
+    # The palette is copied byte for byte; .pal files are CRLF in this tree.
+    return sheet, (folder / "normal.pal").read_bytes()
 
 
 # --- engine text patches -----------------------------------------------------
@@ -358,7 +359,7 @@ def main() -> int:
     for m in legends:
         sheet, pal = overworld_sheet(m["folder"])
         sheet.save(PICS / f"{m['file']}.png")
-        (PALETTES / f"arauna_{m['file']}.pal").write_text(pal, encoding="utf-8")
+        (PALETTES / f"arauna_{m['file']}.pal").write_bytes(pal)
     REGISTRY_CSV.write_bytes(patch_registry_csv(legends))
     MOVEMENT.write_text(patch_movement(legends), encoding="utf-8")
     FLAGS.write_text(patch_flags(legends), encoding="utf-8")
