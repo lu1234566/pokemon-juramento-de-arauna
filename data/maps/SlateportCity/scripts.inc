@@ -1308,43 +1308,35 @@ SlateportCity_Text_ComeBackToTradeBerryPowder:
 	.string "Did you know?$"
 
 SlateportCity_Text_YouDroveTeamAquaAway:
-	.string "HORIZON: We are not soldiers. We are\n"
-	.string "technicians, guards and researchers.\l"
-	.string "That does not make every order we are\l"
-	.string "given right.$"
+	.string "SEU BENTO: Word travels fast.\p"
+	.string "You stopped a HORIZON field unit\n"
+	.string "from taking the parts by force.$"
 
 SlateportCity_Text_MaybeThisTrainer:
-	.string "CIRO: HORIZON never asked me to forget\n"
-	.string "anything. It only showed me there is a\l"
-	.string "future that does not have to be ruled\l"
-	.string "by the past.$"
+	.string "SEU BENTO: I follow TRAINERS who\n"
+	.string "notice what records miss.\p"
+	.string "You just entered my notebook.$"
 
 SlateportCity_Text_LetsRegisterEachOther:
-	.string "BENTO: All right! I think you're going\n"
-	.string "to become a good friend.\p"
-	.string "So, let's register each other in our\n"
-	.string "POKéNAVS.\p"
-	.string "… … … … … …$"
+	.string "SEU BENTO: You have my number.\p"
+	.string "I'll add my field route to your\n"
+	.string "POKéNAV too.\p"
+	.string "I can flag clues worth a trip.$"
 
 SlateportCity_Text_RegisteredScott:
-	.string "Registered this BENTO person\n"
-	.string "in the POKéNAV.$"
+	.string "SEU BENTO's field route was\n"
+	.string "added to the POKéNAV.$"
 
 SlateportCity_Text_KeepEyeOnTrainersBeSeeingYou:
-	.string "BENTO: What I'd like to do is tag along\n"
-	.string "with you, but I do want to keep an eye\l"
-	.string "on the talents of other people, too.\p"
-	.string "So, I'll be off to roam other towns\n"
-	.string "a bit more.\p"
-	.string "Be seeing you, {PLAYER}{KUN}!$"
+	.string "SEU BENTO: I'd stay, but roads\n"
+	.string "keep moving.\p"
+	.string "I'll note what survives off the\n"
+	.string "official maps.\p"
+	.string "See you, {PLAYER}.$"
 
 SlateportCity_Text_TakingBattleTentChallenge:
-	.string "BENTO: Oh, hey!\n"
-	.string "If it isn't {PLAYER}{KUN}!\p"
-	.string "{PLAYER}{KUN}, let me guess--you're going\n"
-	.string "to take the BATTLE TENT challenge?\p"
-	.string "Yeah! That's a good idea!\n"
-	.string "That's a really great idea!\p"
-	.string "After all, a tough TRAINER is\n"
-	.string "the perfect fit for the BATTLE TENT!\p"
-	.string "Give it your best effort!$"
+	.string "SEU BENTO: {PLAYER}!\p"
+	.string "Trying the BATTLE TENT? Good.\p"
+	.string "Places like this show what a\n"
+	.string "TRAINER does without a script.\p"
+	.string "Tell me how it went.$"
