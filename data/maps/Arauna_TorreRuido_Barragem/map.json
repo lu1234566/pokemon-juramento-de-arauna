@@ -1,0 +1,68 @@
+{
+  "id": "MAP_ARAUNA_TORRE_RUIDO_BARRAGEM",
+  "name": "Arauna_TorreRuido_Barragem",
+  "layout": "LAYOUT_ARAUNA_SERRA_INTERIORS_DEVONCORP_2F",
+  "music": "MUS_AQUA_HIDEOUT",
+  "region_map_section": "MAPSEC_MAUVILLE_CITY",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": false,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 14,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_ARAUNA_TORRE_RUIDO_CONTRATOS",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_ARAUNA_TORRE_RUIDO_SIFAO",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 2,
+      "y": 4,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "NoiseTower_ItemRECORDING"
+    },
+    {
+      "type": "sign",
+      "x": 7,
+      "y": 4,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "NoiseTower_ItemDRAWING"
+    },
+    {
+      "type": "sign",
+      "x": 10,
+      "y": 4,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "NoiseTower_ItemSCHOOL"
+    },
+    {
+      "type": "sign",
+      "x": 14,
+      "y": 4,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "NoiseTower_ItemDAM_REPORT"
+    }
+  ]
+}

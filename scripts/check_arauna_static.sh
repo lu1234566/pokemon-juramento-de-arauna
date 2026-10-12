@@ -71,4 +71,9 @@ python3 tools/arauna/check_faction_visual_identity.py
 # player with CIRO or with the other gender.
 python3 tools/arauna/check_protagonist_assets.py
 
+# Current optional arcs, including the listening circle at every phase.
+python3 tools/arauna_maps/validate_fogueira_arcos.py
+python3 tools/arauna/check_arcos_assets.py
+
 echo "Arauna static readiness: PASS (official rendered composition validated; ARM compile intentionally skipped)."
+

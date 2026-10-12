@@ -565,3 +565,10 @@ const u32 gObjectEventPic_AraunaSacinho[] = INCGFX_U32("graphics/object_events/p
 const u16 gObjectEventPal_AraunaSacinho[] = INCGFX_U16("graphics/object_events/palettes/arauna_385_sacinho.pal", ".gbapal");
 // END Arauna overworld redraws
 
+
+
+const u32 gObjectEventPic_Hermit[] = INCGFX_U32("graphics/object_events/pics/people/arauna/hermit.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u16 gObjectEventPal_Hermit[] = INCGFX_U16("graphics/object_events/palettes/hermit.pal", ".gbapal");
+
+const u32 gObjectEventPic_UivoPup[] = INCGFX_U32("graphics/object_events/pics/pokemon/arauna/guaracim_pup.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u16 gObjectEventPal_UivoPup[] = INCGFX_U16("graphics/object_events/palettes/guaracim_pup.pal", ".gbapal");

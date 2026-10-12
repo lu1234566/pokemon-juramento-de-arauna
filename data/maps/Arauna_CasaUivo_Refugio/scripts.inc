@@ -9,6 +9,7 @@ Arauna_CasaUivo_Refugio_MapScripts::
 @ said. Catching it is allowed and the story follows that choice too.
 
 CasaUivo_Refugio_OnTransition:
+	setvar VAR_OBJ_GFX_ID_F, ARAUNA_VIRTUAL_GFX_UIVO_PUP
 	setflag FLAG_ARAUNA_UIVO_HIDE_PUP
 	call_if_eq VAR_ARAUNA_UIVO_STATE, 4, CasaUivo_Refugio_ShowPup
 	end
@@ -131,3 +132,4 @@ CasaUivo_EventScript_Water::
 CasaUivo_Text_Water:
 	.string "Water falls through the rocks.\n"
 	.string "The path stays above the pool.$"
+

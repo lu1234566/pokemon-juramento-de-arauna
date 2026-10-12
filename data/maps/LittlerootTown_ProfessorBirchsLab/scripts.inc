@@ -945,6 +945,8 @@ LittlerootTown_ProfessorBirchsLab_Text_ScottAboardSSTidalCall:
 @ Luzes ferry only sails to for an AURORA TICKET. Mystery Gift was the only
 @ way to get one; now ANAHI hands it over at the sensor after the Hall of Fame.
 LittlerootTown_ProfessorBirchsLab_EventScript_TryGiveAuroraTicket::
+	goto_if_unset FLAG_ARAUNA_TOWER_COMPLETE, Common_EventScript_NopReturn
+	goto_if_unset FLAG_ARAUNA_ARAUA_AWAKENED, Common_EventScript_NopReturn
 	goto_if_set FLAG_ENABLE_SHIP_BIRTH_ISLAND, Common_EventScript_NopReturn
 	goto_if_set FLAG_BATTLED_DEOXYS, Common_EventScript_NopReturn
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_OneNeedlePointsToSea, MSGBOX_DEFAULT
@@ -964,8 +966,8 @@ LittlerootTown_ProfessorBirchsLab_Text_OneNeedlePointsToSea:
 	.string "It points out to sea, past the\n"
 	.string "BAIA DAS LUZES, to an island\l"
 	.string "no chart has a name for.\p"
-	.string "That signal is older than all the\n"
-	.string "others. Here, take this.$"
+	.string "It woke when the circle told\n"
+	.string "your story. Here, take this.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_AuroraTicketPort:
 	.string "ANAHI: Show it at the BAIA DAS LUZES\n"
@@ -983,3 +985,4 @@ LittlerootTown_ProfessorBirchsLab_Text_BondSensorAwake:
 	.string "Creatures from the oldest stories.\p"
 	.string "If you want to know where they are,\n"
 	.string "ask the sensor. It hasn't stopped.$"
+

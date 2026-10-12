@@ -4722,3 +4722,44 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_HoOh = {
     .images = sPicTable_HoOh,
     .affineAnims = gDummySpriteAffineAnimTable,
 };
+
+
+// Own story art, reached through a virtual gfx id. No persistent structure grows.
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Hermit = {
+    .tileTag = TAG_NONE,
+    .paletteTag = OBJ_EVENT_PAL_TAG_HERMIT,
+    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256,
+    .width = 16,
+    .height = 32,
+    .paletteSlot = PALSLOT_NPC_1,
+    .shadowSize = SHADOW_SIZE_S,
+    .inanimate = FALSE,
+    .disableReflectionPaletteLoad = TRUE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32,
+    .subspriteTables = sOamTables_16x32,
+    .anims = sAnimTable_Standard,
+    .images = sPicTable_Hermit,
+    .affineAnims = gDummySpriteAffineAnimTable,
+};
+
+// Own story art, reached through a virtual gfx id. No persistent structure grows.
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UivoPup = {
+    .tileTag = TAG_NONE,
+    .paletteTag = OBJ_EVENT_PAL_TAG_UIVO_PUP,
+    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 512,
+    .width = 32,
+    .height = 32,
+    .paletteSlot = PALSLOT_NPC_1,
+    .shadowSize = SHADOW_SIZE_S,
+    .inanimate = FALSE,
+    .disableReflectionPaletteLoad = TRUE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_32x32,
+    .subspriteTables = sOamTables_32x32,
+    .anims = sAnimTable_Standard,
+    .images = sPicTable_UivoPup,
+    .affineAnims = gDummySpriteAffineAnimTable,
+};

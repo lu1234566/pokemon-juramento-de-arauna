@@ -15312,3 +15312,13 @@ static const struct TrainerMonItemDefaultMoves sParty_AraunaFogueiraAdmin[] = {
     .heldItem = ITEM_SITRUS_BERRY,
     }
 };
+
+
+// TR07: a distinct flag from Meira's pre-League battle; never above cap 58.
+static const struct TrainerMonItemDefaultMoves sParty_AraunaTowerMeira[] = {
+    { .iv = 200, .lvl = 56, .species = SPECIES_NOSEPASS, .heldItem = ITEM_NONE },
+    { .iv = 200, .lvl = 56, .species = SPECIES_BAYLEEF, .heldItem = ITEM_NONE },
+    { .iv = 200, .lvl = 57, .species = SPECIES_TANGELA, .heldItem = ITEM_SITRUS_BERRY },
+    { .iv = 200, .lvl = 57, .species = SPECIES_WEEZING, .heldItem = ITEM_NONE },
+    { .iv = 200, .lvl = 58, .species = SPECIES_TAUROS, .heldItem = ITEM_SITRUS_BERRY },
+};

@@ -5,8 +5,7 @@ Arauna_CasaFogueira_Salao_MapScripts::
 @ Casa da Fogueira, S09-S13 -- DRAFT written from the synopsis
 @ (docs/ARCOS_RASCUNHO.md). Story Night opens with the seventh badge; HORIZON
 @ comes for the recordings and the circle holds; ARAUA answers from the fire;
-@ after the eighth badge -- the tower behind the player -- the circle welcomes
-@ them back. The listening circle above (FOGUEIRA RODA V1) is unchanged.
+@ after the League and the Noise Tower, the circle welcomes them back. The listening circle above (FOGUEIRA RODA V1) is unchanged.
 @
 @ VAR_ARAUNA_FOGUEIRA_STATE
 @   0  not started                    2  HORIZON gone, ARAUA not yet seen
@@ -38,8 +37,14 @@ Arauna_CasaFogueira_Salao_EventScript_Gathering::
 Arauna_CasaFogueira_Salao_EventScript_Voices::
 	lockall
 	faceplayer
+	msgbox Fogueira_Text_ChooseCircle, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, Fogueira_ListeningCircle
 	goto_if_ge VAR_ARAUNA_FOGUEIRA_STATE, 1, Fogueira_Keeper_Arc
 	goto_if_set FLAG_BADGE07_GET, Fogueira_StoryNight
+	msgbox Fogueira_Text_StorySoon, MSGBOX_DEFAULT
+	releaseall
+	end
+Fogueira_ListeningCircle:
 	goto_if_set FLAG_ARAUNA_FOGUEIRA_SHARED, Arauna_CasaFogueira_Salao_EventScript_CircleReturn
 	goto_if_set FLAG_ARAUNA_FOGUEIRA_LISTENED, Arauna_CasaFogueira_Salao_EventScript_OfferLetter
 	msgbox Arauna_CasaFogueira_Salao_Text_ListenOffer, MSGBOX_YESNO
@@ -338,6 +343,10 @@ Fogueira_Keeper_Arc:
 	goto_if_eq VAR_ARAUNA_FOGUEIRA_STATE, 1, Fogueira_Keeper_StillHere
 	goto_if_eq VAR_ARAUNA_FOGUEIRA_STATE, 2, Fogueira_Araua
 	goto_if_eq VAR_ARAUNA_FOGUEIRA_STATE, 3, Fogueira_Keeper_Waiting
+	goto_if_unset FLAG_SYS_GAME_CLEAR, Fogueira_Keeper_AfterReturn
+	goto_if_unset FLAG_ARAUNA_TOWER_COMPLETE, Fogueira_Keeper_AfterReturn
+	call_if_unset FLAG_ARAUNA_ARAUA_AWAKENED, Fogueira_FirstLegend
+Fogueira_Keeper_AfterReturn:
 	msgbox Fogueira_Text_KeeperAfterReturn, MSGBOX_DEFAULT
 	releaseall
 	end
@@ -350,12 +359,15 @@ Fogueira_Keeper_StillHere:
 	end
 
 Fogueira_Keeper_Waiting:
-	goto_if_set FLAG_BADGE08_GET, Fogueira_Return
+	goto_if_unset FLAG_SYS_GAME_CLEAR, Fogueira_Keeper_WaitingText
+	goto_if_set FLAG_ARAUNA_TOWER_COMPLETE, Fogueira_Return
+Fogueira_Keeper_WaitingText:
 	msgbox Fogueira_Text_KeeperWaiting, MSGBOX_DEFAULT
 	releaseall
 	end
 
 Fogueira_Return:
+	call_if_unset FLAG_ARAUNA_ARAUA_AWAKENED, Fogueira_FirstLegend
 	msgbox Fogueira_Text_Return, MSGBOX_DEFAULT
 	giveitem ITEM_SACRED_ASH
 	goto_if_eq VAR_RESULT, FALSE, Fogueira_ReturnBagFull
@@ -505,7 +517,7 @@ Fogueira_Text_ArauaSeen:
 	.string "Then it's only a fire again.$"
 
 Fogueira_Text_KeeperOnAraua:
-	.string "KEEPER: ARAUÁ.\p"
+	.string "KEEPER: Wings in an ember.\p"
 	.string "My grandmother said it comes when\n"
 	.string "a circle refuses to be silenced.\p"
 	.string "I always thought that was\n"
@@ -526,9 +538,8 @@ Fogueira_Text_KeeperWaiting:
 
 Fogueira_Text_Return:
 	.string "KEEPER: You came back.\p"
-	.string "We heard the sky over the islands\n"
-	.string "cleared after someone climbed\l"
-	.string "the old tower.\p"
+	.string "The NOISE TOWER has fallen silent.\n"
+	.string "Its records are with their people.\p"
 	.string "The circle saved your place.\n"
 	.string "And this is for you.$"
 
@@ -564,3 +575,53 @@ Fogueira_Text_PlanterAfterNight:
 Fogueira_Text_GirlAfterNight:
 	.string "I didn't tell a story, but I hummed\n"
 	.string "so loud their recorder broke!$"
+
+
+Fogueira_Text_ChooseCircle:
+	.string "Join the listening circle?\p"
+	.string "Choose NO to ask about Story Night\n"
+	.string "or the road beyond the League.$"
+
+Fogueira_Text_StorySoon:
+	.string "KEEPER: Story Night will come.\n"
+	.string "You can rest here until then.$"
+
+@ Act 32: the final telling occurs after the League and the Noise Tower.
+Fogueira_FirstLegend:
+	msgbox Fogueira_Text_FirstLegend, MSGBOX_DEFAULT
+	call_if_ge VAR_ARAUNA_UIVO_STATE, 8, Fogueira_FirstLegend_Howl
+	call_if_set FLAG_ARAUNA_FIRST_LINK_MADE, Fogueira_FirstLegend_Link
+	closemessage
+	playse SE_M_SACRED_FIRE
+	fadescreenspeed FADE_TO_WHITE, 6
+	playmoncry SPECIES_DEOXYS, CRY_MODE_NORMAL
+	waitmoncry
+	fadescreenspeed FADE_FROM_WHITE, 6
+	msgbox Fogueira_Text_FirstLegendAwake, MSGBOX_DEFAULT
+	setflag FLAG_ARAUNA_ARAUA_AWAKENED
+	return
+Fogueira_FirstLegend_Howl:
+	msgbox Fogueira_Text_FirstLegendHowl, MSGBOX_DEFAULT
+	return
+Fogueira_FirstLegend_Link:
+	msgbox Fogueira_Text_FirstLegendLink, MSGBOX_DEFAULT
+	return
+Fogueira_Text_FirstLegend:
+	.string "The tower is quiet. Stories still\n"
+	.string "need people to carry them.\p"
+	.string "You tell of the League and of\n"
+	.string "the records given back.\p"
+	.string "KEEPER: The first legend is not\n"
+	.string "the oldest. It is the next one\l"
+	.string "we agree to carry together.$"
+Fogueira_Text_FirstLegendHowl:
+	.string "You tell of a pup and a cloth,\n"
+	.string "and a room that learned to wait.$"
+Fogueira_Text_FirstLegendLink:
+	.string "You tell of the companion you chose\n"
+	.string "in the chamber under the mist.$"
+Fogueira_Text_FirstLegendAwake:
+	.string "The last page catches the firelight.\n"
+	.string "ARAUA opens its wings.\p"
+	.string "It stays long enough to hear\n"
+	.string "each voice, and every silence.$"

@@ -1,0 +1,17 @@
+{
+  "scene_ids": ["U03", "U08"],
+  "source_language": "pt-BR",
+  "target_language": "Libras",
+  "runtime_mode": "written_notebook",
+  "translation_status": "pending",
+  "qualified_translator": null,
+  "deaf_signing_reviewer": null,
+  "translation_reference": null,
+  "review_reference": null,
+  "storyboard_reference": null,
+  "approved_signed_assets": [],
+  "signed_scene_enabled": false,
+  "written_replay_label": "CasaUivo_Hermit_ReplayOffer",
+  "semantic_script": "docs/CASA_UIVO_LIBRAS_PRODUCAO.md",
+  "note": "Walking sprites and written dialogue are not a Libras translation."
+}

@@ -98,3 +98,14 @@ da sétima insígnia (`ARCOS_RASCUNHO.md`). A roda descrita acima continua igual
 e foi conferida de novo no emulador. Como o salão agora tem nove objetos e um
 script de mapa, `validate_fogueira_roda_v1.py` -- que confere o formato exato da
 entrega V1 -- não se aplica mais ao salão atual.
+
+
+## Atualização — validação atual e retorno pós-Torre
+
+O ponto de entrada V1 redireciona a `validate_fogueira_arcos.py`; o teste
+histórico foi preservado com o sufixo `_snapshot.py` e a opção `--legacy-v1`.
+A roda agora pode ser escolhida em todos os estados do arco, inclusive depois
+da sétima insígnia. O retorno com SACRED ASH exige Hall da Fama e conclusão
+da Torre do Ruído, com teste para mochila cheia e recompensa única.
+`ARCOS_V2_REVISAO.md` registra o fluxo próprio da Torre, os testes modelados
+e a aceitação visual ainda necessária.

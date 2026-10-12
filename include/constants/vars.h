@@ -361,3 +361,11 @@
 // END ARAUNA STORY ARCS
 
 #endif // GUARD_CONSTANTS_VARS_H
+
+
+// Post-League Noise Tower and the Uivo community commitment: unused save slots.
+#define VAR_ARAUNA_TOWER_STATE      VAR_UNUSED_0x40FB
+#define VAR_ARAUNA_TOWER_WORKERS    VAR_UNUSED_0x40FC
+#define VAR_ARAUNA_TOWER_ZILA       VAR_UNUSED_0x40FD
+#define VAR_ARAUNA_TOWER_CUSTODY    VAR_UNUSED_0x40FE
+#define VAR_ARAUNA_UIVO_ACCESS      VAR_UNUSED_0x40FF

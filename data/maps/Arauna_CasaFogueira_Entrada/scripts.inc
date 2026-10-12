@@ -1,5 +1,15 @@
 Arauna_CasaFogueira_Entrada_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, Fogueira_Entrada_OnTransition
 	.byte 0
+
+Fogueira_Entrada_OnTransition:
+	setflag FLAG_ARAUNA_TOWER_HIDE_CIRO
+	call_if_set FLAG_SYS_GAME_CLEAR, Fogueira_Entrada_ShowCiro
+	end
+
+Fogueira_Entrada_ShowCiro:
+	clearflag FLAG_ARAUNA_TOWER_HIDE_CIRO
+	return
 
 Arauna_CasaFogueira_Entrada_EventScript_Notice::
 	msgbox Arauna_CasaFogueira_Entrada_Text_Notice, MSGBOX_SIGN
@@ -48,3 +58,4 @@ Arauna_CasaFogueira_Entrada_Text_Welcome:
 	.string "You can join or just rest.\p"
 	.string "The memorial is to the left.\n"
 	.string "The door stays open.$"
+

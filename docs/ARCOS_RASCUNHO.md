@@ -29,11 +29,18 @@ Serra do Uivo (slot de Rustboro). Abre depois da **segunda insígnia**, que é o
 | U10 compromisso | Sala | Assinar o registro com a serra (sim/não). "Não" não fecha nada: dá para voltar. | → 7 |
 | U11 registro e selo | Sala | Um sino com um GUARÁ uivando no cabo: o **HOWL SEAL** (o Selo do Uivo) — no jogo é um SOOTHE BELL. | → 8 |
 
-O filhote usa a arte de overworld que o Guaracim já tinha no registro, pelo
-canal A do despachante. Quem escolhe a arte é `src/arauna_story.c`, uma tabela
-de criaturas de cena que roda depois da tabela de posicionamento e dos
-lendários; o `check_overworld_registry.py` passou a aceitar esse arquivo entre
-os que podem escrever o canal.
+O Eremita e o filhote agora têm arte própria: nove quadros de caminhada,
+PNG indexado de 4 bits e paleta exclusiva. Usam IDs virtuais nos canais de
+gráfico E/F, definidos na transição dos respectivos mapas. A espécie selvagem
+Guaracim e seu registro de overworld continuam intactos; o gancho
+`AraunaStory_OnTransition` não sobrescreve mais o canal A para esta cena.
+
+Depois do reconto, o compromisso registra intérprete comunitário, aulas
+contínuas ou conselho bilíngue com liderança surda. Recusar todas as opções
+mantém o estado 6. Depois de concluir o arco, o Eremita oferece replay do
+relato e do reconto escritos, respeitando o ramo do filhote e sem repetir
+missão ou recompensa. Isso não é Libras; a preparação linguística está em
+`CASA_UIVO_LIBRAS_PRODUCAO.md`.
 
 O Selo não trava o Pampa da Espera. A Bíblia liga o Selo à liberação narrativa
 do Pampa; isso fica para quando a progressão da Bíblia for adotada no grafo.
@@ -67,13 +74,20 @@ igual e funciona antes, durante e depois.
 | S09 Noite de História | 7ª insígnia, falando com o guardião | Contar uma história: o uivo, o laço partido ou o próprio caminho. As duas primeiras mudam se você viveu o arco do Uivo ou fez o rito da Câmara. | 0 → 1 |
 | S10 HORIZON | logo em seguida | BRENO e dois agentes entram para gravar tudo o que se disse na fogueira e levar ao LIVING ARCHIVE. "Ninguém aqui concordou." | 1 |
 | S11 defesa | logo em seguida | A roda se levanta; entre as batalhas os moradores bloqueiam a porta do memorial e as crianças cantarolam por cima dos gravadores. Duas batalhas com agentes (nv41–42) e BRENO (nv42–43). Perder não apaga nada: o HORIZON continua no salão e o guardião pergunta se você fica com a roda (por construção; a derrota não foi jogada no emulador). | 1 → 2 |
-| S12 Arauá | ao fim da defesa | O fogo sobe até as vigas, a tela clareia, o grito do ARAUÁ, uma forma de asas de fagulha olha cada rosto. | → 3 |
-| S13 volta depois da torre | 8ª insígnia | O guardião recebe você de volta e entrega SACRED ASH — "use para alguém que você não vai deixar ser esquecido" — e a dica de seguir a forma no fogo (o ticket de Arauá já sai do laboratório depois do Hall da Fama). | → 4 |
+| S12 presságio | ao fim da defesa | O fogo sobe até as vigas; uma forma de asas de fagulha olha cada rosto. Ainda é um presságio. | → 3 |
+| S13 volta depois da Torre do Ruído | Hall da Fama **e** `FLAG_ARAUNA_TOWER_COMPLETE` | O guardião recebe você, reconta blocos do save, presencia Arauá e entrega SACRED ASH. A mochila cheia mantém o estado 3; a recompensa não repete. | → 4 |
 
-Por que sétima e oitava insígnia: na ordem do Emerald que o jogo preserva, a
-crise da torre (TORRE JURAMENTO) acontece entre a sétima e a oitava. A Bíblia
-põe a Liga antes da Torre do Ruído; se essa ordem for adotada, basta trocar
-`FLAG_BADGE08_GET` pela flag da torre nova em `Fogueira_Keeper_Waiting`.
+A **Torre Juramento** continua resolvendo a crise de M'Boi entre a sétima e a
+oitava insígnias. Ela não é a **Torre do Ruído** do roteiro, que contém o
+Arquivo de Essência, contratos e Sifão-Mestre. A Torre do Ruído tem agora
+cinco salas próprias e só é acessível depois do Hall da Fama, por Ciro na
+entrada da Casa da Fogueira. Os eventos TR01–TR09 usam estado próprio,
+sem alterar as variáveis de Sky Pillar ou M'Boi. Ver `ARCOS_V2_REVISAO.md`.
+
+O guardião oferece a roda de escuta em todos os estados. Escolher NO nessa
+oferta abre a conversa sobre a Noite de História ou sobre o retorno do arco.
+O Aurora Ticket de Anahi passa a exigir a conclusão da Torre e o despertar
+na Fogueira; tickets e recompensas já obtidos em saves antigos são mantidos.
 
 Os três treinadores do HORIZON são novos e foram acrescentados no fim
 (`TRAINER_ARAUNA_FOGUEIRA_AGENT_1`, `_AGENT_2`, `_ADMIN`, ids 855–857). BRENO é
@@ -118,18 +132,27 @@ No mGBA, com a ROM de teste (o harness fica fora do repositório):
 - Build oficial e todos os gates do projeto passando; largura de texto dentro
   dos 208 px.
 
-`tools/arauna_maps/validate_fogueira_roda_v1.py` certifica a **entrega V1** da
-roda e confere o salão contra aquele formato exato (seis moradores sem flag,
-cabeçalho sem scripts de mapa). Com o S09–S13 o salão deixa de ter esse
-formato, então esse validador não se aplica mais ao salão atual; a roda foi
-conferida no emulador no lugar dele.
+O comando antigo `validate_fogueira_roda_v1.py` agora redireciona ao
+validador atual `validate_fogueira_arcos.py`. O teste histórico foi preservado
+em `validate_fogueira_roda_v1_snapshot.py` e pode ser chamado com
+`--legacy-v1`, somente num checkout/pacote V1 exato.
+
+O validador atual interpreta os comandos do fonte e confere geometria,
+visibilidade por estado, consentimento, derrota modelada, retomada,
+capacidade da mochila e recompensas únicas. Não executa o engine ARM nem
+certifica arte/timing em emulador. Os testes antigos de emulador descritos
+acima pertencem à versão anterior; a aceitação visual desta alteração deve
+ser registrada separadamente.
 
 ## O que continua pendente
 
 - A cena sinalizada do Uivo, com tradução e revisão qualificadas.
-- Arte própria do Eremita, da criança e do filhote (hoje: sprites genéricos e a
-  arte de overworld do Guaracim).
+- Arte própria da criança e assets de sinalização aprovados. Eremita e
+  filhote já têm sprites próprios de caminhada; não são sinais em Libras.
 - O "sistema de pânico" que o contrato menciona para U06–U09: aqui a batalha
   de acalmar é uma batalha selvagem comum com o desfecho narrado.
-- A liberação do Pampa pelo Selo, e a ordem Liga → Torre do Ruído da Bíblia.
+- A liberação do Pampa pelo Selo. A ordem Liga → Torre do Ruído → Fogueira
+  já tem um fluxo próprio; os detalhes integrais dos eixos de Vínculo e dos
+  finais do roteiro ainda não são os deste rascunho.
 - Revisão do texto pelo autor.
+

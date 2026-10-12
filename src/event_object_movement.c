@@ -580,6 +580,8 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_TAG_BENTO                          0x11C4
 #define OBJ_EVENT_PAL_TAG_BRENO                          0x11C5
 #define OBJ_EVENT_PAL_TAG_RAUL                           0x11C6
+#define OBJ_EVENT_PAL_TAG_HERMIT                         0x1200
+#define OBJ_EVENT_PAL_TAG_UIVO_PUP                       0x1201
 #define OBJ_EVENT_PAL_TAG_MAIRA                            0x11C7
 #define OBJ_EVENT_PAL_TAG_DARIO                            0x11C8
 #define OBJ_EVENT_PAL_TAG_NILO                             0x11C9
@@ -710,6 +712,8 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_Bento,                 OBJ_EVENT_PAL_TAG_BENTO},
     {gObjectEventPal_Breno,                 OBJ_EVENT_PAL_TAG_BRENO},
     {gObjectEventPal_Raul,                  OBJ_EVENT_PAL_TAG_RAUL},
+    {gObjectEventPal_Hermit,                OBJ_EVENT_PAL_TAG_HERMIT},
+    {gObjectEventPal_UivoPup,               OBJ_EVENT_PAL_TAG_UIVO_PUP},
     {gObjectEventPal_Maira,            OBJ_EVENT_PAL_TAG_MAIRA},
     {gObjectEventPal_Dario,            OBJ_EVENT_PAL_TAG_DARIO},
     {gObjectEventPal_Nilo,             OBJ_EVENT_PAL_TAG_NILO},
@@ -2266,6 +2270,8 @@ static u16 AraunaOverworldSelection(u16 var)
 // graphics info here and its constant in include/constants/event_objects.h.
 static const struct ObjectEventGraphicsInfo *const sAraunaVirtualGraphicsInfo[ARAUNA_VIRTUAL_GFX_COUNT] = {
     [ARAUNA_VIRTUAL_GFX_RAUL - ARAUNA_VIRTUAL_GFX_START] = &gObjectEventGraphicsInfo_Raul,
+    [ARAUNA_VIRTUAL_GFX_HERMIT - ARAUNA_VIRTUAL_GFX_START] = &gObjectEventGraphicsInfo_Hermit,
+    [ARAUNA_VIRTUAL_GFX_UIVO_PUP - ARAUNA_VIRTUAL_GFX_START] = &gObjectEventGraphicsInfo_UivoPup,
 };
 
 static const struct ObjectEventGraphicsInfo *AraunaGetVirtualGraphicsInfo(u16 virtualId)
@@ -2542,6 +2548,8 @@ static const u16 sAraunaExclusivePaletteTags[] = {
     OBJ_EVENT_PAL_TAG_BENTO,
     OBJ_EVENT_PAL_TAG_BRENO,
     OBJ_EVENT_PAL_TAG_RAUL,
+    OBJ_EVENT_PAL_TAG_HERMIT,
+    OBJ_EVENT_PAL_TAG_UIVO_PUP,
     OBJ_EVENT_PAL_TAG_MAIRA,
     OBJ_EVENT_PAL_TAG_DARIO,
     OBJ_EVENT_PAL_TAG_NILO,
@@ -9702,3 +9710,4 @@ void SetAraunaOverworldForCurrentMap(void)
         }
     }
 }
+

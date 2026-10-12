@@ -15,6 +15,7 @@ Arauna_CasaUivo_Sala_MapScripts::
 @   4  cloth taken
 
 CasaUivo_Sala_OnTransition:
+	setvar VAR_OBJ_GFX_ID_E, ARAUNA_VIRTUAL_GFX_HERMIT
 	setflag FLAG_ARAUNA_UIVO_HIDE_NEIGHBOR
 	setflag FLAG_ARAUNA_UIVO_HIDE_CIRCLE
 	call_if_ge VAR_ARAUNA_UIVO_STATE, 5, CasaUivo_Sala_ShowCircle
@@ -83,6 +84,9 @@ CasaUivo_EventScript_Hermit::
 	case 5, CasaUivo_Hermit_Retelling
 	case 6, CasaUivo_Hermit_Record
 	case 7, CasaUivo_Hermit_Seal
+	goto CasaUivo_Hermit_ReplayOffer
+
+CasaUivo_Hermit_After:
 	msgbox CasaUivo_Text_HermitAfter, MSGBOX_DEFAULT
 	release
 	end
@@ -166,6 +170,9 @@ CasaUivo_Hermit_RetellingDone:
 CasaUivo_Hermit_Record:
 	msgbox CasaUivo_Text_HermitAsksToSign, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, CasaUivo_Hermit_NotSigning
+	goto CasaUivo_Hermit_AccessChoice
+
+CasaUivo_Hermit_RecordAccepted:
 	setvar VAR_ARAUNA_UIVO_STATE, 7
 	playse SE_EXP_MAX
 	msgbox CasaUivo_Text_Signing, MSGBOX_DEFAULT
@@ -401,3 +408,55 @@ CasaUivo_Text_Miner:
 	.string "echoes twice.”\p"
 	.string "“Up here we're learning to\n"
 	.string "listen once.”$"
+
+
+@ Production fallback: replay the written account, never pretend it is Libras.
+CasaUivo_Hermit_ReplayOffer:
+	msgbox CasaUivo_Text_ReplayOffer, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, CasaUivo_Hermit_After
+	msgbox CasaUivo_Text_HermitAccount, MSGBOX_DEFAULT
+	msgbox CasaUivo_Text_RoomIsFull, MSGBOX_DEFAULT
+	goto_if_set FLAG_ARAUNA_UIVO_PUP_CAUGHT, CasaUivo_Hermit_ReplayCaught
+	msgbox CasaUivo_Text_RetellingHome, MSGBOX_DEFAULT
+	goto CasaUivo_Hermit_ReplayEnd
+CasaUivo_Hermit_ReplayCaught:
+	msgbox CasaUivo_Text_RetellingTravels, MSGBOX_DEFAULT
+CasaUivo_Hermit_ReplayEnd:
+	msgbox CasaUivo_Text_CircleAnswers, MSGBOX_DEFAULT
+	release
+	end
+CasaUivo_Text_ReplayOffer:
+	.string "Read his written account again?\n"
+	.string "The mission will not repeat.$"
+
+CasaUivo_Hermit_AccessChoice:
+	goto_if_ge VAR_ARAUNA_UIVO_ACCESS, 1, CasaUivo_Hermit_RecordAccepted
+	msgbox CasaUivo_Text_InterpreterOffer, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, CasaUivo_Access_Interpreter
+	msgbox CasaUivo_Text_ClassesOffer, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, CasaUivo_Access_Classes
+	msgbox CasaUivo_Text_CouncilOffer, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, CasaUivo_Hermit_NotSigning
+	setvar VAR_ARAUNA_UIVO_ACCESS, 3
+	goto CasaUivo_Access_Chosen
+CasaUivo_Access_Interpreter:
+	setvar VAR_ARAUNA_UIVO_ACCESS, 1
+	goto CasaUivo_Access_Chosen
+CasaUivo_Access_Classes:
+	setvar VAR_ARAUNA_UIVO_ACCESS, 2
+CasaUivo_Access_Chosen:
+	msgbox CasaUivo_Text_AccessChosen, MSGBOX_DEFAULT
+	goto CasaUivo_Hermit_RecordAccepted
+CasaUivo_Text_InterpreterOffer:
+	.string "He writes: 'This room must change.'\p"
+	.string "Fund a community interpreter?$"
+CasaUivo_Text_ClassesOffer:
+	.string "Start regular Libras classes\n"
+	.string "for the community?$"
+CasaUivo_Text_CouncilOffer:
+	.string "Form a bilingual council with\n"
+	.string "deaf residents leading it?$"
+CasaUivo_Text_AccessChosen:
+	.string "The village records the commitment.\p"
+	.string "He writes: 'You will have to return.\n"
+	.string "A promise needs people, not ink.'$"

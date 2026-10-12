@@ -754,6 +754,23 @@
       "graphics_id_reason": "Existing OBJ_EVENT_GFX_DONA_ZILA alias of OBJ_EVENT_GFX_UNUSED_NATU_DOLL, whose graphics info she is the only user of. No object id added and no generic old-woman graphic replaced.",
       "asset_batch": "Arauna Lote06",
       "runtime_tested": false
+    },
+    {
+      "name": "EREMITA DO UIVO",
+      "kind": "civilian NPC",
+      "surfaces": [
+        "overworld"
+      ],
+      "object_event": "OBJ_EVENT_GFX_VAR_E",
+      "virtual_graphics_id": "ARAUNA_VIRTUAL_GFX_HERMIT",
+      "graphics_info": "Hermit",
+      "overworld": "graphics/object_events/pics/people/arauna/hermit.png",
+      "overworld_palette": "graphics/object_events/palettes/hermit.pal",
+      "palette_tag": "OBJ_EVENT_PAL_TAG_HERMIT",
+      "palette_slot": "ARAUNA_EXCLUSIVE_POOL",
+      "palette_slot_reason": "Dedicated pool tag; unused NPC_1 fallback in CasaUivo_Sala.",
+      "asset_batch": "Arauna Arcos V2",
+      "runtime_tested": false
     }
   ],
   "protagonist_states": [

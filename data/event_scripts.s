@@ -1075,3 +1075,11 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Arauna_CasaFogueira_Entrada/scripts.inc"
 	.include "data/maps/Arauna_CasaFogueira_Memorial/scripts.inc"
 	.include "data/maps/Arauna_CasaFogueira_Salao/scripts.inc"
+
+
+	.include "data/scripts/arauna_noise_tower.inc"
+	.include "data/maps/Arauna_TorreRuido_Recepcao/scripts.inc"
+	.include "data/maps/Arauna_TorreRuido_Essencia/scripts.inc"
+	.include "data/maps/Arauna_TorreRuido_Contratos/scripts.inc"
+	.include "data/maps/Arauna_TorreRuido_Barragem/scripts.inc"
+	.include "data/maps/Arauna_TorreRuido_Sifao/scripts.inc"
