@@ -51,7 +51,7 @@ O rito cerimonial de Arauá continua no encontro existente de Birth Island.
 | Variáveis | 0x40FB–0x40FE para Torre; 0x40FF para compromisso do Uivo. |
 | Flags | 0x043–0x04C: conclusão, três lotes, quatro documentos, despertar de Arauá e visibilidade de Ciro. |
 | Gráficos | IDs virtuais 0x1001/0x1002; canais E/F preparados na transição. |
-| Paletas | Tags 0x1200/0x1201 na tabela; Eremita no pool com fallback NPC_1, filhote no slot especial exclusivo do Refúgio. |
+| Paletas | Tags 0x1200/0x1201 na tabela; Eremita e filhote no slot especial exclusivo de suas salas separadas. |
 
 Nenhuma estrutura persistente, limite de flags, slot de insígnia ou variável
 de progressão de Emerald foi ampliado. Estado 4 da Fogueira em save antigo
@@ -70,7 +70,7 @@ bash scripts/build_arauna.sh -j2 all
 ```
 
 O modelo percorre 2.240 cenários da roda, 30 de Fogueira, 1.728 jornadas da
-Torre sete casos do Uivo e 33 do Aurora Ticket. Confere saídas, interações acessíveis, formas de
+Torre, sete casos do Uivo e 33 do Aurora Ticket. Confere saídas, interações acessíveis, formas de
 recusa, perda e retomada da batalha, mochila cheia e idempotência. As linhas
 medidas ficam dentro de 208 pixels, com reserva para nome de jogador de sete
 caracteres. Essa contagem é de caminhos de eventos modelados, não de jornadas

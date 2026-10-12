@@ -767,8 +767,8 @@
       "overworld": "graphics/object_events/pics/people/arauna/hermit.png",
       "overworld_palette": "graphics/object_events/palettes/hermit.pal",
       "palette_tag": "OBJ_EVENT_PAL_TAG_HERMIT",
-      "palette_slot": "ARAUNA_EXCLUSIVE_POOL",
-      "palette_slot_reason": "Dedicated pool tag; unused NPC_1 fallback in CasaUivo_Sala.",
+      "palette_slot": "PALSLOT_NPC_SPECIAL",
+      "palette_slot_reason": "Private fixed special slot in CasaUivo_Sala; its other four NPCs use generic slots 1, 2 and 3. Avoids weather overwriting the general sprite pool.",
       "asset_batch": "Arauna Arcos V2",
       "runtime_tested": false,
       "overworld_maps": [

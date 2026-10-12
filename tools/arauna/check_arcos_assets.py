@@ -45,6 +45,17 @@ def main():
         obj=json.loads((map_path/'map.json').read_text())['object_events'][0]
         assert obj['graphics_id']=='OBJ_EVENT_GFX_VAR_'+gfx_var
         assert f'setvar VAR_OBJ_GFX_ID_{gfx_var}, ARAUNA_VIRTUAL_GFX_{tag}' in (map_path/'scripts.inc').read_text()
+        own_info=info.split('gObjectEventGraphicsInfo_'+sym+' = {',1)[1].split('};',1)[0]
+        assert '.paletteSlot = PALSLOT_NPC_SPECIAL,' in own_info
+        pool=movement.split('static const u16 sAraunaExclusivePaletteTags[] = {',1)[1].split('};',1)[0]
+        assert 'OBJ_EVENT_PAL_TAG_'+tag not in pool
+        if sym=='Hermit':
+            # The room's remaining occupants use generic NPC slots. Weather
+            # may reuse pool banks, so this isolated private slot is deliberate.
+            others=json.loads((map_path/'map.json').read_text())['object_events'][1:]
+            assert {o['graphics_id'] for o in others} <= {
+                'OBJ_EVENT_GFX_LITTLE_GIRL','OBJ_EVENT_GFX_HIKER',
+                'OBJ_EVENT_GFX_WOMAN_3','OBJ_EVENT_GFX_MAN_2'}
         if sym=='UivoPup':
             # This map has one object; its private special slot never competes
             # with another character. Creature sheets remain outside the human
