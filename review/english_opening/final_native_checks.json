@@ -1,0 +1,61 @@
+{
+  "rom_sha256": "a788f4968bb217c428f6a131046141edf55adf4670605e59295d43f542a8e521",
+  "engine": "mGBA 0.10.2",
+  "full_boot": true,
+  "decoded_frames_match_manifest": 660,
+  "all_frames_in_order": true,
+  "movie_hardware_frames": 2657,
+  "movie_seconds": 44.485371060231884,
+  "audio_capture_rate": 32768,
+  "audio_samples": 1457696,
+  "audio_nonzero_samples": 1443447,
+  "title_and_menu": true,
+  "new_game_setup": true,
+  "skips": [
+    {
+      "key": 1,
+      "frame": 1,
+      "menu": true,
+      "heap_freed": true
+    },
+    {
+      "key": 8,
+      "frame": 213,
+      "menu": true,
+      "heap_freed": true
+    },
+    {
+      "key": 2,
+      "frame": 578,
+      "menu": true,
+      "heap_freed": true
+    },
+    {
+      "key": 4,
+      "frame": 14,
+      "menu": true,
+      "heap_freed": true
+    }
+  ],
+  "idle_replay": true,
+  "heap_freed": true,
+  "permanent_ram_bytes": {
+    "EWRAM": 247164,
+    "IWRAM": 29156
+  },
+  "rom_content_bytes": 31588204,
+  "temporary_decode_allocation": 19800,
+  "audio_comparison": {
+    "capture_rate": 32768,
+    "capture_seconds": 44.4853515625,
+    "rms": 1418.6417114806457,
+    "correlation": 0.9631683008364074,
+    "source_window_seconds": [
+      2,
+      4
+    ],
+    "offset_seconds": 0.03462500000000013
+  },
+  "new_game_task": "Task_NewGameBirchSpeech_ThisIsAPokemon",
+  "save_shortcut": "Opened default NO prompt and cancelled without erase"
+}
