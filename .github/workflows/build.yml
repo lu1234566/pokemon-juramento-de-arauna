@@ -27,7 +27,7 @@ jobs:
       - name: Install host sprite validation dependency
         run: |
           sudo apt-get update
-          sudo apt-get install -y python3-pil
+          sudo apt-get install -y python3-pil ripgrep
 
       - name: Validate canonical English rendered composition
         run: bash scripts/check_arauna_static.sh
@@ -44,7 +44,7 @@ jobs:
       - name: Install build dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y gcc-arm-none-eabi binutils-arm-none-eabi libpng-dev
+          sudo apt-get install -y gcc-arm-none-eabi binutils-arm-none-eabi libpng-dev ripgrep
 
       - name: Build English-only Arauna ROM
         run: |
