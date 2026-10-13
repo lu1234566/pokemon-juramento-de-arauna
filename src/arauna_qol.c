@@ -13,6 +13,7 @@
 #include "daycare.h"
 #include "event_data.h"
 #include "pokemon.h"
+#include "script_pokemon_util.h"
 #include "constants/daycare.h"
 #include "constants/flags.h"
 #include "constants/pokemon.h"

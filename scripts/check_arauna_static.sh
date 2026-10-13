@@ -80,5 +80,11 @@ python3 tools/arauna/check_protagonist_assets.py
 python3 tools/arauna_maps/validate_fogueira_arcos.py
 python3 tools/arauna/check_arcos_assets.py
 
+# Reproducible native assets and the map/interrupt RAM bounds.
+python3 tools/arauna/check_ram_budget.py
+python3 tools/arauna/fit_sprite_coordinates.py
+python3 tools/arauna/build_ui_labels.py
+python3 tools/arauna/build_native_cries.py
+
 echo "Arauna static readiness: PASS (official rendered composition validated; ARM compile intentionally skipped)."
 

@@ -57,14 +57,12 @@ AraunaQol_EventScript_Relearn::
 	special AraunaSpecial_EggMoveModeOff
 	msgbox AraunaQol_Text_WhichPokemon, MSGBOX_DEFAULT
 	special ChooseMonForMoveRelearner
-	waitstate
 	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, AraunaQol_EventScript_Choose
 	special IsSelectedMonEgg
 	goto_if_eq VAR_RESULT, TRUE, AraunaQol_EventScript_NotAnEgg
 	goto_if_eq VAR_0x8005, 0, AraunaQol_EventScript_NothingToRelearn
 	msgbox AraunaQol_Text_WhichMove, MSGBOX_DEFAULT
 	special TeachMoveRelearnerMove
-	waitstate
 	goto_if_eq VAR_0x8004, 0, AraunaQol_EventScript_Relearn
 	msgbox AraunaQol_Text_MoveRemembered, MSGBOX_DEFAULT
 	goto AraunaQol_EventScript_Choose
@@ -82,14 +80,12 @@ AraunaQol_EventScript_EggMoves::
 	special AraunaSpecial_EggMoveModeOn
 	msgbox AraunaQol_Text_WhichPokemonEgg, MSGBOX_DEFAULT
 	special ChooseMonForMoveRelearner
-	waitstate
 	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, AraunaQol_EventScript_Done
 	special IsSelectedMonEgg
 	goto_if_eq VAR_RESULT, TRUE, AraunaQol_EventScript_NotAnEgg
 	goto_if_eq VAR_0x8005, 0, AraunaQol_EventScript_NoEggMoves
 	msgbox AraunaQol_Text_WhichEggMove, MSGBOX_DEFAULT
 	special TeachMoveRelearnerMove
-	waitstate
 	goto_if_eq VAR_0x8004, 0, AraunaQol_EventScript_EggMoves
 	msgbox AraunaQol_Text_EggMoveTaught, MSGBOX_DEFAULT
 	goto AraunaQol_EventScript_EggMoves
@@ -112,7 +108,6 @@ AraunaQol_EventScript_Storage::
 	msgbox AraunaQol_Text_AccessedStorage, MSGBOX_DEFAULT
 	playse SE_PC_LOGIN
 	special ShowPokemonStorageSystemPC
-	waitstate
 	goto AraunaQol_EventScript_Choose
 	end
 

@@ -91,13 +91,9 @@ dano é aplicado, o multiplicador já está embutido e não dá mais para separa
 
 Nada aqui foi encoberto:
 
-1. **RIVER SONG está quase sem uso.** Ela vale para golpes sonoros, e o learnset
-   do Iaraú tem **um só**, UPROAR, no nível 70. Acrescentei DISARMING VOICE e
-   IARA SONG à lista de golpes sonoros (são sonoros por qualquer leitura, e a
-   Soundproof também deveria barrá-los), mas o Iaraú não aprende nenhum dos dois.
-   **Ou o learnset dele ganha um golpe sonoro cedo, ou a habilidade fica morta.**
-   É uma decisão de design, não de código, então está aqui e não foi resolvida
-   por conta própria.
+1. **RIVER SONG tem golpes sonoros desde o começo.** Iaraú aprende
+   DISARMING VOICE no nível 1 e IARA SONG no nível 42, além de UPROAR no
+   nível 70. Os dois primeiros também respeitam Soundproof.
 2. **SUN CROWN e ABSOLUTE SUN são a mesma coisa.** Vem assim do pacote: as duas
    pedem "sol forte por 5 turnos".
 3. **A mensagem da queda é a genérica.** "{PKMN}'s SPEED fell!", sem citar a
@@ -109,8 +105,9 @@ Nada aqui foi encoberto:
 5. **ANCIENT FIRE desfaz a penalidade da chuva dobrando o dano**, porque a
    penalidade é uma divisão inteira que já aconteceu. É exato a menos de uma
    unidade de arredondamento.
-6. **WINGED WATCH compara a velocidade com os estágios, mas ignora paralisia.**
-   Ela pergunta quem é mais rápido por natureza, não quem está mancando.
+6. **WINGED WATCH usa a velocidade efetiva.** Os estágios e a redução de
+   paralisia do Gen III entram na comparação; prioridade e Quick Claw são
+   mecanismos separados da ordem de ação.
 7. **ETERNAL BOND só protege o parceiro em doubles.** Em singles é igual à
    ENDURANCE.
 8. **"Sem clima" quer dizer sem clima em efeito** — Cloud Nine e Air Lock contam

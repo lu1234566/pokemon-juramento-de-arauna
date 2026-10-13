@@ -1,6 +1,7 @@
 #include "global.h"
 #include "gba/m4a_internal.h"
 #include "sound.h"
+#include "arauna_cries.h"
 #include "battle.h"
 #include "m4a.h"
 #include "main.h"
@@ -375,6 +376,11 @@ void PlayCryInternal(u16 species, s8 pan, s8 volume, u8 priority, u8 mode)
     u32 chorus;
     u32 index;
     u8 table;
+    const struct ToneData *araunaTone;
+    u16 originalSpecies = species;
+
+    if (species == SPECIES_NONE || species == SPECIES_EGG || species > SPECIES_UNOWN_QMARK)
+        return;
 
     species--;
 
@@ -464,6 +470,13 @@ void PlayCryInternal(u16 species, s8 pan, s8 volume, u8 priority, u8 mode)
     SetPokemonCryChorus(chorus);
     SetPokemonCryPriority(priority);
 
+    araunaTone = AraunaGetCryTone(originalSpecies, reverse);
+    if (araunaTone != NULL)
+    {
+        gMPlay_PokemonCry = SetPokemonCryTone((struct ToneData *)araunaTone);
+        return;
+    }
+
     // This is a fancy way to get a cry of a Pokémon.
     // It creates 4 sets of 128 mini cry tables.
     // If you wish to expand Pokémon, you need to
@@ -509,18 +522,20 @@ bool8 IsCryFinished(void)
 
 void StopCryAndClearCrySongs(void)
 {
-    m4aMPlayStop(gMPlay_PokemonCry);
+    if (gMPlay_PokemonCry != NULL)
+        m4aMPlayStop(gMPlay_PokemonCry);
     ClearPokemonCrySongs();
 }
 
 void StopCry(void)
 {
-    m4aMPlayStop(gMPlay_PokemonCry);
+    if (gMPlay_PokemonCry != NULL)
+        m4aMPlayStop(gMPlay_PokemonCry);
 }
 
 bool8 IsCryPlayingOrClearCrySongs(void)
 {
-    if (IsPokemonCryPlaying(gMPlay_PokemonCry))
+    if (gMPlay_PokemonCry != NULL && IsPokemonCryPlaying(gMPlay_PokemonCry))
     {
         return TRUE;
     }
@@ -533,7 +548,7 @@ bool8 IsCryPlayingOrClearCrySongs(void)
 
 bool8 IsCryPlaying(void)
 {
-    if (IsPokemonCryPlaying(gMPlay_PokemonCry))
+    if (gMPlay_PokemonCry != NULL && IsPokemonCryPlaying(gMPlay_PokemonCry))
         return TRUE;
     else
         return FALSE;
@@ -547,7 +562,7 @@ static void Task_DuckBGMForPokemonCry(u8 taskId)
         return;
     }
 
-    if (!IsPokemonCryPlaying(gMPlay_PokemonCry))
+    if (!IsCryPlaying())
     {
         m4aMPlayVolumeControl(&gMPlayInfo_BGM, TRACKS_ALL, 256);
         DestroyTask(taskId);

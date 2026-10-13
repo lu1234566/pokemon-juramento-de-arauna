@@ -124,3 +124,4 @@ IntrMain_RetAddr:
 	.pool
 
 	.align 2, 0 @ Don't pad with nop.
+IntrMain_End::

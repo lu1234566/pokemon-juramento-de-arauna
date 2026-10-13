@@ -36,8 +36,13 @@ bool8 AraunaIsSoundMove(u16 move)
 // nature, not who is limping this turn.
 static u32 EffectiveSpeed(struct BattlePokemon *mon)
 {
-    return (mon->speed * gStatStageRatios[mon->statStages[STAT_SPEED]][0])
-         / gStatStageRatios[mon->statStages[STAT_SPEED]][1];
+    // Compare effective speed; priority and Quick Claw are handled separately.
+    u32 speed = (mon->speed * gStatStageRatios[mon->statStages[STAT_SPEED]][0])
+              / gStatStageRatios[mon->statStages[STAT_SPEED]][1];
+
+    if (mon->status1 & STATUS1_PARALYSIS)
+        speed /= 4;
+    return speed;
 }
 
 static bool8 IsWeather(u16 mask)

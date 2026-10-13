@@ -3025,10 +3025,16 @@ void SetBoxMonData(struct BoxPokemon *boxMon, s32 field, const void *dataArg)
         SET16(substruct1->moves[field - MON_DATA_MOVE1]);
         break;
     case MON_DATA_PP1:
+        SET8(substruct1->pp[0]);
+        break;
     case MON_DATA_PP2:
+        SET8(substruct1->pp[1]);
+        break;
     case MON_DATA_PP3:
+        SET8(substruct1->pp[2]);
+        break;
     case MON_DATA_PP4:
-        SET8(substruct1->pp[field - MON_DATA_PP1]);
+        SET8(substruct1->pp[3]);
         break;
     case MON_DATA_HP_EV:
         SET8(substruct2->hpEV);

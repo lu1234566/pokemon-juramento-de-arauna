@@ -48,7 +48,6 @@ PrimeiraCamara_LinkAway:
 PrimeiraCamara_ChooseLink:
 	msgbox PrimeiraCamara_Text_Choose, MSGBOX_DEFAULT
 	special ChoosePartyMon
-	waitstate
 	goto_if_ge VAR_0x8004, PARTY_SIZE, PrimeiraCamara_RiteLater
 	special AraunaBond_ReadSelected
 	switch VAR_RESULT

@@ -34,6 +34,10 @@ SECTIONS {
         *libnosys.a:*.o(COMMON);
     } > IWRAM
 
+    ASSERT(SIZEOF(ewram) <= 0x3C600, "EWRAM budget exceeded: keep 14.5 KiB free")
+    ASSERT(SIZEOF(iwram) <= 0x7200, "IWRAM budget exceeded: keep 3.5 KiB free")
+    ASSERT((IntrMain_End - IntrMain) <= 0x200, "IntrMain exceeds its 512-byte IWRAM buffer")
+
     /* BEGIN ROM DATA */
     . = 0x8000000;
 
