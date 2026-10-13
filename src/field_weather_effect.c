@@ -8,6 +8,7 @@
 #include "script.h"
 #include "constants/weather.h"
 #include "constants/maps.h"
+#include "constants/rgb.h"
 #include "constants/songs.h"
 #include "sound.h"
 #include "sprite.h"
@@ -38,13 +39,36 @@ static void CreateCloudSprites(void);
 static void DestroyCloudSprites(void);
 static void UpdateCloudSprite(struct Sprite *);
 
-// The clouds are positioned on the map's grid.
-// These coordinates are for the lower half of Route 120.
-static const struct Coords16 sCloudSpriteMapCoords[] =
+// Arauna draws WEATHER_SUNNY_CLOUDS as cloud shadows drifting across the
+// ground. Vanilla's three clouds were reflections pinned to fixed map
+// coordinates in the lower half of Route 120 and drawn under every layer, so
+// they only showed through that route's ponds. Every other map with this
+// weather -- Vila Amanhecer and Route 101 among them -- had those coordinates
+// fall off the map, wrap around the screen and show through whichever ground
+// tiles sat on the bottom layer, as torn cyan scraps.
+//
+// Each shadow starts at a screen position and lives in a field one sprite
+// wider and taller than the screen, so one drifting or walked off an edge
+// comes back in at the other without popping in where the player can see.
+static const struct Coords16 sCloudShadowScreenCoords[] =
 {
-    { 0, 66},
-    { 5, 73},
-    {10, 78},
+    { 48,  40},
+    {168, 120},
+    {264,  16},
+};
+#define CLOUD_FIELD_WIDTH  (DISPLAY_WIDTH + 64)
+#define CLOUD_FIELD_HEIGHT (DISPLAY_HEIGHT + 64)
+
+// A shadow is a dark slate blended at low weight over the ground: darkest on
+// the cloud's underside, softest on its upper edge.
+static const u16 sCloudShadowPalette[16] =
+{
+    [0] = RGB(0, 0, 0),
+    [1] = RGB(3, 3, 5),
+    [2] = RGB(4, 5, 7),
+    [3] = RGB(8, 9, 11),
+    [4] = RGB(6, 7, 10),
+    [5] = RGB(5, 6, 8),
 };
 
 static const struct SpriteSheet sCloudSpriteSheet =
@@ -66,7 +90,7 @@ static const struct OamData sCloudSpriteOamData =
     .matrixNum = 0,
     .size = SPRITE_SIZE(64x64),
     .tileNum = 0,
-    .priority = 3,
+    .priority = 2, // over the ground, behind the people (subpriority 0xFF)
     .paletteNum = 0,
     .affineParam = 0,
 };
@@ -119,7 +143,7 @@ void Clouds_Main(void)
         gWeatherPtr->initStep++;
         break;
     case 1:
-        Weather_SetTargetBlendCoeffs(12, 8, 1);
+        Weather_SetTargetBlendCoeffs(6, 10, 1);
         gWeatherPtr->initStep++;
         break;
     case 2:
@@ -181,7 +205,7 @@ static void CreateCloudSprites(void)
         return;
 
     LoadSpriteSheet(&sCloudSpriteSheet);
-    LoadCustomWeatherSpritePalette(gCloudsWeatherPalette);
+    LoadCustomWeatherSpritePalette(sCloudShadowPalette);
     for (i = 0; i < NUM_CLOUD_SPRITES; i++)
     {
         spriteId = CreateSprite(&sCloudSpriteTemplate, 0, 0, 0xFF);
@@ -189,7 +213,8 @@ static void CreateCloudSprites(void)
         {
             gWeatherPtr->sprites.s1.cloudSprites[i] = &gSprites[spriteId];
             sprite = gWeatherPtr->sprites.s1.cloudSprites[i];
-            SetSpritePosToMapCoords(sCloudSpriteMapCoords[i].x + MAP_OFFSET, sCloudSpriteMapCoords[i].y + MAP_OFFSET, &sprite->x, &sprite->y);
+            sprite->x = sCloudShadowScreenCoords[i].x - gSpriteCoordOffsetX;
+            sprite->y = sCloudShadowScreenCoords[i].y - gSpriteCoordOffsetY;
             sprite->coordOffsetEnabled = TRUE;
         }
         else
@@ -220,10 +245,21 @@ static void DestroyCloudSprites(void)
 
 static void UpdateCloudSprite(struct Sprite *sprite)
 {
+    s32 x, y;
+
     // Move 1 pixel left every 2 frames.
     sprite->data[0] = (sprite->data[0] + 1) & 1;
     if (sprite->data[0])
         sprite->x--;
+
+    // Wrap into the field around the camera, measured from the sprite's
+    // centre on screen, so walking or drifting never strands a shadow.
+    x = sprite->x + gSpriteCoordOffsetX + 32;
+    y = sprite->y + gSpriteCoordOffsetY + 32;
+    x = ((x % CLOUD_FIELD_WIDTH) + CLOUD_FIELD_WIDTH) % CLOUD_FIELD_WIDTH;
+    y = ((y % CLOUD_FIELD_HEIGHT) + CLOUD_FIELD_HEIGHT) % CLOUD_FIELD_HEIGHT;
+    sprite->x = x - 32 - gSpriteCoordOffsetX;
+    sprite->y = y - 32 - gSpriteCoordOffsetY;
 }
 
 //------------------------------------------------------------------------------

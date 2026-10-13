@@ -318,3 +318,13 @@ sombra preta: o reflexo lia o banco seguinte, que no vanilla guarda a versão
 tingida da paleta e no Arauna é um segundo banco especial. Quem não declara
 paleta de reflexo agora reflete com as próprias cores
 (`GetReflectionPaletteNum` em `src/field_effect_helpers.c`).
+
+**Os morros de outra cor.** Os degraus das Rotas 102, 103, 104 e 115 tinham o
+topo verde-água e a face rosada. Era a paleta 3 do tileset geral do Emerald —
+a dos degraus, margens e areia — copiada inteira para os tilesets de borda
+dessas rotas, enquanto a grama em volta já tinha sido repintada no verde-oliva
+do Arauna. As nove cores dessa cópia passaram para a grama e a terra do próprio
+mapa (topo `90a858/709048/487030`, face na rampa da terra do caminho
+`c89858/a87840/785028`). As outras cópias ficaram: na Mata de Petalburg e nas
+Rotas 113, 119 e 123 essas cores são o desenho do lugar, e a do tileset geral
+é dividida por mapas que dependem dela.

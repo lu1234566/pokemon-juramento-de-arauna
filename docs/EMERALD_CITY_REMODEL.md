@@ -24,6 +24,23 @@ usa areia, então nem esse fundo muda.
 Ou seja: clima aqui é ambientação, não regra. O que **é** regra e ficou de fora
 está na seção "O que não foi tocado".
 
+## `WEATHER_SUNNY_CLOUDS` são sombras de nuvem
+
+No Emerald, as três nuvens desse clima eram **reflexos** presos a coordenadas
+fixas da metade de baixo da Rota 120 e desenhados abaixo de todas as camadas:
+só apareciam através das lagoas daquela rota. Nos outros mapas com esse clima
+— Vila Amanhecer, Rota 101, Pampa da Espera, Porto das Redes, Encruzilhada e
+os demais desta tabela — as coordenadas caíam fora do mapa, davam a volta na
+tela e vazavam pelos tiles de chão que ficam na camada de baixo, como retalhos
+azul-claros de borda reta.
+
+Agora o clima desenha **sombras de nuvem** atravessando o chão
+(`src/field_weather_effect.c`): três sombras de 64×64 em azul-ardósia, mistura
+6/10, prioridade de sprite 2 com subprioridade mínima — por cima do chão e por
+baixo das pessoas — num campo uma sombra maior que a tela, de modo que a que sai
+por uma borda volta pela outra sem aparecer do nada. A deriva é a do Emerald, um
+pixel para a esquerda a cada dois quadros.
+
 ## As dezesseis cidades
 
 | Cidade | Nome no Arauna | Identidade | Clima |
