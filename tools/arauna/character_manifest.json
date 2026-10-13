@@ -791,7 +791,7 @@
       "surfaces_not_applicable": {
         "front": "ANAHI never battles. Her only portrait is the opening's graphics/birch_speech/birch.png, which is not a trainer pic."
       },
-      "art_note": "Head redrawn with the bun from the opening portrait; lab coat, green dress and hair repainted in that portrait's colours. Body and walk cycle come from the Birch slot she inherited, so all nine frames walk.",
+      "art_note": "Delivered as Arauna_Anahi_e_Ciro_Overworld (2026-10-13), drawn from the opening portrait. Pixels installed unchanged; the PNG container was normalised to the 16-entry JASC palette with index 0 transparent.",
       "runtime_tested": true
     }
   ],

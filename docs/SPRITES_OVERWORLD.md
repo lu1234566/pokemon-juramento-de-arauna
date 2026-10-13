@@ -268,18 +268,23 @@ na cena do resgate. `NPC_3` fica só como fallback.
 vieram como uma rampa de 11 tons de sépia (saturação 27 e 29), sem rosto
 legível e com duas das três caminhadas repetindo a pose parada. Não dava para
 salvá-las só trocando a paleta: os tons iam do claro ao escuro sem separar
-cabelo, pele e roupa. As duas foram refeitas sobre corpos que já andam
-direito, com as cores dos retratos que o jogador vê:
+cabelo, pele e roupa. A de agosto da ANAHI tinha as cores certas mas ocupava
+os 32 px do quadro, com o coque cortado na borda de cima.
 
-| | base | o que mudou | cores de |
+As duas foram substituídas pela entrega `Arauna_Anahi_e_Ciro_Overworld`
+(13/10), pedida a partir dos retratos que o jogador já vê:
+
+| | visual | cores de | medidas |
 |---|---|---|---|
-| ANAHI | Birch da vanilla, o slot que ela herdou | cabeça redesenhada com o coque, short virou barra de vestido | retrato da abertura (`birch_speech/birch.png`) |
-| CIRO fase 1 | folha do protagonista (mesma escala e ciclo de caminhada) | cabelo preto, jaqueta cinza-esverdeada, bolsa marrom, sem o lenço vermelho | retrato de batalha (`ciro_fase1.png`) |
+| ANAHI | coque com laço verde, jaleco branco aberto, vestido verde, botas | retrato da abertura (`birch_speech/birch.png`) | 21 px, topo y=10, 14 tons |
+| CIRO fase 1 | cabelo preto espetado, jaqueta cinza-esverdeada, bolsa a tiracolo, jeans | retrato de batalha (`ciro_fase1.png`) | 21 px, topo y=10, 15 tons |
 
-O CIRO tem a silhueta do protagonista, como o rival da vanilla tinha a do
-jogador; o que separa os dois é a cor — cabelo preto contra castanho, jaqueta
-cinza contra colete marrom e lenço vermelho. Corpo 21 px, topo y=10, nove
-quadros com as caminhadas alternando; as duas saíram de `KNOWN_DEAD_WALK_POSES`.
+Os pixels entraram intactos. Só o recipiente foi normalizado: o PNG da ANAHI
+trazia 15 entradas de paleta e nenhum `tRNS`, e o QC exige as 16 entradas da
+JASC e o índice 0 transparente. A conferência de que nada mudou é o binário:
+`gObjectEventPic_ProfBirch`, `gObjectEventPic_CiroMay` e as duas paletas,
+lidos da ROM montada, batem byte a byte com os `compiled/overworld.4bpp` e
+`overworld.gbapal` da entrega. As duas saíram de `KNOWN_DEAD_WALK_POSES`.
 
 **O jogador aparecia como CIRO em mais lugares.** A vanilla vestia o rival
 com a roupa do outro protagonista, então "o avatar do rival" também servia de
