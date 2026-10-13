@@ -456,5 +456,36 @@
       "palette_rgb_match": "PASS",
       "gbapal_roundtrip": "PASS"
     }
-  ]
+  ],
+  "intro": {
+    "name": "anahi",
+    "surface": "intro",
+    "status": "PASS",
+    "size": [
+      64,
+      64
+    ],
+    "bit_depth": 4,
+    "palette_entries": 16,
+    "visible_colors": 15,
+    "transparent_index": 0,
+    "figure_bbox": [
+      17,
+      2,
+      59,
+      64
+    ],
+    "figure_height": 62,
+    "figure_width": 42,
+    "foot": 63,
+    "binary_bytes": 2048,
+    "binary_roundtrip": "PASS",
+    "gbapal_roundtrip": "PASS",
+    "png_sha256": "f82c75c857c31393a49aed498e906e4d1fa04e95adad72b71bb91c00315f6dc7",
+    "repo_path": "graphics/birch_speech/birch.png",
+    "palette_source": "same PNG",
+    "runtime_tested": false,
+    "repository_reference": "56f3d2a1b9ec68c49135d549395398f7b574f991"
+  },
+  "surfaces": 3
 }
