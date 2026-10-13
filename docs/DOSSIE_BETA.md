@@ -86,11 +86,11 @@ ingles -- e a regra que `docs/GLOSSARIO_EN.md` fixa.
 | capturaveis na natureza | 293 |
 | mapas com encontro | 116 |
 | learnsets proprios | 412 |
-| golpes ensinados por nivel | 5260 |
+| golpes ensinados por nivel | 5262 |
 | relacoes evolutivas | 81 |
 | habilidades novas | 35 |
 | golpes exclusivos | 27 |
-| treinadores no jogo | 858 |
+| treinadores no jogo | 859 |
 
 ## O caminho do jogo
 
@@ -751,7 +751,7 @@ grama, agua ou pesca. As outras vem por evolucao, presente ou evento.
 | 329 | Guaraciana | Fire/Fairy | 606 | — | 18 |
 | 330 | Jaciana | Fairy/Water | 602 | — | 20 |
 | 331 | Tupanaú | Electric/Dragon | 604 | — | 15 |
-| 332 | Iaraú | Water/Fairy | 606 | sim | 19 |
+| 332 | Iaraú | Water/Fairy | 606 | sim | 21 |
 | 333 | Kuarahy | Fire/Psychic | 603 | — | 15 |
 | 334 | Yasy | Fairy/Dark | 605 | — | 20 |
 | 335 | Rudarauna | Fairy/Psychic | 607 | — | 20 |

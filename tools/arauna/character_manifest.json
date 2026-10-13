@@ -254,7 +254,7 @@
       "overworld": "graphics/object_events/pics/people/ciro/phase1_brendan.png",
       "overworld_palette": "graphics/object_events/palettes/ciro_f1.pal",
       "palette_tag": "OBJ_EVENT_PAL_TAG_CIRO_F1",
-      "palette_slot": "PALSLOT_NPC_SPECIAL",
+      "palette_slot": "ARAUNA_EXCLUSIVE_POOL",
       "phase": "1",
       "graphics_info_shared_with": "CIRO F1 MIRROR",
       "front": "graphics/trainers/front_pics/ciro_fase1.png",
@@ -263,7 +263,8 @@
       "same_slot_safe_with": {
         "ELIAS": "Audited: never on screen together. ELIAS is hidden behind FLAG_HIDE_PLAYERS_HOUSE_DAD, which nothing clears until hall_of_fame.inc, and the rival's ground-floor object is hidden at new game and never shown again."
       },
-      "front_split_note": "O retrato de batalha nao e mais o do jogador. CIRO foi separado dos slots TRAINER_PIC_BRENDAN/MAY e tem os seus proprios; o lote 09 repontou os do jogador para protagonist_m/f, e os dois nao se encontram mais."
+      "front_split_note": "O retrato de batalha nao e mais o do jogador. CIRO foi separado dos slots TRAINER_PIC_BRENDAN/MAY e tem os seus proprios; o lote 09 repontou os do jogador para protagonist_m/f, e os dois nao se encontram mais.",
+      "palette_slot_reason": "Allocated from the general sprite palette pool, with PALSLOT_NPC_SPECIAL left as the graphics-info fallback. The rival is spawned through VAR_OBJ_GFX_ID_0, so no static map scan sees him, and on the fixed special slot he shared bank 10 with the Arauna creature on channel A: on Route 103 he was drawn in JACARODON's colours. The engine still picks the rival graphic opposite the player's gender, and only one is ever spawned, so the shared tag never contends."
     },
     {
       "name": "CIRO F1 MIRROR",
@@ -276,9 +277,9 @@
       "overworld": "graphics/object_events/pics/people/ciro/phase1_may.png",
       "overworld_palette": "graphics/object_events/palettes/ciro_f1.pal",
       "palette_tag": "OBJ_EVENT_PAL_TAG_CIRO_F1",
-      "palette_slot": "PALSLOT_NPC_SPECIAL",
+      "palette_slot": "ARAUNA_EXCLUSIVE_POOL",
       "phase": "1",
-      "palette_slot_reason": "The engine picks the rival graphic opposite the player's gender, so CIRO occupies both rival slots with one design and one palette. Only one of the two is ever spawned, so the shared tag never contends.",
+      "palette_slot_reason": "Allocated from the general sprite palette pool, with PALSLOT_NPC_SPECIAL left as the graphics-info fallback. The rival is spawned through VAR_OBJ_GFX_ID_0, so no static map scan sees him, and on the fixed special slot he shared bank 10 with the Arauna creature on channel A: on Route 103 he was drawn in JACARODON's colours. The engine still picks the rival graphic opposite the player's gender, and only one is ever spawned, so the shared tag never contends.",
       "graphics_info_shared_with": "CIRO F1",
       "front": "graphics/trainers/front_pics/ciro_fase1.png",
       "trainer_pic": "TRAINER_PIC_CIRO_FASE1",

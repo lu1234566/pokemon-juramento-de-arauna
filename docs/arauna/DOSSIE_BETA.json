@@ -4,7 +4,7 @@
   "na_natureza": 293,
   "mapas_com_encontro": 116,
   "learnsets": 412,
-  "entradas_de_golpe": 5260
+  "entradas_de_golpe": 5262
  },
  "evolucoes": {
   "total": 81,
@@ -3612,7 +3612,7 @@
    ],
    "bst": 606,
    "selvagem": true,
-   "golpes_por_nivel": 19
+   "golpes_por_nivel": 21
   },
   {
    "dex": 333,
@@ -4511,7 +4511,7 @@
    110
   ]
  ],
- "treinadores": 858,
+ "treinadores": 859,
  "elenco": [
   [
    "ARCHIE",

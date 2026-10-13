@@ -1,9 +1,9 @@
 map,channel,arauna_dex,name,x,y
 Route101,A,022,Muriçoco,29,21
 Route101,B,139,Cigarrão,13,11
-Route102,A,005,Queribela,44,5
-Route102,B,027,Botogaláu,3,4
-Route103,A,036,Jacarodon,3,9
+Route102,A,005,Queribela,42,6
+Route102,B,027,Botogaláu,37,11
+Route103,A,036,Jacarodon,5,15
 Route103,B,048,Boiuna,28,8
 Route104,A,108,Iemanjá,3,48
 Route104,B,109,Oxum,3,40
@@ -19,7 +19,7 @@ Route111,B,030,Tatuçu,18,30
 Route114,A,297,Corcovado-Ancião,10,53
 Route116,A,045,Antaraú,17,13
 Route116,B,088,Teiuzim,51,15
-Route118,A,111,Cavalim,50,12
+Route118,A,111,Cavalim,45,12
 Route118,B,115,Ovelhinha,21,7
 Route119,A,369,Sanfoninha,24,101
 Route119,B,009,Petropico,3,83

@@ -19,6 +19,7 @@ static void UpdateObjectReflectionSprite(struct Sprite *);
 static void LoadObjectReflectionPalette(struct ObjectEvent *objectEvent, struct Sprite *sprite);
 static void LoadObjectHighBridgeReflectionPalette(struct ObjectEvent *, u8);
 static void LoadObjectRegularReflectionPalette(struct ObjectEvent *, u8);
+static u8 GetReflectionPaletteNum(struct ObjectEvent *, u8);
 static void UpdateGrassFieldEffectSubpriority(struct Sprite *, u8, u8);
 static void FadeFootprintsTireTracks_Step0(struct Sprite *);
 static void FadeFootprintsTireTracks_Step1(struct Sprite *);
@@ -51,7 +52,7 @@ void SetUpReflection(struct ObjectEvent *objectEvent, struct Sprite *sprite, boo
     reflectionSprite = &gSprites[CreateCopySpriteAt(sprite, sprite->x, sprite->y, 152)];
     reflectionSprite->callback = UpdateObjectReflectionSprite;
     reflectionSprite->oam.priority = 3;
-    reflectionSprite->oam.paletteNum = gReflectionEffectPaletteMap[reflectionSprite->oam.paletteNum];
+    reflectionSprite->oam.paletteNum = GetReflectionPaletteNum(objectEvent, reflectionSprite->oam.paletteNum);
     reflectionSprite->usingSheet = TRUE;
     reflectionSprite->anims = gDummySpriteAnimTable;
     StartSpriteAnim(reflectionSprite, 0);
@@ -65,6 +66,21 @@ void SetUpReflection(struct ObjectEvent *objectEvent, struct Sprite *sprite, boo
 
     if (!stillReflection)
         reflectionSprite->oam.affineMode = ST_OAM_AFFINE_NORMAL;
+}
+
+// Vanilla keeps the bank after PALSLOT_NPC_SPECIAL as the tinted twin of the
+// special character's palette, for its reflection. Arauna uses that bank as a
+// second special bank instead, and a character with colours of its own declares
+// no reflection palette, so nothing ever fills the twin: a creature over water
+// reflected as a black shape, or in the colours of whoever held the second
+// bank. Such a reflection reads the character's own bank, the way the pool
+// banks already map to themselves.
+static u8 GetReflectionPaletteNum(struct ObjectEvent *objectEvent, u8 paletteNum)
+{
+    if (paletteNum == PALSLOT_NPC_SPECIAL
+     && GetObjectEventGraphicsInfo(objectEvent->graphicsId)->reflectionPaletteTag == OBJ_EVENT_PAL_TAG_NONE)
+        return paletteNum;
+    return gReflectionEffectPaletteMap[paletteNum];
 }
 
 static s16 GetReflectionVerticalOffset(struct ObjectEvent *objectEvent)
@@ -131,7 +147,7 @@ static void UpdateObjectReflectionSprite(struct Sprite *reflectionSprite)
     }
     else
     {
-        reflectionSprite->oam.paletteNum = gReflectionEffectPaletteMap[mainSprite->oam.paletteNum];
+        reflectionSprite->oam.paletteNum = GetReflectionPaletteNum(objectEvent, mainSprite->oam.paletteNum);
         reflectionSprite->oam.shape = mainSprite->oam.shape;
         reflectionSprite->oam.size = mainSprite->oam.size;
         reflectionSprite->oam.matrixNum = mainSprite->oam.matrixNum | ST_OAM_VFLIP;

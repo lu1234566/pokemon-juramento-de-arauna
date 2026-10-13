@@ -292,3 +292,29 @@ com a roupa do outro protagonista, então "o avatar do rival" também servia de
 aparecer no lugar do jogador na tela de nome, no teleférico, no Easy Chat e,
 em link, no lugar dos outros jogadores. Esses pontos agora pedem os sprites
 dos protagonistas.
+
+**Os "fantasmas" da Rota 103.** O segundo teste no celular mostrou duas
+figuras esverdeadas e meio transparentes. Eram duas coisas:
+
+- O CIRO da Rota 103 era desenhado com as cores do JACARODON. O rival nasce por
+  `VAR_OBJ_GFX_ID_0`, então nenhuma varredura estática o vê, e no slot especial
+  fixo ele dividia o banco 10 com a criatura do canal A. Ele passou para o pool
+  exclusivo, como a ANAHI; o slot especial ficou só de fallback.
+- As criaturas de 64×64 que ficavam no meio do capim alto ou atrás de cerca
+  tinham o corpo coberto pela camada de cima desses tiles. Medido pixel a pixel
+  (quanto da arte cai sob um tile que é desenhado por cima dos objetos), cinco
+  mudaram de lugar, com as mesmas regras de colocação de antes — tile livre,
+  longe de porta, três vizinhos abertos, sem cortar caminho:
+
+| criatura | mapa | antes | depois | escondido antes → depois |
+|---|---|---|---|---|
+| JACARODON | Route103 | (3,9) | (5,15) | 100% → 2% |
+| BOTOGALÁU | Route102 | (3,4) | (37,11) | 100% → 0% |
+| QUERIBELA | Route102 | (44,5) | (42,6), no meio da lagoa | 45% → 2% |
+| CAVALIM | Route118 | (50,12) | (45,12) | 17% → 0% |
+
+**Reflexo preto.** Uma criatura no slot especial sobre a água refletia como uma
+sombra preta: o reflexo lia o banco seguinte, que no vanilla guarda a versão
+tingida da paleta e no Arauna é um segundo banco especial. Quem não declara
+paleta de reflexo agora reflete com as próprias cores
+(`GetReflectionPaletteNum` em `src/field_effect_helpers.c`).
