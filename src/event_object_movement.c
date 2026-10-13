@@ -582,6 +582,7 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_TAG_RAUL                           0x11C6
 #define OBJ_EVENT_PAL_TAG_HERMIT                         0x1200
 #define OBJ_EVENT_PAL_TAG_UIVO_PUP                       0x1201
+#define OBJ_EVENT_PAL_TAG_ANAHI                          0x1202
 #define OBJ_EVENT_PAL_TAG_MAIRA                            0x11C7
 #define OBJ_EVENT_PAL_TAG_DARIO                            0x11C8
 #define OBJ_EVENT_PAL_TAG_NILO                             0x11C9
@@ -714,6 +715,7 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_Raul,                  OBJ_EVENT_PAL_TAG_RAUL},
     {gObjectEventPal_Hermit,                OBJ_EVENT_PAL_TAG_HERMIT},
     {gObjectEventPal_UivoPup,               OBJ_EVENT_PAL_TAG_UIVO_PUP},
+    {gObjectEventPal_Anahi,                 OBJ_EVENT_PAL_TAG_ANAHI},
     {gObjectEventPal_Maira,            OBJ_EVENT_PAL_TAG_MAIRA},
     {gObjectEventPal_Dario,            OBJ_EVENT_PAL_TAG_DARIO},
     {gObjectEventPal_Nilo,             OBJ_EVENT_PAL_TAG_NILO},
@@ -2561,6 +2563,7 @@ static const u16 sAraunaExclusivePaletteTags[] = {
     OBJ_EVENT_PAL_TAG_LEMBRANTE_F,
     OBJ_EVENT_PAL_TAG_MAE_PROTAGONISTA,
     OBJ_EVENT_PAL_TAG_RECEPCIONISTA_LINK,
+    OBJ_EVENT_PAL_TAG_ANAHI,
     OBJ_EVENT_PAL_TAG_NONE
 };
 

@@ -91,12 +91,14 @@ linha dessa lista é uma promessa, não um perdão: **apague a linha quando
 redesenhar o personagem**, e a partir daí o sheet é checado como qualquer
 outro. Qualquer sheet novo já entra checado.
 
-### Os treze que faltam
+### Os que faltam
 
-`prof_birch` (ANAHI), `team_aqua/archie`, `team_magma/maxie`,
-`ciro/phase1_brendan`, `ciro/phase1_may`, `ciro/phase2`, `ciro/phase3`,
+`team_aqua/archie`, `team_magma/maxie`, `ciro/phase2`, `ciro/phase3`,
 `dona_zila`, `elite_four/drake`, `elite_four/glacia`, `gym_leaders/flannery`,
 `gym_leaders/roxanne`.
+
+`prof_birch` (ANAHI) e `ciro/phase1_brendan` / `ciro/phase1_may` saíram da
+lista em outubro — ver "ANAHI e CIRO fase 1" no fim do arquivo.
 
 `hot_springs_old_woman` é da vanilla assim mesmo — não é problema do projeto.
 
@@ -244,3 +246,44 @@ duas viravam uma mancha escura só. Depois, as duas ficam separadas, cada uma no
 seu tile, com o avanço de 6 px sobre o tile de cima que **todo** NPC da vanilla
 tem. A cena também exercita a alocação de paleta exclusiva para dois
 personagens no mesmo mapa ao mesmo tempo.
+
+
+## ANAHI e CIRO fase 1 (outubro)
+
+O teste da beta no celular mostrou os dois logo no começo do jogo: a ANAHI
+na Rota 101 como um borrão de cores trocadas e o CIRO no quarto dele como uma
+figura cinza. Eram dois defeitos diferentes.
+
+**ANAHI estava com a paleta errada.** A folha que entrou em setembro trazia
+cores próprias, mas o slot que ela herdou do Birch continuava pedindo
+`OBJ_EVENT_PAL_TAG_NPC_3`, a paleta genérica do Birch. Cada índice da arte
+nova saía com a cor de outro personagem. O QC não pegou porque ela nunca
+esteve em `tools/arauna/character_manifest.json` — agora está. Ganhou
+`OBJ_EVENT_PAL_TAG_ANAHI` (`0x1202`, acrescentada no fim, depois do filhote
+do Uivo), a entrada em `sObjectEventSpritePalettes` e um lugar no pool
+exclusivo. Na Rota 101 o pool é obrigatório: o cachorro ocupa o slot especial
+na cena do resgate. `NPC_3` fica só como fallback.
+
+**As duas folhas de setembro eram bege.** As de ANAHI e de CIRO fase 1
+vieram como uma rampa de 11 tons de sépia (saturação 27 e 29), sem rosto
+legível e com duas das três caminhadas repetindo a pose parada. Não dava para
+salvá-las só trocando a paleta: os tons iam do claro ao escuro sem separar
+cabelo, pele e roupa. As duas foram refeitas sobre corpos que já andam
+direito, com as cores dos retratos que o jogador vê:
+
+| | base | o que mudou | cores de |
+|---|---|---|---|
+| ANAHI | Birch da vanilla, o slot que ela herdou | cabeça redesenhada com o coque, short virou barra de vestido | retrato da abertura (`birch_speech/birch.png`) |
+| CIRO fase 1 | folha do protagonista (mesma escala e ciclo de caminhada) | cabelo preto, jaqueta cinza-esverdeada, bolsa marrom, sem o lenço vermelho | retrato de batalha (`ciro_fase1.png`) |
+
+O CIRO tem a silhueta do protagonista, como o rival da vanilla tinha a do
+jogador; o que separa os dois é a cor — cabelo preto contra castanho, jaqueta
+cinza contra colete marrom e lenço vermelho. Corpo 21 px, topo y=10, nove
+quadros com as caminhadas alternando; as duas saíram de `KNOWN_DEAD_WALK_POSES`.
+
+**O jogador aparecia como CIRO em mais lugares.** A vanilla vestia o rival
+com a roupa do outro protagonista, então "o avatar do rival" também servia de
+"alguém com cara de jogador". Com os slots do rival virando CIRO, ele passou a
+aparecer no lugar do jogador na tela de nome, no teleférico, no Easy Chat e,
+em link, no lugar dos outros jogadores. Esses pontos agora pedem os sprites
+dos protagonistas.

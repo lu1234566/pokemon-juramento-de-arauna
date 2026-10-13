@@ -572,3 +572,7 @@ const u16 gObjectEventPal_Hermit[] = INCGFX_U16("graphics/object_events/palettes
 
 const u32 gObjectEventPic_UivoPup[] = INCGFX_U32("graphics/object_events/pics/pokemon/arauna/guaracim_pup.png", ".4bpp", "-mwidth 4 -mheight 4");
 const u16 gObjectEventPal_UivoPup[] = INCGFX_U16("graphics/object_events/palettes/guaracim_pup.pal", ".gbapal");
+
+// ANAHI took over the Birch slot with art of her own, so she needs her own
+// colours too: the slot's shared NPC_3 palette painted her in Birch's.
+const u16 gObjectEventPal_Anahi[] = INCGFX_U16("graphics/object_events/palettes/anahi.pal", ".gbapal");

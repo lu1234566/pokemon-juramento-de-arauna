@@ -774,6 +774,25 @@
       "overworld_maps": [
         "Arauna_CasaUivo_Sala"
       ]
+    },
+    {
+      "name": "ANAHI",
+      "kind": "story NPC",
+      "surfaces": [
+        "overworld"
+      ],
+      "object_event": "OBJ_EVENT_GFX_PROF_BIRCH",
+      "graphics_info": "ProfBirch",
+      "overworld": "graphics/object_events/pics/people/prof_birch.png",
+      "overworld_palette": "graphics/object_events/palettes/anahi.pal",
+      "palette_tag": "OBJ_EVENT_PAL_TAG_ANAHI",
+      "palette_slot": "ARAUNA_EXCLUSIVE_POOL",
+      "palette_slot_reason": "Allocated from the general sprite palette pool, with PALSLOT_NPC_3 left as the graphics-info fallback. She was never in this manifest, so nothing noticed that her redrawn sheet kept the Birch slot's shared NPC_3 tag and rendered in Birch's colours. Route 101 needs the pool: the dog holds the special slot in the rescue scene.",
+      "surfaces_not_applicable": {
+        "front": "ANAHI never battles. Her only portrait is the opening's graphics/birch_speech/birch.png, which is not a trainer pic."
+      },
+      "art_note": "Head redrawn with the bun from the opening portrait; lab coat, green dress and hair repainted in that portrait's colours. Body and walk cycle come from the Birch slot she inherited, so all nine frames walk.",
+      "runtime_tested": true
     }
   ],
   "protagonist_states": [
