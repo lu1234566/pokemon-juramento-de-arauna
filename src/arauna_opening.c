@@ -28,6 +28,7 @@ static EWRAM_DATA volatile u32 sOpeningSamples = 0;
 static EWRAM_DATA volatile u16 sOpeningFrame = 0;
 static EWRAM_DATA volatile u16 sPreparedFrame = 0;
 static EWRAM_DATA volatile bool8 sFrameReady = FALSE;
+static EWRAM_DATA volatile bool8 sOpeningSkipRequested = FALSE;
 static EWRAM_DATA volatile u8 sOpeningPage = 0;
 
 static const u8 ALIGNED(4) sOpeningWave[] = INCBIN_U8("sound/direct_sound_samples/arauna_opening_en.bin");
@@ -97,6 +98,8 @@ static void RenderFrame(u16 frame, u8 page)
 static void VBlankOpening(void)
 {
     sOpeningSamples += gSoundInfo.pcmSamplesPerVBlank;
+    if ((~REG_KEYINPUT) & (A_BUTTON | START_BUTTON | B_BUTTON | SELECT_BUTTON))
+        sOpeningSkipRequested = TRUE;
     if (sFrameReady && (sOpeningSamples * OPENING_FPS) / OPENING_RATE >= sPreparedFrame)
     {
         sOpeningPage ^= 1;
@@ -118,7 +121,7 @@ static void EndOpening(void)
 
 static void CB2_PlayAraunaOpening(void)
 {
-    if (JOY_NEW(A_BUTTON | START_BUTTON | B_BUTTON | SELECT_BUTTON))
+    if (sOpeningSkipRequested || JOY_NEW(A_BUTTON | START_BUTTON | B_BUTTON | SELECT_BUTTON))
     {
         EndOpening();
         return;
@@ -151,6 +154,7 @@ void CB2_InitAraunaOpening(void)
     }
     CpuCopy32(AraunaOpening_DecodeTiles, sOpeningDecoder, (u8 *)AraunaOpening_DecodeTilesEnd - (u8 *)AraunaOpening_DecodeTiles);
     sOpeningSamples = 0;
+    sOpeningSkipRequested = FALSE;
     sOpeningFrame = sPreparedFrame = 0;
     sOpeningPage = 0;
     sFrameReady = FALSE;
