@@ -31,9 +31,7 @@ bool8 AraunaIsSoundMove(u16 move)
     return FALSE;
 }
 
-// Speed as the turn order sees it: the stat with its stat stages applied.
-// Paralysis is left out on purpose -- WINGED WATCH asks who is quicker by
-// nature, not who is limping this turn.
+// Effective battle speed, including stat stages and Gen III paralysis.
 static u32 EffectiveSpeed(struct BattlePokemon *mon)
 {
     // Compare effective speed; priority and Quick Claw are handled separately.

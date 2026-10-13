@@ -65,8 +65,31 @@ no Git.
 
 ## Publicação e verificação final
 
-O ambiente local desconectou durante a recompilação da proteção de player
-nulo. Portanto, os testes nativos acima pertencem à primeira revisão; não se
-atribui aquele hash à versão final. Os geradores foram recuperados e os assets
-materializados diretamente no CI. A compilação final e os gates de um checkout
-limpo devem ser conferidos no PR e nos logs associados ao seu head final.
+O CI do head `a44c7aba1dbedca21344f346e777f1e8589567cb` passou em checkout
+limpo: repository-safety, build ARM em inglês e build-and-test, sem avisos de
+compilador ou assembler. A memória final confirmou EWRAM de 247148 bytes
+(94,28%) e IWRAM de 28892 bytes (88,17%). A ROM usou 21153172 bytes (63,04%).
+
+Na retomada do ambiente, a ROM exata desse CI foi baixada e seu checksum
+conferido. SHA-256 da ROM final testada em mGBA 0.10.2:
+`4c5eeb4dc1dd3a3012761e578b50874c7ae94c276b22da63c17ca273d3724e8e`.
+
+- Os 386 gritos resolveram para as próprias amostras de ROM; as variantes
+  reversas apontaram para as mesmas amostras. Todos produziram PCM audível,
+  com a música parada, e os 386 registros de áudio tiveram hashes distintos.
+- Doze checks cobriram a ausência de player com espécies NONE, EGG e dois
+  IDs inválidos: leitura, stop/clear e encerramento da tarefa de ducking.
+- Vinte e dois checks de habilidades passaram, incluindo velocidade normal,
+  atacante paralisado, defensor paralisado, ambos paralisados e os golpes
+  sonoros de RIVER SONG com um golpe de controle.
+- Os 96 valores de PP nas 24 permutações de personalidade foram novamente
+  escritos e lidos pelas funções nativas, sem Bad Egg.
+
+Recibo bruto: `review/assets_ram_polish/final_native_checks.json`. O ROM não
+foi alterado: o teste usou preparação temporária de RAM e chamadas de funções
+ARM/Thumb originais. RunTasks foi chamado a cada frame, e a emulação manteve
+os IRQs e o mixer original entre as chamadas. O harness permanece fora do
+repositório. Os testes visuais, de entrada de batalha e de save frio descritos
+acima continuam sendo os da primeira revisão, sem ampliar sua cobertura.
+
+CI: https://github.com/lu1234566/pokemon-juramento-de-arauna/actions/runs/38325869669

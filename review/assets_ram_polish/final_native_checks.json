@@ -1,0 +1,4285 @@
+{
+  "status": "PASS",
+  "head": "a44c7aba1dbedca21344f346e777f1e8589567cb",
+  "rom_sha256": "4c5eeb4dc1dd3a3012761e578b50874c7ae94c276b22da63c17ca273d3724e8e",
+  "emulator": "mGBA 0.10.2",
+  "rom_unmodified": true,
+  "method": "Temporary RAM setup and calls of original ARM/Thumb functions; native RunTasks called each frame and original main/IRQ mixer runs between calls. No ROM patch.",
+  "baseline_audio_peak": 0,
+  "checks": [
+    {
+      "name": "no-player cry 0",
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "no-player clear 0",
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "duck task finished 0",
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "no-player cry 412",
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "no-player clear 412",
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "duck task finished 412",
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "no-player cry 440",
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "no-player clear 440",
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "duck task finished 440",
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "no-player cry 65535",
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "no-player clear 65535",
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "duck task finished 65535",
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "loyal fire",
+      "actual": 115,
+      "expected": 115
+    },
+    {
+      "name": "granite rock",
+      "actual": 120,
+      "expected": 120
+    },
+    {
+      "name": "first sun",
+      "actual": 120,
+      "expected": 120
+    },
+    {
+      "name": "ancient fire in rain",
+      "actual": 240,
+      "expected": 240
+    },
+    {
+      "name": "master tide",
+      "actual": 120,
+      "expected": 120
+    },
+    {
+      "name": "river king",
+      "actual": 115,
+      "expected": 115
+    },
+    {
+      "name": "sacred sea",
+      "actual": 120,
+      "expected": 120
+    },
+    {
+      "name": "essence",
+      "actual": 110,
+      "expected": 110
+    },
+    {
+      "name": "last light",
+      "actual": 125,
+      "expected": 125
+    },
+    {
+      "name": "serpent full HP",
+      "actual": 75,
+      "expected": 75
+    },
+    {
+      "name": "moon veil no weather",
+      "actual": 80,
+      "expected": 80
+    },
+    {
+      "name": "dry spell",
+      "actual": 50,
+      "expected": 50
+    },
+    {
+      "name": "winged faster",
+      "actual": 120,
+      "expected": 120
+    },
+    {
+      "name": "winged paralyzed attacker",
+      "actual": 100,
+      "expected": 100
+    },
+    {
+      "name": "winged paralyzed defender",
+      "actual": 120,
+      "expected": 120
+    },
+    {
+      "name": "winged both paralyzed",
+      "actual": 120,
+      "expected": 120
+    },
+    {
+      "name": "river song voice",
+      "actual": 130,
+      "expected": 130
+    },
+    {
+      "name": "river song signature",
+      "actual": 130,
+      "expected": 130
+    },
+    {
+      "name": "river song tackle control",
+      "actual": 100,
+      "expected": 100
+    },
+    {
+      "name": "voice never misses",
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "song never misses",
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "tackle can miss",
+      "actual": 0,
+      "expected": 0
+    }
+  ],
+  "cries": [
+    {
+      "dex": 1,
+      "name": "Caramelo",
+      "species": 280,
+      "tone": "0x86a13c0",
+      "wave": "0x85d8f44",
+      "peak": 6189,
+      "pcm_samples": 154314,
+      "pcm_sha256": "203068687736e1bc0e3cd86f79639795cc992fe9060f32fe9294b2e5b9c4f01d"
+    },
+    {
+      "dex": 2,
+      "name": "Caramelão",
+      "species": 281,
+      "tone": "0x86a13cc",
+      "wave": "0x85d96c4",
+      "peak": 6059,
+      "pcm_samples": 154290,
+      "pcm_sha256": "aa18fb950ccb172fa61a1a5a14237adb3ca524ed1fb7f1473e81f97c229b09fb"
+    },
+    {
+      "dex": 3,
+      "name": "Draguará",
+      "species": 282,
+      "tone": "0x86a13d8",
+      "wave": "0x85d9f44",
+      "peak": 6056,
+      "pcm_samples": 154312,
+      "pcm_sha256": "3ef015550d000c91e3f0bb487bc7ae4ecb8cd0177e68a3ddd1cfce98ba6267f6"
+    },
+    {
+      "dex": 4,
+      "name": "Querô",
+      "species": 283,
+      "tone": "0x86a13e4",
+      "wave": "0x85da8c4",
+      "peak": 6055,
+      "pcm_samples": 154290,
+      "pcm_sha256": "611184097bfeb998cc76b44fcb002e1629655c209e6d61c18b9579dead771129"
+    },
+    {
+      "dex": 5,
+      "name": "Queribela",
+      "species": 284,
+      "tone": "0x86a13f0",
+      "wave": "0x85daffc",
+      "peak": 6054,
+      "pcm_samples": 154290,
+      "pcm_sha256": "9d57edbe0cd4bc2cd7861a7e5ab395ea3691b89ed9a635856f8cc3f1004e41ec"
+    },
+    {
+      "dex": 6,
+      "name": "Terolibra",
+      "species": 285,
+      "tone": "0x86a13fc",
+      "wave": "0x85db834",
+      "peak": 6058,
+      "pcm_samples": 154312,
+      "pcm_sha256": "ca451a4102aecab83d57822d6ecbbc68ec9386db276a6647ed6ada991b755010"
+    },
+    {
+      "dex": 7,
+      "name": "Pimpau",
+      "species": 277,
+      "tone": "0x86a139c",
+      "wave": "0x85dc168",
+      "peak": 6059,
+      "pcm_samples": 154288,
+      "pcm_sha256": "21b8689759d4b3fbbf2ee201d35e383de7c786ce5fe4442857edb153f9229753"
+    },
+    {
+      "dex": 8,
+      "name": "Bicopau",
+      "species": 278,
+      "tone": "0x86a13a8",
+      "wave": "0x85dc894",
+      "peak": 6053,
+      "pcm_samples": 154312,
+      "pcm_sha256": "603a3b59f8c0d1f0372c5767a68f83a34e76266fb233e88f20a04b328e8162e9"
+    },
+    {
+      "dex": 9,
+      "name": "Petropico",
+      "species": 279,
+      "tone": "0x86a13b4",
+      "wave": "0x85dd0c0",
+      "peak": 6057,
+      "pcm_samples": 154288,
+      "pcm_sha256": "f5cc5ec96e0853370c11f4c074ece813fe563376c4b0c32e71ca2c177a239834"
+    },
+    {
+      "dex": 10,
+      "name": "Formilim",
+      "species": 1,
+      "tone": "0x86a06ac",
+      "wave": "0x85dd9ec",
+      "peak": 6058,
+      "pcm_samples": 154312,
+      "pcm_sha256": "1b955e047b63fef2ff5488e6eeee87b2baebfb7e0e529845ebd4a73af12c0f86"
+    },
+    {
+      "dex": 11,
+      "name": "Saúvarco",
+      "species": 2,
+      "tone": "0x86a06b8",
+      "wave": "0x85de394",
+      "peak": 6059,
+      "pcm_samples": 154288,
+      "pcm_sha256": "bd0d5a113f5bbf90c0b2855b8f00349d7c586093bd700bc837cf318dd98d1a7d"
+    },
+    {
+      "dex": 12,
+      "name": "Capivim",
+      "species": 3,
+      "tone": "0x86a06c4",
+      "wave": "0x85dee3c",
+      "peak": 6059,
+      "pcm_samples": 154312,
+      "pcm_sha256": "18929a6c14fb9ba0fc63311a359a025a50aa5ba6a6ff2f16fde769b336bac602"
+    },
+    {
+      "dex": 13,
+      "name": "Tucanhão",
+      "species": 4,
+      "tone": "0x86a06d0",
+      "wave": "0x85df4f8",
+      "peak": 6053,
+      "pcm_samples": 154312,
+      "pcm_sha256": "58802dd17514b9c6f4ca2690af94280b5a021b00c0bb19585e9a7d05c61be2b9"
+    },
+    {
+      "dex": 14,
+      "name": "Sagüim",
+      "species": 5,
+      "tone": "0x86a06dc",
+      "wave": "0x85dfdf4",
+      "peak": 6058,
+      "pcm_samples": 154290,
+      "pcm_sha256": "eb553f38fc799561144f3108d0299dea27e834f89e8b59d47a265db84eba9147"
+    },
+    {
+      "dex": 15,
+      "name": "Micuiras",
+      "species": 6,
+      "tone": "0x86a06e8",
+      "wave": "0x85e045c",
+      "peak": 6057,
+      "pcm_samples": 154312,
+      "pcm_sha256": "1e3943c4c5fdce80817450d6572ba341b55dad9776d2fbb6fab688a82953b00d"
+    },
+    {
+      "dex": 16,
+      "name": "Boitatá",
+      "species": 7,
+      "tone": "0x86a06f4",
+      "wave": "0x85e0bc0",
+      "peak": 6059,
+      "pcm_samples": 154290,
+      "pcm_sha256": "a1e197cf784e2a32c444bbaff43c094497eb323d1d00d67c3192c29a92e4f199"
+    },
+    {
+      "dex": 17,
+      "name": "Curupim",
+      "species": 8,
+      "tone": "0x86a0700",
+      "wave": "0x85e12bc",
+      "peak": 6058,
+      "pcm_samples": 154314,
+      "pcm_sha256": "8858a8e02b6da1dd65ebec258248097d480baa7d0416886e73e7d6f7b7dc77cc"
+    },
+    {
+      "dex": 18,
+      "name": "Curupira",
+      "species": 9,
+      "tone": "0x86a070c",
+      "wave": "0x85e1b20",
+      "peak": 6056,
+      "pcm_samples": 154290,
+      "pcm_sha256": "609a2bce3197f46143b4790c04e360a893ae348d5c1a9767444c86ddbf54f1a7"
+    },
+    {
+      "dex": 19,
+      "name": "Iaraço",
+      "species": 10,
+      "tone": "0x86a0718",
+      "wave": "0x85e2484",
+      "peak": 6059,
+      "pcm_samples": 154312,
+      "pcm_sha256": "5b5470d758ac82b999e5e64e2c5552a4931e74abf9c44e659b53d5acdcdac72d"
+    },
+    {
+      "dex": 20,
+      "name": "Sacizinho",
+      "species": 11,
+      "tone": "0x86a0724",
+      "wave": "0x85e2d94",
+      "peak": 6056,
+      "pcm_samples": 154290,
+      "pcm_sha256": "c0c4366d2225d3b7957f8c1e3ed458ae3f416ef5b63c4328e1328237d5faa065"
+    },
+    {
+      "dex": 21,
+      "name": "Cactula",
+      "species": 12,
+      "tone": "0x86a0730",
+      "wave": "0x85e36ac",
+      "peak": 6055,
+      "pcm_samples": 154290,
+      "pcm_sha256": "7e2b2e1a527d1a7844f3735a71ebf02e795ee72ebf55f66bbf799e729a5645f8"
+    },
+    {
+      "dex": 22,
+      "name": "Muriçoco",
+      "species": 13,
+      "tone": "0x86a073c",
+      "wave": "0x85e3f00",
+      "peak": 6059,
+      "pcm_samples": 154312,
+      "pcm_sha256": "ebe38296e6d4fe76e82829a92ebecc04355736c203fb3795ab5ba73778382cb0"
+    },
+    {
+      "dex": 23,
+      "name": "Onçaléu",
+      "species": 14,
+      "tone": "0x86a0748",
+      "wave": "0x85e4594",
+      "peak": 6057,
+      "pcm_samples": 154288,
+      "pcm_sha256": "343beff48ddbaf7300e3a317395880f79c69d77d2cf0bcfdf1b99de965a55ff0"
+    },
+    {
+      "dex": 24,
+      "name": "Tamanduá",
+      "species": 15,
+      "tone": "0x86a0754",
+      "wave": "0x85e4e58",
+      "peak": 6061,
+      "pcm_samples": 154312,
+      "pcm_sha256": "d16a9dc5f61947158e22c958bddf36b4c52d823544430c60c292139ed0a364d6"
+    },
+    {
+      "dex": 25,
+      "name": "Botim",
+      "species": 16,
+      "tone": "0x86a0760",
+      "wave": "0x85e5598",
+      "peak": 6055,
+      "pcm_samples": 154288,
+      "pcm_sha256": "d0722484d294662b60b1a6a77b5574f9dbdde95f7b99688646e1ee016590bf0f"
+    },
+    {
+      "dex": 26,
+      "name": "Botão",
+      "species": 17,
+      "tone": "0x86a076c",
+      "wave": "0x85e5ba8",
+      "peak": 6055,
+      "pcm_samples": 154312,
+      "pcm_sha256": "162576ec04c862c25c906a5c505b8114e809ce8c86bafd868015d9305f10274a"
+    },
+    {
+      "dex": 27,
+      "name": "Botogaláu",
+      "species": 18,
+      "tone": "0x86a0778",
+      "wave": "0x85e62b8",
+      "peak": 6059,
+      "pcm_samples": 154288,
+      "pcm_sha256": "89e60a871a8682a1ce82b43d56394629288138613ca08e18330c6bdfcc48ca01"
+    },
+    {
+      "dex": 28,
+      "name": "Tatuim",
+      "species": 19,
+      "tone": "0x86a0784",
+      "wave": "0x85e6ac8",
+      "peak": 6058,
+      "pcm_samples": 154312,
+      "pcm_sha256": "0ec7eb1a4800605f9f0869796bc45915945f2d5ddd0a9f13fac84996309d5152"
+    },
+    {
+      "dex": 29,
+      "name": "Tatubola",
+      "species": 20,
+      "tone": "0x86a0790",
+      "wave": "0x85e728c",
+      "peak": 6059,
+      "pcm_samples": 154312,
+      "pcm_sha256": "5860777ea49516509eafbdca796460aa2cee1595cfd8be02386b0b7d1ece15a3"
+    },
+    {
+      "dex": 30,
+      "name": "Tatuçu",
+      "species": 21,
+      "tone": "0x86a079c",
+      "wave": "0x85e7b50",
+      "peak": 6055,
+      "pcm_samples": 154288,
+      "pcm_sha256": "3e0dc9daec5e6cb9ff250486d9193b93b7b7e71711a763c675cbb0cecbc7f430"
+    },
+    {
+      "dex": 31,
+      "name": "Ararinha",
+      "species": 22,
+      "tone": "0x86a07a8",
+      "wave": "0x85e8514",
+      "peak": 6058,
+      "pcm_samples": 154312,
+      "pcm_sha256": "4278534122bfae968586f5c50a9d3ce93035265369f6606909bb4b14a0561e73"
+    },
+    {
+      "dex": 32,
+      "name": "Arará",
+      "species": 23,
+      "tone": "0x86a07b4",
+      "wave": "0x85e8d78",
+      "peak": 6056,
+      "pcm_samples": 154290,
+      "pcm_sha256": "c365e4e143815c5584911d6426b13becec60aa5297607c268f1056d900a4c0de"
+    },
+    {
+      "dex": 33,
+      "name": "Araracanga",
+      "species": 24,
+      "tone": "0x86a07c0",
+      "wave": "0x85e96dc",
+      "peak": 6054,
+      "pcm_samples": 154314,
+      "pcm_sha256": "19f0394c8200a3faacade1cbdf7961b7d96fce268e35a4cb696032f0839be7f8"
+    },
+    {
+      "dex": 34,
+      "name": "Jacarim",
+      "species": 25,
+      "tone": "0x86a07cc",
+      "wave": "0x85ea140",
+      "peak": 6055,
+      "pcm_samples": 154290,
+      "pcm_sha256": "a457f00b64661b2b104d9b042b644f7c884ed6291ad6816a5c6c519e21fd187e"
+    },
+    {
+      "dex": 35,
+      "name": "Jacarão",
+      "species": 26,
+      "tone": "0x86a07d8",
+      "wave": "0x85eaaf0",
+      "peak": 6054,
+      "pcm_samples": 154314,
+      "pcm_sha256": "2b2e1d3c1cf3782e35b3d1d92ea7ccce5d9887f423f2b70d8956a893f22e59d4"
+    },
+    {
+      "dex": 36,
+      "name": "Jacarodon",
+      "species": 27,
+      "tone": "0x86a07e4",
+      "wave": "0x85eb5a0",
+      "peak": 6060,
+      "pcm_samples": 154290,
+      "pcm_sha256": "a0f6c9084aa7ebe13b71b6ff4a11c3df9c5f51679ec73c572e5f9f8b2227d469"
+    },
+    {
+      "dex": 37,
+      "name": "Preguicim",
+      "species": 28,
+      "tone": "0x86a07f0",
+      "wave": "0x85ec150",
+      "peak": 6057,
+      "pcm_samples": 154290,
+      "pcm_sha256": "7a91414ca6b4eedf60f89df4bc2ec71062e738fac4f25c9556b9b89a86134982"
+    },
+    {
+      "dex": 38,
+      "name": "Preguicão",
+      "species": 29,
+      "tone": "0x86a07fc",
+      "wave": "0x85ec9dc",
+      "peak": 6055,
+      "pcm_samples": 154312,
+      "pcm_sha256": "b0cfe603e503a19bfe0353da45e7966dbc56a12697c07437291dee39bb55af0d"
+    },
+    {
+      "dex": 39,
+      "name": "BichoPregça",
+      "species": 30,
+      "tone": "0x86a0808",
+      "wave": "0x85ed368",
+      "peak": 6059,
+      "pcm_samples": 154288,
+      "pcm_sha256": "d296295c7ce1661ba90ca6592454452b379801437dae63ba390f83c6ad5d1733"
+    },
+    {
+      "dex": 40,
+      "name": "Papaguim",
+      "species": 31,
+      "tone": "0x86a0814",
+      "wave": "0x85eddf4",
+      "peak": 6056,
+      "pcm_samples": 154312,
+      "pcm_sha256": "eca9c4f1bab049bd781fc3ea1c4457aefdebf6f00a14b4a9a54c01eca011fcf8"
+    },
+    {
+      "dex": 41,
+      "name": "Papagaio",
+      "species": 32,
+      "tone": "0x86a0820",
+      "wave": "0x85ee750",
+      "peak": 6060,
+      "pcm_samples": 154288,
+      "pcm_sha256": "42f9a32773d7d1b100867651fd83b197b03f2b7655845de17d72728513a32ea8"
+    },
+    {
+      "dex": 42,
+      "name": "Papagaião",
+      "species": 33,
+      "tone": "0x86a082c",
+      "wave": "0x85ef1ac",
+      "peak": 6056,
+      "pcm_samples": 154312,
+      "pcm_sha256": "c067f544afbf2e1537d6aaedfb7d540a0e7a28b81985c5bf97e235cb28b2ab68"
+    },
+    {
+      "dex": 43,
+      "name": "Antinha",
+      "species": 34,
+      "tone": "0x86a0838",
+      "wave": "0x85efd08",
+      "peak": 6057,
+      "pcm_samples": 154288,
+      "pcm_sha256": "935bab70d9500fd2d9007dcfba8b0718537fcd9041536a25f5bfd192ed11c8d9"
+    },
+    {
+      "dex": 44,
+      "name": "Anta",
+      "species": 35,
+      "tone": "0x86a0844",
+      "wave": "0x85f0464",
+      "peak": 6058,
+      "pcm_samples": 154312,
+      "pcm_sha256": "43b4f4fce5c49a6067ad8868cfe17974169a18cc7358202f5796ad22ef0b052d"
+    },
+    {
+      "dex": 45,
+      "name": "Antaraú",
+      "species": 36,
+      "tone": "0x86a0850",
+      "wave": "0x85f0cc0",
+      "peak": 6057,
+      "pcm_samples": 154312,
+      "pcm_sha256": "f8d30aec83f3183eef8ea157dc458e2dd92c968176b3ebe51a23a8e4f0698619"
+    },
+    {
+      "dex": 46,
+      "name": "Sucurim",
+      "species": 37,
+      "tone": "0x86a085c",
+      "wave": "0x85f1560",
+      "peak": 6056,
+      "pcm_samples": 154288,
+      "pcm_sha256": "93c97dd6eacf863f2e49139063cafa37ad1405d5ba3239bda7398c1114ce577a"
+    },
+    {
+      "dex": 47,
+      "name": "Sucuri",
+      "species": 38,
+      "tone": "0x86a0868",
+      "wave": "0x85f1b78",
+      "peak": 6052,
+      "pcm_samples": 154312,
+      "pcm_sha256": "70305b75f2b594b0aff4c6d7cad7ffa986ffafedefea451d208be735f788d4e4"
+    },
+    {
+      "dex": 48,
+      "name": "Boiuna",
+      "species": 39,
+      "tone": "0x86a0874",
+      "wave": "0x85f2290",
+      "peak": 6058,
+      "pcm_samples": 154290,
+      "pcm_sha256": "aca6c4b483188f8bc051712cb2e7adeadb143ac224e63782075511d473ed70e6"
+    },
+    {
+      "dex": 49,
+      "name": "Borbolim",
+      "species": 40,
+      "tone": "0x86a0880",
+      "wave": "0x85f2aa8",
+      "peak": 6058,
+      "pcm_samples": 154314,
+      "pcm_sha256": "ece0b30252e66b5ceab84eba986fee67df9ed15afc53271943e6b6b12a979cce"
+    },
+    {
+      "dex": 50,
+      "name": "Casulete",
+      "species": 41,
+      "tone": "0x86a088c",
+      "wave": "0x85f3288",
+      "peak": 6053,
+      "pcm_samples": 154290,
+      "pcm_sha256": "8b04af0a1e3c3a3d992fe114b4c18ead2664924575c6a95b2442a97d105a11cb"
+    },
+    {
+      "dex": 51,
+      "name": "Morphália",
+      "species": 42,
+      "tone": "0x86a0898",
+      "wave": "0x85f3b68",
+      "peak": 6057,
+      "pcm_samples": 154314,
+      "pcm_sha256": "12f07c0f87313d24dc8762a1bcc4558ec90f1253774075b14e11640b92ff0965"
+    },
+    {
+      "dex": 52,
+      "name": "Guaracim",
+      "species": 43,
+      "tone": "0x86a08a4",
+      "wave": "0x85f4548",
+      "peak": 6058,
+      "pcm_samples": 154290,
+      "pcm_sha256": "3538841e378dffa34470c8f12c4de78c26c19fe6a21ecea310ff10ed3e8b5512"
+    },
+    {
+      "dex": 53,
+      "name": "Guará",
+      "species": 44,
+      "tone": "0x86a08b0",
+      "wave": "0x85f4cd4",
+      "peak": 6061,
+      "pcm_samples": 154290,
+      "pcm_sha256": "881996de23ea4912ff5f7deadce069af63743f7f0c120dc68d5de51f418a8297"
+    },
+    {
+      "dex": 54,
+      "name": "Guaraflama",
+      "species": 45,
+      "tone": "0x86a08bc",
+      "wave": "0x85f5560",
+      "peak": 6058,
+      "pcm_samples": 154312,
+      "pcm_sha256": "ad8c06a05f12e6736523b4b128281f82a1f92fbfa76d9bf50418fa5cd208c60b"
+    },
+    {
+      "dex": 55,
+      "name": "Peixim",
+      "species": 46,
+      "tone": "0x86a08c8",
+      "wave": "0x85f5ee0",
+      "peak": 6055,
+      "pcm_samples": 154290,
+      "pcm_sha256": "1cd01bdf0110872518073e3841f1bedb04a3374b6d54cb5efdda8d68b285a52a"
+    },
+    {
+      "dex": 56,
+      "name": "Peixeboi",
+      "species": 47,
+      "tone": "0x86a08d4",
+      "wave": "0x85f6888",
+      "peak": 6058,
+      "pcm_samples": 154312,
+      "pcm_sha256": "223c30103b5a58d6877997465034b7dd984eecea38de8319bd091dd17bcd5e9e"
+    },
+    {
+      "dex": 57,
+      "name": "Mãe-d'Água",
+      "species": 48,
+      "tone": "0x86a08e0",
+      "wave": "0x85f7330",
+      "peak": 6056,
+      "pcm_samples": 154288,
+      "pcm_sha256": "172887885a034d3585e40fcf87ef0f9e0a6cdc215c4a51cde98727c6dbbd1c27"
+    },
+    {
+      "dex": 58,
+      "name": "Mandim",
+      "species": 49,
+      "tone": "0x86a08ec",
+      "wave": "0x85f795c",
+      "peak": 6059,
+      "pcm_samples": 154312,
+      "pcm_sha256": "0c23f94187e6dc0d1889f364d325f10013fb2c4ea0ce5463a1b5759fc0c678fe"
+    },
+    {
+      "dex": 59,
+      "name": "Mandí",
+      "species": 50,
+      "tone": "0x86a08f8",
+      "wave": "0x85f8020",
+      "peak": 6058,
+      "pcm_samples": 154288,
+      "pcm_sha256": "80ee0f4223e2520fde40118b52affe527c62ffb6e74d5b1c1c64a98b8da6fbb2"
+    },
+    {
+      "dex": 60,
+      "name": "Mandubé",
+      "species": 51,
+      "tone": "0x86a0904",
+      "wave": "0x85f87e4",
+      "peak": 6057,
+      "pcm_samples": 154312,
+      "pcm_sha256": "8cb2f36824aaf0bb77a1f68f122c51a05c64256b2b19fec1f0026e2465bd8eb4"
+    },
+    {
+      "dex": 61,
+      "name": "Preguim",
+      "species": 52,
+      "tone": "0x86a0910",
+      "wave": "0x85f90a8",
+      "peak": 6059,
+      "pcm_samples": 154312,
+      "pcm_sha256": "0c878f48bccc50463fed8370b03d55f835ce12911dfb78e8f2b31ff77ccd84e7"
+    },
+    {
+      "dex": 62,
+      "name": "Prego",
+      "species": 53,
+      "tone": "0x86a091c",
+      "wave": "0x85f9818",
+      "peak": 6055,
+      "pcm_samples": 154288,
+      "pcm_sha256": "8c6e8f4f4d806361c3965d25746b7fae6d9fb5dd09607c1afd66b5f1155d1917"
+    },
+    {
+      "dex": 63,
+      "name": "Pregarcanjo",
+      "species": 54,
+      "tone": "0x86a0928",
+      "wave": "0x85fa088",
+      "peak": 6055,
+      "pcm_samples": 154312,
+      "pcm_sha256": "c03c5c417a66b386e2028168d67490b1c948bb0828e8c440b1d4444c65b3f9fc"
+    },
+    {
+      "dex": 64,
+      "name": "Aranin",
+      "species": 55,
+      "tone": "0x86a0934",
+      "wave": "0x85fa9f8",
+      "peak": 6059,
+      "pcm_samples": 154290,
+      "pcm_sha256": "56d060cbf55989b084c8b31f1efd7ecf81fbe4a803fbd329f0960f0d154bb1c4"
+    },
+    {
+      "dex": 65,
+      "name": "Caraninha",
+      "species": 56,
+      "tone": "0x86a0940",
+      "wave": "0x85fb1a8",
+      "peak": 6058,
+      "pcm_samples": 154314,
+      "pcm_sha256": "dcf2dca8ed9542ea077a30e65d6ade534e684410749aba18daae745db7bfca70"
+    },
+    {
+      "dex": 66,
+      "name": "Caranga",
+      "species": 57,
+      "tone": "0x86a094c",
+      "wave": "0x85fba58",
+      "peak": 6060,
+      "pcm_samples": 154290,
+      "pcm_sha256": "4b1936097c5bd7b88931b8d8d5e63ec6cdb53cb9e42cf73bf96fe47b0683eb65"
+    },
+    {
+      "dex": 67,
+      "name": "Gatim",
+      "species": 58,
+      "tone": "0x86a0958",
+      "wave": "0x85fc408",
+      "peak": 6053,
+      "pcm_samples": 154314,
+      "pcm_sha256": "2fa2851c1dfa0a2d8974b0a3bd8c5c7818c27c3acae38f595f1aed8bacf4e138"
+    },
+    {
+      "dex": 68,
+      "name": "Gato-do-mato",
+      "species": 59,
+      "tone": "0x86a0964",
+      "wave": "0x85fcd50",
+      "peak": 6058,
+      "pcm_samples": 154290,
+      "pcm_sha256": "94dc5c8a451370b94f19e24b2253459b44b16b32b3102fd44d94886e4c56d649"
+    },
+    {
+      "dex": 69,
+      "name": "Jaguatirica",
+      "species": 60,
+      "tone": "0x86a0970",
+      "wave": "0x85fd798",
+      "peak": 6058,
+      "pcm_samples": 154290,
+      "pcm_sha256": "474090f7a3724acb164cd95b825a63873a8447418c44b8797a7ad5b1b4fabe08"
+    },
+    {
+      "dex": 70,
+      "name": "Cutim",
+      "species": 61,
+      "tone": "0x86a097c",
+      "wave": "0x85fe118",
+      "peak": 6058,
+      "pcm_samples": 154312,
+      "pcm_sha256": "4a5479cdb9511000f5fc1ed8aea344ef45ba28af1498550b1c93db19df5e44bf"
+    },
+    {
+      "dex": 71,
+      "name": "Cutia",
+      "species": 62,
+      "tone": "0x86a0988",
+      "wave": "0x85fe844",
+      "peak": 6058,
+      "pcm_samples": 154290,
+      "pcm_sha256": "c5a09d3e207c339ea60855e5f1b17b2df814b13d8721f2fb8fc6921f70adfaa9"
+    },
+    {
+      "dex": 72,
+      "name": "Paca",
+      "species": 63,
+      "tone": "0x86a0994",
+      "wave": "0x85ff070",
+      "peak": 6054,
+      "pcm_samples": 154312,
+      "pcm_sha256": "c9c7cf756269cc210770d5a12db0901475c1dc7e8f9da3abde27df83359488f6"
+    },
+    {
+      "dex": 73,
+      "name": "Formigão",
+      "species": 64,
+      "tone": "0x86a09a0",
+      "wave": "0x85ff820",
+      "peak": 6059,
+      "pcm_samples": 154288,
+      "pcm_sha256": "e31df94010a7fbb8618573ef1f54226d8180a1f1591ed25a57cf362347021068"
+    },
+    {
+      "dex": 74,
+      "name": "Marimbondo",
+      "species": 65,
+      "tone": "0x86a09ac",
+      "wave": "0x85ffe4c",
+      "peak": 6057,
+      "pcm_samples": 154312,
+      "pcm_sha256": "4afb2573b219ee2cd35013f07423a3d095b9b47067612945f9549f14e90a4336"
+    },
+    {
+      "dex": 75,
+      "name": "Abelhinha",
+      "species": 66,
+      "tone": "0x86a09b8",
+      "wave": "0x86007c4",
+      "peak": 6055,
+      "pcm_samples": 154288,
+      "pcm_sha256": "a5813c515c2c582e22517ca982e03b80a568b060b0089991dd4a346622f54254"
+    },
+    {
+      "dex": 76,
+      "name": "Quatim",
+      "species": 67,
+      "tone": "0x86a09c4",
+      "wave": "0x8600fe8",
+      "peak": 6054,
+      "pcm_samples": 154312,
+      "pcm_sha256": "2b7a960bef60f2b21009b0e5c093319be030083fc91a388ef8cc42ff713ff20b"
+    },
+    {
+      "dex": 77,
+      "name": "Quati",
+      "species": 68,
+      "tone": "0x86a09d0",
+      "wave": "0x8601768",
+      "peak": 6055,
+      "pcm_samples": 154312,
+      "pcm_sha256": "39dd1afafd6ad8038e87eab7ac965ab2b0ba93b66693ff634062172a4f829573"
+    },
+    {
+      "dex": 78,
+      "name": "Coati",
+      "species": 69,
+      "tone": "0x86a09dc",
+      "wave": "0x8601fe8",
+      "peak": 6061,
+      "pcm_samples": 154288,
+      "pcm_sha256": "2aa935f495ec402ebab00f0b376a84dba25ad063797d3d3fec8fbb8b805e4af5"
+    },
+    {
+      "dex": 79,
+      "name": "Gambá",
+      "species": 70,
+      "tone": "0x86a09e8",
+      "wave": "0x860283c",
+      "peak": 6056,
+      "pcm_samples": 154312,
+      "pcm_sha256": "52ac99d16bec1af58e8a16f6c1687bb4930ec0e30f4d21feee42c2a6cf211acf"
+    },
+    {
+      "dex": 80,
+      "name": "Cangambá",
+      "species": 71,
+      "tone": "0x86a09f4",
+      "wave": "0x8602f4c",
+      "peak": 6055,
+      "pcm_samples": 154290,
+      "pcm_sha256": "b6db392783f855796d41bdc61d4b2dda56360ecce2bb174b8ba895c946858eaa"
+    },
+    {
+      "dex": 81,
+      "name": "Sarué",
+      "species": 72,
+      "tone": "0x86a0a00",
+      "wave": "0x860375c",
+      "peak": 6059,
+      "pcm_samples": 154312,
+      "pcm_sha256": "9df898bd4aba2ce6583e044eac622fd248bbbd2d23cb53950a188ebabfdd05b2"
+    },
+    {
+      "dex": 82,
+      "name": "Tuquinho",
+      "species": 73,
+      "tone": "0x86a0a0c",
+      "wave": "0x8603db0",
+      "peak": 6057,
+      "pcm_samples": 154290,
+      "pcm_sha256": "996312c3e9f736dbd53b843ae75233fa5290e56d02aa46d74a1346b6e58dec3c"
+    },
+    {
+      "dex": 83,
+      "name": "Aracari",
+      "species": 74,
+      "tone": "0x86a0a18",
+      "wave": "0x8604490",
+      "peak": 6059,
+      "pcm_samples": 154314,
+      "pcm_sha256": "f77d6ab7efab6d0efe624a9b599459d6e30486918d66789ee3745e3cb3f6ed40"
+    },
+    {
+      "dex": 84,
+      "name": "Curicaca",
+      "species": 75,
+      "tone": "0x86a0a24",
+      "wave": "0x8604c70",
+      "peak": 6056,
+      "pcm_samples": 154290,
+      "pcm_sha256": "5271289ab3d2ff14d2f1e589974425115953f0c53276f39f98b0bb027a420271"
+    },
+    {
+      "dex": 85,
+      "name": "Sapim",
+      "species": 76,
+      "tone": "0x86a0a30",
+      "wave": "0x86052f0",
+      "peak": 6058,
+      "pcm_samples": 154290,
+      "pcm_sha256": "0417d3d98cf7f2f092f7807358c87f821451bbffade12076c0d1c1e9e5c8518c"
+    },
+    {
+      "dex": 86,
+      "name": "Sapão",
+      "species": 77,
+      "tone": "0x86a0a3c",
+      "wave": "0x8605c90",
+      "peak": 6056,
+      "pcm_samples": 154314,
+      "pcm_sha256": "c13e4c6eeb0f1df31e30e736e0f450eb2d1b0c6aac9d238a39038fdd743889a2"
+    },
+    {
+      "dex": 87,
+      "name": "Cururu",
+      "species": 78,
+      "tone": "0x86a0a48",
+      "wave": "0x860672c",
+      "peak": 6058,
+      "pcm_samples": 154290,
+      "pcm_sha256": "24595fadc8253c952760d9805d6bcabcdbf56350b94f658cea03e86258e035fb"
+    },
+    {
+      "dex": 88,
+      "name": "Teiuzim",
+      "species": 79,
+      "tone": "0x86a0a54",
+      "wave": "0x86072c8",
+      "peak": 6055,
+      "pcm_samples": 154312,
+      "pcm_sha256": "b70862556c560d85a3454dfe4f7add3c451344dc64c1d06bfafed409c5d25d66"
+    },
+    {
+      "dex": 89,
+      "name": "Teiú",
+      "species": 80,
+      "tone": "0x86a0a60",
+      "wave": "0x86078f4",
+      "peak": 6052,
+      "pcm_samples": 154288,
+      "pcm_sha256": "caa4b6f1bb9497cce6745bd893b9bee4411be33f0141d8d420c496a189b14e51"
+    },
+    {
+      "dex": 90,
+      "name": "Camaleão",
+      "species": 81,
+      "tone": "0x86a0a6c",
+      "wave": "0x8608020",
+      "peak": 6059,
+      "pcm_samples": 154312,
+      "pcm_sha256": "f662bb3ffb0d709b740ee6443a1f830acf665d9752d8a421fb27a9135a3a6a4f"
+    },
+    {
+      "dex": 91,
+      "name": "Morcim",
+      "species": 82,
+      "tone": "0x86a0a78",
+      "wave": "0x86089c0",
+      "peak": 6057,
+      "pcm_samples": 154288,
+      "pcm_sha256": "b3b96b814b31ba3587b92e23b6068e287754741ee033428c9c61e444a0a52eb2"
+    },
+    {
+      "dex": 92,
+      "name": "Morcego",
+      "species": 83,
+      "tone": "0x86a0a84",
+      "wave": "0x8609160",
+      "peak": 6054,
+      "pcm_samples": 154312,
+      "pcm_sha256": "9e436f0c116ea5a72af45d4d6d138940f6e9707e664778fe1322a93026662227"
+    },
+    {
+      "dex": 93,
+      "name": "Vampiro",
+      "species": 84,
+      "tone": "0x86a0a90",
+      "wave": "0x8609a00",
+      "peak": 6059,
+      "pcm_samples": 154312,
+      "pcm_sha256": "f7b1e203906027eab48398045f007a29a4220651c97407c14cbd827d188328eb"
+    },
+    {
+      "dex": 94,
+      "name": "Piuiuim",
+      "species": 85,
+      "tone": "0x86a0a9c",
+      "wave": "0x860a3a0",
+      "peak": 6057,
+      "pcm_samples": 154288,
+      "pcm_sha256": "bc51a79d763e6154e6e52b479cc517e137f2ca04d6636d160080a7a383e2fdd5"
+    },
+    {
+      "dex": 95,
+      "name": "Tuiuiú",
+      "species": 86,
+      "tone": "0x86a0aa8",
+      "wave": "0x860ac2c",
+      "peak": 6060,
+      "pcm_samples": 154312,
+      "pcm_sha256": "a8c17554004fe325ac8867f6a2403938d72274418c439d4be5d4633ef6424f01"
+    },
+    {
+      "dex": 96,
+      "name": "Colhereiro",
+      "species": 87,
+      "tone": "0x86a0ab4",
+      "wave": "0x860b5b8",
+      "peak": 6057,
+      "pcm_samples": 154290,
+      "pcm_sha256": "d343e15fa300262080a818208f5b8227a0cfcb2ec4615543cd224f8a95973916"
+    },
+    {
+      "dex": 97,
+      "name": "Mulinha",
+      "species": 88,
+      "tone": "0x86a0ac0",
+      "wave": "0x860bf28",
+      "peak": 6055,
+      "pcm_samples": 154312,
+      "pcm_sha256": "fc86ab279f3fb5149af5047ef94d48332b8bcd81fd7f9f9695eec2eb78c7eb39"
+    },
+    {
+      "dex": 98,
+      "name": "Mula",
+      "species": 89,
+      "tone": "0x86a0acc",
+      "wave": "0x860c570",
+      "peak": 6059,
+      "pcm_samples": 154290,
+      "pcm_sha256": "9400f82c33fa208b49b3e2333140e94ea04ec57b909d06fca604f832806ab8af"
+    },
+    {
+      "dex": 99,
+      "name": "Mula-Cabeça",
+      "species": 90,
+      "tone": "0x86a0ad8",
+      "wave": "0x860ccb8",
+      "peak": 6056,
+      "pcm_samples": 154314,
+      "pcm_sha256": "97a8fcdcb0552219f46085fadb7286f3da12040a2641e6eeb50b7676983ab378"
+    },
+    {
+      "dex": 100,
+      "name": "Corcovado",
+      "species": 91,
+      "tone": "0x86a0ae4",
+      "wave": "0x860d500",
+      "peak": 6059,
+      "pcm_samples": 154290,
+      "pcm_sha256": "65331bde25b59f456df54d83b29c4888dd5fd1280ddd9169f47426b9b11a32af"
+    },
+    {
+      "dex": 101,
+      "name": "Cerválo",
+      "species": 92,
+      "tone": "0x86a0af0",
+      "wave": "0x860db5c",
+      "peak": 6056,
+      "pcm_samples": 154290,
+      "pcm_sha256": "f16795c0906e177d1af6308284b58fa9a85abb63c2825c7de5b0b02599b3e9d2"
+    },
+    {
+      "dex": 102,
+      "name": "Catingueiro",
+      "species": 93,
+      "tone": "0x86a0afc",
+      "wave": "0x860e1b8",
+      "peak": 6058,
+      "pcm_samples": 154314,
+      "pcm_sha256": "3d4a3d8936eb1ee2f252733f41393aaf5a401dd05fcc6aae6f58b614d3183992"
+    },
+    {
+      "dex": 103,
+      "name": "Suçuapara",
+      "species": 94,
+      "tone": "0x86a0b08",
+      "wave": "0x860e914",
+      "peak": 6059,
+      "pcm_samples": 154290,
+      "pcm_sha256": "f9da553d22cdd1b7f39763643b6802253f94dd7c1c71aee6f97472b3bcff3e30"
+    },
+    {
+      "dex": 104,
+      "name": "Cabocim",
+      "species": 95,
+      "tone": "0x86a0b14",
+      "wave": "0x860f21c",
+      "peak": 6053,
+      "pcm_samples": 154312,
+      "pcm_sha256": "73884dfed1d6d5eb1274b2825c39ac9302dfd95611ea027947227847d3e21286"
+    },
+    {
+      "dex": 105,
+      "name": "Caboclo",
+      "species": 96,
+      "tone": "0x86a0b20",
+      "wave": "0x860f910",
+      "peak": 6055,
+      "pcm_samples": 154288,
+      "pcm_sha256": "4f6d15b9469cc27cf999b55e7abc72e783fc87fb6d6df9ba3e5b0c6e7af50f2b"
+    },
+    {
+      "dex": 106,
+      "name": "Cangaço",
+      "species": 97,
+      "tone": "0x86a0b2c",
+      "wave": "0x8610104",
+      "peak": 6058,
+      "pcm_samples": 154312,
+      "pcm_sha256": "2a3b3c59a196284fe6e061dc361b2cbfe46ad6a4f5ba6f7c93da77097382c713"
+    },
+    {
+      "dex": 107,
+      "name": "Xangô",
+      "species": 98,
+      "tone": "0x86a0b38",
+      "wave": "0x8610814",
+      "peak": 6061,
+      "pcm_samples": 154288,
+      "pcm_sha256": "aa8ed729c4bb057bb5cb25c64643cf10f868b4e0d5fbb48b4c91ade2d64466ea"
+    },
+    {
+      "dex": 108,
+      "name": "Iemanjá",
+      "species": 99,
+      "tone": "0x86a0b44",
+      "wave": "0x861118c",
+      "peak": 6059,
+      "pcm_samples": 154312,
+      "pcm_sha256": "e0bb5532d74f827ab9b91915bc3e226fde1eb3b83f7c5ee6562e6293b73c432b"
+    },
+    {
+      "dex": 109,
+      "name": "Oxum",
+      "species": 100,
+      "tone": "0x86a0b50",
+      "wave": "0x861179c",
+      "peak": 6054,
+      "pcm_samples": 154312,
+      "pcm_sha256": "39a68ecada9163cf1479763df879cecf1b4676da36078a95fc48092791eef35d"
+    },
+    {
+      "dex": 110,
+      "name": "Ogum",
+      "species": 101,
+      "tone": "0x86a0b5c",
+      "wave": "0x86120f8",
+      "peak": 6058,
+      "pcm_samples": 154288,
+      "pcm_sha256": "aa645e5d831c7c774dd3f81f30a9289488b80e9e5c5e8b9ee156969cffca2241"
+    },
+    {
+      "dex": 111,
+      "name": "Cavalim",
+      "species": 102,
+      "tone": "0x86a0b68",
+      "wave": "0x8612a98",
+      "peak": 6057,
+      "pcm_samples": 154312,
+      "pcm_sha256": "0e8d59ef49c2457db9d9946c80a11afd5704eca3248b4cd8cf1e9bf7b40e5a52"
+    },
+    {
+      "dex": 112,
+      "name": "Cavalgado",
+      "species": 103,
+      "tone": "0x86a0b74",
+      "wave": "0x86131a8",
+      "peak": 6059,
+      "pcm_samples": 154288,
+      "pcm_sha256": "0119ee0d2fe3787de435a9e05b5dd2d08792976384b0d04a4395ace4e6e0763e"
+    },
+    {
+      "dex": 113,
+      "name": "Zebuim",
+      "species": 104,
+      "tone": "0x86a0b80",
+      "wave": "0x86139b8",
+      "peak": 6059,
+      "pcm_samples": 154312,
+      "pcm_sha256": "6fa63047551402d3f364cbb65e02b92af989bb9d11cb33177e08088f4dd76781"
+    },
+    {
+      "dex": 114,
+      "name": "Zebu",
+      "species": 105,
+      "tone": "0x86a0b8c",
+      "wave": "0x8614020",
+      "peak": 6055,
+      "pcm_samples": 154290,
+      "pcm_sha256": "6ea18fcf0f20cab529e0baaef476a49b425c662f280b833ac6b2d13f17352353"
+    },
+    {
+      "dex": 115,
+      "name": "Ovelhinha",
+      "species": 106,
+      "tone": "0x86a0b98",
+      "wave": "0x8614784",
+      "peak": 6059,
+      "pcm_samples": 154314,
+      "pcm_sha256": "6b3129bccabc48c2a701ce2d8d435afca494efa8ff593bede16e1c81bad7c6a8"
+    },
+    {
+      "dex": 116,
+      "name": "Cabrita",
+      "species": 107,
+      "tone": "0x86a0ba4",
+      "wave": "0x8614e54",
+      "peak": 6055,
+      "pcm_samples": 154290,
+      "pcm_sha256": "5c9d86bd03f0c40d957f57af0accfb731e8ef47ff1cd21b3790c596782add0de"
+    },
+    {
+      "dex": 117,
+      "name": "Chocalhão",
+      "species": 108,
+      "tone": "0x86a0bb0",
+      "wave": "0x86157b0",
+      "peak": 6055,
+      "pcm_samples": 154290,
+      "pcm_sha256": "64ef8f5f007a80d98167593bdac4a5ae3afc2485bd30bf40cecebc05bd5be192"
+    },
+    {
+      "dex": 118,
+      "name": "Cascavelim",
+      "species": 109,
+      "tone": "0x86a0bbc",
+      "wave": "0x8615e6c",
+      "peak": 6053,
+      "pcm_samples": 154314,
+      "pcm_sha256": "e48d92efd98e944dcdb94f70a2940c07c7f94631ac370830a46462d4caf2310a"
+    },
+    {
+      "dex": 119,
+      "name": "Cascavão",
+      "species": 110,
+      "tone": "0x86a0bc8",
+      "wave": "0x8616628",
+      "peak": 6057,
+      "pcm_samples": 154290,
+      "pcm_sha256": "45315c5e8e9d5d6ed1c3b7ab44c14e9601d09df20a0f3eac25224289fcbacf70"
+    },
+    {
+      "dex": 120,
+      "name": "Jararaca",
+      "species": 111,
+      "tone": "0x86a0bd4",
+      "wave": "0x8616ee4",
+      "peak": 6060,
+      "pcm_samples": 154312,
+      "pcm_sha256": "ebe0e4c08edc01cab5008017260dce4b80b190db9d411f066d99c32c0d33849b"
+    },
+    {
+      "dex": 121,
+      "name": "Pirarim",
+      "species": 112,
+      "tone": "0x86a0be0",
+      "wave": "0x86176cc",
+      "peak": 6054,
+      "pcm_samples": 154288,
+      "pcm_sha256": "ef38782b005614218194f5528e7b09bf7ee1545b88dce9b680d6ebd56b6b047b"
+    },
+    {
+      "dex": 122,
+      "name": "Pirarucu",
+      "species": 113,
+      "tone": "0x86a0bec",
+      "wave": "0x8617ddc",
+      "peak": 6057,
+      "pcm_samples": 154312,
+      "pcm_sha256": "988c802555d840ebde66a3e7fdcb19ede040ab9543eb744bcf2b5fa4676a5d03"
+    },
+    {
+      "dex": 123,
+      "name": "Piranha",
+      "species": 114,
+      "tone": "0x86a0bf8",
+      "wave": "0x86185ec",
+      "peak": 6059,
+      "pcm_samples": 154288,
+      "pcm_sha256": "f6662fa93cb5ceb0bf0cd59fbe4b23095fc40f318e3b393d60afb8b4660fc118"
+    },
+    {
+      "dex": 124,
+      "name": "Tambaqui",
+      "species": 115,
+      "tone": "0x86a0c04",
+      "wave": "0x8618dfc",
+      "peak": 6058,
+      "pcm_samples": 154312,
+      "pcm_sha256": "a1b0cd57b90f26c37891d30d4ea93e48ed117b2b990d24f5d6009b2449f1adab"
+    },
+    {
+      "dex": 125,
+      "name": "Aruanã",
+      "species": 116,
+      "tone": "0x86a0c10",
+      "wave": "0x8619634",
+      "peak": 6059,
+      "pcm_samples": 154312,
+      "pcm_sha256": "aa7e61fe392ba0650bcacf886d00dbde826bf8a1f1b3ec2f37f05f224dd4690f"
+    },
+    {
+      "dex": 126,
+      "name": "Poraquê",
+      "species": 117,
+      "tone": "0x86a0c1c",
+      "wave": "0x8619f60",
+      "peak": 6054,
+      "pcm_samples": 154288,
+      "pcm_sha256": "25f77c882a0da567faecb2b23f5a70cfeac6ebbdd45ebc38a938df23084e846d"
+    },
+    {
+      "dex": 127,
+      "name": "Curimbatá",
+      "species": 118,
+      "tone": "0x86a0c28",
+      "wave": "0x861a598",
+      "peak": 6058,
+      "pcm_samples": 154312,
+      "pcm_sha256": "14483681c228e286f8f93eff9cc9a7d3e980494beff69456290389154b9e23b6"
+    },
+    {
+      "dex": 128,
+      "name": "Traíra",
+      "species": 119,
+      "tone": "0x86a0c34",
+      "wave": "0x861ac18",
+      "peak": 6057,
+      "pcm_samples": 154288,
+      "pcm_sha256": "1727d003770b9604e47c72a75ace5a4d32e2a76b7e11b5f2af19065cf01101f0"
+    },
+    {
+      "dex": 129,
+      "name": "Dourado",
+      "species": 120,
+      "tone": "0x86a0c40",
+      "wave": "0x861b558",
+      "peak": 6059,
+      "pcm_samples": 154312,
+      "pcm_sha256": "ce46066ddeab5e657ee25cb3cb8fa2f9b7b27b99cda7ecf2442104d954f7dabc"
+    },
+    {
+      "dex": 130,
+      "name": "Tucunaré",
+      "species": 121,
+      "tone": "0x86a0c4c",
+      "wave": "0x861bc54",
+      "peak": 6055,
+      "pcm_samples": 154290,
+      "pcm_sha256": "7dc90360fe3dcb789529dabefb1c3bd741f7b98938052bb1af957fd75c35c9aa"
+    },
+    {
+      "dex": 131,
+      "name": "Pacu",
+      "species": 122,
+      "tone": "0x86a0c58",
+      "wave": "0x861c2fc",
+      "peak": 6054,
+      "pcm_samples": 154314,
+      "pcm_sha256": "f85ccd6db1da2d7cc58c92f4af8f15260c5a6b8e6bae55aa1f5f88f170864b50"
+    },
+    {
+      "dex": 132,
+      "name": "Matrinxã",
+      "species": 123,
+      "tone": "0x86a0c64",
+      "wave": "0x861c9d4",
+      "peak": 6061,
+      "pcm_samples": 154290,
+      "pcm_sha256": "327b3fd7aace8fe3729c998221aa063e028bc816d89c7e62a3bb9353502fcd04"
+    },
+    {
+      "dex": 133,
+      "name": "Piau",
+      "species": 124,
+      "tone": "0x86a0c70",
+      "wave": "0x861d260",
+      "peak": 6056,
+      "pcm_samples": 154290,
+      "pcm_sha256": "bdd312db1372881743dfe53c075403db34368d8a84b9a51dbf41c922e5f56a7e"
+    },
+    {
+      "dex": 134,
+      "name": "Cascudo",
+      "species": 125,
+      "tone": "0x86a0c7c",
+      "wave": "0x861db68",
+      "peak": 6055,
+      "pcm_samples": 154314,
+      "pcm_sha256": "233e0d56d77b0998f58d99adb420beb6da07ef284cf70eef38c71b4eb8230546"
+    },
+    {
+      "dex": 135,
+      "name": "Acará",
+      "species": 126,
+      "tone": "0x86a0c88",
+      "wave": "0x861e3bc",
+      "peak": 6059,
+      "pcm_samples": 154290,
+      "pcm_sha256": "f08c1c4942bb1f807613a9724242751bffc7e225c2c856b59cd8c45f63ea1646"
+    },
+    {
+      "dex": 136,
+      "name": "Vagalumim",
+      "species": 127,
+      "tone": "0x86a0c94",
+      "wave": "0x861ece8",
+      "peak": 6056,
+      "pcm_samples": 154312,
+      "pcm_sha256": "c1645d78e0b5f0298b3617992910857adbf9a62ce9ca7fb29c5556d3b9d8f207"
+    },
+    {
+      "dex": 137,
+      "name": "Vagalume",
+      "species": 128,
+      "tone": "0x86a0ca0",
+      "wave": "0x861f3dc",
+      "peak": 6060,
+      "pcm_samples": 154290,
+      "pcm_sha256": "76e8be256d77f7be0ee032ef25f0ed6a832cca5bd2bb96a611a8da837a24f24d"
+    },
+    {
+      "dex": 138,
+      "name": "Cigarrinho",
+      "species": 129,
+      "tone": "0x86a0cac",
+      "wave": "0x861fbd0",
+      "peak": 6057,
+      "pcm_samples": 154312,
+      "pcm_sha256": "198c423352a8e0c97655a294609111fe87963a5be211c1ed0a63efb5865d68e5"
+    },
+    {
+      "dex": 139,
+      "name": "Cigarrão",
+      "species": 130,
+      "tone": "0x86a0cb8",
+      "wave": "0x86202bc",
+      "peak": 6057,
+      "pcm_samples": 154288,
+      "pcm_sha256": "93767838f239c6e63af2fd117b0b5945740c4bad5c6bf4971b0746b83276b987"
+    },
+    {
+      "dex": 140,
+      "name": "Louvadinha",
+      "species": 131,
+      "tone": "0x86a0cc4",
+      "wave": "0x8620aa4",
+      "peak": 6057,
+      "pcm_samples": 154312,
+      "pcm_sha256": "eb3db280b2937b1aefed76dedb0c8627d4619aeff24301fc3a1282e5c50a5d1d"
+    },
+    {
+      "dex": 141,
+      "name": "Louvadeus",
+      "species": 132,
+      "tone": "0x86a0cd0",
+      "wave": "0x86213b4",
+      "peak": 6057,
+      "pcm_samples": 154312,
+      "pcm_sha256": "d7c4c5a7ae5ccb059db3ba5953139baeadcdd6c027f8a6745298f55ae3b3e503"
+    },
+    {
+      "dex": 142,
+      "name": "Escorpim",
+      "species": 133,
+      "tone": "0x86a0cdc",
+      "wave": "0x8621dc4",
+      "peak": 6058,
+      "pcm_samples": 154288,
+      "pcm_sha256": "1499a649202d73cf835b51b3d95d42f7038d3706a1a775372827b82f5744b52d"
+    },
+    {
+      "dex": 143,
+      "name": "Escorpião",
+      "species": 134,
+      "tone": "0x86a0ce8",
+      "wave": "0x86223fc",
+      "peak": 6054,
+      "pcm_samples": 154312,
+      "pcm_sha256": "a5fa6323d6948bd22ad2d9e91b72387d2765ed48d98a86d2439e92805c69668f"
+    },
+    {
+      "dex": 144,
+      "name": "Caramulão",
+      "species": 135,
+      "tone": "0x86a0cf4",
+      "wave": "0x8622b34",
+      "peak": 6059,
+      "pcm_samples": 154288,
+      "pcm_sha256": "42e754e84153c98a5361095b62d212afab7a136758b629b444adf5c719bbd751"
+    },
+    {
+      "dex": 145,
+      "name": "Piolhão",
+      "species": 136,
+      "tone": "0x86a0d00",
+      "wave": "0x8623474",
+      "peak": 6058,
+      "pcm_samples": 154312,
+      "pcm_sha256": "12ad6960653acbc1269d8db2d2eabd410bca9758061b657e877e5c97b631a33f"
+    },
+    {
+      "dex": 146,
+      "name": "Barata",
+      "species": 137,
+      "tone": "0x86a0d0c",
+      "wave": "0x8623bec",
+      "peak": 6054,
+      "pcm_samples": 154290,
+      "pcm_sha256": "523b1befc6889fd3cdad04ceaf8baf3e4bbcd240d5d309d8daca2e644150a37c"
+    },
+    {
+      "dex": 147,
+      "name": "Grilim",
+      "species": 138,
+      "tone": "0x86a0d18",
+      "wave": "0x8624478",
+      "peak": 6055,
+      "pcm_samples": 154314,
+      "pcm_sha256": "019ef355d6b42c6feb99e2c09d05129a53a8c2ffc15c6caeb2dd2ec4bad09488"
+    },
+    {
+      "dex": 148,
+      "name": "Grilão",
+      "species": 139,
+      "tone": "0x86a0d24",
+      "wave": "0x8624ae8",
+      "peak": 6057,
+      "pcm_samples": 154290,
+      "pcm_sha256": "f3b2b791a695ee4f0e538e1ecd65d27f9688144a64fea7c700dee9ec4ec34fa5"
+    },
+    {
+      "dex": 149,
+      "name": "Aranhão",
+      "species": 140,
+      "tone": "0x86a0d30",
+      "wave": "0x8625258",
+      "peak": 6060,
+      "pcm_samples": 154290,
+      "pcm_sha256": "2466efd7c249c6c3beff1059e753faae329e7425d326cadcdb8c095518bbdf13"
+    },
+    {
+      "dex": 150,
+      "name": "Vespão",
+      "species": 141,
+      "tone": "0x86a0d3c",
+      "wave": "0x8625bf8",
+      "peak": 6058,
+      "pcm_samples": 154314,
+      "pcm_sha256": "6cbce0a211f606b9d6903f362899080c5e4f719f9587deba42c45f4ecf75956d"
+    },
+    {
+      "dex": 151,
+      "name": "Marimbondão",
+      "species": 142,
+      "tone": "0x86a0d48",
+      "wave": "0x8626298",
+      "peak": 6055,
+      "pcm_samples": 154290,
+      "pcm_sha256": "8e96a73e4793df8ce5f85b26c1059133406aa7fe1d7e73c7f72170201fc3faef"
+    },
+    {
+      "dex": 152,
+      "name": "Traça",
+      "species": 143,
+      "tone": "0x86a0d54",
+      "wave": "0x86269bc",
+      "peak": 6059,
+      "pcm_samples": 154312,
+      "pcm_sha256": "bacfe8dce15e41d0724d127fc66e35352aa5af70542d4ef6f693cc1a48931044"
+    },
+    {
+      "dex": 153,
+      "name": "Corupião",
+      "species": 144,
+      "tone": "0x86a0d60",
+      "wave": "0x8627278",
+      "peak": 6056,
+      "pcm_samples": 154290,
+      "pcm_sha256": "c1f2e0f9eda1522183bf2a56a9ed6988f2822eb24e7b299b66929043ad15f359"
+    },
+    {
+      "dex": 154,
+      "name": "Cupinzim",
+      "species": 145,
+      "tone": "0x86a0d6c",
+      "wave": "0x8627c04",
+      "peak": 6059,
+      "pcm_samples": 154312,
+      "pcm_sha256": "a93b461a94bc818af5f615e5013919219f830061f5dac865c53230c1a0f52933"
+    },
+    {
+      "dex": 155,
+      "name": "FormigãoPrto",
+      "species": 146,
+      "tone": "0x86a0d78",
+      "wave": "0x86283c8",
+      "peak": 6057,
+      "pcm_samples": 154288,
+      "pcm_sha256": "405c7ad180ebb67adc641557128fa6c6c62e460cba127134382afe9723e8a143"
+    },
+    {
+      "dex": 156,
+      "name": "Beija-flor",
+      "species": 147,
+      "tone": "0x86a0d84",
+      "wave": "0x8628d54",
+      "peak": 6057,
+      "pcm_samples": 154312,
+      "pcm_sha256": "9216fea78c17ef4678334518f35f7afba8af9ecfbfc059caae8ed18afdf7a2bc"
+    },
+    {
+      "dex": 157,
+      "name": "Sabiá",
+      "species": 148,
+      "tone": "0x86a0d90",
+      "wave": "0x862936c",
+      "peak": 6059,
+      "pcm_samples": 154312,
+      "pcm_sha256": "0a5bdba59a51d136b972a2af52c9e0b9413e9f1b7f857574ad4db9934b5f9897"
+    },
+    {
+      "dex": 158,
+      "name": "Bem-te-vi",
+      "species": 149,
+      "tone": "0x86a0d9c",
+      "wave": "0x8629b90",
+      "peak": 6054,
+      "pcm_samples": 154288,
+      "pcm_sha256": "5a9a24b81c591db6edb9922dbad7f7f72c2b01af5d1b994c013bc353f72da019"
+    },
+    {
+      "dex": 159,
+      "name": "Urutau",
+      "species": 150,
+      "tone": "0x86a0da8",
+      "wave": "0x862a2e4",
+      "peak": 6055,
+      "pcm_samples": 154312,
+      "pcm_sha256": "1cf5764091bf7030dbd2cbdc79600eb101952a0b71406e348f3b843a5bd0825c"
+    },
+    {
+      "dex": 160,
+      "name": "Carcará",
+      "species": 151,
+      "tone": "0x86a0db4",
+      "wave": "0x862a970",
+      "peak": 6052,
+      "pcm_samples": 154288,
+      "pcm_sha256": "3d748c8a136cfe43db163d57ce5567722fe829c8b928e2af71f61acf6d74bf71"
+    },
+    {
+      "dex": 161,
+      "name": "Gavião",
+      "species": 152,
+      "tone": "0x86a0dc0",
+      "wave": "0x862b248",
+      "peak": 6060,
+      "pcm_samples": 154312,
+      "pcm_sha256": "78c4dd51acdb44a42aa9ce46831585699138b8cd2179143e4ca275e1c38685d5"
+    },
+    {
+      "dex": 162,
+      "name": "Urubu",
+      "species": 153,
+      "tone": "0x86a0dcc",
+      "wave": "0x862bac0",
+      "peak": 6059,
+      "pcm_samples": 154290,
+      "pcm_sha256": "999fdc7c72f552a4f46fb21615682a7acd6db9710b07e7ea5f9525dccb23e90e"
+    },
+    {
+      "dex": 163,
+      "name": "Corurupim",
+      "species": 154,
+      "tone": "0x86a0dd8",
+      "wave": "0x862c28c",
+      "peak": 6053,
+      "pcm_samples": 154312,
+      "pcm_sha256": "01ecdf614bff606982b7ab1a1a311bbde51afb56535554f9f1ed76fa3f482a05"
+    },
+    {
+      "dex": 164,
+      "name": "Coruja",
+      "species": 155,
+      "tone": "0x86a0de4",
+      "wave": "0x862ca18",
+      "peak": 6058,
+      "pcm_samples": 154290,
+      "pcm_sha256": "049e19ae5921f1dc04281590dcb21ccd275a1861fe039ef03c909e9b5afc1baf"
+    },
+    {
+      "dex": 165,
+      "name": "Jaburu",
+      "species": 156,
+      "tone": "0x86a0df0",
+      "wave": "0x862d2a4",
+      "peak": 6058,
+      "pcm_samples": 154290,
+      "pcm_sha256": "ade0e3529d7a8a4483f0be18da9bbfaec6a57112d13b342e248f9fe2d7cc848a"
+    },
+    {
+      "dex": 166,
+      "name": "Ema",
+      "species": 157,
+      "tone": "0x86a0dfc",
+      "wave": "0x862dabc",
+      "peak": 6059,
+      "pcm_samples": 154314,
+      "pcm_sha256": "cea7ac87f92eaf0c091028816c71d8a95cffcaa0f08cc4044ed0db5f9500340b"
+    },
+    {
+      "dex": 167,
+      "name": "Seriema",
+      "species": 158,
+      "tone": "0x86a0e08",
+      "wave": "0x862e1b0",
+      "peak": 6060,
+      "pcm_samples": 154290,
+      "pcm_sha256": "2e75e4aacdfce660252960a1a6bad300b534bb2d66096a5a385f7818033baf2e"
+    },
+    {
+      "dex": 168,
+      "name": "Anú",
+      "species": 159,
+      "tone": "0x86a0e14",
+      "wave": "0x862e844",
+      "peak": 6054,
+      "pcm_samples": 154314,
+      "pcm_sha256": "0ce640fdb9d6f1a86b022fcb62f022b9b3467451d27d5fb09ca2d791c7479acf"
+    },
+    {
+      "dex": 169,
+      "name": "Trinca-Ferro",
+      "species": 160,
+      "tone": "0x86a0e20",
+      "wave": "0x862efa8",
+      "peak": 6059,
+      "pcm_samples": 154290,
+      "pcm_sha256": "416139ea352ea8b7e807343c06d2e116ce774ab1ea9831be392c18a45b37cbe1"
+    },
+    {
+      "dex": 170,
+      "name": "Curió",
+      "species": 161,
+      "tone": "0x86a0e2c",
+      "wave": "0x862f604",
+      "peak": 6056,
+      "pcm_samples": 154312,
+      "pcm_sha256": "2d17bebc2b7945bed1d5a4790789897ed3bf23d79f8f9b5b18b3b7857aede041"
+    },
+    {
+      "dex": 171,
+      "name": "Sanhaço",
+      "species": 162,
+      "tone": "0x86a0e38",
+      "wave": "0x862fd1c",
+      "peak": 6059,
+      "pcm_samples": 154288,
+      "pcm_sha256": "b29c6bb2c95063b0401780abddbb55dfc5b8a0c4f700f2d7a9e46d3a7242fbd3"
+    },
+    {
+      "dex": 172,
+      "name": "Papa-Formiga",
+      "species": 163,
+      "tone": "0x86a0e44",
+      "wave": "0x8630478",
+      "peak": 6054,
+      "pcm_samples": 154312,
+      "pcm_sha256": "13d98e3a155251ac6fb28a00ebd95e83eb74ad659a125d70e80f20ccd94d0730"
+    },
+    {
+      "dex": 173,
+      "name": "Choca",
+      "species": 164,
+      "tone": "0x86a0e50",
+      "wave": "0x8630bb0",
+      "peak": 6056,
+      "pcm_samples": 154312,
+      "pcm_sha256": "0397619e0a1e1b15c23c14efcfbfccebb1293bf9594c9bdf7bde4338e20d2661"
+    },
+    {
+      "dex": 174,
+      "name": "Bacurau",
+      "species": 165,
+      "tone": "0x86a0e5c",
+      "wave": "0x8631290",
+      "peak": 6060,
+      "pcm_samples": 154288,
+      "pcm_sha256": "0c14414fdc3d1965a625cb618ca676e4c2d3a24c773df36ef472808cfc660e0b"
+    },
+    {
+      "dex": 175,
+      "name": "João-Barro",
+      "species": 166,
+      "tone": "0x86a0e68",
+      "wave": "0x8631a4c",
+      "peak": 6055,
+      "pcm_samples": 154312,
+      "pcm_sha256": "5d8f28ab0847f175b0d18213d39f43fe31777ce53ec2efcc50f075c322ece029"
+    },
+    {
+      "dex": 176,
+      "name": "Sementim",
+      "species": 167,
+      "tone": "0x86a0e74",
+      "wave": "0x86320a8",
+      "peak": 6057,
+      "pcm_samples": 154288,
+      "pcm_sha256": "6ce8350b8cd0646ac1357cf0de2fb591646b634b98d293b52078c24d8a6f3d1e"
+    },
+    {
+      "dex": 177,
+      "name": "Muda",
+      "species": 168,
+      "tone": "0x86a0e80",
+      "wave": "0x863279c",
+      "peak": 6059,
+      "pcm_samples": 154312,
+      "pcm_sha256": "323c25ce4b8f775d00656740c41e20961b28ad32f2b7dcc4a5e5a5d5b53661d1"
+    },
+    {
+      "dex": 178,
+      "name": "Jequitibá",
+      "species": 169,
+      "tone": "0x86a0e8c",
+      "wave": "0x8632f90",
+      "peak": 6057,
+      "pcm_samples": 154290,
+      "pcm_sha256": "399b07f5d8e68959d3e46980236984f90c70187267d8b37846a9376f6e81029f"
+    },
+    {
+      "dex": 179,
+      "name": "Bromelinha",
+      "species": 170,
+      "tone": "0x86a0e98",
+      "wave": "0x8633884",
+      "peak": 6059,
+      "pcm_samples": 154312,
+      "pcm_sha256": "8eac094de4c11ac7e242d87d948e54003a088e7652b940fc6aa08b9b2acb7f43"
+    },
+    {
+      "dex": 180,
+      "name": "Orquidina",
+      "species": 171,
+      "tone": "0x86a0ea4",
+      "wave": "0x8633ecc",
+      "peak": 6055,
+      "pcm_samples": 154290,
+      "pcm_sha256": "6661d2d10502f9736db00a2353c7e36a78922b5cc04bfb0f259b08eab84842da"
+    },
+    {
+      "dex": 181,
+      "name": "Vitóriarégia",
+      "species": 172,
+      "tone": "0x86a0eb0",
+      "wave": "0x8634828",
+      "peak": 6058,
+      "pcm_samples": 154290,
+      "pcm_sha256": "495cd2d1c5e97f0c5828834ee1f3ea6883e5c71d9a82b270a7c8ae2684ed7011"
+    },
+    {
+      "dex": 182,
+      "name": "Ipê",
+      "species": 173,
+      "tone": "0x86a0ebc",
+      "wave": "0x863508c",
+      "peak": 6058,
+      "pcm_samples": 154314,
+      "pcm_sha256": "dc8516a995a76b0db13b2ad8711768d102d4ad56bb666a67dfbcfaf6873ad663"
+    },
+    {
+      "dex": 183,
+      "name": "Cipó",
+      "species": 174,
+      "tone": "0x86a0ec8",
+      "wave": "0x86359c0",
+      "peak": 6058,
+      "pcm_samples": 154290,
+      "pcm_sha256": "c6a72b3490305a5dfb203fff169674c0f1182aa804da92690a5dfec116546542"
+    },
+    {
+      "dex": 184,
+      "name": "Palmito",
+      "species": 175,
+      "tone": "0x86a0ed4",
+      "wave": "0x86362d8",
+      "peak": 6058,
+      "pcm_samples": 154314,
+      "pcm_sha256": "1c49c8c14df8b31bd462f54ae9a983afa8841add4d767ddba2317e398b6b7497"
+    },
+    {
+      "dex": 185,
+      "name": "Babaçu",
+      "species": 176,
+      "tone": "0x86a0ee0",
+      "wave": "0x8636b94",
+      "peak": 6052,
+      "pcm_samples": 154290,
+      "pcm_sha256": "b74506ff315ba31858da6951b3db2b92ed6c20ddb286a76db2f8d193ad97b036"
+    },
+    {
+      "dex": 186,
+      "name": "Buriti",
+      "species": 177,
+      "tone": "0x86a0eec",
+      "wave": "0x8637220",
+      "peak": 6061,
+      "pcm_samples": 154312,
+      "pcm_sha256": "dbb9228283d6c35caa8a5df0e7c57c63bf1a13e868279e22e62e0caa0c3d89c2"
+    },
+    {
+      "dex": 187,
+      "name": "Cajuzim",
+      "species": 178,
+      "tone": "0x86a0ef8",
+      "wave": "0x8637968",
+      "peak": 6057,
+      "pcm_samples": 154288,
+      "pcm_sha256": "4d5810452f5821d385dc662ef8e3904fe12bc98697e4bc78dc2291d13128f6a4"
+    },
+    {
+      "dex": 188,
+      "name": "Cajueiro",
+      "species": 179,
+      "tone": "0x86a0f04",
+      "wave": "0x8638310",
+      "peak": 6055,
+      "pcm_samples": 154312,
+      "pcm_sha256": "2b7d206f215dbeb4498582fa5d5a624458c290afa7da7ea859f2bd9a3cae96e2"
+    },
+    {
+      "dex": 189,
+      "name": "Açaí",
+      "species": 180,
+      "tone": "0x86a0f10",
+      "wave": "0x8638db8",
+      "peak": 6054,
+      "pcm_samples": 154312,
+      "pcm_sha256": "8d69c210772265f0ad826c85fa0c30e62d470a4073f2db102c1cdbad56017dcf"
+    },
+    {
+      "dex": 190,
+      "name": "Cacauim",
+      "species": 181,
+      "tone": "0x86a0f1c",
+      "wave": "0x86394ac",
+      "peak": 6056,
+      "pcm_samples": 154288,
+      "pcm_sha256": "785d080748fea0608c0e8b07f505f2eec9a8b5c209c304a7a23547f41f8ede96"
+    },
+    {
+      "dex": 191,
+      "name": "Cacaueiro",
+      "species": 182,
+      "tone": "0x86a0f28",
+      "wave": "0x8639e2c",
+      "peak": 6060,
+      "pcm_samples": 154312,
+      "pcm_sha256": "84c3df4663f34807d85d108df54c76e0ea086854bb7f4a85e8259d9c9488b158"
+    },
+    {
+      "dex": 192,
+      "name": "Guaraná",
+      "species": 183,
+      "tone": "0x86a0f34",
+      "wave": "0x863a8ac",
+      "peak": 6058,
+      "pcm_samples": 154288,
+      "pcm_sha256": "5d728c8300b8f905de383e4d00a5c99613500f0324cdcc2054f355078225539a"
+    },
+    {
+      "dex": 193,
+      "name": "Mate",
+      "species": 184,
+      "tone": "0x86a0f40",
+      "wave": "0x863afb4",
+      "peak": 6055,
+      "pcm_samples": 154312,
+      "pcm_sha256": "5cc7f842a0694910165b83fa62740b30f3ece8161f0d5bdb77c8966379a4ac13"
+    },
+    {
+      "dex": 194,
+      "name": "Milho",
+      "species": 185,
+      "tone": "0x86a0f4c",
+      "wave": "0x863b8b0",
+      "peak": 6057,
+      "pcm_samples": 154288,
+      "pcm_sha256": "9173caf3ec463961d792887bd55e1b80145da9fb63d007c558f960ccb1a2c15c"
+    },
+    {
+      "dex": 195,
+      "name": "Mandioca",
+      "species": 186,
+      "tone": "0x86a0f58",
+      "wave": "0x863bfdc",
+      "peak": 6056,
+      "pcm_samples": 154312,
+      "pcm_sha256": "d9f616126d294e859c8c0f020828db625144be08bbcbc18d6872fab4c71d2c6d"
+    },
+    {
+      "dex": 196,
+      "name": "Pedrinha",
+      "species": 187,
+      "tone": "0x86a0f64",
+      "wave": "0x863c67c",
+      "peak": 6059,
+      "pcm_samples": 154290,
+      "pcm_sha256": "967a8a213fb453f7dd7c7c77ab35ae87852fa40fcf7ecb6e5aa0c6bf74664efd"
+    },
+    {
+      "dex": 197,
+      "name": "Rochão",
+      "species": 188,
+      "tone": "0x86a0f70",
+      "wave": "0x863cf08",
+      "peak": 6055,
+      "pcm_samples": 154290,
+      "pcm_sha256": "112883a6c4096636a681f27e92a2e552752def0045f293f9f7c40604235915ef"
+    },
+    {
+      "dex": 198,
+      "name": "Cristalim",
+      "species": 189,
+      "tone": "0x86a0f7c",
+      "wave": "0x863d894",
+      "peak": 6058,
+      "pcm_samples": 154314,
+      "pcm_sha256": "3fed0bcc2821d48b311c071262554faeda4b609ebc6c445353bfe061f51a5b36"
+    },
+    {
+      "dex": 199,
+      "name": "Ametista",
+      "species": 190,
+      "tone": "0x86a0f88",
+      "wave": "0x863e1c8",
+      "peak": 6059,
+      "pcm_samples": 154290,
+      "pcm_sha256": "e363b3e33dfbf8b5bf09c8abc094383ae20a3f01942145263eb4d2b4858e8d57"
+    },
+    {
+      "dex": 200,
+      "name": "Ouríço",
+      "species": 191,
+      "tone": "0x86a0f94",
+      "wave": "0x863ebfc",
+      "peak": 6053,
+      "pcm_samples": 154314,
+      "pcm_sha256": "6547792070dbe60682f37a8e34c6d20aa33bad0ffcc918f4e4acfa2acf157bb1"
+    },
+    {
+      "dex": 201,
+      "name": "Ferrolho",
+      "species": 192,
+      "tone": "0x86a0fa0",
+      "wave": "0x863f434",
+      "peak": 6055,
+      "pcm_samples": 154290,
+      "pcm_sha256": "1ddc75668b3eaacbb45fe89705f60f3a6258fabe6d83924e6ad19c086ab3c716"
+    },
+    {
+      "dex": 202,
+      "name": "Diamantina",
+      "species": 193,
+      "tone": "0x86a0fac",
+      "wave": "0x863fa88",
+      "peak": 6051,
+      "pcm_samples": 154312,
+      "pcm_sha256": "9f9350440bdf271448319c7fc4433bf4f45825a2c536ff4fb82ef8536ff4ea1e"
+    },
+    {
+      "dex": 203,
+      "name": "Bauxito",
+      "species": 194,
+      "tone": "0x86a0fb8",
+      "wave": "0x8640230",
+      "peak": 6060,
+      "pcm_samples": 154288,
+      "pcm_sha256": "e9f7c7ea68584b12889da718968be2a53b8ae1604599f1b61ea7b937f994adf1"
+    },
+    {
+      "dex": 204,
+      "name": "Manganim",
+      "species": 195,
+      "tone": "0x86a0fc4",
+      "wave": "0x8640ba8",
+      "peak": 6058,
+      "pcm_samples": 154312,
+      "pcm_sha256": "4a18dfe9e266c92196ca8da18af26b07b4e5392e287d07ddc60819f7546dd5c7"
+    },
+    {
+      "dex": 205,
+      "name": "Salitre",
+      "species": 196,
+      "tone": "0x86a0fd0",
+      "wave": "0x86412fc",
+      "peak": 6054,
+      "pcm_samples": 154312,
+      "pcm_sha256": "4626c50677335046226f46e0cb13e29af34344e2064724c351a877e3a135d2ba"
+    },
+    {
+      "dex": 206,
+      "name": "Enxofrino",
+      "species": 197,
+      "tone": "0x86a0fdc",
+      "wave": "0x8641b9c",
+      "peak": 6058,
+      "pcm_samples": 154288,
+      "pcm_sha256": "e9dfa802afe49ad20cad02b7154f6374e1eb0680d083be06f0c6618a547dbf05"
+    },
+    {
+      "dex": 207,
+      "name": "Argilim",
+      "species": 198,
+      "tone": "0x86a0fe8",
+      "wave": "0x8642400",
+      "peak": 6057,
+      "pcm_samples": 154312,
+      "pcm_sha256": "891250335b38f6b55e5c7ea758eaf3196cf19e69814a69d291e8d5be70b5c5f5"
+    },
+    {
+      "dex": 208,
+      "name": "Boneco",
+      "species": 199,
+      "tone": "0x86a0ff4",
+      "wave": "0x8642c18",
+      "peak": 6059,
+      "pcm_samples": 154288,
+      "pcm_sha256": "86be98fc09b40245aebe55e4ff1ca2f822d78038fbcd33718b7a4ea6dcdc1fd2"
+    },
+    {
+      "dex": 209,
+      "name": "Estalactite",
+      "species": 200,
+      "tone": "0x86a1000",
+      "wave": "0x8643530",
+      "peak": 6058,
+      "pcm_samples": 154312,
+      "pcm_sha256": "3783a29e205954f917e0fb8dddd694d74af3726ad4c51c8557dae9744f5bfb3c"
+    },
+    {
+      "dex": 210,
+      "name": "Estalagmite",
+      "species": 201,
+      "tone": "0x86a100c",
+      "wave": "0x8643d54",
+      "peak": 6055,
+      "pcm_samples": 154288,
+      "pcm_sha256": "07998509612270f630ee8e8d264b026545a6d7dba1429b18e839cc06accbda5c"
+    },
+    {
+      "dex": 211,
+      "name": "Fóssil",
+      "species": 202,
+      "tone": "0x86a1018",
+      "wave": "0x86444e8",
+      "peak": 6059,
+      "pcm_samples": 154312,
+      "pcm_sha256": "423805e1e7754e0a2487ee1fe59aa588933bc06f10a14a99fe360780efd2a276"
+    },
+    {
+      "dex": 212,
+      "name": "Meteorito",
+      "species": 203,
+      "tone": "0x86a1024",
+      "wave": "0x8644c88",
+      "peak": 6055,
+      "pcm_samples": 154290,
+      "pcm_sha256": "d05d8c8cfedee58ca12d61578cff759a71881653262598ba27ff7fb8ccc0a22f"
+    },
+    {
+      "dex": 213,
+      "name": "Vulcanite",
+      "species": 204,
+      "tone": "0x86a1030",
+      "wave": "0x864551c",
+      "peak": 6059,
+      "pcm_samples": 154290,
+      "pcm_sha256": "7859b201a9a5ef27c256ba80d8ed426446990ff7017c8d5015aa6052dba4dfc9"
+    },
+    {
+      "dex": 214,
+      "name": "Marmim",
+      "species": 205,
+      "tone": "0x86a103c",
+      "wave": "0x8645e78",
+      "peak": 6053,
+      "pcm_samples": 154312,
+      "pcm_sha256": "d9588bb3db3e480085989728870329f8b3c3aa14ed61c736903eb11ea1a7f36c"
+    },
+    {
+      "dex": 215,
+      "name": "Granito",
+      "species": 206,
+      "tone": "0x86a1048",
+      "wave": "0x864670c",
+      "peak": 6059,
+      "pcm_samples": 154290,
+      "pcm_sha256": "30a784c799cbc55e34d586ac3cf627ba106086e9cfad79f0e5322320b7570f96"
+    },
+    {
+      "dex": 216,
+      "name": "Caranguim",
+      "species": 207,
+      "tone": "0x86a1054",
+      "wave": "0x86470a0",
+      "peak": 6059,
+      "pcm_samples": 154314,
+      "pcm_sha256": "9c2af329b5c4013b547d52ec9606ea34bb587f825bd6cd5ee48ad371f59b1f1f"
+    },
+    {
+      "dex": 217,
+      "name": "Guaiamum",
+      "species": 208,
+      "tone": "0x86a1060",
+      "wave": "0x864772c",
+      "peak": 6054,
+      "pcm_samples": 154290,
+      "pcm_sha256": "3eb45d03cc9c22997429335ba25a33288e8524d8e50ce87c7c76b89a399feeee"
+    },
+    {
+      "dex": 218,
+      "name": "Siri",
+      "species": 209,
+      "tone": "0x86a106c",
+      "wave": "0x8647eb8",
+      "peak": 6058,
+      "pcm_samples": 154312,
+      "pcm_sha256": "715797af45695a7059eb270577c6314e81fd93f4f3f4dcdf72938b962f50894a"
+    },
+    {
+      "dex": 219,
+      "name": "Camarão",
+      "species": 210,
+      "tone": "0x86a1078",
+      "wave": "0x8648784",
+      "peak": 6057,
+      "pcm_samples": 154290,
+      "pcm_sha256": "5e7e9d3978cafe496ba3a5fcfa77d6480616bf141c66239d862ffcd2457a744c"
+    },
+    {
+      "dex": 220,
+      "name": "Polvim",
+      "species": 211,
+      "tone": "0x86a1084",
+      "wave": "0x864905c",
+      "peak": 6058,
+      "pcm_samples": 154312,
+      "pcm_sha256": "c16c2c601d176a4d23e1fb1700f4fed46a044e81a3955b94d2ab46d5ec400a37"
+    },
+    {
+      "dex": 221,
+      "name": "Polvão",
+      "species": 212,
+      "tone": "0x86a1090",
+      "wave": "0x8649818",
+      "peak": 6060,
+      "pcm_samples": 154312,
+      "pcm_sha256": "e1ce0e730b5d29159414bfae3a99b6d93f061abc3c75376c45cf2def66b0cb1d"
+    },
+    {
+      "dex": 222,
+      "name": "Águaviva",
+      "species": 213,
+      "tone": "0x86a109c",
+      "wave": "0x864a0d4",
+      "peak": 6054,
+      "pcm_samples": 154288,
+      "pcm_sha256": "da7f3e5a8a87c5fa414ca0797a39c66c765bbb4fffa9d0702f7356595b41f515"
+    },
+    {
+      "dex": 223,
+      "name": "CavalMarinho",
+      "species": 214,
+      "tone": "0x86a10a8",
+      "wave": "0x864a914",
+      "peak": 6059,
+      "pcm_samples": 154312,
+      "pcm_sha256": "4cfcca8020f8111d62524f8833e03a616c234ea7a5110777a74be07eb0ce8129"
+    },
+    {
+      "dex": 224,
+      "name": "Tartaruguim",
+      "species": 215,
+      "tone": "0x86a10b4",
+      "wave": "0x864b12c",
+      "peak": 6057,
+      "pcm_samples": 154288,
+      "pcm_sha256": "0dcdacec414622c170b443999405f7a56eaad1aba869100adf12067a07fd3cb4"
+    },
+    {
+      "dex": 225,
+      "name": "Tartaruga",
+      "species": 216,
+      "tone": "0x86a10c0",
+      "wave": "0x864b8dc",
+      "peak": 6059,
+      "pcm_samples": 154312,
+      "pcm_sha256": "9d745681365423debf19f1cf9be1ee8fcf62e0c23e1b27e371227daf01cd4b70"
+    },
+    {
+      "dex": 226,
+      "name": "Golfinho",
+      "species": 217,
+      "tone": "0x86a10cc",
+      "wave": "0x864c18c",
+      "peak": 6057,
+      "pcm_samples": 154288,
+      "pcm_sha256": "2c995e28b406d2a4aae9d5b042d4ab92aea29311c09fa98ad34c059fe59e903a"
+    },
+    {
+      "dex": 227,
+      "name": "Baleia",
+      "species": 218,
+      "tone": "0x86a10d8",
+      "wave": "0x864c90c",
+      "peak": 6054,
+      "pcm_samples": 154312,
+      "pcm_sha256": "92900b405ca00579239ce06a0be74d20763aba2ff2f046944a98df8b367066cf"
+    },
+    {
+      "dex": 228,
+      "name": "Tubarim",
+      "species": 219,
+      "tone": "0x86a10e4",
+      "wave": "0x864d108",
+      "peak": 6060,
+      "pcm_samples": 154290,
+      "pcm_sha256": "5d96603a8d5447432da77df259c89e860114be8635c3515b1b0b4bbb87d6596b"
+    },
+    {
+      "dex": 229,
+      "name": "Tubarão",
+      "species": 220,
+      "tone": "0x86a10f0",
+      "wave": "0x864d794",
+      "peak": 6056,
+      "pcm_samples": 154290,
+      "pcm_sha256": "41d77903765268a0af91711c49947afa3ea5f08f0f8ecd5fcd7cb19ab7cde223"
+    },
+    {
+      "dex": 230,
+      "name": "Arraia",
+      "species": 221,
+      "tone": "0x86a10fc",
+      "wave": "0x864df20",
+      "peak": 6055,
+      "pcm_samples": 154312,
+      "pcm_sha256": "bc5adf662b16d568056f4e9a52b22d6d27a119677f44e20946bc71d409935389"
+    },
+    {
+      "dex": 231,
+      "name": "Peixe-Espada",
+      "species": 222,
+      "tone": "0x86a1108",
+      "wave": "0x864e884",
+      "peak": 6053,
+      "pcm_samples": 154290,
+      "pcm_sha256": "bd34de98b96c55548359ca70e8ab0c537880e89333fcca7989c59d9abd03fa7b"
+    },
+    {
+      "dex": 232,
+      "name": "Pargo",
+      "species": 223,
+      "tone": "0x86a1114",
+      "wave": "0x864ee9c",
+      "peak": 6056,
+      "pcm_samples": 154314,
+      "pcm_sha256": "ee285c39de9fe0f04d5400ffd6ee84ef40ebbff6fdeef3646d90973b7303042e"
+    },
+    {
+      "dex": 233,
+      "name": "Pescadão",
+      "species": 224,
+      "tone": "0x86a1120",
+      "wave": "0x864f63c",
+      "peak": 6060,
+      "pcm_samples": 154290,
+      "pcm_sha256": "1f273962dceff7582f142ca7f9277949eb6b8761f3eb162eb74b80cb024701d8"
+    },
+    {
+      "dex": 234,
+      "name": "Loirinha",
+      "species": 225,
+      "tone": "0x86a112c",
+      "wave": "0x864ff8c",
+      "peak": 6056,
+      "pcm_samples": 154312,
+      "pcm_sha256": "3417808d456241ea77cdb9040fd14993f030514d6397e4d73b5fa22b37d29d55"
+    },
+    {
+      "dex": 235,
+      "name": "Cuca",
+      "species": 226,
+      "tone": "0x86a1138",
+      "wave": "0x86507b8",
+      "peak": 6057,
+      "pcm_samples": 154290,
+      "pcm_sha256": "027d174c5889f16e4bd1824705a6fd48bf99360e75d035d5d73309a50d45ecd5"
+    },
+    {
+      "dex": 236,
+      "name": "Bicho-Papão",
+      "species": 227,
+      "tone": "0x86a1144",
+      "wave": "0x8651044",
+      "peak": 6058,
+      "pcm_samples": 154312,
+      "pcm_sha256": "c1407de6955cb7e78689c71b9fcd5cd8a0e229fde0797657b3d15b9720c9e805"
+    },
+    {
+      "dex": 237,
+      "name": "Lobisomem",
+      "species": 228,
+      "tone": "0x86a1150",
+      "wave": "0x865198c",
+      "peak": 6057,
+      "pcm_samples": 154312,
+      "pcm_sha256": "5ae222aa44bf01f75a915e1f77f36ce620743982f8b611119a34938dc479b674"
+    },
+    {
+      "dex": 238,
+      "name": "Corpo-Seco",
+      "species": 229,
+      "tone": "0x86a115c",
+      "wave": "0x86522b8",
+      "peak": 6058,
+      "pcm_samples": 154288,
+      "pcm_sha256": "82e1dc99ca558c9cd20a014cfc40a4f3fad030c3dd3e8a6afa141815744a5f12"
+    },
+    {
+      "dex": 239,
+      "name": "Mão-Peluda",
+      "species": 230,
+      "tone": "0x86a1168",
+      "wave": "0x86528dc",
+      "peak": 6053,
+      "pcm_samples": 154312,
+      "pcm_sha256": "761b26c92bd244d0ac10b5d6f4171314e1103baec4cc02fb1ddfd1cbd754841a"
+    },
+    {
+      "dex": 240,
+      "name": "PernaCabelda",
+      "species": 231,
+      "tone": "0x86a1174",
+      "wave": "0x8653294",
+      "peak": 6061,
+      "pcm_samples": 154288,
+      "pcm_sha256": "7d20c281116b560f4571c1e2ea937cbd0d15a40eca9699f64355ced7b1cda44f"
+    },
+    {
+      "dex": 241,
+      "name": "Comadre",
+      "species": 232,
+      "tone": "0x86a1180",
+      "wave": "0x8653a58",
+      "peak": 6058,
+      "pcm_samples": 154312,
+      "pcm_sha256": "a16d0c6e7231e19a3410c9067f0e5019fcca0cc76444a36d47f57d0710615447"
+    },
+    {
+      "dex": 242,
+      "name": "Anhangá",
+      "species": 233,
+      "tone": "0x86a118c",
+      "wave": "0x86542ec",
+      "peak": 6054,
+      "pcm_samples": 154288,
+      "pcm_sha256": "2e3df22ea2780e93661f4d25af46adb5ba04baa329759796605cb24a1074fb88"
+    },
+    {
+      "dex": 243,
+      "name": "Jurupari",
+      "species": 234,
+      "tone": "0x86a1198",
+      "wave": "0x8654934",
+      "peak": 6055,
+      "pcm_samples": 154312,
+      "pcm_sha256": "5d4fdd02c0b88a1903d50e1d418cb1b2167fe54d096ddc29f57ce4b8f3766a1f"
+    },
+    {
+      "dex": 244,
+      "name": "Tupã",
+      "species": 235,
+      "tone": "0x86a11a4",
+      "wave": "0x8655044",
+      "peak": 6053,
+      "pcm_samples": 154290,
+      "pcm_sha256": "040834bf542d6fb045d0ef3dbb85e59d5d44ce8705ac9826b15b55080a798a77"
+    },
+    {
+      "dex": 245,
+      "name": "Jaci",
+      "species": 236,
+      "tone": "0x86a11b0",
+      "wave": "0x8655730",
+      "peak": 6060,
+      "pcm_samples": 154288,
+      "pcm_sha256": "002dfdd4ad588b679e5bf5f4752807778691b2fc60b28d34c9cee655872b0e5f"
+    },
+    {
+      "dex": 246,
+      "name": "Guaraci",
+      "species": 237,
+      "tone": "0x86a11bc",
+      "wave": "0x8655e10",
+      "peak": 6059,
+      "pcm_samples": 154312,
+      "pcm_sha256": "403b8d4e83b04c6e59faa0c7648d79b8c1315d9832d9610f1ad9105ff4759382"
+    },
+    {
+      "dex": 247,
+      "name": "Rudá",
+      "species": 238,
+      "tone": "0x86a11c8",
+      "wave": "0x865676c",
+      "peak": 6055,
+      "pcm_samples": 154290,
+      "pcm_sha256": "5b67235d50cb9e563004be4c8bd96122cd1c13a5f35db9b075fd3902ef34d863"
+    },
+    {
+      "dex": 248,
+      "name": "Aluá",
+      "species": 239,
+      "tone": "0x86a11d4",
+      "wave": "0x8656f0c",
+      "peak": 6057,
+      "pcm_samples": 154314,
+      "pcm_sha256": "5fa53741f5c14561b56a0f365ea67e2df0f6b6ada1489b8b3e5612cce9d90bdf"
+    },
+    {
+      "dex": 249,
+      "name": "Jenipapo",
+      "species": 240,
+      "tone": "0x86a11e0",
+      "wave": "0x8657830",
+      "peak": 6056,
+      "pcm_samples": 154290,
+      "pcm_sha256": "8c9c297e8947b739959a167a415f5ded32438bd1d70a5ac4ea3beee37497162f"
+    },
+    {
+      "dex": 250,
+      "name": "Urucum",
+      "species": 241,
+      "tone": "0x86a11ec",
+      "wave": "0x8658008",
+      "peak": 6059,
+      "pcm_samples": 154314,
+      "pcm_sha256": "41e74416d693750df3540c7e9f9006d6b56970039ce2c74e80703c1a97515075"
+    },
+    {
+      "dex": 251,
+      "name": "Caipora",
+      "species": 242,
+      "tone": "0x86a11f8",
+      "wave": "0x86587b0",
+      "peak": 6056,
+      "pcm_samples": 154290,
+      "pcm_sha256": "bf3a38238a9e4f42cefe5d067bcb1feb0809ac802726a4a6426c58a5f280272e"
+    },
+    {
+      "dex": 252,
+      "name": "Anhangá-Pitã",
+      "species": 243,
+      "tone": "0x86a1204",
+      "wave": "0x8659150",
+      "peak": 6057,
+      "pcm_samples": 154312,
+      "pcm_sha256": "e70728685269363efb2a44720a9802e5159c3b83f2bd3ae5ecc30ce7a3b886ca"
+    },
+    {
+      "dex": 253,
+      "name": "Yara-Pindá",
+      "species": 244,
+      "tone": "0x86a1210",
+      "wave": "0x86599f0",
+      "peak": 6059,
+      "pcm_samples": 154312,
+      "pcm_sha256": "a5ec088e6c0ab976bf02cc9de52846a52e9b953b429e37c933cfa90dd1c7e7b4"
+    },
+    {
+      "dex": 254,
+      "name": "Pisadeira",
+      "species": 245,
+      "tone": "0x86a121c",
+      "wave": "0x865a340",
+      "peak": 6057,
+      "pcm_samples": 154288,
+      "pcm_sha256": "305aea6df47e09a5d133f3ceca187f8bdaa787063025f76fe6871025d2ec1ad0"
+    },
+    {
+      "dex": 255,
+      "name": "Zumbi",
+      "species": 246,
+      "tone": "0x86a1228",
+      "wave": "0x865abf0",
+      "peak": 6059,
+      "pcm_samples": 154312,
+      "pcm_sha256": "2897015fbd841019bdc65eaf8067e8e453c625a7c4884945daf3e1677cda0622"
+    },
+    {
+      "dex": 256,
+      "name": "Iemanjá-Pq",
+      "species": 247,
+      "tone": "0x86a1234",
+      "wave": "0x865b31c",
+      "peak": 6052,
+      "pcm_samples": 154288,
+      "pcm_sha256": "92ac0cd6d5d27e9034d3e87552eca4deddb2c5493d65004c740266f775916b4c"
+    },
+    {
+      "dex": 257,
+      "name": "Ossanha",
+      "species": 248,
+      "tone": "0x86a1240",
+      "wave": "0x865b964",
+      "peak": 6059,
+      "pcm_samples": 154312,
+      "pcm_sha256": "fd156c30472b7062e4e0c68142d3e787c4b19047ea93720fe57000ae4738232a"
+    },
+    {
+      "dex": 258,
+      "name": "Oxalá",
+      "species": 249,
+      "tone": "0x86a124c",
+      "wave": "0x865c314",
+      "peak": 6059,
+      "pcm_samples": 154288,
+      "pcm_sha256": "2853872f0d45716645a7ee5c8feecde69a278155238673efe63d96a924f9a038"
+    },
+    {
+      "dex": 259,
+      "name": "Saciamigo",
+      "species": 250,
+      "tone": "0x86a1258",
+      "wave": "0x865c938",
+      "peak": 6053,
+      "pcm_samples": 154312,
+      "pcm_sha256": "454bcbf9228b72c7aca9db968ef19daa53a0b7501de2d1f8bb1e1cdaa26caa1f"
+    },
+    {
+      "dex": 260,
+      "name": "Sacipererê",
+      "species": 251,
+      "tone": "0x86a1264",
+      "wave": "0x865d26c",
+      "peak": 6058,
+      "pcm_samples": 154290,
+      "pcm_sha256": "d33ad8b14685f8d2fccf6cb1fa27211de3c5f26e75f79c511b611a85ed0210f0"
+    },
+    {
+      "dex": 261,
+      "name": "CurupAncião",
+      "species": 286,
+      "tone": "0x86a1408",
+      "wave": "0x865dbac",
+      "peak": 6057,
+      "pcm_samples": 154288,
+      "pcm_sha256": "d47cb2fb07f930f6024479737d8f387c1e23c33da2d7f78f8991d94d2d78c849"
+    },
+    {
+      "dex": 262,
+      "name": "CaiporaFêm",
+      "species": 287,
+      "tone": "0x86a1414",
+      "wave": "0x865e2c4",
+      "peak": 6059,
+      "pcm_samples": 154312,
+      "pcm_sha256": "d85954d4a096cb5396b797d0217724202fba8080b28f7813c4060d1744d58d87"
+    },
+    {
+      "dex": 263,
+      "name": "Pomba-Gira",
+      "species": 288,
+      "tone": "0x86a1420",
+      "wave": "0x865e99c",
+      "peak": 6058,
+      "pcm_samples": 154290,
+      "pcm_sha256": "bb4334159b5d7bc1a428d2a55a791a938d918c6f494a097738248add2b239d0a"
+    },
+    {
+      "dex": 264,
+      "name": "Exu",
+      "species": 289,
+      "tone": "0x86a142c",
+      "wave": "0x865f0dc",
+      "peak": 6055,
+      "pcm_samples": 154314,
+      "pcm_sha256": "b7c46cee4727f7b53cb93f41d7f7e0312958b1e88f58c8a1fc4a4438924024e3"
+    },
+    {
+      "dex": 265,
+      "name": "Preto-Velho",
+      "species": 290,
+      "tone": "0x86a1438",
+      "wave": "0x865fa00",
+      "peak": 6059,
+      "pcm_samples": 154290,
+      "pcm_sha256": "9d7efaee0fe22e1c781e3d61be9140aba23057e21ad75543c7d41f578733f501"
+    },
+    {
+      "dex": 266,
+      "name": "CabocGuerro",
+      "species": 291,
+      "tone": "0x86a1444",
+      "wave": "0x8660124",
+      "peak": 6056,
+      "pcm_samples": 154314,
+      "pcm_sha256": "2e2e4c61b83b84a099b2893bd48b22f4f445864c722e64afd1a05f0b8c64d152"
+    },
+    {
+      "dex": 267,
+      "name": "Marinheiro",
+      "species": 292,
+      "tone": "0x86a1450",
+      "wave": "0x866093c",
+      "peak": 6059,
+      "pcm_samples": 154290,
+      "pcm_sha256": "28d06650ca6392644f9fd96d8893f92ed6d9a9114a70c98fdb4466e590c3c093"
+    },
+    {
+      "dex": 268,
+      "name": "Baiano",
+      "species": 293,
+      "tone": "0x86a145c",
+      "wave": "0x866117c",
+      "peak": 6055,
+      "pcm_samples": 154312,
+      "pcm_sha256": "3564e33eaba9ba77cc6f1404f4649098df43b67fbdd762cc9dfc9e373b8f6ea9"
+    },
+    {
+      "dex": 269,
+      "name": "Cangaceiro",
+      "species": 294,
+      "tone": "0x86a1468",
+      "wave": "0x8661870",
+      "peak": 6058,
+      "pcm_samples": 154312,
+      "pcm_sha256": "45934e6c6e42af9a0d419e969a7617c57d75cb552d707311edd42c6efeba70a8"
+    },
+    {
+      "dex": 270,
+      "name": "Beata",
+      "species": 295,
+      "tone": "0x86a1474",
+      "wave": "0x86621cc",
+      "peak": 6060,
+      "pcm_samples": 154290,
+      "pcm_sha256": "3e1057b335cae7cc78459088ac278e5b90229717bfe6516a1e6b199913d61a6f"
+    },
+    {
+      "dex": 271,
+      "name": "Menino-Deus",
+      "species": 296,
+      "tone": "0x86a1480",
+      "wave": "0x8662b3c",
+      "peak": 6055,
+      "pcm_samples": 154312,
+      "pcm_sha256": "027d16a58549fde9a5ff5fcd29542a31432939a7b9f44a2de43d6216f8d64076"
+    },
+    {
+      "dex": 272,
+      "name": "Rei-Momo",
+      "species": 297,
+      "tone": "0x86a148c",
+      "wave": "0x86632f8",
+      "peak": 6055,
+      "pcm_samples": 154288,
+      "pcm_sha256": "4d6b6882082f02841d591a7f7b97b547245826d7181b3a5a1a6af4ef0a42d63a"
+    },
+    {
+      "dex": 273,
+      "name": "BumbaMeuBoi",
+      "species": 298,
+      "tone": "0x86a1498",
+      "wave": "0x8663b68",
+      "peak": 6052,
+      "pcm_samples": 154312,
+      "pcm_sha256": "7fe865d5796c67bd59481ec7ddfeccf3d248983c127471af7a135ed10c37c0bf"
+    },
+    {
+      "dex": 274,
+      "name": "Reisado",
+      "species": 299,
+      "tone": "0x86a14a4",
+      "wave": "0x8664424",
+      "peak": 6057,
+      "pcm_samples": 154288,
+      "pcm_sha256": "73ef3016df3d312b78a13c640bea162e98187ce713b0ccb7aa00b1237ee5decf"
+    },
+    {
+      "dex": 275,
+      "name": "Frevinho",
+      "species": 300,
+      "tone": "0x86a14b0",
+      "wave": "0x8664c80",
+      "peak": 6061,
+      "pcm_samples": 154312,
+      "pcm_sha256": "37988ed13c84bb6162e2b383d3c5c2b33166fceceba0cf6e596ac56ce5029a1d"
+    },
+    {
+      "dex": 276,
+      "name": "Maracatu",
+      "species": 304,
+      "tone": "0x86a14e0",
+      "wave": "0x86654dc",
+      "peak": 6054,
+      "pcm_samples": 154288,
+      "pcm_sha256": "bb1b12b64eb42f80f7964feabed443dddf2e0bc1c519865b44c4d21636cb321a"
+    },
+    {
+      "dex": 277,
+      "name": "Congada",
+      "species": 305,
+      "tone": "0x86a14ec",
+      "wave": "0x8665bbc",
+      "peak": 6058,
+      "pcm_samples": 154288,
+      "pcm_sha256": "706c95fbac63e61f6be744524e97cd14a13b3f8b9ff1ab1e7788d0ded7f5da79"
+    },
+    {
+      "dex": 278,
+      "name": "Folião",
+      "species": 309,
+      "tone": "0x86a151c",
+      "wave": "0x866626c",
+      "peak": 6058,
+      "pcm_samples": 154312,
+      "pcm_sha256": "9ad57ac29c83ef6de9b337016a84e6585658fa097ba1bead438ca17437f2303c"
+    },
+    {
+      "dex": 279,
+      "name": "Onçuma",
+      "species": 310,
+      "tone": "0x86a1528",
+      "wave": "0x8666a00",
+      "peak": 6058,
+      "pcm_samples": 154290,
+      "pcm_sha256": "c7ab5ef146a13e7c2818562f890622301dd6dd31e4de246447da1db3d1496995"
+    },
+    {
+      "dex": 280,
+      "name": "Sucuriaçu",
+      "species": 392,
+      "tone": "0x86a1900",
+      "wave": "0x86671a8",
+      "peak": 6057,
+      "pcm_samples": 154314,
+      "pcm_sha256": "92d7f6214996421e38b13d3043ecb02ea9925da116567d88aa1fbfb7c0f201af"
+    },
+    {
+      "dex": 281,
+      "name": "Pirarumbá",
+      "species": 393,
+      "tone": "0x86a190c",
+      "wave": "0x86679cc",
+      "peak": 6053,
+      "pcm_samples": 154290,
+      "pcm_sha256": "826b6f8b42d21ccb5cada55c923878113c11e73c3a5bf4b5729f5d25f01b2555"
+    },
+    {
+      "dex": 282,
+      "name": "DraguaráAlfa",
+      "species": 394,
+      "tone": "0x86a1918",
+      "wave": "0x8668044",
+      "peak": 6060,
+      "pcm_samples": 154314,
+      "pcm_sha256": "a9a01ab9821f017a2f82c1ad984aa5e15d9d3867845aecb08764c0a94de1f8bf"
+    },
+    {
+      "dex": 283,
+      "name": "TerolRainha",
+      "species": 311,
+      "tone": "0x86a1534",
+      "wave": "0x86686d0",
+      "peak": 6057,
+      "pcm_samples": 154290,
+      "pcm_sha256": "31d56e7edfbd5d84e23ec979dca66aee5b26d6751e016ab659f06978b4fb1e6a"
+    },
+    {
+      "dex": 284,
+      "name": "PetropAncião",
+      "species": 312,
+      "tone": "0x86a1540",
+      "wave": "0x8669034",
+      "peak": 6055,
+      "pcm_samples": 154312,
+      "pcm_sha256": "e1b05e612a2a6aa0988562404a4dc3432e42004cbdaf70e332d5652d9107ce63"
+    },
+    {
+      "dex": 285,
+      "name": "Boitatá-Puro",
+      "species": 306,
+      "tone": "0x86a14f8",
+      "wave": "0x866969c",
+      "peak": 6054,
+      "pcm_samples": 154312,
+      "pcm_sha256": "cb4ca8d32980ad011caf03d2b29c723b1858cffc3c4274204971ca2e1032a5a3"
+    },
+    {
+      "dex": 286,
+      "name": "Iara-Mãe",
+      "species": 307,
+      "tone": "0x86a1504",
+      "wave": "0x8669f44",
+      "peak": 6055,
+      "pcm_samples": 154290,
+      "pcm_sha256": "47cf8c2db27340fdb0af7e5d7b45eb79610c8b95f6ccaf73d409cd4b368107fe"
+    },
+    {
+      "dex": 287,
+      "name": "Curupira-Rei",
+      "species": 364,
+      "tone": "0x86a17b0",
+      "wave": "0x866a7a0",
+      "peak": 6060,
+      "pcm_samples": 154312,
+      "pcm_sha256": "f199526e826b187a0f6deb1e27d26da7ecaadbd918c656d45cabc8c3b7dfbc03"
+    },
+    {
+      "dex": 288,
+      "name": "Saci-Rei",
+      "species": 365,
+      "tone": "0x86a17bc",
+      "wave": "0x866aeb0",
+      "peak": 6057,
+      "pcm_samples": 154288,
+      "pcm_sha256": "0002c3d57acae2084b2f33c9e0bf6d9e78093b9d3a6ea660f9591bd4a7d75c0b"
+    },
+    {
+      "dex": 289,
+      "name": "Anhangaú",
+      "species": 366,
+      "tone": "0x86a17c8",
+      "wave": "0x866b558",
+      "peak": 6056,
+      "pcm_samples": 154312,
+      "pcm_sha256": "63bb07d37f8814005ef5ff99f923ae95c39cc23972cca8f89906480b7cb1ebfe"
+    },
+    {
+      "dex": 290,
+      "name": "Muirá-Kytã",
+      "species": 301,
+      "tone": "0x86a14bc",
+      "wave": "0x866bbc8",
+      "peak": 6059,
+      "pcm_samples": 154288,
+      "pcm_sha256": "793a0798d04bc0c06b4fe1170b5e5e11e08fd1286a86b0ebc7fd8c852f3819e5"
+    },
+    {
+      "dex": 291,
+      "name": "Cobra-Norato",
+      "species": 302,
+      "tone": "0x86a14c8",
+      "wave": "0x866c4b0",
+      "peak": 6057,
+      "pcm_samples": 154312,
+      "pcm_sha256": "bebbe44481035e79c0b2aad22f08a31f638cb5a00d495511ff41546388eaf995"
+    },
+    {
+      "dex": 292,
+      "name": "Mapinguari",
+      "species": 303,
+      "tone": "0x86a14d4",
+      "wave": "0x866cae8",
+      "peak": 6059,
+      "pcm_samples": 154288,
+      "pcm_sha256": "a37d31cf02ab5105af190a195102f8c119834071e2e28fe43b796769f0006967"
+    },
+    {
+      "dex": 293,
+      "name": "Ipupiara",
+      "species": 370,
+      "tone": "0x86a17f8",
+      "wave": "0x866d274",
+      "peak": 6054,
+      "pcm_samples": 154288,
+      "pcm_sha256": "7124b670bf1eb805b79e72264c23c83ec33ca9e20f9e17ad2cb06d12871bbe97"
+    },
+    {
+      "dex": 294,
+      "name": "Uirapuru",
+      "species": 371,
+      "tone": "0x86a1804",
+      "wave": "0x866dab4",
+      "peak": 6060,
+      "pcm_samples": 154312,
+      "pcm_sha256": "867c7fbc6dce82e03731b365e41e98c7aafa33fa5823c6499547832543805ce1"
+    },
+    {
+      "dex": 295,
+      "name": "Muiraquitã",
+      "species": 372,
+      "tone": "0x86a1810",
+      "wave": "0x866e264",
+      "peak": 6058,
+      "pcm_samples": 154290,
+      "pcm_sha256": "ed255a0d9476c053f30cc91b0348c9b50282b3e54f4136670d39983241fcb26a"
+    },
+    {
+      "dex": 296,
+      "name": "Amazona",
+      "species": 335,
+      "tone": "0x86a1654",
+      "wave": "0x866ea7c",
+      "peak": 6058,
+      "pcm_samples": 154312,
+      "pcm_sha256": "4033db126385e2f0be09fbfd273f740dbb4bfcf7a2948edbac5c80729c414297"
+    },
+    {
+      "dex": 297,
+      "name": "CorcovAncião",
+      "species": 336,
+      "tone": "0x86a1660",
+      "wave": "0x866f348",
+      "peak": 6058,
+      "pcm_samples": 154290,
+      "pcm_sha256": "86a10e1855eb2abbc079072c53b9f06852822a13775551dde19048730abae909"
+    },
+    {
+      "dex": 298,
+      "name": "Cristo",
+      "species": 350,
+      "tone": "0x86a1708",
+      "wave": "0x866fc74",
+      "peak": 6051,
+      "pcm_samples": 154314,
+      "pcm_sha256": "ef0eef84bf4057fe6c962c39192eb46a6b09f3d96909aae103f31a2f7d0575a7"
+    },
+    {
+      "dex": 299,
+      "name": "Ratão",
+      "species": 320,
+      "tone": "0x86a15a0",
+      "wave": "0x86702bc",
+      "peak": 6059,
+      "pcm_samples": 154290,
+      "pcm_sha256": "9d5f4af0b12d86be339e23f9bf584943ace7a18c1f5a45c6c94bcefbb6e73183"
+    },
+    {
+      "dex": 300,
+      "name": "Pombim",
+      "species": 315,
+      "tone": "0x86a1564",
+      "wave": "0x8670918",
+      "peak": 6060,
+      "pcm_samples": 154312,
+      "pcm_sha256": "474f1bb4183ebdabbaaba6aa6b338cd986fc1f19ce3e758308358e21284dcf33"
+    },
+    {
+      "dex": 301,
+      "name": "Pombão",
+      "species": 316,
+      "tone": "0x86a1570",
+      "wave": "0x8670fc8",
+      "peak": 6054,
+      "pcm_samples": 154314,
+      "pcm_sha256": "c8c63146112a90029288253011cae7ebcaec3ffc8a609f2280b9f046ae828235"
+    },
+    {
+      "dex": 302,
+      "name": "Baratão",
+      "species": 322,
+      "tone": "0x86a15b8",
+      "wave": "0x8671778",
+      "peak": 6059,
+      "pcm_samples": 154290,
+      "pcm_sha256": "dba61e9e6d3186432ca69c3e838e17e064a133974e2730898d2425b850f5b619"
+    },
+    {
+      "dex": 303,
+      "name": "Mosquim",
+      "species": 355,
+      "tone": "0x86a1744",
+      "wave": "0x8671f20",
+      "peak": 6056,
+      "pcm_samples": 154312,
+      "pcm_sha256": "7b942e72b1b3a3422a5a2a85deb447c2108f4bd329eac42bdd67e5b775fb0913"
+    },
+    {
+      "dex": 304,
+      "name": "Cão-Bravo",
+      "species": 382,
+      "tone": "0x86a1888",
+      "wave": "0x8672630",
+      "peak": 6059,
+      "pcm_samples": 154288,
+      "pcm_sha256": "5a4ee043fc11db08b4b27bb1b9dce3c62e0fbe0de61b52300c58d951552553c7"
+    },
+    {
+      "dex": 305,
+      "name": "Gato-Preto",
+      "species": 383,
+      "tone": "0x86a1894",
+      "wave": "0x8672cec",
+      "peak": 6057,
+      "pcm_samples": 154312,
+      "pcm_sha256": "70a62939847369737dfdfdc326b744afcc9907bfbddd993d7378f6e7b408b2bc"
+    },
+    {
+      "dex": 306,
+      "name": "Perereca",
+      "species": 384,
+      "tone": "0x86a18a0",
+      "wave": "0x8673494",
+      "peak": 6056,
+      "pcm_samples": 154288,
+      "pcm_sha256": "e3eccb5a90a8e7f366ced18aea0d73af4fc8c9a933ad8e004a8078a1e3988d87"
+    },
+    {
+      "dex": 307,
+      "name": "Lagartixa",
+      "species": 356,
+      "tone": "0x86a1750",
+      "wave": "0x8673c14",
+      "peak": 6059,
+      "pcm_samples": 154312,
+      "pcm_sha256": "186131c4594c4018c901aa82c1b37e3eeb862dd2913cd69ec88f05e19c8e05e3"
+    },
+    {
+      "dex": 308,
+      "name": "Traça-Papel",
+      "species": 357,
+      "tone": "0x86a175c",
+      "wave": "0x867458c",
+      "peak": 6056,
+      "pcm_samples": 154288,
+      "pcm_sha256": "9d833b8f0d8a541f5699a7140eb53e7e44012578a22468567e76d089eb496b10"
+    },
+    {
+      "dex": 309,
+      "name": "Poeirão",
+      "species": 337,
+      "tone": "0x86a166c",
+      "wave": "0x8674d58",
+      "peak": 6059,
+      "pcm_samples": 154288,
+      "pcm_sha256": "2a727414579320ff19f53ce221f4a37fd2ea3d096c0dd906c304f8d54f39ca25"
+    },
+    {
+      "dex": 310,
+      "name": "Ferrugem",
+      "species": 338,
+      "tone": "0x86a1678",
+      "wave": "0x86755bc",
+      "peak": 6054,
+      "pcm_samples": 154312,
+      "pcm_sha256": "7db1e88eb4ee3a160583fae51166d8522be360c702ec1306ab800f5a06339cf8"
+    },
+    {
+      "dex": 311,
+      "name": "Fumacento",
+      "species": 353,
+      "tone": "0x86a172c",
+      "wave": "0x8675d3c",
+      "peak": 6059,
+      "pcm_samples": 154290,
+      "pcm_sha256": "4d3641c353e301f5e8257c6dd5cfc31fc25fe2d271a679b50a2a8bdcf5b23800"
+    },
+    {
+      "dex": 312,
+      "name": "Óleoso",
+      "species": 354,
+      "tone": "0x86a1738",
+      "wave": "0x8676384",
+      "peak": 6059,
+      "pcm_samples": 154312,
+      "pcm_sha256": "effaf0acbe5f253ed30d3954cedf3c0ae9978cc1691e869b69c0a221e5af605a"
+    },
+    {
+      "dex": 313,
+      "name": "Lixão",
+      "species": 386,
+      "tone": "0x86a18b8",
+      "wave": "0x8676b34",
+      "peak": 6053,
+      "pcm_samples": 154290,
+      "pcm_sha256": "12b3c3f6a102e7617d8b01f813dd4023c9a674e9ca9a4fe4c83057666434b2e5"
+    },
+    {
+      "dex": 314,
+      "name": "Chorume",
+      "species": 387,
+      "tone": "0x86a18c4",
+      "wave": "0x867716c",
+      "peak": 6055,
+      "pcm_samples": 154314,
+      "pcm_sha256": "4d5826bf939a47a3e2fcee9ec20172d3f30bb4cfd5ff25c1b377e4f114ee755d"
+    },
+    {
+      "dex": 315,
+      "name": "Bituca",
+      "species": 363,
+      "tone": "0x86a17a4",
+      "wave": "0x86778a4",
+      "peak": 6051,
+      "pcm_samples": 154290,
+      "pcm_sha256": "bce3b0520b05917c416c13358455e618bc059ef98bf46b3e4567d8ed7ec5c0d5"
+    },
+    {
+      "dex": 316,
+      "name": "Latinha",
+      "species": 367,
+      "tone": "0x86a17d4",
+      "wave": "0x8678160",
+      "peak": 6058,
+      "pcm_samples": 154312,
+      "pcm_sha256": "87ed7d1fa7e28b9510000b149e6444d6f7fb9c4d436e85ee631f7f4fe83e85b9"
+    },
+    {
+      "dex": 317,
+      "name": "Sacolim",
+      "species": 368,
+      "tone": "0x86a17e0",
+      "wave": "0x86787a0",
+      "peak": 6059,
+      "pcm_samples": 154314,
+      "pcm_sha256": "90449b8dc56080d3a120a1312a14281a2a8bf545b7d14cc501aa58c082f389c0"
+    },
+    {
+      "dex": 318,
+      "name": "Garrafão",
+      "species": 330,
+      "tone": "0x86a1618",
+      "wave": "0x8678ee8",
+      "peak": 6054,
+      "pcm_samples": 154290,
+      "pcm_sha256": "646f2f46a246a731b8715b17145b2542a452969b12e1f60d571a007fb57168f2"
+    },
+    {
+      "dex": 319,
+      "name": "Netzero",
+      "species": 331,
+      "tone": "0x86a1624",
+      "wave": "0x8679688",
+      "peak": 6059,
+      "pcm_samples": 154312,
+      "pcm_sha256": "3e922eb5643d56256dc0158c8f6aace6ca7cc60b0cf29ac446ef6023a3446f03"
+    },
+    {
+      "dex": 320,
+      "name": "Pilhoso",
+      "species": 313,
+      "tone": "0x86a154c",
+      "wave": "0x8679fb4",
+      "peak": 6057,
+      "pcm_samples": 154288,
+      "pcm_sha256": "f095a5c94d3e283ed298327ff3a3dae8d10a9c00f5d43bf312bb9f6bc26b9d26"
+    },
+    {
+      "dex": 321,
+      "name": "Cabofio",
+      "species": 314,
+      "tone": "0x86a1558",
+      "wave": "0x867a6bc",
+      "peak": 6059,
+      "pcm_samples": 154312,
+      "pcm_sha256": "450090ad82ecf1d91ab3c7219654c687d94b23e072151a2c9bb132590601ecde"
+    },
+    {
+      "dex": 322,
+      "name": "Bugão",
+      "species": 339,
+      "tone": "0x86a1684",
+      "wave": "0x867add4",
+      "peak": 6056,
+      "pcm_samples": 154288,
+      "pcm_sha256": "ee4669714f62f6217ade3d174026cec5398de18dcf4ca3651a8d6c5d0526b0c8"
+    },
+    {
+      "dex": 323,
+      "name": "Aluminio",
+      "species": 340,
+      "tone": "0x86a1690",
+      "wave": "0x867b61c",
+      "peak": 6057,
+      "pcm_samples": 154312,
+      "pcm_sha256": "637274bd7994574a3377ce75e49e30ee672b667c4ed57f62b1be6d37bccebaa3"
+    },
+    {
+      "dex": 324,
+      "name": "Concretim",
+      "species": 321,
+      "tone": "0x86a15ac",
+      "wave": "0x867be04",
+      "peak": 6060,
+      "pcm_samples": 154288,
+      "pcm_sha256": "fae7d7ea53115904e4371f9cd5398e8f2a37b285944633a1a35b88a2ac3563b0"
+    },
+    {
+      "dex": 325,
+      "name": "Bueiro",
+      "species": 351,
+      "tone": "0x86a1714",
+      "wave": "0x867c558",
+      "peak": 6056,
+      "pcm_samples": 154288,
+      "pcm_sha256": "16396d068f045f3c65b578e6f478b661032d9603bd0b3504ac03dee179687f72"
+    },
+    {
+      "dex": 326,
+      "name": "Sinal",
+      "species": 352,
+      "tone": "0x86a1720",
+      "wave": "0x867cb98",
+      "peak": 6055,
+      "pcm_samples": 154312,
+      "pcm_sha256": "e9cd4f81266e8417796da112b7fb09044baaffb6402e44da8800ae90aa968264"
+    },
+    {
+      "dex": 327,
+      "name": "Poste",
+      "species": 308,
+      "tone": "0x86a1510",
+      "wave": "0x867d338",
+      "peak": 6053,
+      "pcm_samples": 154288,
+      "pcm_sha256": "82a16728629c7880eb7c950398e0345b20a723867cd39a4e58bb2f8c5f408acb"
+    },
+    {
+      "dex": 328,
+      "name": "Grafiteiro",
+      "species": 332,
+      "tone": "0x86a1630",
+      "wave": "0x867db80",
+      "peak": 6056,
+      "pcm_samples": 154312,
+      "pcm_sha256": "759704715c89b8b10d63ae211797aca2f43896fea85e86f2b8faf2c0c6e8454b"
+    },
+    {
+      "dex": 329,
+      "name": "Guaraciana",
+      "species": 333,
+      "tone": "0x86a163c",
+      "wave": "0x867e244",
+      "peak": 6061,
+      "pcm_samples": 154290,
+      "pcm_sha256": "049fefe3809b766039d6e51dd468f194e34e06046433297773addddf83b38532"
+    },
+    {
+      "dex": 330,
+      "name": "Jaciana",
+      "species": 334,
+      "tone": "0x86a1648",
+      "wave": "0x867ec94",
+      "peak": 6055,
+      "pcm_samples": 154314,
+      "pcm_sha256": "b4bf67e0021acba643980d4942e8a98460b9caf0076e8fb5b9830a0f26261497"
+    },
+    {
+      "dex": 331,
+      "name": "Tupanaú",
+      "species": 344,
+      "tone": "0x86a16c0",
+      "wave": "0x867f5d4",
+      "peak": 6058,
+      "pcm_samples": 154290,
+      "pcm_sha256": "6cf55bb8ad7cb292b17e22f38e9d4a6217f5d8890bab9c163fe851d7ddb753e8"
+    },
+    {
+      "dex": 332,
+      "name": "Iaraú",
+      "species": 345,
+      "tone": "0x86a16cc",
+      "wave": "0x867ff24",
+      "peak": 6058,
+      "pcm_samples": 154314,
+      "pcm_sha256": "0b9b156fe9eaf0e812be3f203f0387a826f085f3088fe891c44e51b2608c9107"
+    },
+    {
+      "dex": 333,
+      "name": "Kuarahy",
+      "species": 358,
+      "tone": "0x86a1768",
+      "wave": "0x8680ae0",
+      "peak": 6058,
+      "pcm_samples": 154314,
+      "pcm_sha256": "a78e29f51da6961543d2422a08fce1ba6a0f70bf4cfabbb466902c31cb9c6720"
+    },
+    {
+      "dex": 334,
+      "name": "Yasy",
+      "species": 359,
+      "tone": "0x86a1774",
+      "wave": "0x8681590",
+      "peak": 6058,
+      "pcm_samples": 154290,
+      "pcm_sha256": "97368a09b7517286eae0ea5e9a0c93ef6043f81005481888995c2e89cf70a014"
+    },
+    {
+      "dex": 335,
+      "name": "Rudarauna",
+      "species": 380,
+      "tone": "0x86a1870",
+      "wave": "0x8681e78",
+      "peak": 6055,
+      "pcm_samples": 154312,
+      "pcm_sha256": "b060ba95110ed6164dc237c530bc65b9bbd2886414d969c969832ed2b6c340fa"
+    },
+    {
+      "dex": 336,
+      "name": "Perybé",
+      "species": 379,
+      "tone": "0x86a1864",
+      "wave": "0x868283c",
+      "peak": 6060,
+      "pcm_samples": 154288,
+      "pcm_sha256": "451b89fe019442cab8f8e18d69dab742ee5df9c4bdbc5c64e8747abc9ad2fe38"
+    },
+    {
+      "dex": 337,
+      "name": "Arauanaú",
+      "species": 348,
+      "tone": "0x86a16f0",
+      "wave": "0x8683468",
+      "peak": 6058,
+      "pcm_samples": 154312,
+      "pcm_sha256": "4afa2f60b1cda0f8703e473913897d737147838355990bb2bb912a337fdf2b62"
+    },
+    {
+      "dex": 338,
+      "name": "Verdejante",
+      "species": 349,
+      "tone": "0x86a16fc",
+      "wave": "0x8683dc4",
+      "peak": 6058,
+      "pcm_samples": 154288,
+      "pcm_sha256": "08d730162c21f1d9a6893ac35b91e0b127fa43be4a8414182e0ec643d873c74b"
+    },
+    {
+      "dex": 339,
+      "name": "Chuvão",
+      "species": 323,
+      "tone": "0x86a15c4",
+      "wave": "0x86847a4",
+      "peak": 6057,
+      "pcm_samples": 154312,
+      "pcm_sha256": "a2441ec4a88f0cf0e4a77a6a632600427d1ce20765991f80433d700b0c795897"
+    },
+    {
+      "dex": 340,
+      "name": "Solzão",
+      "species": 324,
+      "tone": "0x86a15d0",
+      "wave": "0x8685340",
+      "peak": 6053,
+      "pcm_samples": 154288,
+      "pcm_sha256": "a37a653fd34a8d947cf24cf851972b0488108c38cdfabd99aada07b10eea12e7"
+    },
+    {
+      "dex": 341,
+      "name": "Ventania",
+      "species": 326,
+      "tone": "0x86a15e8",
+      "wave": "0x8685d50",
+      "peak": 6060,
+      "pcm_samples": 154288,
+      "pcm_sha256": "71c50d61bcb9e0c48fabc3b9dde883867e8c54d5bbf921643e2272a25feb62f2"
+    },
+    {
+      "dex": 342,
+      "name": "Terraão",
+      "species": 327,
+      "tone": "0x86a15f4",
+      "wave": "0x8686698",
+      "peak": 6058,
+      "pcm_samples": 154312,
+      "pcm_sha256": "6d500dc757198c2b6cc62044745c0de87319f9761f197877790a1b94092f672a"
+    },
+    {
+      "dex": 343,
+      "name": "Fogaréu",
+      "species": 318,
+      "tone": "0x86a1588",
+      "wave": "0x86872ec",
+      "peak": 6055,
+      "pcm_samples": 154288,
+      "pcm_sha256": "b60057c86df4d09c7c1791846532d692a2a5e2f80d1079e6fcbf91c943b558d2"
+    },
+    {
+      "dex": 344,
+      "name": "Marulho",
+      "species": 319,
+      "tone": "0x86a1594",
+      "wave": "0x8687bb0",
+      "peak": 6059,
+      "pcm_samples": 154312,
+      "pcm_sha256": "135cf110861ff81a066a16cea725ddd4ac49df4acd5daa1a13f1c9b3580c50f1"
+    },
+    {
+      "dex": 345,
+      "name": "Alvorecer",
+      "species": 388,
+      "tone": "0x86a18d0",
+      "wave": "0x8688600",
+      "peak": 6056,
+      "pcm_samples": 154290,
+      "pcm_sha256": "32cde9b783dd7f89a39941e3bea82ab173955cf49ee25f459103ccd1a59c7e7f"
+    },
+    {
+      "dex": 346,
+      "name": "Poente",
+      "species": 389,
+      "tone": "0x86a18dc",
+      "wave": "0x868918c",
+      "peak": 6059,
+      "pcm_samples": 154314,
+      "pcm_sha256": "950c5cb20ae28f4b049f4961175d1bcb41a815e2e3dcb1173391503a93fc536d"
+    },
+    {
+      "dex": 347,
+      "name": "Estrelinha",
+      "species": 390,
+      "tone": "0x86a18e8",
+      "wave": "0x8689c34",
+      "peak": 6055,
+      "pcm_samples": 154290,
+      "pcm_sha256": "0efd509e2dbd661d3bba6544f4d62d1fc2b6e4767854614023baf0f00732d7ec"
+    },
+    {
+      "dex": 348,
+      "name": "Arauanamon",
+      "species": 391,
+      "tone": "0x86a18f4",
+      "wave": "0x868a5ac",
+      "peak": 6059,
+      "pcm_samples": 154314,
+      "pcm_sha256": "7c0246c024142c10aa8d86af257d63853b9c0d48b32b6628b4e0b841988486d0"
+    },
+    {
+      "dex": 349,
+      "name": "Aracuã",
+      "species": 328,
+      "tone": "0x86a1600",
+      "wave": "0x868ae68",
+      "peak": 6059,
+      "pcm_samples": 154314,
+      "pcm_sha256": "7cbee9a0ab283982e4d75304a2e6c5551f6ecb98fcb0eee1fb39ec3d52506174"
+    },
+    {
+      "dex": 350,
+      "name": "Bugio",
+      "species": 329,
+      "tone": "0x86a160c",
+      "wave": "0x868b710",
+      "peak": 6057,
+      "pcm_samples": 154290,
+      "pcm_sha256": "bd5fc3ce800b9481be81381d30b8a3fce28bc74c3c672df76b2197af60432a09"
+    },
+    {
+      "dex": 351,
+      "name": "Tuim",
+      "species": 385,
+      "tone": "0x86a18ac",
+      "wave": "0x868be90",
+      "peak": 6058,
+      "pcm_samples": 154312,
+      "pcm_sha256": "aedcad002d05cbd2ccbb323236c222fb8d4846d1b7e4da4b7c9358032015245e"
+    },
+    {
+      "dex": 352,
+      "name": "Periquitão",
+      "species": 317,
+      "tone": "0x86a157c",
+      "wave": "0x868c5a8",
+      "peak": 6053,
+      "pcm_samples": 154290,
+      "pcm_sha256": "dd2bc6d4279a6ff8ec59f614a44c82a1b027faa582cd86e1830e55717cd04ea4"
+    },
+    {
+      "dex": 353,
+      "name": "Ararunão",
+      "species": 377,
+      "tone": "0x86a184c",
+      "wave": "0x868cdc0",
+      "peak": 6059,
+      "pcm_samples": 154312,
+      "pcm_sha256": "9595db6b92af80b8f0b4a5fbf1f2eb51832513b5430c57bca8406bc5ab5ebcd1"
+    },
+    {
+      "dex": 354,
+      "name": "Preazinho",
+      "species": 378,
+      "tone": "0x86a1858",
+      "wave": "0x868d6d8",
+      "peak": 6060,
+      "pcm_samples": 154288,
+      "pcm_sha256": "f2dc2c52e898a779ce9e43990dd89db2e13038a1cb622b9c6800a34a1ae64c92"
+    },
+    {
+      "dex": 355,
+      "name": "Capivarão",
+      "species": 361,
+      "tone": "0x86a178c",
+      "wave": "0x868dd94",
+      "peak": 6054,
+      "pcm_samples": 154312,
+      "pcm_sha256": "21aa07dd6903c13823963af31f6e83ac3072c2dbb9b17088b40412e9c8db4f9d"
+    },
+    {
+      "dex": 356,
+      "name": "Tamanduí",
+      "species": 362,
+      "tone": "0x86a1798",
+      "wave": "0x868e550",
+      "peak": 6055,
+      "pcm_samples": 154288,
+      "pcm_sha256": "f223673173ad42301947e88903581007a69a1da6a32b13a5be4215d4e25b8b51"
+    },
+    {
+      "dex": 357,
+      "name": "Tamanduá",
+      "species": 369,
+      "tone": "0x86a17ec",
+      "wave": "0x868eeac",
+      "peak": 6052,
+      "pcm_samples": 154288,
+      "pcm_sha256": "2f624a5976be35cec9054c1f0565f96ba1c770ec9cee9980b9cdba17fcf143b8"
+    },
+    {
+      "dex": 358,
+      "name": "Tamanduão",
+      "species": 411,
+      "tone": "0x86a19e4",
+      "wave": "0x868f908",
+      "peak": 6059,
+      "pcm_samples": 154312,
+      "pcm_sha256": "1c9467f816d72efe352f9004b7a950dad6b8b6600d53bab1d13da1060b54187f"
+    },
+    {
+      "dex": 359,
+      "name": "Preguicinha",
+      "species": 376,
+      "tone": "0x86a1840",
+      "wave": "0x8690464",
+      "peak": 6057,
+      "pcm_samples": 154288,
+      "pcm_sha256": "58491d408e513b1e26371e0d71a6fe3f7f5558bd274e96df045185549e8c37b4"
+    },
+    {
+      "dex": 360,
+      "name": "Preguiçoso",
+      "species": 360,
+      "tone": "0x86a1780",
+      "wave": "0x8690d0c",
+      "peak": 6055,
+      "pcm_samples": 154312,
+      "pcm_sha256": "7fddb47a7ee985cd900379468bc72a7783cde420f9c667387586f864df737080"
+    },
+    {
+      "dex": 361,
+      "name": "Beija-Flor",
+      "species": 346,
+      "tone": "0x86a16d8",
+      "wave": "0x86916b4",
+      "peak": 6059,
+      "pcm_samples": 154290,
+      "pcm_sha256": "55ce7f2c781713f193af95159b80579f9467e2d39c6b6f057f9617ec4444a871"
+    },
+    {
+      "dex": 362,
+      "name": "Beija-Luz",
+      "species": 347,
+      "tone": "0x86a16e4",
+      "wave": "0x8691d84",
+      "peak": 6054,
+      "pcm_samples": 154314,
+      "pcm_sha256": "ede4c7456a3e1d4d8096a481c9ce367d6833d312870bc67d7be5634ed62b3715"
+    },
+    {
+      "dex": 363,
+      "name": "Beija-Sol",
+      "species": 341,
+      "tone": "0x86a169c",
+      "wave": "0x8692550",
+      "peak": 6059,
+      "pcm_samples": 154290,
+      "pcm_sha256": "0a30d9c43afffd23fa9cb6a31bccafe01ea2da3f4942140fbf1bae54d23ca75e"
+    },
+    {
+      "dex": 364,
+      "name": "Sarará",
+      "species": 342,
+      "tone": "0x86a16a8",
+      "wave": "0x8692e1c",
+      "peak": 6055,
+      "pcm_samples": 154314,
+      "pcm_sha256": "2033d8386ee350edc8083aea7fdc6e2602d79cebbc203ae15d99935c50f76f70"
+    },
+    {
+      "dex": 365,
+      "name": "Cambota",
+      "species": 343,
+      "tone": "0x86a16b4",
+      "wave": "0x8693670",
+      "peak": 6057,
+      "pcm_samples": 154314,
+      "pcm_sha256": "421a8876557f4c9fce01714ea425c2c62dba380382664110e1098992d6d6952e"
+    },
+    {
+      "dex": 366,
+      "name": "Berimbau",
+      "species": 373,
+      "tone": "0x86a181c",
+      "wave": "0x8693fe0",
+      "peak": 6060,
+      "pcm_samples": 154290,
+      "pcm_sha256": "b47408f0bafb0298889e2d281326ebfbc325ed47546d2f2e900a53148244ea36"
+    },
+    {
+      "dex": 367,
+      "name": "Atabaque",
+      "species": 374,
+      "tone": "0x86a1828",
+      "wave": "0x8694818",
+      "peak": 6057,
+      "pcm_samples": 154312,
+      "pcm_sha256": "caa190cd92f0c63e2f28939b99885df45cca56cd834fa1e8a807720cfd1f0e50"
+    },
+    {
+      "dex": 368,
+      "name": "Pandeirim",
+      "species": 375,
+      "tone": "0x86a1834",
+      "wave": "0x8694f88",
+      "peak": 6055,
+      "pcm_samples": 154290,
+      "pcm_sha256": "b613c74ef898c6931104aff462fb7ed48ddfbd490e7db5d5568388b685ad6c06"
+    },
+    {
+      "dex": 369,
+      "name": "Sanfoninha",
+      "species": 381,
+      "tone": "0x86a187c",
+      "wave": "0x8695790",
+      "peak": 6052,
+      "pcm_samples": 154312,
+      "pcm_sha256": "367c2f21ea6603e5a32e1d26c30169acaf1f036b48e5d45a12c5b1474af11b0e"
+    },
+    {
+      "dex": 370,
+      "name": "Violeiro",
+      "species": 325,
+      "tone": "0x86a15dc",
+      "wave": "0x8695f68",
+      "peak": 6057,
+      "pcm_samples": 154288,
+      "pcm_sha256": "6fd63d52b4e4ea9326ab7f14e6038295690f896cc51681d5b7be85a5f4abf409"
+    },
+    {
+      "dex": 371,
+      "name": "Zabumba",
+      "species": 395,
+      "tone": "0x86a1924",
+      "wave": "0x8696638",
+      "peak": 6060,
+      "pcm_samples": 154312,
+      "pcm_sha256": "b1e5890aeaaf7e12cd730ba148409dcf1a576b96c192d004dde3f7fccd38578f"
+    },
+    {
+      "dex": 372,
+      "name": "Cordelim",
+      "species": 396,
+      "tone": "0x86a1930",
+      "wave": "0x8696d94",
+      "peak": 6053,
+      "pcm_samples": 154288,
+      "pcm_sha256": "84861f03c0bab26147941e696441c919805234cef20ad9532811941c7f5bdecd"
+    },
+    {
+      "dex": 373,
+      "name": "Rendeira",
+      "species": 397,
+      "tone": "0x86a193c",
+      "wave": "0x8697474",
+      "peak": 6061,
+      "pcm_samples": 154288,
+      "pcm_sha256": "7f98b4c6b5751b70f6cf4b9f483a7ad2309752fbc7b1801f766df7415c18aee3"
+    },
+    {
+      "dex": 374,
+      "name": "Escamoso",
+      "species": 398,
+      "tone": "0x86a1948",
+      "wave": "0x8697aac",
+      "peak": 6057,
+      "pcm_samples": 154312,
+      "pcm_sha256": "ef6006c637691dc075dda46d7e5c98c3c8d965f25d7459c84b8cf70412faf6d7"
+    },
+    {
+      "dex": 375,
+      "name": "Piranhita",
+      "species": 399,
+      "tone": "0x86a1954",
+      "wave": "0x8698438",
+      "peak": 6059,
+      "pcm_samples": 154288,
+      "pcm_sha256": "16b26cb7cd3aece5472bc41fc944109c30e1ff31831e39faf242413a16a61ab7"
+    },
+    {
+      "dex": 376,
+      "name": "Boitatã",
+      "species": 400,
+      "tone": "0x86a1960",
+      "wave": "0x8698bcc",
+      "peak": 6057,
+      "pcm_samples": 154312,
+      "pcm_sha256": "8ba4020c2ecfaf1a1e88fd6e94d8f8b6de8fb4f4688372f8de779acdd7914c14"
+    },
+    {
+      "dex": 377,
+      "name": "Piraruaçu",
+      "species": 401,
+      "tone": "0x86a196c",
+      "wave": "0x86995b4",
+      "peak": 6055,
+      "pcm_samples": 154290,
+      "pcm_sha256": "704a2cd62615ffb46c13cfc2d3ebdc04ebe1be511678dab8b3f923c4df77b167"
+    },
+    {
+      "dex": 378,
+      "name": "Mata-Mata",
+      "species": 402,
+      "tone": "0x86a1978",
+      "wave": "0x8699fcc",
+      "peak": 6060,
+      "pcm_samples": 154312,
+      "pcm_sha256": "745a8a6d279c45d1164f12aee49c511513a78c0c204160413789cf28a71f782d"
+    },
+    {
+      "dex": 379,
+      "name": "Solaris",
+      "species": 403,
+      "tone": "0x86a1984",
+      "wave": "0x869abe4",
+      "peak": 6057,
+      "pcm_samples": 154290,
+      "pcm_sha256": "8b2539ceef2e01e2321149fd70b69f7104c8e8c00525046de1f74695bcd0e163"
+    },
+    {
+      "dex": 380,
+      "name": "Selenê",
+      "species": 407,
+      "tone": "0x86a19b4",
+      "wave": "0x869b62c",
+      "peak": 6057,
+      "pcm_samples": 154314,
+      "pcm_sha256": "3566e355ac48df423880cb50951cdeea605f5ebed39942674eda5d23a3312fe0"
+    },
+    {
+      "dex": 381,
+      "name": "Zumbi-Rei",
+      "species": 408,
+      "tone": "0x86a19c0",
+      "wave": "0x869c220",
+      "peak": 6056,
+      "pcm_samples": 154314,
+      "pcm_sha256": "7642566030e4c75900d6aefaa1d87ea1a780ebe625d4f2238b3edcf858274403"
+    },
+    {
+      "dex": 382,
+      "name": "Iemanjã",
+      "species": 404,
+      "tone": "0x86a1990",
+      "wave": "0x869cd08",
+      "peak": 6055,
+      "pcm_samples": 154290,
+      "pcm_sha256": "701ee266915dc85e7d8fe4fa4596ccd0c4ffc3a2d41dd2bc1195441909baf489"
+    },
+    {
+      "dex": 383,
+      "name": "Oxumará",
+      "species": 405,
+      "tone": "0x86a199c",
+      "wave": "0x869d8d4",
+      "peak": 6061,
+      "pcm_samples": 154314,
+      "pcm_sha256": "9bc8b0b39d58d967952a1fc4b7ba0facad5a102276b751e57162c8b6e80d82b1"
+    },
+    {
+      "dex": 384,
+      "name": "Curupixel",
+      "species": 406,
+      "tone": "0x86a19a8",
+      "wave": "0x869e4f8",
+      "peak": 6056,
+      "pcm_samples": 154290,
+      "pcm_sha256": "4aef45b2ad1877d383b40f311600c1fe4bfff01fa1a333d0812f774a4e7bd00b"
+    },
+    {
+      "dex": 385,
+      "name": "Sacinho",
+      "species": 409,
+      "tone": "0x86a19cc",
+      "wave": "0x869f0c4",
+      "peak": 6055,
+      "pcm_samples": 154312,
+      "pcm_sha256": "76d640ad1eda9dbecfb1320c8e68292e5bc3ce252aca3dcba6925976cef4a08c"
+    },
+    {
+      "dex": 386,
+      "name": "Arauá",
+      "species": 410,
+      "tone": "0x86a19d8",
+      "wave": "0x869fb60",
+      "peak": 6059,
+      "pcm_samples": 154288,
+      "pcm_sha256": "e9182caa0dcbb6bd5781238be415c1cdd2b471ff0a36a327c2377ea02f7447ff"
+    }
+  ],
+  "pp": [
+    {
+      "personality": 0,
+      "pp": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "bad_egg": false
+    },
+    {
+      "personality": 1,
+      "pp": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "bad_egg": false
+    },
+    {
+      "personality": 2,
+      "pp": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "bad_egg": false
+    },
+    {
+      "personality": 3,
+      "pp": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "bad_egg": false
+    },
+    {
+      "personality": 4,
+      "pp": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "bad_egg": false
+    },
+    {
+      "personality": 5,
+      "pp": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "bad_egg": false
+    },
+    {
+      "personality": 6,
+      "pp": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "bad_egg": false
+    },
+    {
+      "personality": 7,
+      "pp": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "bad_egg": false
+    },
+    {
+      "personality": 8,
+      "pp": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "bad_egg": false
+    },
+    {
+      "personality": 9,
+      "pp": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "bad_egg": false
+    },
+    {
+      "personality": 10,
+      "pp": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "bad_egg": false
+    },
+    {
+      "personality": 11,
+      "pp": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "bad_egg": false
+    },
+    {
+      "personality": 12,
+      "pp": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "bad_egg": false
+    },
+    {
+      "personality": 13,
+      "pp": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "bad_egg": false
+    },
+    {
+      "personality": 14,
+      "pp": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "bad_egg": false
+    },
+    {
+      "personality": 15,
+      "pp": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "bad_egg": false
+    },
+    {
+      "personality": 16,
+      "pp": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "bad_egg": false
+    },
+    {
+      "personality": 17,
+      "pp": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "bad_egg": false
+    },
+    {
+      "personality": 18,
+      "pp": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "bad_egg": false
+    },
+    {
+      "personality": 19,
+      "pp": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "bad_egg": false
+    },
+    {
+      "personality": 20,
+      "pp": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "bad_egg": false
+    },
+    {
+      "personality": 21,
+      "pp": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "bad_egg": false
+    },
+    {
+      "personality": 22,
+      "pp": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "bad_egg": false
+    },
+    {
+      "personality": 23,
+      "pp": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "bad_egg": false
+    }
+  ]
+}
