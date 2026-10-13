@@ -38,6 +38,8 @@ SECTIONS {
     ASSERT(SIZEOF(iwram) <= 0x7200, "IWRAM budget exceeded: keep 3.5 KiB free")
     ASSERT((IntrMain_End - IntrMain) <= 0x200, "IntrMain exceeds its 512-byte IWRAM buffer")
 
+    ASSERT((AraunaOpening_DecodeTilesEnd - AraunaOpening_DecodeTiles) <= 328, "Opening decoder exceeds its dedicated IWRAM buffer")
+
     /* BEGIN ROM DATA */
     . = 0x8000000;
 

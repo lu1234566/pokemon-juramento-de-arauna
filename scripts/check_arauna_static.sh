@@ -85,6 +85,7 @@ python3 tools/arauna/check_ram_budget.py
 python3 tools/arauna/fit_sprite_coordinates.py
 python3 tools/arauna/build_ui_labels.py
 python3 tools/arauna/build_native_cries.py
+python3 tools/arauna/check_opening_assets.py
 
 echo "Arauna static readiness: PASS (official rendered composition validated; ARM compile intentionally skipped)."
 

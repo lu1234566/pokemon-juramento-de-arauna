@@ -41,7 +41,7 @@ struct EReaderData
 static void Task_EReader(u8);
 
 // This belongs in COMMON somewhere between party_menu and ereader_screen, but it's unused so it's unclear where.
-COMMON_DATA UNUSED u8 gUnknownSpace[64] = {0};
+// Unreferenced legacy padding removed to keep room for the opening decoder.
 
 COMMON_DATA struct EReaderData gEReaderData = {0};
 

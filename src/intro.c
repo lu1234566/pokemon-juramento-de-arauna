@@ -19,6 +19,7 @@
 #include "intro_credits_graphics.h"
 #include "trig.h"
 #include "intro.h"
+#include "arauna_opening.h"
 #include "graphics.h"
 #include "sound.h"
 #include "util.h"
@@ -1118,8 +1119,7 @@ static u8 SetUpCopyrightScreen(void)
     case COPYRIGHT_START_INTRO:
         if (UpdatePaletteFade())
             break;
-        CreateTask(Task_Scene1_Load, 0);
-        SetMainCallback2(MainCB2_Intro);
+        SetMainCallback2(CB2_InitAraunaOpening);
         if (gMultibootProgramStruct.gcmb_field_2 != 0)
         {
             if (gMultibootProgramStruct.gcmb_field_2 == 2)
