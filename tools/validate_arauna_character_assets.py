@@ -163,16 +163,7 @@ def frame_bbox(frame: tuple[int, ...]) -> tuple[int, int, int, int] | None:
 # Each entry is a promise to fix, not a verdict that it is fine. Delete the
 # line when the sheet is redrawn; anything not listed here fails.
 KNOWN_DEAD_WALK_POSES = {
-    "graphics/object_events/pics/people/ciro/phase2.png": {"south", "north"},
-    "graphics/object_events/pics/people/ciro/phase3.png": {"south", "north"},
-    "graphics/object_events/pics/people/dona_zila.png": {"south", "north", "west"},
-    "graphics/object_events/pics/people/elite_four/drake.png": {"south", "north"},
-    "graphics/object_events/pics/people/elite_four/glacia.png": {"north"},
-    "graphics/object_events/pics/people/gym_leaders/flannery.png": {"north"},
-    "graphics/object_events/pics/people/gym_leaders/roxanne.png": {"north"},
     "graphics/object_events/pics/people/hot_springs_old_woman.png": {"south", "north", "west"},
-    "graphics/object_events/pics/people/team_aqua/archie.png": {"west"},
-    "graphics/object_events/pics/people/team_magma/maxie.png": {"north"},
 }
 
 
@@ -334,6 +325,7 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__,
                                      formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--manifest", default=str(MANIFEST))
+    parser.add_argument("--release", action="store_true", help="Require applicable overworld surfaces")
     args = parser.parse_args()
 
     manifest = json.loads(Path(args.manifest).read_text(encoding="utf-8"))
@@ -397,6 +389,8 @@ def main() -> int:
                 print(f"[ -- ] {name:12} overworld not possible: {na[:60]}...")
             else:
                 outstanding.append(f"{name}: overworld sheet and palette")
+                if args.release:
+                    errors.append("required release overworld surface is missing")
 
         for error in errors:
             print(f"[FAIL] {name}: {error}", file=sys.stderr)
