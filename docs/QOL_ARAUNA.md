@@ -10,7 +10,7 @@ Entrada nova no START, entre POKéNAV e o nome do jogador. Abre sete itens:
 
 | item | o que faz |
 |---|---|
-| **LEVEL** | diz o nível do próximo chefe e, se você quiser, sobe a equipe até ele |
+| **LEVEL** | mostra o cap e permite subir um Pokémon por um nível, com golpes e evolução |
 | **REMEMBER** | reaprende qualquer movimento que aquele Pokémon já passou no nível |
 | **LINEAGE** | ensina os egg moves da linhagem dele |
 | **STORAGE** | abre o PC de onde você estiver |
@@ -43,6 +43,11 @@ O teto é o ás do próximo chefe ainda à frente, lido das próprias equipes em
 
 Depois do jogo fechado o teto abre: não há mais chefe para acompanhar.
 
+**LEVEL avança um nível de cada vez.** Escolha o Pokémon na tela da equipe.
+A rotina nativa de Rare Candy processa as escolhas de golpes e evolução, sem
+consumir itens. Repita para chegar ao cap. Ovos e Pokémon no cap, acima dele
+ou no nível 100 não sobem. O cancelamento segue os mesmos pontos do motor.
+
 **O botão só sobe.** Descer de nível não devolve movimento nem desfaz evolução,
 então deixaria o Pokémon num estado que o jogo não sabe descrever.
 
@@ -60,6 +65,13 @@ Isso monta no mesmo galho que o jogo já tinha para um Pokémon no nível 100, e
 Reaproveita a tela do relearner inteira. A única diferença entre os dois é de
 onde sai a lista de movimentos, e isso é uma variável que o script liga antes
 de abrir a tela. Nenhuma tela nova, nenhum desenho novo.
+
+## Persistência e saves
+
+AUTO RUN começa ligado em jogo novo. Saves existentes mantêm a opção gravada.
+AUTO RUN, WARD e POTENTIAL persistem nos bits já reservados de SaveBlock2;
+nenhum bloco, tamanho ou offset do save foi alterado. WARD não pausa nem
+restaura os passos de um repelente comprado.
 
 ## Os dois interruptores
 
@@ -134,7 +146,10 @@ Isso não é afirmação, é verificado de duas formas:
   406 offsets conferidos. Testado inserindo um campo de propósito: o gate falha
   e nomeia exatamente quais campos escorregaram.
 
-## O que foi conferido no emulador
+## Registro histórico de emulador (anterior ao ciclo de 14/10/2026)
+
+O LEVEL abaixo pertence à implementação anterior. A aceitação atual está em
+`PLAN_ART_PRESERVED_EXECUTION_20261014.md`.
 
 Tudo, exceto a taxa de shiny, que é aritmética e não amostra:
 

@@ -6,6 +6,7 @@ SlateportCity_Harbor_OnTransition:
 	setescapewarp MAP_SLATEPORT_CITY, 38, 12
 	setvar VAR_TEMP_1, 0
 	call_if_eq VAR_SLATEPORT_HARBOR_STATE, 1, SlateportCity_Harbor_EventScript_ReadyAquaEscapeScene
+	call_if_ge VAR_SLATEPORT_HARBOR_STATE, 2, SlateportCity_Harbor_EventScript_PersistEscape
 	call_if_set FLAG_SYS_GAME_CLEAR, SlateportCity_Harbor_EventScript_ShowSSTidal
 	end
 
@@ -61,6 +62,10 @@ SlateportCity_Harbor_EventScript_AquaEscapeScene::
 	removeobject LOCALID_SLATEPORT_HARBOR_GRUNT
 	removeobject LOCALID_SLATEPORT_HARBOR_ARCHIE
 	removeobject LOCALID_SLATEPORT_HARBOR_SUBMARINE
+	setflag FLAG_HIDE_SLATEPORT_CITY_HARBOR_AQUA_GRUNT
+	setflag FLAG_HIDE_SLATEPORT_CITY_HARBOR_ARCHIE
+	setflag FLAG_HIDE_SLATEPORT_CITY_HARBOR_SUBMARINE_SHADOW
+	clearflag FLAG_HIDE_SLATEPORT_CITY_HARBOR_PATRONS
 	setvar VAR_SLATEPORT_HARBOR_STATE, 2
 	setflag FLAG_MET_TEAM_AQUA_HARBOR
 	setflag FLAG_HIDE_LILYCOVE_MOTEL_SCOTT
@@ -511,3 +516,11 @@ SlateportCity_Harbor_Text_HandedScannerToStern:
 SlateportCity_Harbor_Text_ThisWillHelpResearch:
 	.string "CAPT. NUNES: Thanks, {PLAYER}{KUN}!\n"
 	.string "This will help our research a lot!$"
+
+@ Repair hide flags when loading saves made before the persistence fix.
+SlateportCity_Harbor_EventScript_PersistEscape::
+	setflag FLAG_HIDE_SLATEPORT_CITY_HARBOR_AQUA_GRUNT
+	setflag FLAG_HIDE_SLATEPORT_CITY_HARBOR_ARCHIE
+	setflag FLAG_HIDE_SLATEPORT_CITY_HARBOR_SUBMARINE_SHADOW
+	clearflag FLAG_HIDE_SLATEPORT_CITY_HARBOR_PATRONS
+	return

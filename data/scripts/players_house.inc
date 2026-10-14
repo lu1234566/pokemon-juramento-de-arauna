@@ -684,7 +684,7 @@ PlayersHouse_1F_EventScript_TryGiveEonTicket::
 	goto_if_eq VAR_RESULT, TRUE, PlayersHouse_1F_EventScript_EnableSouthernIsland
 	msgbox PlayersHouse_1F_Text_EonTicketInTheEnvelope, MSGBOX_DEFAULT
 	giveitem ITEM_EON_TICKET
-	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_NopReturn
+	goto_if_eq VAR_RESULT, FALSE, PlayersHouse_1F_EventScript_EonTicketBagFull
 	msgbox PlayersHouse_1F_Text_EonTicketSouthernIsland, MSGBOX_DEFAULT
 PlayersHouse_1F_EventScript_EnableSouthernIsland::
 	setflag FLAG_ENABLE_SHIP_SOUTHERN_ISLAND
@@ -701,3 +701,7 @@ PlayersHouse_1F_Text_EonTicketSouthernIsland:
 	.string "MOM: It says ILHA DO SUL.\n"
 	.string "The ferry at BAIA DAS LUZES\l"
 	.string "should know the way.$"
+
+PlayersHouse_1F_EventScript_EonTicketBagFull::
+	msgbox gText_BagIsFull, MSGBOX_DEFAULT
+	return

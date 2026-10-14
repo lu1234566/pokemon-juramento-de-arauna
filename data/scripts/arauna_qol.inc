@@ -39,14 +39,7 @@ AraunaQol_EventScript_LevelCap::
 	msgbox AraunaQol_Text_LevelCapIs, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, AraunaQol_EventScript_Choose
 	special AraunaSpecial_SetPartyToLevelCap
-	goto_if_eq VAR_RESULT, 0, AraunaQol_EventScript_AlreadyAtCap
-	buffernumberstring STR_VAR_2, VAR_RESULT
-	msgbox AraunaQol_Text_PartyRaised, MSGBOX_DEFAULT
-	goto AraunaQol_EventScript_Choose
-	end
-
-AraunaQol_EventScript_AlreadyAtCap::
-	msgbox AraunaQol_Text_AlreadyAtCap, MSGBOX_DEFAULT
+	waitstate
 	goto AraunaQol_EventScript_Choose
 	end
 
@@ -149,17 +142,9 @@ AraunaQol_Text_WhatDoYouNeed:
 	.string "What do you need?$"
 
 AraunaQol_Text_LevelCapIs:
-	.string "The next one waiting for you tops out\n"
-	.string "at level {STR_VAR_1}.\p"
-	.string "Bring the team up to meet them?$"
-
-AraunaQol_Text_PartyRaised:
-	.string "{STR_VAR_2} of your POKéMON came up to\n"
-	.string "level {STR_VAR_1}.$"
-
-AraunaQol_Text_AlreadyAtCap::
-	.string "They are already as ready as this\n"
-	.string "stretch of road allows.$"
+	.string "The current level limit is {STR_VAR_1}.\p"
+	.string "Raise one POKéMON by one level?\n"
+	.string "Moves and evolution follow.$"
 
 AraunaQol_Text_WhichPokemon:
 	.string "Which POKéMON should remember\n"
