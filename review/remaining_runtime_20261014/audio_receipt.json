@@ -1,0 +1,131 @@
+{
+  "rom_sha256": "5366a77cd57659ace19d3c3b1d7a0437fdfd6f7239a923c1118e5f455a4028b7",
+  "emulator": "mGBA 0.10.2",
+  "fixture_setup": true,
+  "cases": [
+    {
+      "clip": "music_LittlerootTown.wav",
+      "frames": 360,
+      "samples": 144585,
+      "sample_rate": 24000,
+      "peak": 11342,
+      "rms": 3355.63,
+      "clipped_samples": 0,
+      "map": "LittlerootTown",
+      "song_id": 611
+    },
+    {
+      "clip": "music_Route101.wav",
+      "frames": 360,
+      "samples": 144577,
+      "sample_rate": 24000,
+      "peak": 13197,
+      "rms": 3612.54,
+      "clipped_samples": 0,
+      "map": "Route101",
+      "song_id": 612
+    },
+    {
+      "clip": "music_GraniteCave_StevensRoom.wav",
+      "frames": 360,
+      "samples": 144606,
+      "sample_rate": 24000,
+      "peak": 11162,
+      "rms": 1775.12,
+      "clipped_samples": 0,
+      "map": "GraniteCave_StevensRoom",
+      "song_id": 366
+    },
+    {
+      "clip": "music_MtPyre_Summit.wav",
+      "frames": 360,
+      "samples": 144624,
+      "sample_rate": 24000,
+      "peak": 6804,
+      "rms": 1148.48,
+      "clipped_samples": 0,
+      "map": "MtPyre_Summit",
+      "song_id": 434
+    },
+    {
+      "clip": "music_EverGrandeCity_PhoebesRoom.wav",
+      "frames": 360,
+      "samples": 144577,
+      "sample_rate": 24000,
+      "peak": 13844,
+      "rms": 3436.88,
+      "clipped_samples": 0,
+      "map": "EverGrandeCity_PhoebesRoom",
+      "song_id": 626
+    },
+    {
+      "clip": "music_EverGrandeCity_ChampionsRoom.wav",
+      "frames": 360,
+      "samples": 144580,
+      "sample_rate": 24000,
+      "peak": 14568,
+      "rms": 2670.12,
+      "clipped_samples": 0,
+      "map": "EverGrandeCity_ChampionsRoom",
+      "song_id": 626
+    },
+    {
+      "clip": "cry_SPECIES_TREECKO.wav",
+      "frames": 180,
+      "samples": 72266,
+      "sample_rate": 24000,
+      "peak": 12140,
+      "rms": 3117.82,
+      "clipped_samples": 0,
+      "species": "SPECIES_TREECKO",
+      "cry_playing_after_clip": false,
+      "music_after": 611
+    },
+    {
+      "clip": "cry_SPECIES_TORCHIC.wav",
+      "frames": 180,
+      "samples": 72266,
+      "sample_rate": 24000,
+      "peak": 11244,
+      "rms": 3211.23,
+      "clipped_samples": 0,
+      "species": "SPECIES_TORCHIC",
+      "cry_playing_after_clip": false,
+      "music_after": 611
+    },
+    {
+      "clip": "cry_SPECIES_MUDKIP.wav",
+      "frames": 180,
+      "samples": 72325,
+      "sample_rate": 24000,
+      "peak": 10379,
+      "rms": 3192.61,
+      "clipped_samples": 0,
+      "species": "SPECIES_MUDKIP",
+      "cry_playing_after_clip": false,
+      "music_after": 611
+    },
+    {
+      "clip": "cry_SPECIES_DEOXYS.wav",
+      "frames": 180,
+      "samples": 72254,
+      "sample_rate": 24000,
+      "peak": 10423,
+      "rms": 3397.46,
+      "clipped_samples": 0,
+      "species": "SPECIES_DEOXYS",
+      "cry_playing_after_clip": false,
+      "music_after": 611
+    },
+    {
+      "clip": "fanfare_item.wav",
+      "frames": 240,
+      "samples": 96360,
+      "sample_rate": 24000,
+      "peak": 10315,
+      "rms": 2189.61,
+      "clipped_samples": 0
+    }
+  ],
+  "scope": "map routing, non-silence, clipping, cry/fanfare completion; no qualified auditory/artistic approval"
+}

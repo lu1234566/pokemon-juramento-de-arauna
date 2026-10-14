@@ -1,5 +1,10 @@
 # Arcos V2 — aceitação técnica no emulador
 
+**Registro histórico de 12/10/2026.** A continuação de 14/10 fechou a captura
+e o CONTINUE final do Uivo na ROM corrigida; ver
+[REMAINING_RUNTIME_QA_20261014.md](REMAINING_RUNTIME_QA_20261014.md).
+Os demais cenários abaixo continuam identificados pela ROM histórica.
+
 Data: 12/10/2026. Commit da ROM testada: `5c59b75ca91a6bedb212f788f5d1291aa1ed33ab`.
 SHA-256: `556aa2ad960cfe16664f66e80699c9c7df15bb2c6b69d5ed7e9e8eb6922790eb`.
 Origem: artefato oficial do CI 1423. Engine: mGBA 0.10.2.

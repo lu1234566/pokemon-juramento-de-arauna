@@ -48,3 +48,6 @@ prefabs.json
 # Python bytecode caches (never build inputs)
 __pycache__/
 *.pyc
+
+# Generated engine symbol listing for native runtime QA.
+/arauna-en.symbols.txt

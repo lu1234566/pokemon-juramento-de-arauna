@@ -1,0 +1,13 @@
+{
+  "rom_sha256": "a0360e7370f7119e68c46bc64aa82af87f6931cfa214028915605c2297fa3c4d",
+  "emulator": "mGBA 0.10.2",
+  "fixture_setup": true,
+  "case": "rock_smash",
+  "expect": "lost",
+  "initial_progress": 0,
+  "full_bag_progress": 1,
+  "trade_after_full_bag": null,
+  "synthetic_tm_pocket": true,
+  "retry_and_continue": false,
+  "script": "MauvilleCity_House1_EventScript_RockSmashDude"
+}

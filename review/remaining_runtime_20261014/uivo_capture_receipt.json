@@ -1,0 +1,12 @@
+{
+  "rom_sha256": "5366a77cd57659ace19d3c3b1d7a0437fdfd6f7239a923c1118e5f455a4028b7",
+  "emulator": "mGBA 0.10.2",
+  "fixture_setup": true,
+  "battle_capture": "Master Ball through actual bag UI",
+  "outcome": "caught",
+  "party_count": 2,
+  "uivo_state_after_continue": 8,
+  "access_after_continue": 1,
+  "soothe_bell_after_continue": 1,
+  "scope": "starting state 4 fixture; no forced battle result or post-start arc progression"
+}

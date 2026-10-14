@@ -1,0 +1,29 @@
+{
+  "source_base": "46d50777a45f8fbf1f7f600516a47873ec4fc804",
+  "rom_sha256": "5366a77cd57659ace19d3c3b1d7a0437fdfd6f7239a923c1118e5f455a4028b7",
+  "rom_padded_size": 33554432,
+  "rom_used_bytes": 31572828,
+  "ewram_used_bytes": 247164,
+  "iwram_used_bytes": 29156,
+  "compiler": "GCC ARM 13.2.1",
+  "emulator": "mGBA 0.10.2",
+  "source_sha256": {
+    "data/maps/MauvilleCity/scripts.inc": "6d187ce662a1ff328777b98c34187d924f6d9bed924a383d374317b9b7eda792",
+    "data/maps/MauvilleCity_House1/scripts.inc": "ccb8148a83cdaa066884fc50cb39980bd3696b41ee827d8a3bccb15df74d399a",
+    "data/maps/MauvilleCity_House2/scripts.inc": "c5a030ae6eb96f6d61bc55d63082e5ddd26efca766a51d033f1e96801046fb09",
+    "data/maps/MossdeepCity_House3/scripts.inc": "fdba6ac2217e255e822eb8a844c9da923cf25abfc271e297dc14e8dd35c4016d",
+    "data/maps/Route104_PrettyPetalFlowerShop/scripts.inc": "4fb28dec3b3be4e451e81149d37c53395e26a785f865b371e9fa0696939e8cf1",
+    "data/maps/Route113_GlassWorkshop/scripts.inc": "a22ae577bb0adc4642962632c358f37922aa270fabb351a44c999798d7211fde",
+    "data/maps/Route118/scripts.inc": "2d897b8f2a9e23338e9a222874b57a24c1a5d3e07e0bccab8da3d9109f94514f",
+    "data/maps/RustboroCity_CuttersHouse/scripts.inc": "fa2fdba16bb7281e6049230e491288b467c938f4eeccebb657e194dfa50ff2ec",
+    "data/maps/SlateportCity/scripts.inc": "c345150d5aa6d38394ce03a2de4e3d4716a2d898301460d3366b72c4ff485c9b",
+    "src/frontier_util.c": "3b8b3b93badbe73e0999ed68feed1c511b971e906791c61712e27129bddb752f"
+  },
+  "ciro_sha256": {
+    "graphics/object_events/pics/people/ciro/phase2.png": "7cb01cd8d660347720489c0babe56109f72aaecc07fd11981d8a8d596d529851",
+    "graphics/object_events/pics/people/ciro/phase3.png": "2096be190c806aa00112ce11326d4fc0990c0fadd3a2c8495f63435be7669b74"
+  },
+  "art_resources_checked": 20104,
+  "ciro_pixels_changed_in_this_continuation": 0,
+  "natural_campaign_complete": false
+}

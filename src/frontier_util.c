@@ -2429,7 +2429,12 @@ void SaveGameFrontier(void)
     i = gPlayerPartyCount;
     LoadPlayerParty();
     SetContinueGameWarpStatusToDynamicWarp();
-    TrySavingData(SAVE_LINK);
+    // The PC may have changed since the last normal save (e.g. withdrawal
+    // before entering a facility). SAVE_LINK leaves those old PC sectors
+    // behind while writing the current party, allowing duplicates on reset.
+    // Save one complete rotating snapshot, still using the original party
+    // rather than the facility's temporary/rental team.
+    TrySavingData(SAVE_NORMAL);
     ClearContinueGameWarpStatus2();
     gPlayerPartyCount = i;
 

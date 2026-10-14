@@ -1,0 +1,16 @@
+*.so
+*.sav
+*.state
+*.rgba
+*.pcm
+__pycache__/
+blocked_*.png
+restore_debug*.png
+continue_failed.png
+*.wav
+natural_start_*.png
+natural_next_*.png
+natural_more_*.png
+natural_house_*.png
+natural_*debug*.png
+uivo_no_battle_menu.png

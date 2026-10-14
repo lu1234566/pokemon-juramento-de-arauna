@@ -1,0 +1,10 @@
+{
+  "rom_sha256": "5366a77cd57659ace19d3c3b1d7a0437fdfd6f7239a923c1118e5f455a4028b7",
+  "emulator": "mGBA 0.10.2",
+  "fixture_setup": false,
+  "new_process": true,
+  "clock_flag": true,
+  "intro_state": 6,
+  "controls_unlocked": true,
+  "game_ram_or_rom_writes": false
+}
