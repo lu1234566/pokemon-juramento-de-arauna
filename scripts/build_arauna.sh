@@ -201,9 +201,16 @@ if [[ ! -f scripts/english_renderers.txt ]]; then
     exit 4
 fi
 
-python3 tools/cleanup_region_map_names.py
+python3 tools/cleanup_region_map_names.py --check
 
 # These gates run on the tree the compiler is about to read.
+python3 scripts/check_arauna_art_freeze.py
+python3 scripts/sync_arauna_curated_text.py --check
+python3 tools/arauna/build_evolutions.py --check
+python3 scripts/check_arauna_progression_data.py
+python3 tools/validate_arauna_character_assets.py
+python3 tools/arauna_maps/validate_fogueira_arcos.py
+python3 tools/arauna/check_arcos_assets.py
 python3 scripts/check_english_only_policy.py
 python3 scripts/check_arauna_story_coverage.py
 # The ROM being built is this rendered tree, so this is where a line too wide
@@ -218,3 +225,8 @@ make \
     FILE_NAME="pokemon-juramento-de-arauna-en" \
     CPP="$cpp" \
     "$@"
+
+# Inspect the linked consumer only when this invocation produced the ROM.
+if [[ -f pokemon-juramento-de-arauna-en_modern.elf && -f pokemon-juramento-de-arauna-en_modern.gba ]]; then
+    python3 scripts/check_arauna_curated_rom.py
+fi

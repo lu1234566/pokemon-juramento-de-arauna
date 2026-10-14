@@ -6,20 +6,20 @@ ROM hack de Pokémon Emerald em desenvolvimento, ambientada em Arauna e constru�
 
 A implementação preserva o esqueleto técnico do Emerald — grafo de eventos, ordem de progressão, warps, flags, variáveis e identificadores internos — e substitui a superfície visível pelo cânone de Arauna. Essa abordagem reduz risco de regressão em saves e progressão enquanto permite reescrever diálogos, personagens, identidade do mundo e, em passes separados, os mapas.
 
-O núcleo narrativo está documentado em [`docs/ARAUANA_STORY_IMPLEMENTATION.md`](docs/ARAUANA_STORY_IMPLEMENTATION.md). A build oficial é **English-only**. Nomes próprios canônicos de Arauna, como Vila Amanhecer, M'Boi e Seu Bento, são preservados quando apropriado; isso não reabre um modo PT-BR.
+O núcleo narrativo está documentado em [`docs/ARAUANA_STORY_IMPLEMENTATION.md`](docs/ARAUANA_STORY_IMPLEMENTATION.md). A build oficial é **English-only**. Nomes próprios canônicos de Arauna, como Vila Amanhecer, M'Boi e Bento, são preservados quando apropriado; isso não reabre um modo PT-BR.
 
 ## Fonte de verdade da build
 
 A build oficial é dirigida por manifestos e falha fechada:
 
-- `scripts/english_renderers.txt` — ordem oficial dos **66** renderizadores English-only;
-- `scripts/english_overlay_files_extra.txt` — **40** fontes finais adicionadas ao conjunto transacional de backup/restore;
+- `scripts/english_renderers.txt` — ordem oficial dos **128** renderizadores históricos English-only;
+- `scripts/english_overlay_files_extra.txt` — **106** fontes adicionais da migração inglesa;
 - `scripts/check_english_only_policy.py` — trava política, ordem e integração da build;
 - `scripts/check_arauna_story_coverage.py` — exige **16/16** estágios canônicos e **346** blocos runtime de lacuna final cobertos;
 - `scripts/audit_rendered_visible_residue_en.py` — inventário pós-render de identidades antigas/PT-BR residual; superfícies transacionais críticas falham a validação;
 - `scripts/check_arauna_static.sh` — executa a mesma composição transacional da build oficial sem exigir o toolchain ARM.
 
-Os arquivos temporariamente renderizados são restaurados em qualquer saída normal, erro ou interrupção do wrapper oficial.
+As fontes inglesas estão instaladas no repositório. O build verifica, sem reescrever fontes, a política inglesa, os contratos curados, os dados de progressão e a preservação dos recursos artísticos. Os renderizadores históricos não são executados indiscriminadamente.
 
 ## Validação local sem compilar a ROM
 
@@ -29,7 +29,7 @@ Depois de clonar o repositório:
 bash scripts/check_arauna_static.sh
 ```
 
-Esse comando aplica os renderizadores na ordem oficial, executa os gates English-only/cobertura, valida Weather Institute e a política de arquivos proprietários e restaura as fontes. Apenas o `make` final é substituído por um no-op de validação.
+Esse comando verifica as fontes compiláveis e os gates English-only/cobertura, valida Weather Institute e a política de arquivos proprietários. Apenas o `make` final é substituído por um no-op de validação.
 
 ## Build local oficial
 

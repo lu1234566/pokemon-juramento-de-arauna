@@ -47,22 +47,30 @@ def validate(evos, mapping):
     rel = {}
     for r in evos:
         a, b = int(r["arauna_dex"]), int(r["target_dex"])
-        lv = int(r["level"])
+        method = r["method"]
+        parameter = r.get("parameter") or r["level"]
+        lv = int(parameter) if method == "EVO_LEVEL" else 0
         if a == b:
             problems.append(f"#{a} evolves into itself")
         if b not in mapping:
             problems.append(f"#{a} targets #{b}, which is not in the dex mapping")
-        if not 2 <= lv <= 80:
+        if method == "EVO_LEVEL" and not 2 <= lv <= 80:
             problems.append(f"#{a} has an implausible level {lv}")
-        if r["method"] != "EVO_LEVEL":
-            problems.append(f"#{a} uses unsupported method {r['method']}")
-        rel[a] = (b, lv)
-    for target, n in Counter(b for b, _ in rel.values()).items():
+        if method not in {"EVO_LEVEL", "EVO_FRIENDSHIP", "EVO_FRIENDSHIP_DAY", "EVO_FRIENDSHIP_NIGHT", "EVO_ITEM"}:
+            problems.append(f"#{a} uses unsupported method {method}")
+        if method.startswith("EVO_FRIENDSHIP") and parameter != "0":
+            problems.append(f"#{a}: friendship parameter must be zero")
+        if method == "EVO_ITEM":
+            items = (ROOT / "include/constants/items.h").read_text()
+            if not re.search(r"^#define\s+" + re.escape(parameter) + r"\s+", items, re.M):
+                problems.append(f"#{a}: unknown evolution item {parameter}")
+        rel[a] = (b, method, parameter)
+    for target, n in Counter(value[0] for value in rel.values()).items():
         if n > 1:
             problems.append(f"#{target} is the target of {n} different species")
-    for a, (b, lv) in rel.items():
-        if b in rel and rel[b][1] <= lv:
-            problems.append(f"chain #{a} lv{lv} -> #{b} lv{rel[b][1]} does not increase")
+    for a, (b, method, parameter) in rel.items():
+        if method == "EVO_LEVEL" and b in rel and rel[b][1] == "EVO_LEVEL" and int(rel[b][2]) <= int(parameter):
+            problems.append(f"chain #{a} -> #{b} does not increase")
     for a in rel:
         seen, cur = [], a
         while cur in rel and cur not in seen:
@@ -87,11 +95,11 @@ def render(rel, mapping) -> str:
     width = max(len(mapping[a]["species_constant"]) for a in rel)
     lines = ["const struct Evolution gEvolutionTable[NUM_SPECIES][EVOS_PER_MON] =", "{"]
     for a in sorted(rel):
-        b, lv = rel[a]
+        b, method, parameter = rel[a]
         src, dst = mapping[a]["species_constant"], mapping[b]["species_constant"]
         name, tname = mapping[a]["full_name"], mapping[b]["full_name"]
         lines.append(f"    [{src}]{' ' * (width - len(src))} = "
-                     f"{{{{EVO_LEVEL, {lv}, {dst}}}}}, // #{a:03d} {name} -> #{b:03d} {tname}")
+                     f"{{{{{method}, {parameter}, {dst}}}}}, // #{a:03d} {name} -> #{b:03d} {tname}")
     lines += ["};", ""]
     return "\n".join(lines)
 
@@ -115,10 +123,16 @@ def main() -> int:
 
     if not args.write:
         current = TABLE.read_text(encoding="utf-8") if TABLE.exists() else ""
-        have = set(re.findall(r"\[(SPECIES_\w+)\]", current))
-        want = {mapping[a]["species_constant"] for a in rel}
-        print(f"current table lists {len(have)} species; the design lists {len(want)}")
-        print(f"  would be dropped: {len(have - want)}    would be added: {len(want - have)}")
+        compiled = {m[0]: (m[3], m[1], m[2].strip()) for m in re.findall(
+            r"\[(SPECIES_\w+)\]\s*=\s*\{\{(EVO_\w+),\s*([^,]+),\s*(SPECIES_\w+)\}\}", current)}
+        expected = {mapping[a]["species_constant"]: (mapping[b]["species_constant"], method, parameter)
+                    for a, (b, method, parameter) in rel.items()}
+        if compiled != expected:
+            for species in sorted(set(compiled) | set(expected)):
+                if compiled.get(species) != expected.get(species):
+                    print(f"evolution drift: {species}: compiled={compiled.get(species)} expected={expected.get(species)}")
+            return 1
+        print(f"evolution source equivalence PASS: {len(expected)} methods, parameters and targets")
         if not arauna_dex_installed():
             print("\nNOT APPLYING: the engine still holds the vanilla species table.\n"
                   "These relations are written in engine species constants and only read\n"

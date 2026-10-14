@@ -6042,7 +6042,6 @@ static const u16 sAraunaCompleteCACNEALevelUpLearnset[] = {
 
 // #332 Iaraú (SPECIES_CACTURNE)
 static const u16 sAraunaCompleteCACTURNELevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_DISARMING_VOICE),
     LEVEL_UP_MOVE( 2, MOVE_BUBBLE),
     LEVEL_UP_MOVE(10, MOVE_CHARM),
