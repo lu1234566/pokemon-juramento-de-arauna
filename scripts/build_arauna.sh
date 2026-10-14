@@ -208,7 +208,7 @@ python3 scripts/check_arauna_art_freeze.py
 python3 scripts/sync_arauna_curated_text.py --check
 python3 tools/arauna/build_evolutions.py --check
 python3 scripts/check_arauna_progression_data.py
-python3 tools/validate_arauna_character_assets.py
+python3 tools/validate_arauna_character_assets.py --release
 python3 tools/arauna_maps/validate_fogueira_arcos.py
 python3 tools/arauna/check_arcos_assets.py
 python3 scripts/check_english_only_policy.py

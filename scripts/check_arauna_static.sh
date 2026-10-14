@@ -50,7 +50,7 @@ python3 tools/arauna/check_arauna_song_link.py
 # Character art the GBA reads directly, plus the wiring behind it. The trap
 # the Dalva work found is that art can be perfect and still render in another
 # NPC's colours, so the palette tag is checked for exclusivity too.
-python3 tools/validate_arauna_character_assets.py
+python3 tools/validate_arauna_character_assets.py --release
 
 # Some Arauna creatures sit in slots Emerald draws differently per
 # individual. ESTALAGMITE inherited Unown's twenty-eight letters and POSTE

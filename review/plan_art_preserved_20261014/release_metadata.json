@@ -1,0 +1,14 @@
+{
+  "audit_base": "bcd1fec0025580406d6a6913fcf3e4e0a7824a59",
+  "rom_sha256": "3d322afaffc408fc9c135ffba948780784c29768ca8aa27701f0bc9fa195fcad",
+  "rom_padded_size": 33554432,
+  "rom_used_bytes": 31572732,
+  "ewram_used_bytes": 247164,
+  "iwram_used_bytes": 29156,
+  "compiler": "arm-none-eabi-gcc (15:13.2.rel1-2) 13.2.1 20231009",
+  "emulator": "mGBA 0.10.2",
+  "previous_local_runtime_assertions": 130,
+  "hash_identical_to_locally_tested_rom": true,
+  "linked_text_blocks_verified": 2260,
+  "campaign_natural_playthrough": false
+}

@@ -1,0 +1,53 @@
+{
+  "base": "bcd1fec0025580406d6a6913fcf3e4e0a7824a59",
+  "protected_resources": 20104,
+  "changes": [
+    {
+      "path": "graphics/object_events/pics/people/ciro/phase2.png",
+      "before_sha256": "4c4ce30721d904e515ea89181c74052b2d2bb7c6b40c33b7e211acc6d40c4d9e",
+      "after_sha256": "7cb01cd8d660347720489c0babe56109f72aaecc07fd11981d8a8d596d529851",
+      "dimensions": [
+        144,
+        32
+      ],
+      "mode": "P",
+      "changed_pixels": 70,
+      "frames": [
+        3,
+        5
+      ],
+      "rows": [
+        28,
+        29,
+        30,
+        31
+      ],
+      "palette_unchanged": true,
+      "transparency_unchanged": true
+    },
+    {
+      "path": "graphics/object_events/pics/people/ciro/phase3.png",
+      "before_sha256": "287f569a4682da1c46a9a47fdac5c1a32a4da7c0bad6783bed4a0a92a29df8ca",
+      "after_sha256": "2096be190c806aa00112ce11326d4fc0990c0fadd3a2c8495f63435be7669b74",
+      "dimensions": [
+        144,
+        32
+      ],
+      "mode": "P",
+      "changed_pixels": 70,
+      "frames": [
+        3,
+        5
+      ],
+      "rows": [
+        28,
+        29,
+        30,
+        31
+      ],
+      "palette_unchanged": true,
+      "transparency_unchanged": true
+    }
+  ],
+  "manifest_command": "python3 scripts/check_arauna_art_freeze.py --manifest art_baseline.json"
+}
