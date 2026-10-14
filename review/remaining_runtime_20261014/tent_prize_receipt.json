@@ -1,0 +1,31 @@
+{
+  "rom_sha256": "5366a77cd57659ace19d3c3b1d7a0437fdfd6f7239a923c1118e5f455a4028b7",
+  "emulator": "mGBA 0.10.2",
+  "fixture_setup": true,
+  "cases": [
+    {
+      "tent": "Verdanturf",
+      "full_bag_pending": true,
+      "save_reload_pending": true,
+      "retry_received_once": true,
+      "save_reload_claimed": true,
+      "scope": "native prize function; fixtures, not three challenge victories"
+    },
+    {
+      "tent": "Fallarbor",
+      "full_bag_pending": true,
+      "save_reload_pending": true,
+      "retry_received_once": true,
+      "save_reload_claimed": true,
+      "scope": "native prize function; fixtures, not three challenge victories"
+    },
+    {
+      "tent": "Slateport",
+      "full_bag_pending": true,
+      "save_reload_pending": true,
+      "retry_received_once": true,
+      "save_reload_claimed": true,
+      "scope": "native prize function; fixtures, not three challenge victories"
+    }
+  ]
+}

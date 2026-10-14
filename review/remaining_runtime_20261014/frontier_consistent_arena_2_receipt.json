@@ -1,0 +1,16 @@
+{
+  "rom_sha256": "5366a77cd57659ace19d3c3b1d7a0437fdfd6f7239a923c1118e5f455a4028b7",
+  "emulator": "mGBA 0.10.2",
+  "fixture_setup": true,
+  "expected": "consistent",
+  "entry": "arena",
+  "status_input": 2,
+  "duplicate": false,
+  "active_rental_restored_in_ram": true,
+  "original_party_after_continue": true,
+  "held_item_after_continue": true,
+  "box_species": 0,
+  "party_personality": 305419896,
+  "box_personality": 0,
+  "scope": "PC withdrawal native functions and facility save; challenge battles not played"
+}

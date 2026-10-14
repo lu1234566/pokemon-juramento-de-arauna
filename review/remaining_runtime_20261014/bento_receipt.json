@@ -1,0 +1,11 @@
+{
+  "rom_sha256": "5366a77cd57659ace19d3c3b1d7a0437fdfd6f7239a923c1118e5f455a4028b7",
+  "emulator": "mGBA 0.10.2",
+  "fixture_setup": true,
+  "scene": "full compiled script",
+  "tm_capacity": "synthetic duplicate slots, not naturally obtainable",
+  "letter_consumed_once": true,
+  "reward_retry_after_continue": true,
+  "npc_persistently_hidden": true,
+  "one_tm_after_continue": true
+}

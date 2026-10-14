@@ -1,0 +1,45 @@
+name: Arauna remaining runtime QA
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - src/frontier_util.c
+      - data/maps/**/scripts.inc
+      - review/remaining_runtime_20261014/**
+      - scripts/test_arauna_remaining_runtime.sh
+      - .github/workflows/arauna-runtime-qa.yml
+permissions:
+  contents: read
+jobs:
+  native-runtime:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09
+        with:
+          fetch-depth: 0
+      - name: Install compiler and native emulator
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gcc-arm-none-eabi binutils-arm-none-eabi libnewlib-arm-none-eabi libpng-dev python3-pil python3-numpy libmgba-dev ripgrep
+      - name: Build the same tree that the runtime tests execute
+        run: |
+          set -o pipefail
+          bash scripts/build_arauna.sh -j2 all 2>&1 | tee arauna-runtime-build.log
+          if rg -i '\bwarning:' arauna-runtime-build.log; then exit 1; fi
+      - name: Execute native persistence, rewards, capture and signal tests
+        run: |
+          set -o pipefail
+          bash scripts/test_arauna_remaining_runtime.sh 2>&1 | tee arauna-runtime.log
+      - uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f
+        if: always()
+        with:
+          name: arauna-remaining-runtime-evidence
+          path: |
+            arauna-runtime-build.log
+            arauna-runtime.log
+            review/remaining_runtime_20261014/*.json
+            review/remaining_runtime_20261014/*.png
+            review/remaining_runtime_20261014/*.wav
+          if-no-files-found: error
+          retention-days: 30

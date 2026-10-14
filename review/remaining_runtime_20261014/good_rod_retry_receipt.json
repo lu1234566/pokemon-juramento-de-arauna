@@ -1,0 +1,13 @@
+{
+  "rom_sha256": "5366a77cd57659ace19d3c3b1d7a0437fdfd6f7239a923c1118e5f455a4028b7",
+  "emulator": "mGBA 0.10.2",
+  "fixture_setup": true,
+  "case": "good_rod",
+  "expect": "retry",
+  "initial_progress": 0,
+  "full_bag_progress": 0,
+  "trade_after_full_bag": null,
+  "synthetic_tm_pocket": false,
+  "retry_and_continue": true,
+  "script": "Route118_EventScript_GoodRodFisherman"
+}
