@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import struct
 from pathlib import Path
 
@@ -73,12 +74,34 @@ def resolve_tileset(symbol: str) -> Path:
     return path
 
 
+def tile_sheet(bank: Path) -> Path:
+    """Follow the actual C tiles pointer for palette/metatile-only variants."""
+    local = bank / "tiles.png"
+    if local.exists():
+        return local
+    headers = (ROOT / "src/data/tilesets/headers.h").read_text()
+    graphics = (ROOT / "src/data/tilesets/graphics.h").read_text()
+    for match in re.finditer(r"const struct Tileset (gTileset_\w+)\s*=\s*\{(.*?)\};", headers, re.S):
+        symbol, body = match.groups()
+        if resolve_tileset(symbol) != bank:
+            continue
+        pointer = re.search(r"\.tiles\s*=\s*(\w+)", body)
+        if not pointer:
+            break
+        definition = re.search(r"\b" + pointer[1] + r'\[\]\s*=\s*INCGFX_U32\("([^"\n]+)"', graphics)
+        if definition:
+            result = ROOT / definition[1]
+            if result.exists():
+                return result
+    raise FileNotFoundError(f"No compiled tile-sheet reference for {bank}")
+
+
 class Renderer:
     def __init__(self, primary: Path, secondary: Path):
         self.primary = primary
         self.secondary = secondary
-        self.primary_tiles = indexed_tiles(primary / "tiles.png")
-        self.secondary_tiles = indexed_tiles(secondary / "tiles.png")
+        self.primary_tiles = indexed_tiles(tile_sheet(primary))
+        self.secondary_tiles = indexed_tiles(tile_sheet(secondary))
         self.primary_metatiles = words(primary / "metatiles.bin")
         self.secondary_metatiles = words(secondary / "metatiles.bin")
         self.palettes = [palette(primary / "palettes" / f"{i:02}.pal") for i in range(6)]

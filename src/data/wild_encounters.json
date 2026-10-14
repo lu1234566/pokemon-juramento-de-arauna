@@ -7162,7 +7162,7 @@
               {
                 "min_level": 15,
                 "max_level": 20,
-                "species": "SPECIES_FERALIGATR"
+                "species": "SPECIES_EXPLOUD"
               },
               {
                 "min_level": 20,
@@ -9752,7 +9752,7 @@
               {
                 "min_level": 30,
                 "max_level": 35,
-                "species": "SPECIES_FERALIGATR"
+                "species": "SPECIES_DUNSPARCE"
               },
               {
                 "min_level": 30,
