@@ -1,4 +1,4 @@
-# Campanha normal: CIRO, despedida, Pampa e Mata da Espera
+# Campanha normal: CIRO, despedida, Pampa, Mata e chegada a Dalva
 
 Base: PR #237, commit `2ea87d27799a4ce8ee206be1f6805cb39e450585`.
 A única alteração de gameplay desta rodada é o gatilho da despedida da mãe.
@@ -52,6 +52,30 @@ jornada identificam a ROM anterior. Em outra continuação real, uma criatura
 Grass foi capturada normalmente na Mata; a equipe foi preparada pela UI e
 atravessou a saída norte e a ponte até o ginásio de Dalva. O tutorial de Val
 também preservou essa equipe de origem, sem criar cópias.
+
+### Ginásio de Dalva: derrota e recuperação verificadas
+
+A continuação exploratória venceu a dupla da ponte da Rota 104 e os
+treinadores do ginásio pelo controle normal. Preguicinha e Preguicim foram
+capturados; LEVEL elevou a equipe até o limite 15. A loja vendeu Poké Balls
+pelo fluxo normal, e LINEAGE ensinou Will-O-Wisp e Reversal. Três tentativas
+contra Dalva terminaram em derrota. A recuperação levou à última clínica
+registrada, restaurou a equipe e manteve insígnia, TM e avanço da cidade
+pendentes. Isso não certifica o balanceamento nem prova impossibilidade de
+vitória: o controlador ainda usa uma estratégia de batalha limitada.
+
+`campaign_dalva_reversal_prepared_cold_receipt.json` verifica o checkpoint
+antes da terceira tentativa. `campaign_dalva_third_result_cold_receipt.json`
+verifica a recuperação após ela. Ambos usam CONTINUE em outro processo,
+comparando posição, flags, variáveis e SHA-256 de todos os bytes dos três
+Pokémon ativos, além das leituras de espécie, nível, HP, golpes e PP.
+O mesmo teste de todos os bytes foi adicionado ao tutorial de Val.
+
+Os journals de inputs usam runs `[keys, count, release, repeats]` para guardar
+ações e esperas sem repetir milhares de linhas iguais. A compactação preserva
+exatamente as ações; o controlador continua guiado pelo estado observado.
+Um pacote separado preserva esses dois saves para retomar a jornada. Eles
+não integram o repositório nem o artefato público de CI.
 
 ## Build e regressão
 

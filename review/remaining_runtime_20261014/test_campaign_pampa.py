@@ -18,6 +18,7 @@ if args.cold:
     expected = json.loads((Q / ('campaign_' + stage + '_receipt.json')).read_text())
     assert list(position()) == expected['position']
     assert party() == expected['party']
+    assert party_sha256() == expected['party_sha256']
     assert var('VAR_PETALBURG_GYM_STATE') == 2
     assert var('VAR_PETALBURG_CITY_STATE') == 3
     assert flag('FLAG_RECEIVED_RUNNING_SHOES')
@@ -42,10 +43,12 @@ cross('PetalburgCity')
 go(15, 8)
 assert position()[0] == 'PetalburgCity_Gym'
 before = party()
+before_digest = party_sha256()
 balls = quantity('ITEM_POKE_BALL')
 talk('LOCALID_PETALBURG_GYM_NORMAN')
 assert position() == ('PetalburgCity_Gym', 4, 108)
 assert party() == before, 'Val tutorial must restore the actual player party'
+assert party_sha256() == before_digest, 'Val must restore all bytes of the active party'
 assert quantity('ITEM_POKE_BALL') == balls, 'Val uses the tutorial ball'
 assert var('VAR_PETALBURG_GYM_STATE') == 2
 assert var('VAR_PETALBURG_CITY_STATE') == 3

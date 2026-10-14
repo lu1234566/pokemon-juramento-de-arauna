@@ -3,6 +3,7 @@
 No injected calls, fixtures, teleports, writes or forced battle outcomes.
 """
 import collections
+import hashlib
 import re
 import struct
 from runtime import LIB, R, Q, SYMS, ADDRESSES, constant, read, boot, restore, press, metadata, json, Path, Image
@@ -10,6 +11,7 @@ from runtime import LIB, R, Q, SYMS, ADDRESSES, constant, read, boot, restore, p
 INPUTS, BATTLES, BLOCKED = [], [], set()
 CAPTURE_TYPES = set()
 CAPTURE_PARTY_SIZE = 2
+CAPTURE_WEAKEN = False
 groups = json.loads((R / 'data/maps/map_groups.json').read_text())
 MAP_NAMES = {(g, m): name for g, group in enumerate(groups['group_order']) for m, name in enumerate(groups[group])}
 ORDERS = [tuple(map(int, row)) for row in re.findall(r'SUBSTRUCT_CASE\(\s*\d+,([0-3]),([0-3]),([0-3]),([0-3])\)', (R / 'src/pokemon.c').read_text())]
@@ -49,6 +51,11 @@ def party():
                        'moves': list(struct.unpack('<4H', data[attacks:attacks+8])), 'pp': list(data[attacks+8:attacks+12])})
     return result
 
+def party_sha256():
+    data = b''.join(struct.pack('<I', read(SYMS['gPlayerParty'] + offset))
+                    for offset in range(0, 100 * read('gPlayerPartyCount', 1), 4))
+    return hashlib.sha256(data).hexdigest()
+
 def overworld():
     return read(SYMS['gMain'] + 4) == SYMS['CB2_Overworld'] | 1
 
@@ -77,6 +84,9 @@ def move_score(move, battler=0):
     if not power:
         return 0
     p, e = SYMS['gBattleMons'] + 88 * battler, SYMS['gBattleMons'] + 88
+    if move in (constant('MOVE_FLAIL'), constant('MOVE_REVERSAL')):
+        fraction = read(p + 40, 2) * 48 // max(1, read(p + 44, 2))
+        power = next(value for ceiling, value in ((1, 200), (4, 150), (9, 100), (16, 80), (32, 40), (48, 20)) if fraction <= ceiling)
     physical = kind < constant('TYPE_MYSTERY')
     ratio = read(p + (2 if physical else 8), 2) / max(1, read(e + (4 if physical else 10), 2))
     stab = 1.5 if kind in (read(p + 33, 1), read(p + 34, 1)) else 1
@@ -116,6 +126,7 @@ def choose_party(target):
 def settle(limit=5000):
     battle = None
     capturing = False
+    weakening = False
     for _ in range(limit):
         action_battler = next((i for i in (0, 2) if controller('HandleInputChooseAction', i)), None)
         move_battler = next((i for i in (0, 2) if controller('HandleInputChooseMove', i)), None)
@@ -133,19 +144,22 @@ def settle(limit=5000):
                 battle = {'trainer': read('gTrainerBattleOpponent_A', 2) if read('gBattleTypeFlags') & 8 else 0, 'type_flags': read('gBattleTypeFlags'), 'start': position(), 'party_before': party()}
                 snap('battle_' + str(battle['trainer']) + '_start')
             enemy_types = {read(SYMS['gBattleMons'] + 88 + 33, 1), read(SYMS['gBattleMons'] + 88 + 34, 1)}
-            capturing = bool(CAPTURE_TYPES & enemy_types) and not (read('gBattleTypeFlags') & 8) and read('gPlayerPartyCount', 1) < CAPTURE_PARTY_SIZE and quantity('ITEM_POKE_BALL') > 0
-            choose_grid(SYMS['gActionSelectionCursor'] + action_battler, 1 if capturing else 0)
+            balls = sum(quantity(item) for item in ('ITEM_POKE_BALL', 'ITEM_GREAT_BALL', 'ITEM_PREMIER_BALL'))
+            capturing = bool(CAPTURE_TYPES & enemy_types) and not (read('gBattleTypeFlags') & 8) and read('gPlayerPartyCount', 1) < CAPTURE_PARTY_SIZE and balls > 0
+            e = SYMS['gBattleMons'] + 88
+            weakening = capturing and CAPTURE_WEAKEN and read(e + 40, 2) * 3 > read(e + 44, 2)
+            choose_grid(SYMS['gActionSelectionCursor'] + action_battler, 1 if capturing and not weakening else 0)
         elif move_battler is not None:
             p = SYMS['gBattleMons'] + 88 * move_battler
             options = [(move_score(read(p + 12 + j * 2, 2), move_battler), j) for j in range(4) if read(p + 12 + j * 2, 2) and read(p + 36 + j, 1)]
-            choose_grid(SYMS['gMoveSelectionCursor'] + move_battler, max(options, default=(0, 0))[1])
+            choose_grid(SYMS['gMoveSelectionCursor'] + move_battler, (min if weakening else max)([o for o in options if o[0] > 0] or [(0, 0)])[1])
         elif any(controller('HandleInputChooseTarget', i) for i in (0, 2)):
             act(1, 2, 25)
         elif capturing and read('gBattleOutcome', 1) == constant('B_OUTCOME_CAUGHT'):
             # B closes the new dex entry and declines a nickname normally.
             act(2, 2, 12)
         elif capturing and read(SYMS['gMain'] + 4) == SYMS['CB2_BagMenuRun'] | 1:
-            if quantity('ITEM_POKE_BALL') == 0:
+            if not any(quantity(item) for item in ('ITEM_POKE_BALL', 'ITEM_GREAT_BALL', 'ITEM_PREMIER_BALL')):
                 act(2)
                 capturing = False
             elif read(SYMS['gBagPosition'] + 5, 1) != 1:
@@ -154,7 +168,10 @@ def settle(limit=5000):
                 act(1, 2, 20)
         elif battle is not None and active_task('Task_HandleChooseMonInput') is not None:
             field = {read(SYMS['gBattlerPartyIndexes'] + 2 * i, 2) for i in ((0, 2) if read('gBattleTypeFlags') & 1 else (0,))}
-            alive = [i for i, mon in enumerate(party()) if mon['hp'] > 0 and i not in field]
+            # The battle party screen temporarily reorders the visible party.
+            # Its packed high/low nibbles map UI slots to battle party IDs.
+            order = [read(SYMS['gBattlePartyCurrentOrder'] + i // 2, 1) >> (0 if i & 1 else 4) & 15 for i in range(6)]
+            alive = [i for i, mon in enumerate(party()) if mon['hp'] > 0 and order[i] not in field]
             if alive:
                 target = alive[0]
                 choose_party(target)
@@ -408,7 +425,14 @@ def normal_save(name):
     path = Q / ('campaign_' + name + '.sav')
     assert LIB.exportsave(str(path).encode())
     snap(name)
-    receipt = metadata() | {'fixture_setup': False, 'game_ram_or_rom_writes': False, 'normal_save_menu': True, 'position': position(), 'party': party(), 'battles': BATTLES, 'inputs': INPUTS,
+    runs = []
+    for keys, count, release in INPUTS:
+        if runs and runs[-1][:3] == [keys, count, release]:
+            runs[-1][3] += 1
+        else:
+            runs.append([keys, count, release, 1])
+    receipt = metadata() | {'fixture_setup': False, 'game_ram_or_rom_writes': False, 'normal_save_menu': True, 'position': position(), 'party': party(), 'party_sha256': party_sha256(), 'battles': BATTLES,
+                            'joypad_actions': len(INPUTS), 'input_encoding': 'keys/count/release/repeats', 'input_runs': runs,
                             'story_vars': {n: var(n) for n in ('VAR_BIRCH_LAB_STATE', 'VAR_LITTLEROOT_TOWN_STATE', 'VAR_PETALBURG_GYM_STATE', 'VAR_PETALBURG_CITY_STATE', 'VAR_PETALBURG_WOODS_STATE', 'VAR_RUSTBORO_CITY_STATE')},
                             'story_flags': {n: flag(n) for n in ('FLAG_DEFEATED_RIVAL_ROUTE103', 'FLAG_SYS_POKEDEX_GET', 'FLAG_RECEIVED_RUNNING_SHOES', 'FLAG_SYS_B_DASH', 'FLAG_BADGE01_GET', 'FLAG_RECEIVED_TM_ROCK_TOMB')}}
     (Q / ('campaign_' + name + '_receipt.json')).write_text(json.dumps(receipt, indent=2) + '\n')
