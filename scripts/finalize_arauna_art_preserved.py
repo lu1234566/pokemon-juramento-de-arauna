@@ -41,6 +41,10 @@ def export():
     for phase in ('f2','f3'):
         frames=[Image.open(REVIEW/f'ciro_g{g}_{phase}_{d}_{step}_{i}.png').convert('RGB') for g in (0,1) for d in ('SOUTH','NORTH') for step in range(2) for i in range(8)]
         frames[0].save(REVIEW/f'ciro_{phase}_north_south_mf.gif',save_all=True,append_images=frames[1:],duration=80,loop=0)
+    # Keep human-readable CI receipts compatible with git diff --check.
+    for receipt in REVIEW.glob('*.log'):
+        if receipt.name != 'build.log':
+            receipt.write_text('\n'.join(line.rstrip() for line in receipt.read_text().splitlines())+'\n')
     log=REVIEW/'build.log'
     if log.exists():
         log.with_suffix('.log.gz').write_bytes(gzip.compress(log.read_bytes(),mtime=0))
