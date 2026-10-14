@@ -1,0 +1,66 @@
+name: Finalize Arauna art-preserved review
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: finalize-arauna-art-preserved
+  cancel-in-progress: true
+jobs:
+  finish:
+    if: github.event_name == 'pull_request' && github.head_ref == 'fix/arauna-ciro-art-preserved-20261014' && github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.sha }}
+      - name: Install the canonical compiler and native QA dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gcc-arm-none-eabi binutils-arm-none-eabi libnewlib-arm-none-eabi libpng-dev pkg-config python3-pil libmgba-dev ripgrep
+      - name: Retouch the two existing sheets and enable release QC
+        run: python3 scripts/finalize_arauna_art_preserved.py --apply
+      - name: Build and validate frozen resources
+        run: |
+          set -o pipefail
+          bash scripts/build_arauna.sh -j2 all 2>&1 | tee review/plan_art_preserved_20261014/build.log
+          if rg -i '\bwarning:' review/plan_art_preserved_20261014/build.log; then exit 1; fi
+          bash scripts/check_arauna_static.sh > review/plan_art_preserved_20261014/static.log 2>&1
+          python3 scripts/check_arauna_art_freeze.py > review/plan_art_preserved_20261014/art_freeze.log
+          python3 scripts/check_arauna_curated_rom.py > review/plan_art_preserved_20261014/rom_text.log
+          python3 tools/validate_arauna_character_assets.py --release > review/plan_art_preserved_20261014/character.log
+      - name: Render actual north/south walking loops in mGBA
+        run: |
+          cc -shared -fPIC -O2 review/plan_art_preserved_20261014/mgba_helper.c -lmgba -o review/plan_art_preserved_20261014/mgba_helper.so
+          python3 review/plan_art_preserved_20261014/test_scene.py > review/plan_art_preserved_20261014/scene.log
+          python3 tools/arauna_maps/render_native_map.py EverGrandeCity_PhoebesRoom review/plan_art_preserved_20261014/league_phoebe.png
+          python3 tools/arauna_maps/render_native_map.py EverGrandeCity_GlaciasRoom review/plan_art_preserved_20261014/league_glacia.png
+          python3 tools/arauna_maps/render_native_map.py EverGrandeCity_DrakesRoom review/plan_art_preserved_20261014/league_drake.png
+          python3 scripts/finalize_arauna_art_preserved.py --export
+      - name: Commit only the approved sheets, QC and external review evidence
+        env:
+          REVIEW_BRANCH: fix/arauna-ciro-art-preserved-20261014
+          EXPECTED_HEAD: ${{ github.event.pull_request.head.sha }}
+        run: |
+          set -euo pipefail
+          test "$(git ls-remote origin "refs/heads/$REVIEW_BRANCH" | cut -f1)" = "$EXPECTED_HEAD"
+          git config user.name Codex
+          git config user.email noreply@openai.com
+          git add graphics/object_events/pics/people/ciro/phase2.png graphics/object_events/pics/people/ciro/phase3.png
+          git add tools/validate_arauna_character_assets.py scripts/build_arauna.sh scripts/check_arauna_static.sh docs/COMO_PUBLICAR_A_BETA.md review/plan_art_preserved_20261014
+          git diff --cached --check
+          if ! git diff --cached --quiet; then
+            git commit -m "Complete Ciro art-preserved repair with native walking receipts"
+            git push origin "HEAD:refs/heads/$REVIEW_BRANCH"
+          fi
+      - uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f
+        if: always()
+        with:
+          name: arauna-art-preserved-review
+          path: review/plan_art_preserved_20261014
+          retention-days: 30
+          if-no-files-found: error

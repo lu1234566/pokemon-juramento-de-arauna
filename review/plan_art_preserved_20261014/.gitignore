@@ -1,0 +1,6 @@
+*.so
+*.state
+*.rgba
+__pycache__/
+art_baseline.json
+build.log
