@@ -134,98 +134,89 @@ MagmaHideout_4F_EventScript_Tabitha::
 	end
 
 MagmaHideout_4F_Text_Grunt11Intro:
-	.string "The sensors register two old currents\n"
-	.string "under Arauna: one preserves BONDS, the\l"
-	.string "other lets them end. The ARCHIVE tried\l"
-	.string "to turn both into tools.$"
+	.string "REMEMBRANCER:\n"
+	.string "The core is reacting.\p"
+	.string "Stay away from the equipment.$"
 
 MagmaHideout_4F_Text_Grunt11Defeat:
-	.string "REMEMBRANCER: When a story bothers the\n"
-	.string "people in charge, it becomes 'noise',\l"
-	.string "then 'trauma', then it is gone from the\l"
-	.string "record.$"
+	.string "REMEMBRANCER: Readings jumped\n"
+	.string "when LUZIA touched the MATRIX.$"
 
 MagmaHideout_4F_Text_Grunt11PostBattle:
-	.string "The sensors register two old currents\n"
-	.string "under Arauna: one preserves BONDS, the\l"
-	.string "other lets them end. The ARCHIVE tried\l"
-	.string "to turn both into tools.$"
+	.string "REMEMBRANCER:\n"
+	.string "This isn't returning one story\n"
+	.string "at a time.\p"
+	.string "It's pulling thousands.$"
 
 MagmaHideout_4F_Text_Grunt12Intro:
-	.string "REMEMBRANCER: LUZIA says memory\n"
-	.string "handed back without permission is still\l"
-	.string "better than memory stolen. Not\l"
-	.string "everyone here agrees with that part.$"
+	.string "REMEMBRANCER:\n"
+	.string "LUZIA asked for trust.\p"
+	.string "I wish I'd asked for a plan.$"
 
 MagmaHideout_4F_Text_Grunt12Defeat:
-	.string "REMEMBRANCER: When a story bothers the\n"
-	.string "people in charge, it becomes 'noise',\l"
-	.string "then 'trauma', then it is gone from the\l"
-	.string "record.$"
+	.string "REMEMBRANCER: HORIZON will use\n"
+	.string "this against all of us.$"
 
 MagmaHideout_4F_Text_Grunt12PostBattle:
-	.string "REMEMBRANCER: Keeping a name can be\n"
-	.string "resistance. Forcing someone to live it\l"
-	.string "all again can be violence.$"
+	.string "REMEMBRANCER: And they may be\n"
+	.string "right about the risk.\p"
+	.string "I hate admitting that.$"
 
 MagmaHideout_4F_Text_Grunt13Intro:
-	.string "REMEMBRANCER: When a story bothers the\n"
-	.string "people in charge, it becomes 'noise',\l"
-	.string "then 'trauma', then it is gone from the\l"
-	.string "record.$"
+	.string "REMEMBRANCER:\n"
+	.string "The MATRIX opened a passage\n"
+	.string "we don't know how to close.$"
 
 MagmaHideout_4F_Text_Grunt13Defeat:
-	.string "REMEMBRANCER: HORIZON wants a stable\n"
-	.string "Arauna. I want an Arauna that knows why\l"
-	.string "its ruins are there.$"
+	.string "REMEMBRANCER:\n"
+	.string "I can't call this simple\n"
+	.string "restoration anymore.$"
 
 MagmaHideout_4F_Text_Grunt13PostBattle:
-	.string "REMEMBRANCER: HORIZON wants a stable\n"
-	.string "Arauna. I want an Arauna that knows why\l"
-	.string "its ruins are there.$"
+	.string "REMEMBRANCER:\n"
+	.string "Go. If LUZIA won't hear us,\n"
+	.string "maybe she'll hear you.$"
 
 MagmaHideout_4F_Text_TabithaIntro:
-	.string "The sensors register two old currents\n"
-	.string "under Arauna: one preserves BONDS, the\l"
-	.string "other lets them end. The ARCHIVE tried\l"
-	.string "to turn both into tools.$"
+	.string "RAUL: Enough.\p"
+	.string "You've seen more of this base\n"
+	.string "than you should have.$"
 
 MagmaHideout_4F_Text_TabithaDefeat:
-	.string "Taken down again…\n"
-	.string "Hehe…$"
+	.string "RAUL: Damn...\p"
+	.string "Then pass. But beating me does\n"
+	.string "not make you right.$"
 
 MagmaHideout_4F_Text_TabithaPostBattle:
-	.string "The sensors register two old currents\n"
-	.string "under Arauna: one preserves BONDS, the\l"
-	.string "other lets them end. The ARCHIVE tried\l"
-	.string "to turn both into tools.$"
+	.string "RAUL: I follow LUZIA because I\n"
+	.string "saw families erased on paper.\p"
+	.string "That doesn't mean I'm not afraid\n"
+	.string "of what she'll do.$"
 
 MagmaHideout_4F_Text_MaxieAwakenGroudon:
-	.string "The sensors register two old currents\n"
-	.string "under Arauna: one preserves BONDS, the\l"
-	.string "other lets them end. The ARCHIVE tried\l"
-	.string "to turn both into tools.$"
+	.string "LUZIA: This RECORD-MATRIX was\n"
+	.string "built to find what the ARCHIVE\n"
+	.string "tore away.\p"
+	.string "Today it returns to Arauna.$"
 
 MagmaHideout_4F_Text_MaxieGroudonWhatsWrong:
-	.string "The sensors register two old currents\n"
-	.string "under Arauna: one preserves BONDS, the\l"
-	.string "other lets them end. The ARCHIVE tried\l"
-	.string "to turn both into tools.$"
+	.string "LUZIA: Wait...\p"
+	.string "The current isn't following the\n"
+	.string "MATRIX.\p"
+	.string "It's pulling everything.$"
 
 MagmaHideout_4F_Text_MaxieOhItWasYou:
-	.string "LUZIA: The problem was never\n"
-	.string "remembering too much. It was letting\l"
-	.string "whoever holds power decide which\l"
-	.string "memories the rest may keep.$"
+	.string "LUZIA: You made it this far.\p"
+	.string "If you came to stop me, show me\n"
+	.string "another way.$"
 
 MagmaHideout_4F_Text_MaxieDefeat:
-	.string "LUZIA: If giving the memories back\n"
-	.string "hurts, then it will hurt. Pain does not\l"
-	.string "authorize anyone to rewrite another\l"
-	.string "person's life.$"
+	.string "LUZIA: Losing a battle doesn't\n"
+	.string "make HORIZON right.\p"
+	.string "But I heard what you showed me.$"
 
 MagmaHideout_4F_Text_MaxieImGoingAfterGroudon:
-	.string "The sensors register two old currents\n"
-	.string "under Arauna: one preserves BONDS, the\l"
-	.string "other lets them end. The ARCHIVE tried\l"
-	.string "to turn both into tools.$"
+	.string "LUZIA: The current escaped.\p"
+	.string "Signals lead toward the coast.\p"
+	.string "I'm going to PORTO DO SAL before\n"
+	.string "HORIZON gets there.$"

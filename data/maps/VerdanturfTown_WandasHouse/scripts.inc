@@ -83,78 +83,74 @@ VerdanturfTown_WandasHouse_EventScript_WallysAuntEverGrande::
 	end
 
 VerdanturfTown_WandasHouse_Text_StrongerSpeech:
-	.string "VAL: I am still afraid. But I know now\n"
-	.string "that courage is not forgetting the\l"
-	.string "fear. It is walking on while you\l"
-	.string "remember it.$"
+	.string "VAL: I am still afraid.\p"
+	.string "Now I know courage is not\n"
+	.string "forgetting fear. It is walking\n"
+	.string "while remembering it.$"
 
 VerdanturfTown_WandasHouse_Text_StrongerSpeechShort:
-	.string "VAL: I am still afraid. But I know now\n"
-	.string "that courage is not forgetting the\l"
-	.string "fear. It is walking on while you\l"
-	.string "remember it.$"
+	.string "VAL: I am still afraid.\p"
+	.string "I just know how to keep walking\n"
+	.string "with it now.$"
 
 VerdanturfTown_WandasHouse_Text_WallysNextDoor:
-	.string "VAL: I am still afraid. But I know now\n"
-	.string "that courage is not forgetting the\l"
-	.string "fear. It is walking on while you\l"
-	.string "remember it.$"
+	.string "VAL is next door.\p"
+	.string "He came here to recover and\n"
+	.string "found his own pace instead.$"
 
 VerdanturfTown_WandasHouse_Text_WallySlippedOff:
-	.string "VAL: I am still afraid. But I know now\n"
-	.string "that courage is not forgetting the\l"
-	.string "fear. It is walking on while you\l"
-	.string "remember it.$"
+	.string "VAL left on his own again.\p"
+	.string "He said he needed to know how\n"
+	.string "far his own pace could take him.$"
 
 VerdanturfTown_WandasHouse_Text_WallyGoneThatFar:
-	.string "VAL: I spent a long time thinking I had\n"
-	.string "to become someone else to keep\l"
-	.string "traveling. All I had to find was my own\l"
-	.string "pace.$"
+	.string "VAL reached OATH ROAD?\p"
+	.string "He spent so long thinking he had\n"
+	.string "to become someone else.\p"
+	.string "I am glad he kept his own pace.$"
 
 VerdanturfTown_WandasHouse_Text_MeetWanda:
-	.string "WANDA: You are?\n"
-	.string "Oh, right, I get it!\p"
-	.string "You're the {PLAYER} who VAL was\n"
-	.string "telling me about.\p"
-	.string "I'm VAL's cousin.\n"
-	.string "Glad to meet you!\p"
-	.string "I think VAL's become a lot more lively\n"
-	.string "and healthy since he came here.$"
+	.string "WANDA: You are {PLAYER}?\p"
+	.string "VAL told me about you. I'm his\n"
+	.string "cousin. Glad to meet you.\p"
+	.string "He has more energy since coming\n"
+	.string "here, but we let him set the\n"
+	.string "pace.$"
 
 VerdanturfTown_WandasHouse_Text_DontWorryAboutWally:
-	.string "VAL: I spent a long time thinking I had\n"
-	.string "to become someone else to keep\l"
-	.string "traveling. All I had to find was my own\l"
+	.string "VAL: I spent too long thinking I\n"
+	.string "had to become someone else to\n"
+	.string "keep traveling.\p"
+	.string "I only needed to find my own\n"
 	.string "pace.$"
 
 VerdanturfTown_WandasHouse_Text_CanSeeGirlfriendEveryDay:
-	.string "Thanks to you, I can see my girlfriend\n"
-	.string "every day.\l"
-	.string "Happy? You bet I am!$"
+	.string "Thanks to you, the tunnel is\n"
+	.string "open.\p"
+	.string "I can see my girlfriend every\n"
+	.string "day without putting the POKéMON\n"
+	.string "in the cave through more\n"
+	.string "blasting.$"
 
 VerdanturfTown_WandasHouse_Text_DaughtersBoyfriendDriven:
-	.string "My daughter's boyfriend is a very\n"
-	.string "driven and passionate sort of person.\p"
-	.string "He's been digging a tunnel nonstop\n"
-	.string "just so he can see my daughter.\p"
-	.string "My daughter's a little concerned,\n"
-	.string "so she goes out to the tunnel a lot.$"
+	.string "My daughter's boyfriend kept\n"
+	.string "digging the tunnel by hand.\p"
+	.string "She worried about him, so she\n"
+	.string "checked on him often.$"
 
 VerdanturfTown_WandasHouse_Text_DaughtersBoyfriendWasDigging:
-	.string "It's amazing. My daughter's boyfriend\n"
-	.string "was digging the tunnel by hand!\p"
-	.string "It's so incredible!$"
+	.string "He finished the tunnel by hand.\p"
+	.string "No blasting, and the cave\n"
+	.string "POKéMON were left in peace.$"
 
 VerdanturfTown_WandasHouse_Text_IfAnythingHappenedToWally:
-	.string "VAL: I am still afraid. But I know now\n"
-	.string "that courage is not forgetting the\l"
-	.string "fear. It is walking on while you\l"
-	.string "remember it.$"
+	.string "VAL still worries us sometimes.\p"
+	.string "But helping him does not mean\n"
+	.string "choosing his life for him.$"
 
 VerdanturfTown_WandasHouse_Text_WallyWasInEverGrande:
-	.string "VAL: I spent a long time thinking I had\n"
-	.string "to become someone else to keep\l"
-	.string "traveling. All I had to find was my own\l"
-	.string "pace.$"
+	.string "VAL made it all the way to OATH\n"
+	.string "ROAD.\p"
+	.string "He chose that path himself. That\n"
+	.string "matters more than how fast.$"
 

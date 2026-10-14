@@ -74,33 +74,30 @@ Route102_EventScript_Allen::
 	end
 
 Route102_Text_WatchMeCatchPokemon:
-	.string "VAL: {PLAYER}…\n"
-	.string "POKéMON hide in tall grass like this,\l"
-	.string "don't they?\p"
-	.string "Please watch me and see if I can\n"
-	.string "catch one properly.\p"
-	.string "…Whoa!$"
+	.string "VAL: {PLAYER}...\p"
+	.string "Could you watch me try this?\p"
+	.string "I'm still nervous.\p"
+	.string "I want to catch one myself.\n"
+	.string "Here goes!$"
 
 Route102_Text_WallyIDidIt:
-	.string "VAL: I spent a long time thinking I had\n"
-	.string "to become someone else to keep\l"
-	.string "traveling. All I had to find was my own\l"
-	.string "pace.$"
+	.string "VAL: I did it!\p"
+	.string "I was scared the whole time.\p"
+	.string "But I still did it.\p"
+	.string "Maybe that's enough for today.$"
 
 Route102_Text_LetsGoBack:
-	.string "{PLAYER}, thank you!\n"
-	.string "Let's go back to the GYM!$"
+	.string "VAL: Thank you, {PLAYER}.\p"
+	.string "Let's go back to ELIAS.$"
 
 Route102_Text_ImNotVeryTall:
-	.string "I'm…not very tall, so I sink right\n"
-	.string "into tall grass.\p"
-	.string "The grass goes up my nose and…\n"
-	.string "Fwafwafwafwafwa…\p"
-	.string "Fwatchoo!$"
+	.string "I'm short enough that tall grass\n"
+	.string "gets right in my face.\p"
+	.string "It makes me sneeze every time!$"
 
 Route102_Text_CatchWholeBunchOfPokemon:
-	.string "I'm going to catch a whole bunch of\n"
-	.string "POKéMON!$"
+	.string "I'm going to catch lots of\n"
+	.string "POKéMON and learn their habits.$"
 
 Route102_Text_RouteSignOldale:
 	.string "ROUTE 102\n"

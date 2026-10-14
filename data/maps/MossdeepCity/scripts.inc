@@ -304,10 +304,8 @@ MossdeepCity_Movement_ScottExitEast:
 	step_end
 
 MossdeepCity_Text_WantKingsRockStevenGaveMe:
-	.string "MR. BENTO: When a name falls out of\n"
-	.string "people's mouths, I write it down. Not to\l"
-	.string "replace whoever remembers it. To leave\l"
-	.string "a trail.$"
+	.string "MR. BENTO gave me this odd rock.\p"
+	.string "Do you want it?$"
 
 MossdeepCity_Text_YouCanKeepIt:
 	.string "Why would you want it?\n"
@@ -316,10 +314,10 @@ MossdeepCity_Text_YouCanKeepIt:
 	.string "from BENTO.$"
 
 MossdeepCity_Text_StevensHouseOverThere:
-	.string "MR. BENTO: When a name falls out of\n"
-	.string "people's mouths, I write it down. Not to\l"
-	.string "replace whoever remembers it. To leave\l"
-	.string "a trail.$"
+	.string "MR. BENTO keeps his notes in the\n"
+	.string "house over there.\p"
+	.string "Every label has a place, a date\n"
+	.string "and a source.$"
 
 MossdeepCity_Text_WhatToDoWithWeirdRock:
 	.string "Yeah, you think so, too! What are you\n"
@@ -344,15 +342,10 @@ MossdeepCity_Text_SpaceCenterLaunchingRockets:
 	.string "launching huge rockets.$"
 
 MossdeepCity_Text_MossdeepTargetedByMagma:
-	.string "I heard from a SAILOR buddy that the\n"
-	.string "HORIZON CONSORTIUM set up shop in\l"
-	.string "BAIA DAS LUZES.\p"
-	.string "I also heard that someone came along\n"
-	.string "and wiped the floor with them!\p"
-	.string "But MISSOES DO CEU here's been\n"
-	.string "targeted by the REMEMBRANCERS.\p"
-	.string "If you want to know what they're up to,\n"
-	.string "go visit the SPACE CENTER.$"
+	.string "The REMEMBRANCERS are moving\n"
+	.string "toward the SKY MISSIONS center.\p"
+	.string "If you want to know why, go to\n"
+	.string "the communications complex.$"
 
 MossdeepCity_Text_FeelReliefOnLand:
 	.string "I'm a SAILOR, so the sea's obviously\n"
@@ -395,38 +388,31 @@ MossdeepCity_Text_ItsAWhiteRock:
 	.string "It's a white rock.$"
 
 MossdeepCity_Text_GymSign:
-	.string "MISSOES DO CEU CECILIA AND CAETANO\p"
+	.string "SKY MISSIONS POKéMON GYM\p"
+	.string "CECILIA & CAETANO\p"
 	.string "Every star has witnesses.$"
 
 MossdeepCity_Text_CitySign:
-	.string "MISSOES DO CEU. HORIZON means to use\n"
-	.string "the regional communication network to\l"
-	.string "widen the reach of the LIVING ARCHIVE.$"
+	.string "SKY MISSIONS. HORIZON plans to\n"
+	.string "use the regional network to\n"
+	.string "expand the LIVING ARCHIVE.$"
 
 MossdeepCity_Text_SpaceCenterSign:
-	.string "MISSOES DO CEU SPACE CENTER\n"
-	.string "“The closest place to space.”$"
+	.string "SKY MISSIONS CENTER Regional\n"
+	.string "communications hub.$"
 
 MossdeepCity_Text_ScottSomethingWrongWithTown:
-	.string "BENTO: {PLAYER}{KUN}, feeling good? I'm doing\n"
-	.string "great!\p"
-	.string "I'd heard MISSOES DO CEU's GYM LEADER\n"
-	.string "is pretty strong, so I decided to come\l"
-	.string "take a look-see for myself.\p"
-	.string "But there's something wrong about this\n"
-	.string "town.\p"
-	.string "People are going on about a warning\n"
-	.string "letter and the SPACE CENTER…\p"
-	.string "I don't think it concerns me in any way,\n"
-	.string "though.$"
+	.string "MR. BENTO: {PLAYER}, the\n"
+	.string "network is under pressure.\p"
+	.string "The warning is not about a\n"
+	.string "battle. It is about who controls\n"
+	.string "the record.\p"
+	.string "I am going inside.$"
 
 MossdeepCity_Text_SootopolisNewGymLeader:
-	.string "Ahh… It feels great letting the waves\n"
-	.string "wash over my feet…\p"
-	.string "Speaking of the waves, you know that\n"
-	.string "island city AGUAS DE M'BOI?\p"
-	.string "I think the GYM there had a new\n"
-	.string "LEADER come in.\p"
-	.string "People tell me the new LEADER once\n"
-	.string "mentored AMALIA.$"
+	.string "I heard AGUAS DE M'BOI has a new\n"
+	.string "GYM LEADER.\p"
+	.string "MS. CELINA is known for asking\n"
+	.string "what we keep and what we\n"
+	.string "release.$"
 

@@ -20,23 +20,24 @@ SootopolisCity_House3_EventScript_Girl::
 	end
 
 SootopolisCity_House3_Text_JuanHasManyFansDoYou:
-	.string "MRS. CELINA: Living is learning what to\n"
-	.string "keep and what to let go. Choosing that\l"
-	.string "for someone else is what is not ours to\l"
-	.string "do.$"
+	.string "MS. CELINA has many people who\n"
+	.string "seek her advice.\p"
+	.string "Do people follow your battles\n"
+	.string "too?$"
 
 SootopolisCity_House3_Text_YouMustBePrettyStrong:
-	.string "Oh, then you must be pretty strong.$"
+	.string "Then you must have made quite an\n"
+	.string "impression.$"
 
 SootopolisCity_House3_Text_LonesomeTryWorkingHarder:
-	.string "Oh, dear…\n"
-	.string "That's a little lonesome.\p"
-	.string "Try working a little harder to get\n"
-	.string "a fan following.$"
+	.string "Not yet? That is all right.\p"
+	.string "A reputation should follow your\n"
+	.string "actions, not the other way\n"
+	.string "around.$"
 
 SootopolisCity_House3_Text_TrainerFanClubWasWild:
-	.string "Dedicated fans come over from even\n"
-	.string "outside of ARAUNA.\p"
-	.string "It was really wild when I went to the\n"
-	.string "TRAINER FAN CLUB in BAIA DAS LUZES.$"
+	.string "People come from across ARAUNA\n"
+	.string "to talk about strong TRAINERS.\p"
+	.string "The loudest stories are not\n"
+	.string "always the truest ones.$"
 

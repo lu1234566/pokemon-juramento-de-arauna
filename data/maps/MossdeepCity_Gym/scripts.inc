@@ -365,22 +365,15 @@ MossdeepCity_Gym_EventScript_RedFloorSwitch::
 	end
 
 MossdeepCity_Gym_Text_GymGuideAdvice:
-	.string "Yo, how's it going, CHAMPION-bound\n"
-	.string "{PLAYER}?\p"
-	.string "The GYM LEADERS here use\n"
-	.string "PSYCHIC-type POKéMON.\p"
-	.string "If you go up against them with\n"
-	.string "FIGHTING- or POISON-type POKéMON,\l"
-	.string "they'll inflict horrible damage!\p"
-	.string "Plus, they'll come at you with\n"
-	.string "outstanding combination attacks.\p"
-	.string "If you want to win, you'll need to show\n"
-	.string "them how tight you are with your\l"
-	.string "POKéMON. Go for it!$"
+	.string "Guide: CECILIA & CAETANO fight\n"
+	.string "as a pair.\p"
+	.string "Plan for two opponents acting at\n"
+	.string "the same time.$"
 
 MossdeepCity_Gym_Text_GymGuidePostVictory:
-	.string "Wow, you're astounding!\n"
-	.string "You're one great TRAINER!$"
+	.string "You beat CECILIA & CAETANO!\p"
+	.string "That PRISM BADGE puts you one\n"
+	.string "step from the full set.$"
 
 MossdeepCity_Gym_Text_PrestonIntro:
 	.string "Battles hinge on the strength of your\n"
@@ -546,60 +539,72 @@ MossdeepCity_Gym_Text_NicholasPostBattle:
 	.string "invincible POKéMON power next.$"
 
 MossdeepCity_Gym_Text_TateAndLizaIntro:
-	.string "CECILIA: From up high, cities look small.\n"
-	.string "The lives inside them never are.$"
+	.string "CECILIA: From above, cities look\n"
+	.string "small.\p"
+	.string "CAETANO: The lives inside them\n"
+	.string "never are.\p"
+	.string "We judge what the network cannot\n"
+	.string "see from a distance.$"
 
 MossdeepCity_Gym_Text_TateAndLizaDefeat:
-	.string "CECILIA: From up high, cities look small.\n"
-	.string "The lives inside them never are.$"
+	.string "CECILIA: You kept the people in\n"
+	.string "the picture, not just the data.$"
 
 MossdeepCity_Gym_Text_ReceivedMindBadge:
-	.string "{PLAYER} received the PRISM BADGE from\n"
-	.string "CECILIA.$"
+	.string "{PLAYER} received the\n"
+	.string "PRISM BADGE from CECILIA and\n"
+	.string "CAETANO.$"
 
 MossdeepCity_Gym_Text_ExplainMindBadgeTakeThis:
-	.string "The PRISM BADGE raises your POKéMON's\n"
-	.string "SP. ATK and SP. DEF.\p"
-	.string "It also lets you use DIVE outside\n"
-	.string "battle.\p"
-	.string "Take this as well.$"
+	.string "The PRISM BADGE lets POKéMON use\n"
+	.string "DIVE outside battle.\p"
+	.string "Take this too.$"
 
 MossdeepCity_Gym_Text_ExplainCalmMind:
-	.string "CECILIA: From up high, cities look small.\n"
-	.string "The lives inside them never are.$"
+	.string "This TM contains CALM MIND.\p"
+	.string "It raises SP. ATK and SP. DEF by\n"
+	.string "steadying focus.$"
 
 MossdeepCity_Gym_Text_RegisteredTateAndLiza:
-	.string "Registered GYM LEADERS CECILIA &\n"
-	.string "CAETANO in the POKéNAV.$"
+	.string "Registered CECILIA & CAETANO in\n"
+	.string "the POKéNAV.$"
 
 MossdeepCity_Gym_Text_TateAndLizaPostBattle:
-	.string "CECILIA: From up high, cities look small.\n"
-	.string "The lives inside them never are.$"
+	.string "CAETANO: A signal can cross the\n"
+	.string "region in seconds.\p"
+	.string "CECILIA: Understanding still\n"
+	.string "takes time.$"
 
 MossdeepCity_Gym_Text_TateAndLizaNeedTwoMons:
-	.string "CECILIA: From up high, cities look small.\n"
-	.string "The lives inside them never are.$"
+	.string "CECILIA: This is a DOUBLE\n"
+	.string "BATTLE.\p"
+	.string "Bring at least two POKéMON.$"
 
 MossdeepCity_Gym_Text_GymStatue:
-	.string "MISSOES DO CEU POKéMON GYM$"
+	.string "SKY MISSIONS POKéMON GYM\p"
+	.string "LEADERS: CECILIA & CAETANO$"
 
 MossdeepCity_Gym_Text_GymStatueCertified:
-	.string "MISSOES DO CEU POKéMON GYM\p"
-	.string "CAETANO AND CECILIA'S CERTIFIED\n"
+	.string "SKY MISSIONS POKéMON GYM\p"
+	.string "CECILIA & CAETANO'S CERTIFIED\n"
 	.string "TRAINERS: {PLAYER}$"
 
 MossdeepCity_Gym_Text_TateAndLizaPreRematch:
-	.string "CECILIA: From up high, cities look small.\n"
-	.string "The lives inside them never are.$"
+	.string "CAETANO: The network changed.\p"
+	.string "CECILIA: So did we. Show us what\n"
+	.string "changed in you.$"
 
 MossdeepCity_Gym_Text_TateAndLizaRematchDefeat:
-	.string "CECILIA: From up high, cities look small.\n"
-	.string "The lives inside them never are.$"
+	.string "CECILIA: The view changed, but\n"
+	.string "your judgment held.$"
 
 MossdeepCity_Gym_Text_TateAndLizaPostRematch:
-	.string "CECILIA: From up high, cities look small.\n"
-	.string "The lives inside them never are.$"
+	.string "CAETANO: Data travels fast.\p"
+	.string "CECILIA: Responsibility should\n"
+	.string "not.$"
 
 MossdeepCity_Gym_Text_TateAndLizaRematchNeedTwoMons:
-	.string "CECILIA: From up high, cities look small.\n"
-	.string "The lives inside them never are.$"
+	.string "CAETANO: Two voices, two\n"
+	.string "POKéMON.\p"
+	.string "Bring at least two for our\n"
+	.string "rematch.$"

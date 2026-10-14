@@ -148,24 +148,25 @@ MossdeepCity_StevensHouse_EventScript_DiveItemBall::
 	end
 
 MossdeepCity_StevensHouse_Text_YouveEarnedHMDive:
-	.string "MR. BENTO: {PLAYER}, you've come at the\n"
-	.string "right moment.\p"
-	.string "The M'BOI records point to something\n"
+	.string "MR. BENTO: {PLAYER},\n"
+	.string "good timing.\p"
+	.string "M'BOI records point to something\n"
 	.string "under the water.\p"
-	.string "Take this DIVE technique. You're going\n"
-	.string "to need it.$"
+	.string "Take this DIVE technique. You\n"
+	.string "will need it.$"
 
 MossdeepCity_StevensHouse_Text_ExplainDive:
-	.string "MR. BENTO: When a name falls out of\n"
-	.string "people's mouths, I write it down. Not to\l"
-	.string "replace whoever remembers it. To leave\l"
-	.string "a trail.$"
+	.string "MR. BENTO: When a name leaves\n"
+	.string "people's mouths, I write it\n"
+	.string "down.\p"
+	.string "Not to replace who remembers.\n"
+	.string "Only to leave a trail.$"
 
 MossdeepCity_StevensHouse_Text_UnderwateCavernBetweenMossdeepSootopolis:
-	.string "MR. BENTO: When a name falls out of\n"
-	.string "people's mouths, I write it down. Not to\l"
-	.string "replace whoever remembers it. To leave\l"
-	.string "a trail.$"
+	.string "MR. BENTO: The underwater route\n"
+	.string "links SKY MISSIONS to M'BOI.\p"
+	.string "The records below are older than\n"
+	.string "HORIZON's machines.$"
 
 MossdeepCity_StevensHouse_Text_TakeBallContainingBeldum:
 	.string "{PLAYER} checked the POKé BALL.\p"
@@ -185,13 +186,13 @@ MossdeepCity_StevensHouse_Text_LeftPokeBallWhereItWas:
 	.string "it was.$"
 
 MossdeepCity_StevensHouse_Text_LetterFromSteven:
-	.string "MR. BENTO: When a name falls out of\n"
-	.string "people's mouths, I write it down. Not to\l"
-	.string "replace whoever remembers it. To leave\l"
-	.string "a trail.$"
+	.string "MR. BENTO: A record without a\n"
+	.string "source is only half a clue.\p"
+	.string "If you carry this note, carry\n"
+	.string "who wrote it too.$"
 
 MossdeepCity_StevensHouse_Text_CollectionOfRareRocks:
 	.string "Stones, labels and notebooks.\p"
-	.string "Every piece has a date, a place, and a\n"
-	.string "name written by MR. BENTO.$"
+	.string "Each piece has a date, a place\n"
+	.string "and a name written by MR. BENTO.$"
 

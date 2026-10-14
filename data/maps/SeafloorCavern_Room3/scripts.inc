@@ -12,28 +12,32 @@ SeafloorCavern_Room3_EventScript_Grunt5::
 	end
 
 SeafloorCavern_Room3_Text_ShellyIntro:
-	.string "MARTA: OTACILIO is near the core. I'm\n"
-	.string "not letting you cut this short now.$"
+	.string "MARTA: OTACILIO is near the\n"
+	.string "core.\p"
+	.string "I will not let you interrupt\n"
+	.string "everything now.$"
 
 SeafloorCavern_Room3_Text_ShellyDefeat:
-	.string "MARTA: Heh... you're worse than the\n"
-	.string "reports said.$"
+	.string "MARTA: Heh... You are worse than\n"
+	.string "the reports said.$"
 
 SeafloorCavern_Room3_Text_ShellyPostBattle:
-	.string "MARTA: Don't mistake obedience for\n"
-	.string "certainty.\p"
-	.string "I follow OTACILIO because I have seen\n"
+	.string "MARTA: Do not confuse obedience\n"
+	.string "with certainty.\p"
+	.string "I follow OTACILIO because I saw\n"
 	.string "what memories can do.$"
 
 SeafloorCavern_Room3_Text_Grunt5Intro:
-	.string "MARTA gave orders to hold this route.\n"
-	.string "If you want through, try your luck.$"
+	.string "MARTA ordered us to hold this\n"
+	.string "route.\p"
+	.string "If you want through, try me.$"
 
 SeafloorCavern_Room3_Text_Grunt5Defeat:
-	.string "I should have stuck to the reports...$"
+	.string "I should have stayed with the\n"
+	.string "reports...$"
 
 SeafloorCavern_Room3_Text_Grunt5PostBattle:
-	.string "The ARCHIVE has been unstable ever\n"
-	.string "since we went down to M'BOI.\p"
-	.string "OTACILIO is carrying on regardless.$"
+	.string "The ARCHIVE has been unstable\n"
+	.string "since we descended into M'BOI.\p"
+	.string "OTACILIO keeps going anyway.$"
 

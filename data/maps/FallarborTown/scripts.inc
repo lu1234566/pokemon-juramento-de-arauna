@@ -72,20 +72,20 @@ FallarborTown_Text_Azurill:
 	.string "Cristo: Rooreelooo.$"
 
 FallarborTown_Text_HaveYouChallengedFlannery:
-	.string "NARA: Ash is what is left after the fire.\n"
-	.string "It is not the end of everything, and we\l"
-	.string "should not pretend nothing burned\l"
-	.string "either.$"
+	.string "NARA: Ash is what remains after\n"
+	.string "fire. It is not the end.\p"
+	.string "But we should not pretend\n"
+	.string "nothing burned.$"
 
 FallarborTown_Text_BattleTentSign:
 	.string "BATTLE TENT CAMPO DAS CINZAS SITE\n"
 	.string "“May the Greatest Teams Gather!”$"
 
 FallarborTown_Text_TownSign:
-	.string "CAMPO DAS CINZAS. DISENCHANTMENT\n"
-	.string "spreads where the land has already\l"
-	.string "been hurt. Zila is realizing the pattern\l"
-	.string "is older than the CONSORTIUM.$"
+	.string "ASH FIELD. DISENCHANTMENT moves\n"
+	.string "where the land was wounded.\p"
+	.string "Zila sees a pattern older than\n"
+	.string "the Consortium.$"
 
 FallarborTown_Text_MoveTutorSign:
 	.string "MOVE TUTOR'S HOUSE\n"

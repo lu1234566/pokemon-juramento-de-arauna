@@ -108,10 +108,11 @@ VerdanturfTown_Text_EasyToGetToRustboroNow:
 	.string "SERRA DO UIVO now.$"
 
 VerdanturfTown_Text_TownSign:
-	.string "VALE DO SILENCIO. Displaced families\n"
-	.string "live here. Many remember the loss but\l"
-	.string "can no longer say the name of the place\l"
-	.string "they lost.$"
+	.string "VALE DO SILENCIO. Displaced\n"
+	.string "families live here.\p"
+	.string "Many remember the loss but can\n"
+	.string "no longer name the place they\n"
+	.string "lost.$"
 
 VerdanturfTown_Text_WandasHouse:
 	.string "WANDA'S HOUSE$"

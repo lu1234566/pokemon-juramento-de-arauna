@@ -12,30 +12,31 @@ SeafloorCavern_Room1_EventScript_Grunt2::
 	end
 
 SeafloorCavern_Room1_Text_Grunt1Intro:
-	.string "You should never have reached the\n"
+	.string "You should not have reached the\n"
 	.string "M'BOI chambers.\p"
-	.string "While OTACILIO is down there, nobody\n"
-	.string "gets through.$"
+	.string "While OTACILIO is below, no one\n"
+	.string "passes.$"
 
 SeafloorCavern_Room1_Text_Grunt1Defeat:
-	.string "Blast... you got past me.$"
+	.string "You got past me...$"
 
 SeafloorCavern_Room1_Text_Grunt1PostBattle:
-	.string "OTACILIO believes some memories only\n"
-	.string "go on wounding.\p"
-	.string "I won't pretend I understand all of it.$"
+	.string "OTACILIO believes some memories\n"
+	.string "only keep hurting.\p"
+	.string "I will not pretend I understand\n"
+	.string "all of it.$"
 
 SeafloorCavern_Room1_Text_Grunt2Intro:
-	.string "These caves react to things our\n"
-	.string "sensors can't read.\p"
-	.string "Don't come any closer.$"
+	.string "These caverns react to things\n"
+	.string "our sensors cannot read.\p"
+	.string "Do not come any closer.$"
 
 SeafloorCavern_Room1_Text_Grunt2Defeat:
-	.string "So not even that stopped you...$"
+	.string "So even that did not stop you...$"
 
 SeafloorCavern_Room1_Text_Grunt2PostBattle:
-	.string "The deeper we go, the less the ARCHIVE\n"
-	.string "obeys.\p"
-	.string "Perhaps it was never really a tool at\n"
-	.string "all.$"
+	.string "The deeper we go, the less the\n"
+	.string "ARCHIVE obeys.\p"
+	.string "Maybe it was never really a\n"
+	.string "tool.$"
 

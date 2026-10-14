@@ -181,192 +181,168 @@ LavaridgeTown_Gym_1F_EventScript_GymStatue::
 	end
 
 LavaridgeTown_Gym_1F_Text_GymGuideAdvice:
-	.string "Hey, how's it going, CHAMPION- bound\n"
-	.string "{PLAYER}?\p"
-	.string "SERTAO DE DENTRO's GYM LEADER\n"
-	.string "NARA uses FIRE-type POKéMON.\p"
-	.string "Her passion for POKéMON burns stronger\n"
-	.string "and hotter than a volcano.\p"
-	.string "Don't get too close to her--you'll burn!\n"
-	.string "Hose her down with water and then go\l"
-	.string "for it!$"
+	.string "NARA leads CASA DA CINZA GYM.\p"
+	.string "Her FIRE-types punish reckless\n"
+	.string "pressure.\p"
+	.string "Watch the heat. Pick a moment.$"
 
 LavaridgeTown_Gym_1F_Text_GymGuidePostVictory:
-	.string "Yow! That was a scorching-hot battle!$"
+	.string "You handled the heat without\n"
+	.string "letting it handle you.$"
 
 LavaridgeTown_Gym_1F_Text_ColeIntro:
-	.string "Owowowowow!\n"
-	.string "Yikes, it's hot!$"
+	.string "Hot sand hides every step.\p"
+	.string "Can you keep your footing?$"
 
 LavaridgeTown_Gym_1F_Text_ColeDefeat:
-	.string "I'm blinded by sweat in my eyes…$"
+	.string "I lost track of your rhythm.$"
 
 LavaridgeTown_Gym_1F_Text_ColePostBattle:
-	.string "Being buried in hot sand promotes\n"
-	.string "circulation.\p"
-	.string "It's effective for healing pain in\n"
-	.string "your joints.$"
+	.string "Heat makes people rush.\p"
+	.string "That is when mistakes multiply.$"
 
 LavaridgeTown_Gym_1F_Text_AxleIntro:
-	.string "I'm trying to relieve my stress.\n"
-	.string "Don't come along and stress me out!$"
+	.string "Pressure rises fast in here.\p"
+	.string "Let's see what you do with it.$"
 
 LavaridgeTown_Gym_1F_Text_AxleDefeat:
-	.string "I hope NARA flames you good!$"
+	.string "You never let me set the pace.$"
 
 LavaridgeTown_Gym_1F_Text_AxlePostBattle:
-	.string "Haaah… Whew…\p"
-	.string "If you spend too much time buried in\n"
-	.string "hot sand, it tuckers you out…$"
+	.string "NARA says cooling down is part\n"
+	.string "of controlling heat.$"
 
 LavaridgeTown_Gym_B1F_Text_KeeganIntro:
-	.string "You must be getting tired by now.\n"
-	.string "You'd like to rest in the hot sand,\l"
-	.string "wouldn't you?\p"
-	.string "But you should know that maintaining\n"
-	.string "your willpower is an important ability\l"
-	.string "for all TRAINERS.$"
+	.string "The lower chambers hold heat.\p"
+	.string "Fatigue makes choices louder.$"
 
 LavaridgeTown_Gym_B1F_Text_KeeganDefeat:
-	.string "Play with fire, and be burned…$"
+	.string "You stayed clear-headed.$"
 
 LavaridgeTown_Gym_B1F_Text_KeeganPostBattle:
-	.string "Your skill is real…\n"
-	.string "But our LEADER NARA is strong.\p"
-	.string "If you don't watch yourself, you'll be\n"
-	.string "burned seriously.$"
+	.string "NARA never asks us to ignore\n"
+	.string "pain.\p"
+	.string "She asks what it is telling us.$"
 
 LavaridgeTown_Gym_1F_Text_GeraldIntro:
-	.string "Can your POKéMON withstand\n"
-	.string "392-degree heat?$"
+	.string "Steam hides more than distance.\p"
+	.string "Read the room before you move.$"
 
 LavaridgeTown_Gym_1F_Text_GeraldDefeat:
-	.string "It didn't burn hotly enough…$"
+	.string "You read it better than I did.$"
 
 LavaridgeTown_Gym_1F_Text_GeraldPostBattle:
-	.string "The temperature of magma is\n"
-	.string "392 degrees.\p"
-	.string "Your POKéMON beat me, so they should\n"
-	.string "easily survive in magma.$"
+	.string "A gauge is useful.\p"
+	.string "So is noticing what the gauge\n"
+	.string "cannot measure.$"
 
 LavaridgeTown_Gym_1F_Text_DanielleIntro:
-	.string "Um…\n"
-	.string "Okay, I'll battle with you.$"
+	.string "Ash marks where heat has been.\p"
+	.string "Show me what your path leaves.$"
 
 LavaridgeTown_Gym_1F_Text_DanielleDefeat:
-	.string "Oh, but you're too strong.$"
+	.string "That answer was clear enough.$"
 
 LavaridgeTown_Gym_1F_Text_DaniellePostBattle:
-	.string "I'm going to be a pretty and strong\n"
-	.string "TRAINER just like NARA.$"
+	.string "I want NARA's kind of strength.\p"
+	.string "Not louder. Steadier.$"
 
 LavaridgeTown_Gym_B1F_Text_JaceIntro:
-	.string "Come on, get with it!\n"
-	.string "Let's go before my feelings cool!$"
+	.string "A flame can flare in one breath.\p"
+	.string "Control takes longer.$"
 
 LavaridgeTown_Gym_B1F_Text_JaceDefeat:
-	.string "It's so hot, and yet my heart is\n"
-	.string "clutched by ice…$"
+	.string "Mine flared. Yours held.$"
 
 LavaridgeTown_Gym_B1F_Text_JacePostBattle:
-	.string "The way the battling spirit burns\n"
-	.string "within you, you may stand a chance\l"
-	.string "against our LEADER.$"
+	.string "You may be ready for NARA.\p"
+	.string "She notices when people mistake\n"
+	.string "heat for courage.$"
 
 LavaridgeTown_Gym_B1F_Text_JeffIntro:
-	.string "See how the flames blaze wildly?\n"
-	.string "They flare in anticipation of my win!$"
+	.string "Everyone watches the flame.\p"
+	.string "I watch what survives it.$"
 
 LavaridgeTown_Gym_B1F_Text_JeffDefeat:
-	.string "Something didn't go right.$"
+	.string "You left me with ash.$"
 
 LavaridgeTown_Gym_B1F_Text_JeffPostBattle:
-	.string "Well, so what? I say so what?\n"
-	.string "I can walk on hot coals barefoot!\p"
-	.string "…Don't even think about trying it!$"
+	.string "Ash looks empty until you study\n"
+	.string "what is mixed into it.$"
 
 LavaridgeTown_Gym_B1F_Text_EliIntro:
-	.string "As much as I love mountains,\n"
-	.string "I especially love volcanoes.$"
+	.string "Volcanoes build and destroy.\p"
+	.string "Neither fact erases the other.$"
 
 LavaridgeTown_Gym_B1F_Text_EliDefeat:
-	.string "Well, it seems to me I lost without\n"
-	.string "ever being in control.$"
+	.string "I lost control of the slope.$"
 
 LavaridgeTown_Gym_B1F_Text_EliPostBattle:
-	.string "I stay here because I became a fan\n"
-	.string "of NARA's power.\p"
-	.string "Hehehehe.$"
+	.string "NARA taught me not to worship\n"
+	.string "destruction just because it is\n"
+	.string "powerful.$"
 
 LavaridgeTown_Gym_1F_Text_FlanneryIntro:
-	.string "NARA: Ash is what is left after the fire.\n"
-	.string "It is not the end of everything, and we\l"
-	.string "should not pretend nothing burned\l"
-	.string "either.$"
+	.string "NARA: Fire gets all the songs.\p"
+	.string "Ash is what stays after.\p"
+	.string "It records what changed and what\n"
+	.string "was lost.\p"
+	.string "Show me how you handle heat.$"
 
 LavaridgeTown_Gym_1F_Text_FlanneryDefeat:
-	.string "NARA: Ash is what is left after the fire.\n"
-	.string "It is not the end of everything, and we\l"
-	.string "should not pretend nothing burned\l"
-	.string "either.$"
+	.string "NARA: You knew when to press...\n"
+	.string "and when to cool.$"
 
 LavaridgeTown_Gym_1F_Text_ReceivedHeatBadge:
-	.string "{PLAYER} received the ASH BADGE from\n"
-	.string "NARA.$"
+	.string "{PLAYER} received the\n"
+	.string "ASH BADGE from NARA.$"
 
 LavaridgeTown_Gym_1F_Text_ExplainHeatBadgeTakeThis:
-	.string "With the ASH BADGE, POKéMON up to level\n"
-	.string "50 obey, even ones received in a trade.\p"
-	.string "It lets you use STRENGTH outside\n"
-	.string "battle.\p"
-	.string "Take this gift as well!$"
+	.string "With the ASH BADGE, POKéMON\n"
+	.string "up to Lv. 50 will obey.\p"
+	.string "You can also use STRENGTH\n"
+	.string "outside battle.\p"
+	.string "Take this too.$"
 
 LavaridgeTown_Gym_1F_Text_ExplainOverheat:
-	.string "That TM50 contains OVERHEAT.\p"
-	.string "That move inflicts serious damage on\n"
-	.string "the opponent.\p"
-	.string "But it also sharply cuts the SP. ATK\n"
-	.string "of the POKéMON using it. It might not\l"
-	.string "be suitable for longer battles.$"
+	.string "TM50 contains OVERHEAT.\p"
+	.string "It hits hard, then lowers\n"
+	.string "the user's SP. ATK sharply.\p"
+	.string "Power always leaves a cost.$"
 
 LavaridgeTown_Gym_1F_Text_RegisteredFlannery:
 	.string "Registered GYM LEADER NARA\n"
 	.string "in the POKéNAV.$"
 
 LavaridgeTown_Gym_1F_Text_FlanneryPostBattle:
-	.string "NARA: Ash is what is left after the fire.\n"
-	.string "It is not the end of everything, and we\l"
-	.string "should not pretend nothing burned\l"
-	.string "either.$"
+	.string "NARA: Ash isn't failure.\p"
+	.string "It's evidence that something\n"
+	.string "burned.\p"
+	.string "Remember that before anyone\n"
+	.string "calls erasure a clean start.$"
 
 LavaridgeTown_Gym_1F_Text_GymStatue:
-	.string "SERTAO DE DENTRO POKéMON GYM$"
+	.string "CASA DA CINZA GYM\p"
+	.string "LEADER: NARA$"
 
 LavaridgeTown_Gym_1F_Text_GymStatueCertified:
-	.string "SERTAO DE DENTRO POKéMON GYM\p"
+	.string "CASA DA CINZA GYM\p"
 	.string "NARA'S CERTIFIED TRAINERS:\n"
 	.string "{PLAYER}$"
 
 LavaridgeTown_Gym_1F_Text_FlanneryPreRematch:
-	.string "NARA: Ash is what is left after the fire.\n"
-	.string "It is not the end of everything, and we\l"
-	.string "should not pretend nothing burned\l"
-	.string "either.$"
+	.string "NARA: Heat changes with time.\p"
+	.string "So should a good battle. Ready?$"
 
 LavaridgeTown_Gym_1F_Text_FlanneryRematchDefeat:
-	.string "NARA: Ash is what is left after the fire.\n"
-	.string "It is not the end of everything, and we\l"
-	.string "should not pretend nothing burned\l"
-	.string "either.$"
+	.string "NARA: Better control.\p"
+	.string "Same lesson.$"
 
 LavaridgeTown_Gym_1F_Text_FlanneryPostRematch:
-	.string "NARA: Ash is what is left after the fire.\n"
-	.string "It is not the end of everything, and we\l"
-	.string "should not pretend nothing burned\l"
-	.string "either.$"
+	.string "NARA: You knew when to stop\n"
+	.string "feeding the flame.$"
 
 LavaridgeTown_Gym_1F_Text_FlanneryRematchNeedTwoMons:
-	.string "NARA: Ash is what is left after the fire.\n"
-	.string "It is not the end of everything, and we\l"
-	.string "should not pretend nothing burned\l"
-	.string "either.$"
+	.string "NARA: Bring two POKéMON or more.\p"
+	.string "A rematch needs enough room to\n"
+	.string "change.$"

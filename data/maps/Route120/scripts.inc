@@ -360,46 +360,43 @@ Route120_EventScript_Callie::
 	end
 
 Route120_Text_StevenGreeting:
-	.string "MR. BENTO: When a name falls out of\n"
-	.string "people's mouths, I write it down. Not to\l"
-	.string "replace whoever remembers it. To leave\l"
-	.string "a trail.$"
+	.string "MR. BENTO: {PLAYER}.\p"
+	.string "There you are.\p"
+	.string "CIRO came through from\n"
+	.string "MATA DO MEIO.\p"
+	.string "He kept replaying that POKéMON\n"
+	.string "freezing when someone called.\p"
+	.string "He stared at his HORIZON device.\p"
+	.string "For once, he said nothing.\p"
+	.string "Want to see something strange?$"
 
 Route120_Text_StevenIllWaitHere:
-	.string "MR. BENTO: When a name falls out of\n"
-	.string "people's mouths, I write it down. Not to\l"
-	.string "replace whoever remembers it. To leave\l"
-	.string "a trail.$"
+	.string "MR. BENTO: All right. I'll wait.\p"
+	.string "Some things are clearer when\n"
+	.string "you choose to look.$"
 
 Route120_Text_StevenReadyForBattle:
-	.string "The sensors register two old currents\n"
-	.string "under Arauna: one preserves BONDS, the\l"
-	.string "other lets them end. The ARCHIVE tried\l"
-	.string "to turn both into tools.$"
+	.string "MR. BENTO: Ready now?\p"
+	.string "The bridge ahead looks empty,\n"
+	.string "but it isn't.$"
 
 Route120_Text_StevenShowMeYourPower:
-	.string "MR. BENTO: When a name falls out of\n"
-	.string "people's mouths, I write it down. Not to\l"
-	.string "replace whoever remembers it. To leave\l"
-	.string "a trail.$"
+	.string "MR. BENTO: Don't fight the path.\p"
+	.string "Watch what refuses to move.$"
 
 Route120_Text_StevenUsedDevonScope:
-	.string "MR. BENTO: When a name falls out of\n"
-	.string "people's mouths, I write it down. Not to\l"
-	.string "replace whoever remembers it. To leave\l"
-	.string "a trail.$"
+	.string "MR. BENTO used the FIELD SCOPE.$"
 
 Route120_Text_StevenGiveDevonScope:
-	.string "MR. BENTO: When a name falls out of\n"
-	.string "people's mouths, I write it down. Not to\l"
-	.string "replace whoever remembers it. To leave\l"
-	.string "a trail.$"
+	.string "MR. BENTO: Take this.\p"
+	.string "It's a FIELD SCOPE.\p"
+	.string "It reveals what the eye misses.\p"
+	.string "CIRO needs that lesson too.$"
 
 Route120_Text_StevenGoodbye:
-	.string "MR. BENTO: When a name falls out of\n"
-	.string "people's mouths, I write it down. Not to\l"
-	.string "replace whoever remembers it. To leave\l"
-	.string "a trail.$"
+	.string "MR. BENTO: I'm heading east.\p"
+	.string "If CIRO reaches the memorial,\n"
+	.string "listen before choosing a side.$"
 
 Kecleon_Text_SomethingUnseeable:
 	.string "Something unseeable is in the way.$"

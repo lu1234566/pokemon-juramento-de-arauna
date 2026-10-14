@@ -48,7 +48,7 @@ PacifidlogTown_Text_SkyPillarTooScary:
 	.string "that suits me fine.$"
 
 PacifidlogTown_Text_TownSign:
-	.string "CASA DA FOGUEIRA. Stories are repeated\n"
-	.string "here to stay alive, not to stay\l"
-	.string "identical.$"
+	.string "HOUSE OF THE FIRE. Stories are\n"
+	.string "retold here to stay alive, not\n"
+	.string "to remain identical.$"
 
