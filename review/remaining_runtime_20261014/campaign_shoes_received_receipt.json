@@ -1,0 +1,16 @@
+{
+  "rom_sha256": "0cc8a741b0c5af840c45e21d362eccd7577dcead6c52d2af876f15ceb48e4d23",
+  "emulator": "mGBA 0.10.2",
+  "fixture_setup": false,
+  "game_ram_or_rom_writes": false,
+  "source": "normal journey save after winning CIRO and receiving the dex",
+  "expect": "received",
+  "position": [
+    "Route102",
+    49,
+    11
+  ],
+  "received_running_shoes": true,
+  "b_dash": true,
+  "town_state": 4
+}

@@ -1,0 +1,39 @@
+{
+  "rom_sha256": "0cc8a741b0c5af840c45e21d362eccd7577dcead6c52d2af876f15ceb48e4d23",
+  "emulator": "mGBA 0.10.2",
+  "fixture_setup": false,
+  "game_ram_or_rom_writes": false,
+  "actions": 2357,
+  "position": [
+    "LittlerootTown_ProfessorBirchsLab",
+    6,
+    5
+  ],
+  "party": [
+    {
+      "species": 280,
+      "personality": 2031531808,
+      "level": 11,
+      "hp": 21,
+      "max_hp": 34,
+      "moves": [
+        33,
+        52,
+        108,
+        0
+      ],
+      "pp": [
+        32,
+        25,
+        20,
+        0
+      ]
+    }
+  ],
+  "ciro_defeated": true,
+  "lab_state": 5,
+  "dex_received": true,
+  "adventure_started": true,
+  "poke_balls": 5,
+  "normal_save_menu": true
+}

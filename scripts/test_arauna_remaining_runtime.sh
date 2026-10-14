@@ -27,5 +27,8 @@ python3 "$qa/test_uivo.py"
 python3 "$qa/test_audio.py"
 python3 "$qa/test_natural_start.py"
 python3 "$qa/test_natural_campaign.py"
+python3 "$qa/test_campaign_to_dex.py"
+python3 "$qa/test_campaign_shoes.py" --expect received
+python3 "$qa/test_campaign_pampa.py"
 python3 scripts/check_arauna_art_freeze.py
 git diff --exit-code 46d50777a45f8fbf1f7f600516a47873ec4fc804 -- graphics/ data/tilesets/ data/layouts/ sound/

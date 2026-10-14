@@ -1,5 +1,5 @@
 {
-  "rom_sha256": "49b2898fd2677b01dafdf6dce0d9cc049ed9d413f56b172d68c2f74cd59fbac7",
+  "rom_sha256": "0cc8a741b0c5af840c45e21d362eccd7577dcead6c52d2af876f15ceb48e4d23",
   "emulator": "mGBA 0.10.2",
   "fixture_setup": true,
   "cases": [
@@ -9,7 +9,7 @@
       "samples": 144585,
       "sample_rate": 24000,
       "peak": 11342,
-      "rms": 3355.63,
+      "rms": 3355.62,
       "clipped_samples": 0,
       "map": "LittlerootTown",
       "song_id": 611
@@ -19,8 +19,8 @@
       "frames": 360,
       "samples": 144577,
       "sample_rate": 24000,
-      "peak": 13197,
-      "rms": 3612.54,
+      "peak": 13196,
+      "rms": 3612.53,
       "clipped_samples": 0,
       "map": "Route101",
       "song_id": 612
@@ -75,7 +75,7 @@
       "samples": 72266,
       "sample_rate": 24000,
       "peak": 12140,
-      "rms": 3117.82,
+      "rms": 3117.89,
       "clipped_samples": 0,
       "species": "SPECIES_TREECKO",
       "cry_playing_after_clip": false,
@@ -98,8 +98,8 @@
       "frames": 180,
       "samples": 72325,
       "sample_rate": 24000,
-      "peak": 10379,
-      "rms": 3192.61,
+      "peak": 10378,
+      "rms": 3192.43,
       "clipped_samples": 0,
       "species": "SPECIES_MUDKIP",
       "cry_playing_after_clip": false,
@@ -110,8 +110,8 @@
       "frames": 180,
       "samples": 72254,
       "sample_rate": 24000,
-      "peak": 10423,
-      "rms": 3397.46,
+      "peak": 10424,
+      "rms": 3397.53,
       "clipped_samples": 0,
       "species": "SPECIES_DEOXYS",
       "cry_playing_after_clip": false,
@@ -123,7 +123,7 @@
       "samples": 96360,
       "sample_rate": 24000,
       "peak": 10315,
-      "rms": 2189.61,
+      "rms": 2189.74,
       "clipped_samples": 0
     }
   ],

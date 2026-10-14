@@ -1,0 +1,35 @@
+{
+  "rom_sha256": "49b2898fd2677b01dafdf6dce0d9cc049ed9d413f56b172d68c2f74cd59fbac7",
+  "emulator": "mGBA 0.10.2",
+  "fixture_setup": false,
+  "game_ram_or_rom_writes": false,
+  "new_process": true,
+  "ciro_defeated": true,
+  "lab_state": 4,
+  "position": [
+    "Route103",
+    9,
+    3
+  ],
+  "party": [
+    {
+      "species": 280,
+      "personality": 2031531808,
+      "level": 10,
+      "hp": 18,
+      "max_hp": 32,
+      "moves": [
+        33,
+        52,
+        108,
+        0
+      ],
+      "pp": [
+        32,
+        24,
+        20,
+        0
+      ]
+    }
+  ]
+}
