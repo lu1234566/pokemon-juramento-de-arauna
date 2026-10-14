@@ -56,13 +56,14 @@ coisa, a base estava errada.
 |---|---|
 | arquivo | `pokemon-juramento-de-arauna-en_modern.gba` |
 | tamanho | 33 554 432 bytes |
-| CRC32 | `39A94A35` |
-| MD5 | `a5cc9a7391e0ef1d610240eb52871e54` |
-| SHA-1 | `5fdee8a23d55edbd5fb22cbfcb8d7ddf45835d2a` |
-| SHA-256 | `49b2898fd2677b01dafdf6dce0d9cc049ed9d413f56b172d68c2f74cd59fbac7` |
+| CRC32 | `CFEBD897` |
+| MD5 | `fc49992e9dd0d5aabe9c2f53c90333f0` |
+| SHA-1 | `e466b5a65d0be007e0aa9cc8588ee93ff68f4334` |
+| SHA-256 | `0cc8a741b0c5af840c45e21d362eccd7577dcead6c52d2af876f15ceb48e4d23` |
 
 Build da continuação de QA em 14/10/2026, GCC ARM 13.2.1.
-Detalhes e limites em `docs/REMAINING_RUNTIME_QA_20261014.md`.
+Detalhes e limites da campanha em `docs/CAMPAIGN_JOURNEY_QA_20261014.md`.
+Os testes dirigidos anteriores estão em `docs/REMAINING_RUNTIME_QA_20261014.md`.
 
 Estes valores são desta build. Qualquer commit novo muda os três — regere a
 tabela antes de publicar.

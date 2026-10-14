@@ -40,6 +40,7 @@ LittlerootTown_OnTransition:
 	call_if_eq VAR_LITTLEROOT_INTRO_STATE, 2, LittlerootTown_EventScript_MoveMomToMaysDoor
 	call_if_unset FLAG_RESCUED_BIRCH, LittlerootTown_EventScript_SetTwinPos
 	call_if_eq VAR_LITTLEROOT_TOWN_STATE, 3, LittlerootTown_EventScript_SetMomStandingInFrontOfDoorPos
+	call_if_eq VAR_LITTLEROOT_TOWN_STATE, 3, LittlerootTown_EventScript_PrepareShoesAtLabExit
 	call_if_eq VAR_LITTLEROOT_HOUSES_STATE_MAY, 4, LittlerootTown_EventScript_SetExitedHouseAfterLatiSSTicketEvent
 	call_if_eq VAR_LITTLEROOT_HOUSES_STATE_BRENDAN, 4, LittlerootTown_EventScript_SetExitedHouseAfterLatiSSTicketEvent
 	call_if_eq VAR_OLDALE_RIVAL_STATE, 1, LittlerootTown_EventScript_MoveRivalFromOldale
@@ -102,10 +103,38 @@ LittlerootTown_EventScript_SetMomInFrontOfDoorFemale::
 	return
 
 LittlerootTown_OnFrame:
+	map_script_2 VAR_TEMP_3, 1, LittlerootTown_EventScript_GiveShoesAtLabExit
 	map_script_2 VAR_LITTLEROOT_INTRO_STATE, 1, LittlerootTown_EventScript_StepOffTruckMale
 	map_script_2 VAR_LITTLEROOT_INTRO_STATE, 2, LittlerootTown_EventScript_StepOffTruckFemale
 	map_script_2 VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 1, LittlerootTown_EventScript_BeginDexUpgradeScene
 	.2byte 0
+
+@ The relocated lab exits at (20, 22). Its eastern path can bypass every
+@ legacy coordinate trigger near the player's house. Schedule the existing
+@ farewell once when leaving the lab after receiving the POKEDEX.
+LittlerootTown_EventScript_PrepareShoesAtLabExit::
+	goto_if_set FLAG_RECEIVED_RUNNING_SHOES, Common_EventScript_NopReturn
+	getplayerxy VAR_0x8004, VAR_0x8005
+	goto_if_ne VAR_0x8004, 20, Common_EventScript_NopReturn
+	goto_if_eq VAR_0x8005, 22, LittlerootTown_EventScript_ScheduleShoesAtLabExit
+	goto_if_eq VAR_0x8005, 23, LittlerootTown_EventScript_ScheduleShoesAtLabExit
+	return
+
+LittlerootTown_EventScript_ScheduleShoesAtLabExit::
+	setvar VAR_TEMP_3, 1
+	return
+
+LittlerootTown_EventScript_GiveShoesAtLabExit::
+	setvar VAR_TEMP_3, 0
+	lockall
+	setobjectxyperm LOCALID_LITTLEROOT_MOM, 19, 23
+	addobject LOCALID_LITTLEROOT_MOM
+	applymovement LOCALID_LITTLEROOT_MOM, Common_Movement_WalkInPlaceFasterRight
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
+	waitmovement 0
+	msgbox LittlerootTown_Text_WaitPlayer, MSGBOX_DEFAULT
+	call LittlerootTown_EventScript_GiveRunningShoes
+	goto LittlerootTown_EventScript_SetReceivedRunningShoes
 
 LittlerootTown_EventScript_StepOffTruckMale::
 	lockall

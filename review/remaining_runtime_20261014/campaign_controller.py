@@ -1,0 +1,415 @@
+"""Normal campaign: only joypad, reads and export of native flash saves.
+
+No injected calls, fixtures, teleports, writes or forced battle outcomes.
+"""
+import collections
+import re
+import struct
+from runtime import LIB, R, Q, SYMS, ADDRESSES, constant, read, boot, restore, press, metadata, json, Path, Image
+
+INPUTS, BATTLES, BLOCKED = [], [], set()
+CAPTURE_TYPES = set()
+CAPTURE_PARTY_SIZE = 2
+groups = json.loads((R / 'data/maps/map_groups.json').read_text())
+MAP_NAMES = {(g, m): name for g, group in enumerate(groups['group_order']) for m, name in enumerate(groups[group])}
+ORDERS = [tuple(map(int, row)) for row in re.findall(r'SUBSTRUCT_CASE\(\s*\d+,([0-3]),([0-3]),([0-3]),([0-3])\)', (R / 'src/pokemon.c').read_text())]
+
+def position():
+    sb = read('gSaveBlock1Ptr')
+    return MAP_NAMES.get((read(sb + 4, 1), read(sb + 5, 1))), read(sb, 2), read(sb + 2, 2)
+
+def var(name):
+    return read(read('gSaveBlock1Ptr') + 0x139C + 2 * (constant(name) - constant('VARS_START')), 2)
+
+def flag(name):
+    f = constant(name)
+    return bool(read(read('gSaveBlock1Ptr') + 0x1270 + f // 8, 1) & (1 << (f % 8)))
+
+def act(keys=0, count=2, release=12):
+    before = position()
+    press(keys, count, release)
+    INPUTS.append([keys, count, release])
+    return before, position()
+
+def snap(name):
+    raw = Q / ('campaign_' + name + '.rgba')
+    LIB.pixels(str(raw).encode())
+    Image.frombytes('RGBA', (240, 160), raw.read_bytes()).save(Q / ('campaign_' + name + '.png'))
+    raw.unlink()
+
+def party():
+    result = []
+    for i in range(read('gPlayerPartyCount', 1)):
+        p = SYMS['gPlayerParty'] + 100 * i
+        personality, ot = read(p), read(p + 4)
+        data = b''.join(struct.pack('<I', read(p + 32 + j * 4) ^ personality ^ ot) for j in range(12))
+        growth, attacks = [ORDERS[personality % 24][n] * 12 for n in (0, 1)]
+        result.append({'species': int.from_bytes(data[growth:growth+2], 'little'), 'personality': personality,
+                       'level': read(p + 84, 1), 'hp': read(p + 86, 2), 'max_hp': read(p + 88, 2),
+                       'moves': list(struct.unpack('<4H', data[attacks:attacks+8])), 'pp': list(data[attacks+8:attacks+12])})
+    return result
+
+def overworld():
+    return read(SYMS['gMain'] + 4) == SYMS['CB2_Overworld'] | 1
+
+def controller(name, battler=0):
+    return read(SYMS['gBattlerControllerFuncs'] + 4 * battler) in [a | 1 for a in ADDRESSES.get(name, [])]
+
+def active_task(name):
+    funcs = {a | 1 for a in ADDRESSES.get(name, [])}
+    return next((i for i in range(16) if read(SYMS['gTasks'] + i * 40 + 4, 1) and read(SYMS['gTasks'] + i * 40) in funcs), None)
+
+def quantity(item):
+    target = constant(item)
+    key = read(read('gSaveBlock2Ptr') + 0xAC) & 65535
+    total = 0
+    for pocket in range(5):
+        base = SYMS['gBagPockets'] + pocket * 8
+        slots, capacity = read(base), read(base + 4, 1)
+        for i in range(capacity):
+            if read(slots + i * 4, 2) == target:
+                total += read(slots + i * 4 + 2, 2) ^ key
+    return total
+
+def move_score(move, battler=0):
+    attr = SYMS['gBattleMoves'] + 12 * move
+    power, kind, accuracy = read(attr + 1, 1), read(attr + 2, 1), read(attr + 3, 1)
+    if not power:
+        return 0
+    p, e = SYMS['gBattleMons'] + 88 * battler, SYMS['gBattleMons'] + 88
+    physical = kind < constant('TYPE_MYSTERY')
+    ratio = read(p + (2 if physical else 8), 2) / max(1, read(e + (4 if physical else 10), 2))
+    stab = 1.5 if kind in (read(p + 33, 1), read(p + 34, 1)) else 1
+    effectiveness, types = 1, set((read(e + 33, 1), read(e + 34, 1)))
+    table = SYMS['gTypeEffectiveness']
+    for j in range(124):
+        attack, defend, value = [read(table + j * 3 + k, 1) for k in range(3)]
+        if attack == 255:
+            break
+        if attack == kind and defend in types:
+            effectiveness *= value / 10
+    return power * ratio * stab * effectiveness * (accuracy or 100) / 100
+
+def choose_grid(cursor_symbol, target):
+    act(0, 1, 25)
+    cur = read(cursor_symbol, 1)
+    if (cur & 1) != (target & 1):
+        act(16 if target & 1 else 32, 2, 25)
+    cur = read(cursor_symbol, 1)
+    if (cur & 2) != (target & 2):
+        act(128 if target & 2 else 64, 2, 25)
+    act(1, 2, 25)
+
+def choose_party(target):
+    # This task exists during the fade-in too; wait for normal UI input.
+    act(0, 1, 25)
+    current = read(SYMS['gPartyMenu'] + 9, 1)
+    if current == target:
+        act(1, 2, 25)
+    elif current == 0 and target > 0:
+        act(16, 2, 25)
+    elif 0 < current < 6 and target == 0:
+        act(32, 2, 25)
+    else:
+        act(128 if current < target else 64, 2, 25)
+
+def settle(limit=5000):
+    battle = None
+    capturing = False
+    for _ in range(limit):
+        action_battler = next((i for i in (0, 2) if controller('HandleInputChooseAction', i)), None)
+        move_battler = next((i for i in (0, 2) if controller('HandleInputChooseMove', i)), None)
+        if overworld() and not read('sLockFieldControls', 1):
+            if battle is not None:
+                battle |= {'outcome': read('gBattleOutcome', 1), 'end': position(), 'party_after': party()}
+                BATTLES.append(battle)
+                battle = None
+                capturing = False
+            act(0, 1, 30)
+            if overworld() and not read('sLockFieldControls', 1):
+                return
+        elif action_battler is not None:
+            if battle is None:
+                battle = {'trainer': read('gTrainerBattleOpponent_A', 2) if read('gBattleTypeFlags') & 8 else 0, 'type_flags': read('gBattleTypeFlags'), 'start': position(), 'party_before': party()}
+                snap('battle_' + str(battle['trainer']) + '_start')
+            enemy_types = {read(SYMS['gBattleMons'] + 88 + 33, 1), read(SYMS['gBattleMons'] + 88 + 34, 1)}
+            capturing = bool(CAPTURE_TYPES & enemy_types) and not (read('gBattleTypeFlags') & 8) and read('gPlayerPartyCount', 1) < CAPTURE_PARTY_SIZE and quantity('ITEM_POKE_BALL') > 0
+            choose_grid(SYMS['gActionSelectionCursor'] + action_battler, 1 if capturing else 0)
+        elif move_battler is not None:
+            p = SYMS['gBattleMons'] + 88 * move_battler
+            options = [(move_score(read(p + 12 + j * 2, 2), move_battler), j) for j in range(4) if read(p + 12 + j * 2, 2) and read(p + 36 + j, 1)]
+            choose_grid(SYMS['gMoveSelectionCursor'] + move_battler, max(options, default=(0, 0))[1])
+        elif any(controller('HandleInputChooseTarget', i) for i in (0, 2)):
+            act(1, 2, 25)
+        elif capturing and read('gBattleOutcome', 1) == constant('B_OUTCOME_CAUGHT'):
+            # B closes the new dex entry and declines a nickname normally.
+            act(2, 2, 12)
+        elif capturing and read(SYMS['gMain'] + 4) == SYMS['CB2_BagMenuRun'] | 1:
+            if quantity('ITEM_POKE_BALL') == 0:
+                act(2)
+                capturing = False
+            elif read(SYMS['gBagPosition'] + 5, 1) != 1:
+                act(16, 2, 35)
+            else:
+                act(1, 2, 20)
+        elif battle is not None and active_task('Task_HandleChooseMonInput') is not None:
+            field = {read(SYMS['gBattlerPartyIndexes'] + 2 * i, 2) for i in ((0, 2) if read('gBattleTypeFlags') & 1 else (0,))}
+            alive = [i for i, mon in enumerate(party()) if mon['hp'] > 0 and i not in field]
+            if alive:
+                target = alive[0]
+                choose_party(target)
+            else:
+                act(2, 2, 25)
+        else:
+            act(1, 2, 10)
+    snap('settle_timeout')
+    raise RuntimeError(('scene/battle timeout', position(), hex(read(SYMS['gMain'] + 4)), party()))
+
+def start_action(action):
+    assert overworld() and not read('sLockFieldControls', 1)
+    act(8, 2, 40)
+    cur, count = read('sStartMenuCursorPos', 1), read('sNumStartMenuActions', 1)
+    actions = [read(SYMS['sCurrentStartMenuActions'] + i, 1) for i in range(count)]
+    target = actions.index(action)
+    for _ in range((target - cur) % count):
+        act(128, 2, 8)
+    act(1, 2, 80)
+
+def heal():
+    start_action(4)  # ARAUNA
+    for _ in range(100):
+        if active_task('Task_HandleMultichoiceInput') is not None:
+            break
+        act(1)
+    act(0, 1, 20)
+    for _ in range(4):
+        act(128, 2, 8)
+    act(1, 2, 90)
+    for _ in range(400):
+        if active_task('Task_HandleMultichoiceInput') is not None:
+            break
+        act(1)
+    act(0, 1, 20)
+    act(2, 2, 50)
+    assert not read('sLockFieldControls', 1)
+    assert all(p['hp'] == p['max_hp'] for p in party())
+
+def level_to(level, slot=0):
+    start_action(4)
+    for _ in range(3000):
+        if party()[slot]['level'] >= level:
+            break
+        if active_task('Task_HandleChooseMonInput') is not None:
+            choose_party(slot)
+        else:
+            act(1, 2, 10)
+    else:
+        snap('level_timeout')
+        raise RuntimeError(('LEVEL timeout', level, slot, party()))
+    for _ in range(200):
+        act(2, 2, 16)
+        if overworld() and not read('sLockFieldControls', 1):
+            return
+    raise RuntimeError('LEVEL did not return to the overworld')
+
+def objects():
+    out = []
+    for i in range(16):
+        obj = SYMS['gObjectEvents'] + 36 * i
+        if read(obj, 1) & 1 and not (read(obj + 2, 1) & 1):
+            out.append((read(obj + 8, 1), read(obj + 16, 2) - 7, read(obj + 18, 2) - 7))
+    return out
+
+def grid():
+    lay = read('gMapHeader')
+    w, h = read(lay), read(lay + 4)
+    bw, buf = read('gBackupMapLayout'), read(SYMS['gBackupMapLayout'] + 8)
+    attrs = [read(read(lay + n) + 16) for n in (16, 20)]
+    cells = {}
+    for y in range(h):
+        for x in range(w):
+            block = read(buf + 2 * ((y + 7) * bw + x + 7), 2)
+            tile = block & 1023
+            behavior = read(attrs[tile // 512] + 2 * (tile % 512), 2) & 255
+            cells[(x, y)] = block, behavior
+    return w, h, cells
+
+def path_to(target):
+    name, sx, sy = position()
+    _, _, cells = grid()
+    occupied = {(x, y) for _, x, y in objects()}
+    # 0x2B is reflection under a bridge, not surfable water. The installed
+    # Route104 uses it on the walking bridge; retain its actual collision.
+    water = set(range(0x10, 0x16)) | {0x18, 0x19, 0x1A, 0x2A}
+    warps = set(range(0x60, 0x6F))
+    queue = collections.deque([(sx, sy)])
+    previous = {(sx, sy): None}
+    while queue:
+        here = queue.popleft()
+        if here == target:
+            break
+        for dx, dy in ((0, -1), (1, 0), (0, 1), (-1, 0)):
+            nxt = here[0] + dx, here[1] + dy
+            if nxt in previous or nxt not in cells or nxt in occupied or (name, here, nxt) in BLOCKED:
+                continue
+            block, behavior = cells[nxt]
+            ledges = {0x38: (1, 0), 0x39: (-1, 0), 0x3A: (0, -1), 0x3B: (0, 1)}
+            if behavior in ledges:
+                if (dx, dy) != ledges[behavior]:
+                    continue
+                nxt = here[0] + 2 * dx, here[1] + 2 * dy
+                if nxt in previous or nxt not in cells or nxt in occupied or (name, here, nxt) in BLOCKED:
+                    continue
+                block, behavior = cells[nxt]
+            if (((block >> 10) & 3) and not (nxt == target and behavior in warps)) or behavior in water or (behavior in warps and nxt != target):
+                continue
+            previous[nxt] = here
+            queue.append(nxt)
+    if target not in previous:
+        return None
+    path, p = [], target
+    while previous[p] is not None:
+        path.append(p)
+        p = previous[p]
+    return list(reversed(path))
+
+def step(dx, dy):
+    key = {(0, -1): 64, (1, 0): 16, (0, 1): 128, (-1, 0): 32}[(dx, dy)]
+    before = position()
+    for _ in range(12):
+        act(key, 2, 0)
+        if position() != before or not overworld() or read('sLockFieldControls', 1):
+            break
+    act(0, 1, 20)
+    if not overworld() or read('sLockFieldControls', 1):
+        settle()
+    return before, position()
+
+def go(x, y, limit=400):
+    name = position()[0]
+    for _ in range(limit):
+        current = position()
+        if current[0] != name or current[1:] == (x, y):
+            return current
+        route = path_to((x, y))
+        if not route:
+            snap('no_path')
+            raise RuntimeError(('no path', current, (x, y), objects()))
+        nxt = route[0]
+        dx, dy = nxt[0] - current[1], nxt[1] - current[2]
+        before, after = step((dx > 0) - (dx < 0), (dy > 0) - (dy < 0))
+        if after[0] != before[0] or abs(after[1] - nxt[0]) + abs(after[2] - nxt[1]) > 1:
+            return after
+        if after == before:
+            BLOCKED.add((name, current[1:], nxt))
+    raise RuntimeError(('walk limit', position(), (x, y)))
+
+def talk(local_id):
+    local = constant(local_id) if isinstance(local_id, str) else local_id
+    map_name = position()[0]
+    for _ in range(12):
+        if position()[0] != map_name:
+            raise RuntimeError(('map changed before talking', position(), map_name))
+        event = next((o for o in objects() if o[0] == local), None)
+        if event is None:
+            # Object events spawn only within the camera view. Inspect the
+            # saved templates to walk near a distant NPC, without spawning it.
+            base = read('gSaveBlock1Ptr') + 0xC70
+            template = next((base + 24 * i for i in range(64) if read(base + 24 * i, 1) == local), None)
+            if template is None:
+                raise RuntimeError(('NPC template missing', position(), local))
+            x, y = read(template + 4, 2), read(template + 6, 2)
+            neighbors = [(x, y + 1), (x - 1, y), (x, y - 1), (x + 1, y)]
+            routes = [(len(path), cx, cy) for cx, cy in neighbors if (path := path_to((cx, cy))) is not None]
+            if not routes:
+                raise RuntimeError(('distant NPC unreachable', position(), local, (x, y)))
+            _, cx, cy = min(routes)
+            go(cx, cy)
+            continue
+        _, x, y = event
+        options = [(x, y + 1, 64), (x - 1, y, 16), (x, y - 1, 128), (x + 1, y, 32)]
+        _, _, cells = grid()
+        # The engine permits talking across a counter from two tiles away.
+        for cx, cy, key in list(options):
+            if cells.get((cx, cy), (0, 0))[1] == 0x80:
+                options.append((2 * cx - x, 2 * cy - y, key))
+        routes = [(len(p), cx, cy, key) for cx, cy, key in options if (p := path_to((cx, cy))) is not None]
+        if not routes:
+            raise RuntimeError(('NPC unreachable', position(), event))
+        _, cx, cy, key = min(routes)
+        go(cx, cy)
+        if next((o for o in objects() if o[0] == local), None) != event:
+            continue
+        act(key, 1, 8)
+        act(1, 2, 30)
+        settle()
+        return
+    raise RuntimeError('NPC kept moving')
+
+def cross(next_map):
+    name = position()[0]
+    info = json.loads((R / 'data/maps' / name / 'map.json').read_text())
+    destination = json.loads((R / 'data/maps' / next_map / 'map.json').read_text())
+    connection = next((c for c in info['connections'] if c['map'] == destination['id']), None)
+    if connection is None:
+        raise RuntimeError(('not connected', name, next_map))
+    w, h, _ = grid()
+    direction, offset = connection['direction'], connection['offset']
+    layouts = json.loads((R / 'data/layouts/layouts.json').read_text())['layouts']
+    dest = next(l for l in layouts if l['id'] == destination['layout'])
+    delta = {'up': (0, -1), 'down': (0, 1), 'left': (-1, 0), 'right': (1, 0)}[direction]
+    tried = set()
+    for _ in range(20):
+        choices = []
+        for coord in range(w if direction in ('up', 'down') else h):
+            if not 0 <= coord - offset < (dest['width'] if direction in ('up', 'down') else dest['height']):
+                continue
+            edge = (coord, 0 if direction == 'up' else h - 1) if direction in ('up', 'down') else (0 if direction == 'left' else w - 1, coord)
+            if edge not in tried and (p := path_to(edge)) is not None:
+                choices.append((len(p), edge))
+        if not choices:
+            snap('connection_blocked')
+            raise RuntimeError(('connection blocked', position(), next_map))
+        _, edge = min(choices)
+        try:
+            go(*edge)
+        except RuntimeError as error:
+            if isinstance(error.args[0], tuple) and error.args[0][0] == 'no path':
+                # An NPC may enter the camera view and occupy this boundary
+                # after the route was chosen. Try another actual exit tile.
+                tried.add(edge)
+                continue
+            raise
+        if position()[0] == next_map:
+            return position()
+        if position()[1:] == edge:
+            step(*delta)
+            if position()[0] == next_map:
+                return position()
+        tried.add(edge)
+    raise RuntimeError(('connection attempts', position(), next_map))
+
+def normal_save(name):
+    assert overworld() and not read('sLockFieldControls', 1)
+    before = read('gSaveCounter')
+    act(8, 2, 40)
+    cur, count = read('sStartMenuCursorPos', 1), read('sNumStartMenuActions', 1)
+    actions = [read(SYMS['sCurrentStartMenuActions'] + i, 1) for i in range(count)]
+    target = actions.index(6)  # MENU_ACTION_SAVE
+    for _ in range((target - cur) % count):
+        act(128, 2, 8)
+    act(1, 2, 80)
+    for _ in range(300):
+        act(1, 2, 16)
+        if read('gSaveCounter') > before and overworld() and not read('sLockFieldControls', 1):
+            break
+    else:
+        raise RuntimeError('normal SAVE failed')
+    path = Q / ('campaign_' + name + '.sav')
+    assert LIB.exportsave(str(path).encode())
+    snap(name)
+    receipt = metadata() | {'fixture_setup': False, 'game_ram_or_rom_writes': False, 'normal_save_menu': True, 'position': position(), 'party': party(), 'battles': BATTLES, 'inputs': INPUTS,
+                            'story_vars': {n: var(n) for n in ('VAR_BIRCH_LAB_STATE', 'VAR_LITTLEROOT_TOWN_STATE', 'VAR_PETALBURG_GYM_STATE', 'VAR_PETALBURG_CITY_STATE', 'VAR_PETALBURG_WOODS_STATE', 'VAR_RUSTBORO_CITY_STATE')},
+                            'story_flags': {n: flag(n) for n in ('FLAG_DEFEATED_RIVAL_ROUTE103', 'FLAG_SYS_POKEDEX_GET', 'FLAG_RECEIVED_RUNNING_SHOES', 'FLAG_SYS_B_DASH', 'FLAG_BADGE01_GET', 'FLAG_RECEIVED_TM_ROCK_TOMB')}}
+    (Q / ('campaign_' + name + '_receipt.json')).write_text(json.dumps(receipt, indent=2) + '\n')
+    return path

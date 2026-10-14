@@ -1,5 +1,5 @@
 {
-  "rom_sha256": "49b2898fd2677b01dafdf6dce0d9cc049ed9d413f56b172d68c2f74cd59fbac7",
+  "rom_sha256": "0cc8a741b0c5af840c45e21d362eccd7577dcead6c52d2af876f15ceb48e4d23",
   "emulator": "mGBA 0.10.2",
   "fixture_setup": true,
   "case": "underpass_root",

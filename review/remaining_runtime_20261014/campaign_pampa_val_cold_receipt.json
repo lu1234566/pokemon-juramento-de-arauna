@@ -1,0 +1,17 @@
+{
+  "rom_sha256": "0cc8a741b0c5af840c45e21d362eccd7577dcead6c52d2af876f15ceb48e4d23",
+  "emulator": "mGBA 0.10.2",
+  "fixture_setup": false,
+  "game_ram_or_rom_writes": false,
+  "new_process": true,
+  "cold_continue": true,
+  "party_exact": true,
+  "position": [
+    "PetalburgCity_Gym",
+    4,
+    108
+  ],
+  "gym_state": 2,
+  "city_state": 3,
+  "stage": "val"
+}
