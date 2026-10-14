@@ -44,7 +44,7 @@ jobs:
       - name: Install build dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y gcc-arm-none-eabi binutils-arm-none-eabi libpng-dev ripgrep
+          sudo apt-get install -y gcc-arm-none-eabi binutils-arm-none-eabi libpng-dev python3-pil ripgrep
 
       - name: Build English-only Arauna ROM
         run: |
