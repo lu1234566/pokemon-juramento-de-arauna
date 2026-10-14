@@ -1,7 +1,5 @@
 name: Finalize Arauna art-preserved review
 on:
-  pull_request:
-    types: [opened, synchronize, reopened]
   workflow_dispatch:
 permissions:
   contents: write
@@ -10,14 +8,14 @@ concurrency:
   cancel-in-progress: true
 jobs:
   finish:
-    if: github.event_name == 'pull_request' && github.head_ref == 'fix/arauna-ciro-art-preserved-20261014' && github.event.pull_request.head.repo.full_name == github.repository
+    if: github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/fix/arauna-ciro-art-preserved-20261014'
     runs-on: ubuntu-24.04
     timeout-minutes: 25
     steps:
       - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09
         with:
           fetch-depth: 0
-          ref: ${{ github.event.pull_request.head.sha }}
+          ref: ${{ github.sha }}
       - name: Install the canonical compiler and native QA dependencies
         run: |
           sudo apt-get update
@@ -44,7 +42,7 @@ jobs:
       - name: Commit only the approved sheets, QC and external review evidence
         env:
           REVIEW_BRANCH: fix/arauna-ciro-art-preserved-20261014
-          EXPECTED_HEAD: ${{ github.event.pull_request.head.sha }}
+          EXPECTED_HEAD: ${{ github.sha }}
         run: |
           set -euo pipefail
           test "$(git ls-remote origin "refs/heads/$REVIEW_BRANCH" | cut -f1)" = "$EXPECTED_HEAD"
