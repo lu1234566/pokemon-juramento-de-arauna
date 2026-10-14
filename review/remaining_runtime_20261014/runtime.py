@@ -92,6 +92,11 @@ def warp(map_name, x, y):
     else:
         raise ValueError(map_name)
     call("SetWarpDestination", gi, mi, 255, x, y)
+    # SetWarpDestination takes signed 8-bit arguments, although WarpData
+    # stores 16-bit coordinates. Preserve wide-map coordinates in the fixture.
+    if x > 127 or y > 127:
+        write(SYMS["sWarpDestination"] + 4, x, 2)
+        write(SYMS["sWarpDestination"] + 6, y, 2)
     call("WarpIntoMap")
     call("SetMainCallback2", SYMS["CB2_LoadMap"] | 1)
     frames(0, 160)

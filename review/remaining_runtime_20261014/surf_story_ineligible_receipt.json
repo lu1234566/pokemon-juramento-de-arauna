@@ -1,0 +1,8 @@
+{
+  "rom_sha256": "49b2898fd2677b01dafdf6dce0d9cc049ed9d413f56b172d68c2f74cd59fbac7",
+  "emulator": "mGBA 0.10.2",
+  "fixture_setup": true,
+  "case": "surf",
+  "scenario": "ineligible",
+  "no_early_gift": true
+}

@@ -1,5 +1,5 @@
 {
-  "rom_sha256": "5366a77cd57659ace19d3c3b1d7a0437fdfd6f7239a923c1118e5f455a4028b7",
+  "rom_sha256": "49b2898fd2677b01dafdf6dce0d9cc049ed9d413f56b172d68c2f74cd59fbac7",
   "emulator": "mGBA 0.10.2",
   "fixture_setup": true,
   "battle_capture": "Master Ball through actual bag UI",

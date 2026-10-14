@@ -1,7 +1,7 @@
 # Aplicação do plano com arte preservada — 14/10/2026
 
 Continuação de QA, correções adicionais e hash mais recente:
-[REMAINING_RUNTIME_QA_20261014.md](REMAINING_RUNTIME_QA_20261014.md).
+[STORY_GIFT_RUNTIME_QA_20261014.md](STORY_GIFT_RUNTIME_QA_20261014.md).
 As evidências e o hash abaixo pertencem à execução anterior.
 
 Base auditada: bcd1fec0025580406d6a6913fcf3e4e0a7824a59. As correções de código, textos e dados estão em três PRs encadeados; o quarto finaliza os únicos PNGs autorizados e guarda as evidências fora dos assets compilados.

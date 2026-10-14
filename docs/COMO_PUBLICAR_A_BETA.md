@@ -56,10 +56,10 @@ coisa, a base estava errada.
 |---|---|
 | arquivo | `pokemon-juramento-de-arauna-en_modern.gba` |
 | tamanho | 33 554 432 bytes |
-| CRC32 | `0B6CA8A0` |
-| MD5 | `f287b386e5700400c4df5abff785d9e0` |
-| SHA-1 | `4e7df7fcdd24b5a31acebe5a4ee33091b0b6d5d0` |
-| SHA-256 | `5366a77cd57659ace19d3c3b1d7a0437fdfd6f7239a923c1118e5f455a4028b7` |
+| CRC32 | `39A94A35` |
+| MD5 | `a5cc9a7391e0ef1d610240eb52871e54` |
+| SHA-1 | `5fdee8a23d55edbd5fb22cbfcb8d7ddf45835d2a` |
+| SHA-256 | `49b2898fd2677b01dafdf6dce0d9cc049ed9d413f56b172d68c2f74cd59fbac7` |
 
 Build da continuação de QA em 14/10/2026, GCC ARM 13.2.1.
 Detalhes e limites em `docs/REMAINING_RUNTIME_QA_20261014.md`.

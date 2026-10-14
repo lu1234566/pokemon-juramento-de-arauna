@@ -38,15 +38,22 @@ MossdeepCity_StevensHouse_EventScript_StevenGivesDive::
 	waitmovement 0
 	msgbox MossdeepCity_StevensHouse_Text_YouveEarnedHMDive, MSGBOX_DEFAULT
 	giveitem ITEM_HM_DIVE
+	goto_if_eq VAR_RESULT, FALSE, MossdeepCity_StevensHouse_EventScript_DivePending
 	setflag FLAG_RECEIVED_HM_DIVE
 	setflag FLAG_OMIT_DIVE_FROM_STEVEN_LETTER
+	setflag FLAG_HIDE_MOSSDEEP_CITY_SCOTT
+	setflag FLAG_HIDE_SEAFLOOR_CAVERN_ENTRANCE_AQUA_GRUNT
 	msgbox MossdeepCity_StevensHouse_Text_ExplainDive, MSGBOX_DEFAULT
+	goto MossdeepCity_StevensHouse_EventScript_StevenReturn
+
+MossdeepCity_StevensHouse_EventScript_DivePending::
+	msgbox gText_TooBadBagIsFull, MSGBOX_DEFAULT
+	@ Finish the movement once; the ordinary NPC can retry the gift.
+MossdeepCity_StevensHouse_EventScript_StevenReturn::
 	closemessage
 	delay 20
 	applymovement LOCALID_STEVENS_HOUSE_STEVEN, MossdeepCity_StevensHouse_Movement_StevenReturn
 	waitmovement 0
-	setflag FLAG_HIDE_MOSSDEEP_CITY_SCOTT
-	setflag FLAG_HIDE_SEAFLOOR_CAVERN_ENTRANCE_AQUA_GRUNT
 	setvar VAR_STEVENS_HOUSE_STATE, 2
 	releaseall
 	end
@@ -132,7 +139,24 @@ MossdeepCity_StevensHouse_EventScript_RockDisplay::
 	end
 
 MossdeepCity_StevensHouse_EventScript_Steven::
-	msgbox MossdeepCity_StevensHouse_Text_UnderwateCavernBetweenMossdeepSootopolis, MSGBOX_NPC
+	lock
+	faceplayer
+	goto_if_set FLAG_RECEIVED_HM_DIVE, MossdeepCity_StevensHouse_EventScript_DiveClaimed
+	goto_if_ne VAR_STEVENS_HOUSE_STATE, 2, MossdeepCity_StevensHouse_EventScript_DiveClaimed
+	msgbox MossdeepCity_StevensHouse_Text_YouveEarnedHMDive, MSGBOX_DEFAULT
+	giveitem ITEM_HM_DIVE
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	setflag FLAG_RECEIVED_HM_DIVE
+	setflag FLAG_OMIT_DIVE_FROM_STEVEN_LETTER
+	setflag FLAG_HIDE_MOSSDEEP_CITY_SCOTT
+	setflag FLAG_HIDE_SEAFLOOR_CAVERN_ENTRANCE_AQUA_GRUNT
+	msgbox MossdeepCity_StevensHouse_Text_ExplainDive, MSGBOX_DEFAULT
+	release
+	end
+
+MossdeepCity_StevensHouse_EventScript_DiveClaimed::
+	msgbox MossdeepCity_StevensHouse_Text_UnderwateCavernBetweenMossdeepSootopolis, MSGBOX_DEFAULT
+	release
 	end
 
 MossdeepCity_StevensHouse_EventScript_Letter::

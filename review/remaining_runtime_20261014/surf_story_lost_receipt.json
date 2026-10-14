@@ -1,0 +1,11 @@
+{
+  "rom_sha256": "5366a77cd57659ace19d3c3b1d7a0437fdfd6f7239a923c1118e5f455a4028b7",
+  "emulator": "mGBA 0.10.2",
+  "fixture_setup": true,
+  "case": "surf",
+  "expect": "lost",
+  "full_bag_received_flag": true,
+  "synthetic_tm_pocket": true,
+  "retry_and_continue": false,
+  "script": "PetalburgCity_WallysHouse_EventScript_WallysDad"
+}

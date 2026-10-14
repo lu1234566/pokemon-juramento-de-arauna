@@ -16,8 +16,16 @@ done
 for gift in good_rod super_rod pail soot_sack coin_case powder_jar cut rock_smash basement_key; do
     python3 "$qa/test_legacy_gifts.py" "$gift" --expect retry
 done
+for gift in mirage_root mirage_claw underpass_root underpass_claw meteorite surf dive waterfall; do
+    python3 "$qa/test_story_gifts.py" "$gift" --expect retry
+    python3 "$qa/test_story_gifts.py" "$gift" --expect retry --direct
+done
+for gift in surf dive; do
+    python3 "$qa/test_story_gifts.py" "$gift" --expect retry --ineligible
+done
 python3 "$qa/test_uivo.py"
 python3 "$qa/test_audio.py"
 python3 "$qa/test_natural_start.py"
+python3 "$qa/test_natural_campaign.py"
 python3 scripts/check_arauna_art_freeze.py
 git diff --exit-code 46d50777a45f8fbf1f7f600516a47873ec4fc804 -- graphics/ data/tilesets/ data/layouts/ sound/
