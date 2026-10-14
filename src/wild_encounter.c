@@ -863,16 +863,13 @@ bool8 UpdateRepelCounter(void)
 
     // A bought repel keeps ticking down while the toggle is on, but it is not
     // allowed to announce that it wore off -- the effect never actually stops.
-    if (gSaveBlock2Ptr->optionsInfiniteRepel)
-        return FALSE;
-
     steps = VarGet(VAR_REPEL_STEP_COUNT);
 
     if (steps != 0)
     {
         steps--;
         VarSet(VAR_REPEL_STEP_COUNT, steps);
-        if (steps == 0)
+        if (steps == 0 && !gSaveBlock2Ptr->optionsInfiniteRepel)
         {
             ScriptContext_SetupScript(EventScript_RepelWoreOff);
             return TRUE;

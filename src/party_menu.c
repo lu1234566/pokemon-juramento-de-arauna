@@ -1,4 +1,5 @@
 #include "global.h"
+#include "arauna_qol.h"
 #include "malloc.h"
 #include "battle.h"
 #include "battle_anim.h"
@@ -412,6 +413,7 @@ static void Task_HandleStopLearningMoveYesNoInput(u8);
 static void Task_TryLearningNextMoveAfterText(u8);
 static void BufferMonStatsToTaskData(struct Pokemon *, s16 *);
 static void UpdateMonDisplayInfoAfterRareCandy(u8, struct Pokemon *);
+static void ItemUseCB_AraunaLevel(u8 taskId, TaskFunc task);
 static void Task_DisplayLevelUpStatsPg1(u8);
 static void DisplayLevelUpStatsPg1(u8);
 static void Task_DisplayLevelUpStatsPg2(u8);
@@ -5030,7 +5032,8 @@ void ItemUseCB_RareCandy(u8 taskId, TaskFunc task)
     u16 *itemPtr = &gSpecialVar_ItemId;
     bool8 cannotUseEffect;
 
-    if (GetMonData(mon, MON_DATA_LEVEL) != MAX_LEVEL)
+    if (GetMonData(mon, MON_DATA_LEVEL) != MAX_LEVEL
+        && (gItemUseCB != ItemUseCB_AraunaLevel || !AraunaIsAtLevelCap(mon)))
     {
         BufferMonStatsToTaskData(mon, arrayPtr);
         cannotUseEffect = ExecuteTableBasedItemEffect_(gPartyMenu.slotId, *itemPtr, 0);
@@ -5053,7 +5056,8 @@ void ItemUseCB_RareCandy(u8 taskId, TaskFunc task)
         gPartyMenuUseExitCallback = TRUE;
         PlayFanfareByFanfareNum(FANFARE_LEVEL_UP);
         UpdateMonDisplayInfoAfterRareCandy(gPartyMenu.slotId, mon);
-        RemoveBagItem(gSpecialVar_ItemId, 1);
+        if (gItemUseCB != ItemUseCB_AraunaLevel)
+            RemoveBagItem(gSpecialVar_ItemId, 1);
         GetMonNickname(mon, gStringVar1);
         ConvertIntToDecimalStringN(gStringVar2, GetMonData(mon, MON_DATA_LEVEL), STR_CONV_MODE_LEFT_ALIGN, 3);
         StringExpandPlaceholders(gStringVar4, gText_PkmnElevatedToLvVar2);
@@ -5061,6 +5065,38 @@ void ItemUseCB_RareCandy(u8 taskId, TaskFunc task)
         ScheduleBgCopyTilemapToVram(2);
         gTasks[taskId].func = Task_DisplayLevelUpStatsPg1;
     }
+}
+
+static void ItemUseCB_AraunaLevel(u8 taskId, TaskFunc task)
+{
+    ItemUseCB_RareCandy(taskId, task);
+}
+
+static void CB2_ReturnFromAraunaLevel(void)
+{
+    gItemUseCB = ItemUseCB_RareCandy;
+    SetMainCallback2(CB2_ReturnToFieldContinueScriptPlayMapMusic);
+}
+
+static void Task_OpenAraunaLevel(u8 taskId)
+{
+    if (!gPaletteFade.active)
+    {
+        CleanupOverworldWindowsAndTilemaps();
+        gSpecialVar_ItemId = ITEM_RARE_CANDY;
+        gItemUseCB = ItemUseCB_AraunaLevel;
+        InitPartyMenu(PARTY_MENU_TYPE_FIELD, PARTY_LAYOUT_SINGLE, PARTY_ACTION_USE_ITEM,
+                      FALSE, PARTY_MSG_USE_ON_WHICH_MON, Task_HandleChooseMonInput,
+                      CB2_ReturnFromAraunaLevel);
+        DestroyTask(taskId);
+    }
+}
+
+void AraunaChooseMonToLevel(void)
+{
+    LockPlayerFieldControls();
+    FadeScreen(FADE_TO_BLACK, 0);
+    CreateTask(Task_OpenAraunaLevel, 10);
 }
 
 static void UpdateMonDisplayInfoAfterRareCandy(u8 slot, struct Pokemon *mon)
