@@ -1,5 +1,9 @@
 # Continuação da QA com a arte de CIRO preservada
 
+Rodada posterior, hash atual e gifts adicionais:
+[STORY_GIFT_RUNTIME_QA_20261014.md](STORY_GIFT_RUNTIME_QA_20261014.md).
+Os resultados e hash deste relatório pertencem à rodada do PR #236.
+
 Base desta continuação: `46d50777a45f8fbf1f7f600516a47873ec4fc804`, do PR #235.
 Base original da auditoria: `bcd1fec0025580406d6a6913fcf3e4e0a7824a59`.
 

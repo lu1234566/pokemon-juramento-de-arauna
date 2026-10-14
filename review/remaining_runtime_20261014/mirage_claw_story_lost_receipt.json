@@ -1,0 +1,11 @@
+{
+  "rom_sha256": "5366a77cd57659ace19d3c3b1d7a0437fdfd6f7239a923c1118e5f455a4028b7",
+  "emulator": "mGBA 0.10.2",
+  "fixture_setup": true,
+  "case": "mirage_claw",
+  "expect": "lost",
+  "full_bag_received_flag": true,
+  "synthetic_tm_pocket": false,
+  "retry_and_continue": false,
+  "script": "MirageTower_4F_EventScript_ClawFossil"
+}
