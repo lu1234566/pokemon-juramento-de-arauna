@@ -1078,13 +1078,14 @@ Route104_Text_TrainerTipsDoubleBattles:
 	.string "Watch how POKéMON are lined up.$"
 
 Route104_Text_MayWeShouldRegister:
-	.string "CIRO: Your POKéNAV takes contacts now,\n"
-	.string "right?\p"
-	.string "Register mine. I want to compare what\n"
-	.string "we each find on the way.$"
+	.string "CIRO: Your POKéNAV can take\n"
+	.string "contacts now, right?\p"
+	.string "Register mine. I want to compare\n"
+	.string "what we find on the road.$"
 
 Route104_Text_RegisteredMay:
-	.string "CIRO was registered in the POKéNAV.$"
+	.string "CIRO was registered in the\n"
+	.string "POKéNAV.$"
 
 Route104_Text_MayHowsYourPokedex:
 	.string "CIRO: Do not mistake my hurry for a bad\n"
@@ -1127,13 +1128,14 @@ Route104_Text_MayPostBattle:
 	.string "lost.$"
 
 Route104_Text_BrendanWeShouldRegister:
-	.string "CIRO: Your POKéNAV takes contacts now,\n"
-	.string "right?\p"
-	.string "Register mine. I want to compare what\n"
-	.string "we each find on the way.$"
+	.string "CIRO: Your POKéNAV can take\n"
+	.string "contacts now, right?\p"
+	.string "Register mine. I want to compare\n"
+	.string "what we find on the road.$"
 
 Route104_Text_RegisteredBrendan:
-	.string "CIRO was registered in the POKéNAV.$"
+	.string "CIRO was registered in the\n"
+	.string "POKéNAV.$"
 
 Route104_Text_BrendanHowsYourPokedex:
 	.string "CIRO: You keep looking at every scar as\n"

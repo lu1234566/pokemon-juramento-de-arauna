@@ -7,19 +7,18 @@ MagmaHideout_3F_2R_EventScript_Grunt10::
 	end
 
 MagmaHideout_3F_2R_Text_Grunt10Intro:
-	.string "REMEMBRANCER: LUZIA says memory\n"
-	.string "handed back without permission is still\l"
-	.string "better than memory stolen. Not\l"
-	.string "everyone here agrees with that part.$"
+	.string "REMEMBRANCER: RAUL sealed the\n"
+	.string "access.\p"
+	.string "The activation has started.$"
 
 MagmaHideout_3F_2R_Text_Grunt10Defeat:
-	.string "REMEMBRANCER: HORIZON wants a stable\n"
-	.string "Arauna. I want an Arauna that knows why\l"
-	.string "its ruins are there.$"
+	.string "REMEMBRANCER: I should be up\n"
+	.string "there helping.\p"
+	.string "Part of me is relieved I'm not.$"
 
 MagmaHideout_3F_2R_Text_Grunt10PostBattle:
-	.string "REMEMBRANCER: When a story bothers the\n"
-	.string "people in charge, it becomes 'noise',\l"
-	.string "then 'trauma', then it is gone from the\l"
-	.string "record.$"
+	.string "REMEMBRANCER: Don't let HORIZON\n"
+	.string "take the MATRIX.\p"
+	.string "Don't let LUZIA use it without\n"
+	.string "limits either.$"
 

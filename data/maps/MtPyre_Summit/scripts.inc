@@ -422,161 +422,125 @@ MtPyre_Summit_EventScript_Grunt4::
 	end
 
 MtPyre_Summit_Text_Grunt1Intro:
-	.string "MRS. ZILA: Saying a name again brings\n"
-	.string "nobody back. It does stop the silence\l"
-	.string "pretending that person never existed.$"
+	.string "HORIZON: Step away.\p"
+	.string "These plaques are being removed.$"
 
 MtPyre_Summit_Text_Grunt1Defeat:
-	.string "MRS. ZILA: Saying a name again brings\n"
-	.string "nobody back. It does stop the silence\l"
-	.string "pretending that person never existed.$"
+	.string "HORIZON: You don't understand\n"
+	.string "what we're trying to contain.$"
 
 MtPyre_Summit_Text_Grunt1PostBattle:
-	.string "MRS. ZILA: Saying a name again brings\n"
-	.string "nobody back. It does stop the silence\l"
-	.string "pretending that person never existed.$"
+	.string "HORIZON: Scanning them first\n"
+	.string "doesn't make removal right.$"
 
 MtPyre_Summit_Text_Grunt2Intro:
-	.string "The names cut into this stone belong to\n"
-	.string "the dead, to the missing, and to places\l"
-	.string "that stopped existing on the official\l"
-	.string "maps.$"
+	.string "HORIZON: The MEMORIAL is under\n"
+	.string "a security protocol.$"
 
 MtPyre_Summit_Text_Grunt2Defeat:
-	.string "A HORIZON employee photographs every\n"
-	.string "inscription before authorising some of\l"
-	.string "the plaques to be taken away.$"
+	.string "HORIZON: I didn't expect\n"
+	.string "resistance here.$"
 
 MtPyre_Summit_Text_Grunt2PostBattle:
-	.string "MRS. ZILA: Saying a name again brings\n"
-	.string "nobody back. It does stop the silence\l"
-	.string "pretending that person never existed.$"
+	.string "HORIZON: Some orders sound worse\n"
+	.string "when you say them out loud.$"
 
 MtPyre_Summit_Text_Grunt3Intro:
-	.string "A HORIZON employee photographs every\n"
-	.string "inscription before authorising some of\l"
-	.string "the plaques to be taken away.$"
+	.string "HORIZON: These records are going\n"
+	.string "to the CENTRAL ARCHIVE.$"
 
 MtPyre_Summit_Text_Grunt3Defeat:
-	.string "A HORIZON employee photographs every\n"
-	.string "inscription before authorising some of\l"
-	.string "the plaques to be taken away.$"
+	.string "HORIZON: Fine... You won\n"
+	.string "this part of the argument.$"
 
 MtPyre_Summit_Text_Grunt3PostBattle:
-	.string "MRS. ZILA: Saying a name again brings\n"
-	.string "nobody back. It does stop the silence\l"
-	.string "pretending that person never existed.$"
+	.string "HORIZON: Cataloging memory\n"
+	.string "doesn't make it ours.$"
 
 MtPyre_Summit_Text_Grunt4Intro:
-	.string "The names cut into this stone belong to\n"
-	.string "the dead, to the missing, and to places\l"
-	.string "that stopped existing on the official\l"
-	.string "maps.$"
+	.string "HORIZON: Don't touch the plaques\n"
+	.string "marked for removal.$"
 
 MtPyre_Summit_Text_Grunt4Defeat:
-	.string "The names cut into this stone belong to\n"
-	.string "the dead, to the missing, and to places\l"
-	.string "that stopped existing on the official\l"
-	.string "maps.$"
+	.string "HORIZON: This complicates\n"
+	.string "the operation.$"
 
 MtPyre_Summit_Text_Grunt4PostBattle:
-	.string "A HORIZON employee photographs every\n"
-	.string "inscription before authorising some of\l"
-	.string "the plaques to be taken away.$"
+	.string "HORIZON: OTACILIO thinks some\n"
+	.string "wounds need an ending.\p"
+	.string "I'm still thinking about that.$"
 
 MtPyre_Summit_Text_ArchieWeGotTheOrbLetsGo:
-	.string "The sensors register two old currents\n"
-	.string "under Arauna: one preserves BONDS, the\l"
-	.string "other lets them end. The ARCHIVE tried\l"
-	.string "to turn both into tools.$"
+	.string "OTACILIO: We have the\n"
+	.string "RECORD-MATRIX. Recall the team.\p"
+	.string "We're leaving.$"
 
 MtPyre_Summit_Text_BothOrbsTakenMagmaLeftThis:
-	.string "The sensors register two old currents\n"
-	.string "under Arauna: one preserves BONDS, the\l"
-	.string "other lets them end. The ARCHIVE tried\l"
-	.string "to turn both into tools.$"
+	.string "GUARDIAN: HORIZON took one\n"
+	.string "RECORD-MATRIX from here.\p"
+	.string "The REMEMBRANCERS took another.\p"
+	.string "They left this emblem behind.$"
 
 MtPyre_Summit_Text_OrbsHaveBeenTaken:
-	.string "The sensors register two old currents\n"
-	.string "under Arauna: one preserves BONDS, the\l"
-	.string "other lets them end. The ARCHIVE tried\l"
-	.string "to turn both into tools.$"
+	.string "GUARDIAN: Two RECORD-MATRICES\n"
+	.string "were removed from the memorial.\p"
+	.string "One by HORIZON. One by the\n"
+	.string "REMEMBRANCERS.$"
 
 MtPyre_Summit_Text_GroudonKyogreAwakened:
-	.string "The sensors register two old currents\n"
-	.string "under Arauna: one preserves BONDS, the\l"
-	.string "other lets them end. The ARCHIVE tried\l"
-	.string "to turn both into tools.$"
+	.string "GUARDIAN: Both ancient currents\n"
+	.string "reacted to the collapse.\p"
+	.string "What was kept is returning\n"
+	.string "without asking permission.$"
 
 MtPyre_Summit_Text_ThoseTwoMenReturnedOrbs:
-	.string "The sensors register two old currents\n"
-	.string "under Arauna: one preserves BONDS, the\l"
-	.string "other lets them end. The ARCHIVE tried\l"
-	.string "to turn both into tools.$"
+	.string "GUARDIAN: OTACILIO and LUZIA\n"
+	.string "returned both records.\p"
+	.string "Neither left with every answer.$"
 
 MtPyre_Summit_Text_SuperAncientPokemonTaughtUs:
-	.string "The embodiments of the land, sea,\n"
-	.string "and the sky…\p"
-	.string "That is said to be the identities of\n"
-	.string "the super-ancient POKéMON…\p"
-	.string "In the same way that we humans and\n"
-	.string "POKéMON have life, our world, too,\l"
-	.string "is alive…\p"
-	.string "The super-ancient POKéMON have\n"
-	.string "taught us that…$"
+	.string "GUARDIAN: The collapse showed us\n"
+	.string "memory and forgetting become\n"
+	.string "violence when one person chooses\n"
+	.string "for everyone else.$"
 
 MtPyre_Summit_Text_WillYouHearOutMyTale:
-	.string "MEMORIAL DOS NOMES is where we calm the\n"
-	.string "spirits of POKéMON that have passed\l"
-	.string "on…\p"
-	.string "This is a high place where one can see\n"
-	.string "all of ARAUNA…\p"
-	.string "The disembodied spirits of POKéMON\n"
-	.string "must find solace here…\p"
-	.string "Is it coincidence that you are here…\p"
-	.string "Will you hear out my tale? A tale long\n"
-	.string "told in the ARAUNA region?$"
+	.string "GUARDIAN: This is the MEMORIAL\n"
+	.string "NOMES. We repeat stories\n"
+	.string "so silence does not win.\p"
+	.string "Would you like to hear one?$"
 
 MtPyre_Summit_Text_GroudonKyogreTale:
-	.string "The sensors register two old currents\n"
-	.string "under Arauna: one preserves BONDS, the\l"
-	.string "other lets them end. The ARCHIVE tried\l"
-	.string "to turn both into tools.$"
+	.string "GUARDIAN: Long before HORIZON,\n"
+	.string "people spoke of two currents.\p"
+	.string "One pulls memory back.\n"
+	.string "The other lets BONDS end.\p"
+	.string "The OATH exists so no one\n"
+	.string "chooses that alone.$"
 
 MtPyre_Summit_Text_WellThatTooIsFine:
-	.string "I see…\n"
-	.string "Well, that, too, is fine…$"
+	.string "GUARDIAN: That's all right.\p"
+	.string "A story also needs someone\n"
+	.string "willing to hear it.$"
 
 MtPyre_Summit_Text_MaxieSilence:
-	.string "LUZIA: Nobody has the right to choose\n"
-	.string "which memory deserves to die. HORIZON\l"
-	.string "calls censorship treatment because the\l"
-	.string "word sounds cleaner.$"
+	.string "LUZIA: We returned what we never\n"
+	.string "had the right to take.\p"
+	.string "Neither OTACILIO nor I did.$"
 
 MtPyre_Summit_Text_HearTheNewLegendOfHoenn:
-	.string "It is my role to pass on the legends\n"
-	.string "of ARAUNA to future generations.\p"
-	.string "And the crisis that just ended in\n"
-	.string "AGUAS DE M'BOI rewrote a legend…\p"
-	.string "Have you the time to hear the new\n"
-	.string "legend of ARAUNA?$"
+	.string "GUARDIAN: After M'BOI, the story\n"
+	.string "of this memorial changed.\p"
+	.string "Would you hear the new version?$"
 
 MtPyre_Summit_Text_HoennTrioTale:
-	.string "It happened long, long ago…\p"
-	.string "The world was wracked by a ferocious\n"
-	.string "clash between the POKéMON of the land\l"
-	.string "and the POKéMON of the sea…\p"
-	.string "The POKéMON of the land raised\n"
-	.string "mountains and created continents…\p"
-	.string "The POKéMON of the sea raised huge\n"
-	.string "waves and carved out oceans…\p"
-	.string "Their fierce duel raged without end.\p"
-	.string "The world was engulfed in massive\n"
-	.string "fires and vicious storms.\p"
-	.string "It was then that the POKéMON of\n"
-	.string "the sky descended from a storm.\p"
-	.string "The POKéMON, shining a vivid green,\n"
-	.string "becalmed the two enraged POKéMON.\p"
-	.string "Then, its duty done, the green POKéMON\n"
-	.string "flew off into the wild blue yonder…$"
+	.string "GUARDIAN: For years, we said\n"
+	.string "remembering was always just,\n"
+	.string "and forgetting was always loss.\p"
+	.string "M'BOI taught us absolutes can\n"
+	.string "hurt too.\p"
+	.string "The new OATH does not demand\n"
+	.string "every memory or erase all pain.\p"
+	.string "It demands that no one person\n"
+	.string "decide for everyone else.$"
 

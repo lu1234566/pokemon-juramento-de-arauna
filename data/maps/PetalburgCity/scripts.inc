@@ -716,68 +716,63 @@ PetalburgCity_EventScript_GymBoy::
 	end
 
 PetalburgCity_Text_WhereIsWally:
-	.string "VAL: I spent a long time thinking I had\n"
-	.string "to become someone else to keep\l"
-	.string "traveling. All I had to find was my own\l"
-	.string "pace.$"
+	.string "WOMAN: Have you seen VAL?\p"
+	.string "He went to speak with ELIAS.\p"
+	.string "He wants to travel, but crowds\n"
+	.string "still make him nervous.$"
 
 PetalburgCity_Text_AreYouRookieTrainer:
-	.string "Hiya! Are you maybe…\n"
-	.string "A rookie TRAINER?\p"
-	.string "Do you know what POKéMON TRAINERS\n"
-	.string "do when they reach a new town?\p"
-	.string "They first check what kind of GYM\n"
-	.string "is in the town.$"
+	.string "BOY: New TRAINER?\p"
+	.string "When I reach a new town, I check\n"
+	.string "the local GYM first.\p"
+	.string "Want me to show you?$"
 
 PetalburgCity_Text_ThisIsPetalburgGym:
-	.string "See? This is PAMPA DA ESPERA's GYM.$"
+	.string "BOY: This is PAMPA DA ESPERA\n"
+	.string "GYM.$"
 
 PetalburgCity_Text_ThisIsGymSign:
-	.string "This is the GYM's sign. Look for it\n"
-	.string "whenever you're looking for a GYM.$"
+	.string "BOY: Every GYM has a sign like\n"
+	.string "this.\p"
+	.string "It tells you who leads it.$"
 
 PetalburgCity_Text_WaterReflection:
-	.string "My face is reflected in the water.\p"
-	.string "It's a shining grin full of hope…\p"
-	.string "Or it could be a look of somber silence\n"
-	.string "struggling with fear…\p"
-	.string "What do you see reflected in your face?$"
+	.string "The water changes every time\n"
+	.string "the wind crosses it.\p"
+	.string "Still, people keep looking for\n"
+	.string "themselves in the reflection.$"
 
 PetalburgCity_Text_FullPartyExplanation:
-	.string "Let's say you have six POKéMON.\n"
-	.string "If you catch another one…\p"
-	.string "It is automatically sent to a STORAGE\n"
-	.string "BOX over a PC connection.$"
+	.string "A party can hold six POKéMON.\p"
+	.string "If you catch another, it goes\n"
+	.string "to a PC STORAGE BOX.$"
 
 PetalburgCity_Text_GymSign:
-	.string "PAMPA DA ESPERA LEADER: ELIAS\p"
-	.string "Coming back does not erase the road.$"
+	.string "PAMPA DA ESPERA GYM\n"
+	.string "LEADER: ELIAS\p"
+	.string "Returning doesn't erase\n"
+	.string "the road.$"
 
 PetalburgCity_Text_CitySign:
-	.string "PAMPA DA ESPERA. The town lives\n"
-	.string "between departures and returns. Elias\l"
-	.string "knows more about the M'BOI disaster\l"
-	.string "than he will admit.$"
+	.string "PAMPA DA ESPERA\p"
+	.string "A town shaped by departures\n"
+	.string "and returns.\p"
+	.string "ELIAS rarely speaks of M'BOI.$"
 
 PetalburgCity_Text_WallyHouseSign:
-	.string "VAL: I am still afraid. But I know now\n"
-	.string "that courage is not forgetting the\l"
-	.string "fear. It is walking on while you\l"
-	.string "remember it.$"
+	.string "VAL'S HOUSE$"
 
 PetalburgCity_Text_AreYouATrainer:
-	.string "Excuse me!\p"
-	.string "Let me guess, from the way you're\n"
-	.string "dressed, are you a POKéMON TRAINER?$"
+	.string "MR. BENTO: Hm. New TRAINER?\p"
+	.string "You still look like the road\n"
+	.string "hasn't tested you much.$"
 
 PetalburgCity_Text_WellMaybeNot:
-	.string "… … … … … …\p"
-	.string "Well, maybe not.\n"
-	.string "Your clothes aren't all that dirty.\p"
-	.string "You're either a rookie TRAINER,\n"
-	.string "or maybe you're just an ordinary kid.$"
+	.string "MR. BENTO: That's not an insult.\p"
+	.string "Everyone starts before they know\n"
+	.string "what kind of traveler they are.$"
 
 PetalburgCity_Text_ImLookingForTalentedTrainers:
-	.string "I'm roaming the land in search of\n"
-	.string "talented TRAINERS.\p"
-	.string "I'm sorry to have taken your time.$"
+	.string "MR. BENTO: I travel and watch\n"
+	.string "how TRAINERS treat their BONDS.\p"
+	.string "We'll meet again, {PLAYER}.$"

@@ -274,117 +274,109 @@ LavaridgeTown_EventScript_HerbShopSign::
 	end
 
 LavaridgeTown_Text_MayNiceBadgesTakeThis:
-	.string "CIRO: {PLAYER}{KUN}! Long time no see!\p"
-	.string "Oh? While I visited the hot springs, you\n"
-	.string "got the SERTAO DE DENTRO GYM BADGE.\p"
-	.string "You must have collected good POKéMON…\n"
-	.string "No, I believe you raised some.\p"
-	.string "I guess it would be okay for you to have\n"
-	.string "this.$"
+	.string "CIRO: Four BADGES already.\p"
+	.string "You're moving faster than I am.\p"
+	.string "Take these GO-GOGGLES.\p"
+	.string "The desert east of ENCRUZILHADA\n"
+	.string "will stop being a wall.$"
 
 LavaridgeTown_Text_MayExplainGoGogglesChallengeDad:
-	.string "CIRO: Do not mistake my hurry for a bad\n"
-	.string "memory. I remember enough to know I do\l"
-	.string "not want to live shackled to what I\l"
-	.string "lost.$"
+	.string "CIRO: I remember enough to know\n"
+	.string "I won't live inside what I lost.\p"
+	.string "If BOND data can reduce harm,\n"
+	.string "I still want to test it.\p"
+	.string "Your father is waiting in\n"
+	.string "PAMPA DA ESPERA.$"
 
 LavaridgeTown_Text_BrendanNiceBadgesTakeThis:
-	.string "CIRO: {PLAYER}, hey, it's been a while.\n"
-	.string "How's it going?\p"
-	.string "Hmm…\n"
-	.string "That's a decent collection of BADGES.\p"
-	.string "All right, then.\n"
-	.string "You may as well have this.$"
+	.string "CIRO: Four BADGES already.\p"
+	.string "You're moving faster than I am.\p"
+	.string "Take these GO-GOGGLES.\p"
+	.string "The desert east of ENCRUZILHADA\n"
+	.string "will stop being a wall.$"
 
 LavaridgeTown_Text_BrendanExplainGoGogglesChallengeDad:
-	.string "CIRO: If the data is right,\n"
-	.string "DISENCHANTMENT can be treated. I would\l"
-	.string "rather test an answer than turn\l"
-	.string "suffering into tradition.$"
+	.string "CIRO: I remember enough to know\n"
+	.string "I won't live inside what I lost.\p"
+	.string "If BOND data can reduce harm,\n"
+	.string "I still want to test it.\p"
+	.string "Your father is waiting in\n"
+	.string "PAMPA DA ESPERA.$"
 
 LavaridgeTown_Text_HaveEggWillYouTakeIt:
-	.string "I have here an EGG.\p"
-	.string "I'd hoped to hatch it by covering it in\n"
-	.string "hot sand by the hot springs.\l"
-	.string "But that doesn't seem to be enough…\p"
-	.string "I've heard it would be best if it were\n"
-	.string "kept together with POKéMON and\l"
-	.string "carried about.\p"
-	.string "You are a TRAINER, yes?\n"
-	.string "And your POKéMON radiate vitality.\p"
-	.string "So, what say you?\n"
-	.string "Will you take this EGG to hatch?$"
+	.string "This EGG was found near the hot\n"
+	.string "sand.\p"
+	.string "Heat alone won't hatch it.\p"
+	.string "It needs travel, care, and time.\p"
+	.string "Will you carry it with you?$"
 
 LavaridgeTown_Text_HopeYoullWalkPlentyWithEgg:
-	.string "Good! I hope you'll walk plenty with\n"
-	.string "this here EGG!$"
+	.string "Good. Let the road do what heat\n"
+	.string "alone could not.$"
 
 LavaridgeTown_Text_ReceivedTheEgg:
-	.string "{PLAYER} received the EGG.$"
+	.string "{PLAYER} received the\n"
+	.string "EGG.$"
 
 LavaridgeTown_Text_NoRoomForThisEgg:
-	.string "Oh? You've too many POKéMON.\n"
-	.string "There's no room for this EGG…$"
+	.string "Your party is full.\p"
+	.string "Come back when the EGG has room.$"
 
 LavaridgeTown_Text_AsYouWishThen:
-	.string "As you wish, then…\p"
-	.string "If you have a change of heart about\n"
-	.string "hatching this EGG, I will be here.$"
+	.string "As you wish.\p"
+	.string "The EGG can wait until you're\n"
+	.string "ready.$"
 
 LavaridgeTown_Text_EverySoOftenEggFoundAtDayCare:
-	.string "Every so often, an EGG will be found at\n"
-	.string "the POKéMON DAY CARE.\p"
-	.string "Or at least that's how the rumor goes.$"
+	.string "Some EGGs appear at DAY CARE.\p"
+	.string "No one here pretends to know\n"
+	.string "every reason why.$"
 
 LavaridgeTown_Text_HotSpringsNeverRunDry:
-	.string "We draw as much hot water as we need,\n"
-	.string "and yet the hot springs never run dry.\p"
-	.string "Isn't it magical?\p"
-	.string "These hot springs appear near active\n"
-	.string "volcanoes. Veins of water under the\l"
-	.string "ground are heated by magma to well up\l"
-	.string "as hot springs.$"
+	.string "The springs rise through hot\n"
+	.string "volcanic stone.\p"
+	.string "The heat feels endless, but the\n"
+	.string "water still needs care.$"
 
 LavaridgeTown_Text_PokemonNippedBackside:
-	.string "Being buried in this hot sand is…\n"
-	.string "Sigh…\p"
-	.string "So warm and heavenly…\p"
-	.string "Eh? Gyaah! Ouch!\p"
-	.string "A POKéMON nipped my backside!$"
+	.string "Warm sand, quiet steam...\p"
+	.string "OW!\p"
+	.string "Something under the ash has\n"
+	.string "teeth.$"
 
 LavaridgeTown_Text_OhYouLikeHotSprings:
-	.string "Oh, you like hot springs, do you?\p"
-	.string "That's surprising for one as young\n"
-	.string "as you.$"
+	.string "The springs help people rest.\p"
+	.string "Around here, resting is not the\n"
+	.string "same as giving up.$"
 
 LavaridgeTown_Text_BatheInHotSpringsEveryDay:
-	.string "I bathe in the hot springs every day.\p"
-	.string "I want to become a beautiful and strong\n"
-	.string "GYM LEADER like NARA.$"
+	.string "I train here every day.\p"
+	.string "NARA says strength also means\n"
+	.string "knowing when to cool down.$"
 
 LavaridgeTown_Text_IfPokemonInHotSprings:
-	.string "If people put POKéMON in hot springs,\n"
-	.string "it might be seriously strange.\p"
-	.string "Why, it might be an electric bath, or\n"
-	.string "a bubble bath, or even a lava bath…$"
+	.string "Some POKéMON love the springs.\p"
+	.string "Others hate the heat.\p"
+	.string "Watch first. Then decide.$"
 
 LavaridgeTown_Text_HotSpringsClaims:
-	.string "They're claiming that these hot springs\n"
-	.string "are good for calming nervous tension,\l"
-	.string "relieving aching muscles, solving\l"
-	.string "romantic problems, and attracting\l"
-	.string "money…$"
+	.string "People promise the springs cure\n"
+	.string "everything.\p"
+	.string "NARA says relief is real enough\n"
+	.string "without inventing miracles.$"
 
 LavaridgeTown_Text_TownSign:
-	.string "SERTAO DE DENTRO. Ash, heat and\n"
-	.string "abandonment marked this region. Here\l"
-	.string "grief is not treated as weakness.$"
+	.string "CASA DA CINZA\p"
+	.string "Heat, ash and old losses shaped\n"
+	.string "this settlement.\p"
+	.string "Grief is not weakness.$"
 
 LavaridgeTown_Text_GymSign:
-	.string "CASA DA CINZA LEADER: NARA\p"
-	.string "Ash keeps memory too.$"
+	.string "CASA DA CINZA GYM\p"
+	.string "LEADER: NARA\p"
+	.string "Ash also keeps memory.$"
 
 LavaridgeTown_Text_HerbShopSign:
-	.string "POKéMON HERB SHOP\n"
-	.string "“Bitter taste--better cure!”$"
+	.string "ASH HERB SHOP\p"
+	.string "Bitter medicine. Honest cure.$"
 

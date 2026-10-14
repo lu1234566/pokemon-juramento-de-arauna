@@ -118,7 +118,7 @@ LANDMARK_REPLACEMENTS = {
         'static const u8 LandmarkName_MeteorFalls[] = _("RUINAS DA QUEDA");',
     'static const u8 LandmarkName_RusturfTunnel[] = _("GALERIAS SERRA");':
         'static const u8 LandmarkName_RusturfTunnel[] = _("GALERIAS SERRA");',
-    'static const u8 LandmarkName_SafariZoneEntrance[] = _("ENTRADA DA RESERVA");':
+    'static const u8 LandmarkName_SafariZoneEntrance[] = _("PRESERVE ENTRANCE");':
         'static const u8 LandmarkName_SafariZoneEntrance[] = _("ARAUNA PRESERVE");',
     'static const u8 LandmarkName_MtPyre[] = _("MEMORIAL DOS NOMES");':
         'static const u8 LandmarkName_MtPyre[] = _("MEMORIAL NOMES");',
@@ -128,7 +128,7 @@ LANDMARK_REPLACEMENTS = {
         'static const u8 LandmarkName_GraniteCave[] = _("GRUTA DAS VOZES");',
     'static const u8 LandmarkName_SkyPillar[] = _("TORRE JURAMENTO");':
         'static const u8 LandmarkName_SkyPillar[] = _("TORRE JURAMENTO");',
-    'static const u8 LandmarkName_MagmaHideout[] = _("MAGMA HIDEOUT");':
+    'static const u8 LandmarkName_MagmaHideout[] = _("ASH HIDEOUT");':
         'static const u8 LandmarkName_MagmaHideout[] = _("REMEMBRANCERS BASE");',
 }
 

@@ -711,8 +711,8 @@ MtChimney_Text_MachineMakesNoResponse:
 	.string "It makes no response whatsoever.$"
 
 MtChimney_Text_RouteSign:
-	.string "{DOWN_ARROW} JAGGED PATH\n"
-	.string "SERTAO DE DENTRO AHEAD$"
+	.string "SERRA DA CINZA\n"
+	.string "{DOWN_ARROW} CASA DA CINZA$"
 
 MtChimney_Text_ShelbyIntro:
 	.string "I've been to the hot springs and\n"

@@ -54,33 +54,28 @@ Route114_FossilManiacsTunnel_EventScript_PlayerRevivedFossil::
 	end
 
 Route114_FossilManiacsTunnel_Text_LookInDesertForFossils:
-	.string "I'm the FOSSIL MANIAC... I love FOSSILS.\p"
-	.string "Do you want a FOSSIL?\p"
-	.string "The ones here, I found first.\p"
-	.string "If you want to look on your own, try the\n"
-	.string "desert.\p"
-	.string "Stone and sand hide things for a very\n"
+	.string "I'm the FOSSIL MANIAC.\p"
+	.string "I love FOSSILS. Want one?\p"
+	.string "I found these first. If you want\n"
+	.string "your own, try the desert.\p"
+	.string "Stone and sand hide things for a\n"
 	.string "long time.$"
 
 Route114_FossilManiacsTunnel_Text_DevonCorpRevivingFossils:
-	.string "You found a FOSSIL? What a beautiful\n"
-	.string "find...\p"
-	.string "What do you mean to do with it?\p"
-	.string "I hear HORIZON is researching ways to\n"
-	.string "bring POKéMON back from FOSSILS.\p"
-	.string "I'd rather leave mine the way I found\n"
+	.string "You found a FOSSIL? Nice find.\p"
+	.string "HORIZON studies ways to recover\n"
+	.string "POKéMON from FOSSILS.\p"
+	.string "I prefer leaving mine as I found\n"
 	.string "them.$"
 
 Route114_FossilManiacsTunnel_Text_FossilsAreWonderful:
-	.string "FOSSILS are wonderful... I could stare\n"
-	.string "at them all day.$"
+	.string "FOSSILS are wonderful... I could\n"
+	.string "stare at them all day.$"
 
 Route114_FossilManiacsTunnel_Text_NotSafeThatWay:
-	.string "Hey... it isn't safe over there.\p"
-	.string "I was digging when the whole wall came\n"
-	.string "down.\p"
-	.string "There seems to be an enormous cave\n"
-	.string "right below.\p"
-	.string "I left it alone, since I found no\n"
-	.string "FOSSILS down there.$"
+	.string "Hey, that way is not safe.\p"
+	.string "I was digging when the whole\n"
+	.string "wall collapsed.\p"
+	.string "There is a huge cave below. I\n"
+	.string "left it alone. No FOSSILS there.$"
 

@@ -209,106 +209,86 @@ SootopolisCity_Gym_1F_EventScript_GymStatue::
 	end
 
 SootopolisCity_Gym_1F_Text_GymGuideAdvice:
-	.string "Yo! How's it going, CHAMPION-\n"
-	.string "bound {PLAYER}?\p"
-	.string "AGUAS DE M'BOI's GYM LEADER CELINA is\n"
-	.string "a master of WATER-type POKéMON.\p"
-	.string "And, to get to CELINA, an icy floor\n"
-	.string "will hamper your progress…\p"
-	.string "Listen, I'm sorry, but that's all the\n"
-	.string "advice that I have for you.\p"
-	.string "The rest of the way, you have to\n"
-	.string "go for it yourself!$"
+	.string "Guide: AGUAS DE M'BOI GYM tests\n"
+	.string "careful movement over ice.\p"
+	.string "MS. CELINA values judgment more\n"
+	.string "than speed. Watch every step.$"
 
 SootopolisCity_Gym_1F_Text_GymGuidePostVictory:
-	.string "Yow! You've beaten even CELINA, who\n"
-	.string "was supposedly the best in all ARAUNA!\p"
-	.string "Okay! Check out your TRAINER CARD.\p"
-	.string "If you've gotten all the BADGES, you're\n"
-	.string "set for the POKéMON LEAGUE challenge!$"
+	.string "You beat MS. CELINA!\p"
+	.string "With all eight BADGES, OATH ROAD\n"
+	.string "and the ARAUNA LEAGUE await.$"
 
 SootopolisCity_Gym_1F_Text_JuanIntro:
-	.string "MRS. CELINA: Living is learning what to\n"
-	.string "keep and what to let go. Choosing that\l"
-	.string "for someone else is what is not ours to\l"
-	.string "do.$"
+	.string "MS. CELINA: Living means\n"
+	.string "learning what to keep and what\n"
+	.string "to let go.\p"
+	.string "Choosing that for someone else\n"
+	.string "is not ours to do.$"
 
 @ NOTE: This defeat text actually causes a buffer overflow. It's about 50 bytes too long for
 @ the gDisplayedStringBattle buffer that it's put into, and it stomps all over the gBattleTextBuffs
 @ after, as well as the otherwise unused array after that. One wonders if that's the reason for
 @ the existence of that unused array of ints.
 SootopolisCity_Gym_1F_Text_JuanDefeat:
-	.string "MRS. CELINA: Living is learning what to\n"
-	.string "keep and what to let go. Choosing that\l"
-	.string "for someone else is what is not ours to\l"
-	.string "do.$"
+	.string "MS. CELINA: You knew when to\n"
+	.string "hold and when to release.$"
 
 SootopolisCity_Gym_1F_Text_ReceivedRainBadge:
-	.string "{PLAYER} received the SPRING BADGE\n"
-	.string "from MRS. CELINA.$"
+	.string "{PLAYER} received the\n"
+	.string "SPRING BADGE from MS. CELINA.$"
 
 SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis:
-	.string "The SPRING BADGE earns you the full\n"
-	.string "obedience of your POKéMON.\p"
-	.string "It also lets you use WATERFALL to climb\n"
-	.string "falling water.\p"
-	.string "To remember our battle by, take this…$"
+	.string "The SPRING BADGE lets POKéMON\n"
+	.string "use WATERFALL outside battle.\p"
+	.string "Take this too, to remember our\n"
+	.string "battle.$"
 
 SootopolisCity_Gym_1F_Text_ExplainWaterPulse:
-	.string "The TECHNICAL MACHINE I handed you\n"
-	.string "contains WATER PULSE.\p"
-	.string "In use, it will occasionally confuse\n"
-	.string "the target with ultrasonic waves.\p"
-	.string "… … … … … …$"
+	.string "This TM contains WATER PULSE.\p"
+	.string "It may confuse the target with\n"
+	.string "ultrasonic waves.$"
 
 SootopolisCity_Gym_1F_Text_RegisteredJuan:
-	.string "Registered GYM LEADER CELINA\n"
-	.string "in the POKéNAV.$"
+	.string "Registered MS. CELINA in the\n"
+	.string "POKéNAV.$"
 
 SootopolisCity_Gym_1F_Text_JuanPostBattle:
-	.string "MRS. CELINA: Living is learning what to\n"
-	.string "keep and what to let go. Choosing that\l"
-	.string "for someone else is what is not ours to\l"
-	.string "do.$"
+	.string "MS. CELINA: Memory can be kept\n"
+	.string "without becoming a cage.\p"
+	.string "That balance is the lesson.$"
 
 SootopolisCity_Gym_1F_Text_GoGetFortreeBadge:
-	.string "There remains but one BADGE to\n"
-	.string "obtain in ARAUNA.\p"
-	.string "If you wish to challenge the POKéMON\n"
-	.string "LEAGUE, you must obtain the last\l"
-	.string "BADGE from the GYM in MATA DO MEIO.$"
+	.string "One BADGE is still missing.\p"
+	.string "Return after earning the MATA DO\n"
+	.string "MEIO GYM BADGE.$"
 
 SootopolisCity_Gym_1F_Text_GymStatue:
-	.string "AGUAS DE M'BOI POKéMON GYM$"
+	.string "AGUAS DE M'BOI POKéMON GYM\p"
+	.string "LEADER: MS. CELINA$"
 
 SootopolisCity_Gym_1F_Text_GymStatueCertified:
 	.string "AGUAS DE M'BOI POKéMON GYM\p"
-	.string "CELINA'S CERTIFIED TRAINERS:\n"
-	.string "{PLAYER}$"
+	.string "MS. CELINA'S CERTIFIED\n"
+	.string "TRAINERS: {PLAYER}$"
 
 SootopolisCity_Gym_1F_Text_JuanPreRematch:
-	.string "MRS. CELINA: Living is learning what to\n"
-	.string "keep and what to let go. Choosing that\l"
-	.string "for someone else is what is not ours to\l"
-	.string "do.$"
+	.string "MS. CELINA: A lesson changes\n"
+	.string "when you return to it.\p"
+	.string "Show me what changed in you.$"
 
 SootopolisCity_Gym_1F_Text_JuanRematchDefeat:
-	.string "MRS. CELINA: Living is learning what to\n"
-	.string "keep and what to let go. Choosing that\l"
-	.string "for someone else is what is not ours to\l"
-	.string "do.$"
+	.string "MS. CELINA: You found the\n"
+	.string "balance again.$"
 
 SootopolisCity_Gym_1F_Text_JuanPostRematch:
-	.string "MRS. CELINA: Living is learning what to\n"
-	.string "keep and what to let go. Choosing that\l"
-	.string "for someone else is what is not ours to\l"
-	.string "do.$"
+	.string "MS. CELINA: Keep choosing with\n"
+	.string "care. No BADGE can do that for\n"
+	.string "you.$"
 
 SootopolisCity_Gym_1F_Text_JuanRematchNeedTwoMons:
-	.string "MRS. CELINA: Living is learning what to\n"
-	.string "keep and what to let go. Choosing that\l"
-	.string "for someone else is what is not ours to\l"
-	.string "do.$"
+	.string "MS. CELINA: Bring at least two\n"
+	.string "POKéMON for this rematch.$"
 
 
 SootopolisCity_Gym_1F_Text_ThreeMemoriesMissing:

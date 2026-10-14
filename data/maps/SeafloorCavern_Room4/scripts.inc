@@ -12,28 +12,29 @@ SeafloorCavern_Room4_EventScript_Grunt4::
 	end
 
 SeafloorCavern_Room4_Text_Grunt3Intro:
-	.string "Below this point the ARCHIVE stops\n"
-	.string "answering properly.\p"
-	.string "This is no place for the curious.$"
+	.string "Below this point, the ARCHIVE\n"
+	.string "stops responding properly.\p"
+	.string "This is no place for tourists.$"
 
 SeafloorCavern_Room4_Text_Grunt3Defeat:
-	.string "Are you really going on?$"
+	.string "Are you really going to keep\n"
+	.string "going?$"
 
 SeafloorCavern_Room4_Text_Grunt3PostBattle:
-	.string "The recordings here run evacuation,\n"
-	.string "rescue and silence together.\p"
-	.string "Maybe that is why OTACILIO came in\n"
-	.string "person.$"
+	.string "The recordings here mix\n"
+	.string "evacuation, rescue and silence.\p"
+	.string "Maybe that is why OTACILIO came\n"
+	.string "himself.$"
 
 SeafloorCavern_Room4_Text_Grunt4Intro:
-	.string "The core is just ahead. One more step\n"
-	.string "and I stop you.$"
+	.string "The core is just ahead.\p"
+	.string "One more step and I stop you.$"
 
 SeafloorCavern_Room4_Text_Grunt4Defeat:
-	.string "I failed to hold the way.$"
+	.string "I failed to protect the way.$"
 
 SeafloorCavern_Room4_Text_Grunt4PostBattle:
-	.string "The sensors have lost the reading.\p"
-	.string "If something wakes down there, nobody\n"
+	.string "The sensors lost the signal.\p"
+	.string "If something wakes below, no one\n"
 	.string "knows what happens.$"
 

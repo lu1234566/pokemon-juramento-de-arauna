@@ -10,11 +10,13 @@ SootopolisCity_House5_EventScript_Girl::
 	end
 
 SootopolisCity_House5_Text_SootopolisMtPyreConnection:
-	.string "The waters carry memories that do not\n"
-	.string "belong to whoever receives them. People\l"
-	.string "recognize names they have never heard\l"
-	.string "and forget faces they love.$"
+	.string "The water carries memories that\n"
+	.string "do not belong to the receiver.\p"
+	.string "People know names they never\n"
+	.string "heard and forget beloved faces.$"
 
 SootopolisCity_House5_Text_BrotherUsedToStudySea:
-	.string "My big brother used to study the sea.$"
+	.string "My brother studied these waters.\p"
+	.string "He says the currents changed\n"
+	.string "long before the city noticed.$"
 

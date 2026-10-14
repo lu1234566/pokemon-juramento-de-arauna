@@ -27,20 +27,18 @@ MeteorFalls_StevensCave_EventScript_Defeated::
 	end
 
 MeteorFalls_StevensCave_Text_ShouldKnowHowGoodIAmExpectWorst:
-	.string "MR. BENTO: When a name falls out of\n"
-	.string "people's mouths, I write it down. Not to\l"
-	.string "replace whoever remembers it. To leave\l"
-	.string "a trail.$"
+	.string "MR. BENTO: I write what people\n"
+	.string "stop saying aloud.\p"
+	.string "Not to own the memory. To leave\n"
+	.string "a trail others can question.$"
 
 MeteorFalls_StevensCave_Text_StevenDefeat:
-	.string "MR. BENTO: When a name falls out of\n"
-	.string "people's mouths, I write it down. Not to\l"
-	.string "replace whoever remembers it. To leave\l"
-	.string "a trail.$"
+	.string "MR. BENTO: Good. A record should\n"
+	.string "survive being challenged.$"
 
 MeteorFalls_StevensCave_Text_MyPredictionCameTrue:
-	.string "MR. BENTO: When a name falls out of\n"
-	.string "people's mouths, I write it down. Not to\l"
-	.string "replace whoever remembers it. To leave\l"
-	.string "a trail.$"
+	.string "MR. BENTO: Strength matters less\n"
+	.string "than what you do with it.\p"
+	.string "Keep asking who gets to correct\n"
+	.string "the person holding the record.$"
 

@@ -12,36 +12,30 @@ MagmaHideout_3F_1R_EventScript_Grunt16::
 	end
 
 MagmaHideout_3F_1R_Text_Grunt9Intro:
-	.string "REMEMBRANCER: Keeping a name can be\n"
-	.string "resistance. Forcing someone to live it\l"
-	.string "all again can be violence.$"
+	.string "REMEMBRANCER: The RECORD-MATRIX\n"
+	.string "responds to ancient BONDS.$"
 
 MagmaHideout_3F_1R_Text_Grunt9Defeat:
-	.string "REMEMBRANCER: HORIZON wants a stable\n"
-	.string "Arauna. I want an Arauna that knows why\l"
-	.string "its ruins are there.$"
+	.string "REMEMBRANCER:\n"
+	.string "It does not contain memory.\p"
+	.string "It points to where memory was\n"
+	.string "pushed.$"
 
 MagmaHideout_3F_1R_Text_Grunt9PostBattle:
-	.string "REMEMBRANCER: When a story bothers the\n"
-	.string "people in charge, it becomes 'noise',\l"
-	.string "then 'trauma', then it is gone from the\l"
-	.string "record.$"
+	.string "REMEMBRANCER: LUZIA wants to\n"
+	.string "open the current and let it all\n"
+	.string "return.$"
 
 MagmaHideout_3F_1R_Text_Grunt16Intro:
-	.string "REMEMBRANCER: LUZIA says memory\n"
-	.string "handed back without permission is still\l"
-	.string "better than memory stolen. Not\l"
-	.string "everyone here agrees with that part.$"
+	.string "REMEMBRANCER: The sensors are\n"
+	.string "already off the scale.$"
 
 MagmaHideout_3F_1R_Text_Grunt16Defeat:
-	.string "REMEMBRANCER: LUZIA says memory\n"
-	.string "handed back without permission is still\l"
-	.string "better than memory stolen. Not\l"
-	.string "everyone here agrees with that part.$"
+	.string "REMEMBRANCER: This doesn't look\n"
+	.string "like controlled restoration.$"
 
 MagmaHideout_3F_1R_Text_Grunt16PostBattle:
-	.string "REMEMBRANCER: When a story bothers the\n"
-	.string "people in charge, it becomes 'noise',\l"
-	.string "then 'trauma', then it is gone from the\l"
-	.string "record.$"
+	.string "REMEMBRANCER: Reach LUZIA and\n"
+	.string "ask if she still knows justice\n"
+	.string "from urgency.$"
 

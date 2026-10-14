@@ -734,11 +734,15 @@ static const struct MenuAction MultichoiceList_BattleTowerFeelings[] =
     {gText_IWontTell},
 };
 
+static const u8 sText_AraunaMboiCore[] = _("M'BOI CORE");
+static const u8 sText_AraunaMemorial[] = _("MEMORIAL");
+static const u8 sText_AraunaOathTower[] = _("OATH TOWER");
+
 static const struct MenuAction MultichoiceList_WheresRayquaza[] =
 {
-    {gText_CaveOfOrigin},
-    {gText_MtPyre},
-    {gText_SkyPillar},
+    {sText_AraunaMboiCore},
+    {sText_AraunaMemorial},
+    {sText_AraunaOathTower},
     {gText_DontRemember},
 };
 

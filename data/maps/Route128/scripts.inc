@@ -242,52 +242,55 @@ Route128_EventScript_Carlee::
 	end
 
 Route128_Text_ArchieWhatHappened:
-	.string "OTACILIO: I have seen what one memory\n"
-	.string "can do to the person who survives it.\l"
-	.string "The LIVING ARCHIVE exists so that\l"
-	.string "nobody is sentenced to carry the worst\l"
-	.string "night of their life forever.$"
+	.string "OTACILIO: I saw what a memory\n"
+	.string "can do to a survivor.\p"
+	.string "The LIVING ARCHIVE exists so no\n"
+	.string "one must carry the worst night\n"
+	.string "of their life forever.$"
 
 Route128_Text_ArchieIOnlyWanted:
-	.string "OTACILIO: Preserving everything is not\n"
-	.string "compassion. Sometimes it is only\l"
-	.string "forcing a wound to stay open and\l"
-	.string "calling that respect.$"
+	.string "OTACILIO: Preserving everything\n"
+	.string "is not always compassion.\p"
+	.string "Sometimes it only keeps a wound\n"
+	.string "open and calls that respect.$"
 
 Route128_Text_MaxieDoYouUnderstandNow:
 	.string "LUZIA: The problem was never\n"
-	.string "remembering too much. It was letting\l"
-	.string "whoever holds power decide which\l"
-	.string "memories the rest may keep.$"
+	.string "remembering too much.\p"
+	.string "It was letting those in power\n"
+	.string "decide what others may keep.$"
 
 Route128_Text_MaxieResposibilityFallsToArchieAndMe:
-	.string "OTACILIO: I have seen what one memory\n"
-	.string "can do to the person who survives it.\l"
-	.string "The LIVING ARCHIVE exists so that\l"
-	.string "nobody is sentenced to carry the worst\l"
-	.string "night of their life forever.$"
+	.string "OTACILIO: I saw what a memory\n"
+	.string "can do to a survivor.\p"
+	.string "The LIVING ARCHIVE exists so no\n"
+	.string "one must carry the worst night\n"
+	.string "of their life forever.$"
 
 Route128_Text_MaxieThisDefiesBelief:
 	.string "LUZIA: The problem was never\n"
-	.string "remembering too much. It was letting\l"
-	.string "whoever holds power decide which\l"
-	.string "memories the rest may keep.$"
+	.string "remembering too much.\p"
+	.string "It was letting those in power\n"
+	.string "decide what others may keep.$"
 
 Route128_Text_StevenWhatIsHappening:
-	.string "MR. BENTO: When a name falls out of\n"
-	.string "people's mouths, I write it down. Not to\l"
-	.string "replace whoever remembers it. To leave\l"
-	.string "a trail.$"
+	.string "MR. BENTO: When a name leaves\n"
+	.string "people's mouths, I write it\n"
+	.string "down.\p"
+	.string "Not to replace who remembers.\n"
+	.string "Only to leave a trail.$"
 
 Route128_Text_StevenWholeWorldWillDrown:
-	.string "MR. BENTO: When a name falls out of\n"
-	.string "people's mouths, I write it down. Not to\l"
-	.string "replace whoever remembers it. To leave\l"
-	.string "a trail.$"
+	.string "MR. BENTO: When a name leaves\n"
+	.string "people's mouths, I write it\n"
+	.string "down.\p"
+	.string "Not to replace who remembers.\n"
+	.string "Only to leave a trail.$"
 
 Route128_Text_StevenImGoingToSootopolis:
-	.string "MR. BENTO: When a name falls out of\n"
-	.string "people's mouths, I write it down. Not to\l"
-	.string "replace whoever remembers it. To leave\l"
-	.string "a trail.$"
+	.string "MR. BENTO: When a name leaves\n"
+	.string "people's mouths, I write it\n"
+	.string "down.\p"
+	.string "Not to replace who remembers.\n"
+	.string "Only to leave a trail.$"
 
