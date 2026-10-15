@@ -2,6 +2,44 @@
 from campaign_controller import *
 
 
+def lead(slot):
+    """Reorder through Pokemon > SWITCH, waiting for each real UI state."""
+    wanted = party()[slot]['personality']
+    start_action(1)
+    for _ in range(30):
+        if active_task('Task_HandleSelectionMenuInput') is not None:
+            break
+        choose_party(slot)
+    else:
+        raise RuntimeError('Party context menu did not open')
+    internal = read('sPartyMenuInternal')
+    actions = [read(internal + 15 + i, 1) for i in range(read(internal + 23, 1))]
+    target = actions.index(1)  # MENU_SWITCH
+    act(0, 1, 30)
+    task = active_task('Task_HandleSelectionMenuInput')
+    for _ in range(12):
+        if read(SYMS['gTasks'] + 40 * task + 8, 2) == target:
+            break
+        act(128, 2, 25)
+    act(1, 2, 35)
+    for _ in range(30):
+        if party()[0]['personality'] == wanted:
+            break
+        if active_task('Task_HandleChooseMonInput') is not None:
+            # SWITCH moves slotId2; slotId stays on the source Pokemon.
+            act(1 if read(SYMS['gPartyMenu'] + 10, 1) == 0 else 32, 2, 30)
+        else:
+            act(0, 1, 30)
+    else:
+        raise RuntimeError('Party SWITCH did not complete')
+    act(0, 1, 120)
+    for _ in range(20):
+        if overworld() and not read('sLockFieldControls', 1):
+            return
+        act(2, 2, 40)
+    raise RuntimeError('Party menu did not close')
+
+
 def teach_lineage(slot, move, replace_slot):
     """Use ARAUNA > LINEAGE, including the real move-forgetting screen."""
     return _teach_from_menu(slot, move, replace_slot, 2)
@@ -15,6 +53,8 @@ def teach_remember(slot, move, replace_slot):
 def _teach_from_menu(slot, move, replace_slot, menu_choice):
     move = constant(move) if isinstance(move, str) else move
     assert move not in party()[slot]['moves']
+    initial_moves = party()[slot]['moves']
+    expected_slot = initial_moves.index(0) if 0 in initial_moves else replace_slot
     start_action(4)
     for _ in range(100):
         if active_task('Task_HandleMultichoiceInput') is not None:
@@ -61,7 +101,7 @@ def _teach_from_menu(slot, move, replace_slot, menu_choice):
         raise RuntimeError('Move teaching did not finish')
     for _ in range(160):
         if overworld() and not read('sLockFieldControls', 1):
-            assert party()[slot]['moves'][replace_slot] == move
+            assert party()[slot]['moves'][expected_slot] == move
             return
         act(2 if active_task('Task_HandleChooseMonInput') is not None or active_task('Task_HandleMultichoiceInput') is not None else 1, 2, 25)
     raise RuntimeError('Move menu did not return to the field')

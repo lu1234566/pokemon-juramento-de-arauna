@@ -35,6 +35,7 @@ assert party_sha256() == expected['party_sha256']
 assert all(var(n) == value for n, value in expected['story_vars'].items())
 assert all(flag(n) == value for n, value in expected['story_flags'].items())
 assert all(quantity(n) == value for n, value in expected.get('inventory_checks', {}).items())
+assert all(game_stat(n) == value for n, value in expected.get('game_stats', {}).items())
 if 'map_flash_level' in expected:
     assert read(read('gSaveBlock1Ptr') + 0x30, 1) == expected['map_flash_level']
 for mon in expected.get('boxed_mons', []):
@@ -50,6 +51,7 @@ receipt = metadata() | {'fixture_setup': False, 'game_ram_or_rom_writes': False,
                        'cold_continue': True, 'position': position(), 'party': party(),
                        'party_sha256': party_sha256(), 'story_vars': expected['story_vars'],
                        'story_flags': expected['story_flags'], 'inventory_checks': expected.get('inventory_checks', {}),
-                       'map_flash_level': expected.get('map_flash_level'), 'boxed_mons': expected.get('boxed_mons', [])}
+                       'map_flash_level': expected.get('map_flash_level'), 'boxed_mons': expected.get('boxed_mons', []),
+                       'game_stats': expected.get('game_stats', {})}
 (Q / (name + '_cold_receipt.json')).write_text(json.dumps(receipt, indent=2) + '\n')
 print('Normal checkpoint', args.checkpoint, 'separate-process CONTINUE: PASS', flush=True)
