@@ -1,0 +1,153 @@
+{
+  "rom_sha256": "0cc8a741b0c5af840c45e21d362eccd7577dcead6c52d2af876f15ceb48e4d23",
+  "emulator": "mGBA 0.10.2",
+  "fixture_setup": false,
+  "game_ram_or_rom_writes": false,
+  "source_checkpoint": "peeko_rescue_20261015",
+  "new_process": true,
+  "cold_continue": true,
+  "position": [
+    "RusturfTunnel",
+    13,
+    5
+  ],
+  "party": [
+    {
+      "species": 376,
+      "personality": 4061208498,
+      "level": 15,
+      "hp": 45,
+      "max_hp": 45,
+      "moves": [
+        261,
+        71,
+        74,
+        194
+      ],
+      "pp": [
+        15,
+        15,
+        40,
+        5
+      ]
+    },
+    {
+      "species": 280,
+      "personality": 2031531808,
+      "level": 15,
+      "hp": 43,
+      "max_hp": 43,
+      "moves": [
+        179,
+        52,
+        108,
+        172
+      ],
+      "pp": [
+        15,
+        25,
+        20,
+        25
+      ]
+    },
+    {
+      "species": 28,
+      "personality": 933242637,
+      "level": 15,
+      "hp": 39,
+      "max_hp": 39,
+      "moves": [
+        33,
+        71,
+        74,
+        22
+      ],
+      "pp": [
+        35,
+        20,
+        40,
+        10
+      ]
+    },
+    {
+      "species": 28,
+      "personality": 3089231552,
+      "level": 15,
+      "hp": 39,
+      "max_hp": 39,
+      "moves": [
+        33,
+        71,
+        74,
+        22
+      ],
+      "pp": [
+        35,
+        20,
+        40,
+        10
+      ]
+    },
+    {
+      "species": 376,
+      "personality": 2663941647,
+      "level": 15,
+      "hp": 45,
+      "max_hp": 45,
+      "moves": [
+        33,
+        71,
+        74,
+        194
+      ],
+      "pp": [
+        35,
+        20,
+        40,
+        5
+      ]
+    },
+    {
+      "species": 28,
+      "personality": 2926429186,
+      "level": 15,
+      "hp": 40,
+      "max_hp": 40,
+      "moves": [
+        33,
+        71,
+        74,
+        22
+      ],
+      "pp": [
+        35,
+        20,
+        40,
+        10
+      ]
+    }
+  ],
+  "party_sha256": "511d9304fec88fc560ef19a79bc700b3d4e824d2c2c01d8f450d206cf6256bbe",
+  "story_vars": {
+    "VAR_BIRCH_LAB_STATE": 5,
+    "VAR_LITTLEROOT_TOWN_STATE": 4,
+    "VAR_PETALBURG_GYM_STATE": 3,
+    "VAR_PETALBURG_CITY_STATE": 3,
+    "VAR_PETALBURG_WOODS_STATE": 1,
+    "VAR_RUSTBORO_CITY_STATE": 4,
+    "VAR_ROUTE116_STATE": 2,
+    "VAR_RUSTURF_TUNNEL_STATE": 3,
+    "VAR_DEVON_CORP_3F_STATE": 0
+  },
+  "story_flags": {
+    "FLAG_DEFEATED_RIVAL_ROUTE103": true,
+    "FLAG_SYS_POKEDEX_GET": true,
+    "FLAG_RECEIVED_RUNNING_SHOES": true,
+    "FLAG_SYS_B_DASH": true,
+    "FLAG_BADGE01_GET": true,
+    "FLAG_RECEIVED_TM_ROCK_TOMB": true,
+    "FLAG_DEVON_GOODS_STOLEN": false,
+    "FLAG_RECOVERED_DEVON_GOODS": true,
+    "FLAG_RETURNED_DEVON_GOODS": false
+  }
+}

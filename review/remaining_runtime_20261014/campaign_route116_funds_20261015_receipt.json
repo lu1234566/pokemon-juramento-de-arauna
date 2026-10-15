@@ -1,0 +1,278 @@
+{
+  "rom_sha256": "0cc8a741b0c5af840c45e21d362eccd7577dcead6c52d2af876f15ceb48e4d23",
+  "emulator": "mGBA 0.10.2",
+  "fixture_setup": false,
+  "game_ram_or_rom_writes": false,
+  "normal_save_menu": true,
+  "position": [
+    "Route116",
+    35,
+    17
+  ],
+  "party": [
+    {
+      "species": 376,
+      "personality": 4061208498,
+      "level": 15,
+      "hp": 45,
+      "max_hp": 45,
+      "moves": [
+        261,
+        71,
+        74,
+        22
+      ],
+      "pp": [
+        15,
+        20,
+        40,
+        10
+      ]
+    },
+    {
+      "species": 280,
+      "personality": 2031531808,
+      "level": 15,
+      "hp": 43,
+      "max_hp": 43,
+      "moves": [
+        179,
+        52,
+        108,
+        172
+      ],
+      "pp": [
+        15,
+        25,
+        20,
+        25
+      ]
+    },
+    {
+      "species": 28,
+      "personality": 933242637,
+      "level": 15,
+      "hp": 39,
+      "max_hp": 39,
+      "moves": [
+        33,
+        71,
+        74,
+        22
+      ],
+      "pp": [
+        35,
+        20,
+        40,
+        10
+      ]
+    }
+  ],
+  "party_sha256": "a42d46e3bace446bcf9bb02d59d1aa82a08004861f166b5ca23ea54a899d513d",
+  "battles": [
+    {
+      "trainer": 0,
+      "type_flags": 4,
+      "start": [
+        "Route104",
+        15,
+        42
+      ],
+      "outcome": 1,
+      "end": [
+        "Route104",
+        15,
+        42
+      ],
+      "move_choices_count": 2
+    },
+    {
+      "trainer": 0,
+      "type_flags": 4,
+      "start": [
+        "Route104",
+        12,
+        41
+      ],
+      "outcome": 1,
+      "end": [
+        "Route104",
+        12,
+        41
+      ],
+      "move_choices_count": 3
+    },
+    {
+      "trainer": 0,
+      "type_flags": 4,
+      "start": [
+        "PetalburgWoods",
+        9,
+        27
+      ],
+      "outcome": 1,
+      "end": [
+        "PetalburgWoods",
+        9,
+        27
+      ],
+      "move_choices_count": 1
+    },
+    {
+      "trainer": 0,
+      "type_flags": 4,
+      "start": [
+        "PetalburgWoods",
+        10,
+        9
+      ],
+      "outcome": 1,
+      "end": [
+        "PetalburgWoods",
+        10,
+        9
+      ],
+      "move_choices_count": 2
+    },
+    {
+      "trainer": 0,
+      "type_flags": 4,
+      "start": [
+        "Route116",
+        10,
+        7
+      ],
+      "outcome": 1,
+      "end": [
+        "Route116",
+        10,
+        7
+      ],
+      "move_choices_count": 2
+    },
+    {
+      "trainer": 322,
+      "type_flags": 12,
+      "start": [
+        "Route116",
+        11,
+        7
+      ],
+      "outcome": 1,
+      "end": [
+        "Route116",
+        11,
+        7
+      ],
+      "move_choices_count": 7
+    },
+    {
+      "trainer": 0,
+      "type_flags": 4,
+      "start": [
+        "Route116",
+        14,
+        8
+      ],
+      "outcome": 1,
+      "end": [
+        "Route116",
+        14,
+        8
+      ],
+      "move_choices_count": 4
+    },
+    {
+      "trainer": 617,
+      "type_flags": 12,
+      "start": [
+        "Route116",
+        13,
+        16
+      ],
+      "outcome": 1,
+      "end": [
+        "Route116",
+        13,
+        16
+      ],
+      "move_choices_count": 4
+    },
+    {
+      "trainer": 280,
+      "type_flags": 12,
+      "start": [
+        "Route116",
+        21,
+        16
+      ],
+      "outcome": 1,
+      "end": [
+        "Route116",
+        21,
+        16
+      ],
+      "move_choices_count": 7
+    },
+    {
+      "trainer": 0,
+      "type_flags": 4,
+      "start": [
+        "Route116",
+        25,
+        13
+      ],
+      "outcome": 1,
+      "end": [
+        "Route116",
+        25,
+        13
+      ],
+      "move_choices_count": 1
+    },
+    {
+      "trainer": 631,
+      "type_flags": 12,
+      "start": [
+        "Route116",
+        35,
+        17
+      ],
+      "outcome": 1,
+      "end": [
+        "Route116",
+        35,
+        17
+      ],
+      "move_choices_count": 3
+    }
+  ],
+  "joypad_actions": 5245,
+  "input_encoding": "keys/count/release/repeats",
+  "story_vars": {
+    "VAR_BIRCH_LAB_STATE": 5,
+    "VAR_LITTLEROOT_TOWN_STATE": 4,
+    "VAR_PETALBURG_GYM_STATE": 2,
+    "VAR_PETALBURG_CITY_STATE": 3,
+    "VAR_PETALBURG_WOODS_STATE": 1,
+    "VAR_RUSTBORO_CITY_STATE": 0
+  },
+  "story_flags": {
+    "FLAG_DEFEATED_RIVAL_ROUTE103": true,
+    "FLAG_SYS_POKEDEX_GET": true,
+    "FLAG_RECEIVED_RUNNING_SHOES": true,
+    "FLAG_SYS_B_DASH": true,
+    "FLAG_BADGE01_GET": false,
+    "FLAG_RECEIVED_TM_ROCK_TOMB": false
+  },
+  "input_journal": {
+    "file": "campaign_route116_funds_20261015_input_runs.json.gz",
+    "sha256": "877b6580733fd32d9e9c277fe3b68873142db9e3afbe0634ea57ecff161c15dd",
+    "rows": 1117
+  },
+  "battle_trace": {
+    "file": "campaign_route116_funds_20261015_battles.json.gz",
+    "sha256": "0d32bf8b2b510f099290ee4acba5af809d8a3fc405b4c7f8f560a9a88769cbc2",
+    "battles": 11
+  }
+}

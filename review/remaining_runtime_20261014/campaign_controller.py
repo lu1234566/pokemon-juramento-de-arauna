@@ -12,6 +12,10 @@ INPUTS, BATTLES, BLOCKED = [], [], set()
 CAPTURE_TYPES = set()
 CAPTURE_PARTY_SIZE = 2
 CAPTURE_WEAKEN = False
+# Optional test driver policy: return a move slot, or None for the default.
+# Policies inspect battle state and still act exclusively through the joypad.
+MOVE_POLICY = None
+PARTY_POLICY = None
 groups = json.loads((R / 'data/maps/map_groups.json').read_text())
 MAP_NAMES = {(g, m): name for g, group in enumerate(groups['group_order']) for m, name in enumerate(groups[group])}
 ORDERS = [tuple(map(int, row)) for row in re.findall(r'SUBSTRUCT_CASE\(\s*\d+,([0-3]),([0-3]),([0-3]),([0-3])\)', (R / 'src/pokemon.c').read_text())]
@@ -88,7 +92,11 @@ def move_score(move, battler=0):
         fraction = read(p + 40, 2) * 48 // max(1, read(p + 44, 2))
         power = next(value for ceiling, value in ((1, 200), (4, 150), (9, 100), (16, 80), (32, 40), (48, 20)) if fraction <= ceiling)
     physical = kind < constant('TYPE_MYSTERY')
-    ratio = read(p + (2 if physical else 8), 2) / max(1, read(e + (4 if physical else 10), 2))
+    def staged_stat(mon, offset, stage_index):
+        stage = read(mon + 24 + stage_index, 1) - 6
+        multiplier = (2 + stage) / 2 if stage >= 0 else 2 / (2 - stage)
+        return read(mon + offset, 2) * multiplier
+    ratio = staged_stat(p, 2 if physical else 8, 1 if physical else 4) / max(1, staged_stat(e, 4 if physical else 10, 2 if physical else 5))
     stab = 1.5 if kind in (read(p + 33, 1), read(p + 34, 1)) else 1
     effectiveness, types = 1, set((read(e + 33, 1), read(e + 34, 1)))
     table = SYMS['gTypeEffectiveness']
@@ -127,6 +135,7 @@ def settle(limit=5000):
     battle = None
     capturing = False
     weakening = False
+    weaken_turns = 0
     for _ in range(limit):
         action_battler = next((i for i in (0, 2) if controller('HandleInputChooseAction', i)), None)
         move_battler = next((i for i in (0, 2) if controller('HandleInputChooseMove', i)), None)
@@ -141,18 +150,29 @@ def settle(limit=5000):
                 return
         elif action_battler is not None:
             if battle is None:
-                battle = {'trainer': read('gTrainerBattleOpponent_A', 2) if read('gBattleTypeFlags') & 8 else 0, 'type_flags': read('gBattleTypeFlags'), 'start': position(), 'party_before': party()}
+                battle = {'trainer': read('gTrainerBattleOpponent_A', 2) if read('gBattleTypeFlags') & 8 else 0, 'type_flags': read('gBattleTypeFlags'), 'start': position(), 'party_before': party(), 'move_choices': []}
                 snap('battle_' + str(battle['trainer']) + '_start')
             enemy_types = {read(SYMS['gBattleMons'] + 88 + 33, 1), read(SYMS['gBattleMons'] + 88 + 34, 1)}
             balls = sum(quantity(item) for item in ('ITEM_POKE_BALL', 'ITEM_GREAT_BALL', 'ITEM_PREMIER_BALL'))
             capturing = bool(CAPTURE_TYPES & enemy_types) and not (read('gBattleTypeFlags') & 8) and read('gPlayerPartyCount', 1) < CAPTURE_PARTY_SIZE and balls > 0
             e = SYMS['gBattleMons'] + 88
-            weakening = capturing and CAPTURE_WEAKEN and read(e + 40, 2) * 3 > read(e + 44, 2)
+            # Drain moves can keep a grass-vs-grass encounter at full HP.
+            # Bound preparation so the driver eventually throws a ball.
+            weakening = capturing and CAPTURE_WEAKEN and weaken_turns < 4 and read(e + 40, 2) * 3 > read(e + 44, 2)
             choose_grid(SYMS['gActionSelectionCursor'] + action_battler, 1 if capturing and not weakening else 0)
         elif move_battler is not None:
             p = SYMS['gBattleMons'] + 88 * move_battler
             options = [(move_score(read(p + 12 + j * 2, 2), move_battler), j) for j in range(4) if read(p + 12 + j * 2, 2) and read(p + 36 + j, 1)]
-            choose_grid(SYMS['gMoveSelectionCursor'] + move_battler, (min if weakening else max)([o for o in options if o[0] > 0] or [(0, 0)])[1])
+            selected = MOVE_POLICY(move_battler) if MOVE_POLICY and not weakening else None
+            if selected is None:
+                selected = (min if weakening else max)([o for o in options if o[0] > 0] or options or [(0, 0)])[1]
+            assert not options or selected in [slot for _, slot in options], ('unavailable move', selected, options)
+            if battle is not None:
+                enemy = SYMS['gBattleMons'] + 88
+                battle['move_choices'].append({'battler': move_battler, 'species': read(p, 2), 'hp': read(p + 40, 2), 'enemy_species': read(enemy, 2), 'enemy_hp': read(enemy + 40, 2), 'move': read(p + 12 + 2 * selected, 2)})
+            choose_grid(SYMS['gMoveSelectionCursor'] + move_battler, selected)
+            if weakening:
+                weaken_turns += 1
         elif any(controller('HandleInputChooseTarget', i) for i in (0, 2)):
             act(1, 2, 25)
         elif capturing and read('gBattleOutcome', 1) == constant('B_OUTCOME_CAUGHT'):
@@ -173,10 +193,32 @@ def settle(limit=5000):
             order = [read(SYMS['gBattlePartyCurrentOrder'] + i // 2, 1) >> (0 if i & 1 else 4) & 15 for i in range(6)]
             alive = [i for i, mon in enumerate(party()) if mon['hp'] > 0 and order[i] not in field]
             if alive:
-                target = alive[0]
+                target = PARTY_POLICY(alive) if PARTY_POLICY else alive[0]
+                assert target in alive, ('unavailable party slot', target, alive)
                 choose_party(target)
             else:
                 act(2, 2, 25)
+        elif read(SYMS['gMain'] + 4) == SYMS['CB2_Pokenav'] | 1 and position()[0] == 'RustboroCity' and var('VAR_RUSTBORO_CITY_STATE') == 6:
+            resources = read('gPokenavResources')
+            mode = read(resources + 8, 2)
+            # PokenavResources.substructPtrs[MAIN_MENU_HANDLER = 1].
+            menu = read(resources + 20)
+            if mode == 1 and menu and read(menu + 12) == SYMS['HandleMainMenuInputTutorial'] | 1:
+                cursor = read(menu + 2, 2)
+                act(128 if cursor < 2 else 64 if cursor > 2 else 1, 2, 25)
+            else:
+                # Ready: select Mr Stone and Call. After the call: close the
+                # message, trainer list and main menu with ordinary B input.
+                act(2 if mode == 2 else 1, 2, 25)
+        elif (task := active_task('Task_HandleMultichoiceInput')) is not None and read(SYMS['gTasks'] + task * 40 + 8 + 2 * 7, 2) == constant('MULTI_FORCED_START_MENU'):
+            # Devon's tutorial requires selecting POKENAV in its fixed menu.
+            # Repeated A would continually reopen its explanatory dialogue.
+            act(0, 1, 25)
+            for _ in range(7):
+                act(64, 2, 12)
+            for _ in range(3):
+                act(128, 2, 12)
+            act(1, 2, 60)
         else:
             act(1, 2, 10)
     snap('settle_timeout')
@@ -433,7 +475,8 @@ def normal_save(name):
             runs.append([keys, count, release, 1])
     receipt = metadata() | {'fixture_setup': False, 'game_ram_or_rom_writes': False, 'normal_save_menu': True, 'position': position(), 'party': party(), 'party_sha256': party_sha256(), 'battles': BATTLES,
                             'joypad_actions': len(INPUTS), 'input_encoding': 'keys/count/release/repeats', 'input_runs': runs,
-                            'story_vars': {n: var(n) for n in ('VAR_BIRCH_LAB_STATE', 'VAR_LITTLEROOT_TOWN_STATE', 'VAR_PETALBURG_GYM_STATE', 'VAR_PETALBURG_CITY_STATE', 'VAR_PETALBURG_WOODS_STATE', 'VAR_RUSTBORO_CITY_STATE')},
-                            'story_flags': {n: flag(n) for n in ('FLAG_DEFEATED_RIVAL_ROUTE103', 'FLAG_SYS_POKEDEX_GET', 'FLAG_RECEIVED_RUNNING_SHOES', 'FLAG_SYS_B_DASH', 'FLAG_BADGE01_GET', 'FLAG_RECEIVED_TM_ROCK_TOMB')}}
+                            'story_vars': {n: var(n) for n in ('VAR_BIRCH_LAB_STATE', 'VAR_LITTLEROOT_TOWN_STATE', 'VAR_PETALBURG_GYM_STATE', 'VAR_PETALBURG_CITY_STATE', 'VAR_PETALBURG_WOODS_STATE', 'VAR_RUSTBORO_CITY_STATE', 'VAR_ROUTE116_STATE', 'VAR_RUSTURF_TUNNEL_STATE', 'VAR_DEVON_CORP_3F_STATE')},
+                            'story_flags': {n: flag(n) for n in ('FLAG_DEFEATED_RIVAL_ROUTE103', 'FLAG_SYS_POKEDEX_GET', 'FLAG_RECEIVED_RUNNING_SHOES', 'FLAG_SYS_B_DASH', 'FLAG_BADGE01_GET', 'FLAG_RECEIVED_TM_ROCK_TOMB', 'FLAG_DEVON_GOODS_STOLEN', 'FLAG_RECOVERED_DEVON_GOODS', 'FLAG_RETURNED_DEVON_GOODS', 'FLAG_SYS_POKENAV_GET', 'FLAG_HAS_MATCH_CALL')},
+                            'inventory_checks': {n: quantity(n) for n in ('ITEM_TM_ROCK_TOMB', 'ITEM_DEVON_GOODS', 'ITEM_LETTER', 'ITEM_POKE_BALL')}}
     (Q / ('campaign_' + name + '_receipt.json')).write_text(json.dumps(receipt, indent=2) + '\n')
     return path

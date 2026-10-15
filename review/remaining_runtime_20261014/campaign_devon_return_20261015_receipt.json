@@ -1,0 +1,603 @@
+{
+  "rom_sha256": "0cc8a741b0c5af840c45e21d362eccd7577dcead6c52d2af876f15ceb48e4d23",
+  "emulator": "mGBA 0.10.2",
+  "fixture_setup": false,
+  "game_ram_or_rom_writes": false,
+  "normal_save_menu": true,
+  "position": [
+    "RustboroCity_DevonCorp_3F",
+    14,
+    5
+  ],
+  "party": [
+    {
+      "species": 376,
+      "personality": 4061208498,
+      "level": 15,
+      "hp": 45,
+      "max_hp": 45,
+      "moves": [
+        261,
+        71,
+        74,
+        194
+      ],
+      "pp": [
+        15,
+        20,
+        40,
+        5
+      ]
+    },
+    {
+      "species": 280,
+      "personality": 2031531808,
+      "level": 15,
+      "hp": 43,
+      "max_hp": 43,
+      "moves": [
+        179,
+        52,
+        108,
+        172
+      ],
+      "pp": [
+        15,
+        25,
+        20,
+        25
+      ]
+    },
+    {
+      "species": 28,
+      "personality": 933242637,
+      "level": 15,
+      "hp": 39,
+      "max_hp": 39,
+      "moves": [
+        33,
+        71,
+        74,
+        22
+      ],
+      "pp": [
+        35,
+        20,
+        40,
+        10
+      ]
+    },
+    {
+      "species": 28,
+      "personality": 3089231552,
+      "level": 15,
+      "hp": 39,
+      "max_hp": 39,
+      "moves": [
+        33,
+        71,
+        74,
+        22
+      ],
+      "pp": [
+        35,
+        20,
+        40,
+        10
+      ]
+    },
+    {
+      "species": 376,
+      "personality": 2663941647,
+      "level": 15,
+      "hp": 45,
+      "max_hp": 45,
+      "moves": [
+        33,
+        71,
+        74,
+        194
+      ],
+      "pp": [
+        35,
+        20,
+        40,
+        5
+      ]
+    },
+    {
+      "species": 28,
+      "personality": 2926429186,
+      "level": 15,
+      "hp": 40,
+      "max_hp": 40,
+      "moves": [
+        33,
+        71,
+        74,
+        22
+      ],
+      "pp": [
+        35,
+        20,
+        40,
+        10
+      ]
+    }
+  ],
+  "party_sha256": "4857b3aeb8e6f7488e8c0e078f77c4d5a28068f119784a16243f5a8674f158ea",
+  "battles": [
+    {
+      "trainer": 0,
+      "type_flags": 4,
+      "start": [
+        "PetalburgWoods",
+        23,
+        34
+      ],
+      "outcome": 1,
+      "end": [
+        "PetalburgWoods",
+        23,
+        34
+      ],
+      "move_choices_count": 7
+    },
+    {
+      "trainer": 0,
+      "type_flags": 4,
+      "start": [
+        "PetalburgWoods",
+        21,
+        35
+      ],
+      "outcome": 1,
+      "end": [
+        "PetalburgWoods",
+        21,
+        35
+      ],
+      "move_choices_count": 1
+    },
+    {
+      "trainer": 0,
+      "type_flags": 4,
+      "start": [
+        "PetalburgWoods",
+        22,
+        35
+      ],
+      "outcome": 7,
+      "end": [
+        "PetalburgWoods",
+        22,
+        35
+      ],
+      "move_choices_count": 2
+    },
+    {
+      "trainer": 0,
+      "type_flags": 4,
+      "start": [
+        "PetalburgWoods",
+        21,
+        35
+      ],
+      "outcome": 1,
+      "end": [
+        "PetalburgWoods",
+        21,
+        35
+      ],
+      "move_choices_count": 1
+    },
+    {
+      "trainer": 0,
+      "type_flags": 4,
+      "start": [
+        "PetalburgWoods",
+        21,
+        34
+      ],
+      "outcome": 1,
+      "end": [
+        "PetalburgWoods",
+        21,
+        34
+      ],
+      "move_choices_count": 1
+    },
+    {
+      "trainer": 0,
+      "type_flags": 4,
+      "start": [
+        "PetalburgWoods",
+        22,
+        34
+      ],
+      "outcome": 1,
+      "end": [
+        "PetalburgWoods",
+        22,
+        34
+      ],
+      "move_choices_count": 1
+    },
+    {
+      "trainer": 0,
+      "type_flags": 4,
+      "start": [
+        "PetalburgWoods",
+        21,
+        35
+      ],
+      "outcome": 1,
+      "end": [
+        "PetalburgWoods",
+        21,
+        35
+      ],
+      "move_choices_count": 1
+    },
+    {
+      "trainer": 0,
+      "type_flags": 4,
+      "start": [
+        "PetalburgWoods",
+        22,
+        34
+      ],
+      "outcome": 1,
+      "end": [
+        "PetalburgWoods",
+        22,
+        34
+      ],
+      "move_choices_count": 2
+    },
+    {
+      "trainer": 0,
+      "type_flags": 4,
+      "start": [
+        "PetalburgWoods",
+        23,
+        34
+      ],
+      "outcome": 1,
+      "end": [
+        "PetalburgWoods",
+        23,
+        34
+      ],
+      "move_choices_count": 1
+    },
+    {
+      "trainer": 0,
+      "type_flags": 4,
+      "start": [
+        "PetalburgWoods",
+        23,
+        35
+      ],
+      "outcome": 1,
+      "end": [
+        "PetalburgWoods",
+        23,
+        35
+      ],
+      "move_choices_count": 3
+    },
+    {
+      "trainer": 0,
+      "type_flags": 4,
+      "start": [
+        "PetalburgWoods",
+        24,
+        35
+      ],
+      "outcome": 1,
+      "end": [
+        "PetalburgWoods",
+        24,
+        35
+      ],
+      "move_choices_count": 1
+    },
+    {
+      "trainer": 0,
+      "type_flags": 4,
+      "start": [
+        "PetalburgWoods",
+        22,
+        34
+      ],
+      "outcome": 1,
+      "end": [
+        "PetalburgWoods",
+        22,
+        34
+      ],
+      "move_choices_count": 1
+    },
+    {
+      "trainer": 0,
+      "type_flags": 4,
+      "start": [
+        "PetalburgWoods",
+        23,
+        34
+      ],
+      "outcome": 7,
+      "end": [
+        "PetalburgWoods",
+        23,
+        34
+      ],
+      "move_choices_count": 2
+    },
+    {
+      "trainer": 0,
+      "type_flags": 4,
+      "start": [
+        "PetalburgWoods",
+        24,
+        34
+      ],
+      "outcome": 1,
+      "end": [
+        "PetalburgWoods",
+        24,
+        34
+      ],
+      "move_choices_count": 1
+    },
+    {
+      "trainer": 0,
+      "type_flags": 4,
+      "start": [
+        "PetalburgWoods",
+        22,
+        34
+      ],
+      "outcome": 1,
+      "end": [
+        "PetalburgWoods",
+        22,
+        34
+      ],
+      "move_choices_count": 1
+    },
+    {
+      "trainer": 0,
+      "type_flags": 4,
+      "start": [
+        "PetalburgWoods",
+        23,
+        34
+      ],
+      "outcome": 7,
+      "end": [
+        "PetalburgWoods",
+        23,
+        34
+      ],
+      "move_choices_count": 2
+    },
+    {
+      "trainer": 0,
+      "type_flags": 4,
+      "start": [
+        "PetalburgWoods",
+        7,
+        9
+      ],
+      "outcome": 1,
+      "end": [
+        "PetalburgWoods",
+        7,
+        9
+      ],
+      "move_choices_count": 1
+    },
+    {
+      "trainer": 265,
+      "type_flags": 12,
+      "start": [
+        "RustboroCity_Gym",
+        11,
+        9
+      ],
+      "outcome": 1,
+      "end": [
+        "RustboroCity_Gym",
+        11,
+        9
+      ],
+      "move_choices_count": 27
+    },
+    {
+      "trainer": 0,
+      "type_flags": 4,
+      "start": [
+        "Route116",
+        11,
+        7
+      ],
+      "outcome": 1,
+      "end": [
+        "Route116",
+        11,
+        7
+      ],
+      "move_choices_count": 6
+    },
+    {
+      "trainer": 0,
+      "type_flags": 4,
+      "start": [
+        "Route116",
+        24,
+        13
+      ],
+      "outcome": 1,
+      "end": [
+        "Route116",
+        24,
+        13
+      ],
+      "move_choices_count": 6
+    },
+    {
+      "trainer": 754,
+      "type_flags": 12,
+      "start": [
+        "Route116",
+        36,
+        14
+      ],
+      "outcome": 1,
+      "end": [
+        "Route116",
+        36,
+        14
+      ],
+      "move_choices_count": 20
+    },
+    {
+      "trainer": 753,
+      "type_flags": 12,
+      "start": [
+        "Route116",
+        37,
+        13
+      ],
+      "outcome": 1,
+      "end": [
+        "Route116",
+        37,
+        13
+      ],
+      "move_choices_count": 7
+    },
+    {
+      "trainer": 0,
+      "type_flags": 4,
+      "start": [
+        "RusturfTunnel",
+        13,
+        5
+      ],
+      "outcome": 1,
+      "end": [
+        "RusturfTunnel",
+        13,
+        5
+      ],
+      "move_choices_count": 3
+    },
+    {
+      "trainer": 16,
+      "type_flags": 12,
+      "start": [
+        "RusturfTunnel",
+        13,
+        5
+      ],
+      "outcome": 1,
+      "end": [
+        "RusturfTunnel",
+        13,
+        5
+      ],
+      "move_choices_count": 2
+    },
+    {
+      "trainer": 0,
+      "type_flags": 4,
+      "start": [
+        "RusturfTunnel",
+        7,
+        5
+      ],
+      "outcome": 1,
+      "end": [
+        "RusturfTunnel",
+        7,
+        5
+      ],
+      "move_choices_count": 6
+    },
+    {
+      "trainer": 0,
+      "type_flags": 4,
+      "start": [
+        "Route116",
+        35,
+        15
+      ],
+      "outcome": 1,
+      "end": [
+        "Route116",
+        35,
+        15
+      ],
+      "move_choices_count": 3
+    },
+    {
+      "trainer": 0,
+      "type_flags": 4,
+      "start": [
+        "Route116",
+        10,
+        14
+      ],
+      "outcome": 1,
+      "end": [
+        "Route116",
+        10,
+        14
+      ],
+      "move_choices_count": 9
+    }
+  ],
+  "joypad_actions": 19161,
+  "input_encoding": "keys/count/release/repeats",
+  "story_vars": {
+    "VAR_BIRCH_LAB_STATE": 5,
+    "VAR_LITTLEROOT_TOWN_STATE": 4,
+    "VAR_PETALBURG_GYM_STATE": 3,
+    "VAR_PETALBURG_CITY_STATE": 3,
+    "VAR_PETALBURG_WOODS_STATE": 1,
+    "VAR_RUSTBORO_CITY_STATE": 6,
+    "VAR_ROUTE116_STATE": 2,
+    "VAR_RUSTURF_TUNNEL_STATE": 3,
+    "VAR_DEVON_CORP_3F_STATE": 1
+  },
+  "story_flags": {
+    "FLAG_DEFEATED_RIVAL_ROUTE103": true,
+    "FLAG_SYS_POKEDEX_GET": true,
+    "FLAG_RECEIVED_RUNNING_SHOES": true,
+    "FLAG_SYS_B_DASH": true,
+    "FLAG_BADGE01_GET": true,
+    "FLAG_RECEIVED_TM_ROCK_TOMB": true,
+    "FLAG_DEVON_GOODS_STOLEN": false,
+    "FLAG_RECOVERED_DEVON_GOODS": true,
+    "FLAG_RETURNED_DEVON_GOODS": true,
+    "FLAG_SYS_POKENAV_GET": true,
+    "FLAG_RECEIVED_POKENAV": true
+  },
+  "inventory_checks": {
+    "ITEM_LETTER": 1,
+    "ITEM_DEVON_GOODS": 1
+  },
+  "input_journal": {
+    "file": "campaign_devon_return_20261015_input_runs.json.gz",
+    "sha256": "f408da795aa8e482b3add5bea99ede6fc51e182132e68269a90ce624b4a41b3b",
+    "rows": 2575
+  },
+  "battle_trace": {
+    "file": "campaign_devon_return_20261015_battles.json.gz",
+    "sha256": "fa16401aba495728553ca87418d63ec428b22a18540befb0156a5f1b8c239376",
+    "battles": 27
+  }
+}
