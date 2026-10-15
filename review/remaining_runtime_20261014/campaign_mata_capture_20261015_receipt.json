@@ -1,0 +1,415 @@
+{
+  "rom_sha256": "0cc8a741b0c5af840c45e21d362eccd7577dcead6c52d2af876f15ceb48e4d23",
+  "emulator": "mGBA 0.10.2",
+  "fixture_setup": false,
+  "game_ram_or_rom_writes": false,
+  "normal_save_menu": true,
+  "position": [
+    "PetalburgWoods",
+    22,
+    35
+  ],
+  "party": [
+    {
+      "species": 280,
+      "personality": 2031531808,
+      "level": 15,
+      "hp": 43,
+      "max_hp": 43,
+      "moves": [
+        179,
+        52,
+        108,
+        172
+      ],
+      "pp": [
+        15,
+        25,
+        20,
+        25
+      ]
+    },
+    {
+      "species": 376,
+      "personality": 4061208498,
+      "level": 15,
+      "hp": 45,
+      "max_hp": 45,
+      "moves": [
+        261,
+        71,
+        74,
+        22
+      ],
+      "pp": [
+        15,
+        20,
+        40,
+        10
+      ]
+    },
+    {
+      "species": 28,
+      "personality": 933242637,
+      "level": 15,
+      "hp": 39,
+      "max_hp": 39,
+      "moves": [
+        33,
+        71,
+        74,
+        22
+      ],
+      "pp": [
+        35,
+        20,
+        40,
+        10
+      ]
+    },
+    {
+      "species": 28,
+      "personality": 3089231552,
+      "level": 7,
+      "hp": 23,
+      "max_hp": 23,
+      "moves": [
+        33,
+        71,
+        0,
+        0
+      ],
+      "pp": [
+        35,
+        20,
+        0,
+        0
+      ]
+    },
+    {
+      "species": 376,
+      "personality": 2663941647,
+      "level": 5,
+      "hp": 21,
+      "max_hp": 21,
+      "moves": [
+        33,
+        71,
+        0,
+        0
+      ],
+      "pp": [
+        35,
+        20,
+        0,
+        0
+      ]
+    },
+    {
+      "species": 28,
+      "personality": 2926429186,
+      "level": 6,
+      "hp": 22,
+      "max_hp": 22,
+      "moves": [
+        33,
+        71,
+        0,
+        0
+      ],
+      "pp": [
+        35,
+        20,
+        0,
+        0
+      ]
+    }
+  ],
+  "party_sha256": "18766856207d0c36ff50c0652d53979febc3853c7cb3bf51594415954b62267e",
+  "battles": [
+    {
+      "trainer": 0,
+      "type_flags": 4,
+      "start": [
+        "PetalburgWoods",
+        23,
+        34
+      ],
+      "outcome": 1,
+      "end": [
+        "PetalburgWoods",
+        23,
+        34
+      ],
+      "move_choices_count": 7
+    },
+    {
+      "trainer": 0,
+      "type_flags": 4,
+      "start": [
+        "PetalburgWoods",
+        21,
+        35
+      ],
+      "outcome": 1,
+      "end": [
+        "PetalburgWoods",
+        21,
+        35
+      ],
+      "move_choices_count": 1
+    },
+    {
+      "trainer": 0,
+      "type_flags": 4,
+      "start": [
+        "PetalburgWoods",
+        22,
+        35
+      ],
+      "outcome": 7,
+      "end": [
+        "PetalburgWoods",
+        22,
+        35
+      ],
+      "move_choices_count": 2
+    },
+    {
+      "trainer": 0,
+      "type_flags": 4,
+      "start": [
+        "PetalburgWoods",
+        21,
+        35
+      ],
+      "outcome": 1,
+      "end": [
+        "PetalburgWoods",
+        21,
+        35
+      ],
+      "move_choices_count": 1
+    },
+    {
+      "trainer": 0,
+      "type_flags": 4,
+      "start": [
+        "PetalburgWoods",
+        21,
+        34
+      ],
+      "outcome": 1,
+      "end": [
+        "PetalburgWoods",
+        21,
+        34
+      ],
+      "move_choices_count": 1
+    },
+    {
+      "trainer": 0,
+      "type_flags": 4,
+      "start": [
+        "PetalburgWoods",
+        22,
+        34
+      ],
+      "outcome": 1,
+      "end": [
+        "PetalburgWoods",
+        22,
+        34
+      ],
+      "move_choices_count": 1
+    },
+    {
+      "trainer": 0,
+      "type_flags": 4,
+      "start": [
+        "PetalburgWoods",
+        21,
+        35
+      ],
+      "outcome": 1,
+      "end": [
+        "PetalburgWoods",
+        21,
+        35
+      ],
+      "move_choices_count": 1
+    },
+    {
+      "trainer": 0,
+      "type_flags": 4,
+      "start": [
+        "PetalburgWoods",
+        22,
+        34
+      ],
+      "outcome": 1,
+      "end": [
+        "PetalburgWoods",
+        22,
+        34
+      ],
+      "move_choices_count": 2
+    },
+    {
+      "trainer": 0,
+      "type_flags": 4,
+      "start": [
+        "PetalburgWoods",
+        23,
+        34
+      ],
+      "outcome": 1,
+      "end": [
+        "PetalburgWoods",
+        23,
+        34
+      ],
+      "move_choices_count": 1
+    },
+    {
+      "trainer": 0,
+      "type_flags": 4,
+      "start": [
+        "PetalburgWoods",
+        23,
+        35
+      ],
+      "outcome": 1,
+      "end": [
+        "PetalburgWoods",
+        23,
+        35
+      ],
+      "move_choices_count": 3
+    },
+    {
+      "trainer": 0,
+      "type_flags": 4,
+      "start": [
+        "PetalburgWoods",
+        24,
+        35
+      ],
+      "outcome": 1,
+      "end": [
+        "PetalburgWoods",
+        24,
+        35
+      ],
+      "move_choices_count": 1
+    },
+    {
+      "trainer": 0,
+      "type_flags": 4,
+      "start": [
+        "PetalburgWoods",
+        22,
+        34
+      ],
+      "outcome": 1,
+      "end": [
+        "PetalburgWoods",
+        22,
+        34
+      ],
+      "move_choices_count": 1
+    },
+    {
+      "trainer": 0,
+      "type_flags": 4,
+      "start": [
+        "PetalburgWoods",
+        23,
+        34
+      ],
+      "outcome": 7,
+      "end": [
+        "PetalburgWoods",
+        23,
+        34
+      ],
+      "move_choices_count": 2
+    },
+    {
+      "trainer": 0,
+      "type_flags": 4,
+      "start": [
+        "PetalburgWoods",
+        24,
+        34
+      ],
+      "outcome": 1,
+      "end": [
+        "PetalburgWoods",
+        24,
+        34
+      ],
+      "move_choices_count": 1
+    },
+    {
+      "trainer": 0,
+      "type_flags": 4,
+      "start": [
+        "PetalburgWoods",
+        22,
+        34
+      ],
+      "outcome": 1,
+      "end": [
+        "PetalburgWoods",
+        22,
+        34
+      ],
+      "move_choices_count": 1
+    },
+    {
+      "trainer": 0,
+      "type_flags": 4,
+      "start": [
+        "PetalburgWoods",
+        23,
+        34
+      ],
+      "outcome": 7,
+      "end": [
+        "PetalburgWoods",
+        23,
+        34
+      ],
+      "move_choices_count": 2
+    }
+  ],
+  "joypad_actions": 4161,
+  "input_encoding": "keys/count/release/repeats",
+  "story_vars": {
+    "VAR_BIRCH_LAB_STATE": 5,
+    "VAR_LITTLEROOT_TOWN_STATE": 4,
+    "VAR_PETALBURG_GYM_STATE": 2,
+    "VAR_PETALBURG_CITY_STATE": 3,
+    "VAR_PETALBURG_WOODS_STATE": 1,
+    "VAR_RUSTBORO_CITY_STATE": 0
+  },
+  "story_flags": {
+    "FLAG_DEFEATED_RIVAL_ROUTE103": true,
+    "FLAG_SYS_POKEDEX_GET": true,
+    "FLAG_RECEIVED_RUNNING_SHOES": true,
+    "FLAG_SYS_B_DASH": true,
+    "FLAG_BADGE01_GET": false,
+    "FLAG_RECEIVED_TM_ROCK_TOMB": false
+  },
+  "input_journal": {
+    "file": "campaign_mata_capture_20261015_input_runs.json.gz",
+    "sha256": "e8e15dd214f73f44c0ff09aaa009e5a5d1852ba54de6734678363ede94530902",
+    "rows": 551
+  },
+  "battle_trace": {
+    "file": "campaign_mata_capture_20261015_battles.json.gz",
+    "sha256": "9fc02d96b2f32bda63e57e476e9cd137150ab1d7e0a9d3d7218c8a80cfb4ce35",
+    "battles": 16
+  }
+}
