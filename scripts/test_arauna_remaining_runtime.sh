@@ -8,6 +8,7 @@ arm-none-eabi-nm -n pokemon-juramento-de-arauna-en_modern.elf > arauna-en.symbol
 cc -shared -fPIC -O2 "$qa/mgba_helper.c" -lmgba -o "$qa/mgba_helper.so"
 python3 "$qa/test_tent.py"
 python3 "$qa/test_bento.py"
+python3 "$qa/test_castform_graphics.py"
 for entry in tower factory palace arena dome verdanturf fallarbor slateport; do
     for status in 0 1 2; do
         python3 "$qa/test_frontier_snapshot.py" --expect consistent --entry "$entry" --status "$status"

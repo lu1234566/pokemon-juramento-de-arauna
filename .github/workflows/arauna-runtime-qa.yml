@@ -4,6 +4,7 @@ on:
   pull_request:
     paths:
       - src/frontier_util.c
+      - src/anim_mon_front_pics.c
       - data/maps/**/scripts.inc
       - review/remaining_runtime_20261014/**
       - scripts/test_arauna_remaining_runtime.sh
