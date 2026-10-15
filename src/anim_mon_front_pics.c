@@ -365,7 +365,9 @@ const u32 gMonFrontPic_Relicanth[] = INCGFX_U32("graphics/pokemon/relicanth/anim
 const u32 gMonFrontPic_Aron[] = INCGFX_U32("graphics/pokemon/aron/anim_front.png", ".4bpp.lz");
 const u32 gMonFrontPic_Lairon[] = INCGFX_U32("graphics/pokemon/lairon/anim_front.png", ".4bpp.lz");
 const u32 gMonFrontPic_Aggron[] = INCGFX_U32("graphics/pokemon/aggron/anim_front.png", ".4bpp.lz");
-const u32 gMonFrontPic_Castform[] = INCGFX_U32("graphics/pokemon/castform/anim_front.4bpp", ".lz");
+// Form animations address four single frames in an 0x2000-byte battler buffer.
+// The concatenated animated sheets contain eight frames and overflow slot 3.
+const u32 gMonFrontPic_Castform[] = INCGFX_U32("graphics/pokemon/castform/front.4bpp", ".lz");
 const u32 gMonFrontPic_Volbeat[] = INCGFX_U32("graphics/pokemon/volbeat/anim_front.png", ".4bpp.lz");
 const u32 gMonFrontPic_Illumise[] = INCGFX_U32("graphics/pokemon/illumise/anim_front.png", ".4bpp.lz");
 const u32 gMonFrontPic_Lileep[] = INCGFX_U32("graphics/pokemon/lileep/anim_front.png", ".4bpp.lz");
