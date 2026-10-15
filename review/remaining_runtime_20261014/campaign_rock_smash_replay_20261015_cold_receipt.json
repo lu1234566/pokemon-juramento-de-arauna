@@ -1,0 +1,201 @@
+{
+  "rom_sha256": "a2dfe2d861d84eaf0df31b31b6c42f2a668b1afa7a4f3467e82df355f2b69942",
+  "emulator": "mGBA 0.10.2",
+  "fixture_setup": false,
+  "game_ram_or_rom_writes": false,
+  "source_checkpoint": "rock_smash_replay_20261015",
+  "new_process": true,
+  "cold_continue": true,
+  "position": [
+    "Route111",
+    18,
+    100
+  ],
+  "party": [
+    {
+      "species": 387,
+      "personality": 808323251,
+      "level": 24,
+      "hp": 76,
+      "max_hp": 76,
+      "moves": [
+        77,
+        157,
+        222,
+        341
+      ],
+      "pp": [
+        35,
+        10,
+        30,
+        15
+      ]
+    },
+    {
+      "species": 376,
+      "personality": 4061208498,
+      "level": 24,
+      "hp": 66,
+      "max_hp": 66,
+      "moves": [
+        235,
+        71,
+        73,
+        194
+      ],
+      "pp": [
+        5,
+        20,
+        10,
+        5
+      ]
+    },
+    {
+      "species": 29,
+      "personality": 933242637,
+      "level": 24,
+      "hp": 68,
+      "max_hp": 68,
+      "moves": [
+        76,
+        71,
+        235,
+        73
+      ],
+      "pp": [
+        10,
+        20,
+        5,
+        10
+      ]
+    },
+    {
+      "species": 376,
+      "personality": 2663941647,
+      "level": 24,
+      "hp": 66,
+      "max_hp": 66,
+      "moves": [
+        235,
+        71,
+        73,
+        194
+      ],
+      "pp": [
+        5,
+        20,
+        10,
+        5
+      ]
+    },
+    {
+      "species": 83,
+      "personality": 3274922461,
+      "level": 24,
+      "hp": 69,
+      "max_hp": 69,
+      "moves": [
+        96,
+        109,
+        16,
+        17
+      ],
+      "pp": [
+        40,
+        10,
+        35,
+        35
+      ]
+    },
+    {
+      "species": 281,
+      "personality": 2031531808,
+      "level": 24,
+      "hp": 70,
+      "max_hp": 70,
+      "moves": [
+        33,
+        52,
+        108,
+        172
+      ],
+      "pp": [
+        35,
+        25,
+        20,
+        25
+      ]
+    }
+  ],
+  "party_sha256": "786f388167fcb17a89cd89766406d68adb33ad73e2d5e3ae0be14bae47fc3d33",
+  "story_vars": {
+    "VAR_BIRCH_LAB_STATE": 5,
+    "VAR_LITTLEROOT_TOWN_STATE": 4,
+    "VAR_PETALBURG_GYM_STATE": 5,
+    "VAR_PETALBURG_CITY_STATE": 3,
+    "VAR_PETALBURG_WOODS_STATE": 1,
+    "VAR_RUSTBORO_CITY_STATE": 8,
+    "VAR_ROUTE116_STATE": 2,
+    "VAR_RUSTURF_TUNNEL_STATE": 3,
+    "VAR_DEVON_CORP_3F_STATE": 1,
+    "VAR_MAUVILLE_GYM_STATE": 0,
+    "VAR_SLATEPORT_OUTSIDE_MUSEUM_STATE": 3
+  },
+  "story_flags": {
+    "FLAG_DEFEATED_RIVAL_ROUTE103": true,
+    "FLAG_SYS_POKEDEX_GET": true,
+    "FLAG_RECEIVED_RUNNING_SHOES": true,
+    "FLAG_SYS_B_DASH": true,
+    "FLAG_BADGE01_GET": true,
+    "FLAG_RECEIVED_TM_ROCK_TOMB": true,
+    "FLAG_DEVON_GOODS_STOLEN": false,
+    "FLAG_RECOVERED_DEVON_GOODS": true,
+    "FLAG_RETURNED_DEVON_GOODS": true,
+    "FLAG_SYS_POKENAV_GET": true,
+    "FLAG_HAS_MATCH_CALL": true,
+    "FLAG_DELIVERED_STEVEN_LETTER": true,
+    "FLAG_REGISTERED_STEVEN_POKENAV": true,
+    "FLAG_RECEIVED_HM_FLASH": true,
+    "FLAG_BADGE02_GET": true,
+    "FLAG_RECEIVED_TM_BULK_UP": true,
+    "FLAG_BADGE03_GET": true,
+    "FLAG_DEFEATED_MAUVILLE_GYM": true,
+    "FLAG_RECEIVED_TM_SHOCK_WAVE": true,
+    "FLAG_ENABLE_WATTSON_MATCH_CALL": true
+  },
+  "inventory_checks": {
+    "ITEM_TM_ROCK_TOMB": 1,
+    "ITEM_DEVON_GOODS": 0,
+    "ITEM_LETTER": 0,
+    "ITEM_POKE_BALL": 2,
+    "ITEM_HM_FLASH": 1,
+    "ITEM_TM_STEEL_WING": 1,
+    "ITEM_TM_BULK_UP": 1,
+    "ITEM_HM_ROCK_SMASH": 1,
+    "ITEM_TM_SHOCK_WAVE": 1
+  },
+  "map_flash_level": null,
+  "boxed_mons": [
+    {
+      "box": 0,
+      "slot": 0,
+      "personality": 3089231552,
+      "sha256": "f1852cd082d80457cb9565e70371dbb08a81b1cd4b3cfc7701229227373883d0"
+    },
+    {
+      "box": 0,
+      "slot": 1,
+      "personality": 2926429186,
+      "sha256": "b8ad0a81f330bdfc42c1ddbff85e6d5efbbe7d74afa1478e742db64b76ac87b4"
+    },
+    {
+      "box": 0,
+      "slot": 2,
+      "personality": 2077892557,
+      "sha256": "c2c3ce4b3809254b4b08bdbb2dad316b0f2b24b2505c4bf482549da33df5fc29"
+    }
+  ],
+  "game_stats": {
+    "GAME_STAT_USED_ROCK_SMASH": 1
+  }
+}

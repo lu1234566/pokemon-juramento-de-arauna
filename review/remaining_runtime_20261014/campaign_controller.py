@@ -12,10 +12,14 @@ INPUTS, BATTLES, BLOCKED = [], [], set()
 CAPTURE_TYPES = set()
 CAPTURE_PARTY_SIZE = 2
 CAPTURE_WEAKEN = False
+SCRIPT_YESNOBOX = re.findall(r'^\s*(B_SCR_OP_\w+)', (R / 'include/constants/battle_script_commands.h').read_text(), re.M).index('B_SCR_OP_YESNOBOX')
 # Optional test driver policy: return a move slot, or None for the default.
 # Policies inspect battle state and still act exclusively through the joypad.
 MOVE_POLICY = None
 PARTY_POLICY = None
+ACTION_POLICY = None
+ITEM_POLICY = None
+SWITCH_POLICY = None
 groups = json.loads((R / 'data/maps/map_groups.json').read_text())
 MAP_NAMES = {(g, m): name for g, group in enumerate(groups['group_order']) for m, name in enumerate(groups[group])}
 ORDERS = [tuple(map(int, row)) for row in re.findall(r'SUBSTRUCT_CASE\(\s*\d+,([0-3]),([0-3]),([0-3]),([0-3])\)', (R / 'src/pokemon.c').read_text())]
@@ -30,6 +34,9 @@ def var(name):
 def flag(name):
     f = constant(name)
     return bool(read(read('gSaveBlock1Ptr') + 0x1270 + f // 8, 1) & (1 << (f % 8)))
+
+def game_stat(name):
+    return read(read('gSaveBlock1Ptr') + 0x159C + 4 * constant(name)) ^ read(read('gSaveBlock2Ptr') + 0xAC)
 
 def act(keys=0, count=2, release=12):
     before = position()
@@ -60,6 +67,17 @@ def party_sha256():
                     for offset in range(0, 100 * read('gPlayerPartyCount', 1), 4))
     return hashlib.sha256(data).hexdigest()
 
+def boxed_records():
+    records = []
+    storage = read('gPokemonStoragePtr')
+    for index in range(14 * 30):
+        address = storage + 4 + 80 * index
+        if read(address) or read(address + 4):
+            data = b''.join(struct.pack('<I', read(address + offset)) for offset in range(0, 80, 4))
+            records.append({'box': index // 30, 'slot': index % 30,
+                            'personality': read(address), 'sha256': hashlib.sha256(data).hexdigest()})
+    return records
+
 def overworld():
     return read(SYMS['gMain'] + 4) == SYMS['CB2_Overworld'] | 1
 
@@ -82,12 +100,17 @@ def quantity(item):
                 total += read(slots + i * 4 + 2, 2) ^ key
     return total
 
+def living_enemy():
+    return next((i for i in (1, 3) if i < read('gBattlersCount', 1)
+                 and not (read('gAbsentBattlerFlags', 1) & (1 << i))
+                 and read(SYMS['gBattleMons'] + 88 * i + 40, 2)), 1)
+
 def move_score(move, battler=0):
     attr = SYMS['gBattleMoves'] + 12 * move
     power, kind, accuracy = read(attr + 1, 1), read(attr + 2, 1), read(attr + 3, 1)
     if not power:
         return 0
-    p, e = SYMS['gBattleMons'] + 88 * battler, SYMS['gBattleMons'] + 88
+    p, e = SYMS['gBattleMons'] + 88 * battler, SYMS['gBattleMons'] + 88 * living_enemy()
     if move in (constant('MOVE_FLAIL'), constant('MOVE_REVERSAL')):
         fraction = read(p + 40, 2) * 48 // max(1, read(p + 44, 2))
         power = next(value for ceiling, value in ((1, 200), (4, 150), (9, 100), (16, 80), (32, 40), (48, 20)) if fraction <= ceiling)
@@ -131,6 +154,32 @@ def choose_party(target):
     else:
         act(128 if current < target else 64, 2, 25)
 
+def use_battle_item(item, personality=None, battler=0):
+    """Choose BAG, an owned item and its recipient using ordinary input."""
+    before = quantity(item)
+    assert before > 0
+    choose_grid(SYMS['gActionSelectionCursor'] + battler, 1)
+    for _ in range(400):
+        if quantity(item) < before and read(SYMS['gMain'] + 4) == SYMS['BattleMainCB2'] | 1:
+            return
+        if active_task('Task_BagMenu_HandleInput') is not None:
+            pocket = read(SYMS['gBagPosition'] + 5, 1)
+            if pocket:
+                act(32, 2, 35)
+                continue
+            slots, capacity = read('gBagPockets'), read(SYMS['gBagPockets'] + 4, 1)
+            items = [read(slots + 4 * i, 2) for i in range(capacity) if read(slots + 4 * i, 2)]
+            target = items.index(constant(item))
+            cursor = read(SYMS['gBagPosition'] + 8, 2) + read(SYMS['gBagPosition'] + 18, 2)
+            act(128 if cursor < target else 64 if cursor > target else 1, 2, 30)
+        elif active_task('Task_HandleChooseMonInput') is not None:
+            target = next(i for i, mon in enumerate(party()) if mon['personality'] == personality)
+            choose_party(target)
+        else:
+            act(1, 2, 25)
+    snap('item_timeout')
+    raise RuntimeError(('battle item timeout', item, personality))
+
 def settle(limit=5000):
     battle = None
     capturing = False
@@ -152,14 +201,21 @@ def settle(limit=5000):
             if battle is None:
                 battle = {'trainer': read('gTrainerBattleOpponent_A', 2) if read('gBattleTypeFlags') & 8 else 0, 'type_flags': read('gBattleTypeFlags'), 'start': position(), 'party_before': party(), 'move_choices': []}
                 snap('battle_' + str(battle['trainer']) + '_start')
-            enemy_types = {read(SYMS['gBattleMons'] + 88 + 33, 1), read(SYMS['gBattleMons'] + 88 + 34, 1)}
+            selected_item = ITEM_POLICY(action_battler) if ITEM_POLICY else None
+            if selected_item:
+                battle.setdefault('item_choices', []).append(list(selected_item))
+                use_battle_item(*selected_item, battler=action_battler)
+                continue
+            enemy_types = {read(SYMS['gBattleMons'] + 88 * living_enemy() + 33, 1), read(SYMS['gBattleMons'] + 88 * living_enemy() + 34, 1)}
             balls = sum(quantity(item) for item in ('ITEM_POKE_BALL', 'ITEM_GREAT_BALL', 'ITEM_PREMIER_BALL'))
             capturing = bool(CAPTURE_TYPES & enemy_types) and not (read('gBattleTypeFlags') & 8) and read('gPlayerPartyCount', 1) < CAPTURE_PARTY_SIZE and balls > 0
-            e = SYMS['gBattleMons'] + 88
+            e = SYMS['gBattleMons'] + 88 * living_enemy()
             # Drain moves can keep a grass-vs-grass encounter at full HP.
             # Bound preparation so the driver eventually throws a ball.
             weakening = capturing and CAPTURE_WEAKEN and weaken_turns < 4 and read(e + 40, 2) * 3 > read(e + 44, 2)
-            choose_grid(SYMS['gActionSelectionCursor'] + action_battler, 1 if capturing and not weakening else 0)
+            selected_action = ACTION_POLICY(action_battler) if ACTION_POLICY and not capturing else None
+            choose_grid(SYMS['gActionSelectionCursor'] + action_battler,
+                        selected_action if selected_action is not None else 1 if capturing and not weakening else 0)
         elif move_battler is not None:
             p = SYMS['gBattleMons'] + 88 * move_battler
             options = [(move_score(read(p + 12 + j * 2, 2), move_battler), j) for j in range(4) if read(p + 12 + j * 2, 2) and read(p + 36 + j, 1)]
@@ -168,13 +224,25 @@ def settle(limit=5000):
                 selected = (min if weakening else max)([o for o in options if o[0] > 0] or options or [(0, 0)])[1]
             assert not options or selected in [slot for _, slot in options], ('unavailable move', selected, options)
             if battle is not None:
-                enemy = SYMS['gBattleMons'] + 88
+                enemy = SYMS['gBattleMons'] + 88 * living_enemy()
                 battle['move_choices'].append({'battler': move_battler, 'species': read(p, 2), 'hp': read(p + 40, 2), 'enemy_species': read(enemy, 2), 'enemy_hp': read(enemy + 40, 2), 'move': read(p + 12 + 2 * selected, 2)})
             choose_grid(SYMS['gMoveSelectionCursor'] + move_battler, selected)
             if weakening:
                 weaken_turns += 1
         elif any(controller('HandleInputChooseTarget', i) for i in (0, 2)):
-            act(1, 2, 25)
+            # A selected move may default to the ally in a double battle.
+            # Cycle the ordinary target cursor until it points at a live foe.
+            if read('gMultiUsePlayerCursor', 1) == living_enemy():
+                act(1, 2, 25)
+            else:
+                act(16, 2, 25)
+        elif any(controller('PlayerHandleYesNoInput', i) for i in (0, 2)):
+            # Keep the active Pokemon after a foe faints. Forced replacements
+            # still go through the real party screen below.
+            act(1 if SWITCH_POLICY and SWITCH_POLICY() else 2, 2, 25)
+        elif (not overworld() and read(read('gBattlescriptCurrInstr'), 1) == SCRIPT_YESNOBOX
+              and read('gBattleCommunication', 1) == 1):
+            act(1 if SWITCH_POLICY and SWITCH_POLICY() else 2, 2, 25)
         elif capturing and read('gBattleOutcome', 1) == constant('B_OUTCOME_CAUGHT'):
             # B closes the new dex entry and declines a nickname normally.
             act(2, 2, 12)
@@ -210,6 +278,8 @@ def settle(limit=5000):
                 # Ready: select Mr Stone and Call. After the call: close the
                 # message, trainer list and main menu with ordinary B input.
                 act(2 if mode == 2 else 1, 2, 25)
+        elif (task := active_task('Task_HandleMultichoiceInput')) is not None and read(SYMS['gTasks'] + task * 40 + 8 + 2 * 7, 2) == constant('MULTI_ARAUNA_QOL'):
+            act(2, 2, 25)
         elif (task := active_task('Task_HandleMultichoiceInput')) is not None and read(SYMS['gTasks'] + task * 40 + 8 + 2 * 7, 2) == constant('MULTI_FORCED_START_MENU'):
             # Devon's tutorial requires selecting POKENAV in its fixed menu.
             # Repeated A would continually reopen its explanatory dialogue.
@@ -253,14 +323,19 @@ def heal():
     assert not read('sLockFieldControls', 1)
     assert all(p['hp'] == p['max_hp'] for p in party())
 
-def level_to(level, slot=0):
+def level_to(level, slot=0, replace_slot=0):
     start_action(4)
     for _ in range(3000):
         # Finish the level's move-learning/evolution prompts before leaving.
         # A level value alone can be reached while a Yes/No prompt is active.
         if party()[slot]['level'] >= level and active_task('Task_HandleChooseMonInput') is not None:
             break
-        if active_task('Task_HandleChooseMonInput') is not None:
+        if active_task('Task_HandleReplaceMoveInput') is not None:
+            act(0, 1, 50)
+            for _ in range(replace_slot):
+                act(128, 2, 25)
+            act(1, 2, 80)
+        elif active_task('Task_HandleChooseMonInput') is not None:
             choose_party(slot)
         else:
             act(1, 2, 10)
@@ -491,5 +566,10 @@ def normal_save(name):
                             'story_vars': {n: var(n) for n in ('VAR_BIRCH_LAB_STATE', 'VAR_LITTLEROOT_TOWN_STATE', 'VAR_PETALBURG_GYM_STATE', 'VAR_PETALBURG_CITY_STATE', 'VAR_PETALBURG_WOODS_STATE', 'VAR_RUSTBORO_CITY_STATE', 'VAR_ROUTE116_STATE', 'VAR_RUSTURF_TUNNEL_STATE', 'VAR_DEVON_CORP_3F_STATE')},
                             'story_flags': {n: flag(n) for n in ('FLAG_DEFEATED_RIVAL_ROUTE103', 'FLAG_SYS_POKEDEX_GET', 'FLAG_RECEIVED_RUNNING_SHOES', 'FLAG_SYS_B_DASH', 'FLAG_BADGE01_GET', 'FLAG_RECEIVED_TM_ROCK_TOMB', 'FLAG_DEVON_GOODS_STOLEN', 'FLAG_RECOVERED_DEVON_GOODS', 'FLAG_RETURNED_DEVON_GOODS', 'FLAG_SYS_POKENAV_GET', 'FLAG_HAS_MATCH_CALL', 'FLAG_DELIVERED_STEVEN_LETTER', 'FLAG_REGISTERED_STEVEN_POKENAV', 'FLAG_RECEIVED_HM_FLASH', 'FLAG_BADGE02_GET', 'FLAG_RECEIVED_TM_BULK_UP')},
                             'inventory_checks': {n: quantity(n) for n in ('ITEM_TM_ROCK_TOMB', 'ITEM_DEVON_GOODS', 'ITEM_LETTER', 'ITEM_POKE_BALL', 'ITEM_HM_FLASH', 'ITEM_TM_STEEL_WING', 'ITEM_TM_BULK_UP')}}
+    receipt['story_vars'].update({n: var(n) for n in ('VAR_MAUVILLE_GYM_STATE', 'VAR_SLATEPORT_OUTSIDE_MUSEUM_STATE')})
+    receipt['story_flags'].update({n: flag(n) for n in ('FLAG_BADGE03_GET', 'FLAG_DEFEATED_MAUVILLE_GYM', 'FLAG_RECEIVED_TM_SHOCK_WAVE', 'FLAG_ENABLE_WATTSON_MATCH_CALL')})
+    receipt['inventory_checks'].update({n: quantity(n) for n in ('ITEM_HM_ROCK_SMASH', 'ITEM_TM_SHOCK_WAVE')})
+    receipt['boxed_mons'] = boxed_records()
+    receipt['game_stats'] = {'GAME_STAT_USED_ROCK_SMASH': game_stat('GAME_STAT_USED_ROCK_SMASH')}
     (Q / ('campaign_' + name + '_receipt.json')).write_text(json.dumps(receipt, indent=2) + '\n')
     return path

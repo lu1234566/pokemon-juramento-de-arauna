@@ -1,0 +1,113 @@
+{
+  "fixture_setup": false,
+  "game_ram_or_rom_writes": false,
+  "rom_sha256": "a2dfe2d861d84eaf0df31b31b6c42f2a668b1afa7a4f3467e82df355f2b69942",
+  "attempts": [
+    {
+      "attempt": 1,
+      "receipt": "campaign_olivia_attempt1_lost_20261015_receipt.json",
+      "trainer": 267,
+      "outcome": 2,
+      "move_choices": 21,
+      "items": [],
+      "badge03": false
+    },
+    {
+      "attempt": 2,
+      "receipt": "campaign_olivia_attempt2_lost_20261015_receipt.json",
+      "trainer": 267,
+      "outcome": 2,
+      "move_choices": 16,
+      "items": [],
+      "badge03": false
+    },
+    {
+      "attempt": 3,
+      "receipt": "campaign_olivia_attempt3_result_20261015_receipt.json",
+      "trainer": 267,
+      "outcome": 2,
+      "move_choices": 17,
+      "items": [
+        [
+          "ITEM_SUPER_POTION",
+          2031531808
+        ],
+        [
+          "ITEM_SUPER_POTION",
+          2031531808
+        ],
+        [
+          "ITEM_SUPER_POTION",
+          2031531808
+        ],
+        [
+          "ITEM_SUPER_POTION",
+          2031531808
+        ],
+        [
+          "ITEM_SUPER_POTION",
+          2031531808
+        ]
+      ],
+      "badge03": false
+    },
+    {
+      "attempt": 4,
+      "receipt": "campaign_olivia_attempt4_result_20261015_receipt.json",
+      "trainer": 267,
+      "outcome": 2,
+      "move_choices": 27,
+      "items": [
+        [
+          "ITEM_X_SPEED",
+          null
+        ],
+        [
+          "ITEM_SUPER_POTION",
+          808323251
+        ]
+      ],
+      "badge03": false
+    },
+    {
+      "attempt": 5,
+      "receipt": "campaign_olivia_attempt5_result_20261015_receipt.json",
+      "trainer": 267,
+      "outcome": 2,
+      "move_choices": 21,
+      "items": [
+        [
+          "ITEM_X_SPEED",
+          null
+        ],
+        [
+          "ITEM_SUPER_POTION",
+          808323251
+        ],
+        [
+          "ITEM_SUPER_POTION",
+          808323251
+        ],
+        [
+          "ITEM_SUPER_POTION",
+          808323251
+        ]
+      ],
+      "badge03": false
+    },
+    {
+      "attempt": 6,
+      "receipt": "campaign_olivia_attempt6_result_20261015_receipt.json",
+      "trainer": 267,
+      "outcome": 1,
+      "move_choices": 21,
+      "items": [
+        [
+          "ITEM_SUPER_POTION",
+          808323251
+        ]
+      ],
+      "badge03": true
+    }
+  ]
+}
