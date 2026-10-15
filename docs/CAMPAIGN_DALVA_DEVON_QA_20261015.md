@@ -62,6 +62,7 @@ The archived receipts reference lossless JSON/gzip sidecars for input runs
 and full battle traces, retaining SHA-256 digests, row counts and compact
 battle summaries. Every sidecar was decompressed and compared with its
 original content. The cold-checkpoint validator checks their integrity.
+The native CI evidence artifact includes these `.json.gz` sidecars as well.
 
 All progression in this journey came from movement, dialogue, battles,
 ordinary menu actions, SAVE and CONTINUE. No injected game functions, warps,

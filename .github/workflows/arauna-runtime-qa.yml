@@ -39,6 +39,7 @@ jobs:
             arauna-runtime-build.log
             arauna-runtime.log
             review/remaining_runtime_20261014/*.json
+            review/remaining_runtime_20261014/*.json.gz
             review/remaining_runtime_20261014/*.png
             review/remaining_runtime_20261014/*.wav
           if-no-files-found: error
