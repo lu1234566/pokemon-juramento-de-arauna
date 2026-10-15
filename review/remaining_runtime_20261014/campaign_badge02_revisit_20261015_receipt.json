@@ -1,0 +1,175 @@
+{
+  "rom_sha256": "0cc8a741b0c5af840c45e21d362eccd7577dcead6c52d2af876f15ceb48e4d23",
+  "emulator": "mGBA 0.10.2",
+  "fixture_setup": false,
+  "game_ram_or_rom_writes": false,
+  "normal_save_menu": true,
+  "position": [
+    "DewfordTown_Gym",
+    12,
+    5
+  ],
+  "party": [
+    {
+      "species": 83,
+      "personality": 3274922461,
+      "level": 19,
+      "hp": 0,
+      "max_hp": 56,
+      "moves": [
+        109,
+        45,
+        16,
+        17
+      ],
+      "pp": [
+        7,
+        40,
+        35,
+        31
+      ]
+    },
+    {
+      "species": 376,
+      "personality": 4061208498,
+      "level": 19,
+      "hp": 0,
+      "max_hp": 55,
+      "moves": [
+        73,
+        71,
+        74,
+        194
+      ],
+      "pp": [
+        10,
+        20,
+        40,
+        4
+      ]
+    },
+    {
+      "species": 29,
+      "personality": 933242637,
+      "level": 19,
+      "hp": 22,
+      "max_hp": 55,
+      "moves": [
+        76,
+        71,
+        235,
+        73
+      ],
+      "pp": [
+        9,
+        20,
+        5,
+        9
+      ]
+    },
+    {
+      "species": 376,
+      "personality": 2663941647,
+      "level": 19,
+      "hp": 0,
+      "max_hp": 54,
+      "moves": [
+        73,
+        71,
+        74,
+        194
+      ],
+      "pp": [
+        9,
+        20,
+        40,
+        5
+      ]
+    },
+    {
+      "species": 281,
+      "personality": 2031531808,
+      "level": 19,
+      "hp": 32,
+      "max_hp": 57,
+      "moves": [
+        261,
+        52,
+        108,
+        172
+      ],
+      "pp": [
+        15,
+        25,
+        20,
+        20
+      ]
+    },
+    {
+      "species": 83,
+      "personality": 2077892557,
+      "level": 19,
+      "hp": 0,
+      "max_hp": 57,
+      "moves": [
+        109,
+        45,
+        16,
+        17
+      ],
+      "pp": [
+        10,
+        40,
+        35,
+        35
+      ]
+    }
+  ],
+  "party_sha256": "10ebdc9159852793e59632b60ddc864b8f0204e7e17e98b7cc5129c363900157",
+  "battles": [],
+  "joypad_actions": 83,
+  "input_encoding": "keys/count/release/repeats",
+  "story_vars": {
+    "VAR_BIRCH_LAB_STATE": 5,
+    "VAR_LITTLEROOT_TOWN_STATE": 4,
+    "VAR_PETALBURG_GYM_STATE": 4,
+    "VAR_PETALBURG_CITY_STATE": 3,
+    "VAR_PETALBURG_WOODS_STATE": 1,
+    "VAR_RUSTBORO_CITY_STATE": 8,
+    "VAR_ROUTE116_STATE": 2,
+    "VAR_RUSTURF_TUNNEL_STATE": 3,
+    "VAR_DEVON_CORP_3F_STATE": 1
+  },
+  "story_flags": {
+    "FLAG_DEFEATED_RIVAL_ROUTE103": true,
+    "FLAG_SYS_POKEDEX_GET": true,
+    "FLAG_RECEIVED_RUNNING_SHOES": true,
+    "FLAG_SYS_B_DASH": true,
+    "FLAG_BADGE01_GET": true,
+    "FLAG_RECEIVED_TM_ROCK_TOMB": true,
+    "FLAG_DEVON_GOODS_STOLEN": false,
+    "FLAG_RECOVERED_DEVON_GOODS": true,
+    "FLAG_RETURNED_DEVON_GOODS": true,
+    "FLAG_SYS_POKENAV_GET": true,
+    "FLAG_HAS_MATCH_CALL": true,
+    "FLAG_DELIVERED_STEVEN_LETTER": true,
+    "FLAG_REGISTERED_STEVEN_POKENAV": true,
+    "FLAG_RECEIVED_HM_FLASH": true,
+    "FLAG_BADGE02_GET": true,
+    "FLAG_RECEIVED_TM_BULK_UP": true
+  },
+  "inventory_checks": {
+    "ITEM_TM_ROCK_TOMB": 1,
+    "ITEM_DEVON_GOODS": 1,
+    "ITEM_LETTER": 0,
+    "ITEM_POKE_BALL": 0,
+    "ITEM_HM_FLASH": 1,
+    "ITEM_TM_STEEL_WING": 1,
+    "ITEM_TM_BULK_UP": 1
+  },
+  "input_journal": {
+    "file": "campaign_badge02_revisit_20261015_input_runs.json.gz",
+    "sha256": "d98481a6b94598e74fba6a3e859c2aade4f2987eb1454bee2035b280fedfe04f",
+    "rows": 8
+  }
+}

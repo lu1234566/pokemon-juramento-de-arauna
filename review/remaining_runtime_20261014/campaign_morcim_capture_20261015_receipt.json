@@ -1,0 +1,389 @@
+{
+  "rom_sha256": "0cc8a741b0c5af840c45e21d362eccd7577dcead6c52d2af876f15ceb48e4d23",
+  "emulator": "mGBA 0.10.2",
+  "fixture_setup": false,
+  "game_ram_or_rom_writes": false,
+  "normal_save_menu": true,
+  "position": [
+    "GraniteCave_1F",
+    5,
+    9
+  ],
+  "party": [
+    {
+      "species": 280,
+      "personality": 2031531808,
+      "level": 16,
+      "hp": 45,
+      "max_hp": 45,
+      "moves": [
+        179,
+        52,
+        108,
+        172
+      ],
+      "pp": [
+        15,
+        25,
+        20,
+        25
+      ]
+    },
+    {
+      "species": 376,
+      "personality": 4061208498,
+      "level": 16,
+      "hp": 47,
+      "max_hp": 47,
+      "moves": [
+        261,
+        71,
+        74,
+        194
+      ],
+      "pp": [
+        15,
+        20,
+        40,
+        5
+      ]
+    },
+    {
+      "species": 28,
+      "personality": 933242637,
+      "level": 16,
+      "hp": 41,
+      "max_hp": 41,
+      "moves": [
+        33,
+        71,
+        74,
+        22
+      ],
+      "pp": [
+        35,
+        20,
+        40,
+        10
+      ]
+    },
+    {
+      "species": 376,
+      "personality": 2663941647,
+      "level": 15,
+      "hp": 45,
+      "max_hp": 45,
+      "moves": [
+        33,
+        71,
+        74,
+        194
+      ],
+      "pp": [
+        35,
+        20,
+        40,
+        5
+      ]
+    },
+    {
+      "species": 82,
+      "personality": 3274922461,
+      "level": 7,
+      "hp": 23,
+      "max_hp": 23,
+      "moves": [
+        33,
+        45,
+        0,
+        0
+      ],
+      "pp": [
+        35,
+        40,
+        0,
+        0
+      ]
+    },
+    {
+      "species": 82,
+      "personality": 2077892557,
+      "level": 7,
+      "hp": 24,
+      "max_hp": 24,
+      "moves": [
+        33,
+        45,
+        0,
+        0
+      ],
+      "pp": [
+        35,
+        40,
+        0,
+        0
+      ]
+    }
+  ],
+  "party_sha256": "b88cd9a6cef7bc88ba091648783fb7ac651ef48e1c0e913f9e69328a73974556",
+  "battles": [
+    {
+      "trainer": 0,
+      "type_flags": 4,
+      "start": [
+        "GraniteCave_1F",
+        33,
+        7
+      ],
+      "outcome": 1,
+      "end": [
+        "GraniteCave_1F",
+        33,
+        7
+      ],
+      "move_choices_count": 3
+    },
+    {
+      "trainer": 0,
+      "type_flags": 4,
+      "start": [
+        "GraniteCave_B1F",
+        3,
+        19
+      ],
+      "outcome": 1,
+      "end": [
+        "GraniteCave_B1F",
+        3,
+        19
+      ],
+      "move_choices_count": 2
+    },
+    {
+      "trainer": 0,
+      "type_flags": 4,
+      "start": [
+        "GraniteCave_B1F",
+        12,
+        13
+      ],
+      "outcome": 1,
+      "end": [
+        "GraniteCave_B1F",
+        12,
+        13
+      ],
+      "move_choices_count": 2
+    },
+    {
+      "trainer": 0,
+      "type_flags": 4,
+      "start": [
+        "GraniteCave_B1F",
+        25,
+        17
+      ],
+      "outcome": 1,
+      "end": [
+        "GraniteCave_B1F",
+        25,
+        17
+      ],
+      "move_choices_count": 2
+    },
+    {
+      "trainer": 0,
+      "type_flags": 4,
+      "start": [
+        "GraniteCave_B2F",
+        21,
+        18
+      ],
+      "outcome": 1,
+      "end": [
+        "GraniteCave_B2F",
+        21,
+        18
+      ],
+      "move_choices_count": 10
+    },
+    {
+      "trainer": 0,
+      "type_flags": 4,
+      "start": [
+        "GraniteCave_B2F",
+        11,
+        19
+      ],
+      "outcome": 1,
+      "end": [
+        "GraniteCave_B2F",
+        11,
+        19
+      ],
+      "move_choices_count": 1
+    },
+    {
+      "trainer": 0,
+      "type_flags": 4,
+      "start": [
+        "GraniteCave_B2F",
+        27,
+        13
+      ],
+      "outcome": 1,
+      "end": [
+        "GraniteCave_B2F",
+        27,
+        13
+      ],
+      "move_choices_count": 20
+    },
+    {
+      "trainer": 0,
+      "type_flags": 4,
+      "start": [
+        "GraniteCave_1F",
+        31,
+        4
+      ],
+      "outcome": 1,
+      "end": [
+        "GraniteCave_1F",
+        31,
+        4
+      ],
+      "move_choices_count": 1
+    },
+    {
+      "trainer": 0,
+      "type_flags": 4,
+      "start": [
+        "GraniteCave_1F",
+        8,
+        6
+      ],
+      "outcome": 1,
+      "end": [
+        "GraniteCave_1F",
+        8,
+        6
+      ],
+      "move_choices_count": 2
+    },
+    {
+      "trainer": 0,
+      "type_flags": 4,
+      "start": [
+        "GraniteCave_1F",
+        5,
+        9
+      ],
+      "outcome": 1,
+      "end": [
+        "GraniteCave_1F",
+        5,
+        9
+      ],
+      "move_choices_count": 4
+    },
+    {
+      "trainer": 0,
+      "type_flags": 4,
+      "start": [
+        "GraniteCave_1F",
+        5,
+        9
+      ],
+      "outcome": 1,
+      "end": [
+        "GraniteCave_1F",
+        5,
+        9
+      ],
+      "move_choices_count": 1
+    },
+    {
+      "trainer": 0,
+      "type_flags": 4,
+      "start": [
+        "GraniteCave_1F",
+        6,
+        9
+      ],
+      "outcome": 7,
+      "end": [
+        "GraniteCave_1F",
+        6,
+        9
+      ],
+      "move_choices_count": 3
+    },
+    {
+      "trainer": 0,
+      "type_flags": 4,
+      "start": [
+        "GraniteCave_1F",
+        5,
+        9
+      ],
+      "outcome": 7,
+      "end": [
+        "GraniteCave_1F",
+        5,
+        9
+      ],
+      "move_choices_count": 4
+    }
+  ],
+  "joypad_actions": 8539,
+  "input_encoding": "keys/count/release/repeats",
+  "story_vars": {
+    "VAR_BIRCH_LAB_STATE": 5,
+    "VAR_LITTLEROOT_TOWN_STATE": 4,
+    "VAR_PETALBURG_GYM_STATE": 3,
+    "VAR_PETALBURG_CITY_STATE": 3,
+    "VAR_PETALBURG_WOODS_STATE": 1,
+    "VAR_RUSTBORO_CITY_STATE": 8,
+    "VAR_ROUTE116_STATE": 2,
+    "VAR_RUSTURF_TUNNEL_STATE": 3,
+    "VAR_DEVON_CORP_3F_STATE": 1
+  },
+  "story_flags": {
+    "FLAG_DEFEATED_RIVAL_ROUTE103": true,
+    "FLAG_SYS_POKEDEX_GET": true,
+    "FLAG_RECEIVED_RUNNING_SHOES": true,
+    "FLAG_SYS_B_DASH": true,
+    "FLAG_BADGE01_GET": true,
+    "FLAG_RECEIVED_TM_ROCK_TOMB": true,
+    "FLAG_DEVON_GOODS_STOLEN": false,
+    "FLAG_RECOVERED_DEVON_GOODS": true,
+    "FLAG_RETURNED_DEVON_GOODS": true,
+    "FLAG_SYS_POKENAV_GET": true,
+    "FLAG_HAS_MATCH_CALL": true,
+    "FLAG_DELIVERED_STEVEN_LETTER": true,
+    "FLAG_REGISTERED_STEVEN_POKENAV": true,
+    "FLAG_RECEIVED_HM_FLASH": true,
+    "FLAG_BADGE02_GET": false,
+    "FLAG_RECEIVED_TM_BULK_UP": false
+  },
+  "inventory_checks": {
+    "ITEM_TM_ROCK_TOMB": 1,
+    "ITEM_DEVON_GOODS": 1,
+    "ITEM_LETTER": 0,
+    "ITEM_POKE_BALL": 0,
+    "ITEM_HM_FLASH": 1,
+    "ITEM_TM_STEEL_WING": 1,
+    "ITEM_TM_BULK_UP": 0
+  },
+  "input_journal": {
+    "file": "campaign_morcim_capture_20261015_input_runs.json.gz",
+    "sha256": "a845512d2f67b8075f9b60b04c3a5d583c9d73d587d2e1b27cb8738a53640649",
+    "rows": 1128
+  },
+  "battle_trace": {
+    "file": "campaign_morcim_capture_20261015_battles.json.gz",
+    "sha256": "e1ac9074c66fdf620ccde9d8dc3adc0193b623f6f7147c827f4b246f195de6e5",
+    "battles": 13
+  }
+}

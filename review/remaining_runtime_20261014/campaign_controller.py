@@ -256,7 +256,9 @@ def heal():
 def level_to(level, slot=0):
     start_action(4)
     for _ in range(3000):
-        if party()[slot]['level'] >= level:
+        # Finish the level's move-learning/evolution prompts before leaving.
+        # A level value alone can be reached while a Yes/No prompt is active.
+        if party()[slot]['level'] >= level and active_task('Task_HandleChooseMonInput') is not None:
             break
         if active_task('Task_HandleChooseMonInput') is not None:
             choose_party(slot)
@@ -360,7 +362,18 @@ def go(x, y, limit=400):
         if after[0] != before[0] or abs(after[1] - nxt[0]) + abs(after[2] - nxt[1]) > 1:
             return after
         if after == before:
-            BLOCKED.add((name, current[1:], nxt))
+            # A transition or preceding movement can briefly reject input.
+            # Confirm the obstruction after an idle interval before caching it.
+            act(0, 1, 40)
+            if position() != before or not overworld() or read('sLockFieldControls', 1):
+                if not overworld() or read('sLockFieldControls', 1):
+                    settle()
+                return position()
+            before, after = step((dx > 0) - (dx < 0), (dy > 0) - (dy < 0))
+            if after[0] != name or abs(after[1] - nxt[0]) + abs(after[2] - nxt[1]) > 1:
+                return after
+            if after == before:
+                BLOCKED.add((name, current[1:], nxt))
     raise RuntimeError(('walk limit', position(), (x, y)))
 
 def talk(local_id):
@@ -476,7 +489,7 @@ def normal_save(name):
     receipt = metadata() | {'fixture_setup': False, 'game_ram_or_rom_writes': False, 'normal_save_menu': True, 'position': position(), 'party': party(), 'party_sha256': party_sha256(), 'battles': BATTLES,
                             'joypad_actions': len(INPUTS), 'input_encoding': 'keys/count/release/repeats', 'input_runs': runs,
                             'story_vars': {n: var(n) for n in ('VAR_BIRCH_LAB_STATE', 'VAR_LITTLEROOT_TOWN_STATE', 'VAR_PETALBURG_GYM_STATE', 'VAR_PETALBURG_CITY_STATE', 'VAR_PETALBURG_WOODS_STATE', 'VAR_RUSTBORO_CITY_STATE', 'VAR_ROUTE116_STATE', 'VAR_RUSTURF_TUNNEL_STATE', 'VAR_DEVON_CORP_3F_STATE')},
-                            'story_flags': {n: flag(n) for n in ('FLAG_DEFEATED_RIVAL_ROUTE103', 'FLAG_SYS_POKEDEX_GET', 'FLAG_RECEIVED_RUNNING_SHOES', 'FLAG_SYS_B_DASH', 'FLAG_BADGE01_GET', 'FLAG_RECEIVED_TM_ROCK_TOMB', 'FLAG_DEVON_GOODS_STOLEN', 'FLAG_RECOVERED_DEVON_GOODS', 'FLAG_RETURNED_DEVON_GOODS', 'FLAG_SYS_POKENAV_GET', 'FLAG_HAS_MATCH_CALL')},
-                            'inventory_checks': {n: quantity(n) for n in ('ITEM_TM_ROCK_TOMB', 'ITEM_DEVON_GOODS', 'ITEM_LETTER', 'ITEM_POKE_BALL')}}
+                            'story_flags': {n: flag(n) for n in ('FLAG_DEFEATED_RIVAL_ROUTE103', 'FLAG_SYS_POKEDEX_GET', 'FLAG_RECEIVED_RUNNING_SHOES', 'FLAG_SYS_B_DASH', 'FLAG_BADGE01_GET', 'FLAG_RECEIVED_TM_ROCK_TOMB', 'FLAG_DEVON_GOODS_STOLEN', 'FLAG_RECOVERED_DEVON_GOODS', 'FLAG_RETURNED_DEVON_GOODS', 'FLAG_SYS_POKENAV_GET', 'FLAG_HAS_MATCH_CALL', 'FLAG_DELIVERED_STEVEN_LETTER', 'FLAG_REGISTERED_STEVEN_POKENAV', 'FLAG_RECEIVED_HM_FLASH', 'FLAG_BADGE02_GET', 'FLAG_RECEIVED_TM_BULK_UP')},
+                            'inventory_checks': {n: quantity(n) for n in ('ITEM_TM_ROCK_TOMB', 'ITEM_DEVON_GOODS', 'ITEM_LETTER', 'ITEM_POKE_BALL', 'ITEM_HM_FLASH', 'ITEM_TM_STEEL_WING', 'ITEM_TM_BULK_UP')}}
     (Q / ('campaign_' + name + '_receipt.json')).write_text(json.dumps(receipt, indent=2) + '\n')
     return path
