@@ -9,6 +9,7 @@ import struct
 from runtime import LIB, R, Q, SYMS, ADDRESSES, constant, read, boot, restore, press, metadata, json, Path, Image
 
 INPUTS, BATTLES, BLOCKED = [], [], set()
+PENDING_BATTLE = None
 CAPTURE_TYPES = set()
 CAPTURE_PARTY_SIZE = 2
 CAPTURE_WEAKEN = False
@@ -110,6 +111,9 @@ def move_score(move, battler=0):
     power, kind, accuracy = read(attr + 1, 1), read(attr + 2, 1), read(attr + 3, 1)
     if not power:
         return 0
+    if move == constant('MOVE_MAGNITUDE'):
+        # Its table power is 1; the seven native rolls average 71 power.
+        power = 71
     p, e = SYMS['gBattleMons'] + 88 * battler, SYMS['gBattleMons'] + 88 * living_enemy()
     if move in (constant('MOVE_FLAIL'), constant('MOVE_REVERSAL')):
         fraction = read(p + 40, 2) * 48 // max(1, read(p + 44, 2))
@@ -120,6 +124,8 @@ def move_score(move, battler=0):
         multiplier = (2 + stage) / 2 if stage >= 0 else 2 / (2 - stage)
         return read(mon + offset, 2) * multiplier
     ratio = staged_stat(p, 2 if physical else 8, 1 if physical else 4) / max(1, staged_stat(e, 4 if physical else 10, 2 if physical else 5))
+    if physical and read(p + 76) & constant('STATUS1_BURN') and read(p + 32, 1) != constant('ABILITY_GUTS'):
+        ratio *= 0.5
     stab = 1.5 if kind in (read(p + 33, 1), read(p + 34, 1)) else 1
     effectiveness, types = 1, set((read(e + 33, 1), read(e + 34, 1)))
     table = SYMS['gTypeEffectiveness']
@@ -130,6 +136,26 @@ def move_score(move, battler=0):
         if attack == kind and defend in types:
             effectiveness *= value / 10
     return power * ratio * stab * effectiveness * (accuracy or 100) / 100
+
+def move_options(battler):
+    """Read PP, Disable, Torment and Taunt before selecting a move."""
+    p = SYMS['gBattleMons'] + 88 * battler
+    disable = SYMS['gDisableStructs'] + 28 * battler
+    disabled_move = read(disable + 4, 2)
+    taunted = bool(read(disable + 19, 1) & 15)
+    tormented = bool(read(p + 80) & constant('STATUS2_TORMENT'))
+    last = read(SYMS['gLastMoves'] + 2 * battler, 2)
+    options = []
+    for slot in range(4):
+        move = read(p + 12 + slot * 2, 2)
+        if not move or not read(p + 36 + slot, 1):
+            continue
+        if move == disabled_move or (taunted and not read(SYMS['gBattleMoves'] + 12 * move + 1, 1)):
+            continue
+        if tormented and move == last and move != constant('MOVE_STRUGGLE'):
+            continue
+        options.append((move_score(move, battler), slot))
+    return options
 
 def choose_grid(cursor_symbol, target):
     act(0, 1, 25)
@@ -181,7 +207,8 @@ def use_battle_item(item, personality=None, battler=0):
     raise RuntimeError(('battle item timeout', item, personality))
 
 def settle(limit=5000):
-    battle = None
+    global PENDING_BATTLE
+    battle, PENDING_BATTLE = PENDING_BATTLE, None
     capturing = False
     weakening = False
     weaken_turns = 0
@@ -218,7 +245,7 @@ def settle(limit=5000):
                         selected_action if selected_action is not None else 1 if capturing and not weakening else 0)
         elif move_battler is not None:
             p = SYMS['gBattleMons'] + 88 * move_battler
-            options = [(move_score(read(p + 12 + j * 2, 2), move_battler), j) for j in range(4) if read(p + 12 + j * 2, 2) and read(p + 36 + j, 1)]
+            options = move_options(move_battler)
             selected = MOVE_POLICY(move_battler) if MOVE_POLICY and not weakening else None
             if selected is None:
                 selected = (min if weakening else max)([o for o in options if o[0] > 0] or options or [(0, 0)])[1]
@@ -291,6 +318,7 @@ def settle(limit=5000):
             act(1, 2, 60)
         else:
             act(1, 2, 10)
+    PENDING_BATTLE = battle
     snap('settle_timeout')
     raise RuntimeError(('scene/battle timeout', position(), hex(read(SYMS['gMain'] + 4)), party()))
 
@@ -377,7 +405,7 @@ def path_to(target):
     # 0x2B is reflection under a bridge, not surfable water. The installed
     # Route104 uses it on the walking bridge; retain its actual collision.
     water = set(range(0x10, 0x16)) | {0x18, 0x19, 0x1A, 0x2A}
-    warps = set(range(0x60, 0x6F))
+    warps = set(range(0x60, 0x6F)) | {0x29}  # Lavaridge basement elevator
     queue = collections.deque([(sx, sy)])
     previous = {(sx, sy): None}
     while queue:
@@ -452,8 +480,17 @@ def go(x, y, limit=400):
     raise RuntimeError(('walk limit', position(), (x, y)))
 
 def talk(local_id):
-    local = constant(local_id) if isinstance(local_id, str) else local_id
     map_name = position()[0]
+    if isinstance(local_id, str):
+        try:
+            local = constant(local_id)
+        except KeyError:
+            # Map-local IDs are generated from object order, rather than
+            # declared in the shared constants headers.
+            events = json.loads((R / 'data/maps' / map_name / 'map.json').read_text())['object_events']
+            local = next(i + 1 for i, obj in enumerate(events) if obj.get('local_id') == local_id)
+    else:
+        local = local_id
     for _ in range(12):
         if position()[0] != map_name:
             raise RuntimeError(('map changed before talking', position(), map_name))
@@ -484,7 +521,14 @@ def talk(local_id):
         if not routes:
             raise RuntimeError(('NPC unreachable', position(), event))
         _, cx, cy, key = min(routes)
-        go(cx, cy)
+        try:
+            go(cx, cy)
+        except RuntimeError:
+            # A trainer can approach and occupy the planned standing tile
+            # while go() settles the naturally triggered battle.
+            if next((o for o in objects() if o[0] == local), None) != event:
+                continue
+            raise
         if next((o for o in objects() if o[0] == local), None) != event:
             continue
         act(key, 1, 8)

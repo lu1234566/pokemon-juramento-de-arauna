@@ -1,0 +1,217 @@
+{
+  "rom_sha256": "a2dfe2d861d84eaf0df31b31b6c42f2a668b1afa7a4f3467e82df355f2b69942",
+  "emulator": "mGBA 0.10.2",
+  "fixture_setup": false,
+  "game_ram_or_rom_writes": false,
+  "source_checkpoint": "fourth_cap29_prepared_20261016",
+  "new_process": true,
+  "cold_continue": true,
+  "position": [
+    "Route111",
+    18,
+    99
+  ],
+  "party": [
+    {
+      "species": 387,
+      "personality": 808323251,
+      "level": 29,
+      "hp": 90,
+      "max_hp": 90,
+      "moves": [
+        259,
+        157,
+        222,
+        341
+      ],
+      "pp": [
+        15,
+        10,
+        30,
+        15
+      ]
+    },
+    {
+      "species": 360,
+      "personality": 4061208498,
+      "level": 29,
+      "hp": 107,
+      "max_hp": 107,
+      "moves": [
+        235,
+        202,
+        73,
+        194
+      ],
+      "pp": [
+        5,
+        5,
+        10,
+        5
+      ]
+    },
+    {
+      "species": 29,
+      "personality": 933242637,
+      "level": 29,
+      "hp": 80,
+      "max_hp": 80,
+      "moves": [
+        345,
+        96,
+        235,
+        73
+      ],
+      "pp": [
+        20,
+        40,
+        5,
+        10
+      ]
+    },
+    {
+      "species": 360,
+      "personality": 2663941647,
+      "level": 29,
+      "hp": 106,
+      "max_hp": 106,
+      "moves": [
+        235,
+        202,
+        73,
+        194
+      ],
+      "pp": [
+        5,
+        5,
+        10,
+        5
+      ]
+    },
+    {
+      "species": 83,
+      "personality": 3274922461,
+      "level": 29,
+      "hp": 81,
+      "max_hp": 81,
+      "moves": [
+        98,
+        109,
+        326,
+        17
+      ],
+      "pp": [
+        30,
+        10,
+        30,
+        35
+      ]
+    },
+    {
+      "species": 281,
+      "personality": 2031531808,
+      "level": 29,
+      "hp": 82,
+      "max_hp": 82,
+      "moves": [
+        53,
+        52,
+        108,
+        172
+      ],
+      "pp": [
+        15,
+        25,
+        20,
+        25
+      ]
+    }
+  ],
+  "party_sha256": "493df3e01958456018d35f76e778a0e5bb82e561639beb10864f3a58d7696db8",
+  "story_vars": {
+    "VAR_BIRCH_LAB_STATE": 5,
+    "VAR_LITTLEROOT_TOWN_STATE": 4,
+    "VAR_PETALBURG_GYM_STATE": 5,
+    "VAR_PETALBURG_CITY_STATE": 3,
+    "VAR_PETALBURG_WOODS_STATE": 1,
+    "VAR_RUSTBORO_CITY_STATE": 8,
+    "VAR_ROUTE116_STATE": 2,
+    "VAR_RUSTURF_TUNNEL_STATE": 3,
+    "VAR_DEVON_CORP_3F_STATE": 1,
+    "VAR_MAUVILLE_GYM_STATE": 0,
+    "VAR_SLATEPORT_OUTSIDE_MUSEUM_STATE": 3,
+    "VAR_METEOR_FALLS_STATE": 0,
+    "VAR_LAVARIDGE_TOWN_STATE": 0,
+    "VAR_JAGGED_PASS_ASH_WEATHER": 0
+  },
+  "story_flags": {
+    "FLAG_DEFEATED_RIVAL_ROUTE103": true,
+    "FLAG_SYS_POKEDEX_GET": true,
+    "FLAG_RECEIVED_RUNNING_SHOES": true,
+    "FLAG_SYS_B_DASH": true,
+    "FLAG_BADGE01_GET": true,
+    "FLAG_RECEIVED_TM_ROCK_TOMB": true,
+    "FLAG_DEVON_GOODS_STOLEN": false,
+    "FLAG_RECOVERED_DEVON_GOODS": true,
+    "FLAG_RETURNED_DEVON_GOODS": true,
+    "FLAG_SYS_POKENAV_GET": true,
+    "FLAG_HAS_MATCH_CALL": true,
+    "FLAG_DELIVERED_STEVEN_LETTER": true,
+    "FLAG_REGISTERED_STEVEN_POKENAV": true,
+    "FLAG_RECEIVED_HM_FLASH": true,
+    "FLAG_BADGE02_GET": true,
+    "FLAG_RECEIVED_TM_BULK_UP": true,
+    "FLAG_BADGE03_GET": true,
+    "FLAG_DEFEATED_MAUVILLE_GYM": true,
+    "FLAG_RECEIVED_TM_SHOCK_WAVE": true,
+    "FLAG_ENABLE_WATTSON_MATCH_CALL": true,
+    "FLAG_BADGE04_GET": false,
+    "FLAG_DEFEATED_LAVARIDGE_GYM": false,
+    "FLAG_RECEIVED_TM_OVERHEAT": false,
+    "FLAG_ENABLE_FLANNERY_MATCH_CALL": false,
+    "FLAG_HIDE_ROUTE_112_TEAM_MAGMA": false,
+    "FLAG_MET_ARCHIE_METEOR_FALLS": false,
+    "FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY": false,
+    "FLAG_RECEIVED_METEORITE": false,
+    "FLAG_RECEIVED_GO_GOGGLES": false
+  },
+  "inventory_checks": {
+    "ITEM_TM_ROCK_TOMB": 1,
+    "ITEM_DEVON_GOODS": 0,
+    "ITEM_LETTER": 0,
+    "ITEM_POKE_BALL": 2,
+    "ITEM_HM_FLASH": 1,
+    "ITEM_TM_STEEL_WING": 1,
+    "ITEM_TM_BULK_UP": 1,
+    "ITEM_HM_ROCK_SMASH": 1,
+    "ITEM_TM_SHOCK_WAVE": 1,
+    "ITEM_TM_OVERHEAT": 0,
+    "ITEM_METEORITE": 0,
+    "ITEM_GO_GOGGLES": 0,
+    "ITEM_HM_STRENGTH": 0
+  },
+  "map_flash_level": null,
+  "boxed_mons": [
+    {
+      "box": 0,
+      "slot": 0,
+      "personality": 3089231552,
+      "sha256": "f1852cd082d80457cb9565e70371dbb08a81b1cd4b3cfc7701229227373883d0"
+    },
+    {
+      "box": 0,
+      "slot": 1,
+      "personality": 2926429186,
+      "sha256": "b8ad0a81f330bdfc42c1ddbff85e6d5efbbe7d74afa1478e742db64b76ac87b4"
+    },
+    {
+      "box": 0,
+      "slot": 2,
+      "personality": 2077892557,
+      "sha256": "c2c3ce4b3809254b4b08bdbb2dad316b0f2b24b2505c4bf482549da33df5fc29"
+    }
+  ],
+  "game_stats": {
+    "GAME_STAT_USED_ROCK_SMASH": 1
+  }
+}
