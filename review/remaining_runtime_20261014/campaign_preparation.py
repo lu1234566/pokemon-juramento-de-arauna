@@ -50,6 +50,88 @@ def teach_remember(slot, move, replace_slot):
     return _teach_from_menu(slot, move, replace_slot, 1)
 
 
+def teach_tm(slot, item, move, replace_slot):
+    """Use an owned TM through BAG, compatibility and move-forgetting UI."""
+    assert quantity(item) > 0
+    item, move = constant(item), constant(move)
+    assert move not in party()[slot]['moves']
+    start_action(2)
+    replaced = False
+    for _ in range(600):
+        if move in party()[slot]['moves']:
+            if overworld() and not read('sLockFieldControls', 1):
+                assert party()[slot]['moves'][replace_slot] == move
+                return
+            act(2, 2, 30)
+        elif active_task('Task_HandleReplaceMoveInput') is not None and not replaced:
+            act(0, 1, 50)
+            for _ in range(replace_slot):
+                act(128, 2, 25)
+            act(1, 2, 80)
+            replaced = True
+        elif active_task('Task_HandleChooseMonInput') is not None:
+            choose_party(slot)
+        elif active_task('Task_BagMenu_HandleInput') is not None:
+            pocket = read(SYMS['gBagPosition'] + 5, 1)
+            if pocket != 2:
+                act(16, 2, 35)
+                continue
+            slots = read(SYMS['gBagPockets'] + 16)
+            capacity = read(SYMS['gBagPockets'] + 20, 1)
+            items = [read(slots + 4 * i, 2) for i in range(capacity) if read(slots + 4 * i, 2)]
+            target = items.index(item)
+            cursor = read(SYMS['gBagPosition'] + 12, 2) + read(SYMS['gBagPosition'] + 22, 2)
+            act(128 if cursor < target else 64 if cursor > target else 1, 2, 30)
+        else:
+            act(1, 2, 30)
+    snap('teach_tm_timeout')
+    raise RuntimeError(('TM teaching timeout', slot, item, move))
+
+
+def buy(item, amount):
+    """Buy an exact quantity from the clerk currently faced by the player."""
+    before = quantity(item)
+    item_id = constant(item)
+    for _ in range(80):
+        if active_task('Task_BuyMenu') is not None:
+            break
+        act(1, 2, 30)
+    else:
+        raise RuntimeError('Shop buy list did not open')
+    choices = [read(read(SYMS['sMartInfo'] + 8) + 2 * i, 2)
+               for i in range(read(SYMS['sMartInfo'] + 12, 2))]
+    target = choices.index(item_id)
+    for _ in range(80):
+        data = read('sShopData')
+        cursor = read(data + 0x2006, 2) + read(data + 0x2008, 2)
+        if cursor == target:
+            act(1, 2, 40)
+            break
+        act(128 if cursor < target else 64, 2, 25)
+    for _ in range(80):
+        if (task := active_task('Task_BuyHowManyDialogueHandleInput')) is not None:
+            break
+        act(1, 2, 25)
+    else:
+        raise RuntimeError('Shop quantity prompt did not open')
+    assert read(SYMS['gTasks'] + task * 40 + 18, 2) == item_id
+    for _ in range(amount - 1):
+        act(64, 2, 25)
+    assert read(SYMS['gTasks'] + task * 40 + 10, 2) == amount
+    for _ in range(120):
+        if quantity(item) == before + amount and active_task('Task_BuyMenu') is not None:
+            break
+        act(1, 2, 25)
+    else:
+        raise RuntimeError(('Shop purchase did not finish', item, amount))
+    for _ in range(120):
+        if overworld() and not read('sLockFieldControls', 1):
+            assert quantity(item) == before + amount
+            return
+        act(2, 2, 30)
+    raise RuntimeError('Shop did not return to the field')
+
+
 def _teach_from_menu(slot, move, replace_slot, menu_choice):
     move = constant(move) if isinstance(move, str) else move
     assert move not in party()[slot]['moves']
