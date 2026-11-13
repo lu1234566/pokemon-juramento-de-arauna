@@ -365,7 +365,8 @@ static u8 *CopyConditionMonNameGender(u8 *str, u16 listId, bool8 skipPadding)
         level = GetLevelFromBoxMonExp(boxMon);
     }
 
-    if ((species == SPECIES_NIDORAN_F || species == SPECIES_NIDORAN_M) && !StringCompare(str, gSpeciesNames[species]))
+    // Arauna: Preguicao/Papagaio sit in the Nidoran slots but always show their gender.
+    if (FALSE && (species == SPECIES_NIDORAN_F || species == SPECIES_NIDORAN_M) && !StringCompare(str, gSpeciesNames[species]))
         gender = MON_GENDERLESS;
 
     str_ = str; // For some reason, a variable is needed to match.

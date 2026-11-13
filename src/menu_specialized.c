@@ -933,7 +933,8 @@ static u8 *GetConditionMenuMonString(u8 *dst, u16 boxId, u16 monId)
         level = GetLevelFromBoxMonExp(boxMon);
     }
 
-    if ((species == SPECIES_NIDORAN_F || species == SPECIES_NIDORAN_M) && !StringCompare(dst, gSpeciesNames[species]))
+    // Arauna: Preguicao/Papagaio sit in the Nidoran slots but always show their gender.
+    if (FALSE && (species == SPECIES_NIDORAN_F || species == SPECIES_NIDORAN_M) && !StringCompare(dst, gSpeciesNames[species]))
         gender = MON_GENDERLESS;
 
     for (str = dst; *str != EOS; str++)

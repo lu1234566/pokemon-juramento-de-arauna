@@ -30,6 +30,14 @@ static void SetInitialEggData(struct Pokemon *mon, u16 species, struct DayCare *
 static u8 GetDaycareCompatibilityScore(struct DayCare *daycare);
 static void DaycarePrintMonInfo(u8 windowId, u32 daycareSlotId, u8 y);
 
+// Arauna: SPECIES_DITTO is Louvadeus, a normal Bug-group mantis. The breed-
+// with-anything role follows the Ditto egg group instead of that slot.
+static bool8 IsDittoForBreeding(u16 species)
+{
+    return gSpeciesInfo[species].eggGroups[0] == EGG_GROUP_DITTO
+        || gSpeciesInfo[species].eggGroups[1] == EGG_GROUP_DITTO;
+}
+
 // RAM buffers used to assist with BuildEggMoveset()
 EWRAM_DATA static u16 sHatchedEggLevelUpMoves[EGG_LVL_UP_MOVES_ARRAY_COUNT] = {0};
 EWRAM_DATA static u16 sHatchedEggFatherMoves[MAX_MON_MOVES] = {0};
@@ -429,7 +437,7 @@ static s32 GetParentToInheritNature(struct DayCare *daycare)
     for (dittoCount = 0, i = 0; i < DAYCARE_MON_COUNT; i++)
     {
         species[i] = GetBoxMonData(&daycare->mons[i].mon, MON_DATA_SPECIES);
-        if (species[i] == SPECIES_DITTO)
+        if (IsDittoForBreeding(species[i]))
             dittoCount++, parent = i;
     }
 
@@ -731,7 +739,9 @@ void RejectEggFromDayCare(void)
 static void AlterEggSpeciesWithIncenseItem(u16 *species, struct DayCare *daycare)
 {
     u16 motherItem, fatherItem;
-    if (*species == SPECIES_WYNAUT || *species == SPECIES_AZURILL)
+    // Arauna: no incense babies. SPECIES_WYNAUT/AZURILL are Preguicoso and
+    // Cristo, unrelated to the Wobbuffet/Marill slots (Fossil, Guarana).
+    if (FALSE && (*species == SPECIES_WYNAUT || *species == SPECIES_AZURILL))
     {
         motherItem = GetBoxMonData(&daycare->mons[0].mon, MON_DATA_HELD_ITEM);
         fatherItem = GetBoxMonData(&daycare->mons[1].mon, MON_DATA_HELD_ITEM);
@@ -768,7 +778,7 @@ static u16 DetermineEggSpeciesAndParentSlots(struct DayCare *daycare, u8 *parent
     for (i = 0; i < DAYCARE_MON_COUNT; i++)
     {
         species[i] = GetBoxMonData(&daycare->mons[i].mon, MON_DATA_SPECIES);
-        if (species[i] == SPECIES_DITTO)
+        if (IsDittoForBreeding(species[i]))
         {
             parentSlots[0] = i ^ 1;
             parentSlots[1] = i;
@@ -781,17 +791,11 @@ static u16 DetermineEggSpeciesAndParentSlots(struct DayCare *daycare, u8 *parent
     }
 
     eggSpecies = GetEggSpecies(species[parentSlots[0]]);
-    if (eggSpecies == SPECIES_NIDORAN_F && daycare->offspringPersonality & EGG_GENDER_MALE)
-    {
-        eggSpecies = SPECIES_NIDORAN_M;
-    }
-    if (eggSpecies == SPECIES_ILLUMISE && daycare->offspringPersonality & EGG_GENDER_MALE)
-    {
-        eggSpecies = SPECIES_VOLBEAT;
-    }
+    // Arauna: no Nidoran or Volbeat/Illumise gender split. Those slots are
+    // Preguicao/Papagaio and Lixao/Chorume, which are not gendered pairs.
 
     // Make Ditto the "mother" slot if the other daycare mon is male.
-    if (species[parentSlots[1]] == SPECIES_DITTO && GetBoxMonGender(&daycare->mons[parentSlots[0]].mon) != MON_FEMALE)
+    if (IsDittoForBreeding(species[parentSlots[1]]) && GetBoxMonGender(&daycare->mons[parentSlots[0]].mon) != MON_FEMALE)
     {
         u8 ditto = parentSlots[1];
         parentSlots[1] = parentSlots[0];
@@ -814,7 +818,8 @@ static void _GiveEggFromDaycare(struct DayCare *daycare)
     InheritIVs(&egg, daycare);
     BuildEggMoveset(&egg, &daycare->mons[parentSlots[1]].mon, &daycare->mons[parentSlots[0]].mon);
 
-    if (species == SPECIES_PICHU)
+    // Arauna: SPECIES_PICHU is Vitorregia, not a Pikachu baby; no Volt Tackle egg.
+    if (FALSE && species == SPECIES_PICHU)
         GiveVoltTackleIfLightBall(&egg, daycare);
 
     isEgg = TRUE;

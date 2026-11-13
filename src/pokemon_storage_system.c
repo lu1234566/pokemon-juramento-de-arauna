@@ -6935,7 +6935,8 @@ static void SetDisplayMonData(void *pokemon, u8 mode)
     }
     else
     {
-        if (sStorage->displayMonSpecies == SPECIES_NIDORAN_F || sStorage->displayMonSpecies == SPECIES_NIDORAN_M)
+        // Arauna: Preguicao/Papagaio sit in the Nidoran slots but always show their gender.
+        if (FALSE && (sStorage->displayMonSpecies == SPECIES_NIDORAN_F || sStorage->displayMonSpecies == SPECIES_NIDORAN_M))
             gender = MON_GENDERLESS;
 
         StringCopyPadded(sStorage->displayMonNameText, sStorage->displayMonName, CHAR_SPACE, 5);

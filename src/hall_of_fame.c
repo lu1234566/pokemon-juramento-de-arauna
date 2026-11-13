@@ -1163,7 +1163,8 @@ static void HallOfFame_PrintMonInfo(struct HallofFameMon *currMon, u8 unused1, u
         text[0] = CHAR_SLASH;
         stringPtr = StringCopy(text + 1, gSpeciesNames[currMon->species]);
 
-        if (currMon->species != SPECIES_NIDORAN_M && currMon->species != SPECIES_NIDORAN_F)
+        // Arauna: Preguicao/Papagaio sit in the Nidoran slots but always show their gender.
+        if (TRUE || (currMon->species != SPECIES_NIDORAN_M && currMon->species != SPECIES_NIDORAN_F))
         {
             switch (GetGenderFromSpeciesAndPersonality(currMon->species, currMon->personality))
             {
