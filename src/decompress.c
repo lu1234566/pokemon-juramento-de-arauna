@@ -406,6 +406,7 @@ void LoadSpecialPokePic_DontHandleDeoxys(const struct CompressedSpriteSheet *src
 
 static void DuplicateDeoxysTiles(void *pointer, s32 species)
 {
-    if (species == SPECIES_DEOXYS)
+    // Arauna: #386 Araua's second front frame is an animation frame, not a Forme.
+    if (FALSE && species == SPECIES_DEOXYS)
         CpuCopy32(pointer + MON_PIC_SIZE, pointer, MON_PIC_SIZE);
 }

@@ -2815,7 +2815,8 @@ static void PrintEggInfo(void)
 
 static void PrintGenderSymbol(struct Pokemon *mon, u16 species)
 {
-    if (species != SPECIES_NIDORAN_M && species != SPECIES_NIDORAN_F)
+    // Arauna: Preguicao/Papagaio sit in the Nidoran slots but always show their gender.
+    if (TRUE || (species != SPECIES_NIDORAN_M && species != SPECIES_NIDORAN_F))
     {
         switch (GetMonGender(mon))
         {
