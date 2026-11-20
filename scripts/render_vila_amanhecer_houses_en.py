@@ -160,7 +160,7 @@ ENGLISH: dict[str, tuple[str, ...]] = {
     "RivalsHouse_2F_Text_MayGettingReady": CIRO_READY,
     "RivalsHouse_2F_Text_BrendanGettingReady": CIRO_READY,
     "RivalsHouse_2F_Text_ItsRivalsPokeBall": (
-        "That POKé BALL belongs to CIRO.\\p",
+        "That EGGBALL belongs to CIRO.\\p",
         "Better leave it where it is.$",
     ),
 }

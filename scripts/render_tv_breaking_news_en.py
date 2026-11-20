@@ -208,7 +208,7 @@ TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         "{STR_VAR_3}.",
     )),
     "gTVBreakingNewsText03": (("BALLS thrown", "used last"), (
-        "Over the course of it, the TRAINER threw {STR_VAR_1} POKé BALLS.",
+        "Over the course of it, the TRAINER threw {STR_VAR_1} EGGBALLS.",
         "And in the end the rare POKéMON was taken by the last {STR_VAR_2}.",
     )),
     "gTVBreakingNewsText04": (("echoed with", "envious"), (
@@ -232,8 +232,8 @@ TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
     "gTVBreakingNewsText08": (("shrieks of", "frustration"), (
         "In that moment, {STR_VAR_2} rang with {STR_VAR_1}'s howling...",
     )),
-    "gTVBreakingNewsText09": (("run\\n", "out of POKé BALLS"), (
-        "But {STR_VAR_1} appears to have run out of POKé BALLS.",
+    "gTVBreakingNewsText09": (("run\\n", "out of EGGBALLS"), (
+        "But {STR_VAR_1} appears to have run out of EGGBALLS.",
         "The TRAINER had to leave the rare {STR_VAR_2} where it stood.",
         "In that moment, {STR_VAR_3} rang with {STR_VAR_1}'s howling...",
     )),

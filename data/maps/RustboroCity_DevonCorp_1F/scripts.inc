@@ -139,6 +139,6 @@ RustboroCity_DevonCorp_1F_Text_ProductDisplay:
 	.string "pharmaceuticals for better lifestyles.\p"
 	.string "“Recently, HORIZON has begun\n"
 	.string "marketing tools for POKéMON TRAINERS,\l"
-	.string "including POKé BALLS and POKéNAV\l"
+	.string "including EGGBALLS and POKéNAV\l"
 	.string "systems.”$"
 

@@ -1,6 +1,7 @@
 #include "global.h"
 #include "option_menu.h"
 #include "bg.h"
+#include "event_data.h"
 #include "gpu_regs.h"
 #include "international_string_util.h"
 #include "main.h"
@@ -59,6 +60,8 @@ static void Task_OptionMenuProcessInput(u8 taskId);
 static void Task_OptionMenuSave(u8 taskId);
 static void Task_OptionMenuFadeOut(u8 taskId);
 static void HighlightOptionMenuItem(u8 selection);
+static bool8 IsAutoRunShown(void);
+static u8 GetMenuRow(u8 item);
 static u8 TextSpeed_ProcessInput(u8 selection);
 static void TextSpeed_DrawChoices(u8 selection);
 static u8 BattleScene_ProcessInput(u8 selection);
@@ -250,8 +253,9 @@ void CB2_InitOptionMenu(void)
         Sound_DrawChoices(gTasks[taskId].tSound);
         ButtonMode_DrawChoices(gTasks[taskId].tButtonMode);
         FrameType_DrawChoices(gTasks[taskId].tWindowFrameType);
-        AutoRun_DrawChoices(gTasks[taskId].tAutoRunOff);
-        HighlightOptionMenuItem(gTasks[taskId].tMenuSelection);
+        if (IsAutoRunShown())
+            AutoRun_DrawChoices(gTasks[taskId].tAutoRunOff);
+        HighlightOptionMenuItem(GetMenuRow(gTasks[taskId].tMenuSelection));
 
         CopyWindowToVram(WIN_OPTIONS, COPYWIN_FULL);
         gMain.state++;
@@ -288,7 +292,10 @@ static void Task_OptionMenuProcessInput(u8 taskId)
             gTasks[taskId].tMenuSelection--;
         else
             gTasks[taskId].tMenuSelection = MENUITEM_CANCEL;
-        HighlightOptionMenuItem(gTasks[taskId].tMenuSelection);
+        // Arauna: AUTO RUN only exists once the player owns the Running Shoes
+        if (gTasks[taskId].tMenuSelection == MENUITEM_AUTORUN && !IsAutoRunShown())
+            gTasks[taskId].tMenuSelection--;
+        HighlightOptionMenuItem(GetMenuRow(gTasks[taskId].tMenuSelection));
     }
     else if (JOY_NEW(DPAD_DOWN))
     {
@@ -296,7 +303,9 @@ static void Task_OptionMenuProcessInput(u8 taskId)
             gTasks[taskId].tMenuSelection++;
         else
             gTasks[taskId].tMenuSelection = 0;
-        HighlightOptionMenuItem(gTasks[taskId].tMenuSelection);
+        if (gTasks[taskId].tMenuSelection == MENUITEM_AUTORUN && !IsAutoRunShown())
+            gTasks[taskId].tMenuSelection++;
+        HighlightOptionMenuItem(GetMenuRow(gTasks[taskId].tMenuSelection));
     }
     else
     {
@@ -387,6 +396,19 @@ static void Task_OptionMenuFadeOut(u8 taskId)
         FreeAllWindowBuffers();
         SetMainCallback2(gMain.savedCallback);
     }
+}
+
+// Arauna: the AUTO RUN row is hidden until FLAG_SYS_B_DASH (Running Shoes); CANCEL then takes its row.
+static bool8 IsAutoRunShown(void)
+{
+    return FlagGet(FLAG_SYS_B_DASH);
+}
+
+static u8 GetMenuRow(u8 item)
+{
+    if (item == MENUITEM_CANCEL && !IsAutoRunShown())
+        return MENUITEM_AUTORUN;
+    return item;
 }
 
 static void HighlightOptionMenuItem(u8 index)
@@ -670,7 +692,11 @@ static void DrawOptionMenuTexts(void)
 
     FillWindowPixelBuffer(WIN_OPTIONS, PIXEL_FILL(1));
     for (i = 0; i < MENUITEM_COUNT; i++)
-        AddTextPrinterParameterized(WIN_OPTIONS, FONT_NORMAL, sOptionMenuItemsNames[i], 8, (i * OPTION_ROW_HEIGHT) + 1, TEXT_SKIP_DRAW, NULL);
+    {
+        if (i == MENUITEM_AUTORUN && !IsAutoRunShown())
+            continue;
+        AddTextPrinterParameterized(WIN_OPTIONS, FONT_NORMAL, sOptionMenuItemsNames[i], 8, (GetMenuRow(i) * OPTION_ROW_HEIGHT) + 1, TEXT_SKIP_DRAW, NULL);
+    }
     CopyWindowToVram(WIN_OPTIONS, COPYWIN_FULL);
 }
 

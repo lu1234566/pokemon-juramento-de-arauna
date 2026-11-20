@@ -168,10 +168,10 @@ MossdeepCity_StevensHouse_Text_UnderwateCavernBetweenMossdeepSootopolis:
 	.string "a trail.$"
 
 MossdeepCity_StevensHouse_Text_TakeBallContainingBeldum:
-	.string "{PLAYER} checked the POKé BALL.\p"
+	.string "{PLAYER} checked the EGGBALL.\p"
 	.string "It contained the POKéMON\n"
 	.string "Escamoso.\p"
-	.string "Take the POKé BALL?$"
+	.string "Take the EGGBALL?$"
 
 MossdeepCity_StevensHouse_Text_ObtainedBeldum:
 	.string "{PLAYER} obtained a Escamoso.$"
@@ -181,7 +181,7 @@ MossdeepCity_StevensHouse_Text_NoSpaceForAnotherMon:
 	.string "There is no space for another POKéMON.$"
 
 MossdeepCity_StevensHouse_Text_LeftPokeBallWhereItWas:
-	.string "{PLAYER} left the POKé BALL where\n"
+	.string "{PLAYER} left the EGGBALL where\n"
 	.string "it was.$"
 
 MossdeepCity_StevensHouse_Text_LetterFromSteven:

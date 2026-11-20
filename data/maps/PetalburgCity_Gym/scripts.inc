@@ -1183,9 +1183,9 @@ PetalburgCity_Gym_Text_IllLoanYouMyZigzagoon:
 PetalburgCity_Gym_Text_WallyThankYouAndDadGivesPokeBall:
 	.string "VAL: Oh, wow!\n"
 	.string "A POKéMON!\p"
-	.string "DAD: Hm. I'll give you a POKé BALL, too.\n"
+	.string "DAD: Hm. I'll give you an EGGBALL, too.\n"
 	.string "Go for it!\p"
-	.string "VAL received a POKé BALL!$"
+	.string "VAL received an EGGBALL!$"
 
 PetalburgCity_Gym_Text_WallyOhWowThankYou:
 	.string "VAL: I am still afraid. But I know now\n"

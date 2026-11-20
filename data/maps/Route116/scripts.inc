@@ -395,12 +395,12 @@ Route116_Text_ThankYouTokenOfAppreciation:
 	.string "For you, the most wonderful TRAINER, I\n"
 	.string "bear good news!\p"
 	.string "Recently, our company developed a new\n"
-	.string "kind of POKé BALL.\p"
+	.string "kind of EGGBALL.\p"
 	.string "As a token of our appreciation, this is\n"
 	.string "our gift to our wonderful TRAINER!$"
 
 Route116_Text_NewBallAvailableAtMart:
-	.string "Our new POKé BALL will be available\n"
+	.string "Our new EGGBALL will be available\n"
 	.string "at the POKéMON MART in SERRA DO UIVO.\p"
 	.string "Please do try it out!\n"
 	.string "Thank you and bye-bye!$"
@@ -412,7 +412,7 @@ Route116_Text_BagIsJamPacked:
 Route116_Text_TokenOfAppreciation:
 	.string "As a token of our appreciation for\n"
 	.string "your delivering our package, I have\l"
-	.string "a gift of a new kind of POKé BALL\l"
+	.string "a gift of a new kind of EGGBALL\l"
 	.string "for our most wonderful TRAINER!$"
 
 Route116_Text_CanYouHelpMeFindGlasses:

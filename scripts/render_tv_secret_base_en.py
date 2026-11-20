@@ -188,8 +188,8 @@ TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         "FANS: We love {STR_VAR_1}!",
         "MC: And what is it you love?!",
     )),
-    "gTVTrainerFanClubText01": (("POKé BALLS",), (
-        "FANS: The way those POKé BALLS get thrown!",
+    "gTVTrainerFanClubText01": (("EGGBALLS",), (
+        "FANS: The way those EGGBALLS get thrown!",
     )),
     "gTVTrainerFanClubText02": (("running",), (
         "FANS: The way that TRAINER runs!",
