@@ -24,7 +24,7 @@ TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
     "OldaleTown_Text_ThisIsAPokemonMart": (("POKéMON MART", "promotional item"), (
         "MART STAFF: This is our shop.\\p",
         "Blue roof. Easy to spot.\\p",
-        "We sell POKé BALLS and supplies.\\p",
+        "We sell EGGBALLS and supplies.\\p",
         "Here, take this POTION.\\p",
         "It's a free sample.$",
     )),

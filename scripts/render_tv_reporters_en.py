@@ -189,8 +189,8 @@ TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         "Last time we battled, you had us before we were ready...",
         "Anyway -- what do you say?|Another interview?",
     )),
-    "GabbyAndTy_Text_YouThrewABallAtUsInterviewAgain": (("POKé BALL at us", "interviewed again"), (
-        "Last time we battled -- did you throw a POKé BALL at us?",
+    "GabbyAndTy_Text_YouThrewABallAtUsInterviewAgain": (("EGGBALL at us", "interviewed again"), (
+        "Last time we battled -- did you throw an EGGBALL at us?",
         "We were scandalised! We told everybody. Everybody.",
         "Anyway -- what do you say?|Another interview?",
     )),
@@ -293,8 +293,8 @@ TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         "And even so, {PLAYER}'s battles are worth watching.",
         "Any TRAINER who fancies their chances should go and find {PLAYER}.",
     )),
-    "gTVInSearchOfTrainersText05": (("throw a POKé BALL", "please caution"), (
-        "There is one thing to be said.|Do not throw a POKé BALL in a TRAINER "
+    "gTVInSearchOfTrainersText05": (("throw an EGGBALL", "please caution"), (
+        "There is one thing to be said.|Do not throw an EGGBALL in a TRAINER "
         "battle!",
         "{PLAYER} is strong, certainly, and has not read the rules.",
         "So a request to everyone watching.",
@@ -389,7 +389,7 @@ def payloads() -> dict[str, tuple[str, ...]]:
     composed = {}
     for label, (_, paragraphs) in TARGETS.items():
         paragraphs = tuple(p.replace("SAFARI ZONE", glued("SAFARI ZONE"))
-                            .replace("POKé BALL", glued("POKé BALL"))
+                            .replace("EGGBALL", glued("EGGBALL"))
                             .replace("SAFARI BALLS", glued("SAFARI BALLS"))
                            for p in paragraphs)
         composed[label] = BOX.compose(paragraphs)

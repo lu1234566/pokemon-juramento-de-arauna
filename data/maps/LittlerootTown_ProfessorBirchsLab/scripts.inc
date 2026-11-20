@@ -739,7 +739,7 @@ LittlerootTown_ProfessorBirchsLab_Text_CountlessPokemonAwait:
 
 LittlerootTown_ProfessorBirchsLab_Text_MayGotPokedexTooTakeThese:
 	.string "CIRO: So she gave you a POKéDEX too.\n"
-	.string "Fine. Take these POKé BALLS. I want to\l"
+	.string "Fine. Take these EGGBALLS. I want to\l"
 	.string "see how long you take to catch up to me.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_CatchCutePokemonWithPokeBalls:
@@ -758,7 +758,7 @@ LittlerootTown_ProfessorBirchsLab_Text_MayWhereShouldIGoNext:
 
 LittlerootTown_ProfessorBirchsLab_Text_BrendanGotPokedexTooTakeThese:
 	.string "CIRO: So she gave you a POKéDEX too.\n"
-	.string "Fine. Take these POKé BALLS. I want to\l"
+	.string "Fine. Take these EGGBALLS. I want to\l"
 	.string "see how long you take to catch up to me.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_CatchCoolPokemonWithPokeBalls:

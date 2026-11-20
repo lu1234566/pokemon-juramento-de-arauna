@@ -361,7 +361,7 @@ OldaleTown_Text_ThisIsAPokemonMart:
 	.string "This is a POKéMON MART.\n"
 	.string "Just look for our blue roof.\p"
 	.string "We sell a variety of goods including\n"
-	.string "POKé BALLS for catching POKéMON.\p"
+	.string "EGGBALLS for catching POKéMON.\p"
 	.string "Here, I'd like you to have this as\n"
 	.string "a promotional item.$"
 

@@ -333,7 +333,7 @@ RivalsHouse_2F_Text_BrendanGettingReady:
 	.string "HORIZON wants the data before dark.$"
 
 RivalsHouse_2F_Text_ItsRivalsPokeBall:
-	.string "That POKé BALL belongs to CIRO.\p"
+	.string "That EGGBALL belongs to CIRO.\p"
 	.string "Better leave it where it is.$"
 
 RivalsHouse_2F_Text_MayJustCheckingMyPokedex:

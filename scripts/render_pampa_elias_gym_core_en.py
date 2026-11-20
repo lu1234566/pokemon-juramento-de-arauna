@@ -48,7 +48,7 @@ TARGETS: dict[str, tuple[str, ...]] = {
     "PetalburgCity_Gym_Text_WallyThankYouAndDadGivesPokeBall": (
         "VAL: Really? Thank you!\\p",
         "ELIAS: You'll need this too.\\p",
-        "VAL received a POKé BALL!$",
+        "VAL received an EGGBALL!$",
     ),
     "PetalburgCity_Gym_Text_WallyOhWowThankYou": (
         "VAL: Thank you, ELIAS!$",

@@ -50,12 +50,12 @@ TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
     )),
     "gTVPokemonTodayFailedText02": (("managed to get away", "frustration"), (
         "It got away!",
-        "And it cost this many POKé BALLS: {STR_VAR_2}!",
+        "And it cost this many EGGBALLS: {STR_VAR_2}!",
         "You should have seen {STR_VAR_1}'s face when it went.",
     )),
     "gTVPokemonTodayFailedText03": (("goofed", "stunned dismay"), (
         "But {STR_VAR_1} misjudged it and knocked the POKéMON out!",
-        "And it cost this many POKé BALLS: {STR_VAR_2}!",
+        "And it cost this many EGGBALLS: {STR_VAR_2}!",
         "You should have seen {STR_VAR_1}'s face when it fainted.",
     )),
     "gTVPokemonTodayFailedText04": (("not nice", "Sorry for laughing"), (
@@ -92,8 +92,8 @@ TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
         "BIG SIS: {STR_VAR_1} named the {STR_VAR_2} {STR_VAR_3}!",
         "And by the sound of it, {STR_VAR_3} is well looked after.",
     )),
-    "gTVPokemonTodaySuccessfulText02": (("many POKé BALLS", "single"), (
-        "BIG BRO: It took this many POKé BALLS to land it: {STR_VAR_3}!",
+    "gTVPokemonTodaySuccessfulText02": (("many EGGBALLS", "single"), (
+        "BIG BRO: It took this many EGGBALLS to land it: {STR_VAR_3}!",
         "And in the end one {STR_VAR_2} did it!",
     )),
     "gTVPokemonTodaySuccessfulText03": (("that easy to catch", "destiny"), (
