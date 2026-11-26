@@ -291,7 +291,7 @@ RustboroCity_PokemonSchool_Text_PokemonHealItselfWithBerry:
 RustboroCity_PokemonSchool_Text_StudentsNotes:
 	.string "It's this student's notebook…\p"
 	.string "POKéMON are to be caught using\n"
-	.string "POKé BALLS.\p"
+	.string "EGGBALLS.\p"
 	.string "Up to six POKéMON can accompany\n"
 	.string "a TRAINER.\p"
 	.string "A TRAINER is someone who catches\n"

@@ -103,10 +103,10 @@ ROUTE_TARGETS: dict[str, tuple[tuple[str, ...], tuple[str, ...]]] = {
     "Route101_Text_HelpMe": (("H-help me",), (
         "ANAHI: H-help me!$",
     )),
-    "Route101_Text_PleaseHelp": (("Please! Help", "POKé BALL"), (
+    "Route101_Text_PleaseHelp": (("Please! Help", "EGGBALL"), (
         "ANAHI: You there! Please!\\p",
         "My BAG!\\n",
-        "There's a POKé BALL inside!$",
+        "There's an EGGBALL inside!$",
     )),
     "Route101_Text_DontLeaveMe": (("Don't leave me",), (
         "ANAHI: Where are you going?!\\p",

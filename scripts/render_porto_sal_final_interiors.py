@@ -25,7 +25,7 @@ TARGETS = {
             ["Mas alguns itens voce so encontra", "num POKé MART."],
         ],
         "SlateportCity_Mart_Text_GreatBallIsBetter": [
-            ["A GREAT BALL captura melhor que", "uma POKé BALL."],
+            ["A GREAT BALL captura melhor que", "uma EGGBALL."],
             ["Com ela talvez eu consiga pegar", "aquele POKéMON dificil."],
         ],
     },

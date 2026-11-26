@@ -91,7 +91,7 @@ TARGETS: dict[str, tuple[str, ...]] = {
     "LittlerootTown_ProfessorBirchsLab_Text_MayGotPokedexTooTakeThese": (
         "CIRO: So she gave you a POKéDEX\\n",
         "too. Fine.\\p",
-        "Take these POKé BALLS.\\p",
+        "Take these EGGBALLS.\\p",
         "Let's see how long it takes you\\n",
         "to catch up.$",
     ),
@@ -113,7 +113,7 @@ TARGETS: dict[str, tuple[str, ...]] = {
     "LittlerootTown_ProfessorBirchsLab_Text_BrendanGotPokedexTooTakeThese": (
         "CIRO: So she gave you a POKéDEX\\n",
         "too. Fine.\\p",
-        "Take these POKé BALLS.\\p",
+        "Take these EGGBALLS.\\p",
         "Let's see how long it takes you\\n",
         "to catch up.$",
     ),
