@@ -4,13 +4,15 @@ GraniteCave_StevensRoom_MapScripts::
 GraniteCave_StevensRoom_EventScript_Steven::
 	lock
 	faceplayer
+	goto_if_set FLAG_DELIVERED_STEVEN_LETTER, GraniteCave_StevensRoom_EventScript_TryReward
 	msgbox GraniteCave_StevensRoom_Text_ImStevenLetterForMe, MSGBOX_DEFAULT
 	setvar VAR_0x8004, ITEM_LETTER
 	call Common_EventScript_PlayerHandedOverTheItem
 	setflag FLAG_DELIVERED_STEVEN_LETTER
+GraniteCave_StevensRoom_EventScript_TryReward::
 	msgbox GraniteCave_StevensRoom_Text_ThankYouTakeThis, MSGBOX_DEFAULT
 	giveitem ITEM_TM_STEEL_WING
-	call_if_eq VAR_RESULT, FALSE, GraniteCave_StevensRoom_EventScript_BagFull
+	goto_if_eq VAR_RESULT, FALSE, GraniteCave_StevensRoom_EventScript_BagFull
 	msgbox GraniteCave_StevensRoom_Text_CouldBecomeChampionLetsRegister, MSGBOX_DEFAULT
 	closemessage
 	delay 30
@@ -27,6 +29,7 @@ GraniteCave_StevensRoom_EventScript_Steven::
 	call_if_eq VAR_FACING, DIR_WEST, GraniteCave_StevensRoom_EventScript_StevenExitWestEast
 	call_if_eq VAR_FACING, DIR_EAST, GraniteCave_StevensRoom_EventScript_StevenExitWestEast
 	playse SE_EXIT
+	setflag FLAG_HIDE_GRANITE_CAVE_STEVEN
 	removeobject LOCALID_GRANITE_CAVE_STEVEN
 	release
 	end
@@ -50,7 +53,8 @@ GraniteCave_StevensRoom_EventScript_StevenExitSouth::
 
 GraniteCave_StevensRoom_EventScript_BagFull::
 	msgbox GraniteCave_StevensRoom_Text_OhBagIsFull, MSGBOX_DEFAULT
-	return
+	release
+	end
 
 GraniteCave_StevensRoom_Movement_StevenExit:
 	walk_up
@@ -86,10 +90,9 @@ GraniteCave_StevensRoom_Text_ImStevenLetterForMe:
 	.string "a trail.$"
 
 GraniteCave_StevensRoom_Text_ThankYouTakeThis:
-	.string "MR. BENTO: When a name falls out of\n"
-	.string "people's mouths, I write it down. Not to\l"
-	.string "replace whoever remembers it. To leave\l"
-	.string "a trail.$"
+	.string "MR. BENTO: Thank you for the\n"
+	.string "LETTER. These names matter.\p"
+	.string "Take this move for the road.$"
 
 GraniteCave_StevensRoom_Text_CouldBecomeChampionLetsRegister:
 	.string "MR. BENTO: You pay attention.\p"

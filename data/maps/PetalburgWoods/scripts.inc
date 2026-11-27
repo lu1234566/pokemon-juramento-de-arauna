@@ -3,6 +3,7 @@ PetalburgWoods_MapScripts::
 
 PetalburgWoods_EventScript_DevonResearcherLeft::
 	lockall
+	goto_if_defeated TRAINER_GRUNT_PETALBURG_WOODS, PetalburgWoods_EventScript_RetryReward
 	call PetalburgWoods_EventScript_DevonResearcherIntro
 	applymovement LOCALID_PETALBURG_WOODS_DEVON_EMPLOYEE, PetalburgWoods_Movement_DevonResearcherApproachPlayerLeft
 	waitmovement 0
@@ -38,6 +39,7 @@ PetalburgWoods_EventScript_DevonResearcherLeft::
 
 PetalburgWoods_EventScript_DevonResearcherRight::
 	lockall
+	goto_if_defeated TRAINER_GRUNT_PETALBURG_WOODS, PetalburgWoods_EventScript_RetryReward
 	call PetalburgWoods_EventScript_DevonResearcherIntro
 	applymovement LOCALID_PETALBURG_WOODS_DEVON_EMPLOYEE, PetalburgWoods_Movement_DevonResearcherApproachPlayerRight
 	waitmovement 0
@@ -85,6 +87,7 @@ PetalburgWoods_EventScript_DevonResearcherPostBattle::
 	applymovement LOCALID_PETALBURG_WOODS_GRUNT, PetalburgWoods_Movement_AquaRunAway
 	waitmovement 0
 	removeobject LOCALID_PETALBURG_WOODS_GRUNT
+	setflag FLAG_HIDE_PETALBURG_WOODS_AQUA_GRUNT
 	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
 	msgbox PetalburgWoods_Text_ThatWasAwfullyClose, MSGBOX_DEFAULT
@@ -95,7 +98,14 @@ PetalburgWoods_EventScript_DevonResearcherPostBattle::
 
 PetalburgWoods_EventScript_BagFull::
 	msgbox PetalburgWoods_Text_YoureLoadedWithItems, MSGBOX_DEFAULT
-	goto PetalburgWoods_EventScript_DevonResearcherFinish
+	releaseall
+	end
+
+PetalburgWoods_EventScript_RetryReward::
+	giveitem ITEM_GREAT_BALL
+	goto_if_eq VAR_RESULT, FALSE, PetalburgWoods_EventScript_BagFull
+	call PetalburgWoods_EventScript_DevonResearcherFinish
+	goto PetalburgWoods_EventScript_RemoveDevonResearcher
 	end
 
 PetalburgWoods_EventScript_DevonResearcherFinish::
@@ -107,6 +117,7 @@ PetalburgWoods_EventScript_DevonResearcherFinish::
 	return
 
 PetalburgWoods_EventScript_RemoveDevonResearcher::
+	setflag FLAG_HIDE_PETALBURG_WOODS_DEVON_EMPLOYEE
 	removeobject LOCALID_PETALBURG_WOODS_DEVON_EMPLOYEE
 	setvar VAR_PETALBURG_WOODS_STATE, 1
 	releaseall

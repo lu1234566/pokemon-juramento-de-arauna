@@ -1,5 +1,15 @@
 SlateportCity_OceanicMuseum_2F_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, SlateportCity_OceanicMuseum_2F_OnTransition
 	.byte 0
+
+@ Existing delivered-goods saves also acquire the persistent hide state.
+SlateportCity_OceanicMuseum_2F_OnTransition:
+	call_if_set FLAG_DELIVERED_DEVON_GOODS, SlateportCity_OceanicMuseum_2F_EventScript_HideCaptain
+	end
+
+SlateportCity_OceanicMuseum_2F_EventScript_HideCaptain::
+	setflag FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_2F_CAPTAIN_STERN
+	return
 
 SlateportCity_OceanicMuseum_2F_EventScript_CaptStern::
 	lock
@@ -74,6 +84,7 @@ SlateportCity_OceanicMuseum_2F_EventScript_CaptStern::
 	playfanfare MUS_HEAL
 	waitfanfare
 	special HealPlayerParty
+	setflag FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_2F_CAPTAIN_STERN
 	removeobject LOCALID_OCEANIC_MUSEUM_2F_CAPT_STERN
 	setflag FLAG_HIDE_ROUTE_110_TEAM_AQUA
 	call_if_eq VAR_REGISTER_BIRCH_STATE, 0, SlateportCity_OceanicMuseum_2F_EventScript_ReadyRegisterBirch

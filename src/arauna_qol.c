@@ -4,7 +4,7 @@
 // and the only rule it changes without being asked is the experience ceiling,
 // which is the point of having a level cap at all.
 //
-// Save layout is untouched. The one setting that persists, auto-run, lives in
+// Save layout is untouched. AUTO RUN, WARD and POTENTIAL persist in
 // bits that struct SaveBlock2 already reserved as padding inside the existing
 // options word, so an old save still loads.
 
@@ -13,6 +13,7 @@
 #include "daycare.h"
 #include "event_data.h"
 #include "pokemon.h"
+#include "party_menu.h"
 #include "script_pokemon_util.h"
 #include "constants/daycare.h"
 #include "constants/flags.h"
@@ -68,7 +69,11 @@ u8 AraunaLevelCap(void)
             badges++;
     }
 
-    if (badges >= NUM_BADGES)
+    if (badges >= NUM_BADGES
+        && FlagGet(FLAG_DEFEATED_ELITE_4_SIDNEY)
+        && FlagGet(FLAG_DEFEATED_ELITE_4_PHOEBE)
+        && FlagGet(FLAG_DEFEATED_ELITE_4_GLACIA)
+        && FlagGet(FLAG_DEFEATED_ELITE_4_DRAKE))
         return ARAUNA_CAP_CHAMPION;
 
     return sLevelCapByBadges[badges];
@@ -133,35 +138,11 @@ void AraunaSpecial_GetLevelCap(void)
     gSpecialVar_Result = AraunaLevelCap();
 }
 
-// Raises every party Pokemon that is below the cap up to it. Never lowers one:
-// dropping a level does not give moves back or undo an evolution, so it would
-// leave the Pokemon in a state the game has no way to describe.
-//
-// VAR_RESULT comes back as the number of Pokemon that actually moved, so the
-// script can tell "done" from "they were all there already".
+// LEVEL uses the existing Rare Candy move/evolution flow, one selected level
+// at a time. No direct EXP jump and no inventory item is consumed.
 void AraunaSpecial_SetPartyToLevelCap(void)
 {
-    u8 cap = AraunaLevelCap();
-    u8 raised = 0;
-    u8 i;
-
-    for (i = 0; i < gPlayerPartyCount; i++)
-    {
-        struct Pokemon *mon = &gPlayerParty[i];
-        u32 exp;
-
-        if (GetMonData(mon, MON_DATA_SPECIES_OR_EGG) == SPECIES_EGG)
-            continue;
-        if (GetMonData(mon, MON_DATA_LEVEL) >= cap)
-            continue;
-
-        exp = gExperienceTables[gSpeciesInfo[GetMonData(mon, MON_DATA_SPECIES)].growthRate][cap];
-        SetMonData(mon, MON_DATA_EXP, &exp);
-        CalculateMonStats(mon);
-        raised++;
-    }
-
-    gSpecialVar_Result = raised;
+    AraunaChooseMonToLevel();
 }
 
 // Full restore for the party, free and anywhere.

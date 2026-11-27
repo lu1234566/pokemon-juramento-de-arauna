@@ -588,6 +588,7 @@ SlateportCity_EventScript_CaptStern::
 	applymovement LOCALID_SLATEPORT_CAPT_STERN, SlateportCity_Movement_SternEnterHarbor
 	applymovement LOCALID_PLAYER, SlateportCity_Movement_PlayerEnterHarbor
 	waitmovement 0
+	setflag FLAG_HIDE_SLATEPORT_CITY_CAPTAIN_STERN
 	removeobject LOCALID_SLATEPORT_CAPT_STERN
 	clearflag FLAG_HIDE_SLATEPORT_CITY_HARBOR_CAPTAIN_STERN
 	clearflag FLAG_HIDE_SLATEPORT_CITY_HARBOR_SUBMARINE_SHADOW
